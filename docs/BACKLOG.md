@@ -19,6 +19,7 @@
 - [ ] **DATA-02** Wikimedia Commons: dohledat fotky k prvním 10 chatám Krkonoš (URL, autor, licence do yaml)
 - [ ] **DATA-03** Křížové ověření seznamu chat Krkonoš (weby chat, KRNAP, Treking) → doplnit/vyřadit, poznámky ke sporným
 - [ ] **DATA-04** Ověřit otvíračky a kontakty 5 nejnavštěvovanějších bud (weby/sociální sítě chat, zapsat checked datum)
+- [ ] **DATA-05** Razítkové weby (razitkuj.cz, turisticka-razitka.estranky.cz, příp. turistickarazitka.cz): používat **jen jako checklist** pokrytí razítek pro Krkonoše — fakta se `source:` odkazem a `verified: false`. **Skeny nekopírovat** (autorská i databázová práva; komunitu chceme jako partnera) — otisky převzít až po písemném souhlasu majitelů. Stav oslovení: 19. 7. 2026 Michal odeslal e-maily (panos-pe@volny.cz + kontakt razitkuj.cz), čeká se na odpověď.
 
 ## Zaparkováno (neber, dokud Michal neposune výš)
 
