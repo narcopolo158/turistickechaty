@@ -1,0 +1,71 @@
+/* turistickechaty.cz — profil chaty (F0-05) dle design/handoff/prototyp.html (sekce #profil)
+   Hodnoty 1:1 z prototypu; sdílené komponenty (.lista, .row, .znm, .chip, .ibox, .btn, .card)
+   jsou v components.css. */
+
+/* breadcrumb + GPS řádek */
+.p-crumb { font-size: 10px; color: var(--muted); margin-bottom: 10px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.p-crumb a { color: var(--muted); }
+.p-crumb a:hover { color: var(--ink); }
+
+/* sticky mini-nav s kotvami 01–04 */
+.subnav { position: sticky; top: 62px; z-index: 40; display: flex; gap: 4px; padding: 5px; margin: 12px 0 4px; background: rgba(255, 255, 255, .92); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 999px; width: max-content; max-width: 100%; overflow-x: auto; }
+.subnav a { padding: 6px 13px; border-radius: 999px; font-size: 12px; font-weight: 600; color: var(--muted); cursor: pointer; white-space: nowrap; }
+.subnav a:hover { background: var(--cream); color: var(--ink); }
+
+/* hero foto s gradient overlay */
+.phero { position: relative; height: 300px; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-float); }
+.phero > svg, .phero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.phero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18, 24, 29, .02) 40%, rgba(18, 24, 29, .74)); }
+.phero .tx { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; color: #fff; padding: 0 26px 20px; }
+.phero .cr { font-size: 10px; opacity: .92; margin-bottom: 6px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.phero h1 { font-family: var(--font-display); font-weight: 700; font-size: 38px; letter-spacing: -.02em; line-height: 1.02; color: #fff; margin: 0; }
+.phero .bg { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 11px; }
+.phero .bg span { font-size: 11px; font-weight: 600; padding: 5px 11px; border-radius: 999px; background: #fff; color: var(--ink); }
+.phero .bg span.open { background: var(--open); color: #fff; }
+
+/* řádek faktů — hairline dělítka, Ověřeno je plnohodnotný fakt */
+.facts { display: grid; grid-template-columns: repeat(5, 1fr); padding: 18px 4px 12px; }
+.facts > div { border-left: 1px solid var(--line); padding: 3px 16px 4px; }
+.facts > div:first-child { border-left: 0; padding-left: 0; }
+.facts .k { font-size: 9px; color: var(--muted); font-weight: 600; letter-spacing: .11em; text-transform: uppercase; }
+.facts .v { font-family: var(--font-display); font-size: 21px; font-weight: 700; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.facts .s { font-size: 10.5px; color: var(--muted); }
+
+/* živě tečka webkamery */
+.live { width: 9px; height: 9px; border-radius: 99px; background: var(--red); animation: pulse 1.6s infinite; display: inline-block; flex: none; }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(224, 52, 31, .35); } 50% { box-shadow: 0 0 0 7px rgba(224, 52, 31, 0); } }
+
+/* dvousloupcová mřížka sekcí + vnitřek karet */
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.bx { padding: 14px 16px; }
+
+/* razítko na profilu — vždy #C92F1B, natočené (jediný „nedisciplinovaný" prvek) */
+.p-otisk { width: 132px; height: 132px; flex: none; display: grid; place-items: center; }
+.p-otisk img { max-width: 106px; max-height: 106px; transform: rotate(-7deg); }
+
+/* patka zdrojů */
+.p-zdroje { display: flex; gap: 9px; padding: 18px 0 30px; flex-wrap: wrap; align-items: center; }
+.p-zdroje .src { margin-left: auto; font-size: 9px; color: var(--muted); font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+
+/* print patička s URL a datem ověření */
+.pfoot { display: none; border-top: 2px solid var(--red); margin-top: 6px; padding-top: 8px; font-size: 11px; }
+
+/* dark mode „hřebenovka po tmě" */
+body.dark .subnav { background: rgba(23, 31, 39, .92); border-color: var(--line); }
+body.dark .subnav a:hover { background: #1b242e; color: var(--text, #e7ecf1); }
+body.dark .facts > div { border-color: #2a3541; }
+
+@media print {
+  .subnav, .p-zdroje .btn { display: none !important; }
+  .pfoot { display: block; }
+  .phero { box-shadow: none; }
+}
+
+@media (max-width: 760px) {
+  .phero { height: 230px; }
+  .phero h1 { font-size: 29px; }
+  .g2 { grid-template-columns: 1fr; }
+  .facts { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; }
+  .facts > div { flex: 0 0 46%; scroll-snap-align: start; }
+  .subnav { top: 58px; }
+}

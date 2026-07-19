@@ -6,6 +6,7 @@ import './fonts.css'
 import './tokens.css'
 import './styles.css'
 import './components.css'
+import './profil.css'
 
 export const metadata = {
   title: 'turistickechaty.cz — průvodce horskými chatami',
