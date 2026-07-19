@@ -9,7 +9,7 @@
 - [x] **F0-03** Komponenty: sekční lišty, tlačítka, chips, stavové pilulky, infoboxy, pásové značky, tabulkové řádky, karta chaty
 - [x] **F0-04** Payload kolekce dle plánu kap. 5: Chata, Oblast, Výlet, Razítko, Fotka, Článek (+ pole source/verified/checked všude)
 - [x] **F0-05** Šablona profilu chaty nad daty + JSON-LD + generovaný OG obrázek
-- [ ] **F0-06** Vzorová Luční bouda: naplnit profil (data `verified: false`, postupně ověřovat), interaktivní výškový profil *(rozpracováno 19. 7.: data profilu + seed hotovy — session 06; komponenta výškového profilu + datový model tras hotovy — session 07. Zbývá jen doložit data tras (časy, body profilu) — **blokováno** rozhodnutím o zdroji výškových dat, viz otázky v deníku; do té doby může další session brát F0-07)*
+- [ ] **F0-06** Vzorová Luční bouda: naplnit profil (data `verified: false`, postupně ověřovat), interaktivní výškový profil *(rozpracováno 19. 7.: data profilu + seed hotovy — session 06; komponenta výškového profilu + datový model tras hotovy — session 07. Zbývá jen doložit data tras (časy, body profilu) — **odblokováno 19. 7. večer, rozhodnutí:** zdroj výšek = **Mapy.com Elevation API** (běží pod naším klíčem, oficiálně podporované — existuje i tutoriál přímo na výškové profily tras). Postavit `scripts/vyskovy-profil.ts`: vstup GPX/souřadnice → decimované body `[km, výška]` do YAML se `source: "Mapy.com Elevation API"` + `checked`; pokud API nejde volat ze sandboxu, skript dotáhnout a jednorázové spuštění nechat Michalovi lokálně (jeden příkaz, návod do README). Geometrie tras pro pilot: vlastní GPX od Michala, případně OSM s ODbL atribucí. K otázce typu ze session 06: Luční bouda zůstává **„obsluhovaná chata"** — veřejný jazyk webu; jemnější taxonomie („horský hotel v roli chaty") se rozhodne, až bude víc případů)*
 - [ ] **F0-07** Mapa MVP: Leaflet + dlaždice Mapy.com „outdoor" + markery + hover preview (API klíč Mapy.com k dispozici v env konfiguraci sessions)
 - [ ] **F0-08** Razítkovací moment + lokální deník (dle handoffu; účty až fáze 4)
 
@@ -19,7 +19,7 @@
 - [ ] **DATA-02** Wikimedia Commons: dohledat fotky k prvním 10 chatám Krkonoš (URL, autor, licence do yaml)
 - [ ] **DATA-03** Křížové ověření seznamu chat Krkonoš (weby chat, KRNAP, Treking) → doplnit/vyřadit, poznámky ke sporným
 - [ ] **DATA-04** Ověřit otvíračky a kontakty 5 nejnavštěvovanějších bud (weby/sociální sítě chat, zapsat checked datum)
-- [ ] **DATA-05** Razítkové weby (razitkuj.cz, turisticka-razitka.estranky.cz, příp. turistickarazitka.cz): používat **jen jako checklist** pokrytí razítek pro Krkonoše — fakta se `source:` odkazem a `verified: false`. **Skeny nekopírovat** (autorská i databázová práva; komunitu chceme jako partnera) — otisky převzít až po písemném souhlasu majitelů. Stav oslovení: 19. 7. 2026 Michal odeslal e-maily (panos-pe@volny.cz + kontakt razitkuj.cz), čeká se na odpověď.
+- [ ] **DATA-05** Razítkové weby (razitkuj.cz, turisticka-razitka.estranky.cz, příp. turistickarazitka.cz): používat **jen jako checklist** pokrytí razítek pro Krkonoše — fakta se `source:` odkazem a `verified: false`. **Skeny nekopírovat** (autorská i databázová práva; komunitu chceme jako partnera) — otisky převzít až po písemném souhlasu majitelů. Stav oslovení: 19. 7. 2026 Michal odeslal e-maily na **všechny tři weby** (panos-pe@volny.cz, kontakt razitkuj.cz i turistickarazitka.cz), čeká se na odpovědi.
 
 ## Zaparkováno (neber, dokud Michal neposune výš)
 
