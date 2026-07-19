@@ -67,17 +67,35 @@ export interface Config {
   };
   blocks: {};
   collections: {
-    users: User;
+    chaty: Chaty;
+    oblasti: Oblasti;
+    vylety: Vylety;
+    razitka: Razitka;
+    clanky: Clanky;
+    fotky: Fotky;
     media: Media;
+    users: User;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
-  collectionsJoins: {};
+  collectionsJoins: {
+    chaty: {
+      fotky: 'fotky';
+      razitka: 'razitka';
+      clanky: 'clanky';
+    };
+  };
   collectionsSelect: {
-    users: UsersSelect<false> | UsersSelect<true>;
+    chaty: ChatySelect<false> | ChatySelect<true>;
+    oblasti: OblastiSelect<false> | OblastiSelect<true>;
+    vylety: VyletySelect<false> | VyletySelect<true>;
+    razitka: RazitkaSelect<false> | RazitkaSelect<true>;
+    clanky: ClankySelect<false> | ClankySelect<true>;
+    fotky: FotkySelect<false> | FotkySelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    users: UsersSelect<false> | UsersSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -118,6 +136,566 @@ export interface UserAuthOperations {
   };
 }
 /**
+ * Centrální entita webu. Žádný profil nejde ven poloprázdný — rozpracované drží koncept (draft).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "chaty".
+ */
+export interface Chaty {
+  id: number;
+  nazev: string;
+  /**
+   * Část adresy stránky. Nevyplněný se vytvoří z názvu.
+   */
+  slug: string;
+  zeme?: ('cz' | 'sk' | 'pl' | 'at' | 'de' | 'ch' | 'it' | 'si' | 'fr') | null;
+  /**
+   * Taxonomie dle plánu kap. 5.
+   */
+  typ?: ('obsluhovana' | 'utulna' | 'bivak' | 'horsky-hotel') | null;
+  stav?: ('v-provozu' | 'mimo-provoz' | 'zanikla') | null;
+  aliasy?:
+    | {
+        nazev: string;
+        poznamka?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  lat?: number | null;
+  lng?: number | null;
+  vyska?: number | null;
+  oblast?: (number | null) | Oblasti;
+  obec?: string | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniLokace?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  nocleh?: ('ano' | 'ne') | null;
+  pokoje?:
+    | {
+        typ?: string | null;
+        luzek?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  kapacita?: number | null;
+  cenyOrientacne?: string | null;
+  rezervaceUrl?: string | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniNocleh?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  kuchyne?: ('ano' | 'ne') | null;
+  typObcerstveni?: ('restaurace' | 'bufet' | 'kiosek') | null;
+  specialita?: string | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniObcerstveni?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  voda?: ('ano' | 'ne') | null;
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  wc?: ('ano' | 'ne') | null;
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  sprchy?: ('ano' | 'ne') | null;
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  platbaKartou?: ('ano' | 'ne') | null;
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  wifi?: ('ano' | 'ne') | null;
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  psi?: ('ano' | 'ne') | null;
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  nabijeni?: ('ano' | 'ne') | null;
+  /**
+   * Nevyplněno = nezjištěno.
+   */
+  lyzarna?: ('ano' | 'ne') | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniSluzby?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  sezona?: string | null;
+  otviraciDoba?: string | null;
+  zimniProvoz?: string | null;
+  kontakty?: {
+    telefon?: string | null;
+    email?: string | null;
+    web?: string | null;
+    facebook?: string | null;
+    instagram?: string | null;
+  };
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniProvoz?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  trasy?:
+    | {
+        vychoziBod: string;
+        casMin?: number | null;
+        prevyseni?: number | null;
+        znaceni?: ('cervena' | 'modra' | 'zelena' | 'zluta' | 'jine') | null;
+        obtiznost?: ('snadna' | 'stredni' | 'narocna') | null;
+        poznamka?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  autem?: string | null;
+  lanovka?: string | null;
+  verejnaDoprava?: {
+    zastavka?: string | null;
+    idosUrl?: string | null;
+  };
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniPristup?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  rokVzniku?: number | null;
+  /**
+   * Přestavby, požáry, přejmenování…
+   */
+  milniky?:
+    | {
+        rok?: number | null;
+        udalost: string;
+        id?: string | null;
+      }[]
+    | null;
+  historieText?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniHistorie?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
+   * Krátké představení pro karty a náhledy (1–2 věty).
+   */
+  perex?: string | null;
+  /**
+   * 2–4 odstavce: charakter místa, co si dát, kdy přijít.
+   */
+  text?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  fotky?: {
+    docs?: (number | Fotky)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  webkamera?: string | null;
+  /**
+   * Základ grafu pro plánovač přechodů — čas pěšího přechodu mezi chatami.
+   */
+  sousedniChaty?:
+    | {
+        chata: number | Chaty;
+        casPrechodMin?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  razitka?: {
+    docs?: (number | Razitka)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  clanky?: {
+    docs?: (number | Clanky)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * Souhrn hlavních zdrojů celého profilu.
+   */
+  zdroje?:
+    | {
+        popis: string;
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Jen pro redakci, nikdy se nezobrazují na webu.
+   */
+  interniPoznamky?: string | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * Hierarchie země → pohoří → podoblast. Přehledy chat a výletů se generují z dat.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "oblasti".
+ */
+export interface Oblasti {
+  id: number;
+  nazev: string;
+  /**
+   * Část adresy stránky. Nevyplněný se vytvoří z názvu.
+   */
+  slug: string;
+  /**
+   * Země je samostatné pole — hierarchii tvoří pohoří a podoblasti.
+   */
+  typ: 'pohori' | 'podoblast';
+  /**
+   * U podoblasti její pohoří (např. Východní Krkonoše → Krkonoše).
+   */
+  nadrazena?: (number | null) | Oblasti;
+  zeme?: ('cz' | 'sk' | 'pl' | 'at' | 'de' | 'ch' | 'it' | 'si' | 'fr') | null;
+  popis?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Volitelné ohraničení pro výřez mapy oblasti (WGS84).
+   */
+  bbox?: {
+    jihLat?: number | null;
+    zapadLng?: number | null;
+    severLat?: number | null;
+    vychodLng?: number | null;
+  };
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeni?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Každá fotka má autora a licenci; převzaté i zdrojové URL. Fotky z Google Maps a Mapy.com se nepoužívají nikdy.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fotky".
+ */
+export interface Fotky {
+  id: number;
+  alt: string;
+  typ?: ('soucasna' | 'dobova' | 'otisk-razitka' | 'ilustracni') | null;
+  /**
+   * Fotka se pak sama nabídne v profilu chaty.
+   */
+  chata?: (number | null) | Chaty;
+  datovani?: string | null;
+  autor: string;
+  licence: 'vlastni' | 'se-svolenim' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'jina';
+  licencePoznamka?: string | null;
+  /**
+   * U převzatých fotek povinné (Wikimedia Commons apod.).
+   */
+  zdrojUrl?: string | null;
+  prevzatoDne?: string | null;
+  /**
+   * Ověření licence a autorství (kdo a kdy je zkontroloval).
+   */
+  overeni?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+  sizes?: {
+    nahled?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    karta?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    velka?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+  };
+}
+/**
+ * Katalog turistických razítek — archiv variant v čase. Záznam může existovat i bez otisku (víme o razítku, sháníme sken).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "razitka".
+ */
+export interface Razitka {
+  id: number;
+  nazev: string;
+  chata: number | Chaty;
+  /**
+   * Může chybět — chybějící otisky jsou výzva pro komunitu.
+   */
+  otisk?: (number | null) | Fotky;
+  stav?: ('k-dispozici' | 'nedostupne' | 'historicke') | null;
+  platnostOd?: string | null;
+  platnostDo?: string | null;
+  kdeSeRazitkuje?: string | null;
+  /**
+   * Redakce, nebo jméno sběratele — kredit motivuje komunitu.
+   */
+  dolozil?: string | null;
+  /**
+   * Kdy někdo naposledy potvrdil, že se razítko na chatě opravdu razítkuje.
+   */
+  potvrzeno?: string | null;
+  poznamka?: string | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeni?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Redakční obsah: historie, rozhovory, žebříčky, příběhy zaniklých chat.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "clanky".
+ */
+export interface Clanky {
+  id: number;
+  nazev: string;
+  /**
+   * Část adresy stránky. Nevyplněný se vytvoří z názvu.
+   */
+  slug: string;
+  publikovano?: string | null;
+  perex?: string | null;
+  uvodniFotka?: (number | null) | Fotky;
+  obsah?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  chaty?: (number | Chaty)[] | null;
+  oblasti?: (number | Oblasti)[] | null;
+  /**
+   * Zdroje faktů v článku (historická literatura, rozhovory…).
+   */
+  overeni?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * Redakční výlety a přechody. Každá chata má mít aspoň jeden propojený výlet.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "vylety".
+ */
+export interface Vylety {
+  id: number;
+  nazev: string;
+  /**
+   * Část adresy stránky. Nevyplněný se vytvoří z názvu.
+   */
+  slug: string;
+  typ?: ('okruh' | 'prechod' | 'tam-a-zpet') | null;
+  oblast?: (number | null) | Oblasti;
+  delkaKm?: number | null;
+  prevyseni?: number | null;
+  casMin?: number | null;
+  obtiznost?: ('snadna' | 'stredni' | 'narocna') | null;
+  sezonnost?: string | null;
+  znaceni?: ('cervena' | 'modra' | 'zelena' | 'zluta' | 'jine')[] | null;
+  gpx?: (number | null) | Media;
+  perex?: string | null;
+  zastavky?:
+    | {
+        typ?: ('chata' | 'vrchol' | 'misto') | null;
+        chata?: (number | null) | Chaty;
+        /**
+         * U vrcholů a jiných míst; u chat se bere název chaty.
+         */
+        nazev?: string | null;
+        poznamka?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  doprava?: {
+    naStart?: string | null;
+    zCile?: string | null;
+  };
+  etapy?:
+    | {
+        nadpis: string;
+        text?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeni?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * GPX stopy a jiné přílohy. Fotky patří do kolekce Fotky (kvůli licencím).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media".
+ */
+export interface Media {
+  id: number;
+  alt: string;
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users".
  */
@@ -144,25 +722,6 @@ export interface User {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "media".
- */
-export interface Media {
-  id: number;
-  alt: string;
-  updatedAt: string;
-  createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -186,12 +745,36 @@ export interface PayloadLockedDocument {
   id: number;
   document?:
     | ({
-        relationTo: 'users';
-        value: number | User;
+        relationTo: 'chaty';
+        value: number | Chaty;
+      } | null)
+    | ({
+        relationTo: 'oblasti';
+        value: number | Oblasti;
+      } | null)
+    | ({
+        relationTo: 'vylety';
+        value: number | Vylety;
+      } | null)
+    | ({
+        relationTo: 'razitka';
+        value: number | Razitka;
+      } | null)
+    | ({
+        relationTo: 'clanky';
+        value: number | Clanky;
+      } | null)
+    | ({
+        relationTo: 'fotky';
+        value: number | Fotky;
       } | null)
     | ({
         relationTo: 'media';
         value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'users';
+        value: number | User;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -237,24 +820,355 @@ export interface PayloadMigration {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users_select".
+ * via the `definition` "chaty_select".
  */
-export interface UsersSelect<T extends boolean = true> {
-  updatedAt?: T;
-  createdAt?: T;
-  email?: T;
-  resetPasswordToken?: T;
-  resetPasswordExpiration?: T;
-  salt?: T;
-  hash?: T;
-  loginAttempts?: T;
-  lockUntil?: T;
-  sessions?:
+export interface ChatySelect<T extends boolean = true> {
+  nazev?: T;
+  slug?: T;
+  zeme?: T;
+  typ?: T;
+  stav?: T;
+  aliasy?:
     | T
     | {
+        nazev?: T;
+        poznamka?: T;
         id?: T;
-        createdAt?: T;
-        expiresAt?: T;
+      };
+  lat?: T;
+  lng?: T;
+  vyska?: T;
+  oblast?: T;
+  obec?: T;
+  overeniLokace?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  nocleh?: T;
+  pokoje?:
+    | T
+    | {
+        typ?: T;
+        luzek?: T;
+        id?: T;
+      };
+  kapacita?: T;
+  cenyOrientacne?: T;
+  rezervaceUrl?: T;
+  overeniNocleh?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  kuchyne?: T;
+  typObcerstveni?: T;
+  specialita?: T;
+  overeniObcerstveni?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  voda?: T;
+  wc?: T;
+  sprchy?: T;
+  platbaKartou?: T;
+  wifi?: T;
+  psi?: T;
+  nabijeni?: T;
+  lyzarna?: T;
+  overeniSluzby?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  sezona?: T;
+  otviraciDoba?: T;
+  zimniProvoz?: T;
+  kontakty?:
+    | T
+    | {
+        telefon?: T;
+        email?: T;
+        web?: T;
+        facebook?: T;
+        instagram?: T;
+      };
+  overeniProvoz?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  trasy?:
+    | T
+    | {
+        vychoziBod?: T;
+        casMin?: T;
+        prevyseni?: T;
+        znaceni?: T;
+        obtiznost?: T;
+        poznamka?: T;
+        id?: T;
+      };
+  autem?: T;
+  lanovka?: T;
+  verejnaDoprava?:
+    | T
+    | {
+        zastavka?: T;
+        idosUrl?: T;
+      };
+  overeniPristup?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  rokVzniku?: T;
+  milniky?:
+    | T
+    | {
+        rok?: T;
+        udalost?: T;
+        id?: T;
+      };
+  historieText?: T;
+  overeniHistorie?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  perex?: T;
+  text?: T;
+  fotky?: T;
+  webkamera?: T;
+  sousedniChaty?:
+    | T
+    | {
+        chata?: T;
+        casPrechodMin?: T;
+        id?: T;
+      };
+  razitka?: T;
+  clanky?: T;
+  zdroje?:
+    | T
+    | {
+        popis?: T;
+        url?: T;
+        id?: T;
+      };
+  interniPoznamky?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "oblasti_select".
+ */
+export interface OblastiSelect<T extends boolean = true> {
+  nazev?: T;
+  slug?: T;
+  typ?: T;
+  nadrazena?: T;
+  zeme?: T;
+  popis?: T;
+  bbox?:
+    | T
+    | {
+        jihLat?: T;
+        zapadLng?: T;
+        severLat?: T;
+        vychodLng?: T;
+      };
+  overeni?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "vylety_select".
+ */
+export interface VyletySelect<T extends boolean = true> {
+  nazev?: T;
+  slug?: T;
+  typ?: T;
+  oblast?: T;
+  delkaKm?: T;
+  prevyseni?: T;
+  casMin?: T;
+  obtiznost?: T;
+  sezonnost?: T;
+  znaceni?: T;
+  gpx?: T;
+  perex?: T;
+  zastavky?:
+    | T
+    | {
+        typ?: T;
+        chata?: T;
+        nazev?: T;
+        poznamka?: T;
+        id?: T;
+      };
+  doprava?:
+    | T
+    | {
+        naStart?: T;
+        zCile?: T;
+      };
+  etapy?:
+    | T
+    | {
+        nadpis?: T;
+        text?: T;
+        id?: T;
+      };
+  overeni?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "razitka_select".
+ */
+export interface RazitkaSelect<T extends boolean = true> {
+  nazev?: T;
+  chata?: T;
+  otisk?: T;
+  stav?: T;
+  platnostOd?: T;
+  platnostDo?: T;
+  kdeSeRazitkuje?: T;
+  dolozil?: T;
+  potvrzeno?: T;
+  poznamka?: T;
+  overeni?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "clanky_select".
+ */
+export interface ClankySelect<T extends boolean = true> {
+  nazev?: T;
+  slug?: T;
+  publikovano?: T;
+  perex?: T;
+  uvodniFotka?: T;
+  obsah?: T;
+  chaty?: T;
+  oblasti?: T;
+  overeni?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fotky_select".
+ */
+export interface FotkySelect<T extends boolean = true> {
+  alt?: T;
+  typ?: T;
+  chata?: T;
+  datovani?: T;
+  autor?: T;
+  licence?: T;
+  licencePoznamka?: T;
+  zdrojUrl?: T;
+  prevzatoDne?: T;
+  overeni?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+  sizes?:
+    | T
+    | {
+        nahled?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        karta?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        velka?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
       };
 }
 /**
@@ -274,6 +1188,28 @@ export interface MediaSelect<T extends boolean = true> {
   height?: T;
   focalX?: T;
   focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users_select".
+ */
+export interface UsersSelect<T extends boolean = true> {
+  updatedAt?: T;
+  createdAt?: T;
+  email?: T;
+  resetPasswordToken?: T;
+  resetPasswordExpiration?: T;
+  salt?: T;
+  hash?: T;
+  loginAttempts?: T;
+  lockUntil?: T;
+  sessions?:
+    | T
+    | {
+        id?: T;
+        createdAt?: T;
+        expiresAt?: T;
+      };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

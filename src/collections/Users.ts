@@ -2,12 +2,13 @@ import type { CollectionConfig } from 'payload'
 
 export const Users: CollectionConfig = {
   slug: 'users',
+  labels: { singular: 'Uživatel', plural: 'Uživatelé' },
   admin: {
     useAsTitle: 'email',
+    group: 'Systém',
   },
   auth: true,
   fields: [
-    // Email added by default
-    // Add more fields as needed
+    // E-mail přidává auth automaticky; role přijdou s fází 4 (chataři, komunita)
   ],
 }

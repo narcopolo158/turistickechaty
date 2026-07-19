@@ -1,0 +1,74 @@
+import type { CollectionConfig } from 'payload'
+
+import { overeni } from '../fields/overeni'
+import { slugField } from '../fields/slug'
+import { ZEME_OPTIONS } from './spolecne'
+
+/**
+ * Oblast — hierarchie země → pohoří → podoblast (plán kap. 5).
+ * Oblasti jsou pohledy na databázi: přehled chat a výletů se generuje,
+ * ručně se píše jen popis.
+ */
+export const Oblasti: CollectionConfig = {
+  slug: 'oblasti',
+  labels: { singular: 'Oblast', plural: 'Oblasti' },
+  admin: {
+    useAsTitle: 'nazev',
+    defaultColumns: ['nazev', 'typ', 'nadrazena', 'zeme'],
+    group: 'Obsah',
+    description: 'Hierarchie země → pohoří → podoblast. Přehledy chat a výletů se generují z dat.',
+  },
+  access: { read: () => true },
+  fields: [
+    { name: 'nazev', type: 'text', label: 'Název', required: true },
+    slugField(),
+    {
+      name: 'typ',
+      type: 'select',
+      label: 'Úroveň',
+      required: true,
+      options: [
+        { label: 'Pohoří', value: 'pohori' },
+        { label: 'Podoblast', value: 'podoblast' },
+      ],
+      admin: { description: 'Země je samostatné pole — hierarchii tvoří pohoří a podoblasti.' },
+    },
+    {
+      name: 'nadrazena',
+      type: 'relationship',
+      relationTo: 'oblasti',
+      label: 'Nadřazená oblast',
+      admin: {
+        description: 'U podoblasti její pohoří (např. Východní Krkonoše → Krkonoše).',
+        condition: (data) => data?.typ === 'podoblast',
+      },
+    },
+    {
+      name: 'zeme',
+      type: 'select',
+      label: 'Země',
+      options: ZEME_OPTIONS,
+      admin: { position: 'sidebar' },
+    },
+    { name: 'popis', type: 'richText', label: 'Popis' },
+    {
+      name: 'bbox',
+      type: 'group',
+      label: 'Mapové ohraničení (bbox)',
+      admin: {
+        description: 'Volitelné ohraničení pro výřez mapy oblasti (WGS84).',
+      },
+      fields: [
+        { type: 'row', fields: [
+          { name: 'jihLat', type: 'number', label: 'Jih (min. šířka)', admin: { width: '50%' } },
+          { name: 'zapadLng', type: 'number', label: 'Západ (min. délka)', admin: { width: '50%' } },
+        ] },
+        { type: 'row', fields: [
+          { name: 'severLat', type: 'number', label: 'Sever (max. šířka)', admin: { width: '50%' } },
+          { name: 'vychodLng', type: 'number', label: 'Východ (max. délka)', admin: { width: '50%' } },
+        ] },
+      ],
+    },
+    overeni(),
+  ],
+}
