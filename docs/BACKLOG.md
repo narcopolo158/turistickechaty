@@ -10,7 +10,7 @@
 - [ ] **F0-04** Payload kolekce dle plánu kap. 5: Chata, Oblast, Výlet, Razítko, Fotka, Článek (+ pole source/verified/checked všude)
 - [ ] **F0-05** Šablona profilu chaty nad daty + JSON-LD + generovaný OG obrázek
 - [ ] **F0-06** Vzorová Luční bouda: naplnit profil (data `verified: false`, postupně ověřovat), interaktivní výškový profil
-- [ ] **F0-07** Mapa MVP: Leaflet + dlaždice Mapy.com „outdoor" + markery + hover preview — ⏳ čeká na API klíč (Michal: developer.mapy.com)
+- [ ] **F0-07** Mapa MVP: Leaflet + dlaždice Mapy.com „outdoor" + markery + hover preview (API klíč Mapy.com k dispozici v env konfiguraci sessions)
 - [ ] **F0-08** Razítkovací moment + lokální deník (dle handoffu; účty až fáze 4)
 
 ## Datové úkoly (prokládat s vývojem)
@@ -23,6 +23,6 @@
 ## Zaparkováno (neber, dokud Michal neposune výš)
 
 - [ ] Deployment na VPS pticore (reverse proxy vhost, Postgres, zálohy) — až ke konci Fáze 1
-- [ ] Registrace Mapy.com API + atribuce s logem — potřebuje Michalův Seznam účet
+- [x] Registrace Mapy.com API — hotovo (projekt „turistickechaty", tarif Basic, placená spotřeba zakázána); atribuce s logem se řeší v F0-07
 - [ ] Formulář „nahrát otisk razítka" s moderací
 - [ ] Newsletter setup
