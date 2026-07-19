@@ -16,7 +16,7 @@ Formát zápisu (nejnovější nahoře):
 **Příště:** F0-02 design základ — `tokens.css` 1:1 do aplikace, self-hosted fonty z `design/handoff/fonts/`, globální layout dle `prototyp.html` (červená topline, vrstevnicové pozadí, navigace, footer, dark mode).
 **Otázky pro Michala:** V sandboxu session neběží Docker daemon — lokální DB jsem spouštěl přímo (postgres 16 z apt); `docker-compose.yml` pro tebe funguje normálně. Push CI workflow token odmítl (chybí oprávnění `workflow`) — předloha čeká v `docs/ci/ci.yml`. Přidáš tokenu oprávnění **Workflows: Read and write**, nebo soubor přesuneš do `.github/workflows/` ručně?
 
-
+## 2026-07-19 (příprava, ještě mimo denní režim)
 **Hotovo:** Projekt naplánován (plán v1.7), design uzavřen — systém „Moderní průvodce" v2.2 z Claude Design (handoff v `design/`), klikací prototyp ověřen a opraven (null-guard u skeleton overlaye). Připraven tento repozitář.
 **Příště:** F0-01 scaffold aplikace.
 **Otázky pro Michala:** čas denní session · API klíč Mapy.com (až bude čas na F0-07).
