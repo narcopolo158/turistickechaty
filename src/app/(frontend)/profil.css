@@ -43,6 +43,18 @@
 .p-otisk { width: 132px; height: 132px; flex: none; display: grid; place-items: center; }
 .p-otisk img { max-width: 106px; max-height: 106px; transform: rotate(-7deg); }
 
+/* interaktivní výškový profil trasy — hodnoty 1:1 z prototyp.html (.prof, .tipp) */
+.prof { position: relative; background: #fbfaf6; border-radius: 10px; }
+.prof svg { display: block; width: 100%; }
+.tipp {
+  position: absolute; top: 8px; left: 12px;
+  font-size: 10px; font-weight: 600; font-variant-numeric: tabular-nums;
+  background: var(--ink); color: #fff; border-radius: 6px; padding: 4px 9px;
+  pointer-events: none; opacity: 0; transition: opacity .12s;
+}
+.prof-pop { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
+body.dark .prof { background: #171f27; }
+
 /* patka zdrojů */
 .p-zdroje { display: flex; gap: 9px; padding: 18px 0 30px; flex-wrap: wrap; align-items: center; }
 .p-zdroje .src { margin-left: auto; font-size: 9px; color: var(--muted); font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }

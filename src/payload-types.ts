@@ -276,6 +276,19 @@ export interface Chaty {
         znaceni?: ('cervena' | 'modra' | 'zelena' | 'zluta' | 'jine') | null;
         obtiznost?: ('snadna' | 'stredni' | 'narocna') | null;
         poznamka?: string | null;
+        delkaKm?: number | null;
+        /**
+         * Pole dvojic [km, výška v m]: [[0, 769], [1.2, 850], …]. Zdroj bodů patří do ověření skupiny Přístup — nedomýšlet.
+         */
+        vyskovyProfil?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
         id?: string | null;
       }[]
     | null;
@@ -918,6 +931,8 @@ export interface ChatySelect<T extends boolean = true> {
         znaceni?: T;
         obtiznost?: T;
         poznamka?: T;
+        delkaKm?: T;
+        vyskovyProfil?: T;
         id?: T;
       };
   autem?: T;

@@ -277,6 +277,30 @@ export const Chaty: CollectionConfig = {
                   options: OBTIZNOST_OPTIONS,
                 },
                 { name: 'poznamka', type: 'text', label: 'Poznámka' },
+                { name: 'delkaKm', type: 'number', label: 'Délka (km)', min: 0 },
+                {
+                  name: 'vyskovyProfil',
+                  type: 'json',
+                  label: 'Výškový profil (body trasy)',
+                  admin: {
+                    description:
+                      'Pole dvojic [km, výška v m]: [[0, 769], [1.2, 850], …]. Zdroj bodů patří do ověření skupiny Přístup — nedomýšlet.',
+                  },
+                  validate: (value: unknown) => {
+                    if (value == null) return true
+                    const ok =
+                      Array.isArray(value) &&
+                      value.length >= 2 &&
+                      value.every(
+                        (b) =>
+                          Array.isArray(b) &&
+                          b.length === 2 &&
+                          typeof b[0] === 'number' &&
+                          typeof b[1] === 'number',
+                      )
+                    return ok || 'Očekávám pole dvojic [km, výška], nejméně 2 body.'
+                  },
+                },
               ],
             },
             { name: 'autem', type: 'textarea', label: 'Autem a parkování' },

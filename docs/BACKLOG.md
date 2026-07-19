@@ -9,7 +9,7 @@
 - [x] **F0-03** Komponenty: sekční lišty, tlačítka, chips, stavové pilulky, infoboxy, pásové značky, tabulkové řádky, karta chaty
 - [x] **F0-04** Payload kolekce dle plánu kap. 5: Chata, Oblast, Výlet, Razítko, Fotka, Článek (+ pole source/verified/checked všude)
 - [x] **F0-05** Šablona profilu chaty nad daty + JSON-LD + generovaný OG obrázek
-- [ ] **F0-06** Vzorová Luční bouda: naplnit profil (data `verified: false`, postupně ověřovat), interaktivní výškový profil *(rozpracováno 19. 7.: data + seed hotovy — viz deník session 06; zbývá doložit pěší trasy a postavit výškový profil)*
+- [ ] **F0-06** Vzorová Luční bouda: naplnit profil (data `verified: false`, postupně ověřovat), interaktivní výškový profil *(rozpracováno 19. 7.: data profilu + seed hotovy — session 06; komponenta výškového profilu + datový model tras hotovy — session 07. Zbývá jen doložit data tras (časy, body profilu) — **blokováno** rozhodnutím o zdroji výškových dat, viz otázky v deníku; do té doby může další session brát F0-07)*
 - [ ] **F0-07** Mapa MVP: Leaflet + dlaždice Mapy.com „outdoor" + markery + hover preview (API klíč Mapy.com k dispozici v env konfiguraci sessions)
 - [ ] **F0-08** Razítkovací moment + lokální deník (dle handoffu; účty až fáze 4)
 

@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { RichText } from '@payloadcms/richtext-lexical/react'
 
 import TiskButton from '@/components/TiskButton'
+import VyskovyProfil, { type BodProfilu } from '@/components/VyskovyProfil'
 import {
   chataPath,
   formatCas,
@@ -141,6 +142,15 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
   const otisk = razitko && typeof razitko.otisk === 'object' ? razitko.otisk : null
   const overeni = posledniOvereni(chata)
   const trasy = chata.trasy ?? []
+  /** První trasa s doloženým výškovým profilem (≥ 2 body [km, výška]). */
+  const trasaSProfilem = trasy.find(
+    (t) =>
+      Array.isArray(t.vyskovyProfil) &&
+      t.vyskovyProfil.length >= 2 &&
+      t.vyskovyProfil.every(
+        (b) => Array.isArray(b) && b.length === 2 && typeof b[0] === 'number' && typeof b[1] === 'number',
+      ),
+  )
   const sousede = (chata.sousedniChaty ?? []).filter((s) => typeof s.chata === 'object')
   const maHistorii = Boolean(chata.rokVzniku || (chata.milniky?.length ?? 0) > 0 || chata.historieText)
 
@@ -257,6 +267,18 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
               <span />
             </div>
           ))}
+          {trasaSProfilem && (
+            <div style={{ margin: '16px 0 0' }}>
+              <VyskovyProfil
+                body={trasaSProfilem.vyskovyProfil as BodProfilu[]}
+                start={trasaSProfilem.vychoziBod}
+                cil={chata.nazev}
+              />
+              <p className="prof-pop">
+                Výškový profil trasy ({trasaSProfilem.vychoziBod}) — najeď myší po křivce.
+              </p>
+            </div>
+          )}
         </section>
       )}
 
