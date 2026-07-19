@@ -1,6 +1,33 @@
+# závislosti
 node_modules/
-.next/
+/.pnp
+.pnp.js
+
+# next.js
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# prostředí — skutečné hodnoty nikdy do repa
 .env
 .env.local
+.env*.local
+
+# nahrané soubory (lokální Payload media)
+/media
+
+# testy
+/coverage
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# různé
 *.log
 .DS_Store
+*.pem
+.vercel
+.idea/

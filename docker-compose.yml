@@ -1,0 +1,16 @@
+# Lokální vývojová databáze — aplikace běží přímo přes `npm run dev`
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: heslo
+      POSTGRES_DB: turistickechaty
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

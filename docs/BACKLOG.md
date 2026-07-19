@@ -4,7 +4,7 @@
 
 ## Fáze 0 — základy
 
-- [ ] **F0-01** Scaffold: Next.js (App Router) + TypeScript + Payload + Postgres (docker-compose pro lokální DB), struktura repa, `.env.example`, CI lint
+- [x] **F0-01** Scaffold: Next.js (App Router) + TypeScript + Payload + Postgres (docker-compose pro lokální DB), struktura repa, `.env.example`, CI lint
 - [ ] **F0-02** Design základ: `tokens.css` + self-hosted fonty + globální layout dle handoffu (červená topline, vrstevnicové pozadí, navigace, footer, dark mode)
 - [ ] **F0-03** Komponenty: sekční lišty, tlačítka, chips, stavové pilulky, infoboxy, pásové značky, tabulkové řádky, karta chaty
 - [ ] **F0-04** Payload kolekce dle plánu kap. 5: Chata, Oblast, Výlet, Razítko, Fotka, Článek (+ pole source/verified/checked všude)
