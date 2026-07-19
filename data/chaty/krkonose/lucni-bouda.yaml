@@ -1,0 +1,137 @@
+# Luční bouda — vzorový profil (F0-06)
+# Pravidlo: každá skupina údajů má blok overeni (source / verified / checked).
+# verified: false = převzato z uvedeného zdroje, zatím neověřeno redakcí (telefonát/návštěva).
+# Co není doloženo, tu NENÍ (celková kapacita lůžek na webu boudy chybí; pěší trasy
+# a výškový profil přijdou po doložení časů a převýšení — viz DENIK 2026-07-19).
+
+nazev: Luční bouda
+slug: lucni-bouda
+zeme: cz
+typ: obsluhovana # web se prezentuje jako „Hotel Luční bouda"; klasifikace dle taxonomie plánu, viz interniPoznamky
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z webu boudy: 50°44'04.29"N; 15°41'47.86"E → přepočet na desetinné stupně
+lat: 50.734525
+lng: 15.696628
+vyska: 1410
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: https://www.lucnibouda.cz/ (GPS, adresa Pec pod Sněžkou 203) + https://www.lucnibouda.cz/cs/historie/ (1410 m)
+  verified: false
+  checked: '2026-07-19'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+pokoje:
+  - typ: Gallery (dvoulůžkové)
+  - typ: Apartmán Sněžka (dvoulůžkový)
+  - typ: Apartmán Luční (až čtyřlůžkový)
+  - typ: Standard (dvou- až čtyřlůžkové)
+  - typ: Spacákový prostor v nejvyšším patře
+cenyOrientacne: spacáky od 1 300 Kč, pokoje od 3 800 Kč
+overeniNocleh:
+  source: https://www.lucnibouda.cz/ (typy pokojů a ceny „od"; celková kapacita lůžek na webu uvedena není)
+  verified: false
+  checked: '2026-07-19'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace # + celoroční bufet, viz otviraciDoba
+specialita: velké rohlíky, borůvkové koláče, pivo Paroháč z vlastního pivovaru
+overeniObcerstveni:
+  source: https://www.lucnibouda.cz/ („nejvýše položené restaurační zařízení v Čechách" — tvrzení provozovatele; bufet celoročně)
+  verified: false
+  checked: '2026-07-19'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+wc: ano # toalety přístupné veřejnosti (obnoveno 9. 8. 2025)
+platbaKartou: ano # Mastercard, Visa
+# voda / sprchy / wifi / psi / nabíjení / lyžárna: nezjištěno → nevyplněno
+overeniSluzby:
+  source: https://www.lucnibouda.cz/ (karty) + https://www.ceskenoviny.cz/zpravy/lucni-bouda-se-vraci-do-bezneho-provozu-pristupny-je-opet-bufet-a-toalety/2707109 (toalety)
+  verified: false
+  checked: '2026-07-19'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: Celoročně
+otviraciDoba: |-
+  Bufet denně 10:00–17:00, celoročně.
+  Restaurace pro neubytované po předchozí rezervaci.
+kontakty:
+  telefon: +420 733 740 888
+  email: info@lucnibouda.cz
+  web: https://www.lucnibouda.cz/
+overeniProvoz:
+  source: https://www.lucnibouda.cz/ (bufet, kontakty) + ČeskéNoviny.cz 9. 8. 2025 (režim restaurace po návratu do běžného provozu)
+  verified: false
+  checked: '2026-07-19'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+# Pěší trasy zatím nezapsány — časy a převýšení nejsou doloženy (web boudy je neuvádí).
+autem: |-
+  Autem jen na placené parkoviště P1 (dopravní terminál) na začátku Pece pod Sněžkou u čerpací stanice KM Prona.
+  Zbývajících cca 8,5 km se stoupáním 750 m zajišťuje smluvní přeprava hotelu — rezervace nejpozději den předem na +420 733 740 889.
+overeniPristup:
+  source: https://www.lucnibouda.cz/cs/doprava-k-hotelu/
+  verified: false
+  checked: '2026-07-19'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1623 # letopočet na základním kameni objeveném při rekonstrukci 1869; podle provozovatele bouda stála už v 2. pol. 16. století
+milniky:
+  - rok: 1623
+    udalost: Letopočet vytesaný na základním kameni (objeven při rekonstrukci 1869); bouda podle provozovatele stála už v 2. polovině 16. století
+  - rok: 1625
+    udalost: Bouda po požáru přestavěna
+  - rok: 1809
+    udalost: U boudy postaven tzv. letní dům
+  - rok: 1857
+    udalost: Boudu převzal Václav Hollmann; 1875 ji podstatně rozšířil pro turistický ruch
+  - rok: 1914
+    udalost: Přestavba na největší boudu Krkonoš se 100 pokoji
+  - rok: 1938
+    udalost: 2. října vyhořela při ústupu československé armády po Mnichovu; rekonstrukce dokončena o Velikonocích 1940
+  - rok: 1991
+    udalost: Ve správě Klubu českých turistů (do 2002), poté dva roky zavřená
+  - rok: 2004
+    udalost: Zdevastovanou boudu koupila společnost AEZZ a postupně ji obnovila
+overeniHistorie:
+  source: https://www.lucnibouda.cz/cs/historie/
+  verified: false
+  checked: '2026-07-19'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Podle provozovatele největší a nejstarší bouda Krkonoš, ve výšce 1 410 m
+  nad Pecí pod Sněžkou. Celoročně otevřený bufet, restaurace, nocleh od
+  spacákového patra po apartmány — a pivo Paroháč z vlastního pivovaru.
+text:
+  - >-
+    Luční bouda stojí na hřebenech Krkonoš od nepaměti — základní kámen nese
+    letopočet 1623 a provozovatel dokládá, že tu bouda stála už v druhé
+    polovině 16. století. Dnešní rozlehlá podoba pochází z přestavby roku
+    1914, kdy se stala největší boudou Krkonoš.
+  - >-
+    Zázemí je dnes hotelové: pokoje od kategorie Standard po apartmány,
+    pro turisty s vlastním spacákem slouží prostor v nejvyšším patře.
+    Bufet má otevřeno denně 10:00–17:00 po celý rok, restaurace vaří
+    i pro neubytované po předchozí rezervaci — a k jídlu se čepuje pivo
+    Paroháč z vlastního pivovaru, nejvýše položeného v Čechách dle
+    provozovatele.
+  - >-
+    Auta končí v Peci pod Sněžkou na terminálu P1; posledních zhruba
+    8,5 km s převýšením 750 m obstará smluvní přeprava hotelu, pěšky
+    vedou na boudu značené hřebenové cesty.
+zdroje:
+  - popis: Web Luční boudy (lucnibouda.cz) — profil, historie, doprava
+    url: https://www.lucnibouda.cz/
+  - popis: ČeskéNoviny.cz 9. 8. 2025 — návrat do běžného provozu (bufet a toalety pro veřejnost)
+    url: https://www.ceskenoviny.cz/zpravy/lucni-bouda-se-vraci-do-bezneho-provozu-pristupny-je-opet-bufet-a-toalety/2707109
+interniPoznamky: |-
+  Typ: web se prezentuje jako „Hotel Luční bouda"; zapsáno jako obsluhovaná chata dle taxonomie plánu (zvážit typ „horský hotel v roli chaty" — rozhodne Michal).
+  Kapacita lůžek: na webu boudy neuvedena — nezapsáno (žádné „≈ 90 lůžek" z prototypu, to byl demo údaj).
+  Provoz 6–8/2025 omezen kvůli sporu majitelů se Správou KRNAP (přístup jen pro ubytované); od 9. 8. 2025 běžný režim po dohodě s MŽP. Sledovat případné změny.
+  Webkamera: web ji zmiňuje, přesná URL nedohledána — doplnit.
+  Pěší trasy + výškový profil: doplnit po doložení (rozcestníky KČT / mapy.cz / GPX) — souvisí s interaktivním výškovým profilem.
