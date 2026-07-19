@@ -1,0 +1,38 @@
+<!-- @dsCard group="Komponenty" name="Tehdy/dnes + odznaky pohoří" subtitle="Porovnání dobové pohlednice s dneškem · odznak za kompletní sbírku" -->
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tehdy a dnes</title><link rel="stylesheet" href="../fonts/fonts.css"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#f7f6f0;color:#384057;font-size:15px;line-height:1.6;padding:22px;-webkit-font-smoothing:antialiased}
+a{color:#1b6e9e}a:hover{color:#124d6e}
+.sg{font-family:'Space Grotesk','Inter',sans-serif}.mono{font-family:'Inter',system-ui,sans-serif;font-weight:600;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.card{background:#fff;border:1px solid #e6e6e1;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+h4{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-variant-numeric:tabular-nums;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#5e6971;margin-bottom:14px;font-weight:600}
+.cmp{position:relative;border-radius:12px;overflow:hidden;max-width:560px;user-select:none}
+.cmp svg{display:block;width:100%}
+.cmp .now{position:absolute;inset:0;clip-path:inset(0 0 0 var(--x,50%))}
+.cmp .bar{position:absolute;top:0;bottom:0;left:var(--x,50%);width:2px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.15)}
+.cmp .knob{position:absolute;top:50%;left:var(--x,50%);transform:translate(-50%,-50%);width:34px;height:34px;border-radius:99px;background:#fff;box-shadow:0 16px 48px -20px rgba(18,24,29,.55);display:grid;place-items:center;font-size:11px;color:#384057;font-weight:700;letter-spacing:-1px}
+.cmp .tag{position:absolute;bottom:10px;font-family:'Inter',system-ui,sans-serif;font-weight:600;font-variant-numeric:tabular-nums;font-size:9px;letter-spacing:.12em;padding:3px 9px;border-radius:6px;background:rgba(18,24,29,.68);color:#fff}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+.bdg{display:flex;flex-direction:column;align-items:center;gap:9px}
+.bdg .lb{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-variant-numeric:tabular-nums;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:#5e6971;text-align:center}
+</style></head><body style="max-width:760px">
+<div class="card"><h4>Tehdy / dnes — táhni jezdcem</h4>
+<div class="cmp" id="cmp">
+<svg viewBox="0 0 560 300" preserveAspectRatio="xMidYMid slice"><rect width="560" height="300" fill="#e8dfcb"/><path d="M0,190 C90,150 190,170 290,130 L370,84 L450,150 C500,168 540,172 560,175 L560,300 L0,300 Z" fill="#b3a684"/><path d="M0,238 C140,214 300,228 560,204 L560,300 L0,300 Z" fill="#8d8164"/><g transform="translate(365,168)"><polygon points="-26,0 0,-22 26,0" fill="#5c5340"/><rect x="-19" y="0" width="38" height="20" fill="#6b614a"/></g><g font-family="Inter" font-weight="600" font-size="10" fill="#5c5340"><text x="16" y="26">POZDRAV Z KRKONOŠ</text></g><rect width="560" height="300" fill="#7a6a45" opacity=".14"/></svg>
+<div class="now"><svg viewBox="0 0 560 300" preserveAspectRatio="xMidYMid slice"><rect width="560" height="300" fill="#dbe7f0"/><path d="M0,190 C90,150 190,170 290,130 L370,84 L450,150 C500,168 540,172 560,175 L560,300 L0,300 Z" fill="#93ab97"/><path d="M0,238 C140,214 300,228 560,204 L560,300 L0,300 Z" fill="#64815f"/><g transform="translate(365,168)"><polygon points="-26,0 0,-22 26,0" fill="#2d3f2e"/><rect x="-19" y="0" width="38" height="20" fill="#3a4f3a"/><rect x="-5" y="8" width="10" height="12" fill="#e8eee6"/></g></svg></div>
+<div class="bar"></div><div class="knob">◂▸</div>
+<span class="tag" style="left:10px">TEHDY · 1928</span><span class="tag" style="right:10px">DNES · 2026</span>
+<input type="range" min="8" max="92" value="50" id="rng" aria-label="Porovnání tehdy a dnes">
+</div>
+<p style="font-size:12.5px;color:#5e6971;margin-top:11px">Rám bez ozdob — nostalgie je ve fotografii, ne v rozhraní. Popisky mono s rokem. Výchozí poloha 50 %.</p></div>
+<div class="card"><h4>Odznaky pohoří — za kompletní sbírku regionu</h4>
+<div style="display:flex;gap:26px;flex-wrap:wrap;align-items:flex-start">
+<div class="bdg"><svg width="104" height="104" viewBox="0 0 104 104"><circle cx="52" cy="52" r="48" fill="#e0341f"/><circle cx="52" cy="52" r="48" fill="none" stroke="#b82413" stroke-width="2"/><path d="M22 66 L38 42 L47 54 L58 36 L82 66 Z" fill="#fff"/><text x="52" y="86" text-anchor="middle" font-family="Inter" font-weight="600" font-size="8.5" letter-spacing="1.6" fill="#fff">KRKONOŠE</text><text x="52" y="24" text-anchor="middle" font-family="Space Grotesk" font-size="11" font-weight="700" fill="#fff">28/28</text></svg><span class="lb">Kompletní<br>plná plocha, značková červená</span></div>
+<div class="bdg"><svg width="104" height="104" viewBox="0 0 104 104"><circle cx="52" cy="52" r="48" fill="#f7f6f0"/><circle cx="52" cy="52" r="48" fill="none" stroke="#e6e6e1" stroke-width="2"/><circle cx="52" cy="52" r="48" fill="none" stroke="#e0341f" stroke-width="4" stroke-linecap="round" stroke-dasharray="192 302" transform="rotate(-90 52 52)"/><path d="M22 66 L38 42 L47 54 L58 36 L82 66 Z" fill="#c9c4b4"/><text x="52" y="86" text-anchor="middle" font-family="Inter" font-weight="600" font-size="8.5" letter-spacing="1.6" fill="#5e6971">JESENÍKY</text><text x="52" y="24" text-anchor="middle" font-family="Space Grotesk" font-size="11" font-weight="700" fill="#384057">12/19</text></svg><span class="lb">Rozpracovaný<br>progres po obvodu</span></div>
+<div class="bdg"><svg width="104" height="104" viewBox="0 0 104 104"><circle cx="52" cy="52" r="48" fill="#f7f6f0"/><circle cx="52" cy="52" r="48" fill="none" stroke="#e6e6e1" stroke-width="2" stroke-dasharray="6 5"/><path d="M22 66 L38 42 L47 54 L58 36 L82 66 Z" fill="#e0ddd0"/><text x="52" y="86" text-anchor="middle" font-family="Inter" font-weight="600" font-size="8.5" letter-spacing="1.6" fill="#a9a698">TATRY</text><text x="52" y="24" text-anchor="middle" font-family="Space Grotesk" font-size="11" font-weight="700" fill="#a9a698">0/31</text></svg><span class="lb">Nezačatý<br>přerušovaný obrys</span></div></div>
+<p style="font-size:12.5px;color:#5e6971;margin-top:12px">Jediný motiv: silueta hřebene + mono název + tabulkové skóre. Žádné stuhy, lipové listy ani skautský kýč. Odznak je kulatý jako razítko, ale nikdy natočený — disciplinovaná odměna.</p></div>
+<script>
+const c=document.getElementById('cmp');document.getElementById('rng').addEventListener('input',e=>c.style.setProperty('--x',e.target.value+'%'));
+</script>
+</body></html>

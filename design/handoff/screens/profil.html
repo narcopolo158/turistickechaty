@@ -1,0 +1,102 @@
+<!-- @dsCard group="Obrazovky" name="Profil chaty (v2.1)" -->
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profil chaty</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#f7f6f0;color:#384057;font-size:15px;line-height:1.6;padding:22px;-webkit-font-smoothing:antialiased}
+.sg{font-family:'Space Grotesk','Inter',sans-serif}.mono{font-family:'Inter',sans-serif;font-weight:600;letter-spacing:.05em}
+.card{background:#fff;border:1px solid #e6e6e1;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+h4{font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#5e6971;margin-bottom:14px;font-weight:600}
+.sw-g{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:10px}
+.sw{border-radius:10px;height:62px;position:relative;border:1px solid rgba(0,0,0,.06)}
+.sw i{position:absolute;left:8px;bottom:6px;font-style:normal;font-family:'Inter',sans-serif;font-size:9px;color:#fff}
+.sw em{position:absolute;left:8px;top:6px;font-style:normal;font-size:9.5px;font-weight:600;color:#fff}
+.sw.lt i,.sw.lt em{color:#4a4a44}
+.lista{display:flex;align-items:center;gap:11px;background:#1b6e9e;color:#fff;border-radius:9px;padding:8px 15px;margin-bottom:10px}
+.lista.red{background:#e0341f}
+.lista .n{font-family:'Inter',sans-serif;font-size:10px;opacity:.8}
+.lista b{font-family:'Space Grotesk','Inter',sans-serif;font-size:14px;font-weight:700}
+.lista .r{margin-left:auto;font-family:'Inter',sans-serif;font-size:9.5px;opacity:.9}
+.btn{border:0;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:11px;background:#e0341f;color:#fff;margin:0 8px 8px 0}
+.btn.blue{background:#1b6e9e}.btn.gh{background:#fff;border:1.5px solid #e6e6e1;color:#384057}.btn.link{background:none;color:#1b6e9e;padding:11px 4px}
+.ibox{background:#e7f1f6;border-radius:10px;padding:12px 15px;font-size:12.5px;margin-bottom:10px;color:#124d6e}
+.ibox .lbl{display:inline-block;background:#1b6e9e;color:#fff;font-family:'Inter',sans-serif;font-size:9px;letter-spacing:.1em;border-radius:5px;padding:2px 7px;margin-bottom:6px}
+.ibox.red{background:#fdeeea;color:#b82413}.ibox.red .lbl{background:#e0341f}
+.status{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;background:#f7f6f0;border-radius:999px;padding:6px 13px;margin:0 6px 6px 0}
+.status i{width:8px;height:8px;border-radius:99px;font-style:normal}
+.status.solid{background:#1e8a4f;color:#fff}.status.solid i{background:#fff}
+.znk{display:inline-flex;align-items:center;gap:8px;background:#f7f6f0;border-radius:8px;padding:7px 12px;font-size:12.5px;font-weight:600;margin:0 6px 6px 0}
+.znk i{width:26px;height:11px;border:1px solid #d3cdbe;border-radius:2px;background:linear-gradient(180deg,#fff 33%,var(--zc) 33% 66%,#fff 66%)}
+.chip{display:inline-flex;gap:7px;font-size:12px;font-weight:600;padding:6px 13px;border-radius:999px;background:#e7f1f6;color:#124d6e;margin:0 6px 6px 0}
+.chip b{font-family:'Inter',sans-serif;font-weight:500;color:#1b6e9e}
+
+.mock{background:#fff;border:1px solid #e6e6e1;border-radius:16px;overflow:hidden;box-shadow:0 16px 48px -26px rgba(18,24,29,.3);border-top:5px solid #e0341f}
+.m-top{display:flex;align-items:center;gap:14px;padding:13px 22px;border-bottom:1px solid #e6e6e1;font-size:13px}
+.m-brand{display:flex;align-items:center;gap:9px;font-family:'Space Grotesk';font-weight:700;font-size:15px}
+.m-nav{display:flex;gap:5px;margin-left:8px}.m-nav span{padding:6px 12px;color:#5e6971;font-weight:500;border-radius:999px;font-size:12.5px}
+.m-nav span.on{background:#1b6e9e;color:#fff;font-weight:600}
+.m-denik{margin-left:auto;display:flex;align-items:center;gap:8px;font-weight:600;font-size:12px;background:#f7f6f0;border-radius:999px;padding:6px 13px}
+.m-denik b{background:#e0341f;color:#fff;border-radius:999px;font-size:10px;min-width:17px;height:17px;display:grid;place-items:center}
+.m-photo{position:relative;height:250px;overflow:hidden}
+.m-photo svg{position:absolute;inset:0;width:100%;height:100%}
+.m-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,24,29,.02) 42%,rgba(18,24,29,.72))}
+.m-htxt{position:absolute;left:0;right:0;bottom:0;z-index:2;color:#fff;padding:0 24px 18px}
+.m-crumb{font-family:'Inter';font-size:10px;letter-spacing:.09em;text-transform:uppercase;opacity:.92;margin-bottom:6px}
+.m-h1{font-family:'Space Grotesk';font-weight:700;font-size:34px;letter-spacing:-.02em;line-height:1.02}
+.m-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+.m-badges span{font-size:11px;font-weight:600;padding:5px 11px;border-radius:999px;background:#fff;color:#384057}
+.m-badges span.open{background:#1e8a4f;color:#fff}
+.m-facts{display:grid;grid-template-columns:repeat(4,1fr);padding:16px 24px 10px}
+.m-fact{border-left:1px solid #e6e6e1;padding:3px 16px 6px}.m-fact:first-child{border-left:0;padding-left:0}
+.m-fact .k{font-family:'Inter';font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:#5e6971}
+.m-fact .v{font-family:'Space Grotesk';font-size:21px;font-weight:700;margin-top:2px}
+.m-fact .s{font-size:10.5px;color:#5e6971}
+.m-sec{padding:8px 24px 6px}
+.m-rt{display:grid;grid-template-columns:1.7fr .5fr .6fr .6fr .5fr;gap:8px;align-items:center;font-size:12.5px;padding:9px 2px;border-bottom:1px solid #e6e6e1}
+.m-rt b{font-size:13px}.m-rt .sm{display:block;font-size:11px;color:#5e6971;font-weight:400}
+.m-rt .num{font-family:'Inter';font-size:12px}
+.m-rt .znm{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600}
+.m-rt .znm i{width:22px;height:9px;border:1px solid #d3cdbe;border-radius:2px;background:linear-gradient(180deg,#fff 33%,var(--zc) 33% 66%,#fff 66%)}
+.m-rt .lnk{color:#1b6e9e;font-weight:600;font-size:11.5px;justify-self:end}
+.m-grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:8px 24px 6px}
+.m-box{background:#fff;border:1px solid #e6e6e1;border-radius:12px;overflow:hidden}
+.m-box .bx{padding:13px 15px}
+.m-box .lista{border-radius:0;margin:0}
+.m-btns{display:flex;gap:9px;padding:12px 24px 22px;flex-wrap:wrap;align-items:center}
+.m-src{margin-left:auto;font-family:'Inter';font-size:9px;color:#5e6971}
+</style></head><body style="max-width:860px">
+<div class="mock">
+ <div class="m-top"><span class="m-brand"><svg viewBox="0 0 40 40" style="width:23px;height:23px"><polygon points="20,7 34,22 6,22" fill="#e0341f"/><rect x="11" y="22" width="18" height="12" fill="#e0341f"/><rect x="17.5" y="26" width="5" height="8" fill="#fff"/></svg>Turistické chaty</span>
+  <span class="m-nav"><span>Mapa</span><span class="on">Chaty</span><span>Výlety</span><span>Razítkovník</span></span>
+  <span class="m-denik">Deník <b>12</b></span></div>
+ <div class="m-photo"><svg viewBox="0 0 900 460" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="ph" x2="0" y2="1"><stop offset="0" stop-color="#dbe7f0"/><stop offset="1" stop-color="#e8eee6"/></linearGradient></defs>
+<rect width="900" height="460" fill="url(#ph)"/><circle cx="710" cy="88" r="42" fill="#f4c46a" opacity=".9"/>
+<path d="M0,280 C120,232 240,255 340,222 C440,190 520,230 620,200 L710,138 L800,220 C840,240 880,247 900,250 L900,460 L0,460 Z" fill="#93ab97"/>
+<path d="M0,340 C160,300 320,325 480,296 C640,268 780,310 900,288 L900,460 L0,460 Z" fill="#64815f"/>
+<path d="M0,398 C200,372 420,390 620,368 C740,356 840,370 900,362 L900,460 L0,460 Z" fill="#41573f"/>
+<g transform="translate(618,326)"><polygon points="-17,0 0,-14 17,0" fill="#2d3f2e"/><rect x="-12" y="0" width="24" height="13" fill="#2d3f2e"/></g></svg>
+  <div class="m-htxt"><div class="m-crumb">Česko › Krkonoše · 50.7326 N, 15.6960 E</div>
+   <div class="m-h1">Luční bouda</div>
+   <div class="m-badges"><span>Obsluhovaná chata</span><span>1 410 m n. m.</span><span class="open">● Otevřeno · dnes 8–18</span></div></div></div>
+ <div class="m-facts">
+  <div class="m-fact"><div class="k">Výška</div><div class="v">1 410 m</div><div class="s">hlavní hřeben</div></div>
+  <div class="m-fact"><div class="k">Otevřeno</div><div class="v">Celoročně</div><div class="s">dnes 8–18</div></div>
+  <div class="m-fact"><div class="k">Nocleh</div><div class="v">≈ 90 lůžek</div><div class="s">pokoje i ložnice</div></div>
+  <div class="m-fact"><div class="k">Ověřeno</div><div class="v">14. 6. 2026</div><div class="s">redakce + chatař</div></div></div>
+ <div class="m-sec"><div class="lista"><span class="n">01</span><b>Přístupové trasy</b><span class="r">→ VŠECHNY NA MAPĚ</span></div>
+  <div class="m-rt"><div><b>Z Pece pod Sněžkou</b><span class="sm">přes Modrý důl</span></div><span class="num">2:30</span><span class="num">+680 m</span><span class="znm"><i style="--zc:#2a5cb8"></i>modrá</span><span class="lnk">GPX ↓</span></div>
+  <div class="m-rt"><div><b>Od lanovky na Sněžku</b><span class="sm">přes Obří sedlo</span></div><span class="num">1:15</span><span class="num">+90 m</span><span class="znm"><i style="--zc:#e0341f"></i>červená</span><span class="lnk">GPX ↓</span></div>
+  <div class="m-rt" style="border-bottom:0"><div><b>Ze Špindlerova Mlýna</b><span class="sm">údolím Bílého Labe</span></div><span class="num">3:00</span><span class="num">+690 m</span><span class="znm"><i style="--zc:#2e8b57"></i>zelená</span><span class="lnk">GPX ↓</span></div></div>
+ <div class="m-grid2">
+  <div class="m-box"><div class="lista red"><span class="n">02</span><b>Razítko</b><span class="r">SBÍRKA</span></div>
+   <div class="bx"><div style="display:flex;gap:14px;align-items:center"><svg viewBox="0 0 200 200" style="width:88px;height:88px;transform:rotate(-7deg)"><defs><path id="ap" d="M 18,100 A 82,82 0 0 1 182,100"/><path id="bp" d="M 18,100 A 82,82 0 0 0 182,100"/></defs>
+<g fill="none" stroke="#c92f1b"><circle cx="100" cy="100" r="95" stroke-width="4"/><circle cx="100" cy="100" r="64" stroke-width="1.8"/></g>
+<text font-size="15.5" font-weight="700" letter-spacing="2.6" fill="#c92f1b"><textPath href="#ap" startOffset="50%" text-anchor="middle">LUČNÍ BOUDA</textPath></text>
+<text font-size="12.5" font-weight="700" letter-spacing="2.2" fill="#c92f1b"><textPath href="#bp" startOffset="50%" text-anchor="middle">· KRKONOŠE ·</textPath></text>
+<g fill="#c92f1b" transform="translate(100,86)"><path d="M-16,3 L0,-13 L16,3 Z"/><rect x="-11" y="3" width="22" height="15"/><rect x="-3.5" y="8" width="7" height="10" fill="#fff" fill-opacity=".9"/></g>
+<text x="100" y="126" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1.5" fill="#c92f1b">1410 M</text></svg><div class="mono" style="font-size:10px;color:#5e6971;line-height:1.8"><b style="color:#384057">DOLOŽENO 14. 6. 2026</b><br>přispěla @horalka88<br><span style="color:#1b6e9e">→ historické varianty (2)</span></div></div></div></div>
+  <div class="m-box"><div class="lista"><span class="n">03</span><b>Sousední chaty</b><span class="r">PLÁNOVAČ</span></div>
+   <div class="bx"><span class="chip">Výrovka <b>0:45</b></span><span class="chip">Poštovna <b>1:15</b></span><span class="chip">Špindlerova <b>2:15</b></span>
+    <div class="ibox" style="margin:10px 0 0"><span class="lbl">TIP PRŮVODCE</span><br>Přes Výrovku a Poštovnu vede nejhezčí okruh na Sněžku.</div></div></div></div>
+ <div class="m-btns"><button class="btn">＋ Razítko do deníku</button><button class="btn blue">Rezervovat nocleh</button><button class="btn gh">Nahlásit změnu</button><span class="m-src">ZDROJE: CHATA · KRNAP · REDAKCE</span></div>
+</div>
+</body></html>

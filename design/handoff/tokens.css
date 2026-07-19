@@ -1,0 +1,21 @@
+/* turistickechaty.cz — design tokens v2.2 · „Moderní průvodce" — pouze Space Grotesk + Inter */
+@import url('./fonts/fonts.css');
+:root {
+  /* plochy */
+  --paper:#ffffff; --cream:#f7f6f0; --ink:#384057; --muted:#5e6971; --line:#e6e6e1; --night:#12181d;
+  /* značka — barva jen v plochách a textu, nikdy v rámečcích */
+  --red:#e0341f; --red-deep:#b82413; --red-soft:#fdeeea;
+  --blue:#1b6e9e; --blue-deep:#124d6e; --blue-soft:#e7f1f6;
+  /* sémantika */
+  --open:#1e8a4f; --gone:#8a949c; --stamp:#c92f1b;
+  /* alpská zelená — fresh vrstva přírody a výletů (nikdy CTA, nikdy rámečky) */
+  --alpine:#61ba13; --alpine-deep:#4c930e; --alpine-soft:#eff8e3;
+  --tr-red:#e0341f; --tr-blue:#2a5cb8; --tr-green:#2e8b57; --tr-yellow:#eab308;
+  /* typografie a geometrie */
+  --font-display:'Space Grotesk','Inter',sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  /* štítky a metadata: Inter 600, kapitálky, prostrkání .06–.1em, tabulková čísla ("tnum") — žádný monospace */
+  --radius:12px; --grid:8px;
+  --topline:5px solid var(--red);
+  --shadow-float:0 16px 48px -26px rgba(18,24,29,.3);
+}

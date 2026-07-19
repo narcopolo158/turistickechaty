@@ -1,0 +1,88 @@
+<!-- @dsCard group="Obrazovky" name="Úvod — obálka průvodce (v2.1)" -->
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Úvod</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#f7f6f0;color:#384057;font-size:15px;line-height:1.6;padding:22px;-webkit-font-smoothing:antialiased}
+.sg{font-family:'Space Grotesk','Inter',sans-serif}.mono{font-family:'Inter',sans-serif;font-weight:600;letter-spacing:.05em}
+.card{background:#fff;border:1px solid #e6e6e1;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+h4{font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#5e6971;margin-bottom:14px;font-weight:600}
+.sw-g{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:10px}
+.sw{border-radius:10px;height:62px;position:relative;border:1px solid rgba(0,0,0,.06)}
+.sw i{position:absolute;left:8px;bottom:6px;font-style:normal;font-family:'Inter',sans-serif;font-size:9px;color:#fff}
+.sw em{position:absolute;left:8px;top:6px;font-style:normal;font-size:9.5px;font-weight:600;color:#fff}
+.sw.lt i,.sw.lt em{color:#4a4a44}
+.lista{display:flex;align-items:center;gap:11px;background:#1b6e9e;color:#fff;border-radius:9px;padding:8px 15px;margin-bottom:10px}
+.lista.red{background:#e0341f}
+.lista .n{font-family:'Inter',sans-serif;font-size:10px;opacity:.8}
+.lista b{font-family:'Space Grotesk','Inter',sans-serif;font-size:14px;font-weight:700}
+.lista .r{margin-left:auto;font-family:'Inter',sans-serif;font-size:9.5px;opacity:.9}
+.btn{border:0;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:11px;background:#e0341f;color:#fff;margin:0 8px 8px 0}
+.btn.blue{background:#1b6e9e}.btn.gh{background:#fff;border:1.5px solid #e6e6e1;color:#384057}.btn.link{background:none;color:#1b6e9e;padding:11px 4px}
+.ibox{background:#e7f1f6;border-radius:10px;padding:12px 15px;font-size:12.5px;margin-bottom:10px;color:#124d6e}
+.ibox .lbl{display:inline-block;background:#1b6e9e;color:#fff;font-family:'Inter',sans-serif;font-size:9px;letter-spacing:.1em;border-radius:5px;padding:2px 7px;margin-bottom:6px}
+.ibox.red{background:#fdeeea;color:#b82413}.ibox.red .lbl{background:#e0341f}
+.status{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;background:#f7f6f0;border-radius:999px;padding:6px 13px;margin:0 6px 6px 0}
+.status i{width:8px;height:8px;border-radius:99px;font-style:normal}
+.status.solid{background:#1e8a4f;color:#fff}.status.solid i{background:#fff}
+.znk{display:inline-flex;align-items:center;gap:8px;background:#f7f6f0;border-radius:8px;padding:7px 12px;font-size:12.5px;font-weight:600;margin:0 6px 6px 0}
+.znk i{width:26px;height:11px;border:1px solid #d3cdbe;border-radius:2px;background:linear-gradient(180deg,#fff 33%,var(--zc) 33% 66%,#fff 66%)}
+.chip{display:inline-flex;gap:7px;font-size:12px;font-weight:600;padding:6px 13px;border-radius:999px;background:#e7f1f6;color:#124d6e;margin:0 6px 6px 0}
+.chip b{font-family:'Inter',sans-serif;font-weight:500;color:#1b6e9e}
+
+.mock{background:#fff;border:1px solid #e6e6e1;border-radius:16px;overflow:hidden;box-shadow:0 16px 48px -26px rgba(18,24,29,.3);border-top:5px solid #e0341f}
+.m-top{display:flex;align-items:center;gap:14px;padding:13px 22px;border-bottom:1px solid #e6e6e1;font-size:13px}
+.m-brand{display:flex;align-items:center;gap:9px;font-family:'Space Grotesk';font-weight:700;font-size:15px}
+.m-nav{display:flex;gap:5px;margin-left:8px}.m-nav span{padding:6px 12px;color:#5e6971;font-weight:500;border-radius:999px;font-size:12.5px}
+.m-nav span.on{background:#1b6e9e;color:#fff;font-weight:600}
+.m-denik{margin-left:auto;display:flex;align-items:center;gap:8px;font-weight:600;font-size:12px;background:#f7f6f0;border-radius:999px;padding:6px 13px}
+.m-denik b{background:#e0341f;color:#fff;border-radius:999px;font-size:10px;min-width:17px;height:17px;display:grid;place-items:center}
+.m-photo{position:relative;height:250px;overflow:hidden}
+.m-photo svg{position:absolute;inset:0;width:100%;height:100%}
+.m-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,24,29,.02) 42%,rgba(18,24,29,.72))}
+.m-htxt{position:absolute;left:0;right:0;bottom:0;z-index:2;color:#fff;padding:0 24px 18px}
+.m-crumb{font-family:'Inter';font-size:10px;letter-spacing:.09em;text-transform:uppercase;opacity:.92;margin-bottom:6px}
+.m-h1{font-family:'Space Grotesk';font-weight:700;font-size:34px;letter-spacing:-.02em;line-height:1.02}
+.m-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+.m-badges span{font-size:11px;font-weight:600;padding:5px 11px;border-radius:999px;background:#fff;color:#384057}
+.m-badges span.open{background:#1e8a4f;color:#fff}
+.m-facts{display:grid;grid-template-columns:repeat(4,1fr);padding:16px 24px 10px}
+.m-fact{border-left:1px solid #e6e6e1;padding:3px 16px 6px}.m-fact:first-child{border-left:0;padding-left:0}
+.m-fact .k{font-family:'Inter';font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:#5e6971}
+.m-fact .v{font-family:'Space Grotesk';font-size:21px;font-weight:700;margin-top:2px}
+.m-fact .s{font-size:10.5px;color:#5e6971}
+.m-sec{padding:8px 24px 6px}
+.m-rt{display:grid;grid-template-columns:1.7fr .5fr .6fr .6fr .5fr;gap:8px;align-items:center;font-size:12.5px;padding:9px 2px;border-bottom:1px solid #e6e6e1}
+.m-rt b{font-size:13px}.m-rt .sm{display:block;font-size:11px;color:#5e6971;font-weight:400}
+.m-rt .num{font-family:'Inter';font-size:12px}
+.m-rt .znm{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600}
+.m-rt .znm i{width:22px;height:9px;border:1px solid #d3cdbe;border-radius:2px;background:linear-gradient(180deg,#fff 33%,var(--zc) 33% 66%,#fff 66%)}
+.m-rt .lnk{color:#1b6e9e;font-weight:600;font-size:11.5px;justify-self:end}
+.m-grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:8px 24px 6px}
+.m-box{background:#fff;border:1px solid #e6e6e1;border-radius:12px;overflow:hidden}
+.m-box .bx{padding:13px 15px}
+.m-box .lista{border-radius:0;margin:0}
+.m-btns{display:flex;gap:9px;padding:12px 24px 22px;flex-wrap:wrap;align-items:center}
+.m-src{margin-left:auto;font-family:'Inter';font-size:9px;color:#5e6971}
+</style></head><body style="max-width:980px">
+<div class="mock" style="border-top:5px solid #e0341f">
+ <div style="padding:40px 36px 28px;background:linear-gradient(180deg,#fff,#fdfcf8)">
+  <div class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#e0341f;margin-bottom:13px;display:flex;align-items:center;gap:9px"><span style="width:22px;height:10px;border:1px solid #d3cdbe;border-radius:2px;background:linear-gradient(180deg,#fff 33%,#e0341f 33% 66%,#fff 66%)"></span>Průvodce horskými chatami · Česko a Slovensko</div>
+  <div class="sg" style="font-weight:700;font-size:40px;letter-spacing:-.02em;line-height:1.05;max-width:620px">Každá bouda, <span style="color:#e0341f">útulna</span> i bivak.<br>S mapou, příběhem a <span style="color:#1b6e9e">razítkem</span>.</div>
+  <p style="color:#5e6971;margin:13px 0 18px;max-width:520px;font-size:14px">347 chat s ověřenými otvíračkami a trasami · historie a dobové pohlednice · sbírka razítek jako za mlada</p>
+  <div style="display:flex;max-width:500px;background:#fff;border:1.5px solid #e6e6e1;border-radius:12px;padding:5px;box-shadow:0 12px 34px -20px rgba(18,24,29,.35)"><span style="flex:1;padding:10px 14px;font-size:13px;color:#5e6971">Hledej chatu, pohoří nebo výlet…</span><b style="background:#e0341f;color:#fff;border-radius:8px;padding:10px 19px;font-size:12.5px;align-self:center">Hledat</b></div>
+  <div style="display:flex;margin-top:22px;max-width:500px">
+   <div style="flex:1"><b class="sg" style="font-size:21px;font-weight:700;display:block">347</b><span class="mono" style="font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#5e6971">chat v databázi</span></div>
+   <div style="flex:1;border-left:1px solid #e6e6e1;padding-left:16px"><b class="sg" style="font-size:21px;font-weight:700;display:block;color:#e0341f">92 %</b><span class="mono" style="font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#5e6971">razítek doloženo</span></div>
+   <div style="flex:1;border-left:1px solid #e6e6e1;padding-left:16px"><b class="sg" style="font-size:21px;font-weight:700;display:block;color:#1b6e9e">14</b><span class="mono" style="font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#5e6971">pohoří</span></div></div>
+ </div>
+ <div style="border-top:1px solid #e6e6e1"><svg viewBox="0 0 1140 220" style="display:block;width:100%">
+  <rect width="1140" height="220" fill="#fbfaf6"/>
+  <path d="M60,145 C260,88 460,116 660,78 C820,46 980,62 1090,38" fill="none" stroke="#e0341f" stroke-width="2" opacity=".6"/>
+  <g><circle cx="240" cy="114" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2"/><text x="240" y="138" text-anchor="middle" font-size="10" font-weight="600" fill="#3d4a55">Labská bouda</text></g>
+  <g><circle cx="470" cy="102" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2"/><text x="470" y="126" text-anchor="middle" font-size="10" font-weight="600" fill="#3d4a55">Špindlerova</text></g>
+  <g><circle cx="660" cy="78" r="11" fill="#e0341f" stroke="#fff" stroke-width="2.5"/><text x="660" y="106" text-anchor="middle" font-size="11" font-weight="700" fill="#384057">Luční bouda</text></g>
+  <g><circle cx="852" cy="94" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2"/><text x="852" y="118" text-anchor="middle" font-size="10" font-weight="600" fill="#3d4a55">Výrovka</text></g>
+  <g><circle cx="1010" cy="54" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2"/><text x="1010" y="78" text-anchor="middle" font-size="10" font-weight="600" fill="#3d4a55">Poštovna</text></g>
+  <g font-family="Inter" font-weight="600" font-size="8.5" fill="#5e6971"><text x="18" y="204">MAPY.COM · OUTDOOR</text><text x="1040" y="204">≈ 2 KM ──</text></g></svg></div>
+</div>
+</body></html>

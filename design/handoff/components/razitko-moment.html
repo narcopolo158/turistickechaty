@@ -1,0 +1,56 @@
+<!-- @dsCard group="Komponenty" name="Razítkovací moment + prázdné stavy" subtitle="Emoční srdce webu — otisk, rozpití, „ve sbírce“ · 404 a prázdný deník" -->
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Razítkovací moment</title><link rel="stylesheet" href="../fonts/fonts.css"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#f7f6f0;color:#384057;font-size:15px;line-height:1.6;padding:22px;-webkit-font-smoothing:antialiased}
+a{color:#1b6e9e}a:hover{color:#124d6e}
+.sg{font-family:'Space Grotesk','Inter',sans-serif}.mono{font-family:'Inter',system-ui,sans-serif;font-weight:600;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.card{background:#fff;border:1px solid #e6e6e1;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+h4{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-variant-numeric:tabular-nums;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#5e6971;margin-bottom:14px;font-weight:600}
+.btn{border:0;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:11px;background:#e0341f;color:#fff;transition:background .15s}
+.btn.done{background:#fff;color:#1e8a4f;border:1.5px solid #e6e6e1;cursor:default}
+.pad{position:relative;width:150px;height:150px;background:#fbfaf6;border:1.5px dashed #d3cdbe;border-radius:12px;display:grid;place-items:center}
+.pad .hint{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-variant-numeric:tabular-nums;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#a9a698;text-align:center;line-height:1.9}
+.pad svg{position:absolute;width:118px;height:118px;opacity:0;pointer-events:none}
+.pad.hit svg{animation:stamp .55s cubic-bezier(.2,1.4,.35,1) forwards}
+.pad.hit .hint{display:none}
+@keyframes stamp{
+0%{opacity:0;transform:scale(2.1) rotate(2deg);filter:blur(2px)}
+55%{opacity:1;transform:scale(.94) rotate(-8.5deg);filter:blur(0)}
+75%{transform:scale(1.03) rotate(-6.5deg)}
+100%{opacity:1;transform:scale(1) rotate(-7deg)}}
+.es{background:#fbfaf6;border-radius:12px;padding:26px 20px;text-align:center;flex:1;min-width:200px}
+.es svg{width:74px;height:74px;opacity:.45;transform:rotate(-7deg)}
+.es .h{font-family:'Space Grotesk';font-weight:700;font-size:16px;margin:10px 0 3px}
+.es p{font-size:12.5px;color:#5e6971;max-width:230px;margin:0 auto}
+.es .lk{display:inline-block;margin-top:9px;font-size:12.5px;font-weight:600;color:#1b6e9e}
+</style></head><body style="max-width:760px">
+<div class="card"><h4>Razítkovací moment — klikni na tlačítko</h4>
+<div style="display:flex;gap:22px;align-items:center;flex-wrap:wrap">
+<div class="pad" id="pad"><span class="hint">SEM DOPADNE<br>RAZÍTKO</span>
+<svg viewBox="0 0 200 200"><defs><path id="a1" d="M 18,100 A 82,82 0 0 1 182,100"/><path id="b1" d="M 18,100 A 82,82 0 0 0 182,100"/><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/></filter></defs>
+<g filter="url(#ink)"><g fill="none" stroke="#c92f1b"><circle cx="100" cy="100" r="95" stroke-width="4"/><circle cx="100" cy="100" r="64" stroke-width="1.8"/></g>
+<text font-size="15.5" font-weight="700" letter-spacing="2.6" fill="#c92f1b"><textPath href="#a1" startOffset="50%" text-anchor="middle">LUČNÍ BOUDA</textPath></text>
+<text font-size="12.5" font-weight="700" letter-spacing="2.2" fill="#c92f1b"><textPath href="#b1" startOffset="50%" text-anchor="middle">· KRKONOŠE ·</textPath></text>
+<g fill="#c92f1b" transform="translate(100,86)"><path d="M-16,3 L0,-13 L16,3 Z"/><rect x="-11" y="3" width="22" height="15"/><rect x="-3.5" y="8" width="7" height="10" fill="#fff" fill-opacity=".9"/></g>
+<text x="100" y="126" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1.5" fill="#c92f1b">1410 M</text></g></svg></div>
+<div>
+<button class="btn" id="go">＋ Razítko do deníku</button>
+<p style="font-size:12.5px;color:#5e6971;margin-top:11px;max-width:300px">Dopad z výšky (scale 2.1 → 0.94), mikro-odskok, konečné natočení −7°. Rozpití inkoustu přes <span class="mono" style="font-size:10.5px">feTurbulence</span>. 550 ms, jednou — žádné smyčky.</p>
+<p class="mono" id="log" style="font-size:10px;color:#5e6971;margin-top:7px">STAV: NENÍ VE SBÍRCE</p></div></div></div>
+<div class="card"><h4>Prázdné a systémové stavy — razítková řeč</h4>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<div class="es"><svg viewBox="0 0 200 200"><g fill="none" stroke="#8a949c" stroke-dasharray="7 6"><circle cx="100" cy="100" r="92" stroke-width="3"/></g><text x="100" y="94" text-anchor="middle" font-family="Space Grotesk" font-size="34" font-weight="700" fill="#8a949c">?</text><text x="100" y="126" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12" letter-spacing="2" fill="#8a949c">NEDOLOŽENO</text></svg>
+<div class="h">Razítko chybí</div><p>Nikdo ho zatím neotiskl. Byl/a jsi tam?</p><span class="lk">Doložit razítko →</span></div>
+<div class="es"><svg viewBox="0 0 200 200"><g fill="none" stroke="#8a949c" stroke-dasharray="7 6"><circle cx="100" cy="100" r="92" stroke-width="3"/></g><text x="100" y="112" text-anchor="middle" font-family="Space Grotesk" font-size="40" font-weight="700" fill="#8a949c">404</text><text x="100" y="140" text-anchor="middle" font-family="Inter" font-weight="600" font-size="11" letter-spacing="2" fill="#8a949c">MIMO ZNAČKU</text></svg>
+<div class="h">Tady cesta nevede</div><p>Stránka neexistuje — možná zanikla jako Obří bouda.</p><span class="lk">Zpět na rozcestí →</span></div>
+<div class="es"><svg viewBox="0 0 200 200"><g fill="none" stroke="#8a949c" stroke-dasharray="7 6"><circle cx="100" cy="100" r="92" stroke-width="3"/></g><text x="100" y="94" text-anchor="middle" font-family="Space Grotesk" font-size="30" font-weight="700" fill="#8a949c">0</text><text x="100" y="126" text-anchor="middle" font-family="Inter" font-weight="600" font-size="11" letter-spacing="2" fill="#8a949c">RAZÍTEK</text></svg>
+<div class="h">Prázdný deník</div><p>První otisk je nejlepší. Začni chatou, kterou znáš.</p><span class="lk">Najít první razítko →</span></div></div>
+<p style="font-size:12.5px;color:#5e6971;margin-top:12px">Prázdné stavy = šedý přerušovaný obrys razítka (#8A949C), nikdy cihlová. Vždy nabízejí akci.</p></div>
+<script>
+const pad=document.getElementById('pad'),go=document.getElementById('go'),log=document.getElementById('log');
+go.addEventListener('click',()=>{if(go.classList.contains('done'))return;
+pad.classList.add('hit');
+setTimeout(()=>{go.classList.add('done');go.textContent='✓ Ve sbírce · 14. 6. 2026';log.textContent='STAV: VE SBÍRCE · DENÍK 13';},480);});
+</script>
+</body></html>

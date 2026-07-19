@@ -1,0 +1,397 @@
+<!-- @dsCard group="Prototyp" name="Klikací prototyp v2.2" subtitle="Úvod · katalog · profil s razítkem · výlety · razítkovník — alpská zelená" -->
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>turistickechaty.cz — prototyp</title><link rel="stylesheet" href="fonts/fonts.css"><script src="image-slot.js"></script><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#f7f6f0 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='620'%3E%3Cg fill='none' stroke='%23efede3' stroke-width='1.2'%3E%3Cpath d='M-20,120 C180,60 340,170 560,110 S820,140 920,90'/%3E%3Cpath d='M-20,190 C200,130 360,230 580,175 S840,205 920,160'/%3E%3Cpath d='M-20,470 C160,410 380,510 600,450 S860,480 920,430'/%3E%3Cpath d='M-20,540 C180,485 400,575 620,520 S880,545 920,500'/%3E%3C/g%3E%3C/svg%3E");color:#384057;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:#1b6e9e;text-decoration:none}a:hover{color:#124d6e}
+.sg{font-family:'Space Grotesk','Inter',sans-serif}
+.mn{font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+.top{position:sticky;top:0;z-index:50;background:#fff;border-top:5px solid #e0341f;border-bottom:1px solid #e6e6e1}
+.top .wrap{display:flex;align-items:center;gap:14px;padding-top:12px;padding-bottom:12px;font-size:13px}
+.brand{display:flex;align-items:center;gap:9px;font-family:'Space Grotesk';font-weight:700;font-size:16px;cursor:pointer}
+.nav{display:flex;gap:5px;margin-left:10px}
+.nav span{padding:6px 13px;color:#5e6971;font-weight:500;border-radius:999px;font-size:12.5px;cursor:pointer}
+.nav span:hover{background:#f7f6f0;color:#384057}
+.nav span.on{background:#1b6e9e;color:#fff;font-weight:600}
+.denik{margin-left:auto;display:flex;align-items:center;gap:8px;font-weight:600;font-size:12px;background:#f7f6f0;border-radius:999px;padding:6px 13px;cursor:pointer;white-space:nowrap}
+.denik b{background:#e0341f;color:#fff;border-radius:999px;font-size:10px;min-width:17px;height:17px;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.scr{display:none}.scr.on{display:block;animation:in .28s ease}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.lista{display:flex;align-items:center;gap:11px;background:#1b6e9e;color:#fff;border-radius:9px;padding:8px 15px;margin:0 0 13px}
+.lista.red{background:#e0341f}
+.lista .n{font-size:10px;opacity:.8}.lista b{font-family:'Space Grotesk';font-size:14px;font-weight:700}
+.lista .r{margin-left:auto;font-size:11px;font-weight:500;opacity:.92;cursor:pointer;white-space:nowrap}
+.btn{border:0;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;padding:11px 20px;border-radius:11px;background:#e0341f;color:#fff;white-space:nowrap}
+.btn:hover{background:#b82413}
+.btn.blue{background:#1b6e9e}.btn.blue:hover{background:#124d6e}
+.btn.gh{background:#fff;border:1.5px solid #e6e6e1;color:#384057}.btn.gh:hover{border-color:#c9c4b4;background:#fff}
+.btn.done{background:#fff;color:#1e8a4f;border:1.5px solid #e6e6e1;cursor:default}
+.chip{display:inline-flex;gap:7px;font-size:12px;font-weight:600;padding:6px 13px;border-radius:999px;background:#e7f1f6;color:#124d6e;margin:0 6px 6px 0;cursor:pointer;white-space:nowrap}
+.chip b{font-weight:600;color:#1b6e9e;font-variant-numeric:tabular-nums}
+.chip:hover{background:#d9e9f1}
+.card{background:#fff;border:1px solid #e6e6e1;border-radius:12px}
+.hero{padding:52px 0 30px}
+.hero .kick{font-size:10.5px;color:#e0341f;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+.hero h1{font-family:'Space Grotesk';font-weight:700;font-size:46px;letter-spacing:-.02em;line-height:1.05;max-width:680px}
+.hero p{color:#5e6971;margin:14px 0 20px;max-width:540px;font-size:14.5px}
+.srch{display:flex;max-width:520px;background:#fff;border:1.5px solid #e6e6e1;border-radius:12px;padding:5px;box-shadow:0 12px 34px -20px rgba(18,24,29,.35)}
+.srch input{flex:1;border:0;outline:0;padding:10px 14px;font-size:13.5px;font-family:inherit;background:none;color:#384057}
+.srch button{background:#e0341f;border:0;color:#fff;border-radius:8px;padding:10px 19px;font-size:12.5px;font-weight:600;font-family:inherit;cursor:pointer}
+.stats{display:flex;margin-top:24px;max-width:560px}
+.stats div{flex:1;border-left:1px solid #e6e6e1;padding-left:16px}.stats div:first-child{border-left:0;padding-left:0}
+.stats b{font-family:'Space Grotesk';font-size:23px;font-weight:700;display:block;font-variant-numeric:tabular-nums}
+.stats span{font-size:9px;color:#5e6971}
+.band{background:#fff;border-top:1px solid #e6e6e1;border-bottom:1px solid #e6e6e1}
+.mark{cursor:pointer}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.hc{background:#fff;border:1px solid #e6e6e1;border-radius:12px;overflow:hidden;cursor:pointer;transition:box-shadow .18s,transform .18s}
+.hc:hover{box-shadow:0 16px 48px -26px rgba(18,24,29,.3);transform:translateY(-2px)}
+.hc .ph{position:relative;height:128px}.hc .ph svg{display:block;width:100%;height:100%}
+.hc .st{position:absolute;top:9px;left:9px;font-size:10px;font-weight:600;padding:4px 9px;border-radius:999px;background:#1e8a4f;color:#fff}
+.hc .bd{padding:12px 15px 13px}
+.hc .nm{font-family:'Space Grotesk';font-weight:700;font-size:16px}
+.hc .rg{font-size:9.5px;color:#5e6971;margin:1px 0 9px}
+.hc .fx{display:flex;border-top:1px solid #e6e6e1;padding-top:9px}
+.hc .fx div{flex:1;border-left:1px solid #e6e6e1;padding-left:10px}.hc .fx div:first-child{border-left:0;padding-left:0}
+.hc .fx .k{font-size:8px;color:#5e6971}
+.hc .fx .v{font-family:'Space Grotesk';font-size:13.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.sec{padding:26px 0 8px}
+.row{display:grid;grid-template-columns:1.8fr .55fr .6fr .85fr .5fr;gap:8px;align-items:center;font-size:12.5px;padding:10px 2px;border-bottom:1px solid #e6e6e1;cursor:pointer}
+.row:hover{background:#fbfaf6}
+.row b{font-size:13px}.row .sm{display:block;font-size:11px;color:#5e6971;font-weight:400}
+.row .num{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.row .st{justify-self:start;font-size:10.5px;font-weight:600;padding:3px 9px;border-radius:999px;background:#f7f6f0;white-space:nowrap}
+.row .st.o{color:#1e8a4f}.row .st.g{color:#8a949c}
+.row .lnk{color:#1b6e9e;font-weight:600;font-size:11.5px;justify-self:end}
+.fchips span{border:1.5px solid #e6e6e1;border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:600;background:#fff;margin:0 6px 6px 0;display:inline-block;cursor:pointer;white-space:nowrap}
+.fchips span.on{background:#e0341f;color:#fff;border-color:#e0341f}
+.phero{position:relative;height:300px;border-radius:14px;overflow:hidden;box-shadow:0 16px 48px -26px rgba(18,24,29,.3)}
+.phero svg{position:absolute;inset:0;width:100%;height:100%}
+.phero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,24,29,.02) 40%,rgba(18,24,29,.74))}
+.phero .tx{position:absolute;left:0;right:0;bottom:0;z-index:2;color:#fff;padding:0 26px 20px}
+.phero .cr{font-size:10px;opacity:.92;margin-bottom:6px}
+.phero h2{font-family:'Space Grotesk';font-weight:700;font-size:38px;letter-spacing:-.02em;line-height:1.02}
+.phero .bg{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+.phero .bg span{font-size:11px;font-weight:600;padding:5px 11px;border-radius:999px;background:#fff;color:#384057}
+.phero .bg span.open{background:#1e8a4f;color:#fff}
+.facts{display:grid;grid-template-columns:repeat(5,1fr);padding:18px 4px 12px}
+.facts>div{border-left:1px solid #e6e6e1;padding:3px 16px 4px}.facts>div:first-child{border-left:0;padding-left:0}
+.facts .k{font-size:9px;color:#5e6971}
+.facts .v{font-family:'Space Grotesk';font-size:21px;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums}
+.facts .s{font-size:10.5px;color:#5e6971}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.bx{padding:14px 16px}
+.ibox{background:#e7f1f6;border-radius:10px;padding:12px 15px;font-size:12.5px;color:#124d6e}
+.ibox .lbl{display:inline-block;background:#1b6e9e;color:#fff;font-size:9px;letter-spacing:.1em;border-radius:5px;padding:2px 7px;margin-bottom:6px;font-weight:600}
+.ibox.alp{background:#eff8e3;color:#3c7a0b}.ibox.alp .lbl{background:#4c930e}
+.prof{position:relative;background:#fbfaf6;border-radius:10px}
+.prof svg{display:block;width:100%}
+.tipp{position:absolute;top:8px;left:12px;font-size:10px;font-weight:600;font-variant-numeric:tabular-nums;background:#384057;color:#fff;border-radius:6px;padding:4px 9px;pointer-events:none;opacity:0;transition:opacity .12s}
+.pad{position:relative;width:132px;height:132px;background:#fbfaf6;border:1.5px dashed #d3cdbe;border-radius:12px;display:grid;place-items:center;flex:none}
+.pad .hint{font-size:8.5px;letter-spacing:.1em;color:#a9a698;text-align:center;line-height:1.9;font-weight:600}
+.pad svg{position:absolute;width:106px;height:106px;opacity:0;pointer-events:none}
+.pad.hit svg{animation:stamp .55s cubic-bezier(.2,1.4,.35,1) forwards}
+.pad.hit .hint{display:none}
+@keyframes stamp{0%{opacity:0;transform:scale(2.1) rotate(2deg);filter:blur(2px)}55%{opacity:1;transform:scale(.94) rotate(-8.5deg)}75%{transform:scale(1.03) rotate(-6.5deg)}100%{opacity:1;transform:scale(1) rotate(-7deg)}}
+.cmp{position:relative;border-radius:10px;overflow:hidden;user-select:none;height:280px;background:#f0eee6}
+.cmp svg{display:block;width:100%}
+.cmp .now{position:absolute;inset:0;clip-path:inset(0 0 0 var(--x,50%))}
+.cmp .bar{position:absolute;top:0;bottom:0;left:var(--x,50%);width:2px;background:#fff}
+.cmp .knob{position:absolute;top:50%;left:var(--x,50%);transform:translate(-50%,-50%);width:32px;height:32px;border-radius:99px;background:#fff;box-shadow:0 16px 48px -20px rgba(18,24,29,.55);display:grid;place-items:center;font-size:10px;font-weight:700;letter-spacing:-1px}
+.cmp .tag{position:absolute;bottom:8px;font-size:9px;font-weight:600;letter-spacing:.1em;padding:3px 8px;border-radius:6px;background:rgba(18,24,29,.68);color:#fff}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+.vc{display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:center;padding:14px 2px;border-bottom:1px solid #e6e6e1;cursor:pointer}
+.vc:hover{background:#fbfaf6}
+.vc .th{height:72px;border-radius:10px;overflow:hidden}.vc .th svg{display:block;width:100%;height:100%}
+.vc h5{font-family:'Space Grotesk';font-size:15.5px;font-weight:700}
+.vc .mt{font-size:10.5px;color:#5e6971;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.vc .tg{font-size:10px;font-weight:600;background:#eff8e3;color:#3c7a0b;border-radius:999px;padding:4px 10px}
+.slotg{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.slot{background:#fff;border:1px solid #e6e6e1;border-radius:12px;padding:14px 8px 11px;text-align:center}
+.slot svg{width:78px;height:78px}
+.slot .nm{font-size:11.5px;font-weight:600;margin-top:6px;line-height:1.25}
+.slot .dt{font-size:8.5px;color:#5e6971;margin-top:2px;font-weight:600}
+.pbar{display:flex;align-items:center;gap:12px;margin:4px 0 18px}
+.pbar .tr{flex:1;height:6px;border-radius:99px;background:#eceade;overflow:hidden}
+.pbar .tr i{display:block;height:100%;background:#e0341f;border-radius:99px;transition:width .5s}
+.pbar span{font-size:10.5px;color:#5e6971;font-weight:600;font-variant-numeric:tabular-nums}
+.foot{border-top:1px solid #e6e6e1;margin-top:34px;background:#fff}
+.foot .wrap{display:flex;gap:20px;align-items:center;padding-top:18px;padding-bottom:18px;font-size:12px;color:#5e6971}
+.znm{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;white-space:nowrap}
+.znm i{width:22px;height:9px;border:1px solid #d3cdbe;border-radius:2px;background:linear-gradient(180deg,#fff 33%,var(--zc) 33% 66%,#fff 66%)}
+
+.subnav{position:sticky;top:62px;z-index:40;display:flex;gap:4px;padding:5px;margin:12px 0 4px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border:1px solid #e6e6e1;border-radius:999px;width:max-content;max-width:100%;overflow-x:auto}
+.subnav span{padding:6px 13px;border-radius:999px;font-size:12px;font-weight:600;color:#5e6971;cursor:pointer;white-space:nowrap}
+.subnav span:hover{background:#f7f6f0;color:#384057}
+.dm{cursor:pointer;font-size:14px;color:#5e6971;border:1.5px solid #e6e6e1;border-radius:999px;width:30px;height:30px;display:grid;place-items:center;flex:none;background:#fff}
+.mpre{position:absolute;top:12px;transform:translateX(-50%);background:#fff;border-radius:10px;box-shadow:0 16px 48px -20px rgba(18,24,29,.4);padding:9px 14px;font-size:12px;opacity:0;pointer-events:none;transition:opacity .15s;z-index:5;white-space:nowrap}
+:focus-visible{outline:2px solid #1b6e9e;outline-offset:2px;border-radius:4px}
+.tabbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid #e6e6e1;justify-content:space-around;padding:7px 6px calc(7px + env(safe-area-inset-bottom))}
+.tabbar span{position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10px;font-weight:600;color:#5e6971;cursor:pointer;min-width:64px;padding:4px}
+.tabbar span.on{color:#1b6e9e}
+.tabbar svg{width:22px;height:22px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.tabbar b{position:absolute;top:0;right:12px;background:#e0341f;color:#fff;border-radius:99px;font-size:9px;min-width:15px;height:15px;display:grid;place-items:center}
+.skel{position:fixed;inset:0;z-index:99;background:#f7f6f0;display:grid;place-items:center;transition:opacity .4s;pointer-events:none}
+.skel svg path{stroke:#d8d4c4;stroke-width:1.6;fill:none;stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1.1s ease forwards}
+.skel svg path:nth-child(2){animation-delay:.12s}.skel svg path:nth-child(3){animation-delay:.24s}.skel svg path:nth-child(4){animation-delay:.36s}
+@keyframes draw{to{stroke-dashoffset:0}}
+body.dark{background:#12181d url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='620'%3E%3Cg fill='none' stroke='%231c2733' stroke-width='1.2'%3E%3Cpath d='M-20,120 C180,60 340,170 560,110 S820,140 920,90'/%3E%3Cpath d='M-20,190 C200,130 360,230 580,175 S840,205 920,160'/%3E%3Cpath d='M-20,470 C160,410 380,510 600,450 S860,480 920,430'/%3E%3Cpath d='M-20,540 C180,485 400,575 620,520 S880,545 920,500'/%3E%3C/g%3E%3C/svg%3E");color:#e7ecf1}
+body.dark .top,body.dark .foot,body.dark .tabbar{background:#171f27;border-color:#242f39}
+body.dark .subnav{background:rgba(23,31,39,.92);border-color:#242f39}
+body.dark .card,body.dark .hc,body.dark .slot,body.dark .srch,body.dark .fchips span,body.dark .btn.gh,body.dark .pad,body.dark .dm,body.dark .row .st,body.dark .denik{background:#1b242e;border-color:#2a3541;color:#e7ecf1}
+body.dark .fchips span.on{background:#e0341f;border-color:#e0341f;color:#fff}
+body.dark .row{border-color:#242f39}body.dark .row:hover,body.dark .vc:hover{background:#1b242e}
+body.dark .nav span{color:#93a4b2}body.dark .nav span:hover{background:#1b242e;color:#fff}body.dark .nav span.on{background:#1b6e9e;color:#fff}
+body.dark .chip{background:#173040;color:#a9cbe0}
+body.dark .ibox{background:#152836;color:#a9cbe0}body.dark .ibox.alp{background:#1a2b14;color:#a7d67f}
+body.dark .prof,body.dark .band,body.dark .cmp{background:#171f27;border-color:#242f39}
+body.dark .srch input{color:#e7ecf1}
+body.dark a{color:#6fb1d8}
+body.dark .subnav span:hover{background:#1b242e;color:#e7ecf1}
+body.dark .facts>div,body.dark .stats div,body.dark .hc .fx,body.dark .hc .fx div,body.dark .vc{border-color:#2a3541}
+body.dark .tabbar span{color:#93a4b2}body.dark .tabbar span.on{color:#6fb1d8}
+body.dark .skel{background:#12181d}body.dark .skel svg path{stroke:#2a3541}
+.wx{position:absolute;top:14px;right:14px;z-index:2;background:rgba(18,24,29,.72);backdrop-filter:blur(4px);color:#fff;border-radius:10px;padding:8px 13px;font-size:12px;pointer-events:none}
+.wx b{font-family:'Space Grotesk';font-size:15px}
+.wx span{display:block;font-size:8.5px;opacity:.75;letter-spacing:.08em;font-weight:600;text-transform:uppercase}
+.live{width:9px;height:9px;border-radius:99px;background:#e0341f;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(224,52,31,.35)}50%{box-shadow:0 0 0 7px rgba(224,52,31,0)}}
+.plan{background:#f7f6f0;border-radius:10px;padding:10px 13px;margin-top:10px}
+body.dark .plan{background:#171f27}
+.og{max-width:380px;border:1px solid #e6e6e1;border-radius:12px;overflow:hidden;background:#fff;margin-top:6px;box-shadow:0 16px 48px -30px rgba(18,24,29,.3)}
+.ogimg{height:118px;background:linear-gradient(180deg,#dbe7f0 20%,#93ab97 70%,#64815f)}
+.ogtx{padding:10px 14px;display:grid;gap:2px}.ogtx b{font-size:15px}
+body.dark .og{background:#1b242e;border-color:#2a3541}
+.pfoot{display:none;border-top:2px solid #e0341f;margin-top:6px;padding-top:8px;font-size:11px}
+@media print{.top,.tabbar,.subnav,.skel,.dm,.foot,.btn,.mpre,.wx{display:none!important}body{background:#fff;padding-bottom:0}.pfoot{display:block}.phero{box-shadow:none}}
+@media(max-width:760px){
+.nav{display:none}.tabbar{display:flex}body{padding-bottom:72px}
+.wrap{padding:0 16px}
+.hero{padding:32px 0 22px}.hero h1{font-size:30px}
+.stats{flex-wrap:wrap;gap:14px}.stats div{flex:1 1 40%;border-left:0;padding-left:0}
+.hgrid,.g2{grid-template-columns:1fr}
+.facts{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px}.facts>div{flex:0 0 46%;scroll-snap-align:start}
+.row{grid-template-columns:1.4fr .6fr auto auto}.row>*:nth-child(3){display:none}
+.vc{grid-template-columns:86px 1fr}.vc .tg{display:none}
+.slotg{grid-template-columns:repeat(2,1fr)}
+.phero{height:230px}.phero h2{font-size:29px}
+.cmp{height:200px}
+.subnav{top:58px}
+}
+</style></head><body>
+<header class="top"><div class="wrap">
+<span class="brand" onclick="go('uvod')"><svg viewBox="0 0 40 40" style="width:24px;height:24px"><polygon points="20,7 34,22 6,22" fill="#e0341f"/><rect x="11" y="22" width="18" height="12" fill="#e0341f"/><rect x="17.5" y="26" width="5" height="8" fill="#fff"/></svg>Turistické chaty</span>
+<nav class="nav" id="nav"><span data-s="uvod" class="on" onclick="go('uvod')">Úvod</span><span data-s="chaty" onclick="go('chaty')">Chaty</span><span data-s="vylety" onclick="go('vylety')">Výlety</span><span data-s="razitkovnik" onclick="go('razitkovnik')">Razítkovník</span></nav>
+<span class="denik" onclick="go('razitkovnik')">Deník <b id="cnt">12</b></span><span class="dm" onclick="toggleDark()" title="Hřebenovka po tmě">◐</span></div></header>
+
+<section class="scr on" id="uvod" data-screen-label="Úvod">
+<div class="wrap hero">
+<div class="kick mn"><span style="width:22px;height:10px;border:1px solid #d3cdbe;border-radius:2px;background:linear-gradient(180deg,#fff 33%,#e0341f 33% 66%,#fff 66%)"></span>Průvodce horskými chatami · Česko a Slovensko</div>
+<h1>Každá bouda, <span style="color:#e0341f">útulna</span> i bivak.<br>S horami, příběhem a <span style="color:#1b6e9e">razítkem</span>.</h1>
+<p>347 chat s ověřenými otvíračkami a trasami · historie a dobové pohlednice · sbírka razítek jako za mlada.</p>
+<div class="srch"><input placeholder="Hledej chatu, pohoří nebo výlet…" aria-label="Hledat"><button onclick="go('chaty')">Hledat</button></div>
+<div class="stats"><div><b>347</b><span class="mn">chat v databázi</span></div><div><b style="color:#e0341f">92 %</b><span class="mn">razítek doloženo</span></div><div><b>14</b><span class="mn">pohoří</span></div><div><b>128</b><span class="mn">výletů</span></div></div>
+</div>
+<div class="band" style="position:relative"><div class="mpre" id="mpre"></div><svg viewBox="0 0 1140 210" style="display:block;width:100%;max-height:210px">
+<rect width="1140" height="210" fill="#fbfaf6"/>
+<path d="M60,140 C260,84 460,112 660,74 C820,44 980,58 1090,36" fill="none" stroke="#e0341f" stroke-width="2" opacity=".55"/>
+<g class="mark" data-n="Labská bouda" data-a="1 340 m" data-s="Otevřeno" data-x="240" onclick="go('profil')"><circle cx="240" cy="110" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2"/><text x="240" y="134" text-anchor="middle" font-size="10" font-weight="600" fill="#3d4a55">Labská bouda</text></g>
+<g class="mark" data-n="Špindlerova bouda" data-a="1 198 m" data-s="Otevřeno" data-x="470" onclick="go('profil')"><circle cx="470" cy="98" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2"/><text x="470" y="122" text-anchor="middle" font-size="10" font-weight="600" fill="#3d4a55">Špindlerova</text></g>
+<g class="mark" data-n="Luční bouda" data-a="1 410 m" data-s="Otevřeno" data-x="660" onclick="go('profil')"><circle cx="660" cy="74" r="11" fill="#e0341f" stroke="#fff" stroke-width="2.5"/><text x="660" y="102" text-anchor="middle" font-size="11" font-weight="700" fill="#384057">Luční bouda</text></g>
+<g class="mark" data-n="Výrovka" data-a="1 357 m" data-s="Zavřeno" data-x="852" onclick="go('profil')"><circle cx="852" cy="90" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2"/><text x="852" y="114" text-anchor="middle" font-size="10" font-weight="600" fill="#3d4a55">Výrovka</text></g>
+<g class="mark" data-n="Poštovna na Sněžce" data-a="1 603 m" data-s="Otevřeno" data-x="1010" onclick="go('profil')"><circle cx="1010" cy="50" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2"/><text x="1010" y="74" text-anchor="middle" font-size="10" font-weight="600" fill="#3d4a55">Poštovna</text></g>
+<g font-size="8.5" font-weight="600" fill="#5e6971"><text x="18" y="196">MAPY.COM · OUTDOOR</text><text x="1050" y="196">≈ 2 KM ──</text></g></svg></div>
+<div class="wrap sec">
+<div class="lista"><span class="n mn">01</span><b>Nejbližší otevřené chaty</b><span class="r" onclick="go('chaty')">Celý katalog →</span></div>
+<div class="hgrid">
+<div class="hc" onclick="go('profil')"><div class="ph"><svg viewBox="0 0 270 128" preserveAspectRatio="xMidYMid slice"><rect width="270" height="128" fill="#dbe7f0"/><path d="M0,78 C60,56 120,70 180,48 L215,28 L250,58 L270,54 L270,128 L0,128 Z" fill="#93ab97"/><path d="M0,102 C90,88 180,98 270,86 L270,128 L0,128 Z" fill="#64815f"/></svg><span class="st">● Otevřeno</span></div>
+<div class="bd"><div class="nm">Luční bouda</div><div class="rg mn">Krkonoše · hlavní hřeben</div>
+<div class="fx"><div><div class="k mn">Výška</div><div class="v">1 410 m</div></div><div><div class="k mn">Nocleh</div><div class="v">≈ 90</div></div><div><div class="k mn">Ověřeno</div><div class="v">14. 6.</div></div></div></div></div>
+<div class="hc" onclick="go('profil')"><div class="ph"><svg viewBox="0 0 270 128" preserveAspectRatio="xMidYMid slice"><rect width="270" height="128" fill="#d7e4ee"/><path d="M0,70 C70,52 140,66 200,40 L240,22 L270,44 L270,128 L0,128 Z" fill="#8aa38f"/><path d="M0,100 C90,88 180,96 270,86 L270,128 L0,128 Z" fill="#5c7758"/></svg><span class="st">● Otevřeno</span></div>
+<div class="bd"><div class="nm">Labská bouda</div><div class="rg mn">Krkonoše · pramen Labe</div>
+<div class="fx"><div><div class="k mn">Výška</div><div class="v">1 340 m</div></div><div><div class="k mn">Nocleh</div><div class="v">≈ 70</div></div><div><div class="k mn">Ověřeno</div><div class="v">2. 5.</div></div></div></div></div>
+<div class="hc" onclick="go('profil')"><div class="ph"><svg viewBox="0 0 270 128" preserveAspectRatio="xMidYMid slice"><rect width="270" height="128" fill="#dfe9e2"/><path d="M0,74 C60,58 130,68 190,46 L230,30 L270,52 L270,128 L0,128 Z" fill="#9db396"/><path d="M0,104 C90,92 180,100 270,90 L270,128 L0,128 Z" fill="#6a8261"/></svg><span class="st" style="background:#f7f6f0;color:#b82413">Zavřeno · od 12/26</span></div>
+<div class="bd"><div class="nm">Výrovka</div><div class="rg mn">Krkonoše · pod Sněžkou</div>
+<div class="fx"><div><div class="k mn">Výška</div><div class="v">1 357 m</div></div><div><div class="k mn">Nocleh</div><div class="v">≈ 50</div></div><div><div class="k mn">Ověřeno</div><div class="v">2. 5.</div></div></div></div></div></div></div>
+<div class="wrap sec" style="padding-bottom:30px">
+<div class="lista"><span class="n mn">02</span><b>Výlet týdne</b><span class="r" onclick="go('vylety')">Všechny výlety →</span></div>
+<div class="card" style="display:grid;grid-template-columns:1fr 1.4fr;overflow:hidden">
+<svg viewBox="0 0 340 190" preserveAspectRatio="xMidYMid slice" style="height:100%;min-height:170px"><rect width="340" height="190" fill="#dbe7f0"/><circle cx="270" cy="42" r="24" fill="#f4c46a" opacity=".9"/><path d="M0,120 C70,92 150,108 220,78 L265,52 L310,96 L340,90 L340,190 L0,190 Z" fill="#7fa387"/><path d="M0,150 C110,132 230,144 340,128 L340,190 L0,190 Z" fill="#4f6f52"/></svg>
+<div class="bx" style="padding:18px 22px"><div class="mn" style="font-size:9.5px;color:#4c930e;margin-bottom:6px">Okruh · Krkonoše · Léto</div>
+<div class="sg" style="font-size:21px;font-weight:700;line-height:1.15">Na Sněžku přes tři boudy</div>
+<p style="font-size:13px;color:#5e6971;margin:7px 0 11px">Lanovkou na Růžovou horu, přes Poštovnu a Luční zpět do Pece. Tři razítka za jeden den.</p>
+<div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap"><span class="mn" style="font-size:10.5px;white-space:nowrap">14 KM · 5:30 · +720 M</span><span class="znm"><i style="--zc:#e0341f"></i>červená</span><a onclick="go('vylety')" style="font-weight:600;font-size:12.5px;cursor:pointer;white-space:nowrap">Detail výletu →</a></div></div></div></div>
+</section>
+
+<section class="scr" id="chaty" data-screen-label="Katalog chat">
+<div class="wrap sec" style="padding-top:34px">
+<div class="mn" style="font-size:10px;color:#5e6971;margin-bottom:8px"><a onclick="go('uvod')" style="cursor:pointer">Česko</a> › Pohoří</div>
+<div class="sg" style="font-size:34px;font-weight:700;letter-spacing:-.02em">Krkonoše</div>
+<p style="color:#5e6971;font-size:13.5px;max-width:540px;margin:4px 0 16px">28 chat v provozu, 9 zaniklých — všechny s příběhem a razítkem.</p>
+<div class="fchips" id="filtry"><span class="on">Vše · 37</span><span>Otevřeno teď</span><span>S noclehem</span><span>Chybí mi razítko</span><span>Zaniklé</span></div>
+<div class="lista" style="margin-top:10px"><span class="n mn">01</span><b>Chaty v pohoří</b><span class="r">28 + 9 na mapě →</span></div>
+<div class="row" onclick="go('profil')"><div><b>Luční bouda</b><span class="sm">hlavní hřeben · přes Modrý důl</span></div><span class="num">1 410 m</span><span class="num">≈ 90 lůžek</span><span class="st o">● Otevřeno</span><span class="lnk">Profil →</span></div>
+<div class="row" onclick="go('profil')"><div><b>Labská bouda</b><span class="sm">pramen Labe</span></div><span class="num">1 340 m</span><span class="num">≈ 70 lůžek</span><span class="st o">● Otevřeno</span><span class="lnk">Profil →</span></div>
+<div class="row" onclick="go('profil')"><div><b>Výrovka</b><span class="sm">pod Sněžkou</span></div><span class="num">1 357 m</span><span class="num">≈ 50 lůžek</span><span class="st" style="color:#b82413">Zavřeno · od 12/26</span><span class="lnk">Profil →</span></div>
+<div class="row" onclick="go('profil')"><div><b>Poštovna na Sněžce</b><span class="sm">nejvýše položená</span></div><span class="num">1 603 m</span><span class="num">—</span><span class="st o">● Otevřeno</span><span class="lnk">Profil →</span></div>
+<div class="row" onclick="go('profil')" style="border-bottom:0"><div><b>Obří bouda</b><span class="sm">Obří sedlo · zanikla 1982</span></div><span class="num">1 394 m</span><span class="num">—</span><span class="st g">Zaniklá · 1982</span><span class="lnk">Historie →</span></div>
+<div class="ibox alp" style="margin-top:16px"><span class="lbl">PŘÍRODA</span><br>Hřebeny Krkonoš jsou 1. zóna KRNAP — pohyb jen po značených cestách, boudy jsou jediné zázemí.</div></div>
+</section>
+
+<section class="scr" id="profil" data-screen-label="Profil chaty">
+<div class="wrap" style="padding-top:26px">
+<div class="mn" style="font-size:10px;color:#5e6971;margin-bottom:10px"><a onclick="go('uvod')" style="cursor:pointer">Česko</a> › <a onclick="go('chaty')" style="cursor:pointer">Krkonoše</a> · 50.7326 N, 15.6960 E</div>
+<div class="subnav"><span onclick="jump('p-trasy')">01 Trasy</span><span onclick="jump('p-razitko')">02 Razítko</span><span onclick="jump('p-sousede')">03 Sousedé</span><span onclick="jump('p-tehdy')">04 Tehdy/dnes</span></div>
+<div class="phero"><div class="wx"><b>14 °C</b> · vítr 38 km/h · dohlednost 20 km<span>ČHMÚ · HŘEBEN · DNES 7:00</span></div><image-slot id="foto-hero-lucni" placeholder="FOTO: Luční bouda — hero záběr, léto" style="position:absolute;inset:0"></image-slot><div class="tx"><div class="cr mn">Obsluhovaná chata · Krkonoše</div><h2>Luční bouda</h2>
+<div class="bg"><span>1 410 m n. m.</span><span>≈ 90 lůžek</span><span class="open">● Otevřeno · dnes 8–18</span></div></div></div>
+<div class="facts">
+<div><div class="k mn">Výška</div><div class="v">1 410 m</div><div class="s">hlavní hřeben</div></div>
+<div><div class="k mn">Otevřeno</div><div class="v">Celoročně</div><div class="s">dnes 8–18</div></div>
+<div><div class="k mn">Nocleh</div><div class="v">≈ 90 lůžek</div><div class="s">pokoje i ložnice</div></div>
+<div><div class="k mn">Ověřeno</div><div class="v">14. 6. 2026</div><div class="s">redakce + chatař</div></div><div><div class="k mn">Webkamera</div><div class="v" style="display:flex;align-items:center;gap:8px"><i class="live"></i>Živě</div><div class="s">pohled na Sněžku</div></div></div>
+<div class="lista" id="p-trasy"><span class="n mn">01</span><b>Přístupové trasy</b><span class="r">Všechny na mapě →</span></div>
+<div class="row" style="cursor:default"><div><b>Z Pece pod Sněžkou</b><span class="sm">přes Modrý důl</span></div><span class="num">2:30</span><span class="num">+680 m</span><span class="znm"><i style="--zc:#2a5cb8"></i>modrá</span><a class="lnk" href="#profil">GPX ↓</a></div>
+<div class="row" style="cursor:default"><div><b>Od lanovky na Sněžku</b><span class="sm">přes Obří sedlo</span></div><span class="num">1:15</span><span class="num">+90 m</span><span class="znm"><i style="--zc:#e0341f"></i>červená</span><a class="lnk" href="#profil">GPX ↓</a></div>
+<div class="row" style="border-bottom:0;cursor:default"><div><b>Ze Špindlerova Mlýna</b><span class="sm">údolím Bílého Labe</span></div><span class="num">3:00</span><span class="num">+690 m</span><span class="znm"><i style="--zc:#2e8b57"></i>zelená</span><a class="lnk" href="#profil">GPX ↓</a></div>
+<div style="margin:16px 0 0"><div class="prof" id="prf"><svg viewBox="0 0 1030 110" id="psvg">
+<path d="M20,88 C140,80 260,58 380,50 C500,44 620,48 760,24 C840,12 970,12 1010,8 L1010,102 L20,102 Z" fill="#d9e9f1"/>
+<path id="pl" d="M20,88 C140,80 260,58 380,50 C500,44 620,48 760,24 C840,12 970,12 1010,8" fill="none" stroke="#1b6e9e" stroke-width="2"/>
+<g font-size="8.5" font-weight="600" fill="#5e6971"><text x="22" y="99">0 KM · PEC 769 M</text><text x="900" y="99">7,4 KM · BOUDA</text></g>
+<circle id="dot" cx="20" cy="88" r="5" fill="#e0341f" stroke="#fff" stroke-width="2" opacity="0"/></svg>
+<div class="tipp" id="tip">3,2 KM · 1 120 M</div></div>
+<p style="font-size:11.5px;color:#5e6971;margin-top:6px">Výškový profil trasy z Pece — najeď myší, bod se provazuje s trasou na mapě.</p></div>
+<div class="g2" style="margin-top:18px">
+<div class="card" id="p-razitko" style="overflow:hidden"><div class="lista red" style="border-radius:0;margin:0"><span class="n mn">02</span><b>Razítko</b><span class="r" onclick="go('razitkovnik')">Sbírka →</span></div>
+<div class="bx"><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<div class="pad" id="pad"><span class="hint">SEM DOPADNE<br>RAZÍTKO</span>
+<svg viewBox="0 0 200 200"><defs><path id="a1" d="M 18,100 A 82,82 0 0 1 182,100"/><path id="b1" d="M 18,100 A 82,82 0 0 0 182,100"/><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/></filter></defs>
+<g filter="url(#ink)"><g fill="none" stroke="#c92f1b"><circle cx="100" cy="100" r="95" stroke-width="4"/><circle cx="100" cy="100" r="64" stroke-width="1.8"/></g>
+<text font-size="15.5" font-weight="700" letter-spacing="2.6" fill="#c92f1b"><textPath href="#a1" startOffset="50%" text-anchor="middle">LUČNÍ BOUDA</textPath></text>
+<text font-size="12.5" font-weight="700" letter-spacing="2.2" fill="#c92f1b"><textPath href="#b1" startOffset="50%" text-anchor="middle">· KRKONOŠE ·</textPath></text>
+<g fill="#c92f1b" transform="translate(100,86)"><path d="M-16,3 L0,-13 L16,3 Z"/><rect x="-11" y="3" width="22" height="15"/><rect x="-3.5" y="8" width="7" height="10" fill="#fff" fill-opacity=".9"/></g>
+<text x="100" y="126" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1.5" fill="#c92f1b">1410 M</text></g></svg></div>
+<div style="flex:1;min-width:170px"><button class="btn" id="go" onclick="collect()">＋ Razítko do deníku</button>
+<p class="mn" id="log" style="font-size:9.5px;color:#5e6971;margin-top:9px">Doloženo 14. 6. 2026 · @horalka88</p>
+<a onclick="go('razitkovnik')" style="font-size:12px;font-weight:600;cursor:pointer">Historické varianty (2) →</a></div></div></div></div>
+<div class="card" id="p-sousede" style="overflow:hidden"><div class="lista" style="border-radius:0;margin:0"><span class="n mn">03</span><b>Sousední chaty</b><span class="r">Plánovač</span></div>
+<div class="bx"><span class="chip" onclick="addLeg('Výrovka','0:45')" title="Přidat do hřebenovky">Výrovka <b>0:45</b></span><span class="chip" onclick="addLeg('Poštovna','1:15')" title="Přidat do hřebenovky">Poštovna <b>1:15</b></span><span class="chip" onclick="addLeg('Špindlerova','2:15')" title="Přidat do hřebenovky">Špindlerova <b>2:15</b></span>
+<div class="plan" id="plan" style="display:none"><span class="mn" style="font-size:9px;color:#5e6971">Moje hřebenovka</span><div id="planlegs" style="font-size:12.5px;font-weight:600;margin:3px 0 6px"></div><div style="display:flex;gap:12px;align-items:center"><span class="mn" style="font-size:10px;color:#e0341f" id="plantot"></span><a onclick="clearPlan()" style="font-size:11px;cursor:pointer">Vymazat</a></div></div>
+<div class="ibox" style="margin-top:10px"><span class="lbl">TIP PRŮVODCE</span><br>Přes Výrovku a Poštovnu vede nejhezčí okruh na Sněžku.</div></div></div></div>
+<div style="margin-top:18px" id="p-tehdy"><div class="lista" style="background:#12181d"><span class="n mn">04</span><b>Tehdy a dnes</b><span class="r">Archiv pohlednic</span></div>
+<div class="cmp" id="cmp" style="--x:88%"><image-slot id="foto-pohlednice-1928" placeholder="SKEN: dobová pohlednice · 1928" style="position:absolute;inset:0"></image-slot><div class="now"><image-slot id="foto-lucni-dnes" placeholder="FOTO: dnes · 2026" style="position:absolute;inset:0"></image-slot></div><div class="bar"></div><div class="knob">◂▸</div>
+<span class="tag" style="left:10px">TEHDY · 1928</span><span class="tag" style="right:10px">DNES · 2026</span>
+<input type="range" min="6" max="94" value="88" id="rng" aria-label="Porovnání tehdy a dnes"></div></div>
+<div style="margin-top:18px"><span class="mn" style="font-size:9.5px;color:#5e6971">Náhled sdílení — OG obrázek generovaný z dat</span>
+<div class="og"><div class="ogimg"></div><div class="ogtx"><span class="mn" style="font-size:8px;color:#e0341f">turistickechaty.cz · Krkonoše</span><b class="sg">Luční bouda · 1 410 m</b><span style="font-size:10.5px;color:#5e6971">Otevřeno celoročně · razítko doloženo · 3 trasy</span></div></div></div>
+<div style="display:flex;gap:9px;padding:18px 0 30px;flex-wrap:wrap;align-items:center">
+<button class="btn blue">Rezervovat nocleh</button><button class="btn gh">Nahlásit změnu</button><button class="btn gh" onclick="window.print()">Vytisknout stránku průvodce ⎙</button>
+<span class="mn" style="margin-left:auto;font-size:9px;color:#5e6971">Zdroje: chata · KRNAP · redakce · ověřeno 14. 6. 2026</span></div>
+<div class="pfoot">turistickechaty.cz/cesko/krkonose/lucni-bouda — stránka z průvodce · data ověřena 14. 6. 2026 · razítko doloženo</div></div>
+</section>
+
+<section class="scr" id="vylety" data-screen-label="Výlety">
+<div class="wrap sec" style="padding-top:34px;padding-bottom:30px">
+<div class="mn" style="font-size:10px;color:#4c930e;margin-bottom:8px">Výlety a přechody · Krkonoše</div>
+<div class="sg" style="font-size:34px;font-weight:700;letter-spacing:-.02em">Kam o víkendu</div>
+<p style="color:#5e6971;font-size:13.5px;max-width:560px;margin:4px 0 18px">Redakční výlety s chatami na trase — vždy s časem, převýšením, značením a razítky, která cestou posbíráš.</p>
+<div class="lista"><span class="n mn">01</span><b>Výlety s chatou</b><span class="r">128 celkem</span></div>
+<div class="vc" onclick="go('profil')"><div class="th"><svg viewBox="0 0 110 72" preserveAspectRatio="xMidYMid slice"><rect width="110" height="72" fill="#dbe7f0"/><path d="M0,46 C25,34 50,42 72,28 L86,20 L102,34 L110,32 L110,72 L0,72 Z" fill="#7fa387"/><path d="M0,58 C36,52 74,56 110,50 L110,72 L0,72 Z" fill="#4f6f52"/></svg></div>
+<div><h5>Na Sněžku přes tři boudy</h5><div class="mt">14 KM · 5:30 · +720 M · <span style="color:#c92f1b">3 RAZÍTKA</span></div></div><span class="tg">OKRUH</span></div>
+<div class="vc" onclick="go('profil')"><div class="th"><svg viewBox="0 0 110 72" preserveAspectRatio="xMidYMid slice"><rect width="110" height="72" fill="#d7e4ee"/><path d="M0,42 C30,32 55,40 80,24 L96,16 L110,28 L110,72 L0,72 Z" fill="#8aa38f"/><path d="M0,60 C40,54 80,58 110,52 L110,72 L0,72 Z" fill="#5c7758"/></svg></div>
+<div><h5>Hřebenovka západních Krkonoš</h5><div class="mt">22 KM · 2 DNY · NOCLEH LABSKÁ · <span style="color:#c92f1b">4 RAZÍTKA</span></div></div><span class="tg">PŘECHOD</span></div>
+<div class="vc" onclick="go('profil')" style="border-bottom:0"><div class="th"><svg viewBox="0 0 110 72" preserveAspectRatio="xMidYMid slice"><rect width="110" height="72" fill="#dfe9e2"/><path d="M0,44 C28,36 52,42 76,30 L90,24 L110,36 L110,72 L0,72 Z" fill="#9db396"/><path d="M0,60 C38,56 76,58 110,54 L110,72 L0,72 Z" fill="#6a8261"/></svg></div>
+<div><h5>S dětmi k Luční boudě</h5><div class="mt">6 KM · 2:30 · LANOVKA + KOČÁREK OK · <span style="color:#c92f1b">1 RAZÍTKO</span></div></div><span class="tg">RODINNÝ</span></div>
+<div class="ibox alp" style="margin-top:16px"><span class="lbl">SEZÓNA</span><br>Hřebenové trasy jsou od listopadu do dubna jen po tyčovém značení — kontroluj zimní uzávěry KRNAP.</div></div>
+</section>
+
+<section class="scr" id="razitkovnik" data-screen-label="Razítkovník">
+<div class="wrap sec" style="padding-top:34px;padding-bottom:30px">
+<div style="display:flex;align-items:flex-end;gap:20px;margin-bottom:14px">
+<div><div class="mn" style="font-size:10px;color:#e0341f;margin-bottom:6px">Můj deník razítek</div>
+<div class="sg" style="font-size:32px;font-weight:700;letter-spacing:-.02em">Krkonoše — hřebenová sbírka</div></div>
+<div style="margin-left:auto;text-align:right"><b class="sg" style="font-size:36px;font-weight:700;color:#e0341f;font-variant-numeric:tabular-nums;line-height:1"><span id="cnt2">12</span><span style="color:#5e6971;font-size:20px">/28</span></b><span class="mn" style="font-size:9px;color:#5e6971;display:block;margin-top:3px">razítek ve sbírce</span></div></div>
+<div class="pbar"><div class="tr"><i id="pb" style="width:43%"></i></div><span id="pbt">43 % · ZBÝVÁ 16 · ODZNAK KRKONOŠE</span></div>
+<div class="lista red"><span class="n mn">01</span><b>Hlavní hřeben</b><span class="r">Trasa na mapě</span></div>
+<div class="slotg">
+<div class="slot" id="slotL"><svg viewBox="0 0 200 200" id="slotLsvg"><g fill="none" stroke="#8a949c" stroke-dasharray="7 6"><circle cx="100" cy="100" r="90" stroke-width="3"/></g><text x="100" y="94" text-anchor="middle" font-family="Space Grotesk" font-size="30" font-weight="700" fill="#8a949c">?</text><text x="100" y="124" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2" fill="#8a949c">CHYBÍ</text></svg>
+<div class="nm">Luční bouda</div><div class="dt" id="slotLdt">RAZÍTKUJE SE U VÝČEPU</div></div>
+<div class="slot"><svg viewBox="0 0 200 200" style="transform:rotate(4deg)"><defs><path id="s2" d="M 30,100 A 70,70 0 0 1 170,100"/></defs><g fill="none" stroke="#c92f1b"><rect x="14" y="14" width="172" height="172" rx="14" stroke-width="5"/></g><text font-size="15" font-weight="700" letter-spacing="1.6" fill="#c92f1b"><textPath href="#s2" startOffset="50%" text-anchor="middle">LABSKÁ</textPath></text><g fill="#c92f1b" transform="translate(100,96)"><path d="M-15,3 L0,-12 L15,3 Z"/><rect x="-10" y="3" width="20" height="13"/></g><text x="100" y="140" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="1.5" fill="#c92f1b">1340</text></svg>
+<div class="nm">Labská bouda</div><div class="dt">2. 5. 2026</div></div>
+<div class="slot"><svg viewBox="0 0 200 200" style="transform:rotate(-3deg)"><defs><path id="s3" d="M 30,100 A 70,70 0 0 1 170,100"/></defs><g fill="none" stroke="#c92f1b"><circle cx="100" cy="100" r="90" stroke-width="5"/></g><text font-size="14.5" font-weight="700" letter-spacing="1.8" fill="#c92f1b"><textPath href="#s3" startOffset="50%" text-anchor="middle">VÝROVKA</textPath></text><g fill="#c92f1b" transform="translate(100,94)"><path d="M-15,3 L0,-12 L15,3 Z"/><rect x="-10" y="3" width="20" height="13"/></g><text x="100" y="136" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="1.5" fill="#c92f1b">1357</text></svg>
+<div class="nm">Výrovka</div><div class="dt">2. 5. 2026</div></div>
+<div class="slot"><svg viewBox="0 0 200 200" style="transform:rotate(6deg)"><defs><path id="s4" d="M 30,100 A 70,70 0 0 1 170,100"/></defs><g fill="none" stroke="#c92f1b"><circle cx="100" cy="100" r="90" stroke-width="5"/><circle cx="100" cy="100" r="60" stroke-width="2"/></g><text font-size="13" font-weight="700" letter-spacing="1.4" fill="#c92f1b"><textPath href="#s4" startOffset="50%" text-anchor="middle">POŠTOVNA</textPath></text><g fill="#c92f1b" transform="translate(100,94)"><path d="M-15,3 L0,-12 L15,3 Z"/><rect x="-10" y="3" width="20" height="13"/></g><text x="100" y="136" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="1.5" fill="#c92f1b">1603</text></svg>
+<div class="nm">Poštovna na Sněžce</div><div class="dt">14. 6. 2026</div></div>
+<div class="slot"><svg viewBox="0 0 200 200"><g fill="none" stroke="#8a949c" stroke-dasharray="7 6"><circle cx="100" cy="100" r="90" stroke-width="3"/></g><text x="100" y="94" text-anchor="middle" font-family="Space Grotesk" font-size="30" font-weight="700" fill="#8a949c">?</text><text x="100" y="124" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2" fill="#8a949c">CHYBÍ</text></svg>
+<div class="nm">Špindlerova bouda</div><div class="dt">1:20 OD VÝROVKY →</div></div></div>
+<div class="g2" style="margin-top:18px;align-items:start">
+<div class="card bx" style="display:flex;gap:16px;align-items:center"><svg width="92" height="92" viewBox="0 0 104 104" style="flex:none"><circle cx="52" cy="52" r="48" fill="#f7f6f0"/><circle cx="52" cy="52" r="48" fill="none" stroke="#e6e6e1" stroke-width="2"/><circle id="ring" cx="52" cy="52" r="48" fill="none" stroke="#e0341f" stroke-width="4" stroke-linecap="round" stroke-dasharray="129 302" transform="rotate(-90 52 52)"/><path d="M22 66 L38 42 L47 54 L58 36 L82 66 Z" fill="#c9c4b4"/><text x="52" y="86" text-anchor="middle" font-size="8.5" font-weight="600" letter-spacing="1.6" fill="#5e6971">KRKONOŠE</text><text id="ringt" x="52" y="24" text-anchor="middle" font-family="Space Grotesk" font-size="11" font-weight="700" fill="#384057">12/28</text></svg>
+<div><div class="sg" style="font-size:15.5px;font-weight:700">Odznak Krkonoše</div><p style="font-size:12.5px;color:#5e6971">Za kompletní sbírku pohoří. Progres roste po obvodu — žádné stuhy, žádný kýč.</p></div></div>
+<div class="ibox" style="align-self:stretch"><span class="lbl">VÝZVA</span><br>Komunitě chybí razítka 12 chat — máš některé v papírovém deníku? Nahraj sken, získáš kredit u otisku.</div></div></div>
+</section>
+
+<footer class="foot"><div class="wrap"><span class="sg" style="font-weight:700">Turistické chaty</span><span>průvodce všemi horskými chatami · Krkonoše → Česko → Slovensko → Alpy</span><span class="mn" style="margin-left:auto;font-size:9px">MAPY.COM · KČT · SIL OFL FONTY</span></div></footer>
+
+<nav class="tabbar" id="tabbar"><span data-s="uvod" class="on" onclick="go('uvod')"><svg viewBox="0 0 24 24"><path d="M3 19 L9 8 L13 14 L16 10 L21 19 Z"/></svg>Úvod</span><span data-s="chaty" onclick="go('chaty')"><svg viewBox="0 0 24 24"><path d="M4.6 11.4 L12 5 L19.4 11.4"/><path d="M6.5 11 V19 H17.5 V11"/><path d="M10.5 19 V14.5 H13.5 V19"/></svg>Chaty</span><span data-s="vylety" onclick="go('vylety')"><svg viewBox="0 0 24 24"><path d="M5 4 H17 L15.5 9 H5 Z"/><line x1="5" y1="4" x2="5" y2="20"/><line x1="3" y1="20" x2="9" y2="20"/></svg>Výlety</span><span data-s="razitkovnik" onclick="go('razitkovnik')"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="5"/><line x1="12" y1="3.5" x2="12" y2="7"/></svg>Deník<b id="cnt3">12</b></span></nav>
+<script>
+function go(s){document.querySelectorAll('.scr').forEach(e=>e.classList.toggle('on',e.id===s));
+document.querySelectorAll('#nav span,#tabbar span').forEach(e=>e.classList.toggle('on',e.dataset.s===s||(s==='profil'&&e.dataset.s==='chaty')||(s==='razitkovnik'&&e.dataset.s==='razitkovnik')));
+history.replaceState(null,'','#'+s);window.scrollTo(0,0);}
+if(location.hash&&document.getElementById(location.hash.slice(1)))go(location.hash.slice(1));
+// deník + razítko state
+const KEY='tc-proto-lucni';let base=12;
+function refresh(){const has=localStorage.getItem(KEY)==='1';const n=base+(has?1:0);
+document.getElementById('cnt').textContent=n;document.getElementById('cnt2').textContent=n;document.getElementById('cnt3').textContent=n;
+const pct=Math.round(n/28*100);document.getElementById('pb').style.width=pct+'%';
+document.getElementById('pbt').textContent=pct+' % · ZBÝVÁ '+(28-n)+' · ODZNAK KRKONOŠE';
+document.getElementById('ring').setAttribute('stroke-dasharray',(n/28*302).toFixed(0)+' 302');
+document.getElementById('ringt').textContent=n+'/28';
+const b=document.getElementById('go');
+if(has){b.classList.add('done');b.textContent='✓ Ve sbírce · 14. 6. 2026';
+document.getElementById('pad').classList.add('hit');
+document.getElementById('slotLsvg').outerHTML='<svg viewBox="0 0 200 200" style="transform:rotate(-7deg)"><defs><path id="sL" d="M 30,100 A 70,70 0 0 1 170,100"/></defs><g fill="none" stroke="#c92f1b"><circle cx="100" cy="100" r="90" stroke-width="5"/><circle cx="100" cy="100" r="60" stroke-width="2"/></g><text font-size="16" font-weight="700" letter-spacing="2" fill="#c92f1b"><textPath href="#sL" startOffset="50%" text-anchor="middle">LUČNÍ</textPath></text><g fill="#c92f1b" transform="translate(100,92)"><path d="M-15,3 L0,-12 L15,3 Z"/><rect x="-10" y="3" width="20" height="13"/></g><text x="100" y="132" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="1.5" fill="#c92f1b">1410</text></svg>';
+document.getElementById('slotLdt').textContent='14. 6. 2026';}}
+function collect(){if(localStorage.getItem(KEY)==='1')return;
+document.getElementById('pad').classList.add('hit');
+setTimeout(()=>{localStorage.setItem(KEY,'1');refresh();},480);}
+refresh();
+// elevation profile hover
+const prf=document.getElementById('prf'),psvg=document.getElementById('psvg'),pl=document.getElementById('pl'),dot=document.getElementById('dot'),tip=document.getElementById('tip');
+const L=pl.getTotalLength();
+prf.addEventListener('mousemove',e=>{const r=psvg.getBoundingClientRect();const x=(e.clientX-r.left)/r.width*1030;
+let lo=0,hi=L;for(let i=0;i<18;i++){const m=(lo+hi)/2;(pl.getPointAtLength(m).x<x)?lo=m:hi=m;}
+const p=pl.getPointAtLength(lo);if(p.x<20||p.x>1010)return;
+dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y);dot.setAttribute('opacity',1);
+const km=((p.x-20)/990*7.4).toFixed(1).replace('.',','),vy=Math.round(769+(88-p.y)/80*641);
+tip.textContent=km+' KM · '+vy.toLocaleString('cs')+' M';tip.style.opacity=1;
+tip.style.left=Math.min(Math.max(p.x/1030*100,3),80)+'%';});
+prf.addEventListener('mouseleave',()=>{dot.setAttribute('opacity',0);tip.style.opacity=0;});
+// tehdy/dnes
+const cmp=document.getElementById('cmp');document.getElementById('rng').addEventListener('input',e=>cmp.style.setProperty('--x',e.target.value+'%'));
+// plánovač přechodů
+let legs=[];
+function addLeg(n,t){if(legs.find(l=>l.n===n))return;legs.push({n,t});renderPlan();}
+function clearPlan(){legs=[];renderPlan();}
+function renderPlan(){const w=document.getElementById('plan');if(!legs.length){w.style.display='none';return;}
+w.style.display='block';
+document.getElementById('planlegs').textContent='Luční bouda → '+legs.map(l=>l.n+' ('+l.t+')').join(' → ');
+const tot=legs.reduce((a,l)=>{const q=l.t.split(':');return a+(+q[0])*60+(+q[1]);},0);
+document.getElementById('plantot').textContent='Celkem '+Math.floor(tot/60)+':'+String(tot%60).padStart(2,'0')+' chůze';}
+// dark mode „hřebenovka po tmě"
+function toggleDark(){document.body.classList.toggle('dark');localStorage.setItem('tc-proto-dark',document.body.classList.contains('dark')?'1':'0');}
+if(localStorage.getItem('tc-proto-dark')==='1')document.body.classList.add('dark');
+// sticky subnav jump
+function jump(id){const el=document.getElementById(id);if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'});}
+// map marker hover preview
+const mpre=document.getElementById('mpre');
+document.querySelectorAll('.mark').forEach(m=>{m.addEventListener('mouseenter',()=>{const o=m.dataset;if(!o.n)return;
+mpre.innerHTML='<b class="sg" style="font-size:13.5px">'+o.n+'</b><span style="color:#5e6971;margin-left:8px">'+o.a+'</span><span style="margin-left:8px;font-weight:600;color:'+(o.s==='Otevřeno'?'#1e8a4f':'#b82413')+'">'+o.s+'</span><span style="margin-left:8px;color:#1b6e9e;font-weight:600">Profil →</span>';
+mpre.style.left=(parseFloat(o.x)/1140*100)+'%';mpre.style.opacity=1;});
+m.addEventListener('mouseleave',()=>mpre.style.opacity=0);});
+// contour skeleton — vrstevnice se dokreslí, web je tu
+window.addEventListener('load',()=>setTimeout(()=>{const s=document.getElementById('skel');if(s){s.style.opacity=0;setTimeout(()=>s.remove(),450);}},900));
+setTimeout(()=>{const s=document.getElementById('skel');if(s){s.style.opacity=0;setTimeout(()=>s.remove(),450);}},2500);
+// filtry (demo toggle)
+document.querySelectorAll('#filtry span').forEach(ch=>ch.addEventListener('click',()=>{document.querySelectorAll('#filtry span').forEach(x=>x.classList.remove('on'));ch.classList.add('on');}));
+</script>
+</body></html>
