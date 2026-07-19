@@ -5,6 +5,7 @@ import TabBar from '@/components/TabBar'
 import './fonts.css'
 import './tokens.css'
 import './styles.css'
+import './components.css'
 
 export const metadata = {
   title: 'turistickechaty.cz — průvodce horskými chatami',
