@@ -1,0 +1,58 @@
+# DATA-01: export chat Krkonoš z OpenStreetMap — sandbox denních sessions na
+# Overpass API nedosáhne (proxy), GitHub Actions ano. Spouští se ručně jedním
+# klikem (Actions → „DATA-01: OSM export chat Krkonoš" → Run workflow);
+# nové YAML commitne do main, report přistane v summary běhu.
+#
+# Skript existující soubory nikdy nepřepisuje (ruční profily jsou v bezpečí),
+# běh je tedy idempotentní — opakované spuštění přidá jen nově vzniklé objekty.
+name: 'DATA-01: OSM export chat Krkonoš'
+
+on:
+  workflow_dispatch:
+    inputs:
+      api:
+        description: 'Overpass API endpoint (při přetížení zkus zrcadlo https://overpass.kumi.systems/api/interpreter)'
+        required: false
+        default: 'https://overpass-api.de/api/interpreter'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data01-overpass
+  cancel-in-progress: false
+
+jobs:
+  export:
+    name: Overpass → data/chaty/krkonose
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Export z Overpass API
+        run: |
+          npx tsx scripts/data01-overpass-krkonose.ts --api '${{ inputs.api }}' | tee report.txt
+          echo '## DATA-01 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit nových YAML do main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/chaty/krkonose
+          if git diff --cached --quiet; then
+            echo 'Žádné nové chaty — nic ke commitu.'
+            exit 0
+          fi
+          pocet=$(git diff --cached --name-only --diff-filter=A | wc -l)
+          git commit -m "data: OSM Overpass export chat Krkonoš (+${pocet} nových, z Actions)" \
+            -m 'Zdroj: OpenStreetMap (ODbL), tourism=alpine_hut/wilderness_hut, vše verified: false — ke kontrole redakcí (DATA-03).'
+          git pull --rebase origin main
+          git push origin main
