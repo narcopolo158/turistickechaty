@@ -33,6 +33,18 @@ export default function SiteHeader() {
   const active = activeKey(pathname)
   const pocetRazitek = usePocetDeniku()
 
+  // Pojistka k inline darkInit skriptu z layoutu: not-found (a error) boundary
+  // React kreslí na klientu a script tagy v komponentách tam neprovádí — bez
+  // tohoto efektu by 404 po reloadu ztratila tmavý režim (hlavička je v layoutu,
+  // efekt tak pokryje každou stránku; na SSR stránkách je no-op po darkInit).
+  React.useLayoutEffect(() => {
+    try {
+      document.body.classList.toggle('dark', localStorage.getItem('tc-dark') === '1')
+    } catch {
+      /* localStorage nemusí být dostupná — zůstane světlý režim */
+    }
+  }, [])
+
   return (
     <header className="top">
       <div className="wrap">
