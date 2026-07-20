@@ -1,0 +1,114 @@
+# Dvorská bouda — profil povýšen z kandidáta DATA-01 po křížovém ověření DATA-03
+# (rozhodnutí Michala 20. 7. 2026, kategorie ✅). Každá skupina má blok overeni.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+
+nazev: Dvorská bouda
+slug: dvorska-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL); výška a adresa z webu boudy.
+lat: 50.7035048
+lng: 15.6712535
+vyska: 1313
+obec: Strážné
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/23012222 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 1313 m, adresa Strážné 111 (KRNAP): https://www.dvorska-bouda.cz/
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 115
+pokoje:
+  - typ: Dvoulůžkové až šestilůžkové pokoje se společným sociálním zařízením
+overeniNocleh:
+  source: https://www.dvorska-bouda.cz/ (kapacita až 115 lůžek, 2–6lůžkové pokoje se společným sociálním zařízením, snídaně bufetem, možnost polopenze; ceny na webu neuvedeny)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: https://www.dvorska-bouda.cz/ (restaurace Dvorské boudy, denně 11:00–16:00, přístupná hostům i turistům; snídaně formou bufetu)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+wifi: ano # Wi-Fi zdarma v celém objektu
+lyzarna: ano # lyžárna/kolárna
+overeniSluzby:
+  source: https://www.dvorska-bouda.cz/ (Wi-Fi zdarma, lyžárna/kolárna, klubovna s krbem, dětská herna)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Restaurace denně 11:00–16:00, přístupná hostům i turistům.
+kontakty:
+  telefon: +420 725 972 169
+  email: info@dvorska-bouda.cz
+  web: https://www.dvorska-bouda.cz/
+overeniProvoz:
+  source: https://www.dvorska-bouda.cz/ (otvírací doba restaurace, telefon rezervace, e-mail; letní i zimní balíčky)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1920
+    udalost: Bouda poskytuje ubytování „již od 20. let 20. století" (web neuvádí přesný rok)
+overeniHistorie:
+  source: https://www.dvorska-bouda.cz/ („ubytování již od 20. let 20. století")
+  verified: false
+  checked: '2026-07-20'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská bouda ve výšce 1 313 m nad Strážným v KRNAP, s kapacitou až 115
+  lůžek. Restaurace otevřená denně i pro kolemjdoucí turisty, ubytování
+  poskytuje už od 20. let 20. století.
+text:
+  - >-
+    Dvorská bouda stojí ve výšce 1 313 m n. m. na adrese Strážné 111, uvnitř
+    Krkonošského národního parku. Ubytování tu funguje už od 20. let 20.
+    století; dnes nabízí až 115 lůžek ve dvou- až šestilůžkových pokojích se
+    společným sociálním zařízením.
+  - >-
+    Restaurace Dvorské boudy má otevřeno denně od 11 do 16 hodin a je
+    přístupná hostům i turistům; ke snídani slouží bufet, k pobytu lze
+    dokoupit polopenzi. K vybavení patří Wi-Fi zdarma v celém objektu,
+    lyžárna a kolárna, klubovna s krbem i dětská herna — bouda cílí na
+    rodiny a skupiny v létě i v zimě.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/6/66/Dvorsk%C3%A1_bouda%2C_Krkono%C5%A1e%2C_Czechia_12.jpg
+    alt: Dvorská bouda v Krkonoších nad Strážným
+    typ: soucasna
+    autor: Michal Klajban
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Dvorsk%C3%A1_bouda,_Krkono%C5%A1e,_Czechia_12.jpg
+    prevzatoDne: '2026-07-20'
+    overeni:
+      source: Wikimedia Commons (DATA-02, název souboru „Dvorská bouda, Krkonoše, Czechia 12", autor Michal Klajban, 5632×3755, licence CC BY-SA 4.0 z licenčního síta DATA-02)
+      verified: false # licenci i to, že snímek zachycuje budovu (popis zmiňuje Cestu česko-polského přátelství), očima zkontroluje redakce; alternativa File:Dvorská bouda.jpg (Michaelstepanek, CC BY-SA 3.0)
+      checked: '2026-07-20'
+
+zdroje:
+  - popis: Web Dvorské boudy (dvorska-bouda.cz) — ubytování, restaurace, služby
+    url: https://www.dvorska-bouda.cz/
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/way/23012222
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/dvorska-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅).
+  Areál: web původně popisoval i vztah k okolním objektům — při návštěvě ověřit, zda „Dvorská bouda" je jediný objekt (session 22 řešila obdobně u Dvoraček/Štumpovky).
+  Hero fotka: vybrán vysoký sken Michala Klajbana (název souboru = Dvorská bouda), ale popis na Commons zmiňuje Cestu česko-polského přátelství — redakce potvrdí, že jde o budovu, jinak přepnout na File:Dvorská bouda.jpg.
+  Rok vzniku: web uvádí jen „od 20. let 20. století" — přesný rok dohledat.

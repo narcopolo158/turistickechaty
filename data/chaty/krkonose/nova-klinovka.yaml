@@ -1,0 +1,110 @@
+# Bouda Klínovka — profil povýšen z kandidáta DATA-01 po křížovém ověření DATA-03
+# (rozhodnutí Michala 20. 7. 2026, kategorie ✅). Každá skupina má blok overeni.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# Slug drží OSM původ (kandidát „Nová Klínovka"); web užívá název „Bouda Klínovka".
+
+nazev: Bouda Klínovka
+slug: nova-klinovka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+aliasy:
+  - nazev: Nová Klínovka
+    poznamka: název objektu v OpenStreetMap (DATA-01)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL); výška a poloha z webu boudy.
+lat: 50.7085361
+lng: 15.6584016
+vyska: 1227
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/1501710133 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 1227 m, nejbližší obec Špindlerův Mlýn, přístup pouze pěšky:
+    https://www.klinovka.com/
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 50
+pokoje:
+  - typ: Podkrovní pokoje (7 pokojů)
+  - typ: Noclehárny (2)
+overeniNocleh:
+  source: https://www.klinovka.com/ (kapacita 50 lůžek — 7 pokojů + 2 noclehárny, podkrovní pokoje; ceny na webu neuvedeny)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: jídla z vlastního chovu Highland (kulajda, steaky), čerstvý chléb
+overeniObcerstveni:
+  source: https://www.klinovka.com/ (restaurace s jídelním lístkem přístupná i neubytovaným, poctivé jídlo z vlastního chovu Highland; otvírací doba na webu neuvedena)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+wifi: ne # záměrně bez Wi-Fi (filosofie boudy)
+overeniSluzby:
+  source: https://www.klinovka.com/ (záměrně bez Wi-Fi; společenské hry, kytara, klavír; těžká zavazadla lze vyvézt nahoru po domluvě)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: Celoročně
+kontakty:
+  telefon: +420 731 848 487
+  email: recepce@klinovka.com
+  web: https://www.klinovka.com/
+  facebook: boudaklinovka2016
+  instagram: '@klinovka'
+overeniProvoz:
+  source: https://www.klinovka.com/ (celoroční provoz — zimní i letní trasy; kontakty, sociální sítě)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: |-
+  Bouda je dostupná pouze pěšky (auta nevjíždějí). Těžká zavazadla lze po domluvě vyvézt nahoru.
+overeniPristup:
+  source: https://www.klinovka.com/ („odlehlá horská bouda… dostupná pouze pěšky"; vyvezení zavazadel po domluvě)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Odlehlá horská bouda ve výšce 1 227 m u Špindlerova Mlýna, dostupná jen
+  pěšky. Restaurace s jídlem z vlastního chovu skotu Highland i pro
+  kolemjdoucí, 50 lůžek — a záměrně žádná Wi-Fi.
+text:
+  - >-
+    Bouda Klínovka stojí ve výšce 1 227 m n. m. nad Špindlerovým Mlýnem a
+    hlásí se k roli odlehlé horské boudy: auta sem nevjíždějí, nahoru se
+    chodí pěšky a těžší zavazadla vyvezou po domluvě. Ubytuje až 50 hostů
+    v sedmi podkrovních pokojích a dvou noclehárnách.
+  - >-
+    Vlastní restaurace vaří poctivé jídlo z chovu skotu Highland — kulajdu,
+    steaky, k tomu čerstvě pečený chléb — a je otevřená i pro neubytované.
+    Wi-Fi tu záměrně nenajdete; místo ní společenské hry, kytara a klavír.
+    Provoz je celoroční, se zimními i letními trasami.
+# Bez hero fotky: DATA-02 nenašla na Commons žádného licenčně čistého kandidáta
+# (viz data/kandidati/fotky/krkonose/nova-klinovka.yaml — 0 fotek). Doplní se
+# vlastní snímek se svolením provozovatele nebo širší geosearch DATA-02.
+
+zdroje:
+  - popis: Web Boudy Klínovka (klinovka.com) — ubytování, restaurace, přístup
+    url: https://www.klinovka.com/
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/node/1501710133
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/nova-klinovka.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅).
+  Název: web užívá „Bouda Klínovka", OSM „Nová Klínovka" (ponecháno jako alias). Slug drží OSM původ (nova-klinovka), ať se neláme historie kandidáta; zvážit rename na klinovka po dohodě.
+  Web: klinovka.cz z OSM přesměrovává na klinovka.com — zapsán cílový web.
+  Foto: hero chybí (0 licenčně čistých kandidátů na Commons) — dořešit.
+  Otvírací doba restaurace: web ji neuvádí — doplnit (DATA-04).

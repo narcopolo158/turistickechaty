@@ -1,0 +1,110 @@
+# Lesní bouda — profil povýšen z kandidáta DATA-01 po křížovém ověření DATA-03
+# (rozhodnutí Michala 20. 7. 2026, kategorie ✅). Každá skupina má blok overeni.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+
+nazev: Lesní bouda
+slug: lesni-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS a výška z OSM (ODbL); poloha (Pec pod Sněžkou, hřeben Liščí hory) z webu boudy a popisu fotky.
+lat: 50.6770566
+lng: 15.7092211
+vyska: 1102
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    GPS a výška 1102 m: OpenStreetMap https://www.openstreetmap.org/way/31360795
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    poloha Pec pod Sněžkou, hřeben Liščí hory: https://lesnibouda.cz/
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+pokoje:
+  - typ: Pokoje pro rodiny, jednotlivce, skupiny i kolektivy
+overeniNocleh:
+  source: https://lesnibouda.cz/ („komfortní a útulné pokoje pro rodiny, jednotlivce, skupiny i kolektivy"; ceník na webu, konkrétní ceny a kapacita neuvedeny)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: tradiční krkonošská kuchyně
+overeniObcerstveni:
+  source: https://lesnibouda.cz/ (vlastní restaurace s tradiční krkonošskou kuchyní, otevřeno 10:30–17:00, přístupné i neubytovaným)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# Web zmiňuje vířivku a eko farmu; ostatní služby nespecifikuje → nevyplněno.
+overeniSluzby:
+  source: https://lesnibouda.cz/ (eko farma, vířivka)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Restaurace denně 10:30–17:00, přístupná i neubytovaným.
+kontakty:
+  telefon: +420 736 678 302
+  email: info@lesnibouda.cz
+  web: https://lesnibouda.cz/
+overeniProvoz:
+  source: https://lesnibouda.cz/ (otvírací doba restaurace, telefon rezervace, e-mail)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1996
+    udalost: Boudu provozuje současná rodina (od roku 1996)
+overeniHistorie:
+  source: https://lesnibouda.cz/ („naše rodina provozuje tuto boudu od roku 1996")
+  verified: false
+  checked: '2026-07-20'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská bouda s eko farmou na hřebeni Liščí hory nad Pecí pod Sněžkou
+  (1 102 m). Vlastní restaurace s krkonošskou kuchyní otevřená denně i pro
+  kolemjdoucí turisty, rodinný provoz od roku 1996.
+text:
+  - >-
+    Lesní bouda stojí ve výšce 1 102 m n. m. na hřebeni Liščí hory, vysoko
+    nad ruchem turistických center Pece pod Sněžkou. Současná rodina ji
+    provozuje od roku 1996 a k boudě patří i eko farma.
+  - >-
+    Vlastní restaurace vaří tradiční krkonošskou kuchyni a má otevřeno denně
+    od 10:30 do 17:00 — najíst se může i turista bez ubytování. Přespat lze
+    v pokojích pro rodiny, jednotlivce i větší skupiny; k dispozici je také
+    vířivka.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/a/a3/Krkono%C5%A1e%2C_Lesn%C3%AD_bouda.jpg
+    alt: Lesní bouda na hřebeni Liščí hory v Krkonoších
+    typ: soucasna
+    autor: Stanislav Dusík
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Krkono%C5%A1e,_Lesn%C3%AD_bouda.jpg
+    prevzatoDne: '2026-07-20'
+    overeni:
+      source: Wikimedia Commons (geosearch DATA-02, 14 m od chaty, popis „Lesní bouda na hřebeni Liščí hory v Krkonoších.", 4168×2088, licence CC BY-SA 4.0 z licenčního síta DATA-02)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
+zdroje:
+  - popis: Web Lesní boudy (lesnibouda.cz) — ubytování, restaurace, eko farma
+    url: https://lesnibouda.cz/
+  - popis: OpenStreetMap (GPS a výška objektu, ODbL)
+    url: https://www.openstreetmap.org/way/31360795
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/lesni-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅).
+  Výška 1102 m z OSM (web ji neuvádí); popis fotky Commons „na hřebeni Liščí hory" polohu potvrzuje.
+  Kapacita lůžek a ceny: na webu neuvedeny — nezapsáno.
+  Pozn.: v Krkonoších je i další „Lesní bouda" (Špindlerův Mlýn) — tato je nad Pecí pod Sněžkou (Liščí hora); při dalších objektech hlídat záměnu.

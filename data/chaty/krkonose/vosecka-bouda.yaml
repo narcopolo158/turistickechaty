@@ -1,0 +1,108 @@
+# Vosecká bouda — profil povýšen z kandidáta DATA-01 po křížovém ověření DATA-03
+# (rozhodnutí Michala 20. 7. 2026, kategorie ✅). Každá skupina má blok overeni.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# Co web nedokládá, tu NENÍ (občerstvení pro veřejnost web nepopisuje → nezapsáno).
+
+nazev: Vosecká bouda
+slug: vosecka-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu # sezónní provoz, viz sezona
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL); výška a poloha z webu boudy.
+lat: 50.7829727
+lng: 15.5110143
+vyska: 1260
+obec: Harrachov
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/2337855811 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 1260 m, západní Krkonoše, 1. zóna KRNAP, nejbližší obec Harrachov
+    (8 km přístupová cesta): https://voseckabouda.cz/
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano # web má rezervační formulář a stránku Ubytování; konkrétní kapacita/ceny neuvedeny
+overeniNocleh:
+  source: https://voseckabouda.cz/ (nabízí ubytování — rezervační formulář; kapacita lůžek, typy pokojů a ceny na webu neuvedeny)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: Sezónní provoz (web uvádí otevřeno 1. 6. – 28. 10. 2026)
+otviraciDoba: |-
+  Otevřeno 1. 6. – 28. 10. 2026 (sezónní provoz dle webu).
+kontakty:
+  telefon: +420 481 529 610
+  email: vosecka.bouda@seznam.cz
+  web: https://voseckabouda.cz/
+  facebook: https://www.facebook.com/voseckabouda/
+overeniProvoz:
+  source: https://voseckabouda.cz/ (sezóna, kontakty, Facebook)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# Bouda není napojena na elektrickou síť — energii vyrábí dieselagregát.
+# Konkrétní služby pro hosty web nespecifikuje → nevyplněno.
+overeniSluzby:
+  source: https://voseckabouda.cz/ (bez připojení na elektrickou síť — dieselagregát)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1743 # „založena před rokem 1743 jako seník"
+milniky:
+  - rok: 1743
+    udalost: Založena (před rokem 1743) jako seník
+  - rok: 1896
+    udalost: Od tohoto roku slouží turistům
+overeniHistorie:
+  source: https://voseckabouda.cz/ (založena před 1743 jako seník, od 1896 slouží turistům, současná podoba po 2. světové válce, nikdy nevyhořela)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Sezónní horská bouda v 1. zóně KRNAP v západních Krkonoších (1 260 m),
+  8 km od Harrachova. Historie sahá před rok 1743, turistům slouží od roku
+  1896 — a jako jedna z mála krkonošských bud nikdy nevyhořela.
+text:
+  - >-
+    Vosecká bouda stojí ve výšce 1 260 m n. m. v první zóně Krkonošského
+    národního parku, v západní části pohoří nad Harrachovem. Vznikla před
+    rokem 1743 jako seník a od roku 1896 slouží turistům; dnešní podobu
+    získala po druhé světové válce a je unikátní tím, že nikdy nevyhořela.
+  - >-
+    Bouda není napojena na elektrickou síť — energii si vyrábí vlastním
+    dieselagregátem, což podtrhuje její odlehlý hřebenový charakter. Provoz
+    je sezónní; pro rok 2026 web uvádí otevřeno od 1. června do 28. října.
+    Přístupová cesta od Harrachova měří zhruba 8 kilometrů.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/9/91/Vosecka_bouda_003.jpg
+    alt: Vosecká bouda — pohled na horskou boudu v západních Krkonoších
+    typ: soucasna
+    autor: Balaban
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Vosecka_bouda_003.jpg
+    prevzatoDne: '2026-07-20'
+    overeni:
+      source: Wikimedia Commons (geosearch DATA-02, 2 m od chaty, popis „Vosecká bouda", 2592×1944, licence CC BY-SA 3.0 z licenčního síta DATA-02)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
+zdroje:
+  - popis: Web Vosecké boudy (voseckabouda.cz) — poloha, provoz, historie, kontakty
+    url: https://voseckabouda.cz/
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/node/2337855811
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/vosecka-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅). KČT ji řadí mezi „12 nejlepších horských chat v Krkonoších".
+  Občerstvení: web gastronomii pro veřejnost výslovně nepopisuje — kuchyne proto NEvyplněno (nedomýšlet). Doložit při telefonickém ověření (DATA-04).
+  Kapacita lůžek a ceny: na webu neuvedeny — nezapsáno.
+  Sezónnost je i údaj pro DATA-04 (aktualizovat rok co rok).

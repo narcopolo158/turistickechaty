@@ -1,0 +1,128 @@
+# Labská bouda — profil povýšen z kandidáta DATA-01 po křížovém ověření DATA-03
+# (rozhodnutí Michala 20. 7. 2026, kategorie ✅). Každá skupina má blok overeni
+# (source / verified / checked). verified: false = převzato z uvedeného zdroje,
+# redakcí zatím neověřeno (telefonát/návštěva). Co web nedokládá, tu NENÍ.
+
+nazev: Labská bouda
+slug: labska-bouda
+zeme: cz
+typ: obsluhovana # web se prezentuje jako „Hotel Labská bouda"; zapsáno jako obsluhovaná chata dle taxonomie plánu (jako Luční bouda) — viz interniPoznamky
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL); výška, adresa a poloha z webu boudy.
+lat: 50.7702021
+lng: 15.5461576
+vyska: 1340
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/27594762 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 1340 m, 1. zóna KRNAP, cca 1 km od pramene Labe SZ od Špindlerova
+    Mlýna, adresa Bedřichov 31, Vítkovice v Krkonoších: https://www.labskabouda.cz/
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+pokoje:
+  - typ: Premium (2–4lůžkové, koupelna a TV)
+  - typ: Standard (2–3lůžkové s koupelnou)
+  - typ: Economy (4lůžkové smíšené, spacáky)
+cenyOrientacne: spacáky (economy) od 1 090 Kč, standard od 3 100 Kč, premium od 4 000 Kč
+overeniNocleh:
+  source: https://www.labskabouda.cz/ (typy pokojů a ceny „od"; celková kapacita lůžek na webu uvedena není)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace # + bufet, v sezóně venkovní bufet
+specialita: null
+overeniObcerstveni:
+  source: https://www.labskabouda.cz/ (restaurace 70 míst + bufet 100 míst, otevřeno 10:00–21:00, kuchyně do 19:30, přístupné i neubytovaným turistům)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+platbaKartou: ano # GoPay, Mastercard, Visa
+psi: ano # ubytování psů
+# voda / wc / sprchy / wifi / nabíjení / lyžárna: web nespecifikuje → nevyplněno
+overeniSluzby:
+  source: https://www.labskabouda.cz/ (platby GoPay/Mastercard/Visa, ubytování psů; dále finská sauna, vířivka, bankomat)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Restaurace a bufet denně 10:00–21:00 (kuchyně do 19:30), přístupné i neubytovaným.
+kontakty:
+  telefon: +420 720 952 909
+  email: info@labskabouda.cz
+  web: https://www.labskabouda.cz/
+overeniProvoz:
+  source: https://www.labskabouda.cz/ (otvírací doba, telefon rezervace, e-mail)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1975 # současná stavba; historie místa od roku 1830
+milniky:
+  - rok: 1830
+    udalost: Na místě prodává žena „kozí výrobky a kořalku" — počátek pohostinství
+  - rok: 1965
+    udalost: Původní hostinec (dřevěná bouda) vyhořel
+  - rok: 1975
+    udalost: Postavena současná stavba Labské boudy
+overeniHistorie:
+  source: https://www.labskabouda.cz/ (historie — 1830 počátek, požár 1965, stavba 1975)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Velká hřebenová bouda v 1. zóně KRNAP ve výšce 1 340 m, kousek od pramene
+  Labe severozápadně od Špindlerova Mlýna. Restaurace i bufet otevřené celý
+  den i pro kolemjdoucí turisty, ubytování od spacáků po pokoje Premium.
+text:
+  - >-
+    Labská bouda stojí na Labské louce ve výšce 1 340 m n. m., zhruba kilometr
+    od pramene Labe a v první zóně Krkonošského národního parku. Pohostinství
+    tu má kořeny už v roce 1830; dřevěná bouda ale roku 1965 vyhořela a dnešní
+    výrazná budova pochází z roku 1975.
+  - >-
+    Restaurace pojme 70 hostů, bufet dalších sto a obojí má otevřeno denně od
+    10 do 21 hodin (kuchyně do 19:30) — najíst se tu může i turista bez
+    ubytování, v sezóně slouží venkovní bufet. Přespat lze od smíšených
+    economy pokojů se spacáky po dvou- až čtyřlůžkové pokoje Premium.
+  - >-
+    K vybavení patří finská sauna, vířivka a bankomat, platit lze kartou;
+    ubytovat se dá i se psem. Bouda leží na křižovatce hřebenových cest —
+    dostupná je pěšky po značených trasách z okolních středisek.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/7/70/Labska_bouda_A_22211.JPG
+    alt: Labská bouda — pohled na budovu na Labské louce v Krkonoších
+    typ: soucasna
+    autor: Ciacho5
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Labska_bouda_A_22211.JPG
+    prevzatoDne: '2026-07-20'
+    overeni:
+      source: Wikimedia Commons (geosearch DATA-02, 16 m od chaty, popis „Mountain hotel Labská bouda in Cech Krkonose.", 3104×1746, licence CC BY-SA 4.0 z licenčního síta DATA-02)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
+zdroje:
+  - popis: Web Labské boudy (labskabouda.cz) — profil, ubytování, restaurace, historie
+    url: https://www.labskabouda.cz/
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/way/27594762
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/labska-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅).
+  Typ: web se prezentuje jako „Hotel Labská bouda"; zapsáno jako obsluhovaná chata dle taxonomie plánu — stejný přístup jako u Luční boudy (zvážit „horský hotel v roli chaty", rozhodne Michal en bloc pro velké hřebenové boudy).
+  Poloha: web uvádí cadastrální adresu Bedřichov 31, Vítkovice v Krkonoších; jako nejbližší středisko zapsán Špindlerův Mlýn (web „SZ od Špindlerova Mlýna").
+  Kapacita lůžek: na webu neuvedena — nezapsáno.
+  Pěší trasy s profily: doplnit po GPX (jako u Luční boudy). Historie: web uvádí jen rámcové milníky, přesná data přestaveb dohledat.
