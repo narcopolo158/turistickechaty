@@ -1,0 +1,692 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-20T11:06:45Z",
+    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1965043685,
+  "lat": 50.8301236,
+  "lon": 15.5555441,
+  "tags": {
+    "addr:city": "Piechowice",
+    "addr:postcode": "58-573",
+    "contact:phone": "+48 781 024 159",
+    "contact:website": "http://www.kochanowka.wszklarskiej.net",
+    "ele": "510",
+    "name": "Kochanówka",
+    "operator": "PTTK",
+    "tourism": "alpine_hut",
+    "wikidata": "Q9334374",
+    "wikipedia": "pl:Schronisko PTTK „Kochanówka”"
+  }
+},
+{
+  "type": "node",
+  "id": 8939671641,
+  "lat": 50.7161202,
+  "lon": 15.8814204,
+  "tags": {
+    "addr:housenumber": "136",
+    "addr:place": "Jarkowice",
+    "addr:postcode": "58-420",
+    "facebook": "https://www.facebook.com/srebrnypotok/",
+    "name": "Srebrny Potok",
+    "phone": "+48 883 715 719",
+    "tourism": "alpine_hut",
+    "website": "https://srebrny-potok.net/"
+  }
+},
+{
+  "type": "way",
+  "id": 19921121,
+  "center": {
+    "lat": 50.7395071,
+    "lon": 15.7289735
+  },
+  "nodes": [
+    209121091,
+    1847513612,
+    1847513620,
+    5038862334,
+    1847513632,
+    209121124,
+    5038862339,
+    1847513636,
+    1847513630,
+    1847513624,
+    209121113,
+    4072600172,
+    5038862335,
+    4072600169,
+    209121102,
+    5038862336,
+    10140621537,
+    209121091
+  ],
+  "tags": {
+    "addr:city": "Karpacz",
+    "addr:city:simc": "0936032",
+    "addr:housenumber": "20",
+    "addr:postcode": "58-540",
+    "addr:street": "Na Śnieżkę",
+    "addr:street:sym_ul": "36115",
+    "alt_name": "Śląski Dom",
+    "beds": "57",
+    "building": "yes",
+    "building:levels": "3",
+    "contact:email": "info@domslaski.pl",
+    "contact:phone": "+48 75 753 52 90",
+    "contact:website": "https://domslaski.pl",
+    "ele": "1400",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Dom Śląski",
+    "name:cs": "Slezský Dům",
+    "name:de": "Schlesisches Haus",
+    "name:pl": "Dom Śląski",
+    "old_name:de": "Schlesierhaus",
+    "old_name:pl": "Pod Śnieżką",
+    "operator": "Karol Warecki",
+    "phone": "+48 75 612 67 00",
+    "roof:colour": "gray",
+    "roof:levels": "1",
+    "roof:shape": "hipped",
+    "rooms": "14",
+    "source:addr": "karpacz.e-mapa.net",
+    "start_date": "1923",
+    "tourism": "alpine_hut",
+    "website": "https://domslaski.pl/",
+    "wikidata": "Q9334361",
+    "wikipedia": "pl:Schronisko Górskie „Dom Śląski”",
+    "year_of_construction": "1921..1922"
+  }
+},
+{
+  "type": "way",
+  "id": 20897240,
+  "center": {
+    "lat": 50.7634073,
+    "lon": 15.6395908
+  },
+  "nodes": [
+    224519309,
+    224519298,
+    11134760769,
+    6262219424,
+    6262219421,
+    6262219422,
+    6262219423,
+    11134760770,
+    11134760771,
+    11134760768,
+    224519309
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "contact:email": "piotrkaczmarek2@op.pl",
+    "contact:website": "http://www.schroniskoodrodzenie.pl/",
+    "ele": "1230",
+    "mobile": "+48 780 152 207",
+    "name": "Schronisko Odrodzenie",
+    "name:de": "Jugendkammhaus Rübezahl",
+    "name:pl": "Schronisko Odrodzenie",
+    "operator": "PTTK",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "source:building": "BDOT",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 32604714,
+  "center": {
+    "lat": 50.7881562,
+    "lon": 15.5367363
+  },
+  "nodes": [
+    366648928,
+    366648929,
+    4084777948,
+    4084777945,
+    4084777949,
+    4084777950,
+    366648930,
+    366648931,
+    4084777943,
+    4084777942,
+    366648932,
+    366648934,
+    366648928
+  ],
+  "tags": {
+    "building": "hotel",
+    "ele": "1168",
+    "name": "Schronisko \"Pod Łabskim Szczytem\"",
+    "name:de": "Alte Schlesische Baude",
+    "name:pl": "Schronisko \"Pod Łabskim Szczytem\"",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "source": "uhul:ortofoto",
+    "tourism": "alpine_hut",
+    "wikidata": "Q9334384",
+    "wikipedia": "pl:Schronisko PTTK „Pod Łabskim Szczytem”"
+  }
+},
+{
+  "type": "way",
+  "id": 32604717,
+  "center": {
+    "lat": 50.7920351,
+    "lon": 15.5136508
+  },
+  "nodes": [
+    366648939,
+    12961245042,
+    12961245040,
+    12961245038,
+    12961245036,
+    12961245037,
+    12961245035,
+    12961245039,
+    12961245041,
+    12961245043,
+    366648940,
+    4404189022,
+    4404189024,
+    366648941,
+    366648942,
+    366648943,
+    366648944,
+    366648945,
+    4404189007,
+    4404189006,
+    366648946,
+    4404188884,
+    366648939
+  ],
+  "tags": {
+    "building": "public",
+    "ele": "1361.3",
+    "image": "https://szrenica.pl/wp-content/uploads/2021/08/DSC07839-1024x381.jpg",
+    "internet_access": "no",
+    "name": "Schronisko Szrenica",
+    "name:de": "Reifträgerbaude",
+    "name:pl": "Schronisko Szrenica",
+    "source": "uhul:ortofoto",
+    "tourism": "alpine_hut",
+    "url": "https://polska-org.pl/526598,Szklarska_Poreba,Schronisko_Szrenica.html",
+    "url:0": "https://fotopolska.eu/Schronisko_Na_Szrenicy?map_z=17",
+    "website": "https://www.szrenica.pl/",
+    "wikidata": "Q9334462",
+    "wikipedia": "pl:Schronisko na Szrenicy"
+  }
+},
+{
+  "type": "way",
+  "id": 32604722,
+  "center": {
+    "lat": 50.7941251,
+    "lon": 15.5015817
+  },
+  "nodes": [
+    366648991,
+    366648992,
+    366648993,
+    366648994,
+    366648995,
+    366648996,
+    5040761766,
+    366648997,
+    4833938944,
+    366648998,
+    366648999,
+    14000625758,
+    366649000,
+    4833938945,
+    4833938946,
+    14000625750,
+    4833938947,
+    4833938948,
+    366649001,
+    2451391165,
+    366649002,
+    4833938942,
+    4833938943,
+    366649003,
+    366649004,
+    14000625752,
+    4833938952,
+    4833938950,
+    4833938949,
+    4833938951,
+    366648991
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "3",
+    "ele": "1200",
+    "image": "https://photos.app.goo.gl/zHYayU25wRnnvNbm9",
+    "mapillary": "1351433692582965",
+    "name": "Schronisko PTTK na Hali Szrenickiej",
+    "name:de": "Neue Schlesische Baude",
+    "name:pl": "Schronisko PTTK na Hali Szrenickiej",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 757 533 270",
+    "roof:levels": "1",
+    "source": "uhul:ortofoto",
+    "tourism": "alpine_hut",
+    "url": "https://fotopolska.eu/Schronisko_Na_Hali_Szrenickiej?map_z=16",
+    "url:0": "https://polska-org.pl/527206,Szklarska_Poreba,Schronisko_na_Hali_Szrenickiej.html",
+    "website": "https://www.halaszrenicka.pl/",
+    "wikidata": "Q9334400",
+    "wikipedia": "pl:Schronisko PTTK na Hali Szrenickiej"
+  }
+},
+{
+  "type": "way",
+  "id": 90393483,
+  "center": {
+    "lat": 50.8143401,
+    "lon": 15.4966649
+  },
+  "nodes": [
+    1048664033,
+    3023623920,
+    1048659071,
+    1048660648,
+    3023623909,
+    3023623904,
+    12959910690,
+    1048662442,
+    12959910683,
+    12959910684,
+    3023623918,
+    1048664033
+  ],
+  "tags": {
+    "building": "public",
+    "building:levels": "2",
+    "image": "https://photos.app.goo.gl/nHpHHiVUrCBLnJde6",
+    "name": "Schronisko Kamieńczyk",
+    "roof:levels": "1",
+    "tourism": "alpine_hut",
+    "url": "https://polska-org.pl/530092,Szklarska_Poreba,Schronisko_Kamienczyk_nowe.html",
+    "url:0": "https://fotopolska.eu/Schronisko_Kamienczyk?map_z=18",
+    "wikidata": "Q9334342",
+    "wikimedia_commons": "Category:Kamieńczyk Hostel",
+    "wikipedia": "pl:Schronisko „Kamieńczyk”"
+  }
+},
+{
+  "type": "way",
+  "id": 98214072,
+  "center": {
+    "lat": 50.8150688,
+    "lon": 15.3831562
+  },
+  "nodes": [
+    1136178786,
+    12640537676,
+    3032182187,
+    1136178782,
+    1136178756,
+    5882595733,
+    1136178786
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "hotel",
+    "name": "Stacja Turystyczna Orle",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "phone": "+48500610115",
+    "tourism": "alpine_hut",
+    "website": "http://www.orleturystyczne.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 122672323,
+  "center": {
+    "lat": 50.8546685,
+    "lon": 15.3608086
+  },
+  "nodes": [
+    1370090660,
+    1370090659,
+    1370090655,
+    1370090656,
+    12036415599,
+    1370090660
+  ],
+  "tags": {
+    "building": "hotel",
+    "contact:email": "chatkagorzystow@o2.pl",
+    "contact:facebook": "https://www.facebook.com/pages/Chatka-G%C3%B3rzyst%C3%B3w/148609605212071",
+    "description": "Własność: prywatne. Otwarte: cały rok Ceny: 29 zł, „gleba” 12, pole namiotowe 10 zł, rabaty: HDK",
+    "name": "Chatka Górzystów",
+    "name:de": "Groß-Iser-Baude",
+    "name:pl": "Chatka Górzystów",
+    "note": "budynek nie ma oficjalnego adresu-sprawdzone w Starostwie Powiatowym Lwówek Śląski",
+    "phone": "+48 75 753 25 33;+48 607 426 998",
+    "restaurant": "yes",
+    "shower": "yes",
+    "toilets": "yes",
+    "tourism": "alpine_hut",
+    "water_heater": "yes",
+    "website": "https://www.chatkagorzystow.pl/index.html",
+    "wikidata": "Q9334431",
+    "wikipedia": "pl:Chatka Górzystów"
+  }
+},
+{
+  "type": "way",
+  "id": 128601808,
+  "center": {
+    "lat": 50.7507892,
+    "lon": 15.7083696
+  },
+  "nodes": [
+    1420714517,
+    1420714515,
+    11411806439,
+    1420714516,
+    11411806438,
+    3737226883,
+    4121723010,
+    11411806437,
+    11411806436,
+    4121723009,
+    11411806435,
+    11411806434,
+    11411806433,
+    11411806432,
+    1420714512,
+    1420714513,
+    11411806431,
+    1420714511,
+    4121722997,
+    4121722998,
+    1420714508,
+    1420714509,
+    4121723003,
+    4121722995,
+    4121722996,
+    1420714510,
+    4121723008,
+    1420714514,
+    11411806430,
+    1420714517
+  ],
+  "tags": {
+    "addr:city": "Karpacz",
+    "addr:city:simc": "0936032",
+    "addr:housenumber": "18",
+    "addr:postcode": "58-540",
+    "addr:street": "Na Śnieżkę",
+    "addr:street:sym_ul": "36115",
+    "building": "yes",
+    "building:levels": "3",
+    "ele": "1258",
+    "heritage": "2",
+    "heritage:operator": "nid",
+    "heritage:website": "https://zabytek.pl/pl/obiekty/karpacz-schronisko-strzecha-akademicka",
+    "historic": "yes",
+    "image": "https://pl.wikipedia.org/wiki/Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D#/media/File:Strzecha_Akademicka.JPG",
+    "name": "Strzecha Akademicka",
+    "name:de": "Hampelbaude",
+    "name:pl": "Schronisko PTTK \"Strzecha Akademicka\"",
+    "operator": "PTTK",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "source:addr": "karpacz.e-mapa.net",
+    "source:building": "BDOT",
+    "tourism": "alpine_hut",
+    "website": "http://www.strzechaakademicka.pl",
+    "wikidata": "Q9334387",
+    "wikipedia": "pl:Schronisko PTTK „Strzecha Akademicka”"
+  }
+},
+{
+  "type": "way",
+  "id": 128601809,
+  "center": {
+    "lat": 50.7490537,
+    "lon": 15.7026950
+  },
+  "nodes": [
+    1420714523,
+    1420714524,
+    1420714520,
+    8939729515,
+    1420714519,
+    3736010455,
+    3736021236,
+    1420714521,
+    10751493705,
+    1420714522,
+    1420714523
+  ],
+  "tags": {
+    "addr:city": "Karpacz",
+    "addr:city:simc": "0936032",
+    "addr:housenumber": "16",
+    "addr:postcode": "58-540",
+    "addr:street": "Na Śnieżkę",
+    "addr:street:sym_ul": "36115",
+    "building": "yes",
+    "contact:mobile": "+48 791 566 569",
+    "ele": "1195",
+    "email": "schronisko@samotnia.com.pl",
+    "fee": "yes",
+    "heritage": "2",
+    "heritage:operator": "nid",
+    "heritage:website": "https://zabytek.pl/pl/obiekty/karpacz-schronisko-samotnia",
+    "image": "https://pl.wikipedia.org/wiki/Schronisko_PTTK_%E2%80%9ESamotnia%E2%80%9D#/media/File:Samotnia_lato2013.jpg",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Schronisko Samotnia",
+    "name:de": "Kleine Teichbaude",
+    "name:pl": "Schronisko Samotnia",
+    "operator": "PTTK",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 75 7619376",
+    "source:addr": "karpacz.e-mapa.net",
+    "toilets": "yes",
+    "tourism": "alpine_hut",
+    "website": "http://www.samotnia.com.pl/",
+    "wikidata": "Q9334385",
+    "wikipedia": "pl:Schronisko PTTK „Samotnia”"
+  }
+},
+{
+  "type": "way",
+  "id": 174687998,
+  "center": {
+    "lat": 50.7471384,
+    "lon": 15.8245737
+  },
+  "nodes": [
+    1853387520,
+    1853387523,
+    10557689618,
+    10557689617,
+    1853387514,
+    8892645909,
+    8892693341,
+    8892693342,
+    1853387512,
+    1853387518,
+    10557689615,
+    10557689614,
+    10557689613,
+    10557689612,
+    10557689611,
+    10557689610,
+    10557689609,
+    10557668908,
+    10557668907,
+    10557668906,
+    10557668905,
+    10557689616,
+    1853387520
+  ],
+  "tags": {
+    "building": "yes",
+    "ele": "1046",
+    "internet_access": "wlan",
+    "name": "Schronisko PTTK \"Na Przełęczy Okraj\"",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 75 611 20 36",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "https://schroniskookraj.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 278729479,
+  "center": {
+    "lat": 50.8632299,
+    "lon": 15.8725380
+  },
+  "nodes": [
+    2830438684,
+    2830438689,
+    2830438688,
+    2922077146,
+    2830438684
+  ],
+  "tags": {
+    "addr:city": "Karpniki",
+    "addr:city:simc": "0191394",
+    "addr:housenumber": "7",
+    "addr:postcode": "58-515",
+    "addr:street": "Janowicka",
+    "building": "yes",
+    "building:levels": "2",
+    "building:material": "wood",
+    "ele": "520",
+    "email": "szwajcarkakarpniki@wp.pl",
+    "historic": "yes",
+    "mobile": "+48 781 482 993",
+    "name": "Schronisko PTTK Szwajcarka",
+    "name:de": "Schweizerhaus",
+    "name:pl": "Szwajcarka",
+    "opening_hours:kitchen": "09:00-20:00",
+    "operator": "PTTK",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "payment:credit_cards": "yes",
+    "phone": "+48 75 753 52 83",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "BDOT",
+    "start_date": "1823",
+    "tourism": "alpine_hut",
+    "website": "https://schronisko-szwajcarka.pl/",
+    "wikidata": "Q9334386",
+    "wikipedia": "pl:Schronisko PTTK „Szwajcarka”"
+  }
+},
+{
+  "type": "way",
+  "id": 406298192,
+  "center": {
+    "lat": 50.7826713,
+    "lon": 15.5666515
+  },
+  "nodes": [
+    4083925850,
+    4083925848,
+    4083925847,
+    4083925849,
+    4083925850
+  ],
+  "tags": {
+    "access": "private",
+    "building": "yes",
+    "building:levels": "1",
+    "ele": "1251",
+    "name": "Chatka Wielkanocna",
+    "phone:mobile": "+48600424534",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 529587726,
+  "center": {
+    "lat": 50.7682955,
+    "lon": 15.6684064
+  },
+  "nodes": [
+    5144251912,
+    5144251911,
+    5144251910,
+    5144251909,
+    5144251912
+  ],
+  "tags": {
+    "access": "private",
+    "building": "yes",
+    "building:material": "wood",
+    "building:use": "shelter",
+    "name": "Chatka Smogorniak",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 863642807,
+  "center": {
+    "lat": 50.7457582,
+    "lon": 15.7809053
+  },
+  "nodes": [
+    8045329233,
+    8045329234,
+    8045329235,
+    8045329236,
+    8045329233
+  ],
+  "tags": {
+    "access": "no",
+    "building": "hut",
+    "building:levels": "1",
+    "name": "Chatka Puchatka",
+    "operator": "KArkonoski Park Narodowy",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1038079202,
+  "center": {
+    "lat": 50.7872833,
+    "lon": 15.6275034
+  },
+  "nodes": [
+    9561218181,
+    9561218182,
+    9561218183,
+    9561218184,
+    9561218181
+  ],
+  "tags": {
+    "access": "permit",
+    "access:conditional": "with_permit",
+    "building": "yes",
+    "building:levels": "1",
+    "building:material": "wood",
+    "name": "Chatka AKT Towarzystwa Bażynowego",
+    "phone:mobile": "+48663963167",
+    "tourism": "wilderness_hut",
+    "website": "https://www.schronisko.net/poi/142/chatka-akt-towarzystwa-bazynowego/"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,33 @@
+# Schronisko PTTK na Hali Szrenickiej — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-20)
+# Zdroj: https://www.openstreetmap.org/way/32604722 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Schronisko PTTK na Hali Szrenickiej
+slug: schronisko-pttk-na-hali-szrenickiej
+zeme: pl
+oblast: krkonose
+typ: obsluhovana
+lat: 50.7941251
+lng: 15.5015817
+vyska: 1200
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/32604722 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-20
+kontakty:
+  telefon: +48 757 533 270
+  web: https://www.halaszrenicka.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/32604722 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-20
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-20) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

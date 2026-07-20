@@ -1,0 +1,35 @@
+# Schronisko Odrodzenie — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-20)
+# Zdroj: https://www.openstreetmap.org/way/20897240 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Schronisko Odrodzenie
+slug: schronisko-odrodzenie
+zeme: pl
+oblast: krkonose
+typ: obsluhovana
+lat: 50.7634073
+lng: 15.6395908
+vyska: 1230
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/20897240 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-20
+kontakty:
+  email: piotrkaczmarek2@op.pl
+  web: http://www.schroniskoodrodzenie.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/20897240 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-20
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-20) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: PTTK

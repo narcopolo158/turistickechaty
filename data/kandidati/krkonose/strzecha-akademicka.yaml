@@ -1,0 +1,35 @@
+# Strzecha Akademicka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-20)
+# Zdroj: https://www.openstreetmap.org/way/128601808 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Strzecha Akademicka
+slug: strzecha-akademicka
+zeme: pl
+oblast: krkonose
+typ: obsluhovana
+lat: 50.7507892
+lng: 15.7083696
+vyska: 1258
+obec: Karpacz
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/128601808 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-20
+kontakty:
+  web: http://www.strzechaakademicka.pl
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/128601808 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-20
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-20) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: PTTK

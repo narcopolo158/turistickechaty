@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-06-12T12:14:17Z",
-    "timestamp_areas_base": "2026-06-12T12:14:17Z",
+    "timestamp_osm_base": "2026-07-20T11:06:45Z",
+    "timestamp_areas_base": "2026-07-19T22:29:29Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -770,6 +770,37 @@
 },
 {
   "type": "way",
+  "id": 30778232,
+  "center": {
+    "lat": 50.8249909,
+    "lon": 15.3365597
+  },
+  "nodes": [
+    340355938,
+    340355939,
+    340355941,
+    340355942,
+    340355943,
+    340355945,
+    340355946,
+    340355947,
+    340355935,
+    340355937,
+    340355938
+  ],
+  "tags": {
+    "building": "house",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "name": "Chata Pešákovna",
+    "ref:ruian:building": "12050695",
+    "source": "cuzk:ruian",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
   "id": 31126083,
   "center": {
     "lat": 50.7692361,
@@ -986,7 +1017,7 @@
     "internet_access": "wlan",
     "internet_access:fee": "no",
     "name": "Horská chata Krakonoš",
-    "phone": "+420 (724) 101 561",
+    "phone": "+420 724 101 561",
     "tourism": "alpine_hut",
     "website": "http://www.chatakrakonos.eu/"
   }
@@ -1525,7 +1556,7 @@
     "internet_access": "wlan",
     "internet_access:fee": "no",
     "name": "Bouda Na Lučinách",
-    "phone": "+420 (777) 110 966",
+    "phone": "+420 777 110 966",
     "smoking": "no",
     "source": "cuzk:km",
     "tourism": "alpine_hut",
