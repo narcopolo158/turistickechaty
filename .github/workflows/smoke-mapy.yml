@@ -1,0 +1,38 @@
+# Smoke test Mapy.com API (F0-07) — sandbox denních sessions na api.mapy.com
+# nedosáhne (proxy), GitHub Actions ano. Ověřuje mapset „outdoor": tvar URL
+# tiles.json, dostupnost dlaždice a vypíše atribuci (povinná, načítá se za běhu).
+# Klíč jde hlavičkou X-Mapy-Api-Key (secret MAPY_API_KEY) — nikdy do URL/logu.
+name: 'Smoke: Mapy.com API'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  tiles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: tiles.json mapsetu outdoor (atribuce, zoomy, šablona dlaždic)
+        env:
+          MAPY_API_KEY: ${{ secrets.MAPY_API_KEY }}
+        run: |
+          set -euo pipefail
+          code=$(curl -s -o tiles.json -w '%{http_code}' \
+            -H "X-Mapy-Api-Key: ${MAPY_API_KEY}" \
+            'https://api.mapy.com/v1/maptiles/outdoor/tiles.json')
+          echo "HTTP ${code}"
+          test "${code}" = "200"
+          echo '--- klíčová pole tiles.json (šablonu dlaždic bez apikey parametru) ---'
+          jq '{tilejson, name, attribution, minzoom, maxzoom, tiles: (.tiles // [] | map(sub("(\\?|&)apikey=[^&]*"; "")))}' tiles.json
+
+      - name: vzorová dlaždice (z=13 Luční bouda) vrací obrázek
+        env:
+          MAPY_API_KEY: ${{ secrets.MAPY_API_KEY }}
+        run: |
+          set -euo pipefail
+          # z/x/y pro lat 50.7345, lng 15.6966 (Luční bouda), z=13: x=4453, y=2752
+          code=$(curl -s -o dlazdice.png -w '%{http_code}' \
+            -H "X-Mapy-Api-Key: ${MAPY_API_KEY}" \
+            'https://api.mapy.com/v1/maptiles/outdoor/256/13/4453/2752')
+          echo "HTTP ${code}"
+          test "${code}" = "200"
+          file dlazdice.png | tee /dev/stderr | grep -qiE 'image|png|jpeg'
