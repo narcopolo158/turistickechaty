@@ -76,6 +76,7 @@ overeniProvoz:
 # DOPLNIT po potvrzení od Michala: znaceni (cervena|modra|zelena|zluta), obtiznost (snadna|stredni|narocna).
 trasy:
   - vychoziBod: Špindlerův Mlýn
+    obtiznost: stredni # redakční hodnocení dle délky a převýšení
     casMin: 195 # orientační výpočet DIN 33466
     prevyseni: 699 # stoupání dle modelu (klesání 24 m)
     delkaKm: 6.8
@@ -92,6 +93,7 @@ trasy:
       [5.03, 1410], [5.16, 1408], [5.45, 1412], [6.04, 1415], [6.28, 1421], [6.78, 1412]
     ]
   - vychoziBod: Pec pod Sněžkou
+    obtiznost: stredni # redakční hodnocení dle délky a převýšení
     casMin: 220 # orientační výpočet DIN 33466
     prevyseni: 742 # stoupání dle modelu (klesání 108 m)
     delkaKm: 8.0
