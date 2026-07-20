@@ -15,6 +15,7 @@ import {
   ZEME_DOTAZU,
   chataZElementu,
   nactiExport,
+  nactiVyrazene,
   osmUrl,
   overpassDotaz,
   porovnejSRucnim,
@@ -241,6 +242,44 @@ describe('zapisKandidaty', () => {
     expect(znovu.zapsano).toHaveLength(0)
     expect(znovu.jizKandidat.map((k) => k.slug)).toEqual(['nova-bouda', 'nova-bouda-3', 'schronisko-odrodzenie'])
     expect(readFileSync(join(kandidati, 'nova-bouda.yaml'), 'utf8')).toBe(obsahPred)
+  })
+
+  it('vyřazené OSM objekty (redakční seznam) se nezakládají ani po smazání souboru — jdou do reportu', () => {
+    const cz = (el: OsmElement): ExportPolozka => ({ el, zeme: 'cz', checked: CHECKED })
+    const polozky = [
+      cz(node(10, { tourism: 'alpine_hut', name: 'Poctivá bouda' })),
+      cz(node(11, { tourism: 'alpine_hut', name: 'Duplicitní bouda' })),
+    ]
+    const vyrazene = new Map([['https://www.openstreetmap.org/node/11', 'duplicita — sloučeno']])
+
+    const report = zapisKandidaty(polozky, kandidati, rucni, vyrazene)
+    expect(report.zapsano.map((z) => z.slug)).toEqual(['poctiva-bouda'])
+    expect(report.vyrazeno).toEqual([{ url: 'https://www.openstreetmap.org/node/11', duvod: 'duplicita — sloučeno' }])
+    expect(readdirSync(kandidati).sort()).toEqual(['poctiva-bouda.yaml']) // duplicitní se nezaložila
+  })
+
+  it('nactiVyrazene čte seznam z YAML (klíč = OSM URL) a bez souboru vrací prázdnou mapu', () => {
+    mkdirSync(tmp, { recursive: true }) // afterEach předchozího testu tmp smazal
+    const soubor = join(tmp, '_vyrazeno.yaml')
+    writeFileSync(
+      soubor,
+      'vyrazeno:\n  - osm: https://www.openstreetmap.org/node/656462770\n    slug: chata-mamut-656462770\n    duvod: >-\n      Duplicita v OSM — sloučeno.\n    rozhodl: Michal\n    checked: 2026-07-20\n',
+      'utf8',
+    )
+    const mapa = nactiVyrazene(soubor)
+    expect(mapa.size).toBe(1)
+    expect(mapa.get('https://www.openstreetmap.org/node/656462770')).toContain('Duplicita')
+    expect(nactiVyrazene(join(tmp, 'neexistuje.yaml')).size).toBe(0)
+  })
+
+  it('ostrý seznam data/kandidati/_vyrazeno.yaml je načtitelný a kryje smazané/přesunuté kandidáty', () => {
+    const mapa = nactiVyrazene()
+    expect(mapa.size).toBeGreaterThanOrEqual(6)
+    // duplicity (soubory smazány z krkonose/)
+    expect(mapa.get('https://www.openstreetmap.org/node/656462770')).toContain('chata-mamut')
+    expect(mapa.get('https://www.openstreetmap.org/node/656504528')).toContain('lyzarska-bouda')
+    // mimo pohoří (soubory přesunuty do jiných oblastí)
+    expect(mapa.get('https://www.openstreetmap.org/way/30778232')).toContain('Jizer')
   })
 })
 

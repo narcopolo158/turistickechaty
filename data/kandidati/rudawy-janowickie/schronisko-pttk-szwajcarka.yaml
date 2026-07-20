@@ -7,7 +7,7 @@
 nazev: Schronisko PTTK Szwajcarka
 slug: schronisko-pttk-szwajcarka
 zeme: pl
-oblast: krkonose
+oblast: rudawy-janowickie
 typ: obsluhovana
 lat: 50.8632299
 lng: 15.872538
@@ -48,3 +48,10 @@ interniPoznamky: >-
   (pttk.pl/accommodations/schronisko-pttk-szwajcarka/, pttk.jgora.pl). NÁVRH
   REDAKCI: do oblasti Krkonoše NEzařazovat — kandidát pro případnou budoucí
   oblast Rudawy Janowickie.
+
+  ROZHODNUTÍ REDAKCE (Michal, chat 20. 7. 2026): objekt leží mimo Krkonoše —
+  přesunut do kandidátní oblasti Rudawy Janowickie / Góry Sokole, adresář
+  data/kandidati/rudawy-janowickie/ (pole oblast upraveno; na web oblast
+  půjde, až bude mít pilotní obsah). OSM objekt zapsán do
+  data/kandidati/_vyrazeno.yaml, aby ho další export Krkonoš znovu nezaložil v
+  krkonose/.

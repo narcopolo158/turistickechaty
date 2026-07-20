@@ -52,7 +52,27 @@ export const VYCHOZI_API_INSTANCE = [
 ]
 const KANDIDATI_ADRESAR = join(process.cwd(), 'data', 'kandidati', 'krkonose')
 const RUCNI_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
+const VYRAZENO_SOUBOR = join(process.cwd(), 'data', 'kandidati', '_vyrazeno.yaml')
 const exportJson = (zeme: Zeme) => join(KANDIDATI_ADRESAR, `_overpass-export-${zeme}.json`)
+
+/**
+ * Vyřazené OSM objekty (redakční rozhodnutí v `data/kandidati/_vyrazeno.yaml`):
+ * duplicity v OSM a objekty mimo Krkonoše přesunuté do jiných oblastí. Bez
+ * tohoto seznamu by je další běh exportu znovu založil v krkonose/ — objekty
+ * v OSM dál existují a bbox je dál chytá. Klíč = URL objektu v OSM (stabilní
+ * identita nezávislá na slugu). Chybějící soubor = prázdný seznam.
+ */
+export const nactiVyrazene = (soubor: string = VYRAZENO_SOUBOR): Map<string, string> => {
+  if (!existsSync(soubor)) return new Map()
+  const data = parse(readFileSync(soubor, 'utf8')) as {
+    vyrazeno?: { osm?: string; duvod?: string }[]
+  } | null
+  const mapa = new Map<string, string>()
+  for (const z of data?.vyrazeno ?? []) {
+    if (z.osm) mapa.set(z.osm, z.duvod ?? 'bez udaného důvodu')
+  }
+  return mapa
+}
 
 /**
  * Krkonoše bereme celé — přes státní hranici (rozhodnutí Michala 20. 7.;
@@ -320,6 +340,7 @@ export type Report = {
   jizKandidat: { slug: string; url: string }[]
   rucni: Porovnani[]
   preskoceno: Preskoceni[]
+  vyrazeno: { url: string; duvod: string }[]
 }
 
 /** Element s metadaty svého exportu (země dle area v dotazu, checked dle stavu dat). */
@@ -337,8 +358,9 @@ export const zapisKandidaty = (
   polozky: ExportPolozka[],
   kandidatiAdresar: string,
   rucniAdresar: string,
+  vyrazene: Map<string, string> = new Map(),
 ): Report => {
-  const report: Report = { zapsano: [], jizKandidat: [], rucni: [], preskoceno: [] }
+  const report: Report = { zapsano: [], jizKandidat: [], rucni: [], preskoceno: [], vyrazeno: [] }
   const slugyBehu = new Set<string>()
   mkdirSync(kandidatiAdresar, { recursive: true })
 
@@ -348,6 +370,12 @@ export const zapisKandidaty = (
   )
 
   for (const { el, zeme, checked } of serazene) {
+    // Redakčně vyřazené objekty (duplicity, mimo pohoří) se znovu nezakládají.
+    const duvodVyrazeni = vyrazene.get(osmUrl(el))
+    if (duvodVyrazeni !== undefined) {
+      report.vyrazeno.push({ url: osmUrl(el), duvod: duvodVyrazeni })
+      continue
+    }
     const vysledek = chataZElementu(el, checked, zeme)
     if ('duvod' in vysledek) {
       report.preskoceno.push(vysledek)
@@ -416,7 +444,7 @@ const main = async () => {
     throw new Error('--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.')
   }
 
-  const report = zapisKandidaty(polozky, KANDIDATI_ADRESAR, RUCNI_ADRESAR)
+  const report = zapisKandidaty(polozky, KANDIDATI_ADRESAR, RUCNI_ADRESAR, nactiVyrazene())
 
   console.log(`\n## DATA-01 report (stav OSM dat: ${stavy.join(', ')})`)
   console.log(`\nNoví kandidáti: ${report.zapsano.length}`)
@@ -434,6 +462,8 @@ const main = async () => {
   }
   console.log(`\nPřeskočeno — neúplné v OSM (k ruční kontrole): ${report.preskoceno.length}`)
   for (const p of report.preskoceno) console.log(`- ${p.url} (${p.duvod === 'bez-nazvu' ? 'chybí name' : 'chybí souřadnice'})`)
+  console.log(`\nVyřazeno redakcí (data/kandidati/_vyrazeno.yaml — nezakládá se): ${report.vyrazeno.length}`)
+  for (const v of report.vyrazeno) console.log(`- ${v.url} — ${v.duvod}`)
 }
 
 // Spuštěno přímo (tsx) → CLI; import z testů main nespouští.

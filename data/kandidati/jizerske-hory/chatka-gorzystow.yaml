@@ -7,7 +7,7 @@
 nazev: Chatka Górzystów
 slug: chatka-gorzystow
 zeme: pl
-oblast: krkonose
+oblast: jizerske-hory
 typ: obsluhovana
 lat: 50.8546685
 lng: 15.3608086
@@ -46,3 +46,10 @@ interniPoznamky: >-
   polská strana Jizerských hor, do bboxu Krkonoš spadla přesahem. NÁVRH
   REDAKCI: do Krkonoš NEzařazovat — kandidát pro budoucí oblast Jizerské hory
   (obdoba principu „přeshraniční pohoří vcelku“).
+
+  ROZHODNUTÍ REDAKCE (Michal, chat 20. 7. 2026): objekt leží mimo Krkonoše —
+  přesunut do kandidátní oblasti Jizerské hory (polská strana, Hala Izerska),
+  adresář data/kandidati/jizerske-hory/ (pole oblast upraveno; na web oblast
+  půjde, až bude mít pilotní obsah). OSM objekt zapsán do
+  data/kandidati/_vyrazeno.yaml, aby ho další export Krkonoš znovu nezaložil v
+  krkonose/.

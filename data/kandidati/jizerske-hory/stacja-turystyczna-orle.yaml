@@ -7,7 +7,7 @@
 nazev: Stacja Turystyczna Orle
 slug: stacja-turystyczna-orle
 zeme: pl
-oblast: krkonose
+oblast: jizerske-hory
 typ: obsluhovana
 lat: 50.8150688
 lng: 15.3831562
@@ -43,3 +43,10 @@ interniPoznamky: >-
   do bboxu Krkonoš spadla přesahem. Vlastní web z OSM orleturystyczne.pl v
   titulku: „Stacja Turystyczna ORLE — serce Gór Izerskich“. NÁVRH REDAKCI: do
   Krkonoš NEzařazovat — kandidát pro budoucí oblast Jizerské hory.
+
+  ROZHODNUTÍ REDAKCE (Michal, chat 20. 7. 2026): objekt leží mimo Krkonoše —
+  přesunut do kandidátní oblasti Jizerské hory (polská strana, u Jakuszyc),
+  adresář data/kandidati/jizerske-hory/ (pole oblast upraveno; na web oblast
+  půjde, až bude mít pilotní obsah). OSM objekt zapsán do
+  data/kandidati/_vyrazeno.yaml, aby ho další export Krkonoš znovu nezaložil v
+  krkonose/.

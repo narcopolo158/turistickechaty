@@ -1,5 +1,18 @@
 # DATA-03 — přehled křížového ověření kandidátů Krkonoš
 
+## ⚡ Rozhodnutí Michala (chat, 20. 7. 2026 — zapracováno session 26)
+
+1. **✅ 18 potvrzených: POVÝŠIT en bloc** — povyšování běží od příštích sessions (doložené údaje se zdroji + hero fotky z DATA-02).
+2. **⚖️ hraniční hotely (Špindlerovka, Tetřevky, Vebrovy): VŠECHNY ZAŘADIT** — v profilu poctivě přiznat charakter horského hotelu.
+3. **🏠 penziony/pronájmy: NEZAŘAZOVAT** („penziony bych nezařazoval, horské hotely ano") — kandidáti zůstávají v repu jako doklad s rozhodnutím v interniPoznamky; u Javorky a Studenova výhrada možné revize po ruční kontrole.
+4. **🗺️ mimo Krkonoše: založeny kandidátní oblasti** — `data/kandidati/jizerske-hory/` (Chatka Górzystów, Orle, Pešákovna) a `data/kandidati/rudawy-janowickie/` (Szwajcarka); pole `oblast` upraveno.
+5. **👥 duplicity: SLOUČENO** (název i GPS se shodovaly) — dvojčata `chata-mamut-656462770` a `lyzarska-bouda-656504528` smazána; nový vyřazovací seznam `data/kandidati/_vyrazeno.yaml` zajišťuje, že je (ani přesunuté objekty) další OSM export znovu nezaloží.
+6. **❓ k ruční kontrole: čeká na Michala** (podívá se na weby z domácí sítě).
+
+Stav kandidátů po rozhodnutích: **70 v krkonose/** (76 − 2 duplicity − 4 přesunuté), 3 v jizerske-hory/, 1 v rudawy-janowickie/. Fronta povyšování: 18 ✅ + 3 ⚖️ = **21 profilů**.
+
+---
+
 Stav k 20. 7. 2026, sessions 22–25. Pokrytí: **76/76 kandidátů** má zápis v `interniPoznamky` (source + checked, vše `verified: false`). Tento dokument je souhrn pro rozhodování — plné nálezy s URL jsou v YAML jednotlivých kandidátů v `data/kandidati/krkonose/`.
 
 **Metody podle dávek:** s22 (12 CZ) — obsah webů přes WebFetch + přehled ubytování treking.cz; s23 (18 PL) — jen WebSearch (titulky a domény výsledků: pttk.pl, korona-gor-polski.pl, pl.wikipedia…), obsah stránek neotevřen; s24 (20 CZ) — WebFetch na průchozí weby + checklist treking.cz; s25 (26 CZ) — WebSearch + GPS kontroly. Nic není domyšleno: co je jen z titulků, je tak v zápisu označeno.

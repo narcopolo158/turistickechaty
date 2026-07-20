@@ -32,3 +32,11 @@ interniPoznamky: >-
   pronájmu (roubenkamamut.webnode.cz). NÁVRH REDAKCI: kandidáty sloučit
   (jednoho vyřadit jako duplicitní OSM objekt), charakter = spíš pronájmová
   roubenka — verdikt jako u Konopindy.
+
+  ROZHODNUTÍ REDAKCE (Michal, chat 20. 7. 2026): (1) DUPLICITA SLOUČENA —
+  název i GPS se shodovaly, druhý OSM objekt téže chaty (node/656462770,
+  kandidát chata-mamut-656462770) smazán a zapsán do
+  data/kandidati/_vyrazeno.yaml, aby ho další OSM export znovu nezaložil;
+  tento kandidát (way/140926266) je jediný nositel objektu. (2) NEZAŘAZOVAT —
+  pronájmová roubenka, „penziony bych nezařazoval“; kandidát zůstává jako
+  doklad.

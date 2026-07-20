@@ -7,7 +7,7 @@
 nazev: Chata Pešákovna
 slug: chata-pesakovna
 zeme: cz
-oblast: krkonose
+oblast: jizerske-hory
 typ: obsluhovana
 lat: 50.8249909
 lng: 15.3365597
@@ -33,3 +33,10 @@ interniPoznamky: >-
   DATA-01). NÁVRH REDAKCI: do Krkonoš NEzařazovat — kandidát pro budoucí
   oblast Jizerské hory (spolu s PL Chatka Górzystów a Stacja Turystyczna
   Orle).
+
+  ROZHODNUTÍ REDAKCE (Michal, chat 20. 7. 2026): objekt leží mimo Krkonoše —
+  přesunut do kandidátní oblasti Jizerské hory (česká strana, osada Jizerka),
+  adresář data/kandidati/jizerske-hory/ (pole oblast upraveno; na web oblast
+  půjde, až bude mít pilotní obsah). OSM objekt zapsán do
+  data/kandidati/_vyrazeno.yaml, aby ho další export Krkonoš znovu nezaložil v
+  krkonose/.

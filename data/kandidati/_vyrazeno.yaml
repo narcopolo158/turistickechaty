@@ -1,0 +1,51 @@
+# Vyřazené OSM objekty — DATA-01 je při dalších bězích znovu nezaloží.
+# Identita objektu = URL v OSM (stabilní i při přejmenování/přesunu souborů).
+# Každý záznam: proč, kdo rozhodl, kdy. Soubory kandidátů se buď mažou
+# (duplicity), nebo přesouvají do jiné oblasti (mimo Krkonoše) — tento seznam
+# zajišťuje, že se do data/kandidati/krkonose/ nevrátí.
+
+vyrazeno:
+  - osm: https://www.openstreetmap.org/node/656462770
+    slug: chata-mamut-656462770
+    duvod: >-
+      Duplicita v OSM — týž objekt jako kandidát chata-mamut
+      (https://www.openstreetmap.org/way/140926266): shodný název „Chata
+      Mamut" i GPS (~1 m), Dolní Malá Úpa. Sloučeno do chata-mamut.
+    rozhodl: Michal (chat 20. 7. 2026 — „jestli je to duplicita podle názvu i podle GPS, pak sloučit")
+    checked: 2026-07-20
+  - osm: https://www.openstreetmap.org/node/656504528
+    slug: lyzarska-bouda-656504528
+    duvod: >-
+      Duplicita v OSM — týž objekt jako kandidát lyzarska-bouda
+      (https://www.openstreetmap.org/way/218896623): shodný název „Lyžařská
+      bouda" i GPS (pár metrů), Lučiny u Pece. Sloučeno do lyzarska-bouda.
+    rozhodl: Michal (chat 20. 7. 2026 — „jestli je to duplicita podle názvu i podle GPS, pak sloučit")
+    checked: 2026-07-20
+  - osm: https://www.openstreetmap.org/way/278729479
+    slug: schronisko-pttk-szwajcarka
+    duvod: >-
+      Mimo Krkonoše — Rudawy Janowickie / Góry Sokole (DATA-03, s23). Přesunut
+      do data/kandidati/rudawy-janowickie/.
+    rozhodl: Michal (chat 20. 7. 2026 — mimo-pohoří kandidáty přesunout / založit oblasti)
+    checked: 2026-07-20
+  - osm: https://www.openstreetmap.org/way/122672323
+    slug: chatka-gorzystow
+    duvod: >-
+      Mimo Krkonoše — Góry Izerskie, Hala Izerska (DATA-03, s23). Přesunut do
+      data/kandidati/jizerske-hory/.
+    rozhodl: Michal (chat 20. 7. 2026 — „nebo rovnou založ Jizerky")
+    checked: 2026-07-20
+  - osm: https://www.openstreetmap.org/way/98214072
+    slug: stacja-turystyczna-orle
+    duvod: >-
+      Mimo Krkonoše — Góry Izerskie, u Jakuszyc (DATA-03, s23). Přesunut do
+      data/kandidati/jizerske-hory/.
+    rozhodl: Michal (chat 20. 7. 2026 — „nebo rovnou založ Jizerky")
+    checked: 2026-07-20
+  - osm: https://www.openstreetmap.org/way/30778232
+    slug: chata-pesakovna
+    duvod: >-
+      Mimo Krkonoše — osada Jizerka, Jizerské hory (DATA-03, s25). Přesunut do
+      data/kandidati/jizerske-hory/.
+    rozhodl: Michal (chat 20. 7. 2026 — „nebo rovnou založ Jizerky")
+    checked: 2026-07-20
