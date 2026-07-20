@@ -5,11 +5,12 @@
  * a `data/chaty/<pohori>/<slug>.yaml` (CLAUDE.md — každý údaj se
  * source/verified/checked). Skript je idempotentní upsert dle slugu:
  * opakované spuštění jen přepíše hodnoty z YAML, nic neduplikuje.
- * Pole, která YAML nezná (fotky, razítka — nahrávají se přes admin),
- * nechává být.
+ * Razítka: `data/razitka/<pohori>/<slug>.yaml` + soubor otisku vedle YAML
+ * (blok `otisk` = metadata Fotky, nahraje se přes Payload upload).
+ * Ostatní fotky se zatím nahrávají přes admin — seed je nechává být.
  */
 import { readdirSync, readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { dirname, join } from 'node:path'
 
 import { getPayload, type RequiredDataFromCollectionSlug } from 'payload'
 import { parse } from 'yaml'
@@ -110,6 +111,46 @@ for (const soubor of yamlSoubory(join(DATA, 'chaty'))) {
 
   const vysledek = await upsert('chaty', data)
   payload.logger.info(`chata ${data.slug}: ${vysledek.vytvoreno ? 'vytvořena' : 'aktualizována'}`)
+}
+
+// ── 3. Razítka (otisk = upload do Fotek, idempotentně dle filename) ─────────
+for (const soubor of yamlSoubory(join(DATA, 'razitka'))) {
+  const { chata: chataSlug, otisk, ...data } = parse(readFileSync(soubor, 'utf8'))
+
+  const chata = await payload.find({ collection: 'chaty', where: { slug: { equals: chataSlug } }, limit: 1 })
+  if (!chata.docs[0]) throw new Error(`${soubor}: chata „${chataSlug}" neexistuje — razítko potřebuje profil chaty`)
+  const chataId = chata.docs[0].id
+
+  let otiskId: number | string | undefined
+  if (otisk) {
+    const { soubor: nazevSouboru, ...fotka } = otisk
+    const fotkaData = { ...fotka, chata: chataId } as unknown as RequiredDataFromCollectionSlug<'fotky'>
+    const stavajici = await payload.find({
+      collection: 'fotky',
+      where: { filename: { equals: nazevSouboru } },
+      limit: 1,
+    })
+    otiskId = stavajici.docs[0]
+      ? (await payload.update({ collection: 'fotky', id: stavajici.docs[0].id, data: fotkaData })).id
+      : (await payload.create({ collection: 'fotky', data: fotkaData, filePath: join(dirname(soubor), nazevSouboru) })).id
+  }
+
+  const razitkoData = {
+    ...data,
+    chata: chataId,
+    ...(otiskId != null ? { otisk: otiskId } : {}),
+  } as unknown as RequiredDataFromCollectionSlug<'razitka'>
+  const existujici = await payload.find({
+    collection: 'razitka',
+    where: { and: [{ nazev: { equals: data.nazev } }, { chata: { equals: chataId } }] },
+    limit: 1,
+  })
+  const vysledekRazitka = existujici.docs[0]
+    ? { vytvoreno: false, id: (await payload.update({ collection: 'razitka', id: existujici.docs[0].id, data: razitkoData })).id }
+    : { vytvoreno: true, id: (await payload.create({ collection: 'razitka', data: razitkoData })).id }
+  payload.logger.info(
+    `razítko „${data.nazev}" (${chataSlug}): ${vysledekRazitka.vytvoreno ? 'vytvořeno' : 'aktualizováno'}${otisk ? ' + otisk' : ''}`,
+  )
 }
 
 payload.logger.info('Seed hotov.')

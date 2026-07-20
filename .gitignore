@@ -31,3 +31,6 @@ next-env.d.ts
 *.pem
 .vercel
 .idea/
+
+# nahrané soubory kolekce Fotky (Payload upload)
+/fotky

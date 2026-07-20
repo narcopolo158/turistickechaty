@@ -1,7 +1,7 @@
 import { getPayload } from 'payload'
 import config from '../payload.config'
 
-import type { Chaty as Chata, Oblasti as Oblast, Razitka } from '../payload-types'
+import type { Chaty as Chata, Fotky as Fotka, Oblasti as Oblast, Razitka } from '../payload-types'
 import type { MapovaChata } from '../components/MapaChat'
 import type { RazitkovnikChata } from '../components/RazitkovnikClient'
 
@@ -98,6 +98,34 @@ export const posledniOvereni = (
   return { checked: platne[0]!.checked!, verified: platne.some((b) => b?.verified) }
 }
 
+/**
+ * Payload join (`chata.razitka`) nepopuluje vnořené relace joinovaných
+ * dokumentů ani při vyšší `depth` — `razitko.otisk` tak zůstává jen číselné ID
+ * a skutečný sken by se nikdy nezobrazil (padal by fallback na stylizované
+ * SVG). Otisky proto doplní jeden společný dotaz na Fotky.
+ */
+async function populujOtiskyRazitek(chaty: Chata[]): Promise<void> {
+  const razitka = chaty
+    .flatMap((chata) => chata.razitka?.docs ?? [])
+    .filter((r): r is Razitka => typeof r === 'object')
+  const chybejici = [...new Set(razitka.map((r) => r.otisk).filter((o): o is number => typeof o === 'number'))]
+  if (chybejici.length === 0) return
+  const payload = await getPayload({ config })
+  const fotky = await payload.find({
+    collection: 'fotky',
+    where: { id: { in: chybejici } },
+    depth: 0,
+    limit: chybejici.length,
+    overrideAccess: false,
+  })
+  const dleId = new Map<number, Fotka>(fotky.docs.map((f) => [f.id, f]))
+  for (const razitko of razitka) {
+    if (typeof razitko.otisk === 'number' && dleId.has(razitko.otisk)) {
+      razitko.otisk = dleId.get(razitko.otisk)!
+    }
+  }
+}
+
 /** Publikovaná chata dle slugu, s oblastí, fotkami a razítky (join). */
 export async function getChataBySlug(slug: string): Promise<Chata | null> {
   const payload = await getPayload({ config })
@@ -108,6 +136,7 @@ export async function getChataBySlug(slug: string): Promise<Chata | null> {
     limit: 1,
     overrideAccess: false,
   })
+  await populujOtiskyRazitek(res.docs)
   return res.docs[0] ?? null
 }
 
@@ -154,6 +183,7 @@ export async function getChatyProRazitkovnik(): Promise<RazitkovnikChata[]> {
     sort: 'nazev',
     overrideAccess: false,
   })
+  await populujOtiskyRazitek(res.docs)
   return res.docs.map((chata) => {
     const razitka = (chata.razitka?.docs ?? []).filter((r): r is Razitka => typeof r === 'object')
     const razitko = razitka.find((r) => r.stav === 'k-dispozici') ?? razitka[0] ?? null
