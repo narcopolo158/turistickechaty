@@ -120,6 +120,17 @@ describe('RazitkoMoment', () => {
     expect(tlacitko.getAttribute('aria-disabled')).toBe('true')
   })
 
+  it('poctivostní štítek (historický otisk) se ukáže pod padem jen s propem', () => {
+    const { container, rerender } = render(
+      <RazitkoMoment {...lucni} otiskUrl="/media/otisk.png" stitek="historický otisk · cca konec 80. let (odhad)" />,
+    )
+    const stitek = container.querySelector('.pad-stitek')!
+    expect(stitek.textContent).toBe('historický otisk · cca konec 80. let (odhad)')
+    // bez propu štítek není — aktuální razítka žádné označení nedostávají
+    rerender(<RazitkoMoment {...lucni} otiskUrl="/media/otisk.png" />)
+    expect(container.querySelector('.pad-stitek')).toBeNull()
+  })
+
   it('skutečný otisk z DB má přednost před stylizovaným SVG', () => {
     const { container } = render(
       <RazitkoMoment {...lucni} otiskUrl="/media/otisk.png" otiskAlt="Otisk razítka Luční boudy" />,

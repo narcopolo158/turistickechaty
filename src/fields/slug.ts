@@ -1,11 +1,27 @@
 import type { TextField } from 'payload'
 
-/** Převod českého názvu na URL slug: diakritika pryč, mezery na pomlčky. */
+/**
+ * Písmena bez NFD dekompozice (škrtnutá apod.) — normalize je nerozloží,
+ * a bez náhrady by ze slugu vypadla: „Łabski" → „abski". Polské ł je
+ * potřeba už pro Krkonoše (DATA-01 bere obě strany), ß/ø/æ/œ/đ přijdou
+ * vhod pro Alpy a další přeshraniční pohoří.
+ */
+const PREPISY: Record<string, string> = {
+  ł: 'l',
+  ß: 'ss',
+  đ: 'd',
+  ø: 'o',
+  æ: 'ae',
+  œ: 'oe',
+}
+
+/** Převod názvu (čeština, polština…) na URL slug: diakritika pryč, mezery na pomlčky. */
 export const slugify = (value: string): string =>
   value
+    .toLowerCase()
+    .replace(/[łßđøæœ]/g, (znak) => PREPISY[znak] ?? znak)
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
 

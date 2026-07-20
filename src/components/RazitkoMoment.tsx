@@ -25,6 +25,11 @@ type Props = {
   vyska?: number | null
   otiskUrl?: string | null
   otiskAlt?: string | null
+  /**
+   * Poctivostní štítek pod padem (např. „historický otisk · cca konec
+   * 80. let (odhad)") — skládá ho volající jen z doložených údajů razítka.
+   */
+  stitek?: string | null
   /** Doplňkové řádky pod tlačítkem (doloženo, historické varianty…). */
   children?: React.ReactNode
 }
@@ -32,7 +37,7 @@ type Props = {
 /** Prodleva mezi klikem a zápisem do deníku — okamžik dopadu animace (55 % z 550 ms). */
 const DOPAD_MS = 480
 
-export default function RazitkoMoment({ slug, nazev, pohori, vyska, otiskUrl, otiskAlt, children }: Props) {
+export default function RazitkoMoment({ slug, nazev, pohori, vyska, otiskUrl, otiskAlt, stitek, children }: Props) {
   const zaznam = useZaznamDeniku(slug)
   // „dopada" drží třídu .hit od kliku dál — animation forwards nese finální stav,
   // přepnutí na .set by dopad restartovalo/uřízlo
@@ -55,17 +60,24 @@ export default function RazitkoMoment({ slug, nazev, pohori, vyska, otiskUrl, ot
 
   return (
     <div style={{ display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
-      <div className={`pad${padStav}`} data-testid="pad">
-        <span className="hint">
-          SEM DOPADNE
-          <br />
-          RAZÍTKO
-        </span>
-        {otiskUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element -- otisk je malý, bez next/image jako .p-otisk dřív
-          <img src={otiskUrl} alt={otiskAlt ?? `Otisk razítka — ${nazev}`} />
-        ) : (
-          <RazitkoSvg nazev={nazev} pohori={pohori} vyska={vyska} />
+      <div style={{ flex: 'none' }}>
+        <div className={`pad${padStav}`} data-testid="pad">
+          <span className="hint">
+            SEM DOPADNE
+            <br />
+            RAZÍTKO
+          </span>
+          {otiskUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element -- otisk je malý, bez next/image jako .p-otisk dřív
+            <img src={otiskUrl} alt={otiskAlt ?? `Otisk razítka — ${nazev}`} />
+          ) : (
+            <RazitkoSvg nazev={nazev} pohori={pohori} vyska={vyska} />
+          )}
+        </div>
+        {stitek && (
+          <p className="mn pad-stitek" data-testid="pad-stitek">
+            {stitek}
+          </p>
         )}
       </div>
       <div style={{ flex: 1, minWidth: 170 }}>

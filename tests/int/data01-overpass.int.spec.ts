@@ -120,6 +120,16 @@ describe('chataZElementu', () => {
     expect(vysledek.data.oblast).toBe('krkonose') // jedno pohoří, zemi nese chata
   })
 
+  it('polské ł se přepisuje na l — slug neztrácí písmena (nález z průchodu PL kandidátů)', () => {
+    const el = node(110, { tourism: 'alpine_hut', name: 'Schronisko pod Łabskim Szczytem' }, 50.775, 15.55)
+    const vysledek = chataZElementu(el, CHECKED, 'pl')
+    if (!('data' in vysledek)) throw new Error('čekal jsem data')
+    expect(vysledek.data.slug).toBe('schronisko-pod-labskim-szczytem')
+    const okraj = chataZElementu(node(111, { tourism: 'alpine_hut', name: 'Schronisko PTTK na Przełęczy Okraj' }, 50.78, 15.86), CHECKED, 'pl')
+    if (!('data' in okraj)) throw new Error('čekal jsem data')
+    expect(okraj.data.slug).toBe('schronisko-pttk-na-przeleczy-okraj')
+  })
+
   it('wilderness_hut → útulna; nestandardní hut typ nedostane (určí redakce)', () => {
     const utulna = chataZElementu(node(103, { tourism: 'wilderness_hut', name: 'Útulna Pod Lesem', ele: 'cca 900?' }), CHECKED)
     if (!('data' in utulna)) throw new Error('čekal jsem data')

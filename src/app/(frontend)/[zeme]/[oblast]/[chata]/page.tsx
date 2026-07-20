@@ -299,6 +299,12 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
                 vyska={chata.vyska}
                 otiskUrl={otisk?.url}
                 otiskAlt={otisk?.alt}
+                stitek={
+                  // poctivost v UI: historický otisk nesmí dopadat bez označení
+                  razitko.stav === 'historicke'
+                    ? `historický otisk${razitko.platnostOd ? ` · ${razitko.platnostOd}` : ''}`
+                    : undefined
+                }
               >
                 <div style={{ fontSize: 12.5 }}>
                   {razitko.kdeSeRazitkuje && <p style={{ marginTop: 9 }}>Razítkuje se: {razitko.kdeSeRazitkuje}</p>}

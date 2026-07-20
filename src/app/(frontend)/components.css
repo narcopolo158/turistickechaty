@@ -129,6 +129,8 @@ body.dark .mpre { background: #1b242e; color: #e7ecf1; }
 .pad.hit .hint, .pad.set .hint { display: none; }
 /* „set" = otisk už ve sbírce při načtení stránky — finální stav bez opakování dopadu */
 .pad.set svg, .pad.set img { opacity: 1; transform: rotate(-7deg); }
+/* poctivostní štítek pod padem (historický otisk apod.) — jen doložené údaje */
+.pad-stitek { width: 150px; margin: 6px 0 0; font-size: 9px; color: var(--muted); text-align: center; line-height: 1.5; }
 @keyframes stamp {
   0% { opacity: 0; transform: scale(2.1) rotate(2deg); filter: blur(2px); }
   55% { opacity: 1; transform: scale(.94) rotate(-8.5deg); filter: blur(0); }
