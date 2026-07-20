@@ -259,9 +259,25 @@ describe('tvar dotazů a stahniJson (mock API)', () => {
     expect((init as RequestInit).headers).toMatchObject({ 'User-Agent': expect.stringContaining('turistickechaty.cz') })
 
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('busy', { status: 429 })))
-    await expect(stahniJson(API_COMMONS)).rejects.toThrow(/429.*zpomalit/)
+    await expect(stahniJson(API_COMMONS, { pokusy: 1 })).rejects.toThrow(/429.*zpomalit/)
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('<html>err</html>', { status: 200 })))
     await expect(stahniJson(API_COMMONS)).rejects.toThrow(/validní JSON/)
+    vi.unstubAllGlobals()
+  })
+
+  it('na 429/5xx jednou počká a zkusí to znovu (rate limity sdílených IP runnerů)', async () => {
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(new Response('busy', { status: 429 }))
+      .mockResolvedValueOnce(new Response('{"query":{"pages":[]}}', { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+    const vysledek = await stahniJson(API_COMMONS, { pauzaMs: 0 })
+    expect(vysledek).toEqual({ query: { pages: [] } })
+    expect(fetchMock).toHaveBeenCalledTimes(2)
+
+    // vyčerpané pokusy = tvrdá chyba
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('down', { status: 503 })))
+    await expect(stahniJson(API_COMMONS, { pauzaMs: 0 })).rejects.toThrow(/503/)
     vi.unstubAllGlobals()
   })
 })

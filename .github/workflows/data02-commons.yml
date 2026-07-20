@@ -42,8 +42,13 @@ jobs:
       - run: npm ci
 
       - name: Dotazy na Commons API + licenční síto
+        # Explicitní shell: bash zapíná pipefail — pád skriptu se nesmí
+        # ztratit v pipe přes tee (lekce z prvního běhu DATA-01).
+        shell: bash
+        env:
+          RADIUS_INPUT: ${{ inputs.radius }}
         run: |
-          npx tsx scripts/data02-commons-fotky.ts --radius '${{ inputs.radius }}' | tee report.txt
+          npx tsx scripts/data02-commons-fotky.ts --radius "${RADIUS_INPUT:-300}" | tee report.txt
           echo '## DATA-02 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 

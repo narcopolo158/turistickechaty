@@ -144,9 +144,23 @@ export const urlKategorie = (api: string, chata: ChataProDotaz): string => {
   return `${api}?${p.toString()}`
 }
 
-export const stahniJson = async (url: string): Promise<unknown> => {
+/**
+ * GET s identifikačním User-Agentem. Na 429/5xx jednou počká a zkusí to
+ * znovu — lekce z prvního ostrého běhu DATA-01: sdílené IP Actions runnerů
+ * narážejí na rate limity častěji než lokální stroj.
+ */
+export const stahniJson = async (
+  url: string,
+  moznosti: { pokusy?: number; pauzaMs?: number } = {},
+): Promise<unknown> => {
+  const { pokusy = 2, pauzaMs = 30_000 } = moznosti
   const odpoved = await fetch(url, { headers: { 'User-Agent': USER_AGENT } })
   if (!odpoved.ok) {
+    if ((odpoved.status === 429 || odpoved.status >= 500) && pokusy > 1) {
+      console.log(`HTTP ${odpoved.status} — pauza ${Math.round(pauzaMs / 1000)} s a jeden nový pokus…`)
+      await new Promise((done) => setTimeout(done, pauzaMs))
+      return stahniJson(url, { pokusy: pokusy - 1, pauzaMs })
+    }
     const napoveda = odpoved.status === 429 ? ' (příliš dotazů — Commons žádá zpomalit)' : ''
     throw new Error(`Commons API vrátilo HTTP ${odpoved.status}${napoveda}.`)
   }
