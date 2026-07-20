@@ -7,7 +7,11 @@
  * opakované spuštění jen přepíše hodnoty z YAML, nic neduplikuje.
  * Razítka: `data/razitka/<pohori>/<slug>.yaml` + soubor otisku vedle YAML
  * (blok `otisk` = metadata Fotky, nahraje se přes Payload upload).
- * Ostatní fotky se zatím nahrávají přes admin — seed je nechává být.
+ * Fotky chat: blok `fotky:` v YAML chaty (redakční výběr z kandidátů DATA-02) —
+ * seed soubor stáhne z `stahnoutZ` (Wikimedia Commons) a nahraje do kolekce
+ * Fotky s metadaty (autor, licence, zdrojUrl); idempotentně dle `zdrojUrl`.
+ * Stažení potřebuje síť na upload.wikimedia.org — běží lokálně / v Actions,
+ * ze sandboxu denních sessions to neprojde (proxy).
  */
 import { readdirSync, readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -16,6 +20,7 @@ import { getPayload, type RequiredDataFromCollectionSlug } from 'payload'
 import { parse } from 'yaml'
 
 import config from '../src/payload.config'
+import { mimeTypSouboru, nazevSouboruZUrl } from './seed-fotky-lib'
 
 const DATA = join(process.cwd(), 'data')
 const payload = await getPayload({ config })
@@ -91,9 +96,13 @@ for (const soubor of yamlSoubory(join(DATA, 'oblasti'))) {
 }
 
 // ── 2. Chaty ────────────────────────────────────────────────────────────────
+type FotkaYaml = { stahnoutZ: string } & Record<string, unknown>
+// `fotky` je v kolekci Chaty join pole (jen ke čtení) — z YAML se vyjme
+// a zpracuje zvlášť v sekci 2b, do upsertu chaty nesmí.
+const fotkyChat = new Map<string, { fotky: FotkaYaml[]; chataId: number | string }>()
 for (const soubor of yamlSoubory(join(DATA, 'chaty'))) {
   const yaml = parse(readFileSync(soubor, 'utf8'))
-  const { oblast, text, ...data } = yaml
+  const { oblast, text, fotky, ...data } = yaml
 
   if (oblast) {
     if (!oblastId.has(oblast)) {
@@ -111,6 +120,52 @@ for (const soubor of yamlSoubory(join(DATA, 'chaty'))) {
 
   const vysledek = await upsert('chaty', data)
   payload.logger.info(`chata ${data.slug}: ${vysledek.vytvoreno ? 'vytvořena' : 'aktualizována'}`)
+  if (Array.isArray(fotky) && fotky.length > 0) fotkyChat.set(data.slug, { fotky, chataId: vysledek.id })
+}
+
+// ── 2b. Fotky chat (stažení z Commons + upload, idempotentně dle zdrojUrl) ──
+// SEED_BEZ_FOTEK=1 sekci vědomě přeskočí — pro prostředí bez sítě na
+// upload.wikimedia.org (sandbox denních sessions); web pak hero nezobrazí.
+if (process.env.SEED_BEZ_FOTEK === '1' && fotkyChat.size > 0) {
+  payload.logger.warn(`SEED_BEZ_FOTEK=1 — přeskakuji stahování fotek ${fotkyChat.size} chat (hero zůstane bez snímku)`)
+  fotkyChat.clear()
+}
+for (const [slug, { fotky, chataId }] of fotkyChat) {
+  for (const { stahnoutZ, ...metadata } of fotky) {
+    if (!stahnoutZ || !metadata.zdrojUrl) throw new Error(`chata ${slug}: fotka potřebuje stahnoutZ i zdrojUrl (identita a zdroj)`)
+    const fotkaData = { ...metadata, chata: chataId } as unknown as RequiredDataFromCollectionSlug<'fotky'>
+    const stavajici = await payload.find({
+      collection: 'fotky',
+      where: { zdrojUrl: { equals: metadata.zdrojUrl } },
+      limit: 1,
+    })
+    if (stavajici.docs[0]) {
+      // Soubor už v DB je — jen se srovnají metadata, nic se nestahuje.
+      await payload.update({ collection: 'fotky', id: stavajici.docs[0].id, data: fotkaData })
+      payload.logger.info(`fotka (${slug}): aktualizována metadata — ${metadata.zdrojUrl}`)
+      continue
+    }
+    const nazev = nazevSouboruZUrl(stahnoutZ)
+    let odpoved: Response
+    try {
+      odpoved = await fetch(stahnoutZ, {
+        // Pozor: HTTP hlavicky jsou ASCII — zadna diakritika (fetch by spadl).
+        headers: { 'User-Agent': 'turistickechaty.cz seed (kontakt: viz repozitar / GitHub)' },
+      })
+    } catch (chyba) {
+      throw new Error(
+        `chata ${slug}: stažení fotky selhalo (${stahnoutZ}) — seed potřebuje síť na upload.wikimedia.org, pusť ho lokálně nebo v Actions. Původní chyba: ${chyba}`,
+      )
+    }
+    if (!odpoved.ok) throw new Error(`chata ${slug}: stažení fotky vrátilo HTTP ${odpoved.status} (${stahnoutZ})`)
+    const data = Buffer.from(await odpoved.arrayBuffer())
+    await payload.create({
+      collection: 'fotky',
+      data: fotkaData,
+      file: { data, name: nazev, mimetype: mimeTypSouboru(nazev), size: data.byteLength },
+    })
+    payload.logger.info(`fotka (${slug}): stažena a nahrána — ${nazev} (${Math.round(data.byteLength / 1024)} kB)`)
+  }
 }
 
 // ── 3. Razítka (otisk = upload do Fotek, idempotentně dle filename) ─────────

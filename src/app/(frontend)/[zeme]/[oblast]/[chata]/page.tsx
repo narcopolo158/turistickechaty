@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { RichText } from '@payloadcms/richtext-lexical/react'
 
+import { FotoAtribuce } from '@/components/FotoAtribuce'
 import RazitkoMoment from '@/components/RazitkoMoment'
 import TiskButton from '@/components/TiskButton'
 import VyskovyProfil, { type BodProfilu } from '@/components/VyskovyProfil'
@@ -211,6 +212,7 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
         ) : (
           <HeroPlaceholder />
         )}
+        {heroFoto && <FotoAtribuce fotka={heroFoto} />}
         <div className="tx">
           <div className="cr">
             {[chata.typ ? TYP_NAZEV[chata.typ] : null, oblast?.nazev].filter(Boolean).join(' · ')}

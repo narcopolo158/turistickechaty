@@ -166,6 +166,27 @@ text:
     Auta končí v Peci pod Sněžkou na terminálu P1; posledních zhruba
     8,5 km s převýšením 750 m obstará smluvní přeprava hotelu, pěšky
     vedou na boudu značené hřebenové cesty.
+# ── Fotky (redakční výběr z kandidátů DATA-02, Wikimedia Commons) ──────────
+# Vybráno session 21 z data/kandidati/fotky/krkonose/lucni-bouda.yaml (32 kandidátů):
+# jediná fotka s popisem přímo boudy, geotag 41 m od chaty, v Category:Luční bouda,
+# největší rozlišení mezi záběry budovy (4048×2024). Licence CC BY-SA 4.0 doložena
+# ze surového exportu Commons API (_commons-export.json, extmetadata, bez Restrictions).
+# Seed fotku stáhne z `stahnoutZ` a nahraje do kolekce Fotky (viz README).
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/1/1e/Krkono%C5%A1e%2C_Lu%C4%8Dn%C3%AD_bouda.jpg
+    alt: Luční bouda — pohled na budovu na Bílé louce v Krkonoších
+    typ: soucasna # hero záběr profilu
+    datovani: 3. 6. 2011 # DateTimeOriginal z Commons
+    autor: Stanislav Dusík
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Krkono%C5%A1e,_Lu%C4%8Dn%C3%AD_bouda.jpg
+    prevzatoDne: '2026-07-20'
+    overeni:
+      source: Wikimedia Commons API extmetadata (LicenseShortName CC BY-SA 4.0, Artist Stanislav Dusík, popis „Horská chata Luční bouda v Krkonoších."), export DATA-02 2026-07-20
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: 2026-07-20
+
 zdroje:
   - popis: Web Luční boudy (lucnibouda.cz) — profil, historie, doprava
     url: https://www.lucnibouda.cz/

@@ -22,6 +22,10 @@
 .phero .bg { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 11px; }
 .phero .bg span { font-size: 11px; font-weight: 600; padding: 5px 11px; border-radius: 999px; background: #fff; color: var(--ink); }
 .phero .bg span.open { background: var(--open); color: #fff; }
+/* Atribuce převzaté fotky (CC BY/BY-SA vyžaduje autora u snímku) — mini kapsle
+   vpravo nahoře, nad gradientem (::after), vizuální jazyk hero. */
+.phero .fatr { position: absolute; top: 10px; right: 12px; z-index: 2; font-size: 9.5px; font-weight: 600; color: #fff; opacity: .78; background: rgba(18, 24, 29, .45); border-radius: 6px; padding: 3px 8px; text-decoration: none; letter-spacing: .02em; }
+.phero a.fatr:hover { opacity: 1; text-decoration: underline; }
 
 /* řádek faktů — hairline dělítka, Ověřeno je plnohodnotný fakt */
 .facts { display: grid; grid-template-columns: repeat(5, 1fr); padding: 18px 4px 12px; }

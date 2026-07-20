@@ -26,3 +26,7 @@ Body `[km, výška]` pro pole `vyskovyProfil` v `data/chaty/**.yaml` se dokláda
 3. Fragment vlož do pole `trasy` v YAML chaty, ručně doplň `vychoziBod`, `casMin` (z rozcestníku KČT / plánovače — vlastní zdroj!), `znaceni`, `obtiznost` a rozšiř `overeniPristup.source`. Pak `npx payload run scripts/seed-chaty.ts`.
 
 Jedna trasa = 1 dotaz na API (max 256 bodů/dotaz) — hluboko ve free kvótě tarifu Basic; placená spotřeba je u projektu zakázána.
+
+## Fotky chat (Wikimedia Commons)
+
+Kandidáty s licenčně čistými metadaty sbírá workflow „DATA-02: fotky chat z Wikimedia Commons" do `data/kandidati/fotky/`. Redakční výběr se zapisuje do bloku `fotky:` v YAML chaty (autor, licence, `zdrojUrl`, `stahnoutZ`, blok `overeni`) — vzor v `data/chaty/krkonose/lucni-bouda.yaml`. Seed (`npx payload run scripts/seed-chaty.ts`) pak soubor stáhne z `stahnoutZ` a nahraje do kolekce Fotky; opakovaný běh jen srovná metadata (idempotence dle `zdrojUrl`). Stahování potřebuje síť na `upload.wikimedia.org` — běží lokálně nebo v Actions; v prostředí bez ní `SEED_BEZ_FOTEK=1` sekci přeskočí. Převzaté fotky dostávají atribuci přímo na snímku (komponenta `FotoAtribuce` — povinnost CC BY/BY-SA).
