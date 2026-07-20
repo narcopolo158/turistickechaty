@@ -29,3 +29,16 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=wilderness_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false; metoda: jen
+  WebSearch — bezobslužná session, WebFetch nedostupný (PROVENANCE_REQUIRED i
+  na dřív průchozích doménách), signál pochází z titulků a domén výsledků
+  vyhledávání, obsah stránek NEotevřen — detaily doplní otevření webů):
+  Charakter: studentská turistická chatka (chatka studencka) na Hutniczym
+  Grzbiecie — pl.wikipedia.org vede heslo „Chatka AKT Hutniczy Grzbiet“,
+  noclegistudenckie.studentnews.pl ji řadí mezi „chatki studenckie“, článek
+  karkonoszego.pl: „jedyne takie miejsce w Karkonoszach“; figuruje i na
+  portálu studentských chatek totalnaasymilacja.org. Web v OSM je jen
+  agregátor (schronisko.net) — provoz a režim (kdy otevřeno, pro koho) nutno
+  doložit. NÁVRH REDAKCI: povýšit jako útulnu/chatku se specifickým režimem až
+  po doložení provozu.
