@@ -15,9 +15,9 @@ on:
   workflow_dispatch:
     inputs:
       api:
-        description: 'Overpass API endpoint (při přetížení zkus zrcadlo https://overpass.kumi.systems/api/interpreter)'
+        description: 'Overpass endpoint — nech prázdné (skript zkouší overpass-api.de a při selhání zrcadlo kumi.systems); vyplň jen pro vynucení konkrétní instance'
         required: false
-        default: 'https://overpass-api.de/api/interpreter'
+        default: ''
 
 permissions:
   contents: write
@@ -41,8 +41,15 @@ jobs:
       - run: npm ci
 
       - name: Export z Overpass API + transformace na kandidáty
+        # Explicitní shell: bash zapíná pipefail — pád skriptu se nesmí
+        # ztratit v pipe přes tee (příčina maskované chyby prvního běhu).
+        shell: bash
+        env:
+          API_INPUT: ${{ inputs.api }}
         run: |
-          npx tsx scripts/data01-overpass-krkonose.ts --api '${{ inputs.api }}' | tee report.txt
+          ARG=()
+          if [ -n "$API_INPUT" ]; then ARG=(--api "$API_INPUT"); fi
+          npx tsx scripts/data01-overpass-krkonose.ts "${ARG[@]}" | tee report.txt
           echo '## DATA-01 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 

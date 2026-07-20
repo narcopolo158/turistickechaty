@@ -38,7 +38,16 @@ import { parse, stringify } from 'yaml'
 // Slug generujeme stejně jako Payload hook — jeden zdroj pravdy.
 import { slugify } from '../src/fields/slug'
 
-const VYCHOZI_API = 'https://overpass-api.de/api/interpreter'
+/**
+ * Veřejné instance Overpass — zkoušejí se po řadě (hlavní instance
+ * overpass-api.de sdílené IP GitHub Actions runnerů často rate-limituje,
+ * kumi.systems bývá benevolentnější). `--api URL` fallback vypíná a vynutí
+ * jedinou instanci.
+ */
+export const VYCHOZI_API_INSTANCE = [
+  'https://overpass-api.de/api/interpreter',
+  'https://overpass.kumi.systems/api/interpreter',
+]
 const KANDIDATI_ADRESAR = join(process.cwd(), 'data', 'kandidati', 'krkonose')
 const RUCNI_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
 const EXPORT_JSON = join(KANDIDATI_ADRESAR, '_overpass-export.json')
@@ -75,8 +84,8 @@ export type OsmElement = {
 
 // ── Stažení a načtení exportu ───────────────────────────────────────────────
 
-/** Stáhne surovou odpověď Overpass (text) a ověří, že je to validní export. */
-export const stahniOverpass = async (api: string): Promise<string> => {
+/** Stáhne surovou odpověď z jedné instance a ověří, že je to validní export. */
+const stahniZInstance = async (api: string): Promise<string> => {
   const odpoved = await fetch(api, {
     method: 'POST',
     headers: {
@@ -87,17 +96,31 @@ export const stahniOverpass = async (api: string): Promise<string> => {
     body: `data=${encodeURIComponent(OVERPASS_DOTAZ)}`,
   })
   if (!odpoved.ok) {
-    const napoveda =
-      odpoved.status === 429
-        ? ' (příliš dotazů — počkej chvíli, nebo zkus zrcadlo: --api https://overpass.kumi.systems/api/interpreter)'
-        : odpoved.status === 504
-          ? ' (přetížená instance — zkus to znovu, nebo zrcadlo kumi.systems)'
-          : ''
-    throw new Error(`Overpass API vrátilo HTTP ${odpoved.status}${napoveda}.`)
+    const napoveda = odpoved.status === 429 ? ' (rate limit)' : odpoved.status === 504 ? ' (přetížená instance)' : ''
+    throw new Error(`HTTP ${odpoved.status}${napoveda}`)
   }
   const text = await odpoved.text()
   nactiExport(text) // validace už při stažení — vadný export se neukládá
   return text
+}
+
+/**
+ * Zkouší instance po řadě, dokud jedna nevrátí validní export — rate limit
+ * či výpadek jedné veřejné instance běh neshodí. Selžou-li všechny, chyba
+ * nese souhrn všech pokusů (do anotace Actions).
+ */
+export const stahniOverpass = async (instance: string[]): Promise<{ raw: string; api: string }> => {
+  const chyby: string[] = []
+  for (const api of instance) {
+    try {
+      return { raw: await stahniZInstance(api), api }
+    } catch (chyba) {
+      const zprava = chyba instanceof Error ? chyba.message : String(chyba)
+      chyby.push(`${api}: ${zprava}`)
+      console.error(`Instance selhala — ${api}: ${zprava}`)
+    }
+  }
+  throw new Error(`Všechny Overpass instance selhaly:\n${chyby.map((ch) => `- ${ch}`).join('\n')}`)
 }
 
 /**
@@ -342,7 +365,7 @@ export const zapisKandidaty = (
 const main = async () => {
   const argv = process.argv.slice(2)
   const apiIndex = argv.indexOf('--api')
-  const api = apiIndex >= 0 && argv[apiIndex + 1] ? argv[apiIndex + 1] : VYCHOZI_API
+  const instance = apiIndex >= 0 && argv[apiIndex + 1] ? [argv[apiIndex + 1]] : VYCHOZI_API_INSTANCE
   const zJsonu = argv.includes('--z-jsonu')
 
   let raw: string
@@ -353,8 +376,10 @@ const main = async () => {
     console.log(`Offline transformace commitnutého exportu ${EXPORT_JSON}…`)
     raw = readFileSync(EXPORT_JSON, 'utf8')
   } else {
-    console.log(`Overpass dotaz na ${api} (alpine_hut + wilderness_hut + hut, ČR ∩ bbox Krkonoš)…`)
-    raw = await stahniOverpass(api)
+    console.log(`Overpass dotaz (alpine_hut + wilderness_hut + hut, ČR ∩ bbox Krkonoš); instance: ${instance.join(', ')}…`)
+    const vysledek = await stahniOverpass(instance)
+    raw = vysledek.raw
+    console.log(`Staženo z ${vysledek.api}.`)
     mkdirSync(KANDIDATI_ADRESAR, { recursive: true })
     writeFileSync(EXPORT_JSON, raw, 'utf8')
     console.log(`Surový export uložen: ${EXPORT_JSON} (commituje se jako doklad).`)

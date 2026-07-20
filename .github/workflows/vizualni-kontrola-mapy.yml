@@ -11,12 +11,16 @@
 # docs/screenshots/** tento workflow navíc nespouští (paths-ignore).
 name: 'Vizuální kontrola: mapa (F0-07)'
 
+# F0-07 uzavřena (snímky posouzeny 20. 7.) — workflow už neběží při každém
+# pushi, jen ručně nebo při změně mapové komponenty / screenshot skriptu.
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths-ignore:
-      - 'docs/screenshots/**'
+    paths:
+      - 'src/components/MapaChat.tsx'
+      - 'scripts/ci/screenshot-mapa.mjs'
+      - '.github/workflows/vizualni-kontrola-mapy.yml'
 
 permissions:
   contents: write

@@ -212,21 +212,43 @@ describe('zapisKandidaty', () => {
 describe('stahniOverpass (mock API)', () => {
   afterEach(() => vi.unstubAllGlobals())
 
-  it('POSTuje dotaz jako data= a vrací surový text exportu', async () => {
+  it('POSTuje dotaz jako data= a vrací surový text exportu i použitou instanci', async () => {
     const raw = JSON.stringify({ osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' }, elements: [] })
     const fetchMock = vi.fn().mockResolvedValue(new Response(raw, { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
-    await expect(stahniOverpass('https://overpass.example/api/interpreter')).resolves.toBe(raw)
+    await expect(stahniOverpass(['https://overpass.example/api/interpreter'])).resolves.toEqual({
+      raw,
+      api: 'https://overpass.example/api/interpreter',
+    })
     const [url, init] = fetchMock.mock.calls[0]
     expect(url).toBe('https://overpass.example/api/interpreter')
     expect(init.method).toBe('POST')
     expect(decodeURIComponent(init.body)).toContain('tourism')
   })
 
-  it('HTTP 429 dává čitelnou hlášku se zrcadlem; chybová HTML stránka se neuloží', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('busy', { status: 429 })))
-    await expect(stahniOverpass('https://x')).rejects.toThrow(/429.*kumi\.systems/s)
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('<html>rate limited</html>', { status: 200 })))
-    await expect(stahniOverpass('https://x')).rejects.toThrow(/validní JSON/)
+  it('rate limit první instance → fallback na zrcadlo (přesně scénář GitHub Actions runnerů)', async () => {
+    const raw = JSON.stringify({ osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' }, elements: [] })
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(new Response('busy', { status: 429 }))
+      .mockResolvedValueOnce(new Response(raw, { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+    await expect(stahniOverpass(['https://hlavni.example', 'https://zrcadlo.example'])).resolves.toEqual({
+      raw,
+      api: 'https://zrcadlo.example',
+    })
+    expect(fetchMock).toHaveBeenCalledTimes(2)
+  })
+
+  it('selhání všech instancí (HTTP, síť i chybová HTML stránka) dává souhrnnou chybu', async () => {
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(new Response('busy', { status: 429 }))
+      .mockRejectedValueOnce(new TypeError('fetch failed'))
+      .mockResolvedValueOnce(new Response('<html>rate limited</html>', { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+    await expect(stahniOverpass(['https://a.example', 'https://b.example', 'https://c.example'])).rejects.toThrow(
+      /Všechny Overpass instance selhaly:[\s\S]*a\.example: HTTP 429[\s\S]*b\.example: fetch failed[\s\S]*c\.example.*validní JSON/,
+    )
   })
 })
