@@ -12,15 +12,17 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { parse } from 'yaml'
 
 import {
-  OVERPASS_DOTAZ,
+  ZEME_DOTAZU,
   chataZElementu,
   nactiExport,
   osmUrl,
+  overpassDotaz,
   porovnejSRucnim,
   stahniOverpass,
   vzdalenostM,
   yamlChaty,
   zapisKandidaty,
+  type ExportPolozka,
   type OsmElement,
 } from '../../scripts/data01-overpass-krkonose'
 
@@ -34,14 +36,23 @@ const node = (id: number, tags: Record<string, string>, lat = 50.7, lon = 15.7):
   tags,
 })
 
-describe('OVERPASS_DOTAZ', () => {
-  it('ptá se na všechny tři tagy chat, jen v ČR (area ISO3166-1) a s bboxem Krkonoš', () => {
-    expect(OVERPASS_DOTAZ).toContain('"tourism"="alpine_hut"')
-    expect(OVERPASS_DOTAZ).toContain('"tourism"="wilderness_hut"')
-    expect(OVERPASS_DOTAZ).toContain('"tourism"="hut"')
-    expect(OVERPASS_DOTAZ).toContain('area["ISO3166-1"="CZ"]')
-    expect(OVERPASS_DOTAZ).toContain('50.55,15.30,50.82,16.05')
-    expect(OVERPASS_DOTAZ).toContain('out center') // way/relation potřebují souřadnice středu
+describe('overpassDotaz', () => {
+  it('ptá se na všechny tři tagy chat, v area státu a s bboxem Krkonoš', () => {
+    const dotaz = overpassDotaz('CZ')
+    expect(dotaz).toContain('"tourism"="alpine_hut"')
+    expect(dotaz).toContain('"tourism"="wilderness_hut"')
+    expect(dotaz).toContain('"tourism"="hut"')
+    expect(dotaz).toContain('area["ISO3166-1"="CZ"]')
+    expect(dotaz).toContain('50.55,15.30,50.87,16.05')
+    expect(dotaz).toContain('out center') // way/relation potřebují souřadnice středu
+  })
+
+  it('Krkonoše se dotazují za obě země — ČR i Polsko (přeshraniční pohoří vcelku)', () => {
+    expect(ZEME_DOTAZU).toEqual([
+      { zeme: 'cz', iso: 'CZ' },
+      { zeme: 'pl', iso: 'PL' },
+    ])
+    expect(overpassDotaz('PL')).toContain('area["ISO3166-1"="PL"]')
   })
 })
 
@@ -98,6 +109,15 @@ describe('chataZElementu', () => {
       expect(o.verified).toBe(false)
       expect(o.checked).toBe(CHECKED)
     }
+  })
+
+  it('polský kandidát nese zeme: pl (schroniska — rozhodnutí 20. 7.)', () => {
+    const el = node(109, { tourism: 'alpine_hut', name: 'Schronisko Samotnia' }, 50.7435, 15.6941)
+    const vysledek = chataZElementu(el, CHECKED, 'pl')
+    if (!('data' in vysledek)) throw new Error('čekal jsem data')
+    expect(vysledek.data.zeme).toBe('pl')
+    expect(vysledek.data.slug).toBe('schronisko-samotnia')
+    expect(vysledek.data.oblast).toBe('krkonose') // jedno pohoří, zemi nese chata
   })
 
   it('wilderness_hut → útulna; nestandardní hut typ nedostane (určí redakce)', () => {
@@ -178,33 +198,38 @@ describe('zapisKandidaty', () => {
   const rucni = join(tmp, 'chaty')
   afterEach(() => rmSync(tmp, { recursive: true, force: true }))
 
-  it('zapisuje kandidáty, ruční profil jen porovná, kandidáta nepřepisuje, kolize slugů řeší', () => {
+  it('zapisuje kandidáty obou zemí, ruční profil jen porovná, kandidáta nepřepisuje, kolize slugů řeší', () => {
     const rucniYaml = '# ruční profil — nesahat\nnazev: Luční bouda\nslug: lucni-bouda\nlat: 50.7345\nlng: 15.6966\nvyska: 1410\n'
     mkdirSync(rucni, { recursive: true })
     writeFileSync(join(rucni, 'lucni-bouda.yaml'), rucniYaml, 'utf8')
 
-    const elementy = [
-      node(1, { tourism: 'alpine_hut', name: 'Luční bouda', ele: '1413' }, 50.7346, 15.6967), // ruční
-      node(2, { tourism: 'alpine_hut', name: 'Nová bouda' }),
-      node(3, { tourism: 'alpine_hut', name: 'Nová bouda' }), // kolize jména
-      node(4, { tourism: 'alpine_hut' }), // beze jména
+    const cz = (el: OsmElement): ExportPolozka => ({ el, zeme: 'cz', checked: CHECKED })
+    const polozky = [
+      cz(node(1, { tourism: 'alpine_hut', name: 'Luční bouda', ele: '1413' }, 50.7346, 15.6967)), // ruční
+      cz(node(2, { tourism: 'alpine_hut', name: 'Nová bouda' })),
+      cz(node(3, { tourism: 'alpine_hut', name: 'Nová bouda' })), // kolize jména
+      cz(node(4, { tourism: 'alpine_hut' })), // beze jména
+      { el: node(5, { tourism: 'alpine_hut', name: 'Schronisko Odrodzenie' }, 50.753, 15.685), zeme: 'pl', checked: '2026-07-19' } as ExportPolozka,
     ]
-    const report = zapisKandidaty(elementy, kandidati, rucni, CHECKED)
+    const report = zapisKandidaty(polozky, kandidati, rucni)
 
     expect(report.rucni).toHaveLength(1)
     expect(report.rucni[0].slug).toBe('lucni-bouda')
     expect(report.rucni[0].gpsRozdilM as number).toBeLessThan(50)
     expect(readFileSync(join(rucni, 'lucni-bouda.yaml'), 'utf8')).toBe(rucniYaml) // nedotčeno
-    expect(readdirSync(kandidati).sort()).toEqual(['nova-bouda-3.yaml', 'nova-bouda.yaml']) // ruční slug nevznikl
-    expect(report.zapsano.map((z) => z.slug)).toEqual(['nova-bouda', 'nova-bouda-3'])
+    expect(readdirSync(kandidati).sort()).toEqual(['nova-bouda-3.yaml', 'nova-bouda.yaml', 'schronisko-odrodzenie.yaml'])
+    expect(report.zapsano.map((z) => z.slug)).toEqual(['nova-bouda', 'nova-bouda-3', 'schronisko-odrodzenie'])
     expect(report.preskoceno).toHaveLength(1)
     expect(parse(readFileSync(join(kandidati, 'nova-bouda-3.yaml'), 'utf8')).slug).toBe('nova-bouda-3')
+    const pl = parse(readFileSync(join(kandidati, 'schronisko-odrodzenie.yaml'), 'utf8'))
+    expect(pl.zeme).toBe('pl')
+    expect(pl.overeniLokace.checked).toBe('2026-07-19') // checked per export dané země
 
     // Druhý běh je idempotentní: nic nového, existující kandidáti hlášeni, soubor nezměněn.
     const obsahPred = readFileSync(join(kandidati, 'nova-bouda.yaml'), 'utf8')
-    const znovu = zapisKandidaty(elementy, kandidati, rucni, CHECKED)
+    const znovu = zapisKandidaty(polozky, kandidati, rucni)
     expect(znovu.zapsano).toHaveLength(0)
-    expect(znovu.jizKandidat.map((k) => k.slug)).toEqual(['nova-bouda', 'nova-bouda-3'])
+    expect(znovu.jizKandidat.map((k) => k.slug)).toEqual(['nova-bouda', 'nova-bouda-3', 'schronisko-odrodzenie'])
     expect(readFileSync(join(kandidati, 'nova-bouda.yaml'), 'utf8')).toBe(obsahPred)
   })
 })
@@ -216,7 +241,7 @@ describe('stahniOverpass (mock API)', () => {
     const raw = JSON.stringify({ osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' }, elements: [] })
     const fetchMock = vi.fn().mockResolvedValue(new Response(raw, { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
-    await expect(stahniOverpass(['https://overpass.example/api/interpreter'])).resolves.toEqual({
+    await expect(stahniOverpass(['https://overpass.example/api/interpreter'], overpassDotaz('CZ'))).resolves.toEqual({
       raw,
       api: 'https://overpass.example/api/interpreter',
     })
@@ -233,7 +258,7 @@ describe('stahniOverpass (mock API)', () => {
       .mockResolvedValueOnce(new Response('busy', { status: 429 }))
       .mockResolvedValueOnce(new Response(raw, { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
-    await expect(stahniOverpass(['https://hlavni.example', 'https://zrcadlo.example'])).resolves.toEqual({
+    await expect(stahniOverpass(['https://hlavni.example', 'https://zrcadlo.example'], overpassDotaz('CZ'))).resolves.toEqual({
       raw,
       api: 'https://zrcadlo.example',
     })
@@ -247,7 +272,7 @@ describe('stahniOverpass (mock API)', () => {
       .mockRejectedValueOnce(new TypeError('fetch failed'))
       .mockResolvedValueOnce(new Response('<html>rate limited</html>', { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
-    await expect(stahniOverpass(['https://a.example', 'https://b.example', 'https://c.example'])).rejects.toThrow(
+    await expect(stahniOverpass(['https://a.example', 'https://b.example', 'https://c.example'], overpassDotaz('CZ'))).rejects.toThrow(
       /Všechny Overpass instance selhaly:[\s\S]*a\.example: HTTP 429[\s\S]*b\.example: fetch failed[\s\S]*c\.example.*validní JSON/,
     )
   })

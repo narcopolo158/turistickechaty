@@ -1,12 +1,14 @@
 /**
  * DATA-01: export chat Krkonoš z OpenStreetMap (Overpass API) — kandidáti.
  *
- * Stáhne objekty `tourism=alpine_hut` / `wilderness_hut` / `hut` na české
- * straně Krkonoš (průnik area Česko + bbox pohoří), surovou odpověď uloží
- * do `data/kandidati/krkonose/_overpass-export.json` (commituje se — doklad
- * exportu vč. timestampu a copyright hlavičky Overpass) a transformuje ji
- * na `data/kandidati/krkonose/<slug>.yaml` — jen doložené údaje z OSM tagů,
- * vše `verified: false` se zdrojem (URL OSM objektu) a atribucí ODbL.
+ * Stáhne objekty `tourism=alpine_hut` / `wilderness_hut` / `hut` v celých
+ * Krkonoších — česká i polská strana, po zemích (průnik area státu + bbox
+ * pohoří; rozhodnutí Michala 20. 7.: přeshraniční pohoří bereme celá).
+ * Surové odpovědi uloží do `data/kandidati/krkonose/_overpass-export-<zeme>.json`
+ * (commitují se — doklad exportu vč. timestampu a copyright hlavičky
+ * Overpass) a transformuje je na `data/kandidati/krkonose/<slug>.yaml` —
+ * jen doložené údaje z OSM tagů, vše `verified: false` se zdrojem
+ * (URL OSM objektu) a atribucí ODbL.
  *
  * STAGING (rozhodnutí ručního běhu 20. 7.): kandidáti NEJSOU na webu — seed
  * čte jen `data/chaty/**`. Do `data/chaty/<pohori>/` se YAML povyšuje ručně
@@ -50,26 +52,37 @@ export const VYCHOZI_API_INSTANCE = [
 ]
 const KANDIDATI_ADRESAR = join(process.cwd(), 'data', 'kandidati', 'krkonose')
 const RUCNI_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
-const EXPORT_JSON = join(KANDIDATI_ADRESAR, '_overpass-export.json')
+const exportJson = (zeme: Zeme) => join(KANDIDATI_ADRESAR, `_overpass-export-${zeme}.json`)
+
+/**
+ * Krkonoše bereme celé — přes státní hranici (rozhodnutí Michala 20. 7.;
+ * obecný princip pro přeshraniční pohoří, příště německá strana Šumavy).
+ * Země se dotazuje po jedné (průnik area státu + bbox), aby každý kandidát
+ * nesl doloženou `zeme` — bbox sám hranici nezná a domýšlet ji nebudeme.
+ */
+export const ZEME_DOTAZU: { zeme: Zeme; iso: string }[] = [
+  { zeme: 'cz', iso: 'CZ' },
+  { zeme: 'pl', iso: 'PL' },
+]
+
+export type Zeme = 'cz' | 'pl'
 
 /**
  * Hrubé vyhledávací okno Krkonoš (jih, západ, sever, východ) — jen okno
- * dotazu, ne publikovaný údaj: pokrývá Harrachov až Rýchory s rezervou.
- * Příslušnost k ČR řeší průnik s area `ISO3166-1=CZ` přímo v dotazu
- * (bbox samotný by zahrnul i polská schroniska — polská strana Krkonoš
- * je otevřená otázka pro Michala, viz DENIK session 16).
+ * dotazu, ne publikovaný údaj: pokrývá Harrachov až Rýchory a na severu
+ * polské podhůří (Szklarska Poręba, Karpacz) s rezervou.
  */
-export const BBOX_KRKONOSE = '50.55,15.30,50.82,16.05'
+export const BBOX_KRKONOSE = '50.55,15.30,50.87,16.05'
 
 // `tourism=hut` je nestandardní (wiki zná alpine_hut/wilderness_hut), ale
 // zadání ručního běhu ho chce v checklistu — kandidáty nic nekazí, nanejvýš
 // přinese pár objektů k ruční kontrole navíc.
-export const OVERPASS_DOTAZ = `[out:json][timeout:120];
-area["ISO3166-1"="CZ"][admin_level="2"]->.cz;
+export const overpassDotaz = (iso: string): string => `[out:json][timeout:120];
+area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
 (
-  nwr["tourism"="alpine_hut"](area.cz)(${BBOX_KRKONOSE});
-  nwr["tourism"="wilderness_hut"](area.cz)(${BBOX_KRKONOSE});
-  nwr["tourism"="hut"](area.cz)(${BBOX_KRKONOSE});
+  nwr["tourism"="alpine_hut"](area.stat)(${BBOX_KRKONOSE});
+  nwr["tourism"="wilderness_hut"](area.stat)(${BBOX_KRKONOSE});
+  nwr["tourism"="hut"](area.stat)(${BBOX_KRKONOSE});
 );
 out center;`
 
@@ -85,7 +98,7 @@ export type OsmElement = {
 // ── Stažení a načtení exportu ───────────────────────────────────────────────
 
 /** Stáhne surovou odpověď z jedné instance a ověří, že je to validní export. */
-const stahniZInstance = async (api: string): Promise<string> => {
+const stahniZInstance = async (api: string, dotaz: string): Promise<string> => {
   const odpoved = await fetch(api, {
     method: 'POST',
     headers: {
@@ -93,7 +106,7 @@ const stahniZInstance = async (api: string): Promise<string> => {
       // Slušnost vůči veřejné instanci — ať provozovatel ví, kdo se ptá.
       'User-Agent': 'turistickechaty.cz (DATA-01 export; repo narcopolo158/turistickechaty)',
     },
-    body: `data=${encodeURIComponent(OVERPASS_DOTAZ)}`,
+    body: `data=${encodeURIComponent(dotaz)}`,
   })
   if (!odpoved.ok) {
     const napoveda = odpoved.status === 429 ? ' (rate limit)' : odpoved.status === 504 ? ' (přetížená instance)' : ''
@@ -109,11 +122,11 @@ const stahniZInstance = async (api: string): Promise<string> => {
  * či výpadek jedné veřejné instance běh neshodí. Selžou-li všechny, chyba
  * nese souhrn všech pokusů (do anotace Actions).
  */
-export const stahniOverpass = async (instance: string[]): Promise<{ raw: string; api: string }> => {
+export const stahniOverpass = async (instance: string[], dotaz: string): Promise<{ raw: string; api: string }> => {
   const chyby: string[] = []
   for (const api of instance) {
     try {
-      return { raw: await stahniZInstance(api), api }
+      return { raw: await stahniZInstance(api, dotaz), api }
     } catch (chyba) {
       const zprava = chyba instanceof Error ? chyba.message : String(chyba)
       chyby.push(`${api}: ${zprava}`)
@@ -180,6 +193,7 @@ export type Preskoceni = { duvod: 'bez-nazvu' | 'bez-souradnic'; url: string }
 export const chataZElementu = (
   el: OsmElement,
   checked: string,
+  zeme: Zeme = 'cz',
 ): { data: Record<string, unknown> } | Preskoceni => {
   const tagy = el.tags ?? {}
   const url = osmUrl(el)
@@ -190,7 +204,7 @@ export const chataZElementu = (
   const data: Record<string, unknown> = {
     nazev: tagy.name,
     slug: slugify(tagy.name),
-    zeme: 'cz', // zaručeno průnikem s area ISO3166-1=CZ přímo v dotazu
+    zeme, // zaručeno průnikem s area ISO3166-1 daného státu přímo v dotazu
     oblast: 'krkonose',
     // `stav` vědomě chybí: OSM provoz spolehlivě nenese, nedomýšlíme.
   }
@@ -308,29 +322,33 @@ export type Report = {
   preskoceno: Preskoceni[]
 }
 
+/** Element s metadaty svého exportu (země dle area v dotazu, checked dle stavu dat). */
+export type ExportPolozka = { el: OsmElement; zeme: Zeme; checked: string }
+
 /**
- * Zapíše YAML kandidátů. Ruční profily v `data/chaty/krkonose/` se nikdy
- * nepřepisují — jen porovnají; existující kandidát zůstává (idempotence,
- * případné ruční úpravy kandidáta se neztrácejí). Kolizi slugů dvou OSM
- * objektů v jednom běhu řeší deterministický suffix `-<osm id>`.
+ * Zapíše YAML kandidátů (obě země do téhož adresáře pohoří — Krkonoše jsou
+ * jedno pohoří, zemi nese chata). Ruční profily v `data/chaty/krkonose/` se
+ * nikdy nepřepisují — jen porovnají; existující kandidát zůstává
+ * (idempotence, případné ruční úpravy kandidáta se neztrácejí). Kolizi
+ * slugů dvou OSM objektů v jednom běhu — i napříč zeměmi — řeší
+ * deterministický suffix `-<osm id>`.
  */
 export const zapisKandidaty = (
-  elementy: OsmElement[],
+  polozky: ExportPolozka[],
   kandidatiAdresar: string,
   rucniAdresar: string,
-  checked: string,
 ): Report => {
   const report: Report = { zapsano: [], jizKandidat: [], rucni: [], preskoceno: [] }
   const slugyBehu = new Set<string>()
   mkdirSync(kandidatiAdresar, { recursive: true })
 
   // Deterministické pořadí výstupu nezávislé na pořadí z API.
-  const serazene = [...elementy].sort(
-    (a, b) => (a.tags?.name ?? '').localeCompare(b.tags?.name ?? '', 'cs') || a.id - b.id,
+  const serazene = [...polozky].sort(
+    (a, b) => (a.el.tags?.name ?? '').localeCompare(b.el.tags?.name ?? '', 'cs') || a.el.id - b.el.id,
   )
 
-  for (const el of serazene) {
-    const vysledek = chataZElementu(el, checked)
+  for (const { el, zeme, checked } of serazene) {
+    const vysledek = chataZElementu(el, checked, zeme)
     if ('duvod' in vysledek) {
       report.preskoceno.push(vysledek)
       continue
@@ -368,29 +386,39 @@ const main = async () => {
   const instance = apiIndex >= 0 && argv[apiIndex + 1] ? [argv[apiIndex + 1]] : VYCHOZI_API_INSTANCE
   const zJsonu = argv.includes('--z-jsonu')
 
-  let raw: string
-  if (zJsonu) {
-    if (!existsSync(EXPORT_JSON)) {
-      throw new Error(`--z-jsonu: export ${EXPORT_JSON} neexistuje — nejdřív ho stáhne workflow/běh bez --z-jsonu.`)
+  const polozky: ExportPolozka[] = []
+  const stavy: string[] = []
+  for (const { zeme, iso } of ZEME_DOTAZU) {
+    const soubor = exportJson(zeme)
+    let raw: string
+    if (zJsonu) {
+      if (!existsSync(soubor)) {
+        console.log(`--z-jsonu: export ${soubor} neexistuje — země ${zeme} se přeskakuje (stáhne ji běh bez --z-jsonu).`)
+        continue
+      }
+      console.log(`Offline transformace commitnutého exportu ${soubor}…`)
+      raw = readFileSync(soubor, 'utf8')
+    } else {
+      console.log(`Overpass dotaz ${iso} (alpine_hut + wilderness_hut + hut, ${iso} ∩ bbox Krkonoš); instance: ${instance.join(', ')}…`)
+      const vysledek = await stahniOverpass(instance, overpassDotaz(iso))
+      raw = vysledek.raw
+      console.log(`Staženo z ${vysledek.api}.`)
+      mkdirSync(KANDIDATI_ADRESAR, { recursive: true })
+      writeFileSync(soubor, raw, 'utf8')
+      console.log(`Surový export uložen: ${soubor} (commituje se jako doklad).`)
     }
-    console.log(`Offline transformace commitnutého exportu ${EXPORT_JSON}…`)
-    raw = readFileSync(EXPORT_JSON, 'utf8')
-  } else {
-    console.log(`Overpass dotaz (alpine_hut + wilderness_hut + hut, ČR ∩ bbox Krkonoš); instance: ${instance.join(', ')}…`)
-    const vysledek = await stahniOverpass(instance)
-    raw = vysledek.raw
-    console.log(`Staženo z ${vysledek.api}.`)
-    mkdirSync(KANDIDATI_ADRESAR, { recursive: true })
-    writeFileSync(EXPORT_JSON, raw, 'utf8')
-    console.log(`Surový export uložen: ${EXPORT_JSON} (commituje se jako doklad).`)
+    const { elementy, checked } = nactiExport(raw)
+    console.log(`Export ${zeme}: ${elementy.length} objektů, stav OSM dat ${checked}.`)
+    stavy.push(`${zeme} ${checked}`)
+    polozky.push(...elementy.map((el) => ({ el, zeme, checked })))
+  }
+  if (polozky.length === 0 && zJsonu) {
+    throw new Error('--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.')
   }
 
-  const { elementy, checked } = nactiExport(raw)
-  console.log(`Export: ${elementy.length} objektů, stav OSM dat ${checked}.`)
+  const report = zapisKandidaty(polozky, KANDIDATI_ADRESAR, RUCNI_ADRESAR)
 
-  const report = zapisKandidaty(elementy, KANDIDATI_ADRESAR, RUCNI_ADRESAR, checked)
-
-  console.log(`\n## DATA-01 report (stav OSM dat ${checked})`)
+  console.log(`\n## DATA-01 report (stav OSM dat: ${stavy.join(', ')})`)
   console.log(`\nNoví kandidáti: ${report.zapsano.length}`)
   for (const ch of report.zapsano) console.log(`- ${ch.nazev} (\`${ch.slug}.yaml\`) — ${ch.url}`)
   console.log(`\nUž kandidátem z dřívějška (nepřepsáno): ${report.jizKandidat.length}`)
