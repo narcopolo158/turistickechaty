@@ -22,3 +22,11 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=wilderness_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false; metoda:
+  WebSearch — signál z titulků a domén výsledků, obsah stránek NEotevřen,
+  není-li u zdroje řečeno jinak): Penzionový signál: region-krkonose.cz vede
+  „Penzion Lovecká chata — Velká Úpa, penzion s tradicí“, vlastní weby
+  loveckachatakrkonose.cz a lovecka-chata.cz, penzionové katalogy. POZOR: OSM
+  typ útulna (wilderness_hut) je s penzionem v rozporu — tag v OSM je zřejmě
+  chybný, nepřebírat. VERDIKT NA REDAKCI (penzion).

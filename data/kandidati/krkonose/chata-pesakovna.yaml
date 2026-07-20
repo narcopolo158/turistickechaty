@@ -22,3 +22,14 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false; metoda:
+  WebSearch — signál z titulků a domén výsledků, obsah stránek NEotevřen,
+  není-li u zdroje řečeno jinak): POZOR — JINÉ POHOŘÍ: osada Jizerka, Jizerské
+  hory. GPS kandidáta (50,825, 15,337) = Jizerka (Kořenov, Liberecký kraj);
+  treking.cz/chaty/pesakovna.htm vede „Pešákovna, horská chata v horské osadě
+  Jizerka“, vlastní web pesakovna.cz, ceskehory.cz „Jizerka, Horní Polubný,
+  Kořenov“. Do bboxu Krkonoš spadla západním přesahem (přibyla v OSM mezi běhy
+  DATA-01). NÁVRH REDAKCI: do Krkonoš NEzařazovat — kandidát pro budoucí
+  oblast Jizerské hory (spolu s PL Chatka Górzystów a Stacja Turystyczna
+  Orle).

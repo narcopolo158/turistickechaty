@@ -22,3 +22,13 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false; metoda:
+  WebSearch — signál z titulků a domén výsledků, obsah stránek NEotevřen,
+  není-li u zdroje řečeno jinak): POTVRZENO jako horská bouda: heslo na
+  cs.wikipedia.org (Brádlerova bouda i Brádlerovy boudy), stránka chaty na
+  webu KČT (kct.cz/chaty/bradlerovy-boudy/) a článek KČT „12 nejlepších
+  horských chat v Krkonoších“ (kct.cz, otevřeno WebFetchem 20. 7. 2026) je
+  jmenuje spolu s Výrovkou a Voseckou boudou; dále kudyznudy.cz,
+  skitourguru.com. NÁVRH REDAKCI: povýšit (údaje z KČT stránky a webu při
+  otevření).

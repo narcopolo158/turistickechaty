@@ -22,3 +22,11 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false; metoda:
+  WebSearch — signál z titulků a domén výsledků, obsah stránek NEotevřen,
+  není-li u zdroje řečeno jinak): DUPLICITA V OSM: týž objekt jako kandidát
+  chata-mamut (GPS ~1 m od sebe, 50,6968, 15,7963) — Dolní Malá Úpa. Nálezy a
+  návrh viz zápis u chata-mamut: roubenka k pronájmu
+  (roubenkamamut.webnode.cz, cs-chalupy.cz), NÁVRH REDAKCI: sloučit s
+  chata-mamut a tento kandidát vyřadit jako duplicitu.
