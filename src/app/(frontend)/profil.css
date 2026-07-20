@@ -39,9 +39,7 @@
 .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .bx { padding: 14px 16px; }
 
-/* razítko na profilu — vždy #C92F1B, natočené (jediný „nedisciplinovaný" prvek) */
-.p-otisk { width: 132px; height: 132px; flex: none; display: grid; place-items: center; }
-.p-otisk img { max-width: 106px; max-height: 106px; transform: rotate(-7deg); }
+/* razítko na profilu: pad razítkovacího momentu je v components.css (.pad — F0-08) */
 
 /* interaktivní výškový profil trasy — hodnoty 1:1 z prototyp.html (.prof, .tipp) */
 .prof { position: relative; background: #fbfaf6; border-radius: 10px; }

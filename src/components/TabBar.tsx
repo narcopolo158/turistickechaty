@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { activeKey } from './SiteHeader'
+import { usePocetDeniku } from '@/lib/denik'
 
 /* Ikony dle foundations/ikonografie.html — kartografický styl, tah 1.8, kulatá zakončení */
 const ICONS: Record<string, React.ReactNode> = {
@@ -39,12 +40,13 @@ const TABS = [
   { href: '/', label: 'Úvod', key: 'uvod', icon: 'uvod' },
   { href: '/chaty', label: 'Chaty', key: 'chaty', icon: 'chaty' },
   { href: '/vylety', label: 'Výlety', key: 'vylety', icon: 'vylety' },
-  { href: '/razitkovnik', label: 'Deník', key: 'razitkovnik', icon: 'denik', badge: 0 },
+  { href: '/razitkovnik', label: 'Deník', key: 'razitkovnik', icon: 'denik', badge: true },
 ] as const
 
 export default function TabBar() {
   const pathname = usePathname()
   const active = activeKey(pathname)
+  const pocetRazitek = usePocetDeniku()
 
   return (
     <nav className="tabbar" aria-label="Spodní navigace">
@@ -52,7 +54,7 @@ export default function TabBar() {
         <Link key={tab.key} href={tab.href} className={active === tab.key ? 'on' : ''}>
           {ICONS[tab.icon]}
           {tab.label}
-          {'badge' in tab ? <b>{tab.badge}</b> : null}
+          {'badge' in tab ? <b>{pocetRazitek}</b> : null}
         </Link>
       ))}
     </nav>

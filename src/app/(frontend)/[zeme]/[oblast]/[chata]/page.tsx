@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { RichText } from '@payloadcms/richtext-lexical/react'
 
+import RazitkoMoment from '@/components/RazitkoMoment'
 import TiskButton from '@/components/TiskButton'
 import VyskovyProfil, { type BodProfilu } from '@/components/VyskovyProfil'
 import {
@@ -288,29 +289,32 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
             <div className="lista red" style={{ borderRadius: 0, margin: 0 }}>
               <span className="n">{cisloSekce()}</span>
               <b>Razítko</b>
-              <span className="r">Sbírka</span>
+              <Link className="r" href="/razitkovnik">Sbírka →</Link>
             </div>
-            <div className="bx" style={{ display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
-              {otisk?.url && (
-                <div className="p-otisk">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={otisk.url} alt={otisk.alt} />
+            <div className="bx">
+              <RazitkoMoment
+                slug={chata.slug}
+                nazev={chata.nazev}
+                pohori={oblast?.nazev}
+                vyska={chata.vyska}
+                otiskUrl={otisk?.url}
+                otiskAlt={otisk?.alt}
+              >
+                <div style={{ fontSize: 12.5 }}>
+                  {razitko.kdeSeRazitkuje && <p style={{ marginTop: 9 }}>Razítkuje se: {razitko.kdeSeRazitkuje}</p>}
+                  {razitko.potvrzeno && (
+                    <p className="mn" style={{ fontSize: 9.5, color: 'var(--muted)', marginTop: 9 }}>
+                      Doloženo {formatDatum(razitko.potvrzeno)}
+                      {razitko.dolozil && <> · {razitko.dolozil}</>}
+                    </p>
+                  )}
+                  {razitka.length > 1 && (
+                    <p style={{ fontSize: 12, fontWeight: 600, marginTop: 6 }}>
+                      Historické varianty ({razitka.length - 1})
+                    </p>
+                  )}
                 </div>
-              )}
-              <div style={{ flex: 1, minWidth: 170, fontSize: 12.5 }}>
-                {razitko.kdeSeRazitkuje && <p>Razítkuje se: {razitko.kdeSeRazitkuje}</p>}
-                {razitko.potvrzeno && (
-                  <p className="mn" style={{ fontSize: 9.5, color: 'var(--muted)', marginTop: 9 }}>
-                    Doloženo {formatDatum(razitko.potvrzeno)}
-                    {razitko.dolozil && <> · {razitko.dolozil}</>}
-                  </p>
-                )}
-                {razitka.length > 1 && (
-                  <p style={{ fontSize: 12, fontWeight: 600, marginTop: 6 }}>
-                    Historické varianty ({razitka.length - 1})
-                  </p>
-                )}
-              </div>
+              </RazitkoMoment>
             </div>
           </div>
         )}

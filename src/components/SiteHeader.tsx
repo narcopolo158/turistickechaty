@@ -4,6 +4,8 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+import { usePocetDeniku } from '@/lib/denik'
+
 export const NAV_ITEMS = [
   { href: '/', label: 'Úvod', key: 'uvod' },
   { href: '/chaty', label: 'Chaty', key: 'chaty' },
@@ -29,6 +31,7 @@ function toggleDark() {
 export default function SiteHeader() {
   const pathname = usePathname()
   const active = activeKey(pathname)
+  const pocetRazitek = usePocetDeniku()
 
   return (
     <header className="top">
@@ -49,7 +52,7 @@ export default function SiteHeader() {
           ))}
         </nav>
         <Link href="/razitkovnik" className="denik" aria-label="Můj deník razítek">
-          Deník <b>0</b>
+          Deník <b>{pocetRazitek}</b>
         </Link>
         <button type="button" className="dm" onClick={toggleDark} title="Hřebenovka po tmě" aria-label="Přepnout tmavý režim">
           ◐

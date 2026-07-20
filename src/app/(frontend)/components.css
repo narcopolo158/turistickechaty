@@ -120,3 +120,19 @@ body.dark .row .st.o { color: #4cc07d; }
 body.dark .mapband { background: #171f27; border-color: #242f39; }
 body.dark .mapel { background: #171f27; }
 body.dark .mpre { background: #1b242e; color: #e7ecf1; }
+
+/* razítkovací moment (F0-08) — pad, dopad a rozpití 1:1 z handoffu razitko-moment.html */
+.pad { position: relative; width: 150px; height: 150px; background: #fbfaf6; border: 1.5px dashed #d3cdbe; border-radius: 12px; display: grid; place-items: center; flex: none; }
+.pad .hint { font-family: 'Inter', system-ui, sans-serif; font-weight: 600; font-variant-numeric: tabular-nums; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; color: #a9a698; text-align: center; line-height: 1.9; }
+.pad svg, .pad img { position: absolute; width: 118px; height: 118px; object-fit: contain; opacity: 0; pointer-events: none; }
+.pad.hit svg, .pad.hit img { animation: stamp .55s cubic-bezier(.2, 1.4, .35, 1) forwards; }
+.pad.hit .hint, .pad.set .hint { display: none; }
+/* „set" = otisk už ve sbírce při načtení stránky — finální stav bez opakování dopadu */
+.pad.set svg, .pad.set img { opacity: 1; transform: rotate(-7deg); }
+@keyframes stamp {
+  0% { opacity: 0; transform: scale(2.1) rotate(2deg); filter: blur(2px); }
+  55% { opacity: 1; transform: scale(.94) rotate(-8.5deg); filter: blur(0); }
+  75% { transform: scale(1.03) rotate(-6.5deg); }
+  100% { opacity: 1; transform: scale(1) rotate(-7deg); }
+}
+body.dark .pad { background: #1b242e; border-color: #2a3541; }
