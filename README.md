@@ -16,3 +16,13 @@ Next.js (App Router) + TypeScript + Payload CMS + PostgreSQL. Závazný design: 
 ## Užitečné příkazy
 
 `npm run lint` (ESLint) · `npm run typecheck` (tsc) · `npm run generate:types` (typy z Payload kolekcí, commitují se do `src/payload-types.ts`).
+
+## Výškové profily tras
+
+Body `[km, výška]` pro pole `vyskovyProfil` v `data/chaty/**.yaml` se dokládají z Mapy.com Elevation API — nikdy se nedomýšlejí. Postup (lokálně, potřebuje `NEXT_PUBLIC_MAPY_API_KEY` v `.env`; ze sandboxu denních sessions API volat nejde):
+
+1. Exportuj trasu jako GPX (vlastní nahrávka, plánovač; u geometrie z OSM patří do zdroje atribuce ODbL).
+2. `npx tsx scripts/vyskovy-profil.ts trasa.gpx` — vypíše hotový YAML fragment trasy (délka, převýšení, decimované body se zdrojem a `checked`). `--dry-run` jen spočítá body bez volání API, `--tolerance 3` dá hrubší křivku.
+3. Fragment vlož do pole `trasy` v YAML chaty, ručně doplň `vychoziBod`, `casMin` (z rozcestníku KČT / plánovače — vlastní zdroj!), `znaceni`, `obtiznost` a rozšiř `overeniPristup.source`. Pak `npx payload run scripts/seed-chaty.ts`.
+
+Jedna trasa = 1 dotaz na API (max 256 bodů/dotaz) — hluboko ve free kvótě tarifu Basic; placená spotřeba je u projektu zakázána.
