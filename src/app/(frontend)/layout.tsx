@@ -1,4 +1,5 @@
 import React from 'react'
+import SiteFooter from '@/components/SiteFooter'
 import SiteHeader from '@/components/SiteHeader'
 import TabBar from '@/components/TabBar'
 
@@ -27,17 +28,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
         <script dangerouslySetInnerHTML={{ __html: darkInit }} />
         <SiteHeader />
         <main>{children}</main>
-        <footer className="foot">
-          <div className="wrap">
-            <span className="sg" style={{ fontWeight: 700 }}>
-              Turistické chaty
-            </span>
-            <span>průvodce všemi horskými chatami · Krkonoše → Česko → Slovensko → Alpy</span>
-            <span className="mn" style={{ marginLeft: 'auto', fontSize: 9 }}>
-              MAPY.COM · KČT · SIL OFL FONTY
-            </span>
-          </div>
-        </footer>
+        <SiteFooter />
         <TabBar />
       </body>
     </html>

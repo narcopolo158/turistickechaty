@@ -47,6 +47,9 @@ a:hover { color: var(--blue-deep); }
 /* patička */
 .foot { border-top: 1px solid var(--line); margin-top: 34px; background: var(--paper); }
 .foot .wrap { display: flex; gap: 20px; align-items: center; padding-top: 18px; padding-bottom: 18px; font-size: 12px; color: var(--muted); }
+/* tiráž „Zdroje dat" (DATA-01: atribuce ODbL) — tichý druhý řádek pod brand řádkem */
+.foot .zdroje { display: block; padding-top: 0; font-size: 11px; line-height: 1.65; }
+.foot .zdroje .mn { font-size: 9px; }
 
 /* mobilní tab-bar */
 .tabbar { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; background: var(--paper); border-top: 1px solid var(--line); justify-content: space-around; padding: 7px 6px calc(7px + env(safe-area-inset-bottom)); }
