@@ -1,52 +1,66 @@
 /**
- * DATA-01: export chat Krkonoš z OpenStreetMap (Overpass API).
+ * DATA-01: export chat Krkonoš z OpenStreetMap (Overpass API) — kandidáti.
  *
- * Stáhne objekty `tourism=alpine_hut` a `tourism=wilderness_hut` na české
- * straně Krkonoš (průnik area Česko + bbox pohoří) a založí pro každý
- * `data/chaty/krkonose/<slug>.yaml` — jen doložené údaje z OSM tagů,
+ * Stáhne objekty `tourism=alpine_hut` / `wilderness_hut` / `hut` na české
+ * straně Krkonoš (průnik area Česko + bbox pohoří), surovou odpověď uloží
+ * do `data/kandidati/krkonose/_overpass-export.json` (commituje se — doklad
+ * exportu vč. timestampu a copyright hlavičky Overpass) a transformuje ji
+ * na `data/kandidati/krkonose/<slug>.yaml` — jen doložené údaje z OSM tagů,
  * vše `verified: false` se zdrojem (URL OSM objektu) a atribucí ODbL.
  *
- * Spuštění (sandbox denních sessions na Overpass nedosáhne — spouští se
- * z GitHub Actions workflow „DATA-01: OSM export chat Krkonoš", případně
- * lokálně):
- *   npx tsx scripts/data01-overpass-krkonose.ts
+ * STAGING (rozhodnutí ručního běhu 20. 7.): kandidáti NEJSOU na webu — seed
+ * čte jen `data/chaty/**`. Do `data/chaty/<pohori>/` se YAML povyšuje ručně
+ * až po křížovém ověření (DATA-03), ať web nezaplaví desítky polotenkých
+ * profilů naráz. Ručně kurátorované profily (Luční bouda) se NIKDY
+ * nepřepisují — export je jen porovná a rozdíly vypíše do reportu.
+ *
+ * Spuštění (sandbox denních sessions na Overpass nedosáhne — ostrý běh dělá
+ * GitHub Actions workflow „DATA-01: OSM export chat Krkonoš"):
+ *   npx tsx scripts/data01-overpass-krkonose.ts                  # stáhne + transformuje
  *   npx tsx scripts/data01-overpass-krkonose.ts --api https://overpass.kumi.systems/api/interpreter
+ *   npx tsx scripts/data01-overpass-krkonose.ts --z-jsonu        # offline: jen transformace commitnutého exportu
  *
  * Poctivost dat (CLAUDE.md): skript nic nedomýšlí — zapisuje pouze to, co
- * v OSM je. Existující YAML (ruční profily, např. Luční bouda) NIKDY
- * nepřepisuje. Stav provozu OSM spolehlivě nenese → `stav` se nevyplňuje.
- * Typ je odvozen přímo z významu tagu dle OSM wiki: alpine_hut = obsluhovaná
- * chata, wilderness_hut = útulna (neobsluhovaná) — s poznámkou v YAML.
- * Výstup je checklist pro redakci: křížové ověření řeší DATA-03.
+ * v OSM je. Stav provozu OSM spolehlivě nenese → `stav` se nevyplňuje.
+ * Typ jen z jednoznačného významu tagu dle OSM wiki: alpine_hut = obsluhovaná
+ * chata, wilderness_hut = útulna; nestandardní `tourism=hut` typ nedostane —
+ * určí redakce. `checked` = datum stavu OSM dat (osm3s.timestamp_osm_base
+ * z odpovědi), ne datum transformace.
  *
  * Atribuce: data © přispěvatelé OpenStreetMap, licence ODbL 1.0
  * (https://www.openstreetmap.org/copyright) — v source každého bloku ověření.
  */
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
-import { stringify } from 'yaml'
+import { parse, stringify } from 'yaml'
 
 // Slug generujeme stejně jako Payload hook — jeden zdroj pravdy.
 import { slugify } from '../src/fields/slug'
 
 const VYCHOZI_API = 'https://overpass-api.de/api/interpreter'
-const CILOVY_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
+const KANDIDATI_ADRESAR = join(process.cwd(), 'data', 'kandidati', 'krkonose')
+const RUCNI_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
+const EXPORT_JSON = join(KANDIDATI_ADRESAR, '_overpass-export.json')
 
 /**
  * Hrubé vyhledávací okno Krkonoš (jih, západ, sever, východ) — jen okno
  * dotazu, ne publikovaný údaj: pokrývá Harrachov až Rýchory s rezervou.
  * Příslušnost k ČR řeší průnik s area `ISO3166-1=CZ` přímo v dotazu
  * (bbox samotný by zahrnul i polská schroniska — polská strana Krkonoš
- * je otevřená otázka pro Michala, viz DENIK).
+ * je otevřená otázka pro Michala, viz DENIK session 16).
  */
 export const BBOX_KRKONOSE = '50.55,15.30,50.82,16.05'
 
+// `tourism=hut` je nestandardní (wiki zná alpine_hut/wilderness_hut), ale
+// zadání ručního běhu ho chce v checklistu — kandidáty nic nekazí, nanejvýš
+// přinese pár objektů k ruční kontrole navíc.
 export const OVERPASS_DOTAZ = `[out:json][timeout:120];
 area["ISO3166-1"="CZ"][admin_level="2"]->.cz;
 (
   nwr["tourism"="alpine_hut"](area.cz)(${BBOX_KRKONOSE});
   nwr["tourism"="wilderness_hut"](area.cz)(${BBOX_KRKONOSE});
+  nwr["tourism"="hut"](area.cz)(${BBOX_KRKONOSE});
 );
 out center;`
 
@@ -59,9 +73,10 @@ export type OsmElement = {
   tags?: Record<string, string>
 }
 
-// ── Stažení z Overpass ──────────────────────────────────────────────────────
+// ── Stažení a načtení exportu ───────────────────────────────────────────────
 
-export const stahniElementy = async (api: string): Promise<OsmElement[]> => {
+/** Stáhne surovou odpověď Overpass (text) a ověří, že je to validní export. */
+export const stahniOverpass = async (api: string): Promise<string> => {
   const odpoved = await fetch(api, {
     method: 'POST',
     headers: {
@@ -80,9 +95,29 @@ export const stahniElementy = async (api: string): Promise<OsmElement[]> => {
           : ''
     throw new Error(`Overpass API vrátilo HTTP ${odpoved.status}${napoveda}.`)
   }
-  const telo = (await odpoved.json()) as { elements?: OsmElement[] }
-  if (!Array.isArray(telo.elements)) throw new Error('Overpass API: odpověď bez pole `elements` — neplatný výstup.')
-  return telo.elements
+  const text = await odpoved.text()
+  nactiExport(text) // validace už při stažení — vadný export se neukládá
+  return text
+}
+
+/**
+ * Načte surový export: elementy + `checked` = datum stavu OSM dat
+ * (osm3s.timestamp_osm_base); bez něj datum dneška (transformace).
+ */
+export const nactiExport = (rawJson: string): { elementy: OsmElement[]; checked: string } => {
+  let telo: { elements?: OsmElement[]; osm3s?: { timestamp_osm_base?: string } }
+  try {
+    telo = JSON.parse(rawJson)
+  } catch {
+    throw new Error('Export není validní JSON — Overpass zřejmě vrátil chybovou stránku.')
+  }
+  if (!Array.isArray(telo.elements)) throw new Error('Export bez pole `elements` — neplatný výstup Overpass.')
+  const timestamp = telo.osm3s?.timestamp_osm_base
+  const checked =
+    typeof timestamp === 'string' && /^\d{4}-\d{2}-\d{2}/.test(timestamp)
+      ? timestamp.slice(0, 10)
+      : new Date().toISOString().slice(0, 10)
+  return { elementy: telo.elements, checked }
 }
 
 // ── Mapování OSM elementu na data chaty ─────────────────────────────────────
@@ -133,10 +168,12 @@ export const chataZElementu = (
     nazev: tagy.name,
     slug: slugify(tagy.name),
     zeme: 'cz', // zaručeno průnikem s area ISO3166-1=CZ přímo v dotazu
-    typ: tagy.tourism === 'wilderness_hut' ? 'utulna' : 'obsluhovana',
     oblast: 'krkonose',
     // `stav` vědomě chybí: OSM provoz spolehlivě nenese, nedomýšlíme.
   }
+  // Typ jen z jednoznačného tagu; nestandardní `hut` nechává typ redakci.
+  if (tagy.tourism === 'alpine_hut') data.typ = 'obsluhovana'
+  if (tagy.tourism === 'wilderness_hut') data.typ = 'utulna'
 
   const aliasy = [
     ...hodnoty(tagy.alt_name).map((nazev) => ({ nazev, poznamka: 'alternativní název (OSM alt_name)' })),
@@ -172,8 +209,10 @@ export const chataZElementu = (
   }
 
   const poznamky = [
-    `Automatický export z OSM (DATA-01, ${checked}) — před publikací projít redakcí (DATA-03).`,
-    `Typ odvozen z OSM tagu tourism=${tagy.tourism} (alpine_hut = obsluhovaná, wilderness_hut = útulna).`,
+    `KANDIDÁT z OSM (DATA-01, stav dat ${checked}) — na web povýšit do data/chaty/ až po křížovém ověření (DATA-03).`,
+    tagy.tourism === 'hut'
+      ? 'OSM tag tourism=hut je nestandardní — typ nevyplněn, určí redakce.'
+      : `Typ odvozen z OSM tagu tourism=${tagy.tourism} (alpine_hut = obsluhovaná, wilderness_hut = útulna).`,
     ...(tagy.operator ? [`Provozovatel dle OSM: ${tagy.operator}`] : []),
     ...(tagy.opening_hours ? [`Otvírací doba dle OSM (surový formát, neověřeno): ${tagy.opening_hours}`] : []),
     ...(tagy.note ? [`Poznámka z OSM: ${tagy.note}`] : []),
@@ -181,6 +220,45 @@ export const chataZElementu = (
   data.interniPoznamky = poznamky.join('\n')
 
   return { data }
+}
+
+// ── Porovnání s ručně kurátorovaným profilem ────────────────────────────────
+
+/** Vzdálenost dvou GPS bodů v metrech (haversine — stačí na sanity check). */
+export const vzdalenostM = (aLat: number, aLng: number, bLat: number, bLng: number): number => {
+  const R = 6371008.8
+  const rad = (d: number) => (d * Math.PI) / 180
+  const dLat = rad(bLat - aLat)
+  const dLng = rad(bLng - aLng)
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos(rad(aLat)) * Math.cos(rad(bLat)) * Math.sin(dLng / 2) ** 2
+  return Math.round(2 * R * Math.asin(Math.sqrt(s)))
+}
+
+export type Porovnani = {
+  slug: string
+  url: string
+  nazevOsm: string
+  nazevRucni: string | null
+  /** Vzdálenost OSM bodu od ručně zapsané GPS (m); null, když ruční profil GPS nemá. */
+  gpsRozdilM: number | null
+  vyskaOsm: number | null
+  vyskaRucni: number | null
+}
+
+/** OSM objekt vs. ruční YAML — nic nepřepisuje, jen doloží rozdíly do reportu. */
+export const porovnejSRucnim = (el: OsmElement, rucniYaml: string, slug: string): Porovnani => {
+  const rucni = parse(rucniYaml) as { nazev?: string; lat?: number; lng?: number; vyska?: number } | null
+  const gps = souradnice(el)
+  const maRucniGps = typeof rucni?.lat === 'number' && typeof rucni?.lng === 'number'
+  return {
+    slug,
+    url: osmUrl(el),
+    nazevOsm: el.tags?.name ?? '',
+    nazevRucni: rucni?.nazev ?? null,
+    gpsRozdilM: gps && maRucniGps ? vzdalenostM(gps.lat, gps.lng, rucni.lat as number, rucni.lng as number) : null,
+    vyskaOsm: vyskaZTagu(el.tags?.ele),
+    vyskaRucni: typeof rucni?.vyska === 'number' ? rucni.vyska : null,
+  }
 }
 
 // ── YAML soubor ─────────────────────────────────────────────────────────────
@@ -191,32 +269,42 @@ export const chataZElementu = (
  */
 export const yamlChaty = (data: Record<string, unknown>, url: string, checked: string): string =>
   [
-    `# ${data.nazev} — automatický export z OpenStreetMap (DATA-01, staženo ${checked})`,
+    `# ${data.nazev} — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat ${checked})`,
     `# Zdroj: ${url} · ${ATRIBUCE}`,
-    '# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno (křížové',
-    '# ověření DATA-03). Stav provozu OSM nenese, proto tu není. Nic nedomýšlet!',
+    '# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web',
+    '# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav',
+    '# provozu OSM nenese, proto tu není. Nic nedomýšlet!',
     '',
     stringify(data),
   ].join('\n')
 
 export type Report = {
   zapsano: { slug: string; nazev: string; url: string }[]
-  existujici: { slug: string; url: string }[]
+  jizKandidat: { slug: string; url: string }[]
+  rucni: Porovnani[]
   preskoceno: Preskoceni[]
 }
 
 /**
- * Zapíše YAML soubory do cílového adresáře. Existující soubory (ruční
- * profily) nikdy nepřepisuje; kolizi slugů dvou OSM objektů v jednom běhu
- * řeší deterministický suffix `-<osm id>`.
+ * Zapíše YAML kandidátů. Ruční profily v `data/chaty/krkonose/` se nikdy
+ * nepřepisují — jen porovnají; existující kandidát zůstává (idempotence,
+ * případné ruční úpravy kandidáta se neztrácejí). Kolizi slugů dvou OSM
+ * objektů v jednom běhu řeší deterministický suffix `-<osm id>`.
  */
-export const zapisChaty = (elementy: OsmElement[], cilovyAdresar: string, checked: string): Report => {
-  const report: Report = { zapsano: [], existujici: [], preskoceno: [] }
+export const zapisKandidaty = (
+  elementy: OsmElement[],
+  kandidatiAdresar: string,
+  rucniAdresar: string,
+  checked: string,
+): Report => {
+  const report: Report = { zapsano: [], jizKandidat: [], rucni: [], preskoceno: [] }
   const slugyBehu = new Set<string>()
-  mkdirSync(cilovyAdresar, { recursive: true })
+  mkdirSync(kandidatiAdresar, { recursive: true })
 
   // Deterministické pořadí výstupu nezávislé na pořadí z API.
-  const serazene = [...elementy].sort((a, b) => (a.tags?.name ?? '').localeCompare(b.tags?.name ?? '', 'cs') || a.id - b.id)
+  const serazene = [...elementy].sort(
+    (a, b) => (a.tags?.name ?? '').localeCompare(b.tags?.name ?? '', 'cs') || a.id - b.id,
+  )
 
   for (const el of serazene) {
     const vysledek = chataZElementu(el, checked)
@@ -225,14 +313,22 @@ export const zapisChaty = (elementy: OsmElement[], cilovyAdresar: string, checke
       continue
     }
     const { data } = vysledek
+
+    // Ručně kurátorovaný profil má absolutní přednost — jen porovnat.
+    const rucniCesta = join(rucniAdresar, `${data.slug as string}.yaml`)
+    if (existsSync(rucniCesta)) {
+      report.rucni.push(porovnejSRucnim(el, readFileSync(rucniCesta, 'utf8'), data.slug as string))
+      continue
+    }
+
     let slug = data.slug as string
     if (slugyBehu.has(slug)) slug = `${slug}-${el.id}` // dvě chaty téhož jména v OSM
     data.slug = slug
     slugyBehu.add(slug)
 
-    const cesta = join(cilovyAdresar, `${slug}.yaml`)
+    const cesta = join(kandidatiAdresar, `${slug}.yaml`)
     if (existsSync(cesta)) {
-      report.existujici.push({ slug, url: osmUrl(el) })
+      report.jizKandidat.push({ slug, url: osmUrl(el) })
       continue
     }
     writeFileSync(cesta, yamlChaty(data, osmUrl(el), checked), 'utf8')
@@ -247,19 +343,42 @@ const main = async () => {
   const argv = process.argv.slice(2)
   const apiIndex = argv.indexOf('--api')
   const api = apiIndex >= 0 && argv[apiIndex + 1] ? argv[apiIndex + 1] : VYCHOZI_API
-  const checked = new Date().toISOString().slice(0, 10)
+  const zJsonu = argv.includes('--z-jsonu')
 
-  console.log(`Overpass dotaz na ${api} (alpine_hut + wilderness_hut, ČR ∩ bbox Krkonoš)…`)
-  const elementy = await stahniElementy(api)
-  console.log(`Staženo ${elementy.length} objektů.`)
+  let raw: string
+  if (zJsonu) {
+    if (!existsSync(EXPORT_JSON)) {
+      throw new Error(`--z-jsonu: export ${EXPORT_JSON} neexistuje — nejdřív ho stáhne workflow/běh bez --z-jsonu.`)
+    }
+    console.log(`Offline transformace commitnutého exportu ${EXPORT_JSON}…`)
+    raw = readFileSync(EXPORT_JSON, 'utf8')
+  } else {
+    console.log(`Overpass dotaz na ${api} (alpine_hut + wilderness_hut + hut, ČR ∩ bbox Krkonoš)…`)
+    raw = await stahniOverpass(api)
+    mkdirSync(KANDIDATI_ADRESAR, { recursive: true })
+    writeFileSync(EXPORT_JSON, raw, 'utf8')
+    console.log(`Surový export uložen: ${EXPORT_JSON} (commituje se jako doklad).`)
+  }
 
-  const report = zapisChaty(elementy, CILOVY_ADRESAR, checked)
+  const { elementy, checked } = nactiExport(raw)
+  console.log(`Export: ${elementy.length} objektů, stav OSM dat ${checked}.`)
 
-  console.log(`\n## DATA-01 report (${checked})`)
-  console.log(`\nNově zapsáno: ${report.zapsano.length}`)
+  const report = zapisKandidaty(elementy, KANDIDATI_ADRESAR, RUCNI_ADRESAR, checked)
+
+  console.log(`\n## DATA-01 report (stav OSM dat ${checked})`)
+  console.log(`\nNoví kandidáti: ${report.zapsano.length}`)
   for (const ch of report.zapsano) console.log(`- ${ch.nazev} (\`${ch.slug}.yaml\`) — ${ch.url}`)
-  console.log(`\nPřeskočeno — YAML už existuje (ruční profil se nepřepisuje): ${report.existujici.length}`)
-  for (const ch of report.existujici) console.log(`- ${ch.slug} — ${ch.url}`)
+  console.log(`\nUž kandidátem z dřívějška (nepřepsáno): ${report.jizKandidat.length}`)
+  for (const ch of report.jizKandidat) console.log(`- ${ch.slug} — ${ch.url}`)
+  console.log(`\nRučně kurátorované profily (nedotčeny — jen porovnání s OSM): ${report.rucni.length}`)
+  for (const p of report.rucni) {
+    const gps = p.gpsRozdilM != null ? `GPS rozdíl ${p.gpsRozdilM} m` : 'GPS v ručním profilu chybí'
+    const vyska =
+      p.vyskaOsm != null && p.vyskaRucni != null
+        ? `výška OSM ${p.vyskaOsm} m vs. ruční ${p.vyskaRucni} m`
+        : `výška OSM ${p.vyskaOsm ?? '—'} / ruční ${p.vyskaRucni ?? '—'}`
+    console.log(`- ${p.slug}: ${gps}; ${vyska}${p.nazevOsm !== p.nazevRucni ? `; název OSM „${p.nazevOsm}" vs. „${p.nazevRucni}"` : ''} — ${p.url}`)
+  }
   console.log(`\nPřeskočeno — neúplné v OSM (k ruční kontrole): ${report.preskoceno.length}`)
   for (const p of report.preskoceno) console.log(`- ${p.url} (${p.duvod === 'bez-nazvu' ? 'chybí name' : 'chybí souřadnice'})`)
 }

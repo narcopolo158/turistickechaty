@@ -1,10 +1,14 @@
 # DATA-01: export chat Krkonoš z OpenStreetMap — sandbox denních sessions na
 # Overpass API nedosáhne (proxy), GitHub Actions ano. Spouští se ručně jedním
-# klikem (Actions → „DATA-01: OSM export chat Krkonoš" → Run workflow);
-# nové YAML commitne do main, report přistane v summary běhu.
+# klikem (Actions → „DATA-01: OSM export chat Krkonoš" → Run workflow).
 #
-# Skript existující soubory nikdy nepřepisuje (ruční profily jsou v bezpečí),
-# běh je tedy idempotentní — opakované spuštění přidá jen nově vzniklé objekty.
+# Běh: (1) stáhne surový JSON export (commituje se jako doklad — nese
+# timestamp stavu OSM dat i copyright hlavičku Overpass), (2) v témže běhu
+# ho transformační skript převede na YAML KANDIDÁTŮ v data/kandidati/krkonose/
+# — kandidáti NEJSOU na webu (seed čte jen data/chaty/**); do data/chaty/ se
+# povyšují ručně až po křížovém ověření (DATA-03). Ruční profily (Luční
+# bouda) se nikdy nepřepisují — skript je jen porovná v reportu (summary).
+# Opakované spuštění je idempotentní — přidá jen nově vzniklé objekty.
 name: 'DATA-01: OSM export chat Krkonoš'
 
 on:
@@ -24,7 +28,7 @@ concurrency:
 
 jobs:
   export:
-    name: Overpass → data/chaty/krkonose
+    name: Overpass → kandidáti (data/kandidati/krkonose)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -36,23 +40,23 @@ jobs:
 
       - run: npm ci
 
-      - name: Export z Overpass API
+      - name: Export z Overpass API + transformace na kandidáty
         run: |
           npx tsx scripts/data01-overpass-krkonose.ts --api '${{ inputs.api }}' | tee report.txt
           echo '## DATA-01 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Commit nových YAML do main
+      - name: Commit exportu a kandidátů do main
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/chaty/krkonose
+          git add data/kandidati
           if git diff --cached --quiet; then
-            echo 'Žádné nové chaty — nic ke commitu.'
+            echo 'Žádní noví kandidáti ani změna exportu — nic ke commitu.'
             exit 0
           fi
-          pocet=$(git diff --cached --name-only --diff-filter=A | wc -l)
-          git commit -m "data: OSM Overpass export chat Krkonoš (+${pocet} nových, z Actions)" \
-            -m 'Zdroj: OpenStreetMap (ODbL), tourism=alpine_hut/wilderness_hut, vše verified: false — ke kontrole redakcí (DATA-03).'
+          pocet=$(git diff --cached --name-only --diff-filter=A -- 'data/kandidati/**/*.yaml' | wc -l)
+          git commit -m "data: OSM Overpass export chat Krkonoš — kandidáti (+${pocet} nových, z Actions)" \
+            -m 'Zdroj: OpenStreetMap (ODbL), tourism=alpine_hut/wilderness_hut/hut, vše verified: false. Kandidáti nejsou na webu — do data/chaty/ povyšovat po křížovém ověření (DATA-03).'
           git pull --rebase origin main
           git push origin main
