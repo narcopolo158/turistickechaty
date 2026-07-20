@@ -30,3 +30,12 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false; ruční běh —
+  WebFetch průchozí jen na část domén, zbytek padá na PROVENANCE/timeout;
+  křížový checklist: přehled ubytování
+  treking.cz/prehledy/krkonose-ubytovani.htm, načteno 20. 7. 2026 — výtah
+  nemusí být úplný, končí „a další“): Web z OSM (chatahubertka.cz) nedostupný
+  (robots ConnectTimeout). Výtah treking.cz uvádí „Bouda Hubertus“ — podobnost
+  jména NEztotožňuji (nedomýšlet; Hubertka vs. Hubertus mohou být různé
+  objekty). K RUČNÍ KONTROLE.

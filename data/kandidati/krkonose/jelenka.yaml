@@ -34,3 +34,14 @@ interniPoznamky: >-
   wilderness_hut = útulna).
 
   Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 08:00-18:00
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false; ruční běh —
+  WebFetch průchozí jen na část domén, zbytek padá na PROVENANCE/timeout;
+  křížový checklist: přehled ubytování
+  treking.cz/prehledy/krkonose-ubytovani.htm, načteno 20. 7. 2026 — výtah
+  nemusí být úplný, končí „a další“): Web z OSM (jelenka.eu) ze sandboxu
+  nedostupný (PROVENANCE_REQUIRED — interaktivní schválení bez odezvy), ALE
+  přehled ubytování treking.cz uvádí „Bouda Jelenka“ mezi hřebenovými boudami
+  — křížový signál existence. Jelenka pod Sněžkou je známá bouda na cestě přes
+  Obří hřeben. NÁVRH REDAKCI: povýšit až po otevření webu (Michal z domácí
+  sítě).
