@@ -32,3 +32,13 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20): web z OSM (chatakrakonos.eu)
+  NEEXISTUJE — DNS jméno se nepřekládá. Nezávislý zdroj treking.cz
+  (treking.cz/chaty/krakonos.htm, načteno 20. 7. 2026; stránka s poslední
+  aktualizací 18. 11. 2019 — stáří zdroje!) uvádí: 1127 m n. m., Bobí louky u
+  Pece pod Sněžkou mezi Kolínskou a Pražskou boudou, restaurace + bar +
+  salónek, 54 lůžek ve 3–5lůžkových pokojích. NÁVRH REDAKCI: povýšit —
+  existence boudy doložena, ale AKTUÁLNÍ provoz a kontakty nutno ověřit jinde
+  (zdroj 2019; mrtvý web může značit změnu provozovatele) → priorita pro
+  DATA-04.

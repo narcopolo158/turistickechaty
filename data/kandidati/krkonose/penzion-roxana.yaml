@@ -29,3 +29,11 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false): web z OSM
+  (rokytnice.com/roxana) nedostupný — timeout při http i https. V přehledu
+  ubytování Krkonoš na treking.cz (treking.cz/prehledy/krkonose-ubytovani.htm)
+  objekt uveden není. Jméno „Penzion Roxana" odpovídá běžnému penzionu, ne
+  horské boudě. NÁVRH REDAKCI: do průvodce horských chat nezařazovat (OSM tag
+  alpine_hut se jeví jako nadhodnocený); definitivní verdikt na Michalovi —
+  charakter objektu se ze sandboxu nepodařilo doložit přímo.

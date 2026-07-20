@@ -30,3 +30,10 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false): web z OSM
+  (vyrovka-krkonose.cz) má rozbité HTTPS — certifikát neplatí pro doménu
+  (hostname mismatch), načtení selhalo s www i bez. Česká Wikipedia je ze
+  sandboxu nedosažitelná (cache-only). K RUČNÍ KONTROLE: stav webu a aktuální
+  provozovatel; charakter hřebenové boudy z dosažitelných zdrojů nepotvrzen
+  ani nevyvrácen — nedomýšlíme.

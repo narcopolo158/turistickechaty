@@ -31,3 +31,10 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false): web z OSM
+  (chata-tereza.com) nedostupný — timeout. V přehledu ubytování Krkonoš na
+  treking.cz (treking.cz/prehledy/krkonose-ubytovani.htm) objekt uveden není.
+  Doména z OSM zní „chata-tereza" — jméno charakter nerozhodne. K RUČNÍ
+  KONTROLE: charakter objektu (bouda vs. penzion) se ze sandboxu nepodařilo
+  doložit.

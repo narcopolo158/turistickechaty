@@ -22,3 +22,9 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  DATA-03 křížové ověření (checked 2026-07-20, verified false): OSM nenese web
+  ani kontakty. V přehledu ubytování Krkonoš na treking.cz
+  (treking.cz/prehledy/krkonose-ubytovani.htm) objekt uveden není. K RUČNÍ
+  KONTROLE: existenci a charakter (bouda vs. penzion) se ze sandboxu
+  nepodařilo doložit z žádného dosažitelného zdroje.
