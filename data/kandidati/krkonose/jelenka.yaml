@@ -1,0 +1,36 @@
+# Jelenka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-12)
+# Zdroj: https://www.openstreetmap.org/way/108114544 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Jelenka
+slug: jelenka
+zeme: cz
+oblast: krkonose
+typ: obsluhovana
+lat: 50.7419165
+lng: 15.7777974
+vyska: 1260
+obec: Malá Úpa
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/108114544 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-12
+kontakty:
+  telefon: +420 499 895 105
+  web: http://jelenka.eu
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/108114544 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-12
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-12) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 08:00-18:00

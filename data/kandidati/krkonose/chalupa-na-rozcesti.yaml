@@ -1,0 +1,40 @@
+# Chalupa Na Rozcestí — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-12)
+# Zdroj: https://www.openstreetmap.org/way/19921113 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chalupa Na Rozcestí
+slug: chalupa-na-rozcesti
+zeme: cz
+oblast: krkonose
+typ: obsluhovana
+lat: 50.7056695
+lng: 15.6749204
+vyska: 1349
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/19921113 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-12
+kontakty:
+  telefon: +420 499896295;+420 777922161
+  email: info@chalupanarozcesti.cz
+  web: https://www.chalupanarozcesti.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/19921113 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-12
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-12) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Zdeněk Nikl,Okořská 349/1, 181 00 Praha 8
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Su-Th 09:30-18:00; Fr-Sa
+  09:30-19:00

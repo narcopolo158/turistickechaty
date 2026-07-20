@@ -1,0 +1,35 @@
+# Lyžařská bouda — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-12)
+# Zdroj: https://www.openstreetmap.org/way/218896623 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Lyžařská bouda
+slug: lyzarska-bouda
+zeme: cz
+oblast: krkonose
+typ: obsluhovana
+lat: 50.683877
+lng: 15.700547
+obec: Černý Důl
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/218896623 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-12
+kontakty:
+  telefon: +420 774 304 091
+  web: http://lyzarskabouda.com
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/218896623 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-12
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-12) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 10:30-22:00
