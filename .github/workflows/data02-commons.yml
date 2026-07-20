@@ -1,0 +1,63 @@
+# DATA-02: fotky chat z Wikimedia Commons — sandbox denních sessions na
+# Commons API nedosáhne (proxy), GitHub Actions ano. Spouští se ručně jedním
+# klikem (Actions → „DATA-02: fotky chat z Wikimedia Commons" → Run workflow).
+#
+# Běh: (1) pro každou chatu s GPS (data/chaty/** i kandidáti DATA-01) položí
+# geosearch + kategorii na Commons API a surové odpovědi commitne jako doklad
+# (data/kandidati/fotky/_commons-export.json), (2) v témže běhu je licenční
+# síto (jen CC0 / CC BY / CC BY-SA / public domain) převede na kandidátní
+# METADATA v data/kandidati/fotky/<oblast>/<slug>.yaml. Soubory fotek se
+# NESTAHUJÍ — výběr, kontrolu licence a nahrání do kolekce Fotky dělá
+# redakce. Kandidátní YAML jsou strojově generované, opakovaný běh je
+# přepíše aktuálním stavem Commons.
+name: 'DATA-02: fotky chat z Wikimedia Commons'
+
+on:
+  workflow_dispatch:
+    inputs:
+      radius:
+        description: 'Poloměr geosearch okolo GPS chaty (m)'
+        required: false
+        default: '300'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data02-commons
+  cancel-in-progress: false
+
+jobs:
+  export:
+    name: Commons → kandidátní fotky (data/kandidati/fotky)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Dotazy na Commons API + licenční síto
+        run: |
+          npx tsx scripts/data02-commons-fotky.ts --radius '${{ inputs.radius }}' | tee report.txt
+          echo '## DATA-02 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit exportu a kandidátních fotek do main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/kandidati/fotky
+          if git diff --cached --quiet; then
+            echo 'Žádná změna kandidátních fotek — nic ke commitu.'
+            exit 0
+          fi
+          pocet=$(git diff --cached --name-only -- 'data/kandidati/fotky/**/*.yaml' | wc -l)
+          git commit -m "data: Wikimedia Commons — kandidátní fotky chat (${pocet} YAML, z Actions)" \
+            -m 'Jen metadata (autor, licence, URL) po licenčním sítu CC0/CC BY/CC BY-SA/PD. Soubory se nestahují — výběr a nahrání do kolekce Fotky dělá redakce.'
+          git pull --rebase origin main
+          git push origin main
