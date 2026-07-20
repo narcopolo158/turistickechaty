@@ -14,6 +14,7 @@ import { parse } from 'yaml'
 import {
   API_COMMONS,
   cistyText,
+  dobaCekaniMs,
   nactiChaty,
   nactiSurovyExport,
   posudLicenci,
@@ -265,20 +266,35 @@ describe('tvar dotazů a stahniJson (mock API)', () => {
     vi.unstubAllGlobals()
   })
 
-  it('na 429/5xx jednou počká a zkusí to znovu (rate limity sdílených IP runnerů)', async () => {
+  it('na 429/5xx opakuje s backoffem, i dvě 429 po sobě přežije (lekce z prvního běhu)', async () => {
     const fetchMock = vi
       .fn()
+      .mockResolvedValueOnce(new Response('busy', { status: 429 }))
       .mockResolvedValueOnce(new Response('busy', { status: 429 }))
       .mockResolvedValueOnce(new Response('{"query":{"pages":[]}}', { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
     const vysledek = await stahniJson(API_COMMONS, { pauzaMs: 0 })
     expect(vysledek).toEqual({ query: { pages: [] } })
-    expect(fetchMock).toHaveBeenCalledTimes(2)
+    expect(fetchMock).toHaveBeenCalledTimes(3)
 
-    // vyčerpané pokusy = tvrdá chyba
+    // vyčerpané pokusy = tvrdá chyba (a 4xx mimo 429 se neopakuje vůbec)
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('down', { status: 503 })))
-    await expect(stahniJson(API_COMMONS, { pauzaMs: 0 })).rejects.toThrow(/503/)
+    await expect(stahniJson(API_COMMONS, { pokusy: 2, pauzaMs: 0 })).rejects.toThrow(/503/)
+    const zakazano = vi.fn().mockResolvedValue(new Response('no', { status: 403 }))
+    vi.stubGlobal('fetch', zakazano)
+    await expect(stahniJson(API_COMMONS, { pauzaMs: 0 })).rejects.toThrow(/403/)
+    expect(zakazano).toHaveBeenCalledTimes(1)
     vi.unstubAllGlobals()
+  })
+
+  it('dobaCekaniMs: exponenciální backoff se stropem a respekt k Retry-After', () => {
+    expect(dobaCekaniMs(1, 30_000)).toBe(30_000)
+    expect(dobaCekaniMs(2, 30_000)).toBe(60_000)
+    expect(dobaCekaniMs(3, 30_000)).toBe(120_000)
+    expect(dobaCekaniMs(4, 30_000)).toBe(150_000) // strop
+    expect(dobaCekaniMs(1, 30_000, '90')).toBe(90_000) // Retry-After delší než backoff
+    expect(dobaCekaniMs(3, 30_000, '5')).toBe(120_000) // backoff delší než Retry-After
+    expect(dobaCekaniMs(1, 30_000, 'nesmysl')).toBe(30_000)
   })
 })
 

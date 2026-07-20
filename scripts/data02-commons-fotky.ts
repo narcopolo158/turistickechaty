@@ -145,30 +145,52 @@ export const urlKategorie = (api: string, chata: ChataProDotaz): string => {
 }
 
 /**
- * GET s identifikačním User-Agentem. Na 429/5xx jednou počká a zkusí to
- * znovu — lekce z prvního ostrého běhu DATA-01: sdílené IP Actions runnerů
- * narážejí na rate limity častěji než lokální stroj.
+ * Doba čekání před dalším pokusem: exponenciální backoff (základ × 2^pokus,
+ * strop 150 s) — a když server pošle `Retry-After` (Wikimedia ho u 429
+ * posílá), respektuje se ta delší z obou hodnot.
+ */
+export const dobaCekaniMs = (
+  cisloPokusu: number,
+  zakladMs: number,
+  retryAfterSekundy?: string | null,
+): number => {
+  const backoff = Math.min(zakladMs * 2 ** (cisloPokusu - 1), 150_000)
+  const zHlavicky = Number(retryAfterSekundy)
+  return Number.isFinite(zHlavicky) && zHlavicky > 0 ? Math.max(backoff, zHlavicky * 1000) : backoff
+}
+
+/**
+ * GET s identifikačním User-Agentem. Na 429/5xx čeká a opakuje (výchozí
+ * 3 opakování, backoff 30 → 60 → 120 s + respekt k Retry-After) — první
+ * ostrý běh ukázal, že Commons limituje sdílené IP Actions runnerů po
+ * dávkách ~10 dotazů a jeden pokus s pevnou pauzou nestačí.
  */
 export const stahniJson = async (
   url: string,
   moznosti: { pokusy?: number; pauzaMs?: number } = {},
 ): Promise<unknown> => {
-  const { pokusy = 2, pauzaMs = 30_000 } = moznosti
-  const odpoved = await fetch(url, { headers: { 'User-Agent': USER_AGENT } })
-  if (!odpoved.ok) {
-    if ((odpoved.status === 429 || odpoved.status >= 500) && pokusy > 1) {
-      console.log(`HTTP ${odpoved.status} — pauza ${Math.round(pauzaMs / 1000)} s a jeden nový pokus…`)
-      await new Promise((done) => setTimeout(done, pauzaMs))
-      return stahniJson(url, { pokusy: pokusy - 1, pauzaMs })
+  const { pokusy = 4, pauzaMs = 30_000 } = moznosti
+  let posledniStatus = 0
+  for (let cisloPokusu = 1; cisloPokusu <= pokusy; cisloPokusu++) {
+    const odpoved = await fetch(url, { headers: { 'User-Agent': USER_AGENT } })
+    if (odpoved.ok) {
+      try {
+        return await odpoved.json()
+      } catch {
+        throw new Error('Commons API nevrátilo validní JSON.')
+      }
     }
-    const napoveda = odpoved.status === 429 ? ' (příliš dotazů — Commons žádá zpomalit)' : ''
-    throw new Error(`Commons API vrátilo HTTP ${odpoved.status}${napoveda}.`)
+    posledniStatus = odpoved.status
+    const opakovatelna = odpoved.status === 429 || odpoved.status >= 500
+    if (!opakovatelna || cisloPokusu === pokusy) break
+    const cekani = dobaCekaniMs(cisloPokusu, pauzaMs, odpoved.headers.get('retry-after'))
+    console.log(
+      `HTTP ${odpoved.status} — čekám ${Math.round(cekani / 1000)} s (pokus ${cisloPokusu + 1}/${pokusy})…`,
+    )
+    await new Promise((done) => setTimeout(done, cekani))
   }
-  try {
-    return await odpoved.json()
-  } catch {
-    throw new Error('Commons API nevrátilo validní JSON.')
-  }
+  const napoveda = posledniStatus === 429 ? ' (příliš dotazů — Commons žádá zpomalit)' : ''
+  throw new Error(`Commons API vrátilo HTTP ${posledniStatus}${napoveda}.`)
 }
 
 // ── Odpověď API ─────────────────────────────────────────────────────────────
@@ -473,11 +495,14 @@ const main = async () => {
     const checked = new Date().toISOString().slice(0, 10)
     console.log(`Commons dotazy (${api}, geosearch ${radiusM} m + kategorie) pro ${chaty.length} chat…`)
     exportDat = { checked, radiusM, api, dotazy: {} }
+    // Tempo pod 1 dotaz/s: první ostrý běh na 2/s narážel na 429 po ~10
+    // dotazech — limiter sdílených IP runnerů chce opravdu volnou chůzi.
+    const TEMPO_MS = 1200
     for (const chata of chaty) {
       const geosearch = await stahniJson(urlGeosearch(api, chata, radiusM))
-      await spanek(250) // slušnost k API — žádné salvy
+      await spanek(TEMPO_MS)
       const kategorie = await stahniJson(urlKategorie(api, chata))
-      await spanek(250)
+      await spanek(TEMPO_MS)
       exportDat.dotazy[`${chata.oblast}/${chata.slug}`] = { geosearch, kategorie }
       console.log(`- ${chata.nazev}: dotazy staženy`)
     }
