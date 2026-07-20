@@ -69,14 +69,54 @@ overeniProvoz:
   checked: '2026-07-19'
 
 # ── Přístup ───────────────────────────────────────────────────────────────
-# Pěší trasy zatím nezapsány — časy a převýšení nejsou doloženy (web boudy je neuvádí).
+# Pěší trasy: geometrie z GPX exportů plánovače Mapy.com (Michal, 20. 7. 2026);
+# výšky = výškový model Mapy.com obsažený v exportu (stejný model jako Elevation API, proto verified: false).
+# Délka haversinem, decimace Douglas–Peucker 2 m. casMin = orientační výpočet dle DIN 33466
+# (4 km/h + 300 m/h stoupání + 500 m/h klesání, zaokrouhleno na 5 min) — viz rozhodnutí v BACKLOG.
+# DOPLNIT po potvrzení od Michala: znaceni (cervena|modra|zelena|zluta), obtiznost (snadna|stredni|narocna).
+trasy:
+  - vychoziBod: Špindlerův Mlýn
+    casMin: 195 # orientační výpočet DIN 33466
+    prevyseni: 699 # stoupání dle modelu (klesání 24 m)
+    delkaKm: 6.8
+    vyskovyProfil: [
+      [0.0, 737], [0.03, 739], [0.3, 795], [0.4, 819], [0.77, 867], [0.92, 874],
+      [1.29, 873], [1.4, 869], [1.57, 883], [1.65, 892], [1.74, 898], [1.79, 905],
+      [1.87, 908], [2.04, 927], [2.11, 939], [2.18, 946], [2.3, 963], [2.62, 994],
+      [2.85, 1037], [2.93, 1047], [2.97, 1048], [3.01, 1056], [3.07, 1070], [3.11, 1070],
+      [3.13, 1074], [3.25, 1109], [3.38, 1141], [3.58, 1206], [3.63, 1210], [3.71, 1233],
+      [3.74, 1232], [3.78, 1243], [3.84, 1252], [3.86, 1250], [3.87, 1257], [3.9, 1263],
+      [3.92, 1273], [3.93, 1274], [3.94, 1282], [3.96, 1283], [4.01, 1295], [4.06, 1307],
+      [4.07, 1316], [4.12, 1328], [4.18, 1336], [4.31, 1366], [4.34, 1366], [4.37, 1379],
+      [4.48, 1400], [4.55, 1419], [4.58, 1424], [4.63, 1425], [4.72, 1420], [4.91, 1418],
+      [5.03, 1410], [5.16, 1408], [5.45, 1412], [6.04, 1415], [6.28, 1421], [6.78, 1412]
+    ]
+  - vychoziBod: Pec pod Sněžkou
+    casMin: 220 # orientační výpočet DIN 33466
+    prevyseni: 742 # stoupání dle modelu (klesání 108 m)
+    delkaKm: 8.0
+    vyskovyProfil: [
+      [0.0, 778], [0.1, 775], [0.2, 793], [0.33, 810], [0.62, 837], [0.93, 850],
+      [1.19, 874], [1.46, 883], [1.63, 885], [1.66, 883], [1.73, 888], [1.79, 886],
+      [1.81, 890], [1.87, 893], [1.98, 893], [2.04, 898], [2.19, 900], [2.25, 907],
+      [2.3, 908], [2.47, 925], [2.49, 928], [2.51, 939], [2.54, 943], [2.59, 936],
+      [2.63, 939], [2.79, 969], [2.85, 986], [2.95, 1012], [3.14, 1051], [3.32, 1079],
+      [3.39, 1080], [3.5, 1099], [3.61, 1109], [3.76, 1127], [3.86, 1135], [4.01, 1141],
+      [4.19, 1162], [4.29, 1179], [4.65, 1252], [4.75, 1269], [5.04, 1297], [5.45, 1356],
+      [5.64, 1378], [5.71, 1383], [5.89, 1409], [6.0, 1421], [6.15, 1428], [6.39, 1453],
+      [6.78, 1510], [6.88, 1513], [6.96, 1511], [7.1, 1498], [7.38, 1457], [7.59, 1434],
+      [7.85, 1413], [7.97, 1412]
+    ]
 autem: |-
   Autem jen na placené parkoviště P1 (dopravní terminál) na začátku Pece pod Sněžkou u čerpací stanice KM Prona.
   Zbývajících cca 8,5 km se stoupáním 750 m zajišťuje smluvní přeprava hotelu — rezervace nejpozději den předem na +420 733 740 889.
 overeniPristup:
-  source: https://www.lucnibouda.cz/cs/doprava-k-hotelu/
+  source: >-
+    https://www.lucnibouda.cz/cs/doprava-k-hotelu/ (smluvní přeprava);
+    trasy: GPX exporty z plánovače Mapy.com (Michal, 20. 7. 2026) — geometrie i výškový model Mapy.com;
+    casMin: orientační výpočet DIN 33466
   verified: false
-  checked: '2026-07-19'
+  checked: '2026-07-20'
 
 # ── Historie ──────────────────────────────────────────────────────────────
 rokVzniku: 1623 # letopočet na základním kameni objeveném při rekonstrukci 1869; podle provozovatele bouda stála už v 2. pol. 16. století
@@ -134,4 +174,4 @@ interniPoznamky: |-
   Kapacita lůžek: na webu boudy neuvedena — nezapsáno (žádné „≈ 90 lůžek" z prototypu, to byl demo údaj).
   Provoz 6–8/2025 omezen kvůli sporu majitelů se Správou KRNAP (přístup jen pro ubytované); od 9. 8. 2025 běžný režim po dohodě s MŽP. Sledovat případné změny.
   Webkamera: web ji zmiňuje, přesná URL nedohledána — doplnit.
-  Pěší trasy + výškový profil: doplnit po doložení (rozcestníky KČT / mapy.cz / GPX) — souvisí s interaktivním výškovým profilem.
+  Pěší trasy: doloženy 20. 7. 2026 (GPX Špindl + Pec); zbývá doplnit znaceni a obtiznost (Michal potvrdí barvy z plánovače). Třetí trasa od Špindlerovy boudy (bus) přijde, až Michal exportuje GPX.
