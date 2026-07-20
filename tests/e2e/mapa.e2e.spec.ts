@@ -104,6 +104,21 @@ test.describe('Mapový pás (F0-07)', () => {
     await expect(logo.locator('img')).toHaveAttribute('alt', 'Mapy.com')
   })
 
+  test('mapa je i v katalogu /chaty s markerem publikované chaty (rozhodnutí 20. 7.)', async ({ page }) => {
+    await page.goto('http://localhost:3000/chaty')
+    const mapa = page.getByTestId('mapa-chat')
+    await expect(mapa).toBeVisible()
+
+    // stejná komponenta, stejná data: marker Luční boudy vč. hover preview
+    await expect(mapa.locator('.mk-provoz')).toHaveCount(1)
+    await mapa.locator('.mk-provoz').hover()
+    await expect(mapa.locator('.mpre')).toContainText('Luční bouda')
+
+    // klik naviguje na profil i z katalogu
+    await mapa.locator('.mk-provoz').click()
+    await page.waitForURL('**/cesko/krkonose/lucni-bouda')
+  })
+
   test('atribuce spadne na fallback, když tiles.json neodpoví', async ({ page }) => {
     await page.route('https://api.mapy.com/v1/maptiles/outdoor/tiles.json*', (route) =>
       route.abort(),

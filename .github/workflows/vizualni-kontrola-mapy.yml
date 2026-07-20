@@ -1,0 +1,105 @@
+# Vizuální kontrola mapy s reálnými dlaždicemi Mapy.com (F0-07) — sandbox
+# denních sessions na api.mapy.com nedosáhne, GitHub Actions ano (rozhodnutí
+# Michala 20. 7.: kontrola se dělá tudy, ne lokálně). Postaví web nad čistou
+# Postgres, nasadí seed, vyfotí mapový pás (homepage light / dark / hover
+# preview + katalog /chaty) a snímky nahraje jako artifact i commitne do
+# docs/screenshots/f0-07/.
+#
+# Klíč: secret MAPY_API_KEY → NEXT_PUBLIC_MAPY_API_KEY nastavený PŘED buildem
+# (NEXT_PUBLIC_ proměnné se do klientského bundle inlinují při buildu).
+# Proti smyčce: commit snímků nese „[skip ci]" a push změn jen v
+# docs/screenshots/** tento workflow navíc nespouští (paths-ignore).
+name: 'Vizuální kontrola: mapa (F0-07)'
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'docs/screenshots/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vizualni-kontrola-mapy
+  cancel-in-progress: true
+
+jobs:
+  snimky:
+    name: Snímky mapového pásu
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: user
+          POSTGRES_PASSWORD: heslo
+          POSTGRES_DB: turistickechaty
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U user"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://user:heslo@localhost:5432/turistickechaty
+      PAYLOAD_SECRET: ci-vizualni-kontrola-mapy
+      NEXT_PUBLIC_MAPY_API_KEY: ${{ secrets.MAPY_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Seed vzorových dat (data/*.yaml → Payload)
+        run: npx payload run scripts/seed-chaty.ts
+
+      - name: Build (klíč z secretu se inlinuje teď)
+        run: |
+          if [ -z "${NEXT_PUBLIC_MAPY_API_KEY}" ]; then
+            echo '::error::Secret MAPY_API_KEY není nastaven — mapa by se bez klíče vůbec nevykreslila.'
+            exit 1
+          fi
+          npm run build
+
+      - name: Chromium pro Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Start serveru a čekání na :3000
+        run: |
+          npm run start &
+          for i in $(seq 1 45); do
+            curl -sf -o /dev/null http://localhost:3000 && exit 0
+            sleep 2
+          done
+          echo '::error::Server do 90 s nenaběhl.'
+          exit 1
+
+      - name: Snímky (light / dark / hover / katalog) s reálnými dlaždicemi
+        run: node scripts/ci/screenshot-mapa.mjs
+
+      - name: Artifact se snímky
+        uses: actions/upload-artifact@v4
+        with:
+          name: mapa-f0-07
+          path: docs/screenshots/f0-07/
+          if-no-files-found: error
+
+      - name: Commit snímků do docs/screenshots/f0-07/
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/screenshots/f0-07
+          if git diff --cached --quiet; then
+            echo 'Snímky beze změny — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m 'docs: snímky mapy s reálnými dlaždicemi (F0-07, z Actions) [skip ci]'
+          git pull --rebase origin main
+          git push origin main
