@@ -6,8 +6,9 @@ test.describe('Frontend', () => {
 
     await expect(page).toHaveTitle(/turistickechaty\.cz/)
 
+    // hero dle F0-02 (šablonový test z F0-01 čekal „turistickechaty.cz")
     const heading = page.locator('h1').first()
 
-    await expect(heading).toHaveText('turistickechaty.cz')
+    await expect(heading).toContainText('Každá bouda')
   })
 })

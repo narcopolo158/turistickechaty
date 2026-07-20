@@ -27,8 +27,10 @@ test.describe('Admin Panel', () => {
 
   test('can navigate to list view', async () => {
     await page.goto('http://localhost:3000/admin/collections/users')
-    await expect(page).toHaveURL('http://localhost:3000/admin/collections/users')
-    const listViewArtifact = page.locator('h1', { hasText: 'Users' }).first()
+    // Payload list view si do URL doplňuje ?depth=&limit= — stačí shoda cesty
+    await expect(page).toHaveURL(/http:\/\/localhost:3000\/admin\/collections\/users(\?.*)?$/)
+    // kolekce má od F0-04 české labels (šablonový test čekal „Users")
+    const listViewArtifact = page.locator('h1', { hasText: 'Uživatelé' }).first()
     await expect(listViewArtifact).toBeVisible()
   })
 

@@ -2,6 +2,7 @@ import { getPayload } from 'payload'
 import config from '../payload.config'
 
 import type { Chaty as Chata, Oblasti as Oblast } from '../payload-types'
+import type { MapovaChata } from '../components/MapaChat'
 
 /** Kód země (Payload select) → český URL slug dle plánu kap. 6: /cesko/krkonose/lucni-bouda */
 export const ZEME_SLUG: Record<string, string> = {
@@ -110,3 +111,30 @@ export async function getChataBySlug(slug: string): Promise<Chata | null> {
 }
 
 export type { Chata, Oblast }
+
+/** Publikované chaty se souřadnicemi pro mapový pás (F0-07) — jen doložená pole. */
+export async function getChatyProMapu(): Promise<MapovaChata[]> {
+  const payload = await getPayload({ config })
+  const res = await payload.find({
+    collection: 'chaty',
+    where: { and: [{ lat: { exists: true } }, { lng: { exists: true } }] },
+    depth: 1,
+    limit: 500,
+    overrideAccess: false,
+  })
+  return res.docs.flatMap((chata) => {
+    const url = chataPath(chata)
+    if (url == null || chata.lat == null || chata.lng == null) return []
+    return [
+      {
+        slug: chata.slug!,
+        nazev: chata.nazev,
+        vyska: chata.vyska ?? null,
+        stav: chata.stav ?? null,
+        lat: chata.lat,
+        lng: chata.lng,
+        url,
+      },
+    ]
+  })
+}
