@@ -1,0 +1,32 @@
+/* Razítkovník (F0-08) — hodnoty 1:1 z prototyp.html (.pbar, .slotg, .slot)
+   a razitko-moment.html (.es prázdné stavy) */
+
+.pbar { display: flex; align-items: center; gap: 12px; margin: 4px 0 18px; }
+.pbar .tr { flex: 1; height: 6px; border-radius: 99px; background: #eceade; overflow: hidden; }
+.pbar .tr i { display: block; height: 100%; background: var(--red); border-radius: 99px; transition: width .5s; }
+.pbar span { font-size: 10.5px; color: var(--muted); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.slotg { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.slot { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 14px 8px 11px; text-align: center; }
+.slot .ot { width: 78px; height: 78px; margin: 0 auto; }
+.slot .ot svg { width: 78px; height: 78px; display: block; }
+.slot .ot img { max-width: 78px; max-height: 78px; }
+.slot .nm { font-size: 11.5px; font-weight: 600; margin-top: 6px; line-height: 1.25; }
+.slot .nm a { color: inherit; }
+.slot .nm a:hover { color: var(--blue); }
+.slot .dt { font-size: 8.5px; color: var(--muted); margin-top: 2px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+
+/* prázdné stavy — razítková řeč (šedý přerušovaný obrys, vždy s akcí) */
+.es { background: #fbfaf6; border-radius: 12px; padding: 26px 20px; text-align: center; }
+.es .h { font-weight: 700; font-size: 16px; margin: 10px 0 3px; }
+.es p { font-size: 12.5px; color: var(--muted); max-width: 320px; margin: 0 auto; }
+.es .lk { display: inline-block; margin-top: 9px; font-size: 12.5px; font-weight: 600; color: var(--blue); }
+
+/* dark „hřebenovka po tmě" — povrchy dle prototypu ř. „body.dark ." */
+body.dark .slot { background: #1b242e; border-color: #2a3541; color: #e7ecf1; }
+body.dark .pbar .tr { background: #242f39; }
+body.dark .es { background: #1b242e; }
+
+@media (max-width: 760px) {
+  .slotg { grid-template-columns: repeat(2, 1fr); }
+}

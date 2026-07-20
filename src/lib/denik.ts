@@ -120,6 +120,11 @@ export function pridejDoDeniku(slug: string): ZaznamDeniku {
   return zaznam
 }
 
+/** Celý deník (např. pro razítkovník) — na serveru a při hydrataci prázdný. */
+export function useDenik(): Denik {
+  return useSyncExternalStore(subscribeDenik, nactiDenik, () => PRAZDNY)
+}
+
 /** Počet razítek ve sbírce — na serveru a při hydrataci 0. */
 export function usePocetDeniku(): number {
   return useSyncExternalStore(subscribeDenik, pocetVeSbirce, () => 0)

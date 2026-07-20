@@ -1,22 +1,26 @@
 import React from 'react'
 
+import RazitkovnikClient from '@/components/RazitkovnikClient'
+import { getChatyProRazitkovnik } from '@/lib/chaty'
+
+export const revalidate = 600
+
 export const metadata = {
   title: 'Razítkovník — turistickechaty.cz',
-  description: 'Deník razítek z horských chat — sbírka jako za mlada. Připravujeme.',
+  description: 'Deník razítek z horských chat — sbírka jako za mlada. Sbírá se na profilech chat, deník zůstává ve tvém prohlížeči.',
 }
 
-export default function RazitkovnikPage() {
+export default async function RazitkovnikPage() {
+  const chaty = await getChatyProRazitkovnik()
+
+  // s jediným pohořím v průvodci nese titulek jeho jméno (dle prototypu),
+  // s více pohořími zůstává obecný — nic se nedomýšlí
+  const oblasti = [...new Set(chaty.map((ch) => ch.oblastNazev).filter(Boolean))]
+  const titulek = oblasti.length === 1 ? `${oblasti[0]} — sbírka razítek` : 'Sbírka razítek'
+
   return (
     <section className="wrap sec" style={{ paddingTop: 34, paddingBottom: 30 }}>
-      <div className="mn" style={{ fontSize: 10, color: 'var(--red)', marginBottom: 8 }}>
-        Můj deník razítek
-      </div>
-      <h1 className="sg" style={{ fontSize: 34, fontWeight: 700, letterSpacing: '-.02em' }}>
-        Razítkovník
-      </h1>
-      <p style={{ color: 'var(--muted)', fontSize: 13.5, maxWidth: 540, margin: '4px 0 16px' }}>
-        Připravujeme — sbírková razítka chat, odznaky pohoří a lokální deník.
-      </p>
+      <RazitkovnikClient titulek={titulek} chaty={chaty} />
     </section>
   )
 }

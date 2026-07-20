@@ -1,8 +1,9 @@
 import { getPayload } from 'payload'
 import config from '../payload.config'
 
-import type { Chaty as Chata, Oblasti as Oblast } from '../payload-types'
+import type { Chaty as Chata, Oblasti as Oblast, Razitka } from '../payload-types'
 import type { MapovaChata } from '../components/MapaChat'
+import type { RazitkovnikChata } from '../components/RazitkovnikClient'
 
 /** Kód země (Payload select) → český URL slug dle plánu kap. 6: /cesko/krkonose/lucni-bouda */
 export const ZEME_SLUG: Record<string, string> = {
@@ -136,5 +137,37 @@ export async function getChatyProMapu(): Promise<MapovaChata[]> {
         url,
       },
     ]
+  })
+}
+
+/**
+ * Publikované chaty pro razítkovník (F0-08) — sloty sbírky. Vybírá se stejné
+ * razítko jako na profilu (přednost „k dispozici", jinak první doložené);
+ * chybějící otisk je poctivě null, slot pak nese stylizované SVG.
+ */
+export async function getChatyProRazitkovnik(): Promise<RazitkovnikChata[]> {
+  const payload = await getPayload({ config })
+  const res = await payload.find({
+    collection: 'chaty',
+    depth: 2,
+    limit: 500,
+    sort: 'nazev',
+    overrideAccess: false,
+  })
+  return res.docs.map((chata) => {
+    const razitka = (chata.razitka?.docs ?? []).filter((r): r is Razitka => typeof r === 'object')
+    const razitko = razitka.find((r) => r.stav === 'k-dispozici') ?? razitka[0] ?? null
+    const otisk = razitko && typeof razitko.otisk === 'object' ? razitko.otisk : null
+    return {
+      slug: chata.slug!,
+      nazev: chata.nazev,
+      vyska: chata.vyska ?? null,
+      oblastNazev: typeof chata.oblast === 'object' ? (chata.oblast?.nazev ?? null) : null,
+      url: chataPath(chata),
+      otiskUrl: otisk?.url ?? null,
+      otiskAlt: otisk?.alt ?? null,
+      kdeSeRazitkuje: razitko?.kdeSeRazitkuje ?? null,
+      maOtiskVDb: Boolean(otisk?.url),
+    }
   })
 }
