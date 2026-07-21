@@ -1,0 +1,64 @@
+# DATA-05 (fáze 3b): stažení otisků razítek z razitkuj.cz pro spárované chaty —
+# se svolením Roberta Šindlera (KiBob), 21. 7. 2026. Sandbox na razitkuj.cz
+# nedosáhne (proxy), GitHub Actions ano. Spouští se ručně (Actions → „DATA-05:
+# stažení otisků razítek (razitkuj.cz)" → Run).
+#
+# Stáhne otisky (i historické varianty) chat, které mají razítko (shoda z
+# párování), do data/razitka/skeny/<slug>/ a zapíše manifest _otisky.json.
+# U každého otisku se drží zdroj (odkaz) — atribuce je podmínka svolení.
+# Vstup: data/razitka/_razitkuj-checklist.json (z předchozího workflow) + katalog chat.
+name: 'DATA-05: stažení otisků razítek (razitkuj.cz)'
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Kolik spárovaných chat zpracovat (prázdné = všechny). Číslo pro rychlou zkoušku.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data05-razitkuj-otisky
+  cancel-in-progress: false
+
+jobs:
+  otisky:
+    name: razitkuj.cz → otisky razítek (data/razitka/skeny)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Stažení otisků z razitkuj.cz
+        shell: bash
+        env:
+          LIMIT_INPUT: ${{ inputs.limit }}
+        run: |
+          ARG=()
+          if [ -n "$LIMIT_INPUT" ]; then ARG=(--limit "$LIMIT_INPUT"); fi
+          npx tsx scripts/data05-razitkuj-otisky.ts "${ARG[@]}" | tee report.txt
+          echo '## DATA-05 3b — stažené otisky' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit otisků a manifestu do main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/razitka/skeny
+          if git diff --cached --quiet; then
+            echo 'Beze změny — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m 'data: otisky razítek z razitkuj.cz (se svolením) — fáze 3b (z Actions)' \
+            -m 'Zdroj: razitkuj.cz (se svolením R. Šindlera/KiBob). Otisky vč. historických variant, u každého zdrojUrl pro atribuci. Vstup pro razítka prevzato-se-svolenim.'
+          git pull --rebase origin main
+          git push origin main

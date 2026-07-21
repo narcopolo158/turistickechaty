@@ -20,6 +20,7 @@ import {
   sparuj,
   type Chata,
 } from '../../scripts/data05-razitkuj-parovani'
+import { otiskyZDetailu } from '../../scripts/data05-razitkuj-otisky'
 
 describe('DATA-05 · rozpoznání odkazu na detail razítka', () => {
   it('bere obě URL vzory detailu, ostatní ne', () => {
@@ -96,6 +97,30 @@ describe('DATA-05 · normalizace a shoda názvu', () => {
     expect(shodaNazvu(['Luční bouda'], 'Luční bouda - Krkonoše')).toBe(true) // razítko má přípony
     expect(shodaNazvu(['Schronisko Samotnia', 'Samotnia'], 'Samotnia')).toBe(true) // přes alias
     expect(shodaNazvu(['Luční bouda'], 'Labská bouda')).toBe(false)
+  })
+})
+
+describe('DATA-05 · otisky z detailu razítka (fáze 3b)', () => {
+  const html = `
+    <div class="detail">
+      <img src="/razitka_thumb/3879_lucni-bouda.gif" alt="Luční bouda">
+      <a href="/razitka/3879_lucni-bouda.gif"><img src="/razitka_thumb/3879_lucni-bouda.gif"></a>
+      <img src="https://www.razitkuj.cz/razitka_thumb/180_lucni-bouda.gif">
+      <img src="/razitka_thumb/12133_lucni-bouda.gif">
+      <img src="/images/logo.png">
+    </div>`
+
+  it('vytáhne všechny otisky dle URL vzoru, dedup dle ID, plná verze bez _thumb', () => {
+    const otisky = otiskyZDetailu(html)
+    expect(otisky.map((o) => o.id)).toEqual([180, 3879, 12133]) // dedup 3879, řazeno dle ID
+    const prvni = otisky.find((o) => o.id === 3879)!
+    expect(prvni.url).toBe('https://www.razitkuj.cz/razitka_thumb/3879_lucni-bouda.gif')
+    expect(prvni.urlPlny).toBe('https://www.razitkuj.cz/razitka/3879_lucni-bouda.gif') // bez _thumb
+    expect(prvni.ext).toBe('gif')
+  })
+
+  it('žádné otisky → prázdné pole (logo se nebere)', () => {
+    expect(otiskyZDetailu('<img src="/images/logo.png">')).toEqual([])
   })
 })
 
