@@ -21,6 +21,7 @@ import {
   type Chata,
 } from '../../scripts/data05-razitkuj-parovani'
 import { otiskyZDetailu } from '../../scripts/data05-razitkuj-otisky'
+import { razitkoZaznam } from '../../scripts/data05-razitkuj-zaloz'
 
 describe('DATA-05 · rozpoznání odkazu na detail razítka', () => {
   it('bere obě URL vzory detailu, ostatní ne', () => {
@@ -121,6 +122,32 @@ describe('DATA-05 · otisky z detailu razítka (fáze 3b)', () => {
 
   it('žádné otisky → prázdné pole (logo se nebere)', () => {
     expect(otiskyZDetailu('<img src="/images/logo.png">')).toEqual([])
+  })
+})
+
+describe('DATA-05 · záznam razítka z manifestu (fáze 3c)', () => {
+  const chata = {
+    slug: 'lucni-bouda',
+    nazev: 'Luční bouda',
+    zdrojUrl: 'http://www.razitkuj.cz/misto-lucni-bouda/1',
+    otisky: [{ id: 12133, soubor: 'lucni-bouda/12133.gif', obrazekUrl: 'https://www.razitkuj.cz/razitka/12133_lucni-bouda.gif' }],
+  }
+
+  it('založí razítko prevzato-se-svolenim se zdrojem, otiskem a bez stav (nedomýšlet)', () => {
+    const r = razitkoZaznam(chata, chata.otisky[0], 1, 6, 'Robert Šindler (KiBob), 21. 7. 2026', '2026-07-21')
+    expect(r).toMatchObject({
+      chata: 'lucni-bouda',
+      zpusobZiskani: 'prevzato-se-svolenim',
+      prevzeti: { zdroj: 'razitkuj.cz', zdrojUrl: 'http://www.razitkuj.cz/misto-lucni-bouda/1' },
+    })
+    expect((r.prevzeti as { svolil: string }).svolil).toContain('KiBob')
+    expect(r).not.toHaveProperty('stav') // aktuálnost varianty razitkuj neuvádí
+    const otisk = r.otisk as Record<string, unknown>
+    expect(otisk.soubor).toBe('12133.gif') // jen basename (leží vedle YAML)
+    expect(otisk.typ).toBe('otisk-razitka')
+    expect(otisk.licence).toBe('se-svolenim')
+    expect((otisk.overeni as { verified: boolean }).verified).toBe(false)
+    expect(String(r.poznamka)).toContain('varianta 1 z 6')
   })
 })
 
