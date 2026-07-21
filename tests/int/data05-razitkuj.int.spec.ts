@@ -14,6 +14,7 @@ import {
 } from '../../scripts/data05-razitkuj-checklist'
 import {
   normalizuj,
+  ocistiNazevRazitka,
   shodaNazvu,
   sparuj,
   type Chata,
@@ -75,6 +76,12 @@ describe('DATA-05 · normalizace a shoda názvu', () => {
     expect(normalizuj('Schronisko Pod Łabskim Szczytem')).toBe('schronisko pod labskim szczytem')
   })
 
+  it('strhne příponu „(N)" (počet variant otisku) z názvu razítka', () => {
+    expect(ocistiNazevRazitka('Špindlerova bouda (3)')).toBe('Špindlerova bouda')
+    expect(ocistiNazevRazitka('Luční Bouda (6)')).toBe('Luční Bouda')
+    expect(ocistiNazevRazitka('Vosecká bouda')).toBe('Vosecká bouda')
+  })
+
   it('silná shoda: přesně, obsažení i přes alias; krátké názvy nesloučí', () => {
     expect(shodaNazvu(['Bouda Bílé Labe'], 'Bouda Bílé Labe')).toBe(true)
     expect(shodaNazvu(['Luční bouda'], 'Luční bouda - Krkonoše')).toBe(true) // razítko má přípony
@@ -91,7 +98,7 @@ describe('DATA-05 · párování katalogu s checklistem', () => {
   ]
   const razitka = [
     { nazev: 'Bouda Bílé Labe', url: 'http://www.razitkuj.cz/5469_bouda-bile-labe' },
-    { nazev: 'Samotnia', url: 'http://www.razitkuj.cz/misto-samotnia/1' },
+    { nazev: 'Schronisko PTTK Samotnia (2)', url: 'http://www.razitkuj.cz/misto-samotnia/1' }, // přípona „(2)" + alias
     { nazev: 'Kolínská bouda - Krkonoše', url: 'http://www.razitkuj.cz/9_kolinska-bouda' }, // krkonošské, není u nás
     { nazev: 'Chata Šerlich - Orlické hory', url: 'http://www.razitkuj.cz/9_serlich' }, // bez shody, ne-krkonošské
   ]

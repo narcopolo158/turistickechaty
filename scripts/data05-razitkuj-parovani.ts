@@ -14,7 +14,7 @@
  *
  *   npx tsx scripts/data05-razitkuj-parovani.ts
  */
-import { existsSync, readdirSync, readFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 import { parse } from 'yaml'
@@ -23,6 +23,13 @@ import type { RazitkoPolozka } from './data05-razitkuj-checklist'
 
 const CHATY_KOREN = join(process.cwd(), 'data', 'chaty')
 const CHECKLIST_JSON = join(process.cwd(), 'data', 'razitka', '_razitkuj-checklist.json')
+
+/**
+ * Očistí název razítka od přípony „(N)" — razitkuj.cz za název přidává počet
+ * variant otisku (např. „Špindlerova bouda (3)"). Bez toho by párování minulo
+ * (přípona rozbije substring i shodu).
+ */
+export const ocistiNazevRazitka = (s: string): string => s.replace(/\s*\(\d+\)\s*$/, '').trim()
 
 /** Normalizace názvu pro porovnání: bez diakritiky (vč. ł/ß), malá písmena, jen [a-z0-9] + mezery. */
 export const normalizuj = (s: string): string =>
@@ -114,8 +121,8 @@ export const sparuj = (chaty: Chata[], razitka: RazitkoPolozka[]): Sparovani => 
 
   for (const chata of chaty) {
     for (const r of razitka) {
-      if (shodaNazvu(chata.nazvy, r.nazev)) {
-        shody.push({ chata: chata.nazev, slug: chata.slug, razitko: r.nazev, url: r.url })
+      if (shodaNazvu(chata.nazvy, ocistiNazevRazitka(r.nazev))) {
+        shody.push({ chata: chata.nazev, slug: chata.slug, razitko: ocistiNazevRazitka(r.nazev), url: r.url })
         sRazitkem.add(chata.slug)
         razitkaSeShodou.add(r.url)
       }
@@ -126,11 +133,13 @@ export const sparuj = (chaty: Chata[], razitka: RazitkoPolozka[]): Sparovani => 
     .filter((c) => !sRazitkem.has(c.slug))
     .map((c) => ({ slug: c.slug, nazev: c.nazev }))
 
-  const kandidatiChat = razitka.filter((r) => {
-    if (razitkaSeShodou.has(r.url)) return false
-    const n = normalizuj(r.nazev)
-    return KRKONOSE_KLICE.some((k) => n.includes(k))
-  })
+  const kandidatiChat = razitka
+    .filter((r) => {
+      if (razitkaSeShodou.has(r.url)) return false
+      const n = normalizuj(ocistiNazevRazitka(r.nazev))
+      return KRKONOSE_KLICE.some((k) => n.includes(k))
+    })
+    .map((r) => ({ nazev: ocistiNazevRazitka(r.nazev), url: r.url }))
 
   shody.sort((a, b) => a.chata.localeCompare(b.chata, 'cs'))
   return { shody, bezRazitka, kandidatiChat }
@@ -142,19 +151,34 @@ const main = () => {
   if (!existsSync(CHECKLIST_JSON)) {
     throw new Error(`Checklist ${CHECKLIST_JSON} neexistuje — nejdřív ho stáhne workflow „DATA-05: checklist razítek razitkuj.cz".`)
   }
-  const checklist = JSON.parse(readFileSync(CHECKLIST_JSON, 'utf8')) as { razitka?: RazitkoPolozka[] }
+  const checklist = JSON.parse(readFileSync(CHECKLIST_JSON, 'utf8')) as { razitka?: RazitkoPolozka[]; pocet?: number }
   const razitka = checklist.razitka ?? []
   const chaty = nactiChaty()
   const { shody, bezRazitka, kandidatiChat } = sparuj(chaty, razitka)
+  const sRazitkem = new Set(shody.map((s) => s.slug)).size
+
+  const md: string[] = [
+    '# DATA-05 — párování razítek razitkuj.cz s katalogem chat',
+    '',
+    `Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se svolením R. Šindlera / KiBob). Checklist má ${razitka.length} razítek; katalog ${chaty.length} chat. Odkaz = „razítko existuje", ne převzatý sken (skeny až po dobudování atribuce v UI).`,
+    '',
+    `## Naše chaty s nalezeným razítkem (${sRazitkem})`,
+    ...shody.map((s) => `- **${s.chata}** → [„${s.razitko}"](${s.url})`),
+    '',
+    `## Naše chaty BEZ nalezeného razítka (${bezRazitka.length})`,
+    ...bezRazitka.map((b) => `- ${b.nazev} (\`${b.slug}\`)`),
+    '',
+    `## Kandidáti na zpětné dohledání chat — „vypadá krkonošsky", bez shody (${kandidatiChat.length}) — K OVĚŘENÍ`,
+    ...kandidatiChat.map((k) => `- [„${k.nazev}"](${k.url})`),
+    '',
+  ]
+  mkdirSync(join(process.cwd(), 'docs'), { recursive: true })
+  writeFileSync(join(process.cwd(), 'docs', 'DATA-05-razitka-parovani.md'), md.join('\n'), 'utf8')
 
   console.log(`\n## DATA-05 párování — razítka razitkuj.cz vs. náš katalog`)
   console.log(`Chat v katalogu: ${chaty.length} · razítek v checklistu: ${razitka.length}`)
-  console.log(`\nNaše chaty s nalezeným razítkem (${new Set(shody.map((s) => s.slug)).size}):`)
-  for (const s of shody) console.log(`- ${s.chata} → „${s.razitko}" ${s.url}`)
-  console.log(`\nNaše chaty BEZ nalezeného razítka (${bezRazitka.length}):`)
-  for (const b of bezRazitka) console.log(`- ${b.nazev} (${b.slug})`)
-  console.log(`\nKandidáti na zpětné dohledání chat — razítko „vypadá krkonošsky", bez shody (${kandidatiChat.length}), K OVĚŘENÍ:`)
-  for (const k of kandidatiChat) console.log(`- „${k.nazev}" ${k.url}`)
+  console.log(`Chat s razítkem: ${sRazitkem} · bez razítka: ${bezRazitka.length} · kandidátů k dohledání: ${kandidatiChat.length}`)
+  console.log(`Report: docs/DATA-05-razitka-parovani.md`)
 }
 
 if (process.argv[1]?.endsWith('data05-razitkuj-parovani.ts')) {
