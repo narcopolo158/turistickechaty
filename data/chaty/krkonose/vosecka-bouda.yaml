@@ -9,6 +9,13 @@ zeme: cz
 typ: obsluhovana
 stav: v-provozu # sezónní provoz, viz sezona
 oblast: krkonose
+zajimavosti:
+  - text: Nikdy nevyhořela a není napojená na elektrickou síť — energii vyrábí dieselagregát
+    kategorie: jine
+    zdroj: web chaty (voseckabouda.cz)
+  - text: Turistům slouží od roku 1896 (původně seník z doby před rokem 1743, dnešní podoba po 2. světové válce)
+    kategorie: stari
+    zdroj: web chaty (voseckabouda.cz)
 
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS z OSM (ODbL); výška a poloha z webu boudy.

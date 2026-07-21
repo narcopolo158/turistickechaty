@@ -9,6 +9,13 @@ zeme: cz
 typ: obsluhovana # web se prezentuje jako „Hotel Labská bouda"; zapsáno jako obsluhovaná chata dle taxonomie plánu (jako Luční bouda) — viz interniPoznamky
 stav: v-provozu
 oblast: krkonose
+zajimavosti:
+  - text: Necelý kilometr od pramene Labe; sídlí zde meteorologická stanice a solární a ozónová observatoř ČHMÚ
+    kategorie: jine
+    zdroj: web chaty (labskabouda.cz)
+  - text: Současná budova pochází z roku 1975, historie místa sahá k roku 1830
+    kategorie: stari
+    zdroj: web chaty (labskabouda.cz)
 
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS z OSM (ODbL); výška, adresa a poloha z webu boudy.
