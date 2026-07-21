@@ -177,6 +177,7 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
     })
 
   const kotvy: { id: string; label: string }[] = []
+  if (chata.zajimavosti?.length) kotvy.push({ id: 'p-zajimavosti', label: `0${kotvy.length + 1} Zajímavosti` })
   if (trasy.length) kotvy.push({ id: 'p-trasy', label: `0${kotvy.length + 1} Trasy` })
   if (razitko) kotvy.push({ id: 'p-razitko', label: `0${kotvy.length + 1} Razítko` })
   if (sousede.length) kotvy.push({ id: 'p-sousede', label: `0${kotvy.length + 1} Sousedé` })
@@ -243,6 +244,28 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
         <div style={{ maxWidth: 720, margin: '6px 0 4px' }}>
           <RichText data={chata.text} />
         </div>
+      )}
+
+      {(chata.zajimavosti?.length ?? 0) > 0 && (
+        <section id="p-zajimavosti" style={{ marginTop: 18 }}>
+          <div className="lista">
+            <span className="n">{cisloSekce()}</span>
+            <b>Zajímavosti</b>
+          </div>
+          <ul style={{ maxWidth: 720, margin: '10px 0 4px', paddingLeft: 18, display: 'grid', gap: 6 }}>
+            {chata.zajimavosti!.map((z, i) => (
+              <li key={z.id ?? i}>
+                {z.text}
+                {z.zdroj && (
+                  <span className="mn" style={{ color: 'var(--muted)' }}>
+                    {' '}
+                    — {z.zdroj}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       {trasy.length > 0 && (
