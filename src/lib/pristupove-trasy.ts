@@ -9,6 +9,7 @@ import { join } from 'node:path'
  * Geometrie (pro mapu) se zatím nenačítá — seznam „odkud vyjít" ji nepotřebuje.
  */
 export type PristupUsek = { znaceni: string; delkaKm: number }
+export type Bod = { lat: number; lng: number }
 export type Pristup = {
   vychoziBod: string
   typ: string
@@ -16,6 +17,8 @@ export type Pristup = {
   useky: PristupUsek[]
   podilNeznacenychProc: number
   kRucniKontrole: boolean
+  /** Geometrie trasy (pro čáru na mapě). Seznam „odkud vyjít" ji nepoužívá. */
+  geometrie?: Bod[]
 }
 
 type Katalog = { chaty?: { slug: string; pristupy: Pristup[] }[] }

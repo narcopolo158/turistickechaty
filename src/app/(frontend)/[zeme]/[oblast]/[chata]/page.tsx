@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { RichText } from '@payloadcms/richtext-lexical/react'
 
 import { FotoAtribuce } from '@/components/FotoAtribuce'
+import MapaTrasy from '@/components/MapaTrasy'
 import RazitkoMoment from '@/components/RazitkoMoment'
 import TiskButton from '@/components/TiskButton'
 import { TRAIL_COLORS, TrailBlaze } from '@/components/ui'
@@ -331,6 +332,14 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
             Nejkratší cesty po značených trasách z nejbližších středisek (výpočet ze
             značení KČT v OpenStreetMap; orientační, zatím bez převýšení a času).
           </p>
+          {typeof chata.lat === 'number' && typeof chata.lng === 'number' && (
+            <div style={{ margin: '0 0 14px' }}>
+              <MapaTrasy
+                hut={{ nazev: chata.nazev, lat: chata.lat, lng: chata.lng }}
+                trasy={pristupy.map((p) => ({ vychoziBod: p.vychoziBod, typ: p.typ, delkaKm: p.delkaKm, body: p.geometrie ?? [] }))}
+              />
+            </div>
+          )}
           {pristupy.map((p, i) => {
             // Úseky slij podle barvy (přehlednější než dlouhá sekvence).
             const dleBarvy = new Map<string, number>()
