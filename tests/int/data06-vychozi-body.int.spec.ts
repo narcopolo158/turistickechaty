@@ -30,6 +30,10 @@ describe('DATA-06 · typ výchozího bodu z OSM tagů', () => {
     expect(typBoduZTagu({ railway: 'halt' })).toBe('zeleznice')
   })
 
+  it('highway=bus_stop → zastávka', () => {
+    expect(typBoduZTagu({ highway: 'bus_stop' })).toBe('zastavka')
+  })
+
   it('nerozpoznané → null (nedomýšlet)', () => {
     expect(typBoduZTagu({})).toBeNull()
     expect(typBoduZTagu({ place: 'hamlet' })).toBeNull() // samota — moc drobná, nebereme
@@ -107,6 +111,7 @@ describe('DATA-06 · tvar Overpass dotazu na výchozí body', () => {
     expect(dotaz).toContain('town|village')
     expect(dotaz).toContain('aerialway')
     expect(dotaz).toContain('railway')
+    expect(dotaz).toContain('bus_stop')
     expect(dotaz).toContain('out center;')
   })
 })

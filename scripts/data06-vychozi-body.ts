@@ -49,18 +49,20 @@ const exportJson = (zeme: Zeme) => join(OBLAST_ADRESAR, `_vychozi-body-export-${
 const ATRIBUCE = 'data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)'
 
 /** Typ výchozího bodu — z jednoznačného OSM tagu, jinak null (nedomýšlet). */
-export type TypBodu = 'obec' | 'lanovka' | 'zeleznice'
+export type TypBodu = 'obec' | 'lanovka' | 'zeleznice' | 'zastavka'
 
 /**
  * Určí typ výchozího bodu z OSM tagů. Pořadí je jen pro případ víc tagů na
  * jednom objektu (v praxi se nepřekrývají):
  *   place=town|village → obec, aerialway=station → lanovka,
- *   railway=station|halt → železnice. Nerozpoznáno → null (do reportu).
+ *   railway=station|halt → železnice, highway=bus_stop → zastávka.
+ * Nerozpoznáno → null (do reportu).
  */
 export const typBoduZTagu = (tagy: Record<string, string>): TypBodu | null => {
   if (tagy.place === 'town' || tagy.place === 'village') return 'obec'
   if (tagy.aerialway === 'station') return 'lanovka'
   if (tagy.railway === 'station' || tagy.railway === 'halt') return 'zeleznice'
+  if (tagy.highway === 'bus_stop') return 'zastavka'
   return null
 }
 
@@ -91,6 +93,7 @@ area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
   node["place"~"^(town|village)$"](area.stat)(${BBOX_KRKONOSE});
   nwr["aerialway"="station"](area.stat)(${BBOX_KRKONOSE});
   nwr["railway"~"^(station|halt)$"](area.stat)(${BBOX_KRKONOSE});
+  node["highway"="bus_stop"]["name"](area.stat)(${BBOX_KRKONOSE});
 );
 out center;`
 
