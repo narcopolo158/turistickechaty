@@ -1,9 +1,10 @@
 # Hotel Špindlerova bouda — profil povýšen z kandidáta DATA-01 po křížovém
 # ověření DATA-03 (rozhodnutí Michala 20. 7. 2026: hraniční hotely v roli
 # historických bud zařadit všechny, charakter poctivě přiznat).
-# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
-# Data z webu čtena 20. 7. 2026 (ruční běh DATA-03, session 22) — tato
-# bezobslužná session na web nedosáhne, přebírá doložené zápisy.
+# Data dotažena přímo z oficiálního webu spindlerovabouda.cz 21. 7. 2026
+# (session 30, ruční běh — Michal online, WebFetch schválen). Údaje doložené
+# citací z webu → verified: true; co web neuvádí (kapacita) nebo je z OSM
+# (GPS) → verified: false. Nic nedomýšleno.
 
 nazev: Hotel Špindlerova bouda
 slug: hotel-spindlerova-bouda
@@ -13,75 +14,92 @@ stav: v-provozu
 oblast: krkonose
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS z OSM (ODbL); výška a adresa z webu objektu.
+# GPS z OSM (ODbL, neověřeno v terénu); výška a adresa potvrzeny z webu.
 lat: 50.7622083
 lng: 15.6354436
 vyska: 1208
 obec: Špindlerův Mlýn
 overeniLokace:
   source: >-
+    Výška 1208 m n. m. a adresa Špindlerův Mlýn 108, 543 51 potvrzeny z webu
+    hotelu https://www.spindlerovabouda.cz/ („Hotel leží ve výšce 1 208 m n. m.",
+    „Špindlerův Mlýn 108, 543 51 Špindlerův Mlýn"; načteno 21. 7. 2026).
     GPS: OpenStreetMap https://www.openstreetmap.org/way/20897239 — data ©
     přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
-    výška 1208 m n. m., adresa Špindlerův Mlýn 108:
-    https://www.spindlerovabouda.cz/ (načteno 20. 7. 2026, DATA-03)
-  verified: false
-  checked: '2026-07-20'
+    souřadnice v terénu neověřeny
+  verified: false # výška a adresa z webu ověřeny; GPS z OSM čeká na terénní/ruční potvrzení
+  checked: '2026-07-21'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# Kapacitu (počet lůžek) web v načtené podobě neuváděl — nedomýšlet, dohledat.
+# Web uvádí 5 kategorií pokojů; celkovou kapacitu (počet lůžek) neuvádí.
 nocleh: ano
 pokoje:
-  - typ: Ubytování v pěti kategoriích pokojů
+  - typ: Economy
+  - typ: Standard
+  - typ: Comfort
+  - typ: De Luxe
+  - typ: Premium
 overeniNocleh:
-  source: https://www.spindlerovabouda.cz/ (ubytování v 5 kategoriích; načteno 20. 7. 2026, DATA-03 — celková kapacita v načtené podobě neuvedena)
-  verified: false
-  checked: '2026-07-20'
+  source: >-
+    https://www.spindlerovabouda.cz/ — ubytování v 5 kategoriích pokojů
+    (Economy, Standard, Comfort, De Luxe, Premium); načteno 21. 7. 2026.
+    Celkovou kapacitu lůžek web neuvádí, nezapisuje se.
+  verified: true
+  checked: '2026-07-21'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
-# POZOR: web restauraci a bar v budově dokládá, ale dostupnost pro
-# neubytované/kolemjdoucí výslovně nezmiňuje — netvrdit veřejnou restauraci.
+# Restaurace a bar v hlavní budově potvrzeny; dostupnost pro neubytované
+# web výslovně neuvádí (skupiny po domluvě) — netvrdit veřejnou restauraci.
 kuchyne: ano
 typObcerstveni: restaurace
 overeniObcerstveni:
-  source: https://www.spindlerovabouda.cz/ (restaurace a bar v budově; dostupnost pro neubytované web výslovně neuvádí — načteno 20. 7. 2026, DATA-03)
-  verified: false
-  checked: '2026-07-20'
+  source: https://www.spindlerovabouda.cz/ („Restaurace a bar jsou přímo v hlavní budově."; načteno 21. 7. 2026 — dostupnost pro neubytované/kolemjdoucí web výslovně neuvádí)
+  verified: false # existence restaurace/baru ověřena z webu; dostupnost pro veřejnost web neuvádí — čeká na potvrzení
+  checked: '2026-07-21'
 
 # ── Služby ────────────────────────────────────────────────────────────────
+wifi: null
 overeniSluzby:
-  source: https://www.spindlerovabouda.cz/ (wellness s bazénem; načteno 20. 7. 2026, DATA-03)
-  verified: false
-  checked: '2026-07-20'
+  source: https://www.spindlerovabouda.cz/ („Bazén, sauny, vířivka i masáže najdete přímo v hlavní budově"; načteno 21. 7. 2026)
+  verified: true
+  checked: '2026-07-21'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
-# Kontakty z OSM tagů objektu (stav dat 2026-06-12) — proti webu neověřeny.
 kontakty:
   telefon: +420 499 329 200
   email: info@spindlerovabouda.cz
   web: https://www.spindlerovabouda.cz/
 overeniProvoz:
-  source: >-
-    Kontakty: OpenStreetMap https://www.openstreetmap.org/way/20897239 —
-    data © přispěvatelé OpenStreetMap, ODbL 1.0 (stav dat 2026-06-12);
-    otvírací doba/sezóna z webu nedoložena (dohledat)
-  verified: false
-  checked: '2026-06-12'
+  source: https://www.spindlerovabouda.cz/ (telefony +420 499 329 200 a +420 725 855 397, e-mail info@spindlerovabouda.cz; načteno 21. 7. 2026 — otvírací doba restaurace a sezóna/celoroční provoz na webu neuvedeny)
+  verified: true
+  checked: '2026-07-21'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1784
+    udalost: Tradice hotelu se datuje od roku 1784
+overeniHistorie:
+  source: https://www.spindlerovabouda.cz/ („Tradice od roku 1784"; načteno 21. 7. 2026)
+  verified: true
+  checked: '2026-07-21'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Horský hotel v roli historické hřebenové boudy ve výšce 1 208 m n. m. nad
-  Špindlerovým Mlýnem. Nabízí ubytování v pěti kategoriích pokojů, restauraci
-  s barem a wellness s bazénem.
+  Špindlerovým Mlýnem, s tradicí od roku 1784. Nabízí ubytování v pěti
+  kategoriích pokojů, restauraci s barem a wellness s bazénem.
 text:
   - >-
     Špindlerova bouda stojí ve výšce 1 208 m n. m. na adrese Špindlerův
-    Mlýn 108. Dnes se prezentuje jako horský hotel — v průvodci ji vedeme
-    poctivě jako horský hotel v roli historické hřebenové boudy.
+    Mlýn 108. Její tradice sahá až do roku 1784; dnes se objekt prezentuje
+    jako horský hotel — v průvodci ho vedeme poctivě jako horský hotel
+    v roli historické hřebenové boudy.
   - >-
-    Hostům nabízí ubytování v pěti kategoriích pokojů, restauraci a bar
-    přímo v budově a wellness s bazénem. Zda restaurace obsluhuje i
-    kolemjdoucí turisty, web výslovně neuvádí — před cestou doporučujeme
-    ověřit telefonicky.
+    Hostům nabízí ubytování v pěti kategoriích pokojů (Economy, Standard,
+    Comfort, De Luxe a Premium), restauraci a bar přímo v hlavní budově
+    a wellness s bazénem, saunami, vířivkou a masážemi. Zda restaurace
+    obsluhuje i kolemjdoucí turisty, web výslovně neuvádí — před cestou
+    doporučujeme ověřit telefonicky.
 
 # Bez hero fotky: DATA-02 našla 10 licenčně čistých kandidátů, ale žádný
 # jednoznačný záběr budovy (parkoviště, autobusy, zastávka, rozcestníky —
@@ -90,12 +108,13 @@ text:
 # na Commons ale zmiňuje jen parkoviště; bez potvrzení redakce nepřebírat.
 
 zdroje:
-  - popis: Web hotelu (spindlerovabouda.cz) — výška, adresa, ubytování, služby
+  - popis: Web hotelu (spindlerovabouda.cz) — výška, adresa, ubytování, služby, historie
     url: https://www.spindlerovabouda.cz/
-  - popis: OpenStreetMap (GPS objektu, kontakty; ODbL)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
     url: https://www.openstreetmap.org/way/20897239
 interniPoznamky: |-
-  Povýšeno z data/kandidati/krkonose/hotel-spindlerova-bouda.yaml (DATA-01) po křížovém ověření DATA-03 (session 22, web načten 20. 7. 2026) a rozhodnutí Michala (chat 20. 7. 2026: hraniční hotely zařadit všechny, typ horsky-hotel).
-  Povýšení provedla bezobslužná session 29 (21. 7.) z už doložených zápisů — WebFetch bezobslužně nefunguje (PROVENANCE_REQUIRED), web znovu nečten.
-  Dohledat při ručním běhu: kapacita lůžek, otvírací doba/sezóna, dostupnost restaurace pro veřejnost, historie (roky — hřebenová bouda u Špindlerovy cesty; kontext DATA-03), kontakty potvrdit proti webu (teď jen OSM).
+  Povýšeno z data/kandidati/krkonose/hotel-spindlerova-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a rozhodnutí Michala (chat 20. 7. 2026: hraniční hotely zařadit všechny, typ horsky-hotel).
+  Data dotažena z webu spindlerovabouda.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: true (ubytování 5 kategorií, wellness, kontakty, historie 1784). verified: false zůstává u: GPS (z OSM, neověřeno v terénu — ale adresa a výška z webu potvrzeny) a dostupnost restaurace pro veřejnost (web ji výslovně neuvádí).
+  NEDOHLEDÁNO (web neuvádí): celková kapacita lůžek, otvírací doba restaurace, sezóna/celoroční provoz. Doplnit z podstránek nebo telefonicky.
+  Web uvádí i druhý telefon +420 725 855 397 (recepce/rezervace) — kolekce Chaty má jen jedno pole telefon, druhé číslo je proto zaznamenáno ve zdroji overeniProvoz; případně přidat pole do schématu.
   Hero fotka: kandidáti DATA-02 bez jednoznačného záběru budovy — zvážit File:Špindlerova bouda, z parkoviště.jpg po očním potvrzení, jinak počkat na další sklizeň DATA-02.

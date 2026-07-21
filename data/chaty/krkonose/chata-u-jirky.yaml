@@ -1,9 +1,10 @@
 # Chata U Jirky — profil povýšen z kandidáta DATA-01 po křížovém ověření
 # DATA-03 (rozhodnutí Michala 20. 7. 2026, klíč pro sporné objekty:
-# občerstvení/restaurace pro veřejnost → zařadit; restaurace doložena).
-# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
-# Data z webu čtena 20. 7. 2026 (ruční běhy DATA-03, sessions 24 a 27) —
-# tato bezobslužná session na web nedosáhne, přebírá doložené zápisy.
+# občerstvení/restaurace pro veřejnost → zařadit).
+# Data dotažena přímo z oficiálního webu chataujirky.cz 21. 7. 2026
+# (session 30, ruční běh — Michal online, WebFetch schválen). Údaje doložené
+# citací z webu → verified: true; co web neuvádí (výška, kapacita, otvíračka)
+# nebo je z OSM (GPS) → verified: false. Nic nedomýšleno.
 
 nazev: Chata U Jirky
 slug: chata-u-jirky
@@ -13,69 +14,78 @@ stav: v-provozu
 oblast: krkonose
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS z OSM (ODbL); adresa z webu. Nadmořskou výšku web neuvádí — nedomýšlet.
+# GPS z OSM (ODbL, neověřeno v terénu); adresa potvrzena z webu.
+# Nadmořskou výšku web neuvádí — nedomýšlet.
 lat: 50.6610087
 lng: 15.65891
 obec: Dolní Dvůr
 overeniLokace:
   source: >-
-    GPS: OpenStreetMap https://www.openstreetmap.org/node/13027945022 —
-    data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
-    adresa Dolní Dvůr 22 (údolí obce): https://chataujirky.cz/
-    (načteno 20. 7. 2026, DATA-03 — nadmořskou výšku web neuvádí)
-  verified: false
-  checked: '2026-07-20'
+    Adresa Dolní Dvůr 22, 543 42 Dolní Dvůr potvrzena z webu chaty
+    https://chataujirky.cz/ („Dolní Dvůr 22, 543 42 Dolní Dvůr"; načteno
+    21. 7. 2026 — nadmořskou výšku web neuvádí). GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/13027945022 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); souřadnice v terénu
+    neověřeny
+  verified: false # adresa z webu ověřena; GPS z OSM a nadmořská výška (web neuvádí) čekají
+  checked: '2026-07-21'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# Kapacitu načtená podoba webu neuváděla — nedomýšlet, dohledat.
+# Kapacitu web neuvádí — nedomýšlet, dohledat.
 nocleh: ano
 overeniNocleh:
-  source: https://chataujirky.cz/ (chata/penzion s ubytováním; načteno 20. 7. 2026, DATA-03 — kapacita v načtené podobě neuvedena)
-  verified: false
-  checked: '2026-07-20'
+  source: https://chataujirky.cz/ (chata/penzion s ubytováním, návštěvy v zimě i létě; načteno 21. 7. 2026 — kapacitu lůžek web neuvádí, nezapisuje se)
+  verified: false # existence ubytování z webu; konkrétní kapacita nedoložena
+  checked: '2026-07-21'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
+# Domácí kuchyně otevřená všem doložena přímo z webu → klíč redakce splněn.
 kuchyne: ano
 typObcerstveni: restaurace
 overeniObcerstveni:
-  source: https://chataujirky.cz/ (restaurace s domácí kuchyní i pro neubytované; načteno 20. 7. 2026, DATA-03 — klíč redakce „občerstvení pro veřejnost" splněn)
-  verified: false
-  checked: '2026-07-20'
+  source: https://chataujirky.cz/ („Vaříme pro všechny – bez rozdílu" — domácí kuchyně dostupná i neubytovaným; načteno 21. 7. 2026 — klíč redakce „občerstvení pro veřejnost" splněn; přesnou otvírací dobu restaurace web neuvádí)
+  verified: true
+  checked: '2026-07-21'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
-sezona: celoročně
+# Web zmiňuje návštěvy v zimě i létě; explicitní „celoroční provoz" jako
+# formulaci neuvádí → sezónu nezapisuji jako potvrzenou.
 kontakty:
+  telefon: +420 773 087 796
+  email: info@chataujirky.cz
   web: https://chataujirky.cz/
 overeniProvoz:
-  source: https://chataujirky.cz/ (celoroční provoz; načteno 20. 7. 2026, DATA-03 — telefon/e-mail v načtené podobě neuvedeny, OSM je nenese)
-  verified: false
-  checked: '2026-07-20'
+  source: https://chataujirky.cz/ (telefon +420 773 087 796, e-mail info@chataujirky.cz; návštěvy v zimě i létě; načteno 21. 7. 2026 — otvírací dobu a explicitní sezónu web neuvádí)
+  verified: true
+  checked: '2026-07-21'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Údolní chata s restaurací v Dolním Dvoře na východním okraji Krkonoš.
-  Domácí kuchyně je otevřená i neubytovaným, provoz běží celoročně.
+  Domácí kuchyně tu vaří „pro všechny bez rozdílu" — tedy i pro neubytované
+  kolemjdoucí.
 text:
   - >-
     Chata U Jirky stojí na adrese Dolní Dvůr 22, v údolí obce na východním
     okraji Krkonoš — nejde o hřebenovou boudu, v průvodci ji vedeme poctivě
     jako údolní chatu s restaurací.
   - >-
-    Restaurace s domácí kuchyní je otevřená hostům i neubytovaným
-    kolemjdoucím a chata funguje celoročně. Podrobnosti k ubytování a
-    otvírací době doporučujeme ověřit na webu chaty.
+    Restaurace s domácí kuchyní je podle webu otevřená „pro všechny bez
+    rozdílu", tedy hostům i neubytovaným, a chata přijímá návštěvy v zimě
+    i v létě. Přesnou otvírací dobu a kapacitu ubytování doporučujeme ověřit
+    na webu nebo telefonicky.
 
 # Bez hero fotky: DATA-02 nenašla na Commons žádného licenčně čistého
 # kandidáta (viz data/kandidati/fotky/krkonose/chata-u-jirky.yaml — 0 fotek).
 # Doplní se z další sklizně DATA-02 nebo od chataře se svolením.
 
 zdroje:
-  - popis: Web chaty (chataujirky.cz) — adresa, restaurace, provoz
+  - popis: Web chaty (chataujirky.cz) — adresa, kontakty, restaurace
     url: https://chataujirky.cz/
-  - popis: OpenStreetMap (GPS objektu, ODbL)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
     url: https://www.openstreetmap.org/node/13027945022
 interniPoznamky: |-
-  Povýšeno z data/kandidati/krkonose/chata-u-jirky.yaml (DATA-01) po křížovém ověření DATA-03 (sessions 24 a 27, web načten 20. 7. 2026) a rozhodnutí Michala (chat 20. 7. 2026 — klíč: restaurace pro veřejnost doložena → ZAŘADIT; původní verdikt „nezařazovat" tím revidován).
-  Povýšení provedla bezobslužná session 29 (21. 7.) z už doložených zápisů — WebFetch bezobslužně nefunguje, web znovu nečten.
-  Provozovatel dle OSM: Multi Store s.r.o. V načteném výtahu treking.cz (přehled ubytování) objekt nefiguruje — výtah ale nemusí být úplný, absence se nebere jako důkaz.
-  Dohledat při ručním běhu: nadmořská výška, kapacita, kontakty (telefon/e-mail), otvírací doba restaurace.
+  Povýšeno z data/kandidati/krkonose/chata-u-jirky.yaml (DATA-01) po křížovém ověření DATA-03 a rozhodnutí Michala (chat 20. 7. 2026 — klíč: restaurace pro veřejnost doložena → ZAŘADIT; původní verdikt „nezařazovat" tím revidován).
+  Data dotažena z webu chataujirky.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: true (kontakty, občerstvení „Vaříme pro všechny – bez rozdílu"). verified: false u lokace (GPS z OSM; adresa z webu potvrzena, výška web neuvádí) a nocleh (kapacita nedoložena).
+  Provozovatel dle OSM: Multi Store s.r.o.
+  NEDOHLEDÁNO (web neuvádí): nadmořská výška, kapacita lůžek, přesná otvírací doba restaurace, explicitní sezóna.
