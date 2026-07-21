@@ -1,0 +1,85 @@
+# Schronisko Szrenica — profil povýšen z kandidáta DATA-01 po křížovém
+# ověření DATA-03 (kategorie ✅ schválena Michalem en bloc, chat 20. 7. 2026;
+# polský název primární — rozhodnutí Michala 20. 7. 2026).
+# METODA (bezobslužný běh 21. 7. 2026): WebFetch nedostupný (PROVENANCE_REQUIRED),
+# fakta jen z OSM (ODbL) a z TITULKŮ výsledků WebSearch — obsah stránek NEotevřen.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# Web se titulkem prezentuje „Hostel — Schronisko górskie Szrenica" —
+# hostelový režim poctivě přiznán v textu (s23: „charakter upřesnit").
+
+nazev: Schronisko Szrenica
+slug: schronisko-szrenica
+zeme: pl
+typ: obsluhovana
+oblast: krkonose
+
+aliasy:
+  - nazev: Schronisko górskie Szrenica
+    poznamka: tvar z titulku vlastního webu szrenica.pl (DATA-03)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS a výška z OSM (ODbL); vazba na Szklarskou Porębu z titulků WebSearch
+# (e-turysta.com, szklarskaporeba.net.pl) — obec v OSM nevyplněna.
+lat: 50.7920351
+lng: 15.5136508
+vyska: 1361
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/way/32604717 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita nedoložena (obsah stránek neotevřen) — nedomýšlet.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    titulek podstránky vlastního webu „Hostel — Schronisko górskie Szrenica"
+    (https://szrenica.pl/en/hostel/; WebSearch 21. 7. 2026, obsah neotevřen)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.szrenica.pl/
+overeniProvoz:
+  source: >-
+    web z OSM https://www.openstreetmap.org/way/32604717 (ODbL), potvrzen
+    titulky szrenica.pl („Schronisko górskie Szrenica — Szklarska Poręba
+    Karkonosze", podstránky /hostel/, /offer/, /history/; obsah neotevřen)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko pod vrcholem Szrenice nad Szklarskou Porębou, s ubytováním
+  hostelového typu. Podrobnosti provozu doporučujeme před cestou ověřit
+  na webu schroniska.
+text:
+  - >-
+    Schronisko Szrenica stojí ve výšce 1361 m těsně pod vrcholem hory
+    Szrenica v západních Krkonoších. Web schroniska nabízí ubytování, které
+    sám označuje jako hostel — v průvodci to přiznáváme, charakter objektu
+    upřesníme po redakčním ověření.
+  - >-
+    Níže na horské louce stojí Schronisko PTTK na Hali Szrenickiej.
+    Kapacitu, otvíračku i historii doplníme po otevření webu — do té doby
+    je doporučujeme ověřit přímo u schroniska.
+
+# Bez hero fotky: mezi 38 kandidáty DATA-02 není žádný s popisem potvrzujícím
+# záběr budovy schroniska (vesměs krajina, sněhové jevy, Natura 2000 šablony)
+# — viz data/kandidati/fotky/krkonose/schronisko-szrenica.yaml. Vybere ruční
+# běh po očním posouzení, nebo další sklizeň DATA-02 (fulltext).
+
+zdroje:
+  - popis: OpenStreetMap (GPS, výška, web — ODbL)
+    url: https://www.openstreetmap.org/way/32604717
+  - popis: Web schroniska (hostel, nabídka, historie — titulky, neotevřeno)
+    url: https://www.szrenica.pl/
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/schronisko-szrenica.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
+  CHARAKTER (s23): web se prezentuje i jako „hostel" — do typologie zapsán typ obsluhovana (schronisko s obsluhou), hostelový režim přiznán v perexu i textu; upřesnit po otevření webu.
+  PROVOZOVATEL: PTTK nikde v titulcích u tohoto objektu — netvrdíme (na rozdíl od Hali Szrenickiej).
+  Výška vrcholu Szrenica v textu vědomě neuvedena (žádný otevřený zdroj z tohoto běhu ji nedokládá) — jen „pod vrcholem"; doplní ruční běh.
+  Dotáhnout ručním během: hero fotka (oční výběr z 38 kandidátů), lůžka, otvíračka, občerstvení, kontakty (telefon), historie (web má /history/), obec.

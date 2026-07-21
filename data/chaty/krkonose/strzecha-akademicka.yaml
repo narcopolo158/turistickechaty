@@ -1,0 +1,99 @@
+# Strzecha Akademicka — profil povýšen z kandidáta DATA-01 po křížovém
+# ověření DATA-03 (kategorie ✅ schválena Michalem en bloc, chat 20. 7. 2026;
+# polský název primární — rozhodnutí Michala 20. 7. 2026).
+# METODA (bezobslužný běh 21. 7. 2026): WebFetch nedostupný (PROVENANCE_REQUIRED),
+# fakta jen z OSM (ODbL) a z TITULKŮ výsledků WebSearch — obsah stránek NEotevřen.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+
+nazev: Strzecha Akademicka
+slug: strzecha-akademicka
+zeme: pl
+typ: obsluhovana
+oblast: krkonose
+
+aliasy:
+  - nazev: Schronisko PTTK „Strzecha Akademicka"
+    poznamka: oficiální tvar u provozovatele (pttk.pl, pttk.jgora.pl — titulky, DATA-03)
+  - nazev: Hamplova bouda
+    poznamka: historické české jméno uváděné v popisech fotek na Wikimedia Commons (DATA-02) — doložit lépe při ručním běhu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS, výška a obec z OSM (ODbL); poloha na cestě z Karpacze na Śnieżku
+# z titulků WebSearch (tulismanore.pl, gorskim-szlakiem.pl).
+lat: 50.7507892
+lng: 15.7083696
+vyska: 1258
+obec: Karpacz
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/way/128601808 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita nedoložena (obsah stránek neotevřen) — nedomýšlet.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    vedeno v přehledu ubytování provozovatele PTTK
+    (https://pttk.pl/accommodations/schronisko-pttk-strzecha-akademicka/;
+    titulky WebSearch 21. 7. 2026, obsah neotevřen)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: http://www.strzechaakademicka.pl
+overeniProvoz:
+  source: >-
+    web z OSM https://www.openstreetmap.org/way/128601808 (ODbL); titulek
+    vlastního webu „Schronisko górskie Strzecha Akademicka, Karpacz,
+    Karkonosze"; provozovatel PTTK dle přehledů pttk.pl a pttk.jgora.pl
+    („Sudeckie Hotele i Schroniska PTTK" — titulky, DATA-03)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko PTTK ve výšce 1258 m na polské straně Krkonoš, na frekventované
+  cestě z Karpacze na Śnieżku. Kapacitu a otvíračku doporučujeme před cestou
+  ověřit na webu schroniska.
+text:
+  - >-
+    Strzecha Akademicka stojí nad Karpaczem v nadmořské výšce 1258 m,
+    nedaleko kotle Małego Stawu se schroniskem Samotnia. Je vedena
+    v přehledu ubytování PTTK pod správou Sudeckich Hoteli i Schronisk PTTK.
+  - >-
+    V popisech dobových fotografií se objevuje i historické české jméno
+    Hamplova bouda. Podrobnosti provozu, kapacitu a historii doplníme po
+    redakčním otevření webu schroniska — do té doby je doporučujeme ověřit
+    přímo u schroniska.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/3/37/Schronisko_PTTK_Strzecha_Akademicka.jpg
+    alt: Strzecha Akademicka — budova schroniska nad Karpaczem
+    typ: soucasna
+    autor: Takasamarasa
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Schronisko_PTTK_Strzecha_Akademicka.jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (geosearch + kategorie DATA-02, 6 m od chaty, popis „Karpacz, Schronisko Strzecha Akademicka", 4752×3168, licence CC BY-SA 4.0 z licenčního síta DATA-02)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
+zdroje:
+  - popis: OpenStreetMap (GPS, výška, web — ODbL)
+    url: https://www.openstreetmap.org/way/128601808
+  - popis: PTTK — přehled ubytování (statut schroniska PTTK, nocleh)
+    url: https://pttk.pl/accommodations/schronisko-pttk-strzecha-akademicka/
+  - popis: Sudeckie Hotele i Schroniska PTTK (provozovatel)
+    url: https://www.pttk.jgora.pl/pttk-strzecha-akademicka/
+  - popis: Web schroniska (dle OSM)
+    url: http://www.strzechaakademicka.pl
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/strzecha-akademicka.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
+  Alias „Hamplova bouda": z popisů fotek File:Strzecha Akademicka 02/08/09.jpg na Commons (user-generated) — při ručním běhu doložit z lepšího zdroje (literatura/web), jinak zvážit vyřazení aliasu.
+  Dotáhnout ručním během: lůžka, otvíračka, občerstvení, telefon/e-mail, historie (titulek tulismanore.pl mluví o „najstarsze schronisko w Karkonoszach" — NEpřevzato, blogový titulek bez otevření obsahu).

@@ -1,0 +1,95 @@
+# Schronisko PTTK na Hali Szrenickiej — profil povýšen z kandidáta DATA-01
+# po křížovém ověření DATA-03 (kategorie ✅ schválena Michalem en bloc,
+# chat 20. 7. 2026; polský název primární — rozhodnutí Michala 20. 7. 2026).
+# METODA (bezobslužný běh 21. 7. 2026): WebFetch nedostupný (PROVENANCE_REQUIRED),
+# fakta jen z OSM (ODbL) a z TITULKŮ výsledků WebSearch — obsah stránek NEotevřen.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+
+nazev: Schronisko PTTK na Hali Szrenickiej
+slug: schronisko-pttk-na-hali-szrenickiej
+zeme: pl
+typ: obsluhovana
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS a výška z OSM (ODbL); Szklarska Poręba z titulků WebSearch (agoda,
+# booking, e-szklarska.com) — obec v OSM nevyplněna, proto jen v textu.
+lat: 50.7941251
+lng: 15.5015817
+vyska: 1200
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/way/32604722 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita nedoložena (obsah stránek neotevřen) — nedomýšlet.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    vedeno v přehledu ubytování provozovatele PTTK
+    (https://pttk.pl/accommodations/schronisko-pttk-na-hali-szrenickiej/)
+    a nabízeno na booking.com („updated prices 2025") — titulky WebSearch
+    21. 7. 2026, obsah neotevřen
+  verified: false
+  checked: '2026-07-21'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: +48 757 533 270
+  web: https://www.halaszrenicka.pl/
+overeniProvoz:
+  source: >-
+    kontakty z OSM https://www.openstreetmap.org/way/32604722 (ODbL); vlastní
+    web potvrzen titulkem „Schronisko PTTK na Hali Szrenickiej"
+    (halaszrenicka.pl); provozovatel PTTK dle přehledů pttk.pl a
+    pttk.jgora.pl („Sudeckie Hotele i Schroniska PTTK" — titulky, DATA-03)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko PTTK na horské louce Hala Szrenicka v západních Krkonoších,
+  ve výšce 1200 m nad Szklarskou Porębou. Kapacitu a otvíračku doporučujeme
+  před cestou ověřit na webu schroniska.
+text:
+  - >-
+    Schronisko stojí na Hali Szrenickiej pod vrcholem Szrenica, v nadmořské
+    výšce 1200 m. Je vedeno v přehledu ubytování PTTK pod správou Sudeckich
+    Hoteli i Schronisk PTTK a nocleh nabízí i přes běžné rezervační portály.
+  - >-
+    Nedaleko nad ním stojí Schronisko Szrenica u vrcholové stanice lanovky
+    ze Szklarské Poręby. Podrobnosti provozu, kapacitu a historii doplníme
+    po redakčním otevření webu — do té doby je doporučujeme ověřit přímo
+    u schroniska.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/6/64/Hala_Szrenicka_-_panoramio_%281%29.jpg
+    alt: Hala Szrenicka se schroniskem PTTK
+    typ: soucasna
+    autor: Sławek Zawadzki
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Hala_Szrenicka_-_panoramio_(1).jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (geosearch DATA-02, 12 m od chaty, popis „Hala Szrenicka", 1280×960, licence CC BY-SA 3.0 z licenčního síta DATA-02 — POZOR, popis jmenuje louku, ne budovu; redakce potvrdí, že záběr ukazuje schronisko)
+      verified: false # licenci i záběr na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
+zdroje:
+  - popis: OpenStreetMap (GPS, výška, kontakty — ODbL)
+    url: https://www.openstreetmap.org/way/32604722
+  - popis: PTTK — přehled ubytování (statut schroniska PTTK, nocleh)
+    url: https://pttk.pl/accommodations/schronisko-pttk-na-hali-szrenickiej/
+  - popis: Sudeckie Hotele i Schroniska PTTK (provozovatel)
+    url: https://www.pttk.jgora.pl/schronisko-pttk-na-hali-szrenickiej/
+  - popis: Web schroniska (dle OSM i titulků)
+    url: https://www.halaszrenicka.pl/
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/schronisko-pttk-na-hali-szrenickiej.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
+  HERO S VÝHRADOU: popis fotky zní jen „Hala Szrenicka" (jméno louky) — geotag 12 m od budovy, autor fotil sérii u schroniska, ale záběr budovy potvrdí redakce očima (vzor Dvorská s28); jinak vyměnit za jiný ze 17 kandidátů.
+  Existuje článek pl.wikipedia „Schronisko PTTK na Hali Szrenickiej" (titulek ve výsledcích) — dobrý zdroj pro historii při ručním běhu.
+  Dotáhnout ručním během: lůžka, otvíračka, občerstvení, obec (Szklarska Poręba jen z titulků portálů), historie.

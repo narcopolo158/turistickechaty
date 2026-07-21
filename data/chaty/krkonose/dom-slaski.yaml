@@ -1,0 +1,93 @@
+# Dom Śląski — profil povýšen z kandidáta DATA-01 po křížovém ověření
+# DATA-03 (kategorie ✅ schválena Michalem en bloc, chat 20. 7. 2026;
+# polský název primární — rozhodnutí Michala 20. 7. 2026).
+# METODA (bezobslužný běh 21. 7. 2026): WebFetch nedostupný (PROVENANCE_REQUIRED),
+# fakta jen z OSM (ODbL) a z TITULKŮ výsledků WebSearch — obsah stránek NEotevřen.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# POZOR: v přehledu ubytování pttk.pl NEnalezen (s23) — provozovatele netvrdíme.
+
+nazev: Dom Śląski
+slug: dom-slaski
+zeme: pl
+typ: obsluhovana
+oblast: krkonose
+
+aliasy:
+  - nazev: Śląski Dom
+    poznamka: slovosled užívaný částí zdrojů (titulky naszeszlaki.com.pl, portalgorski.pl — DATA-03)
+  - nazev: Schronisko „Pod Śnieżką"
+    poznamka: alternativní jméno dle titulku naszeszlaki.com.pl (DATA-03) — doložit lépe při ručním běhu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS, výška a obec z OSM (ODbL); poloha na Równi pod Śnieżką z titulků
+# WebSearch (dobreschronisko.pl, karpacz.com.pl, sowiduch.pl).
+lat: 50.7395071
+lng: 15.7289735
+vyska: 1400
+obec: Karpacz
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/way/19921121 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    poloha na Równi pod Śnieżką z titulků WebSearch (DATA-03, obsah neotevřen)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh ani kapacita z titulků doložitelné nejsou (v pttk.pl přehledu
+# ubytování objekt chybí) — nedomýšlet, dotáhne ruční běh z webu.
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: +48 75 612 67 00
+  email: info@domslaski.pl
+  web: https://domslaski.pl/
+overeniProvoz:
+  source: >-
+    kontakty z OSM https://www.openstreetmap.org/way/19921121 (ODbL); vlastní
+    web potvrzen titulkem „Dom Śląski Karpacz w Karkonoszach pod Śnieżką"
+    (domslaski.pl, WebSearch 21. 7. 2026, obsah neotevřen)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko na Równi pod Śnieżką ve výšce 1400 m — dle titulků „poslední
+  zastávka před výstupem na Śnieżku". Podrobnosti provozu doporučujeme před
+  cestou ověřit na webu schroniska.
+text:
+  - >-
+    Dom Śląski (v části zdrojů Śląski Dom) stojí na náhorní pláni Równia pod
+    Śnieżką v nadmořské výšce 1400 m, u hlavního tahu na nejvyšší horu
+    Krkonoš. Titulek článku karpaczskiarena.pl mluví o „schronisku
+    s bouřlivou historií" — samotnou historii doplníme po redakčním ověření.
+  - >-
+    Nocleh, občerstvení ani otvírací dobu zatím nemáme doloženy; před cestou
+    je doporučujeme ověřit přímo na webu schroniska.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/b/bd/Dom_%C5%9Alaski_-_panoramio_%281%29.jpg
+    alt: Dom Śląski — budova schroniska na Równi pod Śnieżką
+    typ: soucasna
+    autor: Sławek Zawadzki
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Dom_%C5%9Alaski_-_panoramio_(1).jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (geosearch DATA-02, 4 m od chaty, popis „Dom Ślaski", 1280×960, licence CC BY-SA 3.0 z licenčního síta DATA-02 — nižší rozlišení, při ručním běhu zvážit lepší záběr)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
+zdroje:
+  - popis: OpenStreetMap (GPS, výška, kontakty — ODbL)
+    url: https://www.openstreetmap.org/way/19921121
+  - popis: Web schroniska (dle OSM i titulků)
+    url: https://domslaski.pl/
+  - popis: Poloha na Równi pod Śnieżką (titulek, neotevřeno)
+    url: https://www.dobreschronisko.pl/schronisko-dom-slaski-na-rowni-pod-sniezka-w-karkonoszach,d6,s46
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/dom-slaski.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
+  PROVOZOVATEL: v pttk.pl přehledu ubytování chybí (s23) — kdo objekt provozuje, rozhodne otevření webu (ruční běh). Proto nevyplněn nocleh (bez PTTK accommodations dokladu) ani žádný PTTK statut v textu.
+  Sousedí s českou Luční boudou přes Obří sedlo — až budou trasy (DATA-06), zvážit vzájemný odkaz.
+  Dotáhnout ručním během: nocleh + kapacita, občerstvení, otvíračka, historie („burzliwa historia" dle titulku karpaczskiarena.pl), lepší hero (současný má jen 1280×960).

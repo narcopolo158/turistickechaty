@@ -1,0 +1,91 @@
+# Schronisko Odrodzenie — profil povýšen z kandidáta DATA-01 po křížovém
+# ověření DATA-03 (kategorie ✅ schválena Michalem en bloc, chat 20. 7. 2026;
+# polský název primární — rozhodnutí Michala 20. 7. 2026).
+# METODA (bezobslužný běh 21. 7. 2026): WebFetch nedostupný (PROVENANCE_REQUIRED),
+# fakta jen z OSM (ODbL) a z TITULKŮ výsledků WebSearch — obsah stránek NEotevřen.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+
+nazev: Schronisko Odrodzenie
+slug: schronisko-odrodzenie
+zeme: pl
+typ: obsluhovana
+oblast: krkonose
+
+aliasy:
+  - nazev: Schronisko PTTK „Odrodzenie"
+    poznamka: tvar z titulků třetích stran vč. PTTK domény (dolnoslaskie.szlaki.pttk.pl, klubpodroznikow.com — DATA-03)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS a výška z OSM (ODbL); poloha na Przełęczy Karkonoské z titulků
+# WebSearch (klubpodroznikow.com, weekendowyturysta.eu, przesieka.info.pl)
+# — obec v OSM nevyplněna.
+lat: 50.7634073
+lng: 15.6395908
+vyska: 1230
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/way/20897240 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    poloha na Przełęczy Karkonoské z titulků WebSearch (DATA-03, obsah
+    neotevřen)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh z titulků doložitelný není (v pttk.pl přehledu ubytování jsme
+# objekt v tomto běhu nenašli) — nedomýšlet, dotáhne ruční běh z webu.
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  email: piotrkaczmarek2@op.pl
+  web: http://www.schroniskoodrodzenie.pl/
+overeniProvoz:
+  source: >-
+    kontakty z OSM https://www.openstreetmap.org/way/20897240 (ODbL); vlastní
+    web potvrzen titulkem „Schronisko Odrodzenie" (schroniskoodrodzenie.pl,
+    WebSearch 21. 7. 2026, obsah neotevřen); PTTK tvar jména z titulků
+    třetích stran vč. dolnoslaskie.szlaki.pttk.pl
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko na Przełęczy Karkonoské (Slezském sedle) v hlavním hřebeni
+  Krkonoš, ve výšce 1230 m. Podrobnosti provozu doporučujeme před cestou
+  ověřit na webu schroniska.
+text:
+  - >-
+    Odrodzenie stojí u Przełęczy Karkonoské v nadmořské výšce 1230 m, na
+    polské straně hřebene naproti české Špindlerově boudě. Titulky třetích
+    stran včetně PTTK domény je uvádějí jako Schronisko PTTK „Odrodzenie".
+  - >-
+    Nocleh, občerstvení ani otvírací dobu zatím nemáme doloženy; před
+    cestou je doporučujeme ověřit přímo na webu schroniska. Historii
+    doplníme po redakčním ověření.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/0/06/Odrodzenie_%28Krkono%C5%A1e%2C_Polsko%29.jpg
+    alt: Schronisko Odrodzenie na Przełęczy Karkonoské
+    typ: soucasna
+    autor: Suisant7
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Odrodzenie_(Krkono%C5%A1e,_Polsko).jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (geosearch + kategorie DATA-02 — soubor je v kategorii objektu, 131 m od chaty, popis „Odrodzenie.", 4608×2592, licence CC BY-SA 4.0 z licenčního síta DATA-02)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
+zdroje:
+  - popis: OpenStreetMap (GPS, výška, kontakty — ODbL)
+    url: https://www.openstreetmap.org/way/20897240
+  - popis: Web schroniska (dle OSM i titulků)
+    url: http://www.schroniskoodrodzenie.pl/
+  - popis: PTTK šlaki — trasa na Przełęcz Karkonoskou (titulek, neotevřeno)
+    url: https://dolnoslaskie.szlaki.pttk.pl/2023-dolnoslaskie-przelecz-karkonoska-schronisko-odrodzenie
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/schronisko-odrodzenie.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
+  NOCLEH: v pttk.pl/accommodations tento běh objekt nenašel (s23 ho měla mezi potvrzenými schronisky, ale bez accommodations odkazu) — nocleh nevyplněn, doloží web (ruční běh).
+  Naproti přes hřeben stojí Hotel Špindlerova bouda (profil už na webu) — vzájemný odkaz zvážit až s trasami (DATA-06); mezi fotokandidáty je i pohled „Špindlovka" ze 113 m.
+  Dotáhnout ručním během: nocleh + kapacita, občerstvení, otvíračka, telefon, historie, obec, provozovatel (PTTK jen z titulků třetích stran).

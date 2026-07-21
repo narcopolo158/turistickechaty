@@ -1,0 +1,107 @@
+# Schronisko Samotnia — profil povýšen z kandidáta DATA-01 po křížovém
+# ověření DATA-03 (kategorie ✅ schválena Michalem en bloc, chat 20. 7. 2026;
+# polský název primární — rozhodnutí Michala 20. 7. 2026).
+# METODA (bezobslužný běh 21. 7. 2026): WebFetch nedostupný (PROVENANCE_REQUIRED),
+# fakta jen z OSM (ODbL) a z TITULKŮ výsledků WebSearch — obsah stránek NEotevřen.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# POZOR: dle titulku bryla.pl po 60+ letech skončila rodina Siemaszków, nový
+# nájemce → aktuální provoz PROVĚŘIT (priorita DATA-04).
+
+nazev: Schronisko Samotnia
+slug: schronisko-samotnia
+zeme: pl
+typ: obsluhovana
+oblast: krkonose
+
+aliasy:
+  - nazev: Schronisko PTTK „Samotnia"
+    poznamka: oficiální tvar u provozovatele (pttk.pl, pttk.jgora.pl — titulky, DATA-03)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS, výška a obec z OSM (ODbL); poloha nad Małym Stawem z titulků
+# (fotky Commons „Schronisko Samotnia nad Małym Stawem", manawpodrozy.pl).
+lat: 50.7490537
+lng: 15.702695
+vyska: 1195
+obec: Karpacz
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/way/128601809 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    poloha nad Małym Stawem z titulků WebSearch (DATA-03, obsah neotevřen)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita nedoložena (obsah stránek neotevřen) — nedomýšlet.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    vedeno v přehledu ubytování provozovatele PTTK
+    (https://pttk.pl/accommodations/schronisko-pttk-samotnia/) a web
+    https://schroniskosamotnia.com/ se titulkem hlásí „Schronisko i Noclegi
+    w Karkonoszach" (titulky WebSearch 21. 7. 2026, obsah neotevřen)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: +48 75 7619376
+  email: schronisko@samotnia.com.pl
+  web: http://www.samotnia.com.pl/
+overeniProvoz:
+  source: >-
+    kontakty z OSM https://www.openstreetmap.org/way/128601809 (ODbL);
+    provozovatel PTTK dle přehledů pttk.pl a pttk.jgora.pl (titulky, DATA-03).
+    POZOR: titulek bryla.pl hlásí změnu nájemce po 60+ letech — provoz i
+    platnost kontaktů prověřit (DATA-04); výsledky ukazují i druhou doménu
+    schroniskosamotnia.com
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko PTTK v kotli Małego Stawu na polské straně Krkonoš, podle
+  titulku bryla.pl „jedno z najstarszych schronisk w Polsce". Kapacitu a
+  otvíračku doporučujeme před cestou ověřit na webu schroniska.
+text:
+  - >-
+    Samotnia stojí u břehu jezera Mały Staw v nadmořské výšce 1195 m nad
+    Karpaczem. Je vedena v přehledu ubytování PTTK; titulek článku bryla.pl
+    ji označuje za jedno z nejstarších schronisek v Polsku.
+  - >-
+    Tentýž titulek ohlašuje, že po více než 60 letech schronisko opustila
+    rodina Siemaszków a nastupuje nový nájemce — aktuální podobu provozu
+    proto doporučujeme ověřit přímo u schroniska; profil doplníme po
+    redakčním ověření.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/c/ca/Schronisko_PTTK_Samotnia_nad_Ma%C5%82ym_Stawem.jpg
+    alt: Schronisko Samotnia — budova schroniska nad jezerem Mały Staw
+    typ: soucasna
+    autor: Takasamarasa
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Schronisko_PTTK_Samotnia_nad_Ma%C5%82ym_Stawem.jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (geosearch DATA-02, 8 m od chaty, popis „Karpacz, Schronisko PTTK "Samotnia"", 4752×3168, licence CC BY-SA 4.0 z licenčního síta DATA-02)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
+zdroje:
+  - popis: OpenStreetMap (GPS, výška, kontakty — ODbL)
+    url: https://www.openstreetmap.org/way/128601809
+  - popis: PTTK — přehled ubytování (statut schroniska PTTK, nocleh)
+    url: https://pttk.pl/accommodations/schronisko-pttk-samotnia/
+  - popis: Sudeckie Hotele i Schroniska PTTK (provozovatel)
+    url: https://pttk.jgora.pl/schronisko-pttk-samotnia/
+  - popis: Web schroniska (dle OSM)
+    url: http://www.samotnia.com.pl/
+  - popis: Bryła.pl — titulek o změně nájemce po 60+ letech (neotevřeno)
+    url: https://www.bryla.pl/samotnia-jedno-z-najstarszych-schronisk-w-polsce-po-ponad-60-latach-bedzie-nowy-dzierzawca
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/schronisko-samotnia.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
+  DATA-04 PRIORITA: změna nájemce (bryla.pl titulek) — ověřit provoz, kontakty a který web platí (samotnia.com.pl z OSM vs. schroniskosamotnia.com z výsledků; druhý má i podstránku /historia/).
+  Dotáhnout ručním během: lůžka, otvíračka, občerstvení (jadalnia), historie (rok vzniku), případný český ekvivalent názvu do aliasů.
+  Hero: druhý kandidát v pořadí („Samotniapms.jpg", 1 m, CC BY 3.0, popis „…poł. XIX" — možný podklad k historii) ponechán jako alternativa v kandidátech DATA-02.

@@ -1,0 +1,86 @@
+# Schronisko PTTK „Na Przełęczy Okraj" — profil povýšen z kandidáta DATA-01
+# po křížovém ověření DATA-03 (kategorie ✅ schválena Michalem en bloc,
+# chat 20. 7. 2026; polský název primární — rozhodnutí Michala 20. 7. 2026).
+# METODA (bezobslužný běh 21. 7. 2026): WebFetch nedostupný (PROVENANCE_REQUIRED),
+# fakta jen z OSM (ODbL) a z TITULKŮ výsledků WebSearch — obsah stránek NEotevřen.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+
+nazev: Schronisko PTTK "Na Przełęczy Okraj"
+slug: schronisko-pttk-na-przeleczy-okraj
+zeme: pl
+typ: obsluhovana
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS a výška z OSM (ODbL); vazba na Kowary z titulků WebSearch (facebook
+# „Kowary Górne", odtur.pl) — obec v OSM nevyplněna, proto jen v textu.
+lat: 50.7471384
+lng: 15.8245737
+vyska: 1046
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/way/174687998 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita nedoložena (obsah stránek neotevřen) — nedomýšlet.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    vedeno v přehledu ubytování provozovatele PTTK
+    (https://pttk.pl/accommodations/schronisko-pttk-na-przeleczy-okraj/)
+    a v nabídce schroniskookraj.infoturystyka.com.pl („Oferta") — titulky
+    WebSearch 21. 7. 2026, obsah neotevřen
+  verified: false
+  checked: '2026-07-21'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: +48 75 611 20 36
+  web: https://schroniskookraj.pl/
+overeniProvoz:
+  source: >-
+    kontakty z OSM https://www.openstreetmap.org/way/174687998 (ODbL);
+    vlastní web potvrzen titulkem „Przełęcz Okraj, Schronisko PTTK —
+    O schronisku" (schroniskookraj.pl); provozovatel PTTK dle přehledů
+    pttk.pl a pttk.jgora.pl (titulky, DATA-03)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko PTTK na sedle Przełęcz Okraj ve východních Krkonoších, hned
+  u hraničního přechodu do Horní Malé Úpy, ve výšce 1046 m. Kapacitu a
+  otvíračku doporučujeme před cestou ověřit na webu schroniska.
+text:
+  - >-
+    Schronisko stojí přímo na sedle Przełęcz Okraj nad Kowary, pár kroků od
+    státní hranice — z české strany sem vede silnice přes Pomezní Boudy
+    v Horní Malé Úpě. Mezi fotkami okolí z Wikimedia Commons převažují
+    právě hraniční kameny a rozcestníky.
+  - >-
+    Objekt je veden v přehledu ubytování PTTK. Kapacitu, občerstvení,
+    otvírací dobu i historii doplníme po redakčním otevření webu — do té
+    doby je doporučujeme ověřit přímo u schroniska.
+
+# Bez hero fotky: mezi 24 kandidáty DATA-02 není žádný s popisem potvrzujícím
+# záběr budovy schroniska (vesměs hraniční kameny, rozcestníky, pomníky) —
+# viz data/kandidati/fotky/krkonose/schronisko-pttk-na-przeleczy-okraj.yaml.
+# Vybere ruční běh po očním posouzení, nebo další sklizeň DATA-02 (fulltext).
+
+zdroje:
+  - popis: OpenStreetMap (GPS, výška, kontakty — ODbL)
+    url: https://www.openstreetmap.org/way/174687998
+  - popis: PTTK — přehled ubytování (statut schroniska PTTK, nocleh)
+    url: https://pttk.pl/accommodations/schronisko-pttk-na-przeleczy-okraj/
+  - popis: Sudeckie Hotele i Schroniska PTTK (provozovatel)
+    url: https://www.pttk.jgora.pl/obiekt-pttk-na-przeleczy-okraj/
+  - popis: Web schroniska (dle OSM i titulků)
+    url: https://schroniskookraj.pl/
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/schronisko-pttk-na-przeleczy-okraj.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
+  Slug nese opravu polského ł ze session 20 (schronisko-pttk-na-przeleczy-okraj).
+  Blízko česká strana: Pomezní Boudy (kandidát jindrichuv-dum a okolí Malé Úpy) — vazby doplní DATA-06.
+  Dotáhnout ručním během: hero fotka (oční výběr z 24 kandidátů — budova na žádném popisu), lůžka, otvíračka, občerstvení, e-mail, historie, obec (Kowary jen z titulků FB/odtur).
