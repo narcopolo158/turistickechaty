@@ -202,13 +202,14 @@ type Predchudce = { uzel: UzelKlic; delkaM: number; znaceni: Znaceni | null }
  * geometrii, skutečnou (nevaženou) délku, rozklad na úseky po značení a podíl
  * neznačené délky. null = cíl je z výchozího uzlu nedosažitelný.
  */
-export const najdiTrasu = (graf: Graf, start: UzelKlic, cil: UzelKlic): Trasa | null => {
-  if (!graf.uzly.has(start) || !graf.uzly.has(cil)) return null
-  if (start === cil) {
-    const u = graf.uzly.get(start)!
-    return { uzly: [start], geometrie: [{ lat: u.lat, lng: u.lng }], delkaKm: 0, useky: [], podilNeznacenychProc: 0 }
-  }
+export type DijkstraVysledek = { cena: Map<UzelKlic, number>; predchudce: Map<UzelKlic, Predchudce> }
 
+/**
+ * Dijkstra z jednoho uzlu do celého grafu (bez cíle) — vrací cenu i předchůdce
+ * ke všem dosažitelným uzlům. Hodí se, když z jednoho bodu hledáme trasy k více
+ * cílům (přístupové trasy chaty k mnoha výchozím bodům = 1 běh místo N).
+ */
+export const dijkstraOdUzlu = (graf: Graf, start: UzelKlic): DijkstraVysledek => {
   const cena = new Map<UzelKlic, number>([[start, 0]])
   const predchudce = new Map<UzelKlic, Predchudce>()
   const hotovo = new Set<UzelKlic>()
@@ -219,7 +220,6 @@ export const najdiTrasu = (graf: Graf, start: UzelKlic, cil: UzelKlic): Trasa | 
     const { klic: u, cena: cu } = halda.odeber()!
     if (hotovo.has(u)) continue
     hotovo.add(u)
-    if (u === cil) break
     for (const h of graf.sousede.get(u) ?? []) {
       if (hotovo.has(h.do)) continue
       const nova = cu + h.delkaM * (h.znaceni ? 1 : CENA_NEZNACENE)
@@ -230,7 +230,21 @@ export const najdiTrasu = (graf: Graf, start: UzelKlic, cil: UzelKlic): Trasa | 
       }
     }
   }
+  return { cena, predchudce }
+}
 
+/** Složí trasu `start`→`cil` z mapy předchůdců (výstup dijkstraOdUzlu). null = nedosažitelné. */
+export const slozTrasu = (
+  graf: Graf,
+  predchudce: Map<UzelKlic, Predchudce>,
+  start: UzelKlic,
+  cil: UzelKlic,
+): Trasa | null => {
+  if (!graf.uzly.has(cil)) return null
+  if (start === cil) {
+    const u = graf.uzly.get(start)!
+    return { uzly: [start], geometrie: [{ lat: u.lat, lng: u.lng }], delkaKm: 0, useky: [], podilNeznacenychProc: 0 }
+  }
   if (!predchudce.has(cil)) return null
 
   // Rekonstrukce cesty od cíle k startu → obrátit.
@@ -273,6 +287,13 @@ export const najdiTrasu = (graf: Graf, start: UzelKlic, cil: UzelKlic): Trasa | 
     useky,
     podilNeznacenychProc: delkaCelkemM > 0 ? Math.round((neznacenaM / delkaCelkemM) * 1000) / 10 : 0,
   }
+}
+
+/** Nejkratší cesta bod→bod s preferencí značených (Dijkstra). null = nedosažitelné. */
+export const najdiTrasu = (graf: Graf, start: UzelKlic, cil: UzelKlic): Trasa | null => {
+  if (!graf.uzly.has(start) || !graf.uzly.has(cil)) return null
+  const { predchudce } = dijkstraOdUzlu(graf, start)
+  return slozTrasu(graf, predchudce, start, cil)
 }
 
 // ── Smoke nad reálným exportem ──────────────────────────────────────────────
