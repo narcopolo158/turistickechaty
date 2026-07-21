@@ -3,7 +3,7 @@
 # občerstvení/restaurace pro veřejnost → zařadit).
 # Data dotažena přímo z oficiálního webu lovecka-chata.cz 21. 7. 2026
 # (session 30, ruční běh — Michal online, WebFetch schválen). Údaje doložené
-# citací z webu → verified: true; co web neuvádí (výška, kapacita) nebo je
+# citací z webu → verified: false; co web neuvádí (výška, kapacita) nebo je
 # z OSM (GPS) → verified: false. Nic nedomýšleno.
 # POZOR na domény: platí jen lovecka-chata.cz; doména loveckachatakrkonose.cz
 # z OSM kontaktů je nesouvisející e-shop se zahradními domky (ověřeno 20. 7.).
@@ -46,7 +46,7 @@ kuchyne: ano
 typObcerstveni: restaurace
 overeniObcerstveni:
   source: https://www.lovecka-chata.cz/ (veřejná restaurace s možností rezervace stolu, otevřeno denně 11:00–21:00, rezervace mimo otvírací dobu po telefonu; načteno 21. 7. 2026 — klíč redakce „občerstvení pro veřejnost" splněn)
-  verified: true
+  verified: false
   checked: '2026-07-21'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
@@ -58,7 +58,7 @@ kontakty:
   web: https://www.lovecka-chata.cz/
 overeniProvoz:
   source: https://www.lovecka-chata.cz/ (telefon +420 724 038 622, e-mail info@lovecka-chata.cz, otvírací doba restaurace denně 11:00–21:00; načteno 21. 7. 2026 — explicitní sezónu/celoroční provoz web neuvádí; doména loveckachatakrkonose.cz z OSM je nesouvisející e-shop, nepřebírat)
-  verified: true
+  verified: false
   checked: '2026-07-21'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
@@ -87,6 +87,6 @@ zdroje:
     url: https://www.openstreetmap.org/node/13298087649
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/lovecka-chata.yaml (DATA-01) po křížovém ověření DATA-03 a rozhodnutí Michala (chat 20. 7. 2026 — klíč: veřejná restaurace denně 11–21 doložena → ZAŘADIT; původní verdikt „nezařazovat" tím revidován).
-  Data dotažena z webu lovecka-chata.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: true (kontakty, veřejná restaurace + otvíračka). verified: false u lokace (GPS z OSM; adresa z webu potvrzena, výška web neuvádí) a nocleh (kapacita nedoložena).
+  Data dotažena z webu lovecka-chata.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: false (kontakty, veřejná restaurace + otvíračka). verified: false u lokace (GPS z OSM; adresa z webu potvrzena, výška web neuvádí) a nocleh (kapacita nedoložena).
   TYP: OSM tag tourism=wilderness_hut (útulna) je zjevně chybný — objekt je penzion s obsluhou a veřejnou restaurací; zapsán typ obsluhovana (penzion v enum není), penzionový charakter přiznán v perexu i textu. Zvážit hlášení opravy tagu do OSM (dobrý soused).
   NEDOHLEDÁNO (web neuvádí): nadmořská výška, kapacita lůžek, explicitní sezóna/celoroční provoz.

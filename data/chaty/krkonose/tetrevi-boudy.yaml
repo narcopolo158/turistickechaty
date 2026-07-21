@@ -4,7 +4,7 @@
 # Data dotažena přímo z oficiálního webu tetreviboudy.com 21. 7. 2026
 # (session 30, ruční běh — Michal online, WebFetch schválen; podstránky
 # historie.htm, restaurace.htm, ubytovani.htm). Údaje doložené citací
-# z webu → verified: true; co web neuvádí (kapacita) nebo je z OSM (GPS)
+# z webu → verified: false; co web neuvádí (kapacita) nebo je z OSM (GPS)
 # → verified: false. Nic nedomýšleno.
 
 nazev: Tetřeví Boudy
@@ -39,7 +39,7 @@ pokoje:
   - typ: Pokoje kategorie Superior (všechny zrekonstruované od roku 2016)
 overeniNocleh:
   source: https://www.tetreviboudy.com/ubytovani.htm („Naše pokoje jsou všechny zrekonstruované od roku 2016"; kategorie Superior; načteno 21. 7. 2026 — celkovou kapacitu lůžek/pokojů web neuvádí, nezapisuje se)
-  verified: true
+  verified: false
   checked: '2026-07-21'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
@@ -49,14 +49,14 @@ kuchyne: ano
 typObcerstveni: restaurace
 overeniObcerstveni:
   source: https://www.tetreviboudy.com/restaurace.htm (obědy 11:00–16:00, večeře 18:00–21:00 formou rautu 390 Kč/dosp. a 250 Kč/dítě, snack menu 16–17 a 21–22, rezervace tel. 602 311 301; načteno 21. 7. 2026 — dostupnost pro neubytované web výslovně neuvádí)
-  verified: true
+  verified: false
   checked: '2026-07-21'
 
 # ── Služby ────────────────────────────────────────────────────────────────
 wifi: null
 overeniSluzby:
   source: https://www.tetreviboudy.com/ubytovani.htm („luxusní bazén, vířivka, finské sauny, parní sauna, infrasauna, fitness, stolní tenis, stolní fotbálek, kulečník, šipky, dětská herna a venkovní dětské hřiště"; načteno 21. 7. 2026)
-  verified: true
+  verified: false
   checked: '2026-07-21'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
@@ -95,7 +95,7 @@ overeniHistorie:
     dvě budovy A a B byly postaveny v roce 1980", „Další dvě budovy byly
     dostavěny v roce 1989", „V květnu 2014 Tetřeví Boudy zakoupila společnost
     Green Garden, s.r.o."
-  verified: true
+  verified: false
   checked: '2026-07-21'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
@@ -131,7 +131,7 @@ zdroje:
     url: https://www.openstreetmap.org/relation/16406121
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/tetrevi-boudy.yaml (DATA-01) po křížovém ověření DATA-03 a rozhodnutí Michala (chat 20. 7. 2026: hraniční hotely zařadit všechny, typ horsky-hotel).
-  Data dotažena z webu tetreviboudy.com 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala; podstránky historie.htm, restaurace.htm, ubytovani.htm). Metoda ověření: přímá citace z oficiálního webu → verified: true (ubytování, restaurace-otvíračka, wellness, historie). verified: false zůstává u: GPS (z OSM, adresa/výška z webu potvrzeny), provoz (telefon+otvíračka ověřeny, ale sezóna jen z dřívějšího čtení a e-mail nedoložen).
+  Data dotažena z webu tetreviboudy.com 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala; podstránky historie.htm, restaurace.htm, ubytovani.htm). Metoda ověření: přímá citace z oficiálního webu → verified: false (ubytování, restaurace-otvíračka, wellness, historie). verified: false zůstává u: GPS (z OSM, adresa/výška z webu potvrzeny), provoz (telefon+otvíračka ověřeny, ale sezóna jen z dřívějšího čtení a e-mail nedoložen).
   Historie: první milník je bez pole „rok" (web uvádí jen „18. století", přesný letopočet ne) — časová osa u něj zobrazí „—" (render: {m.rok ?? '—'}), text milníku nese „18. století".
   NEDOHLEDÁNO (web neuvádí na načtených stránkách): celková kapacita lůžek/pokojů (odkaz na „Informace o pokojích"/superior.htm — dotáhnout), vlastní e-mail objektu (na webu jen kontakt na správce info@virtual-zoom.cz — NEpřebírat), explicitní potvrzení dostupnosti restaurace pro veřejnost.
   Rezervační telefon restaurace 602 311 301 se liší od hlavního +420 602 322 399 — obojí z webu; hlavní v kontaktech, rezervační v otvírací době.

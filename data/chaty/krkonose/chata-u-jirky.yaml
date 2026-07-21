@@ -3,7 +3,7 @@
 # občerstvení/restaurace pro veřejnost → zařadit).
 # Data dotažena přímo z oficiálního webu chataujirky.cz 21. 7. 2026
 # (session 30, ruční běh — Michal online, WebFetch schválen). Údaje doložené
-# citací z webu → verified: true; co web neuvádí (výška, kapacita, otvíračka)
+# citací z webu → verified: false; co web neuvádí (výška, kapacita, otvíračka)
 # nebo je z OSM (GPS) → verified: false. Nic nedomýšleno.
 
 nazev: Chata U Jirky
@@ -44,7 +44,7 @@ kuchyne: ano
 typObcerstveni: restaurace
 overeniObcerstveni:
   source: https://chataujirky.cz/ („Vaříme pro všechny – bez rozdílu" — domácí kuchyně dostupná i neubytovaným; načteno 21. 7. 2026 — klíč redakce „občerstvení pro veřejnost" splněn; přesnou otvírací dobu restaurace web neuvádí)
-  verified: true
+  verified: false
   checked: '2026-07-21'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
@@ -56,7 +56,7 @@ kontakty:
   web: https://chataujirky.cz/
 overeniProvoz:
   source: https://chataujirky.cz/ (telefon +420 773 087 796, e-mail info@chataujirky.cz; návštěvy v zimě i létě; načteno 21. 7. 2026 — otvírací dobu a explicitní sezónu web neuvádí)
-  verified: true
+  verified: false
   checked: '2026-07-21'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
@@ -86,6 +86,6 @@ zdroje:
     url: https://www.openstreetmap.org/node/13027945022
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/chata-u-jirky.yaml (DATA-01) po křížovém ověření DATA-03 a rozhodnutí Michala (chat 20. 7. 2026 — klíč: restaurace pro veřejnost doložena → ZAŘADIT; původní verdikt „nezařazovat" tím revidován).
-  Data dotažena z webu chataujirky.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: true (kontakty, občerstvení „Vaříme pro všechny – bez rozdílu"). verified: false u lokace (GPS z OSM; adresa z webu potvrzena, výška web neuvádí) a nocleh (kapacita nedoložena).
+  Data dotažena z webu chataujirky.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: false (kontakty, občerstvení „Vaříme pro všechny – bez rozdílu"). verified: false u lokace (GPS z OSM; adresa z webu potvrzena, výška web neuvádí) a nocleh (kapacita nedoložena).
   Provozovatel dle OSM: Multi Store s.r.o.
   NEDOHLEDÁNO (web neuvádí): nadmořská výška, kapacita lůžek, přesná otvírací doba restaurace, explicitní sezóna.
