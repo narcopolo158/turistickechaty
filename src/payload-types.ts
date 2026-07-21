@@ -577,9 +577,9 @@ export interface Razitka {
   potvrzeno?: string | null;
   poznamka?: string | null;
   /**
-   * Komunitní podání čeká jako koncept, dokud ho redakce nepublikuje. Publikovat ho nelze bez licenčního souhlasu níže.
+   * Komunitní podání čeká jako koncept, dokud ho redakce nepublikuje. Publikovat ho nelze bez licenčního souhlasu níže. Převzaté (partnerský web) nelze publikovat bez odkazu na zdroj.
    */
-  zpusobZiskani?: ('redakce' | 'komunitni-podani') | null;
+  zpusobZiskani?: ('redakce' | 'komunitni-podani' | 'prevzato-se-svolenim') | null;
   /**
    * Kdo otisk nahrál a jeho licenční souhlas. Sběratel může podat s účtem i jako host (bez účtu).
    */
@@ -602,6 +602,14 @@ export interface Razitka {
      */
     souhlasZneni?: string | null;
     souhlasDatum?: string | null;
+  };
+  /**
+   * Otisk převzatý z partnerského webu s jeho svolením. Zdroj (odkaz) se povinně zobrazuje u razítka na webu — bez `zdrojUrl` nelze publikovat.
+   */
+  prevzeti?: {
+    zdroj?: string | null;
+    zdrojUrl?: string | null;
+    svolil?: string | null;
   };
   /**
    * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
@@ -1148,6 +1156,13 @@ export interface RazitkaSelect<T extends boolean = true> {
         licencniSouhlas?: T;
         souhlasZneni?: T;
         souhlasDatum?: T;
+      };
+  prevzeti?:
+    | T
+    | {
+        zdroj?: T;
+        zdrojUrl?: T;
+        svolil?: T;
       };
   overeni?:
     | T

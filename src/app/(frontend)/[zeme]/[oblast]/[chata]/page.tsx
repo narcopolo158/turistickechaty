@@ -344,6 +344,15 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
                       Historické varianty ({razitka.length - 1})
                     </p>
                   )}
+                  {/* Poctivost + podmínka svolení: u převzatého otisku vždy viditelný zdroj. */}
+                  {razitko.zpusobZiskani === 'prevzato-se-svolenim' && razitko.prevzeti?.zdrojUrl && (
+                    <p className="mn" style={{ fontSize: 9.5, color: 'var(--muted)', marginTop: 9 }}>
+                      Otisk převzat se svolením —{' '}
+                      <a href={razitko.prevzeti.zdrojUrl} target="_blank" rel="noopener noreferrer nofollow">
+                        {razitko.prevzeti.zdroj || 'zdroj'}
+                      </a>
+                    </p>
+                  )}
                 </div>
               </RazitkoMoment>
             </div>

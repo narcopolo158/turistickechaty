@@ -81,4 +81,40 @@ describe('Moderace razítek (koncept / publikace)', () => {
       }),
     ).rejects.toThrow(/licenčního souhlasu/)
   })
+
+  it('převzaté razítko nelze publikovat bez uvedení zdroje (odkazu)', async () => {
+    await expect(
+      payload.create({
+        collection: 'razitka',
+        data: {
+          nazev: 'Převzaté bez zdroje',
+          chata: chataId,
+          zpusobZiskani: 'prevzato-se-svolenim',
+          prevzeti: { zdroj: 'razitkuj.cz' }, // chybí zdrojUrl → publikace odmítnuta
+          _status: 'published',
+        } as never,
+      }),
+    ).rejects.toThrow(/zdroje/)
+  })
+
+  it('převzaté razítko se zdrojem se publikuje a nese atribuci', async () => {
+    const r = await payload.create({
+      collection: 'razitka',
+      data: {
+        nazev: 'Převzaté se zdrojem',
+        chata: chataId,
+        zpusobZiskani: 'prevzato-se-svolenim',
+        prevzeti: {
+          zdroj: 'razitkuj.cz',
+          zdrojUrl: 'http://www.razitkuj.cz/misto-test/1',
+          svolil: 'Robert Šindler (KiBob), 21. 7. 2026',
+        },
+        _status: 'published',
+      } as never,
+    })
+    razitkaKUklidu.push(r.id)
+    const nase = (await viditelnaRazitka()).find((x) => x.nazev === 'Převzaté se zdrojem')
+    expect(nase).toBeTruthy()
+    expect(nase?.prevzeti?.zdrojUrl).toContain('razitkuj.cz')
+  })
 })

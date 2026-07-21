@@ -44,6 +44,18 @@ export const Razitka: CollectionConfig = {
             400,
           )
         }
+        // Převzatý otisk (partnerský web se svolením) nesmí jít ven bez uvedení
+        // zdroje — atribuce je podmínka svolení i naší poctivosti (DATA-05).
+        if (
+          data?._status === 'published' &&
+          data?.zpusobZiskani === 'prevzato-se-svolenim' &&
+          !data?.prevzeti?.zdrojUrl
+        ) {
+          throw new APIError(
+            'Převzaté razítko nelze publikovat bez uvedení zdroje (odkazu na původní web).',
+            400,
+          )
+        }
         return data
       },
     ],
@@ -131,10 +143,11 @@ export const Razitka: CollectionConfig = {
       options: [
         { label: 'Redakční záznam', value: 'redakce' },
         { label: 'Komunitní podání (nahrál sběratel)', value: 'komunitni-podani' },
+        { label: 'Převzato se svolením (partnerský web)', value: 'prevzato-se-svolenim' },
       ],
       admin: {
         description:
-          'Komunitní podání čeká jako koncept, dokud ho redakce nepublikuje. Publikovat ho nelze bez licenčního souhlasu níže.',
+          'Komunitní podání čeká jako koncept, dokud ho redakce nepublikuje. Publikovat ho nelze bez licenčního souhlasu níže. Převzaté (partnerský web) nelze publikovat bez odkazu na zdroj.',
       },
     },
     {
@@ -196,6 +209,42 @@ export const Razitka: CollectionConfig = {
           type: 'date',
           label: 'Datum souhlasu',
           admin: { date: { pickerAppearance: 'dayOnly', displayFormat: 'd. M. yyyy' } },
+        },
+      ],
+    },
+    // ── Převzetí z partnerského webu se svolením ──────────────────────────
+    {
+      name: 'prevzeti',
+      type: 'group',
+      label: 'Převzetí se svolením',
+      admin: {
+        condition: (data) => data?.zpusobZiskani === 'prevzato-se-svolenim',
+        description:
+          'Otisk převzatý z partnerského webu s jeho svolením. Zdroj (odkaz) se povinně zobrazuje u razítka na webu — bez `zdrojUrl` nelze publikovat.',
+      },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            {
+              name: 'zdroj',
+              type: 'text',
+              label: 'Zdroj (název webu)',
+              admin: { width: '50%', placeholder: 'např. razitkuj.cz' },
+            },
+            {
+              name: 'zdrojUrl',
+              type: 'text',
+              label: 'Odkaz na zdroj (detail razítka)',
+              admin: { width: '50%', placeholder: 'https://www.razitkuj.cz/…' },
+            },
+          ],
+        },
+        {
+          name: 'svolil',
+          type: 'text',
+          label: 'Kdo a kdy svolil',
+          admin: { placeholder: 'např. Robert Šindler (KiBob), 21. 7. 2026' },
         },
       ],
     },
