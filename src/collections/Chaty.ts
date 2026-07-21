@@ -357,6 +357,44 @@ export const Chaty: CollectionConfig = {
               admin: { description: '2–4 odstavce: charakter místa, co si dát, kdy přijít.' },
             },
             {
+              name: 'zajimavosti',
+              type: 'array',
+              label: 'Zajímavosti a rekordy',
+              labels: { singular: 'Zajímavost', plural: 'Zajímavosti' },
+              admin: {
+                description:
+                  'Krátké pozoruhodné údaje a „nej" (nejstarší, nejvýše položená, největší, unikátní specialita…) pro budoucí žebříčky rekordů i highlight na profilu. Sbírej je rovnou při zjišťování dat. Superlativ = tvrzení → uveď zdroj, nedomýšlet. Spočitatelná „nej" (dle rokVzniku/výšky/kapacity) sem psát nemusíš — vezmou se z polí.',
+              },
+              fields: [
+                {
+                  name: 'text',
+                  type: 'text',
+                  label: 'Zajímavost',
+                  required: true,
+                  admin: { placeholder: 'např. „Nejvýše položené restaurační zařízení v Čechách"' },
+                },
+                {
+                  name: 'kategorie',
+                  type: 'select',
+                  label: 'Kategorie „nej" (volitelné)',
+                  options: [
+                    { label: 'Stáří / historie', value: 'stari' },
+                    { label: 'Nadmořská výška', value: 'vyska' },
+                    { label: 'Velikost / kapacita', value: 'velikost' },
+                    { label: 'Gastronomie / specialita', value: 'gastro' },
+                    { label: 'Jiné', value: 'jine' },
+                  ],
+                  admin: { description: 'Pro řazení do žebříčků „nej" (volitelné).' },
+                },
+                {
+                  name: 'zdroj',
+                  type: 'text',
+                  label: 'Zdroj',
+                  admin: { description: 'Odkud údaj/tvrzení pochází (web, provozovatel, kniha). Superlativ bez zdroje nezapisovat.' },
+                },
+              ],
+            },
+            {
               name: 'fotky',
               type: 'join',
               collection: 'fotky',

@@ -362,6 +362,23 @@ export interface Chaty {
     };
     [k: string]: unknown;
   } | null;
+  /**
+   * Krátké pozoruhodné údaje a „nej" (nejstarší, nejvýše položená, největší, unikátní specialita…) pro budoucí žebříčky rekordů i highlight na profilu. Sbírej je rovnou při zjišťování dat. Superlativ = tvrzení → uveď zdroj, nedomýšlet. Spočitatelná „nej" (dle rokVzniku/výšky/kapacity) sem psát nemusíš — vezmou se z polí.
+   */
+  zajimavosti?:
+    | {
+        text: string;
+        /**
+         * Pro řazení do žebříčků „nej" (volitelné).
+         */
+        kategorie?: ('stari' | 'vyska' | 'velikost' | 'gastro' | 'jine') | null;
+        /**
+         * Odkud údaj/tvrzení pochází (web, provozovatel, kniha). Superlativ bez zdroje nezapisovat.
+         */
+        zdroj?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   fotky?: {
     docs?: (number | Fotky)[];
     hasNextPage?: boolean;
@@ -996,6 +1013,14 @@ export interface ChatySelect<T extends boolean = true> {
       };
   perex?: T;
   text?: T;
+  zajimavosti?:
+    | T
+    | {
+        text?: T;
+        kategorie?: T;
+        zdroj?: T;
+        id?: T;
+      };
   fotky?: T;
   webkamera?: T;
   sousedniChaty?:
