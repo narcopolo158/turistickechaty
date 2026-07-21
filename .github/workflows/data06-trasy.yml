@@ -1,0 +1,67 @@
+# DATA-06 (increment 1): export značených turistických tras Krkonoš z OSM —
+# sandbox denních sessions na Overpass nedosáhne (proxy), GitHub Actions ano.
+# Spouští se ručně jedním klikem (Actions → „DATA-06: export značených tras" →
+# Run workflow).
+#
+# Běh: (1) stáhne surový JSON export relací route=hiking i s geometrií
+# (commituje se jako doklad — timestamp stavu OSM dat + copyright Overpass),
+# (2) skript z tagů `osmc:symbol`/`kct_*`/`colour` určí barvu značení KČT a
+# zapíše katalog `data/trasy/krkonose/znacene-trasy.json` (vstup pro pozdější
+# routing přístupových tras k chatám). Trasy bez rozpoznaného značení jdou do
+# reportu, ne do katalogu (nedomýšlet). Idempotentní — přepíše export i katalog
+# aktuálním stavem OSM.
+name: 'DATA-06: export značených tras'
+
+on:
+  workflow_dispatch:
+    inputs:
+      api:
+        description: 'Overpass endpoint — nech prázdné (skript zkouší overpass-api.de a při selhání zrcadlo kumi.systems); vyplň jen pro vynucení konkrétní instance'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data06-trasy
+  cancel-in-progress: false
+
+jobs:
+  export:
+    name: Overpass → značené trasy (data/trasy/krkonose)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Export tras z Overpass API + rozpoznání značení
+        shell: bash
+        env:
+          API_INPUT: ${{ inputs.api }}
+        run: |
+          ARG=()
+          if [ -n "$API_INPUT" ]; then ARG=(--api "$API_INPUT"); fi
+          npx tsx scripts/data06-trasy.ts "${ARG[@]}" | tee report.txt
+          echo '## DATA-06 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit exportu a katalogu tras do main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/trasy
+          if git diff --cached --quiet; then
+            echo 'Beze změny exportu i katalogu — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m 'data: OSM export značených tras Krkonoš — route=hiking + značení KČT (z Actions)' \
+            -m 'Zdroj: OpenStreetMap (ODbL), relace route=hiking; barva z osmc:symbol/kct_*/colour. Vstup pro routing přístupových tras (DATA-06 increment 2).'
+          git pull --rebase origin main
+          git push origin main

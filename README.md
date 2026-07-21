@@ -43,3 +43,9 @@ Kolekce **Razítka** má zapnutou moderaci přes Payload koncept/publikaci (`ver
 - Poctivost a právo: komunitní razítko **nelze publikovat bez licenčního souhlasu** (hlídá `beforeChange` hook kolekce). Licence otisku je „se svolením" a kredit se u razítka zobrazuje.
 
 Plné účty (registrace, deníček raziče, žebříček) přijdou ve Fázi 4; model už s relací na účet počítá. Test moderace: `tests/int/razitka-moderace.int.spec.ts`.
+
+## Značené trasy (DATA-06)
+
+Podklad pro automatické přístupové trasy k chatám. Workflow „DATA-06: export značených tras" (Actions → Run workflow) stáhne z OSM Overpass relace `route=hiking` v Krkonoších i s geometrií a skript `scripts/data06-trasy.ts` z tagů `osmc:symbol` / `kct_*` / `colour` určí **barvu značení KČT** (červená/modrá/zelená/žlutá). Výstup: surový export `data/trasy/krkonose/_overpass-trasy.json` (doklad) + katalog `znacene-trasy.json` (osmId, název, ref, `znaceni`, délka, počet úseků). Trasy bez rozpoznaného značení jdou do reportu, ne do katalogu (nedomýšlet). Offline nad commitnutým exportem: `npx tsx scripts/data06-trasy.ts --z-jsonu`.
+
+Tohle je **increment 1** (routovatelný podklad). Navazuje: (2) kurátorovaný seznam výchozích bodů oblasti v `data/oblasti/<slug>.yaml`; (3) routing po značených trasách z výchozích bodů → geometrie, `znaceni` po úsecích, výšky přes Mapy.com Elevation API, `casMin` dle DIN 33466; zpětně doplní i `znaceni` dvou tras Luční boudy. Vše `verified: false` se zdrojem (ODbL); trasy s >15 % délky mimo značené cesty k ruční kontrole.
