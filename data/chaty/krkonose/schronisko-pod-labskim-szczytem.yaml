@@ -1,0 +1,125 @@
+# Schronisko PTTK „Pod Łabskim Szczytem" — profil povýšen z kandidáta DATA-01 po
+# křížovém ověření DATA-03. Původní polský název primární. Každá skupina má blok
+# overeni; verified: false = doložený zdroj, ověří teprve redakce/Michal
+# (konvence B, 21. 7. 2026). pl.wikipedia se ze sandboxu nenačte (cache-only) —
+# obsah z katalogu schroniskaturystyczne.pl.
+
+nazev: Schronisko PTTK „Pod Łabskim Szczytem"
+slug: schronisko-pod-labskim-szczytem
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+aliasy:
+  - nazev: Schronisko „Pod Łabskim Szczytem"
+    poznamka: kratší běžný tvar (OSM, hovorové užití)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7881562
+lng: 15.5367363
+vyska: 1168
+obec: Szklarska Poręba
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/32604714 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 1168 m n.p.m., poloha na hali pod Łabským Wierzchem v hlavním hřebeni
+    Karkonoszů: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/
+  verified: false
+  checked: '2026-07-21'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 38 # pokoje pro 1–6 osob, společné sociální zařízení
+overeniNocleh:
+  source: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/ (38 míst v pokojích pro 1–6 osob se společným sociálním zařízením)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/ (bufet 8:00–20:00 — obědy, večeře, teplé nápoje)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Bufet denně 8:00–20:00 (dle katalogu).
+# Provozovatel PTTK. Kontakty katalog neuvádí → nevyplněno.
+overeniProvoz:
+  source: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/ (provozovatel PTTK od roku 1945, bufet 8:00–20:00; kontakty na stránce neuvedeny)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: >-
+  Autem do Szklarské Poręby, dál pěšky. Ke schronisku vedou čtyři značené cesty
+  ze Szklarské Poręby (1–2 hodiny), dále z Jakuszyc a z Jagniątkova. Je
+  východiskem k ledovcovým kotlům Śnieżne Kotły; poblíž stojí schroniska Na
+  Hali Szrenickiej a Szrenica.
+overeniPristup:
+  source: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/ (čtyři značené cesty ze Szklarské Poręby 1–2 h, z Jakuszyc a Jagniątkova; poblíž Na Hali Szrenickiej a Szrenica)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1938 # budova postavena německou turistickou společností
+milniky:
+  - rok: 1938
+    udalost: Budova postavena německou turistickou společností (dřevěná stavba na kamenné podezdívce)
+  - rok: 1945
+    udalost: Schronisko převzalo PTTK, které ho provozuje dodnes
+overeniHistorie:
+  source: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/ (budova z roku 1938 od německé turistické společnosti — dřevěná na kamenné podezdívce; provozovatel PTTK od 1945)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Jedno z nejstarších a nejpůvabnějších hřebenových schronisk polských
+  Krkonoš (1 168 m), dřevěná horská chata pod Łabským Wierzchem. Provozuje ho
+  PTTK, nabízí 38 lůžek a bufet s teplou kuchyní — a je výborným východiskem
+  k ledovcovým kotlům Śnieżne Kotły.
+text:
+  - >-
+    Schronisko PTTK „Pod Łabskim Szczytem" stojí ve výšce 1 168 m na hali pod
+    Łabským Wierzchem, v hlavním hřebeni Karkonoszů nad Szklarskou Porębou.
+    Dřevěnou budovu na kamenné podezdívce postavila v roce 1938 německá
+    turistická společnost; od roku 1945 schronisko provozuje PTTK.
+  - >-
+    Ubytování nabízí 38 lůžek v pokojích pro jednu až šest osob se společným
+    sociálním zařízením, bufet vydává obědy, večeře a teplé nápoje denně od
+    8 do 20 hodin. Autem se dojede do Szklarské Poręby, odkud ke schronisku
+    vedou čtyři značené cesty (1–2 hodiny), další přicházejí z Jakuszyc a
+    Jagniątkova. Je oblíbeným východiskem k ledovcovým kotlům Śnieżne Kotły
+    a k sousedním schroniskům Na Hali Szrenickiej a Szrenica.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/a/a0/Schronisko_Pod_%C5%81abskim_Szczytem_2021.jpg
+    alt: Schronisko PTTK Pod Łabskim Szczytem — dřevěné hřebenové schronisko v polských Krkonoších
+    typ: soucasna
+    autor: Karol Szejner
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Schronisko_Pod_%C5%81abskim_Szczytem_2021.jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (geosearch DATA-02, 34 m od objektu, popis „Schronisko PTTK Pod Łabskim Szczytem", licence CC BY-SA 4.0 z licenčního síta DATA-02)
+      verified: false # licenci na stránce souboru zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-21'
+
+zdroje:
+  - popis: Schroniskaturystyczne.pl — katalogový profil (výška, kapacita, bufet, historie, přístup)
+    url: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/
+  - popis: OpenStreetMap (poloha objektu, ODbL)
+    url: https://www.openstreetmap.org/way/32604714
+
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/schronisko-pod-labskim-szczytem.yaml
+  (DATA-01) po křížovém ověření DATA-03. Zdroj katalog schroniskaturystyczne.pl
+  (pl.wikipedia se ze sandboxu nenačte — cache-only; oficiální stránka PTTK
+  pttk.pl k dotažení kontaktů). Vše verified: false dle konvence B. Do DATA-04
+  dotáhnout: kontakty (telefon/e-mail), přesná GPS, případně provázat
+  sousedniChaty (Na Hali Szrenickiej, Szrenica). Vynechán vágní údaj „služby od
+  17. století" z katalogu — nedoložitelný, nezapisuje se.
