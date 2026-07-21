@@ -19,6 +19,14 @@ export type Pristup = {
   kRucniKontrole: boolean
   /** Geometrie trasy (pro čáru na mapě). Seznam „odkud vyjít" ji nepoužívá. */
   geometrie?: Bod[]
+  /** 'katalog' = kurátorovaný nástup (s pořadím/zdroji), 'stredisko' = nejbližší středisko. */
+  zdrojBodu?: 'katalog' | 'stredisko'
+  /** Katalogová metadata (jen `zdrojBodu === 'katalog'`). */
+  poradi?: number
+  doprava?: string
+  sezona?: string
+  poznamka?: string
+  zdroje?: string[]
 }
 
 type Katalog = { chaty?: { slug: string; pristupy: Pristup[] }[] }

@@ -20,6 +20,7 @@ import { join } from 'node:path'
 import { parse } from 'yaml'
 
 import { nactiExport } from './data01-overpass-krkonose'
+import { shodaNazvu } from './data05-razitkuj-parovani'
 import {
   dijkstraOdUzlu,
   najdiNejblizsiUzel,
@@ -29,6 +30,7 @@ import {
   type Trasa,
   type UzelKlic,
 } from './data06-graf'
+import { nactiDoporuceneZeSouboru, type DoporucenyBod, type OsmBod } from './data06-katalog-vychozi'
 import { type TrasaRelace } from './data06-trasy'
 
 const TRASY_ADRESAR = join(process.cwd(), 'data', 'trasy', 'krkonose')
@@ -40,13 +42,30 @@ const STREDISKA_YAML = join(OBLAST_ADRESAR, 'vychozi-body.yaml')
 const VYCHOZI_JSON = join(OBLAST_ADRESAR, 'vychozi-body-kandidati.json')
 const CHATY_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
 const VYSTUP_JSON = join(TRASY_ADRESAR, 'pristupove-trasy.json')
+// Katalog doporučených nástupů (ChatGPT podklad, per-chata pořadí + zdroje).
+// Geokóduje se proti OSM katalogu výchozích bodů (VYCHOZI_JSON).
+const KATALOG_CSV = join(process.cwd(), 'data', 'externi', 'vychozi-body-cr-sk-2026', 'vychozi-body.csv')
 
 /** Dál než tolik metrů od nejbližšího uzlu sítě = nepřipojeno (nepočítá se). */
 const MAX_SNAP_M = 1500
-/** Kolik nejbližších výchozích bodů zapsat jako přístup k chatě. */
+/** Kolik nejbližších výchozích bodů zapsat jako přístup k chatě (fallback střediska). */
 const POCET_PRISTUPU = 2
+/** Kolik nástupů zapsat u chaty se shodou v katalogu (katalog dává 1–3). */
+const POCET_PRISTUPU_KATALOG = 3
 /** Trasa s vyšším podílem neznačené délky (%) → příznak k ruční kontrole. */
 const PRAH_NEZNACENE_PROC = 15
+/** Geokódovaný nástup dál než tolik km (vzdušně) od chaty = špatný geokód → zahodit. */
+const MAX_VZDUSNE_KM = 12
+
+/** Vzdušná vzdálenost dvou GPS bodů (km, haversine) — sanity check geokódu. */
+const vzdusneKm = (aLat: number, aLng: number, bLat: number, bLng: number): number => {
+  const R = 6371
+  const rad = (x: number) => (x * Math.PI) / 180
+  const dLat = rad(bLat - aLat)
+  const dLng = rad(bLng - aLng)
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos(rad(aLat)) * Math.cos(rad(bLat)) * Math.sin(dLng / 2) ** 2
+  return 2 * R * Math.asin(Math.min(1, Math.sqrt(s)))
+}
 
 export type VychoziSnap = { nazev: string; typ: string; uzel: UzelKlic }
 export type Pristup = {
@@ -57,6 +76,14 @@ export type Pristup = {
   podilNeznacenychProc: number
   kRucniKontrole: boolean
   geometrie: Trasa['geometrie']
+  /** 'katalog' = kurátorovaný nástup z katalogu (s pořadím/zdroji), 'stredisko' = nejbližší kurátorované středisko. */
+  zdrojBodu: 'katalog' | 'stredisko'
+  /** Katalogová metadata (jen `zdrojBodu === 'katalog'`). */
+  poradi?: number
+  doprava?: string
+  sezona?: string
+  poznamka?: string
+  zdroje?: string[]
 }
 
 /**
@@ -87,6 +114,55 @@ export const vyberPristupy = (graf: Graf, hutUzel: UzelKlic, vychoziSnap: Vychoz
       podilNeznacenychProc: t.podilNeznacenychProc,
       kRucniKontrole: t.podilNeznacenychProc > PRAH_NEZNACENE_PROC,
       geometrie: t.geometrie,
+      zdrojBodu: 'stredisko',
+    })
+  }
+  return pristupy
+}
+
+/**
+ * Přístupy z kurátorovaného katalogu doporučených nástupů (ChatGPT podklad).
+ * Bere nástupy v POŘADÍ dle katalogu (pořadí 1 = hlavní východisko — lidská
+ * znalost, kterou nechceme přebít routovací cenou), geokódované přes OSM. Pro
+ * každý spočítá reálnou trasu po značených cestách. Sanity: nástup dál než
+ * `MAX_VZDUSNE_KM` vzdušně = špatný geokód → přeskočí; body na týž uzel se
+ * neopakují; nedosažitelné/nulové se vynechají. Metadata (pořadí, doprava,
+ * sezóna, poznámka, zdroje) jdou na profil jako ověřitelné vodítko.
+ */
+export const vyberPristupyZKatalogu = (
+  graf: Graf,
+  hutUzel: UzelKlic,
+  hutLat: number,
+  hutLng: number,
+  doporucene: DoporucenyBod[],
+  pocet: number,
+): Pristup[] => {
+  const { cena, predchudce } = dijkstraOdUzlu(graf, hutUzel)
+  const pristupy: Pristup[] = []
+  const pouzityUzel = new Set<UzelKlic>()
+  for (const d of doporucene) {
+    if (pristupy.length >= pocet) break
+    if (vzdusneKm(hutLat, hutLng, d.lat, d.lng) > MAX_VZDUSNE_KM) continue // špatný geokód
+    const nej = najdiNejblizsiUzel(graf, d.lat, d.lng)
+    if (!nej || nej.vzdalenostM > MAX_SNAP_M) continue
+    if (pouzityUzel.has(nej.klic) || cena.get(nej.klic) == null) continue
+    const t = slozTrasu(graf, predchudce, hutUzel, nej.klic)
+    if (!t || t.delkaKm <= 0) continue
+    pouzityUzel.add(nej.klic)
+    pristupy.push({
+      vychoziBod: d.vychoziBod,
+      typ: d.typ,
+      delkaKm: t.delkaKm,
+      useky: t.useky,
+      podilNeznacenychProc: t.podilNeznacenychProc,
+      kRucniKontrole: t.podilNeznacenychProc > PRAH_NEZNACENE_PROC,
+      geometrie: t.geometrie,
+      zdrojBodu: 'katalog',
+      poradi: d.poradi,
+      doprava: d.doprava || undefined,
+      sezona: d.sezona || undefined,
+      poznamka: d.poznamka || undefined,
+      zdroje: d.zdroje.length ? d.zdroje : undefined,
     })
   }
   return pristupy
@@ -95,16 +171,19 @@ export const vyberPristupy = (graf: Graf, hutUzel: UzelKlic, vychoziSnap: Vychoz
 // ── Načtení vstupů ──────────────────────────────────────────────────────────
 
 type VychoziBod = { nazev: string; typ: string; lat: number; lng: number }
-type Chata = { slug: string; nazev: string; lat: number; lng: number }
+type Chata = { slug: string; nazev: string; lat: number; lng: number; nazvy: string[] }
 
 const nactiChaty = (dir: string): Chata[] => {
   if (!existsSync(dir)) return []
   const out: Chata[] = []
   for (const f of readdirSync(dir)) {
     if (!f.endsWith('.yaml')) continue
-    const y = parse(readFileSync(join(dir, f), 'utf8')) as { slug?: string; nazev?: string; lat?: number; lng?: number } | null
+    const y = parse(readFileSync(join(dir, f), 'utf8')) as
+      | { slug?: string; nazev?: string; lat?: number; lng?: number; aliasy?: { nazev?: string }[] }
+      | null
     if (!y?.nazev || typeof y.lat !== 'number' || typeof y.lng !== 'number') continue
-    out.push({ slug: y.slug ?? f.replace(/\.yaml$/, ''), nazev: y.nazev, lat: y.lat, lng: y.lng })
+    const aliasy = (y.aliasy ?? []).map((a) => a?.nazev).filter((n): n is string => !!n)
+    out.push({ slug: y.slug ?? f.replace(/\.yaml$/, ''), nazev: y.nazev, lat: y.lat, lng: y.lng, nazvy: [y.nazev, ...aliasy] })
   }
   return out
 }
@@ -146,21 +225,46 @@ const main = () => {
   }
   console.log(`Výchozí body (${zdrojBodu}) → připojeno ${vychoziSnap.length} (${vbMimo} dál než ${MAX_SNAP_M} m).`)
 
+  // Katalog doporučených nástupů (kurátorovaný, per-chata pořadí + zdroje):
+  // geokóduje se proti OSM katalogu výchozích bodů. Když chybí, jede se jen na
+  // kurátorovaná střediska (fallback výše).
+  const osmBody: OsmBod[] = existsSync(VYCHOZI_JSON)
+    ? ((JSON.parse(readFileSync(VYCHOZI_JSON, 'utf8')) as { body?: OsmBod[] }).body ?? [])
+    : []
+  const katalog: Map<string, DoporucenyBod[]> =
+    existsSync(KATALOG_CSV) && osmBody.length ? nactiDoporuceneZeSouboru(KATALOG_CSV, osmBody) : new Map()
+  // Katalog má klíče = normalizovaný název chaty; shoda přes název + aliasy chaty.
+  const najdiKatalog = (nazvy: string[]): DoporucenyBod[] | null => {
+    for (const [klic, body] of katalog) if (shodaNazvu(nazvy, klic)) return body
+    return null
+  }
+  console.log(`Katalog doporučených nástupů: ${katalog.size} chat (geokódováno přes ${osmBody.length} OSM bodů).`)
+
   const chaty = nactiChaty(CHATY_ADRESAR)
-  const vystup: { slug: string; nazev: string; pristupSnapM: number; pristupy: Pristup[] }[] = []
+  const vystup: { slug: string; nazev: string; pristupSnapM: number; zdroj: 'katalog' | 'stredisko'; pristupy: Pristup[] }[] = []
   const bezTras: string[] = []
+  let zKatalogu = 0
   for (const chata of chaty) {
     const nej = najdiNejblizsiUzel(graf, chata.lat, chata.lng)
     if (!nej || nej.vzdalenostM > MAX_SNAP_M) {
       bezTras.push(`${chata.nazev} (od sítě ${nej?.vzdalenostM ?? '—'} m)`)
       continue
     }
-    const pristupy = vyberPristupy(graf, nej.klic, vychoziSnap, POCET_PRISTUPU)
+    // Přednost: kurátorované nástupy z katalogu (v pořadí dle katalogu). Když
+    // chata není v katalogu nebo se nic nezroutuje, fallback na střediska.
+    const doporucene = najdiKatalog(chata.nazvy)
+    let pristupy = doporucene ? vyberPristupyZKatalogu(graf, nej.klic, chata.lat, chata.lng, doporucene, POCET_PRISTUPU_KATALOG) : []
+    let zdroj: 'katalog' | 'stredisko' = 'katalog'
+    if (!pristupy.length) {
+      pristupy = vyberPristupy(graf, nej.klic, vychoziSnap, POCET_PRISTUPU)
+      zdroj = 'stredisko'
+    }
     if (!pristupy.length) {
       bezTras.push(`${chata.nazev} (žádný dosažitelný výchozí bod)`)
       continue
     }
-    vystup.push({ slug: chata.slug, nazev: chata.nazev, pristupSnapM: nej.vzdalenostM, pristupy })
+    if (zdroj === 'katalog') zKatalogu++
+    vystup.push({ slug: chata.slug, nazev: chata.nazev, pristupSnapM: nej.vzdalenostM, zdroj, pristupy })
   }
 
   mkdirSync(TRASY_ADRESAR, { recursive: true })
@@ -168,8 +272,10 @@ const main = () => {
     VYSTUP_JSON,
     JSON.stringify(
       {
-        zdroj: 'OpenStreetMap Overpass (route=hiking) + výchozí body OSM — data © přispěvatelé OpenStreetMap, ODbL 1.0',
-        pozn: 'Planární routing po značených trasách (preference značek). Výšky a casMin (DIN 33466) dopočítá krok s Mapy.com Elevation API.',
+        zdroj:
+          'OpenStreetMap Overpass (route=hiking) + výchozí body OSM — data © přispěvatelé OpenStreetMap, ODbL 1.0. Doporučené nástupy a jejich pořadí/zdroje: katalog (ChatGPT podklad, ' +
+          'data/externi/vychozi-body-cr-sk-2026), verified:false.',
+        pozn: 'Planární routing po značených trasách (preference značek). Nástupy z katalogu jsou v pořadí dle katalogu (pořadí 1 = hlavní), ostatní chaty z kurátorovaných středisek. Výšky a casMin (DIN 33466) dopočítá krok s Mapy.com Elevation API.',
         pocetChat: vystup.length,
         chaty: vystup,
       },
@@ -181,10 +287,10 @@ const main = () => {
 
   const kKontrole = vystup.flatMap((c) => c.pristupy).filter((p) => p.kRucniKontrole).length
   console.log(`\n## DATA-06 report — přístupové trasy`)
-  console.log(`Chat s trasou: ${vystup.length} / ${chaty.length} · přístupů celkem: ${vystup.reduce((s, c) => s + c.pristupy.length, 0)} · k ruční kontrole (>${PRAH_NEZNACENE_PROC} % neznačené): ${kKontrole}`)
+  console.log(`Chat s trasou: ${vystup.length} / ${chaty.length} · z katalogu: ${zKatalogu}, ze středisek: ${vystup.length - zKatalogu} · přístupů celkem: ${vystup.reduce((s, c) => s + c.pristupy.length, 0)} · k ruční kontrole (>${PRAH_NEZNACENE_PROC} % neznačené): ${kKontrole}`)
   for (const c of vystup.slice(0, 8)) {
     const p = c.pristupy[0]
-    console.log(`- ${c.nazev}: ${p.vychoziBod} (${p.typ}) ${p.delkaKm} km${p.kRucniKontrole ? ` ⚠︎ ${p.podilNeznacenychProc}% neznačené` : ''}`)
+    console.log(`- ${c.nazev} [${c.zdroj}]: ${p.vychoziBod} (${p.typ}) ${p.delkaKm} km${p.kRucniKontrole ? ` ⚠︎ ${p.podilNeznacenychProc}% neznačené` : ''}`)
   }
   if (vystup.length > 8) console.log(`  … a ${vystup.length - 8} dalších`)
   if (bezTras.length) {

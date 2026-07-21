@@ -37,6 +37,15 @@ const TYP_BODU_NAZEV: Record<string, string> = {
   zastavka: 'aut. zastávka',
 }
 
+/** Doména z URL (bez www) pro popisek zdroje; při chybě vrátí vstup. */
+const hostZUrl = (u: string): string => {
+  try {
+    return new URL(u).hostname.replace(/^www\./, '')
+  } catch {
+    return u
+  }
+}
+
 type Params = { zeme: string; oblast: string; chata: string }
 
 /** Placeholder hor, dokud chata nemá vlastní hero fotku (ilustrace, ne fakt). */
@@ -329,8 +338,10 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
             <b>Odkud vyjít</b>
           </div>
           <p style={{ margin: '2px 0 10px', fontSize: 11.5, color: 'var(--muted)' }}>
-            Nejkratší cesty po značených trasách z nejbližších středisek (výpočet ze
-            značení KČT v OpenStreetMap; orientační, zatím bez převýšení a času).
+            Doporučené nástupy a cesty po značených trasách (výpočet ze značení KČT
+            v OpenStreetMap). U vyznačených chat pocházejí nástupy z ověřovaného
+            katalogu se zdroji; jinak z nejbližších středisek. Orientační, zatím bez
+            převýšení a času — vždy ověřte aktuální stav cest a dopravy.
           </p>
           {typeof chata.lat === 'number' && typeof chata.lng === 'number' && (
             <div style={{ margin: '0 0 14px' }}>
@@ -344,39 +355,58 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
             // Úseky slij podle barvy (přehlednější než dlouhá sekvence).
             const dleBarvy = new Map<string, number>()
             for (const u of p.useky) dleBarvy.set(u.znaceni, (dleBarvy.get(u.znaceni) ?? 0) + u.delkaKm)
+            // Praktická linka (doprava + sezóna) a zdroje — jen u katalogových nástupů.
+            const detaily = [p.doprava, p.sezona].filter((x): x is string => !!x && x !== 'neuvedeno')
             return (
               <div
                 key={p.vychoziBod + i}
                 style={{
-                  display: 'flex',
-                  gap: 12,
-                  alignItems: 'baseline',
-                  flexWrap: 'wrap',
                   padding: '9px 2px',
                   borderBottom: i === pristupy.length - 1 ? undefined : '1px solid var(--line)',
                 }}
               >
-                <span style={{ flex: '1 1 150px', minWidth: 150 }}>
-                  <b style={{ fontSize: 13 }}>{p.vychoziBod}</b>{' '}
-                  <span style={{ fontSize: 11, color: 'var(--muted)' }}>{TYP_BODU_NAZEV[p.typ] ?? p.typ}</span>
-                </span>
-                <span className="num" style={{ fontWeight: 600 }}>{formatCislo(p.delkaKm)} km</span>
-                <span style={{ display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center' }}>
-                  {[...dleBarvy.entries()].map(([znaceni, km], j) =>
-                    znaceni in TRAIL_COLORS ? (
-                      <TrailBlaze key={j} color={znaceni as keyof typeof TRAIL_COLORS}>
-                        {`${TRAIL_COLORS[znaceni as keyof typeof TRAIL_COLORS].label} ${formatCislo(Math.round(km * 10) / 10)}`}
-                      </TrailBlaze>
-                    ) : (
-                      <span key={j} style={{ fontSize: 11, color: 'var(--muted)' }}>
-                        neznačeno {formatCislo(Math.round(km * 10) / 10)} km
-                      </span>
-                    ),
-                  )}
-                  {p.kRucniKontrole && (
-                    <span style={{ fontSize: 10.5, color: 'var(--muted)' }}>· část mimo značku</span>
-                  )}
-                </span>
+                <div style={{ display: 'flex', gap: 12, alignItems: 'baseline', flexWrap: 'wrap' }}>
+                  <span style={{ flex: '1 1 150px', minWidth: 150 }}>
+                    <b style={{ fontSize: 13 }}>{p.vychoziBod}</b>{' '}
+                    <span style={{ fontSize: 11, color: 'var(--muted)' }}>{TYP_BODU_NAZEV[p.typ] ?? p.typ}</span>
+                  </span>
+                  <span className="num" style={{ fontWeight: 600 }}>{formatCislo(p.delkaKm)} km</span>
+                  <span style={{ display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center' }}>
+                    {[...dleBarvy.entries()].map(([znaceni, km], j) =>
+                      znaceni in TRAIL_COLORS ? (
+                        <TrailBlaze key={j} color={znaceni as keyof typeof TRAIL_COLORS}>
+                          {`${TRAIL_COLORS[znaceni as keyof typeof TRAIL_COLORS].label} ${formatCislo(Math.round(km * 10) / 10)}`}
+                        </TrailBlaze>
+                      ) : (
+                        <span key={j} style={{ fontSize: 11, color: 'var(--muted)' }}>
+                          neznačeno {formatCislo(Math.round(km * 10) / 10)} km
+                        </span>
+                      ),
+                    )}
+                    {p.kRucniKontrole && (
+                      <span style={{ fontSize: 10.5, color: 'var(--muted)' }}>· část mimo značku</span>
+                    )}
+                  </span>
+                </div>
+                {(detaily.length > 0 || p.poznamka || (p.zdroje && p.zdroje.length > 0)) && (
+                  <div style={{ marginTop: 4, fontSize: 11, color: 'var(--muted)', lineHeight: 1.5 }}>
+                    {detaily.length > 0 && <div>{detaily.join(' · ')}</div>}
+                    {p.poznamka && <div>{p.poznamka}</div>}
+                    {p.zdroje && p.zdroje.length > 0 && (
+                      <div>
+                        zdroj:{' '}
+                        {p.zdroje.map((u, j) => (
+                          <span key={j}>
+                            {j > 0 && ', '}
+                            <a href={u} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                              {hostZUrl(u)}
+                            </a>
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             )
           })}
