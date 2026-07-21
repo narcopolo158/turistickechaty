@@ -16,11 +16,13 @@ import {
 } from '../../scripts/data06-trasy'
 
 describe('DATA-06 · značení z OSM tagů', () => {
-  it('osmc:symbol → barva KČT (první pole je barva cesty)', () => {
+  it('osmc:symbol → barva KČT vč. černé (první pole je barva cesty)', () => {
     expect(znaceniZTagu({ 'osmc:symbol': 'red:white:red_bar' })?.znaceni).toBe('cervena')
     expect(znaceniZTagu({ 'osmc:symbol': 'blue:white:blue_bar' })?.znaceni).toBe('modra')
     expect(znaceniZTagu({ 'osmc:symbol': 'green:white:green_bar' })?.znaceni).toBe('zelena')
     expect(znaceniZTagu({ 'osmc:symbol': 'yellow:white:yellow_bar' })?.znaceni).toBe('zluta')
+    // Černá — polská strana Krkonoš (přidáno 21. 7. 2026).
+    expect(znaceniZTagu({ 'osmc:symbol': 'black:white:black_bar' })?.znaceni).toBe('cerna')
   })
 
   it('fallback na kct_* tagy', () => {
@@ -42,7 +44,7 @@ describe('DATA-06 · značení z OSM tagů', () => {
 
   it('nerozpoznané / prázdné → null (nedomýšlet)', () => {
     expect(znaceniZTagu({})).toBeNull()
-    expect(znaceniZTagu({ 'osmc:symbol': 'black:white:black_bar' })).toBeNull()
+    expect(znaceniZTagu({ 'osmc:symbol': 'white:white:dot' })).toBeNull()
     expect(znaceniZTagu({ colour: 'purple' })).toBeNull()
     expect(znaceniZTagu({ colour: '#123456' })).toBeNull()
   })

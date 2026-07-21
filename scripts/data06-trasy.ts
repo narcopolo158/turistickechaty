@@ -29,14 +29,18 @@ const EXPORT_JSON = join(TRASY_ADRESAR, '_overpass-trasy.json')
 const KATALOG_JSON = join(TRASY_ADRESAR, 'znacene-trasy.json')
 const ATRIBUCE = 'data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)'
 
-export type Znaceni = 'cervena' | 'modra' | 'zelena' | 'zluta'
+export type Znaceni = 'cervena' | 'modra' | 'zelena' | 'zluta' | 'cerna'
 
-/** Anglický název barvy z OSM → značení KČT (jen čtyři pásové barvy KČT). */
+/**
+ * Anglický název barvy z OSM → značení KČT. Kromě čtyř pásových barvy KČT i
+ * černá — používá ji polská strana Krkonoš (rozhodnutí Michala 21. 7. 2026).
+ */
 const BARVA_NAZEV: Record<string, Znaceni> = {
   red: 'cervena',
   blue: 'modra',
   green: 'zelena',
   yellow: 'zluta',
+  black: 'cerna',
 }
 
 /**
@@ -56,6 +60,8 @@ const BARVA_HEX: Record<string, Znaceni> = {
   '#ffff00': 'zluta',
   '#ffd700': 'zluta',
   '#f2c200': 'zluta',
+  '#000000': 'cerna',
+  '#1a1a1a': 'cerna',
 }
 
 const barvaZTokenu = (token: string): Znaceni | null => {
@@ -86,6 +92,7 @@ export const znaceniZTagu = (tagy: Record<string, string>): VysledekZnaceni => {
     ['kct_blue', 'modra'],
     ['kct_green', 'zelena'],
     ['kct_yellow', 'zluta'],
+    ['kct_black', 'cerna'],
   ] as const) {
     if (tagy[tag]) return { znaceni, zdroj: `${tag}=${tagy[tag]}` }
   }

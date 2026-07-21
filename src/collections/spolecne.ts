@@ -19,6 +19,7 @@ export const ZNACENI_OPTIONS: OptionObject[] = [
   { label: 'Modrá', value: 'modra' },
   { label: 'Zelená', value: 'zelena' },
   { label: 'Žlutá', value: 'zluta' },
+  { label: 'Černá', value: 'cerna' }, // polská strana Krkonoš značí i černě (DATA-06)
   { label: 'Bez značení / jiné', value: 'jine' },
 ]
 

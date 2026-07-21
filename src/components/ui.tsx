@@ -110,6 +110,7 @@ export const TRAIL_COLORS = {
   modra: { css: 'var(--tr-blue)', label: 'modrá' },
   zelena: { css: 'var(--tr-green)', label: 'zelená' },
   zluta: { css: 'var(--tr-yellow)', label: 'žlutá' },
+  cerna: { css: 'var(--tr-black)', label: 'černá' },
 } as const
 
 export function TrailBlaze(props: {

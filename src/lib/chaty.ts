@@ -43,6 +43,7 @@ export const ZNACENI_BARVA: Record<string, string> = {
   modra: '#2A5CB8',
   zelena: '#2E8B57',
   zluta: '#EAB308',
+  cerna: '#1A1A1A',
 }
 
 export const ZNACENI_NAZEV: Record<string, string> = {
@@ -50,6 +51,7 @@ export const ZNACENI_NAZEV: Record<string, string> = {
   modra: 'modrá',
   zelena: 'zelená',
   zluta: 'žlutá',
+  cerna: 'černá',
   jine: 'jiné',
 }
 

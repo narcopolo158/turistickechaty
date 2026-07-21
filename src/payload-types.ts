@@ -273,7 +273,7 @@ export interface Chaty {
         vychoziBod: string;
         casMin?: number | null;
         prevyseni?: number | null;
-        znaceni?: ('cervena' | 'modra' | 'zelena' | 'zluta' | 'jine') | null;
+        znaceni?: ('cervena' | 'modra' | 'zelena' | 'zluta' | 'cerna' | 'jine') | null;
         obtiznost?: ('snadna' | 'stredni' | 'narocna') | null;
         poznamka?: string | null;
         delkaKm?: number | null;
@@ -688,7 +688,7 @@ export interface Vylety {
   casMin?: number | null;
   obtiznost?: ('snadna' | 'stredni' | 'narocna') | null;
   sezonnost?: string | null;
-  znaceni?: ('cervena' | 'modra' | 'zelena' | 'zluta' | 'jine')[] | null;
+  znaceni?: ('cervena' | 'modra' | 'zelena' | 'zluta' | 'cerna' | 'jine')[] | null;
   gpx?: (number | null) | Media;
   perex?: string | null;
   zastavky?:
