@@ -12,6 +12,25 @@ zeme: pl
 typ: obsluhovana
 oblast: krkonose
 
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+rokVzniku: 1922
+milniky:
+  - rok: 1921
+    udalost: "1922 — postavena současná budova"
+  - rok: 1951
+    udalost: "předána do správy PTTK"
+  - rok: 2007
+    udalost: "objekt koupil Karol Warecki"
+overeniHistorie:
+  source: "rok vzniku: https://domslaski.pl/historia (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · milníky: https://domslaski.pl/historia (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)"
+  verified: false
+  checked: "2026-07-21"
+kapacita: 58
+overeniNocleh:
+  source: "kapacita lůžek: https://domslaski.pl/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)"
+  verified: false
+  checked: "2026-07-21"
+
 aliasy:
   - nazev: Śląski Dom
     poznamka: slovosled užívaný částí zdrojů (titulky naszeszlaki.com.pl, portalgorski.pl — DATA-03)

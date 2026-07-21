@@ -9,6 +9,12 @@ typ: obsluhovana
 stav: v-provozu
 oblast: krkonose
 
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+zajimavosti:
+  - text: "Bouda provozuje vlastní ekologickou farmu a nabízí výrobky z místní produkce."
+    kategorie: gastro
+    zdroj: "https://lesnibouda.cz/"
+
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS a výška z OSM (ODbL); poloha (Pec pod Sněžkou, hřeben Liščí hory) z webu boudy a popisu fotky.
 lat: 50.6770566

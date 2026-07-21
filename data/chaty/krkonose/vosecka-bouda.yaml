@@ -9,6 +9,9 @@ zeme: cz
 typ: obsluhovana
 stav: v-provozu # sezónní provoz, viz sezona
 oblast: krkonose
+
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+kapacita: 43  # kapacita lůžek: https://voseckabouda.cz/ubytovani/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
 zajimavosti:
   - text: Nikdy nevyhořela a není napojená na elektrickou síť — energii vyrábí dieselagregát
     kategorie: jine

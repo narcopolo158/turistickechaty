@@ -11,6 +11,15 @@ typ: obsluhovana
 stav: v-provozu
 oblast: krkonose
 
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+zajimavosti:
+  - text: "Oficiální městský turistický portál ji označuje za první soukromou horskou chatu postavenou v Polsku po druhé světové válce."
+    kategorie: stari
+    zdroj: "https://turystyczna.szklarskaporeba.pl/61-szklarskaporeba-schronisko-kamienczyk"
+kontakty:
+  telefon: "+48 75 752 60 85"
+  # telefon: https://kpn.gov.pl/schroniska (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
+
 # ── Lokace ────────────────────────────────────────────────────────────────
 lat: 50.8143401
 lng: 15.4966649

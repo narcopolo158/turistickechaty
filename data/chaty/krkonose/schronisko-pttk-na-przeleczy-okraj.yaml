@@ -11,6 +11,25 @@ zeme: pl
 typ: obsluhovana
 oblast: krkonose
 
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+rokVzniku: 1975
+milniky:
+  - rok: 1922
+    udalost: "postaven zděný Schlesische Grenzbaude"
+  - rok: 1975
+    udalost: "vznikla turistická bacówka s 28 lůžky"
+  - rok: 2013
+    udalost: "nastoupili noví nájemci"
+overeniHistorie:
+  source: "rok vzniku: https://schroniskookraj.pl/historia-schroniska.html (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · milníky: https://schroniskookraj.pl/historia-schroniska.html (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)"
+  verified: false
+  checked: "2026-07-21"
+kapacita: 40  # kapacita lůžek: https://schroniskookraj.pl/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
+zajimavosti:
+  - text: "Historie provozovatele spojuje sedlo s první sedmikilometrovou trasou jízdy na rohatých saních do Kowar."
+    kategorie: jine
+    zdroj: "https://schroniskookraj.pl/historia-schroniska.html"
+
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS a výška z OSM (ODbL); vazba na Kowary z titulků WebSearch (facebook
 # „Kowary Górne", odtur.pl) — obec v OSM nevyplněna, proto jen v textu.
@@ -38,6 +57,8 @@ overeniNocleh:
 
 # ── Provoz ────────────────────────────────────────────────────────────────
 kontakty:
+  email: "schroniskookraj@gmail.com"
+  # email: https://schroniskookraj.pl/kontakt.html (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
   telefon: +48 75 611 20 36
   web: https://schroniskookraj.pl/
 overeniProvoz:

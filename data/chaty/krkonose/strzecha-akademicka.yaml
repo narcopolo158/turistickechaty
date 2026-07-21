@@ -11,6 +11,29 @@ zeme: pl
 typ: obsluhovana
 oblast: krkonose
 
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+rokVzniku: 1642
+milniky:
+  - rok: 1642
+    udalost: "doložen hospodář Tanl"
+  - rok: 1896
+    udalost: "postaven nový velký objekt"
+  - rok: 1906
+    udalost: "požár a znovuotevření po obnově"
+  - rok: 1912
+    udalost: "rozšíření"
+  - rok: 1957
+    udalost: "ve vlastnictví PTTK"
+overeniHistorie:
+  source: "rok vzniku: https://strzechaakademicka.pl/historia (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · milníky: https://strzechaakademicka.pl/historia (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)"
+  verified: false
+  checked: "2026-07-21"
+kapacita: 75  # kapacita lůžek: https://www.strzechaakademicka.pl/cennik (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
+zajimavosti:
+  - text: "Provozovatel ji spolu s chatou Pod Łabskim Szczytem označuje za nejstarší chatu v Karkonoszích."
+    kategorie: stari
+    zdroj: "https://strzechaakademicka.pl/historia"
+
 aliasy:
   - nazev: Schronisko PTTK „Strzecha Akademicka"
     poznamka: oficiální tvar u provozovatele (pttk.pl, pttk.jgora.pl — titulky, DATA-03)
@@ -44,6 +67,9 @@ overeniNocleh:
 
 # ── Provoz ────────────────────────────────────────────────────────────────
 kontakty:
+  telefon: "+48 695 590 826"
+  email: "info@strzechaakademicka.pl"
+  # telefon: https://www.strzechaakademicka.pl/cennik (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · email: https://www.strzechaakademicka.pl/cennik (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
   web: http://www.strzechaakademicka.pl
 overeniProvoz:
   source: >-

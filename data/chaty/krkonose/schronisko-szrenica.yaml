@@ -12,6 +12,21 @@ slug: schronisko-szrenica
 zeme: pl
 typ: obsluhovana
 oblast: krkonose
+
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+rokVzniku: 1922
+milniky:
+  - rok: 1921
+    udalost: "zahájena stavba"
+  - rok: 1972
+    udalost: "požár poškodil přibližně 70 % střechy"
+  - rok: 1992
+    udalost: "znovu otevřena soukromým vlastníkem"
+overeniHistorie:
+  source: "rok vzniku: https://szrenica.pl/historia/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · milníky: https://szrenica.pl/historia/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)"
+  verified: false
+  checked: "2026-07-21"
+kapacita: 90  # kapacita lůžek: https://szrenica.pl/oferta/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
 zajimavosti:
   - text: Stojí na vrcholu hory Szrenica (1362 m) v Karkonoszském národním parku, jen ~300 m od české hranice — základna pro obě strany hřebene
     kategorie: jine
@@ -46,6 +61,9 @@ overeniNocleh:
 
 # ── Provoz ────────────────────────────────────────────────────────────────
 kontakty:
+  telefon: "+48 75 752 60 11"
+  email: "szrenica@szrenica.pl"
+  # telefon: https://szrenica.pl/kontakt/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · email: https://szrenica.pl/kontakt/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
   web: https://www.szrenica.pl/
 overeniProvoz:
   source: >-

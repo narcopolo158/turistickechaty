@@ -13,6 +13,21 @@ zeme: pl
 typ: obsluhovana
 oblast: krkonose
 
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+rokVzniku: 1670
+milniky:
+  - rok: 1670
+    udalost: "doložena původní buda správce Malého Stawu"
+overeniHistorie:
+  source: "rok vzniku: https://kpn.gov.pl/zabytki-w-karkonoszach (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · milníky: https://schroniskosamotnia.com/historia/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)"
+  verified: false
+  checked: "2026-07-21"
+kapacita: 49  # kapacita lůžek: https://schroniskosamotnia.com/oferta/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
+zajimavosti:
+  - text: "Provozovatel ji označuje za jedno z nejstarších horských útočišť v Polsku."
+    kategorie: stari
+    zdroj: "https://schroniskosamotnia.com/"
+
 aliasy:
   - nazev: Schronisko PTTK „Samotnia"
     poznamka: oficiální tvar u provozovatele (pttk.pl, pttk.jgora.pl — titulky, DATA-03)

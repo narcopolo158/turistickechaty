@@ -10,6 +10,17 @@ zeme: pl
 typ: obsluhovana
 stav: v-provozu
 oblast: krkonose
+
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+zajimavosti:
+  - text: "KPN uvádí kontinuitu umístění původní pastevecké boudy před rokem 1670."
+    kategorie: stari
+    zdroj: "https://kpn.gov.pl/zabytki-w-karkonoszach"
+kontakty:
+  telefon: "+48 789 808 256"
+  email: "pod.labskim.szczytem@o2.pl"
+  web: "https://www.facebook.com/pod.labskim.szczytem"
+  # telefon: https://kpn.gov.pl/schroniska (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · email: https://kpn.gov.pl/schroniska (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · web: https://kpn.gov.pl/schroniska (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
 aliasy:
   - nazev: Schronisko „Pod Łabskim Szczytem"
     poznamka: kratší běžný tvar (OSM, hovorové užití)

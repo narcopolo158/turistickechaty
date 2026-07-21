@@ -45,9 +45,9 @@ const lexical = (odstavce: string[]) => ({
   },
 })
 
-const yamlSoubory = (slozka: string): string[] => {
+const yamlSoubory = (slozka: string, rekurzivne = true): string[] => {
   try {
-    return readdirSync(slozka, { recursive: true, encoding: 'utf8' })
+    return readdirSync(slozka, { recursive: rekurzivne, encoding: 'utf8' })
       .filter((f) => f.endsWith('.yaml'))
       .map((f) => join(slozka, f))
   } catch {
@@ -88,7 +88,9 @@ const upsert = async (
 
 // ── 1. Oblasti ──────────────────────────────────────────────────────────────
 const oblastId = new Map<string, number | string>()
-for (const soubor of yamlSoubory(join(DATA, 'oblasti'))) {
+// Jen top-level definice oblastí (data/oblasti/*.yaml); podsložky drží
+// oblastní data (výchozí body ap.), ne oblasti — proto nerekurzivně.
+for (const soubor of yamlSoubory(join(DATA, 'oblasti'), false)) {
   const data = parse(readFileSync(soubor, 'utf8'))
   const vysledek = await upsert('oblasti', data)
   oblastId.set(data.slug, vysledek.id)

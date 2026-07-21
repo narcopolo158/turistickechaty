@@ -11,6 +11,22 @@ zeme: pl
 typ: obsluhovana
 oblast: krkonose
 
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+rokVzniku: 1928
+milniky:
+  - rok: 1928
+    udalost: "postaveno jako mládežnické ubytovací zařízení Rübezahl"
+  - rok: 2009
+    udalost: "provoz převzala rodina Kaczmarkových"
+overeniHistorie:
+  source: "rok vzniku: https://kpn.gov.pl/zabytki-w-karkonoszach (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · milníky: https://www.schroniskoodrodzenie.pl/o-nas/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)"
+  verified: false
+  checked: "2026-07-21"
+zajimavosti:
+  - text: "Provozovatel uvádí otevření 365 dní v roce a 24 hodin denně."
+    kategorie: jine
+    zdroj: "https://www.schroniskoodrodzenie.pl/o-nas/"
+
 aliasy:
   - nazev: Schronisko PTTK „Odrodzenie"
     poznamka: tvar z titulků třetích stran vč. PTTK domény (dolnoslaskie.szlaki.pttk.pl, klubpodroznikow.com — DATA-03)
@@ -37,6 +53,8 @@ overeniLokace:
 
 # ── Provoz ────────────────────────────────────────────────────────────────
 kontakty:
+  telefon: "+48 780 152 207"
+  # telefon: https://www.schroniskoodrodzenie.pl/kontakt/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
   email: piotrkaczmarek2@op.pl
   web: http://www.schroniskoodrodzenie.pl/
 overeniProvoz:
