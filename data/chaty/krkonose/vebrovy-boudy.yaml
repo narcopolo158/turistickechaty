@@ -1,0 +1,125 @@
+# Vebrovy boudy — profil povýšen z kandidáta DATA-01 po křížovém ověření DATA-03
+# (rozhodnutí Michala 20. 7. 2026: hraniční hotely/penziony v roli historických
+# bud zařazujeme, charakter přiznat). Každá skupina má blok overeni.
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# Oficiální web vebrovyboudy.com se ze sandboxu nenačetl (robots/provenance) —
+# obsah z info-cechy.cz (katalog); dotáhnout z vlastního webu / telefonicky v DATA-04.
+
+nazev: Vebrovy boudy
+slug: vebrovy-boudy
+zeme: cz
+typ: horsky-hotel # sám se popisuje jako „horský penzion"; hraniční případ v roli historických bud
+stav: v-provozu
+oblast: krkonose
+aliasy:
+  - nazev: Vébrovy boudy
+    poznamka: diakritická varianta (katalogy „Vébrovy"; doména a OSM „Vebrovy")
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.6774016
+lng: 15.7405172
+vyska: 1100
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/656461873 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 1 100 m a poloha nad Velkou Úpou (u vrchní stanice vleku Javor),
+    adresa Pec pod Sněžkou 318: https://www.info-cechy.cz/vebrovy-boudy/index.html
+  verified: false
+  checked: '2026-07-21'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 75 # dvou- až sedmilůžkové pokoje
+overeniNocleh:
+  source: https://www.info-cechy.cz/vebrovy-boudy/index.html (celková kapacita 75 lůžek ve dvou- až sedmilůžkových pokojích)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Stravování pro ubytované (polopenze / plná penze pro školy a kluby, snídaně
+# švédský stůl). Restaurace pro neubytované/veřejnost na zdroji doložena NENÍ →
+# nezapisuje se (nedomýšlet). Doložit v DATA-04.
+kuchyne: ano
+overeniObcerstveni:
+  source: https://www.info-cechy.cz/vebrovy-boudy/index.html (stravování formou polopenze, „klasická česká strava", snídaně švédským stolem; pro školy a kluby plná penze)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+wifi: ano
+overeniSluzby:
+  source: https://www.info-cechy.cz/vebrovy-boudy/index.html (Wi-Fi, parkoviště, volejbal a malý fotbal, ohniště a gril, v létě venkovní vyhřívaný bazének, v zimě zápůjčka slalomových tyčí)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Sezónu ani otvírací dobu zdroj neuvádí → nevyplněno.
+kontakty:
+  telefon: +420 737 259 010
+  web: https://vebrovyboudy.com
+  facebook: https://www.facebook.com/vebrovyboudypecpodsnezkou/
+overeniProvoz:
+  source: https://www.info-cechy.cz/vebrovy-boudy/index.html (telefon, web, adresa Pec pod Sněžkou 318) + Facebook profil (vyhledávání 21. 7. 2026)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: >-
+  U objektu je parkoviště. Boudy stojí nad Velkou Úpou u vrchní stanice vleku
+  Javor, na rozcestí běžkařských tras Krkonoš.
+overeniPristup:
+  source: https://www.info-cechy.cz/vebrovy-boudy/index.html (parkoviště; poloha u vrchní stanice vleku Javor a rozcestí běžkařských tras)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský penzion v historických Vebrových boudách nad Velkou Úpou (1 100 m),
+  u vrchní stanice vleku Javor. Kapacita 75 lůžek ve dvou- až sedmilůžkových
+  pokojích, stravování formou penze, v létě venkovní bazének.
+text:
+  - >-
+    Vebrovy boudy (psané též Vébrovy) leží ve výšce zhruba 1 100 m nad Velkou
+    Úpou v katastru Pece pod Sněžkou, u vrchní stanice vleku Javor a na
+    rozcestí běžkařských tras. Objekt dnes funguje jako horský penzion v roli
+    historických bud — do průvodce ho řadíme s poctivě přiznaným charakterem.
+  - >-
+    Ubytování nabízí kapacitu 75 lůžek ve dvou- až sedmilůžkových pokojích,
+    stravování je formou polopenze (pro školy a sportovní kluby i plné penze),
+    snídaně bývá švédský stůl. K dispozici je Wi-Fi, parkoviště, hřiště na
+    volejbal a malý fotbal, ohniště s grilem a v létě venkovní vyhřívaný
+    bazének. Konkrétní sezónu a otvírací dobu ověříme přímo u provozovatele.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/f/f0/Vebrovy_boudy%2C_Krkono%C5%A1e.jpg
+    alt: Vebrovy boudy — horský penzion v historických boudách nad Velkou Úpou v Krkonoších
+    typ: soucasna
+    autor: Honza Groh (Jagro)
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Vebrovy_boudy,_Krkonoše.jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (geosearch DATA-02, 29 m od objektu, popis „Vebrovy boudy, Krkonoše", 3648×2736, licence CC BY-SA 3.0 z licenčního síta DATA-02)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-21'
+
+zdroje:
+  - popis: Info-Čechy — katalogový profil Vebrových bud (výška, kapacita, stravování, kontakt, vybavení)
+    url: https://www.info-cechy.cz/vebrovy-boudy/index.html
+  - popis: Vlastní web penzionu (zatím nenačten — dotáhnout v DATA-04)
+    url: https://vebrovyboudy.com
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/node/656461873
+
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/vebrovy-boudy.yaml (DATA-01) po křížovém
+  ověření DATA-03 a rozhodnutí Michala (chat 20. 7. 2026): hraniční hotely /
+  penziony v roli historických bud zařazujeme, charakter přiznat (typ
+  horsky-hotel, perex „horský penzion"). Oficiální web vebrovyboudy.com se ze
+  sandboxu nenačetl (robots.txt ConnectTimeout / provenance) — obsah doložen z
+  katalogu info-cechy.cz, proto vše verified: false; dotáhnout přímo z webu /
+  telefonicky v DATA-04 (mj. sezóna, otvírací doba, e-mail, historie/rok
+  vzniku, křížová kontrola výšky 1 100 m). Diakritika Vebrovy/Vébrovy
+  sjednocena na „Vebrovy" dle domény a OSM; „Vébrovy boudy" jako alias.
