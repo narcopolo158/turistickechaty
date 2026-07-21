@@ -1,0 +1,6457 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-21T16:11:53Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "relation",
+  "id": 64341,
+  "bounds": {
+    "minlat": 50.7427184,
+    "minlon": 15.4239584,
+    "maxlat": 50.7617023,
+    "maxlon": 15.4989892
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pod Čertovou horou;nad Světlankou",
+    "kct_blue": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1894",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64343,
+  "bounds": {
+    "minlat": 50.6759608,
+    "minlon": 15.4502742,
+    "maxlat": 50.7866628,
+    "maxlon": 15.5876575
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Rokytnice n. Jiz.;Sedlo Mokrá Prelecz",
+    "kct_yellow": "major",
+    "name": "[Ž] Rokytnice n. Jiz - Sedlo Mokrá Prelecz",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7307",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64346,
+  "bounds": {
+    "minlat": 50.7177428,
+    "minlon": 15.4192173,
+    "maxlat": 50.7823563,
+    "maxlon": 15.4526282
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Zadní Blansko;Harrachov (kemp)",
+    "kct_yellow": "major",
+    "name": "Zadní Blansko - Harrachov (kemp)",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7225",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64347,
+  "bounds": {
+    "minlat": 50.7298972,
+    "minlon": 15.4486725,
+    "maxlat": 50.7486039,
+    "maxlon": 15.4736350
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Studenov;Horní Rokytnice",
+    "kct_green": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4286",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64354,
+  "bounds": {
+    "minlat": 50.7060943,
+    "minlon": 15.4717146,
+    "maxlat": 50.7477344,
+    "maxlon": 15.5149352
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Rokytnice;Rezek",
+    "kct_yellow": "major",
+    "name": "[Ž] Rokytnice - Rezek",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7308",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64356,
+  "bounds": {
+    "minlat": 50.6858403,
+    "minlon": 15.4012742,
+    "maxlat": 50.7755650,
+    "maxlon": 15.5362250
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Vrbatova bouda;Vysoké nad Jizerou",
+    "kct_red": "major",
+    "name": "[Č] Vrbatova bouda - Vysoké nad Jizerou",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0439",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64364,
+  "bounds": {
+    "minlat": 50.7518739,
+    "minlon": 15.5319234,
+    "maxlat": 50.7558916,
+    "maxlon": 15.5492687
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "U Růženčiny zahrádka;Vrbatova bouda",
+    "kct_green": "major",
+    "name": "[Z] U Růženčiny zahrádky - Vrbatova bouda",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64365,
+  "bounds": {
+    "minlat": 50.7253429,
+    "minlon": 15.4081160,
+    "maxlat": 50.7785577,
+    "maxlon": 15.6080511
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Harrachov;Špindlerův mlýn",
+    "kct_blue": "major",
+    "name": "[M] Harrachov - Špindlerův mlýn",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1801",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64382,
+  "bounds": {
+    "minlat": 50.7176599,
+    "minlon": 15.5350294,
+    "maxlat": 50.7793986,
+    "maxlon": 15.5702203
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "U Třídomí;Česká Budka",
+    "kct_yellow": "major",
+    "name": "[Ž] U Třídomí - Česká Budka",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7310",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64383,
+  "bounds": {
+    "minlat": 50.7409381,
+    "minlon": 15.5111354,
+    "maxlat": 50.7827954,
+    "maxlon": 15.6084647
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Vosecká bouda;Pod Dívčí strání",
+    "kct_green": "major",
+    "name": "[Z] Vosecká bouda - Pod Dívčí strání",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4201",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64384,
+  "bounds": {
+    "minlat": 50.7352190,
+    "minlon": 15.5009274,
+    "maxlat": 50.7940630,
+    "maxlon": 15.8236677
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Tvarožník;Pomezní boudy",
+    "distance": "28.2",
+    "kct_red": "major",
+    "name": "Cesta česko-polského přátelství",
+    "name:de": "Weg der polnisch-tschechischen Freundschaft",
+    "name:en": "Polish-Czech Friendship Trail",
+    "name:pl": "Droga Przyjaźni Polsko-Czeskiej",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0401",
+    "roundtrip": "no",
+    "route": "hiking",
+    "type": "route",
+    "wikidata": "Q3502406",
+    "wikipedia": "en:Polish–Czech Friendship Trail"
+  }
+},
+{
+  "type": "relation",
+  "id": 64408,
+  "bounds": {
+    "minlat": 50.7014385,
+    "minlon": 15.4613633,
+    "maxlat": 50.7433513,
+    "maxlon": 15.5225480
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Rezek;Pod Dvoračkami",
+    "kct_green": "major",
+    "name": "[Z] Rezek - Pod Dvoračkami",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4272",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 75395,
+  "bounds": {
+    "minlat": 50.7113766,
+    "minlon": 15.1935635,
+    "maxlat": 50.7862188,
+    "maxlon": 15.3657723
+  },
+  "tags": {
+    "destinations": "Pod Slovankou;Kořenov",
+    "kct_red": "major",
+    "name": "Pod Slovankou - Kořenov žst.",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0340",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 75400,
+  "bounds": {
+    "minlat": 50.7527768,
+    "minlon": 15.2299356,
+    "maxlat": 50.9080017,
+    "maxlon": 15.3143541
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "U kyselky;Desná",
+    "kct_green": "major",
+    "name": "[Z] U Kyselky - Desná",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "3966",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 75401,
+  "bounds": {
+    "minlat": 50.7704483,
+    "minlon": 15.1823901,
+    "maxlat": 50.8916938,
+    "maxlon": 15.4255769
+  },
+  "tags": {
+    "destinations": "Hejnice;Harrachov",
+    "kct_red": "major",
+    "name": "[Č] Hejnice - Harrachov",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0350",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 75407,
+  "bounds": {
+    "minlat": 50.7413718,
+    "minlon": 15.3067460,
+    "maxlat": 50.8115856,
+    "maxlon": 15.3765782
+  },
+  "tags": {
+    "destinations": "Pod Bukovcem;Desná;Kořenov",
+    "kct_blue": "major",
+    "network": "rwn",
+    "note:cs": "[M] Pod Bukovcem - Kořenov",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1661",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 75415,
+  "bounds": {
+    "minlat": 50.7343489,
+    "minlon": 15.2780626,
+    "maxlat": 50.7675748,
+    "maxlon": 15.3082353
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Desná;Albrechtice;Dolní Smržovka;Tanvald",
+    "kct_blue": "major",
+    "network": "rwn",
+    "note:cs": "[M] Desná - Tanvald",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1663",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 75417,
+  "bounds": {
+    "minlat": 50.7800809,
+    "minlon": 15.1839138,
+    "maxlat": 50.8203540,
+    "maxlon": 15.3702268
+  },
+  "tags": {
+    "destinations": "Kristiánov;Karlovský most",
+    "kct_yellow": "major",
+    "network": "rwn",
+    "note:cs": "[Ž] Kristiánov - Karlovský most",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "6986",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 82497,
+  "bounds": {
+    "minlat": 50.7688621,
+    "minlon": 15.3286436,
+    "maxlat": 50.7984249,
+    "maxlon": 15.3775552
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Sedlo pod zámky;Údolí Jizery",
+    "kct_yellow": "major",
+    "name": "[Ž] Sedlo pod zámky - Údolí Jizery",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "6984",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 133843,
+  "bounds": {
+    "minlat": 50.6228064,
+    "minlon": 15.6744300,
+    "maxlat": 50.7058203,
+    "maxlon": 15.8192580
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Svoboda nad Úpou-Chalupa Na Rozcestí",
+    "kct_red": "major",
+    "name": "[Č] Svoboda nad Úpou - Chata Na Rozcestí",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0407",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 133844,
+  "bounds": {
+    "minlat": 50.6186480,
+    "minlon": 15.6050630,
+    "maxlat": 50.7345332,
+    "maxlon": 15.6977025
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Luční bouda-Vrchlabí",
+    "kct_red": "major",
+    "name": "[Č] Luční bouda - Vrchlabí",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0406",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 133849,
+  "bounds": {
+    "minlat": 50.6764128,
+    "minlon": 15.7398317,
+    "maxlat": 50.7361447,
+    "maxlon": 15.7943183
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Sněžka;Soutok Úp",
+    "kct_yellow": "major",
+    "name": "[Ž] Kubátova cesta",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7217",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 133851,
+  "bounds": {
+    "minlat": 50.5096251,
+    "minlon": 15.8139065,
+    "maxlat": 50.7470951,
+    "maxlon": 16.0505372
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pomezní boudy;Úpice",
+    "kct_red": "major",
+    "name": "[Č] Cesta bratří Čapků",
+    "network": "rwn",
+    "note": "[Č] Pomezní boudy - Úpice",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0403",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 236869,
+  "bounds": {
+    "minlat": 50.7124059,
+    "minlon": 15.4230986,
+    "maxlat": 50.7475397,
+    "maxlon": 15.5125077
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Rokytnice nad Jizerou (žst);Dvoračky",
+    "kct_blue": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1895",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 236886,
+  "bounds": {
+    "minlat": 50.7289215,
+    "minlon": 15.4238919,
+    "maxlat": 50.7726671,
+    "maxlon": 15.4516158
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Harrachov (lan.);Rokytnice nad Jizerou",
+    "kct_green": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4326",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237045,
+  "bounds": {
+    "minlat": 50.6281248,
+    "minlon": 15.5930281,
+    "maxlat": 50.7131225,
+    "maxlon": 15.6304330
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Vrchlabí;U Hromovky",
+    "kct_yellow": "major",
+    "name": "[Ž] Vrchlabí - U Hromovky",
+    "network": "rwn",
+    "note": "Špindlerův Mlýn: žlutá značka není buď vyznačena např. do Svatého Petru a dál nebo nemá ukazatele, situace je nejistá v Okružní ulici až po U dívčí lávky (rozc.) - nutno zjistit, U dívčí lávky (rozc.) je ukazatel, náměstí - není, hotel Lomnice je.",
+    "note_1": "trasa rozdělena na dvě části, 7201 Vrchlabí - Hromovka, druhá část U Dívčí lávky - Špindlerovka má nové číslo",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7201",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237046,
+  "bounds": {
+    "minlat": 50.7372307,
+    "minlon": 15.7287556,
+    "maxlat": 50.7392908,
+    "maxlon": 15.7433492
+  },
+  "tags": {
+    "complete": "no",
+    "kct_blue": "major",
+    "name": "[M] Dom Śląski - Droga Jubileuszowa",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237047,
+  "bounds": {
+    "minlat": 50.7292989,
+    "minlon": 15.7414149,
+    "maxlat": 50.7419947,
+    "maxlon": 15.7768265
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Nad Růžohorským sedlem - Jelenka",
+    "kct_green": "major",
+    "name": "[Z] Nad Růžohorským sedlem - Jelenka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4246",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237048,
+  "bounds": {
+    "minlat": 50.7049974,
+    "minlon": 15.7768265,
+    "maxlat": 50.7450012,
+    "maxlon": 15.8207291
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Jelenka;Horní Malá Úpa;Spálený Mlýn",
+    "kct_yellow": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7220",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237049,
+  "bounds": {
+    "minlat": 50.6603697,
+    "minlon": 15.5976710,
+    "maxlat": 50.7256798,
+    "maxlon": 15.8207861
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Špindlerův Mlýn;Chalupa Na Rozcestí;Pec pod Sněžkou;Spálený Mlýn;Horní Maršov",
+    "kct_green": "major",
+    "name": "[Z] Špindlerův Mlýn - Horní Maršov",
+    "network": "rwn",
+    "note": "trasa rozdělena, úsek Pec Corso - Maršov má nové číslo",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4206",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237050,
+  "bounds": {
+    "minlat": 50.7046731,
+    "minlon": 15.7326796,
+    "maxlat": 50.7076626,
+    "maxlon": 15.7368567
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pec pod Sněžkou (lanovka)-Pod Větrníkem",
+    "kct_yellow": "major",
+    "name": "[Ž] U Růžového dolu - Pod Větrníkem",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7236",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237052,
+  "bounds": {
+    "minlat": 50.7108482,
+    "minlon": 15.7139577,
+    "maxlat": 50.7168072,
+    "maxlon": 15.7240438
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Obří důl-Modrý důl",
+    "kct_yellow": "major",
+    "name": "[Ž] Obří důl - Modrý důl",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7212",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237053,
+  "bounds": {
+    "minlat": 50.7099660,
+    "minlon": 15.6071108,
+    "maxlat": 50.7272144,
+    "maxlon": 15.7003293
+  },
+  "tags": {
+    "destinations": "Richtrovy Boudy-Špindlerův mlýn",
+    "kct_green": "major",
+    "name": "[Z] Richtrovy Boudy - Špindlerův mlýn",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4203",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237054,
+  "bounds": {
+    "minlat": 50.6706980,
+    "minlon": 15.6691012,
+    "maxlat": 50.7034159,
+    "maxlon": 15.7672390
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_green": "major",
+    "name": "[Z] Javoří Mlýn - U Dvorské boudy",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4208",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237055,
+  "bounds": {
+    "minlat": 50.6281248,
+    "minlon": 15.6087415,
+    "maxlat": 50.6710650,
+    "maxlon": 15.7167961
+  },
+  "tags": {
+    "complete": "no",
+    "kct_blue": "major",
+    "name": "[M] Hrnčířské boudy - Vrchlabí (kostel)",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1810",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237057,
+  "bounds": {
+    "minlat": 50.6537901,
+    "minlon": 15.7498728,
+    "maxlat": 50.6786685,
+    "maxlon": 15.8361935
+  },
+  "tags": {
+    "complete": "no",
+    "kct_green": "major",
+    "name": "[Z] U Thamových bud - Nad Pražačkou - H. Maršov",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237058,
+  "bounds": {
+    "minlat": 50.6455501,
+    "minlon": 15.7195836,
+    "maxlat": 50.6809247,
+    "maxlon": 15.7530245
+  },
+  "tags": {
+    "complete": "no",
+    "kct_blue": "major",
+    "name": "[M] Červenokostelecká bouda - U Zrcadlových bud",
+    "network": "rwn",
+    "note": "[M] Červenokostelecká bouda - U Zrcadlových bud",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1814",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237059,
+  "bounds": {
+    "minlat": 50.6236066,
+    "minlon": 15.7441488,
+    "maxlat": 50.6601060,
+    "maxlon": 15.8186480
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Svoboda nad Úpou-Václavák",
+    "kct_green": "major",
+    "name": "[Z] Svoboda nad Úpou - Václavák",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4210",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237060,
+  "bounds": {
+    "minlat": 50.6345898,
+    "minlon": 15.7098714,
+    "maxlat": 50.7057160,
+    "maxlon": 15.7767350
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "major",
+    "name": "[Ž] Černý Důl - Nad Portášovými boudami",
+    "network": "rwn",
+    "note": "opravena přeložka žluté mezi",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7211",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 237097,
+  "bounds": {
+    "minlat": 50.6680626,
+    "minlon": 15.5839262,
+    "maxlat": 50.7248891,
+    "maxlon": 15.7184725
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Špindlerův Mlýn;Hrnčířské boudy;Nad boudou Mír",
+    "kct_green": "major",
+    "network": "rwn",
+    "note": "trasa je v úseku Michlův mlýn - U Krásné pláně je od 15. 9. do 31. 5. uzavřena",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4207",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 253544,
+  "bounds": {
+    "minlat": 50.4170024,
+    "minlon": 16.0281114,
+    "maxlat": 50.6279556,
+    "maxlon": 16.3324212
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Náchod -Hronov-Police-Hvězda-Broumov-Teplice-Adršpach- Pod Pasekou",
+    "kct_red": "major",
+    "name": "[Č] Náchod - Pod Pasekou",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0404",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 253561,
+  "bounds": {
+    "minlat": 50.4831619,
+    "minlon": 15.9091337,
+    "maxlat": 50.5633785,
+    "maxlon": 16.1857273
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Trutnov;Č. Kostelec;Rtyně;Úpice;St. Rokytník;Hronov",
+    "kct_green": "major",
+    "name": "[Z] Trutnov - Hronov",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4213",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 254702,
+  "bounds": {
+    "minlat": 50.7690544,
+    "minlon": 15.5458675,
+    "maxlat": 50.7774149,
+    "maxlon": 15.5591828
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Labská bouda;Sněžné Jámy",
+    "kct_yellow": "major",
+    "name": "[Ž] Labská bouda-Sněžné Jámy",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7237",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 254703,
+  "bounds": {
+    "minlat": 50.7424747,
+    "minlon": 15.6084647,
+    "maxlat": 50.7628107,
+    "maxlon": 15.6351201
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "U Dívčí lávky;Špindlerova bouda",
+    "kct_green": "major",
+    "name": "[Z] U Dívčí lávky - Špindlerova bouda",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4202",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 254733,
+  "bounds": {
+    "minlat": 50.7558676,
+    "minlon": 15.5868125,
+    "maxlat": 50.7641373,
+    "maxlon": 15.6351201
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Medvědí bouda;Špindlerova bouda",
+    "kct_blue": "major",
+    "name": "[M] Medvědí bouda - Špindlerova bouda",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1882",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 326662,
+  "bounds": {
+    "minlat": 50.7814343,
+    "minlon": 15.4227659,
+    "maxlat": 50.8078797,
+    "maxlon": 15.4559060
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Harrachov (kemp);Alfrédka;Harrachov (cz/pl)",
+    "kct_blue": "major",
+    "name": "[M] Harrachov (camp) - Harrachov (cz/pl)",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1825",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 331122,
+  "bounds": {
+    "minlat": 50.6946989,
+    "minlon": 15.4294664,
+    "maxlat": 50.7229257,
+    "maxlon": 15.5718089
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Jablonec n. Jiz.;Pod černou skálou",
+    "kct_blue": "major",
+    "name": "[M] Jablonec n. Jiz. - Pod Černou skálou",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1805",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 331782,
+  "bounds": {
+    "minlat": 50.7015473,
+    "minlon": 15.3635313,
+    "maxlat": 50.7439793,
+    "maxlon": 15.4296620
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Jablonec nad Jizerou - Hvězda chata",
+    "kct_yellow": "major",
+    "name": "[Ž] Jablonec n. Jiz. - Hvězda",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7219",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 331808,
+  "bounds": {
+    "minlat": 50.7537816,
+    "minlon": 15.2675114,
+    "maxlat": 50.7696089,
+    "maxlon": 15.3143541
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Tanvaldský Špičák;U dubu;",
+    "kct_yellow": "major",
+    "name": "[Ž] Tanvaldský Špičák - Desná",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "6989",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 331809,
+  "bounds": {
+    "minlat": 50.7168166,
+    "minlon": 15.2780626,
+    "maxlat": 50.7581919,
+    "maxlon": 15.3466582
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Tanvald;Desná;Příchovice;Velké Hamry",
+    "kct_none": "local",
+    "name": "Tanvaldský vyhlídkový okruh",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "none:none",
+    "roundtrip": "yes",
+    "route": "hiking",
+    "source": "rozcestníky",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 331836,
+  "bounds": {
+    "minlat": 50.7413718,
+    "minlon": 15.3106879,
+    "maxlat": 50.8185820,
+    "maxlon": 15.4018835
+  },
+  "tags": {
+    "destinations": "Tanvald;Orle;Jizerka",
+    "kct_green": "major",
+    "network": "rwn",
+    "note:cs": "[Z] Tanvald - Jizerka",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "3978",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 338456,
+  "bounds": {
+    "minlat": 50.7034589,
+    "minlon": 15.3772011,
+    "maxlat": 50.7276638,
+    "maxlon": 15.4296620
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Na perlíčku-Jablonec nad Jizerou",
+    "kct_green": "major",
+    "name": "[Z] Na Perlíčku - Jablonec n. Jiz.",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4270",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 341098,
+  "bounds": {
+    "minlat": 50.7673109,
+    "minlon": 15.5757153,
+    "maxlat": 50.7785168,
+    "maxlon": 15.6118265
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pod Smělcem;Petrova bouda",
+    "kct_blue": "major",
+    "name": "[M] Pod Smělcem - Petrova bouda",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1802",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 367750,
+  "bounds": {
+    "minlat": 50.6087505,
+    "minlon": 15.5055265,
+    "maxlat": 50.7755650,
+    "maxlon": 15.5821359
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Jilemnice;pramen Labe",
+    "kct_red": "major",
+    "name": "[Č] Bucharova cesta",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0431",
+    "route": "hiking",
+    "type": "route",
+    "wikidata": "Q11358296",
+    "wikipedia": "cs:Bucharova cesta"
+  }
+},
+{
+  "type": "relation",
+  "id": 368539,
+  "bounds": {
+    "minlat": 50.7322609,
+    "minlon": 15.4507875,
+    "maxlat": 50.7409411,
+    "maxlon": 15.4599250
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "local",
+    "name": "Pašerácká stezka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 369024,
+  "bounds": {
+    "minlat": 50.6941414,
+    "minlon": 15.7002931,
+    "maxlat": 50.7112797,
+    "maxlon": 15.7391610
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pec pod Sněžkou-Pec pod Sněžkou",
+    "kct_red": "major",
+    "name": "[Č] Okruh Zeleným a Modrým dolem",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0408",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 369025,
+  "bounds": {
+    "minlat": 50.7380966,
+    "minlon": 15.7433492,
+    "maxlat": 50.7553828,
+    "maxlon": 15.8234712
+  },
+  "tags": {
+    "colour": "blue",
+    "complete": "no",
+    "name": "[M] Malá Úpa-Pomezní boudy - Jubilejní cesta (rozc.)",
+    "network": "nwn",
+    "operator": "PTTK",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 369047,
+  "bounds": {
+    "minlat": 50.6351385,
+    "minlon": 15.8606955,
+    "maxlat": 50.6849818,
+    "maxlon": 15.9981644
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Roh hranic-Prkenný důl",
+    "kct_blue": "major",
+    "name": "[M] Roh hranic - Prkenný důl",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1824",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 369233,
+  "bounds": {
+    "minlat": 50.4124815,
+    "minlon": 14.8844185,
+    "maxlat": 50.5985673,
+    "maxlon": 15.3682624
+  },
+  "tags": {
+    "kct_red": "major",
+    "name": "[Č] Zlatá stezka Českého Ráje (Sekce)",
+    "name:de": "Goldsteig des Böhmischen Paradieses (Teile)",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "noref",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 372304,
+  "bounds": {
+    "minlat": 50.7604065,
+    "minlon": 15.5846179,
+    "maxlat": 50.7675770,
+    "maxlon": 15.5868700
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Brádlerovy boudy;Špindlerův Mlýn",
+    "kct_yellow": "major",
+    "name": "[Ž] Brádlerovy boudy - Špindlerův Mlýn",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7203",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 373033,
+  "bounds": {
+    "minlat": 50.5051911,
+    "minlon": 16.0025923,
+    "maxlat": 50.6029152,
+    "maxlon": 16.1490762
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Petříkovice;Turov",
+    "kct_green": "major",
+    "name": "[Z] Petříkovice - Turov",
+    "network": "rwn",
+    "note:cs": "[Z] Petříkovice - Turov",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4331",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 375183,
+  "bounds": {
+    "minlat": 50.7785168,
+    "minlon": 15.5815975,
+    "maxlat": 50.8374157,
+    "maxlon": 15.6801604
+  },
+  "tags": {
+    "colour": "blue",
+    "distance": "12.3",
+    "name": "Podgórzyn Dolny - Czarna Przełęcz",
+    "network": "rwn",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 375184,
+  "bounds": {
+    "minlat": 50.7786599,
+    "minlon": 15.5346706,
+    "maxlat": 50.8506735,
+    "maxlon": 15.5919280
+  },
+  "tags": {
+    "colour": "blue",
+    "distance": "19.5",
+    "name": "Piechowice - Pod Wielkim Szyszakiem",
+    "network": "rwn",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 375377,
+  "bounds": {
+    "minlat": 50.7767940,
+    "minlon": 15.5178853,
+    "maxlat": 50.8297015,
+    "maxlon": 15.5591828
+  },
+  "tags": {
+    "colour": "yellow",
+    "distance": "8.3",
+    "name": "Szklarska Poręba - Śnieżne Kotły",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 375392,
+  "bounds": {
+    "minlat": 50.1491375,
+    "minlon": 15.3336939,
+    "maxlat": 50.9911356,
+    "maxlon": 16.9579634
+  },
+  "tags": {
+    "colour": "blue",
+    "complete": "yes",
+    "distance": "392.1",
+    "from": "Szklarska Poręba",
+    "name": "Szklarska Poręba - Pasterka",
+    "network": "rwn",
+    "note": "Zweryfikowano w terenie 07.2025",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "symbol": "blue bar on white ground",
+    "symbol:pl": "niebieski pasek na białym tle",
+    "to": "Pasterka",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 375393,
+  "bounds": {
+    "minlat": 50.8529850,
+    "minlon": 15.2893370,
+    "maxlat": 50.8926559,
+    "maxlon": 15.4485443
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Rozdroże Izerskie - Stog Izerski",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 378837,
+  "bounds": {
+    "minlat": 50.6954145,
+    "minlon": 15.7238599,
+    "maxlat": 50.7392908,
+    "maxlon": 15.7391610
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pec pod Sněžkou - Obří sedlo",
+    "kct_blue": "major",
+    "name": "[M] Pec pod Sněžkou - Obří sedlo",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1812",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 399450,
+  "bounds": {
+    "minlat": 50.8271820,
+    "minlon": 15.6439682,
+    "maxlat": 50.8374157,
+    "maxlon": 15.6793137
+  },
+  "tags": {
+    "name": "Podgórzyn Dolny - Zamek Chojnik",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "symbol": "yellow",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 401516,
+  "bounds": {
+    "minlat": 50.6623833,
+    "minlon": 15.9987812,
+    "maxlat": 50.7063241,
+    "maxlon": 16.1854927
+  },
+  "tags": {
+    "colour": "blue",
+    "from": "Mieroszów",
+    "name": "Mieroszów – Lubawka",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "to": "Lubawka",
+    "type": "route",
+    "via": "Łączna;Róg;Chełmsko Śląskie;Błażejów;Rozdroże Trzech Buków;Krucza Skała"
+  }
+},
+{
+  "type": "relation",
+  "id": 420639,
+  "bounds": {
+    "minlat": 50.8108100,
+    "minlon": 15.3250516,
+    "maxlat": 50.8312026,
+    "maxlon": 15.3707498
+  },
+  "tags": {
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "Tři Iseriny",
+    "network": "lwn",
+    "note": "zastavení č.6 by měl být Suťový les na severovýchodním úpatí Bukovce, č.9 Muzeum Jizerských hor (nenalezeno)",
+    "operator": "cz:KČT",
+    "osmc:name": "Tři Iseriny",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route",
+    "url": "https://www.liberecky-kraj.cz/filemanager/files/file.php?file=58256"
+  }
+},
+{
+  "type": "relation",
+  "id": 443751,
+  "bounds": {
+    "minlat": 50.7433371,
+    "minlon": 15.2637760,
+    "maxlat": 50.7597657,
+    "maxlon": 15.3124005
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Tanvald;Tanvaldský Špičák;Jiřetín pod Bukovou",
+    "kct_green": "major",
+    "name": "[Z] Tanvald - Jiřetín pod Bukovou",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 951694,
+  "bounds": {
+    "minlat": 50.2078726,
+    "minlon": 15.2927249,
+    "maxlat": 50.9113943,
+    "maxlon": 17.5833560
+  },
+  "tags": {
+    "colour": "red",
+    "complete": "yes",
+    "distance": "440",
+    "name": "Główny Szlak Sudecki",
+    "name:cs": "Hlavní sudetská magistrála",
+    "name:de": "Sudeten-Hauptwanderweg",
+    "name:en": "Main Sudetes Trail",
+    "name:pl": "Główny Szlak Sudecki im. Mieczysława Orłowicza",
+    "network": "nwn",
+    "operator": "PTTK",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "GSS",
+    "route": "hiking",
+    "source": "Zweryfikowano przebieg w terenie w sierpniu 2022",
+    "type": "route",
+    "wikidata": "Q5627668",
+    "wikipedia": "pl:Główny Szlak Sudecki"
+  }
+},
+{
+  "type": "relation",
+  "id": 1017407,
+  "bounds": {
+    "minlat": 50.7622013,
+    "minlon": 15.4157124,
+    "maxlat": 50.8646949,
+    "maxlon": 15.6951150
+  },
+  "tags": {
+    "colour": "green",
+    "name": "Rozdroże Izerskie - Pielgrzymy",
+    "network": "rwn",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route",
+    "wikidata": "Q130722801"
+  }
+},
+{
+  "type": "relation",
+  "id": 1086096,
+  "bounds": {
+    "minlat": 50.6744235,
+    "minlon": 15.8234041,
+    "maxlat": 50.7470951,
+    "maxlon": 15.8633743
+  },
+  "tags": {
+    "complete": "yes",
+    "from": "Przełęcz Okraj",
+    "kct_green": "major",
+    "name": "Przełęcz Okraj – Roh hranic",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "to": "Roh hranic",
+    "type": "route",
+    "via": "Łysocina"
+  }
+},
+{
+  "type": "relation",
+  "id": 1137801,
+  "bounds": {
+    "minlat": 50.5478341,
+    "minlon": 15.9748912,
+    "maxlat": 50.5774764,
+    "maxlon": 15.9857935
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Bohuslavice n. Ú - Čížkovy kameny - Lhota",
+    "kct_green": "major",
+    "name": "[Z] Bohuslavice n. U - Lhota",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4215",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1137804,
+  "bounds": {
+    "minlat": 50.4171184,
+    "minlon": 15.9778049,
+    "maxlat": 50.5670526,
+    "maxlon": 16.0164034
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Čížkovy Kameny - Nad Dlouhou Vodou",
+    "kct_yellow": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7235",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1137805,
+  "bounds": {
+    "minlat": 50.5337023,
+    "minlon": 15.9499997,
+    "maxlat": 50.5503584,
+    "maxlon": 16.0504072
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Starý Rokytník;Malé Svatoňovice",
+    "kct_blue": "major",
+    "name": "[M] Starý Rokytník - Malé Svatoňovice",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1826",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1137807,
+  "bounds": {
+    "minlat": 50.5627416,
+    "minlon": 15.9847910,
+    "maxlat": 50.5692836,
+    "maxlon": 16.0011335
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pod Hůrou - U Čižkových kamenů",
+    "kct_yellow": "major",
+    "name": "[Ž] Pod Hůrou - U Čižkových kamenů",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7209",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1417692,
+  "bounds": {
+    "minlat": 50.5850142,
+    "minlon": 15.3309285,
+    "maxlat": 50.6315147,
+    "maxlon": 15.6087898
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_green": "major",
+    "name": "[Z] Jilemnice - Vrchlabí",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4211",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1664738,
+  "bounds": {
+    "minlat": 50.6142174,
+    "minlon": 15.3009427,
+    "maxlat": 50.6341112,
+    "maxlon": 15.3198245
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Pod Spálovem - Semily",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS Údolím Jizery - Riegrova stezka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1684465,
+  "bounds": {
+    "minlat": 50.7439338,
+    "minlon": 15.3635313,
+    "maxlat": 50.7464763,
+    "maxlon": 15.3659754
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "rozhledna Štěpánka",
+    "kct_green": "peak",
+    "name": "[Z] odbočka k rozhledně Štěpánka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_triangle",
+    "ref": "1664",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1706938,
+  "bounds": {
+    "minlat": 50.6495619,
+    "minlon": 15.7441500,
+    "maxlat": 50.6645394,
+    "maxlon": 15.7591777
+  },
+  "tags": {
+    "complete": "yes",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS Černohorské rašeliniště",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "source": "survey",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1706940,
+  "bounds": {
+    "minlat": 50.6544830,
+    "minlon": 15.7473947,
+    "maxlat": 50.6564541,
+    "maxlon": 15.7508336
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_blue": "major",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1714134,
+  "bounds": {
+    "minlat": 50.8631127,
+    "minlon": 15.8684176,
+    "maxlat": 50.8661682,
+    "maxlon": 15.8727575
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Szwajcarka - Krzyżna Góra",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "roundtrip": "no",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1714136,
+  "bounds": {
+    "minlat": 50.8369219,
+    "minlon": 15.9704042,
+    "maxlat": 50.8671920,
+    "maxlon": 15.9805839
+  },
+  "tags": {
+    "colour": "blue",
+    "name": "Ciechanowice - Wieściszowice",
+    "network": "rwn",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1714137,
+  "bounds": {
+    "minlat": 50.7494989,
+    "minlon": 15.6060952,
+    "maxlat": 51.1763973,
+    "maxlon": 16.4174599
+  },
+  "tags": {
+    "colour": "green",
+    "description": "Szlak prowadzący przez 15 zamków i grodów piastowskich na terenie wojewódzwa dolnośląskiego",
+    "distance": "151.2 km",
+    "from": "Zamek Grodziec",
+    "name": "Szlak Zamków Piastowskich",
+    "name:de": "Route der Piastenschlösser",
+    "name:pl": "Szlak Zamków Piastowskich",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "green:white:green_bar",
+    "roundtrip": "no",
+    "route": "hiking",
+    "symbol": "green bar on white ground",
+    "symbol:pl": "zielony pasek na białym tle",
+    "to": "Zagórze Śląskie",
+    "type": "route",
+    "website": "https://szlaki.pttk.pl/dolnos/zamki01.html",
+    "wikidata": "Q9351870",
+    "wikipedia": "pl:Szlak Zamków Piastowskich"
+  }
+},
+{
+  "type": "relation",
+  "id": 1714138,
+  "bounds": {
+    "minlat": 50.7468714,
+    "minlon": 15.8234041,
+    "maxlat": 50.8632642,
+    "maxlon": 15.9024430
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Schronisko Szwajcarka - Ostra Mała - Przełęcz Okraj - Uroczysko",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1722593,
+  "bounds": {
+    "minlat": 50.7168166,
+    "minlon": 15.2800197,
+    "maxlat": 50.7415816,
+    "maxlon": 15.3466582
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Dolní Smržovka;Muchov, Příchovice hřbitov",
+    "kct_yellow": "major",
+    "network": "rwn",
+    "note:cs": "[Ž] Dolní Smržovka - Příchovice",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1722611,
+  "bounds": {
+    "minlat": 50.6770672,
+    "minlon": 15.2545802,
+    "maxlat": 50.7318033,
+    "maxlon": 15.3173434
+  },
+  "tags": {
+    "destinations": "Smržovka;Držkov;Návarov",
+    "kct_blue": "major",
+    "network": "rwn",
+    "note:cs": "[M] Smržovka – Návarov",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "source": "survey",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1755462,
+  "bounds": {
+    "minlat": 50.4955730,
+    "minlon": 15.1576787,
+    "maxlat": 50.6069080,
+    "maxlon": 15.4207022
+  },
+  "tags": {
+    "complete": "no",
+    "kct_red": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0437",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1931068,
+  "bounds": {
+    "minlat": 50.6236066,
+    "minlon": 15.7558188,
+    "maxlat": 50.6326877,
+    "maxlon": 15.8186480
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Svoboda nad Úpou - Hoffmannova bouda",
+    "kct_green": "major",
+    "network": "lwn",
+    "note": "[Z] Hoffmannova bouda - Svoboda nad Úpou",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4228",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1931660,
+  "bounds": {
+    "minlat": 50.6303380,
+    "minlon": 15.7337485,
+    "maxlat": 50.6456016,
+    "maxlon": 15.7818673
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "U Zrcadlových bud - Janské Lázně",
+    "kct_blue": "major",
+    "network": "lwn",
+    "note": "[M] Janské Lázně - U Zrcadlových bud",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1816",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1931661,
+  "bounds": {
+    "minlat": 50.6231746,
+    "minlon": 15.7463266,
+    "maxlat": 50.6379414,
+    "maxlon": 15.8186480
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Svoboda nad Úpou - Nad Hoffmannovou boudou",
+    "kct_yellow": "major",
+    "network": "rwn",
+    "note": "[Ž] Svoboda nad Úpou - Nad Hoffmannovou boudou",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7227",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2033327,
+  "bounds": {
+    "minlat": 50.6287423,
+    "minlon": 15.5697298,
+    "maxlat": 50.6589238,
+    "maxlon": 15.6087898
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Žalý;Vrchlabí",
+    "kct_yellow": "major",
+    "name": "[Ž] Žalý - Vrchlabí",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7207",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2181597,
+  "bounds": {
+    "minlat": 50.8148405,
+    "minlon": 15.3583024,
+    "maxlat": 50.8540351,
+    "maxlon": 15.3830847
+  },
+  "tags": {
+    "colour": "red",
+    "name": "Ruiny szkoły - do Harrachova (granica)",
+    "network": "rwn",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2181917,
+  "bounds": {
+    "minlat": 50.8010613,
+    "minlon": 15.8866324,
+    "maxlat": 50.8463077,
+    "maxlon": 15.9219181
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Strużnica - Czarnów",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "state": "connection",
+    "symbol": "żółty szlak pieszy",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2330137,
+  "bounds": {
+    "minlat": 50.7490202,
+    "minlon": 15.7084247,
+    "maxlat": 50.7745238,
+    "maxlon": 15.7386652
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Karpacz Biały Jar - Kocioł Białego Jaru",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2330138,
+  "bounds": {
+    "minlat": 50.7392217,
+    "minlon": 15.7147210,
+    "maxlat": 50.7737756,
+    "maxlon": 15.7409278
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Karpacz Biały Jar - Śnieżka",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2330139,
+  "bounds": {
+    "minlat": 50.7411545,
+    "minlon": 15.6991982,
+    "maxlat": 50.7783969,
+    "maxlon": 15.7386652
+  },
+  "tags": {
+    "colour": "blue",
+    "description": "szlak niebieski",
+    "name": "Karpacz - Rozdroże koło Spalonej Strażnicy",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2333902,
+  "bounds": {
+    "minlat": 50.7470936,
+    "minlon": 15.6833497,
+    "maxlat": 50.7745238,
+    "maxlon": 15.8249818
+  },
+  "tags": {
+    "colour": "green",
+    "description": "szlak zielony",
+    "from": "Słonecznik",
+    "name": "Droga Bronka Czecha",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "to": "Przełęcz Okraj",
+    "type": "route",
+    "via": "Karpacz Górny;Wilcza Poręba"
+  }
+},
+{
+  "type": "relation",
+  "id": 2342199,
+  "bounds": {
+    "minlat": 50.7595266,
+    "minlon": 15.6833497,
+    "maxlat": 50.7772089,
+    "maxlon": 15.7238307
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Karpacz - Słonecznik",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2342233,
+  "bounds": {
+    "minlat": 50.7344816,
+    "minlon": 15.6973937,
+    "maxlat": 50.7412585,
+    "maxlon": 15.7022280
+  },
+  "tags": {
+    "complete": "yes",
+    "description": "szlak żółty",
+    "destinations": "Luční Bouda - Rownia pod Sniežka",
+    "kct_yellow": "major",
+    "name": "[Ž] Jantarová cesta",
+    "network": "lwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2513986,
+  "bounds": {
+    "minlat": 50.7456868,
+    "minlon": 15.7598993,
+    "maxlat": 50.7830334,
+    "maxlon": 15.7865480
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Karpacz Muzeum Zabawek - Sowia Przełęcz",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2567555,
+  "bounds": {
+    "minlat": 50.7729314,
+    "minlon": 15.5371660,
+    "maxlat": 50.8221693,
+    "maxlon": 15.6208127
+  },
+  "tags": {
+    "colour": "black",
+    "distance": "14",
+    "name": "Schronisko Pod Łabskim Szczytem - Pod Petrovou Boudou",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2567570,
+  "bounds": {
+    "minlat": 50.8002786,
+    "minlon": 15.6659089,
+    "maxlat": 50.8220081,
+    "maxlon": 15.7211551
+  },
+  "tags": {
+    "colour": "black",
+    "complete": "no",
+    "distance": "6,6",
+    "name": "Przesieka - Sosnówka Dolna",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "symbol": "black",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2653528,
+  "bounds": {
+    "minlat": 50.6144037,
+    "minlon": 15.3059706,
+    "maxlat": 50.6263042,
+    "maxlon": 15.3198245
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Morava - Bítouchov",
+    "from": "Morava",
+    "kct_yellow": "major",
+    "name": "[Ž] Kamenického stezka",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "to": "Bítouchov - u kynčlú",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2653529,
+  "bounds": {
+    "minlat": 50.6031440,
+    "minlon": 15.3009427,
+    "maxlat": 50.6361043,
+    "maxlon": 15.3405533
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Spálov;Semily",
+    "kct_blue": "major",
+    "network": "rwn",
+    "note": "[M] Spálov - Semily",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2658089,
+  "bounds": {
+    "minlat": 50.6486500,
+    "minlon": 15.8590091,
+    "maxlat": 50.6624836,
+    "maxlon": 15.8708408
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pod Dvorským lesem - Rychorsky kriz",
+    "kct_yellow": "major",
+    "name": "[Ž] Pod Dvorským lesem - Rychorský kříž",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7238",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2659281,
+  "bounds": {
+    "minlat": 50.6236066,
+    "minlon": 15.8185402,
+    "maxlat": 50.6698133,
+    "maxlon": 15.9652613
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Svoboda nad Upou - Bernartice",
+    "kct_green": "major",
+    "name": "[Z] Svoboda - Bernartice",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4212",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2659511,
+  "bounds": {
+    "minlat": 50.6408270,
+    "minlon": 15.8835536,
+    "maxlat": 50.6616720,
+    "maxlon": 15.9356588
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Chata Ozon - Krenov",
+    "kct_yellow": "major",
+    "name": "[Ž] Chata Ozon - Krenov",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7234",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2659569,
+  "bounds": {
+    "minlat": 50.5940576,
+    "minlon": 15.8774017,
+    "maxlat": 50.6114468,
+    "maxlon": 15.9028762
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Horni Stare Mesto - Nad Babim",
+    "kct_yellow": "major",
+    "name": "[Ž] Horní Staré Město - Nad Babím",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7231",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2661185,
+  "bounds": {
+    "minlat": 50.7532847,
+    "minlon": 15.4376028,
+    "maxlat": 50.7535017,
+    "maxlon": 15.4398577
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_blue": "peak",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_triangle",
+    "ref": "1894",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2661580,
+  "bounds": {
+    "minlat": 50.5838170,
+    "minlon": 15.7762110,
+    "maxlat": 50.6522156,
+    "maxlon": 15.9157938
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Janské Lázně - Žacléř",
+    "kct_green": "major",
+    "name": "[Z] Janské Lázně - Žacléř",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4216",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2664066,
+  "bounds": {
+    "minlat": 50.7691067,
+    "minlon": 15.6069575,
+    "maxlat": 50.7708092,
+    "maxlon": 15.6177737
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pod Petrovou boudou - Moravská bouda",
+    "kct_green": "major",
+    "name": "[Z] Pod Petrovou boudou - Moravská bouda",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2678463,
+  "bounds": {
+    "minlat": 50.6348044,
+    "minlon": 15.6915265,
+    "maxlat": 50.6855159,
+    "maxlon": 15.7099202
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Liščí louka - Černý důl",
+    "kct_yellow": "major",
+    "name": "[Ž] Liščí louka - Černý Důl",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2678576,
+  "bounds": {
+    "minlat": 50.6087508,
+    "minlon": 15.7040455,
+    "maxlat": 50.6942422,
+    "maxlon": 15.7337552
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Pec pod Sněžkou - Černý důl",
+    "kct_blue": "major",
+    "name": "[M] Pec pod Sněžkou (Veselý Výlet) - Černý Důl, Čistá",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2678577,
+  "bounds": {
+    "minlat": 50.6778481,
+    "minlon": 15.7093977,
+    "maxlat": 50.6954702,
+    "maxlon": 15.7391610
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_yellow": "major",
+    "name": "[Ž] Lesní bouda - Pec pod Sněžkou",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2693942,
+  "bounds": {
+    "minlat": 50.8494536,
+    "minlon": 15.5723128,
+    "maxlat": 50.8714791,
+    "maxlon": 15.5919280
+  },
+  "tags": {
+    "colour": "green",
+    "description": "0:50 h / 1:15 h",
+    "distance": "3,2",
+    "name": "Pod Bobrowymi Skałami - Piechowice",
+    "network": "rwn",
+    "osmc:symbol": "gree:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2698298,
+  "bounds": {
+    "minlat": 50.6837288,
+    "minlon": 15.5178853,
+    "maxlat": 50.8542241,
+    "maxlon": 16.2885919
+  },
+  "tags": {
+    "colour": "green",
+    "distance": "111.2",
+    "from": "Szklarska Poręba",
+    "name": "Szklarska Poręba - Wałbrzych",
+    "network": "rwn",
+    "note": "verified 05.2024",
+    "operator": "PTTK",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "to": "Dworzec kolejowy Wałbrzych Główny",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2700773,
+  "bounds": {
+    "minlat": 50.5745464,
+    "minlon": 15.9201537,
+    "maxlat": 50.5820589,
+    "maxlon": 15.9479129
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Trutnov Bucina - Trutnov Porici",
+    "kct_yellow": "major",
+    "name": "[Ž] Bučina - Poříčí",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2962124,
+  "bounds": {
+    "minlat": 50.5892644,
+    "minlon": 15.2580718,
+    "maxlat": 50.6186592,
+    "maxlon": 15.3344962
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Krkavčí skála - Kozákov - Semily",
+    "kct_green": "major",
+    "name": "[Z] Semily - Kozákov - U Krkavčí skály",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3027760,
+  "bounds": {
+    "minlat": 50.6397441,
+    "minlon": 15.2643288,
+    "maxlat": 50.6861802,
+    "maxlon": 15.4012742
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Hrubá Horka;Střevelná;Jesenný;Bozkov;Roztoky u Semil;Vysoké nad Jizerou",
+    "kct_blue": "major",
+    "name": "[M] Hrubá Horka - Vysoké nad Jizerou",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "source": "survey",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3079827,
+  "bounds": {
+    "minlat": 50.6398977,
+    "minlon": 15.3067765,
+    "maxlat": 50.6787935,
+    "maxlon": 15.3367770
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Bozkov;Jesenný;Vlastiboř;Návarov",
+    "kct_green": "major",
+    "network": "rwn",
+    "note:cs": "[Z] Bozkov – Návarov",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3083510,
+  "bounds": {
+    "minlat": 50.0964264,
+    "minlon": 15.4157124,
+    "maxlat": 50.9911356,
+    "maxlon": 16.9579634
+  },
+  "tags": {
+    "name": "European long distance path E3 - part Poland (west)",
+    "name:de": "Europäischer Fernwanderweg E3, Polen (West)",
+    "name:pl": "Europejski długodystansowy szlak pieszy E3 - część Polska (zachodnia)",
+    "network": "iwn",
+    "note": "Proszę nie dodawać koloru do tego szlaku, wbrew pozorom jest on prowadzony szlakami o różnych kolorach - zamiast tego należy stowrzyć nową relację szlaku z kolorem na właściwym odcicnku (ewentualnie przedłużyć inną istniejącą)",
+    "osmc:symbol": "blue:blue::E3:yellow",
+    "ref": "E3",
+    "route": "hiking",
+    "type": "route",
+    "website": "http://www.era-ewv-ferp.com/index.php?topmenu_id=29&id=29&page_id=102&module=text",
+    "wiki:symbol": "E 3 sign.jpg"
+  }
+},
+{
+  "type": "relation",
+  "id": 3097005,
+  "bounds": {
+    "minlat": 50.4292944,
+    "minlon": 15.8151671,
+    "maxlat": 50.6598196,
+    "maxlon": 15.9154637
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Dvur Kralove nad Labem;Rychory, Kutna, rozc.",
+    "kct_blue": "major",
+    "name": "[M] Rýchory/Kutná (rozc.)- Dvůr Králové nad Labem (bus)",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1820",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3149754,
+  "bounds": {
+    "minlat": 50.7843433,
+    "minlon": 15.5361370,
+    "maxlat": 50.7938782,
+    "maxlon": 15.5735267
+  },
+  "tags": {
+    "colour": "red",
+    "distance": "4.2",
+    "name": "Pod Łabskim Szczytem - Rozdroże pod Wielkim Szyszakiem",
+    "network": "rwn",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3156407,
+  "bounds": {
+    "minlat": 50.6309524,
+    "minlon": 15.7816214,
+    "maxlat": 50.6703378,
+    "maxlon": 15.8117793
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Janské Lázně - Pod Starou horou",
+    "kct_blue": "major",
+    "name": "[M] Janské Lázně - Pod Starou horou",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1817",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3158304,
+  "bounds": {
+    "minlat": 50.6575923,
+    "minlon": 15.8187199,
+    "maxlat": 50.6715087,
+    "maxlon": 15.8539932
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Horní Maršov - Rýchory, Kutná",
+    "kct_yellow": "major",
+    "name": "[Ž] Horní Maršov - Kutná",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7223",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3158348,
+  "bounds": {
+    "minlat": 50.6236066,
+    "minlon": 15.8185402,
+    "maxlat": 50.6454267,
+    "maxlon": 15.8475189
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Svoboda nad Úpou - Pod Lovčí boudou",
+    "kct_yellow": "major",
+    "name": "[Ž] Svoboda nad Úpou - Pod Lovčí boudou",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7226",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3175178,
+  "bounds": {
+    "minlat": 50.6552117,
+    "minlon": 15.9873466,
+    "maxlat": 50.6583840,
+    "maxlon": 15.9921187
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_blue": "peak",
+    "name": "[M] Odbočka na Královecký Špičák",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3176768,
+  "bounds": {
+    "minlat": 50.6550809,
+    "minlon": 15.3019736,
+    "maxlat": 51.1199575,
+    "maxlon": 16.1068701
+  },
+  "tags": {
+    "description": "CZ/PL - Krzeszów - Jelenia Góra - Lubań",
+    "name": "Sudecka Droga św. Jakuba",
+    "network": "nwn",
+    "osmc:symbol": "blue:blue:shell_modern",
+    "pilgrimage": "yes",
+    "route": "hiking",
+    "type": "route",
+    "wikidata": "Q9347882",
+    "wikipedia": "pl:Sudecka Droga św. Jakuba"
+  }
+},
+{
+  "type": "relation",
+  "id": 3177056,
+  "bounds": {
+    "minlat": 50.6024828,
+    "minlon": 15.8304745,
+    "maxlat": 50.6236258,
+    "maxlon": 15.8552210
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Mladé Buky (kostel) - Bystřice",
+    "kct_yellow": "major",
+    "name": "[Ž] Mladé Buky (kostel) - Bystřice",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "4214",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3181673,
+  "bounds": {
+    "minlat": 50.5786437,
+    "minlon": 15.7667550,
+    "maxlat": 50.6238170,
+    "maxlon": 15.7894991
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_green": "major",
+    "name": "[Z] Hladíkova výšina - Pod Liškou",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3183732,
+  "bounds": {
+    "minlat": 50.5402259,
+    "minlon": 15.7253466,
+    "maxlat": 50.5897021,
+    "maxlon": 15.9093380
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_blue": "major",
+    "name": "[M] Hostinné - Trutnov",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3189447,
+  "bounds": {
+    "minlat": 50.7364844,
+    "minlon": 15.7987368,
+    "maxlat": 50.7419204,
+    "maxlon": 15.8018629
+  },
+  "tags": {
+    "complete": "yes",
+    "description": "[Z] Malá Úpa - Za větrem (BUS) - Pod Jelenkou",
+    "kct_green": "major",
+    "name": "[Z] Malá Úpa - Pod Jelenkou",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3193754,
+  "bounds": {
+    "minlat": 50.7972074,
+    "minlon": 15.5024150,
+    "maxlat": 50.8188095,
+    "maxlon": 15.5280787
+  },
+  "tags": {
+    "colour": "green",
+    "description": "1:00 h / 0:45 h",
+    "distance": "3.4",
+    "name": "Rozdroże pod Kamieńczykiem - Ryzy",
+    "network": "rwn",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3193786,
+  "bounds": {
+    "minlat": 50.6394228,
+    "minlon": 15.5951842,
+    "maxlat": 50.6620835,
+    "maxlon": 15.6075985
+  },
+  "tags": {
+    "complete": "yes",
+    "description": "[Z] Hořejší Vrchlabí - Herlíkovice - lanovka na Žalý",
+    "kct_green": "major",
+    "name": "[Z] Hořejší Vrchlabí - lanovka na Žalý",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3199246,
+  "bounds": {
+    "minlat": 50.6520109,
+    "minlon": 15.6054167,
+    "maxlat": 50.7248891,
+    "maxlon": 15.6630942
+  },
+  "tags": {
+    "complete": "no",
+    "kct_blue": "major",
+    "name": "[M] Špindlerův Mlýn - Dolní Dvůr",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1808",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3199247,
+  "bounds": {
+    "minlat": 50.6449459,
+    "minlon": 15.6517426,
+    "maxlat": 50.7090191,
+    "maxlon": 15.6639665
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Nad Dolním Dvorem- Dolní Dvůr - Hanapetrova paseka - Zadní Rennerovky - Klínové boudy",
+    "kct_yellow": "major",
+    "name": "[Ž] Nad Dolním Dvorem - Klínovka",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3199287,
+  "bounds": {
+    "minlat": 50.6610432,
+    "minlon": 15.7121371,
+    "maxlat": 50.6675693,
+    "maxlon": 15.7407640
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_yellow": "major",
+    "name": "[Ž] Pod Kolínskou boudou - Údolí Čisté",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3199393,
+  "bounds": {
+    "minlat": 50.6603697,
+    "minlon": 15.8187199,
+    "maxlat": 50.7128705,
+    "maxlon": 15.8354792
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_blue": "major",
+    "name": "[M] Horní Maršov - Lysečinská bouda",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3199394,
+  "bounds": {
+    "minlat": 50.6887957,
+    "minlon": 15.7391445,
+    "maxlat": 50.7238464,
+    "maxlon": 15.8139840
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pec pod Sněžkou;Velká Úpa;Spálený Mlýn;Malá Úpa (kostel)",
+    "kct_blue": "major",
+    "name": "[M] Pec pod Sněžkou - Malá Úpa",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3200957,
+  "bounds": {
+    "minlat": 50.6758603,
+    "minlon": 15.7607386,
+    "maxlat": 50.7090225,
+    "maxlon": 15.8239004
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Nad Vlašskými boudami;Vavřincův důl;Cestník",
+    "kct_blue": "major",
+    "name": "[M] Nad Vlašskými boudami - Cestník",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3200958,
+  "bounds": {
+    "minlat": 50.6698328,
+    "minlon": 15.7255156,
+    "maxlat": 50.6954702,
+    "maxlon": 15.7471919
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Husova bouda - Pražská bouda - Kolínská bouda - Javorka - Pec pod Sněžkou",
+    "kct_yellow": "major",
+    "name": "[Ž] Husova bouda - Pec pod Sněžkou",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7215",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3215053,
+  "bounds": {
+    "minlat": 50.6427075,
+    "minlon": 15.7803746,
+    "maxlat": 50.6603711,
+    "maxlon": 15.8189029
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Horní Maršov - Modrokamenná bouda",
+    "kct_yellow": "major",
+    "name": "[Ž] Horní Maršov - Modrokamenná bouda",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3263630,
+  "bounds": {
+    "minlat": 50.6488551,
+    "minlon": 15.7485536,
+    "maxlat": 50.6509507,
+    "maxlon": 15.7519724
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "peak",
+    "name": "[Ž] Černá hora: kiosek - rozhledna Panorama",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3280873,
+  "bounds": {
+    "minlat": 50.7271925,
+    "minlon": 15.6134161,
+    "maxlat": 50.7628107,
+    "maxlon": 15.6478564
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Špindlerův Mlýn;Bouda u Bílého Labe",
+    "kct_yellow": "major",
+    "name": "Dřevařská cesta",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3280874,
+  "bounds": {
+    "minlat": 50.7255733,
+    "minlon": 15.6208193,
+    "maxlat": 50.7319650,
+    "maxlon": 15.6561296
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_yellow": "major",
+    "name": "Judeichova cesta",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3292908,
+  "bounds": {
+    "minlat": 50.6025278,
+    "minlon": 15.9651083,
+    "maxlat": 50.6461603,
+    "maxlon": 16.0070352
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_yellow": "major",
+    "name": "[Ž] Bernartice - Petříkovice",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7361",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3308959,
+  "bounds": {
+    "minlat": 50.5337023,
+    "minlon": 16.0200630,
+    "maxlat": 50.5552261,
+    "maxlon": 16.0706278
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_yellow": "major",
+    "name": "[Ž] Malé Svatoňovice - Petrovice",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3325788,
+  "bounds": {
+    "minlat": 50.6635364,
+    "minlon": 15.8564540,
+    "maxlat": 50.6940955,
+    "maxlon": 15.9259434
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "major",
+    "name": "[Ž] Růžový palouček - Horní Albeřice",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3330577,
+  "bounds": {
+    "minlat": 50.6011295,
+    "minlon": 15.3084667,
+    "maxlat": 50.6155501,
+    "maxlon": 15.3246582
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Semily - ferrata Vodní brána",
+    "kct_blue": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3361608,
+  "bounds": {
+    "minlat": 50.7767828,
+    "minlon": 15.3707992,
+    "maxlat": 50.8159626,
+    "maxlon": 15.4018835
+  },
+  "tags": {
+    "colour": "green",
+    "name": "Karlovský most (granica) - do Harrachova (granica)",
+    "network": "rwn",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3364770,
+  "bounds": {
+    "minlat": 50.8335469,
+    "minlon": 15.6394746,
+    "maxlat": 50.8467930,
+    "maxlon": 15.6469291
+  },
+  "tags": {
+    "colour": "red",
+    "distance": "2.4",
+    "name": "Sobieszów - Zamek Chojnik",
+    "network": "rwn",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3479195,
+  "bounds": {
+    "minlat": 50.8172472,
+    "minlon": 15.4972619,
+    "maxlat": 50.8505535,
+    "maxlon": 15.5643251
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Szlak dokoła Szklarskiej Poręby",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3479196,
+  "bounds": {
+    "minlat": 50.8451180,
+    "minlon": 15.4919452,
+    "maxlat": 50.8535162,
+    "maxlon": 15.5919280
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Wysoki Kanień - Piechowice",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3734106,
+  "bounds": {
+    "minlat": 50.6457783,
+    "minlon": 15.9977508,
+    "maxlat": 50.6506815,
+    "maxlon": 16.0049853
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Marvenčí vrch - Malé sedlo CZ/P",
+    "kct_yellow": "major",
+    "name": "[Ž] Marvenčí vrch - Malé sedlo CZ/P",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3734107,
+  "bounds": {
+    "minlat": 50.6497088,
+    "minlon": 16.0037763,
+    "maxlat": 50.6660717,
+    "maxlon": 16.0187356
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Krzyżówka BHP - Przełęcz Mała",
+    "network": "rwn",
+    "operator": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3861371,
+  "bounds": {
+    "minlat": 50.8354899,
+    "minlon": 15.6843171,
+    "maxlat": 50.8650125,
+    "maxlon": 15.8693938
+  },
+  "tags": {
+    "colour": "green",
+    "name": "Cieplice Śląskie - Karpniki",
+    "network": "rwn",
+    "operator": "PTTK Jelenia Góra",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3863255,
+  "bounds": {
+    "minlat": 50.6310200,
+    "minlon": 15.6937948,
+    "maxlat": 50.6403231,
+    "maxlon": 15.7099202
+  },
+  "tags": {
+    "complete": "no",
+    "kct_green": "local",
+    "name": "Stezka okolo lomu",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3863256,
+  "bounds": {
+    "minlat": 50.6346443,
+    "minlon": 15.7053010,
+    "maxlat": 50.6366100,
+    "maxlon": 15.7099202
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_blue": "local",
+    "name": "Vápenická stezka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3864373,
+  "bounds": {
+    "minlat": 50.6276566,
+    "minlon": 15.7098714,
+    "maxlat": 50.6390322,
+    "maxlon": 15.7332313
+  },
+  "tags": {
+    "complete": "no",
+    "kct_red": "local",
+    "name": "Stezka za sv. Barborou",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3902203,
+  "bounds": {
+    "minlat": 50.7930394,
+    "minlon": 15.5919280,
+    "maxlat": 50.8495553,
+    "maxlon": 15.6903861
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Piechowice - Borowice",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3902221,
+  "bounds": {
+    "minlat": 50.7932541,
+    "minlon": 15.6903861,
+    "maxlat": 50.8095434,
+    "maxlon": 15.7617421
+  },
+  "tags": {
+    "colour": "blue",
+    "name": "Borowice-Miłków",
+    "network": "rwn",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3902222,
+  "bounds": {
+    "minlat": 50.7771211,
+    "minlon": 15.7208510,
+    "maxlat": 50.9028393,
+    "maxlon": 15.7563874
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Jelenia Góra-Słonecznik",
+    "network": "rwn",
+    "operator": "PTTK Jelenia Góra",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "symbol": "yellow",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3922772,
+  "bounds": {
+    "minlat": 50.6577719,
+    "minlon": 15.7061143,
+    "maxlat": 50.6603700,
+    "maxlon": 15.7091985
+  },
+  "tags": {
+    "complete": "yes",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "[Z] NS hornická Berghaus",
+    "network": "lwn",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3975783,
+  "bounds": {
+    "minlat": 50.7862758,
+    "minlon": 15.5871851,
+    "maxlat": 50.7989239,
+    "maxlon": 15.5929968
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Koralowa Ścieżka - Jaworowa Łąka",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "symbol": "black",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4002036,
+  "bounds": {
+    "minlat": 50.7705102,
+    "minlon": 15.5476564,
+    "maxlat": 50.7710503,
+    "maxlon": 15.5484990
+  },
+  "tags": {
+    "complete": "yes",
+    "description": "odbočka k vyhlídce nad Labským vodopádem",
+    "destinations": "Labský vodopád",
+    "kct_blue": "peak",
+    "name": "[M] Labský vodopád - vyhlídka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4095384,
+  "bounds": {
+    "minlat": 50.5422763,
+    "minlon": 15.7288466,
+    "maxlat": 50.5530924,
+    "maxlon": 15.7407675
+  },
+  "tags": {
+    "complete": "no",
+    "distance": "4.8",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "[Z] NS Mravenčí stezkou",
+    "network": "lwn",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4110145,
+  "bounds": {
+    "minlat": 50.5553674,
+    "minlon": 15.3708828,
+    "maxlat": 50.5850771,
+    "maxlon": 15.3942521
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "major",
+    "name": "[Ž] Na Cikánce - Podkamínky",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4118811,
+  "bounds": {
+    "minlat": 50.6680738,
+    "minlon": 15.4012742,
+    "maxlat": 50.6860236,
+    "maxlon": 15.4529880
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "major",
+    "name": "[Ž] Vysocký okruh",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4125771,
+  "bounds": {
+    "minlat": 50.6454066,
+    "minlon": 15.3712548,
+    "maxlat": 50.6656650,
+    "maxlon": 15.4608874
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_yellow": "major",
+    "name": "[Ž] Poniklá - Roztoky u Semil",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4125836,
+  "bounds": {
+    "minlat": 50.6635534,
+    "minlon": 15.4203939,
+    "maxlat": 50.6697044,
+    "maxlon": 15.4471970
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_green": "major",
+    "name": "[Z] Roprachtice - Jilem",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4146416,
+  "bounds": {
+    "minlat": 50.5305424,
+    "minlon": 15.3304055,
+    "maxlat": 50.6031440,
+    "maxlon": 15.3736610
+  },
+  "tags": {
+    "complete": "no",
+    "kct_blue": "major",
+    "name": "[M] Lomnice nad Popelkou - Semily",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4146515,
+  "bounds": {
+    "minlat": 50.6021977,
+    "minlon": 15.3014979,
+    "maxlat": 50.6183241,
+    "maxlon": 15.3344962
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "major",
+    "name": "[Ž] Semily - U Krkavčí skály",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4146633,
+  "bounds": {
+    "minlat": 50.6798565,
+    "minlon": 15.3222182,
+    "maxlat": 50.6935344,
+    "maxlon": 15.4014476
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Vysoké nad Jizerou - Navarov",
+    "fixme": "Prodloužení v Návarově (po přeložce modré k řece) je potřeba zmapovat",
+    "kct_green": "major",
+    "network": "rwn",
+    "note:cs": "[Z] Vysoké nad Jizerou - Navarov",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4146634,
+  "bounds": {
+    "minlat": 50.6289848,
+    "minlon": 15.3396745,
+    "maxlat": 50.6860236,
+    "maxlon": 15.4014092
+  },
+  "tags": {
+    "complete": "no",
+    "kct_green": "major",
+    "name": "[Z] Vysoké nad Jizerou - Bodbozkov",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4148072,
+  "bounds": {
+    "minlat": 50.6183027,
+    "minlon": 15.3014979,
+    "maxlat": 50.6199344,
+    "maxlon": 15.3031225
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_green": "peak",
+    "name": "Krkavčí skála",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4148073,
+  "bounds": {
+    "minlat": 50.6023013,
+    "minlon": 15.3344962,
+    "maxlat": 50.6249255,
+    "maxlon": 15.3647415
+  },
+  "tags": {
+    "complete": "no",
+    "kct_blue": "major",
+    "name": "[M] Semily - Příkrý (bus)",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4148074,
+  "bounds": {
+    "minlat": 50.6001001,
+    "minlon": 15.3344962,
+    "maxlat": 50.6253285,
+    "maxlon": 15.3588302
+  },
+  "tags": {
+    "complete": "no",
+    "kct_green": "major",
+    "name": "[Z] Semily - Sejkorská kaple",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4148075,
+  "bounds": {
+    "minlat": 50.6023013,
+    "minlon": 15.3216869,
+    "maxlat": 50.6805702,
+    "maxlon": 15.3468414
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Semily - Navarov (zříc.)",
+    "kct_yellow": "major",
+    "network": "rwn",
+    "note:cs": "[Ž] Semily - Navarov",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4155083,
+  "bounds": {
+    "minlat": 50.4947639,
+    "minlon": 15.5128550,
+    "maxlat": 50.6108630,
+    "maxlon": 15.5692126
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_red": "major",
+    "name": "[Č] Nová Paka - Horní Branná",
+    "network": "rwn",
+    "note": "[Č] Nová Paka - Horní Branná",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0429",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4219761,
+  "bounds": {
+    "minlat": 50.5799193,
+    "minlon": 15.9121866,
+    "maxlat": 50.6003623,
+    "maxlon": 15.9458999
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "local",
+    "name": "Voletinský okruh 8,4 km",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4263501,
+  "bounds": {
+    "minlat": 50.6024923,
+    "minlon": 15.8885010,
+    "maxlat": 50.6395112,
+    "maxlon": 15.9529746
+  },
+  "tags": {
+    "complete": "yes",
+    "educational": "yes",
+    "from": "objekt T-S 82",
+    "kct_green": "learning",
+    "name": "[Z] NS Opevněné Trutnovsko",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "to": "objekt T-S 63 v Libči",
+    "type": "route",
+    "website": "https://www.stachelberg.cz/areal/naucna-stezka/"
+  }
+},
+{
+  "type": "relation",
+  "id": 4428896,
+  "bounds": {
+    "minlat": 50.5597222,
+    "minlon": 15.9799744,
+    "maxlat": 50.5678721,
+    "maxlon": 15.9833996
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "vyhlídka Čížkovy kameny",
+    "kct_green": "peak",
+    "name": "[Z] Odbočka Čížkovy kameny",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4568763,
+  "bounds": {
+    "minlat": 50.8158742,
+    "minlon": 15.6403202,
+    "maxlat": 50.8467930,
+    "maxlon": 15.6796058
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Sobieszów - Podgórzyn Górny",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4578060,
+  "bounds": {
+    "minlat": 50.6340623,
+    "minlon": 15.3009427,
+    "maxlat": 50.6787935,
+    "maxlon": 15.3332273
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Návarov;Jesenný;Spálov",
+    "kct_red": "major",
+    "name": "Palackého stezka",
+    "network": "nwn",
+    "note:cs": "[Č] Palackého stezka",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4596026,
+  "bounds": {
+    "minlat": 50.7202423,
+    "minlon": 14.2341918,
+    "maxlat": 50.8878171,
+    "maxlon": 15.4255769
+  },
+  "tags": {
+    "from": "Schmilka/Hřensko",
+    "name": "Internationaler Bergwanderweg Eisenach–Budapest (Tschechien West)",
+    "name:cs": "Mezinárodní horská turistická trasa Eisenach–Budapešt (Česko západ)",
+    "name:de": "Internationaler Bergwanderweg Eisenach–Budapest (Tschechien West)",
+    "name:en": "International friendship trail Eisenach–Budapest (Czech west)",
+    "name:hu": "Barátság nevű nemzetközi turista út Eisenach–Budapest (Csehország nyugati)",
+    "name:pl": "Międzynarodowy Górski Szlak Przyjaźni Eisenach–Budapeszt (Czechy zachód)",
+    "name:sk": "Medzinárodná horská turistická pesia trasa Eisenach–Budapešt (Česká západné)",
+    "network": "iwn",
+    "note": "einschließlich Kontrollpunkte",
+    "osmc:note": "BC",
+    "osmc:symbol": "none:white::EB",
+    "ref": "EB",
+    "roundtrip": "no",
+    "route": "hiking",
+    "symbol": "rotes \"EB\" unter rotem Gipfel in rotem Rahmen",
+    "to": "Harrachov/Jakuszyce",
+    "type": "route",
+    "wikidata": "Q880680",
+    "wikipedia": "de:Internationaler Bergwanderweg der Freundschaft Eisenach–Budapest"
+  }
+},
+{
+  "type": "relation",
+  "id": 4621732,
+  "bounds": {
+    "minlat": 50.0964264,
+    "minlon": 15.4157124,
+    "maxlat": 50.9911356,
+    "maxlon": 16.9579634
+  },
+  "tags": {
+    "comment": "symbol currently not used in some countries, but the relation is not historic",
+    "complete": "yes",
+    "from": "Harrachov/Jakuszyce",
+    "historic": "no",
+    "name": "Internationaler Bergwanderweg Eisenach–Budapest (Polen West)",
+    "name:cs": "Mezinárodní horská turistická trasa Eisenach–Budapešt (Polsko západ)",
+    "name:de": "Internationaler Bergwanderweg Eisenach–Budapest (Polen West)",
+    "name:en": "International friendship trail Eisenach–Budapest (Poland west)",
+    "name:hu": "Barátság nevű nemzetközi turista út Eisenach–Budapest (Lengyelország nyugati)",
+    "name:pl": "Międzynarodowy Górski Szlak Przyjaźni Eisenach–Budapeszt (Polska zachód)",
+    "name:sk": "Medzinárodná horská turistická pesia trasa Eisenach–Budapešt (Poľsko západné)",
+    "network": "iwn",
+    "note": "symbol zastąpiony E3",
+    "osmc:note": "EB",
+    "osmc:symbol": "red:white::EB",
+    "ref": "EB",
+    "roundtrip": "no",
+    "route": "hiking",
+    "symbol": "rotes \"EB\" unter rotem Gipfel in rotem Rahmen",
+    "to": "Boboszów/Dolní Lipka",
+    "type": "route",
+    "wiki:symbol": "EB-sign.svg",
+    "wikidata": "Q880680",
+    "wikipedia": "pl:Międzynarodowy Górski Szlak Przyjaźni Eisenach – Budapeszt"
+  }
+},
+{
+  "type": "relation",
+  "id": 4753164,
+  "bounds": {
+    "minlat": 50.6180115,
+    "minlon": 15.5051401,
+    "maxlat": 50.6182137,
+    "maxlon": 15.5067075
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_red": "interesting_object",
+    "name": "ke zvoničce",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_turned_T",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5286605,
+  "bounds": {
+    "minlat": 50.8368603,
+    "minlon": 15.6843171,
+    "maxlat": 50.8650125,
+    "maxlon": 15.7121444
+  },
+  "tags": {
+    "colour": "blue",
+    "complete": "yes",
+    "from": "Cieplice",
+    "name": "Cieplice - Marczyce",
+    "network": "rwn",
+    "operator": "PTTK Jelenia Góra",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "source": "GPS survey 15.06.2015",
+    "time": "01:00",
+    "to": "Marczyce",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5286606,
+  "bounds": {
+    "minlat": 50.8351342,
+    "minlon": 15.7121444,
+    "maxlat": 50.8420358,
+    "maxlon": 15.7234448
+  },
+  "tags": {
+    "colour": "blue",
+    "complete": "yes",
+    "from": "Marczyce",
+    "name": "Marczyce - Grodna",
+    "network": "rwn",
+    "operator": "PTTK Jelenia Góra",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "source": "GPS survey 15.06.2015",
+    "time": "00:45",
+    "to": "Grodna",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5372180,
+  "bounds": {
+    "minlat": 50.6879227,
+    "minlon": 15.8234041,
+    "maxlat": 50.7470951,
+    "maxlon": 16.0021903
+  },
+  "tags": {
+    "colour": "blue",
+    "complete": "yes",
+    "name": "Przełęcz Okraj – Lubawka",
+    "network": "rwn",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5437918,
+  "bounds": {
+    "minlat": 50.7906661,
+    "minlon": 15.5096946,
+    "maxlat": 50.7948731,
+    "maxlon": 15.5146063
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Górna stacja kolei linowej - Graniczna Łąka",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5602354,
+  "bounds": {
+    "minlat": 50.7427510,
+    "minlon": 15.6476722,
+    "maxlat": 50.7520931,
+    "maxlon": 15.6532128
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Čertův důl",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS Čertova strouha",
+    "network": "lwn",
+    "note": "NS Čertův důl",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5663111,
+  "bounds": {
+    "minlat": 50.7482697,
+    "minlon": 15.7437154,
+    "maxlat": 50.7830334,
+    "maxlon": 15.7629374
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Karpacz PKP - Schronisko PTTK nad Łomniczką",
+    "network": "rwn",
+    "operator": "PTTK Jelenia Góra",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5722752,
+  "bounds": {
+    "minlat": 50.7630990,
+    "minlon": 15.4442978,
+    "maxlat": 50.7707286,
+    "maxlon": 15.4518898
+  },
+  "tags": {
+    "complete": "no",
+    "kct_blue": "local",
+    "name": "Místní okruh Harrachov",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5744809,
+  "bounds": {
+    "minlat": 50.7348473,
+    "minlon": 15.6973937,
+    "maxlat": 50.7397584,
+    "maxlon": 15.7288299
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Luční bouda - Obří sedlo",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS Dědictví doby ledové",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5745471,
+  "bounds": {
+    "minlat": 50.7291674,
+    "minlon": 15.4788216,
+    "maxlat": 50.7465069,
+    "maxlon": 15.4980175
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_red": "local",
+    "name": "[Č] místní okruh Rokytno - Horní Domky",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5750449,
+  "bounds": {
+    "minlat": 50.5824571,
+    "minlon": 15.8249385,
+    "maxlat": 50.6040972,
+    "maxlon": 15.8554174
+  },
+  "tags": {
+    "complete": "yes",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS okolo Pekelského vrchu",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5850799,
+  "bounds": {
+    "minlat": 50.6562905,
+    "minlon": 15.9049005,
+    "maxlat": 50.8878217,
+    "maxlon": 16.1271892
+  },
+  "tags": {
+    "colour": "yellow",
+    "complete": "yes",
+    "name": "Marciszów PKP - Łączna",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5985704,
+  "bounds": {
+    "minlat": 50.6397441,
+    "minlon": 15.3365985,
+    "maxlat": 50.6538969,
+    "maxlon": 15.3595661
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Bozkov;Údolí Vošmendy",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS Údolím Vošmendy",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5986610,
+  "bounds": {
+    "minlat": 50.6001203,
+    "minlon": 15.3347403,
+    "maxlat": 50.6190734,
+    "maxlon": 15.3608107
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_blue": "local",
+    "name": "[M] Semily - Nouzov",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5986611,
+  "bounds": {
+    "minlat": 50.6023013,
+    "minlon": 15.3081685,
+    "maxlat": 50.6265115,
+    "maxlon": 15.3415080
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "local",
+    "name": "[Ž] Semily - Sejkorská kaple - Bitouchov",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5987446,
+  "bounds": {
+    "minlat": 50.5912105,
+    "minlon": 15.3051367,
+    "maxlat": 50.6068731,
+    "maxlon": 15.3347639
+  },
+  "tags": {
+    "complete": "no",
+    "kct_green": "local",
+    "name": "[Z] Semily - Na Rovném",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5987447,
+  "bounds": {
+    "minlat": 50.5895774,
+    "minlon": 15.2784531,
+    "maxlat": 50.6061260,
+    "maxlon": 15.3344962
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Semily - Komárov",
+    "kct_yellow": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5990716,
+  "bounds": {
+    "minlat": 50.5884239,
+    "minlon": 15.5325659,
+    "maxlat": 50.5926908,
+    "maxlon": 15.5404744
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "U Mlejna",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS U Mlejna",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6133808,
+  "bounds": {
+    "minlat": 50.7341221,
+    "minlon": 15.6051249,
+    "maxlat": 50.7488687,
+    "maxlon": 15.7288299
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "u Dívčí lávky;Obří sedlo",
+    "kct_blue": "major",
+    "name": "[M] U Dívčí lávky - Obří sedlo",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1950",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6133813,
+  "bounds": {
+    "minlat": 50.7252820,
+    "minlon": 15.5723727,
+    "maxlat": 50.7345332,
+    "maxlon": 15.6977025
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Labská bouda - Horní Mísečky vlek",
+    "kct_red": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0402",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6177255,
+  "bounds": {
+    "minlat": 50.7202423,
+    "minlon": 14.5698113,
+    "maxlat": 50.8643982,
+    "maxlon": 15.4255769
+  },
+  "tags": {
+    "name": "European long distance path E3 - part Czech Republic, North East",
+    "name:cs": "Evropská dálková trasa E3, Česko, Severovýchod",
+    "name:de": "Europäischer Fernwanderweg E3, Tschechien (Nordost)",
+    "network": "iwn",
+    "operator": "European Ramblers Association",
+    "osmc:symbol": "blue:blue::E3:yellow",
+    "ref": "E3",
+    "ref:sk": "E3-CR",
+    "route": "hiking",
+    "type": "route",
+    "website": "http://www.era-ewv-ferp.com/index.php?topmenu_id=29&id=29&page_id=102&module=text",
+    "wiki:symbol": "E 3 sign.jpg",
+    "wikidata": "Q606415",
+    "wikipedia": "cs:Evropská dálková trasa E3"
+  }
+},
+{
+  "type": "relation",
+  "id": 6182030,
+  "bounds": {
+    "minlat": 50.5294838,
+    "minlon": 15.3735577,
+    "maxlat": 50.6089601,
+    "maxlon": 15.5062526
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Lomnice nad Popelkou;Jilemnice",
+    "kct_red": "major",
+    "name": "[Č] Jilemnice - Lomnice nad Popelkou",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0351",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6247832,
+  "bounds": {
+    "minlat": 50.5634714,
+    "minlon": 15.9016011,
+    "maxlat": 50.6291922,
+    "maxlon": 15.9202060
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Babí - Nové dvory - Trutnov",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS Babí - Nové Dvory",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6247833,
+  "bounds": {
+    "minlat": 50.5535596,
+    "minlon": 15.9044729,
+    "maxlat": 50.5606981,
+    "maxlon": 15.9169697
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Trutnov",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "naučná stezka Den bitvy u Trutnova 27. června 1866",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "short_name": "NS Den bitvy u Trutnova 27. 6. 1866",
+    "sorting_name": "Den bitvy u Trutnova 27. června 1866",
+    "type": "route",
+    "wikidata": "Q105037561"
+  }
+},
+{
+  "type": "relation",
+  "id": 6282266,
+  "bounds": {
+    "minlat": 50.7170049,
+    "minlon": 15.4489365,
+    "maxlat": 50.7198921,
+    "maxlon": 15.4534871
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Vyhlídka Stráž",
+    "kct_red": "peak",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6282999,
+  "bounds": {
+    "minlat": 50.7248098,
+    "minlon": 15.6056996,
+    "maxlat": 50.7280927,
+    "maxlon": 15.6094988
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Špindlerův mlýn",
+    "kct_green": "local",
+    "name": "[Z] Špindlerův mlýn - okruh",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6285305,
+  "bounds": {
+    "minlat": 50.7311964,
+    "minlon": 15.5619202,
+    "maxlat": 50.7450569,
+    "maxlon": 15.6070313
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Medvědín okruh",
+    "name": "Špindlmanova mise",
+    "network": "lwn",
+    "osmc:symbol": "blue:none:none",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6285306,
+  "bounds": {
+    "minlat": 50.7276000,
+    "minlon": 15.5632649,
+    "maxlat": 50.7451485,
+    "maxlon": 15.6069641
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Medvědí okruh",
+    "name": "Medvědí okruh",
+    "network": "lwn",
+    "osmc:symbol": "red:none:none",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6290595,
+  "bounds": {
+    "minlat": 50.7049974,
+    "minlon": 15.8018938,
+    "maxlat": 50.7450666,
+    "maxlon": 15.8289517
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Pomezní boudy;Dolní Malá Úpa",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "Pohádková NS",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6290596,
+  "bounds": {
+    "minlat": 50.7238453,
+    "minlon": 15.8139065,
+    "maxlat": 50.7465946,
+    "maxlon": 15.8246904
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pomezní boudy",
+    "kct_blue": "wheelchair",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6291227,
+  "bounds": {
+    "minlat": 50.6894349,
+    "minlon": 15.7628440,
+    "maxlat": 50.7050391,
+    "maxlon": 15.7695145
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Velká Úpa - Nad Portášovými boudami",
+    "kct_blue": "local",
+    "network": "lwn",
+    "note": "není liniové značení",
+    "operator": "KRNAP",
+    "osmc:symbol": "blue:white:blue_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6291228,
+  "bounds": {
+    "minlat": 50.6936880,
+    "minlon": 15.7391445,
+    "maxlat": 50.7238464,
+    "maxlon": 15.8196423
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Malá Úpa kostel - Pec pod Sněžkou",
+    "kct_red": "local",
+    "network": "lwn",
+    "operator": "KRNAP",
+    "osmc:symbol": "red:white:red_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6295425,
+  "bounds": {
+    "minlat": 50.6906495,
+    "minlon": 15.7027217,
+    "maxlat": 50.7019301,
+    "maxlon": 15.7305115
+  },
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "local",
+    "name": "Pec pod Sněžkou - Zelený důl - Jelení louky",
+    "network": "lwn",
+    "note": "není liniové značení",
+    "operator": "KRNAP",
+    "osmc:symbol": "yellow:white:yellow_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6295426,
+  "bounds": {
+    "minlat": 50.6863550,
+    "minlon": 15.7184656,
+    "maxlat": 50.7010599,
+    "maxlon": 15.7356017
+  },
+  "tags": {
+    "complete": "no",
+    "kct_red": "local",
+    "name": "Pec pod Sněžkou",
+    "network": "lwn",
+    "operator": "KRNAP",
+    "osmc:symbol": "red:white:red_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6295427,
+  "bounds": {
+    "minlat": 50.6780937,
+    "minlon": 15.7133005,
+    "maxlat": 50.6883106,
+    "maxlon": 15.7280667
+  },
+  "tags": {
+    "complete": "no",
+    "kct_green": "local",
+    "name": "Pec pod Sněžkou",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6296213,
+  "bounds": {
+    "minlat": 50.6266592,
+    "minlon": 15.7558188,
+    "maxlat": 50.6326877,
+    "maxlon": 15.7840493
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Janské Lázně - Hoffmannova bouda",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS Střední hřeben",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6316543,
+  "bounds": {
+    "minlat": 50.6383545,
+    "minlon": 15.3110992,
+    "maxlat": 50.6386096,
+    "maxlon": 15.3112468
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_red": "interesting_object",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_turned_T",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6421481,
+  "bounds": {
+    "minlat": 50.6058550,
+    "minlon": 15.9834594,
+    "maxlat": 50.6867546,
+    "maxlon": 16.0217283
+  },
+  "tags": {
+    "colour": "green",
+    "from": "Przełęcz Lubawska",
+    "name": "Przełęcz Lubawska – Okrzeszyn granica",
+    "network": "rwn",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "to": "Okrzeszyn granica",
+    "type": "route",
+    "via": "Bogoria;Jański Wierch"
+  }
+},
+{
+  "type": "relation",
+  "id": 6430614,
+  "bounds": {
+    "minlat": 50.6592593,
+    "minlon": 16.0031562,
+    "maxlat": 50.6661245,
+    "maxlon": 16.0187356
+  },
+  "tags": {
+    "network": "lwn",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6430660,
+  "bounds": {
+    "minlat": 50.6127587,
+    "minlon": 16.0023868,
+    "maxlat": 50.6583480,
+    "maxlon": 16.0968427
+  },
+  "tags": {
+    "colour": "blue",
+    "name": "Przełęcz Chełmska - Nad Doliną Beczkowskiego Potoku",
+    "network": "rwn",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6455279,
+  "bounds": {
+    "minlat": 50.7424747,
+    "minlon": 15.6014638,
+    "maxlat": 50.7724283,
+    "maxlon": 15.6118265
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "U Dívčí lávky;Petrovka",
+    "hiking": "yes",
+    "kct_yellow": "major",
+    "name": "[Ž] U Dívčí lávky - Petrovka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7362",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6519749,
+  "bounds": {
+    "minlat": 50.4607980,
+    "minlon": 15.8498161,
+    "maxlat": 50.5666375,
+    "maxlon": 15.9773402
+  },
+  "tags": {
+    "network": "lwn",
+    "osmc:symbol": "red:red:white_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6601212,
+  "bounds": {
+    "minlat": 50.8631127,
+    "minlon": 15.8652701,
+    "maxlat": 50.8696431,
+    "maxlon": 15.8727575
+  },
+  "tags": {
+    "colour": "red",
+    "name": "Szwajcarka - Sokolik Duży",
+    "network": "rwn",
+    "osmc:symbol": "red:white:red_bar",
+    "roundtrip": "no",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6685710,
+  "bounds": {
+    "minlat": 50.8265183,
+    "minlon": 15.8217403,
+    "maxlat": 50.8521706,
+    "maxlon": 15.8693938
+  },
+  "tags": {
+    "colour": "blue",
+    "name": "Karpniki - Bukowiec",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route",
+    "via": "Krogulec"
+  }
+},
+{
+  "type": "relation",
+  "id": 6685716,
+  "bounds": {
+    "minlat": 50.6911093,
+    "minlon": 15.8589982,
+    "maxlat": 50.7152645,
+    "maxlon": 15.9287954
+  },
+  "tags": {
+    "name": "Miszkowice - Horní Albeřice (CZ/PL)",
+    "network": "rwn",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7823159,
+  "bounds": {
+    "minlat": 50.7527525,
+    "minlon": 15.7922158,
+    "maxlat": 50.7980797,
+    "maxlon": 15.8359141
+  },
+  "tags": {
+    "colour": "yellow",
+    "complete": "no",
+    "from": "Kowary",
+    "name": "Skalny Stół - Kowary",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "roundtrip": "no",
+    "route": "hiking",
+    "to": "Skalny Stół",
+    "type": "route",
+    "via": "Budniki"
+  }
+},
+{
+  "type": "relation",
+  "id": 8162045,
+  "bounds": {
+    "minlat": 50.7623947,
+    "minlon": 15.6339326,
+    "maxlat": 50.8183496,
+    "maxlon": 15.6796058
+  },
+  "tags": {
+    "colour": "blue",
+    "name": "Podgórzyn Górny - Przełęcz Karkonoska",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 8213537,
+  "bounds": {
+    "minlat": 50.7651560,
+    "minlon": 15.4514214,
+    "maxlat": 50.7726570,
+    "maxlon": 15.5062128
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Mumlavský vodopád;Krakonošova snídaně",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS Živá mrtvá Mumlava",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 8238284,
+  "bounds": {
+    "minlat": 50.7291674,
+    "minlon": 15.4785030,
+    "maxlat": 50.7463494,
+    "maxlon": 15.4980175
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Hoření domky;hotel Starý mlýn",
+    "educational": "yes",
+    "kct_green": "learning",
+    "name": "NS Krakonoš a lyžníci",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 8297093,
+  "bounds": {
+    "minlat": 50.6716183,
+    "minlon": 15.8607519,
+    "maxlat": 50.6920998,
+    "maxlon": 15.9834594
+  },
+  "tags": {
+    "colour": "green",
+    "from": "Roh hranic",
+    "name": "Roh hranic – Przełęcz Lubawska",
+    "network": "rwn",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "to": "Przełęcz Lubawska",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 8462573,
+  "bounds": {
+    "minlat": 50.7556764,
+    "minlon": 15.7744709,
+    "maxlat": 50.7663756,
+    "maxlon": 15.7808675
+  },
+  "tags": {
+    "colour": "yellow",
+    "complete": "no",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 8464045,
+  "bounds": {
+    "minlat": 50.7549934,
+    "minlon": 15.7619967,
+    "maxlat": 50.7626984,
+    "maxlon": 15.7754236
+  },
+  "tags": {
+    "colour": "red",
+    "complete": "no",
+    "from": "Budniki",
+    "network": "lwn",
+    "osmc:symbol": "red:white:red_backslash",
+    "roundtrip": "yes",
+    "route": "hiking",
+    "to": "Budniki",
+    "type": "route",
+    "via": "Krucze Skały"
+  }
+},
+{
+  "type": "relation",
+  "id": 8464046,
+  "bounds": {
+    "minlat": 50.7600244,
+    "minlon": 15.7685392,
+    "maxlat": 50.7602581,
+    "maxlon": 15.7695041
+  },
+  "tags": {
+    "colour": "blue",
+    "complete": "no",
+    "network": "lwn",
+    "osmc:symbol": "blue:white:blue_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9051188,
+  "bounds": {
+    "minlat": 50.6048779,
+    "minlon": 16.0082763,
+    "maxlat": 50.6129569,
+    "maxlon": 16.0254344
+  },
+  "tags": {
+    "colour": "red",
+    "name": "Okrzeszyn - Przejście graniczne",
+    "network": "rwn",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9068699,
+  "bounds": {
+    "minlat": 50.6031440,
+    "minlon": 15.3009427,
+    "maxlat": 50.6341112,
+    "maxlon": 15.3348069
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_red": "major",
+    "name": "[Č] Semily (muz.) - Spálov (žst.)",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_bar",
+    "ref": "0435",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9069201,
+  "bounds": {
+    "minlat": 50.6860236,
+    "minlon": 15.3851116,
+    "maxlat": 50.7612302,
+    "maxlon": 15.4157519
+  },
+  "tags": {
+    "complete": "no",
+    "kct_blue": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "source": "survey",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9431515,
+  "bounds": {
+    "minlat": 50.5676508,
+    "minlon": 16.0122039,
+    "maxlat": 50.5752504,
+    "maxlon": 16.0219232
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Markoušovice;Markoušovická rozhledna",
+    "kct_yellow": "major",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9434744,
+  "bounds": {
+    "minlat": 50.7691138,
+    "minlon": 15.6087910,
+    "maxlat": 50.7708092,
+    "maxlon": 15.6177737
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Moravská bouda;Pod Petrovou boudou",
+    "educational": "yes",
+    "hiking": "yes",
+    "kct_green": "learning",
+    "name": "NS Krkonošská zvířata",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9448360,
+  "bounds": {
+    "minlat": 50.6158416,
+    "minlon": 15.3098600,
+    "maxlat": 50.6161321,
+    "maxlon": 15.3109984
+  },
+  "tags": {
+    "complete": "yes",
+    "destination": "Peretka",
+    "kct_yellow": "peak",
+    "name": "[Ž] Kamenického stezka - Peretka (vyhl.), odbočka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_triangle",
+    "route": "hiking",
+    "to": "Peretka",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9448361,
+  "bounds": {
+    "minlat": 50.6169115,
+    "minlon": 15.3104990,
+    "maxlat": 50.6170009,
+    "maxlon": 15.3107451
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Jiřička",
+    "kct_yellow": "peak",
+    "name": "[Ž] Kamenického stezka - Jiřička (vyhl.), odbočka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_triangle",
+    "route": "hiking",
+    "to": "Jiřička",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9819610,
+  "bounds": {
+    "minlat": 50.8376681,
+    "minlon": 15.8867022,
+    "maxlat": 50.8448171,
+    "maxlon": 15.9084178
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Strużnica - Starościńskie skały",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "symbol": "czarny szlak pieszy",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9976099,
+  "bounds": {
+    "minlat": 50.7063241,
+    "minlon": 15.8464008,
+    "maxlat": 50.7485571,
+    "maxlon": 16.0034456
+  },
+  "tags": {
+    "colour": "green",
+    "complete": "no",
+    "name": "Rozdroże pod Sulicą - Lubawka",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "time": "3h 45'",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10443826,
+  "bounds": {
+    "minlat": 50.7143666,
+    "minlon": 15.8351373,
+    "maxlat": 50.7300473,
+    "maxlon": 15.9037888
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Jarkowice - Obniżenie za Łysociną",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10445066,
+  "bounds": {
+    "minlat": 50.7090156,
+    "minlon": 15.8492634,
+    "maxlat": 50.7159195,
+    "maxlon": 15.8814378
+  },
+  "tags": {
+    "colour": "red",
+    "complete": "yes",
+    "name": "Schronisko Srebrny Potok - Pod Albeřickým vrchem",
+    "network": "rwn",
+    "operator": "pl:PTTK",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10464588,
+  "bounds": {
+    "minlat": 50.5800060,
+    "minlon": 15.5376861,
+    "maxlat": 50.5814656,
+    "maxlon": 15.5429803
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_yellow": "major",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10550258,
+  "bounds": {
+    "minlat": 50.7159195,
+    "minlon": 15.8624449,
+    "maxlat": 50.7485504,
+    "maxlon": 15.8914194
+  },
+  "tags": {
+    "colour": "red",
+    "name": "Rozdroże Kowarskie - Schronisko Srebrny Potok",
+    "network": "rwn",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10578418,
+  "bounds": {
+    "minlat": 50.6722626,
+    "minlon": 15.9987812,
+    "maxlat": 50.7347172,
+    "maxlon": 16.1571954
+  },
+  "tags": {
+    "colour": "green",
+    "complete": "yes",
+    "name": "Lubawka - Różana",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10746578,
+  "bounds": {
+    "minlat": 50.8024646,
+    "minlon": 15.4009920,
+    "maxlat": 50.8170857,
+    "maxlon": 15.4329667
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Polana Jakuszycka ↔ Rozdroże pod Działem Izerskim",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10987474,
+  "bounds": {
+    "minlat": 50.5987492,
+    "minlon": 16.0152286,
+    "maxlat": 50.6634535,
+    "maxlon": 16.1038173
+  },
+  "tags": {
+    "colour": "green",
+    "from": "Okrzeszyn granica",
+    "name": "Okrzeszyn granica – Strażnicze Naroże",
+    "network": "rwn",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "to": "Strażnicze Naroże",
+    "type": "route",
+    "via": "Przełęcz Chełmska"
+  }
+},
+{
+  "type": "relation",
+  "id": 11084525,
+  "bounds": {
+    "minlat": 50.7828936,
+    "minlon": 15.9959227,
+    "maxlat": 50.8522392,
+    "maxlon": 16.0238520
+  },
+  "tags": {
+    "colour": "red",
+    "name": "Kamienna Góra - Marciszów",
+    "network": "rwn",
+    "operator": "PTTK Kamienna Góra",
+    "osmc:symbol": "red:white:red_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 11157620,
+  "bounds": {
+    "minlat": 50.7752277,
+    "minlon": 15.6897184,
+    "maxlat": 50.7936483,
+    "maxlon": 15.7156405
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Borowice - Rówienka",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 11743907,
+  "bounds": {
+    "minlat": 50.8631236,
+    "minlon": 15.4391786,
+    "maxlat": 50.9509139,
+    "maxlon": 15.4823335
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Rębiszów - Rozdroże Izerskie",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 11759319,
+  "bounds": {
+    "minlat": 50.8505199,
+    "minlon": 15.6762913,
+    "maxlat": 50.8703307,
+    "maxlon": 15.7119080
+  },
+  "tags": {
+    "colour": "red",
+    "name": "Cieplicki szlak spacerowy",
+    "network": "lwn",
+    "osmc:symbol": "red:white:red_backslash",
+    "route": "hiking",
+    "source": "https://jeleniagora.pl/",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 11785306,
+  "bounds": {
+    "minlat": 50.8253839,
+    "minlon": 15.6056232,
+    "maxlat": 50.8467930,
+    "maxlon": 15.6433240
+  },
+  "tags": {
+    "colour": "blue",
+    "name": "Sobieszów - Polana na Grzybowcu",
+    "network": "rwn",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 11792462,
+  "bounds": {
+    "minlat": 50.7754647,
+    "minlon": 15.9030419,
+    "maxlat": 50.7988816,
+    "maxlon": 15.9577129
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Pisarzowice - Leszczyniec",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 11812041,
+  "bounds": {
+    "minlat": 50.7762899,
+    "minlon": 15.7445116,
+    "maxlat": 50.7780111,
+    "maxlon": 15.7500091
+  },
+  "tags": {
+    "colour": "blue",
+    "distance": "1",
+    "name": "Do Punktu Widokowego Karpatka",
+    "network": "lwn",
+    "osmc:symbol": "blue:white:blue_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 11859324,
+  "bounds": {
+    "minlat": 50.8538910,
+    "minlon": 15.7028532,
+    "maxlat": 50.8548153,
+    "maxlon": 15.7038877
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "rozdroże pod Chmielnikiem- rozdroże Polana",
+    "network": "lwn",
+    "osmc:symbol": "yellow:white:yellow_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 11859325,
+  "bounds": {
+    "minlat": 50.8593816,
+    "minlon": 15.7009133,
+    "maxlat": 50.8737511,
+    "maxlon": 15.7139241
+  },
+  "tags": {
+    "colour": "green",
+    "name": "Do Grobu nieznanego Kapłana",
+    "network": "lwn",
+    "osmc:symbol": "green:white:green_backslash",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 11924939,
+  "bounds": {
+    "minlat": 50.7779176,
+    "minlon": 15.7416889,
+    "maxlat": 50.7798326,
+    "maxlon": 15.7477734
+  },
+  "tags": {
+    "colour": "green",
+    "distance": "1",
+    "name": "Do Punktu Widokowego Karpatka",
+    "network": "lwn",
+    "osmc:symbol": "green:white:green_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 12018381,
+  "bounds": {
+    "minlat": 50.7547128,
+    "minlon": 15.8348846,
+    "maxlat": 50.7675328,
+    "maxlon": 15.8509663
+  },
+  "tags": {
+    "colour": "black",
+    "name": "Podgórze - Żółta Droga",
+    "network": "rwn",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 12115741,
+  "bounds": {
+    "minlat": 50.7392217,
+    "minlon": 15.7064579,
+    "maxlat": 50.7420311,
+    "maxlon": 15.7290843
+  },
+  "tags": {
+    "colour": "blue",
+    "description": "szlak niebieski",
+    "name": "Rozdroże koło Spalonej Strażnicy - Dom Śląski",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 12184976,
+  "bounds": {
+    "minlat": 50.7131681,
+    "minlon": 15.7725219,
+    "maxlat": 50.7435879,
+    "maxlon": 15.7897308
+  },
+  "tags": {
+    "description": "Scenic and silent path with no color markings.",
+    "name": "Chodník biskupa Doubravy",
+    "network": "lcn",
+    "operator": "cz:krnap",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 12283509,
+  "bounds": {
+    "minlat": 50.7303249,
+    "minlon": 15.3051332,
+    "maxlat": 50.7304142,
+    "maxlon": 15.3058844
+  },
+  "tags": {
+    "kct_red": "peak",
+    "name": "[Č] k vyhlídce Terezínka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_triangle",
+    "ref": "0340/LB312",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 12722209,
+  "bounds": {
+    "minlat": 50.7695569,
+    "minlon": 15.8636787,
+    "maxlat": 50.7750592,
+    "maxlon": 15.8673425
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Punkt Widokowy Rudnik",
+    "network": "lwn",
+    "osmc:symbol": "yellow:white:_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 12722467,
+  "bounds": {
+    "minlat": 50.8054983,
+    "minlon": 15.8243382,
+    "maxlat": 50.8093079,
+    "maxlon": 15.8320982
+  },
+  "tags": {
+    "colour": "blue",
+    "name": "Do punktu widokowego Brzeźnik",
+    "network": "lwn",
+    "osmc:symbol": "blue:white:blue_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 13063162,
+  "bounds": {
+    "minlat": 50.8144572,
+    "minlon": 15.8688267,
+    "maxlat": 50.8357972,
+    "maxlon": 15.9034499
+  },
+  "tags": {
+    "colour": "red",
+    "distance": "5.5 km",
+    "name": "Ścieżka Przyrodnicza Janusza Boisse",
+    "network": "lwn",
+    "osmc:symbol": "red:white:red_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 13064753,
+  "bounds": {
+    "minlat": 50.8062974,
+    "minlon": 15.8932499,
+    "maxlat": 50.8074122,
+    "maxlon": 15.8942762
+  },
+  "tags": {
+    "colour": "red",
+    "distance": "0.2 km",
+    "name": "Do punktu widokowego Mała Ostra",
+    "network": "lwn",
+    "osmc:symbol": "red:white:red_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 13237131,
+  "bounds": {
+    "minlat": 50.7583669,
+    "minlon": 15.7485048,
+    "maxlat": 50.7686311,
+    "maxlon": 15.7685392
+  },
+  "tags": {
+    "colour": "blue",
+    "name": "Karpacz, ul. Leśna - Szeroki Most",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 13272305,
+  "bounds": {
+    "minlat": 50.8246179,
+    "minlon": 15.5283997,
+    "maxlat": 50.8508447,
+    "maxlon": 15.5643251
+  },
+  "tags": {
+    "name:pl": "Szlak Waloński - pętla II",
+    "network": "lwn",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 13272306,
+  "bounds": {
+    "minlat": 50.8231668,
+    "minlon": 15.5423835,
+    "maxlat": 50.8439964,
+    "maxlon": 15.5707464
+  },
+  "tags": {
+    "colour": "red",
+    "name": "Szlak Waloński - pętla I",
+    "name:pl": "Szlak Waloński - pętla I",
+    "network": "lwn",
+    "osmc:symbol": "yellow::yellow_diamond",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 14235781,
+  "bounds": {
+    "minlat": 50.6655838,
+    "minlon": 15.5485142,
+    "maxlat": 50.6758015,
+    "maxlon": 15.5627734
+  },
+  "tags": {
+    "ascent": "124",
+    "descent": "124",
+    "distance": "3.4",
+    "name": "Benecká přírodní stezka",
+    "name:de": "Naturlehrpfad Benecko",
+    "network": "lwn",
+    "roundtrip": "yes",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 14295685,
+  "bounds": {
+    "minlat": 50.8317144,
+    "minlon": 15.5781158,
+    "maxlat": 50.8352258,
+    "maxlon": 15.5829936
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Do Punktu Widokowego Złoty Widok",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 14295686,
+  "bounds": {
+    "minlat": 50.8333858,
+    "minlon": 15.5790617,
+    "maxlat": 50.8345458,
+    "maxlon": 15.5803322
+  },
+  "tags": {
+    "colour": "yellow",
+    "name": "Dojście do Jaskini",
+    "network": "rwn",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 15844913,
+  "bounds": {
+    "minlat": 50.8462364,
+    "minlon": 15.6706559,
+    "maxlat": 50.8663458,
+    "maxlon": 15.6844506
+  },
+  "tags": {
+    "colour": "green",
+    "distance": "6.5",
+    "name": "Cieplicki szlak spacerowy Zielony",
+    "network": "lwn",
+    "operator": "Miasto Jelenia Góra",
+    "osmc:symbol": "green:white:green_backslash",
+    "roundtrip": "yes",
+    "route": "hiking",
+    "source": "http://jeleniagora.pl/",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 16177034,
+  "bounds": {
+    "minlat": 50.6215995,
+    "minlon": 15.3052863,
+    "maxlat": 50.6220950,
+    "maxlon": 15.3064779
+  },
+  "tags": {
+    "complete": "yes",
+    "destination": "Bakala",
+    "kct_yellow": "peak",
+    "name": "[Ž] Kamenického stezka - U Bakala (vyhl.), odbočka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_triangle",
+    "route": "hiking",
+    "to": "Bakala",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 16177035,
+  "bounds": {
+    "minlat": 50.6205907,
+    "minlon": 15.3075176,
+    "maxlat": 50.6209062,
+    "maxlon": 15.3080840
+  },
+  "tags": {
+    "complete": "yes",
+    "destination": "Moravská Jiřička",
+    "kct_yellow": "peak",
+    "name": "[Ž] Kamenického stezka - Moravská Jiřička (vyhl.), odbočka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_triangle",
+    "route": "hiking",
+    "to": "Moravská Jiřička",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 16653107,
+  "bounds": {
+    "minlat": 50.7194160,
+    "minlon": 15.8251220,
+    "maxlat": 50.8122234,
+    "maxlon": 15.9089575
+  },
+  "tags": {
+    "colour": "blue",
+    "name": "Bukowiec - Jarkowice",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route",
+    "via": "Kowary;Ogorzelec"
+  }
+},
+{
+  "type": "relation",
+  "id": 16863355,
+  "bounds": {
+    "minlat": 50.7437916,
+    "minlon": 14.9683352,
+    "maxlat": 50.8766032,
+    "maxlon": 15.4347638
+  },
+  "tags": {
+    "colour": "red",
+    "complete": "yes",
+    "distance": "72 km",
+    "from": "Chrastava",
+    "name": "Via Czechia - Severní (6. Jizerské hory)",
+    "network": "nwn",
+    "operator": "Via Czechia",
+    "osmc:symbol": "red:red_diamond:via_czechia",
+    "ref": "VIA-CZE-106",
+    "route": "hiking",
+    "to": "Harrachov",
+    "type": "route",
+    "website": "https://viaczechia.cz/severni-stezka-jizerske-hory/"
+  }
+},
+{
+  "type": "relation",
+  "id": 16863701,
+  "bounds": {
+    "minlat": 50.5631044,
+    "minlon": 15.4347638,
+    "maxlat": 50.7866628,
+    "maxlon": 15.9202060
+  },
+  "tags": {
+    "colour": "red",
+    "complete": "yes",
+    "distance": "70 km",
+    "from": "Harrachov",
+    "name": "Via Czechia - Severní (7. Krkonoše)",
+    "network": "nwn",
+    "operator": "Via Czechia",
+    "osmc:symbol": "red:red_diamond:via_czechia",
+    "ref": "VIA-CZE-107",
+    "route": "hiking",
+    "to": "Trutnov",
+    "type": "route",
+    "website": "https://viaczechia.cz/severni-stezka-krkonose/"
+  }
+},
+{
+  "type": "relation",
+  "id": 16864045,
+  "bounds": {
+    "minlat": 50.4004786,
+    "minlon": 15.9132144,
+    "maxlat": 50.6196932,
+    "maxlon": 16.3253883
+  },
+  "tags": {
+    "complete": "yes",
+    "distance": "93 km",
+    "from": "Trutnov",
+    "name": "Via Czechia - Severní (8. Broumovsko a Kladské pomezí)",
+    "network": "nwn",
+    "operator": "Via Czechia",
+    "ref": "VIA-CZE-108",
+    "route": "hiking",
+    "to": "Dobrošov",
+    "type": "route",
+    "website": "https://viaczechia.cz/severni-stezka-broumovska-vrchovina/"
+  }
+},
+{
+  "type": "relation",
+  "id": 16948649,
+  "bounds": {
+    "minlat": 50.8652353,
+    "minlon": 15.7027201,
+    "maxlat": 50.8665169,
+    "maxlon": 15.7045573
+  },
+  "tags": {
+    "name": "Rozdroże strzelecka Góea- Rozdroże Panorama",
+    "network": "lwn",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 16948650,
+  "bounds": {
+    "minlat": 50.8638861,
+    "minlon": 15.7045573,
+    "maxlat": 50.8652353,
+    "maxlon": 15.7057633
+  },
+  "tags": {
+    "colour": "yellow",
+    "from": "Rozdroże Strzelecka Góra",
+    "name": "Rozdroże Strzelecka Góra- Rozdroże Panorama",
+    "network": "lwn",
+    "route": "hiking",
+    "to": "Rozdroże Panorama",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 17293648,
+  "bounds": {
+    "minlat": 50.8547671,
+    "minlon": 15.9127171,
+    "maxlat": 50.8604475,
+    "maxlon": 15.9173654
+  },
+  "tags": {
+    "colour": "black",
+    "from": "Zamek Bolczów",
+    "name": "Zamek Bolczów - Głaziska Janowickie",
+    "network": "rwn",
+    "operator": "PTTK",
+    "osmc:symbol": "black:white:black_bar",
+    "route": "hiking",
+    "to": "Głaziska Janowickie",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 17963593,
+  "bounds": {
+    "minlat": 50.8129853,
+    "minlon": 15.4916680,
+    "maxlat": 50.8501690,
+    "maxlon": 15.5581856
+  },
+  "tags": {
+    "colour": "#732172",
+    "distance": "24",
+    "name": "Duża Sztaudyngerowska Trasa Turystyczna",
+    "network": "lwn",
+    "operator": "Stowarzyszenie \"PUCH OSTU\"",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 18273094,
+  "bounds": {
+    "minlat": 50.8387489,
+    "minlon": 15.6403202,
+    "maxlat": 50.8467930,
+    "maxlon": 15.6459357
+  },
+  "tags": {
+    "name": "Ścieżka przyrodnicza na Górę Chojnik",
+    "network": "lwn",
+    "ref:ckkp": "DS00887",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 18943232,
+  "bounds": {
+    "minlat": 50.7113766,
+    "minlon": 15.2266584,
+    "maxlat": 50.7429614,
+    "maxlon": 15.3082264
+  },
+  "tags": {
+    "complete": "no",
+    "fixme": "V terénu domapovat: vedení kolem Smržovka dolní n., průtah Tanvaldem, Kostelní ulice",
+    "kct_blue": "local",
+    "name": "Smržovské vyhlídkové okruhy",
+    "network": "lwn",
+    "operator": "cz:Město Smržovka",
+    "osmc:symbol": "blue:white::🍄︎:blue",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 19135321,
+  "bounds": {
+    "minlat": 50.7984191,
+    "minlon": 15.3159740,
+    "maxlat": 50.8143975,
+    "maxlon": 15.3287182
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Jezdecká cesta;Výhled na Souš;Sedlo pod Zámky",
+    "kct_none": "major",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "gray:none",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 19135326,
+  "bounds": {
+    "minlat": 50.8311395,
+    "minlon": 15.2738027,
+    "maxlat": 50.8431529,
+    "maxlon": 15.3250772
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Smědava;Hraniční;Promenádní;Borkoviště",
+    "kct_none": "major",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "gray:none",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 19135330,
+  "bounds": {
+    "minlat": 50.7861595,
+    "minlon": 15.2946583,
+    "maxlat": 50.8077835,
+    "maxlon": 15.3228306
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pod Souší;Souš",
+    "kct_none": "major",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "gray:none",
+    "route": "hiking",
+    "signed_direction": "yes",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 19135331,
+  "bounds": {
+    "minlat": 50.7710485,
+    "minlon": 15.3465968,
+    "maxlat": 50.8115856,
+    "maxlon": 15.3530784
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Horní Polubný;Václavíkova Studánka;Jizerka",
+    "kct_none": "major",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "gray:none",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 19210473,
+  "bounds": {
+    "minlat": 50.6787840,
+    "minlon": 15.3101224,
+    "maxlat": 50.7433954,
+    "maxlon": 15.3307860
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Tanvald;Velké Hamry;Plavy;Návarov",
+    "kct_blue": "major",
+    "name": "Palackého stezka",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 19433435,
+  "bounds": {
+    "minlat": 50.6920005,
+    "minlon": 14.5711835,
+    "maxlat": 50.8716755,
+    "maxlon": 15.5353539
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_none": "major",
+    "name": "Hřebenovka (Liberecký kraj)",
+    "name:de": "Kammweg (Region Liberec)",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:red::Ш:blue",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 19447142,
+  "bounds": {
+    "minlat": 50.7807152,
+    "minlon": 15.3967069,
+    "maxlat": 50.7928708,
+    "maxlon": 15.4130127
+  },
+  "tags": {
+    "kct_red": "local",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_corner",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 19627469,
+  "bounds": {
+    "minlat": 50.7304192,
+    "minlon": 15.3237424,
+    "maxlat": 50.7315185,
+    "maxlon": 15.3249758
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Šulíkova skála (odbočka);Šulíkova skála",
+    "kct_yellow": "peak",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 20189582,
+  "bounds": {
+    "minlat": 50.7117019,
+    "minlon": 15.5620738,
+    "maxlat": 50.7168266,
+    "maxlon": 15.5858007
+  },
+  "tags": {
+    "complete": "no",
+    "destinations": "Labská přehrafa hráz;Pod černou skálou",
+    "kct_yellow": "major",
+    "name": "[Ž] Labská přehrada hráz. - Pod Černou skálou",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "140007",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 20442463,
+  "bounds": {
+    "minlat": 50.6525732,
+    "minlon": 15.3144078,
+    "maxlat": 50.6526950,
+    "maxlon": 15.3147169
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_green": "interesting_object",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_turned_T",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 20442464,
+  "bounds": {
+    "minlat": 50.6761918,
+    "minlon": 15.3172218,
+    "maxlat": 50.6775369,
+    "maxlon": 15.3192969
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_none": "interesting_object",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "gray:none",
+    "route": "hiking",
+    "signed_direction": "yes",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 20744051,
+  "bounds": {
+    "minlat": 50.6397441,
+    "minlon": 15.3365985,
+    "maxlat": 50.6538969,
+    "maxlon": 15.3595552
+  },
+  "tags": {
+    "complete": "yes",
+    "destinations": "Bozkov;Údolí Vošmendy",
+    "kct_green": "major",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 20744052,
+  "bounds": {
+    "minlat": 50.6538906,
+    "minlon": 15.3573592,
+    "maxlat": 50.6557352,
+    "maxlon": 15.3585050
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_blue": "interesting_object",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_turned_T",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 20744062,
+  "bounds": {
+    "minlat": 50.6289763,
+    "minlon": 15.3138904,
+    "maxlat": 50.6389052,
+    "maxlon": 15.3398747
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_none": "major",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "gray:none",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 20744099,
+  "bounds": {
+    "minlat": 50.6336700,
+    "minlon": 15.2557585,
+    "maxlat": 50.6430476,
+    "maxlon": 15.3015349
+  },
+  "tags": {
+    "complete": "yes",
+    "kct_none": "major",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "gray:none",
+    "route": "hiking",
+    "signed_direction": "yes",
+    "type": "route"
+  }
+}
+
+  ]
+}

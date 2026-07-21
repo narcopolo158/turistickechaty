@@ -1,0 +1,2807 @@
+{
+  "zdroj": "OpenStreetMap Overpass (route=hiking, bbox Krkonoš) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)",
+  "stavOsmDat": "2026-07-21",
+  "pocetTras": 280,
+  "trasy": [
+    {
+      "osmId": 64341,
+      "url": "https://www.openstreetmap.org/relation/64341",
+      "nazev": null,
+      "ref": "1894",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64347,
+      "url": "https://www.openstreetmap.org/relation/64347",
+      "nazev": null,
+      "ref": "4286",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 75407,
+      "url": "https://www.openstreetmap.org/relation/75407",
+      "nazev": null,
+      "ref": "1661",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 75415,
+      "url": "https://www.openstreetmap.org/relation/75415",
+      "nazev": null,
+      "ref": "1663",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 75417,
+      "url": "https://www.openstreetmap.org/relation/75417",
+      "nazev": null,
+      "ref": "6986",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 236869,
+      "url": "https://www.openstreetmap.org/relation/236869",
+      "nazev": null,
+      "ref": "1895",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 236886,
+      "url": "https://www.openstreetmap.org/relation/236886",
+      "nazev": null,
+      "ref": "4326",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237048,
+      "url": "https://www.openstreetmap.org/relation/237048",
+      "nazev": null,
+      "ref": "7220",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237097,
+      "url": "https://www.openstreetmap.org/relation/237097",
+      "nazev": null,
+      "ref": "4207",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 331836,
+      "url": "https://www.openstreetmap.org/relation/331836",
+      "nazev": null,
+      "ref": "3978",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1137804,
+      "url": "https://www.openstreetmap.org/relation/1137804",
+      "nazev": null,
+      "ref": "7235",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1706940,
+      "url": "https://www.openstreetmap.org/relation/1706940",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1722593,
+      "url": "https://www.openstreetmap.org/relation/1722593",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1722611,
+      "url": "https://www.openstreetmap.org/relation/1722611",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1755462,
+      "url": "https://www.openstreetmap.org/relation/1755462",
+      "nazev": null,
+      "ref": "0437",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1931068,
+      "url": "https://www.openstreetmap.org/relation/1931068",
+      "nazev": null,
+      "ref": "4228",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1931660,
+      "url": "https://www.openstreetmap.org/relation/1931660",
+      "nazev": null,
+      "ref": "1816",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1931661,
+      "url": "https://www.openstreetmap.org/relation/1931661",
+      "nazev": null,
+      "ref": "7227",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2653529,
+      "url": "https://www.openstreetmap.org/relation/2653529",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2661185,
+      "url": "https://www.openstreetmap.org/relation/2661185",
+      "nazev": null,
+      "ref": "1894",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3079827,
+      "url": "https://www.openstreetmap.org/relation/3079827",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3330577,
+      "url": "https://www.openstreetmap.org/relation/3330577",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4146633,
+      "url": "https://www.openstreetmap.org/relation/4146633",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4148075,
+      "url": "https://www.openstreetmap.org/relation/4148075",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5987447,
+      "url": "https://www.openstreetmap.org/relation/5987447",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6133813,
+      "url": "https://www.openstreetmap.org/relation/6133813",
+      "nazev": null,
+      "ref": "0402",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6282266,
+      "url": "https://www.openstreetmap.org/relation/6282266",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6290596,
+      "url": "https://www.openstreetmap.org/relation/6290596",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6291227,
+      "url": "https://www.openstreetmap.org/relation/6291227",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6291228,
+      "url": "https://www.openstreetmap.org/relation/6291228",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6316543,
+      "url": "https://www.openstreetmap.org/relation/6316543",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_turned_T",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6430614,
+      "url": "https://www.openstreetmap.org/relation/6430614",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6519749,
+      "url": "https://www.openstreetmap.org/relation/6519749",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:red:white_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 8462573,
+      "url": "https://www.openstreetmap.org/relation/8462573",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 8464045,
+      "url": "https://www.openstreetmap.org/relation/8464045",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 8464046,
+      "url": "https://www.openstreetmap.org/relation/8464046",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 9069201,
+      "url": "https://www.openstreetmap.org/relation/9069201",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 9431515,
+      "url": "https://www.openstreetmap.org/relation/9431515",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 10464588,
+      "url": "https://www.openstreetmap.org/relation/10464588",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 19447142,
+      "url": "https://www.openstreetmap.org/relation/19447142",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 19627469,
+      "url": "https://www.openstreetmap.org/relation/19627469",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 20442463,
+      "url": "https://www.openstreetmap.org/relation/20442463",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_turned_T",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 20744051,
+      "url": "https://www.openstreetmap.org/relation/20744051",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 20744052,
+      "url": "https://www.openstreetmap.org/relation/20744052",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_turned_T",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 367750,
+      "url": "https://www.openstreetmap.org/relation/367750",
+      "nazev": "[Č] Bucharova cesta",
+      "ref": "0431",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 133851,
+      "url": "https://www.openstreetmap.org/relation/133851",
+      "nazev": "[Č] Cesta bratří Čapků",
+      "ref": "0403",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 75401,
+      "url": "https://www.openstreetmap.org/relation/75401",
+      "nazev": "[Č] Hejnice - Harrachov",
+      "ref": "0350",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6182030,
+      "url": "https://www.openstreetmap.org/relation/6182030",
+      "nazev": "[Č] Jilemnice - Lomnice nad Popelkou",
+      "ref": "0351",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 12283509,
+      "url": "https://www.openstreetmap.org/relation/12283509",
+      "nazev": "[Č] k vyhlídce Terezínka",
+      "ref": "0340/LB312",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 133844,
+      "url": "https://www.openstreetmap.org/relation/133844",
+      "nazev": "[Č] Luční bouda - Vrchlabí",
+      "ref": "0406",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5745471,
+      "url": "https://www.openstreetmap.org/relation/5745471",
+      "nazev": "[Č] místní okruh Rokytno - Horní Domky",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 253544,
+      "url": "https://www.openstreetmap.org/relation/253544",
+      "nazev": "[Č] Náchod - Pod Pasekou",
+      "ref": "0404",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4155083,
+      "url": "https://www.openstreetmap.org/relation/4155083",
+      "nazev": "[Č] Nová Paka - Horní Branná",
+      "ref": "0429",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 369024,
+      "url": "https://www.openstreetmap.org/relation/369024",
+      "nazev": "[Č] Okruh Zeleným a Modrým dolem",
+      "ref": "0408",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 9068699,
+      "url": "https://www.openstreetmap.org/relation/9068699",
+      "nazev": "[Č] Semily (muz.) - Spálov (žst.)",
+      "ref": "0435",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 133843,
+      "url": "https://www.openstreetmap.org/relation/133843",
+      "nazev": "[Č] Svoboda nad Úpou - Chata Na Rozcestí",
+      "ref": "0407",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64356,
+      "url": "https://www.openstreetmap.org/relation/64356",
+      "nazev": "[Č] Vrbatova bouda - Vysoké nad Jizerou",
+      "ref": "0439",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 369233,
+      "url": "https://www.openstreetmap.org/relation/369233",
+      "nazev": "[Č] Zlatá stezka Českého Ráje (Sekce)",
+      "ref": "noref",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237058,
+      "url": "https://www.openstreetmap.org/relation/237058",
+      "nazev": "[M] Červenokostelecká bouda - U Zrcadlových bud",
+      "ref": "1814",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237046,
+      "url": "https://www.openstreetmap.org/relation/237046",
+      "nazev": "[M] Dom Śląski - Droga Jubileuszowa",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64365,
+      "url": "https://www.openstreetmap.org/relation/64365",
+      "nazev": "[M] Harrachov - Špindlerův mlýn",
+      "ref": "1801",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 326662,
+      "url": "https://www.openstreetmap.org/relation/326662",
+      "nazev": "[M] Harrachov (camp) - Harrachov (cz/pl)",
+      "ref": "1825",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3199393,
+      "url": "https://www.openstreetmap.org/relation/3199393",
+      "nazev": "[M] Horní Maršov - Lysečinská bouda",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3183732,
+      "url": "https://www.openstreetmap.org/relation/3183732",
+      "nazev": "[M] Hostinné - Trutnov",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237055,
+      "url": "https://www.openstreetmap.org/relation/237055",
+      "nazev": "[M] Hrnčířské boudy - Vrchlabí (kostel)",
+      "ref": "1810",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3027760,
+      "url": "https://www.openstreetmap.org/relation/3027760",
+      "nazev": "[M] Hrubá Horka - Vysoké nad Jizerou",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 331122,
+      "url": "https://www.openstreetmap.org/relation/331122",
+      "nazev": "[M] Jablonec n. Jiz. - Pod Černou skálou",
+      "ref": "1805",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3156407,
+      "url": "https://www.openstreetmap.org/relation/3156407",
+      "nazev": "[M] Janské Lázně - Pod Starou horou",
+      "ref": "1817",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4002036,
+      "url": "https://www.openstreetmap.org/relation/4002036",
+      "nazev": "[M] Labský vodopád - vyhlídka",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4146416,
+      "url": "https://www.openstreetmap.org/relation/4146416",
+      "nazev": "[M] Lomnice nad Popelkou - Semily",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 369025,
+      "url": "https://www.openstreetmap.org/relation/369025",
+      "nazev": "[M] Malá Úpa-Pomezní boudy - Jubilejní cesta (rozc.)",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 254733,
+      "url": "https://www.openstreetmap.org/relation/254733",
+      "nazev": "[M] Medvědí bouda - Špindlerova bouda",
+      "ref": "1882",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3200957,
+      "url": "https://www.openstreetmap.org/relation/3200957",
+      "nazev": "[M] Nad Vlašskými boudami - Cestník",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3175178,
+      "url": "https://www.openstreetmap.org/relation/3175178",
+      "nazev": "[M] Odbočka na Královecký Špičák",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3199394,
+      "url": "https://www.openstreetmap.org/relation/3199394",
+      "nazev": "[M] Pec pod Sněžkou - Malá Úpa",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 378837,
+      "url": "https://www.openstreetmap.org/relation/378837",
+      "nazev": "[M] Pec pod Sněžkou - Obří sedlo",
+      "ref": "1812",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2678576,
+      "url": "https://www.openstreetmap.org/relation/2678576",
+      "nazev": "[M] Pec pod Sněžkou (Veselý Výlet) - Černý Důl, Čistá",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 341098,
+      "url": "https://www.openstreetmap.org/relation/341098",
+      "nazev": "[M] Pod Smělcem - Petrova bouda",
+      "ref": "1802",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 369047,
+      "url": "https://www.openstreetmap.org/relation/369047",
+      "nazev": "[M] Roh hranic - Prkenný důl",
+      "ref": "1824",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3097005,
+      "url": "https://www.openstreetmap.org/relation/3097005",
+      "nazev": "[M] Rýchory/Kutná (rozc.)- Dvůr Králové nad Labem (bus)",
+      "ref": "1820",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5986610,
+      "url": "https://www.openstreetmap.org/relation/5986610",
+      "nazev": "[M] Semily - Nouzov",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4148073,
+      "url": "https://www.openstreetmap.org/relation/4148073",
+      "nazev": "[M] Semily - Příkrý (bus)",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1137805,
+      "url": "https://www.openstreetmap.org/relation/1137805",
+      "nazev": "[M] Starý Rokytník - Malé Svatoňovice",
+      "ref": "1826",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3199246,
+      "url": "https://www.openstreetmap.org/relation/3199246",
+      "nazev": "[M] Špindlerův Mlýn - Dolní Dvůr",
+      "ref": "1808",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6133808,
+      "url": "https://www.openstreetmap.org/relation/6133808",
+      "nazev": "[M] U Dívčí lávky - Obří sedlo",
+      "ref": "1950",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1137801,
+      "url": "https://www.openstreetmap.org/relation/1137801",
+      "nazev": "[Z] Bohuslavice n. U - Lhota",
+      "ref": "4215",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3181673,
+      "url": "https://www.openstreetmap.org/relation/3181673",
+      "nazev": "[Z] Hladíkova výšina - Pod Liškou",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3193786,
+      "url": "https://www.openstreetmap.org/relation/3193786",
+      "nazev": "[Z] Hořejší Vrchlabí - lanovka na Žalý",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2661580,
+      "url": "https://www.openstreetmap.org/relation/2661580",
+      "nazev": "[Z] Janské Lázně - Žacléř",
+      "ref": "4216",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237054,
+      "url": "https://www.openstreetmap.org/relation/237054",
+      "nazev": "[Z] Javoří Mlýn - U Dvorské boudy",
+      "ref": "4208",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1417692,
+      "url": "https://www.openstreetmap.org/relation/1417692",
+      "nazev": "[Z] Jilemnice - Vrchlabí",
+      "ref": "4211",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3189447,
+      "url": "https://www.openstreetmap.org/relation/3189447",
+      "nazev": "[Z] Malá Úpa - Pod Jelenkou",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 338456,
+      "url": "https://www.openstreetmap.org/relation/338456",
+      "nazev": "[Z] Na Perlíčku - Jablonec n. Jiz.",
+      "ref": "4270",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237047,
+      "url": "https://www.openstreetmap.org/relation/237047",
+      "nazev": "[Z] Nad Růžohorským sedlem - Jelenka",
+      "ref": "4246",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3922772,
+      "url": "https://www.openstreetmap.org/relation/3922772",
+      "nazev": "[Z] NS hornická Berghaus",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4095384,
+      "url": "https://www.openstreetmap.org/relation/4095384",
+      "nazev": "[Z] NS Mravenčí stezkou",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4263501,
+      "url": "https://www.openstreetmap.org/relation/4263501",
+      "nazev": "[Z] NS Opevněné Trutnovsko",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4428896,
+      "url": "https://www.openstreetmap.org/relation/4428896",
+      "nazev": "[Z] Odbočka Čížkovy kameny",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1684465,
+      "url": "https://www.openstreetmap.org/relation/1684465",
+      "nazev": "[Z] odbočka k rozhledně Štěpánka",
+      "ref": "1664",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 373033,
+      "url": "https://www.openstreetmap.org/relation/373033",
+      "nazev": "[Z] Petříkovice - Turov",
+      "ref": "4331",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2664066,
+      "url": "https://www.openstreetmap.org/relation/2664066",
+      "nazev": "[Z] Pod Petrovou boudou - Moravská bouda",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64408,
+      "url": "https://www.openstreetmap.org/relation/64408",
+      "nazev": "[Z] Rezek - Pod Dvoračkami",
+      "ref": "4272",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237053,
+      "url": "https://www.openstreetmap.org/relation/237053",
+      "nazev": "[Z] Richtrovy Boudy - Špindlerův mlýn",
+      "ref": "4203",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4125836,
+      "url": "https://www.openstreetmap.org/relation/4125836",
+      "nazev": "[Z] Roprachtice - Jilem",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2962124,
+      "url": "https://www.openstreetmap.org/relation/2962124",
+      "nazev": "[Z] Semily - Kozákov - U Krkavčí skály",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5987446,
+      "url": "https://www.openstreetmap.org/relation/5987446",
+      "nazev": "[Z] Semily - Na Rovném",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4148074,
+      "url": "https://www.openstreetmap.org/relation/4148074",
+      "nazev": "[Z] Semily - Sejkorská kaple",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2659281,
+      "url": "https://www.openstreetmap.org/relation/2659281",
+      "nazev": "[Z] Svoboda - Bernartice",
+      "ref": "4212",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237059,
+      "url": "https://www.openstreetmap.org/relation/237059",
+      "nazev": "[Z] Svoboda nad Úpou - Václavák",
+      "ref": "4210",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237049,
+      "url": "https://www.openstreetmap.org/relation/237049",
+      "nazev": "[Z] Špindlerův Mlýn - Horní Maršov",
+      "ref": "4206",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6282999,
+      "url": "https://www.openstreetmap.org/relation/6282999",
+      "nazev": "[Z] Špindlerův mlýn - okruh",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 443751,
+      "url": "https://www.openstreetmap.org/relation/443751",
+      "nazev": "[Z] Tanvald - Jiřetín pod Bukovou",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 253561,
+      "url": "https://www.openstreetmap.org/relation/253561",
+      "nazev": "[Z] Trutnov - Hronov",
+      "ref": "4213",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 254703,
+      "url": "https://www.openstreetmap.org/relation/254703",
+      "nazev": "[Z] U Dívčí lávky - Špindlerova bouda",
+      "ref": "4202",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 75400,
+      "url": "https://www.openstreetmap.org/relation/75400",
+      "nazev": "[Z] U Kyselky - Desná",
+      "ref": "3966",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64364,
+      "url": "https://www.openstreetmap.org/relation/64364",
+      "nazev": "[Z] U Růženčiny zahrádky - Vrbatova bouda",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237057,
+      "url": "https://www.openstreetmap.org/relation/237057",
+      "nazev": "[Z] U Thamových bud - Nad Pražačkou - H. Maršov",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64383,
+      "url": "https://www.openstreetmap.org/relation/64383",
+      "nazev": "[Z] Vosecká bouda - Pod Dívčí strání",
+      "ref": "4201",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4146634,
+      "url": "https://www.openstreetmap.org/relation/4146634",
+      "nazev": "[Z] Vysoké nad Jizerou - Bodbozkov",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3292908,
+      "url": "https://www.openstreetmap.org/relation/3292908",
+      "nazev": "[Ž] Bernartice - Petříkovice",
+      "ref": "7361",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 372304,
+      "url": "https://www.openstreetmap.org/relation/372304",
+      "nazev": "[Ž] Brádlerovy boudy - Špindlerův Mlýn",
+      "ref": "7203",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2700773,
+      "url": "https://www.openstreetmap.org/relation/2700773",
+      "nazev": "[Ž] Bučina - Poříčí",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3263630,
+      "url": "https://www.openstreetmap.org/relation/3263630",
+      "nazev": "[Ž] Černá hora: kiosek - rozhledna Panorama",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237060,
+      "url": "https://www.openstreetmap.org/relation/237060",
+      "nazev": "[Ž] Černý Důl - Nad Portášovými boudami",
+      "ref": "7211",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3158304,
+      "url": "https://www.openstreetmap.org/relation/3158304",
+      "nazev": "[Ž] Horní Maršov - Kutná",
+      "ref": "7223",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3215053,
+      "url": "https://www.openstreetmap.org/relation/3215053",
+      "nazev": "[Ž] Horní Maršov - Modrokamenná bouda",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2659569,
+      "url": "https://www.openstreetmap.org/relation/2659569",
+      "nazev": "[Ž] Horní Staré Město - Nad Babím",
+      "ref": "7231",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3200958,
+      "url": "https://www.openstreetmap.org/relation/3200958",
+      "nazev": "[Ž] Husova bouda - Pec pod Sněžkou",
+      "ref": "7215",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2659511,
+      "url": "https://www.openstreetmap.org/relation/2659511",
+      "nazev": "[Ž] Chata Ozon - Krenov",
+      "ref": "7234",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 331782,
+      "url": "https://www.openstreetmap.org/relation/331782",
+      "nazev": "[Ž] Jablonec n. Jiz. - Hvězda",
+      "ref": "7219",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2342233,
+      "url": "https://www.openstreetmap.org/relation/2342233",
+      "nazev": "[Ž] Jantarová cesta",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2653528,
+      "url": "https://www.openstreetmap.org/relation/2653528",
+      "nazev": "[Ž] Kamenického stezka",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 9448361,
+      "url": "https://www.openstreetmap.org/relation/9448361",
+      "nazev": "[Ž] Kamenického stezka - Jiřička (vyhl.), odbočka",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 16177035,
+      "url": "https://www.openstreetmap.org/relation/16177035",
+      "nazev": "[Ž] Kamenického stezka - Moravská Jiřička (vyhl.), odbočka",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 9448360,
+      "url": "https://www.openstreetmap.org/relation/9448360",
+      "nazev": "[Ž] Kamenického stezka - Peretka (vyhl.), odbočka",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 16177034,
+      "url": "https://www.openstreetmap.org/relation/16177034",
+      "nazev": "[Ž] Kamenického stezka - U Bakala (vyhl.), odbočka",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 133849,
+      "url": "https://www.openstreetmap.org/relation/133849",
+      "nazev": "[Ž] Kubátova cesta",
+      "ref": "7217",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 254702,
+      "url": "https://www.openstreetmap.org/relation/254702",
+      "nazev": "[Ž] Labská bouda-Sněžné Jámy",
+      "ref": "7237",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 20189582,
+      "url": "https://www.openstreetmap.org/relation/20189582",
+      "nazev": "[Ž] Labská přehrada hráz. - Pod Černou skálou",
+      "ref": "140007",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2678577,
+      "url": "https://www.openstreetmap.org/relation/2678577",
+      "nazev": "[Ž] Lesní bouda - Pec pod Sněžkou",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2678463,
+      "url": "https://www.openstreetmap.org/relation/2678463",
+      "nazev": "[Ž] Liščí louka - Černý Důl",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3308959,
+      "url": "https://www.openstreetmap.org/relation/3308959",
+      "nazev": "[Ž] Malé Svatoňovice - Petrovice",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3734106,
+      "url": "https://www.openstreetmap.org/relation/3734106",
+      "nazev": "[Ž] Marvenčí vrch - Malé sedlo CZ/P",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3177056,
+      "url": "https://www.openstreetmap.org/relation/3177056",
+      "nazev": "[Ž] Mladé Buky (kostel) - Bystřice",
+      "ref": "4214",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4110145,
+      "url": "https://www.openstreetmap.org/relation/4110145",
+      "nazev": "[Ž] Na Cikánce - Podkamínky",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3199247,
+      "url": "https://www.openstreetmap.org/relation/3199247",
+      "nazev": "[Ž] Nad Dolním Dvorem - Klínovka",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237052,
+      "url": "https://www.openstreetmap.org/relation/237052",
+      "nazev": "[Ž] Obří důl - Modrý důl",
+      "ref": "7212",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2658089,
+      "url": "https://www.openstreetmap.org/relation/2658089",
+      "nazev": "[Ž] Pod Dvorským lesem - Rychorský kříž",
+      "ref": "7238",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1137807,
+      "url": "https://www.openstreetmap.org/relation/1137807",
+      "nazev": "[Ž] Pod Hůrou - U Čižkových kamenů",
+      "ref": "7209",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3199287,
+      "url": "https://www.openstreetmap.org/relation/3199287",
+      "nazev": "[Ž] Pod Kolínskou boudou - Údolí Čisté",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4125771,
+      "url": "https://www.openstreetmap.org/relation/4125771",
+      "nazev": "[Ž] Poniklá - Roztoky u Semil",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64354,
+      "url": "https://www.openstreetmap.org/relation/64354",
+      "nazev": "[Ž] Rokytnice - Rezek",
+      "ref": "7308",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64343,
+      "url": "https://www.openstreetmap.org/relation/64343",
+      "nazev": "[Ž] Rokytnice n. Jiz - Sedlo Mokrá Prelecz",
+      "ref": "7307",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3325788,
+      "url": "https://www.openstreetmap.org/relation/3325788",
+      "nazev": "[Ž] Růžový palouček - Horní Albeřice",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 82497,
+      "url": "https://www.openstreetmap.org/relation/82497",
+      "nazev": "[Ž] Sedlo pod zámky - Údolí Jizery",
+      "ref": "6984",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5986611,
+      "url": "https://www.openstreetmap.org/relation/5986611",
+      "nazev": "[Ž] Semily - Sejkorská kaple - Bitouchov",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4146515,
+      "url": "https://www.openstreetmap.org/relation/4146515",
+      "nazev": "[Ž] Semily - U Krkavčí skály",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3158348,
+      "url": "https://www.openstreetmap.org/relation/3158348",
+      "nazev": "[Ž] Svoboda nad Úpou - Pod Lovčí boudou",
+      "ref": "7226",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 331808,
+      "url": "https://www.openstreetmap.org/relation/331808",
+      "nazev": "[Ž] Tanvaldský Špičák - Desná",
+      "ref": "6989",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6455279,
+      "url": "https://www.openstreetmap.org/relation/6455279",
+      "nazev": "[Ž] U Dívčí lávky - Petrovka",
+      "ref": "7362",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237050,
+      "url": "https://www.openstreetmap.org/relation/237050",
+      "nazev": "[Ž] U Růžového dolu - Pod Větrníkem",
+      "ref": "7236",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64382,
+      "url": "https://www.openstreetmap.org/relation/64382",
+      "nazev": "[Ž] U Třídomí - Česká Budka",
+      "ref": "7310",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 237045,
+      "url": "https://www.openstreetmap.org/relation/237045",
+      "nazev": "[Ž] Vrchlabí - U Hromovky",
+      "ref": "7201",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4118811,
+      "url": "https://www.openstreetmap.org/relation/4118811",
+      "nazev": "[Ž] Vysocký okruh",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2033327,
+      "url": "https://www.openstreetmap.org/relation/2033327",
+      "nazev": "[Ž] Žalý - Vrchlabí",
+      "ref": "7207",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3902221,
+      "url": "https://www.openstreetmap.org/relation/3902221",
+      "nazev": "Borowice-Miłków",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 16653107,
+      "url": "https://www.openstreetmap.org/relation/16653107",
+      "nazev": "Bukowiec - Jarkowice",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64384,
+      "url": "https://www.openstreetmap.org/relation/64384",
+      "nazev": "Cesta česko-polského přátelství",
+      "ref": "0401",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1714136,
+      "url": "https://www.openstreetmap.org/relation/1714136",
+      "nazev": "Ciechanowice - Wieściszowice",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5286605,
+      "url": "https://www.openstreetmap.org/relation/5286605",
+      "nazev": "Cieplice - Marczyce",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3861371,
+      "url": "https://www.openstreetmap.org/relation/3861371",
+      "nazev": "Cieplice Śląskie - Karpniki",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 11759319,
+      "url": "https://www.openstreetmap.org/relation/11759319",
+      "nazev": "Cieplicki szlak spacerowy",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 15844913,
+      "url": "https://www.openstreetmap.org/relation/15844913",
+      "nazev": "Cieplicki szlak spacerowy Zielony",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 11859325,
+      "url": "https://www.openstreetmap.org/relation/11859325",
+      "nazev": "Do Grobu nieznanego Kapłana",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 12722467,
+      "url": "https://www.openstreetmap.org/relation/12722467",
+      "nazev": "Do punktu widokowego Brzeźnik",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 11812041,
+      "url": "https://www.openstreetmap.org/relation/11812041",
+      "nazev": "Do Punktu Widokowego Karpatka",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 11924939,
+      "url": "https://www.openstreetmap.org/relation/11924939",
+      "nazev": "Do Punktu Widokowego Karpatka",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 13064753,
+      "url": "https://www.openstreetmap.org/relation/13064753",
+      "nazev": "Do punktu widokowego Mała Ostra",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 14295685,
+      "url": "https://www.openstreetmap.org/relation/14295685",
+      "nazev": "Do Punktu Widokowego Złoty Widok",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 14295686,
+      "url": "https://www.openstreetmap.org/relation/14295686",
+      "nazev": "Dojście do Jaskini",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2333902,
+      "url": "https://www.openstreetmap.org/relation/2333902",
+      "nazev": "Droga Bronka Czecha",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3280873,
+      "url": "https://www.openstreetmap.org/relation/3280873",
+      "nazev": "Dřevařská cesta",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6177255,
+      "url": "https://www.openstreetmap.org/relation/6177255",
+      "nazev": "European long distance path E3 - part Czech Republic, North East",
+      "ref": "E3",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:blue::E3:yellow",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3083510,
+      "url": "https://www.openstreetmap.org/relation/3083510",
+      "nazev": "European long distance path E3 - part Poland (west)",
+      "ref": "E3",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:blue::E3:yellow",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 951694,
+      "url": "https://www.openstreetmap.org/relation/951694",
+      "nazev": "Główny Szlak Sudecki",
+      "ref": "GSS",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 19433435,
+      "url": "https://www.openstreetmap.org/relation/19433435",
+      "nazev": "Hřebenovka (Liberecký kraj)",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:red::Ш:blue",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4621732,
+      "url": "https://www.openstreetmap.org/relation/4621732",
+      "nazev": "Internationaler Bergwanderweg Eisenach–Budapest (Polen West)",
+      "ref": "EB",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white::EB",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 10443826,
+      "url": "https://www.openstreetmap.org/relation/10443826",
+      "nazev": "Jarkowice - Obniżenie za Łysociną",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3902222,
+      "url": "https://www.openstreetmap.org/relation/3902222",
+      "nazev": "Jelenia Góra-Słonecznik",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3280874,
+      "url": "https://www.openstreetmap.org/relation/3280874",
+      "nazev": "Judeichova cesta",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 11084525,
+      "url": "https://www.openstreetmap.org/relation/11084525",
+      "nazev": "Kamienna Góra - Marciszów",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3361608,
+      "url": "https://www.openstreetmap.org/relation/3361608",
+      "nazev": "Karlovský most (granica) - do Harrachova (granica)",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2330139,
+      "url": "https://www.openstreetmap.org/relation/2330139",
+      "nazev": "Karpacz - Rozdroże koło Spalonej Strażnicy",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2342199,
+      "url": "https://www.openstreetmap.org/relation/2342199",
+      "nazev": "Karpacz - Słonecznik",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2330137,
+      "url": "https://www.openstreetmap.org/relation/2330137",
+      "nazev": "Karpacz Biały Jar - Kocioł Białego Jaru",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5663111,
+      "url": "https://www.openstreetmap.org/relation/5663111",
+      "nazev": "Karpacz PKP - Schronisko PTTK nad Łomniczką",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 13237131,
+      "url": "https://www.openstreetmap.org/relation/13237131",
+      "nazev": "Karpacz, ul. Leśna - Szeroki Most",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6685710,
+      "url": "https://www.openstreetmap.org/relation/6685710",
+      "nazev": "Karpniki - Bukowiec",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4753164,
+      "url": "https://www.openstreetmap.org/relation/4753164",
+      "nazev": "ke zvoničce",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_turned_T",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4148072,
+      "url": "https://www.openstreetmap.org/relation/4148072",
+      "nazev": "Krkavčí skála",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3734107,
+      "url": "https://www.openstreetmap.org/relation/3734107",
+      "nazev": "Krzyżówka BHP - Przełęcz Mała",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 10578418,
+      "url": "https://www.openstreetmap.org/relation/10578418",
+      "nazev": "Lubawka - Różana",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5850799,
+      "url": "https://www.openstreetmap.org/relation/5850799",
+      "nazev": "Marciszów PKP - Łączna",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5286606,
+      "url": "https://www.openstreetmap.org/relation/5286606",
+      "nazev": "Marczyce - Grodna",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6285306,
+      "url": "https://www.openstreetmap.org/relation/6285306",
+      "nazev": "Medvědí okruh",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:none:none",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 401516,
+      "url": "https://www.openstreetmap.org/relation/401516",
+      "nazev": "Mieroszów – Lubawka",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5722752,
+      "url": "https://www.openstreetmap.org/relation/5722752",
+      "nazev": "Místní okruh Harrachov",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6685716,
+      "url": "https://www.openstreetmap.org/relation/6685716",
+      "nazev": "Miszkowice - Horní Albeřice (CZ/PL)",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6247833,
+      "url": "https://www.openstreetmap.org/relation/6247833",
+      "nazev": "naučná stezka Den bitvy u Trutnova 27. června 1866",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6247832,
+      "url": "https://www.openstreetmap.org/relation/6247832",
+      "nazev": "NS Babí - Nové Dvory",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1706938,
+      "url": "https://www.openstreetmap.org/relation/1706938",
+      "nazev": "NS Černohorské rašeliniště",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5602354,
+      "url": "https://www.openstreetmap.org/relation/5602354",
+      "nazev": "NS Čertova strouha",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5744809,
+      "url": "https://www.openstreetmap.org/relation/5744809",
+      "nazev": "NS Dědictví doby ledové",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 8238284,
+      "url": "https://www.openstreetmap.org/relation/8238284",
+      "nazev": "NS Krakonoš a lyžníci",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 9434744,
+      "url": "https://www.openstreetmap.org/relation/9434744",
+      "nazev": "NS Krkonošská zvířata",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5750449,
+      "url": "https://www.openstreetmap.org/relation/5750449",
+      "nazev": "NS okolo Pekelského vrchu",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6296213,
+      "url": "https://www.openstreetmap.org/relation/6296213",
+      "nazev": "NS Střední hřeben",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5990716,
+      "url": "https://www.openstreetmap.org/relation/5990716",
+      "nazev": "NS U Mlejna",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1664738,
+      "url": "https://www.openstreetmap.org/relation/1664738",
+      "nazev": "NS Údolím Jizery - Riegrova stezka",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5985704,
+      "url": "https://www.openstreetmap.org/relation/5985704",
+      "nazev": "NS Údolím Vošmendy",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 8213537,
+      "url": "https://www.openstreetmap.org/relation/8213537",
+      "nazev": "NS Živá mrtvá Mumlava",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 9051188,
+      "url": "https://www.openstreetmap.org/relation/9051188",
+      "nazev": "Okrzeszyn - Przejście graniczne",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 10987474,
+      "url": "https://www.openstreetmap.org/relation/10987474",
+      "nazev": "Okrzeszyn granica – Strażnicze Naroże",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4578060,
+      "url": "https://www.openstreetmap.org/relation/4578060",
+      "nazev": "Palackého stezka",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 19210473,
+      "url": "https://www.openstreetmap.org/relation/19210473",
+      "nazev": "Palackého stezka",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 368539,
+      "url": "https://www.openstreetmap.org/relation/368539",
+      "nazev": "Pašerácká stezka",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6295426,
+      "url": "https://www.openstreetmap.org/relation/6295426",
+      "nazev": "Pec pod Sněžkou",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6295427,
+      "url": "https://www.openstreetmap.org/relation/6295427",
+      "nazev": "Pec pod Sněžkou",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6295425,
+      "url": "https://www.openstreetmap.org/relation/6295425",
+      "nazev": "Pec pod Sněžkou - Zelený důl - Jelení louky",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3902203,
+      "url": "https://www.openstreetmap.org/relation/3902203",
+      "nazev": "Piechowice - Borowice",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 375184,
+      "url": "https://www.openstreetmap.org/relation/375184",
+      "nazev": "Piechowice - Pod Wielkim Szyszakiem",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2693942,
+      "url": "https://www.openstreetmap.org/relation/2693942",
+      "nazev": "Pod Bobrowymi Skałami - Piechowice",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "colour=green",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3149754,
+      "url": "https://www.openstreetmap.org/relation/3149754",
+      "nazev": "Pod Łabskim Szczytem - Rozdroże pod Wielkim Szyszakiem",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 75395,
+      "url": "https://www.openstreetmap.org/relation/75395",
+      "nazev": "Pod Slovankou - Kořenov žst.",
+      "ref": "0340",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 375183,
+      "url": "https://www.openstreetmap.org/relation/375183",
+      "nazev": "Podgórzyn Dolny - Czarna Przełęcz",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 399450,
+      "url": "https://www.openstreetmap.org/relation/399450",
+      "nazev": "Podgórzyn Dolny - Zamek Chojnik",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 8162045,
+      "url": "https://www.openstreetmap.org/relation/8162045",
+      "nazev": "Podgórzyn Górny - Przełęcz Karkonoska",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6290595,
+      "url": "https://www.openstreetmap.org/relation/6290595",
+      "nazev": "Pohádková NS",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 10746578,
+      "url": "https://www.openstreetmap.org/relation/10746578",
+      "nazev": "Polana Jakuszycka ↔ Rozdroże pod Działem Izerskim",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6430660,
+      "url": "https://www.openstreetmap.org/relation/6430660",
+      "nazev": "Przełęcz Chełmska - Nad Doliną Beczkowskiego Potoku",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6421481,
+      "url": "https://www.openstreetmap.org/relation/6421481",
+      "nazev": "Przełęcz Lubawska – Okrzeszyn granica",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 5372180,
+      "url": "https://www.openstreetmap.org/relation/5372180",
+      "nazev": "Przełęcz Okraj – Lubawka",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1086096,
+      "url": "https://www.openstreetmap.org/relation/1086096",
+      "nazev": "Przełęcz Okraj – Roh hranic",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 12722209,
+      "url": "https://www.openstreetmap.org/relation/12722209",
+      "nazev": "Punkt Widokowy Rudnik",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 11743907,
+      "url": "https://www.openstreetmap.org/relation/11743907",
+      "nazev": "Rębiszów - Rozdroże Izerskie",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 8297093,
+      "url": "https://www.openstreetmap.org/relation/8297093",
+      "nazev": "Roh hranic – Przełęcz Lubawska",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1017407,
+      "url": "https://www.openstreetmap.org/relation/1017407",
+      "nazev": "Rozdroże Izerskie - Pielgrzymy",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 375393,
+      "url": "https://www.openstreetmap.org/relation/375393",
+      "nazev": "Rozdroże Izerskie - Stog Izerski",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 12115741,
+      "url": "https://www.openstreetmap.org/relation/12115741",
+      "nazev": "Rozdroże koło Spalonej Strażnicy - Dom Śląski",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 10550258,
+      "url": "https://www.openstreetmap.org/relation/10550258",
+      "nazev": "Rozdroże Kowarskie - Schronisko Srebrny Potok",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 11859324,
+      "url": "https://www.openstreetmap.org/relation/11859324",
+      "nazev": "rozdroże pod Chmielnikiem- rozdroże Polana",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3193754,
+      "url": "https://www.openstreetmap.org/relation/3193754",
+      "nazev": "Rozdroże pod Kamieńczykiem - Ryzy",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 9976099,
+      "url": "https://www.openstreetmap.org/relation/9976099",
+      "nazev": "Rozdroże pod Sulicą - Lubawka",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 16948650,
+      "url": "https://www.openstreetmap.org/relation/16948650",
+      "nazev": "Rozdroże Strzelecka Góra- Rozdroże Panorama",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "colour=yellow",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2181597,
+      "url": "https://www.openstreetmap.org/relation/2181597",
+      "nazev": "Ruiny szkoły - do Harrachova (granica)",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 13063162,
+      "url": "https://www.openstreetmap.org/relation/13063162",
+      "nazev": "Ścieżka Przyrodnicza Janusza Boisse",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_triangle",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 10445066,
+      "url": "https://www.openstreetmap.org/relation/10445066",
+      "nazev": "Schronisko Srebrny Potok - Pod Albeřickým vrchem",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1714138,
+      "url": "https://www.openstreetmap.org/relation/1714138",
+      "nazev": "Schronisko Szwajcarka - Ostra Mała - Przełęcz Okraj - Uroczysko",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 7823159,
+      "url": "https://www.openstreetmap.org/relation/7823159",
+      "nazev": "Skalny Stół - Kowary",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 18943232,
+      "url": "https://www.openstreetmap.org/relation/18943232",
+      "nazev": "Smržovské vyhlídkové okruhy",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white::🍄︎:blue",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 11785306,
+      "url": "https://www.openstreetmap.org/relation/11785306",
+      "nazev": "Sobieszów - Polana na Grzybowcu",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3364770,
+      "url": "https://www.openstreetmap.org/relation/3364770",
+      "nazev": "Sobieszów - Zamek Chojnik",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3863255,
+      "url": "https://www.openstreetmap.org/relation/3863255",
+      "nazev": "Stezka okolo lomu",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3864373,
+      "url": "https://www.openstreetmap.org/relation/3864373",
+      "nazev": "Stezka za sv. Barborou",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2181917,
+      "url": "https://www.openstreetmap.org/relation/2181917",
+      "nazev": "Strużnica - Czarnów",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3176768,
+      "url": "https://www.openstreetmap.org/relation/3176768",
+      "nazev": "Sudecka Droga św. Jakuba",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:blue:shell_modern",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 375392,
+      "url": "https://www.openstreetmap.org/relation/375392",
+      "nazev": "Szklarska Poręba - Pasterka",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 375377,
+      "url": "https://www.openstreetmap.org/relation/375377",
+      "nazev": "Szklarska Poręba - Śnieżne Kotły",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 2698298,
+      "url": "https://www.openstreetmap.org/relation/2698298",
+      "nazev": "Szklarska Poręba - Wałbrzych",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 13272306,
+      "url": "https://www.openstreetmap.org/relation/13272306",
+      "nazev": "Szlak Waloński - pętla I",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow::yellow_diamond",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 1714137,
+      "url": "https://www.openstreetmap.org/relation/1714137",
+      "nazev": "Szlak Zamków Piastowskich",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6601212,
+      "url": "https://www.openstreetmap.org/relation/6601212",
+      "nazev": "Szwajcarka - Sokolik Duży",
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 6285305,
+      "url": "https://www.openstreetmap.org/relation/6285305",
+      "nazev": "Špindlmanova mise",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:none:none",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 420639,
+      "url": "https://www.openstreetmap.org/relation/420639",
+      "nazev": "Tři Iseriny",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3863256,
+      "url": "https://www.openstreetmap.org/relation/3863256",
+      "nazev": "Vápenická stezka",
+      "ref": null,
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 16863355,
+      "url": "https://www.openstreetmap.org/relation/16863355",
+      "nazev": "Via Czechia - Severní (6. Jizerské hory)",
+      "ref": "VIA-CZE-106",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:red_diamond:via_czechia",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 16863701,
+      "url": "https://www.openstreetmap.org/relation/16863701",
+      "nazev": "Via Czechia - Severní (7. Krkonoše)",
+      "ref": "VIA-CZE-107",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:red_diamond:via_czechia",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 4219761,
+      "url": "https://www.openstreetmap.org/relation/4219761",
+      "nazev": "Voletinský okruh 8,4 km",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_corner",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 3479196,
+      "url": "https://www.openstreetmap.org/relation/3479196",
+      "nazev": "Wysoki Kanień - Piechowice",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    },
+    {
+      "osmId": 64346,
+      "url": "https://www.openstreetmap.org/relation/64346",
+      "nazev": "Zadní Blansko - Harrachov (kemp)",
+      "ref": "7225",
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 0,
+      "pocetUseku": 0
+    }
+  ]
+}
