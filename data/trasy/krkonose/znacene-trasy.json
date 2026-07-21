@@ -1,6 +1,6 @@
 {
   "zdroj": "OpenStreetMap Overpass (route=hiking, bbox Krkonoš) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)",
-  "stavOsmDat": "2026-07-21",
+  "stavOsmDat": "2026-05-31",
   "pocetTras": 280,
   "trasy": [
     {
@@ -10,8 +10,8 @@
       "ref": "1894",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.7,
+      "pocetUseku": 19
     },
     {
       "osmId": 64347,
@@ -20,8 +20,8 @@
       "ref": "4286",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.2,
+      "pocetUseku": 15
     },
     {
       "osmId": 75407,
@@ -30,8 +30,8 @@
       "ref": "1661",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 18.3,
+      "pocetUseku": 73
     },
     {
       "osmId": 75415,
@@ -40,8 +40,8 @@
       "ref": "1663",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.8,
+      "pocetUseku": 43
     },
     {
       "osmId": 75417,
@@ -50,8 +50,8 @@
       "ref": "6986",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 18.7,
+      "pocetUseku": 72
     },
     {
       "osmId": 236869,
@@ -60,8 +60,8 @@
       "ref": "1895",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.4,
+      "pocetUseku": 36
     },
     {
       "osmId": 236886,
@@ -70,8 +70,8 @@
       "ref": "4326",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.8,
+      "pocetUseku": 31
     },
     {
       "osmId": 237048,
@@ -80,8 +80,8 @@
       "ref": "7220",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.7,
+      "pocetUseku": 41
     },
     {
       "osmId": 237097,
@@ -90,8 +90,8 @@
       "ref": "4207",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 18.3,
+      "pocetUseku": 70
     },
     {
       "osmId": 331836,
@@ -100,8 +100,8 @@
       "ref": "3978",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 19.6,
+      "pocetUseku": 97
     },
     {
       "osmId": 1137804,
@@ -110,8 +110,8 @@
       "ref": "7235",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 21.2,
+      "pocetUseku": 96
     },
     {
       "osmId": 1706940,
@@ -120,8 +120,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.4,
+      "pocetUseku": 3
     },
     {
       "osmId": 1722593,
@@ -130,8 +130,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.5,
+      "pocetUseku": 42
     },
     {
       "osmId": 1722611,
@@ -140,8 +140,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10,
+      "pocetUseku": 42
     },
     {
       "osmId": 1755462,
@@ -150,8 +150,8 @@
       "ref": "0437",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 31.4,
+      "pocetUseku": 122
     },
     {
       "osmId": 1931068,
@@ -160,8 +160,8 @@
       "ref": "4228",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.4,
+      "pocetUseku": 37
     },
     {
       "osmId": 1931660,
@@ -170,8 +170,8 @@
       "ref": "1816",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.7,
+      "pocetUseku": 21
     },
     {
       "osmId": 1931661,
@@ -180,8 +180,8 @@
       "ref": "7227",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.4,
+      "pocetUseku": 24
     },
     {
       "osmId": 2653529,
@@ -190,8 +190,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.4,
+      "pocetUseku": 30
     },
     {
       "osmId": 2661185,
@@ -200,8 +200,8 @@
       "ref": "1894",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.2,
+      "pocetUseku": 1
     },
     {
       "osmId": 3079827,
@@ -210,8 +210,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.6,
+      "pocetUseku": 25
     },
     {
       "osmId": 3330577,
@@ -220,8 +220,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.8,
+      "pocetUseku": 24
     },
     {
       "osmId": 4146633,
@@ -230,8 +230,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.6,
+      "pocetUseku": 17
     },
     {
       "osmId": 4148075,
@@ -240,8 +240,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 11.6,
+      "pocetUseku": 47
     },
     {
       "osmId": 5987447,
@@ -250,8 +250,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.5,
+      "pocetUseku": 43
     },
     {
       "osmId": 6133813,
@@ -260,8 +260,8 @@
       "ref": "0402",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.9,
+      "pocetUseku": 47
     },
     {
       "osmId": 6282266,
@@ -270,8 +270,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.5,
+      "pocetUseku": 2
     },
     {
       "osmId": 6290596,
@@ -280,8 +280,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.8,
+      "pocetUseku": 20
     },
     {
       "osmId": 6291227,
@@ -290,8 +290,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.6,
+      "pocetUseku": 14
     },
     {
       "osmId": 6291228,
@@ -300,8 +300,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9,
+      "pocetUseku": 18
     },
     {
       "osmId": 6316543,
@@ -311,7 +311,7 @@
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_turned_T",
       "delkaKm": 0,
-      "pocetUseku": 0
+      "pocetUseku": 1
     },
     {
       "osmId": 6430614,
@@ -320,8 +320,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.4,
+      "pocetUseku": 5
     },
     {
       "osmId": 6519749,
@@ -330,8 +330,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:red:white_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 59.6,
+      "pocetUseku": 144
     },
     {
       "osmId": 8462573,
@@ -340,8 +340,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.4,
+      "pocetUseku": 3
     },
     {
       "osmId": 8464045,
@@ -350,8 +350,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.4,
+      "pocetUseku": 4
     },
     {
       "osmId": 8464046,
@@ -360,8 +360,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.1,
+      "pocetUseku": 3
     },
     {
       "osmId": 9069201,
@@ -370,8 +370,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 12.2,
+      "pocetUseku": 33
     },
     {
       "osmId": 9431515,
@@ -380,8 +380,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.5,
+      "pocetUseku": 4
     },
     {
       "osmId": 10464588,
@@ -390,8 +390,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.7,
+      "pocetUseku": 6
     },
     {
       "osmId": 19447142,
@@ -400,8 +400,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2,
+      "pocetUseku": 4
     },
     {
       "osmId": 19627469,
@@ -410,8 +410,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.2,
+      "pocetUseku": 1
     },
     {
       "osmId": 20442463,
@@ -421,7 +421,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_turned_T",
       "delkaKm": 0,
-      "pocetUseku": 0
+      "pocetUseku": 1
     },
     {
       "osmId": 20744051,
@@ -430,8 +430,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.3,
+      "pocetUseku": 15
     },
     {
       "osmId": 20744052,
@@ -440,8 +440,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_turned_T",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.3,
+      "pocetUseku": 5
     },
     {
       "osmId": 367750,
@@ -450,8 +450,8 @@
       "ref": "0431",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 29.1,
+      "pocetUseku": 111
     },
     {
       "osmId": 133851,
@@ -460,8 +460,8 @@
       "ref": "0403",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 49.3,
+      "pocetUseku": 182
     },
     {
       "osmId": 75401,
@@ -470,8 +470,8 @@
       "ref": "0350",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 34.9,
+      "pocetUseku": 127
     },
     {
       "osmId": 6182030,
@@ -480,8 +480,8 @@
       "ref": "0351",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 16.5,
+      "pocetUseku": 56
     },
     {
       "osmId": 12283509,
@@ -490,8 +490,8 @@
       "ref": "0340/LB312",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.1,
+      "pocetUseku": 3
     },
     {
       "osmId": 133844,
@@ -500,8 +500,8 @@
       "ref": "0406",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 17,
+      "pocetUseku": 82
     },
     {
       "osmId": 5745471,
@@ -510,8 +510,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.1,
+      "pocetUseku": 9
     },
     {
       "osmId": 253544,
@@ -520,8 +520,8 @@
       "ref": "0404",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 70.6,
+      "pocetUseku": 383
     },
     {
       "osmId": 4155083,
@@ -530,8 +530,8 @@
       "ref": "0429",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 18.6,
+      "pocetUseku": 81
     },
     {
       "osmId": 369024,
@@ -540,8 +540,8 @@
       "ref": "0408",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.9,
+      "pocetUseku": 26
     },
     {
       "osmId": 9068699,
@@ -550,8 +550,8 @@
       "ref": "0435",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.6,
+      "pocetUseku": 56
     },
     {
       "osmId": 133843,
@@ -560,8 +560,8 @@
       "ref": "0407",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 16.5,
+      "pocetUseku": 58
     },
     {
       "osmId": 64356,
@@ -570,8 +570,8 @@
       "ref": "0439",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 16.9,
+      "pocetUseku": 61
     },
     {
       "osmId": 369233,
@@ -580,8 +580,8 @@
       "ref": "noref",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 60.1,
+      "pocetUseku": 329
     },
     {
       "osmId": 237058,
@@ -590,8 +590,8 @@
       "ref": "1814",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.8,
+      "pocetUseku": 11
     },
     {
       "osmId": 237046,
@@ -600,8 +600,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.2,
+      "pocetUseku": 3
     },
     {
       "osmId": 64365,
@@ -610,8 +610,8 @@
       "ref": "1801",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 21.6,
+      "pocetUseku": 80
     },
     {
       "osmId": 326662,
@@ -620,8 +620,8 @@
       "ref": "1825",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.6,
+      "pocetUseku": 14
     },
     {
       "osmId": 3199393,
@@ -630,8 +630,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.6,
+      "pocetUseku": 10
     },
     {
       "osmId": 3183732,
@@ -640,8 +640,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 20.7,
+      "pocetUseku": 78
     },
     {
       "osmId": 237055,
@@ -650,8 +650,8 @@
       "ref": "1810",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.9,
+      "pocetUseku": 40
     },
     {
       "osmId": 3027760,
@@ -660,8 +660,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 17.1,
+      "pocetUseku": 58
     },
     {
       "osmId": 331122,
@@ -670,8 +670,8 @@
       "ref": "1805",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 14.9,
+      "pocetUseku": 42
     },
     {
       "osmId": 3156407,
@@ -680,8 +680,8 @@
       "ref": "1817",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7,
+      "pocetUseku": 39
     },
     {
       "osmId": 4002036,
@@ -690,8 +690,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.1,
+      "pocetUseku": 4
     },
     {
       "osmId": 4146416,
@@ -700,8 +700,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 11.4,
+      "pocetUseku": 54
     },
     {
       "osmId": 369025,
@@ -710,8 +710,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.2,
+      "pocetUseku": 15
     },
     {
       "osmId": 254733,
@@ -720,8 +720,8 @@
       "ref": "1882",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.5,
+      "pocetUseku": 18
     },
     {
       "osmId": 3200957,
@@ -730,8 +730,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.4,
+      "pocetUseku": 17
     },
     {
       "osmId": 3175178,
@@ -740,8 +740,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.9,
+      "pocetUseku": 1
     },
     {
       "osmId": 3199394,
@@ -750,8 +750,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.2,
+      "pocetUseku": 23
     },
     {
       "osmId": 378837,
@@ -760,8 +760,8 @@
       "ref": "1812",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6,
+      "pocetUseku": 25
     },
     {
       "osmId": 2678576,
@@ -770,8 +770,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 11.7,
+      "pocetUseku": 64
     },
     {
       "osmId": 341098,
@@ -780,8 +780,8 @@
       "ref": "1802",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.5,
+      "pocetUseku": 9
     },
     {
       "osmId": 369047,
@@ -790,8 +790,8 @@
       "ref": "1824",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 27.3,
+      "pocetUseku": 59
     },
     {
       "osmId": 3097005,
@@ -800,8 +800,8 @@
       "ref": "1820",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 35.8,
+      "pocetUseku": 137
     },
     {
       "osmId": 5986610,
@@ -810,8 +810,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.4,
+      "pocetUseku": 20
     },
     {
       "osmId": 4148073,
@@ -820,8 +820,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.6,
+      "pocetUseku": 15
     },
     {
       "osmId": 1137805,
@@ -830,8 +830,8 @@
       "ref": "1826",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.2,
+      "pocetUseku": 47
     },
     {
       "osmId": 3199246,
@@ -840,8 +840,8 @@
       "ref": "1808",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 16.9,
+      "pocetUseku": 50
     },
     {
       "osmId": 6133808,
@@ -850,8 +850,8 @@
       "ref": "1950",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.1,
+      "pocetUseku": 26
     },
     {
       "osmId": 1137801,
@@ -860,8 +860,8 @@
       "ref": "4215",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.1,
+      "pocetUseku": 30
     },
     {
       "osmId": 3181673,
@@ -870,8 +870,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6,
+      "pocetUseku": 11
     },
     {
       "osmId": 3193786,
@@ -880,8 +880,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.6,
+      "pocetUseku": 12
     },
     {
       "osmId": 2661580,
@@ -890,8 +890,8 @@
       "ref": "4216",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 24.3,
+      "pocetUseku": 65
     },
     {
       "osmId": 237054,
@@ -900,8 +900,8 @@
       "ref": "4208",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 11.2,
+      "pocetUseku": 34
     },
     {
       "osmId": 1417692,
@@ -910,8 +910,8 @@
       "ref": "4211",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 25,
+      "pocetUseku": 99
     },
     {
       "osmId": 3189447,
@@ -920,8 +920,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.8,
+      "pocetUseku": 4
     },
     {
       "osmId": 338456,
@@ -930,8 +930,8 @@
       "ref": "4270",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.9,
+      "pocetUseku": 23
     },
     {
       "osmId": 237047,
@@ -940,8 +940,8 @@
       "ref": "4246",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.7,
+      "pocetUseku": 3
     },
     {
       "osmId": 3922772,
@@ -950,8 +950,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.9,
+      "pocetUseku": 5
     },
     {
       "osmId": 4095384,
@@ -960,8 +960,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.3,
+      "pocetUseku": 12
     },
     {
       "osmId": 4263501,
@@ -970,8 +970,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.4,
+      "pocetUseku": 20
     },
     {
       "osmId": 4428896,
@@ -980,8 +980,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.1,
+      "pocetUseku": 1
     },
     {
       "osmId": 1684465,
@@ -990,8 +990,8 @@
       "ref": "1664",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.3,
+      "pocetUseku": 6
     },
     {
       "osmId": 373033,
@@ -1000,8 +1000,8 @@
       "ref": "4331",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 19.7,
+      "pocetUseku": 58
     },
     {
       "osmId": 2664066,
@@ -1010,8 +1010,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.8,
+      "pocetUseku": 2
     },
     {
       "osmId": 64408,
@@ -1020,8 +1020,8 @@
       "ref": "4272",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.9,
+      "pocetUseku": 14
     },
     {
       "osmId": 237053,
@@ -1030,8 +1030,8 @@
       "ref": "4203",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.8,
+      "pocetUseku": 26
     },
     {
       "osmId": 4125836,
@@ -1040,8 +1040,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.4,
+      "pocetUseku": 6
     },
     {
       "osmId": 2962124,
@@ -1050,8 +1050,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 12.6,
+      "pocetUseku": 60
     },
     {
       "osmId": 5987446,
@@ -1060,8 +1060,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.9,
+      "pocetUseku": 60
     },
     {
       "osmId": 4148074,
@@ -1070,8 +1070,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.9,
+      "pocetUseku": 20
     },
     {
       "osmId": 2659281,
@@ -1080,8 +1080,8 @@
       "ref": "4212",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 16.3,
+      "pocetUseku": 41
     },
     {
       "osmId": 237059,
@@ -1090,8 +1090,8 @@
       "ref": "4210",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.3,
+      "pocetUseku": 30
     },
     {
       "osmId": 237049,
@@ -1100,8 +1100,8 @@
       "ref": "4206",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 28.9,
+      "pocetUseku": 93
     },
     {
       "osmId": 6282999,
@@ -1110,8 +1110,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.1,
+      "pocetUseku": 22
     },
     {
       "osmId": 443751,
@@ -1120,8 +1120,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7,
+      "pocetUseku": 41
     },
     {
       "osmId": 253561,
@@ -1130,8 +1130,8 @@
       "ref": "4213",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 32.9,
+      "pocetUseku": 164
     },
     {
       "osmId": 254703,
@@ -1140,8 +1140,8 @@
       "ref": "4202",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.4,
+      "pocetUseku": 15
     },
     {
       "osmId": 75400,
@@ -1150,8 +1150,8 @@
       "ref": "3966",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 26.3,
+      "pocetUseku": 90
     },
     {
       "osmId": 64364,
@@ -1160,8 +1160,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.3,
+      "pocetUseku": 6
     },
     {
       "osmId": 237057,
@@ -1170,8 +1170,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 11.6,
+      "pocetUseku": 29
     },
     {
       "osmId": 64383,
@@ -1180,8 +1180,8 @@
       "ref": "4201",
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.8,
+      "pocetUseku": 49
     },
     {
       "osmId": 4146634,
@@ -1190,8 +1190,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.5,
+      "pocetUseku": 28
     },
     {
       "osmId": 3292908,
@@ -1200,8 +1200,8 @@
       "ref": "7361",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.1,
+      "pocetUseku": 18
     },
     {
       "osmId": 372304,
@@ -1210,8 +1210,8 @@
       "ref": "7203",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.8,
+      "pocetUseku": 4
     },
     {
       "osmId": 2700773,
@@ -1220,8 +1220,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3,
+      "pocetUseku": 8
     },
     {
       "osmId": 3263630,
@@ -1230,8 +1230,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.3,
+      "pocetUseku": 6
     },
     {
       "osmId": 237060,
@@ -1240,8 +1240,8 @@
       "ref": "7211",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 14.1,
+      "pocetUseku": 60
     },
     {
       "osmId": 3158304,
@@ -1250,8 +1250,8 @@
       "ref": "7223",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4,
+      "pocetUseku": 15
     },
     {
       "osmId": 3215053,
@@ -1260,8 +1260,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.9,
+      "pocetUseku": 17
     },
     {
       "osmId": 2659569,
@@ -1270,8 +1270,8 @@
       "ref": "7231",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.5,
+      "pocetUseku": 9
     },
     {
       "osmId": 3200958,
@@ -1280,8 +1280,8 @@
       "ref": "7215",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.4,
+      "pocetUseku": 21
     },
     {
       "osmId": 2659511,
@@ -1290,8 +1290,8 @@
       "ref": "7234",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.1,
+      "pocetUseku": 17
     },
     {
       "osmId": 331782,
@@ -1300,8 +1300,8 @@
       "ref": "7219",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.5,
+      "pocetUseku": 31
     },
     {
       "osmId": 2342233,
@@ -1310,8 +1310,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.8,
+      "pocetUseku": 6
     },
     {
       "osmId": 2653528,
@@ -1320,8 +1320,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.3,
+      "pocetUseku": 4
     },
     {
       "osmId": 9448361,
@@ -1331,7 +1331,7 @@
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
       "delkaKm": 0,
-      "pocetUseku": 0
+      "pocetUseku": 1
     },
     {
       "osmId": 16177035,
@@ -1340,8 +1340,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.1,
+      "pocetUseku": 1
     },
     {
       "osmId": 9448360,
@@ -1350,8 +1350,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.1,
+      "pocetUseku": 1
     },
     {
       "osmId": 16177034,
@@ -1360,8 +1360,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.1,
+      "pocetUseku": 1
     },
     {
       "osmId": 133849,
@@ -1370,8 +1370,8 @@
       "ref": "7217",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.1,
+      "pocetUseku": 25
     },
     {
       "osmId": 254702,
@@ -1380,8 +1380,8 @@
       "ref": "7237",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2,
+      "pocetUseku": 13
     },
     {
       "osmId": 20189582,
@@ -1390,8 +1390,8 @@
       "ref": "140007",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.7,
+      "pocetUseku": 19
     },
     {
       "osmId": 2678577,
@@ -1400,8 +1400,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.6,
+      "pocetUseku": 25
     },
     {
       "osmId": 2678463,
@@ -1410,8 +1410,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7,
+      "pocetUseku": 25
     },
     {
       "osmId": 3308959,
@@ -1420,8 +1420,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.5,
+      "pocetUseku": 21
     },
     {
       "osmId": 3734106,
@@ -1430,8 +1430,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.9,
+      "pocetUseku": 4
     },
     {
       "osmId": 3177056,
@@ -1440,8 +1440,8 @@
       "ref": "4214",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.9,
+      "pocetUseku": 16
     },
     {
       "osmId": 4110145,
@@ -1450,8 +1450,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.1,
+      "pocetUseku": 19
     },
     {
       "osmId": 3199247,
@@ -1460,8 +1460,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.3,
+      "pocetUseku": 25
     },
     {
       "osmId": 237052,
@@ -1470,8 +1470,8 @@
       "ref": "7212",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.3,
+      "pocetUseku": 9
     },
     {
       "osmId": 2658089,
@@ -1480,8 +1480,8 @@
       "ref": "7238",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.8,
+      "pocetUseku": 2
     },
     {
       "osmId": 1137807,
@@ -1490,8 +1490,8 @@
       "ref": "7209",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.5,
+      "pocetUseku": 5
     },
     {
       "osmId": 3199287,
@@ -1500,8 +1500,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.2,
+      "pocetUseku": 2
     },
     {
       "osmId": 4125771,
@@ -1510,8 +1510,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.4,
+      "pocetUseku": 36
     },
     {
       "osmId": 64354,
@@ -1520,8 +1520,8 @@
       "ref": "7308",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.4,
+      "pocetUseku": 32
     },
     {
       "osmId": 64343,
@@ -1530,8 +1530,8 @@
       "ref": "7307",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 30,
+      "pocetUseku": 90
     },
     {
       "osmId": 3325788,
@@ -1540,8 +1540,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10,
+      "pocetUseku": 30
     },
     {
       "osmId": 82497,
@@ -1550,8 +1550,8 @@
       "ref": "6984",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.2,
+      "pocetUseku": 25
     },
     {
       "osmId": 5986611,
@@ -1560,8 +1560,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.2,
+      "pocetUseku": 32
     },
     {
       "osmId": 4146515,
@@ -1570,8 +1570,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.5,
+      "pocetUseku": 29
     },
     {
       "osmId": 3158348,
@@ -1580,8 +1580,8 @@
       "ref": "7226",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.8,
+      "pocetUseku": 10
     },
     {
       "osmId": 331808,
@@ -1590,8 +1590,8 @@
       "ref": "6989",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.8,
+      "pocetUseku": 57
     },
     {
       "osmId": 6455279,
@@ -1600,8 +1600,8 @@
       "ref": "7362",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.9,
+      "pocetUseku": 9
     },
     {
       "osmId": 237050,
@@ -1610,8 +1610,8 @@
       "ref": "7236",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.7,
+      "pocetUseku": 5
     },
     {
       "osmId": 64382,
@@ -1620,8 +1620,8 @@
       "ref": "7310",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.5,
+      "pocetUseku": 27
     },
     {
       "osmId": 237045,
@@ -1630,8 +1630,8 @@
       "ref": "7201",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 12.3,
+      "pocetUseku": 30
     },
     {
       "osmId": 4118811,
@@ -1640,8 +1640,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.4,
+      "pocetUseku": 41
     },
     {
       "osmId": 2033327,
@@ -1650,8 +1650,8 @@
       "ref": "7207",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.1,
+      "pocetUseku": 25
     },
     {
       "osmId": 3902221,
@@ -1660,8 +1660,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.3,
+      "pocetUseku": 25
     },
     {
       "osmId": 16653107,
@@ -1670,8 +1670,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 15.5,
+      "pocetUseku": 86
     },
     {
       "osmId": 64384,
@@ -1680,8 +1680,8 @@
       "ref": "0401",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 28,
+      "pocetUseku": 79
     },
     {
       "osmId": 1714136,
@@ -1690,8 +1690,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.8,
+      "pocetUseku": 12
     },
     {
       "osmId": 5286605,
@@ -1700,8 +1700,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.1,
+      "pocetUseku": 20
     },
     {
       "osmId": 3861371,
@@ -1710,8 +1710,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 17,
+      "pocetUseku": 62
     },
     {
       "osmId": 11759319,
@@ -1720,8 +1720,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.9,
+      "pocetUseku": 82
     },
     {
       "osmId": 15844913,
@@ -1730,8 +1730,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.4,
+      "pocetUseku": 61
     },
     {
       "osmId": 11859325,
@@ -1740,8 +1740,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.1,
+      "pocetUseku": 13
     },
     {
       "osmId": 12722467,
@@ -1750,8 +1750,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.1,
+      "pocetUseku": 2
     },
     {
       "osmId": 11812041,
@@ -1760,8 +1760,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.8,
+      "pocetUseku": 6
     },
     {
       "osmId": 11924939,
@@ -1770,8 +1770,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.5,
+      "pocetUseku": 2
     },
     {
       "osmId": 13064753,
@@ -1780,8 +1780,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.2,
+      "pocetUseku": 3
     },
     {
       "osmId": 14295685,
@@ -1790,8 +1790,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.5,
+      "pocetUseku": 7
     },
     {
       "osmId": 14295686,
@@ -1800,8 +1800,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.2,
+      "pocetUseku": 2
     },
     {
       "osmId": 2333902,
@@ -1810,8 +1810,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 14.9,
+      "pocetUseku": 60
     },
     {
       "osmId": 3280873,
@@ -1820,8 +1820,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.9,
+      "pocetUseku": 20
     },
     {
       "osmId": 6177255,
@@ -1830,8 +1830,8 @@
       "ref": "E3",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:blue::E3:yellow",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 110.3,
+      "pocetUseku": 495
     },
     {
       "osmId": 3083510,
@@ -1840,8 +1840,8 @@
       "ref": "E3",
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:blue::E3:yellow",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 301.9,
+      "pocetUseku": 910
     },
     {
       "osmId": 951694,
@@ -1850,8 +1850,8 @@
       "ref": "GSS",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 443.6,
+      "pocetUseku": 1412
     },
     {
       "osmId": 19433435,
@@ -1860,8 +1860,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:red::Ш:blue",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 201.2,
+      "pocetUseku": 849
     },
     {
       "osmId": 4621732,
@@ -1870,8 +1870,8 @@
       "ref": "EB",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white::EB",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 295.9,
+      "pocetUseku": 903
     },
     {
       "osmId": 10443826,
@@ -1880,8 +1880,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.1,
+      "pocetUseku": 15
     },
     {
       "osmId": 3902222,
@@ -1890,8 +1890,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 19.6,
+      "pocetUseku": 140
     },
     {
       "osmId": 3280874,
@@ -1900,8 +1900,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.8,
+      "pocetUseku": 3
     },
     {
       "osmId": 11084525,
@@ -1910,8 +1910,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 11.7,
+      "pocetUseku": 36
     },
     {
       "osmId": 3361608,
@@ -1920,8 +1920,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.3,
+      "pocetUseku": 13
     },
     {
       "osmId": 2330139,
@@ -1930,8 +1930,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.8,
+      "pocetUseku": 23
     },
     {
       "osmId": 2342199,
@@ -1940,8 +1940,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.4,
+      "pocetUseku": 23
     },
     {
       "osmId": 2330137,
@@ -1950,8 +1950,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5,
+      "pocetUseku": 26
     },
     {
       "osmId": 5663111,
@@ -1960,8 +1960,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.7,
+      "pocetUseku": 29
     },
     {
       "osmId": 13237131,
@@ -1970,8 +1970,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.5,
+      "pocetUseku": 7
     },
     {
       "osmId": 6685710,
@@ -1980,8 +1980,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.2,
+      "pocetUseku": 18
     },
     {
       "osmId": 4753164,
@@ -1990,8 +1990,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_turned_T",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.1,
+      "pocetUseku": 1
     },
     {
       "osmId": 4148072,
@@ -2000,8 +2000,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.2,
+      "pocetUseku": 2
     },
     {
       "osmId": 3734107,
@@ -2010,8 +2010,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.8,
+      "pocetUseku": 6
     },
     {
       "osmId": 10578418,
@@ -2020,8 +2020,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 28.4,
+      "pocetUseku": 97
     },
     {
       "osmId": 5850799,
@@ -2030,8 +2030,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 57.9,
+      "pocetUseku": 185
     },
     {
       "osmId": 5286606,
@@ -2040,8 +2040,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.9,
+      "pocetUseku": 6
     },
     {
       "osmId": 6285306,
@@ -2050,8 +2050,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:none:none",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8,
+      "pocetUseku": 31
     },
     {
       "osmId": 401516,
@@ -2060,8 +2060,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 22.2,
+      "pocetUseku": 67
     },
     {
       "osmId": 5722752,
@@ -2070,8 +2070,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.6,
+      "pocetUseku": 3
     },
     {
       "osmId": 6685716,
@@ -2080,8 +2080,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.3,
+      "pocetUseku": 14
     },
     {
       "osmId": 6247833,
@@ -2090,8 +2090,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.1,
+      "pocetUseku": 22
     },
     {
       "osmId": 6247832,
@@ -2100,8 +2100,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.3,
+      "pocetUseku": 21
     },
     {
       "osmId": 1706938,
@@ -2110,8 +2110,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.2,
+      "pocetUseku": 17
     },
     {
       "osmId": 5602354,
@@ -2120,8 +2120,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.2,
+      "pocetUseku": 12
     },
     {
       "osmId": 5744809,
@@ -2130,8 +2130,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.8,
+      "pocetUseku": 7
     },
     {
       "osmId": 8238284,
@@ -2140,8 +2140,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.1,
+      "pocetUseku": 10
     },
     {
       "osmId": 9434744,
@@ -2150,8 +2150,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.7,
+      "pocetUseku": 1
     },
     {
       "osmId": 5750449,
@@ -2160,8 +2160,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 11,
+      "pocetUseku": 32
     },
     {
       "osmId": 6296213,
@@ -2170,8 +2170,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.4,
+      "pocetUseku": 28
     },
     {
       "osmId": 5990716,
@@ -2180,8 +2180,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.7,
+      "pocetUseku": 4
     },
     {
       "osmId": 1664738,
@@ -2190,8 +2190,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.6,
+      "pocetUseku": 25
     },
     {
       "osmId": 5985704,
@@ -2200,8 +2200,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.5,
+      "pocetUseku": 24
     },
     {
       "osmId": 8213537,
@@ -2210,8 +2210,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.9,
+      "pocetUseku": 15
     },
     {
       "osmId": 9051188,
@@ -2220,8 +2220,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.6,
+      "pocetUseku": 13
     },
     {
       "osmId": 10987474,
@@ -2230,8 +2230,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 12.4,
+      "pocetUseku": 12
     },
     {
       "osmId": 4578060,
@@ -2240,8 +2240,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.7,
+      "pocetUseku": 35
     },
     {
       "osmId": 19210473,
@@ -2250,8 +2250,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.5,
+      "pocetUseku": 30
     },
     {
       "osmId": 368539,
@@ -2260,8 +2260,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.3,
+      "pocetUseku": 1
     },
     {
       "osmId": 6295426,
@@ -2270,8 +2270,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.2,
+      "pocetUseku": 18
     },
     {
       "osmId": 6295427,
@@ -2280,8 +2280,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.9,
+      "pocetUseku": 22
     },
     {
       "osmId": 6295425,
@@ -2290,8 +2290,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.7,
+      "pocetUseku": 14
     },
     {
       "osmId": 3902203,
@@ -2300,8 +2300,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 13.9,
+      "pocetUseku": 71
     },
     {
       "osmId": 375184,
@@ -2310,8 +2310,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 21.1,
+      "pocetUseku": 95
     },
     {
       "osmId": 2693942,
@@ -2320,8 +2320,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "colour=green",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4,
+      "pocetUseku": 22
     },
     {
       "osmId": 3149754,
@@ -2330,8 +2330,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.2,
+      "pocetUseku": 7
     },
     {
       "osmId": 75395,
@@ -2340,8 +2340,8 @@
       "ref": "0340",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 26.6,
+      "pocetUseku": 141
     },
     {
       "osmId": 375183,
@@ -2350,8 +2350,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 12.4,
+      "pocetUseku": 59
     },
     {
       "osmId": 399450,
@@ -2360,8 +2360,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.4,
+      "pocetUseku": 29
     },
     {
       "osmId": 8162045,
@@ -2370,8 +2370,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.4,
+      "pocetUseku": 44
     },
     {
       "osmId": 6290595,
@@ -2380,8 +2380,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 17.9,
+      "pocetUseku": 41
     },
     {
       "osmId": 10746578,
@@ -2390,8 +2390,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.3,
+      "pocetUseku": 8
     },
     {
       "osmId": 6430660,
@@ -2400,8 +2400,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 11,
+      "pocetUseku": 23
     },
     {
       "osmId": 6421481,
@@ -2410,8 +2410,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 14.6,
+      "pocetUseku": 33
     },
     {
       "osmId": 5372180,
@@ -2420,8 +2420,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 23.1,
+      "pocetUseku": 61
     },
     {
       "osmId": 1086096,
@@ -2430,8 +2430,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.6,
+      "pocetUseku": 7
     },
     {
       "osmId": 12722209,
@@ -2440,8 +2440,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1,
+      "pocetUseku": 4
     },
     {
       "osmId": 11743907,
@@ -2450,8 +2450,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 16.8,
+      "pocetUseku": 24
     },
     {
       "osmId": 8297093,
@@ -2460,8 +2460,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.4,
+      "pocetUseku": 16
     },
     {
       "osmId": 1017407,
@@ -2470,8 +2470,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 35.8,
+      "pocetUseku": 128
     },
     {
       "osmId": 375393,
@@ -2480,8 +2480,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 18.5,
+      "pocetUseku": 36
     },
     {
       "osmId": 12115741,
@@ -2490,8 +2490,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.7,
+      "pocetUseku": 2
     },
     {
       "osmId": 10550258,
@@ -2500,8 +2500,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 6.6,
+      "pocetUseku": 9
     },
     {
       "osmId": 11859324,
@@ -2510,8 +2510,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.1,
+      "pocetUseku": 1
     },
     {
       "osmId": 3193754,
@@ -2520,8 +2520,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.3,
+      "pocetUseku": 13
     },
     {
       "osmId": 9976099,
@@ -2530,8 +2530,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 15.6,
+      "pocetUseku": 40
     },
     {
       "osmId": 16948650,
@@ -2540,8 +2540,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "colour=yellow",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.2,
+      "pocetUseku": 1
     },
     {
       "osmId": 2181597,
@@ -2550,8 +2550,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.9,
+      "pocetUseku": 15
     },
     {
       "osmId": 13063162,
@@ -2560,8 +2560,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_triangle",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 5.9,
+      "pocetUseku": 12
     },
     {
       "osmId": 10445066,
@@ -2570,8 +2570,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.7,
+      "pocetUseku": 7
     },
     {
       "osmId": 1714138,
@@ -2580,8 +2580,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 24,
+      "pocetUseku": 52
     },
     {
       "osmId": 7823159,
@@ -2590,8 +2590,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.1,
+      "pocetUseku": 40
     },
     {
       "osmId": 18943232,
@@ -2600,8 +2600,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white::🍄︎:blue",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 31.5,
+      "pocetUseku": 213
     },
     {
       "osmId": 11785306,
@@ -2610,8 +2610,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.1,
+      "pocetUseku": 27
     },
     {
       "osmId": 3364770,
@@ -2620,8 +2620,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 2.7,
+      "pocetUseku": 23
     },
     {
       "osmId": 3863255,
@@ -2630,8 +2630,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 3.8,
+      "pocetUseku": 12
     },
     {
       "osmId": 3864373,
@@ -2640,8 +2640,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 4.9,
+      "pocetUseku": 30
     },
     {
       "osmId": 2181917,
@@ -2650,8 +2650,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.9,
+      "pocetUseku": 18
     },
     {
       "osmId": 3176768,
@@ -2660,8 +2660,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:blue:shell_modern",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 114.7,
+      "pocetUseku": 435
     },
     {
       "osmId": 375392,
@@ -2670,8 +2670,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 395.8,
+      "pocetUseku": 1187
     },
     {
       "osmId": 375377,
@@ -2680,8 +2680,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 8.6,
+      "pocetUseku": 59
     },
     {
       "osmId": 2698298,
@@ -2690,8 +2690,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 110.8,
+      "pocetUseku": 487
     },
     {
       "osmId": 13272306,
@@ -2700,8 +2700,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow::yellow_diamond",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.6,
+      "pocetUseku": 62
     },
     {
       "osmId": 1714137,
@@ -2710,8 +2710,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 150.9,
+      "pocetUseku": 638
     },
     {
       "osmId": 6601212,
@@ -2720,8 +2720,8 @@
       "ref": null,
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 1.4,
+      "pocetUseku": 4
     },
     {
       "osmId": 6285305,
@@ -2730,8 +2730,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:none:none",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 9.6,
+      "pocetUseku": 24
     },
     {
       "osmId": 420639,
@@ -2740,8 +2740,8 @@
       "ref": null,
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.1,
+      "pocetUseku": 47
     },
     {
       "osmId": 3863256,
@@ -2750,8 +2750,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 0.8,
+      "pocetUseku": 9
     },
     {
       "osmId": 16863355,
@@ -2760,8 +2760,8 @@
       "ref": "VIA-CZE-106",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:red_diamond:via_czechia",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 72.7,
+      "pocetUseku": 255
     },
     {
       "osmId": 16863701,
@@ -2770,8 +2770,8 @@
       "ref": "VIA-CZE-107",
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:red_diamond:via_czechia",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 70.2,
+      "pocetUseku": 176
     },
     {
       "osmId": 4219761,
@@ -2780,8 +2780,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_corner",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.5,
+      "pocetUseku": 19
     },
     {
       "osmId": 3479196,
@@ -2790,8 +2790,8 @@
       "ref": null,
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 7.8,
+      "pocetUseku": 37
     },
     {
       "osmId": 64346,
@@ -2800,8 +2800,8 @@
       "ref": "7225",
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
-      "delkaKm": 0,
-      "pocetUseku": 0
+      "delkaKm": 10.6,
+      "pocetUseku": 41
     }
   ]
 }
