@@ -1,0 +1,64 @@
+# DATA-05: checklist turistických razítek z razitkuj.cz (kategorie „Horské a
+# turistické chaty") — se svolením Roberta Šindlera (KiBob), 21. 7. 2026.
+# Sandbox denních sessions na razitkuj.cz nedosáhne (proxy), GitHub Actions ano.
+# Spouští se ručně (Actions → „DATA-05: checklist razítek razitkuj.cz" → Run).
+#
+# NEstahuje skeny (autorská práva) — jen fakta: název razítka + odkaz na detail.
+# Výstup `data/razitka/_razitkuj-checklist.json` (název + URL) je vstup pro
+# párování s naším katalogem (scripts/data05-razitkuj-parovani.ts, běží lokálně).
+# Idempotentní — přepíše checklist aktuálním stavem webu.
+name: 'DATA-05: checklist razítek razitkuj.cz'
+
+on:
+  workflow_dispatch:
+    inputs:
+      strany:
+        description: 'Kolik stránek kategorie projít (prázdné = všechny, ~36). Vyplň číslo jen pro rychlý test.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data05-razitkuj-checklist
+  cancel-in-progress: false
+
+jobs:
+  checklist:
+    name: razitkuj.cz → checklist razítek (data/razitka)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Stažení checklistu razítek z razitkuj.cz
+        shell: bash
+        env:
+          STRANY_INPUT: ${{ inputs.strany }}
+        run: |
+          ARG=()
+          if [ -n "$STRANY_INPUT" ]; then ARG=(--strany "$STRANY_INPUT"); fi
+          npx tsx scripts/data05-razitkuj-checklist.ts "${ARG[@]}" | tee report.txt
+          echo '## DATA-05 — checklist razítek: výstup běhu' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit checklistu do main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/razitka
+          if git diff --cached --quiet; then
+            echo 'Beze změny checklistu — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m 'data: checklist razítek z razitkuj.cz — kategorie Horské chaty (z Actions)' \
+            -m 'Zdroj: razitkuj.cz (se svolením Roberta Šindlera/KiBob). Jen fakta (název + odkaz), bez skenů. Vstup pro párování s katalogem chat.'
+          git pull --rebase origin main
+          git push origin main
