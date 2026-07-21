@@ -1,0 +1,59 @@
+# Hotel Štumpovka — RUČNÍ KANDIDÁT (založen rozhodnutím redakce, NE z OSM
+# exportu DATA-01 — skript DATA-01 existující kandidáty nepřepisuje).
+# Rozhodnutí Michala (21. 7. 2026, hlavní session): Hotel Štumpovka =
+# samostatný objekt průvodce (typ horský hotel); založit při povýšení
+# Dvoraček, v profilu Dvoraček vzájemný odkaz. Založila session 33.
+# Vše verified: false — na web (data/chaty/) povyšovat až po dotažení
+# údajů z webu areálu (ruční běh). Nic nedomýšlet!
+
+nazev: Hotel Štumpovka
+slug: hotel-stumpovka
+zeme: cz
+oblast: krkonose
+typ: horsky-hotel
+
+# GPS záměrně NEvyplněna: objekt nebyl v OSM exportu DATA-01 a souřadnice
+# samotného hotelu zatím nemáme doloženy (bod Dvoraček je vedle) — doplnit
+# z OSM/mapy při povýšení, nedomýšlet z bodu sousední boudy.
+
+overeniLokace:
+  source: >-
+    existence a poloha v areálu Dvoraček: https://www.dvoracky.cz/ (areál
+    „Horský hotel Štumpovka a Horská bouda Dvoračky", Rokytnice nad Jizerou;
+    načteno 20. 7. 2026, DATA-03 session 22); blízkost k boudě Dvoračky
+    dokládají i fotky Commons (File:Dvoračky, hotel Štumpovka (01).jpg aj.,
+    geosearch 22–104 m od bodu Dvoraček)
+  verified: false
+  checked: '2026-07-20'
+kontakty:
+  web: https://www.dvoracky.cz/
+overeniProvoz:
+  source: https://www.dvoracky.cz/ (společný web areálu; načteno 20. 7. 2026, DATA-03 — údaje o hotelu samotném zatím nedotaženy)
+  verified: false
+  checked: '2026-07-20'
+interniPoznamky: >-
+  RUČNÍ KANDIDÁT — založen session 33 (21. 7. 2026) na základě rozhodnutí
+  Michala (21. 7. 2026, hlavní session): Hotel Štumpovka je samostatný objekt
+  průvodce, typ horský hotel; při povýšení doplnit vzájemný odkaz s profilem
+  Chaty Dvoračky (data/chaty/krkonose/chata-dvoracky.yaml — text hotel už
+  zmiňuje).
+
+  Web areálu dvoracky.cz popisuje oba objekty společně (zápis DATA-03,
+  session 22, načteno 20. 7. 2026): areál „Horský hotel Štumpovka a Horská
+  bouda Dvoračky", 1140 m n. m. (uvedeno pro areál), Rokytnice nad Jizerou,
+  restaurace s domácí kuchyní a vlastní pekárnou denně 9:00–24:00, otevřeno
+  363 dní v roce — které údaje platí pro hotel samotný, nutno dotáhnout
+  z podstránek webu (ruční běh).
+
+  K dotažení před povýšením: GPS a výška hotelu (OSM/mapa — nedomýšlet
+  z bodu Dvoraček), kapacita a vybavení hotelu, kontakty, otvírací doba
+  restaurace hotelu (má vlastní?), historie (jméno nese po Štumpovi?
+  — NEDOLOŽENO, jen otázka k rešerši).
+
+  Fotokandidáti: v souboru fotek Dvoraček
+  (data/kandidati/fotky/krkonose/chata-dvoracky.yaml) — jisté záběry hotelu:
+  File:Dvoračky, hotel Štumpovka (01).jpg (22 m), File:Dvoračky, hotel
+  Štumpovka, rampa.jpg (29 m), File:Hotel Štumpovka v noci.jpg (104 m),
+  File:Štumpovka a Dvoračky.jpg (86 m, obě budovy) — vše cs:ŠJů,
+  CC BY-SA 3.0; po povýšení může DATA-02 běh založit i vlastní soubor fotek
+  (bude mít vlastní GPS).

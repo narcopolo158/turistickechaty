@@ -1,0 +1,110 @@
+# Horská chata Krakonoš — profil povýšen z kandidáta DATA-01 po křížovém
+# ověření DATA-03 (rozhodnutí Michala: kategorie ✅ schválena en bloc, chat
+# 20. 7. 2026; povýšení trojice potvrzeno „přednostně" 21. 7. 2026).
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# POZOR — AKTUÁLNÍ PROVOZ NEDOLOŽEN: web z OSM (chatakrakonos.eu) NEEXISTUJE
+# (DNS se nepřekládá, ověřeno 20. 7. 2026); jediný obsahový zdroj je
+# treking.cz s poslední aktualizací 18. 11. 2019. Mrtvý web může značit
+# změnu provozovatele → PRIORITA DATA-04. Pole `stav` proto NEvyplněno,
+# kontakty z OSM (vázané na mrtvou doménu) do profilu nepřevzaty.
+# Data čtena 20. 7. 2026 (ruční běh DATA-03, session 22) — tato bezobslužná
+# session na web nedosáhne, přebírá doložené zápisy.
+
+nazev: Horská chata Krakonoš
+slug: horska-chata-krakonos
+zeme: cz
+typ: obsluhovana
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS a výška z OSM (ODbL) — výšku 1127 m shodně uvádí i treking.cz (2019).
+# Obec nevyplněna: treking.cz píše „u Pece pod Sněžkou", popisy fotek na
+# Commons řadí objekt do katastru Černého Dolu (Lučiny) — rozpor, nedomýšlet.
+lat: 50.6696833
+lng: 15.7334094
+vyska: 1127
+overeniLokace:
+  source: >-
+    GPS a výška: OpenStreetMap https://www.openstreetmap.org/way/31360806 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 1127 m a poloha „Bobí louky mezi Kolínskou a Pražskou boudou"
+    shodně: https://www.treking.cz/chaty/krakonos.htm (načteno 20. 7. 2026,
+    DATA-03 — stránka s poslední aktualizací 18. 11. 2019)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Údaje z roku 2019 — mohly se změnit (mrtvý web = možná změna provozovatele).
+nocleh: ano
+kapacita: 54
+pokoje:
+  - typ: Tří- až pětilůžkové pokoje (stav dle treking.cz k roku 2019)
+overeniNocleh:
+  source: https://www.treking.cz/chaty/krakonos.htm (54 lůžek ve 3–5lůžkových pokojích; načteno 20. 7. 2026, DATA-03 — POZOR, stránka aktualizována naposledy 18. 11. 2019, aktuální stav nutno ověřit)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: https://www.treking.cz/chaty/krakonos.htm (restaurace, bar a salónek; načteno 20. 7. 2026, DATA-03 — stav k roku 2019, aktuální provoz nutno ověřit)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Kontakty vědomě nevyplněny: OSM nese telefon a e-mail vázané na doménu
+# chatakrakonos.eu, která neexistuje (DNS se nepřekládá) — bez ověření je
+# nepublikujeme (viz interniPoznamky). Doplní DATA-04.
+overeniProvoz:
+  source: >-
+    web z OSM (chatakrakonos.eu) je mrtvý — DNS se nepřekládá (ověřeno
+    20. 7. 2026, DATA-03 session 22); aktuální kontakty a provoz zatím
+    nedoloženy, ověří DATA-04
+  verified: false
+  checked: '2026-07-20'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata ve výšce 1 127 m n. m. na Bobích loukách mezi Kolínskou a
+  Pražskou boudou u Pece pod Sněžkou. Údaje o provozu pocházejí z roku
+  2019 a web chaty je nedostupný — aktuální stav před cestou ověřte.
+text:
+  - >-
+    Horská chata Krakonoš stojí ve výšce 1 127 m n. m. mezi Kolínskou a
+    Pražskou boudou — průvodce treking.cz lokalitu uvádí jako Bobí louky
+    u Pece pod Sněžkou, popisy fotografií na Wikimedia Commons jako
+    Lučiny. Podle treking.cz chata nabízela restauraci, bar a salónek
+    a 54 lůžek ve tří- až pětilůžkových pokojích.
+  - >-
+    Poctivé upozornění: popis vychází ze stránky naposledy aktualizované
+    v listopadu 2019 a web chaty uvedený v OpenStreetMap už neexistuje.
+    Existenci budovy dokládají fotografie z května 2023, aktuální provoz
+    a kontakty se nám ale zatím doložit nepodařilo — před cestou si je
+    ověřte a s chatou nepočítejte najisto.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/0/0c/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._186%2C_bouda_Krakono%C5%A1_%2802%29.jpg
+    alt: Bouda Krakonoš v enklávě Lučiny
+    typ: soucasna
+    autor: ŠJů
+    licence: cc-by
+    licencePoznamka: CC BY 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._186,_bouda_Krakono%C5%A1_(02).jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (DATA-02, geosearch 40 m od GPS chaty, název souboru „Černý Důl, Lučiny, čp. 186, bouda Krakonoš (02)", popis „House no. 186, Krakonoš", autor ŠJů, 2592×1944, snímek z 27. 5. 2023, licence CC BY 4.0 z licenčního síta DATA-02)
+      verified: false # licenci očima zkontroluje redakce; popis souboru jmenuje boudu Krakonoš — jistý záběr budovy
+      checked: '2026-07-21'
+
+zdroje:
+  - popis: Treking.cz — profil chaty (poslední aktualizace 18. 11. 2019)
+    url: https://www.treking.cz/chaty/krakonos.htm
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/way/31360806
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/horska-chata-krakonos.yaml (DATA-01) po křížovém ověření DATA-03 (session 22) a rozhodnutí Michala (✅ en bloc, chat 20. 7. 2026; trojice „přednostně" potvrzena 21. 7. 2026).
+  Povýšení provedla bezobslužná session 33 (21. 7.) z už doložených zápisů — WebFetch bezobslužně nefunguje.
+  PRIORITA DATA-04: web z OSM (chatakrakonos.eu) mrtvý (DNS, ověřeno 20. 7.), jediný obsahový zdroj treking.cz je z 11/2019 — dohledat aktuální provozovatele, kontakty a stav provozu (telefonát?). Pole `stav` záměrně nevyplněno, dokud se provoz nedoloží.
+  Kontakty z OSM do profilu NEpřevzaty (telefon +420 724 101 561, e-mail info@chatakrakonos.eu — obojí vázané na mrtvou doménu, stav OSM dat 2026-06-12); až DATA-04 potvrdí platné kontakty, doplnit.
+  Katastr: popisy fotek ŠJů na Commons uvádějí „Černý Důl, Lučiny, čp. 186", treking.cz „Bobí louky u Pece pod Sněžkou" — obě verze popisují touž enklávu mezi Kolínskou a Pražskou boudou (fotky Pražské boudy jsou 130–270 m od bodu); oficiální adresu doložit v DATA-04, pole obec zatím nevyplněno.
+  Existence budovy: fotky ŠJů z 27. 5. 2023 (hero + (01)) — budova v tu dobu stála; o provozu neříkají nic.

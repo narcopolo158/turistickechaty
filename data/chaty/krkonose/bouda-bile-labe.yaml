@@ -1,0 +1,106 @@
+# Bouda Bílé Labe — profil povýšen z kandidáta DATA-01 po křížovém ověření
+# DATA-03 (rozhodnutí Michala: kategorie ✅ schválena en bloc, chat 20. 7. 2026;
+# povýšení trojice potvrzeno „přednostně" 21. 7. 2026, hlavní session).
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# Data z webu čtena 20. 7. 2026 (ruční běh DATA-03, session 22) — tato
+# bezobslužná session na web nedosáhne, přebírá doložené zápisy. Homepage
+# webu byla na údaje skoupá (bez kontaktů/kapacity) — kontakty níže jsou
+# z OSM tagů, dotažení z podstránek webu čeká na ruční běh.
+
+nazev: Bouda Bílé Labe
+slug: bouda-bile-labe
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL); výška a poloha z webu boudy. Obec nevyplněna — web
+# uvádí jen vzdálenost od Špindlerova Mlýna, katastr nedoložen.
+lat: 50.7410064
+lng: 15.6475053
+vyska: 1000
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/31128149 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 1000 m n. m. a poloha na levém břehu Bílého Labe cca 5 km od centra
+    Špindlerova Mlýna: https://www.boudabilelabe.cz/ (načteno 20. 7. 2026,
+    DATA-03 session 22)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacitu homepage webu neuváděla — nedomýšlet, dotáhnout z podstránek.
+nocleh: ano
+overeniNocleh:
+  source: https://www.boudabilelabe.cz/ (ubytování na horské chatě; načteno 20. 7. 2026, DATA-03 — kapacita na homepage neuvedena)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: https://www.boudabilelabe.cz/ (restaurace s terasou a domácí kuchyní; načteno 20. 7. 2026, DATA-03)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Kontakty a otvírací doba jen z OSM tagů (stav dat 2026-06-12) — homepage
+# webu je neuváděla, proti webu neověřeny.
+otviraciDoba: |-
+  Denně 10:30–18:00 (údaj z OSM, redakčně neověřeno — před cestou ověřit na webu boudy).
+kontakty:
+  telefon: +420 499 422 121
+  email: bile.labe@seznam.cz
+  web: https://www.boudabilelabe.cz/
+overeniProvoz:
+  source: >-
+    telefon, e-mail a otvírací doba (Mo–Su 10:30–18:00): OpenStreetMap
+    https://www.openstreetmap.org/way/31128149 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (stav dat 2026-06-12); web boudy:
+    https://www.boudabilelabe.cz/ (načteno 20. 7. 2026, DATA-03 — homepage
+    kontakty neuváděla)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata na levém břehu Bílého Labe ve výšce kolem 1 000 m n. m.,
+  asi 5 km od centra Špindlerova Mlýna. Restaurace s terasou a domácí
+  kuchyní, k dispozici je i ubytování.
+text:
+  - >-
+    Bouda Bílé Labe stojí na levém břehu Bílého Labe v nadmořské výšce
+    kolem 1 000 metrů, zhruba 5 kilometrů od centra Špindlerova Mlýna —
+    tak polohu popisuje web boudy.
+  - >-
+    Chata nabízí restauraci s terasou a domácí kuchyní i ubytování.
+    Podrobnosti k pokojům, kapacitě a otvírací době doporučujeme před
+    cestou ověřit na webu boudy — homepage je na tyto údaje skoupá a
+    profil je zatím vede jako neověřené.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/9/99/Czechy_-_Bouda_Bile_Labe_-_panoramio.jpg
+    alt: Bouda Bílé Labe v údolí Bílého Labe
+    typ: soucasna
+    autor: krysi@
+    licence: cc-by
+    licencePoznamka: CC BY 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Czechy_-_Bouda_Bile_Labe_-_panoramio.jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (DATA-02, geosearch 28 m od GPS chaty, název souboru „Czechy - Bouda Bile Labe", autor krysi@ (Panoramio), 4000×3000, licence CC BY 3.0 z licenčního síta DATA-02)
+      verified: false # licenci i to, že snímek zachycuje budovu (popis = jen název boudy), očima zkontroluje redakce; sourozenecké záběry téhož autora s „mostek" v názvu ukazují okolí
+      checked: '2026-07-21'
+
+zdroje:
+  - popis: Web boudy (boudabilelabe.cz) — poloha, restaurace, ubytování
+    url: https://www.boudabilelabe.cz/
+  - popis: OpenStreetMap (GPS objektu, kontakty, otvírací doba — ODbL)
+    url: https://www.openstreetmap.org/way/31128149
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/bouda-bile-labe.yaml (DATA-01) po křížovém ověření DATA-03 (session 22, web načten 20. 7. 2026) a rozhodnutí Michala (✅ en bloc, chat 20. 7. 2026; trojice „přednostně" potvrzena 21. 7. 2026).
+  Povýšení provedla bezobslužná session 33 (21. 7.) z už doložených zápisů — WebFetch bezobslužně nefunguje, web znovu nečten.
+  Dohledat při ručním běhu z podstránek webu: kapacita a typy pokojů, kontakty přímo z webu (teď jen OSM), otvírací doba restaurace (OSM tag může být zastaralý), historie boudy, případně sezónnost.
+  Hero fotka: krysi@ (Panoramio import), CC BY 3.0 — autor dohledatelný (podmínka síta pro CC BY splněna), ale popis souboru je jen název boudy; redakce potvrdí, že snímek zachycuje budovu (další čtyři kandidáty téhož autora ukazují i můstek přes Bílé Labe).

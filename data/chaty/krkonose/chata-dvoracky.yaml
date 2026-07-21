@@ -1,0 +1,107 @@
+# Chata Dvoračky — profil povýšen z kandidáta DATA-01 po křížovém ověření
+# DATA-03 (rozhodnutí Michala: kategorie ✅ schválena en bloc, chat 20. 7. 2026;
+# povýšení trojice potvrzeno „přednostně" 21. 7. 2026, hlavní session).
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# Data z webu čtena 20. 7. 2026 (ruční běh DATA-03, session 22) — tato
+# bezobslužná session na web nedosáhne, přebírá doložené zápisy.
+# POZOR: web dvoracky.cz popisuje AREÁL dvou objektů (Horská bouda Dvoračky
+# + Horský hotel Štumpovka). Štumpovka = samostatný objekt průvodce
+# (rozhodnutí Michala 21. 7. 2026) — kandidát založen touto session,
+# vzájemný odkaz v UI doplnit po jejím povýšení.
+
+nazev: Chata Dvoračky
+slug: chata-dvoracky
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+aliasy:
+  - nazev: Horská bouda Dvoračky
+    poznamka: tvar názvu na webu areálu (dvoracky.cz, DATA-03)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL); výška a obec z webu areálu.
+lat: 50.747423
+lng: 15.5121665
+vyska: 1140
+obec: Rokytnice nad Jizerou
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/252520174 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 1140 m n. m. a Rokytnice nad Jizerou: https://www.dvoracky.cz/
+    (načteno 20. 7. 2026, DATA-03 session 22)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacitu načtená podoba webu neuváděla (popisuje celý areál) — nedomýšlet.
+nocleh: ano
+overeniNocleh:
+  source: https://www.dvoracky.cz/ (ubytování v areálu bouda + hotel; načteno 20. 7. 2026, DATA-03 — kapacita samotné boudy v načtené podobě neuvedena)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: pečivo z vlastní pekárny
+overeniObcerstveni:
+  source: https://www.dvoracky.cz/ (restaurace s domácí kuchyní a vlastní pekárnou, denně 9:00–24:00; načteno 20. 7. 2026, DATA-03)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Restaurace denně 9:00–24:00; areál otevřen 363 dní v roce.
+kontakty:
+  web: https://www.dvoracky.cz/
+overeniProvoz:
+  source: https://www.dvoracky.cz/ (restaurace denně 9:00–24:00, otevřeno 363 dní v roce; načteno 20. 7. 2026, DATA-03 — telefon/e-mail v načtené podobě neuvedeny, OSM je nenese)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská bouda ve výšce 1 140 m n. m. nad Rokytnicí nad Jizerou v západních
+  Krkonoších. Restaurace s domácí kuchyní a vlastní pekárnou má otevřeno
+  denně, areál funguje 363 dní v roce.
+text:
+  - >-
+    Chata Dvoračky stojí ve výšce 1 140 m n. m. nad Rokytnicí nad Jizerou
+    v západních Krkonoších. Web areálu ji vede jako Horskou boudu
+    Dvoračky.
+  - >-
+    Restaurace s domácí kuchyní a pečivem z vlastní pekárny má otevřeno
+    denně od 9 do 24 hodin a areál je v provozu 363 dní v roce. Součástí
+    areálu je i sousední horský hotel Štumpovka, který v průvodci povedeme
+    jako samostatný objekt.
+  - >-
+    Kapacitu ubytování přímo na boudě a kontakty web v načtené podobě
+    neuváděl — před cestou je doporučujeme ověřit na webu areálu.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/7/73/Chata_Dvora%C4%8Dky.jpg
+    alt: Chata Dvoračky nad Rokytnicí nad Jizerou
+    typ: soucasna
+    autor: cs:ŠJů
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Chata_Dvora%C4%8Dky.jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (DATA-02, geosearch 23 m od GPS chaty, název souboru „Chata Dvoračky", popis „Dvoračky Hostel", autor cs:ŠJů, 2448×3264, licence CC BY-SA 3.0 z licenčního síta DATA-02)
+      verified: false # licenci očima zkontroluje redakce; snímek je na výšku — pokud se do hero nehodí, alternativa File:Štumpovka a Dvoračky.jpg (na šířku, obě budovy areálu)
+      checked: '2026-07-21'
+
+zdroje:
+  - popis: Web areálu (dvoracky.cz) — bouda + hotel Štumpovka, restaurace, provoz
+    url: https://www.dvoracky.cz/
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/way/252520174
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chata-dvoracky.yaml (DATA-01) po křížovém ověření DATA-03 (session 22, web načten 20. 7. 2026) a rozhodnutí Michala (✅ en bloc, chat 20. 7. 2026; trojice „přednostně" potvrzena 21. 7. 2026).
+  Povýšení provedla bezobslužná session 33 (21. 7.) z už doložených zápisů — WebFetch bezobslužně nefunguje, web znovu nečten.
+  AREÁL: rozhodnutí Michala (21. 7. 2026, hlavní session) — Hotel Štumpovka je samostatný objekt průvodce (typ horský hotel); kandidátní profil založen touto session (data/kandidati/krkonose/hotel-stumpovka.yaml). Až bude Štumpovka povýšena, doplnit vzájemný odkaz mezi profily v UI (text už hotel zmiňuje).
+  Dohledat při ručním běhu z podstránek webu: kapacita boudy, telefon/e-mail, sezónní uzavírky (2 dny v roce?), historie boudy (web ji možná má na podstránce).
+  Hero fotka: jistý záběr budovy (popis „Dvoračky Hostel"), ale na výšku — alternativa na šířku File:Štumpovka a Dvoračky.jpg (obě budovy areálu, 86 m).
