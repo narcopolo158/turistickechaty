@@ -33,7 +33,11 @@ import { type TrasaRelace } from './data06-trasy'
 
 const TRASY_ADRESAR = join(process.cwd(), 'data', 'trasy', 'krkonose')
 const EXPORT_JSON = join(TRASY_ADRESAR, '_overpass-trasy.json')
-const VYCHOZI_JSON = join(process.cwd(), 'data', 'oblasti', 'krkonose', 'vychozi-body-kandidati.json')
+const OBLAST_ADRESAR = join(process.cwd(), 'data', 'oblasti', 'krkonose')
+// Přednostně kurátorovaný seznam středisek (reálná východiska túr, ruční výběr),
+// jinak fallback na plný OSM katalog kandidátů.
+const STREDISKA_YAML = join(OBLAST_ADRESAR, 'vychozi-body.yaml')
+const VYCHOZI_JSON = join(OBLAST_ADRESAR, 'vychozi-body-kandidati.json')
 const CHATY_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
 const VYSTUP_JSON = join(TRASY_ADRESAR, 'pristupove-trasy.json')
 
@@ -109,7 +113,6 @@ const nactiChaty = (dir: string): Chata[] => {
 
 const main = () => {
   if (!existsSync(EXPORT_JSON)) throw new Error(`Export tras ${EXPORT_JSON} neexistuje — workflow „DATA-06: export značených tras".`)
-  if (!existsSync(VYCHOZI_JSON)) throw new Error(`Katalog výchozích bodů ${VYCHOZI_JSON} neexistuje — workflow „DATA-06: výchozí body oblasti".`)
 
   const { elementy } = nactiExport(readFileSync(EXPORT_JSON, 'utf8'))
   const graf = postavGraf(elementy as unknown as TrasaRelace[])
@@ -117,16 +120,31 @@ const main = () => {
   for (const s of graf.sousede.values()) hran += s.length
   console.log(`Graf: ${graf.uzly.size} uzlů, ${hran / 2} hran.`)
 
+  // Zdroj výchozích bodů: přednostně kurátorovaný seznam středisek (reálná
+  // východiska), jinak fallback na plný OSM katalog kandidátů.
+  let vychoziBody: VychoziBod[]
+  let zdrojBodu: string
+  if (existsSync(STREDISKA_YAML)) {
+    const kur = parse(readFileSync(STREDISKA_YAML, 'utf8')) as { strediska?: VychoziBod[] }
+    vychoziBody = kur.strediska ?? []
+    zdrojBodu = `kurátorovaná střediska (${vychoziBody.length})`
+  } else if (existsSync(VYCHOZI_JSON)) {
+    const katalog = JSON.parse(readFileSync(VYCHOZI_JSON, 'utf8')) as { body?: VychoziBod[] }
+    vychoziBody = katalog.body ?? []
+    zdrojBodu = `OSM katalog kandidátů (${vychoziBody.length})`
+  } else {
+    throw new Error(`Chybí ${STREDISKA_YAML} i ${VYCHOZI_JSON} — bez výchozích bodů nelze routovat.`)
+  }
+
   // Výchozí body → přichycení na síť (dál než MAX_SNAP_M se vynechá).
-  const katalog = JSON.parse(readFileSync(VYCHOZI_JSON, 'utf8')) as { body?: VychoziBod[] }
   const vychoziSnap: VychoziSnap[] = []
   let vbMimo = 0
-  for (const b of katalog.body ?? []) {
+  for (const b of vychoziBody) {
     const nej = najdiNejblizsiUzel(graf, b.lat, b.lng)
     if (nej && nej.vzdalenostM <= MAX_SNAP_M) vychoziSnap.push({ nazev: b.nazev, typ: b.typ, uzel: nej.klic })
     else vbMimo++
   }
-  console.log(`Výchozích bodů: ${(katalog.body ?? []).length} → připojeno ${vychoziSnap.length} (${vbMimo} dál než ${MAX_SNAP_M} m).`)
+  console.log(`Výchozí body (${zdrojBodu}) → připojeno ${vychoziSnap.length} (${vbMimo} dál než ${MAX_SNAP_M} m).`)
 
   const chaty = nactiChaty(CHATY_ADRESAR)
   const vystup: { slug: string; nazev: string; pristupSnapM: number; pristupy: Pristup[] }[] = []

@@ -1,0 +1,119 @@
+# Kurátorovaný seznam výchozích STŘEDISEK Krkonoš (DATA-06 increment 2 — ruční
+# výběr dle návrhů Michala 21. 7. 2026: reálná východiska túr, ne každý bod v OSM).
+# GPS z OSM (ODbL) přes katalog výchozích bodů. U lanovek se bere DOLNÍ (údolní)
+# stanice = kde se skutečně vychází. Routing přístupových tras bere PŘEDNOSTNĚ
+# tento seznam.
+# Doplnit (GPS nedohledány, nedomýšlet): Pláň (lanovka Špindl), Zlaté návrší
+# (bus H. Mísečky), Špindlerova bouda (bus, hřeben), Jagniątków (PL).
+zdroj: OpenStreetMap (ODbL) — GPS z katalogu výchozích bodů (data06)
+strediska:
+  - nazev: Špindlerův Mlýn
+    typ: obec
+    lat: 50.7256448
+    lng: 15.6067567
+    zeme: cz
+  - nazev: Medvědín
+    typ: lanovka
+    lat: 50.7338872
+    lng: 15.6065356
+    zeme: cz
+  - nazev: Harrachov
+    typ: obec
+    lat: 50.7720087
+    lng: 15.4315431
+    zeme: cz
+  - nazev: Benecko
+    typ: obec
+    lat: 50.6663343
+    lng: 15.5481647
+    zeme: cz
+  - nazev: Rokytnice nad Jizerou
+    typ: obec
+    lat: 50.7272292
+    lng: 15.4638743
+    zeme: cz
+  - nazev: Pec pod Sněžkou
+    typ: obec
+    lat: 50.6935744
+    lng: 15.7335607
+    zeme: cz
+  - nazev: Horní Malá Úpa
+    typ: obec
+    lat: 50.7452021
+    lng: 15.8214465
+    zeme: cz
+  - nazev: Malá Úpa
+    typ: obec
+    lat: 50.7240834
+    lng: 15.8137272
+    zeme: cz
+  - nazev: Pomezní boudy
+    typ: lanovka
+    lat: 50.7457527
+    lng: 15.8205955
+    zeme: cz
+  - nazev: Janské Lázně
+    typ: obec
+    lat: 50.6305685
+    lng: 15.7806938
+    zeme: cz
+  - nazev: Vrchlabí
+    typ: obec
+    lat: 50.6271452
+    lng: 15.6095779
+    zeme: cz
+  - nazev: Horní Mísečky
+    typ: obec
+    lat: 50.7363366
+    lng: 15.5690898
+    zeme: cz
+  - nazev: Černá hora
+    typ: lanovka
+    lat: 50.6480786
+    lng: 15.7515673
+    zeme: cz
+  - nazev: Čertova hora
+    typ: lanovka
+    lat: 50.7616941
+    lng: 15.4295043
+    zeme: cz
+  - nazev: Strážné
+    typ: obec
+    lat: 50.6646011
+    lng: 15.6139289
+    zeme: cz
+  - nazev: Velká Úpa
+    typ: obec
+    lat: 50.6899833
+    lng: 15.7679437
+    zeme: cz
+  - nazev: Svoboda nad Úpou
+    typ: obec
+    lat: 50.6262304
+    lng: 15.8164318
+    zeme: cz
+  - nazev: Lysá hora
+    typ: lanovka
+    lat: 50.7391405
+    lng: 15.487156
+    zeme: cz
+  - nazev: Dolní Dvůr
+    typ: obec
+    lat: 50.6520957
+    lng: 15.6558321
+    zeme: cz
+  - nazev: Karpacz
+    typ: obec
+    lat: 50.7747485
+    lng: 15.7542035
+    zeme: pl
+  - nazev: Szklarska Poręba
+    typ: obec
+    lat: 50.8268011
+    lng: 15.5221261
+    zeme: pl
+  - nazev: Przesieka
+    typ: obec
+    lat: 50.8087495
+    lng: 15.6653035
+    zeme: pl
