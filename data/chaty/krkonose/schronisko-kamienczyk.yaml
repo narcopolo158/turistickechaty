@@ -1,0 +1,119 @@
+# Schronisko Kamieńczyk — profil povýšen z kandidáta DATA-01 po křížovém ověření
+# DATA-03. Původní polský název jako primární (rozhodnutí Michala). Každá skupina
+# má blok overeni; verified: false = doložený zdroj, ověří teprve redakce/Michal
+# (konvence B, 21. 7. 2026 — verified: true jen po vlastní kontrole).
+# Oficiální web schroniska nedohledán; obsah z katalogu schroniskaturystyczne.pl.
+
+nazev: Schronisko Kamieńczyk
+slug: schronisko-kamienczyk
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.8143401
+lng: 15.4966649
+vyska: 830
+obec: Szklarska Poręba
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/90393483 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    výška 830 m n.p.m. a poloha u vodopádu Kamieńczyk nad Szklarskou Porębou
+    (polské Krkonoše): https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/
+  verified: false
+  checked: '2026-07-21'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 19 # 6 dvoulůžkových pokojů + 1 třílůžkový
+overeniNocleh:
+  source: https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/ (19 míst — 6 pokojů 2lůžkových a 1 pokoj 3lůžkový)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/ (bufet s teplými jídly, malý obchod s občerstvením, terasa; poblíž Szałas Sielanka s grilovanými pokrmy)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Provozovatel soukromý (od 1995). Kontakty katalog neuvádí → nevyplněno.
+overeniProvoz:
+  source: https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/ (v provozu jako soukromé schronisko od roku 1995; kontakty na stránce neuvedeny)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: >-
+  Autem jen na parkoviště v Szklarské Porębě, dál pěšky — od parkoviště zhruba
+  30 minut, z centra města po červené značce asi 50 minut k vodopádu
+  Kamieńczyk, u něhož schronisko stojí.
+overeniPristup:
+  source: https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/ (nejbližší město Szklarska Poręba ~30 min pěšky; červená značka z centra ~50 min / z parkoviště ~30 min)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1995 # jako schronisko; budova starší (dřívější německý hostinec)
+milniky:
+  - rok: 1900
+    udalost: Na počátku 20. století zde stál německý horský hostinec (asi 35 míst)
+  - rok: 1984
+    udalost: Budova během opravy vyhořela
+  - rok: 1995
+    udalost: Manželé Sieleccy objekt otevřeli jako soukromé turistické schronisko
+overeniHistorie:
+  source: https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/ (schronisko od 1995 — Sieleccy; dříve německý hostinec ~35 míst na počátku 20. stol., po 2. sv. válce vojenské využití, 1984 při opravě vyhořelo)
+  verified: false
+  checked: '2026-07-21'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Malé soukromé horské schronisko (830 m) u vodopádu Kamieńczyk nad Szklarskou
+  Porębou v polských Krkonoších. Devatenáct lůžek, bufet s teplou kuchyní a
+  terasou — a k němu jeden z nejvyšších vodopádů polských Sudet.
+text:
+  - >-
+    Schronisko Kamieńczyk stojí ve výšce zhruba 830 m u vodopádu Kamieńczyk,
+    v lese nad Szklarskou Porębou. Objekt má starší kořeny — na počátku
+    20. století zde býval německý horský hostinec zhruba na 35 míst; po druhé
+    světové válce budovu využívala armáda a v roce 1984 při opravě vyhořela.
+    Jako soukromé turistické schronisko funguje od roku 1995, kdy ho otevřeli
+    manželé Sieleccy.
+  - >-
+    Dnes nabízí devatenáct lůžek v šesti dvoulůžkových a jednom třílůžkovém
+    pokoji, bufet s teplými jídly, malý obchod s občerstvením a terasu; poblíž
+    stojí Szałas Sielanka s grilovanými pokrmy. Autem se dá dojet na parkoviště
+    v Szklarské Porębě, dál se pokračuje pěšky — od parkoviště asi půl hodiny
+    po červené značce k vodopádu.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/7/7d/SchroniskoKamie%C5%84czyk2021.jpg
+    alt: Schronisko Kamieńczyk — horské schronisko u vodopádu nad Szklarskou Porębou
+    typ: soucasna
+    autor: Karol Szejner
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:SchroniskoKamie%C5%84czyk2021.jpg
+    prevzatoDne: '2026-07-21'
+    overeni:
+      source: Wikimedia Commons (geosearch DATA-02, 15 m od objektu, popis „Schronisko Kamieńczyk w 2021 roku", 1809×1504, licence CC BY-SA 4.0 z licenčního síta DATA-02)
+      verified: false # licenci na stránce souboru zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-21'
+
+zdroje:
+  - popis: Schroniskaturystyczne.pl — katalogový profil (výška, kapacita, stravování, historie, přístup)
+    url: https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/
+  - popis: OpenStreetMap (poloha objektu, ODbL)
+    url: https://www.openstreetmap.org/way/90393483
+
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/schronisko-kamienczyk.yaml (DATA-01) po
+  křížovém ověření DATA-03. Zdroj katalog schroniskaturystyczne.pl (oficiální
+  web schroniska nedohledán) — vše verified: false dle konvence B (verified:
+  true jen po vlastním ověření Michala). Do DATA-04 dotáhnout: kontakty
+  (telefon/e-mail/web), přesnou GPS u vodopádu, provozní sezónu.
