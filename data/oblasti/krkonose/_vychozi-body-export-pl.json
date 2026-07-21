@@ -1,0 +1,1891 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-12T12:14:17Z",
+    "timestamp_areas_base": "2026-06-12T12:14:17Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 29265061,
+  "lat": 50.7675032,
+  "lon": 15.7291177,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "check_date": "2025-02-01",
+    "ele": "820",
+    "name": "Dolna stacja kolei linowej „Zbyszek”",
+    "name:de": "Talstation Sesselbahn „Zbyszek”",
+    "name:pl": "Dolna stacja kolei linowej „Zbyszek”",
+    "opening_hours": "Mo-Th 09:00-16:00; Fr-Su 09:00-18:00",
+    "public_transport": "station",
+    "website": "https://karpaczskiarena.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 31916636,
+  "lat": 50.8367363,
+  "lon": 15.9697522,
+  "tags": {
+    "name": "Wieściszowice",
+    "old_name:de": "Rohnau",
+    "place": "village",
+    "population": "400",
+    "postal_code": "58-410",
+    "source:population": "wikipedia",
+    "teryt:rm": "01",
+    "teryt:simc": "0191129",
+    "teryt:stan_na": "2009-01-01",
+    "wikidata": "Q2320341",
+    "wikipedia": "pl:Wieściszowice"
+  }
+},
+{
+  "type": "node",
+  "id": 31916718,
+  "lat": 50.6306282,
+  "lon": 16.0432833,
+  "tags": {
+    "name": "Uniemyśl",
+    "old_name:de": "Berthelsdorf",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:rm": "01",
+    "teryt:simc": "0190578",
+    "teryt:stan_na": "2009-01-01",
+    "wikidata": "Q117365",
+    "wikipedia": "pl:Uniemyśl (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 31916864,
+  "lat": 50.8268011,
+  "lon": 15.5221261,
+  "tags": {
+    "name": "Szklarska Poręba",
+    "name:de": "Schreiberhau",
+    "name:prefix": "miasto",
+    "name:ru": "Шклярска-Поремба",
+    "name:sr": "Шкларска Поремба",
+    "name:uk": "Шклярська Поремба",
+    "place": "town",
+    "population": "5933",
+    "population:date": "2021-06-30",
+    "ref:prng": "135570",
+    "source": "TERYT",
+    "source:population": "Narodowy Spis Powszechny 2021",
+    "teryt:rm": "96",
+    "teryt:simc": "0936368",
+    "teryt:terc": "0206041",
+    "teryt:typ": "miasto",
+    "url": "https://polska-org.pl/504504,Szklarska_Poreba.html",
+    "wikidata": "Q186495",
+    "wikipedia": "pl:Szklarska Poręba"
+  }
+},
+{
+  "type": "node",
+  "id": 31916877,
+  "lat": 50.7704704,
+  "lon": 15.9280215,
+  "tags": {
+    "name": "Szarocin",
+    "old_name:de": "Pfaffendorf",
+    "place": "village",
+    "postal_code": "58-400",
+    "teryt:rm": "01",
+    "teryt:simc": "0190029",
+    "teryt:stan_na": "2009-01-01",
+    "wikidata": "Q117515",
+    "wikipedia": "pl:Szarocin"
+  }
+},
+{
+  "type": "node",
+  "id": 31917046,
+  "lat": 50.7423466,
+  "lon": 15.9592422,
+  "tags": {
+    "name": "Stara Białka",
+    "old_name:de": "Altweissbach",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:rm": "01",
+    "teryt:simc": "0190555",
+    "teryt:stan_na": "2009-01-01",
+    "wikidata": "Q913767",
+    "wikipedia": "pl:Stara Białka"
+  }
+},
+{
+  "type": "node",
+  "id": 31917052,
+  "lat": 50.8511418,
+  "lon": 15.7334812,
+  "tags": {
+    "name": "Staniszów",
+    "name:de": "Stonsdorf",
+    "name:pl": "Staniszów",
+    "name:prefix": "wieś",
+    "name:ru": "Станишув",
+    "place": "village",
+    "population": "817",
+    "ref:prng": "127960",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0192146",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504487,Staniszow.html",
+    "wikidata": "Q464615",
+    "wikipedia": "pl:Staniszów"
+  }
+},
+{
+  "type": "node",
+  "id": 31917275,
+  "lat": 50.7929341,
+  "lon": 15.7780256,
+  "tags": {
+    "name": "Ścięgny",
+    "name:de": "Steinseiffen",
+    "name:pl": "Ścięgny",
+    "name:prefix": "wieś",
+    "name:ru": "Сьцегны",
+    "old_name:pl": "Kamionka;Ściegny",
+    "place": "village",
+    "population": "1045",
+    "ref:prng": "136768",
+    "source": "TERYT",
+    "source:population": "wikipedia",
+    "teryt:rm": "01",
+    "teryt:simc": "0192152",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504488,Sciegny.html",
+    "wikidata": "Q3886723",
+    "wikipedia": "pl:Ścięgny"
+  }
+},
+{
+  "type": "node",
+  "id": 255229804,
+  "lat": 50.7942433,
+  "lon": 15.5145085,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "url": "https://photos.app.goo.gl/UKHPi4HWdK8Rs6zF7"
+  }
+},
+{
+  "type": "node",
+  "id": 264866592,
+  "lat": 50.7984740,
+  "lon": 15.5029717,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 264866593,
+  "lat": 50.7952899,
+  "lon": 15.5131233,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 264866598,
+  "lat": 50.7954149,
+  "lon": 15.4985573,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 264866599,
+  "lat": 50.7909323,
+  "lon": 15.5041469,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 264866642,
+  "lat": 50.7954672,
+  "lon": 15.4986623,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 264866643,
+  "lat": 50.7909666,
+  "lon": 15.5042018,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 370165392,
+  "lat": 50.7837361,
+  "lon": 16.0336631,
+  "tags": {
+    "name": "Kamienna Góra",
+    "name:cs": "Kamenná Hora",
+    "name:lt": "Kamena Gura",
+    "name:ru": "Каменна-Гура",
+    "name:uk": "Камінна Ґура",
+    "old_name:de": "Landeshut in Schlesien",
+    "place": "town",
+    "population": "17998",
+    "population:date": "2021-06-30",
+    "source:population": "Narodowy Spis Powszechny 2021",
+    "teryt:rm": "96",
+    "teryt:simc": "0936026",
+    "teryt:stan_na": "2009-01-01",
+    "teryt:terc": "0207011",
+    "teryt:updated_by": "teryt2osm combine.py v. 49",
+    "website": "https://www.kamiennagora.pl/",
+    "wikidata": "Q219110",
+    "wikipedia": "pl:Kamienna Góra"
+  }
+},
+{
+  "type": "node",
+  "id": 370165396,
+  "lat": 50.7070882,
+  "lon": 16.0003894,
+  "tags": {
+    "name": "Lubawka",
+    "name:ru": "Любавка",
+    "name:sr": "Лубавка",
+    "name:uk": "Любавка",
+    "old_name:de": "Liebau in Schlesien",
+    "place": "town",
+    "population": "5722",
+    "population:date": "2021-06-30",
+    "postal_code": "58-420",
+    "source:population": "Narodowy Spis Powszechny 2021",
+    "teryt:rm": "96",
+    "teryt:simc": "0936180",
+    "teryt:stan_na": "2009-01-01",
+    "teryt:terc": "0207034",
+    "wikidata": "Q1005403",
+    "wikipedia": "pl:Lubawka"
+  }
+},
+{
+  "type": "node",
+  "id": 385563063,
+  "lat": 50.8365551,
+  "lon": 15.7871345,
+  "tags": {
+    "name": "Mysłakowice",
+    "name:de": "Zillerthal-Erdmannsdorf",
+    "name:pl": "Mysłakowice",
+    "name:prefix": "wieś",
+    "name:ru": "Мыслаковице",
+    "place": "village",
+    "ref:prng": "84474",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0191448",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504473,Myslakowice.html",
+    "wikidata": "Q490118",
+    "wikipedia": "pl:Mysłakowice"
+  }
+},
+{
+  "type": "node",
+  "id": 385563064,
+  "lat": 50.8109678,
+  "lon": 15.7628827,
+  "tags": {
+    "name": "Miłków",
+    "name:de": "Arnsdorf",
+    "name:pl": "Miłków",
+    "name:prefix": "wieś",
+    "name:ru": "Милкув",
+    "place": "village",
+    "population": "2076",
+    "ref:prng": "80739",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0192086",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504482,Milkow.html",
+    "wikidata": "Q1293548",
+    "wikipedia": "pl:Miłków (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 385563068,
+  "lat": 50.7747485,
+  "lon": 15.7542035,
+  "tags": {
+    "name": "Karpacz",
+    "name:cs": "Karpacz",
+    "name:de": "Krummhübel",
+    "name:lv": "Karpača",
+    "name:pl": "Karpacz",
+    "name:prefix": "miasto",
+    "name:ru": "Карпач",
+    "name:sk": "Karpacz",
+    "name:uk": "Карпач",
+    "old_name:pl": "Drogosławice;Karbacz;Krzywa Góra",
+    "place": "town",
+    "population": "4457",
+    "population:date": "2021-06-30",
+    "ref:prng": "50906",
+    "source": "TERYT",
+    "source:population": "Narodowy Spis Powszechny 2021",
+    "teryt:rm": "96",
+    "teryt:simc": "0936032",
+    "teryt:terc": "0206011",
+    "teryt:typ": "miasto",
+    "url": "https://polska-org.pl/504462,Karpacz.html",
+    "website": "http://www.karpacz.net/",
+    "wikidata": "Q606126",
+    "wikipedia": "pl:Karpacz"
+  }
+},
+{
+  "type": "node",
+  "id": 412258495,
+  "lat": 50.7852469,
+  "lon": 16.0228244,
+  "tags": {
+    "name": "Kamienna Góra",
+    "name:de": "Landeshut in Schlesien",
+    "name:pl": "Kamienna Góra",
+    "name:ru": "Каменна-Гура",
+    "name:uk": "Каміенна-Ґура",
+    "operator": "PKP Polskie Linie Kolejowe",
+    "operator:short": "PKP PLK",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "KG",
+    "train": "yes",
+    "wikidata": "Q2292795",
+    "wikipedia": "pl:Kamienna Góra (stacja kolejowa)"
+  }
+},
+{
+  "type": "node",
+  "id": 418567764,
+  "lat": 50.8516702,
+  "lon": 16.0086390,
+  "tags": {
+    "name": "Marciszów",
+    "old_name:de": "Merzdorf",
+    "place": "village",
+    "postal_code": "58-410",
+    "teryt:simc": "0191052",
+    "wikidata": "Q983617",
+    "wikipedia": "pl:Marciszów"
+  }
+},
+{
+  "type": "node",
+  "id": 418567765,
+  "lat": 50.8106356,
+  "lon": 16.0392400,
+  "tags": {
+    "name": "Dębrznik",
+    "old_name:de": "Krausendorf",
+    "place": "village",
+    "postal_code": "58-400",
+    "teryt:simc": "0189859",
+    "wikidata": "Q5321104",
+    "wikipedia": "pl:Dębrznik"
+  }
+},
+{
+  "type": "node",
+  "id": 418569489,
+  "lat": 50.7840785,
+  "lon": 15.9588902,
+  "tags": {
+    "name": "Pisarzowice",
+    "old_name:de": "Schreibendorf",
+    "place": "village",
+    "population": "903",
+    "postal_code": "58-424",
+    "teryt:simc": "0189977",
+    "wikidata": "Q3258230",
+    "wikipedia": "pl:Pisarzowice (powiat kamiennogórski)"
+  }
+},
+{
+  "type": "node",
+  "id": 418569490,
+  "lat": 50.7785504,
+  "lon": 15.9097439,
+  "tags": {
+    "name": "Leszczyniec",
+    "old_name:de": "Haselbach",
+    "place": "village",
+    "postal_code": "58-425",
+    "teryt:simc": "0189931",
+    "wikidata": "Q606765",
+    "wikipedia": "pl:Leszczyniec (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 418569491,
+  "lat": 50.7656366,
+  "lon": 15.8848803,
+  "tags": {
+    "name": "Ogorzelec",
+    "old_name:de": "Dittersbach",
+    "place": "village",
+    "postal_code": "58-400",
+    "teryt:simc": "0189954",
+    "wikidata": "Q1980138",
+    "wikipedia": "pl:Ogorzelec (powiat kamiennogórski)"
+  }
+},
+{
+  "type": "node",
+  "id": 418569492,
+  "lat": 50.7937534,
+  "lon": 15.8338236,
+  "tags": {
+    "name": "Kowary",
+    "name:de": "Schmiedeberg",
+    "name:pl": "Kowary",
+    "name:prefix": "miasto",
+    "name:ru": "Ковары",
+    "name:uk": "Ковари",
+    "old_name:pl": "Krzyżatka",
+    "place": "town",
+    "population": "10217",
+    "population:date": "2021-06-30",
+    "ref:prng": "60153",
+    "source": "TERYT",
+    "source:population": "Narodowy Spis Powszechny 2021",
+    "teryt:rm": "96",
+    "teryt:simc": "0936078",
+    "teryt:terc": "0206021",
+    "teryt:typ": "miasto",
+    "url": "https://polska-org.pl/504463,Kowary.html",
+    "wikidata": "Q985656",
+    "wikipedia": "pl:Kowary"
+  }
+},
+{
+  "type": "node",
+  "id": 418569493,
+  "lat": 50.8181961,
+  "lon": 15.8020626,
+  "tags": {
+    "name": "Kostrzyca",
+    "name:pl": "Kostrzyca",
+    "name:prefix": "wieś",
+    "name:ru": "Костшица",
+    "old_name:de": "Quirl",
+    "place": "village",
+    "population": "888",
+    "ref:prng": "59132",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0191419",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504470,Kostrzyca.html",
+    "wikidata": "Q6433593",
+    "wikipedia": "pl:Kostrzyca (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 420321795,
+  "lat": 50.8403386,
+  "lon": 15.8407132,
+  "tags": {
+    "name": "Krogulec",
+    "name:pl": "Krogulec",
+    "name:prefix": "wieś",
+    "name:ru": "Крогулец",
+    "old_name:de": "Södrich",
+    "place": "village",
+    "ref:prng": "62032",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0191425",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504471,Krogulec.html",
+    "wikidata": "Q6438776",
+    "wikipedia": "pl:Krogulec (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 420321797,
+  "lat": 50.8512944,
+  "lon": 15.8594243,
+  "tags": {
+    "name": "Karpniki",
+    "name:pl": "Karpniki",
+    "name:prefix": "wieś",
+    "name:ru": "Карпники",
+    "old_name:de": "Fischbach",
+    "place": "village",
+    "population": "742",
+    "ref:prng": "50981",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0191394",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504469,Karpniki.html",
+    "wikidata": "Q654575",
+    "wikipedia": "pl:Karpniki"
+  }
+},
+{
+  "type": "node",
+  "id": 421194141,
+  "lat": 50.8240732,
+  "lon": 15.8728352,
+  "tags": {
+    "name": "Gruszków",
+    "name:pl": "Gruszków",
+    "name:prefix": "wieś",
+    "name:ru": "Грушкув",
+    "old_name:de": "Bärndorf",
+    "place": "village",
+    "ref:prng": "39638",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0191388",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504467,Gruszkow.html",
+    "wikidata": "Q5612321",
+    "wikipedia": "pl:Gruszków (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 421194142,
+  "lat": 50.8381862,
+  "lon": 15.8865696,
+  "tags": {
+    "name": "Strużnica",
+    "name:pl": "Strużnica",
+    "name:prefix": "wieś",
+    "name:ru": "Стружница",
+    "old_name:de": "Neudorf",
+    "place": "village",
+    "ref:prng": "132174",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0191454",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504474,Struznica.html",
+    "wikidata": "Q7625498",
+    "wikipedia": "pl:Strużnica"
+  }
+},
+{
+  "type": "node",
+  "id": 421194144,
+  "lat": 50.8649475,
+  "lon": 15.7953182,
+  "tags": {
+    "name": "Łomnica",
+    "name:de": "Lomnitz",
+    "name:pl": "Łomnica",
+    "name:prefix": "wieś",
+    "name:ru": "Ломница",
+    "place": "village",
+    "population": "1930",
+    "ref:prng": "73144",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0191431",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504472,Lomnica.html",
+    "wikidata": "Q4844294",
+    "wikipedia": "pl:Łomnica (powiat karkonoski)"
+  }
+},
+{
+  "type": "node",
+  "id": 421194149,
+  "lat": 50.8168745,
+  "lon": 15.7255392,
+  "tags": {
+    "name": "Sosnówka",
+    "name:de": "Seidorf",
+    "name:pl": "Sosnówka",
+    "name:prefix": "wieś",
+    "name:ru": "Соснувка",
+    "old_name:pl": "Drewnica",
+    "place": "village",
+    "population": "1117",
+    "ref:prng": "126875",
+    "source": "TERYT",
+    "source:population": "wikipedia",
+    "teryt:rm": "01",
+    "teryt:simc": "0192130",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504486,Sosnowka.html",
+    "wikidata": "Q7563896",
+    "wikipedia": "pl:Sosnówka (powiat karkonoski)"
+  }
+},
+{
+  "type": "node",
+  "id": 501562165,
+  "lat": 50.8087495,
+  "lon": 15.6653035,
+  "tags": {
+    "name": "Przesieka",
+    "name:de": "Hain",
+    "name:pl": "Przesieka",
+    "name:prefix": "wieś",
+    "name:ru": "Пшесека",
+    "old_name:pl": "Matejkowice",
+    "place": "village",
+    "population": "502",
+    "ref:prng": "111124",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0192117",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504485,Przesieka.html",
+    "website": "https://www.przesieka.pl/",
+    "wikidata": "Q7253449",
+    "wikipedia": "pl:Przesieka (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 520475282,
+  "lat": 50.6129375,
+  "lon": 16.0272993,
+  "tags": {
+    "name": "Okrzeszyn",
+    "name:cs": "Okřešín",
+    "name:de": "Albendorf",
+    "old_name:de": "Albendorf",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:simc": "0190510"
+  }
+},
+{
+  "type": "node",
+  "id": 560772324,
+  "lat": 50.8326128,
+  "lon": 15.5186779,
+  "tags": {
+    "name": "Szklarska Poręba Górna",
+    "name:de": "Bahnhof Schreiberhau (oben)",
+    "name:pl": "Szklarska Poręba Górna",
+    "name:ru": "Шкларска Поремба Гурна",
+    "name:uk": "Шкларська Поремба Ґурна",
+    "operator": "PKP Polskie Linie Kolejowe",
+    "operator:short": "PKP PLK",
+    "public_transport": "station",
+    "railway": "station",
+    "uic_name": "Szklarska Poreba Gorna",
+    "uic_ref": "5100058",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 560773006,
+  "lat": 50.8517152,
+  "lon": 15.5914678,
+  "tags": {
+    "name": "Piechowice",
+    "name:ru": "Пеховице",
+    "name:uk": "Пєховіце",
+    "railway": "station",
+    "uic_name": "Piechowice",
+    "uic_ref": "5102759"
+  }
+},
+{
+  "type": "node",
+  "id": 598617974,
+  "lat": 50.8494747,
+  "lon": 15.5976047,
+  "tags": {
+    "name": "Piechowice",
+    "name:de": "Petersdorf",
+    "name:lv": "Pehovice",
+    "name:pl": "Piechowice",
+    "name:prefix": "miasto",
+    "name:ru": "Пеховице",
+    "name:sr": "Пјеховице",
+    "name:uk": "Пеховіце",
+    "name:zh": "佩霍維采",
+    "place": "town",
+    "population": "5952",
+    "population:date": "2021-06-30",
+    "ref:prng": "99984",
+    "source": "TERYT",
+    "source:population": "Narodowy Spis Powszechny 2021",
+    "teryt:rm": "96",
+    "teryt:simc": "0936285",
+    "teryt:terc": "0206031",
+    "teryt:typ": "miasto",
+    "url": "https://polska-org.pl/504477,Piechowice.html",
+    "wikidata": "Q988074",
+    "wikipedia": "pl:Piechowice"
+  }
+},
+{
+  "type": "node",
+  "id": 634385567,
+  "lat": 50.7058495,
+  "lon": 16.0030366,
+  "tags": {
+    "historic:railway": "station",
+    "name": "Lubawka",
+    "name:de": "Liebau in Schlesien",
+    "name:pl": "Lubawka",
+    "operator": "PKP Polskie Linie Kolejowe",
+    "operator:short": "PKP PLK",
+    "public_transport": "station",
+    "railway": "halt",
+    "railway:ref": "Lb",
+    "wikidata": "Q3439359",
+    "wikipedia": "pl:Lubawka (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 692603778,
+  "lat": 50.8317543,
+  "lon": 15.6835944,
+  "tags": {
+    "name": "Podgórzyn",
+    "name:de": "Giersdorf",
+    "name:pl": "Podgórzyn",
+    "name:prefix": "wieś",
+    "name:ru": "Подгужин",
+    "place": "village",
+    "population": "1789",
+    "ref:prng": "104622",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0192100",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504484,Podgorzyn.html",
+    "wikidata": "Q992939",
+    "wikipedia": "pl:Podgórzyn (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 692603783,
+  "lat": 50.8649800,
+  "lon": 15.9803900,
+  "tags": {
+    "name": "Ciechanowice",
+    "old_name:de": "Rudelstadt",
+    "place": "village",
+    "postal_code": "58-410",
+    "teryt:simc": "0191030"
+  }
+},
+{
+  "type": "node",
+  "id": 692603856,
+  "lat": 50.8585100,
+  "lon": 16.0485000,
+  "tags": {
+    "is_in:province": "województwo dolnośląskie",
+    "name": "Pustelnik",
+    "old_name:de": "Einsiedel",
+    "place": "village",
+    "postal_code": "58-410",
+    "source": "http://ump.waw.pl/ retrieved 19:07:52 04/10/10 (UMP-JeleniaGora/src/cities-JeleniaGora.pnt-converted.txt)",
+    "teryt:simc": "0191081"
+  }
+},
+{
+  "type": "node",
+  "id": 692603857,
+  "lat": 50.8383100,
+  "lon": 15.7137900,
+  "tags": {
+    "name": "Marczyce",
+    "name:de": "Märzdorf",
+    "name:pl": "Marczyce",
+    "name:prefix": "wieś",
+    "name:ru": "Марчице",
+    "place": "village",
+    "ref:prng": "77520",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0192070",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504481,Marczyce.html",
+    "wikidata": "Q6758587",
+    "wikipedia": "pl:Marczyce"
+  }
+},
+{
+  "type": "node",
+  "id": 692603858,
+  "lat": 50.8217200,
+  "lon": 15.7474000,
+  "tags": {
+    "name": "Głębock",
+    "name:de": "Glausnitz",
+    "name:pl": "Głębock",
+    "name:prefix": "wieś",
+    "name:ru": "Глембоцк",
+    "place": "village",
+    "ref:prng": "33335",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0192063",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504480,Glebock.html",
+    "wikidata": "Q154524",
+    "wikipedia": "pl:Głębock (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 692603860,
+  "lat": 50.7915817,
+  "lon": 16.0421970,
+  "tags": {
+    "name": "Ptaszków",
+    "old_name:de": "Vogelsdorf",
+    "place": "village",
+    "postal_code": "58-400",
+    "source": "http://ump.waw.pl/ retrieved 19:07:52 04/10/10 (UMP-JeleniaGora/src/cities-JeleniaGora.pnt-converted.txt)",
+    "teryt:simc": "0189990"
+  }
+},
+{
+  "type": "node",
+  "id": 692603861,
+  "lat": 50.7549380,
+  "lon": 16.0179377,
+  "tags": {
+    "name": "Przedwojów",
+    "old_name:de": "Reichhennersdorf",
+    "place": "village",
+    "population": "630",
+    "postal_code": "58-400",
+    "source:population": "wikipedia",
+    "teryt:simc": "0189983"
+  }
+},
+{
+  "type": "node",
+  "id": 692603863,
+  "lat": 50.7158103,
+  "lon": 15.9270197,
+  "tags": {
+    "name": "Miszkowice",
+    "old_name:de": "Michelsdorf",
+    "place": "village",
+    "population": "596",
+    "postal_code": "58-422",
+    "teryt:simc": "0190495"
+  }
+},
+{
+  "type": "node",
+  "id": 692603864,
+  "lat": 50.7077097,
+  "lon": 15.9641365,
+  "tags": {
+    "name": "Bukówka",
+    "old_name:de": "Buchwald",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:simc": "0190466"
+  }
+},
+{
+  "type": "node",
+  "id": 692603865,
+  "lat": 50.6971531,
+  "lon": 15.9460894,
+  "tags": {
+    "name": "Szczepanów",
+    "old_name:de": "Tschöpsdorf",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:simc": "0190561"
+  }
+},
+{
+  "type": "node",
+  "id": 692603916,
+  "lat": 50.8682646,
+  "lon": 15.8327609,
+  "tags": {
+    "name": "Bobrów",
+    "name:de": "Boberstein",
+    "name:pl": "Bobrów",
+    "name:prefix": "wieś",
+    "name:ru": "Бобрув",
+    "place": "village",
+    "ref:prng": "7276",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0191477",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/5840875,Bobrow.html",
+    "wikidata": "Q9174870",
+    "wikipedia": "pl:Bobrów (powiat karkonoski)"
+  }
+},
+{
+  "type": "node",
+  "id": 692603918,
+  "lat": 50.8603900,
+  "lon": 15.9441700,
+  "tags": {
+    "name": "Mniszków",
+    "name:prefix": "wieś",
+    "name:ru": "Мнишкув",
+    "old_name:de": "Waltersdorf",
+    "place": "village",
+    "ref:prng": "82099",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0189718",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504447,Mniszkow.html",
+    "wikidata": "Q138788",
+    "wikipedia": "pl:Mniszków (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 692603919,
+  "lat": 50.8258105,
+  "lon": 15.6612548,
+  "tags": {
+    "name": "Zachełmie",
+    "name:de": "Saalberg",
+    "name:pl": "Zachełmie",
+    "name:prefix": "wieś",
+    "name:ru": "Захелме",
+    "place": "village",
+    "ref:prng": "155206",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0192169",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504489,Zachelmie.html",
+    "wikidata": "Q3886756",
+    "wikipedia": "pl:Zachełmie (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 692603920,
+  "lat": 50.7925800,
+  "lon": 15.6951100,
+  "tags": {
+    "name": "Borowice",
+    "name:de": "Baberhäuser",
+    "name:pl": "Borowice",
+    "name:prefix": "wieś",
+    "name:ru": "Боровице",
+    "old_name:pl": "Bobrowice",
+    "place": "village",
+    "ref:prng": "8949",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0192057",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504478,Borowice.html",
+    "wikidata": "Q3885070",
+    "wikipedia": "pl:Borowice (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 692603921,
+  "lat": 50.7625000,
+  "lon": 15.9861800,
+  "tags": {
+    "name": "Janiszów",
+    "old_name:de": "Johnsdorf",
+    "place": "village",
+    "postal_code": "58-400",
+    "teryt:simc": "0189888"
+  }
+},
+{
+  "type": "node",
+  "id": 692603960,
+  "lat": 50.7271552,
+  "lon": 15.9515366,
+  "tags": {
+    "name": "Paprotki",
+    "old_name:de": "Städtisch Hartau",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:simc": "0190549"
+  }
+},
+{
+  "type": "node",
+  "id": 692604235,
+  "lat": 50.6665250,
+  "lon": 16.0492171,
+  "tags": {
+    "name": "Błażejów",
+    "old_name:de": "Blasdorf bei Schömberg",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:simc": "0190443"
+  }
+},
+{
+  "type": "node",
+  "id": 692604247,
+  "lat": 50.7356742,
+  "lon": 15.9834678,
+  "tags": {
+    "name": "Błażkowa",
+    "name:pl": "Błażkowa",
+    "name:prefix": "wieś",
+    "old_name1:de": "Oberblasdorf",
+    "old_name2:de": "Niederblasdorf",
+    "old_name:de": "Blasdorf",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:rm": "01",
+    "teryt:simc": "0190450",
+    "teryt:stan_na": "2012-06-13",
+    "wikidata": "Q2111513",
+    "wikipedia": "pl:Błażkowa (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 692604299,
+  "lat": 50.8024500,
+  "lon": 15.9808000,
+  "tags": {
+    "name": "Raszów",
+    "name:cs": "Rašov",
+    "name:de": "Rysindorf",
+    "old_name:de": "Reussendorf",
+    "place": "village",
+    "postal_code": "58-400",
+    "teryt:simc": "0190006"
+  }
+},
+{
+  "type": "node",
+  "id": 907975411,
+  "lat": 50.8266625,
+  "lon": 15.4970629,
+  "tags": {
+    "name": "Szklarska Poręba Huta",
+    "name:pl": "Szklarska Poręba Huta",
+    "railway": "halt",
+    "uic_ref": "5163718"
+  }
+},
+{
+  "type": "node",
+  "id": 1038553441,
+  "lat": 50.8483578,
+  "lon": 15.5569553,
+  "tags": {
+    "name": "Szklarska Poręba Dolna",
+    "operator": "PKP Polskie Linie Kolejowe",
+    "operator:short": "PKP PLK",
+    "railway": "halt",
+    "uic_name": "Szklarska Poreba Dolna",
+    "uic_ref": "5103601"
+  }
+},
+{
+  "type": "node",
+  "id": 1048964566,
+  "lat": 50.8384681,
+  "lon": 15.5399788,
+  "tags": {
+    "name": "Szklarska Poręba Średnia",
+    "operator": "PKP Polskie Linie Kolejowe",
+    "operator:short": "PKP PLK",
+    "railway": "halt",
+    "uic_ref": "5103742"
+  }
+},
+{
+  "type": "node",
+  "id": 1048964614,
+  "lat": 50.8182634,
+  "lon": 15.5174915,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "opening_hours": "Mo-Su 09:00-16:30",
+    "public_transport": "station",
+    "website": "https://szrenicaskiarena.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 1516573056,
+  "lat": 50.7545367,
+  "lon": 15.9338950,
+  "tags": {
+    "name": "Nowa Białka",
+    "name:prefix": "wieś",
+    "old_name:de": "Neuweissbach",
+    "place": "village",
+    "postal_code": "58-400",
+    "teryt:simc": "0190035",
+    "wikidata": "Q7065947",
+    "wikipedia": "pl:Nowa Białka"
+  }
+},
+{
+  "type": "node",
+  "id": 1520392294,
+  "lat": 50.7385223,
+  "lon": 15.9177719,
+  "tags": {
+    "name": "Paczyn",
+    "old_name:de": "Petzelsdorf",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:simc": "0190532"
+  }
+},
+{
+  "type": "node",
+  "id": 1561851985,
+  "lat": 50.7187611,
+  "lon": 16.0434358,
+  "tags": {
+    "name": "Lipienica",
+    "old_name:de": "Lindenau",
+    "place": "village",
+    "population": "144",
+    "teryt:simc": "0189948",
+    "wikidata": "Q264666",
+    "wikipedia": "pl:Lipienica (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587493224,
+  "lat": 50.8639918,
+  "lon": 15.6573613,
+  "tags": {
+    "name": "Jelenia Góra Orle",
+    "operator": "PKP Polskie Linie Kolejowe",
+    "operator:short": "PKP PLK",
+    "railway": "halt",
+    "uic_name": "Jelenia Gora Orle",
+    "uic_ref": "5101433",
+    "wikidata": "Q2802094",
+    "wikipedia": "pl:Jelenia Góra Orle"
+  }
+},
+{
+  "type": "node",
+  "id": 1638917479,
+  "lat": 50.8178535,
+  "lon": 15.5168180,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1638917482,
+  "lat": 50.7974480,
+  "lon": 15.5086946,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1758913989,
+  "lat": 50.6901912,
+  "lon": 15.8795171,
+  "tags": {
+    "name": "Niedamirów",
+    "old_name:de": "Kunzendorf",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:simc": "0190503"
+  }
+},
+{
+  "type": "node",
+  "id": 1758913995,
+  "lat": 50.7005496,
+  "lon": 15.8958570,
+  "tags": {
+    "name": "Opawa",
+    "old_name:de": "Oppau",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:simc": "0190526"
+  }
+},
+{
+  "type": "node",
+  "id": 1758914009,
+  "lat": 50.7200681,
+  "lon": 15.9002101,
+  "tags": {
+    "name": "Jarkowice",
+    "old_name:de": "Städtisch Hermsdorf",
+    "place": "village",
+    "postal_code": "58-420",
+    "teryt:simc": "0190489"
+  }
+},
+{
+  "type": "node",
+  "id": 1779135843,
+  "lat": 50.8697521,
+  "lon": 15.6852449,
+  "tags": {
+    "name": "Jelenia Góra Cieplice",
+    "name:de": "Hirschberg Warmbrunn",
+    "name:pl": "Jelenia Góra Cieplice",
+    "railway": "halt",
+    "train": "yes",
+    "wikidata": "Q1877342",
+    "wikipedia": "pl:Jelenia Góra Cieplice"
+  }
+},
+{
+  "type": "node",
+  "id": 1779137875,
+  "lat": 50.8517332,
+  "lon": 15.6452871,
+  "tags": {
+    "name": "Jelenia Góra Sobieszów",
+    "railway": "halt",
+    "uic_name": "Jelenia Gora Sobies.",
+    "uic_ref": "5101423",
+    "wikidata": "Q2564971",
+    "wikipedia": "pl:Jelenia Góra Sobieszów"
+  }
+},
+{
+  "type": "node",
+  "id": 2136783800,
+  "lat": 50.7825021,
+  "lon": 15.7616497,
+  "tags": {
+    "name": "Karpacz",
+    "name:cs": "Karpacz",
+    "name:lv": "Karpača",
+    "name:pl": "Karpacz",
+    "name:ru": "Карпач",
+    "name:sk": "Karpacz",
+    "name:uk": "Карпач",
+    "network": "DSDiK",
+    "network:short": "KD",
+    "old_name:de": "Krummhübel",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "operator:short": "DSDiK",
+    "operator:wikidata": "Q11694615",
+    "public_transport": "station",
+    "railway": "station",
+    "start_date": "2025-06-15",
+    "wheelchair": "yes",
+    "wikidata": "Q659618",
+    "wikipedia": "pl:Karpacz (stacja kolejowa)"
+  }
+},
+{
+  "type": "node",
+  "id": 2141799447,
+  "lat": 50.7588728,
+  "lon": 15.7287692,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2144118764,
+  "lat": 50.7555367,
+  "lon": 15.7269275,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2144118781,
+  "lat": 50.7607113,
+  "lon": 15.7272962,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2145768907,
+  "lat": 50.7503335,
+  "lon": 15.7112671,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2145768920,
+  "lat": 50.7531203,
+  "lon": 15.7139864,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2145768927,
+  "lat": 50.7549173,
+  "lon": 15.7151126,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2145768960,
+  "lat": 50.7573759,
+  "lon": 15.7212609,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2148203403,
+  "lat": 50.7526426,
+  "lon": 15.7302456,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2148203414,
+  "lat": 50.7558490,
+  "lon": 15.7314389,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2270778851,
+  "lat": 50.7442392,
+  "lon": 15.9900281,
+  "tags": {
+    "name": "Błażkowa",
+    "public_transport": "station",
+    "railway": "halt",
+    "request_stop": "yes",
+    "train": "yes",
+    "wikidata": "Q9183215",
+    "wikipedia": "pl:Błażkowa (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 2324193017,
+  "lat": 50.7974701,
+  "lon": 15.9081646,
+  "tags": {
+    "name": "Czarnów",
+    "name:prefix": "wieś",
+    "old_name:de": "Rothenzechau",
+    "place": "village",
+    "postal_code": "58-400",
+    "teryt:simc": "0189842",
+    "wikidata": "Q2440992",
+    "wikipedia": "pl:Czarnów (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 2324193023,
+  "lat": 50.8128269,
+  "lon": 15.9442311,
+  "tags": {
+    "name": "Rędziny",
+    "old_name:de": "Wüstenröhrsdorf",
+    "place": "village",
+    "postal_code": "58-400",
+    "teryt:simc": "0190012",
+    "wikidata": "Q3127226",
+    "wikipedia": "pl:Rędziny (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 2629426667,
+  "lat": 50.7802887,
+  "lon": 15.7302002,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2629426712,
+  "lat": 50.7801564,
+  "lon": 15.7257158,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2961951749,
+  "lat": 50.8262014,
+  "lon": 15.8210807,
+  "tags": {
+    "name": "Bukowiec",
+    "name:de": "Buchwald",
+    "name:pl": "Bukowiec",
+    "name:prefix": "wieś",
+    "name:ru": "Буковец",
+    "place": "village",
+    "ref:prng": "13253",
+    "source": "TERYT",
+    "teryt:rm": "01",
+    "teryt:simc": "0191365",
+    "teryt:typ": "wieś",
+    "url": "https://polska-org.pl/504465,Bukowiec.html",
+    "wikidata": "Q4987079",
+    "wikipedia": "pl:Bukowiec (powiat karkonoski)"
+  }
+},
+{
+  "type": "node",
+  "id": 3400704457,
+  "lat": 50.7949429,
+  "lon": 15.5147941,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "image": "https://4.bp.blogspot.com/-oetiaOpHX4I/W37dhXJXu7I/AAAAAAAA3LI/SI18tONsy-g6MwY_11LQ1DAI3KvpuNUsgCLcBGAs/w1200-h630-p-k-no-nu/Szrenica%252C%2BLabsky%2BWodospad%252C%2B12%2Bsierpnia%2B2018%2B001.jpg",
+    "name": "Szrenica II",
+    "opening_hours": "Mo-Su 09:00-16:30",
+    "public_transport": "station",
+    "url": "https://polska-org.pl/5347081,Szklarska_Poreba,Gorna_stacja_wyciagu_na_Szrenice.html",
+    "website": "https://szrenicaskiarena.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 3400705998,
+  "lat": 50.8053689,
+  "lon": 15.5206906,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3400706005,
+  "lat": 50.8056766,
+  "lon": 15.5203404,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "name": "Szrenica I",
+    "public_transport": "station",
+    "website": "https://szrenicaskiarena.pl/lato/koleje-i-wyciagi/"
+  }
+},
+{
+  "type": "node",
+  "id": 3400706006,
+  "lat": 50.8057059,
+  "lon": 15.5207633,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "name": "Szrenica I",
+    "public_transport": "station",
+    "website": "https://szrenicaskiarena.pl/lato/koleje-i-wyciagi/"
+  }
+},
+{
+  "type": "node",
+  "id": 3700951316,
+  "lat": 50.7727317,
+  "lon": 15.7378476,
+  "tags": {
+    "aerialway": "station",
+    "name": "Kolej linowa Biały Jar - stacja dolna",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3701184788,
+  "lat": 50.7690459,
+  "lon": 15.7322972,
+  "tags": {
+    "aerialway": "station",
+    "name": "Kolej linowa Biały Jar - stacja górna",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4014521900,
+  "lat": 50.8514982,
+  "lon": 16.0076011,
+  "tags": {
+    "name": "Marciszów",
+    "name:ru": "Марчишув",
+    "name:uk": "Марчішув",
+    "public_transport": "station",
+    "railway": "station",
+    "wikidata": "Q1961533",
+    "wikipedia": "pl:Marciszów (stacja kolejowa)"
+  }
+},
+{
+  "type": "node",
+  "id": 4014574261,
+  "lat": 50.8654190,
+  "lon": 15.9798559,
+  "tags": {
+    "name": "Ciechanowice",
+    "public_transport": "station",
+    "railway": "halt"
+  }
+},
+{
+  "type": "node",
+  "id": 4120849943,
+  "lat": 50.7670228,
+  "lon": 15.7295169,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4461718909,
+  "lat": 50.7477109,
+  "lon": 15.7273048,
+  "tags": {
+    "aerialway": "station",
+    "ele": "1340",
+    "name": "Górna stacja kolei linowej „Zbyszek”",
+    "name:de": "Bergstation Sesselbahn „Zbyszek”",
+    "name:pl": "Górna stacja kolei linowej „Zbyszek”",
+    "public_transport": "station",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 10258115266,
+  "lat": 50.8146295,
+  "lon": 15.4295162,
+  "tags": {
+    "name": "Polana Jakuszycka",
+    "old_name": "Szklarska Poręba Jakuszyce",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "railway": "halt",
+    "start_date": "2022-12-11",
+    "uic_name": "Szklarska Poreba-Jakuszyce",
+    "uic_ref": "5105622",
+    "wikidata": "Q1966570",
+    "wikipedia": "pl:Polana Jakuszycka (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 11380011571,
+  "lat": 50.8353309,
+  "lon": 15.7880189,
+  "tags": {
+    "name": "Mysłakowice",
+    "network": "Koleje Dolnośląskie",
+    "network:short": "KD",
+    "old_name:de": "Zillerthal-Erdmannsdorf",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "operator:short": "DSDiK",
+    "operator:wikidata": "Q11694615",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "Ms",
+    "start_date": "2025-06-15",
+    "wheelchair": "yes",
+    "wikidata": "Q11787684",
+    "wikipedia": "pl:Mysłakowice (stacja kolejowa)"
+  }
+},
+{
+  "type": "node",
+  "id": 11831904332,
+  "lat": 50.8098459,
+  "lon": 15.7638880,
+  "tags": {
+    "name": "Miłków",
+    "network": "Koleje Dolnośląskie",
+    "network:short": "KD",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "operator:short": "DSDiK",
+    "operator:wikidata": "Q11694615",
+    "public_transport": "station",
+    "railway": "halt",
+    "railway:ref": "Mk",
+    "start_date": "2025-06-15",
+    "train": "yes",
+    "wikidata": "Q11784055",
+    "wikipedia": "pl:Miłków (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 12871928025,
+  "lat": 50.8250794,
+  "lon": 15.7864094,
+  "tags": {
+    "name": "Mysłakowice Orzeł",
+    "network": "Koleje Dolnośląskie",
+    "network:short": "KD",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "operator:short": "DSDiK",
+    "operator:wikidata": "Q11694615",
+    "public_transport": "station",
+    "railway": "halt",
+    "start_date": "2025-06-15",
+    "wikidata": "Q11787686",
+    "wikipedia": "pl:Mysłakowice Orzeł"
+  }
+},
+{
+  "type": "node",
+  "id": 12871928034,
+  "lat": 50.8623742,
+  "lon": 15.7977812,
+  "tags": {
+    "name": "Łomnica",
+    "network": "Koleje Dolnośląskie",
+    "network:short": "KD",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "operator:short": "DSDiK",
+    "operator:wikidata": "Q11694615",
+    "public_transport": "station",
+    "railway": "halt",
+    "start_date": "2025-06-15",
+    "wikidata": "Q2690430",
+    "wikipedia": "pl:Łomnica (stacja kolejowa)"
+  }
+},
+{
+  "type": "node",
+  "id": 13414176167,
+  "lat": 50.8602010,
+  "lon": 15.5675911,
+  "tags": {
+    "name": "Górzyniec",
+    "name:de": "Hartenberg",
+    "name:pl": "Górzyniec",
+    "operator": "PKP Polskie Linie Kolejowe",
+    "operator:short": "PKP PLK",
+    "public_transport": "station",
+    "railway": "halt",
+    "train": "yes",
+    "uic_name": "Gorzyniec",
+    "uic_ref": "5101312"
+  }
+},
+{
+  "type": "node",
+  "id": 13414176168,
+  "lat": 50.8504206,
+  "lon": 15.6166704,
+  "tags": {
+    "name": "Piechowice Dolne",
+    "name:de": "Nieder-Petersdorf",
+    "name:pl": "Piechowice Dolne",
+    "operator": "PKP Polskie Linie Kolejowe",
+    "operator:short": "PKP PLK",
+    "railway": "halt",
+    "uic_name": "Piechowice Dolne",
+    "uic_ref": "5102755"
+  }
+},
+{
+  "type": "way",
+  "id": 365811677,
+  "center": {
+    "lat": 50.7670215,
+    "lon": 15.7295152
+  },
+  "nodes": [
+    3698202958,
+    3698202959,
+    4120849940,
+    3698202960,
+    2141799449,
+    3698202958
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "commercial",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "way",
+  "id": 398061222,
+  "center": {
+    "lat": 50.8056874,
+    "lon": 15.5203384
+  },
+  "nodes": [
+    4008353596,
+    4008353597,
+    12962258520,
+    4008353598,
+    4008353599,
+    4008353600,
+    4008353601,
+    4008353596
+  ],
+  "tags": {
+    "aerialway": "station",
+    "area": "yes",
+    "highway": "platform",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "way",
+  "id": 398064249,
+  "center": {
+    "lat": 50.8056896,
+    "lon": 15.5207764
+  },
+  "nodes": [
+    4008377399,
+    4008377400,
+    4008377401,
+    4008377394,
+    4008377395,
+    12962258511,
+    4008377396,
+    4008377391,
+    4008377390,
+    4008377402,
+    4008377392,
+    12962258521,
+    4008377399
+  ],
+  "tags": {
+    "aerialway": "station",
+    "highway": "platform",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "way",
+  "id": 398237906,
+  "center": {
+    "lat": 50.7949562,
+    "lon": 15.5148138
+  },
+  "nodes": [
+    4010062054,
+    4010062055,
+    4010062056,
+    4010062057,
+    4010062058,
+    4010062059,
+    5052899806,
+    4010062054
+  ],
+  "tags": {
+    "aerialway": "station",
+    "area": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "way",
+  "id": 410105006,
+  "center": {
+    "lat": 50.7588405,
+    "lon": 15.7287502
+  },
+  "nodes": [
+    4119718515,
+    4119718509,
+    4119718510,
+    4119718504,
+    4119718505,
+    4119718518,
+    4119718517,
+    4119718516,
+    4119718515
+  ],
+  "tags": {
+    "aerialway": "station",
+    "bench": "no",
+    "bin": "no",
+    "highway": "platform",
+    "layer": "1",
+    "lit": "no",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+}
+
+  ]
+}

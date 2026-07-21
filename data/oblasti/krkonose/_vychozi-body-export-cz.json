@@ -1,0 +1,5150 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-05-06T03:25:00Z",
+    "timestamp_areas_base": "2026-05-06T03:25:00Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 26024341,
+  "lat": 50.7114579,
+  "lon": 15.3137841,
+  "tags": {
+    "name": "Velké Hamry",
+    "railway": "station",
+    "wikidata": "Q19401577"
+  }
+},
+{
+  "type": "node",
+  "id": 26024353,
+  "lat": 50.7015958,
+  "lon": 15.3173660,
+  "tags": {
+    "name": "Plavy",
+    "railway": "halt",
+    "wikidata": "Q55553587"
+  }
+},
+{
+  "type": "node",
+  "id": 26025026,
+  "lat": 50.6762137,
+  "lon": 15.3193199,
+  "tags": {
+    "name": "Návarov",
+    "railway": "halt",
+    "wikidata": "Q55723829"
+  }
+},
+{
+  "type": "node",
+  "id": 26025052,
+  "lat": 50.6517926,
+  "lon": 15.3278371,
+  "tags": {
+    "name": "Jesenný",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "552802",
+    "wikidata": "Q55594267"
+  }
+},
+{
+  "type": "node",
+  "id": 31505109,
+  "lat": 50.7725981,
+  "lon": 15.4256850,
+  "tags": {
+    "aerialway": "station",
+    "name": "Harrachov",
+    "opm:lift_station": "start",
+    "opm:name": "Čertova Hora",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 31505110,
+  "lat": 50.7616941,
+  "lon": 15.4295043,
+  "tags": {
+    "aerialway": "station",
+    "name": "Čertova hora",
+    "opm:lift_station": "end",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 31505122,
+  "lat": 50.7614045,
+  "lon": 15.4318400,
+  "tags": {
+    "aerialway": "station",
+    "name": "Čertova hora",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 154597588,
+  "lat": 50.7363366,
+  "lon": 15.5690898,
+  "tags": {
+    "name": "Horní Mísečky",
+    "name:cs": "Horní Mísečky",
+    "name:de": "Ober Schüsselbauden",
+    "place": "village",
+    "wikidata": "Q11710099",
+    "wikipedia": "cs:Horní Mísečky"
+  }
+},
+{
+  "type": "node",
+  "id": 154602330,
+  "lat": 50.7313069,
+  "lon": 15.5461510,
+  "tags": {
+    "name": "Dolní Mísečky",
+    "name:cs": "Dolní Mísečky",
+    "name:de": "Unter Schüsselbauden",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 241453832,
+  "lat": 50.6880913,
+  "lon": 15.7282246,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 241454508,
+  "lat": 50.6880248,
+  "lon": 15.7282001,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 241454622,
+  "lat": 50.6843867,
+  "lon": 15.7213085,
+  "tags": {
+    "aerialway": "station",
+    "name": "Pec pod Sněžkou",
+    "name:de": "Petzer",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 241454623,
+  "lat": 50.6886881,
+  "lon": 15.7068783,
+  "tags": {
+    "aerialway": "station",
+    "ele": "1212",
+    "name": "Hnědý vrch",
+    "name:de": "Braunberg",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 243779555,
+  "lat": 50.5585678,
+  "lon": 15.6608018,
+  "tags": {
+    "name": "Klášterská Lhota",
+    "railway": "halt",
+    "wikidata": "Q19400784"
+  }
+},
+{
+  "type": "node",
+  "id": 243779626,
+  "lat": 50.6006762,
+  "lon": 15.6247410,
+  "tags": {
+    "name": "Podhůří",
+    "platforms": "1",
+    "railway": "station",
+    "wikidata": "Q19401262"
+  }
+},
+{
+  "type": "node",
+  "id": 244842088,
+  "lat": 50.7370155,
+  "lon": 15.3052613,
+  "tags": {
+    "name": "Tanvald zastávka",
+    "operator": "cz:SŽDC",
+    "railway": "halt",
+    "railway:ref": "549824",
+    "uic_name": "Tanvald zast.",
+    "uic_ref": "5403091",
+    "wikidata": "Q66888732"
+  }
+},
+{
+  "type": "node",
+  "id": 247044612,
+  "lat": 50.6480786,
+  "lon": 15.7515673,
+  "tags": {
+    "aerialway": "station",
+    "name": "Černá hora",
+    "network": "SkiResort - ČERNÁ HORA – PEC",
+    "operator": "Megaplus, s.r.o.",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 250849918,
+  "lat": 50.6341183,
+  "lon": 15.3007972,
+  "tags": {
+    "name": "Spálov",
+    "operator": "cz:SŽDC",
+    "railway": "halt",
+    "railway:ref": "552901",
+    "wikidata": "Q55748773"
+  }
+},
+{
+  "type": "node",
+  "id": 250855027,
+  "lat": 50.5688205,
+  "lon": 15.4036647,
+  "tags": {
+    "name": "Košťálov",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "566109",
+    "wikidata": "Q19400811"
+  }
+},
+{
+  "type": "node",
+  "id": 255454634,
+  "lat": 50.7371953,
+  "lon": 15.4789019,
+  "tags": {
+    "aerialway": "station",
+    "name": "Rokytnice",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 264407406,
+  "lat": 50.7713611,
+  "lon": 15.3938554,
+  "tags": {
+    "name": "Harrachov",
+    "name:de": "Harrachsdorf",
+    "operator": "Správa železnic",
+    "operator:short": "SŽ",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "Har",
+    "uic_ref": "5401014",
+    "wikidata": "Q17462839"
+  }
+},
+{
+  "type": "node",
+  "id": 264407978,
+  "lat": 50.7625699,
+  "lon": 15.3471943,
+  "tags": {
+    "name": "Kořenov zastávka",
+    "railway": "halt",
+    "uic_ref": "5401536",
+    "wikidata": "Q18180336"
+  }
+},
+{
+  "type": "node",
+  "id": 269395459,
+  "lat": 50.5808178,
+  "lon": 15.8882340,
+  "tags": {
+    "name": "Trutnov-Zelená Louka",
+    "operator": "cz:PDV RAILWAY",
+    "railway": "halt",
+    "railway:ref": "572909",
+    "wikidata": "Q18180564"
+  }
+},
+{
+  "type": "node",
+  "id": 280127833,
+  "lat": 50.5960745,
+  "lon": 15.9460936,
+  "tags": {
+    "name": "Libeč",
+    "railway": "halt",
+    "wikidata": "Q66888852"
+  }
+},
+{
+  "type": "node",
+  "id": 280127910,
+  "lat": 50.6382025,
+  "lon": 15.9357007,
+  "tags": {
+    "name": "Křenov",
+    "name:de": "Krinsdorf",
+    "railway": "halt",
+    "wikidata": "Q66888854"
+  }
+},
+{
+  "type": "node",
+  "id": 280130657,
+  "lat": 50.6729623,
+  "lon": 15.9704177,
+  "tags": {
+    "name": "Královec",
+    "name:de": "Königshan",
+    "operator": "Správa železnic",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "Kec",
+    "wheelchair": "yes",
+    "wikidata": "Q11750075"
+  }
+},
+{
+  "type": "node",
+  "id": 280138092,
+  "lat": 50.6735776,
+  "lon": 15.9299015,
+  "tags": {
+    "name": "Lampertice",
+    "name:de": "Lampersdorf",
+    "railway": "halt"
+  }
+},
+{
+  "type": "node",
+  "id": 280145515,
+  "lat": 50.5779061,
+  "lon": 15.9606962,
+  "tags": {
+    "name": "Trutnov zastávka",
+    "operator": "cz:SŽDC",
+    "railway": "halt",
+    "railway:ref": "570507",
+    "wikidata": "Q18180562"
+  }
+},
+{
+  "type": "node",
+  "id": 280145629,
+  "lat": 50.6018483,
+  "lon": 16.0040875,
+  "tags": {
+    "name": "Petříkovice",
+    "railway": "halt",
+    "wikidata": "Q19401232"
+  }
+},
+{
+  "type": "node",
+  "id": 280168291,
+  "lat": 50.5992563,
+  "lon": 16.0381215,
+  "tags": {
+    "name": "Chvaleč",
+    "railway": "halt",
+    "wikidata": "Q18423820"
+  }
+},
+{
+  "type": "node",
+  "id": 289746889,
+  "lat": 50.7605412,
+  "lon": 15.3231490,
+  "tags": {
+    "name": "Dolní Polubný",
+    "railway": "halt",
+    "uic_name": "Dolni Polubny",
+    "uic_ref": "5400882",
+    "wikidata": "Q19359717"
+  }
+},
+{
+  "type": "node",
+  "id": 289746912,
+  "lat": 50.7534861,
+  "lon": 15.3088962,
+  "tags": {
+    "name": "Desná",
+    "public_transport": "station",
+    "railway": "station",
+    "uic_name": "Desna",
+    "uic_ref": "5400799",
+    "wheelchair": "limited",
+    "wikidata": "Q18180185"
+  }
+},
+{
+  "type": "node",
+  "id": 289746939,
+  "lat": 50.7592799,
+  "lon": 15.3139031,
+  "tags": {
+    "name": "Desná-Riedlova vila",
+    "railway": "halt",
+    "uic_name": "Desna-Riedlova vila",
+    "uic_ref": "5454973",
+    "wikidata": "Q11774649"
+  }
+},
+{
+  "type": "node",
+  "id": 292864678,
+  "lat": 50.6989754,
+  "lon": 15.4000439,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 293061281,
+  "lat": 50.7452021,
+  "lon": 15.8214465,
+  "tags": {
+    "name": "Horní Malá Úpa",
+    "name:cs": "Horní Malá Úpa",
+    "old_name:de": "Ober-Kleinaupa",
+    "place": "village",
+    "population": "91",
+    "ref:cobe": "090379",
+    "ref:zsj": "090379",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 300850468,
+  "lat": 50.6488689,
+  "lon": 15.4569924,
+  "tags": {
+    "name": "Poniklá",
+    "railway": "station",
+    "source": "uhul:ortofoto",
+    "wikidata": "Q19401274"
+  }
+},
+{
+  "type": "node",
+  "id": 302529308,
+  "lat": 50.7392125,
+  "lon": 15.4872765,
+  "tags": {
+    "aerialway": "station",
+    "name": "Černý potok",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529309,
+  "lat": 50.7538845,
+  "lon": 15.5064453,
+  "tags": {
+    "aerialway": "station",
+    "name": "Lysá hora",
+    "name:de": "Kahler Berg",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529316,
+  "lat": 50.7436390,
+  "lon": 15.4925445,
+  "tags": {
+    "aerialway": "station",
+    "name": "Zalomený",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529318,
+  "lat": 50.7509333,
+  "lon": 15.4948868,
+  "tags": {
+    "aerialway": "station",
+    "name": "Zalomený",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529319,
+  "lat": 50.7420657,
+  "lon": 15.4842001,
+  "tags": {
+    "aerialway": "station",
+    "name": "Kaprun I",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529320,
+  "lat": 50.7439171,
+  "lon": 15.4880061,
+  "tags": {
+    "aerialway": "station",
+    "name": "Kaprun I",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529321,
+  "lat": 50.7420045,
+  "lon": 15.4842779,
+  "tags": {
+    "aerialway": "station",
+    "name": "Kaprun II",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529322,
+  "lat": 50.7438435,
+  "lon": 15.4880656,
+  "tags": {
+    "aerialway": "station",
+    "name": "Kaprun II",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529323,
+  "lat": 50.7400411,
+  "lon": 15.4873496,
+  "tags": {
+    "aerialway": "station",
+    "name": "Křížek",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529324,
+  "lat": 50.7433027,
+  "lon": 15.4885098,
+  "tags": {
+    "aerialway": "station",
+    "name": "Křížek",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529327,
+  "lat": 50.7434910,
+  "lon": 15.4926861,
+  "tags": {
+    "aerialway": "station",
+    "name": "Montaz",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 302529328,
+  "lat": 50.7491728,
+  "lon": 15.5001623,
+  "tags": {
+    "aerialway": "station",
+    "name": "Montaz",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 303020624,
+  "lat": 50.7331768,
+  "lon": 15.5688989,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 303020626,
+  "lat": 50.7340396,
+  "lon": 15.5692243,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 303020627,
+  "lat": 50.7345278,
+  "lon": 15.5708112,
+  "tags": {
+    "aerialway": "station",
+    "name": "Louka",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 304751226,
+  "lat": 50.6587756,
+  "lon": 15.5142436,
+  "tags": {
+    "name": "Křížlice",
+    "name:cs": "Křížlice",
+    "name:de": "Krizlitz",
+    "place": "village",
+    "population": "126",
+    "ref:cobe": "076562",
+    "ref:zsj": "076562",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 304751228,
+  "lat": 50.6805188,
+  "lon": 15.4917269,
+  "tags": {
+    "name": "Jestřabí v Krkonoších",
+    "name:cs": "Jestřabí v Krkonoších",
+    "name:de": "Jestrabi",
+    "place": "village",
+    "population": "59",
+    "ref:cobe": "059021",
+    "ref:zsj": "059021",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 304751230,
+  "lat": 50.6462504,
+  "lon": 15.5561147,
+  "tags": {
+    "name": "Mrklov",
+    "name:cs": "Mrklov",
+    "name:de": "Markelsdorf",
+    "place": "village",
+    "population": "207",
+    "ref:cobe": "002160",
+    "ref:zsj": "002160",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12038888",
+    "wikipedia": "cs:Mrklov"
+  }
+},
+{
+  "type": "node",
+  "id": 304751233,
+  "lat": 50.6316089,
+  "lon": 15.4607183,
+  "tags": {
+    "name": "Horní Sytová",
+    "name:cs": "Horní Sytová",
+    "name:de": "Ober Sittau",
+    "place": "village",
+    "population": "240",
+    "ref:cobe": "181773",
+    "ref:zsj": "181773",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 304751234,
+  "lat": 50.6194198,
+  "lon": 15.4432993,
+  "tags": {
+    "name": "Peřimov",
+    "name:cs": "Peřimov",
+    "name:de": "Perschomow",
+    "place": "village",
+    "population": "202",
+    "ref:cobe": "119539",
+    "ref:zsj": "119539",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 304751235,
+  "lat": 50.6177792,
+  "lon": 15.4309137,
+  "tags": {
+    "name": "Dolní Sytová",
+    "name:cs": "Dolní Sytová",
+    "name:de": "Nieder Sittau",
+    "place": "village",
+    "population": "288",
+    "ref:cobe": "036617",
+    "ref:zsj": "036617",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 304751238,
+  "lat": 50.6582572,
+  "lon": 15.3715529,
+  "tags": {
+    "name": "Roztoky u Semil",
+    "name:cs": "Roztoky u Semil",
+    "name:de": "Rostok",
+    "place": "village",
+    "population": "135",
+    "ref:cobe": "142581",
+    "ref:zsj": "142581",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q2139862",
+    "wikipedia": "cs:Roztoky u Semil"
+  }
+},
+{
+  "type": "node",
+  "id": 304751244,
+  "lat": 50.7028622,
+  "lon": 15.3231145,
+  "tags": {
+    "name": "Haratice",
+    "name:cs": "Haratice",
+    "name:de": "Haratitz",
+    "place": "village",
+    "population": "512",
+    "ref:cobe": "121576",
+    "ref:zsj": "121576",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12019214",
+    "wikipedia": "cs:Haratice"
+  }
+},
+{
+  "type": "node",
+  "id": 304751245,
+  "lat": 50.7161716,
+  "lon": 15.3256386,
+  "tags": {
+    "name": "Bohdalovice",
+    "name:cs": "Bohdalovice",
+    "name:de": "Bochdalowitz",
+    "place": "village",
+    "population": "131",
+    "ref:cobe": "178748",
+    "ref:zsj": "178748",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 304751254,
+  "lat": 50.7284322,
+  "lon": 15.4807698,
+  "tags": {
+    "name": "Rokytno",
+    "name:cs": "Rokytno",
+    "name:de": "Sahlenbach",
+    "place": "village",
+    "population": "100",
+    "ref:cobe": "140961",
+    "ref:zsj": "140961",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 304751261,
+  "lat": 50.6175686,
+  "lon": 15.3973827,
+  "tags": {
+    "name": "Rybnice",
+    "name:cs": "Rybnice",
+    "name:de": "Ribnitz",
+    "place": "village",
+    "population": "146",
+    "ref:cobe": "036641",
+    "ref:zsj": "036641",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 304751262,
+  "lat": 50.6160176,
+  "lon": 15.3210545,
+  "tags": {
+    "name": "Bítouchov",
+    "name:cs": "Bítouchov",
+    "name:de": "Bitauchow",
+    "place": "village",
+    "population": "334",
+    "ref:cobe": "147273",
+    "ref:zsj": "147273",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 304751263,
+  "lat": 50.6340621,
+  "lon": 15.3114866,
+  "tags": {
+    "name": "Spálov",
+    "name:cs": "Spálov",
+    "name:de": "Spalow",
+    "place": "village",
+    "population": "102",
+    "ref:cobe": "147281",
+    "ref:zsj": "147281",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 306080499,
+  "lat": 50.5545808,
+  "lon": 15.4899710,
+  "tags": {
+    "name": "Roztoky u Jilemnice",
+    "railway": "station",
+    "wikidata": "Q19401354"
+  }
+},
+{
+  "type": "node",
+  "id": 306081279,
+  "lat": 50.5808293,
+  "lon": 15.5404922,
+  "tags": {
+    "name": "Martinice v Krkonoších",
+    "railway": "station",
+    "wikidata": "Q19400951"
+  }
+},
+{
+  "type": "node",
+  "id": 306082052,
+  "lat": 50.5967225,
+  "lon": 15.5869763,
+  "tags": {
+    "name": "Horní Branná",
+    "railway": "halt",
+    "wikidata": "Q19400694"
+  }
+},
+{
+  "type": "node",
+  "id": 306488008,
+  "lat": 50.6043859,
+  "lon": 15.5137423,
+  "tags": {
+    "name": "Jilemnice",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "571604",
+    "wikidata": "Q18180292"
+  }
+},
+{
+  "type": "node",
+  "id": 306493087,
+  "lat": 50.6232177,
+  "lon": 15.5013120,
+  "tags": {
+    "name": "Hrabačov",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "571901",
+    "wikidata": "Q19400710"
+  }
+},
+{
+  "type": "node",
+  "id": 306494378,
+  "lat": 50.6320484,
+  "lon": 15.4618863,
+  "tags": {
+    "name": "Horní Sytová",
+    "railway": "halt",
+    "wikidata": "Q18817255"
+  }
+},
+{
+  "type": "node",
+  "id": 306539998,
+  "lat": 50.6667025,
+  "lon": 15.4509585,
+  "tags": {
+    "name": "Poniklá zastávka",
+    "railway": "halt",
+    "wikidata": "Q19401275"
+  }
+},
+{
+  "type": "node",
+  "id": 306540401,
+  "lat": 50.6810276,
+  "lon": 15.4509792,
+  "tags": {
+    "name": "Jablonec nad Jizerou-Hradsko",
+    "railway": "halt",
+    "wikidata": "Q19400729"
+  }
+},
+{
+  "type": "node",
+  "id": 306541404,
+  "lat": 50.7004019,
+  "lon": 15.4351326,
+  "tags": {
+    "name": "Jablonec nad Jizerou",
+    "public_transport": "station",
+    "railway": "station",
+    "wikidata": "Q18180268"
+  }
+},
+{
+  "type": "node",
+  "id": 313186642,
+  "lat": 50.5676275,
+  "lon": 15.5659075,
+  "tags": {
+    "name": "Zálesní Lhota",
+    "name:cs": "Zálesní Lhota",
+    "name:de": "Huttendorf",
+    "place": "village",
+    "population": "379",
+    "ref:cobe": "190594",
+    "ref:zsj": "190594",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 313527748,
+  "lat": 50.5671650,
+  "lon": 15.5442552,
+  "tags": {
+    "name": "Rovnáčov",
+    "name:cs": "Rovnáčov",
+    "name:de": "Rownatzschow",
+    "place": "village",
+    "population": "201",
+    "ref:cobe": "158267",
+    "ref:zsj": "158267",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12049922",
+    "wikipedia": "cs:Rovnáčov"
+  }
+},
+{
+  "type": "node",
+  "id": 313527936,
+  "lat": 50.5535366,
+  "lon": 15.5493259,
+  "tags": {
+    "name": "Studenec",
+    "name:cs": "Studenec",
+    "name:de": "Studenetz",
+    "place": "village",
+    "population": "1124",
+    "ref:cobe": "158275",
+    "ref:zsj": "158275",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q749597",
+    "wikipedia": "cs:Studenec (okres Semily)"
+  }
+},
+{
+  "type": "node",
+  "id": 313903665,
+  "lat": 50.7203937,
+  "lon": 15.6145839,
+  "tags": {
+    "aerialway": "station",
+    "name": "Svatý Petr",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 313903666,
+  "lat": 50.7124875,
+  "lon": 15.6170429,
+  "tags": {
+    "aerialway": "station",
+    "name": "Černá sjezdovka",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 313903669,
+  "lat": 50.7376525,
+  "lon": 15.5950446,
+  "tags": {
+    "aerialway": "station",
+    "name": "vlek Medvědín",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 313903670,
+  "lat": 50.7413442,
+  "lon": 15.5834341,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 317671472,
+  "lat": 50.6580711,
+  "lon": 15.5753468,
+  "tags": {
+    "aerialway": "station",
+    "name": "Žalý",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 318762078,
+  "lat": 50.6585779,
+  "lon": 15.5949471,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 318852306,
+  "lat": 50.6525365,
+  "lon": 15.6028180,
+  "tags": {
+    "aerialway": "station",
+    "name": "Bubákov",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 318852307,
+  "lat": 50.6524215,
+  "lon": 15.5871475,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 322110931,
+  "lat": 50.7244414,
+  "lon": 15.6007109,
+  "tags": {
+    "aerialway": "station",
+    "name": "Špindlerův Mlýn",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 322110970,
+  "lat": 50.7121359,
+  "lon": 15.6046538,
+  "tags": {
+    "aerialway": "station",
+    "name": "Hromovka",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 326776730,
+  "lat": 50.7466232,
+  "lon": 15.4398829,
+  "tags": {
+    "aerialway": "station",
+    "name": "Studenov",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 326776773,
+  "lat": 50.7354316,
+  "lon": 15.4421713,
+  "tags": {
+    "aerialway": "station",
+    "name": "Studenov",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 326776949,
+  "lat": 50.7413164,
+  "lon": 15.4433934,
+  "tags": {
+    "aerialway": "station",
+    "name": "VL500",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 326776974,
+  "lat": 50.7467482,
+  "lon": 15.4407563,
+  "tags": {
+    "aerialway": "station",
+    "name": "VL500",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 326776998,
+  "lat": 50.7466626,
+  "lon": 15.4399659,
+  "tags": {
+    "aerialway": "station",
+    "name": "Studenov",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 326777054,
+  "lat": 50.7355437,
+  "lon": 15.4422368,
+  "tags": {
+    "aerialway": "station",
+    "name": "Studenov",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 326796289,
+  "lat": 50.7450766,
+  "lon": 15.5099180,
+  "tags": {
+    "aerialway": "station",
+    "name": "Dvoračky",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 326796290,
+  "lat": 50.7474563,
+  "lon": 15.5110807,
+  "tags": {
+    "aerialway": "station",
+    "name": "Dvoračky",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 336771529,
+  "lat": 50.7177349,
+  "lon": 15.7462148,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "ele": "1339.05",
+    "name": "Růžová hora",
+    "name:de": "Rosenberg",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 336771551,
+  "lat": 50.7353320,
+  "lon": 15.7404194,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "ele": "1588.32",
+    "name": "Sněžka",
+    "name:cs": "Sněžka",
+    "name:de": "Schneekoppe",
+    "name:pl": "Śnieżka"
+  }
+},
+{
+  "type": "node",
+  "id": 340105475,
+  "lat": 50.5510601,
+  "lon": 15.9787983,
+  "tags": {
+    "name": "Bohuslavice nad Úpou",
+    "railway": "halt",
+    "wikidata": "Q56325016"
+  }
+},
+{
+  "type": "node",
+  "id": 349328493,
+  "lat": 50.7601380,
+  "lon": 15.3027864,
+  "tags": {
+    "name": "Desná",
+    "name:cs": "Desná",
+    "name:de": "Dessendorf",
+    "place": "town",
+    "population": "1146",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q149592",
+    "wikipedia": "cs:Desná"
+  }
+},
+{
+  "type": "node",
+  "id": 354644162,
+  "lat": 50.7468331,
+  "lon": 15.4862777,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 354644171,
+  "lat": 50.7432190,
+  "lon": 15.4822124,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 357478253,
+  "lat": 50.7230061,
+  "lon": 15.3905641,
+  "tags": {
+    "aerialway": "station",
+    "name": "Dolní stanice lanovky Leitner",
+    "public_transport": "station",
+    "source": "bing:ortofoto"
+  }
+},
+{
+  "type": "node",
+  "id": 357478257,
+  "lat": 50.7298455,
+  "lon": 15.3787702,
+  "tags": {
+    "aerialway": "station",
+    "name": "Horní stanice lanovky Leitner",
+    "public_transport": "station",
+    "source": "bing:ortofoto"
+  }
+},
+{
+  "type": "node",
+  "id": 358134740,
+  "lat": 50.7276485,
+  "lon": 15.4726931,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 358135360,
+  "lat": 50.7232551,
+  "lon": 15.4791402,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 358135369,
+  "lat": 50.7235416,
+  "lon": 15.4826136,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 358135377,
+  "lat": 50.7292466,
+  "lon": 15.4754008,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 366791298,
+  "lat": 50.5620262,
+  "lon": 15.6873318,
+  "tags": {
+    "name": "Prosečné",
+    "name:cs": "Prosečné",
+    "old_name:de": "Proschwitz",
+    "place": "village",
+    "population": "542",
+    "ref:cobe": "133264",
+    "ref:zsj": "133264",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 428914684,
+  "lat": 50.7418890,
+  "lon": 15.3503876,
+  "tags": {
+    "name": "Příchovice",
+    "name:cs": "Příchovice",
+    "name:de": "Prichowitz",
+    "place": "village",
+    "population": "271",
+    "ref:cobe": "069795",
+    "ref:zsj": "069795",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 442330456,
+  "lat": 50.6843028,
+  "lon": 15.7230398,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 442330459,
+  "lat": 50.6839246,
+  "lon": 15.7227502,
+  "tags": {
+    "aerialway": "station",
+    "name": "Zahrádky Expres",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 442330462,
+  "lat": 50.6772832,
+  "lon": 15.7167305,
+  "tags": {
+    "aerialway": "station",
+    "name": "Zahrádky Express",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 455961927,
+  "lat": 50.6202744,
+  "lon": 15.6555337,
+  "tags": {
+    "name": "Lánov",
+    "name:cs": "Lánov",
+    "name:de": "Langenau",
+    "old_name:de": "Langenau",
+    "place": "village",
+    "population": "1090",
+    "source": "csu:uir-zsj",
+    "wikipedia": "cs:Lánov"
+  }
+},
+{
+  "type": "node",
+  "id": 456738050,
+  "lat": 50.6520957,
+  "lon": 15.6558321,
+  "tags": {
+    "name": "Dolní Dvůr",
+    "name:cs": "Dolní Dvůr",
+    "old_name:de": "Niederhof",
+    "place": "village",
+    "population": "249",
+    "ref:cobe": "029025",
+    "ref:zsj": "029025",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 459802164,
+  "lat": 50.5839136,
+  "lon": 15.7743483,
+  "tags": {
+    "name": "Javorník",
+    "name:cs": "Javorník",
+    "name:de": "Mohren",
+    "place": "village",
+    "population": "121",
+    "ref:cobe": "057878",
+    "ref:zsj": "057878",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q405643",
+    "wikipedia": "cs:Javorník (Rudník)"
+  }
+},
+{
+  "type": "node",
+  "id": 459802165,
+  "lat": 50.5784502,
+  "lon": 15.7373043,
+  "tags": {
+    "name": "Rudník",
+    "name:cs": "Rudník",
+    "old_name": "Heřmanovy Sejfy",
+    "old_name:de": "Hermannseifen",
+    "place": "village",
+    "population": "1764",
+    "ref:cobe": "143421",
+    "ref:zsj": "143421",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1753004",
+    "wikipedia": "cs:Rudník"
+  }
+},
+{
+  "type": "node",
+  "id": 459802166,
+  "lat": 50.6180470,
+  "lon": 15.7406894,
+  "tags": {
+    "name": "Bolkov",
+    "name:cs": "Bolkov",
+    "old_name:de": "Polkendorf",
+    "place": "village",
+    "source": "cuzk:km"
+  }
+},
+{
+  "type": "node",
+  "id": 565545195,
+  "lat": 50.7371268,
+  "lon": 15.4759260,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 565545198,
+  "lat": 50.7389541,
+  "lon": 15.4750953,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 566180865,
+  "lat": 50.6552028,
+  "lon": 15.5427842,
+  "tags": {
+    "name": "Štěpanická Lhota",
+    "name:cs": "Štěpanická Lhota",
+    "name:de": "Lhota Stepanitz",
+    "place": "village",
+    "population": "70",
+    "ref:cobe": "002186",
+    "ref:zsj": "002186",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 566183344,
+  "lat": 50.5560862,
+  "lon": 15.4175667,
+  "tags": {
+    "name": "Libštát",
+    "railway": "halt",
+    "wikidata": "Q19400889"
+  }
+},
+{
+  "type": "node",
+  "id": 566197119,
+  "lat": 50.6271518,
+  "lon": 15.4841318,
+  "tags": {
+    "name": "Víchová nad Jizerou",
+    "railway": "halt",
+    "railway:ref": "571802",
+    "wikidata": "Q19401594",
+    "wikipedia": "cs:Víchová nad Jizerou (železniční zastávka)"
+  }
+},
+{
+  "type": "node",
+  "id": 574964158,
+  "lat": 50.7231454,
+  "lon": 15.3913915,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "bing"
+  }
+},
+{
+  "type": "node",
+  "id": 574964226,
+  "lat": 50.7306942,
+  "lon": 15.3826010,
+  "tags": {
+    "aerialway": "station",
+    "name": "Horní stanice lanovky Pizár",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 574964259,
+  "lat": 50.7251570,
+  "lon": 15.3931835,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "bing"
+  }
+},
+{
+  "type": "node",
+  "id": 581289156,
+  "lat": 50.6903127,
+  "lon": 15.7683842,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "name": "Velká Úpa",
+    "public_transport": "station",
+    "website": "http://skiport.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 581289157,
+  "lat": 50.7030675,
+  "lon": 15.7698653,
+  "tags": {
+    "aerialway": "station",
+    "name": "Portášovy boudy",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 597318109,
+  "lat": 50.7245309,
+  "lon": 15.5712844,
+  "tags": {
+    "aerialway": "station",
+    "name": "Mechovinec",
+    "name:de": "Bergstation Preiselberg",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 597318110,
+  "lat": 50.7147774,
+  "lon": 15.5808206,
+  "tags": {
+    "aerialway": "station",
+    "name": "Labská",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 597323603,
+  "lat": 50.7250276,
+  "lon": 15.6324895,
+  "tags": {
+    "aerialway": "station",
+    "name": "Svatý Petr",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 597325477,
+  "lat": 50.7347573,
+  "lon": 15.5728893,
+  "tags": {
+    "aerialway": "station",
+    "name": "Hořec",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 598562319,
+  "lat": 50.6776676,
+  "lon": 15.4508282,
+  "tags": {
+    "name": "Hradsko",
+    "name:cs": "Hradsko",
+    "place": "village",
+    "population": "156",
+    "ref:cobe": "415103",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 598563791,
+  "lat": 50.5842666,
+  "lon": 15.4351860,
+  "tags": {
+    "name": "Kundratice",
+    "name:cs": "Kundratice",
+    "name:de": "Kundratitz",
+    "place": "village",
+    "population": "301",
+    "ref:cobe": "077178",
+    "ref:zsj": "077178",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 598563793,
+  "lat": 50.6007140,
+  "lon": 15.4687893,
+  "tags": {
+    "name": "Mříčná",
+    "name:cs": "Mříčná",
+    "name:de": "Wemerschitz",
+    "place": "village",
+    "population": "474",
+    "ref:cobe": "100200",
+    "ref:zsj": "100200",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 603292970,
+  "lat": 50.5808469,
+  "lon": 15.5333055,
+  "tags": {
+    "name": "Martinice v Krkonoších",
+    "name:cs": "Martinice v Krkonoších",
+    "name:de": "Merzdorf",
+    "old_name": "Martinice",
+    "old_name:de": "Martinitz",
+    "place": "village",
+    "population": "574",
+    "ref:cobe": "158259",
+    "ref:zsj": "158259",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 611179933,
+  "lat": 50.6586744,
+  "lon": 15.8199838,
+  "tags": {
+    "name": "Horní Maršov",
+    "name:cs": "Horní Maršov",
+    "old_name:de": "Marschendorf",
+    "place": "village",
+    "population": "838",
+    "ref:cobe": "043486",
+    "ref:zsj": "043486",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1305320",
+    "wikipedia": "cs:Horní Maršov"
+  }
+},
+{
+  "type": "node",
+  "id": 611297945,
+  "lat": 50.5602479,
+  "lon": 15.3339072,
+  "tags": {
+    "name": "Tuhaň",
+    "name:cs": "Tuhaň",
+    "name:de": "Tuhan",
+    "place": "village",
+    "population": "97",
+    "ref:cobe": "157244",
+    "ref:zsj": "157244",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12059852",
+    "wikipedia": "cs:Tuhaň (Stružinec)"
+  }
+},
+{
+  "type": "node",
+  "id": 611331416,
+  "lat": 50.5772497,
+  "lon": 15.3171763,
+  "tags": {
+    "name": "Hořensko",
+    "name:cs": "Hořensko",
+    "name:de": "Horschensko",
+    "place": "village",
+    "population": "71",
+    "ref:cobe": "149322",
+    "ref:zsj": "149322",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 611331504,
+  "lat": 50.5815539,
+  "lon": 15.3408165,
+  "tags": {
+    "name": "Nedvězí",
+    "name:cs": "Nedvězí",
+    "name:de": "Nedwies",
+    "place": "village",
+    "population": "205",
+    "ref:cobe": "149331",
+    "ref:zsj": "149331",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 611331717,
+  "lat": 50.5879167,
+  "lon": 15.3472880,
+  "tags": {
+    "name": "Bořkov",
+    "name:cs": "Bořkov",
+    "name:de": "Borkow",
+    "place": "village",
+    "population": "147",
+    "ref:cobe": "149314",
+    "ref:zsj": "149314",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 621459422,
+  "lat": 50.6058846,
+  "lon": 15.3842008,
+  "tags": {
+    "name": "Podolí",
+    "name:cs": "Podolí",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 621459487,
+  "lat": 50.6139647,
+  "lon": 15.4074831,
+  "tags": {
+    "name": "Loukov",
+    "name:cs": "Loukov",
+    "name:de": "Loukow",
+    "place": "village",
+    "population": "136",
+    "ref:cobe": "036633",
+    "ref:zsj": "036633",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12033987",
+    "wikipedia": "cs:Loukov (Háje nad Jizerou)"
+  }
+},
+{
+  "type": "node",
+  "id": 654563583,
+  "lat": 50.7591542,
+  "lon": 15.4409184,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 654563606,
+  "lat": 50.7604899,
+  "lon": 15.4451842,
+  "tags": {
+    "aerialway": "station",
+    "name": "Amálka",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 656460502,
+  "lat": 50.6314312,
+  "lon": 15.7703983,
+  "tags": {
+    "aerialway": "station",
+    "name": "Janské Lázně",
+    "network": "SkiResort - ČERNÁ HORA – PEC",
+    "operator": "Megaplus, s.r.o.",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 667243420,
+  "lat": 50.7240834,
+  "lon": 15.8137272,
+  "tags": {
+    "name": "Malá Úpa",
+    "name:cs": "Malá Úpa",
+    "old_name:de": "Kleinaupa",
+    "place": "village",
+    "population": "46",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1888051",
+    "wikipedia": "cs:Malá Úpa"
+  }
+},
+{
+  "type": "node",
+  "id": 670869577,
+  "lat": 50.6118786,
+  "lon": 15.4230514,
+  "tags": {
+    "name": "Háje nad Jizerou",
+    "name:cs": "Háje nad Jizerou",
+    "name:de": "Haje",
+    "place": "village",
+    "population": "67",
+    "ref:cobe": "036625",
+    "ref:zsj": "036625",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 671330307,
+  "lat": 50.6351150,
+  "lon": 15.7096227,
+  "tags": {
+    "name": "Černý Důl",
+    "name:cs": "Černý Důl",
+    "old_name:de": "Schwarzenthal",
+    "place": "village",
+    "population": "389",
+    "ref:cobe": "020672",
+    "ref:zsj": "020672",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q339506",
+    "wikipedia": "cs:Černý Důl"
+  }
+},
+{
+  "type": "node",
+  "id": 671371937,
+  "lat": 50.5818627,
+  "lon": 15.6194291,
+  "tags": {
+    "name": "Kunčice nad Labem",
+    "name:cs": "Kunčice nad Labem",
+    "old_name": "Kunčice",
+    "old_name:de": "Pelsdorf",
+    "place": "village",
+    "population": "573",
+    "ref:cobe": "077062",
+    "ref:zsj": "077062",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 671374956,
+  "lat": 50.6065856,
+  "lon": 15.8330828,
+  "tags": {
+    "name": "Mladé Buky",
+    "name:cs": "Mladé Buky",
+    "old_name:de": "Jungbuch",
+    "place": "village",
+    "population": "1783",
+    "ref:cobe": "096806",
+    "ref:zsj": "096806",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1932693",
+    "wikipedia": "cs:Mladé Buky"
+  }
+},
+{
+  "type": "node",
+  "id": 775358403,
+  "lat": 50.5908025,
+  "lon": 15.8818118,
+  "tags": {
+    "name": "Trutnov-Staré město",
+    "operator": "cz:PDV RAILWAY",
+    "railway": "halt",
+    "railway:ref": "572503",
+    "wikidata": "Q18180563"
+  }
+},
+{
+  "type": "node",
+  "id": 775358453,
+  "lat": 50.6070875,
+  "lon": 15.8407907,
+  "tags": {
+    "name": "Mladé Buky",
+    "name:de": "Jungbuch",
+    "operator": "cz:PDV RAILWAY",
+    "railway": "halt",
+    "railway:ref": "572305",
+    "wikidata": "Q66888922"
+  }
+},
+{
+  "type": "node",
+  "id": 862707077,
+  "lat": 50.7574013,
+  "lon": 15.6005878,
+  "tags": {
+    "aerialway": "station",
+    "name": "Davidovky",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 885461709,
+  "lat": 50.7642265,
+  "lon": 15.3356119,
+  "tags": {
+    "name": "Desná-Pustinská",
+    "railway": "halt",
+    "uic_name": "Desna-Pustinska",
+    "uic_ref": "5454974",
+    "wikidata": "Q11774648"
+  }
+},
+{
+  "type": "node",
+  "id": 886350504,
+  "lat": 50.6087696,
+  "lon": 15.5464839,
+  "tags": {
+    "name": "Bohdaneč",
+    "name:cs": "Bohdaneč",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 937618064,
+  "lat": 50.7363329,
+  "lon": 15.5735053,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 939248973,
+  "lat": 50.7364845,
+  "lon": 15.5535486,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 939249001,
+  "lat": 50.7401280,
+  "lon": 15.5526773,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 945109735,
+  "lat": 50.7289160,
+  "lon": 15.8071667,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 945109797,
+  "lat": 50.7291132,
+  "lon": 15.8123152,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 945146139,
+  "lat": 50.7305494,
+  "lon": 15.8310079,
+  "tags": {
+    "aerialway": "station",
+    "name": "Pomezní hřbet",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 958755224,
+  "lat": 50.5841930,
+  "lon": 15.3519787,
+  "tags": {
+    "name": "Nedvězí",
+    "railway": "halt",
+    "wikidata": "Q19401015"
+  }
+},
+{
+  "type": "node",
+  "id": 1038237606,
+  "lat": 50.7361067,
+  "lon": 15.3474233,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1038237614,
+  "lat": 50.7410711,
+  "lon": 15.3470447,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1057913116,
+  "lat": 50.6935457,
+  "lon": 15.4175965,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1057913182,
+  "lat": 50.6935575,
+  "lon": 15.4171417,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1057913215,
+  "lat": 50.6974649,
+  "lon": 15.4218959,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1057913219,
+  "lat": 50.7012264,
+  "lon": 15.4230398,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1069759138,
+  "lat": 50.6851905,
+  "lon": 15.5046915,
+  "tags": {
+    "aerialway": "station",
+    "name": "Vurmovka",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1069759184,
+  "lat": 50.6856627,
+  "lon": 15.5114995,
+  "tags": {
+    "aerialway": "station",
+    "name": "Vurmovka",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1074737272,
+  "lat": 50.7347123,
+  "lon": 15.3661813,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1074737273,
+  "lat": 50.7345604,
+  "lon": 15.3611839,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1074737287,
+  "lat": 50.7342288,
+  "lon": 15.3613079,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1074737289,
+  "lat": 50.7372808,
+  "lon": 15.3691562,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1074748269,
+  "lat": 50.7651071,
+  "lon": 15.4284071,
+  "tags": {
+    "aerialway": "station",
+    "name": "Můstky",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1074748280,
+  "lat": 50.7692620,
+  "lon": 15.4269899,
+  "tags": {
+    "aerialway": "station",
+    "name": "Pod můstky",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1240765275,
+  "lat": 50.6754063,
+  "lon": 15.7254834,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1240765277,
+  "lat": 50.6802987,
+  "lon": 15.7221540,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1240765283,
+  "lat": 50.6769376,
+  "lon": 15.7283925,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1240765351,
+  "lat": 50.6761782,
+  "lon": 15.7261238,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1240765360,
+  "lat": 50.6769904,
+  "lon": 15.7179085,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1240765362,
+  "lat": 50.6775045,
+  "lon": 15.7228055,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1240765368,
+  "lat": 50.6782192,
+  "lon": 15.7250018,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1240765383,
+  "lat": 50.6759047,
+  "lon": 15.7185786,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1240765391,
+  "lat": 50.6744903,
+  "lon": 15.7214077,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1249721923,
+  "lat": 50.6917594,
+  "lon": 15.7680777,
+  "tags": {
+    "aerialway": "station",
+    "name": "Modřín",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1249721932,
+  "lat": 50.6952265,
+  "lon": 15.7634786,
+  "tags": {
+    "aerialway": "station",
+    "name": "Modřín",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1249721981,
+  "lat": 50.6935843,
+  "lon": 15.7686569,
+  "tags": {
+    "aerialway": "station",
+    "name": "Hofer",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1387787936,
+  "lat": 50.7842412,
+  "lon": 15.3332703,
+  "tags": {
+    "name": "Nýčovy domky",
+    "name:de": "Nitschehäuser",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 1406403530,
+  "lat": 50.7196075,
+  "lon": 15.3134904,
+  "tags": {
+    "name": "Velké Hamry město",
+    "railway": "halt",
+    "wikidata": "Q55553598"
+  }
+},
+{
+  "type": "node",
+  "id": 1418430497,
+  "lat": 50.7338666,
+  "lon": 15.3348601,
+  "tags": {
+    "name": "Český Šumburk",
+    "name:cs": "Český Šumburk",
+    "name:de": "Böhmisch Schumburg",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 1444773475,
+  "lat": 50.7768580,
+  "lon": 15.3291803,
+  "tags": {
+    "name": "Černá Říčka",
+    "name:cs": "Černá Říčka",
+    "name:de": "Schwarzfluß",
+    "place": "village",
+    "wikidata": "Q339313",
+    "wikipedia": "cs:Černá Říčka"
+  }
+},
+{
+  "type": "node",
+  "id": 1567803349,
+  "lat": 50.7607840,
+  "lon": 15.4523321,
+  "tags": {
+    "aerialway": "station",
+    "name": "Ptačinec",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1567803353,
+  "lat": 50.7610042,
+  "lon": 15.4464591,
+  "tags": {
+    "aerialway": "station",
+    "name": "Ryžoviště",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265801,
+  "lat": 50.6708748,
+  "lon": 15.8965153,
+  "tags": {
+    "name": "Bobr",
+    "name:cs": "Bobr",
+    "name:de": "Bober",
+    "place": "village",
+    "population": "207",
+    "ref:cobe": "194182",
+    "ref:zsj": "194182",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q888845",
+    "wikipedia": "cs:Bobr (Žacléř)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265813,
+  "lat": 50.6586423,
+  "lon": 15.9078109,
+  "tags": {
+    "name": "Žacléř",
+    "name:cs": "Žacléř",
+    "name:de": "Schatzlar",
+    "old_name:de": "Bornflos;Bernstadt",
+    "place": "town",
+    "population": "3400",
+    "ref:cobe": "194247",
+    "ref:zsj": "194247",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q393326",
+    "wikipedia": "cs:Žacléř"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265828,
+  "lat": 50.7148174,
+  "lon": 15.5825901,
+  "tags": {
+    "name": "Labská",
+    "name:cs": "Labská",
+    "name:de": "Krausebauden",
+    "place": "village",
+    "population": "67",
+    "ref:cobe": "163015",
+    "ref:zsj": "163015",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265838,
+  "lat": 50.7256448,
+  "lon": 15.6067567,
+  "tags": {
+    "name": "Špindlerův Mlýn",
+    "name:cs": "Špindlerův Mlýn",
+    "name:he": "שפינדלרוב מלין",
+    "name:ko": "슈펜틀레류픔린",
+    "name:pl": "Szpindlerowy Młyn",
+    "name:ru": "Шпиндлерув-Млин",
+    "name:zh": "什平德萊魯夫姆林",
+    "old_name:de": "Spindlermühle",
+    "place": "village",
+    "population": "1156",
+    "ref:cobe": "163091",
+    "ref:zsj": "163091",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q392285",
+    "wikipedia": "cs:Špindlerův Mlýn"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265839,
+  "lat": 50.6152274,
+  "lon": 15.7069351,
+  "tags": {
+    "name": "Čistá v Krkonoších",
+    "name:cs": "Čistá v Krkonoších",
+    "old_name:de": "Lauterwasser",
+    "place": "village",
+    "population": "328",
+    "ref:cobe": "020681",
+    "ref:zsj": "020681",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q341550",
+    "wikipedia": "cs:Čistá v Krkonoších"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265858,
+  "lat": 50.6179098,
+  "lon": 15.9447750,
+  "tags": {
+    "name": "Zlatá Olešnice",
+    "name:cs": "Zlatá Olešnice",
+    "name:de": "Goldenöls",
+    "place": "village",
+    "population": "158",
+    "ref:cobe": "193097",
+    "ref:zsj": "193097",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q207210",
+    "wikipedia": "cs:Zlatá Olešnice (okres Trutnov)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265875,
+  "lat": 50.6271452,
+  "lon": 15.6095779,
+  "tags": {
+    "name": "Vrchlabí",
+    "name:cs": "Vrchlabí",
+    "name:de": "Hohenelbe",
+    "place": "town",
+    "population": "12599",
+    "ref:cobe": "411345",
+    "source": "csu:uir-zsj;https://www.czso.cz/documents/10180/20556287/1300721503.pdf",
+    "wikidata": "Q1008595",
+    "wikipedia": "cs:Vrchlabí"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265889,
+  "lat": 50.5626579,
+  "lon": 15.8217107,
+  "tags": {
+    "name": "Vlčice",
+    "name:cs": "Vlčice",
+    "name:de": "Wildschütz",
+    "place": "village",
+    "population": "412",
+    "ref:cobe": "183776",
+    "ref:zsj": "183776",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265909,
+  "lat": 50.5627857,
+  "lon": 16.0098827,
+  "tags": {
+    "name": "Markoušovice",
+    "name:cs": "Markoušovice",
+    "name:de": "Markausch",
+    "place": "village",
+    "population": "260",
+    "ref:cobe": "091723",
+    "ref:zsj": "091723",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12035585",
+    "wikipedia": "cs:Markoušovice"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265959,
+  "lat": 50.5740424,
+  "lon": 15.9491430,
+  "tags": {
+    "name": "Poříčí",
+    "name:cs": "Poříčí",
+    "name:de": "Parschnitz",
+    "place": "village",
+    "population": "2103",
+    "ref:cobe": "169226",
+    "ref:zsj": "169226",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12046696",
+    "wikipedia": "cs:Poříčí (Trutnov)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265963,
+  "lat": 50.6179560,
+  "lon": 15.9028097,
+  "tags": {
+    "name": "Babí",
+    "name:cs": "Babí",
+    "name:de": "Trautenbach",
+    "place": "village",
+    "population": "99",
+    "ref:cobe": "000591",
+    "ref:zsj": "000591",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q10859688",
+    "wikipedia": "cs:Babí (Trutnov)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265972,
+  "lat": 50.5590237,
+  "lon": 15.8780166,
+  "tags": {
+    "name": "Volanov",
+    "name:cs": "Volanov",
+    "name:de": "Weigelsdorf",
+    "place": "village",
+    "population": "361",
+    "ref:cobe": "169111",
+    "ref:zsj": "169111",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587265983,
+  "lat": 50.5852254,
+  "lon": 15.9363434,
+  "tags": {
+    "name": "Voletiny",
+    "name:cs": "Voletiny",
+    "name:de": "Wolta",
+    "place": "village",
+    "population": "398",
+    "ref:cobe": "184870",
+    "ref:zsj": "184870",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q11933204",
+    "wikipedia": "cs:Voletiny"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266000,
+  "lat": 50.5774851,
+  "lon": 15.9807448,
+  "tags": {
+    "name": "Lhota",
+    "name:cs": "Lhota",
+    "name:de": "Welhotta",
+    "place": "village",
+    "population": "147",
+    "ref:cobe": "081230",
+    "ref:zsj": "081230",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12033237",
+    "wikipedia": "cs:Lhota (Trutnov)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266019,
+  "lat": 50.6011497,
+  "lon": 15.9317937,
+  "tags": {
+    "name": "Libeč",
+    "name:cs": "Libeč",
+    "name:de": "Gabersdorf",
+    "place": "village",
+    "population": "296",
+    "ref:cobe": "081876",
+    "ref:zsj": "081876",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12033328",
+    "wikipedia": "cs:Libeč (Trutnov)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266030,
+  "lat": 50.5518364,
+  "lon": 15.8707792,
+  "tags": {
+    "name": "Oblanov",
+    "name:cs": "Oblanov",
+    "name:de": "Kaltenhof",
+    "place": "village",
+    "population": "52",
+    "ref:cobe": "169277",
+    "ref:zsj": "169277",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266044,
+  "lat": 50.5608165,
+  "lon": 15.9128970,
+  "tags": {
+    "name": "Trutnov",
+    "name:ar": "ترُتنوف",
+    "name:cs": "Trutnov",
+    "name:de": "Trautenau",
+    "name:ru": "Трутнов",
+    "name:uk": "Трутнов",
+    "place": "town",
+    "population": "18588",
+    "source": "csu:uir-zsj",
+    "start_date": "before 1260",
+    "wikidata": "Q320950",
+    "wikipedia": "cs:Trutnov"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266055,
+  "lat": 50.6262304,
+  "lon": 15.8164318,
+  "tags": {
+    "name": "Svoboda nad Úpou",
+    "name:cs": "Svoboda nad Úpou",
+    "old_name:de": "Freiheit",
+    "place": "village",
+    "population": "2259",
+    "ref:cobe": "411311",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q677551",
+    "wikipedia": "cs:Svoboda nad Úpou"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266066,
+  "lat": 50.6646011,
+  "lon": 15.6139289,
+  "tags": {
+    "name": "Strážné",
+    "name:cs": "Strážné",
+    "old_name:de": "Pommerndorf",
+    "place": "village",
+    "population": "150",
+    "ref:cobe": "156647",
+    "ref:zsj": "156647",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266099,
+  "lat": 50.5525575,
+  "lon": 15.7217941,
+  "tags": {
+    "name": "Arnultovice",
+    "name:cs": "Arnultovice",
+    "name:de": "Arnsdorf",
+    "old_name": "Hostivín",
+    "place": "village",
+    "population": "302",
+    "ref:cobe": "143383",
+    "ref:zsj": "143383",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q405558",
+    "wikipedia": "cs:Arnultovice (Rudník)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266117,
+  "lat": 50.6899833,
+  "lon": 15.7679437,
+  "tags": {
+    "name": "Velká Úpa",
+    "name:cs": "Velká Úpa",
+    "old_name:de": "Groß-Aupa",
+    "place": "village",
+    "population": "302",
+    "ref:cobe": "411299",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266118,
+  "lat": 50.6935744,
+  "lon": 15.7335607,
+  "tags": {
+    "name": "Pec pod Sněžkou",
+    "name:cs": "Pec pod Sněžkou",
+    "old_name:de": "Petzer",
+    "place": "village",
+    "population": "293",
+    "ref:cobe": "118630",
+    "ref:zsj": "118630",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266156,
+  "lat": 50.6002866,
+  "lon": 15.8652148,
+  "tags": {
+    "name": "Kalná Voda",
+    "name:cs": "Kalná Voda",
+    "old_name:de": "Trübenwasser",
+    "place": "village",
+    "population": "323",
+    "ref:cobe": "096792",
+    "ref:zsj": "096792",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266168,
+  "lat": 50.5974986,
+  "lon": 15.8148623,
+  "tags": {
+    "name": "Hertvíkovice",
+    "name:cs": "Hertvíkovice",
+    "old_name:de": "Hartmannsdorf",
+    "place": "village",
+    "population": "103",
+    "ref:cobe": "096784",
+    "ref:zsj": "096784",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12019570",
+    "wikipedia": "cs:Hertvíkovice"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266216,
+  "lat": 50.6646847,
+  "lon": 15.9504466,
+  "tags": {
+    "name": "Lampertice",
+    "name:cs": "Lampertice",
+    "name:de": "Lampersdorf",
+    "place": "village",
+    "population": "476",
+    "ref:cobe": "002780",
+    "ref:zsj": "002780",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1497832",
+    "wikipedia": "cs:Lampertice"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266227,
+  "lat": 50.6767609,
+  "lon": 15.9737035,
+  "tags": {
+    "name": "Královec",
+    "name:cs": "Královec",
+    "name:de": "Königshan",
+    "place": "village",
+    "population": "176",
+    "ref:cobe": "002763",
+    "ref:zsj": "002763",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1790498",
+    "wikipedia": "cs:Královec (okres Trutnov)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266242,
+  "lat": 50.5596950,
+  "lon": 15.6635803,
+  "tags": {
+    "name": "Klášterská Lhota",
+    "name:cs": "Klášterská Lhota",
+    "name:de": "Mönchsdorf",
+    "place": "village",
+    "population": "183",
+    "ref:cobe": "065757",
+    "ref:zsj": "065757",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266257,
+  "lat": 50.6305685,
+  "lon": 15.7806938,
+  "tags": {
+    "name": "Janské Lázně",
+    "name:cs": "Janské Lázně",
+    "name:de": "Johannisbad",
+    "name:pl": "Jańskie Łaźnie",
+    "place": "town",
+    "population": "675",
+    "population:date": "2024",
+    "ref:cobe": "411272",
+    "source": "csu:uir-zsj",
+    "source:population": "wikipedia",
+    "wikidata": "Q1019988",
+    "wikipedia": "cs:Janské Lázně"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266313,
+  "lat": 50.6647107,
+  "lon": 15.7994757,
+  "tags": {
+    "name": "Temný Důl",
+    "name:cs": "Temný Důl",
+    "old_name:de": "Dunkelthal",
+    "place": "village",
+    "population": "152",
+    "ref:cobe": "043524",
+    "ref:zsj": "043524",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266317,
+  "lat": 50.5687251,
+  "lon": 15.6130028,
+  "tags": {
+    "name": "Horní Kalná",
+    "name:cs": "Horní Kalná",
+    "name:de": "Ober Kalna",
+    "place": "village",
+    "population": "323",
+    "ref:cobe": "043052",
+    "ref:zsj": "043052",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266399,
+  "lat": 50.5931657,
+  "lon": 15.5938168,
+  "tags": {
+    "name": "Dolní Branná",
+    "name:cs": "Dolní Branná",
+    "name:de": "Hennersdorf",
+    "old_name": "Nieder Brenney",
+    "place": "village",
+    "population": "901",
+    "ref:cobe": "028746",
+    "ref:zsj": "028746",
+    "source": "csu:uir-zsj",
+    "start_date": "before 1357",
+    "wikidata": "Q1236066"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266409,
+  "lat": 50.5960098,
+  "lon": 15.9899097,
+  "tags": {
+    "name": "Petříkovice",
+    "name:cs": "Petříkovice",
+    "name:de": "Petersdorf",
+    "place": "village",
+    "population": "165",
+    "ref:cobe": "054933",
+    "ref:zsj": "054933",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12045223",
+    "wikipedia": "cs:Petříkovice (Chvaleč)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266413,
+  "lat": 50.5959012,
+  "lon": 16.0393041,
+  "tags": {
+    "name": "Chvaleč",
+    "name:cs": "Chvaleč",
+    "name:de": "Qualisch",
+    "place": "village",
+    "population": "418",
+    "ref:cobe": "054925",
+    "ref:zsj": "054925",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1090097",
+    "wikipedia": "cs:Chvaleč"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266454,
+  "lat": 50.6437360,
+  "lon": 15.9271248,
+  "tags": {
+    "name": "Křenov",
+    "name:cs": "Křenov",
+    "name:de": "Krinsdorf",
+    "place": "village",
+    "population": "60",
+    "ref:cobe": "002771",
+    "ref:zsj": "002771",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12032211",
+    "wikipedia": "cs:Křenov (Bernartice)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587266455,
+  "lat": 50.6461167,
+  "lon": 15.9652162,
+  "tags": {
+    "name": "Bernartice",
+    "name:cs": "Bernartice",
+    "name:de": "Bernsdorf",
+    "place": "village",
+    "population": "839",
+    "ref:cobe": "002755",
+    "ref:zsj": "002755",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q823131",
+    "wikipedia": "cs:Bernartice (okres Trutnov)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332394,
+  "lat": 50.6663343,
+  "lon": 15.5481647,
+  "tags": {
+    "name": "Benecko",
+    "name:cs": "Benecko",
+    "name:de": "Benetzko",
+    "place": "village",
+    "population": "374",
+    "ref:cobe": "002135",
+    "ref:zsj": "002135",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332475,
+  "lat": 50.6790154,
+  "lon": 15.5312007,
+  "tags": {
+    "name": "Vítkovice",
+    "name:cs": "Vítkovice",
+    "name:de": "Witkowitz",
+    "place": "village",
+    "population": "392",
+    "ref:cobe": "183121",
+    "ref:zsj": "183121",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332481,
+  "lat": 50.6501130,
+  "lon": 15.4919273,
+  "tags": {
+    "name": "Víchovská Lhota",
+    "name:cs": "Víchovská Lhota",
+    "name:de": "Wichauer Lhota",
+    "place": "village",
+    "population": "84",
+    "ref:cobe": "181790",
+    "ref:zsj": "181790",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332484,
+  "lat": 50.6300813,
+  "lon": 15.4876716,
+  "tags": {
+    "name": "Víchová nad Jizerou",
+    "name:cs": "Víchová nad Jizerou",
+    "name:de": "Wichau",
+    "place": "village",
+    "population": "611",
+    "ref:cobe": "181781",
+    "ref:zsj": "181781",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332491,
+  "lat": 50.6888341,
+  "lon": 15.4199630,
+  "tags": {
+    "name": "Horní Tříč",
+    "name:cs": "Horní Tříč",
+    "name:de": "Tric",
+    "place": "village",
+    "population": "141",
+    "ref:cobe": "170879",
+    "ref:zsj": "170879",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12020281",
+    "wikipedia": "cs:Horní Tříč"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332492,
+  "lat": 50.7046812,
+  "lon": 15.3879751,
+  "tags": {
+    "name": "Sklenařice",
+    "name:cs": "Sklenařice",
+    "name:de": "Glasersdorf",
+    "place": "village",
+    "population": "195",
+    "ref:cobe": "148237",
+    "ref:zsj": "148237",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332499,
+  "lat": 50.6857713,
+  "lon": 15.4014639,
+  "tags": {
+    "name": "Vysoké nad Jizerou",
+    "name:cs": "Vysoké nad Jizerou",
+    "name:de": "Hochstadt an der Iser",
+    "place": "town",
+    "population": "927",
+    "ref:cobe": "188301",
+    "ref:zsj": "188301",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q164527",
+    "wikipedia": "cs:Vysoké nad Jizerou"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332615,
+  "lat": 50.5534168,
+  "lon": 15.4555556,
+  "tags": {
+    "name": "Svojek",
+    "name:cs": "Svojek",
+    "name:de": "Swojek",
+    "place": "village",
+    "population": "129",
+    "ref:cobe": "161152",
+    "ref:zsj": "161152",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332625,
+  "lat": 50.5688953,
+  "lon": 15.3658345,
+  "tags": {
+    "name": "Pohoří",
+    "name:cs": "Pohoří",
+    "name:de": "Pohorsch",
+    "place": "village",
+    "population": "61",
+    "ref:cobe": "157228",
+    "ref:zsj": "157228",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332630,
+  "lat": 50.5508499,
+  "lon": 15.3579786,
+  "tags": {
+    "name": "Stružinec",
+    "name:cs": "Stružinec",
+    "name:de": "Struschinetz",
+    "place": "village",
+    "population": "530",
+    "ref:cobe": "157236",
+    "ref:zsj": "157236",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q2701580",
+    "wikipedia": "cs:Stružinec"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332647,
+  "lat": 50.5808113,
+  "lon": 15.3296792,
+  "tags": {
+    "name": "Slaná",
+    "name:cs": "Slaná",
+    "place": "village",
+    "population": "195",
+    "ref:cobe": "149357",
+    "ref:zsj": "149357",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332660,
+  "lat": 50.6022490,
+  "lon": 15.3352600,
+  "tags": {
+    "name": "Semily",
+    "name:cs": "Semily",
+    "name:de": "Semil",
+    "place": "town",
+    "population": "8826",
+    "ref:cobe": "410802",
+    "source": "csu:uir-zsj",
+    "start_date": "before 1352",
+    "wikidata": "Q1008737",
+    "wikipedia": "cs:Semily"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332666,
+  "lat": 50.5629869,
+  "lon": 15.4990742,
+  "tags": {
+    "ele": "428",
+    "name": "Roztoky u Jilemnice",
+    "name:cs": "Roztoky u Jilemnice",
+    "name:de": "Rostok",
+    "old_name": "Roztoky",
+    "place": "village",
+    "population": "922",
+    "ref:cobe": "142565",
+    "ref:zsj": "142565",
+    "source": "csu:uir-zsj",
+    "website": "https://www.roztoky-u-jilemnice.cz/",
+    "wikidata": "Q1869812",
+    "wikipedia": "cs:Roztoky u Jilemnice"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332704,
+  "lat": 50.6475953,
+  "lon": 15.4158308,
+  "tags": {
+    "name": "Roprachtice",
+    "name:cs": "Roprachtice",
+    "name:de": "Ruppersdorf",
+    "place": "village",
+    "population": "268",
+    "ref:cobe": "141178",
+    "ref:zsj": "141178",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332752,
+  "lat": 50.7272292,
+  "lon": 15.4638743,
+  "tags": {
+    "name": "Rokytnice nad Jizerou",
+    "name:cs": "Rokytnice nad Jizerou",
+    "name:de": "Rochlitz an der Iser",
+    "place": "town",
+    "population": "2537",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1894625",
+    "wikipedia": "cs:Rokytnice nad Jizerou"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332780,
+  "lat": 50.6249290,
+  "lon": 15.3645153,
+  "tags": {
+    "name": "Příkrý",
+    "name:cs": "Příkrý",
+    "name:de": "Pschikri",
+    "place": "village",
+    "population": "200",
+    "ref:cobe": "136034",
+    "ref:zsj": "136034",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332806,
+  "lat": 50.6612187,
+  "lon": 15.4641885,
+  "tags": {
+    "name": "Poniklá",
+    "name:cs": "Poniklá",
+    "place": "village",
+    "population": "1208",
+    "ref:cobe": "125687",
+    "ref:zsj": "125687",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q2140689",
+    "wikipedia": "cs:Poniklá"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332826,
+  "lat": 50.7251192,
+  "lon": 15.3996026,
+  "tags": {
+    "name": "Paseky nad Jizerou",
+    "name:cs": "Paseky nad Jizerou",
+    "place": "village",
+    "population": "256",
+    "ref:cobe": "118206",
+    "ref:zsj": "118206",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333018,
+  "lat": 50.5522659,
+  "lon": 15.3854995,
+  "tags": {
+    "name": "Želechy",
+    "name:cs": "Želechy",
+    "name:de": "Schelesch",
+    "place": "village",
+    "population": "57",
+    "ref:cobe": "086797",
+    "ref:zsj": "086797",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q10273190",
+    "wikipedia": "cs:Želechy"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333096,
+  "lat": 50.5594039,
+  "lon": 15.4159301,
+  "tags": {
+    "name": "Libštát",
+    "name:cs": "Libštát",
+    "name:de": "Liebstadtl",
+    "place": "village",
+    "population": "981",
+    "ref:cobe": "083500",
+    "ref:zsj": "083500",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333129,
+  "lat": 50.5656317,
+  "lon": 15.4803167,
+  "tags": {
+    "name": "Kruh",
+    "name:cs": "Kruh",
+    "name:de": "Kruch",
+    "place": "village",
+    "population": "499",
+    "ref:cobe": "075191",
+    "ref:zsj": "075191",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333148,
+  "lat": 50.5716517,
+  "lon": 15.4040280,
+  "tags": {
+    "name": "Košťálov",
+    "name:cs": "Košťálov",
+    "name:de": "Koschtialow",
+    "place": "village",
+    "population": "1315",
+    "ref:cobe": "070939",
+    "ref:zsj": "070939",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1700487",
+    "wikipedia": "cs:Košťálov (okres Semily)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333219,
+  "lat": 50.6091761,
+  "lon": 15.5064747,
+  "tags": {
+    "ele": "451",
+    "name": "Jilemnice",
+    "name:cs": "Jilemnice",
+    "name:de": "Starkenbach",
+    "name:ru": "Йилемнице",
+    "place": "town",
+    "population": "5616",
+    "ref:cobe": "410888",
+    "source": "csu:uir-zsj",
+    "website": "https://www.mestojilemnice.cz/cz/",
+    "wikidata": "Q368796",
+    "wikipedia": "cs:Jilemnice"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333236,
+  "lat": 50.6602996,
+  "lon": 15.3386678,
+  "tags": {
+    "name": "Jesenný",
+    "name:cs": "Jesenný",
+    "name:de": "Jesen",
+    "place": "village",
+    "population": "495",
+    "ref:cobe": "058971",
+    "ref:zsj": "058971",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333247,
+  "lat": 50.6903066,
+  "lon": 15.4401563,
+  "tags": {
+    "name": "Dolní Tříč",
+    "name:cs": "Dolní Tříč",
+    "name:de": "Tric",
+    "place": "village",
+    "population": "98",
+    "ref:cobe": "198803",
+    "ref:zsj": "198803",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333281,
+  "lat": 50.7034400,
+  "lon": 15.4295952,
+  "tags": {
+    "name": "Jablonec nad Jizerou",
+    "name:cs": "Jablonec nad Jizerou",
+    "name:de": "Jablonetz",
+    "place": "village",
+    "population": "1467",
+    "ref:cobe": "055921",
+    "ref:zsj": "055921",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1676863",
+    "wikipedia": "cs:Jablonec nad Jizerou"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333357,
+  "lat": 50.6089217,
+  "lon": 15.5699724,
+  "tags": {
+    "alt_name:de": "Brenney",
+    "name": "Horní Branná",
+    "name:cs": "Horní Branná",
+    "name:de": "Brennei",
+    "place": "village",
+    "population": "1273",
+    "ref:cobe": "042587",
+    "ref:zsj": "042587",
+    "source": "csu:uir-zsj",
+    "start_date": "before 1357",
+    "wikidata": "Q1628632",
+    "wikipedia": "cs:Horní Branná"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333378,
+  "lat": 50.7720087,
+  "lon": 15.4315431,
+  "tags": {
+    "name": "Harrachov",
+    "name:cs": "Harrachov",
+    "name:de": "Harrachsdorf",
+    "name:lt": "Harachovas",
+    "name:pl": "Harrachov",
+    "place": "town",
+    "population": "1301",
+    "ref:cobe": "037231",
+    "ref:zsj": "037231",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q147816",
+    "wikipedia": "cs:Harrachov"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333408,
+  "lat": 50.6022869,
+  "lon": 15.3003417,
+  "tags": {
+    "name": "Chuchelna",
+    "name:cs": "Chuchelna",
+    "place": "village",
+    "population": "774",
+    "ref:cobe": "054836",
+    "ref:zsj": "054836",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333426,
+  "lat": 50.6046896,
+  "lon": 15.4014503,
+  "tags": {
+    "name": "Bystrá nad Jizerou",
+    "name:cs": "Bystrá nad Jizerou",
+    "name:de": "Bistra",
+    "place": "village",
+    "population": "122",
+    "ref:cobe": "016632",
+    "ref:zsj": "016632",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1018685",
+    "wikipedia": "cs:Bystrá nad Jizerou"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333447,
+  "lat": 50.6400712,
+  "lon": 15.3370985,
+  "tags": {
+    "name": "Bozkov",
+    "name:cs": "Bozkov",
+    "name:de": "Boskau",
+    "place": "village",
+    "population": "560",
+    "ref:cobe": "008745",
+    "ref:zsj": "008745",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333463,
+  "lat": 50.6034651,
+  "lon": 15.3683661,
+  "tags": {
+    "name": "Benešov u Semil",
+    "name:cs": "Benešov u Semil",
+    "name:de": "Beneschau b. S.",
+    "place": "village",
+    "population": "850",
+    "ref:cobe": "002470",
+    "ref:zsj": "002470",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333478,
+  "lat": 50.6332432,
+  "lon": 15.5211786,
+  "tags": {
+    "name": "Dolní Štěpanice",
+    "name:cs": "Dolní Štěpanice",
+    "name:de": "Nieder Stepanitz",
+    "place": "village",
+    "population": "352",
+    "ref:cobe": "002143",
+    "ref:zsj": "002143",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q11818134",
+    "wikipedia": "cs:Dolní Štěpanice"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333501,
+  "lat": 50.6441124,
+  "lon": 15.5373555,
+  "tags": {
+    "name": "Horní Štěpanice",
+    "name:cs": "Horní Štěpanice",
+    "name:de": "Ober Stepanitz",
+    "place": "village",
+    "population": "86",
+    "ref:cobe": "002151",
+    "ref:zsj": "002151",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389252,
+  "lat": 50.6431213,
+  "lon": 15.3017202,
+  "tags": {
+    "name": "Horská Kamenice",
+    "name:cs": "Horská Kamenice",
+    "place": "village",
+    "population": "121",
+    "ref:cobe": "044814",
+    "ref:zsj": "044814",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389298,
+  "lat": 50.7088147,
+  "lon": 15.3534548,
+  "tags": {
+    "name": "Zlatá Olešnice",
+    "name:cs": "Zlatá Olešnice",
+    "name:de": "Woleschitz",
+    "place": "village",
+    "population": "442",
+    "ref:cobe": "408280",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389316,
+  "lat": 50.6648743,
+  "lon": 15.3117182,
+  "tags": {
+    "name": "Vlastiboř",
+    "name:cs": "Vlastiboř",
+    "name:de": "Wlastibor",
+    "place": "village",
+    "population": "125",
+    "ref:cobe": "183431",
+    "ref:zsj": "183431",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389324,
+  "lat": 50.7143764,
+  "lon": 15.3150838,
+  "tags": {
+    "name": "Velké Hamry",
+    "name:cs": "Velké Hamry",
+    "name:de": "Großhammer",
+    "place": "village",
+    "population": "2590",
+    "ref:cobe": "178756",
+    "ref:zsj": "178756",
+    "source": "csu:uir-zsj",
+    "wikipedia": "cs:Velké Hamry"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389332,
+  "lat": 50.7505121,
+  "lon": 15.3006792,
+  "tags": {
+    "name": "Žďár",
+    "name:cs": "Žďár",
+    "name:de": "Brand",
+    "place": "village",
+    "population": "233",
+    "ref:cobe": "165085",
+    "ref:zsj": "165085",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q10296623"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389356,
+  "lat": 50.7379882,
+  "lon": 15.3038421,
+  "tags": {
+    "name": "Tanvald",
+    "name:cs": "Tanvald",
+    "name:de": "Tannwald",
+    "name:prefix": "city",
+    "place": "town",
+    "population": "6768",
+    "ref:cobe": "408255",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q149105",
+    "wikipedia": "cs:Tanvald"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389474,
+  "lat": 50.7046611,
+  "lon": 15.3180054,
+  "tags": {
+    "name": "Plavy",
+    "name:cs": "Plavy",
+    "name:de": "Plaw",
+    "place": "village",
+    "population": "572",
+    "ref:cobe": "121584",
+    "ref:zsj": "121584",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389616,
+  "lat": 50.7710028,
+  "lon": 15.3469913,
+  "tags": {
+    "name": "Polubný",
+    "name:cs": "Polubný",
+    "name:de": "Polaun",
+    "place": "village",
+    "population": "164",
+    "ref:cobe": "069752",
+    "ref:zsj": "069752",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12046261"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389640,
+  "lat": 50.7596171,
+  "lon": 15.3658974,
+  "tags": {
+    "name": "Kořenov",
+    "name:cs": "Kořenov",
+    "name:de": "Wurzelsdorf",
+    "place": "village",
+    "population": "556",
+    "ref:cobe": "408182",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1785841",
+    "wikipedia": "cs:Kořenov"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389858,
+  "lat": 50.6876177,
+  "lon": 15.3013264,
+  "tags": {
+    "name": "Držkov",
+    "name:cs": "Držkov",
+    "name:de": "Drschke",
+    "place": "village",
+    "population": "572",
+    "ref:cobe": "032735",
+    "ref:zsj": "032735",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1651907796,
+  "lat": 50.6660523,
+  "lon": 15.5496298,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1651907817,
+  "lat": 50.6663884,
+  "lon": 15.5510484,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1730536241,
+  "lat": 50.6350023,
+  "lon": 15.6588950,
+  "tags": {
+    "name": "Horní Lánov",
+    "name:cs": "Horní Lánov",
+    "name:de": "Ober Langenau",
+    "old_name:de": "Ober-Langenau",
+    "place": "village",
+    "population": "408",
+    "ref:cobe": "078905",
+    "ref:zsj": "078905",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1624065",
+    "wikipedia": "de:Horní Lánov"
+  }
+},
+{
+  "type": "node",
+  "id": 1730538450,
+  "lat": 50.5869966,
+  "lon": 15.6643195,
+  "tags": {
+    "name": "Dolní Lánov",
+    "name:cs": "Dolní Lánov",
+    "old_name:de": "Nieder-Langenau",
+    "place": "village",
+    "population": "668",
+    "ref:cobe": "029424",
+    "ref:zsj": "029424",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1735754032,
+  "lat": 50.5609540,
+  "lon": 15.8875815,
+  "tags": {
+    "name": "Trutnov-Volanov",
+    "name:de": "Trautenau - Weigelsdorf",
+    "operator": "cz:SŽDC",
+    "railway": "halt",
+    "railway:ref": "571000",
+    "wikidata": "Q18430427"
+  }
+},
+{
+  "type": "node",
+  "id": 1949632354,
+  "lat": 50.6393068,
+  "lon": 15.5411061,
+  "tags": {
+    "name": "Pod Hradem",
+    "name:cs": "Pod Hradem",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 1949632359,
+  "lat": 50.6376325,
+  "lon": 15.5434053,
+  "tags": {
+    "name": "Pod Hradem",
+    "name:cs": "Pod Hradem",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 1949949995,
+  "lat": 50.6364719,
+  "lon": 15.5598901,
+  "tags": {
+    "name": "Končiny",
+    "name:cs": "Končiny",
+    "name:de": "Schreibendorf",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 1949972089,
+  "lat": 50.6198186,
+  "lon": 15.5866575,
+  "tags": {
+    "name": "Vejsplachy",
+    "name:cs": "Vejsplachy",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 1951028147,
+  "lat": 50.5855825,
+  "lon": 15.5805997,
+  "tags": {
+    "name": "Bakov",
+    "name:cs": "Bakov",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 2083150905,
+  "lat": 50.6426012,
+  "lon": 15.9064576,
+  "tags": {
+    "aerialway": "station",
+    "name": "Prkenný důl",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2083150906,
+  "lat": 50.6399600,
+  "lon": 15.9048083,
+  "tags": {
+    "aerialway": "station",
+    "name": "Karolinka",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2084996496,
+  "lat": 50.7671637,
+  "lon": 15.6047403,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2084996503,
+  "lat": 50.7693455,
+  "lon": 15.6034756,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2462235201,
+  "lat": 50.7457527,
+  "lon": 15.8205955,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "entry",
+    "name": "Pomezní boudy",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2684296138,
+  "lat": 50.6718556,
+  "lon": 15.7268106,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3152343618,
+  "lat": 50.6910205,
+  "lon": 15.3964055,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3152343621,
+  "lat": 50.6928526,
+  "lon": 15.4001823,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3166401069,
+  "lat": 50.7360010,
+  "lon": 15.3495129,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3166401274,
+  "lat": 50.7407143,
+  "lon": 15.3480037,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3166471941,
+  "lat": 50.6933570,
+  "lon": 15.3906721,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3166471994,
+  "lat": 50.6946839,
+  "lon": 15.3878239,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3252310517,
+  "lat": 50.7677387,
+  "lon": 15.6012435,
+  "tags": {
+    "aerialway": "station",
+    "name": "Davidovky",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3516891116,
+  "lat": 50.5866121,
+  "lon": 15.9864254,
+  "tags": {
+    "name": "Lhota u Trutnova",
+    "railway": "halt",
+    "wikidata": "Q29947652"
+  }
+},
+{
+  "type": "node",
+  "id": 3763702061,
+  "lat": 50.6313565,
+  "lon": 16.0012663,
+  "tags": {
+    "name": "Bečkov",
+    "name:cs": "Bečkov",
+    "name:de": "Potschendorf",
+    "place": "village",
+    "wikidata": "Q854552",
+    "wikipedia": "cs:Bečkov"
+  }
+},
+{
+  "type": "node",
+  "id": 3874646566,
+  "lat": 50.6532924,
+  "lon": 15.6025056,
+  "tags": {
+    "aerialway": "station",
+    "name": "Bubákov",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3874646567,
+  "lat": 50.6538660,
+  "lon": 15.6047198,
+  "tags": {
+    "aerialway": "station",
+    "name": "Parkoviště Bubákov",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5161434602,
+  "lat": 50.7411032,
+  "lon": 15.5819135,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5341417376,
+  "lat": 50.7051699,
+  "lon": 15.7327738,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "ele": "828.95",
+    "name": "Pec pod Sněžkou",
+    "name:cs": "Pec pod Sněžkou",
+    "name:de": "Petzer",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5414940493,
+  "lat": 50.7645164,
+  "lon": 15.4426254,
+  "tags": {
+    "aerialway": "station",
+    "name": "Ryžoviště",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5649130448,
+  "lat": 50.6185043,
+  "lon": 15.6231166,
+  "tags": {
+    "name": "Vrchlabí",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "572008",
+    "uic_ref": "5457200",
+    "wikidata": "Q18180602"
+  }
+},
+{
+  "type": "node",
+  "id": 5665658195,
+  "lat": 50.5838538,
+  "lon": 15.6227751,
+  "tags": {
+    "name": "Kunčice nad Labem",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "569400",
+    "uic_ref": "5456940",
+    "wheelchair": "yes",
+    "wikidata": "Q19400861"
+  }
+},
+{
+  "type": "node",
+  "id": 5677756924,
+  "lat": 50.6222116,
+  "lon": 15.8199405,
+  "tags": {
+    "name": "Svoboda nad Úpou",
+    "note": "nz",
+    "operator": "cz:PDV RAILWAY",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "572206",
+    "wikidata": "Q18180536"
+  }
+},
+{
+  "type": "node",
+  "id": 5677756925,
+  "lat": 50.6003322,
+  "lon": 15.8728360,
+  "tags": {
+    "name": "Kalná Voda",
+    "name:de": "Trübenwasser",
+    "note": "nz",
+    "operator": "cz:PDV RAILWAY",
+    "railway": "station",
+    "railway:ref": "572404",
+    "wikidata": "Q66888943"
+  }
+},
+{
+  "type": "node",
+  "id": 5677756926,
+  "lat": 50.5651950,
+  "lon": 15.9110570,
+  "tags": {
+    "name": "Trutnov hlavní nádraží",
+    "name:de": "Trautenau Hauptbahnhof",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "570200",
+    "short_name": "Trutnov hl.n.",
+    "uic_ref": "5457020"
+  }
+},
+{
+  "type": "node",
+  "id": 5677756927,
+  "lat": 50.5778444,
+  "lon": 15.9451580,
+  "tags": {
+    "name": "Trutnov střed",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "570408",
+    "wikidata": "Q18180561"
+  }
+},
+{
+  "type": "node",
+  "id": 5677756928,
+  "lat": 50.5791716,
+  "lon": 15.9585274,
+  "tags": {
+    "name": "Trutnov-Poříčí",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "570309",
+    "wikidata": "Q56324883"
+  }
+},
+{
+  "type": "node",
+  "id": 5681074605,
+  "lat": 50.7121613,
+  "lon": 15.4228582,
+  "tags": {
+    "name": "Rokytnice nad Jizerou",
+    "operator": "cz:SŽDC",
+    "railway": "station",
+    "railway:ref": "571109",
+    "wikidata": "Q18180491"
+  }
+},
+{
+  "type": "node",
+  "id": 5686893152,
+  "lat": 50.7701376,
+  "lon": 15.3657255,
+  "tags": {
+    "name": "Kořenov",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "549121",
+    "train": "yes",
+    "wheelchair": "no",
+    "wikidata": "Q18180335"
+  }
+},
+{
+  "type": "node",
+  "id": 5688646197,
+  "lat": 50.6032915,
+  "lon": 15.3241712,
+  "tags": {
+    "name": "Semily",
+    "name:cs": "Semily",
+    "name:de": "Semil",
+    "operator": "Správa železnic",
+    "operator:short": "SŽ",
+    "operator:wikidata": "Q1848025",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "565903",
+    "train": "yes",
+    "uic_ref": "5456590",
+    "wheelchair": "yes",
+    "wikidata": "Q18180506",
+    "wikipedia": "cs:Semily (nádraží)"
+  }
+},
+{
+  "type": "node",
+  "id": 5688646199,
+  "lat": 50.7434663,
+  "lon": 15.3110321,
+  "tags": {
+    "name": "Tanvald",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "549527",
+    "wheelchair": "yes",
+    "wikidata": "Q18180538"
+  }
+},
+{
+  "type": "node",
+  "id": 5907899641,
+  "lat": 50.7005843,
+  "lon": 15.3064281,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5907899642,
+  "lat": 50.7025447,
+  "lon": 15.3138149,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5924361309,
+  "lat": 50.6969335,
+  "lon": 15.3900874,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5924361310,
+  "lat": 50.6990275,
+  "lon": 15.3941250,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5924361319,
+  "lat": 50.7008039,
+  "lon": 15.3920757,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5924361321,
+  "lat": 50.6994987,
+  "lon": 15.3895283,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8017296868,
+  "lat": 50.6788384,
+  "lon": 15.7294395,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8685594011,
+  "lat": 50.6360080,
+  "lon": 15.6023595,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9321004618,
+  "lat": 50.6818379,
+  "lon": 15.7364239,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9353722326,
+  "lat": 50.7044400,
+  "lon": 15.7700872,
+  "tags": {
+    "aerialway": "station",
+    "name": "Sagasserovy boudy",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9353722329,
+  "lat": 50.7032474,
+  "lon": 15.7734600,
+  "tags": {
+    "aerialway": "station",
+    "name": "Sagasserovy boudy",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9558794603,
+  "lat": 50.6845403,
+  "lon": 15.7221409,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9558794604,
+  "lat": 50.6845101,
+  "lon": 15.7232367,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9560746090,
+  "lat": 50.6814172,
+  "lon": 15.7371193,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9588807741,
+  "lat": 50.7388706,
+  "lon": 15.4898867,
+  "tags": {
+    "aerialway": "station",
+    "name": "Snowpark",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9588807742,
+  "lat": 50.7392920,
+  "lon": 15.4877747,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9588807743,
+  "lat": 50.7462584,
+  "lon": 15.4886343,
+  "tags": {
+    "aerialway": "station",
+    "name": "Horní domky",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 9654155087,
+  "lat": 50.7283732,
+  "lon": 15.8176144,
+  "tags": {
+    "aerialway": "station",
+    "name": "U Kostela",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11881656255,
+  "lat": 50.6814411,
+  "lon": 15.7372970,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11881656256,
+  "lat": 50.6814768,
+  "lon": 15.7373591,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 11884680236,
+  "lat": 50.7534517,
+  "lon": 15.8168624,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "exit",
+    "name": "Lesní hřeben",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 12643499211,
+  "lat": 50.7282978,
+  "lon": 15.8077183,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 12643499218,
+  "lat": 50.7286545,
+  "lon": 15.8118251,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "way",
+  "id": 22933111,
+  "center": {
+    "lat": 50.6314698,
+    "lon": 15.7705061
+  },
+  "nodes": [
+    247047343,
+    247047344,
+    247047345,
+    247047346,
+    247047353,
+    247047371,
+    5034629810,
+    247047372,
+    247047373,
+    247047374,
+    247047343
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "cabin",
+    "building:levels": "2",
+    "name": "Janské Lázně",
+    "name:de": "Johannesbad",
+    "public_transport": "station",
+    "source": "cuzk:km"
+  }
+},
+{
+  "type": "way",
+  "id": 22933116,
+  "center": {
+    "lat": 50.6481109,
+    "lon": 15.7515169
+  },
+  "nodes": [
+    247047395,
+    247047396,
+    247047397,
+    247047398,
+    247047399,
+    11978199753,
+    247047400,
+    247047401,
+    247047402,
+    247047395
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "266",
+    "addr:country": "CZ",
+    "addr:housenumber": "266",
+    "addr:place": "Janské Lázně",
+    "addr:postcode": "54225",
+    "addr:street": "Horská",
+    "aerialway": "station",
+    "building": "cabin",
+    "name": "Černá hora",
+    "name:cs": "Černá hora",
+    "name:de": "Schwarzhorn",
+    "public_transport": "station",
+    "ref:ruian:addr": "20379081",
+    "source:building": "uhul:ortofoto"
+  }
+},
+{
+  "type": "way",
+  "id": 27783852,
+  "center": {
+    "lat": 50.7371919,
+    "lon": 15.4789090
+  },
+  "nodes": [
+    305073173,
+    305073175,
+    305073178,
+    305073176,
+    305073180,
+    305073181,
+    305073183,
+    305073184,
+    305073186,
+    305073188,
+    305073189,
+    305073191,
+    305073192,
+    305073194,
+    305073195,
+    305073197,
+    305073198,
+    305073200,
+    305073202,
+    366587444,
+    305073173
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "civic",
+    "building:ruian:type": "15",
+    "name": "Dolní stanice lanovky Horní Domky",
+    "network": "Talstation Ober Häuser",
+    "public_transport": "station",
+    "ref:ruian:building": "49148672",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 27783853,
+  "center": {
+    "lat": 50.7462289,
+    "lon": 15.4884821
+  },
+  "nodes": [
+    305073203,
+    305073205,
+    305073207,
+    305073208,
+    305073203
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "name": "Horní stanice lanové dráhy Horní Domky",
+    "name:de": "Bergstation Ober Häuser",
+    "public_transport": "station",
+    "source": "cuzk:km"
+  }
+},
+{
+  "type": "way",
+  "id": 27783854,
+  "center": {
+    "lat": 50.7391405,
+    "lon": 15.4871560
+  },
+  "nodes": [
+    305073213,
+    305073215,
+    305073216,
+    305073218,
+    9588622472,
+    305073221,
+    305073222,
+    305073224,
+    305073225,
+    305073213
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "name": "Dolní stanice lanovky Lysá Hora",
+    "name:de": "Talstation Kahler Berg",
+    "public_transport": "station",
+    "source": "cuzk:km"
+  }
+},
+{
+  "type": "way",
+  "id": 29292176,
+  "center": {
+    "lat": 50.7206560,
+    "lon": 15.6126356
+  },
+  "nodes": [
+    9002853509,
+    12163366819,
+    12339706437,
+    12163366820,
+    12137291598,
+    322108183,
+    7813819447,
+    9002853508,
+    7813819467,
+    322108201,
+    11605111180,
+    4563119631,
+    9002853507,
+    322108211,
+    9002853506,
+    9002853504,
+    9002853509
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "civic",
+    "building:levels": "2",
+    "building:ruian:type": "5",
+    "name": "Svatý Petr",
+    "public_transport": "station",
+    "ref:ruian:building": "39024318",
+    "source": "cuzk:ruian",
+    "start_date": "2016-09-30"
+  }
+},
+{
+  "type": "way",
+  "id": 29292198,
+  "center": {
+    "lat": 50.7069851,
+    "lon": 15.6165320
+  },
+  "nodes": [
+    2347321807,
+    322108397,
+    4563119202,
+    4563119201,
+    322108396,
+    2347321803,
+    322108395,
+    2347321807
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "building:levels": "2",
+    "building:ruian:type": "19",
+    "public_transport": "station",
+    "ref:ruian:building": "44937423",
+    "source": "cuzk:ruian",
+    "start_date": "2016-09-30"
+  }
+},
+{
+  "type": "way",
+  "id": 31454415,
+  "center": {
+    "lat": 50.7338872,
+    "lon": 15.6065356
+  },
+  "nodes": [
+    351141519,
+    351141515,
+    351141532,
+    3221276704,
+    351141512,
+    3221276705,
+    351141530,
+    11604364005,
+    351141527,
+    351141525,
+    3221276702,
+    3221276701,
+    351141522,
+    351141519
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "civic",
+    "building:ruian:type": "5",
+    "name": "Medvědín",
+    "public_transport": "station",
+    "ref:ruian:building": "39024083",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 44529765,
+  "center": {
+    "lat": 50.7538936,
+    "lon": 15.5064911
+  },
+  "nodes": [
+    565636966,
+    565636967,
+    565636968,
+    1057658785,
+    565636969,
+    1057658917,
+    565636971,
+    565636966
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "name": "Horní stanice lanovky Lysá hora",
+    "name:de": "Bergstation Kahler Berg",
+    "public_transport": "station",
+    "source": "uhul:ortofoto"
+  }
+},
+{
+  "type": "way",
+  "id": 46683874,
+  "center": {
+    "lat": 50.7414024,
+    "lon": 15.5830409
+  },
+  "nodes": [
+    596600150,
+    596600149,
+    3221276725,
+    12125529622,
+    3221276726,
+    12125529621,
+    3221276724,
+    596600145,
+    3221276720,
+    596600143,
+    596600153,
+    596600147,
+    596600146,
+    596600150
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "industrial",
+    "building:ruian:type": "16",
+    "name": "Medvědín",
+    "public_transport": "station",
+    "ref:ruian:building": "44962550",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 74863465,
+  "center": {
+    "lat": 50.7567684,
+    "lon": 15.6322065
+  },
+  "nodes": [
+    884205387,
+    884205374,
+    884205378,
+    884205365,
+    884205387
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "name": "Lyžařský vlek boudy Erlebachovy",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "way",
+  "id": 140902664,
+  "center": {
+    "lat": 50.6332546,
+    "lon": 15.7085350
+  },
+  "nodes": [
+    7187922477,
+    7187922476,
+    1542735004,
+    1542735112,
+    1542735177,
+    1542735132,
+    7187922475,
+    7187922474,
+    7187922473,
+    7187922472,
+    1542734989,
+    1542735072,
+    7187922477
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "warehouse",
+    "building:ruian:type": "12",
+    "description": "Stanice nákladní lanové dráhy",
+    "ref:ruian:building": "48872725",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 165385688,
+  "center": {
+    "lat": 50.5709549,
+    "lon": 15.6442646
+  },
+  "nodes": [
+    3954923548,
+    3954923550,
+    3954923549,
+    1769362387,
+    1769362386,
+    3954923547,
+    1769362384,
+    1769362385,
+    3954923546,
+    3954923548
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "industrial",
+    "building:ruian:type": "1",
+    "ref:ruian:building": "39010091",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 203791132,
+  "center": {
+    "lat": 50.7203005,
+    "lon": 15.6147272
+  },
+  "nodes": [
+    4563119628,
+    4563119629,
+    4563119630,
+    2137864107,
+    2137864103,
+    4563119627,
+    2137864101,
+    2137864106,
+    4563119628
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "building:ruian:type": "19",
+    "public_transport": "station",
+    "ref:ruian:building": "39024334",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 206817279,
+  "center": {
+    "lat": 50.6579928,
+    "lon": 15.5479192
+  },
+  "nodes": [
+    3243963429,
+    2168651745,
+    2168651744,
+    2168651737,
+    3243963429
+  ],
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "building": "yes",
+    "building:colour": "#A29476",
+    "building:levels": "1",
+    "building:ruian:type": "19",
+    "public_transport": "station",
+    "ref:ruian:building": "30003911",
+    "roof:colour": "#879FAB",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 206868751,
+  "center": {
+    "lat": 50.6625978,
+    "lon": 15.5554820
+  },
+  "nodes": [
+    2169154285,
+    2169154297,
+    2169154290,
+    7187922916,
+    7187922915,
+    2169154282,
+    2169154285
+  ],
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "building": "yes",
+    "building:colour": "#3C3B39",
+    "building:levels": "1",
+    "building:ruian:type": "19",
+    "public_transport": "station",
+    "ref:ruian:building": "30003890",
+    "roof:colour": "#829099",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 209049578,
+  "center": {
+    "lat": 50.7458180,
+    "lon": 15.8207493
+  },
+  "nodes": [
+    2192845533,
+    2192845530,
+    2192845528,
+    2192845531,
+    2192845533
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "industrial",
+    "building:ruian:type": "16",
+    "ref:ruian:building": "43163505",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 211459645,
+  "center": {
+    "lat": 50.6346852,
+    "lon": 15.8008143
+  },
+  "nodes": [
+    2214737507,
+    2214737508,
+    2214737505,
+    2214737501,
+    2214737495,
+    2214737494,
+    11881656244,
+    2214737502,
+    2214737507
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "industrial",
+    "building:ruian:type": "19",
+    "name": "Duncan",
+    "ref:ruian:building": "41096142",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 363260657,
+  "center": {
+    "lat": 50.7267600,
+    "lon": 15.3902541
+  },
+  "nodes": [
+    3674437659,
+    3674437660,
+    3674437658,
+    3674437657,
+    9355430399,
+    3674437659
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "name": "Dolní stanice lanovky Pizár",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "way",
+  "id": 377008002,
+  "center": {
+    "lat": 50.6434204,
+    "lon": 15.7560688
+  },
+  "nodes": [
+    3803780013,
+    3803780014,
+    3803780011,
+    3803780010,
+    3803780013
+  ],
+  "tags": {
+    "aerialway": "station",
+    "name": "Hofmanky",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "way",
+  "id": 377008003,
+  "center": {
+    "lat": 50.6334159,
+    "lon": 15.7590112
+  },
+  "nodes": [
+    3803780008,
+    3803780009,
+    3803780006,
+    3803780004,
+    3803780003,
+    3803780002,
+    3803780008
+  ],
+  "tags": {
+    "aerialway": "station",
+    "name": "Hofmannovy boudy",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "way",
+  "id": 1016582162,
+  "center": {
+    "lat": 50.6525580,
+    "lon": 15.5982657
+  },
+  "nodes": [
+    9376469044,
+    9376469045,
+    9376469046,
+    9376469047,
+    9376469044
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "way",
+  "id": 1480687212,
+  "center": {
+    "lat": 50.6651329,
+    "lon": 15.5514678
+  },
+  "nodes": [
+    13580648470,
+    13580648471,
+    13580648472,
+    13580648473,
+    13580648470
+  ],
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "entry",
+    "building": "yes",
+    "building:levels": "1",
+    "building:material": "wood",
+    "height": "1",
+    "public_transport": "station",
+    "roof:colour": "#B2AAA3",
+    "roof:orientation": "across",
+    "roof:shape": "gabled"
+  }
+}
+
+  ]
+}
