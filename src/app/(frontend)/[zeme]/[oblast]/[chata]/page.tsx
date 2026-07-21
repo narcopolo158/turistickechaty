@@ -7,7 +7,9 @@ import { RichText } from '@payloadcms/richtext-lexical/react'
 import { FotoAtribuce } from '@/components/FotoAtribuce'
 import RazitkoMoment from '@/components/RazitkoMoment'
 import TiskButton from '@/components/TiskButton'
+import { TRAIL_COLORS, TrailBlaze } from '@/components/ui'
 import VyskovyProfil, { type BodProfilu } from '@/components/VyskovyProfil'
+import { pristupyChaty } from '@/lib/pristupove-trasy'
 import {
   chataPath,
   formatCas,
@@ -25,6 +27,14 @@ import {
 import type { Chaty as Chata, Fotky as Fotka, Razitka } from '@/payload-types'
 
 export const revalidate = 600
+
+/** Popisek typu výchozího bodu pro sekci „Odkud vyjít". */
+const TYP_BODU_NAZEV: Record<string, string> = {
+  obec: 'obec',
+  lanovka: 'lanovka',
+  zeleznice: 'vlaková zastávka',
+  zastavka: 'aut. zastávka',
+}
 
 type Params = { zeme: string; oblast: string; chata: string }
 
@@ -144,6 +154,8 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
   const otisk = razitko && typeof razitko.otisk === 'object' ? razitko.otisk : null
   const overeni = posledniOvereni(chata)
   const trasy = chata.trasy ?? []
+  // Přístupové trasy od kurátorovaných středisek (DATA-06 3b) — „odkud vyjít".
+  const pristupy = pristupyChaty(chata.slug)
   /** První trasa s doloženým výškovým profilem (≥ 2 body [km, výška]). */
   const trasaSProfilem = trasy.find(
     (t) =>
@@ -179,6 +191,7 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
   const kotvy: { id: string; label: string }[] = []
   if (chata.zajimavosti?.length) kotvy.push({ id: 'p-zajimavosti', label: `0${kotvy.length + 1} Zajímavosti` })
   if (trasy.length) kotvy.push({ id: 'p-trasy', label: `0${kotvy.length + 1} Trasy` })
+  if (pristupy.length) kotvy.push({ id: 'p-pristup', label: `0${kotvy.length + 1} Odkud vyjít` })
   if (razitko) kotvy.push({ id: 'p-razitko', label: `0${kotvy.length + 1} Razítko` })
   if (sousede.length) kotvy.push({ id: 'p-sousede', label: `0${kotvy.length + 1} Sousedé` })
   if (maHistorii) kotvy.push({ id: 'p-historie', label: `0${kotvy.length + 1} Historie` })
@@ -305,6 +318,59 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
               </p>
             </div>
           )}
+        </section>
+      )}
+
+      {pristupy.length > 0 && (
+        <section id="p-pristup" style={{ marginTop: 18 }}>
+          <div className="lista">
+            <span className="n">{cisloSekce()}</span>
+            <b>Odkud vyjít</b>
+          </div>
+          <p style={{ margin: '2px 0 10px', fontSize: 11.5, color: 'var(--muted)' }}>
+            Nejkratší cesty po značených trasách z nejbližších středisek (výpočet ze
+            značení KČT v OpenStreetMap; orientační, zatím bez převýšení a času).
+          </p>
+          {pristupy.map((p, i) => {
+            // Úseky slij podle barvy (přehlednější než dlouhá sekvence).
+            const dleBarvy = new Map<string, number>()
+            for (const u of p.useky) dleBarvy.set(u.znaceni, (dleBarvy.get(u.znaceni) ?? 0) + u.delkaKm)
+            return (
+              <div
+                key={p.vychoziBod + i}
+                style={{
+                  display: 'flex',
+                  gap: 12,
+                  alignItems: 'baseline',
+                  flexWrap: 'wrap',
+                  padding: '9px 2px',
+                  borderBottom: i === pristupy.length - 1 ? undefined : '1px solid var(--line)',
+                }}
+              >
+                <span style={{ flex: '1 1 150px', minWidth: 150 }}>
+                  <b style={{ fontSize: 13 }}>{p.vychoziBod}</b>{' '}
+                  <span style={{ fontSize: 11, color: 'var(--muted)' }}>{TYP_BODU_NAZEV[p.typ] ?? p.typ}</span>
+                </span>
+                <span className="num" style={{ fontWeight: 600 }}>{formatCislo(p.delkaKm)} km</span>
+                <span style={{ display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center' }}>
+                  {[...dleBarvy.entries()].map(([znaceni, km], j) =>
+                    znaceni in TRAIL_COLORS ? (
+                      <TrailBlaze key={j} color={znaceni as keyof typeof TRAIL_COLORS}>
+                        {`${TRAIL_COLORS[znaceni as keyof typeof TRAIL_COLORS].label} ${formatCislo(Math.round(km * 10) / 10)}`}
+                      </TrailBlaze>
+                    ) : (
+                      <span key={j} style={{ fontSize: 11, color: 'var(--muted)' }}>
+                        neznačeno {formatCislo(Math.round(km * 10) / 10)} km
+                      </span>
+                    ),
+                  )}
+                  {p.kRucniKontrole && (
+                    <span style={{ fontSize: 10.5, color: 'var(--muted)' }}>· část mimo značku</span>
+                  )}
+                </span>
+              </div>
+            )
+          })}
         </section>
       )}
 

@@ -11,6 +11,10 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-21 — hlavní session (Opus, inline): render přístupových tras na profilu („Odkud vyjít")
+**Hotovo:** nová sekce **„Odkud vyjít"** na profilu chaty — vypisuje přístupové trasy z DATA-06 3b (`data/trasy/krkonose/pristupove-trasy.json`): výchozí bod + typ, délka, značení sloučené po barvách jako **pásové značky KČT** (`TrailBlaze`, km na barvu) + příznak „část mimo značku". `src/lib/pristupove-trasy.ts` čte katalog server-side (cache). Kotva v subnav, sekce za „Trasy" (ruční GPX má zatím jen Luční, tahle doplní zbylých 22 chat). **Render ověřen screenshotem Dvoraček** (Lysá hora lanovka 2,71 km — žlutá 2,2 + modrá 0,6; Rokytnice obec 5,18 km — žlutá/modrá/červená/zelená). Typecheck + lint čisté.
+**Příště:** Phase 2 — čáry tras na mapě profilu (Leaflet polyline z geometrie, barva dle značení); po Michalově balíku výchozích bodů přegenerovat routing (cross-check GPS s OSM); výšky/`casMin` (Actions).
+
 ## 2026-07-21 — hlavní session (Opus, inline): výchozí body — zastávky + zdroje tras
 **Zadání Michala:** brát i autobusové zastávky; zjistit populární výchozí body/trasy z webů chatařů / jiných zdrojů (mapy.com, diskuze).
 **Hotovo:** (1) **exportér výchozích bodů rozšířen o zastávky** — `highway=bus_stop` s názvem → typ `zastavka` (parser + dotaz + test). Po dalším běhu workflow „DATA-06: výchozí body oblasti" se objeví i pojmenované zastávky (Špindlerova bouda, Zlaté návrší…), pak je zařadím do kurátorovaných středisek. 10 testů, typecheck + lint čisté.
