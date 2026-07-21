@@ -10,6 +10,7 @@ import {
   jeDetailRazitka,
   parsujStranku,
   posbirejChecklist,
+  rozdelPocet,
   strankaUrl,
 } from '../../scripts/data05-razitkuj-checklist'
 import {
@@ -36,18 +37,26 @@ describe('DATA-05 · parser stránky kategorie', () => {
     <div class="vypis">
       <a href="/kategorie-horske-a-turisticke-chaty/2">další stránka</a>
       <a href="/5469_bouda-bile-labe"><img src="nahled.jpg" alt=""></a>
-      <a href="/5469_bouda-bile-labe">Bouda Bílé Labe</a>
+      <a href="/5469_bouda-bile-labe">Bouda Bílé Labe (3)</a>
       <a href="http://www.razitkuj.cz/misto-bilikova-chata/1">Bílikova chata</a>
       <a href="/uzivatel-278/1">uživatel tlaci</a>
     </div>`
 
-  it('vytáhne razítka dle URL vzoru, deduplikuje náhled+titulek, ignoruje ostatní', () => {
+  it('vytáhne razítka dle URL vzoru, počet otisků z „(N)", dedup náhled+titulek, ignoruje ostatní', () => {
     const polozky = parsujStranku(html)
     expect(polozky).toHaveLength(2)
-    expect(polozky.find((p) => p.url.endsWith('/5469_bouda-bile-labe'))?.nazev).toBe('Bouda Bílé Labe')
+    const labe = polozky.find((p) => p.url.endsWith('/5469_bouda-bile-labe'))
+    expect(labe?.nazev).toBe('Bouda Bílé Labe') // „(3)" odděleno do pocetOtisku
+    expect(labe?.pocetOtisku).toBe(3)
     const bilik = polozky.find((p) => p.url.endsWith('/misto-bilikova-chata/1'))
     expect(bilik?.nazev).toBe('Bílikova chata')
+    expect(bilik?.pocetOtisku).toBe(1) // bez „(N)" → 1
     expect(bilik?.url).toBe('http://www.razitkuj.cz/misto-bilikova-chata/1') // absolutní href → path zachován
+  })
+
+  it('rozdelPocet oddělí počet otisků z přípony', () => {
+    expect(rozdelPocet('Luční Bouda (6)')).toEqual({ nazev: 'Luční Bouda', pocet: 6 })
+    expect(rozdelPocet('Vosecká bouda')).toEqual({ nazev: 'Vosecká bouda', pocet: 1 })
   })
 
   it('prázdné HTML → žádná razítka', () => {

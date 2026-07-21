@@ -31,11 +31,19 @@ const ZDROJ = 'razitkuj.cz — kategorie „Horské a turistické chaty" (se svo
 
 export const strankaUrl = (strana: number): string => `${BASE}/${KATEGORIE}/${strana}`
 
-export type RazitkoPolozka = { nazev: string; url: string }
+/** Jeden objekt v checklistu; `pocetOtisku` = kolik verzí razítka objekt má
+ * (razitkuj to uvádí příponou „(N)" — i historické varianty, cenné pro sběr). */
+export type RazitkoPolozka = { nazev: string; url: string; pocetOtisku?: number }
 
 /** Cesta detailu razítka? (novější `/ID_slug` nebo starší `/misto-slug/1`). */
 export const jeDetailRazitka = (cesta: string): boolean =>
   /^\/(?:\d+_[a-z0-9][a-z0-9\-']*|misto-[a-z0-9][a-z0-9\-']*\/1)$/i.test(cesta)
+
+/** Rozdělí text odkazu na čistý název a počet otisků z přípony „(N)" (bez → 1). */
+export const rozdelPocet = (text: string): { nazev: string; pocet: number } => {
+  const m = /^(.*?)\s*\((\d+)\)\s*$/.exec(text)
+  return m ? { nazev: m[1].trim(), pocet: Number(m[2]) } : { nazev: text, pocet: 1 }
+}
 
 /** Odstraní vnořené tagy a sjednotí bílé znaky (text odkazu → název). */
 const ocisti = (s: string): string =>
@@ -53,20 +61,20 @@ const ocisti = (s: string): string =>
  * výskyt s neprázdným textem názvu.
  */
 export const parsujStranku = (html: string): RazitkoPolozka[] => {
-  const dleUrl = new Map<string, string>()
+  const dleUrl = new Map<string, { nazev: string; pocet: number }>()
   const re = /<a\b[^>]*\bhref="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi
   let m: RegExpExecArray | null
   while ((m = re.exec(html)) !== null) {
     const cesta = m[1].replace(/^https?:\/\/[^/]+/i, '').replace(/[?#].*$/, '')
     if (!jeDetailRazitka(cesta)) continue
     const url = `${BASE}${cesta}`
-    const nazev = ocisti(m[2])
+    const { nazev, pocet } = rozdelPocet(ocisti(m[2]))
     const stavajici = dleUrl.get(url)
-    if (stavajici === undefined || (!stavajici && nazev)) dleUrl.set(url, nazev)
+    if (stavajici === undefined || (!stavajici.nazev && nazev)) dleUrl.set(url, { nazev, pocet })
   }
   return [...dleUrl.entries()]
-    .filter(([, nazev]) => nazev.length > 0)
-    .map(([url, nazev]) => ({ nazev, url }))
+    .filter(([, v]) => v.nazev.length > 0)
+    .map(([url, v]) => ({ nazev: v.nazev, url, pocetOtisku: v.pocet }))
 }
 
 // ── Stažení ─────────────────────────────────────────────────────────────────
@@ -91,7 +99,7 @@ export const posbirejChecklist = async (
   maxStran: number,
   nactiHtml: (url: string) => Promise<string> = stahniStranku,
 ): Promise<{ razitka: RazitkoPolozka[]; stran: number }> => {
-  const dleUrl = new Map<string, string>()
+  const dleUrl = new Map<string, RazitkoPolozka>()
   let stranSObsahem = 0
   for (let strana = 1; strana <= maxStran; strana++) {
     const html = await nactiHtml(strankaUrl(strana))
@@ -99,17 +107,17 @@ export const posbirejChecklist = async (
     let novych = 0
     for (const p of polozky) {
       if (!dleUrl.has(p.url)) {
-        dleUrl.set(p.url, p.nazev)
+        dleUrl.set(p.url, p)
         novych++
       }
     }
     if (novych > 0) stranSObsahem++
-    console.log(`Strana ${strana}: ${polozky.length} razítek (${novych} nových).`)
+    console.log(`Strana ${strana}: ${polozky.length} objektů (${novych} nových).`)
     if (novych === 0) break // konec kategorie (prázdná / 404 / jen duplicity)
   }
-  const razitka = [...dleUrl.entries()]
-    .map(([url, nazev]) => ({ nazev, url }))
-    .sort((a, b) => a.nazev.localeCompare(b.nazev, 'cs') || a.url.localeCompare(b.url))
+  const razitka = [...dleUrl.values()].sort(
+    (a, b) => a.nazev.localeCompare(b.nazev, 'cs') || a.url.localeCompare(b.url),
+  )
   return { razitka, stran: stranSObsahem }
 }
 
@@ -124,18 +132,20 @@ const main = async () => {
   const { razitka, stran } = await posbirejChecklist(maxStran)
 
   mkdirSync(RAZITKA_ADRESAR, { recursive: true })
+  const pocetOtisku = razitka.reduce((s, r) => s + (r.pocetOtisku ?? 1), 0)
   const checklist = {
     zdroj: ZDROJ,
     kategorieUrl: `${BASE}/${KATEGORIE}/1`,
     stahnuto: new Date().toISOString().slice(0, 10),
-    pocet: razitka.length,
+    pocetObjektu: razitka.length,
+    pocetOtisku, // vč. historických / variant (razitkuj to uvádí jako „(N)")
     razitka,
   }
   writeFileSync(CHECKLIST_JSON, JSON.stringify(checklist, null, 2) + '\n', 'utf8')
 
   console.log(`\n## DATA-05 report — checklist razítek razitkuj.cz`)
   console.log(`Projito stran: ${stran}`)
-  console.log(`Razítek celkem: ${razitka.length}`)
+  console.log(`Objektů: ${razitka.length} · otisků vč. variant/historických: ${pocetOtisku}`)
   console.log(`Checklist zapsán: ${CHECKLIST_JSON}`)
   console.log(`Zdroj: ${ZDROJ}`)
 }
