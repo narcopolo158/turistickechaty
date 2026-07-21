@@ -1,0 +1,29 @@
+{
+  "rows": 307,
+  "countries": {
+    "Česko": 124,
+    "Slovensko": 92,
+    "Polsko": 61,
+    "Německo": 25,
+    "Rakousko": 2,
+    "Maďarsko": 3
+  },
+  "confidence": {
+    "A": 169,
+    "B": 124,
+    "C": 14
+  },
+  "statuses": {
+    "aktivní": 304,
+    "ověřit": 1,
+    "uzavřená / obnova": 1,
+    "uzavřená / bez noclehu": 1
+  },
+  "duplicate_name_country_range": [],
+  "missing_required": [],
+  "files": [
+    "/mnt/data/katalog_turistickych_chat_CZ_SK_preshranicni_2026.xlsx",
+    "/mnt/data/katalog_turistickych_chat_CZ_SK_preshranicni_2026.csv",
+    "/mnt/data/katalog_turistickych_chat_CZ_SK_preshranicni_2026.json"
+  ]
+}

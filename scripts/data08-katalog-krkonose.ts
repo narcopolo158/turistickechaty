@@ -1,7 +1,10 @@
 /**
  * DATA-08: zapojení externího katalogu turistických chat ČR/SK/přeshraniční
- * (dodal Michal — kompilace „od kámoše", 307 záznamů, jistota A/B/C, dva zdroje
- * na řádek) do našich Krkonoš.
+ * (307 záznamů, jistota A/B/C, dva zdroje na řádek) do našich Krkonoš. Katalog
+ * je AI kompilace (vypracoval ChatGPT, zadal Michal) — viz
+ * `data/externi/katalog-cr-sk-2026/PUVOD.md`: bereme ho jako VODICÍ / kandidátní
+ * zdroj, ne jako verifikaci; citace katalogu neplatí doslova (fakta často sedí,
+ * ale uvedený odkaz nemusí údaj podkládat) → primární zdroj se dokládá zvlášť.
  *
  * POCTIVOST (CLAUDE.md, konvence B): katalogová „jistota A" NENÍ naše
  * `verified: true`. Vše převzaté je `verified: false` se `source` odkazujícím na
@@ -19,9 +22,9 @@
  *     (`docs/DATA-08-katalog-krkonose.md`) — co katalog nabízí navíc (výška,
  *     web, provoz, kapacita, zdroje…), aby se to dalo doplnit vědomě, ne naslepo.
  *
- * Vstup je jednorázově dodaný soubor (není v repu kvůli licenci); běží v sandboxu
- * (data jsou lokální), commitují se jen odvozené výstupy.
- *   npx tsx scripts/data08-katalog-krkonose.ts /cesta/katalog.json
+ * Vstup je commitnutý v repu (`data/externi/katalog-cr-sk-2026/katalog.json`),
+ * takže běh je reprodukovatelný. Lze předat i jinou cestu argumentem.
+ *   npx tsx scripts/data08-katalog-krkonose.ts [cesta/katalog.json]
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -33,7 +36,7 @@ import { nactiChaty, normalizuj, shodaNazvu } from './data05-razitkuj-parovani'
 
 const KANDIDATI_ADRESAR = join(process.cwd(), 'data', 'kandidati', 'krkonose')
 const REPORT_MD = join(process.cwd(), 'docs', 'DATA-08-katalog-krkonose.md')
-const VYCHOZI_VSTUP = '/home/user/inbox-katalog/katalog_turistickych_chat_CZ_SK_preshranicni_2026.json'
+const VYCHOZI_VSTUP = join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json')
 
 /** Řádek katalogu (klíče = záhlaví listu). Jen pole, která používáme. */
 export type KatalogZaznam = {
