@@ -2,9 +2,18 @@
  * DATA-02: fotky chat z Wikimedia Commons — kandidátní METADATA.
  *
  * Pro každou chatu s GPS (ruční profily v `data/chaty/**` i OSM kandidáty
- * v `data/kandidati/<oblast>/`) položí na Commons API dva dotazy:
+ * v `data/kandidati/<oblast>/`) položí na Commons API tři dotazy:
  *   1. geosearch — soubory (namespace 6) v okruhu kolem GPS chaty,
- *   2. kategorie — soubory v `Category:<název chaty>` (pokud existuje).
+ *   2. kategorie — soubory v `Category:<název chaty>` (pokud existuje),
+ *   3. fulltext — hledání přesné fráze názvu chaty v namespace File
+ *      (chytá pojmenované soubory BEZ geotagu, které geosearch mine —
+ *      lekce z první dávky povyšování: Klínovka, Tetřevky, U Jirky a
+ *      Lovecká měly 0 kandidátů, Špindlerovka jen záběry parkoviště).
+ * Fulltext je z těch tří nejméně přesný (jiné objekty téhož jména!):
+ * nález POUZE z fulltextu s geotagem dál než FULLTEXT_MAX_GEOTAG_M se
+ * vyřazuje rovnou, negeotagované nálezy zůstávají kandidáty s původem
+ * `fulltext` — jestli je na snímku právě tahle chata, rozhodne redakce
+ * na stránce souboru.
  * Výsledek filtruje TVRDÝM licenčním sítem a zapisuje jen metadata do
  * `data/kandidati/fotky/<oblast>/<slug>.yaml` — SOUBORY SE NESTAHUJÍ,
  * výběr, stažení a nahrání do kolekce Fotky dělá redakce ručně.
@@ -38,6 +47,8 @@ import { vzdalenostM } from './data01-overpass-krkonose'
 
 export const API_COMMONS = 'https://commons.wikimedia.org/w/api.php'
 export const VYCHOZI_RADIUS_M = 300
+/** Nález POUZE z fulltextu s geotagem dál než tohle = jiný objekt téhož jména. */
+export const FULLTEXT_MAX_GEOTAG_M = 1000
 const USER_AGENT = 'turistickechaty.cz (DATA-02 fotky; repo narcopolo158/turistickechaty)'
 
 // Metadata, která si od Commons říkáme — licence, autorství, popis, datum.
@@ -145,6 +156,22 @@ export const urlKategorie = (api: string, chata: ChataProDotaz): string => {
 }
 
 /**
+ * Fulltextové hledání přesné fráze názvu chaty v namespace File — chytá
+ * soubory pojmenované/popsané po chatě, které nemají geotag (geosearch je
+ * mine) ani nesedí v kategorii. Fráze v uvozovkách schválně: bez nich by
+ * CirrusSearch rozložil „Lovecká chata" na slova a vrátil lovecké chaty
+ * z celé republiky.
+ */
+export const urlFulltext = (api: string, chata: ChataProDotaz): string => {
+  const p = spolecneParametry()
+  p.set('generator', 'search')
+  p.set('gsrsearch', `"${chata.nazev}"`)
+  p.set('gsrnamespace', '6')
+  p.set('gsrlimit', '30')
+  return `${api}?${p.toString()}`
+}
+
+/**
  * Doba čekání před dalším pokusem: exponenciální backoff (základ × 2^pokus,
  * strop 150 s) — a když server pošle `Retry-After` (Wikimedia ho u 429
  * posílá), respektuje se ta delší z obou hodnot.
@@ -223,9 +250,11 @@ export type CommonsStranka = {
   }[]
 }
 
+export type DruhNalezu = 'geosearch' | 'kategorie' | 'fulltext'
+
 /** Stránky z odpovědi (formatversion=2); `error` v odpovědi = prázdný výsledek
  *  jen u neexistující/neplatné kategorie, jinak tvrdá chyba. */
-export const strankyZOdpovedi = (json: unknown, druh: 'geosearch' | 'kategorie'): CommonsStranka[] => {
+export const strankyZOdpovedi = (json: unknown, druh: DruhNalezu): CommonsStranka[] => {
   const telo = json as {
     error?: { code?: string; info?: string }
     query?: { pages?: CommonsStranka[] }
@@ -300,7 +329,8 @@ export type FotkaKandidat = {
   vzdalenostM?: number
   datum?: string
   popis?: string
-  nalezeno: 'geosearch' | 'kategorie' | 'geosearch + kategorie'
+  /** Původ nálezu: zdroje v kanonickém pořadí, např. „geosearch + fulltext". */
+  nalezeno: string
 }
 export type OdmitnutaFotka = { soubor: string; duvod: string }
 
@@ -345,39 +375,60 @@ const fotkaZeStranky = (
   return fotka
 }
 
+/** Kanonické pořadí zdrojů v poli `nalezeno` (přesnější zdroje první). */
+const PORADI_DRUHU: DruhNalezu[] = ['geosearch', 'kategorie', 'fulltext']
+
 /**
- * Sloučí geosearch + kategorii (dedup podle názvu souboru), prožene licenčním
- * sítem a deterministicky seřadí: geotagované dle vzdálenosti od chaty, pak
- * abecedně. Vyřazené jdou do reportu — do YAML kandidátů nepatří.
+ * Sloučí geosearch + kategorii + fulltext (dedup podle názvu souboru), prožene
+ * licenčním sítem a deterministicky seřadí: geotagované dle vzdálenosti od
+ * chaty, pak abecedně. Nález POUZE z fulltextu s geotagem dál než
+ * FULLTEXT_MAX_GEOTAG_M se vyřazuje (jiný objekt téhož jména — např.
+ * „Lovecká chata" kdekoli v ČR). Vyřazené jdou do reportu — do YAML
+ * kandidátů nepatří. `fulltextJson` je volitelný kvůli starším exportům
+ * bez fulltext dotazu (offline --z-jsonu je zpracuje beze změny).
  */
 export const zpracujOdpovedi = (
   chata: ChataProDotaz,
   geosearchJson: unknown,
   kategorieJson: unknown,
+  fulltextJson?: unknown,
 ): { fotky: FotkaKandidat[]; odmitnuto: OdmitnutaFotka[] } => {
-  const zdroje: { stranky: CommonsStranka[]; druh: 'geosearch' | 'kategorie' }[] = [
+  const zdroje: { stranky: CommonsStranka[]; druh: DruhNalezu }[] = [
     { stranky: strankyZOdpovedi(geosearchJson, 'geosearch'), druh: 'geosearch' },
     { stranky: strankyZOdpovedi(kategorieJson, 'kategorie'), druh: 'kategorie' },
   ]
-  const podleSouboru = new Map<string, { stranka: CommonsStranka; nalezeno: FotkaKandidat['nalezeno'] }>()
+  if (fulltextJson !== undefined) {
+    zdroje.push({ stranky: strankyZOdpovedi(fulltextJson, 'fulltext'), druh: 'fulltext' })
+  }
+  const podleSouboru = new Map<string, { stranka: CommonsStranka; druhy: Set<DruhNalezu> }>()
   for (const { stranky, druh } of zdroje) {
     for (const stranka of stranky) {
       if (!stranka.title) continue
       const drive = podleSouboru.get(stranka.title)
-      podleSouboru.set(stranka.title, {
-        stranka: drive?.stranka ?? stranka,
-        nalezeno: drive && drive.nalezeno !== druh ? 'geosearch + kategorie' : (drive?.nalezeno ?? druh),
-      })
+      if (drive) drive.druhy.add(druh)
+      else podleSouboru.set(stranka.title, { stranka, druhy: new Set([druh]) })
     }
   }
 
   const fotky: FotkaKandidat[] = []
   const odmitnuto: OdmitnutaFotka[] = []
-  for (const { stranka, nalezeno } of podleSouboru.values()) {
+  for (const { stranka, druhy } of podleSouboru.values()) {
+    const nalezeno = PORADI_DRUHU.filter((d) => druhy.has(d)).join(' + ')
     const vysledek = fotkaZeStranky(chata, stranka, nalezeno)
     if (!vysledek) continue
-    if ('duvod' in vysledek) odmitnuto.push(vysledek)
-    else fotky.push(vysledek)
+    if ('duvod' in vysledek) {
+      odmitnuto.push(vysledek)
+      continue
+    }
+    const jenFulltext = druhy.size === 1 && druhy.has('fulltext')
+    if (jenFulltext && vysledek.vzdalenostM !== undefined && vysledek.vzdalenostM > FULLTEXT_MAX_GEOTAG_M) {
+      odmitnuto.push({
+        soubor: vysledek.soubor,
+        duvod: `fulltext nález s geotagem ${Math.round(vysledek.vzdalenostM)} m od chaty — pravděpodobně jiný objekt téhož jména`,
+      })
+      continue
+    }
+    fotky.push(vysledek)
   }
   const cs = new Intl.Collator('cs')
   fotky.sort(
@@ -392,17 +443,27 @@ export const zpracujOdpovedi = (
 /**
  * YAML kandidátních fotek jedné chaty. Strojově generovaný soubor — běh ho
  * PŘEPISUJE; redakční výběr se zapisuje do YAML chaty (kolekce Fotky), ne sem.
+ * `sFulltextem` říká, jestli zpracovaný export fulltext dotaz OBSAHOVAL —
+ * hlavička nesmí tvrdit víc, než se skutečně hledalo (starý export bez
+ * fulltextu tak projde offline transformací beze změny souborů).
  */
 export const yamlFotek = (
   chata: ChataProDotaz,
   fotky: FotkaKandidat[],
   checked: string,
   radiusM: number,
+  sFulltextem = false,
 ): string =>
   [
     `# ${chata.nazev} — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz ${checked})`,
-    `# Zdroj: geosearch ${radiusM} m okolo GPS chaty + Category:${chata.nazev} na commons.wikimedia.org`,
+    `# Zdroj: geosearch ${radiusM} m okolo GPS chaty + Category:${chata.nazev}${sFulltextem ? ` + fulltext „${chata.nazev}" (namespace File)` : ''} na commons.wikimedia.org`,
     '# Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).',
+    ...(sFulltextem
+      ? [
+          '# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,',
+          '# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.',
+        ]
+      : []),
     '# STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,',
     '# kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.',
     '',
@@ -410,7 +471,7 @@ export const yamlFotek = (
       chata: chata.slug,
       oblast: chata.oblast,
       nazevChaty: chata.nazev,
-      zdroj: `Wikimedia Commons API (geosearch + kategorie), profil chaty: ${chata.profil === 'rucni' ? 'data/chaty' : 'kandidát DATA-01'}`,
+      zdroj: `Wikimedia Commons API (geosearch + kategorie${sFulltextem ? ' + fulltext' : ''}), profil chaty: ${chata.profil === 'rucni' ? 'data/chaty' : 'kandidát DATA-01'}`,
       checked,
       fotky,
     }),
@@ -421,6 +482,8 @@ export type ReportChaty = {
   oblast: string
   nazev: string
   prijato: number
+  /** Kolik z přijatých našel JEN fulltext (redakce u nich ověřuje objekt). */
+  jenFulltext: number
   odmitnuto: OdmitnutaFotka[]
 }
 
@@ -430,11 +493,12 @@ export const zapisKandidatyFotek = (
   fotky: FotkaKandidat[],
   checked: string,
   radiusM: number,
+  sFulltextem = false,
 ): string => {
   const adresar = join(koren, 'data', 'kandidati', 'fotky', chata.oblast)
   mkdirSync(adresar, { recursive: true })
   const cesta = join(adresar, `${chata.slug}.yaml`)
-  writeFileSync(cesta, yamlFotek(chata, fotky, checked, radiusM), 'utf8')
+  writeFileSync(cesta, yamlFotek(chata, fotky, checked, radiusM, sFulltextem), 'utf8')
   return cesta
 }
 
@@ -444,8 +508,9 @@ export type SurovyExport = {
   checked: string
   radiusM: number
   api: string
-  /** Odpovědi API po chatách: `<oblast>/<slug>` → { geosearch, kategorie }. */
-  dotazy: Record<string, { geosearch: unknown; kategorie: unknown }>
+  /** Odpovědi API po chatách: `<oblast>/<slug>` → { geosearch, kategorie,
+   *  fulltext }. `fulltext` chybí ve starších exportech (před rozšířením). */
+  dotazy: Record<string, { geosearch: unknown; kategorie: unknown; fulltext?: unknown }>
 }
 
 export const cestaExportu = (koren: string): string =>
@@ -493,7 +558,7 @@ const main = async () => {
     exportDat = nactiSurovyExport(readFileSync(cesta, 'utf8'))
   } else {
     const checked = new Date().toISOString().slice(0, 10)
-    console.log(`Commons dotazy (${api}, geosearch ${radiusM} m + kategorie) pro ${chaty.length} chat…`)
+    console.log(`Commons dotazy (${api}, geosearch ${radiusM} m + kategorie + fulltext) pro ${chaty.length} chat…`)
     exportDat = { checked, radiusM, api, dotazy: {} }
     // Tempo pod 1 dotaz/s: první ostrý běh na 2/s narážel na 429 po ~10
     // dotazech — limiter sdílených IP runnerů chce opravdu volnou chůzi.
@@ -503,7 +568,9 @@ const main = async () => {
       await spanek(TEMPO_MS)
       const kategorie = await stahniJson(urlKategorie(api, chata))
       await spanek(TEMPO_MS)
-      exportDat.dotazy[`${chata.oblast}/${chata.slug}`] = { geosearch, kategorie }
+      const fulltext = await stahniJson(urlFulltext(api, chata))
+      await spanek(TEMPO_MS)
+      exportDat.dotazy[`${chata.oblast}/${chata.slug}`] = { geosearch, kategorie, fulltext }
       console.log(`- ${chata.nazev}: dotazy staženy`)
     }
     mkdirSync(join(koren, 'data', 'kandidati', 'fotky'), { recursive: true })
@@ -519,16 +586,24 @@ const main = async () => {
       bezDotazu.push(`${chata.oblast}/${chata.slug}`) // chata přibyla po exportu
       continue
     }
-    const { fotky, odmitnuto } = zpracujOdpovedi(chata, dotazy.geosearch, dotazy.kategorie)
-    zapisKandidatyFotek(koren, chata, fotky, exportDat.checked, exportDat.radiusM)
-    reporty.push({ slug: chata.slug, oblast: chata.oblast, nazev: chata.nazev, prijato: fotky.length, odmitnuto })
+    const { fotky, odmitnuto } = zpracujOdpovedi(chata, dotazy.geosearch, dotazy.kategorie, dotazy.fulltext)
+    zapisKandidatyFotek(koren, chata, fotky, exportDat.checked, exportDat.radiusM, dotazy.fulltext !== undefined)
+    reporty.push({
+      slug: chata.slug,
+      oblast: chata.oblast,
+      nazev: chata.nazev,
+      prijato: fotky.length,
+      jenFulltext: fotky.filter((f) => f.nalezeno === 'fulltext').length,
+      odmitnuto,
+    })
   }
 
-  console.log(`\n## DATA-02 report (dotaz ${exportDat.checked}, geosearch ${exportDat.radiusM} m)`)
+  console.log(`\n## DATA-02 report (dotaz ${exportDat.checked}, geosearch ${exportDat.radiusM} m + fulltext)`)
   console.log(`\nChaty s kandidátními fotkami: ${reporty.filter((r) => r.prijato > 0).length} z ${reporty.length}`)
   for (const r of reporty) {
     console.log(`\n### ${r.nazev} (\`data/kandidati/fotky/${r.oblast}/${r.slug}.yaml\`)`)
-    console.log(`- přijato: ${r.prijato} · vyřazeno licenčním sítem: ${r.odmitnuto.length}`)
+    const fulltextInfo = r.jenFulltext > 0 ? ` (z toho jen fulltext — ověřit objekt: ${r.jenFulltext})` : ''
+    console.log(`- přijato: ${r.prijato}${fulltextInfo} · vyřazeno sítem: ${r.odmitnuto.length}`)
     for (const o of r.odmitnuto) console.log(`  - ✗ ${o.soubor} — ${o.duvod}`)
   }
   if (bezDotazu.length > 0) {

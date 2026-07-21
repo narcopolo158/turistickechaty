@@ -15,13 +15,16 @@ import {
   API_COMMONS,
   cistyText,
   dobaCekaniMs,
+  FULLTEXT_MAX_GEOTAG_M,
   nactiChaty,
   nactiSurovyExport,
   posudLicenci,
   stahniJson,
   strankyZOdpovedi,
+  urlFulltext,
   urlGeosearch,
   urlKategorie,
+  VYCHOZI_RADIUS_M,
   yamlFotek,
   zapisKandidatyFotek,
   zpracujOdpovedi,
@@ -153,6 +156,58 @@ describe('zpracujOdpovedi', () => {
     expect(() => strankyZOdpovedi({ error: { code: 'maxlag', info: 'busy' } }, 'geosearch')).toThrow(/maxlag/)
     expect(strankyZOdpovedi({}, 'geosearch')).toEqual([]) // prázdná odpověď = nic nalezeno
   })
+
+  it('fulltext nález bez geotagu projde s původem `fulltext` (přesně případ Klínovky a spol.)', () => {
+    const pojmenovana = stranka('File:Lucni bouda v zime.jpg', BY) // bez geotagu — geosearch ji nenajde
+    const { fotky } = zpracujOdpovedi(CHATA, odpoved([]), odpoved([]), odpoved([pojmenovana]))
+    expect(fotky).toHaveLength(1)
+    expect(fotky[0].nalezeno).toBe('fulltext')
+    expect(fotky[0].vzdalenostM).toBeUndefined()
+  })
+
+  it('fulltext nález s geotagem přes limit vyřadí — jiný objekt téhož jména', () => {
+    const jinaChataStejnehoJmena = stranka('File:Lovecka chata Brdy.jpg', BY, {
+      coordinates: [{ lat: CHATA.lat + 1, lon: CHATA.lng }], // ~111 km od chaty
+    })
+    const blizkaBezKategorie = stranka('File:Lucni bouda od Snezky.jpg', BY, {
+      coordinates: [{ lat: CHATA.lat + 0.002, lon: CHATA.lng }], // ~222 m — pod limitem
+    })
+    const { fotky, odmitnuto } = zpracujOdpovedi(
+      CHATA,
+      odpoved([]),
+      odpoved([]),
+      odpoved([jinaChataStejnehoJmena, blizkaBezKategorie]),
+    )
+    expect(fotky.map((f) => f.soubor)).toEqual(['File:Lucni bouda od Snezky.jpg'])
+    expect(odmitnuto).toHaveLength(1)
+    expect(odmitnuto[0].duvod).toContain('jiný objekt')
+    expect(odmitnuto[0].duvod).toMatch(/\d+ m od chaty/)
+  })
+
+  it('geotag filtr se na kombinované nálezy neuplatní a původ skládá kanonicky', () => {
+    // stejný soubor z geosearche i fulltextu: geosearch radius geotag hlídá sám
+    const spolecny = stranka('File:Lucni bouda.jpg', BY, {
+      coordinates: [{ lat: CHATA.lat + 0.0001, lon: CHATA.lng }],
+    })
+    const { fotky } = zpracujOdpovedi(CHATA, odpoved([spolecny]), odpoved([]), odpoved([spolecny]))
+    expect(fotky).toHaveLength(1)
+    expect(fotky[0].nalezeno).toBe('geosearch + fulltext')
+    // a fulltext s dalekým geotagem, který zná i kategorie, zůstává (kategorie je přesná)
+    const vKategorii = stranka('File:Panorama s boudou.jpg', BY, {
+      coordinates: [{ lat: CHATA.lat + 1, lon: CHATA.lng }],
+    })
+    const sKategorii = zpracujOdpovedi(CHATA, odpoved([]), odpoved([vKategorii]), odpoved([vKategorii]))
+    expect(sKategorii.fotky).toHaveLength(1)
+    expect(sKategorii.fotky[0].nalezeno).toBe('kategorie + fulltext')
+  })
+
+  it('bez fulltext dotazu (starší export) se chová jako dřív — zpětná kompatibilita --z-jsonu', () => {
+    const geo = odpoved([stranka('File:Lucni bouda.jpg', BY)])
+    const { fotky, odmitnuto } = zpracujOdpovedi(CHATA, geo, odpoved([]), undefined)
+    expect(fotky).toHaveLength(1)
+    expect(fotky[0].nalezeno).toBe('geosearch')
+    expect(odmitnuto).toHaveLength(0)
+  })
 })
 
 describe('yamlFotek + zapisKandidatyFotek', () => {
@@ -252,6 +307,15 @@ describe('tvar dotazů a stahniJson (mock API)', () => {
     expect(kat.searchParams.get('gcmtype')).toBe('file')
   })
 
+  it('fulltext hledá přesnou frázi názvu v namespace File (uvozovky proti rozkladu na slova)', () => {
+    const ft = new URL(urlFulltext(API_COMMONS, CHATA))
+    expect(ft.searchParams.get('generator')).toBe('search')
+    expect(ft.searchParams.get('gsrsearch')).toBe('"Luční bouda"')
+    expect(ft.searchParams.get('gsrnamespace')).toBe('6')
+    expect(ft.searchParams.get('prop')).toBe('imageinfo|coordinates')
+    expect(FULLTEXT_MAX_GEOTAG_M).toBeGreaterThan(VYCHOZI_RADIUS_M) // limit je záměrně volnější než geosearch
+  })
+
   it('posílá identifikační User-Agent a HTTP chyby hlásí česky', async () => {
     const fetchMock = vi.fn().mockResolvedValue(new Response('{"query":{"pages":[]}}', { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
@@ -314,5 +378,14 @@ describe('yamlFotek hlavička', () => {
     expect(text).toContain('dotaz 2026-07-20')
     expect(text).toContain('geosearch 300 m')
     expect(text).toContain('CC0 / CC BY / CC BY-SA / public domain')
+  })
+
+  it('hlavička nesmí tvrdit víc, než se hledalo: fulltext jen když ho export měl', () => {
+    const bezFulltextu = yamlFotek(CHATA, [], '2026-07-20', 300)
+    expect(bezFulltextu).not.toContain('fulltext') // starý export → beze změny souborů
+    const sFulltextem = yamlFotek(CHATA, [], '2026-07-20', 300, true)
+    expect(sFulltextem).toContain('fulltext „Luční bouda"')
+    expect(sFulltextem).toContain('jen `fulltext`') // varování redakci: shoda jména ≠ tento objekt
+    expect((parse(sFulltextem) as Record<string, unknown>).zdroj).toContain('+ fulltext')
   })
 })
