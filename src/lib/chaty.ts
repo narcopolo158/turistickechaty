@@ -126,6 +126,22 @@ async function populujOtiskyRazitek(chaty: Chata[]): Promise<void> {
   }
 }
 
+/**
+ * Join `chata.razitka` vrací i koncepty — Payload u joinovaných dokumentů
+ * nefiltruje podle statusu (koncept/publikace). Veřejné čtení proto nechá jen
+ * publikovaná razítka; komunitní podání ve stavu koncept se na webu neobjeví,
+ * dokud ho redakce nepublikuje (moderace).
+ */
+function jenPublikovanaRazitka(chaty: Chata[]): void {
+  for (const chata of chaty) {
+    if (chata.razitka?.docs) {
+      chata.razitka.docs = chata.razitka.docs.filter(
+        (r) => typeof r === 'object' && (r as Razitka)._status === 'published',
+      )
+    }
+  }
+}
+
 /** Publikovaná chata dle slugu, s oblastí, fotkami a razítky (join). */
 export async function getChataBySlug(slug: string): Promise<Chata | null> {
   const payload = await getPayload({ config })
@@ -136,6 +152,7 @@ export async function getChataBySlug(slug: string): Promise<Chata | null> {
     limit: 1,
     overrideAccess: false,
   })
+  jenPublikovanaRazitka(res.docs)
   await populujOtiskyRazitek(res.docs)
   return res.docs[0] ?? null
 }
@@ -183,6 +200,7 @@ export async function getChatyProRazitkovnik(): Promise<RazitkovnikChata[]> {
     sort: 'nazev',
     overrideAccess: false,
   })
+  jenPublikovanaRazitka(res.docs)
   await populujOtiskyRazitek(res.docs)
   return res.docs.map((chata) => {
     const razitka = (chata.razitka?.docs ?? []).filter((r): r is Razitka => typeof r === 'object')

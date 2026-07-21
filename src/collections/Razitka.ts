@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { APIError } from 'payload'
 
 import { overeni } from '../fields/overeni'
 
@@ -6,18 +7,47 @@ import { overeni } from '../fields/overeni'
  * Razítko — samostatná entita, ne jen obrázek u chaty (plán kap. 5).
  * Umožňuje archiv variant v čase, „chybějící razítka" jako komunitní výzvu
  * a později propojení s deníkem chataře. Kredit dokladatele motivuje komunitu.
+ *
+ * Komunitní sběr (rozhodnutí Michala 21. 7. 2026): otisk může nahrát sběratel
+ * přímo na web — s účtem i bez (host). Moderace jede přes Payload **koncept /
+ * publikaci** (`versions.drafts`): komunitní podání vzniká jako koncept a na
+ * webu se objeví, teprve až ho redakce publikuje. Veřejné čtení (viz
+ * `lib/chaty.ts`) bere jen publikovaná razítka. Veřejný nahrávací formulář se
+ * spustí až s nasazením webu; teď je hotové datové a moderační zázemí.
  */
 export const Razitka: CollectionConfig = {
   slug: 'razitka',
   labels: { singular: 'Razítko', plural: 'Razítka' },
   admin: {
     useAsTitle: 'nazev',
-    defaultColumns: ['nazev', 'chata', 'stav', 'potvrzeno'],
+    defaultColumns: ['nazev', 'chata', 'zpusobZiskani', 'stav', '_status'],
     group: 'Obsah',
     description:
-      'Katalog turistických razítek — archiv variant v čase. Záznam může existovat i bez otisku (víme o razítku, sháníme sken).',
+      'Katalog turistických razítek — archiv variant v čase. Záznam může existovat i bez otisku (víme o razítku, sháníme sken). Komunitní podání čeká jako koncept, než ho redakce publikuje.',
   },
+  // Moderace: koncept = čeká na schválení; publikováno = na webu. Redakční
+  // záznamy se rovnou publikují (seed), komunitní podání přijdou jako koncept.
+  versions: { drafts: true },
   access: { read: () => true },
+  hooks: {
+    beforeChange: [
+      ({ data }) => {
+        // Poctivost + právo: komunitní razítko nesmí být publikováno bez
+        // licenčního souhlasu toho, kdo otisk nahrál. Koncepty se ukládat smí.
+        if (
+          data?._status === 'published' &&
+          data?.zpusobZiskani === 'komunitni-podani' &&
+          !data?.podani?.licencniSouhlas
+        ) {
+          throw new APIError(
+            'Komunitní razítko nelze publikovat bez licenčního souhlasu nahrávajícího.',
+            400,
+          )
+        }
+        return data
+      },
+    ],
+  },
   fields: [
     {
       name: 'nazev',
@@ -77,7 +107,10 @@ export const Razitka: CollectionConfig = {
       name: 'dolozil',
       type: 'text',
       label: 'Doložil(a)',
-      admin: { description: 'Redakce, nebo jméno sběratele — kredit motivuje komunitu.' },
+      admin: {
+        description:
+          'Veřejný kredit — redakce, nebo jméno/přezdívka sběratele. U komunitních podání se předvyplní z podání níže.',
+      },
     },
     {
       name: 'potvrzeno',
@@ -89,6 +122,83 @@ export const Razitka: CollectionConfig = {
       },
     },
     { name: 'poznamka', type: 'textarea', label: 'Poznámka' },
+    // ── Původ a komunitní podání ──────────────────────────────────────────
+    {
+      name: 'zpusobZiskani',
+      type: 'select',
+      label: 'Původ záznamu',
+      defaultValue: 'redakce',
+      options: [
+        { label: 'Redakční záznam', value: 'redakce' },
+        { label: 'Komunitní podání (nahrál sběratel)', value: 'komunitni-podani' },
+      ],
+      admin: {
+        description:
+          'Komunitní podání čeká jako koncept, dokud ho redakce nepublikuje. Publikovat ho nelze bez licenčního souhlasu níže.',
+      },
+    },
+    {
+      name: 'podani',
+      type: 'group',
+      label: 'Komunitní podání',
+      admin: {
+        condition: (data) => data?.zpusobZiskani === 'komunitni-podani',
+        description:
+          'Kdo otisk nahrál a jeho licenční souhlas. Sběratel může podat s účtem i jako host (bez účtu).',
+      },
+      fields: [
+        {
+          name: 'ucet',
+          type: 'relationship',
+          relationTo: 'users',
+          label: 'Účet sběratele',
+          admin: {
+            description: 'Vyplněno, když otisk nahrál přihlášený sběratel. U hostů zůstane prázdné.',
+          },
+        },
+        {
+          type: 'row',
+          fields: [
+            {
+              name: 'hostJmeno',
+              type: 'text',
+              label: 'Jméno (host bez účtu)',
+              admin: { width: '50%' },
+            },
+            {
+              name: 'hostEmail',
+              type: 'email',
+              label: 'E-mail (host)',
+              admin: { width: '50%', description: 'Neveřejné — jen pro redakci (kontakt k podání).' },
+            },
+          ],
+        },
+        {
+          name: 'licencniSouhlas',
+          type: 'checkbox',
+          label: 'Licenční souhlas udělen',
+          defaultValue: false,
+          admin: {
+            description:
+              'Nahrávající potvrdil, že otisk sám naskenoval / vlastní a uděluje souhlas se zveřejněním s uvedením kreditu (licence „se svolením"). Bez zaškrtnutí nelze publikovat.',
+          },
+        },
+        {
+          name: 'souhlasZneni',
+          type: 'textarea',
+          label: 'Znění souhlasu',
+          admin: {
+            description: 'Text souhlasu tak, jak byl při nahrání odsouhlasen (pro doložení).',
+          },
+        },
+        {
+          name: 'souhlasDatum',
+          type: 'date',
+          label: 'Datum souhlasu',
+          admin: { date: { pickerAppearance: 'dayOnly', displayFormat: 'd. M. yyyy' } },
+        },
+      ],
+    },
     overeni(),
   ],
 }

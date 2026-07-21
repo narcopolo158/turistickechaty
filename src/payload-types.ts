@@ -533,7 +533,7 @@ export interface Fotky {
   };
 }
 /**
- * Katalog turistických razítek — archiv variant v čase. Záznam může existovat i bez otisku (víme o razítku, sháníme sken).
+ * Katalog turistických razítek — archiv variant v čase. Záznam může existovat i bez otisku (víme o razítku, sháníme sken). Komunitní podání čeká jako koncept, než ho redakce publikuje.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "razitka".
@@ -551,7 +551,7 @@ export interface Razitka {
   platnostDo?: string | null;
   kdeSeRazitkuje?: string | null;
   /**
-   * Redakce, nebo jméno sběratele — kredit motivuje komunitu.
+   * Veřejný kredit — redakce, nebo jméno/přezdívka sběratele. U komunitních podání se předvyplní z podání níže.
    */
   dolozil?: string | null;
   /**
@@ -559,6 +559,33 @@ export interface Razitka {
    */
   potvrzeno?: string | null;
   poznamka?: string | null;
+  /**
+   * Komunitní podání čeká jako koncept, dokud ho redakce nepublikuje. Publikovat ho nelze bez licenčního souhlasu níže.
+   */
+  zpusobZiskani?: ('redakce' | 'komunitni-podani') | null;
+  /**
+   * Kdo otisk nahrál a jeho licenční souhlas. Sběratel může podat s účtem i jako host (bez účtu).
+   */
+  podani?: {
+    /**
+     * Vyplněno, když otisk nahrál přihlášený sběratel. U hostů zůstane prázdné.
+     */
+    ucet?: (number | null) | User;
+    hostJmeno?: string | null;
+    /**
+     * Neveřejné — jen pro redakci (kontakt k podání).
+     */
+    hostEmail?: string | null;
+    /**
+     * Nahrávající potvrdil, že otisk sám naskenoval / vlastní a uděluje souhlas se zveřejněním s uvedením kreditu (licence „se svolením"). Bez zaškrtnutí nelze publikovat.
+     */
+    licencniSouhlas?: boolean | null;
+    /**
+     * Text souhlasu tak, jak byl při nahrání odsouhlasen (pro doložení).
+     */
+    souhlasZneni?: string | null;
+    souhlasDatum?: string | null;
+  };
   /**
    * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
    */
@@ -569,6 +596,32 @@ export interface Razitka {
   };
   updatedAt: string;
   createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users".
+ */
+export interface User {
+  id: number;
+  updatedAt: string;
+  createdAt: string;
+  email: string;
+  resetPasswordToken?: string | null;
+  resetPasswordExpiration?: string | null;
+  salt?: string | null;
+  hash?: string | null;
+  loginAttempts?: number | null;
+  lockUntil?: string | null;
+  sessions?:
+    | {
+        id: string;
+        createdAt?: string | null;
+        expiresAt: string;
+      }[]
+    | null;
+  password?: string | null;
+  collection: 'users';
 }
 /**
  * Redakční obsah: historie, rozhovory, žebříčky, příběhy zaniklých chat.
@@ -707,31 +760,6 @@ export interface Media {
   height?: number | null;
   focalX?: number | null;
   focalY?: number | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users".
- */
-export interface User {
-  id: number;
-  updatedAt: string;
-  createdAt: string;
-  email: string;
-  resetPasswordToken?: string | null;
-  resetPasswordExpiration?: string | null;
-  salt?: string | null;
-  hash?: string | null;
-  loginAttempts?: number | null;
-  lockUntil?: string | null;
-  sessions?:
-    | {
-        id: string;
-        createdAt?: string | null;
-        expiresAt: string;
-      }[]
-    | null;
-  password?: string | null;
-  collection: 'users';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1085,6 +1113,17 @@ export interface RazitkaSelect<T extends boolean = true> {
   dolozil?: T;
   potvrzeno?: T;
   poznamka?: T;
+  zpusobZiskani?: T;
+  podani?:
+    | T
+    | {
+        ucet?: T;
+        hostJmeno?: T;
+        hostEmail?: T;
+        licencniSouhlas?: T;
+        souhlasZneni?: T;
+        souhlasDatum?: T;
+      };
   overeni?:
     | T
     | {
@@ -1094,6 +1133,7 @@ export interface RazitkaSelect<T extends boolean = true> {
       };
   updatedAt?: T;
   createdAt?: T;
+  _status?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

@@ -26,6 +26,6 @@
 
 - [ ] Deployment na VPS pticore (reverse proxy vhost, Postgres, zálohy) — až ke konci Fáze 1
 - [x] Registrace Mapy.com API — hotovo (projekt „turistickechaty", tarif Basic, placená spotřeba zakázána); atribuce s logem se řeší v F0-07
-- [ ] Formulář „nahrát otisk razítka" s moderací
+- [ ] **Komunitní sběr razítek** (rozhodnutí Michala 21. 7. 2026): sběratel nahraje otisk přímo na web, redakce jen schvaluje (model jako razitkuj.cz). **Obě cesty: s účtem i bez (host).** *(Zázemí HOTOVO 21. 7. — hlavní session na Opusu: kolekce Razitka má moderaci přes koncept/publikaci (`versions.drafts`), pole podání (účet i host), licenční souhlas s vynucením při publikaci, kredit `dolozil`; veřejné čtení pouští jen publikovaná; seed publikuje redakční; test `razitka-moderace.int.spec.ts`; README sekce „Komunitní razítka".)* **Zbývá: veřejný nahrávací formulář** — spustit až s nasazením webu (konec Fáze 1): stránka „nahrát razítko" (host: jméno+e-mail+sken+místo+souřadnice+souhlas; přihlášený sběratel z účtu), `create` access kolekce Razitka pro veřejná podání jako koncept, ochrana proti spamu. Plné účty (registrace/deníček/žebříček) = Fáze 4; model už s relací na účet počítá. Nezávislé na razitkuj.cz (čeká se na odpověď, klidně týdny).
 - [ ] Newsletter setup
 - [ ] Zvednout verze akcí v GitHub workflows (Node 20 deprecation warning u actions/checkout@v4, setup-node@v4)

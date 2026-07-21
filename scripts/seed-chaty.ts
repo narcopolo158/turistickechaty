@@ -194,6 +194,9 @@ for (const soubor of yamlSoubory(join(DATA, 'razitka'))) {
     ...data,
     chata: chataId,
     ...(otiskId != null ? { otisk: otiskId } : {}),
+    // Razítka mají zapnutou moderaci (koncept/publikace). Redakční záznamy ze
+    // seedu jsou rovnou publikované — jinak by po zapnutí drafts zmizely z webu.
+    _status: 'published',
   } as unknown as RequiredDataFromCollectionSlug<'razitka'>
   const existujici = await payload.find({
     collection: 'razitka',

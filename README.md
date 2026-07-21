@@ -30,3 +30,16 @@ Jedna trasa = 1 dotaz na API (max 256 bodů/dotaz) — hluboko ve free kvótě t
 ## Fotky chat (Wikimedia Commons)
 
 Kandidáty s licenčně čistými metadaty sbírá workflow „DATA-02: fotky chat z Wikimedia Commons" do `data/kandidati/fotky/`. Redakční výběr se zapisuje do bloku `fotky:` v YAML chaty (autor, licence, `zdrojUrl`, `stahnoutZ`, blok `overeni`) — vzor v `data/chaty/krkonose/lucni-bouda.yaml`. Seed (`npx payload run scripts/seed-chaty.ts`) pak soubor stáhne z `stahnoutZ` a nahraje do kolekce Fotky; opakovaný běh jen srovná metadata (idempotence dle `zdrojUrl`). Stahování potřebuje síť na `upload.wikimedia.org` — běží lokálně nebo v Actions; v prostředí bez ní `SEED_BEZ_FOTEK=1` sekci přeskočí. Převzaté fotky dostávají atribuci přímo na snímku (komponenta `FotoAtribuce` — povinnost CC BY/BY-SA).
+
+## Komunitní razítka (moderace)
+
+Otisky razítek může nahrávat komunita sběratelů přímo na web — **s účtem i bez (host)**. Zázemí je hotové v datovém modelu, veřejný nahrávací formulář se spustí až s nasazením webu.
+
+Kolekce **Razítka** má zapnutou moderaci přes Payload koncept/publikaci (`versions.drafts`):
+
+- Redakční záznamy (seed, `data/razitka/**`) se rovnou **publikují** (`_status: published`).
+- Komunitní podání (`zpusobZiskani: komunitni-podani`) přijde jako **koncept** a na webu se objeví, teprve až ho redakce v adminu publikuje. Veřejné čtení (`lib/chaty.ts` — `getChataBySlug`, razítkovník) pouští jen publikovaná razítka (join Payloadu vrací i koncepty, proto se filtrují funkcí `jenPublikovanaRazitka`).
+- Podání nese odesílatele (relace `podani.ucet` pro přihlášené sběratele, nebo `podani.hostJmeno`/`hostEmail` pro hosty), **licenční souhlas** (`podani.licencniSouhlas` + znění a datum) a veřejný kredit `dolozil`.
+- Poctivost a právo: komunitní razítko **nelze publikovat bez licenčního souhlasu** (hlídá `beforeChange` hook kolekce). Licence otisku je „se svolením" a kredit se u razítka zobrazuje.
+
+Plné účty (registrace, deníček raziče, žebříček) přijdou ve Fázi 4; model už s relací na účet počítá. Test moderace: `tests/int/razitka-moderace.int.spec.ts`.
