@@ -107,9 +107,11 @@ export type TrasaRelace = {
   members?: { type: string; ref: number; role: string; geometry?: { lat: number; lon: number }[] }[]
 }
 
+// `out geom;` (NE `out geom tags;` — to vrací jen tagy bez geometrie, délky
+// pak vyjdou 0) — u relací přidá geometrii ke každé členské cestě i tagy relace.
 export const overpassDotazTrasy = (): string => `[out:json][timeout:180];
 relation["route"="hiking"](${BBOX_KRKONOSE});
-out geom tags;`
+out geom;`
 
 /** Součet délek všech členských cest relace (haversine po sobě jdoucích bodů), km. */
 export const delkaTrasyKm = (rel: TrasaRelace): number => {

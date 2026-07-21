@@ -91,6 +91,8 @@ describe('DATA-06 · tvar Overpass dotazu', () => {
     const dotaz = overpassDotazTrasy()
     expect(dotaz).toContain('route')
     expect(dotaz).toContain('hiking')
-    expect(dotaz).toContain('out geom')
+    expect(dotaz).toContain('out geom;')
+    // `out geom tags;` by vrátilo jen tagy bez geometrie → nulové délky.
+    expect(dotaz).not.toContain('out geom tags')
   })
 })
