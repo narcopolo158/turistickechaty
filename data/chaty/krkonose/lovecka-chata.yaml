@@ -1,0 +1,85 @@
+# Lovecká chata (Velká Úpa) — profil povýšen z kandidáta DATA-01 po křížovém
+# ověření DATA-03 (rozhodnutí Michala 20. 7. 2026, klíč pro sporné objekty:
+# občerstvení/restaurace pro veřejnost → zařadit; restaurace doložena).
+# verified: false = převzato z uvedeného zdroje, redakcí zatím neověřeno.
+# Data z webu čtena 20. 7. 2026 (ruční běh DATA-03, session 27) — tato
+# bezobslužná session na web nedosáhne, přebírá doložené zápisy.
+# POZOR na domény: platí jen lovecka-chata.cz; doména loveckachatakrkonose.cz
+# z OSM kontaktů je nesouvisející e-shop se zahradními domky (ověřeno 20. 7.).
+
+nazev: Lovecká chata
+slug: lovecka-chata
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL); adresa z webu. Nadmořskou výšku web v načtené podobě
+# neuváděl — nedomýšlet.
+lat: 50.7239736
+lng: 15.6648399
+obec: Velká Úpa
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/13298087649 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    adresa Velká Úpa 204: https://www.lovecka-chata.cz/
+    (načteno 20. 7. 2026, DATA-03)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacitu načtená podoba webu neuváděla — nedomýšlet, dohledat.
+nocleh: ano
+overeniNocleh:
+  source: https://www.lovecka-chata.cz/ („Přijeďte se k nám ubytovat, nebo skvěle najíst" — penzion s ubytováním; načteno 20. 7. 2026, DATA-03 — kapacita v načtené podobě neuvedena)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: https://www.lovecka-chata.cz/ (restaurace otevřená pro veřejnost denně 11:00–21:00, rezervace mimo otvírací dobu po telefonu; načteno 20. 7. 2026, DATA-03 — klíč redakce „občerstvení pro veřejnost" splněn)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Restaurace denně 11:00–21:00; rezervace mimo otvírací dobu po telefonu.
+kontakty:
+  web: https://www.lovecka-chata.cz/
+overeniProvoz:
+  source: https://www.lovecka-chata.cz/ (otvírací doba restaurace; načteno 20. 7. 2026, DATA-03 — telefon v načtené podobě neuveden, doména loveckachatakrkonose.cz z OSM je nesouvisející e-shop, nepřebírat)
+  verified: false
+  checked: '2026-07-20'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Penzion s veřejnou restaurací ve Velké Úpě pod Sněžkou. Restaurace má
+  otevřeno denně od 11 do 21 hodin i pro neubytované.
+text:
+  - >-
+    Lovecká chata stojí na adrese Velká Úpa 204. Jde o penzion s restaurací
+    — v průvodci ho vedeme poctivě jako údolní objekt, ne hřebenovou boudu;
+    zařazen je pro restauraci otevřenou veřejnosti.
+  - >-
+    Restaurace zve „přijeďte se k nám ubytovat, nebo skvěle najíst" a má
+    otevřeno denně od 11:00 do 21:00; mimo otvírací dobu funguje rezervace
+    po telefonu. Podrobnosti k ubytování doporučujeme ověřit na webu.
+
+# Bez hero fotky: DATA-02 nenašla na Commons žádného licenčně čistého
+# kandidáta (viz data/kandidati/fotky/krkonose/lovecka-chata.yaml — 0 fotek).
+# Doplní se z další sklizně DATA-02 nebo od chataře se svolením.
+
+zdroje:
+  - popis: Web chaty (lovecka-chata.cz) — adresa, restaurace, otvírací doba
+    url: https://www.lovecka-chata.cz/
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/node/13298087649
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/lovecka-chata.yaml (DATA-01) po křížovém ověření DATA-03 (session 27, web načten 20. 7. 2026) a rozhodnutí Michala (chat 20. 7. 2026 — klíč: restaurace pro veřejnost denně 11–21 doložena → ZAŘADIT; původní verdikt „nezařazovat" tím revidován).
+  Povýšení provedla bezobslužná session 29 (21. 7.) z už doložených zápisů — WebFetch bezobslužně nefunguje, web znovu nečten.
+  TYP: OSM tag tourism=wilderness_hut (útulna) je zjevně chybný — objekt je penzion s obsluhou a restaurací; zapsán typ obsluhovana (penzion v enum není), penzionový charakter přiznán v perexu i textu. Zvážit hlášení opravy tagu do OSM (dobrý soused).
+  Dohledat při ručním běhu: nadmořská výška, kapacita, telefon (web ho má — „rezervace po telefonu" — v načtené podobě číslo nebylo), sezóna.
