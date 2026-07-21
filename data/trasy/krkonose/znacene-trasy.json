@@ -1,7 +1,7 @@
 {
   "zdroj": "OpenStreetMap Overpass (route=hiking, bbox Krkonoš) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)",
-  "stavOsmDat": "2026-05-31",
-  "pocetTras": 280,
+  "stavOsmDat": "2026-07-21",
+  "pocetTras": 294,
   "trasy": [
     {
       "osmId": 64341,
@@ -71,7 +71,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 7.8,
-      "pocetUseku": 31
+      "pocetUseku": 32
     },
     {
       "osmId": 237048,
@@ -131,7 +131,7 @@
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
       "delkaKm": 8.5,
-      "pocetUseku": 42
+      "pocetUseku": 44
     },
     {
       "osmId": 1722611,
@@ -141,7 +141,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
       "delkaKm": 10,
-      "pocetUseku": 42
+      "pocetUseku": 43
     },
     {
       "osmId": 1755462,
@@ -211,7 +211,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 8.6,
-      "pocetUseku": 25
+      "pocetUseku": 26
     },
     {
       "osmId": 3330577,
@@ -231,7 +231,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 7.6,
-      "pocetUseku": 17
+      "pocetUseku": 19
     },
     {
       "osmId": 4148075,
@@ -241,7 +241,7 @@
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
       "delkaKm": 11.6,
-      "pocetUseku": 47
+      "pocetUseku": 48
     },
     {
       "osmId": 5987447,
@@ -331,7 +331,7 @@
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:red:white_triangle",
       "delkaKm": 59.6,
-      "pocetUseku": 144
+      "pocetUseku": 145
     },
     {
       "osmId": 8462573,
@@ -461,7 +461,7 @@
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
       "delkaKm": 49.3,
-      "pocetUseku": 182
+      "pocetUseku": 183
     },
     {
       "osmId": 75401,
@@ -501,7 +501,7 @@
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
       "delkaKm": 17,
-      "pocetUseku": 82
+      "pocetUseku": 83
     },
     {
       "osmId": 5745471,
@@ -611,7 +611,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
       "delkaKm": 21.6,
-      "pocetUseku": 80
+      "pocetUseku": 81
     },
     {
       "osmId": 326662,
@@ -641,7 +641,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
       "delkaKm": 20.7,
-      "pocetUseku": 78
+      "pocetUseku": 77
     },
     {
       "osmId": 237055,
@@ -661,7 +661,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
       "delkaKm": 17.1,
-      "pocetUseku": 58
+      "pocetUseku": 59
     },
     {
       "osmId": 331122,
@@ -891,7 +891,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 24.3,
-      "pocetUseku": 65
+      "pocetUseku": 64
     },
     {
       "osmId": 237054,
@@ -911,7 +911,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 25,
-      "pocetUseku": 99
+      "pocetUseku": 100
     },
     {
       "osmId": 3189447,
@@ -1111,7 +1111,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_corner",
       "delkaKm": 1.1,
-      "pocetUseku": 22
+      "pocetUseku": 23
     },
     {
       "osmId": 443751,
@@ -1131,7 +1131,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 32.9,
-      "pocetUseku": 164
+      "pocetUseku": 165
     },
     {
       "osmId": 254703,
@@ -1191,7 +1191,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 9.5,
-      "pocetUseku": 28
+      "pocetUseku": 29
     },
     {
       "osmId": 3292908,
@@ -1654,6 +1654,16 @@
       "pocetUseku": 25
     },
     {
+      "osmId": 11157620,
+      "url": "https://www.openstreetmap.org/relation/11157620",
+      "nazev": "Borowice - Rówienka",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 3.6,
+      "pocetUseku": 21
+    },
+    {
       "osmId": 3902221,
       "url": "https://www.openstreetmap.org/relation/3902221",
       "nazev": "Borowice-Miłków",
@@ -1671,7 +1681,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
       "delkaKm": 15.5,
-      "pocetUseku": 86
+      "pocetUseku": 88
     },
     {
       "osmId": 64384,
@@ -1841,7 +1851,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:blue::E3:yellow",
       "delkaKm": 301.9,
-      "pocetUseku": 910
+      "pocetUseku": 915
     },
     {
       "osmId": 951694,
@@ -1851,7 +1861,17 @@
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
       "delkaKm": 443.6,
-      "pocetUseku": 1412
+      "pocetUseku": 1421
+    },
+    {
+      "osmId": 5437918,
+      "url": "https://www.openstreetmap.org/relation/5437918",
+      "nazev": "Górna stacja kolei linowej - Graniczna Łąka",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 0.7,
+      "pocetUseku": 6
     },
     {
       "osmId": 19433435,
@@ -1861,7 +1881,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:red::Ш:blue",
       "delkaKm": 201.2,
-      "pocetUseku": 849
+      "pocetUseku": 858
     },
     {
       "osmId": 4621732,
@@ -1871,7 +1891,7 @@
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white::EB",
       "delkaKm": 295.9,
-      "pocetUseku": 903
+      "pocetUseku": 908
     },
     {
       "osmId": 10443826,
@@ -1954,6 +1974,26 @@
       "pocetUseku": 26
     },
     {
+      "osmId": 2330138,
+      "url": "https://www.openstreetmap.org/relation/2330138",
+      "nazev": "Karpacz Biały Jar - Śnieżka",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 6.3,
+      "pocetUseku": 18
+    },
+    {
+      "osmId": 2513986,
+      "url": "https://www.openstreetmap.org/relation/2513986",
+      "nazev": "Karpacz Muzeum Zabawek - Sowia Przełęcz",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 5.6,
+      "pocetUseku": 39
+    },
+    {
       "osmId": 5663111,
       "url": "https://www.openstreetmap.org/relation/5663111",
       "nazev": "Karpacz PKP - Schronisko PTTK nad Łomniczką",
@@ -1992,6 +2032,16 @@
       "znaceniZdroj": "osmc:symbol=red:white:red_turned_T",
       "delkaKm": 0.1,
       "pocetUseku": 1
+    },
+    {
+      "osmId": 3975783,
+      "url": "https://www.openstreetmap.org/relation/3975783",
+      "nazev": "Koralowa Ścieżka - Jaworowa Łąka",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 1.6,
+      "pocetUseku": 6
     },
     {
       "osmId": 4148072,
@@ -2081,7 +2131,7 @@
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
       "delkaKm": 7.3,
-      "pocetUseku": 14
+      "pocetUseku": 15
     },
     {
       "osmId": 6247833,
@@ -2314,6 +2364,16 @@
       "pocetUseku": 95
     },
     {
+      "osmId": 11792462,
+      "url": "https://www.openstreetmap.org/relation/11792462",
+      "nazev": "Pisarzowice - Leszczyniec",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 7.3,
+      "pocetUseku": 21
+    },
+    {
       "osmId": 2693942,
       "url": "https://www.openstreetmap.org/relation/2693942",
       "nazev": "Pod Bobrowymi Skałami - Piechowice",
@@ -2342,6 +2402,16 @@
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
       "delkaKm": 26.6,
       "pocetUseku": 141
+    },
+    {
+      "osmId": 12018381,
+      "url": "https://www.openstreetmap.org/relation/12018381",
+      "nazev": "Podgórze - Żółta Droga",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 1.9,
+      "pocetUseku": 5
     },
     {
       "osmId": 375183,
@@ -2420,8 +2490,8 @@
       "ref": null,
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
-      "delkaKm": 23.1,
-      "pocetUseku": 61
+      "delkaKm": 23.3,
+      "pocetUseku": 57
     },
     {
       "osmId": 1086096,
@@ -2431,7 +2501,17 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 9.6,
-      "pocetUseku": 7
+      "pocetUseku": 8
+    },
+    {
+      "osmId": 2567570,
+      "url": "https://www.openstreetmap.org/relation/2567570",
+      "nazev": "Przesieka - Sosnówka Dolna",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 6.9,
+      "pocetUseku": 31
     },
     {
       "osmId": 12722209,
@@ -2461,7 +2541,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 10.4,
-      "pocetUseku": 16
+      "pocetUseku": 18
     },
     {
       "osmId": 1017407,
@@ -2471,7 +2551,7 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 35.8,
-      "pocetUseku": 128
+      "pocetUseku": 130
     },
     {
       "osmId": 375393,
@@ -2564,6 +2644,16 @@
       "pocetUseku": 12
     },
     {
+      "osmId": 2567555,
+      "url": "https://www.openstreetmap.org/relation/2567555",
+      "nazev": "Schronisko Pod Łabskim Szczytem - Pod Petrovou Boudou",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 14.1,
+      "pocetUseku": 28
+    },
+    {
       "osmId": 10445066,
       "url": "https://www.openstreetmap.org/relation/10445066",
       "nazev": "Schronisko Srebrny Potok - Pod Albeřickým vrchem",
@@ -2591,7 +2681,7 @@
       "znaceni": "zluta",
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
       "delkaKm": 8.1,
-      "pocetUseku": 40
+      "pocetUseku": 41
     },
     {
       "osmId": 18943232,
@@ -2601,7 +2691,17 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white::🍄︎:blue",
       "delkaKm": 31.5,
-      "pocetUseku": 213
+      "pocetUseku": 215
+    },
+    {
+      "osmId": 4568763,
+      "url": "https://www.openstreetmap.org/relation/4568763",
+      "nazev": "Sobieszów - Podgórzyn Górny",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 7.1,
+      "pocetUseku": 63
     },
     {
       "osmId": 11785306,
@@ -2654,6 +2754,16 @@
       "pocetUseku": 18
     },
     {
+      "osmId": 9819610,
+      "url": "https://www.openstreetmap.org/relation/9819610",
+      "nazev": "Strużnica - Starościńskie skały",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 2.7,
+      "pocetUseku": 9
+    },
+    {
       "osmId": 3176768,
       "url": "https://www.openstreetmap.org/relation/3176768",
       "nazev": "Sudecka Droga św. Jakuba",
@@ -2661,7 +2771,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:blue:shell_modern",
       "delkaKm": 114.7,
-      "pocetUseku": 435
+      "pocetUseku": 439
     },
     {
       "osmId": 375392,
@@ -2671,7 +2781,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
       "delkaKm": 395.8,
-      "pocetUseku": 1187
+      "pocetUseku": 1193
     },
     {
       "osmId": 375377,
@@ -2691,7 +2801,17 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 110.8,
-      "pocetUseku": 487
+      "pocetUseku": 489
+    },
+    {
+      "osmId": 3479195,
+      "url": "https://www.openstreetmap.org/relation/3479195",
+      "nazev": "Szlak dokoła Szklarskiej Poręby",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 16.9,
+      "pocetUseku": 111
     },
     {
       "osmId": 13272306,
@@ -2711,7 +2831,17 @@
       "znaceni": "zelena",
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 150.9,
-      "pocetUseku": 638
+      "pocetUseku": 642
+    },
+    {
+      "osmId": 1714134,
+      "url": "https://www.openstreetmap.org/relation/1714134",
+      "nazev": "Szwajcarka - Krzyżna Góra",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 0.8,
+      "pocetUseku": 2
     },
     {
       "osmId": 6601212,
@@ -2771,7 +2901,7 @@
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:red_diamond:via_czechia",
       "delkaKm": 70.2,
-      "pocetUseku": 176
+      "pocetUseku": 177
     },
     {
       "osmId": 4219761,
@@ -2802,6 +2932,16 @@
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
       "delkaKm": 10.6,
       "pocetUseku": 41
+    },
+    {
+      "osmId": 17293648,
+      "url": "https://www.openstreetmap.org/relation/17293648",
+      "nazev": "Zamek Bolczów - Głaziska Janowickie",
+      "ref": null,
+      "znaceni": "cerna",
+      "znaceniZdroj": "osmc:symbol=black:white:black_bar",
+      "delkaKm": 0.7,
+      "pocetUseku": 1
     }
   ]
 }
