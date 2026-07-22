@@ -1,0 +1,63 @@
+# DATA-06: výšky, převýšení a odhad času přístupových tras.
+# Sandbox denních sessions na api.mapy.com nedosáhne (proxy), GitHub Actions ano.
+# Spouští se ručně (Actions → „DATA-06: výšky přístupových tras" → Run workflow),
+# nejlépe po přegenerování přístupových tras (DATA-06 3b).
+#
+# Běh: nad `data/trasy/krkonose/pristupove-trasy.json` (geometrie po značených)
+# dopočítá ke každému nástupu výšky přes Mapy.com Elevation API — převýšení,
+# decimovaný výškový profil [km, výška] a ODHAD času chůze (DIN 33466) — a zapíše
+# je zpět do JSON. Idempotentní. Klíč jde hlavičkou X-Mapy-Api-Key (secret
+# MAPY_API_KEY) — nikdy do URL ani logu. Výšky = výškový model (verified:false),
+# čas = odhad z délky a převýšení.
+name: 'DATA-06: výšky přístupových tras'
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data06-vysky-pristupu
+  cancel-in-progress: false
+
+jobs:
+  vysky:
+    name: Mapy.com Elevation → výšky/čas přístupových tras
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Dopočet výšek, převýšení a času přístupových tras
+        shell: bash
+        env:
+          MAPY_API_KEY: ${{ secrets.MAPY_API_KEY }}
+        run: |
+          if [ -z "$MAPY_API_KEY" ]; then
+            echo '::error::Chybí secret MAPY_API_KEY (Settings → Secrets → Actions).'
+            exit 1
+          fi
+          npx tsx scripts/data06-vysky-pristupu.ts | tee report.txt
+          echo '## DATA-06 — výšky přístupových tras: výstup běhu' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit přístupových tras s výškami do main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/trasy/krkonose/pristupove-trasy.json
+          if git diff --cached --quiet; then
+            echo 'Beze změny — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m 'data: výšky, převýšení a odhad času přístupových tras (z Actions)' \
+            -m 'Zdroj: Mapy.com Elevation API (výškový model, verified:false). Čas = odhad DIN 33466 z délky a převýšení.'
+          git pull --rebase origin main
+          git push origin main

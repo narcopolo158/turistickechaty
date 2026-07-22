@@ -19,6 +19,14 @@ export type Pristup = {
   kRucniKontrole: boolean
   /** Geometrie trasy (pro čáru na mapě). Seznam „odkud vyjít" ji nepoužívá. */
   geometrie?: Bod[]
+  /** Převýšení (stoupání k chatě, m) — Mapy.com výškový model, verified:false. Dopočítá DATA-06 výšky. */
+  prevyseni?: number
+  /** Klesání po trase (m). */
+  klesani?: number
+  /** Odhad času chůze (min, DIN 33466 z délky a převýšení). */
+  casMin?: number
+  /** Výškový profil [km, výška] od nástupu k chatě (pro křivku). */
+  vyskovyProfil?: [number, number][]
   /** 'katalog' = kurátorovaný nástup (s pořadím/zdroji), 'stredisko' = nejbližší středisko. */
   zdrojBodu?: 'katalog' | 'stredisko'
   /** Katalogová metadata (jen `zdrojBodu === 'katalog'`). */

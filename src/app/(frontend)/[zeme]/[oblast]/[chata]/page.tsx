@@ -166,6 +166,8 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
   const trasy = chata.trasy ?? []
   // Přístupové trasy od kurátorovaných středisek (DATA-06 3b) — „odkud vyjít".
   const pristupy = pristupyChaty(chata.slug)
+  /** První přístup s doloženým výškovým profilem (≥ 2 body) — pro křivku. */
+  const pristupSProfilem = pristupy.find((p) => Array.isArray(p.vyskovyProfil) && p.vyskovyProfil.length >= 2)
   /** První trasa s doloženým výškovým profilem (≥ 2 body [km, výška]). */
   const trasaSProfilem = trasy.find(
     (t) =>
@@ -340,8 +342,9 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
           <p style={{ margin: '2px 0 10px', fontSize: 11.5, color: 'var(--muted)' }}>
             Doporučené nástupy a cesty po značených trasách (výpočet ze značení KČT
             v OpenStreetMap). U vyznačených chat pocházejí nástupy z ověřovaného
-            katalogu se zdroji; jinak z nejbližších středisek. Orientační, zatím bez
-            převýšení a času — vždy ověřte aktuální stav cest a dopravy.
+            katalogu se zdroji; jinak z nejbližších středisek. Převýšení z výškového
+            modelu Mapy.com, čas je odhad (DIN 33466) — orientační, vždy ověřte
+            aktuální stav cest a dopravy.
           </p>
           {typeof chata.lat === 'number' && typeof chata.lng === 'number' && (
             <div style={{ margin: '0 0 14px' }}>
@@ -371,6 +374,16 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
                     <span style={{ fontSize: 11, color: 'var(--muted)' }}>{TYP_BODU_NAZEV[p.typ] ?? p.typ}</span>
                   </span>
                   <span className="num" style={{ fontWeight: 600 }}>{formatCislo(p.delkaKm)} km</span>
+                  {p.casMin != null && (
+                    <span className="num" style={{ color: 'var(--muted)' }} title="odhad času (DIN 33466)">
+                      ~{formatCas(p.casMin)}
+                    </span>
+                  )}
+                  {p.prevyseni != null && (
+                    <span className="num" style={{ color: 'var(--muted)' }} title="převýšení (výškový model Mapy.com)">
+                      +{formatCislo(p.prevyseni)} m
+                    </span>
+                  )}
                   <span style={{ display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center' }}>
                     {[...dleBarvy.entries()].map(([znaceni, km], j) =>
                       znaceni in TRAIL_COLORS ? (
@@ -410,6 +423,18 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
               </div>
             )
           })}
+          {pristupSProfilem?.vyskovyProfil && (
+            <div style={{ margin: '16px 0 0' }}>
+              <VyskovyProfil
+                body={pristupSProfilem.vyskovyProfil as BodProfilu[]}
+                start={pristupSProfilem.vychoziBod}
+                cil={chata.nazev}
+              />
+              <p className="prof-pop">
+                Výškový profil trasy ({pristupSProfilem.vychoziBod} → {chata.nazev}) — najeď myší po křivce. Výšky z modelu Mapy.com, orientační.
+              </p>
+            </div>
+          )}
         </section>
       )}
 

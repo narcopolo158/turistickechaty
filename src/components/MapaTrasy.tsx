@@ -82,7 +82,8 @@ export default function MapaTrasy({ hut, trasy }: { hut: { nazev: string; lat: n
         L.polyline(linie, { color: barva, weight: 4, opacity: 0.95 }).addTo(mapa!)
         vsechnyBody.push(...linie)
 
-        const start = t.body[0]
+        // Geometrie z routingu je orientovaná chata→nástup → výchozí bod je POSLEDNÍ bod čáry.
+        const start = t.body[t.body.length - 1]
         L.marker([start.lat, start.lng], {
           icon: L.divIcon({ className: 'mk-start', html: startSvg(barva), iconSize: [16, 16], iconAnchor: [8, 8] }),
           title: t.vychoziBod,
