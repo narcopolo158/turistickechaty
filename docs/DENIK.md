@@ -11,6 +11,12 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-22 — hlavní session (Opus, inline): přechody mezi chatami / sousední chaty (DATA-06, P3)
+**Zadání Michala:** „pracuj dál dle svého uvážení" — vybrán pilíř P3 (graf sousedství): karta „Sousední chaty" byla u všech 23 chat prázdná a routovací graf z DATA-06 na to stačí.
+**Hotovo:** `scripts/data06-prechody.ts` — nad grafem značených tras spočítá ke každé chatě 4 nejbližší JINÉ chaty po značených (Dijkstra na chatu, řazení dle skutečné délky, cap 18 km, dedup, ne sebe): délka, značení po úsecích, podíl neznačených, cílová URL. **Ostrý běh: 23/23 chat, 92 přechodů, 0 k ruční kontrole.** Namátkou sedí (Dom Śląski ← Luční 2,52 / Strzecha 2,84 / Samotnia 3,46; Špindlerovka ← Odrodzenie 0,3 km — sousedi na hřebeni). `data/trasy/krkonose/prechody.json` (64 kB — geometrie vypuštěna, karta ji nepotřebuje; vrátí se s časy/mapou). `src/lib/prechody.ts` + render: karta „Sousední chaty" ukazuje vypočítané přechody (název + km + odkaz), když chybí ruční `sousedniChaty`; prolinkuje chaty navzájem i cz↔pl — bonus pro interní prolinkování/SEO. +3 testy, **191/191 int**, typecheck + lint čisté.
+**Poctivost:** vše `verified: false`, zdroj OSM (ODbL); karta poctivě říká „orientační vzdálenost, čas s převýšením doplníme".
+**Příště:** časy přechodů přes Mapy.com Elevation (rozšířit workflow výšek i na prechody.json + doplnit geometrii); později plánovač vícedenních přechodů nad tímto grafem. Michalovi předáno zadání pro ChatGPT na atlas zaniklých chat Krkonoš (pilíř P4).
+
 ## 2026-07-22 — hlavní session (Opus, inline): SEO/AI základ — sitemap, robots, llms.txt
 **Zadání Michala:** „můžeš pracovat dál" — vybráno z plánu (SEO/AI „od prvního dne": sitemap + llms.txt + citovatelnost vyhledávači a AI). Blokované značení Lučních tras (potvrzení barev na Michalovi) vědomě nebráno; parkoviště nápadů se nebere bez posunu.
 **Hotovo:** tři chybějící discovery vrstvy (dle skillu ai-agent-readiness):

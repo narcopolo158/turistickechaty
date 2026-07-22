@@ -10,6 +10,7 @@ import RazitkoMoment from '@/components/RazitkoMoment'
 import TiskButton from '@/components/TiskButton'
 import { TRAIL_COLORS, TrailBlaze } from '@/components/ui'
 import VyskovyProfil, { type BodProfilu } from '@/components/VyskovyProfil'
+import { prechodyChaty } from '@/lib/prechody'
 import { pristupyChaty } from '@/lib/pristupove-trasy'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import {
@@ -181,6 +182,10 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
       ),
   )
   const sousede = (chata.sousedniChaty ?? []).filter((s) => typeof s.chata === 'object')
+  // Vypočítané přechody (DATA-06) — nejbližší jiné chaty po značených trasách.
+  // Použijí se, když chata nemá ruční sousedniChaty (zatím žádná nemá).
+  const prechody = prechodyChaty(chata.slug)
+  const maSousedy = sousede.length > 0 || prechody.length > 0
   const maHistorii = Boolean(chata.rokVzniku || (chata.milniky?.length ?? 0) > 0 || chata.historieText)
 
   // řádek faktů — jen doložené buňky
@@ -209,7 +214,7 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
   if (pristupy.length) kotvy.push({ id: 'p-pristup', label: `0${kotvy.length + 1} Odkud vyjít` })
   if (razitko) kotvy.push({ id: 'p-razitko', label: `0${kotvy.length + 1} Razítko` })
   if (znamkyVizitky.length) kotvy.push({ id: 'p-sberatelska', label: `0${kotvy.length + 1} Sběratelská místa` })
-  if (sousede.length) kotvy.push({ id: 'p-sousede', label: `0${kotvy.length + 1} Sousedé` })
+  if (maSousedy) kotvy.push({ id: 'p-sousede', label: `0${kotvy.length + 1} Sousedé` })
   if (maHistorii) kotvy.push({ id: 'p-historie', label: `0${kotvy.length + 1} Historie` })
 
   let sekce = 0
@@ -520,7 +525,7 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
           </div>
         )}
 
-        {sousede.length > 0 && (
+        {maSousedy && (
           <div className="card" id="p-sousede" style={{ overflow: 'hidden' }}>
             <div className="lista" style={{ borderRadius: 0, margin: 0 }}>
               <span className="n">{cisloSekce()}</span>
@@ -528,24 +533,41 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
               <span className="r">Přechody</span>
             </div>
             <div className="bx">
-              {sousede.map((s, i) => {
-                const soused = s.chata as Chata
-                const sousedPath = chataPath(soused)
-                const obsah = (
-                  <>
-                    {soused.nazev} {s.casPrechodMin != null && <b>{formatCas(s.casPrechodMin)}</b>}
-                  </>
-                )
-                return sousedPath ? (
-                  <Link className="chip" href={sousedPath} key={s.id ?? i}>
-                    {obsah}
-                  </Link>
-                ) : (
-                  <span className="chip" key={s.id ?? i}>
-                    {obsah}
-                  </span>
-                )
-              })}
+              {sousede.length > 0
+                ? sousede.map((s, i) => {
+                    const soused = s.chata as Chata
+                    const sousedPath = chataPath(soused)
+                    const obsah = (
+                      <>
+                        {soused.nazev} {s.casPrechodMin != null && <b>{formatCas(s.casPrechodMin)}</b>}
+                      </>
+                    )
+                    return sousedPath ? (
+                      <Link className="chip" href={sousedPath} key={s.id ?? i}>
+                        {obsah}
+                      </Link>
+                    ) : (
+                      <span className="chip" key={s.id ?? i}>
+                        {obsah}
+                      </span>
+                    )
+                  })
+                : prechody.map((p, i) =>
+                    p.cilUrl ? (
+                      <Link className="chip" href={p.cilUrl} key={i}>
+                        {p.cilNazev} <b>{formatCislo(p.delkaKm)} km</b>
+                      </Link>
+                    ) : (
+                      <span className="chip" key={i}>
+                        {p.cilNazev} <b>{formatCislo(p.delkaKm)} km</b>
+                      </span>
+                    ),
+                  )}
+              {sousede.length === 0 && prechody.length > 0 && (
+                <p className="mn" style={{ fontSize: 9.5, color: 'var(--muted)', marginTop: 9 }}>
+                  Nejbližší chaty po značených trasách (orientační vzdálenost; čas s převýšením doplníme). Zdroj: OpenStreetMap.
+                </p>
+              )}
             </div>
           </div>
         )}
