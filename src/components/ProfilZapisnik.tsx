@@ -62,7 +62,7 @@ export type ZapData = {
   zdroje: ZapZdroj[]
   razitko: { slug: string; nazev: string; pohori: string | null; vyska: number | null; otiskUrl: string | null; otiskAlt: string | null; caption: string; stav: string } | null
   znamka: { cislo: string; url: string; stav: string; aktivni: boolean; obrazekUrl: string | null; obrazekZdroj: string | null } | null
-  vizitka: { cislo: string; nazev: string; url: string; stav: string; vyrazena: boolean } | null
+  vizitka: { cislo: string; nazev: string; url: string; stav: string; vyrazena: boolean; obrazekUrl: string | null; obrazekZdroj: string | null } | null
   dalsiList: string | null
 }
 
@@ -508,16 +508,29 @@ function VizitkaObjekt({ v, tilt }: { v: NonNullable<ZapData['vizitka']>; tilt: 
       <a href={v.url} target="_blank" rel="noopener noreferrer nofollow" style={{ color: 'inherit' }}>
         <div className="zap-obj-stage">
           <div className={`zap-vizitka${v.vyrazena ? ' vyrazena' : ''}`} onMouseMove={tilt.onMove} onMouseLeave={tilt.onLeave}>
-            <div className="fold" />
-            <div className="lbl">TURISTICKÁ VIZITKA</div>
-            <div className="code">{v.cislo}</div>
-            <div className="nm">{v.nazev}</div>
-            <div className="web">wander-book.com</div>
+            {v.obrazekUrl ? (
+              <>
+                {/* reálná grafika vizitky — až po svolení Wander Book (DATA-13) */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className="zap-vizitka-foto" src={v.obrazekUrl} alt={`Turistická vizitka ${v.cislo}`} title={v.obrazekZdroj ?? undefined} />
+                <div className="fold" />
+              </>
+            ) : (
+              <>
+                <div className="fold" />
+                <div className="lbl">TURISTICKÁ VIZITKA</div>
+                <div className="code">{v.cislo}</div>
+                <div className="nm">{v.nazev}</div>
+                <div className="web">wander-book.com</div>
+              </>
+            )}
             {v.vyrazena && <div className="zap-vyrazeno"><span>VYŘAZENO 2025</span></div>}
           </div>
         </div>
         <div className="zap-obj-cap">Vizitka {v.cislo}</div>
-        <div className="zap-obj-sub"><span className="dot" style={{ color: v.vyrazena ? 'var(--gone)' : 'var(--open)' }}>●</span> {v.stav}</div>
+        <div className="zap-obj-sub">
+          <span className="dot" style={{ color: v.vyrazena ? 'var(--gone)' : 'var(--open)' }}>●</span> {v.obrazekUrl ? 'se svolením vydavatele' : v.stav}
+        </div>
       </a>
     </div>
   )

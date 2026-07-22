@@ -10,7 +10,7 @@ import ProfilZapisnik, {
 } from '@/components/ProfilZapisnik'
 import { prechodyChaty } from '@/lib/prechody'
 import { pristupyChaty } from '@/lib/pristupove-trasy'
-import { znamkaObrazek, znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
+import { vizitkaObrazek, znamkaObrazek, znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import {
   chataPath,
   formatCislo,
@@ -347,8 +347,17 @@ function sestavData(chata: Chata): ZapData {
         obrazekZdroj: znObr?.zdroj ?? null,
       }
     : null
+  const vizObr = vizitkaP ? vizitkaObrazek(chata.slug) : null
   const vizitka = vizitkaP
-    ? { cislo: vizitkaP.cislo, nazev: chata.nazev, url: vizitkaP.url, stav: vizitkaP.stav ?? 'aktivní', vyrazena: jeVyrazena(vizitkaP.stav) }
+    ? {
+        cislo: vizitkaP.cislo,
+        nazev: chata.nazev,
+        url: vizitkaP.url,
+        stav: vizitkaP.stav ?? 'aktivní',
+        vyrazena: jeVyrazena(vizitkaP.stav),
+        obrazekUrl: vizObr?.url ?? null,
+        obrazekZdroj: vizObr?.zdroj ?? null,
+      }
     : null
 
   return {
