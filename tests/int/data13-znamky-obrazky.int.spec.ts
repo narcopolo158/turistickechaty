@@ -13,6 +13,18 @@ import { absolutniUrl, extractObrazekUrl, jeStazitelna, priponaObrazku } from '.
 const BASE = 'https://www.turisticke-znamky.cz/znamky/lucni-bouda-c11'
 
 describe('DATA-13 · extractObrazekUrl', () => {
+  it('bere /storage/item_images/ (skutečná cesta známky na tomto CMS)', () => {
+    const html = '<img class="znamka" src="https://turisticke-znamky.cz/storage/item_images/medium/5662b3ed7372f7.33069373.png">'
+    expect(extractObrazekUrl(html, BASE)).toBe('https://turisticke-znamky.cz/storage/item_images/medium/5662b3ed7372f7.33069373.png')
+  })
+
+  it('item_images má přednost před og:image a preferuje větší velikost než thumb', () => {
+    const html =
+      '<meta property="og:image" content="/img/logo.png">' +
+      '<img src="/storage/item_images/thumb/x.png"><img src="/storage/item_images/medium/x.png">'
+    expect(extractObrazekUrl(html, BASE)).toBe('https://www.turisticke-znamky.cz/storage/item_images/medium/x.png')
+  })
+
   it('bere og:image (absolutní)', () => {
     const html = '<head><meta property="og:image" content="https://www.turisticke-znamky.cz/img/znamky/11.jpg"></head>'
     expect(extractObrazekUrl(html, BASE)).toBe('https://www.turisticke-znamky.cz/img/znamky/11.jpg')

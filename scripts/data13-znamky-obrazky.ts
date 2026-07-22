@@ -28,6 +28,8 @@ const SVOLIL =
   'týká se obou domén vydavatele (turisticke-znamky.cz i znaczki-turystyczne.pl)'
 /** Domény TÉHOŽ vydavatele (Turistické známky s.r.o.), k jehož obrázkům máme svolení. */
 const POVOLENE_HOSTY = ['turisticke-znamky.cz', 'znaczki-turystyczne.pl']
+/** Vlídný, identifikující User-Agent (některé WAF blokují holé tokeny). */
+const UA = 'Mozilla/5.0 (compatible; turistickechaty.cz/1.0; +https://turistickechaty.cz)'
 
 type Produkt = { system: string; cislo: string; nazev: string; url: string; stav: string }
 type Katalog = { chaty?: { slug: string; nazev: string; produkty: Produkt[] }[] }
@@ -60,18 +62,35 @@ const META_VZORY: RegExp[] = [
 ]
 
 /**
- * Vytáhne URL obrázku známky z HTML detailu. Přednost og:image / twitter:image /
- * image_src (nejspolehlivější); jinak první `<img>`, jehož src ukazuje na známku
- * (obsahuje „znamk"/„foto"/„image"). `null`, když se nic bezpečného nenajde —
- * radši poctivě nic než špatný obrázek.
+ * Skutečná cesta obrázku známky na CMS vydavatele (turisticke-znamky.cz i polská
+ * znaczki-turystyczne.pl — Laravel): `/storage/item_images/<velikost>/<hash>.<ext>`.
+ * (Ověřeno Michalem 22. 7. 2026.) Název je hash, ne číslo známky → nelze složit,
+ * musí se vytáhnout z HTML detailu.
+ */
+const ITEM_IMAGES = /((?:https?:\/\/[^"'\s)]+)?\/storage\/item_images\/[^"'\s)]+\.(?:png|jpe?g|webp|gif))/gi
+
+/** Preference velikosti: original/large > medium > (neznámé) > thumb/small/mini. */
+const velikostSkore = (u: string): number =>
+  /\/(original|large)\//i.test(u) ? 3 : /\/medium\//i.test(u) ? 2 : /\/(thumb|small|mini)\//i.test(u) ? 0 : 1
+
+/**
+ * Vytáhne URL obrázku známky z HTML detailu. Přednost má **cesta item_images**
+ * (definitivní obrázek známky na tomto webu); teprve pak og:image / twitter /
+ * image_src a nakonec `<img>` se známkovým src. `null`, když se nic bezpečného
+ * nenajde — radši poctivě nic než špatný obrázek.
  */
 export const extractObrazekUrl = (html: string, baseUrl: string): string | null => {
+  const itemy = [...html.matchAll(ITEM_IMAGES)].map((m) => m[1])
+  if (itemy.length) {
+    const nej = [...itemy].sort((a, b) => velikostSkore(b) - velikostSkore(a))[0]
+    return absolutniUrl(nej, baseUrl)
+  }
   for (const re of META_VZORY) {
     const m = html.match(re)
     if (m?.[1]) return absolutniUrl(m[1].trim(), baseUrl)
   }
   const srcs = [...html.matchAll(/<img[^>]+src=["']([^"']+)["']/gi)].map((m) => m[1])
-  const kandidat = srcs.find((s) => /znamk|\/foto|\/image|\/upload/i.test(s))
+  const kandidat = srcs.find((s) => /znamk|\/foto|\/image|\/upload|item_images/i.test(s))
   return kandidat ? absolutniUrl(kandidat.trim(), baseUrl) : null
 }
 
@@ -118,7 +137,7 @@ const nactiKatalogy = (): { slug: string; produkt: Produkt }[] => {
 }
 
 const stahni = async (url: string): Promise<{ mime: string; buf: Buffer }> => {
-  const res = await fetch(url, { headers: { 'User-Agent': 'turistickechaty.cz/data13 (+se svolením vydavatele)' } })
+  const res = await fetch(url, { headers: { 'User-Agent': UA } })
   if (!res.ok) throw new Error(`HTTP ${res.status}`)
   const mime = res.headers.get('content-type') ?? ''
   return { mime, buf: Buffer.from(await res.arrayBuffer()) }
@@ -153,7 +172,12 @@ const main = async () => {
         console.log(`- [dry] ${slug} (č. ${produkt.cislo}) ← ${produkt.url}`)
         continue
       }
-      const html = await (await fetch(produkt.url, { headers: { 'User-Agent': 'turistickechaty.cz/data13' } })).text()
+      const res = await fetch(produkt.url, { headers: { 'User-Agent': UA } })
+      if (!res.ok) {
+        console.log(`- ✗ ${slug}: detail HTTP ${res.status} (${produkt.url})`)
+        continue
+      }
+      const html = await res.text()
       const obrazekUrl = extractObrazekUrl(html, produkt.url)
       if (!obrazekUrl) {
         console.log(`- ⚠ ${slug}: obrázek v detailu nenalezen — doplnit ručně (${produkt.url})`)
