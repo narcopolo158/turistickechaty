@@ -18,4 +18,9 @@
   --radius:12px; --grid:8px;
   --topline:5px solid var(--red);
   --shadow-float:0 16px 48px -26px rgba(18,24,29,.3);
+  /* Design v2 „Sběratelský zápisník" — přidané tokeny (serif emoce, rukopis, papír) */
+  --font-emph:'Newsreader',Georgia,serif; /* názvy, historie, perex, muzejní italic (přepínatelné B1) */
+  --font-hand:'Caveat',cursive;           /* JEN popisky polaroidů + osobní marginálie */
+  --card:#fffdf7; --label:#8a8172; --desk:#e7e2d6;
+  --hair:rgba(56,64,87,.14); --ghost:rgba(56,64,87,.26); --wood:#a9743f;
 }

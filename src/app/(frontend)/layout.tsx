@@ -9,6 +9,7 @@ import './tokens.css'
 import './styles.css'
 import './components.css'
 import './profil.css'
+import './profil-zapisnik.css'
 import './razitkovnik.css'
 
 export const metadata: Metadata = {

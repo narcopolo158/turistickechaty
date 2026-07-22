@@ -1,21 +1,18 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { RichText } from '@payloadcms/richtext-lexical/react'
 
-import { FotoAtribuce } from '@/components/FotoAtribuce'
-import MapaTrasy from '@/components/MapaTrasy'
-import RazitkoMoment from '@/components/RazitkoMoment'
-import TiskButton from '@/components/TiskButton'
-import { TRAIL_COLORS, TrailBlaze } from '@/components/ui'
-import VyskovyProfil, { type BodProfilu } from '@/components/VyskovyProfil'
+import ProfilZapisnik, {
+  type ZapData,
+  type ZapNote,
+  type ZapRoute,
+  type ZapSluzba,
+} from '@/components/ProfilZapisnik'
 import { prechodyChaty } from '@/lib/prechody'
 import { pristupyChaty } from '@/lib/pristupove-trasy'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import {
   chataPath,
-  formatCas,
   formatCislo,
   formatDatum,
   formatGps,
@@ -25,62 +22,81 @@ import {
   ZEME_NAZEV,
   ZEME_SLUG,
   ZNACENI_BARVA,
-  ZNACENI_NAZEV,
 } from '@/lib/chaty'
 import type { Chaty as Chata, Fotky as Fotka, Razitka } from '@/payload-types'
 
 export const revalidate = 600
 
-/** Popisek typu výchozího bodu pro sekci „Odkud vyjít". */
-const TYP_BODU_NAZEV: Record<string, string> = {
-  obec: 'obec',
-  lanovka: 'lanovka',
-  zeleznice: 'vlaková zastávka',
-  zastavka: 'aut. zastávka',
+type Params = { zeme: string; oblast: string; chata: string }
+
+// ── Pomocníci ───────────────────────────────────────────────────────────────
+
+/** Lexical richText → prosté odstavce (bez závislosti na RichText v klientu). */
+type LexNode = { type?: string; text?: string; children?: LexNode[] }
+const lexToParas = (rt: unknown): string[] => {
+  const root = (rt as { root?: LexNode } | null)?.root
+  if (!root?.children) return []
+  const walk = (node: LexNode): string =>
+    node.type === 'text' ? (node.text ?? '') : (node.children ?? []).map(walk).join('')
+  const out: string[] = []
+  for (const child of root.children) {
+    if (child.type === 'list') {
+      for (const li of child.children ?? []) {
+        const t = walk(li).trim()
+        if (t) out.push(t)
+      }
+    } else {
+      const t = walk(child).trim()
+      if (t) out.push(t)
+    }
+  }
+  return out
 }
 
-/** Doména z URL (bez www) pro popisek zdroje; při chybě vrátí vstup. */
-const hostZUrl = (u: string): string => {
+/** Minuty → „2 h 30" / „45 min". */
+const formatCasHodiny = (min: number): string => {
+  const h = Math.floor(min / 60)
+  const m = min % 60
+  return h > 0 ? `${h} h${m ? ` ${m}` : ''}` : `${m} min`
+}
+
+/** První http(s) host ze zdrojového textu (bez www) — pro popisku ověření. */
+const prvniHost = (s?: string | null): string | null => {
+  if (!s) return null
+  const m = s.match(/https?:\/\/[^\s)]+/)
+  if (!m) return null
   try {
-    return new URL(u).hostname.replace(/^www\./, '')
+    return new URL(m[0]).hostname.replace(/^www\./, '')
   } catch {
-    return u
+    return null
   }
 }
 
-type Params = { zeme: string; oblast: string; chata: string }
-
-/** Placeholder hor, dokud chata nemá vlastní hero fotku (ilustrace, ne fakt). */
-const HeroPlaceholder = () => (
-  <svg viewBox="0 0 900 460" preserveAspectRatio="xMidYMid slice" aria-hidden>
-    <defs>
-      <linearGradient id="ph" x2="0" y2="1">
-        <stop offset="0" stopColor="#dbe7f0" />
-        <stop offset="1" stopColor="#e8eee6" />
-      </linearGradient>
-    </defs>
-    <rect width="900" height="460" fill="url(#ph)" />
-    <circle cx="710" cy="88" r="42" fill="#f4c46a" opacity=".9" />
-    <path
-      d="M0,280 C120,232 240,255 340,222 C440,190 520,230 620,200 L710,138 L800,220 C840,240 880,247 900,250 L900,460 L0,460 Z"
-      fill="#93ab97"
-    />
-    <path d="M0,340 C160,300 320,325 480,296 C640,268 780,310 900,288 L900,460 L0,460 Z" fill="#64815f" />
-    <path d="M0,398 C200,372 420,390 620,368 C740,356 840,370 900,362 L900,460 L0,460 Z" fill="#41573f" />
-  </svg>
-)
-
-const stavBadge = (chata: Chata): React.ReactNode => {
-  if (chata.stav === 'v-provozu') return <span className="open">● Otevřeno</span>
-  if (chata.stav === 'mimo-provoz') return <span>Dočasně mimo provoz</span>
-  if (chata.stav === 'zanikla') return <span>Zaniklá</span>
-  return null
+/** Blok ověření (source/verified/checked) → značka a popiska (†/✓). */
+const overeniNote = (
+  b?: { source?: string | null; verified?: boolean | null; checked?: string | null } | null,
+): ZapNote => {
+  if (!b || !b.checked) return null
+  const host = prvniHost(b.source)
+  const kdo = b.verified ? 'ověřeno redakcí' : 'převzato ze zdroje'
+  return {
+    mark: b.verified ? '✓' : '†',
+    text: `${kdo}${host ? ` · ${host}` : ''} · ověř. ${formatDatum(b.checked)}`,
+  }
 }
+
+/** Dlouhý zdroj zajímavosti → krátký štítek (publikace/provozovatel). */
+const kratkyZdroj = (z?: string | null): string | null => {
+  if (!z) return null
+  const cut = z.split(/[„(—]/)[0].trim().replace(/[·-]\s*$/, '').trim()
+  return `· ${cut || z}`
+}
+
+const pluralOtisk = (n: number): string => (n === 1 ? 'otisk' : n >= 2 && n <= 4 ? 'otisky' : 'otisků')
 
 async function nactiChatu(params: Params): Promise<Chata> {
   const chata = await getChataBySlug(params.chata)
   if (!chata) notFound()
-  // kanonická URL musí sedět (země i oblast) — jinak 404, ať neexistují duplicitní cesty
   const path = chataPath(chata)
   if (!path || path !== `/${params.zeme}/${params.oblast}/${params.chata}`) notFound()
   return chata
@@ -153,472 +169,220 @@ const jsonLd = (chata: Chata, path: string) => {
   return [data, breadcrumb]
 }
 
-export default async function ProfilChaty(props: { params: Promise<Params> }) {
-  const params = await props.params
-  const chata = await nactiChatu(params)
+// ── Sestavení dat pro dvoustranu (POCTIVĚ z reálných polí) ───────────────────
+function sestavData(chata: Chata): ZapData {
   const oblast = typeof chata.oblast === 'object' ? chata.oblast : null
-  const path = `/${params.zeme}/${params.oblast}/${params.chata}`
+  const typLabel = chata.typ ? TYP_NAZEV[chata.typ] : null
+  const eyebrow = [oblast?.nazev, typLabel].filter(Boolean).join(' · ')
+  const crumb = [chata.zeme ? ZEME_NAZEV[chata.zeme] : null, oblast?.nazev, chata.obec].filter(Boolean).join(' · ')
 
   const fotky = (chata.fotky?.docs ?? []).filter((f): f is Fotka => typeof f === 'object')
   const heroFoto = fotky.find((f) => f.typ === 'soucasna' && f.url)
-  const razitka = (chata.razitka?.docs ?? []).filter((r): r is Razitka => typeof r === 'object')
-  const razitko = razitka.find((r) => r.stav === 'k-dispozici') ?? razitka[0]
-  const otisk = razitko && typeof razitko.otisk === 'object' ? razitko.otisk : null
-  const overeni = posledniOvereni(chata)
-  const trasy = chata.trasy ?? []
-  // Přístupové trasy od kurátorovaných středisek (DATA-06 3b) — „odkud vyjít".
+  const heroAtribuceText = heroFoto ? [heroFoto.autor, heroFoto.licencePoznamka].filter(Boolean).join(' · ') : ''
+
+  // Fakta (specimen tabulka) — jen doložená
+  const facts: ZapData['facts'] = []
+  if (chata.vyska != null) facts.push({ k: 'Výška', v: `${formatCislo(chata.vyska)} m n. m.` })
+  if (oblast?.nazev) facts.push({ k: 'Pohoří', v: oblast.nazev })
+  if (chata.obec) facts.push({ k: 'Oblast', v: chata.obec })
+  if (typLabel) facts.push({ k: 'Typ', v: typLabel })
+  if (chata.rokVzniku) facts.push({ k: 'Založeno', v: String(chata.rokVzniku) })
+  if (chata.lat != null && chata.lng != null) facts.push({ k: 'Souřadnice', v: formatGps(chata.lat, chata.lng) })
+
+  // Status
+  const status: ZapData['status'] =
+    chata.stav === 'v-provozu'
+      ? { kind: 'open', label: 'v provozu', sub: chata.sezona ?? null }
+      : chata.stav === 'zanikla'
+        ? { kind: 'gone', label: 'zaniklá', sub: null }
+        : chata.stav === 'mimo-provoz'
+          ? { kind: 'gone', label: 'dočasně mimo provoz', sub: null }
+          : { kind: 'none', label: '', sub: null }
+
+  // Provoz
+  const provozKv: ZapData['facts'] = []
+  if (chata.otviraciDoba) provozKv.push({ k: 'Otvírací doba', v: chata.otviraciDoba.split('\n').join(' · ') })
+  if (chata.kontakty?.telefon) provozKv.push({ k: 'Telefon', v: chata.kontakty.telefon })
+  if (chata.kontakty?.web) provozKv.push({ k: 'Web', v: chata.kontakty.web.replace(/^https?:\/\//, '').replace(/\/$/, '') })
+  const provoz =
+    chata.sezona || provozKv.length > 0 || chata.overeniProvoz
+      ? {
+          big: chata.sezona ?? null,
+          kv: provozKv,
+          dynamic:
+            'provoz a otvírací doba se mění — nikdy neukazujeme falešné „otevřeno teď", ověřte aktuální stav.',
+          note: overeniNote(chata.overeniProvoz),
+        }
+      : null
+
+  // Nocleh
+  const pokoje = (chata.pokoje ?? []).map((p) => p.typ).filter((t): t is string => !!t)
+  const nocleh =
+    chata.nocleh === 'ano'
+      ? {
+          pokoje,
+          ceny: chata.cenyOrientacne ?? null,
+          kapacita: chata.kapacita != null ? `≈ ${formatCislo(chata.kapacita)} lůžek` : null,
+          warn: chata.kapacita == null ? 'web ji neuvádí' : null,
+          note: overeniNote(chata.overeniNocleh),
+        }
+      : null
+
+  // Občerstvení
+  const obcerstveni = chata.specialita ? { specialita: chata.specialita } : null
+
+  // Služby — jen když aspoň jedna známá (jinak zeď „nezjištěno" vynecháme)
+  const SLUZBY_POLE: { key: keyof Chata; k: string }[] = [
+    { key: 'wc', k: 'WC' },
+    { key: 'platbaKartou', k: 'Platba kartou' },
+    { key: 'voda', k: 'Pitná voda' },
+    { key: 'wifi', k: 'Wi-Fi' },
+    { key: 'psi', k: 'Psi vítáni' },
+    { key: 'nabijeni', k: 'Nabíjení' },
+    { key: 'sprchy', k: 'Sprchy' },
+    { key: 'lyzarna', k: 'Lyžárna' },
+  ]
+  const sluzbyRaw = SLUZBY_POLE.map(({ key, k }): ZapSluzba => {
+    const val = chata[key] as 'ano' | 'ne' | null | undefined
+    return { k, v: val === 'ano' ? 'k dispozici' : val === 'ne' ? 'není' : 'nezjištěno', stav: val === 'ano' ? 'ano' : val === 'ne' ? 'ne' : 'nezjisteno' }
+  })
+  const sluzby = sluzbyRaw.some((s) => s.stav !== 'nezjisteno') ? sluzbyRaw : []
+
+  // Odkud vyjít (reálné přístupy z DATA-06)
   const pristupy = pristupyChaty(chata.slug)
-  /** První přístup s doloženým výškovým profilem (≥ 2 body) — pro křivku. */
-  const pristupSProfilem = pristupy.find((p) => Array.isArray(p.vyskovyProfil) && p.vyskovyProfil.length >= 2)
-  // Sběratelská místa (DATA-10): turistické známky a vizitky u chaty — číslo + odkaz.
-  const znamkyVizitky = znamkyVizitkyChaty(chata.slug)
-  /** První trasa s doloženým výškovým profilem (≥ 2 body [km, výška]). */
-  const trasaSProfilem = trasy.find(
-    (t) =>
-      Array.isArray(t.vyskovyProfil) &&
-      t.vyskovyProfil.length >= 2 &&
-      t.vyskovyProfil.every(
-        (b) => Array.isArray(b) && b.length === 2 && typeof b[0] === 'number' && typeof b[1] === 'number',
-      ),
-  )
-  const sousede = (chata.sousedniChaty ?? []).filter((s) => typeof s.chata === 'object')
-  // Vypočítané přechody (DATA-06) — nejbližší jiné chaty po značených trasách.
-  // Použijí se, když chata nemá ruční sousedniChaty (zatím žádná nemá).
+  const routes: ZapRoute[] = pristupy.map((p) => {
+    const marks = (p.useky ?? []).map((u) => ZNACENI_BARVA[u.znaceni] ?? '#8a949c').slice(0, 12)
+    const profil =
+      Array.isArray(p.vyskovyProfil) &&
+      p.vyskovyProfil.length >= 2 &&
+      p.vyskovyProfil.every((b) => Array.isArray(b) && b.length === 2 && typeof b[0] === 'number' && typeof b[1] === 'number')
+        ? (p.vyskovyProfil as [number, number][])
+        : null
+    const lo = profil ? `${formatCislo(Math.round(profil[0][1]))} m` : null
+    const hiText = chata.vyska != null ? `${formatCislo(chata.vyska)} m` : profil ? `${formatCislo(Math.round(profil[profil.length - 1][1]))} m` : ''
+    return {
+      from: p.vychoziBod,
+      km: `${formatCislo(p.delkaKm)} km`,
+      time: p.casMin != null ? formatCasHodiny(p.casMin) : null,
+      up: p.prevyseni != null ? `↑ ${formatCislo(p.prevyseni)} m` : null,
+      marks,
+      profil,
+      lo,
+      hiText,
+    }
+  })
+  const pristupIntro = pristupy.length
+    ? 'Doporučené nástupy a cesty po značených trasách (výpočet ze značení KČT v OpenStreetMap). U vyznačených chat pocházejí nástupy z ověřovaného katalogu se zdroji; jinak z nejbližších středisek.'
+    : null
+
+  // Mapa
+  const mapa =
+    chata.lat != null && chata.lng != null
+      ? {
+          lat: chata.lat,
+          lng: chata.lng,
+          trasy: pristupy.map((p) => ({ vychoziBod: p.vychoziBod, typ: p.typ, delkaKm: p.delkaKm, body: p.geometrie ?? [] })),
+        }
+      : null
+
+  // Sousední chaty — ruční, jinak vypočítané přechody (DATA-06)
+  const sousedeRucni = (chata.sousedniChaty ?? [])
+    .map((s) => (typeof s.chata === 'object' ? s.chata : null))
+    .filter((c): c is Chata => !!c)
   const prechody = prechodyChaty(chata.slug)
-  const maSousedy = sousede.length > 0 || prechody.length > 0
-  const maHistorii = Boolean(chata.rokVzniku || (chata.milniky?.length ?? 0) > 0 || chata.historieText)
+  const sousede: ZapData['sousede'] =
+    sousedeRucni.length > 0
+      ? sousedeRucni.map((c) => ({ nazev: c.nazev, km: '', url: chataPath(c) }))
+      : prechody.map((p) => ({ nazev: p.cilNazev, km: `${formatCislo(p.delkaKm)} km`, url: p.cilUrl ?? null }))
 
-  // řádek faktů — jen doložené buňky
-  const fakta: { k: string; v: React.ReactNode; s?: string }[] = []
-  if (chata.vyska != null) fakta.push({ k: 'Výška', v: `${formatCislo(chata.vyska)} m`, s: oblast?.nazev })
-  if (chata.sezona) fakta.push({ k: 'Otevřeno', v: chata.sezona, s: chata.otviraciDoba?.split('\n')[0] })
-  if (chata.nocleh === 'ano' && chata.kapacita != null)
-    fakta.push({ k: 'Nocleh', v: `≈ ${formatCislo(chata.kapacita)} lůžek`, s: chata.cenyOrientacne ?? undefined })
-  else if (chata.nocleh) fakta.push({ k: 'Nocleh', v: chata.nocleh === 'ano' ? 'Ano' : 'Ne' })
-  if (overeni)
-    fakta.push({ k: 'Ověřeno', v: formatDatum(overeni.checked), s: overeni.verified ? 'redakce' : 'zatím neověřeno' })
-  if (chata.webkamera)
-    fakta.push({
-      k: 'Webkamera',
-      v: (
-        <a href={chata.webkamera} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <i className="live" />
-          Živě
-        </a>
-      ),
-    })
+  // Historie
+  const milniky = (chata.milniky ?? []).map((m) => ({ rok: m.rok != null ? String(m.rok) : '—', text: m.udalost ?? '' }))
+  const roky = (chata.milniky ?? []).map((m) => m.rok).filter((r): r is number => typeof r === 'number')
+  const rozsah =
+    chata.rokVzniku && roky.length > 0
+      ? `${chata.rokVzniku} – ${Math.max(...roky)}`
+      : chata.rokVzniku
+        ? `od ${chata.rokVzniku}`
+        : null
+  const historieText = lexToParas(chata.historieText)
+  const historie = chata.rokVzniku || milniky.length > 0 || historieText.length > 0 ? { rozsah, milniky, text: historieText } : null
 
-  const kotvy: { id: string; label: string }[] = []
-  if (chata.zajimavosti?.length) kotvy.push({ id: 'p-zajimavosti', label: `0${kotvy.length + 1} Zajímavosti` })
-  if (trasy.length) kotvy.push({ id: 'p-trasy', label: `0${kotvy.length + 1} Trasy` })
-  if (pristupy.length) kotvy.push({ id: 'p-pristup', label: `0${kotvy.length + 1} Odkud vyjít` })
-  if (razitko) kotvy.push({ id: 'p-razitko', label: `0${kotvy.length + 1} Razítko` })
-  if (znamkyVizitky.length) kotvy.push({ id: 'p-sberatelska', label: `0${kotvy.length + 1} Sběratelská místa` })
-  if (maSousedy) kotvy.push({ id: 'p-sousede', label: `0${kotvy.length + 1} Sousedé` })
-  if (maHistorii) kotvy.push({ id: 'p-historie', label: `0${kotvy.length + 1} Historie` })
+  // Zajímavosti
+  const zajimavosti = (chata.zajimavosti ?? []).map((z) => ({ text: z.text ?? '', tag: kratkyZdroj(z.zdroj) }))
 
-  let sekce = 0
-  const cisloSekce = () => `0${++sekce}`
+  // Zdroje + datum ověření
+  const overeni = posledniOvereni(chata)
+  const datumOvereni = overeni ? formatDatum(overeni.checked) : null
+  const zdroje = (chata.zdroje ?? []).map((z) => ({ nazev: z.popis ?? '', url: z.url ?? null, datum: datumOvereni }))
+
+  // Sběratelské artefakty
+  const razitka = (chata.razitka?.docs ?? []).filter((r): r is Razitka => typeof r === 'object')
+  const razitkoRec = razitka.find((r) => r.stav === 'k-dispozici') ?? razitka[0]
+  const otisk = razitkoRec && typeof razitkoRec.otisk === 'object' ? razitkoRec.otisk : null
+  const razitko = razitkoRec
+    ? {
+        slug: chata.slug,
+        nazev: chata.nazev,
+        pohori: oblast?.nazev ?? null,
+        vyska: chata.vyska ?? null,
+        otiskUrl: otisk?.url ?? null,
+        otiskAlt: otisk?.alt ?? null,
+        caption: `Razítko · ${razitka.length} ${pluralOtisk(razitka.length)}`,
+        stav: razitkoRec.stav === 'historicke' ? 'historický otisk' : 'k dispozici',
+      }
+    : null
+
+  const zv = znamkyVizitkyChaty(chata.slug)
+  const znamkaP = zv.find((p) => p.system === 'znamka')
+  const vizitkaP = zv.find((p) => p.system === 'vizitka')
+  const jeVyrazena = (s?: string | null): boolean => !!s && /vyřaz/i.test(s)
+  const znamka = znamkaP ? { cislo: znamkaP.cislo, url: znamkaP.url, stav: znamkaP.stav ?? 'aktivní', aktivni: !jeVyrazena(znamkaP.stav) } : null
+  const vizitka = vizitkaP
+    ? { cislo: vizitkaP.cislo, nazev: chata.nazev, url: vizitkaP.url, stav: vizitkaP.stav ?? 'aktivní', vyrazena: jeVyrazena(vizitkaP.stav) }
+    : null
+
+  return {
+    nazev: chata.nazev,
+    eyebrow: eyebrow || 'Turistická chata',
+    crumb: crumb || chata.nazev,
+    vyskaText: chata.vyska != null ? `${formatCislo(chata.vyska)} m n. m.` : null,
+    hero: heroFoto?.url ? { url: heroFoto.url, alt: heroFoto.alt ?? chata.nazev } : null,
+    heroAtribuce: heroFoto ? { text: heroAtribuceText || 'zdroj', url: heroFoto.zdrojUrl ?? null } : null,
+    heroCaption: [chata.nazev, chata.obec].filter(Boolean).join(' · '),
+    status,
+    historickeNazvy: (chata.aliasy ?? []).map((a) => a.nazev).filter((x): x is string => !!x),
+    lead: chata.perex ?? null,
+    facts,
+    identitaNote: overeniNote(chata.overeniLokace),
+    charakteristika: lexToParas(chata.text),
+    provoz,
+    nocleh,
+    obcerstveni,
+    sluzby,
+    pristupIntro,
+    routes,
+    mapa,
+    sousede,
+    historie,
+    zajimavosti,
+    zdroje,
+    razitko,
+    znamka,
+    vizitka,
+    dalsiList: sousede[0]?.nazev ?? null,
+  }
+}
+
+export default async function ProfilChaty(props: { params: Promise<Params> }) {
+  const params = await props.params
+  const chata = await nactiChatu(params)
+  const path = `/${params.zeme}/${params.oblast}/${params.chata}`
+  const data = sestavData(chata)
 
   return (
-    <div className="wrap" style={{ paddingTop: 26 }}>
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(chata, path)) }} />
-
-      <div className="p-crumb">
-        {chata.zeme && <Link href={`/${ZEME_SLUG[chata.zeme]}`}>{ZEME_NAZEV[chata.zeme]}</Link>}
-        {oblast && <> › <Link href="/chaty">{oblast.nazev}</Link></>}
-        {chata.lat != null && chata.lng != null && <> · {formatGps(chata.lat, chata.lng)}</>}
-      </div>
-
-      {kotvy.length > 1 && (
-        <nav className="subnav" aria-label="Obsah profilu">
-          {kotvy.map((k) => (
-            <a key={k.id} href={`#${k.id}`}>
-              {k.label}
-            </a>
-          ))}
-        </nav>
-      )}
-
-      <div className="phero">
-        {heroFoto?.url ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={heroFoto.url} alt={heroFoto.alt} />
-        ) : (
-          <HeroPlaceholder />
-        )}
-        {heroFoto && <FotoAtribuce fotka={heroFoto} />}
-        <div className="tx">
-          <div className="cr">
-            {[chata.typ ? TYP_NAZEV[chata.typ] : null, oblast?.nazev].filter(Boolean).join(' · ')}
-          </div>
-          <h1>{chata.nazev}</h1>
-          <div className="bg">
-            {chata.vyska != null && <span>{formatCislo(chata.vyska)} m n. m.</span>}
-            {chata.nocleh === 'ano' && chata.kapacita != null && <span>≈ {formatCislo(chata.kapacita)} lůžek</span>}
-            {stavBadge(chata)}
-          </div>
-        </div>
-      </div>
-
-      {fakta.length > 0 && (
-        <div className="facts" style={{ gridTemplateColumns: `repeat(${fakta.length}, 1fr)` }}>
-          {fakta.map((f) => (
-            <div key={f.k}>
-              <div className="k">{f.k}</div>
-              <div className="v">{f.v}</div>
-              {f.s && <div className="s">{f.s}</div>}
-            </div>
-          ))}
-        </div>
-      )}
-
-      {chata.perex && <p style={{ maxWidth: 720, margin: '6px 0 4px' }}>{chata.perex}</p>}
-      {chata.text && (
-        <div style={{ maxWidth: 720, margin: '6px 0 4px' }}>
-          <RichText data={chata.text} />
-        </div>
-      )}
-
-      {(chata.zajimavosti?.length ?? 0) > 0 && (
-        <section id="p-zajimavosti" style={{ marginTop: 18 }}>
-          <div className="lista">
-            <span className="n">{cisloSekce()}</span>
-            <b>Zajímavosti</b>
-          </div>
-          <ul style={{ maxWidth: 720, margin: '10px 0 4px', paddingLeft: 18, display: 'grid', gap: 6 }}>
-            {chata.zajimavosti!.map((z, i) => (
-              <li key={z.id ?? i}>
-                {z.text}
-                {z.zdroj && (
-                  <span className="mn" style={{ color: 'var(--muted)' }}>
-                    {' '}
-                    — {z.zdroj}
-                  </span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {trasy.length > 0 && (
-        <section id="p-trasy" style={{ marginTop: 18 }}>
-          <div className="lista">
-            <span className="n">{cisloSekce()}</span>
-            <b>Přístupové trasy</b>
-          </div>
-          {trasy.map((t, i) => (
-            <div className="row" style={i === trasy.length - 1 ? { borderBottom: 0 } : undefined} key={t.id ?? i}>
-              <div>
-                <b>{t.vychoziBod}</b>
-                {t.poznamka && <span className="sm">{t.poznamka}</span>}
-              </div>
-              <span className="num">{t.casMin != null ? formatCas(t.casMin) : '—'}</span>
-              <span className="num">{t.prevyseni != null ? `+${formatCislo(t.prevyseni)} m` : '—'}</span>
-              {t.znaceni && t.znaceni !== 'jine' ? (
-                <span className="znm">
-                  <i style={{ '--zc': ZNACENI_BARVA[t.znaceni] } as React.CSSProperties} />
-                  {ZNACENI_NAZEV[t.znaceni]}
-                </span>
-              ) : (
-                <span className="num">{t.znaceni ? ZNACENI_NAZEV[t.znaceni] : '—'}</span>
-              )}
-              <span />
-            </div>
-          ))}
-          {trasaSProfilem && (
-            <div style={{ margin: '16px 0 0' }}>
-              <VyskovyProfil
-                body={trasaSProfilem.vyskovyProfil as BodProfilu[]}
-                start={trasaSProfilem.vychoziBod}
-                cil={chata.nazev}
-              />
-              <p className="prof-pop">
-                Výškový profil trasy ({trasaSProfilem.vychoziBod}) — najeď myší po křivce.
-              </p>
-            </div>
-          )}
-        </section>
-      )}
-
-      {pristupy.length > 0 && (
-        <section id="p-pristup" style={{ marginTop: 18 }}>
-          <div className="lista">
-            <span className="n">{cisloSekce()}</span>
-            <b>Odkud vyjít</b>
-          </div>
-          <p style={{ margin: '2px 0 10px', fontSize: 11.5, color: 'var(--muted)' }}>
-            Doporučené nástupy a cesty po značených trasách (výpočet ze značení KČT
-            v OpenStreetMap). U vyznačených chat pocházejí nástupy z ověřovaného
-            katalogu se zdroji; jinak z nejbližších středisek. Převýšení z výškového
-            modelu Mapy.com, čas je odhad (DIN 33466) — orientační, vždy ověřte
-            aktuální stav cest a dopravy.
-          </p>
-          {typeof chata.lat === 'number' && typeof chata.lng === 'number' && (
-            <div style={{ margin: '0 0 14px' }}>
-              <MapaTrasy
-                hut={{ nazev: chata.nazev, lat: chata.lat, lng: chata.lng }}
-                trasy={pristupy.map((p) => ({ vychoziBod: p.vychoziBod, typ: p.typ, delkaKm: p.delkaKm, body: p.geometrie ?? [] }))}
-              />
-            </div>
-          )}
-          {pristupy.map((p, i) => {
-            // Úseky slij podle barvy (přehlednější než dlouhá sekvence).
-            const dleBarvy = new Map<string, number>()
-            for (const u of p.useky) dleBarvy.set(u.znaceni, (dleBarvy.get(u.znaceni) ?? 0) + u.delkaKm)
-            // Praktická linka (doprava + sezóna) a zdroje — jen u katalogových nástupů.
-            const detaily = [p.doprava, p.sezona].filter((x): x is string => !!x && x !== 'neuvedeno')
-            return (
-              <div
-                key={p.vychoziBod + i}
-                style={{
-                  padding: '9px 2px',
-                  borderBottom: i === pristupy.length - 1 ? undefined : '1px solid var(--line)',
-                }}
-              >
-                <div style={{ display: 'flex', gap: 12, alignItems: 'baseline', flexWrap: 'wrap' }}>
-                  <span style={{ flex: '1 1 150px', minWidth: 150 }}>
-                    <b style={{ fontSize: 13 }}>{p.vychoziBod}</b>{' '}
-                    <span style={{ fontSize: 11, color: 'var(--muted)' }}>{TYP_BODU_NAZEV[p.typ] ?? p.typ}</span>
-                  </span>
-                  <span className="num" style={{ fontWeight: 600 }}>{formatCislo(p.delkaKm)} km</span>
-                  {p.casMin != null && (
-                    <span className="num" style={{ color: 'var(--muted)' }} title="odhad času (DIN 33466)">
-                      ~{formatCas(p.casMin)}
-                    </span>
-                  )}
-                  {p.prevyseni != null && (
-                    <span className="num" style={{ color: 'var(--muted)' }} title="převýšení (výškový model Mapy.com)">
-                      +{formatCislo(p.prevyseni)} m
-                    </span>
-                  )}
-                  <span style={{ display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center' }}>
-                    {[...dleBarvy.entries()].map(([znaceni, km], j) =>
-                      znaceni in TRAIL_COLORS ? (
-                        <TrailBlaze key={j} color={znaceni as keyof typeof TRAIL_COLORS}>
-                          {`${TRAIL_COLORS[znaceni as keyof typeof TRAIL_COLORS].label} ${formatCislo(Math.round(km * 10) / 10)}`}
-                        </TrailBlaze>
-                      ) : (
-                        <span key={j} style={{ fontSize: 11, color: 'var(--muted)' }}>
-                          neznačeno {formatCislo(Math.round(km * 10) / 10)} km
-                        </span>
-                      ),
-                    )}
-                    {p.kRucniKontrole && (
-                      <span style={{ fontSize: 10.5, color: 'var(--muted)' }}>· část mimo značku</span>
-                    )}
-                  </span>
-                </div>
-                {(detaily.length > 0 || p.poznamka || (p.zdroje && p.zdroje.length > 0)) && (
-                  <div style={{ marginTop: 4, fontSize: 11, color: 'var(--muted)', lineHeight: 1.5 }}>
-                    {detaily.length > 0 && <div>{detaily.join(' · ')}</div>}
-                    {p.poznamka && <div>{p.poznamka}</div>}
-                    {p.zdroje && p.zdroje.length > 0 && (
-                      <div>
-                        zdroj:{' '}
-                        {p.zdroje.map((u, j) => (
-                          <span key={j}>
-                            {j > 0 && ', '}
-                            <a href={u} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
-                              {hostZUrl(u)}
-                            </a>
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            )
-          })}
-          {pristupSProfilem?.vyskovyProfil && (
-            <div style={{ margin: '16px 0 0' }}>
-              <VyskovyProfil
-                body={pristupSProfilem.vyskovyProfil as BodProfilu[]}
-                start={pristupSProfilem.vychoziBod}
-                cil={chata.nazev}
-              />
-              <p className="prof-pop">
-                Výškový profil trasy ({pristupSProfilem.vychoziBod} → {chata.nazev}) — najeď myší po křivce. Výšky z modelu Mapy.com, orientační.
-              </p>
-            </div>
-          )}
-        </section>
-      )}
-
-      <div className="g2" style={{ marginTop: 18 }}>
-        {razitko && (
-          <div className="card" id="p-razitko" style={{ overflow: 'hidden' }}>
-            <div className="lista red" style={{ borderRadius: 0, margin: 0 }}>
-              <span className="n">{cisloSekce()}</span>
-              <b>Razítko</b>
-              <Link className="r" href="/razitkovnik">Sbírka →</Link>
-            </div>
-            <div className="bx">
-              <RazitkoMoment
-                slug={chata.slug}
-                nazev={chata.nazev}
-                pohori={oblast?.nazev}
-                vyska={chata.vyska}
-                otiskUrl={otisk?.url}
-                otiskAlt={otisk?.alt}
-                stitek={
-                  // poctivost v UI: historický otisk nesmí dopadat bez označení
-                  razitko.stav === 'historicke'
-                    ? `historický otisk${razitko.platnostOd ? ` · ${razitko.platnostOd}` : ''}`
-                    : undefined
-                }
-              >
-                <div style={{ fontSize: 12.5 }}>
-                  {razitko.kdeSeRazitkuje && <p style={{ marginTop: 9 }}>Razítkuje se: {razitko.kdeSeRazitkuje}</p>}
-                  {razitko.potvrzeno && (
-                    <p className="mn" style={{ fontSize: 9.5, color: 'var(--muted)', marginTop: 9 }}>
-                      Doloženo {formatDatum(razitko.potvrzeno)}
-                      {razitko.dolozil && <> · {razitko.dolozil}</>}
-                    </p>
-                  )}
-                  {razitka.length > 1 && (
-                    <p style={{ fontSize: 12, fontWeight: 600, marginTop: 6 }}>
-                      Historické varianty ({razitka.length - 1})
-                    </p>
-                  )}
-                  {/* Poctivost + podmínka svolení: u převzatého otisku vždy viditelný zdroj. */}
-                  {razitko.zpusobZiskani === 'prevzato-se-svolenim' && razitko.prevzeti?.zdrojUrl && (
-                    <p className="mn" style={{ fontSize: 9.5, color: 'var(--muted)', marginTop: 9 }}>
-                      Otisk převzat se svolením —{' '}
-                      <a href={razitko.prevzeti.zdrojUrl} target="_blank" rel="noopener noreferrer nofollow">
-                        {razitko.prevzeti.zdroj || 'zdroj'}
-                      </a>
-                    </p>
-                  )}
-                </div>
-              </RazitkoMoment>
-            </div>
-          </div>
-        )}
-
-        {znamkyVizitky.length > 0 && (
-          <div className="card" id="p-sberatelska" style={{ overflow: 'hidden' }}>
-            <div className="lista" style={{ borderRadius: 0, margin: 0 }}>
-              <span className="n">{cisloSekce()}</span>
-              <b>Sběratelská místa</b>
-            </div>
-            <div className="bx">
-              {znamkyVizitky.map((p, i) => (
-                <div
-                  key={i}
-                  style={{ padding: '7px 0', borderBottom: i === znamkyVizitky.length - 1 ? undefined : '1px solid var(--line)' }}
-                >
-                  <a href={p.url} target="_blank" rel="noopener noreferrer nofollow" style={{ fontWeight: 600, fontSize: 12.5 }}>
-                    {p.system === 'znamka' ? `Turistická známka č. ${p.cislo}` : `Turistická vizitka ${p.cislo}`} ↗
-                  </a>
-                  {p.stav && (
-                    <div style={{ fontSize: 10.5, color: 'var(--muted)', marginTop: 2 }}>{p.stav}</div>
-                  )}
-                </div>
-              ))}
-              <p className="mn" style={{ fontSize: 9.5, color: 'var(--muted)', marginTop: 9 }}>
-                Zdroj: oficiální seznamy vydavatelů (turisticke-znamky.cz, wander-book.com); zatím neověřeno redakcí.
-              </p>
-            </div>
-          </div>
-        )}
-
-        {maSousedy && (
-          <div className="card" id="p-sousede" style={{ overflow: 'hidden' }}>
-            <div className="lista" style={{ borderRadius: 0, margin: 0 }}>
-              <span className="n">{cisloSekce()}</span>
-              <b>Sousední chaty</b>
-              <span className="r">Přechody</span>
-            </div>
-            <div className="bx">
-              {sousede.length > 0
-                ? sousede.map((s, i) => {
-                    const soused = s.chata as Chata
-                    const sousedPath = chataPath(soused)
-                    const obsah = (
-                      <>
-                        {soused.nazev} {s.casPrechodMin != null && <b>{formatCas(s.casPrechodMin)}</b>}
-                      </>
-                    )
-                    return sousedPath ? (
-                      <Link className="chip" href={sousedPath} key={s.id ?? i}>
-                        {obsah}
-                      </Link>
-                    ) : (
-                      <span className="chip" key={s.id ?? i}>
-                        {obsah}
-                      </span>
-                    )
-                  })
-                : prechody.map((p, i) =>
-                    p.cilUrl ? (
-                      <Link className="chip" href={p.cilUrl} key={i}>
-                        {p.cilNazev} <b>{formatCislo(p.delkaKm)} km</b>
-                      </Link>
-                    ) : (
-                      <span className="chip" key={i}>
-                        {p.cilNazev} <b>{formatCislo(p.delkaKm)} km</b>
-                      </span>
-                    ),
-                  )}
-              {sousede.length === 0 && prechody.length > 0 && (
-                <p className="mn" style={{ fontSize: 9.5, color: 'var(--muted)', marginTop: 9 }}>
-                  Nejbližší chaty po značených trasách (orientační vzdálenost; čas s převýšením doplníme). Zdroj: OpenStreetMap.
-                </p>
-              )}
-            </div>
-          </div>
-        )}
-      </div>
-
-      {maHistorii && (
-        <section id="p-historie" style={{ marginTop: 18 }}>
-          <div className="lista night">
-            <span className="n">{cisloSekce()}</span>
-            <b>Historie</b>
-            {chata.rokVzniku && <span className="r">od {chata.rokVzniku}</span>}
-          </div>
-          {(chata.milniky?.length ?? 0) > 0 && (
-            <div style={{ marginBottom: 10 }}>
-              {chata.milniky!.map((m, i) => (
-                <div
-                  className="row"
-                  style={{ gridTemplateColumns: '.2fr 1.8fr', ...(i === chata.milniky!.length - 1 ? { borderBottom: 0 } : {}) }}
-                  key={m.id ?? i}
-                >
-                  <span className="num">{m.rok ?? '—'}</span>
-                  <span>{m.udalost}</span>
-                </div>
-              ))}
-            </div>
-          )}
-          {chata.historieText && (
-            <div style={{ maxWidth: 720 }}>
-              <RichText data={chata.historieText} />
-            </div>
-          )}
-        </section>
-      )}
-
-      <div className="p-zdroje">
-        {chata.rezervaceUrl && (
-          <a className="btn blue" href={chata.rezervaceUrl}>
-            Rezervovat nocleh
-          </a>
-        )}
-        <TiskButton />
-        {(chata.zdroje?.length ?? 0) > 0 && (
-          <span className="src">Zdroje: {chata.zdroje!.map((z) => z.popis).join(' · ')}</span>
-        )}
-      </div>
-
-      <div className="pfoot">
-        turistickechaty.cz{path} — stránka z průvodce
-        {overeni && <> · data ověřena {formatDatum(overeni.checked)}</>}
-        {razitko?.potvrzeno && <> · razítko doloženo</>}
-      </div>
-    </div>
+      <ProfilZapisnik data={data} />
+    </>
   )
 }
