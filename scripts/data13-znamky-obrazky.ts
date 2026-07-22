@@ -79,19 +79,34 @@ const velikostSkore = (u: string): number =>
  * image_src a nakonec `<img>` se známkovým src. `null`, když se nic bezpečného
  * nenajde — radši poctivě nic než špatný obrázek.
  */
+/**
+ * Generický / nemístní obrázek (logo, banner, share, placeholder) — NENÍ známka.
+ * Chrání proti tomu, aby fallback (og:image) sebral logo webu jako „známku"
+ * (znaczki-turystyczne.pl vrací u detailů og:image = /images/pages/znacki_turystyczne.jpg).
+ */
+export const jeGenericky = (url: string): boolean => {
+  const u = url.toLowerCase()
+  if (/\/(images\/pages|logo|logos|assets|static|placeholder|default|banner|share|social)\//.test(u)) return true
+  const soubor = u.split('?')[0].split('/').pop() ?? ''
+  return /logo|znaczki[_-]?turystyczne|znacki[_-]?turystyczne|turisticke[_-]?znamky|default|placeholder|banner/.test(soubor)
+}
+
 export const extractObrazekUrl = (html: string, baseUrl: string): string | null => {
+  // 1) per-item cesta (item_images) — definitivní obrázek známky, důvěřuj
   const itemy = [...html.matchAll(ITEM_IMAGES)].map((m) => m[1])
   if (itemy.length) {
-    const nej = [...itemy].sort((a, b) => velikostSkore(b) - velikostSkore(a))[0]
-    return absolutniUrl(nej, baseUrl)
+    return absolutniUrl([...itemy].sort((a, b) => velikostSkore(b) - velikostSkore(a))[0], baseUrl)
   }
+  // 2) meta/fallback — ale odmítni generické (logo/banner/share), ať nebereme logo webu
+  const kandidati: string[] = []
   for (const re of META_VZORY) {
     const m = html.match(re)
-    if (m?.[1]) return absolutniUrl(m[1].trim(), baseUrl)
+    if (m?.[1]) kandidati.push(m[1].trim())
   }
-  const srcs = [...html.matchAll(/<img[^>]+src=["']([^"']+)["']/gi)].map((m) => m[1])
-  const kandidat = srcs.find((s) => /znamk|\/foto|\/image|\/upload|item_images/i.test(s))
-  return kandidat ? absolutniUrl(kandidat.trim(), baseUrl) : null
+  for (const m of html.matchAll(/<img[^>]+src=["']([^"']+)["']/gi)) {
+    if (/znamk|\/foto|\/image|\/upload|item_images/i.test(m[1])) kandidati.push(m[1].trim())
+  }
+  return kandidati.map((k) => absolutniUrl(k, baseUrl)).find((u) => !jeGenericky(u)) ?? null
 }
 
 const MIME_PRIPONA: Record<string, string> = {
@@ -153,6 +168,8 @@ const main = async () => {
     ? ((JSON.parse(readFileSync(MANIFEST, 'utf8')) as { obrazky?: ObrazekZaznam[] }).obrazky ?? [])
     : []
   const dleSlug = new Map(stare.map((z) => [z.slug, z]))
+  // Pojistka: stejná adresa obrázku u víc chat = generický/sdílený obrázek, ne známka.
+  const pouzite = new Set<string>(stare.map((z) => z.obrazekUrl))
 
   let stazeno = 0
   let preskoceno = 0
@@ -184,10 +201,16 @@ const main = async () => {
         bezObrazku++
         continue
       }
+      if (pouzite.has(obrazekUrl)) {
+        console.log(`- ⚠ ${slug}: sdílený/generický obrázek (${obrazekUrl}) — přeskočeno (není známka konkrétní chaty)`)
+        bezObrazku++
+        continue
+      }
       const { mime, buf } = await stahni(obrazekUrl)
       const soubor = `/znamky/${slug}${priponaObrazku(mime, obrazekUrl)}`
       writeFileSync(join(process.cwd(), 'public', soubor.replace(/^\//, '')), buf)
       dleSlug.set(slug, { slug, cislo: produkt.cislo, detailUrl: produkt.url, obrazekUrl, soubor, mime: mime.split(';')[0].trim() })
+      pouzite.add(obrazekUrl)
       console.log(`- ✓ ${slug} (č. ${produkt.cislo}) → ${soubor} [${(buf.length / 1024).toFixed(0)} kB]`)
       stazeno++
     } catch (e) {

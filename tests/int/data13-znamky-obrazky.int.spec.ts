@@ -8,7 +8,7 @@
  */
 import { describe, expect, it } from 'vitest'
 
-import { absolutniUrl, extractObrazekUrl, jeStazitelna, priponaObrazku } from '../../scripts/data13-znamky-obrazky'
+import { absolutniUrl, extractObrazekUrl, jeGenericky, jeStazitelna, priponaObrazku } from '../../scripts/data13-znamky-obrazky'
 
 const BASE = 'https://www.turisticke-znamky.cz/znamky/lucni-bouda-c11'
 
@@ -54,6 +54,21 @@ describe('DATA-13 · extractObrazekUrl', () => {
   it('nic bezpečného → null (radši nic než špatný obrázek)', () => {
     expect(extractObrazekUrl('<body><img src="/loga/logo.svg"></body>', BASE)).toBeNull()
     expect(extractObrazekUrl('<p>bez obrázku</p>', BASE)).toBeNull()
+  })
+
+  it('odmítne generický og:image (logo webu) → null', () => {
+    const html = '<meta property="og:image" content="https://d2.znaczki-turystyczne.pl/images/pages/znacki_turystyczne.jpg">'
+    expect(extractObrazekUrl(html, 'https://www.znaczki-turystyczne.pl/x')).toBeNull()
+  })
+})
+
+describe('DATA-13 · jeGenericky (pojistka proti logu webu)', () => {
+  it('generické cesty/soubory zamítne', () => {
+    expect(jeGenericky('https://d2.znaczki-turystyczne.pl/images/pages/znacki_turystyczne.jpg')).toBe(true)
+    expect(jeGenericky('https://x.cz/assets/logo.png')).toBe(true)
+  })
+  it('reálný obrázek známky (item_images) není generický', () => {
+    expect(jeGenericky('https://turisticke-znamky.cz/storage/item_images/medium/5662b3ed7372f7.33069373.png')).toBe(false)
   })
 })
 
