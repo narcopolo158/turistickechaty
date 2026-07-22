@@ -18,10 +18,22 @@ neexistence).
 - Na profilu blok **„Sběratelská místa"**: číslo známky/vizitky + **odkaz na
   oficiální detail** + stav. Vše `verified: false` se zdrojem (číslo/odkaz/fakt
   není chráněný — zveřejnit smíme; ověřit se má, že odkaz vede na správný detail).
-- **Náhledy obrázků známek/vizitek se NEpřebírají** — grafika je autorské dílo
-  vydavatele; doplní se JEN po písemném svolení (Michal oslovil 22. 7. 2026
-  Turistické známky s.r.o. i Wander Book). Mechanismus „se-svolením" + zdrojUrl +
-  atribuce je připraven z razítek.
+- **Náhledy obrázků známek/vizitek se přebírají JEN po svolení** — grafika je
+  autorské dílo vydavatele. Mechanismus „se-svolením" + zdrojUrl + atribuce je
+  připraven z razítek.
+- **SVOLENÍ — Turistické známky s.r.o.:** ✅ **uděleno.** Mgr. David Holub
+  (jednatel) — e-mailem 22. 7. 2026 („v principu se zobrazováním Turistických
+  známek u jednotlivých chat souhlasím") a **výslovně telefonicky 22. 7. 2026**
+  (Michal volal, souhlas s uveřejněním obrázků potvrzen). Podmínka jednatele:
+  dát vědět, až web pojede. → Obrázky známek **smíme zobrazit**; k doplnění chybí
+  jen samotné soubory (viz níže) + notifikace vydavatele po spuštění.
+- **SVOLENÍ — Wander Book (vizitky):** ⏳ zatím bez odpovědi → vizitky drží
+  placeholder faux-3D, dokud svolení nedorazí.
+- **Doplnění obrázků známek (TODO):** získat oficiální soubory — přednostně přímo
+  od Mgr. Holuba (nejlepší kvalita a nejčistší provenience; je vstřícný), případně
+  z detailů na turisticke-znamky.cz. Uložit jako Fotky se „se-svolením" atribucí
+  (zdroj: Turistické známky s.r.o., souhlas 22. 7. 2026) a napojit do slotu známky
+  na profilu (faux-3D layout je připraven přijmout artwork bez změny).
 
 ## Pokrytí
 13 z 23 publikovaných chat má známku a/nebo vizitku (vše jistota A). Zbytek
