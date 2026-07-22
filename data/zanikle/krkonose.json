@@ -1,0 +1,487 @@
+{
+  "zdroj": "Zaniklé horské chaty Krkonoš/Karkonosze — katalog ChatGPT nad historickými prameny (regionální literatura, KČT/PTTK, zanikleobce.cz, KRNAP/KPN, Wikipedie), verified:false. Doložení = zdrojové URL u záznamu.",
+  "pozn": "Samostatná kategorie (stav zaniklá) — nemíchá se do živého katalogu chat, mapy ani routingu.",
+  "pocet": 17,
+  "chaty": [
+    {
+      "id": "ZANIK-005",
+      "slug": "bobi-bouda",
+      "nazev": "Bobí bouda",
+      "nazvyHistoricke": [
+        "Bobí bouda",
+        "Bohnwiesbaude",
+        "Bodenwiesbauden"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Lučiny",
+      "lat": 50.669917,
+      "lng": 15.728611,
+      "gpsPresnost": "přibližná",
+      "rokVzniku": "před 1668",
+      "rokZaniku": null,
+      "pricinaZaniku": "požár; přesný rok je ve veřejných zdrojích sporný",
+      "coJeDnes": "objekt neexistuje; přesný stav pozůstatků nebyl v použitých zdrojích doložen",
+      "patrnePozustatky": null,
+      "pristupnost": null,
+      "pristupnostPoznamka": "Poloha je přibližná. Ve zdrojích se rozcházejí údaje o roce požáru, proto rok zániku zůstává neuveden.",
+      "popis": "Bobí bouda je doložena na mapě z roku 1668 a později sloužila jako horská bouda i zotavovna ROH. Její zánik způsobil požár, avšak dostupné internetové zdroje a svědectví uvádějí rozdílné roky, proto katalog přesné datum nepřebírá.",
+      "jistota": "C",
+      "zdroje": [
+        "https://prazdnedomy.cz/domy/objekty/detail/4201-bobi-bouda",
+        "https://www.krkonosskeboudy.cz/2014/01/bobi-bouda.html",
+        "https://archakrkonos.cz/objekty/2557-cd-cp-181-bobi-bouda-zaniklo/"
+      ]
+    },
+    {
+      "id": "ZANIK-011",
+      "slug": "bodenwiesbaude-cp-194",
+      "nazev": "Bodenwiesbaude čp. 194",
+      "nazvyHistoricke": [
+        "Bodenwiesbaude",
+        "Bohnwieska",
+        "Černý Důl čp. 194"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Lučiny",
+      "lat": null,
+      "lng": null,
+      "gpsPresnost": null,
+      "rokVzniku": "po 1905",
+      "rokZaniku": "mezi 1924 a 1933",
+      "pricinaZaniku": "požár",
+      "coJeDnes": "neuvedeno; nová Pražská bouda vznikla později výše ve svahu na jiném místě",
+      "patrnePozustatky": null,
+      "pristupnost": null,
+      "pristupnostPoznamka": "Přesná parcela ani souřadnice nejsou na kartě objektu určeny.",
+      "popis": "Horská bouda čp. 194 vznikla po roce 1905 a byla známa jako Bodenwiesbaude nebo Bohnwieska. Mezi lety 1924 a 1933 vyhořela; nová Pražská bouda pak vznikla o něco výše ve svahu, nikoli jako zachovaná původní stavba.",
+      "jistota": "B",
+      "zdroje": [
+        "https://archakrkonos.cz/objekty/4755-cd-cp-194-zaniklo/",
+        "https://archakrkonos.cz/lokality/16-luciny-bodenwiesenbauden/"
+      ]
+    },
+    {
+      "id": "ZANIK-002",
+      "slug": "ceska-bouda-na-snezce",
+      "nazev": "Česká bouda na Sněžce",
+      "nazvyHistoricke": [
+        "Česká bouda",
+        "Böhmische Baude",
+        "Böhmischebaude"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "vrchol Sněžky",
+      "lat": 50.7358,
+      "lng": 15.73989,
+      "gpsPresnost": "přibližná",
+      "rokVzniku": "1867",
+      "rokZaniku": "2004",
+      "pricinaZaniku": "demolice po uzavření a dlouhodobém chátrání",
+      "coJeDnes": "na části základové terasy stojí Česká poštovna; původní bouda neexistuje",
+      "patrnePozustatky": "ano",
+      "pristupnost": "na značené trase",
+      "pristupnostPoznamka": "Vrchol Sněžky je dostupný po značených trasách a lanovkou; souřadnice označují přibližné místo bývalé boudy na vrcholu.",
+      "popis": "Hostinský Julius Blaschke postavil na české straně Sněžky roku 1867 restauraci, později známou jako Česká bouda. Po uzavření v roce 1990 objekt chátral a Správa KRNAP jej na podzim 2004 odstranila; část původní terasy byla později využita při stavbě České poštovny.",
+      "jistota": "A",
+      "zdroje": [
+        "https://mapcarta.com/de/18501556",
+        "https://archakrkonos.cz/objekty/269-pec-cp-238-ceska-bouda-zaniklo-r-2004/",
+        "https://www.snezka.net/ceska_bouda.htm",
+        "https://ct24.ceskatelevize.cz/clanek/regiony/postovna-na-snezce-by-mohla-zacit-fungovat-za-tri-tydny-154290",
+        "https://www.irozhlas.cz/zpravy-domov/likvidace-ceske-boudy-jde-pomalu_200410211001_mkaclova"
+      ]
+    },
+    {
+      "id": "ZANIK-006",
+      "slug": "havlova-bouda",
+      "nazev": "Havlova bouda",
+      "nazvyHistoricke": [
+        "Havlova bouda"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Na Výrovce, sedlo mezi Luční a Zadní Planinou",
+      "lat": 50.714714,
+      "lng": 15.680497,
+      "gpsPresnost": "odvozená",
+      "rokVzniku": "1927",
+      "rokZaniku": "1947",
+      "pricinaZaniku": "požár",
+      "coJeDnes": null,
+      "patrnePozustatky": null,
+      "pristupnost": null,
+      "pristupnostPoznamka": "Souřadnice jsou odvozené z geolokace historické fotografie a označují pouze přibližnou lokalizaci u Výrovky.",
+      "popis": "Vojenský výcvikový srub s 36 místnostmi vznikl roku 1927 péčí generála ženijního vojska Františka Havla. Archa Krkonoš uvádí, že 6. února 1947 bouda vyhořela do základů.",
+      "jistota": "B",
+      "zdroje": [
+        "https://commons.wikimedia.org/wiki/File:Havlova_bouda_u_Vyrovky_01.jpg",
+        "https://archakrkonos.cz/objekty/2778-pec-cp-203-havlova-bouda-zaniklo/"
+      ]
+    },
+    {
+      "id": "ZANIK-010",
+      "slug": "hradecka-bouda",
+      "nazev": "Hradecká bouda",
+      "nazvyHistoricke": [
+        "Hradecká bouda"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Liščí louka",
+      "lat": null,
+      "lng": null,
+      "gpsPresnost": null,
+      "rokVzniku": "1937",
+      "rokZaniku": "1971",
+      "pricinaZaniku": "požár; podle zdroje pravděpodobně samovznícení sena na půdě",
+      "coJeDnes": "louka, parcela 279",
+      "patrnePozustatky": "ne",
+      "pristupnost": null,
+      "pristupnostPoznamka": "Přesná poloha bývalé stavby nebyla z veřejných mapových zdrojů bezpečně určena.",
+      "popis": "Český Ski-Klub v Hradci Králové přestavěl starší dům na horskou chatu s ubytovnou; přestavba byla oficiálně dokončena roku 1937. V roce 1971 bouda vyhořela, podle regionálního textu pravděpodobně po samovznícení sena, a nebyla obnovena.",
+      "jistota": "A",
+      "zdroje": [
+        "https://archakrkonos.cz/objekty/111-pec-cp-63-hradecka-bouda-zaniklo-r-1971/",
+        "https://ekolist.cz/cz/zpravodajstvi/co-pisi-jini/lisci-louka",
+        "https://archakrkonos.cz/lokality/15-lisci-louka-fuchsbergbauden/"
+      ]
+    },
+    {
+      "id": "ZANIK-007",
+      "slug": "klinova-bouda",
+      "nazev": "Klínová bouda",
+      "nazvyHistoricke": [
+        "Klínová bouda",
+        "Klínovka",
+        "Keilbaude"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Klínové boudy",
+      "lat": 50.709167,
+      "lng": 15.662222,
+      "gpsPresnost": "přesná",
+      "rokVzniku": null,
+      "rokZaniku": "1970",
+      "pricinaZaniku": "požár",
+      "coJeDnes": "studánka s pitnou vodou a turistický přístřešek",
+      "patrnePozustatky": "ne",
+      "pristupnost": "na značené trase",
+      "pristupnostPoznamka": "Lokalitou Klínových bud prochází několik značených turistických cest; na místě boudy je přístřešek a studánka.",
+      "popis": "Klínová bouda byla nejvýše položeným objektem enklávy Klínové boudy. Roku 1970 vyhořela a nebyla obnovena; na jejím místě je dnes pitný pramen a turistický přístřešek.",
+      "jistota": "A",
+      "zdroje": [
+        "https://www.filmovamista.cz/lokalita/zaber?id=5991-byv--Klinovska-bouda--Krkonose",
+        "https://www.krkonosskeboudy.cz/2014/01/klinova-bouda.html",
+        "https://zpravy.aktualne.cz/domaci/foto-zanikle-boudy-v-krkonosich/r~0560a048262811ee8c6f0cc47ab5f122/r~204171e8263d11ee9ae20cc47ab5f122/"
+      ]
+    },
+    {
+      "id": "ZANIK-008",
+      "slug": "kovarna",
+      "nazev": "Kovárna",
+      "nazvyHistoricke": [
+        "Kovárna",
+        "Bergschmiede"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Obří důl",
+      "lat": 50.725833,
+      "lng": 15.73,
+      "gpsPresnost": "přibližná",
+      "rokVzniku": null,
+      "rokZaniku": "1979",
+      "pricinaZaniku": "demolice po dlouhodobém chátrání",
+      "coJeDnes": "v blízkosti se nachází vstup do historického dolu Kovárna; přesná podoba místa bývalé boudy není ve zdrojích uvedena",
+      "patrnePozustatky": null,
+      "pristupnost": "na značené trase",
+      "pristupnostPoznamka": "Bývalá bouda stála v Obřím dole u důlního díla; souřadnice jsou přibližné a vztahují se k místu u vstupu do dolu.",
+      "popis": "Objekt vznikl u důlní kovárny a po ukončení těžby sloužil jako hostinec a horská bouda. Od padesátých let chátral a roku 1979 byl zbourán.",
+      "jistota": "A",
+      "zdroje": [
+        "https://tourism.cz/encyklopedie/objekty1.phtml?id=129770",
+        "https://www.pecpodsnezkou.cz/turisticke-cile/dul-kovarna/horska-sluzba/",
+        "https://archakrkonos.cz/objekty/38-pec-cp-210-kovarna-zaniklo-1979/"
+      ]
+    },
+    {
+      "id": "ZANIK-009",
+      "slug": "lisci-bouda",
+      "nazev": "Liščí bouda",
+      "nazvyHistoricke": [
+        "Liščí bouda",
+        "Fuchsbergbaude"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Liščí louka pod Liščí horou",
+      "lat": null,
+      "lng": null,
+      "gpsPresnost": null,
+      "rokVzniku": null,
+      "rokZaniku": "1948",
+      "pricinaZaniku": "požár z nezjištěné příčiny",
+      "coJeDnes": "původní bouda nebyla obnovena; na Liščí louce zůstaly jiné objekty",
+      "patrnePozustatky": null,
+      "pristupnost": null,
+      "pristupnostPoznamka": "Zdroj potvrzuje polohu na Liščí louce, ale přesná veřejně ověřená souřadnice bývalé stavby nebyla nalezena.",
+      "popis": "Z původní chalupy vybudoval Johann Fischer rozsáhlý horský hotel, který patřil k významným boudám na hřebenech. Liščí bouda roku 1948 vyhořela z nezjištěných příčin a již nebyla obnovena.",
+      "jistota": "A",
+      "zdroje": [
+        "https://archakrkonos.cz/objekty/2548-cd-cp-190-lisci-bouda-zaniklo-1948/",
+        "https://www.krkonosskeboudy.cz/2014/01/lisci-bouda.html",
+        "https://ekolist.cz/cz/zpravodajstvi/co-pisi-jini/lisci-louka"
+      ]
+    },
+    {
+      "id": "ZANIK-004",
+      "slug": "modrodolska-bouda",
+      "nazev": "Modrodolská bouda",
+      "nazvyHistoricke": [
+        "Modrodolská bouda",
+        "Blaugrundbaude"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Modrý důl",
+      "lat": 50.71373,
+      "lng": 15.71136,
+      "gpsPresnost": "přesná",
+      "rokVzniku": "před 1771",
+      "rokZaniku": "1954",
+      "pricinaZaniku": "požár",
+      "coJeDnes": "zbořeniště se zbytkem sklepa a základů, vzrostlé stromy a drobná stavba bývalé prádelny",
+      "patrnePozustatky": "ano",
+      "pristupnost": null,
+      "pristupnostPoznamka": "Poloha je evidována v Modrém dole; bezpečná veřejná přístupnost přesného zbořeniště nebyla z použitých zdrojů potvrzena.",
+      "popis": "Na místě je doložena stavební parcela už před rokem 1771 a objekt později sloužil jako horské hospodářství i bouda s restaurací a ubytováním. Bouda zanikla požárem roku 1954 a dochovaly se části sklepa, základů a bývalá prádelna.",
+      "jistota": "B",
+      "zdroje": [
+        "https://mapcarta.com/N13300061296",
+        "https://archakrkonos.cz/objekty/6-pec-cp-101-modrodolska-bouda-zaniklo-1954/"
+      ]
+    },
+    {
+      "id": "ZANIK-001",
+      "slug": "obri-bouda",
+      "nazev": "Obří bouda",
+      "nazvyHistoricke": [
+        "Riesenbaude"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Obří pláň, Obří sedlo pod Sněžkou",
+      "lat": 50.73886,
+      "lng": 15.72897,
+      "gpsPresnost": "přesná",
+      "rokVzniku": "1847",
+      "rokZaniku": "1982",
+      "pricinaZaniku": "demolice po uzavření a devastaci objektu",
+      "coJeDnes": "upravené vyhlídkové místo a zbytky základů",
+      "patrnePozustatky": "ano",
+      "pristupnost": "na značené trase",
+      "pristupnostPoznamka": "Místo leží u hlavní hřebenové trasy mezi Sněžkou a Obřím sedlem; výstup Obřím dolem může mít sezonní omezení.",
+      "popis": "Obří boudu postavil roku 1847 kupec Mittlöhner na okraji Úpské jámy. Po druhé světové válce ještě sloužila, později byla pro technický stav uzavřena a po devastaci roku 1982 zbořena; na místě jsou doloženy základy a upravená vyhlídka.",
+      "jistota": "A",
+      "zdroje": [
+        "https://www.zanikleobce.cz/index.php?obec=2515",
+        "https://archakrkonos.cz/objekty/148-pec-cp-106-obri-bouda-zaniklo-v-r-1982/",
+        "https://www.krkonose.eu/en/obri-dul"
+      ]
+    },
+    {
+      "id": "ZANIK-003",
+      "slug": "sokolska-bouda",
+      "nazev": "Sokolská bouda",
+      "nazvyHistoricke": [
+        "Sokolská bouda",
+        "Sokolbaude"
+      ],
+      "zeme": "Česko",
+      "oblastCast": "Černá hora, Volské boudy",
+      "lat": 50.649294,
+      "lng": 15.748389,
+      "gpsPresnost": "přesná",
+      "rokVzniku": "1928",
+      "rokZaniku": "2019",
+      "pricinaZaniku": "demolice zchátralé a dlouhodobě neprovozované stavby",
+      "coJeDnes": "původní stavba je odstraněna; další využití parcely nebylo v použitých zdrojích potvrzeno",
+      "patrnePozustatky": null,
+      "pristupnost": "na značené trase",
+      "pristupnostPoznamka": "Místo bývalé boudy leží u turistického rozcestí na Černé hoře.",
+      "popis": "Rozsáhlou roubenou Sokolskou boudu navrhl architekt František Kavalír a stavba proběhla v letech 1928 až 1929. Po dlouhém chátrání byla v roce 2019 rozebrána a zdemolována.",
+      "jistota": "A",
+      "zdroje": [
+        "https://www.wikidata.org/wiki/Q12055287",
+        "https://archakrkonos.cz/objekty/1682-ch-cp-172-sokolska-bouda-zaniklo-2019/",
+        "https://hradec.rozhlas.cz/sokolska-bouda-na-cerne-hore-je-zhruba-ze-dvou-tretin-zbourana-co-a-kdy-se-na-8091485",
+        "https://www.turistika.cz/mista/turisticke-rozcesti-cerna-hora-sokolska-bouda/detail"
+      ]
+    },
+    {
+      "id": "ZANIK-017",
+      "slug": "abendburgbaude",
+      "nazev": "Abendburgbaude",
+      "nazvyHistoricke": [
+        "Gasthof Deutscher Kaiser",
+        "Gast- und Logierhaus Abendburg",
+        "Abendburgbaude",
+        "DW Polanka I"
+      ],
+      "zeme": "Polsko",
+      "oblastCast": "Biała Dolina, Szklarska Poręba",
+      "lat": null,
+      "lng": null,
+      "gpsPresnost": null,
+      "rokVzniku": "kolem 1880",
+      "rokZaniku": "konec 80. let 20. století",
+      "pricinaZaniku": "opuštění, chátrání a částečná demolice",
+      "coJeDnes": "částečné ruiny a zbytky stavby",
+      "patrnePozustatky": "ano",
+      "pristupnost": null,
+      "pristupnostPoznamka": "Objekt je veden v Białe Dolině u ulice Izerska 20; veřejná přístupnost pozůstatků nebyla potvrzena.",
+      "popis": "Budova vznikla přibližně kolem roku 1880 a postupně sloužila jako hostinec, ubytovací dům a schronisko Abendburgbaude. Po válce nesla jméno DW Polanka I, na konci osmdesátých let byla opuštěna a částečně odstraněna; regionální zdroje popisují dochované ruiny.",
+      "jistota": "A",
+      "zdroje": [
+        "https://fotopolska.eu/Dom_WYpoczynkowy_FWP_Polanka_I_Szklarska_Poreba",
+        "https://e-karkonosze.eu/turystyka/chatki-i-schroniska-turystyczne-w-karkonoszach-utracone-w-okresie-powojennym/"
+      ]
+    },
+    {
+      "id": "ZANIK-015",
+      "slug": "chatka-morgana",
+      "nazev": "Chatka Morgana",
+      "nazvyHistoricke": [
+        "Chatka Morgana",
+        "Morganka"
+      ],
+      "zeme": "Polsko",
+      "oblastCast": "svah Czarnej Kopy, Czarny Grzbiet",
+      "lat": null,
+      "lng": null,
+      "gpsPresnost": null,
+      "rokVzniku": null,
+      "rokZaniku": "1985",
+      "pricinaZaniku": "požár",
+      "coJeDnes": null,
+      "patrnePozustatky": null,
+      "pristupnost": "mimo cesty",
+      "pristupnostPoznamka": "Pamětnický popis uvádí odbočení ze značené trasy na málo zřetelnou pěšinu a přibližně 400 až 500 metrů chůze ke stavbě.",
+      "popis": "Dřevěná myslivecká chatka na svahu Czarnej Kopy umožňovala jednoduché přenocování. Na konci roku 1985 zcela vyhořela; přesné souřadnice a dnešní stav místa nejsou v použitých solidních zdrojích uvedeny.",
+      "jistota": "B",
+      "zdroje": [
+        "https://e-karkonosze.eu/turystyka/chatki-i-schroniska-turystyczne-w-karkonoszach-utracone-w-okresie-powojennym/",
+        "https://forum.sudety.it/viewtopic.php?p=1278"
+      ]
+    },
+    {
+      "id": "ZANIK-016",
+      "slug": "schron-u-snieznych-stawkow",
+      "nazev": "Schron u Śnieżnych Stawków",
+      "nazvyHistoricke": [],
+      "zeme": "Polsko",
+      "oblastCast": "okolí Śnieżnych Stawków a Suchej Góry",
+      "lat": null,
+      "lng": null,
+      "gpsPresnost": null,
+      "rokVzniku": "1935",
+      "rokZaniku": "60. léta 20. století",
+      "pricinaZaniku": null,
+      "coJeDnes": "objekt neexistuje; další stav místa neuveden",
+      "patrnePozustatky": null,
+      "pristupnost": null,
+      "pristupnostPoznamka": "Zdroj uvádí pouze polohu v blízkosti Śnieżnych Stawków a Suchej Góry; objekt nemá v použitém prameni uveden stabilní vlastní název.",
+      "popis": "Malý schron byl postaven roku 1935 a později sloužil jako výzkumná stanice Polské geografické společnosti. Z krajiny zmizel v šedesátých letech 20. století, avšak příčina zániku ani přesná poloha nejsou v použitém zdroji uvedeny.",
+      "jistota": "B",
+      "zdroje": [
+        "https://e-karkonosze.eu/turystyka/chatki-i-schroniska-turystyczne-w-karkonoszach-utracone-w-okresie-powojennym/"
+      ]
+    },
+    {
+      "id": "ZANIK-013",
+      "slug": "schronisko-im-bronislawa-czecha-na-polanie",
+      "nazev": "Schronisko im. Bronisława Czecha na Polanie",
+      "nazvyHistoricke": [
+        "Schlingelbaude",
+        "Baude am Haideschloß",
+        "Schronisko Izabela",
+        "Schronisko im. Bronisława Czecha",
+        "Schronisko Bronka Czecha"
+      ],
+      "zeme": "Polsko",
+      "oblastCast": "Polana, Równia pod Śnieżką",
+      "lat": 50.76518,
+      "lng": 15.70464,
+      "gpsPresnost": "přesná",
+      "rokVzniku": "1652",
+      "rokZaniku": "1966",
+      "pricinaZaniku": "požár po nešťastném zaprósení ohně",
+      "coJeDnes": "odpočinkové místo na původní podezdívce",
+      "patrnePozustatky": "ano",
+      "pristupnost": "na značené trase",
+      "pristupnostPoznamka": "Místo leží u modře značené cesty mezi Karpaczem Górnym a Strzechou Akademickou.",
+      "popis": "Objekt vyrostl z dávné budy, která byla roku 1652 upravena pro dělníky stavějící kapli na Sněžce, a později se rozvinul ve významné schronisko. Dne 11. prosince 1966 zcela vyhořel; na Polaně je dnes odpočinkové místo na někdejší podezdívce.",
+      "jistota": "A",
+      "zdroje": [
+        "https://mapcarta.com/W128889821",
+        "https://e-karkonosze.eu/arch/nieistniejace-schroniska-slaskich-karkonoszy/",
+        "https://kpnmab.pl/zabytki-w-karkonoszach",
+        "https://karpaczskiarena.pl/schronisko-bronka-czecha/"
+      ]
+    },
+    {
+      "id": "ZANIK-012",
+      "slug": "schronisko-im-ksiecia-henryka",
+      "nazev": "Schronisko im. Księcia Henryka",
+      "nazvyHistoricke": [
+        "Schronisko im. Księcia Henryka",
+        "Prinz-Heinrich-Baude",
+        "Bouda prince Jindřicha"
+      ],
+      "zeme": "Polsko",
+      "oblastCast": "Smogornia, hrana Kotła Wielkiego Stawu",
+      "lat": 50.755864,
+      "lng": 15.689724,
+      "gpsPresnost": "přesná",
+      "rokVzniku": "1889",
+      "rokZaniku": "1946",
+      "pricinaZaniku": "dva požáry v neobsazeném objektu",
+      "coJeDnes": "ruiny a zbytky základů",
+      "patrnePozustatky": "ano",
+      "pristupnost": "na značené trase",
+      "pristupnostPoznamka": "Ruiny leží u hlavní hřebenové trasy nad Wielkim Stawem; mapový zdroj uvádí průchod značených tras.",
+      "popis": "Riesengebirgsverein otevřel Prinz-Heinrich-Baude 8. června 1889 nad hranou Kotła Wielkiego Stawu. Po válce se pro neobsazený objekt nenašel správce a dva požáry v roce 1946 jej zcela zničily; dodnes jsou patrné základy.",
+      "jistota": "A",
+      "zdroje": [
+        "https://mapa-turystyczna.pl/node/ruiny-schroniska-im-ksiecia-henryka",
+        "https://e-karkonosze.eu/arch/nieistniejace-schroniska-slaskich-karkonoszy/",
+        "https://e-karkonosze.eu/turystyka/chatki-i-schroniska-turystyczne-w-karkonoszach-utracone-w-okresie-powojennym/",
+        "https://kpnmab.pl/zabytki-w-karkonoszach"
+      ]
+    },
+    {
+      "id": "ZANIK-014",
+      "slug": "schronisko-na-przeleczy-kowarskiej",
+      "nazev": "Schronisko Na Przełęczy Kowarskiej",
+      "nazvyHistoricke": [
+        "Schillerbaude am Landeshuter Paß",
+        "Gast- und Logierhaus Schillerbaude",
+        "Schronisko Szczytno",
+        "Schronisko Na Przełęczy Kowarskiej"
+      ],
+      "zeme": "Polsko",
+      "oblastCast": "Przełęcz Kowarska, Kowarski Grzbiet",
+      "lat": null,
+      "lng": null,
+      "gpsPresnost": null,
+      "rokVzniku": "konec 19. století",
+      "rokZaniku": "1973",
+      "pricinaZaniku": "demolice nařízená kvůli špatnému technickému stavu",
+      "coJeDnes": "parkoviště",
+      "patrnePozustatky": "ne",
+      "pristupnost": "na značené trase",
+      "pristupnostPoznamka": "Místo leží přímo v silničním sedle; přesná souřadnice původního půdorysu nebyla z použitých zdrojů převzata.",
+      "popis": "Původní Schillerbaude vznikla na konci 19. století jako hostinec a ubytovací dům v Przełęczy Kowarskiej. Po válce sloužila jako turistické schronisko, roku 1967 byla pro špatný technický stav uzavřena a v roce 1973 nařízeně rozebrána; na místě je parkoviště.",
+      "jistota": "A",
+      "zdroje": [
+        "https://fotopolska.eu/Kowary/b72033,Schronisko_Na_Przeleczy_Kowarskiej.html",
+        "https://odkrywca.pl/wszystkie-tajemnice-pustych-miejsc-przeleczy-kowarskiej/",
+        "https://fotokresy.pl/2397893,kowary-przelecz-kowarska-727-m-n-p-m,zdjecie.html"
+      ]
+    }
+  ]
+}

@@ -39,6 +39,7 @@ export async function GET(): Promise<Response> {
 
 - [Katalog chat](${BASE}/chaty): mapa a seznam chat s ověřenými daty (zatím Krkonoše).
 - [Razítkovník](${BASE}/razitkovnik): sbírka turistických razítek horských chat.
+- [Atlas zaniklých chat](${BASE}/zanikle): zaniklé boudy a schroniska Krkonoš — kdy a proč zanikly, co je na místě dnes.
 - [Výlety](${BASE}/vylety): připravované trasy a přechody mezi chatami.
 
 ## Vybrané chaty (Krkonoše)

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 import MapaChat from '@/components/MapaChat'
@@ -21,9 +22,13 @@ export default async function ChatyPage() {
         <h1 className="sg" style={{ fontSize: 34, fontWeight: 700, letterSpacing: '-.02em' }}>
           Katalog chat
         </h1>
-        <p style={{ color: 'var(--muted)', fontSize: 13.5, maxWidth: 540, margin: '4px 0 16px' }}>
+        <p style={{ color: 'var(--muted)', fontSize: 13.5, maxWidth: 540, margin: '4px 0 10px' }}>
           Připravujeme — katalog pohoří s ověřenými daty chat začne Krkonošemi. Na mapě už jsou
           chaty, které v průvodci mají profil.
+        </p>
+        <p style={{ fontSize: 13, margin: '0 0 16px' }}>
+          Zajímá tě i to, co už tu není? Projdi <Link href="/zanikle">Atlas zaniklých chat</Link> — boudy a
+          schroniska Krkonoš, která zanikla.
         </p>
       </section>
       <MapaChat chaty={chaty} />
