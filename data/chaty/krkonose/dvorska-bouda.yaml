@@ -70,13 +70,23 @@ overeniProvoz:
   checked: '2026-07-20'
 
 # ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1707  # Kudy z nudy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false); web boudy uvádí jen „od 20. let 20. století"
 milniky:
+  - rok: 1707  # Kudy z nudy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Doložen vznik na lokalitě; do druhé poloviny 19. století sloužila především k chovu dobytka
   - rok: 1920
     udalost: Bouda poskytuje ubytování „již od 20. let 20. století" (web neuvádí přesný rok)
+  - rok: 1945  # Kudy z nudy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Boudu do tohoto roku vlastnil rod Adolfů
 overeniHistorie:
-  source: https://www.dvorska-bouda.cz/ („ubytování již od 20. let 20. století")
+  source: >-
+    https://www.dvorska-bouda.cz/ („ubytování již od 20. let 20. století");
+    rok vzniku 1707, chov dobytka do 2. poloviny 19. století a vlastnictví rodu
+    Adolfů do roku 1945 ze zdrojového průzkumu 2026-07-22 — Kudy z nudy „Dvorská
+    bouda v Krkonoších" (sekundární médium, verified:false, ověřit primárním
+    pramenem)
   verified: false
-  checked: '2026-07-20'
+  checked: '2026-07-22'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
@@ -114,8 +124,10 @@ zdroje:
     url: https://www.dvorska-bouda.cz/
   - popis: OpenStreetMap (GPS objektu, ODbL)
     url: https://www.openstreetmap.org/way/23012222
+  - popis: 'Kudy z nudy — „Dvorská bouda v Krkonoších" (rok vzniku 1707, kapacita 115, chov dobytka, rod Adolfů do 1945); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.kudyznudy.cz/aktivity/dvorska-bouda-v-krkonosich
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/dvorska-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅).
   Areál: web původně popisoval i vztah k okolním objektům — při návštěvě ověřit, zda „Dvorská bouda" je jediný objekt (session 22 řešila obdobně u Dvoraček/Štumpovky).
   Hero fotka: vybrán vysoký sken Michala Klajbana (název souboru = Dvorská bouda), ale popis na Commons zmiňuje Cestu česko-polského přátelství — redakce potvrdí, že jde o budovu, jinak přepnout na File:Dvorská bouda.jpg.
-  Rok vzniku: web uvádí jen „od 20. let 20. století" — přesný rok dohledat.
+  Rok vzniku: web boudy uvádí jen „od 20. let 20. století"; zdrojový průzkum 2026-07-22 (Kudy z nudy) uvádí vznik 1707 (chov dobytka) — vetknuto DATA-12 jako verified:false, ověřit primárně (DATA-04).

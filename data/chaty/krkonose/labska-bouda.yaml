@@ -16,6 +16,9 @@ zajimavosti:
   - text: Současná budova pochází z roku 1975, historie místa sahá k roku 1830
     kategorie: stari
     zdroj: web chaty (labskabouda.cz)
+  - text: Současná bouda je devítipodlažní železobetonová stavba — recepce a hlavní vstup jsou nahoře a výtahy sjíždějí do nižších pater
+    kategorie: jine
+    zdroj: Seznam Zprávy „Labská bouda — z popela vyrostl betonový kolos" — zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
 
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS z OSM (ODbL); výška, adresa a poloha z webu boudy.
@@ -79,14 +82,25 @@ rokVzniku: 1975 # současná stavba; historie místa od roku 1830
 milniky:
   - rok: 1830
     udalost: Na místě prodává žena „kozí výrobky a kořalku" — počátek pohostinství
+  - rok: 1904  # Krkonose.eu, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: V okolí boudy vyhlášena první přírodní rezervace v Krkonoších
+  - rok: 1913  # Krkonose.eu, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Po tragickém závodě sem byl dopraven lyžař Bohumil Hanč, který na Labské boudě zemřel
   - rok: 1965
     udalost: Původní hostinec (dřevěná bouda) vyhořel
   - rok: 1975
     udalost: Postavena současná stavba Labské boudy
+  - rok: 2012  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Vlastníkem boudy se podle článku stala společnost Salvario Holdings
 overeniHistorie:
-  source: https://www.labskabouda.cz/ (historie — 1830 počátek, požár 1965, stavba 1975)
+  source: >-
+    https://www.labskabouda.cz/ (1830 počátek, požár 1965, stavba 1975);
+    milníky 1904 (první přírodní rezervace) a 1913 (úmrtí lyžaře Bohumila Hanče)
+    ze zdrojového průzkumu 2026-07-22 — Krkonose.eu; milník 2012 (Salvario
+    Holdings) — Seznam Zprávy „…betonový kolos" (sekundární média,
+    verified:false, před publikací ověřit primárním pramenem)
   verified: false
-  checked: '2026-07-20'
+  checked: '2026-07-22'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
@@ -127,6 +141,10 @@ zdroje:
     url: https://www.labskabouda.cz/
   - popis: OpenStreetMap (GPS objektu, ODbL)
     url: https://www.openstreetmap.org/way/27594762
+  - popis: 'Krkonose.eu — profil Labská bouda (první přírodní rezervace 1904, Bohumil Hanč 1913, meteostanice a observatoř ČHMÚ); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.krkonose.eu/labska-bouda-0
+  - popis: 'Seznam Zprávy — „Z popela vyrostl betonový kolos" (devítipodlažní stavba, změna vlastníka 2012); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.seznamzpravy.cz/clanek/magazin-cestovani-labska-bouda-historie-281928
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/labska-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅).
   Typ: web se prezentuje jako „Hotel Labská bouda"; zapsáno jako obsluhovaná chata dle taxonomie plánu — stejný přístup jako u Luční boudy (zvážit „horský hotel v roli chaty", rozhodne Michal en bloc pro velké hřebenové boudy).

@@ -18,10 +18,18 @@ rokVzniku: 1670
 milniky:
   - rok: 1670
     udalost: "doložena původní buda správce Malého Stawu"
+  - rok: 1934  # Krkonose.eu, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Poslední významné rozšíření, které dotvořilo dnešní podobu schroniska
 overeniHistorie:
-  source: "rok vzniku: https://kpn.gov.pl/zabytki-w-karkonoszach (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · milníky: https://schroniskosamotnia.com/historia/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)"
+  source: >-
+    rok vzniku: https://kpn.gov.pl/zabytki-w-karkonoszach (doplňková fakta
+    2026-07-21, katalog ChatGPT, verified:false) · milník 1670:
+    https://schroniskosamotnia.com/historia/ (doplňková fakta 2026-07-21,
+    katalog ChatGPT, verified:false) · milník 1934 (poslední rozšíření) ze
+    zdrojového průzkumu 2026-07-22 — Krkonose.eu „Polské Krkonoše" (sekundární
+    médium, verified:false, před publikací ověřit primárním pramenem)
   verified: false
-  checked: "2026-07-21"
+  checked: "2026-07-22"
 kapacita: 49  # kapacita lůžek: https://schroniskosamotnia.com/oferta/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
 zajimavosti:
   - text: "Provozovatel ji označuje za jedno z nejstarších horských útočišť v Polsku."
@@ -115,6 +123,8 @@ zdroje:
     url: http://www.samotnia.com.pl/
   - popis: Bryła.pl — titulek o změně nájemce po 60+ letech (neotevřeno)
     url: https://www.bryla.pl/samotnia-jedno-z-najstarszych-schronisk-w-polsce-po-ponad-60-latach-bedzie-nowy-dzierzawca
+  - popis: 'Krkonose.eu — „Polské Krkonoše" (první zmínka 1670, rozšíření 1934, výška, telefon, e-mail); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.krkonose.eu/en/node/2542
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/schronisko-samotnia.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
   DATA-04 PRIORITA: změna nájemce (bryla.pl titulek) — ověřit provoz, kontakty a který web platí (samotnia.com.pl z OSM vs. schroniskosamotnia.com z výsledků; druhý má i podstránku /historia/).

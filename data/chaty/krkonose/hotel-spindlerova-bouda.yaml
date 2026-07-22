@@ -38,8 +38,10 @@ overeniLokace:
   checked: '2026-07-21'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# Web uvádí 5 kategorií pokojů; celkovou kapacitu (počet lůžek) neuvádí.
+# Web hotelu uvádí 5 kategorií pokojů, celkovou kapacitu (počet lůžek) neuvádí;
+# 153 lůžek doplněno ze zdrojového průzkumu (Krkonose.eu) — verified:false.
 nocleh: ano
+kapacita: 153  # Krkonose.eu, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false); web hotelu kapacitu neuvádí
 pokoje:
   - typ: Economy
   - typ: Standard
@@ -85,10 +87,23 @@ overeniProvoz:
 milniky:
   - rok: 1784
     udalost: Tradice hotelu se datuje od roku 1784
+  - rok: 1824  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Franz Spindler vybudoval na lokalitě boudu
+  - rok: 1826  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Bouda vyhořela a byla znovu postavena
+  - rok: 1855  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Boudu převzal Johann Hollmann a rozvinul ji jako horský hotel
+  - rok: 2005  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Požár zasáhl přístavbu, nikoli hlavní historickou budovu
 overeniHistorie:
-  source: https://www.spindlerovabouda.cz/ („Tradice od roku 1784"; načteno 21. 7. 2026)
+  source: >-
+    https://www.spindlerovabouda.cz/ („Tradice od roku 1784"; načteno
+    21. 7. 2026); milníky 1824 (Franz Spindler), 1826 (požár), 1855 (Johann
+    Hollmann) a 2005 (požár přístavby) ze zdrojového průzkumu 2026-07-22 —
+    Seznam Zprávy „Legendární Špindlerovka" (sekundární médium, verified:false,
+    před publikací ověřit primárním pramenem)
   verified: false
-  checked: '2026-07-21'
+  checked: '2026-07-22'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
@@ -119,6 +134,10 @@ zdroje:
     url: https://www.spindlerovabouda.cz/
   - popis: OpenStreetMap (GPS objektu; ODbL)
     url: https://www.openstreetmap.org/way/20897239
+  - popis: 'Krkonose.eu — profil Hotel Špindlerova bouda (kapacita 153 lůžek, výška, telefon); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.krkonose.eu/hotel-spindlerova-bouda-0
+  - popis: 'Seznam Zprávy — „Legendární Špindlerovka je dnes moderní hotel" (Franz Spindler 1824, požáry 1826 a 2005, Johann Hollmann 1855); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.seznamzpravy.cz/clanek/magazin-cestovani-spindlerova-bouda-historie-283478
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/hotel-spindlerova-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a rozhodnutí Michala (chat 20. 7. 2026: hraniční hotely zařadit všechny, typ horsky-hotel).
   Data dotažena z webu spindlerovabouda.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: false (ubytování 5 kategorií, wellness, kontakty, historie 1784). verified: false zůstává u: GPS (z OSM, neověřeno v terénu — ale adresa a výška z webu potvrzeny) a dostupnost restaurace pro veřejnost (web ji výslovně neuvádí).

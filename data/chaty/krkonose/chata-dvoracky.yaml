@@ -19,6 +19,9 @@ zajimavosti:
   - text: Otevřeno 363 dní v roce, s vyhlášenou restaurací a vlastní pekárnou
     kategorie: gastro
     zdroj: web chaty (dvoracky.cz)
+  - text: Podle článku se Dvoračky pojí s borůvkovými knedlíky a domácími pečenými houskami
+    kategorie: gastro
+    zdroj: Seznam Zprávy „Krkonošské Dvoračky…" — zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
 
 aliasy:
   - nazev: Horská bouda Dvoračky
@@ -68,6 +71,26 @@ overeniProvoz:
   verified: false
   checked: '2026-07-20'
 
+# ── Historie ──────────────────────────────────────────────────────────────
+# Celá sekce vetknuta DATA-12 ze zdrojového průzkumu 2026-07-22 (Seznam Zprávy);
+# web areálu historii v načtené podobě neuváděl. Vše verified:false.
+rokVzniku: 1688  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false); první písemná zmínka
+milniky:
+  - rok: 1688  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: První písemná zmínka — letní boudy pro zhruba 50 krav a 80 koz
+  - rok: 1945  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Po druhé světové válce vrácena Elle Půhonné, později znárodněna
+  - rok: 1990  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Od počátku 90. let 20. století provozuje boudu rodina Starých
+overeniHistorie:
+  source: >-
+    zdrojový průzkum 2026-07-22 — Seznam Zprávy „Krkonošské Dvoračky: v historii
+    ubytovávaly Beneše, nyní jsou rájem pečených housek" (první zmínka 1688,
+    Ella Půhonná a znárodnění po válce, rodina Starých od 90. let); sekundární
+    médium, verified:false, před publikací ověřit primárním pramenem
+  verified: false
+  checked: '2026-07-22'
+
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Horská bouda ve výšce 1 140 m n. m. nad Rokytnicí nad Jizerou v západních
@@ -105,6 +128,8 @@ zdroje:
     url: https://www.dvoracky.cz/
   - popis: OpenStreetMap (GPS objektu, ODbL)
     url: https://www.openstreetmap.org/way/252520174
+  - popis: 'Seznam Zprávy — „Krkonošské Dvoračky: v historii ubytovávaly Beneše…" (první zmínka 1688, Ella Půhonná, rodina Starých, borůvkové knedlíky); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.seznamzpravy.cz/clanek/magazin-cestovani-bouda-dvoracky-stumpovka-283330
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/chata-dvoracky.yaml (DATA-01) po křížovém ověření DATA-03 (session 22, web načten 20. 7. 2026) a rozhodnutí Michala (✅ en bloc, chat 20. 7. 2026; trojice „přednostně" potvrzena 21. 7. 2026).
   Povýšení provedla bezobslužná session 33 (21. 7.) z už doložených zápisů — WebFetch bezobslužně nefunguje, web znovu nečten.

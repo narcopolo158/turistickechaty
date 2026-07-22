@@ -11,7 +11,7 @@ stav: v-provozu # sezónní provoz, viz sezona
 oblast: krkonose
 
 # ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
-kapacita: 43  # kapacita lůžek: https://voseckabouda.cz/ubytovani/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
+kapacita: 43  # kapacita lůžek: https://voseckabouda.cz/ubytovani/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false); zdrojový průzkum 2026-07-22 hlásí rozpor: Seznam Zprávy 43, Krkonose.eu 42 — prověřit (DATA-04)
 zajimavosti:
   - text: Nikdy nevyhořela a není napojená na elektrickou síť — energii vyrábí dieselagregát
     kategorie: jine
@@ -19,6 +19,16 @@ zajimavosti:
   - text: Turistům slouží od roku 1896 (původně seník z doby před rokem 1743, dnešní podoba po 2. světové válce)
     kategorie: stari
     zdroj: web chaty (voseckabouda.cz)
+  - text: Připravovaná fotovoltaika má mít výkon 12,74 kWp a bateriové úložiště 70,4 kWh; projekt počítá s roční úsporou zhruba 11,5 t CO₂ (údaj je projektový předpoklad před vyhodnocením zkušebního provozu)
+    kategorie: jine
+    zdroj: Časopis Turista „Vosecká bouda — nekonečná energie v Krkonoších" — zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+
+# Historické názvy (Krkonose.eu, zdrojový průzkum 2026-07-22, verified:false)
+aliasy:
+  - nazev: Česká nová
+    poznamka: historický název (Krkonose.eu, zdrojový průzkum 2026-07-22, sekundární médium, verified:false)
+  - nazev: Františkánská
+    poznamka: historický název (Krkonose.eu, zdrojový průzkum 2026-07-22, sekundární médium, verified:false)
 
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS z OSM (ODbL); výška a poloha z webu boudy.
@@ -71,10 +81,17 @@ milniky:
     udalost: Založena (před rokem 1743) jako seník
   - rok: 1896
     udalost: Od tohoto roku slouží turistům
+  - rok: 1900  # Krkonose.eu, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Přestavěna a rozšířena; současný ráz získala po druhé světové válce
 overeniHistorie:
-  source: https://voseckabouda.cz/ (založena před 1743 jako seník, od 1896 slouží turistům, současná podoba po 2. světové válce, nikdy nevyhořela)
+  source: >-
+    https://voseckabouda.cz/ (založena před 1743 jako seník, od 1896 slouží
+    turistům, současná podoba po 2. světové válce, nikdy nevyhořela); milník
+    1900 (přestavba a rozšíření) a historické názvy Česká nová / Františkánská
+    ze zdrojového průzkumu 2026-07-22 — Krkonose.eu (sekundární médium,
+    verified:false, před publikací ověřit primárním pramenem)
   verified: false
-  checked: '2026-07-20'
+  checked: '2026-07-22'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
@@ -111,8 +128,15 @@ zdroje:
     url: https://voseckabouda.cz/
   - popis: OpenStreetMap (GPS objektu, ODbL)
     url: https://www.openstreetmap.org/node/2337855811
+  - popis: 'Krkonose.eu — profil Vosecká bouda (historické názvy, milníky 1896/1900, kapacita 42); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.krkonose.eu/vosecka-bouda
+  - popis: 'Časopis Turista — „Vosecká bouda: Nekonečná energie v Krkonoších" (přechod z dieselagregátu na fotovoltaiku); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://casopisturista.cz/vosecka-bouda-nekonecna-energie-v-krkonosich-vosecka-bouda-meni-dieselagregat-za-fotovoltaiku-s-bateriovym-ulozistem/
+  - popis: 'Seznam Zprávy — historie Vosecké boudy (bez elektřiny, hospodáři, kapacita 43); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.seznamzpravy.cz/clanek/magazin-cestovani-vosecka-bouda-historie-283327
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/vosecka-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅). KČT ji řadí mezi „12 nejlepších horských chat v Krkonoších".
   Občerstvení: web gastronomii pro veřejnost výslovně nepopisuje — kuchyne proto NEvyplněno (nedomýšlet). Doložit při telefonickém ověření (DATA-04).
-  Kapacita lůžek a ceny: na webu neuvedeny — nezapsáno.
+  Kapacita lůžek: zapsáno 43 (voseckabouda.cz/ubytovani, DATA-09); zdrojový průzkum 2026-07-22 hlásí rozpor — Seznam Zprávy 43, Krkonose.eu 42. Prověřit primárně (DATA-04). Ceny na webu neuvedeny.
   Sezónnost je i údaj pro DATA-04 (aktualizovat rok co rok).
+  Vetkáno DATA-12 (zdrojový průzkum 2026-07-22): milník 1900, historické názvy Česká nová/Františkánská, fotovoltaika (projektový předpoklad). Vše verified:false.

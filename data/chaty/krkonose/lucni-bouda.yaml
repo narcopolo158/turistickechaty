@@ -127,6 +127,10 @@ milniky:
     udalost: Letopočet vytesaný na základním kameni (objeven při rekonstrukci 1869); bouda podle provozovatele stála už v 2. polovině 16. století
   - rok: 1625
     udalost: Bouda po požáru přestavěna
+  - rok: 1707  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: První písemný doklad — kupní smlouvou z roku 1707 boudu získal Christoph Erben
+  - rok: 1772  # Seznam Zprávy, zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+    udalost: Boudu získala rodina Rennerů a spravovala ji zhruba sto let; hospodařili a vyráběli mj. mléčné a bylinné sýry
   - rok: 1809
     udalost: U boudy postaven tzv. letní dům
   - rok: 1857
@@ -140,9 +144,15 @@ milniky:
   - rok: 2004
     udalost: Zdevastovanou boudu koupila společnost AEZZ a postupně ji obnovila
 overeniHistorie:
-  source: https://www.lucnibouda.cz/cs/historie/
+  source: >-
+    https://www.lucnibouda.cz/cs/historie/ (základ časové osy);
+    milníky 1707 (kupní smlouva, Christoph Erben) a 1772 (rodina Rennerů) a
+    zajímavosti (válečný projekt s tunelem pro řeku, plachtařská škola Eugena
+    Bönsche) ze zdrojového průzkumu 2026-07-22 — Seznam Zprávy „Historie Luční
+    boudy" (sekundární médium, verified:false, před publikací ověřit primárním
+    pramenem)
   verified: false
-  checked: '2026-07-19'
+  checked: '2026-07-22'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 zajimavosti:
@@ -155,6 +165,12 @@ zajimavosti:
   - text: Pivo Paroháč z vlastního pivovaru — nejvýše položeného v Čechách dle provozovatele
     kategorie: gastro
     zdroj: provozovatel (lucnibouda.cz)
+  - text: Velkorysý válečný projekt počítal mimo jiné s tunelem pro tok řeky; realizován byl jen zčásti
+    kategorie: jine
+    zdroj: Seznam Zprávy „Historie Luční boudy" — zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
+  - text: Letec Eugen Bönsch tu provozoval plachtařskou školu; článek mu připisuje klouzavý let ze Studniční hory přes dvě a půl hodiny
+    kategorie: jine
+    zdroj: Seznam Zprávy „Historie Luční boudy" — zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
 perex: >-
   Podle provozovatele největší a nejstarší bouda Krkonoš, ve výšce 1 410 m
   nad Pecí pod Sněžkou. Celoročně otevřený bufet, restaurace, nocleh od
@@ -202,6 +218,8 @@ zdroje:
     url: https://www.lucnibouda.cz/
   - popis: ČeskéNoviny.cz 9. 8. 2025 — návrat do běžného provozu (bufet a toalety pro veřejnost)
     url: https://www.ceskenoviny.cz/zpravy/lucni-bouda-se-vraci-do-bezneho-provozu-pristupny-je-opet-bufet-a-toalety/2707109
+  - popis: 'Seznam Zprávy — Historie Luční boudy (kupní smlouva 1707, rodina Rennerů, válečný projekt s tunelem, plachtařská škola E. Bönsche); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
+    url: https://www.seznamzpravy.cz/clanek/magazin-historie-historie-lucni-boudy-278325
 interniPoznamky: |-
   Typ: web se prezentuje jako „Hotel Luční bouda"; zapsáno jako obsluhovaná chata dle taxonomie plánu (zvážit typ „horský hotel v roli chaty" — rozhodne Michal).
   Kapacita lůžek: na webu boudy neuvedena — nezapsáno (žádné „≈ 90 lůžek" z prototypu, to byl demo údaj).
