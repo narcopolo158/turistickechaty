@@ -11,6 +11,7 @@ import TiskButton from '@/components/TiskButton'
 import { TRAIL_COLORS, TrailBlaze } from '@/components/ui'
 import VyskovyProfil, { type BodProfilu } from '@/components/VyskovyProfil'
 import { pristupyChaty } from '@/lib/pristupove-trasy'
+import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import {
   chataPath,
   formatCas,
@@ -168,6 +169,8 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
   const pristupy = pristupyChaty(chata.slug)
   /** První přístup s doloženým výškovým profilem (≥ 2 body) — pro křivku. */
   const pristupSProfilem = pristupy.find((p) => Array.isArray(p.vyskovyProfil) && p.vyskovyProfil.length >= 2)
+  // Sběratelská místa (DATA-10): turistické známky a vizitky u chaty — číslo + odkaz.
+  const znamkyVizitky = znamkyVizitkyChaty(chata.slug)
   /** První trasa s doloženým výškovým profilem (≥ 2 body [km, výška]). */
   const trasaSProfilem = trasy.find(
     (t) =>
@@ -205,6 +208,7 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
   if (trasy.length) kotvy.push({ id: 'p-trasy', label: `0${kotvy.length + 1} Trasy` })
   if (pristupy.length) kotvy.push({ id: 'p-pristup', label: `0${kotvy.length + 1} Odkud vyjít` })
   if (razitko) kotvy.push({ id: 'p-razitko', label: `0${kotvy.length + 1} Razítko` })
+  if (znamkyVizitky.length) kotvy.push({ id: 'p-sberatelska', label: `0${kotvy.length + 1} Sběratelská místa` })
   if (sousede.length) kotvy.push({ id: 'p-sousede', label: `0${kotvy.length + 1} Sousedé` })
   if (maHistorii) kotvy.push({ id: 'p-historie', label: `0${kotvy.length + 1} Historie` })
 
@@ -485,6 +489,33 @@ export default async function ProfilChaty(props: { params: Promise<Params> }) {
                   )}
                 </div>
               </RazitkoMoment>
+            </div>
+          </div>
+        )}
+
+        {znamkyVizitky.length > 0 && (
+          <div className="card" id="p-sberatelska" style={{ overflow: 'hidden' }}>
+            <div className="lista" style={{ borderRadius: 0, margin: 0 }}>
+              <span className="n">{cisloSekce()}</span>
+              <b>Sběratelská místa</b>
+            </div>
+            <div className="bx">
+              {znamkyVizitky.map((p, i) => (
+                <div
+                  key={i}
+                  style={{ padding: '7px 0', borderBottom: i === znamkyVizitky.length - 1 ? undefined : '1px solid var(--line)' }}
+                >
+                  <a href={p.url} target="_blank" rel="noopener noreferrer nofollow" style={{ fontWeight: 600, fontSize: 12.5 }}>
+                    {p.system === 'znamka' ? `Turistická známka č. ${p.cislo}` : `Turistická vizitka ${p.cislo}`} ↗
+                  </a>
+                  {p.stav && (
+                    <div style={{ fontSize: 10.5, color: 'var(--muted)', marginTop: 2 }}>{p.stav}</div>
+                  )}
+                </div>
+              ))}
+              <p className="mn" style={{ fontSize: 9.5, color: 'var(--muted)', marginTop: 9 }}>
+                Zdroj: oficiální seznamy vydavatelů (turisticke-znamky.cz, wander-book.com); zatím neověřeno redakcí.
+              </p>
             </div>
           </div>
         )}
