@@ -151,13 +151,48 @@ upraví. Řazeno dle dopadu.
 - **Doporučení:** rozhodnout v rámci navigace (sekundární — „Objevovat/Historie",
   ne hlavní katalog; zaniklé nejsou cíl výletu).
 
+### B15. Skládaná turistická mapa — kolik „papíru" nad mapou? ⭐ podpisový prvek
+- **Kontext:** mapa jako **fyzická skládaná turistická mapa** (koncept §12) — linie
+  skladu, rozložení (unfold), papírová vrstva nad živými dlaždicemi. Explicitní
+  vstup Michala 22. 7.
+- **Doporučení:** ANO jako podpisový prvek, ale **mapa je funkční nástroj** —
+  sklady/papír whisper úroveň, jen okraje + linie skladu, nesmí bránit ovládání.
+  Unfold jednorázově, `reduced-motion` statické. **Čitelnost otestovat na mobilu
+  hned v spiku** (spolu s B12). Použít na přehledové mapě katalogu i na mapě v profilu.
+
+---
+
+## Část C — Wow na každé stránce (per-page rozpad)
+
+Explicitní vstup Michala 22. 7.: **design maximálně wow po VŠECH stránkách**, ne jen
+profil. „Zápisník" = designový jazyk na každé stránce, každá má podpisový moment
+(koncept §13). Rozpad pro session:
+
+| Stránka | Máme dnes | Podpisový moment | Poznámka |
+|---|---|---|---|
+| **Domů / katalog** | HutCard, SectionBar, MapaChat | „obsah deníku" — hrdinný index chat | drží skenovatelnost |
+| **Mapa** | MapaChat / MapaTrasy (Leaflet + Mapy.com) | **skládaná turistická mapa** (B15) | funkčnost > efekt |
+| **Profil chaty** | plný profil (16 sekcí) | list z deníku + sběratelský pruh | jádro; dvoustrana (B4) |
+| **Sbírka / razítkovník** | RazitkovnikClient | albová vitrína, ghost sloty | emoční vrchol; plně Fáze 4 |
+| **Zaniklé** `/zanikle` | atlas, night lišty | archivní „za tmy" rozklad | závislé na pohlednicích (placeholder) |
+| **Výlety** `/vylety` | stránka výletů | itinerář / mountované schéma trasy | — |
+| **Detaily** | 404, tisk, footer | i drobnost nese rukopis | print stylesheet (B13) |
+
+**Disciplína (drží B3 + koncept §8):** wow = **jednotný prémiový systém + 1
+podpisový moment na stránku**, ne dekorace všude. Funkční data zůstávají ostrá
+(filtr I/A/V). Tím se „precizní grafik" liší od přeplácané stránky — **laťka stejná
+i tam, kde se šetří**. To nejtěžší: udržet wow konzistentně na 7 stránkách.
+
 ---
 
 ## Priorita pro session (návrh pořadí)
 
-1. **Nejdřív spike (B12)** — ověřit, že faux-3D technika je na mobilu únosná.
+1. **Nejdřív spike (B12 + B15)** — faux-3D objekty **i skládaná mapa** na mobilu
+   (únosnost výkonu + čitelnost mapy pod papírem).
 2. **Řídící principy (B2, B3, B5)** — vrstvy, restraint, stav ověření.
 3. **Typo A/B (B1)** na profilu A + E.
 4. **Dvoustrana (B4)** na A + E, pak C (přeshraniční) a D (zaniklá).
 5. **Sběratelské objekty (B8)** z reálného razítka + placeholder známka/vizitka.
-6. Zbytek (dark, print, per-pohoří, pohlednice) dle času.
+6. **Wow-pass po stránkách (část C)** — každé stránce její podpisový moment nad
+   jednotným systémem.
+7. Zbytek (dark, print, per-pohoří, pohlednice) dle času.

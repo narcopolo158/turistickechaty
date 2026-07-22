@@ -200,3 +200,51 @@ Následující body přišly z druhé iterace a jsou dost silné, aby řídily c
   současné řešení** — stojí za A/B v session (v2.2 je grotesk-only). Rozhodnutí typu.
 - **Rukopisný font jen pro osobní poznámky a popisky polaroidů** — nikdy pro
   navigaci a hlavní obsah (na tom se oba materiály shodují — držet).
+
+---
+
+## 12. Skládaná turistická mapa — podpisový prvek (Michalův vstup 22. 7.)
+
+Mapa **není jen Leaflet panel** — je to **fyzická skládaná turistická mapa**,
+klasický artefakt turisty (Kompass / Freytag-Berndt / papírová KČT mapa). Přesně
+ten hmatatelný objekt, který drží celou metaforu „zápisník + sběratel".
+
+- **Sklady (fold creases):** jemná mřížka přehybů jako u reálné papírové mapy —
+  vlasové světlo/stín podél linií skladu, mírně tmavší rýhy, ohmatané rohy. Nikdy
+  křiklavé, **whisper úroveň**.
+- **Rozložení (unfold reveal):** při otevření jednorázová animace „rozložení"
+  (CSS `transform`/`perspective`), pak mapa leží rozložená; při sbalení se „složí".
+  `prefers-reduced-motion` → rovnou statická rozložená mapa.
+- **Papír nad dlaždicemi:** živé dlaždice Mapy.com „outdoor" (barevné KČT značky
+  1:1 s naším pruhem) leží **POD** dekorativní papírovou/přehybovou vrstvou, která
+  je jen na okrajích a v liniích skladu — **nesmí bránit čtení ani ovládání mapy**.
+  KČT barvy naší palety = barvy reálné papírové mapy → přirozený soulad.
+- **Mobil:** jemnější sklady / částečné rozložení; ovládání mapy má vždy přednost.
+- **Technika:** CSS gradienty pro linie skladu, `feTurbulence` pro papírové zrno,
+  `transform` pro rozložení — **nulová váha assetů, žádný WebGL** (stejná disciplína
+  jako 3 sběratelské objekty, §2).
+- **Mantinel (drží §8):** mapa je funkční nástroj → papírová úprava je **rám a
+  odhalení**, ne nic, co zhorší čitelnost. Filtry mapy jako papírové záložky (§11)
+  na to přímo navazují. Použít i na přehledové mapě katalogu i na mapě v profilu.
+
+## 13. Wow na každé stránce, ne jen na profilu (Michalův vstup 22. 7.)
+
+Cíl: **maximální wow po CELÉM webu.** „Zápisník" není jen šablona profilu — je to
+**designový jazyk na každé stránce**; každá stránka = jeden „list/rozklad" v deníku
+se svým **podpisovým momentem**:
+
+- **Domů / katalog** = otevření deníku / obsah (contents page) — hrdinný vstup, index chat.
+- **Mapa** = skládaná turistická mapa (§12) — podpisová stránka.
+- **Profil chaty** = list z deníku (§5) — jádro.
+- **Sbírka / razítkovník** = albový rozklad / vitrína (§6) — emoční vrchol.
+- **Zaniklé (`/zanikle`)** = archivní / „za tmy" rozklad (night lišty už máme) — dobové pohlednice.
+- **Výlety** = itinerář / schéma trasy (mountované).
+- **Detaily:** 404, tisková verze, e-maily/pas — i drobnosti nesou stejný rukopis.
+
+**Disciplína, která z toho dělá „wow" a ne kýč** (držet, ať se koncept nerozpadne):
+wow = **jednotný prémiový systém + jeden podpisový moment na stránku**, ne faux-3D
+všude. Funkční data zůstávají editorialně ostrá (filtr I/A/V §11; restraint §8).
+Přesně tím se „precizní grafik" liší od přeplácané stránky — každá stránka je
+vypiplaná ke stejné laťce, ale hmatatelnost se **šetří pro artefakty a hero**.
+„Maximálně wow" tedy = **maximální řemeslo a konzistence na každé stránce**, ne
+maximální dekorace. (To je zároveň to nejtěžší — udržet laťku i tam, kde se šetří.)

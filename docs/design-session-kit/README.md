@@ -56,6 +56,12 @@ Tohle už rozhodl Michal — design nad tím kreslí, neotvírá to znovu:
    zaplavit funkční data.
 6. **Rukopisný font** jen popisky polaroidů / osobní marginálie — nikdy navigace
    ani hlavní obsah.
+7. **Wow na každé stránce** (Michal 22. 7.) — „zápisník" je designový jazyk na
+   CELÉM webu, ne jen na profilu; **každá stránka má podpisový moment** (koncept
+   §13, doc 03 část C). Podpis mapy = **skládaná turistická mapa** — sklady,
+   rozložení (unfold), papírová vrstva nad živými dlaždicemi (koncept §12, rozhodnutí
+   B15). „Wow" = **řemeslo a konzistence** na každé stránce, ne dekorace všude
+   (funkční data zůstávají ostrá — to je ta disciplína, co dělá prémii, ne kýč).
 
 ## Jeden fakt, který řídí všechno ostatní
 
@@ -88,8 +94,9 @@ které přijmou reálný artwork bez přepisu layoutu.**
 
 ## Jak session začít (návrh prvních kroků)
 
-1. **Spike + měření (B12):** ověřit, že SVG-filter faux-3D + parallax je na mobilu
-   únosné (LCP/paint). Bez tohohle se nekreslí zbytek — technika musí sednout.
+1. **Spike + měření (B12 + B15):** ověřit, že SVG-filter faux-3D + parallax **a
+   skládaná mapa** jsou na mobilu únosné (LCP/paint) a že papír nad mapou nezhorší
+   čitelnost. Bez tohohle se nekreslí zbytek — technika musí sednout.
 2. **Potvrdit řídící principy** (B2 vrstvy, B3 restraint, B5 stav ověření).
 3. **Typo A/B (B1):** serif pro názvy/historii vs. grotesk-only — na Luční + Lovecké.
 4. **Dvoustrana (B4)** na Luční (nejhustší) a Lovecké (nejřidší), pak Samotnia + Obří.
