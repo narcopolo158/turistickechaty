@@ -25,15 +25,18 @@ neexistence).
   (jednatel) — e-mailem 22. 7. 2026 („v principu se zobrazováním Turistických
   známek u jednotlivých chat souhlasím") a **výslovně telefonicky 22. 7. 2026**
   (Michal volal, souhlas s uveřejněním obrázků potvrzen). Podmínka jednatele:
-  dát vědět, až web pojede. → Obrázky známek **smíme zobrazit**; k doplnění chybí
-  jen samotné soubory (viz níže) + notifikace vydavatele po spuštění.
+  dát vědět, až web pojede. → Obrázky známek **smíme zobrazit**.
+  **Souhlas kryje obě domény vydavatele** — `turisticke-znamky.cz` i polskou
+  `znaczki-turystyczne.pl` (tatáž firma Turistické známky s.r.o.; potvrdil Michal),
+  takže i známka Samotnie (polský systém) je pokrytá.
 - **SVOLENÍ — Wander Book (vizitky):** ⏳ zatím bez odpovědi → vizitky drží
-  placeholder faux-3D, dokud svolení nedorazí.
-- **Doplnění obrázků známek (TODO):** získat oficiální soubory — přednostně přímo
-  od Mgr. Holuba (nejlepší kvalita a nejčistší provenience; je vstřícný), případně
-  z detailů na turisticke-znamky.cz. Uložit jako Fotky se „se-svolením" atribucí
-  (zdroj: Turistické známky s.r.o., souhlas 22. 7. 2026) a napojit do slotu známky
-  na profilu (faux-3D layout je připraven přijmout artwork bez změny).
+  placeholder faux-3D, dokud svolení nedorazí (Michal je osloví znovu).
+- **Doplnění obrázků známek (HOTOVO — DATA-13):** `scripts/data13-znamky-obrazky.ts`
+  stáhne obrázky z detailů (og:image…) do `public/znamky/<slug>.<ext>` + manifest
+  `obrazky.json` s atribucí „se svolením". Filtr: jen `system=znamka` a jen domény
+  Turistické známky s.r.o. (obě výše); vizitky se nestahují. Běží v GitHub Action
+  `DATA-13: obrázky známek` (sandbox na web nedosáhne). Profil (`ProfilZapisnik`)
+  ukáže reálný obrázek v dřevěném disku, když je v manifestu; jinak placeholder.
 
 ## Pokrytí
 13 z 23 publikovaných chat má známku a/nebo vizitku (vše jistota A). Zbytek

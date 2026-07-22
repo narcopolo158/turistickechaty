@@ -1,9 +1,9 @@
 # DATA-13: stažení obrázků turistických známek (se svolením vydavatele).
 #
-# Poctivost/svolení: stahují se JEN obrázky známek z turisticke-znamky.cz —
-# Mgr. David Holub (Turistické známky s.r.o.) dal souhlas s uveřejněním
-# (e-mail + telefonicky 22. 7. 2026). Vizitky (Wander Book) ani polský systém
-# (znaczki-turystyczne.pl) se NEstahují — jiní vydavatelé, bez svolení.
+# Poctivost/svolení: stahují se JEN obrázky známek z domén Turistické známky
+# s.r.o. — turisticke-znamky.cz i polská znaczki-turystyczne.pl (týž vydavatel).
+# Mgr. David Holub dal souhlas s uveřejněním (e-mail + telefonicky 22. 7. 2026).
+# Vizitky (Wander Book) se NEstahují — jiný vydavatel, bez svolení.
 #
 # Sandbox denních sessions na turisticke-znamky.cz nedosáhne (proxy), GitHub
 # Actions ano. Spouští se ručně (Actions → „DATA-13: obrázky známek" → Run).
@@ -51,6 +51,6 @@ jobs:
             exit 0
           fi
           git commit -m 'data: obrázky turistických známek (se svolením, z Actions)' \
-            -m 'Zdroj: turisticke-znamky.cz — souhlas Mgr. David Holub, Turistické známky s.r.o. (22. 7. 2026). Jen system=znamka a jen povolený vydavatel.'
+            -m 'Zdroj: Turistické známky s.r.o. (turisticke-znamky.cz i znaczki-turystyczne.pl) — souhlas Mgr. David Holub (22. 7. 2026). Jen system=znamka.'
           git pull --rebase origin main
           git push origin main

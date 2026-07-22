@@ -3,7 +3,8 @@
  * URL obrázku z HTML detailu (og:image / twitter / image_src / fallback img),
  * příponu z MIME, absolutizaci relativní URL a — hlavně — **poctivostní filtr**:
  * bere se jen `system:'znamka'` a jen z turisticke-znamky.cz (svolení Holub),
- * ne vizitky ani polský znaczki-turystyczne.pl.
+ * bere se jen `system:'znamka'` a jen domény Turistické známky s.r.o.
+ * (turisticke-znamky.cz i polská znaczki-turystyczne.pl — týž vydavatel), ne vizitky.
  */
 import { describe, expect, it } from 'vitest'
 
@@ -82,8 +83,8 @@ describe('DATA-13 · jeStazitelna (poctivostní filtr svolení)', () => {
   it('NEbere vizitku (Wander Book — bez svolení)', () => {
     expect(jeStazitelna(p({ system: 'vizitka', url: 'https://cs.wander-book.com/lucni-bouda-m211.htm' }))).toBe(false)
   })
-  it('NEbere polský systém znaczki-turystyczne.pl (jiný vydavatel, bez svolení)', () => {
-    expect(jeStazitelna(p({ url: 'https://www.znaczki-turystyczne.pl/znaczkowe-miejsca-turystyczne/karkonosze-schronisko-pttk-samotnia-c52' }))).toBe(false)
+  it('bere i znaczki-turystyczne.pl (polská verze TÉHOŽ vydavatele — se svolením)', () => {
+    expect(jeStazitelna(p({ url: 'https://www.znaczki-turystyczne.pl/znaczkowe-miejsca-turystyczne/karkonosze-schronisko-pttk-samotnia-c52' }))).toBe(true)
   })
   it('NEbere neplatnou URL', () => {
     expect(jeStazitelna(p({ url: 'nonsense' }))).toBe(false)

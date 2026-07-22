@@ -4,10 +4,10 @@
  * Poctivost / svolení (KLÍČOVÉ): grafika známky je autorské dílo vydavatele.
  * Stahujeme JEN to, k čemu máme svolení:
  *   • jen produkty `system: 'znamka'` (ne vizitky — Wander Book zatím nesvolil),
- *   • jen z **turisticke-znamky.cz** — Mgr. David Holub (Turistické známky s.r.o.)
- *     dal souhlas s uveřejněním (e-mail + telefonicky 22. 7. 2026).
- *   • znaczki-turystyczne.pl (polský vydavatel, např. Samotnia) a jiné hostitele
- *     PŘESKAKUJEME — jiný vydavatel, bez svolení.
+ *   • jen z domén **Turistické známky s.r.o.**: turisticke-znamky.cz i
+ *     **znaczki-turystyczne.pl** — polská verze TÉHOŽ vydavatele (potvrdil Michal).
+ *     Souhlas Mgr. Davida Holuba (e-mail + telefonicky 22. 7. 2026) se týká obou.
+ *   • jiné hostitele (např. Wander Book / vizitky) PŘESKAKUJEME — bez svolení.
  * Každý obrázek se ukládá s atribucí „se svolením" (manifest + UI).
  *
  * Síť: sandbox denních sessions na turisticke-znamky.cz nedosáhne (proxy) —
@@ -23,9 +23,11 @@ const DATA_DIR = join(process.cwd(), 'data', 'znamky-vizitky')
 const PUBLIC_DIR = join(process.cwd(), 'public', 'znamky')
 const MANIFEST = join(DATA_DIR, 'obrazky.json')
 
-const SVOLIL = 'Mgr. David Holub, Turistické známky s.r.o. — e-mail + telefonicky 22. 7. 2026'
-/** Jediný hostitel, k jehož obrázkům máme svolení. */
-const POVOLENY_HOST = 'turisticke-znamky.cz'
+const SVOLIL =
+  'Turistické známky s.r.o. (Mgr. David Holub) — souhlas e-mail + telefonicky 22. 7. 2026; ' +
+  'týká se obou domén vydavatele (turisticke-znamky.cz i znaczki-turystyczne.pl)'
+/** Domény TÉHOŽ vydavatele (Turistické známky s.r.o.), k jehož obrázkům máme svolení. */
+const POVOLENE_HOSTY = ['turisticke-znamky.cz', 'znaczki-turystyczne.pl']
 
 type Produkt = { system: string; cislo: string; nazev: string; url: string; stav: string }
 type Katalog = { chaty?: { slug: string; nazev: string; produkty: Produkt[] }[] }
@@ -93,7 +95,8 @@ export const priponaObrazku = (mime: string, url: string): string => {
 export const jeStazitelna = (p: Produkt): boolean => {
   if (p.system !== 'znamka') return false
   try {
-    return new URL(p.url).hostname.replace(/^www\./, '').endsWith(POVOLENY_HOST)
+    const host = new URL(p.url).hostname.replace(/^www\./, '')
+    return POVOLENE_HOSTY.some((h) => host === h || host.endsWith(`.${h}`))
   } catch {
     return false
   }
@@ -171,11 +174,11 @@ const main = async () => {
   if (!dry) {
     const obrazky = [...dleSlug.values()].sort((a, b) => a.slug.localeCompare(b.slug))
     const manifest = {
-      zdroj: POVOLENY_HOST,
+      zdroj: 'Turistické známky s.r.o. (turisticke-znamky.cz, znaczki-turystyczne.pl)',
       svolil: SVOLIL,
       poznamka:
-        'Obrázky známek se svolením vydavatele. Jen system=znamka a jen turisticke-znamky.cz; ' +
-        'vizitky (Wander Book) a polský systém (znaczki-turystyczne.pl) se nestahují (bez svolení).',
+        'Obrázky známek se svolením vydavatele. Jen system=znamka a jen domény Turistické ' +
+        'známky s.r.o. (turisticke-znamky.cz i polská znaczki-turystyczne.pl); vizitky (Wander Book) se nestahují (bez svolení).',
       stazeno: new Date().toISOString().slice(0, 10),
       obrazky,
     }
