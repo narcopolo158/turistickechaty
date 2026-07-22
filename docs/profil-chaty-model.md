@@ -19,6 +19,17 @@
 - **Poctivost:** každý věcný údaj nese zdroj a datum; `verified` odlišuje redakčně
   ověřené od převzatého. Stav ověření je **viditelný designový prvek**, ne patička.
 
+**Rozhodnuto (Michal 22. 7.):**
+- **Profil = dvoustrana** (desktop): **levá strana = emoce/identita** (hero, název,
+  historické názvy, výška, pohoří, charakteristika, razítko/známka/vizitka,
+  „navštíveno", osobní poznámka); **pravá strana = tvrdá data** (provoz, jídlo,
+  nocleh, kontakty, výchozí body, trasy, převýšení/čas, doprava, mapa, historie,
+  zdroje, datum ověření). Na mobilu ne fyzicky vedle sebe → **kapitoly**, pocit
+  zápisníku zůstává. (Řídí sekce 1 níže: každá sekce má levou/pravou příslušnost.)
+- **Kudy z nudy a Seznam Zprávy jsou přijaté zdroje** (sekundární redakční média).
+  Citovat jako `verified: false` s URL článku; časově dynamické údaje ověřit před
+  publikací proti primárnímu prameni (web chaty / KRNAP / KČT).
+
 ## 1. Mapa sekcí profilu
 
 Pořadí = návrh toku „listu". Sloupce: **Vrstva** (veřejná/osobní), **Kat.** (I/A/V),
@@ -109,8 +120,9 @@ Design se musí ověřit nejen na vlajkových, ale i na běžných/neúplných:
 
 ## 8. Otevřené otázky (k rozhodnutí před/na session)
 
-1. **Dvoustrana levá/pravá** vs. **jednosloupcový tok** jako výchozí (desktop) —
-   dvoustrana je hezká, ale musí přežít na mobilu a nezdvojit obsah.
+1. ~~Dvoustrana vs. jednosloupec~~ → **ROZHODNUTO: dvoustrana** (viz Rozhodnuto výše).
+   Zbývá pro design session: přesné chování na mobilu (pořadí kapitol) a aby se obsah
+   levá/pravá **nezdvojoval** (identita/hero jen jednou).
 2. **Kolik sekcí „nad čarou"** (bez scrollu): identita + hero + fakta + provoz +
    sběratelský pruh? Určit prioritu.
 3. **Provoz „dnes"** potřebuje zdroj živých dat (chataři/komunita) — do té doby
