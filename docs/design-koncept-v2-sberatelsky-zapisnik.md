@@ -151,3 +151,52 @@ a napojuje se to na fyzický **Pas turistických chat** (monetizace).
 - Dark mode „za tmy": album v noci — teplé lampové světlo na papíru, ne jen
   invertované barvy.
 - Výkonový rozpočet na textury/parallax na mobilu — změřit early.
+
+---
+
+## 11. Doplnění (Michalův vstup 22. 7.) — nosné myšlenky navíc
+
+Následující body přišly z druhé iterace a jsou dost silné, aby řídily celý design:
+
+- **Veřejný katalog ≠ osobní zápisník.** Dvě odlišné vrstvy hustoty:
+  *veřejná část* = čistá, přesná, málo dekorativní, skenovatelná (fakta, plánování);
+  *osobní zápisník* (přihlášený) = víc vrstev, razítka, polaroidy, poznámky,
+  vzpomínky. Tím nikoho nenutíme procházet „těžký scrapbook", když jen chce
+  otvíračku. **Tohle je hlavní organizační rozhodnutí — dekorace roste s osobní
+  vrstvou, ne ve veřejném katalogu.**
+- **Filtr každého prvku — patří do jedné ze tří kategorií:** **Informace** (rychlá,
+  přesná, čitelná) · **Artefakt** (působí jako reálný fyzický předmět) · **Vzpomínka**
+  (osobní, emoční). Nepatří-li prvek ani do jedné, na stránce nemá co dělat.
+  Skvělá designová disciplína proti kýči a přeplácání.
+- **Organizační metafora / tagline:** *„Každá chata má svůj list. Každá návštěva
+  zanechá stopu."* Propíše se všude: profil = list, razítko = stopa, trasa = čára,
+  fotka = vzpomínka, známka = artefakt, deník = vlastní kniha uživatele.
+- **Stavy ověření jako viditelný designový motiv:** *ověřeno provozovatelem /
+  redakcí / potvrzeno návštěvníkem / údaj starší 12 měsíců / provoz nepotvrzen /
+  historický údaj* — malý přesný znak u proměnlivého údaje. Spojuje datovou
+  kvalitu a estetiku (navazuje na „razítko dnes" + datovou volatilitu z backlogu).
+- **Profil jako dvoustrana:** levá strana = emoce/identita (hero, název, historické
+  názvy, výška, charakteristika, razítko/známka/vizitka, „navštíveno", osobní
+  poznámka); pravá = tvrdá data (provoz, nocleh, kontakty, výchozí body, trasy,
+  doprava, mapa, historie, zdroje, datum ověření). Na mobilu ne fyzicky vedle sebe,
+  ale jako kapitoly — pocit zápisníku zůstává.
+- **Pohlednice s lícem i rubem:** otočení → na rubu historická data, poštovní
+  razítko, rok, původní název, zdroj (rozšíření slideru tehdy/dnes).
+- **Sbírka jako samostatný režim** (vedle katalogu): razítka / známky / vizitky /
+  pohlednice / odznaky, přepínač *mám / chybí mi / vyřazené / dle pohoří / roku /
+  série* — sběratelská vitrína, ale stále čistě.
+- **Opt-in „hmatový režim":** zvuk (otisk razítka, otočení pohlednice, šustnutí
+  mapy) i silnější haptika **default vypnuté**, uživatel si je zapne.
+- **Filtry mapy jako papírové záložky** (razítko, nocleh, jídlo, otevřeno, lanovka,
+  vlak, pes, děti, zaniklé) — drobný artefaktový detail nad čistou mapou.
+
+### Moje výhrady / co v session otestovat (ne slepě převzít)
+
+- **Per-pohoří akcenty** (Krkonoše červená, Šumava zelená…): lákavé, ale **hlídat
+  jednotu v2.2** — akcent jako *whisper* (jeden prvek), ne reskin celého pohoří,
+  jinak se rozpadne značka. Otestovat na 2 pohořích vedle sebe.
+- **Serif pro názvy/historii vs. náš Space Grotesk:** návrh „kvalitní knižní serif
+  pro emoci, grotesk pro data" je pro pocit „zápisníku" možná **silnější než
+  současné řešení** — stojí za A/B v session (v2.2 je grotesk-only). Rozhodnutí typu.
+- **Rukopisný font jen pro osobní poznámky a popisky polaroidů** — nikdy pro
+  navigaci a hlavní obsah (na tom se oba materiály shodují — držet).
