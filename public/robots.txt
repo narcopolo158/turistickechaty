@@ -1,0 +1,78 @@
+# turistickechaty.cz — robots.txt
+# Cíl: být zdrojem, který citují vyhledávače i AI asistenti (viz docs/plan.md).
+# Obsah je veřejný katalog s uvedenými zdroji; AI crawlery i vyhledávače vítáme.
+
+# --- OpenAI ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# --- Anthropic ---
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# --- Perplexity ---
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- Google (AI + vyhledávání) ---
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# --- Apple ---
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Další AI crawlery ---
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# --- Vyhledávání (vč. Seznamu — český trh) ---
+User-agent: Bingbot
+Allow: /
+
+User-agent: SeznamBot
+Allow: /
+
+# --- Vše ostatní: povoleno, kromě adminu a API Payloadu a interního styleguide ---
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /design
+
+# Signál preferencí využití obsahu (emerging standard 2026)
+Content-Signal: ai-train=yes, ai-input=yes, search=yes
+
+# Discovery
+Sitemap: https://turistickechaty.cz/sitemap.xml
+LLM-Resources: https://turistickechaty.cz/llms.txt

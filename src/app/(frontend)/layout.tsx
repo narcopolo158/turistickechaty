@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import React from 'react'
 import SiteFooter from '@/components/SiteFooter'
 import SiteHeader from '@/components/SiteHeader'
@@ -10,10 +11,16 @@ import './components.css'
 import './profil.css'
 import './razitkovnik.css'
 
-export const metadata = {
+export const metadata: Metadata = {
+  // Absolutní základ pro kanonické a OG URL (Next jinak varuje u og:image).
+  metadataBase: new URL('https://turistickechaty.cz'),
   title: 'turistickechaty.cz — průvodce horskými chatami',
   description:
     'Průvodce všemi horskými chatami: ověřená data, mapa, výlety, historie a katalog razítek. Začínáme Krkonošemi.',
+  // Discovery odkaz pro AI asistenty (llms.txt) — z hlavičky každé stránky.
+  alternates: {
+    types: { 'text/markdown': '/llms.txt' },
+  },
 }
 
 /* Nastaví tmavý režim před hydratací — bez záblesku světlého motivu */
