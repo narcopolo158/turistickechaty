@@ -35,3 +35,29 @@ const nactiKatalog = (): Map<string, Produkt[]> => {
 
 /** Sběratelské produkty chaty dle slugu (prázdné pole, když žádné nejsou). */
 export const znamkyVizitkyChaty = (slug: string): Produkt[] => nactiKatalog().get(slug) ?? []
+
+/**
+ * Obrázek turistické známky (DATA-13) — jen se svolením vydavatele
+ * (turisticke-znamky.cz, Mgr. Holub). Manifest `data/znamky-vizitky/obrazky.json`
+ * plní GitHub Action; když soubor/záznam chybí, vrací null → profil drží
+ * placeholder faux-3D.
+ */
+export type ZnamkaObrazek = { url: string; zdroj: string }
+type ObrazkyManifest = { svolil?: string; obrazky?: { slug: string; soubor: string }[] }
+
+let obrazkyCache: Map<string, ZnamkaObrazek> | null = null
+
+const nactiObrazky = (): Map<string, ZnamkaObrazek> => {
+  if (obrazkyCache) return obrazkyCache
+  obrazkyCache = new Map()
+  const cesta = join(process.cwd(), 'data', 'znamky-vizitky', 'obrazky.json')
+  if (existsSync(cesta)) {
+    const m = JSON.parse(readFileSync(cesta, 'utf8')) as ObrazkyManifest
+    const zdroj = m.svolil ?? 'Turistické známky s.r.o. (se svolením)'
+    for (const o of m.obrazky ?? []) if (o.slug && o.soubor) obrazkyCache.set(o.slug, { url: o.soubor, zdroj })
+  }
+  return obrazkyCache
+}
+
+/** Obrázek známky chaty (se svolením), nebo null. */
+export const znamkaObrazek = (slug: string): ZnamkaObrazek | null => nactiObrazky().get(slug) ?? null

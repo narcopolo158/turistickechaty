@@ -1,0 +1,56 @@
+# DATA-13: stažení obrázků turistických známek (se svolením vydavatele).
+#
+# Poctivost/svolení: stahují se JEN obrázky známek z turisticke-znamky.cz —
+# Mgr. David Holub (Turistické známky s.r.o.) dal souhlas s uveřejněním
+# (e-mail + telefonicky 22. 7. 2026). Vizitky (Wander Book) ani polský systém
+# (znaczki-turystyczne.pl) se NEstahují — jiní vydavatelé, bez svolení.
+#
+# Sandbox denních sessions na turisticke-znamky.cz nedosáhne (proxy), GitHub
+# Actions ano. Spouští se ručně (Actions → „DATA-13: obrázky známek" → Run).
+# Skript je idempotentní; commituje obrázky do public/znamky + manifest.
+name: 'DATA-13: obrázky známek'
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data13-znamky-obrazky
+  cancel-in-progress: false
+
+jobs:
+  obrazky:
+    name: Stažení obrázků známek (turisticke-znamky.cz, se svolením)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Stažení obrázků známek
+        shell: bash
+        run: |
+          npx tsx scripts/data13-znamky-obrazky.ts | tee report.txt
+          echo '## DATA-13 — obrázky známek: výstup běhu' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit obrázků a manifestu do main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/znamky data/znamky-vizitky/obrazky.json
+          if git diff --cached --quiet; then
+            echo 'Beze změny — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m 'data: obrázky turistických známek (se svolením, z Actions)' \
+            -m 'Zdroj: turisticke-znamky.cz — souhlas Mgr. David Holub, Turistické známky s.r.o. (22. 7. 2026). Jen system=znamka a jen povolený vydavatel.'
+          git pull --rebase origin main
+          git push origin main

@@ -61,7 +61,7 @@ export type ZapData = {
   zajimavosti: ZapZaj[]
   zdroje: ZapZdroj[]
   razitko: { slug: string; nazev: string; pohori: string | null; vyska: number | null; otiskUrl: string | null; otiskAlt: string | null; caption: string; stav: string } | null
-  znamka: { cislo: string; url: string; stav: string; aktivni: boolean } | null
+  znamka: { cislo: string; url: string; stav: string; aktivni: boolean; obrazekUrl: string | null; obrazekZdroj: string | null } | null
   vizitka: { cislo: string; nazev: string; url: string; stav: string; vyrazena: boolean } | null
   dalsiList: string | null
 }
@@ -474,22 +474,29 @@ function RazitkoObjekt({ r }: { r: NonNullable<ZapData['razitko']> }) {
 
 // ── Dřevěná známka (faux-3D placeholder, artwork po svolení) ───────────────
 function ZnamkaObjekt({ z, tilt }: { z: NonNullable<ZapData['znamka']>; tilt: ReturnType<typeof useTilt> }) {
-  const inner = (
-    <>
-      <div className="zap-obj-stage">
-        <div className="zap-znamka" onMouseMove={tilt.onMove} onMouseLeave={tilt.onLeave}>
-          <div className="grain"><svg width="104" height="104"><rect width="104" height="104" filter="url(#zapWood)" /></svg></div>
-          <div className="spec" />
-          <div className="ring"><div className="c">Č. {z.cislo}</div><div className="n">ZNÁMKA</div><div className="m">náhled</div></div>
-        </div>
-      </div>
-      <div className="zap-obj-cap">Známka č. {z.cislo}</div>
-      <div className="zap-obj-sub"><span className="dot" style={{ color: z.aktivni ? 'var(--open)' : 'var(--gone)' }}>●</span> {z.stav}</div>
-    </>
+  const disc = z.obrazekUrl ? (
+    <div className="zap-znamka" onMouseMove={tilt.onMove} onMouseLeave={tilt.onLeave}>
+      {/* reálná grafika známky — se svolením vydavatele (DATA-13) */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="zap-znamka-foto" src={z.obrazekUrl} alt={`Turistická známka č. ${z.cislo}`} title={z.obrazekZdroj ?? undefined} />
+      <div className="spec" />
+    </div>
+  ) : (
+    <div className="zap-znamka" onMouseMove={tilt.onMove} onMouseLeave={tilt.onLeave}>
+      <div className="grain"><svg width="104" height="104"><rect width="104" height="104" filter="url(#zapWood)" /></svg></div>
+      <div className="spec" />
+      <div className="ring"><div className="c">Č. {z.cislo}</div><div className="n">ZNÁMKA</div><div className="m">náhled</div></div>
+    </div>
   )
   return (
     <div style={{ width: 120 }}>
-      <a href={z.url} target="_blank" rel="noopener noreferrer nofollow" style={{ color: 'inherit' }}>{inner}</a>
+      <a href={z.url} target="_blank" rel="noopener noreferrer nofollow" style={{ color: 'inherit' }}>
+        <div className="zap-obj-stage">{disc}</div>
+        <div className="zap-obj-cap">Známka č. {z.cislo}</div>
+        <div className="zap-obj-sub">
+          <span className="dot" style={{ color: z.aktivni ? 'var(--open)' : 'var(--gone)' }}>●</span> {z.obrazekUrl ? 'se svolením vydavatele' : z.stav}
+        </div>
+      </a>
     </div>
   )
 }
