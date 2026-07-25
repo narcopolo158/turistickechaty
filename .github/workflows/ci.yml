@@ -18,3 +18,23 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
+
+  kontrola:
+    name: Kontroly datové vrstvy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      # `npm run kontrola` pustí všechny čtyři kontroly a nakonec regresní
+      # test fixtury. Běh SPADNE jen na validátoru (číselníky, konvence B,
+      # svolení u obrázků známek) a na regresním testu — tedy tam, kde je
+      # výsledek verdikt. Sken zakázaných vzorů a mechanický audit jsou
+      # seznamy k posouzení, ne seznamy vad, takže build neshazují; jejich
+      # výstup je vidět v logu a smysl má sledovat, jestli počty neskočí
+      # (ustálený stav: 135 zásahů skenu, 0 zásahů auditu).
+      - run: npm run kontrola
