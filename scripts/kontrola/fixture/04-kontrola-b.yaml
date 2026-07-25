@@ -1,0 +1,20 @@
+slug: 04-kontrola-b
+nazev: Fixtura pro kontrolu B
+typ: obsluhovana
+obec: Pec pod Sněžkou
+stav: v-provozu
+kapacita: 30
+vyska: 1200
+perex: >-
+  Neutrální perex bez tvrzení a bez letopočtů.
+text:
+  - >-
+    Neutrální odstavec bez tvrzení a bez letopočtů.
+overeniProvoz:
+  verified: false
+  source: 'Web provozovatele; před publikací ověřit telefonem.'
+  checked: '2026-07-25'
+overeniNocleh:
+  verified: false
+  source: 'POZNÁMKA K PUBLIKACI: před publikací se řešil rozsah, profil byl publikován i bez toho.'
+  checked: '2026-07-25'

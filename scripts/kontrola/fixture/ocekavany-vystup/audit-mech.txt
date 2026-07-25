@@ -1,0 +1,21 @@
+
+=== A: proza tvrdi hodnotu zamerne prazdneho pole — 4 ===
+ * 01-kontrola-a.yaml | pole `obec` prazdne, proza jmenuje <<Špindlerův Mlýn>> a rozpor nikde nepriznava
+ * 01-kontrola-a.yaml | pole `kapacita` prazdne, text[0] uvadi <<42 lůž>>
+ * 01-kontrola-a.yaml | pole `vyska` prazdne, text[1] uvadi <<1 320 m n. m.>>
+ * 09-kontrola-a-stav.yaml | pole `stav` prazdne, perex tvrdi <<je v provozu>>
+
+=== B: overeni zada odklad publikace, profil je publikovany — 1 ===
+ * 04-kontrola-b.yaml | overeniProvoz.source zada <<před publikací>>, ale profil je publikovany
+
+=== C: pravdepodobne sklonovana domena — 1 ===
+ * 05-kontrola-c.yaml | perex | <<krkonosech.eu>> ~ dolozena <<krkonose.eu>> => nejspis sklonovana domena
+
+=== D: superlativ bez pripsani — 2 ===
+ * 06-kontrola-d.yaml | perex | superlativ <<Nejstarší>> bez pripsani: ...Nejstarší bouda v okolí stojí právě tady....
+ * 06-kontrola-d.yaml | text[0] | superlativ <<Nejvýše>> bez pripsani: ...Nejvýše položená bouda hřebene je tahle....
+
+=== E: letopocet v proze bez opory jinde v souboru — 1 ===
+ * 07-kontrola-e.yaml | perex | rok 1888 se v datech profilu (mimo prozu) nevyskytuje
+
+souboru: 10 | zasahu k posouzeni: 9 (A 4 · B 1 · C 1 · D 2 · E 1)

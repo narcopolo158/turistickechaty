@@ -1,0 +1,26 @@
+slug: 08-hranice-slova
+nazev: Fixtura na hranici slova a zakazane vzory
+typ: obsluhovana
+obec: Harrachov
+stav: v-provozu
+kapacita: 20
+vyska: 900
+perex: >-
+  Nocleh vyjde na 250 Kč, v Polsku na 40 zł, a ceník visí u vchodu. Chata je
+  na známkách č. 673 a 1602, píše katalog.
+text:
+  - >-
+    Napsat se dá na info@chata-fixtura.cz nebo zavolat na 499 123 456,
+    případně na +420 499 123 456. Podrobnosti stojí na
+    https://www.chata-fixtura.cz a taky na krkonose.eu.
+  - >-
+    Souřadnice 50.7361 N, 15.7402 E odpovídají bodu, který server
+    Českéhory.cz uvádí jako vrchol; tahle doména je past na hranici slova
+    a nesmí se chytit.
+  - >-
+    Pole verified a slug se do prózy nepíšou, stejně jako YAML, OSM,
+    OpenStreetMap, Payload, kandidát, DATA-13 ani to, že profil dopisuje
+    redakce.
+zdroje:
+  - url: 'https://www.chata-fixtura.cz/'
+    popis: 'Web provozovatele'
