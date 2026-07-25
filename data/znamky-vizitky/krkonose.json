@@ -1,6 +1,6 @@
 {
   "zdroj": "Turistické známky (Turistické známky s.r.o., Rýmařov) a turistické vizitky / Wander Card (Wander Book) — katalog ChatGPT nad oficiálními seznamy vydavatelů, verified:false. Jen číslo + odkaz + fakt; obrázky se nepřebírají (autorské dílo — jen se svolením).",
-  "pocetChat": 32,
+  "pocetChat": 33,
   "chaty": [
     {
       "slug": "chata-dvoracky",
@@ -539,6 +539,21 @@
           "stav": "vedeno v oficiálním seznamu",
           "jistota": "A",
           "poznamka": "číslo ověřeno z fyzické známky; rytina nese 1050 m, externí katalog uvádí 1060 m — výška v profilu proto vědomě nevyplněna. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
+        }
+      ]
+    },
+    {
+      "slug": "vrbatova-bouda",
+      "nazev": "Vrbatova bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "393",
+          "nazev": "Vrbatova bouda, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/vrbatova-bouda-c393",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky; kotouč nese 1400 m, shodně s výškou v profilu (kudyznudy.cz 1 400 m) — zdroje se přitom rozcházejí (1396 / 1390 m), rozpor je zapsán v profilu. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
         }
       ]
     }

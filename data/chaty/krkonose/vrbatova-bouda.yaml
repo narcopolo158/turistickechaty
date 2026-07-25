@@ -1,0 +1,303 @@
+# Vrbatova bouda — profil povýšen z ručního kandidáta (zpětné dohledání přes
+# turistickou známku č.393, DATA-10) po rešerši 25. 7. 2026. Klíč zařazení
+# SPLNĚN: doloženo občerstvení pro kolemjdoucí (archiweb.cz popisuje restauraci,
+# bufet a veřejné toalety; turistika.cz kiosek s občerstvením), ubytování objekt
+# nenabízí. Vše verified:false — sekundární zdroje, redakce neověřila.
+# Zaznamenané rozpory: výška 1400/1396/1390, rok stavby 1964 vs. „počátek 60.
+# let", rekonstrukce 2009–2015 vs. 2016, otvírací doba 9:00 vs. 9:30. Nedomýšlet!
+
+nazev: Vrbatova bouda
+slug: vrbatova-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Je zde nejvýše položená zastávka linkového autobusu — v letní sezóně sem
+      z Horních Míseček vyjíždějí ekologické autobusy
+    kategorie: jine
+    zdroj: Turistika.cz „Vrbatova bouda" (sekundární zdroj, verified:false)
+  - text: >-
+      Přestavbu ateliéru IXA nominovali do mezinárodní ceny Mies van der Rohe
+      Award 2017
+    kategorie: jine
+    zdroj: Kudy z nudy „Vrbatova bouda na Zlatém návrší" (sekundární médium, verified:false)
+  - text: >-
+      Ubytování nenabízí — je to čistě zastávka na cestu s občerstvením a
+      veřejnými toaletami
+    kategorie: jine
+    zdroj: Kudy z nudy a archiweb.cz (sekundární zdroje, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7514
+lng: 15.5489
+vyska: 1400
+obec: Vítkovice
+overeniLokace:
+  source: >-
+    Poloha Zlaté návrší, k. ú. Vítkovice v Krkonoších; 6,5 km západně od
+    Špindlerova Mlýna (turistika.cz). GPS 50,7514 / 15,5489 shodně dle
+    turistika.cz a jablonec-krkonose.cz — sekundární zdroje, přesnost na úrovni
+    desítek metrů, ověřit. VÝŠKA — ROZPOR: 1 400 m dle turistické známky č.393,
+    Kudy z nudy i archiweb.cz; 1 396 m dle jablonec-krkonose.cz; 1 390 m
+    dle turistika.cz. POZOR: ixa.cz (web autorů přestavby) nadmořskou výšku
+    NEUVÁDÍ — dřívější připsání „archiweb.cz/ixa.cz" bylo nepřesné, opraveno
+    25. 7. 2026. Do profilu vzata nejčastěji uváděná hodnota 1 400 m,
+    rozpor přiznán v textu. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Vrbatova bouda na Zlatém návrší" uvádí výslovně: „Vrbatova
+    bouda nenabízí ubytování." Shodně jablonec-krkonose.cz: „Neslouží
+    k ubytování." Archiweb.cz u přestavby ubytování mezi provozy
+    nejmenuje. Historicky přitom v boudě noclehárna byla (základna Horské
+    služby) — dnešní stav je bez ubytování. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    KLÍČ ZAŘAZENÍ SPLNĚN. Archiweb.cz v popisu přestavby jmenuje restauraci
+    (rozšířenou o prostor bývalé terasy), bufet a veřejné toalety;
+    turistika.cz mluví o „občerstvovacím zařízení" a „kiosku s občerstvením";
+    jablonec-krkonose.cz o objektu píše, že nabízí „zakoupení občerstvení,
+    nápojů a upomínkových předmětů" (restauraci ani jídelnu ale nejmenuje).
+    Objekt nemá ubytování, takže občerstvení je z povahy věci pro kolemjdoucí.
+    ROZPOR v pojmenování provozu (restaurace vs. kiosek) — `typObcerstveni`
+    nastaven dle archiweb.cz na `restaurace`, rozpor přiznán v textu.
+    Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# `otviraciDoba` ZÁMĚRNĚ NEVYPLNĚNA — dva sekundární zdroje se rozcházejí
+# (9:00 vs. 9:30) a oficiální web objekt nemá. Nedomýšlet.
+# `sezona` NEVYPLNĚNA — dosažitelné zdroje ji neuvádějí.
+# `kontakty` NEVYPLNĚNY — čistý oficiální web se nepodařilo dohledat, katalogy
+# třetích stran (restu.cz, najisto.cz) za kontakt objektu nebereme.
+overeniProvoz:
+  source: >-
+    ROZPOR v otvírací době: turistika.cz uvádí „od 9.00 do 16.00",
+    jablonec-krkonose.cz 9:30–16:00. Oba jsou třetí strana, oficiální web
+    objektu nedohledán — pole proto vědomě nevyplněno. Sezónu ani celoroční
+    provoz nedokládá žádný z dosažitelných zdrojů. Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: |-
+  Až k Vrbatově boudě nelze dojet vlastním automobilem (turistika.cz).
+  Autem se dá dojet na Horní Mísečky, odtud dál pěšky nebo sezónním
+  autobusem. Redakčně neověřeno.
+verejnaDoprava:
+  zastavka: >-
+    Zlaté návrší (sezónní ekologický autobus z Horních Míseček) — dle
+    turistika.cz nejvýše položená zastávka linkového autobusu; neověřeno
+overeniPristup:
+  source: >-
+    Turistika.cz „Vrbatova bouda": „Až k Vrbatově boudě nelze dojet vlastním
+    automobilem", „turisté v letní sezóně mohou využít autobus, kterou vyveze
+    z Horních Míseček", „Je zde nejvýše položená zastávka linkového autobusu".
+    Kudy z nudy zmiňuje ekologické autobusy podle jízdního řádu. Superlativ
+    o nejvýše položené zastávce přebíráme jako tvrzení zdroje, sami jej
+    ověřený nemáme. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1964
+milniky:
+  - rok: 1913
+    udalost: >-
+      24. dubna zahynul při mezinárodním lyžařském závodě na 50 km Václav
+      Vrbata z Mříčné spolu s Bohumilem Hančem; po Vrbatovi je bouda pojmenována
+  - rok: 1925
+    udalost: Na Zlatém návrší vznikla mohyla Hanče a Vrbaty
+  - rok: 1964
+    udalost: >-
+      Postavena Vrbatova bouda podle návrhu architekta Vladimíra Šíra
+      (archiweb.cz klade stavbu obecněji na počátek šedesátých let)
+  - udalost: >-
+      Přestavba podle ateliéru IXA (Tomáš Hradečný, Martin Prokš) — archiweb.cz
+      a ixa.cz uvádějí projekt 2007–2013 a realizaci 2009–2015, Kudy z nudy
+      klade rekonstrukci do roku 2016
+overeniHistorie:
+  source: >-
+    Turistika.cz: „Bouda byla postavena v roce 1964", „pojmenována podle
+    lyžařského závodníka Václava Vrbaty", který „při závodě v roce 1913
+    tragicky zahynul se svým přítelem Bohumilem Hančem". Kudy z nudy upřesňuje
+    „Václav Vrbata z Mříčné, který dne 24. dubna 1913 tragicky zahynul
+    v průběhu mezinárodního lyžařského závodu na 50 kilometrů" a datuje mohylu
+    Hanče a Vrbaty do roku 1925. Archiweb.cz uvádí autora původní stavby
+    Vladimíra Šíra a realizaci na počátku 60. let, přestavbu ateliéru IXA
+    (Tomáš Hradečný, Martin Prokš; spolupráce Benedikt Markel, Lukáš Zimandl,
+    Klára Hradečná; stavební část OMEGA projekt) s projektem 2007–2013
+    a realizací 2009–2015. ROZPOR: Kudy z nudy klade rekonstrukci do roku 2016.
+    Sekundární zdroje, verified:false — ověřit primárním pramenem
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda na Zlatém návrší od architekta Vladimíra Šíra, postavená podle většiny
+  pramenů roku 1964 a přestavěná ateliérem IXA; nadmořskou výšku prameny
+  uvádějí od 1 390 do 1 400 m. Ubytování nenabízí — je to zastávka na cestu
+  s občerstvením a veřejnými toaletami. Jméno nese po Václavu Vrbatovi, který
+  roku 1913 zahynul při mezinárodním lyžařském závodě spolu s Bohumilem
+  Hančem. Nese turistickou známku č. 393.
+text:
+  - >-
+    Vrbatova bouda stojí na Zlatém návrší na hřebeni Krkonoš, v katastru
+    Vítkovic v Krkonoších, asi šest a půl kilometru západně od Špindlerova
+    Mlýna. Nadmořskou výšku uvádějí prameny rozdílně: turistická známka č.
+    393, Kudy z nudy i architektonický popis přestavby na Archiwebu shodně 1
+    400 metrů, portál jablonec-krkonose.cz 1 396 metrů a Turistika.cz 1 390
+    metrů. Uvádíme nejčastěji zmiňovaných 1 400 metrů a rozdíl přiznáváme,
+    místo abychom předstírali jistotu.
+  - >-
+    Jméno nese bouda po Václavu Vrbatovi z Mříčné, který 24. dubna 1913
+    zahynul během mezinárodního lyžařského závodu na padesát kilometrů
+    společně s Bohumilem Hančem. Mohyla obou mužů vznikla na Zlatém návrší v
+    roce 1925.
+  - >-
+    Stavebně je bouda pozoruhodná. Rok 1964 uvádí Turistika.cz i jablonecký
+    místopis, Archiweb klade stavbu obecněji na počátek šedesátých let;
+    autorem původní stavby byl architekt Vladimír Šír. Přestavbu navrhl
+    ateliér IXA — Tomáš Hradečný a Martin Prokš — a Archiweb i web ateliéru
+    uvádějí projekt na roky 2007 až 2013 a realizaci na 2009 až 2015, zatímco
+    Kudy z nudy klade rekonstrukci do roku 2016. Který údaj je správný,
+    nevíme, a proto uvádíme oba. Kudy z nudy zmiňuje, že přestavba byla
+    nominována do mezinárodní ceny Mies van der Rohe Award pro rok 2017.
+  - >-
+    Ubytování bouda nenabízí; Kudy z nudy to říká výslovně a jablonecký
+    místopis shodně. Je to zastávka na cestu, ne cíl na přespání. Archiweb
+    popisuje v přestavěném objektu restauraci rozšířenou o prostor bývalé
+    terasy, bufet a veřejné toalety, Turistika.cz mluví o občerstvovacím
+    zařízení a kiosku s občerstvením a jablonecký místopis o možnosti zakoupit
+    občerstvení, nápoje a upomínkové předměty. Prameny se tedy v pojmenování
+    provozu rozcházejí, ale že se tu člověk bez noclehu nají a napije,
+    doložené je.
+  - >-
+    Se sezónním informačním centrem Správy KRNAP na Zlatém návrší je to
+    nejasné a prameny si přímo odporují. Web ateliéru, který přestavbu navrhl,
+    řadí infocentrum KRNAP mezi novostavby, které při přestavbě vznikly;
+    Archiweb naopak u téže přestavby výslovně poznamenává, že objekt nakonec
+    zůstal bez infocentra. Správa KRNAP na svém webu píše, že nově zbudované
+    informační centrum bylo otevřeno pro letní sezónu 2024 a nachází se na
+    Zlatém návrší v blízkosti autobusové zastávky — do které budovy patří,
+    neuvádí. Jestli infocentrum sídlí ve Vrbatově boudě, nebo v jiném objektu,
+    z dostupných pramenů nevíme, a netvrdíme proto ani jedno. Otevřeno má
+    podle Správy KRNAP od května do září od 9.10 do 17.00.
+  - >-
+    Autem se až k boudě dojet nedá. V letní sezóně sem z Horních Míseček
+    vyjíždějí ekologické autobusy a Turistika.cz uvádí, že jde o nejvýše
+    položenou zastávku linkového autobusu — superlativ přebíráme od zdroje,
+    sami ho ověřený nemáme. Otvírací dobu prameny uvádějí rozdílně,
+    Turistika.cz od 9.00 do 16.00, jablonecký místopis od 9.30 do 16.00; oba
+    jsou třetí strana a oficiální web se nám u boudy nepodařilo dohledat,
+    takže tu otvírací dobu raději neuvádíme vůbec. Před cestou se vyplatí
+    provoz ověřit.
+  - >-
+    Údaje na téhle stránce pocházejí z veřejně dostupných pramenů, převážně od
+    třetích stran, a redakce je zatím neověřila vlastním dotazem ani
+    návštěvou. Rozporů je tu na jednu boudu nezvykle hodně — výška, rok
+    stavby, rok přestavby i otvírací doba — a všechny je v textu přiznáváme
+    raději, než abychom vybrali jedno číslo a tvářili se, že o žádném sporu
+    nevíme.
+zdroje:
+  - popis: >-
+      Turistika.cz — „Vrbatova bouda" (výška 1 390 m, GPS, rok stavby 1964,
+      pojmenování po Václavu Vrbatovi, provoz, otvírací doba, přístup
+      autobusem); sekundární zdroj, verified:false
+    url: https://www.turistika.cz/mista/vrbatova-bouda--1/detail
+  - popis: >-
+      Kudy z nudy — „Vrbatova bouda na Zlatém návrší v Krkonoších" (výška
+      1 400 m, rekonstrukce 2016, bez ubytování, Václav Vrbata z Mříčné
+      a datum 24. 4. 1913, mohyla 1925, nominace Mies van der Rohe Award 2017);
+      sekundární médium, verified:false
+    url: https://www.kudyznudy.cz/aktivity/vrbatova-bouda
+  - popis: >-
+      Archiweb — „Vrbatova bouda" (autor původní stavby Vladimír Šír, přestavba
+      ateliér IXA, projekt 2007–2013 a realizace 2009–2015, výška 1 400 m,
+      materiály, provozy: restaurace, bufet, veřejné toalety, „nakonec bez
+      infocentra"); sekundární zdroj, verified:false
+    url: https://www.archiweb.cz/b/vrbatova-bouda
+  - popis: >-
+      Správa Krkonošského národního parku — „Sezónní informační centrum Zlaté
+      návrší" (poloha u autobusové zastávky, otevřeno květen–září 9.10–17.00,
+      zbudováno pro letní sezónu 2024); oficiální zdroj instituce,
+      verified:false
+    url: https://www.krnap.cz/navstevnici/infocentra/sezonni-informacni-centrum-zlate-navrsi/
+  - popis: >-
+      Ateliér IXA — „Vrbatova Bouda", stránka projektu (web autorů přestavby:
+      původní stavba „na počátku šedesátých let 20. století", autor Vladimír
+      Šír, původně „základny Horské služby s občerstvením a noclehárnou",
+      posléze „provozem Interhotelů Krkonoše"; projekt 2007–2013, realizace
+      2009–2015, generální projektant Tomáš Hradečný a Martin Prokš;
+      „rozšíření provozu restaurace o prostor bývalé terasy" a novostavba
+      „bufetu, infocentra KRNAPu a veřejných toalet"; materiály modřínové
+      dřevo, nerezový plech a pohledový beton; adresa Vítkovice v Krkonoších
+      č. p. 1. Nadmořskou výšku NEUVÁDÍ.); zdroj blízký stavbě, ale ne
+      provozovatel objektu — verified:false
+    url: https://www.ixa.cz/projekty/vrbatova-bouda
+  - popis: >-
+      Město Jablonec nad Jizerou, Místopis Krkonoš — „Vrbatova bouda" (výška
+      1 396 m „na hřebenu Krkonoš" na konci cesty Jilemnice – Zlaté Návrší,
+      katastr Vítkovice v Krkonoších, GPS 50°45'5.166"N 15°32'55.943"E,
+      otevřena „v roce 1964", jméno po V. Vrbatovi a úmrtí obou mužů 1913,
+      „Neslouží k ubytování", „zakoupení občerstvení, nápojů a upomínkových
+      předmětů", otvírací doba 9:30–16:00); web města, ale o objektu píše jako
+      třetí strana — sekundární zdroj, verified:false
+    url: https://jablonec-krkonose.cz/o-meste/mistopis-krkonos/200/471-vrbatova-bouda
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/vrbatova-bouda.yaml (ruční kandidát,
+  zpětné dohledání přes turistickou známku č.393 — DATA-10) po rešerši
+  25. 7. 2026.
+
+  ✅ KLÍČ ZAŘAZENÍ SPLNĚN: archiweb.cz jmenuje restauraci, bufet a VEŘEJNÉ
+  toalety, turistika.cz kiosek s občerstvením; objekt nemá ubytování, takže
+  občerstvení je z povahy věci pro kolemjdoucí. Nejjasnější případ z celé
+  dávky Tier 2/3.
+
+  ⚠ ROZPORY zapsané do profilu i do textu (nesjednocovat bez primárního
+  ověření): výška 1400 (známka č.393 + Kudy z nudy + archiweb.cz — POZOR,
+  ixa.cz výšku NEUVÁDÍ, dřívější připsání opraveno 25. 7. 2026) vs. 1396
+  (jablonec-krkonose.cz) vs. 1390 (turistika.cz); rok stavby 1964
+  (turistika.cz) vs. „počátek 60. let" (archiweb); přestavba projekt 2007–2013
+  / realizace 2009–2015 (archiweb + ixa.cz) vs. rekonstrukce 2016 (Kudy
+  z nudy); otvírací doba 9:00–16:00 (turistika.cz) vs. 9:30–16:00
+  (jablonec-krkonose.cz) — proto `otviraciDoba` NEVYPLNĚNA.
+
+  ⚠ INFOCENTRUM — TŘI prameny, dva si přímo odporují: ixa.cz (web autorů
+  přestavby) řadí mezi novostavby „bufetu, infocentra KRNAPu a veřejných
+  toalet", archiweb.cz u téže přestavby uvádí „nakonec bez infocentra",
+  a krnap.cz popisuje sezónní informační centrum Zlaté návrší otevřené pro
+  letní sezónu 2024 „v blízkosti autobusové zastávky" — do KTERÉ budovy patří,
+  KRNAP neuvádí. V profilu proto NEtvrdíme, že je ve Vrbatově boudě; rozpor je
+  přiznán i ve veřejném textu. Ověřit (kandidát na dotaz Správě KRNAP
+  v DATA-04).
+
+  GPS 50,7514 / 15,5489 ze dvou sekundárních zdrojů (turistika.cz,
+  jablonec-krkonose.cz) — objekt nebyl v OSM exportu DATA-01 (prověřit
+  tagování, možná amenity=restaurant místo tourism=alpine_hut).
+
+  Kontakty NEVYPLNĚNY — čistý oficiální web nedohledán; restu.cz a najisto.cz
+  jsou katalogy třetích stran, za kontakt objektu je nebereme. restu.cz je ze
+  sandboxu navíc nedostupné.
+
+  K dotažení (DATA-04, verified:true): výška, rok přestavby, otvírací doba,
+  existence oficiálního webu a kontaktů, vztah k infocentru KRNAP, ověření
+  superlativu „nejvýše položená zastávka linkového autobusu". Hero fotka:
+  kandidáti DATA-02. Známka č.393 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c393-vrbatova-bouda.png
+  (Michal má i sken Vrbatovy nálepky). Publikace obrázku známky kryta
+  souhlasem Turistické známky s.r.o. (Mgr. David Holub, 22. 7. 2026).

@@ -9,12 +9,37 @@ zeme: cz
 oblast: krkonose
 vyska: 890
 obec: Pec pod Sněžkou
-overeniProvoz:
-  source: "Externí katalog turistických chat ČR/SK (2026) — jistota A; původní
-    zdroje: https://www.krkonose.eu/krkonosske-boudy;
-    https://kct.cz/kategorie-chaty/vsechny-chaty/"
+kapacita: 47
+kontakty:
+  telefon: '+420 728 465 454'
+  email: podstudnicnou@centrum.cz
+  web: https://www.podstudnicnoukct.cz/
+overeniLokace:
+  source: >-
+    kct.cz/chaty/chata-pod-studnicnou/ (stránka otevřena 25. 7. 2026): „v
+    nadmořské výšce 890 m"; „Chata situovaná v Obřím dole… nedaleko nástupní
+    stanice lanovky na Sněžku"; adresa „Pec pod Sněžkou 120, 542 21 Pec pod
+    Sněžkou". Přesné souřadnice stále chybějí.
   verified: false
-  checked: 2026-07-21
+  checked: '2026-07-25'
+overeniNocleh:
+  source: >-
+    kct.cz/chaty/chata-pod-studnicnou/ (stránka otevřena 25. 7. 2026): „47 lůžek
+    v 15 pokojích". Rozpis pokojů podle typu stránka neuvádí, proto pole pokoje
+    zůstává prázdné.
+  verified: false
+  checked: '2026-07-25'
+overeniProvoz:
+  source: >-
+    Externí katalog turistických chat ČR/SK (2026) — jistota A; původní zdroje:
+    https://www.krkonose.eu/krkonosske-boudy;
+    https://kct.cz/kategorie-chaty/vsechny-chaty/. Doplněno 25. 7. 2026 ze
+    stránky kct.cz/chaty/chata-pod-studnicnou/: stravování je popsáno slovy
+    „Ubytovaní hosté mají snídaně a večeři formou bohatých bufetů", tedy jako
+    služba pro ubytované; věta o občerstvení pro kolemjdoucí na stránce není.
+    Nájemní smlouva nájemce do: 28. 2. 2031.
+  verified: false
+  checked: '2026-07-25'
 interniPoznamky: >-
   KANDIDÁT z externího katalogu ČR/SK (kámoš, jistota A, ověřeno k 2026-07-21) —
   na web povýšit až po KŘÍŽOVÉM OVĚŘENÍ. Vše verified:false. „Jistota A"
@@ -31,3 +56,26 @@ interniPoznamky: >-
   Přístup dle katalogu: pěšky / dle objektu autem
 
   Poznámka z katalogu: Obří důl, KČT.
+
+  ROZHODNUTÍ 25. 7. 2026 — ZŮSTÁVÁ KANDIDÁTEM, klíč zařazení NEDOLOŽEN, a to
+  z celé dávky nejprůkazněji. Stránka kct.cz/chaty/chata-pod-studnicnou/ na
+  přímý dotaz po větě o občerstvení pro neubytované vrátila „TAKOVA VETA NA
+  STRANCE NENI" a stravování popisuje výslovně jako službu pro ubytované:
+  „Ubytovaní hosté mají snídaně a večeři formou bohatých bufetů". Nedomýšlet
+  z toho ale opak — chata KČT s restaurací u nástupní stanice lanovky na Sněžku
+  veřejnost obsluhovat velmi pravděpodobně bude; jen to zatím nemáme doložené.
+
+  Nově doloženo z kct.cz a zapsáno výše: 890 m n. m., 47 lůžek v 15 pokojích,
+  adresa Pec pod Sněžkou 120, telefon 728 465 454, e-mail podstudnicnou@
+  centrum.cz, web www.podstudnicnoukct.cz, nájemní smlouva nájemce do
+  28. 2. 2031. Historická poznámka k pozdějšímu použití: „Posledních šedesát
+  let se jmenuje Bouda pod Studničnou" — tedy dnešní název je mladší než objekt;
+  před povýšením dohledat starší jméno a rok stavby.
+
+  TECHNICKÁ PŘEKÁŽKA: vlastní web objektu podstudnicnoukct.cz je z našeho
+  prostředí nedostupný (WebFetch hlásí ROBOTS_DISALLOWED, protože se nepodaří
+  načíst robots.txt — ConnectTimeout). Toto NEOBCHÁZET jinými nástroji; stránku
+  otevře Michal ručně, nebo počkáme, až bude doména dostupná.
+
+  DOPORUČENÍ MICHALOVI: chata KČT — občerstvení lze ověřit i přes KČT, nejen
+  telefonátem na chatu. Kandidát na povýšení hned poté, co bude klíč doložen.

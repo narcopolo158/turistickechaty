@@ -1,0 +1,267 @@
+# Schronisko PTTK „Kochanówka" — profil povýšen z kandidáta OSM (DATA-01) po
+# rešerši 25. 7. 2026. Povýšení schválil Michal en bloc 20. 7. 2026.
+# Klíč zařazení SPLNĚN: doložen bufet („łazienki, WC i bufet" — szklarska-poreba.pl)
+# a celodenní stravování (PTTK). Poloha 510 m je nízko, ale objekt leží podle
+# szklarska-poreba.pl na území enklávy Krkonošského národního parku (PL).
+# Vše verified:false. ROZPORY: telefon PTTK vs. OSM, skladba pokojů 2 a 4 lůžka
+# (PTTK) vs. dvoulůžkové s koupelnou (korona-gor-polski.pl). Nedomýšlet!
+
+nazev: Schronisko PTTK „Kochanówka"
+slug: kochanowka
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+aliasy:
+  - nazev: Kochanówka
+    poznamka: běžně užívaný zkrácený název
+  - nazev: Kochellfalbaude
+    poznamka: >-
+      původní název hostince z roku 1868 dle korona-gor-polski.pl (neověřeno)
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Stojí v skalnaté rokli u břehu potoka přímo pod stupněm vodopádu Szklarki
+    kategorie: jine
+    zdroj: PTTK — pttk.pl, karta objektu (oficiální zdroj správce, verified:false)
+  - text: >-
+      Na místě dnešní budovy stávala od roku 1824 malá boudička s nápoji —
+      občerstvení tu tedy funguje déle než dvě stě let
+    kategorie: stari
+    zdroj: PTTK — pttk.pl a pttk.jgora.pl (oficiální zdroj správce, verified:false)
+  - text: >-
+      Leží na území enklávy Krkonošského národního parku (Karkonoski Park
+      Narodowy), nad ústím potoka Szklarka do řeky Kamienné
+    kategorie: jine
+    zdroj: szklarska-poreba.pl (sekundární zdroj, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.8301236
+lng: 15.5555441
+vyska: 510
+obec: Piechowice
+overeniLokace:
+  source: >-
+    GPS z OpenStreetMap https://www.openstreetmap.org/node/1965043685 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška „ok. 510 m n.p.m." shodně dle pttk.pl, pttk.jgora.pl,
+    korona-gor-polski.pl i szklarska-poreba.pl. Poloha dle PTTK: „położony jest
+    na wysokości ok. 510 m n.p.m. w skalistym wąwozie przy brzegu potoku,
+    poniżej progu Wodospadu Szklarki"; adresa 58-573 Piechowice, woj.
+    dolnośląskie. Szklarska-poreba.pl upřesňuje „na terenie enklawy
+    Karkonoskiego Parku Narodowego, powyżej ujścia potoku Szklarki do rzeki
+    Kamiennej" — tím je doložena i příslušnost ke Krkonoším navzdory nízké
+    poloze. OSM + oficiální zdroj správce + sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 12
+pokoje:
+  - typ: >-
+      Pokoje ve dvou- a čtyřlůžkovém uspořádání v turistickém standardu; dle
+      korona-gor-polski.pl jsou mezi nimi dvoulůžkové s vlastní koupelnou
+overeniNocleh:
+  source: >-
+    Kapacita 12 lůžek shodně dle korona-gor-polski.pl („12 miejsc noclegowych
+    – w tym w pokojach dwuosobowych z łazienkami") a szklarska-poreba.pl
+    („W schronisku dostępnych jest 12 miejsc noclegowych, łazienki, WC
+    i bufet"). PTTK na vlastní kartě počet lůžek NEUVÁDÍ, popisuje jen
+    „noclegi w pokojach 2 i 4 – osobowych w standardzie turystycznym" —
+    ROZPOR ve skladbě pokojů (2 a 4 lůžka vs. dvoulůžkové s koupelnou)
+    ponechán nesjednocený. Korona-gor-polski.pl uvádí „Aktualnie: otwarte"
+    a „Dostępność: całoroczne". Oficiální zdroj správce + sekundární zdroje,
+    verified:false — dostupnost noclehu ověřit před cestou
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    KLÍČ ZAŘAZENÍ SPLNĚN. Szklarska-poreba.pl uvádí výslovně bufet:
+    „W schronisku dostępnych jest 12 miejsc noclegowych, łazienki, WC
+    i bufet." PTTK na obou svých kartách uvádí „Obiekt oferuje całodzienne
+    wyżywienie", korona-gor-polski.pl „Obiekt prowadzi pełne wyżywienie".
+    Bufet je z povahy provozu pultový a objekt je schronisko PTTK přímo
+    u vodopádu Szklarki, tedy na frekventovaném turistickém místě. POZOR:
+    žádný ze zdrojů neříká DOSLOVNĚ, že bufet obsluhuje i kolemjdoucí bez
+    noclehu — je to úsudek z povahy bufetu a z postavení objektu v síti PTTK,
+    ne citace. OVĚŘIT (DATA-04). Otvírací dobu bufetu žádný z dosažitelných
+    zdrojů neuvádí. Oficiální zdroj správce + sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# `otviraciDoba` ZÁMĚRNĚ NEVYPLNĚNA — žádný z dosažitelných zdrojů ji neuvádí.
+sezona: celoročně
+kontakty:
+  telefon: '+48 601 420 347'
+  web: https://www.pttk.jgora.pl/schronisko-pttk-kochanowka/
+overeniProvoz:
+  source: >-
+    Telefon +48 601420347 dle pttk.jgora.pl (Sudeckie Hotele i Schroniska
+    PTTK). ROZPOR: OSM nese u objektu +48 781 024 159 a web
+    kochanowka.wszklarskiej.net — do profilu vzat kontakt PTTK jako správce
+    objektu, OSM údaj ponechán v poznámkách k ověření. Celoroční provoz dle
+    korona-gor-polski.pl („Dostępność: całoroczne", „Aktualnie: otwarte").
+    Provozovatel PTTK shodně dle OSM tagu operator i dle vlastních stránek
+    PTTK. Otvírací doba nedoložena. Oficiální zdroj správce + OSM,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1868
+milniky:
+  - rok: 1824
+    udalost: >-
+      Na místě dnešní budovy stála malá boudička s nápoji
+  - rok: 1868
+    udalost: >-
+      Dokončena budova schroniska; korona-gor-polski.pl uvádí, že vznikla jako
+      hostinec Kochellfalbaude
+  - rok: 1963
+    udalost: Objekt prošel důkladnou opravou a modernizací
+  - udalost: >-
+      Objekt byl mnohokrát přestavován, až se z hostince stalo turistické
+      schronisko (korona-gor-polski.pl, bez datace)
+overeniHistorie:
+  source: >-
+    PTTK shodně na pttk.pl i pttk.jgora.pl: „Budynek schroniska ukończony
+    w roku 1868, stanął na miejscu niewielkiej budki z napojami, jaka istniała
+    tam od 1824 roku. W 1963 roku obiekt przeszedł gruntowny remont
+    i modernizację." Korona-gor-polski.pl doplňuje: „Budynek aktualnego
+    schroniska powstał w 1868 roku jako gospoda Kochellfalbaude. Obiekt był
+    wielokrotnie przebudowywany, aż w końcu zmienił się z gospody
+    w schronisko turystyczne". Původní název Kochellfalbaude nese jen
+    korona-gor-polski.pl (jediný zdroj) — proto veden i jako alias
+    s poznámkou „neověřeno". Milník o přestavbách zapsán BEZ ROKU, zdroj
+    dataci neuvádí (nedomýšlet). Oficiální zdroj správce + sekundární zdroj,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko PTTK Kochanówka stojí nezvykle nízko — asi 510 m nad mořem —
+  ve skalnaté rokli přímo pod vodopádem Szklarki; podle turistického portálu
+  Szklarské Poręby na území enklávy polského Krkonošského národního parku.
+  Budovu dokončili roku 1868 na místě boudičky s nápoji z roku 1824. Spravuje
+  ho PTTK, má bufet a dvanáct lůžek.
+text:
+  - >-
+    Kochanówka je mezi krkonošskými boudami zvláštní případ — neleží na
+    hřebeni ani pod ním, ale hluboko v údolí potoka, ve výšce zhruba pěti set
+    deseti metrů. PTTK její polohu popisuje přesně: ve skalnaté rokli u břehu
+    potoka, pod stupněm vodopádu Szklarki. Že do Krkonoš přesto patří, není
+    naše úvaha; portál Szklarské Poręby uvádí, že objekt stojí na území
+    enklávy Karkonoského národního parku, nad ústím potoka Szklarka do řeky
+    Kamienné. Administrativně spadá pod Piechowice v Dolnoslezském vojvodství.
+  - >-
+    Občerstvení tu funguje déle než dvě stě let, i když ne pořád ve stejné
+    podobě. Podle PTTK stála na tomhle místě už od roku 1824 malá boudička s
+    nápoji a teprve na jejím místě dokončili v roce 1868 budovu dnešního
+    schroniska. Portál Korona Gór Polski dodává, že vznikla jako hostinec pod
+    jménem Kochellfalbaude a že byla mnohokrát přestavována, než se z hostince
+    stalo turistické schronisko; ten původní název nese ze všech dosažitelných
+    zdrojů jediný, takže ho uvádíme s výhradou. Kdy k přestavbám došlo, zdroj
+    neuvádí. Jediný pozdější zásah, který prameny datují, je důkladná oprava a
+    modernizace v roce 1963.
+  - >-
+    Dnes objekt spravuje PTTK. Nocleh je tu podle jeho vlastní karty skromný,
+    v turistickém standardu, ne hotelový: dvanáct lůžek, na kterých se shodují
+    jak Korona Gór Polski, tak portál Szklarské Poręby. Ve skladbě pokojů si
+    prameny úplně neodpovídají — PTTK mluví o dvou- a čtyřlůžkových pokojích v
+    turistickém standardu, Korona Gór Polski o dvoulůžkových pokojích s
+    vlastní koupelnou. Obojí uvádíme tak, jak to zdroje říkají, a
+    nesjednocujeme to.
+  - >-
+    Pro kolemjdoucího je podstatný bufet, který portál Szklarské Poręby jmenuje
+    ve výčtu vybavení spolu s koupelnami a toaletami; PTTK k tomu uvádí, že
+    objekt nabízí celodenní stravování. Poctivě ale dodáváme, že žádný
+    z dosažitelných pramenů výslovně nepíše, že bufet obsluhuje i turisty bez
+    noclehu — vyplývá to z povahy bufetu a z toho, že jde o schronisko PTTK
+    přímo u frekventovaného vodopádu, což je úsudek, ne doklad. Otvírací dobu
+    neuvádí nikdo, takže ji tu nenajdete.
+  - >-
+    Kochanówka má být podle Korony Gór Polski otevřená celoročně. Údaje na
+    téhle stránce pocházejí ze stránek PTTK, ze dvou polských turistických
+    portálů a z OpenStreetMap a redakce je zatím neověřila vlastním dotazem
+    ani návštěvou. Prameny se rozcházejí v telefonním čísle a taky v tom,
+    která webová stránka objektu patří: uvádíme stránku PTTK jako správce
+    objektu, druhou variantu z OpenStreetMap se nám ověřit nepodařilo. Než sem
+    doplníme ověřené údaje, doporučujeme si nocleh i provoz bufetu potvrdit
+    předem; kapacita je malá a redakce ji zatím neověřila.
+zdroje:
+  - popis: >-
+      PTTK — karta objektu „Schronisko PTTK „Kochanówka"" (oficiální název,
+      adresa, výška, poloha pod vodopádem Szklarki, celodenní stravování,
+      pokoje 2 a 4lůžkové, historie 1824 / 1868 / 1963); oficiální zdroj
+      správce, verified:false
+    url: https://pttk.pl/accommodations/schronisko-pttk-kochanowka/
+  - popis: >-
+      Sudeckie Hotele i Schroniska PTTK — „Schronisko PTTK „Kochanówka""
+      (telefon +48 601420347, tatáž historie a popis); oficiální zdroj
+      správce, verified:false
+    url: https://www.pttk.jgora.pl/schronisko-pttk-kochanowka/
+  - popis: >-
+      Korona Gór Polski — „Schronisko PTTK „Kochanówka"" (12 lůžek, dvoulůžkové
+      pokoje s koupelnami, celoroční dostupnost, plné stravování, původní název
+      Kochellfalbaude); sekundární zdroj, verified:false
+    url: https://korona-gor-polski.pl/schronisko/schronisko-pttk-kochanowka/
+  - popis: >-
+      Szklarska Poręba — oficiální turistický portál, „Schronisko Kochanówka"
+      (12 lůžek, koupelny, WC a bufet, poloha v enklávě Karkonoského
+      národního parku nad ústím Szklarky do Kamienné); sekundární zdroj,
+      verified:false
+    url: https://szklarska-poreba.pl/atrakcje/schronisko-kochanowka
+  - popis: >-
+      OpenStreetMap, uzel 1965043685 (GPS, provozovatel PTTK, telefon
+      +48 781 024 159, web kochanowka.wszklarskiej.net) — data © přispěvatelé
+      OpenStreetMap, ODbL 1.0; verified:false
+    url: https://www.openstreetmap.org/node/1965043685
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/kochanowka.yaml (kandidát OSM, DATA-01,
+  stav dat 2026-07-20) po rešerši 25. 7. 2026. Povýšení schválil Michal
+  en bloc v chatu 20. 7. 2026 (kategorie ✅ přehledu docs/DATA-03-prehled.md).
+
+  ✅ KLÍČ ZAŘAZENÍ SPLNĚN, ale slaběji než u Vrbatovy a Černé boudy: bufet je
+  doložen výčtem vybavení na szklarska-poreba.pl („łazienki, WC i bufet")
+  a PTTK uvádí „całodzienne wyżywienie", ŽÁDNÝ zdroj však doslovně neříká, že
+  obsluhuje i kolemjdoucí bez noclehu. V profilu je to otevřeně přiznáno jako
+  úsudek, ne doklad. PRIORITA pro DATA-04.
+
+  ✅ GEOGRAFIE VYŘEŠENA: kandidát nesl otázku, zda objekt v 510 m patří do
+  Krkonoš. Szklarska-poreba.pl uvádí, že leží „na terenie enklawy
+  Karkonoskiego Parku Narodowego" — tím je příslušnost doložena zdrojem, ne
+  jen naším odhadem. (Kontrast s Raisovou chatou na Zvičině, která do Krkonoš
+  NEpatří — viz její kandidátský soubor.)
+
+  ⚠ ROZPOR telefon: +48 601420347 (pttk.jgora.pl, správce) vs. +48 781 024 159
+  (OSM). Do profilu vzat kontakt PTTK. Web: PTTK vlastní stránku vs. OSM
+  kochanowka.wszklarskiej.net — do profilu vzata stránka PTTK, doména
+  z OSM neověřena (ze sandboxu byla kochanowka.com.pl nedostupná).
+
+  ⚠ ROZPOR skladba pokojů: PTTK „pokoje 2 i 4 – osobowe w standardzie
+  turystycznym" vs. korona-gor-polski.pl „12 miejsc noclegowych – w tym
+  w pokojach dwuosobowych z łazienkami". Nesjednoceno, obojí v profilu.
+
+  ⚠ K PROVĚŘENÍ: dřívější rešeršní průchod zaznamenal signál, že nocleh nemusí
+  být turistům běžně dostupný (stav k podzimu 2024). Tento signál se
+  25. 7. 2026 NEPODAŘILO znovu doložit citací a korona-gor-polski.pl naopak
+  uvádí „Aktualnie: otwarte" a „Dostępność: całoroczne". Do profilu proto
+  nešel; v textu je jen obecné doporučení dostupnost potvrdit předem.
+
+  Původní název Kochellfalbaude nese jediný zdroj (korona-gor-polski.pl) —
+  veden jako alias s poznámkou „neověřeno", ne jako fakt.
+
+  Otvírací doba bufetu NEDOLOŽENA žádným zdrojem — pole nevyplněno.
+
+  K dotažení (DATA-04, verified:true): veřejná přístupnost a otvírací doba
+  bufetu (priorita — klíč zařazení), dostupnost noclehu, platný telefon a web,
+  skladba pokojů. Hero fotka: kandidáti DATA-02. Turistická vizitka /
+  znaczek: prověřit v katalogu znaczki-turystyczne.pl (publikace obrázků
+  znaczků kryta souhlasem Turistické známky s.r.o. z 22. 7. 2026, který
+  pokrývá i znaczki-turystyczne.pl).

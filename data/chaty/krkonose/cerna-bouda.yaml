@@ -1,0 +1,332 @@
+# Černá bouda — profil povýšen z kandidáta (externí katalog ČR/SK, jistota B)
+# po rešerši 25. 7. 2026. Klíč zařazení SPLNĚN doslovnou větou z webu objektu:
+# „Bistro je součástí hotelu Černá Bouda a nabízí nejen našim hotelovým hostům,
+# ale všem návštěvníkům Černé hory nápoje, jídlo a občerstvení."
+# Vše verified:false — redakce zatím neověřila vlastním dotazem ani návštěvou.
+# ROZPORY: kapacita 123 vs. 136 (proto NEVYPLNĚNA), kontakty web objektu vs.
+# janskelazne.cz. Pozor: www.cernabouda.cz přesměrovává (302) na
+# hotel-cerna-bouda.cz — v profilu je cílová doména. Nedomýšlet!
+
+nazev: Černá bouda
+slug: cerna-bouda
+zeme: cz
+typ: horsky-hotel
+stav: v-provozu
+aliasy:
+  - nazev: Hotel Černá Bouda
+    poznamka: dnešní obchodní název dle webu objektu
+  - nazev: Černá bouda na Černé pasece
+    poznamka: historické označení dle místa (Černá paseka na temeni Černé hory)
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Roku 1900 k boudě přibylo vypouklé panoramatické zrcadlo, v němž se
+      hostům zobrazovala krajina
+    kategorie: jine
+    zdroj: Turistika.cz „Černá bouda na Černé pasece a její historie" (sekundární zdroj, verified:false)
+  - text: >-
+      Po roce 1900 u boudy vznikla samostatná poštovna, která fungovala až do
+      roku 1937
+    kategorie: jine
+    zdroj: Turistika.cz „Černá bouda na Černé pasece a její historie" (sekundární zdroj, verified:false)
+  - text: >-
+      Bistro je podle webu objektu otevřené nejen hotelovým hostům, ale všem
+      návštěvníkům Černé hory
+    kategorie: gastro
+    zdroj: hotel-cerna-bouda.cz, stránka Bistro (web objektu, verified:false)
+  - text: >-
+      V zimě k hotelu nevede sjízdná cesta — web objektu upozorňuje, že
+      v zimě nejsou dostupní žádným vozidlem
+    kategorie: jine
+    zdroj: hotel-cerna-bouda.cz (web objektu, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.654351
+lng: 15.746924
+vyska: 1260
+obec: Janské Lázně
+overeniLokace:
+  source: >-
+    Adresa „Hotel Černá Bouda, Horská 171, 54225 Janské Lázně" shodně dle webu
+    objektu i ceskehory.cz. Výška 1 260 m shodně dle webu objektu
+    („v nadmořské výšce 1260 m"), janskelazne.cz („pod vrcholem Černé hory
+    (1 260 m n. m.)") a ceskehory.cz; turistika.cz uvádí pásmo 1 250–1 260 m.
+    Pozor: web objektu na jiném místě zmiňuje „kousek od vrcholu Černé hory
+    (1300 mnm)" — to je výška HORY, ne boudy. GPS 50,654351 / 15,746924 dle
+    ceskehory.cz, turistika.cz uvádí shodně zaokrouhleně 50,654 / 15,747.
+    Sekundární zdroje + web objektu, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# `kapacita` ZÁMĚRNĚ NEVYPLNĚNA — zdroje se rozcházejí (123 vs. 136 lůžek)
+# a web objektu počet lůžek neuvádí. Nedomýšlet.
+nocleh: ano
+pokoje:
+  - typ: >-
+      Dvoulůžkové a čtyřlůžkové pokoje včetně dvou apartmánů, některé
+      s možností přistýlky
+overeniNocleh:
+  source: >-
+    Janskelazne.cz uvádí „kapacitu ubytování 123 lůžek" a skladbu „dvoulůžkový
+    a čtyřlůžkový pokoje včetně 2 apartmánů, některé z pokojů s možností
+    přistýlky"; ceskehory.cz uvádí „kapacita: 136 lůžek". ROZPOR — kapacita
+    proto vědomě NEVYPLNĚNA. Web objektu mluví jen o „několika typech
+    komfortních pokojů" a o pobytech pro školy v přírodě, sportovní oddíly
+    a firemní kolektivy, konkrétní počet lůžek neuvádí. Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    KLÍČ ZAŘAZENÍ SPLNĚN doslovnou větou z webu objektu (stránka Bistro):
+    „Bistro je součástí hotelu Černá Bouda a nabízí nejen našim hotelovým
+    hostům, ale všem návštěvníkům Černé hory nápoje, jídlo a občerstvení."
+    Otvírací doba tamtéž: „po-ne: 09.00 - 18.00hod." Nabídka dle webu: polévky
+    (gulášová, čočková, dršťková, kyselica, bramboračka), hotová jídla dle
+    nabídky dne, smažený sýr, kuřecí řízek, hranolky, tortilla, bageta
+    s masem, párek v rohlíku a moučník; čepované pivo a limonády. Janskelazne.cz
+    vedle toho jmenuje hotelovou restauraci, bar, snack bar a bistro. Web
+    objektu, verified:false — ověřit
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: |-
+  Bistro po–ne 9.00–18.00 (dle webu objektu, redakčně neověřeno).
+  Provozní doba hotelové restaurace pro neubytované nedoložena.
+zimniProvoz: |-
+  V zimě k hotelu nevede sjízdná cesta — web objektu upozorňuje, že
+  v zimě nejsou dostupní žádným vozidlem. Podle janskelazne.cz obstará
+  hotel v zimním období dopravu od horní stanice lanovky sněžnou rolbou
+  či skútrem. Redakčně neověřeno.
+kontakty:
+  telefon: '+420 605 500 833'
+  email: recepce-cernabouda@seznam.cz
+  web: https://www.hotel-cerna-bouda.cz/
+overeniProvoz:
+  source: >-
+    Kontakty převzaty z webu objektu (telefon +420 605 500 833, e-mail
+    recepce-cernabouda@seznam.cz). ROZPOR: janskelazne.cz uvádí jiné spojení —
+    tel. +420 733 645 729 a +420 603 416 095, e-mail
+    hotel-cerna-bouda@janskelazne.cz; do profilu vzaty údaje z webu objektu
+    jako bližší zdroji. Celoroční provoz dle externího katalogu (jistota B)
+    a dle celoročního provozu lanovky (janskelazne.cz). Pozor: doména
+    www.cernabouda.cz z kandidáta přesměrovává (302) na hotel-cerna-bouda.cz.
+    Z webu objektu nepřevzato parkovné 200 Kč/den (ceny se mění).
+    Web objektu + sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: |-
+  Mimo zimu se dá podle ceskehory.cz dojet až k hotelu autem, ale „pouze
+  ubytovaní". Web objektu upozorňuje, že v zimě nejsou dostupní žádným
+  vozidlem. Redakčně neověřeno.
+lanovka: >-
+  Černohorský express — osmimístná kabinová lanovka z Janských Lázní
+  s celoročním provozem; dle webu objektu je poslední jízda v 17.30
+verejnaDoprava:
+  zastavka: Janské Lázně (dolní stanice lanovky Černohorský express)
+overeniPristup:
+  source: >-
+    Janskelazne.cz: „Přístup do hotelu zajišťuje nový 8-mi místní kabinová
+    lanová dráha s celoročním provozem - Cernohorský express. V zimním období
+    obstará hotel dopravu od horní stanice lanovky sněžnou rolbou či skútrem.
+    V letním období se dopravíte k hotelu os. autem či krátkou procházkou."
+    Web objektu: „UPOZORŇUJEME, ŽE V ZIMĚ NEJSME DOSTUPNÍ ŽÁDNÝM VOZIDLEM!"
+    a „Poslední jízda lanové dráhy 17:30". Ceskehory.cz: „Pokud není sníh
+    dostanete se až k hotelu autem (pouze ubytovaní)." Web objektu +
+    sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# `rokVzniku` = 1888, tedy otevření hostince na tomto místě. POZOR: dnešní
+# budova je z roku 1993 — stará bouda byla roku 1984 zdemolována. Nespojitost
+# je vidět v milnících i v textu profilu, aby rok 1888 nikoho nemátl.
+rokVzniku: 1888
+milniky:
+  - rok: 1785
+    udalost: >-
+      Černá paseka na temeni Černé hory, vzniklá vykácením kvůli dřevu pro
+      stříbrné doly v Kutné Hoře, byla podle josefínského katastru do roku 1785
+      zcela pustá; brzy poté zde postavili letní hájenku
+  - rok: 1888
+    udalost: >-
+      Hospodský a řezník Robert Bönsch otevřel v přizpůsobené hájence sezónní
+      výletní hostinec
+  - rok: 1900
+    udalost: K boudě přibylo vypouklé panoramatické zrcadlo
+  - rok: 1908
+    udalost: Robert Bönsch začal boudu provozovat i v zimě
+  - rok: 1928
+    udalost: >-
+      Po dostavbě lanovky na Černou horu příliv návštěvníků ještě vzrostl
+  - rok: 1937
+    udalost: >-
+      Zanikla samostatná poštovna, která u boudy fungovala od doby po roce 1900
+  - udalost: Po druhé světové válce boudu chvíli provozoval svaz lyžařů
+  - rok: 1977
+    udalost: Bouda byla v natolik nevyhovujícím stavu, že byla uzavřena
+  - rok: 1984
+    udalost: Bouda byla zdemolována
+  - rok: 1993
+    udalost: Na stávajícím místě byl dostavěn nový horský hotel
+  - rok: 2005
+    udalost: Hotel prošel rekonstrukcí
+overeniHistorie:
+  source: >-
+    Turistika.cz „Černá bouda na Černé pasece a její historie" — zdroj
+    výslovně identifikuje objekt jako dnešní hotel Černá Bouda na Černé hoře
+    u Janských Lázní (GPS 50,654 / 15,747, 1 250–1 260 m) a nese celou
+    chronologii: pustá paseka do roku 1785 dle josefínského katastru a poté
+    letní hájenka; roku 1888 sezónní výletní hostinec Roberta Bönsche
+    v přizpůsobené hájence; koncem 19. století vedle stávající boudy nová
+    netradiční budova; 1900 vypouklé panoramatické zrcadlo; po roce 1900
+    poštovna fungující do roku 1937; 1908 zahájen i zimní provoz; po dostavbě
+    lanovky roku 1928 vzrostl příliv návštěvníků; po druhé světové válce boudu
+    chvíli provozoval svaz lyžařů; 1977 uzavření pro nevyhovující stav; 1984
+    demolice; 1993 dostavěn nový horský hotel; 2005 rekonstrukce.
+    Janskelazne.cz potvrzuje samostatně „v roce 2005 zrekonstruovaný horský
+    hotel". Milník o svazu lyžařů zapsán BEZ ROKU — zdroj uvádí jen „po druhé
+    světové válce" (nedomýšlet). Sekundární zdroje, verified:false — ověřit
+    primárním pramenem
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hotel ve výšce 1 260 m kousek pod vrcholem Černé hory nad Janskými
+  Lázněmi, dostupný lanovkou Černohorský express. Sezónní hostinec tu poprvé
+  otevřeli roku 1888, stará bouda ale roku 1984 padla a dnešní budovu
+  dostavěli až roku 1993. Bistro je podle webu objektu otevřené všem
+  návštěvníkům Černé hory, nejen ubytovaným.
+text:
+  - >-
+    Černá bouda stojí ve výšce 1 260 metrů kousek pod vrcholem Černé hory nad
+    Janskými Lázněmi, na adrese Horská 171. Výšku uvádějí shodně web objektu,
+    oficiální portál města Janské Lázně i Českéhory.cz; jen pozor na údaj 1
+    300 metrů, který se na webu hotelu také objevuje — ten patří vrcholu hory,
+    ne boudě.
+  - >-
+    Historii tohoto místa podrobně popisuje Turistika.cz; primárním pramenem
+    ji zatím ověřenou nemáme, ale stojí za převyprávění. Černá paseka na
+    temeni hory vznikla vykácením lesa kvůli dřevu pro stříbrné doly v Kutné
+    Hoře a podle josefínského katastru byla do roku 1785 zcela pustá. Brzy
+    poté tu postavili letní hájenku. Zhruba o sto let později v ní hospodský a
+    řezník Robert Bönsch otevřel sezónní výletní hostinec — psal se rok 1888.
+    Koncem 19. století vedle stávající boudy vyrostla nová, netradiční budova;
+    kdo ji postavil, zdroj neuvádí. Roku 1900 k boudě přibylo vypouklé
+    panoramatické zrcadlo a krátce nato tu vznikla i samostatná poštovna,
+    která vydržela do roku 1937.
+  - >-
+    Rok 1908 znamenal zásadní obrat: Bönsch začal boudu provozovat i v zimě.
+    Po dostavbě lanovky na Černou horu v roce 1928 příliv návštěvníků ještě
+    vzrostl. Po druhé světové válce boudu chvíli provozoval svaz lyžařů —
+    přesné roky zdroj neuvádí, takže je neuvádíme ani my. Pak přišel útlum:
+    v roce 1977 byla bouda v tak nevyhovujícím stavu, že ji zavřeli, a v roce
+    1984 ji zbourali. Dnešní budova tedy s tou Bönschovou nemá společného nic
+    než místo — nový horský hotel tu dostavěli až v roce 1993 a rekonstrukcí
+    prošel v roce 2005.
+  - >-
+    Ubytování je hotelové: podle portálu města Janské Lázně jde o dvoulůžkové
+    a čtyřlůžkové pokoje včetně dvou apartmánů, u některých s možností
+    přistýlky; web hotelu mluví jen obecně o několika typech komfortních
+    pokojů. Kolik je tu přesně lůžek, doložit neumíme — portál města uvádí
+    123, Českéhory.cz 136 a web hotelu žádné číslo nenese, takže tu přesný
+    počet raději neuvádíme, než abychom mezi čísly vybírali. Hotel se podle
+    vlastního webu orientuje mimo jiné na školy v přírodě, sportovní oddíly a
+    firemní kolektivy.
+  - >-
+    Pro kolemjdoucího turistu je podstatné bistro, protože web hotelu u něj
+    přímo píše, že nabízí nejen hotelovým hostům, ale všem návštěvníkům Černé
+    hory nápoje, jídlo a občerstvení. Otevřeno má podle téhož zdroje denně od
+    devíti do šesti. Z nabídky jmenuje polévky — gulášovou, čočkovou,
+    dršťkovou, kyselicu, bramboračku — hotová jídla dle nabídky dne, smažený
+    sýr, kuřecí řízek, hranolky a moučník. Vedle bistra existuje ještě
+    hotelová restaurace; jestli je otevřená i neubytovaným, doložené nemáme.
+  - >-
+    Přístup je věc, kterou je dobré si rozmyslet dopředu, protože se mění s
+    ročním obdobím. Podle portálu města Janské Lázně sem jezdí osmimístná
+    kabinová lanovka Černohorský express z Janských Lázní s celoročním
+    provozem; poslední jízda je podle webu hotelu v 17.30. Mimo zimu se dá
+    podle serveru Českéhory.cz dojet až nahoru autem, ale jen ubytovaným. V
+    zimě to neplatí vůbec: web objektu na to upozorňuje velkými písmeny — v
+    zimě nejsou dostupní žádným vozidlem. Portál města k tomu dodává, že v
+    zimním období obstará hotel dopravu od horní stanice lanovky sněžnou
+    rolbou nebo skútrem.
+  - >-
+    Údaje na téhle stránce pocházejí z webu objektu a ze tří sekundárních
+    zdrojů — jsou to server Turistika.cz, oficiální portál města Janské Lázně
+    a server Českéhory.cz — a redakce je zatím neověřila vlastním dotazem ani
+    návštěvou. Prameny se rozcházejí nejen v kapacitě, ale i v kontaktech:
+    portál města uvádí jiný telefon a jiný e-mail než hotel sám. Spolehli jsme
+    se na spojení uvedené na webu hotelu. Než sem doplníme ověřené údaje,
+    doporučujeme si nocleh i provoz bistra potvrdit přímo u hotelu.
+zdroje:
+  - popis: >-
+      Hotel Černá Bouda — web objektu, stránka Bistro (doslovná věta o tom, že
+      bistro slouží i všem návštěvníkům Černé hory, otvírací doba 9.00–18.00,
+      nabídka) a úvodní stránka (výška, adresa, kontakty, poslední jízda
+      lanovky, upozornění na zimní nedostupnost); web objektu, verified:false
+    url: https://www.hotel-cerna-bouda.cz/bistro/
+  - popis: >-
+      Turistika.cz — „Černá bouda na Černé pasece a její historie" (celá
+      chronologie 1785–2005, GPS, výškové pásmo); sekundární zdroj,
+      verified:false
+    url: https://www.turistika.cz/mista/cerna-bouda-na-cerne-pasece-a-jeji-historie/detail
+  - popis: >-
+      Janské Lázně — oficiální portál města, stránka „Hotel Černá Bouda"
+      (výška, kapacita 123 lůžek a skladba pokojů, lanovka Černohorský express,
+      zimní doprava rolbou či skútrem, rekonstrukce 2005, kontakty);
+      sekundární zdroj, verified:false
+    url: https://www.janskelazne.cz/cz/hotel-cerna-bouda-cerna-hora-18.html
+  - popis: >-
+      Českéhory.cz — „Hotel Černá Bouda" (výška, adresa, GPS, kapacita 136
+      lůžek, dojezd autem jen pro ubytované); sekundární zdroj, verified:false
+    url: https://www.ceskehory.cz/ubytovani/hotel-cerna-bouda-janske-lazne.html
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/cerna-bouda.yaml (externí katalog ČR/SK,
+  jistota B) po rešerši 25. 7. 2026.
+
+  ✅ KLÍČ ZAŘAZENÍ SPLNĚN doslovnou větou z webu objektu: „Bistro je součástí
+  hotelu Černá Bouda a nabízí nejen našim hotelovým hostům, ale všem
+  návštěvníkům Černé hory nápoje, jídlo a občerstvení." Otvírací doba
+  „po-ne: 09.00 - 18.00hod." tamtéž.
+
+  ⚠ METODICKÁ POZNÁMKA k rešerši: první shrnutí ze stránky janskelazne.cz
+  tvrdilo, že restaurace obsluhuje i neubytované — cílené opětovné načtení to
+  NEDOLOŽILO. Do profilu je proto vzata jen doslovná věta o BISTRU z webu
+  objektu; u hotelové restaurace veřejná přístupnost zůstává nedoložena.
+  Obecné poučení: než se převezme tvrzení „obsluhuje veřejnost", vyžádat si
+  doslovnou citaci.
+
+  ⚠ ROZPOR kapacita: 123 lůžek (janskelazne.cz) vs. 136 lůžek (ceskehory.cz),
+  web objektu číslo nenese → `kapacita` VĚDOMĚ NEVYPLNĚNA.
+
+  ⚠ ROZPOR kontakty: web objektu +420 605 500 833 /
+  recepce-cernabouda@seznam.cz vs. janskelazne.cz +420 733 645 729,
+  +420 603 416 095 / hotel-cerna-bouda@janskelazne.cz. Vzat web objektu.
+
+  ⚠ DOMÉNA: kandidát nesl https://www.cernabouda.cz/, která přesměrovává (302)
+  na hotel-cerna-bouda.cz — v profilu je cílová doména.
+
+  ⚠ rokVzniku 1888 = otevření hostince na tomto místě, NE stáří dnešní budovy
+  (stará bouda 1984 zdemolována, nový hotel dostavěn 1993). Nespojitost je
+  výslovně v milnících i v textu profilu.
+
+  Milník „svaz lyžařů" zapsán bez roku — zdroj uvádí jen „po druhé světové
+  válce". Z webu objektu nepřevzato parkovné 200 Kč/den (ceny se mění).
+  Provozovatel dle ceskehory.cz „Aspcect Dew s.r.o." (patrně překlep zdroje) —
+  do profilu nevzat, ověřit v rejstříku.
+
+  K dotažení (DATA-04, verified:true): kapacita, otvírací doba a veřejná
+  přístupnost hotelové restaurace, potvrzení kontaktů, sezónní režim lanovky.
+  Hero fotka: kandidáti DATA-02. Turistická známka: v katalogu známek
+  z Krkonoš pro tento objekt zatím nedohledána — prověřit.
