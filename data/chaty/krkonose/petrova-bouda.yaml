@@ -109,10 +109,10 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Novodobě obnovená bouda na hřebeni Krkonoš u polské hranice nad Špindlerovým
-  Mlýnem (kolem 1 288 m). Původní budovu zničil požár v roce 2011, nová vznikla
-  2020. Nabízí kolem 96 lůžek, wellness a veřejnou útulnu; restaurace slouží jen
-  ubytovaným. Nese turistickou známku č. 671.
+  Novodobě obnovená bouda na hřebeni Krkonoš u polské hranice, adresou ve
+  Špindlerově Mlýně (kolem 1 288 m). Původní budovu zničil požár v roce 2011,
+  nová vznikla 2020. Nabízí kolem 96 lůžek, wellness a veřejnou útulnu;
+  restaurace slouží jen ubytovaným. Nese turistickou známku č. 671.
 text:
   - >-
     Petrova bouda, uváděná také v množném čísle jako Petrovy Boudy, stojí
@@ -122,13 +122,13 @@ text:
     potvrzenou z dalšího pramene.
   - >-
     Dnešní podoba boudy je nová. Původní historickou budovu zničil 31.
-    července 2011 požár a moderní stavba, která ji na témže místě nahradila,
-    byla podle Kudy z nudy dokončena v květnu 2020. Kořeny místa ovšem sahají
-    mnohem hlouběji: první zmínky se vážou k roku 1790, kdy tu stála letní
-    chata, celoročně obývanou boudu tu v roce 1811 postavil Johann Pittermann
-    a z roku 1887 je doložena nejstarší chráněná podoba boudy. Celou tuhle
-    časovou osu přebíráme ze sekundárního média a primárním pramenem zatím
-    ověřená není.
+    července 2011 požár a moderní stavbu, která ji nahradila, dokončili podle
+    Kudy z nudy v květnu 2020; jestli nová bouda stojí přesně na místě té
+    staré, naše prameny neříkají. Kořeny místa ovšem sahají mnohem hlouběji:
+    první zmínky se vážou k roku 1790, kdy tu stála letní chata, celoročně
+    obývanou boudu tu v roce 1811 postavil Johann Pittermann a z roku 1887 je
+    doložena nejstarší chráněná podoba boudy. Celou tuhle časovou osu
+    přebíráme ze sekundárního média a primárním pramenem zatím ověřená není.
   - >-
     Ubytování má dohromady zhruba šestadevadesát lůžek. V hlavní budově jich
     je dvaapadesát, z toho čtyřicet v ubytovací části a dvanáct v noclehárně;
@@ -141,13 +141,19 @@ text:
   - >-
     Nedoloženého je tu zatím dost. Profil stojí prakticky na jediném
     sekundárním médiu, které redakce neověřila vlastním dotazem ani návštěvou,
-    a chybí nám doložený popis přístupových cest i provozní sezóny. Před
-    cestou proto doporučujeme potvrdit si přímo u boudy zejména otvírací dobu
-    útulny a to, zda restaurace opravdu vaří jen pro ubytované.
+    a chybí nám doložený popis přístupových cest i provozní sezóny. Rozcházejí
+    se i prameny v tom, která internetová adresa boudě patří: Kudy z nudy
+    uvádí doménu petrovyboudy.cz, kdežto katalogový podklad a mapová data
+    nesou doménu petrovabouda.cz — v kontaktech vedeme první variantu,
+    ověřená ale není. Před cestou proto doporučujeme potvrdit si přímo u boudy
+    zejména otvírací dobu útulny a to, zda restaurace opravdu vaří jen pro
+    ubytované.
 zdroje:
   - popis: >-
       Kudy z nudy — „Petrova bouda ve Špindlerově Mlýně" (historie, kapacita,
-      útulna, kontakty); sekundární médium, verified:false, ověřit primárně
+      útulna, kontakty; jako web boudy uvádí petrovyboudy.cz — katalogový
+      podklad a mapová data proti tomu nesou petrovabouda.cz, platná varianta
+      NEOVĚŘENA); sekundární médium, verified:false, ověřit primárně
     url: https://www.kudyznudy.cz/aktivity/petrova-bouda-ve-spindlerove-mlyne
   - popis: 'Petrovy Boudy — Wikipedie (kontext historie a přestavby)'
     url: https://cs.wikipedia.org/wiki/Petrovy_Boudy
@@ -167,3 +173,13 @@ interniPoznamky: >-
   ověřit platnou. K dotažení (DATA-04): GPS, potvrdit výšku, kapacity, provozní
   sezónu. Hero fotka: kandidáti DATA-02. Známka č.671 — obrázek připraven
   v data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c671-petrova-bouda.png.
+
+  AUDIT 25. 7. 2026 (přísný průchod, 3 nálezy, všechny opraveny): (1) text[1]
+  tvrdil, že nová budova nahradila vyhořelou „na témže místě" — to nenese žádný
+  pramen a přitom právě tahle spojka svařovala linku 1790–1811–1887 s přestavbou
+  po roce 2011; formulace vypuštěna a mezera přiznána. (2) text[3] vyjmenovával,
+  co je nedoložené, ale rozpor v doméně (petrovyboudy.cz × petrovabouda.cz)
+  mlčky vynechával, ačkoli jedna z variant je publikovaná v kontakty.web —
+  doplněno. (3) perex umisťoval boudu „nad Špindlerovým Mlýnem"; doložená je
+  jen obec a hřeben u hranice, GPS je záměrně prázdná — přeformulováno na
+  „adresou ve Špindlerově Mlýně".

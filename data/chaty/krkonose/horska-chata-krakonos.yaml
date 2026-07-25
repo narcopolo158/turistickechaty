@@ -67,8 +67,9 @@ overeniProvoz:
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Horská chata ve výšce 1 127 m n. m. na Bobích loukách mezi Kolínskou a
-  Pražskou boudou u Pece pod Sněžkou. Údaje o provozu pocházejí z roku
-  2019 a web chaty je nedostupný — aktuální stav před cestou ověřte.
+  Pražskou boudou; do které obce patří, si prameny odporují. Údaje o provozu
+  pocházejí z roku 2019 a web chaty je nedostupný — aktuální stav před
+  cestou ověřte.
 text:
   - >-
     Horská chata Krakonoš stojí ve výšce 1 127 m n. m. na Bobích loukách mezi
@@ -116,3 +117,4 @@ interniPoznamky: |-
   Kontakty z OSM do profilu NEpřevzaty (telefon +420 724 101 561, e-mail info@chatakrakonos.eu — obojí vázané na mrtvou doménu, stav OSM dat 2026-06-12); až DATA-04 potvrdí platné kontakty, doplnit.
   Katastr: popisy fotek ŠJů na Commons uvádějí „Černý Důl, Lučiny, čp. 186", treking.cz „Bobí louky u Pece pod Sněžkou" — obě verze popisují touž enklávu mezi Kolínskou a Pražskou boudou (fotky Pražské boudy jsou 130–270 m od bodu); oficiální adresu doložit v DATA-04, pole obec zatím nevyplněno.
   Existence budovy: fotky ŠJů z 27. 5. 2023 (hero + (01)) — budova v tu dobu stála; o provozu neříkají nic.
+  AUDIT 25. 7. 2026 (přísný průchod, 1 nález, opraven): perex tvrdil polohu „u Pece pod Sněžkou" jako fakt, ačkoli pole obec je kvůli doloženému rozporu (treking.cz Pec pod Sněžkou × popisy fotek na Commons Černý Důl / Lučiny) záměrně prázdné a text[0] ten rozpor o dvě věty dál přiznává. Tichý výběr jedné z verzí v perexu odstraněn — perex teď nese jen doloženou polohu (Bobí louky mezi Kolínskou a Pražskou boudou) a rozpor ohlašuje.

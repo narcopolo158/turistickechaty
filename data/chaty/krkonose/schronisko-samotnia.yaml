@@ -27,7 +27,11 @@ overeniHistorie:
     https://schroniskosamotnia.com/historia/ (doplňková fakta 2026-07-21,
     katalog ChatGPT, verified:false) · milník 1934 (poslední rozšíření) ze
     zdrojového průzkumu 2026-07-22 — Krkonose.eu „Polské Krkonoše" (sekundární
-    médium, verified:false, před publikací ověřit primárním pramenem)
+    médium, verified:false). POZNÁMKA K PUBLIKACI 25. 7. 2026: milník 1934 byl
+    publikován i bez potvrzení primárním pramenem, ale ve veřejném textu je
+    slabina přiznaná („jde ovšem o sekundární médium, jehož údaj zatím nemáme
+    potvrzený primárním pramenem"). Ověření primárním pramenem tím nepadá —
+    zůstává jako úkol pro DATA-04.
   verified: false
   checked: "2026-07-22"
 kapacita: 49  # kapacita lůžek: https://schroniskosamotnia.com/oferta/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
@@ -56,7 +60,11 @@ overeniLokace:
   checked: '2026-07-20'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# Kapacita nedoložena (obsah stránek neotevřen) — nedomýšlet.
+# Kapacita (49) je převzatá z katalogového podkladu, který se odvolává na
+# https://schroniskosamotnia.com/oferta/ — tu stránku jsme sami neotevřeli,
+# takže údaj je nepotvrzený, ne chybějící. Viz komentář u pole kapacita.
+# (Oprava 25. 7. 2026: dřívější znění tvrdilo „kapacita nedoložena", což
+# odporovalo poli kapacita: 49 o dvacet řádků výš.)
 nocleh: ano
 overeniNocleh:
   source: >-
@@ -84,27 +92,30 @@ overeniProvoz:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Schronisko PTTK v kotli Małego Stawu na polské straně Krkonoš, podle
-  titulku bryla.pl „jedno z najstarszych schronisk w Polsce". Kapacitu a
+  Schronisko PTTK nad jezerem Mały Staw na polské straně Krkonoš, podle
+  titulku na Bryła.pl „jedno z najstarszych schronisk w Polsce". Kapacitu a
   otvíračku doporučujeme před cestou ověřit na webu schroniska.
 text:
   - >-
-    Schronisko Samotnia stojí u břehu jezera Mały Staw v nadmořské výšce 1 195
-    metrů nad Karpaczem, na polské straně Krkonoš. U provozovatele vystupuje
-    pod úplnějším názvem Schronisko PTTK „Samotnia" a vedou ho jak přehled
-    ubytování PTTK, tak přehled Sudeckie Hotele i Schroniska PTTK.
+    Schronisko Samotnia stojí nad jezerem Mały Staw v nadmořské výšce 1 195
+    metrů, v katastru Karpacze na polské straně Krkonoš. U provozovatele
+    vystupuje pod úplnějším názvem Schronisko PTTK „Samotnia" a vedou ho jak
+    přehled ubytování PTTK, tak přehled Sudeckie Hotele i Schroniska PTTK.
   - >-
-    Historie místa sahá hluboko do minulosti. K roku 1670 je doložena původní
-    bouda správce Malého Stawu; údaj uvádí web schroniska i KPN. Dnešní podobu
-    dala schronisku podle Krkonose.eu poslední velké rozšíření v roce 1934 —
-    jde ovšem o sekundární médium, jehož údaj zatím nemáme potvrzený primárním
-    pramenem. Provozovatel schronisko označuje za jedno z nejstarších horských
-    útočišť v Polsku a v podobném duchu ho popisuje i titulek článku na
-    Bryła.pl; obojí je převzaté tvrzení, ne ověřený fakt.
+    Historie místa sahá hluboko do minulosti. K roku 1670 se váže původní
+    bouda správce Malého Stawu — letopočet nese katalogový podklad, který se
+    odvolává na stránky schroniska a na web kpn.gov.pl; ani jednu z nich jsme
+    ale sami neotevřeli, takže víme jen to, co o nich říká podklad. Dnešní
+    podobu dala schronisku podle serveru Krkonose.eu poslední velké rozšíření
+    v roce 1934 — jde ovšem o sekundární médium, jehož údaj zatím nemáme
+    potvrzený primárním pramenem. Provozovatel schronisko označuje za jedno
+    z nejstarších horských útočišť v Polsku a v podobném duchu ho popisuje
+    i titulek článku na Bryła.pl; obojí je převzaté tvrzení, ne ověřený fakt.
   - >-
-    Kapacitu devětačtyřiceti lůžek uvádí web schroniska; redakce ji zatím
-    neověřila. Otvírací dobu ani podobu občerstvení se nám z dostupných
-    pramenů doložit nepodařilo.
+    Kapacitu devětačtyřiceti lůžek nese tentýž katalogový podklad, a to
+    s odkazem na nabídkovou stránku schroniska; tu jsme ale neotevřeli, takže
+    je to číslo převzaté, ne ověřené. Otvírací dobu ani podobu občerstvení se
+    nám z dostupných pramenů doložit nepodařilo.
   - >-
     S dnešním provozem je navíc spojená nejistota. Titulek článku na Bryła.pl
     ohlašuje, že po více než šedesáti letech schronisko opustila rodina
@@ -113,11 +124,12 @@ text:
     platná — objevují se dvě různé — a kontakty vedené v mapových datech
     nemusejí po změně nájemce sedět.
   - >-
-    Souřadnice a výška pocházejí z OpenStreetMap, zbytek z přehledů
-    provozovatele a ze sekundárních médií; redakce nic z toho zatím neověřila
-    vlastním dotazem ani návštěvou. Než sem doplníme potvrzené údaje,
-    doporučujeme si provoz, kapacitu i otvírací dobu ověřit přímo u
-    schroniska.
+    Z OpenStreetMap pocházejí souřadnice, nadmořská výška, obec i kontakty
+    (data © přispěvatelé OpenStreetMap, ODbL). Rok vzniku a kapacitu nese
+    katalogový podklad, který se odvolává na stránky provozovatele; zbytek
+    stojí na sekundárních médiích. Redakce nic z toho zatím neověřila vlastním
+    dotazem ani návštěvou. Než sem doplníme potvrzené údaje, doporučujeme si
+    provoz, kapacitu i otvírací dobu ověřit přímo u schroniska.
 
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/c/ca/Schronisko_PTTK_Samotnia_nad_Ma%C5%82ym_Stawem.jpg
@@ -142,6 +154,15 @@ zdroje:
     url: https://pttk.jgora.pl/schronisko-pttk-samotnia/
   - popis: Web schroniska (dle OSM)
     url: http://www.samotnia.com.pl/
+  - popis: >-
+      Druhá webová prezentace schroniska (schroniskosamotnia.com) — katalogový
+      podklad z ní bere rok vzniku (podstránka /historia/) a kapacitu 49 lůžek
+      (/oferta/); redakcí NEOTEVŘENO, která z obou domén je platná, nevíme
+    url: https://schroniskosamotnia.com/
+  - popis: >-
+      Karkonoski Park Narodowy (kpn.gov.pl) — katalogový podklad se na něj
+      odvolává u roku vzniku 1670; redakcí NEOTEVŘENO
+    url: https://kpn.gov.pl/zabytki-w-karkonoszach
   - popis: Bryła.pl — titulek o změně nájemce po 60+ letech (neotevřeno)
     url: https://www.bryla.pl/samotnia-jedno-z-najstarszych-schronisk-w-polsce-po-ponad-60-latach-bedzie-nowy-dzierzawca
   - popis: 'Krkonose.eu — „Polské Krkonoše" (první zmínka 1670, rozšíření 1934, výška, telefon, e-mail); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
