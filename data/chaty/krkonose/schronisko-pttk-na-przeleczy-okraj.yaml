@@ -26,7 +26,7 @@ overeniHistorie:
   checked: "2026-07-21"
 kapacita: 40  # kapacita lůžek: https://schroniskookraj.pl/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
 zajimavosti:
-  - text: "Historie provozovatele spojuje sedlo s první sedmikilometrovou trasou jízdy na rohatých saních do Kowar."
+  - text: "Historie schroniska spojuje sedlo s první sedmikilometrovou trasou jízdy na rohatých saních do Kowar."
     kategorie: jine
     zdroj: "https://schroniskookraj.pl/historia-schroniska.html"
 
@@ -55,7 +55,25 @@ overeniNocleh:
   verified: false
   checked: '2026-07-21'
 
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# POZOR: do 25. 7. 2026 tu tenhle blok chyběl a próza tvrdila „Podobu
+# občerstvení ani otvírací dobu doloženou nemáme" — externí katalog přitom
+# stravování vede (HUT-0227, jistota A). Doplněno ručně. Podobu občerstvení
+# (restaurace / bufet / kiosek) katalog neuvádí → typObcerstveni schválně
+# prázdné, nedomýšlet.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    externí katalog HUT-0227 (položka „Stravování: ano", jistota A; podklad
+    ChatGPT 2026-07-21, odvolává se na de.wikipedia.org a pttk.pl/accommodations
+    — obsah neotevřen); podobu občerstvení pramen neuvádí
+  verified: false
+  checked: '2026-07-21'
+
 # ── Provoz ────────────────────────────────────────────────────────────────
+# Otvírací doba nedoložena: druhý podklad z téhož běhu (fakticka-data.csv,
+# HUT-0227) ji vede jako „neuvedeno" → otviraciDoba schválně prázdná.
+sezona: celoročně
 kontakty:
   email: "schroniskookraj@gmail.com"
   # email: https://schroniskookraj.pl/kontakt.html (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
@@ -66,41 +84,55 @@ overeniProvoz:
     kontakty z OSM https://www.openstreetmap.org/way/174687998 (ODbL);
     vlastní web potvrzen titulkem „Przełęcz Okraj, Schronisko PTTK —
     O schronisku" (schroniskookraj.pl); provozovatel PTTK dle přehledů
-    pttk.pl a pttk.jgora.pl (titulky, DATA-03)
+    pttk.pl a pttk.jgora.pl (titulky, DATA-03); celoroční provoz z externího
+    katalogu HUT-0227 (položka „Provoz: celoročně", jistota A, podklad
+    ChatGPT 2026-07-21, obsah citovaných přehledů neotevřen) — konkrétní
+    otvírací dobu druhý podklad z téhož běhu vede jako neuvedenou
   verified: false
   checked: '2026-07-21'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Schronisko PTTK na sedle Przełęcz Okraj ve východních Krkonoších, hned
-  u hraničního přechodu do Horní Malé Úpy, ve výšce 1046 m. Kapacitu a
-  otvíračku doporučujeme před cestou ověřit na webu schroniska.
+  Schronisko PTTK na sedle Przełęcz Okraj na česko-polské hranici, ve výšce
+  1046 m. Kapacitu a otvíračku doporučujeme před cestou ověřit na webu
+  schroniska.
 text:
   - >-
-    Schronisko stojí přímo na sedle Przełęcz Okraj ve východní části
-    Krkonoš, v nadmořské výšce 1 046 metrů. Sedlo je zároveň hraničním
-    přechodem: na české straně na něj navazuje Horní Malá Úpa, na polské se
-    v souvislosti se schroniskem nejčastěji zmiňují Kowary. Výška
-    a souřadnice pocházejí z OpenStreetMap, obec, pod kterou objekt spadá,
-    spolehlivě doloženou nemáme.
+    Schronisko stojí přímo na sedle Przełęcz Okraj v nadmořské výšce
+    1 046 metrů. Sedlo leží na česko-polské hranici: oficiální web obce
+    Malá Úpa vede na české straně, na Pomezních Boudách, hraniční přechod do
+    Polska a titulky výsledků vyhledávání k tomuto přechodu řadí i schronisko
+    — samotné stránky jsme ale neotevřeli. Na polské straně se se schroniskem
+    spojují Kowary. Výška a souřadnice pocházejí z OpenStreetMap, obec, pod
+    kterou objekt spadá, spolehlivě doloženou nemáme.
   - >-
-    Historii na webu schroniska otevírá rok 1922, kdy na sedle vyrostl
-    zděný Schlesische Grenzbaude. Dnešní objekt vznikl v roce 1975 jako
-    turistická bacówka s osmadvaceti lůžky a v roce 2013 ho převzali noví
-    nájemci. Táž historie připomíná, že od sedla vedla první
-    sedmikilometrová trasa jízdy na rohatých saních do Kowar.
+    Letopočty máme z druhé ruky s odkazem na stránku historie schroniska,
+    samu stránku jsme zatím neotevřeli: rok 1922, kdy na sedle vyrostl zděný
+    Schlesische Grenzbaude, vznik dnešní turistické bacówky s osmadvaceti
+    lůžky v roce 1975 a nástup nových nájemců v roce 2013. Týž pramen
+    spojuje sedlo s první sedmikilometrovou trasou jízdy na rohatých saních
+    do Kowar.
   - >-
-    Schronisko je vedené v přehledu ubytování PTTK a spadá pod Sudeckie Hotele
-    i Schroniska PTTK, tedy pod síť horských chat polského turistického svazu;
-    nocleh nabízí i přes polský rezervační portál. Web schroniska uvádí
-    kapacitu čtyřiceti lůžek, což je jiné číslo než osmadvacet lůžek, s nimiž
-    bacówka podle historie v roce 1975 začínala — jde ovšem o dva různě staré
-    údaje. Podobu občerstvení ani otvírací dobu doloženou nemáme.
+    Nocleh schronisko nabízí: je vedené v přehledu ubytování PTTK
+    i v přehledu Sudeckie Hotele i Schroniska PTTK a nabídku ubytování nese
+    i jeho stránka na serveru Infoturystyka. Kapacitu čtyřiceti lůžek máme
+    z druhé ruky s odkazem na stránky schroniska; samotné stránky jsme zatím
+    neotevřeli, takže to číslo bereme jako nepotvrzené. Liší se od
+    osmadvaceti lůžek, s nimiž bacówka podle historie v roce 1975 začínala —
+    jde ovšem o dva různě staré údaje.
+  - >-
+    Stravování u schroniska uvádí externí katalog a řadí tenhle záznam mezi
+    ty s nejvyšší mírou jistoty; jakou podobu občerstvení má, z něj ale
+    nevyčteme. Týž katalog vede provoz jako celoroční. Konkrétní otvírací
+    dobu doloženou nemáme — druhý podklad z téhož běhu ji vede jako
+    neuvedenou. Obě položky jsou z druhé ruky: katalog se odvolává na
+    přehledy třetích stran, které jsme sami neotevřeli.
   - >-
     Souřadnice a výška pocházejí z OpenStreetMap, historie a kapacita
-    z prezentace schroniska a jeho provozovatele a redakce je zatím
-    neověřila vlastním dotazem ani návštěvou. Před cestou doporučujeme
-    potvrdit si otvírací dobu a volná lůžka přímo u schroniska.
+    z druhé ruky z prezentace samotného schroniska a redakce zatím žádný
+    z těch údajů neověřila vlastním dotazem ani návštěvou. Před cestou
+    doporučujeme potvrdit si otvírací dobu a volná lůžka přímo
+    u schroniska.
 
 # Bez hero fotky: mezi 24 kandidáty DATA-02 není žádný s popisem potvrzujícím
 # záběr budovy schroniska (vesměs hraniční kameny, rozcestníky, pomníky) —
@@ -116,8 +148,30 @@ zdroje:
     url: https://www.pttk.jgora.pl/obiekt-pttk-na-przeleczy-okraj/
   - popis: Web schroniska (dle OSM i titulků)
     url: https://schroniskookraj.pl/
+  - popis: >-
+      Stránka schroniska na serveru Infoturystyka („Oferta") — nabídka
+      ubytování; známe jen z titulku výsledku vyhledávání 21. 7. 2026, obsah
+      neotevřen, verified:false
+    url: https://schroniskookraj.infoturystyka.com.pl/
+  - popis: >-
+      Malá Úpa — oficiální web obce; v profilu Pomezní boudy dokládá na
+      Pomezních Boudách hraniční přechod do Polska. Vazbu na české Pomezní
+      Boudy má schronisko z titulků výsledků vyhledávání (DATA-03); stránku
+      obce jsme v tomto běhu sami neotevřeli, verified:false
+    url: https://www.malaupa.cz/
+  - popis: >-
+      Externí katalog a doplňková faktická data (podklad ChatGPT, 21. 7.
+      2026) — rok vzniku 1975, milníky 1922, 1975 a 2013, kapacita 40 lůžek,
+      stravování „ano", celoroční provoz, e-mail a zmínka o saňové trase do
+      Kowar. Odvolávají se na schroniskookraj.pl, de.wikipedia.org
+      a pttk.pl/accommodations, jejichž obsah jsme neotevřeli; pramen
+      z druhé ruky, verified:false. Otvírací dobu i tenhle podklad vede jako
+      neuvedenou. Veřejně citovatelné umístění nemá.
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/schronisko-pttk-na-przeleczy-okraj.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
   Slug nese opravu polského ł ze session 20 (schronisko-pttk-na-przeleczy-okraj).
   Blízko česká strana: Pomezní Boudy (kandidát jindrichuv-dum a okolí Malé Úpy) — vazby doplní DATA-06.
-  Dotáhnout ručním během: hero fotka (oční výběr z 24 kandidátů — budova na žádném popisu), lůžka, otvíračka, občerstvení, e-mail, historie, obec (Kowary jen z titulků FB/odtur).
+  Dotáhnout ručním během: hero fotka (oční výběr z 24 kandidátů — budova na žádném popisu), lůžka (číslo 40 je z druhé ruky), otvírací doba (žádný podklad ji nenese), podoba občerstvení (katalog vede jen „Stravování: ano"), historie (stránku historia-schroniska.html jsme neotevřeli), obec (Kowary jen z titulků FB/odtur).
+  DATA-15 (jazykový audit 25. 7. 2026, čtvrtá dávka): nezávislý agent vrátil devět nálezů, všech devět přijato; jeden desátý jsem našel sám při ověřování. (1) text[2] tvrdil „Web schroniska uvádí kapacitu čtyřiceti lůžek", ač hlavička souboru přiznává, že obsah stránek otevřen nebyl a číslo pochází z katalogového podkladu, který se na web odvolává — přepsáno na vzor strzecha-akademicka („máme z druhé ruky … bereme jako nepotvrzené"). (2) Totéž u historie: „Historii na webu schroniska otevírá rok 1922" a „Táž historie připomíná" prezentovaly neotevřenou stránku jako přečtenou — přepsáno na „Letopočty máme z druhé ruky s odkazem na stránku historie schroniska, samu stránku jsme zatím neotevřeli". (3) Hraniční přechod a Horní Malá Úpa stály v perexu i v text[0] bez pramene — nemazáno, ale připsáno: korpus přechod dokládá v profilu pomezni-bouda přes oficiální web obce Malá Úpa, vazbu schroniska na Pomezní Boudy nese křížové ověření DATA-03 z titulků. Do zdroje[] přidána malaupa.cz s výslovnou poznámkou, že stránku jsme v tomhle běhu neotevřeli. (4) „ve východních Krkonoších" a „ve východní části Krkonoš" vypuštěno z perexu i text[0] — světovou stranu nenese žádný pramen v souboru a externí katalog má v poli „Oblast / část pohoří" jen „Przełęcz Okraj", nikdy světový sektor. Jde o korpusovou vadu, ne o vadu tohoto souboru (viz BACKLOG). (5) Glosa „tedy pod síť horských chat polského turistického svazu" smazána — výklad zkratky PTTK v žádné citaci není. POZOR: identická glosa stojí i v strzecha-akademicka.yaml, opravit v jejím vlastním kole téže dávky. (6) „nocleh nabízí i přes polský rezervační portál" nahrazeno „nabídku ubytování nese i jeho stránka na serveru Infoturystyka" — z titulku „Oferta" neplyne, že jde o rezervační portál; doména doplněna do zdroje[] v nominativu jako jméno serveru. (7) text[4] připisoval historii a kapacitu „prezentaci schroniska a jeho provozovatele", ač prameny provozovatele (pttk.pl, pttk.jgora.pl) nesou jen statut a nocleh — zúženo na „z prezentace samotného schroniska". (8) „nejčastěji zmiňují Kowary" zbaveno kvantifikátoru: doložené jsou dva titulky, o četnosti nevypovídají. (9) zajimavosti[0] „Historie provozovatele" → „Historie schroniska"; pole zdroj u téže položky nese web schroniska, kdežto „provozovatel" má v souboru ustálený význam PTTK.
+  DATA-15 pokračování — DESÁTÝ NÁLEZ (vlastní, při ověřování nálezu N1): próza tvrdila „Podobu občerstvení ani otvírací dobu doloženou nemáme", ale externí katalog ČR/SK objekt vede jako HUT-0227 se „Stravování: ano" a „Provoz: celoročně", jistota A. Profil ta data nikdy nevstřebal. Postupováno stejně jako u schronisko-pttk-na-hali-szrenickiej v téže dávce: data vpuštěna dovnitř, ne jen zúžena věta. Doplněno kuchyne: ano + overeniObcerstveni (citace položky katalogu) a sezona: celoročně + rozšířený overeniProvoz; text dostal vlastní odstavec o stravování. typObcerstveni schválně NEvyplněno — podobu občerstvení katalog neuvádí, nedomýšlet. otviraciDoba schválně NEvyplněna — druhý podklad z téhož běhu (fakticka-data.csv, HUT-0227) ji vede jako „neuvedeno", takže hodinu nemá odkud vzít ani jeden pramen; věta „Konkrétní otvírací dobu doloženou nemáme" v próze zůstává a nově říká proč.
+  ZAMÍTNUTO (agent si to zamítl sám, ověřeno proti souboru): „stojí přímo na sedle" nese vlastní jméno objektu; přiznané mezery („obec … doloženou nemáme") jsou poctivost, ne vada; rozpor 40 vs. 28 lůžek próza sama přiznává; superlativ „první sedmikilometrová trasa" je připsaný na obou místech, kde stojí; připsání OpenStreetMap v próze je; „redakce" v závěrečném odstavci je doložený domácí styl.

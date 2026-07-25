@@ -57,8 +57,10 @@ overeniObcerstveni:
 
 # ── Provoz ────────────────────────────────────────────────────────────────
 otviraciDoba: |-
-  Bufet denně 8:00–20:00 (dle katalogu).
-# Provozovatel PTTK. Kontakty katalog neuvádí → nevyplněno.
+  Bufet 8:00–20:00 (dle katalogu; ve které dny a v jaké sezóně to platí, katalog neuvádí).
+# Provozovatel PTTK. Katalog schroniskaturystyczne.pl kontakty neuvádí;
+# telefon/e-mail/web převzaty z kpn.gov.pl (doplňková fakta 2026-07-21,
+# katalog ChatGPT, verified:false) — v DATA-04 ověřit, ne teprve shánět.
 overeniProvoz:
   source: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/ (provozovatel PTTK od roku 1945, bufet 8:00–20:00; kontakty na stránce neuvedeny)
   verified: false
@@ -67,9 +69,8 @@ overeniProvoz:
 # ── Přístup ───────────────────────────────────────────────────────────────
 autem: >-
   Autem do Szklarské Poręby, dál pěšky. Ke schronisku vedou čtyři značené cesty
-  ze Szklarské Poręby (1–2 hodiny), dále z Jakuszyc a z Jagniątkova. Je
-  východiskem k ledovcovým kotlům Śnieżne Kotły; poblíž stojí schroniska Na
-  Hali Szrenickiej a Szrenica.
+  ze Szklarské Poręby (1–2 hodiny), dále z Jakuszyc a z Jagniątkova. Poblíž
+  stojí schroniska Na Hali Szrenickiej a Szrenica.
 overeniPristup:
   source: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/ (čtyři značené cesty ze Szklarské Poręby 1–2 h, z Jakuszyc a Jagniątkova; poblíž Na Hali Szrenickiej a Szrenica)
   verified: false
@@ -89,44 +90,52 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Dřevěná hřebenová chata na kamenné podezdívce ve výšce 1 168 m pod Łabským
-  Wierzchem v polských Krkonoších. Budovu postavili v roce 1938, od roku 1945
-  ji provozuje PTTK. Nabízí 38 lůžek a bufet s teplou kuchyní a bývá
-  východiskem k ledovcovým kotlům Śnieżne Kotły.
+  Dřevěná hřebenová chata na kamenné podezdívce ve výšce 1 168 m pod Łabskim
+  Szczytem v polských Krkonoších. Budovu postavili v roce 1938, od roku 1945
+  ji provozuje PTTK. Nabízí 38 lůžek a bufet s teplou kuchyní.
 text:
   - >-
     Schronisko PTTK „Pod Łabskim Szczytem" stojí ve výšce 1 168 metrů na
-    horské louce pod Łabským Wierzchem, v hlavním hřebeni Karkonoszů nad
-    Szklarskou Porębou. Je to dřevěná stavba na kamenné podezdívce; vedle
-    plného jména se v mapových datech i v běžném hovoru užívá kratší tvar
-    Schronisko „Pod Łabskim Szczytem".
+    horské louce pod vrcholem, po kterém nese jméno, v hlavním hřebeni
+    Karkonoszů nad Szklarskou Porębou. Jméno toho vrcholu se nám ale
+    rozchází: v názvu chaty stojí Łabski Szczyt, náš katalogový podklad ho
+    zapisuje jako Łabski Wierch, a že jde o týž kopec, doložené nemáme. Je
+    to dřevěná stavba na kamenné podezdívce; vedle plného jména se
+    v mapových datech i v běžném hovoru užívá kratší tvar Schronisko „Pod
+    Łabskim Szczytem".
   - >-
     Budovu postavila v roce 1938 německá turistická společnost a od roku 1945
     schronisko provozuje PTTK. Obojí uvádí katalogový profil na
     Schroniskaturystyczne.pl, ze kterého pochází většina údajů na této
-    stránce. Kořeny místa jsou přitom starší než dnešní dům: KPN uvádí
-    kontinuitu umístění původní pastevecké boudy, která tu stála už před rokem
-    1670. Jde tedy o návaznost místa, ne o stáří stavby. Provozovatel sousední
-    Strzechy Akademické k tomu na svých stránkách řadí obě chaty mezi
-    nejstarší v Krkonoších; s rokem 1938, který u téhle budovy vedeme, se to
-    tvrzení nesrovnává a rozřešené ho nemáme. Navíc ho známe jen
-    zprostředkovaně z katalogového podkladu — stránky Strzechy jsme sami
-    neotevřeli.
+    stránce. Kořeny místa jsou přitom starší než dnešní dům: Karkonoski Park
+    Narodowy podle katalogového podkladu uvádí kontinuitu umístění původní
+    pastevecké boudy, která tu stála už před rokem 1670 — samotnou stránku
+    parku jsme ale neotevřeli. Jde tedy o návaznost místa, ne o stáří stavby.
+    Provozovatel Strzechy Akademické k tomu na svých stránkách označuje
+    Strzechu spolu s chatou Pod Łabskim Szczytem za nejstarší chatu
+    v Krkonoších; s rokem 1938, který u téhle budovy vedeme, se to tvrzení
+    nesrovnává a rozřešené ho nemáme. Navíc ho známe jen zprostředkovaně
+    z katalogového podkladu — stránky Strzechy jsme sami neotevřeli.
   - >-
     Ubytování nabízí 38 míst v pokojích pro jednu až šest osob se společným
-    sociálním zařízením. Bufet vydává obědy, večeře a teplé nápoje, podle
-    katalogu denně od osmi ráno do osmi večer.
+    sociálním zařízením. Bufet vydává obědy, večeře a teplé nápoje; katalog
+    u něj uvádí časy od osmi ráno do osmi večer, neříká ale, ve které dny
+    ani v jaké sezóně to platí.
   - >-
     Autem se dá dojet do Szklarské Poręby, dál se pokračuje pěšky. Ke
     schronisku odtud vedou čtyři značené cesty, kterým katalog přisuzuje jednu
     až dvě hodiny chůze; další přístupy vedou z Jakuszyc a z Jagniątkova.
-    Schronisko bývá východiskem k ledovcovým kotlům Śnieżne Kotły a nedaleko
-    stojí ještě schroniska Na Hali Szrenickiej a Szrenica.
+    Nedaleko stojí ještě schroniska Na Hali Szrenickiej a Szrenica.
   - >-
-    Údaje na této stránce stojí na jediném katalogovém profilu a na datech z
-    OpenStreetMap; redakce je zatím neověřila vlastním dotazem ani návštěvou.
-    Doloženou nemáme provozní sezónu. Před cestou proto doporučujeme potvrdit
-    si přímo u schroniska otvírací dobu bufetu a volnou kapacitu.
+    Většina údajů na této stránce pochází z katalogového profilu na
+    Schroniskaturystyczne.pl, poloha z OpenStreetMap. Věta o pastevecké
+    boudě a kontaktní údaje jsou od Karkonoského národního parku, tvrzení
+    o nejstarších chatách od provozovatele Strzechy Akademické; obojí k nám
+    dorazilo přes katalogový podklad a ani jednu z těch stránek jsme
+    neotevřeli. Redakce zatím žádný z těch údajů neověřila vlastním dotazem
+    ani návštěvou a doloženou nemáme provozní sezónu, proto před cestou
+    doporučujeme potvrdit si přímo u schroniska otvírací dobu bufetu
+    i volnou kapacitu.
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/a/a0/Schronisko_Pod_%C5%81abskim_Szczytem_2021.jpg
     alt: Schronisko PTTK Pod Łabskim Szczytem — dřevěné hřebenové schronisko v polských Krkonoších
@@ -147,10 +156,11 @@ zdroje:
   - popis: OpenStreetMap (poloha objektu, ODbL)
     url: https://www.openstreetmap.org/way/32604714
   - popis: >-
-      Strzecha Akademicka — stránka historie provozovatele sousední chaty;
-      řadí Strzechu spolu s chatou Pod Łabskim Szczytem mezi nejstarší chaty
-      v Krkonoších. Známe jen zprostředkovaně z katalogového podkladu
-      (2026-07-21), redakcí NEOTEVŘENO, verified:false
+      Strzecha Akademicka — stránka historie provozovatele chaty na druhém
+      konci krkonošského hřebene (12,8 km vzdušnou čarou); označuje Strzechu
+      spolu s chatou Pod Łabskim Szczytem za nejstarší chatu v Krkonoších.
+      Známe jen zprostředkovaně z katalogového podkladu (2026-07-21),
+      redakcí NEOTEVŘENO, verified:false
     url: https://strzechaakademicka.pl/historia
 
 interniPoznamky: >-
@@ -158,9 +168,10 @@ interniPoznamky: >-
   (DATA-01) po křížovém ověření DATA-03. Zdroj katalog schroniskaturystyczne.pl
   (pl.wikipedia se ze sandboxu nenačte — cache-only; oficiální stránka PTTK
   pttk.pl k dotažení kontaktů). Vše verified: false dle konvence B. Do DATA-04
-  dotáhnout: kontakty (telefon/e-mail), přesná GPS, případně provázat
-  sousedniChaty (Na Hali Szrenickiej, Szrenica). Vynechán vágní údaj „služby od
-  17. století" z katalogu — nedoložitelný, nezapisuje se.
+  ověřit převzaté kontakty (telefon/e-mail/web pocházejí z kpn.gov.pl přes
+  katalogový podklad, ne od schroniska), dotáhnout přesnou GPS, případně
+  provázat sousedniChaty (Na Hali Szrenickiej, Szrenica). Vynechán vágní údaj
+  „služby od 17. století" z katalogu — nedoložitelný, nezapisuje se.
 
   AUDIT 25. 7. 2026 (mechanická kontrola D — superlativ bez připsání): perex
   tvrdil „jedno z nejstarších a nejpůvabnějších hřebenových schronisk" a „je
@@ -177,3 +188,48 @@ interniPoznamky: >-
   strzechaakademicka.pl/historia (redakcí NEOTEVŘENO, známe jen přes katalogový
   podklad). Otázka pro DATA-04 / dotaz na PTTK Jelenia Góra: co přesně se tím
   „nejstarší" myslí — stavba, nepřetržitá služba, nebo kontinuita místa?
+
+  AUDIT 4. DÁVKA (DATA-15, 25. 7. 2026) — nezávislý agent vrátil osm nálezů,
+  všech osm přijato, u jednoho upravena podoba léku. 1) „Denně" u bufetu
+  vypuštěno z otviraciDoba i z text[2]: obě citace nesou jen hodiny
+  8:00–20:00, frekvenci ani sezónu žádný pramen nedrží a text[4] přitom sám
+  přiznává, že provozní sezónu doloženou nemáme. Hodiny samotné zůstávají —
+  otviraciDoba je vyplněná ve dvaceti publikovaných profilech a v pěti stojí
+  hodiny přímo v próze, plošný zákaz tedy neexistuje; vadné bylo to „denně".
+  2) Strzecha Akademicka přestala být „sousední": ze souřadnic obou profilů
+  vychází 12,77 km vzdušnou čarou, zatímco Szrenica je 1,7 km a Na Hali
+  Szrenickiej 2,6 km — a týž text je o dva odstavce dál označuje za
+  „nedaleko". Vazba mezi oběma chatami je věcná, ne zeměpisná. 3) Śnieżne
+  Kotły odstraněny z perexu, z text[3] i z pole autem: v žádném bloku overeni
+  ani v zdroje nejsou a spolu s nimi padl nedoložený geomorfologický soud
+  „ledovcovým". 4) Závěrečný odstavec tvrdil, že stránka stojí na jediném
+  katalogovém hesle a na OpenStreetMap; ve skutečnosti nese ještě větu
+  Karkonoského národního parku o pastevecké boudě, tvrzení provozovatele
+  Strzechy a od parku i kontaktní údaje. Odstavec teď jmenuje celou pramennou
+  základnu. 5) „KPN uvádí" přeformulováno na „Karkonoski Park Narodowy podle
+  katalogového podkladu uvádí … samotnou stránku parku jsme ale neotevřeli" —
+  údaj přišel zprostředkovaně a podání z první ruky to zastíralo; totéž
+  přiznání drží tentýž odstavec o čtyři věty dál u tvrzení o Strzeše, takže
+  soubor si odporoval i v disciplíně. 6) Komentář „Kontakty katalog neuvádí →
+  nevyplněno" stál proti třem vyplněným kontaktním polím; přepsán tak, aby
+  řekl, odkud kontakty jsou, a položka DATA-04 změněna z „dotáhnout kontakty"
+  na „ověřit převzaté kontakty". Týž zastaralý komentář nese i sourozenecký
+  soubor schronisko-kamienczyk — zděděný artefakt dávky, ne originální chyba
+  tohoto profilu. 7) Cizí tvrzení vráceno do plné síly: pramen podle
+  strzecha-akademicka.yaml říká „za nejstarší chatu", próza z toho udělala
+  „mezi nejstarší" a tím si změkčila vlastní rozpor s rokem 1938. 8) Vrchol
+  měl v souboru dvě jména — Łabski Szczyt v názvu objektu, Łabski Wierch
+  v próze převzaté z citace — a nikde nestálo, že jde o týž kopec. Agent tomu
+  dal jistotu „nízká"; korpus ale ukázal, že tvar Wierch se nikde jinde než
+  v tomhle jediném opisu nevyskytuje. Rozpor proto ve veřejné próze přiznán,
+  ne potichu rozhodnut, a otázka na správný tvar jména vrcholu jde do DATA-04.
+
+  ZAMÍTNUTO (agent si to zamítl sám, ověřeno proti souboru): „hřebenová chata"
+  a „na horské louce … v hlavním hřebeni" nejsou nedoložený terén —
+  overeniLokace.source je nese doslova. „Nad Szklarskou Porębou" plyne
+  z doložené výšky a obce. „Katalogový profil" a „katalogový podklad"
+  označují cizí katalogové heslo, ne naši stránku, a jsou doložený domácí
+  styl. Prošlo i jméno pramene v prvním pádě, slovo „redakce" v závěrečném
+  odstavci, nerozepsané zkratky PTTK a KPN, „38 lůžek" v perexu proti „38
+  místům" v citaci a „bufet s teplou kuchyní". Absence světové strany je
+  proti sourozeneckému profilu Na Hali Szrenickiej přednost, ne mezera.

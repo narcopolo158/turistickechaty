@@ -32,7 +32,7 @@ kapacita: 75  # kapacita lůžek: https://www.strzechaakademicka.pl/cennik (dopl
 zajimavosti:
   - text: "Provozovatel ji spolu s chatou Pod Łabskim Szczytem označuje za nejstarší chatu v Karkonoszích."
     kategorie: stari
-    zdroj: "https://strzechaakademicka.pl/historia"
+    zdroj: "https://strzechaakademicka.pl/historia — známe jen z katalogového podkladu (2026-07-21), redakcí NEOTEVŘENO, verified:false"
 
 aliasy:
   - nazev: Schronisko PTTK „Strzecha Akademicka"
@@ -55,7 +55,10 @@ overeniLokace:
   checked: '2026-07-20'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# Kapacita nedoložena (obsah stránek neotevřen) — nedomýšlet.
+# Kapacita 75 je z externího katalogu, který se odvolává na ceník schroniska
+# (obsah neotevřen) — verified:false, ověřit ručním během. Do 25. 7. 2026 tu
+# stálo „Kapacita nedoložena — nedomýšlet", což už neplatilo: komentář je starší
+# než blok doplňkových fakt nahoře a soubor si tím odporoval (DATA-15, nález 7).
 nocleh: ano
 overeniNocleh:
   source: >-
@@ -82,32 +85,37 @@ overeniProvoz:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Schronisko PTTK ve výšce 1258 m na polské straně Krkonoš, na frekventované
-  cestě z Karpacze na Śnieżku. Kapacitu a otvíračku doporučujeme před cestou
+  Schronisko PTTK ve výšce 1258 m na polské straně Krkonoš, na cestě
+  z Karpacze na Śnieżku. Kapacitu a otvíračku doporučujeme před cestou
   ověřit na webu schroniska.
 text:
   - >-
     Strzecha Akademicka stojí nad Karpaczem v nadmořské výšce 1 258 metrů, na
-    frekventované cestě z Karpacze na Śnieżku. Souřadnice, výška i obec
-    pocházejí z OpenStreetMap, polohu na této cestě uvádějí titulky polských
-    turistických portálů. U provozovatele objekt figuruje pod oficiálním
+    cestě z Karpacze na Śnieżku. Souřadnice, výška i obec pocházejí
+    z OpenStreetMap, polohu na této cestě známe zatím jen z titulků výsledků
+    vyhledávání na serverech Tulismanore a Gorskim-szlakiem — obsah stránek
+    jsme neotevřeli. U provozovatele objekt figuruje pod oficiálním
     tvarem Schronisko PTTK „Strzecha Akademicka"; v popiscích fotografií na
     Wikimedia Commons se k němu váže i historické české jméno Hamplova bouda,
     doložené zatím jen tímhle popiskem.
   - >-
-    Počátky hospodaření na tomto místě klade web schroniska až do roku 1642,
-    kdy je tu doložen hospodář Tanl. Nový velký objekt vyrostl roku 1896,
-    o deset let později přišel požár a po obnově bylo schronisko znovu
-    otevřeno; v roce 1912 následovalo rozšíření. Od roku 1957 je ve
-    vlastnictví PTTK. Provozovatel označuje Strzechu spolu s chatou Pod
-    Łabskim Szczytem za nejstarší chatu v Krkonoších — je to jeho tvrzení,
-    které nemáme potvrzené z nezávislého pramene. U chaty Pod Łabskim Szczytem
-    přitom vedeme budovu z roku 1938, takže se tvrzení s našimi vlastními daty
+    Počátky hospodaření na tomto místě klade až do roku 1642, kdy je tu
+    doložen hospodář Tanl, externí katalogový podklad, který se odvolává na
+    stránku historie schroniska; samotný web jsme zatím neotevřeli. Rok 1642
+    se přitom váže k místu, ne k dnešní budově — tu milníky kladou do roku
+    1896. O deset let později přišel požár a po obnově bylo schronisko znovu
+    otevřeno; v roce 1912 následovalo rozšíření. K roku 1957 je doložené
+    vlastnictví PTTK. Že schronisko PTTK provozuje i dnes, nesou jeho vlastní
+    přehledy — zatím jen z titulků, obsah jsme neotevřeli. Provozovatel
+    označuje Strzechu spolu s chatou Pod Łabskim Szczytem za nejstarší chatu
+    v Krkonoších; známe to jen zprostředkovaně z téhož podkladu a nemáme to
+    potvrzené z nezávislého pramene. U chaty Pod Łabskim Szczytem přitom
+    vedeme budovu z roku 1938, takže se tvrzení s našimi vlastními daty
     nesrovnává; rozřešené ho nemáme.
   - >-
-    Nocleh schronisko nabízí: je vedené v přehledu ubytování PTTK a spadá pod
-    Sudeckie Hotele i Schroniska PTTK, tedy pod síť horských chat polského
-    turistického svazu. Kapacitu 75 lůžek máme z druhé ruky s odkazem na ceník
+    Nocleh schronisko nabízí: je vedené v přehledu ubytování PTTK a v titulcích
+    přehledů se k němu váže označení Sudeckie Hotele i Schroniska PTTK.
+    Kapacitu 75 lůžek máme z druhé ruky s odkazem na ceník
     schroniska; samotný ceník jsme zatím neotevřeli, takže to číslo bereme
     jako nepotvrzené. Podobu občerstvení ani otvírací dobu doloženou nemáme.
   - >-
@@ -139,7 +147,21 @@ zdroje:
     url: https://www.pttk.jgora.pl/pttk-strzecha-akademicka/
   - popis: Web schroniska (dle OSM)
     url: http://www.strzechaakademicka.pl
+  - popis: >-
+      Tulismanore.pl — poloha na cestě z Karpacze na Śnieżku (titulek výsledku
+      vyhledávání, obsah neotevřen)
+  - popis: >-
+      Gorskim-szlakiem.pl — poloha na cestě z Karpacze na Śnieżku (titulek
+      výsledku vyhledávání, obsah neotevřen)
+  - popis: >-
+      Externí katalog chat (podklad ChatGPT 2026-07-21, verified:false) —
+      prostředník pro rok vzniku 1642, všech pět milníků, kapacitu 75 lůžek,
+      telefon, e-mail i tvrzení o nejstarší chatě; odvolává se na stránky
+      strzechaakademicka.pl (historia, cennik), jejich obsah jsme neotevřeli
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/strzecha-akademicka.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
   Alias „Hamplova bouda": z popisů fotek File:Strzecha Akademicka 02/08/09.jpg na Commons (user-generated) — při ručním běhu doložit z lepšího zdroje (literatura/web), jinak zvážit vyřazení aliasu.
   Dotáhnout ručním během: lůžka, otvíračka, občerstvení, telefon/e-mail, historie (titulek tulismanore.pl mluví o „najstarsze schronisko w Karkonoszach" — NEpřevzato, blogový titulek bez otevření obsahu).
+  DATA-15, 4. dávka auditu (25. 7. 2026), nálezy 1–8, všech osm přijato. (1) Próza tvrdila „klade web schroniska", ale overeniHistorie i doplňková fakta vedou jako pramen katalogový podklad ChatGPT — přepsáno na tvar „externí katalogový podklad, který se odvolává na stránku historie schroniska; samotný web jsme zatím neotevřeli", totéž doplněno k tvrzení o nejstarší chatě. (2) Smazána glosa „tedy pod síť horských chat polského turistického svazu" u Sudeckie Hotele i Schroniska PTTK — vysvětlivka bez pramene, stejná vada opravena týž den u przełęczy Okraj; „spadá pod" změkčeno na to, co titulek opravdu ukazuje. (3) Smazáno „frekventované" (cesta z Karpacze na Śnieżku) z perexu i z text[0] — úsudek, ne doklad; precedens kochanowka.yaml. (4) „Od roku 1957 je ve vlastnictví PTTK." dělalo z bodového milníku 69 let nepřetržitého vlastnictví — přepsáno na „K roku 1957 je doložené vlastnictví PTTK." + dnešek zvlášť atribuovaný přehledům pttk.pl a pttk.jgora.pl (titulky); precedens Rýchorská bouda, 1. dávka. (5) „titulky polských turistických portálů" nebyly nikde v zdroje ani v overeniLokace — doplněny do zdroje jako tulismanore.pl a gorskim-szlakiem.pl s poznámkou „titulek, obsah neotevřen"; slovo „portál" v próze vypuštěno, protože vlastní poznámka výše mluví o tulismanore.pl jako o blogu (bylo by to povýšení pramene). (6) Katalogový podklad chyběl v zdroje úplně, přestože nese rok 1642, všech pět milníků, kapacitu, telefon, e-mail i zajimavosti[0] — doplněn záznam bez url (zdroje.url je volitelné) a caveat do zajimavosti[0].zdroj. (7) Zastaralý komentář „Kapacita nedoložena — nedomýšlet" nad nocleh při publikované kapacita: 75 — přepsán. (8) rokVzniku 1642 dokládá hospodáře, ne budovu (milníky kladou dům do 1896) — do prózy doplněna věta, která to rozlišuje; rokVzniku SCHVÁLNĚ nezměněn, je to údaj pramene.
+  ZAMÍTNUTO (auditem samotným, ověřeno): „stojí nad Karpaczem" (obec i výška doložené); „na polské straně Krkonoš"; superlativ o nejstarší chatě (atribuovaný a rozpor přiznaný); rozpor s rokem 1938 u Pod Łabskim Szczytem (přiznaný na obou stranách); „z druhé ruky z prezentace samotného schroniska" v text[3] (schválený domovní tvar od 2. dávky, Dom Śląski); formulace kapacity v text[2]; perex bez atribuce OSM; „redakce" v text[3]; „Podobu občerstvení ani otvírací dobu doloženou nemáme"; alias Hamplova bouda; verified:false všude; zakázaný obsah (žádný).
+  DATA-04 otevřená otázka: co u téhle chaty znamená „nejstarší" — nejstarší stavba, nejnepřetržitější služba, nebo kontinuita hospodaření na místě? Rok 1642 (hospodář Tanl) a rok 1896 (dnešní budova) odpovídají na různé otázky a provozovatelovo tvrzení nerozlišuje která. Rozhodnout při ručním běhu, ideálně proti Pod Łabskim Szczytem (budova 1938), aby si obě prezentace na webu neodporovaly.

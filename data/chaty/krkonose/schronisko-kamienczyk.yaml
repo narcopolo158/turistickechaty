@@ -17,8 +17,11 @@ zajimavosti:
     kategorie: stari
     zdroj: "https://turystyczna.szklarskaporeba.pl/61-szklarskaporeba-schronisko-kamienczyk"
 kontakty:
+  # telefon NEpochází z katalogu schroniskaturystyczne.pl (ten kontakty neuvádí),
+  # ale z doplňkových fakt 2026-07-21 (ChatGPT podklad, řádek HUT-0225, jistota B),
+  # které ho připisují https://kpn.gov.pl/schroniska — stránku jsme neotevřeli
+  # (doména je v projektu vedená jako nedostupná). Ověřit primárně (DATA-04).
   telefon: "+48 75 752 60 85"
-  # telefon: https://kpn.gov.pl/schroniska (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
 
 # ── Lokace ────────────────────────────────────────────────────────────────
 lat: 50.8143401
@@ -31,6 +34,10 @@ overeniLokace:
     přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
     výška 830 m n.p.m. a poloha u vodopádu Kamieńczyk nad Szklarskou Porębou
     (polské Krkonoše): https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/
+    — ROZPOR (audit 25. 7. 2026): externí katalogový podklad
+    (katalog-cr-sk-2026, HUT-0225, jistota B) uvádí 840 m a master přehled
+    DATA-03 obě hodnoty vypisuje vedle sebe; ponecháno 830 m, rozpor přiznán
+    ve veřejné próze, ověřit (DATA-04)
   verified: false
   checked: '2026-07-21'
 
@@ -51,17 +58,18 @@ overeniObcerstveni:
   checked: '2026-07-21'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
-# Provozovatel soukromý (od 1995). Kontakty katalog neuvádí → nevyplněno.
+# Provozovatel soukromý (od 1995). Katalog kontakty neuvádí — telefon je
+# z doplňkových fakt, viz komentář u bloku kontakty. E-mail a web chybí.
 overeniProvoz:
-  source: https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/ (v provozu jako soukromé schronisko od roku 1995; kontakty na stránce neuvedeny)
+  source: 'https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/ (v provozu jako soukromé schronisko od roku 1995; kontakty na stránce neuvedeny). Telefon +48 75 752 60 85 z doplňkových fakt 2026-07-21 (ChatGPT podklad, HUT-0225, jistota B), připsaný zdroji https://kpn.gov.pl/schroniska — neotevřeno, ověřit (DATA-04). Externí katalogový podklad (HUT-0225) uvádí provoz „celoročně" (jistota B, zdroje de.wikipedia.org a pttk.pl) — sám o sobě to za doklad sezóny nebereme, viz próza.'
   verified: false
   checked: '2026-07-21'
 
 # ── Přístup ───────────────────────────────────────────────────────────────
 autem: >-
-  Autem jen na parkoviště v Szklarské Porębě, dál pěšky — od parkoviště zhruba
-  30 minut, z centra města po červené značce asi 50 minut k vodopádu
-  Kamieńczyk, u něhož schronisko stojí.
+  Nejbližší parkoviště je v Szklarské Porębě; od něj k vodopádu Kamieńczyk,
+  u něhož schronisko stojí, zhruba 30 minut chůze, z centra města po červené
+  značce asi 50 minut. Jestli se dá dojet blíž, pramen neuvádí.
 overeniPristup:
   source: https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/ (nejbližší město Szklarska Poręba ~30 min pěšky; červená značka z centra ~50 min / z parkoviště ~30 min)
   verified: false
@@ -89,18 +97,27 @@ perex: >-
 text:
   - >-
     Schronisko Kamieńczyk stojí ve výšce zhruba 830 metrů u vodopádu
-    Kamieńczyk, v lesích nad Szklarskou Porębou na polské straně Krkonoš. Je
-    to malý soukromý objekt s ubytováním i občerstvením.
+    Kamieńczyk nad Szklarskou Porębou na polské straně Krkonoš. Tu výšku nese
+    katalogový profil na Schroniskaturystyczne.pl; externí katalogový podklad
+    ale pracuje s hodnotou 840 metrů. Rozpor rozřešený nemáme a zůstáváme
+    u nižší hodnoty. Je to malý soukromý objekt s ubytováním i občerstvením.
   - >-
-    Budova je starší než schronisko samo. Na počátku dvacátého století tu stál
+    Místo je starší než schronisko samo. Na počátku dvacátého století tu stál
     německý horský hostinec zhruba na pětatřicet míst, po druhé světové válce
-    objekt sloužil armádě a v roce 1984 při opravě vyhořel. Jako soukromé
+    objekt sloužil armádě a v roce 1984 při opravě vyhořel; co z původní
+    budovy zbylo a co je novostavba, doložené nemáme. Jako soukromé
     turistické schronisko funguje od roku 1995, kdy ho otevřeli manželé
     Sieleccy; tuhle časovou osu shrnuje katalogový profil na
-    Schroniskaturystyczne.pl. Oficiální turistický portál města k tomu dodává,
-    že jde o první soukromou horskou chatu postavenou v Polsku po druhé
-    světové válce — to je ovšem tvrzení jediného zdroje, které odjinud
-    potvrzené nemáme.
+    Schroniskaturystyczne.pl.
+  - >-
+    Doplňkový podklad, ze kterého sem přišel kontakt a zajímavost o prvenství,
+    ale u téhož objektu uvádí rok 1997 a k němu poznámku, že tehdy byla
+    postavena současná chata. Který letopočet platí — a jestli se jeden týká
+    otevření schroniska a druhý stavby — rozřešené nemáme; zůstáváme u roku
+    1995, který nese katalogový profil. Týž doplňkový podklad připisuje
+    oficiálnímu městskému turistickému portálu tvrzení, že jde o první
+    soukromou horskou chatu postavenou v Polsku po druhé světové válce;
+    samotnou stránku portálu jsme ale neotevřeli a jinde potvrzené to nemáme.
   - >-
     Ubytovací kapacitu uvádí katalogový profil jako devatenáct míst a zároveň
     mluví o šesti dvoulůžkových a jednom třílůžkovém pokoji; ta dvě čísla si
@@ -109,16 +126,18 @@ text:
     s občerstvením a terasa; kousek od schroniska stojí Szałas Sielanka s
     grilovanými pokrmy.
   - >-
-    Autem se dá dojet jen na parkoviště v Szklarské Porębě, dál se pokračuje
-    pěšky. Od parkoviště je to k vodopádu, u něhož schronisko stojí, zhruba
-    půl hodiny chůze; z centra města vede k vodopádu červená značka, po které
-    je to asi padesát minut.
+    Nejbližší parkoviště je v Szklarské Porębě; od něj je to k vodopádu,
+    u něhož schronisko stojí, zhruba půl hodiny chůze a z centra města po
+    červené značce asi padesát minut. Jestli se dá dojet blíž, doložené
+    nemáme.
   - >-
-    Otvírací dobu bufetu ani provozní sezónu doloženou nemáme. Výška,
-    kapacita, historie i časy přístupu pocházejí z jediného katalogového
-    profilu, poloha z OpenStreetMap, a redakce je zatím neověřila vlastním
-    dotazem ani návštěvou. Před cestou proto doporučujeme ověřit si přímo u
-    schroniska, zda je otevřeno a v jakém režimu.
+    Otvírací dobu bufetu doloženou nemáme; celoroční provoz nese jen externí
+    katalogový podklad, který sám o sobě za doklad nebereme. Výška, kapacita,
+    časová osa i časy přístupu pocházejí z katalogového profilu, tvrzení
+    o prvenství z doplňkového podkladu odkazujícího na městský turistický
+    portál, poloha z OpenStreetMap — a redakce nic z toho zatím neověřila
+    vlastním dotazem ani návštěvou. Před cestou proto doporučujeme ověřit si
+    přímo u schroniska, zda je otevřeno a v jakém režimu.
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/7/7d/SchroniskoKamie%C5%84czyk2021.jpg
     alt: Schronisko Kamieńczyk — horské schronisko u vodopádu nad Szklarskou Porębou
@@ -138,10 +157,80 @@ zdroje:
     url: https://www.schroniskaturystyczne.pl/schronisko-kamienczyk/
   - popis: OpenStreetMap (poloha objektu, ODbL)
     url: https://www.openstreetmap.org/way/90393483
+  - popis: 'Oficiální městský turistický portál Szklarské Poręby — tvrzení o prvenství první soukromé horské chaty postavené v Polsku po válce a letopočet 1997; stránku jsme neotevřeli, údaj máme z druhé ruky přes doplňková fakta, verified:false'
+    url: https://turystyczna.szklarskaporeba.pl/61-szklarskaporeba-schronisko-kamienczyk
+  - popis: 'Doplňková fakta ke krkonošským chatám (ChatGPT podklad 2026-07-21, řádek HUT-0225, jistota B) — telefon (připsaný kpn.gov.pl/schroniska), rok 1997 a zajímavost o prvenství; AI kompilace, ne primární pramen, bez veřejně citovatelného umístění, vedeme bez odkazu; verified:false'
+  - popis: 'Externí katalog chat ČR/SK (katalog-cr-sk-2026, HUT-0225, jistota B) — konkurenční výška 840 m a údaj o celoročním provozu; vodicí, ne verifikační zdroj, bez veřejně citovatelného umístění; verified:false'
 
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/schronisko-kamienczyk.yaml (DATA-01) po
   křížovém ověření DATA-03. Zdroj katalog schroniskaturystyczne.pl (oficiální
   web schroniska nedohledán) — vše verified: false dle konvence B (verified:
-  true jen po vlastním ověření Michala). Do DATA-04 dotáhnout: kontakty
-  (telefon/e-mail/web), přesnou GPS u vodopádu, provozní sezónu.
+  true jen po vlastním ověření Michala). Do DATA-04 dotáhnout: e-mail a web,
+  ověřit telefon, přesnou GPS u vodopádu, provozní sezónu, rozpor výšky
+  830/840 m a rozpor letopočtů 1995/1997.
+
+  DATA-15 (jazykový audit 25. 7. 2026, čtvrtá dávka): opraveno devět vad,
+  žádný nález zamítnut — nejhustší soubor dávky. (1) „Budova je starší než
+  schronisko samo" tvrdilo stáří stavby, ač prameny nesou jen kontinuitu
+  místa: milniky i overeniHistorie mluví o hostinci, který tu „stál", a mezi
+  požárem z roku 1984 a otevřením 1995 profil nedokládá nic. Věta si navíc
+  odporovala s prvenstvím „chaty POSTAVENÉ po druhé světové válce" o tři věty
+  níž. Přepsáno na „Místo je starší" s výslovným přiznáním, že nevíme, co je
+  původní a co novostavba — totéž rozlišení už jednou v korpusu padlo
+  u profilu Pod Łabskim Szczytem (DENIK ř. 133). (2) Nepřiznaný rozpor
+  letopočtů: doplňková fakta (HUT-0225) nesou u téhož městského portálu, ze
+  kterého pochází naše zajímavost, rok_vzniku 1997 a milník „1997 — postavena
+  současná chata", zatímco profil má rokVzniku 1995 a o roce 1997 v celém
+  souboru nestálo ani slovo. Pole se nepřepsalo mechanicky, protože DATA-09
+  doplňuje jen prázdná pole, takže rozpor zapadl potichu. Konvence B ho žádá
+  přiznat; doplněn nový odstavec, který obě čtení klade vedle sebe a říká,
+  proč zůstáváme u roku 1995. (3) Nepřiznaný rozpor výšky: externí katalog
+  (HUT-0225) uvádí 840 m a master přehled DATA-03 obě čísla dokonce vypisuje
+  vedle sebe, próza ale mluvila o „zhruba 830 metrech" — slovo „zhruba" rozpor
+  nepřiznává, jen změkčuje jedno z čísel. Doplněno do text[0] i do
+  overeniLokace.source podle vzoru Výrovky a Lysečinské boudy. (4) „v lesích
+  nad Szklarskou Porębou" — tvrzení o typu terénu, které nenese žádný pramen
+  (overeniLokace.source má jen výšku a polohu u vodopádu). Táž vada jako
+  „na hřebeni" u Martinovy a Lesní boudy; vypuštěno. Vazba „nad Szklarskou
+  Porębou" zůstává, ta plyne z doložených polí vyska a obec. (5) „Oficiální
+  turistický portál města k tomu dodává" podávalo tvrzení jako přečtené na
+  portálu — stránku jsme nikdy neotevřeli, údaj jde přes AI kompilaci, o níž
+  její vlastní PUVOD.md říká, že primární pramen to není. Přepsáno na
+  „doplňkový podklad připisuje portálu… stránku jsme neotevřeli"; tentýž
+  vzorec korpus opravoval už v DENIK ř. 145. (6) „Autem se dá dojet jen na
+  parkoviště" dopočítávalo zákaz příjezdu z toho, že pramen popisuje pěší
+  přístup; overeniPristup nese výhradně časy chůze a externí katalog má
+  neurčité „pěšky / dle objektu autem". Pole autem i próza přepsány na to, co
+  pramen skutečně nese, s dovětkem, že bližší příjezd doložený nemáme.
+  (7) „z jediného katalogového profilu" bylo nepravdivé — próza sama o tři
+  odstavce výš cituje druhý pramen (městský portál) a ten v zdroje vůbec
+  nebyl. Výčet v závěru opraven a do zdroje přidány tři chybějící položky:
+  městský portál, doplňková fakta a externí katalog. Táž vada padla ve třetí
+  dávce u Lysečinské boudy. (8) „provozní sezónu doloženou nemáme" mlčky
+  vynechávalo, že externí katalog u tohohle objektu nese „celoročně" (jistota
+  B, zdroje de.wikipedia.org a pttk.pl). Agent u tohohle nálezu sám snížil
+  jistotu, protože PUVOD.md katalogu říká, že jde o vodicí, ne verifikační
+  zdroj — při adjudikaci ale rozhodlo, že tvrzení o stavu pramenů má být
+  pravdivé i tehdy, když pramen za doklad nebereme; přesně tak zní i oprava
+  otvírací doby u Výrovky v téže dávce. Próza teď říká obojí: doklad to není,
+  ale existuje. (9) Vyplněný telefon si odporoval se třemi místy souboru,
+  která tvrdila, že kontakty nemáme (komentář nad overeniProvoz,
+  overeniProvoz.source, úkol v interniPoznamky), a jeho jediná stopa byl
+  zakomentovaný řádek s doménou, která ani není v zdroje. Komentář opraven,
+  připsání doplněno do overeniProvoz.source i do zdroje, úkol DATA-04 zúžen.
+  ZAMÍTNUTO po druhém čtení (agentem, potvrzeno při adjudikaci): aritmetický
+  rozpor 19 míst vs. 6×2 + 1×3 není vada, protože ho text říká nahlas — to je
+  poctivost (DENIK ř. 145). Perex s holým „Devatenáct lůžek" nepotřebuje
+  připsání, protože nejde o volbu mezi dvěma prameny jako u Dvorské boudy, ale
+  o vnitřní aritmetiku jednoho pramene, kterou próza přiznává. Kotvicí rok
+  1900 u události „na počátku 20. století" má domácí vzor (dvorska-bouda 1920,
+  chata-dvoracky 1990) a neurčitost nese samo pole udalost. Vojenské využití
+  po válce v milnících sice není, ale overeniHistorie ho nese doslova.
+  „Katalogový profil na Schroniskaturystyczne.pl" je doména v prvním pádě
+  s řídicím podstatným jménem, tedy vzorový domácí tvar (DENIK ř. 121), a
+  slovo „profil" tu označuje stránku pramene, ne naši stránku. Superlativ
+  o prvenství není nepřipsaný — vada byla v tom, komu se připisoval. Časy
+  z DATA-06 (pristupove-trasy.json) nejsou pramen o časech, ale odvozený
+  artefakt, takže rozpor s nimi nepočítáme. Známka č. 29 se ve veřejné próze
+  neobjevuje, což je po nálezu z první dávky správně.

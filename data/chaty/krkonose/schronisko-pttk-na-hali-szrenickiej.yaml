@@ -11,6 +11,27 @@ zeme: pl
 typ: obsluhovana
 oblast: krkonose
 
+# ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
+# POZOR: tenhle blok tu do 25. 7. 2026 chyběl. DATA-09 objekt přeskočil kvůli
+# neshodě jmen — v podkladu je veden jako „Hala Szrenicka" (HUT-0224), takže
+# PUVOD.md ho omylem řadí mezi osm chat, které v katalogu nejsou. Doplněno
+# ručně; rok vzniku a kapacita jsou i v podkladu „neuvedeno" → nedomýšlet.
+milniky:
+  - rok: 1786
+    udalost: "podle provozovatele tu začíná historie místa pasteveckou boudou"
+  - rok: 1975
+    udalost: "požár"
+  - rok: 2014
+    udalost: "objekt převzali současní rodinní provozovatelé"
+overeniHistorie:
+  source: "milníky: https://halaszrenicka.pl/o-nas/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false; obsah stránky neotevřen) — rok vzniku podklad neuvádí"
+  verified: false
+  checked: "2026-07-21"
+zajimavosti:
+  - text: "Provozovatel ji označuje za jednu z nejstarších chat v Karkonoszích."
+    kategorie: stari
+    zdroj: "https://halaszrenicka.pl/o-nas/"
+
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS a výška z OSM (ODbL); Szklarska Poręba z titulků WebSearch (agoda,
 # booking, e-szklarska.com) — obec v OSM nevyplněna, proto jen v textu.
@@ -36,45 +57,93 @@ overeniNocleh:
   verified: false
   checked: '2026-07-21'
 
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    katalog HUT-0224 (položka „Stravování: ano", jistota A) a doplňková fakta
+    2026-07-21 (katalog ChatGPT, zdroj https://halaszrenicka.pl/kontakt/ —
+    „bufet pro veřejnost do 20:00"); obsah stránky neotevřen
+  verified: false
+  checked: '2026-07-21'
+
 # ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Celoročně; bufet pro veřejnost do 20:00 (doplňková fakta 2026-07-21, katalog ChatGPT se zdrojem halaszrenicka.pl/kontakt — stránku jsme neotevřeli).
 kontakty:
   telefon: +48 757 533 270
+  email: "halaszrenicka@op.pl"
   web: https://www.halaszrenicka.pl/
+  # ROZPOR v telefonu: OSM (way/32604722, ODbL) uvádí +48 757 533 270,
+  # doplňková fakta 2026-07-21 (katalog ChatGPT, zdroj halaszrenicka.pl/kontakt)
+  # uvádějí +48 880 910 902. Nerozřešeno → DATA-04. Publikován zatím údaj z OSM,
+  # rozpor přiznán ve veřejné próze. e-mail: týž podklad, verified:false.
 overeniProvoz:
   source: >-
     kontakty z OSM https://www.openstreetmap.org/way/32604722 (ODbL); vlastní
     web potvrzen titulkem „Schronisko PTTK na Hali Szrenickiej"
     (halaszrenicka.pl); provozovatel PTTK dle přehledů pttk.pl a
-    pttk.jgora.pl („Sudeckie Hotele i Schroniska PTTK" — titulky, DATA-03)
+    pttk.jgora.pl („Sudeckie Hotele i Schroniska PTTK" — titulky, DATA-03);
+    celoroční provoz a čas bufetu z doplňkových fakt 2026-07-21 (katalog
+    ChatGPT, zdroj https://halaszrenicka.pl/kontakt/, obsah neotevřen)
   verified: false
   checked: '2026-07-21'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Schronisko PTTK na horské louce Hala Szrenicka v západních Krkonoších,
-  ve výšce 1200 m nad Szklarskou Porębou. Kapacitu a otvíračku doporučujeme
-  před cestou ověřit na webu schroniska.
+  Schronisko PTTK na horské louce Hala Szrenicka ve výšce 1200 m nad
+  Szklarskou Porębou. Provozovatel odvozuje historii místa až od pastevecké
+  boudy z roku 1786. Kapacitu a přesnou otvírací dobu doporučujeme před
+  cestou ověřit na webu schroniska.
 text:
   - >-
-    Schronisko stojí na horské louce Hala Szrenicka pod vrcholem Szrenica, v
-    západní části polských Krkonoš, v nadmořské výšce 1 200 metrů. Pod ním
-    leží Szklarska Poręba, ke které rezervační portály schronisko řadí. Kousek
-    výš, přímo na Szrenici, stojí ještě Schronisko Szrenica.
+    Schronisko stojí na horské louce Hala Szrenicka v nadmořské výšce 1 200
+    metrů. Pod ní leží Szklarska Poręba, ke které rezervační portály
+    schronisko řadí. Necelý kilometr odtud stojí ještě Schronisko Szrenica,
+    kterému OpenStreetMap dává 1 361 metrů, tedy o sto šedesát víc; kde
+    přesně vůči vrcholu Szrenice stojí, si ale prameny nesedí — mapová data
+    u něj nesou jen tuhle výšku, kdežto katalogový záznam odvolávající se na
+    jeho stránky mluví o stavbě přímo na vrcholu, a rozřešené to nemáme.
+    Jestli louka Hala Szrenicka leží právě pod tímhle vrcholem, žádný
+    z pramenů, které pro tuhle stránku vedeme, neříká; jméno to napovídá,
+    doložené to nemáme.
   - >-
     Objekt je veden v přehledu ubytování PTTK a spadá pod správu Sudeckich
-    Hoteli i Schronisk PTTK, tedy pod polský turistický svaz, který síť
-    horských schronisk provozuje. Nocleh nabízí i přes běžné rezervační portály
-    a má vlastní web.
+    Hoteli i Schronisk PTTK. Nocleh nabízí i přes běžné rezervační portály
+    a má vlastní web. Kolik má lůžek, doložené nemáme — kapacitu neuvádí ani
+    katalogový podklad, ze kterého máme zbytek údajů.
   - >-
-    Víc o téhle chatě zatím poctivě říct neumíme. Počet lůžek, otvírací dobu,
-    podobu občerstvení ani historii se nám z dostupných pramenů doložit
-    nepodařilo — výška a souřadnice pocházejí z OpenStreetMap, zbytek
-    z přehledů provozovatele. Než sem doplníme ověřené údaje, doporučujeme
-    kapacitu i otvíračku potvrdit přímo u schroniska.
+    Historii místa odvozuje provozovatel na svých stránkách hluboko do
+    osmnáctého století: podle něj tu roku 1786 stávala pastevecká bouda. Dál
+    uvádí požár v roce 1975 a rok 2014, kdy objekt převzali současní rodinní
+    provozovatelé. Chatu při tom označuje za jednu z nejstarších
+    v Krkonoších — a tady se prameny rozcházejí, protože totéž o sobě tvrdí
+    i provozovatel Strzechy Akademické, a to spolu s chatou Pod Łabskim
+    Szczytem. Rozřešené to nemáme. Všechny tyhle údaje k nám navíc dorazily
+    přes externí podklad, který se na stránky schroniska odvolává; sami jsme
+    je neotevřeli.
+  - >-
+    Provoz je podle téhož podkladu celoroční a bufet má veřejnosti sloužit do
+    osmi večer; ve které dny a v jaké sezóně to platí, podklad neříká.
+    V telefonním čísle se prameny rozcházejí: jedno vedou mapová data, druhé
+    externí podklad odvolávající se na stránky schroniska. Zveřejňujeme to
+    z mapových dat, ale před cestou doporučujeme si kontakt ověřit.
+  - >-
+    Souřadnice a výška pocházejí z OpenStreetMap, statut schroniska PTTK
+    z přehledů provozovatele a vazba na Szklarskou Porębu z rezervačních
+    portálů. Historie, celoroční provoz, čas bufetu a e-mail jsou z externího
+    podkladu (21. 7. 2026), který se odvolává na stránky schroniska — ty jsme
+    sami neotevřeli. Redakce zatím žádný z těch údajů neověřila vlastní
+    návštěvou ani dotazem, proto doporučujeme kapacitu i otvírací dobu
+    potvrdit přímo u schroniska.
 
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/6/64/Hala_Szrenicka_-_panoramio_%281%29.jpg
-    alt: Hala Szrenicka se schroniskem PTTK
+    alt: Hala Szrenicka v polských Krkonoších
+    # ALT ZÚŽEN 25. 7. 2026: pramen (popis souboru na Commons) jmenuje jen
+    # louku, ne budovu, a soubor sám žádá oční potvrzení záběru redakcí.
+    # Po potvrzení vrátit „Hala Szrenicka se schroniskem PTTK".
     typ: soucasna
     autor: Sławek Zawadzki
     licence: cc-by-sa
@@ -95,8 +164,30 @@ zdroje:
     url: https://www.pttk.jgora.pl/schronisko-pttk-na-hali-szrenickiej/
   - popis: Web schroniska (dle OSM i titulků)
     url: https://www.halaszrenicka.pl/
+  - popis: >-
+      Doplňková faktická data (podklad ChatGPT, 21. 7. 2026) — historické
+      milníky 1786, 1975 a 2014, celoroční provoz, bufet pro veřejnost
+      do 20:00, e-mail a tvrzení provozovatele o jedné z nejstarších chat
+      v Krkonoších. Odvolávají se na halaszrenicka.pl, jejíž obsah jsme
+      neotevřeli; pramen z druhé ruky, verified:false. Uvádějí navíc jiné
+      telefonní číslo než OpenStreetMap — rozpor nerozřešen.
+  - popis: >-
+      OpenStreetMap — poloha a výška sousedního Schroniska Szrenica
+      (necelý kilometr odtud, 1 361 m), ODbL
+    url: https://www.openstreetmap.org/way/32604717
+  - popis: >-
+      Schronisko Szrenica — vlastní web; podle něj objekt stojí přímo na
+      vrcholu Szrenice, kdežto mapová data ho kladou těsně pod něj. Známe
+      jen zprostředkovaně z katalogového podkladu (2026-07-21), redakcí
+      NEOTEVŘENO, verified:false
+    url: https://www.szrenica.pl/
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/schronisko-pttk-na-hali-szrenickiej.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
   HERO S VÝHRADOU: popis fotky zní jen „Hala Szrenicka" (jméno louky) — geotag 12 m od budovy, autor fotil sérii u schroniska, ale záběr budovy potvrdí redakce očima (vzor Dvorská s28); jinak vyměnit za jiný ze 17 kandidátů.
   Existuje článek pl.wikipedia „Schronisko PTTK na Hali Szrenickiej" (titulek ve výsledcích) — dobrý zdroj pro historii při ručním běhu.
-  Dotáhnout ručním během: lůžka, otvíračka, občerstvení, obec (Szklarska Poręba jen z titulků portálů), historie.
+  Dotáhnout ručním během: lůžka (kapacitu neuvádí ani katalogový podklad), obec (Szklarska Poręba je v titulcích portálů a v katalogu jako „nejbližší obec nebo uzel" s jistotou A — rozhodnout, jestli to stačí na pole obec), ověřit převzatý telefon a e-mail, dny a sezónu otvírací doby bufetu, historii z pl.wikipedia.
+  AUDIT 4. DÁVKA (DATA-15, 25. 7. 2026) — nezávislý agent vrátil osm nálezů, všech osm přijato po ověření proti korpusu. (1) Vypuštěn nedoložený výklad zkratky PTTK („tedy pod polský turistický svaz, který síť horských schronisk provozuje") — prameny nesou zkratku jen jako jméno a obsah stránek nikdo neotevřel; týž zásah proběhl u schronisko-odrodzenie. (2+3) Věta „Kousek výš, přímo na Szrenici, stojí ještě Schronisko Szrenica" nesla tři nedoložené údaje najednou a navíc potichu rozhodovala rozpor, který sourozenecký profil schronisko-szrenica.yaml přiznává nahlas (OSM klade budovu těsně pod vrchol, web schroniska ji dává přímo na vrchol). Přepsáno s připsáním, rozpor přiznán, do zdroje doplněny OSM way/32604717 a szrenica.pl. Vzdálenost 0,88 km a převýšení 161 m dopočítány ze souřadnic a výšek obou profilů (obojí OSM).
+  AUDIT 4. DÁVKA, pokračování. (4) Světová strana „v západních Krkonoších" a „v západní části polských Krkonoš" vypuštěna z perexu i z text[0] — nenese ji žádný pramen v souboru a katalog HUT-0224 má v poli „Oblast / část pohoří" jen „Hala Szrenicka". Totéž znění mají sourozenecké profily schronisko-szrenica a schronisko-pttk-na-przeleczy-okraj — korpusový úklid, viz BACKLOG. (5) „pod vrcholem Szrenica" bylo nepřipsané tvrzení o poloze; místo vypuštění zvolena mezera přiznaná nahlas („jméno to napovídá, doložené to nemáme"), protože jméno louky i chaty na vrchol odkazuje a mlčet by čtenáři nepomohlo. (7) Závěrečné shrnutí připisovalo „zbytek" přehledům provozovatele; ve skutečnosti jsou kontakty z OSM, nocleh zčásti z rezervačních portálů a vazba na Szklarskou Porębu z jejich titulků — přepsáno. (8) Alt hero fotky tvrdil budovu, kterou soubor sám označuje za nepotvrzenou; zúžen na to, co nese popis souboru na Commons, s poznámkou, co vrátit po očním potvrzení.
+  AUDIT 4. DÁVKA, nález 6 (největší): text[2] tvrdil, že lůžka, otvírací dobu, občerstvení ani historii doložit neumíme — a přitom to všechno kromě lůžek leží v našem vlastním repozitáři. Řádek HUT-0224 „Hala Szrenicka" v data/externi/fakticka-data-krkonose-2026/fakticka-data.csv nese milníky 1786/1975/2014, provoz „celoročně / 24 hodin denně", „bufet pro veřejnost do 20:00", telefon, e-mail i zajímavost o jedné z nejstarších chat, jistota A; katalog.json u téhož ID uvádí Ubytování i Stravování „ano" a Provoz „celoročně". Data doplněna ručně v obvyklém tvaru „Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false)" a próza přepsána. PŘÍČINA: DATA-09 objekt přeskočil kvůli neshodě jmen (u nás „Hali Szrenickiej", v podkladu „Hala Szrenicka"), PUVOD.md ho proto vede mezi osmi chatami, které v katalogu nejsou. Kontrola zbylých sedmi našla druhý falešný nesoulad: „Bílé Labe" má v podkladu řádek HUT-0011 „Bouda u Bílého Labe" — viz BACKLOG.
+  ROZPOR V TELEFONU (nový, nerozřešen): OSM way/32604722 uvádí +48 757 533 270, doplňková fakta 2026-07-21 se zdrojem halaszrenicka.pl/kontakt uvádějí +48 880 910 902. Publikován zatím údaj z OSM; ve veřejné próze o neshodě říkáme, aniž bychom čísla uváděli. Rozhodne DATA-04.
+  ZAMÍTNUTO z auditu (agent si to zamítl sám, ověřeno proti souboru): „nad Szklarskou Porębou" jako nedoložená vazba — plyne z doložené výšky a je připsaná portálům; „na horské louce Hala Szrenicka" jako dovymyšlený terén — je to překlad jména objektu a katalog louku jmenuje; chybějící připsání OpenStreetMap — próza je jmenuje a overeniLokace nese plnou doložku ODbL; „nabízí i přes běžné rezervační portály" v množném čísle — doloženo booking.com i titulky agoda a e-szklarska.com; doporučení ověřit si údaje na webu schroniska — netvrdí, co web uvádí, a je to domácí styl perexu. Pole obec zůstává prázdné záměrně: katalog má Szklarskou Porębu jen jako „nejbližší obec nebo uzel", což není totéž co správní obec.

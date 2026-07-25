@@ -76,7 +76,7 @@ overeniPristup:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Horský penzion v historických Vebrových boudách nad Velkou Úpou (1 100 m),
+  Horský penzion v roli historických Vebrových bud nad Velkou Úpou (1 100 m),
   u vrchní stanice vleku Javor. Kapacita 75 lůžek ve dvou- až sedmilůžkových
   pokojích, stravování formou penze, v létě venkovní bazének.
 text:
@@ -94,21 +94,23 @@ text:
     Ubytovací kapacitu uvádějí Info-Čechy na 75 lůžek ve dvou- až
     sedmilůžkových pokojích. Stravování je řešené formou polopenze
     s klasickou českou stravou a snídaní podávanou švédským stolem, školám
-    a sportovním klubům penzion nabízí i plnou penzi. Restaurace otevřená
-    veřejnosti mimo ubytované hosty doložená není.
+    a klubům penzion nabízí i plnou penzi. Restaurace otevřená veřejnosti
+    mimo ubytované hosty doložená není.
   - >-
     Z vybavení týž katalog jmenuje Wi-Fi, hřiště na volejbal a malý fotbal,
     ohniště s grilem, v létě venkovní vyhřívaný bazének a v zimě zápůjčku
     slalomových tyčí. Přímo u objektu je parkoviště, takže se sem dá dojet
     autem.
   - >-
-    Všechny tyhle údaje pocházejí z katalogového profilu, ne z vlastního webu
-    penzionu, který se nám zatím nepodařilo otevřít, a redakce je neověřila
-    vlastním dotazem. Nedoložená zůstává sezóna i otvírací doba, proto
+    Souřadnice objektu pocházejí z OpenStreetMap (© přispěvatelé
+    OpenStreetMap, ODbL), ostatní údaje z katalogového profilu, ne
+    z vlastního webu penzionu, který se nám zatím nepodařilo otevřít;
+    redakce je neověřila vlastním dotazem. Nedoložená zůstává sezóna
+    i otvírací doba, proto
     doporučujeme termín a podmínky pobytu potvrdit si přímo u provozovatele.
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/f/f0/Vebrovy_boudy%2C_Krkono%C5%A1e.jpg
-    alt: Vebrovy boudy — horský penzion v historických boudách nad Velkou Úpou v Krkonoších
+    alt: Vebrovy boudy — horský penzion nad Velkou Úpou v Krkonoších
     typ: soucasna
     autor: Honza Groh (Jagro)
     licence: cc-by-sa
@@ -138,3 +140,31 @@ interniPoznamky: >-
   telefonicky v DATA-04 (mj. sezóna, otvírací doba, e-mail, historie/rok
   vzniku, křížová kontrola výšky 1 100 m). Diakritika Vebrovy/Vébrovy
   sjednocena na „Vebrovy" dle domény a OSM; „Vébrovy boudy" jako alias.
+
+  DATA-15 (jazykový audit 25. 7. 2026, čtvrtá dávka): opraveny tři vady.
+  (1) Perex tvrdil „v historických Vebrových boudách" jako doložený fakt,
+  ač soubor nemá rokVzniku, milníky ani blok overeniHistorie a text[1]
+  o dva odstavce dál sám přiznává „Kdy boudy vznikly a jakými proměnami
+  prošly, se nám doložit nepodařilo" — rozpor uvnitř jednoho profilu.
+  Sjednoceno na opatrné „v roli historických bud", což je formulace
+  rozhodnutí Michala z 20. 7. 2026 a zavedený tvar sesterských hraničních
+  profilů (tetrevi-boudy, hotel-spindlerova-bouda); týž přívlastek
+  odstraněn i z alt textu hero fotky, kde je taky veřejně čitelný.
+  (2) Závěrečný odstavec tvrdil, že „všechny tyhle údaje pocházejí
+  z katalogového profilu" — souřadnice ale pocházejí z OpenStreetMap,
+  jak rozlišuje overeniLokace i zdroje[2], a věta tím rušila připsání,
+  které žádá licence ODbL. Přepsáno na rozlišující formulaci podle
+  domácího vzoru (tetrevi-boudy, schronisko-kamienczyk). (3) Próza
+  zužovala „pro školy a kluby plná penze" na „školám a sportovním klubům"
+  — přívlastek citace nenese, nejbližší opora (volejbal, malý fotbal)
+  je souvislost, ne doklad; vypuštěn.
+  ZAMÍTNUTO jako nedorozumění auditu: „v katastru Pece pod Sněžkou" je
+  doložené polem obec i adresou v overeniLokace a je to zavedený domácí
+  tvar (portasky u sousedního objektu doslova „stojí nad Velkou Úpou
+  v katastru Pece pod Sněžkou"). Slovo „profil" ve spojení „katalogový
+  profil" neoznačuje náš datový soubor, ale stránku pramene — doložený
+  styl napříč korpusem. „Hřiště na volejbal a malý fotbal" proti citaci
+  „volejbal a malý fotbal" nepřidává tvrzení, jen pojmenovává místo.
+  Perex „stravování formou penze" nepotřebuje výhradu o veřejnosti jako
+  Špindlerova bouda, protože penze je z definice pro ubytované a text[2]
+  to říká výslovně.

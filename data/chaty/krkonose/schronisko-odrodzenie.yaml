@@ -25,7 +25,7 @@ overeniHistorie:
 zajimavosti:
   - text: "Provozovatel uvádí otevření 365 dní v roce a 24 hodin denně."
     kategorie: jine
-    zdroj: "https://www.schroniskoodrodzenie.pl/o-nas/"
+    zdroj: "externí doplňková fakta (podklad ChatGPT, 21. 7. 2026), která se odvolávají na stránky schroniska — obsah stránek jsme sami neotevřeli"
 
 aliasy:
   - nazev: Schronisko PTTK „Odrodzenie"
@@ -37,7 +37,7 @@ aliasy:
 # — obec v OSM nevyplněna.
 lat: 50.7634073
 lng: 15.6395908
-vyska: 1230
+vyska: 1230 # ROZPOR: externí katalog (HUT-0221) uvádí 1236 m — nerozřešeno, DATA-04
 overeniLokace:
   source: >-
     OpenStreetMap https://www.openstreetmap.org/way/20897240 — data ©
@@ -68,33 +68,47 @@ overeniProvoz:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Schronisko na Przełęczy Karkonoské (Slezském sedle) v hlavním hřebeni
-  Krkonoš, ve výšce 1230 m. Podrobnosti provozu doporučujeme před cestou
-  ověřit na webu schroniska.
+  Schronisko na Przełęczy Karkonoské. OpenStreetMap mu dává výšku 1 230 m,
+  externí katalog o šest metrů víc. Vycházíme z OpenStreetMap, z titulků
+  výsledků vyhledávání a z externích podkladů; samotné stránky schroniska
+  jsme zatím neotevřeli, a tak podrobnosti provozu doporučujeme před cestou
+  ověřit na jeho webu.
 text:
   - >-
-    Schronisko Odrodzenie stojí na Przełęczy Karkonoské, tedy na Slezském
-    sedle v hlavním hřebeni Krkonoš, v nadmořské výšce 1 230 metrů. Výška
-    i souřadnice pocházejí z OpenStreetMap, polohu na sedle uvádějí titulky
-    polských turistických portálů; obec, pod kterou objekt spadá, doloženou
-    nemáme. Část zdrojů včetně stránek na doméně PTTK objekt uvádí jako
-    Schronisko PTTK „Odrodzenie".
+    Schronisko Odrodzenie stojí na Przełęczy Karkonoské v nadmořské výšce
+    1 230 metrů. Výška i souřadnice pocházejí z OpenStreetMap, polohu na
+    sedle uvádějí titulky polských turistických portálů; obec, pod kterou
+    objekt spadá, doloženou nemáme. Externí katalog, ze kterého máme
+    historii, klade schronisko o šest metrů výš, na 1 236 metrů, a který
+    z obou údajů je správný, rozřešené nemáme. Část zdrojů včetně stránek
+    na doméně PTTK objekt uvádí jako Schronisko PTTK „Odrodzenie".
   - >-
-    Podle webu schroniska vznikla budova v roce 1928 jako mládežnické
-    ubytovací zařízení Rübezahl a stejný letopočet nese i polský soupis
-    krkonošských památek. Provoz schroniska od roku 2009 vede rodina
-    Kaczmarkových.
+    Historii máme z externího katalogu, který se odvolává na stránky
+    schroniska; ty jsme sami zatím neotevřeli. Budova podle něj vznikla
+    v roce 1928 jako mládežnické ubytovací zařízení Rübezahl. Týž letopočet
+    nese v katalogu ještě druhý odkaz, i ten ale míří na stránku, kterou
+    jsme neotevřeli — dvě nezávislá potvrzení to nejsou, obojí pochází
+    z jedné a téže kompilace. Katalog dál uvádí, že provoz v roce 2009
+    převzala rodina Kaczmarkových.
   - >-
-    Provozovatel na svém webu uvádí, že má otevřeno 365 dní v roce a
-    čtyřiadvacet hodin denně. Nocleh, kapacitu ani podobu občerstvení
-    doloženou nemáme. Otevřená zůstává také otázka, zda objekt spadá pod PTTK:
-    tvar jména se zkratkou PTTK pochází jen z titulků třetích stran a sám o
-    sobě správu polského turistického svazu nedokládá.
+    Že má schronisko otevřeno 365 dní v roce a čtyřiadvacet hodin denně,
+    přebíráme z týchž externích podkladů, které se odvolávají na prezentaci
+    schroniska — tu jsme ale neotevřeli, takže údaj stojí na prameni
+    z druhé ruky. Nocleh i stravování u schroniska tytéž podklady uvádějí
+    a jeden z nich mluví o bufetu, počet lůžek ale neuvádí žádný.
+    Nezávisle doložené nemáme ani jedno: v přehledu ubytování, který vede
+    PTTK, jsme objekt v tomto běhu nenašli, a proto nocleh ani podobu
+    občerstvení na stránce nevedeme. Otevřená zůstává i otázka, kdo objekt
+    spravuje: OpenStreetMap u něj jako provozovatele uvádí PTTK a týž tvar
+    jména nesou i titulky třetích stran, vlastním dotazem to ale doložené
+    nemáme.
   - >-
-    Údaje na této stránce pocházejí z OpenStreetMap a z prezentace
-    samotného schroniska a redakce je zatím neověřila vlastním dotazem ani
-    návštěvou. Před cestou doporučujeme potvrdit si přímo u schroniska
-    zejména možnost noclehu a otvírací dobu.
+    Údaje na této stránce pocházejí z OpenStreetMap, z titulků výsledků
+    vyhledávání a z externích podkladů, které se odvolávají na prezentaci
+    schroniska — tu jsme sami neotevřeli. Redakce je zatím neověřila
+    vlastním dotazem ani návštěvou. Před cestou doporučujeme potvrdit si
+    přímo u schroniska zejména možnost noclehu, občerstvení a otvírací
+    dobu.
 
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/0/06/Odrodzenie_%28Krkono%C5%A1e%2C_Polsko%29.jpg
@@ -117,8 +131,12 @@ zdroje:
     url: http://www.schroniskoodrodzenie.pl/
   - popis: PTTK šlaki — trasa na Przełęcz Karkonoskou (titulek, neotevřeno)
     url: https://dolnoslaskie.szlaki.pttk.pl/2023-dolnoslaskie-przelecz-karkonoska-schronisko-odrodzenie
+  - popis: 'Externí katalog a doplňková faktická data (podklad ChatGPT, 21. 7. 2026) — rok vzniku 1928, milníky 1928 a 2009, nepřetržitý celoroční provoz, ubytování a stravování „ano" i zmínka o bufetu, výška 1 236 m. Odvolávají se na schroniskoodrodzenie.pl a na kpn.gov.pl, jejichž obsah jsme neotevřeli; oba letopočty 1928 tedy pocházejí z jedné kompilace, ne ze dvou nezávislých pramenů. Pramen z druhé ruky, verified:false'
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/schronisko-odrodzenie.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
   NOCLEH: v pttk.pl/accommodations tento běh objekt nenašel (s23 ho měla mezi potvrzenými schronisky, ale bez accommodations odkazu) — nocleh nevyplněn, doloží web (ruční běh).
   Naproti přes hřeben stojí Hotel Špindlerova bouda (profil už na webu) — vzájemný odkaz zvážit až s trasami (DATA-06); mezi fotokandidáty je i pohled „Špindlovka" ze 113 m.
   Dotáhnout ručním během: nocleh + kapacita, občerstvení, otvíračka, telefon, historie, obec, provozovatel (PTTK jen z titulků třetích stran).
+  DATA-15 (jazykový audit 25. 7. 2026, čtvrtá dávka): největší sada dávky, jedenáct nálezů, všechny přijaty — u jednoho přijat nález a zamítnut navržený lék. (1) Próza na třech místech tvrdila, že údaj máme „podle webu schroniska" / „provozovatel na svém webu uvádí" / „z prezentace samotného schroniska", ačkoli hlavička souboru výslovně říká, že obsah stránek NEotevřen a všechna doplňková fakta stojí na AI kompilaci (data/externi/fakticka-data-krkonose-2026 + katalog-cr-sk-2026, dle PUVOD.md „vypracoval ChatGPT… není to primární pramen"). Přepsáno podle sesterského vzoru dom-slaski („Historii máme z externího katalogu, který se odvolává na… samotný web jsme zatím neotevřeli") a katalog nově veden i v zdroje, položkou bez url — týž vzor. Je to přesně vzorec, který DENIK ř. 145 hlásí jako opakovaný nález třetí dávky. (2) Věta „stejný letopočet nese i polský soupis krkonošských památek" pojmenovávala pramen, který soubor takhle nikde nepopisuje — jméno je výklad cesty v URL kpn.gov.pl — a hlavně budila dojem dvou nezávislých potvrzení roku 1928, ač overeniHistorie má u obou položek shodnou poznámku „katalog ChatGPT". Nově se říká rovnou, že obojí pochází z jedné kompilace. (3) „Provoz schroniska od roku 2009 vede rodina Kaczmarkových" dělalo z jednorázového milníku trvající stav; přepsáno do minulého času dle dom-slaski a otázka dnešní správy ponechána celá odstavci o PTTK, aby se profil znovu neprotiřečil (DENIK ř. 145 vede „sebeprotiřečení u Odrodzenie ohledně provozovatele" jako už jednou opravené). (4) „v hlavním hřebeni Krkonoš" v perexu i v text[0] je tvrzení o typu terénu, které nenese žádný blok overeni* ani zdroje; identický nález prošel ve třetí dávce u hotel-spindlerova-bouda 0,3 km odsud a tamtéž je zamítnuto i řešení „doplnit větu, že hřeben doložit neumíme" — proto jen odstraněno, bez náhrady. Poloha „na sedle" doložená je (overeniLokace) a zůstává. (5) Zkratka PTTK se rozepisovala jako „polský turistický svaz"; rozepsání se v souboru nikde nedokládá a nejbližší doklad v korpusu (OSM tag owner: Polskie Towarzystwo Turystyczno-Krajoznawcze) říká něco jiného — je to spolek turisticko-krajinářský, ne svaz. Zkratka se nadále nevykládá. (6) „tvar jména se zkratkou PTTK pochází jen z titulků třetích stran" je vyvratitelné pramenem, který profil sám cituje: OSM way/20897240 nese operator: PTTK a owner: Polskie Towarzystwo Turystyczno-Krajoznawcze (ověřeno v _overpass-export-pl.json), týž tvar jména vede i oficiální polský seznam turistických známek. Slovo „jen" bylo nepravdivé vůči vlastním datům; nově se říká, co OSM uvádí, a nedohledání v přehledu ubytování PTTK se přiznává vedle toho. (7) Nepřiznaný rozpor ve výšce: OSM 1230 m proti 1236 m v katalogu HUT-0221, tedy v témže prameni, ze kterého bereme historii. Konvence B žádá rozpor přiznat ve veřejné próze — doplněno do perexu i text[0] podle vzoru hotel-spindlerova-bouda (1784/1824), a k poli vyska přidán inline komentář ROZPOR. (8) Český název sedla „Slezské sedlo" nenese v souboru žádný pramen; jediná stopa v korpusu je název fotky na Commons v kandidátském souboru fotek, který próza necituje, a v témže souboru německé popisy nazývají totéž místo „am Spindlerpass". Závorka i vsuvka vypuštěny, český název se vrátí až s pramenem (DATA-04).
+  NÁLEZ PŘIJAT, LÉK ZAMÍTNUT: „Nocleh, kapacitu ani podobu občerstvení doloženou nemáme" bylo nepravdivé — katalogový záznam HUT-0221 nese Ubytování „ano", Stravování „ano" a Provoz „celoročně", fakticka-data.csv u téhož objektu dokonce „bufet denně 8:00–20:00" (jistota A). Jeden pramen se tedy používal pro otevírací režim a mlčky odpíral u sousedních polí. Audit navrhoval větu přepsat na to, co prameny nesou; převzato, ale BEZ hodin. Důvod není plošný zákaz — otviraciDoba je vyplněná ve dvaceti publikovaných profilech a v pěti stojí hodiny přímo v próze, takže publikovat je korpus umí. Tady jsou ale dvakrát z druhé ruky (AI kompilace odkazující na stránku, kterou nikdo neotevřel) a přesný čas se mění rychleji než cokoli jiného, co bychom takhle slabě doloženého pustili ven; pojmenováváme proto formu občerstvení, ne hodiny (týž rozvah jako u Vosecké a Výrovky ve čtvrté dávce). Próza tedy říká, že podklady nocleh i stravování uvádějí a jeden z nich mluví o bufetu, že počet lůžek neuvádí žádný a že nezávisle doložené to nemáme (v přehledu ubytování PTTK objekt nenalezen), a proto pole nocleh, kapacita ani typObcerstveni zůstávají prázdná — jejich vyplnění je věcné rozhodnutí pro ruční běh (DATA-04), ne jazykový audit. Rozpor je tím přiznaný, aniž by se cokoli domýšlelo.
+  ZAMÍTNUTO jako nedorozumění auditu (agentem samotným, po druhém čtení): věta „obec, pod kterou objekt spadá, doloženou nemáme" obstojí, ač katalog u HUT-0221 vede Przesieku — katalogové pole se jmenuje „Nejbližší obec NEBO uzel", což není správní příslušnost. Przesieka patří do seznamu k dotažení. Připsání OpenStreetMap v próze je povinné kvůli ODbL, není to únik interního pojmu. „na sedle" jako popis polohy doložené je. Zajímavost o provozu 365/24 se nemazala — po odečtení nedoloženého zbývá reálné tvrzení, opravovalo se jen připsání.

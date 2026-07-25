@@ -20,8 +20,8 @@ overeniHistorie:
   verified: false
   checked: "2026-07-21"
 zajimavosti:
-  - text: Horská bouda s restaurací ve výšce 1227 m, kam auto nevjede — jen pěší přístup
-    kategorie: jine
+  - text: Provozovatel objekt prezentuje jako nejvýše položenou farmu v ČR.
+    kategorie: vyska
     zdroj: web chaty (klinovka.com)
 
 aliasy:
@@ -57,7 +57,7 @@ overeniNocleh:
 # ── Občerstvení ───────────────────────────────────────────────────────────
 kuchyne: ano
 typObcerstveni: restaurace
-specialita: jídla z vlastního chovu Highland (kulajda, steaky), čerstvý chléb
+specialita: jídla z vlastního chovu skotu Highland
 overeniObcerstveni:
   source: https://www.klinovka.com/ (restaurace s jídelním lístkem přístupná i neubytovaným, poctivé jídlo z vlastního chovu Highland; otvírací doba na webu neuvedena)
   verified: false
@@ -104,16 +104,18 @@ text:
     pouze pěšky. V OpenStreetMap je objekt veden pod jménem Nová Klínovka,
     web provozovatele používá tvar Bouda Klínovka.
   - >-
-    O starších dějinách boudy toho zatím víme málo. Počátek Klínové boudy má
-    podle prezentace boudy sahat k roku 1676, kdy na místě stála hornická
-    chatrč; tenhle letopočet k nám ovšem dorazil z druhé ruky a sami jsme ho
-    na stránkách boudy zatím neověřili. Další milníky doložené nemáme.
+    O starších dějinách boudy toho zatím víme málo. Provozovatel klade
+    počátek objektu k roku 1676, kdy tu měla stát hornická chatrč; tenhle
+    letopočet k nám ovšem dorazil z druhé ruky a sami jsme ho na stránkách
+    boudy zatím neověřili. Se jménem je navíc potíž: Klínová bouda,
+    uváděná i jako Klínovka, je v našem atlasu zaniklých chat vedena jako
+    samostatný objekt, který roku 1970 vyhořel a nebyl obnoven. Jestli
+    dnešní bouda na jeho dějiny navazuje, doložené nemáme.
   - >-
     Ubytovat se tu může až padesát hostů v sedmi podkrovních pokojích a ve
     dvou noclehárnách. Restaurace má jídelní lístek a je otevřená i těm,
     kdo tu nespí; podle boudy stojí kuchyně na poctivém jídle z vlastního
-    chovu skotu Highland, jmenovitě na kulajdě a steacích, a peče se tu
-    čerstvý chléb. Wi-Fi tu záměrně nenajdete, místo připojení nabízí
+    chovu skotu Highland. Wi-Fi tu záměrně nenajdete, místo připojení nabízí
     bouda společenské hry, kytaru a klavír. Provoz je celoroční, se
     zimními i letními trasami.
   - >-
@@ -140,3 +142,4 @@ interniPoznamky: |-
   Web: klinovka.cz z OSM přesměrovává na klinovka.com — zapsán cílový web.
   Foto: hero chybí (0 licenčně čistých kandidátů na Commons) — dořešit.
   Otvírací doba restaurace: web ji neuvádí — doplnit (DATA-04).
+  DATA-15 (jazykový audit 25. 7. 2026, čtvrtá dávka): opraveny tři vady. (1) text[1] kladl „počátek Klínové boudy" k roku 1676, ač Klínová bouda (též Klínovka, Keilbaude) je v našem vlastním atlasu zaniklých chat samostatný objekt — ZANIK-007, vyhořela 1970, jistota A, souřadnice zhruba 280 m odsud. Próza si tedy přivlastňovala dějiny domu, který podle nás neexistuje, a rozpor nikde nepřiznávala; přepsáno tak, že letopočet zůstává jako tvrzení provozovatele a kolize jmen je přiznaná nahlas („jestli dnešní bouda na jeho dějiny navazuje, doložené nemáme"). Milník ponechán v doslovném znění pramene, včetně jeho vlastní formulace „Klínové boudy" — pramen se nepřepisuje, rozpor vysvětluje próza. Patří k DATA-17, jen ostřejší variantou: kolize není mezi dvěma živými chatami, ale mezi živou a zaniklou. (2) text[2] tvrdil „jmenovitě na kulajdě a steacích, a peče se tu čerstvý chléb" — jediná citace ke stravování (overeniObcerstveni) nese pouze „poctivé jídlo z vlastního chovu Highland", konkrétní pokrmy nestojí nikde v repu kromě pole specialita a téhle věty. Vypuštěno z prózy i zúženo v poli specialita, protože pole překračovalo citaci vlastního bloku stejně jako próza. (3) zajimavosti[0] („Horská bouda s restaurací ve výšce 1227 m, kam auto nevjede") byla čistý duplikát polí vyska, typObcerstveni a autem — po odečtení doložených polí nezbylo nic. Nahrazena doloženým tvrzením z fakticka-data.csv (HUT-0026, zdroj klinovka.com, jistota A): „Provozovatel objekt prezentuje jako nejvýše položenou farmu v ČR." Oproti Martinově boudě ze třetí dávky se tu položka nemazala — doložená náhrada v korpusu ležela nepoužitá, což je lepší než prázdné místo. ZAMÍTNUTO jako nedorozumění auditu (v tomhle profilu už samotným agentem, po druhém čtení): „podle prezentace boudy" u roku 1676 není vada třídy 12 — web klinovka.com skutečně otevřen byl (DATA-03, 20. 7. 2026) a zprostředkovaný je jen blok overeniHistorie, což próza sama přiznává. Slovo „milník" ve větě „Další milníky doložené nemáme" není únik názvu pole, ale doložený domácí styl (chalupa-na-rozcesti, lucni-bouda, labska-bouda). Věta „Konkrétní pěší trasy… doložené nemáme" si neodporuje s vrstvou tras: ta je generovaná (OSM routing + výškový model, verified:false) a redakce ji za publikovaný doklad nepovažuje — je to systémová otázka napříč čtyřmi profily, ne vada tohohle souboru.

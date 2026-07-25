@@ -11,7 +11,7 @@ stav: v-provozu # sezónní provoz, viz sezona
 oblast: krkonose
 
 # ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
-kapacita: 43  # kapacita lůžek: https://voseckabouda.cz/ubytovani/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false); zdrojový průzkum 2026-07-22 hlásí rozpor: Seznam Zprávy 43, Krkonose.eu 42 — prověřit (DATA-04)
+kapacita: 43  # hodnotu i citaci https://voseckabouda.cz/ubytovani/ přebírá externí katalog (doplňková fakta 2026-07-21, ChatGPT podklad, verified:false) — NAŠE čtení webu z 20. 7. 2026 kapacitu na stránkách nenašlo (viz overeniNocleh), citace tedy není naše; zdrojový průzkum 2026-07-22 hlásí rozpor: Seznam Zprávy 43, Krkonose.eu 42, katalog DATA-08 dokonce 37 — prověřit (DATA-04)
 zajimavosti:
   - text: Nikdy nevyhořela a není napojená na elektrickou síť — energii vyrábí dieselagregát
     kategorie: jine
@@ -101,7 +101,7 @@ overeniHistorie:
 perex: >-
   Sezónní horská bouda v 1. zóně KRNAP v západních Krkonoších (1 260 m),
   8 km od Harrachova. Historie sahá před rok 1743, turistům slouží od roku
-  1896 — a jako jedna z mála krkonošských bud nikdy nevyhořela.
+  1896 a podle webu boudy nikdy nevyhořela.
 text:
   - >-
     Vosecká bouda stojí ve výšce 1 260 m n. m. v první zóně Krkonošského
@@ -110,11 +110,11 @@ text:
     cesta.
   - >-
     Počátky objektu sahají před rok 1743, kdy tu stál seník; turistům bouda
-    slouží od roku 1896. Podle Krkonose.eu, tedy sekundárního média, byla
-    kolem roku 1900 přestavěna a rozšířena a ve starších pramenech se objevuje
-    pod jmény Česká nová a Františkánská. Dnešní ráz získala až po druhé
-    světové válce a web boudy uvádí, že nikdy nevyhořela — na rozdíl od řady
-    jiných krkonošských bud.
+    slouží od roku 1896. Podle serveru Krkonose.eu, tedy sekundárního média,
+    byla kolem roku 1900 přestavěna a rozšířena, dřív nesla jména Česká nová
+    a Františkánská a patří k nemnoha krkonošským boudám, které nikdy
+    nevyhořely. Dnešní ráz získala až po druhé světové válce; že nikdy
+    nevyhořela, uvádí i web boudy.
   - >-
     Bouda není napojena na elektrickou rozvodnou síť — proud si vyrábí
     vlastním dieselagregátem. Časopis Turista psal o chystaném přechodu na
@@ -123,16 +123,19 @@ text:
     uvádí, je projektový předpoklad před vyhodnocením zkušebního provozu, ne
     změřený výsledek.
   - >-
-    Ubytování se rezervuje přes formulář na webu boudy, typy pokojů tam ale
-    uvedené nejsou. V počtu lůžek se prameny rozcházejí: Seznam Zprávy uvádějí
-    43 lůžek, Krkonose.eu 42 — obojí jsou sekundární média a redakce údaj
-    zatím neověřila. Provoz je sezónní, pro rok 2026 web ohlašuje otevřeno od
-    1. června do 28. října.
+    Ubytování se rezervuje přes formulář na webu boudy, kapacita ani typy
+    pokojů tam ale uvedené nejsou. V počtu lůžek se prameny rozcházejí:
+    uvádíme 43, stejné číslo nesou Seznam Zprávy, server Krkonose.eu jich
+    počítá 42 a starší katalogový podklad 37. Všechno jsou prameny z druhé
+    ruky a redakce žádné z těch čísel zatím neověřila. Provoz je sezónní, pro
+    rok 2026 web ohlašuje otevřeno od 1. června do 28. října.
   - >-
-    Jaké občerstvení bouda nabízí a jaké další zázemí mají hosté k dispozici,
-    se nám z dostupných pramenů doložit nepodařilo. Před cestou proto
-    doporučujeme ověřit si přímo u boudy volnou kapacitu i aktuální otvírací
-    dobu.
+    Web boudy nepopisuje, jaké občerstvení nabízí a jestli obslouží
+    i kolemjdoucí, kteří tu nespí; sekundární prameny u ní kuchyni zmiňují
+    a uvádějí i její otvírací dobu, tu ale neověřenou nepublikujeme, protože
+    se mění. Jaké další zázemí mají hosté k dispozici, doložené nemáme. Před
+    cestou proto doporučujeme ověřit si přímo u boudy volnou kapacitu
+    i aktuální otvírací dobu.
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/9/91/Vosecka_bouda_003.jpg
     alt: Vosecká bouda — pohled na horskou boudu v západních Krkonoších
@@ -158,9 +161,11 @@ zdroje:
     url: https://casopisturista.cz/vosecka-bouda-nekonecna-energie-v-krkonosich-vosecka-bouda-meni-dieselagregat-za-fotovoltaiku-s-bateriovym-ulozistem/
   - popis: 'Seznam Zprávy — historie Vosecké boudy (bez elektřiny, hospodáři, kapacita 43); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
     url: https://www.seznamzpravy.cz/clanek/magazin-cestovani-vosecka-bouda-historie-283327
+  - popis: 'Externí katalog krkonošských chat (ChatGPT podklad, doplňková fakta 2026-07-21; katalogový přehled DATA-08) — kapacita 37 lůžek a citace webu boudy k noclehu; podklad nemá veřejně citovatelné umístění, vedeme ho bez odkazu; verified:false'
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/vosecka-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅). KČT ji řadí mezi „12 nejlepších horských chat v Krkonoších".
   Občerstvení: web gastronomii pro veřejnost výslovně nepopisuje — kuchyne proto NEvyplněno (nedomýšlet). Doložit při telefonickém ověření (DATA-04).
   Kapacita lůžek: zapsáno 43 (voseckabouda.cz/ubytovani, DATA-09); zdrojový průzkum 2026-07-22 hlásí rozpor — Seznam Zprávy 43, Krkonose.eu 42. Prověřit primárně (DATA-04). Ceny na webu neuvedeny.
   Sezónnost je i údaj pro DATA-04 (aktualizovat rok co rok).
   Vetkáno DATA-12 (zdrojový průzkum 2026-07-22): milník 1900, historické názvy Česká nová/Františkánská, fotovoltaika (projektový předpoklad). Vše verified:false.
+  DATA-15 (jazykový audit 25. 7. 2026, čtvrtá dávka): opraveno šest vad, všechny nálezy auditu přijaty. (1) text[3] rozpor v počtu lůžek tiše řešil: publikoval „Seznam Zprávy 43, Krkonose.eu 42" a mlčel o tom, že sami vedeme 43 a že katalogový podklad DATA-08 uvádí 37 — tedy třetí hodnotu, o níž komentář u pole kapacita ví. Konvence B žádá rozpor přiznat celý, ne po částech; próza teď jmenuje všechna tři čísla a přiznává, že naše číslo je taky z druhé ruky. (2) text[1] připisoval srovnání „na rozdíl od řady jiných krkonošských bud" webu boudy — ten podle overeniHistorie tvrdí jen „nikdy nevyhořela", srovnání s ostatními boudami nese FACT-0062 z destinačního profilu Krkonose.eu. Přesunuto k prameni, který to skutečně říká. (3) text[1] uváděl historické názvy slovy „ve starších pramenech se objevuje" — žádné starší prameny jsme nečetli, oba názvy stojí na jediném sekundárním médiu ze zdrojového průzkumu 2026-07-22. Formulace vymýšlela původ; nahrazena prostým „dřív nesla jména". (4) zdroje neměly položku pro externí katalog, přestože z něj pochází hodnota kapacity i citace webu k noclehu (viz komentář u pole kapacita) — doplněna položka bez url podle precedentu evidenční hygieny ze třetí dávky (schema: popis povinný, url volitelné). (5) text[4] tvrdil paušálně, že se občerstvení „z dostupných pramenů doložit nepodařilo", ač FACT-0066 nese kuchyni i její otvírací dobu z Krkonose.eu — nepravdivé o vlastní evidenci. Přeformulováno tak, že web mlčí, sekundární prameny kuchyni mají, a otvírací dobu nepublikujeme kvůli proměnlivosti, ne kvůli neexistenci. (6) komentář u pole kapacita a perex: citace voseckabouda.cz/ubytovani není naše čtení (naše čtení webu 20. 7. 2026 kapacitu nenašlo, viz overeniNocleh) a perexové „jako jedna z mála krkonošských bud nikdy nevyhořela" hlásilo srovnání jako vlastní zjištění — obojí opatřeno původem. ZAMÍTNUTO po druhém čtení: připsání OpenStreetMap ve veřejné próze tu chybět může, protože z OSM pochází jen souřadnice (ty se nepublikují) — korpus žádá připsání v próze tam, kde z OSM plyne výška nebo zařazení objektu, což není tenhle případ, a ODbL je vypořádána v overeniLokace i v zdroje. „Podle serveru Krkonose.eu" není skloňovaná doména (kontrola C = 0), governující podstatné jméno drží doménu v nominativu. Slovo „redakce" mimo závěrečný odstavec je tu v pořádku, protože stojí právě ve větě přiznávající rozpor pramenů. rokVzniku: 1743 proti prozaickému „před rokem 1743" není vada dat, ale mez schématu (pole nese jedno číslo) — hedge nese komentář pole, milník i próza. zajimavosti[1] není duplikát třídy 10: opakuje sice letopočty z milníků, ale všechny jsou doložené a položka je zdrojovaná, takže po odečtení polí zbývá shrnutí, ne prázdno. Pravidlo třídy 6 (světové strany) nespouští: „v západní části pohoří" stojí doslova v overeniLokace.source („západní Krkonoše, 1. zóna KRNAP").

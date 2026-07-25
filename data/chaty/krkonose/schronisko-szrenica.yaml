@@ -30,7 +30,7 @@ kapacita: 90  # kapacita lůžek: https://szrenica.pl/oferta/ (doplňková fakta
 zajimavosti:
   - text: Stojí na vrcholu hory Szrenica (1362 m) v Karkonoszském národním parku, jen ~300 m od české hranice — základna pro obě strany hřebene
     kategorie: jine
-    zdroj: web chaty (szrenica.pl)
+    zdroj: "katalog chat (podklad ChatGPT 2026-07-21), odvolává se na web chaty szrenica.pl — obsah neotevřen"
 
 aliasy:
   - nazev: Schronisko górskie Szrenica
@@ -75,35 +75,41 @@ overeniProvoz:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Schronisko pod vrcholem Szrenice nad Szklarskou Porębou, s ubytováním
-  hostelového typu. Podrobnosti provozu doporučujeme před cestou ověřit
-  na webu schroniska.
+  Schronisko na Szrenici nad Szklarskou Porębou, s ubytováním hostelového
+  typu. Podrobnosti provozu doporučujeme před cestou ověřit na webu
+  schroniska.
 text:
   - >-
-    Schronisko Szrenica stojí v západní části Krkonoš na hoře Szrenica nad
-    Szklarskou Porębou. Údaje o poloze si přitom úplně neodpovídají:
-    OpenStreetMap klade budovu do výšky 1 361 metrů těsně pod vrchol, kdežto
-    web schroniska píše, že objekt stojí přímo na vrcholu. Podle webu leží
-    schronisko v Karkonoszském národním parku a od české hranice ho dělí jen
-    asi tři sta metrů, takže může sloužit jako základna pro obě strany
-    hřebene.
+    Schronisko Szrenica stojí na hoře Szrenica nad Szklarskou Porębou.
+    U polohy si prameny úplně nesedí: OpenStreetMap uvádí u budovy
+    nadmořskou výšku 1 361 metrů, kdežto katalogový záznam odvolávající se
+    na stránky schroniska mluví o stavbě přímo na vrcholu. Každý z nich
+    přitom nejspíš měří něco jiného — výšku budovy proti výšce hory —
+    a rozřešené to nemáme. Týž záznam klade schronisko do Karkonoszského
+    národního parku a asi tři sta metrů od české hranice, takže může
+    sloužit jako základna pro obě strany hřebene.
   - >-
-    Stavba začala podle historie na webu schroniska v roce 1921 a objekt
-    vznikl o rok později. V roce 1972 ho poškodil požár, který zasáhl zhruba
-    sedmdesát procent střechy. Znovu otevřené, tentokrát v rukou soukromého
-    vlastníka, je od roku 1992. Celá tahle časová osa pochází z prezentace
-    schroniska a redakce ji zatím neověřila z jiného pramene.
+    Podle externího katalogu chat, který se odvolává na stránku historie
+    schroniska, začala stavba v roce 1921 a objekt vznikl o rok později.
+    V roce 1972 ho poškodil požár, který zasáhl zhruba sedmdesát procent
+    střechy. Znovu otevřené, tentokrát v rukou soukromého vlastníka, je od
+    roku 1992. Celou tuhle časovou osu přebíráme z jediného pramene, samu
+    stránku s historií jsme zatím neotevřeli a jiným pramenem ji doloženou
+    nemáme.
   - >-
     Na vlastních stránkách objekt vystupuje jako Schronisko górskie Szrenica
     a ubytování na nich sám označuje jako hostel; hostelový režim tu proto
-    přiznáváme, přesnější charakter provozu upřesníme po ověření. Nabídka na
-    webu uvádí kapacitu devadesáti lůžek. Podobu občerstvení ani otvírací
-    dobu doloženou nemáme a stejně tak nevíme, kdo schronisko provozuje dnes.
+    přiznáváme, přesnější charakter provozu upřesníme po ověření. Externí
+    katalog chat uvádí kapacitu devadesáti lůžek s odkazem na nabídku
+    schroniska; samotnou stránku jsme zatím neotevřeli, takže to číslo
+    bereme jako nepotvrzené. Podobu občerstvení ani otvírací dobu doloženou
+    nemáme a stejně tak nevíme, kdo schronisko provozuje dnes.
   - >-
-    Souřadnice a výška pocházejí z OpenStreetMap, ostatní údaje
-    z prezentace samotného schroniska; redakce je zatím neověřila vlastní
-    návštěvou ani dotazem. Před cestou doporučujeme potvrdit si otvírací
-    dobu a volná lůžka přímo u schroniska.
+    Souřadnice a výška pocházejí z OpenStreetMap, ostatní údaje z externího
+    katalogu chat, který se odvolává na stránky schroniska; samotné stránky
+    jsme zatím neotevřeli a redakce údaje neověřila vlastní návštěvou ani
+    dotazem. Před cestou doporučujeme potvrdit si otvírací dobu a volná
+    lůžka přímo u schroniska.
 
 # Bez hero fotky: mezi 38 kandidáty DATA-02 není žádný s popisem potvrzujícím
 # záběr budovy schroniska (vesměs krajina, sněhové jevy, Natura 2000 šablony)
@@ -113,11 +119,24 @@ text:
 zdroje:
   - popis: OpenStreetMap (GPS, výška, web — ODbL)
     url: https://www.openstreetmap.org/way/32604717
-  - popis: Web schroniska (hostel, nabídka, historie — titulky, neotevřeno)
+  - popis: >-
+      Web schroniska (název, město, existence podstránek /hostel/, /offer/,
+      /history/ — jen titulky výsledků vyhledávání, obsah neotevřen)
     url: https://www.szrenica.pl/
+  - popis: >-
+      Doplňková fakta z externího katalogu chat (podklad ChatGPT,
+      2026-07-21) — rok vzniku 1922, milníky 1921, 1972 a 1992, kapacita
+      90 lůžek, telefon, e-mail a zajímavost o poloze na vrcholu,
+      v Karkonoszském národním parku a asi tři sta metrů od české hranice.
+      Odvolávají se na szrenica.pl, jejíž obsah jsme neotevřeli; pramen
+      z druhé ruky, verified:false. Próza se na tenhle podklad výslovně
+      odvolává, proto sem patří; veřejně citovatelné umístění nemá.
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/schronisko-szrenica.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
   CHARAKTER (s23): web se prezentuje i jako „hostel" — do typologie zapsán typ obsluhovana (schronisko s obsluhou), hostelový režim přiznán v perexu i textu; upřesnit po otevření webu.
   PROVOZOVATEL: PTTK nikde v titulcích u tohoto objektu — netvrdíme (na rozdíl od Hali Szrenickiej).
-  Výška vrcholu Szrenica v textu vědomě neuvedena (žádný otevřený zdroj z tohoto běhu ji nedokládá) — jen „pod vrcholem"; doplní ruční běh.
-  Dotáhnout ručním během: hero fotka (oční výběr z 38 kandidátů), lůžka, otvíračka, občerstvení, kontakty (telefon), historie (web má /history/), obec.
+  Výška vrcholu Szrenica v textu vědomě neuvedena (žádný otevřený zdroj z tohoto běhu ji nedokládá); od 25. 7. 2026 text netvrdí ani „pod vrcholem" — viz DATA-15 nález 6.
+  Dotáhnout ručním během: hero fotka (oční výběr z 38 kandidátů), lůžka, otvíračka, občerstvení, kontakty (telefon), historie (web má /history/), obec. NAVÍC: rozřešit polohu budovy vůči vrcholu — otevřít szrenica.pl a dohledat v OSM uzel natural=peak pro Szrenici; do té doby se poloha vůči vrcholu netvrdí ani jedním směrem.
+  DATA-15 (jazykový audit 25. 7. 2026, čtvrtá dávka): nezávislý agent vrátil deset nálezů, všech deset přijato. Jádro dávky je jedno a totéž: soubor sbíral doplňková fakta z katalogového podkladu ChatGPT, ale próza je vydávala za přečtený web schroniska, ačkoli hlavička souboru přiznává „obsah stránek NEotevřen". (1) „Nabídka na webu uvádí kapacitu devadesáti lůžek" — číslo je z katalogu s odkazem na szrenica.pl/oferta/, stránka otevřená nebyla; přepsáno na přiznaného prostředníka. Rozpor s vlastním komentářem nad blokem Nocleh („Kapacita nedoložena — nedomýšlet") tím zmizel. (2) Celá historická osa byla připsaná „historii na webu schroniska", ač overeniHistorie cituje katalog; přepsáno na „Podle externího katalogu chat, který se odvolává na stránku historie schroniska". (3) Souhrnná věta text[3] připisovala „prezentaci samotného schroniska" všechno kromě OpenStreetMap — tedy i to, co nese jen katalog; opraveno. Byla to jediná věta, kde by se čtenář o prostředníkovi dozvěděl, a zastírala ho. (4) „web schroniska píše" a „Podle webu" u vrcholu, národního parku a tří set metrů od hranice — totéž, tvrzení nese zajimavosti[0] uvnitř katalogového bloku; přepsáno na „katalogový záznam odvolávající se na stránky schroniska". (5) „v západní části Krkonoš" vypuštěno — světovou stranu nenese žádný pramen v souboru. Korpusová vada, viz BACKLOG. (6) NEJZÁVAŽNĚJŠÍ: text tvrdil, že „OpenStreetMap klade budovu do výšky 1 361 metrů těsně pod vrchol". OpenStreetMap ale u budovy nese jen lat, lng a výšku; „těsně pod vrchol" byl náš vlastní odečet 1361 od 1362, přičemž 1362 je výška HORY z katalogové zajímavosti a 1361 výška BUDOVY z mapových dat — dvě různé veličiny. Rozdíl jednoho metru mezi nimi není rozpor pramenů a formulace „úplně neodpovídají" ho jako rozpor prodávala. Přepsáno tak, aby text řekl, co který pramen opravdu nese, a přiznal, že rozřešené to nemáme. (7) Perex si potichu vybíral stranu téhož rozporu („pod vrcholem Szrenice"), ač text o odstavec dál rozpor přiznává — perex nově stranu nevybírá („na Szrenici"). (8) Slovo „redakce" v text[1] vypuštěno; domácí styl ho připouští jen v závěrečném odstavci, kde zůstává. (9) zdroje[1] slibovalo, že „nabídka" a „historie" jsou z titulků — z titulků je doložen jen název, město a existence podstránek; popis opraven a přidána položka pro katalogový podklad (bez url, vzor hotel-spindlerova-bouda). (10) zajimavosti[0].zdroj jmenoval „web chaty (szrenica.pl)", ač jde o jedinou položku katalogového bloku, která prostředníka zamlčovala — doplněn.
+  DATA-15 přesah dávky: nález 6 a nález 4 mají druhou oběť — schronisko-pttk-na-hali-szrenickiej.yaml, přepsané v téže dávce o pár hodin dřív, převzalo obě vady do věty o sousedním Schronisku Szrenica („mapová data ho kladou těsně pod vrchol Szrenice, kdežto jeho vlastní web píše, že je přímo na vrcholu"). Opraveno tamtéž ve stejném běhu, aby oba profily o téže budově netvrdily každý něco jiného.
+  ZAMÍTNUTO (agent si to zamítl sám, ověřeno proti souboru): „nad Szklarskou Porębou" bez pole obec je doložené komentářem bloku Lokace i titulkem v overeniProvoz; „na hoře Szrenica" a „základna pro obě strany hřebene" nese doslova zajimavosti[0] s vlastním polem zdroj; „objekt vznikl o rok později" proti rokVzniku 1922 a milníku 1921 není rozpor; „Na vlastních stránkách objekt vystupuje jako Schronisko górskie Szrenica" obstálo, protože pramenem je opravdu titulek vlastního webu; přiznání, co nevíme, je poctivost; typ obsluhovana je odvozený z OSM tagu a próza obsluhu netvrdí; připsání OpenStreetMap je podle ODbL povinné; chybějící hero fotka je evidence k dotažení.

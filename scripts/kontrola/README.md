@@ -38,7 +38,7 @@ e-maily, telefony, ceny (mění se), GPS, čísla známek, názvy polí ani inte
 terminologie. **Výstup není seznam vad.** Část zásahů jsou trvalé a známé falešné
 poplachy: doména v prvním pádě jako jméno pramene („server Krkonose.eu") je
 doložený domácí styl, „redakce" v závěrečném odstavci taky, a OpenStreetMap se
-uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **127 zásahů** —
+uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **131 zásahů** —
 smysl má sledovat, jestli číslo neskočí, ne jestli je nula.
 
 Bylo jich 135 a rozdíl je čistě náhodou malý: 25. 7. 2026 **odpadlo 17 zásahů**
@@ -76,6 +76,23 @@ odstranilo číslo známky, počet zásahů klesnout nemohl — a taky neklesl, 
 platí pro `zdroje.popis`, `autem`, `otviraciDoba` a `interniPoznamky`.
 Rozšíření dosahu na `zajimavosti[].text` je vedené v BACKLOGu; napřed se změří,
 kolik zásahů to přidá, aby se ustálený počet neposunul naslepo.
+
+Ze 127 na 131 to vyskočilo se **čtvrtou dávkou** jazykového auditu (jedenáct
+profilů) a měřilo se stejnou metodou. Pohyb má dvě složky opačným směrem:
+**dva profily zásah ztratily** — u Schroniska pod Łabskim Szczytem a u Szrenice
+zmizel vyrobený rozpor, kde se rozdíl jednoho metru mezi výškou *budovy* z OSM
+a výškou *hory* z katalogu vydával za neshodu pramenů — a **tři profily získaly
+po dvou**. Kamieńczyk dvakrát slovem `profil` ve tvaru „katalogový profil", kterým
+se nově pojmenovává skutečný prostředník tvrzení; Odrodzenie a Vébrovy boudy
+dvakrát slovem `OpenStreetMap`, protože se doplnilo připsání ODbL tam, kde
+dřív chybělo. Čistě +4, opět samé připsání. Kdo bude číslo prověřovat, ať se
+dívá na **složení tříd**, ne na součet: mimo trvalé falešné poplachy zůstává
+osm zásahů v pěti profilech, kterých se čtvrtá dávka netýkala.
+
+Jeden z nich **není** falešný poplach a je vedený v BACKLOGu: Vrbatova bouda má
+ve větě o rozdílných výškách číslo turistické známky, a to do veřejné prózy
+podle konvence nepatří. Neopravovalo se to spolu se čtvrtou dávkou schválně,
+aby měření dávky zůstalo čisté.
 
 **`audit-mech.ts` — seznam k posouzení.** Strojově chytatelná část auditní
 taxonomie z 25. 7. 2026, šest kontrol: **A** próza tvrdí hodnotu pole, které je

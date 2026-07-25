@@ -68,12 +68,18 @@ overeniProvoz:
     Kudy z nudy „Chata Výrovka": tel. +420 702 041 025, rezervace@vyrovka.cz,
     www.vyrovka.cz, IG @vyrovka; od 1. 9. 2025 nový provozovatel (Good Hut —
     Petr Bárta a Jan Stejskal). Web ze sandboxu nedostupný — ověřit primárně
-    (DATA-04). Sekundární médium, verified:false
+    (DATA-04). Sekundární médium, verified:false. ROZPOR (audit 25. 7. 2026):
+    dva podklady s jistotou A nesou pro tentýž objekt jiný telefon —
+    fakticka-data.csv HUT-0003 „+420 725 107 808; +420 601 547 135" ze zdroje
+    https://www.vyrovka.cz/o-vyrovce/ a FACT-0041 „+420 725 107 808" ze zdroje
+    https://www.krkonose.eu/chata-vyrovka. Publikované číslo pochází ze
+    sekundárního média, ponecháno beze změny do primárního ověření (DATA-04);
+    rozpor přiznán ve veřejné próze bez uvádění čísel.
   verified: false
   checked: '2026-07-22'
 
 # ── Historie ──────────────────────────────────────────────────────────────
-rokVzniku: 1926
+rokVzniku: 1926  # ROZPOR (audit 25. 7. 2026): pole nese rok nejstarší doložené stavby na místě, kdežto fakticka-data.csv HUT-0003 (zdroj vyrovka.cz, jistota A) vede rok_vzniku 1990, tedy dokončení dnešní budovy. Nerozhodnutá otázka „stavba, nebo místo" — prověřit (DATA-04); schéma unese jen jedno číslo, hedge nese próza.
 milniky:
   - rok: 1926
     udalost: Na místě postaven vojenský srub
@@ -97,7 +103,8 @@ overeniHistorie:
 perex: >-
   Hřebenová bouda ve výšce 1 368 m v 1. zóně KRNAP nad Pecí pod Sněžkou. Nabízí
   pokoje i noclehárnu a restaurační část; dnešní budova pochází z let 1988–1990,
-  dvě starší (od roku 1926) shořely. Od září 2025 ji vede nový provozovatel.
+  starší budovy na tomto místě opakovaně vyhořely. Od září 2025 ji vede nový
+  provozovatel.
 text:
   - >-
     Výrovka stojí na hřebeni Krkonoš v první zóně Krkonošského národního
@@ -111,20 +118,28 @@ text:
     Obě budovy vzaly za své při požárech v letech 1946 a 1947 a dnešní bouda
     se stavěla mezi lety 1988 a 1990. Celou tuhle časovou osu přebíráme
     z Kudy z nudy, tedy ze sekundárního média; primárním pramenem doložená
-    zatím není.
+    zatím není. Prameny se v ní navíc rozcházejí. Náš atlas zaniklých chat
+    vede Havlovu boudu jako týž vojenský srub, postavený roku 1927
+    a vyhořelý v únoru 1947 — tedy jako jednu stavbu a jeden požár. Jiný
+    podklad mezi předchůdce řadí ještě provizorní boudu z roku 1948, o níž
+    Kudy z nudy mlčí. Které čtení je správné, rozřešené nemáme.
   - >-
     Ubytování Výrovka nabízí ve dvou- až čtyřlůžkových pokojích s vlastním
     sociálním zařízením a v noclehárně, kde je zázemí společné. Celkový počet
-    lůžek prameny neuvádějí, a tak ho neuvádíme ani my. Součástí boudy je
-    restaurační část; jestli obsluhuje i kolemjdoucí turisty a v jakých
-    hodinách má otevřeno, doložené nemáme. Od 1. září 2025 boudu podle Kudy
+    lůžek Kudy z nudy neuvádějí a jinde se čísla rozcházejí — od padesáti po
+    osmaosmdesát lůžek. Všechna jsou z druhé ruky a ověřené nemáme žádné,
+    proto kapacitu na stránce nevedeme. Součástí boudy je restaurační část;
+    jestli obsluhuje i kolemjdoucí turisty, doložené nemáme, a otvírací dobu,
+    kterou nese jediný náš podklad, neověřenou nepublikujeme, protože se
+    mění. Od 1. září 2025 boudu podle Kudy
     z nudy vede nový provozovatel Good Hut, za kterým stojí Petr Bárta a Jan
     Stejskal.
   - >-
-    Pěší přístup ani kapacitu boudy zatím doložit neumíme a fakta na této
-    stránce stojí na sekundárním médiu a na datech z OpenStreetMap; přímo
-    z webu boudy ověřená nejsou. Před cestou proto doporučujeme potvrdit si
-    u boudy otvírací dobu restaurace i volná lůžka.
+    Pěší přístup k boudě zatím doložit neumíme a fakta na této stránce stojí
+    na sekundárním médiu a na datech z OpenStreetMap; přímo z webu boudy
+    ověřená nejsou. Rozcházejí se i v kontaktních údajích, uvádíme proto vždy
+    jen jednu z možností a ověřenou ji nemáme. Před cestou proto doporučujeme
+    potvrdit si u boudy otvírací dobu restaurace i volná lůžka.
 zdroje:
   - popis: >-
       Kudy z nudy — „Chata Výrovka" (výška, historie, ubytování, nový
@@ -145,3 +160,67 @@ interniPoznamky: >-
   veřejná přístupnost restaurace, potvrdit nového provozovatele Good Hut.
   Hero fotka: vybrat z kandidátů DATA-02. Známka č.12 — obrázek připraven
   v data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c12-chata-vyrovka.png.
+
+  DATA-15 (jazykový audit 25. 7. 2026, čtvrtá dávka): opraveny čtyři vady,
+  jeden nález odložen do BACKLOGu. (1) Časová osa předchůdců si odporovala
+  s vlastní evidencí korpusu a próza to nepřiznávala. Kudy z nudy staví dvě
+  budovy (srub 1926, Havlova bouda 1928) a dva požáry (1946, 1947); náš
+  vlastní atlas zaniklých chat má v ZANIK-006 jednu stavbu — „vojenský
+  výcvikový srub s 36 místnostmi vznikl roku 1927 péčí generála ženijního
+  vojska Františka Havla", vyhořela 6. 2. 1947, jistota B, souřadnice
+  50.714714/15.680497, tedy zhruba 80 m od dnešní boudy; a fakticka-data.csv
+  HUT-0003 (zdroj vyrovka.cz, jistota A) vede navíc třetího předchůdce,
+  provizorní boudu z roku 1948 s třicetilůžkovou noclehárnou. Perexové „dvě
+  starší (od roku 1926) shořely" bylo proti tomu nejen nedoložené, ale
+  nesprávné; nahrazeno neutrálním „starší budovy na tomto místě opakovaně
+  vyhořely", což nese FACT-0037 (Seznam Zprávy, jistota B). Do text[1]
+  doplněno přiznání obou konkurenčních čtení. Osa z Kudy z nudy se
+  nepřepisuje — pramen zůstává, rozpor vysvětluje próza; totéž platí pro
+  zajimavosti[0], která svůj zdroj nese a Kudy z nudy to skutečně říkají.
+  (2) text[2] tvrdil „Celkový počet lůžek prameny neuvádějí, a tak ho
+  neuvádíme ani my" — doloženo to bylo jen pro Kudy z nudy
+  (overeniNocleh.source: „přesná kapacita neuvedena"), zatímco tři podklady
+  s jistotou A číslo nesou a rozcházejí se: katalog DATA-08 uvádí 88 lůžek
+  s poznámkou „KČT uvádí 66 lůžek v pokojích a 22 v noclehárnách",
+  fakticka-data.csv HUT-0003 uvádí 65 (zdroj kct.cz) a FACT-0039 uvádí 50
+  (zdroj Krkonose.eu). Tvrzení o stavu pramenů tedy bylo nepravdivé.
+  Přepsáno podle vzoru Špindlerovy boudy: rozsah se přizná, číslo se
+  nevede. (3) text[2] rovněž tvrdil, že „v jakých hodinách má otevřeno,
+  doložené nemáme", ač fakticka-data.csv nese „chata 7:00–22:00; kuchyně
+  7:00–20:00" ze zdroje vyrovka.cz s jistotou A a datem ověření 2026-07-21.
+  Návrh auditu tu hodiny do prózy doplnit ZAMÍTNUT — otvírací doby se
+  neověřené nepublikují, protože se mění; převzata formulace z Vosecké boudy
+  („neověřenou nepublikujeme"), která nepravdivé tvrzení odstraní, aniž by
+  proměnlivý údaj vypustila ven. (4) Publikovaný telefon z Kudy z nudy
+  odporuje dvěma podkladům s jistotou A, z nichž jeden je web boudy. Číslo
+  ponecháno (nemáme primární ověření, kterým bychom ho nahradili), rozpor
+  zapsán do overeniProvoz.source a přiznán ve veřejné próze bez uvádění
+  čísel — vzorem chalupa-na-rozcesti („u profilu proto stojí vždy jen jedna
+  z možností"). Zároveň označen rozpor rokVzniku 1926 vs. 1990 v komentáři
+  pole. ODLOŽENO: audit správně upozornil, že slovo „profil" ve významu
+  naší vlastní stránky je na seznamu zakázané interní terminologie, ale
+  README kontrol ho od třetí dávky vede jako přijatý falešný poplach
+  v ustálené vazbě „starší podklad, ze kterého profil vychází". Dva vlastní
+  dokumenty projektu si tu odporují a věc je korpusová, ne souborová:
+  průzkum našel 23 výskytů ve 20 souborech, z toho zhruba 13 ve významu
+  naší stránky (10× vazba „ze kterého profil vychází", plus chalupa-na-
+  rozcesti, rychorska-bouda a tenhle profil) a zbytek ve významu stránky
+  pramene („katalogový profil", „profil na treking.cz"), což je běžná
+  čeština a vada to není. Opravovat jeden soubor by rozbilo jednotnost
+  a posunulo ustálený počet ban-scanu naslepo; postoupeno do BACKLOGu jako
+  jednorázový korpusový průchod s měřením, stejnou metodou jako DATA-16.
+  ZAMÍTNUTO po druhém čtení (agentem i při adjudikaci): „hřebenová bouda"
+  a „stojí na hřebeni Krkonoš v 1. zóně" není domýšlení typu terénu —
+  zajimavosti[1] to nese s vlastním polem zdroj a Kudy z nudy to říkají
+  doslova. „Starší podklad" u katalogu je doložený domácí tvar napříč
+  korpusem, ne tvrzení o stáří. Přiznaný rozpor výšky 1 368 vs. 1 356 m
+  je podle metodiky poctivost, ne vada. Katalogové „Přístup: pěšky / dle
+  objektu autem" je boilerplate (týž řetězec u nesouvisejících objektů
+  HUT-0071 a HUT-0141), takže „pěší přístup doložit neumíme" zůstává
+  pravdivé. Nevyužitá stopa pro DATA-12: fakticka-data.csv nese
+  u HUT-0003 doloženou zajímavost „KČT ji označuje za nejvýše položenou
+  chatu Klubu českých turistů" (zdroj kct.cz, jistota A) a Seznam Zprávy
+  nesou FACT-0033 až FACT-0038 (počátky místa v 18. století, přezdívka
+  Hotel Výrovka, finanční stráž a pašeráci, vojenský lyžařský výcvik,
+  architekt Vladimír Vokatý a dodavatel Budimex) — vetkat samostatně,
+  ne v auditní dávce.
