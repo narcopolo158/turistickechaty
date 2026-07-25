@@ -12,9 +12,9 @@ zajimavosti:
   - text: Ubytování v Krkonoších už od 20. let 20. století, ve výšce 1313 m
     kategorie: stari
     zdroj: web chaty (dvorska-bouda.cz)
-  - text: Přímý přístup na běžecké tratě — „z chaty rovnou do běžek"
+  - text: Web boudy slibuje přímý přístup na běžecké tratě heslem „z chaty rovnou do běžek"
     kategorie: jine
-    zdroj: web chaty (dvorska-bouda.cz)
+    zdroj: web chaty (dvorska-bouda.cz) — heslo z webu, vzdálenost tratí neověřena
 
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS z OSM (ODbL); výška a adresa z webu boudy.
@@ -91,8 +91,9 @@ overeniHistorie:
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Horská bouda ve výšce 1 313 m nad Strážným v KRNAP, s kapacitou až 115
-  lůžek. Restaurace otevřená denně i pro kolemjdoucí turisty, ubytování
-  poskytuje už od 20. let 20. století.
+  lůžek. Restaurace má podle webu boudy otevřeno denně i pro kolemjdoucí
+  turisty a ubytování tu podle téhož webu funguje už od 20. let 20. století;
+  kdy stavba na místě vznikla, o tom se ale prameny neshodnou.
 text:
   - >-
     Dvorská bouda stojí ve výšce 1 313 m n. m. nad Strážným, uvnitř
@@ -110,15 +111,15 @@ text:
   - >-
     Dnes bouda nabízí až 115 lůžek ve dvou- až šestilůžkových pokojích se
     společným sociálním zařízením; shodný počet lůžek uvádí web boudy
-    i Kudy z nudy. Snídaně se podává formou bufetu, k pobytu si lze
-    dokoupit polopenzi a web nabízí letní i zimní pobytové balíčky.
+    i Kudy z nudy. Snídaně se podává formou bufetu, k pobytu je možná
+    i polopenze a web nabízí letní i zimní pobytové balíčky.
   - >-
     Restaurace Dvorské boudy má otevřeno denně od jedenácti do čtyř
     odpoledne a je přístupná ubytovaným hostům i turistům, kteří jdou
     kolem. K vybavení patří Wi-Fi zdarma v celém objektu, lyžárna
-    a kolárna, klubovna s krbem a dětská herna. Na běžecké tratě je z boudy
-    přímý přístup — vlastní web to shrnuje heslem „z chaty rovnou do
-    běžek".
+    a kolárna, klubovna s krbem a dětská herna. Na běžky láká vlastní web
+    heslem „z chaty rovnou do běžek"; jak blízko tratě opravdu vedou,
+    doložené nemáme.
   - >-
     Pěší trasy k boudě ani možnosti dojezdu autem zatím doložené nemáme.
     Ostatní údaje pocházejí z webu boudy, z OpenStreetMap a z Kudy z nudy a
@@ -150,3 +151,4 @@ interniPoznamky: |-
   Areál: web původně popisoval i vztah k okolním objektům — při návštěvě ověřit, zda „Dvorská bouda" je jediný objekt (session 22 řešila obdobně u Dvoraček/Štumpovky).
   Hero fotka: vybrán vysoký sken Michala Klajbana (název souboru = Dvorská bouda), ale popis na Commons zmiňuje Cestu česko-polského přátelství — redakce potvrdí, že jde o budovu, jinak přepnout na File:Dvorská bouda.jpg.
   Rok vzniku: web boudy uvádí jen „od 20. let 20. století"; zdrojový průzkum 2026-07-22 (Kudy z nudy) uvádí vznik 1707 (chov dobytka) — vetknuto DATA-12 jako verified:false, ověřit primárně (DATA-04).
+  DATA-15 krok (b), 2. dávka (25. 7. 2026), čtyři vady opraveny: (1) perex tvrdil „ubytování poskytuje už od 20. let 20. století" v plné jistotě a bez připsání, ačkoli text[1] hned přiznává, že se prameny o vzniku neshodnou (web 20. léta vs. Kudy z nudy 1707) — perex teď připisuje webu a rozpor zmiňuje; (2) zajimavosti[1] vydávala reklamní heslo za doloženou vlastnost, žádný blok overeni* běžecké tratě nenese (overeniSluzby zná jen Wi-Fi, lyžárnu/kolárnu, klubovnu s krbem a dětskou hernu) — přeformulováno na tvrzení webu; (3) totéž v text[3]: z hesla se stalo tvrdé tvrzení o dostupnosti, a to dva odstavce před přiznáním „Pěší trasy k boudě ani možnosti dojezdu autem zatím doložené nemáme" — vzdálenost tratí teď próza výslovně nedokládá; (4) „k pobytu si lze dokoupit polopenzi" přidávalo obchodní podmínku, kterou overeniNocleh nenese (má jen „možnost polopenze; ceny na webu neuvedeny").

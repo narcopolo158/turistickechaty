@@ -38,7 +38,7 @@ e-maily, telefony, ceny (mění se), GPS, čísla známek, názvy polí ani inte
 terminologie. **Výstup není seznam vad.** Část zásahů jsou trvalé a známé falešné
 poplachy: doména v prvním pádě jako jméno pramene („server Krkonose.eu") je
 doložený domácí styl, „redakce" v závěrečném odstavci taky, a OpenStreetMap se
-uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **123 zásahů** —
+uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **122 zásahů** —
 smysl má sledovat, jestli číslo neskočí, ne jestli je nula.
 
 Bylo jich 135 a rozdíl je čistě náhodou malý: 25. 7. 2026 **odpadlo 17 zásahů**
@@ -46,6 +46,15 @@ třídy „číslo známky" (viz níže) a **pět naopak přibylo**, když se do
 profilů doplnilo připsání OpenStreetMap, které žádá licence ODbL. Rozdíl −12 je
 tedy součet dvou pohybů opačným směrem, ne jeden úbytek — hezká ukázka toho,
 proč se u tohohle skriptu sleduje **skok**, a ne hodnota sama.
+
+Ze 123 na 122 to spadlo o pár hodin později a důvod je **úplně nezajímavý, což
+je ta pointa**: druhá dávka jazykového auditu přepsala v Chatě U Jirky větu tak,
+že se slovo „souřadnice" ocitlo na začátku věty — a vzor třídy GPS zní
+`${WB0}souřadnic` **bez příznaku `i`**, takže velké „S" nechytí. O díru nejde:
+skutečné souřadnice loví `\d{1,3}\.\d{4,}`, `\d+°\s?\d+'` a `N\s*\d{2}\.`,
+kdežto samo slovo „souřadnice" je zdokumentovaný falešný poplach, který se stejně
+škrtá ručně. Kdo bude příště hledat, proč se číslo pohnulo o jedničku, ať začne
+tady — **ne každý skok má obsah**.
 
 **`audit-mech.ts` — seznam k posouzení.** Strojově chytatelná část auditní
 taxonomie z 25. 7. 2026, šest kontrol: **A** próza tvrdí hodnotu pole, které je

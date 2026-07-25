@@ -40,8 +40,12 @@ overeniLokace:
     přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright), stav dat
     2026-06-12. Výška 1 280 m shodně dle Kudy z nudy i České hory; adresa
     „Velká Úpa 182, 542 21 Pec pod Sněžkou"; poloha v ochranném pásmu KRNAP,
-    3,5 km od vrcholu Sněžky (Kudy z nudy). ROZPOR: na turistické známce č.75
-    je vyryto 1 250 m — ověřit. Sekundární zdroje, verified:false
+    3,5 km od vrcholu Sněžky (Kudy z nudy). ROZPOR 1: na turistické známce č.75
+    je vyryto 1 250 m — ověřit; známka je navíc vydaná pro místo Růžohorky
+    (jméno osady i boudy), vazba na tento objekt doložená není. ROZPOR 2: režim
+    ochrany — Kudy z nudy uvádějí ochranné pásmo KRNAP, České hory II. zónu
+    ochrany přírody; obojí nelze platit zároveň, nesrovnáno, přiznáno v próze.
+    Sekundární zdroje, verified:false
   verified: false
   checked: '2026-07-25'
 
@@ -112,9 +116,11 @@ overeniProvoz:
 
 # ── Přístup ───────────────────────────────────────────────────────────────
 autem: |-
-  Přístup je omezen nadmořskou výškou a polohou ve II. zóně ochrany přírody
-  (dle Českých hor, neověřeno). Pro ubytované je v létě u boudy pět parkovacích
-  míst, v zimě lze využít lanovou dráhu (dle Kudy z nudy, neověřeno).
+  Přístup je omezen nadmořskou výškou a režimem ochrany přírody; prameny se
+  v zařazení liší — České hory mluví o II. zóně ochrany přírody, Kudy z nudy
+  o ochranném pásmu KRNAP (obojí neověřeno). Pro ubytované je v létě u boudy
+  pět parkovacích míst, v zimě lze využít lanovou dráhu (dle Kudy z nudy,
+  neověřeno).
 
 # ── Historie ──────────────────────────────────────────────────────────────
 rokVzniku: 1903
@@ -134,18 +140,19 @@ overeniHistorie:
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Bouda na Růžové hoře 3,5 km pod vrcholem Sněžky, na hlavní trase z Pece pod
-  Sněžkou i z Velké Úpy (1 280 m). Ubytuje 20 hostů v deseti dvoulůžkových
-  pokojích a vaří domácí krkonošskou kuchyni — borůvkové knedlíky, cmundu a
-  kysel. Stojí od roku 1903.
+  Sněžkou i z Velké Úpy; dosažitelné prameny uvádějí 1 280 m. Ubytuje 20 hostů
+  v deseti dvoulůžkových pokojích a vaří domácí krkonošskou kuchyni — borůvkové
+  knedlíky, cmundu a kysel. Postavena byla roku 1903, co s budovou bylo dál,
+  prameny neříkají.
 text:
   - >-
-    Bouda Růžohorky stojí na Růžové hoře v ochranném pásmu Krkonošského
-    národního parku, zhruba tři a půl kilometru od vrcholu Sněžky; adresu má
-    ve Velké Úpě u Pece pod Sněžkou. Leží přímo na hlavní trase, po níž se na
-    Sněžku stoupá z Pece pod Sněžkou i z Velké Úpy. O nadmořské výšce se
-    prameny rozcházejí: Kudy z nudy i archivní prezentace na Českých horách
-    uvádějí shodně 1 280 metrů, na turistické známce je však vyryto 1 250
-    metrů.
+    Bouda Růžohorky stojí na Růžové hoře zhruba tři a půl kilometru od vrcholu
+    Sněžky; adresu má ve Velké Úpě u Pece pod Sněžkou. Leží přímo na hlavní
+    trase, po níž se na Sněžku stoupá z Pece pod Sněžkou i z Velké Úpy.
+    O nadmořské výšce se prameny rozcházejí: Kudy z nudy i archivní prezentace
+    na Českých horách uvádějí shodně 1 280 metrů, na turistické známce je však
+    vyryto 1 250 metrů. Známka je ale vydaná pro místo Růžohorky, což je jméno
+    osady i boudy, a její vazbu právě na tuhle budovu doloženou nemáme.
   - >-
     Bouda vznikla podle Kudy z nudy roku 1903 jako hostinský podnik a nesla
     tehdy jméno Leischnerovy boudy. O jejích dalších osudech dosažitelné
@@ -159,10 +166,12 @@ text:
     specialit se tu podává cmunda a kysel. Pobyt se psem je podle stejné
     prezentace možný po předchozí domluvě.
   - >-
-    Přístup autem je omezený nadmořskou výškou a polohou ve druhé zóně ochrany
-    přírody, jak uvádějí České hory. Ubytovaní hosté mají podle Kudy z nudy v
-    létě k dispozici pět parkovacích míst u farmy, v zimě mohou využít lanovou
-    dráhu.
+    Přístup autem je omezený nadmořskou výškou a režimem ochrany přírody. Jak
+    přesně je území chráněné, si ale prameny neodpovídají: Kudy z nudy kladou
+    boudu do ochranného pásma Krkonošského národního parku, České hory mluví
+    o druhé zóně ochrany přírody. Které zařazení platí, jsme si nepotvrdili.
+    Ubytovaní hosté mají podle Kudy z nudy v létě k dispozici pět parkovacích
+    míst u farmy, v zimě mohou využít lanovou dráhu.
   - >-
     Všechny údaje na této stránce pocházejí ze sekundárních médií a redakce je
     zatím neověřila vlastním dotazem ani návštěvou; prezentace na Českých
@@ -203,9 +212,14 @@ interniPoznamky: >-
 
   Zaznamenané rozpory k dořešení při DATA-04: (1) výška 1 280 m (Kudy z nudy +
   České hory) vs. 1 250 m vyrytých na turistické známce č.75 — do profilu vzato
-  1 280 m jako shoda dvou nezávislých médií, ale rozdíl je nutné ověřit;
-  (2) OSM nese druhé telefonní číslo +420 606 300 767, dosažitelná média je
-  nepotvrzují — nepřevzato.
+  1 280 m jako shoda dvou nezávislých médií, ale rozdíl je nutné ověřit; navíc
+  je známka vydaná pro místo Růžohorky (jméno osady i boudy), takže rytina
+  nemusí mluvit o téhle budově — od 25. 7. 2026 je ta výhrada i ve veřejné
+  próze, ne jen tady; (2) OSM nese druhé telefonní číslo +420 606 300 767,
+  dosažitelná média je nepotvrzují — nepřevzato; (3) režim ochrany přírody —
+  Kudy z nudy kladou boudu do ochranného pásma KRNAP, České hory do II. zóny
+  ochrany přírody. Profil dřív tvrdil obojí ve dvou odstavcích, aniž si toho
+  všiml (nalezeno 25. 7. 2026, DATA-15 krok (b)); teď rozpor přiznává.
 
   Wi-Fi, platba kartou a lyžárna: zdroje neuvádějí — pole vědomě nevyplněna.
   Otvírací doba restaurace: nikde nedoložena — nevyplněna.

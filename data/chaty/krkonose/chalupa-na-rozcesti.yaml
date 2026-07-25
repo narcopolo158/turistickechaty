@@ -106,9 +106,11 @@ perex: >-
 text:
   - >-
     Chalupa Na Rozcestí stojí ve výšce 1 349 m n. m. u Liščího hřebenu, na
-    trojmezí Pece pod Sněžkou, Strážného a Špindlerova Mlýna; obcí patří pod
-    Pec pod Sněžkou. Polohu i výšku uvádí Kudy z nudy, souřadnice objektu
-    pocházejí z OpenStreetMap.
+    trojmezí Pece pod Sněžkou, Strážného a Špindlerova Mlýna. Polohu i výšku
+    uvádí Kudy z nudy, souřadnice objektu pocházejí z OpenStreetMap. Pod
+    kterou z těch tří obcí chalupa administrativně patří, prameny neříkají;
+    v průvodci ji řadíme k Peci pod Sněžkou, doložený podklad pro to ale
+    nemáme.
   - >-
     Počátky chalupy sahají k roku 1934, kdy si Hugo Mitlöhner pronajal
     pozemek od lesní správy a postavil na něm dřevěnou boudu. Pozdější osudy
@@ -119,25 +121,33 @@ text:
     Bouda je v provozu celoročně a bufet je otevřený i kolemjdoucím: od
     pondělí do čtvrtka a v neděli od půl desáté do pěti odpoledne, v pátek
     a v sobotu do sedmi večer. Kuchyně se drží regionálních jídel — vaří
-    kyselo, borůvkové knedlíky, couračku, boršč a dršťkovou. Nocleh chalupa
-    nabízí také, počet lůžek ani typy pokojů se nám ale doložit nepodařilo;
-    jako provozovatele uvádí OpenStreetMap Zdeňka Nikla.
+    kyselo, borůvkové knedlíky, couračku, boršč a dršťkovou. Tohle všechno
+    uvádí Kudy z nudy.
+  - >-
+    Že chalupa nabízí i nocleh, víme naproti tomu jen z OpenStreetMap: objekt
+    je tam vedený značkou pro horskou boudu s ubytováním a jako provozovatele
+    mapa uvádí Zdeňka Nikla. Kudy z nudy o přespání nepíší vůbec, počet lůžek
+    ani typy pokojů se nám doložit nepodařilo a celý údaj tak stojí na jediném
+    záznamu v mapě, kterou píšou dobrovolníci.
   - >-
     Cyklisté tu podle Kudy z nudy najdou nářadí a stojan na opravu kol,
     běžkaři vosky. Uvnitř je krb se sušákem a fotografická výstava. Wi-Fi ani
     wellness zázemí prameny u chalupy nezmiňují.
   - >-
     Údaje na této stránce pocházejí ze sekundárního média a z OpenStreetMap
-    a redakce je zatím neověřila vlastním dotazem ani návštěvou. Před cestou
-    proto doporučujeme potvrdit si přímo u chalupy hlavně otvírací dobu
-    bufetu a možnost přespání.
+    a redakce je zatím neověřila vlastním dotazem ani návštěvou. Nejisté jsou
+    i samotné kontakty: prameny nesou dvě různá telefonní čísla a dvě podoby
+    webové adresy, u profilu proto stojí vždy jen jedna z možností a kterou
+    z nich chalupa opravdu používá, potvrzené nemáme. Před cestou proto
+    doporučujeme potvrdit si přímo u chalupy hlavně otvírací dobu bufetu
+    a možnost přespání.
 zdroje:
   - popis: >-
       Kudy z nudy — „Chalupa Na Rozcestí u Liščího hřebenu v Krkonoších" (výška,
       historie, bufet, otvírací doba, speciality); sekundární médium,
       verified:false, ověřit primárně
     url: https://www.kudyznudy.cz/aktivity/chalupa-na-rozcesti-u-lisciho-hrebenu-v-krkonosich
-  - popis: OpenStreetMap (GPS objektu, provozovatel, ODbL)
+  - popis: OpenStreetMap (GPS objektu, značka horské boudy s ubytováním, provozovatel, ODbL)
     url: https://www.openstreetmap.org/way/19921113
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/chalupa-na-rozcesti.yaml (DATA-01/OSM) v
@@ -154,3 +164,16 @@ interniPoznamky: >-
 
   NEZTOTOŽŇOVAT s „Boudou na rozcestí Cestník" z výtahu treking.cz (session 24 to
   nechala otevřené — nedomýšlet).
+
+  DATA-15 krok (b), 2. dávka (25. 7. 2026): první auditní průchod prohlásil profil
+  za čistý (0 nálezů); nepřátelský druhý průchod ten verdikt zvrátil a našel tři
+  vady. (1) „obcí patří pod Pec pod Sněžkou" stálo jako holé tvrzení, ačkoli
+  obecní příslušnost nenese žádný pramen — na trojmezí jde o výběr jedné ze tří
+  možností; pole obec zůstává vyplněné, ale próza to teď přiznává. (2) Nocleh se
+  opírá jedině o značku v OpenStreetMap, byl ale napsaný v odstavci připsaném
+  Kudy z nudy — rozdělen do vlastního odstavce s jasným pramenem. (3) Závěrečná
+  výzva „potvrdit přímo u chalupy" zamlčovala, že rozpor je i v samotných
+  kontaktech: overeniProvoz nese dvě telefonní čísla (zveřejněné je jedno)
+  a doména se liší mezi .com (Kudy z nudy) a .cz (OSM). Rozpory přiznány, ne
+  vyřešeny. Poučení pro zbytek auditu: jeden průchod umí vyrobit sebejistý
+  falešně čistý verdikt.

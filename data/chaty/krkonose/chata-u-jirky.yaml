@@ -61,16 +61,16 @@ overeniProvoz:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Údolní chata s restaurací v Dolním Dvoře na východním okraji Krkonoš.
-  Domácí kuchyně tu vaří „pro všechny bez rozdílu" — tedy i pro neubytované
-  kolemjdoucí.
+  Chata s restaurací v Dolním Dvoře v Krkonoších. Podle vlastního webu tu vaří
+  pro všechny bez rozdílu, tedy i pro hosty, kteří v chatě nespí. Nadmořskou
+  výšku ani kapacitu lůžek web neuvádí.
 text:
   - >-
-    Chata U Jirky stojí na adrese Dolní Dvůr 22, tedy v údolí obce Dolní Dvůr
-    na východním okraji Krkonoš. Nejde o hřebenovou boudu a v průvodci ji
-    poctivě vedeme jako údolní chatu s restaurací. Nadmořskou výšku web chaty
-    neuvádí, takže ji neuvádíme ani my; souřadnice máme z OpenStreetMap
-    a v terénu je nikdo neověřil.
+    Chata U Jirky má adresu Dolní Dvůr 22, tedy přímo v obci Dolní Dvůr
+    v Krkonoších. Nadmořskou výšku web chaty neuvádí, takže ji neuvádíme ani
+    my — a ze stejného důvodu si netroufáme popisovat, jak vysoko a v jakém
+    terénu chata stojí. Souřadnice máme z OpenStreetMap a v terénu je nikdo
+    neověřil.
   - >-
     Chata nabízí ubytování a podle vlastního webu přijímá hosty v zimě
     i v létě; jako výslovně celoroční svůj provoz nepopisuje. Součástí je
@@ -96,3 +96,4 @@ interniPoznamky: |-
   Data dotažena z webu chataujirky.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: false (kontakty, občerstvení „Vaříme pro všechny – bez rozdílu"). verified: false u lokace (GPS z OSM; adresa z webu potvrzena, výška web neuvádí) a nocleh (kapacita nedoložena).
   Provozovatel dle OSM: Multi Store s.r.o.
   NEDOHLEDÁNO (web neuvádí): nadmořská výška, kapacita lůžek, přesná otvírací doba restaurace, explicitní sezóna.
+  DATA-15 krok (b), 2. dávka (25. 7. 2026), čtyři jazykové vady opraveny: perex tvrdil „vaří pro všechny bez rozdílu" v uvozovkách a bez připsání, ačkoli text[1] to správně připisuje webu (a citace navíc neseděla doslovně — web má „Vaříme pro všechny – bez rozdílu"); „neubytovaní kolemjdoucí" podsouvali průchozí turistiku, ačkoli žádný pramen chatu neklade na trasu; „na východním okraji Krkonoš" (perex i text[0]) bylo odvozené z adresy, nikde nedoložené a navíc sporné (Dolní Dvůr leží východně od Špindlerova Mlýna, ale západně od Pece a Janských Lázní); „údolní chata", „v údolí obce" a „nejde o hřebenovou boudu" charakterizovaly terén v témže odstavci, který přiznává, že výšku web neuvádí. Nově próza tvrdí jen adresu a explicitně říká, proč terén nepopisuje.

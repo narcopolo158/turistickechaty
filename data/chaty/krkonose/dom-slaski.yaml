@@ -71,28 +71,33 @@ overeniProvoz:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Schronisko na Równi pod Śnieżką ve výšce 1400 m — dle titulků „poslední
-  zastávka před výstupem na Śnieżku". Podrobnosti provozu doporučujeme před
+  Schronisko na Równi pod Śnieżką ve výšce 1 400 m, v katastru Karpacze.
+  Profil stojí na OpenStreetMap a na titulcích výsledků vyhledávání; samotné
+  stránky jsme zatím neotevřeli, a tak podrobnosti provozu doporučujeme před
   cestou ověřit na webu schroniska.
 text:
   - >-
-    Dom Śląski stojí na náhorní pláni Równia pod Śnieżką v nadmořské výšce 1
-    400 metrů, v katastru Karpacze. Souřadnice, výška i obec pocházejí z
-    OpenStreetMap, polohu na Równi pod Śnieżką uvádějí titulky polských
-    turistických portálů — podle nich jde o poslední zastávku před výstupem na
-    Śnieżku. Část zdrojů obrací pořadí slov v názvu na Śląski Dom a v titulku
-    jednoho z portálů se objevuje ještě jméno Schronisko „Pod Śnieżką".
+    Dom Śląski stojí na Równi pod Śnieżką v nadmořské výšce 1 400 metrů,
+    v katastru Karpacze. Souřadnice, výška i obec pocházejí z OpenStreetMap,
+    polohu na Równi pod Śnieżką nesou titulky polských turistických portálů.
+    Podobu terénu ani to, jakou roli schronisko hraje při výstupu na Śnieżku,
+    jsme z dosažitelných pramenů nedoložili. Část zdrojů obrací pořadí slov
+    v názvu na Śląski Dom a v titulku jednoho z portálů se objevuje ještě
+    jméno Schronisko „Pod Śnieżką".
   - >-
-    Historii má profil převzatou z historické stránky schroniska, ale jen
-    zprostředkovaně — samotný web jsme zatím neotevřeli. Současná budova podle
-    něj vznikla v roce 1922, roku 1951 objekt přešel do správy PTTK a v roce
-    2007 ho koupil Karol Warecki. Všechny tři letopočty proto zatím vedeme
-    jako nepotvrzené.
+    Historii máme z externího katalogu, který se odvolává na historickou
+    stránku schroniska; samotný web jsme zatím neotevřeli. Současná budova
+    podle něj vznikla v roce 1922, roku 1951 objekt přešel do správy PTTK
+    a v roce 2007 ho koupil Karol Warecki. Všechny tři letopočty proto zatím
+    vedeme jako nepotvrzené.
   - >-
-    Kapacitu 58 lůžek nese údaj převzatý z prezentace schroniska, i ten ale
-    máme z druhé ruky. Kdo objekt provozuje dnes, doložené nemáme — posledním
-    doloženým krokem ve vlastnictví je zmíněná koupě z roku 2007. Podobu
-    občerstvení ani otvírací dobu se nám doložit nepodařilo.
+    Kapacitu 58 lůžek přebíráme z téhož externího katalogu, který se odvolává
+    na prezentaci schroniska — tu jsme ale sami neotevřeli, takže číslo stojí
+    na prameni z druhé ruky. Nezávisle nocleh doložený nemáme: v přehledu
+    ubytování, který vede PTTK, jsme objekt nenašli. Kdo schronisko provozuje
+    dnes, doložené nemáme — posledním doloženým krokem ve vlastnictví je
+    zmíněná koupě z roku 2007. Podobu občerstvení ani otvírací dobu se nám
+    doložit nepodařilo.
   - >-
     Údaje na této stránce pocházejí z OpenStreetMap, z druhé ruky z prezentace
     schroniska a z titulků turistických portálů a redakce je zatím neověřila
@@ -120,8 +125,10 @@ zdroje:
     url: https://domslaski.pl/
   - popis: Poloha na Równi pod Śnieżką (titulek, neotevřeno)
     url: https://www.dobreschronisko.pl/schronisko-dom-slaski-na-rowni-pod-sniezka-w-karkonoszach,d6,s46
+  - popis: 'Externí katalog (podklad ChatGPT, 21. 7. 2026) — rok vzniku 1922, milníky 1951 a 2007, kapacita 58 lůžek; odvolává se na domslaski.pl, jehož obsah jsme neotevřeli. Pramen z druhé ruky, verified:false'
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/dom-slaski.yaml (DATA-01) po DATA-03 (s23 WebSearch + rozhodnutí Michala 20. 7. 2026: ✅ en bloc). Bezobslužná session 31 (21. 7.) — obsah webů NEotevřen, jen titulky.
   PROVOZOVATEL: v pttk.pl přehledu ubytování chybí (s23) — kdo objekt provozuje, rozhodne otevření webu (ruční běh). Proto nevyplněn nocleh (bez PTTK accommodations dokladu) ani žádný PTTK statut v textu.
   Sousedí s českou Luční boudou přes Obří sedlo — až budou trasy (DATA-06), zvážit vzájemný odkaz.
   Dotáhnout ručním během: nocleh + kapacita, občerstvení, otvíračka, historie („burzliwa historia" dle titulku karpaczskiarena.pl), lepší hero (současný má jen 1280×960).
+  DATA-15 krok (b), 2. dávka (25. 7. 2026), čtyři vady opraveny: (1) perex nesl v uvozovkách citát „poslední zastávka před výstupem na Śnieżku", ačkoli žádný titulek v souboru tuhle formulaci nemá a obsah stránek jsme neotevřeli — šlo o uvozovky bez doloženého originálu, odstraněno; (2) totéž tvrzení v text[0] navíc dělalo z objektu pořadové prvenství na trase, které overeniLokace nenese (dokládá jen polohu na Równi pod Śnieżką); (3) „na náhorní pláni" byl náš překlad významu polského toponyma, ne doložený popis terénu; (4) text[2] připisoval kapacitu 58 lůžek „prezentaci schroniska", ačkoli ji nikdo neotevřel a číslo stojí na externím katalogu — ten je nově veden i v zdroje a próza přiznává, že v přehledu ubytování PTTK objekt chybí (rozpor s komentářem u sekce Nocleh, který říká „nedomýšlet", zatímco kapacita publikovaná byla).
