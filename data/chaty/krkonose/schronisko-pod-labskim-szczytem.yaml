@@ -89,10 +89,10 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Jedno z nejstarších a nejpůvabnějších hřebenových schronisk polských
-  Krkonoš (1 168 m), dřevěná horská chata pod Łabským Wierzchem. Provozuje ho
-  PTTK, nabízí 38 lůžek a bufet s teplou kuchyní — a je výborným východiskem
-  k ledovcovým kotlům Śnieżne Kotły.
+  Dřevěná hřebenová chata na kamenné podezdívce ve výšce 1 168 m pod Łabským
+  Wierzchem v polských Krkonoších. Budovu postavili v roce 1938, od roku 1945
+  ji provozuje PTTK. Nabízí 38 lůžek a bufet s teplou kuchyní a bývá
+  východiskem k ledovcovým kotlům Śnieżne Kotły.
 text:
   - >-
     Schronisko PTTK „Pod Łabskim Szczytem" stojí ve výšce 1 168 metrů na
@@ -106,7 +106,12 @@ text:
     Schroniskaturystyczne.pl, ze kterého pochází většina údajů na této
     stránce. Kořeny místa jsou přitom starší než dnešní dům: KPN uvádí
     kontinuitu umístění původní pastevecké boudy, která tu stála už před rokem
-    1670. Jde tedy o návaznost místa, ne o stáří stavby.
+    1670. Jde tedy o návaznost místa, ne o stáří stavby. Provozovatel sousední
+    Strzechy Akademické k tomu na svých stránkách řadí obě chaty mezi
+    nejstarší v Krkonoších; s rokem 1938, který u téhle budovy vedeme, se to
+    tvrzení nesrovnává a rozřešené ho nemáme. Navíc ho známe jen
+    zprostředkovaně z katalogového podkladu — stránky Strzechy jsme sami
+    neotevřeli.
   - >-
     Ubytování nabízí 38 míst v pokojích pro jednu až šest osob se společným
     sociálním zařízením. Bufet vydává obědy, večeře a teplé nápoje, podle
@@ -141,6 +146,12 @@ zdroje:
     url: https://www.schroniskaturystyczne.pl/schronisko-pttk-pod-labskim-szczytem/
   - popis: OpenStreetMap (poloha objektu, ODbL)
     url: https://www.openstreetmap.org/way/32604714
+  - popis: >-
+      Strzecha Akademicka — stránka historie provozovatele sousední chaty;
+      řadí Strzechu spolu s chatou Pod Łabskim Szczytem mezi nejstarší chaty
+      v Krkonoších. Známe jen zprostředkovaně z katalogového podkladu
+      (2026-07-21), redakcí NEOTEVŘENO, verified:false
+    url: https://strzechaakademicka.pl/historia
 
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/schronisko-pod-labskim-szczytem.yaml
@@ -150,3 +161,19 @@ interniPoznamky: >-
   dotáhnout: kontakty (telefon/e-mail), přesná GPS, případně provázat
   sousedniChaty (Na Hali Szrenickiej, Szrenica). Vynechán vágní údaj „služby od
   17. století" z katalogu — nedoložitelný, nezapisuje se.
+
+  AUDIT 25. 7. 2026 (mechanická kontrola D — superlativ bez připsání): perex
+  tvrdil „jedno z nejstarších a nejpůvabnějších hřebenových schronisk" a „je
+  výborným východiskem". Ani jedno nenese žádný blok overeni — ty dokládají
+  budovu z roku 1938 a PTTK od roku 1945 — a „nejstarší" navíc odporovalo
+  vlastnímu text[1], který pečlivě rozlišuje kontinuitu místa od stáří stavby.
+  Perex přepsán na doložená fakta; hodnotící „nejpůvabnějších" a „výborným"
+  vypuštěny (estetický soud v našem hlase, ne převzaté tvrzení).
+
+  KŘÍŽOVÝ ROZPOR (nalezen týmž auditem): profil strzecha-akademicka.yaml nese
+  tvrzení provozovatele Strzechy, že Strzecha SPOLU s chatou Pod Łabskim
+  Szczytem jsou nejstarší chaty v Krkonoších — kdežto tady vedeme budovu z roku
+  1938. Rozpor NEROZHODNUT, nově přiznán ve veřejném text[1] a doplněn zdroj
+  strzechaakademicka.pl/historia (redakcí NEOTEVŘENO, známe jen přes katalogový
+  podklad). Otázka pro DATA-04 / dotaz na PTTK Jelenia Góra: co přesně se tím
+  „nejstarší" myslí — stavba, nepřetržitá služba, nebo kontinuita místa?
