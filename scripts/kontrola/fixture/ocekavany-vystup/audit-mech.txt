@@ -1,8 +1,9 @@
 
-=== A: proza tvrdi hodnotu zamerne prazdneho pole — 4 ===
+=== A: proza tvrdi hodnotu zamerne prazdneho pole — 5 ===
  * 01-kontrola-a.yaml | pole `obec` prazdne, proza jmenuje <<Špindlerův Mlýn>> a rozpor nikde nepriznava
  * 01-kontrola-a.yaml | pole `kapacita` prazdne, text[0] uvadi <<42 lůž>>
  * 01-kontrola-a.yaml | pole `vyska` prazdne, text[1] uvadi <<1 320 m n. m.>>
+ * 01-kontrola-a.yaml | pole `stav` prazdne, perex tvrdi <<je v provozu>>
  * 09-kontrola-a-stav.yaml | pole `stav` prazdne, perex tvrdi <<je v provozu>>
 
 === B: overeni zada odklad publikace, profil je publikovany — 1 ===
@@ -18,4 +19,4 @@
 === E: letopocet v proze bez opory jinde v souboru — 1 ===
  * 07-kontrola-e.yaml | perex | rok 1888 se v datech profilu (mimo prozu) nevyskytuje
 
-souboru: 10 | zasahu k posouzeni: 9 (A 4 · B 1 · C 1 · D 2 · E 1)
+souboru: 10 | zasahu k posouzeni: 10 (A 5 · B 1 · C 1 · D 2 · E 1)

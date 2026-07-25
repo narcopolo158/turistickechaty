@@ -183,9 +183,17 @@ function kontrolaC(cesta: string, d: Record<string, unknown>): string[] {
 // ── kontrola D: superlativ bez připsání ─────────────────────────────────────
 
 const SUPERLATIV = new RegExp(`${WB0}nej[a-záčďéěíňóřšťúůýž]{3,}`, 'iu')
+/**
+ * `dle` a `nese` musí stát jako SLOVO — holý vzor se trefil i dovnitř slov
+ * („Špin**dle**rův", „ve**dle**", „při**nese**") a věta pak prošla jako
+ * připsaná, i když připsání neměla. Chytila to fixtura (01-kontrola-a.yaml:
+ * „nad obcí Špindlerův Mlýn a je v provozu" mělo spustit větev `stav`, ale
+ * nespouštělo). Na dnešním korpusu je rozdíl nulový — utažení tedy nic
+ * neodkrylo, jen zavírá díru do budoucna.
+ */
 const PRIPSANI = new RegExp(
-  'podle|dle|uvádí|uvádějí|provozovatel|tvrd|označuj|hlásí|titulek|' +
-    'katalog|pramen|prý|má být|se odvolává|píše|popisuje|nese|zdroj',
+  `podle|${WB0}dle|uvádí|uvádějí|provozovatel|tvrd|označuj|hlásí|titulek|` +
+    `katalog|pramen|prý|má být|se odvolává|píše|popisuje|${WB0}nese|zdroj`,
   'iu',
 )
 /**

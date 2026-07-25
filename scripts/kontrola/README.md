@@ -63,11 +63,12 @@ vyřazuje superlativy, které nejsou tvrzením o rekordu („nejspíš", „nejb
 A kontrola D hledá připsání v okně tří vět, ne v jedné, protože legitimní
 připsání často stojí až ve větě následující.
 
-**Známý falešný negativ:** `PRIPSANI` obsahuje holé `dle`, které se trefí i
-dovnitř slov („Špin**dle**rův", „ve**dle**"), takže věta s takovým slovem projde
-jako připsaná, i když připsání nemá. Je to vada zděděná z předlohy; nechává se
-tu vědomě, protože oprava mění chování na celém korpusu a patří do vlastního
-commitu s vlastním přečtením nálezů.
+**Opravený falešný negativ:** `PRIPSANI` mělo holé `dle` a `nese`, které se
+trefily i dovnitř slov („Špin**dle**rův", „ve**dle**", „při**nese**") — věta
+s takovým slovem prošla jako připsaná, i když připsání neměla. Vada byla
+zděděná z předlohy a odhalila ji až fixtura. Obojí teď musí stát jako slovo.
+Na dnešním korpusu je rozdíl nulový, takže utažení nic neodkrylo; jen zavírá
+díru do budoucna.
 
 ## Hranice slova: past, kvůli které tu je fixtura
 
