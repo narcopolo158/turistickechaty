@@ -1,0 +1,176 @@
+# Lysečinská bouda — profil povýšen z kandidáta (externí katalog ČR/SK,
+# jistota A) po křížovém ověření. Master fronta Tier 1 (známka č.1336 +
+# katalog). Data ze sekundárního média Kudy z nudy (verified:false — ověřit
+# primárně, DATA-04). GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, v OSM exportu
+# objekt není — nedomýšlet). Vše verified:false.
+
+nazev: Lysečinská bouda
+slug: lysecinska-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Kolem boudy vedla stará kupecká stezka; podle tradice tudy roku 1779
+      putoval pozdější císař Josef II. a nedaleká studánka se dodnes jmenuje
+      Kaiserborn — Císařský pramen
+    kategorie: stari
+    zdroj: Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš" (sekundární médium, verified:false)
+  - text: >-
+      K boudě patří vlastní lyžařský vlek dlouhý 850 m a sjezdovka o délce zhruba
+      1 000 m
+    kategorie: jine
+    zdroj: Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš" (sekundární médium, verified:false)
+  - text: Bouda byla postavena roku 1926
+    kategorie: stari
+    zdroj: Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
+# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+vyska: 1000
+obec: Malá Úpa
+overeniLokace:
+  source: >-
+    Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš": výška 1 000 m,
+    adresa „Horní Lysečiny 51, 542 26 Malá Úpa" (Královéhradecký kraj). ROZPOR
+    proti externímu katalogu, který uváděl 950 m a obec Horní Maršov — do
+    profilu vzat údaj Kudy z nudy (Horní Lysečiny jsou dnes částí Malé Úpy),
+    ověřit. GPS nedoložena — doplnit z OSM. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 45
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš": 45 lůžek. Typy ani
+    vybavení pokojů zdroj neuvádí — pole `pokoje` vědomě nevyplněno
+    (nedomýšlet). Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: >-
+  Klasická česká kuchyně a krkonošská jídla (dle Kudy z nudy, neověřeno)
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš": „dvě restaurace,
+    jedna je určena jen pro ubytované hosty, druhá restaurace je s barem a
+    krbem", zaměřené na klasickou českou kuchyni a krkonošská jídla. Druhá
+    restaurace s barem tedy podle formulace zdroje není vyhrazena ubytovaným —
+    to je i důvod zařazení do průvodce; výslovné potvrzení veřejné
+    přístupnosti ani otvírací doba ale ve zdroji chybí — ověřit (DATA-04).
+    Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# `wifi`, `platbaKartou`, `psi`, `lyzarna` ZÁMĚRNĚ NEVYPLNĚNY — zdroj je neuvádí.
+overeniSluzby:
+  source: >-
+    Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš" uvádí z vybavení
+    vlastní lyžařský vlek (850 m), sjezdovku (cca 1 000 m) a běžkařské trasy v
+    okolí. O Wi-Fi, platbě kartou, psech, lyžárně ani wellness se dosažitelný
+    zdroj nezmiňuje — pole zůstávají nevyplněná (nedomýšlet), doplnit při
+    primárním ověření. Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba ZÁMĚRNĚ NEVYPLNĚNA — dosažitelné zdroje ji neuvádějí.
+sezona: celoročně
+kontakty:
+  telefon: +420 499 895 114
+  email: info@lysecinskabouda.eu
+  web: https://www.lysecinskabouda.eu/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš": tel.
+    +420 499 895 114, info@lysecinskabouda.eu, web lysecinskabouda.eu. ROZPOR v
+    doméně: externí katalog nesl lysecinskabouda.cz, Kudy z nudy uvádí
+    lysecinskabouda.eu — do profilu vzata varianta .eu (shodná s e-mailem),
+    ověřit. Celoroční provoz pouze dle externího katalogu, Kudy z nudy sezónu
+    ani otvírací dobu neuvádí — ověřit. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1926
+milniky:
+  - rok: 1779
+    udalost: >-
+      Podle tradice tudy po staré kupecké stezce putoval pozdější císař
+      Josef II.; nedaleká studánka nese jméno Kaiserborn — Císařský pramen
+  - rok: 1926
+    udalost: Postavena Lysečinská bouda
+  - rok: 2000
+    udalost: Boudu získal do vlastnictví Ing. Jindřich Růžek
+overeniHistorie:
+  source: >-
+    Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš": postavena roku
+    1926, od roku 2000 ji vlastní Ing. Jindřich Růžek; kolem vedla stará kupecká
+    stezka, roku 1779 tudy podle tradice putoval pozdější císař Josef II. a
+    studánka se jmenuje Kaiserborn — Císařský pramen. Rok 1779 zdroj sám podává
+    jako tradici, ne jako doložený fakt. Sekundární médium, verified:false —
+    ověřit primárním pramenem
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda z roku 1926 v Horních Lysečinách ve východních Krkonoších (1 000 m), u
+  staré kupecké stezky s Císařským pramenem. Ubytuje 45 hostů, má dvě restaurace
+  s českou a krkonošskou kuchyní a vlastní lyžařský vlek se sjezdovkou. Nese
+  turistickou známku č. 1336.
+text:
+  - >-
+    Lysečinská bouda (Horní Lysečiny 51, Malá Úpa) stojí ve výšce 1 000 m n. m.
+    ve východních Krkonoších. Kolem vedla stará kupecká stezka — podle tradice
+    tudy roku 1779 putoval pozdější císař Josef II. a nedaleká studánka se dodnes
+    jmenuje Kaiserborn, tedy Císařský pramen.
+  - >-
+    Ubytování má kapacitu 45 lůžek. V domě jsou dvě restaurace: jedna vyhrazená
+    ubytovaným hostům a druhá s barem a krbem; kuchyně se drží klasických
+    českých a krkonošských jídel. K boudě patří vlastní lyžařský vlek dlouhý
+    850 metrů a sjezdovka o délce zhruba jednoho kilometru, v okolí vedou
+    běžkařské trasy.
+  - >-
+    Boudu postavili v roce 1926, od roku 2000 ji vlastní Ing. Jindřich Růžek.
+    Údaje pocházejí ze sekundárního zdroje — otvírací dobu restaurace, aktuální
+    ceny i platnou webovou adresu ověřte přímo u boudy.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Lysečinská bouda – pohoda v srdci Krkonoš" (výška, adresa,
+      kapacita, dvě restaurace, vlek a sjezdovka, kontakty, historie);
+      sekundární médium, verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/lysicenska-bouda-pohoda-v-srdci-krkonos
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/lysecinska-bouda.yaml (externí katalog
+  ČR/SK, jistota A) v rámci master fronty Tier 1 (známka č.1336 + katalog).
+
+  BEZ GPS — katalog souřadnice nenese a objekt není ani v OSM exportu DATA-01;
+  doplnit z OSM přes Actions nebo ručně (nedomýšlet).
+
+  Opravy proti kandidátovi (obojí dle Kudy z nudy): výška 950 → 1 000 m; obec
+  Horní Maršov → Malá Úpa (adresa Horní Lysečiny 51, 542 26 Malá Úpa). Obě
+  změny jsou zatím jednozdrojové — ověřit.
+
+  Zaznamenaný rozpor: doména lysecinskabouda.cz (katalog) vs. lysecinskabouda.eu
+  (Kudy z nudy, shodná s e-mailem) — do profilu vzata .eu, ověřit.
+
+  Klíč zařazení: zdroj výslovně rozlišuje dvě restaurace a jen u jedné říká, že
+  je „určena jen pro ubytované hosty" — druhá (s barem a krbem) tedy vyhrazena
+  není. Tím je splněn Michalův klíč (veřejné občerstvení). Přesto ověřit.
+
+  Wi-Fi, platba kartou, psi a lyžárna: zdroj neuvádí — pole vědomě nevyplněna.
+  Typy pokojů: zdroj nenese — `pokoje` nevyplněno. Otvírací doba: nedoložena.
+
+  K dotažení (DATA-04, verified:true): GPS, potvrdit výšku a obec, otvírací doba
+  a veřejná přístupnost druhé restaurace, sezónní režim, platná doména. Hero
+  fotka: kandidáti DATA-02. Známka č.1336 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c1336-lysecinska-bouda.png.

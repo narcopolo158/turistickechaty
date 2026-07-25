@@ -1,0 +1,162 @@
+# Chata Rezek — profil povýšen z kandidáta (externí katalog ČR/SK, jistota B)
+# po křížovém ověření. Master fronta Tier 1 (známka č.19 + katalog). Data ze
+# sekundárního média Kudy z nudy (verified:false — ověřit primárně, DATA-04).
+# GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, v OSM exportu objekt není —
+# nedomýšlet). POZOR: známka č.19 je vydána pro OSADU Rezek · Jeruzalém, ne
+# prokazatelně pro tuto chatu — viz interniPoznamky. Vše verified:false.
+
+nazev: Chata Rezek
+slug: chata-rezek
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Stojí ve III. zóně Krkonošského národního parku na zalesněném hřebeni,
+      na významné křižovatce turistických stezek
+    kategorie: jine
+    zdroj: Kudy z nudy „Horská chata Rezek v Krkonoších" (sekundární médium, verified:false)
+  - text: >-
+      Kuchyně staví na domácích borůvkových knedlících, koláčích a palačinkách;
+      k posezení slouží salónek u krbu a venkovní terasa s možností grilování
+    kategorie: gastro
+    zdroj: Kudy z nudy „Horská chata Rezek v Krkonoších" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
+# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+vyska: 880
+obec: Vítkovice
+overeniLokace:
+  source: >-
+    Adresa „Rezek 43, 512 38 Vítkovice v Krkonoších" a poloha ve III. zóně KRNAP
+    na zalesněném hřebeni dle Kudy z nudy. Výška 880 m pouze z externího
+    katalogu ChatGPT (jistota B) — Kudy z nudy ji neuvádí, druhým zdrojem
+    nedoložena, ověřit. GPS nedoložena — doplnit z OSM. Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 29
+pokoje:
+  - typ: Pokoje (9)
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Horská chata Rezek v Krkonoších": 9 pokojů, 29 lůžek. Typy ani
+    vybavení pokojů zdroj neuvádí. Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: >-
+  Domácí borůvkové knedlíky, koláče a palačinky; minutková kuchyně, hotová
+  jídla a polévky, nově burgery (dle Kudy z nudy, neověřeno)
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Horská chata Rezek v Krkonoších": restaurace s minutkovou
+    kuchyní, domácími borůvkovými knedlíky, koláči a palačinkami, hotovými jídly
+    a polévkami a nově burgery; salónek u krbu, venkovní terasa a možnost
+    grilování. Terasa a nabídka minutek odpovídají podniku otevřenému
+    veřejnosti, výslovně to ale zdroj neuvádí a otvírací dobu nenese — ověřit
+    (DATA-04). Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# `platbaKartou`, `psi`, `lyzarna` ZÁMĚRNĚ NEVYPLNĚNY — zdroj je neuvádí.
+wifi: ano
+overeniSluzby:
+  source: >-
+    Kudy z nudy „Horská chata Rezek v Krkonoších": Wi-Fi, restaurace se salónkem
+    u krbu, dětské hřiště. O platbě kartou, psech, lyžárně ani wellness se
+    dosažitelný zdroj nezmiňuje — pole zůstávají nevyplněná (nedomýšlet).
+    Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba ZÁMĚRNĚ NEVYPLNĚNA — dosažitelné zdroje ji neuvádějí.
+sezona: celoročně
+kontakty:
+  telefon: +420 481 582 334
+  email: info@hotelrezek.cz
+  web: https://www.hotelrezek.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Horská chata Rezek v Krkonoších": tel. +420 481 582 334 a
+    +420 603 886 013, info@hotelrezek.cz, web hotelrezek.cz a facebookový profil
+    „horskyhotelrezek". ROZPOR v doméně: externí katalog nesl rezek.cz, Kudy z
+    nudy uvádí hotelrezek.cz; ve vyhledávání se objevuje ještě krkonose-rezek.cz
+    („Penzion Hájenka a Chata Rezek") — ověřit, která doména patří tomuto
+    objektu. Celoroční provoz pouze dle externího katalogu (jistota B), Kudy z
+    nudy sezónu neuvádí — ověřit. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — dosažitelné zdroje historii neuvádějí.
+overeniHistorie:
+  source: >-
+    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
+    nudy historii neuvádí, krkonose.eu a cs.wikipedia.org jsou ze sandboxu
+    nedostupné). Doplnit při primárním ověření (DATA-04) — nedomýšleno.
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata na zalesněném hřebeni nad Vítkovicemi, ve III. zóně národního
+  parku a na křižovatce turistických stezek. Ubytuje 29 hostů v devíti pokojích,
+  restaurace nabízí minutkovou kuchyni a domácí borůvkové knedlíky. Osada Rezek
+  je zároveň známkovým místem (známka č. 19).
+text:
+  - >-
+    Chata Rezek (Rezek 43, Vítkovice v Krkonoších) stojí ve III. zóně
+    Krkonošského národního parku na zalesněném hřebeni, na významné křižovatce
+    turistických stezek. Ubytování nabízí 29 lůžek v devíti pokojích.
+  - >-
+    Restaurace vaří minutkovou kuchyni a hotová jídla, k tomu polévky a nově
+    burgery; vyhlášené jsou domácí borůvkové knedlíky, koláče a palačinky.
+    K posezení slouží salónek u krbu i venkovní terasa, kde lze po domluvě
+    grilovat. Hosté mají k dispozici Wi-Fi a dětské hřiště.
+  - >-
+    Údaje pocházejí ze sekundárního zdroje (Kudy z nudy) — otvírací dobu
+    restaurace, aktuální ceny i platnou webovou adresu ověřte přímo u chaty.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Horská chata Rezek v Krkonoších" (adresa, poloha v KRNAP,
+      kapacita, restaurace, Wi-Fi, kontakty); sekundární médium, verified:false,
+      ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/horska-chata-rezek-v-krkonosich
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/chata-rezek.yaml (externí katalog ČR/SK,
+  jistota B) v rámci master fronty Tier 1 (známka č.19 + katalog).
+
+  BEZ GPS — katalog souřadnice nenese a objekt není ani v OSM exportu DATA-01;
+  doplnit z OSM přes Actions nebo ručně (nedomýšlet).
+
+  ⚠ ZNÁMKA — VAZBA NEPROKÁZÁNA: turistická známka č.19 je vydána pro „Osadu
+  Rezek · Jeruzalém", tedy pro OSADU, ne prokazatelně pro tuto chatu. V katalogu
+  je proto vedena s jistota:"B" a s poznámkou; v perexu i textu profilu je
+  formulována jako známka osady, ne chaty. K ověření (kde se známka prodává) —
+  rozhodnutí Michala, zda ji u profilu vůbec držet.
+
+  Zaznamenané rozpory k dořešení při DATA-04: (1) doména — katalog rezek.cz vs.
+  hotelrezek.cz (Kudy z nudy) vs. krkonose-rezek.cz („Penzion Hájenka a Chata
+  Rezek") ve vyhledávání; do profilu vzata hotelrezek.cz dle Kudy z nudy;
+  (2) výška 880 m jen z katalogu (jistota B), druhým zdrojem nedoložena;
+  (3) celoroční provoz jen z katalogu.
+
+  Platba kartou, psi a lyžárna: zdroj neuvádí — pole vědomě nevyplněna.
+  Otvírací doba restaurace: nikde nedoložena — nevyplněna.
+
+  K dotažení (DATA-04, verified:true): GPS, výška, historie a rok vzniku,
+  otvírací doba a veřejná přístupnost restaurace, platná doména, vazba známky
+  č.19. Hero fotka: kandidáti DATA-02. Známka č.19 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c19-osada-rezek-jeruzalem.png.

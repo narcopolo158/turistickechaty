@@ -1,0 +1,50 @@
+# Vrbatova bouda — RUČNÍ KANDIDÁT (založen redakcí, NE z OSM exportu DATA-01).
+# Vznik: session 22. 7. 2026 (hlavní session Opus) — dohledáno zpětně přes
+# turistickou známku č.393 (Michal dodal obrázek známky), objekt v našem
+# katalogu ani mezi kandidáty DATA-01 chyběl. Přesně „zpětné dohledání chaty
+# přes známkové místo" z plánu DATA-10.
+# Vše verified: false. Na web (data/chaty/) povyšovat až po křížovém ověření
+# (DATA-03) a doložení z webu objektu. Nic nedomýšlet!
+
+nazev: Vrbatova bouda
+slug: vrbatova-bouda
+zeme: cz
+oblast: krkonose
+typ: obsluhovana
+
+# GPS a výška záměrně NEvyplněny: objekt nebyl v OSM exportu DATA-01 (možná
+# jiné OSM tagování než tourism=alpine_hut/wilderness_hut — prověřit) a přesné
+# souřadnice zatím nemáme doloženy. Výška dle turistické známky ~1400 m n. m.
+# (Zlaté návrší) — doložit z OSM/mapy, nedomýšlet.
+
+overeniLokace:
+  source: >-
+    turistická známka č.393 „Vrbatova bouda, Krkonoše, 1400 m.n.m."
+    (Turistické známky s.r.o.); poloha Zlaté návrší nad Horními Míseckami /
+    k. ú. Vítkovice v Krkonoších. Křížový signál existence z titulků WebSearch
+    22. 7. 2026 (obsah stránek NEotevřen): cs.wikipedia.org/wiki/Vrbatova_bouda,
+    kudyznudy.cz/aktivity/vrbatova-bouda, restu.cz/vrbatova-bouda,
+    krkonose.eu (trasa Horní Mísečky → Vrbatova a Labská bouda)
+  verified: false
+  checked: '2026-07-22'
+overeniProvoz:
+  source: >-
+    z titulků WebSearch 22. 7. 2026 doložena „Restaurace Vrbatova bouda"
+    (restu.cz) a popis „útulná hospůdka z betonu" (echo24.cz) — obsah NEotevřen;
+    provoz i otvírací dobu doložit z webu objektu (DATA-03/DATA-04)
+  verified: false
+  checked: '2026-07-22'
+interniPoznamky: >-
+  RUČNÍ KANDIDÁT — zpětné dohledání přes turistickou známku č.393. Vrbatova
+  bouda je významná betonová bouda na Zlatém návrší (architektonicky pozoruhodná
+  — archiweb.cz), poblíž Vrbatova pomníku; nese turistickou známku i nálepku
+  (Michal má sken Vrbatovy nálepky). V OSM exportu DATA-01 nebyla — prověřit
+  tagování (možná amenity=restaurant místo tourism=alpine_hut), doplnit GPS +
+  výšku z OSM/mapy (nedomýšlet z bodu sousední Labské/Horních Míseček).
+
+  K dotažení před povýšením (DATA-03): oficiální web objektu (z titulků
+  nedohledán čistý — restu.cz/kudyznudy jsou katalogy třetích stran), kontakty,
+  kapacita, otvírací doba restaurace, historie (betonová stavba — rok?),
+  přesná GPS a výška. Zdroj obrázku známky připraven:
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c393-vrbatova-bouda.png
+  (po povýšení → public/znamky/vrbatova-bouda.png + manifest + katalog).

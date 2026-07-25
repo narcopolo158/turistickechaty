@@ -1,0 +1,170 @@
+# Rýchorská bouda — profil povýšen z kandidáta (externí katalog ČR/SK, jistota A)
+# po křížovém ověření. Master fronta Tier 1 (známka č.390 + katalog). Data ze
+# sekundárních zdrojů: Kudy z nudy a vlastní web boudy rychorska-bouda.cz
+# (verified:false). GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, v OSM exportu
+# objekt není — nedomýšlet). Vše verified:false.
+
+nazev: Rýchorská bouda
+slug: rychorska-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Stojí na nejvýchodnějším hřebeni Krkonoš v první zóně národního parku,
+      v 1 000 m
+    kategorie: jine
+    zdroj: Kudy z nudy „Rýchorská bouda v Krkonoších" (sekundární médium, verified:false)
+  - text: >-
+      Historie sahá k roku 1892, kdy tu stála Maxova chata; od roku 1976 boudu
+      spravuje Správa KRNAP a slouží i jako školicí středisko ochrany přírody
+    kategorie: stari
+    zdroj: Kudy z nudy „Rýchorská bouda v Krkonoších" (sekundární médium, verified:false)
+  - text: K boudě se nedá dojet autem ani v létě
+    kategorie: jine
+    zdroj: rychorska-bouda.cz — vlastní web boudy (sekundární zdroj, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
+# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+vyska: 1000
+obec: Žacléř
+overeniLokace:
+  source: >-
+    Výška 1 000 m shodně dle Kudy z nudy, vlastního webu boudy i externího
+    katalogu ChatGPT; adresa „Rýchorská bouda čp. 55, 542 01 Žacléř"; poloha na
+    nejvýchodnějším hřebeni Krkonoš v 1. zóně KRNAP dle Kudy z nudy. GPS
+    nedoložena — doplnit z OSM. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 45
+pokoje:
+  - typ: Jedno- až sedmilůžkové pokoje se stylovým dřevěným nábytkem
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Rýchorská bouda v Krkonoších": 45 lůžek s možností asi 15
+    přistýlek, jedno- až sedmilůžkové pokoje se stylovým dřevěným nábytkem;
+    vlastní web boudy uvádí shodně kapacitu 45 osob v 1–7lůžkových pokojích.
+    Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: >-
+    Vlastní web boudy rychorska-bouda.cz uvádí restauraci (a „snídani v trávě");
+    Kudy z nudy stravování nepopisuje, ale nese otvírací dobu po–ne 10:00–17:00
+    při celoročním provozu, což odpovídá podniku otevřenému kolemjdoucím —
+    výslovně to ale zdroje neuvádějí. Ověřit (DATA-04). Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: |-
+  Dle Kudy z nudy po–ne 10:00–17:00 (celoroční provoz). Vlastní web boudy
+  popisuje sezónní režim (v mezisezóně jen víkendy), údaje na něm se ale
+  vztahují k sezóně 2025 — ověřit aktuální stav přímo u boudy.
+kontakty:
+  telefon: +420 777 045 673
+  email: rychorskabouda@seznam.cz
+  web: https://rychorska-bouda.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Rýchorská bouda v Krkonoších": celoroční provoz, po–ne
+    10:00–17:00, tel. +420 499 895 108 a +420 777 045 673, rychorskabouda@
+    seznam.cz. Vlastní web boudy uvádí tentýž mobil, ale jiný e-mail
+    (martinasvkrystof@gmail.com) — ROZPOR, ověřit. Externí katalog nesl doménu
+    rychorskabouda.cz, ve skutečnosti je oficiální web rychorska-bouda.cz.
+    Sezónní údaje na webu boudy se vztahují k roku 2025 (patrně
+    neaktualizováno) — do profilu nepřevzaty. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: |-
+  Na Rýchorskou boudu se nedá dojet autem ani v létě (dle vlastního webu boudy,
+  neověřeno) — přístup pěšky.
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1892
+milniky:
+  - rok: 1892
+    udalost: První budova na místě — Maxova chata
+  - rok: 1926
+    udalost: >-
+      Stavitel Wagenknecht postavil nové zařízení nákladem jednoho milionu korun
+  - rok: 1946
+    udalost: Bouda přešla pod Klub českých turistů
+  - rok: 1976
+    udalost: Boudu převzala Správa KRNAP
+overeniHistorie:
+  source: >-
+    Kudy z nudy „Rýchorská bouda v Krkonoších": 1892 první budova Maxova chata,
+    1926 stavitel Wagenknecht postavil nové zařízení za milion korun, 1946
+    přechod pod Klub českých turistů, 1976 převzala Správa KRNAP. Sekundární
+    médium, verified:false — ověřit primárním pramenem
+  verified: false
+  checked: '2026-07-24'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda na nejvýchodnějším krkonošském hřebeni v první zóně národního parku
+  (1 000 m), kam se nedá dojet autem. Ubytuje 45 hostů v jedno- až
+  sedmilůžkových pokojích, má restauraci a slouží i jako školicí středisko
+  ochrany přírody. Historie sahá k roku 1892. Nese turistickou známku č. 390.
+text:
+  - >-
+    Rýchorská bouda (čp. 55, Žacléř) stojí ve výšce 1 000 m n. m. na
+    nejvýchodnějším hřebeni Krkonoš, uvnitř první zóny Krkonošského národního
+    parku nedaleko Rýchorského bukového pralesa. K boudě se nedá dojet autem
+    ani v létě — poslední úsek se jde pěšky.
+  - >-
+    Ubytování nabízí 45 lůžek (s možností asi patnácti přistýlek) v jedno- až
+    sedmilůžkových pokojích se stylovým dřevěným nábytkem, v domě je restaurace.
+    Kromě turistů boudu využívá Správa KRNAP jako školicí středisko ochrany
+    přírody.
+  - >-
+    Historie místa začíná roku 1892, kdy tu stála Maxova chata; v roce 1926
+    postavil stavitel Wagenknecht nové zařízení nákladem jednoho milionu korun,
+    roku 1946 bouda přešla pod Klub českých turistů a od roku 1976 ji spravuje
+    Správa KRNAP. Údaje jsou ze sekundárních zdrojů — otvírací dobu a aktuální
+    sezónní režim ověřte přímo u boudy, informace na jejím webu jsou staršího
+    data.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Rýchorská bouda v Krkonoších" (výška, adresa, kapacita a
+      pokoje, otvírací doba, kontakty, historie); sekundární médium,
+      verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/rychorska-bouda-v-krkonosich
+  - popis: >-
+      Rýchorská bouda — oficiální web (výška, kapacita, restaurace,
+      nedostupnost autem, kontakty); sekundární zdroj, verified:false
+    url: https://rychorska-bouda.cz/
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/rychorska-bouda.yaml (externí katalog
+  ČR/SK, jistota A) v rámci master fronty Tier 1 (známka č.390 + katalog).
+
+  BEZ GPS — katalog souřadnice nenese a objekt není ani v OSM exportu DATA-01;
+  doplnit z OSM přes Actions nebo ručně (nedomýšlet).
+
+  Oprava proti kandidátovi: oficiální web je rychorska-bouda.cz (s pomlčkou),
+  ne rychorskabouda.cz, jak nesl katalog.
+
+  Zaznamenaný rozpor: e-mail rychorskabouda@seznam.cz (Kudy z nudy) vs.
+  martinasvkrystof@gmail.com (web boudy) — do profilu vzat seznamový, ověřit.
+  Sezónní údaje na webu boudy se vztahují k sezóně 2025 (stránka patrně
+  neaktualizovaná) — vědomě NEpřevzaty jako aktuální.
+
+  K dotažení (DATA-04, verified:true): GPS, veřejná přístupnost a otvírací doba
+  restaurace, aktuální sezónní režim, potvrdit kontakty a provozovatele. Hero
+  fotka: kandidáti DATA-02. Známka č.390 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c390-rychorska-bouda.png.

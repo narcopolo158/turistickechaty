@@ -1,0 +1,223 @@
+# Brádlerovy boudy — profil povýšen z kandidáta DATA-01 (OSM) po křížovém
+# ověření. Master fronta Tier 1 (známka č.394 + katalog + OSM). Data ze
+# sekundárních zdrojů: stránka chaty na kct.cz (provozovatel), vlastní web
+# bradlerovy-boudy.cz/o-nas, Kudy z nudy, OSM tagy. Vše verified:false.
+#
+# POZOR — NEVYŘEŠENÝ ROZPOR: veřejná přístupnost stravování (viz
+# overeniObcerstveni a interniPoznamky). K rozhodnutí redakcí po primárním
+# ověření (DATA-04).
+
+nazev: Brádlerovy boudy
+slug: bradlerovy-boudy
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+aliasy:
+  - nazev: Brádlerova bouda
+    poznamka: >-
+      jednotné číslo pro hlavní budovu komplexu (heslo cs.wikipedia.org, na
+      které odkazuje OSM objekt)
+  - nazev: Bradlerbauden
+    poznamka: německý název dle OSM (name:de)
+  - nazev: Fučíkovy boudy
+    poznamka: >-
+      název používaný od počátku 60. let, roku 1989 se vrátil původní
+      (bradlerovy-boudy.cz)
+zajimavosti:
+  - text: Místo je osídleno už od roku 1637, hostinec tu vznikl v roce 1890
+    kategorie: stari
+    zdroj: KČT — stránka chaty Brádlerovy boudy a bradlerovy-boudy.cz (sekundární zdroje, verified:false)
+  - text: >-
+      Boudy tvoří komplex několika budov — hlavní budova, Laura (dříve Lauerova
+      bouda) a Severka; z Mléčné boudy zbyly jen základy
+    kategorie: jine
+    zdroj: Kudy z nudy „Brádlerovy boudy v Krkonoších" (sekundární médium, verified:false)
+  - text: >-
+      Boudy provozuje Klub českých turistů, členové KČT mají slevu na ubytování
+    kategorie: jine
+    zdroj: KČT — stránka chaty Brádlerovy boudy (sekundární zdroj, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7676661
+lng: 15.5850457
+vyska: 1156
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/32597735 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); výška
+    1 156 m shodně dle Kudy z nudy, KČT i webu boudy; adresa Špindlerův Mlýn 87,
+    543 51, jižní svah hlavního pohraničního hřebene dle KČT. Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 88
+pokoje:
+  - typ: Dvou- až šestilůžkové pokoje
+    luzek: 66
+  - typ: Společné noclehárny (10 a 12 lůžek)
+    luzek: 22
+overeniNocleh:
+  source: >-
+    KČT — stránka chaty Brádlerovy boudy: 66 lůžek v pokojích a společné
+    noclehárny po 10 a 12 lůžkách (celkem 88). Vlastní web boudy uvádí pokoje
+    po 2, 3, 4, 5 a 6 lůžkách a společnou noclehárnu pro 20 osob (rozpor v
+    noclehárně — ověřit). Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: >-
+    ROZPOR ZDROJŮ, nevyřešeno. KČT (provozovatel) na stránce chaty uvádí dvě
+    jídelny — jednu pro ubytované hosty, druhou „i pro průchozí turisty",
+    kuchyni známou velkými porcemi. Vlastní web boudy (bradlerovy-boudy.cz,
+    sekce O nás) naopak uvádí, že restaurace není veřejně přístupná běžným
+    turistům a stravování se poskytuje jen ubytovaným (polopenze) nebo na
+    objednávku; snídaně 8:00–10:00, večeře 18:00–19:30. OSM nese amenity=
+    restaurant, cuisine=regional, outdoor_seating=yes a toilets:access=
+    permissive. Rozhodnout až po primárním ověření (DATA-04) — nedomýšlet.
+    Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+wifi: ano
+psi: ano
+lyzarna: ano
+wc: ano
+platbaKartou: ne
+overeniSluzby:
+  source: >-
+    KČT — stránka chaty Brádlerovy boudy: ubytování se psem ano, sauna,
+    trampolína, dětský koutek, úschovna kol a lyží. OSM tagy (way/32597735):
+    internet_access=wlan, toilets=yes, payment:cash=yes, payment:credit_cards=no
+    a payment:debit_cards=no (tedy jen hotově — ověřit, tagy stárnou), smoking=
+    outside. Kudy z nudy doplňuje vlastní lyžařský vlek, dětské hřiště
+    (houpačky, pískoviště, trampolína), jezírko a cvičnou horolezeckou stěnu.
+    Sekundární zdroje + OSM tagy, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Check-in 14:00–20:00, check-out do 10:30; snídaně 8:00–10:00, večeře
+  18:00–19:30 (dle webu boudy, neověřeno). Otvírací doba stravování pro
+  kolemjdoucí není doložena — viz rozpor zdrojů.
+kontakty:
+  email: info@bradlerovy-boudy.cz
+  web: https://www.bradlerovy-boudy.cz/
+overeniProvoz:
+  source: >-
+    Kontakty: Kudy z nudy a vlastní web boudy (info@bradlerovy-boudy.cz,
+    bradlerovy-boudy.cz); správce Petr Bárta dle webu boudy. Telefon žádný z
+    dosažitelných zdrojů neuvedl — nedoplňováno. KČT uvádí nájemní smlouvu do
+    1. 4. 2035 a slevu pro členy KČT 60 Kč. Provozní sezóna není doložena.
+    Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1637
+milniky:
+  - rok: 1637
+    udalost: První doložená zmínka o osídlení místa
+  - rok: 1890
+    udalost: Na boudách založen hostinec
+  - rok: 1912
+    udalost: Bouda vyhořela a byla znovu postavena
+  - rok: 1914
+    udalost: Majitelem se stal Johann Hollmann
+  - rok: 1938
+    udalost: Majitelkou Kamila Hollmannová (do roku 1945)
+  - rok: 1945
+    udalost: Boudy přešly pod Československý svaz tělesné výchovy
+  - rok: 1989
+    udalost: >-
+      Návrat původního názvu (od počátku 60. let se jmenovaly Fučíkovy boudy)
+overeniHistorie:
+  source: >-
+    bradlerovy-boudy.cz, sekce O nás: první zmínka 1637, požár a znovupostavení
+    1912, majitel Johann Hollmann od 1914, Kamila Hollmannová 1938–1945, po
+    1945 Československý svaz tělesné výchovy, počátkem 60. let přejmenování na
+    Fučíkovy boudy, 1989 návrat názvu. KČT doplňuje založení hostince roku 1890
+    a dnešní provoz pod Klubem českých turistů; Kudy z nudy shodně první zmínku
+    1637. Rok 1637 je datem první zmínky o osídlení, ne o dnešní boudě.
+    Sekundární zdroje, verified:false — ověřit primárně
+  verified: false
+  checked: '2026-07-24'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Komplex bud Klubu českých turistů na jižním svahu hlavního krkonošského
+  hřebene nad Špindlerovým Mlýnem, v 1 156 m. Místo je osídleno od roku 1637,
+  hostinec tu funguje od roku 1890. Nabízí 88 lůžek v pokojích i noclehárnách.
+  Nese turistickou známku č. 394.
+text:
+  - >-
+    Brádlerovy boudy stojí ve výšce 1 156 m n. m. na jižním svahu hlavního
+    pohraničního hřebene nad Špindlerovým Mlýnem (adresa Špindlerův Mlýn 87).
+    Nejde o jedinou budovu, ale o komplex — hlavní budovu doplňují Laura (dříve
+    Lauerova bouda) a Severka, z Mléčné boudy zbyly jen základy. Ubytování
+    nabízí 66 lůžek v pokojích po dvou až šesti a dvě společné noclehárny,
+    dohromady kolem 88 lůžek; boudy provozuje Klub českých turistů a jeho
+    členové mají slevu.
+  - >-
+    Historie místa sahá k roku 1637, kdy je poprvé doloženo osídlení; hostinec
+    tu vznikl roku 1890. Bouda roku 1912 vyhořela a byla znovu postavena, od
+    roku 1914 ji vlastnil Johann Hollmann a v letech 1938–1945 Kamila
+    Hollmannová. Po roce 1945 přešla pod Československý svaz tělesné výchovy a
+    od počátku 60. let nesla název Fučíkovy boudy; původní jméno se vrátilo v
+    roce 1989.
+  - >-
+    Pozor na stravování: web boudy uvádí, že restaurace není běžně přístupná
+    kolemjdoucím a jídlo se podává ubytovaným (polopenze) nebo na objednávku,
+    zatímco stránka chaty na webu KČT zmiňuje druhou jídelnu i pro průchozí
+    turisty. Zdroje se rozcházejí — pokud jdete kolem a chcete se najíst,
+    ověřte si to předem přímo u boudy. K vybavení patří sauna, úschovna kol a
+    lyží, dětské hřiště s trampolínou, jezírko, cvičná horolezecká stěna a
+    vlastní lyžařský vlek. Všechny údaje jsou ze sekundárních zdrojů.
+zdroje:
+  - popis: >-
+      Klub českých turistů — stránka chaty Brádlerovy boudy (výška, kapacita,
+      dvě jídelny, vybavení, provozovatel, historie hostince); sekundární zdroj,
+      verified:false, ověřit primárně
+    url: https://kct.cz/chaty/bradlerovy-boudy/
+  - popis: >-
+      Brádlerovy boudy — vlastní web, sekce O nás (historie a majitelé, pokoje,
+      stravování jen pro ubytované, časy check-in/out a jídel); sekundární zdroj,
+      verified:false
+    url: https://www.bradlerovy-boudy.cz/o-nas/
+  - popis: >-
+      Kudy z nudy — „Brádlerovy boudy v Krkonoších" (adresa, výška, budovy
+      komplexu, vybavení); sekundární médium, verified:false
+    url: https://www.kudyznudy.cz/aktivity/bradlerovy-boudy-v-krkonosich
+  - popis: OpenStreetMap (GPS objektu, tagy vybavení a plateb, ODbL)
+    url: https://www.openstreetmap.org/way/32597735
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/bradlerovy-boudy.yaml (DATA-01/OSM) v rámci
+  master fronty Tier 1 (známka č.394 + katalog ChatGPT + OSM).
+
+  ROZHODNUTÍ PRO MICHALA — klíč zařazení: zdroje si u veřejné přístupnosti
+  stravování odporují. KČT (provozovatel) píše o druhé jídelně „i pro průchozí
+  turisty", vlastní web boudy naopak, že restaurace není veřejně přístupná a
+  vaří se jen ubytovaným nebo na objednávku. Profil je zatím publikovaný a
+  rozpor přiznává rovnou v textu; pokud primární ověření potvrdí variantu webu
+  boudy, patří objekt podle klíče spíš mimo katalog (nebo do něj s výslovnou
+  poznámkou jako Petrova bouda, kde je veřejná jen útulna).
+
+  Další rozpor: noclehárny 10 + 12 lůžek (KČT) vs. jedna noclehárna pro 20 osob
+  (web boudy); kapacita 88 vzata z KČT.
+
+  K dotažení (DATA-04, verified:true): telefon (žádný dosažitelný zdroj ho
+  neuvádí), veřejná přístupnost a otvírací doba stravování, provozní sezóna,
+  potvrdit platby kartou (OSM tag říká jen hotově, tagy stárnou). Hero fotka:
+  kandidáti DATA-02. Známka č.394 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c394-bradlerovy-boudy.png.

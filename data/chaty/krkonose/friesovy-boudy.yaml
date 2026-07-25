@@ -1,0 +1,169 @@
+# Friesovy boudy — profil povýšen z kandidáta (externí katalog ČR/SK, jistota A)
+# po křížovém ověření. Master fronta Tier 1 (známka č.2049 + katalog). Data ze
+# sekundárního média Kudy z nudy (verified:false — ověřit primárně, DATA-04).
+# GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, v OSM exportu objekt není —
+# nedomýšlet). Vše verified:false.
+
+nazev: Friesovy boudy
+slug: friesovy-boudy
+zeme: cz
+typ: horsky-hotel
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Provozuje vlastní minipivovar — čepuje tři druhy piva: 12° světlý ležák,
+      13° polotmavý speciál a 14° polotmavé pivo typu Ale
+    kategorie: gastro
+    zdroj: Kudy z nudy „Horský hotel Friesovy boudy ve Strážném" (sekundární médium, verified:false)
+  - text: >-
+      Restaurace pojme 90 hostů včetně baru a klubu; kuchyně se profiluje
+      specialitami české domácí kuchyně v moderním pojetí
+    kategorie: gastro
+    zdroj: Kudy z nudy „Horský hotel Friesovy boudy ve Strážném" (sekundární médium, verified:false)
+  - text: >-
+      K vybavení patří wellness s finskou saunou, parní lázní a bazénem
+    kategorie: jine
+    zdroj: Kudy z nudy „Horský hotel Friesovy boudy ve Strážném" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
+# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+vyska: 1217
+obec: Strážné
+overeniLokace:
+  source: >-
+    Výška 1 217 m shodně dle Kudy z nudy i externího katalogu ChatGPT; adresa
+    „Strážné 95, 543 52 Strážné" (Královéhradecký kraj) dle Kudy z nudy; katalog
+    řadí objekt do centrálních Krkonoš. GPS nedoložena — doplnit z OSM.
+    Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 75
+pokoje:
+  - typ: Dvoulůžkové pokoje a apartmány
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Horský hotel Friesovy boudy ve Strážném": 24 pokojů a 75 lůžek,
+    dvoulůžkové pokoje a apartmány. POZOR na rozpor: tatáž stránka zároveň
+    uvádí v údajích z klasifikace HotelStars 21 pokojů a 66 lůžek — do profilu
+    vzat text stránky (75), ověřit primárně. Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: >-
+  Vlastní pivo z minipivovaru ve třech druzích — 12° světlé (ležák),
+  13° polotmavé (speciál) a 14° polotmavé typu Ale; k tomu speciality české
+  domácí kuchyně v moderním pojetí (dle Kudy z nudy, neověřeno)
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Horský hotel Friesovy boudy ve Strážném": restaurace s
+    kapacitou 90 míst včetně baru a klubu, otevřeno po–ne 11:30–22:00,
+    speciality české domácí kuchyně v moderním pojetí, vlastní pivo tří druhů
+    (12° světlé, 13° polotmavé, 14° polotmavé typu Ale). Zveřejněná denní
+    otvírací doba odpovídá podniku otevřenému veřejnosti, výslovně to ale zdroj
+    neuvádí — ověřit (DATA-04). Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# `wifi` ZÁMĚRNĚ NEVYPLNĚNA — dosažitelný zdroj ji neuvádí. Nedomýšlet.
+overeniSluzby:
+  source: >-
+    Kudy z nudy „Horský hotel Friesovy boudy ve Strážném": wellness — finská
+    sauna, parní lázeň, bazén a lehátka. O Wi-Fi, platbě kartou, lyžárně ani
+    dalších službách se dosažitelný zdroj nezmiňuje — pole zůstávají nevyplněná
+    (nedomýšlet), doplnit při primárním ověření. Sekundární médium,
+    verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: |-
+  Restaurace po–ne 11:30–22:00 (dle Kudy z nudy, neověřeno). Ubytování
+  celoročně.
+kontakty:
+  telefon: +420 724 230 884
+  email: info@friesovyboudy.cz
+  web: https://www.friesovyboudy.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Horský hotel Friesovy boudy ve Strážném": celoroční provoz,
+    restaurace po–ne 11:30–22:00, tel. +420 724 230 884, info@friesovyboudy.cz.
+    ROZPOR v doméně: katalog i Kudy z nudy nesou friesovyboudy.cz, ve
+    vyhledávání se ale objevuje i https://www.friesovy-boudy.cz/ („Úvod |
+    Friesovy Boudy") — ověřit, která je platná. Sekundární médium,
+    verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — dosažitelné zdroje historii neuvádějí.
+overeniHistorie:
+  source: >-
+    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
+    nudy historii neuvádí, krkonose.eu a cs.wikipedia.org jsou ze sandboxu
+    nedostupné). Doplnit při primárním ověření (DATA-04) — nedomýšleno.
+    verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hotel ve Strážném v centrálních Krkonoších (1 217 m) s vlastním
+  minipivovarem. Ubytuje 75 hostů ve dvoulůžkových pokojích a apartmánech, má
+  restauraci pro 90 hostů a wellness se saunou, parní lázní a bazénem. Nese
+  turistickou známku č. 2049.
+text:
+  - >-
+    Friesovy boudy stojí ve výšce 1 217 m n. m. nad Strážným v centrálních
+    Krkonoších (adresa Strážné 95). Rozsahem služeb jde o horský hotel:
+    ubytování nabízí 75 lůžek ve 24 pokojích — dvoulůžkových pokojích a
+    apartmánech.
+  - >-
+    Restaurace pojme 90 hostů včetně baru a klubu a má otevřeno denně od 11:30
+    do 22:00. Kuchyně se profiluje specialitami české domácí kuchyně v moderním
+    pojetí a k jídlu se čepuje pivo z vlastního minipivovaru ve třech druzích:
+    dvanáctistupňové světlé, třináctistupňové polotmavé a čtrnáctistupňové
+    polotmavé typu Ale. K vybavení patří wellness s finskou saunou, parní lázní
+    a bazénem.
+  - >-
+    Údaje pocházejí ze sekundárního zdroje (Kudy z nudy) — kapacitu, otvírací
+    dobu i platnou webovou adresu je vhodné ověřit přímo u hotelu; zdroj sám
+    uvádí u počtu pokojů a lůžek dva různé údaje.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Horský hotel Friesovy boudy ve Strážném" (výška, adresa,
+      kapacita, restaurace a otvírací doba, minipivovar, wellness, kontakty);
+      sekundární médium, verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/horsky-hotel-friesovy-boudy-ve-straznem
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/friesovy-boudy.yaml (externí katalog
+  ČR/SK, jistota A) v rámci master fronty Tier 1 (známka č.2049 + katalog).
+
+  BEZ GPS — katalog souřadnice nenese a objekt není ani v OSM exportu DATA-01;
+  doplnit z OSM přes Actions nebo ručně (nedomýšlet).
+
+  Typ: nastaveno „horsky-hotel" (objekt se sám i na Kudy z nudy uvádí jako
+  „Horský hotel Friesovy boudy", 75 lůžek, wellness, vlastní minipivovar) —
+  externí katalog jej řadil jako „horskou boudu"; rozhodnutí redakce, ke
+  zvážení.
+
+  Zaznamenané rozpory k dořešení při DATA-04: (1) 24 pokojů / 75 lůžek v textu
+  Kudy z nudy vs. 21 pokojů / 66 lůžek v tamních údajích z klasifikace
+  HotelStars — do profilu vzat text (75); (2) doména friesovyboudy.cz (katalog
+  i Kudy z nudy) vs. friesovy-boudy.cz (vyhledávání) — ověřit platnou.
+
+  Wi-Fi ani další služby zdroj neuvádí — pole vědomě nevyplněna.
+
+  K dotažení (DATA-04, verified:true): GPS, historie a rok vzniku, potvrdit
+  kapacitu, veřejnou přístupnost a otvírací dobu restaurace, platnou doménu.
+  Hero fotka: kandidáti DATA-02. Známka č.2049 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c2049-friesovy-boudy.png.

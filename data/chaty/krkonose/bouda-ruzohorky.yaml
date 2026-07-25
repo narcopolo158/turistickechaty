@@ -1,0 +1,189 @@
+# Bouda Růžohorky — profil povýšen z kandidáta (OSM, DATA-01) po křížovém
+# ověření. Master fronta Tier 1 (známka č.75 + OSM). Data ze sekundárních médií
+# Kudy z nudy a České hory (verified:false — vlastní web ruzohorky.cz je ze
+# sandboxu nedostupný; ověřit primárně, DATA-04). GPS z OSM (way/291722059).
+# Vše verified:false.
+
+nazev: Bouda Růžohorky
+slug: bouda-ruzohorky
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Stojí 3,5 km od vrcholu Sněžky na Růžové hoře, na hlavní trase z Pece pod
+      Sněžkou i z Velké Úpy na Sněžku
+    kategorie: jine
+    zdroj: Kudy z nudy „Horská bouda Růžohorky v Krkonoších" (sekundární médium, verified:false)
+  - text: >-
+      Postavena roku 1903 jako hostinský podnik s původním názvem Leischnerovy
+      boudy
+    kategorie: stari
+    zdroj: Kudy z nudy „Horská bouda Růžohorky v Krkonoších" (sekundární médium, verified:false)
+  - text: >-
+      Vyhlášená domácí kuchyní z vlastních výrobků — borůvkovými knedlíky a
+      koláči, cmundou a kyselem
+    kategorie: gastro
+    zdroj: >-
+      Kudy z nudy „Horská bouda Růžohorky v Krkonoších" a České hory (archivní
+      prezentace) — sekundární média, verified:false
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7103765
+lng: 15.7500803
+vyska: 1280
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    GPS z OpenStreetMap https://www.openstreetmap.org/way/291722059 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright), stav dat
+    2026-06-12. Výška 1 280 m shodně dle Kudy z nudy i České hory; adresa
+    „Velká Úpa 182, 542 21 Pec pod Sněžkou"; poloha v ochranném pásmu KRNAP,
+    3,5 km od vrcholu Sněžky (Kudy z nudy). ROZPOR: na turistické známce č.75
+    je vyryto 1 250 m — ověřit. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 20
+pokoje:
+  - typ: Dvoulůžkové pokoje (10)
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Horská bouda Růžohorky v Krkonoších": 10 dvoulůžkových pokojů;
+    České hory (archivní prezentace) shodně 20 lůžek v 10 dvoulůžkových
+    pokojích. Sekundární média, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: >-
+  Domácí kuchyně z vlastních výrobků — vyhlášené borůvkové knedlíky a koláče,
+  krkonošské speciality cmunda a kysel (dle Kudy z nudy a Českých hor,
+  neověřeno)
+overeniObcerstveni:
+  source: >-
+    České hory (archivní prezentace): „Restauraci máme celkem pro 60 osob, jde o
+    dvě místnosti, obě nekuřácké", krkonošské speciality včetně cmundy, kysela a
+    domácích borůvkových výrobků; Kudy z nudy popisuje domácí kuchyni z domácích
+    výrobků a dvě místnosti k posezení v přízemí. Veřejnou přístupnost
+    kolemjdoucím zdroje výslovně neuvádějí, poloha na hlavní trase na Sněžku a
+    restaurace pro 60 osob jí ale odpovídají — ověřit (DATA-04). Sekundární
+    média, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# `wifi`, `platbaKartou` ZÁMĚRNĚ NEVYPLNĚNY — dosažitelné zdroje je neuvádějí.
+psi: ano
+overeniSluzby:
+  source: >-
+    České hory (archivní prezentace): pobyt se psem „po domluvě" — do profilu
+    vzato jako psi:ano s výhradou předchozí domluvy, ověřit. Kudy z nudy uvádí
+    pro ubytované v létě parkování u farmy (5 míst) a v zimě možnost využít
+    lanovou dráhu. O Wi-Fi, platbě kartou ani lyžárně se dosažitelné zdroje
+    nezmiňují — pole zůstávají nevyplněná (nedomýšlet). Sekundární média,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba ZÁMĚRNĚ NEVYPLNĚNA — dosažitelné zdroje ji neuvádějí.
+sezona: celoročně
+kontakty:
+  telefon: +420 606 209 727
+  email: ruzohorky@seznam.cz
+  web: http://www.ruzohorky.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Horská bouda Růžohorky v Krkonoších": tel. +420 606 209 727,
+    ruzohorky@seznam.cz; zmínka o zimním provozu (ubytovaní mohou využít lanovou
+    dráhu) a letním parkování naznačuje celoroční provoz, výslovná formulace ale
+    chybí — ověřit. Web ruzohorky.cz převzat z OSM (way/291722059), ze sandboxu
+    je nedostupný (ConnectTimeout) — neověřen. OSM nese druhé číslo
+    +420 606 300 767, které dosažitelná média nepotvrzují — do profilu
+    nepřevzato. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: |-
+  Přístup je omezen nadmořskou výškou a polohou ve II. zóně ochrany přírody
+  (dle Českých hor, neověřeno). Pro ubytované je v létě u boudy pět parkovacích
+  míst, v zimě lze využít lanovou dráhu (dle Kudy z nudy, neověřeno).
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1903
+milniky:
+  - rok: 1903
+    udalost: >-
+      Bouda postavena jako hostinský podnik pod původním názvem Leischnerovy
+      boudy
+overeniHistorie:
+  source: >-
+    Kudy z nudy „Horská bouda Růžohorky v Krkonoších": postavena roku 1903 jako
+    hostinský podnik s původním názvem Leischnerovy boudy. Sekundární médium,
+    verified:false — ověřit primárním pramenem
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda na Růžové hoře 3,5 km pod vrcholem Sněžky, na hlavní trase z Pece pod
+  Sněžkou i z Velké Úpy (1 280 m). Ubytuje 20 hostů v deseti dvoulůžkových
+  pokojích a vaří domácí krkonošskou kuchyni — borůvkové knedlíky, cmundu a
+  kysel. Stojí od roku 1903. Nese turistickou známku č. 75.
+text:
+  - >-
+    Bouda Růžohorky (Velká Úpa 182) stojí na Růžové hoře ve výšce 1 280 m n. m.,
+    3,5 km od vrcholu Sněžky a v ochranném pásmu Krkonošského národního parku.
+    Leží na hlavní trase, po níž se na Sněžku stoupá z Pece pod Sněžkou i z
+    Velké Úpy, s výhledem na Studniční horu a panorama Pece.
+  - >-
+    Ubytování nabízí 20 lůžek v deseti dvoulůžkových pokojích. Restaurace má dvě
+    nekuřácké místnosti s kapacitou kolem šedesáti hostů a vaří domácí kuchyni z
+    vlastních výrobků — vyhlášené jsou borůvkové knedlíky a koláče, z
+    krkonošských specialit cmunda a kysel. Pobyt se psem je možný po domluvě.
+  - >-
+    Bouda vznikla v roce 1903 jako hostinský podnik a nesla původně jméno
+    Leischnerovy boudy. Údaje pocházejí ze sekundárních zdrojů — kapacitu,
+    otvírací dobu i aktuální ceny ověřte přímo u boudy; prezentace na Českých
+    horách je navíc archivní.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Horská bouda Růžohorky v Krkonoších" (výška, adresa,
+      kapacita, kuchyně, parkování, kontakty, rok vzniku); sekundární médium,
+      verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/horska-bouda-ruzohorky-v-krkonosich
+  - popis: >-
+      České hory — „Bouda Růžohorky" (výška, kapacita 20 lůžek, restaurace pro
+      60 osob, krkonošské speciality, pes po domluvě); prezentace je archivní,
+      sekundární médium, verified:false
+    url: https://www.ceskehory.cz/ubytovani/bouda-ruzohorky-pec-pod-snezkou.html
+  - popis: >-
+      OpenStreetMap way/291722059 — GPS a kontakty; data © přispěvatelé
+      OpenStreetMap, ODbL 1.0, stav dat 2026-06-12, verified:false
+    url: https://www.openstreetmap.org/way/291722059
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/bouda-ruzohorky.yaml (OSM way/291722059,
+  DATA-01) v rámci master fronty Tier 1 (známka č.75 + OSM). Kandidát byl
+  označen „K RUČNÍ KONTROLE" — křížové ověření se povedlo přes Kudy z nudy a
+  České hory, vlastní web ruzohorky.cz zůstává ze sandboxu nedostupný.
+
+  Zaznamenané rozpory k dořešení při DATA-04: (1) výška 1 280 m (Kudy z nudy +
+  České hory) vs. 1 250 m vyrytých na turistické známce č.75 — do profilu vzato
+  1 280 m jako shoda dvou nezávislých médií, ale rozdíl je nutné ověřit;
+  (2) OSM nese druhé telefonní číslo +420 606 300 767, dosažitelná média je
+  nepotvrzují — nepřevzato.
+
+  Wi-Fi, platba kartou a lyžárna: zdroje neuvádějí — pole vědomě nevyplněna.
+  Otvírací doba restaurace: nikde nedoložena — nevyplněna.
+
+  K dotažení (DATA-04, verified:true): otvírací doba a veřejná přístupnost
+  restaurace, potvrdit výšku (1250 vs 1280), kapacitu a kontakty, ověřit
+  funkčnost webu. Hero fotka: kandidáti DATA-02. Známka č.75 — obrázek připraven
+  v data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c75-ruzohorky.png.

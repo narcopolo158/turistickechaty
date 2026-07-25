@@ -1,0 +1,176 @@
+# Lyžařská bouda — profil povýšen z kandidáta (OSM, DATA-01) po křížovém
+# ověření. Master fronta Tier 1 (známka č.2210 + OSM). Data ze sekundárního
+# média Kudy z nudy (verified:false — ověřit primárně, DATA-04). GPS z OSM
+# (way/218896623). Duplicita s node/656504528 vyřešena rozhodnutím Michala
+# 20. 7. 2026 (sloučeno). Vše verified:false.
+
+nazev: Lyžařská bouda
+slug: lyzarska-bouda
+zeme: cz
+typ: horsky-hotel
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Stojí na Liščí louce pod Liščí horou; turistická známka č. 2210 nese
+      označení „Lyžařská bouda · Liščí louka"
+    kategorie: jine
+    zdroj: >-
+      Kudy z nudy „Hotel Lyžařská bouda v Krkonoších" (adresa Liščí hora) a
+      rytina turistické známky č.2210 — sekundární zdroje, verified:false
+  - text: >-
+      Zaměřuje se především na školy v přírodě, mateřské školy a lyžařské kurzy
+    kategorie: jine
+    zdroj: Kudy z nudy „Hotel Lyžařská bouda v Krkonoších" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.683877
+lng: 15.700547
+vyska: 1206
+obec: Černý Důl
+overeniLokace:
+  source: >-
+    GPS z OpenStreetMap https://www.openstreetmap.org/way/218896623 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright), stav dat
+    2026-06-12. Výška 1 206 m dle Kudy z nudy, shodně s údajem vyrytým na
+    turistické známce č.2210; adresa „Liščí hora 189, 543 44 Černý Důl" dle Kudy
+    z nudy. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 70
+pokoje:
+  - typ: Tří-, čtyř- a pětilůžkové pokoje s koupelnou se sprchovým koutem a WC
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Hotel Lyžařská bouda v Krkonoších": hotel pojme 70 osob v tří-,
+    čtyř- a pětilůžkových pokojích vybavených koupelnou se sprchovým koutem a
+    WC. Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Hotel Lyžařská bouda v Krkonoších": restaurace v hotelu
+    otevřena „denně od 10:30 do 17:00 hodin"; pro ubytované snídaně formou
+    švédského stolu a večeře s výběrem ze dvou menu. ROZPOR: OSM (way/218896623)
+    nese otvírací dobu „Mo-Su 10:30-22:00" — do profilu vzat údaj Kudy z nudy,
+    ověřit. Zveřejněná denní otvírací doba odpovídá podniku otevřenému
+    veřejnosti, zdroj to ale výslovně neuvádí a zároveň píše, že hotel je určen
+    především školám a lyžařským kurzům — ověřit (DATA-04). Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# `wifi`, `platbaKartou`, `psi`, `lyzarna` ZÁMĚRNĚ NEVYPLNĚNY — zdroj je neuvádí.
+overeniSluzby:
+  source: >-
+    Kudy z nudy „Hotel Lyžařská bouda v Krkonoších": masáže, stolní tenis a
+    stolní fotbálek, dětské hřiště, hřiště pro míčové hry, grilování po domluvě.
+    O Wi-Fi, platbě kartou, psech ani lyžárně se dosažitelný zdroj nezmiňuje —
+    pole zůstávají nevyplněná (nedomýšlet), doplnit při primárním ověření.
+    Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Restaurace denně 10:30–17:00 (dle Kudy z nudy, neověřeno; OSM uvádí
+  10:30–22:00 — rozpor).
+kontakty:
+  telefon: +420 774 304 091
+  email: rezervace@lyzarskabouda.com
+  web: https://www.lyzarskabouda.com/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Hotel Lyžařská bouda v Krkonoších": tel. +420 774 304 091
+    (shodně s OSM), rezervace@lyzarskabouda.com, web lyzarskabouda.com (shodně s
+    OSM). Restaurace denně 10:30–17:00. Sezónu ani celoroční provoz zdroj
+    výslovně neuvádí — pole `sezona` vědomě nevyplněno (nedomýšlet). Web je ze
+    sandboxu nedostupný (ConnectTimeout) — neověřen. Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — dosažitelné zdroje historii neuvádějí.
+overeniHistorie:
+  source: >-
+    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
+    nudy historii neuvádí, cs.wikipedia.org a treking.cz jsou ze sandboxu
+    nedostupné, vlastní web nedostupný). Doplnit při primárním ověření
+    (DATA-04) — nedomýšleno. verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Hotelová bouda na Liščí louce pod Liščí horou nad Černým Dolem (1 206 m).
+  Ubytuje 70 hostů ve tří- až pětilůžkových pokojích s vlastní koupelnou,
+  restaurace má otevřeno denně do odpoledne. Zaměřuje se hlavně na školy v
+  přírodě a lyžařské kurzy. Nese turistickou známku č. 2210.
+text:
+  - >-
+    Lyžařská bouda (Liščí hora 189, Černý Důl) stojí ve výšce 1 206 m n. m. na
+    Liščí louce pod Liščí horou — pod tímto místním jménem ji zná i turistická
+    známka č. 2210, vydaná jako „Lyžařská bouda · Liščí louka".
+  - >-
+    Rozsahem služeb jde o horský hotel: ubytuje 70 hostů ve tří-, čtyř- a
+    pětilůžkových pokojích, každý s koupelnou se sprchovým koutem a WC. Pro
+    ubytované jsou snídaně formou švédského stolu a večeře s výběrem ze dvou
+    menu, restaurace má podle Kudy z nudy otevřeno denně od 10:30 do 17:00.
+    K vybavení patří masáže, stolní tenis a fotbálek, dětské hřiště a hřiště pro
+    míčové hry, po domluvě lze grilovat.
+  - >-
+    Provozovatel se zaměřuje především na mateřské školy, školy v přírodě a
+    lyžařské kurzy. Údaje pocházejí ze sekundárního zdroje — otvírací dobu
+    restaurace i to, zda je otevřená kolemjdoucím, ověřte přímo u boudy;
+    OpenStreetMap u téhož objektu uvádí otvírací dobu delší, do 22 hodin.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Hotel Lyžařská bouda v Krkonoších" (výška, adresa,
+      kapacita a pokoje, restaurace a otvírací doba, vybavení, kontakty);
+      sekundární médium, verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/lyzarska-bouda-v-krkonosich
+  - popis: >-
+      OpenStreetMap way/218896623 — GPS, telefon, web, otvírací doba; data ©
+      přispěvatelé OpenStreetMap, ODbL 1.0, stav dat 2026-06-12, verified:false
+    url: https://www.openstreetmap.org/way/218896623
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/lyzarska-bouda.yaml (OSM way/218896623,
+  DATA-01) v rámci master fronty Tier 1 (známka č.2210 + OSM). Kandidát čekal na
+  „doložení provozu" — doloženo přes Kudy z nudy (telefon i doména se shodují s
+  OSM, výška 1 206 m se shoduje s rytinou známky č.2210).
+
+  Duplicita OSM (dvě „Lyžařské boudy") je vyřešena rozhodnutím Michala z
+  20. 7. 2026 — node/656504528 smazán do _vyrazeno.yaml, tento profil je jediný
+  nositel objektu.
+
+  Typ: nastaveno „horsky-hotel" (Kudy z nudy jej vede jako „Hotel Lyžařská
+  bouda", 70 lůžek, pokoje s vlastní koupelnou, polopenze) — OSM tag
+  tourism=alpine_hut vedl kandidáta jako obsluhovanou; rozhodnutí redakce, ke
+  zvážení.
+
+  Zaznamenaný rozpor: otvírací doba restaurace 10:30–17:00 (Kudy z nudy) vs.
+  „Mo-Su 10:30-22:00" (OSM) — do profilu vzat údaj Kudy z nudy jako novější a
+  konkrétnější, ověřit.
+
+  ⚠ Klíč zařazení ke zvážení: zdroj píše, že hotel je určen „především pro
+  školky a školy v přírodě, lyžařské kurzy". Zveřejněná denní otvírací doba
+  restaurace ale odpovídá podniku otevřenému veřejnosti. Pokud by se ukázalo, že
+  restaurace slouží jen skupinám, objekt Michalův klíč nesplňuje — ověřit.
+
+  `sezona` vědomě nevyplněna (zdroj ji neuvádí). Wi-Fi, platba kartou, psi a
+  lyžárna: zdroj neuvádí — nevyplněno.
+
+  K dotažení (DATA-04, verified:true): historie a rok vzniku, sezónní režim,
+  potvrdit otvírací dobu a veřejnou přístupnost restaurace. Hero fotka:
+  kandidáti DATA-02. Známka č.2210 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c2210-lyzarska-bouda-lisci-louka.png.

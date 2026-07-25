@@ -1,0 +1,50 @@
+# Chata Rozhled (Strážné) — RUČNÍ KANDIDÁT (založen redakcí, NE z OSM exportu
+# DATA-01). Vznik: session 22. 7. 2026 (hlavní session Opus) — dohledáno zpětně
+# přes turistickou známku č.14 (Michal dodal obrázek), objekt v katalogu ani
+# mezi kandidáty DATA-01 chyběl.
+# Vše verified: false. Na web povyšovat až po křížovém ověření (DATA-03).
+# Nic nedomýšlet!
+
+nazev: Chata Rozhled
+slug: chata-rozhled
+zeme: cz
+oblast: krkonose
+typ: obsluhovana
+
+# GPS a výška NEvyplněny: objekt nebyl v OSM exportu DATA-01, přesné souřadnice
+# zatím nemáme. Výška dle turistické známky ~1207 m n. m. — doložit z OSM/mapy
+# (obec Strážné je níž, chata výš na svahu; nedomýšlet).
+
+overeniLokace:
+  source: >-
+    turistická známka č.14 „Chata Rozhled, Krkonoše, 1207 m n.m."
+    (Turistické známky s.r.o.); poloha Strážné (okr. Trutnov). Křížový signál
+    existence z titulků WebSearch 22. 7. 2026 (obsah stránek NEotevřen):
+    oficiální web chatarozhled.cz, dopenzionu.cz (Horská chata Rozhled –
+    Strážné), ceskehory.cz, cztip.cz
+  verified: false
+  checked: '2026-07-22'
+kontakty:
+  web: https://www.chatarozhled.cz/
+overeniProvoz:
+  source: >-
+    z titulků WebSearch 22. 7. 2026 vede vlastní web chatarozhled.cz (ubytování,
+    „Krakonošovy cestičky", výlety) — obsah NEotevřen; provoz, veřejné
+    občerstvení a otvírací dobu doložit z webu objektu (DATA-03/DATA-04)
+  verified: false
+  checked: '2026-07-22'
+interniPoznamky: >-
+  RUČNÍ KANDIDÁT — zpětné dohledání přes turistickou známku č.14. Horská chata
+  Rozhled ve Strážném, vlastní web chatarozhled.cz (doména z titulků WebSearch,
+  obsah neotevřen). NEZAMĚŇOVAT s „Jiráskovou turistickou chatou s rozhlednou"
+  na Kladském pomezí (Náchodsko) — jiný objekt téhož obecného jména, vyloučen.
+
+  Klíč zařazení (Michalovo pravidlo): „s veřejným občerstvením → zařadit".
+  Chata Rozhled je horská chata s ubytováním; **veřejné občerstvení z titulků
+  NEpotvrzeno** — před povýšením doložit z webu (jinak zůstává kandidátem).
+
+  K dotažení před povýšením (DATA-03): potvrdit veřejné občerstvení/restauraci,
+  kontakty, kapacitu, přesnou GPS + výšku z OSM/mapy (v OSM exportu DATA-01
+  nebyla — prověřit tagování). Zdroj obrázku známky připraven:
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c14-chata-rozhled.png
+  (po povýšení → public/znamky/chata-rozhled.png + manifest + katalog).

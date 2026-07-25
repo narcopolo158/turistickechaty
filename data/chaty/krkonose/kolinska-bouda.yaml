@@ -1,0 +1,160 @@
+# Kolínská bouda — profil povýšen z kandidáta (externí katalog ČR/SK) po
+# křížovém ověření. Master fronta Tier 1 (známka č.1719 + katalog). Data ze
+# sekundárních médií Kudy z nudy a ceskehory.cz (verified:false — vlastní web
+# kolinskabouda.cz je ze sandboxu nedostupný; ověřit primárně, DATA-04).
+# GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, OSM export objekt neobsahuje —
+# nedomýšlet). Vše verified:false.
+
+nazev: Kolínská bouda
+slug: kolinska-bouda
+zeme: cz
+typ: horsky-hotel
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Stojí na Lučinách nad Pecí pod Sněžkou, na turistické stezce mezi Pecí a
+      Černou horou, v 1 117 m
+    kategorie: jine
+    zdroj: České hory — stránka Kolínská bouda (sekundární médium, verified:false)
+  - text: >-
+      Ubytuje až 102 osob a nabízí vyhřívaný bazén 8 × 4 m, whirlpool i saunu
+    kategorie: velikost
+    zdroj: Kudy z nudy „Hotel Kolínská bouda v Krkonoších" (sekundární médium, verified:false)
+  - text: U boudy jsou výběhy s kozami a ovcemi a dětské hřiště
+    kategorie: jine
+    zdroj: Kudy z nudy „Hotel Kolínská bouda v Krkonoších" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu, který
+# souřadnice nenese, a v OSM exportu DATA-01 objekt není. Doplnit z OSM
+# (Overpass je ze sandboxu nedosažitelný — přes Actions) nebo ručně.
+vyska: 1117
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    Výška 1 117 m dle České hory (stránka „Kolínská bouda", shodně s externím
+    katalogem ChatGPT); poloha Lučiny, na turistické stezce mezi Pecí pod
+    Sněžkou a Černou horou (České hory); adresa Pec pod Sněžkou 319, 542 21,
+    území KRNAP dle Kudy z nudy. GPS nedoložena — doplnit z OSM. Sekundární
+    média, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 102
+pokoje:
+  - typ: Dvou-, tří-, čtyř-, pěti- a šestilůžkové pokoje, každý s WC a sprchou
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Hotel Kolínská bouda v Krkonoších": kapacita 102 osob v dvou-
+    až šestilůžkových pokojích, každý vybaven WC a sprchou. České hory uvádějí
+    100 lůžek (rozpor 2 lůžka, jejich prezentace je navíc archivní) — ověřit.
+    Sekundární média, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Hotel Kolínská bouda v Krkonoších": restaurace s otvírací
+    dobou po–ne 10:30–22:00, v létě i v zimě terasa se slunečním posezením.
+    Zveřejněná denní otvírací doba i terasa odpovídají podniku otevřenému
+    veřejnosti, výslovně to ale zdroj neuvádí — ověřit (DATA-04). Sekundární
+    médium, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+wifi: ano
+overeniSluzby:
+  source: >-
+    Kudy z nudy „Hotel Kolínská bouda v Krkonoších": bezplatná Wi-Fi v celém
+    hotelu i restauraci, vyhřívaný bazén 8 × 4 × 1,5 m, whirlpool pro 4 osoby,
+    sauna, dětské hřiště, výběhy pro kozy a ovce; České hory doplňují, že objekt
+    je nekuřácký. Sekundární média, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: |-
+  Restaurace po–ne 10:30–22:00 (dle Kudy z nudy, neověřeno). Ubytování
+  celoročně.
+kontakty:
+  telefon: +420 774 500 747
+  email: info@kolinskabouda.cz
+  web: https://www.kolinskabouda.cz/cs/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Hotel Kolínská bouda v Krkonoších": celoroční provoz
+    (leden–prosinec), restaurace po–ne 10:30–22:00, tel. +420 774 500 747 a
+    +420 499 736 201, info@kolinskabouda.cz, kolinskabouda.cz/cs. Web boudy je
+    ze sandboxu nedostupný — ověřit primárně (DATA-04). Sekundární médium,
+    verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — dosažitelné zdroje historii neuvádějí.
+overeniHistorie:
+  source: >-
+    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
+    nudy ani České hory historii neuvádějí, web boudy a Wikipedie jsou ze
+    sandboxu nedostupné). Doplnit při primárním ověření (DATA-04) —
+    nedomýšleno. verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Velká horská bouda hotelového typu na Lučinách nad Pecí pod Sněžkou (1 117 m),
+  na turistické stezce k Černé hoře. Ubytuje až 102 hostů, má restauraci s
+  terasou, vyhřívaný bazén, whirlpool a saunu. Nese turistickou známku č. 1719.
+text:
+  - >-
+    Kolínská bouda stojí ve výšce 1 117 m n. m. na Lučinách nad Pecí pod
+    Sněžkou, na turistické stezce mezi Pecí a Černou horou, uvnitř Krkonošského
+    národního parku; adresa Pec pod Sněžkou 319. Rozsahem služeb jde spíš o
+    horský hotel než o skromnou boudu: ubytuje až 102 hostů ve dvou- až
+    šestilůžkových pokojích, každý s vlastním WC a sprchou.
+  - >-
+    Restaurace má otevřeno denně od 10:30 do 22:00 a v létě i v zimě je k
+    dispozici terasa. K vybavení patří bezplatná Wi-Fi, vyhřívaný bazén
+    8 × 4 metry, whirlpool pro čtyři osoby a sauna; děti ocení hřiště a výběhy s
+    kozami a ovcemi. Údaje pocházejí ze sekundárních zdrojů (Kudy z nudy, České
+    hory) — otvírací dobu i aktuální ceny ověřte přímo u boudy.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Hotel Kolínská bouda v Krkonoších" (adresa, kapacita,
+      restaurace a otvírací doba, wellness, kontakty); sekundární médium,
+      verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/hotel-kolinska-bouda-v-krkonosich
+  - popis: >-
+      České hory — „Kolínská bouda" (výška 1 117 m, poloha Lučiny, kapacita);
+      prezentace je archivní, sekundární médium, verified:false
+    url: https://www.ceskehory.cz/ubytovani/kolinska-bouda-pec-pod-snezkou.html
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/kolinska-bouda.yaml (externí katalog ČR/SK,
+  jistota B) v rámci master fronty Tier 1 (známka č.1719 + katalog). Vlastní web
+  kolinskabouda.cz je ze sandboxu nedostupný.
+
+  BEZ GPS — katalog souřadnice nenese a objekt není ani v OSM exportu DATA-01;
+  doplnit z OSM přes Actions nebo ručně (nedomýšlet).
+
+  Typ: nastaveno „horsky-hotel" (Kudy z nudy jej vede jako „Hotel Kolínská
+  bouda", 102 lůžek, bazén, whirlpool, sauna) — externí katalog jej řadil jako
+  „horskou boudu"; rozhodnutí redakce, ke zvážení.
+
+  Zaznamenaný rozpor: kapacita 102 (Kudy z nudy) vs. 100 lůžek (České hory,
+  archivní prezentace).
+
+  K dotažení (DATA-04, verified:true): GPS, historie a rok vzniku, potvrdit
+  otvírací dobu a veřejnou přístupnost restaurace, ceny. Hero fotka: kandidáti
+  DATA-02. Známka č.1719 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c1719-kolinska-bouda.png
+  (číslo opravil Michal — původně jsem z rytiny četl 1716).

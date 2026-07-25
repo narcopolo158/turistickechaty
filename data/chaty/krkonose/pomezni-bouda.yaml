@@ -1,0 +1,195 @@
+# Pomezní bouda — profil povýšen z kandidáta (externí katalog ČR/SK, jistota B)
+# po křížovém ověření. Master fronta Tier 1 (známka č.673 + katalog). Data ze
+# sekundárních zdrojů: Kudy z nudy a oficiální web obce Malá Úpa
+# (verified:false). GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, v OSM exportu
+# objekt není — nedomýšlet). Vše verified:false.
+
+nazev: Pomezní bouda
+slug: pomezni-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Stojí na hřebeni Krkonoš přímo u hraničního přechodu do Polska, 7 km od
+      vrcholu Sněžky
+    kategorie: jine
+    zdroj: malaupa.cz — oficiální web obce Malá Úpa (sekundární zdroj, verified:false)
+  - text: >-
+      Nejstarší hostinec na Pomezních Boudách — postaven roku 1870 pod názvem
+      Blaschkebaude
+    kategorie: stari
+    zdroj: Kudy z nudy „Horský hotel Pomezní bouda v Horní Malé Úpě" (sekundární médium, verified:false)
+  - text: >-
+      Ve Staré Pomezní boudě sídlil od roku 1841 celní úřad; po roce 1945 nesla
+      bouda jméno Devětsil, původní název jí byl vrácen po roce 1989
+    kategorie: stari
+    zdroj: Kudy z nudy „Horský hotel Pomezní bouda v Horní Malé Úpě" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
+# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+vyska: 1050
+obec: Malá Úpa
+overeniLokace:
+  source: >-
+    Výška 1 050 m shodně dle Kudy z nudy, oficiálního webu obce Malá Úpa,
+    externího katalogu ChatGPT i rytiny na turistické známce č.673; adresa
+    „Horní Malá Úpa 40, 542 27 Malá Úpa"; poloha na hřebeni Krkonoš přímo u
+    hraničního přechodu s Polskem, 7 km od vrcholu Sněžky (malaupa.cz). GPS
+    nedoložena — doplnit z OSM. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 50
+pokoje:
+  - typ: >-
+      Dvou- až čtyřlůžkové pokoje s vlastním sociálním zařízením nebo s
+      umyvadlem a sociálním zařízením na patře
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Horský hotel Pomezní bouda v Horní Malé Úpě": 50 lůžek, dvou-
+    až čtyřlůžkové pokoje s vlastním sociálním zařízením nebo s umyvadlem a
+    sociálním zařízením na patře; oficiální web obce Malá Úpa uvádí shodně
+    „kapacita objektu 50 lůžek". Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Horský hotel Pomezní bouda v Horní Malé Úpě" uvádí u stravování
+    jen polopenzi a plnou penzi, tedy službu pro ubytované; oficiální web obce
+    Malá Úpa vede „stravování" v seznamu služeb objektu. Ani jeden zdroj
+    nedokládá restauraci otevřenou kolemjdoucím ani otvírací dobu — proto
+    `typObcerstveni` vědomě NEVYPLNĚNO (nedomýšlet). OVĚŘIT (DATA-04), je to
+    klíč zařazení. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# `wifi`, `platbaKartou`, `psi`, `lyzarna` ZÁMĚRNĚ NEVYPLNĚNY — zdroje je
+# neuvádějí.
+overeniSluzby:
+  source: >-
+    Kudy z nudy „Horský hotel Pomezní bouda v Horní Malé Úpě" uvádí z vybavení
+    salonek s TV a DVD a stolní tenis. O Wi-Fi, platbě kartou, psech, lyžárně
+    ani wellness se dosažitelné zdroje nezmiňují — pole zůstávají nevyplněná
+    (nedomýšlet), doplnit při primárním ověření. Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba ZÁMĚRNĚ NEVYPLNĚNA — dosažitelné zdroje ji neuvádějí.
+sezona: celoročně
+kontakty:
+  telefon: +420 604 268 327
+  email: info@pomezni-bouda.cz
+  web: http://www.pomezni-bouda.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Horský hotel Pomezní bouda v Horní Malé Úpě": tel.
+    +420 499 891 234 a +420 604 268 327, info@pomezni-bouda.cz, web
+    pomezni-bouda.cz; uvádí též cenu ubytování 550 Kč/noc/osoba (do profilu
+    nepřevzata — ceny se mění). Oficiální web obce Malá Úpa nese tentýž mobil
+    +420 604 268 327, ale jiný e-mail (pomezbouda@gmail.com) — ROZPOR, ověřit.
+    Celoroční provoz pouze dle externího katalogu (jistota B), oba dosažitelné
+    zdroje sezónu ani otvírací dobu neuvádějí — ověřit. Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1870
+milniky:
+  - rok: 1841
+    udalost: Ve Staré Pomezní boudě začal sídlit celní úřad
+  - rok: 1870
+    udalost: >-
+      Postavena stavba s názvem Blaschkebaude — nejstarší hostinec na Pomezních
+      Boudách
+  - udalost: >-
+      Po roce 1945 přejmenována na Devětsil; původní název jí byl vrácen po roce
+      1989
+overeniHistorie:
+  source: >-
+    Kudy z nudy „Horský hotel Pomezní bouda v Horní Malé Úpě": roku 1870
+    postavena stavba s názvem Blaschkebaude, nejstarší hostinec od roku 1870; od
+    roku 1841 sídlil ve Staré Pomezní boudě celní úřad; po roce 1945 pojmenována
+    Devětsil, název obnoven po roce 1989. U přejmenování zdroj přesné roky
+    neuvádí — milník proto zapsán bez roku (nedomýšlet). Sekundární médium,
+    verified:false — ověřit primárním pramenem
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Nejstarší hostinec na Pomezních Boudách (1 050 m), přímo u hraničního přechodu
+  do Polska a 7 km od vrcholu Sněžky. Stojí od roku 1870, kdy nesl jméno
+  Blaschkebaude, a ubytuje 50 hostů ve dvou- až čtyřlůžkových pokojích. Nese
+  turistickou známku č. 673.
+text:
+  - >-
+    Pomezní bouda (Horní Malá Úpa 40) stojí ve výšce 1 050 m n. m. na hřebeni
+    Krkonoš přímo u hraničního přechodu do Polska, zhruba sedm kilometrů od
+    vrcholu Sněžky. Sedlo Pomezních Bud je odedávna přechodovým a celním místem
+    — už od roku 1841 tu ve Staré Pomezní boudě sídlil celní úřad.
+  - >-
+    Dnešní bouda byla postavena roku 1870 pod názvem Blaschkebaude a je
+    nejstarším hostincem na Pomezních Boudách. Po roce 1945 nesla jméno Devětsil,
+    původní název jí byl vrácen po roce 1989.
+  - >-
+    Ubytování nabízí 50 lůžek ve dvou- až čtyřlůžkových pokojích, buď s vlastním
+    sociálním zařízením, nebo s umyvadlem a společným sociálním zařízením na
+    patře; pro hosty je k dispozici salonek s televizí a stolní tenis. Stravování
+    je podle dostupných zdrojů řešeno polopenzí a plnou penzí — zda je
+    restaurace otevřená i kolemjdoucím turistům, se z nich doložit nedá; ověřte
+    to prosím přímo u boudy.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Horský hotel Pomezní bouda v Horní Malé Úpě" (výška,
+      adresa, kapacita a pokoje, stravování, vybavení, kontakty, historie);
+      sekundární médium, verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/pomezni-bouda-v-horni-male-upe
+  - popis: >-
+      Malá Úpa — oficiální web obce, stránka „Pomezní bouda" (výška, poloha u
+      hraničního přechodu, kapacita, kontakty); sekundární zdroj, verified:false
+    url: https://www.malaupa.cz/pomezni-bouda/
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/pomezni-bouda.yaml (externí katalog ČR/SK,
+  jistota B) v rámci master fronty Tier 1 (známka č.673 + katalog).
+
+  BEZ GPS — katalog souřadnice nenese a objekt není ani v OSM exportu DATA-01;
+  doplnit z OSM přes Actions nebo ručně (nedomýšlet).
+
+  Výška 1 050 m má čtyřnásobnou shodu (Kudy z nudy, malaupa.cz, katalog, rytina
+  známky č.673) — nejsilněji doložený údaj v této dávce.
+
+  ⚠ Klíč zařazení — NEDOLOŽENO: ani jeden dosažitelný zdroj nedokládá restauraci
+  otevřenou kolemjdoucím. Kudy z nudy zmiňuje jen polopenzi/plnou penzi (služba
+  pro ubytované), malaupa.cz jen „stravování" v seznamu služeb. `kuchyne: ano`
+  je proto vyplněno, ale `typObcerstveni` VĚDOMĚ NEVYPLNĚNO a v textu profilu je
+  to otevřeně řečeno. Poloha u hraničního přechodu na hřebenové trase veřejnému
+  provozu odpovídá, ale to je úvaha, ne doklad — OVĚŘIT. Pozor též na možnou
+  záměnu s dalšími podniky v sedle (osada Pomezní Boudy má víc objektů).
+
+  Zaznamenaný rozpor: e-mail info@pomezni-bouda.cz (Kudy z nudy) vs.
+  pomezbouda@gmail.com (malaupa.cz) — do profilu vzat doménový, ověřit.
+  Z Kudy z nudy nepřevzata cena 550 Kč/noc/osoba (ceny se mění).
+
+  U milníku přejmenování (Devětsil) zdroj přesné roky nenese — zapsán bez roku.
+
+  Wi-Fi, platba kartou, psi a lyžárna: zdroje neuvádějí — pole vědomě
+  nevyplněna. Otvírací doba: nedoložena.
+
+  K dotažení (DATA-04, verified:true): GPS, veřejná přístupnost a otvírací doba
+  restaurace (priorita — klíč zařazení), potvrdit e-mail a sezónní režim. Hero
+  fotka: kandidáti DATA-02. Známka č.673 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c673-pomezni-boudy.png
+  (známka je vydána pro místo „Pomezní Boudy · Malá Úpa", tedy pro sedlo/osadu —
+  vazba na tento konkrétní objekt k ověření).

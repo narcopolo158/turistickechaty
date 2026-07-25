@@ -1,0 +1,133 @@
+# Výrovka (Chata Výrovka) — profil povýšen z kandidáta DATA-01 (OSM) po křížovém
+# ověření. Master fronta Tier 1 (známka č.12 + katalog + OSM). Data ze sekundárního
+# média Kudy z nudy (verified:false — web vyrovka.cz ze sandboxu nedostupný;
+# ověřit primárně, DATA-04). Vše verified:false = převzato ze zdroje.
+
+nazev: Výrovka
+slug: vyrovka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Dnešní bouda vznikla 1988–1990; dvě předchozí budovy (od 1926, resp. 1928)
+      shořely v letech 1946 a 1947
+    kategorie: stari
+    zdroj: Kudy z nudy „Chata Výrovka" (sekundární médium, verified:false)
+  - text: Stojí na hřebeni Krkonoš v 1. zóně národního parku
+    kategorie: jine
+    zdroj: Kudy z nudy „Chata Výrovka" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.715405
+lng: 15.6803184
+vyska: 1368
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/19921111 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); výška
+    1 368 m a adresa Pec pod Sněžkou 204 dle Kudy z nudy „Chata Výrovka"
+    (katalog ChatGPT uvádí 1 356 m — rozpor, ověřit); sekundární médium,
+    verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+pokoje:
+  - typ: Dvou- až čtyřlůžkové pokoje s vlastním sociálním zařízením
+  - typ: Noclehárna se společným sociálním zařízením
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Chata Výrovka": 2–4lůžkové pokoje s vlastním sociálním
+    zařízením a noclehárna se společným zařízením (přesná kapacita neuvedena);
+    sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Chata Výrovka": restaurační část (otvírací doba, speciality a
+    přístupnost pro kolemjdoucí neuvedeny); sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: +420 702 041 025
+  email: rezervace@vyrovka.cz
+  web: https://www.vyrovka.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Chata Výrovka": tel. +420 702 041 025, rezervace@vyrovka.cz,
+    www.vyrovka.cz, IG @vyrovka; od 1. 9. 2025 nový provozovatel (Good Hut —
+    Petr Bárta a Jan Stejskal). Web ze sandboxu nedostupný — ověřit primárně
+    (DATA-04). Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1926
+milniky:
+  - rok: 1926
+    udalost: Na místě postaven vojenský srub
+  - rok: 1928
+    udalost: Havlova bouda (podle stavitele)
+  - rok: 1946
+    udalost: Požár budovy
+  - rok: 1947
+    udalost: Druhý požár
+  - rok: 1990
+    udalost: Dokončena dnešní bouda (stavěná 1988–1990)
+overeniHistorie:
+  source: >-
+    Kudy z nudy „Chata Výrovka": 1926 vojenský srub, 1928 Havlova bouda, požáry
+    1946 a 1947, současná bouda 1988–1990; sekundární médium, verified:false —
+    ověřit primárním pramenem
+  verified: false
+  checked: '2026-07-22'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Hřebenová bouda ve výšce 1 368 m v 1. zóně KRNAP nad Pecí pod Sněžkou. Nabízí
+  pokoje i noclehárnu a restaurační část; dnešní budova pochází z let 1988–1990,
+  dvě starší (od roku 1926) shořely. Od září 2025 ji vede nový provozovatel.
+  Nese turistickou známku č. 12.
+text:
+  - >-
+    Výrovka stojí na hřebeni Krkonoš ve výšce 1 368 m n. m. v první zóně
+    Krkonošského národního parku, adresa Pec pod Sněžkou 204. Ubytování nabízí
+    ve dvou- až čtyřlůžkových pokojích s vlastním sociálním zařízením a v
+    noclehárně se společným zařízením.
+  - >-
+    Místo má bohatou historii: v roce 1926 tu vznikl vojenský srub, roku 1928
+    Havlova bouda; obě budovy zničily požáry v letech 1946 a 1947 a dnešní
+    bouda byla postavena v letech 1988–1990. Od 1. září 2025 boudu provozuje
+    nový nájemce (Good Hut). Údaje pocházejí ze sekundárního zdroje (Kudy z
+    nudy) — otvírací dobu restaurace a kapacitu je vhodné ověřit přímo u boudy.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Chata Výrovka" (výška, historie, ubytování, nový
+      provozovatel, kontakty); sekundární médium, verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/chata-vyrovka
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/way/19921111
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/vyrovka.yaml (DATA-01/OSM) v rámci master
+  fronty Tier 1 (známka č.12 + katalog ChatGPT + OSM). Data z Kudy z nudy
+  (sekundární médium) — vlastní web vyrovka.cz je ze sandboxu nedostupný; OSM
+  navíc nesla starou doménu vyrovka-krkonose.cz s rozbitým HTTPS.
+
+  Rozpor výšky: Kudy z nudy 1 368 m vs. katalog ChatGPT 1 356 m — ponecháno
+  1 368 (konkrétnější zdroj), ověřit (DATA-04).
+
+  K dotažení (DATA-04, verified:true): přesná kapacita lůžek, otvírací doba a
+  veřejná přístupnost restaurace, potvrdit nového provozovatele Good Hut.
+  Hero fotka: vybrat z kandidátů DATA-02. Známka č.12 — obrázek připraven
+  v data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c12-chata-vyrovka.png.

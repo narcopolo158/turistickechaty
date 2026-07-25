@@ -1,0 +1,124 @@
+# Martinova bouda — profil povýšen z kandidáta DATA-01 (OSM) po křížovém ověření.
+# Master fronta Tier 1 (známka č.674 + katalog + OSM). Data doplněna ze sekundárního
+# média Kudy z nudy (verified:false — web boudy martinovka.cz je ze sandboxu
+# nedostupný; ověřit primárně, DATA-04). Vše verified:false = převzato ze zdroje.
+
+nazev: Martinova bouda
+slug: martinova-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: Stojí na hraničním hřebeni Krkonoš, ve výšce 1 288 m
+    kategorie: jine
+    zdroj: >-
+      Kudy z nudy „Martinova bouda v Krkonoších" (sekundární médium, verified:false)
+  - text: Vysokorychlostní Wi-Fi, sauna a společenská místnost s kulečníkem a šipkami
+    kategorie: jine
+    zdroj: >-
+      Kudy z nudy „Martinova bouda v Krkonoších" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7720557
+lng: 15.5753957
+vyska: 1288
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/27594723 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); výška
+    1288 m a adresa Špindlerův Mlýn-Labská 29 dle Kudy z nudy „Martinova bouda
+    v Krkonoších" (sekundární médium, verified:false)
+  verified: false
+  checked: '2026-07-22'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 42
+pokoje:
+  - typ: 12 pokojů (dvoulůžkové až pětilůžkové) s vlastním sociálním zařízením
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Martinova bouda v Krkonoších": 12 pokojů, celkem 42 lůžek
+    (2–5lůžkové), vlastní sociální zařízení (umyvadlo, sprchový kout, WC);
+    sekundární médium, verified:false — ověřit z webu boudy
+  verified: false
+  checked: '2026-07-22'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Martinova bouda v Krkonoších": restaurace v objektu (nekuřácká,
+    s krbem), šenk a jídelna s barem — přístupnost pro kolemjdoucí veřejnost a
+    otvírací doba neuvedeny (OSM tag uvádí 11:00–17:00, neověřeno); sekundární
+    médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+wifi: ano # vysokorychlostní Wi-Fi (Kudy z nudy)
+overeniSluzby:
+  source: >-
+    Kudy z nudy „Martinova bouda v Krkonoších": vysokorychlostní Wi-Fi, sauna,
+    společenská místnost se šipkami a kulečníkem, projekční vybavení; sekundární
+    médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: +420 499 422 235
+  email: info@martinovka.cz
+  web: http://www.martinovka.cz/
+overeniProvoz:
+  source: >-
+    Kontakty: Kudy z nudy „Martinova bouda v Krkonoších" (tel. +420 499 422 235,
+    +420 602 823 767, info@martinovka.cz, www.martinovka.cz); OSM uvádí i
+    martinovka@volny.cz. Web boudy ze sandboxu nedostupný — provoz ověřit
+    primárně (DATA-04). Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská bouda na hraničním hřebeni Krkonoš ve výšce 1 288 m u Špindlerova
+  Mlýna. Nabízí 42 lůžek ve 12 pokojích s vlastním sociálním zařízením,
+  restauraci s krbem, saunu a rychlé Wi-Fi. Nese turistickou známku č. 674.
+text:
+  - >-
+    Martinova bouda (Martinovka) stojí na hraničním hřebeni Krkonoš ve výšce
+    1 288 m n. m., adresa Špindlerův Mlýn-Labská 29. Ubytování poskytuje ve 12
+    pokojích od dvoulůžkových po pětilůžkové, s celkovou kapacitou 42 lůžek;
+    pokoje mají vlastní sociální zařízení.
+  - >-
+    K vybavení patří restaurace v objektu (nekuřácká, s krbem), šenk a jídelna
+    s barem, dále sauna, vysokorychlostní Wi-Fi a společenská místnost s
+    kulečníkem a šipkami. Údaje pocházejí ze sekundárního zdroje (Kudy z nudy)
+    a před cestou je vhodné ověřit přímo u boudy — zejména otvírací dobu
+    restaurace a její přístupnost pro kolemjdoucí.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Martinova bouda v Krkonoších" (výška, kapacita, vybavení,
+      kontakty); sekundární médium, verified:false, ověřit primárním pramenem
+    url: https://www.kudyznudy.cz/aktivity/martinova-bouda-v-krkonosich
+  - popis: OpenStreetMap (GPS objektu, ODbL)
+    url: https://www.openstreetmap.org/way/27594723
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/martinova-bouda.yaml (DATA-01/OSM) v rámci
+  master fronty Tier 1 (známka č.674 + katalog ChatGPT + OSM). Data z Kudy z nudy
+  (sekundární médium) — vlastní web martinovka.cz je ze sandboxu nedostupný
+  (robots ConnectTimeout), stejně jako v session 22.
+
+  POZOR na kolizi jmen: existuje i jiná „Martinova bouda" na Benecku
+  (martinova-bouda.cz) — tento profil je Martinovka na hřebeni u Špindlerova
+  Mlýna (martinovka.cz, GPS OSM way/27594723).
+
+  K dotažení (DATA-04, verified:true): otvírací doba a veřejná přístupnost
+  restaurace, přesná kapacita, rok vzniku/historie (Kudy z nudy neuvádí),
+  potvrdit e-mail (info@martinovka.cz vs. martinovka@volny.cz z OSM). Hero fotka:
+  vybrat z kandidátů DATA-02 (oční kontrola). Známka č.674 — obrázek připraven
+  v data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c674-martinova-bouda.png.

@@ -1,0 +1,152 @@
+# Petrova bouda — profil povýšen z kandidáta (externí katalog ČR/SK) po křížovém
+# ověření. Master fronta Tier 1 (známka č.671 + katalog). Data ze sekundárního
+# média Kudy z nudy (verified:false — web petrovyboudy.cz ze sandboxu nedostupný).
+# GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, nedomýšlet). Vše verified:false.
+
+nazev: Petrova bouda
+slug: petrova-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Původní boudu zničil 31. 7. 2011 požár; dnešní moderní budova byla
+      dokončena v květnu 2020
+    kategorie: stari
+    zdroj: Kudy z nudy „Petrova bouda ve Špindlerově Mlýně" (sekundární médium, verified:false)
+  - text: Stojí na hřebeni Krkonoš přímo u státní hranice s Polskem
+    kategorie: jine
+    zdroj: Kudy z nudy „Petrova bouda ve Špindlerově Mlýně" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu, který
+# souřadnice nenese; doplnit z OSM (nedomýšlet). Výška 1288 m dle katalogu.
+vyska: 1288
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    Poloha Špindlerův Mlýn 89, hřeben Krkonoš u státní hranice s Polskem, dle
+    Kudy z nudy „Petrova bouda ve Špindlerově Mlýně"; výška 1 288 m dle
+    externího katalogu ChatGPT (jistota B). GPS zatím nedoložena — doplnit z
+    OSM. Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 96
+pokoje:
+  - typ: Hlavní budova — 52 lůžek (40 v ubytovací části, 12 v noclehárně)
+  - typ: 4 větší a 2 menší apartmány (kapacita až 32 osob)
+  - typ: Ovčárna — 12 lůžek
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Petrova bouda ve Špindlerově Mlýně": hlavní budova 52 lůžek
+    (40 + noclehárna 12), apartmány pro ~32 osob, Ovčárna 12 lůžek — dohromady
+    kolem 96 lůžek; sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Petrova bouda ve Špindlerově Mlýně": restaurace je určena jen
+    ubytovaným hostům (NENÍ veřejně přístupná); samostatná útulna umožňuje
+    kolemjdoucím úkryt a konzumaci vlastního jídla, otevřená denně 8:00–18:00;
+    sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+overeniSluzby:
+  source: >-
+    Kudy z nudy „Petrova bouda ve Špindlerově Mlýně": wellness v suterénu, sauna
+    v Ovčárně, prostor pro pracovní setkání a workshopy; sekundární médium,
+    verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Útulna pro veřejnost denně 8:00–18:00. Restaurace jen pro ubytované hosty.
+kontakty:
+  telefon: +420 779 970 770
+  email: info@petrovyboudy.cz
+  web: https://www.petrovyboudy.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Petrova bouda ve Špindlerově Mlýně": útulna denně 8:00–18:00,
+    tel. +420 779 970 770, info@petrovyboudy.cz, petrovyboudy.cz; OSM/katalog
+    nesly doménu petrovabouda.cz — ověřit platnou. Sekundární médium,
+    verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1790
+milniky:
+  - rok: 1790
+    udalost: První zmínky (letní chata)
+  - rok: 1811
+    udalost: Johann Pittermann postavil celoročně obývanou boudu
+  - rok: 1887
+    udalost: Doložena nejstarší chráněná podoba boudy
+  - rok: 2011
+    udalost: 31. července požár zničil původní budovu
+  - rok: 2020
+    udalost: V květnu dokončena nová budova
+overeniHistorie:
+  source: >-
+    Kudy z nudy „Petrova bouda ve Špindlerově Mlýně": zmínky kolem 1790,
+    celoroční bouda 1811 (J. Pittermann), 1887 chráněná podoba, požár 31. 7. 2011,
+    nová budova květen 2020; sekundární médium, verified:false — ověřit primárně
+  verified: false
+  checked: '2026-07-22'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Novodobě obnovená bouda na hřebeni Krkonoš u polské hranice nad Špindlerovým
+  Mlýnem (kolem 1 288 m). Původní budovu zničil požár v roce 2011, nová vznikla
+  2020. Nabízí kolem 96 lůžek, wellness a veřejnou útulnu; restaurace slouží jen
+  ubytovaným. Nese turistickou známku č. 671.
+text:
+  - >-
+    Petrova bouda (Petrovy Boudy) stojí na hřebeni Krkonoš přímo u státní
+    hranice s Polskem, adresa Špindlerův Mlýn 89. Místo má kořeny kolem roku
+    1790 (letní chata) a celoročně obývanou boudu tu roku 1811 postavil Johann
+    Pittermann. Původní historickou budovu zničil 31. července 2011 požár a na
+    jejím místě byla v květnu 2020 dokončena nová, moderní bouda.
+  - >-
+    Ubytování nabízí zhruba 96 lůžek — v hlavní budově (52 lůžek vč. noclehárny),
+    ve větších i menších apartmánech a v objektu Ovčárna. Restaurace je určena
+    jen ubytovaným hostům; kolemjdoucí turisté mohou využít samostatnou útulnu
+    otevřenou denně od 8 do 18 hodin, kde je možné se ohřát a sníst vlastní
+    jídlo. K dispozici je wellness a sauna. Údaje jsou ze sekundárního zdroje
+    (Kudy z nudy) — před cestou ověřte přímo u boudy.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Petrova bouda ve Špindlerově Mlýně" (historie, kapacita,
+      útulna, kontakty); sekundární médium, verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/petrova-bouda-ve-spindlerove-mlyne
+  - popis: 'Petrovy Boudy — Wikipedie (kontext historie a přestavby)'
+    url: https://cs.wikipedia.org/wiki/Petrovy_Boudy
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/petrova-bouda.yaml (externí katalog ČR/SK,
+  jistota B) v rámci master fronty Tier 1 (známka č.671 + katalog). Data z Kudy
+  z nudy (sekundární médium) — vlastní web ze sandboxu nedostupný.
+
+  BEZ GPS — kandidát z katalogu souřadnice nenesl; doplnit z OSM (nedomýšlet).
+  Výška 1 288 m je z katalogu (jistota B), Kudy z nudy ji neuvádí — ověřit.
+
+  Typ: nastaveno „obsluhovana", ale objekt má po přestavbě 2020 charakter
+  spíš horského hotelu (apartmány, wellness, restaurace jen pro hosty) s
+  veřejnou útulnou — redakce zváží případné přeřazení na horsky-hotel.
+
+  Doména: Kudy z nudy uvádí petrovyboudy.cz, kandidát/OSM petrovabouda.cz —
+  ověřit platnou. K dotažení (DATA-04): GPS, potvrdit výšku, kapacity, provozní
+  sezónu. Hero fotka: kandidáti DATA-02. Známka č.671 — obrázek připraven
+  v data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c671-petrova-bouda.png.

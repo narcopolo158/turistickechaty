@@ -1,0 +1,143 @@
+# Chalupa Na Rozcestí — profil povýšen z kandidáta DATA-01 (OSM) po křížovém
+# ověření. Master fronta Tier 1 (známka č.13 + katalog + OSM). Data ze sekundárního
+# média Kudy z nudy (verified:false — web ze sandboxu nedostupný; ověřit primárně).
+# Splňuje klíč zařazení: bufet/restaurace přístupná veřejnosti. Vše verified:false.
+
+nazev: Chalupa Na Rozcestí
+slug: chalupa-na-rozcesti
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Stojí na trojmezí Pece pod Sněžkou, Strážného a Špindlerova Mlýna u
+      Liščího hřebenu, v 1 349 m
+    kategorie: jine
+    zdroj: Kudy z nudy „Chalupa Na Rozcestí u Liščího hřebenu v Krkonoších" (sekundární médium, verified:false)
+  - text: >-
+      Kuchyně vaří regionální speciality — kyselo, borůvkové knedlíky, couračku,
+      boršč i dršťkovou
+    kategorie: gastro
+    zdroj: Kudy z nudy „Chalupa Na Rozcestí u Liščího hřebenu v Krkonoších" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7056695
+lng: 15.6749204
+vyska: 1349
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/19921113 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); výška
+    1 349 m a poloha (trojmezí Pec pod Sněžkou / Strážné / Špindlerův Mlýn u
+    Liščího hřebenu) dle Kudy z nudy; sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Objekt poskytuje ubytování (OSM tag tourism=alpine_hut; provozovatel dle OSM
+    Zdeněk Nikl), přesná kapacita a typy pokojů z dosažitelných zdrojů neuvedeny
+    — doložit (DATA-04); verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+specialita: Kyselo, borůvkové knedlíky, couračka, boršč, dršťková
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Chalupa Na Rozcestí u Liščího hřebenu v Krkonoších": bufet/
+    restaurace přístupná veřejnosti, otevřeno po–čt 9:30–17:00, pá–so 9:30–19:00,
+    ne 9:30–17:00; speciality kyselo, borůvkové knedlíky, couračka, boršč,
+    dršťková; sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+overeniSluzby:
+  source: >-
+    Kudy z nudy: nářadí a stojan na opravu kol pro cyklisty, vosky na běžky,
+    krb se sušákem, fotografická výstava; Wi-Fi a wellness neuvedeny; sekundární
+    médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: |-
+  Bufet po–čt 9:30–17:00, pá–so 9:30–19:00, ne 9:30–17:00 (celoročně).
+kontakty:
+  telefon: +420 499 896 295
+  email: info@chalupanarozcesti.com
+  web: https://www.chalupanarozcesti.com/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Chalupa Na Rozcestí u Liščího hřebenu v Krkonoších": celoroční
+    provoz, otvírací doba bufetu, tel. +420 499 896 295 a +420 777 922 161,
+    info@chalupanarozcesti.com; OSM nesla doménu .cz — ověřit platnou.
+    Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-22'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1934
+milniky:
+  - rok: 1934
+    udalost: >-
+      Hugo Mitlöhner si pronajal pozemek od lesní správy a postavil dřevěnou
+      boudu
+overeniHistorie:
+  source: >-
+    Kudy z nudy „Chalupa Na Rozcestí u Liščího hřebenu v Krkonoších": pronájem
+    pozemku a stavba dřevěné boudy Hugem Mitlöhnerem roku 1934; sekundární
+    médium, verified:false — ověřit primárně
+  verified: false
+  checked: '2026-07-22'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Celoroční horská bouda v 1 349 m na trojmezí Pece pod Sněžkou, Strážného a
+  Špindlerova Mlýna u Liščího hřebenu, s bufetem přístupným kolemjdoucím
+  turistům a regionální kuchyní. Historie sahá k roku 1934. Nese turistickou
+  známku č. 13.
+text:
+  - >-
+    Chalupa Na Rozcestí stojí ve výšce 1 349 m n. m. u Liščího hřebenu, na
+    trojmezí Pece pod Sněžkou, Strážného a Špindlerova Mlýna. Bouda tu vznikla
+    v roce 1934, kdy si Hugo Mitlöhner pronajal pozemek od lesní správy a
+    postavil dřevěnou boudu.
+  - >-
+    Bufet je přístupný i kolemjdoucím a má otevřeno po celý rok (po–čt
+    9:30–17:00, pá–so 9:30–19:00, ne 9:30–17:00); kuchyně vaří regionální
+    speciality jako kyselo houbového kubu, borůvkové knedlíky, couračku, boršč
+    nebo dršťkovou. Pro cyklisty je připravené nářadí a stojan na opravu kol,
+    pro běžkaře vosky, uvnitř je krb se sušákem a fotografická výstava. Údaje
+    jsou ze sekundárního zdroje (Kudy z nudy) — kapacitu ubytování a aktuální
+    otvírací dobu ověřte přímo u boudy.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Chalupa Na Rozcestí u Liščího hřebenu v Krkonoších" (výška,
+      historie, bufet, otvírací doba, speciality); sekundární médium,
+      verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/chalupa-na-rozcesti-u-lisciho-hrebenu-v-krkonosich
+  - popis: OpenStreetMap (GPS objektu, provozovatel, ODbL)
+    url: https://www.openstreetmap.org/way/19921113
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/chalupa-na-rozcesti.yaml (DATA-01/OSM) v
+  rámci master fronty Tier 1 (známka č.13 + katalog ChatGPT + OSM). Data z Kudy
+  z nudy (sekundární médium) — vlastní web ze sandboxu nedostupný.
+
+  Splňuje klíč zařazení (Michal): bufet přístupný veřejnosti doložen.
+
+  Doména: Kudy z nudy uvádí chalupanarozcesti.com, OSM chalupanarozcesti.cz —
+  ověřit platnou. K dotažení (DATA-04, verified:true): kapacita a typy pokojů,
+  potvrdit otvírací dobu a kontakty. Hero fotka: kandidáti DATA-02. Známka č.13
+  — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c13-chalupa-na-rozcesti.png.
+
+  NEZTOTOŽŇOVAT s „Boudou na rozcestí Cestník" z výtahu treking.cz (session 24 to
+  nechala otevřené — nedomýšlet).

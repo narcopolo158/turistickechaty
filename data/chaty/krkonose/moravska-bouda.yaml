@@ -1,0 +1,211 @@
+# Moravská bouda — profil povýšen z kandidáta (OSM, DATA-01) po křížovém
+# ověření. Master fronta Tier 1 (známka č.1873 + OSM). Data ze sekundárních
+# médií Kudy z nudy a České hory (verified:false — ověřit primárně, DATA-04).
+# GPS z OSM (way/31126083). Vše verified:false.
+
+nazev: Moravská bouda
+slug: moravska-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      V roce 1982 se tu natáčely interiérové scény filmové komedie Sněženky a
+      machři
+    kategorie: jine
+    zdroj: Kudy z nudy „Moravská bouda ve Špindlerově Mlýně" (sekundární médium, verified:false)
+  - text: >-
+      Historie boudy sahá do první poloviny 19. století, kdy na místě stál
+      jednoduchý přístřešek
+    kategorie: stari
+    zdroj: Kudy z nudy „Moravská bouda ve Špindlerově Mlýně" (sekundární médium, verified:false)
+  - text: >-
+      Leží v Sedmidolí nad Špindlerovým Mlýnem; v zimě k ní nevede sjízdná
+      silnice a hosty i zavazadla vozí sněžný skútr nebo rolba
+    kategorie: jine
+    zdroj: >-
+      Kudy z nudy „Moravská bouda ve Špindlerově Mlýně" a České hory (archivní
+      prezentace) — sekundární média, verified:false
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7692361
+lng: 15.6067338
+vyska: 1225
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    GPS z OpenStreetMap https://www.openstreetmap.org/way/31126083 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright), stav dat
+    2026-06-12. Výška 1 225 m dle Kudy z nudy, shodně s údajem vyrytým na
+    turistické známce č.1873; adresa „Špindlerův Mlýn 90, 543 51 Špindlerův
+    Mlýn"; lokalita Sedmidolí dle Českých hor. ROZPOR: České hory (archivní
+    prezentace) uvádějí 1 220 m — do profilu vzato 1 225 m (shoda Kudy z nudy a
+    rytiny známky). Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 52
+pokoje:
+  - typ: >-
+      Dvoulůžkové až vícelůžkové pokoje se sprchovým koutem, umyvadlem a
+      televizí; WC společná na patře
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Moravská bouda ve Špindlerově Mlýně": 14 pokojů s kapacitou 52
+    lůžek, dvoulůžkové až vícelůžkové, všechny se stejným standardem — sprchový
+    kout, umyvadlo a televize, WC společná na patře. ROZPOR: České hory
+    (archivní prezentace) uvádějí 54 lůžek ve 14 pokojích — do profilu vzat údaj
+    Kudy z nudy, ověřit. Sekundární média, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: >-
+    České hory (archivní prezentace) uvádějí u boudy restauraci se salonkem,
+    kulečníkem a šipkami; Kudy z nudy stravování vůbec nepopisuje. Ani jeden
+    zdroj neříká, zda je restaurace otevřená kolemjdoucím, a otvírací dobu
+    nenese žádný — OVĚŘIT (DATA-04), je to klíč zařazení. Sekundární média,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# `wifi`, `platbaKartou`, `lyzarna` ZÁMĚRNĚ NEVYPLNĚNY — zdroje je neuvádějí.
+psi: ano
+overeniSluzby:
+  source: >-
+    České hory (archivní prezentace): pobyt se psem je možný; z vybavení dále
+    salonek s kulečníkem a šipkami, půjčování společenských her a přeprava osob
+    a zavazadel sněžným skútrem nebo rolbou. O Wi-Fi, platbě kartou ani lyžárně
+    se dosažitelné zdroje nezmiňují — pole zůstávají nevyplněná (nedomýšlet).
+    Prezentace je archivní — ověřit. Sekundární médium, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba ZÁMĚRNĚ NEVYPLNĚNA — dosažitelné zdroje ji neuvádějí.
+sezona: celoročně
+kontakty:
+  telefon: +420 604 684 140
+  email: moravska@seznam.cz
+  web: https://www.moravskabouda.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Moravská bouda ve Špindlerově Mlýně": tel. +420 604 684 140,
+    moravska@seznam.cz, web moravskabouda.cz. Celoroční provoz dle Českých hor
+    (archivní prezentace) — Kudy z nudy sezónu neuvádí, ověřit. OSM kontakty
+    nenese. Web je ze sandboxu nedostupný — neověřen. Sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: |-
+  V zimě není možné parkovat u objektu — parkuje se u Špindlerovy boudy nebo na
+  P3 u Medvědína a bouda zajišťuje přepravu osob a zavazadel sněžným skútrem či
+  rolbou (dle Českých hor, archivní prezentace, neověřeno).
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — zdroj uvádí jen „první polovina 19. století",
+# konkrétní rok nikoli. Nedomýšlet.
+milniky:
+  - udalost: >-
+      První polovina 19. století — na místě stojí jednoduchý přístřešek, z něhož
+      se vyvinula dnešní bouda
+  - udalost: >-
+      Za druhé světové války sloužila bouda i k ubytování německých vojáků; po
+      válce byla přejmenována na Moravskou boudu
+  - rok: 1982
+    udalost: >-
+      Natáčely se tu interiérové scény filmové komedie Sněženky a machři
+  - rok: 1994
+    udalost: Boudu získal současný majitel
+overeniHistorie:
+  source: >-
+    Kudy z nudy „Moravská bouda ve Špindlerově Mlýně": historie sahá do první
+    poloviny 19. století (původně jednoduchý přístřešek), za války sloužila k
+    ubytování německých vojáků, po válce přejmenována na Moravskou boudu,
+    současný majitel ji vlastní od roku 1994; roku 1982 zde vznikly interiérové
+    scény filmu Sněženky a machři. Konkrétní rok vzniku zdroj neuvádí — pole
+    `rokVzniku` vědomě nevyplněno. Sekundární médium, verified:false — ověřit
+    primárním pramenem
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda v Sedmidolí nad Špindlerovým Mlýnem (1 225 m), jejíž historie sahá do
+  první poloviny 19. století. Ubytuje 52 hostů ve čtrnácti pokojích, v zimě k ní
+  hosty vozí rolba. V roce 1982 se tu natáčely interiéry Sněženek a machrů. Nese
+  turistickou známku č. 1873.
+text:
+  - >-
+    Moravská bouda stojí ve výšce 1 225 m n. m. v Sedmidolí nad Špindlerovým
+    Mlýnem (adresa Špindlerův Mlýn 90). Historie místa sahá do první poloviny
+    19. století, kdy tu stál jednoduchý přístřešek; za druhé světové války
+    sloužila bouda i k ubytování německých vojáků a po válce dostala dnešní
+    jméno. Současný majitel ji vlastní od roku 1994.
+  - >-
+    Ubytování nabízí 52 lůžek ve čtrnácti pokojích — od dvoulůžkových po
+    vícelůžkové, všechny ve stejném standardu se sprchovým koutem, umyvadlem a
+    televizí; WC jsou společná na patře. K vybavení patří salonek s kulečníkem a
+    šipkami, pobyt se psem je možný.
+  - >-
+    V zimě se k boudě nedá dojet autem: parkuje se u Špindlerovy boudy nebo na
+    parkovišti P3 u Medvědína a hosty i se zavazadly doveze sněžný skútr nebo
+    rolba. V roce 1982 se tu natáčely interiérové scény filmové komedie Sněženky
+    a machři.
+  - >-
+    Údaje pocházejí ze sekundárních zdrojů, z toho prezentace na Českých horách
+    je archivní — kapacitu, ceny i to, zda je restaurace otevřená kolemjdoucím,
+    ověřte přímo u boudy.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Moravská bouda ve Špindlerově Mlýně" (výška, adresa,
+      kapacita a pokoje, kontakty, historie, natáčení Sněženek a machrů);
+      sekundární médium, verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/moravska-bouda-ve-spindlerove-mlyne
+  - popis: >-
+      České hory — „Moravská Bouda" (lokalita Sedmidolí, restaurace, celoroční
+      provoz, zimní přístup rolbou, pes); prezentace je archivní, sekundární
+      médium, verified:false
+    url: https://www.ceskehory.cz/ubytovani/moravska-bouda-spindleruv-mlyn.html
+  - popis: >-
+      OpenStreetMap way/31126083 — GPS; data © přispěvatelé OpenStreetMap,
+      ODbL 1.0, stav dat 2026-06-12, verified:false
+    url: https://www.openstreetmap.org/way/31126083
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/moravska-bouda.yaml (OSM way/31126083,
+  DATA-01) v rámci master fronty Tier 1 (známka č.1873 + OSM). Kandidát čekal na
+  „otevření webu" — místo toho doloženo přes Kudy z nudy a České hory; vlastní
+  web moravskabouda.cz zůstává ze sandboxu nedostupný.
+
+  Zaznamenané rozpory k dořešení při DATA-04: (1) výška 1 225 m (Kudy z nudy +
+  rytina známky č.1873) vs. 1 220 m (České hory, archiv) — vzato 1 225;
+  (2) kapacita 52 lůžek ve 14 pokojích (Kudy z nudy) vs. 54 lůžek ve 14 pokojích
+  (České hory, archiv) — vzato 52.
+
+  ⚠ Klíč zařazení — SLABÉ DOLOŽENÍ: restauraci u boudy uvádějí jen České hory, a
+  to v archivní prezentaci; Kudy z nudy stravování vůbec nepopisuje a otvírací
+  dobu nenese ani jeden zdroj. Veřejná přístupnost občerstvení tedy zatím NENÍ
+  doložena — pokud se při DATA-04 ukáže, že bouda vaří jen ubytovaným, objekt
+  Michalův klíč nesplňuje a profil je třeba přehodnotit.
+
+  rokVzniku vědomě NEvyplněn — zdroj má jen „první polovina 19. století"; do
+  `milniky` proto zapsán milník bez roku (pole `rok` není povinné, precedens:
+  tetrevi-boudy).
+
+  Wi-Fi, platba kartou a lyžárna: zdroje neuvádějí — pole vědomě nevyplněna.
+
+  K dotažení (DATA-04, verified:true): veřejná přístupnost a otvírací doba
+  restaurace (priorita — klíč zařazení), potvrdit výšku a kapacitu, rok vzniku,
+  sezónní režim. Hero fotka: kandidáti DATA-02. Známka č.1873 — obrázek
+  připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c1873-moravska-bouda.png.

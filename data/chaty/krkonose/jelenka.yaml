@@ -1,0 +1,184 @@
+# Jelenka — profil povýšen z kandidáta DATA-01 (OSM) po křížovém ověření.
+# Master fronta Tier 1 (známka č.1367 + katalog + OSM). Data doplněna ze
+# sekundárních médií Kudy z nudy a malaupa.cz (verified:false — vlastní web
+# jelenka.eu je ze sandboxu nedostupný; ověřit primárně, DATA-04).
+# Vše verified:false = převzato ze zdroje, neověřeno námi.
+
+nazev: Jelenka
+slug: jelenka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+aliasy:
+  - nazev: Horská bouda Jelenka
+    poznamka: úřední tvar názvu (OSM official_name; shodně turistická známka č. 1367)
+  - nazev: Emmaquellenbaude
+    poznamka: německý název dle OSM (name:de)
+zajimavosti:
+  - text: >-
+      Stojí na hlavním krkonošském hřebeni mezi Pomezními boudami a Sněžkou, na
+      východním svahu Svorové hory
+    kategorie: jine
+    zdroj: Kudy z nudy „Horská turistická bouda Jelenka" (sekundární médium, verified:false)
+  - text: >-
+      Ubytuje 26 hostů jen ve čtyřech pokojích — dva čtyřlůžkové, šestilůžkový a
+      dvanáctilůžkový; spát se dá i ve vlastním spacáku
+    kategorie: velikost
+    zdroj: Kudy z nudy „Horská turistická bouda Jelenka" (sekundární médium, verified:false)
+  - text: >-
+      K boudě se nedá dojet autem (ochrana přírody) — nejbližší parkoviště jsou
+      2–4 km daleko
+    kategorie: jine
+    zdroj: Kudy z nudy „Horská turistická bouda Jelenka" (sekundární médium, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7419165
+lng: 15.7777974
+vyska: 1260
+obec: Malá Úpa
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/108114544 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); výška
+    1 260 m dle OSM (tag ele) i malaupa.cz, Kudy z nudy uvádí 1 263 m (rozpor
+    3 m — ponechána shoda dvou zdrojů, ověřit); adresa Horní Malá Úpa 122,
+    542 27 Malá Úpa a poloha na hřebeni mezi Pomezními boudami a Sněžkou dle
+    Kudy z nudy. Sekundární média, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 26
+pokoje:
+  - typ: Čtyřlůžkový pokoj
+    luzek: 4
+  - typ: Čtyřlůžkový pokoj
+    luzek: 4
+  - typ: Šestilůžkový pokoj
+    luzek: 6
+  - typ: Dvanáctilůžkový pokoj
+    luzek: 12
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Horská turistická bouda Jelenka": 26 hostů ve 4 pokojích
+    (2× čtyřlůžkový, 1× šestilůžkový, 1× dvanáctilůžkový), teplá a studená voda
+    v pokojích, společné sociální zařízení se sprchou na patře, možnost spát ve
+    vlastním spacáku. POZOR na rozpor: malaupa.cz uvádí „sociální zařízení na
+    pokoji" — ověřit primárně. Sekundární média, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: null
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Horská turistická bouda Jelenka": restaurace nabízí teplá i
+    studená jídla, točené pivo a limonádu; malaupa.cz uvádí, že bouda leží na
+    křižovatce turistických cest a stravování je k dispozici; OSM nese otvírací
+    dobu Mo–Su 08:00–18:00 (tag, neověřeno). Výslovný údaj, že je restaurace
+    otevřená i kolemjdoucím, žádný z dosažitelných zdrojů neuvádí — ověřit
+    (DATA-04). Sekundární média + OSM tag, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+psi: ano
+overeniSluzby:
+  source: >-
+    malaupa.cz: domácí mazlíčci povoleni. Wi-Fi je ROZPORNÁ — OSM nese
+    internet_access=wlan s internet_access:fee=no, malaupa.cz naopak uvádí, že
+    wifi není k dispozici; pole `wifi` proto zůstává nevyplněné (nedomýšlet),
+    ověřit primárně. Sekundární médium + OSM tag, verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: |-
+  Dle OSM tagu (neověřeno) po–ne 8:00–18:00; Kudy z nudy uvádí celoroční provoz
+  bez konkrétní otvírací doby — ověřit přímo u boudy.
+kontakty:
+  telefon: +420 499 895 105
+  email: chata.jelenka@seznam.cz
+  web: http://www.jelenka.eu/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Horská turistická bouda Jelenka": celoroční provoz, tel.
+    +420 499 895 105 a +420 608 300 727, chata.jelenka@seznam.cz, jelenka.eu;
+    malaupa.cz shodně a navíc uvádí majitele Pavla Hofmana; otvírací doba
+    po–ne 8:00–18:00 je OSM tag (way/108114544), neověřeno. Web boudy je ze
+    sandboxu nedostupný — ověřit primárně (DATA-04). Sekundární média,
+    verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: |-
+  Autem k boudě nelze — oblast je chráněná. Nejbližší parkoviště jsou ve
+  vzdálenosti 2–4 km (dle Kudy z nudy, neověřeno).
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — žádný z dosažitelných zdrojů rok neuvádí
+# (Wikipedie je ze sandboxu jen cache-only). Nedomýšlet.
+overeniHistorie:
+  source: >-
+    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
+    nudy zmiňuje jen novou rekonstrukci bez datace, malaupa.cz historii
+    neuvádí, cs.wikipedia.org je ze sandboxu nedostupná). Doplnit při primárním
+    ověření (DATA-04) — nedomýšleno. verified:false
+  verified: false
+  checked: '2026-07-24'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Malá hřebenová bouda ve výšce 1 260 m mezi Pomezními boudami a Sněžkou, na
+  východním svahu Svorové hory. Ubytuje 26 hostů ve čtyřech pokojích, má
+  restauraci s teplou i studenou kuchyní a stojí na křižovatce turistických
+  cest. Autem se k ní nedostanete. Nese turistickou známku č. 1367.
+text:
+  - >-
+    Jelenka (úředně Horská bouda Jelenka) stojí na hlavním krkonošském hřebeni
+    ve výšce 1 260 m n. m., mezi Pomezními boudami a Sněžkou na východním svahu
+    Svorové hory; adresa Horní Malá Úpa 122. Leží na křižovatce turistických
+    cest a k boudě se nedá dojet autem — oblast je chráněná a nejbližší
+    parkoviště jsou dva až čtyři kilometry daleko.
+  - >-
+    Ubytování je komorní: 26 hostů ve čtyřech pokojích (dva čtyřlůžkové, jeden
+    šestilůžkový a jeden dvanáctilůžkový), v pokojích teplá a studená voda,
+    přenocovat lze i ve vlastním spacáku. Restaurace nabízí teplá i studená
+    jídla, točené pivo a limonádu. Údaje pocházejí ze sekundárních zdrojů (Kudy
+    z nudy, malaupa.cz) — sociální zařízení, wifi i otvírací dobu restaurace je
+    vhodné ověřit přímo u boudy, zdroje se v nich rozcházejí.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Horská turistická bouda Jelenka" (výška, adresa, kapacita a
+      pokoje, restaurace, kontakty, parkování); sekundární médium,
+      verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/horska-turisticka-bouda-jelenka
+  - popis: >-
+      Malá Úpa — oficiální web obce, stránka Jelenka (výška, poloha, majitel,
+      kontakty, mazlíčci, wifi); sekundární médium, verified:false
+    url: https://www.malaupa.cz/jelenka/
+  - popis: OpenStreetMap (GPS objektu, výška, otvírací doba, ODbL)
+    url: https://www.openstreetmap.org/way/108114544
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/jelenka.yaml (DATA-01/OSM) v rámci master
+  fronty Tier 1 (známka č.1367 + katalog ChatGPT + OSM). Vlastní web jelenka.eu
+  je ze sandboxu nedostupný (PROVENANCE/timeout, stejně jako v session 22 i
+  při DATA-03).
+
+  Zaznamenané rozpory k dořešení při DATA-04: (1) výška 1 260 m (OSM ele +
+  malaupa.cz) vs. 1 263 m (Kudy z nudy) — ponechána shoda dvou zdrojů;
+  (2) sociální zařízení společné na patře (Kudy z nudy) vs. na pokoji
+  (malaupa.cz); (3) Wi-Fi je (OSM internet_access=wlan, zdarma) vs. není
+  (malaupa.cz) — pole `wifi` proto nevyplněno.
+
+  K dotažení (DATA-04, verified:true): rok vzniku a historie (žádný dosažitelný
+  zdroj je nenese — Wikipedie ze sandboxu cache-only), otvírací doba a veřejná
+  přístupnost restaurace, potvrdit kapacitu. Hero fotka: kandidáti DATA-02.
+  Známka č.1367 — obrázek připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c1367-horska-bouda-jelenka.png.

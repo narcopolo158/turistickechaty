@@ -1,0 +1,204 @@
+# Portášky — profil povýšen z kandidáta (externí katalog ČR/SK, jistota B) po
+# křížovém ověření. Master fronta Tier 1 (známka č.675 + katalog). Data ze
+# sekundárních médií Kudy z nudy a České hory (verified:false — ověřit primárně,
+# DATA-04). GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, v OSM exportu objekt není
+# — nedomýšlet). VÝŠKA ZÁMĚRNĚ NEVYPLNĚNA — rozpor 1 060 m (katalog) vs. 1 050 m
+# (rytina známky č.675), ani jeden dosažitelný web ji neuvádí. Vše verified:false.
+
+nazev: Portášky
+slug: portasky
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Stojí přímo u horní stanice lanovky z Velké Úpy, na trase interaktivní
+      naučné stezky Pecka
+    kategorie: jine
+    zdroj: Kudy z nudy „Chata Portášky ve Velké Úpě" (sekundární médium, verified:false)
+  - text: >-
+      Kromě klasických pokojů nabízí i spaní ve spacáku nebo v Haciendě
+      postavené ve větvích stromů
+    kategorie: jine
+    zdroj: Kudy z nudy „Chata Portášky ve Velké Úpě" (sekundární médium, verified:false)
+  - text: >-
+      Kuchyně kombinuje českou a italskou kuchyni; restaurace s barem pojme
+      55 hostů, jídelna dalších 50
+    kategorie: gastro
+    zdroj: >-
+      Kudy z nudy „Chata Portášky ve Velké Úpě" a České hory (archivní
+      prezentace) — sekundární média, verified:false
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
+# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+# `vyska` ZÁMĚRNĚ NEVYPLNĚNA — viz rozpor v overeniLokace.
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    Adresa „Velká Úpa 110, 542 21 Pec pod Sněžkou" a poloha u horní stanice
+    lanovky z Velké Úpy, u interaktivní stezky Pecka, dle Kudy z nudy;
+    České hory (archivní prezentace) uvádějí shodně polohu u horní stanice
+    lanovky. ROZPOR VE VÝŠCE: externí katalog uvádí 1 060 m, rytina na
+    turistické známce č.675 nese 1 050 m; ani Kudy z nudy, ani České hory výšku
+    neuvádějí, takže žádná varianta není doložena druhým nezávislým zdrojem —
+    pole `vyska` proto vědomě NEVYPLNĚNO (nedomýšlet). GPS nedoložena — doplnit
+    z OSM. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 90
+pokoje:
+  - typ: >-
+      Nově zrekonstruované pokoje s vlastní koupelnou a toaletou
+  - typ: >-
+      Pokoje třídy klasik se společným sociálním zařízením
+  - typ: >-
+      Spaní ve spacáku, v sezóně též v Haciendě ve větvích stromů
+overeniNocleh:
+  source: >-
+    Kudy z nudy „Chata Portášky ve Velké Úpě": nově zrekonstruované pokoje s
+    vlastní koupelnou a toaletou i pokoje třídy klasik se společným sociálním
+    zařízením, dále spaní ve spacáku anebo „v Haciendě ve větvích". Kapacitu
+    Kudy z nudy neuvádí; České hory (archivní prezentace) uvádějí „ubytovací
+    kapacita 80–90 osob" — do profilu vzata horní hranice 90, protože pole nese
+    jediné číslo; přesné číslo OVĚŘIT. Sekundární média, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: >-
+  Česká a italská kuchyně (dle Českých hor, archivní prezentace, neověřeno)
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy „Chata Portášky ve Velké Úpě" uvádí u restaurace otvírací dobu
+    „pondělí – neděle 10:00 – 23:00" a celoroční provoz — veřejně zveřejněná
+    denní otvírací doba je v této dávce nejsilnějším dokladem Michalova klíče
+    (občerstvení otevřené i kolemjdoucím). České hory (archivní prezentace)
+    doplňují restauraci s barem pro 55 hostů a jídelnu pro 50 hostů, českou a
+    italskou kuchyni. Sekundární média, verified:false — ověřit primárně
+  verified: false
+  checked: '2026-07-25'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# `wifi`, `platbaKartou`, `psi`, `lyzarna` ZÁMĚRNĚ NEVYPLNĚNY — zdroje je
+# neuvádějí.
+overeniSluzby:
+  source: >-
+    Kudy z nudy „Chata Portášky ve Velké Úpě": sauna s bazénem a vířivka.
+    O Wi-Fi, platbě kartou, psech ani lyžárně se dosažitelné zdroje nezmiňují —
+    pole zůstávají nevyplněná (nedomýšlet), doplnit při primárním ověření.
+    Sekundární média, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: |-
+  Restaurace pondělí–neděle 10:00–23:00 (dle Kudy z nudy, neověřeno).
+kontakty:
+  telefon: +420 608 901 390
+  email: portasky@portasky.cz
+  web: https://www.portasky.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy „Chata Portášky ve Velké Úpě": restaurace pondělí – neděle
+    10:00 – 23:00, provoz celoročně; tel. +420 608 901 390 a +420 602 313 898
+    (do profilu vzato první číslo, pole nese jediný telefon),
+    portasky@portasky.cz, web portasky.cz — shodně s doménou v externím
+    katalogu. Vlastní web se ze sandboxu nepodařilo načíst — neověřen.
+    Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: |-
+  V létě lze podle archivní prezentace na Českých horách parkovat přímo u
+  chaty; v zimě se k ní hosté dostanou lanovkou z Velké Úpy (jezdí do 17:00),
+  případně rolbou či skútrem po domluvě (neověřeno).
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — dosažitelné zdroje historii neuvádějí.
+overeniHistorie:
+  source: >-
+    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
+    nudy ani České hory historii neuvádějí, krkonose.eu a cs.wikipedia.org jsou
+    ze sandboxu nedostupné, vlastní web se nepodařilo načíst). Doplnit při
+    primárním ověření (DATA-04) — nedomýšleno. verified:false
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata u horní stanice lanovky z Velké Úpy nad Pecí pod Sněžkou.
+  Restaurace s barem má otevřeno denně do jedenácti večer, spát se dá v
+  rekonstruovaných pokojích, ve spacáku i v Haciendě ve větvích stromů. K
+  vybavení patří sauna s bazénem a vířivka. Nese turistickou známku č. 675.
+text:
+  - >-
+    Chata Portášky (Velká Úpa 110, Pec pod Sněžkou) stojí přímo u horní stanice
+    lanovky z Velké Úpy, na trase interaktivní naučné stezky Pecka. Lanovka z
+    ní dělá jednu z nejsnáze dostupných bud v okolí Pece — i s dětmi nebo se
+    zavazadly.
+  - >-
+    Restaurace má podle Kudy z nudy otevřeno každý den od 10 do 23 hodin a
+    chata funguje celoročně; podle archivní prezentace na Českých horách pojme
+    restaurace s barem 55 hostů a jídelna dalších 50 a kuchyně kombinuje česká
+    a italská jídla.
+  - >-
+    Ubytovat se dá v nově zrekonstruovaných pokojích s vlastní koupelnou a
+    toaletou i v pokojích třídy klasik se společným sociálním zařízením; kdo
+    chce levněji nebo dobrodružněji, může přespat ve spacáku, případně v
+    Haciendě postavené ve větvích stromů. K dispozici je sauna s bazénem a
+    vířivka.
+  - >-
+    Údaje pocházejí ze sekundárních zdrojů, z toho prezentace na Českých horách
+    je archivní. Nadmořskou výšku uvádějí prameny rozdílně (1 050 m na
+    turistické známce, 1 060 m v katalogu), proto ji zde zatím neuvádíme;
+    kapacitu, ceny i otvírací dobu ověřte přímo u chaty.
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Chata Portášky ve Velké Úpě" (adresa, poloha u lanovky,
+      typy ubytování, restaurace a otvírací doba, sauna s bazénem a vířivka,
+      kontakty); sekundární médium, verified:false, ověřit primárně
+    url: https://www.kudyznudy.cz/aktivity/chata-portasky-ve-velke-upe
+  - popis: >-
+      České hory — „Chata Portášky" (kapacita 80–90 osob, restaurace s barem a
+      jídelna, česká a italská kuchyně, parkování a zimní přístup); prezentace
+      je archivní, sekundární médium, verified:false
+    url: https://www.ceskehory.cz/ubytovani/chata-portasky-velka-upa.html
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/portasky.yaml (externí katalog ČR/SK,
+  jistota B) v rámci master fronty Tier 1 (známka č.675 + katalog).
+
+  BEZ GPS — katalog souřadnice nenese a objekt není ani v OSM exportu DATA-01;
+  doplnit z OSM přes Actions nebo ručně (nedomýšlet).
+
+  ⚠ VÝŠKA VĚDOMĚ NEVYPLNĚNA: katalog nesl 1 060 m, rytina známky č.675 nese
+  1 050 m a ani Kudy z nudy, ani České hory výšku neuvádějí — žádná varianta
+  tedy nemá druhý nezávislý doklad. Raději prázdné pole než tipovaná hodnota;
+  doplnit při DATA-04 (mapa/primární ověření). Je to jediný profil dávky bez
+  výšky.
+
+  Klíč zařazení — DOLOŽENO NEJSILNĚJI Z DÁVKY: Kudy z nudy zveřejňuje otvírací
+  dobu restaurace „pondělí – neděle 10:00 – 23:00" a celoroční provoz, což
+  odpovídá podniku otevřenému veřejnosti, ne jen ubytovaným. Přesto ověřit.
+
+  Kapacita: České hory (archiv) uvádějí rozmezí „80–90 osob"; pole nese jediné
+  číslo, vzato 90 a rozmezí zapsáno v overeniNocleh — ověřit přesné číslo.
+  Telefon: zdroj má dvě čísla (+420 608 901 390 a +420 602 313 898), pole nese
+  jediné — vzato první.
+
+  Wi-Fi, platba kartou, psi a lyžárna: zdroje neuvádějí — pole vědomě
+  nevyplněna. Historie a rok vzniku: nedoloženy.
+
+  K dotažení (DATA-04, verified:true): GPS, VÝŠKA (priorita), přesná kapacita,
+  potvrdit otvírací dobu a druhý telefon, historie a rok vzniku, provozní režim
+  lanovky v zimě. Hero fotka: kandidáti DATA-02. Známka č.675 — obrázek
+  připraven v
+  data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c675-portasky.png.
