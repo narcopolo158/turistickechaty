@@ -11,8 +11,8 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 
 ## Souhrn
 
-- **Publikováno:** 39
-- **Kandidáti k doplnění:** 45 — z toho Tier 1 (známka + katalog) 1, Tier 2 (jen známka) 3, Tier 3 (jen katalog) 7, Tier 4 (jen OSM) 34
+- **Publikováno:** 42
+- **Kandidáti k doplnění:** 42 — z toho Tier 1 (známka + katalog) 1, Tier 2 (jen známka) 2, Tier 3 (jen katalog) 5, Tier 4 (jen OSM) 34
 - **Vyřazeno** (nezakládat): 10
 - Objektů se známkou: 35 · v ChatGPT katalogu: 41 · katalogových Krkonoš celkem: 42
 
@@ -23,11 +23,11 @@ Katalog **nemá 4 boudy**, které jsou ve známkové sadě (a jednu z nich už m
 | č. známky | bouda | u nás |
 |---|---|---|
 | 14 | Chata Rozhled | kandidát |
-| 393 | Vrbatova bouda | kandidát |
+| 393 | Vrbatova bouda | **publikováno 25. 7. 2026** |
 | 1274 | Medvědí bouda | kandidát |
 | 1347 | Tetřeví Boudy | publikováno |
 
-Navíc **6 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorská bouda, Horská chata Krakonoš, Lovecká chata, Tetřeví Boudy, Vebrovy boudy. → katalog je dobrý vodicí základ, ale ne úplný; křížit se známkami a OSM.
+Navíc **7 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorská bouda, Horská chata Krakonoš, Lovecká chata, Tetřeví Boudy, Vebrovy boudy, Vrbatova bouda. → katalog je dobrý vodicí základ, ale ne úplný; křížit se známkami a OSM.
 
 ## Fronta k doplnění — kandidáti dle síly signálu
 
@@ -43,7 +43,6 @@ Navíc **6 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 |---|---|---|---|---|
 | 🇨🇿 Chata Rozhled | č.14 | — | — | obsluhovana |
 | 🇨🇿 Medvědí bouda | č.1274 | — | — | obsluhovana |
-| 🇨🇿 Vrbatova bouda | č.393 | — | — | obsluhovana |
 
 ### Tier 3 — jen katalog (bez známky)
 
@@ -52,10 +51,8 @@ Navíc **6 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 | 🇨🇿 Chata Pod Studničnou | — | ✓ 890 m | 890 m | — |
 | 🇨🇿 Erlebachova bouda | — | ✓ 1150 m | 1150 m | — |
 | 🇨🇿 Hrnčířské boudy | — | ✓ 1150 m | 1150 m | — |
-| 🇵🇱 Kochanówka | — | ✓ 510 m | 510 m | obsluhovana |
 | 🇨🇿 Pražská bouda | — | ✓ 1115 m | 1115 m | — |
 | 🇨🇿 Raisova chata na Zvičině | — | ✓ 671 m | 671 m | — |
-| 🇨🇿 Černá bouda | — | ✓ 1260 m | 1260 m | — |
 
 ### Tier 4 — jen OSM (bez známky i katalogu — nejtenčí signál, ověřit existenci/provoz)
 
@@ -96,7 +93,7 @@ Navíc **6 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 | 🇨🇿 Zákoutí | — | — | — | obsluhovana |
 | 🇨🇿 Žalý | — | — | — | obsluhovana |
 
-## Publikováno na webu (23)
+## Publikováno na webu (42)
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |
 |---|---|---|---|---|
@@ -104,6 +101,7 @@ Navíc **6 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 | 🇨🇿 Bouda Klínovka | č.3092 📷 | ✓ 1227 m | 1227 m | obsluhovana |
 | 🇨🇿 Bouda Růžohorky | č.75 📷 | ✓ 1250 m | 1280 m | obsluhovana |
 | 🇨🇿 Brádlerovy boudy | č.394 📷 | ✓ 1156 m | 1156 m | obsluhovana |
+| 🇨🇿 Černá bouda | — | ✓ 1260 m | 1260 m | horsky-hotel |
 | 🇨🇿 Chalupa Na Rozcestí | č.13 📷 | ✓ 1345 m | 1349 m | obsluhovana |
 | 🇨🇿 Chata Dvoračky | č.22 📷 | ✓ 1140 m | 1140 m | obsluhovana |
 | 🇨🇿 Chata Rezek | č.19 📷 | ✓ 880 m | 880 m | obsluhovana |
@@ -114,6 +112,7 @@ Navíc **6 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 | 🇨🇿 Horská chata Krakonoš | — | — | 1127 m | obsluhovana |
 | 🇨🇿 Hotel Špindlerova bouda | č.1889 📷 | ✓ 1208 m | 1208 m | horsky-hotel |
 | 🇨🇿 Jelenka | č.1367 📷 | ✓ 1260 m | 1260 m | obsluhovana |
+| 🇵🇱 Kochanówka | — | ✓ 510 m | 510 m | obsluhovana |
 | 🇨🇿 Kolínská bouda | č.1719 📷 | ✓ 1117 m | 1117 m | horsky-hotel |
 | 🇨🇿 Labská bouda | č.74 📷 | ✓ 1340 m | 1340 m | obsluhovana |
 | 🇨🇿 Lesní bouda | — | ✓ 1102 m | 1102 m | obsluhovana |
@@ -138,6 +137,7 @@ Navíc **6 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 | 🇨🇿 Tetřeví Boudy | č.1347 📷 | — | 1030 m | horsky-hotel |
 | 🇨🇿 Vebrovy boudy | — | — | 1100 m | horsky-hotel |
 | 🇨🇿 Vosecká bouda | č.24 📷 | ✓ 1260 m | 1260 m | obsluhovana |
+| 🇨🇿 Vrbatova bouda | č.393 📷 | — | 1400 m | obsluhovana |
 | 🇨🇿 Výrovka | č.12 📷 | ✓ 1356 m | 1368 m | obsluhovana |
 
 ## Nové tipy z ChatGPT katalogu (nemáme ani jako kandidáta)
