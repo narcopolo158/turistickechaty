@@ -38,15 +38,39 @@ e-maily, telefony, ceny (mění se), GPS, čísla známek, názvy polí ani inte
 terminologie. **Výstup není seznam vad.** Část zásahů jsou trvalé a známé falešné
 poplachy: doména v prvním pádě jako jméno pramene („server Krkonose.eu") je
 doložený domácí styl, „redakce" v závěrečném odstavci taky, a OpenStreetMap se
-uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **135 zásahů** —
+uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **123 zásahů** —
 smysl má sledovat, jestli číslo neskočí, ne jestli je nula.
 
+Bylo jich 135 a rozdíl je čistě náhodou malý: 25. 7. 2026 **odpadlo 17 zásahů**
+třídy „číslo známky" (viz níže) a **pět naopak přibylo**, když se do prózy tří
+profilů doplnilo připsání OpenStreetMap, které žádá licence ODbL. Rozdíl −12 je
+tedy součet dvou pohybů opačným směrem, ne jeden úbytek — hezká ukázka toho,
+proč se u tohohle skriptu sleduje **skok**, a ne hodnota sama.
+
 **`audit-mech.ts` — seznam k posouzení.** Strojově chytatelná část auditní
-taxonomie z 25. 7. 2026, pět kontrol: **A** próza tvrdí hodnotu pole, které je
+taxonomie z 25. 7. 2026, šest kontrol: **A** próza tvrdí hodnotu pole, které je
 v datech záměrně prázdné · **B** blok `overeni` si žádá odklad publikace, ale
 profil je publikovaný · **C** doména v próze je skloňovaná varianta doložené
 domény · **D** superlativ ve větě bez připsání · **E** letopočet v próze, který
-se nikde jinde v souboru nevyskytuje.
+se nikde jinde v souboru nevyskytuje · **F** próza mluví o turistické známce
+nebo vizitce, ale `zdroje` katalog vydavatele vůbec nevedou.
+
+## Proč přibyla kontrola F
+
+Ruční audit 25. 7. 2026 našel v perexu **šesti z osmi** čtených profilů větu
+„Nese turistickou známku č. X." — bez jediného záznamu v `zdroje`. Číslo přitom
+stálo jen v `interniPoznamky`, tedy tam, kam čtenář nevidí: veřejně to bylo
+tvrzení bez pramene, a navíc zbytečné, protože číslo i odkaz vykresluje
+sourcovaná karta „Sběratelská místa". Kontrola F tuhle vadu popsala pravidlem
+a hned našla **dalších jedenáct profilů — dohromady 17 ze 42**. Jeden z nich by
+hledání té konkrétní věty minulo: Chata Rezek nesla stejnou vadu v jiném hávu
+(„je zároveň známkovým místem (známka č. 19)"). Přesně proto se kontrola ptá na
+sběratelské tvrzení obecně, ne na jednu formulaci.
+
+Přijaté pravidlo: holá věta z perexu pryč všude; záznam v `zdroje` se přidává
+tam, kde se próza nebo blok `overeni*` o známku fakticky opírá (výška vyrytá na
+rytině, rozpor mezi rytinou a prameny, vazba známky na osadu místo na objekt).
+Obojí je teď v korpusu hotové a kontrola hlásí nulu.
 
 ## Proč jsou v kontrolách A a D ty výjimky
 

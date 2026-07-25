@@ -13,8 +13,8 @@ stav: v-provozu
 oblast: krkonose
 zajimavosti:
   - text: >-
-      Stojí přímo u horní stanice lanovky z Velké Úpy, na trase interaktivní
-      naučné stezky Pecka
+      Stojí přímo u horní stanice lanovky z Velké Úpy, poblíž interaktivní
+      stezky Pecka
     kategorie: jine
     zdroj: Kudy z nudy „Chata Portášky ve Velké Úpě" (sekundární médium, verified:false)
   - text: >-
@@ -57,7 +57,7 @@ pokoje:
   - typ: >-
       Pokoje třídy klasik se společným sociálním zařízením
   - typ: >-
-      Spaní ve spacáku, v sezóně též v Haciendě ve větvích stromů
+      Spaní ve spacáku, též v Haciendě ve větvích stromů
 overeniNocleh:
   source: >-
     Kudy z nudy „Chata Portášky ve Velké Úpě": nově zrekonstruované pokoje s
@@ -136,15 +136,16 @@ overeniHistorie:
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Horská chata u horní stanice lanovky z Velké Úpy nad Pecí pod Sněžkou.
-  Restaurace s barem má otevřeno denně do jedenácti večer, spát se dá v
-  rekonstruovaných pokojích, ve spacáku i v Haciendě ve větvích stromů. K
-  vybavení patří sauna s bazénem a vířivka. Nese turistickou známku č. 675.
+  Podle Kudy z nudy má restaurace otevřeno denně do jedenácti večer a spát
+  se dá v rekonstruovaných pokojích, ve spacáku i v Haciendě ve větvích
+  stromů; k vybavení patří sauna s bazénem a vířivka. Údaje pocházejí ze
+  sekundárních médií a ověřené zatím nejsou.
 text:
   - >-
     Chata Portášky stojí nad Velkou Úpou v katastru Pece pod Sněžkou; adresa
     zní Velká Úpa 110. Kudy z nudy i archivní prezentace na Českých horách ji
     shodně umisťují přímo k horní stanici lanovky z Velké Úpy a podle Kudy
-    z nudy vede kolem chaty interaktivní naučná stezka Pecka.
+    z nudy vede kolem chaty interaktivní stezka Pecka.
   - >-
     Nadmořskou výšku na téhle stránce záměrně nenajdete. Externí katalog, ze
     kterého profil vychází, uvádí 1 060 metrů, zatímco rytina na turistické
@@ -161,14 +162,14 @@ text:
     každý den od deseti dopoledne do jedenácti večer. Archivní prezentace na
     Českých horách k tomu doplňuje, že restaurace s barem pojme pětapadesát
     hostů a jídelna dalších padesát a že kuchyně kombinuje česká a italská
-    jídla. Zveřejněná denní otvírací doba je zároveň jediný doklad, který
+    jídla. Zveřejněná denní otvírací doba je zároveň nejsilnější doklad, který
     u téhle chaty mluví o občerstvení otevřeném i lidem, kteří tu nespí;
     potvrzení přímo od provozovatele zatím nemáme.
   - >-
     Spát se dá několika způsoby. Kudy z nudy popisuje nově zrekonstruované
     pokoje s vlastní koupelnou a toaletou i pokoje třídy klasik se společným
-    sociálním zařízením a k tomu možnost přespat ve spacáku nebo v sezóně
-    v Haciendě postavené ve větvích stromů. Kapacitu Kudy z nudy neuvádí,
+    sociálním zařízením a k tomu možnost přespat ve spacáku nebo v Haciendě
+    postavené ve větvích stromů. Kapacitu Kudy z nudy neuvádí,
     archivní prezentace na Českých horách mluví o osmdesáti až devadesáti
     osobách. K vybavení patří podle Kudy z nudy sauna s bazénem a vířivka;
     o Wi-Fi, platbě kartou, psech ani lyžárně se ani jeden z pramenů nezmiňuje.
@@ -195,6 +196,12 @@ zdroje:
       jídelna, česká a italská kuchyně, parkování a zimní přístup); prezentace
       je archivní, sekundární médium, verified:false
     url: https://www.ceskehory.cz/ubytovani/chata-portasky-velka-upa.html
+  - popis: >-
+      Katalog turistických známek (Turistické známky s.r.o.) — známka č. 675
+      „Portášky, Krkonoše", vedená v oficiálním seznamu vydavatele; číslo
+      ověřené z fyzické známky, rytina nese výšku 1 050 m. Odkaz na detail je
+      sestaven podle vzoru webu a klikem neověřený. verified:false
+    url: https://www.turisticke-znamky.cz/znamky/portasky-c675
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/portasky.yaml (externí katalog ČR/SK,
   jistota B) v rámci master fronty Tier 1 (známka č.675 + katalog).

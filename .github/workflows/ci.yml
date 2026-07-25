@@ -36,5 +36,5 @@ jobs:
       # výsledek verdikt. Sken zakázaných vzorů a mechanický audit jsou
       # seznamy k posouzení, ne seznamy vad, takže build neshazují; jejich
       # výstup je vidět v logu a smysl má sledovat, jestli počty neskočí
-      # (ustálený stav: 135 zásahů skenu, 0 zásahů auditu).
+      # (ustálený stav: 123 zásahů skenu, 0 zásahů auditu).
       - run: npm run kontrola

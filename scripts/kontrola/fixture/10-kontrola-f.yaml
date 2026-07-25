@@ -1,0 +1,17 @@
+slug: 10-kontrola-f
+nazev: Fixtura na sberatelske tvrzeni bez zaznamu v zdroje
+typ: obsluhovana
+obec: Harrachov
+stav: v-provozu
+kapacita: 20
+vyska: 900
+perex: >-
+  Tahle poznámka je past na hranici slova: uvnitř slova „poznámka" stojí vzor,
+  který kontrola chytit nesmí.
+text:
+  - >-
+    Chata je zároveň známkovým místem a vizitku sem vydavatel taky vydal.
+    Katalog vydavatele ale mezi prameny doložený není.
+zdroje:
+  - url: 'https://www.chata-fixtura.cz/'
+    popis: 'Web provozovatele'

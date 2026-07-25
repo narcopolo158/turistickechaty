@@ -13,6 +13,10 @@
  *   D  superlativ ve větě bez připsání (kdo to tvrdí?)
  *   E  letopočet v próze, který se nikde jinde v souboru nevyskytuje
  *      => údaj bez opory v datech profilu
+ *   F  próza mluví o turistické známce nebo vizitce, ale `zdroje` katalog
+ *      vydavatele vůbec nevedou — tak se chytila systémová vada z 25. 7. 2026
+ *      (pět z osmi auditovaných profilů neslo v perexu „Nese turistickou
+ *      známku č. X." a číslo přitom stálo jen na interní poznámce)
  *
  * Výstup je SEZNAM K POSOUZENÍ, ne seznam vad. Každý zásah se musí přečíst;
  * první běh 25. 7. 2026 dal 18 zásahů, z toho 8 skutečných vad a 10 falešných
@@ -23,7 +27,7 @@
  */
 import { readFileSync } from 'node:fs'
 import { basename } from 'node:path'
-import { DOMENA, najdiYaml, nactiYaml, proza, seznamMap, VETA, WB0, WB1 } from './lib'
+import { DOMENA, najdiYaml, nactiYaml, proza, seznamMap, VETA, W, WB0, WB1 } from './lib'
 
 // POZOR: v tomhle souboru se nesmí objevit `\b` ani `\w` — viz komentář v lib.ts.
 
@@ -251,6 +255,42 @@ function kontrolaE(cesta: string, d: Record<string, unknown>, raw: string): stri
   return n
 }
 
+// ── kontrola F: sběratelské tvrzení v próze bez záznamu v `zdroje` ──────────
+
+/**
+ * Zmínka o turistické známce nebo vizitce ve veřejné próze. Hranice `WB0`
+ * není kosmetika: bez ní by vzor `známk` zabíral i uvnitř slova „poznámka",
+ * které v próze stojí běžně a se sběratelstvím nemá nic společného.
+ */
+const SBERATELSKE = new RegExp(`${WB0}(známk|vizitk)${W}*`, 'iu')
+/**
+ * Záznam v `zdroje`, který katalog sběratelských předmětů skutečně dokládá.
+ * Doména vydavatele i slovní popis — katalogový záznam se cituje obojím.
+ * Slovní část má hranici `WB0` ze stejného důvodu jako `SBERATELSKE`: bez ní
+ * by kontrolu umlčel jakýkoli `popis` se slovem „poznámka".
+ */
+const KATALOG = new RegExp(
+  'turisticke-znamky\\.cz|znaczki-turystyczne\\.pl|wanderbook|wander book|' +
+    `${WB0}(?:známk|vizitk|znaczk)`,
+  'iu',
+)
+
+function kontrolaF(cesta: string, d: Record<string, unknown>): string[] {
+  const n: string[] = []
+  const dolozeno = seznamMap(d.zdroje).some((z) =>
+    KATALOG.test(`${String(z.popis ?? '')} ${String(z.url ?? '')}`),
+  )
+  if (dolozeno) return n
+  for (const [lbl, v] of proza(d)) {
+    const m = SBERATELSKE.exec(v)
+    if (!m) continue
+    const uryvek = vetaKolem(v, m[0]).trim().split(/\s+/u).join(' ').slice(0, 110)
+    n.push(`${cesta} | ${lbl} | sberatelske tvrzeni <<${m[0]}>> bez zaznamu v zdroje: ...${uryvek}...`)
+    break // stačí jeden zásah na soubor — vada je celoprofilová
+  }
+  return n
+}
+
 // ── běh ─────────────────────────────────────────────────────────────────────
 
 const cesty = process.argv.slice(2).length ? process.argv.slice(2) : najdiYaml('data/chaty')
@@ -275,6 +315,7 @@ const B: string[] = []
 const C: string[] = []
 const D: string[] = []
 const E: string[] = []
+const F: string[] = []
 for (const [c, d, raw] of soubory) {
   const jm = basename(c)
   A.push(...kontrolaA(jm, d, obce))
@@ -282,6 +323,7 @@ for (const [c, d, raw] of soubory) {
   C.push(...kontrolaC(jm, d))
   D.push(...kontrolaD(jm, d))
   E.push(...kontrolaE(jm, d, raw))
+  F.push(...kontrolaF(jm, d))
 }
 
 vypis(A, 'A: proza tvrdi hodnotu zamerne prazdneho pole')
@@ -289,9 +331,10 @@ vypis(B, 'B: overeni zada odklad publikace, profil je publikovany')
 vypis(C, 'C: pravdepodobne sklonovana domena')
 vypis(D, 'D: superlativ bez pripsani')
 vypis(E, 'E: letopocet v proze bez opory jinde v souboru')
+vypis(F, 'F: sberatelske tvrzeni v proze bez zaznamu v zdroje')
 
-const celkem = A.length + B.length + C.length + D.length + E.length
+const celkem = A.length + B.length + C.length + D.length + E.length + F.length
 console.log(
   `\nsouboru: ${soubory.length} | zasahu k posouzeni: ${celkem} ` +
-    `(A ${A.length} · B ${B.length} · C ${C.length} · D ${D.length} · E ${E.length})`,
+    `(A ${A.length} · B ${B.length} · C ${C.length} · D ${D.length} · E ${E.length} · F ${F.length})`,
 )

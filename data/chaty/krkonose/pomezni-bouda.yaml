@@ -17,8 +17,8 @@ zajimavosti:
     kategorie: jine
     zdroj: malaupa.cz — oficiální web obce Malá Úpa (sekundární zdroj, verified:false)
   - text: >-
-      Nejstarší hostinec na Pomezních Boudách — postaven roku 1870 pod názvem
-      Blaschkebaude
+      Kudy z nudy označují boudu za nejstarší hostinec na Pomezních Boudách
+      a její vznik kladou do roku 1870, kdy nesla název Blaschkebaude
     kategorie: stari
     zdroj: Kudy z nudy „Horský hotel Pomezní bouda v Horní Malé Úpě" (sekundární médium, verified:false)
   - text: >-
@@ -130,9 +130,9 @@ overeniHistorie:
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Horská bouda ve výšce 1 050 m přímo u hraničního přechodu do Polska, 7 km od
-  vrcholu Sněžky. Stojí od roku 1870, kdy nesla jméno Blaschkebaude, a Kudy
-  z nudy ji označují za nejstarší hostinec na Pomezních Boudách. Ubytuje
-  50 hostů ve dvou- až čtyřlůžkových pokojích a nese turistickou známku č. 673.
+  vrcholu Sněžky. Podle Kudy z nudy byla postavena roku 1870 pod jménem
+  Blaschkebaude a totéž médium ji označuje za nejstarší hostinec na Pomezních
+  Boudách. Ubytuje 50 hostů ve dvou- až čtyřlůžkových pokojích.
 text:
   - >-
     Pomezní bouda stojí ve výšce 1 050 metrů na hřebeni Krkonoš, přímo u
@@ -143,11 +143,11 @@ text:
     turistické známce vydané pro tohle místo. Kudy z nudy vede boudu jako
     horský hotel.
   - >-
-    Sedlo Pomezních Bud bylo přechodovým a celním místem dávno předtím, než sem
-    začali chodit turisté: ve Staré Pomezní boudě sídlil od roku 1841 celní
-    úřad. Samotná bouda vyrostla podle Kudy z nudy v roce 1870 pod jménem
-    Blaschkebaude a totéž médium ji označuje za nejstarší hostinec na Pomezních
-    Boudách. Po roce 1945 dostala jméno Devětsil a původní název jí byl vrácen
+    Ve Staré Pomezní boudě — tedy podle Kudy z nudy v jiném objektu, než je
+    ta dnešní — sídlil od roku 1841 celní úřad. Samotná bouda podle nich
+    vyrostla v roce 1870 pod jménem Blaschkebaude a označují ji za nejstarší
+    hostinec na Pomezních Boudách. Kdy do sedla začali chodit turisté, prameny
+    neuvádějí. Po roce 1945 dostala jméno Devětsil a původní název jí byl vrácen
     po roce 1989; přesné roky obou přejmenování zdroj neuvádí, takže je
     neuvádíme ani my.
   - >-
@@ -187,6 +187,14 @@ zdroje:
       Malá Úpa — oficiální web obce, stránka „Pomezní bouda" (výška, poloha u
       hraničního přechodu, kapacita, kontakty); sekundární zdroj, verified:false
     url: https://www.malaupa.cz/pomezni-bouda/
+  - popis: >-
+      Katalog turistických známek (Turistické známky s.r.o.) — známka č. 673
+      „Pomezní Boudy · Malá Úpa, Krkonoše", vedená v oficiálním seznamu
+      vydavatele; číslo ověřené z fyzické známky, rytina nese výšku 1 050 m.
+      POZOR: známka je vydána pro místo, tedy pro celé sedlo s více objekty —
+      vazba právě na tuto boudu doložená není. Odkaz na detail je sestaven
+      podle vzoru webu a klikem neověřený. verified:false
+    url: https://www.turisticke-znamky.cz/znamky/pomezni-boudy-mala-upa-c673
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/pomezni-bouda.yaml (externí katalog ČR/SK,
   jistota B) v rámci master fronty Tier 1 (známka č.673 + katalog).

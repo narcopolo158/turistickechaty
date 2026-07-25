@@ -21,8 +21,8 @@ zajimavosti:
     kategorie: stari
     zdroj: Kudy z nudy „Moravská bouda ve Špindlerově Mlýně" (sekundární médium, verified:false)
   - text: >-
-      Leží v Sedmidolí nad Špindlerovým Mlýnem; v zimě k ní nevede sjízdná
-      silnice a hosty i zavazadla vozí sněžný skútr nebo rolba
+      Leží v Sedmidolí nad Špindlerovým Mlýnem; v zimě se u objektu neparkuje
+      a hosty i zavazadla vozí sněžný skútr nebo rolba
     kategorie: jine
     zdroj: >-
       Kudy z nudy „Moravská bouda ve Špindlerově Mlýně" a České hory (archivní
@@ -141,10 +141,11 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Bouda v Sedmidolí nad Špindlerovým Mlýnem (1 225 m), jejíž historie sahá do
-  první poloviny 19. století. Ubytuje 52 hostů ve čtrnácti pokojích, v zimě k ní
-  hosty vozí rolba. V roce 1982 se tu natáčely interiéry Sněženek a machrů. Nese
-  turistickou známku č. 1873.
+  Bouda v Sedmidolí nad Špindlerovým Mlýnem, jejíž historie sahá podle Kudy
+  z nudy do první poloviny 19. století. Nadmořskou výšku i kapacitu uvádějí
+  prameny rozdílně — 1 225, nebo 1 220 metrů a 52, nebo 54 lůžek ve čtrnácti
+  pokojích. V zimě podle Českých hor hosty vozí rolba nebo sněžný skútr.
+  V roce 1982 se tu natáčely interiéry Sněženek a machrů.
 text:
   - >-
     Moravská bouda stojí v Sedmidolí nad Špindlerovým Mlýnem, kam patří i
@@ -167,10 +168,11 @@ text:
     restaurace se salonkem, kulečníkem a šipkami, půjčují se tu společenské
     hry a pobyt se psem je možný.
   - >-
-    V zimě k boudě nevede sjízdná silnice a u objektu se neparkuje. Auto
-    zůstává podle archivní prezentace na Českých horách u Špindlerovy boudy
-    nebo na parkovišti P3 u Medvědína a hosty i se zavazadly doveze sněžný
-    skútr nebo rolba, které bouda zajišťuje.
+    V zimě se u objektu neparkuje. Auto zůstává podle archivní prezentace na
+    Českých horách u Špindlerovy boudy nebo na parkovišti P3 u Medvědína
+    a hosty i se zavazadly doveze sněžný skútr nebo rolba, které bouda
+    zajišťuje. Jaký je v zimě stav příjezdové cesty, dosažitelné zdroje
+    neuvádějí.
   - >-
     Celoroční provoz uvádějí opět jen České hory, Kudy z nudy o sezóně mlčí.
     Nejméně jistá je podoba stravování: restauraci zmiňuje pouze archivní
@@ -195,6 +197,12 @@ zdroje:
       OpenStreetMap way/31126083 — GPS; data © přispěvatelé OpenStreetMap,
       ODbL 1.0, stav dat 2026-06-12, verified:false
     url: https://www.openstreetmap.org/way/31126083
+  - popis: >-
+      Katalog turistických známek (Turistické známky s.r.o.) — známka č. 1873
+      „Moravská bouda, Krkonoše", vedená v oficiálním seznamu vydavatele;
+      číslo ověřené z fyzické známky, rytina nese výšku 1 225 m. Odkaz na
+      detail je sestaven podle vzoru webu a klikem neověřený. verified:false
+    url: https://www.turisticke-znamky.cz/znamky/moravska-bouda-c1873
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/moravska-bouda.yaml (OSM way/31126083,
   DATA-01) v rámci master fronty Tier 1 (známka č.1873 + OSM). Kandidát čekal na

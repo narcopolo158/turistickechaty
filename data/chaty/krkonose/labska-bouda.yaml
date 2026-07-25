@@ -10,9 +10,9 @@ typ: obsluhovana # web se prezentuje jako „Hotel Labská bouda"; zapsáno jako
 stav: v-provozu
 oblast: krkonose
 zajimavosti:
-  - text: Necelý kilometr od pramene Labe; sídlí zde meteorologická stanice a solární a ozónová observatoř ČHMÚ
+  - text: Zhruba kilometr od pramene Labe; podle serveru Krkonose.eu zde sídlí meteorologická stanice a observatoř ČHMÚ
     kategorie: jine
-    zdroj: web chaty (labskabouda.cz)
+    zdroj: Krkonose.eu — zdrojový průzkum 2026-07-22 (sekundární médium, verified:false)
   - text: Současná budova pochází z roku 1975, historie místa sahá k roku 1830
     kategorie: stari
     zdroj: web chaty (labskabouda.cz)
@@ -109,17 +109,18 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Velká hřebenová bouda v 1. zóně KRNAP ve výšce 1 340 m, kousek od pramene
-  Labe severozápadně od Špindlerova Mlýna. Restaurace i bufet otevřené celý
-  den i pro kolemjdoucí turisty, ubytování od spacáků po pokoje Premium.
+  Bouda v 1. zóně KRNAP ve výšce 1 340 m, zhruba kilometr od pramene Labe
+  severozápadně od Špindlerova Mlýna. Restaurace i bufet mají otevřeno denně
+  od deseti do devíti večer (kuchyně do půl osmé) a najíst se tu může
+  i turista bez ubytování; spí se od spacáků po pokoje Premium.
 text:
   - >-
-    Labská bouda stojí na Labské louce ve výšce 1 340 m n. m., v první zóně
-    Krkonošského národního parku a necelý kilometr od pramene Labe. Web
-    boudy ji umisťuje severozápadně od Špindlerova Mlýna, který je jí
-    nejbližším střediskem; katastrální adresa objektu ale patří Vítkovicím
-    v Krkonoších, konkrétně Bedřichovu 31. Podle webu boudy v objektu sídlí
-    meteorologická stanice a solární a ozónová observatoř ČHMÚ.
+    Labská bouda stojí ve výšce 1 340 m n. m., v první zóně Krkonošského
+    národního parku a zhruba kilometr od pramene Labe. Web boudy ji umisťuje
+    severozápadně od Špindlerova Mlýna, který je jí nejbližším střediskem;
+    katastrální adresa objektu ale patří Vítkovicím v Krkonoších, konkrétně
+    Bedřichovu 31. Server Krkonose.eu k boudě váže i meteorologickou stanici
+    a observatoř ČHMÚ — ten údaj ale zatím stojí jen na sekundárním médiu.
   - >-
     Pohostinství má na místě kořeny už v roce 1830, kdy tu podle boudy
     prodávala žena „kozí výrobky a kořalku". Server Krkonose.eu k okolí
@@ -142,8 +143,9 @@ text:
   - >-
     Spí se ve třech kategoriích pokojů. Premium jsou dvou- až čtyřlůžkové
     s koupelnou a televizí, Standard dvou- až třílůžkové s koupelnou
-    a Economy čtyřlůžkové smíšené pokoje pro hosty s vlastním spacákem.
-    Celkový počet lůžek web boudy neuvádí, takže ho neuvádíme ani my.
+    a Economy čtyřlůžkové smíšené pokoje se spacáky; jestli si spacák host
+    přináší sám, web boudy neupřesňuje. Neuvádí ani celkový počet lůžek,
+    takže ho neuvádíme ani my.
     K zázemí patří finská sauna, vířivka a bankomat, platit se dá kartou
     a ubytovat se lze i se psem.
   - >-
@@ -155,7 +157,7 @@ text:
     kapacitu.
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/7/70/Labska_bouda_A_22211.JPG
-    alt: Labská bouda — pohled na budovu na Labské louce v Krkonoších
+    alt: Labská bouda — pohled na budovu horského hotelu v Krkonoších
     typ: soucasna
     autor: Ciacho5
     licence: cc-by-sa

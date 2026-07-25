@@ -15,7 +15,7 @@ const KROKY = [
   ['validator', 'ciselniky, konvence B, svoleni u obrazku', true],
   ['zdroje', 'domena jmenovana v proze musi stat i ve `zdroje`', false],
   ['ban-scan', 'zakazane vzory ve verejne proze (seznam k posouzeni)', false],
-  ['audit-mech', 'mechanicky audit A-E (seznam k posouzeni)', false],
+  ['audit-mech', 'mechanicky audit A-F (seznam k posouzeni)', false],
   ['test-fixtura', 'regresni test kontrol proti fixture', true],
 ] as const
 

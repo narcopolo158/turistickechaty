@@ -13,10 +13,10 @@ zeme: cz
 typ: horsky-hotel
 stav: v-provozu
 oblast: krkonose
-zajimavosti:
-  - text: Vlastní sjezdovka dlouhá 300 m s vlekem; hosty vozí i na lyžování do Ski resortu Pec pod Sněžkou
-    kategorie: jine
-    zdroj: web chaty (tetreviboudy.com)
+# zajimavosti ZÁMĚRNĚ NEVYPLNĚNY: jediná zapsaná zajímavost (sjezdovka 300 m
+# s vlekem + svoz do Ski resortu Pec) nebyla kryta žádným blokem overeni* ani
+# citací v zdroje — vypuštěna 25. 7. 2026 při auditu prózy (nedomýšlet).
+# Doplnit po ověření na webu/telefonátem (DATA-04).
 
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS z OSM (ODbL, neověřeno v terénu); výška a adresa potvrzeny z webu.
@@ -89,7 +89,7 @@ milniky:
   - rok: 1989
     udalost: Dostavěny další dvě budovy
   - rok: 2014
-    udalost: Tetřeví Boudy koupila společnost Green Garden, s.r.o. (květen 2014), následují renovace a wellness (2014–2017)
+    udalost: Tetřeví Boudy koupila společnost Green Garden, s.r.o. (květen 2014)
 overeniHistorie:
   source: >-
     https://www.tetreviboudy.com/historie.htm — citace z webu (načteno 21. 7.
@@ -121,8 +121,8 @@ text:
     oddechové místo. V roce 1976 padla prostřední dřevěná bouda a začala
     moderní přestavba — první dvě budovy, A a B, vyrostly v roce 1980 a další
     dvě přibyly roku 1989. V květnu 2014 Tetřeví Boudy koupila společnost
-    Green Garden a v letech 2014 až 2017 objekt prošel renovacemi a doplnil
-    wellness. Celou tuhle časovou osu uvádí web hotelu.
+    Green Garden. Tuhle časovou osu až po rok 2014 uvádí web hotelu; pozdější
+    renovace a doplnění wellness citací z webu doložené nemáme.
   - >-
     Spí se v pokojích kategorie Superior, které jsou podle webu všechny
     zrekonstruované od roku 2016; celkový počet pokojů ani lůžek provozovatel
@@ -132,16 +132,15 @@ text:
     stůl se rezervuje telefonicky. Jestli je restaurace otevřená i těm, kdo tu
     nespí, web výslovně neříká. Zázemí je hotelové: bazén, vířivka, finské
     sauny, parní sauna a infrasauna, fitness, stolní tenis, stolní fotbálek,
-    kulečník a šipky, k tomu dětská herna a venkovní dětské hřiště. K hotelu
-    patří i vlastní tři sta metrů dlouhá sjezdovka s vlekem a hosty podle webu
-    vozí na lyžování také do Ski resortu Pec pod Sněžkou.
+    kulečník a šipky, k tomu dětská herna a venkovní dětské hřiště.
   - >-
     Celoroční provoz web hotelu uváděl při dřívějším čtení, později to na
     stránkách nezopakoval, a tak tenhle údaj bereme s výhradou. Nedoložená
     zůstává kapacita ubytování i přístup autem a pěšky. Údaje na této stránce
-    pocházejí z webu hotelu a redakce je zatím neověřila vlastním dotazem ani
-    návštěvou. Před cestou doporučujeme potvrdit si otvírací dobu restaurace
-    a to, zda vaří i pro neubytované.
+    pocházejí z webu hotelu, souřadnice z OpenStreetMap (© přispěvatelé
+    OpenStreetMap, ODbL) a v terénu ověřené nejsou; redakce je zatím neověřila
+    vlastním dotazem ani návštěvou. Před cestou doporučujeme potvrdit si
+    otvírací dobu restaurace a to, zda vaří i pro neubytované.
 
 # Bez hero fotky: DATA-02 nenašla na Commons žádného licenčně čistého
 # kandidáta (viz data/kandidati/fotky/krkonose/tetrevi-boudy.yaml — 0 fotek).
