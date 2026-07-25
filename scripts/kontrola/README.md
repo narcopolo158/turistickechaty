@@ -38,7 +38,7 @@ e-maily, telefony, ceny (mění se), GPS, čísla známek, názvy polí ani inte
 terminologie. **Výstup není seznam vad.** Část zásahů jsou trvalé a známé falešné
 poplachy: doména v prvním pádě jako jméno pramene („server Krkonose.eu") je
 doložený domácí styl, „redakce" v závěrečném odstavci taky, a OpenStreetMap se
-uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **122 zásahů** —
+uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **127 zásahů** —
 smysl má sledovat, jestli číslo neskočí, ne jestli je nula.
 
 Bylo jich 135 a rozdíl je čistě náhodou malý: 25. 7. 2026 **odpadlo 17 zásahů**
@@ -55,6 +55,27 @@ skutečné souřadnice loví `\d{1,3}\.\d{4,}`, `\d+°\s?\d+'` a `N\s*\d{2}\.`,
 kdežto samo slovo „souřadnice" je zdokumentovaný falešný poplach, který se stejně
 škrtá ručně. Kdo bude příště hledat, proč se číslo pohnulo o jedničku, ať začne
 tady — **ne každý skok má obsah**.
+
+Ze 122 na 127 to vyskočilo večer 25. 7. 2026 s třetí dávkou jazykového auditu
+a i tenhle skok je bez obsahu — tentokrát ale **doloženo měřením, ne odhadem**.
+Osm přepsaných profilů se porovnalo se stavem v HEAD soubor po souboru
+(`git archive HEAD data/chaty` do dočasného adresáře, pak `ban-scan.ts` nad
+oběma verzemi a diff výstupů). Pět profilů získalo po jednom zásahu, žádný
+neztratil ani jeden, takže +5 vysvětluje celý pohyb. Tři z nich chytil vzor
+`profil` v domácí formulaci „starší katalogový podklad, ze kterého profil
+vychází", kterou próza nově používá tam, kde se přiznává, že tvrzení stojí na
+katalogu bez veřejně citovatelné adresy. Zbylé dva chytil `OpenStreetMap` —
+v perexu Lesní boudy a v textu Lyžařské boudy, kde se nově připisuje, odkud
+pochází výška a klasifikace objektu. Obě třídy stojí mezi trvalými falešnými
+poplachy vyjmenovanými o dva odstavce výš: přibylo připsání, ne domýšlení.
+
+Při té příležitosti se potvrdila i **hranice dosahu**. `proza()` v `lib.ts` čte
+jen `perex` a `text[]`. Když se z položky `zajimavosti[0]` u Lyžařské boudy
+odstranilo číslo známky, počet zásahů klesnout nemohl — a taky neklesl, ten
+údaj tam skript nikdy neviděl (profil šel 3 → 4, tedy čistý přírůstek). Totéž
+platí pro `zdroje.popis`, `autem`, `otviraciDoba` a `interniPoznamky`.
+Rozšíření dosahu na `zajimavosti[].text` je vedené v BACKLOGu; napřed se změří,
+kolik zásahů to přidá, aby se ustálený počet neposunul naslepo.
 
 **`audit-mech.ts` — seznam k posouzení.** Strojově chytatelná část auditní
 taxonomie z 25. 7. 2026, šest kontrol: **A** próza tvrdí hodnotu pole, které je

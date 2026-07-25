@@ -11,9 +11,9 @@ oblast: krkonose
 
 # ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
 zajimavosti:
-  - text: "Bouda provozuje vlastní ekologickou farmu a nabízí výrobky z místní produkce."
+  - text: "Bouda provozuje vlastní ekologickou farmu."
     kategorie: gastro
-    zdroj: "https://lesnibouda.cz/"
+    zdroj: web boudy (lesnibouda.cz) — eko farma
 
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS a výška z OSM (ODbL); poloha (Pec pod Sněžkou, hřeben Liščí hory) z webu boudy a popisu fotky.
@@ -56,7 +56,8 @@ overeniSluzby:
 
 # ── Provoz ────────────────────────────────────────────────────────────────
 otviraciDoba: |-
-  Restaurace denně 10:30–17:00, přístupná i neubytovaným.
+  Restaurace 10:30–17:00, přístupná i neubytovaným (web boudy; zda je otevřeno
+  každý den, zdroj neuvádí).
 kontakty:
   telefon: +420 736 678 302
   email: info@lesnibouda.cz
@@ -77,9 +78,10 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Horská bouda s eko farmou na hřebeni Liščí hory nad Pecí pod Sněžkou
-  (1 102 m). Vlastní restaurace s krkonošskou kuchyní otevřená denně i pro
-  kolemjdoucí turisty, rodinný provoz od roku 1996.
+  Horská bouda s eko farmou na hřebeni Liščí hory nad Pecí pod Sněžkou. Výšku
+  1 102 m nese OpenStreetMap, provozovatel ji sám neuvádí. Vlastní restaurace
+  s tradiční krkonošskou kuchyní je podle webu boudy přístupná i kolemjdoucím
+  turistům; boudu tatáž rodina provozuje od roku 1996.
 text:
   - >-
     Lesní bouda stojí na hřebeni Liščí hory v katastru Pece pod Sněžkou.
@@ -89,11 +91,12 @@ text:
     Doložená historie je krátká. Podle vlastního webu provozuje boudu současná
     rodina od roku 1996, starší osudy stavby zatím doložené nemáme.
   - >-
-    Vlastní restaurace vaří tradiční krkonošskou kuchyni a má otevřeno denně
-    od půl jedenácté do pěti odpoledne; najíst se tu může i turista, který na
-    boudě nespí. K hospodářství patří vlastní ekologická farma a bouda podle
-    svého webu nabízí výrobky z místní produkce. Přespat lze v pokojích, které
-    web popisuje jako komfortní a útulné, vhodné pro rodiny, jednotlivce,
+    Vlastní restaurace vaří podle webu boudy tradiční krkonošskou kuchyni a má
+    otevřeno od půl jedenácté do pěti odpoledne; najíst se tu může i turista,
+    který na boudě nespí. Jestli má otevřeno každý den, už web neříká.
+    K hospodářství patří vlastní ekologická farma; zda z ní bouda nabízí
+    i výrobky na prodej, doložené nemáme. Přespat lze v pokojích, které web
+    popisuje jako komfortní a útulné, vhodné pro rodiny, jednotlivce,
     skupiny i kolektivy; počet lůžek ani jednotlivé kategorie pokojů
     provozovatel neuvádí, takže je neuvádíme ani my. Z dalšího vybavení web
     zmiňuje vířivku.
@@ -126,4 +129,6 @@ interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/lesni-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅).
   Výška 1102 m z OSM (web ji neuvádí); popis fotky Commons „na hřebeni Liščí hory" polohu potvrzuje.
   Kapacita lůžek a ceny: na webu neuvedeny — nezapsáno.
-  Pozn.: v Krkonoších je i další „Lesní bouda" (Špindlerův Mlýn) — tato je nad Pecí pod Sněžkou (Liščí hora); při dalších objektech hlídat záměnu.
+  Pozn.: v Krkonoších je i další „Lesní bouda" (Špindlerův Mlýn) — tato je nad Pecí pod Sněžkou (Liščí hora); při dalších objektech hlídat záměnu. Rozlišení je zatím jen interní: veřejně by chtělo doložit pramenem, jak se objekty odlišují, a to zatím nemáme — vedeno v BACKLOGu jako konvence pro kolidující názvy (týká se i martinova-bouda).
+  DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveny čtyři vady. (1) zajimavosti[0] tvrdila, že bouda „nabízí výrobky z místní produkce", a připisovala to webu — overeniSluzby ale z webu cituje jen „eko farma, vířivka"; tvrzení zúženo na doloženou farmu, stejně tak v text[2], kde je nově přiznáno, že prodej výrobků doložený nemáme. Pole zdroj u té položky navíc neslo holou URL místo jména pramene — sjednoceno s domácím stylem. (2) Próza i pole otviraciDoba tvrdily, že restaurace má otevřeno „denně", ač citace webu v overeniObcerstveni nese jen „10:30–17:00, přístupné i neubytovaným" — slovo odstraněno z obou míst a nedoloženost přiznána; rozpor mezi polem a citací tím padá (byl navržen jako položka do BACKLOGu, řeší se rovnou). (3) Perex uváděl výšku 1 102 m bez připsání, ač jde o údaj z OpenStreetMap, který provozovatel sám nenese (text[0] to přiznává) — připsáno i v perexu. (4) Perex nesl „rodinný provoz od roku 1996" jako holé konstatování — připsáno webu boudy.
+  ZAMÍTNUTO jako nedorozumění auditu: Wikimedia Commons nechybí ve zdroje[] — fotky[] mají vlastní blok overeni se zdrojem, licencí i autorem a stejně to má i dvorska-bouda, která Commons ve zdroje[] rovněž nevede. Zamítnuto i „na hřebeni Liščí hory" — na rozdíl od ostatních profilů této dávky tady polohu na hřebeni cituje overeniLokace přímo z webu boudy, tvrzení tedy doložené je.

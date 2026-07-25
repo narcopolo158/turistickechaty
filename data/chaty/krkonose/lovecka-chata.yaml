@@ -63,15 +63,19 @@ overeniProvoz:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Penzion s veřejnou restaurací ve Velké Úpě pod Sněžkou. Restaurace má
-  otevřeno denně od 11 do 21 hodin i pro neubytované.
+  Penzion s veřejnou restaurací ve Velké Úpě, části Pece pod Sněžkou.
+  Restaurace má podle webu chaty otevřeno denně od 11 do 21 hodin i pro
+  neubytované; jestli penzion funguje celoročně, doložené nemáme.
 text:
   - >-
     Lovecká chata stojí na adrese Velká Úpa 204 v Peci pod Sněžkou. Jde
-    o penzion s restaurací v údolí, ne o hřebenovou boudu; do průvodce jsme
-    ho zařadili proto, že jeho restaurace je otevřená veřejnosti. Nadmořskou
-    výšku web chaty neuvádí, souřadnice pocházejí z OpenStreetMap a v terénu
-    ověřené nejsou.
+    o penzion s restaurací, ne o horskou boudu; do průvodce jsme ho zařadili
+    proto, že jeho restaurace je otevřená veřejnosti. Nadmořskou výšku web
+    chaty neuvádí a souřadnice přebíráme z OpenStreetMap, kde je ovšem objekt
+    veden jako neobsluhovaný přístřešek — s webem chaty se to neshoduje
+    a držíme se webu. Ani samotný mapový bod nemáme za potvrzený: od doložené
+    adresy ho dělí několik kilometrů, takže než ho ověříme, spolehlivější
+    vodítko je adresa.
   - >-
     Web zve hosty k přenocování i k jídlu, kolik má penzion lůžek, ale
     neprozrazuje. Restaurace je otevřená i neubytovaným, podle webu denně od
@@ -97,3 +101,5 @@ interniPoznamky: |-
   Data dotažena z webu lovecka-chata.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: false (kontakty, veřejná restaurace + otvíračka). verified: false u lokace (GPS z OSM; adresa z webu potvrzena, výška web neuvádí) a nocleh (kapacita nedoložena).
   TYP: OSM tag tourism=wilderness_hut (útulna) je zjevně chybný — objekt je penzion s obsluhou a veřejnou restaurací; zapsán typ obsluhovana (penzion v enum není), penzionový charakter přiznán v perexu i textu. Zvážit hlášení opravy tagu do OSM (dobrý soused).
   NEDOHLEDÁNO (web neuvádí): nadmořská výška, kapacita lůžek, explicitní sezóna/celoroční provoz.
+  ⚠ GPS PRAVDĚPODOBNĚ CHYBNÁ — ZMĚŘENO 25. 7. 2026: haversinovské vzdálenosti z publikovaných souřadnic (pole lat/lng, OSM node 13298087649) k referenčním bodům korpusu vycházejí Dvorská bouda (Strážné) 2,32 km · Hotel Špindlerova bouda 4,73 km · Lyžařská bouda (Černý Důl) 5,12 km · Lesní bouda (Pec pod Sněžkou) 6,08 km · Martinova bouda 8,26 km. Bod tedy leží v oblasti Strážného, tj. zhruba 6 km západně od druhého objektu korpusu v Peci pod Sněžkou, kdežto doložená adresa Velká Úpa 204 je od Pece na východ. Buď je OSM uzel umístěn špatně, nebo popisuje jiný objekt (což by sedělo i s chybným tagem wilderness_hut). Do DATA-04: ověřit souřadnice u chataře nebo z katastru; do té doby je vada přiznaná i ve veřejné próze (text[0]). Souřadnice zatím NEMAZAT — jsou jediné, co máme, a jsou označené jako neověřené.
+  DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveny čtyři vady. (1) text[0] tvrdil, že chata stojí „v údolí" a není „hřebenovou boudou" — poloha v údolí není doložená žádným pramenem (výšku web neuvádí vůbec); ponechán jen doložitelný protiklad penzion vs. horská bouda. (2) Rozpor mezi klasifikací v OSM (neobsluhovaný přístřešek) a webem chaty byl dosud jen v této poznámce, ač jde o rozpor pramenů, na kterých profil stojí — přiznán ve veřejné próze, bez uvedení názvu tagu (interní terminologie do prózy nepatří). (3) Naměřený nesoulad souřadnic s adresou přiznán v próze. (4) Perex uváděl otvírací dobu bez připsání a mlčel o tom, že celoroční provoz doložený nemáme (text[2] to přiznává) — obojí doplněno; „ve Velké Úpě pod Sněžkou" upřesněno na „ve Velké Úpě, části Pece pod Sněžkou", což odpovídá doložené adrese.

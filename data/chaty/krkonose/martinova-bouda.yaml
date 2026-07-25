@@ -10,10 +10,6 @@ typ: obsluhovana
 stav: v-provozu
 oblast: krkonose
 zajimavosti:
-  - text: Stojí na hraničním hřebeni Krkonoš, ve výšce 1 288 m
-    kategorie: jine
-    zdroj: >-
-      Kudy z nudy „Martinova bouda v Krkonoších" (sekundární médium, verified:false)
   - text: Vysokorychlostní Wi-Fi, sauna a společenská místnost s kulečníkem a šipkami
     kategorie: jine
     zdroj: >-
@@ -85,15 +81,15 @@ overeniProvoz:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Horská bouda na hraničním hřebeni Krkonoš ve výšce 1 288 m u Špindlerova
-  Mlýna. Nabízí 42 lůžek ve 12 pokojích s vlastním sociálním zařízením,
-  restauraci s krbem, saunu a rychlé Wi-Fi.
+  Horská bouda ve výšce 1 288 m u Špindlerova Mlýna. Nabízí 42 lůžek ve 12
+  pokojích s vlastním sociálním zařízením, saunu a Wi-Fi; v objektu je
+  i restaurace s krbem, jestli obslouží i kolemjdoucí, ale prameny neuvádějí.
 text:
   - >-
-    Martinova bouda stojí na hraničním hřebeni Krkonoš ve výšce 1 288 m n. m.
-    Adresou patří pod Špindlerův Mlýn, do části Labská. Jde o obsluhovanou
-    boudu s ubytováním i vlastní restaurací. Výšku a adresu uvádí Kudy z nudy,
-    souřadnice objektu pocházejí z OpenStreetMap.
+    Martinova bouda stojí ve výšce 1 288 m n. m. nad Špindlerovým Mlýnem;
+    adresou patří do jeho části Labská. Jde o obsluhovanou boudu s ubytováním
+    i vlastní restaurací. Výšku a adresu uvádí Kudy z nudy, souřadnice objektu
+    pocházejí z OpenStreetMap.
   - >-
     Spí se ve dvanácti pokojích od dvoulůžkových po pětilůžkové, dohromady se
     čtyřiceti dvěma lůžky. Každý pokoj má podle Kudy z nudy vlastní sociální
@@ -103,8 +99,9 @@ text:
     restaurace obsluhuje i kolemjdoucí turisty, prameny neuvádějí a otvírací
     doba doložená není; OpenStreetMap u boudy nese údaj o otevření mezi
     jedenáctou dopoledne a pátou odpoledne, ten ale zůstává neověřený.
-    K vybavení dál patří sauna, společenská místnost s kulečníkem a šipkami,
-    projekční technika a rychlé připojení k internetu.
+    Kudy z nudy dál uvádějí saunu, společenskou místnost s kulečníkem
+    a šipkami, projekční techniku a Wi-Fi, kterou popisují jako
+    vysokorychlostní.
   - >-
     Historii boudy — rok vzniku ani pozdější osudy — se nám z dostupných
     pramenů doložit nepodařilo, stejně jako sezonu provozu a pěší přístupové
@@ -127,7 +124,30 @@ interniPoznamky: >-
 
   POZOR na kolizi jmen: existuje i jiná „Martinova bouda" na Benecku
   (martinova-bouda.cz) — tento profil je Martinovka na hřebeni u Špindlerova
-  Mlýna (martinovka.cz, GPS OSM way/27594723).
+  Mlýna (martinovka.cz, GPS OSM way/27594723). Rozlišení je zatím jen interní;
+  veřejně by chtělo doložit pramenem, jak se objekty odlišují — vedeno
+  v BACKLOGu jako konvence pro kolidující názvy (týká se i lesni-bouda).
+
+  DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveny čtyři vady.
+  (1) „na hraničním hřebeni Krkonoš" stálo v perexu, v text[0]
+  i v zajimavosti[0], ale overeniLokace cituje z Kudy z nudy jen výšku
+  a adresu — poloha na hřebeni, natož hraničním, doložená není; ze všech tří
+  míst odstraněno. Položka zajimavosti[0] tím ztratila obsah (zbylo by holé
+  „stojí ve výšce 1 288 m", což je duplikát pole vyska) — celá odstraněna,
+  místo aby se dovymýšlelo, co je na objektu zajímavé. (2) Perex sliboval
+  „restauraci s krbem" bez výhrady, ač overeniObcerstveni říká, že přístupnost
+  pro kolemjdoucí uvedena není a text[2] to přiznává — doplněna stejná výhrada.
+  (3) Perex tvrdil „rychlé Wi-Fi" jako vlastnost, kterou jsme ověřili;
+  „vysokorychlostní" je formulace zdroje, ne měření — v perexu zůstává prosté
+  Wi-Fi, v text[2] je přívlastek připsaný Kudy z nudy. (4) Výčet vybavení
+  v text[2] stál bez připsání mimo okno tří vět (kontrola audit-mech D) —
+  připsáno.
+  ZAMÍTNUTO jako nedorozumění auditu: zajimavosti o vysokorychlostní Wi-Fi
+  není domyšlená — nese pole zdroj a overeniSluzby cituje z Kudy z nudy
+  doslova „vysokorychlostní Wi-Fi"; položka s vlastním zdrojem je připsaná
+  ze své konstrukce. Zamítnuto i to, že text[3] „zamlčuje kapacitu" —
+  42 lůžek je v text[1] uvedeno i připsáno; „přesná kapacita" v seznamu
+  K dotažení je běžný úkol DATA-04 platný pro každý údaj s verified:false.
 
   K dotažení (DATA-04, verified:true): otvírací doba a veřejná přístupnost
   restaurace, přesná kapacita, rok vzniku/historie (Kudy z nudy neuvádí),

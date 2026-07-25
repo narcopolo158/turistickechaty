@@ -123,13 +123,14 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Bouda z roku 1926 v Horních Lysečinách ve východních Krkonoších (1 000 m), u
-  staré kupecké stezky s Císařským pramenem. Ubytuje 45 hostů, má dvě restaurace
-  s českou a krkonošskou kuchyní a vlastní lyžařský vlek se sjezdovkou.
+  Bouda z roku 1926 v Horních Lysečinách (1 000 m). Kolem ní vedla stará
+  kupecká stezka a nedaleká studánka nese jméno Kaiserborn — Císařský pramen.
+  Ubytuje 45 hostů, má vlastní lyžařský vlek se sjezdovkou a dvě restaurace
+  s českou a krkonošskou kuchyní; jedna z nich je vyhrazená ubytovaným.
 text:
   - >-
     Lysečinská bouda stojí v Horních Lysečinách, které jsou dnes částí Malé
-    Úpy, ve východní části Krkonoš. Kudy z nudy jí připisuje nadmořskou výšku
+    Úpy. Kudy z nudy jí připisuje nadmořskou výšku
     1 000 metrů, starší podklad, ze kterého profil vychází, měl ale 950 metrů
     a jako obec uváděl Horní Maršov. Vycházíme z údajů Kudy z nudy, ověřené
     zatím nejsou.
@@ -146,8 +147,9 @@ text:
     krkonošských jídel. K boudě patří vlastní lyžařský vlek dlouhý 850 metrů a
     sjezdovka o délce zhruba kilometru, v okolí vedou běžkařské trasy.
   - >-
-    Údaje na této stránce pocházejí z jediného sekundárního pramene a redakce
-    je zatím neověřila. Celoroční provoz nese jen starší podklad, ze kterého
+    Údaje na této stránce pocházejí ze sekundárních pramenů — z Kudy z nudy
+    a ze staršího katalogového podkladu — a redakce je zatím neověřila.
+    Celoroční provoz nese jen starší podklad, ze kterého
     profil vychází, otvírací doba doložena není a ani u restaurace s barem a
     krbem zdroj výslovně neříká, že obslouží i kolemjdoucí — vyplývá to jen z
     toho, že jako vyhrazenou ubytovaným označuje zdroj pouze tu druhou z obou
@@ -160,6 +162,7 @@ zdroje:
       kapacita, dvě restaurace, vlek a sjezdovka, kontakty, historie);
       sekundární médium, verified:false, ověřit primárně
     url: https://www.kudyznudy.cz/aktivity/lysicenska-bouda-pohoda-v-srdci-krkonos
+  - popis: 'Externí katalog chat ČR/SK (podklad ChatGPT, jistota A) — celoroční provoz; dále výška 950 m a obec Horní Maršov, tedy hodnoty rozporné s Kudy z nudy, které profil nepřebírá. Próza se na tenhle soupis výslovně odvolává, proto sem patří; veřejně citovatelné umístění ani souřadnice ale nemá a druhým pramenem doložený není. verified:false'
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/lysecinska-bouda.yaml (externí katalog
   ČR/SK, jistota A) v rámci master fronty Tier 1 (známka č.1336 + katalog).
@@ -180,6 +183,25 @@ interniPoznamky: >-
 
   Wi-Fi, platba kartou, psi a lyžárna: zdroj neuvádí — pole vědomě nevyplněna.
   Typy pokojů: zdroj nenese — `pokoje` nevyplněno. Otvírací doba: nedoložena.
+
+  DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveno pět vad prózy.
+  (1) „ve východních Krkonoších" (perex) a „ve východní části Krkonoš"
+  (text[0]) — tvrzení o poloze v pohoří, které nenese žádný pramen; z obou míst
+  odstraněno. Na rozdíl od „v Horních Lysečinách, které jsou dnes částí Malé
+  Úpy" (to plyne z doložené adresy) tady nejde o odvození, ale o přidaný údaj.
+  (2) Perex psal o boudě „u staré kupecké stezky", zdroj ale mluví v minulém
+  čase („kolem boudy vedla") — opraveno; stezka dnes doložená není.
+  (3) Perex slučoval boudu a Císařský pramen do jednoho místa („u staré kupecké
+  stezky s Císařským pramenem"), zdroj přitom říká „nedaleká studánka" —
+  opraveno. (4) Perex sliboval „dvě restaurace" bez toho, že jedna je vyhrazena
+  ubytovaným — což je pro čtenáře, který si chce cestou odpočinout, ta
+  podstatná půlka informace; doplněno. (5) text[3] mluvil o „jediném
+  sekundárním prameni", ač celoroční provoz nese katalogový podklad, tedy
+  pramen druhý — opraveno na množné číslo a přidán záznam do zdroje[] (bez url,
+  veřejně citovatelné umístění nemá; vzor chata-rezek a dom-slaski).
+  ZAMÍTNUTO jako nedorozumění auditu: „které jsou dnes částí Malé Úpy" není
+  domyšlené — plyne z doložené adresy „Horní Lysečiny 51, 542 26 Malá Úpa"
+  v overeniLokace.
 
   K dotažení (DATA-04, verified:true): GPS, potvrdit výšku a obec, otvírací doba
   a veřejná přístupnost druhé restaurace, sezónní režim, platná doména. Hero

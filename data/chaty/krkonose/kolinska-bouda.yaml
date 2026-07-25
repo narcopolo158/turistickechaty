@@ -21,7 +21,7 @@ zajimavosti:
       Ubytuje až 102 osob a nabízí vyhřívaný bazén 8 × 4 m, whirlpool i saunu
     kategorie: velikost
     zdroj: Kudy z nudy „Hotel Kolínská bouda v Krkonoších" (sekundární médium, verified:false)
-  - text: U boudy jsou výběhy s kozami a ovcemi a dětské hřiště
+  - text: U boudy jsou výběhy pro kozy a ovce a dětské hřiště
     kategorie: jine
     zdroj: Kudy z nudy „Hotel Kolínská bouda v Krkonoších" (sekundární médium, verified:false)
 
@@ -45,7 +45,7 @@ overeniLokace:
 nocleh: ano
 kapacita: 102
 pokoje:
-  - typ: Dvou-, tří-, čtyř-, pěti- a šestilůžkové pokoje, každý s WC a sprchou
+  - typ: Dvou- až šestilůžkové pokoje, každý s WC a sprchou
 overeniNocleh:
   source: >-
     Kudy z nudy „Hotel Kolínská bouda v Krkonoších": kapacita 102 osob v dvou-
@@ -113,21 +113,25 @@ overeniHistorie:
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Velká horská bouda hotelového typu na Lučinách nad Pecí pod Sněžkou (1 117 m),
-  na turistické stezce k Černé hoře. Ubytuje až 102 hostů, má restauraci s
-  terasou, vyhřívaný bazén, whirlpool a saunu.
+  na turistické stezce k Černé hoře. Ubytuje kolem stovky hostů — prameny se
+  v přesném čísle liší — a má restauraci s terasou, vyhřívaný bazén, whirlpool
+  a saunu.
 text:
   - >-
     Kolínská bouda stojí ve výšce 1 117 m n. m. na Lučinách nad Pecí pod
     Sněžkou, na turistické stezce mezi Pecí a Černou horou; adresou patří k
     Peci pod Sněžkou, čp. 319, a podle Kudy z nudy leží na území Krkonošského
-    národního parku. Polohu na Lučinách i nadmořskou výšku uvádí archivní
-    prezentace na Českých horách.
+    národního parku. Polohu na Lučinách, umístění na stezce i nadmořskou výšku
+    uvádí archivní prezentace serveru České hory.
   - >-
     Rozsahem služeb má objekt blíž k hotelu než ke skromné boudě — Kudy z nudy
-    ho ostatně vedou pod názvem Hotel Kolínská bouda. Podle nich ubytuje až
-    102 hostů ve dvou-, tří-, čtyř-, pěti- a šestilůžkových pokojích, z nichž
-    každý má vlastní WC a sprchu. Archivní prezentace na Českých horách přitom
-    uvádí sto lůžek, takže ani kapacita není úplně jistá.
+    ho ostatně vedou pod názvem Hotel Kolínská bouda, kdežto starší katalogový
+    podklad, ze kterého profil vychází, ho řadil mezi horské boudy; které
+    z obou označení použít, je rozhodnutí naše. Podle Kudy z nudy ubytuje až
+    102 hostů v pokojích pro dva až šest lidí, z nichž každý má vlastní WC
+    a sprchu; kolik je kterých velikostí, zdroj neuvádí. Archivní prezentace
+    serveru České hory přitom uvádí sto lůžek, takže ani kapacita není úplně
+    jistá.
   - >-
     Provoz je podle Kudy z nudy celoroční a restaurace má otevřeno každý den
     od půl jedenácté dopoledne do desáté večer; v létě i v zimě k ní patří
@@ -135,16 +139,18 @@ text:
     odpovídají podniku otevřenému veřejnosti, výslovně to ale zdroj neuvádí. K
     vybavení patří bezplatná Wi-Fi v celém hotelu i v restauraci, vyhřívaný
     bazén o rozměrech 8 × 4 × 1,5 metru, whirlpool pro čtyři osoby a sauna;
-    děti tu najdou hřiště a výběhy s kozami a ovcemi. Podle Českých hor je
+    děti tu najdou hřiště a výběhy pro kozy a ovce. Podle serveru České hory je
     objekt nekuřácký.
   - >-
     Historii boudy zatím doložit neumíme — rok vzniku ani starší osudy objektu
     dostupné prameny neuvádějí, a tak o nich mlčíme, dokud se je nepodaří
-    ověřit. Nedoložený zůstává i přístup, tedy pěší trasy a možnost dojet
-    autem. Profil stojí na dvou sekundárních médiích, z nichž jedno je
-    archivní, a redakce ho zatím neověřila vlastním dotazem ani návštěvou.
-    Před cestou doporučujeme potvrdit si přímo u boudy otvírací dobu
-    restaurace a to, zda je přístupná i neubytovaným.
+    ověřit. Z přístupu je doložené jen to, že bouda stojí na turistické stezce
+    mezi Pecí pod Sněžkou a Černou horou, jak uvádí server České hory;
+    konkrétní pěší trasy, jejich délky ani možnost dojet autem doložené
+    nemáme. Profil stojí na dvou sekundárních médiích, z nichž jedno je
+    archivní, a na starším katalogovém podkladu; redakce ho zatím neověřila
+    vlastním dotazem ani návštěvou. Před cestou doporučujeme potvrdit si přímo
+    u boudy otvírací dobu restaurace a to, zda je přístupná i neubytovaným.
 zdroje:
   - popis: >-
       Kudy z nudy — „Hotel Kolínská bouda v Krkonoších" (adresa, kapacita,
@@ -155,6 +161,7 @@ zdroje:
       České hory — „Kolínská bouda" (výška 1 117 m, poloha Lučiny, kapacita);
       prezentace je archivní, sekundární médium, verified:false
     url: https://www.ceskehory.cz/ubytovani/kolinska-bouda-pec-pod-snezkou.html
+  - popis: 'Externí katalog chat ČR/SK (podklad ChatGPT, jistota B) — nadmořská výška 1 117 m (shodně s Českými horami), klasifikace objektu jako horské boudy. Próza se na tenhle soupis výslovně odvolává, proto sem patří; veřejně citovatelné umístění ani souřadnice ale nemá a druhým pramenem doložený není. verified:false'
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/kolinska-bouda.yaml (externí katalog ČR/SK,
   jistota B) v rámci master fronty Tier 1 (známka č.1719 + katalog). Vlastní web
@@ -169,6 +176,35 @@ interniPoznamky: >-
 
   Zaznamenaný rozpor: kapacita 102 (Kudy z nudy) vs. 100 lůžek (České hory,
   archivní prezentace).
+
+  DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveno šest vad prózy.
+  (1) Doména v próze byla skloňovaná („na Českých horách", „Podle Českých
+  hor") — kontrola audit-mech C; upraveno na první pád jako jméno pramene
+  („archivní prezentace serveru České hory", „Podle serveru České hory").
+  (2) Próza i pole pokoje[] vypočítávaly „dvou-, tří-, čtyř-, pěti-
+  a šestilůžkové pokoje", ač zdroj (overeniNocleh) uvádí jen rozsah „v dvou- až
+  šestilůžkových pokojích" — výčet tvrdí, že každá z těch velikostí existuje,
+  což doložené není; nahrazeno rozsahem a doplněno, že poměr velikostí zdroj
+  neuvádí. (3) „výběhy s kozami a ovcemi" tvrdí, že zvířata ve výběhu jsou —
+  zdroj mluví o „výbězích pro kozy a ovce"; opraveno v text[2]
+  i v zajimavosti[2]. (4) Perex tiše rozhodoval rozpor v kapacitě (102 dle Kudy
+  z nudy vs. 100 dle Českých hor) tím, že uváděl jen „až 102 hostů" — nově
+  přiznává, že se prameny v čísle liší, obě čísla nese text[1]. (5) text[3]
+  tvrdil, že „nedoložený zůstává i přístup", ač text[0] hned uvádí polohu na
+  turistické stezce mezi Pecí a Černou horou z Českých hor — upřesněno na
+  konkrétní trasy, délky a příjezd autem, doložená část přiznána i s pramenem.
+  (6) text[3] mluvil o profilu stojícím „na dvou sekundárních médiích", ač
+  výška a klasifikace typu jdou i z katalogového podkladu — doplněn a přidán
+  záznam do zdroje[] (bez url, veřejně citovatelné umístění nemá; vzor
+  chata-rezek a dom-slaski). K tomu text[1] nově přiznává tichý rozpor v typu:
+  katalog vedl objekt jako horskou boudu, profil má „horsky-hotel" —
+  rozhodnutí bylo dosud jen v této poznámce.
+  ZAMÍTNUTO jako nedorozumění auditu: „čp. 319" v próze není interní zápis —
+  adresy nesou v próze i jiné profily korpusu a údaj je doložený
+  v overeniLokace. Zamítnuto i tvrzení, že výčet wellness v text[2] nemá
+  připsání — Kudy z nudy jsou připsané o dvě věty dřív, tedy uvnitř okna tří
+  vět, se kterým pracuje kontrola audit-mech D. Zamítnuto i „nad Pecí pod
+  Sněžkou" — plyne z doložené výšky a obce (vzor dvorska-bouda).
 
   K dotažení (DATA-04, verified:true): GPS, historie a rok vzniku, potvrdit
   otvírací dobu a veřejnou přístupnost restaurace, ceny. Hero fotka: kandidáti

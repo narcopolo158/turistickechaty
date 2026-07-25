@@ -12,8 +12,8 @@ stav: v-provozu
 oblast: krkonose
 zajimavosti:
   - text: >-
-      Stojí na Liščí louce pod Liščí horou; turistická známka č. 2210 nese
-      označení „Lyžařská bouda · Liščí louka"
+      Adresou je bouda vedena v Liščí hoře, turistická známka pro tohle místo
+      ale vyšla pod jménem „Lyžařská bouda · Liščí louka"
     kategorie: jine
     zdroj: >-
       Kudy z nudy „Hotel Lyžařská bouda v Krkonoších" (adresa Liščí hora) a
@@ -112,38 +112,39 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Hotelová bouda na Liščí louce pod Liščí horou nad Černým Dolem (1 206 m).
-  Ubytuje 70 hostů ve tří- až pětilůžkových pokojích s vlastní koupelnou,
-  restaurace má otevřeno denně do odpoledne. Zaměřuje se hlavně na školy v
-  přírodě a lyžařské kurzy.
+  Hotelová bouda nad Černým Dolem (1 206 m). Ubytuje 70 hostů ve tří- až
+  pětilůžkových pokojích s vlastní koupelnou; na otvírací době restaurace se
+  prameny neshodnou. Určena je hlavně pro školy v přírodě a lyžařské kurzy.
 text:
   - >-
-    Lyžařská bouda stojí na Liščí louce pod Liščí horou nad Černým Dolem, na
-    adrese Liščí hora 189. Nadmořskou výšku 1 206 metrů uvádí Kudy z nudy
-    a shoduje se s údajem vyrytým na turistické známce, která pro tohle místo
-    vyšla pod jménem Lyžařská bouda · Liščí louka.
+    Lyžařská bouda stojí nad Černým Dolem, na adrese Liščí hora 189.
+    Nadmořskou výšku 1 206 metrů uvádí Kudy z nudy a shoduje se s údajem
+    vyrytým na turistické známce, která pro tohle místo vyšla pod jménem
+    Lyžařská bouda · Liščí louka — adresa tedy odkazuje na Liščí horu, známka
+    na Liščí louku.
   - >-
     Rozsahem služeb jde o horský hotel; pod hlavičkou Hotel Lyžařská bouda ho
-    vede i Kudy z nudy. Ubytuje 70 hostů ve tří-, čtyř- a pětilůžkových
-    pokojích, každý z nich má vlastní koupelnu se sprchovým koutem a WC.
-    Ubytovaným se podává snídaně formou švédského stolu a večeře s výběrem ze
-    dvou menu.
+    vede i Kudy z nudy, kdežto v OpenStreetMap je objekt zapsaný jako
+    obsluhovaná horská bouda — které z obou označení použít, je rozhodnutí
+    naše. Ubytuje 70 hostů ve tří-, čtyř- a pětilůžkových pokojích, každý
+    z nich má vlastní koupelnu se sprchovým koutem a WC. Ubytovaným se podává
+    snídaně formou švédského stolu a večeře s výběrem ze dvou menu.
   - >-
     Restaurace má podle Kudy z nudy otevřeno denně od 10:30 do 17:00.
     OpenStreetMap ale u téhož objektu nese otvírací dobu podstatně delší,
     po–ne od 10:30 do 22:00, a který z obou údajů platí, zatím nevíme.
-    K vybavení patří masáže, stolní tenis a stolní fotbálek, dětské hřiště
-    a hřiště pro míčové hry; po domluvě je možné grilovat.
+    K vybavení podle Kudy z nudy patří masáže, stolní tenis a stolní fotbálek,
+    dětské hřiště a hřiště pro míčové hry; po domluvě je možné grilovat.
   - >-
-    Provozovatel se podle Kudy z nudy zaměřuje především na mateřské školy,
-    školy v přírodě a lyžařské kurzy. Zveřejněná denní otvírací doba
+    Hotel je podle Kudy z nudy určen především mateřským školám, školám
+    v přírodě a lyžařským kurzům. Zveřejněná denní otvírací doba
     restaurace přitom odpovídá podniku otevřenému veřejnosti — výslovně to
     ale zdroj neuvádí, takže jisté není, jestli obsluhuje i kolemjdoucí.
   - >-
     Historii boudy ani rok jejího vzniku se z dosažitelných pramenů doložit
     nepodařilo, sezónní režim zdroj neuvádí a o Wi-Fi, platbě kartou, psech
     ani lyžárně se nezmiňuje. Souřadnice objektu pocházejí z OpenStreetMap,
-    ostatní údaje ze sekundárního média a redakce je zatím neověřila vlastním
+    ostatní údaje ze sekundárních pramenů a redakce je zatím neověřila vlastním
     dotazem. Před cestou proto doporučujeme potvrdit si přímo u boudy otvírací
     dobu restaurace i to, zda je otevřená veřejnosti.
 zdroje:
@@ -189,6 +190,29 @@ interniPoznamky: >-
 
   `sezona` vědomě nevyplněna (zdroj ji neuvádí). Wi-Fi, platba kartou, psi a
   lyžárna: zdroj neuvádí — nevyplněno.
+
+  DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveno šest vad prózy.
+  (1) „na Liščí louce pod Liščí horou" v perexu, v text[0] i v zajimavosti[0]
+  spojovalo dva různé prameny do jednoho tvrzení o terénu: adresa (Kudy z nudy)
+  zní Liščí hora 189, kdežto Liščí louka je jméno z rytiny známky. Kde louka
+  leží vůči hoře, nenese žádný pramen — nahrazeno prostým konstatováním obou
+  jmen a jejich původu. (2) zajimavosti[0] nesla ČÍSLO ZNÁMKY ve veřejném
+  textu; číslo i odkaz vykresluje sourcovaná karta „Sběratelská místa", ve
+  vlastní próze nemá co dělat (stejné pravidlo jako u vět z perexů, viz
+  kontrola audit-mech F) — odstraněno. POZOR: ban-scan tenhle výskyt nechytil,
+  protože funkce proza() ve scripts/kontrola/lib.ts kryje jen perex a text[],
+  nikoli zajimavosti[].text, který se přitom vykresluje jako veřejná karta —
+  díra zapsána do BACKLOGu. (3) Perex tvrdil, že „restaurace má otevřeno denně
+  do odpoledne", ač profil sám nese rozpor 10:30–17:00 (Kudy z nudy) vs.
+  10:30–22:00 (OpenStreetMap), který text[2] přiznává — perex nově rozpor
+  přiznává taky. (4) text[1] mlčel o tichém rozporu v typu: OSM vede objekt
+  jako obsluhovanou boudu, profil má „horsky-hotel" — rozhodnutí bylo dosud jen
+  v této poznámce. (5) Výčet vybavení v text[2] stál bez připsání mimo okno tří
+  vět (kontrola audit-mech D) — připsáno Kudy z nudy. (6) text[3] převáděl
+  tvrzení zdroje o hotelu na tvrzení o záměru provozovatele („Provozovatel se
+  zaměřuje"), zdroj přitom mluví o tom, komu je hotel určen — opraveno; totéž
+  v perexu. Drobně: text[4] mluvil o „sekundárním médiu" v jednotném čísle, ač
+  profil stojí na Kudy z nudy, OSM i rytině známky.
 
   K dotažení (DATA-04, verified:true): historie a rok vzniku, sezónní režim,
   potvrdit otvírací dobu a veřejnou přístupnost restaurace. Hero fotka:

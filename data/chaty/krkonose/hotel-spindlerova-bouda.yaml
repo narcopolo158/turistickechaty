@@ -16,7 +16,7 @@ oblast: krkonose
 # ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
 rokVzniku: 1784  # rok vzniku: https://www.spindlerovabouda.cz/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
 zajimavosti:
-  - text: Na hřebeni Krkonoš (1208 m) s příjezdem autem a wellness přímo v hlavní budově hotelu
+  - text: Wellness s bazénem, saunami, vířivkou a masážemi je přímo v hlavní budově hotelu
     kategorie: jine
     zdroj: web chaty (spindlerovabouda.cz)
 
@@ -112,16 +112,18 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Horský hotel v roli historické hřebenové boudy ve výšce 1 208 m n. m. nad
-  Špindlerovým Mlýnem, s tradicí od roku 1784. Nabízí ubytování v pěti
-  kategoriích pokojů, restauraci s barem a wellness s bazénem.
+  Horský hotel v roli historické boudy ve výšce 1 208 m n. m. nad Špindlerovým
+  Mlýnem. Tradici od roku 1784 uvádí web hotelu, sekundární médium ale klade
+  vznik boudy až do roku 1824. Nabízí ubytování v pěti kategoriích pokojů
+  a wellness s bazénem; restaurace s barem je v hlavní budově, jestli obslouží
+  i kolemjdoucí, doložené nemáme.
 text:
   - >-
-    Špindlerova bouda stojí na hřebeni Krkonoš ve výšce 1 208 m n. m., na
+    Špindlerova bouda stojí ve výšce 1 208 m n. m. nad Špindlerovým Mlýnem, na
     adrese Špindlerův Mlýn 108. Dnes objekt funguje jako horský hotel, a tak
-    ho vedeme i tady — jako horský hotel v roli historické hřebenové boudy.
-    Výšku i adresu potvrzuje web hotelu, souřadnice pocházejí
-    z OpenStreetMap a v terénu ověřené nejsou.
+    ho vedeme i tady — jako horský hotel v roli historické boudy. Výšku
+    i adresu potvrzuje web hotelu, souřadnice pocházejí z OpenStreetMap
+    a v terénu ověřené nejsou.
   - >-
     Svou tradici hotel na webu odvozuje od roku 1784. Podrobnější časovou osu
     nabízejí Seznam Zprávy: podle nich vybudoval boudu v těchto místech Franz
@@ -143,8 +145,10 @@ text:
     restaurace obsluhuje i kolemjdoucí turisty, web výslovně neuvádí —
     netvrdíme to tedy ani my.
   - >-
-    Web hotelu uvádí mezi jeho přednostmi to, že se k boudě dá dojet autem.
-    Konkrétní pěší trasy, jejich délky ani převýšení zatím doložené nemáme.
+    Že se k boudě dá dojet autem, nese jen doplňkový katalogový podklad, ze
+    kterého profil vychází — web hotelu to mezi svými údaji nemá a druhým
+    pramenem doložené to není. Konkrétní pěší trasy, jejich délky ani
+    převýšení zatím doložené nemáme.
   - >-
     Nedořešená zůstává otvírací doba restaurace i to, zda hotel funguje
     celoročně; web neuvádí ani jedno. Před cestou proto doporučujeme ověřit
@@ -166,9 +170,12 @@ zdroje:
     url: https://www.krkonose.eu/hotel-spindlerova-bouda-0
   - popis: 'Seznam Zprávy — „Legendární Špindlerovka je dnes moderní hotel" (Franz Spindler 1824, požáry 1826 a 2005, Johann Hollmann 1855); sekundární médium, zdrojový průzkum 2026-07-22, verified:false'
     url: https://www.seznamzpravy.cz/clanek/magazin-cestovani-spindlerova-bouda-historie-283478
+  - popis: 'Doplňková fakta z externího katalogu chat (podklad ChatGPT, 2026-07-21) — příjezd autem k boudě, zařazení na hřeben. Próza se na tenhle podklad u příjezdu autem výslovně odvolává, proto sem patří; veřejně citovatelné umístění nemá a druhým pramenem doložený není. verified:false'
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/hotel-spindlerova-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a rozhodnutí Michala (chat 20. 7. 2026: hraniční hotely zařadit všechny, typ horsky-hotel).
   Data dotažena z webu spindlerovabouda.cz 21. 7. 2026 (session 30, ruční běh, WebFetch se schválením Michala). Metoda ověření: přímá citace z oficiálního webu → verified: false (ubytování 5 kategorií, wellness, kontakty, historie 1784). verified: false zůstává u: GPS (z OSM, neověřeno v terénu — ale adresa a výška z webu potvrzeny) a dostupnost restaurace pro veřejnost (web ji výslovně neuvádí).
   NEDOHLEDÁNO (web neuvádí): celková kapacita lůžek, otvírací doba restaurace, sezóna/celoroční provoz. Doplnit z podstránek nebo telefonicky.
   Web uvádí i druhý telefon +420 725 855 397 (recepce/rezervace) — kolekce Chaty má jen jedno pole telefon, druhé číslo je proto zaznamenáno ve zdroji overeniProvoz; případně přidat pole do schématu.
   Hero fotka: kandidáti DATA-02 bez jednoznačného záběru budovy — zvážit File:Špindlerova bouda, z parkoviště.jpg po očním potvrzení, jinak počkat na další sklizeň DATA-02.
+  DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveny čtyři vady. (1) Poloha „na hřebeni Krkonoš" a přívlastek „hřebenová bouda" stály v perexu, v text[0] i v zajimavosti[0], ale doložená je jen výška a adresa (overeniLokace cituje web) — tvrzení o typu terénu žádný pramen nenese, proto ze všech tří míst odstraněno. Zvažováno bylo místo odstranění doplnit větu, že hřeben doložit neumíme; zamítnuto, protože čtenář se na to neptá a přiznávat se má rozpor pramenů, ne nepřítomnost tvrzení. (2) Perex mlčel o rozporu 1784 (web hotelu) vs. 1824 (Seznam Zprávy), který text[1] přiznává — perex nově rozpor nese taky, aby si ho čtenář nesl od první věty. (3) Perex sliboval „restauraci s barem" bez výhrady, ač overeniObcerstveni výslovně říká, že dostupnost pro neubytované web neuvádí a text[3] to přiznává — doplněna stejná výhrada. (4) text[4] připisoval příjezd autem webu hotelu („Web hotelu uvádí mezi jeho přednostmi"), údaj ale pochází z doplňkových fakt katalogu (hlavička sekce zajimavosti), ne z citací webu v blocích overeni* — připsání opraveno a přidán záznam do zdroje[] (bez url, veřejně citovatelné umístění nemá; vzor chata-rezek a dom-slaski). zajimavosti[0] přepsána na wellness v hlavní budově, což overeniSluzby cituje přímo z webu.
+  ZAMÍTNUTO jako nedorozumění auditu: text[1] „zasáhl přístavbu, historickou hlavní budovu nikoli" NENÍ domyšlené — agent četl jen zkratku v overeniHistorie.source („2005 (požár přístavby)") a přehlédl milniky[4].udalost, které zní „Požár zasáhl přístavbu, nikoli hlavní historickou budovu"; próza odpovídá datovému poli téhož souboru. Zamítnuto i „nad Špindlerovým Mlýnem" — plyne z doložené výšky a obce (vzor dvorska-bouda).

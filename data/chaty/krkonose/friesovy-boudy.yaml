@@ -117,15 +117,19 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Horský hotel ve Strážném v centrálních Krkonoších (1 217 m) s vlastním
-  minipivovarem. Ubytuje 75 hostů ve dvoulůžkových pokojích a apartmánech, má
-  restauraci pro 90 hostů a wellness se saunou, parní lázní a bazénem.
+  Horský hotel ve Strážném (1 217 m) s vlastním minipivovarem. Ubytuje hosty ve
+  dvoulůžkových pokojích a apartmánech — kolik jich pojme, ale hlavní pramen
+  uvádí na dvou místech různě. Restaurace má 90 míst včetně baru a klubu,
+  k tomu je tu wellness se saunou, parní lázní a bazénem.
 text:
   - >-
     Friesovy boudy stojí ve výšce 1 217 m n. m. nad Strážným, na adrese
-    Strážné 95 v Královéhradeckém kraji. Nadmořskou výšku uvádí Kudy z nudy.
-    Rozsahem služeb jde o horský hotel a pod tímto označením ho vede i Kudy z
-    nudy.
+    Strážné 95 v Královéhradeckém kraji. Nadmořskou výšku uvádí Kudy z nudy
+    shodně se starším katalogovým podkladem, ze kterého profil vychází; tentýž
+    podklad řadí objekt do centrálních Krkonoš, druhým pramenem to doložené
+    nemáme. Rozsahem služeb jde o horský hotel a pod tímto označením ho vede
+    i Kudy z nudy — starší podklad ho ovšem vedl mezi horskými boudami
+    a rozhodnutí, které z obou označení použít, je naše.
   - >-
     Spí se ve dvoulůžkových pokojích a apartmánech. V kapacitě si ale hlavní
     pramen protiřečí sám: text stránky Kudy z nudy mluví o 24 pokojích a 75
@@ -134,9 +138,9 @@ text:
     zatím není ani jedno. Ubytování má fungovat celoročně.
   - >-
     Restaurace pojme 90 hostů včetně baru a klubu a otevřeno má podle Kudy
-    z nudy denně od 11:30 do 22:00. Kuchyně se profiluje specialitami české
-    domácí kuchyně v moderním pojetí a čepuje se tu pivo z vlastního
-    minipivovaru, a to ve třech druzích: dvanáctistupňové světlé,
+    z nudy denně od 11:30 do 22:00. Kuchyně se podle téhož zdroje profiluje
+    specialitami české domácí kuchyně „v moderním pojetí" a čepuje se tu pivo
+    z vlastního minipivovaru, a to ve třech druzích: dvanáctistupňové světlé,
     třináctistupňový polotmavý speciál a čtrnáctistupňové polotmavé pivo typu
     Ale. K vybavení hotelu patří wellness s finskou saunou, parní lázní,
     bazénem a lehátky.
@@ -146,8 +150,9 @@ text:
     dosažitelný pramen nezmiňuje a doložit se nepodařilo ani historii boud a
     rok jejich vzniku. Rozcházejí se také internetové adresy, pod kterými se
     hotel prezentuje: vedle té, kterou uvádějí Kudy z nudy, se ve vyhledávání
-    objevuje ještě jedna. Všechny údaje pocházejí ze sekundárního zdroje a
-    redakce je zatím neověřila vlastním dotazem; před cestou proto
+    objevuje ještě jedna. Všechny údaje pocházejí ze sekundárních pramenů —
+    z Kudy z nudy a ze staršího katalogového podkladu — a redakce je zatím
+    neověřila vlastním dotazem; před cestou proto
     doporučujeme potvrdit si kapacitu, otvírací dobu restaurace i platnou
     webovou adresu přímo u hotelu.
 zdroje:
@@ -156,6 +161,7 @@ zdroje:
       kapacita, restaurace a otvírací doba, minipivovar, wellness, kontakty);
       sekundární médium, verified:false, ověřit primárně
     url: https://www.kudyznudy.cz/aktivity/horsky-hotel-friesovy-boudy-ve-straznem
+  - popis: 'Externí katalog chat ČR/SK (podklad ChatGPT, jistota A) — nadmořská výška 1 217 m (shodně s Kudy z nudy), zařazení do centrálních Krkonoš, klasifikace objektu jako horské boudy. Próza se na tenhle soupis výslovně odvolává, proto sem patří; veřejně citovatelné umístění ani souřadnice ale nemá a druhým pramenem doložený není. verified:false'
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/friesovy-boudy.yaml (externí katalog
   ČR/SK, jistota A) v rámci master fronty Tier 1 (známka č.2049 + katalog).
@@ -174,6 +180,30 @@ interniPoznamky: >-
   i Kudy z nudy) vs. friesovy-boudy.cz (vyhledávání) — ověřit platnou.
 
   Wi-Fi ani další služby zdroj neuvádí — pole vědomě nevyplněna.
+
+  DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveno pět vad prózy.
+  (1) Perex tiše rozhodoval rozpor v kapacitě — uváděl „Ubytuje 75 hostů", ač
+  tentýž pramen nese i 66; nově perex přiznává, že hlavní pramen uvádí kapacitu
+  na dvou místech různě, a konkrétní čísla nechává textu, který oba uvádí.
+  (2) Perex zužoval „90 míst včetně baru a klubu" na „restauraci pro 90 hostů" —
+  doplněno „včetně baru a klubu" dle overeniObcerstveni. (3) text[0] nesl
+  zařazení do centrálních Krkonoš bez připsání, ač je má jen katalogový podklad
+  (overeniLokace) — připsáno a přiznáno, že druhým pramenem doložené není.
+  (4) text[0] mlčel o tichém rozporu v typu: katalog vedl objekt jako horskou
+  boudu, profil má „horsky-hotel" — rozhodnutí bylo dosud jen v této poznámce,
+  nově je přiznané i ve veřejné próze. (5) text[2] uváděl „v moderním pojetí"
+  jako fakt — připsáno „podle téhož zdroje" a formulace dána do uvozovek;
+  text[3] mluvil o „sekundárním zdroji" v jednotném čísle, ač profil stojí na
+  dvou pramenech — opraveno na množné číslo s vyjmenováním. Přidán záznam
+  do zdroje[] pro externí katalog (bez url — veřejně citovatelné umístění nemá,
+  schéma url nevyžaduje; stejný vzor jako chata-rezek a dom-slaski).
+  ZAMÍTNUTO jako nedorozumění auditu: „nad Strážným" v perexu i text[0] není
+  nedoložené tvrzení o poloze — plyne z doložené výšky a obce a stejnou vazbu
+  nese i dvakrát auditovaná dvorska-bouda („ve výšce 1 313 m nad Strážným");
+  hlídají se tvrzení o typu terénu a světových stranách, ne tahle. Zamítnut
+  i návrh uvést v próze obě sporné domény — do veřejného textu domény nepatří
+  (ban-scan) a domácí vzor z chalupa-na-rozcesti je přiznat rozpor bez hodnot,
+  což text[3] už dělá.
 
   K dotažení (DATA-04, verified:true): GPS, historie a rok vzniku, potvrdit
   kapacitu, veřejnou přístupnost a otvírací dobu restaurace, platnou doménu.
