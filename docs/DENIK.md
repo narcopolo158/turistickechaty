@@ -11,6 +11,26 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-25 — navazující session (Opus, inline): kontrolní skripty přeneseny do repa (`scripts/kontrola`)
+
+**Zadání Michala:** „můžeš pokračovat dál" / „pokračuj samostatně dál" — průchod backlogem bez doptávání. Vzata poslední otevřená položka z předchozí session: kontrolní skripty žily mimo repo, v sandboxu, a se sandboxem by zmizely.
+
+**Hotovo:** Čtyři kontroly datové vrstvy (validátor, kontrola připisování zdrojů, sken zakázaných vzorů, mechanický audit A–E) **portovány z Pythonu do TypeScriptu** jako `scripts/kontrola/`. Volba mezi „zavést Python do repa" a „přepsat" padla na přepis: repo nemělo jediný `.py` soubor, kdežto `scripts/` má 22 TypeScriptů puštěných přes `npx tsx`. Kontroly teď spadají pod `lint` i `typecheck`, mají README a dvě npm zkratky — `npm run kontrola` (všechny čtyři a nakonec regresní test) a `npm run kontrola:test`. Commity `48e270a` a `3c0fc3e`.
+
+**Port se neodhadoval, ověřil se.** Všechny čtyři skripty vracejí **bajt po bajtu stejný výstup jako pythonské originály**, a to na ostrém korpusu (42 profilů) i na fixtuře. Bylo proč to hlídat: javascriptové `\b` a `\w` jsou ASCII-only, kdežto pythonovské unicodové, takže naivní přepis by **nespadl — jen by tiše přestal zabírat na českých slovech**. Změřeno na fixtuře: `\bKč\b` a `\bzł\b` by v JS nenašly nic (správně 2 nálezy), `známk\w*\s*č\.\s*\d+` by minulo „známkách č. 673", protože `\w` se zastaví na „á", a `\b` před doménou by naopak vyrobilo falešné „hory.cz" z „Českéhory.cz". Řešeno konstantami `WB0`/`WB1`/`W` nad příznakem `u`; v celém adresáři se `\b` ani `\w` nepoužívá a stojí to i v komentáři nahoře, aby to příští ruka nerozbila.
+
+**Nová fixtura se vyplatila hned.** `scripts/kontrola/fixture/` je 10 schválně vadných profilů, každý cílí na jednu větev kontroly a na jednu past. Očekávaný výstup **nebyl psán ručně — vygenerovaly ho pythonské originály**, takže snímek je důkaz shody s předlohou a přežil to, že originály zmizely se sandboxem. Chytila dvě odchylky portu, které se na zeleném korpusu nemohly ukázat, protože ten vrací samé nuly: mezeru navíc v úryvku u kontroly D (pythonovské `str.split()` zahazuje prázdné okraje, `split(/\s+/)` v JS ne) a chybějící mezeru ve formátování výstupu kontroly zdrojů.
+
+**A jeden nález navíc, tenhle věcný:** vzor `PRIPSANI` u kontroly D měl holé `dle` a `nese`, které se trefily i dovnitř slov — „Špin**dle**rův", „ve**dle**", „v se**dle**", „při**nese**". Věta s takovým slovem tedy prošla jako připsaná, i když žádné připsání neměla, a to zrovna na slovech, co jsou v horském textu všude. Vada zděděná z předlohy; utažena na hranici slova ve vlastním commitu, odděleně od portu, aby důkaz „port se chová jako předloha" zůstal celý. **Na korpusu je rozdíl nulový** — utažení nic neodkrylo, jen zavírá díru do budoucna.
+
+**Výsledky kontrol beze změny:** validátor `CHYB: 0` (42 publikovaných, 32 chat se známkou, 25 obrázků, 162 kandidátů), připisování zdrojů 0 chybějících, sken zakázaných vzorů 135 zásahů (ustálený počet, samé známé falešné poplachy), mechanický audit 0 zásahů.
+
+**Příště:** čeká pořád jen **krok (b) DATA-15** — jazykový audit zbylých 38 profilů po dávkách, na potvrzení Michalem (otázka níže). Jinak Tier 3/4, GPS přes DATA-01, fotky z DATA-02.
+
+**Otázky pro Michala:** beze změny oproti zápisu níže — pořád visí ta jedna o kroku (b) a telefonáty z DATA-04.
+
+---
+
 ## 2026-07-25 — navazující session (Opus, inline): tři nové profily (Vrbatova bouda, Černá bouda, Kochanówka) → 42 publikovaných
 **Zadání Michala:** „můžeš pokračovat dál" / „pokračuj samostatně dál" — průchod backlogem bez doptávání. Vzata fronta z `docs/DATA-03-master-krkonose.md`: zbytek Tier 2 a začátek Tier 3.
 **Hotovo:** publikovány **tři nové profily** — 🇨🇿 **Vrbatova bouda** (Zlaté návrší, známka č. 393, obrázek nasazen do `public/znamky/`), 🇨🇿 **Černá bouda** (horský hotel kousek pod vrcholem Černé hory nad Janskými Lázněmi) a 🇵🇱 **Kochanówka** (schronisko PTTK v rokli pod vodopádem Szklarki, nezvykle nízko — asi 510 m). Publikovaných **39 → 42**, kandidátů ve frontě **45 → 42** (Tier 2 3 → 2, Tier 3 7 → 5). Podle konvence z DATA-14 se **článek psal rovnou při povýšení**, ne dodatečně. Aktualizován `docs/DATA-03-master-krkonose.md`: souhrnná čísla, tabulka klíčového zjištění (u známky č. 393 „kandidát" → **„publikováno 25. 7. 2026"**), tři nové řádky v tabulce publikovaných, vyřazené řádky z Tier 2 i Tier 3 — a **přepočtena věta, která se sama tiše rozbila**: „navíc **6** našich publikovaných chat v katalogu není" → **7** (Vrbatova bouda v ChatGPT katalogu chybí). Všechna odvozená čísla v dokumentu pak **znovu odvozena awkem přímo z tabulek**, ne převzata z prózy — publikovaná tabulka 42 řádků, Tier 1–4 dohromady 42.
