@@ -12,9 +12,10 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 ## Souhrn
 
 - **Publikováno:** 42
-- **Kandidáti k doplnění:** 42 — z toho Tier 1 (známka + katalog) 1, Tier 2 (jen známka) 2, Tier 3 (jen katalog) 5, Tier 4 (jen OSM) 34
+- **Kandidáti k doplnění:** 43 — z toho Tier 1 (známka + katalog) 1, Tier 2 (jen známka) 2, Tier 3 (jen katalog) 6, Tier 4 (jen OSM) 34
 - **Vyřazeno** (nezakládat): 10
-- Objektů se známkou: 35 · v ChatGPT katalogu: 41 · katalogových Krkonoš celkem: 42
+- Objektů se známkou: 35 · v ChatGPT katalogu: 42 · katalogových Krkonoš celkem: 42
+- **Katalog je od 25. 7. 2026 pokrytý celý** — poslední objekt, který nám z něj chyběl (Schronisko PTTK „Nad Łomniczką"), je nově kandidátem. Pokrytí znamená jen „víme o něm", ne „ověřeno".
 
 ## Klíčové zjištění — nejet jen podle ChatGPT katalogu
 
@@ -53,6 +54,7 @@ Navíc **7 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 | 🇨🇿 Hrnčířské boudy | — | ✓ 1150 m | 1150 m | — |
 | 🇨🇿 Pražská bouda | — | ✓ 1115 m | 1115 m | — |
 | 🇨🇿 Raisova chata na Zvičině | — | ✓ 671 m | 671 m | — |
+| 🇵🇱 Schronisko PTTK „Nad Łomniczką" | — | ✓ 1002 m | 1002 m | obsluhovana |
 
 ### Tier 4 — jen OSM (bez známky i katalogu — nejtenčí signál, ověřit existenci/provoz)
 
@@ -142,7 +144,9 @@ Navíc **7 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 
 ## Nové tipy z ChatGPT katalogu (nemáme ani jako kandidáta)
 
-- **Schronisko Nad Łomniczką** (1002 m, schronisko górskie, PL) — v našem fondu chybí, prověřit a případně založit kandidáta
+**Prázdné — vyřízeno 25. 7. 2026.** Poslední položka, **Schronisko Nad Łomniczką** (1002 m, PL), byla prověřena a založena jako kandidát (`data/kandidati/krkonose/schronisko-nad-lomniczka.yaml`, Tier 3). Rešerše přinesla dvě věci, které katalog nenesl a které rozhodují o zařazení: objekt podle správce (PTTK) **nemá nocleh a nabízí stravování** — je to tedy občerstvovací zastávka na trase, ne penzion s jídlem pro vlastní hosty — ale **prameny si odporují v tom, jestli vůbec funguje** (PTTK ho vede jako fungující, trasygorskie.pl a goryiludzie.pl jako uzavřený kvůli rekonstrukci). Do vyřešení rozporu se nepovyšuje a pole `stav` zůstává schválně nevyplněné.
+
+Sekci nechávat na místě: až přijde další externí seznam, tipy se sem zapisují znovu.
 
 ## Vyřazeno — nezakládat znovu (10)
 

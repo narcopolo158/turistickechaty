@@ -1,0 +1,116 @@
+# Schronisko PTTK „Nad Łomniczką" — RUČNÍ KANDIDÁT (založen redakcí, NE z OSM
+# exportu DATA-01). Vznik: session 25. 7. 2026. Objekt byl jediný tip z ChatGPT
+# katalogu, který jsme neměli ani jako kandidáta (viz docs/DATA-03-master-
+# krkonose.md, sekce „Nové tipy z ChatGPT katalogu").
+# Vše verified: false. Na web povyšovat až po vyřešení rozporu o provozu (níže).
+# Nic nedomýšlet!
+
+nazev: Schronisko PTTK „Nad Łomniczką"
+slug: schronisko-nad-lomniczka
+zeme: pl
+oblast: krkonose
+typ: obsluhovana
+
+# GPS NEvyplněna: objekt nebyl v OSM exportu DATA-01. Souřadnice 50°44'53"N,
+# 15°44'36"E uvádí goryiludzie.pl — je to sekundární zdroj, do polí se nebere,
+# dokud ji nepotvrdí OSM nebo mapa (viz interniPoznamky).
+#
+# Výška 1002 m: shodně oficiální stránka PTTK, goryiludzie.pl i ChatGPT katalog.
+# ROZPOR: trasygorskie.pl uvádí 1003 m. Vzata nejčastější a zároveň oficiální
+# hodnota, rozpor přiznán.
+
+vyska: 1002
+
+overeniLokace:
+  source: >-
+    Oficiální stránka PTTK („Schronisko PTTK »Nad Łomniczką«", 1002 m n.p.m.,
+    adresa 58-540 Karpacz, woj. dolnośląskie, provozovatel PTTK, odkaz na
+    pttk.jgora.pl). Souřadnice 50°44'53"N, 15°44'36"E dle goryiludzie.pl
+    (sekundární zdroj, do polí nevzato). ROZPOR ve výšce: 1003 m dle
+    trasygorskie.pl. Objekt leží podle goryiludzie.pl v Karkonoskim Parku
+    Narodowym, dolnośląskie. Oficiální zdroj provozovatele + dva sekundární,
+    verified:false
+  verified: false
+  checked: '2026-07-25'
+kontakty:
+  web: https://www.pttk.jgora.pl
+overeniObcerstveni:
+  source: >-
+    Oficiální stránka PTTK uvádí, že objekt „nie posiada miejsc noclegowych"
+    a „oferuje wyżywienie", a popisuje ho jako „niewielki, drewniany budynek"
+    na hlavní sudetské magistrále, který slouží jako „dogodny punkt odpoczynku
+    dla turystów" scházejících ze Sněžky. Kombinace „bez noclehu + stravování
+    + odpočinkový bod pro turisty na trase" mluví pro veřejné občerstvení, ale
+    věta, že obslouží i kolemjdoucího bez rezervace, tam DOSLOVA není. Oficiální
+    zdroj provozovatele, verified:false
+  verified: false
+  checked: '2026-07-25'
+overeniProvoz:
+  source: >-
+    ⚠ PRAMENY SI PŘÍMO ODPORUJÍ. Oficiální stránka PTTK vede objekt jako
+    fungující a píše, že „oferuje wyżywienie". Proti tomu trasygorskie.pl nese
+    varování „Uwaga: Schronisko PTTK nad Łomniczką jest w remoncie"
+    a goryiludzie.pl objekt označuje jako „nieczynny (remontowany)" a dodává,
+    že „nie prowadzi jednak noclegów", takže podle nich právně nesplňuje
+    definici horského schroniska. Otvírací dobu ani sezónu neuvádí žádný
+    z pramenů. Do vyřešení tohoto rozporu se objekt NEPOVYŠUJE. verified:false
+  verified: false
+  checked: '2026-07-25'
+overeniHistorie:
+  source: >-
+    trasygorskie.pl: postaveno roku 1901, „niemal natychmiast po jego budowie
+    (1901 r.) zniszczyła go lawina gruzowa"; po válce provoz na hlavní trase na
+    Sněžku, návštěvnost klesla po stavbě lanovky na Kopu pod Sněžkou; objekt
+    léta fungoval bez elektřiny a tekoucí vody; v 90. letech spory nájemce
+    s PTTK a hygienické závady, od té doby průběžná rekonstrukce. Německé jméno
+    „Melzergrundbaude" dle goryiludzie.pl. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-25'
+overeniPristup:
+  source: >-
+    trasygorskie.pl: výstup červenou značkou z Karpacze-Orlinku, sestup žlutou
+    a poté modrou od Drogi Urszuli (772 m). Sekundární zdroj, verified:false
+  verified: false
+  checked: '2026-07-25'
+interniPoznamky: >-
+  RUČNÍ KANDIDÁT — poslední nezpracovaný tip z ChatGPT katalogu. Založen
+  25. 7. 2026 poté, co položka „prověřit Schronisko Nad Łomniczką" visela
+  v backlogu od 21. 7. 2026.
+
+  ✅ KLÍČ ZAŘAZENÍ vychází kladně, a to silněji než u české čtveřice, která
+  v téže dávce neprošla: podle oficiální stránky PTTK objekt NEMÁ nocleh
+  a nabízí stravování — je to tedy občerstvovací zastávka na trase, ne penzion
+  s jídlem pro vlastní hosty. Přesně stejný profil jako Vrbatova bouda, kterou
+  jsme dnes publikovali. Chybí ale doslovná věta „obsloužíme i neubytované";
+  proto zatím kandidát, ne profil.
+
+  ⚠ BLOKUJÍCÍ ROZPOR — PROVOZ. Oficiální PTTK objekt vede jako fungující,
+  trasygorskie.pl i goryiludzie.pl ho k témuž datu popisují jako uzavřený kvůli
+  rekonstrukci. Nevíme, který údaj je aktuálnější — stránka PTTK datum
+  aktualizace neuvádí. Dokud to nevíme, objekt NEPOVYŠOVAT: publikovat profil
+  chaty, která je možná zavřená, je přesně ta chyba, které se konvencí B
+  vyhýbáme. Pole `stav` proto ZÁMĚRNĚ nevyplněno — ani `v-provozu`, ani
+  `mimo-provoz`.
+
+  ⚠ NEDOSTUPNÉ PRAMENY (neobcházet jinými nástroji): vlastní stránka
+  pttk.jgora.pl i oficiální přehled schronisek Karkonoskiego Parku Narodowego
+  (kpn.gov.pl/schroniska, přesměrování z kpnmab.pl) se z našeho prostředí
+  načíst nepodařilo. Obě by rozpor o provozu nejspíš rozhodly — otevřít ručně,
+  nebo počkat, až budou dostupné.
+
+  ROZPOR VE VÝŠCE: 1002 m (PTTK, goryiludzie.pl, ChatGPT katalog) vs. 1003 m
+  (trasygorskie.pl). Do pole vzata hodnota 1002 m jako nejčastější a zároveň
+  oficiální; při povýšení rozpor přiznat i ve veřejném textu.
+
+  K DOTAŽENÍ PŘED POVÝŠENÍM: (1) rozhodnout provoz — ideálně dotazem na PTTK
+  Jelenia Góra, které objekt spravuje (stejný správce jako Kochanówka, kterou
+  jsme dnes publikovali — dá se spojit do jednoho dotazu, DATA-04);
+  (2) doslovný doklad, že občerstvení je pro veřejnost; (3) GPS potvrdit z OSM
+  nebo mapy, ne přebírat z goryiludzie.pl; (4) prověřit, jestli objekt nese
+  turistickou známku (v naší sadě od Michala není).
+
+  POZNÁMKA K ZDROJI TIPU: ChatGPT katalog uváděl „1002 m, schronisko górskie,
+  PL" — výška i typ se oficiálnímu PTTK potvrdily. Katalog ale mlčí o tom, že
+  objekt nemá nocleh a že je sporné, jestli vůbec funguje; to jsou obě věci,
+  které rozhodují o zařazení. Další doklad, že katalog je vodicí seznam, ne
+  pramen.
