@@ -11,6 +11,101 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — navazující session (Opus, inline): DATA-20 — otázka není „která obec", ale „co to pole znamená". Jedna hodnota opravená, dvě domněnky vyvrácené
+
+**Zadání Michala:** „pokračuj samostatně dál." Vzato **DATA-20**, první nehotová položka
+shora. Datová část je hotová a zapsaná, položka ale **zůstává otevřená**, protože to, co
+zbývá, rozhodnout nemůžu — je to tvoje volba a je dole mezi otázkami.
+
+**Tři premisy zadání byly mylné.** Je to pátá položka v řadě po DATA-16 až DATA-19,
+u které měření převrátilo vlastní zadání; píšu to sem tak, jak to je, protože vyvrácená
+domněnka jinak zmizí a příští průchod ji udělá znovu.
+
+**Za prvé, nadpis lhal počtem.** Zněl „ověřit administrativní obec u dvou profilů".
+Průchod celého publikovaného korpusu Krkonoš: ze 42 profilů má `obec` vyplněnou **37**.
+Z nich nese `overeniLokace` u **19** směrovací číslo, u dalších **8** slovo „adresa"
+bez čísla a jen u **2** cokoli rejstříkového. Zhruba **27 hodnot ze 37 tedy pochází
+z poštovní adresy a dvě z registru**. Není to otázka o dvou profilech — je to otázka
+o korpusu a odpověď se bude přepisovat sedmadvacetkrát.
+
+**Za druhé, pole nemá dvě jména, ale tři, a každé v jiné vrstvě.** Ve schématu nese
+popisek **„Nejbližší obec"**. Ve veřejné tabulce faktů ho `page.tsx` vypisuje pod klíčem
+**„Oblast"** — a sedí přímo pod klíčem „Pohoří", takže i kdyby hodnota byla správná,
+čtenář ji čte špatně. A v drobečkové navigaci ho tentýž soubor skládá do řetězce typu
+„Česko · Krkonoše · Špindlerův Mlýn", což každý návštěvník přečte jako **příslušnost**,
+ať schéma říká, co chce. Rozhodnutí o sémantice tedy nesáhne jen do dat, ale i do
+popisku a do `page.tsx`.
+
+**Za třetí, ze dvou jmenovaných profilů byl vadný jeden — a přibyla mi vlastní mylná
+domněnka o třetím.**
+
+**Lysečinská bouda — hodnota změněna** na `obec: Horní Maršov`, `verified` zůstává
+`false`. Nerozhodlo to, že by se pro Horní Maršov našel silnější pramen, nýbrž že se
+**jediná opora Malé Úpy rozpadla sama**: adresa u Kudy z nudy páruje směrovací číslo
+pošty Horní Maršov se jménem Malá Úpa, přičemž ta pošta Horní Lysečiny ve svém obvodu
+skutečně vede a Malá Úpa má číslo jiné. K tomu se shodly tři nezávislé přehledy —
+místopisný rejstřík, soupis částí obce Horní Maršov a poštovní obvod. Rozpor je přiznaný
+ve veřejné próze i s tím, že primární pramen nemáme. Zároveň tím byla **odvolána vlastní
+poznámka z předchozího dne**, která u téhož profilu tvrdila, že to směrovací číslo patří
+Malé Úpě; stojí to teď v `interniPoznamky` vedle sebe, výrok i jeho vyvrácení.
+
+**Lovecká chata — vada se nepotvrdila, nemění se nic.** Zapsal jsem si ji jako třetí
+případ s odůvodněním, že `Velká Úpa` není obec, nýbrž část obce. Je to pravda a je to
+irelevantní: `docs/DATA-17-jmenovci.md` tenhle případ **už výslovně řeší a povoluje**
+(pravidlo R2 osadu připouští, je-li obec v profilu přítomná) a profil obec nese hned
+dvakrát, v doložené adrese i v próze. Lovecká chata je tam dokonce jmenovaná jako příklad
+toho, jak to má vypadat. Domněnka byla moje, ne nález, a je zapsaná jako vyvrácená.
+
+**Lesní bouda — hodnota se nemění, ale rozpor se nově přiznává veřejně.** Domnělý trojí
+spor byl **špatné čtení**: tři obce, které se u boudy objevují pohromadě, jsou místa,
+odkud se dá vyjet autem, ne tři adresy. Zároveň ale zeslábla opora publikované hodnoty —
+web boudy **neuvádí adresu vůbec** a o poloze říká jen „nad Pecí pod Sněžkou", což je
+popis polohy vůči obci, ne přihlášení k ní, kdežto `overeniLokace` z toho dosud dělalo
+údaj „poloha Pec pod Sněžkou". Opraveno. Proti stojí adresa v Černém Dole shodně na
+portálu Královéhradeckého kraje a ve čtyřech firemních katalozích — jenže to nejsou
+nezávislé prameny, nýbrž nejspíš **jeden rejstřík rozmnožený pětkrát**, a rejstřík vede
+sídlo provozovatele, ne polohu stavby. Podmínka, kterou si položka sama stanovila („jeden
+rejstřík proti jednomu médiu je spor, ne verdikt"), tím padla: teď je to adresní pramen
+proti webu, který adresu nemá.
+
+**A hlavně je Lesní bouda učebnicový exponát celé otázky.** Pod výkladem „nejbližší obec"
+je Pec pod Sněžkou skoro jistě správně — vede odtud žlutá značka zhruba tři kilometry,
+do Černého Dolu je to podstatně dál. Pod výkladem „správní příslušnost" může být správně
+Černý Důl. Obě odpovědi jsou obhajitelné, obě různé a jedno pole je nepojme. Přesně proto
+se musí rozhodnout nejdřív sémantika: bez ní se ověřuje proti nezadané otázce.
+
+**Vedlejší nález: podmínka u DATA-21 neplatí.** Založil jsem ji včera s tím, že se má
+dělat až po DATA-20, „protože doplňování se dotkne i skupiny `lokace`". Naměřený seznam
+osmi čekajících položek to nepodporuje — jsou to telefon, milníky, roky vzniku
+a kapacita, **ani jedna není v `lokace`**. Podmínka zrušena, DATA-21 se dá dělat hned
+a nemusí čekat na tvoje rozhodnutí.
+
+**Kontroly:** `zdroje` 0, `audit-mech` 0, `kolize-jmen` 0 (204 souborů, 130 profilů se
+jménem, 89 objektů), fixtura 4 kontroly / 0 spadlo. **`ban-scan` 133, beze změny** —
+doměřeno proti `git show HEAD` na všech třech dotčených souborech: 8 zásahů před i po,
+všechny starší (slova „OpenStreetMap" a „redakce"). Nová próza tedy nepřinesla ani jeden
+nový zásah, přestože jí přibyly tři odstavce.
+
+**Příště:** **DATA-21** (osm profilů čekajících na katalogová data, po jednom s oční
+kontrolou), protože ta už na nic nečeká. DATA-20 se dozavře, až rozhodneš sémantiku.
+
+**Otázky pro Michala:**
+1. **Co má pole `obec` znamenat?** Tohle je teď nejdražší nerozhodnutá věc — visí na ní
+   27 hodnot. Tři možnosti: (1) zůstane „nejbližší obec" a správní příslušnost dostane
+   vlastní pole, (2) překlopí se na správní příslušnost a opraví se popisek, (3) obojí
+   splyne tam, kde se neliší, a rozdíl se přizná v próze tam, kde ano. Varianta (1) je
+   nejblíž tomu, co v datech dnes opravdu stojí, ale koliduje s DATA-17, kde `obec`
+   slouží jako rozlišovač jmenovců — a k tomu je „nejbližší obec" slabý nástroj. Ať
+   padne kterákoli, k tabulce faktů se bude muset opravit klíč „Oblast", který dnes nad
+   hodnotou stojí a plete.
+2. **Kolínská bouda: 1927, nebo 1719?** (nesplaceno ze včerejška) Ty jsi uváděl 1719,
+   katalogový podklad dává 1927. Víš, odkud tvůj letopočet je?
+3. Pořád visí ty starší: rotovat GitHub token a klíč k Mapy.com, které leží v otevřeném
+   textu v zadání naplánované úlohy? Má `kontakty` dostat druhé telefonní pole pro
+   rezervační linku? A má se benecká Martinova bouda založit jako kandidát?
+
+---
+
 ## 2026-07-26 — navazující session (Opus, inline): DATA-19 hotovo — z osmi „nespárovaných" byly skutečné dvě a spravily se data, ne kód
 
 **Zadání Michala:** „pokračuj samostatně dál." Vzato **DATA-19** (přehodnotit shodu jmen

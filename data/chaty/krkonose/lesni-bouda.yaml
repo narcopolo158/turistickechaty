@@ -24,10 +24,22 @@ obec: Pec pod Sněžkou
 overeniLokace:
   source: >-
     GPS a výška 1102 m: OpenStreetMap https://www.openstreetmap.org/way/31360795
-    — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
-    poloha Pec pod Sněžkou, hřeben Liščí hory: https://lesnibouda.cz/
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    OBEC JE SPORNÁ, rozpor přiznán ve veřejném textu. Web boudy
+    https://lesnibouda.cz/ žádnou adresu neuvádí a o poloze říká jen
+    „ubytování nad Pecí pod Sněžkou" (načteno 26. 7. 2026); dřívější znění
+    tohoto pole připisovalo webu údaj „poloha Pec pod Sněžkou", což je z něj
+    vyčteno víc, než unese — opraveno. Adresu nesou až prameny odvozené
+    z rejstříku a ty kladou hotel do Černého Dolu:
+    https://www.hkregion.cz/dr-cs/102936-horsky-hotel-lesni-bouda.html
+    a https://www.zivefirmy.cz/lesni-bouda_f1097627 (obojí načteno
+    26. 7. 2026). Poloha na sedle mezi Liščí a Černou horou i přístupové cesty
+    z Pece pod Sněžkou, Černého Dolu a Dolního Dvora:
+    https://www.ceskehory.cz/ubytovani/popis/lesni-bouda-pec-pod-snezkou.html
+    (načteno 26. 7. 2026). Primární pramen — registr územní identifikace nebo
+    obecní úřad — neověřen.
   verified: false
-  checked: '2026-07-20'
+  checked: '2026-07-26'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -78,15 +90,40 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Horská bouda s eko farmou na hřebeni Liščí hory nad Pecí pod Sněžkou. Výšku
-  1 102 m nese OpenStreetMap, provozovatel ji sám neuvádí. Vlastní restaurace
-  s tradiční krkonošskou kuchyní je podle webu boudy přístupná i kolemjdoucím
-  turistům; boudu tatáž rodina provozuje od roku 1996.
+  Horská bouda s eko farmou vysoko nad Pecí pod Sněžkou, v sedle mezi Liščí
+  a Černou horou. Výšku 1 102 m nese OpenStreetMap, provozovatel ji sám
+  neuvádí — a stejně tak neuvádí adresu, takže pod kterou obec bouda spadá,
+  se prameny neshodnou. Vlastní restaurace s tradiční krkonošskou kuchyní je
+  podle webu boudy přístupná i kolemjdoucím turistům; boudu tatáž rodina
+  provozuje od roku 1996.
 text:
   - >-
-    Lesní bouda stojí na hřebeni Liščí hory v katastru Pece pod Sněžkou.
-    Polohu na hřebeni popisuje web boudy, nadmořskou výšku 1 102 metrů
-    přebíráme z OpenStreetMap — provozovatel ji sám neuvádí.
+    Lesní bouda stojí vysoko nad Pecí pod Sněžkou, na plochém sedle mezi
+    Liščí a Černou horou — tak její polohu popisuje turistický server
+    Českéhory; vlastní web boudy mluví jen obecně o hřebenech Krkonoš.
+    Nadmořskou výšku 1 102 metrů přebíráme z OpenStreetMap, provozovatel ji
+    sám neuvádí.
+  - >-
+    Pod kterou obec bouda spadá, jsme nerozhodli, protože se na tom prameny
+    neshodnou. Web boudy neuvádí adresu vůbec; píše jen, že bouda leží nad
+    Pecí pod Sněžkou, a to je popis polohy vůči obci, ne přihlášení k ní —
+    dřív jsme z něj četli víc, než unese, a tuhle stránku jsme kvůli tomu
+    opravili. Prameny, které adresu skutečně nesou, ji naopak kladou do
+    Černého Dolu: shodně tak činí portál Královéhradeckého kraje i firemní
+    katalogy. Ty ovšem čerpají z rejstříku, a ten vede sídlo provozovatele,
+    což nemusí být totéž co obec, ve které stavba stojí. Regionální ubytovací
+    server pro jistotu uvádí obě jména vedle sebe. Ponecháváme zatím Pec pod
+    Sněžkou, ke které boudu poutá i popis přístupu, ověřené to ale není ani
+    na jedné straně; rozhodnout to může až obecní úřad nebo registr územní
+    identifikace, a na ty se teprve chystáme.
+  - >-
+    S tím souvisí past, do které se dá snadno spadnout. U boudy se
+    v ubytovacích přehledech objevují tři jména obcí pohromadě — Pec pod
+    Sněžkou, Černý Důl a Dolní Dvůr — a vypadá to jako tři různé adresy.
+    Nejsou to adresy, nýbrž příjezdy: podle popisu na turistickém serveru se
+    k boudě dá po zakoupení povolení ke vjezdu do národního parku vyjet autem
+    ze všech tří míst, kdežto pěšky sem z Pece pod Sněžkou vede žlutá značka
+    dlouhá zhruba tři kilometry.
   - >-
     Doložená historie je krátká. Podle vlastního webu provozuje boudu současná
     rodina od roku 1996, starší osudy stavby zatím doložené nemáme.
@@ -101,11 +138,12 @@ text:
     provozovatel neuvádí, takže je neuvádíme ani my. Z dalšího vybavení web
     zmiňuje vířivku.
   - >-
-    Údaje na této stránce pocházejí z webu boudy a z OpenStreetMap a redakce
-    je zatím neověřila vlastním dotazem ani návštěvou. Doloženou nemáme
-    kapacitu, provozní sezónu ani přístupové trasy — ani to, kam až se dá
-    dojet autem. Před cestou proto doporučujeme ověřit si otvírací dobu
-    restaurace a možnosti ubytování přímo u provozovatele.
+    Údaje na této stránce pocházejí z webu boudy, z ubytovacích přehledů
+    a z OpenStreetMap a redakce je zatím neověřila vlastním dotazem ani
+    návštěvou. Doloženou nemáme kapacitu ani provozní sezónu a nevíme, za
+    jakých podmínek se povolení ke vjezdu vydává. Před cestou proto
+    doporučujeme ověřit si otvírací dobu restaurace a možnosti ubytování
+    přímo u provozovatele.
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/a/a3/Krkono%C5%A1e%2C_Lesn%C3%AD_bouda.jpg
     alt: Lesní bouda na hřebeni Liščí hory v Krkonoších
@@ -125,11 +163,18 @@ zdroje:
     url: https://lesnibouda.cz/
   - popis: OpenStreetMap (GPS a výška objektu, ODbL)
     url: https://www.openstreetmap.org/way/31360795
+  - popis: Českéhory — poloha na sedle mezi Liščí a Černou horou, přístupové cesty a povolení ke vjezdu
+    url: https://www.ceskehory.cz/ubytovani/popis/lesni-bouda-pec-pod-snezkou.html
+  - popis: Portál Královéhradeckého kraje — adresa hotelu v Černém Dole
+    url: https://www.hkregion.cz/dr-cs/102936-horsky-hotel-lesni-bouda.html
+  - popis: Katalog firem Živéfirmy — rejstříková adresa provozovatele v Černém Dole
+    url: https://www.zivefirmy.cz/lesni-bouda_f1097627
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/lesni-bouda.yaml (DATA-01) po křížovém ověření DATA-03 a schválení Michala (chat 20. 7. 2026, kategorie ✅).
   Výška 1102 m z OSM (web ji neuvádí); popis fotky Commons „na hřebeni Liščí hory" polohu potvrzuje.
   Kapacita lůžek a ceny: na webu neuvedeny — nezapsáno.
   KOLIZE JMEN (DATA-17, uzavřeno 26. 7. 2026): tady stálo, že v Krkonoších je i další „Lesní bouda" ve Špindlerově Mlýně — TO SE NEPOTVRDILO. Čtyři vyhledávání nedala nic; treking.cz má stránku „Lesní bouda" a jmenuje na ní jen tenhle objekt nad Pecí pod Sněžkou, OSM u něj navíc nese tag wikipedia: cs:Lesní bouda, takže i encyklopedický článek je o něm. `git log -S` ukazuje, že tvrzení vstoupilo do repozitáře commitem 0d728e2 jako holá věta bez pramene a odtud ho jako hotovou věc převzal BACKLOG i poznámka v martinova-bouda.yaml. Zapisuje se proto jako „hledali jsme a nenašli", ne jako „neexistuje" — špindlerovská Lesní bouda klidně existovat může (historická, zaniklá, jen místním jménem), doložená ale není. Poučení, které z toho vypadlo: konvence B platí i pro interniPoznamky, protože nedoložená věta tady se po dvou krocích cituje jinde jako fakt. Pravidlo a rozbor v docs/DATA-17-jmenovci.md; veřejně se nepublikuje nic, R4 bez pramene mlčí.
-  SPORNÁ OBEC (vedeno jako DATA-20): pole obec nese Pec pod Sněžkou podle webu boudy, ale firemní rejstřík u ní vede poštovní adresu v Černém Dole a ubytovací server ji řadí pod Pec pod Sněžkou, Černý Důl i Dolní Dvůr současně. Publikovaná hodnota zůstává ta z overeniLokace (web boudy je z těch tří nejblíž prameni), rozpor se zatím veřejně nepřiznává, protože jeden rejstřík proti jednomu webu je spor, ne verdikt — ověřit u boudy v rámci DATA-04.
+  SPORNÁ OBEC (DATA-20, přeměřeno 26. 7. 2026 — původní znění téhle poznámky bylo ve dvou bodech mylné a nahrazuje se jím tohle). Stálo tu, že „ubytovací server ji řadí pod Pec pod Sněžkou, Černý Důl i Dolní Dvůr současně". To je špatné čtení: ceskehory.cz ta tři jména uvádí jako místa, odkud se dá po zakoupení povolení vyjet autem („vyjet autem z Pece pod Sněžkou, Černého Dolu nebo Dolního Dvora"), tedy jako příjezdy, ne jako adresy. Domnělý trojí rozpor tím padá. Padá ale zároveň i opora publikované hodnoty: lesnibouda.cz žádnou adresu neuvádí vůbec a o poloze píše jen „ubytování nad Pecí pod Sněžkou" (načteno 26. 7. 2026) — což je popis polohy vůči obci, ne přihlášení k ní. Pole overeniLokace přitom dosud tvrdilo „poloha Pec pod Sněžkou … : lesnibouda.cz", což je z webu vyčteno víc, než unese; opraveno. Proti tomu stojí adresa „Černý Důl 187, 543 44 Černý Důl" shodně na portálu Královéhradeckého kraje (hkregion.cz) i ve firemních katalozích (zivefirmy.cz, csfirmy.cz, firmy.cz, portalridice.cz) — jenže to nejsou nezávislé prameny, nýbrž nejspíš jeden rejstřík rozmnožený pětkrát, a rejstřík vede sídlo provozovatele, ne polohu stavby. region-krkonose.cz se nerozhoduje a uvádí „Obec: Černý Důl - Pec pod Sněžkou". Hodnota se proto NEMĚNÍ — na rozdíl od Lysečinské boudy, kde se opora pro původní obec sama vyvrátila, tady jen zeslábla. Rozpor se ale nově PŘIZNÁVÁ VE VEŘEJNÉ PRÓZE, protože podmínka, kterou si tahle poznámka sama stanovila („jeden rejstřík proti jednomu webu je spor, ne verdikt"), už neplatí: je to adresní pramen proti webu, který adresu nemá vůbec. Do DATA-04: zeptat se přímo na boudě. Do DATA-20: rozhodne až registr územní identifikace nebo obecní úřad.
+  DATA-20 — SÉMANTIKA, tenhle profil je učebnicový exponát. Kdyby pole obec znamenalo to, co říká jeho popisek ve schématu („Nejbližší obec"), je Pec pod Sněžkou skoro jistě správně: vede odtud žlutá značka dlouhá zhruba tři kilometry, kdežto do Černého Dolu je to podstatně dál. Kdyby znamenalo správní příslušnost (jak s polem zachází DATA-17 a jak ho čte návštěvník z drobečkové navigace), může být správně Černý Důl. Jedno pole na obě otázky odpovědět nemůže a tady se ten rozdíl neláme v teorii, ale na konkrétním objektu: obě odpovědi jsou obhajitelné a přitom různé. Tohle patří do rozhodnutí o sémantice, ne do dohledávání hodnot.
   DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveny čtyři vady. (1) zajimavosti[0] tvrdila, že bouda „nabízí výrobky z místní produkce", a připisovala to webu — overeniSluzby ale z webu cituje jen „eko farma, vířivka"; tvrzení zúženo na doloženou farmu, stejně tak v text[2], kde je nově přiznáno, že prodej výrobků doložený nemáme. Pole zdroj u té položky navíc neslo holou URL místo jména pramene — sjednoceno s domácím stylem. (2) Próza i pole otviraciDoba tvrdily, že restaurace má otevřeno „denně", ač citace webu v overeniObcerstveni nese jen „10:30–17:00, přístupné i neubytovaným" — slovo odstraněno z obou míst a nedoloženost přiznána; rozpor mezi polem a citací tím padá (byl navržen jako položka do BACKLOGu, řeší se rovnou). (3) Perex uváděl výšku 1 102 m bez připsání, ač jde o údaj z OpenStreetMap, který provozovatel sám nenese (text[0] to přiznává) — připsáno i v perexu. (4) Perex nesl „rodinný provoz od roku 1996" jako holé konstatování — připsáno webu boudy.
   ZAMÍTNUTO jako nedorozumění auditu: Wikimedia Commons nechybí ve zdroje[] — fotky[] mají vlastní blok overeni se zdrojem, licencí i autorem a stejně to má i dvorska-bouda, která Commons ve zdroje[] rovněž nevede. Zamítnuto i „na hřebeni Liščí hory" — na rozdíl od ostatních profilů této dávky tady polohu na hřebeni cituje overeniLokace přímo z webu boudy, tvrzení tedy doložené je.
