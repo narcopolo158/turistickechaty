@@ -11,6 +11,69 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — pokračování: Sněžka rozhodnuta, DATA-24 hotová, dva noví kandidáti (Poštovna, Modrokamenná)
+
+**Zadání Michala:** „snezka - udelal bych profil kazdeho objektu zvlast" + „pokracuj
+samostatne dal."
+
+**Hotovo:**
+
+**Rozhodnutí o Sněžce zapsáno (DATA-23) a hned provedeno.** Objekt průvodce na Sněžce je
+každá stavba sama za sebe. Poštovna klíčem prochází (občerstvení dokládá vlastní web
+doslovnou větou) → **založen kandidát `postovna-na-snezce`**. Kaple občerstvení nemá,
+pod dnešním klíčem se nezakládá — rozhodnutí o granularitě klíč nerozšiřuje. Polská
+observatoř se posoudí, až bude doloženo, co veřejnosti nabízí. Dom Śląski se nemění.
+Rešerše Poštovny stojí na čtyřech pramenech (vlastní web, Krkonose.eu, Kudy z nudy,
+archiweb) a nese dvě poučení z DATA-21 rovnou v datech: **rokVzniku je 2007** (symbolické
+otevření dnešní budovy; plný provoz 10. 8. 2008), ne 1899 — tradice místa a stavba
+budovy jsou dvě veličiny (poučení Kolínská); a **1603 × 1602 m se NEzapisuje jako
+rozpor**, protože vlastní web mluví o poštovně a archiweb o hoře — dvě veličiny, ne
+neshoda (poučení Hala Szrenicka). Skutečný rozpor je jinde a je přiznaný: první poštovna
+byla otevřena 1. září 1899 (Krkonose.eu), nebo 11. září (Kudy z nudy)? Nerozhodnuto.
+Známka č. 20 „Sněžka" je vydána pro horu — vazba na poštovnu se bez dokladu o prodejním
+místě neuzavírá (logika Rezek).
+
+**DATA-24 hotová — a nutnost pojistky jsem předvedl sám na sobě.** `data09` otočen na
+`--zapis` (výchozí běh nasucho). Při ověřování jsem si přes `git stash` odložil vlastní
+úpravu a pustil „pro kontrolu" skript bez argumentů — jenže tím jsem pustil **starou
+verzi**, a ta okamžitě zapsala do pracovního stromu přesně ty tři hodnoty, které DATA-21
+téhož dne zamítla (telefon dopravce, rok koupě 1927, součtová kapacita 65). Vráceno
+z HEAD, do commitu se nic nedostalo — ale lepší důkaz si položka nemohla přát. Audit:
+`writeFileSync` má 16 skriptů, do `data/chaty/**` zapisoval jedině data09. Zbytkové
+riziko vedeno v BACKLOGu: nasucho běh ty tři zamítnuté hodnoty navrhuje dál, katalog je
+pořád nese.
+
+**Triáž DATA-22 bodu (2) — a oprava vlastního zápisu: „čtyři krkonošské položky" byly
+tři.** Položku 3080 jsem do seznamu zapsal podle jména, bez kontroly — **Mariánskohorské
+Boudy jsou osada v CHKO Jizerské hory** u Albrechtic a Josefova Dolu; infocentrum tam
+otevřeli 12. 6. 2026, provozuje ho krajská organizace STŘEVLIK a má „drobné občerstvení,
+možnost posezení a WC", takže pod rozšířeným klíčem kvalifikuje — ale až pro budoucí
+oblast, ne pro pilot. **`2540 Modrokamenná Bouda` je jediná, ze které je objekt: založen
+kandidát** — veřejnou restauraci dokládá web obce Janské Lázně doslovnou větou „pro
+veřejnost slouží restaurace" (pozor: stránka obce má rozbité kódování, citace
+rekonstruovány; vlastní web boudy se ze sandboxu nenačte — smyčka přesměrování; výška
+787 × 790 m je skutečný rozpor a je vedený v kandidátovi). **`1592 Luisino údolí`
+nezakládat** — podle Turistika.cz soubor historických roubenek podél Husího potoka,
+scenérie, žádný objekt s občerstvením. **`1909 Horní Mísečky` nezakládat** — jméno
+osady; Novomísečnou a Staromísečnou boudu už jako kandidáty vedeme.
+
+**Měření:** `npm run kontrola` zelené — validator CHYB 0 (i s oběma novými kandidáty),
+`ban-scan` drží 129 (kandidáti se neskenují, korpus se neměnil), `audit-mech` nula,
+`kolize-jmen` nula při 206 souborech / 132 jménech / 91 objektech, fixtura 4/4.
+Seznam vydavatele po založení Modrokamenné páruje 22 + 6 kandidátů, bez shody 100.
+
+**Příště:** DATA-22 bod (3) — u sedmi profilů bez shody ověřit u vydavatele, jestli
+známku mají (Černá bouda, U Jirky, Dvorská, Krakonoš, Lesní, Lovecká, Vebrovy). Nebo
+dotáhnout kandidáta Poštovny (GPS, provozovatel) k povýšení.
+
+**Otázky pro Michala:** Sněžka je rozhodnutá (díky). Trvají: (1) **Jelenka** — 26 lůžek
+ve čtyřech pokojích, nebo 25 v pěti? (2) povýšit některé ze **šesti** kandidátů se
+známkou v seznamu vydavatele (Chata Rozhled, Medvědí bouda, Richtrovy boudy, Chata
+Hubertka, Pražská bouda — a nově Modrokamenná bouda)? (3) sémantika pole `obec`
+(DATA-20). (4) rotace GitHub tokenu a klíče Mapy.com v zadání naplánované session.
+
+---
+
 ## 2026-07-26 — navazující session (Opus, inline): DATA-21 uzavřena — polovina katalogových návrhů byla vadná. Plus první primární seznam vydavatele známek
 
 **Zadání Michala:** „pokračuj samostatně dál." Vzato **DATA-21**, první nehotová položka,

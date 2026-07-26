@@ -1,0 +1,167 @@
+# Poštovna na Sněžce — RUČNÍ KANDIDÁT (založen rozhodnutím Michala, NE z OSM
+# exportu DATA-01). Rozhodnutí Michala (26. 7. 2026): na Sněžce se vede
+# profil každého objektu zvlášť (DATA-23); poštovna má veřejné občerstvení,
+# takže klíčem zařazení prochází. Založila session 26. 7. 2026.
+# Vše verified: false — na web (data/chaty/) povyšovat až po dotažení.
+# Nic nedomýšlet!
+
+nazev: Poštovna na Sněžce
+slug: postovna-na-snezce
+zeme: cz
+oblast: krkonose
+# typ: enum nemá pro tenhle druh objektu vlastní hodnotu (DATA-23 — rozhodne
+# se, až bude spočítáno, kolika objektů se to týká). Do té doby vedeno jako
+# obsluhovaný objekt: personál + veřejné občerstvení, bez noclehu.
+typ: obsluhovana
+aliasy:
+  - nazev: Česká poštovna Anežka
+    poznamka: >-
+      jméno Anežka nesou titulky serveru Krkonose.eu i archiwebu; po kom
+      poštovna jméno dostala, žádný z načtených pramenů neuvádí
+  - nazev: Česká poštovna Sněžka
+    poznamka: tvar z vlastního webu poštovny
+
+obec: Pec pod Sněžkou # z poštovní adresy „Sněžka, 542 91 Pec pod Sněžkou" (Kudy z nudy) — POZOR, PSČ pramen; sémantika pole se řeší v DATA-20
+# POZOR NA DVĚ RŮZNÉ VELIČINY (poučení z Hali Szrenickiej): vlastní web píše
+# „Poštovna na Sněžce 1603 m" — tvrzení o poštovně; archiweb má v adresní
+# řádce „Sněžka 1602 m.n.m." — údaj o hoře. Není to doložený rozpor o výšce
+# budovy, nezapisovat jako rozpor, dokud druhý pramen nemluví o budově.
+vyska: 1603
+
+# GPS záměrně NEvyplněna: objekt nebyl v OSM exportu DATA-01 (ten filtroval
+# boudy) a souřadnice zatím nemáme doloženy — doplnit při povýšení, nikoli
+# odvodit z vrcholu Sněžky nebo z bodu Domu Śląského.
+
+kontakty:
+  web: https://www.postovnasnezka.cz/
+
+otviraciDoba: >-
+  po–ne 9–18 h podle vlastního webu poštovny (načteno 26. 7. 2026);
+  sezónnost web neuvádí
+
+overeniLokace:
+  source: >-
+    vlastní web poštovny (postovnasnezka.cz, načteno 26. 7. 2026): „Poštovna
+    na Sněžce 1603 m". Adresa dle Kudy z nudy (kudyznudy.cz/aktivity/
+    ceska-postovna-na-vrcholu-snezky, načteno 26. 7. 2026): „Sněžka, 542 91
+    Pec pod Sněžkou". Archiweb (archiweb.cz, načteno 26. 7. 2026) vede
+    v adresní řádce „Sněžka 1602 m.n.m." — to je ale údaj o hoře, ne
+    o budově; dvě veličiny, ne rozpor (poučení z Hali Szrenickiej).
+  verified: false
+  checked: '2026-07-26'
+overeniObcerstveni:
+  source: >-
+    vlastní web poštovny (postovnasnezka.cz, načteno 26. 7. 2026), doslova:
+    „Uvnitř této unikátní stavby můžete využít listovních služeb a odeslat
+    pohled z nejvyššího místa v ČR. V naší nabídce najdete originální
+    pohledy i suvenýry. Součástí Poštovny je i občerstvení s nabídkou
+    teplých i studených nápojů, také si můžete vybrat něco malého
+    k snědku." a „OTEVŘENO PO-NE 9 - 18h". Podoba občerstvení (kiosek?
+    bufet?) není webem pojmenována — typObcerstveni proto nevyplněno.
+  verified: false
+  checked: '2026-07-26'
+overeniHistorie:
+  source: >-
+    Kudy z nudy (kudyznudy.cz/aktivity/ceska-postovna-na-vrcholu-snezky,
+    načteno 26. 7. 2026), doslova: „Poštovna Císařské a královské rakouské
+    pošty byla slavnostně otevřena 11.9.1899 na České boudě." a „Byla
+    nejdříve symbolicky otevřena v srpnu 2007 za účasti prezidenta republiky
+    Václava Klause. Do plného normálního provozu byla uvedena 10.8.2008."
+    Server Krkonose.eu (anglická verze stránky, načteno 26. 7. 2026),
+    doslova: „The tradition of the post office on Snezka dates back to
+    September 1, 1899, when the first one was opened." a „Postal services
+    on Snezka were restored by Jaroslava Skrbkova, a former postmistress
+    from Velks Upa, who renovated an old fast-food kiosk for this purpose
+    and also became the investor in the new post office." („Velks Upa" je
+    zjevně zkomolená Velká Úpa — přepis stránky, ne náš; do prózy nebrat).
+    Archiweb (archiweb.cz/b/nova-ceska-postovna-anezka-na-snezce, načteno
+    26. 7. 2026): „Realizace:2006-07", „Autor: H.R.A. Hoffman Rajniš
+    Architekti | Patrik Hoffman, Martin Rajniš", „INVESTOR - Jaroslava
+    Skrbková". ROZPOR V DATU 1899: Krkonose.eu píše 1. září, Kudy z nudy
+    11. září — nerozhodovat, oba prameny jsou sekundární; při povýšení
+    přiznat v próze. rokVzniku nese rok 2007 (symbolické otevření dnešní
+    budovy), NE 1899 — poučení z Kolínské boudy: tradice místa a stavba
+    budovy jsou dvě různé veličiny.
+  verified: false
+  checked: '2026-07-26'
+overeniProvoz:
+  source: >-
+    vlastní web poštovny (postovnasnezka.cz, načteno 26. 7. 2026) —
+    provozovatele neuvádí; Krkonose.eu jmenuje Jaroslavu Skrbkovou jako
+    obnovitelku poštovních služeb a investorku nové budovy, což je údaj
+    historický, ne doklad dnešního provozovatele. Dnešní provozovatel
+    NEDOLOŽEN — nedomýšlet.
+  verified: false
+  checked: '2026-07-26'
+
+# rokVzniku = rok symbolického otevření DNEŠNÍ BUDOVY (srpen 2007, Kudy
+# z nudy); realizace stavby 2006–07 dle archiwebu, plný provoz od 10. 8.
+# 2008. První poštovna na Sněžce je 1899 — jiná budova (Česká bouda,
+# zaniklá), patří do milníků, ne sem.
+rokVzniku: 2007
+milniky:
+  - rok: 1899
+    udalost: >-
+      Na České boudě byla otevřena první poštovna na Sněžce; na dni se
+      prameny neshodnou (1., nebo 11. září)
+  - rok: 2007
+    udalost: >-
+      V srpnu byla symbolicky otevřena dnešní budova architektů Martina
+      Rajniše a Patrika Hoffmana, za účasti prezidenta Václava Klause
+  - rok: 2008
+    udalost: 10. srpna byla nová poštovna uvedena do plného provozu
+
+zajimavosti:
+  - text: >-
+      Poštovna má podle Kudy z nudy přidělené vlastní poštovní směrovací
+      číslo.
+    kategorie: jine
+    zdroj: kudyznudy.cz/aktivity/ceska-postovna-na-vrcholu-snezky
+
+zdroje:
+  - popis: >-
+      Vlastní web poštovny — občerstvení, listovní služby, suvenýry,
+      otvírací doba, výška 1603 m (načteno 26. 7. 2026)
+    url: https://www.postovnasnezka.cz/
+  - popis: >-
+      Kudy z nudy — data 1899 / 2007 / 2008, architekti, poštovní adresa,
+      vlastní PSČ (načteno 26. 7. 2026)
+    url: https://www.kudyznudy.cz/aktivity/ceska-postovna-na-vrcholu-snezky
+  - popis: >-
+      Server Krkonose.eu — tradice od září 1899, architekti, obnova
+      poštovních služeb (Jaroslava Skrbková); načtena anglická verze
+      stránky (načteno 26. 7. 2026)
+    url: https://www.krkonose.eu/en/anezka-post-office-snezka
+  - popis: >-
+      Archiweb — realizace 2006–07, ateliér H.R.A., investor (načteno
+      26. 7. 2026)
+    url: https://www.archiweb.cz/b/nova-ceska-postovna-anezka-na-snezce
+
+interniPoznamky: >-
+  RUČNÍ KANDIDÁT — založen 26. 7. 2026 na základě rozhodnutí Michala
+  (26. 7. 2026): „snezka - udelal bych profil kazdeho objektu zvlast" —
+  objekt průvodce na Sněžce je každá stavba sama za sebe (DATA-23).
+  Poštovna klíčem zařazení prochází (veřejné občerstvení doloženo vlastním
+  webem). Sousední objekty: Dom Śląski už profil má
+  (data/chaty/krkonose/dom-slaski.yaml — leží pod vrcholem, ne na něm);
+  kaple na vrcholu občerstvení nemá, pod dnešním klíčem se nezakládá;
+  polská observatoř se posoudí zvlášť, až bude doloženo, co veřejnosti
+  nabízí.
+
+  ZNÁMKA č. 20 „Sněžka": je v oficiálním seznamu vydavatele (DATA-22),
+  ale je vydána pro HORU, ne pro poštovnu — vazbu na tento profil
+  neuzavírat bez dokladu, kde se známka prodává (stejná logika jako
+  u Osady Rezek, viz hlavička scripts/data22-znamky-oficialni-seznam.ts).
+  Alias se známkou NEpřidávat.
+
+  ROZPORY A SLABINY vedené v overeni blocích: (a) datum otevření první
+  poštovny 1. 9. vs. 11. 9. 1899 (Krkonose.eu vs. Kudy z nudy) —
+  nerozhodnuto; (b) výška 1603 m je tvrzení vlastního webu o poštovně,
+  archiwebových 1602 m je údaj o hoře v adresní řádce — dvě veličiny,
+  nezapisovat jako rozpor; (c) dnešní provozovatel nedoložen.
+
+  K dotažení před povýšením: GPS (OSM/mapa, nedomýšlet z vrcholu),
+  dnešní provozovatel, sezónnost otvírací doby, po kom je jméno Anežka
+  (žádný načtený pramen neříká), vztah listovních služeb k České poště,
+  fotky (Commons — DATA-02 běh po povýšení). Při povýšení napsat článek
+  rovnou (konvence DATA-14) a přiznat v něm rozpor (a).

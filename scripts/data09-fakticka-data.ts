@@ -9,7 +9,15 @@
  * přeformátuje celý soubor), ale CHIRURGICKY textově — ruční formát i komentáře
  * s proveniencí zůstávají beze změny; přidají se jen nové řádky.
  *
- *   npx tsx scripts/data09-fakticka-data.ts [--dry]
+ * VÝCHOZÍ BĚH JE NASUCHO — zapisuje se až s přepínačem `--zapis` (DATA-24).
+ * Otočeno 26. 7. 2026 po DATA-21: ze osmi návrhů, které by skript zapsal,
+ * byly čtyři po ověření proti prameni vadné (rok koupě místo roku stavby,
+ * součet místo údaje, telefon dopravce místo boudy, nedoložený letopočet).
+ * Nástroj, který sahá do publikovaných profilů, nesmí zapisovat jen proto,
+ * že ho někdo pustil bez argumentů. Starší `--dry` zůstává přijímán a je
+ * teď bez účinku (dry je default).
+ *
+ *   npx tsx scripts/data09-fakticka-data.ts [--zapis]
  */
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -174,7 +182,8 @@ export const doplnText = (
 // ── CLI ─────────────────────────────────────────────────────────────────────
 
 const main = () => {
-  const dry = process.argv.includes('--dry')
+  // DATA-24: zápis jen na výslovné vyžádání; bez `--zapis` se nic nemění.
+  const zapis = process.argv.includes('--zapis')
   if (!existsSync(CSV)) throw new Error(`Chybí katalog ${CSV}.`)
   const fakta = nactiFakta(readFileSync(CSV, 'utf8'))
 
@@ -194,10 +203,10 @@ const main = () => {
     const r = fakta.get(klic)!
     const { text: novy, doplneno, ponechano } = doplnText(text, r)
     vysledky.push({ nazev: y.nazev, jistota: r.jistota, doplneno, ponechano })
-    if (!dry && doplneno.length && novy !== text) writeFileSync(cesta, novy, 'utf8')
+    if (zapis && doplneno.length && novy !== text) writeFileSync(cesta, novy, 'utf8')
   }
 
-  console.log(`\n## DATA-09 report — doplňková faktická data${dry ? ' (DRY-RUN)' : ''}`)
+  console.log(`\n## DATA-09 report — doplňková faktická data${zapis ? '' : ' (NASUCHO — zápis až s --zapis)'}`)
   const dotcene = vysledky.filter((v) => v.doplneno.length)
   console.log(`Chat se shodou: ${vysledky.length} · doplněno u: ${dotcene.length} · bez shody: ${bezShody}`)
   for (const v of vysledky) {

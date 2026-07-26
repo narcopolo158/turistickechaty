@@ -1,0 +1,112 @@
+# Modrokamenná bouda — RUČNÍ KANDIDÁT (založen z triáže DATA-22, NE z OSM
+# exportu DATA-01). Položka 2540 oficiálního seznamu známkových míst
+# vydavatele; v korpusu dosud nebyla vůbec. Klíčem zařazení prochází:
+# veřejnou restauraci dokládá web obce Janské Lázně doslovnou větou.
+# Založila session 26. 7. 2026. Vše verified: false — na web povyšovat
+# až po dotažení. Nic nedomýšlet!
+
+nazev: Modrokamenná bouda
+slug: modrokamenna-bouda
+zeme: cz
+oblast: krkonose
+typ: obsluhovana
+obec: Janské Lázně # obě adresy (web obce i krajský katalog) — poštovní pramen, sémantika pole se řeší v DATA-20
+# ROZPOR VÝŠKY, zatím nerozhodnutý: web obce píše „ve výšce 787 m.n.m.",
+# krajský katalog vede „Nadmořská výška: 790 m". Obojí je o boudě, takže
+# na rozdíl od Poštovny to rozpor JE — pole nese katalogovou hodnotu,
+# při povýšení přiznat v próze.
+vyska: 790
+kapacita: 50 # krajský katalog: „Celková kapacita lůžek: 50" (verified:false)
+pokoje: 15 # krajský katalog: „Celkový počet pokojů: 15" (verified:false)
+
+# GPS záměrně NEvyplněna do polí: krajský katalog ji uvádí (viz
+# overeniLokace), ale bez vlastního ověření ji nepřebíráme — doplnit při
+# povýšení proti OSM/mapě, ať nesedíme na jediném katalogu.
+
+kontakty:
+  web: https://www.modrokamennabouda.cz/
+
+overeniLokace:
+  source: >-
+    web obce Janské Lázně (janskelazne.cz, načteno 26. 7. 2026), doslova:
+    „pension Modrokamenná bouda leží v krásném prostředí Krkonoš na okraji
+    paseky, uprostřed lesního porostu necelé 2 km od centra Janských Lázní
+    přímo pod skalním útvarem Modré kameny ve výšce 787 m.n.m." (POZOR:
+    stránka má rozbité kódování češtiny, citace rekonstruována doplněním
+    diakritiky — smysl vět je ale jednoznačný). Krajský katalog
+    (hkregion.cz, načteno 26. 7. 2026): „Modrokamenná 206 Janské Lázně,
+    542 25 GPS: 50°38'34.95"N,15°47'27.24"E Nadmořská výška: 790 m".
+    ROZPOR 787 × 790 m — nerozhodnuto, oba prameny jsou sekundární.
+  verified: false
+  checked: '2026-07-26'
+overeniObcerstveni:
+  source: >-
+    web obce Janské Lázně (janskelazne.cz, načteno 26. 7. 2026), doslova:
+    „pro veřejnost slouží restaurace" a „Restaurace má kapacitu 50 míst
+    s tanečním parketem, TV, kulečník + stolní fotbal"; k ubytovaným
+    doslova: „pro ubytované hosty podává se snídaně (formou bufetu),
+    večeře i možnost oběda" (kódování rekonstruováno, viz overeniLokace).
+    Otvírací doba restaurace NEDOLOŽENA. Vlastní web boudy má sekci
+    restaurace, ale ze sandboxu se nenačte (smyčka přesměrování) —
+    NEOTEVŘENO, dotáhnout při povýšení.
+  verified: false
+  checked: '2026-07-26'
+overeniNocleh:
+  source: >-
+    krajský katalog (hkregion.cz, načteno 26. 7. 2026), doslova: „Celková
+    kapacita lůžek: 50 Celkový počet pokojů: 15". Jediný pramen; vlastní
+    web boudy NEOTEVŘEN (smyčka přesměrování ze sandboxu).
+  verified: false
+  checked: '2026-07-26'
+overeniProvoz:
+  source: >-
+    vlastní web boudy (modrokamennabouda.cz) se ze sandboxu nenačte —
+    smyčka přesměrování; NEOTEVŘEN. Titulek webu ve výsledcích hledání
+    zní „Rodinný penzion Modrokamenná bouda | 150 let tradice v Janských
+    Lázních, Krkonoše" — tvrzení o 150 letech tradice je tedy jen
+    z titulku, stránku samu jsme nečetli; nepřebírat do prózy, dokud se
+    web neotevře. Provozovatel NEDOLOŽEN.
+  verified: false
+  checked: '2026-07-26'
+
+zdroje:
+  - popis: >-
+      Web obce Janské Lázně — veřejná restaurace (doslovná věta), poloha
+      pod Modrými kameny, výška 787 m (načteno 26. 7. 2026; stránka má
+      rozbité kódování češtiny)
+    url: https://www.janskelazne.cz/cz/pension-modrokamenna-bouda-janske-lazne-67.html
+  - popis: >-
+      Krajský katalog Královéhradeckého kraje — adresa, GPS, výška 790 m,
+      kapacita 50 lůžek / 15 pokojů (načteno 26. 7. 2026)
+    url: https://www.hkregion.cz/dr-cs/103032-modrokamenna-bouda.html
+  - popis: >-
+      Vlastní web boudy — NEOTEVŘEN (smyčka přesměrování ze sandboxu,
+      26. 7. 2026); má sekci restaurace, titulek mluví o rodinném penzionu
+      a 150 letech tradice
+    url: https://www.modrokamennabouda.cz/
+
+interniPoznamky: >-
+  RUČNÍ KANDIDÁT — založen 26. 7. 2026 při triáži DATA-22 (položka 2540
+  oficiálního seznamu známkových míst vydavatele; objekt v korpusu dosud
+  nebyl). Klíč zařazení splněn: veřejnou restauraci dokládá web obce
+  doslovnou větou „pro veřejnost slouží restaurace".
+
+  ZNÁMKA č. 2540 „Modrokamenná Bouda, Krkonoše": v oficiálním seznamu
+  vydavatele (DATA-22). Na rozdíl od Rezku a Dvoraček tu název známky
+  jmenuje přímo boudu, vazba tedy vypadá přímá — ale kde se známka
+  prodává, doloženo nemáme; před tvrzením v próze ověřit u vydavatele
+  (podmínka DATA-22: seznam je seznam prodejen, ne objektů).
+
+  ROZPORY vedené v overeni blocích: výška 787 m (web obce) × 790 m
+  (krajský katalog) — nerozhodnuto. POZOR na kvalitu pramenů: web obce má
+  rozbité kódování (citace rekonstruovány), vlastní web boudy se ze
+  sandboxu vůbec nenačte (smyčka přesměrování) a krajský katalog je
+  nejspíš týž rejstřík, který kraj množí do víc katalogů — skutečně
+  nezávislé prameny jsou tu zatím dva.
+
+  K dotažení před povýšením: vlastní web boudy (restaurace — otvírací
+  doba a potvrzení veřejné přístupnosti z první ruky, historie „150 let",
+  provozovatel, kontakty), GPS proti OSM/mapě, rok vzniku a historie
+  (žádný načtený pramen nenese), fotky (Commons — DATA-02 běh po
+  povýšení). Při povýšení napsat článek rovnou (konvence DATA-14)
+  a přiznat rozpor výšek.
