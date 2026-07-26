@@ -11,6 +11,55 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — pokračování 7: Tier 4 komplet ztriážován — 15 + 6 do fronty povyšování, plné citace v DATA-27
+
+**Zadání Michala:** „pokracuj samostatne komplet tier 4."
+
+**Hotovo:**
+
+**Všech 32 kandidátů Tier 4 prošlo rešerší a má verdikt.** Rešerše běžela
+čtyřmi paralelními běhy s protokolem doslovných citací (úniková formulka,
+zákaz domýšlení) — dohromady ~330 dotazů. Výstup je nový dokument
+**`docs/DATA-27-tier4-triaz.md`**: u každého objektu verdikt + doslovné citace
+s URL, ze kterých při povyšování vznikne profil bez nové rešerše; zkrácený
+verdikt je zapsaný i v `interniPoznamky` každého kandidáta.
+
+**Souhrn verdiktů: 15 silných do fronty povyšování** — mezi nimi tři perly:
+Chata Jelení Louky (hospůdka s tradicí od **1731**, výčepní oprávnění Karla
+Zee, do 1945 Zehgrundbauden), Bouda Na Pláni (Rennerové **1530** dle vlastního
+webu — jen s připsáním; a březen **1944**: setkání odpůrců nacismu včetně
+Stauffenberga) a Patejdlova bouda (**1710**, dnes chata Univerzity Karlovy —
+vzor Richtrovy). Klíč doslovně splněn u Boudy Helena („pro neubytované hosty
+telefonickou rezervaci") a U Kotle („otevřen i pro veřejnost…"). Smetánčin
+verdikt „penzion" z 20. 7. je REVIDOVÁN — Kudy z nudy dokládá hostinské
+pokoje ~1900 a přejmenování na Smetanovu boudu 1945. Barborka půjde jako
+první profil se stavem **mimo-provoz** („Z důvodu havarijního stavu objektu
+dočasně uzavřeno"). **6 s výhradou** (Slovanka, Studenov, Zákoutí, Na Muldě,
+obě Mísečné). **Mamut vyřazen trvale** (čistý pronájem bez stravování i bez
+minulosti), **Javorka zůstává nedoložená** (jen rozcestník; Archa Krkonoš
+nedostupná). **Do otázek:** Konopinda (spolková lyžařská historie 1927/Kazbek/
+Svaz lyžařů — je to „služba turistům"?), Aurora (chata 1880–1890 bez
+občerstvení), čtyři polské zamčené spolkové chatky (AKT 1908, Wielkanocna,
+Smogorniak, Puchatka — identita Puchatky VYŘEŠENA: schron v Sowí Dolině)
+a forma Míseček (jeden areál × dva profily).
+
+**Drobné opravy starších zápisů z rešerše:** webkameru u boudy Na Muldě
+provozuje dle odkazu Humlnet, ne Horská služba; Srebrny Potok leží nad
+Jarkowicemi na Grzbietu Lasockém, ne u Przełęczy Okraj; Zákoutí je
+jednoznačně Vítkovice 297 (harrachovská „Chata V Zákoutí" je jiný podnik);
+u Studenova stojí vedle sebe DVA objekty (72 + 25 lůžek) — náš je dle GPS
+ten první.
+
+**Měření:** `npm run kontrola` zelené (49 profilů beze změny, kandidáti
+aktualizováni, kolize 0, fixtura 4/4).
+
+**Příště:** psát profily z fronty — pořadí podle síly materiálu: Jelení
+Louky, Bouda Na Pláni, Helena, U Kotle, Amor… (15 + 6). Pak už jen zbytky
+(DATA-25 bod a — 10 vyřazených) a uzavřít Krkonoše s kompletním seznamem
+otázek.
+
+---
+
 ## 2026-07-26 — pokračování 6: Tier 3 dojet — tři povýšení (49 profilů), dva kandidáti blokovaní otázkou
 
 **Zadání Michala:** „pokracuj dal." (Otázky se dál střádají na konec Krkonoš.)

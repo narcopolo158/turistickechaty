@@ -84,6 +84,17 @@ kandidát je od Benecka) — Hubertka tier nemění.
 
 ### Tier 4 — jen OSM (bez známky i katalogu — nejtenčí signál, ověřit existenci/provoz)
 
+**TRIÁŽ CELÉHO TIERU HOTOVÁ 26. 7. 2026 — viz `docs/DATA-27-tier4-triaz.md`**
+(plné citace s URL u všech 32 objektů; verdikt je i v `interniPoznamky` každého
+kandidáta). Souhrn: **15 do fronty povyšování** (Jelení Louky, Bouda Na Pláni,
+Helena, U Kotle, Amor, Husova bouda, Smetánka, Srebrny Potok, Patejdlova,
+Jindřichův dům, Sedmidolí, Betyna, Na Lučinách, Náchodská, Barborka — ta jako
+mimo-provoz), **6 s výhradou** (Slovanka, Studenov, Zákoutí, Na Muldě,
+Novomísečná + Staromísečná), **1 vyřazen trvale** (Mamut), **1 nedoloženo**
+(Javorka), **9 v otázkách na Michala** (Konopinda, Aurora, Eliška potvrzení,
+4 polské zamčené chatky, Mísečky-forma). Tabulka níž je tím nahrazena jako
+pracovní seznam; nechává se jako historický zápis stavu z 20. 7.
+
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |
 |---|---|---|---|---|
 | 🇨🇿 Amor | — | — | — | obsluhovana |
