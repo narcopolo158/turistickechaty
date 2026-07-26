@@ -13,34 +13,61 @@ zeme: cz
 typ: obsluhovana
 stav: v-provozu
 oblast: krkonose
+
+# ── Jména ─────────────────────────────────────────────────────────────────
+# DATA-19 (26. 7. 2026): server Krkonose.eu vede tentýž objekt na dvou
+# stránkách pod dvěma jmény a katalogový podklad zná jen to druhé — proto ho
+# párování DATA-09 minulo. Zapsáno jako alias: opravuje se datum, ne
+# porovnávač (shodaNazvu aliasy čte, takže shoda vznikne sama).
+aliasy:
+  - nazev: Bouda u Bílého Labe
+    poznamka: jméno na serveru Krkonose.eu a v katalogovém podkladu 2026-07-21
+
 zajimavosti:
   - text: V údolí Bílého Labe (1000 m), na levém břehu řeky a na křižovatce čtyř turistických tras
     kategorie: jine
     zdroj: web chaty (boudabilelabe.cz)
+  - text: Bouda stojí na místě skladiště, které v údolí zbylo po hrazení Bílého Labe po povodni roku 1897
+    kategorie: jine
+    zdroj: průvodce Poznej domy; úpravy toku po povodni zmiňuje i server Krkonose.eu
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS z OSM (ODbL); výška a poloha z webu boudy. Obec nevyplněna — web
-# uvádí jen vzdálenost od Špindlerova Mlýna, katastr nedoložen.
+# GPS z OSM (ODbL); výška a poloha z webu boudy. Pole obec schéma jmenuje
+# „nejbližší obec", ne katastr — poštovní adresa na Krkonose.eu i doložená
+# vzdálenost od centra vedou shodně na Špindlerův Mlýn, katastrální
+# příslušnost tím ale doložená není (DATA-20).
 lat: 50.7410064
 lng: 15.6475053
 vyska: 1000
+obec: Špindlerův Mlýn
 overeniLokace:
   source: >-
     GPS: OpenStreetMap https://www.openstreetmap.org/way/31128149 — data ©
     přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
     výška 1000 m n. m. a poloha na levém břehu Bílého Labe cca 5 km od centra
     Špindlerova Mlýna: https://www.boudabilelabe.cz/ (načteno 20. 7. 2026,
-    DATA-03 session 22)
+    DATA-03 session 22); nejbližší obec z poštovní adresy „Špindlerův Mlýn
+    176" na https://www.krkonose.eu/bouda-bile-labe (načteno 26. 7. 2026,
+    DATA-19) — poštovní údaj, katastr tím doložený není (DATA-20)
   verified: false
   checked: '2026-07-20'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# Kapacitu homepage webu neuváděla — nedomýšlet, dotáhnout z podstránek.
+# Kapacitu homepage webu neuváděla; 28 lůžek doplněno 26. 7. 2026 (DATA-19)
+# ze serveru Krkonose.eu, který ji shodně nese na obou svých stránkách.
 nocleh: ano
+kapacita: 28
+pokoje:
+  - typ: Dvou- až čtyřlůžkové pokoje
 overeniNocleh:
-  source: https://www.boudabilelabe.cz/ (ubytování na horské chatě; načteno 20. 7. 2026, DATA-03 — kapacita na homepage neuvedena)
+  source: >-
+    https://www.boudabilelabe.cz/ (ubytování na horské chatě; načteno
+    20. 7. 2026, DATA-03 — kapacita na homepage neuvedena); kapacita 28 lůžek
+    a dvou- až čtyřlůžkové pokoje shodně na
+    https://www.krkonose.eu/bouda-bile-labe i
+    https://www.krkonose.eu/bouda-u-bileho-labe (načteno 26. 7. 2026, DATA-19)
   verified: false
-  checked: '2026-07-20'
+  checked: '2026-07-26'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 kuchyne: ano
@@ -51,47 +78,110 @@ overeniObcerstveni:
   checked: '2026-07-20'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
-# Kontakty a otvírací doba jen z OSM tagů (stav dat 2026-06-12) — homepage
-# webu je neuváděla, proti webu neověřeny.
+# Kontakty jen z OSM tagů (stav dat 2026-06-12) — homepage webu je neuváděla.
+# Otvírací dobu nese OSM i katalogový podklad odvolávající se na web boudy,
+# shodně; proti webu ji redakce neověřila.
 otviraciDoba: |-
-  Denně 10:30–18:00 (údaj z OSM, redakčně neověřeno — před cestou ověřit na webu boudy).
+  Denně 10:30–18:00 (shodně mapová data a katalogový podklad odvolávající se na web boudy; redakčně neověřeno — před cestou ověřit u boudy).
 kontakty:
   telefon: +420 499 422 121
   email: bile.labe@seznam.cz
   web: https://www.boudabilelabe.cz/
+  # ROZPOR V TELEFONU (DATA-19, 26. 7. 2026): tři různá čísla ve třech
+  # pramenech. OSM (way/31128149, ODbL) nese to zapsané výš; každá ze dvou
+  # stránek Krkonose.eu uvádí jiné a katalogový podklad 2026-07-21 obě z nich
+  # najednou. Publikováno zůstává číslo z OSM (vzor Hali Szrenickiej), rozpor
+  # je přiznán ve veřejné próze bez uvádění čísel. Rozhodne DATA-04.
 overeniProvoz:
   source: >-
     telefon, e-mail a otvírací doba (Mo–Su 10:30–18:00): OpenStreetMap
     https://www.openstreetmap.org/way/31128149 — data © přispěvatelé
     OpenStreetMap, ODbL 1.0 (stav dat 2026-06-12); web boudy:
     https://www.boudabilelabe.cz/ (načteno 20. 7. 2026, DATA-03 — homepage
-    kontakty neuváděla)
+    kontakty neuváděla); tutéž otvírací dobu „denně 10:30–18:00" nese
+    i katalogový podklad 2026-07-21 se zdrojem boudabilelabe.cz/kontakt
+    (stránku jsme neotevřeli) — dva prameny se shodují; telefon se naopak
+    rozchází, viz komentář u kontaktů
   verified: false
   checked: '2026-07-20'
 
+# ── Historie ──────────────────────────────────────────────────────────────
+# Doplněno 26. 7. 2026 (DATA-19). Do té doby tu historie chyběla úplně
+# a próza to přiznávala jako mezeru — katalogový podklad ji přitom nesl od
+# 21. 7., jen ho párování minulo kvůli jinému jménu objektu.
+rokVzniku: 1913
+milniky:
+  - rok: 1897
+    udalost: "Povodeň podemlela břehy v údolí Bílého Labe; stát pak nechal tok hradit kamennými stavbami a prahy"
+  - rok: 1900
+    udalost: "Poblíž se otevřel žulový lom; pro práce vznikl sklad materiálu s provizorní ubytovnou"
+  - rok: 1913
+    udalost: "Na místě toho skladiště postavil Václav Hollmann jednopatrovou boudu"
+  - rok: 1945
+    udalost: "Hollmann, který boudu do té doby rozšířil a postavil u ní malou vodní elektrárnu, ji s koncem druhé světové války provozovat přestal"
+  - rok: 2023
+    udalost: "Boudu koupil soukromý vlastník; pokoje prošly rekonstrukcí"
+overeniHistorie:
+  source: >-
+    rok vzniku 1913 a zakladatel: https://www.krkonose.eu/bouda-u-bileho-labe
+    i https://poznejdomy.cz/domy/detail/650-bouda-u-bileho-labe (obojí načteno
+    26. 7. 2026, DATA-19); povodeň 1897 a hrazení bystřin, lom a sklad kolem
+    roku 1900, pozdější rozšíření s malou vodní elektrárnou, provoz do konce
+    druhé světové války, poválečná posloupnost vlastníků a rekonstrukce 2023:
+    jen Poznej domy — jediný pramen, redakcí neověřený. POZOR: Krkonose.eu
+    píše příjmení „Hollman", Poznej domy „Hollmann"; rozpor nerozřešen
+  verified: false
+  checked: '2026-07-26'
+
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Horská chata na levém břehu Bílého Labe ve výšce kolem 1 000 m n. m.,
-  asi 5 km od centra Špindlerova Mlýna. Restaurace s terasou a domácí
-  kuchyní, k dispozici je i ubytování.
+  Horská chata na levém břehu Bílého Labe ve výšce kolem 1 000 m n. m., asi
+  5 km od centra Špindlerova Mlýna. Postavena byla podle serveru Krkonose.eu
+  roku 1913, a to na místě skladiště, které v údolí zbylo po hrazení potoka.
+  Restaurace s terasou a domácí kuchyní, ubytování pro osmadvacet hostů.
 text:
   - >-
     Bouda Bílé Labe stojí v údolí Bílého Labe ve výšce kolem tisíce metrů, na
     levém břehu řeky a podle webu chaty na křižovatce čtyř turistických tras.
-    Od centra Špindlerova Mlýna je to k ní zhruba pět kilometrů; do které obce
-    objekt katastrálně patří, doložené nemáme, protože web uvádí jen tuhle
-    vzdálenost.
+    Od centra Špindlerova Mlýna je to k ní zhruba pět kilometrů a Špindlerův
+    Mlýn u ní jako poštovní adresu uvádí i server Krkonose.eu; do kterého
+    katastru objekt patří, tím ale doložené není.
   - >-
-    Chata nabízí ubytování a restauraci s terasou a domácí kuchyní. Kolik má
-    lůžek a jaké jsou pokoje, úvodní stránka webu neuvádí, takže to neuvádíme
-    ani my. Otvírací dobu denně od půl jedenácté do šesti večer přebíráme z
-    OpenStreetMap podle stavu dat z června 2026; proti webu boudy ověřená
-    není.
+    Týž server ji navíc vede pod dvěma jmény na dvou samostatných stránkách,
+    jednou jako Boudu Bílé Labe a podruhé jako Boudu u Bílého Labe. Jde
+    o tentýž objekt: sedí výška, kapacita i poloha na mapě. Pod druhým jménem ji
+    zná i podklad, ze kterého čerpáme, takže se s ním čtenář může potkat.
   - >-
-    Zatím vycházíme jen z úvodní stránky webu chaty a z mapových dat a
-    redakce údaje neověřila vlastním dotazem ani návštěvou. Nedoložená
-    zůstává historie boudy, stejně jako kapacita a sezónnost provozu. Před
-    cestou proto doporučujeme otvírací dobu potvrdit přímo u boudy.
+    Začátek boudy je stavební, ne turistický. Podle průvodce Poznej domy
+    podemlela roku 1897 velká povodeň břehy v údolí Bílého Labe a stát pak
+    nechal tok hradit kamennými stavbami a prahy; kamenné úpravy koryta
+    zmiňuje i server Krkonose.eu. Kolem roku 1900 se poblíž otevřel žulový lom
+    a pro práce vznikl sklad materiálu s provizorní ubytovnou. Právě na místě
+    toho skladiště postavil roku 1913 Václav Hollmann jednopatrovou boudu —
+    Krkonose.eu píše jeho příjmení s jedním n, Poznej domy se dvěma
+    a rozřešené to nemáme.
+  - >-
+    Hollmann boudu později rozšířil, postavil u ní malou vodní elektrárnu
+    a provozoval ji do konce druhé světové války. Po roce 1945 se majitelé
+    střídali: nejprve státní lesy, pak Klub českých turistů a podnik
+    Zemědělské stavby Praha, od roku 2023 soukromý vlastník, který nechal
+    pokoje zrekonstruovat. Celou tuhle posloupnost vedeme z jediného pramene
+    a sami jsme ji nikde neověřovali.
+  - >-
+    Chata nabízí ubytování a restauraci s terasou a domácí kuchyní. Lůžek je
+    podle serveru Krkonose.eu osmadvacet a pokoje jsou dvou- až čtyřlůžkové;
+    úvodní stránka webu chaty tenhle údaj neuvádí. Otvírací dobu denně od půl
+    jedenácté do šesti večer nesou shodně mapová data i externí podklad
+    odvolávající se na web boudy, redakčně ověřená ale není. V telefonním
+    čísle se prameny rozcházejí hned trojmo: jedno vedou mapová data a další
+    dvě dvě různé stránky téhož turistického serveru. Zveřejňujeme to
+    z mapových dat, před cestou ale doporučujeme si kontakt ověřit.
+  - >-
+    Údaje na této stránce pocházejí z webu chaty, z mapových dat, ze serveru
+    Krkonose.eu a z průvodce Poznej domy; redakce žádný z těch pramenů
+    neověřila vlastním dotazem ani návštěvou. Doloženou nemáme sezónnost
+    provozu ani katastrální příslušnost objektu. Před cestou proto
+    doporučujeme otvírací dobu i telefon potvrdit přímo u boudy.
 fotky:
   - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/9/99/Czechy_-_Bouda_Bile_Labe_-_panoramio.jpg
     alt: Bouda Bílé Labe v údolí Bílého Labe
@@ -111,8 +201,37 @@ zdroje:
     url: https://www.boudabilelabe.cz/
   - popis: OpenStreetMap (GPS objektu, kontakty, otvírací doba — ODbL)
     url: https://www.openstreetmap.org/way/31128149
+  - popis: >-
+      Krkonose.eu — „Bouda Bílé Labe": rok vzniku 1913, 28 lůžek ve dvou- až
+      čtyřlůžkových pokojích, výška, poštovní adresa ve Špindlerově Mlýně
+      a souřadnice. Načteno 26. 7. 2026, verified:false
+    url: https://www.krkonose.eu/bouda-bile-labe
+  - popis: >-
+      Krkonose.eu — „Bouda u Bílého Labe": druhá stránka téhož serveru
+      o tomtéž objektu pod jiným jménem. Shodně rok 1913, zakladatel, 28 lůžek
+      i výška; navíc zmiňuje úpravy toku po povodni na konci 19. století.
+      Uvádí ale jiné telefonní číslo než stránka první. Načteno 26. 7. 2026,
+      verified:false
+    url: https://www.krkonose.eu/bouda-u-bileho-labe
+  - popis: >-
+      Poznej domy — „Bouda u Bílého Labe": povodeň roku 1897 a hrazení
+      bystřin, žulový lom a sklad kolem roku 1900, stavba boudy roku 1913
+      Václavem Hollmannem, pozdější rozšíření s malou vodní elektrárnou,
+      provoz do konce druhé světové války, poválečná posloupnost vlastníků
+      a rekonstrukce 2023. Pro většinu z toho jediný pramen, který máme.
+      Načteno 26. 7. 2026, verified:false
+    url: https://poznejdomy.cz/domy/detail/650-bouda-u-bileho-labe
+  - popis: >-
+      Doplňková faktická data (podklad ChatGPT, 21. 7. 2026), řádek HUT-0011
+      „Bouda u Bílého Labe" — rok vzniku, zakladatel, kapacita, otvírací doba
+      a zajímavost o původu boudy. Pramen z druhé ruky; údaje, které jsme si
+      u Krkonose.eu ověřili, nese shodně, telefon ale slučuje obě čísla
+      z tamních dvou stránek do jednoho pole. Jistota B, verified:false
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/bouda-bile-labe.yaml (DATA-01) po křížovém ověření DATA-03 (session 22, web načten 20. 7. 2026) a rozhodnutí Michala (✅ en bloc, chat 20. 7. 2026; trojice „přednostně" potvrzena 21. 7. 2026).
   Povýšení provedla bezobslužná session 33 (21. 7.) z už doložených zápisů — WebFetch bezobslužně nefunguje, web znovu nečten.
-  Dohledat při ručním běhu z podstránek webu: kapacita a typy pokojů, kontakty přímo z webu (teď jen OSM), otvírací doba restaurace (OSM tag může být zastaralý), historie boudy, případně sezónnost.
+  Dohledat při ručním běhu z podstránek webu: kontakty přímo z webu (teď jen OSM a rozcházejí se, viz níž), otvírací doba restaurace (OSM tag může být zastaralý), sezónnost, katastrální příslušnost. Kapacita, typy pokojů i historie z tohohle seznamu 26. 7. 2026 vypadly — doplněny v DATA-19.
+  DATA-19 (26. 7. 2026), doplnění a příčina: profil byl jedním ze dvou skutečných falešných nesouladů pipeline DATA-09. Podklad ho vede jako „Bouda u Bílého Labe" (HUT-0011), my jako „Bouda Bílé Labe" — porovnávač shodaNazvu normalizuje diakritiku i hledá podřetězec, na české skloňování („bile" × „bileho") a vsunuté „u" ale nestačí. Řešeno zápisem aliasu, ne změnou porovnávače: shodaNazvu aliasy čte, takže shoda vznikne sama a stejná oprava zabere i v DATA-05. Ověření dvojice: GPS podkladu je od naší 10 m, a WebFetch obou stránek Krkonose.eu ukázal shodu roku vzniku, kapacity, výšky i vzdálenosti od Špindlerova Mlýna. Doplněno rokVzniku, pět milníků, kapacita 28, typy pokojů, obec a druhá zajímavost; próza přepsána ze tří odstavců na šest, protože historie přestala být mezerou.
+  DATA-19, co se přitom našlo navíc: (1) Krkonose.eu vede tentýž objekt na DVOU stránkách pod dvěma jmény a na každé jiný telefon — s číslem z OSM jsou to tři různá čísla ve třech pramenech; katalogový podklad obě čísla z Krkonose.eu slučuje do jednoho pole, což vysvětlí, proč tam byl středník. Publikováno zůstává OSM, rozpor přiznán v próze bez čísel (vzor Hali Szrenickiej), rozhodne DATA-04. (2) Příjmení zakladatele: Krkonose.eu „Hollman", Poznej domy „Hollmann". V próze přiznáno, v milníku a zajímavosti použit tvar se dvěma n (Poznej domy o zakladateli píše víc). (3) Poštovní adresa „Špindlerův Mlýn 176" NENÍ doklad katastru — pole obec ale schéma jmenuje „nejbližší obec", takže se vyplnit smí; próza katastr dál vede jako nedoloženy. Tenhle rozdíl mezi labelem pole a tím, jak ho čte próza, patří do DATA-20.
+  DATA-19, zdroje z druhé ruky: rekonstrukce 2023, posloupnost poválečných vlastníků, lom z roku 1900 i vodní elektrárna stojí JEN na průvodci Poznej domy. Je to sekundární pramen, ne web boudy ani úřad; próza to říká nahlas („z jediného pramene"). Při DATA-04 ověřit u provozovatele.
   Hero fotka: krysi@ (Panoramio import), CC BY 3.0 — autor dohledatelný (podmínka síta pro CC BY splněna), ale popis souboru je jen název boudy; redakce potvrdí, že snímek zachycuje budovu (další čtyři kandidáty téhož autora ukazují i můstek přes Bílé Labe).

@@ -11,6 +11,15 @@ zeme: pl
 typ: obsluhovana
 oblast: krkonose
 
+# ── Jména ─────────────────────────────────────────────────────────────────
+# DATA-19 (26. 7. 2026): katalogový podklad vede objekt pod jménem louky
+# v prvním pádě, my pod plným jménem schroniska se jménem louky v šestém.
+# Kvůli tomu ho párování DATA-09 minulo a fakta se sem 25. 7. doplňovala
+# ručně. Zapsáno jako alias, aby shoda příště vznikla sama.
+aliasy:
+  - nazev: Hala Szrenicka
+    poznamka: jméno louky, pod nímž objekt vede katalogový podklad 2026-07-21 (HUT-0224)
+
 # ── Doplňková fakta (katalog 2026-07-21, ChatGPT podklad; verified:false) ──
 # POZOR: tenhle blok tu do 25. 7. 2026 chyběl. DATA-09 objekt přeskočil kvůli
 # neshodě jmen — v podkladu je veden jako „Hala Szrenicka" (HUT-0224), takže

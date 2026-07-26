@@ -11,6 +11,89 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — navazující session (Opus, inline): DATA-19 hotovo — z osmi „nespárovaných" byly skutečné dvě a spravily se data, ne kód
+
+**Zadání Michala:** „pokračuj samostatně dál." Vzato **DATA-19** (přehodnotit shodu jmen
+v pipeline DATA-09), první nehotová položka shora. Backlog žádal pustit párování znovu pro
+všech osm objektů, které `PUVOD.md` vede jako nespárované, s tolerantnějším porovnáním —
+normalizace diakritiky a koncovek, shoda na podřetězci, GPS jako rozhodčí — výsledky ručně
+potvrdit a teprve pak doplnit, co u dotčených profilů chybí.
+
+**Zadání se mýlilo ve čtyřech bodech.** Je to čtvrtá položka v řadě po DATA-16, DATA-17
+a DATA-18, u které měření převrátilo vlastní zadání, takže to sem píšu tak, jak to je.
+
+**Za prvé, ukazovalo na špatný soubor.** Seznam osmi nestojí v `PUVOD.md` u katalogu
+`katalog-cr-sk-2026`, kam věta odkazuje, ale u `fakticka-data-krkonose-2026`.
+
+**Za druhé, dvě ze tří žádaných věcí už dávno hotové byly.** `normalizuj()` skládá `ł→l`,
+`ß→ss` a rozklad `NFD` se zahozením diakritických znamének; `shodaNazvu()` porovnává
+oboustranně na podřetězci od pěti znaků. Diakritika ani podřetězce tedy chybět nemohly —
+a obě neshody, o které jde, jimi nikdy způsobené nebyly.
+
+**Za třetí — a to je jádro — „v katalogu není" u dvou z osmi neplatí.** Bouda Bílé Labe
+v katalogu je jako řádek HUT-0011 „Bouda u Bílého Labe", Hali Szrenickiej jako HUT-0224
+„Hala Szrenicka". Obě neshody způsobil **pád**: druhý pád s vsunutým „u" a polský lokativ
+proti nominativu. U zbylých šesti věta platí, ty v katalogu opravdu nejsou. Skutečná
+selhání párování jsou tedy **dvě, ne osm**.
+
+**Za čtvrté, číslo osm platilo pro korpus o 23 profilech.** Dnes jich je 42 a ke dni
+řešení byla ta věta „devět" — přibyla Vrbatova bouda.
+
+**Spravila se data, ne porovnávač.** `shodaNazvu()` čte i `aliasy`, takže stačilo
+katalogové jméno u obou profilů zapsat jako alias s poznámkou, odkud pochází. Shoda od té
+chvíle vzniká sama, bez zásahu do funkce, kterou sdílí i párování razítek (DATA-05) —
+takže tam prospěje taky. Tolerantnější porovnávač by ty dva případy chytil rovněž, ale
+**platilo by se za něj falešnými shodami**: jednorázový skript s osekáváním koncovek
+a Haversinem prokřížil nespárované z obou stran a nabídl dvě dvojice, které jsou si blízko
+na mapě, a přitom jsou to jiné objekty — Horská chata Krakonoš × Pražská bouda 254 m
+a Vebrovy boudy × Pražská bouda 1039 m. GPS tady tedy neposloužila k párování, ale
+**k zamítnutí**. Skript byl jednorázový a v repozitáři nezůstal.
+
+**Měření po opravě:** katalog 41 řádků × 42 publikovaných profilů Krkonoš, shoda **33 →
+35**. Bez shody zůstává 7 profilů (U Jirky, Dvorská, Krakonoš, Lovecká, Tetřeví, Vebrovy,
+Vrbatova) a 6 řádků katalogu — a **těch šest není chyba párování**: Erlebachova, Pražská,
+Hrnčířské, Richtrovy, Chata Pod Studničnou a Nad Łomniczką u nás existují jen jako
+kandidáti a skript čte pouze `data/chaty/`. Nespárovatelné z definice, ne kvůli jménu.
+`PUVOD.md` má odstavec „Pokrytí" přepsaný — původní věta je tam nechaná citovaná, aby bylo
+vidět, co se opravovalo.
+
+**Druhá půlka zadání — doplnit Boudu Bílé Labe — proběhla ručně proti pramenům**, ne
+převzetím katalogu. Dvě stránky serveru Krkonose.eu popisují týž objekt (1913, 28 lůžek ve
+dvou- až čtyřlůžkových pokojích, 1000 m) a publikují polohu shodnou s HUT-0011 na deset
+metrů; historii nese průvodce Poznej domy. Profil narostl o alias, obec, kapacitu, pokoje,
+rok vzniku, pět milníků, ověřovací blok k historii, čtyři prameny a prózu ze tří odstavců
+na šest. **Tři rozpory se přiznaly, nerozhodly:** tři různá telefonní čísla ve třech
+pramenech, dvojí psaní příjmení zakladatele (Hollman × Hollmann) a poštovní adresa proti
+katastru. Dry-run potvrdil, že skript profil nově najde a **nic nepřepíše**.
+
+**Dva vedlejší nálezy.** (1) Pole `obec` má ve schématu popisek **„Nejbližší obec"**, ne
+administrativní — což podrývá část zadání DATA-20, kde se poštovní obec vede jako chyba;
+dopsáno tam s tím, že se nejdřív musí rozhodnout, co pole znamená, a teprve pak dohledávat
+hodnoty. (2) **DATA-09 od růstu korpusu z 23 na 42 profilů neběželo** a nasucho hlásí, že
+by doplnilo osm profilů. Založeno jako **DATA-21**, protože se to nesmí pustit naostro bez
+oční kontroly — u Kolínské dává katalog rok 1927, kdežto ty uvádíš 1719.
+
+**Kontroly:** validátor 0 chyb (publikováno 42, známky 32, obrázky 25), `zdroje` 0,
+`audit-mech` 0, `kolize-jmen` 0, fixtura 4 kontroly / 0 spadlo. **`ban-scan` 135 → 133**,
+doměřeno proti `git show HEAD` na obou dotčených souborech (7 → 5), takže rozdíl sedí do
+jedné: −3 za tři místa, kde se „OpenStreetMap"/„OSM" nahradilo obecnějším pojmenováním,
++1 za nový závěrečný odstavec o provenienci. Fixtura beze změny — nová jména jsou aliasy,
+ne názvy, do kolizí tedy nespadají.
+
+**Příště:** **DATA-20** (sémantika pole `obec`, pak hodnoty u Lysečinské a Lesní boudy),
+a po ní **DATA-21** (osm profilů čekajících na katalogová data).
+
+**Otázky pro Michala:**
+1. **Kolínská bouda: 1927, nebo 1719?** Ty jsi uváděl 1719, katalogový podklad dává 1927.
+   Může to být starší bouda proti dnešní stavbě — víš, odkud tvůj letopočet je?
+2. **Co má pole `obec` znamenat** — nejbližší obec (jak říká popisek), nebo administrativní
+   příslušnost (jak to bere DATA-17 při rozlišování jmenovců)? Na tom stojí DATA-20.
+3. Pořád visí ty starší: rotovat GitHub token a klíč k Mapy.com, které leží v otevřeném
+   textu v zadání naplánované úlohy? Má `kontakty` dostat druhé telefonní pole pro
+   rezervační linku? A má se benecká Martinova bouda založit jako kandidát?
+
+---
+
 ## 2026-07-26 — navazující session (Opus, inline): DATA-17 hotovo — položka, u které měření převrátilo obě věty zadání
 
 **Zadání Michala:** „pokračuj samostatně dál." Vzato **DATA-17** (konvence pro kolidující
