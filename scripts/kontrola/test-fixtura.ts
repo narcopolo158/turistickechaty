@@ -21,7 +21,7 @@ import { najdiYaml } from './lib'
 
 const FIXTURA = 'scripts/kontrola/fixture'
 const SNIMKY = join(FIXTURA, 'ocekavany-vystup')
-const KONTROLY = ['audit-mech', 'ban-scan', 'zdroje']
+const KONTROLY = ['audit-mech', 'ban-scan', 'zdroje', 'kolize-jmen']
 
 const soubory = najdiYaml(FIXTURA)
 if (!soubory.length) {

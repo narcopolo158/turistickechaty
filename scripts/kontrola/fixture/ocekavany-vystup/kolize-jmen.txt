@@ -1,0 +1,12 @@
+
+=== A: shodny cely nazev — 1 ===
+ * jadro <<kolizni>> — objektu: 2
+     fixture/kolizni-bouda-dole | <<Kolizní bouda>> | obec: Žabovřesky | scripts/kontrola/fixture/15-kolize-jiny-objekt.yaml
+     fixture/kolizni-bouda-hore | <<Kolizní bouda>> | obec: Zvíkovec | scripts/kontrola/fixture/14-kolize-shodny-nazev.yaml, scripts/kontrola/fixture/16-kolize-druhe-patro.yaml
+
+=== B: shodne jadro nazvu, cely nazev se lisi typovym slovem — 1 ===
+ * jadro <<typoslovna>> — objektu: 2
+     fixture/typoslovna-bouda | <<Typoslovná bouda>> | obec: Zvíkovec | scripts/kontrola/fixture/17-kolize-jadro-bouda.yaml
+     fixture/typoslovna-chata | <<Typoslovná chata>> | obec: Žabovřesky | scripts/kontrola/fixture/18-kolize-jadro-chata.yaml
+
+souboru: 19 | profilu s nazvem: 19 | objektu: 18 | kolizi: 2 (A 1 · B 1)

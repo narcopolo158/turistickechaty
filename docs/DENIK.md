@@ -11,6 +11,110 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — navazující session (Opus, inline): DATA-17 hotovo — položka, u které měření převrátilo obě věty zadání
+
+**Zadání Michala:** „pokračuj samostatně dál." Vzato **DATA-17** (konvence pro kolidující
+názvy chat), první nehotová položka shora. Backlog žádal dvě věci: redakční pravidlo, čím
+se objekt odlišuje, a pramen na každou kolizi zvlášť — a rovnou dodával, že kolize se
+dají hledat strojově a stálo by to skoro nic. Ta věta byla dobrá rada a začal jsem
+u ní.
+
+**Sken hned na začátku převrátil zadání.** Backlog stál na tom, že „jen v Krkonoších máme
+dvě dvojice objektů se shodným jménem". Strojový průchod 204 souborů, 130 profilů
+s názvem a 89 různých objektů hlásí **nula kolizí**. Publikovaná je vždycky jen jedna
+půlka dvojice; ta druhá stojí venku, mezi profily ani mezi kandidáty. Naivní sken přitom
+napočítá zhruba čtyřicet „kolizí" a všechny jsou tentýž objekt dvakrát — jednou jako
+publikovaný profil, jednou jako kandidát. Proto se totožnost objektu počítá jako
+`oblast/slug`, ne jako cesta k souboru; a oblast v tom být musí, protože filtr „týž slug
+⇒ týž objekt" by sám o sobě zakryl přesně ten případ, kvůli kterému kontrola vzniká.
+**Ze zadaného úklidu se tím stala prevence** — pravidlo se nepíše pro dnešní korpus, ale
+pro okamžik, kdy druhá půlka přibude, a ten má ohlásit stroj, ne čtenář.
+
+**Druhá věta zadání padla taky: „dvě dvojice" jsou jedna a půl.** Martinova bouda na
+Benecku doložená je — web obce Benecko ji vede jako rodinný hotel s restaurací ve výšce
+800 m a totéž nese krajský i regionální katalog. Nad rámec DATA-17: protože má veřejnou
+restauraci, **projde tvým klíčem zařazení a je to legitimní budoucí kandidát**, ne jen
+cizí jméno. Zato Lesní boudu ve Špindlerově Mlýně se najít nepodařilo: čtyři vyhledávání
+nedala nic, treking.cz má stránku „Lesní bouda" a jmenuje na ní jen objekt nad Pecí pod
+Sněžkou, a OpenStreetMap náš objekt značí tagem `wikipedia: cs:Lesní bouda`, takže
+i encyklopedický článek je o něm.
+
+**A tady je vlastní nález položky, protože je obecnější než ona sama.** `git log -S`
+ukazuje, odkud se to tvrzení vzalo: do repozitáře vstoupilo commitem `0d728e2` jako holá
+věta v `interniPoznamky` **bez pramene**. Odtud ho převzal backlogový záznam i poznámka
+druhého profilu — obojí už jako hotovou věc, o kterou se dá opřít další práce. **Konvence
+B tedy platí i pro interní poznámky.** Nedoložená věta v `interniPoznamky` není „zatím
+neověřený údaj", je to pramen, ze kterého začnou citovat ostatní dokumenty projektu,
+a po dvou krocích už nikdo nepozná, že na začátku nestálo nic. Zapsáno proto jako
+**„hledali jsme a nenašli"**, ne jako „neexistuje" — špindlerovská Lesní bouda klidně
+existovat může, historická nebo jen místním jménem; doložená ale není.
+
+**Můj vlastní předpoklad padl jako třetí, a měřil jsem ho dvakrát špatně.** Pravidlo se
+mělo opřít o to, že perex obec už nese, takže by stačila věta v těle článku. Census 42
+publikovaných profilů to nepotvrdil, a cesta k číslu stojí za zápis: shoda na podřetězci
+dala 15, kmenová shoda 23, kmeny plus oční kontrola **27 jmenuje / 9 ne / 6 nemá pole
+`obec`**. První číslo srazila česká deklinace — perex Martinovy boudy říká „u Špindlerova
+Mlýna", pole nese „Špindlerův Mlýn". Chybu odhalilo to, že jeden ze dvou profilů, kvůli
+kterým celá položka vznikla, seděl v negativním seznamu, ač obec v perexu viditelně má.
+Druhé měření zakoplo o **střídání samohlásky v kořeni** (Důl → Dolem, Dvůr → Dvoře), což
+prefixové kmeny nepřeklenou; poznalo se to podle toho, že tři soubory se do negativního
+seznamu **přesunuly**, což by při volnějším porovnání nešlo. Na 42 položkách je oční
+kontrola levnější než chytřejší regulár — na stovkách by to chtělo fold samohlásek, ne
+delší prefix.
+
+**Pravidlo je v `docs/DATA-17-jmenovci.md`,** sedm klauzulí, a rozlišovačem je **`obec`,
+a nic jiného**. Nejbližší vrchol, který backlog nabízel, neprošel: v korpusu se vrchol
+objevuje jen tam, kde ho nese pramen, a odvodit ho z GPS by znamenalo vyrobit údaj, který
+žádný pramen neuvádí. Do `nazev` se rozlišovač nepíše nikdy — kromě věcného důvodu
+i z provozního, který je horší: kontrola porovnává právě `nazev`, takže závorka v názvu
+kolizi **zamaskuje** a kontrola po prvním použití oslepne. Příponu obce dostává **nový**
+profil, starý si slug ponechá, aby se nerozbily živé adresy; je to kompromis a v dokumentu
+je napsané proč — lepší koncový stav je přejmenovat obě strany, což ale chce přesměrování,
+které web zatím nemá.
+
+**Vedlejší nález, který si vynutil vlastní položku:** rozlišovač má smysl jen tak dobrý,
+jak spolehlivé je pole, o které se opírá — a `obec` spolehlivá vždycky není. Lesní bouda
+má `Pec pod Sněžkou` z webu boudy, ale firemní rejstřík u ní vede poštovní adresu
+v Černém Dole. **Lysečinská bouda** rozpor Malá Úpa × Horní Maršov sice poctivě
+přiznávala, ale pak ho **rozhodla nedoloženou glosou** „Horní Lysečiny jsou dnes částí
+Malé Úpy" — a místopisný rejstřík ji popírá: vede Horní Lysečiny jako část **Horního
+Maršova**. Vypadá to na záměnu poštovní doručovací obce (PSČ) za obec administrativní.
+Je to strukturálně tatáž vada jako u Lesní boudy: nedoložená věta, na kterou se pak
+odkazuje další text. Profil navíc v DATA-15 tuhle glosu **výslovně obhájil** jako
+„nedorozumění auditu" — audit měl pravdu a zamítnutí je teď v souboru opravené na sebe
+sama. Glosa pryč z `overeniLokace` i z `text[0]`, rozpor přiznaný v próze, pramen na
+rejstřík doplněn. Hodnota pole se **nemění**: jeden rejstřík proti jednomu médiu je spor,
+ne verdikt. Vedeno jako **DATA-20** s tím, že se má stejnou otázkou projít celý korpus —
+kolik dalších profilů má `obec` jen z poštovní adresy?
+
+**Hotovo:**
+
+- `scripts/kontrola/kolize-jmen.ts` — nová kontrola, pátá v řadě, zapojená do
+  `npm run kontrola`. **Jediná ze seznamových kontrol, která rozhoduje:** u `ban-scan`
+  a `audit-mech` je ustálený stav nenulový, tady je čistý stav přesně nula, takže každý
+  zásah je regrese. Pět nových souborů fixtury (`14-`…`18-kolize-*.yaml`) drží obě pasti.
+- `docs/DATA-17-jmenovci.md` — redakční pravidlo R1–R7 i s tím, co měření převrátilo.
+- `martinova-bouda.yaml` — **veřejná** rozlišovací věta v posledním odstavci `text`
+  + záznam ve `zdroje` (web obce Benecko). Slug se nemění, benecká bouda v korpusu není.
+- `lesni-bouda.yaml` — tvrzení o jmenovci sneseno na „hledali jsme a nenašli"
+  i s jeho původem; veřejně se nepublikuje nic, protože pramen není.
+- `lysecinska-bouda.yaml` — glosa opravena na přiznanou neznalost, pramen na rejstřík.
+- `scripts/kontrola/README.md`, `docs/BACKLOG.md` (DATA-17 zavřeno, DATA-20 založeno).
+
+Kontroly zelené, `ban-scan` zůstal na 135 zásazích, `audit-mech` a `kolize-jmen` na nule,
+fixtura sedí.
+
+**Příště:** **DATA-19** (přehodnotit shodu jmen v pipeline DATA-09 tolerantnějším
+porovnáním), pak **DATA-20**.
+
+**Otázky pro Michala:** dvě starší pořád visí — (1) mám rotovat GitHub PAT a klíč
+Mapy.com, které leží v plaintextu v promptu naplánované úlohy? (2) má `kontakty` dostat
+druhé pole na telefon (rezervační linka)? Nová třetí: benecká Martinova bouda projde
+klíčem zařazení — **chceš ji založit jako kandidáta?** Až vznikne, kolizi ohlásí stroj
+a pravidlo se použije poprvé naostro.
+
+---
+
 ## 2026-07-26 — navazující session (Opus, inline): DATA-18 hotovo — průchod, který našel čtvrtou vadu tím, že přestal věřit vlastnímu zadání
 
 **Zadání Michala:** „můžeš spustit další session." Vzato **DATA-18**, tedy první nehotová

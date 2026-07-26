@@ -1,11 +1,11 @@
 # Kontroly datové vrstvy
 
-Čtyři skripty, které hlídají to, co dělá tenhle web webem: **že se údaje dají
+Pět skriptů, které hlídají to, co dělá tenhle web webem: **že se údaje dají
 ověřit a že se nic nedomýšlí**. Nejsou to unit testy aplikace — čtou YAML
 profily v `data/chaty/**` a hlásí, kde próza tvrdí víc, než co je doložené.
 
 ```
-npm run kontrola        # spustí všechny čtyři + regresní test
+npm run kontrola        # spustí všech pět + regresní test
 npm run kontrola:test   # jen regresní test proti fixtuře
 ```
 
@@ -13,10 +13,14 @@ Jednotlivě (každý bere volitelný seznam souborů, jinak vezme celé `data/ch
 
 ```
 npx tsx scripts/kontrola/validator.ts
-npx tsx scripts/kontrola/zdroje.ts      [soubor.yaml …]
-npx tsx scripts/kontrola/ban-scan.ts    [soubor.yaml …]
-npx tsx scripts/kontrola/audit-mech.ts  [soubor.yaml …]
+npx tsx scripts/kontrola/zdroje.ts       [soubor.yaml …]
+npx tsx scripts/kontrola/ban-scan.ts     [soubor.yaml …]
+npx tsx scripts/kontrola/audit-mech.ts   [soubor.yaml …]
+npx tsx scripts/kontrola/kolize-jmen.ts  [soubor.yaml …]
 ```
+
+`kolize-jmen.ts` je jediný, který sám od sebe čte i `data/kandidati/**` —
+jmenovec může přijít z obou pater a kontrola má smysl jen nad oběma najednou.
 
 ## Co která kontrola dělá
 
@@ -168,6 +172,36 @@ profil je publikovaný · **C** doména v próze je skloňovaná varianta dolož
 domény · **D** superlativ ve větě bez připsání · **E** letopočet v próze, který
 se nikde jinde v souboru nevyskytuje · **F** próza mluví o turistické známce
 nebo vizitce, ale `zdroje` katalog vydavatele vůbec nevedou.
+
+**`kolize-jmen.ts` — verdikt.** Dva různé objekty téhož jména v korpusu. Jádro
+názvu = název bez typových slov („bouda", „chata", „schronisko"), takže
+„Martinova bouda" a „Martinova chata" spadnou do jedné hromádky; oddíl **A** je
+shodný celý název, oddíl **B** jen shodné jádro. Totožnost objektu se počítá
+jako `oblast/slug`, ne jako cesta k souboru — jinak by kontrola hlásila
+čtyřicet „kolizí", což jsou samé případy téhož objektu ve dvou patrech
+(publikovaný profil × kandidát). Oblast v totožnosti zůstat musí: bez ní by
+filtr „týž slug ⇒ týž objekt" zakryl přesně to, kvůli čemu kontrola vznikla.
+
+## Proč je `kolize-jmen.ts` jediná ze seznamových kontrol, která rozhoduje
+
+`ban-scan` a `audit-mech` vracejí seznam k posouzení a jejich **ustálený stav je
+nenulový** — část zásahů jsou trvalé a doložené falešné poplachy, takže verdikt
+by z nich udělal trvale červenou kontrolu, kterou by nikdo nečetl. U kolizí je
+to obráceně: **čistý stav je přesně nula**, protože dva objekty téhož jména
+v korpusu prostě být nemají, dokud se nerozliší podle pravidla. Každý zásah je
+tedy regrese, ne položka k posouzení, a `npm run kontrola` na něm spadne.
+
+Kontrola je **prevence, ne úklid**. Když se 26. 7. 2026 psala, hlásila nulu —
+a to je celý pointa. Zadání DATA-17 předpokládalo, že v Krkonoších máme dvě
+dvojice jmenovců; měření ukázalo, že ani jedna druhá půlka v korpusu není
+(a jedna z nich není doložená vůbec, viz `docs/DATA-17-jmenovci.md`). Pravidlo
+pro rozlišení jmenovců se tedy nepíše pro dnešní korpus, ale pro okamžik, kdy
+druhá půlka přibude — a ten okamžik má ohlásit stroj, ne čtenář.
+
+Co kontrola **nehlídá**: dodržení redakčního pravidla samotného — že perex nese
+obec, že rozlišovací věta má pramen, že nový slug dostal příponu obce. To je
+redakční práce spuštěná tím, že kontrola zahlásí. Strojově vynutitelná část je
+„všimni si", ne „naformuluj".
 
 ## Proč přibyla kontrola F
 

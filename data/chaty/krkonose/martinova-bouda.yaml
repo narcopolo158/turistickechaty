@@ -109,6 +109,11 @@ text:
     OpenStreetMap, které se navíc rozcházejí v kontaktním e-mailu boudy. Před
     cestou proto doporučujeme ověřit si přímo u boudy otvírací dobu restaurace
     a její dostupnost pro neubytované.
+  - >-
+    Jméno Martinova bouda nese v Krkonoších ještě jeden objekt: na Benecku
+    stojí stejnojmenný rodinný hotel s restaurací ve výšce 800 metrů, jak
+    ho vede web obce Benecko. Je to jiná bouda v jiné obci a skoro o pět
+    set metrů níž; tahle stránka je o boudě nad Špindlerovým Mlýnem.
 zdroje:
   - popis: >-
       Kudy z nudy — „Martinova bouda v Krkonoších" (výška, kapacita, vybavení,
@@ -116,17 +121,34 @@ zdroje:
     url: https://www.kudyznudy.cz/aktivity/martinova-bouda-v-krkonosich
   - popis: OpenStreetMap (GPS objektu, ODbL)
     url: https://www.openstreetmap.org/way/27594723
+  - popis: >-
+      Web obce Benecko — „Martinova bouda" (jmenovec na Benecku: rodinný hotel
+      s restaurací ve výšce 800 m); doklad k rozlišovací větě v posledním
+      odstavci, verified:false
+    url: https://www.obecbenecko.cz/m/turistika/ubytovani/hotely/martinova-bouda/
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/martinova-bouda.yaml (DATA-01/OSM) v rámci
   master fronty Tier 1 (známka č.674 + katalog ChatGPT + OSM). Data z Kudy z nudy
   (sekundární médium) — vlastní web martinovka.cz je ze sandboxu nedostupný
   (robots ConnectTimeout), stejně jako v session 22.
 
-  POZOR na kolizi jmen: existuje i jiná „Martinova bouda" na Benecku
-  (martinova-bouda.cz) — tento profil je Martinovka na hřebeni u Špindlerova
-  Mlýna (martinovka.cz, GPS OSM way/27594723). Rozlišení je zatím jen interní;
-  veřejně by chtělo doložit pramenem, jak se objekty odlišují — vedeno
-  v BACKLOGu jako konvence pro kolidující názvy (týká se i lesni-bouda).
+  KOLIZE JMEN (DATA-17, uzavřeno 26. 7. 2026): jmenovec na Benecku je doložený
+  — web obce Benecko ho vede jako rodinný hotel s restaurací ve výšce 800 m,
+  totéž nese krajský i regionální katalog. Rozlišovací věta je proto nově
+  VEŘEJNÁ (poslední odstavec `text`) a pramen stojí ve `zdroje`, jak žádá
+  pravidlo R4 v docs/DATA-17-jmenovci.md. Slug se nemění: benecká bouda
+  v korpusu není, takže R5 zatím nemá co spustit — příponu obce dostane až
+  nový profil, kdyby vznikl. R3 splněno, perex obec jmenuje („u Špindlerova
+  Mlýna"). Tenhle profil je Martinovka na hřebeni (GPS OSM way/27594723).
+  Poznámka nad rámec DATA-17: benecká bouda má veřejnou restauraci, takže
+  projde klíčem zařazení a je to legitimní budoucí kandidát.
+
+  Druhá půlka staré poznámky se NEPOTVRDILA. Stálo tu, že jmenovce má i Lesní
+  bouda (Špindlerův Mlýn) — čtyři vyhledávání nedala nic a `git log -S`
+  ukazuje, že tvrzení vstoupilo do repozitáře commitem 0d728e2 jako holá věta
+  bez pramene, odkud ho převzal BACKLOG i tahle poznámka. Vedeno jako
+  „hledali jsme a nenašli", ne jako „neexistuje"; rozbor v
+  docs/DATA-17-jmenovci.md.
 
   DATA-15 (jazykový audit 25. 7. 2026, třetí dávka): opraveny čtyři vady.
   (1) „na hraničním hřebeni Krkonoš" stálo v perexu, v text[0]

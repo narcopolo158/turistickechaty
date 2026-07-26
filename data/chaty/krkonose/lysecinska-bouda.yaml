@@ -35,9 +35,14 @@ overeniLokace:
   source: >-
     Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš": výška 1 000 m,
     adresa „Horní Lysečiny 51, 542 26 Malá Úpa" (Královéhradecký kraj). ROZPOR
-    proti externímu katalogu, který uváděl 950 m a obec Horní Maršov — do
-    profilu vzat údaj Kudy z nudy (Horní Lysečiny jsou dnes částí Malé Úpy),
-    ověřit. GPS nedoložena — doplnit z OSM. Sekundární zdroje, verified:false
+    proti externímu katalogu, který uváděl 950 m a obec Horní Maršov. Do pole
+    `obec` vzata Malá Úpa z adresy u Kudy z nudy, ale jen jako POŠTOVNÍ údaj:
+    místopisný rejstřík vede Horní Lysečiny jako část Horního Maršova, takže
+    administrativní obec může být jiná než ta z PSČ. Dřív tu stálo, že „Horní
+    Lysečiny jsou dnes částí Malé Úpy" — to byla nedoložená glosa, která rozpor
+    tiše rozhodla; odstraněna, rozpor je nově přiznaný i v próze a ověření je
+    vedeno jako DATA-20. GPS nedoložena — doplnit z OSM. Sekundární zdroje,
+    verified:false
   verified: false
   checked: '2026-07-25'
 
@@ -129,10 +134,13 @@ perex: >-
   s českou a krkonošskou kuchyní; jedna z nich je vyhrazená ubytovaným.
 text:
   - >-
-    Lysečinská bouda stojí v Horních Lysečinách, které jsou dnes částí Malé
-    Úpy. Kudy z nudy jí připisuje nadmořskou výšku 1 000 metrů, starší
-    katalogový podklad měl ale 950 metrů a jako obec uváděl Horní Maršov.
-    Vycházíme z údajů Kudy z nudy, ověřené zatím nejsou.
+    Lysečinská bouda stojí v Horních Lysečinách. Pod kterou obec dnes Horní
+    Lysečiny spadají, se ale prameny neshodnou: Kudy z nudy u boudy uvádějí
+    poštovní adresu v Malé Úpě, starší katalogový podklad měl Horní Maršov
+    a místopisný rejstřík vede Horní Lysečiny jako část Horního Maršova.
+    Vycházíme z adresy u Kudy z nudy, za ověřenou ji ale nepovažujeme. Týž
+    pramen boudě připisuje nadmořskou výšku 1 000 metrů, starší podklad měl
+    950.
   - >-
     Bouda byla podle téhož zdroje postavena roku 1926. Kolem ní vedla stará
     kupecká stezka a tradice praví, že po ní roku 1779 putoval pozdější císař
@@ -162,6 +170,12 @@ zdroje:
       sekundární médium, verified:false, ověřit primárně
     url: https://www.kudyznudy.cz/aktivity/lysicenska-bouda-pohoda-v-srdci-krkonos
   - popis: 'Externí katalog chat ČR/SK (podklad ChatGPT, jistota A) — celoroční provoz; dále výška 950 m a obec Horní Maršov, tedy hodnoty rozporné s Kudy z nudy, které profil nepřebírá. Próza se na tenhle soupis výslovně odvolává, proto sem patří; veřejně citovatelné umístění ani souřadnice ale nemá a druhým pramenem doložený není. verified:false'
+  - popis: >-
+      Místopisy — „Horní Lysečiny" (rejstřík obcí a jejich částí): vede Horní
+      Lysečiny jako část Horního Maršova, tedy v rozporu s poštovní adresou
+      u Kudy z nudy. Próza se na rejstřík odvolává. Sekundární médium,
+      verified:false — ověřit v registru územní identifikace (DATA-20)
+    url: https://www.mistopisy.cz/pruvodce/obec/12665/horni-lyseciny/
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/lysecinska-bouda.yaml (externí katalog
   ČR/SK, jistota A) v rámci master fronty Tier 1 (známka č.1336 + katalog).
@@ -200,7 +214,24 @@ interniPoznamky: >-
   veřejně citovatelné umístění nemá; vzor chata-rezek a dom-slaski).
   ZAMÍTNUTO jako nedorozumění auditu: „které jsou dnes částí Malé Úpy" není
   domyšlené — plyne z doložené adresy „Horní Lysečiny 51, 542 26 Malá Úpa"
-  v overeniLokace.
+  v overeniLokace. — TOHLE ZAMÍTNUTÍ BYLO CHYBNÉ, viz další odstavec.
+
+  DATA-17 (26. 7. 2026), sporná obec: audit měl pravdu a moje zamítnutí ne.
+  „Horní Lysečiny jsou dnes částí Malé Úpy" z doložené adresy NEPLYNE — plyne
+  z ní jen poštovní doručovací obec (PSČ 542 26), a ta se nemusí krýt s obcí
+  administrativní. Místopisný rejstřík vede Horní Lysečiny jako část Horního
+  Maršova, tedy přesně to, co uváděl starší katalogový podklad a co profil
+  označil za rozpor — a pak ho tou glosou potichu rozhodl ve prospěch Malé Úpy.
+  Glosa odstraněna z overeniLokace i z text[0], rozpor je nově přiznaný v próze
+  (konvence B: rozpor se přiznává, neuhlazuje) a doplněn pramen na rejstřík.
+  Pole `obec` zatím zůstává Malá Úpa, protože jeden rejstřík proti jednomu
+  médiu je spor, ne verdikt; rozhodne až registr územní identifikace nebo
+  dotaz na obecní úřad — vedeno v BACKLOGu jako DATA-20.
+
+  Pravidlo pro jmenovce (docs/DATA-17-jmenovci.md): tenhle profil je vzorový
+  případ R7 (sporná obec). Kolizi jmen zatím nemá, takže R3 se nespouští
+  a perex smí vést osadou bez obce; kdyby jmenovec vznikl, obec se do perexu
+  doplní i s přiznaným rozporem, ne že se rozlišovač přehodí na jiné pole.
 
   K dotažení (DATA-04, verified:true): GPS, potvrdit výšku a obec, otvírací doba
   a veřejná přístupnost druhé restaurace, sezónní režim, platná doména. Hero

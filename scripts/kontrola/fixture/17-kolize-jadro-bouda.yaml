@@ -1,0 +1,6 @@
+# Past DATA-17, měkčí případ: s `18-kolize-jadro-chata.yaml` se název liší
+# typovým slovem („bouda" vs „chata"), jádro je ale shodné. Patří do oddílu B,
+# ne A — může jít o dva objekty, které se legitimně jmenují jinak.
+slug: typoslovna-bouda
+nazev: Typoslovná bouda
+obec: Zvíkovec

@@ -1,0 +1,8 @@
+# Past DATA-17: druhé patro objektu ze souboru 14 — týž slug i táž oblast,
+# jen jiný soubor (v ostrém korpusu `data/chaty/…` vs `data/kandidati/…`).
+# Naivní seskupení podle názvu tohle hlásí jako kolizi; na dnešním korpusu by
+# takových „kolizí" bylo čtyřicet a všechny falešné. Kontrola je proto počítá
+# jako jeden objekt a hromádka zůstává dvouobjektová, ne tříobjektová.
+slug: kolizni-bouda-hore
+nazev: Kolizní bouda
+obec: Zvíkovec

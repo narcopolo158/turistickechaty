@@ -1,0 +1,9 @@
+# Past DATA-17, první ze tří souborů jedné hromádky.
+# Spolu s `15-kolize-jiny-objekt.yaml` tvoří SKUTEČNOU kolizi: shodný název,
+# různý slug, tedy dva různé objekty. Spolu s `16-kolize-druhe-patro.yaml`
+# naopak tvoří dvojici „týž objekt ve dvou patrech" — ta se hlásit nesmí.
+# Ve snímku se to pozná tak, že pod totožností `fixture/kolizni-bouda-hore`
+# stojí DVA soubory, a přesto se počítá jako JEDEN objekt.
+slug: kolizni-bouda-hore
+nazev: Kolizní bouda
+obec: Zvíkovec
