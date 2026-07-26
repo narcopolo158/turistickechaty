@@ -54,6 +54,22 @@ Michal. Bez toho se z Tier 1 pokračovat nedá — další na řadě je Tier 2.
 | 🇨🇿 Chata Rozhled | č.14 | — | — | obsluhovana |
 | 🇨🇿 Medvědí bouda | č.1274 | — | — | obsluhovana |
 
+**Přeověřeno 26. 7. 2026 — ani jedna nepovýšena, obě drží klíč zařazení.** Chata
+Rozhled: vlastní web i ceskehory.cz popisují bufet a jídelnu s penzí, ale **žádný
+pramen neříká, komu bufet slouží** — brána z 25. 7. („nepovyšovat, dokud nebude
+věta") trvá. Medvědí bouda: web dnes doslova „Pro naše ubytované hosty nabízíme
+útulnou horskou restauraci" — **restaurace dál jen pro ubytované**, klíč nesplněn;
+nově vytěžena historická věta pro budoucí profil. Obě rozhodne telefonát (DATA-04).
+
+**Pozn. 26. 7. 2026 — tabulky tierů zastaraly proti DATA-22:** oficiální seznam
+vydavatele doložil známku č. 2249 u **Pražské boudy** (v tabulce níž vedena v Tier 3
+„jen katalog") — fakticky tedy patří do Tier 1 (známka + katalog). Přeověřena
+26. 7. 2026 stejným výsledkem: restaurace s barem a veřejnou otvírací dobou na
+Firmy.cz, ale **věta o obsluze neubytovaných nikde** — nepovýšena, rozhodne
+telefonát. A pozor: párování `1935 Chata Hubertka, Jizerské hory` s naším
+kandidátem je **falešná shoda** (známka patří jmenovci v Jizerských horách, náš
+kandidát je od Benecka) — Hubertka tier nemění.
+
 ### Tier 3 — jen katalog (bez známky)
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |

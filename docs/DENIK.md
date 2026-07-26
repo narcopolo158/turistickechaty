@@ -11,6 +11,58 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — pokračování 4: Tier 2 přeověřen — Rozhled, Medvědí ani Pražská klíčem neprošly; všechny čtyři držené kandidáty teď rozhodne telefonát
+
+**Zadání Michala:** „pokracuj tier 2."
+
+**Hotovo:**
+
+**Tier 2 (Chata Rozhled č. 14, Medvědí bouda č. 1274) — přeověřen, ani jedna nepovýšena.**
+Obě už jednou branou prošly 25. 7.; dnešní přeověření stav potvrdilo, s čerstvými
+doslovnými citacemi. **Chata Rozhled:** vlastní web má bufetovou větu beze změny
+(„Bufet s nápoji a sladkostmi v provozu po celý den.") a o určení bufetu dál mlčí;
+druhý pramen (ceskehory) přidal kapacitu 26 lůžek, lokalitu Přední Rennerovky a zimní
+dopravu rolbou — ale větu o veřejnosti taky nemá. **Medvědí bouda:** web dnes doslova
+„Pro naše ubytované hosty nabízíme útulnou horskou restauraci s domácí kuchyní." —
+jiná formulace než 25. 7., obsahově totéž: jen pro ubytované. Nově vytěžena historická
+věta (vznik na počátku 19. století jako budní hospodářství s ubytováním) — do kandidáta,
+pro budoucí profil.
+
+**Bonus mimo zadání, ale v logice fronty: Pražská bouda je podle DATA-22 fakticky
+Tier 1** (známka č. 2249 + katalog — tabulky tierů vznikly před vydavatelovým seznamem).
+Přeověřena třemi prameny: Firmy.cz vede samostatný zápis „Pražská bouda - Restaurace"
+s otvírací dobou 11–22 denně a popisem „Provozujeme restauraci a bar.", Kudy z nudy má
+24 dvoulůžkových pokojů, ceskehory sál pro 100 lidí a výšku 1115 m. **Věta o obsluze
+neubytovaných ale není nikde** — a exponát Medvědí dokazuje, že hotelová restaurace
+může být jen pro hosty. Nepovýšena; veřejná otvíračka na Firmy.cz je zatím nejsilnější
+signál, rozhodne telefonát.
+
+**Nová past matcheru DATA-22 (č. 5 v hlavičce skriptu):** `1935 Chata Hubertka,
+Jizerské hory` se s naším kandidátem páruje neprávem — jadro() odřízne krajový
+přívlastek, jenže tady to není ozdoba, ale rozlišovač jmenovců: známka patří objektu
+v Jizerských horách, náš kandidát z OSM je od Benecka (past třídy DATA-17). Alias
+nepřidán, zapsáno.
+
+**Souhrn brány po dnešku: čtyři kandidáty se známkou (Richtrovy, Rozhled, Medvědí,
+Pražská) drží jedna a táž otázka — „obsloužíte i neubytovaného turistu?" — a všechny
+čtyři ji vyřeší jeden telefonát na kus (DATA-04).** Do té doby se z master fronty
+povyšovat nedá; Tier 3/4 jsou na tom hůř (bez známky), takže další autonomní práce
+vede spíš na trasovou pipeline (DATA-06) nebo dotažení Poštovny.
+
+**Měření:** `npm run kontrola` zelené, ban-scan drží 129 (měněny jen kandidáti, docs
+a hlavička skriptu), kolize-jmen 0, fixtura 4/4.
+
+**Příště:** buď DATA-06 (trasová pipeline — velký blok fáze 1), nebo po tvých
+telefonátech dorazit povýšení připravených kandidátů (materiál je u všech čtyř
+nachystaný v kandidátských souborech).
+
+**Otázky pro Michala:** (1) **Čtyři telefonáty** (čísla jsou v kandidátech; Rozhled ho
+má jen na webu): Richtrovy boudy, Chata Rozhled, Medvědí bouda, Pražská bouda — otázka
+u všech stejná: „obsloužíte i neubytovaného turistu?" (2) trvají: Jelenka 25/26 lůžek,
+sémantika `obec`, rotace tokenů.
+
+---
+
 ## 2026-07-26 — pokračování 3: pokus o Tier 1 povýšení zastaven — Richtrovy boudy od 2020 patří Policejnímu prezidiu
 
 **Zadání Michala:** „pokracuj samostatne dal podle planu."

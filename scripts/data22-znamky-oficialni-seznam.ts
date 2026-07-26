@@ -36,6 +36,13 @@
  *
  * (4) Polské schronisko v seznamu být nemůže — je to seznam český. Deset
  *     polských profilů v posledním výpisu je proto očekávaný stav, ne nález.
+ *
+ * (5) 1935 „Chata Hubertka, Jizerské hory" se s krkonose/chata-hubertka
+ *     páruje NEPRÁVEM — jadro() odřízne krajový přívlastek „Jizerské hory",
+ *     jenže ten tu není ozdoba, nýbrž rozlišovač jmenovců: známka patří
+ *     objektu v Jizerských horách, kdežto náš kandidát je z OSM v Krkonoších
+ *     (lat 50.696, lng 15.536 — u Benecka). Falešná shoda třídy DATA-17;
+ *     alias NEpřidávat a shodu ve výstupu ignorovat. Ověřeno 26. 7. 2026.
  * ---------------------------------------------------------------------------
  */
 import { readFileSync } from 'node:fs'
