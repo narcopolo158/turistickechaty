@@ -1,8 +1,18 @@
 # Richtrovy Boudy — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-12)
 # Zdroj: https://www.openstreetmap.org/node/958304121 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
-# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
-# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
-# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+# Vše verified: false — na web (data/chaty/krkonose/) povyšovat až po křížovém
+# ověření (DATA-03). Nic nedomýšlet!
+#
+# ══ ROZHODNUTÍ 26. 7. 2026: NEPOVYŠOVAT, ačkoli je to jediná položka Tier 1
+# master fronty. Rešerše (viz overeni bloky níž) doložila, že areál byl
+# 27. 11. 2020 předán Policejnímu prezidiu jako školicí středisko pro
+# příslušníky bezpečnostních sborů a firemní zápis objektu je označen jako
+# neaktivní. Zda restaurace a ubytování dál slouží veřejnosti — na čemž
+# stojí Michalův klíč zařazení — doloženo NENÍ; všechny stránky, které
+# o restauraci mluví, jsou nedatované a nejspíš z doby před převodem.
+# Otázka jde do DATA-04 (telefonát) / na Michala. Protiznak, který drží
+# kandidaturu při životě: známka č. 1602 je i v seznamu vydavatele z července
+# 2026, takže NĚJAKÝ veřejný prodej nejspíš existuje. ══
 
 nazev: Richtrovy Boudy
 slug: richtrovy-boudy
@@ -11,23 +21,100 @@ oblast: krkonose
 typ: obsluhovana
 lat: 50.7096873
 lng: 15.6993935
+# ROZPOR VÝŠKY: OSM nese 1136 m, kdežto treking.cz, ceskehory.cz i katalog
+# ChatGPT shodně 1206 m. Tři prameny proti jednomu, ale ty tři si mohou
+# opisovat — nerozhodnuto, pole nechávám na hodnotě z OSM, odkud je celý
+# tenhle kandidát. Při případném povýšení rozhodnout proti mapě/výškopisu.
 vyska: 1136
 overeniLokace:
-  source: OpenStreetMap https://www.openstreetmap.org/node/958304121 — data ©
-    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/node/958304121 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Doplněno 26. 7. 2026: ÚZSVM (uzsvm.gov.cz, primární pramen) doslova:
+    „Areál, který leží v Krkonošském národním parku v turisticky vyhledávané
+    lokalitě nad Pecí pod Sněžkou na cestě na Výrovku, tvoří dvě budovy -
+    Richtrova a Červená bouda." Ceskehory.cz: „Richtrovy boudy se nachází ve
+    II. zóně Krkonošského národního parku nad městem Pec pod Sněžkou.
+    V klidném místě v nadmořské výšce 1206m.n.m". Adresa dle webu města Pece
+    pod Sněžkou (sdružení SČRP): „Richtrovy boudy č. p. 81 542 21 Pec pod
+    Sněžkou". ROZPOR VÝŠKY 1136 (OSM) × 1206 m (treking.cz, ceskehory.cz,
+    katalog) — nerozhodnuto.
   verified: false
-  checked: 2026-06-12
+  checked: '2026-07-26'
 kontakty:
   telefon: +420 499 896249
   web: https://www.richtrovyboudy.cz/
 overeniProvoz:
-  source: OpenStreetMap https://www.openstreetmap.org/node/958304121 — data ©
-    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/node/958304121 (telefon
+    a web) — data © přispěvatelé OpenStreetMap, ODbL 1.0. Doplněno
+    26. 7. 2026: ÚZSVM (uzsvm.gov.cz, 27. 11. 2020, PRIMÁRNÍ pramen)
+    doslova: „Úřad pro zastupování státu ve věcech majetkových (ÚZSVM)
+    v Trutnově předal areál Richtrových bud v Peci pod Sněžkou včetně
+    přilehlých pozemků, vybavení a lyžařských vleků Policejnímu prezidiu
+    České republiky." a „Policejní prezidium využije areál Richterových bud
+    jako školicí středisko pro příslušníky bezpečnostních sborů." (překlep
+    „Richterových" je pramene). „ÚZSVM převzal tento areál od Národního
+    pedagogického institutu České republiky". Kudy z nudy: „Jedná se
+    o majetek Policejního prezidia". Firemní katalog Firmy.cz (načteno
+    26. 7. 2026) vede zápis objektu s poznámkou, že firma nebo pobočka UŽ
+    NENÍ AKTIVNÍ; týž zápis: „We offer accommodation in a mountain chalet
+    with a total capacity of 106 beds in 34 rooms (double to six-bed
+    rooms)." a stravování jen jako penzi pro ubytované („breakfast, half
+    board or full board"). Vlastní web (richtrovyboudy.cz) se nepodařilo
+    načíst ani 20. 7. (rozbité HTTPS, self-signed certifikát), ani
+    26. 7. 2026 (sandbox jej nepustil) — NEOTEVŘEN. ZÁVĚR: zda objekt po
+    převodu z 2020 slouží veřejnosti, NEDOLOŽENO; stránky popisující
+    restauraci (treking.cz, ceskehory.cz „účelové zařízení NIDV",
+    VisitCzechia) jsou nedatované a podle zmínek o NIDV nejspíš starší než
+    převod.
   verified: false
-  checked: 2026-06-12
+  checked: '2026-07-26'
+overeniObcerstveni:
+  source: >-
+    treking.cz (načteno 26. 7. 2026, stránka má rozbité kódování, citace
+    rekonstruována): „Restaurace je zaměřená na tradiční české a krkonošské
+    speciality". Ceskehory.cz: „Restaurace zaměřená na tradiční české
+    a krkonošské speciality - oceněné certifikací CzechSpecial regional,
+    zpestřené o naše pečivo a koláče." VisitCzechia (anglicky): „an
+    establishment famed for its Krkonoše specialities". ŽÁDNÝ z těch tří
+    pramenů není datovaný a ceskehory.cz objekt vede jako „účelové zařízení
+    NIDV" — instituce, která zanikla sloučením do NPI ČR, a areál byl 2020
+    předán Policejnímu prezidiu. Veřejná přístupnost restaurace DNES je
+    proto nedoložená; klíč zařazení zatím splněn NENÍ.
+  verified: false
+  checked: '2026-07-26'
+overeniNocleh:
+  source: >-
+    ČTYŘI RŮZNÁ ČÍSLA KAPACITY, nerozhodnuto: (a) Kudy z nudy „bouda s 50
+    lůžky v 18 pokojích"; (b) ceskehory.cz „Ubytovací kapacita je 77 lůžek
+    na hlavní budově a 29 lůžek na 300m vzdálené depandanci Červené boudě."
+    (= 106, ale jako součet dvou budov — nesčítat, poučení Výrovka);
+    (c) treking.cz „Ubytovací kapacita přes 100 lůžek"; (d) Firmy.cz
+    „106 beds in 34 rooms". Čísla (b), (c) a (d) jsou spolu konzistentní,
+    pokud (d) sčítá obě budovy; číslo (a) může být jen hlavní budova jiné
+    éry, nebo prostě jiný stav. Pole kapacita se NEvyplňuje.
+  verified: false
+  checked: '2026-07-26'
+overeniHistorie:
+  source: >-
+    ÚZSVM (uzsvm.gov.cz, PRIMÁRNÍ pramen, 27. 11. 2020) doslova: „Richtrova
+    bouda byla postavena před rokem 1911 a v letech 2000 až 2008 probíhaly
+    její stavební úpravy." a „Červená bouda byla postavena v roce 1934 na
+    místě původního domu a stavebně byla upravena v letech 1999 až 2000."
+    Kudy z nudy doslova: „První zmínka o Richtrových boudách pochází
+    z 80. let 18. století", „V roce 1938 objekt vyhořel", „V roce 1946
+    získala boudu Obchodní akademie Dr. Beneše z Prahy a v roce 1950 se
+    stala majetkem tehdejšího ministerstva školství, věd a umění". POZOR:
+    „před rokem 1911" (ÚZSVM) a „první zmínka z 80. let 18. století" (Kudy
+    z nudy) nejsou v rozporu — první mluví o dnešní budově, druhé o boudách
+    na tom místě; do rokVzniku při povýšení NEbrat ani jedno bez rozmyslu
+    (poučení Kolínská: zmínka o místě ≠ stavba budovy).
+  verified: false
+  checked: '2026-07-26'
 interniPoznamky: >-
-  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-12) — na web povýšit do data/chaty/
-  až po křížovém ověření (DATA-03).
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-12) — na web povýšit do
+  data/chaty/ až po křížovém ověření (DATA-03).
 
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
@@ -36,9 +123,30 @@ interniPoznamky: >-
   WebFetch průchozí jen na část domén, zbytek padá na PROVENANCE/timeout;
   křížový checklist: přehled ubytování
   treking.cz/prehledy/krkonose-ubytovani.htm, načteno 20. 7. 2026 — výtah
-  nemusí být úplný, končí „a další“): Web z OSM (richtrovyboudy.cz) má rozbité
-  HTTPS (self-signed certifikát — obdoba nálezu u Výrovky ze session 22),
-  obsah se nenačetl. Přehled treking.cz uvádí „Richtrovy boudy“ mezi
-  hřebenovými boudami — křížový signál existence trvá. NÁVRH REDAKCI: povýšit
-  až po doložení provozu (web přes http/prohlížeč prověří Michal, příp.
-  DATA-04).
+  nemusí být úplný, končí „a další"): Web z OSM (richtrovyboudy.cz) má
+  rozbité HTTPS (self-signed certifikát — obdoba nálezu u Výrovky ze
+  session 22), obsah se nenačetl. Přehled treking.cz uvádí „Richtrovy
+  boudy" mezi hřebenovými boudami — křížový signál existence trvá.
+
+  REŠERŠE 26. 7. 2026 (pokus o povýšení Tier 1 z master fronty DATA-03) —
+  VÝSLEDEK: NEPOVYŠOVAT, viz hlavička souboru. Klíčová zjištění:
+  (a) vlastnická linka doložená primárním pramenem ÚZSVM: Obchodní
+  akademie Dr. Beneše (1946) → ministerstvo školství (1950) → NIDV/NPI ČR
+  → 27. 11. 2020 Policejní prezidium ČR (školicí středisko bezpečnostních
+  sborů); (b) firemní zápis na Firmy.cz je označen jako NEAKTIVNÍ;
+  (c) všechny stránky popisující veřejnou restauraci jsou nedatované
+  a nejspíš předpřevodové; (d) areál = dvě budovy (Richtrova + Červená
+  bouda, depandance 300 m); (e) čtyři různé kapacity (50/18 × 77+29 ×
+  „přes 100" × 106/34); (f) rozpor výšky 1136 (OSM) × 1206 m (tři weby).
+
+  PROTIZNAK: známka č. 1602 „Richtrovy boudy" je v oficiálním seznamu
+  vydavatele z ČERVENCE 2026 (turisticke-znamky-cr-vyber.csv, DATA-22) —
+  známková místa se známkou v prodeji bývají veřejně přístupná; kde se
+  známka prodává, nevíme (detail vydavatele se ze sandboxu nenačte).
+
+  OTÁZKA PRO DATA-04 / MICHALA: zavolat (číslo z OSM +420 499 896249,
+  může být mrtvé) nebo otevřít web v prohlížeči: slouží restaurace
+  a ubytování veřejnosti i po převodu na Policejní prezidium? Odpověď ANO
+  → povýšit (materiál v tomhle souboru už na profil stačí); odpověď NE →
+  vyřadit s důvodem, případně vést jako mimo-provoz, pokud Michal rozhodne,
+  že známková bouda patří do průvodce i bez veřejného občerstvení.

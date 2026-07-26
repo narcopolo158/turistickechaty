@@ -38,6 +38,15 @@ Navíc **7 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 |---|---|---|---|---|
 | 🇨🇿 Richtrovy Boudy | č.1602 | ✓ 1206 m | 1136 m | obsluhovana |
 
+**Pokus o povýšení 26. 7. 2026 — NEPOVÝŠENO, blokuje klíč zařazení.** Rešerše doložila
+(primární pramen ÚZSVM): areál byl 27. 11. 2020 předán **Policejnímu prezidiu** jako
+školicí středisko bezpečnostních sborů, firemní zápis je vedený jako **neaktivní**
+a všechny stránky popisující veřejnou restauraci jsou nedatované, nejspíš z éry NIDV
+(před převodem). Zda restaurace slouží veřejnosti dnes — na čemž stojí klíč zařazení —
+doloženo není; protiznak: známka č. 1602 je i ve vydavatelově seznamu z července 2026.
+Materiál na profil je v kandidátovi připravený; rozhodne telefonát (DATA-04) nebo
+Michal. Bez toho se z Tier 1 pokračovat nedá — další na řadě je Tier 2.
+
 ### Tier 2 — jen známka (katalog je nemá — přesto reálné boudy)
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |

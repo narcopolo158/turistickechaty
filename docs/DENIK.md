@@ -11,6 +11,54 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — pokračování 3: pokus o Tier 1 povýšení zastaven — Richtrovy boudy od 2020 patří Policejnímu prezidiu
+
+**Zadání Michala:** „pokracuj samostatne dal podle planu."
+
+**Hotovo:**
+
+**Richtrovy boudy (jediná položka Tier 1 master fronty) — NEPOVÝŠENY, a to je výsledek,
+ne selhání.** Kandidát nesl podmínku „povýšit až po doložení provozu" a rešerše ji
+nesplnila, nýbrž vyvrátila: podle primárního pramene (ÚZSVM) byl areál **27. 11. 2020
+předán Policejnímu prezidiu** jako školicí středisko pro příslušníky bezpečnostních
+sborů, firemní zápis objektu je vedený jako **neaktivní**, a všechny stránky, které
+popisují veřejnou restauraci (treking, ceskehory — „účelové zařízení NIDV", VisitCzechia),
+jsou nedatované a nejspíš z éry před převodem. Zda dnes objekt slouží veřejnosti — na čemž
+stojí klíč zařazení — tedy doloženo není. Do kandidáta je zapsán kompletní materiál na
+budoucí profil: vlastnická linka 1946 Obchodní akademie → 1950 ministerstvo školství →
+NIDV/NPI → 2020 Policejní prezidium; historie (Richtrova bouda postavena před 1911,
+požár 1938, Červená bouda 1934 jako depandance 300 m); **čtyři různé kapacity** (50/18 ×
+77+29 × „přes 100" × 106/34 — nesčítáno, pole prázdné) a **rozpor výšky** 1136 (OSM) ×
+1206 m (tři weby). Protiznak, který kandidaturu drží při životě: známka č. 1602 je i ve
+vydavatelově seznamu z ČERVENCE 2026, takže nějaký veřejný prodej nejspíš existuje.
+Rozhodne telefonát (DATA-04) nebo tvůj pohled na web (sandbox ho nenačte — rozbité
+HTTPS už 20. 7., teď PROVENANCE). Master fronta je u Tier 1 anotovaná; další na řadě
+je Tier 2 (Chata Rozhled, Medvědí bouda).
+
+**Rozhledna Panorama — prověřena, NEZAKLÁDÁ SE.** Dva prameny (Kudy z nudy, krajský
+katalog) ji popisují — upravená předposlední podpěra lanovky z 1928, rozhledna od 1998,
+plošina 21 m ve výšce 1289 m, 100 m od horní stanice — a **ani jeden u ní neuvádí
+občerstvení**. Bez občerstvení klíčem DATA-23 neprochází. Zapsáno v BACKLOGu
+s podmínkou znovuotevření, kdyby se občerstvení doložilo.
+
+**Vedlejší nález při prověřování Černé hory:** Sokolská bouda (zanikla 2019 podle Archy
+Krkonoš; na místě se připravuje minipivovar) — prověřeno, že **zaniklé pipeline o ní ví**
+(`data/zanikle/krkonose.json` ji vede), takže žádná mezera.
+
+**Měření:** validator kandidáta CHYB 0, `npm run kontrola` zelené, ban-scan drží 129
+(měněn jen kandidát a docs).
+
+**Příště:** Tier 2 master fronty — Chata Rozhled (č. 14) a Medvědí bouda (č. 1274):
+stejný postup, napřed doložit provoz a klíč zařazení, pak teprve psát. Nebo počkat na
+tvou odpověď k Richtrovým boudám a dorazit Tier 1.
+
+**Otázky pro Michala:** (1) **Richtrovy boudy** — otevře se ti richtrovyboudy.cz
+v prohlížeči? Slouží restaurace veřejnosti i po převodu na Policejní prezidium? (ANO →
+povýším, materiál je nachystaný; NE → vyřadit, nebo vést mimo provoz?) (2) trvají:
+Jelenka 25/26 lůžek, povýšení kandidátů se známkou, sémantika `obec`, rotace tokenů.
+
+---
+
 ## 2026-07-26 — pokračování 2: sedm profilů prověřeno u vydavatele známek — žádný známku nemá; vydavatel má i suvenýry
 
 **Zadání Michala:** „pokracuj dal."
