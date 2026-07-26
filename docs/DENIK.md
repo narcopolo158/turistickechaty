@@ -11,6 +11,83 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — navazující session (Opus, inline): DATA-18 hotovo — průchod, který našel čtvrtou vadu tím, že přestal věřit vlastnímu zadání
+
+**Zadání Michala:** „můžeš spustit další session." Vzato **DATA-18**, tedy první nehotová
+položka shora. Backlog u ní výslovně žádal, aby se všechny tři drobnosti udělaly **spolu
+a s měřením proti `git archive HEAD`**, ne rozsypaně mezi jinou práci — každá totiž hýbe
+počtem zásahů `ban-scan` a poodděleně by se nedalo poznat, co kterou změnu způsobilo.
+
+**Hotovo: tři zadané vady a jedna nezadaná, která je z nich nejdůležitější.**
+
+Vada (3) zněla, že vzor třídy GPS `${WB0}souřadnic` je citlivý na velikost písmen. Při
+její opravě bylo přirozené podívat se, jestli tímtéž netrpí vzor `profil`, který měl
+průchod stejně v ruce kvůli vadě (2) — **a trpěl dvojnásob:** hlídal jen malé písmeno
+a jen první pád. To zpětně vysvětlilo rozpor, se kterým se tahle položka odkládala už
+z Výrovky: backlog mluvil o 23 výskytech ve 20 souborech, skript hlásil 19. Napsal jsem
+proto vlastní výpis nezávislý na obou a pravda je třetí: slovo mělo v korpusu **30
+výskytů**, starý vzor jich viděl 19 a z těch bylo 13 interním žargonem — což je přesně
+ono „zhruba 13" z backlogu. Všechna tři čísla najednou sedí a díra je vysvětlená. Do
+prózy se tak dalo bez povšimnutí napsat 4× „Profil" na začátku věty a 5× „profilu".
+
+**Rozvaha ustáleného počtu 138 → 135**, změřená souborovým diffem proti HEAD:
+
+| směr | kolik | co to je |
+| --- | --- | --- |
+| −15 | 13 + 2 | skutečné opravy: 13× „profil" ve významu *naší* stránky, 2× u Vrbatovy boudy (číslo známky a doména v jedné větě) |
+| +9 | 9 | nově viditelné věty připisující licenci ODbL — `souřadnic` chytá i velké „S" |
+| +3 | 3 | nově viditelné odkazy na *cizí* katalogový profil — `profil` chytá i skloňované tvary |
+
+Nic z toho, co přibylo, není vada; obojí je připsání pramene, tedy přesně to, co má próza
+dělat. **Šest oprav se v čísle neprojeví vůbec** — čtyři „Profil" a dva „profilu", které
+starý vzor nikdy neviděl. Opravily se stejně. Průchod, který by si vybral jen to, co mu
+zlepší vlastní metriku, není audit, ale kosmetika.
+
+**Co se v próze skutečně změnilo.** U Vrbatovy boudy zmizelo z `text[0]` číslo známky
+i doména, **rozpor výšek 1 400 / 1 396 / 1 390 m ale zůstává přiznaný v plném rozsahu** —
+smazalo se to, co do veřejného textu nepatří, ne to, co je nepohodlné. Číslo známky se
+neztratilo: drží ho `zdroje` (s odkazem na katalog vydavatele, na který máme svolení)
+i `interniPoznamky`. Devatenáct výskytů žargonu se přepsalo ve **třinácti** souborech
+(census veřejné prózy HEAD × pracovní strom: 30 tvarů slova → 11, mimo sloveso 28 → 9);
+default byl „ze kterého profil vychází" → „ze kterého vycházíme". **Dvakrát to ale nešlo
+mechanicky:** u Lysečinské boudy a u Výrovky by vazba přímo odporovala následující větě
+„Vycházíme z údajů Kudy z nudy", takže se vypustila celá. Jedenáct výskytů slova zůstává
+schválně — devět míří na katalogový profil cizího serveru (Kamieńczyk pětkrát, Schronisko
+pod Łabskim Szczytem dvakrát, Vébrovy boudy a Krakonoš po jednom), dvakrát jde o sloveso
+„profiluje se" u Friesových bud.
+
+**Nová trvalá rodina falešných poplachů.** Oprava `[Ss]ouřadnic` zviditelnila devět vět
+a při čtení všech sedmnácti dnešních zásahů třídy GPS vyšlo, že **ani jeden neobsahuje
+číslo** — všechny jsou věta připisující ODbL („Souřadnice … pocházejí z OpenStreetMap").
+Zapsáno do README kontrol i do hlavičky skriptu. Vzor je psaný `[Ss]`, ne příznakem `i`,
+protože ten by zbytečně rozvolnil i `GPS` a holé `N` ve stejném výrazu.
+
+**README kontrol opravil svůj vlastní chybný zápis.** Od třetí dávky tam stálo, že vazba
+„starší podklad, ze kterého profil vychází" je přijatý falešný poplach. Nebyla — a právě
+tenhle spor dvou dokumentů projektu držel položku odloženou. Historický odstavec jsem
+nepřepisoval, jen k němu připsal, že šlo o omyl a kdy se opravil.
+
+**Fixtura.** Nová `13-vzory-data18.yaml` drží obě nové větve a hlavně **past**: sloveso
+„profiluje" se chytit nesmí. Ověřeno i mechanikou vzoru, ne jen během — alternativa `u`
+spotřebuje „u" a `WB1` pak padne na „j". Snímky přegenerovány (+6 řádků: jeden zásah
+navíc v `08-hranice-slova` z velkého „Souřadnice", pět z nové fixtury), protože šlo
+o **záměrné utažení**, ne o chybu portu — přesně ten případ, na který test-fixtura
+v hlavičce pamatuje.
+
+**Příště:** **DATA-17** (konvence pro kolidující názvy chat — dvě dvojice jmenovců
+v Krkonoších, dnes rozlišené jen v `interniPoznamky`) nebo **DATA-19** (přehodnotit
+shodu jmen v pipeline DATA-09 pro osm nespárovaných objektů). DATA-17 má větší dopad
+na čtenáře, DATA-19 přinese do korpusu chybějící data — pořadí ať určí Michal, jinak
+beru DATA-17 jako první shora.
+
+**Otázky pro Michala** (obě přenesené z minulé session, zatím bez odpovědi):
+1. PAT a klíč Mapy.com v otevřeném textu promptu naplánované úlohy — otočit a prompt
+   přepsat, nebo nechat být?
+2. Nemá `kontakty` dostat druhé pole na rezervační linku? Schéma má dnes jediný
+   `telefon` a jsou to už dva objekty ze 42, kde to nestačí.
+
+---
+
 ## 2026-07-26 — denní session (Opus, inline): DATA-16 hotovo — sken vidí i mimo tělo článku a hned našel dva telefony
 
 **Zadání Michala:** „spusť naplánovanou session, do dneška byla zastavena." Naplánovaná

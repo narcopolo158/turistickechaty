@@ -38,8 +38,13 @@ e-maily, telefony, ceny (mění se), GPS, čísla známek, názvy polí ani inte
 terminologie. **Výstup není seznam vad.** Část zásahů jsou trvalé a známé falešné
 poplachy: doména v prvním pádě jako jméno pramene („server Krkonose.eu") je
 doložený domácí styl, „redakce" v závěrečném odstavci taky, a OpenStreetMap se
-uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **138 zásahů** —
-smysl má sledovat, jestli číslo neskočí, ne jestli je nula.
+uvádí kvůli licenci ODbL. Od DATA-18 k nim patří ještě dvě rodiny: celá věta,
+kterou se ta licence připisuje („Souřadnice … pocházejí z OpenStreetMap"),
+spadá do třídy GPS, ač žádné souřadnice nenese — takových je dnes všech
+**17 zásahů třídy GPS** a ani jeden neobsahuje číslo — a „katalogový profil"
+ve významu stránky **cizího** serveru je běžná čeština, zakázaný je jen
+„profil" ve významu naší vlastní stránky. Ustálený počet na dnešním korpusu je
+**135 zásahů** — smysl má sledovat, jestli číslo neskočí, ne jestli je nula.
 
 Bylo jich 135 a rozdíl je čistě náhodou malý: 25. 7. 2026 **odpadlo 17 zásahů**
 třídy „číslo známky" (viz níže) a **pět naopak přibylo**, když se do prózy tří
@@ -66,8 +71,11 @@ neztratil ani jeden, takže +5 vysvětluje celý pohyb. Tři z nich chytil vzor
 vychází", kterou próza nově používá tam, kde se přiznává, že tvrzení stojí na
 katalogu bez veřejně citovatelné adresy. Zbylé dva chytil `OpenStreetMap` —
 v perexu Lesní boudy a v textu Lyžařské boudy, kde se nově připisuje, odkud
-pochází výška a klasifikace objektu. Obě třídy stojí mezi trvalými falešnými
-poplachy vyjmenovanými o dva odstavce výš: přibylo připsání, ne domýšlení.
+pochází výška a klasifikace objektu. `OpenStreetMap` mezi trvalými falešnými
+poplachy stojí dodnes; **u `profil` to tehdejší zápis tvrdil taky a byl to
+omyl**, který opravilo až DATA-18 o den později (poslední oddíl téhle sekce).
+„Profil" ve významu naší vlastní stránky je interní žargon a z prózy patří
+pryč, ať stojí v jakkoli ustálené vazbě.
 
 Při té příležitosti se potvrdila i **hranice dosahu**. `proza()` v `lib.ts` čte
 jen `perex` a `text[]`. Když se z položky `zajimavosti[0]` u Lyžařské boudy
@@ -115,6 +123,43 @@ dva se tam sedm měsíců schovávaly právě proto, že tam skript neviděl. Č
 nezahodila: obě jsou dál v `overeni*.source`, který se veřejně vykresluje jen
 jako hostname. Zbylých sedm zásahů spadá do už popsaných falešných poplachů
 (`OSM`, doména v prvním pádě, „ceny Mies van der Rohe Award").
+
+## Když měření převrátí vlastní zadání (DATA-18)
+
+Ustálený počet **138 → 135**, 26. 7. 2026. Backlog vedl tři drobnosti k jednomu
+měřenému průchodu; měření z nich udělalo čtyři a ta čtvrtá je z nich nejcennější,
+protože **zpochybnila zápis v tomhle souboru**.
+
+Vada číslo tři zněla, že vzor třídy GPS `${WB0}souřadnic` je citlivý na velikost
+písmen. Při jeho opravě bylo přirozené podívat se, jestli tímtéž netrpí i vzor
+`profil`, který měl průchod zrovna v ruce — a trpěl dvojnásob: byl jen malým
+písmenem a jen v prvním pádě. Bez toho by se nedalo vysvětlit, proč si backlog
+i skript o rozsahu vady odporovaly (23 výskytů ve 20 souborech proti 19, které
+skript viděl). Pravda je, že slovo mělo v korpusu **30 výskytů**, starý vzor jich
+viděl 19 a z nich bylo 13 interním žargonem — což je přesně ono „zhruba 13"
+z backlogu. Až tenhle rozpor tří čísel díru odhalil.
+
+Rozvaha pohybu:
+
+| směr | kolik | co to je |
+| --- | --- | --- |
+| −15 | 13 + 2 | skutečné opravy: 13× „profil" ve významu *naší* stránky, 2× u Vrbatovy boudy (číslo známky a doména v jedné větě) |
+| +9 | 9 | nově viditelné věty připisující licenci ODbL — `souřadnic` nově chytá i velké „S" |
+| +3 | 3 | nově viditelné odkazy na *cizí* katalogový profil — `profil` nově chytá i skloňované tvary |
+
+138 − 15 + 12 = **135**. Nic z toho, co přibylo, není vada: obojí je připsání
+pramene, tedy přesně to, co má próza dělat. Naopak **šest oprav se v čísle
+neprojeví vůbec** — čtyři „Profil" na začátku věty a dva „profilu", které starý
+vzor nikdy neviděl. Opravily se stejně; průchod, který si vybírá jen to, co mu
+zlepší vlastní metriku, není audit, ale kosmetika.
+
+Jedenáct výskytů slova v korpusu **zůstává schválně**: devět míří na katalogový
+profil cizího serveru (Kamieńczyk pětkrát, Schronisko pod Łabskim Szczytem
+dvakrát, Vébrovy boudy a Krakonoš po jednom) a dvakrát jde o sloveso „profiluje
+se" u Friesových bud, což je běžná čeština bez vztahu k naší terminologii.
+Fixtura `13-vzory-data18.yaml` drží obě strany: hlídá, že se nové tvary chytí,
+a zároveň že se `profiluje` **nechytí**. Snímek se kvůli tomu přegeneroval
+(o šest řádků nahoru), protože šlo o záměrné utažení, ne o chybu portu.
 
 **`audit-mech.ts` — seznam k posouzení.** Strojově chytatelná část auditní
 taxonomie z 25. 7. 2026, šest kontrol: **A** próza tvrdí hodnotu pole, které je

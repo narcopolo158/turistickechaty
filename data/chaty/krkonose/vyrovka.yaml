@@ -109,9 +109,9 @@ text:
   - >-
     Výrovka stojí na hřebeni Krkonoš v první zóně Krkonošského národního
     parku; adresou patří pod Pec pod Sněžkou, kde nese číslo popisné 204.
-    Výšku 1 368 metrů nad mořem uvádí Kudy z nudy; starší podklad, ze kterého
-    profil vychází, ale pracuje s hodnotou 1 356 metrů. Rozpor zatím rozřešený
-    nemáme a v profilu zůstáváme u údaje z konkrétnějšího zdroje.
+    Výšku 1 368 metrů nad mořem uvádí Kudy z nudy; starší katalogový podklad
+    ale pracuje s hodnotou 1 356 metrů. Rozpor zatím rozřešený nemáme
+    a zůstáváme u údaje z konkrétnějšího zdroje.
   - >-
     Místo za sebou má několik staveb. V roce 1926 na něm vyrostl vojenský
     srub, o dva roky později Havlova bouda, pojmenovaná podle svého stavitele.
@@ -197,18 +197,22 @@ interniPoznamky: >-
   zapsán do overeniProvoz.source a přiznán ve veřejné próze bez uvádění
   čísel — vzorem chalupa-na-rozcesti („u profilu proto stojí vždy jen jedna
   z možností"). Zároveň označen rozpor rokVzniku 1926 vs. 1990 v komentáři
-  pole. ODLOŽENO: audit správně upozornil, že slovo „profil" ve významu
-  naší vlastní stránky je na seznamu zakázané interní terminologie, ale
-  README kontrol ho od třetí dávky vede jako přijatý falešný poplach
-  v ustálené vazbě „starší podklad, ze kterého profil vychází". Dva vlastní
-  dokumenty projektu si tu odporují a věc je korpusová, ne souborová:
-  průzkum našel 23 výskytů ve 20 souborech, z toho zhruba 13 ve významu
-  naší stránky (10× vazba „ze kterého profil vychází", plus chalupa-na-
-  rozcesti, rychorska-bouda a tenhle profil) a zbytek ve významu stránky
-  pramene („katalogový profil", „profil na treking.cz"), což je běžná
-  čeština a vada to není. Opravovat jeden soubor by rozbilo jednotnost
-  a posunulo ustálený počet ban-scanu naslepo; postoupeno do BACKLOGu jako
-  jednorázový korpusový průchod s měřením, stejnou metodou jako DATA-16.
+  pole. ODLOŽENO → VYŘEŠENO 26. 7. 2026 (DATA-18): audit správně upozornil,
+  že slovo „profil" ve významu naší vlastní stránky je na seznamu zakázané
+  interní terminologie, ale README kontrol ho od třetí dávky vedlo jako
+  přijatý falešný poplach v ustálené vazbě „starší podklad, ze kterého
+  profil vychází". Dva vlastní dokumenty projektu si odporovaly a věc byla
+  korpusová, ne souborová, takže se opravila jedním měřeným průchodem přes
+  celý korpus, stejnou metodou jako DATA-16. Skutečný census byl jiný, než
+  tenhle odklad odhadoval: ne 23 výskytů ve 20 souborech, ale 30 výskytů,
+  z nichž starý vzor viděl jen 19 — byl totiž sám citlivý na velikost
+  písmen i na pád. Interním žargonem jich bylo 19 a všech 19 je přepsáno
+  (v tomhle souboru vazba v text[0] vypuštěna úplně, protože „ze kterého
+  vycházíme" by si odporovalo s následující větou). Zbylých 11 zůstává:
+  9 ve významu stránky pramene („katalogový profil", „profil na
+  treking.cz") a 2× sloveso „profiluje se", což je běžná čeština a vada
+  to není. README kontrol svůj chybný zápis opravil, spor dokumentů tedy
+  padl. Ustálený počet ban-scanu 138 → 135.
   ZAMÍTNUTO po druhém čtení (agentem i při adjudikaci): „hřebenová bouda"
   a „stojí na hřebeni Krkonoš v 1. zóně" není domýšlení typu terénu —
   zajimavosti[1] to nese s vlastním polem zdroj a Kudy z nudy to říkají

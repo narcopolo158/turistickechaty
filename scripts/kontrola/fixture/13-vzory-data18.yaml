@@ -1,0 +1,26 @@
+# Fixtura na DATA-18: dva vzory, které do 26. 7. 2026 měly díru.
+# (1) `souřadnic` se hlídalo jen s malým „s", takže věta začínající
+#     „Souřadnice…" prošla, pokud v ní nebylo číslo se čtyřmi desetinnými
+#     místy. Tady žádné takové číslo schválně není — zabrat musí samo slovo.
+# (2) Slovo „profil" se hlídalo jen v prvním pádě a malým písmenem, takže
+#     „Profil" na začátku věty ani tvary „profilu" a „profilem" neprošly
+#     snímkem, ač jde o tutéž interní terminologii.
+# Past je druhý odstavec: sloveso „profiluje" je běžná čeština (kuchyně se
+# profiluje specialitami) a chytit se NESMÍ.
+slug: 13-vzory-data18
+nazev: Fixtura na vzory opravene v DATA-18
+typ: obsluhovana
+obec: Harrachov
+stav: v-provozu
+perex: >-
+  Souřadnice objektu pocházejí z mapových dat a v terénu ověřené nejsou.
+text:
+  - >-
+    Profil zatím stojí na jediném prameni, v profilu proto chybí kapacita
+    a s profilem si nevystačíme.
+  - >-
+    Kuchyně se profiluje domácími specialitami a tohle sloveso se chytit
+    nesmí; souřadnice psané malým písmenem se naopak chytit mají.
+zdroje:
+  - url: 'https://www.chata-fixtura.cz/'
+    popis: 'Web provozovatele'

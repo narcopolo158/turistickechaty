@@ -10,6 +10,10 @@
  * a známé falešné poplachy: doména v prvním pádě jako jméno pramene („server
  * Krkonose.eu") je doložený domácí styl, „redakce" v závěrečném odstavci taky,
  * OpenStreetMap se uvádí kvůli licenci ODbL a české „osm" trefuje vzor /OSM/.
+ * Od DATA-18 k nim patří ještě dvě rodiny: věta připisující ODbL („Souřadnice
+ * … pocházejí z OpenStreetMap") spadne do třídy GPS, ač žádné souřadnice
+ * neobsahuje, a „katalogový profil" ve významu stránky CIZÍHO serveru je
+ * běžná čeština — zakázaný je jen „profil" ve významu naší vlastní stránky.
  *
  *   npx tsx scripts/kontrola/ban-scan.ts [soubor.yaml …]
  */
@@ -36,7 +40,7 @@ const VZORY: Array<[string, RegExp]> = [
   [
     'GPS',
     new RegExp(
-      `\\d{1,3}\\.\\d{4,}|\\d+°\\s?\\d+'|${WB0}souřadnic|${WB0}GPS${WB1}|${WB0}N${WB1}\\s*\\d{2}\\.`,
+      `\\d{1,3}\\.\\d{4,}|\\d+°\\s?\\d+'|${WB0}[Ss]ouřadnic|${WB0}GPS${WB1}|${WB0}N${WB1}\\s*\\d{2}\\.`,
       'gu',
     ),
   ],
@@ -57,7 +61,8 @@ const VZORY: Array<[string, RegExp]> = [
     'interní pojem',
     new RegExp(
       `${WB0}kandidát|${WB0}KANDIDÁT|${WB0}povýš|${WB0}DATA-\\d+|${WB0}OSM${WB1}|` +
-        `${WB0}OpenStreetMap${WB1}|${WB0}Payload${WB1}|${WB0}redakc|${WB0}profil${WB1}|` +
+        `${WB0}OpenStreetMap${WB1}|${WB0}Payload${WB1}|${WB0}redakc|` +
+        `${WB0}[Pp]rofil(u|em|y|ech|ů|ům)?${WB1}|` +
         `${WB0}nedomýšl|${WB0}ověřeno námi${WB1}`,
       'gu',
     ),
