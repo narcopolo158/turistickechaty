@@ -3,6 +3,11 @@
 # média Kudy z nudy (verified:false — ověřit primárně, DATA-04). GPS z OSM
 # (way/218896623). Duplicita s node/656504528 vyřešena rozhodnutím Michala
 # 20. 7. 2026 (sloučeno). Vše verified:false.
+#
+# DATA-21 (26. 7. 2026): vlastní web boudy, dosud vedený jako nedostupný
+# (ConnectTimeout), se podařilo načíst. Doplněna historie (1717, 1930) a
+# potvrzena výška i kapacita. POZOR: dataci 1717 nese jediný pramen — sám
+# provozovatel — a neuvádí u ní žádný doklad; próza to musí přiznat.
 
 nazev: Lyžařská bouda
 slug: lyzarska-bouda
@@ -34,9 +39,14 @@ overeniLokace:
     přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright), stav dat
     2026-06-12. Výška 1 206 m dle Kudy z nudy, shodně s údajem vyrytým na
     turistické známce č.2210; adresa „Liščí hora 189, 543 44 Černý Důl" dle Kudy
-    z nudy. Sekundární zdroje, verified:false
+    z nudy. DATA-21 (26. 7. 2026): výšku potvrzuje i vlastní web boudy, který
+    navíc polohu upřesňuje — „Hotel Lyžařská bouda leží na jižním svahu Liščí
+    hory ve výšce 1206 metrů nad mořem ve druhé zóně Krkonošského národního
+    parku." Tři nezávislé prameny na 1 206 m se tedy shodují. Kde leží Liščí
+    louka (jméno z rytiny známky) vůči Liščí hoře, ani tento pramen neuvádí.
+    Sekundární zdroje, verified:false
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-07-26'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -47,9 +57,11 @@ overeniNocleh:
   source: >-
     Kudy z nudy „Hotel Lyžařská bouda v Krkonoších": hotel pojme 70 osob v tří-,
     čtyř- a pětilůžkových pokojích vybavených koupelnou se sprchovým koutem a
-    WC. Sekundární médium, verified:false
+    WC. DATA-21 (26. 7. 2026): kapacitu potvrzuje vlastní web boudy — „Lyžařská
+    bouda nabízí ubytování pro 70 osob." Rozpis pokojů podle typů vlastní web
+    neopakuje. Sekundární zdroje, verified:false
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-07-26'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 kuchyne: ano
@@ -92,36 +104,68 @@ overeniProvoz:
   source: >-
     Kudy z nudy „Hotel Lyžařská bouda v Krkonoších": tel. +420 774 304 091
     (shodně s OSM), rezervace@lyzarskabouda.com, web lyzarskabouda.com (shodně s
-    OSM). Restaurace denně 10:30–17:00. Sezónu ani celoroční provoz zdroj
-    výslovně neuvádí — pole `sezona` vědomě nevyplněno (nedomýšlet). Web je ze
-    sandboxu nedostupný (ConnectTimeout) — neověřen. Sekundární zdroje,
+    OSM). Restaurace denně 10:30–17:00. DATA-21 (26. 7. 2026): vlastní web se
+    už načíst PODAŘILO (dřívější poznámka o nedostupnosti tím padá) — doména i
+    existence provozu potvrzeny, provozovatelem je společnost Lyžařská s.r.o.
+    Otvírací dobu restaurace ani sezónní režim ale ani vlastní web na načtené
+    stránce neuvádí, takže rozpor 10:30–17:00 vs. 10:30–22:00 zůstává nerozřešen
+    a pole `sezona` vědomě nevyplněné (nedomýšlet). Sekundární zdroje,
     verified:false
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-07-26'
 
 # ── Historie ──────────────────────────────────────────────────────────────
-# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — dosažitelné zdroje historii neuvádějí.
+# POZOR — SLABÝ PRAMEN: rok 1717 stojí na jediné větě na webu provozovatele,
+# která neuvádí žádný doklad ani odkaz. Zapsáno proto, že to je konkrétní a
+# vlastní tvrzení objektu, ale próza tu slabinu MUSÍ přiznat. Nepřebírat do
+# jiných profilů jako doložené datum a nezvyšovat na verified:true bez
+# nezávislého pramene (literatura, archiv).
+rokVzniku: 1717
+milniky:
+  - rok: 1717
+    udalost: >-
+      Podle webu provozovatele sem sahá historie boudy; stála tu tehdy letní
+      bouda (pramen neuvádí doklad)
+  - rok: 1930
+    udalost: >-
+      Přestavba na celoroční provoz; bouda tehdy podle vlastního webu získala
+      jméno Skiemeisterbaude
 overeniHistorie:
   source: >-
-    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
-    nudy historii neuvádí, cs.wikipedia.org a treking.cz jsou ze sandboxu
-    nedostupné, vlastní web nedostupný). Doplnit při primárním ověření
-    (DATA-04) — nedomýšleno. verified:false
+    Vlastní web boudy lyzarskabouda.com (načteno 26. 7. 2026 — dosud byl veden
+    jako nedostupný, ConnectTimeout) uvádí doslova: „Historie Lyžařské boudy
+    sahá do roku 1717, kdy byla původně jako letní bouda." a „V roce 1930 byla
+    přestavěna na celoroční provoz a získala název Skiemeisterbaude." Jiný údaj
+    o vzniku pramen nenese. POZOR NA POVAHU PRAMENE: jde o vlastní prezentaci
+    provozovatele, obě věty stojí bez odkazu na literaturu či archiv a nezávisle
+    je zatím nemáme čím podložit; rok 1717 je proto zapsán jako tvrzení
+    provozovatele, ne jako doložené datum. Nezávislé ověření = DATA-04.
+    verified:false
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-07-26'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Hotelová bouda nad Černým Dolem (1 206 m). Ubytuje 70 hostů ve tří- až
-  pětilůžkových pokojích s vlastní koupelnou; na otvírací době restaurace se
-  prameny neshodnou. Určena je hlavně pro školy v přírodě a lyžařské kurzy.
+  Hotelová bouda na jižním svahu Liščí hory nad Černým Dolem (1 206 m). Sama se
+  hlásí k roku 1717 a k někdejšímu jménu Skiemeisterbaude, doklad k tomu ale
+  nepředkládá. Ubytuje 70 hostů a určena je hlavně školám v přírodě
+  a lyžařským kurzům; na otvírací době restaurace se prameny neshodnou.
 text:
   - >-
-    Lyžařská bouda stojí nad Černým Dolem, na adrese Liščí hora 189.
-    Nadmořskou výšku 1 206 metrů uvádí Kudy z nudy a shoduje se s údajem
-    vyrytým na turistické známce, která pro tohle místo vyšla pod jménem
-    Lyžařská bouda · Liščí louka — adresa tedy odkazuje na Liščí horu, známka
-    na Liščí louku.
+    Lyžařská bouda stojí nad Černým Dolem, na adrese Liščí hora 189. Sama o
+    sobě píše, že leží na jižním svahu Liščí hory ve druhé zóně Krkonošského
+    národního parku. Nadmořskou výšku 1 206 metrů uvádí shodně vlastní web
+    boudy, server Kudy z nudy i rytina turistické známky, která pro tohle
+    místo vyšla pod jménem Lyžařská bouda · Liščí louka — adresa i vlastní
+    popis tedy odkazují na Liščí horu, známka na Liščí louku.
+  - >-
+    O své historii říká bouda jedinou věc, zato konkrétní: že sahá do roku
+    1717, kdy tu stála letní bouda, a že v roce 1930 byla přestavěna na
+    celoroční provoz a získala jméno Skiemeisterbaude. Ten letopočet je ovšem
+    třeba brát opatrně. Nese ho jediný pramen — vlastní prezentace
+    provozovatele — a neuvádí u něj žádný doklad, žádnou literaturu ani
+    archivní odkaz. Nezávisle jsme rok 1717 zatím neměli čím podložit,
+    uvádíme ho proto jako tvrzení boudy o sobě samé, ne jako doložené datum.
   - >-
     Rozsahem služeb jde o horský hotel; pod hlavičkou Hotel Lyžařská bouda ho
     vede i Kudy z nudy, kdežto v OpenStreetMap je objekt zapsaný jako
@@ -132,7 +176,9 @@ text:
   - >-
     Restaurace má podle Kudy z nudy otevřeno denně od 10:30 do 17:00.
     OpenStreetMap ale u téhož objektu nese otvírací dobu podstatně delší,
-    po–ne od 10:30 do 22:00, a který z obou údajů platí, zatím nevíme.
+    po–ne od 10:30 do 22:00, a který z obou údajů platí, zatím nevíme; vlastní
+    web boudy otvírací dobu na stránkách, které jsme četli, neuvádí, takže
+    rozpor nerozsoudil.
     K vybavení podle Kudy z nudy patří masáže, stolní tenis a stolní fotbálek,
     dětské hřiště a hřiště pro míčové hry; po domluvě je možné grilovat.
   - >-
@@ -141,13 +187,20 @@ text:
     restaurace přitom odpovídá podniku otevřenému veřejnosti — výslovně to
     ale zdroj neuvádí, takže jisté není, jestli obsluhuje i kolemjdoucí.
   - >-
-    Historii boudy ani rok jejího vzniku se z dosažitelných pramenů doložit
-    nepodařilo, sezónní režim zdroj neuvádí a o Wi-Fi, platbě kartou, psech
-    ani lyžárně se nezmiňuje. Souřadnice objektu pocházejí z OpenStreetMap,
-    ostatní údaje ze sekundárních pramenů a redakce je zatím neověřila vlastním
-    dotazem. Před cestou proto doporučujeme potvrdit si přímo u boudy otvírací
-    dobu restaurace i to, zda je otevřená veřejnosti.
+    Sezónní režim neuvádí žádný z pramenů a o Wi-Fi, platbě kartou, psech ani
+    lyžárně mlčí i vlastní web. Souřadnice objektu pocházejí z OpenStreetMap,
+    ostatní údaje ze sekundárních pramenů a z vlastní prezentace boudy; nic
+    z toho jsme zatím neověřili vlastním dotazem. Před cestou proto
+    doporučujeme potvrdit si přímo u boudy otvírací dobu restaurace i to, zda
+    je otevřená veřejnosti.
 zdroje:
+  - popis: >-
+      Vlastní web boudy — historie (1717 jako letní bouda, 1930 přestavba na
+      celoroční provoz a jméno Skiemeisterbaude), poloha na jižním svahu Liščí
+      hory ve 2. zóně KRNAP, výška 1 206 m, kapacita 70 osob. Vlastní
+      prezentace provozovatele; historické údaje bez uvedení dokladu,
+      verified:false
+    url: https://www.lyzarskabouda.com/
   - popis: >-
       Kudy z nudy — „Hotel Lyžařská bouda v Krkonoších" (výška, adresa,
       kapacita a pokoje, restaurace a otvírací doba, vybavení, kontakty);
@@ -214,7 +267,22 @@ interniPoznamky: >-
   v perexu. Drobně: text[4] mluvil o „sekundárním médiu" v jednotném čísle, ač
   profil stojí na Kudy z nudy, OSM i rytině známky.
 
-  K dotažení (DATA-04, verified:true): historie a rok vzniku, sezónní režim,
-  potvrdit otvírací dobu a veřejnou přístupnost restaurace. Hero fotka:
+  DATA-21 (26. 7. 2026, položka „Lyžařská bouda 1717 + 1930"): katalogový
+  návrh z DATA-09 chtěl rokVzniku 1717 a milník 1930. Otevřen uvedený pramen —
+  vlastní web boudy, dosud vedený jako nedostupný (ConnectTimeout); tentokrát
+  se načíst podařil a obě věty tam doslova stojí, takže katalog SEDÍ a údaje
+  jsou zapsané. Zapsáno ale s výhradou: pramen je vlastní prezentace
+  provozovatele a u letopočtu 1717 neuvádí žádný doklad. To je pro dataci
+  sahající do 18. století slabé — u srovnatelně starých bud (Martinova bouda)
+  se ukázalo, že marketingový letopočet a doložený letopočet nejsou totéž.
+  Próza proto říká, že jde o tvrzení boudy o sobě samé. Nezvyšovat na
+  verified:true bez nezávislého pramene (literatura, archiv, KRNAP).
+  Při téže návštěvě webu potvrzena výška 1 206 m (třetí nezávislý pramen) a
+  kapacita 70 osob (druhý pramen) a doplněna poloha „jižní svah Liščí hory,
+  2. zóna KRNAP". Otvírací dobu vlastní web na čtených stránkách NEUVÁDÍ —
+  rozpor 10:30–17:00 vs. 10:30–22:00 tedy trvá.
+
+  K dotažení (DATA-04, verified:true): nezávislé doložení roku 1717, sezónní
+  režim, potvrdit otvírací dobu a veřejnou přístupnost restaurace. Hero fotka:
   kandidáti DATA-02. Známka č.2210 — obrázek připraven v
   data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c2210-lyzarska-bouda-lisci-louka.png.

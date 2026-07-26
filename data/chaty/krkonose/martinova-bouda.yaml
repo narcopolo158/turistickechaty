@@ -79,9 +79,44 @@ overeniProvoz:
   verified: false
   checked: '2026-07-22'
 
+# ── Historie ──────────────────────────────────────────────────────────────
+# DATA-21: katalogový podklad nabízel rokVzniku 1642 s odkazem na web boudy.
+# Nezapsán — pramen je ze sandboxu nedostupný a dva jiné prameny rok 1642
+# vyvracejí, jeden z nich s odůvodněním. Zapsán rok 1795, na kterém se oba
+# shodují. Rozpor je přiznaný i ve veřejné próze.
+rokVzniku: 1795
+milniky:
+  - rok: 1795
+    udalost: >-
+      Boudu postavil Martin Erlebach z Krausových bud na pozemku jilemnické
+      harrachovské vrchnosti; po něm nese jméno
+  - rok: 1795
+    udalost: Původně sloužila letní pastvě dobytka z Krausových bud
+overeniHistorie:
+  source: >-
+    Rok vzniku 1795 a zakladatel Martin Erlebach: Poznej domy
+    https://poznejdomy.cz/domy/detail/946-martinova-bouda — doslova „Můžeme
+    proto za rok jejího vzniku směle považovat letopočet 1795, kdy ji na
+    pozemku jilemnické harrachovské vrchnosti zbudoval Martin Erlebach" a
+    „Bouda původně sloužila letní pastvě dobytka z Krausových Bud"; nezávisle
+    Krkonoše – oficiální webové stránky https://www.krkonose.eu/martinova-bouda
+    („Horská bouda už od roku 1795 zdobí jihovýchodní svah Vysokého kola",
+    „Pojmenovaná je po svém zakladateli, Martinu Erlebachovi z Krausových
+    bud"). NEZAPSÁNO: katalog DATA-09 nabízel rok 1642 s pramenem
+    www.martinovka.cz/cz/historie.php — ten je ze sandboxu nedostupný
+    (robots.txt ConnectTimeout), takže údaj nešlo ověřit u jeho vlastního
+    zdroje, a Poznej domy ho výslovně vyvracejí: „Ačkoliv se někdy uvádí rok
+    1642 jako rok jejího založení protestantskými uprchlíky, na Grauparově
+    mapě z roku 1765 ji nenajdeme." Obě sekundární média, verified:false —
+    primární pramen (web boudy, kronika) neověřen, viz DATA-04.
+  verified: false
+  checked: '2026-07-26'
+
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Horská bouda ve výšce 1 288 m u Špindlerova Mlýna. Nabízí 42 lůžek ve 12
+  Horská bouda ve výšce 1 288 m u Špindlerova Mlýna, kterou dva prameny kladou
+  do roku 1795 a spojují s Martinem Erlebachem; starší letopočet 1642, který
+  se o ní taky traduje, jeden z těch pramenů vyvrací. Nabízí 42 lůžek ve 12
   pokojích s vlastním sociálním zařízením, saunu a Wi-Fi; v objektu je
   i restaurace s krbem, jestli obslouží i kolemjdoucí, ale prameny neuvádějí.
 text:
@@ -90,6 +125,19 @@ text:
     adresou patří do jeho části Labská. Jde o obsluhovanou boudu s ubytováním
     i vlastní restaurací. Výšku a adresu uvádí Kudy z nudy, souřadnice objektu
     pocházejí z OpenStreetMap.
+  - >-
+    O roce vzniku kolují dva letopočty a dělí je půldruhého století. Server
+    Poznej domy i oficiální krkonošské turistické stránky se shodují na roce
+    1795, kdy boudu na pozemku jilemnické harrachovské vrchnosti postavil
+    Martin Erlebach z Krausových bud — po něm se jmenuje — a kdy sloužila
+    letní pastvě dobytka. Vedle toho se traduje rok 1642 a založení
+    protestantskými uprchlíky. Poznej domy tuhle starší verzi výslovně
+    odmítají s odůvodněním, že na Grauparově mapě z roku 1765 bouda ještě
+    není. Držíme se roku 1795: nesou ho dva prameny nezávisle na sobě a jeden
+    z nich pro svůj závěr uvádí důvod, kdežto pro rok 1642 jsme žádný doklad
+    nenašli. Přiznáváme ale, že podklad, ze kterého jsme vyšli, nabízel právě
+    rok 1642 s odkazem na web boudy — a ten se nám otevřít nepodařilo, takže
+    jsme letopočet nemohli ověřit tam, odkud má pocházet.
   - >-
     Spí se ve dvanácti pokojích od dvoulůžkových po pětilůžkové, dohromady se
     čtyřiceti dvěma lůžky. Každý pokoj má podle Kudy z nudy vlastní sociální
@@ -103,9 +151,10 @@ text:
     a šipkami, projekční techniku a Wi-Fi, kterou popisují jako
     vysokorychlostní.
   - >-
-    Historii boudy — rok vzniku ani pozdější osudy — se nám z dostupných
-    pramenů doložit nepodařilo, stejně jako sezonu provozu a pěší přístupové
-    trasy. Údaje pocházejí ze sekundárního média Kudy z nudy a z
+    Co se s boudou dělo mezi rokem 1795 a dneškem, doložené nemáme — oba
+    prameny mluví o jejím vzniku a dál mlčí. Stejně tak nemáme doloženou
+    sezonu provozu ani pěší přístupové trasy. Údaje pocházejí ze
+    sekundárního média Kudy z nudy a z
     OpenStreetMap, které se navíc rozcházejí v kontaktním e-mailu boudy. Před
     cestou proto doporučujeme ověřit si přímo u boudy otvírací dobu restaurace
     a její dostupnost pro neubytované.
@@ -121,6 +170,16 @@ zdroje:
     url: https://www.kudyznudy.cz/aktivity/martinova-bouda-v-krkonosich
   - popis: OpenStreetMap (GPS objektu, ODbL)
     url: https://www.openstreetmap.org/way/27594723
+  - popis: >-
+      Poznej domy — „Martinova bouda" (rok vzniku 1795, zakladatel Martin
+      Erlebach, původní účel; výslovné odmítnutí letopočtu 1642 s odkazem na
+      Grauparovu mapu z roku 1765); sekundární médium, verified:false
+    url: https://poznejdomy.cz/domy/detail/946-martinova-bouda
+  - popis: >-
+      Krkonoše – oficiální webové stránky, „Martinova bouda" (nezávislé
+      potvrzení roku 1795 a zakladatele; navíc poloha na jihovýchodním svahu
+      Vysokého kola); sekundární médium, verified:false
+    url: https://www.krkonose.eu/martinova-bouda
   - popis: >-
       Web obce Benecko — „Martinova bouda" (jmenovec na Benecku: rodinný hotel
       s restaurací ve výšce 800 m); doklad k rozlišovací větě v posledním
@@ -171,8 +230,32 @@ interniPoznamky: >-
   42 lůžek je v text[1] uvedeno i připsáno; „přesná kapacita" v seznamu
   K dotažení je běžný úkol DATA-04 platný pro každý údaj s verified:false.
 
+  DATA-21 (26. 7. 2026) — KATALOGOVÝ ÚDAJ ZAMÍTNUT, ZAPSÁN JINÝ. Katalog
+  DATA-09 nabízel rokVzniku 1642 s pramenem www.martinovka.cz/cz/historie.php.
+  Nezapsán ze dvou důvodů najednou. Za prvé ten pramen je ze sandboxu
+  nedostupný (ROBOTS_DISALLOWED, robots.txt ConnectTimeout — stejně jako
+  v session 22 a při povýšení profilu), takže katalogový údaj nešlo ověřit
+  tam, odkud má pocházet; obcházet robots.txt curlem se nesmí a nedělalo se
+  to. Za druhé, a to je silnější, dva nezávislé prameny letopočet 1642
+  vyvracejí, respektive nabízejí jiný: Poznej domy ho odmítají s věcným
+  argumentem (na Grauparově mapě z roku 1765 bouda není) a docházejí k roku
+  1795, oficiální krkonošské stránky uvádějí rok 1795 samostatně. Zapsán
+  proto rok 1795, verified:false, a rozpor je přiznaný ve veřejné próze —
+  konvence B žádá rozpor přiznat, ne ho potichu rozhodnout.
+  Tenhle případ je přesně to, před čím varovalo zadání DATA-21 („Roky vzniku
+  1642 a 1717 stojí za zvlášť pečlivou kontrolu — tak staré letopočty
+  u horských bud bývají tradované, ne doložené"). 1717 u Lyžařské boudy
+  kontrolu u pramene přežilo, 1642 ne.
+  VEDLEJŠÍ NÁLEZ k dotažení jinde: krkonose.eu nezávisle potvrzuje i výšku
+  1288 m a kapacitu 42 lůžek ve 12 pokojích, které dosud stály jen na Kudy
+  z nudy, a navíc lokalizuje boudu na jihovýchodní svah Vysokého kola (poloha
+  na hřebeni byla přitom v DATA-15 z prózy odstraněna jako nedoložená).
+  Nepromítnuto — tahle dávka je o historii a nechci ji rozšiřovat mimo
+  zadání; zapsáno jako úkol pro nejbližší průchod lokací a noclehem.
+
   K dotažení (DATA-04, verified:true): otvírací doba a veřejná přístupnost
-  restaurace, přesná kapacita, rok vzniku/historie (Kudy z nudy neuvádí),
+  restaurace, přesná kapacita, potvrdit rok 1795 primárním pramenem
+  (web boudy, kronika) a rozhodnout tradovaný rok 1642,
   potvrdit e-mail (info@martinovka.cz vs. martinovka@volny.cz z OSM). Hero fotka:
   vybrat z kandidátů DATA-02 (oční kontrola). Známka č.674 — obrázek připraven
   v data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c674-martinova-bouda.png.

@@ -98,6 +98,8 @@ Samostatná entita, ne jen obrázek u chaty: otisk (sken/foto), chata, období p
 
 Návrh definice: web pokrývá objekty v horském prostředí na značených trasách, které slouží turistům — **obsluhované chaty** (personál, občerstvení/nocleh), **útulny** (neobsluhované, volně přístupné), **bivaky** (nouzové přístřešky) a **horské hotely** jen pokud plní roli chaty na trase (hranice: poloha na hřebeni/trase vs. běžný hotel u silnice). **Zaniklé chaty ano** — jsou to plnohodnotné záznamy se stavem „zaniklá". Od této definice se odvíjí slib úplnosti, proto je to rozhodnutí č. 1; přesný počet objektů (odhadem nižší stovky pro ČR, desítky vysokohorských pro SK) vznikne jako první datový úkol.
 
+**Rozhodnutí Michala k hranici (průběžně):** o zařazení rozhoduje **veřejné občerstvení**, ne typ stavby. Objekt s veřejně přístupným občerstvením patří dovnitř; penzion nebo pronájem chalupy bez veřejného občerstvení ne. **Doplněno 26. 7. 2026** (*„rozhledny a sedla s občerstvením bych zahrnul"*): platí to i pro **rozhledny a sedla** — pokud u nich občerstvení je, patří do průvodce stejně jako bouda. Enum `typ` na to zatím nemá hodnotu a schéma se kvůli tomu **nemění dřív, než bude spočítáno, kolika objektů se to týká**; vedeno jako DATA-23.
+
 ## 6. Technická architektura
 
 Navrženo pro sólo vývoj s Claude Code: co nejméně pohyblivých částí, nuda tam, kde nuda pomáhá, energie do toho, co je vidět.

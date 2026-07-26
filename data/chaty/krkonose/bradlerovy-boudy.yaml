@@ -6,6 +6,11 @@
 # POZOR — NEVYŘEŠENÝ ROZPOR: veřejná přístupnost stravování (viz
 # overeniObcerstveni a interniPoznamky). K rozhodnutí redakcí po primárním
 # ověření (DATA-04).
+#
+# POZOR — TELEFON ZÁMĚRNĚ NEVYPLNĚN: jediné číslo, které boudy zveřejňují, je
+# podle nich samotných určeno pouze pro informace o dopravě. Do kontakty.telefon
+# nepatří, protože to pole plní schema.org telephone. Viz DATA-21 v
+# interniPoznamky — nedoplňovat mechanicky.
 
 nazev: Brádlerovy boudy
 slug: bradlerovy-boudy
@@ -119,12 +124,24 @@ kontakty:
 overeniProvoz:
   source: >-
     Kontakty: Kudy z nudy a vlastní web boudy (info@bradlerovy-boudy.cz,
-    bradlerovy-boudy.cz); správce Petr Bárta dle webu boudy. Telefon žádný z
-    dosažitelných zdrojů neuvedl — nedoplňováno. KČT uvádí nájemní smlouvu do
-    1. 4. 2035 a slevu pro členy KČT 60 Kč. Provozní sezóna není doložena.
-    Sekundární zdroje, verified:false
+    bradlerovy-boudy.cz); správce Petr Bárta dle webu boudy. AKTUALIZOVÁNO
+    26. 7. 2026 (DATA-21): stránku bradlerovy-boudy.cz/kontakt/ se ze sandboxu
+    otevřít podařilo (napoprvé PROVENANCE_REQUIRED, prošla až po WebSearch)
+    a jedno telefonní číslo nese: +420 602 322 032, popsané jako
+    „Domovník/řidič". Do pole kontakty.telefon ZÁMĚRNĚ NEZAPSÁNO. Web u toho
+    čísla doslova uvádí: „Telefonní kontakt slouží pouze pro informace
+    o dopravě – nemá informace o ubytování, cenách apod." Je to jediné číslo,
+    které boudy zveřejňují, ale není to číslo na boudu; pole kontakty.telefon
+    přitom plní schema.org telephone a řádek Telefon ve faktech, takže by se
+    z něj pro čtenáře i pro vyhledávače stala linka na recepci, kterou není.
+    Ubytování se podle stejné stránky vyřizuje e-mailem. Předchozí znění
+    tohoto pole („telefon žádný z dosažitelných zdrojů neuvedl") bylo tímto
+    nálezem vyvráceno a je opraveno i ve veřejné próze. KČT uvádí nájemní
+    smlouvu do 1. 4. 2035 a slevu pro členy KČT 60 Kč. Provozní sezóna není
+    doložena — dnešní kontrola na ni odpověď nepřinesla. Sekundární zdroje,
+    verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Historie ──────────────────────────────────────────────────────────────
 rokVzniku: 1637
@@ -214,12 +231,17 @@ text:
     venku; platit se má jen hotově, mapové záznamy ale stárnou, takže tenhle
     údaj bereme s rezervou.
   - >-
+    Telefonní spojení stojí za zvláštní zmínku. Boudy zveřejňují jediné číslo
+    a samy u něj upozorňují, že slouží pouze pro informace o dopravě a že
+    o ubytování se na něm nedozvíte nic; je vedené jako číslo na domovníka
+    a řidiče, ne na recepci. Přímou linku na boudu tedy neuvádíme, protože
+    žádná zveřejněná není — ubytování se podle stránek bud vyřizuje písemně.
+  - >-
     Všechny údaje na téhle stránce pocházejí ze sekundárních zdrojů a redakce
     je zatím neověřila vlastním dotazem ani návštěvou. Nedoložená zůstává
-    provozní sezóna, telefonní spojení na boudy neuvedl žádný z dosažitelných
-    pramenů a hlavně není jasné, jestli se tu najíte, když u bud nespíte.
-    Pokud jdete kolem a počítáte s obědem nebo se chystáte platit kartou,
-    doporučujeme si to předem ověřit přímo u bud.
+    provozní sezóna a hlavně není jasné, jestli se tu najíte, když u bud
+    nespíte. Pokud jdete kolem a počítáte s obědem nebo se chystáte platit
+    kartou, doporučujeme si to předem ověřit přímo u bud.
 zdroje:
   - popis: >-
       Klub českých turistů — stránka chaty Brádlerovy boudy (výška, kapacita,
@@ -231,6 +253,12 @@ zdroje:
       stravování jen pro ubytované, časy check-in/out a jídel); sekundární zdroj,
       verified:false
     url: https://www.bradlerovy-boudy.cz/o-nas/
+  - popis: >-
+      Brádlerovy boudy — vlastní web, sekce Kontakt (jediné zveřejněné
+      telefonní číslo a výslovná poznámka, že slouží pouze k informacím
+      o dopravě; ubytování se vyřizuje písemně); sekundární zdroj,
+      verified:false
+    url: https://www.bradlerovy-boudy.cz/kontakt/
   - popis: >-
       Kudy z nudy — „Brádlerovy boudy v Krkonoších" (adresa, výška, budovy
       komplexu, vybavení); sekundární médium, verified:false
@@ -252,8 +280,32 @@ interniPoznamky: >-
   Další rozpor: noclehárny 10 + 12 lůžek (KČT) vs. jedna noclehárna pro 20 osob
   (web boudy); kapacita 88 vzata z KČT.
 
-  K dotažení (DATA-04, verified:true): telefon (žádný dosažitelný zdroj ho
-  neuvádí), veřejná přístupnost a otvírací doba stravování, provozní sezóna,
+  DATA-21 (26. 7. 2026) — telefon NEZAPSÁN, a je to rozhodnutí, ne opomenutí.
+  Katalogový podklad chtěl do kontakty.telefon zapsat řetězec
+  „+420 602 322 032 (pouze doprava)", tedy číslo i s vysvětlivkou v závorce —
+  próza uvnitř pole, které se propisuje do schema.org telephone (page.tsx
+  ř. 145) a do řádku Telefon ve faktech (ř. 205). Ověřením na
+  bradlerovy-boudy.cz/kontakt/ se číslo potvrdilo, ale potvrdila se i jeho
+  povaha: web ho vede pod hlavičkou Domovník/řidič a doslova u něj píše
+  „Telefonní kontakt slouží pouze pro informace o dopravě – nemá informace
+  o ubytování, cenách apod." Zapsat ho do kontakty.telefon by znamenalo tvrdit
+  čtenáři i vyhledávači, že tohle je linka na boudu; není. Číslo i doslovná
+  výhrada jsou proto uloženy v overeniProvoz.source a veřejná próza teď říká,
+  co se ví: jediné zveřejněné číslo je dopravní, ubytování se vyřizuje
+  písemně. Zároveň tím padla dřívější věta „telefonní spojení na boudy neuvedl
+  žádný z dosažitelných pramenů" — byla pravdivá k 24. 7., dnes už není,
+  a je opravená.
+
+  OTÁZKA PRO MICHALA (druhé telefonní pole): tenhle případ je zatím nejlepší
+  exponát pro už dřív otevřenou otázku, jestli kontakty nemají dostat druhé,
+  popsané telefonní číslo (např. telefonDalsi + popis role). Brádlerovy boudy
+  mají číslo, které je pro čtenáře užitečné — jen k něčemu jinému, než na co
+  by ho použil. Dokud takové pole není, číslo do dat nepatří a zůstává
+  v ověřovací poznámce.
+
+  K dotažení (DATA-04, verified:true): telefon na samotnou boudu (existuje-li
+  vůbec nezveřejněný) a potvrzení, že dopravní číslo je opravdu jediné,
+  veřejná přístupnost a otvírací doba stravování, provozní sezóna,
   potvrdit platby kartou (OSM tag říká jen hotově, tagy stárnou). Hero fotka:
   kandidáti DATA-02. Známka č.394 — obrázek připraven v
   data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c394-bradlerovy-boudy.png.

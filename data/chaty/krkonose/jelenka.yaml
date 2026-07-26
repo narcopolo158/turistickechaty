@@ -3,6 +3,11 @@
 # sekundárních médií Kudy z nudy a malaupa.cz (verified:false — vlastní web
 # jelenka.eu je ze sandboxu nedostupný; ověřit primárně, DATA-04).
 # Vše verified:false = převzato ze zdroje, neověřeno námi.
+#
+# DATA-21 (26. 7. 2026): doplněna historie (1936, hrabě Czernin-Morzin) a
+# původ jména podle pramene Emmy — ze serveru krkonose.eu. Týž pramen ale
+# přinesl NOVÝ ROZPOR V KAPACITĚ (25 lůžek v pěti pokojích proti 26 ve
+# čtyřech) a ten je od té chvíle přiznaný v próze. Neslučovat mechanicky.
 
 nazev: Jelenka
 slug: jelenka
@@ -15,11 +20,20 @@ aliasy:
     poznamka: úřední tvar názvu (OSM official_name; shodně turistická známka č. 1367)
   - nazev: Emmaquellenbaude
     poznamka: německý název dle OSM (name:de)
+  - nazev: Emma-quelle Baude
+    poznamka: >-
+      starší tvar téhož jména v této podobě zapsaný serverem Krkonose.eu —
+      podle vodního pramene Emmy, který z chaty vyvěrá
 zajimavosti:
   - text: >-
       Stojí na hlavním krkonošském hřebeni mezi Pomezními boudami a Sněžkou
     kategorie: jine
     zdroj: Kudy z nudy „Horská turistická bouda Jelenka" (sekundární médium, verified:false)
+  - text: >-
+      Jméno má po vodním prameni Emmy, který vyvěrá přímo z chaty; německy se
+      jí proto říkalo Emma-quelle Baude
+    kategorie: jine
+    zdroj: server Krkonose.eu, stránka o boudě Jelenka (sekundární médium, verified:false)
   - text: >-
       Ubytuje 26 hostů jen ve čtyřech pokojích — dva čtyřlůžkové, šestilůžkový a
       dvanáctilůžkový; spát se dá i ve vlastním spacáku
@@ -43,9 +57,14 @@ overeniLokace:
     1 260 m dle OSM (tag ele) i malaupa.cz, Kudy z nudy uvádí 1 263 m (rozpor
     3 m — ponechána shoda dvou zdrojů, ověřit); adresa Horní Malá Úpa 122,
     542 27 Malá Úpa a poloha na hřebeni mezi Pomezními boudami a Sněžkou dle
-    Kudy z nudy. Sekundární média, verified:false
+    Kudy z nudy. DATA-21 (26. 7. 2026): výšku 1 260 m potvrzuje jako TŘETÍ
+    nezávislý pramen server Krkonose.eu — „Horská chata Jelenka se nachází
+    v nadmořské výšce 1260 m na hlavním krkonošském hřebeni na křižovatce
+    turistických tras mezi Pomezními boudami (Horní Malá Úpa) a Sněžkou."
+    Osamocený údaj 1 263 m od Kudy z nudy tím zeslábl, ale nemažeme ho.
+    Sekundární média, verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -65,9 +84,18 @@ overeniNocleh:
     (2× čtyřlůžkový, 1× šestilůžkový, 1× dvanáctilůžkový), teplá a studená voda
     v pokojích, společné sociální zařízení se sprchou na patře, možnost spát ve
     vlastním spacáku. POZOR na rozpor: malaupa.cz uvádí „sociální zařízení na
-    pokoji" — ověřit primárně. Sekundární média, verified:false
+    pokoji" — ověřit primárně. DATA-21 (26. 7. 2026) — DRUHÝ, ZÁVAŽNĚJŠÍ
+    ROZPOR: server Krkonose.eu popisuje úplně jiné rozložení, totiž 25 lůžek
+    v PĚTI pokojích o velikosti 3, 4, 4, 6 a 8 lůžek, s palandami a teplou
+    i studenou vodou. Součty sedí u obou variant (4+4+6+12 = 26 proti
+    3+4+4+6+8 = 25), takže nejde o překlep v jednom čísle, ale o dvě různá
+    rozložení domu — pravděpodobně z různých let. Pole `kapacita` a `pokoje`
+    PONECHÁNY na variantě Kudy z nudy, protože není důvod jednu verzi
+    upřednostnit; obě varianty jsou přiznané ve veřejném textu. Nesčítat a
+    nedomýšlet, který stav je novější — to je otázka na provozovatele
+    (DATA-04). Sekundární média, verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 kuchyne: ano
@@ -121,39 +149,68 @@ autem: |-
   vzdálenosti 2–4 km (dle Kudy z nudy, neověřeno).
 
 # ── Historie ──────────────────────────────────────────────────────────────
-# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — žádný z dosažitelných zdrojů rok neuvádí
-# (Wikipedie je ze sandboxu jen cache-only). Nedomýšlet.
+# rokVzniku = rok postavení CHATY. Týž pramen ale píše, že kiosek pro turisty
+# tu stál už předtím — tedy 1936 není rok, kdy se na tomhle místě začalo
+# posluhovat turistům. Nepřepisovat prózu tak, aby 1936 znamenalo obojí.
+rokVzniku: 1936
+milniky:
+  - rok: 1936
+    udalost: >-
+      Hrabě Czernin-Morzin nechal na svém panství postavit chatu Jelenka; na
+      místě už tehdy podle téhož pramene stál kiosek pro turisty
 overeniHistorie:
   source: >-
-    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
-    nudy zmiňuje jen novou rekonstrukci bez datace, malaupa.cz historii
-    neuvádí, cs.wikipedia.org je ze sandboxu nedostupná). Doplnit při primárním
-    ověření (DATA-04) — nedomýšleno. verified:false
+    Server Krkonose.eu, stránka o boudě Jelenka (načteno 26. 7. 2026), uvádí
+    doslova: „Hrabě Czernin-Morzin nechal v roce 1936 na svém panství postavit
+    chatu Jelenka, která sahala až na vrchol Sněžky." a „Původně se Jelence
+    říkalo Emma-quelle Baude, podle pramene Emmy, který z chaty vyvěrá. Již
+    tehdy zde stál kiosek pro turisty." POZOR NA STAVBU PRVNÍ VĚTY: vztažná
+    část „která sahala až na vrchol Sněžky" se u chaty číst nedá (chata na
+    vrchol sahat nemůže) a mluvnicky ji nelze vztáhnout ani k „panství"
+    (střední rod). Věta je v prameni zjevně zkomolená; čteme ji jako výpověď
+    o rozsahu panství a v próze to připisujeme prameni, ne konstatujeme.
+    POZOR NA POVAHU PRAMENE: regionální turistický server, pramen ani autor
+    neuveden; dřívější poznámka, že historii nenese žádný dosažitelný zdroj,
+    tím padá, ale nezávislé doložení (literatura, archiv) chybí dál — DATA-04.
+    verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Hřebenová bouda mezi Pomezními boudami a Sněžkou; výšku prameny uvádějí
-  rozdílně — 1 260 m (OpenStreetMap a obecní web Malé Úpy), nebo 1 263 m
-  (Kudy z nudy). Ubytuje 26 hostů ve čtyřech pokojích. Podle Kudy z nudy
-  nabízí restaurace teplá i studená jídla, podle obecního webu Malé Úpy stojí
-  bouda na křižovatce turistických cest. Autem se k ní nedostanete.
+  Hřebenová bouda mezi Pomezními boudami a Sněžkou (1 260 m; Kudy z nudy jako
+  jediný uvádí 1 263 m). Postavit ji dal podle jednoho z pramenů roku 1936
+  hrabě Czernin-Morzin, jméno má po vodním prameni Emmy. Kolik nabízí lůžek,
+  se prameny neshodnou — buď 26 ve čtyřech pokojích, nebo 25 v pěti. Autem se
+  k ní nedostanete.
 text:
   - >-
     Jelenka — úředně Horská bouda Jelenka, německy Emmaquellenbaude — stojí na
     hlavním krkonošském hřebeni mezi Pomezními boudami a Sněžkou; adresou
-    patří pod Horní Malou Úpu 122. Ve výšce se
-    prameny mírně rozcházejí: OpenStreetMap i obecní web Malé Úpy uvádějí
-    1 260 metrů, Kudy z nudy 1 263. Podle webu obce stojí bouda na křižovatce
-    turistických cest; autem se k ní dojet nedá, protože je oblast chráněná,
-    a nejbližší parkoviště jsou podle Kudy z nudy dva až čtyři kilometry
-    daleko.
+    patří pod Horní Malou Úpu 122. Ve výšce se prameny mírně rozcházejí:
+    OpenStreetMap, obecní web Malé Úpy i server Krkonose.eu uvádějí shodně
+    1 260 metrů, Kudy z nudy jako jediný 1 263. Bouda stojí na křižovatce
+    turistických cest, jak píše web obce i Krkonose.eu; autem se k ní dojet
+    nedá, protože je oblast chráněná, a nejbližší parkoviště jsou podle Kudy
+    z nudy dva až čtyři kilometry daleko.
   - >-
-    Bouda pojme 26 hostů ve čtyřech pokojích — dvou
-    čtyřlůžkových, jednom šestilůžkovém a jednom dvanáctilůžkovém — a přespat
-    se dá i ve vlastním spacáku. V pokojích teče teplá i studená voda. Podoba
-    sociálního zázemí je sporná: Kudy z nudy popisuje společné zařízení se
+    Postavit chatu dal podle serveru Krkonose.eu v roce 1936 hrabě
+    Czernin-Morzin, a to na svém panství — to podle téhož zdroje sahalo až na
+    vrchol Sněžky. Turisté se tu ale zastavovali už předtím: podle Krkonose.eu
+    tady tehdy stál kiosek. Jméno má bouda po vodním prameni Emmy, který z ní
+    vyvěrá, a německy se jí proto říkalo Emma-quelle Baude. Kdo a kdy postavil
+    kiosek ani kdy se z Emmaquellenbaude stala Jelenka, se z dosažitelných
+    pramenů dozvědět nedá — a Krkonose.eu neuvádí, odkud svou verzi má.
+  - >-
+    Kolik lidí se do boudy vejde, záleží na tom, koho se zeptáte. Kudy z nudy
+    píše o 26 hostech ve čtyřech pokojích — dvou čtyřlůžkových, jednom
+    šestilůžkovém a jednom dvanáctilůžkovém. Server Krkonose.eu popisuje
+    rozložení docela jiné: 25 lůžek v pěti pokojích po třech, čtyřech,
+    čtyřech, šesti a osmi lůžkách, část z nich na palandách. O překlep
+    v jednom čísle nejde, obě varianty dávají vlastní součet — spíš jde o dva
+    různé stavy domu z různých let a který platí dnes, nevíme. Přespat se dá
+    i ve vlastním spacáku a v pokojích teče teplá i studená voda. Sporná je
+    i podoba sociálního zázemí: Kudy z nudy popisuje společné zařízení se
     sprchou na patře, obecní web Malé Úpy naopak píše o sociálním zařízení
     přímo na pokoji.
   - >-
@@ -167,12 +224,12 @@ text:
     web Malé Úpy uvádí, že k dispozici není. Jako majitele obecní web jmenuje
     Pavla Hofmana.
   - >-
-    Rok vzniku ani historii boudy se z dosažitelných pramenů doložit
-    nepodařilo; Kudy z nudy zmiňuje jen nedávnou rekonstrukci, kterou ale
-    nedatuje. Všechny údaje pocházejí ze sekundárních médií a z OpenStreetMap
-    a redakce je zatím neověřila vlastním dotazem. Před cestou proto
-    doporučujeme potvrdit si přímo u boudy podobu sociálního zázemí,
-    dostupnost Wi-Fi i otvírací dobu restaurace.
+    Historii boudy nese jediný dosažitelný pramen, server Krkonose.eu, a ten
+    neuvádí, odkud ji má; Kudy z nudy zmiňuje jen nedávnou rekonstrukci, kterou
+    ale nedatuje. Ostatní údaje pocházejí ze sekundárních médií
+    a z OpenStreetMap a nic z toho jsme zatím neověřili vlastním dotazem. Před
+    cestou proto doporučujeme potvrdit si přímo u boudy počet lůžek, podobu
+    sociálního zázemí, dostupnost Wi-Fi i otvírací dobu restaurace.
 zdroje:
   - popis: >-
       Kudy z nudy — „Horská turistická bouda Jelenka" (výška, adresa, kapacita a
@@ -185,6 +242,12 @@ zdroje:
     url: https://www.malaupa.cz/jelenka/
   - popis: OpenStreetMap (GPS objektu, výška, otvírací doba, ODbL)
     url: https://www.openstreetmap.org/way/108114544
+  - popis: >-
+      Krkonose.eu — stránka o boudě Jelenka (historie 1936 a hrabě
+      Czernin-Morzin, původ jména podle pramene Emmy, dřívější kiosek, výška
+      1 260 m, druhá varianta rozložení lůžek 3+4+4+6+8); regionální
+      turistický server, pramen ani autor neuveden, verified:false
+    url: https://www.krkonose.eu/bouda-jelenka
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/jelenka.yaml (DATA-01/OSM) v rámci master
   fronty Tier 1 (známka č.1367 + katalog ChatGPT + OSM). Vlastní web jelenka.eu
@@ -197,8 +260,21 @@ interniPoznamky: >-
   (malaupa.cz); (3) Wi-Fi je (OSM internet_access=wlan, zdarma) vs. není
   (malaupa.cz) — pole `wifi` proto nevyplněno.
 
-  K dotažení (DATA-04, verified:true): rok vzniku a historie (žádný dosažitelný
-  zdroj je nenese — Wikipedie ze sandboxu cache-only), otvírací doba a veřejná
-  přístupnost restaurace, potvrdit kapacitu. Hero fotka: kandidáti DATA-02.
+  DATA-21 (26. 7. 2026, položka „Jelenka 1936"): katalogový návrh z DATA-09
+  chtěl rokVzniku 1936. Otevřen uvedený pramen (Krkonose.eu) a údaj tam
+  doslova stojí i se jménem stavebníka — katalog SEDÍ, zapsáno. Přibyla
+  k tomu ale tři zjištění, která katalog nenesl: (a) na místě podle téhož
+  pramene stál kiosek pro turisty už před chatou, takže 1936 není rok, odkdy
+  se tu posluhuje turistům — zapsáno do milníku i do prózy; (b) původ jména
+  podle vodního pramene Emmy (nová zajímavost i alias Emma-quelle Baude);
+  (c) NOVÝ ROZPOR V KAPACITĚ, 25 lůžek v pěti pokojích (3+4+4+6+8) proti 26 ve
+  čtyřech (4+4+6+12) od Kudy z nudy. Pole ponechána na variantě Kudy z nudy,
+  rozpor přiznán v próze — nesčítat, nevybírat „pravděpodobnější", zeptat se
+  provozovatele. Vedlejší zisk: 1 260 m má tím třetí nezávislý pramen a
+  osamocené 1 263 m od Kudy z nudy dál slábne.
+
+  K dotažení (DATA-04, verified:true): nezávislé doložení roku 1936 (Krkonose.eu
+  neuvádí pramen), rozsoudit počet lůžek, otvírací doba a veřejná
+  přístupnost restaurace. Hero fotka: kandidáti DATA-02.
   Známka č.1367 — obrázek připraven v
   data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c1367-horska-bouda-jelenka.png.

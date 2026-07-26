@@ -30,22 +30,38 @@ overeniLokace:
     přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); výška
     1 368 m a adresa Pec pod Sněžkou 204 dle Kudy z nudy „Chata Výrovka"
     (katalog ChatGPT uvádí 1 356 m — rozpor, ověřit); sekundární médium,
-    verified:false
+    verified:false. DATA-21 (26. 7. 2026): rozpor je horší, než se zdálo —
+    stránka https://kct.cz/chaty/chata-vyrovka/ si odporuje sama v rámci
+    jednoho dokumentu, uvádí „Turistická chata Výrovka, umístěna ve výšce
+    1356 m" a zároveň „Nejvýše položenou chatou Klubu českých turistů je chata
+    Výrovka ležící v nadmořské výšce 1360 m". Ve hře jsou tedy tři hodnoty
+    (1 368 / 1 360 / 1 356) a jeden z pramenů není konzistentní ani se sebou.
+    Publikovaná hodnota se nemění (nemáme čím ji nahradit), rozpor je přiznaný
+    v próze. Táž stránka nese i PSČ „524 21", kdežto Pec pod Sněžkou má 542 21
+    — zjevná přesmyčka, další důvod brát ten pramen opatrně.
   verified: false
-  checked: '2026-07-22'
+  checked: '2026-07-26'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
 pokoje:
   - typ: Dvou- až čtyřlůžkové pokoje s vlastním sociálním zařízením
   - typ: Noclehárna se společným sociálním zařízením
+# kapacita ZÁMĚRNĚ NEVYPLNĚNA — viz DATA-15 (4. dávka) a DATA-21 níže.
 overeniNocleh:
   source: >-
     Kudy z nudy „Chata Výrovka": 2–4lůžkové pokoje s vlastním sociálním
     zařízením a noclehárna se společným zařízením (přesná kapacita neuvedena);
-    sekundární médium, verified:false
+    sekundární médium, verified:false. DATA-21 (26. 7. 2026) — KATALOGOVÝ ÚDAJ
+    „kapacita 65" ZAMÍTNUT. Katalog ho vede s pramenem https://kct.cz/chaty/
+    chata-vyrovka/; ta stránka ale číslo 65 vůbec nenese. Uvádí „50 lůžek +
+    společná noclehárna (15 míst)", tedy dvě různé věci zvlášť — 65 je součet,
+    který udělal někdo jiný než pramen. Zapsat ho do jednoho pole „celková
+    kapacita" by slučovalo lůžko v pokoji s místem ve společné noclehárně
+    a vydávalo cizí výpočet za údaj pramene. Pole zůstává prázdné, rozsah
+    přiznává próza.
   verified: false
-  checked: '2026-07-22'
+  checked: '2026-07-26'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 kuchyne: ano
@@ -74,9 +90,12 @@ overeniProvoz:
     https://www.vyrovka.cz/o-vyrovce/ a FACT-0041 „+420 725 107 808" ze zdroje
     https://www.krkonose.eu/chata-vyrovka. Publikované číslo pochází ze
     sekundárního média, ponecháno beze změny do primárního ověření (DATA-04);
-    rozpor přiznán ve veřejné próze bez uvádění čísel.
+    rozpor přiznán ve veřejné próze bez uvádění čísel. DATA-21 (26. 7. 2026):
+    přibyl ČTVRTÝ telefon — https://kct.cz/chaty/chata-vyrovka/ uvádí
+    774 985 057 (e-mail rezervace@vyrovka.cz sedí s publikovaným).
+    Publikované číslo se nemění; rozpor je tím širší, ne užší.
   verified: false
-  checked: '2026-07-22'
+  checked: '2026-07-26'
 
 # ── Historie ──────────────────────────────────────────────────────────────
 rokVzniku: 1926  # ROZPOR (audit 25. 7. 2026): pole nese rok nejstarší doložené stavby na místě, kdežto fakticka-data.csv HUT-0003 (zdroj vyrovka.cz, jistota A) vede rok_vzniku 1990, tedy dokončení dnešní budovy. Nerozhodnutá otázka „stavba, nebo místo" — prověřit (DATA-04); schéma unese jen jedno číslo, hedge nese próza.
@@ -95,9 +114,12 @@ overeniHistorie:
   source: >-
     Kudy z nudy „Chata Výrovka": 1926 vojenský srub, 1928 Havlova bouda, požáry
     1946 a 1947, současná bouda 1988–1990; sekundární médium, verified:false —
-    ověřit primárním pramenem
+    ověřit primárním pramenem. DATA-21 (26. 7. 2026): milník 1988–1990
+    nezávisle potvrzuje https://kct.cz/chaty/chata-vyrovka/ („V letech 1988 až
+    1990 pak byla postavena současná moderní chata."). Starší část osy (1926 /
+    1928 / požáry) tím potvrzená není a zůstává sporná — viz próza.
   verified: false
-  checked: '2026-07-22'
+  checked: '2026-07-26'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
@@ -128,7 +150,10 @@ text:
     sociálním zařízením a v noclehárně, kde je zázemí společné. Celkový počet
     lůžek Kudy z nudy neuvádějí a jinde se čísla rozcházejí — od padesáti po
     osmaosmdesát lůžek. Všechna jsou z druhé ruky a ověřené nemáme žádné,
-    proto kapacitu na stránce nevedeme. Součástí boudy je restaurační část;
+    proto kapacitu na stránce nevedeme. Přispívá k tomu i to, že se lůžka
+    v pokojích a místa ve společné noclehárně počítají někdy zvlášť a někdy
+    dohromady; jedno číslo pak může znamenat dvě různé věci a součet, který
+    vznikne až u přebírajícího, vypadá jako údaj pramene. Součástí boudy je restaurační část;
     jestli obsluhuje i kolemjdoucí turisty, doložené nemáme, a otvírací dobu,
     kterou nese jediný náš podklad, neověřenou nepublikujeme, protože se
     mění. Od 1. září 2025 boudu podle Kudy
@@ -156,7 +181,31 @@ interniPoznamky: >-
   Rozpor výšky: Kudy z nudy 1 368 m vs. katalog ChatGPT 1 356 m — ponecháno
   1 368 (konkrétnější zdroj), ověřit (DATA-04).
 
-  K dotažení (DATA-04, verified:true): přesná kapacita lůžek, otvírací doba a
+  DATA-21 (26. 7. 2026) — KATALOGOVÝ ÚDAJ ZAMÍTNUT, hodnota se nedoplňuje.
+  Katalog DATA-09 nabízel kapacitu 65 s pramenem kct.cz. Kdyby se zapsala,
+  přepsala by vědomé rozhodnutí ze 4. dávky DATA-15 a odporovala by vlastní
+  publikované próze („proto kapacitu na stránce nevedeme"). To samo o sobě je
+  varování, ale hlavní důvod zamítnutí je jiný a našel se až kontrolou
+  u pramene: kct.cz číslo 65 vůbec neuvádí. Má „50 lůžek + společná noclehárna
+  (15 míst)", tedy dvě různé kategorie zvlášť; 65 vzniklo sečtením u toho,
+  kdo údaj přebíral. Katalog tedy nese číslo, které jeho vlastní pramen
+  neříká, a nese ho s odkazem na něj — to je nebezpečnější než prostý omyl,
+  protože to vypadá doloženě. Poznámka k censu v odstavci DATA-15 níže: rozsah
+  „50 až 88" tím zůstává v platnosti, jen se ukázalo, že hodnota 65 v něm není
+  samostatný pramen, nýbrž součet dvou čísel z pramene, který už v seznamu je.
+  Nezávislých údajů je tedy o jeden méně, než se zdálo.
+  DALŠÍ NÁLEZY z téhož načtení: (1) kct.cz si odporuje ve výšce sám se sebou
+  (1356 i 1360 na jedné stránce) — zapsáno do overeniLokace, rozpor výšky je
+  tedy trojí, ne dvojí. (2) kct.cz nezávisle potvrzuje milník 1988–1990 —
+  zapsáno do overeniHistorie; starší část osy potvrzená není. (3) kct.cz nese
+  ČTVRTÝ telefon (774 985 057) vedle už zaznamenaných tří — zapsáno do
+  overeniProvoz, publikované číslo se nemění. (4) kct.cz uvádí PSČ 524 21,
+  ač Pec pod Sněžkou má 542 21 — přesmyčka číslic, drobnost, ale u pramene,
+  který si protiřečí ve výšce, stojí za zápis.
+
+  K dotažení (DATA-04, verified:true): přesná kapacita lůžek — a s ní
+  rozhodnout, jestli se má vykazovat zvlášť za pokoje a zvlášť za noclehárnu
+  (schéma dnes unese jen jedno číslo, viz otázka na Michala), otvírací doba a
   veřejná přístupnost restaurace, potvrdit nového provozovatele Good Hut.
   Hero fotka: vybrat z kandidátů DATA-02. Známka č.12 — obrázek připraven
   v data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c12-chata-vyrovka.png.

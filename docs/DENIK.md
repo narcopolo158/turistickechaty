@@ -11,6 +11,96 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — navazující session (Opus, inline): DATA-21 uzavřena — polovina katalogových návrhů byla vadná. Plus první primární seznam vydavatele známek
+
+**Zadání Michala:** „pokračuj samostatně dál." Vzato **DATA-21**, první nehotová položka,
+kterou jde dodělat bez tvého rozhodnutí. Uzavřena celá; z ní vypadly tři nové položky
+(DATA-22, DATA-23, DATA-24).
+
+**Hotovo:**
+
+**DATA-21 — osm profilů, osm katalogových údajů, poměr 4 : 4.** Katalog `data09` navrhoval
+doplnit prázdná pole u osmi profilů. Každý návrh se ověřoval proti prameni, který u něj
+katalog uvádí jako zdroj. **Čtyři návrhy potvrzené, čtyři odmítnuté** — a to je hlavní
+zpráva dneška: kdyby se skript pustil naostro, jak to dělá ve výchozím stavu, **zapsal by
+do publikovaných profilů čtyři vady**. Odmítnuté: Martinova bouda 1642 (pramen ten rok
+nenese; zapsán 1795 odjinud), Výrovka kapacita 65 (**součet** dvou různě spolehlivých
+čísel, ne údaj pramene — pole zůstává prázdné), Brádlerovy boudy telefon (číslo patří
+**smluvní dopravě**, ne boudě) a Kolínská bouda 1927. Ta poslední je z celé série
+nejzajímavější: **rok v prameni je, ale je to rok koupě, ne stavby.** Kronika boudy je
+obsáhlá, popisuje devadesát let dějin a rok postavení **neuvádí vůbec**, takže
+`rokVzniku` zůstává prázdné a devět doložených milníků 1927–2017 nese `milniky`.
+Potvrzené: Moravská bouda 1876, Jelenka 1936, Lyžařská bouda 1717 + 1930, Friesovy boudy
+(katalog nabízel tři milníky, ověřením jich vyšlo devět).
+
+**Uzavřena i tvoje otázka „Kolínská je 1719".** Nebyl to rozpor s katalogovým rokem 1927,
+byly to **dvě různé veličiny vedle sebe: 1719 je číslo turistické známky.** Potvrzuje to
+oficiální seznam vydavatele, který nese položku `1719 Kolínská bouda - Pec pod Sněžkou`.
+
+**Metodický nález, který mi stojí za zvláštní odstavec.** Čtení webových stránek přes
+shrnující nástroj **si třikrát vymyslelo nebo popletlo věc, kterou by profil publikoval
+jako fakt** — a všechny tři chytila až doptávka na doslovný citát. U Kolínské boudy
+shrnutí připsalo boudě starší jméno „Waldhaus" a majitele, ačkoli Waldhaus je **jiná
+bouda**, o které kolínský odbor jen jednal a nikdy ji nekoupil; vydalo za koupenou
+budovu inzerát na dům, u kterého kronika výslovně říká, že se o koupi nejednalo; a
+datovalo návrat boudy klubu na červen 1991, kdežto doslovné znění je **3. července 1991**.
+Ta třetí by prošla bez povšimnutí. **Postup, který zabral a platí od teď: nežádat
+shrnutí, ale doslovný citát, a k tomu výslovnou únikovou cestu („pokud tam ta věta není,
+napiš NENÍ NA STRÁNCE").** Bez té únikové cesty nástroj radši něco složí, než by přiznal,
+že to tam není.
+
+**Opraven vlastní publikovaný text, ne jen doplněna data.** U Lyžařské boudy jsme dosud
+tvrdili, že web provozovatele je nedostupný a historii se doložit nepodařilo. Web se
+načíst **podařilo**, takže obě věty byly nepravdivé a jsou pryč. Konvence B platí i proti
+nám. Zároveň ale platí i pro to, co z toho webu přišlo: rok **1717 stojí na jediné větě
+provozovatele bez jakéhokoli dokladu**, a próza to teď říká nahlas.
+
+**Dva nové rozpory přiznané, nerozhodnuté.** Jelenka má 25 lůžek v pěti pokojích podle
+jednoho pramene a 26 ve čtyřech podle druhého; obě rozpisy jsou vnitřně konzistentní,
+takže to nejspíš nejsou dvě čísla, ale dvě doby. Druhý je adresní a jde do DATA-20: web
+Kolínské boudy uvádí „Velká Úpa 319", Kudy z nudy „Pec pod Sněžkou 319".
+
+**Zpracován tvůj seznam známkových míst → DATA-22.** Z xlsx, který jsi stáhl přímo z webu
+vydavatele, je `…-vyber.csv` (128 položek) a křížová kontrola proti korpusu
+(`scripts/data22-znamky-oficialni-seznam.ts`): 22 shod s publikovaným profilem, 5 shod jen
+s kandidátem, 20 publikovaných profilů v seznamu není. **To poslední číslo se ale nesmí
+číst jako nález** — deset z nich jsou polská schroniska a seznam je český; u Rezku a
+Dvoraček se nepáruje **správně**, protože známka patří osadě a dvoubudovému areálu, což
+naše profily vědomě netvrdí; a Pomezní bouda v seznamu chybí, ačkoli známku č. 673
+doloženou má. Tvoje odpověď, že filtr zněl „horské chaty a boudy" a **může v něm být
+chyba**, je proto zapsaná rovnou do hlavičky skriptu jako pravidlo: **nepřítomnost
+v seznamu není doklad, že objekt známku nemá.** Skutečně otevřených zůstává sedm profilů.
+
+**Zapsáno tvé rozhodnutí o rozhlednách a sedlech → DATA-23.** Klíč zařazení se rozšířil:
+rozhoduje **veřejné občerstvení, ne typ stavby**. Doplněno do `docs/plan.md` §Taxonomie.
+V pilotu se to zatím dotýká jediného objektu — **Sněžky** (známka č. 20, Poštovna);
+Ovčárna, Šerlich a Komáří vížka leží v jiných pohořích. Sněžku ale **nezakládám naslepo**:
+je to vrchol s několika objekty a jeden z nich (Dom Śląski) v korpusu už máme, takže se
+napřed musí rozhodnout, co je tam „objekt", jinak vznikne profil konkurující sousedovi.
+
+**Měření:** `npm run kontrola` zelené (42 souborů; `audit-mech` A–F nula, `kolize-jmen`
+nula, fixtura 4/4). `ban-scan` **133 → 129**, doměřeno soubor po souboru proti
+`git show HEAD` nad osmi dotčenými profily (25 → 21). Všech 21 je zdokumentovaný trvalý
+falešný poplach, **žádná nová třída nepřibyla**; úbytek vyrobilo přepsání závěrečných
+odstavců, kde vypadlo slovo „redakce".
+
+**Příště:** DATA-22 body (1)–(3) — posoudit pět kandidátů se známkou, rozhodnout o čtyřech
+krkonošských položkách seznamu, které v korpusu nejsou (Luisino údolí, Horní Mísečky,
+Modrokamenná bouda, Mariánskohorské boudy), a u sedmi profilů bez shody ověřit u
+vydavatele. Nebo DATA-24 (jednořádková pojistka proti zápisu naostro), která je levná a
+plyne přímo z dneška.
+
+**Otázky pro Michala:** (1) **Sněžka** — co je tam samostatný objekt průvodce? Poštovna
+sama, nebo celý vrchol včetně Domu Śląského, který už profil má? (2) **Jelenka** — 26
+lůžek ve čtyřech pokojích, nebo 25 v pěti? Vypadá to na dvě různé doby, ne na chybu
+pramene; při telefonátu (DATA-04) by to byla jedna otázka. (3) Pět objektů ze seznamu
+známek existuje **jen jako kandidáti** (Chata Rozhled, Medvědí bouda, Richtrovy boudy,
+Chata Hubertka, Pražská bouda) — povýšit některé? (4) Trvají otázky z minula: sémantika
+pole `obec` (DATA-20, visí na ní 27 hodnot) a **rotace GitHub tokenu a klíče Mapy.com**,
+které leží v plaintextu v zadání naplánované session.
+
+---
+
 ## 2026-07-26 — navazující session (Opus, inline): DATA-20 — otázka není „která obec", ale „co to pole znamená". Jedna hodnota opravená, dvě domněnky vyvrácené
 
 **Zadání Michala:** „pokračuj samostatně dál." Vzato **DATA-20**, první nehotová položka

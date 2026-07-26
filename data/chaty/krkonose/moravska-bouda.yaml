@@ -2,6 +2,8 @@
 # ověření. Master fronta Tier 1 (známka č.1873 + OSM). Data ze sekundárních
 # médií Kudy z nudy a České hory (verified:false — ověřit primárně, DATA-04).
 # GPS z OSM (way/31126083). Vše verified:false.
+# 26. 7. 2026 (DATA-21): web boudy je nově ze sandboxu DOSAŽITELNÝ (dřív nebyl)
+# — doplněn rok vzniku 1876 a potvrzena kapacita 52 lůžek. Viz interniPoznamky.
 
 nazev: Moravská bouda
 slug: moravska-bouda
@@ -58,9 +60,14 @@ overeniNocleh:
     lůžek, dvoulůžkové až vícelůžkové, všechny se stejným standardem — sprchový
     kout, umyvadlo a televize, WC společná na patře. ROZPOR: České hory
     (archivní prezentace) uvádějí 54 lůžek ve 14 pokojích — do profilu vzat údaj
-    Kudy z nudy, ověřit. Sekundární média, verified:false
+    Kudy z nudy. ROZPOR ROZHODNUT 26. 7. 2026 (DATA-21): web boudy
+    https://moravskabouda.cz/cs, nově ze sandboxu dosažitelný, uvádí doslova
+    „Celková kapacita chaty je 52 lůžek ve 14 pokojích s dispozicemi od 2 do
+    6 lůžek" — tedy 52, shodně s Kudy z nudy a proti údaji Českých hor.
+    Publikovaná hodnota se nemění, jen nově stojí na primárnějším prameni.
+    verified zůstává false: web je provozovatelův vlastní, neověřený redakcí.
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-07-26'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 kuchyne: ano
@@ -101,8 +108,10 @@ overeniProvoz:
     Kudy z nudy „Moravská bouda ve Špindlerově Mlýně": tel. +420 604 684 140,
     moravska@seznam.cz, web moravskabouda.cz. Celoroční provoz dle Českých hor
     (archivní prezentace) — Kudy z nudy sezónu neuvádí, ověřit. OSM kontakty
-    nenese. Web je ze sandboxu nedostupný — neověřen. Sekundární zdroje,
-    verified:false
+    nenese. AKTUALIZOVÁNO 26. 7. 2026 (DATA-21): web boudy je nově ze sandboxu
+    dosažitelný a telefon i adresu potvrzuje shodně s Kudy z nudy; sezónu
+    a otvírací dobu na načtené stránce nenese, takže ty ověřené nadále nejsou.
+    Sekundární zdroje, verified:false
   verified: false
   checked: '2026-07-25'
 
@@ -113,12 +122,21 @@ autem: |-
   rolbou (dle Českých hor, archivní prezentace, neověřeno).
 
 # ── Historie ──────────────────────────────────────────────────────────────
-# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — zdroj uvádí jen „první polovina 19. století",
-# konkrétní rok nikoli. Nedomýšlet.
+# DATA-21 (26. 7. 2026): rokVzniku DOPLNĚN na 1876. Dosud byl vědomě prázdný,
+# protože jediný tehdejší pramen (Kudy z nudy) měl jen „první polovina
+# 19. století". Web boudy je nově ze sandboxu dosažitelný a rok 1876 nese;
+# nezávisle ho má i Poznej domy, a to s vlastní etymologií jména. POZOR: rok
+# 1876 si NEODPORUJE s „první polovinou 19. století" jen tehdy, když přístřešek
+# předcházel boudě — to ale žádný pramen neříká. Rozpor přiznán v próze.
+rokVzniku: 1876
 milniky:
   - udalost: >-
       První polovina 19. století — na místě stojí jednoduchý přístřešek, z něhož
       se vyvinula dnešní bouda
+  - rok: 1876
+    udalost: >-
+      Rodina Erlebachů zde postavila dřevěnou boudu Daftebaude; jméno vzniklo
+      zkomolením názvu enklávy Davidbauden podle níže položené Davidovy boudy
   - udalost: >-
       Za druhé světové války sloužila bouda i k ubytování německých vojáků; po
       válce byla přejmenována na Moravskou boudu
@@ -133,19 +151,36 @@ overeniHistorie:
     poloviny 19. století (původně jednoduchý přístřešek), za války sloužila k
     ubytování německých vojáků, po válce přejmenována na Moravskou boudu,
     současný majitel ji vlastní od roku 1994; roku 1982 zde vznikly interiérové
-    scény filmu Sněženky a machři. Konkrétní rok vzniku zdroj neuvádí — pole
-    `rokVzniku` vědomě nevyplněno. Sekundární médium, verified:false — ověřit
-    primárním pramenem
+    scény filmu Sněženky a machři. DOPLNĚNO 26. 7. 2026 (DATA-21): rok 1876
+    a stavebníky nese web boudy https://moravskabouda.cz/cs — v sekci historie
+    pod mezititulkem „1876" doslova „Rodina Erlebachových zde postavila
+    dřevěnou boudu ‚Daftebaude', která poskytovala ubytování a občerstvení
+    poutníkům a turistům"; nezávisle Poznej domy
+    https://poznejdomy.cz/domy/detail/620-moravska-bouda: „S příchodem prvních
+    turistů vycítili zdejší pachtýři Erlebachové možnost přilepšení a zbudovali
+    tu roku 1876 boudu (Daftebaude), která tu od té doby hraje prim (dnešní
+    Moravská bouda)" a k původu jména „Jméno boudy Daftebaude přímo souvisí
+    s o něco níže položenou Davidovou boudou, podle které se celá enkláva
+    jmenovala (Davidbauden). Komolením názvu enklávy vzniklo Daftebaude".
+    VÝHRADA K SÍLE PRAMENE: týž provozovatel (Nord baude s.r.o.) vede pod
+    stejným sloganem „Ubytování v Krkonoších s tradicí od 1876" i sesterskou
+    Dvořákovu boudu https://dvorakovabouda.cz/en, kde stejný letopočet stojí
+    jako „Birth of mountain lodge" u téže rodiny Erlebachů — web boudy tedy
+    sám o sobě rok 1876 pro TENHLE objekt nerozhoduje, protože jde o text
+    sdílený mezi objekty skupiny. Rok drží až Poznej domy, které ho vážou
+    konkrétně k Moravské boudě a doprovázejí ho etymologií jména. Rozpor
+    s „první polovinou 19. století" z Kudy z nudy nerozhodnut a přiznán
+    v próze. Sekundární média, verified:false — ověřit primárním pramenem
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-07-26'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Bouda v Sedmidolí nad Špindlerovým Mlýnem, jejíž historie sahá podle Kudy
-  z nudy do první poloviny 19. století. Nadmořskou výšku i kapacitu uvádějí
-  prameny rozdílně — 1 225, nebo 1 220 metrů a 52, nebo 54 lůžek ve čtrnácti
-  pokojích. V zimě podle Českých hor hosty vozí rolba nebo sněžný skútr.
-  V roce 1982 se tu natáčely interiéry Sněženek a machrů.
+  Bouda v Sedmidolí nad Špindlerovým Mlýnem, kterou Erlebachové postavili roku
+  1876 pod jménem Daftebaude. Nadmořskou výšku uvádějí prameny rozdílně —
+  1 225, nebo 1 220 metrů; kapacitu 52 lůžek ve čtrnácti pokojích potvrzuje
+  proti odchylnému údaji web boudy. V zimě podle Českých hor hosty vozí rolba
+  nebo sněžný skútr. V roce 1982 se tu natáčely interiéry Sněženek a machrů.
 text:
   - >-
     Moravská bouda stojí v Sedmidolí nad Špindlerovým Mlýnem, kam patří i
@@ -153,16 +188,29 @@ text:
     metrů, shodně s údajem vyrytým na turistické známce, zatímco archivní
     prezentace na Českých horách má o pět metrů méně, tedy 1 220 metrů.
   - >-
-    Historie místa sahá podle Kudy z nudy do první poloviny 19. století, kdy
-    tu stál jednoduchý přístřešek, z něhož se dnešní bouda postupně vyvinula;
-    konkrétní rok vzniku zdroj neuvádí. Za druhé světové války sloužil dům
-    mimo jiné k ubytování německých vojáků a po válce dostal jméno Moravská
-    bouda. V roce 1982 se tu natáčely interiérové scény filmové komedie
-    Sněženky a machři. Současný majitel boudu vlastní od roku 1994.
+    Za rok vzniku se dnes uvádí 1876, kdy tu podle serveru Poznej domy zdejší
+    pachtýři Erlebachové postavili dřevěnou boudu jménem Daftebaude. To jméno
+    má hezký původ: celá enkláva se podle níže položené Davidovy boudy
+    jmenovala Davidbauden a zkomolením toho názvu vzniklo Daftebaude. Týž rok
+    nese i web boudy. Uvádíme ho ale s výhradou hned dvojí. Za prvé si ne úplně
+    sedí se starším údajem Kudy z nudy, podle nějž historie místa sahá do
+    první poloviny 19. století, kdy tu stál jednoduchý přístřešek — obojí platí
+    jen tehdy, když přístřešek boudě předcházel, a to žádný z pramenů neříká.
+    Za druhé tentýž provozovatel používá slogan o tradici od roku 1876 i pro
+    sesterskou Dvořákovu boudu a připisuje ho tam téže rodině, takže web boudy
+    sám o sobě letopočet pro tenhle dům nerozhoduje; váže ho k němu až Poznej
+    domy.
+  - >-
+    Za druhé světové války sloužil dům mimo jiné k ubytování německých vojáků
+    a po válce dostal jméno Moravská bouda. V roce 1982 se tu natáčely
+    interiérové scény filmové komedie Sněženky a machři. Současný majitel
+    boudu vlastní od roku 1994.
   - >-
     Ubytování je rozděleno do čtrnácti pokojů. Kudy z nudy v nich napočítá 52
     lůžek, archivní prezentace na Českých horách jich ve stejném počtu pokojů
-    uvádí 54 a rozdíl zůstává neověřený. Pokoje jsou dvoulůžkové až
+    uvádí 54; rozdíl se nám podařilo rozhodnout, protože web boudy uvádí
+    52 lůžek ve čtrnácti pokojích s dispozicemi od dvou do šesti lůžek. Držíme
+    se tedy padesáti dvou. Pokoje jsou dvoulůžkové až
     vícelůžkové a všechny mají stejný standard: sprchový kout, umyvadlo a
     televizi, toalety jsou společné na patře. Podle Českých hor je u boudy
     restaurace se salonkem, kulečníkem a šipkami, půjčují se tu společenské
@@ -194,6 +242,17 @@ zdroje:
       médium, verified:false
     url: https://www.ceskehory.cz/ubytovani/moravska-bouda-spindleruv-mlyn.html
   - popis: >-
+      Web boudy (moravskabouda.cz) — sekce historie s letopočtem 1876 a stavbou
+      boudy Daftebaude rodinou Erlebachů; kapacita 52 lůžek ve 14 pokojích.
+      Pozor: slogan o tradici od roku 1876 nese týž provozovatel i u sesterské
+      Dvořákovy boudy. verified:false
+    url: https://moravskabouda.cz/cs
+  - popis: >-
+      Poznej domy — „Moravská bouda" (rok 1876, pachtýři Erlebachové, původní
+      jméno Daftebaude a jeho odvození od enklávy Davidbauden); sekundární
+      médium, verified:false
+    url: https://poznejdomy.cz/domy/detail/620-moravska-bouda
+  - popis: >-
       OpenStreetMap way/31126083 — GPS; data © přispěvatelé OpenStreetMap,
       ODbL 1.0, stav dat 2026-06-12, verified:false
     url: https://www.openstreetmap.org/way/31126083
@@ -220,9 +279,39 @@ interniPoznamky: >-
   doložena — pokud se při DATA-04 ukáže, že bouda vaří jen ubytovaným, objekt
   Michalův klíč nesplňuje a profil je třeba přehodnotit.
 
-  rokVzniku vědomě NEvyplněn — zdroj má jen „první polovina 19. století"; do
-  `milniky` proto zapsán milník bez roku (pole `rok` není povinné, precedens:
-  tetrevi-boudy).
+  DATA-21 (26. 7. 2026) — rokVzniku DOPLNĚN 1876, jeden rozpor ROZHODNUT,
+  změnil se stav dosažitelnosti webu. Katalogový údaj (rok 1876, pramen
+  moravskabouda.cz) prošel kontrolou u svého vlastního pramene, a to poprvé:
+  web boudy, dosud ze sandboxu nedostupný, se nově otevřel. Rok nese v sekci
+  historie pod mezititulkem „1876". Nezávisle ho má Poznej domy, navíc
+  s etymologií jména Daftebaude (zkomolenina enklávy Davidbauden podle níže
+  položené Davidovy boudy) — to je detail, který se nedá převzít omylem,
+  a proto ten pramen vážím výš než holý letopočet.
+  DVĚ VÝHRADY, obě přiznané v próze. (1) Rok 1876 spadá do DRUHÉ poloviny
+  19. století, kdežto Kudy z nudy vedou historii místa do PRVNÍ poloviny
+  (jednoduchý přístřešek). Dá se to srovnat tak, že přístřešek boudě
+  předcházel — ale to neříká ani jeden pramen, takže smíření nevydávám za
+  doložené; obojí je v próze vedle sebe. (2) Web boudy NENÍ pro tenhle údaj
+  tak silný, jak vypadá: provozovatel Nord baude s.r.o. vede pod stejným
+  sloganem „Ubytování v Krkonoších s tradicí od 1876" i sesterskou Dvořákovu
+  boudu (dvorakovabouda.cz), kde týž letopočet a táž rodina Erlebachů stojí
+  jako „Birth of mountain lodge". Je to tedy text sdílený mezi objekty
+  skupiny; kdybych měl jen web boudy, rok bych nezapsal. Zapisuji ho kvůli
+  Poznej domy. Do DATA-04: zjistit, ke které budově enklávy se rok 1876
+  doopravdy váže — Dvořákova bouda navíc ve své historii tvrdí, že to byla
+  ONA, kdo dostal po válce od ROH jméno Moravská bouda, což se s naším
+  profilem kříží a rozřešené to nemám.
+  VEDLEJŠÍ ZISK z téhož načtení: web boudy uvádí „Celková kapacita chaty je
+  52 lůžek ve 14 pokojích s dispozicemi od 2 do 6 lůžek", čímž rozhoduje
+  zapsaný rozpor (2) níže ve prospěch 52 proti 54 z Českých hor. Hodnota
+  v profilu se nemění, jen nově stojí na primárnějším prameni; verified
+  zůstává false, protože jde o vlastní web provozovatele, neověřený redakcí.
+  Adresu „Špindlerův Mlýn 90, 543 51" a telefon web potvrzuje shodně
+  s Kudy z nudy.
+  OPRAVENO ZÁROVEŇ: hlavička souboru i overeniProvoz.source tvrdily, že web
+  boudy je ze sandboxu nedostupný. To dnes neplatí a nechat to stát by bylo
+  nepravdivé tvrzení o vlastní práci. Neměním v tom bloku žádné DATO — jen
+  větu o dosažitelnosti pramene, kterou jsem přímo změřil.
 
   Wi-Fi, platba kartou a lyžárna: zdroje neuvádějí — pole vědomě nevyplněna.
 

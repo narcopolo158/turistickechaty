@@ -1,8 +1,12 @@
 # Friesovy boudy — profil povýšen z kandidáta (externí katalog ČR/SK, jistota A)
 # po křížovém ověření. Master fronta Tier 1 (známka č.2049 + katalog). Data ze
 # sekundárního média Kudy z nudy (verified:false — ověřit primárně, DATA-04).
-# GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, v OSM exportu objekt není —
-# nedomýšlet). Vše verified:false.
+# Vše verified:false.
+#
+# DATA-21 (26. 7. 2026): doplněna historie (devět milníků) a GPS. Zároveň
+# vyřešen dřívější „ROZPOR v doméně" — a nebyl to rozpor: friesovyboudy.cz
+# a friesovy-boudy.cz jsou weby DVOU RŮZNÝCH domů v téže enklávě. Viz
+# overeniProvoz a interniPoznamky.
 
 nazev: Friesovy boudy
 slug: friesovy-boudy
@@ -27,18 +31,25 @@ zajimavosti:
     zdroj: Kudy z nudy „Horský hotel Friesovy boudy ve Strážném" (sekundární médium, verified:false)
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
-# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+lat: 50.7000169
+lng: 15.6514228
 vyska: 1217
 obec: Strážné
 overeniLokace:
   source: >-
     Výška 1 217 m shodně dle Kudy z nudy i externího katalogu ChatGPT; adresa
     „Strážné 95, 543 52 Strážné" (Královéhradecký kraj) dle Kudy z nudy; katalog
-    řadí objekt do centrálních Krkonoš. GPS nedoložena — doplnit z OSM.
+    řadí objekt do centrálních Krkonoš. GPS DOPLNĚNA 26. 7. 2026 (DATA-21)
+    z kontaktní stránky provozovatele friesovyboudy.cz/contacts, která uvádí
+    doslova 50°42'0.061"N, 15°39'5.122"E; do lat/lng zapsán prostý převod na
+    desetinné stupně (50.7000169 / 15.6514228) — je to tentýž údaj v jiném
+    zápisu, ne dopočet z více čísel. Tatáž stránka nezávisle potvrzuje adresu
+    Strážné 95, provozovatele Ing. Karel Polívka a telefon, který už v profilu
+    je. Poloha odpovídá popisu „u sjezdovky na svahu Světlého vrchu"
+    (region-krkonose.cz). V OSM exportu DATA-01 objekt nadále není.
     Sekundární zdroje, verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -97,30 +108,88 @@ overeniProvoz:
   source: >-
     Kudy z nudy „Horský hotel Friesovy boudy ve Strážném": celoroční provoz,
     restaurace po–ne 11:30–22:00, tel. +420 724 230 884, info@friesovyboudy.cz.
-    ROZPOR v doméně: katalog i Kudy z nudy nesou friesovyboudy.cz, ve
-    vyhledávání se ale objevuje i https://www.friesovy-boudy.cz/ („Úvod |
-    Friesovy Boudy") — ověřit, která je platná. Sekundární médium,
-    verified:false
+    ROZPOR V DOMÉNĚ VYŘEŠEN 26. 7. 2026 (DATA-21) — a rozpor to nebyl. Obě
+    adresy existují a patří DVĚMA RŮZNÝM domům v téže enklávě:
+    friesovyboudy.cz je Horský hotel Friesovy boudy, Strážné 95, provozovatel
+    Ing. Karel Polívka, IČO CZ7804273070, tel. +420 724 230 884 — souhlasí
+    s tím, co v profilu je, takže kontakty.web je správně. Kdežto
+    friesovy-boudy.cz je Bouda Matouš, Strážné 94, provozovatel Matouš Jindra,
+    IČO 74618881, tel. +420 607 727 201, info@friesovy-boudy.cz. Bouda Matouš
+    je samostatný objekt, v korpusu zatím není ani jako kandidát — viz
+    interniPoznamky. Sekundární zdroje, verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Historie ──────────────────────────────────────────────────────────────
-# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — dosažitelné zdroje historii neuvádějí.
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN i po DATA-21. Pramen nese dva letopočty, které by
+# se na to místo nabízely, a ani jeden rokem vzniku tohohle domu není: 1676 je
+# první zmínka o celé enklávě a o jiném člověku, 1987 je rok, kdy byla
+# předchozí budova zbourána a postavena nová. Co je „rok vzniku", pramen
+# neříká — nedomýšlet. Oba letopočty jsou v milniky, kam patří.
+milniky:
+  - rok: 1676
+    udalost: >-
+      Ve vrchlabském urbáři je připomínán Jiří Fries, jemuž zde bylo povoleno
+      postavit boudu — první zmínka o celé enklávě, ne o dnešním domě
+  - rok: 1882
+    udalost: >-
+      Do tohoto roku patřily boudy do katastru Dolního Dvora, pak přešly pod
+      obec Strážné
+  - rok: 1900
+    udalost: V enklávě je registrováno sedm rodin Friesů
+  - rok: 1910
+    udalost: >-
+      Vinzenz Lahr z Klínovek znovu vybudoval usedlost po požáru (pramen uvádí
+      „kolem roku 1910")
+  - rok: 1921
+    udalost: >-
+      Dům koupil Josef Hoffman, přestavěl jej a přikoupil pozemky sousedního
+      stavení; hospodářství čítalo pět hektarů luk, pět krav, jalovici
+      a tažného koně
+  - rok: 1935
+    udalost: >-
+      Josef Hoffman získal licenci k provozování pohostinství; hostinec měl pět
+      až šest hostinských pokojů
+  - rok: 1945
+    udalost: >-
+      V červnu byla rodina hostinského odsunuta, koncem podzimu bylo stavení
+      přiděleno českému podnikateli jako hostinec a ubytovna
+  - rok: 1948
+    udalost: >-
+      Po tomto roce byla budova vyvlastněna a stala se majetkem pražských
+      Škodových závodů
+  - rok: 1987
+    udalost: Budova byla kompletně zbourána a postavena znovu, blíž k lesu
 overeniHistorie:
   source: >-
-    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
-    nudy historii neuvádí, krkonose.eu a cs.wikipedia.org jsou ze sandboxu
-    nedostupné). Doplnit při primárním ověření (DATA-04) — nedomýšleno.
-    verified:false
+    DOPLNĚNO 26. 7. 2026 (DATA-21) — dřívější znění tohoto pole říkalo, že se
+    historii doložit nepodařilo; to už neplatí. Pramen: stránka Historie na
+    friesovy-boudy.cz, sekce „Dům číslo 95 – Hotel Friesovy boudy". POZOR NA
+    POVAHU PRAMENE: není to web tohohle hotelu. friesovy-boudy.cz patří
+    sousední Boudě Matouš (Strážné 94), historii domu č. 95 tedy píše soused.
+    Stránka neuvádí ani autora, ani pramen, ze kterého čerpá — sekundární
+    zdroj bez doložené provenience, byť věcně bohatý a vnitřně soudržný.
+    Doslovná znění klíčových míst: „První zmínka o Friesových boudách je ve
+    vrchlabském urbáři, kde je v r. 1676 připomínán Jiří Fries, jemuž zde bylo
+    povoleno postavit boudu"; „Vinzenz Lahr z Klínovek č.84, který usedlost po
+    požáru kolem roku 1910 znovu vybudoval"; „V roce 1935 získal Josef Hoffman
+    licenci k provozování pohostinství"; „V roce 1987 byla budova kompletně
+    zbourána a nově vystavěna jako ‚Friesova bouda' blíže k lesu". Stránka sama
+    odděluje historii enklávy (1676, 1882 přechod z katastru Dolního Dvora pod
+    Strážné, 1900 sedm rodin Friesů) od historie domu č. 95 a v milniky je to
+    rozlišení zachováno. Ověřit primárně (vrchlabský urbář, obecní kronika,
+    katastr) — sekundární zdroj, verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Horský hotel ve Strážném (1 217 m) s vlastním minipivovarem. Ubytuje hosty ve
-  dvoulůžkových pokojích a apartmánech — kolik jich pojme, ale hlavní pramen
-  uvádí na dvou místech různě. Restaurace má 90 míst včetně baru a klubu,
-  k tomu je tu wellness se saunou, parní lázní a bazénem.
+  Horský hotel ve Strážném (1 217 m) s vlastním minipivovarem. Jméno nese po
+  rodu Friesů — vrchlabský urbář k roku 1676 připomíná Jiřího Friese, jemuž
+  tu bylo povoleno postavit boudu, dnešní budova je ale až z roku 1987.
+  Ubytuje hosty ve dvoulůžkových pokojích a apartmánech; kolik jich pojme,
+  uvádí hlavní pramen na dvou místech různě. Restaurace má 90 míst včetně baru
+  a klubu, k tomu je tu wellness se saunou, parní lázní a bazénem.
 text:
   - >-
     Friesovy boudy stojí ve výšce 1 217 m n. m. nad Strážným, na adrese
@@ -130,6 +199,29 @@ text:
     nemáme. Rozsahem služeb jde o horský hotel a pod tímto označením ho vede
     i Kudy z nudy — starší podklad ho ovšem vedl mezi horskými boudami
     a rozhodnutí, které z obou označení použít, je naše.
+  - >-
+    Historie bud sahá do sedmnáctého století, ale pramen, ze kterého ji máme,
+    stojí za zmínku: vypráví ji web sousední boudy, ne hotelu samotného,
+    a neuvádí, z čeho čerpá. Podle něj je první zmínka o Friesových boudách ve
+    vrchlabském urbáři, kde se k roku 1676 připomíná Jiří Fries, jemuž tu bylo
+    povoleno postavit boudu. Do roku 1882 patřily boudy do katastru Dolního
+    Dvora, potom přešly pod Strážné, a k roku 1900 tu bylo registrováno sedm
+    rodin Friesů. Tyhle údaje se ale týkají celé enklávy, ne domu, ve kterém
+    dnes hotel sídlí.
+  - >-
+    Dům samotný měl osud pohnutější. Po požáru kolem roku 1910 ho znovu
+    vybudoval Vinzenz Lahr z Klínovek, v roce 1921 ho koupil Josef Hoffman,
+    přestavěl a přikoupil pozemky sousedního stavení; hospodářství pak čítalo
+    pět hektarů luk, pět krav, jalovici a tažného koně. Roku 1935 Hoffman
+    získal licenci k provozování pohostinství a hospoda s pěti až šesti
+    hostinskými pokoji se stala oblíbeným místem usedlíků i hostů — k tanci
+    tu hrávala Rennerova kapela. V červnu 1945 byla hostinského rodina
+    odsunuta, koncem téhož podzimu připadlo stavení českému podnikateli jako
+    hostinec a ubytovna a po roce 1948 bylo vyvlastněno ve prospěch pražských
+    Škodových závodů. V roce 1987 byla budova kompletně zbourána a postavena
+    znovu, blíž k lesu. Dům, do kterého dnes vejdete, je tedy stavba
+    z osmdesátých let minulého století, i když jméno a místo jsou o tři století
+    starší.
   - >-
     Spí se ve dvoulůžkových pokojích a apartmánech. V kapacitě si ale hlavní
     pramen protiřečí sám: text stránky Kudy z nudy mluví o 24 pokojích a 75
@@ -146,28 +238,49 @@ text:
     bazénem a lehátky.
   - >-
     Zveřejněná denní otvírací doba odpovídá podniku otevřenému veřejnosti,
-    výslovně to ale zdroj neuvádí. O Wi-Fi, platbě kartou ani lyžárně se
-    dosažitelný pramen nezmiňuje a doložit se nepodařilo ani historii boud a
-    rok jejich vzniku. Rozcházejí se také internetové adresy, pod kterými se
-    hotel prezentuje: vedle té, kterou uvádějí Kudy z nudy, se ve vyhledávání
-    objevuje ještě jedna. Všechny údaje pocházejí ze sekundárních pramenů —
-    z Kudy z nudy a ze staršího katalogového podkladu — a redakce je zatím
-    neověřila vlastním dotazem; před cestou proto
-    doporučujeme potvrdit si kapacitu, otvírací dobu restaurace i platnou
-    webovou adresu přímo u hotelu.
+    výslovně to ale zdroj neuvádí; o Wi-Fi, platbě kartou ani lyžárně se
+    dosažitelný pramen nezmiňuje. Rok vzniku u téhle boudy záměrně neuvádíme
+    žádný: prameny nabízejí dva letopočty a ani jeden jím není — rok 1676
+    patří celé enklávě a jinému člověku, rok 1987 je datem, kdy byla předchozí
+    budova zbourána a postavena nová. Pozor je namístě i u jména. V enklávě
+    stojí pod velmi podobným názvem dva různé domy, každý s vlastním
+    provozovatelem, vlastním číslem popisným i vlastními internetovými
+    stránkami, takže při rezervaci stojí za to zkontrolovat, u kterého z nich
+    vlastně objednáváte. Všechny údaje pocházejí ze sekundárních pramenů —
+    z Kudy z nudy, ze staršího katalogového podkladu a z webu sousední boudy —
+    a redakce je zatím neověřila vlastním dotazem; před cestou proto
+    doporučujeme potvrdit si kapacitu i otvírací dobu restaurace přímo
+    u hotelu.
 zdroje:
   - popis: >-
       Kudy z nudy — „Horský hotel Friesovy boudy ve Strážném" (výška, adresa,
       kapacita, restaurace a otvírací doba, minipivovar, wellness, kontakty);
       sekundární médium, verified:false, ověřit primárně
     url: https://www.kudyznudy.cz/aktivity/horsky-hotel-friesovy-boudy-ve-straznem
+  - popis: >-
+      Historie Friesových bud — stránka na webu sousední Boudy Matouš, sekce
+      „Dům číslo 95 – Hotel Friesovy boudy" (první zmínka 1676, přechod
+      katastru 1882, sedm rodin Friesů 1900, majitelé a osudy domu od požáru
+      kolem roku 1910 přes licenci k pohostinství 1935 až po přestavbu 1987);
+      stránka neuvádí autora ani pramen, sekundární zdroj bez doložené
+      provenience, verified:false
+    url: https://www.friesovy-boudy.cz/historie
+  - popis: >-
+      Horský hotel Friesovy boudy — kontaktní stránka provozovatele (adresa,
+      souřadnice, telefon, provozovatel); sekundární zdroj, verified:false
+    url: https://friesovyboudy.cz/contacts
   - popis: 'Externí katalog chat ČR/SK (podklad ChatGPT, jistota A) — nadmořská výška 1 217 m (shodně s Kudy z nudy), zařazení do centrálních Krkonoš, klasifikace objektu jako horské boudy. Próza se na tenhle soupis výslovně odvolává, proto sem patří; veřejně citovatelné umístění ani souřadnice ale nemá a druhým pramenem doložený není. verified:false'
 interniPoznamky: >-
   Povýšeno z data/kandidati/krkonose/friesovy-boudy.yaml (externí katalog
   ČR/SK, jistota A) v rámci master fronty Tier 1 (známka č.2049 + katalog).
 
-  BEZ GPS — katalog souřadnice nenese a objekt není ani v OSM exportu DATA-01;
-  doplnit z OSM přes Actions nebo ručně (nedomýšlet).
+  GPS DOPLNĚNA 26. 7. 2026 (DATA-21) z kontaktní stránky provozovatele, která
+  je uvádí ve stupních, minutách a vteřinách; do lat/lng zapsán prostý převod
+  na desetinné stupně, původní zápis je doslova v overeniLokace.source, aby
+  byl převod kdykoli přezkoumatelný. Tohle je vědomě jiný případ než zamítnutá
+  kapacita 65 u Výrovky: tam by šlo o součet dvou různých čísel, který žádný
+  pramen neuvádí, tady jde o tentýž údaj v jiné notaci. V OSM exportu DATA-01
+  objekt nadále není.
 
   Typ: nastaveno „horsky-hotel" (objekt se sám i na Kudy z nudy uvádí jako
   „Horský hotel Friesovy boudy", 75 lůžek, wellness, vlastní minipivovar) —
@@ -176,8 +289,36 @@ interniPoznamky: >-
 
   Zaznamenané rozpory k dořešení při DATA-04: (1) 24 pokojů / 75 lůžek v textu
   Kudy z nudy vs. 21 pokojů / 66 lůžek v tamních údajích z klasifikace
-  HotelStars — do profilu vzat text (75); (2) doména friesovyboudy.cz (katalog
-  i Kudy z nudy) vs. friesovy-boudy.cz (vyhledávání) — ověřit platnou.
+  HotelStars — do profilu vzat text (75). K tomu nově třetí číslo: portál
+  region-krkonose.cz uvádí „76 lůžek + 8 přistýlek". Nezapsáno, jen
+  zaznamenáno — tři prameny, tři čísla, rozhodne až primární ověření.
+  (2) doména friesovyboudy.cz vs. friesovy-boudy.cz — VYŘEŠENO, viz níže.
+
+  DATA-21 (26. 7. 2026) — dva nálezy, oba přepisují dřívější tvrzení profilu.
+
+  (a) HISTORIE DOPLNĚNA. Profil dosud tvrdil, že se historii doložit
+  nepodařilo. Podařilo: friesovy-boudy.cz/historie nese devět datovatelných
+  událostí od roku 1676 po přestavbu 1987, včetně jmen majitelů. Zapsáno do
+  milniky, doslovná znění v overeniHistorie.source. rokVzniku ZÁMĚRNĚ
+  NEVYPLNĚN — pramen odděluje historii enklávy (1676, Jiří Fries) od historie
+  domu č. 95 a dnešní budova je z roku 1987; který z těch letopočtů je „rok
+  vzniku", pramen neříká a my to nedomýšlíme. Slabina pramene je v tom, že
+  neuvádí autora ani zdroj, ze kterého čerpá — je přiznaná v próze i v poli.
+
+  (b) „ROZPOR V DOMÉNĚ" BYL OMYL. friesovyboudy.cz a friesovy-boudy.cz nejsou
+  dvě adresy jednoho hotelu, ale weby dvou různých domů v téže enklávě:
+  friesovyboudy.cz = Horský hotel Friesovy boudy, Strážné 95, Ing. Karel
+  Polívka, tel. 724 230 884 (to je náš objekt, kontakty souhlasí);
+  friesovy-boudy.cz = Bouda Matouš, Strážné 94, Matouš Jindra, IČO 74618881,
+  tel. 607 727 201. Profil o tom mluvil ve veřejné próze jako o rozporu adres
+  — opraveno na to, co skutečně platí, a čtenáři je to podáno prakticky (při
+  rezervaci si ověřit, u kterého domu objednává).
+
+  NÁVRH PRO MICHALA: založit Boudu Matouš jako kandidáta
+  (data/kandidati/krkonose/bouda-matous.yaml). Je to samostatný ubytovací
+  objekt v Krkonoších, který v korpusu není vůbec. Zda splní klíč zařazení
+  (veřejné občerstvení), zjištěné nemám — kandidát je ale místo, kam to
+  zapsat. Nezakládal jsem sám, aby korpus nerostl bez tvého vědomí.
 
   Wi-Fi ani další služby zdroj neuvádí — pole vědomě nevyplněna.
 
@@ -205,7 +346,9 @@ interniPoznamky: >-
   (ban-scan) a domácí vzor z chalupa-na-rozcesti je přiznat rozpor bez hodnot,
   což text[3] už dělá.
 
-  K dotažení (DATA-04, verified:true): GPS, historie a rok vzniku, potvrdit
-  kapacitu, veřejnou přístupnost a otvírací dobu restaurace, platnou doménu.
+  K dotažení (DATA-04, verified:true): potvrdit historii primárním pramenem
+  (vrchlabský urbář, obecní kronika) a rozhodnout, zda vůbec nějaký letopočet
+  vést jako rok vzniku; potvrdit GPS na místě; rozhodnout kapacitu mezi třemi
+  čísly (75 / 66 / 76+8), veřejnou přístupnost a otvírací dobu restaurace.
   Hero fotka: kandidáti DATA-02. Známka č.2049 — obrázek připraven v
   data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c2049-friesovy-boudy.png.

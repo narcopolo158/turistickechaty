@@ -4,6 +4,12 @@
 # kolinskabouda.cz je ze sandboxu nedostupný; ověřit primárně, DATA-04).
 # GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, OSM export objekt neobsahuje —
 # nedomýšlet). Vše verified:false.
+#
+# DATA-21 (26. 7. 2026): vlastní web se načíst PODAŘILO a nese obsáhlou
+# kroniku boudy — doplněno devět milníků. POZOR: rokVzniku ZŮSTÁVÁ NEVYPLNĚN.
+# Rok 1927 je rok KOUPĚ, ne stavby, a kronika rok stavby vůbec neuvádí.
+# POZOR 2: číslo 1719 je ČÍSLO TURISTICKÉ ZNÁMKY, ne letopočet — dřívější
+# otázka „1927, nebo 1719?" byla nedorozumění a je uzavřená.
 
 nazev: Kolínská bouda
 slug: kolinska-bouda
@@ -36,10 +42,20 @@ overeniLokace:
     Výška 1 117 m dle České hory (stránka „Kolínská bouda", shodně s externím
     katalogem ChatGPT); poloha Lučiny, na turistické stezce mezi Pecí pod
     Sněžkou a Černou horou (České hory); adresa Pec pod Sněžkou 319, 542 21,
-    území KRNAP dle Kudy z nudy. GPS nedoložena — doplnit z OSM. Sekundární
-    média, verified:false
+    území KRNAP dle Kudy z nudy. GPS nedoložena — doplnit z OSM.
+    DATA-21 (26. 7. 2026), dvě zjištění z vlastního webu boudy:
+    (a) ADRESA — vlastní web uvádí v záhlaví „Velká Úpa 319, 54221 Pec pod
+    Sněžkou", tedy s částí obce Velká Úpa, kterou Kudy z nudy vynechávají.
+    Číslo i obec sedí, liší se jen část obce; pole `obec` ponecháno na „Pec pod
+    Sněžkou" do rozhodnutí o sémantice pole (DATA-20).
+    (b) MÍSTNÍ JMÉNO — kronika boudy z roku 1927 mluví o „Bobích loukách"
+    (a v téže pasáži i o „svahu Liščí hory"), dnešní prameny o „Lučinách".
+    O přestěhování nebo nové budově kronika nemluví (ověřeno cíleným dotazem),
+    takže nejspíš jde o týž svah pod starším jménem — DOKÁZANÉ TO ALE NENÍ,
+    žádný pramen tu rovnici výslovně neuvádí. Nedomýšlet, ověřit.
+    Sekundární média, verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -93,29 +109,100 @@ overeniProvoz:
   source: >-
     Kudy z nudy „Hotel Kolínská bouda v Krkonoších": celoroční provoz
     (leden–prosinec), restaurace po–ne 10:30–22:00, tel. +420 774 500 747 a
-    +420 499 736 201, info@kolinskabouda.cz, kolinskabouda.cz/cs. Web boudy je
-    ze sandboxu nedostupný — ověřit primárně (DATA-04). Sekundární médium,
-    verified:false
+    +420 499 736 201, info@kolinskabouda.cz, kolinskabouda.cz/cs. DATA-21
+    (26. 7. 2026): web boudy se už načíst PODAŘILO (dřívější poznámka
+    o nedostupnosti padá) — doména potvrzena, adresa v záhlaví viz
+    overeniLokace. Otvírací dobu restaurace ani sezónu ale čtená stránka
+    (Historie) neuvádí, takže údaje z Kudy z nudy zůstávají neověřené.
+    Sekundární médium, verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Historie ──────────────────────────────────────────────────────────────
-# rokVzniku ZÁMĚRNĚ NEVYPLNĚN — dosažitelné zdroje historii neuvádějí.
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN, a to i po doplnění celé kroniky: rok 1927 je
+# rok KOUPĚ boudy kolínským odborem, ne rok stavby. Kronika sama rok stavby
+# NEUVÁDÍ a bouda v roce 1927 už stála (kupovala se hotová dřevěná stavba).
+# Nedosazovat 1927 do rokVzniku — pole „Založeno" by lhalo.
+milniky:
+  - rok: 1927
+    udalost: >-
+      Kolínský odbor Klubu československých turistů koupil od Emila Kneifela
+      dřevěný dům s loukou na Bobích loukách; smlouva podepsána 12. dubna
+  - rok: 1938
+    udalost: >-
+      13. září sjela poslední lanovka do Janských Lázní a s ní odešel poslední
+      host; po záboru pohraničí boudu obsadilo německé vojsko
+  - rok: 1940
+    udalost: >-
+      3. května byla bouda podle nařízení pro sudetskou oblast překnihována do
+      majetku německé správní společnosti
+  - rok: 1943
+    udalost: >-
+      15. října boudu získala Marie Heckelová; zda koupí, nebo dědictvím,
+      si kronika sama není jistá
+  - rok: 1945
+    udalost: >-
+      19. května se boudy jménem Klubu českých turistů opět ujal zástupce
+      krkonošské župy, zmocněný výnosem České národní rady z 11. května
+  - rok: 1991
+    udalost: >-
+      3. července se bouda po 43 letech znovu stala majetkem Klubu českých
+      turistů Kolín
+  - rok: 1995
+    udalost: V listopadu byla bouda prodána Marku Lukášovi z Prahy
+  - rok: 1997
+    udalost: Na počátku zimy byl hotel uveden do zkušebního provozu
+  - rok: 2017
+    udalost: Boudu od Marka Lukáše koupil Svatopluk Čech
 overeniHistorie:
   source: >-
-    Rok vzniku ani milníky se z dosažitelných zdrojů doložit nepodařilo (Kudy z
-    nudy ani České hory historii neuvádějí, web boudy a Wikipedie jsou ze
-    sandboxu nedostupné). Doplnit při primárním ověření (DATA-04) —
-    nedomýšleno. verified:false
+    Vlastní web boudy, stránka Historie (načteno 26. 7. 2026 — dřívější
+    poznámka o nedostupnosti webu tím padá). Stránka otiskuje dobovou zprávu
+    podepsanou „Zapsal Otakar Rykr – jednatel" a na ni navazující pokračování.
+    Doslovné citace, o které se milníky opírají: „t. zv. Lesní bouda na svahu
+    Liščí hory je na prodej"; „že její bratr, Emil Kneifel, usedlý na Bobích
+    lukách, by svůj domek prodal"; „dne 13. března 1927 vydal na lyžích na
+    Bobí louky"; „vypravili jsme se dne 27. března – Ing. Holpuch, já a moje
+    žena"; „Konečně pak nadešel pro Odbor náš jistě památný den, úterý dne
+    12. dubna 1927. K uzavření smlouvy…"; „Třebaže bouda je malá"; „dřevěný
+    dům a 2 ha 1 m² louky"; „Dne 13. září 1938 sjela poslední lanovka do
+    Janských Lázní a s ní opouštěl poslední host Kolínské boudy paní Antonie
+    Rykrová"; „byla bouda sama překnihována dne 3. května 1940 do majetku
+    ‚Aufbaufonds…'"; „že ji od něho koupila (nebo zdědila?) dne 15. října 1943
+    Marie Heckelová, Němka z Tirol"; „výnosem České národní rady čís. 1789 ze
+    dne 11. května 1945 zmocněn, aby se ujal opět svého vlastnictví… což se
+    stalo… dne 19. května 1945"; „3. července 1991 se Kolínská bouda po 43
+    letech opět stala majetkem Klubu českých turistů Kolín"; „byla Kolínská
+    bouda prodána v listopadu 1995 ing. Marku Lukášovi z Prahy"; „Na počátku
+    zimy roku 1997 byl hotel uveden do zkušebního provozu"; „V roce 2017
+    Kolínskou boudu od Marka Lukáše koupil Svatopluk Čech".
+    ROK STAVBY KRONIKA NEUVÁDÍ — ověřeno cíleným dotazem na text stránky,
+    odpověď „ROK STAVBY NEUVEDEN". Proto rokVzniku zůstává prázdné.
+    TŘI PASTI, DO KTERÝCH SE PŘI ČTENÍ TÉHLE STRÁNKY DÁ SPADNOUT (všechny
+    jsem si nejdřív vyložil špatně a opravil až cíleným dotazem):
+    (1) „Waldhaus p. Körbra u Horní Rokytnice n. J." NENÍ tato bouda — o jeho
+    koupi odbor jednal v letech 1922 a 1925 a nekoupil ji;
+    (2) „t. zv. Lesní bouda na svahu Liščí hory" také NENÍ tato bouda — byla
+    nabízena, ale kronika píše, že byla zchátralá a „nebylo tudíž prozatím
+    o koupi vyjednáváno"; předchozí jméno koupené boudy kronika neuvádí;
+    (3) 27. března a 12. dubna 1927 nejsou dvě verze téhož data, nýbrž dvě
+    různé události — výprava za Kneifelem a podpis smlouvy.
+    Chybí i rok, kdy klub boudu po roce 1945 ztratil: kronika ho neuvádí,
+    říká jen „po 43 letech" (což by ukazovalo na rok 1948, ale to už by byl
+    náš počet, ne údaj pramene — nedopočítáváno).
+    POZOR NA POVAHU PRAMENE: jde o vlastní web provozovatele, byť otiskuje
+    dobový zápis jednatele; nezávisle (archiv, literatura) neověřeno. DATA-04.
+    verified:false
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-26'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Velká horská bouda hotelového typu na Lučinách nad Pecí pod Sněžkou (1 117 m),
-  na turistické stezce k Černé hoře. Ubytuje kolem stovky hostů — prameny se
-  v přesném čísle liší — a má restauraci s terasou, vyhřívaný bazén, whirlpool
-  a saunu.
+  na turistické stezce k Černé hoře. Jméno má po kolínských turistech, kteří ji
+  koupili v roce 1927 — kdy ji ale někdo postavil, neví ani její vlastní
+  kronika. Ubytuje kolem stovky hostů, prameny se v přesném čísle liší, a má
+  restauraci s terasou, vyhřívaný bazén, whirlpool a saunu.
 text:
   - >-
     Kolínská bouda stojí ve výšce 1 117 m n. m. na Lučinách nad Pecí pod
@@ -123,6 +210,36 @@ text:
     Peci pod Sněžkou, čp. 319, a podle Kudy z nudy leží na území Krkonošského
     národního parku. Polohu na Lučinách, umístění na stezce i nadmořskou výšku
     uvádí archivní prezentace serveru České hory.
+  - >-
+    Své jméno nese bouda po kolínských turistech. Kolínský odbor Klubu
+    československých turistů sháněl vlastní chatu v horách už od roku 1922 —
+    jednal tehdy a znovu v roce 1925 o Waldhausu u Horní Rokytnice a zvažoval
+    i zchátralou Lesní boudu na svahu Liščí hory, na obojí ale nedošlo. Až
+    v březnu 1927 se předseda odboru Ing. Holpuch dozvěděl, že svůj domek na
+    Bobích loukách by prodal jistý Emil Kneifel; třináctého března tam dojel
+    na lyžích a hned začal vyjednávat. Smlouva byla podepsána v úterý
+    12. dubna 1927 a odbor koupil, jak píše jeho vlastní zápis, malý dřevěný
+    dům a dva hektary louky.
+  - >-
+    Dvacáté století s boudou pořádně zametlo. Třináctého září 1938 sjela
+    poslední lanovka do Janských Lázní a s ní odjel poslední host; po záboru
+    pohraničí boudu obsadilo německé vojsko, v květnu 1940 ji úřady
+    překnihovaly do majetku německé správní společnosti a na podzim 1943
+    přešla na Marii Heckelovou — jestli ji koupila, nebo zdědila, si kronika
+    sama není jistá. Devatenáctého května 1945 se boudy jménem Klubu českých
+    turistů opět ujal zástupce krkonošské župy. Pak ale v líčení následuje
+    mezera: majetkem kolínského klubu se bouda znovu stala třetího července
+    1991, „po 43 letech" — kdy a jak ji klub mezitím ztratil, kronika
+    neuvádí.
+  - >-
+    V listopadu 1995 přešla bouda do soukromých rukou, koupil ji Marek Lukáš
+    z Prahy, a na počátku zimy 1997 byl objekt uveden do zkušebního provozu
+    už jako hotel; v roce 2017 ho od Marka Lukáše koupil Svatopluk Čech.
+    Celý tenhle výčet ovšem stojí na jediném prameni — na kronice, kterou
+    zveřejňuje sama bouda. Otiskuje sice dobový zápis jednatele odboru
+    Otakara Rykra, což je pramen slušný, nezávisle ověřený ale není. A rok
+    vzniku v něm nenajdete: kolínští turisté v roce 1927 kupovali dům, který
+    už stál, a jak dlouho stál, nikdo nezapsal.
   - >-
     Rozsahem služeb má objekt blíž k hotelu než ke skromné boudě — Kudy z nudy
     ho ostatně vedou pod názvem Hotel Kolínská bouda, kdežto starší katalogový
@@ -142,17 +259,25 @@ text:
     děti tu najdou hřiště a výběhy pro kozy a ovce. Podle serveru České hory je
     objekt nekuřácký.
   - >-
-    Historii boudy zatím doložit neumíme — rok vzniku ani starší osudy objektu
-    dostupné prameny neuvádějí, a tak o nich mlčíme, dokud se je nepodaří
-    ověřit. Z přístupu je doložené jen to, že bouda stojí na turistické stezce
-    mezi Pecí pod Sněžkou a Černou horou, jak uvádí server České hory;
-    konkrétní pěší trasy, jejich délky ani možnost dojet autem doložené
-    nemáme. Vycházíme tu ze dvou sekundárních médií, z nichž jedno je
-    archivní, a ze staršího katalogového podkladu; redakce je zatím
-    neověřila vlastním dotazem ani návštěvou. Před cestou doporučujeme
+    Z přístupu je doložené jen to, že bouda stojí na turistické stezce mezi
+    Pecí pod Sněžkou a Černou horou, jak uvádí server České hory; konkrétní
+    pěší trasy, jejich délky ani možnost dojet autem doložené nemáme. Za
+    zmínku stojí ještě jedna drobnost: kronika mluví o Bobích loukách, dnešní
+    prameny o Lučinách. O přestěhování boudy kronika nic neříká, takže nejspíš
+    jde o týž svah pod starším jménem — výslovně to ale nikde nestojí. Údaje
+    o dnešním provozu vycházejí ze dvou sekundárních médií, z nichž jedno je
+    archivní, a ze staršího katalogového podkladu; nic z toho jsme zatím
+    neověřili vlastním dotazem ani návštěvou. Před cestou doporučujeme
     potvrdit si přímo u boudy otvírací dobu restaurace a to, zda je přístupná
     i neubytovaným.
 zdroje:
+  - popis: >-
+      Vlastní web boudy, stránka Historie — celá kronika od koupě v roce 1927
+      po prodej v roce 2017, otištěný dobový zápis jednatele kolínského odboru
+      Otakara Rykra; zároveň adresa v záhlaví („Velká Úpa 319"). Vlastní
+      prezentace provozovatele, nezávisle neověřeno; rok stavby boudy pramen
+      neuvádí. verified:false
+    url: https://www.kolinskabouda.cz/cs/url-sekce-401986/
   - popis: >-
       Kudy z nudy — „Hotel Kolínská bouda v Krkonoších" (adresa, kapacita,
       restaurace a otvírací doba, wellness, kontakty); sekundární médium,
@@ -207,8 +332,33 @@ interniPoznamky: >-
   vět, se kterým pracuje kontrola audit-mech D. Zamítnuto i „nad Pecí pod
   Sněžkou" — plyne z doložené výšky a obce (vzor dvorska-bouda).
 
-  K dotažení (DATA-04, verified:true): GPS, historie a rok vzniku, potvrdit
-  otvírací dobu a veřejnou přístupnost restaurace, ceny. Hero fotka: kandidáti
+  DATA-21 (26. 7. 2026, položka „Kolínská bouda 1927"): katalogový návrh
+  z DATA-09 chtěl rokVzniku 1927. ZAMÍTNUTO — a to i po otevření pramene,
+  který katalog uváděl. Vlastní web boudy (dosud vedený jako nedostupný, teď
+  načtený) nese obsáhlou kroniku a z ní je zřejmé, že 1927 je rok, kdy
+  kolínský odbor Klubu československých turistů koupil HOTOVOU dřevěnou
+  stavbu od Emila Kneifela. Rok, kdy ji někdo postavil, kronika neuvádí
+  (ověřeno cíleným dotazem na text stránky). Do rokVzniku by 1927 tedy lhalo —
+  vykresluje se jako „Založeno". Místo toho zapsáno devět milníků 1927–2017.
+
+  Uzavřená otázka: dřívější „Kolínská 1927, nebo 1719?" bylo NEDOROZUMĚNÍ
+  z mé strany. 1719 je číslo turistické známky, ne letopočet — potvrdil to
+  oficiální seznam vydavatele, který Michal stáhl 26. 7. 2026 („1719 Kolínská
+  bouda - Pec pod Sněžkou"). Otázku už neotevírat.
+
+  Tři pasti při čtení té kroniky, do kterých jsem nejdřív spadl a opravil až
+  cíleným dotazem (podrobně v overeniHistorie): Waldhaus u Horní Rokytnice ani
+  Lesní bouda na svahu Liščí hory NEJSOU tato bouda; 27. 3. a 12. 4. 1927 jsou
+  dvě různé události, ne dvě verze jednoho data. Kdyby se profil někdy
+  přepisoval, číst kroniku znovu celou, ne po útržcích.
+
+  Nová drobnost k DATA-20: vlastní web uvádí adresu s částí obce („Velká Úpa
+  319"), Kudy z nudy bez ní („Pec pod Sněžkou 319") — pole `obec` ponecháno,
+  čeká na Michalovo rozhodnutí o sémantice.
+
+  K dotažení (DATA-04, verified:true): GPS, nezávislé doložení kroniky a rok
+  stavby boudy, potvrdit otvírací dobu a veřejnou přístupnost restaurace,
+  rozsoudit kapacitu 102 vs. 100. Hero fotka: kandidáti
   DATA-02. Známka č.1719 — obrázek připraven v
   data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c1719-kolinska-bouda.png
   (číslo opravil Michal — původně jsem z rytiny četl 1716).
