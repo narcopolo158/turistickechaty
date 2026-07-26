@@ -11,6 +11,48 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — pokračování 2: sedm profilů prověřeno u vydavatele známek — žádný známku nemá; vydavatel má i suvenýry
+
+**Zadání Michala:** „pokracuj dal."
+
+**Hotovo:**
+
+**DATA-22 bod (3) — sedm publikovaných profilů bez shody v seznamu vydavatele prověřeno,
+výsledek: žádný z nich turistickou známku nemá.** S podstatnou výhradou k síle dokladu:
+**detailní stránky vydavatele se ze sandboxu nově nenačtou** (smyčka přesměrování),
+takže doklad jsou titulky ve vyhledávání omezeném na doménu vydavatele, ne projití
+katalogu — je to „hledali jsme a nenašli", ne důkaz. Po jednom: Černá bouda, Chata
+U Jirky, Dvorská bouda, Horská chata Krakonoš, Lesní bouda (vizitku CZ-1632 vedeme dál),
+Lovecká chata, Vebrovy boudy — všude známka nenalezena.
+
+**Tři vedlejší nálezy hledání stojí za víc než hlavní výsledek:** (a) **vydavatel vede
+i jiné produktové řady než známky** — u Černé boudy existuje SUVENÝR č. 833 „Hotel Černá
+Bouda"; filtr `jeStazitelna` z DATA-13 je stavěný jen na známky, takže je správně
+nepustí, ale při čtení katalogu se to teď musí rozlišovat (suvenýr ≠ známka). Zapsáno
+do `interniPoznamky` profilu Černé boudy i s druhou položkou: známka č. 18 „Černá hora
+1299m" je pro HORU, ne pro boudu — táž logika jako Sněžka × Poštovna. (b) **`673 Pomezní
+boudy` je na webu vydavatele vidět** — potvrzení z vydavatelovy strany, že ve filtrovaném
+xlsx chybí neprávem. (c) **`2048 Rozhledna Panorama - Černá Hora, Krkonoše`** — druhý
+krkonošský adept rozšířeného klíče DATA-23 (po Sněžce); jestli má občerstvení, zatím
+nedoloženo, prověřit před založením. A ještě `680 Vrbatovo Návrší` — samostatná známka
+vedle `393 Vrbatova bouda`; návrší ≠ bouda, do profilu se nepřidává.
+
+**Poštovna — malé dotažení:** Overpass export DATA-01 prověřen (60 prvků, filtroval
+boudy) — poštovna v něm není, GPS tedy zůstává k ručnímu dotažení; zapsáno do kandidáta,
+ať se hledání neopakuje.
+
+**Měření:** `npm run kontrola` zelené, `ban-scan` drží 129 (měněny jen `interniPoznamky`
+a kandidát — neskenovaná pole), `kolize-jmen` 0, fixtura 4/4.
+
+**Příště:** projít katalog vydavatele doopravdy, až bude cesta k detailním stránkám
+(Actions, nebo Michal ručně) — povýšit „hledali jsme a nenašli" na doklad. Nebo
+prověřit občerstvení u Rozhledny Panorama (druhý adept DATA-23).
+
+**Otázky pro Michala:** trvají z minula — Jelenka (25/26 lůžek), povýšení kandidátů se
+známkou (teď jich je šest), sémantika `obec`, rotace tokenů.
+
+---
+
 ## 2026-07-26 — pokračování: Sněžka rozhodnuta, DATA-24 hotová, dva noví kandidáti (Poštovna, Modrokamenná)
 
 **Zadání Michala:** „snezka - udelal bych profil kazdeho objektu zvlast" + „pokracuj
