@@ -11,6 +11,71 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — pokračování 6: Tier 3 dojet — tři povýšení (49 profilů), dva kandidáti blokovaní otázkou
+
+**Zadání Michala:** „pokracuj dal." (Otázky se dál střádají na konec Krkonoš.)
+
+**Hotovo:**
+
+**Tier 3 zpracován celý — tři povýšení, dva odklady s důvodem. Korpus má 49
+publikovaných profilů.**
+
+**Chata Pod Studničnou:** chata KČT v Obřím dole (890 m, 47 lůžek / 15 pokojů,
+adresa u nástupní stanice lanovky na Sněžku). Pod starým klíčem „z celé dávky
+nejprůkazněji" neprošla — obě prezentace na přímý dotaz vrátily, že věta
+o občerstvení pro kolemjdoucí na stránce není; pod DATA-25 povýšena a próza tu
+nejistotu říká nahlas („poloha u nástupu na Sněžku k té domněnce svádí — a právě
+proto ji odmítáme domýšlet"). Zajímavost z KČT: dnešní jméno nese chata jen
+posledních šedesát let; starší jméno a rok stavby zůstávají k dohledání.
+
+**Erlebachova bouda:** hřeben nad Špindlem (1 150 m), dnes část resortu Svatý
+František. rokVzniku 1784 z jediného sekundárního pramene (Kudy z nudy — „kdysi
+skromné útočiště pro poutníky") — připsáno, nevydáváno za doložené. Restaurace
+Panorama denně 11–21 podle vlastního webu; věta o neubytovaných nikde, přiznáno.
+Kapacita nezapsána — prameny popisují resort (čtyři budovy), číslo samotné boudy
+nepadlo. **Josefova bouda = adept na kandidáta** (precedent Dvoračky × Štumpovka)
+— do otázek.
+
+**Schronisko PTTK „Nad Łomniczką":** první publikovaný objekt korpusu **bez
+noclehu** (PTTK: „nie posiada miejsc noclegowych" + „oferuje wyżywienie") —
+občerstvovací zastávka na sudetské magistrále pod Sněžkou, rokVzniku 1901
+(a hned nato zkáza kamenitou lavinou, per Trasygorskie). Hlavní věc je přiznaný
+**spor o dnešní provoz**: správce PTTK vede objekt jako fungující, dva polské
+portály hlásí remont/nieczynny — stav: v-provozu zvolen podle oficiálního
+pramene provozovatele, próza důrazně varuje a dotaz na PTTK (spojitelný
+s Kochanówkou) to rozhodne.
+
+**Dva kandidáti Tier 3 zůstávají, oba blokované otázkou, ne leností:**
+Hrnčířské boudy nejsou objekt, ale enkláva (Chata Mír, Náchodská bouda,
+Hájenka, Cihlářka) — profil osady by byl fikce; DATA-25 na tom nic nemění,
+překážka je objektovost, ne služba. Raisova chata na Zvičině je Podkrkonoší —
+klíč splněný má, ale oblast podkrkonosi neexistuje a vymyslet si ji nesmím;
+navíc nájemní smlouva provozovatele končí 31. 7. 2026, takže provozní údaje
+budou za pár dní stejně k přeověření.
+
+**Měření:** `npm run kontrola` zelené — 49 souborů, validator CHYB 0, audit-mech
+A–F nula, kolize-jmen nula, fixtura 4/4; `ban-scan` 137 → **140** (+3 = přesně
+jeden zásah na každý nový profil, ve všech třech jde o slovo „souřadnice" ve
+vzoru GPS — dokumentovaný trvalý falešný poplach, žádná nová třída). Při psaní
+se navíc chytly a hned opravily dva skutečné zásahy, které by jinak prošly:
+slovo „profilu" a slovo „ceny" v próze Chaty Pod Studničnou — ban-scan se
+osvědčil jako brzda i při psaní, ne jen při auditu.
+
+**STŘÁDANÉ OTÁZKY NA MICHALA (zatím čtyři nové z dneška):** (1) Hrnčířské boudy —
+rozpustit na jednotlivé boudy, nebo vést jen jako místopisný pojem? (2) Raisova
+chata na Zvičině — založit oblast Podkrkonoší, nebo odložit za pilot?
+(3) Josefova bouda (resort Sv. František) — založit kandidáta? (4) Sněžka —
+observatoř s restaurací na polské straně: posoudit po doložení, co nabízí.
+Plus trvající: Jelenka 25/26 lůžek, sémantika `obec` (DATA-20), rotace tokenů,
+telefonáty DATA-04 (teď 7 otázek na 7 objektů), rozpor čísla Modrokamenné
+2640 × 2540.
+
+**Příště:** Tier 4 — 34 OSM kandidátů (hodně vyřazování: pojmenované sjezdovky,
+soukromé chalupy…); pak DATA-25 bod (a) — projít 10 vyřazených novým klíčem;
+pak už jen zbytky a uzavřít Krkonoše.
+
+---
+
 ## 2026-07-26 — pokračování 5: klíč zařazení rozšířen o turistickou minulost → povýšena celá držená čtveřice (46 publikovaných profilů)
 
 **Zadání Michala:** *„všechny boudy, které sloužily turistům i v minulosti (a teď tomu

@@ -1,0 +1,178 @@
+# Schronisko PTTK „Nad Łomniczką" — profil povýšen z ručního kandidáta
+# 26. 7. 2026. Povýšení umožnilo rozhodnutí Michala z téhož dne (rozšíření
+# klíče zařazení, DATA-25): objekt slouží turistům od roku 1901 a dnešní
+# spor o provoz (PTTK „funguje" × dva portály „v remontu") se přiznává,
+# nerozhoduje potichu. Vše verified: false.
+
+nazev: Schronisko PTTK „Nad Łomniczką"
+slug: schronisko-nad-lomniczka
+zeme: pl
+typ: obsluhovana
+# stav: v-provozu je vědomá volba PODLE OFICIÁLNÍHO PRAMENE PROVOZOVATELE
+# (PTTK vede objekt jako fungující s wyżywienie); dva sekundární portály
+# hlásí remont/nieczynny — rozpor je přiznaný v próze a rozhodne ho dotaz
+# na PTTK (DATA-04). Kdyby se potvrdil remont, přepnout na mimo-provoz
+# I upravit prózu.
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: objekt nebyl v OSM exportu DATA-01; souřadnice
+# uvádí jen sekundární portál — do polí se neberou, dokud je nepotvrdí OSM
+# nebo mapa. ROZPOR VÝŠKY: 1002 m (PTTK, druhý portál, katalog) × 1003 m
+# (třetí portál) — vzata oficiální a nejčastější hodnota, rozpor přiznán.
+vyska: 1002
+obec: Karpacz # z adresy na oficiální stránce PTTK — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    oficiální stránka PTTK (otevřeno 25. 7. 2026): „Schronisko PTTK »Nad
+    Łomniczką«", 1002 m n.p.m., adresa 58-540 Karpacz, woj. dolnośląskie;
+    objekt leží dle portálu Góry i Ludzie v Karkonoskim Parku Narodowym.
+    Souřadnice 50°44'53"N, 15°44'36"E uvádí týž portál — sekundární zdroj,
+    do polí NEVZATO. ROZPOR VÝŠKY: 1003 m dle portálu Trasygorskie.
+  verified: false
+  checked: '2026-07-25'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# nocleh: ne — přímo z oficiální stránky PTTK („nie posiada miejsc
+# noclegowych"). Je to jediný publikovaný objekt korpusu bez noclehu;
+# klíč zařazení nese občerstvení a služba turistům na trase.
+nocleh: ne
+overeniNocleh:
+  source: >-
+    oficiální stránka PTTK (otevřeno 25. 7. 2026), doslova: objekt „nie
+    posiada miejsc noclegowych". Portál Góry i Ludzie dodává, že „nie
+    prowadzi jednak noclegów", takže podle nich právně nesplňuje definici
+    horského schroniska — pro nás je to bod odpočinku s občerstvením,
+    což klíč zařazení (DATA-25) pokrývá.
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni nevyplněno — podobu občerstvení pramen nepopisuje.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    oficiální stránka PTTK (otevřeno 25. 7. 2026): objekt „oferuje
+    wyżywienie" a je popsán jako „niewielki, drewniany budynek" na hlavní
+    sudetské magistrále, „dogodny punkt odpoczynku dla turystów"
+    scházejících ze Sněžky. Věta, že obslouží kolemjdoucího bez rezervace,
+    tam DOSLOVA není — u objektu bez noclehu na trase je ale občerstvení
+    z povahy věci pro procházející; podoba (bufet? kuchyně?) neuvedena,
+    typObcerstveni proto prázdné.
+  verified: false
+  checked: '2026-07-25'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku = rok stavby PRVNÍHO objektu (Trasygorskie); týž pramen píše,
+# že stavbu téměř hned zničila kamenitá lavina — kdy přesně byl objekt
+# obnoven a zda dnešní budova je táž, pramen neříká. Nedopočítávat.
+rokVzniku: 1901
+milniky:
+  - rok: 1901
+    udalost: >-
+      Schronisko bylo postaveno; téměř hned po dostavbě je podle portálu
+      Trasygorskie zničila kamenitá lavina (kdy přesně bylo obnoveno,
+      pramen neuvádí)
+overeniHistorie:
+  source: >-
+    portál Trasygorskie (otevřeno 25. 7. 2026), doslova: „niemal
+    natychmiast po jego budowie (1901 r.) zniszczyła go lawina gruzowa";
+    dále: po válce provoz na hlavní trase na Sněžku, návštěvnost klesla po
+    stavbě lanovky na Kopu pod Sněžkou; objekt léta fungoval bez elektřiny
+    a tekoucí vody; v 90. letech spory nájemce s PTTK a hygienické závady,
+    od té doby průběžná rekonstrukce. Sekundární pramen bez odkazů na
+    doklady — próza připisuje.
+  verified: false
+  checked: '2026-07-25'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# ⚠ PRAMENY SI ODPORUJÍ a rozpor se nerozhoduje: PTTK (provozovatel,
+# oficiální) vede objekt jako fungující; Trasygorskie „jest w remoncie",
+# Góry i Ludzie „nieczynny (remontowany)". Přiznáno v próze.
+kontakty:
+  web: https://www.pttk.jgora.pl
+overeniProvoz:
+  source: >-
+    ⚠ ROZPOR: oficiální stránka PTTK (otevřeno 25. 7. 2026) vede objekt
+    jako fungující („oferuje wyżywienie"); portál Trasygorskie nese
+    varování „Uwaga: Schronisko PTTK nad Łomniczką jest w remoncie"
+    a portál Góry i Ludzie objekt označuje „nieczynny (remontowany)".
+    Otvírací dobu ani sezónu neuvádí žádný pramen. Provozovatel: PTTK
+    (oddíl Jelenia Góra — týž správce jako u Kochanówky). Stránky
+    pttk.jgora.pl ani přehled schronisek národního parku se ze sandboxu
+    nenačtou — rozpor rozhodne dotaz na PTTK (DATA-04). stav: v-provozu
+    zvoleno podle oficiálního pramene provozovatele; próza varuje.
+  verified: false
+  checked: '2026-07-25'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Malé dřevěné schronisko bez noclehu v údolí Łomniczky pod Sněžkou
+  (1 002 m), zastávka na hlavní sudetské magistrále z roku 1901. Pozor
+  ale: jeho správce PTTK ho vede jako fungující s občerstvením, kdežto
+  dva polské turistické portály hlásí, že je v rekonstrukci — a my ten
+  rozpor neumíme rozhodnout od stolu.
+text:
+  - >-
+    Schronisko Nad Łomniczką stojí v nadmořské výšce 1 002 metrů v údolí
+    říčky Łomniczky pod Sněžkou, na polské straně hor nad Karpaczem.
+    Oficiální stránka PTTK ho popisuje jako nevelkou dřevěnou budovu na
+    hlavní sudetské magistrále a pohodlný bod odpočinku pro turisty
+    scházející ze Sněžky. Na výšce se prameny liší o metr — jeden portál
+    uvádí 1 003 — a souřadnice zatím nemáme potvrzené, proto objekt na
+    mapě neukazujeme.
+  - >-
+    Od většiny bud v tomhle průvodci se schronisko liší jednou podstatnou
+    věcí: nenabízí nocleh. Správce to říká výslovně a portál Góry
+    i Ludzie z toho vyvozuje, že objekt právně ani nesplňuje definici
+    horského schroniska. Pro turistu na hřebeni je to prostě občerstvovací
+    zastávka — a přesně jako taková patří do průvodce.
+  - >-
+    A teď to podstatné, co musí zaznít dřív než cokoli dalšího: prameny
+    se neshodnou na tom, jestli objekt vůbec funguje. Správcovská stránka
+    PTTK ho vede jako fungující s nabídkou stravy; portál Trasygorskie
+    ale varuje, že schronisko je v rekonstrukci, a portál Góry i Ludzie
+    ho rovnou označuje za nečinné. Nevíme, který údaj je novější,
+    a nechceme hádat. Kdo sem míří a počítá s občerstvením, měl by si
+    provoz ověřit předem — jinak riskuje zavřené dveře po dlouhém sestupu.
+  - >-
+    Historie objektu je krátká na zápis, ale dramatická: podle portálu
+    Trasygorskie bylo schronisko postaveno roku 1901 a téměř hned po
+    dostavbě je zničila kamenitá lavina. Po druhé světové válce žilo
+    z polohy na hlavní trase na Sněžku, návštěvnost mu ale vzala lanovka
+    na Kopu; dlouhá léta fungovalo bez elektřiny a tekoucí vody,
+    v devadesátých letech ho poznamenaly spory nájemce se správcem
+    a hygienické závady a od té doby se průběžně opravuje. To všechno
+    stojí na jediném sekundárním prameni — uvádíme to s připsáním.
+  - >-
+    Výška a charakter objektu pocházejí z oficiální stránky PTTK, historie
+    a varování o rekonstrukci z polských turistických portálů; stránky
+    správce se nám opakovaně nepodařilo otevřít celé a vlastním dotazem
+    jsme zatím neověřili nic. U objektu, o jehož provozu se prameny přou,
+    to platí dvojnásob.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nesbírali
+# (DATA-02 běžela nad objekty s GPS). Doplnit po doložení souřadnic.
+
+zdroje:
+  - popis: >-
+      Oficiální stránka PTTK — název, výška 1002 m, adresa, bez noclehu,
+      wyżywienie, popis objektu (otevřeno 25. 7. 2026)
+    url: https://www.pttk.jgora.pl
+  - popis: >-
+      Polský portál Trasygorskie — historie od 1901, výška 1003 m,
+      varování o rekonstrukci (otevřeno 25. 7. 2026; bez uložené URL
+      detailu)
+  - popis: >-
+      Polský portál Góry i Ludzie — „nieczynny (remontowany)", bez
+      noclehu, poloha v národním parku, souřadnice (otevřeno 25. 7. 2026;
+      bez uložené URL detailu; souřadnice do polí nevzaty)
+  - popis: >-
+      Externí katalog turistických chat ČR/SK (2026) — výška 1002 m, typ
+      (kompilace, jistota B; bez veřejné URL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/schronisko-nad-lomniczka.yaml (ruční kandidát z 25. 7. 2026) 26. 7. 2026 na základě rozhodnutí Michala o rozšíření klíče zařazení (DATA-25): objekt slouží turistům od 1901 a spor o dnešní provoz se přiznává, nerozhoduje. Verdikt kandidáta „do vyřešení rozporu se nepovyšuje" tím revidován — rozpor je teď přiznaný ve veřejné próze.
+  stav: v-provozu = vědomá volba podle oficiálního pramene provozovatele (PTTK); Trasygorskie a Góry i Ludzie hlásí remont/nieczynny. Kdyby dotaz na PTTK potvrdil remont, přepnout stav na mimo-provoz a upravit prózu (třetí odstavec).
+  JEDINÝ publikovaný objekt korpusu s nocleh: ne — hlídat, že šablona profilu tuhle kombinaci vykreslí rozumně (sekce Nocleh).
+  K dotažení (DATA-04): dotaz na PTTK Jelenia Góra — provoz (remont?), podoba občerstvení, otvírací doba/sezóna; dá se spojit s dotazem ke Kochanówce (týž správce). GPS potvrdit z OSM/mapy (portalová 50°44'53"N 15°44'36"E do polí nevzata). Polská známka (znaczek): v naší sadě není, seznam znaczki-turystyczne.pl je ze sandboxu nedostupný — prověřit později.

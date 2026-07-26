@@ -11,8 +11,8 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 
 ## Souhrn
 
-- **Publikováno:** 46 *(aktualizováno 26. 7. 2026 — povýšeny Richtrovy boudy, Medvědí bouda, Chata Rozhled a Pražská bouda po rozšíření klíče zařazení, DATA-25)*
-- **Kandidáti k doplnění:** 39 — z toho Tier 1 (známka + katalog) 0, Tier 2 (jen známka) 0, Tier 3 (jen katalog) 5, Tier 4 (jen OSM) 34
+- **Publikováno:** 49 *(aktualizováno 26. 7. 2026 podruhé — po čtveřici z rozšíření klíče DATA-25 povýšeny i Chata Pod Studničnou, Erlebachova bouda a Schronisko PTTK „Nad Łomniczką")*
+- **Kandidáti k doplnění:** 36 — z toho Tier 1 (známka + katalog) 0, Tier 2 (jen známka) 0, Tier 3 (jen katalog) 2 (**oba blokované otázkou na Michala:** Hrnčířské boudy = enkláva, ne objekt — rozpustit?; Raisova chata na Zvičině = Podkrkonoší — založit oblast?), Tier 4 (jen OSM) 34
 - **Vyřazeno** (nezakládat): 10
 - Objektů se známkou: 35 · v ChatGPT katalogu: 42 · katalogových Krkonoš celkem: 42
 - **Katalog je od 25. 7. 2026 pokrytý celý** — poslední objekt, který nám z něj chyběl (Schronisko PTTK „Nad Łomniczką"), je nově kandidátem. Pokrytí znamená jen „víme o něm", ne „ověřeno".
@@ -75,12 +75,12 @@ kandidát je od Benecka) — Hubertka tier nemění.
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |
 |---|---|---|---|---|
-| 🇨🇿 Chata Pod Studničnou | — | ✓ 890 m | 890 m | — |
-| 🇨🇿 Erlebachova bouda | — | ✓ 1150 m | 1150 m | — |
-| 🇨🇿 Hrnčířské boudy | — | ✓ 1150 m | 1150 m | — |
+| ~~🇨🇿 Chata Pod Studničnou~~ | — | ✓ 890 m | 890 m | obsluhovana — **POVÝŠENA 26. 7. 2026** (DATA-25; veřejnost občerstvení nedoložena → přiznáno v profilu) |
+| ~~🇨🇿 Erlebachova bouda~~ | — | ✓ 1150 m | 1150 m | obsluhovana — **POVÝŠENA 26. 7. 2026** (DATA-25; restaurace s veřejnou otvíračkou, věta o neubytovaných chybí → přiznáno) |
+| 🇨🇿 Hrnčířské boudy | — | ✓ 1150 m | 1150 m | **NENÍ OBJEKT** — enkláva; rozhodnutí Michala (rozpustit na jednotlivé boudy?) |
 | ~~🇨🇿 Pražská bouda~~ | č.2249 | ✓ 1115 m | 1115 m | obsluhovana — **POVÝŠENA 26. 7. 2026** (podle DATA-22 měla známku, patřila fakticky do Tier 1) |
-| 🇨🇿 Raisova chata na Zvičině | — | ✓ 671 m | 671 m | — |
-| 🇵🇱 Schronisko PTTK „Nad Łomniczką" | — | ✓ 1002 m | 1002 m | obsluhovana |
+| 🇨🇿 Raisova chata na Zvičině | — | ✓ 671 m | 671 m | **MIMO KRKONOŠE** (Podkrkonoší) — čeká na rozhodnutí o oblasti |
+| ~~🇵🇱 Schronisko PTTK „Nad Łomniczką"~~ | — | ✓ 1002 m | 1002 m | obsluhovana — **POVÝŠENO 26. 7. 2026** (DATA-25; spor o provoz PTTK × portály přiznán v próze; bez noclehu) |
 
 ### Tier 4 — jen OSM (bez známky i katalogu — nejtenčí signál, ověřit existenci/provoz)
 

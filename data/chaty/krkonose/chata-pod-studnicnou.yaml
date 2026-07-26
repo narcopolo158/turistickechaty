@@ -1,0 +1,159 @@
+# Chata Pod Studničnou — profil povýšen z kandidáta externího katalogu ČR/SK
+# 26. 7. 2026. Povýšení umožnilo rozhodnutí Michala z téhož dne (rozšíření
+# klíče zařazení, DATA-25): chata slouží turistům (nocleh se stravou, chata
+# KČT v Obřím dole); veřejné občerstvení pro kolemjdoucí doloženo NENÍ
+# a profil to přiznává — obě otevřené prezentace na přímý dotaz vrátily,
+# že taková věta na stránce není. Vše verified: false.
+
+nazev: Chata Pod Studničnou
+slug: chata-pod-studnicnou
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: objekt nebyl v OSM exportu DATA-01 a katalog
+# souřadnice nenese — doplnit s pramenem, nedomýšlet.
+vyska: 890
+obec: Pec pod Sněžkou # adresa z kct.cz — poštovní pramen (sémantika pole: DATA-20)
+overeniLokace:
+  source: >-
+    kct.cz/chaty/chata-pod-studnicnou/ (otevřeno 25. 7. 2026): „v nadmořské
+    výšce 890 m"; „Chata situovaná v Obřím dole… nedaleko nástupní stanice
+    lanovky na Sněžku"; adresa „Pec pod Sněžkou 120, 542 21 Pec pod
+    Sněžkou". Blog Krkonošské boudy (krkonosskeboudy.cz, načteno
+    26. 7. 2026): „Chatu pod Studničnou naleznete v Obřím dole kousek od
+    Pece pod Sněžkou a jak už název chaty napovídá, tak se nachází pod
+    Studničnou horou." GPS nedoložena.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 47
+pokoje: 15
+overeniNocleh:
+  source: >-
+    kct.cz/chaty/chata-pod-studnicnou/ (otevřeno 25. 7. 2026): „47 lůžek
+    v 15 pokojích". Rozpis pokojů podle typu stránka neuvádí.
+  verified: false
+  checked: '2026-07-25'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Strava pro ubytované je doložená; občerstvení pro kolemjdoucí NE — obě
+# otevřené prezentace na přímý dotaz vrátily, že taková věta na stránce
+# není. Nedomýšlet (ani z polohy u nástupu na Sněžku).
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    kct.cz (otevřeno 25. 7. 2026): „Ubytovaní hosté mají snídaně a večeři
+    formou bohatých bufetů" — služba pro ubytované; věta o občerstvení pro
+    kolemjdoucí na stránce NENÍ (ověřeno přímým dotazem s únikovou
+    formulkou). Vlastní prezentace chaty (chatapodstudnicnou.cz, otevřeno
+    25. 7. 2026): „Každé ráno čeká hosty bohatý švédský stůl. Večeře
+    formou rautu za příplatek.", snídaně 8:00–10:00, večeře 18:00–20:00 —
+    a věta o kolemjdoucích tam rovněž NENÍ. typObcerstveni proto
+    nevyplněno; otázka na telefonát (DATA-04).
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: žádný pramen nedává letopočet.
+# KČT říká, že DNEŠNÍ JMÉNO nese chata jen posledních šedesát let — starší
+# jméno se zatím nepodařilo dohledat.
+overeniHistorie:
+  source: >-
+    kct.cz (otevřeno 25. 7. 2026): „Posledních šedesát let se jmenuje
+    Bouda pod Studničnou" — dnešní název je tedy mladší než objekt; starší
+    jméno stránka neuvádí. Blog Krkonošské boudy (načteno 26. 7. 2026):
+    „Historie této boudy se začíná psát již koncem 19. století." — bez
+    letopočtu. Rok stavby se z dosažitelných pramenů doložit nepodařilo.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Chata KČT; dvě webové prezentace (jedna na doméně uváděné KČT — ta se ze
+# sandboxu nenačte, druhá vlastní a dostupná). Do kontaktů vzata doména od
+# KČT jako od správce, druhá je ve zdrojích.
+kontakty:
+  telefon: '+420 728 465 454'
+  email: podstudnicnou@centrum.cz
+  web: https://www.podstudnicnoukct.cz/
+sezona: celoročně # externí katalog ČR/SK (jistota A); vlastním dotazem neověřeno
+overeniProvoz:
+  source: >-
+    kct.cz/chaty/chata-pod-studnicnou/ (otevřeno 25. 7. 2026): telefon,
+    e-mail, web, „Nájemní smlouva nájemce do: 28. 2. 2031". Vlastní
+    prezentace chatapodstudnicnou.cz (otevřeno 25. 7. 2026): vlastník Klub
+    českých turistů, provozovatelka Klára Veverková. Sezóna celoročně dle
+    externího katalogu ČR/SK (2026, jistota A; původní zdroje
+    krkonose.eu/krkonosske-boudy, kct.cz). POZOR: doména z KČT
+    (podstudnicnoukct.cz) se ze sandboxu nenačte (robots/timeout) —
+    obsah čerpán z kct.cz a z druhé domény.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata Klubu českých turistů v Obřím dole u Pece pod Sněžkou, ve výšce
+  890 metrů pod Studničnou horou, nedaleko nástupní stanice lanovky na
+  Sněžku. Nabízí 47 lůžek v patnácti pokojích se snídaněmi a večeřemi pro
+  ubytované; jestli tu něco dostane i kolemjdoucí, se nám doložit
+  nepodařilo.
+text:
+  - >-
+    Chata Pod Studničnou stojí v Obřím dole kousek od Pece pod Sněžkou,
+    v nadmořské výšce 890 metrů — a jak připomíná server Krkonošské boudy,
+    jméno nelže: chata sedí přímo pod Studničnou horou. Stránka Klubu
+    českých turistů k tomu přidává praktickou polohu nedaleko nástupní
+    stanice lanovky na Sněžku.
+  - >-
+    Jde o chatu Klubu českých turistů. Ubytuje 47 hostů v patnácti
+    pokojích a ubytovaní mají podle KČT snídaně a večeře formou bohatých
+    bufetů; vlastní prezentace chaty mluví o švédském stole ráno a večeři
+    formou rautu. Jednu věc ale musíme říct na rovinu: ani jedna z obou
+    stránek neříká, jestli se tu občerství i turista, který v chatě
+    nespí. Poloha u nástupu na Sněžku k té domněnce svádí — a právě proto
+    ji odmítáme domýšlet. Kdo jde kolem, ať raději počítá s tím, že jistotu
+    občerstvení slíbit neumíme.
+  - >-
+    O historii víme zatím míň, než by si dům v Obřím dole zasloužil.
+    Stránka KČT prozrazuje jedinou, zato zajímavou věc: dnešní jméno nese
+    chata jen posledních šedesát let — je tedy mladší než objekt sám.
+    Server Krkonošské boudy píše, že historie boudy se začíná psát koncem
+    19. století, ale žádný letopočet ani starší jméno jsme zatím doložit
+    nedokázali; jakmile se pramen najde, doplníme obojí.
+  - >-
+    Chata má webové prezentace hned dvě — jednu uvádí KČT, druhou si vede
+    sama — a my jsme mohli otevřít jen tu druhou; všechno výše proto
+    pochází hlavně ze stránky KČT a z ní. Souřadnice zatím nemáme
+    doloženy z žádného pramene, proto chatu na mapě neukazujeme. Vlastním
+    dotazem jsme neověřili nic; provozní podrobnosti se navíc mohou měnit
+    s nájemcem, kterého KČT vede smlouvou na dobu určitou.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nesbírali
+# (DATA-02 běžela nad objekty s GPS). Doplnit po doložení souřadnic.
+
+zdroje:
+  - popis: >-
+      Klub českých turistů — stránka chaty: výška, adresa, kapacita,
+      strava pro ubytované, kontakty, nájemní smlouva (otevřeno
+      25. 7. 2026)
+    url: https://kct.cz/chaty/chata-pod-studnicnou/
+  - popis: >-
+      Vlastní prezentace chaty — vlastník KČT, provozovatelka, strava
+      (otevřeno 25. 7. 2026)
+    url: https://www.chatapodstudnicnou.cz/
+  - popis: >-
+      Blog Krkonošské boudy — poloha pod Studničnou horou, historie „od
+      konce 19. století" (načteno 26. 7. 2026)
+    url: https://www.krkonosskeboudy.cz/2015/07/chata-pod-studnicnou.html
+  - popis: >-
+      Externí katalog turistických chat ČR/SK (2026) — celoroční provoz,
+      výška (kompilace, jistota A; bez veřejné URL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chata-pod-studnicnou.yaml (externí katalog ČR/SK) 26. 7. 2026 na základě rozhodnutí Michala o rozšíření klíče zařazení (DATA-25). Verdikt „zůstává kandidátem" z 25. 7. (veřejné občerstvení nedoloženo — „z celé dávky nejprůkazněji") tím revidován: nocleh se stravou je turistická služba, nedoložená veřejnost občerstvení se přiznává, nevyřazuje.
+  DVĚ DOMÉNY: podstudnicnoukct.cz (uvádí KČT; ze sandboxu se nenačte — robots/timeout, NEOBCHÁZET) × chatapodstudnicnou.cz (vlastní, dostupná). Do kontaktů vzata KČT doména jako od správce.
+  ČASOVANÁ INFORMACE: nájemní smlouva nájemce do 28. 2. 2031 (kct.cz) — provozní údaje vázané na nájemce.
+  K dotažení (DATA-04 / Michal): veřejnost občerstvení (jde ověřit i přes KČT, ne jen telefonátem na chatu — čísla v kontaktech), GPS s pramenem, starší jméno chaty a rok stavby (KČT archiv? vlastivědná literatura), hero fotka po GPS. Známka: v oficiálním seznamu vydavatele ani v sadě od Michala není.

@@ -1,0 +1,160 @@
+# Erlebachova bouda — profil povýšen z kandidáta externího katalogu ČR/SK
+# 26. 7. 2026. Povýšení umožnilo rozhodnutí Michala z téhož dne (rozšíření
+# klíče zařazení, DATA-25): bouda slouží turistům (nocleh, restaurace
+# s veřejnou otvírací dobou); výslovná věta o obsluze neubytovaných chybí
+# a profil to přiznává. Vše verified: false.
+
+nazev: Erlebachova bouda
+slug: erlebachova-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: objekt nebyl v OSM exportu DATA-01 a katalog
+# souřadnice nenese — doplnit s pramenem, nedomýšlet.
+vyska: 1150
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    Kudy z nudy (načteno 26. 7. 2026), doslova: „Erlebachova bouda se
+    nachází na horském hřebeni v Krkonošském národním parku ve výšce
+    1 150 m n. m., asi šest kilometrů od centra Špindlerova Mlýna".
+    Výška 1150 m shodně externí katalog ČR/SK (2026). GPS nedoložena.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita ZÁMĚRNĚ NEVYPLNĚNA — žádný otevřený pramen nedává číslo lůžek
+# samotné Erlebachovy boudy (resort má čtyři budovy a čísla by se slévala).
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Kudy z nudy (načteno 26. 7. 2026): „Celý resort Sv. Františka nabízí
+    možnost ubytování ve čtyřech různých budovách" — ubytování doloženo,
+    kapacita samotné Erlebachovy boudy nikde; nesčítat resort do jednoho
+    čísla (poučení Výrovka a Richtrovy).
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Restaurace Panorama s veřejnou otvírací dobou doložena; výslovná věta
+# o obsluze neubytovaných chybí — přiznáno, nedomýšleno (metodické poučení
+# z 25. 7.: první, volnější čtení webu si „přístup pro veřejnost"
+# DOMYSLELO a cílený dotaz na doslovnou citaci ho vyvrátil).
+kuchyne: ano
+typObcerstveni: restaurace
+otviraciDoba: >-
+  restaurace denně 11:00–21:00 podle vlastního webu boudy (načteno
+  25. 7. 2026); zda platí i pro neubytované, doloženo nemáme
+overeniObcerstveni:
+  source: >-
+    vlastní web boudy (erlebachovabouda.cz/info, otevřeno 25. 7. 2026),
+    doslova: „Polopenzi je možno objednat min. 24 hodin předem, ale
+    nezoufejte naše á la carte restaurace Panorama je otevřena denně
+    a rádi Vás obsloužíme z našeho jídelního lístku.", „Restaurace funguje
+    denně od 11:00- 21:00", „Rezervace pro méně než 6 osob neumožňujeme."
+    Kudy z nudy: „Panoramatická restaurace Erlebachovy boudy je ojedinělým
+    místem s úžasným výhledem a skvělou kuchyní". VÝSLOVNÁ věta o obsluze
+    neubytovaných NIKDE — na přímý dotaz s únikovou formulkou vrátilo
+    čtení stránky „TAKOVÁ VĚTA NA STRÁNCE NENÍ" (25. 7. 2026). Otázka na
+    telefonát (DATA-04).
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku nese letopočet z JEDINÉHO sekundárního pramene (Kudy z nudy);
+# próza ho připisuje a nevydává za doložený. Po kom se bouda jmenuje,
+# žádný načtený pramen neříká.
+rokVzniku: 1784
+milniky:
+  - rok: 1784
+    udalost: >-
+      Podle Kudy z nudy tu bouda stojí od tohoto roku — „kdysi skromné
+      útočiště pro poutníky"
+overeniHistorie:
+  source: >-
+    Kudy z nudy (načteno 26. 7. 2026), doslova: „Erlebachova bouda tu
+    stojí už od roku 1784 — kdysi skromné útočiště pro poutníky, dnes
+    stylový horský resort". JEDINÝ pramen, sekundární, bez dokladu — próza
+    připisuje, nevydává za doložené (obdoba Lyžařské boudy a roku 1717).
+    Po kom se bouda jmenuje, pramen neříká.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.erlebachovabouda.cz/
+sezona: celoročně # externí katalog ČR/SK (jistota A); vlastním dotazem neověřeno
+overeniProvoz:
+  source: >-
+    vlastní web boudy živý (otevřeno 25. 7. 2026); provoz celoročně dle
+    externího katalogu ČR/SK (2026, jistota A; původní zdroje
+    krkonose.eu/krkonosske-boudy, kct.cz). Bouda je součástí resortu
+    Svatý František — Kudy z nudy doslova: „Hotel Erlebachova bouda
+    (resort Sv. František - Erlebachova a Josefova bouda)" a „Další
+    možností je kouzelná Josefova bouda, romantická chata hotelového typu
+    v alpském stylu". Telefon a e-mail jsme z pramenů nevytěžili —
+    nezapisují se.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda na hřebeni nad Špindlerovým Mlýnem (1 150 m), dnes hotelová část
+  resortu Svatý František. Podle Kudy z nudy tu stojí od roku 1784, kdy
+  bývala skromným útočištěm pro poutníky. Restaurace Panorama má otevřeno
+  denně od jedenácti do devíti večer — jestli obslouží i neubytované, se
+  nám ale doložit nepodařilo.
+text:
+  - >-
+    Erlebachova bouda stojí podle Kudy z nudy na horském hřebeni
+    v Krkonošském národním parku ve výšce 1 150 metrů, zhruba šest
+    kilometrů od centra Špindlerova Mlýna. Dnes je hotelovou částí
+    resortu Svatý František, který nabízí ubytování ve čtyřech budovách —
+    vedle Erlebachovy k němu patří i Josefova bouda, kterou týž pramen
+    popisuje jako romantickou chatu hotelového typu v alpském stylu.
+  - >-
+    O minulosti boudy víme jednu větu, zato starou: podle Kudy z nudy tu
+    bouda stojí už od roku 1784 a bývala skromným útočištěm pro poutníky.
+    Ten letopočet nese jediný pramen a bez dokladu, uvádíme ho proto
+    s připsáním, ne jako doloženou jistotu. Po kom bouda dostala jméno,
+    žádný z načtených pramenů neříká — a my se to domýšlet nepokoušíme.
+  - >-
+    Dnešní provoz je hotelový. Vlastní web zve na á la carte restauraci
+    Panorama s denním provozem od jedenácti dopoledne do devíti večer;
+    polopenzi je podle něj třeba objednat aspoň den předem a rezervace
+    stolu přijímají až od šesti osob. Otvírací doba zní veřejně — ale
+    výslovnou větu, že restaurace obslouží i turistu, který v resortu
+    nespí, jsme na webu nenašli. Nebudeme ji domýšlet: kdo jde po hřebeni
+    kolem, ať s obědem raději počítá jen po vlastním ověření.
+  - >-
+    Výška i celoroční provoz pocházejí z katalogových pramenů, historie
+    a popis resortu z Kudy z nudy, provoz restaurace z vlastního webu
+    boudy — a vlastním dotazem jsme zatím neověřili nic. Souřadnice boudy
+    nemáme doloženy z žádného pramene, proto ji na mapě neukazujeme;
+    kapacitu neuvádíme, protože prameny popisují resort jako celek a číslo
+    pro samotnou Erlebachovu boudu nikde nepadlo.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nesbírali
+# (DATA-02 běžela nad objekty s GPS). Doplnit po doložení souřadnic.
+
+zdroje:
+  - popis: >-
+      Web boudy (erlebachovabouda.cz) — restaurace Panorama, otvírací
+      doba, penze (otevřeno 25. 7. 2026)
+    url: https://www.erlebachovabouda.cz/
+  - popis: >-
+      Kudy z nudy — rok 1784, poloha a výška, resort Svatý František,
+      Josefova bouda (načteno 26. 7. 2026)
+    url: https://www.kudyznudy.cz/aktivity/erlebachova-bouda-v-krkonosich
+  - popis: >-
+      Externí katalog turistických chat ČR/SK (2026) — výška, celoroční
+      provoz (kompilace, jistota A; bez veřejné URL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/erlebachova-bouda.yaml (externí katalog ČR/SK) 26. 7. 2026 na základě rozhodnutí Michala o rozšíření klíče zařazení (DATA-25). Verdikt „zůstává kandidátem" z 25. 7. tím revidován — materiál beze změny, změnil se klíč.
+  METODICKÉ POUČENÍ z kandidáta (zůstává v platnosti pro celý korpus): první, volnější čtení webu 25. 7. tvrdilo, že restaurace Panorama je veřejně přístupná — byl to DOMYŠLENÝ závěr čtecího nástroje, ne slova stránky; cílený dotaz na doslovnou citaci ho vyvrátil. Tvrzení „slouží i veřejnosti" nikdy nepřebírat bez vyžádané doslovné citace.
+  RESORT SVATÝ FRANTIŠEK: čtyři budovy (Kudy z nudy), z nich jmenovitě známe Josefovu boudu. Podle precedentu Dvoračky × Štumpovka (rozhodnutí Michala 21. 7.) by KAŽDÁ budova resortu s turistickou službou měla mít vlastní profil — Josefova bouda je adept na kandidáta; do otázek pro Michala (střádají se na konec Krkonoš).
+  Vizitka CZ-2933 (Wander Book) existuje v katalogu — bez svolení Wander Booku se nepoužívá (DATA-13 filtruje). Známka v oficiálním seznamu vydavatele není.
+  K dotažení (DATA-04 / Michal): veřejnost restaurace (telefonát), kapacita samotné boudy, GPS s pramenem, po kom se bouda jmenuje (rešerše — jméno Erlebach je nejspíš rodové, ale bez pramene se nevyslovuje), hero fotka po GPS.
