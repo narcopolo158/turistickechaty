@@ -1,0 +1,169 @@
+# Medvědí bouda — profil povýšen z kandidáta DATA-01 (OSM) 26. 7. 2026.
+# Povýšení umožnilo rozhodnutí Michala z téhož dne (rozšíření klíče zařazení,
+# DATA-25): bouda s turistickou službou v minulosti se uvádí i tehdy, když
+# dnes veřejnosti neslouží — s poctivou poznámkou. Restaurace je podle obou
+# webů boudy jen pro ubytované; svědectví z léta 2025 (borůvkové knedlíky
+# bez noclehu) ale říká, že to nebývalo pravidlo odjakživa. Obojí přiznáno.
+# Vše verified: false — z webů boudy a OSM, vlastním dotazem neověřeno.
+
+nazev: Medvědí bouda
+slug: medvedi-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno); výška a poloha z vlastního webu.
+lat: 50.7605785
+lng: 15.5873295
+vyska: 1060
+obec: Špindlerův Mlýn # adresa „Špindlerův Mlýn 84" z webu boudy — poštovní pramen (sémantika pole: DATA-20)
+overeniLokace:
+  source: >-
+    vlastní web boudy (medvedibouda.cz/onas.html, načteno 26. 7. 2026),
+    doslova: „Bouda se nachází nad nejznámějším krkonošským městečkem
+    Špindlerův Mlýn v nadmořské výšce 1060 m na úbočí známého vrcholu
+    Medvědín mezi potoky Dvorským a Medvědím" a „Vzdálenost od středu
+    městečka činí čtyři a půl kilometru". Adresa dle druhého webu boudy
+    (medvedi-bouda.cz, načteno 26. 7. 2026): „Špindlerův Mlýn 84, 543 51
+    Špindlerův Mlýn". GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/27594740 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 145 # web: „až pro 145 hostů" — horní mez dle vlastního webu
+overeniNocleh:
+  source: >-
+    vlastní web boudy (medvedibouda.cz/onas.html, načteno 26. 7. 2026),
+    doslova: „Bouda poskytuje přístřeší až pro 145 hostů." POZOR: starší
+    kandidátský záznam zmiňoval i čísla 110 a 120 „dle různých zdrojů",
+    ale bez uvedení, kterých — nedoložená čísla se nepřebírají (poučení
+    DATA-17: nedoložená věta v poznámkách se stává pramenem). Rozpis
+    pokojů web neuvádí.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Restaurace existuje, ale podle obou webů boudy slouží JEN ubytovaným.
+# Klíč zařazení naplňuje turistická služba boudy (nocleh + historie
+# služby návštěvníkům hor) dle rozhodnutí Michala 26. 7. 2026 (DATA-25).
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    vlastní web boudy (medvedibouda.cz/onas.html, načteno 26. 7. 2026),
+    doslova: „Naše restaurace je v současné době otevřena pouze pro
+    ubytované hosty. Ostatním turistům bohužel z kapacitních důvodů
+    restaurační služby nenabízíme." Druhý web boudy (medvedi-bouda.cz,
+    hlavní stránka, načteno téhož dne): „Pro naše ubytované hosty nabízíme
+    útulnou horskou restauraci s domácí kuchyní." PROTI TOMU svědectví
+    Michala (zapsáno 26. 7. 2026): v létě 2025 si na boudě dali borůvkové
+    knedlíky, aniž byli ubytovaní — restaurace tehdy obsloužila
+    i neubytované. Formulace „v současné době" naznačuje dočasné opatření;
+    co platí letos, nevíme — rozpor přiznán v próze, nerozhodnut.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN: web datuje vznik jen „na počátku 19. století"
+# a přestavbu „v 70. letech minulého století" — ani jedno není letopočet
+# a dopočítávat se nesmí. milniky ze stejného důvodu nejsou.
+overeniHistorie:
+  source: >-
+    vlastní weby boudy (načteno 26. 7. 2026): medvedi-bouda.cz doslova
+    „Medvědí bouda se řadí mezi krkonošské horské boudy se zajímavou
+    historií. Vznikla na počátku 19. století jako zařízení tzv. budního
+    hospodářství, avšak již spojeného s ubytováním pro návštěvníky hor.";
+    medvedibouda.cz/onas.html k přestavbě doslova: „Do dnešní podoby, jež
+    se mnoho neliší od původní, byla vcelku zdařile přestavěna v 70.
+    letech minulého století". Původ jména web nevysvětluje; bouda stojí
+    podle téhož webu na úbočí Medvědína.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Bouda má DVĚ živé webové adresy (medvedi-bouda.cz i medvedibouda.cz);
+# která je hlavní, nevíme — do kontaktů jde jedna, druhá je ve zdrojích.
+# Otvírací doba ani sezóna nejsou doloženy — nezapisují se.
+kontakty:
+  web: https://www.medvedi-bouda.cz/
+overeniProvoz:
+  source: >-
+    oba weby boudy živé k 26. 7. 2026 (medvedi-bouda.cz i
+    medvedibouda.cz — týž objekt, adresa Špindlerův Mlýn 84); telefon,
+    e-mail, otvírací dobu ani výslovnou sezónu jsme z nich nevytěžili,
+    nezapisují se. Provozovatel nedoložen.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda nad Špindlerovým Mlýnem (1 060 m) na úbočí Medvědína, s kořeny
+  v budním hospodářství počátku 19. století a s přístřeším až pro 145
+  hostů. Restaurace podle vlastního webu slouží v současné době jen
+  ubytovaným — ještě v létě 2025 tu ale borůvkové knedlíky dostali
+  i hosté, kteří v boudě nespali.
+text:
+  - >-
+    Medvědí bouda stojí podle vlastních stránek nad Špindlerovým Mlýnem
+    v nadmořské výšce 1 060 metrů, na úbočí Medvědína mezi Dvorským
+    a Medvědím potokem. Od středu městečka ji dělí čtyři a půl kilometru.
+    Jméno sdílí s vrcholem, na jehož svahu stojí; proč se tak jmenuje, web
+    boudy nevysvětluje a my se to domýšlet nepokoušíme.
+  - >-
+    O své minulosti říká bouda dvě věci. Vznikla na počátku 19. století
+    jako zařízení takzvaného budního hospodářství — podle vlastního webu
+    ale už tehdy spojeného s ubytováním pro návštěvníky hor, takže
+    turistům slouží prakticky od začátku. A do dnešní podoby, která se
+    prý od té původní mnoho neliší, byla přestavěna v sedmdesátých letech
+    minulého století. Přesnější letopočty web neuvádí, a tak je neuvádíme
+    ani my.
+  - >-
+    Dnes bouda nabízí přístřeší až pro 145 hostů a restauraci s domácí
+    kuchyní. U té je ale třeba říct věc, kterou návštěvník zvenku pozná
+    až přede dveřmi: web boudy výslovně píše, že restaurace je
+    „v současné době" otevřena pouze pro ubytované a ostatním turistům
+    restaurační služby z kapacitních důvodů nenabízí. Nebývalo to tak
+    vždycky — při naší návštěvě v létě 2025 tu borůvkové knedlíky dostali
+    i hosté bez noclehu. Co z toho platí právě letos, nevíme; kdo jde
+    kolem a počítá s obědem, měl by si to ověřit předem.
+  - >-
+    Otvírací dobu, sezónu ani kontakty kromě webových adres se nám
+    z dostupných pramenů doložit nepodařilo — bouda má ostatně webové
+    stránky hned na dvou adresách a která z nich je ta hlavní, poznat
+    neumíme. Výška, kapacita i historie pocházejí z vlastní prezentace
+    boudy a vlastním dotazem jsme je zatím neověřili; souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: kandidáti z Commons jsou připraveni v
+# data/kandidati/fotky/krkonose/medvedi-bouda.yaml — výběr a licenční
+# kontrola na stránce souboru se dělá ručně, nasadí se dodatečně.
+
+zdroje:
+  - popis: >-
+      Web boudy (medvedibouda.cz, stránka O nás) — výška, poloha,
+      kapacita, historie, restaurace jen pro ubytované (načteno
+      26. 7. 2026)
+    url: https://www.medvedibouda.cz/onas.html
+  - popis: >-
+      Druhý web boudy (medvedi-bouda.cz) — adresa, historie, restaurace
+      pro ubytované (načteno 26. 7. 2026)
+    url: https://www.medvedi-bouda.cz/
+  - popis: >-
+      Svědectví Michala (zapsáno 26. 7. 2026) — v létě 2025 restaurace
+      obsloužila i neubytované (borůvkové knedlíky)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+    url: https://www.openstreetmap.org/way/27594740
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/medvedi-bouda.yaml (DATA-01, OSM) 26. 7. 2026 na základě rozhodnutí Michala o rozšíření klíče zařazení (DATA-25): bouda s turistickou službou v minulosti se uvádí i bez dnešní veřejné služby, s poctivou poznámkou. Předchozí verdikty „nepovyšovat" (25. 7. — restaurace jen pro ubytované; přeověřeno 26. 7. ráno) tím revidovány.
+  ROZPOR vedený otevřeně: oba weby boudy říkají „restaurace jen pro ubytované" (jeden s dovětkem „v současné době"), svědectví Michala z léta 2025 říká, že tehdy obsloužili i neubytované. Nerozhodnuto; telefonát (DATA-04) to může uzavřít — otázka: „obsloužíte i neubytovaného turistu?"
+  DVĚ DOMÉNY: medvedi-bouda.cz (novější prezentace) i medvedibouda.cz (starší, obsahově bohatší — O nás). Obě živé 26. 7. 2026; do kontaktů vzata první, druhá ve zdrojích. Která je hlavní, nedoloženo.
+  KAPACITA: 145 z vlastního webu („až pro 145 hostů"). Čísla 110/120 ze starého kandidátského záznamu byla bez pramene — nepřevzata (poučení DATA-17 o nedoložených větách v poznámkách).
+  Turistická známka č. 1274 (Medvědí bouda) je v oficiálním seznamu vydavatele z července 2026 (DATA-22) — ale katalog znamky-vizitky.csv řádek pro ni nemá, takže data10 kartu sběratelských míst nevyrobí; doplnění katalogu vedeno v DATA-22. Kde se známka prodává, nevíme.
+  K dotažení (DATA-04 / další rešerše): telefon a e-mail, otvírací doba, sezóna, provozovatel, rok vzniku a přesnější historie (web mlčí), hero fotka (kandidáti z Commons připraveni), stav restaurace pro veřejnost letos.

@@ -11,8 +11,8 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 
 ## Souhrn
 
-- **Publikováno:** 42
-- **Kandidáti k doplnění:** 43 — z toho Tier 1 (známka + katalog) 1, Tier 2 (jen známka) 2, Tier 3 (jen katalog) 6, Tier 4 (jen OSM) 34
+- **Publikováno:** 46 *(aktualizováno 26. 7. 2026 — povýšeny Richtrovy boudy, Medvědí bouda, Chata Rozhled a Pražská bouda po rozšíření klíče zařazení, DATA-25)*
+- **Kandidáti k doplnění:** 39 — z toho Tier 1 (známka + katalog) 0, Tier 2 (jen známka) 0, Tier 3 (jen katalog) 5, Tier 4 (jen OSM) 34
 - **Vyřazeno** (nezakládat): 10
 - Objektů se známkou: 35 · v ChatGPT katalogu: 42 · katalogových Krkonoš celkem: 42
 - **Katalog je od 25. 7. 2026 pokrytý celý** — poslední objekt, který nám z něj chyběl (Schronisko PTTK „Nad Łomniczką"), je nově kandidátem. Pokrytí znamená jen „víme o něm", ne „ověřeno".
@@ -38,14 +38,14 @@ Navíc **7 našich publikovaných** chat v katalogu není: Chata U Jirky, Dvorsk
 |---|---|---|---|---|
 | 🇨🇿 Richtrovy Boudy | č.1602 | ✓ 1206 m | 1136 m | obsluhovana |
 
-**Pokus o povýšení 26. 7. 2026 — NEPOVÝŠENO, blokuje klíč zařazení.** Rešerše doložila
-(primární pramen ÚZSVM): areál byl 27. 11. 2020 předán **Policejnímu prezidiu** jako
-školicí středisko bezpečnostních sborů, firemní zápis je vedený jako **neaktivní**
-a všechny stránky popisující veřejnou restauraci jsou nedatované, nejspíš z éry NIDV
-(před převodem). Zda restaurace slouží veřejnosti dnes — na čemž stojí klíč zařazení —
-doloženo není; protiznak: známka č. 1602 je i ve vydavatelově seznamu z července 2026.
-Materiál na profil je v kandidátovi připravený; rozhodne telefonát (DATA-04) nebo
-Michal. Bez toho se z Tier 1 pokračovat nedá — další na řadě je Tier 2.
+~~**Pokus o povýšení 26. 7. 2026 (ráno) — NEPOVÝŠENO, blokuje klíč zařazení.**~~
+**POVÝŠENO 26. 7. 2026 večer** — Michal týž den rozšířil klíč zařazení (DATA-25:
+bouda s turistickou minulostí se uvádí i bez dnešní veřejné služby, s poctivou
+poznámkou). Profil `data/chaty/krkonose/richtrovy-boudy.yaml` nese celou vlastnickou
+linku (1946 Obchodní akademie → 1950 ministerstvo školství → NIDV/NPI → 2020
+Policejní prezidium), přiznává nedoložený dnešní veřejný provoz i rozpory (výška
+1136 × 1206 m; čtyři čísla kapacity — žádné nezapsáno). Ranní rešerše je celá
+zachycená v kandidátovi.
 
 ### Tier 2 — jen známka (katalog je nemá — přesto reálné boudy)
 
@@ -54,12 +54,13 @@ Michal. Bez toho se z Tier 1 pokračovat nedá — další na řadě je Tier 2.
 | 🇨🇿 Chata Rozhled | č.14 | — | — | obsluhovana |
 | 🇨🇿 Medvědí bouda | č.1274 | — | — | obsluhovana |
 
-**Přeověřeno 26. 7. 2026 — ani jedna nepovýšena, obě drží klíč zařazení.** Chata
-Rozhled: vlastní web i ceskehory.cz popisují bufet a jídelnu s penzí, ale **žádný
-pramen neříká, komu bufet slouží** — brána z 25. 7. („nepovyšovat, dokud nebude
-věta") trvá. Medvědí bouda: web dnes doslova „Pro naše ubytované hosty nabízíme
-útulnou horskou restauraci" — **restaurace dál jen pro ubytované**, klíč nesplněn;
-nově vytěžena historická věta pro budoucí profil. Obě rozhodne telefonát (DATA-04).
+~~**Přeověřeno 26. 7. 2026 (ráno) — ani jedna nepovýšena, obě drží klíč zařazení.**~~
+**OBĚ POVÝŠENY 26. 7. 2026 večer** po rozšíření klíče zařazení (DATA-25). Chata
+Rozhled: profil přiznává, že komu bufet slouží, žádný pramen neříká; kapacita
+nezapsána (26 × 55 × rozpis 24). Medvědí bouda: profil nese rozpor „restaurace jen
+pro ubytované" (oba weby) × svědectví Michala z léta 2025 (borůvkové knedlíky bez
+noclehu) — nerozhodnuto, přiznáno v próze. Telefonáty (DATA-04) zůstávají cestou
+k rozhodnutí obou otázek, povýšení na nich už neviselo.
 
 **Pozn. 26. 7. 2026 — tabulky tierů zastaraly proti DATA-22:** oficiální seznam
 vydavatele doložil známku č. 2249 u **Pražské boudy** (v tabulce níž vedena v Tier 3
@@ -77,7 +78,7 @@ kandidát je od Benecka) — Hubertka tier nemění.
 | 🇨🇿 Chata Pod Studničnou | — | ✓ 890 m | 890 m | — |
 | 🇨🇿 Erlebachova bouda | — | ✓ 1150 m | 1150 m | — |
 | 🇨🇿 Hrnčířské boudy | — | ✓ 1150 m | 1150 m | — |
-| 🇨🇿 Pražská bouda | — | ✓ 1115 m | 1115 m | — |
+| ~~🇨🇿 Pražská bouda~~ | č.2249 | ✓ 1115 m | 1115 m | obsluhovana — **POVÝŠENA 26. 7. 2026** (podle DATA-22 měla známku, patřila fakticky do Tier 1) |
 | 🇨🇿 Raisova chata na Zvičině | — | ✓ 671 m | 671 m | — |
 | 🇵🇱 Schronisko PTTK „Nad Łomniczką" | — | ✓ 1002 m | 1002 m | obsluhovana |
 

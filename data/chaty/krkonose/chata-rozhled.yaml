@@ -1,0 +1,175 @@
+# Chata Rozhled — profil povýšen z RUČNÍHO kandidáta (dohledán zpětně přes
+# turistickou známku č. 14, kterou dodal Michal) 26. 7. 2026.
+# Povýšení umožnilo rozhodnutí Michala z téhož dne (rozšíření klíče
+# zařazení, DATA-25): chata slouží turistům (nocleh s penzí, celodenní
+# bufet) a jediné, co doloženo není, je veřejnost bufetu — to se přiznává,
+# nevyřazuje. Vše verified: false — z webu chaty a katalogů, vlastním
+# dotazem neověřeno.
+
+nazev: Chata Rozhled
+slug: chata-rozhled
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: objekt nebyl v OSM exportu DATA-01 a souřadnice
+# zatím nemáme doloženy — nedomýšlet z mapy od stolu; doplnit s pramenem.
+# Výška 1207 m se shoduje třikrát: vlastní web, katalog České hory
+# i rytina turistické známky č. 14.
+vyska: 1207
+obec: Strážné
+overeniLokace:
+  source: >-
+    vlastní web chaty (chatarozhled.cz, načteno 25. a 26. 7. 2026):
+    „Nadmořská výška 1207 m zaručuje čisté ovzduší"; poloha nad obcí
+    Strážné. Katalog České hory (ceskehory.cz, načteno 26. 7. 2026):
+    „nadmořská výška: 1207 m", „Objekt se nachází v chráněné zoně klidu
+    Krnapu - Přední Rennerovky". Týž údaj nese rytina turistické známky
+    č. 14 „Chata Rozhled, Krkonoše, 1207 m n.m." (Turistické známky
+    s.r.o.; číslo ověřeno z fyzické známky, obrázek dodal Michal).
+    GPS nedoložena — v OSM exportu DATA-01 objekt nebyl.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita ZÁMĚRNĚ NEVYPLNĚNA — tři neslučitelná čísla: 26 lůžek
+# (České hory), 55 lůžek (cztip.cz), přičemž rozpis pokojů na cztip.cz
+# (7×2 + 2×3 + 1×4) dává 24. Vlastní web kapacitu neuvádí vůbec.
+# Rozpor přiznán v próze, nerozhodnuto.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    vlastní web chaty (chatarozhled.cz, načteno 26. 7. 2026): „Polopenze,
+    či plná penze je domácího typu." — ubytování s penzí. Katalog České
+    hory (načteno 26. 7. 2026): „kapacita: 26 lůžek", „Pokoje jsou
+    většinou dvoulůžkové, standartně vybavené", „Koupelny, umývárny
+    a toalety jsou společné - po renovaci". ROZPOR KAPACITY: 26 (České
+    hory) × 55 (cztip.cz, jehož vlastní rozpis pokojů 7×2 + 2×3 + 1×4
+    dává 24) × vlastní web číslo neuvádí — nic se nezapisuje.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Bufet je doložený z webu chaty; KOMU slouží (jen hostům, nebo
+# i kolemjdoucím), žádný pramen neříká — přiznáno v próze, nedomýšleno.
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    vlastní web chaty (chatarozhled.cz, načteno 25. a 26. 7. 2026),
+    doslova: „Bufet s nápoji a sladkostmi v provozu po celý den.", „Na
+    chatě naleznete původní dřevěnou jídelnu s kachlovými kamny.",
+    „Jednoduché domácí prostředí i typicky česká jídla, s posezením
+    u kachlových kamen". Katalog České hory: „bufet s nápoji a malým
+    občerstvením", „jídelna (služby jsou s plnou nebo polopenzí)".
+    ŽÁDNÝ pramen neříká, zda bufet slouží i neubytovaným — klíčová
+    otázka pro telefonát (DATA-04), v próze přiznáno.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: žádný z dosažitelných pramenů
+# nenese k historii chaty jediný letopočet. Web chaty říká jen to, že jde
+# o roubenou chalupu (viz overeniLokace/Obcerstveni) — stáří nedoloženo.
+overeniHistorie:
+  source: >-
+    vlastní web chaty (chatarozhled.cz, načteno 25. 7. 2026), doslova:
+    „jedna z posledních roubených, zachovaných, chaloupek ve Východních
+    Krkonoších" — tvrzení chaty o sobě samé, bez data a bez dokladu.
+    Žádný letopočet historie se z dosažitelných pramenů doložit
+    nepodařilo.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.chatarozhled.cz/
+autem: >-
+  V létě je podle katalogu České hory možné dojet autem až k chatě;
+  v zimě se parkuje na hlídaném parkovišti ve Strážném a hosté jsou
+  k chatě přepravováni rolbou, zhruba tři kilometry.
+overeniPristup:
+  source: >-
+    katalog České hory (ceskehory.cz, načteno 26. 7. 2026), doslova:
+    „V létě možnost dojetí autem k chatě, v zimě je ve Strážném hlídané
+    parkoviště a hosté jsou přepravováni rolbou - 3km".
+  verified: false
+  checked: '2026-07-26'
+overeniProvoz:
+  source: >-
+    vlastní web chaty (chatarozhled.cz) živý k 26. 7. 2026; bufet
+    „v provozu po celý den" (viz overeniObcerstveni). Telefon, e-mail,
+    otvírací dobu ani výslovnou sezónu jsme z pramenů nevytěžili —
+    nezapisují se. Provozovatel: firemní katalog Hotely Penziony vede
+    zápis „Zdenka Štroblová - Chata Rozhled, Strážné" (jen titulek
+    z vyhledávání, stránka neotevřena — NEPŘEBÍRAT do prózy bez otevření).
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Roubená chata nad Strážným ve výšce 1 207 metrů, v klidové zóně
+  národního parku na Předních Rennerovkách. Sama o sobě říká, že je
+  jednou z posledních zachovaných roubenek ve východních Krkonoších.
+  Nabízí nocleh s domácí penzí a celodenní bufet — komu přesně bufet
+  slouží, se nám ale doložit nepodařilo.
+text:
+  - >-
+    Chata Rozhled stojí nad obcí Strážné v nadmořské výšce 1 207 metrů —
+    to číslo se vzácně shoduje ve všech pramenech, které máme, včetně
+    rytiny turistické známky. Katalog České hory ji klade do chráněné
+    klidové zóny Krkonošského národního parku na Přední Rennerovky. Sama
+    o sobě chata na svém webu píše, že je jednou z posledních roubených
+    zachovaných chaloupek ve východních Krkonoších; jak je stará, ovšem
+    neříká, a žádný letopočet její historie jsme jinde doložit nedokázali.
+  - >-
+    Uvnitř popisuje vlastní web původní dřevěnou jídelnu s kachlovými
+    kamny, jednoduché domácí prostředí a typicky česká jídla; ubytování
+    je s polopenzí nebo plnou penzí domácího typu. K tomu chata uvádí
+    bufet s nápoji a sladkostmi v provozu po celý den. Jednu podstatnou
+    věc ale žádný pramen neříká: zda bufet obslouží i turistu, který
+    v chatě nespí. Nechceme ji domýšlet — kdo jde kolem, měl by počítat
+    s tím, že jistotu občerstvení tu zatím slíbit neumíme.
+  - >-
+    Na kapacitě se prameny neshodnou způsobem, který stojí za zaznamenání:
+    katalog České hory uvádí 26 lůžek, server cztip 55 — a jeho vlastní
+    rozpis pokojů přitom dává jen 24. Vlastní web chaty číslo neuvádí
+    vůbec, a tak kapacitu neuvádíme ani my.
+  - >-
+    Přístup je podle katalogu České hory v létě možný autem až k chatě;
+    v zimě se nechává vůz na hlídaném parkovišti ve Strážném a hosty
+    vozí k chatě rolba, zhruba tři kilometry. Souřadnice chaty zatím
+    nemáme doloženy z žádného pramene, proto ji na mapě neukazujeme —
+    raději prázdné místo než odhad. Všechny údaje pocházejí z webu chaty
+    a z katalogů a vlastním dotazem jsme je zatím neověřili.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nesbírali
+# (DATA-02 běžela nad objekty s GPS; Rozhled ji nemá). Doplnit po
+# doložení souřadnic.
+
+zdroje:
+  - popis: >-
+      Web chaty (chatarozhled.cz) — výška, roubenka, bufet, jídelna,
+      penze (načteno 25. a 26. 7. 2026)
+    url: https://www.chatarozhled.cz/
+  - popis: >-
+      Katalog České hory — výška, Přední Rennerovky, kapacita 26 lůžek,
+      bufet a jídelna, letní příjezd a zimní rolba (načteno 26. 7. 2026)
+    url: https://www.ceskehory.cz/ubytovani/horska-chata-rozhled-strazne.html
+  - popis: >-
+      Katalog turistických známek (Turistické známky s.r.o.) — známka
+      č. 14 „Chata Rozhled, Krkonoše, 1207 m n.m."; číslo ověřeno
+      z fyzické známky (obrázek dodal Michal)
+  - popis: >-
+      Server cztip — kapacita 55 lůžek s rozpisem pokojů 7×2 + 2×3 + 1×4
+      (rozpor, viz overeniNocleh)
+    url: https://www.cztip.cz/cs/1788-horska-chata-rozhled
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chata-rozhled.yaml (RUČNÍ kandidát — zpětné dohledání přes známku č. 14) 26. 7. 2026 na základě rozhodnutí Michala o rozšíření klíče zařazení (DATA-25). Verdikty „zůstává kandidátem" z 25. 7. a z rána 26. 7. (bufet doložen, veřejnost ne) tím revidovány — materiál beze změny, změnil se klíč.
+  NEZAMĚŇOVAT s „Jiráskovou turistickou chatou s rozhlednou" na Kladském pomezí (Náchodsko) — jiný objekt, vyloučen už v kandidátovi.
+  ROZPORY vedené otevřeně: kapacita 26 × 55 (× rozpis 24) — nic nezapsáno; veřejnost bufetu nedoložena (otázka na telefonát DATA-04: „obsloužíte i neubytovaného?").
+  GPS CHYBÍ — objekt nebyl v OSM exportu; doplnit s pramenem (OSM tagování prověřit, případně mapy). Bez GPS zatím ani fotokandidáti DATA-02.
+  Provozovatel: titulek Hotely Penziony uvádí „Zdenka Štroblová - Chata Rozhled" — stránka neotevřena, nepřebráno.
+  Známka č. 14: obrázek připraven v data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c14-chata-rozhled.png → nasadit přes DATA-13 (public/znamky/chata-rozhled.png + manifest); katalog znamky-vizitky.csv řádek pro č. 14 NEMÁ (kandidát byl dohledán až po jeho vzniku) — doplnění katalogu vedeno v DATA-22, bez něj kartu sběratelských míst data10 nevyrobí.

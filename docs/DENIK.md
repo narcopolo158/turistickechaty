@@ -11,6 +11,75 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — pokračování 5: klíč zařazení rozšířen o turistickou minulost → povýšena celá držená čtveřice (46 publikovaných profilů)
+
+**Zadání Michala:** *„všechny boudy, které sloužily turistům i v minulosti (a teď tomu
+tak není), bych uvedl, jen u nich bude poznámka, že neslouží veřejnosti. ale třeba na
+Medvědí jsme si minulé léto dávali borůvkové knedlíky a nebydleli jsme tam. zbytek si
+ověřím, ty pracuj samostatně dál podle plánu, otázky mi dej až na konci — až uzavřeš
+Krkonoše."*
+
+**Hotovo:**
+
+**Klíč zařazení rozšířen (DATA-25, zapsáno v plan.md §Taxonomie):** rozhoduje služba
+turistům v celé historii objektu, ne jen dnes; kdo dnes veřejnosti neslouží, dostane
+poctivou poznámku, ne vyřazení. Mimo průvodce zůstávají jen čisté pronájmy bez
+turistické služby kdykoli v historii. Tvoje svědectví z Medvědí (borůvkové knedlíky
+v létě 2025 bez noclehu) je zapsané v profilu jako datovaný pramen — a stojí v próze
+vedle dnešní věty webu „jen pro ubytované": nerozhodnuto, přiznáno.
+
+**Povýšena celá čtveřice držená na staré bráně — korpus má 46 publikovaných profilů:**
+
+**Medvědí bouda (č. 1274):** 1 060 m na úbočí Medvědína, až 145 hostů (vlastní web),
+kořeny v budním hospodářství počátku 19. století „již spojeného s ubytováním pro
+návštěvníky hor", přestavba v 70. letech. rokVzniku záměrně prázdný (web nedává
+letopočet). Bouda má dvě živé webové domény — obě ve zdrojích, poznámka v profilu.
+Kandidátská čísla kapacity 110/120 „dle různých zdrojů" byla bez pramene — nepřevzata.
+
+**Richtrovy boudy (č. 1602):** jediná položka Tier 1; ranní verdikt „nepovyšovat"
+revidován novým klíčem, materiál beze změny. Profil nese celou vlastnickou linku
+(1946 Obchodní akademie → 1950 ministerstvo školství → NIDV/NPI → 27. 11. 2020
+Policejní prezidium, primární pramen ÚZSVM), šest milníků, a hlavně poctivý třetí
+odstavec: školicí středisko bezpečnostních sborů, firemní zápis neaktivní, popisy
+restaurace předpřevodové — ale známka je i v letošním seznamu vydavatele, takže úplně
+uzavřený svět to nejspíš není. Rozpory přiznány: výška 1136 × 1206 m, čtyři čísla
+kapacity (žádné nezapsáno).
+
+**Chata Rozhled (č. 14):** roubenka nad Strážným, 1 207 m — číslo se vzácně shoduje
+ve třech pramenech včetně rytiny známky. Bufet doložen, komu slouží, neříká nikdo —
+próza to přiznává. Kapacita nezapsána (26 × 55 × rozpis 24). GPS nemáme — na mapě
+se neukazuje, „raději prázdné místo než odhad".
+
+**Pražská bouda (č. 2249):** horský hotel na křižovatce mezi Pecí, Černou horou
+a Černým Dolem, 1 115 m, 24 pokojů, restaurace s barem a otvíračkou 11–22 denně
+(firemní katalog) — výslovná věta o neubytovaných ale nikde, přiznáno. `obec`
+přepsána na adresní **Černý Důl** (katalogová „Pec pod Sněžkou" neměla oporu) —
+exponát DATA-20. Historie nedoložena vůbec a profil to říká nahlas.
+
+**Známky nasazeny (24 z Michalova zipu je na webu, 0 čeká):** kotouče 14, 1274
+a 1602 zkopírovány do public/, manifest i katalog doplněny ručně po vzoru
+stávajících záznamů. **Při tom druhý úlovek třídy DATA-24 → DATA-26:** zkušební
+regenerace katalogu přes `data10` by **smazala šest ručně kurátorovaných známek
+a tři degradovala** — JSON není čistě generovaný soubor, nese kurátorská data,
+která vstupní CSV nemá. Vráceno z HEAD, čtyři nové záznamy doplněny ručně;
+data10 se do rozhodnutí (merge / CSV jako zdroj pravdy / zámek) nepouští naostro.
+A ještě rozpor: fyzický kotouč Modrokamenné nese **č. 2640**, oficiální seznam
+**2540** — dvě čísla z téhož vydavatele, ověřit u něj.
+
+**Měření:** `npm run kontrola` zelené — 46 souborů, validator CHYB 0, `audit-mech`
+A–F nula, `kolize-jmen` nula (210 souborů / 91 objektů), fixtura 4/4. `ban-scan`
+**129 → 137**, doměřeno soubor po souboru: +8 = přesně nové profily (Medvědí 3,
+Richtrovy 3, Rozhled 1, Pražská 1), všechno zdokumentované trvalé falešné poplachy
+(ODbL připsání OpenStreetMap, slovo „souřadnice" ve vzoru GPS). Žádná nová třída.
+
+**Příště (směr „uzavřít Krkonoše"):** Tier 3 — Chata Pod Studničnou, Erlebachova
+bouda, Hrnčířské boudy, Raisova chata na Zvičině (pozor: Zvičina je Podkrkonoší —
+posoudit příslušnost k pilotu), Nad Łomniczką; pak Tier 4 (34 OSM kandidátů,
+hodně vyřazování); pak DATA-25 bod (a) — projít 10 vyřazených novým klíčem.
+Otázky pro Michala se střádají a dostane je najednou, až se Krkonoše uzavřou.
+
+---
+
 ## 2026-07-26 — pokračování 4: Tier 2 přeověřen — Rozhled, Medvědí ani Pražská klíčem neprošly; všechny čtyři držené kandidáty teď rozhodne telefonát
 
 **Zadání Michala:** „pokracuj tier 2."

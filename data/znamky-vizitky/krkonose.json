@@ -1,6 +1,6 @@
 {
   "zdroj": "Turistické známky (Turistické známky s.r.o., Rýmařov) a turistické vizitky / Wander Card (Wander Book) — katalog ChatGPT nad oficiálními seznamy vydavatelů, verified:false. Jen číslo + odkaz + fakt; obrázky se nepřebírají (autorské dílo — jen se svolením).",
-  "pocetChat": 33,
+  "pocetChat": 37,
   "chaty": [
     {
       "slug": "chata-dvoracky",
@@ -554,6 +554,66 @@
           "stav": "vedeno v oficiálním seznamu",
           "jistota": "A",
           "poznamka": "číslo ověřeno z fyzické známky; kotouč nese 1400 m, shodně s výškou v profilu (kudyznudy.cz 1 400 m) — zdroje se přitom rozcházejí (1396 / 1390 m), rozpor je zapsán v profilu. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
+        }
+      ]
+    },
+    {
+      "slug": "chata-rozhled",
+      "nazev": "Chata Rozhled",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "14",
+          "nazev": "Chata Rozhled - Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/rozhled-c14",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky (obrázek dodal Michal, 22. 7. 2026) a položka 14 oficiálního seznamu vydavatele (červenec 2026, DATA-22); URL viděna ve výsledcích vyhledávání 26. 7. 2026 (ověřit klikem)"
+        }
+      ]
+    },
+    {
+      "slug": "medvedi-bouda",
+      "nazev": "Medvědí bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "1274",
+          "nazev": "Medvědí bouda",
+          "url": "https://www.turisticke-znamky.cz/znamky/medvedi-bouda-c1274",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky (zip od Michala, 22. 7. 2026) a položka 1274 oficiálního seznamu vydavatele (červenec 2026, DATA-22); odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
+        }
+      ]
+    },
+    {
+      "slug": "prazska-bouda",
+      "nazev": "Pražská bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "2249",
+          "nazev": "Pražská bouda, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/prazska-bouda-krkonose-c2249",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "B",
+          "poznamka": "položka 2249 oficiálního seznamu vydavatele (červenec 2026, DATA-22); odkaz na detail sestaven dle vzoru webu, neověřen (ověřit klikem)"
+        }
+      ]
+    },
+    {
+      "slug": "richtrovy-boudy",
+      "nazev": "Richtrovy boudy",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "1602",
+          "nazev": "Richtrovy boudy",
+          "url": "https://www.turisticke-znamky.cz/znamky/richtrovy-boudy-c1602",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "položka 1602 oficiálního seznamu vydavatele (červenec 2026, DATA-22); URL viděna ve výsledcích vyhledávání 26. 7. 2026, detail se ze sandboxu nenačte (ověřit klikem)"
         }
       ]
     }

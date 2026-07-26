@@ -1,0 +1,175 @@
+# Pražská bouda — profil povýšen z kandidáta externího katalogu ČR/SK
+# 26. 7. 2026. Povýšení umožnilo rozhodnutí Michala z téhož dne (rozšíření
+# klíče zařazení, DATA-25). Restaurace s barem je doložená, výslovná věta
+# o obsluze neubytovaných chybí — přiznáno v próze. Historie boudy se
+# nepodařilo doložit vůbec — profil to říká nahlas, nedomýšlí.
+# Vše verified: false — z katalogů a portálů, vlastním dotazem neověřeno.
+
+nazev: Pražská bouda
+slug: prazska-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: bouda nebyla v OSM exportu DATA-01 a externí
+# katalog souřadnice nenese — doplnit s pramenem, nedomýšlet.
+# obec: adresu „Černý Důl 215" nesou shodně dva zápisy (firemní katalog,
+# Kudy z nudy); externí katalog vedl „Pec pod Sněžkou", ale bez viditelné
+# opory — pole proto nese adresní hodnotu. Sémantika pole se řeší
+# v DATA-20 (bouda stojí na křižovatce katastrů, exponát tam už je).
+vyska: 1115
+obec: Černý Důl
+overeniLokace:
+  source: >-
+    ceskehory.cz (načteno 26. 7. 2026), doslova: „Horský hotel Pražská
+    bouda najdete na známé křižovatce mezi Pecí pod Sněžkou, Černou Horou
+    a Černým Dolem, ve výšce 1115 metrů nad mořem." Kudy z nudy (načteno
+    26. 7. 2026): „na hřebenu hor, kousek od sjezdovky Mulda a celého
+    Lyžařského areálu Skipec"; adresa „Černý Důl 215, 543 44 Černý Důl"
+    — tutéž adresu vede i firemní katalog Firmy.cz. Výška 1115 m se
+    shoduje s externím katalogem ČR/SK (2026). ROZPOR OBCE: externí
+    katalog uváděl „Pec pod Sněžkou" bez viditelné opory; adresní prameny
+    shodně Černý Důl — pole přepsáno na adresní hodnotu 26. 7. 2026,
+    rozpor zůstává zaznamenán (DATA-20).
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita LŮŽEK se NEZAPISUJE: Kudy z nudy uvádí 24 dvoulůžkových pokojů
+# s možností přistýlek — lůžka bychom z toho museli dopočítat, a to se
+# nedělá (poučení Výrovka). Zapsán počet pokojů.
+nocleh: ano
+pokoje: 24
+overeniNocleh:
+  source: >-
+    Kudy z nudy (načteno 26. 7. 2026), doslova: „24 dvoulůžkovými
+    pokojích s možností dvou přistýlek. Sociální zařízení je společné na
+    patře." a „Součástí každého pokoje je také koupelnový kout vybavený
+    umyvadlem, zrcadlem a poličkou." Ceskehory.cz souhlasně: „Svým hostům
+    nabízíme zázemí ve více než dvou desítkách pokojů a také vlastní
+    horskou restauraci a bar." Kapacita lůžek se nedopočítává.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Restaurace a bar doloženy třemi prameny; komu slouží, výslovně neříká
+# žádný — přiznáno v próze. Otvírací doba z firemního katalogu.
+kuchyne: ano
+typObcerstveni: restaurace
+otviraciDoba: >-
+  restaurace denně 11:00–22:00 podle firemního katalogu (načteno
+  26. 7. 2026); zda platí i pro neubytované, doloženo nemáme
+overeniObcerstveni:
+  source: >-
+    firemní katalog Firmy.cz (načteno 26. 7. 2026): samostatný zápis
+    „Pražská bouda - Restaurace" v kategoriích „Hotelové restaurace"
+    a „Restaurace", otvírací doba 11:00–22:00 každý den, popis doslova
+    „Provozujeme restauraci a bar." Kudy z nudy: „stylová restaurace
+    s letní terasou". Ceskehory.cz: „Kromě příjemné restaurace
+    a typického horského baru u nás najdete kulečník, deskové hry,
+    knihovnu i saunu." a „Přímo v budově máme sál s kapacitou 100 lidí
+    a menší salónek pro 40 účastníků." VÝSLOVNÁ věta o obsluze
+    neubytovaných NIKDE — otázka pro telefonát (DATA-04); pozor na
+    exponát Medvědí boudy (hotelová restaurace může být jen pro hosty).
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: k historii boudy se nepodařilo
+# doložit vůbec nic — žádný letopočet, žádný pramen. Jméno „Pražská"
+# svádí k domněnkám; bez pramene se nevyslovují.
+overeniHistorie:
+  source: >-
+    K historii boudy jsme v dosažitelných pramenech (weby katalogů, Kudy
+    z nudy, firemní katalog; hledáno 25. a 26. 7. 2026) nenašli jediný
+    doložený údaj — ani rok vzniku, ani okolnosti jména. Zapsáno jako
+    „hledali jsme a nenašli", ne jako „historie neexistuje".
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.prazskabouda.cz/
+sezona: celoročně # externí katalog ČR/SK (jistota B); vlastním dotazem neověřeno
+overeniProvoz:
+  source: >-
+    Externí katalog turistických chat ČR/SK (2026) — jistota B; provoz
+    celoročně; původní zdroje katalogu: krkonose.eu/krkonosske-boudy,
+    kct.cz. Vlastní web boudy (prazskabouda.cz) se ze sandboxu nepodařilo
+    otevřít (25. i 26. 7. 2026) — NEOTEVŘEN, kontakty kromě webové adresy
+    proto nezapisujeme. Firemní zápis restaurace na Firmy.cz je AKTIVNÍ
+    (na rozdíl od exponátu Richtrových bud).
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hotel na známé křižovatce cest mezi Pecí pod Sněžkou, Černou
+  horou a Černým Dolem, ve výšce 1 115 metrů u sjezdovky Mulda. Má přes
+  dvacet pokojů, restauraci s barem a letní terasou a sál pro sto lidí.
+  O historii boudy jsme zatím nedoložili vůbec nic — a říkáme to raději
+  rovnou, než abychom si ji domýšleli.
+text:
+  - >-
+    Pražská bouda stojí podle katalogu České hory na známé křižovatce
+    mezi Pecí pod Sněžkou, Černou horou a Černým Dolem, ve výšce 1 115
+    metrů nad mořem; Kudy z nudy ji klade na hřeben, kousek od sjezdovky
+    Mulda. Adresou patří k Černému Dolu — starší katalogový podklad ji
+    vedl pod Pecí pod Sněžkou, ale bez viditelné opory, takže se držíme
+    adresy. Na křižovatce katastrů je to rozdíl, který stojí za přiznání.
+  - >-
+    Provozem je to horský hotel. Kudy z nudy popisuje čtyřiadvacet
+    dvoulůžkových pokojů s možností přistýlek, koupelnovým koutem na
+    pokoji a společným sociálním zařízením na patře. K tomu podle katalogu
+    České hory patří vlastní restaurace s barem, sál s kapacitou sto
+    lidí a menší salónek, kulečník, deskové hry, knihovna i sauna; Kudy
+    z nudy přidává letní terasu. Externí katalog vede provoz jako
+    celoroční.
+  - >-
+    U restaurace je třeba říct jednu věc na rovinu. Firemní katalog ji
+    vede jako samostatný podnik s otvírací dobou od jedenácti dopoledne
+    do deseti večer, každý den — jenže výslovnou větu, že tu obslouží
+    i turistu, který v hotelu nespí, jsme nenašli nikde. A protože známe
+    v Krkonoších i boudu, jejíž restaurace slouží jen ubytovaným, nebudeme
+    to domýšlet: kdo jde kolem a počítá s obědem, ať si to raději předem
+    ověří.
+  - >-
+    O minulosti boudy neumíme doložit vůbec nic — ani rok vzniku, ani
+    to, jak přišla ke svému jménu. Hledali jsme, nenašli; to není totéž
+    jako tvrdit, že žádná historie není, a jakmile se pramen objeví,
+    doplníme ji. Souřadnice boudy zatím doloženy nemáme, proto ji na
+    mapě neukazujeme. Vlastní web boudy se nám opakovaně nepodařilo
+    otevřít, takže všechno výše pochází z katalogů a portálů a vlastním
+    dotazem jsme zatím neověřili nic.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nesbírali
+# (DATA-02 běžela nad objekty s GPS; Pražská ji nemá). Doplnit po
+# doložení souřadnic.
+
+zdroje:
+  - popis: >-
+      Kudy z nudy — pokoje, restaurace s terasou, poloha u sjezdovky
+      Mulda, adresa (načteno 26. 7. 2026)
+    url: https://www.kudyznudy.cz/aktivity/hotel-prazska-bouda-v-cernem-dole
+  - popis: >-
+      Katalog České hory — křižovatka, výška 1115 m, restaurace a bar,
+      sál a vybavení (načteno 26. 7. 2026)
+    url: https://www.ceskehory.cz/ubytovani/popis/prazska-bouda-pec-pod-snezkou.html
+  - popis: >-
+      Firemní katalog Firmy.cz — samostatný zápis restaurace, otvírací
+      doba denně 11–22, adresa Černý Důl (načteno 26. 7. 2026)
+    url: https://www.firmy.cz/detail/12956698-prazska-bouda-restaurace-cerny-dul.html
+  - popis: >-
+      Externí katalog turistických chat ČR/SK (2026) — výška, celoroční
+      provoz, stravování (kompilace, jistota B; bez veřejné URL)
+  - popis: >-
+      Web boudy (prazskabouda.cz) — NEOTEVŘEN (ze sandboxu se nenačte);
+      uveden jako kontakt, ne jako pramen
+    url: https://www.prazskabouda.cz/
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/prazska-bouda.yaml (externí katalog ČR/SK) 26. 7. 2026 na základě rozhodnutí Michala o rozšíření klíče zařazení (DATA-25). Verdikty „zůstává kandidátem" z 25. 7. a z rána 26. 7. tím revidovány — materiál beze změny, změnil se klíč.
+  Podle DATA-22 má bouda známku č. 2249 (oficiální seznam vydavatele, červenec 2026) — fakticky tedy byla Tier 1 (známka + katalog), ač ji master fronta vedla v Tier 3; katalog znamky-vizitky.csv pro ni vede jen vizitku CZ-5981 (Wander Book — bez svolení se nepoužívá) a řádek známky 2249 CHYBÍ; doplnění katalogu vedeno v DATA-22, bez něj data10 kartu sběratelských míst nevyrobí.
+  ROZPORY A MEZERY vedené otevřeně: obec Pec pod Sněžkou (katalog, bez opory) × Černý Důl (adresa ve dvou zápisech) — pole přepsáno na adresní hodnotu, exponát DATA-20; veřejnost restaurace nedoložena (otvíračka 11–22 denně na Firmy.cz je nejsilnější signál; otázka na telefonát DATA-04); historie nedoložena vůbec; GPS chybí; kapacita lůžek nedopočítávána z 24×2.
+  K dotažení (DATA-04 / Michal): web v prohlížeči (sandbox ho nenačte), telefonát — veřejnost restaurace; GPS s pramenem; historie (samostatná rešerše — knižní prameny?); hero fotka po doložení GPS.

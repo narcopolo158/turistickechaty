@@ -1,0 +1,233 @@
+# Richtrovy boudy — profil povýšen z kandidáta DATA-01 (OSM) 26. 7. 2026.
+# Povýšení umožnilo rozhodnutí Michala z téhož dne (rozšíření klíče
+# zařazení, DATA-25): bouda s turistickou službou v minulosti se uvádí
+# i tehdy, když dnes veřejnosti neslouží — s poctivou poznámkou. Tady je ta
+# poznámka zásadní: areál od 27. 11. 2020 patří Policejnímu prezidiu jako
+# školicí středisko a veřejný provoz po převodu doložen není.
+# Vše verified: false — z pramenů (ÚZSVM, weby), vlastním dotazem neověřeno.
+
+nazev: Richtrovy boudy # OSM neslo tvar „Richtrovy Boudy"; malé b píše vydavatel známek, treking i ÚZSVM
+slug: richtrovy-boudy
+zeme: cz
+typ: obsluhovana
+stav: v-provozu # areál je v provozu — ale jako školicí středisko; veřejná služba nedoložena (viz próza)
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). ROZPOR VÝŠKY: OSM 1136 m, kdežto
+# treking.cz, ceskehory.cz i externí katalog shodně 1206 m — ty tři si ale
+# mohou opisovat. Pole nese hodnotu z OSM (odkud profil vzešel), rozpor je
+# přiznaný v próze. Nerozhodnuto.
+lat: 50.7096873
+lng: 15.6993935
+vyska: 1136
+obec: Pec pod Sněžkou # adresa „Richtrovy boudy č. p. 81" z webu města — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    ÚZSVM (uzsvm.gov.cz, 27. 11. 2020, primární pramen), doslova: „Areál,
+    který leží v Krkonošském národním parku v turisticky vyhledávané
+    lokalitě nad Pecí pod Sněžkou na cestě na Výrovku, tvoří dvě budovy -
+    Richtrova a Červená bouda." Ceskehory.cz (načteno 26. 7. 2026):
+    „Richtrovy boudy se nachází ve II. zóně Krkonošského národního parku
+    nad městem Pec pod Sněžkou. V klidném místě v nadmořské výšce
+    1206m.n.m". Adresa dle webu města Pece pod Sněžkou (sdružení SČRP,
+    načteno 26. 7. 2026): „Richtrovy boudy č. p. 81 542 21 Pec pod
+    Sněžkou". GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/958304121 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). ROZPOR VÝŠKY
+    1136 (OSM) × 1206 m (treking.cz, ceskehory.cz, externí katalog) —
+    nerozhodnuto, přiznáno v próze.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# nocleh ani kapacita se NEZAPISUJÍ: ubytování je doloženo jen z pramenů,
+# které popisují éru před převodem na Policejní prezidium (2020), a čísla
+# se rozcházejí čtyřmi způsoby. Dnešní nabídka veřejnosti nedoložena.
+overeniNocleh:
+  source: >-
+    ČTYŘI RŮZNÁ ČÍSLA KAPACITY, žádné nezapsáno: (a) Kudy z nudy „bouda
+    s 50 lůžky v 18 pokojích"; (b) ceskehory.cz „Ubytovací kapacita je 77
+    lůžek na hlavní budově a 29 lůžek na 300m vzdálené depandanci Červené
+    boudě." (součet dvou budov se nezapisuje — poučení Výrovka);
+    (c) treking.cz „Ubytovací kapacita přes 100 lůžek"; (d) firemní
+    katalog Firmy.cz „106 beds in 34 rooms" — týž zápis ale nese
+    poznámku, že firma nebo pobočka UŽ NENÍ AKTIVNÍ. Prameny (b)–(d) jsou
+    spolu konzistentní, pokud (d) sčítá obě budovy; (a) může být jiná éra
+    nebo jen hlavní budova. Všechny popisují stav před převodem 2020.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# kuchyne/typObcerstveni se NEZAPISUJÍ: restauraci popisují jen nedatované
+# stránky z éry před převodem (ceskehory vede objekt jako „účelové zařízení
+# NIDV" — instituce zaniklé sloučením do NPI). Dnešní stav nedoložen.
+overeniObcerstveni:
+  source: >-
+    treking.cz (načteno 26. 7. 2026; stránka má rozbité kódování, citace
+    rekonstruována): „Restaurace je zaměřená na tradiční české
+    a krkonošské speciality". Ceskehory.cz: „Restaurace zaměřená na
+    tradiční české a krkonošské speciality - oceněné certifikací
+    CzechSpecial regional, zpestřené o naše pečivo a koláče." Oba prameny
+    jsou nedatované a ceskehory.cz objekt vede jako „účelové zařízení
+    NIDV" — tedy popis éry před převodem na Policejní prezidium (2020).
+    Zda restaurace dnes existuje a komu slouží, NEDOLOŽENO.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN: ÚZSVM datuje hlavní budovu jen „před rokem
+# 1911" a „první zmínka z 80. let 18. století" (Kudy z nudy) patří boudám
+# na místě, ne dnešní stavbě. Ani jedno není letopočet stavby — nedopočítávat
+# (poučení Kolínská: zmínka o místě ≠ stavba budovy).
+milniky:
+  - rok: 1934
+    udalost: >-
+      Červená bouda, dnešní depandance areálu, byla postavena na místě
+      původního domu
+  - rok: 1938
+    udalost: Objekt vyhořel
+  - rok: 1946
+    udalost: Boudu získala Obchodní akademie Dr. Beneše z Prahy
+  - rok: 1950
+    udalost: >-
+      Bouda se stala majetkem tehdejšího ministerstva školství, věd
+      a umění; ve školství pak zůstala přes sedmdesát let
+  - rok: 2000
+    udalost: >-
+      Začaly stavební úpravy hlavní budovy, které trvaly do roku 2008;
+      Červená bouda prošla úpravou už v letech 1999 až 2000
+  - rok: 2020
+    udalost: >-
+      27. listopadu předal stát areál Policejnímu prezidiu jako školicí
+      středisko pro příslušníky bezpečnostních sborů
+overeniHistorie:
+  source: >-
+    ÚZSVM (uzsvm.gov.cz, 27. 11. 2020, primární pramen), doslova:
+    „Richtrova bouda byla postavena před rokem 1911 a v letech 2000 až
+    2008 probíhaly její stavební úpravy.", „Červená bouda byla postavena
+    v roce 1934 na místě původního domu a stavebně byla upravena v letech
+    1999 až 2000.", „Úřad pro zastupování státu ve věcech majetkových
+    (ÚZSVM) v Trutnově předal areál Richtrových bud v Peci pod Sněžkou
+    včetně přilehlých pozemků, vybavení a lyžařských vleků Policejnímu
+    prezidiu České republiky.", „Policejní prezidium využije areál
+    Richterových bud jako školicí středisko pro příslušníky bezpečnostních
+    sborů." (překlep „Richterových" je pramene) a „ÚZSVM převzal tento
+    areál od Národního pedagogického institutu České republiky". Kudy
+    z nudy (načteno 26. 7. 2026), doslova: „První zmínka o Richtrových
+    boudách pochází z 80. let 18. století", „V roce 1938 objekt vyhořel",
+    „V roce 1946 získala boudu Obchodní akademie Dr. Beneše z Prahy
+    a v roce 1950 se stala majetkem tehdejšího ministerstva školství, věd
+    a umění", „Jedná se o majetek Policejního prezidia".
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Telefon z OSM — může být po převodu mrtvý; web se ze sandboxu nenačte
+# (20. 7. rozbité HTTPS, 26. 7. nepuštěn). Obojí vedeno s výhradou.
+kontakty:
+  telefon: +420 499 896249
+  web: https://www.richtrovyboudy.cz/
+overeniProvoz:
+  source: >-
+    telefon a web: OpenStreetMap
+    https://www.openstreetmap.org/node/958304121 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0; po převodu areálu (2020) mohou být zastaralé,
+    vlastním dotazem neověřeno. Web richtrovyboudy.cz se ze sandboxu
+    nenačetl 20. 7. 2026 (rozbité HTTPS, self-signed certifikát) ani
+    26. 7. 2026 — NEOTEVŘEN. Firemní zápis na Firmy.cz (načteno
+    26. 7. 2026) nese poznámku, že firma nebo pobočka už není aktivní.
+    Dnešní účel areálu dle ÚZSVM: školicí středisko bezpečnostních sborů.
+    Známka objektu je přitom i v oficiálním seznamu známkových míst
+    vydavatele z července 2026 — nějaká forma veřejného prodeje tedy
+    nejspíš trvá; kde, nevíme.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Areál dvou bud nad Pecí pod Sněžkou na cestě na Výrovku, s turistickou
+  minulostí sahající před rok 1911 — a podle první zmínky o boudách na
+  tomhle místě až do 80. let 18. století. Po desetiletích ve službách
+  školství patří od listopadu 2020 Policejnímu prezidiu jako školicí
+  středisko; zda dnes něco nabízí i veřejnosti, doloženo nemáme.
+text:
+  - >-
+    Richtrovy boudy stojí ve druhé zóně Krkonošského národního parku nad
+    Pecí pod Sněžkou, na cestě k Výrovce. Areál tvoří podle Úřadu pro
+    zastupování státu ve věcech majetkových dvě budovy — Richtrova bouda
+    a tři sta metrů vzdálená Červená bouda — a k nim víceúčelové hřiště,
+    garáž a lyžařské vleky. Na výšce se prameny neshodnou: mapová data
+    uvádějí 1 136 metrů, kdežto dva turistické weby a externí katalog
+    shodně 1 206 — a protože si ta trojice může opisovat, nerozhodujeme
+    a uvádíme obojí.
+  - >-
+    Minulost má areál delší, než by se z dnešního stavu zdálo. První
+    zmínka o boudách na tomhle místě pochází podle Kudy z nudy z 80. let
+    18. století; dnešní hlavní budova byla podle státního úřadu postavena
+    před rokem 1911. V roce 1938 objekt vyhořel. Po válce začala dlouhá
+    školská kapitola: v roce 1946 boudu získala Obchodní akademie
+    Dr. Beneše z Prahy, v roce 1950 připadla ministerstvu školství
+    a školám a jejich institucím pak sloužila přes sedmdesát let —
+    naposledy Národnímu pedagogickému institutu. Červená bouda, dnešní
+    depandance, vyrostla v roce 1934 na místě staršího domu; obě budovy
+    prošly kolem přelomu tisíciletí stavebními úpravami.
+  - >-
+    Zlom přišel 27. listopadu 2020, kdy stát areál předal Policejnímu
+    prezidiu jako školicí středisko pro příslušníky bezpečnostních
+    sborů. A tady musí být průvodce upřímný: co to znamená pro turistu,
+    který jde kolem, nevíme. Firemní zápis objektu je veden jako
+    neaktivní, popisy restaurace s krkonošskými specialitami a ubytování
+    — prameny uvádějí čtyři různé kapacity od 50 do zhruba stovky lůžek —
+    pocházejí vesměs z doby před převodem a novější doklad o službě
+    veřejnosti jsme nenašli. Turistická známka areálu přitom v letošním
+    seznamu vydavatele zůstává, takže úplně uzavřený svět to nejspíš
+    není. Kdo sem míří s představou občerstvení nebo noclehu, měl by
+    počítat s tím, že jde o objekt bezpečnostních sborů, a ověřit si stav
+    předem.
+  - >-
+    Web boudy se nám opakovaně nepodařilo otevřít a telefonní číslo
+    pochází z mapových dat, takže po změně majitele nemusí platit.
+    Historie stojí na tiskové zprávě státního úřadu a na Kudy z nudy,
+    dnešní provoz na firemním rejstříku — vlastním dotazem jsme zatím
+    neověřili nic. Souřadnice jsou z OpenStreetMap (© přispěvatelé
+    OpenStreetMap, ODbL) a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: kandidáti z Commons připraveni v
+# data/kandidati/fotky/krkonose/richtrovy-boudy.yaml — výběr a licenční
+# kontrola se dělá ručně, nasadí se dodatečně.
+
+zdroje:
+  - popis: >-
+      ÚZSVM — tisková zpráva o předání areálu Policejnímu prezidiu
+      (27. 11. 2020): dvě budovy, datace staveb, účel školicího střediska
+    url: https://www.uzsvm.gov.cz/richtrovy-boudy-v-krkonosich-uz-patri-policejnimu-prezidiu
+  - popis: >-
+      Kudy z nudy — první zmínka z 80. let 18. století, požár 1938,
+      školská éra od 1946, majetek Policejního prezidia (načteno
+      26. 7. 2026)
+    url: https://www.kudyznudy.cz/aktivity/rychtrovy-boudy-v-peci-pod-snezkou
+  - popis: >-
+      České hory — poloha ve II. zóně, výška 1206 m, kapacita obou budov,
+      restaurace (nedatováno; objekt veden jako účelové zařízení NIDV,
+      tedy popis éry před převodem)
+    url: https://www.ceskehory.cz/ubytovani/popis/richtrovy-boudy-pec-pod-snezkou.html
+  - popis: >-
+      Treking.cz — výška 1206 m, kapacita přes 100 lůžek, restaurace
+      (nedatováno; načteno 26. 7. 2026)
+    url: https://www.treking.cz/chaty/richtrovy-boudy.htm
+  - popis: >-
+      Firemní katalog Firmy.cz — 106 lůžek ve 34 pokojích; zápis veden
+      jako neaktivní (načteno 26. 7. 2026)
+  - popis: >-
+      Oficiální seznam známkových míst vydavatele (Turistické známky
+      s.r.o.), export z července 2026 — položka Richtrovy boudy v něm
+      trvá (filtrovaný seznam bez veřejné URL, viz DATA-22)
+  - popis: OpenStreetMap (GPS, telefon, web; ODbL)
+    url: https://www.openstreetmap.org/node/958304121
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/richtrovy-boudy.yaml (DATA-01, OSM) 26. 7. 2026 na základě rozhodnutí Michala o rozšíření klíče zařazení (DATA-25): bouda s turistickou minulostí se uvádí i bez dnešní veřejné služby, s poctivou poznámkou. Ranní verdikt „NEPOVYŠOVAT" z téhož dne tím revidován — materiál rešerše je beze změny, změnil se klíč.
+  Jediná položka Tier 1 master fronty (známka č. 1602 + katalog). Vizitka CZ-2524 existovala a byla dle katalogu znamky-vizitky.csv „vyřazena z projektu v roce 2022" — do profilu nejde (vizitky čekají na svolení Wander Booku, DATA-13 je filtruje).
+  ROZPORY vedené otevřeně: výška 1136 (OSM) × 1206 m (tři možná si opisující prameny); kapacita 50/18 × 77+29 × „přes 100" × 106/34 (všechna čísla z éry před převodem — žádné nezapsáno). Stav restaurace a noclehu po převodu na Policejní prezidium NEDOLOŽEN; protiznak: známka v seznamu vydavatele z července 2026 trvá.
+  stav: v-provozu zvoleno vědomě — areál je v provozu (školicí středisko), jen nedoloženě pro veřejnost; próza to říká výslovně. Kdyby Michal rozhodl jinak (mimo-provoz z pohledu turisty), přepsat i prózu.
+  K dotažení (DATA-04 / Michal): telefonát nebo web v prohlížeči — slouží dnes areál nějak veřejnosti (občerstvení, nocleh, prodej známky)? Kde se prodává známka č. 1602? Hero fotka (kandidáti z Commons připraveni). Výška proti výškopisu.

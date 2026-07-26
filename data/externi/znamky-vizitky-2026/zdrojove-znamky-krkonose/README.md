@@ -20,11 +20,12 @@ manifestu (`obrazky.json`) jsou u nově doplněných čísel **sestaveny podle v
 webu** (`…/znamky/<slug>-c<číslo>`), protože ze sandboxu web neproklikneme.
 **Číslo** je ověřené z fyzické známky; **odkaz** je k ověření klikem.
 
-## Stav (26 známek) — aktualizováno 25. 7. 2026
+## Stav (26 známek) — aktualizováno 26. 7. 2026
 
-Souhrn: **21 nasazeno**, **3 čekají na povýšení chaty**, **2 vyloučeny**.
+Souhrn: **24 nasazeno**, **0 čeká na povýšení chaty**, **2 vyloučeny** — z toho
+Modrokamenná je od 26. 7. 2026 přehodnocena na kandidáta (viz její řádek níž).
 
-### ✅ Publikováno — obrázek nasazen na profilu (21)
+### ✅ Publikováno — obrázek nasazen na profilu (24)
 Obrázek je v `public/znamky/<slug>.png`, záznam v katalogu (`krkonose.json`)
 i v manifestu (`obrazky.json`).
 
@@ -32,6 +33,7 @@ i v manifestu (`obrazky.json`).
 |----|-----------------|-------|--------------|
 | 12 | Chata Výrovka | 1356 m | `vyrovka` |
 | 13 | Chalupa Na Rozcestí | 1349 m | `chalupa-na-rozcesti` |
+| 14 | Chata Rozhled | 1207 m | `chata-rozhled` — **nasazeno 26. 7. 2026** (povýšena po rozšíření klíče DATA-25) |
 | 19 | Osada Rezek · Jeruzalém | — | `chata-rezek` (známka pro osadu — vazba k prověření) |
 | 22 | Dvoračky · Štumpovka | 1140 m | `chata-dvoracky` (sdílená známka; po povýšení Štumpovky zvážit přeřazení) |
 | 75 | Růžohorky | 1250 m | `bouda-ruzohorky` (známka pro osadu i boudu — vazba k prověření) |
@@ -42,9 +44,11 @@ i v manifestu (`obrazky.json`).
 | 673 | Pomezní Boudy · Malá Úpa | 1050 m | `pomezni-bouda` (známka pro sedlo/osadu — vazba k prověření) |
 | 674 | Martinova bouda | 1300 m | `martinova-bouda` |
 | 675 | Portášky | 1050 m | `portasky` |
+| 1274 | Medvědí bouda | — | `medvedi-bouda` — **nasazeno 26. 7. 2026** (povýšena po rozšíření klíče DATA-25) |
 | 1336 | Lysečinská bouda | — | `lysecinska-bouda` |
 | 1347 | Tetřeví Boudy | — | `tetrevi-boudy` |
 | 1367 | Horská bouda Jelenka | 1260 m | `jelenka` |
+| 1602 | Richtrovy boudy | — | `richtrovy-boudy` — **nasazeno 26. 7. 2026** (povýšeny po rozšíření klíče DATA-25; areál od 2020 Policejního prezidia, viz profil) |
 | 1719 | Kolínská bouda · Pec pod Sněžkou | 1117 m | `kolinska-bouda` (číslo opravil Michal 22. 7.) |
 | 1873 | Moravská bouda | 1225 m | `moravska-bouda` |
 | 2012 | Bouda u Bílého Labe (Špindlerův Mlýn) | — | `bouda-bile-labe` |
@@ -52,24 +56,19 @@ i v manifestu (`obrazky.json`).
 | 2210 | Lyžařská bouda · Liščí louka | 1206 m | `lyzarska-bouda` |
 | 3092 | Bouda Klínovka | 1227 m | `nova-klinovka` |
 
-### 🕓 Kandidát — obrázek připraven, čeká na povýšení chaty (3)
-Chatu máme mezi kandidáty (`data/kandidati/krkonose/`), ale publikovaná není.
-Až se povýší, stačí: zkopírovat obrázek → `public/znamky/<slug>.png`, přidat řádek
-do `obrazky.json` a známku do `krkonose.json`. Dřív ne — filtr `jeStazitelna`
-(DATA-13) pracuje jen s publikovanými chatami.
-
-| č. | název na známce | výška | cílový kandidát | proč ještě čeká |
-|----|-----------------|-------|-----------------|-----------------|
-| 14 | Chata Rozhled | 1207 m | `chata-rozhled` | veřejné občerstvení NEDOLOŽENO — web zmiňuje jen „Bufet s nápoji a sladkostmi v provozu po celý den.", neříká komu (ověřeno 25. 7. 2026) |
-| 1274 | Medvědí bouda | — | `medvedi-bouda` | klíč zařazení NESPLNĚN — web: „Naše restaurace je v současné době otevřena pouze pro ubytované hosty." (ověřeno 25. 7. 2026); formulace „v současné době" → přeověřit |
-| 1602 | Richtrovy boudy | — | `richtrovy-boudy` | rešerše zatím neproběhla (fronta Tier 1) |
+### 🕓 Kandidát — obrázek připraven, čeká na povýšení chaty (0)
+Sekce vyprázdněna 26. 7. 2026 — všechny tři čekající známky (14, 1274, 1602)
+byly nasazeny s povýšením svých chat po rozšíření klíče zařazení (DATA-25).
+Postup pro příště zůstává: zkopírovat obrázek → `public/znamky/<slug>.png`,
+přidat řádek do `obrazky.json` a známku do `krkonose.json`. Dřív ne — filtr
+`jeStazitelna` (DATA-13) pracuje jen s publikovanými chatami.
 
 ### ⛔ Vyloučeno — známkové místo ano, ale ne chata do průvodce (2)
 
 | č. | název na známce | výška | proč ne |
 |----|-----------------|-------|---------|
 | 2027 | Medvědín | 1235 m | vrchol / horní stanice lanovky Špindl — není bouda (region-krkonose.cz, kudyznudy.cz „lanová dráha Medvědín") |
-| 2640 | Modrokamenná bouda | — | *rodinný penzion* v Janských Lázních (modrokamennabouda.cz); dle klíče „penzion bez doloženého veřejného občerstvení → ne". Rozhodne Michal, kdyby chtěl přehodnotit. |
+| 2640 | Modrokamenná bouda | — | ~~*rodinný penzion* … dle klíče „penzion bez doloženého veřejného občerstvení → ne"~~ **PŘEHODNOCENO 26. 7. 2026:** web obce Janské Lázně dokládá doslovnou větou „pro veřejnost slouží restaurace" → založen kandidát `data/kandidati/krkonose/modrokamenna-bouda.yaml`. Obrázek kotouče se nasadí až s povýšením. **POZOR — ROZPOR ČÍSLA ZNÁMKY:** fyzický kotouč od Michala nese **č. 2640**, kdežto oficiální seznam vydavatele z července 2026 vede položku **`2540 Modrokamenná Bouda, Krkonoše`**. Dvě čísla z téhož vydavatele — nerozhodnuto, ověřit u vydavatele (může jít o překlep v jednom z exportů, nebo o dvě různé známky). Vedeno i v DATA-22. |
 
 ### 🔎 Historie: nový tip — známkové místo mimo náš katalog (4) → prověřeno 22. 7. 2026
 Bonus z plánu DATA-10 („zpětné dohledání chaty přes známkové místo"). Tehdy
@@ -95,8 +94,8 @@ absence.)
 | č. | bouda | u nás máme? |
 |----|-------|-------------|
 | 1347 | **Tetřeví Boudy** | **ANO — už publikováno** na webu (katalog ji přesto nemá!) |
-| 1274 | Medvědí bouda | ano — kandidát (z OSM/DATA-01); 25. 7. 2026 NEPOVÝŠENA, neprošla klíčem zařazení |
-| 14 | Chata Rozhled | ano — kandidát (založen 22. 7. přes známku); 25. 7. 2026 stále kandidát |
+| 1274 | Medvědí bouda | ano — **od 26. 7. 2026 publikována** (povýšena po rozšíření klíče DATA-25) |
+| 14 | Chata Rozhled | ano — **od 26. 7. 2026 publikována** (povýšena po rozšíření klíče DATA-25) |
 | 393 | Vrbatova bouda | ano — **od 25. 7. 2026 publikováno** (založena 22. 7. přes známku) |
 
 **Chybí, ale správně** (nejsou boudy do průvodce): č.2027 Medvědín (vrchol/lanovka),
