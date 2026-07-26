@@ -68,12 +68,12 @@ overeniSluzby:
 # načtení stránky to explicitně nezopakovalo → verified: false.
 sezona: celoročně
 otviraciDoba: |-
-  Restaurace — obědy 11:00–16:00, večeře 18:00–21:00 (formou rautu), snack menu 16:00–17:00 a 21:00–22:00. Rezervace na tel. 602 311 301.
+  Restaurace — obědy 11:00–16:00, večeře 18:00–21:00 (formou rautu), snack menu 16:00–17:00 a 21:00–22:00. Rezervace telefonicky; restaurace na ně uvádí vlastní linku, odlišnou od hlavního kontaktu objektu.
 kontakty:
   telefon: +420 602 322 399
   web: https://www.tetreviboudy.com/
 overeniProvoz:
-  source: https://www.tetreviboudy.com/ (telefon +420 602 322 399; otvírací doba restaurace z restaurace.htm; načteno 21. 7. 2026). Celoroční provoz z dřívějšího čtení webu 20. 7. 2026 (DATA-03, session 24) — dnes explicitně nepotvrzen. Vlastní e-mail objektu web neuvádí (na webu jen kontakt na správce webu, nepřebírán)
+  source: https://www.tetreviboudy.com/ (telefon +420 602 322 399; rezervační linka restaurace 602 311 301 — do veřejného textu nepatří, DATA-16; otvírací doba restaurace z restaurace.htm; načteno 21. 7. 2026). Celoroční provoz z dřívějšího čtení webu 20. 7. 2026 (DATA-03, session 24) — dnes explicitně nepotvrzen. Vlastní e-mail objektu web neuvádí (na webu jen kontakt na správce webu, nepřebírán)
   verified: false # telefon a otvírací doba ověřeny z webu; sezóna z dřívějšího čtení, e-mail nedoložen
   checked: '2026-07-21'
 

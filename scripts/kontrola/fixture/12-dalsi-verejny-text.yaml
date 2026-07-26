@@ -1,0 +1,31 @@
+# Fixtura na DATA-16: ban sken sahá i mimo tělo článku.
+# Každé ze čtyř polí níže nese jeden zakázaný vzor, aby bylo vidět,
+# že se `dalsiVerejnyText()` dívá na všechna. Past jsou poslední dvě
+# pole: `zdroje.popis` a `interniPoznamky` se skenovat NESMÍ, takže
+# telefon ani doména v nich se ve snímku objevit nemají.
+slug: 12-dalsi-verejny-text
+nazev: Fixtura na verejny text mimo clanek
+typ: obsluhovana
+obec: Harrachov
+stav: v-provozu
+perex: >-
+  Perex je schválně nudný, aby zásahy pocházely jen z polí pod ním.
+text:
+  - >-
+    Ani druhý odstavec nic netvrdí a nikoho nejmenuje.
+sezona: celoročně, mimo sezónu se platí příplatek 250 Kč
+otviraciDoba: |-
+  Denně 9:00–17:00, rezervace na 499 123 456.
+autem: |-
+  Příjezd popisuje chata-fixtura.cz, parkoviště je u dolní stanice.
+zajimavosti:
+  - kategorie: vyska
+    text: >-
+      Výška objektu pochází z OpenStreetMap a v terénu ověřená není.
+    zdroj: Fixturový katalog
+zdroje:
+  - url: 'https://www.chata-fixtura.cz/'
+    popis: 'Web provozovatele, https://www.chata-fixtura.cz, telefon 499 123 456'
+interniPoznamky: |-
+  Past: tahle poznámka je interní, veřejně se nevykresluje. Telefon
+  499 123 456 ani cena 250 Kč se tu skenovat nemají.

@@ -11,6 +11,67 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-26 — denní session (Opus, inline): DATA-16 hotovo — sken vidí i mimo tělo článku a hned našel dva telefony
+
+**Zadání Michala:** „spusť naplánovanou session, do dneška byla zastavena." Naplánovaná
+úloha *turistickechaty — denní session 6:30* naposledy proběhla **21. 7.** a od té doby
+byla pozastavená; **znovu zapnuta** (další běh 27. 7. ráno). Práce se udělala rovnou
+v běžící session, protože v pracovním stromu leželo rozdělané DATA-16 — kdyby se úloha
+spustila zvlášť, naklonovala by si čisté repo a dělala totéž podruhé.
+
+**Hotovo:** **DATA-16 — rozšíření dosahu `ban-scan.ts` za `perex` + `text[]`.** Sken
+nově čte i ostatní veřejný text profilu: `zajimavosti[].text`, `otviraciDoba`, `autem`
+a `sezona`.
+
+**Měření rozhodlo o rozsahu, a to jinak, než položka backlogu předpokládala.** Backlog
+chtěl rozšířit hlavně na `zajimavosti[].text` a `otviraciDoba` s `autem` odkládal s tím,
+že „chtějí vlastní, mírnější sadu vzorů". Měření (povinné, položka ho žádala napřed)
+ukázalo pravý opak: samotné `zajimavosti[].text` přidává **jediný** zásah, kdežto celá
+čtveřice **devět** — a hlavně, **obě skutečné vady, které rozšíření našlo, byly právě
+v těch dvou odkládaných polích.** V `autem` Luční boudy stálo číslo na smluvní přepravu,
+v `otviraciDoba` Tetřevích bud rezervační linka restaurace. Telefony do veřejného textu
+podle konvence nepatří a tyhle dva tam byly přesně proto, že tam skript neviděl; mírnější
+sada vzorů by je nechala být. **Ustálený počet 131 → 138** = +9 za rozšíření, −2 za
+opravené telefony.
+
+Čísla se nezahodila, jen se přesunula tam, kam patří: obě zůstávají v `overeni*.source`,
+který frontend vykresluje **pouze jako hostname** (`prvniHost()` v `page.tsx` z celého
+zdroje vytáhne první http(s) host a zbytek zahodí) — ověřeno ve zdrojáku, ne odhadnuto.
+Veřejná próza místo čísla říká, že se rezervuje telefonicky a že jde o jinou linku než
+hlavní kontakt; u Luční boudy je to doslova tak, čísla se liší poslední číslicí.
+
+**Implementace záměrně nesahá na `proza()`.** Přidána samostatná `dalsiVerejnyText()`
+v `lib.ts` a zapojena do skenovací smyčky vedle ní. Důvod: `proza()` používá i `zdroje.ts`
+a všech šest kontrol v `audit-mech.ts` a ty jsou psané nad **tělem článku** — rozšířit ji
+by tiše změnilo sémantiku sedmi dalších kontrol kvůli jedné. **Dvě veřejná pole zůstala
+vynechaná a je to úmysl:** `zdroje.popis` nese odkazy a jména domén ze zadání (sken by
+hlásil vlastní návrh schématu), `interniPoznamky` veřejné vůbec nejsou.
+
+**Fixtura hlídá obě strany.** `12-dalsi-verejny-text.yaml` má v každém ze čtyř čtených
+polí jeden zakázaný vzor a jako past telefon i doménu v obou vynechaných polích. Snímek
+sedí: čtyři zásahy ze čtyř polí, z pasti ani jeden. Snímky všech tří kontrol
+přegenerovány — u `audit-mech` a `zdroje` se změnil **jen počet souborů**, žádný nový
+nález, takže rozšíření skutečně nikam neprosáklo.
+
+**Poznámka mimo backlog:** prompt naplánované úlohy nese v otevřeném textu GitHub PAT
+i klíč k Mapy.com. Do repa se nedostaly (tam je jen `.env.example`), ale kdokoli s
+přístupem k výpisu úloh je vidí. Nedělal jsem s tím nic — je to Michalovo rozhodnutí.
+
+**Příště:** **DATA-18** — tři drobné vady korpusu v jednom měřeném průchodu: číslo známky
+ve veřejné próze Vrbatovy boudy, celokorpusový úklid slova „profil" ve významu „naše
+stránka" (23 výskytů ve 20 souborech, asi 13 z nich je ten náš) a case-sensitive vzor GPS
+na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s měřením.
+
+**Otázky pro Michala:**
+1. Ten PAT a klíč Mapy.com v promptu naplánované úlohy — chceš je otočit a prompt
+   přepsat, nebo to necháváme být?
+2. U Luční boudy i Tetřevích bud teď próza říká „rezervace telefonicky na jiné lince, než
+   je hlavní kontakt". Je to poctivé, ale čtenáři to práci nešetří. **Nemá `kontakty`
+   dostat druhé pole na rezervační linku?** Schéma má dnes jen jeden `telefon` a tohle
+   je druhý objekt ze 42, kde to nestačí.
+
+---
+
 ## 2026-07-25 — navazující session (Opus, inline): DATA-15 krok (b) **dokončen** — čtvrtá dávka a jedna vada, kterou jsem vyrobil sám
 
 **Zadání Michala:** stále „pokračuj samostatně dál". Vzato **zbylých jedenáct profilů**: Nová Klínovka, Schronisko Kamieńczyk, Schronisko Odrodzenie, Schronisko pod Łabskim Szczytem, Schronisko PTTK na Hali Szrenickiej, Schronisko PTTK na Przełęczy Okraj, Schronisko Szrenica, Strzecha Akademicka, Vébrovy boudy, Vosecká bouda a Výrovka. **Krok (b) je tím hotový: všech 42 publikovaných profilů prošlo jazykovým auditem.**

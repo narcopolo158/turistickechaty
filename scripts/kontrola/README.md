@@ -38,7 +38,7 @@ e-maily, telefony, ceny (mění se), GPS, čísla známek, názvy polí ani inte
 terminologie. **Výstup není seznam vad.** Část zásahů jsou trvalé a známé falešné
 poplachy: doména v prvním pádě jako jméno pramene („server Krkonose.eu") je
 doložený domácí styl, „redakce" v závěrečném odstavci taky, a OpenStreetMap se
-uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **131 zásahů** —
+uvádí kvůli licenci ODbL. Ustálený počet na dnešním korpusu je **138 zásahů** —
 smysl má sledovat, jestli číslo neskočí, ne jestli je nula.
 
 Bylo jich 135 a rozdíl je čistě náhodou malý: 25. 7. 2026 **odpadlo 17 zásahů**
@@ -74,8 +74,8 @@ jen `perex` a `text[]`. Když se z položky `zajimavosti[0]` u Lyžařské boudy
 odstranilo číslo známky, počet zásahů klesnout nemohl — a taky neklesl, ten
 údaj tam skript nikdy neviděl (profil šel 3 → 4, tedy čistý přírůstek). Totéž
 platí pro `zdroje.popis`, `autem`, `otviraciDoba` a `interniPoznamky`.
-Rozšíření dosahu na `zajimavosti[].text` je vedené v BACKLOGu; napřed se změří,
-kolik zásahů to přidá, aby se ustálený počet neposunul naslepo.
+Rozšíření dosahu bylo vedené v BACKLOGu jako DATA-16 a **26. 7. 2026 se
+udělalo** — jak dopadlo, stojí o dva odstavce níž.
 
 Ze 127 na 131 to vyskočilo se **čtvrtou dávkou** jazykového auditu (jedenáct
 profilů) a měřilo se stejnou metodou. Pohyb má dvě složky opačným směrem:
@@ -93,6 +93,28 @@ Jeden z nich **není** falešný poplach a je vedený v BACKLOGu: Vrbatova bouda
 ve větě o rozdílných výškách číslo turistické známky, a to do veřejné prózy
 podle konvence nepatří. Neopravovalo se to spolu se čtvrtou dávkou schválně,
 aby měření dávky zůstalo čisté.
+
+## Co skript čte (DATA-16)
+
+Od 26. 7. 2026 sken nekončí u těla článku. Vedle `perex` a `text[]` čte i
+**ostatní veřejný text profilu**: `zajimavosti[].text`, `otviraciDoba`, `autem`
+a `sezona`. Drží to samostatná funkce `dalsiVerejnyText()` v `lib.ts` — `proza()`
+zůstala nedotčená schválně, aby kontrola připsání (`zdroje.ts`) a šest kontrol
+v `audit-mech.ts` dál pracovaly nad tělem článku, pro které byly psané.
+**Dvě veřejná pole do skenu nepatří** a je to úmysl, ne opomenutí: `zdroje.popis`
+nese odkazy a jména domén ze zadání, takže by sken hlásil vlastní návrh schématu,
+a `interniPoznamky` veřejné vůbec nejsou. Fixtura `12-dalsi-verejny-text.yaml`
+hlídá obojí — čtyři zásahy ze čtyř čtených polí a ani jeden z těch dvou past.
+
+Ustálený počet **131 → 138**. Rozšíření samo přidalo **9 zásahů** (změřeno
+napřed, jak backlog žádal: `otviraciDoba` 5, `autem` 3, `zajimavosti[].text` 1)
+a **dva zase odpadly**, protože sken rovnou našel dvě skutečné vady. V poli
+`autem` Luční boudy stálo číslo na smluvní přepravu, v `otviraciDoba` Tetřevích
+bud rezervační linka restaurace — telefony do veřejného textu nepatří, a tyhle
+dva se tam sedm měsíců schovávaly právě proto, že tam skript neviděl. Čísla se
+nezahodila: obě jsou dál v `overeni*.source`, který se veřejně vykresluje jen
+jako hostname. Zbylých sedm zásahů spadá do už popsaných falešných poplachů
+(`OSM`, doména v prvním pádě, „ceny Mies van der Rohe Award").
 
 **`audit-mech.ts` — seznam k posouzení.** Strojově chytatelná část auditní
 taxonomie z 25. 7. 2026, šest kontrol: **A** próza tvrdí hodnotu pole, které je

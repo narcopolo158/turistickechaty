@@ -77,6 +77,32 @@ export function proza(
   return out
 }
 
+/**
+ * Ostatní VEŘEJNÝ text profilu mimo vlastní článek: `zajimavosti[].text`,
+ * `otviraciDoba`, `autem`, `sezona`. Čtenář je vidí stejně jako perex a text,
+ * takže pro ně platí týž zákaz telefonů, cen a URL — jen se do `proza()`
+ * nedávají, aby kontrola připsání (`zdroje.ts`) a šest kontrol v
+ * `audit-mech.ts` dál pracovaly nad tělem článku, pro které byly psané.
+ *
+ * ÚMYSLNĚ SEM NEPATŘÍ dvě pole:
+ *   - `zdroje.popis` — je veřejný, ale odkazy a jména domén tam patří ze
+ *     zadání; sken by hlásil vlastní návrh schématu.
+ *   - `interniPoznamky` — veřejné vůbec nejsou, píšou se pro redakci.
+ */
+export function dalsiVerejnyText(
+  d: Record<string, unknown>,
+): Array<[string, string]> {
+  const out: Array<[string, string]> = []
+  seznamMap(d.zajimavosti).forEach((z, i) => {
+    if (typeof z.text === 'string') out.push([`zajimavosti[${i}].text`, z.text])
+  })
+  for (const pole of ['otviraciDoba', 'autem', 'sezona'] as const) {
+    const v = d[pole]
+    if (typeof v === 'string') out.push([pole, v])
+  }
+  return out
+}
+
 /** Pole se seznamem map (`zdroje`, `zajimavosti`, `milniky`…). */
 export function seznamMap(hodnota: unknown): Array<Record<string, unknown>> {
   if (!Array.isArray(hodnota)) return []

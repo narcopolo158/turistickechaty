@@ -117,10 +117,12 @@ trasy:
     ]
 autem: |-
   Autem jen na placené parkoviště P1 (dopravní terminál) na začátku Pece pod Sněžkou u čerpací stanice KM Prona.
-  Zbývajících cca 8,5 km se stoupáním 750 m zajišťuje smluvní přeprava hotelu — rezervace nejpozději den předem na +420 733 740 889.
+  Zbývajících cca 8,5 km se stoupáním 750 m zajišťuje smluvní přeprava hotelu — rezervuje se nejpozději den předem telefonicky, na jiné lince než je hlavní kontakt hotelu; obě čísla jsou na stránce hotelu o dopravě.
 overeniPristup:
   source: >-
-    https://www.lucnibouda.cz/cs/doprava-k-hotelu/ (smluvní přeprava);
+    https://www.lucnibouda.cz/cs/doprava-k-hotelu/ (smluvní přeprava;
+    rezervační linka přepravy +420 733 740 889 — liší se poslední číslicí
+    od hlavního kontaktu, do veřejného textu ale nepatří, DATA-16);
     trasy: GPX exporty z plánovače Mapy.com (Michal, 20. 7. 2026) — geometrie i výškový model Mapy.com;
     casMin: orientační výpočet DIN 33466
   verified: false

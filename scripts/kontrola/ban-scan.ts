@@ -1,5 +1,8 @@
 /**
- * Mechanický sken veřejné prózy (perex + text) na zakázané vzory.
+ * Mechanický sken veřejné prózy na zakázané vzory. Zabírá na tělo článku
+ * (`perex` + `text[]`) a od DATA-16 i na ostatní veřejný text profilu —
+ * `zajimavosti[].text`, `otviraciDoba`, `autem`, `sezona`; co do skenu spadá
+ * a co ne, drží `dalsiVerejnyText()` v `lib.ts`.
  *
  * Do veřejného textu nepatří: URL, domény, e-maily, telefony, ceny („ceny se
  * mění"), GPS, čísla turistických známek, názvy polí ani interní terminologie.
@@ -11,7 +14,7 @@
  *   npx tsx scripts/kontrola/ban-scan.ts [soubor.yaml …]
  */
 import { basename } from 'node:path'
-import { najdiYaml, nactiYaml, proza, W, WB0, WB1 } from './lib'
+import { dalsiVerejnyText, najdiYaml, nactiYaml, proza, W, WB0, WB1 } from './lib'
 
 // POZOR: v tomhle souboru se nesmí objevit `\b` ani `\w` — viz komentář v lib.ts.
 const VZORY: Array<[string, RegExp]> = [
@@ -68,7 +71,7 @@ const cesty = process.argv.slice(2).length
 let zasahy = 0
 for (const cesta of cesty) {
   const d = nactiYaml(cesta)
-  for (const [kde, obsah] of proza(d, true)) {
+  for (const [kde, obsah] of [...proza(d, true), ...dalsiVerejnyText(d)]) {
     for (const [jmeno, vzor] of VZORY) {
       for (const m of obsah.matchAll(vzor)) {
         const a = Math.max(0, m.index - 45)
