@@ -213,6 +213,7 @@ export async function getIndexChat(): Promise<{
     overrideAccess: false,
   })
   jenPublikovanaRazitka(res.docs)
+  await populujOtiskyRazitek(res.docs)
 
   const index: IndexChata[] = []
   const kalendarium: KalendariumPolozka[] = []
@@ -220,6 +221,11 @@ export async function getIndexChat(): Promise<{
     const overeni = posledniOvereni(chata)
     const url = chataPath(chata)
     const oblast = typeof chata.oblast === 'object' ? chata.oblast : null
+    // Stejný výběr razítka jako na profilu a v razítkovníku: přednost
+    // „k dispozici", jinak první doložené; bez skenu poctivě null.
+    const razitka = (chata.razitka?.docs ?? []).filter((r): r is Razitka => typeof r === 'object')
+    const razitko = razitka.find((r) => r.stav === 'k-dispozici') ?? razitka[0] ?? null
+    const otisk = razitko && typeof razitko.otisk === 'object' ? razitko.otisk : null
     index.push({
       slug: chata.slug!,
       nazev: chata.nazev,
@@ -230,9 +236,13 @@ export async function getIndexChat(): Promise<{
       typ: chata.typ ?? null,
       stav: chata.stav ?? null,
       vyska: chata.vyska ?? null,
+      lat: chata.lat ?? null,
+      lng: chata.lng ?? null,
       nocleh: anoNeNaBool(chata.nocleh),
       obcerstveni: anoNeNaBool(chata.kuchyne),
-      razitko: (chata.razitka?.docs ?? []).some((r) => typeof r === 'object'),
+      razitko: razitka.length > 0,
+      otiskUrl: otisk?.url ?? null,
+      otiskAlt: otisk?.alt ?? null,
       znamka: znamkyVizitkyChaty(chata.slug!).some((p) => p.system === 'znamka'),
       checked: overeni?.checked ?? null,
       verified: overeni?.verified ?? false,

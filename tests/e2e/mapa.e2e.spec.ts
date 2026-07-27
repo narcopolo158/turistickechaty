@@ -104,12 +104,14 @@ test.describe('Mapový pás (F0-07)', () => {
     await expect(logo.locator('img')).toHaveAttribute('alt', 'Mapy.com')
   })
 
-  test('mapa je i v katalogu /chaty s markerem publikované chaty (rozhodnutí 20. 7.)', async ({ page }) => {
-    await page.goto('http://localhost:3000/chaty')
+  test('mapa je i v katalogu /chaty s markerem publikované chaty (rozhodnutí 20. 7.; od F1b jako pohled Mapa)', async ({ page }) => {
+    // F1b: katalog má výchozí Karty; mapa je třetí pohled přepínače a stav
+    // žije v URL (?view=mapa) — deep-link musí fungovat i napřímo.
+    await page.goto('http://localhost:3000/chaty?view=mapa')
     const mapa = page.getByTestId('mapa-chat')
     await expect(mapa).toBeVisible()
 
-    // stejná komponenta, stejná data: marker Luční boudy vč. hover preview
+    // stejná komponenta, markery = přefiltrovaná množina (tady vše publikované)
     await expect(mapa.locator('.mk-provoz')).toHaveCount(1)
     await mapa.locator('.mk-provoz').hover()
     await expect(mapa.locator('.mpre')).toContainText('Luční bouda')
@@ -117,6 +119,22 @@ test.describe('Mapový pás (F0-07)', () => {
     // klik naviguje na profil i z katalogu
     await mapa.locator('.mk-provoz').click()
     await page.waitForURL('**/cesko/krkonose/lucni-bouda')
+  })
+
+  test('katalog F1b: výchozí karty, chip filtruje a zapisuje do URL, prázdný stav poctivě', async ({ page }) => {
+    await page.goto('http://localhost:3000/chaty')
+    // výchozí pohled = karty s kartotéčním lístkem chaty
+    await expect(page.locator('.ktl-karta').first()).toBeVisible()
+    await expect(page.getByTestId('mapa-chat')).toHaveCount(0) // mapa až na vyžádání
+
+    // chip „zaniklá": publikovaný katalog zaniklé nevede (Atlas je zvlášť)
+    await page.getByRole('button', { name: 'zaniklá' }).click()
+    await expect(page).toHaveURL(/chips=zanikla/)
+    await expect(page.getByText('Téhle kombinaci zatím nic neodpovídá')).toBeVisible()
+
+    // „zpět" vrací předchozí stav filtrů (pushState)
+    await page.goBack()
+    await expect(page.locator('.ktl-karta').first()).toBeVisible()
   })
 
   test('atribuce spadne na fallback, když tiles.json neodpoví', async ({ page }) => {

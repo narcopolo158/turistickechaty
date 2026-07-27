@@ -1,0 +1,132 @@
+/**
+ * F1b: KatalogClient — render a interakce dle funkčního prototypu handoffu:
+ * karty s poctivými „—", chips filtrují (prázdný stav s resetem), přepínač
+ * zobrazení, řazení a zápis stavu do URL (pushState/replaceState).
+ * MapaChat se mockuje (Leaflet v jsdom neběží) — mapový pohled jen dokládá,
+ * že markery = přefiltrovaná množina s GPS.
+ */
+import { cleanup, fireEvent, render, screen, within } from '@testing-library/react'
+import React from 'react'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+
+import type { IndexChata } from '@/lib/index-chat'
+import type { MapovaChata } from '@/components/MapaChat'
+
+// URL jako zdroj pravdy: mock useSearchParams čte přímo window.location.search,
+// takže pushState/replaceState v komponentě se projeví po re-renderu.
+vi.mock('next/navigation', () => ({
+  useSearchParams: () => new URLSearchParams(window.location.search),
+}))
+
+// Leaflet v jsdom neběží — mapa se nahrazuje výpisem markerů.
+vi.mock('@/components/MapaChat', () => ({
+  default: ({ chaty }: { chaty: MapovaChata[] }) => (
+    <div data-testid="mapa-mock">{chaty.map((ch) => ch.slug).join(',')}</div>
+  ),
+}))
+
+import KatalogClient from '@/components/KatalogClient'
+
+const chata = (prepis: Partial<IndexChata>): IndexChata => ({
+  slug: 'x',
+  nazev: 'X',
+  url: '/cesko/krkonose/x',
+  oblastSlug: 'krkonose',
+  oblastNazev: 'Krkonoše',
+  zeme: 'cz',
+  typ: 'obsluhovana',
+  stav: 'v-provozu',
+  vyska: null,
+  lat: null,
+  lng: null,
+  nocleh: null,
+  obcerstveni: null,
+  razitko: false,
+  otiskUrl: null,
+  otiskAlt: null,
+  znamka: false,
+  checked: null,
+  verified: false,
+  nejstarsiRok: null,
+  ...prepis,
+})
+
+const INDEX: IndexChata[] = [
+  chata({ slug: 'lucni-bouda', nazev: 'Luční bouda', url: '/cesko/krkonose/lucni-bouda', vyska: 1410, lat: 50.73, lng: 15.69, nocleh: true, obcerstveni: true, razitko: true, znamka: true, checked: '2026-07-19' }),
+  chata({ slug: 'lovecka-chata', nazev: 'Lovecká chata', url: '/cesko/krkonose/lovecka-chata', vyska: null, nocleh: false, obcerstveni: true, checked: '2026-07-11' }),
+  chata({ slug: 'samotnia', nazev: 'Schronisko Samotnia', url: '/polsko/krkonose/samotnia', zeme: 'pl', vyska: 1195, lat: 50.74, lng: 15.69, nocleh: true, checked: '2026-07-21' }),
+]
+
+beforeEach(() => window.history.replaceState(null, '', '/chaty'))
+afterEach(cleanup)
+
+describe('KatalogClient', () => {
+  it('vykreslí karty s poctivými údaji: „—" u výšky, tagy „· PL" a „· výška nedoložena", counter', () => {
+    render(<KatalogClient index={INDEX} />)
+    expect(screen.getByRole('heading', { name: 'Katalog chat' })).toBeTruthy()
+    expect(screen.getByText('Luční bouda')).toBeTruthy()
+    expect(screen.getByText('1 410 m')).toBeTruthy()
+    expect(screen.getByText('· výška nedoložena')).toBeTruthy() // Lovecká — bez domýšlení
+    expect(screen.getByText('· PL')).toBeTruthy() // Samotnia
+    expect(screen.getByText('3')).toBeTruthy() // counter zobrazeno
+    // karta je odkaz na profil
+    const lucni = screen.getByText('Luční bouda').closest('a')!
+    expect(lucni.getAttribute('href')).toBe('/cesko/krkonose/lucni-bouda')
+    // mini-otisk jen u chaty s razítkem (bez skenu stylizované SVG)
+    expect(lucni.querySelector('.ktl-otisk svg')).not.toBeNull()
+  })
+
+  it('službový chip filtruje jen doložené „ano" a zapisuje stav do URL (pushState)', () => {
+    render(<KatalogClient index={INDEX} />)
+    fireEvent.click(screen.getByRole('button', { name: 'nocleh' }))
+    expect(window.location.search).toBe('?chips=nocleh')
+    // re-render z nové URL (mock čte location.search)
+    cleanup()
+    render(<KatalogClient index={INDEX} />)
+    expect(screen.queryByText('Lovecká chata')).toBeNull() // nocleh: doložené „ne"
+    expect(screen.getByText('Luční bouda')).toBeTruthy()
+    expect(screen.getByText('Schronisko Samotnia')).toBeTruthy()
+  })
+
+  it('kombinace bez shody = poctivý prázdný stav s odkazem do Atlasu a resetem', () => {
+    window.history.replaceState(null, '', '/chaty?chips=zanikla')
+    render(<KatalogClient index={INDEX} />)
+    expect(screen.getByText('Téhle kombinaci zatím nic neodpovídá')).toBeTruthy()
+    expect(screen.getByRole('link', { name: 'Atlasu zaniklých' }).getAttribute('href')).toBe('/zanikle')
+    fireEvent.click(screen.getByRole('button', { name: 'Zrušit filtry' }))
+    expect(window.location.search).toBe('')
+  })
+
+  it('hledání píše do URL přes replaceState (žádné položky historie po písmenech)', () => {
+    render(<KatalogClient index={INDEX} />)
+    const push = vi.spyOn(window.history, 'pushState')
+    fireEvent.change(screen.getByRole('searchbox', { name: 'Hledat v katalogu' }), {
+      target: { value: 'luč' },
+    })
+    expect(window.location.search).toBe(`?${new URLSearchParams({ q: 'luč' }).toString()}`)
+    expect(push).not.toHaveBeenCalled()
+  })
+
+  it('řádkové zobrazení má tabulkovou hlavičku, mapa dostává jen přefiltrované profily s GPS', () => {
+    window.history.replaceState(null, '', '/chaty?view=radky')
+    render(<KatalogClient index={INDEX} />)
+    expect(screen.getByText('Služby')).toBeTruthy() // hlavička tabulky
+    cleanup()
+
+    window.history.replaceState(null, '', '/chaty?view=mapa')
+    render(<KatalogClient index={INDEX} />)
+    const mapa = screen.getByTestId('mapa-mock')
+    // Lovecká nemá GPS → na mapě není; popiska to přiznává
+    expect(mapa.textContent).toBe('lucni-bouda,samotnia')
+    expect(screen.getByText(/1 profilů bez doložené GPS na mapě není/)).toBeTruthy()
+  })
+
+  it('aktivní chip nese × a aria-pressed; přepínače řazení mají výchozí „abecedně"', () => {
+    window.history.replaceState(null, '', '/chaty?chips=razitko')
+    render(<KatalogClient index={INDEX} />)
+    const chip = screen.getByRole('button', { name: 'razítko ×' })
+    expect(chip.getAttribute('aria-pressed')).toBe('true')
+    const razeni = within(screen.getByRole('group', { name: 'Řazení' }))
+    expect(razeni.getByRole('button', { name: 'abecedně' }).className).toContain('akt')
+  })
+})

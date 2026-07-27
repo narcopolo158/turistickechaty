@@ -26,11 +26,17 @@ export type IndexChata = {
   typ: string | null
   stav: string | null
   vyska: number | null
+  /** GPS pro mapové zobrazení katalogu — null u profilů bez doložených souřadnic. */
+  lat: number | null
+  lng: number | null
   /** null = nezjištěno (v datech nevyplněno) — poctivě se nefiltruje jako „ne". */
   nocleh: boolean | null
   obcerstveni: boolean | null
   /** Má aspoň jedno publikované razítko v DB. */
   razitko: boolean
+  /** Sken otisku razítka (miniatura na kartě katalogu) — null bez skenu (fallback stylizované SVG). */
+  otiskUrl: string | null
+  otiskAlt: string | null
   /** Má turistickou známku (katalog DATA-10, verified:false se zdrojem). */
   znamka: boolean
   /** Nejnovější `checked` napříč bloky ověření profilu (ISO datum), null = nikdy. */

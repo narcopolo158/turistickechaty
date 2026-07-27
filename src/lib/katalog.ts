@@ -79,6 +79,30 @@ export const filtrujKatalog = (index: IndexChata[], stav: KatalogStav): IndexCha
   return serazene
 }
 
+// ── Formát a odvozené popisky karet (čisté, bez DB — používá je client UI) ──
+
+/** 1410 → „1 410 m"; bez výšky poctivá „—" (nikdy 0). Úzká nezlomitelná mezera. */
+export const formatVyskaM = (vyska: number | null): string =>
+  vyska == null ? '—' : `${new Intl.NumberFormat('cs-CZ').format(vyska).replace(/\s/g, ' ')} m`
+
+/** ISO „2026-07-19" → „19. 7. 2026"; bez data „—". */
+export const formatCheckedDatum = (iso: string | null): string => {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso ?? '')
+  return m ? `${Number(m[3])}. ${Number(m[2])}. ${Number(m[1])}` : '—'
+}
+
+/**
+ * Kurzívní tag karty dle prototypu („· Atlas", „· PL", „· výška nedoložena").
+ * Jeden tag s prioritou: zaniklá > polský profil > nedoložená výška; jinak
+ * prázdný řetězec (řádek drží min-height, ať karty nelítají).
+ */
+export const tagKarty = (ch: Pick<IndexChata, 'stav' | 'zeme' | 'vyska'>): string => {
+  if (ch.stav === 'zanikla') return '· Atlas'
+  if (ch.zeme === 'pl') return '· PL'
+  if (ch.vyska == null) return '· výška nedoložena'
+  return ''
+}
+
 // ── URL stav (?q=…&chips=…&sort=…&view=…) ──────────────────────────────────
 
 const jeChip = (t: string): t is ChipKlic => (CHIP_KLICE as readonly string[]).includes(t)
