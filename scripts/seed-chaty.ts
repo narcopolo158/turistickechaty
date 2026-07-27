@@ -12,6 +12,11 @@
  * Fotky s metadaty (autor, licence, zdrojUrl); idempotentně dle `zdrojUrl`.
  * Stažení potřebuje síť na upload.wikimedia.org — běží lokálně / v Actions,
  * ze sandboxu denních sessions to neprojde (proxy).
+ * POZOR (27. 7. 2026): Wikimedia z IP adres GitHub Actions škrtí (HTTP 429)
+ * — stejný vzorec jako Overpass v DATA-28. Stahování proto jede s opakováním
+ * (Retry-After / 10–20–40 s), rozestupy 1,5 s a MĚKKÝM selháním: nedotažená
+ * fotka běh NEshodí, jen se ohlásí — idempotentní seed ji doplní příště
+ * (profil má fallback siluetu, nic se nevymýšlí).
  */
 import { readdirSync, readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -132,6 +137,46 @@ if (process.env.SEED_BEZ_FOTEK === '1' && fotkyChat.size > 0) {
   payload.logger.warn(`SEED_BEZ_FOTEK=1 — přeskakuji stahování fotek ${fotkyChat.size} chat (hero zůstane bez snímku)`)
   fotkyChat.clear()
 }
+const pauza = (ms: number) => new Promise<void>((vyres) => setTimeout(vyres, ms))
+
+/**
+ * Stažení fotky s opakováním. Wikimedia z CI adres (GitHub Actions) vrací
+ * HTTP 429 (doloženo prvním během deploy-staging 27. 7. 2026) — ctí se
+ * Retry-After (strop 90 s), jinak 10/20/40 s; opakují se i 5xx a výpadky
+ * sítě. Trvalé chyby (404, 403…) se neopakují. Po vyčerpání pokusů vrací
+ * null — volající fotku přeskočí a idempotentní seed ji doplní příště.
+ */
+async function stahniFotku(url: string, slug: string): Promise<Buffer | null> {
+  const CEKANI = [10_000, 20_000, 40_000]
+  for (let pokus = 0; pokus <= CEKANI.length; pokus++) {
+    let odpoved: Response | null = null
+    try {
+      odpoved = await fetch(url, {
+        // Pozor: HTTP hlavicky jsou ASCII — zadna diakritika (fetch by spadl).
+        headers: { 'User-Agent': 'turistickechaty.cz seed/1.0 (+https://turistickechaty.cz)' },
+      })
+    } catch (chyba) {
+      payload.logger.warn(`fotka (${slug}): síť selhala (pokus ${pokus + 1}): ${chyba}`)
+    }
+    if (odpoved?.ok) return Buffer.from(await odpoved.arrayBuffer())
+    if (odpoved && ![429, 500, 502, 503, 504].includes(odpoved.status)) {
+      payload.logger.warn(`fotka (${slug}): HTTP ${odpoved.status} (${url}) — neopakovatelná chyba, přeskakuji`)
+      return null
+    }
+    if (pokus < CEKANI.length) {
+      const retryAfter = Number(odpoved?.headers.get('retry-after'))
+      const cekej =
+        Number.isFinite(retryAfter) && retryAfter > 0 ? Math.min(retryAfter * 1000, 90_000) : CEKANI[pokus]
+      payload.logger.warn(
+        `fotka (${slug}): HTTP ${odpoved?.status ?? 'bez odpovědi'} — čekám ${Math.round(cekej / 1000)} s a zkouším znovu`,
+      )
+      await pauza(cekej)
+    }
+  }
+  return null
+}
+
+let fotekVzdano = 0
 for (const [slug, { fotky, chataId }] of fotkyChat) {
   for (const { stahnoutZ, ...metadata } of fotky) {
     if (!stahnoutZ || !metadata.zdrojUrl) throw new Error(`chata ${slug}: fotka potřebuje stahnoutZ i zdrojUrl (identita a zdroj)`)
@@ -147,27 +192,34 @@ for (const [slug, { fotky, chataId }] of fotkyChat) {
       payload.logger.info(`fotka (${slug}): aktualizována metadata — ${metadata.zdrojUrl}`)
       continue
     }
-    const nazev = nazevSouboruZUrl(stahnoutZ)
-    let odpoved: Response
-    try {
-      odpoved = await fetch(stahnoutZ, {
-        // Pozor: HTTP hlavicky jsou ASCII — zadna diakritika (fetch by spadl).
-        headers: { 'User-Agent': 'turistickechaty.cz seed (kontakt: viz repozitar / GitHub)' },
-      })
-    } catch (chyba) {
-      throw new Error(
-        `chata ${slug}: stažení fotky selhalo (${stahnoutZ}) — seed potřebuje síť na upload.wikimedia.org, pusť ho lokálně nebo v Actions. Původní chyba: ${chyba}`,
-      )
+    if (fotekVzdano >= 3) {
+      // Throttling už 3× vyčerpal všechny pokusy — zbytek tohoto běhu se
+      // nezdržuje (další 429 jsou skoro jisté); doplní je příští seed.
+      payload.logger.warn(`fotka (${slug}): přeskočena bez pokusu — běh už 3× narazil na throttling`)
+      continue
     }
-    if (!odpoved.ok) throw new Error(`chata ${slug}: stažení fotky vrátilo HTTP ${odpoved.status} (${stahnoutZ})`)
-    const data = Buffer.from(await odpoved.arrayBuffer())
+    const nazev = nazevSouboruZUrl(stahnoutZ)
+    const data = await stahniFotku(stahnoutZ, slug)
+    if (!data) {
+      fotekVzdano++
+      payload.logger.warn(
+        `fotka (${slug}): NEstažena (${stahnoutZ}) — hero zatím bez snímku (fallback silueta), idempotentní seed ji doplní v příštím běhu`,
+      )
+      continue
+    }
     await payload.create({
       collection: 'fotky',
       data: fotkaData,
       file: { data, name: nazev, mimetype: mimeTypSouboru(nazev), size: data.byteLength },
     })
     payload.logger.info(`fotka (${slug}): stažena a nahrána — ${nazev} (${Math.round(data.byteLength / 1024)} kB)`)
+    await pauza(1500) // rozestup mezi stahováními — slušnost k Wikimedia, menší šance na 429
   }
+}
+if (fotekVzdano > 0) {
+  payload.logger.warn(
+    `Fotky: ${fotekVzdano} nedotaženo kvůli throttlingu/chybám — běh pokračoval dál, příští seed je doplní (idempotence dle zdrojUrl)`,
+  )
 }
 
 // ── 3. Razítka (otisk = upload do Fotek, idempotentně dle filename) ─────────
