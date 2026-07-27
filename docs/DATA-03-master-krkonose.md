@@ -11,7 +11,7 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 
 ## Souhrn
 
-- **Publikováno:** 58 *(aktualizováno 27. 7. 2026 potřetí — z fronty DATA-27 povýšena třetí trojice od konce: Náchodská bouda, Bouda Na Lučinách a Chata Betyna)*
+- **Publikováno:** 61 *(aktualizováno 27. 7. 2026 počtvrté — z fronty DATA-27 povýšena čtvrtá trojice od konce: Chata Sedmidolí, Jindřichův dům a Chata Smetánka)*
 - **Kandidáti k doplnění:** 33 — z toho Tier 1 (známka + katalog) 0, Tier 2 (jen známka) 0, Tier 3 (jen katalog) 2 (**oba blokované otázkou na Michala:** Hrnčířské boudy = enkláva, ne objekt — rozpustit?; Raisova chata na Zvičině = Podkrkonoší — založit oblast?), Tier 4 (jen OSM) 31. *Křížová kontrola 27. 7. 2026: kandidátských souborů bez hlavičky POVÝŠENO je v `data/kandidati/krkonose/` **35** — rozdíl proti 33 jsou přesně dva ruční kandidáti založení 26. 7. (Poštovna na Sněžce, Modrokamenná bouda), kteří do tierové struktury zatím nejsou zařazení (Modrokamenná nese známkový spor 2640×2540, Poštovna známku č. 20 — oba by patřili nejspíš do Tier 2; zařadit při příští revizi tabulek).*
 - **Vyřazeno** (nezakládat): 10
 - Objektů se známkou: 35 · v ChatGPT katalogu: 42 · katalogových Krkonoš celkem: 42
@@ -120,6 +120,16 @@ opakovaně nedostupný — kontakty nezapsány) a Chata Betyna (web se
 tentokrát načetl: 47 lůžek celoročně, restaurace s dětským koutkem;
 výška bez pramene nezapsána). Ve frontě zbývá 6 silných: U Kotle, Amor,
 Husova bouda, Smetánka, Jindřichův dům, Sedmidolí — + 6 s výhradou.**
+
+**Postup fronty 27. 7. 2026 počtvrté (dál od konce): povýšeny Chata
+Sedmidolí (1100 m nad Špindlem, 48/10, restaurace — komu, prameny neříkají;
+milník 2009), Jindřichův dům (penzion 1030 m v jádru Pece; bar VÝSLOVNĚ jen
+pro ubytované — próza to říká nahlas; kapacita 45 × 42 nezapsána; HRANIČNÍ
+zařazení → otázka pro Michala) a Chata Smetánka (verdikt „penzion"
+REVIDOVÁN — hostinské pokoje od ~1900 dle KzN: Tippeltové → Hofer → Lefler
+1945; výška 960 × 935 nezapsána, kapacita 50 × 55 nezapsána; mrtvý web
+404). Ve frontě zbývají 3 silné: U Kotle, Amor, Husova bouda —
++ 6 s výhradou.**
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |
 |---|---|---|---|---|

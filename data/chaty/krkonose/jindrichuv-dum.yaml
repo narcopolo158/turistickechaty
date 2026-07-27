@@ -1,0 +1,126 @@
+# Jindřichův dům — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Rodinný horský penzion v jádru Pece pod Sněžkou; bar/výčep VÝSLOVNĚ jen
+# pro ubytované (vlastní web) — profil to po zkušenosti DATA-25 říká nahlas.
+# Hraniční zařazení (viz interní poznámky). Vše verified: false.
+
+nazev: Jindřichův dům
+slug: jindrichuv-dum
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška 1030 z vlastního webu.
+lat: 50.6761796
+lng: 15.7274511
+vyska: 1030
+obec: Pec pod Sněžkou # adresa „Pec pod Sněžkou 24" — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    vlastní web (jindrichuvdum.cz, otevřeno 27. 7. 2026): „Pec pod
+    Sněžkou, 1 030 m n. m.", „přímo v srdci Krkonoš"; vleky Eso a Mulda
+    přímo před chatou. Adresa Pec pod Sněžkou 24 (katalogy, triáž DATA-27).
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/5488661856 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); v terénu neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita se NEZAPISUJE: vlastní web 45 osob × katalogy 42 lůžek — rozpor
+# se přiznává, nerozhodujeme.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    vlastní web (jindrichuvdum.cz, otevřeno 27. 7. 2026), doslova:
+    „Celková kapacita penzionu je 45 osob." Katalogy (České hory, obecní
+    webnode; triáž DATA-27) vedou 42 lůžek — ROZPOR, číslo se nezapisuje.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni ZÁMĚRNĚ NEVYPLNĚNO: bar/výčep je výslovně jen pro
+# ubytované, polopenze je penzijní strava — veřejné občerstvení doloženo
+# není.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    vlastní web (jindrichuvdum.cz, otevřeno 27. 7. 2026), doslova: „Máme
+    také bar/výčep pro ubytované hosty (provoz záleží na obsazenosti)."
+    a „Standardně fungujeme s polopenzí – snídaně je formou bufetu,
+    večeře je společná (polévka + jedno hlavní jídlo)." Veřejné
+    občerstvení web nenabízí — číselník se nevyplňuje.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: k historii domu (i k původu jména)
+# nenese žádný z otevřených pramenů jediný údaj.
+overeniHistorie:
+  source: >-
+    K historii domu jsme v otevřených pramenech (vlastní web, katalogy;
+    hledáno 26.–27. 7. 2026) nenašli jediný doložený údaj — „hledali
+    jsme a nenašli". Ani původ jména Jindřichův dům prameny nenesou.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.jindrichuvdum.cz/
+overeniProvoz:
+  source: >-
+    vlastní web živý (jindrichuvdum.cz, otevřeno 27. 7. 2026), doslova:
+    „Rodinný horský penzion v Krkonoších" — provoz aktivní. Provozovatel
+    vlastním dotazem neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Rodinný horský penzion v jádru Pece pod Sněžkou v 1030 metrech — vleky
+  Eso a Mulda má podle vlastního webu přímo před domem. Hostům vaří
+  polopenzi a točí ve vlastním výčepu; a tady je třeba říct rovnou:
+  bar je podle webu jen pro ubytované, kolemjdoucí turista se tu
+  občerstvení nedočká.
+text:
+  - >-
+    Jindřichův dům stojí v jádru Pece pod Sněžkou ve výšce 1030 metrů —
+    vlastní web ho popisuje jako rodinný horský penzion „přímo v srdci
+    Krkonoš" a vleky Eso a Mulda má přímo před domem. Kdo tu bydlí, má
+    tedy lyžování za dveřmi a hřebenové túry nad hlavou.
+  - >-
+    Hostům dům vaří polopenzi — snídani bufetem, společnou večeři —
+    a nabízí bar s výčepem. Právě u něj ale platí věta, kterou přebíráme
+    z webu doslova: je „pro ubytované hosty" a provoz záleží na
+    obsazenosti. Veřejné občerstvení pro kolemjdoucí tu tedy doloženo
+    není, a proto ho neuvádíme.
+  - >-
+    Kapacitu vlastní web udává na pětačtyřicet osob, katalogy vedou
+    dvaačtyřicet lůžek — čísla se neshodnou, a tak žádné nepřebíráme.
+    O historii domu, a dokonce ani o tom, po kom nese jméno, jsme
+    v otevřených pramenech nenašli jediný doložený údaj; jakmile se
+    pramen najde, doplníme ho.
+  - >-
+    Údaje pocházejí z vlastního webu penzionu a z katalogů; vlastním
+    dotazem u provozovatele jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Vlastní web — rodinný horský penzion, 1030 m, kapacita 45 osob,
+      bar/výčep pro ubytované, polopenze (otevřeno 27. 7. 2026)
+    url: https://www.jindrichuvdum.cz/
+  - popis: >-
+      Katalogy (České hory, obecní webnode) — 42 lůžek: rozpor
+      s vlastním webem (triáž DATA-27, 26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/jindrichuv-dum.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 + spot-fetch vlastního webu (potvrdil bar jen pro ubytované, 1030 m, 45 osob, polopenzi).
+  HRANIČNÍ ZAŘAZENÍ (do seznamu otázek pro Michala): penzion bez doložené historie a bez veřejného občerstvení — v silné frontě triáže byl, zařazen jako horská chata s noclehem pro turisty (OSM alpine_hut, „Horská chata Jindřichův dům" v katalozích); pokud Michal rozhodne jinak, profil se stáhne.
+  ROZPOR KAPACITY: 45 osob (web) × 42 lůžek (katalogy) — nezapsáno, próza přiznává.
+  Adresa „Pec pod Sněžkou 24" jen interně/v source (ban č. p. v próze).
+  K dotažení: historie a původ jména, kapacita od provozovatele, telefon/e-mail (DATA-04), hero fotka.

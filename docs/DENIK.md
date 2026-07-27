@@ -11,6 +11,36 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 11: čtvrtá trojice od konce — Sedmidolí, Jindřichův dům, Smetánka (61 profilů)
+
+**Hotovo:** Z fronty DATA-27 povýšena čtvrtá trojice od konce (58 → 61).
+Spot-fetche: sedmidoli.cz (živý, ale skoupý), jindrichuvdum.cz (potvrdil
+klíčové věty doslova), KzN + region-krkonose pro Smetánku.
+
+- **Chata Sedmidolí** — 1100 m nad Špindlem na rozhraní II. a III. zóny,
+  48 lůžek / 10 pokojů (České hory), „vlastní prostorná restaurace"
+  (hkregion) — komu, prameny neříkají; jediný letopočet: rekonstrukce
+  2009. Název kolísá (web „Chata" × Facebook a katalogy „bouda") — zapsán
+  tvar vlastního webu.
+- **Jindřichův dům** — „Rodinný horský penzion", 1030 m, vleky Eso
+  a Mulda před domem; „bar/výčep pro ubytované hosty" — próza to říká
+  nahlas; kapacita 45 (web) × 42 (katalogy) NEZAPSÁNA; historie ani původ
+  jména nedoloženy. HRANIČNÍ zařazení (bez historie, bez veřejného
+  občerstvení) — přidáno do seznamu otázek pro Michala.
+- **Chata Smetánka** — verdikt „penzion — nezařazovat" z 20. 7. REVIDOVÁN:
+  KzN dokládá hostinské pokoje od ~1900 (Tippeltové → Johann Hofer,
+  obchodník s máslem → 1945 Karel Lefler, Smetanova bouda) → klíč DATA-25
+  splněn. Výška 960 × 935 (vnitřní rozpor Českých hor) nezapsána; kapacita
+  50 (KzN) × 55 (region-krkonose) nezapsána; chatasmetanka.cz vrací 404.
+  Triážní citace historie byla zkomolená — opravena podle živé stránky
+  (další doklad pravidla „citovat z živých stránek, ne z výtahů").
+
+Kontrola: validator 0 (61 profilů), ban-scan +9 = dokumentované FP třídy.
+POVÝŠENO hlavičky, master fronta (zbývají 3 silné: U Kotle, Amor, Husova).
+
+**Příště:** poslední tři silní (U Kotle — Michal potvrdí nad profilem),
+pak 6 s výhradou, DATA-25 bod (a), uzavření Krkonoš se seznamem otázek.
+
 ## 2026-07-27 — pokračování 10: 3D mapa dostala panoramatický (malovaný) režim dle Michalových předloh
 
 **Zadání Michala (s doslovným zněním):** „vymysli jak 3d mapu priblizit

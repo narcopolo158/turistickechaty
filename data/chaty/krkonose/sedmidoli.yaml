@@ -1,0 +1,136 @@
+# Chata Sedmidolí — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Horská chata nad Špindlerovým Mlýnem s vlastní restaurací (katalogy);
+# komu přesně kuchyně slouží, prameny neříkají — profil to přiznává.
+# Vše verified: false — z katalogů a vlastního webu, vlastním dotazem neověřeno.
+
+nazev: Chata Sedmidolí
+slug: sedmidoli
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška 1100: jediný pramen (katalog
+# České hory), bez rozporu — zapsána s citací.
+lat: 50.7611479
+lng: 15.6010604
+vyska: 1100
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    katalog České hory (ceskehory.cz, triáž DATA-27, 26. 7. 2026), doslova:
+    „Horská chata Sedmidolí leží … nad známým horským střediskem Špindlerův
+    Mlýn"; výška 1100 m, rozhraní II. a III. zóny KRNAP, zhruba 6 km od
+    centra střediska. GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/11258086295 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 48
+pokoje: 10
+overeniNocleh:
+  source: >-
+    katalog České hory (triáž DATA-27, 26. 7. 2026): 48 lůžek v 10 pokojích.
+    Vlastní web chaty (sedmidoli.cz, otevřeno 27. 7. 2026) kapacitu
+    neuvádí — jediný pramen, provozovatelem nepotvrzeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Komu přesně restaurace slouží, prameny neříkají (poznámka dle DATA-25
+# v próze).
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    krajský katalog (hkregion.cz, triáž DATA-27, 26. 7. 2026), doslova:
+    „Stravování je zajištěno ve vlastní prostorné restauraci…" — komu
+    slouží, pramen neuvádí. Vlastní web (otevřeno 27. 7. 2026) má
+    restauraci ve fotogalerii, podrobnosti nenese.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ PRÁZDNÝ: starší historie chaty v otevřených pramenech
+# není; jediný doložený letopočet je rekonstrukce 2009.
+milniky:
+  - rok: 2009
+    udalost: >-
+      Podle krajského katalogu prošla chata celkovou rekonstrukcí
+      a dostavbou nových prostor restaurace a kuchyně
+overeniHistorie:
+  source: >-
+    krajský katalog (hkregion.cz, triáž DATA-27, 26. 7. 2026), doslova:
+    „V roce 2009 prošla chata celkovou rekonstrukcí a dostavbou nových
+    prostor restaurace a kuchyně." Starší historii jsme v otevřených
+    pramenech nenašli — „hledali jsme a nenašli".
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.sedmidoli.cz/
+overeniProvoz:
+  source: >-
+    vlastní web chaty živý (sedmidoli.cz, otevřeno 27. 7. 2026) — nabízí
+    pobyty rodinám i školám a lyžařským kurzům; aktivní záznamy
+    v rezervačních katalozích (hledáno 27. 7. 2026). Provozovatel vlastním
+    dotazem neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata na rozhraní klidových zón KRNAP vysoko nad Špindlerovým
+  Mlýnem, zhruba šest kilometrů od centra střediska a kolem 1100 metrů.
+  Katalogy u ní vedou osmačtyřicet lůžek v deseti pokojích a vlastní
+  prostornou restauraci; v roce 2009 prošla velkou rekonstrukcí.
+text:
+  - >-
+    Chata Sedmidolí stojí vysoko nad Špindlerovým Mlýnem, podle katalogu
+    na rozhraní druhé a třetí zóny národního parku a zhruba šest
+    kilometrů od centra střediska, ve výšce kolem 1100 metrů. Kdo sem
+    míří, jde už opravdovými horami — a přesně to je na poloze chaty
+    to nejcennější.
+  - >-
+    Nocleh vedou katalogy na osmačtyřiceti lůžkách v deseti pokojích
+    a k tomu vlastní prostornou restauraci — tak ji popisuje krajský
+    katalog. Jestli restaurace obslouží i turistu, který jen prochází,
+    prameny neříkají, a my to bez dokladu netvrdíme. Vlastní web chaty
+    zve rodiny i školy a lyžařské kurzy.
+  - >-
+    Z historie domu se zatím podařilo doložit jediné: v roce 2009 prošla
+    chata podle krajského katalogu celkovou rekonstrukcí s dostavbou
+    nových prostor restaurace a kuchyně. Co bylo dřív — kdy bouda
+    vznikla a čemu sloužila — jsme v otevřených pramenech nenašli;
+    jakmile se pramen objeví, doplníme ho.
+  - >-
+    Údaje pocházejí z katalogů a z vlastního webu chaty; vlastním
+    dotazem u provozovatele jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Katalog České hory — poloha nad Špindlerovým Mlýnem, 1100 m,
+      48 lůžek / 10 pokojů (triáž DATA-27, 26. 7. 2026)
+  - popis: >-
+      Krajský katalog hkregion.cz — vlastní restaurace, rekonstrukce
+      2009 (triáž DATA-27, 26. 7. 2026)
+    url: https://www.hkregion.cz/dr-cs/101795
+  - popis: >-
+      Vlastní web chaty — provoz, rodiny a školy (otevřeno 27. 7. 2026)
+    url: https://www.sedmidoli.cz/
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/sedmidoli.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 + spot-fetch sedmidoli.cz (web živý, ale skoupý — kapacitu ani historii nenese; zve školy a lyžařské kurzy).
+  NÁZEV kolísá: vlastní web „Chata Sedmidolí" (title) × Facebook a rezervační katalogy „bouda Sedmidolí" — zapsán tvar z vlastního webu.
+  Sedmidolí je i jméno LOKALITY (sedm dolů) — nedomýšlíme vztah jména chaty a místa, pramen chybí.
+  K dotažení: komu slouží restaurace (telefonát DATA-04), starší historie, hero fotka, telefon/e-mail (na webu kontakt je — nezapsán, dokud ho nepotvrdí telefonát).

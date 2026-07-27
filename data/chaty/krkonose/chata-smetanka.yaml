@@ -1,0 +1,157 @@
+# Chata Smetánka — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Verdikt „penzion — nezařazovat" z 20. 7. REVIDOVÁN triáží DATA-27:
+# hostinské pokoje tu byly už krátce po roce 1900 (Kudy z nudy) — klíč
+# DATA-25 (turistická minulost) je splněn. Vše verified: false.
+
+nazev: Chata Smetánka
+slug: chata-smetanka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ZÁMĚRNĚ NEVYPLNĚNA: jediný
+# pramen s výškou (katalog České hory) si protiřečí (960 × 935 m).
+lat: 50.6853647
+lng: 15.7196019
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    krajský katalog (region-krkonose.cz, otevřeno 27. 7. 2026), doslova:
+    „Horská chata Smetánka leží přímo na sjezdovce Hnědý vrch ve
+    skiareálu Pec pod Sněžkou". Kudy z nudy (otevřeno 27. 7. 2026):
+    „Jen 150 metrů nad dolní stanicí lyžařského vleku Bramberg – Hnědý
+    Vrch přímo na nejdelší sjezdovce v Peci". Výšku nese jen katalog
+    České hory a na dvou stránkách si protiřečí (960 × 935 m, triáž
+    DATA-27) — VNITŘNÍ ROZPOR, výška se nezapisuje. GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/2339819012 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita se NEZAPISUJE: krajský katalog 55 lůžek × Kudy z nudy
+# „i s přistýlkami 50" — rozpor se přiznává, nerozhodujeme.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    krajský katalog (region-krkonose.cz, otevřeno 27. 7. 2026): „Kapacita
+    objektu: 55 lůžek" × Kudy z nudy (otevřeno 27. 7. 2026): „celkem
+    i s přistýlkami 50 lůžek" — ROZPOR, číslo se nezapisuje. „Polovina
+    pokojů má vlastní koupelnu se sprchou a WC" (Kudy z nudy).
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# „bar" nese próza; komu přesně restaurace slouží, prameny neříkají
+# (poznámka dle DATA-25 v próze).
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    krajský katalog (region-krkonose.cz, otevřeno 27. 7. 2026), doslova:
+    „k dispozici je jídelna pro 55 osob, restaurace s barem pro 30 osob
+    a letní zahrádka". Kudy z nudy: „dobrá česká kuchyně s velkými
+    porcemi a oblíbenými moučníky". Zda restaurace slouží
+    i neubytovaným, prameny neuvádějí.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ PRÁZDNÝ: chalupu chovatelů Tippeltových prameny
+# nedatují. Milníky nesou letopočty z Kudy z nudy; „krátce po roce 1900"
+# je v textu milníku doslova.
+milniky:
+  - rok: 1900
+    udalost: >-
+      Podle Kudy z nudy zřídil krátce po roce 1900 Johann Hofer, obchodník
+      s horským máslem, na půdě hostinské pokoje
+  - rok: 1945
+    udalost: >-
+      Podle Kudy z nudy nový správce boudy Karel Lefler dům přejmenoval
+      na Smetanovu boudu
+overeniHistorie:
+  source: >-
+    Kudy z nudy (kudyznudy.cz, otevřeno 27. 7. 2026), doslova: „v prosté
+    chalupě dlouho hospodařili chovatelé dobytka Tippeltové"; „Krátce po
+    roce 1900 Johann Hofer, obchodník s horským máslem, zřídil na půdě
+    hostinské pokoje"; „V roce 1945 nový správce boudy Karel Lefler dům
+    přejmenoval na Smetanovu boudu". Instituční katalog bez odkazů na
+    doklady — próza připisuje. POZNÁMKA: triáž DATA-27 nesla citaci
+    v mírně zkomoleném tvaru („Původně byla ‚prosté chalupou'…") —
+    opraveno podle živé stránky.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# kontakty.web NEVYPLNĚN: chatasmetanka.cz (z DATA-03 signálu) vrací 404 —
+# mrtvý či přestěhovaný web, nevedeme ho.
+overeniProvoz:
+  source: >-
+    aktivní záznamy v katalozích (region-krkonose.cz, Kudy z nudy,
+    regiontourist.cz, sdružení cestovního ruchu Pece; hledáno a otevřeno
+    27. 7. 2026) vedou chatu v provozu. Web chatasmetanka.cz z dřívějšího
+    hledání vrací 404 (27. 7. 2026) — nezapisuje se. Provozovatel vlastním
+    dotazem neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata přímo na sjezdovce Hnědý vrch nad Pecí pod Sněžkou, jejíž příběh
+  začíná u chovatelů dobytka Tippeltových: krátce po roce 1900 tu podle
+  Kudy z nudy zřídil obchodník s máslem Johann Hofer první hostinské
+  pokoje a od roku 1945 nese dům jméno po Smetanovi. Dnes tu běží
+  restaurace s barem, jídelna i letní zahrádka.
+text:
+  - >-
+    Chata Smetánka leží podle krajského katalogu přímo na sjezdovce
+    Hnědý vrch ve skiareálu Pece pod Sněžkou — Kudy z nudy měří sto
+    padesát metrů od dolní stanice vleku. Nadmořskou výšku neuvádíme
+    schválně: jediný katalog, který ji nese, si na dvou vlastních
+    stránkách protiřečí, a tak raději necháváme pole prázdné.
+  - >-
+    Historii domu přebíráme z Kudy z nudy s připsáním: v prosté chalupě
+    dlouho hospodařili chovatelé dobytka Tippeltové, krátce po roce 1900
+    tu Johann Hofer, obchodník s horským máslem, zřídil na půdě hostinské
+    pokoje — a právě tímhle okamžikem se z chalupy stala bouda sloužící
+    hostům. V roce 1945 pak nový správce Karel Lefler dům přejmenoval
+    na Smetanovu boudu; dnešní Smetánka je zdrobnělina téhož jména.
+  - >-
+    Dnes chata podle krajského katalogu nabízí jídelnu pro pětapadesát
+    lidí, restauraci s barem pro třicet a letní zahrádku; Kudy z nudy
+    chválí českou kuchyni s velkými porcemi. Na počtu lůžek se ale
+    prameny neshodnou — padesát s přistýlkami proti pětapadesáti — a tak
+    číslo nepřebíráme. A jestli restaurace obslouží i turistu, který jen
+    schází ze svahu, prameny neříkají; netvrdíme to.
+  - >-
+    Údaje pocházejí z krajského katalogu a z Kudy z nudy; vlastním
+    dotazem u provozovatele jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Kudy z nudy — historie (Tippeltové, Hofer po 1900, Lefler 1945),
+      50 lůžek s přistýlkami, kuchyně (otevřeno 27. 7. 2026)
+    url: https://www.kudyznudy.cz/aktivity/chata-smetanka-nad-peci-pod-snezkou
+  - popis: >-
+      Krajský katalog region-krkonose.cz — sjezdovka Hnědý vrch, 55 lůžek,
+      jídelna 55 / restaurace s barem 30, letní zahrádka (otevřeno
+      27. 7. 2026)
+    url: https://www.region-krkonose.cz/ubytovani/pec-pod-snezkou/horske-chaty-apartmany/chata-smetanka/
+  - popis: >-
+      Katalog České hory — vnitřní rozpor výšky 960 × 935 m (triáž
+      DATA-27, 26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chata-smetanka.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 + spot-fetch KzN a region-krkonose (obě živé, citace potvrzeny; KzN přinesl rozpor kapacity 50 × 55).
+  REVIZE VERDIKTU: 20. 7. „penzion — nezařazovat"; triáž DATA-27 doložila hostinské pokoje od ~1900 → klíč DATA-25 (turistická minulost) splněn, zařazeno.
+  CITACE OPRAVENA: triáž nesla „Původně byla ‚prosté chalupou'…" — živá stránka KzN říká „v prosté chalupě dlouho hospodařili chovatelé dobytka Tippeltové". Doklad, proč se cituje z živých stránek, ne z výtahů.
+  ROZPORY: výška 960 × 935 (vnitřní, České hory) — nezapsána; kapacita 50 (KzN) × 55 (region-krkonose) — nezapsána.
+  WEB: chatasmetanka.cz vrací 404 (27. 7. 2026) — hledat nový web / ověřit telefonátem (DATA-04).
+  K dotažení: výška, kapacita a web od provozovatele, komu slouží restaurace, hero fotka.
