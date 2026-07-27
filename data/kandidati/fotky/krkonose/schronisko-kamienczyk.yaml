@@ -1,21 +1,24 @@
-# Schronisko Kamieńczyk — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Schronisko Kamieńczyk na commons.wikimedia.org
+# Schronisko Kamieńczyk — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Schronisko Kamieńczyk + fulltext „Schronisko Kamieńczyk" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: schronisko-kamienczyk
 oblast: krkonose
 nazevChaty: Schronisko Kamieńczyk
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:SchroniskoKamieńczyk2021.jpg
     autor: Karol Szejner
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:SchroniskoKamie%C5%84czyk2021.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/7d/SchroniskoKamie%C5%84czyk2021.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/SchroniskoKamie%C5%84czyk2021.jpg/960px-SchroniskoKamie%C5%84czyk2021.jpg
     rozmery: 1809×1504
@@ -27,7 +30,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Kamie%C5%84czyk_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/3e/Schronisko_Kamie%C5%84czyk_-_panoramio.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Schronisko_Kamie%C5%84czyk_-_panoramio.jpg/960px-Schronisko_Kamie%C5%84czyk_-_panoramio.jpg
     rozmery: 1600×1200
@@ -159,7 +162,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_%22Kamie%C5%84czyk%22_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/10/Schronisko_%22Kamie%C5%84czyk%22_-_panoramio.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Schronisko_%22Kamie%C5%84czyk%22_-_panoramio.jpg/960px-Schronisko_%22Kamie%C5%84czyk%22_-_panoramio.jpg
     rozmery: 1280×960
@@ -410,3 +413,133 @@ fotky:
     vzdalenostM: 244
     datum: Taken on 21 October 2011
     popis: Wodospad Kamieńczyk
+  - soubor: File:Bergbauden im Riesengebirge.jpg
+    autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
+      MagentaGreen
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bergbauden_im_Riesengebirge.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Bergbauden_im_Riesengebirge.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bergbauden_im_Riesengebirge.jpg/960px-Bergbauden_im_Riesengebirge.jpg
+    rozmery: 2880×2160
+    datum: 2019-01-17
+    popis: Location map of the mountain huts in the Giant Mountains
+  - soubor: File:Gruß vom Zackelfall (retuschiert).jpg
+    autor: Unknown author Unknown author
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Gru%C3%9F_vom_Zackelfall_(retuschiert).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/89/Gru%C3%9F_vom_Zackelfall_%28retuschiert%29.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Gru%C3%9F_vom_Zackelfall_%28retuschiert%29.jpg/960px-Gru%C3%9F_vom_Zackelfall_%28retuschiert%29.jpg
+    rozmery: 1328×864
+    datum: before 1900 date QS:P,+1900-00-00T00:00…
+    popis: "Historical postcard from the year 1900: lithograph, pictures of the
+      Zackelfall, Zackelklamm and the restaurant at the Zackelfall"
+  - soubor: File:Kamieńczyk schronisko.JPG
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Kamie%C5%84czyk_schronisko.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/5/58/Kamie%C5%84czyk_schronisko.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Kamie%C5%84czyk_schronisko.JPG/960px-Kamie%C5%84czyk_schronisko.JPG
+    rozmery: 1600×1200
+    datum: 2007-12
+    popis: Schronisko "Kamieńczyk" w Karkonoszach
+  - soubor: File:Kamienczyk Waterfall Old 01.jpg
+    autor: "Unknown author Unknown author Verlag/publisher: Louis Glaser, Leipzig"
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Kamienczyk_Waterfall_Old_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/06/Kamienczyk_Waterfall_Old_01.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kamienczyk_Waterfall_Old_01.jpg/960px-Kamienczyk_Waterfall_Old_01.jpg
+    rozmery: 2005×3160
+    datum: Unknown date, early 20th century
+    popis: Kamieńczyk Waterfall (27 m), Karkonosze Mountains, Germany, now Poland.
+  - soubor: File:Kamienczyk Waterfall Old 02.jpg
+    autor: Jojo , en:Jojo_1 , pl:Jojo
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Kamienczyk_Waterfall_Old_02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/1c/Kamienczyk_Waterfall_Old_02.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kamienczyk_Waterfall_Old_02.jpg/960px-Kamienczyk_Waterfall_Old_02.jpg
+    rozmery: 1874×2827
+    datum: 2006-08-29
+    popis: Hut near Kamieńczyk Waterfall, Karkonosze, Germany now Poland.
+  - soubor: File:Schronisko Kamieńczyk - rzeźba Sówki.jpg
+    autor: Szydzio
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Kamie%C5%84czyk_-_rze%C5%BAba_S%C3%B3wki.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c3/Schronisko_Kamie%C5%84czyk_-_rze%C5%BAba_S%C3%B3wki.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Schronisko_Kamie%C5%84czyk_-_rze%C5%BAba_S%C3%B3wki.jpg/960px-Schronisko_Kamie%C5%84czyk_-_rze%C5%BAba_S%C3%B3wki.jpg
+    rozmery: 2448×3264
+    datum: 2017-08-14 12:16:04
+    popis: rzeźba obok Schroniska Kamieńczyk w Szklarskiej Porębie
+  - soubor: File:Schronisko Kamieńczyk.JPG
+    autor: J a1
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Kamie%C5%84czyk.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/4/4f/Schronisko_Kamie%C5%84czyk.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Schronisko_Kamie%C5%84czyk.JPG/960px-Schronisko_Kamie%C5%84czyk.JPG
+    rozmery: 3264×2448
+    datum: 2008-09-19
+    popis: Mountain shelter "Kamieńczyk" in en:Giant Mountains
+  - soubor: File:Szklarska Poreba Old 03.jpg
+    autor: Jojo , en:Jojo_1 , pl:Jojo
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Poreba_Old_03.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/ad/Szklarska_Poreba_Old_03.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Szklarska_Poreba_Old_03.jpg/960px-Szklarska_Poreba_Old_03.jpg
+    rozmery: 1956×3180
+    datum: "1940"
+    popis: Szklarska Poreba, near Kamienczyk Waterfall, Germany, now Poland.
+  - soubor: File:Szklarska Poręba, Schronisko Kamieńczyk - fotopolska.eu (295248).jpg
+    autor: Neo[EZN]
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Schronisko_Kamie%C5%84czyk_-_fotopolska.eu_(295248).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/2e/Szklarska_Por%C4%99ba%2C_Schronisko_Kamie%C5%84czyk_-_fotopolska.eu_%28295248%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Szklarska_Por%C4%99ba%2C_Schronisko_Kamie%C5%84czyk_-_fotopolska.eu_%28295248%29.jpg/960px-Szklarska_Por%C4%99ba%2C_Schronisko_Kamie%C5%84czyk_-_fotopolska.eu_%28295248%29.jpg
+    rozmery: 1300×863
+    datum: 2012-03-28
+    popis: Schronisko "Kamieńczyk".
+  - soubor: File:Szklarska Poręba, Schronisko Kamieńczyk (Zackelfallbaude).jpg
+    autor: SchiDD
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Schronisko_Kamie%C5%84czyk_(Zackelfallbaude).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b4/Szklarska_Por%C4%99ba%2C_Schronisko_Kamie%C5%84czyk_%28Zackelfallbaude%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Szklarska_Por%C4%99ba%2C_Schronisko_Kamie%C5%84czyk_%28Zackelfallbaude%29.jpg/960px-Szklarska_Por%C4%99ba%2C_Schronisko_Kamie%C5%84czyk_%28Zackelfallbaude%29.jpg
+    rozmery: 1811×1358
+    datum: 2014-05-21 10:00:07
+    popis: Schronisko Kamieńczyk w Szklarskiej Porębie
+  - soubor: File:Szklarska Poręba, schronisko Kamieńczyk.jpg
+    autor: Platanacero
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_schronisko_Kamie%C5%84czyk.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b8/Szklarska_Por%C4%99ba%2C_schronisko_Kamie%C5%84czyk.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Szklarska_Por%C4%99ba%2C_schronisko_Kamie%C5%84czyk.jpg/960px-Szklarska_Por%C4%99ba%2C_schronisko_Kamie%C5%84czyk.jpg
+    rozmery: 2304×1728
+    datum: 2009-04-12
+    popis: Szklarska Poręba, schronisko Kamieńczyk.
+  - soubor: File:Zackelfallbaude 1925.jpg
+    autor: Unknown author Unknown author
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Zackelfallbaude_1925.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b7/Zackelfallbaude_1925.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Zackelfallbaude_1925.jpg/960px-Zackelfallbaude_1925.jpg
+    rozmery: 992×640
+    datum: "1925"
+    popis: Historical postcard of the Zackelfallbaude (Kamieńczyk Hostel) from the
+      year 1925

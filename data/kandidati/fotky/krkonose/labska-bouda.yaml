@@ -1,21 +1,24 @@
-# Labská bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Labská bouda na commons.wikimedia.org
+# Labská bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Labská bouda + fulltext „Labská bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: labska-bouda
 oblast: krkonose
 nazevChaty: Labská bouda
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: data/chaty"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Labska bouda A 22211.JPG
     autor: Ciacho5
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Labska_bouda_A_22211.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/7/70/Labska_bouda_A_22211.JPG
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Labska_bouda_A_22211.JPG/960px-Labska_bouda_A_22211.JPG
     rozmery: 3104×1746
@@ -38,7 +41,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Hotel_Labsk%C3%A1_bouda.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/52/Hotel_Labsk%C3%A1_bouda.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hotel_Labsk%C3%A1_bouda.jpg/960px-Hotel_Labsk%C3%A1_bouda.jpg
     rozmery: 3968×2976
@@ -51,7 +54,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%A1_bouda_(01)_(cropped).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/65/Labsk%C3%A1_bouda_%2801%29_%28cropped%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Labsk%C3%A1_bouda_%2801%29_%28cropped%29.jpg/960px-Labsk%C3%A1_bouda_%2801%29_%28cropped%29.jpg
     rozmery: 3575×1717
@@ -63,7 +66,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%A1_bouda_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/6b/Labsk%C3%A1_bouda_%2801%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Labsk%C3%A1_bouda_%2801%29.jpg/960px-Labsk%C3%A1_bouda_%2801%29.jpg
     rozmery: 3648×2340
@@ -99,7 +102,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Je%C5%99abiny_u_Labsk%C3%A9_boudy.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/74/Je%C5%99abiny_u_Labsk%C3%A9_boudy.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Je%C5%99abiny_u_Labsk%C3%A9_boudy.jpg/960px-Je%C5%99abiny_u_Labsk%C3%A9_boudy.jpg
     rozmery: 2048×1536
@@ -134,7 +137,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Czechy,_Labska_Bouda_-_panoramio_(cropped),_II.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/dd/Czechy%2C_Labska_Bouda_-_panoramio_%28cropped%29%2C_II.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Czechy%2C_Labska_Bouda_-_panoramio_%28cropped%29%2C_II.jpg/960px-Czechy%2C_Labska_Bouda_-_panoramio_%28cropped%29%2C_II.jpg
     rozmery: 1461×1096
@@ -146,7 +149,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Czechy,_Labska_Bouda_-_panoramio_(cropped).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5c/Czechy%2C_Labska_Bouda_-_panoramio_%28cropped%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Czechy%2C_Labska_Bouda_-_panoramio_%28cropped%29.jpg/960px-Czechy%2C_Labska_Bouda_-_panoramio_%28cropped%29.jpg
     rozmery: 1443×660
@@ -158,7 +161,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Czechy,_Labska_Bouda_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/3d/Czechy%2C_Labska_Bouda_-_panoramio.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Czechy%2C_Labska_Bouda_-_panoramio.jpg/960px-Czechy%2C_Labska_Bouda_-_panoramio.jpg
     rozmery: 2816×2112
@@ -206,7 +209,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Labski_Wodospad_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5d/Labski_Wodospad_-_panoramio.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Labski_Wodospad_-_panoramio.jpg/960px-Labski_Wodospad_-_panoramio.jpg
     rozmery: 4000×3000
@@ -254,7 +257,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%BD_d%C5%AFl_-_Harrachova_cesta.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/71/Labsk%C3%BD_d%C5%AFl_-_Harrachova_cesta.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Labsk%C3%BD_d%C5%AFl_-_Harrachova_cesta.jpg/960px-Labsk%C3%BD_d%C5%AFl_-_Harrachova_cesta.jpg
     rozmery: 4000×3000
@@ -382,7 +385,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Labska_bouda_A_1112.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/3/3a/Labska_bouda_A_1112.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Labska_bouda_A_1112.JPG/960px-Labska_bouda_A_1112.JPG
     rozmery: 3104×1746
@@ -394,7 +397,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Stezka_k_Labsk%C3%A9_boud%C4%9B.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/32/Stezka_k_Labsk%C3%A9_boud%C4%9B.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Stezka_k_Labsk%C3%A9_boud%C4%9B.jpg/960px-Stezka_k_Labsk%C3%A9_boud%C4%9B.jpg
     rozmery: 2048×1536
@@ -407,7 +410,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%BD_d%C5%AFl.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/6f/Labsk%C3%BD_d%C5%AFl.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Labsk%C3%BD_d%C5%AFl.jpg/960px-Labsk%C3%BD_d%C5%AFl.jpg
     rozmery: 2041×1262
@@ -415,22 +418,84 @@ fotky:
     datum: 2004-10-09
     popis: A view of Krkonoše Mountains from a trail near Vrbatova bouda, the Czech
       Republic.
+  - soubor: File:Elbefallbaude, Schlesien - Elbfall; Pantschefall (Zeno
+      Ansichtskarten).jpg
+    autor: Gebr. Metz Kunstverlag-Anstalt, Tübingen
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Elbefallbaude,_Schlesien_-_Elbfall;_Pantschefall_(Zeno_Ansichtskarten).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/52/Elbefallbaude%2C_Schlesien_-_Elbfall%3B_Pantschefall_%28Zeno_Ansichtskarten%29.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Elbefallbaude%2C_Schlesien_-_Elbfall%3B_Pantschefall_%28Zeno_Ansichtskarten%29.jpg/960px-Elbefallbaude%2C_Schlesien_-_Elbfall%3B_Pantschefall_%28Zeno_Ansichtskarten%29.jpg
+    rozmery: 2201×1437
+    datum: circa 1900 date QS:P571,+1900-00-00T00:…
+    popis: Elbfall; Pantschefall
+  - soubor: File:Elbfall Riesengebirge Germany.jpg
+    autor: Snapshots Of The Past
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Elbfall_Riesengebirge_Germany.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/af/Elbfall_Riesengebirge_Germany.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Elbfall_Riesengebirge_Germany.jpg/960px-Elbfall_Riesengebirge_Germany.jpg
+    rozmery: 1061×827
+    datum: 2007-01-09 00:13
+    popis: Elbfall Riesengebirge Germany
+  - soubor: File:Elbfall.jpg
+    autor: Unknown author Unknown author
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Elbfall.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/6c/Elbfall.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Elbfall.jpg/960px-Elbfall.jpg
+    rozmery: 3412×2496
+    datum: between 1890 and 1905 date QS:P,+1500-0…
+    popis: Labský vodopád kolem roku 1900
   - soubor: File:Krkonoše-Labská-bouda-Violík-a-Wawel2009.jpg
     autor: Ben Skála, Benfoto
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Krkono%C5%A1e-Labsk%C3%A1-bouda-Viol%C3%ADk-a-Wawel2009.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9c/Krkono%C5%A1e-Labsk%C3%A1-bouda-Viol%C3%ADk-a-Wawel2009.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Krkono%C5%A1e-Labsk%C3%A1-bouda-Viol%C3%ADk-a-Wawel2009.jpg/960px-Krkono%C5%A1e-Labsk%C3%A1-bouda-Viol%C3%ADk-a-Wawel2009.jpg
     rozmery: 4288×2848
     datum: 2009-08-24 11:34:56
+  - soubor: File:Labská bouda 1901.jpg
+    autor: Rudolf Brunner-Dvořák
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%A1_bouda_1901.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/58/Labsk%C3%A1_bouda_1901.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Labsk%C3%A1_bouda_1901.jpg/960px-Labsk%C3%A1_bouda_1901.jpg
+    rozmery: 2598×1937
+    datum: "1901"
+    popis: Labská bouda v roce 1901
+  - soubor: File:Labská bouda 1921.jpg
+    autor: Unknown author Unknown author
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%A1_bouda_1921.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/6c/Labsk%C3%A1_bouda_1921.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Labsk%C3%A1_bouda_1921.jpg/960px-Labsk%C3%A1_bouda_1921.jpg
+    rozmery: 1745×1680
+    datum: "1921"
+    popis: The original Labská bouda in 1921
+  - soubor: File:Labska Bouda 1953.png
+    autor: Unknown author Unknown author
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Labska_Bouda_1953.png
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e4/Labska_Bouda_1953.png
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/e/e4/Labska_Bouda_1953.png
+    rozmery: 898×632
+    datum: cca 1953
+    popis: Původní Labská Bouda v roce 1953
   - soubor: File:Labská bouda 2.JPG
     autor: Klára Nováková (Altáriel)
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%A1_bouda_2.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/1/1b/Labsk%C3%A1_bouda_2.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Labsk%C3%A1_bouda_2.JPG/960px-Labsk%C3%A1_bouda_2.JPG
     rozmery: 1732×1155
@@ -441,7 +506,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%A1_bouda_2019_(cropped).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a7/Labsk%C3%A1_bouda_2019_%28cropped%29.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Labsk%C3%A1_bouda_2019_%28cropped%29.jpg/960px-Labsk%C3%A1_bouda_2019_%28cropped%29.jpg
     rozmery: 1785×942
@@ -452,7 +517,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%A1_bouda_2019.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/49/Labsk%C3%A1_bouda_2019.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Labsk%C3%A1_bouda_2019.jpg/960px-Labsk%C3%A1_bouda_2019.jpg
     rozmery: 3264×2448
@@ -463,7 +528,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Labska_bouda_A11122.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/3/3f/Labska_bouda_A11122.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Labska_bouda_A11122.JPG/960px-Labska_bouda_A11122.JPG
     rozmery: 3104×1746
@@ -474,7 +539,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%A1_bouda_in_february_2021.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/38/Labsk%C3%A1_bouda_in_february_2021.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Labsk%C3%A1_bouda_in_february_2021.jpg/960px-Labsk%C3%A1_bouda_in_february_2021.jpg
     rozmery: 4160×3120
@@ -485,7 +550,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Labsk%C3%A1_bouda,_Krkono%C5%A1e.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/f/f2/Labsk%C3%A1_bouda%2C_Krkono%C5%A1e.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Labsk%C3%A1_bouda%2C_Krkono%C5%A1e.JPG/960px-Labsk%C3%A1_bouda%2C_Krkono%C5%A1e.JPG
     rozmery: 1732×1155
@@ -496,7 +561,7 @@ fotky:
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:LB_predni_zimni.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/97/LB_predni_zimni.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/9/97/LB_predni_zimni.jpg
     rozmery: 720×540
@@ -507,7 +572,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Na_cest%C4%9B_k_Labsk%C3%A9_boud%C4%9B.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5a/Na_cest%C4%9B_k_Labsk%C3%A9_boud%C4%9B.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/5/5a/Na_cest%C4%9B_k_Labsk%C3%A9_boud%C4%9B.jpg
     rozmery: 960×720
@@ -568,12 +633,23 @@ fotky:
     rozmery: 1536×2048
     datum: 31.12.2025
     popis: Nedaleko Labské boudy v Krkonoších. Je to asi katastr Špindlerova Mlýna.
+  - soubor: File:Riesengebirge, Schlesien - Elbfallbaude und Elbfall (Zeno
+      Ansichtskarten).jpg
+    autor: Max Leipelt, Warmbrunn
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Riesengebirge,_Schlesien_-_Elbfallbaude_und_Elbfall_(Zeno_Ansichtskarten).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c9/Riesengebirge%2C_Schlesien_-_Elbfallbaude_und_Elbfall_%28Zeno_Ansichtskarten%29.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Riesengebirge%2C_Schlesien_-_Elbfallbaude_und_Elbfall_%28Zeno_Ansichtskarten%29.jpg/960px-Riesengebirge%2C_Schlesien_-_Elbfallbaude_und_Elbfall_%28Zeno_Ansichtskarten%29.jpg
+    rozmery: 1432×2182
+    datum: circa 1900 date QS:P571,+1900-00-00T00:…
+    popis: Elbfallbaude und Elbfall
   - soubor: File:Urlaub Juli-72-2.jpg
     autor: Erich Braun
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Urlaub_Juli-72-2.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/db/Urlaub_Juli-72-2.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Urlaub_Juli-72-2.jpg/960px-Urlaub_Juli-72-2.jpg
     rozmery: 1732×1100

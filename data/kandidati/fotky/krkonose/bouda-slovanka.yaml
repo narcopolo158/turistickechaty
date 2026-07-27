@@ -1,21 +1,24 @@
-# Bouda Slovanka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Bouda Slovanka na commons.wikimedia.org
+# Bouda Slovanka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Bouda Slovanka + fulltext „Bouda Slovanka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: bouda-slovanka
 oblast: krkonose
 nazevChaty: Bouda Slovanka
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  kandidát DATA-01"
+checked: 2026-07-27
 fotky:
   - soubor: File:Černý Důl, Lučiny, čp. 182, Slovanka (01).jpg
     autor: ŠJů
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._182,_Slovanka_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/00/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._182%2C_Slovanka_%2801%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._182%2C_Slovanka_%2801%29.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._182%2C_Slovanka_%2801%29.jpg
     rozmery: 2592×1944
@@ -64,7 +67,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Diny,_Slovanka.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/e4/Lu%C4%8Diny%2C_Slovanka.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lu%C4%8Diny%2C_Slovanka.jpg/960px-Lu%C4%8Diny%2C_Slovanka.jpg
     rozmery: 4770×3178
@@ -76,7 +79,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._182,_Slovanka.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/87/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._182%2C_Slovanka.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._182%2C_Slovanka.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._182%2C_Slovanka.jpg
     rozmery: 2592×1944
@@ -187,7 +190,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._266.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/00/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._266.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._266.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._266.jpg
     rozmery: 2592×1944
@@ -272,7 +275,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._215,_Pra%C5%BEsk%C3%A1_bouda_(05).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/b2/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda_%2805%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda_%2805%29.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda_%2805%29.jpg
     rozmery: 2518×1791
@@ -359,7 +362,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._215,_Pra%C5%BEsk%C3%A1_bouda,_vlevo_Slovanka.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/60/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda%2C_vlevo_Slovanka.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda%2C_vlevo_Slovanka.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda%2C_vlevo_Slovanka.jpg
     rozmery: 2592×1944
@@ -416,3 +419,29 @@ fotky:
     vzdalenostM: 245
     datum: Taken on 27 May 2023
     popis: Černý Důl , Trutnov District , Czechia . House no. 215, Pražská bouda.
+  - soubor: File:Boudy a Obri Dul.JPG
+    autor: O. Mejsnar
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Boudy_a_Obri_Dul.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/2/24/Boudy_a_Obri_Dul.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Boudy_a_Obri_Dul.JPG/960px-Boudy_a_Obri_Dul.JPG
+    rozmery: 3872×2592
+    datum: 2012-03-03
+    popis: "Pohled z modré turistické trasy na úbočí Černé hory (1299 m.n.m.).
+      Zprava: pension Oddech, Lidická bouda, bouda Slovanka, v pozadí Obří Důl"
+  - soubor: File:Krkonosske boudy.JPG
+    autor: O. Mejsnar
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Krkonosske_boudy.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/f/fb/Krkonosske_boudy.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Krkonosske_boudy.JPG/960px-Krkonosske_boudy.JPG
+    rozmery: 3872×2592
+    datum: 2012-03-03
+    popis: "Pohled z modré turistické trasy na úbočí Černé hory (1299
+      m.n.m.):Zprava: nad lesem Lesní bouda, nad ní Liščí hora a na ní Lyžařská
+      bouda, vysílač Lučiny (1084 m.n.m.), nad ní sjezdovky na Vysokém Svahu nad
+      Pecí pod Sněžkou, nad nimi rozhl…"

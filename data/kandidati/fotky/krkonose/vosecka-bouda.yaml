@@ -1,21 +1,24 @@
-# Vosecká bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Vosecká bouda na commons.wikimedia.org
+# Vosecká bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Vosecká bouda + fulltext „Vosecká bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: vosecka-bouda
 oblast: krkonose
 nazevChaty: Vosecká bouda
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: data/chaty"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Vosecka bouda 003.jpg
     autor: Balaban
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Vosecka_bouda_003.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/91/Vosecka_bouda_003.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Vosecka_bouda_003.jpg/960px-Vosecka_bouda_003.jpg
     rozmery: 2592×1944
@@ -27,7 +30,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Vosecka_bouda_004.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9e/Vosecka_bouda_004.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Vosecka_bouda_004.jpg/960px-Vosecka_bouda_004.jpg
     rozmery: 2592×1944
@@ -39,7 +42,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Vosecka_bouda_005.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/56/Vosecka_bouda_005.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Vosecka_bouda_005.jpg/960px-Vosecka_bouda_005.jpg
     rozmery: 2592×1944
@@ -51,7 +54,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Voseck%C3%A1_bouda_-_Wossecker_Baude_(retouched).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/ec/Voseck%C3%A1_bouda_-_Wossecker_Baude_%28retouched%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Voseck%C3%A1_bouda_-_Wossecker_Baude_%28retouched%29.jpg/960px-Voseck%C3%A1_bouda_-_Wossecker_Baude_%28retouched%29.jpg
     rozmery: 2592×1944
@@ -63,7 +66,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Voseck%C3%A1_bouda_-_Wossecker_Baude.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/d/d5/Voseck%C3%A1_bouda_-_Wossecker_Baude.JPG
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Voseck%C3%A1_bouda_-_Wossecker_Baude.JPG/960px-Voseck%C3%A1_bouda_-_Wossecker_Baude.JPG
     rozmery: 2592×1944
@@ -75,7 +78,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Vosecka_bouda_006.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/06/Vosecka_bouda_006.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Vosecka_bouda_006.jpg/960px-Vosecka_bouda_006.jpg
     rozmery: 1920×1207
     vzdalenostM: 39
@@ -86,7 +89,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Vosecka_bouda_002.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/ad/Vosecka_bouda_002.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Vosecka_bouda_002.jpg/960px-Vosecka_bouda_002.jpg
     rozmery: 2592×1944
@@ -110,18 +113,65 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Vosecka_bouda_0001.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a7/Vosecka_bouda_0001.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Vosecka_bouda_0001.jpg/960px-Vosecka_bouda_0001.jpg
     rozmery: 1920×1171
     vzdalenostM: 47
     datum: Beginning of the 20th century
     popis: Vosecká bouda
+  - soubor: File:Szklarska Poręba - Karpacz 10 - panoramio.jpg
+    autor: marek7400
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba_-_Karpacz_10_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c5/Szklarska_Por%C4%99ba_-_Karpacz_10_-_panoramio.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Szklarska_Por%C4%99ba_-_Karpacz_10_-_panoramio.jpg/960px-Szklarska_Por%C4%99ba_-_Karpacz_10_-_panoramio.jpg
+    rozmery: 3648×2056
+    vzdalenostM: 451
+    datum: Taken on 16 September 2011
+    popis: Szklarska Poręba - Karpacz 10
+  - soubor: File:Bergbauden im Riesengebirge.jpg
+    autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
+      MagentaGreen
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bergbauden_im_Riesengebirge.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Bergbauden_im_Riesengebirge.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bergbauden_im_Riesengebirge.jpg/960px-Bergbauden_im_Riesengebirge.jpg
+    rozmery: 2880×2160
+    datum: 2019-01-17
+    popis: Location map of the mountain huts in the Giant Mountains
+  - soubor: File:Hala Szrenicka widok.jpg
+    autor: Andrzej Otrębski
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Hala_Szrenicka_widok.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/3c/Hala_Szrenicka_widok.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Hala_Szrenicka_widok.jpg/960px-Hala_Szrenicka_widok.jpg
+    rozmery: 2816×2112
+    datum: Taken on 18 August 2013, 11:40:14
+    popis: Hala Szrenicka (Giant Mountains)
+  - soubor: File:Szrenica .jpg
+    autor: No machine-readable author provided. M k assumed (based on copyright
+      claims).
+    licence: CC BY 2.5
+    stranka: https://commons.wikimedia.org/wiki/File:Szrenica_.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/9e/Szrenica_.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/2.5
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Szrenica_.jpg/960px-Szrenica_.jpg
+    rozmery: 1024×768
+    datum: 30 July 2005 (according to Exif data)
+    popis: Schronisko na Szrenicy
   - soubor: File:Vosecka bouda 2015 sign.jpg
     autor: SkywalkerPL
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Vosecka_bouda_2015_sign.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/7f/Vosecka_bouda_2015_sign.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Vosecka_bouda_2015_sign.jpg/960px-Vosecka_bouda_2015_sign.jpg
     rozmery: 4078×6110
@@ -132,7 +182,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Vosecka_bouda_2015.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/02/Vosecka_bouda_2015.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Vosecka_bouda_2015.jpg/960px-Vosecka_bouda_2015.jpg
     rozmery: 7165×4782
@@ -143,7 +193,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Vosecka_Bouda,_4.6.1999.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a2/Vosecka_Bouda%2C_4.6.1999.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vosecka_Bouda%2C_4.6.1999.jpg/960px-Vosecka_Bouda%2C_4.6.1999.jpg
     rozmery: 987×1276

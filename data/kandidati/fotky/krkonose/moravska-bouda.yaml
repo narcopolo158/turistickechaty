@@ -1,21 +1,24 @@
-# Moravská bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Moravská bouda na commons.wikimedia.org
+# Moravská bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Moravská bouda + fulltext „Moravská bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: moravska-bouda
 oblast: krkonose
 nazevChaty: Moravská bouda
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Špindlerův Mlýn, Moravská bouda (01).jpg
     autor: ŠJů
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C5%A0pindler%C5%AFv_Ml%C3%BDn,_Moravsk%C3%A1_bouda_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/01/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_Moravsk%C3%A1_bouda_%2801%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_Moravsk%C3%A1_bouda_%2801%29.jpg/960px-%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_Moravsk%C3%A1_bouda_%2801%29.jpg
     rozmery: 2592×1944
@@ -67,7 +70,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C5%A0pindler%C5%AFv_Ml%C3%BDn,_Moravsk%C3%A1_bouda.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/51/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_Moravsk%C3%A1_bouda.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_Moravsk%C3%A1_bouda.jpg/960px-%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_Moravsk%C3%A1_bouda.jpg
     rozmery: 2395×1518
@@ -93,7 +96,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C5%A0pindler%C5%AFv_Ml%C3%BDn,_Moravsk%C3%A1_bouda_(02).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/0f/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_Moravsk%C3%A1_bouda_%2802%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_Moravsk%C3%A1_bouda_%2802%29.jpg/960px-%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_Moravsk%C3%A1_bouda_%2802%29.jpg
     rozmery: 2592×1944
@@ -106,7 +109,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Krkono%C5%A1e_(3).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/39/Krkono%C5%A1e_%283%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Krkono%C5%A1e_%283%29.jpg/960px-Krkono%C5%A1e_%283%29.jpg
     rozmery: 2640×1808
@@ -217,12 +220,122 @@ fotky:
     datum: Taken on 28 May 2023
     popis: Špindlerův Mlýn , Trutnov District , Czechia . Educational trail of
       animals of Krkonoše.
+  - soubor: File:Stezka Pod Petrovou boudou - Moravská bouda (05).jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_(05).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/13/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2805%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2805%29.jpg/960px-Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2805%29.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 385
+    datum: Taken on 28 May 2023
+    popis: Špindlerův Mlýn , Trutnov District , Czechia . A trail to Moravská bouda
+  - soubor: File:Stezka Pod Petrovou boudou - Moravská bouda, příčná stružka.jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda,_p%C5%99%C3%AD%C4%8Dn%C3%A1_stru%C5%BEka.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/1e/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda%2C_p%C5%99%C3%AD%C4%8Dn%C3%A1_stru%C5%BEka.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda%2C_p%C5%99%C3%AD%C4%8Dn%C3%A1_stru%C5%BEka.jpg/960px-Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda%2C_p%C5%99%C3%AD%C4%8Dn%C3%A1_stru%C5%BEka.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 474
+    datum: Taken on 28 May 2023
+    popis: Špindlerův Mlýn , Trutnov District , Czechia . A trail to Moravská bouda
+  - soubor: File:Petrovy Boudy, směrovka k Dvořákově boudě.jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Petrovy_Boudy,_sm%C4%9Brovka_k_Dvo%C5%99%C3%A1kov%C4%9B_boud%C4%9B.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/89/Petrovy_Boudy%2C_sm%C4%9Brovka_k_Dvo%C5%99%C3%A1kov%C4%9B_boud%C4%9B.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Petrovy_Boudy%2C_sm%C4%9Brovka_k_Dvo%C5%99%C3%A1kov%C4%9B_boud%C4%9B.jpg/960px-Petrovy_Boudy%2C_sm%C4%9Brovka_k_Dvo%C5%99%C3%A1kov%C4%9B_boud%C4%9B.jpg
+    rozmery: 1944×2592
+    vzdalenostM: 494
+    datum: Taken on 28 May 2023
+    popis: Špindlerův Mlýn , Trutnov District , Czechia . A fingerpost by Petrovy
+      Boudy.
+  - soubor: File:Stezka Pod Petrovou boudou - Moravská bouda (04).jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_(04).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a3/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2804%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2804%29.jpg/960px-Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2804%29.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 582
+    datum: Taken on 28 May 2023
+    popis: Špindlerův Mlýn , Trutnov District , Czechia . A trail to Moravská bouda
+  - soubor: File:Stezka Pod Petrovou boudou - Moravská bouda (02).jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_(02).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e1/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2802%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2802%29.jpg/960px-Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2802%29.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 628
+    datum: Taken on 28 May 2023
+    popis: Špindlerův Mlýn , Trutnov District , Czechia . A trail to Moravská bouda
+  - soubor: File:Stezka Pod Petrovou boudou - Moravská bouda (03).jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_(03).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/4e/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2803%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2803%29.jpg/960px-Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2803%29.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 628
+    datum: Taken on 28 May 2023
+    popis: Špindlerův Mlýn , Trutnov District , Czechia . A trail to Moravská bouda
+  - soubor: File:Stezka Pod Petrovou boudou - Moravská bouda (01).jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_(01).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a9/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2801%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2801%29.jpg/960px-Stezka_Pod_Petrovou_boudou_-_Moravsk%C3%A1_bouda_%2801%29.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 709
+    datum: Taken on 28 May 2023
+    popis: Špindlerův Mlýn , Trutnov District , Czechia . A trail to Moravská bouda
+  - soubor: File:Špindlerův Mlýn, odbočka z cesty česko-polského přátelství k
+      Moravské boudě.jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:%C5%A0pindler%C5%AFv_Ml%C3%BDn,_odbo%C4%8Dka_z_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD_k_Moravsk%C3%A9_boud%C4%9B.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c8/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_odbo%C4%8Dka_z_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD_k_Moravsk%C3%A9_boud%C4%9B.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_odbo%C4%8Dka_z_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD_k_Moravsk%C3%A9_boud%C4%9B.jpg/960px-%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_odbo%C4%8Dka_z_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD_k_Moravsk%C3%A9_boud%C4%9B.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 794
+    datum: Taken on 28 May 2023
+    popis: Špindlerův Mlýn , Trutnov District , Czechia . A crossroad.
+  - soubor: File:Bergbauden im Riesengebirge.jpg
+    autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
+      MagentaGreen
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bergbauden_im_Riesengebirge.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Bergbauden_im_Riesengebirge.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bergbauden_im_Riesengebirge.jpg/960px-Bergbauden_im_Riesengebirge.jpg
+    rozmery: 2880×2160
+    datum: 2019-01-17
+    popis: Location map of the mountain huts in the Giant Mountains
   - soubor: File:Moravská bouda, chata Vatra a chata Spindler.jpg
     autor: Jiří Erben
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Moravsk%C3%A1_bouda,_chata_Vatra_a_chata_Spindler.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/56/Moravsk%C3%A1_bouda%2C_chata_Vatra_a_chata_Spindler.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Moravsk%C3%A1_bouda%2C_chata_Vatra_a_chata_Spindler.jpg/960px-Moravsk%C3%A1_bouda%2C_chata_Vatra_a_chata_Spindler.jpg
     rozmery: 2448×1319

@@ -1,21 +1,24 @@
-# Schronisko Samotnia — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Schronisko Samotnia na commons.wikimedia.org
+# Schronisko Samotnia — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Schronisko Samotnia + fulltext „Schronisko Samotnia" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: schronisko-samotnia
 oblast: krkonose
 nazevChaty: Schronisko Samotnia
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Samotniapms.jpg
     autor: Wierszoklet
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Samotniapms.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/3b/Samotniapms.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Samotniapms.jpg/960px-Samotniapms.jpg
     rozmery: 4608×3072
@@ -27,7 +30,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Samotnia_-_Emilia_Ernst.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/51/Samotnia_-_Emilia_Ernst.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Samotnia_-_Emilia_Ernst.jpg/960px-Samotnia_-_Emilia_Ernst.jpg
     rozmery: 4928×3264
@@ -39,7 +42,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_PTTK_Samotnia_nad_Ma%C5%82ym_Stawem.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/ca/Schronisko_PTTK_Samotnia_nad_Ma%C5%82ym_Stawem.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Schronisko_PTTK_Samotnia_nad_Ma%C5%82ym_Stawem.jpg/960px-Schronisko_PTTK_Samotnia_nad_Ma%C5%82ym_Stawem.jpg
     rozmery: 4752×3168
@@ -51,7 +54,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Samotnia11.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5d/Schronisko_Samotnia11.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Schronisko_Samotnia11.jpg/960px-Schronisko_Samotnia11.jpg
     rozmery: 4288×2848
@@ -87,7 +90,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Samotnia_-_Tablica_pami%C4%99ci_Waldemara_Siemaszki.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/0f/Schronisko_Samotnia_-_Tablica_pami%C4%99ci_Waldemara_Siemaszki.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Schronisko_Samotnia_-_Tablica_pami%C4%99ci_Waldemara_Siemaszki.jpg/960px-Schronisko_Samotnia_-_Tablica_pami%C4%99ci_Waldemara_Siemaszki.jpg
     rozmery: 2448×3264
@@ -159,7 +162,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Samotnia01.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/f3/Samotnia01.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Samotnia01.jpg/960px-Samotnia01.jpg
     rozmery: 4288×2848
@@ -231,7 +234,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_%22Samotnia%22_-_Karpacz_-_2010_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/f9/Schronisko_%22Samotnia%22_-_Karpacz_-_2010_-_panoramio.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Schronisko_%22Samotnia%22_-_Karpacz_-_2010_-_panoramio.jpg/960px-Schronisko_%22Samotnia%22_-_Karpacz_-_2010_-_panoramio.jpg
     rozmery: 1024×558
@@ -255,7 +258,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Karpacz_-_%C5%9Anie%C5%BCka_10_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9d/Karpacz_-_%C5%9Anie%C5%BCka_10_-_panoramio.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Karpacz_-_%C5%9Anie%C5%BCka_10_-_panoramio.jpg/960px-Karpacz_-_%C5%9Anie%C5%BCka_10_-_panoramio.jpg
     rozmery: 3648×2056
@@ -267,7 +270,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:SAMOTNIA_KARPACZ_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/af/SAMOTNIA_KARPACZ_-_panoramio.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/SAMOTNIA_KARPACZ_-_panoramio.jpg/960px-SAMOTNIA_KARPACZ_-_panoramio.jpg
     rozmery: 1600×1200
@@ -279,7 +282,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Samotnia_Shelter.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/3/32/Samotnia_Shelter.JPG
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Samotnia_Shelter.JPG/960px-Samotnia_Shelter.JPG
     rozmery: 2560×1440
@@ -291,7 +294,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Samotnia_Shelter1.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/8/8c/Samotnia_Shelter1.JPG
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Samotnia_Shelter1.JPG/960px-Samotnia_Shelter1.JPG
     rozmery: 2560×1440
@@ -364,7 +367,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Widok_Samotni_z_niebieskiego_szlaku_od_strony_Strzechy_Akademickiej_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/78/Widok_Samotni_z_niebieskiego_szlaku_od_strony_Strzechy_Akademickiej_-_panoramio.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Widok_Samotni_z_niebieskiego_szlaku_od_strony_Strzechy_Akademickiej_-_panoramio.jpg/960px-Widok_Samotni_z_niebieskiego_szlaku_od_strony_Strzechy_Akademickiej_-_panoramio.jpg
     rozmery: 1361×907
@@ -376,7 +379,7 @@ fotky:
     licence: CC BY-SA 3.0 pl
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Samotnia.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/8/89/Schronisko_Samotnia.JPG
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Schronisko_Samotnia.JPG/960px-Schronisko_Samotnia.JPG
     rozmery: 2048×1536
@@ -556,7 +559,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Karpacz_-_%C5%9Anie%C5%BCka_6_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/98/Karpacz_-_%C5%9Anie%C5%BCka_6_-_panoramio.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Karpacz_-_%C5%9Anie%C5%BCka_6_-_panoramio.jpg/960px-Karpacz_-_%C5%9Anie%C5%BCka_6_-_panoramio.jpg
     rozmery: 3648×2056
@@ -568,7 +571,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Samotnia03.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/aa/Samotnia03.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Samotnia03.jpg/960px-Samotnia03.jpg
     rozmery: 4288×2848
@@ -580,10 +583,165 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Samotnia02.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/ef/Samotnia02.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Samotnia02.jpg/960px-Samotnia02.jpg
     rozmery: 4288×2848
     vzdalenostM: 209
     datum: 2017-10-01 16:36:28
     popis: Karpacz, Schronisko PTTK "Samotnia"
+  - soubor: File:Kocioła Małego Stawu - panoramio (2).jpg
+    autor: Sławek Zawadzki
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Kocio%C5%82a_Ma%C5%82ego_Stawu_-_panoramio_(2).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/15/Kocio%C5%82a_Ma%C5%82ego_Stawu_-_panoramio_%282%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Kocio%C5%82a_Ma%C5%82ego_Stawu_-_panoramio_%282%29.jpg/960px-Kocio%C5%82a_Ma%C5%82ego_Stawu_-_panoramio_%282%29.jpg
+    rozmery: 1280×960
+    vzdalenostM: 593
+    datum: Taken on 3 September 2011
+    popis: Kocioła Małego Stawu
+  - soubor: File:Karpacz Samotnia okna.jpg
+    autor: Klapi
+    licence: CC BY 2.5 pl
+    stranka: https://commons.wikimedia.org/wiki/File:Karpacz_Samotnia_okna.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/4e/Karpacz_Samotnia_okna.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/2.5/pl/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Karpacz_Samotnia_okna.jpg/960px-Karpacz_Samotnia_okna.jpg
+    rozmery: 1632×1224
+    datum: 2006-03-10
+    popis: Samotnia Shelter, Karpacz, Karkonosze, Poland
+  - soubor: File:Karpacz Samotnia wiezyczka.jpg
+    autor: Klapi
+    licence: CC BY 2.5 pl
+    stranka: https://commons.wikimedia.org/wiki/File:Karpacz_Samotnia_wiezyczka.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/4b/Karpacz_Samotnia_wiezyczka.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/2.5/pl/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Karpacz_Samotnia_wiezyczka.jpg/960px-Karpacz_Samotnia_wiezyczka.jpg
+    rozmery: 1224×1632
+    datum: 2006-03-10
+    popis: Samotnia Shelter, Karpacz, Karkonosze, Poland
+  - soubor: File:Karpacz Schronisko Samotnia.JPG
+    autor: Jędrycha
+    licence: CC BY-SA 3.0 pl
+    stranka: https://commons.wikimedia.org/wiki/File:Karpacz_Schronisko_Samotnia.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/0/0c/Karpacz_Schronisko_Samotnia.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Karpacz_Schronisko_Samotnia.JPG/960px-Karpacz_Schronisko_Samotnia.JPG
+    rozmery: 2048×1536
+    datum: 2009-10-11 14:51:34
+    popis: Karpacz, Schronisko Samotnia
+  - soubor: File:Przełęcz karkonowska.jpg
+    autor: Wyksztalcioch
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Prze%C5%82%C4%99cz_karkonowska.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f9/Prze%C5%82%C4%99cz_karkonowska.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Prze%C5%82%C4%99cz_karkonowska.jpg/960px-Prze%C5%82%C4%99cz_karkonowska.jpg
+    rozmery: 2304×1728
+    datum: 2008-06-03
+    popis: Widok na przełęcz karkonoską. Od lewej polskie schronisko Odrodzenie oraz
+      czeska Spindlerova buda (Karkonosze, Polska)
+  - soubor: File:Samotnia hostel 1921.jpg
+    autor: Unknown author Unknown author
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Samotnia_hostel_1921.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b0/Samotnia_hostel_1921.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Samotnia_hostel_1921.jpg/960px-Samotnia_hostel_1921.jpg
+    rozmery: 1532×2337
+    datum: "1921"
+    popis: Cottage by a small lake on the Polish side of the Krkonoše Mountains in
+      1921.
+  - soubor: File:Samotnia lato2013 od strony Strzechy.jpg
+    autor: SkywalkerPL
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Samotnia_lato2013_od_strony_Strzechy.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/75/Samotnia_lato2013_od_strony_Strzechy.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Samotnia_lato2013_od_strony_Strzechy.jpg/960px-Samotnia_lato2013_od_strony_Strzechy.jpg
+    rozmery: 5000×2955
+    datum: 2013-06-11 14:04:46
+    popis: PTTK Mountain hostel "Samotnia" from eastern approach.
+  - soubor: File:Samotnia lato2013.jpg
+    autor: SkywalkerPL
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Samotnia_lato2013.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/3f/Samotnia_lato2013.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Samotnia_lato2013.jpg/960px-Samotnia_lato2013.jpg
+    rozmery: 3500×2499
+    datum: 2013-06-11 13:01:43
+    popis: PTTK Mountain hostel "Samotnia" from Mały Staw perspective.
+  - soubor: File:Samotnia Old 02.jpg
+    autor: Jojo , en:Jojo_1 , pl:Jojo
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Samotnia_Old_02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c8/Samotnia_Old_02.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Samotnia_Old_02.jpg/960px-Samotnia_Old_02.jpg
+    rozmery: 1937×3102
+    datum: 2006-08-29
+    popis: Samotnia, Karkonosze, Germany now Poland.
+  - soubor: File:Samotnia schronisko Karkonosze - 01.jpg
+    autor: Jojo at Polish Wikipedia
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Samotnia_schronisko_Karkonosze_-_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/74/Samotnia_schronisko_Karkonosze_-_01.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Samotnia_schronisko_Karkonosze_-_01.jpg/960px-Samotnia_schronisko_Karkonosze_-_01.jpg
+    rozmery: 1200×900
+    datum: 22 January 2005 (original upload date)
+    popis: Schronisko Samotnia w Karkonoszach - listopad 2004
+  - soubor: File:Schronisko "Samotnia" 2.JPG
+    autor: Geociekawostki
+    licence: CC BY-SA 3.0 pl
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_%22Samotnia%22_2.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/a/ae/Schronisko_%22Samotnia%22_2.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Schronisko_%22Samotnia%22_2.JPG/960px-Schronisko_%22Samotnia%22_2.JPG
+    rozmery: 4000×3000
+    datum: 2012-03-20
+    popis: Karpacz, schronisko "Samotnia" nad Małym Stawem , poł. XIX, 1922
+  - soubor: File:Schronisko PTTK Samotnia i kometa Neowise.jpg
+    autor: Dybcio2020
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_PTTK_Samotnia_i_kometa_Neowise.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/bf/Schronisko_PTTK_Samotnia_i_kometa_Neowise.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Schronisko_PTTK_Samotnia_i_kometa_Neowise.jpg/960px-Schronisko_PTTK_Samotnia_i_kometa_Neowise.jpg
+    rozmery: 5472×3648
+    datum: 2020-07-17 00:18:46
+    popis: Schronisko PTTK Samotnia na tle drogi mlecznej i komety Neowise
+  - soubor: File:Schronisko PTTK Samotnia.jpg
+    autor: Miki mouse ,
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_PTTK_Samotnia.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/d9/Schronisko_PTTK_Samotnia.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Schronisko_PTTK_Samotnia.jpg/960px-Schronisko_PTTK_Samotnia.jpg
+    rozmery: 2272×1704
+    datum: 26 March 2006 (original upload date)
+    popis: Schronisko PTTK im. Waldemara Siemaszki nad Małym Stawem, w Kotle Małego
+      Stawu, w Karkonoszach
+  - soubor: File:Schronisko Samotnia, Karkonosze.jpg
+    autor: Aneta Pawska
+    licence: CC BY-SA 3.0 pl
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Samotnia,_Karkonosze.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e8/Schronisko_Samotnia%2C_Karkonosze.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Schronisko_Samotnia%2C_Karkonosze.jpg/960px-Schronisko_Samotnia%2C_Karkonosze.jpg
+    rozmery: 2698×2695
+    datum: 2011-11-19 10:58:07
+    popis: Karpacz, schronisko "Samotnia" nad Małym Stawem , poł. XIX, 1922

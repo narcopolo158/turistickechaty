@@ -1,14 +1,17 @@
-# Schronisko Szrenica — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Schronisko Szrenica na commons.wikimedia.org
+# Schronisko Szrenica — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Schronisko Szrenica + fulltext „Schronisko Szrenica" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: schronisko-szrenica
 oblast: krkonose
 nazevChaty: Schronisko Szrenica
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Oszronione choinki.JPG
     autor: Langosz
@@ -465,3 +468,56 @@ fotky:
     vzdalenostM: 276
     datum: Taken on 20 February 2012
     popis: Widok spod Trzech Świnek
+  - soubor: File:Hala Szrenicka Old 05.jpg
+    autor: Jojo , en:Jojo_1 , pl:Jojo
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Hala_Szrenicka_Old_05.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/ba/Hala_Szrenicka_Old_05.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Hala_Szrenicka_Old_05.jpg/960px-Hala_Szrenicka_Old_05.jpg
+    rozmery: 2040×3209
+    datum: 2006-08-29
+    popis: Hala Szrenicka Hut and Szrenica Hut, Karkonosze, Germany now Poland.
+  - soubor: File:Schronisko Szrenica w Karkonoszach (Reifträgerbaude2).jpg
+    autor: SchiDD
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Szrenica_w_Karkonoszach_(Reiftr%C3%A4gerbaude2).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/15/Schronisko_Szrenica_w_Karkonoszach_%28Reiftr%C3%A4gerbaude2%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Schronisko_Szrenica_w_Karkonoszach_%28Reiftr%C3%A4gerbaude2%29.jpg/960px-Schronisko_Szrenica_w_Karkonoszach_%28Reiftr%C3%A4gerbaude2%29.jpg
+    rozmery: 1920×1280
+    datum: 2014-05-21 08:35:31
+    popis: Reifträgerbaude (Szrenica) im Riesengebirge
+  - soubor: File:Schronisko Szrenica w Karkonoszach (Reifträgerbaude3).jpg
+    autor: SchiDD
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Szrenica_w_Karkonoszach_(Reiftr%C3%A4gerbaude3).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/72/Schronisko_Szrenica_w_Karkonoszach_%28Reiftr%C3%A4gerbaude3%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Schronisko_Szrenica_w_Karkonoszach_%28Reiftr%C3%A4gerbaude3%29.jpg/960px-Schronisko_Szrenica_w_Karkonoszach_%28Reiftr%C3%A4gerbaude3%29.jpg
+    rozmery: 1724×1149
+    datum: 2014-05-21 08:53:37
+    popis: Reifträgerbaude (Szrenica) im Riesengebirge
+  - soubor: File:Schronisko Szrenica.jpg
+    autor: Wiktor Baron
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Szrenica.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/43/Schronisko_Szrenica.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/4/43/Schronisko_Szrenica.jpg
+    rozmery: 800×534
+    datum: 2012-03-31
+    popis: Schronisko na Szrenicy
+  - soubor: File:Szrenica Karkonosze Old 01.jpg
+    autor: Jojo , en:Jojo_1 , pl:Jojo
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Szrenica_Karkonosze_Old_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/96/Szrenica_Karkonosze_Old_01.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Szrenica_Karkonosze_Old_01.jpg/960px-Szrenica_Karkonosze_Old_01.jpg
+    rozmery: 3108×1828
+    datum: Unknown date, early 20th century
+    popis: Szrenica Hut, Karkonosze.

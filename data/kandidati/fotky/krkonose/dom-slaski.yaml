@@ -1,14 +1,17 @@
-# Dom Śląski — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Dom Śląski na commons.wikimedia.org
+# Dom Śląski — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Dom Śląski + fulltext „Dom Śląski" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: dom-slaski
 oblast: krkonose
 nazevChaty: Dom Śląski
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Dom Ślaski - panoramio (1).jpg
     autor: Sławek Zawadzki
@@ -99,7 +102,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:%C3%9Apsk%C3%A1_j%C3%A1ma,_od_Slezsk%C3%A9ho_domu,_hranice.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/fa/%C3%9Apsk%C3%A1_j%C3%A1ma%2C_od_Slezsk%C3%A9ho_domu%2C_hranice.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/%C3%9Apsk%C3%A1_j%C3%A1ma%2C_od_Slezsk%C3%A9ho_domu%2C_hranice.jpg/960px-%C3%9Apsk%C3%A1_j%C3%A1ma%2C_od_Slezsk%C3%A9ho_domu%2C_hranice.jpg
     rozmery: 2048×1536
@@ -480,6 +483,42 @@ fotky:
     vzdalenostM: 291
     datum: Taken on 3 September 2011
     popis: Łomniczka
+  - soubor: File:Slaski Dom widok ze Sniezki.jpg
+    autor: Krzysztof Maria Różański, ( Upior polnocy )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Slaski_Dom_widok_ze_Sniezki.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/dd/Slaski_Dom_widok_ze_Sniezki.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Slaski_Dom_widok_ze_Sniezki.jpg/960px-Slaski_Dom_widok_ze_Sniezki.jpg
+    rozmery: 3777×2449
+    vzdalenostM: 390
+    datum: April or May 2006
+    popis: Schronisko PTTK "Śląski Dom" - widok ze Śnieżki
+  - soubor: File:Śląski Dom, od Sněžky.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:%C5%9Al%C4%85ski_Dom,_od_Sn%C4%9B%C5%BEky.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/80/%C5%9Al%C4%85ski_Dom%2C_od_Sn%C4%9B%C5%BEky.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/%C5%9Al%C4%85ski_Dom%2C_od_Sn%C4%9B%C5%BEky.jpg/960px-%C5%9Al%C4%85ski_Dom%2C_od_Sn%C4%9B%C5%BEky.jpg
+    rozmery: 2048×1536
+    vzdalenostM: 432
+    datum: 2005-06-04
+    popis: Śląski Dom, Karkonosze Mountains, Poland.
+  - soubor: File:Karkonosze 211.jpg
+    autor: Pankrzysztoff
+    licence: CC BY-SA 3.0 pl
+    stranka: https://commons.wikimedia.org/wiki/File:Karkonosze_211.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/88/Karkonosze_211.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Karkonosze_211.jpg/960px-Karkonosze_211.jpg
+    rozmery: 4000×2667
+    vzdalenostM: 723
+    datum: 2014-07-23 11:00:01
+    popis: Obszar specjalnej ochrony ptaków Karkonosze.
   - soubor: File:Widok ze Śnieżki na Dom Śląski - panoramio.jpg
     autor: Mark Voigt
     licence: CC BY 3.0
@@ -492,6 +531,187 @@ fotky:
     vzdalenostM: 827
     datum: Taken on 25 June 2011
     popis: Widok ze Śnieżki na Dom Śląski
+  - soubor: File:2014 Równia pod Śnieżką, 03.jpg
+    autor: Jacek Halicki
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:2014_R%C3%B3wnia_pod_%C5%9Anie%C5%BCk%C4%85,_03.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c1/2014_R%C3%B3wnia_pod_%C5%9Anie%C5%BCk%C4%85%2C_03.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/2014_R%C3%B3wnia_pod_%C5%9Anie%C5%BCk%C4%85%2C_03.jpg/960px-2014_R%C3%B3wnia_pod_%C5%9Anie%C5%BCk%C4%85%2C_03.jpg
+    rozmery: 3032×1735
+    datum: 2014-09-22 12:30:00
+    popis: Shelter "Śląski Dom" and Równia pod Śnieżką
+  - soubor: File:2014 Schronisko "Dom Śląski", 01.JPG
+    autor: Jacek Halicki
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22,_01.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ed/2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_01.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_01.JPG/960px-2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_01.JPG
+    rozmery: 3418×2248
+    datum: 2014-09-22 14:46:15
+    popis: Shelter "Dom Śląski"
+  - soubor: File:2014 Schronisko "Dom Śląski", 02.JPG
+    autor: Jacek Halicki
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22,_02.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/7/7e/2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_02.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_02.JPG/960px-2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_02.JPG
+    rozmery: 3616×2336
+    datum: 2014-09-22 14:42:01
+    popis: Shelter "Dom Śląski"
+  - soubor: File:2014 Schronisko "Dom Śląski", 03.JPG
+    autor: Jacek Halicki
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22,_03.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/5/5e/2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_03.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_03.JPG/960px-2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_03.JPG
+    rozmery: 3392×2020
+    datum: 2014-09-22 14:44:08
+    popis: Shelter "Dom Śląski"
+  - soubor: File:2014 Schronisko "Dom Śląski", 04.JPG
+    autor: Jacek Halicki
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22,_04.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/1/17/2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_04.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_04.JPG/960px-2014_Schronisko_%22Dom_%C5%9Al%C4%85ski%22%2C_04.JPG
+    rozmery: 3052×2186
+    datum: 2014-09-22 14:44:46
+    popis: Shelter "Dom Śląski"
+  - soubor: File:Bouda pod Sněžkou FR01.jpg
+    autor: Fried Marek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bouda_pod_Sn%C4%9B%C5%BEkou_FR01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/83/Bouda_pod_Sn%C4%9B%C5%BEkou_FR01.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bouda_pod_Sn%C4%9B%C5%BEkou_FR01.jpg/960px-Bouda_pod_Sn%C4%9B%C5%BEkou_FR01.jpg
+    rozmery: 2048×1152
+    datum: 2015-08-22
+    popis: Bouda pod Sněžkou
+  - soubor: File:Dom śląski 2.jpg
+    autor: Wyksztalcioch
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom_%C5%9Bl%C4%85ski_2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/49/Dom_%C5%9Bl%C4%85ski_2.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Dom_%C5%9Bl%C4%85ski_2.jpg/960px-Dom_%C5%9Bl%C4%85ski_2.jpg
+    rozmery: 2304×1728
+    popis: Schronisko Dom Śląski widziane we mgle z czerwonego szlaku na Śnieżkę
+      (Karkonosze, Polska)
+  - soubor: File:Dom Śląski płaskorzeźba.jpg
+    autor: Archiwald
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom_%C5%9Al%C4%85ski_p%C5%82askorze%C5%BAba.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c5/Dom_%C5%9Al%C4%85ski_p%C5%82askorze%C5%BAba.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Dom_%C5%9Al%C4%85ski_p%C5%82askorze%C5%BAba.jpg/960px-Dom_%C5%9Al%C4%85ski_p%C5%82askorze%C5%BAba.jpg
+    rozmery: 8000×6000
+    datum: 2023-07-15 18:40:28
+    popis: Płaskorzeźba pamiątkowa znajdująca się na ścianie Domu Śląskiego LOK w
+      Krakowie
+  - soubor: File:Dom Slaski schronisko A 531.JPG
+    autor: Ciacho5
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom_Slaski_schronisko_A_531.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/c/ce/Dom_Slaski_schronisko_A_531.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Dom_Slaski_schronisko_A_531.JPG/960px-Dom_Slaski_schronisko_A_531.JPG
+    rozmery: 3648×2736
+    datum: 2014-12-03
+    popis: Hostel Dom Śląski in Polish Krkonose.
+  - soubor: File:Dom Slaski schronisko A 533.JPG
+    autor: Ciacho5
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom_Slaski_schronisko_A_533.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/5/51/Dom_Slaski_schronisko_A_533.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Dom_Slaski_schronisko_A_533.JPG/960px-Dom_Slaski_schronisko_A_533.JPG
+    rozmery: 3648×2736
+    datum: 2014-12-03
+    popis: Hostel Dom Śląski in Polish Krkonose.
+  - soubor: File:Dom Slaski schronisko A 535.JPG
+    autor: Ciacho5
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom_Slaski_schronisko_A_535.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/7/71/Dom_Slaski_schronisko_A_535.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Dom_Slaski_schronisko_A_535.JPG/960px-Dom_Slaski_schronisko_A_535.JPG
+    rozmery: 3648×2736
+    datum: 2014-12-03
+    popis: Hostel Dom Śląski in Polish Krkonose.
+  - soubor: File:Dom Śląski.jpg
+    autor: Delimata
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom_%C5%9Al%C4%85ski.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b5/Dom_%C5%9Al%C4%85ski.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Dom_%C5%9Al%C4%85ski.jpg/960px-Dom_%C5%9Al%C4%85ski.jpg
+    rozmery: 3633×2422
+    datum: 2008-06-20
+    popis: Dom Śląski - oddział Muzeum Historycznego Miasta Krakowa, była katownia
+      Gestapo
+  - soubor: File:Dom Śląski2.JPG
+    autor: Delimata
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom_%C5%9Al%C4%85ski2.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e1/Dom_%C5%9Al%C4%85ski2.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Dom_%C5%9Al%C4%85ski2.JPG/960px-Dom_%C5%9Al%C4%85ski2.JPG
+    rozmery: 3872×2592
+    datum: 2008-06-22
+    popis: Dom Śląski - oddział Muzeum Historycznego Miasta Krakowa, była katownia
+      Gestapo
+  - soubor: File:DomŚląski-UlicaKrólewska-POL, Kraków.jpg
+    autor: Mach240390
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom%C5%9Al%C4%85ski-UlicaKr%C3%B3lewska-POL,_Krak%C3%B3w.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c1/Dom%C5%9Al%C4%85ski-UlicaKr%C3%B3lewska-POL%2C_Krak%C3%B3w.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Dom%C5%9Al%C4%85ski-UlicaKr%C3%B3lewska-POL%2C_Krak%C3%B3w.jpg/960px-Dom%C5%9Al%C4%85ski-UlicaKr%C3%B3lewska-POL%2C_Krak%C3%B3w.jpg
+    rozmery: 3536×2328
+    datum: 2019-08-15
+    popis: Dom Śląski w Krakowie na ulicy Królewskiej przy skrzyżowaniu z ulicą
+      Pomorską. 2019
+  - soubor: File:DomŚląski-UlicaKrólewska1-POL, Kraków.jpg
+    autor: Mach240390
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom%C5%9Al%C4%85ski-UlicaKr%C3%B3lewska1-POL,_Krak%C3%B3w.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ea/Dom%C5%9Al%C4%85ski-UlicaKr%C3%B3lewska1-POL%2C_Krak%C3%B3w.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Dom%C5%9Al%C4%85ski-UlicaKr%C3%B3lewska1-POL%2C_Krak%C3%B3w.jpg/960px-Dom%C5%9Al%C4%85ski-UlicaKr%C3%B3lewska1-POL%2C_Krak%C3%B3w.jpg
+    rozmery: 6000×3700
+    datum: 2023-04-22
+    popis: Dom Śląski w Krakowie przy ulicy Królewskiej 1 (Pomorska 2–4). Proj.
+      Józef Rybicki, 1932–1937.
+  - soubor: File:Karkonosze 0032.JPG
+    autor: Krzysiu "Jarzyna" Szymański
+    licence: CC BY 2.5
+    stranka: https://commons.wikimedia.org/wiki/File:Karkonosze_0032.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c6/Karkonosze_0032.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/2.5
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Karkonosze_0032.JPG/960px-Karkonosze_0032.JPG
+    rozmery: 2048×1536
+    datum: 2007-07
+    popis: Widok z Śnieżki w stronę Małej Kopy
   - soubor: File:Karkonosze Dom Śląski.jpg
     autor: Wawa65
     licence: CC BY-SA 4.0
@@ -503,6 +723,18 @@ fotky:
     rozmery: 2592×1944
     datum: 2009-08-23 11:12:13
     popis: Schronisko w Karkonoszach
+  - soubor: File:Krakow Dom Slaski.jpg
+    autor: Andrzej Otrębski
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Krakow_Dom_Slaski.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/55/Krakow_Dom_Slaski.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Krakow_Dom_Slaski.jpg/960px-Krakow_Dom_Slaski.jpg
+    rozmery: 2816×2112
+    datum: Taken on 7 May 2010, 09:49:57
+    popis: Kraków - Silesian House, a division of the Historical Museum of the City
+      of Kraków
   - soubor: File:Pohled ze Sněžky na turistickou cestu a Slezský dům.jpg
     autor: Eliška Jindříšková
     licence: CC BY-SA 4.0
@@ -514,6 +746,52 @@ fotky:
     rozmery: 8000×6000
     datum: 2024-06-29 16:26:22
     popis: View from Sněžka on the tourist path and Silesian House, Karpacz, Poland
+  - soubor: File:Równia pod śnieżką.jpg
+    autor: Wyksztalcioch
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:R%C3%B3wnia_pod_%C5%9Bnie%C5%BCk%C4%85.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/77/R%C3%B3wnia_pod_%C5%9Bnie%C5%BCk%C4%85.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/R%C3%B3wnia_pod_%C5%9Bnie%C5%BCk%C4%85.jpg/960px-R%C3%B3wnia_pod_%C5%9Bnie%C5%BCk%C4%85.jpg
+    rozmery: 2304×1728
+    popis: Równia pod Śnieżką widoczna w mglistą pogodę z czerwnoego szlaku na
+      śnieżkę(Karkonosze, Polska)
+  - soubor: File:Schlesier Haus.JPG
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schlesier_Haus.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ed/Schlesier_Haus.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Schlesier_Haus.JPG/960px-Schlesier_Haus.JPG
+    rozmery: 2592×1944
+    datum: 2008-05
+    popis: Schronisko PTTK "Śląski Dom" (Schlesier Haus) pod Śnieżką Mountain hostel
+      "Śląski Dom" (Schlesier Haus) in Riesengebirge (Karkonosze)
+  - soubor: File:Schneekoppe 1900.jpg
+    autor: Unknown author Unknown author
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Schneekoppe_1900.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/75/Schneekoppe_1900.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Schneekoppe_1900.jpg/960px-Schneekoppe_1900.jpg
+    rozmery: 3515×2580
+    datum: between 1890 and 1905 date QS:P,+1500-0…
+    popis: Sněžka
+  - soubor: File:Śląski House, 1932 design. Ludwik Wojtyczko and Józef Rybicki, 1
+      Królewska street, Kraków, Poland.jpg
+    autor: Zygmunt Put
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:%C5%9Al%C4%85ski_House,_1932_design._Ludwik_Wojtyczko_and_J%C3%B3zef_Rybicki,_1_Kr%C3%B3lewska_street,_Krak%C3%B3w,_Poland.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/ac/%C5%9Al%C4%85ski_House%2C_1932_design._Ludwik_Wojtyczko_and_J%C3%B3zef_Rybicki%2C_1_Kr%C3%B3lewska_street%2C_Krak%C3%B3w%2C_Poland.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/%C5%9Al%C4%85ski_House%2C_1932_design._Ludwik_Wojtyczko_and_J%C3%B3zef_Rybicki%2C_1_Kr%C3%B3lewska_street%2C_Krak%C3%B3w%2C_Poland.jpg/960px-%C5%9Al%C4%85ski_House%2C_1932_design._Ludwik_Wojtyczko_and_J%C3%B3zef_Rybicki%2C_1_Kr%C3%B3lewska_street%2C_Krak%C3%B3w%2C_Poland.jpg
+    rozmery: 5449×3406
+    datum: 2020-07-26
+    popis: Śląski House, 1932 design. Ludwik Wojtyczko and Józef Rybicki, 1
+      Królewska street, Kraków, Poland
   - soubor: File:Slezský dům a cesta na Sněžku.jpg
     autor: Eliška Jindříšková
     licence: CC BY-SA 4.0
@@ -525,6 +803,18 @@ fotky:
     rozmery: 7335×6000
     datum: 2024-06-29 16:19:53
     popis: Silesian House and the path to Sněžka, Karpacz, Poland
+  - soubor: File:Snezka6.JPG
+    autor: O. Mejsnar
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Snezka6.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/4/45/Snezka6.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Snezka6.JPG/960px-Snezka6.JPG
+    rozmery: 3872×2592
+    datum: 2012-03-03
+    popis: Pohled na Sněžku (1602 m.n.m.) - nejvyšší horu ČR a Slezský dům pod ní z
+      rozcestí modrého a žluté turistické trasy "Nad Stříbrným potokem"
   - soubor: File:Sněžka (Śnieżka, Schneekoppe), Krkonoše mountains 03.jpg
     autor: Pudelek
     licence: CC BY-SA 4.0
@@ -549,3 +839,13 @@ fotky:
     rozmery: 4068×2712
     datum: 2020-02-22 10:21:43
     popis: Śnieżka (Sněžka, Schneekoppe) in winter 2020, Karkonosze mountains
+  - soubor: File:Widok ze Śnieżki na Równine pod Śnieżką.JPG
+    autor: Lukasek89
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Widok_ze_%C5%9Anie%C5%BCki_na_R%C3%B3wnine_pod_%C5%9Anie%C5%BCk%C4%85.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/d/df/Widok_ze_%C5%9Anie%C5%BCki_na_R%C3%B3wnine_pod_%C5%9Anie%C5%BCk%C4%85.JPG
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Widok_ze_%C5%9Anie%C5%BCki_na_R%C3%B3wnine_pod_%C5%9Anie%C5%BCk%C4%85.JPG/960px-Widok_ze_%C5%9Anie%C5%BCki_na_R%C3%B3wnine_pod_%C5%9Anie%C5%BCk%C4%85.JPG
+    rozmery: 1632×1224
+    datum: 2007-08-02
+    popis: The plain below Śnieżka

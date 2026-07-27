@@ -1,14 +1,17 @@
-# Barborka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Barborka na commons.wikimedia.org
+# Barborka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Barborka + fulltext „Barborka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: barborka
 oblast: krkonose
 nazevChaty: Barborka
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  kandidát DATA-01"
+checked: 2026-07-27
 fotky:
   - soubor: File:Filip Kořínek.jpg
     autor: Jarber
@@ -27,7 +30,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Bytom-Miechowice_Barborka_2022_1.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/c6/Bytom-Miechowice_Barborka_2022_1.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Bytom-Miechowice_Barborka_2022_1.jpg/960px-Bytom-Miechowice_Barborka_2022_1.jpg
     rozmery: 4591×3060
@@ -42,7 +45,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Bytom-Miechowice_Barborka_2022_2.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/99/Bytom-Miechowice_Barborka_2022_2.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Bytom-Miechowice_Barborka_2022_2.jpg/960px-Bytom-Miechowice_Barborka_2022_2.jpg
     rozmery: 4054×2702
@@ -228,7 +231,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0002-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/ec/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0002-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0002-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0002-RIKiWK-MCD.jpg
     rozmery: 7910×5273
@@ -243,7 +246,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0003-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/56/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0003-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0003-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0003-RIKiWK-MCD.jpg
     rozmery: 8254×5503
@@ -258,7 +261,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0004-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/fb/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0004-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0004-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0004-RIKiWK-MCD.jpg
     rozmery: 8105×5403
@@ -288,7 +291,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0006-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9e/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0006-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0006-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0006-RIKiWK-MCD.jpg
     rozmery: 8150×5433
@@ -303,7 +306,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0007-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/f9/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0007-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0007-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0007-RIKiWK-MCD.jpg
     rozmery: 5504×8256
@@ -318,7 +321,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0008-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/50/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0008-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0008-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0008-RIKiWK-MCD.jpg
     rozmery: 5504×8256
@@ -333,7 +336,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0009-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/ef/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0009-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0009-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0009-RIKiWK-MCD.jpg
     rozmery: 7787×5191
@@ -348,7 +351,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0010-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/76/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0010-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0010-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0010-RIKiWK-MCD.jpg
     rozmery: 7873×5249
@@ -363,7 +366,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0011-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/4a/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0011-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0011-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0011-RIKiWK-MCD.jpg
     rozmery: 7798×5199
@@ -378,7 +381,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0012-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/be/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0012-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0012-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0012-RIKiWK-MCD.jpg
     rozmery: 8233×5489
@@ -393,7 +396,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0013-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/90/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0013-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0013-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0013-RIKiWK-MCD.jpg
     rozmery: 5504×8256
@@ -408,7 +411,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0014-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/61/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0014-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0014-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0014-RIKiWK-MCD.jpg
     rozmery: 8256×5504
@@ -438,7 +441,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0016-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/09/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0016-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0016-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0016-RIKiWK-MCD.jpg
     rozmery: 5504×8256
@@ -453,7 +456,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0017-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/6d/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0017-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0017-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0017-RIKiWK-MCD.jpg
     rozmery: 5060×7590
@@ -468,7 +471,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0018-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/81/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0018-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0018-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0018-RIKiWK-MCD.jpg
     rozmery: 5288×7932
@@ -483,7 +486,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0019-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/40/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0019-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0019-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0019-RIKiWK-MCD.jpg
     rozmery: 8256×5504
@@ -498,7 +501,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0020-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/44/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0020-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0020-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0020-RIKiWK-MCD.jpg
     rozmery: 5191×7786
@@ -513,7 +516,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0021-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/13/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0021-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0021-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0021-RIKiWK-MCD.jpg
     rozmery: 7831×5221
@@ -528,7 +531,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0022-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/fa/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0022-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0022-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0022-RIKiWK-MCD.jpg
     rozmery: 7948×5299
@@ -543,7 +546,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0023-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/70/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0023-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0023-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0023-RIKiWK-MCD.jpg
     rozmery: 5491×8237
@@ -588,7 +591,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0026-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/cb/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0026-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0026-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0026-RIKiWK-MCD.jpg
     rozmery: 8181×5454
@@ -603,7 +606,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0027-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/da/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0027-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0027-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0027-RIKiWK-MCD.jpg
     rozmery: 7069×4687
@@ -648,7 +651,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0003-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/19/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0003-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0003-RIKiWK-MCD.jpg/960px-Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0003-RIKiWK-MCD.jpg
     rozmery: 7544×5031
@@ -663,7 +666,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0004-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5e/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0004-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0004-RIKiWK-MCD.jpg/960px-Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0004-RIKiWK-MCD.jpg
     rozmery: 5504×8256
@@ -678,7 +681,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0005-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/e8/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0005-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0005-RIKiWK-MCD.jpg/960px-Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0005-RIKiWK-MCD.jpg
     rozmery: 8256×5504
@@ -693,7 +696,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0006-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9a/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0006-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0006-RIKiWK-MCD.jpg/960px-Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0006-RIKiWK-MCD.jpg
     rozmery: 5504×8256
@@ -708,7 +711,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0007-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/17/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0007-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0007-RIKiWK-MCD.jpg/960px-Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0007-RIKiWK-MCD.jpg
     rozmery: 8256×5504
@@ -723,7 +726,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0008-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/67/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0008-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0008-RIKiWK-MCD.jpg/960px-Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0008-RIKiWK-MCD.jpg
     rozmery: 8256×5504

@@ -1,21 +1,24 @@
-# Medvědí bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Medvědí bouda na commons.wikimedia.org
+# Medvědí bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Medvědí bouda + fulltext „Medvědí bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: medvedi-bouda
 oblast: krkonose
 nazevChaty: Medvědí bouda
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Medvědí bouda (04).jpg
     autor: ŠJů
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda_(04).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/04/Medv%C4%9Bd%C3%AD_bouda_%2804%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Medv%C4%9Bd%C3%AD_bouda_%2804%29.jpg/960px-Medv%C4%9Bd%C3%AD_bouda_%2804%29.jpg
     rozmery: 2592×1944
@@ -27,7 +30,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda,_rozcestn%C3%ADk.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a4/Medv%C4%9Bd%C3%AD_bouda%2C_rozcestn%C3%ADk.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Medv%C4%9Bd%C3%AD_bouda%2C_rozcestn%C3%ADk.jpg/960px-Medv%C4%9Bd%C3%AD_bouda%2C_rozcestn%C3%ADk.jpg
     rozmery: 1944×2592
@@ -39,7 +42,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda_a_rozcestn%C3%ADk.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/0c/Medv%C4%9Bd%C3%AD_bouda_a_rozcestn%C3%ADk.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Medv%C4%9Bd%C3%AD_bouda_a_rozcestn%C3%ADk.jpg/960px-Medv%C4%9Bd%C3%AD_bouda_a_rozcestn%C3%ADk.jpg
     rozmery: 1944×2592
@@ -51,7 +54,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda,_jez%C3%ADrko.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/dc/Medv%C4%9Bd%C3%AD_bouda%2C_jez%C3%ADrko.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Medv%C4%9Bd%C3%AD_bouda%2C_jez%C3%ADrko.jpg/960px-Medv%C4%9Bd%C3%AD_bouda%2C_jez%C3%ADrko.jpg
     rozmery: 2592×1944
@@ -89,7 +92,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda_(03).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/85/Medv%C4%9Bd%C3%AD_bouda_%2803%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Medv%C4%9Bd%C3%AD_bouda_%2803%29.jpg/960px-Medv%C4%9Bd%C3%AD_bouda_%2803%29.jpg
     rozmery: 2592×1944
@@ -101,7 +104,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Krkono%C5%A1e_(2).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/ba/Krkono%C5%A1e_%282%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Krkono%C5%A1e_%282%29.jpg/960px-Krkono%C5%A1e_%282%29.jpg
     rozmery: 2816×1570
@@ -114,7 +117,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda_(05).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/81/Medv%C4%9Bd%C3%AD_bouda_%2805%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Medv%C4%9Bd%C3%AD_bouda_%2805%29.jpg/960px-Medv%C4%9Bd%C3%AD_bouda_%2805%29.jpg
     rozmery: 2592×1944
@@ -126,7 +129,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda_(06).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/58/Medv%C4%9Bd%C3%AD_bouda_%2806%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Medv%C4%9Bd%C3%AD_bouda_%2806%29.jpg/960px-Medv%C4%9Bd%C3%AD_bouda_%2806%29.jpg
     rozmery: 2592×1944
@@ -162,7 +165,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda_(02).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/19/Medv%C4%9Bd%C3%AD_bouda_%2802%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Medv%C4%9Bd%C3%AD_bouda_%2802%29.jpg/960px-Medv%C4%9Bd%C3%AD_bouda_%2802%29.jpg
     rozmery: 2592×1944
@@ -174,10 +177,34 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/97/Medv%C4%9Bd%C3%AD_bouda_%2801%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Medv%C4%9Bd%C3%AD_bouda_%2801%29.jpg/960px-Medv%C4%9Bd%C3%AD_bouda_%2801%29.jpg
     rozmery: 2592×1944
     vzdalenostM: 131
     datum: Taken on 28 May 2023
     popis: Špindlerův Mlýn , Trutnov District , Czechia . House No. 84, Medvědí bouda.
+  - soubor: File:Špindlerův Mlýn, cesta od Medvědí boudy.jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:%C5%A0pindler%C5%AFv_Ml%C3%BDn,_cesta_od_Medv%C4%9Bd%C3%AD_boudy.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/32/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_cesta_od_Medv%C4%9Bd%C3%AD_boudy.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_cesta_od_Medv%C4%9Bd%C3%AD_boudy.jpg/960px-%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_cesta_od_Medv%C4%9Bd%C3%AD_boudy.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 534
+    datum: Taken on 28 May 2023
+    popis: Špindlerův Mlýn , Trutnov District , Czechia . A road from Medvědí bouda.
+  - soubor: File:Bergbauden im Riesengebirge.jpg
+    autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
+      MagentaGreen
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bergbauden_im_Riesengebirge.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Bergbauden_im_Riesengebirge.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bergbauden_im_Riesengebirge.jpg/960px-Bergbauden_im_Riesengebirge.jpg
+    rozmery: 2880×2160
+    datum: 2019-01-17
+    popis: Location map of the mountain huts in the Giant Mountains

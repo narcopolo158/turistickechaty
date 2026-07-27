@@ -1,21 +1,24 @@
-# Strzecha Akademicka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Strzecha Akademicka na commons.wikimedia.org
+# Strzecha Akademicka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Strzecha Akademicka + fulltext „Strzecha Akademicka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: strzecha-akademicka
 oblast: krkonose
 nazevChaty: Strzecha Akademicka
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Strzecha Akademicka 02.jpg
     autor: Balaban
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_02.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/c9/Strzecha_Akademicka_02.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Strzecha_Akademicka_02.jpg/960px-Strzecha_Akademicka_02.jpg
     rozmery: 2592×1944
@@ -27,7 +30,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_08.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/71/Strzecha_Akademicka_08.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Strzecha_Akademicka_08.jpg/960px-Strzecha_Akademicka_08.jpg
     rozmery: 1024×866
     vzdalenostM: 5
@@ -37,7 +40,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_09.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/1c/Strzecha_Akademicka_09.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Strzecha_Akademicka_09.jpg/960px-Strzecha_Akademicka_09.jpg
     rozmery: 1600×923
     vzdalenostM: 5
@@ -47,7 +50,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_PTTK_Strzecha_Akademicka.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/37/Schronisko_PTTK_Strzecha_Akademicka.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Schronisko_PTTK_Strzecha_Akademicka.jpg/960px-Schronisko_PTTK_Strzecha_Akademicka.jpg
     rozmery: 4752×3168
@@ -59,7 +62,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_widziana_znad_Kot%C5%82a_Ma%C5%82ego_Stawu.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/09/Strzecha_Akademicka_widziana_znad_Kot%C5%82a_Ma%C5%82ego_Stawu.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Strzecha_Akademicka_widziana_znad_Kot%C5%82a_Ma%C5%82ego_Stawu.jpg/960px-Strzecha_Akademicka_widziana_znad_Kot%C5%82a_Ma%C5%82ego_Stawu.jpg
     rozmery: 4752×3168
@@ -83,7 +86,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/0e/Strzecha_Akademicka_-_panoramio.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Strzecha_Akademicka_-_panoramio.jpg/960px-Strzecha_Akademicka_-_panoramio.jpg
     rozmery: 4592×3056
@@ -107,7 +110,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:I_jeszcze_Strzecha_Akademicka_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/0e/I_jeszcze_Strzecha_Akademicka_-_panoramio.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/I_jeszcze_Strzecha_Akademicka_-_panoramio.jpg/960px-I_jeszcze_Strzecha_Akademicka_-_panoramio.jpg
     rozmery: 4000×3000
@@ -119,7 +122,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_05.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/29/Strzecha_Akademicka_05.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/2/29/Strzecha_Akademicka_05.jpg
     rozmery: 846×546
     vzdalenostM: 33
@@ -154,7 +157,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Karkonosze_-_Strzecha_Akademicka_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/95/Karkonosze_-_Strzecha_Akademicka_-_panoramio.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Karkonosze_-_Strzecha_Akademicka_-_panoramio.jpg/960px-Karkonosze_-_Strzecha_Akademicka_-_panoramio.jpg
     rozmery: 2816×2112
@@ -178,7 +181,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_06.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/4e/Strzecha_Akademicka_06.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Strzecha_Akademicka_06.jpg/960px-Strzecha_Akademicka_06.jpg
     rozmery: 2172×1377
     vzdalenostM: 67
@@ -189,7 +192,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_03.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/3b/Strzecha_Akademicka_03.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Strzecha_Akademicka_03.jpg/960px-Strzecha_Akademicka_03.jpg
     rozmery: 1920×1197
     vzdalenostM: 71
@@ -200,7 +203,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_07.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/ec/Strzecha_Akademicka_07.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Strzecha_Akademicka_07.jpg/960px-Strzecha_Akademicka_07.jpg
     rozmery: 1024×826
     vzdalenostM: 71
@@ -210,7 +213,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_01.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a4/Strzecha_Akademicka_01.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Strzecha_Akademicka_01.jpg/960px-Strzecha_Akademicka_01.jpg
     rozmery: 2592×1944
@@ -222,7 +225,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka_04.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/84/Strzecha_Akademicka_04.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Strzecha_Akademicka_04.jpg/960px-Strzecha_Akademicka_04.jpg
     rozmery: 1920×1161
     vzdalenostM: 80
@@ -233,7 +236,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Karpacz_-_%C5%9Anie%C5%BCka_14_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/59/Karpacz_-_%C5%9Anie%C5%BCka_14_-_panoramio.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Karpacz_-_%C5%9Anie%C5%BCka_14_-_panoramio.jpg/960px-Karpacz_-_%C5%9Anie%C5%BCka_14_-_panoramio.jpg
     rozmery: 3648×2056
@@ -245,7 +248,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Widok_na_Strzech%C4%99_Akademick%C4%85_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/71/Widok_na_Strzech%C4%99_Akademick%C4%85_-_panoramio.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Widok_na_Strzech%C4%99_Akademick%C4%85_-_panoramio.jpg/960px-Widok_na_Strzech%C4%99_Akademick%C4%85_-_panoramio.jpg
     rozmery: 3960×2457
@@ -257,7 +260,7 @@ fotky:
     licence: CC BY 2.0
     stranka: https://commons.wikimedia.org/wiki/File:Karkonosze-Samotnia_i_Maly_Staw.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/cf/Karkonosze-Samotnia_i_Maly_Staw.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/2.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/c/cf/Karkonosze-Samotnia_i_Maly_Staw.jpg
     rozmery: 950×950
@@ -269,7 +272,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Widok_na_Samotni%C4%85.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/3a/Widok_na_Samotni%C4%85.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Widok_na_Samotni%C4%85.jpg/960px-Widok_na_Samotni%C4%85.jpg
     rozmery: 5184×3456
@@ -281,7 +284,7 @@ fotky:
     licence: CC BY-SA 3.0 pl
     stranka: https://commons.wikimedia.org/wiki/File:Samotnia_i_Strzecha_Akademicka.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/36/Samotnia_i_Strzecha_Akademicka.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Samotnia_i_Strzecha_Akademicka.jpg/960px-Samotnia_i_Strzecha_Akademicka.jpg
     rozmery: 2048×1536
@@ -293,7 +296,7 @@ fotky:
     licence: CC BY-SA 3.0 pl
     stranka: https://commons.wikimedia.org/wiki/File:2014_Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D,_01.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/0/0b/2014_Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D%2C_01.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/2014_Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D%2C_01.JPG/960px-2014_Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D%2C_01.JPG
     rozmery: 3932×2168
@@ -304,18 +307,42 @@ fotky:
     licence: CC BY-SA 3.0 pl
     stranka: https://commons.wikimedia.org/wiki/File:2014_Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D,_02.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/3/3f/2014_Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D%2C_02.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/2014_Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D%2C_02.JPG/960px-2014_Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D%2C_02.JPG
     rozmery: 3772×2363
     datum: 2014-09-22 15:43:32
     popis: Karpacz, schronisko "Strzecha Akademicka" , 1907
+  - soubor: File:Bergbauden im Riesengebirge.jpg
+    autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
+      MagentaGreen
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bergbauden_im_Riesengebirge.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Bergbauden_im_Riesengebirge.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bergbauden_im_Riesengebirge.jpg/960px-Bergbauden_im_Riesengebirge.jpg
+    rozmery: 2880×2160
+    datum: 2019-01-17
+    popis: Location map of the mountain huts in the Giant Mountains
+  - soubor: File:Hampelbaude- Aufstieg zum Kamm, drei Jungens - LABW - Staatsarchiv
+      Freiburg W 134 Nr. 014417.jpg
+    autor: Willy Pragher
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Hampelbaude-_Aufstieg_zum_Kamm,_drei_Jungens_-_LABW_-_Staatsarchiv_Freiburg_W_134_Nr._014417.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a0/Hampelbaude-_Aufstieg_zum_Kamm%2C_drei_Jungens_-_LABW_-_Staatsarchiv_Freiburg_W_134_Nr._014417.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Hampelbaude-_Aufstieg_zum_Kamm%2C_drei_Jungens_-_LABW_-_Staatsarchiv_Freiburg_W_134_Nr._014417.jpg/960px-Hampelbaude-_Aufstieg_zum_Kamm%2C_drei_Jungens_-_LABW_-_Staatsarchiv_Freiburg_W_134_Nr._014417.jpg
+    rozmery: 2038×1396
+    datum: August 1938 date QS:P571,+1938-08-00T00…
+    popis: "Hampelbaude: Aufstieg zum Kamm, drei Jungens"
   - soubor: File:Karkonosze - Strzecha Akademicka.jpg
     autor: MarcinKuznik
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Karkonosze_-_Strzecha_Akademicka.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/30/Karkonosze_-_Strzecha_Akademicka.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Karkonosze_-_Strzecha_Akademicka.jpg/960px-Karkonosze_-_Strzecha_Akademicka.jpg
     rozmery: 3872×2581
@@ -326,7 +353,7 @@ fotky:
     licence: CC BY-SA 3.0 pl
     stranka: https://commons.wikimedia.org/wiki/File:Karpacz_Strzecha_Akademicka.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/97/Karpacz_Strzecha_Akademicka.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Karpacz_Strzecha_Akademicka.jpg/960px-Karpacz_Strzecha_Akademicka.jpg
     rozmery: 3648×2432
@@ -338,7 +365,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Karpacz,_Schronisko_PTTK_Strzecha_Akademicka_-_fotopolska.eu_(219872).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/01/Karpacz%2C_Schronisko_PTTK_Strzecha_Akademicka_-_fotopolska.eu_%28219872%29.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Karpacz%2C_Schronisko_PTTK_Strzecha_Akademicka_-_fotopolska.eu_%28219872%29.jpg/960px-Karpacz%2C_Schronisko_PTTK_Strzecha_Akademicka_-_fotopolska.eu_%28219872%29.jpg
     rozmery: 1235×781
@@ -350,7 +377,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Karpacz,_Schronisko_PTTK_Strzecha_Akademicka_-_fotopolska.eu_(219873).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/15/Karpacz%2C_Schronisko_PTTK_Strzecha_Akademicka_-_fotopolska.eu_%28219873%29.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Karpacz%2C_Schronisko_PTTK_Strzecha_Akademicka_-_fotopolska.eu_%28219873%29.jpg/960px-Karpacz%2C_Schronisko_PTTK_Strzecha_Akademicka_-_fotopolska.eu_%28219873%29.jpg
     rozmery: 1250×938
@@ -361,7 +388,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Samotnia2015.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/e/ed/Samotnia2015.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Samotnia2015.JPG/960px-Samotnia2015.JPG
     rozmery: 4868×1018
@@ -372,10 +399,21 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Strzecha_Akademicka.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/2/2b/Strzecha_Akademicka.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
     nahled: https://upload.wikimedia.org/wikipedia/commons/2/2b/Strzecha_Akademicka.JPG
     rozmery: 615×346
     datum: 2007-10-25
     popis: pl:Schronisko PTTK "Strzecha Akademicka" w Karkonoszach, Mountain shelter
       "Strzecha Akademicka" in polish Karkonosze Mountains
+  - soubor: File:UAZ-452 Strzecha Akademicka.jpg
+    autor: Raf24~commonswiki
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:UAZ-452_Strzecha_Akademicka.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/cc/UAZ-452_Strzecha_Akademicka.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/UAZ-452_Strzecha_Akademicka.jpg/960px-UAZ-452_Strzecha_Akademicka.jpg
+    rozmery: 2322×4128
+    datum: 2015-09-05 14:13:46
+    popis: UAZ-452 obok schroniska Strzecha Akademicka

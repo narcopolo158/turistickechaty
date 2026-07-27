@@ -1,21 +1,24 @@
-# Žalý — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Žalý na commons.wikimedia.org
+# Žalý — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Žalý + fulltext „Žalý" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: zaly
 oblast: krkonose
 nazevChaty: Žalý
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  kandidát DATA-01"
+checked: 2026-07-27
 fotky:
   - soubor: File:Rozhledna Žalý (01).jpg
     autor: Czeva
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_%C5%BDal%C3%BD_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/19/Rozhledna_%C5%BDal%C3%BD_%2801%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rozhledna_%C5%BDal%C3%BD_%2801%29.jpg/960px-Rozhledna_%C5%BDal%C3%BD_%2801%29.jpg
     rozmery: 2736×3648
@@ -27,7 +30,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Benecko_Zaly_anteny.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/e5/Benecko_Zaly_anteny.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Benecko_Zaly_anteny.jpg/960px-Benecko_Zaly_anteny.jpg
     rozmery: 3264×2448
@@ -39,7 +42,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:P%C5%99edn%C3%AD_%C5%BDal%C3%BD,_rozhledna.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/8b/P%C5%99edn%C3%AD_%C5%BDal%C3%BD%2C_rozhledna.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/P%C5%99edn%C3%AD_%C5%BDal%C3%BD%2C_rozhledna.jpg/960px-P%C5%99edn%C3%AD_%C5%BDal%C3%BD%2C_rozhledna.jpg
     rozmery: 4032×3024
@@ -51,7 +54,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:%C5%BDal%C3%BD_1921.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/2a/%C5%BDal%C3%BD_1921.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%C5%BDal%C3%BD_1921.jpg/960px-%C5%BDal%C3%BD_1921.jpg
     rozmery: 2137×1194
     vzdalenostM: 22
@@ -64,7 +67,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Zaly.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/c8/Zaly.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Zaly.jpg/960px-Zaly.jpg
     rozmery: 2048×1536
@@ -76,7 +79,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Benecko_95_Chata_Zaly.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a0/Benecko_95_Chata_Zaly.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Benecko_95_Chata_Zaly.jpg/960px-Benecko_95_Chata_Zaly.jpg
     rozmery: 3264×2448
@@ -88,7 +91,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Benecko_Zaly_pomnik.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/c2/Benecko_Zaly_pomnik.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Benecko_Zaly_pomnik.jpg/960px-Benecko_Zaly_pomnik.jpg
     rozmery: 3120×4160
@@ -136,7 +139,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Sovinec_Zaly.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/6d/Sovinec_Zaly.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Sovinec_Zaly.jpg/960px-Sovinec_Zaly.jpg
     rozmery: 3264×2448
@@ -148,7 +151,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Knezice_panorama_Krkonos.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/08/Knezice_panorama_Krkonos.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Knezice_panorama_Krkonos.jpg/960px-Knezice_panorama_Krkonos.jpg
     rozmery: 9393×2264
@@ -160,7 +163,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Zakouti_Bucharova_cesta_K10.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a9/Zakouti_Bucharova_cesta_K10.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Zakouti_Bucharova_cesta_K10.jpg/960px-Zakouti_Bucharova_cesta_K10.jpg
     rozmery: 4160×3120
@@ -172,7 +175,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:V%C3%ADtkovice_v_Krkono%C5%A1%C3%ADch,_v%C3%BDhled_na_%C5%BDal%C3%BD_-_panoramio_(33).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/c2/V%C3%ADtkovice_v_Krkono%C5%A1%C3%ADch%2C_v%C3%BDhled_na_%C5%BDal%C3%BD_-_panoramio_%2833%29.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/V%C3%ADtkovice_v_Krkono%C5%A1%C3%ADch%2C_v%C3%BDhled_na_%C5%BDal%C3%BD_-_panoramio_%2833%29.jpg/960px-V%C3%ADtkovice_v_Krkono%C5%A1%C3%ADch%2C_v%C3%BDhled_na_%C5%BDal%C3%BD_-_panoramio_%2833%29.jpg
     rozmery: 3456×1276
@@ -184,7 +187,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:V%C3%ADtkovice_v_Krkono%C5%A1%C3%ADch,_v%C3%BDhled_na_%C5%BDal%C3%BD_a_Aldrov_-_panoramio_(35).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/69/V%C3%ADtkovice_v_Krkono%C5%A1%C3%ADch%2C_v%C3%BDhled_na_%C5%BDal%C3%BD_a_Aldrov_-_panoramio_%2835%29.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/V%C3%ADtkovice_v_Krkono%C5%A1%C3%ADch%2C_v%C3%BDhled_na_%C5%BDal%C3%BD_a_Aldrov_-_panoramio_%2835%29.jpg/960px-V%C3%ADtkovice_v_Krkono%C5%A1%C3%ADch%2C_v%C3%BDhled_na_%C5%BDal%C3%BD_a_Aldrov_-_panoramio_%2835%29.jpg
     rozmery: 3456×1152
@@ -196,19 +199,41 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:M%C5%99%C3%AD%C4%8Dn%C3%A1-v%C3%BDchod_Slunce_nad_obc%C3%AD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/07/M%C5%99%C3%AD%C4%8Dn%C3%A1-v%C3%BDchod_Slunce_nad_obc%C3%AD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/M%C5%99%C3%AD%C4%8Dn%C3%A1-v%C3%BDchod_Slunce_nad_obc%C3%AD.jpg/960px-M%C5%99%C3%AD%C4%8Dn%C3%A1-v%C3%BDchod_Slunce_nad_obc%C3%AD.jpg
     rozmery: 1800×900
     vzdalenostM: 10396
     datum: 2003-06-30 05:15
     popis: The sunrise over the Mříčná village
+  - soubor: File:Bystrá nJ - panorama Krkonoš.jpg
+    autor: Jiří Erben
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bystr%C3%A1_nJ_-_panorama_Krkono%C5%A1.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/ba/Bystr%C3%A1_nJ_-_panorama_Krkono%C5%A1.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Bystr%C3%A1_nJ_-_panorama_Krkono%C5%A1.jpg/960px-Bystr%C3%A1_nJ_-_panorama_Krkono%C5%A1.jpg
+    rozmery: 2560×1281
+    popis: Panoráma Krkonoš při pohledu z Bystré nad Jizerou - vlevo Sněžka 1603 m,
+      uprostřed Žalý 1034+1016 m, vpravo Černá hora 1299 m.
+  - soubor: File:IIx286 Hrabacov04.JPG
+    autor: Jiří Erben
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:IIx286_Hrabacov04.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/1/1a/IIx286_Hrabacov04.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/IIx286_Hrabacov04.JPG/960px-IIx286_Hrabacov04.JPG
+    rozmery: 2560×1920
+    datum: 2014-07-05 19:00:07
+    popis: Kruhový objezd v Hrabačově - výjezd směr Horní Mísečky, v pozadí hora Žalý.
   - soubor: File:Jilemnice-autobusove-nadrazi-10.JPG
     autor: Jiří Erben
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Jilemnice-autobusove-nadrazi-10.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/a/a5/Jilemnice-autobusove-nadrazi-10.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Jilemnice-autobusove-nadrazi-10.JPG/960px-Jilemnice-autobusove-nadrazi-10.JPG
     rozmery: 2048×1536
@@ -221,7 +246,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Pohled_na_Herlikovice.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/b/be/Pohled_na_Herlikovice.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Pohled_na_Herlikovice.JPG/960px-Pohled_na_Herlikovice.JPG
     rozmery: 3872×2592
@@ -230,12 +255,68 @@ fotky:
       herlíkovické sjezdovky, vedle něho Zadní Žalý (1035 m.n.m.), před nimi
       Strážná hůra (824 m.n.m.), Strážné a kousek Herlíkovického Žalý (958
       m.n.m.), přes údolí naproti vrch o v…
+  - soubor: File:Rozhledna Žalý - pohled na vrchol.JPG
+    autor: Czech Wikipedia user Marzper
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_%C5%BDal%C3%BD_-_pohled_na_vrchol.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/2/2e/Rozhledna_%C5%BDal%C3%BD_-_pohled_na_vrchol.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Rozhledna_%C5%BDal%C3%BD_-_pohled_na_vrchol.JPG/960px-Rozhledna_%C5%BDal%C3%BD_-_pohled_na_vrchol.JPG
+    rozmery: 1600×1200
+    datum: 6 July 2009, 13:37:49 (according to Exi…
+    popis: Zaly Observation Tower, near Vrchlabi, Czech Republic
+  - soubor: File:Rozhledna Žalý - pohled z boku.JPG
+    autor: Czech Wikipedia user Marzper
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_%C5%BDal%C3%BD_-_pohled_z_boku.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/3/3e/Rozhledna_%C5%BDal%C3%BD_-_pohled_z_boku.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rozhledna_%C5%BDal%C3%BD_-_pohled_z_boku.JPG/960px-Rozhledna_%C5%BDal%C3%BD_-_pohled_z_boku.JPG
+    rozmery: 1200×1600
+    datum: 6 July 2009, 13:35:42 (according to Exi…
+    popis: Zaly Observation Tower, near Vrchlabi, Czech Republic
+  - soubor: File:Rozhledna Žalý - ukázka výhledu 1.JPG
+    autor: Czech Wikipedia user Marzper
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_%C5%BDal%C3%BD_-_uk%C3%A1zka_v%C3%BDhledu_1.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/0/0d/Rozhledna_%C5%BDal%C3%BD_-_uk%C3%A1zka_v%C3%BDhledu_1.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Rozhledna_%C5%BDal%C3%BD_-_uk%C3%A1zka_v%C3%BDhledu_1.JPG/960px-Rozhledna_%C5%BDal%C3%BD_-_uk%C3%A1zka_v%C3%BDhledu_1.JPG
+    rozmery: 1600×1200
+    datum: 6 July 2009, 13:44:03 (according to Exi…
+    popis: Zaly Observation Tower, near Vrchlabi, Czech Republic - look to Krkonose
+      Mountain, Snezka in the distance
+  - soubor: File:Rozhledna Žalý.JPG
+    autor: Czech Wikipedia user Marzper
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_%C5%BDal%C3%BD.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/8/8a/Rozhledna_%C5%BDal%C3%BD.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Rozhledna_%C5%BDal%C3%BD.JPG/960px-Rozhledna_%C5%BDal%C3%BD.JPG
+    rozmery: 1200×1600
+    datum: 6 July 2009, 13:35:06 (according to Exi…
+    popis: Zaly Observation Tower, near Vrchlabi, Czech Republic
+  - soubor: File:Rozhledna Žalý010.jpg
+    autor: RenKolac
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_%C5%BDal%C3%BD010.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/19/Rozhledna_%C5%BDal%C3%BD010.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rozhledna_%C5%BDal%C3%BD010.jpg/960px-Rozhledna_%C5%BDal%C3%BD010.jpg
+    rozmery: 2100×1400
+    datum: 2010-06-06 16:02:36
+    popis: Lookout tower Žalý in Krkonoše
   - soubor: File:Vrchlabi ze zaly.JPG
     autor: Kmenicka
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Vrchlabi_ze_zaly.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/f/f3/Vrchlabi_ze_zaly.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Vrchlabi_ze_zaly.JPG/960px-Vrchlabi_ze_zaly.JPG
     rozmery: 2048×1536
@@ -246,19 +327,41 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:%C5%BDalsk%C3%BD_h%C5%99bet.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/6e/%C5%BDalsk%C3%BD_h%C5%99bet.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/%C5%BDalsk%C3%BD_h%C5%99bet.jpg/960px-%C5%BDalsk%C3%BD_h%C5%99bet.jpg
     rozmery: 2528×1884
     datum: 12 September 2010, 12:34:18 (according…
     popis: Žalský hřbet in the Krkonoše Mountains
+  - soubor: File:Žalý 28-08-2005 B.jpg
+    autor: Jiří Erben
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:%C5%BDal%C3%BD_28-08-2005_B.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/29/%C5%BDal%C3%BD_28-08-2005_B.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/%C5%BDal%C3%BD_28-08-2005_B.jpg/960px-%C5%BDal%C3%BD_28-08-2005_B.jpg
+    rozmery: 1024×1535
+    datum: 2005-05-28
+    popis: Rozhledna na Předním Žalém.
   - soubor: File:Žalý-sníh2012.jpg
     autor: Jiří Erben
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:%C5%BDal%C3%BD-sn%C3%ADh2012.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9b/%C5%BDal%C3%BD-sn%C3%ADh2012.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%C5%BDal%C3%BD-sn%C3%ADh2012.jpg/960px-%C5%BDal%C3%BD-sn%C3%ADh2012.jpg
     rozmery: 2000×1000
     datum: 2012-03-26
     popis: Dvojvrcholová hora Žalý (1012 a 1036 m) při pohledu z Jilemnice.
+  - soubor: File:Žalý.JPG
+    autor: Keana
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:%C5%BDal%C3%BD.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/6/64/%C5%BDal%C3%BD.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/%C5%BDal%C3%BD.JPG/960px-%C5%BDal%C3%BD.JPG
+    rozmery: 3072×4608
+    datum: 2012-08-05 00:10:13
+    popis: rozhledna Žalý - Benecko

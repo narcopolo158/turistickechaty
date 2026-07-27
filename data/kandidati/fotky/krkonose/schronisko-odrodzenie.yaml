@@ -1,14 +1,17 @@
-# Schronisko Odrodzenie — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Schronisko Odrodzenie na commons.wikimedia.org
+# Schronisko Odrodzenie — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Schronisko Odrodzenie + fulltext „Schronisko Odrodzenie" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: schronisko-odrodzenie
 oblast: krkonose
 nazevChaty: Schronisko Odrodzenie
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Špindlovka - panoramio.jpg
     autor: Novotný M.
@@ -27,7 +30,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Odrodzenie_(Krkono%C5%A1e,_Polsko).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/06/Odrodzenie_%28Krkono%C5%A1e%2C_Polsko%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Odrodzenie_%28Krkono%C5%A1e%2C_Polsko%29.jpg/960px-Odrodzenie_%28Krkono%C5%A1e%2C_Polsko%29.jpg
     rozmery: 4608×2592
@@ -63,7 +66,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Odrodzenie,_od_Petrovy_boudy.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/e1/Schronisko_Odrodzenie%2C_od_Petrovy_boudy.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Schronisko_Odrodzenie%2C_od_Petrovy_boudy.jpg/960px-Schronisko_Odrodzenie%2C_od_Petrovy_boudy.jpg
     rozmery: 2525×1859
@@ -75,7 +78,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:V%C3%BDhled_od_Petrovy_boudy_na_Slezsk%C3%A9_sedlo_a_Mal%C3%BD_%C5%A0i%C5%A1%C3%A1k_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/d6/V%C3%BDhled_od_Petrovy_boudy_na_Slezsk%C3%A9_sedlo_a_Mal%C3%BD_%C5%A0i%C5%A1%C3%A1k_%2801%29.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/V%C3%BDhled_od_Petrovy_boudy_na_Slezsk%C3%A9_sedlo_a_Mal%C3%BD_%C5%A0i%C5%A1%C3%A1k_%2801%29.jpg/960px-V%C3%BDhled_od_Petrovy_boudy_na_Slezsk%C3%A9_sedlo_a_Mal%C3%BD_%C5%A0i%C5%A1%C3%A1k_%2801%29.jpg
     rozmery: 2592×1944
@@ -88,19 +91,31 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba_-_Karpacz_38_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/67/Szklarska_Por%C4%99ba_-_Karpacz_38_-_panoramio.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Szklarska_Por%C4%99ba_-_Karpacz_38_-_panoramio.jpg/960px-Szklarska_Por%C4%99ba_-_Karpacz_38_-_panoramio.jpg
     rozmery: 3648×2056
     vzdalenostM: 2958
     datum: Taken on 16 September 2011
     popis: Szklarska Poręba - Karpacz 38
+  - soubor: File:Bergbauden im Riesengebirge.jpg
+    autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
+      MagentaGreen
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bergbauden_im_Riesengebirge.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Bergbauden_im_Riesengebirge.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bergbauden_im_Riesengebirge.jpg/960px-Bergbauden_im_Riesengebirge.jpg
+    rozmery: 2880×2160
+    datum: 2019-01-17
+    popis: Location map of the mountain huts in the Giant Mountains
   - soubor: File:Jugendkammhaus Rübezahl – 1. Obergeschoss.png
     autor: Unknown autor Unknown autor
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_1._Obergeschoss.png
     original: https://upload.wikimedia.org/wikipedia/commons/c/c1/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_1._Obergeschoss.png
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/c/c1/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_1._Obergeschoss.png
     rozmery: 752×443
     datum: "1929"
@@ -112,7 +127,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_2._Obergeschoss.png
     original: https://upload.wikimedia.org/wikipedia/commons/7/76/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_2._Obergeschoss.png
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/7/76/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_2._Obergeschoss.png
     rozmery: 747×476
     datum: "1929"
@@ -124,7 +139,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_3._Obergeschoss.png
     original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_3._Obergeschoss.png
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/e/e0/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_3._Obergeschoss.png
     rozmery: 752×487
     datum: "1929"
@@ -136,7 +151,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_Seitenansicht.png
     original: https://upload.wikimedia.org/wikipedia/commons/a/a8/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_Seitenansicht.png
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/a/a8/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_Seitenansicht.png
     rozmery: 752×389
     datum: "1929"
@@ -147,7 +162,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_Untergeschoss.png
     original: https://upload.wikimedia.org/wikipedia/commons/6/68/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_Untergeschoss.png
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/6/68/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_Untergeschoss.png
     rozmery: 763×525
     datum: "1929"
@@ -158,7 +173,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_Vorderansicht.png
     original: https://upload.wikimedia.org/wikipedia/commons/a/ab/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_Vorderansicht.png
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/a/ab/Jugendkammhaus_R%C3%BCbezahl_%E2%80%93_Vorderansicht.png
     rozmery: 752×363
     datum: "1929"
@@ -169,7 +184,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Odrodzenie,_Maly_Szyszak_spod_Petrovej_Boudy,_23.7.1997r.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a5/Odrodzenie%2C_Maly_Szyszak_spod_Petrovej_Boudy%2C_23.7.1997r.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Odrodzenie%2C_Maly_Szyszak_spod_Petrovej_Boudy%2C_23.7.1997r.jpg/960px-Odrodzenie%2C_Maly_Szyszak_spod_Petrovej_Boudy%2C_23.7.1997r.jpg
     rozmery: 1433×493
@@ -180,7 +195,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Piecz%C4%99%C4%87_schroniska_%E2%80%9EOdrodzenie%E2%80%9D.png
     original: https://upload.wikimedia.org/wikipedia/commons/8/8c/Piecz%C4%99%C4%87_schroniska_%E2%80%9EOdrodzenie%E2%80%9D.png
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/8/8c/Piecz%C4%99%C4%87_schroniska_%E2%80%9EOdrodzenie%E2%80%9D.png
     rozmery: 784×455
     datum: "2010"
@@ -192,7 +207,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Prze%C5%82%C4%99cz_Karkonoska_-_panorama.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/12/Prze%C5%82%C4%99cz_Karkonoska_-_panorama.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Prze%C5%82%C4%99cz_Karkonoska_-_panorama.jpg/960px-Prze%C5%82%C4%99cz_Karkonoska_-_panorama.jpg
     rozmery: 3074×1005
     datum: 2010-09-03
@@ -205,17 +220,31 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Prze%C5%82%C4%99cz_Karkonoska_banner.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/b8/Prze%C5%82%C4%99cz_Karkonoska_banner.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Prze%C5%82%C4%99cz_Karkonoska_banner.jpg/960px-Prze%C5%82%C4%99cz_Karkonoska_banner.jpg
     rozmery: 2100×300
     datum: 2013-05-22 09:41
     popis: Panorama of Przełęcz Karkonoska
+  - soubor: File:Przelecz Karkonoska2.JPG
+    autor: Qwark
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Przelecz_Karkonoska2.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/7/7b/Przelecz_Karkonoska2.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Przelecz_Karkonoska2.JPG/960px-Przelecz_Karkonoska2.JPG
+    rozmery: 2048×1536
+    datum: 2001-07-12
+    popis: Przełęcz Karkonoska , po lewej stronie widać czeskie schronisko
+      Spindlerova Bouda . Natomiast po prawej widać strażnica graniczną.
+      Kilkadziesiąt metrów powyżej przełęczy wznosi się polskie schronisko
+      Odrodzenie .
   - soubor: File:Schronisko Odrodzenie - Sudety lipiec 2001.JPG
     autor: Qwark
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Odrodzenie_-_Sudety_lipiec_2001.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/a/a8/Schronisko_Odrodzenie_-_Sudety_lipiec_2001.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Schronisko_Odrodzenie_-_Sudety_lipiec_2001.JPG/960px-Schronisko_Odrodzenie_-_Sudety_lipiec_2001.JPG
     rozmery: 2048×1536
@@ -226,7 +255,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Odrodzenie_-_Sudety_styczen_2005.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/86/Schronisko_Odrodzenie_-_Sudety_styczen_2005.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Schronisko_Odrodzenie_-_Sudety_styczen_2005.jpg/960px-Schronisko_Odrodzenie_-_Sudety_styczen_2005.jpg
     rozmery: 1152×768
     datum: 31 January 2005 (original upload date)
@@ -239,7 +268,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Odrodzenie_1.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/b6/Schronisko_Odrodzenie_1.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Schronisko_Odrodzenie_1.jpg/960px-Schronisko_Odrodzenie_1.jpg
     rozmery: 2835×1868
     datum: 2010-09-03
@@ -251,7 +280,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Odrodzenie_2.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/50/Schronisko_Odrodzenie_2.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Schronisko_Odrodzenie_2.jpg/960px-Schronisko_Odrodzenie_2.jpg
     rozmery: 2896×1936
     datum: 2010-09-03
@@ -261,7 +290,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Odrodzenie_A123.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/e/ed/Schronisko_Odrodzenie_A123.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Schronisko_Odrodzenie_A123.JPG/960px-Schronisko_Odrodzenie_A123.JPG
     rozmery: 3648×2736
@@ -272,7 +301,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Odrodzenie_A124.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/f/f4/Schronisko_Odrodzenie_A124.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Schronisko_Odrodzenie_A124.JPG/960px-Schronisko_Odrodzenie_A124.JPG
     rozmery: 3648×2736
@@ -283,7 +312,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Odrodzenie_A125.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/b/b0/Schronisko_Odrodzenie_A125.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Schronisko_Odrodzenie_A125.JPG/960px-Schronisko_Odrodzenie_A125.JPG
     rozmery: 3648×2736
@@ -294,7 +323,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Odrodzenie_A126.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/e/e7/Schronisko_Odrodzenie_A126.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Schronisko_Odrodzenie_A126.JPG/960px-Schronisko_Odrodzenie_A126.JPG
     rozmery: 3648×2736
@@ -305,7 +334,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Spindlerpass-04.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/74/Spindlerpass-04.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spindlerpass-04.jpg/960px-Spindlerpass-04.jpg
     rozmery: 2467×1645
@@ -317,7 +346,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Spindlerpass-05.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/8f/Spindlerpass-05.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Spindlerpass-05.jpg/960px-Spindlerpass-05.jpg
     rozmery: 2560×1707

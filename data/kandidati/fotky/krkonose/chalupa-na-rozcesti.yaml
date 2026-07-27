@@ -1,21 +1,24 @@
-# Chalupa Na Rozcestí — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Chalupa Na Rozcestí na commons.wikimedia.org
+# Chalupa Na Rozcestí — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Chalupa Na Rozcestí + fulltext „Chalupa Na Rozcestí" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: chalupa-na-rozcesti
 oblast: krkonose
 nazevChaty: Chalupa Na Rozcestí
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Chalupa na Rozcestí.jpg
     autor: Ladabohac
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Chalupa_na_Rozcest%C3%AD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/2c/Chalupa_na_Rozcest%C3%AD.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Chalupa_na_Rozcest%C3%AD.jpg/960px-Chalupa_na_Rozcest%C3%AD.jpg
     rozmery: 4000×3000
@@ -34,3 +37,14 @@ fotky:
     vzdalenostM: 131
     datum: 1991-12-29
     popis: Sněžka (1602) od chalupy Na rozcestí
+  - soubor: File:Chalupa na rozcestí FR01.jpg
+    autor: Fried Marek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Chalupa_na_rozcest%C3%AD_FR01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/22/Chalupa_na_rozcest%C3%AD_FR01.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Chalupa_na_rozcest%C3%AD_FR01.jpg/960px-Chalupa_na_rozcest%C3%AD_FR01.jpg
+    rozmery: 2048×1152
+    datum: 2015-08-22
+    popis: Chalupa na rozcestí

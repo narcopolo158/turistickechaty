@@ -1,12 +1,271 @@
-# Zákoutí — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Zákoutí na commons.wikimedia.org
+# Zákoutí — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Zákoutí + fulltext „Zákoutí" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: zakouti
 oblast: krkonose
 nazevChaty: Zákoutí
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
-fotky: []
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  kandidát DATA-01"
+checked: 2026-07-27
+fotky:
+  - soubor: File:Blatno, Zákoutí, house No 4.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_house_No_4.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/97/Blatno%2C_Z%C3%A1kout%C3%AD%2C_house_No_4.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Blatno%2C_Z%C3%A1kout%C3%AD%2C_house_No_4.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_house_No_4.jpg
+    rozmery: 1857×2547
+    datum: 2013-07-12
+    popis: Upper part of Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, chapel.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_chapel.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/19/Blatno%2C_Z%C3%A1kout%C3%AD%2C_chapel.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Blatno%2C_Z%C3%A1kout%C3%AD%2C_chapel.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_chapel.jpg
+    rozmery: 1831×2647
+    datum: 2013-07-12
+    popis: Small chapel at Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, lower part.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_lower_part.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/6d/Blatno%2C_Z%C3%A1kout%C3%AD%2C_lower_part.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Blatno%2C_Z%C3%A1kout%C3%AD%2C_lower_part.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_lower_part.jpg
+    rozmery: 2706×1705
+    datum: 2013-07-12
+    popis: Lower part of Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, middle part 2.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_middle_part_2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/69/Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part_2.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part_2.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part_2.jpg
+    rozmery: 1880×2816
+    datum: 2013-07-12
+    popis: Middle part of Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, middle part 3.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_middle_part_3.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a2/Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part_3.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part_3.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part_3.jpg
+    rozmery: 2397×1752
+    datum: 2013-07-12
+    popis: Middle part of Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, middle part 4.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_middle_part_4.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/63/Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part_4.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part_4.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part_4.jpg
+    rozmery: 2738×1852
+    datum: 2013-07-12
+    popis: Middle part of Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, middle part.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_middle_part.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/77/Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_middle_part.jpg
+    rozmery: 2816×1880
+    datum: 2013-07-12
+    popis: Middle part of Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, upper part 2.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_upper_part_2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/fa/Blatno%2C_Z%C3%A1kout%C3%AD%2C_upper_part_2.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Blatno%2C_Z%C3%A1kout%C3%AD%2C_upper_part_2.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_upper_part_2.jpg
+    rozmery: 2713×1831
+    datum: 2013-07-12
+    popis: Upper part of Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, upper part.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_upper_part.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/37/Blatno%2C_Z%C3%A1kout%C3%AD%2C_upper_part.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Blatno%2C_Z%C3%A1kout%C3%AD%2C_upper_part.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_upper_part.jpg
+    rozmery: 2630×1712
+    datum: 2013-07-12
+    popis: Upper part of Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, wayside cross 2.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_wayside_cross_2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/47/Blatno%2C_Z%C3%A1kout%C3%AD%2C_wayside_cross_2.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Blatno%2C_Z%C3%A1kout%C3%AD%2C_wayside_cross_2.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_wayside_cross_2.jpg
+    rozmery: 1880×2816
+    datum: 2013-07-12
+    popis: wayside cross in Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Blatno, Zákoutí, wayside cross.jpg
+    autor: Pavel Hrdlička (Czech Wikipedia user Packa )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Blatno,_Z%C3%A1kout%C3%AD,_wayside_cross.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b2/Blatno%2C_Z%C3%A1kout%C3%AD%2C_wayside_cross.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Blatno%2C_Z%C3%A1kout%C3%AD%2C_wayside_cross.jpg/960px-Blatno%2C_Z%C3%A1kout%C3%AD%2C_wayside_cross.jpg
+    rozmery: 1748×2668
+    datum: 2013-07-12
+    popis: wayside cross in Zákoutí village, part of Blatno , Czech Republic
+  - soubor: File:Kaple Panny Marie v Zákoutí (Q78786011) 01.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:Kaple_Panny_Marie_v_Z%C3%A1kout%C3%AD_(Q78786011)_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/97/Kaple_Panny_Marie_v_Z%C3%A1kout%C3%AD_%28Q78786011%29_01.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Kaple_Panny_Marie_v_Z%C3%A1kout%C3%AD_%28Q78786011%29_01.jpg/960px-Kaple_Panny_Marie_v_Z%C3%A1kout%C3%AD_%28Q78786011%29_01.jpg
+    rozmery: 1200×800
+    datum: Unknown date
+    popis: Chapel in Blatno in Chomutov District – entry no. 23075 .
+  - soubor: File:Kaple Panny Marie v Zákoutí (Q78786011) 02.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:Kaple_Panny_Marie_v_Z%C3%A1kout%C3%AD_(Q78786011)_02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/44/Kaple_Panny_Marie_v_Z%C3%A1kout%C3%AD_%28Q78786011%29_02.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/4/44/Kaple_Panny_Marie_v_Z%C3%A1kout%C3%AD_%28Q78786011%29_02.jpg
+    rozmery: 784×1200
+    datum: Unknown date
+    popis: Chapel in Blatno in Chomutov District – entry no. 23075 .
+  - soubor: File:Kříž na rozcestí v Zákoutí (Q78786020) 01.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:K%C5%99%C3%AD%C5%BE_na_rozcest%C3%AD_v_Z%C3%A1kout%C3%AD_(Q78786020)_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/52/K%C5%99%C3%AD%C5%BE_na_rozcest%C3%AD_v_Z%C3%A1kout%C3%AD_%28Q78786020%29_01.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/K%C5%99%C3%AD%C5%BE_na_rozcest%C3%AD_v_Z%C3%A1kout%C3%AD_%28Q78786020%29_01.jpg/960px-K%C5%99%C3%AD%C5%BE_na_rozcest%C3%AD_v_Z%C3%A1kout%C3%AD_%28Q78786020%29_01.jpg
+    rozmery: 1200×800
+    datum: Unknown date
+    popis: Wayside cross in Blatno in Chomutov District – entry no. 23073 .
+  - soubor: File:Kříž na rozcestí v Zákoutí (Q78786020) 02.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:K%C5%99%C3%AD%C5%BE_na_rozcest%C3%AD_v_Z%C3%A1kout%C3%AD_(Q78786020)_02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/09/K%C5%99%C3%AD%C5%BE_na_rozcest%C3%AD_v_Z%C3%A1kout%C3%AD_%28Q78786020%29_02.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/0/09/K%C5%99%C3%AD%C5%BE_na_rozcest%C3%AD_v_Z%C3%A1kout%C3%AD_%28Q78786020%29_02.jpg
+    rozmery: 799×1200
+    datum: Unknown date
+    popis: Wayside cross in Blatno in Chomutov District – entry no. 23073 .
+  - soubor: File:Kříž poblíž domu 57 v Zákoutí (Q78786024).jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:K%C5%99%C3%AD%C5%BE_pobl%C3%AD%C5%BE_domu_57_v_Z%C3%A1kout%C3%AD_(Q78786024).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e8/K%C5%99%C3%AD%C5%BE_pobl%C3%AD%C5%BE_domu_57_v_Z%C3%A1kout%C3%AD_%28Q78786024%29.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/K%C5%99%C3%AD%C5%BE_pobl%C3%AD%C5%BE_domu_57_v_Z%C3%A1kout%C3%AD_%28Q78786024%29.jpg/960px-K%C5%99%C3%AD%C5%BE_pobl%C3%AD%C5%BE_domu_57_v_Z%C3%A1kout%C3%AD_%28Q78786024%29.jpg
+    rozmery: 1200×772
+    datum: Unknown date
+    popis: Wayside cross in Blatno in Chomutov District – entry no. 23072 .
+  - soubor: File:Kříž u cesty do horní části Zákoutí (Q78786007) 01.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:K%C5%99%C3%AD%C5%BE_u_cesty_do_horn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_(Q78786007)_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f4/K%C5%99%C3%AD%C5%BE_u_cesty_do_horn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786007%29_01.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/K%C5%99%C3%AD%C5%BE_u_cesty_do_horn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786007%29_01.jpg/960px-K%C5%99%C3%AD%C5%BE_u_cesty_do_horn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786007%29_01.jpg
+    rozmery: 1200×808
+    datum: Unknown date
+    popis: Wayside cross in Blatno in Chomutov District – entry no. 23076 .
+  - soubor: File:Kříž u cesty do horní části Zákoutí (Q78786007) 02.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:K%C5%99%C3%AD%C5%BE_u_cesty_do_horn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_(Q78786007)_02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c8/K%C5%99%C3%AD%C5%BE_u_cesty_do_horn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786007%29_02.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/c/c8/K%C5%99%C3%AD%C5%BE_u_cesty_do_horn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786007%29_02.jpg
+    rozmery: 836×1200
+    datum: Unknown date
+    popis: Wayside cross in Blatno in Chomutov District – entry no. 23076 .
+  - soubor: File:Kříž u cesty v severní části Zákoutí (Q78786004) 01.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:K%C5%99%C3%AD%C5%BE_u_cesty_v_severn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_(Q78786004)_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/ac/K%C5%99%C3%AD%C5%BE_u_cesty_v_severn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786004%29_01.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/a/ac/K%C5%99%C3%AD%C5%BE_u_cesty_v_severn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786004%29_01.jpg
+    rozmery: 808×1200
+    datum: Unknown date
+    popis: Wayside cross in Blatno in Chomutov District – entry no. 23077 .
+  - soubor: File:Kříž u cesty v severní části Zákoutí (Q78786004) 02.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:K%C5%99%C3%AD%C5%BE_u_cesty_v_severn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_(Q78786004)_02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/94/K%C5%99%C3%AD%C5%BE_u_cesty_v_severn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786004%29_02.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/K%C5%99%C3%AD%C5%BE_u_cesty_v_severn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786004%29_02.jpg/960px-K%C5%99%C3%AD%C5%BE_u_cesty_v_severn%C3%AD_%C4%8D%C3%A1sti_Z%C3%A1kout%C3%AD_%28Q78786004%29_02.jpg
+    rozmery: 1200×823
+    datum: Unknown date
+    popis: Wayside cross in Blatno in Chomutov District – entry no. 23077 .
+  - soubor: File:Socha svatého Jana Nepomuckého na rozcestí u kaple v Zákoutí
+      (Q78786014) 01.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_(Q78786014)_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c5/Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_%28Q78786014%29_01.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_%28Q78786014%29_01.jpg/960px-Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_%28Q78786014%29_01.jpg
+    rozmery: 1200×801
+    datum: Unknown date
+    popis: Statue in Blatno in Chomutov District – entry no. 23074 .
+  - soubor: File:Socha svatého Jana Nepomuckého na rozcestí u kaple v Zákoutí
+      (Q78786014) 02.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_(Q78786014)_02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/44/Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_%28Q78786014%29_02.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/4/44/Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_%28Q78786014%29_02.jpg
+    rozmery: 877×1200
+    datum: Unknown date
+    popis: Statue in Blatno in Chomutov District – entry no. 23074 .
+  - soubor: File:Socha svatého Jana Nepomuckého na rozcestí u kaple v Zákoutí
+      (Q78786014) 03.jpg
+    autor: Barocco
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_(Q78786014)_03.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/9e/Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_%28Q78786014%29_03.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_%28Q78786014%29_03.jpg/960px-Socha_svat%C3%A9ho_Jana_Nepomuck%C3%A9ho_na_rozcest%C3%AD_u_kaple_v_Z%C3%A1kout%C3%AD_%28Q78786014%29_03.jpg
+    rozmery: 1016×1200
+    datum: Unknown date
+    popis: Statue in Blatno in Chomutov District – entry no. 23074 .

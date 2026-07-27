@@ -1,12 +1,70 @@
-# Chata Hubertka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Chata Hubertka na commons.wikimedia.org
+# Chata Hubertka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Chata Hubertka + fulltext „Chata Hubertka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: chata-hubertka
 oblast: krkonose
 nazevChaty: Chata Hubertka
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
-fotky: []
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  kandidát DATA-01"
+checked: 2026-07-27
+fotky:
+  - soubor: File:Bílý Potok, Hubertka.jpg
+    autor: Palickap
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:B%C3%ADl%C3%BD_Potok,_Hubertka.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/5a/B%C3%ADl%C3%BD_Potok%2C_Hubertka.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/B%C3%ADl%C3%BD_Potok%2C_Hubertka.jpg/960px-B%C3%ADl%C3%BD_Potok%2C_Hubertka.jpg
+    rozmery: 4565×3335
+    datum: 2021-07-04 15:23:11
+    popis: Bílý Potok, Liberec District, Czechia.
+  - soubor: File:Hubertka. Pod Smrkem. 13.11.202r.jpg
+    autor: MOs810
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Hubertka._Pod_Smrkem._13.11.202r.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f4/Hubertka._Pod_Smrkem._13.11.202r.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Hubertka._Pod_Smrkem._13.11.202r.jpg/960px-Hubertka._Pod_Smrkem._13.11.202r.jpg
+    rozmery: 1433×983
+    datum: 2014-11-28 15:36:39
+    popis: Bílý Potok, Liberec District, Czechia.
+  - soubor: File:Hubertka.jpg
+    autor: Jan Polák
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Hubertka.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/be/Hubertka.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hubertka.jpg/960px-Hubertka.jpg
+    rozmery: 3072×2304
+    datum: 2010-09-18
+    popis: Mountain cottage "Hubertka", Jizera Mountains, Lázně Libverda
+  - soubor: File:Hubertusbaude 644 m.JPG
+    autor: Neustädtler
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Hubertusbaude_644_m.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/7/78/Hubertusbaude_644_m.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hubertusbaude_644_m.JPG/960px-Hubertusbaude_644_m.JPG
+    rozmery: 2498×3292
+    datum: 2014-03-25 12:47:54
+    popis: Hubertus-Baude, Erste Baude im Isergebirge bei Weißbach
+  - soubor: File:Stempel Hubertusbaude Seehöhe 644 m.jpg
+    autor: Neustädtler
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Stempel_Hubertusbaude_Seeh%C3%B6he_644_m.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b9/Stempel_Hubertusbaude_Seeh%C3%B6he_644_m.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/b/b9/Stempel_Hubertusbaude_Seeh%C3%B6he_644_m.jpg
+    rozmery: 188×106
+    datum: 2014-03-25 11:22:21
+    popis: Stempel Hubertusbaude, Seehöhe 644 m, erste Baude im Isergebirge

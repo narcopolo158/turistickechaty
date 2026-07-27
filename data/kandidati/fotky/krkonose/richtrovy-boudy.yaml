@@ -1,14 +1,17 @@
-# Richtrovy Boudy — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Richtrovy Boudy na commons.wikimedia.org
+# Richtrovy boudy — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Richtrovy boudy + fulltext „Richtrovy boudy" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: richtrovy-boudy
 oblast: krkonose
-nazevChaty: Richtrovy Boudy
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+nazevChaty: Richtrovy boudy
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Outside Pec pod Sněžkou (7965169300).jpg
     autor: larsjuh
@@ -22,3 +25,25 @@ fotky:
     vzdalenostM: 152
     datum: 2012-08-19 12:51
     popis: Outside Pec pod Sněžkou
+  - soubor: File:Bergbauden im Riesengebirge.jpg
+    autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
+      MagentaGreen
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bergbauden_im_Riesengebirge.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Bergbauden_im_Riesengebirge.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bergbauden_im_Riesengebirge.jpg/960px-Bergbauden_im_Riesengebirge.jpg
+    rozmery: 2880×2160
+    datum: 2019-01-17
+    popis: Location map of the mountain huts in the Giant Mountains
+  - soubor: File:Richtrovy boudy (Krkonoše).jpg
+    autor: Jiří Komárek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Richtrovy_boudy_(Krkono%C5%A1e).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/54/Richtrovy_boudy_%28Krkono%C5%A1e%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Richtrovy_boudy_%28Krkono%C5%A1e%29.jpg/960px-Richtrovy_boudy_%28Krkono%C5%A1e%29.jpg
+    rozmery: 8288×5520
+    datum: 2019-02-24

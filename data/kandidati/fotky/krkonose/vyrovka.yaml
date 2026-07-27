@@ -1,14 +1,17 @@
-# Výrovka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Výrovka na commons.wikimedia.org
+# Výrovka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Výrovka + fulltext „Výrovka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: vyrovka
 oblast: krkonose
 nazevChaty: Výrovka
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Krkonoše, horská chata Výrovka.jpg
     autor: Stanislav Dusík
@@ -61,9 +64,145 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Vyrovka_002.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/ad/Vyrovka_002.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Vyrovka_002.jpg/960px-Vyrovka_002.jpg
     rozmery: 1920×1322
     vzdalenostM: 112
     datum: circa 1960 date QS:P,+1960-00-00T00:00:…
     popis: Výrovka krkonošská bouda
+  - soubor: File:Bergbauden im Riesengebirge.jpg
+    autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
+      MagentaGreen
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bergbauden_im_Riesengebirge.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Bergbauden_im_Riesengebirge.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bergbauden_im_Riesengebirge.jpg/960px-Bergbauden_im_Riesengebirge.jpg
+    rozmery: 2880×2160
+    datum: 2019-01-17
+    popis: Location map of the mountain huts in the Giant Mountains
+  - soubor: File:Kouřim, řeka Výrovka II.jpg
+    autor: I would appreciate being notified if you use my work outside Wikimedia.
+      More of my work can be found in my personal gallery .
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Kou%C5%99im,_%C5%99eka_V%C3%BDrovka_II.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/d5/Kou%C5%99im%2C_%C5%99eka_V%C3%BDrovka_II.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Kou%C5%99im%2C_%C5%99eka_V%C3%BDrovka_II.jpg/960px-Kou%C5%99im%2C_%C5%99eka_V%C3%BDrovka_II.jpg
+    rozmery: 3178×4770
+    datum: 2014-09-21 16:09:58
+    popis: Výrovka River in Kouřim, Central Bohemia
+  - soubor: File:Radim - most přes Výrovku (1).JPG
+    autor: MartinVeselka
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Radim_-_most_p%C5%99es_V%C3%BDrovku_(1).JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b1/Radim_-_most_p%C5%99es_V%C3%BDrovku_%281%29.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Radim_-_most_p%C5%99es_V%C3%BDrovku_%281%29.JPG/960px-Radim_-_most_p%C5%99es_V%C3%BDrovku_%281%29.JPG
+    rozmery: 3648×2736
+    datum: 2014-07-19 16:59:00
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Radim - most přes Výrovku (2).JPG
+    autor: MartinVeselka
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Radim_-_most_p%C5%99es_V%C3%BDrovku_(2).JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/c/cf/Radim_-_most_p%C5%99es_V%C3%BDrovku_%282%29.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Radim_-_most_p%C5%99es_V%C3%BDrovku_%282%29.JPG/960px-Radim_-_most_p%C5%99es_V%C3%BDrovku_%282%29.JPG
+    rozmery: 3648×2736
+    datum: 2014-07-19 16:59:20
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Radim - most přes Výrovku (3).JPG
+    autor: MartinVeselka
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Radim_-_most_p%C5%99es_V%C3%BDrovku_(3).JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/d/dd/Radim_-_most_p%C5%99es_V%C3%BDrovku_%283%29.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Radim_-_most_p%C5%99es_V%C3%BDrovku_%283%29.JPG/960px-Radim_-_most_p%C5%99es_V%C3%BDrovku_%283%29.JPG
+    rozmery: 3648×2736
+    datum: 2014-07-19 17:00:09
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Radim - most přes Výrovku (4).JPG
+    autor: MartinVeselka
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Radim_-_most_p%C5%99es_V%C3%BDrovku_(4).JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/8/84/Radim_-_most_p%C5%99es_V%C3%BDrovku_%284%29.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Radim_-_most_p%C5%99es_V%C3%BDrovku_%284%29.JPG/960px-Radim_-_most_p%C5%99es_V%C3%BDrovku_%284%29.JPG
+    rozmery: 3648×2736
+    datum: 2014-07-19 13:50:59
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Radim - most přes Výrovku (5).JPG
+    autor: MartinVeselka
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Radim_-_most_p%C5%99es_V%C3%BDrovku_(5).JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/a/ad/Radim_-_most_p%C5%99es_V%C3%BDrovku_%285%29.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Radim_-_most_p%C5%99es_V%C3%BDrovku_%285%29.JPG/960px-Radim_-_most_p%C5%99es_V%C3%BDrovku_%285%29.JPG
+    rozmery: 2736×3648
+    datum: 2014-07-19 13:51:32
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Radim - most přes Výrovku (6).JPG
+    autor: MartinVeselka
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Radim_-_most_p%C5%99es_V%C3%BDrovku_(6).JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/2/2d/Radim_-_most_p%C5%99es_V%C3%BDrovku_%286%29.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Radim_-_most_p%C5%99es_V%C3%BDrovku_%286%29.JPG/960px-Radim_-_most_p%C5%99es_V%C3%BDrovku_%286%29.JPG
+    rozmery: 3648×2736
+    datum: 2014-07-19 13:51:39
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Radim - most přes Výrovku (7).JPG
+    autor: MartinVeselka
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Radim_-_most_p%C5%99es_V%C3%BDrovku_(7).JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/f/ff/Radim_-_most_p%C5%99es_V%C3%BDrovku_%287%29.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Radim_-_most_p%C5%99es_V%C3%BDrovku_%287%29.JPG/960px-Radim_-_most_p%C5%99es_V%C3%BDrovku_%287%29.JPG
+    rozmery: 3648×2736
+    datum: 2014-07-19 16:58:50
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Výhled-na-ŠpindlerůvMlýn-a-Violík(zhruba-od-Výrovky)2009.jpg
+    autor: Ben Skála, Benfoto
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:V%C3%BDhled-na-%C5%A0pindler%C5%AFvMl%C3%BDn-a-Viol%C3%ADk(zhruba-od-V%C3%BDrovky)2009.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/d1/V%C3%BDhled-na-%C5%A0pindler%C5%AFvMl%C3%BDn-a-Viol%C3%ADk%28zhruba-od-V%C3%BDrovky%292009.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/V%C3%BDhled-na-%C5%A0pindler%C5%AFvMl%C3%BDn-a-Viol%C3%ADk%28zhruba-od-V%C3%BDrovky%292009.jpg/960px-V%C3%BDhled-na-%C5%A0pindler%C5%AFvMl%C3%BDn-a-Viol%C3%ADk%28zhruba-od-V%C3%BDrovky%292009.jpg
+    rozmery: 4288×2848
+    datum: 2009-05-23 13:19:29
+    popis: Blick vom Liščí hřeben (Fuchsrücken) in das Tal Dlouhý důl (Langer
+      Grund), im Hintergrund (Bildmitte) in westlicher Richtung die abgeholzte
+      Piste des Ski-Resorts Medvědín
+  - soubor: File:Výrovka listopad12.jpg
+    autor: Michaelavyrovka
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:V%C3%BDrovka_listopad12.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b3/V%C3%BDrovka_listopad12.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/V%C3%BDrovka_listopad12.jpg/960px-V%C3%BDrovka_listopad12.jpg
+    rozmery: 1200×900
+    datum: 2013-03-03 13:15:08
+    popis: Chata Výrovka současnost - podzim
+  - soubor: File:Výrovka mezi Vrbčany a Chroustovem.JPG
+    autor: Petr1888
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:V%C3%BDrovka_mezi_Vrb%C4%8Dany_a_Chroustovem.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a7/V%C3%BDrovka_mezi_Vrb%C4%8Dany_a_Chroustovem.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/V%C3%BDrovka_mezi_Vrb%C4%8Dany_a_Chroustovem.JPG/960px-V%C3%BDrovka_mezi_Vrb%C4%8Dany_a_Chroustovem.JPG
+    rozmery: 3504×2336
+    datum: 2012-12-01 11:33:36
+    popis: Výrovka mezi Vrbčany a Chroustovem

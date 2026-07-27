@@ -1,21 +1,24 @@
-# Hotel Špindlerova bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Hotel Špindlerova bouda na commons.wikimedia.org
+# Hotel Špindlerova bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Hotel Špindlerova bouda + fulltext „Hotel Špindlerova bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: hotel-spindlerova-bouda
 oblast: krkonose
 nazevChaty: Hotel Špindlerova bouda
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: data/chaty"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Parkoviště u Špindlerovy boudy, zastávka autobusu.jpg
     autor: ŠJů
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Parkovi%C5%A1t%C4%9B_u_%C5%A0pindlerovy_boudy,_zast%C3%A1vka_autobusu.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a3/Parkovi%C5%A1t%C4%9B_u_%C5%A0pindlerovy_boudy%2C_zast%C3%A1vka_autobusu.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Parkovi%C5%A1t%C4%9B_u_%C5%A0pindlerovy_boudy%2C_zast%C3%A1vka_autobusu.jpg/960px-Parkovi%C5%A1t%C4%9B_u_%C5%A0pindlerovy_boudy%2C_zast%C3%A1vka_autobusu.jpg
     rozmery: 2592×1944
@@ -80,7 +83,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C5%A0pindler%C5%AFv_Ml%C3%BDn,_zast%C3%A1vka_u_%C5%A0pindlerovy_boudy,_sloupek_VDKHK.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/de/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_zast%C3%A1vka_u_%C5%A0pindlerovy_boudy%2C_sloupek_VDKHK.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_zast%C3%A1vka_u_%C5%A0pindlerovy_boudy%2C_sloupek_VDKHK.jpg/960px-%C5%A0pindler%C5%AFv_Ml%C3%BDn%2C_zast%C3%A1vka_u_%C5%A0pindlerovy_boudy%2C_sloupek_VDKHK.jpg
     rozmery: 1944×2592
@@ -136,3 +139,146 @@ fotky:
     vzdalenostM: 113
     datum: 2007-06-02
     popis: Giant Mountains .
+  - soubor: File:Przełęcz Karkonoska - dawny budynek straży granicznej.jpg
+    autor: "This photo was taken by Przemysław Jahr Autorem zdjęcia jest Przemysław
+      Jahr Wykorzystując zdjęcie proszę podać jako autora: Przemysław Jahr /
+      Wikimedia Commons"
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Prze%C5%82%C4%99cz_Karkonoska_-_dawny_budynek_stra%C5%BCy_granicznej.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/45/Prze%C5%82%C4%99cz_Karkonoska_-_dawny_budynek_stra%C5%BCy_granicznej.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Prze%C5%82%C4%99cz_Karkonoska_-_dawny_budynek_stra%C5%BCy_granicznej.jpg/960px-Prze%C5%82%C4%99cz_Karkonoska_-_dawny_budynek_stra%C5%BCy_granicznej.jpg
+    rozmery: 2896×1936
+    datum: 2010-09-03
+    popis: Przełęcz Karkonoska - dawny budynek straży granicznej.
+  - soubor: File:Przelecz Karkonoska - Sudety 01.jpg
+    autor: Jojo at Polish Wikipedia
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Przelecz_Karkonoska_-_Sudety_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/5d/Przelecz_Karkonoska_-_Sudety_01.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Przelecz_Karkonoska_-_Sudety_01.jpg/960px-Przelecz_Karkonoska_-_Sudety_01.jpg
+    rozmery: 1152×768
+    datum: 31 January 2005 (original upload date)
+    popis: Przełęcz Karkonoska widok od strony Małego Szyszaka . Na pierwszym planie
+      budynek straży granicznej. W oddali czeskie schronisko Petrova bouda .
+      Styczeń 2005.
+  - soubor: File:Przelecz Karkonoska - Sudety.jpg
+    autor: Jojo at Polish Wikipedia
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Przelecz_Karkonoska_-_Sudety.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/03/Przelecz_Karkonoska_-_Sudety.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Przelecz_Karkonoska_-_Sudety.jpg/960px-Przelecz_Karkonoska_-_Sudety.jpg
+    rozmery: 1152×768
+    datum: 31 January 2005 (original upload date)
+    popis: Budynek straży granicznej - Przełęcz Karkonoska - Karkonosze - styczeń
+      2005. Jestem autorem tego zdjęcia i nadaje mu status PD.
+  - soubor: File:Przełęcz Karkonoska (Slezské sedlo) 2018.jpg
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Prze%C5%82%C4%99cz_Karkonoska_(Slezsk%C3%A9_sedlo)_2018.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/bc/Prze%C5%82%C4%99cz_Karkonoska_%28Slezsk%C3%A9_sedlo%29_2018.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Prze%C5%82%C4%99cz_Karkonoska_%28Slezsk%C3%A9_sedlo%29_2018.jpg/960px-Prze%C5%82%C4%99cz_Karkonoska_%28Slezsk%C3%A9_sedlo%29_2018.jpg
+    rozmery: 4409×2857
+    datum: 2018-02-13 08:44:13
+    popis: Karkonoska pass (Slezské sedlo), Karkonosze mountain
+  - soubor: File:Przełęcz Karkonoska 2.jpg
+    autor: "This photo was taken by Przemysław Jahr Autorem zdjęcia jest Przemysław
+      Jahr Wykorzystując zdjęcie proszę podać jako autora: Przemysław Jahr /
+      Wikimedia Commons"
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Prze%C5%82%C4%99cz_Karkonoska_2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/23/Prze%C5%82%C4%99cz_Karkonoska_2.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Prze%C5%82%C4%99cz_Karkonoska_2.jpg/960px-Prze%C5%82%C4%99cz_Karkonoska_2.jpg
+    rozmery: 2896×1936
+    datum: 2010-09-03
+    popis: Przełęcz Karkonoska.
+  - soubor: File:Przełęcz Karkonoska 3.jpg
+    autor: "This photo was taken by Przemysław Jahr Autorem zdjęcia jest Przemysław
+      Jahr Wykorzystując zdjęcie proszę podać jako autora: Przemysław Jahr /
+      Wikimedia Commons"
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Prze%C5%82%C4%99cz_Karkonoska_3.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f1/Prze%C5%82%C4%99cz_Karkonoska_3.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Prze%C5%82%C4%99cz_Karkonoska_3.jpg/960px-Prze%C5%82%C4%99cz_Karkonoska_3.jpg
+    rozmery: 1936×2896
+    datum: 2010-09-03
+    popis: Przełęcz Karkonoska.
+  - soubor: File:Przełęcz Karkonoska.jpg
+    autor: "This photo was taken by Przemysław Jahr Autorem zdjęcia jest Przemysław
+      Jahr Wykorzystując zdjęcie proszę podać jako autora: Przemysław Jahr /
+      Wikimedia Commons"
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Prze%C5%82%C4%99cz_Karkonoska.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/9a/Prze%C5%82%C4%99cz_Karkonoska.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Prze%C5%82%C4%99cz_Karkonoska.jpg/960px-Prze%C5%82%C4%99cz_Karkonoska.jpg
+    rozmery: 2896×1702
+    datum: 2010-09-03
+    popis: Przełęcz Karkonoska.
+  - soubor: File:Przelecz Karkonoska2.JPG
+    autor: Qwark
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Przelecz_Karkonoska2.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/7/7b/Przelecz_Karkonoska2.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Przelecz_Karkonoska2.JPG/960px-Przelecz_Karkonoska2.JPG
+    rozmery: 2048×1536
+    datum: 2001-07-12
+    popis: Przełęcz Karkonoska , po lewej stronie widać czeskie schronisko
+      Spindlerova Bouda . Natomiast po prawej widać strażnica graniczną.
+      Kilkadziesiąt metrów powyżej przełęczy wznosi się polskie schronisko
+      Odrodzenie .
+  - soubor: File:Spindlerpass-01.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Spindlerpass-01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/ba/Spindlerpass-01.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Spindlerpass-01.jpg/960px-Spindlerpass-01.jpg
+    rozmery: 4349×1768
+    datum: 2016-06-07 11:22:07
+    popis: Kammweg am Spindlerpass (Przełęcz Karkonoska) im Riesengebirge
+  - soubor: File:Spindlerpass-02.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Spindlerpass-02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/0d/Spindlerpass-02.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Spindlerpass-02.jpg/960px-Spindlerpass-02.jpg
+    rozmery: 2262×1508
+    datum: 2016-06-07 11:20:46
+    popis: Kammweg am Spindlerpass mit Spindlerbaude (Przełęcz Karkonoska) im
+      Riesengebirge
+  - soubor: File:Spindlerpass-03.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Spindlerpass-03.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a3/Spindlerpass-03.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Spindlerpass-03.jpg/960px-Spindlerpass-03.jpg
+    rozmery: 2450×1633
+    datum: 2016-06-07 11:16:13
+    popis: Ehem Zollhaus am Kammweg am Spindlerpass (Przełęcz Karkonoska) im
+      Riesengebirge
+  - soubor: File:Trail of Czech-Polish Friendship, Krkonoše, Czechia 20.jpg
+    autor: Michal Klajban
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Trail_of_Czech-Polish_Friendship,_Krkono%C5%A1e,_Czechia_20.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/85/Trail_of_Czech-Polish_Friendship%2C_Krkono%C5%A1e%2C_Czechia_20.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Trail_of_Czech-Polish_Friendship%2C_Krkono%C5%A1e%2C_Czechia_20.jpg/960px-Trail_of_Czech-Polish_Friendship%2C_Krkono%C5%A1e%2C_Czechia_20.jpg
+    rozmery: 6000×4000
+    datum: 2017-06-24 05:04:33
+    popis: Špindlerova Bouda. Trail of Czech-Polish Friendship, Krkonoše, Czechia /
+      Poland

@@ -1,14 +1,17 @@
-# Chata Dvoračky — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Chata Dvoračky na commons.wikimedia.org
+# Chata Dvoračky — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Chata Dvoračky + fulltext „Chata Dvoračky" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: chata-dvoracky
 oblast: krkonose
 nazevChaty: Chata Dvoračky
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Dvoračky, Praga.jpg
     autor: cs:ŠJů
@@ -119,7 +122,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Chata_Dvora%C4%8Dky.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/73/Chata_Dvora%C4%8Dky.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Chata_Dvora%C4%8Dky.jpg/960px-Chata_Dvora%C4%8Dky.jpg
     rozmery: 2448×3264
@@ -324,7 +327,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:%C5%A0tumpovka_a_Dvora%C4%8Dky.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9e/%C5%A0tumpovka_a_Dvora%C4%8Dky.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/%C5%A0tumpovka_a_Dvora%C4%8Dky.jpg/960px-%C5%A0tumpovka_a_Dvora%C4%8Dky.jpg
     rozmery: 3264×2448
@@ -448,3 +451,13 @@ fotky:
     datum: 2009-11-14
     popis: Rokytnice nad Jizerou -Rokytno, Semily District , Liberec Region , the
       Czech Republic . Dvoračky, a view of Vlčí hřeben and Technometra cottage.
+  - soubor: File:Dvoračky 1901.jpg
+    autor: Rudolf Brunner-Dvořák
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Dvora%C4%8Dky_1901.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ef/Dvora%C4%8Dky_1901.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dvora%C4%8Dky_1901.jpg/960px-Dvora%C4%8Dky_1901.jpg
+    rozmery: 2509×1867
+    datum: "1901"
+    popis: Horská chata Dvoračky (Dvorské boudy) v roce 1901

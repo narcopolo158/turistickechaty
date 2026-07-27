@@ -1,21 +1,24 @@
-# Luční bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Luční bouda na commons.wikimedia.org
+# Luční bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Luční bouda + fulltext „Luční bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: lucni-bouda
 oblast: krkonose
 nazevChaty: Luční bouda
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: data/chaty"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Krkonoše, Luční bouda.jpg
     autor: Stanislav Dusík
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Krkono%C5%A1e,_Lu%C4%8Dn%C3%AD_bouda.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/1e/Krkono%C5%A1e%2C_Lu%C4%8Dn%C3%AD_bouda.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Krkono%C5%A1e%2C_Lu%C4%8Dn%C3%AD_bouda.jpg/960px-Krkono%C5%A1e%2C_Lu%C4%8Dn%C3%AD_bouda.jpg
     rozmery: 4048×2024
@@ -41,7 +44,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Czechy_-_Lucni_Bouda_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/b7/Czechy_-_Lucni_Bouda_-_panoramio.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Czechy_-_Lucni_Bouda_-_panoramio.jpg/960px-Czechy_-_Lucni_Bouda_-_panoramio.jpg
     rozmery: 2816×2112
@@ -53,7 +56,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Wei%C3%9Fe_Wiese_(tschech._B%C3%ADl%C3%A1_louka,_poln._Bia%C5%82a_%C5%81%C4%85ka)_-_Maus.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/ae/Wei%C3%9Fe_Wiese_%28tschech._B%C3%ADl%C3%A1_louka%2C_poln._Bia%C5%82a_%C5%81%C4%85ka%29_-_Maus.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Wei%C3%9Fe_Wiese_%28tschech._B%C3%ADl%C3%A1_louka%2C_poln._Bia%C5%82a_%C5%81%C4%85ka%29_-_Maus.jpg/960px-Wei%C3%9Fe_Wiese_%28tschech._B%C3%ADl%C3%A1_louka%2C_poln._Bia%C5%82a_%C5%81%C4%85ka%29_-_Maus.jpg
     rozmery: 5184×3456
@@ -102,7 +105,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Czechy,_Lucni_Bouda_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/21/Czechy%2C_Lucni_Bouda_-_panoramio.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Czechy%2C_Lucni_Bouda_-_panoramio.jpg/960px-Czechy%2C_Lucni_Bouda_-_panoramio.jpg
     rozmery: 2816×2112
@@ -126,7 +129,7 @@ fotky:
     licence: CC BY 2.5
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Dn%C3%AD_bouda,_Krkono%C5%A1e.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5a/Lu%C4%8Dn%C3%AD_bouda%2C_Krkono%C5%A1e.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/2.5
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lu%C4%8Dn%C3%AD_bouda%2C_Krkono%C5%A1e.jpg/960px-Lu%C4%8Dn%C3%AD_bouda%2C_Krkono%C5%A1e.jpg
     rozmery: 3505×1263
@@ -139,7 +142,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Dn%C3%AD_bouda.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/0a/Lu%C4%8Dn%C3%AD_bouda.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Lu%C4%8Dn%C3%AD_bouda.jpg/960px-Lu%C4%8Dn%C3%AD_bouda.jpg
     rozmery: 4032×1728
@@ -151,7 +154,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Karpacz_-_%C5%9Anie%C5%BCka_39_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/c7/Karpacz_-_%C5%9Anie%C5%BCka_39_-_panoramio.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Karpacz_-_%C5%9Anie%C5%BCka_39_-_panoramio.jpg/960px-Karpacz_-_%C5%9Anie%C5%BCka_39_-_panoramio.jpg
     rozmery: 3648×2056
@@ -163,7 +166,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:A_lonely_hut_in_winter.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/df/A_lonely_hut_in_winter.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A_lonely_hut_in_winter.jpg/960px-A_lonely_hut_in_winter.jpg
     rozmery: 6023×4018
@@ -175,7 +178,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:1930-labska-2.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/04/1930-labska-2.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/1930-labska-2.jpg/960px-1930-labska-2.jpg
     rozmery: 1173×730
     datum: 2013-06-25 18:39:56
@@ -185,17 +188,51 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:1930-labska.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/68/1930-labska.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/1930-labska.jpg/960px-1930-labska.jpg
     rozmery: 1041×651
     datum: 2013-06-25 18:37:29
     popis: Wiesenbaude im Riesengebirge ca. 1930
+  - soubor: File:2014 Równia pod Śnieżką, 03.jpg
+    autor: Jacek Halicki
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:2014_R%C3%B3wnia_pod_%C5%9Anie%C5%BCk%C4%85,_03.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c1/2014_R%C3%B3wnia_pod_%C5%9Anie%C5%BCk%C4%85%2C_03.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/2014_R%C3%B3wnia_pod_%C5%9Anie%C5%BCk%C4%85%2C_03.jpg/960px-2014_R%C3%B3wnia_pod_%C5%9Anie%C5%BCk%C4%85%2C_03.jpg
+    rozmery: 3032×1735
+    datum: 2014-09-22 12:30:00
+    popis: Shelter "Śląski Dom" and Równia pod Śnieżką
+  - soubor: File:Dawne przejście graniczne Rownia pod Sniezka-Lucni Bouda.JPG
+    autor: Ciacho5
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dawne_przej%C5%9Bcie_graniczne_Rownia_pod_Sniezka-Lucni_Bouda.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e1/Dawne_przej%C5%9Bcie_graniczne_Rownia_pod_Sniezka-Lucni_Bouda.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Dawne_przej%C5%9Bcie_graniczne_Rownia_pod_Sniezka-Lucni_Bouda.JPG/960px-Dawne_przej%C5%9Bcie_graniczne_Rownia_pod_Sniezka-Lucni_Bouda.JPG
+    rozmery: 3648×2736
+    datum: 2014-12-03
+    popis: Former check-point on Polish-Czech border, presently open as per Schengen
+      Agreement.
+  - soubor: File:Dom śląski 2.jpg
+    autor: Wyksztalcioch
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dom_%C5%9Bl%C4%85ski_2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/49/Dom_%C5%9Bl%C4%85ski_2.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Dom_%C5%9Bl%C4%85ski_2.jpg/960px-Dom_%C5%9Bl%C4%85ski_2.jpg
+    rozmery: 2304×1728
+    popis: Schronisko Dom Śląski widziane we mgle z czerwonego szlaku na Śnieżkę
+      (Karkonosze, Polska)
   - soubor: File:Hotel Luční bouda (Wiesenbaude) 02.jpg
     autor: Pudelek
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Hotel_Lu%C4%8Dn%C3%AD_bouda_(Wiesenbaude)_02.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/c3/Hotel_Lu%C4%8Dn%C3%AD_bouda_%28Wiesenbaude%29_02.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Hotel_Lu%C4%8Dn%C3%AD_bouda_%28Wiesenbaude%29_02.jpg/960px-Hotel_Lu%C4%8Dn%C3%AD_bouda_%28Wiesenbaude%29_02.jpg
     rozmery: 4608×3072
@@ -206,7 +243,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Hotel_Lu%C4%8Dn%C3%AD_bouda_(Wiesenbaude).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/3f/Hotel_Lu%C4%8Dn%C3%AD_bouda_%28Wiesenbaude%29.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Hotel_Lu%C4%8Dn%C3%AD_bouda_%28Wiesenbaude%29.jpg/960px-Hotel_Lu%C4%8Dn%C3%AD_bouda_%28Wiesenbaude%29.jpg
     rozmery: 3808×2539
@@ -217,7 +254,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Lucni_bouda_2014_A_444.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/6d/Lucni_bouda_2014_A_444.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Lucni_bouda_2014_A_444.jpg/960px-Lucni_bouda_2014_A_444.jpg
     rozmery: 3648×2736
@@ -228,7 +265,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Lucni_bouda_2014_A_445.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/d1/Lucni_bouda_2014_A_445.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Lucni_bouda_2014_A_445.jpg/960px-Lucni_bouda_2014_A_445.jpg
     rozmery: 3648×2736
@@ -239,7 +276,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Lucni_bouda_2014_A_446.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/1a/Lucni_bouda_2014_A_446.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Lucni_bouda_2014_A_446.jpg/960px-Lucni_bouda_2014_A_446.jpg
     rozmery: 3648×2736
@@ -250,7 +287,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Dn%C3%AD_bouda_1921.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/09/Lu%C4%8Dn%C3%AD_bouda_1921.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Lu%C4%8Dn%C3%AD_bouda_1921.jpg/960px-Lu%C4%8Dn%C3%AD_bouda_1921.jpg
     rozmery: 1979×992
     datum: "1921"
@@ -261,7 +298,7 @@ fotky:
     licence: CC BY-SA 2.5
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Dn%C3%AD_bouda_a_Sn%C4%9B%C5%BEka.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/32/Lu%C4%8Dn%C3%AD_bouda_a_Sn%C4%9B%C5%BEka.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/2.5
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Lu%C4%8Dn%C3%AD_bouda_a_Sn%C4%9B%C5%BEka.jpg/960px-Lu%C4%8Dn%C3%AD_bouda_a_Sn%C4%9B%C5%BEka.jpg
     rozmery: 1500×1004
@@ -272,7 +309,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Dn%C3%AD_Bouda_FR01.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/33/Lu%C4%8Dn%C3%AD_Bouda_FR01.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Lu%C4%8Dn%C3%AD_Bouda_FR01.jpg/960px-Lu%C4%8Dn%C3%AD_Bouda_FR01.jpg
     rozmery: 2048×1152
@@ -283,7 +320,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Dn%C3%AD_Bouda_FR02.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a0/Lu%C4%8Dn%C3%AD_Bouda_FR02.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Lu%C4%8Dn%C3%AD_Bouda_FR02.jpg/960px-Lu%C4%8Dn%C3%AD_Bouda_FR02.jpg
     rozmery: 2048×1152
@@ -294,7 +331,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Dn%C3%AD_hora.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/f1/Lu%C4%8Dn%C3%AD_hora.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Lu%C4%8Dn%C3%AD_hora.jpg/960px-Lu%C4%8Dn%C3%AD_hora.jpg
     rozmery: 1500×1126
@@ -305,7 +342,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Dn%C3%AD_hora2.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9d/Lu%C4%8Dn%C3%AD_hora2.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Lu%C4%8Dn%C3%AD_hora2.jpg/960px-Lu%C4%8Dn%C3%AD_hora2.jpg
     rozmery: 1500×1125
@@ -316,11 +353,23 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Lu%C4%8Dn%C3%AD-bouda2009.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/2f/Lu%C4%8Dn%C3%AD-bouda2009.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Lu%C4%8Dn%C3%AD-bouda2009.jpg/960px-Lu%C4%8Dn%C3%AD-bouda2009.jpg
     rozmery: 4288×2848
     datum: 2009-05-23 13:44:34
+  - soubor: File:Nardo strictae-Caricion bigelowii6.JPG
+    autor: Petr Filippov
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Nardo_strictae-Caricion_bigelowii6.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/c/ca/Nardo_strictae-Caricion_bigelowii6.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Nardo_strictae-Caricion_bigelowii6.JPG/960px-Nardo_strictae-Caricion_bigelowii6.JPG
+    rozmery: 2288×1712
+    datum: "2009"
+    popis: Carici bigelowii-Nardetum strictae near Luční bouda in the Krkonoše
+      Mountains, Czech Republic
   - soubor: File:Schneekoppe- Reichsgrenze mit Zollbeamten - LABW - Staatsarchiv
       Freiburg W 134 Nr. 014429.jpg
     autor: Willy Pragher
@@ -338,7 +387,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Sn%C4%9B%C5%BEka-od-Lu%C4%8Dn%C3%AD-boudy2009.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9a/Sn%C4%9B%C5%BEka-od-Lu%C4%8Dn%C3%AD-boudy2009.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Sn%C4%9B%C5%BEka-od-Lu%C4%8Dn%C3%AD-boudy2009.jpg/960px-Sn%C4%9B%C5%BEka-od-Lu%C4%8Dn%C3%AD-boudy2009.jpg
     rozmery: 2848×4288
@@ -348,7 +397,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Sn%C4%9B%C5%BEka-od-Lu%C4%8Dn%C3%AD-boudy2009b.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/3f/Sn%C4%9B%C5%BEka-od-Lu%C4%8Dn%C3%AD-boudy2009b.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sn%C4%9B%C5%BEka-od-Lu%C4%8Dn%C3%AD-boudy2009b.jpg/960px-Sn%C4%9B%C5%BEka-od-Lu%C4%8Dn%C3%AD-boudy2009b.jpg
     rozmery: 4288×2848
@@ -358,7 +407,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Wiesenbaude_-_1920.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/e6/Wiesenbaude_-_1920.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Wiesenbaude_-_1920.jpg/960px-Wiesenbaude_-_1920.jpg
     rozmery: 1599×997
     datum: circa 1920 date QS:P,+1920-00-00T00:00:…
@@ -369,7 +418,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Ztroskotan%C3%A9_letadlo_u_Lu%C4%8Dn%C3%AD_boudy_1932.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/22/Ztroskotan%C3%A9_letadlo_u_Lu%C4%8Dn%C3%AD_boudy_1932.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Ztroskotan%C3%A9_letadlo_u_Lu%C4%8Dn%C3%AD_boudy_1932.jpg/960px-Ztroskotan%C3%A9_letadlo_u_Lu%C4%8Dn%C3%AD_boudy_1932.jpg
     rozmery: 1092×686
     datum: "1932"

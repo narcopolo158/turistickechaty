@@ -1,14 +1,17 @@
-# Patejdlova bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Patejdlova bouda na commons.wikimedia.org
+# Patejdlova bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Patejdlova bouda + fulltext „Patejdlova bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: patejdlova-bouda
 oblast: krkonose
 nazevChaty: Patejdlova bouda
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  kandidát DATA-01"
+checked: 2026-07-27
 fotky:
   - soubor: File:Špindlerův Mlýn, cesta od Medvědí boudy.jpg
     autor: ŠJů
@@ -27,7 +30,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Patejdlova_bouda,_pohled_ze_svahu.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/be/Patejdlova_bouda%2C_pohled_ze_svahu.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Patejdlova_bouda%2C_pohled_ze_svahu.jpg/960px-Patejdlova_bouda%2C_pohled_ze_svahu.jpg
     rozmery: 2560×1536

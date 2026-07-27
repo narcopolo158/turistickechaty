@@ -1,14 +1,17 @@
-# Chatka Puchatka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Chatka Puchatka na commons.wikimedia.org
+# Chatka Puchatka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Chatka Puchatka + fulltext „Chatka Puchatka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: chatka-puchatka
 oblast: krkonose
 nazevChaty: Chatka Puchatka
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  kandidát DATA-01"
+checked: 2026-07-27
 fotky:
   - soubor: File:CZ-PL boundary stone 24-5.jpg
     autor: Szydzio
@@ -51,7 +54,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/d2/Chatka_Puchatka_-_panoramio.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chatka_Puchatka_-_panoramio.jpg/960px-Chatka_Puchatka_-_panoramio.jpg
     rozmery: 4592×2584
@@ -63,19 +66,98 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_na_tle_wzg%C3%B3rz_Dzia%C5%82u_-_panoramio.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/dd/Chatka_Puchatka_na_tle_wzg%C3%B3rz_Dzia%C5%82u_-_panoramio.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Chatka_Puchatka_na_tle_wzg%C3%B3rz_Dzia%C5%82u_-_panoramio.jpg/960px-Chatka_Puchatka_na_tle_wzg%C3%B3rz_Dzia%C5%82u_-_panoramio.jpg
     rozmery: 1500×997
     vzdalenostM: 515308
     datum: Taken on 10 August 2010
     popis: Chatka Puchatka na tle wzgórz Działu
+  - soubor: File:02023 0626 Chatka Puchatka 2.jpg
+    autor: Silar
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:02023_0626_Chatka_Puchatka_2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/57/02023_0626_Chatka_Puchatka_2.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/02023_0626_Chatka_Puchatka_2.jpg/960px-02023_0626_Chatka_Puchatka_2.jpg
+    rozmery: 4270×2851
+    datum: 2023-08-12 13:55:59
+    popis: Chatka Puchatka 2
+  - soubor: File:02023 0652 Wetlinska Meadow photographs taken on 2023-08-12.jpg
+    autor: Silar
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:02023_0652_Wetlinska_Meadow_photographs_taken_on_2023-08-12.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/25/02023_0652_Wetlinska_Meadow_photographs_taken_on_2023-08-12.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/02023_0652_Wetlinska_Meadow_photographs_taken_on_2023-08-12.jpg/960px-02023_0652_Wetlinska_Meadow_photographs_taken_on_2023-08-12.jpg
+    rozmery: 4928×3264
+    datum: 2023-08-12 14:13:35
+    popis: Wetlinska Meadow photographs taken on 2023-08-12
+  - soubor: File:02023 0698 Chatka Puchatka 2.jpg
+    autor: Silar
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:02023_0698_Chatka_Puchatka_2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/fe/02023_0698_Chatka_Puchatka_2.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/02023_0698_Chatka_Puchatka_2.jpg/960px-02023_0698_Chatka_Puchatka_2.jpg
+    rozmery: 4928×3264
+    datum: 2023-08-12 14:05:37
+    popis: Chatka Puchatka 2
+  - soubor: File:02023 0699 Chatka Puchatka 2.jpg
+    autor: Silar
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:02023_0699_Chatka_Puchatka_2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/6d/02023_0699_Chatka_Puchatka_2.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/02023_0699_Chatka_Puchatka_2.jpg/960px-02023_0699_Chatka_Puchatka_2.jpg
+    rozmery: 4928×3264
+    datum: 2023-08-12 14:10:43
+    popis: Chatka Puchatka 2
+  - soubor: File:Bieszczady - sunrise from Chatka Puchatka (1).jpg
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bieszczady_-_sunrise_from_Chatka_Puchatka_(1).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/04/Bieszczady_-_sunrise_from_Chatka_Puchatka_%281%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bieszczady_-_sunrise_from_Chatka_Puchatka_%281%29.jpg/960px-Bieszczady_-_sunrise_from_Chatka_Puchatka_%281%29.jpg
+    rozmery: 3456×2304
+    datum: 2015-11-13 07:11:54
+    popis: Bieszczady - mountains in Poland. Sunrise - view from the Chatka Puchatka
+      hostel
+  - soubor: File:Bieszczady - sunrise from Chatka Puchatka (3).jpg
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bieszczady_-_sunrise_from_Chatka_Puchatka_(3).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/13/Bieszczady_-_sunrise_from_Chatka_Puchatka_%283%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Bieszczady_-_sunrise_from_Chatka_Puchatka_%283%29.jpg/960px-Bieszczady_-_sunrise_from_Chatka_Puchatka_%283%29.jpg
+    rozmery: 3173×1990
+    datum: 2015-11-13 07:05
+    popis: Bieszczady - mountains in Poland. Sunrises from the Chatka Puchatka hostel
+  - soubor: File:Hasiakowa Skala.jpg
+    autor: Red 81
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Hasiakowa_Skala.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/bc/Hasiakowa_Skala.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Hasiakowa_Skala.jpg/960px-Hasiakowa_Skala.jpg
+    rozmery: 2048×1536
+    datum: 7 September 2008, 10:44:20 (according t…
+    popis: Hasiakowa skała, widok z Połoniny Wetlińskiej, widoczne również
+      schronisko Chatka Puchatka
   - soubor: File:Chatka Puchatka (by Pudelek) 2.JPG
     autor: Pudelek
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_(by_Pudelek)_2.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/9/95/Chatka_Puchatka_%28by_Pudelek%29_2.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Chatka_Puchatka_%28by_Pudelek%29_2.JPG/960px-Chatka_Puchatka_%28by_Pudelek%29_2.JPG
     rozmery: 3456×2304
@@ -86,7 +168,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_(by_Pudelek).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/58/Chatka_Puchatka_%28by_Pudelek%29.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Chatka_Puchatka_%28by_Pudelek%29.jpg/960px-Chatka_Puchatka_%28by_Pudelek%29.jpg
     rozmery: 3409×2296
@@ -97,7 +179,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_01.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/d/d8/Chatka_Puchatka_01.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Chatka_Puchatka_01.JPG/960px-Chatka_Puchatka_01.JPG
     rozmery: 2560×1920
@@ -108,7 +190,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_02.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/0/06/Chatka_Puchatka_02.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Chatka_Puchatka_02.JPG/960px-Chatka_Puchatka_02.JPG
     rozmery: 2560×1920
@@ -119,7 +201,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_03.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/5/50/Chatka_Puchatka_03.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Chatka_Puchatka_03.JPG/960px-Chatka_Puchatka_03.JPG
     rozmery: 1920×2560
@@ -130,7 +212,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_2007_maj.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/51/Chatka_Puchatka_2007_maj.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chatka_Puchatka_2007_maj.jpg/960px-Chatka_Puchatka_2007_maj.jpg
     rozmery: 3072×2304
@@ -141,7 +223,7 @@ fotky:
     licence: CC BY-SA 2.5
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_bieszczady.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/85/Chatka_Puchatka_bieszczady.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/2.5
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Chatka_Puchatka_bieszczady.jpg/960px-Chatka_Puchatka_bieszczady.jpg
     rozmery: 2048×1536
@@ -152,7 +234,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_na_Po%C5%82oninie_Wetli%C5%84skiej_w_Bieszczadach.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/21/Chatka_Puchatka_na_Po%C5%82oninie_Wetli%C5%84skiej_w_Bieszczadach.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Chatka_Puchatka_na_Po%C5%82oninie_Wetli%C5%84skiej_w_Bieszczadach.jpg/960px-Chatka_Puchatka_na_Po%C5%82oninie_Wetli%C5%84skiej_w_Bieszczadach.jpg
     rozmery: 2592×1552
@@ -163,7 +245,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_schronisko.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/8c/Chatka_Puchatka_schronisko.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chatka_Puchatka_schronisko.jpg/960px-Chatka_Puchatka_schronisko.jpg
     rozmery: 2048×1536
@@ -174,7 +256,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Chatka_Puchatka_tablica.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/4a/Chatka_Puchatka_tablica.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Chatka_Puchatka_tablica.jpg/960px-Chatka_Puchatka_tablica.jpg
     rozmery: 2048×1536
@@ -186,7 +268,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_01.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5d/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_01.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_01.jpg/960px-Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_01.jpg
     rozmery: 4272×2848
@@ -197,7 +279,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_02.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/41/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_02.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_02.jpg/960px-Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_02.jpg
     rozmery: 2848×4272
@@ -208,7 +290,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_03.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/74/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_03.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_03.jpg/960px-Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_03.jpg
     rozmery: 4272×2848
@@ -219,7 +301,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_04.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_04.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_04.jpg/960px-Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_04.jpg
     rozmery: 4272×2848
@@ -230,7 +312,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_05.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/ca/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_05.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_05.jpg/960px-Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_05.jpg
     rozmery: 4272×2848
@@ -241,7 +323,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_06.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/84/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_06.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_06.jpg/960px-Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_06.jpg
     rozmery: 4272×2848
@@ -252,7 +334,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_07.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/dd/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_07.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_07.jpg/960px-Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_07.jpg
     rozmery: 2848×4272
@@ -263,7 +345,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_08.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_08.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_08.jpg/960px-Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_08.jpg
     rozmery: 4272×2848
@@ -274,9 +356,21 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_09.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/8d/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_09.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_09.jpg/960px-Po%C5%82onina_Wetli%C5%84ska_-_Chatka_Puchatka_09.jpg
     rozmery: 4272×2848
     datum: 2011-08-20
     popis: Mountain hut "Chatka Puchatka" in Połonina Wetlińska.
+  - soubor: File:Ulica Oliwkowa, Gdynia - 003.JPG
+    autor: This file was added by User Joymaster Ten plik został dodany przez
+      Wikipedystę Joymaster Joymaster e-mail GG 6403904 COMMONS pl.wiki
+      Joymasters upload list
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Ulica_Oliwkowa,_Gdynia_-_003.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/2/2f/Ulica_Oliwkowa%2C_Gdynia_-_003.JPG
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Ulica_Oliwkowa%2C_Gdynia_-_003.JPG/960px-Ulica_Oliwkowa%2C_Gdynia_-_003.JPG
+    rozmery: 3488×2616
+    datum: 2009-04-19
+    popis: ulica Oliwkowa, Przedszkole Chatka Puchatka, Gdynia

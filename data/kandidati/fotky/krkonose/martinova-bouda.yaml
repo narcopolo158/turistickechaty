@@ -1,21 +1,24 @@
-# Martinova bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Martinova bouda na commons.wikimedia.org
+# Martinova bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Martinova bouda + fulltext „Martinova bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: martinova-bouda
 oblast: krkonose
 nazevChaty: Martinova bouda
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Martinova bouda, rozcestník.jpg
     autor: ŠJů
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda,_rozcestn%C3%ADk.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/0d/Martinova_bouda%2C_rozcestn%C3%ADk.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Martinova_bouda%2C_rozcestn%C3%ADk.jpg/960px-Martinova_bouda%2C_rozcestn%C3%ADk.jpg
     rozmery: 1764×2421
@@ -28,7 +31,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda_(03).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/ba/Martinova_bouda_%2803%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Martinova_bouda_%2803%29.jpg/960px-Martinova_bouda_%2803%29.jpg
     rozmery: 2592×1944
@@ -41,7 +44,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda_(02).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5a/Martinova_bouda_%2802%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Martinova_bouda_%2802%29.jpg/960px-Martinova_bouda_%2802%29.jpg
     rozmery: 2592×1944
@@ -54,7 +57,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Jez%C3%ADrko_u_Martinovy_boudy_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/4f/Jez%C3%ADrko_u_Martinovy_boudy_%2801%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Jez%C3%ADrko_u_Martinovy_boudy_%2801%29.jpg/960px-Jez%C3%ADrko_u_Martinovy_boudy_%2801%29.jpg
     rozmery: 2592×1944
@@ -67,7 +70,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/fa/Martinova_bouda_%2801%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Martinova_bouda_%2801%29.jpg/960px-Martinova_bouda_%2801%29.jpg
     rozmery: 2521×1788
@@ -80,7 +83,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B,_mostek_(02).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5c/Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostek_%2802%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostek_%2802%29.jpg/960px-Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostek_%2802%29.jpg
     rozmery: 2592×1944
@@ -93,7 +96,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Rozcestn%C3%ADk_Martinovka.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/3e/Rozcestn%C3%ADk_Martinovka.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rozcestn%C3%ADk_Martinovka.jpg/960px-Rozcestn%C3%ADk_Martinovka.jpg
     rozmery: 1536×2048
@@ -105,7 +108,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Jez%C3%ADrko_u_Martinovy_boudy.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/8b/Jez%C3%ADrko_u_Martinovy_boudy.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Jez%C3%ADrko_u_Martinovy_boudy.jpg/960px-Jez%C3%ADrko_u_Martinovy_boudy.jpg
     rozmery: 2592×1944
@@ -118,7 +121,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B,_mostek_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/e5/Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostek_%2801%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostek_%2801%29.jpg/960px-Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostek_%2801%29.jpg
     rozmery: 2592×1944
@@ -131,7 +134,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Krkonose_Martinova_bouda.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/32/Krkonose_Martinova_bouda.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Krkonose_Martinova_bouda.jpg/960px-Krkonose_Martinova_bouda.jpg
     rozmery: 4560×2864
@@ -144,7 +147,7 @@ fotky:
     licence: Public domain
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda_and_Wielki_Szyszak_Vysoke_Kolo_from_SE_in_summer_160.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/51/Martinova_bouda_and_Wielki_Szyszak_Vysoke_Kolo_from_SE_in_summer_160.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Martinova_bouda_and_Wielki_Szyszak_Vysoke_Kolo_from_SE_in_summer_160.jpg/960px-Martinova_bouda_and_Wielki_Szyszak_Vysoke_Kolo_from_SE_in_summer_160.jpg
     rozmery: 1984×1488
     vzdalenostM: 95
@@ -169,7 +172,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B,_mostek.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/2a/Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostek.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostek.jpg/960px-Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostek.jpg
     rozmery: 2592×1944
@@ -182,7 +185,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Krkono%C5%A1e_(9).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/f7/Krkono%C5%A1e_%289%29.jpg
-    nalezeno: geosearch + kategorie
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Krkono%C5%A1e_%289%29.jpg/960px-Krkono%C5%A1e_%289%29.jpg
     rozmery: 2816×1814
@@ -195,7 +198,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B,_mostky.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/cc/Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostky.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostky.jpg/960px-Cesta_z_%C4%8Cern%C3%A9ho_sedla_k_Martinov%C4%9B_boud%C4%9B%2C_mostky.jpg
     rozmery: 2592×1944
@@ -220,7 +223,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda_01.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/8a/Martinova_bouda_01.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Martinova_bouda_01.jpg/960px-Martinova_bouda_01.jpg
     rozmery: 3264×2448
@@ -231,7 +234,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda_02.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/d/de/Martinova_bouda_02.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Martinova_bouda_02.jpg/960px-Martinova_bouda_02.jpg
     rozmery: 3264×2448
@@ -242,7 +245,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda_03.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/07/Martinova_bouda_03.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Martinova_bouda_03.jpg/960px-Martinova_bouda_03.jpg
     rozmery: 3264×2448
@@ -253,7 +256,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda_A23231_01.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/c/c2/Martinova_bouda_A23231_01.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Martinova_bouda_A23231_01.JPG/960px-Martinova_bouda_A23231_01.JPG
     rozmery: 3648×2736
@@ -264,7 +267,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Martinova_bouda_A23232.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/7/70/Martinova_bouda_A23232.JPG
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Martinova_bouda_A23232.JPG/960px-Martinova_bouda_A23232.JPG
     rozmery: 3648×2736

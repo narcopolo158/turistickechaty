@@ -1,14 +1,17 @@
-# Bouda Růžohorky — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Bouda Růžohorky na commons.wikimedia.org
+# Bouda Růžohorky — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Bouda Růžohorky + fulltext „Bouda Růžohorky" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: bouda-ruzohorky
 oblast: krkonose
 nazevChaty: Bouda Růžohorky
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-27
 fotky:
   - soubor: File:Růžohorky, Děčínská bouda.jpg
     autor: cs:ŠJů
@@ -76,7 +79,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Chata_R%C5%AF%C5%BEohorky.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/cc/Chata_R%C5%AF%C5%BEohorky.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Chata_R%C5%AF%C5%BEohorky.jpg/960px-Chata_R%C5%AF%C5%BEohorky.jpg
     rozmery: 3648×2736
@@ -119,3 +122,14 @@ fotky:
     vzdalenostM: 237
     datum: 2012-08-23 11:40
     popis: Sněžka
+  - soubor: File:Bouda Růžohorky.jpg
+    autor: Falip
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:Bouda_R%C5%AF%C5%BEohorky.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/4a/Bouda_R%C5%AF%C5%BEohorky.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bouda_R%C5%AF%C5%BEohorky.jpg/960px-Bouda_R%C5%AF%C5%BEohorky.jpg
+    rozmery: 2364×1773
+    datum: 2023-09-10 09:01:58
+    popis: Bouda Růžohorky

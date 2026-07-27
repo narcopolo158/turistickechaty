@@ -1,12 +1,57 @@
-# Srebrny Potok — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-20)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Srebrny Potok na commons.wikimedia.org
+# Srebrny Potok — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Srebrny Potok + fulltext „Srebrny Potok" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
 # kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
 
 chata: srebrny-potok
 oblast: krkonose
 nazevChaty: Srebrny Potok
-zdroj: "Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01"
-checked: 2026-07-20
-fotky: []
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  kandidát DATA-01"
+checked: 2026-07-27
+fotky:
+  - soubor: File:Bazantarnia 01.JPG
+    autor: Kasia84
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:Bazantarnia_01.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/d/dd/Bazantarnia_01.JPG
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Bazantarnia_01.JPG/960px-Bazantarnia_01.JPG
+    rozmery: 4000×3000
+    datum: 2011-05-01
+    popis: Srebrny Potok w Bażantarni (Elbląg)
+  - soubor: File:Bazantarnia 03.JPG
+    autor: Kasia84
+    licence: CC0
+    stranka: https://commons.wikimedia.org/wiki/File:Bazantarnia_03.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/1/11/Bazantarnia_03.JPG
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Bazantarnia_03.JPG/960px-Bazantarnia_03.JPG
+    rozmery: 3000×4000
+    datum: 2011-05-01
+    popis: Srebrny Potok, Bażantarnia (Elbląg)
+  - soubor: File:Marian Łomnicki - Wycieczka na Łomnicę tatrzańską.djvu
+    autor: Marian Łomnicki
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Marian_%C5%81omnicki_-_Wycieczka_na_%C5%81omnic%C4%99_tatrza%C5%84sk%C4%85.djvu
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e4/Marian_%C5%81omnicki_-_Wycieczka_na_%C5%81omnic%C4%99_tatrza%C5%84sk%C4%85.djvu
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Marian_%C5%81omnicki_-_Wycieczka_na_%C5%81omnic%C4%99_tatrza%C5%84sk%C4%85.djvu/page1-960px-Marian_%C5%81omnicki_-_Wycieczka_na_%C5%81omnic%C4%99_tatrza%C5%84sk%C4%85.djvu.jpg
+    rozmery: 1010×730
+    datum: "1868"
+    popis: Skany opowiadania opublikowanego w Tygodniku Illustrowanym w 1868 r.
+  - soubor: File:PL Balzac - Chłopi. T. 2.djvu
+    autor: Honoré de Balzac / Tadeusz Boy-Żeleński
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:PL_Balzac_-_Ch%C5%82opi._T._2.djvu
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c0/PL_Balzac_-_Ch%C5%82opi._T._2.djvu
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/PL_Balzac_-_Ch%C5%82opi._T._2.djvu/page1-960px-PL_Balzac_-_Ch%C5%82opi._T._2.djvu.jpg
+    rozmery: 1960×2634
+    datum: "1928"
+    popis: skany książki PL
