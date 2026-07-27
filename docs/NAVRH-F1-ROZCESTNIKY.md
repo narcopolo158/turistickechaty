@@ -66,9 +66,9 @@ co šlo skutečně načíst.)*
    Vedle poctivé countery z DB: **76 profilů · N s razítkem · naposledy
    ověřeno DD. MM.** (přesná sada dle toho, co umíme doložit).
 2. **3D panorama band.** Široký pás s malovaným panoramatem Krkonoš —
-   na desktopu živý (omezené ovládání, klik → plná mapa na stránce
-   pohoří), na mobilu statický render s tlačítkem „Otevřít 3D mapu".
-   Tohle je „wow" moment homepage a podpis celého webu.
+   **ROZHODNUTO (Michal 27. 7.): na homepage vždy statický poster**
+   (render z CI), klik vede na plnou 3D mapu na stránce pohoří.
+   Homepage zůstane rychlá; „wow" dělá samotný malovaný obraz.
 3. **Pohoří grid.** Karta Krkonoš (živá: mini-statistiky, vstup) +
    karty „připravujeme" (Jizerské hory, Český ráj, Podkrkonoší…) — jen
    s poctivým stavem („sbíráme kandidáty"), ať je vidět pilot → expanze.
@@ -87,10 +87,14 @@ co šlo skutečně načíst.)*
   stav (v provozu / mimo provoz / zaniklá) · nocleh · občerstvení ·
   razítko/známka · typ (bouda/hotel/útulna…). Client-side nad SSG JSON
   indexem — 76 položek, žádné stránkování (anti-vzor ceskehory).
-- **Přepínač zobrazení:** Řádky (tabulkové řádky z F0-03 — výchozí,
-  skenovatelné: název, výška, stav-pilulka, služby ikonky, naposledy
-  ověřeno) / Karty (s fotkou) / **Mapa** (2D Leaflet přes celou šířku,
-  markery = přefiltrovaná množina).
+- **Přepínač zobrazení — ROZHODNUTO (Michal 27. 7.): výchozí KARTY**
+  (s fotkou/siluetou), přepínač na Řádky (tabulkové řádky z F0-03:
+  název, výška, stav-pilulka, služby ikonky, naposledy ověřeno) a na
+  **Mapu** (2D Leaflet přes celou šířku, markery = přefiltrovaná
+  množina). Mobil: karty. Design session AŤ VYZKOUŠÍ i hybridní
+  variantu B z Michalova návrhu: nahoře blok 6–9 karet (kurátorský
+  výběr / naposledy ověřené), pod ním zbytek jako řádky — a vybere se,
+  co funguje líp.
 - **Řazení:** abecedně · podle výšky · naposledy ověřeno.
 - **Stav filtrů v URL** (`?pohori=krkonose&stav=v-provozu`) — sdílení a
   zpětné tlačítko fungují.
@@ -117,15 +121,21 @@ co šlo skutečně načíst.)*
 3. **Chaty oblasti.** Lehký filtr (stav) + tabulkové řádky; výchozí
    řazení podle výšky. Hover řádku ↔ zvýraznění na mapě (desktop).
 4. **Žebříčky pohoří** (PeakVisor vzor dvojího pohledu): **Nejvýše
-   položené** (top 10 dle `vyska`) · **Nejstarší** (dle doloženého roku
-   — jen chaty, kde rok máme, s letopočtem) · **Největší** (kapacita —
-   platí konvence nižšího čísla při rozporu). Každý žebříček nese
-   mikropoznámku „jen doložené hodnoty, zdroj na profilu" — žebříčky
-   jsou tím pádem zároveň výkladní skříň poctivosti.
+   položené** (top 10 dle `vyska`) · **Nejstarší** — ROZHODNUTO
+   (Michal 27. 7.): rok se bere **z milníků historie** (nejstarší
+   doložený letopočet), žádné nové pole; popisek žebříčku proto
+   poctivě říká „nejstarší doložený rok v historii" (milník může být
+   první zmínka i stavba — netvrdíme „založena") · **Největší**
+   (kapacita — platí konvence nižšího čísla při rozporu). Každý
+   žebříček nese mikropoznámku „jen doložené hodnoty, zdroj na
+   profilu" — žebříčky jsou tím pádem zároveň výkladní skříň
+   poctivosti.
 5. **Střediska a východiska.** Karty (Pec p. S., Špindl, Harrachov,
    Janské Lázně, Malá Úpa; Karpacz, Szklarska Poręba) s počtem chat
    „dostupných odtud" — vazba přes `vychoziBod` tras; kde vazbu nemáme,
-   karta jen naviguje (bez čísla). Mini-stránky středisek až F2.
+   karta jen naviguje (bez čísla). ROZHODNUTO (Michal 27. 7.):
+   **mini-stránky středisek vznikají rovnou** — karta vede na vlastní
+   stránku střediska (viz kap. 6: URL a data).
 6. **Top cíle** (komoot vzor, kurátorské, se zdroji): Sněžka, Sněžné
    jámy, prameny Labe, Mumlavský vodopád… — položka = 1 věta proč +
    „nejbližší chaty: …". Žádný superlativ bez dokladu.
@@ -145,9 +155,19 @@ co šlo skutečně načíst.)*
   nejvyšší hora {název, výška, source}, seznam středisek, kurátorské
   top cíle {název, věta, source, vazby na chaty}. → rozšíření kolekce
   Oblasti + YAML `data/oblasti/krkonose.yaml`.
-- **Žebříček „nejstarší":** dnes máme roky v milnících historie →
-  potřebuje buď explicitní pole `dolozenoOd`, nebo jasné pravidlo
-  extrakce z prvního milníku (rozhodnout, viz otázky). Nic nedomýšlet.
+- **Žebříček „nejstarší" (rozhodnuto):** rok = nejstarší letopočet
+  v doložených milnících historie chaty; počítá se při buildu (žádné
+  nové pole, žádné ruční dublování). Chaty bez jediného milníku
+  s rokem v žebříčku prostě nejsou. Popisek „nejstarší doložený rok
+  v historii" — netvrdíme „rok založení".
+- **Střediska (rozhodnuto: mini-stránky hned):** nový datový typ
+  Středisko (YAML `data/strediska/<oblast>/<slug>.yaml` + kolekce):
+  název, obec, GPS, výška, doprava/parkování (jen doložené — u Pece
+  už máme terminál P1 z profilu Luční), vazby „chaty dostupné odtud"
+  (z `vychoziBod` tras + ruční doplnění), zdroje. **URL: vlastní
+  segment** `/cesko/krkonose/strediska/<slug>` — NESMÍ sdílet
+  namespace s profily chat (`/cesko/krkonose/<chata>`), jinak kolize
+  slugů.
 - **„Naposledy ověřeno":** max(`checked`) napříč bloky ověření — už
   dnes to počítá profil, přidat do SSG indexu.
 - **SSG JSON index chat** pro filtry/hledání (slug, název, pohoří, stav,
@@ -158,22 +178,20 @@ co šlo skutečně načíst.)*
   negeneruje!), poster PNG z CI vizuální kontroly, mobil: nižší DPR +
   strop instancí smrčků, `prefers-reduced-motion`.
 
-## 7. Otázky pro Michala (než se design rozjede)
+## 7. Otázky pro Michala — ZODPOVĚZENO 27. 7. 2026 večer (promítnuto výše)
 
-1. **Homepage 3D band:** živý i na desktopu (výkon: ~3 MB + three.js),
-   nebo všude poster a 3D až na stránce pohoří? Můj návrh: poster na
-   homepage, plná 3D jen na pohoří — homepage zůstane rychlá.
-2. **„Nejstarší chata":** brát rok z prvního doloženého milníku
-   historie, nebo zavést přísnější explicitní pole `dolozenoOd` a plnit
-   ho ručně (pomalejší, ale čistší)? Můj návrh: explicitní pole.
-3. **Výchozí zobrazení katalogu:** řádky (hutné, „průvodcovské"), nebo
-   karty s fotkou (vizuální)? Můj návrh: řádky na desktopu, karty na
-   mobilu.
-4. **FAQ blok na pohoří:** ano (SEO/AEO síla), nebo to je „další text
-   k údržbě navíc"? Můj návrh: ano, ale generovaný z dat, ať se
-   neudržuje ručně.
-5. **Střediska:** stačí sekce na stránce pohoří (návrh), nebo rovnou
-   mini-stránky středisek? (Mini-stránky bych odložil do F2.)
+1. **Homepage 3D band:** ~~živá vs. poster~~ → **„poster na homepage,
+   plná 3D jen na pohoří — homepage zůstane rychlá."** ✓ kap. 3 i 8.
+2. **„Nejstarší chata":** → **„z milníků"** — extrakce nejstaršího
+   doloženého letopočtu při buildu, poctivý popisek. ✓ kap. 5 a 6.
+3. **Výchozí zobrazení katalogu:** → **„výchozí karty, přepínač na
+   řádky?"** + záložní hybrid „pár karet (6–9) a pak dále řádky na
+   desktopu, karty na mobilu" → karty výchozí, hybrid jako varianta B
+   k otestování v design session. ✓ kap. 4 a 8.
+4. **FAQ blok:** → **„ano, ale generovaný z dat, ať se neudržuje
+   ručně."** ✓ kap. 5 (beze změny — návrh s tím počítal).
+5. **Střediska:** → **„mini-stránky rovnou."** ✓ kap. 5, 6 (datový
+   model + URL segment /strediska/) a 8 (čtvrtá šablona).
 
 ---
 
@@ -190,30 +208,42 @@ tab-bar, print. Hotová je šablona profilu chaty a Atlas zaniklých.
 (toon shading, modré stíny, papírové nebe, halo popisky) — nové sekce ji
 mají rámovat a ladit s ní, ne s ní soupeřit.
 
-**Úkol: navrhnout 3 šablony a jejich nové komponenty.**
+**Úkol: navrhnout 4 šablony a jejich nové komponenty.**
 
 1. **Homepage** — sekce: hero s hledáním + poctivé countery · 3D
-   panorama band (desktop živý/poster — dvě varianty k posouzení) ·
-   grid pohoří (1 živé + N „připravujeme") · kurátorské pásy
-   („Naposledy ověřeno", Atlas zaniklých, razítka/známky) · manifest
-   pás („každý údaj se zdrojem") · footer.
-2. **Katalog /chaty** — hledání, filtr chips, přepínač Řádky/Karty/2D
-   mapa, řazení, výpis bez stránkování, vstupy na žebříčky a Atlas,
-   poctivý prázdný stav.
+   panorama band jako **statický poster** (rozhodnuto — klik vede na
+   plnou 3D na stránce pohoří) · grid pohoří (1 živé + N
+   „připravujeme") · kurátorské pásy („Naposledy ověřeno", Atlas
+   zaniklých, razítka/známky) · manifest pás („každý údaj se zdrojem")
+   · footer.
+2. **Katalog /chaty** — hledání, filtr chips, zobrazení **Karty
+   (výchozí) / Řádky / 2D mapa**, řazení, výpis bez stránkování,
+   vstupy na žebříčky a Atlas, poctivý prázdný stav. Navrhnout A/B:
+   (A) čisté přepínání karty↔řádky, (B) hybrid — nahoře 6–9 karet
+   (kurátorský výběr), pod nimi řádky; mobil vždy karty.
 3. **Stránka pohoří** — hero se stat-tiles · plnoformátový 3D band
    s UI overlay · seznam chat provázaný s mapou · žebříčky (nejvýše /
-   nejstarší / největší) · karty středisek · top cíle · teaser Atlasu ·
-   sběratelská sekce · FAQ · přesahy.
+   nejstarší dle doloženého roku z milníků / největší) · karty
+   středisek (proklik na mini-stránky) · top cíle · teaser Atlasu ·
+   sběratelská sekce · FAQ (generované z dat) · přesahy.
+4. **Mini-stránka střediska** (`/cesko/krkonose/strediska/<slug>`) —
+   hero (název, obec, výška, 1–2 věty se zdrojem) · „chaty dostupné
+   odtud" (řádky s časy tras, kde je máme doložené) · praktické
+   (doprava/parkování — jen doložené, vzor: terminál P1 Pec) · mapka
+   (2D výřez) · zpět na pohoří. Malá, hutná šablona — žádná
+   marketingová vata.
 
 **Nové komponenty k navržení:** stat-tile „poctivé číslo" (hodnota +
 popisek + mikro-zdroj); žebříčkový řádek (pořadí, název, hodnota,
 proklik) + hlavička žebříčku s poznámkou o doloženosti; karta pohoří
-(živá vs. „připravujeme"); karta střediska; položka top cíle (věta +
-vazby na chaty); filtr-bar s chips + přepínač zobrazení + řazení; 3D
-band UI overlay (hledací pole, léto/zima toggle, legenda, tlačítko
-„Projít hřebenovku", preview bublina chaty s CTA, tlačítko „Otevřít 3D
-mapu" na posteru); FAQ blok (rozbalovací); manifest pás; pás „Naposledy
-ověřeno" (mini-karty s datem ověření).
+(živá vs. „připravujeme"); karta střediska (proklik na mini-stránku);
+položka „chata dostupná odtud" (řádek s časem trasy) pro mini-stránku
+střediska; položka top cíle (věta + vazby na chaty); filtr-bar s chips
++ přepínač zobrazení + řazení; 3D poster band (statický obraz + CTA
+„Otevřít 3D mapu"); 3D band UI overlay pro stránku pohoří (hledací
+pole, léto/zima toggle, legenda, tlačítko „Projít hřebenovku", preview
+bublina chaty s CTA); FAQ blok (rozbalovací); manifest pás; pás
+„Naposledy ověřeno" (mini-karty s datem ověření).
 
 **Tvrdá omezení:** (a) poctivost — v návrzích jen čísla/údaje, které
 umí dát DB (76 profilů, výšky, stavy, `checked`); žádná vymyšlená
@@ -223,9 +253,10 @@ breakpointy dle stávajícího prototypu (tab-bar < 760 px), 3D na mobilu
 vždy poster→tap; (e) print styly pro katalog a pohoří (bez mapy);
 (f) atribuce Mapy.com/OSM/KČT kde je mapa.
 
-**Výstup:** klikací HTML prototyp (jako u v2.2 handoffu) se všemi třemi
-šablonami light + dark + mobilní varianty klíčových sekcí; komponentové
-karty nových prvků; krátký handoff (tokens/typografie beze změn).
+**Výstup:** klikací HTML prototyp (jako u v2.2 handoffu) se všemi
+čtyřmi šablonami light + dark + mobilní varianty klíčových sekcí
+(u katalogu obě varianty A/B zobrazení); komponentové karty nových
+prvků; krátký handoff (tokens/typografie beze změn).
 
 **Akceptační kritéria:** návrh projde ban-scanem poctivosti (žádná
 nedoložitelná čísla), všechny stavy komponent (hover, aktivní filtr,

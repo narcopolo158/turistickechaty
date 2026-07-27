@@ -38,6 +38,19 @@ nové komponenty, tvrdá omezení poctivosti, výstup = klikací prototyp
 light+dark+mobil, akceptační kritéria). Čtyřblok 28. 7.: na designu
 NEstavět, dokud neproběhne design session — brát jiné položky backlogu.
 
+**Dodatek téhož večera — Michal odpověděl na všech 5 otázek,
+promítnuto do dokumentu:** (1) homepage = statický 3D poster, plná 3D
+jen na pohoří; (2) „nejstarší" z milníků (extrakce nejstaršího
+doloženého letopočtu při buildu, popisek „nejstarší doložený rok
+v historii" — netvrdíme založení); (3) katalog: výchozí KARTY
+s přepínačem na řádky, hybrid 6–9 karet + řádky jako varianta B pro
+design session, mobil karty; (4) FAQ ano, generované z dat;
+(5) **střediska = mini-stránky ROVNOU** → zadání rozšířeno na 4.
+šablonu, navržen datový typ Středisko (data/strediska/**) a URL
+segment /cesko/krkonose/strediska/<slug> (vlastní segment kvůli kolizi
+se slugy chat). Design session je teď plně odblokovaná — míč u Michala
+(Claude Design), zadání = kap. 8 dokumentu.
+
 ## 2026-07-27 — pokračování 17: INFRA-01 HOTOVO — staging dev.turistickechaty.cz ŽIJE (76 profilů)
 
 **Výsledek:** běh workflow #5 zelený (5 m 50 s), `/api/health` vrací
