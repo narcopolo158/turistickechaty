@@ -155,11 +155,25 @@ text:
     si přímo u hotelu provozní režim a dostupnost restaurace pro ty, kdo tu
     nespí.
 
-# Bez hero fotky: DATA-02 našla 10 licenčně čistých kandidátů, ale žádný
-# jednoznačný záběr budovy (parkoviště, autobusy, zastávka, rozcestníky —
-# vesměs ŠJů). Nejnadějnější je File:Špindlerova bouda, z parkoviště.jpg
-# (ŠJů, CC BY 4.0, 2508×1273, 92 m) — název napovídá pohled na boudu, popis
-# na Commons ale zmiňuje jen parkoviště; bez potvrzení redakce nepřebírat.
+# Hero fotka vybrána 27. 7. 2026 z fulltext sklizně DATA-02 (geosearch
+# dával jen parkoviště/autobusy/rozcestníky): File:Trail of Czech-Polish
+# Friendship, Krkonoše, Czechia 20.jpg — první věta popisu zní přímo
+# „Špindlerova Bouda.“; bez geotagu, výhrada v overeni bloku fotky.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/8/85/Trail_of_Czech-Polish_Friendship%2C_Krkono%C5%A1e%2C_Czechia_20.jpg
+    alt: Špindlerova bouda u Cesty česko-polského přátelství
+    typ: soucasna
+    autor: Michal Klajban
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Trail_of_Czech-Polish_Friendship,_Krkono%C5%A1e,_Czechia_20.jpg
+    prevzatoDne: '2026-07-27'
+    overeni:
+      source: >-
+        Wikimedia Commons — DATA-02 sklizeň s fulltextem, export z 2026-07-27; nález POUZE fulltext, BEZ geotagu — objekt potvrzuje první věta popisu souboru; popis „Špindlerova Bouda. Trail of Czech-Polish Friendship, Krkonoše, Czechia / Poland“; 6000×4000, licence CC BY-SA 4.0 z licenčního síta DATA-02; redakční výběr 27. 7. 2026 nad exportem — Commons živě nedosaženo, objekt i licenci na stránce souboru potvrdí očima redakce (Michal)
+      verified: false # oční kontrola objektu i licence na stránce souboru = Michal — pak přepnout
+      checked: '2026-07-27'
 
 zdroje:
   - popis: Web hotelu (spindlerovabouda.cz) — výška, adresa, ubytování, služby, historie

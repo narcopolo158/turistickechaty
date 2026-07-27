@@ -116,6 +116,21 @@ text:
 # — viz data/kandidati/fotky/krkonose/schronisko-szrenica.yaml. Vybere ruční
 # běh po očním posouzení, nebo další sklizeň DATA-02 (fulltext).
 
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/1/15/Schronisko_Szrenica_w_Karkonoszach_%28Reiftr%C3%A4gerbaude2%29.jpg
+    alt: Schronisko Szrenica v Krkonoších
+    typ: soucasna
+    autor: SchiDD
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Schronisko_Szrenica_w_Karkonoszach_(Reiftr%C3%A4gerbaude2).jpg
+    prevzatoDne: '2026-07-27'
+    overeni:
+      source: >-
+        Wikimedia Commons — DATA-02 sklizeň s fulltextem, export z 2026-07-27; nález POUZE fulltext, BEZ geotagu — objekt potvrzuje popis (Reifträgerbaude = historický německý název Szrenice) i název souboru; popis „Reifträgerbaude (Szrenica) im Riesengebirge“; 1920×1280, licence CC BY-SA 3.0 z licenčního síta DATA-02; redakční výběr 27. 7. 2026 nad exportem — Commons živě nedosaženo, objekt i licenci na stránce souboru potvrdí očima redakce (Michal)
+      verified: false # oční kontrola objektu i licence na stránce souboru = Michal — pak přepnout
+      checked: '2026-07-27'
+
 zdroje:
   - popis: OpenStreetMap (GPS, výška, web — ODbL)
     url: https://www.openstreetmap.org/way/32604717

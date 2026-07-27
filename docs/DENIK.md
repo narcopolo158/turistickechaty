@@ -11,6 +11,55 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování: Michal klikl na DATA-02 → fulltext sklizeň, +7 hero (32/49)
+
+**Zadání Michala:** „spustil jsem data-02, az to dobehne, muzes pokracovat."
+
+**Hotovo:**
+
+**Workflow doběhl (commit cbd9774, 74 kandidátních YAML vč. nových oblastí
+jizerske-hory a rudawy-janowickie) a z fulltext sklizně vybráno 7 dalších
+hero — profily s fotkou 25 → 32 z 49.** Jistota podle síly dokladu: Černá
+bouda (geosearch+fulltext, 51 m, popis „Horská 171, Hotel Černá Bouda" —
+jediná dnešní s geotagem), Vrbatova bouda (kategorie+fulltext, popis
+„Vrbatova Bouda — mountain hut … (right) and buffet (center)"), Bouda
+Klínovka a Richtrovy boudy (oba Jiří Komárek, 8288×5520 — u Richtrových je
+popis PRÁZDNÝ, objekt jmenuje jen název souboru „Richtrovy boudy (Krkonoše)",
+výhrada zapsána nejsilněji), Tetřeví Boudy („Tetřeví boudy v zimě" —
+jizerská jmenovka „U Tetřeví boudy" vyřazena), Hotel Špindlerova bouda
+(první věta popisu „Špindlerova Bouda.", 6000×4000, Michal Klajban — geosearch
+uměl jen parkoviště) a Schronisko Szrenica (Reifträgerbaude2, SchiDD).
+Všechny fulltext nálezy jsou BEZ geotagu — v overeni.source každého bloku
+je to výslovně, ověření objektu i licence očima = Michal.
+
+**Poctivě dál bez hero (17) a hlavní systémový nález dne: skript DATA-02
+zpracuje jen chaty, které mají v YAML GPS.** Dvanáct profilů povýšených
+z katalogových/známkových kandidátů bez OSM podkladu (Pod Studničnou, Rezek,
+Rozhled, Erlebachova, Kolínská, Lysečinská, Petrova, Pomezní, Portášky,
+Pražská, Rychorská, Nad Łomniczką) GPS nemá — nedomýšleli jsme je, takže je
+sklizeň vůbec nevidí. Cesty ven: doložit GPS (DATA-04/RÚIAN — stejně je
+potřebujeme pro mapu!), nebo skriptu přidat režim „fulltext i bez GPS".
+Druhý nález: **Lovecká chata je učebnicový jmenovec** — všech 6 fulltext
+nálezů fráze jsou cizí lovecké chaty (Brdy, Žďárské vrchy, Hostěnice,
+Květov, Beskydy, Bosna); zapsáno v profilu, hero dá jen chatař. Kochanówka
+a Okraj: fulltext nepřidal nic; U Jirky a Friesovy boudy: 0 kandidátů.
+
+**Měření:** kontrola zelená (validator 0, ban-scan drží 140, kolize 0,
+fixtura 4/4), seed idempotentní, int 216/216, lint čistý.
+
+**Příště:** fronta povyšování z DATA-27 (Jelení Louky, Bouda Na Pláni,
+Helena, U Kotle…). K hero zbytku: GPS dvanáctky (DATA-04/RÚIAN) je
+dvojitá výhra (mapa + fotky) — navrhnout Michalovi pořadí.
+
+**Otázky pro Michala:** (1) Oční kontrola objektů a licencí 16 dnešních hero
+(9 ranních + 7 fulltext — u fulltextových bez geotagu je klíčová, zvlášť
+Richtrovy s prázdným popisem). (2) 12 profilů bez GPS: stačí ti dohledat
+souřadnice ručně (mapy.cz → RÚIAN) po jedné při telefonátech DATA-04, nebo
+mám skriptu DATA-02 přidat režim „fulltext bez GPS", aby fotky nečekaly na
+souřadnice?
+
+---
+
 ## 2026-07-27 — denní session (bezobslužný běh): hero fotky devíti profilů z kandidátů DATA-02
 
 **Hotovo:**
