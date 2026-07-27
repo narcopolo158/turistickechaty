@@ -11,6 +11,27 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 19: ERRATA — Lovecká chata byla na mapě 10 km vedle (záměna OSM entit)
+
+**Nález Michala na stagingu** („loveckou chatu máme špatně umístěnou",
+screenshot Mapy.com vs. náš profil): GPS 50.7239736/15.6648399 z OSM
+node 13298087649 patřily JINÉMU objektu téhož jména u Špindlerova
+Mlýna — profil si sám protiřečil (obec Velká Úpa, poloha u Stohu).
+**Oprava:** poloha doložena přes Firmy.cz záznam SVÁZANÝ s naším
+objektem shodným telefonem, webem lovecka-chata.cz i e-mailem →
+**50.6895953 N, 15.7590061 E** (u silnice 296 mezi Pecí a Velkou Úpou;
+v terénu neověřeno, verified:false trvá). Zdokumentován i TŘETÍ objekt
+téhož jména — „Lovecká chata Bílý kámen" (OSM way 435429328,
+50.70888/15.74583, holá budova bez služeb v kopci nad Pecí, myslivna) —
+který Mapy.com nabízejí jako první výsledek hledání; nezaměňovat.
+**PONAUČENÍ (do sbírky vedle „GPS nikdy z paměti"): OSM objekt nikdy
+nevázat jen jménem — vždy zkontrolovat polohu proti obci/adrese.**
+Sweep obec-vs-lng přes všech 76 profilů žádný další hrubý nesoulad
+nenašel; 12 chat je bez GPS (známý stav, čeká na doložené zdroje).
+Oprava se nasadí automaticky (push data/chaty → deploy); 3D mapa se
+srovná až s příštím během data28 (chaty se do ní berou z YAML při
+generování).
+
 ## 2026-07-27 — pokračování 18: návrh F1 rozcestníků + zadání pro design session
 
 **Zadání Michala:** „navrhni uspořádání homepage, rozcestníky (chaty)

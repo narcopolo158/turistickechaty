@@ -7,6 +7,18 @@
 # z OSM (GPS) → verified: false. Nic nedomýšleno.
 # POZOR na domény: platí jen lovecka-chata.cz; doména loveckachatakrkonose.cz
 # z OSM kontaktů je nesouvisející e-shop se zahradními domky (ověřeno 20. 7.).
+#
+# ERRATA 27. 7. 2026 (nález Michala na stagingu — „loveckou chatu máme
+# špatně umístěnou"): původní GPS 50.7239736/15.6648399 z OSM node
+# 13298087649 patřily JINÉMU objektu téhož jména u Špindlerova Mlýna
+# (Stoh/Klínové Boudy) — záměna entit podle jména. Profil si protiřečil
+# (obec Velká Úpa vs. poloha u Špindlu). Opraveno na polohu doloženou přes
+# Firmy.cz záznam SVÁZANÝ s naším objektem telefonem, webem i e-mailem.
+# POZOR do budoucna ještě na třetí objekt: „Lovecká chata Bílý kámen"
+# (OSM way 435429328, 50.70888/15.74583, budova bez služeb v kopci nad
+# Pecí — myslivecká bouda) — TAKÉ jiný objekt, nezaměňovat.
+# PONAUČENÍ: OSM objekt nikdy nevázat jen jménem — vždy zkontrolovat
+# polohu proti obci/adrese profilu.
 
 nazev: Lovecká chata
 slug: lovecka-chata
@@ -16,21 +28,25 @@ stav: v-provozu
 oblast: krkonose
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS z OSM (ODbL, neověřeno v terénu); adresa potvrzena z webu.
+# GPS opraveny 27. 7. 2026 (viz ERRATA v hlavičce); adresa potvrzena z webu.
 # Nadmořskou výšku web neuvádí — nedomýšlet.
-lat: 50.7239736
-lng: 15.6648399
+lat: 50.6895953
+lng: 15.7590061
 obec: Velká Úpa
 overeniLokace:
   source: >-
     Adresa Velká Úpa 204, 542 21 Pec pod Sněžkou potvrzena z webu chaty
     https://www.lovecka-chata.cz/ („Pec pod Sněžkou, Velká Úpa 204, 542 21";
-    načteno 21. 7. 2026 — nadmořskou výšku web neuvádí). GPS: OpenStreetMap
-    https://www.openstreetmap.org/node/13298087649 — data © přispěvatelé
-    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); souřadnice v terénu
-    neověřeny
-  verified: false # adresa z webu ověřena; GPS z OSM a nadmořská výška (web neuvádí) čekají
-  checked: '2026-07-21'
+    načteno 21. 7. 2026 — nadmořskou výšku web neuvádí). GPS: Firmy.cz
+    detail „Lovecká chata (Pec pod Sněžkou, Velká Úpa)"
+    https://www.firmy.cz/detail/13218569-lovecka-chata-pec-pod-snezkou-velka-upa.html
+    (načteno 27. 7. 2026) — záznam svázán s objektem shodným telefonem,
+    webem lovecka-chata.cz i e-mailem; mapový odkaz záznamu
+    x=15.7590061111, y=50.6895952778. Souřadnice v terénu neověřeny.
+    OPRAVA 27. 7. 2026: předchozí GPS z OSM node 13298087649 patřily
+    jinému objektu téhož jména u Špindlerova Mlýna (nález Michala).
+  verified: false # adresa z webu ověřena; GPS z Firmy.cz (v terénu neověřeny), výška nedoložena
+  checked: '2026-07-27'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 # Kapacitu web neuvádí — nedomýšlet, dohledat.
