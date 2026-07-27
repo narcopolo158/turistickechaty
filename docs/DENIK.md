@@ -11,6 +11,36 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 17: INFRA-01 — živé zakládání situ na pticore (PROBÍHÁ)
+
+**Hotovo (Michal kliká ve Forge, já naviguji):** Site
+`dev.turistickechaty.cz` založen — nový Forge má nativní typ **Next.js**
+(Mode: Node.js server, Server port 3017, Build command přepsán na
+`echo "build jede z GitHub Actions"` — build zůstává v Actions); repo
+připojeno přes Custom Git + read-only deploy key (org connection
+„pticore" repo pod narcopolo158 nevidí). Site ID 3312291, cesta
+`/home/forge/dev.turistickechaty.cz`. Červená hláška „unable to enable
+push deploy" = očekávaná a neškodná (Custom Git nemá GitHub API). DNS:
+A záznam `dev` → 81.95.108.230 na Active24 hotov (mailové záznamy a MX
+nedotčeny). DB `turistickechaty` + stejnojmenný uživatel založeny.
+Environment vyplněn dle šablony (DATABASE_URL, PORT 3017, URL).
+
+**Provozní lekce — výstup Forge site Commands je nespolehlivý:**
+`openssl rand -hex 32` skončil „Finished", ale Command output byl
+prázdný (Michal: usekává věci; u hubu to řešili zápisem do
+`public/_diag.txt` a čtením přes web). Doktrína od teď: tajemství
+generovat lokálně (PowerShell) a vkládat rovnou do Forge env editoru;
+serverové výstupy číst ze souborů, ne z Commands UI. Trik s _diag.txt
+tady zatím nejde — web na situ ještě neběží, soubor by nebylo jak
+stáhnout.
+
+**Zbývá (pořadí):** PAYLOAD_SECRET (lokální generování) do env → první
+Deploy (naklonuje repo; build = echo, server nic těžkého nedělá) →
+daemon `npm run start` (číslo procesu → secret PTICORE_DAEMON) → SSL
+Let's Encrypt → 4 GitHub secrets (PTICORE_SSH_KEY/HOST/PATH/DAEMON) →
+první běh workflow „INFRA-01: deploy staging" → kontrola
+/api/health + /admin. Zápis se dopíše, až staging poběží.
+
 ## 2026-07-27 — pokračování 16: INFRA-01 — deploy balík pro pticore připraven (Michal ověřuje 76 objektů)
 
 **Zadání Michala:** „ok - pustím se do ověřování 76 objektů, zatím pracuj
