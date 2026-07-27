@@ -11,6 +11,58 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 23 (čtyřblok 1/4, druhá část po „pokracuj"): F1b UI HOTOVO + F1c 1. průchod
+
+**Hotovo (2 commity):**
+1. `bdf7928` — **F1b katalog /chaty KOMPLETNÍ.** `KatalogClient.tsx`
+   + `katalog.css` dle prototypu a screenshotů: filtr-bar (hledání,
+   Karty/Řádky/Mapa, řazení, chips s × a aria-pressed), kartotéční
+   lístky (červená linka, silueta thumb, mini-otisk — sken z DB či
+   stylizované RazitkoSvg, tagy „· Atlas/PL/výška nedoložena", rotace
+   ±0.7°, hover srovná+zvedne, fadeUp, reduced-motion vše vypíná),
+   tabulkové řádky, mapa s PŘEFILTROVANOU množinou (profily bez GPS
+   poctivě přiznané popiskou), prázdný stav s odkazem do Atlasu
+   a resetem. Stav v URL: chips/sort/view pushState („zpět" funguje),
+   hledání replaceState; zdroj pravdy useSearchParams. Index rozšířen
+   o lat/lng + otiskUrl/otiskAlt. E2e mapy katalogu aktualizován
+   (mapa už není vždy viditelná — deep-link ?view=mapa) + nový e2e
+   chips/URL/zpět. Odchylky od prototypu (vědomé, do zápisu):
+   breadcrumb „Průvodce /" místo „Česko /" (fond má i PL profily),
+   „Kam dál" bez kotvy na žebříčky (F1d neexistuje — mrtvé odkazy
+   neděláme), „v ukázce 12 ze 76" vynecháno (mock popiska).
+2. `9603c1e` — **F1c 1. průchod: datové pásy homepage.** Countery
+   (profily / s razítkem / zaniklé v Atlasu / naposledy ověřeno) +
+   mikroblok („n× nově ověřeno za 14 dní", Tisk seznamu) — vše
+   počítané z indexu/Atlasu, nic ručně; kalendárium pás (revalidate
+   3600 → denní rotace bez falešného „přesně dnes"); sekce 04
+   Z průvodce (Naposledy ověřeno · tmavá karta Atlasu · Razítka
+   a známky); print B13 = čistý seznam všech chat. RSS/Newsletter
+   chipy vědomě vynechány (backend mimo balík — mrtvé prvky ne).
+   Hero z F0-02 zatím drží (koláž = session 3).
+
+Testy: 250 int passed (+10 nových: 6 KatalogClient s mockem
+next/navigation a MapaChat, 4 homepage async server komponenta
+s mocky), `npm run kontrola` zelené, tsc i lint čisté u obou commitů.
+Tytéž 3 padající int soubory = Payload bez DB (environmentální,
+padají i na čistém main — v CI se nespouštějí, deploy má vlastní seed).
+
+**Pro session 2/4 (aktualizovaná předávka):**
+1. Ověřit v Actions deploy běhy 84a17a0…9603c1e (6 commitů večera;
+   sandbox na GitHub API nedosáhne). Riziko: tabulka `strediska`
+   (dfd9065) na serveru; selhání zastaví nasazení bezpečně.
+2. **Vizuální kontrola katalogu a homepage na stagingu** proti
+   screenshots/ (01-katalog, 04-katalog noc…) — přes workflow
+   „Vizuální kontrola: mapa (F0-07)" vzor, nebo Michal okem.
+3. Dál dle backlogu: F1c 2. průchod (hero koláž „sběratelský stůl",
+   dřevěné CTA, poster band, pohoří grid, „Namátkou" se seedovaným
+   shuffle, manifest) — vizuální pravda F1-Homepage.dc.html +
+   screenshots/01–05-homepage. Pak F1d.
+
+**Otázky pro Michala:** trvají z pokr. 22 (ČÚZK výšky středisek,
+zaokrouhlení Sněžky 1603, kontrola deploy). Nová drobnost: kalendárium
+odkazuje „číst na profilu ▸" (prototyp říkal „číst v Atlasu" — milníky
+ale vedou na profily živých chat, Atlas nemá milníky; OK?).
+
 ## 2026-07-27 — pokračování 22 (mimořádný čtyřblok, session 1/4): F1a datový základ HOTOV + F1b logika
 
 **Kontext:** Ruční spuštění se zadáním od Michala (~20:50): mimořádný
