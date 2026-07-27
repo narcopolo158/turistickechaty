@@ -132,6 +132,14 @@ jobs:
             echo "!! DATABASE_URL nedorazila (env soubor chybi, nebo ji neobsahuje) — viz vypis vyse" >&2
             exit 1
           fi
+          # Bezpecna diagnostika struktury URL — vypisuje jen delky, nikdy hodnoty.
+          echo "radku DATABASE_URL v env souboru: \$(grep -c '^DATABASE_URL=' "\$ENVSOUBOR" || true)"
+          node -e "
+            const u = new URL(process.env.DATABASE_URL)
+            console.log('DATABASE_URL struktura: uzivatel=' + (u.username || 'CHYBI')
+              + ' | heslo=' + (u.password ? 'ano, ' + u.password.length + ' znaku' : 'CHYBI!')
+              + ' | host=' + u.host + ' | databaze=' + u.pathname)
+          " || echo "!! DATABASE_URL nejde rozebrat jako URL (zvlastni znak v hesle? zakoduj ho, nebo zvol heslo jen z pismen a cisel)" >&2
           npx payload run scripts/seed-chaty.ts
           rm -rf .next
           tar -xzf /tmp/chaty-build.tar.gz
