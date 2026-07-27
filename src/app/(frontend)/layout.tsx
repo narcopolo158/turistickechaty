@@ -12,6 +12,7 @@ import './profil.css'
 import './profil-zapisnik.css'
 import './razitkovnik.css'
 import './katalog.css'
+import './home-f1.css'
 
 export const metadata: Metadata = {
   // Absolutní základ pro kanonické a OG URL (Next jinak varuje u og:image).

@@ -1,0 +1,109 @@
+/* Homepage F1c — datové pásy (countery, kalendárium, Z průvodce) + print
+   seznam (B13). Vizuál dle design/handoff-f1/F1-Homepage.dc.html; vše
+   z tokens — dark mode jen přepne proměnné. Hero koláž „sběratelský stůl"
+   a poster band přijdou dalším průchodem F1c. */
+
+/* ── Countery + mikroblok (v hero) ─────────────────────────────────────── */
+.hf1-countery {
+  display: flex;
+  gap: 22px;
+  align-items: baseline;
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hair);
+  flex-wrap: wrap;
+}
+.hf1-countery b { font: 600 22px/1 'Space Grotesk', sans-serif; color: var(--ink); font-weight: 600; }
+.hf1-countery span { font: 500 11.5px/1 Inter, sans-serif; color: var(--muted); }
+.hf1-countery .hf1-overeno { font: italic 400 11.5px/1.4 var(--font-emph, Georgia, serif); color: var(--muted); white-space: nowrap; }
+.hf1-countery .hf1-overeno b { font-style: normal; font-size: 11.5px; color: var(--open, #1e8a4f); }
+.hf1-pozn { font: italic 400 10.5px/1.4 var(--font-emph, Georgia, serif); color: var(--label); margin-top: 6px; }
+.hf1-mikroblok { display: flex; gap: 8px; align-items: center; margin-top: 13px; flex-wrap: wrap; }
+.hf1-chip-nedavno {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(30, 138, 79, 0.1);
+  font: 600 10.5px/1 'Space Grotesk', sans-serif;
+  color: var(--open, #1e8a4f);
+  white-space: nowrap;
+}
+.hf1-chip-nedavno i { width: 6px; height: 6px; border-radius: 50%; background: var(--open, #1e8a4f); }
+.hf1-chip-tisk {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font: 600 10.5px/1 'Space Grotesk', sans-serif;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.hf1-chip-tisk:hover { border-color: rgba(224, 52, 31, 0.4); color: var(--red); }
+
+/* ── Kalendárium pás ───────────────────────────────────────────────────── */
+.hf1-kalendarium {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 18px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  flex-wrap: wrap;
+  margin: 0 0 24px;
+}
+.hf1-kalendarium .hf1-label { font: 600 9.5px/1 'Space Grotesk', sans-serif; letter-spacing: 0.16em; text-transform: uppercase; color: var(--label); flex: none; }
+.hf1-kalendarium .hf1-kosoctverec { width: 7px; height: 7px; background: var(--red); transform: rotate(45deg); flex: none; }
+.hf1-kalendarium .hf1-vyroci { font: 500 15px/1.45 var(--font-emph, Georgia, serif); color: var(--ink); flex: 1; min-width: 260px; }
+.hf1-kalendarium a { font: 600 11px/1 'Space Grotesk', sans-serif; color: var(--red); flex: none; text-decoration: none; }
+.hf1-kalendarium .hf1-mikropozn { font: italic 400 10.5px/1 var(--font-emph, Georgia, serif); color: var(--label); flex: none; }
+
+/* ── 04 Z průvodce (3 karty) ───────────────────────────────────────────── */
+.hf1-zpruvodce { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; align-items: stretch; margin-top: 14px; }
+@media (max-width: 900px) { .hf1-zpruvodce { grid-template-columns: 1fr; } }
+.hf1-panel { background: var(--paper); border: 1px solid var(--line); border-radius: 13px; padding: 15px 16px; display: flex; flex-direction: column; }
+.hf1-panel-hlava { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.hf1-panel-hlava b { font: 500 17px/1.1 var(--font-emph, Georgia, serif); color: var(--ink); font-weight: 500; }
+.hf1-panel-hlava .hf1-tag { font: 600 9px/1 'Space Grotesk', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; color: var(--open, #1e8a4f); }
+.hf1-panel-seznam { flex: 1; display: flex; flex-direction: column; margin-top: 8px; }
+.hf1-panel-radek {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid var(--hair);
+  text-decoration: none;
+  color: inherit;
+}
+.hf1-panel-radek:hover { background: var(--cream); }
+.hf1-panel-radek span:first-child { font: 500 13px/1.2 Inter, sans-serif; color: var(--ink); }
+.hf1-datum-overeni { display: inline-flex; align-items: center; gap: 6px; font: 600 10.5px/1 'Space Grotesk', sans-serif; color: var(--open, #1e8a4f); white-space: nowrap; }
+.hf1-datum-overeni i { width: 5px; height: 5px; border-radius: 50%; background: var(--open, #1e8a4f); }
+.hf1-panel .hf1-pozn { margin-top: 8px; }
+.hf1-panel-cta { margin-top: 10px; font: 600 11px/1 'Space Grotesk', sans-serif; color: var(--red); text-decoration: none; }
+
+.hf1-panel.tmavy { background: #2b2f33; border-color: #2b2f33; color: #ece6d7; position: relative; overflow: hidden; }
+.hf1-panel.tmavy .hf1-panel-hlava b { color: #ece6d7; }
+.hf1-panel.tmavy .hf1-tag { color: #b7ad99; }
+.hf1-panel.tmavy p { font-size: 12.5px; line-height: 1.55; color: rgba(236, 230, 215, 0.82); margin: 8px 0 0; }
+.hf1-panel.tmavy .hf1-pozn { color: rgba(236, 230, 215, 0.55); }
+.hf1-panel.tmavy .hf1-panel-cta { color: #f2b8ac; }
+.hf1-panel.tmavy .hf1-kruh { position: absolute; right: -24px; top: -24px; width: 110px; height: 110px; border-radius: 50%; border: 2px dashed rgba(255, 255, 255, 0.14); }
+
+/* ── Print (B13): homepage tiskne čistý seznam chat ────────────────────── */
+.hf1-print { display: none; }
+@media print {
+  .hf1-print { display: block; }
+  .hf1-print h2 { font: 700 16pt/1.2 'Space Grotesk', sans-serif; margin: 0 0 4pt; }
+  .hf1-print .hf1-print-pozn { font: italic 9pt/1.4 Georgia, serif; margin: 0 0 10pt; }
+  .hf1-print table { width: 100%; border-collapse: collapse; font: 9.5pt/1.35 Georgia, serif; }
+  .hf1-print th { text-align: left; font: 700 8pt/1.2 sans-serif; text-transform: uppercase; letter-spacing: 0.08em; border-bottom: 1pt solid #000; padding: 3pt 6pt 3pt 0; }
+  .hf1-print td { border-bottom: 0.25pt solid #999; padding: 3pt 6pt 3pt 0; vertical-align: baseline; }
+  /* skryje se obrazovková homepage — tiskne se jen seznam */
+  .hf1-jen-obrazovka { display: none !important; }
+}
