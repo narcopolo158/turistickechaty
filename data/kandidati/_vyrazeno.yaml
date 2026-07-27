@@ -3,6 +3,12 @@
 # Každý záznam: proč, kdo rozhodl, kdy. Soubory kandidátů se buď mažou
 # (duplicity), nebo přesouvají do jiné oblasti (mimo Krkonoše) — tento seznam
 # zajišťuje, že se do data/kandidati/krkonose/ nevrátí.
+#
+# DATA-25 bod (a) — RE-CHECK všech 10 novým klíčem (27. 7. 2026, search-only):
+# duplicity (2) a mimo-Krkonoše (4) se klíče netýkají; ze čtyř penzionů
+# Roxana a Zvonička drží (žádný signál veřejného občerstvení ani turistické
+# minulosti), Tereza a Sasanka mají PODMÍNĚNOU REVIZI — viz pole data25
+# u záznamů a seznam otázek pro Michala.
 
 vyrazeno:
   - osm: https://www.openstreetmap.org/node/656462770
@@ -56,6 +62,10 @@ vyrazeno:
       bud (klíč ze s27 „nezařazena trvale"; potvrzeno i explicitně).
     rozhodl: Michal (chat hlavní session 20.–21. 7. 2026 — „roxana vyhodit")
     checked: 2026-07-21
+    data25: >-
+      Re-check novým klíčem 27. 7. 2026 (WebSearch): žádný signál veřejného
+      občerstvení ani turistické minulosti nenalezen — vyřazení DRŽÍ
+      (navíc explicitní rozhodnutí Michala).
   - osm: https://www.openstreetmap.org/node/12588373178
     slug: tereza
     duvod: >-
@@ -63,6 +73,13 @@ vyrazeno:
       (web ze sandboxu nedoložen, rozhodnuto vlastníkem projektu).
     rozhodl: Michal (chat hlavní session 21. 7. 2026 — „tereza, sasanka, zvonicka klidne taky")
     checked: 2026-07-21
+    data25: >-
+      Re-check novým klíčem 27. 7. 2026 (WebSearch): objekt se v katalozích
+      jmenuje „CHATA Tereza" (Janova hora, Vítkovice) a vlastní web
+      chata-tereza.cz má samostatnou sekci Restaurace — web je ale ze
+      sandboxu nedostupný (timeout), komu restaurace slouží, nedoloženo.
+      PODMÍNĚNÁ REVIZE → otázka pro Michala: má restauraci pro veřejnost?
+      (pokud ano → vrátit mezi kandidáty dle klíče z 20. 7.).
   - osm: https://www.openstreetmap.org/way/203630802
     slug: sasanka
     duvod: >-
@@ -70,6 +87,13 @@ vyrazeno:
       (web ze sandboxu nedoložen, rozhodnuto vlastníkem projektu).
     rozhodl: Michal (chat hlavní session 21. 7. 2026 — „tereza, sasanka, zvonicka klidne taky")
     checked: 2026-07-21
+    data25: >-
+      Re-check novým klíčem 27. 7. 2026 (WebSearch + Kudy z nudy): provozovna
+      se jmenuje „Penzion a restaurace Sasanka" (Firmy.cz, Tripadvisor
+      v kategorii restaurací; KzN: 47 lůžek, 50 m od lanovky na Hnědý
+      vrch) — jméno nese restauraci, doslovný doklad „pro veřejnost" ale
+      chybí. PODMÍNĚNÁ REVIZE → otázka pro Michala: má restauraci pro
+      veřejnost? (pokud ano → vrátit mezi kandidáty dle klíče z 20. 7.).
   - osm: https://www.openstreetmap.org/way/31360801
     slug: zvonicka
     duvod: >-
@@ -77,3 +101,8 @@ vyrazeno:
       (web ze sandboxu nedoložen, rozhodnuto vlastníkem projektu).
     rozhodl: Michal (chat hlavní session 21. 7. 2026 — „tereza, sasanka, zvonicka klidne taky")
     checked: 2026-07-21
+    data25: >-
+      Re-check novým klíčem 27. 7. 2026 (WebSearch): nalezen jen pronájmový
+      „Penzion Zvonička" (katalogy ho kladou do Velké Úpy — kandidátův way
+      leží u Lučin; nesoulad lokalit přiznán, může jít o jmenovce) — žádný
+      signál veřejného občerstvení ani turistické minulosti. Vyřazení DRŽÍ.

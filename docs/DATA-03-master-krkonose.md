@@ -255,3 +255,12 @@ Sekci nechávat na místě: až přijde další externí seznam, tipy se sem zap
 
 Objekty, které redakce vědomě vyloučila (`data/kandidati/_vyrazeno.yaml`): chata-mamut-656462770, chata-pesakovna, chatka-gorzystow, lyzarska-bouda-656504528, penzion-roxana, sasanka, schronisko-pttk-szwajcarka, stacja-turystyczna-orle, tereza, zvonicka.
 
+**DATA-25 bod (a) — re-check všech 10 novým klíčem HOTOV (27. 7. 2026,
+search-only, verdikty v `_vyrazeno.yaml` u záznamů):** duplicity (2)
+a mimo-Krkonoše (4) beze změny; Roxana a Zvonička DRŽÍ (žádný signál
+občerstvení ani minulosti); **Tereza a Sasanka = PODMÍNĚNÁ REVIZE** —
+Tereza je v katalozích „Chata Tereza" s restaurační sekcí na nedostupném
+webu, Sasanka je provozovnou „Penzion a restaurace Sasanka" — obě čekají
+na Michalovo ověření otázkou „má restauraci pro veřejnost?" (seznam
+otázek).
+

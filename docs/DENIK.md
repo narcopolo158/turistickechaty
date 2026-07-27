@@ -11,6 +11,54 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 14: panorama výchozí + hledání + animovaný turista; DATA-25(a) hotov — KRKONOŠE PŘIPRAVENY K UZAVŘENÍ
+
+**Zadání Michala (doslovně):** „ta panaoramaticka mapa je skvela, dal bych
+ji jako vychozi, mohla by na urovni pohori fungovat jako dalsi navigace -
+muzes chatu bud vybrat ze seznamu, nebo z dlazdic / profilu, nebo vyhledat
+nabo na ni kliknout na mape. jeste me pak napadlo pri planovani trasy nebo
+prichodu na chatu ze strediska videt animaci pochodu - ze by animovany
+panacek = turista - sel po 3d mape"
+
+**Hotovo — 3D mapa:**
+
+- **panoramatický režim je VÝCHOZÍ** (checkbox předzaškrtnut, zapíná se
+  při startu; vypnutí vrací klasický pohled beze zbytku),
+- **vyhledávání chaty** (našeptávač všech publikovaných; shoda i částečná
+  → přelet kamery + karta) — čtvrtý způsob navigace vedle seznamu,
+  dlaždic a kliku do mapy; klikají se domečky I jména,
+- **MVP animovaného turisty**: panáček (tělo-bunda, hlava, batoh) jde po
+  skutečných OSM trasách — tlačítko „průchod po hřebenové trase"
+  (zřetězení červených úseků od nejdelšího, ~27 km) a v kartě chaty
+  „přijít po značené trase" (úsek ~6 km končící u chaty; trasa dál než
+  ~1,2 km → tlačítko poctivě řekne, že poblíž není). Kamera jede
+  v závěsu (střed + look-bod na výšce panáčka, orbit a zoom zůstávají
+  uživateli). ŽÁDNÝ routing — jen přehrání existujících tras; plánování
+  od střediska přijde s routingem (F1+).
+  Cesty se řetězí za běhu (~10 ms), protože OSM members jsou rozsekané
+  po ~2 km — první verze „nejdelší polyline" proto tiše nefungovala
+  (nejdelší member měřil 40 bodů a ležel mimo bbox; odhaleno headless
+  testem, ne okem).
+
+**Hotovo — pipeline (pády běhů #5–#9):** log od Michala nes jen „exit 1",
+ale časová analýza běhů (konzistentně ~3m45s = grid ~2 min + jeden
+Overpass timeout ~90 s; skript se mezi zeleným #4 a červeným #5 neměnil)
+ukázala na škrcení Actions IP u Overpassu. Oprava: retry 3× s rozestupy
+u všech vrstev + Elevation dávky, a **fallback na data z minulého
+úspěšného 3d-teren-data.json v repu** (stáří přizná stavOsm) — build už
+nikdy nespadne celý. **Poznatek překonán: push trigger FUNGUJE** (běhy
+#5/#6/#8 jsou „Commit pushed") — proto těch devět běhů; dřívější zápis
+„nefiruje" neplatil.
+
+**Hotovo — DATA-25 bod (a):** všech 10 vyřazených prošlo re-checkem novým
+klíčem (verdikty v `_vyrazeno.yaml`): 6 beze změny (duplicity, mimo
+pohoří), Roxana a Zvonička drží, **Tereza a Sasanka podmíněná revize**
+(Tereza: „Chata Tereza" s restaurační sekcí na nedostupném webu; Sasanka:
+provozovna „Penzion a restaurace Sasanka") → otázka pro Michala.
+
+**Krkonoše: všechna rozhodnutelná práce fronty je hotová (68 profilů).
+Zbývá jediné: seznam otázek Michalovi — jde v chatu s tímto zápisem.**
+
 ## 2026-07-27 — pokračování 13: CELÁ FRONTA DATA-27 DOJETA — čtveřice „s výhradou" (68 profilů), Mísečky drženy
 
 **Hotovo:** Fronta „s výhradou" vyřízena (64 → 68); Novomísečná +

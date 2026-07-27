@@ -52,6 +52,9 @@
   <h1>Krkonoše ve 3D — chaty průvodce</h1>
   <div class="pozn" id="pozn">Reliéf je <b>interpolace z výšek — objektů</b> v datech
   projektu — <b>není to skutečný terén</b>.</div>
+  <div class="radek"><input id="hledej" list="seznamChat" placeholder="🔍 najdi chatu a přeleť na ni…"
+    style="flex:1;border:1px solid #d8d2c4;border-radius:7px;padding:5px 9px;font:13px Inter"></div>
+  <datalist id="seznamChat"></datalist>
   <div class="radek">🕐 <input type="range" id="rngHod" min="4" max="23" step="0.25"> <span id="hod">12:00</span></div>
   <div class="radek">
     <div class="sez">
@@ -71,6 +74,10 @@
   <label><input type="checkbox" id="chkMraky" checked> stíny mraků <span style="color:#6a7186">(dekorace)</span></label>
   <label><input type="checkbox" id="chkKand"> kandidáti (šedě)</label>
   <label><input type="checkbox" id="chkPrech"> přechody chata–chata <span style="color:#6a7186">(schematické)</span></label>
+  <div class="radek" id="radekTurista" style="display:none">
+    <button id="btnTurista" style="border:1px solid #d8d2c4;background:#fff;border-radius:7px;
+      padding:4px 10px;font:600 12px Inter;cursor:pointer">🚶 průchod po hřebenové trase</button>
+  </div>
   <label>převýšení <input type="range" id="rngZ" min="1" max="3.5" step="0.1" value="2.4"> <span id="zval">2.4×</span></label>
   <div class="leg">
     <span><span class="tecka" style="background:#E0341F"></span> bouda</span>
@@ -766,6 +773,142 @@ function syncVid(){
   mrakGrp.visible=$('chkMraky').checked&&!(PANORAMA&&SEZONA==='zima');
 }
 
+// ── turista: panáček jdoucí po značené trase (Michalův nápad 27. 7.) ──
+// MVP: postavička jde po skutečné OSM polylinii (žádný routing — jen
+// přehrání existující trasy), kamera ji sleduje. Z karty chaty jde spustit
+// „příchod po trase": úsek nejbližší značené trasy končící u chaty.
+const turista=(()=>{
+  const g=new THREE.Group();
+  const telo=new THREE.Mesh(new THREE.ConeGeometry(.02,.05,7),
+    new THREE.MeshLambertMaterial({color:0xE0341F}));
+  telo.position.y=.025; telo.castShadow=true; g.add(telo);
+  const hlava=new THREE.Mesh(new THREE.SphereGeometry(.011,10,8),
+    new THREE.MeshLambertMaterial({color:0xf2c9a0}));
+  hlava.position.y=.058; hlava.castShadow=true; g.add(hlava);
+  const batoh=new THREE.Mesh(new THREE.BoxGeometry(.016,.022,.01),
+    new THREE.MeshLambertMaterial({color:0x1B6E9E}));
+  batoh.position.set(0,.032,-.016); g.add(batoh);
+  g.scale.set(1.35,1.35,1.35);
+  g.visible=false; scene.add(g); return g;
+})();
+let pochod=null; // {body:[Vector3...], delky:[...], celkem, s, cilJmeno}
+function pripravPochod(body3d,cilJmeno){
+  if(body3d.length<2)return false;
+  const delky=[0];
+  for(let i=1;i<body3d.length;i++)delky.push(delky[i-1]+body3d[i-1].distanceTo(body3d[i]));
+  pochod={body:body3d,delky,celkem:delky[delky.length-1],s:0,cilJmeno:cilJmeno||null};
+  turista.visible=true; cil=null;
+  dist=Math.min(Math.max(dist,3.2),4.2); rotX=Math.max(rotX,.56); // kamera v závěsu s kontextem terénu
+  document.getElementById('btnTurista').textContent='⏹ zastavit turistu';
+  return true;
+}
+function zastavPochod(){
+  pochod=null; turista.visible=false;
+  LOOKY=PANORAMA?2.5:1.1;
+  document.getElementById('btnTurista').textContent='🚶 průchod po hřebenové trase';
+}
+function trasaVe3d(body){
+  const out=[];
+  for(const [la,lo] of body){
+    if(la<D.bbox.latMin||la>D.bbox.latMax||lo<D.bbox.lngMin||lo>D.bbox.lngMax)continue;
+    out.push(new THREE.Vector3(sx(lo),zOf(eleNa(la,lo))+.008,-sy(la)));
+  }
+  return out;
+}
+const delka3d=b=>{let d=0;for(let i=1;i<b.length;i++)d+=b[i].distanceTo(b[i-1]);return d};
+// OSM trasy jsou rozsekané na krátké členské úseky — souvislá cesta se
+// skládá řetězením úseků TÉŽE BARVY podle shodných konců (greedy)
+function zretez(zaklad,barva,maxDelka){
+  const useky=[];
+  for(const t of D.trasy){
+    if(t.barva!==barva)continue;
+    const b=trasaVe3d(t.body);
+    if(b.length>=2)useky.push(b);
+  }
+  let cesta=zaklad;
+  const TOL=.06; let pridano=true;
+  while(pridano&&delka3d(cesta)<maxDelka){
+    pridano=false;
+    const H=cesta[cesta.length-1], Z=cesta[0];
+    for(let i=0;i<useky.length;i++){
+      const u=useky[i];
+      if(u===zaklad)continue;
+      if(u[0].distanceTo(H)<TOL){cesta=cesta.concat(u.slice(1));useky.splice(i,1);pridano=true;break}
+      if(u[u.length-1].distanceTo(H)<TOL){cesta=cesta.concat(u.slice(0,-1).reverse());useky.splice(i,1);pridano=true;break}
+      if(u[u.length-1].distanceTo(Z)<TOL){cesta=u.slice(0,-1).concat(cesta);useky.splice(i,1);pridano=true;break}
+      if(u[0].distanceTo(Z)<TOL){cesta=u.slice(1).reverse().concat(cesta);useky.splice(i,1);pridano=true;break}
+    }
+  }
+  return cesta;
+}
+function pochodHrebenovka(){
+  if(pochod){zastavPochod();return}
+  if(!D.trasy||!D.trasy.length)return;
+  // základ = nejdelší červený úsek v mapě, řetězí se do páteřní cesty
+  let zaklad=null,nejDelka=0;
+  for(const t of D.trasy){
+    if(t.barva!=='cervena')continue;
+    const b=trasaVe3d(t.body);
+    if(b.length<2)continue;
+    const d=delka3d(b);
+    if(d>nejDelka){nejDelka=d;zaklad=b;}
+  }
+  if(!zaklad)return;
+  pripravPochod(zretez(zaklad,'cervena',45),null);
+}
+function pochodKChate(g){
+  if(!D.trasy||!D.trasy.length)return false;
+  // najdi bod libovolné trasy nejblíž chatě, zřetěz cestu téže barvy
+  // a přehraj úsek ~6 km končící u chaty
+  const cx3=g.position.x, cz3=g.position.z;
+  let nej=null; // {t,d2}
+  for(const t of D.trasy){
+    for(let i=0;i<t.body.length;i++){
+      const [la,lo]=t.body[i];
+      const dx=sx(lo)-cx3, dz=-sy(la)-cz3, d2=dx*dx+dz*dz;
+      if(!nej||d2<nej.d2)nej={t,d2};
+    }
+  }
+  if(!nej||Math.sqrt(nej.d2)>1.2)return false; // trasa dál než ~1200 m — poctivě nic
+  const zaklad=trasaVe3d(nej.t.body);
+  if(zaklad.length<2)return false;
+  const cesta=zretez(zaklad,nej.t.barva,16);
+  // bod cesty nejblíž chatě + delší strana k němu
+  let idx=0,d2=Infinity;
+  for(let i=0;i<cesta.length;i++){
+    const dx=cesta[i].x-cx3, dz=cesta[i].z-cz3, dd=dx*dx+dz*dz;
+    if(dd<d2){d2=dd;idx=i;}
+  }
+  const pred=cesta.slice(0,idx+1), za=cesta.slice(idx).reverse();
+  const usek=delka3d(pred)>=delka3d(za)?pred:za;
+  if(usek.length<2)return false;
+  let zac=usek.length-1, zbyva=6;
+  while(zac>0&&zbyva>0){zbyva-=usek[zac].distanceTo(usek[zac-1]);zac--;}
+  const vysek=usek.slice(zac);
+  if(vysek.length<2||delka3d(vysek)<.3)return false;
+  return pripravPochod(vysek,g.userData.n);
+}
+const _dir=new THREE.Vector3();
+function krokTurista(dt){
+  if(!pochod)return;
+  pochod.s=Math.min(pochod.celkem,pochod.s+dt*.55); // ~0,55 km/s mapového času
+  const {body,delky}=pochod;
+  let i=1; while(i<delky.length&&delky[i]<pochod.s)i++;
+  if(i>=body.length){ // došel
+    if(pochod.cilJmeno)setTimeout(()=>{if(!pochod)return;zastavPochod();},1200);
+    else zastavPochod();
+    return;
+  }
+  const u=(pochod.s-delky[i-1])/Math.max(1e-6,delky[i]-delky[i-1]);
+  const p=body[i-1].clone().lerp(body[i],u);
+  turista.position.copy(p);
+  _dir.copy(body[i]).sub(body[i-1]);
+  if(_dir.lengthSq()>1e-9)turista.rotation.y=Math.atan2(_dir.x,_dir.z);
+  // kamera v závěsu (posouvá jen střed — orbit i zoom zůstávají uživateli);
+  // look-bod jde s výškou turisty, jinak by záběr utíkal do nebe
+  cx=p.x; cz=p.z; LOOKY=p.y+.18; poziceKam();
+}
+
 // ── prostředí: slunce, obloha, noc ──
 function osvetli(){
   const h=HODINA;
@@ -872,9 +1015,8 @@ function dejTip(e){
     ren.domElement.style.cursor='pointer';
   } else {tip.style.display='none'; ren.domElement.style.cursor='grab';}
 }
-ren.domElement.addEventListener('click',e=>{
-  const g=pinHit(e);
-  if(!g){karta.style.display='none';return}
+function ukazChatu(g){
+  zastavPochod();
   const ch=g.userData;
   flyTo(g.position.x,g.position.z);
   karta.style.display='block';
@@ -882,7 +1024,19 @@ ren.domElement.addEventListener('click',e=>{
     +(ch.ele?'<div class="radka">výška: <b>'+ch.ele+' m</b></div>':'<div class="radka">výška: v datech zatím není</div>')
     +'<div class="radka">typ: '+(ch.typ||'—')+'</div>'
     +'<div class="radka">stav: '+(ch.stav||'—')+'</div>'
-    +'<div class="radka">'+(ch.pub?'✅ publikovaný profil':'🕓 kandidát (zatím mimo web)')+'</div>';
+    +'<div class="radka">'+(ch.pub?'✅ publikovaný profil':'🕓 kandidát (zatím mimo web)')+'</div>'
+    +((D.trasy&&D.trasy.length)?'<div class="radka" style="margin-top:6px"><button id="btnPrijit" '
+      +'style="border:1px solid #d8d2c4;background:#fff;border-radius:7px;padding:4px 10px;'
+      +'font:600 12px Inter;cursor:pointer">🚶 přijít po značené trase</button></div>':'');
+  const b=document.getElementById('btnPrijit');
+  if(b)b.onclick=()=>{
+    if(!pochodKChate(g)){b.textContent='značená trasa poblíž není';b.disabled=true;}
+  };
+}
+ren.domElement.addEventListener('click',e=>{
+  const g=pinHit(e);
+  if(!g){karta.style.display='none';return}
+  ukazChatu(g);
 });
 
 // ── UI ──
@@ -925,14 +1079,29 @@ if(D.lesy&&D.lesy.length)$('lblLes').style.display='flex';
 if(D.sjezdovky&&D.sjezdovky.length)$('lblSjez').style.display='flex';
 if((D.lesy&&D.lesy.length)||(D.sjezdovky&&D.sjezdovky.length))
   document.getElementById('pataZdroj').textContent+=' Lesy a sjezdovky: OpenStreetMap (zjednodušená stylizace ploch — smrčky nejsou jednotlivé stromy, paseky se nekreslí).';
+if(D.trasy&&D.trasy.length){$('radekTurista').style.display='flex';$('btnTurista').onclick=pochodHrebenovka;}
+{ // našeptávač: čtvrtý způsob, jak najít chatu (vedle seznamu, dlaždic a kliku)
+  const dl=$('seznamChat');
+  for(const g of piny)if(g.userData.pub){
+    const o=document.createElement('option'); o.value=g.userData.n; dl.appendChild(o);
+  }
+  $('hledej').addEventListener('change',e=>{
+    const hled=e.target.value.trim().toLowerCase();
+    const g=piny.find(p=>p.userData.pub&&p.userData.n.toLowerCase()===hled)
+      ||piny.find(p=>p.userData.pub&&p.userData.n.toLowerCase().includes(hled));
+    if(g){ukazChatu(g); e.target.blur();}
+  });
+}
 syncVid(); osvetli();
+// panoramatická (malovaná) mapa je od 27. 7. VÝCHOZÍ režim (Michal)
+$('chkPan').checked=true; zapniPanorama(true);
 
 addEventListener('resize',()=>{cam.aspect=W()/H();cam.updateProjectionMatrix();ren.setSize(W(),H())});
 let cas=performance.now();
 (function smycka(){
   requestAnimationFrame(smycka);
   const t=performance.now(); const dt=Math.min(.1,(t-cas)/1000); cas=t;
-  krokKamera(dt); krokKabinky(dt);
+  krokKamera(dt); krokKabinky(dt); krokTurista(dt);
   for(const m of mrakGrp.children){m.position.x+=m.userData.v*dt; if(m.position.x>SIRKA/2+8)m.position.x=-SIRKA/2-8;}
   if(rekyMat)rekyMat.dashOffset=(rekyMat.dashOffset||0)-dt*.35;
   declT+=dt;

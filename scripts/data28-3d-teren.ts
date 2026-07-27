@@ -97,11 +97,17 @@ const stahniGridMapy = async (klic: string): Promise<number[][]> => {
   for (let i = 0; i < pozice.length; i += MAX_POZIC_NA_DOTAZ) {
     const davka = pozice.slice(i, i + MAX_POZIC_NA_DOTAZ)
     const url = `${ELEVATION_URL}?positions=${davka.map(([lo, la]) => `${lo.toFixed(5)},${la.toFixed(5)}`).join(';')}`
-    const res = await fetch(url, { headers: { 'X-Mapy-Api-Key': klic } })
-    if (!res.ok) throw new Error(`Elevation API HTTP ${res.status} (dávka ${i / MAX_POZIC_NA_DOTAZ + 1})`)
-    const j = (await res.json()) as { items?: { elevation: number }[] }
-    if (!j.items || j.items.length !== davka.length)
-      throw new Error(`Elevation API: čekáno ${davka.length} bodů, přišlo ${j.items?.length ?? 0}`)
+    // dávka se zkouší 3× (429/5xx s rozestupem) — jinak by jediný škyt
+    // serveru shodil celý grid
+    let j: { items?: { elevation: number }[] } | null = null
+    for (let pokus = 1; pokus <= 3; pokus++) {
+      const res = await fetch(url, { headers: { 'X-Mapy-Api-Key': klic } })
+      if (res.ok) { j = (await res.json()) as { items?: { elevation: number }[] }; break }
+      if (pokus === 3) throw new Error(`Elevation API HTTP ${res.status} (dávka ${i / MAX_POZIC_NA_DOTAZ + 1})`)
+      await new Promise((r) => setTimeout(r, res.status === 429 ? 30_000 : 3_000))
+    }
+    if (!j?.items || j.items.length !== davka.length)
+      throw new Error(`Elevation API: čekáno ${davka.length} bodů, přišlo ${j?.items?.length ?? 0}`)
     for (const it of j.items) vysky.push(Math.round(it.elevation))
     if (i % (MAX_POZIC_NA_DOTAZ * 25) === 0) console.log(`  výškopis: ${Math.min(i + MAX_POZIC_NA_DOTAZ, pozice.length)}/${pozice.length} bodů`)
     await new Promise((r) => setTimeout(r, 40)) // limit 30 dotazů/s s rezervou
@@ -392,12 +398,33 @@ const slozHtml = (dataJson: string, kotvyPocet: number): void => {
   writeFileSync(join(ADR, '3d-teren-krkonose.html'), html)
 }
 
+// ── odolnost: opakování s čekáním + převzetí vrstvy z minulého běhu ────────
+// Actions IP bývá u Overpassu škrcená (série běhů #5–#9 padala konzistentně
+// po ~3m45s = grid OK + jeden Overpass timeout). Každá OSM vrstva se proto
+// zkouší 3× s rozestupem, a když nedá, převezme se z posledního úspěšného
+// 3d-teren-data.json v repu (stáří dat pak přiznává stavOsm).
+const nactiPredchoziData = (): Record<string, unknown> | null => {
+  try { return JSON.parse(readFileSync(join(ADR, '3d-teren-data.json'), 'utf8')) as Record<string, unknown> }
+  catch { return null }
+}
+const sOpakovanim = async <T>(nazev: string, fn: () => Promise<T>): Promise<T | null> => {
+  for (let pokus = 1; pokus <= 3; pokus++) {
+    try { return await fn() }
+    catch (chyba) {
+      console.log(`  ${nazev}: pokus ${pokus}/3 selhal — ${chyba instanceof Error ? chyba.message : chyba}`)
+      if (pokus < 3) await new Promise((r) => setTimeout(r, pokus * 30_000))
+    }
+  }
+  return null
+}
+
 // ── běh ─────────────────────────────────────────────────────────────────────
 const main = async () => {
   const bezSite = process.argv.includes('--bez-site')
   const klic = process.env.MAPY_API_KEY
   const { chaty, kotvy } = nactiChaty()
   const prechody = nactiPrechody(chaty)
+  const pred = nactiPredchoziData()
 
   let grid: number[][]
   let trasy: Trasa[] = []
@@ -411,40 +438,43 @@ const main = async () => {
 
   if (!bezSite && klic) {
     console.log(`Výškopis: Mapy.com Elevation API, mřížka ${NX}×${NY}…`)
-    grid = await stahniGridMapy(klic)
-    realDem = true
+    const g = await sOpakovanim('výškopis', () => stahniGridMapy(klic))
+    if (g) { grid = g; realDem = true }
+    else if (pred && pred.realDem && Array.isArray(pred.grid)) {
+      grid = pred.grid as number[][]; realDem = true
+      console.log('  výškopis: PŘEVZAT z minulého úspěšného běhu (Elevation nedal)')
+    } else { grid = spocitejGridIdw(kotvy) }
     console.log('Trasy: Overpass out geom…')
-    const t = await stahniTrasy()
-    trasy = t.trasy
-    stavOsm = t.stavOsm
+    const t = await sOpakovanim('trasy', stahniTrasy)
+    if (t) { trasy = t.trasy; stavOsm = t.stavOsm }
+    else if (pred && Array.isArray(pred.trasy)) {
+      trasy = pred.trasy as Trasa[]
+      stavOsm = typeof pred.stavOsm === 'string' ? pred.stavOsm : null
+      console.log('  trasy: PŘEVZATY z minulého úspěšného běhu (Overpass nedal)')
+    }
     console.log(`  tras (barevných úseků): ${trasy.length}, stav OSM ${stavOsm}`)
     console.log('Lanovky: Overpass aerialway…')
-    lanovky = await stahniLanovky()
+    lanovky = (await sOpakovanim('lanovky', stahniLanovky))
+      ?? ((pred && Array.isArray(pred.lanovky)) ? (console.log('  lanovky: PŘEVZATY z minulého běhu'), pred.lanovky as Lanovka[]) : [])
     console.log(`  lanovek a vleků: ${lanovky.length}`)
     console.log('Řeky: Overpass waterway…')
-    reky = await stahniReky()
+    reky = (await sOpakovanim('řeky', stahniReky))
+      ?? ((pred && Array.isArray(pred.reky)) ? (console.log('  řeky: PŘEVZATY z minulého běhu'), pred.reky as Reka[]) : [])
     console.log(`  řek a pojmenovaných potoků: ${reky.length}`)
     console.log('Vrcholy: Overpass natural=peak…')
-    vrcholy = await stahniVrcholy()
+    vrcholy = (await sOpakovanim('vrcholy', stahniVrcholy))
+      ?? ((pred && Array.isArray(pred.vrcholy)) ? (console.log('  vrcholy: PŘEVZATY z minulého běhu'), pred.vrcholy as Vrchol[]) : [])
     console.log(`  vrcholů ≥1100 m se jménem: ${vrcholy.length}`)
     // Lesy a sjezdovky jsou BEST-EFFORT vrstvy malovaného režimu — jejich
     // selhání nesmí shodit celý build (poučení z běhu #5, exit 1).
     console.log('Lesy: Overpass landuse=forest/natural=wood (4 dlaždice)…')
-    try {
-      lesy = await stahniLesy()
-      console.log(`  lesních obrysů: ${lesy.length} (${lesy.reduce((s, r) => s + r.length, 0)} bodů)`)
-    } catch (chyba) {
-      lesy = []
-      console.log(`  lesy PŘESKOČENY (best-effort): ${chyba instanceof Error ? chyba.message : chyba}`)
-    }
+    lesy = (await sOpakovanim('lesy', stahniLesy))
+      ?? ((pred && Array.isArray(pred.lesy)) ? (console.log('  lesy: PŘEVZATY z minulého běhu'), pred.lesy as [number, number][][]) : [])
+    console.log(`  lesních obrysů: ${lesy.length} (${lesy.reduce((s, r) => s + r.length, 0)} bodů)`)
     console.log('Sjezdovky: Overpass piste:type=downhill…')
-    try {
-      sjezdovky = await stahniSjezdovky()
-      console.log(`  sjezdovek (osové linie): ${sjezdovky.length}`)
-    } catch (chyba) {
-      sjezdovky = []
-      console.log(`  sjezdovky PŘESKOČENY (best-effort): ${chyba instanceof Error ? chyba.message : chyba}`)
-    }
+    sjezdovky = (await sOpakovanim('sjezdovky', stahniSjezdovky))
+      ?? ((pred && Array.isArray(pred.sjezdovky)) ? (console.log('  sjezdovky: PŘEVZATY z minulého běhu'), pred.sjezdovky as Sjezdovka[]) : [])
+    console.log(`  sjezdovek (osové linie): ${sjezdovky.length}`)
   } else {
     console.log(bezSite ? 'Vynucen běh bez sítě' : 'MAPY_API_KEY není v env', '→ ILUSTRAČNÍ reliéf (IDW z korpusu).')
     grid = spocitejGridIdw(kotvy)
