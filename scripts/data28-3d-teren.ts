@@ -288,13 +288,30 @@ const decimujRing = (ring: Bod[], krokM: number): [number, number][] => {
   return body
 }
 const stahniLesy = async (): Promise<[number, number][][]> => {
-  const dotaz = `[out:json][timeout:180];(way["landuse"="forest"](${BBOX_STR});way["natural"="wood"](${BBOX_STR});relation["landuse"="forest"](${BBOX_STR});relation["natural"="wood"](${BBOX_STR}););out geom;`
-  const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
-  const telo = JSON.parse(raw) as { elements?: { type: string; geometry?: Bod[]; members?: { role?: string; geometry?: Bod[] }[] }[] }
+  // Lesů je v Krkonoších tolik, že jeden dotaz přes celý bbox Overpass
+  // shazuje (timeout/paměť — přesně tak spadl běh #5). Stahujeme proto po
+  // dlaždicích 2×2; way přes hranici přijde dvakrát, což rastrové masce
+  // v šabloně nevadí (fill je idempotentní).
   const ringy: Bod[][] = []
-  for (const e of telo.elements ?? []) {
-    if (e.type === 'way' && e.geometry && e.geometry.length >= 4) ringy.push(e.geometry)
-    else if (e.type === 'relation' && e.members) ringy.push(...spojRingy(e.members))
+  const pulLat = (BBOX.latMin + BBOX.latMax) / 2
+  const pulLng = (BBOX.lngMin + BBOX.lngMax) / 2
+  const dlazdice = [
+    [BBOX.latMin, BBOX.lngMin, pulLat, pulLng],
+    [BBOX.latMin, pulLng, pulLat, BBOX.lngMax],
+    [pulLat, BBOX.lngMin, BBOX.latMax, pulLng],
+    [pulLat, pulLng, BBOX.latMax, BBOX.lngMax],
+  ]
+  for (let i = 0; i < dlazdice.length; i++) {
+    const b = dlazdice[i].join(',')
+    const dotaz = `[out:json][timeout:120];(way["landuse"="forest"](${b});way["natural"="wood"](${b});relation["landuse"="forest"](${b});relation["natural"="wood"](${b}););out geom;`
+    const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
+    const telo = JSON.parse(raw) as { elements?: { type: string; geometry?: Bod[]; members?: { role?: string; geometry?: Bod[] }[] }[] }
+    for (const e of telo.elements ?? []) {
+      if (e.type === 'way' && e.geometry && e.geometry.length >= 4) ringy.push(e.geometry)
+      else if (e.type === 'relation' && e.members) ringy.push(...spojRingy(e.members))
+    }
+    console.log(`  lesy: dlaždice ${i + 1}/4 → zatím ${ringy.length} obrysů`)
+    await new Promise((r) => setTimeout(r, 1500)) // slot pauza mezi dotazy
   }
   let krok = 80
   let out = ringy.filter((r) => plochaKm2(r) >= 0.02).map((r) => decimujRing(r, krok)).filter((r) => r.length >= 4)
@@ -410,12 +427,24 @@ const main = async () => {
     console.log('Vrcholy: Overpass natural=peak…')
     vrcholy = await stahniVrcholy()
     console.log(`  vrcholů ≥1100 m se jménem: ${vrcholy.length}`)
-    console.log('Lesy: Overpass landuse=forest/natural=wood…')
-    lesy = await stahniLesy()
-    console.log(`  lesních obrysů: ${lesy.length} (${lesy.reduce((s, r) => s + r.length, 0)} bodů)`)
+    // Lesy a sjezdovky jsou BEST-EFFORT vrstvy malovaného režimu — jejich
+    // selhání nesmí shodit celý build (poučení z běhu #5, exit 1).
+    console.log('Lesy: Overpass landuse=forest/natural=wood (4 dlaždice)…')
+    try {
+      lesy = await stahniLesy()
+      console.log(`  lesních obrysů: ${lesy.length} (${lesy.reduce((s, r) => s + r.length, 0)} bodů)`)
+    } catch (chyba) {
+      lesy = []
+      console.log(`  lesy PŘESKOČENY (best-effort): ${chyba instanceof Error ? chyba.message : chyba}`)
+    }
     console.log('Sjezdovky: Overpass piste:type=downhill…')
-    sjezdovky = await stahniSjezdovky()
-    console.log(`  sjezdovek (osové linie): ${sjezdovky.length}`)
+    try {
+      sjezdovky = await stahniSjezdovky()
+      console.log(`  sjezdovek (osové linie): ${sjezdovky.length}`)
+    } catch (chyba) {
+      sjezdovky = []
+      console.log(`  sjezdovky PŘESKOČENY (best-effort): ${chyba instanceof Error ? chyba.message : chyba}`)
+    }
   } else {
     console.log(bezSite ? 'Vynucen běh bez sítě' : 'MAPY_API_KEY není v env', '→ ILUSTRAČNÍ reliéf (IDW z korpusu).')
     grid = spocitejGridIdw(kotvy)
