@@ -299,25 +299,29 @@ const stahniLesy = async (): Promise<[number, number][][]> => {
   // dlaždicích 2×2; way přes hranici přijde dvakrát, což rastrové masce
   // v šabloně nevadí (fill je idempotentní).
   const ringy: Bod[][] = []
-  const pulLat = (BBOX.latMin + BBOX.latMax) / 2
-  const pulLng = (BBOX.lngMin + BBOX.lngMax) / 2
-  const dlazdice = [
-    [BBOX.latMin, BBOX.lngMin, pulLat, pulLng],
-    [BBOX.latMin, pulLng, pulLat, BBOX.lngMax],
-    [pulLat, BBOX.lngMin, BBOX.latMax, pulLng],
-    [pulLat, pulLng, BBOX.latMax, BBOX.lngMax],
-  ]
+  // 3×3 dlaždice (běh #10: i 2×2 čtvrtiny Overpass odmítal — lesů je tu
+  // opravdu hodně); mezi dotazy delší pauza, ať se slot stihne uvolnit
+  const DL = 3
+  const dlazdice: number[][] = []
+  for (let iy = 0; iy < DL; iy++) for (let ix = 0; ix < DL; ix++) {
+    dlazdice.push([
+      BBOX.latMin + ((BBOX.latMax - BBOX.latMin) * iy) / DL,
+      BBOX.lngMin + ((BBOX.lngMax - BBOX.lngMin) * ix) / DL,
+      BBOX.latMin + ((BBOX.latMax - BBOX.latMin) * (iy + 1)) / DL,
+      BBOX.lngMin + ((BBOX.lngMax - BBOX.lngMin) * (ix + 1)) / DL,
+    ])
+  }
   for (let i = 0; i < dlazdice.length; i++) {
-    const b = dlazdice[i].join(',')
-    const dotaz = `[out:json][timeout:120];(way["landuse"="forest"](${b});way["natural"="wood"](${b});relation["landuse"="forest"](${b});relation["natural"="wood"](${b}););out geom;`
+    const b = dlazdice[i].map((v) => v.toFixed(4)).join(',')
+    const dotaz = `[out:json][timeout:90];(way["landuse"="forest"](${b});way["natural"="wood"](${b});relation["landuse"="forest"](${b});relation["natural"="wood"](${b}););out geom;`
     const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
     const telo = JSON.parse(raw) as { elements?: { type: string; geometry?: Bod[]; members?: { role?: string; geometry?: Bod[] }[] }[] }
     for (const e of telo.elements ?? []) {
       if (e.type === 'way' && e.geometry && e.geometry.length >= 4) ringy.push(e.geometry)
       else if (e.type === 'relation' && e.members) ringy.push(...spojRingy(e.members))
     }
-    console.log(`  lesy: dlaždice ${i + 1}/4 → zatím ${ringy.length} obrysů`)
-    await new Promise((r) => setTimeout(r, 1500)) // slot pauza mezi dotazy
+    console.log(`  lesy: dlaždice ${i + 1}/${dlazdice.length} → zatím ${ringy.length} obrysů`)
+    await new Promise((r) => setTimeout(r, 4000)) // slot pauza mezi dotazy
   }
   let krok = 80
   let out = ringy.filter((r) => plochaKm2(r) >= 0.02).map((r) => decimujRing(r, krok)).filter((r) => r.length >= 4)
