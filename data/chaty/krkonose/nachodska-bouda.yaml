@@ -1,0 +1,132 @@
+# Náchodská bouda — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# První samostatně vedená bouda z osady Hrnčířské boudy (osadní otázka pro
+# Michala trvá — viz interní poznámky). Pod DATA-25/klíč občerstvení: penzion
+# s restaurací a barem v historické luční enklávě. Vše verified: false.
+
+nazev: Náchodská bouda
+slug: nachodska-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ZÁMĚRNĚ NEVYPLNĚNA: katalogy
+# si protiřečí (1100 m Kudy z nudy × 575 m atic.cz — zjevně vadný záznam);
+# místopisných 1059 m platí pro osadu, ne pro objekt. Nerozhodujeme.
+lat: 50.6684014
+lng: 15.7193959
+obec: Černý Důl # adresa „Černý Důl 206" dle katalogů — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    katalog Kudy z nudy (kudyznudy.cz, otevřeno 27. 7. 2026): „v nadmořské
+    výšce 1.100 m.n.m.", adresa „Černý Důl 206". Celostátní přehled
+    atic.cz vede u téhož objektu 575 m — ZJEVNĚ VADNÝ ZÁZNAM (odpovídá
+    spíš údolní obci); rozpor se nerozhoduje, výška se nezapisuje.
+    Místopis serveru jablonec-krkonose.cz (triáž 26. 7. 2026) k OSADĚ:
+    „Skupina bud (1059 m.n.m.) jižně od Pece pod Sněžkou" — údaj o osadě
+    Hrnčířské boudy, ne o objektu. GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/108105810 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 56
+pokoje: 20
+overeniNocleh:
+  source: >-
+    katalog Kudy z nudy (kudyznudy.cz, otevřeno 27. 7. 2026), doslova:
+    „20 pokojů a 56 lůžek". Jediný pramen, provozovatelem nepotvrzeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# „bar" není hodnota číselníku — nese ho próza; komu přesně restaurace
+# slouží, pramen neříká (poznámka dle DATA-25 v próze).
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    katalog Kudy z nudy (kudyznudy.cz, otevřeno 27. 7. 2026), doslova:
+    „restaurace s barem, společenská místnost, lyžárna". Zda restaurace
+    slouží i neubytovaným, katalog neuvádí.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: rok 1854 patří OSADĚ Hrnčířské
+# boudy (místopis), o samotném objektu prameny mlčí.
+overeniHistorie:
+  source: >-
+    místopis serveru jablonec-krkonose.cz (triáž 26. 7. 2026), doslova:
+    „Skupina bud (1059 m.n.m.) jižně od Pece pod Sněžkou, založena roku
+    1854." — údaj O OSADĚ Hrnčířské boudy, ne o tomto domě. K historii
+    samotné Náchodské boudy jsme v otevřených pramenech nenašli jediný
+    doložený údaj — zapsáno jako „hledali jsme a nenašli".
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# kontakty.web NEVYPLNĚN: vlastní web se v pramenech neobjevil (jen
+# katalogy a facebookový účet) — viz interní poznámky.
+overeniProvoz:
+  source: >-
+    aktivní záznamy v katalozích (Kudy z nudy, penziony.cz, dopenzionu.cz;
+    hledáno a otevřeno 27. 7. 2026) vedou objekt jako horský penzion
+    v provozu. Provozovatel a vlastní web nedoloženy — vlastním dotazem
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský penzion v osadě Hrnčířské boudy, která leží na hřebeni jižně od
+  Pece pod Sněžkou a adresou patří k Černému Dolu. Katalog u ní popisuje
+  restauraci s barem a padesát šest lůžek; osada sama je podle místopisu
+  luční enkláva založená roku 1854.
+text:
+  - >-
+    Náchodská bouda stojí v osadě Hrnčířské boudy — skupině bud na
+    hřebeni jižně od Pece pod Sněžkou, která poštovní adresou spadá pod
+    Černý Důl. Nadmořskou výšku neuvádíme schválně: jeden katalog píše
+    u boudy 1100 metrů, jiný celostátní přehled 575 — druhé číslo je
+    zjevný omyl, a než mezi prameny rozhodovat, necháváme pole prázdné.
+    Místopis mluví o 1059 metrech, to ale platí pro osadu jako celek.
+  - >-
+    Osadu Hrnčířských bud klade místopis do roku 1854. Ten letopočet je
+    ovšem příběhem celé skupiny bud, ne tohoto domu — o tom, kdy a jak
+    vznikla samotná Náchodská bouda, jsme zatím nenašli jediný doložený
+    údaj. Jakmile se pramen objeví, historie sem přibude.
+  - >-
+    Dnes je Náchodská bouda horský penzion: katalog u ní vyjmenovává
+    restauraci s barem, společenskou místnost a lyžárnu, k tomu dvacet
+    pokojů s padesáti šesti lůžky. Jestli restaurace obslouží i turistu,
+    který jen prochází osadou, pramen neříká — a my to bez dokladu
+    netvrdíme.
+  - >-
+    Všechno výše pochází z katalogů, hlavně z Kudy z nudy, a z místopisu
+    osady; vlastním dotazem u provozovatele jsme zatím neověřili nic.
+    Souřadnice jsou z mapových dat OpenStreetMap (© přispěvatelé
+    OpenStreetMap, ODbL) a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Kudy z nudy — horský penzion Náchodská bouda: restaurace s barem,
+      20 pokojů a 56 lůžek, výška 1100 m (otevřeno 27. 7. 2026)
+    url: https://www.kudyznudy.cz/aktivity/horsky-penzion-nachodska-bouda-v-krkonosich
+  - popis: >-
+      Místopis serveru jablonec-krkonose.cz — osada Hrnčířské boudy:
+      skupina bud jižně od Pece pod Sněžkou, založena 1854 (triáž DATA-27,
+      26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/nachodska-bouda.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 + spot-fetch Kudy z nudy (přinesl nové údaje: 20 pokojů / 56 lůžek, výška 1100 m, adresa).
+  OSADNÍ OTÁZKA (pro Michala, seznam otázek): Hrnčířské boudy rozpustit na členské boudy? Náchodská je první členská bouda osady vedená samostatně — kandidát hrncirske-boudy.yaml (osadní) čeká na rozhodnutí.
+  ROZPOR VÝŠKY: 1100 m (Kudy z nudy) × 575 m (atic.cz — zjevně vadný záznam, patrně výška údolní obce) × 1059 m (místopis — o osadě). Pole prázdné, próza přiznává.
+  Vlastní web nedoložen (jen Facebook „Horský Penzion Náchodská Bouda" a katalogy penziony.cz, dopenzionu.cz, zlatestranky.cz — hledáno 27. 7. 2026). Adresa „Černý Důl 206" jen interně/v source (ban č. p. v próze).
+  K dotažení: historie objektu (odkud jméno Náchodská? — nedomýšlíme), provozovatel + kontakt (DATA-04 telefonát), výška od provozovatele, hero fotka.

@@ -11,6 +11,54 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 9: třetí trojice od konce fronty — Náchodská, Na Lučinách, Betyna (58 profilů)
+
+**Zadání Michala:** „pokracuj" (samostatný režim trvá; otázky až po uzavření Krkonoš).
+
+**Hotovo:**
+
+**Z fronty DATA-27 povýšena třetí trojice od konce — Náchodská bouda,
+Bouda Na Lučinách a Chata Betyna (55 → 58 publikovaných profilů).**
+Stavěno z citací triáže + tři cílené spot-fetche tam, kde triáž přiznávala
+mezery (obec, atribuce lůžek):
+
+- **Náchodská bouda** — první samostatně vedená bouda osady Hrnčířské
+  boudy (osadní otázka pro Michala trvá). Spot-fetch Kudy z nudy přinesl
+  i nové údaje: „20 pokojů a 56 lůžek", výška „1.100 m.n.m.", adresa
+  Černý Důl. Výška se přesto NEZAPSALA: celostátní přehled atic vede 575 m
+  (zjevně vadný záznam — nerozhodujeme, přiznáváme v próze) a místopisných
+  1059 m platí pro osadu (1854 — letopočet osady, ne domu; próza to říká).
+- **Bouda Na Lučinách** — enkláva Lučiny (Bodenwiesenbauden, dřevaři
+  z Alp — katalog i blog shodně, o osadě). 42 lůžek, snídaně bufetem
+  a večeře z menu (České hory doslova); „nejvýše položená pizzerie
+  v Čechách" jen s výslovným připsáním blogu Krkonošské boudy, číselník
+  občerstvení nevyplněn. Vlastní web z OSM padá na timeout 20. 7. i 27. 7.
+  → kontakty NEZAPSÁNY, dokud se nepotvrdí, že web žije.
+- **Chata Betyna** — web betyna.cz se tentokrát načetl (20. 7. padal):
+  „celoroční ubytování o kapacitě 47 lůžek", „restaurace s dětským
+  koutkem a dětskými židličkami", „barová místnost", „500 m od spodní
+  lanovky na Sněžku"; Treking: „asi půl kilometru od okraje Pece" —
+  souhlasné údaje, próza nese obojí. Výška bez pramene → nezapsána.
+  Jediná časová stopa je rejstříkový zápis provozovatele 2016 — o firmě,
+  ne o domě; próza to přiznává.
+
+U všech tří: komu slouží restaurace/kuchyně, prameny neříkají — profily
+to po zkušenosti DATA-25 říkají nahlas. POVÝŠENO hlavičky kandidátům,
+master fronta přepsána (zbývá 6 silných: U Kotle, Amor, Husova, Smetánka,
+Jindřichův dům, Sedmidolí — + 6 s výhradou). Paralelní session mezitím
+povýšila Jelení Louky, Na Pláni a Helenu a sklízí hero fotky (DATA-02) —
+kolize žádná (my od konce, ona odjinud).
+
+Kontrola: validator 0 chyb (58 souborů), ban-scan na nových třech 9 zásahů
+= jen dokumentované FP třídy (slovo „Souřadnice" + ODbL atribuce
+OpenStreetMap v provenance odstavci, 3 na soubor).
+
+**Příště:** zbylých 6 silných (od konce: Sedmidolí, Jindřichův dům,
+Smetánka…), pak 6 s výhradou, pak DATA-25 bod (a) — 10 vyřazených novým
+klíčem — a uzavření Krkonoš s kompletním seznamem otázek. Nově od Michala:
+přiblížit 3D mapu panoramatickým mapám (poslal 7 předloh — zimní
+panoramata stylu ručně malovaných piste map) — řeším hned po tomhle commitu.
+
 ## 2026-07-27 — pokračování 2: fronta DATA-27 otevřena — Jelení Louky, Na Pláni a Helena povýšeny (52 profilů)
 
 **Zadání Michala:** „muzes pokracovat ted.“

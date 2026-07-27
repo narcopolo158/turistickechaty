@@ -11,7 +11,7 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 
 ## Souhrn
 
-- **Publikováno:** 55 *(aktualizováno 27. 7. 2026 podruhé — z fronty DATA-27 povýšena i druhá trojice, tentokrát od konce fronty: Srebrny Potok, Patejdlova bouda a Barborka — první profil korpusu se stavem mimo-provoz)*
+- **Publikováno:** 58 *(aktualizováno 27. 7. 2026 potřetí — z fronty DATA-27 povýšena třetí trojice od konce: Náchodská bouda, Bouda Na Lučinách a Chata Betyna)*
 - **Kandidáti k doplnění:** 33 — z toho Tier 1 (známka + katalog) 0, Tier 2 (jen známka) 0, Tier 3 (jen katalog) 2 (**oba blokované otázkou na Michala:** Hrnčířské boudy = enkláva, ne objekt — rozpustit?; Raisova chata na Zvičině = Podkrkonoší — založit oblast?), Tier 4 (jen OSM) 31. *Křížová kontrola 27. 7. 2026: kandidátských souborů bez hlavičky POVÝŠENO je v `data/kandidati/krkonose/` **35** — rozdíl proti 33 jsou přesně dva ruční kandidáti založení 26. 7. (Poštovna na Sněžce, Modrokamenná bouda), kteří do tierové struktury zatím nejsou zařazení (Modrokamenná nese známkový spor 2640×2540, Poštovna známku č. 20 — oba by patřili nejspíš do Tier 2; zařadit při příští revizi tabulek).*
 - **Vyřazeno** (nezakládat): 10
 - Objektů se známkou: 35 · v ChatGPT katalogu: 42 · katalogových Krkonoš celkem: 42
@@ -110,6 +110,16 @@ profil se stavem `mimo-provoz` („Z důvodu havarijního stavu objektu dočasn�
 uzavřeno" dle vlastního webu). Ve frontě zbývá 9 silných: U Kotle, Amor,
 Husova bouda, Smetánka, Jindřichův dům, Sedmidolí, Betyna, Na Lučinách,
 Náchodská — + 6 s výhradou.**
+
+**Postup fronty 27. 7. 2026 potřetí (dál od konce): povýšeny Náchodská
+bouda (první samostatná bouda osady Hrnčířských bud; spot-fetch Kudy
+z nudy doplnil 20 pokojů / 56 lůžek; výška nezapsána — rozpor 1100 ×
+575 m, druhé zjevně vadný záznam atic), Bouda Na Lučinách (enkláva
+Bodenwiesenbauden; pizzerie jen s připsáním blogu; vlastní web
+opakovaně nedostupný — kontakty nezapsány) a Chata Betyna (web se
+tentokrát načetl: 47 lůžek celoročně, restaurace s dětským koutkem;
+výška bez pramene nezapsána). Ve frontě zbývá 6 silných: U Kotle, Amor,
+Husova bouda, Smetánka, Jindřichův dům, Sedmidolí — + 6 s výhradou.**
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |
 |---|---|---|---|---|

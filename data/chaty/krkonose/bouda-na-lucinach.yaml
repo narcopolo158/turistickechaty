@@ -1,0 +1,136 @@
+# Bouda Na Lučinách — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Bouda v luční enklávě Lučiny nad Pecí pod Sněžkou; katalog dokládá nocleh
+# se stravou, blog Krkonošské boudy pizzerii (superlativ jen s připsáním).
+# Vlastní web se opakovaně nepodařilo otevřít. Vše verified: false.
+
+nazev: Bouda Na Lučinách
+slug: bouda-na-lucinach
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška 1100: shoda OSM tagu
+# a katalogu („kolem 1100 metrů") — přibližný údaj.
+lat: 50.6713929
+lng: 15.7284239
+vyska: 1100
+obec: Pec pod Sněžkou # zařazení katalogu České hory (rubrika Lučiny, Pec pod Sněžkou) — DATA-20
+overeniLokace:
+  source: >-
+    katalog České hory (ceskehory.cz, popis objektu, otevřeno 27. 7. 2026),
+    doslova: „Bouda na Lučinách se nachází v nadmořské výšce kolem 1100
+    metrů nad mořem"; poloha „50m od lyžařského vleku spojující sjezdovky
+    v Peci pod Sněžkou", „hned vedle chaty Krkonošská magistrála";
+    rubrika katalogu řadí boudu pod Lučiny, Pec pod Sněžkou. GPS a výška
+    1100: OpenStreetMap https://www.openstreetmap.org/way/203630744 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); v terénu neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# pokoje (počet) NEVYPLNĚNY: katalog uvádí jen velikosti pokojů, ne počet.
+nocleh: ano
+kapacita: 42
+overeniNocleh:
+  source: >-
+    katalog České hory (ceskehory.cz, otevřeno 27. 7. 2026), doslova:
+    „Bouda na Lučinách nabízí 42 lůžek ve 2, 3 a 4 lůžkových pokojích".
+    Jediný pramen, provozovatelem nepotvrzeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni NEVYPLNĚNO: snídaně/večeře jsou penzionová strava; veřejnou
+# pizzerii nese jen blog bez data a bez údaje, komu slouží — próza připisuje.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    katalog České hory (ceskehory.cz, otevřeno 27. 7. 2026), doslova:
+    „Snídaně jsou podávány bufetovým způsobem, večeře formou výběru
+    z menu". Blog Krkonošské boudy (krkonosskeboudy.cz, triáž 26. 7.
+    2026): „na boudě provozují nejvýše položenou pizzerii v Čechách" —
+    superlativ blogu, nedatováno, komu slouží, neuvedeno. Číselník se
+    nevyplňuje, próza připisuje.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: jméno enklávy je příběh osady,
+# o samotné boudě prameny mlčí.
+overeniHistorie:
+  source: >-
+    k enklávě katalog České hory (otevřeno 27. 7. 2026) i blog Krkonošské
+    boudy (triáž 26. 7. 2026) shodně: jméno Lučinám dali dřevaři z Alp,
+    kteří tu založili velkou luční enklávu; „původní název byl
+    Bodenwiesenbauden" — údaj O OSADĚ, ne o objektu. K historii samotné
+    boudy jsme nenašli jediný doložený údaj — „hledali jsme a nenašli".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# kontakty NEVYPLNĚNY: web z OSM (boudanalucinach.cz) se nepodařilo otevřít
+# 20. 7. ani 27. 7. 2026 (timeout) — bez potvrzení, že žije, ho nevedeme;
+# telefon a e-mail z OSM čekají na DATA-04 (telefonát).
+overeniProvoz:
+  source: >-
+    aktivní záznamy v katalozích (České hory; nabídkový server Slevomat,
+    podnik 98149 — triáž 26. 7. 2026) vedou boudu jako objekt v provozu.
+    Vlastní web dle OSM se z našeho připojení opakovaně nepodařilo
+    otevřít (20. 7. a 27. 7. 2026, timeout) — provoz vlastním dotazem
+    neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda v luční enklávě Lučiny nad Pecí pod Sněžkou, kolem 1100 metrů,
+  padesát metrů od vleku a hned u běžkařské magistrály. Katalog u ní
+  popisuje dvaačtyřicet lůžek se snídaní a večeří; blog Krkonošské boudy
+  k tomu přidává nejvýše položenou pizzerii v Čechách.
+text:
+  - >-
+    Bouda Na Lučinách stojí v Lučinách, luční enklávě na hřebeni nad
+    Pecí pod Sněžkou, ve výšce kolem 1100 metrů. Podle katalogu je to
+    padesát metrů od lyžařského vleku, který spojuje pecké sjezdovky,
+    a Krkonošská magistrála vede hned vedle boudy — v zimě sem tedy
+    běžkař dojede po stopě.
+  - >-
+    Enkláva má hezký příběh jména: Lučinám ho podle katalogu i blogu
+    Krkonošské boudy dali dřevaři z Alp, kteří tu vymýtili velkou luční
+    enklávu — původně se osadě říkalo Bodenwiesenbauden. To je ovšem
+    historie osady; o tom, kdy vznikla samotná bouda, jsme zatím nenašli
+    jediný doložený údaj.
+  - >-
+    Nocleh nabízí bouda podle katalogu na dvaačtyřiceti lůžkách ve dvou-
+    až čtyřlůžkových pokojích, snídaně se podávají bufetem a večeře
+    výběrem z menu. A pak je tu lákadlo, které přebíráme s výslovným
+    připsáním: blog Krkonošské boudy píše, že na boudě provozují nejvýše
+    položenou pizzerii v Čechách. Komu přesně kuchyně slouží a zda
+    pizza čeká i na kolemjdoucí, prameny neříkají.
+  - >-
+    Všechno výše pochází z katalogu České hory a z blogu Krkonošské
+    boudy; vlastní web boudy se nám opakovaně nepodařilo otevřít
+    a vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Katalog České hory — popis objektu: výška kolem 1100 m, 42 lůžek,
+      snídaně a večeře, vlek a magistrála, enkláva Lučiny (otevřeno
+      27. 7. 2026)
+    url: https://www.ceskehory.cz/ubytovani/popis/bouda-na-lucinach-pec-pod-snezkou.html
+  - popis: >-
+      Blog Krkonošské boudy — pizzerie na boudě (superlativ blogu),
+      jméno enklávy Lučiny (triáž DATA-27, 26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu a výška; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/bouda-na-lucinach.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 + spot-fetch České hory (potvrdil citace, doplnil rubriku Pec pod Sněžkou a velikosti pokojů).
+  VLASTNÍ WEB NEDOSTUPNÝ: boudanalucinach.cz (z OSM) padá na timeout 20. 7. i 27. 7. 2026 — do kontaktů nezapsán, dokud se nepotvrdí, že žije. Telefon a e-mail z OSM (v kandidátovi) čekají na DATA-04.
+  PIZZERIE: jen blog krkonosskeboudy.cz, nedatováno — superlativ v próze s výslovným připsáním, číselník občerstvení nevyplněn. Při telefonátu ověřit (a zjistit, komu slouží).
+  K dotažení: počet pokojů, historie boudy, provozovatel + kontakty, hero fotka.

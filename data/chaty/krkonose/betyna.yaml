@@ -1,0 +1,134 @@
+# Chata Betyna — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Chata na začátku Obřího dolu kousek za okrajem Pece pod Sněžkou; vlastní
+# web dokládá restauraci s barovou místností a celoroční nocleh. Vše
+# verified: false — z webu chaty a katalogů, vlastním dotazem neověřeno.
+
+nazev: Chata Betyna
+slug: betyna
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ZÁMĚRNĚ NEVYPLNĚNA: neuvádí
+# ji web chaty ani otevřené katalogy — bez pramene nezapisujeme.
+lat: 50.7079466
+lng: 15.7312581
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    server Treking (treking.cz, otevřeno 27. 7. 2026), doslova: „Chata
+    Betyna je příjemnou horskou chatou na začátku Obřího dolu
+    v Krkonoších, asi půl kilometru od okraje Pece pod Sněžkou." Vlastní
+    web chaty (betyna.cz, otevřeno 27. 7. 2026): „500 m od spodní lanovky
+    na Sněžku". Výšku žádný z pramenů neuvádí. GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/38723149 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# pokoje (počet) NEVYPLNĚNY: server Treking uvádí jen velikosti pokojů
+# (jedno- až pětilůžkové), počet žádný pramen nenese.
+nocleh: ano
+kapacita: 47
+overeniNocleh:
+  source: >-
+    vlastní web chaty (betyna.cz, otevřeno 27. 7. 2026), doslova:
+    „Nabízíme celoroční ubytování o kapacitě 47 lůžek". Server Treking
+    (otevřeno 27. 7. 2026): „Ubytování je zajištěno na 1lůžkových až
+    5lůžkových pokojích."
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# „barová místnost" není hodnota číselníku — nese ji próza; komu přesně
+# restaurace slouží, prameny neříkají (poznámka dle DATA-25 v próze).
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    vlastní web chaty (betyna.cz, otevřeno 27. 7. 2026), doslova:
+    „restaurace s dětským koutkem a dětskými židličkami", „barová
+    místnost". Server Treking (otevřeno 27. 7. 2026): „V přízemí chaty
+    Betyna je stylová restaurace s dobrou kuchyní." Zda restaurace
+    slouží i neubytovaným, prameny neuvádějí.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: web ani katalogy nenesou k historii
+# domu jediný letopočet (zápis provozující firmy 2016 je o firmě, ne o domě).
+overeniHistorie:
+  source: >-
+    K historii chaty jsme v otevřených pramenech (vlastní web, server
+    Treking, katalogy; hledáno 26.–27. 7. 2026) nenašli jediný doložený
+    údaj — „hledali jsme a nenašli". Jediná časová stopa je zápis dnešní
+    provozující firmy do rejstříku roku 2016 (triáž DATA-27) — vypovídá
+    o firmě, o stáří domu nic.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně # vlastní web („celoroční ubytování"); vlastním dotazem neověřeno
+kontakty:
+  web: https://betyna.cz/chata-betyna/
+overeniProvoz:
+  source: >-
+    vlastní web chaty živý (betyna.cz, otevřeno 27. 7. 2026): „Nabízíme
+    celoroční ubytování o kapacitě 47 lůžek" — provoz celoroční dle webu.
+    Provozovatel vlastním dotazem neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata na začátku Obřího dolu, asi půl kilometru za okrajem Pece
+  pod Sněžkou a podle vlastního webu pět set metrů od spodní stanice
+  lanovky na Sněžku. Celoročně nabízí sedmačtyřicet lůžek a restauraci
+  s dětským koutkem i barovou místností.
+text:
+  - >-
+    Chata Betyna stojí na začátku Obřího dolu — server Treking ji klade
+    asi půl kilometru od okraje Pece pod Sněžkou, vlastní web měří pět
+    set metrů ke spodní stanici lanovky na Sněžku. Obojí říká totéž
+    jinými slovy: kdo vyráží z Pece do Obřího dolu, jde kolem. Nadmořskou
+    výšku neuvádíme — nenese ji web chaty ani otevřené katalogy.
+  - >-
+    V přízemí je podle serveru Treking stylová restaurace s dobrou
+    kuchyní; vlastní web přidává dětský koutek s dětskými židličkami
+    a barovou místnost. Rodinný ráz je z popisu zřejmý — jestli ale
+    restaurace obslouží i turistu, který jen prochází dolem, prameny
+    neříkají, a my to bez dokladu netvrdíme.
+  - >-
+    Spát se tu dá po celý rok: web uvádí sedmačtyřicet lůžek, Treking
+    jedno- až pětilůžkové pokoje. O historii domu jsme zatím nenašli
+    jediný doložený údaj — nejstarší stopa, na kterou jsme narazili, je
+    zápis dnešního provozovatele do rejstříku v roce 2016, a ten
+    o stáří chaty neříká nic. Jakmile se pramen najde, doplníme ho.
+  - >-
+    Údaje pocházejí z vlastního webu chaty a ze serveru Treking;
+    vlastním dotazem u provozovatele jsme zatím neověřili nic.
+    Souřadnice jsou z mapových dat OpenStreetMap (© přispěvatelé
+    OpenStreetMap, ODbL) a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Vlastní web chaty — 47 lůžek celoročně, restaurace s dětským
+      koutkem, barová místnost, 500 m od lanovky (otevřeno 27. 7. 2026)
+    url: https://betyna.cz/chata-betyna/
+  - popis: >-
+      Treking — Betyna, hezká krkonošská chata v Obřím dole: poloha,
+      restaurace, velikosti pokojů (otevřeno 27. 7. 2026)
+    url: https://www.treking.cz/chaty/betyna.htm
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/betyna.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 + spot-fetch betyna.cz a treking.cz (web se tentokrát načetl — 20. 7. padal na 404/prázdný obsah; citace triáže potvrzeny doslova).
+  Nazev „Chata Betyna" dle vlastního webu (OSM tag nese jen „Betyna").
+  VZDÁLENOST: „500 m od spodní lanovky na Sněžku" (web) × „půl kilometru od okraje Pece" (Treking) — souhlasné údaje, ne rozpor; próza nese obojí s připsáním.
+  Kapacita 47 lůžek jde z vlastního webu (triáž měla atribuci nejasnou — vyřešeno spot-fetchem).
+  K dotažení: výška s pramenem, počet pokojů, historie domu (rejstřík 2016 je o firmě), telefon/e-mail (DATA-04), komu slouží restaurace, hero fotka.
