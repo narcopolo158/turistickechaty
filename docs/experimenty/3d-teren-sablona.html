@@ -172,14 +172,24 @@ const BARVA_TRAS={cervena:0xE0341F,modra:0x1B6E9E,zelena:0x3d8f2a,zluta:0xD9A600
 function stavTrasy(){
   trasyGrp.clear();
   if(!D.trasy||!D.trasy.length)return;
-  const maty={}; for(const k in BARVA_TRAS) maty[k]=new THREE.LineBasicMaterial({color:BARVA_TRAS[k],transparent:true,opacity:.85});
+  // VÝKON: tisíce úseků se slévají do JEDNOHO LineSegments na barvu
+  // (4 draw cally místo ~17 000) — jinak se scéna na slabším stroji zadře.
+  const daky={cervena:[],modra:[],zelena:[],zluta:[]};
   for(const t of D.trasy){
-    const pts=[];
+    const cil=daky[t.barva]||daky.cervena;
+    let prev=null;
     for(const [la,lo] of t.body){
-      if(la<D.bbox.latMin||la>D.bbox.latMax||lo<D.bbox.lngMin||lo>D.bbox.lngMax)continue;
-      pts.push(new THREE.Vector3(sx(lo), zOf(eleNa(la,lo))+.03, -sy(la)));
+      if(la<D.bbox.latMin||la>D.bbox.latMax||lo<D.bbox.lngMin||lo>D.bbox.lngMax){prev=null;continue}
+      const p=[sx(lo), zOf(eleNa(la,lo))+.03, -sy(la)];
+      if(prev){cil.push(prev[0],prev[1],prev[2],p[0],p[1],p[2]);}
+      prev=p;
     }
-    if(pts.length>=2) trasyGrp.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), maty[t.barva]||maty.cervena));
+  }
+  for(const k in daky){
+    if(!daky[k].length)continue;
+    const g=new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(daky[k],3));
+    trasyGrp.add(new THREE.LineSegments(g, new THREE.LineBasicMaterial({color:BARVA_TRAS[k],transparent:true,opacity:.8})));
   }
 }
 
