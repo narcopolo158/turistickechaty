@@ -11,6 +11,77 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 22 (mimořádný čtyřblok, session 1/4): F1a datový základ HOTOV + F1b logika
+
+**Kontext:** Ruční spuštění se zadáním od Michala (~20:50): mimořádný
+čtyřblok F1-IMPL hned, ne až 28. 7.; session 1/4, další po ~3 h.
+Zadání se shoduje s prioritou zapsanou v backlogu (commit 9c80d10);
+DATA-02 (výš v backlogu) zůstává blokovaná na Michalově kliku — v pořádku.
+
+**Hotovo (3 commity, průběžně pushované):**
+1. `84a17a0` — **F1a: SSG index chat + odvozené feedy.**
+   `src/lib/index-chat.ts` (čisté funkce): nejstarší doložený rok = MIN
+   přes milníky s rokem (pořadí pole nerozhoduje; bez milníku null →
+   v žebříčku nebude), feedNaposledyOvereno, posledniOvereniFondu,
+   pocetNoveOverenychZa (datum z buildu parametrem — SSR-safe),
+   kalendárium (deterministické řazení + dayOfYear % n, žádné falešné
+   „přesně dnes"). `getIndexChat()` v `src/lib/chaty.ts`: index
+   publikovaných profilů (…nocleh/obcerstveni jako bool|null — nevyplněno
+   je poctivě null, razitko z publikovaných razítek, znamka z katalogu
+   DATA-10, checked/verified z bloků ověření) + položky kalendária.
+2. `dfd9065` — **F1a: metadata Oblastí + typ Středisko.** Oblasti:
+   charakteristika s vlastním blokem ověření (superlativ „nejvyšší
+   pohoří Česka" doložen titulky WebSearch — poctivě přiznáno),
+   nejvyssiHora {Sněžka, 1603, source: tisicovky.cz + kudyznudy.cz
+   titulky; 1603,30 dle úryvku dolnyslask.travel; očima/ČÚZK → DATA-04},
+   topCile jen 2 s doloženou vazbou (Sněžka ↔ dom-slaski „na Równi pod
+   Śnieżką"; Pramen Labe ↔ labska-bouda „u pramene Labe"). Nová kolekce
+   Strediska + 7 YAML (Pec, Špindl, Harrachov, Janské Lázně, Malá Úpa;
+   Karpacz, Szklarska Poręba): GPS obce z OSM katalogu výchozích bodů
+   (ODbL, checked = stav OSM dat 2026-05-06/2026-06-12), vazby
+   vychoziBody na katalog DATA-06 (počty chat se POČÍTAJÍ, nepíšou),
+   výška obce poctivě CHYBÍ (čeká na ČÚZK — jediný nedodělek F1a),
+   perex/doprava až z doložených zdrojů. Seed: sekce 1b (idempotentní).
+   Schema změny čistě aditivní (nová tabulka + sloupce).
+3. `a31134d` — **F1b: čistá logika katalogu** (`src/lib/katalog.ts`)
+   1:1 dle `_filtered()` prototypu: hledání substring, stavové chips OR,
+   službové AND (jen doložené „ano" — null neprojde, ale nevydává se za
+   „ne"), řazení abc/výška/ověřeno s deterministickým tiebreakem, URL
+   stav `?q=&chips=&sort=&view=` s kanonickým pořadím a roundtrip testy.
+
+Celkem +33 testů (8 index, 7 střediska/oblast, 11 katalog, zbytek
+z dřívějška beze změn), tsc i lint čisté u každého commitu.
+
+**POZOR pro session 2/4 — začni tímhle:**
+1. **Zkontroluj v Actions poslední 3 běhy „INFRA-01: deploy staging"**
+   (commity 84a17a0, dfd9065, a31134d). Sandbox na GitHub API nedosáhne
+   (HTTP 403 — git protokol jede, REST ne), takže deploy NEMÁM ověřený.
+   Riziko u dfd9065: nová tabulka `strediska` — serverový seed jede přes
+   drizzle push; kdyby spadl, nasazení se bezpečně zastavilo PŘED výměnou
+   buildu (web jede dál na staré verzi) a v logu bude chyba seedu.
+2. **Pokračuj F1b UI:** KatalogClient nad hotovou logikou
+   (`filtrujKatalog`, `stavZUrl/stavDoUrl` + index z `getIndexChat()`):
+   přepínač Karty (výchozí)/Řádky/Mapa, chips s ×, fadeUp při
+   přefiltrování, kartotéční lístky dle prototypu (rotace ±0.7°, hover),
+   mini-otisky přes `RazitkoSvg.tsx`, poctivý prázdný stav, URL sync
+   (router.replace, žádný scroll-jump), popiska u službových filtrů
+   („vybírá jen doložené ano"). Vizuální pravda = screenshots/ katalogu
+   (4-katalog-*.png) + kód v F1-Katalog.dc.html; index má 76 profilů
+   (ne 12 z mocku). Pak F1c homepage.
+
+**Příště (zbytek čtyřbloku):** 2/4 F1b UI (+ ověřit deploy);
+3/4 F1c homepage (hero koláž, kalendárium pás — funkce hotové, poster
+band, namátkou se seedovaným shuffle, print seznam); 4/4 F1d pohoří
+(hero + stat-tiles z metadat Oblasti — hotové v DB, žebříčky
+z nejstarsiRok/vyska/kapacita, 3D integrace) dle sil.
+
+**Otázky pro Michala:** (1) Výšky obcí středisek: doložit ze ČÚZK
+(geoportál) — ruční krok, nebo příští DATA úkol; do té doby stat-tile
+„výška obce" poctivě chybí. (2) Nejvyšší hora: 1603 m z titulků
+(tisicovky.cz „HLV 1; 1603 m"); dolnyslask.travel úryvek uvádí oficiálně
+1603,30 m — na dlaždici zaokrouhlujeme na 1603, OK? (3) Deploy tří
+commitů večera prosím mrkni v Actions, pokud session 2 nenahlásí stav.
+
 ## 2026-07-27 — pokračování 21 (bezobslužný večerní běh): DATA-02 — chaty bez GPS už sklizeň nemíjí
 
 **Hotovo:** Nejvyšší nehotová položka backlogu = DATA-02; z 2. kola dneška
