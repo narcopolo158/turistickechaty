@@ -1,5 +1,47 @@
-# Oblast Krkonoše — minimální záznam pro zařazení chat (bbox doplní F0-07 s mapou)
+# Oblast Krkonoše — metadata pro stránku pohoří (F1a; bbox doplní budoucí práce s mapou)
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat, žebříčky,
+# „nejstarší") se sem NIKDY nepíšou — počítají se při buildu z profilů.
 nazev: Krkonoše
 slug: krkonose
 typ: pohori
 zeme: cz
+
+charakteristika: >-
+  Nejvyšší pohoří Česka, rozložené po obou stranách česko-polské hranice.
+  Po hřebenech i v údolích stojí desítky horských bud a schronisek
+  a průvodce je mapuje z obou stran — od velkých obsluhovaných bud
+  po hraniční případy, které poctivě přiznává.
+overeniCharakteristika:
+  source: >-
+    „Nejvyšší pohoří Česka": titulky výsledků WebSearch 2026-07-27
+    (tisicovky.cz, dnesnivylet.cz „Krkonoše – nejvyšší pohoří České
+    republiky"; obsah stránek neotevřen — sandbox). Zbytek popisuje fond
+    tohoto průvodce (data/chaty/krkonose/**), nikoli převzatá tvrzení.
+  verified: false
+  checked: '2026-07-27'
+
+nejvyssiHora:
+  nazev: Sněžka
+  vyska: 1603
+  # Zdroj: titulky výsledků WebSearch 2026-07-27 — tisicovky.cz „Sněžka
+  # (HLV 1; 1603 m)", kudyznudy.cz „Sněžka – nejvyšší hora Česka i Slezska";
+  # úryvek dolnyslask.travel upřesňuje oficiální výšku 1603,30 m n. m.
+  # (údaj 1602 m z publikací před 2014 patřil geodetickému bodu, ne vrcholu).
+  # Obsah stránek neotevřen (sandbox) — ověření očima/ČÚZK: DATA-04.
+  source: >-
+    tisicovky.cz („Sněžka (HLV 1; 1603 m)") + kudyznudy.cz („nejvyšší hora
+    Česka i Slezska") — titulky WebSearch 2026-07-27, obsah neotevřen
+
+topCile:
+  - nazev: Sněžka
+    veta: Nejvyšší hora Česka (1603 m) na hřebeni nad Obřím dolem a Równí pod Śnieżką.
+    nejblizChataSlug: dom-slaski
+    source: >-
+      Výška viz nejvyssiHora; vazba na chatu z profilu Dom Śląski
+      („Schronisko na Równi pod Śnieżką" — OSM/PTTK, checked 2026-07-21)
+  - nazev: Pramen Labe
+    veta: Prameniště Labe na hřebenech západních Krkonoš; hned u něj stojí Labská bouda.
+    nejblizChataSlug: labska-bouda
+    source: >-
+      Profil Labské boudy (labskabouda.cz — „u pramene Labe", checked
+      2026-07-20)

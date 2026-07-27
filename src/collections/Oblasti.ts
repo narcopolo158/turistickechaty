@@ -52,6 +52,61 @@ export const Oblasti: CollectionConfig = {
     },
     { name: 'popis', type: 'richText', label: 'Popis' },
     {
+      name: 'charakteristika',
+      type: 'textarea',
+      label: 'Kurátorská charakteristika',
+      admin: {
+        description:
+          'Hero stránky pohoří (F1): 2–3 věty o charakteru oblasti. Superlativy jen s dokladem ' +
+          '(zdroj do bloku ověření níže) — co není doloženo, do textu nepatří.',
+      },
+    },
+    overeni('overeniCharakteristika', {
+      label: 'Ověření charakteristiky',
+      admin: { description: 'Zdroje tvrzení v kurátorské charakteristice.' },
+    }),
+    {
+      name: 'nejvyssiHora',
+      type: 'group',
+      label: 'Nejvyšší hora',
+      admin: {
+        description:
+          'Stat-tile stránky pohoří (F1). Bez zdroje se dlaždice nevykresluje — nedomýšlet.',
+      },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'nazev', type: 'text', label: 'Název', admin: { width: '50%' } },
+            { name: 'vyska', type: 'number', label: 'Výška (m)', admin: { width: '50%' } },
+          ],
+        },
+        { name: 'source', type: 'text', label: 'Zdroj', admin: { placeholder: 'URL / kniha…' } },
+      ],
+    },
+    {
+      name: 'topCile',
+      type: 'array',
+      label: 'Top cíle oblasti',
+      labels: { singular: 'Cíl', plural: 'Cíle' },
+      admin: {
+        description:
+          'Sekce „Top cíle" stránky pohoří (F1): 1 poctivá věta na cíl + volitelná vazba ' +
+          'na nejbližší chatu slugem. Kurátorský výběr, žádná hodnocení ani ceny.',
+      },
+      fields: [
+        { name: 'nazev', type: 'text', label: 'Název', required: true },
+        { name: 'veta', type: 'text', label: 'Jedna věta (jen doložitelné)' },
+        {
+          name: 'nejblizChataSlug',
+          type: 'text',
+          label: 'Nejbližší chata (slug)',
+          admin: { description: 'Slug profilu chaty pro odkaz „Nejblíž: …" — jen když je vazba doložená.' },
+        },
+        { name: 'source', type: 'text', label: 'Zdroj' },
+      ],
+    },
+    {
       name: 'bbox',
       type: 'group',
       label: 'Mapové ohraničení (bbox)',

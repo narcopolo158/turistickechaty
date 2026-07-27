@@ -64,10 +64,11 @@ type Upsert = { vytvoreno: boolean; id: number | string }
 
 /**
  * Upsert dle slugu; drafty publikujeme — do repa se zapisují jen hotová data.
- * (Payload neumí generiku přes union kolekcí, proto explicitní větvení.)
+ * (Payload neumí generiku přes union kolekcí, proto explicitní větvení.
+ * Strediska drafts nemají — `_status` u nich Payload ignoruje.)
  */
 const upsert = async (
-  collection: 'oblasti' | 'chaty',
+  collection: 'oblasti' | 'chaty' | 'strediska',
   data: Record<string, unknown>,
 ): Promise<Upsert> => {
   const slug = data.slug as string
@@ -75,19 +76,24 @@ const upsert = async (
   // signatura Recordu se do typů kolekcí musí přetypovat přes unknown.
   const oblastData = { ...data, _status: 'published' } as unknown as RequiredDataFromCollectionSlug<'oblasti'>
   const chataData = { ...data, _status: 'published' } as unknown as RequiredDataFromCollectionSlug<'chaty'>
+  const strediskoData = { ...data } as unknown as RequiredDataFromCollectionSlug<'strediska'>
   const stavajici = await payload.find({ collection, where: { slug: { equals: slug } }, limit: 1 })
   const id = stavajici.docs[0]?.id
   if (id != null) {
     const doc =
       collection === 'oblasti'
         ? await payload.update({ collection, id, data: oblastData })
-        : await payload.update({ collection, id, data: chataData })
+        : collection === 'strediska'
+          ? await payload.update({ collection, id, data: strediskoData })
+          : await payload.update({ collection, id, data: chataData })
     return { vytvoreno: false, id: doc.id }
   }
   const doc =
     collection === 'oblasti'
       ? await payload.create({ collection, data: oblastData })
-      : await payload.create({ collection, data: chataData })
+      : collection === 'strediska'
+        ? await payload.create({ collection, data: strediskoData })
+        : await payload.create({ collection, data: chataData })
   return { vytvoreno: true, id: doc.id }
 }
 
@@ -100,6 +106,20 @@ for (const soubor of yamlSoubory(join(DATA, 'oblasti'), false)) {
   const vysledek = await upsert('oblasti', data)
   oblastId.set(data.slug, vysledek.id)
   payload.logger.info(`oblast ${data.slug}: ${vysledek.vytvoreno ? 'vytvořena' : 'aktualizována'}`)
+}
+
+// ── 1b. Střediska (F1a) ─────────────────────────────────────────────────────
+// YAML `data/strediska/<oblast>/<slug>.yaml`; vazba na oblast slugem (jako u chat).
+for (const soubor of yamlSoubory(join(DATA, 'strediska'))) {
+  const { oblast, ...data } = parse(readFileSync(soubor, 'utf8'))
+  if (oblast) {
+    if (!oblastId.has(oblast)) {
+      throw new Error(`${soubor}: oblast „${oblast}" neexistuje (chybí data/oblasti/${oblast}.yaml?)`)
+    }
+    data.oblast = oblastId.get(oblast)
+  }
+  const vysledek = await upsert('strediska', data)
+  payload.logger.info(`středisko ${data.slug}: ${vysledek.vytvoreno ? 'vytvořeno' : 'aktualizováno'}`)
 }
 
 // ── 2. Chaty ────────────────────────────────────────────────────────────────

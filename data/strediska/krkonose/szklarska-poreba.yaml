@@ -1,0 +1,34 @@
+# Szklarska Poręba — středisko / východiště do hor (F1a; mini-stránka = F1e)
+# Poctivost: jen doložené údaje. Výška obce (ČÚZK), perex a doprava se doplní
+# z doložených zdrojů — do té doby pole chybí (stat-tile se nevykreslí).
+# Počty chat a rozpětí přístupů se počítají při buildu z tras (DATA-06) přes
+# vychoziBody — nikdy se sem nepíšou ručně.
+nazev: Szklarska Poręba
+slug: szklarska-poreba
+zeme: pl
+oblast: krkonose
+
+# GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
+lat: 50.8268011
+lng: 15.5221261
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/node/31916864 (bod obce z katalogu výchozích bodů DATA-06,
+    data © přispěvatelé OpenStreetMap, ODbL 1.0); výška obce zatím
+    nedoložena — doplnit ze ČÚZK
+  verified: false
+  checked: '2026-06-12'
+
+# Vazba na katalog výchozích bodů (data/oblasti/krkonose/vychozi-body-kandidati.json)
+vychoziBody:
+  - nazev: Szklarska Poręba
+  - nazev: Szklarska Poręba Dolna
+  - nazev: Szklarska Poręba Górna
+  - nazev: Szklarska Poręba Huta
+  - nazev: Szklarska Poręba Średnia
+
+interniPoznamky: >-
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
+  (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;
+  u polských středisek zatím žádná čísla (rozhodnutí handoffu: „PL bez
+  čísel" do doby doložení).

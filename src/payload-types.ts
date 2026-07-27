@@ -69,6 +69,7 @@ export interface Config {
   collections: {
     chaty: Chaty;
     oblasti: Oblasti;
+    strediska: Strediska;
     vylety: Vylety;
     razitka: Razitka;
     clanky: Clanky;
@@ -90,6 +91,7 @@ export interface Config {
   collectionsSelect: {
     chaty: ChatySelect<false> | ChatySelect<true>;
     oblasti: OblastiSelect<false> | OblastiSelect<true>;
+    strediska: StrediskaSelect<false> | StrediskaSelect<true>;
     vylety: VyletySelect<false> | VyletySelect<true>;
     razitka: RazitkaSelect<false> | RazitkaSelect<true>;
     clanky: ClankySelect<false> | ClankySelect<true>;
@@ -461,6 +463,41 @@ export interface Oblasti {
     [k: string]: unknown;
   } | null;
   /**
+   * Hero stránky pohoří (F1): 2–3 věty o charakteru oblasti. Superlativy jen s dokladem (zdroj do bloku ověření níže) — co není doloženo, do textu nepatří.
+   */
+  charakteristika?: string | null;
+  /**
+   * Zdroje tvrzení v kurátorské charakteristice.
+   */
+  overeniCharakteristika?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
+   * Stat-tile stránky pohoří (F1). Bez zdroje se dlaždice nevykresluje — nedomýšlet.
+   */
+  nejvyssiHora?: {
+    nazev?: string | null;
+    vyska?: number | null;
+    source?: string | null;
+  };
+  /**
+   * Sekce „Top cíle" stránky pohoří (F1): 1 poctivá věta na cíl + volitelná vazba na nejbližší chatu slugem. Kurátorský výběr, žádná hodnocení ani ceny.
+   */
+  topCile?:
+    | {
+        nazev: string;
+        veta?: string | null;
+        /**
+         * Slug profilu chaty pro odkaz „Nejblíž: …" — jen když je vazba doložená.
+         */
+        nejblizChataSlug?: string | null;
+        source?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
    * Volitelné ohraničení pro výřez mapy oblasti (WGS84).
    */
   bbox?: {
@@ -694,6 +731,75 @@ export interface Clanky {
   _status?: ('draft' | 'published') | null;
 }
 /**
+ * Východiště do hor (Pec, Špindl, Harrachov…). Počty chat a rozpětí přístupů se počítají z tras — neukládají se.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "strediska".
+ */
+export interface Strediska {
+  id: number;
+  nazev: string;
+  /**
+   * Část adresy stránky. Nevyplněný se vytvoří z názvu.
+   */
+  slug: string;
+  zeme?: ('cz' | 'sk' | 'pl' | 'at' | 'de' | 'ch' | 'it' | 'si' | 'fr') | null;
+  oblast?: (number | null) | Oblasti;
+  /**
+   * Hero mini-stránky: 2 věty, jen doložitelné údaje — žádné ceníky ani hodnocení.
+   */
+  perex?: string | null;
+  lat?: number | null;
+  lng?: number | null;
+  /**
+   * Stat-tile „výška obce" — zdroj ČÚZK do bloku ověření.
+   */
+  vyskaObce?: number | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniLokace?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
+   * Názvy výchozích bodů z katalogu DATA-06 (data/oblasti/<oblast>/vychozi-body-kandidati.json), které patří k tomuto středisku. Přes ně se při buildu počítá „chat dostupných odtud" a rozpětí přístupů — vazba dat, žádná ručně psaná čísla.
+   */
+  vychoziBody?:
+    | {
+        nazev: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Jen doložený fakt (např. „kabinová lanovka na Sněžku") — bez jízdních řádů.
+   */
+  lanovka?: string | null;
+  /**
+   * Fakta o dopravním napojení (vlak/bus/auto) — žádné jízdní řády.
+   */
+  doprava?: {
+    vlak?: string | null;
+    bus?: string | null;
+    auto?: string | null;
+  };
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniDoprava?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
+   * Jen pro redakci, nikdy se nezobrazují na webu.
+   */
+  interniPoznamky?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Redakční výlety a přechody. Každá chata má mít aspoň jeden propojený výlet.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -817,6 +923,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'oblasti';
         value: number | Oblasti;
+      } | null)
+    | ({
+        relationTo: 'strediska';
+        value: number | Strediska;
       } | null)
     | ({
         relationTo: 'vylety';
@@ -1063,6 +1173,30 @@ export interface OblastiSelect<T extends boolean = true> {
   nadrazena?: T;
   zeme?: T;
   popis?: T;
+  charakteristika?: T;
+  overeniCharakteristika?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  nejvyssiHora?:
+    | T
+    | {
+        nazev?: T;
+        vyska?: T;
+        source?: T;
+      };
+  topCile?:
+    | T
+    | {
+        nazev?: T;
+        veta?: T;
+        nejblizChataSlug?: T;
+        source?: T;
+        id?: T;
+      };
   bbox?:
     | T
     | {
@@ -1078,6 +1212,51 @@ export interface OblastiSelect<T extends boolean = true> {
         verified?: T;
         checked?: T;
       };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "strediska_select".
+ */
+export interface StrediskaSelect<T extends boolean = true> {
+  nazev?: T;
+  slug?: T;
+  zeme?: T;
+  oblast?: T;
+  perex?: T;
+  lat?: T;
+  lng?: T;
+  vyskaObce?: T;
+  overeniLokace?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  vychoziBody?:
+    | T
+    | {
+        nazev?: T;
+        id?: T;
+      };
+  lanovka?: T;
+  doprava?:
+    | T
+    | {
+        vlak?: T;
+        bus?: T;
+        auto?: T;
+      };
+  overeniDoprava?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
+  interniPoznamky?: T;
   updatedAt?: T;
   createdAt?: T;
 }

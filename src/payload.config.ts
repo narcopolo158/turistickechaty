@@ -13,6 +13,7 @@ import { Fotky } from './collections/Fotky'
 import { Razitka } from './collections/Razitka'
 import { Vylety } from './collections/Vylety'
 import { Clanky } from './collections/Clanky'
+import { Strediska } from './collections/Strediska'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -24,7 +25,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Chaty, Oblasti, Vylety, Razitka, Clanky, Fotky, Media, Users],
+  collections: [Chaty, Oblasti, Strediska, Vylety, Razitka, Clanky, Fotky, Media, Users],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
