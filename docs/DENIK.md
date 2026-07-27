@@ -11,6 +11,46 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 16: INFRA-01 — deploy balík pro pticore připraven (Michal ověřuje 76 objektů)
+
+**Zadání Michala:** „ok - pustím se do ověřování 76 objektů, zatím pracuj
+samostatně dál, co s infra a pticore serverem, kdy se do toho pustíme?"
+
+**Hotovo — kompletní `deploy/` balík dle plánu v1.8 (Forge na pticore),
+vše co jde bez přístupu k serveru:**
+
+- **deploy/README.md** — 10 kroků ve Forge UI (site typ Static/Next.js,
+  Postgres check/recipe, .env.local, nginx, první build, daemon,
+  Quick Deploy, SSL, DNS na Active24, kontrola) + seed 76 profilů +
+  4 otevřené body pro Michala (Postgres? RAM? volné porty — hub už na
+  serveru žije, navrženy 3017/3016? Node verze?). Opřeno o oficiální
+  Forge postup pro Next.js (site + daemon `npm run start` + proxy_pass)
+  a praxi restartu `sudo -S supervisorctl restart daemon-ID:*`.
+- **deploy/forge-deploy.sh** — git pull → npm ci → build → (migrace
+  TODO po ověření Payload příkazu) → restart daemonu → smyčka na
+  /api/health (fail = deploy červený, ne tichý pád).
+- **deploy/nginx-site.conf** — server blok: immutable cache /_next/static,
+  cache /media, health bez logů, proxy hlavičky, client_max_body_size
+  32m (upload hero fotek), poznámka co smazat z PHP kostry.
+- **deploy/env.production.example** — DATABASE_URI (oddělený user),
+  PAYLOAD_SECRET (openssl rand), PORT (ne 3000 — hub!), URL; R2 a mapový
+  klíč připravené zakomentované.
+- **src/app/api/health/route.ts** — nový endpoint {ok:true, cas} bez
+  dotyku DB; tsc čistý.
+- BACKLOG: položka deploymentu přepsána na INFRA-01 (přesunuto dopředu,
+  „až ke konci Fáze 1" už neplatí — Michal chce začít); zálohy + R2 =
+  INFRA-02.
+
+**3D mezitím:** běhy z push triggeru komitují data — sjezdovek 449,
+lesy stále 0 (Overpass lesní dotazy z Actions IP neprošly ani po
+zjemnění na 3×3 dlaždice; fallback drží prázdno z minula). Nechává se
+na příští běhy — neblokuje nic; kdyby to drželo i zítra, zkusí se
+záložní Overpass instance přímo v data28.
+
+**Příště:** Michalovy odpovědi na 4 infra body → on ~30–45 min ve Forge
+→ staging dev.turistickechaty.cz živý se 76 profily. Mezitím souběžně:
+jeho ověřování 76 objektů (docs/TELEFONATY-KRKONOSE.md) a hero fotky.
+
 ## 2026-07-27 — pokračování 15: MICHALOVY ODPOVĚDI PROMÍTNUTY — Krkonoše uzavřeny na 76 profilech
 
 **Zadání:** Michal vrátil docs/OTAZKY-KRKONOSE.md s odpověďmi u všech
