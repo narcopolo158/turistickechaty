@@ -4,6 +4,8 @@ import config from '../payload.config'
 import type { Chaty as Chata, Fotky as Fotka, Oblasti as Oblast, Razitka } from '../payload-types'
 import type { MapovaChata } from '../components/MapaChat'
 import type { RazitkovnikChata } from '../components/RazitkovnikClient'
+import { nejstarsiDolozenyRok, type IndexChata, type KalendariumPolozka } from './index-chat'
+import { znamkyVizitkyChaty } from './znamky-vizitky'
 
 /** Kód země (Payload select) → český URL slug dle plánu kap. 6: /cesko/krkonose/lucni-bouda */
 export const ZEME_SLUG: Record<string, string> = {
@@ -186,6 +188,63 @@ export async function getChatyProMapu(): Promise<MapovaChata[]> {
       },
     ]
   })
+}
+
+/** ano/ne select → bool; nevyplněno = null (nezjištěno, poctivě se nefiltruje jako „ne"). */
+const anoNeNaBool = (hodnota: string | null | undefined): boolean | null =>
+  hodnota === 'ano' ? true : hodnota === 'ne' ? false : null
+
+/**
+ * SSG index chat (F1a) — štíhlý index všech publikovaných profilů pro
+ * hledání, filtry, countery a „namátkou" šablon F1 + položky kalendária
+ * (milníky historie s rokem). Počítá se při buildu v server komponentách,
+ * klient dostává hotová data v props (žádné dotazy z prohlížeče).
+ */
+export async function getIndexChat(): Promise<{
+  index: IndexChata[]
+  kalendarium: KalendariumPolozka[]
+}> {
+  const payload = await getPayload({ config })
+  const res = await payload.find({
+    collection: 'chaty',
+    depth: 2, // razítka jako objekty (join při depth 1 vrací jen ID — viz populujOtiskyRazitek)
+    limit: 500,
+    sort: 'nazev',
+    overrideAccess: false,
+  })
+  jenPublikovanaRazitka(res.docs)
+
+  const index: IndexChata[] = []
+  const kalendarium: KalendariumPolozka[] = []
+  for (const chata of res.docs) {
+    const overeni = posledniOvereni(chata)
+    const url = chataPath(chata)
+    const oblast = typeof chata.oblast === 'object' ? chata.oblast : null
+    index.push({
+      slug: chata.slug!,
+      nazev: chata.nazev,
+      url,
+      oblastSlug: oblast?.slug ?? null,
+      oblastNazev: oblast?.nazev ?? null,
+      zeme: chata.zeme ?? null,
+      typ: chata.typ ?? null,
+      stav: chata.stav ?? null,
+      vyska: chata.vyska ?? null,
+      nocleh: anoNeNaBool(chata.nocleh),
+      obcerstveni: anoNeNaBool(chata.kuchyne),
+      razitko: (chata.razitka?.docs ?? []).some((r) => typeof r === 'object'),
+      znamka: znamkyVizitkyChaty(chata.slug!).some((p) => p.system === 'znamka'),
+      checked: overeni?.checked ?? null,
+      verified: overeni?.verified ?? false,
+      nejstarsiRok: nejstarsiDolozenyRok(chata.milniky),
+    })
+    for (const milnik of chata.milniky ?? []) {
+      if (typeof milnik.rok === 'number' && milnik.udalost) {
+        kalendarium.push({ rok: milnik.rok, udalost: milnik.udalost, chataNazev: chata.nazev, chataUrl: url })
+      }
+    }
+  }
+  return { index, kalendarium }
 }
 
 /**
