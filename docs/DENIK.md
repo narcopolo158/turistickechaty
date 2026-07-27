@@ -47,9 +47,23 @@ zjemnění na 3×3 dlaždice; fallback drží prázdno z minula). Nechává se
 na příští běhy — neblokuje nic; kdyby to drželo i zítra, zkusí se
 záložní Overpass instance přímo v data28.
 
-**Příště:** Michalovy odpovědi na 4 infra body → on ~30–45 min ve Forge
-→ staging dev.turistickechaty.cz živý se 76 profily. Mezitím souběžně:
-jeho ověřování 76 objektů (docs/TELEFONATY-KRKONOSE.md) a hero fotky.
+**Dovětek (týž večer, Michalův screenshot Active24):** pticore =
+4 GB RAM / 4 vCPU / 80 GB disk, IPv4 81.95.108.230, FQDN
+pticore.a24vps.com → **build na serveru vyloučen, aktivován fallback
+z plánu**: nový workflow `.github/workflows/deploy-staging.yml` (build
+v Actions s Postgres service + seedem z data/chaty/** — ověřeno, že
+build bez DB padá na prerenderu; vzor service+seed převzat z ověřeného
+vizualni-kontrola-mapy.yml; artefakt .next+public přes SSH, restart
+daemonu supervisorctl, health smyčka; spouštění zatím dispatch, na push
+se přepne po rozběhnutí). README deploye přepsáno: hlavní cesta =
+Actions, forge-deploy.sh degradován na záložní variantu; Quick Deploy
+se nezapíná. Otevřené body scvrkly na 3 (Postgres? porty? Node?) —
+všechny zjistí jeden SSH příkaz, poslán Michalovi v chatu.
+
+**Příště:** Michalův SSH výstup (Postgres/porty/Node) → založení situ
+dle deploy/README.md → secrets → první běh deploy workflow → staging
+dev.turistickechaty.cz živý se 76 profily. Mezitím souběžně: jeho
+ověřování 76 objektů (docs/TELEFONATY-KRKONOSE.md) a hero fotky.
 
 ## 2026-07-27 — pokračování 15: MICHALOVY ODPOVĚDI PROMÍTNUTY — Krkonoše uzavřeny na 76 profilech
 

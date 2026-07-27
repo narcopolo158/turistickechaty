@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-# INFRA-01 · Quick Deploy skript pro Laravel Forge (VPS pticore)
+# INFRA-01 · Quick Deploy skript pro Laravel Forge — ZÁLOŽNÍ VARIANTA
+# NA PTICORE SE NEPOUŽÍVÁ: server má 4 GB RAM a build by na něm spadl —
+# nasazení řídí .github/workflows/deploy-staging.yml (build v Actions).
+# Tenhle skript je tu pro případ silnějšího serveru v budoucnu.
 # Vloží se do Forge → Site → Deployments → Deploy Script (a zapne se
 # Quick Deploy, ať jede na každý push do main).
 #

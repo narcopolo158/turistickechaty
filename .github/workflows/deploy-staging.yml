@@ -1,0 +1,118 @@
+# INFRA-01 · Deploy stagingu (dev.turistickechaty.cz) na VPS pticore
+#
+# Proč build tady a ne na serveru: pticore má 4 GB RAM (Active24 panel,
+# 27. 7. 2026) a build si říká o ~8 GB heap — plán v1.8 pro tenhle případ
+# rozhodl „build v GitHub Actions, na server jen artefakt". A protože
+# build prerenderuje stránky z databáze (ověřeno 27. 7.: bez DB spadne na
+# ECONNREFUSED), jede tu Postgres service + seed z data/chaty/** — git je
+# zdroj pravdy, artefakt tedy nese obsah stejný jako serverová DB po
+# seedu. Vzor service+seed převzat z ověřeného workflow
+# vizualni-kontrola-mapy.yml.
+#
+# Server pak jen: git pull, npm ci (instalaci 4 GB RAM zvládne), rozbalit
+# .next z artefaktu, restart daemonu, health kontrola.
+#
+# SPOUŠTĚNÍ: zatím ručně (workflow_dispatch) — na push do main se přepne,
+# až staging poběží (odkomentovat blok push níž).
+#
+# POTŘEBNÉ SECRETS (Settings → Secrets and variables → Actions):
+#   PTICORE_SSH_KEY  — privátní OpenSSH klíč; veřejnou půlku přidat na
+#                      serveru uživateli forge (jde to přes Forge UI →
+#                      server → SSH Keys)
+#   PTICORE_HOST     — pticore.a24vps.com
+#   PTICORE_PATH     — /home/forge/dev.turistickechaty.cz
+#   PTICORE_DAEMON   — číslo daemonu z Forge (Site → Daemons)
+#
+# Runtime env čte server ze svého .env.local (deploy/env.production.example)
+# — do artefaktu se žádná tajemství nebalí.
+
+name: 'INFRA-01: deploy staging (pticore)'
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: false
+
+jobs:
+  build-a-nasazeni:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: user
+          POSTGRES_PASSWORD: heslo
+          POSTGRES_DB: turistickechaty
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U user"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://user:heslo@localhost:5432/turistickechaty
+      PAYLOAD_SECRET: ci-deploy-staging-build
+      NEXT_PUBLIC_SERVER_URL: https://dev.turistickechaty.cz
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Zavislosti
+        run: npm ci --no-audit --no-fund
+
+      - name: Seed obsahu z gitu (data/chaty/**)
+        run: npx payload run scripts/seed-chaty.ts
+
+      - name: Build (Next + Payload admin, prerender nad seedem)
+        run: npm run build
+
+      - name: Artefakt (.next + public)
+        run: tar -czf /tmp/chaty-build.tar.gz .next public
+
+      - name: SSH klic
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.PTICORE_SSH_KEY }}" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -H "${{ secrets.PTICORE_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Nahrat artefakt
+        run: |
+          scp -i ~/.ssh/id_deploy /tmp/chaty-build.tar.gz \
+            "forge@${{ secrets.PTICORE_HOST }}:/tmp/chaty-build.tar.gz"
+
+      - name: Nasadit na serveru
+        run: |
+          ssh -i ~/.ssh/id_deploy "forge@${{ secrets.PTICORE_HOST }}" bash -s <<NASAZENI
+          set -euo pipefail
+          cd "${{ secrets.PTICORE_PATH }}"
+          git pull origin main
+          npm ci --no-audit --no-fund
+          rm -rf .next
+          tar -xzf /tmp/chaty-build.tar.gz
+          rm -f /tmp/chaty-build.tar.gz
+          NASAZENI
+
+      - name: Restart daemonu + health
+        run: |
+          ssh -i ~/.ssh/id_deploy "forge@${{ secrets.PTICORE_HOST }}" bash -s <<NASAZENI
+          set -euo pipefail
+          sudo -n supervisorctl restart "daemon-${{ secrets.PTICORE_DAEMON }}:*"
+          for i in \$(seq 1 30); do
+            if curl -fsS "http://127.0.0.1:3017/api/health" >/dev/null 2>&1; then
+              echo "OK: /api/health odpovida"; exit 0
+            fi
+            sleep 1
+          done
+          echo "!! aplikace po restartu neodpovida" >&2; exit 1
+          NASAZENI
