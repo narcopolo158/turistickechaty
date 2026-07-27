@@ -11,6 +11,42 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 21 (bezobslužný večerní běh): DATA-02 — chaty bez GPS už sklizeň nemíjí
+
+**Hotovo:** Nejvyšší nehotová položka backlogu = DATA-02; z 2. kola dneška
+v ní ležel systémový nález (a): skript zpracovával jen chaty s GPS v YAML,
+takže 12 publikovaných profilů bez OSM podkladu (Petrova, Pomezní,
+Portášky, Pražská…) nemohlo hero fotku dostat nikdy. Vyřešeno režimem
+„bez GPS": `nactiChaty` už tyto chaty nezahazuje, jedou kategorii +
+fulltext (geosearch se bez souřadnic nepoloží — v surovém exportu pak
+klíč `geosearch` ani není, což je zároveň doklad, že dotaz neproběhl).
+Poctivost: u nálezů se nedá měřit vzdálenost od chaty → geotagované
+nesou surový `geotag` snímku k ručnímu posouzení, fulltext filtr >1 km
+se neuplatní (nemá vztažný bod) a hlavička YAML i report běhu nesou
+výslovné „CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti
+nejsou". Testy 24 → 29 (vč. případu „osamocená lat bez lng = vada dat,
+nedomýšlet — jede jako bez GPS"), tsc i lint čisté; 3 padající int
+soubory jsou environmentální (Payload bez DB — padají stejně na čistém
+main, v CI s postgres projdou). Offline `--z-jsonu` smoke nad commitnutým
+exportem: bez-GPS chaty poctivě jen ve výpisu „Bez dotazu v exportu"
+(žádné YAML se nefabrikuje z exportu, který je nehledal) + commitnuty
+dohnané hlavičky 26 kandidátních YAML po dnešním povyšování
+(nazevChaty/„profil chaty" — konvence s30).
+
+**Příště:** Po Michalově kliku projít sklizeň bez-GPS chat (hero pro
+Petrovu, Pomezní, Portášky…?); jinak dle pořadí backlogu — DATA-04
+(telefonáty jsou na Michalovi, ale dají se předpřipravit podklady),
+nebo rovnou F1-IMPL (čtyřblok 28. 7. má prioritu F1a).
+
+**Otázky pro Michala:** (1) Klik na Actions → „DATA-02: fotky chat
+z Wikimedia Commons" → Run workflow — první běh, který hledá fotky VŠEM
+chatám fondu vč. 12 bez GPS. (2) Drobnost k vědomí, ne k rozhodnutí:
+hlavička kandidátního YAML bere název chaty z AKTUÁLNÍCH dat — když se
+název mezi exportem a transformací změní (dnes Amor → „Chata Amor"),
+hlavička tvrdí frázi fulltextu, kterou starý export doslova nehledal;
+srovná se to samo dalším ostrým během, do exportu bych kvůli tomu
+nesahal.
+
 ## 2026-07-27 — pokračování 20: HANDOFF F1 PŘIJAT — design session hotová, implementace odblokována
 
 **Michal večer dodal `kompletni_návrh.zip`** z design session (Claude

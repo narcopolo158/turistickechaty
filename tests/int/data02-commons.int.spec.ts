@@ -16,6 +16,7 @@ import {
   cistyText,
   dobaCekaniMs,
   FULLTEXT_MAX_GEOTAG_M,
+  maGps,
   nactiChaty,
   nactiSurovyExport,
   posudLicenci,
@@ -32,7 +33,8 @@ import {
   type CommonsStranka,
 } from '../../scripts/data02-commons-fotky'
 
-const CHATA: ChataProDotaz = {
+// Typ s povinnou GPS: testy s ní počítají aritmeticky (CHATA.lat + 0.01).
+const CHATA: ChataProDotaz & { lat: number; lng: number } = {
   slug: 'lucni-bouda',
   nazev: 'Luční bouda',
   oblast: 'krkonose',
@@ -208,6 +210,31 @@ describe('zpracujOdpovedi', () => {
     expect(fotky[0].nalezeno).toBe('geosearch')
     expect(odmitnuto).toHaveLength(0)
   })
+
+  it('chata bez GPS: geosearch neproběhl, vzdálenosti nejsou a geotag filtr fulltextu se neuplatní', () => {
+    const bezGps: ChataProDotaz = { slug: 'petrova-bouda', nazev: 'Petrova bouda', oblast: 'krkonose', profil: 'rucni' }
+    const daleko = stranka('File:Petrova bouda 1925.jpg', BY, {
+      coordinates: [{ lat: 51.7, lon: 15.7 }], // není od čeho měřit — chata GPS nemá
+    })
+    const bezGeotagu = stranka('File:Petrova bouda pohlednice.jpg', BY)
+    const { fotky, odmitnuto } = zpracujOdpovedi(bezGps, undefined, odpoved([]), odpoved([daleko, bezGeotagu]))
+    expect(odmitnuto).toHaveLength(0) // bez GPS chaty nemá geotag filtr od čeho měřit — rozhodne redakce
+    expect(fotky).toHaveLength(2)
+    const geotagovana = fotky.find((f) => f.soubor === 'File:Petrova bouda 1925.jpg')
+    expect(geotagovana?.vzdalenostM).toBeUndefined()
+    expect(geotagovana?.geotag).toBe('51.7, 15.7') // surový geotag snímku pro ruční posouzení
+    expect(fotky.find((f) => f.soubor === 'File:Petrova bouda pohlednice.jpg')?.geotag).toBeUndefined()
+    expect(fotky.every((f) => f.nalezeno === 'fulltext')).toBe(true)
+  })
+
+  it('u chaty s GPS se geotag nálezu nezapisuje (tatáž informace je ve vzdálenosti)', () => {
+    const blizko = stranka('File:Lucni bouda.jpg', BY, {
+      coordinates: [{ lat: CHATA.lat + 0.0001, lon: CHATA.lng }],
+    })
+    const { fotky } = zpracujOdpovedi(CHATA, odpoved([blizko]), odpoved([]))
+    expect(fotky[0].vzdalenostM).toBeDefined()
+    expect(fotky[0].geotag).toBeUndefined()
+  })
 })
 
 describe('yamlFotek + zapisKandidatyFotek', () => {
@@ -275,11 +302,23 @@ describe('nactiChaty', () => {
     zapis('data/kandidati/krkonose/vyrovka.yaml', 'nazev: Výrovka\nslug: vyrovka\nlat: 50.72\nlng: 15.68\n')
     zapis('data/kandidati/krkonose/_overpass-export.json', '{}')
     zapis('data/kandidati/fotky/krkonose/vyrovka.yaml', 'chata: vyrovka\n') // výstup DATA-02, ne chata
-    zapis('data/kandidati/krkonose/bez-gps.yaml', 'nazev: Bez GPS\nslug: bez-gps\n')
+    zapis('data/kandidati/krkonose/bez-nazvu.yaml', 'slug: bez-nazvu\nlat: 50.7\nlng: 15.7\n')
     const { chaty, preskoceno } = nactiChaty(koren)
     expect(chaty.map((ch) => `${ch.slug}:${ch.profil}`).sort()).toEqual(['lucni-bouda:rucni', 'vyrovka:kandidat'])
     expect(preskoceno).toHaveLength(1)
-    expect(preskoceno[0]).toContain('bez-gps')
+    expect(preskoceno[0]).toContain('bez-nazvu')
+  })
+
+  it('chatu bez GPS nezahazuje — načte ji pro režim kategorie + fulltext (12 profilů bez OSM podkladu)', () => {
+    zapis('data/chaty/krkonose/petrova-bouda.yaml', 'nazev: Petrova bouda\nslug: petrova-bouda\n')
+    // osamocená souřadnice je vada dat — nedomýšlí se, chata jede jako bez GPS
+    zapis('data/chaty/krkonose/pulka-gps.yaml', 'nazev: Půlka GPS\nslug: pulka-gps\nlat: 50.7\n')
+    const { chaty, preskoceno } = nactiChaty(koren)
+    expect(preskoceno).toHaveLength(0)
+    expect(chaty.map((ch) => `${ch.slug}:${maGps(ch)}`).sort()).toEqual([
+      'petrova-bouda:false',
+      'pulka-gps:false',
+    ])
   })
 
   it('při shodě slugu má ruční profil přednost před kandidátem', () => {
@@ -387,5 +426,24 @@ describe('yamlFotek hlavička', () => {
     expect(sFulltextem).toContain('fulltext „Luční bouda"')
     expect(sFulltextem).toContain('jen `fulltext`') // varování redakci: shoda jména ≠ tento objekt
     expect((parse(sFulltextem) as Record<string, unknown>).zdroj).toContain('+ fulltext')
+  })
+
+  it('chata bez GPS: hlavička netvrdí geosearch a přiznává, že vzdálenosti nejsou', () => {
+    const bezGps: ChataProDotaz = { slug: 'petrova-bouda', nazev: 'Petrova bouda', oblast: 'krkonose', profil: 'rucni' }
+    const text = yamlFotek(bezGps, [], '2026-07-27', 300, true)
+    expect(text).not.toContain('geosearch 300 m') // neproběhl — hlavička ho nesmí tvrdit
+    expect(text).toContain('CHATA BEZ GPS V YAML')
+    expect(text).toContain('fulltext „Petrova bouda"')
+    const data = parse(text) as Record<string, unknown>
+    expect(data.zdroj).toContain('bez GPS')
+    expect(data.zdroj).toContain('geosearch neproběhl')
+    expect(data.zdroj).not.toContain('geosearch +') // výčet dotazů začíná kategorií
+  })
+
+  it('urlGeosearch bez GPS je chyba volajícího — dotaz nemá okolo čeho hledat', () => {
+    const bezGps: ChataProDotaz = { slug: 'x', nazev: 'X', oblast: 'krkonose', profil: 'rucni' }
+    expect(() => urlGeosearch(API_COMMONS, bezGps, 300)).toThrow(/bez GPS/)
+    expect(maGps(CHATA)).toBe(true)
+    expect(maGps(bezGps)).toBe(false)
   })
 })

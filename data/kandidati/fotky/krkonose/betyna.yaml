@@ -1,5 +1,5 @@
-# Betyna — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Betyna + fulltext „Betyna" (namespace File) na commons.wikimedia.org
+# Chata Betyna — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Chata Betyna + fulltext „Chata Betyna" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
@@ -8,9 +8,9 @@
 
 chata: betyna
 oblast: krkonose
-nazevChaty: Betyna
+nazevChaty: Chata Betyna
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
-  kandidát DATA-01"
+  data/chaty"
 checked: 2026-07-27
 fotky:
   - soubor: File:Pec 124.jpg

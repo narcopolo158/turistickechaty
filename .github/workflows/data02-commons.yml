@@ -2,8 +2,10 @@
 # Commons API nedosáhne (proxy), GitHub Actions ano. Spouští se ručně jedním
 # klikem (Actions → „DATA-02: fotky chat z Wikimedia Commons" → Run workflow).
 #
-# Běh: (1) pro každou chatu s GPS (data/chaty/** i kandidáti DATA-01) položí
-# geosearch + kategorii + fulltext názvu na Commons API a surové odpovědi
+# Běh: (1) pro každou chatu (data/chaty/** i kandidáti DATA-01) položí
+# geosearch + kategorii + fulltext názvu na Commons API — chaty BEZ GPS
+# v YAML dostanou jen kategorii + fulltext (geosearch nemá okolo čeho
+# hledat; dřív se tiše přeskakovaly) — a surové odpovědi
 # commitne jako doklad (data/kandidati/fotky/_commons-export.json), (2) v
 # témže běhu je licenční
 # síto (jen CC0 / CC BY / CC BY-SA / public domain) převede na kandidátní

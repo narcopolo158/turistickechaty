@@ -1,19 +1,25 @@
 /**
  * DATA-02: fotky chat z Wikimedia Commons — kandidátní METADATA.
  *
- * Pro každou chatu s GPS (ruční profily v `data/chaty/**` i OSM kandidáty
- * v `data/kandidati/<oblast>/`) položí na Commons API tři dotazy:
- *   1. geosearch — soubory (namespace 6) v okruhu kolem GPS chaty,
+ * Pro každou chatu (ruční profily v `data/chaty/**` i OSM kandidáty
+ * v `data/kandidati/<oblast>/`) položí na Commons API až tři dotazy:
+ *   1. geosearch — soubory (namespace 6) v okruhu kolem GPS chaty
+ *      (JEN u chat s GPS v YAML — bez souřadnic není okolo čeho hledat),
  *   2. kategorie — soubory v `Category:<název chaty>` (pokud existuje),
  *   3. fulltext — hledání přesné fráze názvu chaty v namespace File
  *      (chytá pojmenované soubory BEZ geotagu, které geosearch mine —
  *      lekce z první dávky povyšování: Klínovka, Tetřevky, U Jirky a
  *      Lovecká měly 0 kandidátů, Špindlerovka jen záběry parkoviště).
+ * Chaty BEZ GPS v YAML (profily povýšené z katalogu/známek bez OSM
+ * podkladu — nález ze session 27. 7.) se dřív tiše přeskakovaly a hero
+ * nemohly dostat nikdy; teď dostanou kategorii + fulltext. U jejich
+ * nálezů nejde měřit vzdálenost od chaty — geotagované nesou surový
+ * geotag snímku a polohu vůči chatě posuzuje redakce ručně.
  * Fulltext je z těch tří nejméně přesný (jiné objekty téhož jména!):
  * nález POUZE z fulltextu s geotagem dál než FULLTEXT_MAX_GEOTAG_M se
- * vyřazuje rovnou, negeotagované nálezy zůstávají kandidáty s původem
- * `fulltext` — jestli je na snímku právě tahle chata, rozhodne redakce
- * na stránce souboru.
+ * u chat s GPS vyřazuje rovnou, negeotagované nálezy zůstávají kandidáty
+ * s původem `fulltext` — jestli je na snímku právě tahle chata, rozhodne
+ * redakce na stránce souboru.
  * Výsledek filtruje TVRDÝM licenčním sítem a zapisuje jen metadata do
  * `data/kandidati/fotky/<oblast>/<slug>.yaml` — SOUBORY SE NESTAHUJÍ,
  * výběr, stažení a nahrání do kolekce Fotky dělá redakce ručně.
@@ -61,10 +67,15 @@ export type ChataProDotaz = {
   slug: string
   nazev: string
   oblast: string
-  lat: number
-  lng: number
+  /** GPS chybí u profilů bez doloženého zdroje souřadnic — pak běží jen kategorie + fulltext. */
+  lat?: number
+  lng?: number
   profil: 'rucni' | 'kandidat'
 }
+
+/** Chata má v YAML kompletní GPS (obě souřadnice) — smí na geosearch a měření vzdáleností. */
+export const maGps = (chata: ChataProDotaz): chata is ChataProDotaz & { lat: number; lng: number } =>
+  typeof chata.lat === 'number' && typeof chata.lng === 'number'
 
 const nactiYamlChaty = (
   cesta: string,
@@ -77,16 +88,21 @@ const nactiYamlChaty = (
     lat?: number
     lng?: number
   } | null
-  if (!data?.slug || !data?.nazev || typeof data.lat !== 'number' || typeof data.lng !== 'number') {
-    return null
+  if (!data?.slug || !data?.nazev) return null
+  const chata: ChataProDotaz = { slug: data.slug, nazev: data.nazev, oblast, profil }
+  // GPS jen v páru — osamocená souřadnice je vada dat, nedomýšlí se (chata jede bez GPS režimem).
+  if (typeof data.lat === 'number' && typeof data.lng === 'number') {
+    chata.lat = data.lat
+    chata.lng = data.lng
   }
-  return { slug: data.slug, nazev: data.nazev, oblast, lat: data.lat, lng: data.lng, profil }
+  return chata
 }
 
 /**
- * Sesbírá chaty s GPS z `data/chaty/<oblast>/` a `data/kandidati/<oblast>/`
+ * Sesbírá chaty z `data/chaty/<oblast>/` a `data/kandidati/<oblast>/`
  * (adresář `fotky` v kandidátech patří tomuto skriptu, ne chatám — přeskakuje
- * se, stejně jako soubory `_*` a ne-YAML). Ruční profil má při shodě slugu
+ * se, stejně jako soubory `_*` a ne-YAML). Chaty bez GPS se NEzahazují —
+ * jedou režimem kategorie + fulltext. Ruční profil má při shodě slugu
  * přednost před kandidátem.
  */
 export const nactiChaty = (koren: string): { chaty: ChataProDotaz[]; preskoceno: string[] } => {
@@ -106,7 +122,7 @@ export const nactiChaty = (koren: string): { chaty: ChataProDotaz[]; preskoceno:
         if (!soubor.endsWith('.yaml') || soubor.startsWith('_')) continue
         const chata = nactiYamlChaty(join(oblastDir, soubor), oblast, profil)
         if (!chata) {
-          preskoceno.push(`${oblast}/${soubor} (${profil}) — chybí slug/nazev/GPS`)
+          preskoceno.push(`${oblast}/${soubor} (${profil}) — chybí slug/nazev`)
           continue
         }
         const klic = `${chata.oblast}/${chata.slug}`
@@ -134,8 +150,9 @@ const spolecneParametry = (): URLSearchParams =>
     colimit: 'max',
   })
 
-/** Soubory (namespace 6) v okruhu kolem GPS chaty. */
+/** Soubory (namespace 6) v okruhu kolem GPS chaty — jen pro chaty s GPS. */
 export const urlGeosearch = (api: string, chata: ChataProDotaz, radiusM: number): string => {
+  if (!maGps(chata)) throw new Error(`geosearch bez GPS nejde (${chata.slug}) — chyba volajícího.`)
   const p = spolecneParametry()
   p.set('generator', 'geosearch')
   p.set('ggscoord', `${chata.lat}|${chata.lng}`)
@@ -325,8 +342,11 @@ export type FotkaKandidat = {
   original: string
   nahled?: string
   rozmery?: string
-  /** Vzdálenost geotagu fotky od GPS chaty (m) — jen u geotagovaných. */
+  /** Vzdálenost geotagu fotky od GPS chaty (m) — jen u geotagovaných nálezů chat s GPS. */
   vzdalenostM?: number
+  /** Surový geotag snímku „lat, lon" — jen u chat BEZ GPS v YAML (není od čeho měřit);
+   *  polohu vůči chatě posuzuje redakce ručně (obec, adresa, mapa). */
+  geotag?: string
   datum?: string
   popis?: string
   /** Původ nálezu: zdroje v kanonickém pořadí, např. „geosearch + fulltext". */
@@ -366,7 +386,11 @@ const fotkaZeStranky = (
   if (info.width && info.height) fotka.rozmery = `${info.width}×${info.height}`
   const geotag = stranka.coordinates?.[0]
   if (typeof geotag?.lat === 'number' && typeof geotag?.lon === 'number') {
-    fotka.vzdalenostM = vzdalenostM(geotag.lat, geotag.lon, chata.lat, chata.lng)
+    if (maGps(chata)) {
+      fotka.vzdalenostM = vzdalenostM(geotag.lat, geotag.lon, chata.lat, chata.lng)
+    } else {
+      fotka.geotag = `${geotag.lat}, ${geotag.lon}`
+    }
   }
   const datum = cistyText(meta?.DateTimeOriginal?.value, 40)
   if (datum) fotka.datum = datum
@@ -383,9 +407,12 @@ const PORADI_DRUHU: DruhNalezu[] = ['geosearch', 'kategorie', 'fulltext']
  * licenčním sítem a deterministicky seřadí: geotagované dle vzdálenosti od
  * chaty, pak abecedně. Nález POUZE z fulltextu s geotagem dál než
  * FULLTEXT_MAX_GEOTAG_M se vyřazuje (jiný objekt téhož jména — např.
- * „Lovecká chata" kdekoli v ČR). Vyřazené jdou do reportu — do YAML
- * kandidátů nepatří. `fulltextJson` je volitelný kvůli starším exportům
- * bez fulltext dotazu (offline --z-jsonu je zpracuje beze změny).
+ * „Lovecká chata" kdekoli v ČR) — jen u chat s GPS; bez GPS není od čeho
+ * měřit, nález zůstává kandidátem se surovým geotagem a rozhodne redakce.
+ * Vyřazené jdou do reportu — do YAML kandidátů nepatří. `geosearchJson`
+ * je `undefined` u chat bez GPS (dotaz neproběhl), `fulltextJson` u
+ * starších exportů bez fulltext dotazu (offline --z-jsonu je zpracuje
+ * beze změny).
  */
 export const zpracujOdpovedi = (
   chata: ChataProDotaz,
@@ -393,10 +420,11 @@ export const zpracujOdpovedi = (
   kategorieJson: unknown,
   fulltextJson?: unknown,
 ): { fotky: FotkaKandidat[]; odmitnuto: OdmitnutaFotka[] } => {
-  const zdroje: { stranky: CommonsStranka[]; druh: DruhNalezu }[] = [
-    { stranky: strankyZOdpovedi(geosearchJson, 'geosearch'), druh: 'geosearch' },
-    { stranky: strankyZOdpovedi(kategorieJson, 'kategorie'), druh: 'kategorie' },
-  ]
+  const zdroje: { stranky: CommonsStranka[]; druh: DruhNalezu }[] = []
+  if (geosearchJson !== undefined) {
+    zdroje.push({ stranky: strankyZOdpovedi(geosearchJson, 'geosearch'), druh: 'geosearch' })
+  }
+  zdroje.push({ stranky: strankyZOdpovedi(kategorieJson, 'kategorie'), druh: 'kategorie' })
   if (fulltextJson !== undefined) {
     zdroje.push({ stranky: strankyZOdpovedi(fulltextJson, 'fulltext'), druh: 'fulltext' })
   }
@@ -453,11 +481,24 @@ export const yamlFotek = (
   checked: string,
   radiusM: number,
   sFulltextem = false,
-): string =>
-  [
+): string => {
+  const sGps = maGps(chata)
+  const zdrojRadek = sGps
+    ? `# Zdroj: geosearch ${radiusM} m okolo GPS chaty + Category:${chata.nazev}${sFulltextem ? ` + fulltext „${chata.nazev}" (namespace File)` : ''} na commons.wikimedia.org`
+    : `# Zdroj: Category:${chata.nazev}${sFulltextem ? ` + fulltext „${chata.nazev}" (namespace File)` : ''} na commons.wikimedia.org`
+  const zdrojPole = sGps
+    ? `Wikimedia Commons API (geosearch + kategorie${sFulltextem ? ' + fulltext' : ''})`
+    : `Wikimedia Commons API (kategorie${sFulltextem ? ' + fulltext' : ''} — chata bez GPS v YAML, geosearch neproběhl)`
+  return [
     `# ${chata.nazev} — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz ${checked})`,
-    `# Zdroj: geosearch ${radiusM} m okolo GPS chaty + Category:${chata.nazev}${sFulltextem ? ` + fulltext „${chata.nazev}" (namespace File)` : ''} na commons.wikimedia.org`,
+    zdrojRadek,
     '# Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).',
+    ...(sGps
+      ? []
+      : [
+          '# CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;',
+          '# u geotagovaných nálezů je surový geotag snímku, polohu vůči chatě posoudí redakce.',
+        ]),
     ...(sFulltextem
       ? [
           '# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,',
@@ -471,11 +512,12 @@ export const yamlFotek = (
       chata: chata.slug,
       oblast: chata.oblast,
       nazevChaty: chata.nazev,
-      zdroj: `Wikimedia Commons API (geosearch + kategorie${sFulltextem ? ' + fulltext' : ''}), profil chaty: ${chata.profil === 'rucni' ? 'data/chaty' : 'kandidát DATA-01'}`,
+      zdroj: `${zdrojPole}, profil chaty: ${chata.profil === 'rucni' ? 'data/chaty' : 'kandidát DATA-01'}`,
       checked,
       fotky,
     }),
   ].join('\n')
+}
 
 export type ReportChaty = {
   slug: string
@@ -484,6 +526,8 @@ export type ReportChaty = {
   prijato: number
   /** Kolik z přijatých našel JEN fulltext (redakce u nich ověřuje objekt). */
   jenFulltext: number
+  /** Chata bez GPS v YAML — jela jen kategorie + fulltext, vzdálenosti nejsou. */
+  bezGps: boolean
   odmitnuto: OdmitnutaFotka[]
 }
 
@@ -509,8 +553,9 @@ export type SurovyExport = {
   radiusM: number
   api: string
   /** Odpovědi API po chatách: `<oblast>/<slug>` → { geosearch, kategorie,
-   *  fulltext }. `fulltext` chybí ve starších exportech (před rozšířením). */
-  dotazy: Record<string, { geosearch: unknown; kategorie: unknown; fulltext?: unknown }>
+   *  fulltext }. `fulltext` chybí ve starších exportech (před rozšířením),
+   *  `geosearch` u chat bez GPS v YAML (dotaz neproběhl). */
+  dotazy: Record<string, { geosearch?: unknown; kategorie: unknown; fulltext?: unknown }>
 }
 
 export const cestaExportu = (koren: string): string =>
@@ -546,7 +591,8 @@ const main = async () => {
   const koren = process.cwd()
 
   const { chaty, preskoceno } = nactiChaty(koren)
-  if (chaty.length === 0) throw new Error('Žádná chata s GPS v data/chaty/ ani data/kandidati/.')
+  if (chaty.length === 0) throw new Error('Žádná chata v data/chaty/ ani data/kandidati/.')
+  const bezGpsPocet = chaty.filter((ch) => !maGps(ch)).length
 
   let exportDat: SurovyExport
   if (zJsonu) {
@@ -558,20 +604,26 @@ const main = async () => {
     exportDat = nactiSurovyExport(readFileSync(cesta, 'utf8'))
   } else {
     const checked = new Date().toISOString().slice(0, 10)
-    console.log(`Commons dotazy (${api}, geosearch ${radiusM} m + kategorie + fulltext) pro ${chaty.length} chat…`)
+    console.log(
+      `Commons dotazy (${api}, geosearch ${radiusM} m + kategorie + fulltext; bez GPS jen kategorie + fulltext: ${bezGpsPocet}) pro ${chaty.length} chat…`,
+    )
     exportDat = { checked, radiusM, api, dotazy: {} }
     // Tempo pod 1 dotaz/s: první ostrý běh na 2/s narážel na 429 po ~10
     // dotazech — limiter sdílených IP runnerů chce opravdu volnou chůzi.
     const TEMPO_MS = 1200
     for (const chata of chaty) {
-      const geosearch = await stahniJson(urlGeosearch(api, chata, radiusM))
-      await spanek(TEMPO_MS)
+      const sGps = maGps(chata)
+      const geosearch = sGps ? await stahniJson(urlGeosearch(api, chata, radiusM)) : undefined
+      if (sGps) await spanek(TEMPO_MS)
       const kategorie = await stahniJson(urlKategorie(api, chata))
       await spanek(TEMPO_MS)
       const fulltext = await stahniJson(urlFulltext(api, chata))
       await spanek(TEMPO_MS)
-      exportDat.dotazy[`${chata.oblast}/${chata.slug}`] = { geosearch, kategorie, fulltext }
-      console.log(`- ${chata.nazev}: dotazy staženy`)
+      // U chat bez GPS klíč `geosearch` v exportu vůbec není — doklad, že dotaz neproběhl.
+      exportDat.dotazy[`${chata.oblast}/${chata.slug}`] = sGps
+        ? { geosearch, kategorie, fulltext }
+        : { kategorie, fulltext }
+      console.log(`- ${chata.nazev}: dotazy staženy${sGps ? '' : ' (bez GPS — jen kategorie + fulltext)'}`)
     }
     mkdirSync(join(koren, 'data', 'kandidati', 'fotky'), { recursive: true })
     writeFileSync(cestaExportu(koren), `${JSON.stringify(exportDat, null, 1)}\n`, 'utf8')
@@ -594,23 +646,33 @@ const main = async () => {
       nazev: chata.nazev,
       prijato: fotky.length,
       jenFulltext: fotky.filter((f) => f.nalezeno === 'fulltext').length,
+      bezGps: !maGps(chata),
       odmitnuto,
     })
   }
 
   console.log(`\n## DATA-02 report (dotaz ${exportDat.checked}, geosearch ${exportDat.radiusM} m + fulltext)`)
   console.log(`\nChaty s kandidátními fotkami: ${reporty.filter((r) => r.prijato > 0).length} z ${reporty.length}`)
+  const bezGpsVReportu = reporty.filter((r) => r.bezGps)
+  if (bezGpsVReportu.length > 0) {
+    console.log(
+      `Chaty bez GPS v YAML (geosearch neproběhl, jen kategorie + fulltext): ${bezGpsVReportu.length} — vzdálenosti od chaty u nich nejsou, polohu nálezů posuzuje redakce.`,
+    )
+  }
   for (const r of reporty) {
     console.log(`\n### ${r.nazev} (\`data/kandidati/fotky/${r.oblast}/${r.slug}.yaml\`)`)
     const fulltextInfo = r.jenFulltext > 0 ? ` (z toho jen fulltext — ověřit objekt: ${r.jenFulltext})` : ''
-    console.log(`- přijato: ${r.prijato}${fulltextInfo} · vyřazeno sítem: ${r.odmitnuto.length}`)
+    const bezGpsInfo = r.bezGps ? ' · CHATA BEZ GPS — jen kategorie + fulltext' : ''
+    console.log(`- přijato: ${r.prijato}${fulltextInfo} · vyřazeno sítem: ${r.odmitnuto.length}${bezGpsInfo}`)
     for (const o of r.odmitnuto) console.log(`  - ✗ ${o.soubor} — ${o.duvod}`)
   }
   if (bezDotazu.length > 0) {
-    console.log(`\nBez dotazu v exportu (chata přibyla po stažení — pustit znovu bez --z-jsonu): ${bezDotazu.join(', ')}`)
+    console.log(
+      `\nBez dotazu v exportu (chata přibyla po stažení, nebo starší export bez režimu pro chaty bez GPS — pustit znovu bez --z-jsonu): ${bezDotazu.join(', ')}`,
+    )
   }
   if (preskoceno.length > 0) {
-    console.log(`\nPřeskočené YAML (bez slug/nazev/GPS): ${preskoceno.length}`)
+    console.log(`\nPřeskočené YAML (bez slug/nazev): ${preskoceno.length}`)
     for (const p of preskoceno) console.log(`- ${p}`)
   }
 }

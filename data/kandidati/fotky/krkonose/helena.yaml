@@ -1,5 +1,5 @@
-# Helena — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Helena + fulltext „Helena" (namespace File) na commons.wikimedia.org
+# Bouda Helena — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Bouda Helena + fulltext „Bouda Helena" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
@@ -8,9 +8,9 @@
 
 chata: helena
 oblast: krkonose
-nazevChaty: Helena
+nazevChaty: Bouda Helena
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
-  kandidát DATA-01"
+  data/chaty"
 checked: 2026-07-27
 fotky:
   - soubor: File:Černý Důl, Lučiny, čp. 215, Pražská bouda (02).jpg
