@@ -59,9 +59,11 @@ overeniLokace:
   checked: '2026-07-27'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# `kapacita` ZÁMĚRNĚ NEVYPLNĚNA — TŘI různá čísla: 28 (web objektu) ×
-# 23 (ceskehory.cz) × 20 (treking.cz, 10×2). Nedomýšlet, rozsah nese próza.
+# kapacita 20 dle pravidla Michala (27. 7. 2026): při rozporu uvést NIŽŠÍ
+# číslo — prameny nesou 28 (web) × 23 (ceskehory) × 20 (treking, 10×2);
+# rozsah dál přiznává próza.
 nocleh: ano
+kapacita: 20
 pokoje:
   - typ: Pokoj Standard pro 2 osoby (25 m²)
   - typ: Pokoj Deluxe pro 3 osoby (27 m²)
@@ -71,8 +73,9 @@ overeniNocleh:
     Web objektu (načteno 2026-07-27): „Počet lůžek: 28", pokoje „Standard"
     (2 osoby, 25 m²), „Deluxe" (3 osoby, 27 m²), „Apartmán" (4 osoby,
     50 m²). ROZPOR KAPACITY VE TŘECH: 28 (web objektu) × 23 (ceskehory.cz)
-    × 20 (treking.cz — „10×2"; oba rešerše 2026-07-26) — pole proto vědomě
-    NEVYPLNĚNO, rozsah přiznává próza. Verified:false
+    × 20 (treking.cz — „10×2"; oba rešerše 2026-07-26). ROZHODNUTÍ MICHALA
+    (27. 7. 2026, pravidlo z otázky č. 14): při rozporu uvést NIŽŠÍ číslo →
+    kapacita 20; rozsah dál přiznává próza. Verified:false
   verified: false
   checked: '2026-07-27'
 
@@ -156,8 +159,9 @@ text:
     pětadvaceti metrech, Deluxe pro tři a apartmán pro čtyři osoby na
     padesáti metrech čtverečních. U celkového počtu lůžek se prameny
     rozcházejí hned natřikrát — web objektu uvádí dvacet osm, servery
-    Českéhory.cz a Treking.cz pak třiadvacet, respektive dvacet — proto
-    číslo neuvádíme a čekáme na potvrzení od boudy.
+    Českéhory.cz a Treking.cz pak třiadvacet, respektive dvacet —
+    v přehledu proto vedeme opatrnější nejnižší číslo a čekáme na
+    potvrzení od boudy.
   - >-
     Údaje na téhle stránce pocházejí z webu objektu, který jsme načetli
     27. července 2026, a ze serverů Treking.cz, Českéhory.cz a portálu

@@ -1,0 +1,149 @@
+# Chatka Puchatka — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Rozhodnutí o polských spolkových chatkách nechal Michal na redakci
+# (otázka č. 5) — zařazeno pod DATA-25: samoobslužný schron v Sowí dolině
+# s turistickou minulostí (1966 ještě otevřený), dnes zamčený majetek
+# národního parku a profil to říká nahlas. POZOR NA JMENOVCE (penziony
+# téhož jména ve Szklarske Porębě a Michałowicích — JINÉ objekty).
+# Vše verified: false.
+
+nazev: Chatka Puchatka
+slug: chatka-puchatka
+zeme: pl
+typ: utulna
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno); místopisný web uvádí tytéž
+# souřadnice a ~1160 m.
+lat: 50.7457582
+lng: 15.7809053
+vyska: 1160
+overeniLokace:
+  source: >-
+    místopisný web polska-org.pl (otevřeno 27. 7. 2026), doslova:
+    „Schron samoobsługowy w górnej części Sowiej Doliny, położony na
+    wysokości ok. 1160 m npm., na stromym Czarnym Zboczu." — GPS na
+    stránce (50,7458 / 15,7810) se shoduje s OSM. Regionální
+    zpravodajství (24jgora.pl, otevřeno 27. 7. 2026): „Chatkę Puchatka
+    w Sowiej Dolinie w pobliżu Karpacza". JMENOVCI: „Chatka Puchatka"
+    ve Szklarske Porębě (pronájem domu) a „Willa Chatka Puchatka"
+    v Michałowicích jsou JINÉ objekty — ověřeno, nezaměňovat. GPS:
+    OpenStreetMap https://www.openstreetmap.org/way/863642807 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    v terénu neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# nocleh: ne — schron je zamčený a park s veřejným noclehem nepočítá;
+# kapacitu žádný pramen nenese.
+nocleh: ne
+overeniNocleh:
+  source: >-
+    osobní reportáž (nocpodgwiazdami.pl, otevřeno 27. 7. 2026), doslova:
+    „ten obiekt jest zamknięty a klucze posiada wąska grupa wybrańców";
+    shodně blog výletu (bajdarka.blogspot.com, 2022): „była jednak
+    zamknięta na cztery spusty" a „chatka znajduje się obecnie
+    w wyłącznym władaniu Parku Karkonoskiego i niestety nie opiekuje się
+    nią już grupa pasjonatów." Uvnitř dle reportáže poddaší na spaní
+    a jedno lůžko — kapacitu žádný pramen číselně nenese.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+overeniObcerstveni:
+  source: >-
+    občerstvení žádný z otevřených pramenů neuvádí (srub se stolem,
+    krbem a poddaším — nocpodgwiazdami.pl, otevřeno 27. 7. 2026) — pole
+    se nevyplňují.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ PRÁZDNÝ: vznik nedoložen; fotopopisek dokládá, že
+# v létě 1966 byla chatka „ještě otevřená a samoobslužná".
+overeniHistorie:
+  source: >-
+    místopisný web polska-org.pl (fotogalerie, otevřeno 27. 7. 2026),
+    popisek doslova: „Chatka Puchatka »w niesprzyjających warunkach
+    atmosferycznych« latem 1966. Wtedy jeszcze otwarta i samoobsługowa."
+    — rok vzniku prameny nenesou. Novодobá správa: kvartálník PTTK
+    (otevřeno 27. 7. 2026): „Ostatnio chatką opiekowali się członkowie
+    Stowarzyszenia «Radio Młodych Wrocław»"; regionální zprávy
+    (naszesudety.pl, jelonka.com, 27. 7. 2026): od 3. 11. 2008 objekt
+    užívalo sdružení Creativo, majitelem je Karkonoski Park Narodowy
+    („Właścicielem obiektu jest Karkonoski Park Narodowy." — jelonka),
+    park po sporech chatku vyloučil ze zpřístupňování externím subjektům
+    a dle plánu ochrany ji vyhrazuje ochranářským pracím, výzkumu
+    a ekologické výchově.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    vlastníkem a správcem je Karkonoski Park Narodowy (jelonka.com,
+    naszesudety.pl — otevřeno 27. 7. 2026); objekt zamčený, „klucze
+    posiada wąska grupa wybrańców" (nocpodgwiazdami.pl). Vzpomínkový
+    text e-karkonosze.eu: všechny dochované chatky jsou dnes „zamknięte
+    i zabezpieczone wymyślnymi antabami". Vlastním dotazem neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Malý srub vysoko v Sowí dolině nad Karpaczem, na strmém Černém svahu
+  kolem 1160 metrů. Kdysi otevřený samoobslužný schron — na snímku
+  z léta 1966 ještě přístupný komukoli — dnes patří Krkonošskému
+  národnímu parku, je zamčený a klíče má jen úzký okruh lidí. Do
+  průvodce patří svou minulostí; nocleh tu nehledejte.
+text:
+  - >-
+    Chatka Puchatka stojí v horní části Sowí doliny na polské straně
+    hor, na strmém svahu zvaném Czarne Zbocze, ve výšce kolem 1160
+    metrů. Pozor při hledání: penziony téhož jména ve Szklarske Porębě
+    a v Michałowicích jsou úplně jiné domy — tenhle srub se stolem před
+    vchodem najdete jen pěšky, stranou značených cest.
+  - >-
+    Bývaly doby, kdy schron sloužil každému, kdo do doliny zabloudil —
+    fotografie z léta 1966 ho zachycuje „ještě otevřený a samoobslužný".
+    Později o něj pečovali nadšenci, naposledy vratislavské sdružení
+    Radio Młodych a od podzimu 2008 sdružení Creativo; po sporech ale
+    zůstal ve výhradní správě Krkonošského národního parku, který ho
+    podle plánu ochrany vyhrazuje ochranářským pracím, výzkumu
+    a ekologické výchově.
+  - >-
+    Dnešek je tedy třeba říct bez obalu: chatka je zamčená a klíče má,
+    slovy reportáže, „úzká skupina vyvolených" — kolemjdoucí turista se
+    dovnitř nedostane a s noclehem tu počítat nemůže. V průvodci ji
+    vedeme jako památku na éru otevřených karkonoských chatek, které
+    zvolna mizí za zámky.
+  - >-
+    Údaje pocházejí z polského místopisného webu, regionálních zpráv
+    a reportáží; vlastním dotazem jsme zatím neověřili nic. Souřadnice
+    jsou z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap,
+    ODbL) a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Místopisný web polska-org.pl — schron v horní Sowí dolině,
+      ~1160 m, Czarne Zbocze; fotopopisek 1966 „ještě otevřená
+      a samoobslužná" (otevřeno 27. 7. 2026)
+    url: https://polska-org.pl/558203,Karpacz,Chatka_Puchatka.html
+  - popis: >-
+      Regionální zprávy naszesudety.pl a jelonka.com — vlastníkem
+      Karkonoski Park Narodowy, spor o užívání, vyloučení ze
+      zpřístupňování (otevřeno 27. 7. 2026)
+  - popis: >-
+      Reportáž nocpodgwiazdami.pl — zamčeno, „klucze posiada wąska grupa
+      wybrańców", vybavení srubu (otevřeno 27. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chatka-puchatka.yaml (DATA-01, OSM) 27. 7. 2026 — kategorii PL chatek nechal Michal na redakci (otázka č. 5); zařazeno pod DATA-25 (minulost otevřeného schronu; dnešní zámek nahlas). Rešerše: agentní běh 27. 7. (9 zdrojů; identita potvrzena GPS shodou polska-org × OSM + „Sowia Dolina w pobliżu Karpacza").
+  JMENOVCI (DATA-17): pronájem „Chatka Puchatka" Szklarska Poręba a „Willa Chatka Puchatka" Michałowice — vyloučeni, próza varuje.
+  nocleh: ne — jediný PL profil se zamčeným režimem bez jakéhokoli noclehu (Wielkanocna aspoň na klíče, Smogorniak má wiatrołap, AKT vítá čajem) — čtveřice pokrývá celé spektrum režimů.
+  Jméno „Puchatka" (= Pú z Medvídka Pú) — původ jména prameny nenesou, nedomýšlíme.
+  K dotažení: rok vzniku, kapacita (nezapisuje se), případný oficiální режим KPN, hero fotka.

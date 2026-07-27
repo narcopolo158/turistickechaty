@@ -34,18 +34,19 @@ overeniLokace:
   checked: '2026-07-26'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# ROZPOR KAPACITY: vlastní web 45 lůžek × naszesudety.pl 35. Pole nese
-# hodnotu vlastního webu, rozpor je přiznaný v próze (vzor Jelenka).
+# kapacita 35 dle pravidla Michala (27. 7. 2026): při rozporu uvést NIŽŠÍ
+# číslo — vlastní web 45 × naszesudety 35; rozpor dál přiznává próza.
 nocleh: ano
-kapacita: 45
+kapacita: 35
 overeniNocleh:
   source: >-
     vlastní web schroniska (srebrny-potok.net, otevřeno 26. 7. 2026):
     „45 miejsc noclegowych". Portál Naszesudety (naszesudety.pl, otevřeno
-    26. 7. 2026): „35 miejscami noclegowymi" — ROZPOR 45 × 35,
-    nerozhodnuto, přiznáno v próze.
+    26. 7. 2026): „35 miejscami noclegowymi" — ROZPOR 45 × 35. ROZHODNUTÍ
+    MICHALA (27. 7. 2026, pravidlo z otázky č. 14): při rozporu uvést
+    NIŽŠÍ číslo → kapacita 35; rozpor dál přiznává próza.
   verified: false
-  checked: '2026-07-26'
+  checked: '2026-07-27'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 # Bar doložen z vlastního webu; enum typObcerstveni hodnotu „bar" nemá,
@@ -107,7 +108,7 @@ text:
     dřevěný bar, otevřeno podle vlastního webu nepřetržitě a po celý rok.
     Na počtu míst se prameny neshodnou — vlastní stránky uvádějí 45,
     portál Naszesudety 35 — a protože nevíme, které číslo je novější,
-    uvádíme obě. U baru výslovná věta o obsluze kolemjdoucích na webu
+    uvádíme obě a v přehledu vedeme opatrnější nižší. U baru výslovná věta o obsluze kolemjdoucích na webu
     nestojí; u schroniska s nepřetržitým provozem ji ale nahrazuje sama
     povaha podniku.
   - >-
@@ -135,5 +136,5 @@ zdroje:
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/srebrny-potok.yaml (DATA-01, OSM) 27. 7. 2026 — schváleno Michalem 20. 7. 2026 (✅ en bloc), provedeno z citací triáže DATA-27 (plné citace tam).
   OPRAVA STARŠÍHO ZÁPISU: poloha „u Przełęczy Okraj" z kandidáta byla špatně — vlastní web klade objekt nad Jarkowice na Grzbiet Lasocki. Věta „nejníže položený a nejvýchodnější objekt průvodce" je ověřitelná proti korpusu (615 m je minimum; lng 15.88 maximum) — přepočítat při růstu korpusu.
-  ROZPOR kapacity 45 (vlastní web) × 35 (Naszesudety) — pole nese vlastní web, přiznáno v próze.
+  ROZPOR kapacity 45 (vlastní web) × 35 (Naszesudety) — dle pravidla Michala (27. 7. 2026) pole nese NIŽŠÍ číslo 35, přiznáno v próze.
   K dotažení: historie (polské prameny?), provozovatel, telefon/e-mail, polský znaczek (seznam znaczki-turystyczne.pl ze sandboxu nedostupný), hero fotka, GPS proti mapě.

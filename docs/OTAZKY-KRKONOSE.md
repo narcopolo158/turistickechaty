@@ -1,5 +1,22 @@
 # Otázky pro Michala — uzavření Krkonoš (27. 7. 2026)
 
+> **ZODPOVĚZENO A PROMÍTNUTO 27. 7. 2026 večer.** Michal vrátil dokument
+> s odpověďmi u všech 19 bodů; provedení: 1 kontext-potvrzen ·
+> 2 Mísečky povýšeny zvlášť · 3+4 Konopindova a Aurora publikovány se
+> stavem `zanikla` · 5 polská čtveřice zařazena (rozhodnutí redakce) ·
+> 6 Sasanka vrácena mezi kandidáty (doklad Firmy.cz), Tereza čeká na
+> ruční kontrolu · 7 kandidát Josefovy založen · 8 Raisova publikována
+> přesahově + systém DATA-29 + kandidát Prachova (cesky-raj) ·
+> 9 doporučení: observatoř = kandidát založit až s dokladem občerstvení
+> (Sněžku už nesou Poštovna a Dom Śląski; historie České boudy si
+> zaslouží samostatnou rešerši) · 10 U Kotle potvrzen · 11 JINDŘICHŮV
+> DŮM STAŽEN (nový klíč střediska) · 12 Studenov potvrzen (stánek =
+> svědectví, ověří telefonát) · 13 Eliška potvrzena mimo · 14 kapacitní
+> pravidlo „nižší číslo" zavedeno a aplikováno · 15 známka 2540
+> opravena · 16 obec potvrzena · 17 docs/TELEFONATY-KRKONOSE.md ·
+> 18 rotace odložena na konec vývoje · 19 vizitky: čísla + odkaz +
+> placeholder, obrázky až se souhlasem. Korpus: 68 → **76 profilů**.
+
 Krkonošská fronta je dojetá: **68 publikovaných profilů**, celá triáž
 DATA-27 vyřízena (15 silných + 4 s výhradou povýšeno, Mísečky drženy),
 10 vyřazených prošlo re-checkem novým klíčem. Tohle je slíbený

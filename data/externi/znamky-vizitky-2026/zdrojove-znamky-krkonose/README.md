@@ -68,7 +68,7 @@ přidat řádek do `obrazky.json` a známku do `krkonose.json`. Dřív ne — fi
 | č. | název na známce | výška | proč ne |
 |----|-----------------|-------|---------|
 | 2027 | Medvědín | 1235 m | vrchol / horní stanice lanovky Špindl — není bouda (region-krkonose.cz, kudyznudy.cz „lanová dráha Medvědín") |
-| 2640 | Modrokamenná bouda | — | ~~*rodinný penzion* … dle klíče „penzion bez doloženého veřejného občerstvení → ne"~~ **PŘEHODNOCENO 26. 7. 2026:** web obce Janské Lázně dokládá doslovnou větou „pro veřejnost slouží restaurace" → založen kandidát `data/kandidati/krkonose/modrokamenna-bouda.yaml`. Obrázek kotouče se nasadí až s povýšením. **POZOR — ROZPOR ČÍSLA ZNÁMKY:** fyzický kotouč od Michala nese **č. 2640**, kdežto oficiální seznam vydavatele z července 2026 vede položku **`2540 Modrokamenná Bouda, Krkonoše`**. Dvě čísla z téhož vydavatele — nerozhodnuto, ověřit u vydavatele (může jít o překlep v jednom z exportů, nebo o dvě různé známky). Vedeno i v DATA-22. |
+| 2640 | Modrokamenná bouda | — | ~~*rodinný penzion* … dle klíče „penzion bez doloženého veřejného občerstvení → ne"~~ **PŘEHODNOCENO 26. 7. 2026:** web obce Janské Lázně dokládá doslovnou větou „pro veřejnost slouží restaurace" → založen kandidát `data/kandidati/krkonose/modrokamenna-bouda.yaml`. Obrázek kotouče se nasadí až s povýšením. **ROZPOR ČÍSLA VYŘEŠEN (Michal, 27. 7. 2026): platí č. 2540** — potvrdil v odpovědích na otázky uzavření Krkonoš („je to 2540"); starší zápis fyzického kotouče jako 2640 se tím ruší (v evidenci ho necháváme jen jako historii omylu). Vedeno i v DATA-22. |
 
 ### 🔎 Historie: nový tip — známkové místo mimo náš katalog (4) → prověřeno 22. 7. 2026
 Bonus z plánu DATA-10 („zpětné dohledání chaty přes známkové místo"). Tehdy
@@ -99,7 +99,7 @@ absence.)
 | 393 | Vrbatova bouda | ano — **od 25. 7. 2026 publikováno** (založena 22. 7. přes známku) |
 
 **Chybí, ale správně** (nejsou boudy do průvodce): č.2027 Medvědín (vrchol/lanovka),
-č.2640 Modrokamenná bouda (penzion Janské Lázně — katalog vylučuje soukromé penziony).
+č.2540 Modrokamenná bouda (penzion Janské Lázně — katalog vylučuje soukromé penziony; číslo opraveno z dřívějšího chybného zápisu 2640 — potvrdil Michal 27. 7. 2026).
 
 **Závěr:** ostatních **20 známkových míst v katalogu je** a všech 20 už máme
 (publikované nebo kandidáti). Katalog je dobrý vodicí základ pro doplňování, ale

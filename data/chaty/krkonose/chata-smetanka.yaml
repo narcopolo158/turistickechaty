@@ -32,15 +32,18 @@ overeniLokace:
   checked: '2026-07-27'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# kapacita se NEZAPISUJE: krajský katalog 55 lůžek × Kudy z nudy
-# „i s přistýlkami 50" — rozpor se přiznává, nerozhodujeme.
+# kapacita 50 dle pravidla Michala (27. 7. 2026): při rozporu uvést NIŽŠÍ
+# číslo — krajský katalog 55 × Kudy z nudy „i s přistýlkami 50".
 nocleh: ano
+kapacita: 50
 overeniNocleh:
   source: >-
     krajský katalog (region-krkonose.cz, otevřeno 27. 7. 2026): „Kapacita
     objektu: 55 lůžek" × Kudy z nudy (otevřeno 27. 7. 2026): „celkem
-    i s přistýlkami 50 lůžek" — ROZPOR, číslo se nezapisuje. „Polovina
-    pokojů má vlastní koupelnu se sprchou a WC" (Kudy z nudy).
+    i s přistýlkami 50 lůžek" — ROZPOR. ROZHODNUTÍ MICHALA (27. 7. 2026,
+    pravidlo z otázky č. 14): při rozporu uvést NIŽŠÍ číslo → kapacita 50;
+    rozpor dál přiznává próza. „Polovina pokojů má vlastní koupelnu se
+    sprchou a WC" (Kudy z nudy).
   verified: false
   checked: '2026-07-27'
 
@@ -122,9 +125,9 @@ text:
   - >-
     Dnes chata podle krajského katalogu nabízí jídelnu pro pětapadesát
     lidí, restauraci s barem pro třicet a letní zahrádku; Kudy z nudy
-    chválí českou kuchyni s velkými porcemi. Na počtu lůžek se ale
-    prameny neshodnou — padesát s přistýlkami proti pětapadesáti — a tak
-    číslo nepřebíráme. A jestli restaurace obslouží i turistu, který jen
+    chválí českou kuchyni s velkými porcemi. Na počtu lůžek se prameny
+    neshodnou — padesát s přistýlkami proti pětapadesáti — v přehledu
+    proto vedeme opatrnější nižší číslo. A jestli restaurace obslouží i turistu, který jen
     schází ze svahu, prameny neříkají; netvrdíme to.
   - >-
     Údaje pocházejí z krajského katalogu a z Kudy z nudy; vlastním

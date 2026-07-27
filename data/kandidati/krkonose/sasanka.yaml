@@ -1,0 +1,56 @@
+# Penzion a restaurace Sasanka — RUČNÍ KANDIDÁT, VRÁCEN z vyřazených
+# 27. 7. 2026 (DATA-25 bod (a) + rozhodnutí Michala: „pokud mají restauraci
+# pro veřejnost, zvážil bych je"). Doklad veřejné restaurace: firemní zápis.
+# Vše verified: false — na web povyšovat až po dotažení. Nic nedomýšlet!
+
+nazev: Sasanka
+slug: sasanka
+zeme: cz
+oblast: krkonose
+typ: obsluhovana
+lat: 50.6841566
+lng: 15.7200982
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/way/203630802 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Firemní zápis (Firmy.cz, otevřeno 27. 7. 2026): adresa Pec pod
+    Sněžkou 44. Kudy z nudy (otevřeno 27. 7. 2026): „Penzion se nachází
+    15 min pěší chůze od centra Pece pod Sněžkou. Leží pouze 50 metrů
+    od lanovky na Hnědý vrch"
+  verified: false
+  checked: '2026-07-27'
+overeniObcerstveni:
+  source: >-
+    firemní zápis provozovatele (Firmy.cz, detail 13103915, otevřeno
+    27. 7. 2026), doslova: „Restaurace v provozu po celý den", otvírací
+    doba „Nonstop" (všechny dny); provozovna se jmenuje „Penzion
+    a restaurace Sasanka" a Tripadvisor ji vede v kategorii restaurací —
+    KLÍČ (restaurace pro veřejnost) má doklad.
+  verified: false
+  checked: '2026-07-27'
+overeniNocleh:
+  source: >-
+    Kudy z nudy (otevřeno 27. 7. 2026), doslova: „K dispozici máme
+    47 lůžek ve dvou, tří a čtyřlůžkových pokojích."
+  verified: false
+  checked: '2026-07-27'
+interniPoznamky: >-
+  RUČNÍ KANDIDÁT — VRÁCEN Z VYŘAZENÝCH 27. 7. 2026: vyřazení z 21. 7.
+  („tereza, sasanka, zvonicka klidne taky") revidováno v DATA-25 bodu (a)
+  po Michalově odpovědi na otázku č. 6 („pokud mají restauraci pro
+  veřejnost, zvážil bych je") a dokladu Firmy.cz o celodenní restauraci.
+  GPS z OSM way/203630802 — převzata z původního kandidáta před vyřazením
+  (git historie, commit 7990a87^; při obnově 27. 7. zachycen a opraven
+  vlastní omyl: první zápis GPS byl z hlavy — doklad, proč se souřadnice
+  VŽDY berou z pramene, nikdy z paměti).
+
+  POZOR: poloha objektu je u lanovky na Hnědý vrch = v/u střediska Pec.
+  Před povýšením posoudit i klíčem střediska (Michal, otázka č. 11:
+  penziony ve středisku nedávat, výjimka vyhlášená zařízení / samoty /
+  zajímavá místa) — tady ale veřejná restaurace klíč občerstvení plní,
+  takže o zařazení rozhodne Michal nad tímhle kandidátem.
+
+  K dotažení: vlastní web (Firmy.cz web neuvádí), historie objektu,
+  výška, potvrzení restaurace telefonátem (DATA-04: +420 732 138 657
+  dle Firmy.cz — jen interně).

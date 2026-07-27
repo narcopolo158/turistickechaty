@@ -1,0 +1,156 @@
+# Raisova chata na Zvičině — profil povýšen z kandidáta (externí katalog)
+# 27. 7. 2026 rozhodnutím Michala (otázka č. 8): PŘESAHOVÝ ZÁPIS — objekt
+# leží v PODKRKONOŠÍ, vede se v krkonošské sekci s výslovným dodatkem
+# (systém přesahů DATA-29; vlastní oblast vznikne, až bude objektů víc).
+# Vše verified: false — z webu KČT a turistického serveru.
+
+nazev: Raisova chata na Zvičině
+slug: raisova-chata-na-zvicine
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose # PŘESAHOVÝ ZÁPIS — skutečná oblast Podkrkonoší (viz interní poznámky)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z webu KČT (provozovatel). Objekt je MIMO bbox 3D mapy Krkonoš —
+# datový skript data28 chaty mimo bbox vynechává.
+lat: 50.4548753
+lng: 15.6945714
+vyska: 671
+overeniLokace:
+  source: >-
+    web KČT (kct.cz, stránka chaty, otevřeno 27. 7. 2026), doslova:
+    „Zvičina (671 m) je nejvýraznější hora ve východní části
+    Podkrkonoší."; GPS z téže stránky: 50.4548753N, 15.6945714E.
+    Turistický server (turistika.cz, otevřeno 27. 7. 2026): chata „na
+    vrcholu Zvičiny", 671 m. Obec se nezapisuje — katalogový kandidát
+    vedl Mostek, výletní tituly míří na Třebihošť; bez pevného pramene
+    nerozhodujeme.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    web KČT (otevřeno 27. 7. 2026), doslova: „Chata dnes neposkytuje
+    ubytování, má však rozlehlou, příjemnou a hosty oblíbenou restauraci
+    s poměrně velkou nabídkou jídel." — nocleh: ne dle vlastníka.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    web KČT (otevřeno 27. 7. 2026), doslova: „má však rozlehlou,
+    příjemnou a hosty oblíbenou restauraci s poměrně velkou nabídkou
+    jídel" — restaurace na vrcholové chatě KČT u rozhledny; návštěvnický
+    komentář na turistickém serveru: „Restaurace otevřená".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Datace převodů kolem přelomu století se v pramenech rozcházejí
+# (1898 NJS × 1900 KČT × „koupě až začátkem 1901") — milník se nezapisuje,
+# rozpor nese overeni; jisté milníky: 1891, 1927, 1991.
+rokVzniku: 1891
+milniky:
+  - rok: 1891
+    udalost: >-
+      Podle turistického serveru postavil majitel pozemku Josef
+      Machek-Patcelt na vrcholu hostinec
+  - rok: 1927
+    udalost: >-
+      Chata pojmenována po prozaikovi Karlu Václavu Raisovi, rodákovi
+      z nedalekého Bělohradu (shodně KČT i turistický server)
+  - rok: 1991
+    udalost: >-
+      KČT získal chatu jako jeden z prvních objektů zpět (web KČT)
+overeniHistorie:
+  source: >-
+    turistický server (turistika.cz, otevřeno 27. 7. 2026), doslova:
+    „roku 1891, kdy zde majitel pozemku Josef Machek-Patcelt, postavil
+    hostinec"; „Dne 12. srpna 1898 boudu zakoupila Národní jednota
+    severočeská"; „roku 1900, kdy vrcholovou chatu i s příslušnými
+    pozemky získal Klub českých turistů"; „V r. 1927 byla chata
+    pojmenována po Karlu Václavu Raisovy" [sic]; „v letech 1925-1926
+    postavena rozhledna s otáčivou kopulí". Web KČT (otevřeno 27. 7.
+    2026): „Koupě chaty byla realizována až začátkem roku 1901." a jméno
+    „připojen až v roce 1927"; „Když se ji KČT podařilo v roce 1991 jako
+    jeden z prvních objektů získat zpět…" — ROZPOR DATACE PŘEVODŮ
+    (1898 NJS × 1900 KČT × 1901 koupě): mezi prameny nerozhodujeme,
+    milník převodu se nezapisuje.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://kct.cz/chaty/raisova-chata-na-zvicine/
+overeniProvoz:
+  source: >-
+    web KČT živý (kct.cz, otevřeno 27. 7. 2026) — chata KČT s restaurací
+    v provozu; kandidátský katalog ČR/SK (jistota A, 21. 7. 2026) vedl
+    provoz celoročně. Vlastním dotazem neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Vrcholová chata Klubu českých turistů na Zvičině — hoře, která už
+  neleží v Krkonoších, ale je nejvýraznějším kopcem východního
+  Podkrkonoší; právě proto ji tu vedeme s tímhle výslovným dodatkem.
+  Hostinec tu stojí od roku 1891, od 1927 nese jméno spisovatele Karla
+  Václava Raise a dnes nabízí restauraci; nocleh už ne.
+text:
+  - >-
+    Raisova chata stojí na vrcholu Zvičiny v 671 metrech — a hned
+    napřímo: Zvičina není Krkonoše. Podle vlastníka, Klubu českých
+    turistů, je to „nejvýraznější hora ve východní části Podkrkonoší";
+    v krkonošské části průvodce ji vedeme proto, že k výhledu na celé
+    pohoří patří i jeho jižní předhůří, a samostatnou podkrkonošskou
+    sekci založíme, až bude mít víc obyvatel.
+  - >-
+    Historie sahá do roku 1891, kdy tu podle turistického serveru
+    postavil majitel pozemku Josef Machek-Patcelt hostinec. Kolem
+    přelomu století se prameny v datech převodů rozcházejí — jednou
+    zní rok 1898 a Národní jednota severočeská, jindy 1900 a Klub
+    českých turistů, web KČT mluví o koupi až začátkem roku 1901 —
+    a než mezi nimi rozhodovat, přiznáváme všechna tři. Jisté je, že
+    v letech 1925 až 1926 vyrostla vedle chaty rozhledna s otáčivou
+    kopulí, v roce 1927 dostala chata jméno po Karlu Václavu Raisovi,
+    rodákovi z nedalekého Bělohradu, a v roce 1991 ji KČT získal jako
+    jeden z prvních objektů zpět.
+  - >-
+    Dnešek je prostý a přebíráme ho od vlastníka doslova: chata
+    „neposkytuje ubytování, má však rozlehlou, příjemnou a hosty
+    oblíbenou restauraci s poměrně velkou nabídkou jídel". Na Zvičinu
+    se tedy chodí na výhled, na jídlo a na rozhlednu — spát je třeba
+    jinde.
+  - >-
+    Údaje pocházejí z webu Klubu českých turistů a z turistického
+    serveru; vlastním dotazem jsme zatím neověřili nic. Souřadnice
+    přebíráme ze stránky KČT a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Web KČT — GPS, Podkrkonoší, restaurace bez noclehu, koupě 1901,
+      jméno 1927, návrat 1991 (otevřeno 27. 7. 2026)
+    url: https://kct.cz/chaty/raisova-chata-na-zvicine/
+  - popis: >-
+      Turistický server — hostinec 1891, NJS 1898, KČT 1900, rozhledna
+      1925–26 (otevřeno 27. 7. 2026)
+    url: https://www.turistika.cz/mista/zvicina-raisova-chata/detail
+  - popis: >-
+      Externí katalog turistických chat ČR/SK — celoroční provoz
+      (jistota A, 21. 7. 2026)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/raisova-chata-na-zvicine.yaml 27. 7. 2026 rozhodnutím Michala (otázka č. 8: „můžeme ji zahrnout v krkonošských, s dodatkem, že už je to v Podkrkonoší") + spot-fetche kct.cz a turistika.cz (GPS doplněna z KČT — kandidát ji neměl).
+  PŘESAHOVÝ ZÁPIS (systém DATA-29): skutečná oblast = PODKRKONOŠÍ; oblast: krkonose je vědomé rozhodnutí vlastníka projektu, próza nese výslovný dodatek hned v perexu i prvním odstavci. Až podkrkonošských objektů přibude (~5+), oblast se založí a zápis přesune.
+  3D MAPA: objekt je mimo bbox — data28 skript chaty mimo bbox vynechává (filtr přidán týž den).
+  ROZPOR DATACE PŘEVODŮ: 1898 (NJS, turistika) × 1900 (KČT, turistika) × 1901 (koupě, kct.cz) — přiznáno, nerozhodnuto. [sic] „po Karlu Václavu Raisovy" je pravopis zdroje.
+  Obec nezapsána: katalog vedl Mostek, výletní tituly Třebihošť — rozhodne pevnější pramen.
+  K dotažení: obec, kapacita restaurace, otvírací doba, hero fotka (rozhledna!), telefonát KČT (DATA-04).

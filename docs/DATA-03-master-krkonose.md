@@ -11,7 +11,7 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 
 ## Souhrn
 
-- **Publikováno:** 68 *(aktualizováno 27. 7. 2026 pošesté — CELÁ FRONTA DATA-27 DOJETA: z „s výhradou" povýšeny Bouda Slovanka, Chata Studenov, Chata Zákoutí a Horská bouda Na Muldě; Novomísečná + Staromísečná DRŽENY na otázce Michala)*
+- **Publikováno:** 76 *(aktualizováno 27. 7. 2026 posedmé — PROMÍTNUTY MICHALOVY ODPOVĚDI na otázky uzavření: STAŽEN Jindřichův dům (klíč střediska), povýšeny Novomísečná + Staromísečná (každá zvlášť), Chata Aurora a Konopindova chata (první dva profily stavu `zanikla`), čtyři polské spolkové chatky (AKT, Smogorniak, Wielkanocna, Puchatka) a přesahová Raisova chata na Zvičině (Podkrkonoší, systém DATA-29))*
 - **Kandidáti k doplnění:** 33 — z toho Tier 1 (známka + katalog) 0, Tier 2 (jen známka) 0, Tier 3 (jen katalog) 2 (**oba blokované otázkou na Michala:** Hrnčířské boudy = enkláva, ne objekt — rozpustit?; Raisova chata na Zvičině = Podkrkonoší — založit oblast?), Tier 4 (jen OSM) 31. *Křížová kontrola 27. 7. 2026: kandidátských souborů bez hlavičky POVÝŠENO je v `data/kandidati/krkonose/` **35** — rozdíl proti 33 jsou přesně dva ruční kandidáti založení 26. 7. (Poštovna na Sněžce, Modrokamenná bouda), kteří do tierové struktury zatím nejsou zařazení (Modrokamenná nese známkový spor 2640×2540, Poštovna známku č. 20 — oba by patřili nejspíš do Tier 2; zařadit při příští revizi tabulek).*
 - **Vyřazeno** (nezakládat): 10
 - Objektů se známkou: 35 · v ChatGPT katalogu: 42 · katalogových Krkonoš celkem: 42
@@ -160,6 +160,40 @@ z archivu nepřevzat). Novomísečná + Staromísečná DRŽENY (jediné
 z fronty): tenký materiál + otázka Michala jeden areál × dva zápisy.
 FRONTA DATA-27 UZAVŘENA — zbývá DATA-25 bod (a): 10 vyřazených novým
 klíčem, a uzavření Krkonoš.**
+
+**Odpovědi Michala 27. 7. 2026 večer (dokument otázek vrácen vyplněný)
+PROMÍTNUTY — korpus 68 → 76:**
+
+- **STAŽEN Jindřichův dům** (odp. 11 — NOVÝ KLÍČ: penzion VE STŘEDISKU
+  bez historie a veřejného občerstvení → mimo; výjimky: vyhlášená
+  zařízení, samoty, výš/zajímavě položené). Eliška týmž klíčem
+  POTVRZENA MIMO. Studenov potvrzen (Michal: „má myslím stánek
+  s občerstvením" — svědectví, ověří telefonát), U Kotle potvrzen („ok").
+- **Povýšeny:** Novomísečná (12 míst) + Staromísečná (56) — každá zvlášť,
+  precedent Sněžka (odp. 2, kapacity rozdělil spot-fetch portálu);
+  Chata Aurora (odp. 4) a Konopindova chata (odp. 3) jako PRVNÍ DVA
+  PROFILY STAVU `zanikla` (= zaniklá turistická služba, dům žije
+  pronájmem — definice v profilech); polská čtveřice AKT (1908, Chatar,
+  čaj příchozím), Smogorniak (Grosse Jagdhütte, wiatrołap zbloudilým),
+  Wielkanocna (1966/1967, zamčená na klíče) a Puchatka (KPN, zamčená) —
+  kategorii nechal Michal na redakci (odp. 5), zařazeno pod DATA-25
+  s režimem nahlas (agentní rešerše s citačním protokolem, 27. 7.);
+  Raisova chata na Zvičině (odp. 8) jako PRVNÍ PŘESAHOVÝ ZÁPIS (systém
+  DATA-29: v krkonošské sekci s výslovným dodatkem Podkrkonoší; GPS
+  z KČT; mimo bbox 3D — filtr přidán).
+- **Kapacitní pravidlo (odp. 14: „při rozporu uveď nižší číslo")
+  APLIKOVÁNO:** Jelenka 25, Helena 20, Srebrny Potok 35, Smetánka 50,
+  U Kotle pokoje 19 (+ lůžek 60 bez rozporu), Wielkanocna 8.
+- **Známka Modrokamenné = 2540** (odp. 15, rozpor 2640 × 2540 vyřešen).
+- **Sasanka VRÁCENA mezi kandidáty** (odp. 6 + doklad Firmy.cz:
+  „Restaurace v provozu po celý den", nonstop); Tereza čeká na ruční
+  kontrolu (web nedostupný). **Noví kandidáti:** Josefova bouda (odp. 7),
+  Turistická chata Prachov (odp. 8 — první obyvatel složky cesky-raj).
+- Hrnčířské: vést jako kontext v profilech členů (odp. 1 — dnešní stav
+  potvrzen). Obec = poštovní pramen potvrzena (odp. 16). Rotace tokenů
+  odložena na konec vývoje (odp. 18). Vizitky: sbírat data, publikovat
+  čísla + odkaz + placeholder, obrázky až se souhlasem (odp. 19).
+  Telefonáty: kompletní seznam v docs/TELEFONATY-KRKONOSE.md (odp. 17).
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |
 |---|---|---|---|---|

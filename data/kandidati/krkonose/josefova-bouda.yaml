@@ -1,0 +1,34 @@
+# Josefova bouda — RUČNÍ KANDIDÁT, založen 27. 7. 2026 rozhodnutím Michala
+# (otázka č. 7: „ano"). Druhá jmenovitě známá budova resortu Svatý
+# František u Erlebachovy boudy (precedent Dvoračky × Štumpovka: každá
+# budova s turistickou službou má vlastní zápis). Vše verified: false —
+# na web povyšovat až po dotažení. Nic nedomýšlet!
+
+nazev: Josefova bouda
+slug: josefova-bouda
+zeme: cz
+oblast: krkonose
+typ: obsluhovana
+# BEZ GPS — v OSM exportu DATA-01 objekt není (dohledat ručně z OSM či
+# webu resortu před povýšením).
+overeniLokace:
+  source: >-
+    server Krkonose.eu (triáž 26. 7. 2026, stránka „Resort Sv. František
+    – Erlebachova a Josefova bouda"): součást resortu u Erlebachovy
+    boudy nad Špindlerovým Mlýnem; profil Erlebachovy (publikován) ji
+    cituje doslova: „Další možností je kouzelná Josefova bouda,
+    romantická chata hotelového typu". Rezervační portály (Booking,
+    hledáno 27. 7. 2026) vedou „Resort Sv. František - Josefova Bouda"
+    samostatně. GPS zatím nedoložena.
+  verified: false
+  checked: '2026-07-27'
+interniPoznamky: >-
+  RUČNÍ KANDIDÁT (27. 7. 2026) — Michal v odpovědích na otázky uzavření
+  Krkonoš (č. 7) rozhodl kandidáta založit. Vzešlo z profilu Erlebachovy
+  boudy (resort Svatý František má čtyři budovy dle Kudy z nudy, jmenovitě
+  známe Erlebachovu a Josefovu; precedent Dvoračky × Štumpovka žádá
+  samostatné zápisy).
+
+  K dotažení před povýšením: GPS (OSM nebo web resortu), výška, kapacita,
+  služby (restaurace resortu vs. vlastní), historie (po kom Josefova?),
+  vztah k Erlebachově (společný provozovatel — resort).

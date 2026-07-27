@@ -1,0 +1,150 @@
+# Chatka Smogorniak — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Rozhodnutí o polských spolkových chatkách nechal Michal na redakci
+# (otázka č. 5) — zařazeno pod DATA-25: myslivecká bouda z 20. let
+# 20. století s dlouhou turistickou a ochranářskou historií; dnes spolková,
+# se závětřím otevřeným zbloudilým. Vše verified: false.
+
+nazev: Chatka Smogorniak
+slug: chatka-smogorniak
+zeme: pl
+typ: utulna
+stav: v-provozu
+oblast: krkonose
+aliasy:
+  - nazev: Grosse Jagdhütte
+    poznamka: původní německé jméno myslivecké boudy (fotoarchiv fotopolska.eu)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ~1120 z místopisného webu
+# (kategorie fotoarchivu vede 1489 m — to je výška VRCHOLU Smogornia,
+# ne chatky; rozlišeno, nerozhodujeme mezi veličinami).
+lat: 50.7682955
+lng: 15.6684064
+vyska: 1120
+overeniLokace:
+  source: >-
+    místopisný web polska-org.pl (otevřeno 27. 7. 2026), doslova:
+    „Schron samoobsługowy położony nad Srebrnym Potokiem u wylotu Kotła
+    Smogorni na wysokości ok. 1120 m npm; jak wszystkie chatki
+    karkonoskie - w pobliżu górnej granicy lasu." Fotoarchiv
+    fotopolska.eu řadí objekt pod lokalitu „Smogornia (1489 m n.p.m.)" —
+    to je výška vrcholu, ne chatky. GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/529587726 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita NEZAPSÁNA: žádný otevřený pramen číslo nenese. Nocleh je
+# spolkový; zbloudilému turistovi slouží otevřené závětří (próza).
+nocleh: ano
+overeniNocleh:
+  source: >-
+    přehled chatek (zachodnia.tv, otevřeno 27. 7. 2026), doslova: „Jest
+    tutaj otwarty wiatrołap, który umożliwia schronienie zabłąkanemu
+    turyście podczas nieobecności gospodarzy." — nocleh uvnitř je věcí
+    hospodářů (spolku), kapacitu žádný pramen nenese. Historicky bývala
+    chatka „ogólnie dostępna" (ratownictwogorskie.eu — o dřívějším
+    období) a byla i období, kdy ji správci kvůli vloupáním zamkli
+    (text K. Tęczy: „podjęliśmy z bólem serca decyzję o zamknięciu
+    chatki").
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni NEVYPLNĚNO: žádný pramen občerstvení nenese.
+overeniObcerstveni:
+  source: >-
+    občerstvení žádný z otevřených pramenů (místopisný web, přehledy
+    chatek, text K. Tęczy; 27. 7. 2026) neuvádí — pole se nevyplňují.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ PRÁZDNÝ: „počátek 20. let 20. století" není letopočet.
+# Rok vzniku dnešního spolku se rozchází (2006 fotoarchiv × 2007 rejstřík
+# a přehledy) — milník se nezapisuje, próza nese s výhradou.
+overeniHistorie:
+  source: >-
+    fotoarchiv fotopolska.eu (otevřeno 27. 7. 2026), doslova: „Chata
+    zbudowana na początku lat 20. ubiegłego wieku na potrzeby myśliwych
+    (Grosse Jagdhütte). Po wojnie przez ponad 20 lat była strażnicą
+    Grupy Karkonoskiej Straży Ochrony Przyrody. Od 2006 r. pozostaje pod
+    opieką Stowarzyszenia Ochrony Przyrody „Smogorniak"." Přehled
+    zachodnia.tv (otevřeno 27. 7. 2026): ve 40. letech měli přístup
+    členové sportovního klubu Stal z Cieplic (a zprovoznili tu lyžařský
+    vlek), pak turisté kola PTTK při cieplické „Fampě", skupina SOP
+    Smogorniak, a „w 2007 roku dostęp do chatki miało Stowarzyszenie
+    Ochrony Przyrody „Smogorniak"" — ROZPOR ROKU SPOLKU 2006 × 2007
+    (rejstřík NGO: rok vzniku 2007); nerozhodujeme. Vzpomínkový text
+    e-karkonosze.eu: na staré mapě vedena prostě jako „Jagdhaus".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    o chatku pečuje Stowarzyszenie Ochrony Przyrody „Smogorniak"
+    (fotoarchiv, přehledy, rejstřík NGO spis.ngo.pl — vše otevřeno
+    27. 7. 2026); kvartálník PTTK zmiňuje generální opravu a spolkový
+    časopis „Przy Kominku". Vlastní web spolku (smogorniak.org) je
+    v přesměrovací smyčce — neotevřen. Vlastním dotazem neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bývalá myslivecká bouda Grosse Jagdhütte z počátku dvacátých let
+  20. století nad Stříbrným potokem, u vyústění Kotła Smogorni kolem
+  1120 metrů. Po válce sloužila přes dvacet let strážcům ochrany
+  přírody, dnes o ni pečuje spolek — a zbloudilému turistovi nabízí
+  aspoň otevřené závětří, když hospodáři nejsou doma.
+text:
+  - >-
+    Chatka Smogorniak stojí nad Stříbrným potokem (Srebrny Potok)
+    u vyústění karu Kocioł Smogorni, poblíž horní hranice lesa ve výšce
+    kolem 1120 metrů — jméno nese po hoře Smogornia, která se nad ní
+    zvedá k 1489 metrům. Postavena byla na počátku dvacátých let
+    minulého století pro myslivce a na starých mapách bývá vedena
+    prostě jako Jagdhaus, lovecký dům.
+  - >-
+    Poválečný příběh je pestrý: přes dvacet let sloužila jako strážnice
+    krkonošské skupiny Stráže ochrany přírody, ve čtyřicátých letech
+    k ní měli přístup sportovci klubu Stal z Cieplic — a zprovoznili tu
+    i lyžařský vlek — později turisté závodního kola PTTK. Dnes o ni
+    pečuje spolek ochrany přírody Smogorniak; prameny se neshodnou,
+    jestli od roku 2006, nebo 2007, a tak letopočet netvrdíme. Byla
+    i léta, kdy správci chatku po vloupáních s těžkým srdcem zamkli.
+  - >-
+    Pro turistu na hřebeni je podstatné tohle: chatka je spolková,
+    nocleh uvnitř je věcí hospodářů a kapacitu žádný pramen nenese —
+    ale závětří zůstává podle přehledu otevřené, „aby umožnilo úkryt
+    zbloudilému turistovi", když hospodáři nejsou doma. V nouzi tedy
+    střecha nad hlavou, plánovat nocleh sem ovšem nelze.
+  - >-
+    Údaje pocházejí z polského místopisného webu, fotoarchivu, přehledů
+    chatek a vzpomínkových textů; vlastním dotazem jsme zatím neověřili
+    nic. Souřadnice jsou z mapových dat OpenStreetMap (© přispěvatelé
+    OpenStreetMap, ODbL) a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Místopisný web polska-org.pl — schron samoobsługowy nad Srebrnym
+      Potokiem, ~1120 m (otevřeno 27. 7. 2026)
+    url: https://polska-org.pl/558202,Podgorzyn,Smogorniak.html
+  - popis: >-
+      Fotoarchiv fotopolska.eu — Grosse Jagdhütte, počátek 20. let,
+      strážnice ochrany přírody, spolek od 2006 (otevřeno 27. 7. 2026)
+    url: https://fotopolska.eu/dolnoslaskie/b284557,Smogorniak.html
+  - popis: >-
+      Přehled zachodnia.tv a kvartálník PTTK — historie přístupu (Stal,
+      PTTK, SOP), otevřený wiatrołap, oprava (otevřeno 27. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chatka-smogorniak.yaml (DATA-01, OSM) 27. 7. 2026 — kategorii PL chatek nechal Michal na redakci (otázka č. 5); zařazeno pod DATA-25. Rešerše: agentní běh 27. 7. (9 zdrojů otevřeno; smogorniak.org a totalnaasymilacja.org v redirect smyčce, jbc PDF nedostupné).
+  ROZPORY: rok spolku 2006 (fotopolska) × 2007 (spis.ngo.pl, zachodnia/PTTK) — nezapsán; výška 1120 (chatka) vs. 1489 (vrchol Smogornia — jiná veličina).
+  Režim: spolková s hospodáři + OTEVŘENÝ WIATROŁAP pro zbloudilé — nejblíž „nouzové útulně" z celé PL čtveřice.
+  K dotažení: kapacita, gmina (Podgórzyn dle mapcarta — nezapsáno), kontakt na spolek, hero fotka.

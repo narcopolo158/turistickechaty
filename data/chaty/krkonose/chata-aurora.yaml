@@ -1,0 +1,126 @@
+# Chata Aurora — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026
+# rozhodnutím Michala (otázka č. 4: „dát mezi zaniklé"). PRVNÍ PROFIL SE
+# STAVEM zanikla: dům z let 1880–1890 stojí a pronajímá se, jako veřejná
+# turistická bouda ale zanikl — přesně to říká próza. Vše verified: false.
+
+nazev: Chata Aurora
+slug: chata-aurora
+zeme: cz
+typ: obsluhovana
+# stav zanikla = zaniklá TURISTICKÁ SLUŽBA boudy (rozhodnutí Michala
+# 27. 7. 2026); o osudu domu mluví próza — dům stojí a žije pronájmem.
+stav: zanikla
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška 833 z vlastního webu.
+lat: 50.6920026
+lng: 15.751561
+vyska: 833
+obec: Pec pod Sněžkou # část Velká Úpa — dle vlastního webu (DATA-20)
+overeniLokace:
+  source: >-
+    vlastní web chaty (chataaurora.cz, otevřeno 27. 7. 2026), doslova:
+    „Naší chatu AURORA najdete na polovině cesty mezi Velkou Úpou a Pecí
+    pod Sněžkou na jižním svahu asi 100 m nad hlavní silnicí." a
+    „Nadmořská výška chaty je 833 m n.m." GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/2150284218 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh / Občerstvení ──────────────────────────────────────────────────
+# nocleh/kuchyne/typObcerstveni se u zaniklé boudy NEZAPISUJÍ: pole popisují
+# boudovou službu turistům a ta zanikla; dnešní pronájem celé chaty
+# (s vlastním vařením) popisuje próza.
+overeniNocleh:
+  source: >-
+    dnešní režim: pronájem chaty — katalogy pronájmů (triáž DATA-27,
+    26. 7. 2026) vedou kapacitu 14 lůžek a 4 přistýlky, hosté si vaří
+    sami. Boudová služba turistům (nocleh/občerstvení pro kolemjdoucí)
+    se nenabízí — proto stav zanikla a prázdná pole služeb.
+  verified: false
+  checked: '2026-07-27'
+overeniObcerstveni:
+  source: >-
+    občerstvení pro veřejnost chata nenabízí a doloženo není ani
+    v minulosti (triáž DATA-27: „bez vlastního občerstvení", hosté si
+    vaří sami) — pole se nevyplňují.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1880
+milniky:
+  - rok: 1880
+    udalost: >-
+      Podle vlastního webu byla chata postavena v letech 1880–1890
+      v klasickém krkonošském stylu
+overeniHistorie:
+  source: >-
+    vlastní web chaty (chataaurora.cz, otevřeno 27. 7. 2026), doslova:
+    „Chata byla postavena v letech 1880-1890 v klasickém krkonošském
+    stylu." — rozpětí let; rokVzniku nese začátek rozpětí a milník
+    rozpětí přiznává. Víc historie prameny nenesou.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.chataaurora.cz/
+overeniProvoz:
+  source: >-
+    vlastní web živý (chataaurora.cz, otevřeno 27. 7. 2026) — dům se
+    pronajímá; jako veřejná turistická bouda neslouží (rozhodnutí
+    o zařazení mezi zaniklé: Michal 27. 7. 2026, otázka č. 4).
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Roubená chata z let 1880 až 1890 na jižním svahu mezi Velkou Úpou
+  a Pecí pod Sněžkou, v 833 metrech kousek nad silnicí. Dům stojí
+  a pronajímá se — jako bouda sloužící turistům ale zanikl, a proto ho
+  v průvodci vedeme mezi zaniklými: připomíná éru, kdy tudy šlo do hor
+  víc poutníků než aut.
+text:
+  - >-
+    Chata Aurora stojí podle vlastního webu na polovině cesty mezi
+    Velkou Úpou a Pecí pod Sněžkou, na jižním svahu asi sto metrů nad
+    hlavní silnicí, v nadmořské výšce 833 metrů. Postavena byla v letech
+    1880 až 1890 v klasickém krkonošském stylu — patří tedy ke staré
+    vrstvě zdejších roubenek.
+  - >-
+    Proč je mezi zaniklými, když dům žije? Protože zanikla bouda, ne
+    stavba: chata se dnes pronajímá vcelku, hosté si vaří sami
+    a kolemjdoucí turista tu nenajde nocleh ani občerstvení. Veřejné
+    občerstvení se nepodařilo doložit ani v minulosti — a tak Auroru
+    vedeme jako památku na starou zástavbu svahů nad Úpou, ne jako
+    živou zastávku.
+  - >-
+    Kapacitu dnešního pronájmu vedou katalogy na čtrnácti lůžkách se
+    čtyřmi přistýlkami. Víc se o historii domu z otevřených pramenů
+    zatím nedozvíte — jakmile se pramen najde, doplníme ho.
+  - >-
+    Údaje pocházejí z vlastního webu chaty a z katalogů pronájmů;
+    vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Vlastní web chaty — stavba 1880–1890, poloha mezi Velkou Úpou
+      a Pecí, 833 m (otevřeno 27. 7. 2026)
+    url: https://www.chataaurora.cz/
+  - popis: >-
+      Katalogy pronájmů — kapacita 14+4, vlastní vaření (triáž DATA-27,
+      26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chata-aurora.yaml (DATA-01, OSM) 27. 7. 2026 rozhodnutím Michala (otázka č. 4: „dát mezi zaniklé") + spot-fetch vlastního webu (živě potvrzeno 1880–1890 a 833 m).
+  PRVNÍ PROFIL SE STAVEM zanikla — DEFINICE: stav zanikla značí zaniklou TURISTICKOU SLUŽBU boudy; zda dům stojí, říká próza (tady stojí a pronajímá se). Hlídat vykreslení pilulky „zaniklá" v šabloně.
+  Kapacita pronájmu 14+4 (katalogy, triáž) — do polí se u zaniklé nezapisuje (pole = boudová služba).
+  K dotažení: historie domu mezi 1890 a dneškem, hero fotka; kdyby chata někdy obnovila veřejnou službu, stav se přepne a profil přepíše.

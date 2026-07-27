@@ -1,6 +1,10 @@
-# ═══ POVÝŠENO 27. 7. 2026 → data/chaty/krkonose/jindrichuv-dum.yaml ═══
-# Tenhle soubor je HISTORICKÝ ZÁZNAM kandidátské fáze. Zdrojem pravdy pro web je
-# publikovaný profil, ne tenhle soubor — seed čte výhradně data/chaty/**.
+# ═══ POVÝŠENO 27. 7. 2026 → STAŽENO TÝŽ DEN rozhodnutím Michala ═══
+# Profil data/chaty/krkonose/jindrichuv-dum.yaml byl 27. 7. 2026 večer
+# ODSTRANĚN: nový klíč Michala (odpověď na otázku č. 11) — penzion VE
+# STŘEDISKU bez doložené historie a bez veřejného občerstvení do průvodce
+# nepatří (výjimky: vyhlášená zařízení, samoty, výš položená či zajímavá
+# místa). Jindřichův dům stojí v jádru Pece u vleků → mimo. Kandidát
+# zůstává jako doklad; nepovyšovat, dokud klíč platí.
 # Jindřichův dům — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-12)
 # Zdroj: https://www.openstreetmap.org/node/5488661856 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
 # Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
@@ -36,3 +40,7 @@ interniPoznamky: >-
   TRIÁŽ TIER 4 (26. 7. 2026, DATA-27): FRONTA POVÝŠENÍ (silná) — bar/výčep výslovně jen pro ubytované (poznámka dle DATA-25). Plné citace s URL:
   docs/DATA-27-tier4-triaz.md — při povyšování z nich profil vzniká bez
   nové rešerše.
+  STAŽENO 27. 7. 2026 (Michal, otázka č. 11): „zalezi jestli je v obci (ve stredisku) - ty bych tam pak nedaval,
+  s vyjimkou opravdu vyhlasenych zarizeni, pokud by slo treba o pension na samote / nekde vysoko nebo na
+  zajimavem miste, pak ano" — Jindřichův dům je v jádru Pece (středisko), bez historie, bar jen ubytovaní → mimo.
+  Plný text staženého profilu je v git historii (commit e385dc4).

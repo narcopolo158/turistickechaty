@@ -1,0 +1,145 @@
+# Konopindova chata — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026
+# rozhodnutím Michala (otázka č. 3: „můžeme to dát mezi zaniklé / nefunkční
+# / zajímavosti"). Stav zanikla = zaniklá turistická služba: spolková
+# lyžařská chata z roku 1927 s odbojovým příběhem Kazbeku dnes žije jen
+# pronájmem. Vše verified: false — z vlastního webu, vlastním dotazem
+# neověřeno.
+
+nazev: Konopindova chata
+slug: konopindova-chata
+zeme: cz
+typ: obsluhovana
+# stav zanikla = zaniklá TURISTICKÁ SLUŽBA (vzor Chata Aurora, týž den);
+# dům stojí a pronajímá se — říká to próza.
+stav: zanikla
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ZÁMĚRNĚ NEVYPLNĚNA: žádný
+# pramen ji nenese.
+lat: 50.6787308
+lng: 15.7274002
+obec: Pec pod Sněžkou # „Chata č. p. 211" dle vlastního webu — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    vlastní web chaty (konopinda.com, otevřeno 27. 7. 2026): chata č. p.
+    211 v Peci pod Sněžkou, „ubytování přímo na sjezdovce". Výšku žádný
+    pramen neuvádí. GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/5488661854 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh / Občerstvení ──────────────────────────────────────────────────
+# Pole se u zaniklé boudy NEZAPISUJÍ: dnešek je pronájem celé chaty bez
+# občerstvení (web žádné gastronomické služby neuvádí — ověřeno 20. 7.
+# i 27. 7. 2026); boudová služba turistům se nenabízí.
+overeniNocleh:
+  source: >-
+    dnešní režim: pronájem celé chaty (vlastní web konopinda.com
+    a katalogy pronájmů; otevřeno 20. a 27. 7. 2026). Boudová služba
+    turistům se nenabízí — proto stav zanikla a prázdná pole služeb.
+  verified: false
+  checked: '2026-07-27'
+overeniObcerstveni:
+  source: >-
+    občerstvení web neuvádí (prověřeno klíčem 20. 7. 2026: „web
+    konopinda.com žádné gastronomické služby neuvádí") a doloženo není
+    ani historicky — pole se nevyplňují.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1927
+milniky:
+  - rok: 1927
+    udalost: >-
+      Podle vlastního webu postavena jako dřevěná roubenka skupinou
+      německého spolku zimních sportů
+  - rok: 1945
+    udalost: >-
+      Na podzim zestátněna prezidentským dekretem o konfiskaci
+      nepřátelského majetku (vlastní web)
+  - rok: 1946
+    udalost: >-
+      Na jaře svěřena se sousedními chatami do správy Svazu lyžařů ČS
+      (vlastní web)
+overeniHistorie:
+  source: >-
+    vlastní web chaty (konopinda.com, článek „Trocha historie a proč
+    Konopindova chata?", otevřeno 27. 7. 2026), doslova: „Chata č. p. 211
+    byla postavena jako dřevěná roubenka v roce 1927, skupinou německého
+    spolku zimních sportů."; „Krycí název Kazbek také měla v době
+    nacistické hrůzovlády odbojová skupina, jejímž členem byl Karel
+    Konopiský (1888-1942)."; „Po 2. světové válce byla chata na podzim
+    roku 1945 zestátněna prezidentským dekretem o konfiskaci
+    nepřátelského majetku."; „Na jaře 1946 byla chata a několik okolních
+    chat svěřeno do správy Svazu lyžařů ČS."; „Ten se v 50. letech
+    zasadil u názvoslovné komise o nezvyklý název Konopindova chata,
+    když jméno Kazbek neprošlo." Instituční doklady web neodkazuje —
+    próza připisuje.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.konopinda.com/
+overeniProvoz:
+  source: >-
+    vlastní web živý (konopinda.com, otevřeno 27. 7. 2026) — chata se
+    pronajímá; jako spolková lyžařská bouda pro turisty neslouží
+    (rozhodnutí o zařazení mezi zaniklé: Michal 27. 7. 2026, otázka
+    č. 3).
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Roubenka na pecké sjezdovce, kterou roku 1927 postavil německý spolek
+  zimních sportů a která nesla jméno Kazbek — stejné krycí jméno měla za
+  okupace odbojová skupina Karla Konopiského. Dnes se chata pronajímá
+  vcelku; jako spolková lyžařská bouda zanikla, a právě ten příběh je
+  důvod, proč ji v průvodci vedeme.
+text:
+  - >-
+    Konopindova chata stojí přímo na sjezdovce nad Pecí pod Sněžkou.
+    Podle vlastního webu ji jako dřevěnou roubenku postavila v roce 1927
+    skupina německého spolku zimních sportů — vznikla tedy jako spolková
+    lyžařská chata, součást éry, kdy si kluby stavěly své základny přímo
+    ve svazích.
+  - >-
+    Jméno je tu příběh sám o sobě: chatě se říkalo Kazbek a stejný krycí
+    název měla podle webu v době nacistické hrůzovlády odbojová skupina,
+    jejímž členem byl Karel Konopiský, narozený 1888 a zavražděný 1942.
+    Po válce byla chata na podzim 1945 zestátněna dekretem o konfiskaci
+    nepřátelského majetku a na jaře 1946 svěřena se sousedními chatami
+    do správy Svazu lyžařů. V padesátých letech se pak u názvoslovné
+    komise prosadil dnešní nezvyklý název Konopindova chata — jméno
+    Kazbek neprošlo.
+  - >-
+    Dnes se chata pronajímá vcelku a občerstvení nenabízí — kolemjdoucí
+    lyžař či turista tu tedy nezastaví. Vedeme ji proto mezi zaniklými
+    boudami: dům žije, ale spolková lyžařská služba, kterou vznikl,
+    patří minulosti. Nadmořskou výšku neuvádíme, žádný pramen ji nenese.
+  - >-
+    Historie pochází z vlastního webu chaty, který k ní neodkazuje
+    doklady — přebíráme ji s připsáním; vlastním dotazem jsme zatím
+    neověřili nic. Souřadnice jsou z mapových dat OpenStreetMap
+    (© přispěvatelé OpenStreetMap, ODbL) a v terénu je nikdo
+    nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Vlastní web chaty, článek „Trocha historie a proč Konopindova
+      chata?" — 1927, Kazbek a Konopiský, 1945, 1946, název z 50. let
+      (otevřeno 27. 7. 2026)
+    url: https://www.konopinda.com/post/_blog-1
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/konopindova-chata.yaml (DATA-01, OSM) 27. 7. 2026 rozhodnutím Michala (otázka č. 3) + spot-fetch článku historie na vlastním webu (všechny věty živě doslova).
+  DRUHÝ PROFIL SE STAVEM zanikla (s Chatou Aurorou z téhož dne) — definice: zaniklá TURISTICKÁ SLUŽBA, dům stojí a pronajímá se.
+  Věta o názvoslovné komisi začíná na webu „Ten se v 50. letech zasadil…" — podmět z kontextu ukazuje na Svaz lyžařů; próza to obchází bez určení podmětu.
+  K dotažení: výška, kapacita pronájmu (nezapisuje se do polí), hero fotka; případné instituční doklady odboje Kazbek (archiv).

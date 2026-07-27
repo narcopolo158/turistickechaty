@@ -1,0 +1,164 @@
+# Chatka Wielkanocna — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Rozhodnutí o polských spolkových chatkách nechal Michal na redakci
+# (otázka č. 5) — zařazeno pod DATA-25: horolezecká základna z roku 1966
+# se jménem po Velikonocích 1967; dnes zamčená klubová chatka a profil to
+# říká nahlas. Vše verified: false.
+
+nazev: Chatka Wielkanocna
+slug: chatka-wielkanocna
+zeme: pl
+typ: utulna
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS a výška 1251 z OSM (ODbL, v terénu neověřeno); prameny píší „ok.
+# 1240" a „ok. 1250" — souhlasné přibližné hodnoty, ne rozpor.
+lat: 50.7826713
+lng: 15.5666515
+vyska: 1251
+overeniLokace:
+  source: >-
+    místopisný web polska-org.pl (otevřeno 27. 7. 2026), doslova: „Stoi
+    u wylotu Wielkiego Śnieżnego Kotła, poniżej zielonego szlaku, na
+    wys. ok. 1240 m npm." (katastr Piechowice); vzpomínkový text
+    e-karkonosze.eu (otevřeno 27. 7. 2026): „Znajduje się blisko granicy
+    lasu, u wylotu Wielkiego Śnieżnego Kotła, ok. 100 m od zielonego
+    szlaku, na wys. ok. 1250 m n.p.m." Pole nese hodnotu OSM tagu 1251 —
+    v pásmu obou přibližných údajů. GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/406298192 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita 8 = „komfortní" údaj pramene („nawet 8 osob… kilkanaście méně
+# komfortně") — konzervativní číslo dle pravidla nižší hodnoty. Nocleh je
+# klubový, na klíče — poznámka dle DATA-25 v próze.
+nocleh: ano
+kapacita: 8
+overeniNocleh:
+  source: >-
+    blog Wyszedł z domu (wyszedlzdomu.pl, otevřeno 27. 7. 2026),
+    doslova: „W warunkach komfortowych (drewniane łóżka i stare
+    materace) może się w niej przespać nawet 8 osób, w warunkach mniej
+    komfortowych nawet kilkanaście" — pole nese konzervativních 8.
+    Nocleh jen s klíči od správců (viz overeniProvoz).
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+overeniObcerstveni:
+  source: >-
+    občerstvení žádný z otevřených pramenů neuvádí (jednoizbový srub
+    s krbem, dřevem a vědry na vodu — nocpodgwiazdami.pl, otevřeno
+    27. 7. 2026) — pole se nevyplňují.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1966
+milniky:
+  - rok: 1966
+    udalost: >-
+      Postavena v létě — podle blogu při glaciologických výzkumech
+      v okolí Śnieżnych Kotłů; přehled ji spojuje s horolezci, kterým
+      sloužila jako základna pro treninky v karech
+  - rok: 1967
+    udalost: >-
+      Skupina členů vratislavského AKT tu strávila Velikonoce ve
+      spartánských podmínkách — a chatce zůstalo jméno Wielkanocna,
+      velikonoční
+overeniHistorie:
+  source: >-
+    rok 1966 nesou čtyři prameny (otevřeno 27. 7. 2026): blog Wyszedł
+    z domu „w roku najprawdopodobniej 1966", přehled zachodnia.tv
+    „powstała w 1966 r. … baza wypadowa dla alpinistów, którzy trenowali
+    w Śnieżnych Kotłach", místopisný web polska-org.pl „Zbudowana latem
+    1966(?)" a vzpomínkový text e-karkonosze.eu (patrně od pamětníka
+    vzniku) bez otazníku: „Chatka została zbudowana latem 1966 r." —
+    zapsán s tímto připsáním. Jméno: polska-org.pl doslova „Nazwa
+    utworzona w niewielkim środowisku „bywalców" po przygodzie kilku
+    członków AKT, którzy spędzili w niej Wielkanoc 1967 r.
+    w spartańskich warunkach."; e-karkonosze.eu: kroniku s názvem
+    „Chatka Wielkanocna" založil autor textu při prvních pobytech.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# ROZPOR SPRÁVCE/KLÍČŮ přiznán: Poznański Klub Wysokogórski (dva prameny)
+# × „klíč má paní v Jagniątkowě a je třeba souhlas KPN" (jeden pramen).
+overeniProvoz:
+  source: >-
+    blog Wyszedł z domu (otevřeno 27. 7. 2026), doslova: chatky „są
+    zamykane na siedem spustów"; „Wielkanocną opiekuje się Poznański
+    Klub Wysokogórski co czyni ją również ZAMKNIĘTĄ dla ludzi
+    z zewnątrz. Nie można po prostu przyjść i z niej skorzystać";
+    „Klucze do chatki można uzyskać za zgodą opiekunów z Poznania."
+    Shodně nocpodgwiazdami.pl: „Chatka jest zamknięta i bez kluczy nie
+    można się tu dostać." ROZPOR: průvodce jagodowadolina.pl (otevřeno
+    27. 7. 2026): „klucz do Chatki ma pewna Pani w Jagniątkowie i trzeba
+    mieć zgodę KPN-u" — kdo klíče drží, prameny neshodně; nerozhodujeme.
+    Vlastním dotazem neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Jednoizbový srub s plochou střechou u vyústění Velkého Sněžného kotle,
+  ve výšce kolem 1250 metrů mimo značené cesty. Postaven byl v roce 1966
+  jako základna výzkumníků a horolezců a jméno mu daly Velikonoce 1967,
+  které tu parta z vratislavského AKT strávila ve spartánských
+  podmínkách. Dnes je zamčený — bez klíčů od správců se dovnitř nedá.
+text:
+  - >-
+    Chatka Wielkanocna — velikonoční chatka — stojí u vyústění Velkého
+    Sněžného kotle (Wielki Śnieżny Kocioł), zhruba sto metrů od zeleně
+    značené cesty a blízko horní hranice lesa, kolem 1250 metrů. Je to
+    jednoizbový srub s plochou střechou a kamenným komínem, postavený
+    v létě 1966 — podle blogu v době glaciologických výzkumů v karech,
+    podle přehledu jako základna horolezců, kteří v Sněžných kotlích
+    trénovali.
+  - >-
+    Jméno má z příběhu: o Velikonocích 1967 tu parta členů
+    vratislavského Akademického turistického klubu strávila svátky ve
+    spartánských podmínkách — druhá skupina tehdy ani nedorazila a po
+    noci ve sněhu se vrátila do Jagniątkowa — a mezi štamgasty se ujalo
+    jméno Chatka Wielkanocna. Pamětník vzniku vzpomíná, jak název vepsal
+    do kroniky, obyčejného sešitu v kostce.
+  - >-
+    Dnešní režim říkáme nahlas: chatka je zamčená „na sedm západů"
+    a bez klíčů se dovnitř nedá. O tom, kdo klíče drží, se prameny
+    neshodnou — dva uvádějí poznaňský vysokohorský klub, jeden paní
+    v Jagniątkowě se souhlasem národního parku — a my mezi nimi
+    nerozhodujeme. Uvnitř čeká krb, pryčny a stará matracová pohoda
+    zhruba pro osm lidí; plánovat sem nocleh ale bez domluvy se správci
+    nelze.
+  - >-
+    Údaje pocházejí z polských blogů, přehledů a místopisného webu;
+    vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Blog Wyszedł z domu — vznik ~1966, zamčený režim, klíče
+      z Poznaně, kapacita (otevřeno 27. 7. 2026)
+    url: https://wyszedlzdomu.pl/karkonoskie-chatki-chatka-wielkanocna-u-podnoza-snieznych-kotlow/
+  - popis: >-
+      Místopisný web polska-org.pl — poloha, ~1240 m, jméno po
+      Velikonocích 1967 (otevřeno 27. 7. 2026)
+    url: https://polska-org.pl/558200,Piechowice,Chatka_Wielkanocna.html
+  - popis: >-
+      Vzpomínkový text e-karkonosze.eu (pamětník vzniku) — stavba 1966,
+      kronika se jménem, ~1250 m; nocpodgwiazdami.pl — zamčeno, krb,
+      pryčny (obojí otevřeno 27. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu a výška; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chatka-wielkanocna.yaml (DATA-01, OSM) 27. 7. 2026 — kategorii PL chatek nechal Michal na redakci (otázka č. 5); zařazeno pod DATA-25. Rešerše: agentní běh 27. 7. (7 zdrojů otevřeno; wyszedlzdomu.blogspot a totalnaasymilacja v redirect smyčce, FB blokován).
+  ROZPOR SPRÁVCE: Poznański Klub Wysokogórski (wyszedlzdomu + nocpodgwiazdami) × „paní v Jagniątkowě + souhlas KPN" (jagodowadolina) — přiznán v overeni i próze, nerozhodnuto.
+  Kapacita 8 = konzervativní hodnota (pramen: „nawet 8 komfortně, kilkanaście méně komfortně") dle pravidla nižšího čísla (Michal 27. 7.).
+  K dotažení: správce/klíče (rozpor), gmina Piechowice (nezapsána — konzistence PL), stav domu, hero fotka.

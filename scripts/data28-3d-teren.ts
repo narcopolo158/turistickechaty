@@ -63,6 +63,12 @@ const nactiChaty = (): { chaty: Chata[]; kotvy: { lat: number; lng: number; ele:
       const d = (parse(readFileSync(join(KOREN, dir, f), 'utf8')) ?? {}) as Record<string, unknown>
       const lat = Number(d.lat), lng = Number(d.lng)
       if (!lat || !lng) continue
+      // přesahové zápisy (DATA-29, např. Raisova chata na Zvičině) leží mimo
+      // bbox mapy — do 3D se neberou, jinak by pin visel na okraji diorámy
+      if (lat < BBOX.latMin || lat > BBOX.latMax || lng < BBOX.lngMin || lng > BBOX.lngMax) {
+        console.log(`  3D: mimo bbox, vynechávám ${String(d.nazev ?? f)}`)
+        continue
+      }
       const ele = d.vyska ? Number(d.vyska) : null
       const rec: Chata = { n: String(d.nazev ?? f), lat, lng, ele,
         typ: d.typ ? String(d.typ) : null, stav: d.stav ? String(d.stav) : null, pub }

@@ -67,17 +67,11 @@ overeniLokace:
   checked: '2026-07-26'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita 25 dle pravidla Michala (27. 7. 2026, k této boudě): „při rozporu
+# uveď nižší číslo". Pole pokoje se NEVEDE — právě rozložení pokojů je to
+# sporné (26 ve 4 × 25 v 5), próza přiznává obě varianty.
 nocleh: ano
-kapacita: 26
-pokoje:
-  - typ: Čtyřlůžkový pokoj
-    luzek: 4
-  - typ: Čtyřlůžkový pokoj
-    luzek: 4
-  - typ: Šestilůžkový pokoj
-    luzek: 6
-  - typ: Dvanáctilůžkový pokoj
-    luzek: 12
+kapacita: 25
 overeniNocleh:
   source: >-
     Kudy z nudy „Horská turistická bouda Jelenka": 26 hostů ve 4 pokojích
@@ -89,13 +83,13 @@ overeniNocleh:
     v PĚTI pokojích o velikosti 3, 4, 4, 6 a 8 lůžek, s palandami a teplou
     i studenou vodou. Součty sedí u obou variant (4+4+6+12 = 26 proti
     3+4+4+6+8 = 25), takže nejde o překlep v jednom čísle, ale o dvě různá
-    rozložení domu — pravděpodobně z různých let. Pole `kapacita` a `pokoje`
-    PONECHÁNY na variantě Kudy z nudy, protože není důvod jednu verzi
-    upřednostnit; obě varianty jsou přiznané ve veřejném textu. Nesčítat a
-    nedomýšlet, který stav je novější — to je otázka na provozovatele
-    (DATA-04). Sekundární média, verified:false
+    rozložení domu — pravděpodobně z různých let. ROZHODNUTÍ MICHALA
+    (27. 7. 2026, odpověď na otázku č. 14): při rozporu uvést NIŽŠÍ číslo →
+    kapacita 25; rozložení pokojů se nevede, obě varianty přiznává veřejný
+    text. Který stav je novější, zůstává otázka na provozovatele (DATA-04).
+    Sekundární média, verified:false
   verified: false
-  checked: '2026-07-26'
+  checked: '2026-07-27'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 kuchyne: ano
@@ -208,7 +202,8 @@ text:
     rozložení docela jiné: 25 lůžek v pěti pokojích po třech, čtyřech,
     čtyřech, šesti a osmi lůžkách, část z nich na palandách. O překlep
     v jednom čísle nejde, obě varianty dávají vlastní součet — spíš jde o dva
-    různé stavy domu z různých let a který platí dnes, nevíme. Přespat se dá
+    různé stavy domu z různých let a který platí dnes, nevíme; v přehledu
+    proto vedeme opatrnější nižší číslo. Přespat se dá
     i ve vlastním spacáku a v pokojích teče teplá i studená voda. Sporná je
     i podoba sociálního zázemí: Kudy z nudy popisuje společné zařízení se
     sprchou na patře, obecní web Malé Úpy naopak píše o sociálním zařízení

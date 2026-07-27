@@ -11,6 +11,50 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 15: MICHALOVY ODPOVĚDI PROMÍTNUTY — Krkonoše uzavřeny na 76 profilech
+
+**Zadání:** Michal vrátil docs/OTAZKY-KRKONOSE.md s odpověďmi u všech
+19 bodů. Všechno promítnuto do korpusu (68 → 76; přehled provedení
+v hlavičce dokumentu otázek a v masteru):
+
+- **NOVÝ KLÍČ STŘEDISKA (odp. 11):** penzion ve středisku bez historie
+  a veřejného občerstvení → mimo (výjimky: vyhlášená zařízení, samoty,
+  výš/zajímavě položené). **STAŽEN Jindřichův dům** (kandidát nese
+  STAŽENO hlavičku + plný text v git historii); Eliška týmž klíčem
+  potvrzena mimo; U Kotle a Studenov potvrzeny (stánek u Studenova =
+  svědectví Michala, ověří telefonát).
+- **KAPACITNÍ KONVENCE (odp. 14):** „při rozporu uveď nižší číslo" —
+  aplikováno na Jelenku (25), Helenu (20), Srebrny (35), Smetánku (50),
+  U Kotle (pokoje 19, lůžek 60 bez rozporu) a Wielkanocnou (8); prózy
+  přiznávají rozpory dál, jen dodávají „vedeme opatrnější nižší číslo".
+- **Povýšeno 8 + 1:** Mísečky zvlášť (odp. 2; spot-fetch rozdělil 56 × 12),
+  Aurora + Konopindova jako PRVNÍ DVA STAVY `zanikla` (odp. 3, 4 —
+  definice: zaniklá turistická služba, dům žije), polská čtveřice
+  (odp. 5 „nechám na tobě" → zařazena pod DATA-25; agentní rešerše
+  27. 7.: AKT 1908 s Chatarem a čajem, Smogorniak s wiatrołapem,
+  Wielkanocna 1966/1967 na klíče — rozpor správce přiznán, Puchatka KPN
+  zamčená; čtveřice pokrývá celé spektrum režimů) a přesahová Raisova
+  (odp. 8 → SYSTÉM DATA-29, GPS z KČT, bbox filtr v data28).
+- **Známka Modrokamenné 2540** (odp. 15 — rozpor kotouče 2640 vyřešen,
+  README známek i kandidát opraveny).
+- **Sasanka VRÁCENA z vyřazených** (odp. 6 + Firmy.cz doklad „Restaurace
+  v provozu po celý den"/nonstop): ruční kandidát se skutečnou GPS z git
+  historie — při obnově zachycen a opraven VLASTNÍ omyl (první zápis GPS
+  z hlavy; doklad, proč se souřadnice berou vždy z pramene). Tereza
+  zůstává s podmíněnou revizí (web nedostupný).
+- **Noví kandidáti:** Josefova bouda (odp. 7), Turistická chata Prachov
+  (odp. 8) — první obyvatel nové složky data/kandidati/cesky-raj/.
+- **docs/TELEFONATY-KRKONOSE.md** (odp. 17 „všechny mi dej rovnou"):
+  76 objektů, skupina A (25 s klíčovou otázkou „komu slouží kuchyně")
+  + skupina B (51), generováno z „K dotažení" poznámek profilů.
+- Uzavřeno: DATA-20 (obec = poštovní pramen, „ano"), rotace tokenů
+  odložena na konec vývoje (odp. 18), vizitky se sbírají — publikace
+  čísel + odkazu + placeholderu, obrázky až se souhlasem (odp. 19).
+
+**Krkonoše tímto UZAVŘENY jako pilot: 76 publikovaných profilů, žádná
+otevřená fronta.** Zbývají průběžné práce: telefonáty (verified:true),
+hero fotky (DATA-02 běží), 3D lesy (běh z push triggeru), druhá oblast.
+
 ## 2026-07-27 — pokračování 14: panorama výchozí + hledání + animovaný turista; DATA-25(a) hotov — KRKONOŠE PŘIPRAVENY K UZAVŘENÍ
 
 **Zadání Michala (doslovně):** „ta panaoramaticka mapa je skvela, dal bych

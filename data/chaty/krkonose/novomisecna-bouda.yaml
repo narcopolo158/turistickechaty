@@ -1,0 +1,121 @@
+# Novomísečná bouda — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026
+# rozhodnutím Michala (otázka č. 2: Mísečky „každý objekt zvlášť" —
+# precedent Sněžka). Menší ze dvou bud společného areálu na Horních
+# Mísečkách; sesterská Staromísečná má vlastní zápis. Vše verified: false.
+
+nazev: Novomísečná bouda
+slug: novomisecna-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška 1035 z rezervačního portálu
+# areálu (platí pro obě boudy areálu).
+lat: 50.7363436
+lng: 15.5708622
+vyska: 1035
+obec: Vítkovice # lokalita Horní Mísečky — dle portálu areálu (DATA-20)
+overeniLokace:
+  source: >-
+    rezervační portál areálu (rezervuj.net, otevřeno 27. 7. 2026),
+    doslova: boudy „položené v klidné oblasti obce Vítkovice na svazích
+    Medvědína ve výšce 1035 m n.m." GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/46723524 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 12
+overeniNocleh:
+  source: >-
+    rezervační portál areálu (rezervuj.net, otevřeno 27. 7. 2026),
+    doslova: „Nabízíme týdenní i víkendové ubytování pro skupiny
+    i jednotlivce ve dvou chatách." — Novomísečná 12 míst (sesterská
+    Staromísečná 56; každá bouda má vlastní zápis dle rozhodnutí Michala
+    27. 7. 2026). Jediný pramen, provozovatelem nepotvrzeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# kuchyne i typObcerstveni NEVYPLNĚNY (nezjištěno): bar a společenská
+# místnost jsou dle portálu v areálu (stránka Staromísečné) — k této boudě
+# pramen občerstvení nevede.
+overeniObcerstveni:
+  source: >-
+    rezervační portál areálu (rezervuj.net, otevřeno 27. 7. 2026) vede
+    bar a společenskou místnost na stránce sesterské Staromísečné;
+    k Novomísečné občerstvení nevede. Pole se nechávají nezjištěná.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: letopočet 1642 patří OSADĚ Horní
+# Mísečky, o domě prameny mlčí.
+overeniHistorie:
+  source: >-
+    turistický server (turistika.cz, triáž DATA-27, 26. 7. 2026),
+    doslova: „Horní Mísečky byly založeny v r. 1642… První bouda zde
+    byla postavena roku 1642." — údaj O OSADĚ, ne o tomto domě.
+    K historii samotné Novomísečné jsme nenašli jediný doložený údaj —
+    „hledali jsme a nenašli".
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    aktivní rezervační stránky areálu (rezervuj.net; letsbookhotel
+    profil — triáž DATA-27) — provoz skupinového ubytování běží. Vlastní
+    web areálu nedoložen, provozovatel vlastním dotazem neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Menší ze dvou bud společného areálu na Horních Mísečkách, na svazích
+  Medvědína v 1035 metrech — dvanáct míst pro menší partu, pár kroků od
+  větší Staromísečné boudy, která má v průvodci vlastní zápis.
+text:
+  - >-
+    Novomísečná bouda stojí na Horních Mísečkách, luční enklávě na
+    svazích Medvědína — poštovní adresou v obci Vítkovice — ve výšce
+    1035 metrů. Se sousední Staromísečnou tvoří jeden areál, který
+    rezervační portál nabízí vcelku; v průvodci vedeme každou boudu
+    zvlášť, jménem i polohou jsou to dva domy.
+  - >-
+    Tahle menší z obou bud nabízí podle portálu dvanáct míst — formát
+    pro rodinu nebo menší partu, na týden i víkend. Občerstvení k ní
+    pramen nevede; bar a společenská místnost patří dle portálu k areálu
+    u větší sestry, a tak tu nic netvrdíme.
+  - >-
+    Osada Horní Mísečky byla podle turistického serveru založena roku
+    1642, i s první boudou — letopočet ale patří osadě jako celku.
+    O tom, kdy vznikla samotná Novomísečná a odkud má své „novo-", jsme
+    zatím nenašli jediný doložený údaj; jakmile se pramen objeví,
+    doplníme ho.
+  - >-
+    Údaje pocházejí z rezervačního portálu areálu a z turistického
+    serveru; vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Rezervační portál areálu — dvě chaty, 12 míst Novomísečné, 1035 m,
+      obec Vítkovice (otevřeno 27. 7. 2026)
+    url: https://rezervuj.net/rezervace-4216-staromisecna-bouda
+  - popis: >-
+      Turistický server — osada Horní Mísečky založena 1642 (o osadě;
+      triáž DATA-27, 26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/novomisecna-bouda.yaml (DATA-01, OSM) 27. 7. 2026 rozhodnutím Michala (otázka č. 2: „každý objekt zvlášť") + spot-fetch rezervuj.net (kapacita rozdělená: Novomísečná 12 × Staromísečná 56).
+  SESTERSKÝ ZÁPIS: staromisecna-bouda.yaml (společný areál, vzájemný odkaz v próze).
+  K dotažení: občerstvení (nezjištěno), vlastní web areálu, historie domu, hero fotka.

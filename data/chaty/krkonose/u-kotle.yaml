@@ -33,16 +33,20 @@ overeniLokace:
   checked: '2026-07-26'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
-# kapacita/pokoje se NEZAPISUJÍ: vlastní web 22 pokojů × katalog České hory
-# 19 pokojů / 60 lůžek — rozpor se přiznává, nerozhodujeme.
+# Dle pravidla Michala (27. 7. 2026, při rozporu nižší číslo): pokoje 19
+# (web 22 × katalog 19); lůžek 60 nese jen katalog (bez rozporu) — zapsáno.
 nocleh: ano
+kapacita: 60
+pokoje: 19
 overeniNocleh:
   source: >-
     vlastní web (hornimisecky.eu, triáž DATA-27, 26. 7. 2026): 22 pokojů ×
-    katalog České hory: 19 pokojů / 60 lůžek — ROZPOR, čísla se
-    nezapisují.
+    katalog České hory: 19 pokojů / 60 lůžek — ROZPOR POČTU POKOJŮ.
+    ROZHODNUTÍ MICHALA (27. 7. 2026, pravidlo z otázky č. 14): při rozporu
+    uvést NIŽŠÍ číslo → pokoje 19; kapacita 60 lůžek je bez rozporu
+    (jediný pramen, katalog). Rozpor pokojů dál přiznává próza.
   verified: false
-  checked: '2026-07-26'
+  checked: '2026-07-27'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 # typObcerstveni NEVYPLNĚNO: číselník nemá hodnotu „bar" (obdoba DATA-23) —
@@ -103,9 +107,9 @@ text:
     zastavit — jen u večeře počítejte s tím, že dům vaří především svým
     hostům.
   - >-
-    Nocleh penzion nabízí, ale na velikosti se prameny neshodnou:
-    vlastní web mluví o dvaadvaceti pokojích, katalog o devatenácti
-    pokojích se šedesáti lůžky — žádné číslo proto nepřebíráme.
+    Nocleh penzion nabízí, na počtu pokojů se ale prameny neshodnou:
+    vlastní web mluví o dvaadvaceti, katalog o devatenácti se šedesáti
+    lůžky — v přehledu proto vedeme opatrnější nižší počet pokojů.
     O historii domu jsme zatím nenašli jediný doložený údaj; jakmile se
     pramen objeví, doplníme ho.
   - >-
@@ -128,8 +132,8 @@ zdroje:
   - popis: OpenStreetMap (GPS objektu; ODbL)
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/u-kotle.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 (web 27. 7. ze sandboxu nedostupný — smyčka přesměrování, přidat na seznam blokovaných domén; triáž ho 26. 7. četla).
-  MICHAL 20. 7.: „zařadit hraničně, potvrdí nad profilem" — OTÁZKA TRVÁ, profil je připraven k jeho kontrole (do seznamu otázek).
-  ROZPOR KAPACITY: 22 pokojů (web) × 19 pokojů / 60 lůžek (České hory) — nezapsáno.
+  MICHAL 20. 7.: „zařadit hraničně, potvrdí nad profilem" → POTVRZENO MICHALEM 27. 7. 2026 (odpověď na otázku č. 10: „ok") — zařazení uzavřeno.
+  ROZPOR POKOJŮ: 22 (web) × 19 (České hory) — dle pravidla Michala (27. 7.) zapsáno nižší 19; lůžek 60 (jediný pramen).
   VÝŠKA: 1050 m (penzion) vs. „1 000 m n.m." (středisko, týž web) — dvě veličiny, zapsána 1050.
   Adresa „Horní Mísečky 137" jen interně/v source (ban č. p. v próze). Obec Vítkovice dle katalogů (titulky) — DATA-20 poštovní pramen; ceskehory řadí pod Špindl.
   K dotažení: kapacita od provozovatele (DATA-04), historie, hero fotka; otázka Mísečky (jeden areál × dva profily Novomísečná/Staromísečná) souvisí.

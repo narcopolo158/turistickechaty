@@ -7,8 +7,11 @@
 # DATA-25 bod (a) — RE-CHECK všech 10 novým klíčem (27. 7. 2026, search-only):
 # duplicity (2) a mimo-Krkonoše (4) se klíče netýkají; ze čtyř penzionů
 # Roxana a Zvonička drží (žádný signál veřejného občerstvení ani turistické
-# minulosti), Tereza a Sasanka mají PODMÍNĚNOU REVIZI — viz pole data25
-# u záznamů a seznam otázek pro Michala.
+# minulosti). SASANKA 27. 7. 2026 večer ODEBRÁNA ze seznamu: Michal („pokud
+# mají restauraci pro veřejnost, zvážil bych je") + doklad Firmy.cz
+# („Restaurace v provozu po celý den", otvírací doba nonstop) → vrácena mezi
+# kandidáty (data/kandidati/krkonose/sasanka.yaml). Tereza zůstává
+# s PODMÍNĚNOU REVIZÍ (web nedostupný — ruční kontrola Michala).
 
 vyrazeno:
   - osm: https://www.openstreetmap.org/node/656462770
@@ -80,20 +83,6 @@ vyrazeno:
       sandboxu nedostupný (timeout), komu restaurace slouží, nedoloženo.
       PODMÍNĚNÁ REVIZE → otázka pro Michala: má restauraci pro veřejnost?
       (pokud ano → vrátit mezi kandidáty dle klíče z 20. 7.).
-  - osm: https://www.openstreetmap.org/way/203630802
-    slug: sasanka
-    duvod: >-
-      Penzion, ne horská bouda — redakční rozhodnutí o rozsahu průvodce
-      (web ze sandboxu nedoložen, rozhodnuto vlastníkem projektu).
-    rozhodl: Michal (chat hlavní session 21. 7. 2026 — „tereza, sasanka, zvonicka klidne taky")
-    checked: 2026-07-21
-    data25: >-
-      Re-check novým klíčem 27. 7. 2026 (WebSearch + Kudy z nudy): provozovna
-      se jmenuje „Penzion a restaurace Sasanka" (Firmy.cz, Tripadvisor
-      v kategorii restaurací; KzN: 47 lůžek, 50 m od lanovky na Hnědý
-      vrch) — jméno nese restauraci, doslovný doklad „pro veřejnost" ale
-      chybí. PODMÍNĚNÁ REVIZE → otázka pro Michala: má restauraci pro
-      veřejnost? (pokud ano → vrátit mezi kandidáty dle klíče z 20. 7.).
   - osm: https://www.openstreetmap.org/way/31360801
     slug: zvonicka
     duvod: >-

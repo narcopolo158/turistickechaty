@@ -1,0 +1,161 @@
+# Chatka AKT Towarzystwa Bażynowego — profil povýšen z kandidáta DATA-01
+# (OSM) 27. 7. 2026. Rozhodnutí o polských spolkových chatkách nechal
+# Michal na redakci (otázka č. 5) — zařazujeme pod DATA-25: bohatá
+# turistická historie (1908, studentská éra AKT), zvláštní režim řečený
+# nahlas. Ze čtveřice jediná s trvalým správcem, který příchozí vítá
+# čajem. Vše verified: false.
+
+nazev: Chatka AKT Towarzystwa Bażynowego
+slug: chatka-akt-towarzystwa-bazynowego
+zeme: pl
+typ: utulna
+stav: v-provozu
+oblast: krkonose
+aliasy:
+  - nazev: Chatka AKT
+    poznamka: běžný krátký tvar (mapy od 60. let dle místopisného webu)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ~1050 shodně dva prameny.
+lat: 50.7872833
+lng: 15.6275034
+vyska: 1050
+overeniLokace:
+  source: >-
+    server Karkonoszego (karkonoszego.pl, otevřeno 27. 7. 2026), doslova:
+    „Chatka Akt na Hutniczym Grzbiecie ok. 1050 m n.p.m."; shodně
+    místopisná encyklopedie dioblina.eu: „w północnej części Hutniczego
+    Grzbietu na wysokości ok 1050 m n.p.m." Místopisný web polska-org.pl
+    (otevřeno 27. 7. 2026): na Hutniczym Grzbiecie u dolního konce
+    Bażynowych Skał, pod zeleně značenou „ścieżkou nad reglami". GPS:
+    OpenStreetMap https://www.openstreetmap.org/way/1038079202 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    v terénu neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh je spolkový (Towarzystwo Bażynowe), ne veřejná služba — poznámka
+# dle DATA-25 v próze.
+nocleh: ano
+kapacita: 30
+overeniNocleh:
+  source: >-
+    server Karkonoszego (otevřeno 27. 7. 2026), doslova: „Obiekt oferuje
+    ok. 30 miejsc do spania na materacach. Brak prądu, pobór wody ze
+    studni i wspólna kuchnia"; shodně přehled razemnaszlaku.pl: „Ilość
+    miejsc: 30+". Nocleh spravuje spolek — chatka „nie jest pensjonatem,
+    hotelem, ani schroniskiem turystycznym" (doslova, dva prameny).
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni NEVYPLNĚNO: hrnek čaje pro příchozí je tradice chatky,
+# ne veřejné občerstvení — nese ho próza s citací.
+overeniObcerstveni:
+  source: >-
+    server Karkonoszego (otevřeno 27. 7. 2026), doslova: „Do Chatki może
+    przyjść każdy, kto ma na to ochotę. Każdy zostanie przyjęty kubkiem
+    gorącej herbaty." — a zároveň: „W niektóre dni Chatka jest zamknięta
+    dla obcych (spoza Towarzystwa Bażynoweo)". Osobní svědectví
+    (nocpodgwiazdami.pl, otevřeno 27. 7. 2026): „pierwszy kubek zawsze
+    się dostaje". Číselník se nevyplňuje — jde o tradici, ne službu.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1908
+milniky:
+  - rok: 1908
+    udalost: >-
+      Postavena v létě 1908 — podle nápisu uvnitř chatky „Erbaut vom
+      8. VII bis 20. IX 1908" (místopisný web)
+  - rok: 1959
+    udalost: >-
+      Na jaře předalo Nadleśnictwo v Podgórzyně domek Akademickému
+      turistickému klubu (AKT) z Vratislavi jako základnu studentských
+      putovních táborů (místopisný web)
+overeniHistorie:
+  source: >-
+    místopisný web polska-org.pl (otevřeno 27. 7. 2026), doslova:
+    „Zbudowana latem 1908 - wg umieszczonego wewnątrz napisu 'Erbaut vom
+    8. VII bis 20. IX 1908'"; „Wiosną 1959 Nadleśnictwo w Podgórzynie
+    przekazało domek Akademickiemu Klubowi Turystycznemu we Wrocławiu,
+    który korzystał z niego jako bazy dla studenckich obozów wędrownych";
+    „Od lat 60. na kolejnych wydaniach map Karkonoszy chatka była
+    zaznaczana i opisywana jako 'Chatka AKT'". Dnešního správce nese
+    shodně víc pramenů: Towarzystwo Bażynowe, v chatce zastoupené
+    „Chatarem".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    server Karkonoszego a přehledy chatek (razemnaszlaku.pl,
+    noclegistudenckie.studentnews.pl; vše otevřeno 27. 7. 2026): chatku
+    spravuje Towarzystwo Bażynowe, v chatce trvale přebývá správce
+    („Chatar"); „jedyna chatka w Karkonoszach w której na stałe przebywa
+    opiekun" (nocpodgwiazdami.pl). Provoz bez elektřiny, voda ze studny.
+    Vlastním dotazem neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěná chatka z roku 1908 na Hutniczym Grzbiecie v polských
+  Krkonoších, kolem 1050 metrů — od studentské éry šedesátých let známá
+  jako Chatka AKT. Není to penzion ani schronisko: spravuje ji spolek
+  a trvale tu bydlí správce, který podle tradice přivítá každého
+  příchozího hrnkem horkého čaje. Nocleh je ale spolková věc — počítat
+  s ním nejde.
+text:
+  - >-
+    Chatka AKT stojí v severní části hřebene Hutniczy Grzbiet, u dolního
+    konce skal Bażynowe Skały a kousek pod zeleně značenou cestou nad
+    horní hranicí lesa, ve výšce kolem 1050 metrů. Postavena byla podle
+    nápisu, který se dochoval uvnitř, v létě 1908 — „Erbaut vom 8. VII
+    bis 20. IX 1908".
+  - >-
+    Novodobý příběh začíná na jaře 1959, kdy lesní správa v Podgórzyně
+    předala domek Akademickému turistickému klubu z Vratislavi jako
+    základnu studentských putovních táborů — a od šedesátých let se na
+    mapách Krkonoš objevuje jako Chatka AKT. Dnes ji spravuje
+    Towarzystwo Bażynowe a je to podle přehledů jediná chatka
+    v polských Krkonoších, kde trvale přebývá správce, zvaný Chatar.
+  - >-
+    Režim je potřeba říct přesně, protože je jiný než u všeho ostatního
+    v tomhle průvodci: chatka „není penzion, hotel ani turistické
+    schronisko", jak píší její stránky doslova. Přijít může každý
+    a každého podle tradice přivítá hrnek horkého čaje — některé dny je
+    ale chatka pro lidi mimo spolek zavřená. Spí se na zhruba třiceti
+    matracích, bez elektřiny, s vodou ze studny a společnou kuchyní —
+    o nocleh se ovšem hlásí spolku, ne na počkání u dveří.
+  - >-
+    Údaje pocházejí z polských přehledů chatek a z místopisného webu;
+    vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Server Karkonoszego — režim chatky, čaj pro příchozí, ~1050 m,
+      ~30 míst (otevřeno 27. 7. 2026)
+    url: https://karkonoszego.pl/artykul/chatka-akt--jedyne-takie-n1517096
+  - popis: >-
+      Místopisný web polska-org.pl — stavba 1908 (nápis uvnitř), předání
+      AKT Vratislav 1959, jméno na mapách od 60. let (otevřeno
+      27. 7. 2026)
+    url: https://polska-org.pl/553383,Jelenia_Gora,Chatka_AKT.html
+  - popis: >-
+      Přehled razemnaszlaku.pl — 30+ míst, studna, kuchyně; osobní
+      svědectví nocpodgwiazdami.pl — Chatar a první hrnek čaje (obojí
+      otevřeno 27. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chatka-akt-towarzystwa-bazynowego.yaml (DATA-01, OSM) 27. 7. 2026 — kategorii polských spolkových chatek nechal Michal na redakci (otázka č. 5); zařazeno pod DATA-25 (turistická historie + zvláštní režim nahlas). Rešerše: agentní běh 27. 7. s citačním protokolem (6 zdrojů otevřeno, Wikipedia cache-only, oficiální chatkaakt.prv.pl a totalnaasymilacja.org v redirect smyčce).
+  ZE ČTVEŘICE PL CHATEK JEDINÁ S TRVALÝM SPRÁVCEM A TRADICÍ ČAJE — režim „otevřeno příchozím, nocleh spolkový, některé dny zavřeno".
+  Kontakt dle komentáře na noclegistudenckie: „Dane dotyczące kontaktu telefonicznego są na stronie bazynowe.org" — neověřeno, k dotažení.
+  K dotažení: obec/gmina (nezapsána — prameny nejednoznačné), stav domu dnes, hero fotka.

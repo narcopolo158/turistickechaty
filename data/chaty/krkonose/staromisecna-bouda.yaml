@@ -1,0 +1,129 @@
+# Staromísečná bouda — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026
+# rozhodnutím Michala (otázka č. 2: Mísečky „každý objekt zvlášť" —
+# precedent Sněžka). Větší ze dvou bud společného areálu na Horních
+# Mísečkách; sesterská Novomísečná má vlastní zápis. Vše verified: false.
+
+nazev: Staromísečná bouda
+slug: staromisecna-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška 1035 z rezervačního portálu
+# areálu (platí pro obě boudy areálu).
+lat: 50.7360774
+lng: 15.5714025
+vyska: 1035
+obec: Vítkovice # lokalita Horní Mísečky — dle portálu areálu (DATA-20)
+overeniLokace:
+  source: >-
+    rezervační portál areálu (rezervuj.net, stránka Staromísečné,
+    otevřeno 27. 7. 2026), doslova: boudy „položené v klidné oblasti
+    obce Vítkovice na svazích Medvědína ve výšce 1035 m n.m." GPS:
+    OpenStreetMap https://www.openstreetmap.org/way/46723535 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    v terénu neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 56
+overeniNocleh:
+  source: >-
+    rezervační portál areálu (rezervuj.net, otevřeno 27. 7. 2026),
+    doslova: „Nabízíme týdenní i víkendové ubytování pro skupiny
+    i jednotlivce ve dvou chatách." — Staromísečná 56 míst (sesterská
+    Novomísečná 12; každá bouda má vlastní zápis dle rozhodnutí Michala
+    27. 7. 2026). Kuchyňky k pokojům. Jediný pramen, provozovatelem
+    nepotvrzeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# kuchyne i typObcerstveni NEVYPLNĚNY (nezjištěno): portál vede společenskou
+# místnost s barem a kuchyňky pro hosty — komu bar slouží, pramen neříká;
+# Staromísečnou vedl i katalog hospod (návštěva 2016, stáří přiznat).
+overeniObcerstveni:
+  source: >-
+    rezervační portál areálu (rezervuj.net, otevřeno 27. 7. 2026):
+    „Společenská místnost s televizí, bar." a kuchyňky k pokojům — komu
+    bar slouží, portál neuvádí. Staromísečnou vedl i katalog hospod
+    (pivnidenicek, záznam z návštěvy 2016 — triáž DATA-27; deset let
+    staré svědectví, nerozhodujeme). Pole se nechávají nezjištěná.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: letopočet 1642 patří OSADĚ Horní
+# Mísečky (turistický server, o osadě), o domě prameny mlčí.
+overeniHistorie:
+  source: >-
+    turistický server (turistika.cz, triáž DATA-27, 26. 7. 2026),
+    doslova: „Horní Mísečky byly založeny v r. 1642… První bouda zde
+    byla postavena roku 1642." — údaj O OSADĚ Horní Mísečky, ne o tomto
+    domě. K historii samotné Staromísečné jsme nenašli jediný doložený
+    údaj — „hledali jsme a nenašli".
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    aktivní rezervační stránka areálu (rezervuj.net, otevřeno 27. 7.
+    2026) — provoz skupinového ubytování běží. Vlastní web areálu
+    nedoložen, provozovatel vlastním dotazem neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Větší ze dvou bud společného areálu na Horních Mísečkách, na svazích
+  Medvědína v 1035 metrech. Portál areálu tu nabízí šestapadesát míst
+  pro skupiny i jednotlivce; sesterská Novomísečná bouda stojí pár kroků
+  vedle a má v průvodci vlastní zápis.
+text:
+  - >-
+    Staromísečná bouda stojí na Horních Mísečkách — luční enklávě na
+    svazích Medvědína, poštovní adresou v obci Vítkovice — ve výšce
+    1035 metrů. S menší Novomísečnou boudou tvoří jeden areál
+    a rezervační portál je nabízí společně; v průvodci vedeme každou
+    zvlášť, protože jsou to dva domy s vlastním jménem i historií.
+  - >-
+    Nocleh tu portál vede pro skupiny i jednotlivce, na týdny
+    i víkendy: v této boudě šestapadesát míst, k pokojům kuchyňky, ve
+    společenské místnosti bar. Komu přesně bar slouží, pramen neříká —
+    a katalogový záznam hospody z roku 2016 je na dnešní tvrzení příliš
+    starý, takže občerstvení netvrdíme.
+  - >-
+    Historie osady je starší než většina hřebenových bud: Horní Mísečky
+    byly podle turistického serveru založeny roku 1642, kdy tu vyrostla
+    i první bouda. Ten letopočet ale patří osadě jako celku — o tom, kdy
+    vznikla samotná Staromísečná, jsme zatím nenašli jediný doložený
+    údaj.
+  - >-
+    Údaje pocházejí z rezervačního portálu areálu a z turistického
+    serveru; vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Rezervační portál areálu — dvě chaty, 56 míst Staromísečné,
+      1035 m, obec Vítkovice, bar ve společenské místnosti (otevřeno
+      27. 7. 2026)
+    url: https://rezervuj.net/rezervace-4216-staromisecna-bouda
+  - popis: >-
+      Turistický server — osada Horní Mísečky založena 1642 (o osadě;
+      triáž DATA-27, 26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/staromisecna-bouda.yaml (DATA-01, OSM) 27. 7. 2026 rozhodnutím Michala (otázka č. 2: „každý objekt zvlášť", precedent Sněžka) + spot-fetch rezervuj.net (rozdělil kapacity: Staromísečná 56 × Novomísečná 12 — triáž měla 56 pro celý areál).
+  SESTERSKÝ ZÁPIS: novomisecna-bouda.yaml (společný areál, vzájemný odkaz v próze).
+  PIVNIDENICEK: záznam hospody z návštěvy 2016 (triáž) — desetileté svědectví, občerstvení se netvrdí; ověřit telefonátem (DATA-04).
+  Otázka „U Kotle" a Mísečky sdílejí lokalitu Horní Mísečky (obec Vítkovice) — konzistence obce pohlídána.
+  K dotažení: komu slouží bar, vlastní web areálu, historie domu (od kdy „Staro-"?), hero fotka.
