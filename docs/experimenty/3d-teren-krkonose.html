@@ -52,6 +52,7 @@
   <label><input type="checkbox" id="chkVrst" checked> vrstevnice (po 100 m)</label>
   <label id="lblTrasy" style="display:none"><input type="checkbox" id="chkTrasy" checked> značené trasy (OSM)</label>
   <label id="lblLan" style="display:none"><input type="checkbox" id="chkLan" checked> lanovky s kabinkami (OSM)</label>
+  <label id="lblVlek" style="display:none"><input type="checkbox" id="chkVlek"> vleky skiareálů (OSM)</label>
   <label id="lblReky" style="display:none"><input type="checkbox" id="chkReky" checked> řeky (OSM)</label>
   <label id="lblVrch" style="display:none"><input type="checkbox" id="chkVrch" checked> vrcholy s popiskem</label>
   <label><input type="checkbox" id="chkMraky" checked> stíny mraků <span style="color:#6a7186">(dekorace)</span></label>
@@ -69,7 +70,7 @@
 <div id="pata">Polohy a výšky chat: vlastní data průvodce + OpenStreetMap (© přispěvatelé
 OpenStreetMap, ODbL). <span id="pataZdroj"></span> Mraky, hvězdy a světla oken jsou
 dekorace, ne data. turistickechaty.cz — experiment.</div>
-<script>/* three.js r128 (MIT) — přibaleno, ať soubor funguje offline */
+<script>/* three.js r128 (MIT) — přibaleno */
 /**
  * @license
  * Copyright 2010-2021 Three.js Authors
@@ -107,11 +108,12 @@ const SIRKA=sx(D.bbox.lngMax)-sx(D.bbox.lngMin), HLOUBKA=sy(D.bbox.latMax)-sy(D.
 const EMIN=500; let ZEX=2.4;
 const zOf=(ele)=>((ele-EMIN)/1000)*ZEX;
 const NX=D.nx, NY=D.ny;
-function eleNa(lat,lng){
-  const fx=(lng-D.bbox.lngMin)/(D.bbox.lngMax-D.bbox.lngMin)*(NX-1);
-  const fy=(lat-D.bbox.latMin)/(D.bbox.latMax-D.bbox.latMin)*(NY-1);
-  const ix=Math.max(0,Math.min(NX-1,Math.round(fx))), iy=Math.max(0,Math.min(NY-1,Math.round(fy)));
-  return D.grid[iy][ix];
+function eleNa(lat,lng){ // bilineární interpolace — hrubá mřížka jinak dělá schody
+  const fx=Math.max(0,Math.min(NX-1.001,(lng-D.bbox.lngMin)/(D.bbox.lngMax-D.bbox.lngMin)*(NX-1)));
+  const fy=Math.max(0,Math.min(NY-1.001,(lat-D.bbox.latMin)/(D.bbox.latMax-D.bbox.latMin)*(NY-1)));
+  const x0=Math.floor(fx), y0=Math.floor(fy), tx=fx-x0, ty=fy-y0;
+  const e00=D.grid[y0][x0], e10=D.grid[y0][x0+1], e01=D.grid[y0+1][x0], e11=D.grid[y0+1][x0+1];
+  return e00*(1-tx)*(1-ty)+e10*tx*(1-ty)+e01*(1-tx)*ty+e11*tx*ty;
 }
 
 // ── stav prostředí ──
@@ -313,55 +315,88 @@ function stavTrasy(){
   }
 }
 
-// ── lanovky s kabinkami ──
+// ── lanovky a vleky ──
+// Lanovka je ROVNÁ vzdušná úsečka mezi stanicemi (tak vypadá doopravdy):
+// koncové výšky z terénu + podpěry od terénu k lanu po ~350 m. Kabinky jen
+// na kabinových/sedačkových; vleky (kotvy/pomy) jsou tenčí a ve výchozím stavu vypnuté.
 const lanGrp=new THREE.Group(); scene.add(lanGrp);
-const kabinky=[];
+const vlekGrp=new THREE.Group(); vlekGrp.visible=false; scene.add(vlekGrp);
+const kabinky=[]; let kabMesh=null;
+const JE_KABINOVA=t=>/cable_car|gondola|mixed_lift|chair_lift/.test(t||'');
 function stavLanovky(){
-  lanGrp.clear(); kabinky.length=0;
+  lanGrp.clear(); vlekGrp.clear(); kabinky.length=0; kabMesh=null;
   if(!D.lanovky||!D.lanovky.length)return;
-  const matLano=new THREE.LineBasicMaterial({color:0x384057,transparent:true,opacity:.9});
-  const matSloup=new THREE.MeshLambertMaterial({color:0x4a5268});
-  const matKab=new THREE.MeshLambertMaterial({color:0xE0341F});
+  const lanaK=[], lanaV=[]; // segmenty pro batchované LineSegments
+  const podpery=[]; // {x,z,yTer,yLano}
   for(const l of D.lanovky){
-    const body=l.body.map(([la,lo])=>new THREE.Vector3(sx(lo),zOf(eleNa(la,lo))+.34,-sy(la)));
-    if(body.length<2)continue;
-    // podpěry
-    for(let i=0;i<body.length;i++){
-      if(i%2===0||i===body.length-1){
-        const b=body[i];
-        const sl=new THREE.Mesh(new THREE.CylinderGeometry(.012,.016,.34,5),matSloup);
-        sl.position.set(b.x,b.y-.17,b.z); lanGrp.add(sl);
-      }
-    }
-    // lano s mírným průvěsem mezi body
+    const a=l.body[0], b=l.body[l.body.length-1];
+    const A=new THREE.Vector3(sx(a[1]),zOf(eleNa(a[0],a[1]))+.14,-sy(a[0]));
+    const B=new THREE.Vector3(sx(b[1]),zOf(eleNa(b[0],b[1]))+.14,-sy(b[0]));
+    const len=A.distanceTo(B);
+    if(len<.05)continue;
+    const kab=JE_KABINOVA(l.typ);
+    // lano jako lomená čára s mírným průvěsem mezi podpěrami
+    const nPod=Math.max(2,Math.min(14,Math.round(len/.35)+1));
     const lano=[];
-    for(let i=0;i<body.length-1;i++){
-      const a=body[i], b=body[i+1];
-      for(let t=0;t<=6;t++){
-        const u=t/6;
-        const p=a.clone().lerp(b,u); p.y-=Math.sin(u*Math.PI)*.05;
-        lano.push(p);
-      }
+    for(let i=0;i<nPod;i++){
+      const t=i/(nPod-1);
+      const p=A.clone().lerp(B,t);
+      // podpěra: pata na terénu, vršek u lana
+      const la=a[0]+(b[0]-a[0])*t, lo=a[1]+(b[1]-a[1])*t;
+      const yTer=zOf(eleNa(la,lo));
+      if(p.y<yTer+.05)p.y=yTer+.05; // lano nesmí pod terén
+      lano.push(p);
+      if(i>0&&i<nPod-1)podpery.push({x:p.x,z:p.z,yTer,yLano:p.y,kab});
     }
-    lanGrp.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(lano),matLano));
-    // kabinky — počet dle délky
-    let delka=0; for(let i=1;i<lano.length;i++)delka+=lano[i].distanceTo(lano[i-1]);
-    const pocet=Math.max(1,Math.min(5,Math.round(delka/1.4)));
-    for(let k=0;k<pocet;k++){
-      const kab=new THREE.Mesh(new THREE.BoxGeometry(.07,.07,.07),matKab);
-      kab.castShadow=true; lanGrp.add(kab);
-      kabinky.push({mesh:kab,lano,t:k/pocet,smer:1,rychlost:.008+Math.random()*.003});
+    const cil=kab?lanaK:lanaV;
+    for(let i=0;i<lano.length-1;i++){
+      const p=lano[i],q=lano[i+1];
+      const stred=p.clone().lerp(q,.5); stred.y-=Math.min(.04,p.distanceTo(q)*.06);
+      cil.push(p.x,p.y,p.z,stred.x,stred.y,stred.z, stred.x,stred.y,stred.z,q.x,q.y,q.z);
     }
+    if(kab){
+      const pocet=Math.max(1,Math.min(4,Math.round(len/1.2)));
+      for(let k=0;k<pocet;k++)kabinky.push({lano,t:(k+.5)/pocet,smer:k%2?1:-1,rychlost:.010+(k%3)*.002});
+    }
+  }
+  if(lanaK.length){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(lanaK,3));
+    lanGrp.add(new THREE.LineSegments(g,new THREE.LineBasicMaterial({color:0x384057,transparent:true,opacity:.75})));}
+  if(lanaV.length){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(lanaV,3));
+    vlekGrp.add(new THREE.LineSegments(g,new THREE.LineBasicMaterial({color:0x6a7186,transparent:true,opacity:.45})));}
+  // podpěry instancovaně (jedna geometrie, výška škálovaná)
+  const geoP=new THREE.CylinderGeometry(.011,.014,1,5); geoP.translate(0,.5,0);
+  const rozdel=[podpery.filter(p=>p.kab),podpery.filter(p=>!p.kab)];
+  for(let s=0;s<2;s++){
+    const sada=rozdel[s]; if(!sada.length)continue;
+    const im=new THREE.InstancedMesh(geoP,new THREE.MeshLambertMaterial({color:s?0x8b93a8:0x4a5268,transparent:!!s,opacity:s?.6:1}),sada.length);
+    const m=new THREE.Matrix4(), q=new THREE.Quaternion(), sc=new THREE.Vector3(), pv=new THREE.Vector3();
+    for(let i=0;i<sada.length;i++){
+      const p=sada[i];
+      pv.set(p.x,p.yTer,p.z); sc.set(1,Math.max(.02,p.yLano-p.yTer),1);
+      m.compose(pv,q,sc); im.setMatrixAt(i,m);
+    }
+    (s?vlekGrp:lanGrp).add(im);
+  }
+  // kabinky jako jeden InstancedMesh (animace přes matice)
+  if(kabinky.length){
+    kabMesh=new THREE.InstancedMesh(new THREE.BoxGeometry(.055,.05,.055),
+      new THREE.MeshLambertMaterial({color:0xE0341F}),kabinky.length);
+    lanGrp.add(kabMesh);
   }
 }
+const _m4=new THREE.Matrix4();
 function krokKabinky(dt){
-  for(const k of kabinky){
-    k.t+=k.smer*k.rychlost*dt;
+  if(!kabMesh)return;
+  for(let i=0;i<kabinky.length;i++){
+    const k=kabinky[i];
+    k.t+=k.smer*k.rychlost*dt*60/60;
     if(k.t>=1){k.t=1;k.smer=-1} if(k.t<=0){k.t=0;k.smer=1}
-    const f=k.t*(k.lano.length-1), i=Math.min(k.lano.length-2,Math.floor(f)), u=f-i;
-    const p=k.lano[i].clone().lerp(k.lano[i+1],u);
-    k.mesh.position.set(p.x,p.y-.05,p.z);
+    const f=k.t*(k.lano.length-1), j=Math.min(k.lano.length-2,Math.floor(f)), u=f-j;
+    const p=k.lano[j].clone().lerp(k.lano[j+1],u);
+    _m4.makeTranslation(p.x,p.y-.045,p.z);
+    kabMesh.setMatrixAt(i,_m4);
   }
+  kabMesh.instanceMatrix.needsUpdate=true;
 }
 
 // ── řeky ──
@@ -520,6 +555,7 @@ for(const b of document.querySelectorAll('.sez button')){
 $('chkVrst').onchange=e=>vrstGrp.visible=e.target.checked;
 $('chkTrasy').onchange=e=>trasyGrp.visible=e.target.checked;
 $('chkLan').onchange=e=>lanGrp.visible=e.target.checked;
+$('chkVlek').onchange=e=>vlekGrp.visible=e.target.checked;
 $('chkReky').onchange=e=>rekyGrp.visible=e.target.checked;
 $('chkVrch').onchange=e=>vrchGrp.visible=e.target.checked;
 $('chkMraky').onchange=e=>mrakGrp.visible=e.target.checked;
@@ -531,7 +567,7 @@ $('rngZ').oninput=e=>{ZEX=+e.target.value;$('zval').textContent=ZEX.toFixed(1)+'
 // ── sestavení scén ──
 stavTrasy(); stavLanovky(); stavReky(); stavVrcholy(); stavPrechody(); stavSokl();
 if(D.trasy&&D.trasy.length)$('lblTrasy').style.display='flex'; else trasyGrp.visible=false;
-if(D.lanovky&&D.lanovky.length)$('lblLan').style.display='flex'; else lanGrp.visible=false;
+if(D.lanovky&&D.lanovky.length){$('lblLan').style.display='flex';$('lblVlek').style.display='flex';} else {lanGrp.visible=false;vlekGrp.visible=false;}
 if(D.reky&&D.reky.length)$('lblReky').style.display='flex'; else rekyGrp.visible=false;
 if(D.vrcholy&&D.vrcholy.length)$('lblVrch').style.display='flex'; else vrchGrp.visible=false;
 osvetli();
