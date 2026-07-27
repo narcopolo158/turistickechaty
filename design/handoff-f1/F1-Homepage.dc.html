@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+:root{--paper:#fff;--cream:#f7f6f0;--card:#fffdf7;--line:#e6e6e1;--ink:#384057;--muted:#5e6971;--red:#e0341f;--desk:#e7e2d6;--label:#8a8172;--hair:rgba(56,64,87,.14);--emph:'Newsreader',Georgia,serif;--open:#1e8a4f;--gone:#8a949c;--alpine:#2a5cb8;--stamp:#c92f1b;--lamp:none;--stars:none;--tr-red:#e0341f;--tr-blue:#2a5cb8;--tr-green:#2e8b57;--tr-yellow:#eab308}
+*{box-sizing:border-box}
+body{margin:0;background:var(--desk);font-family:'Inter',system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+a{color:var(--red);text-decoration:none}a:hover{color:#b5271a;text-decoration:underline}
+input::placeholder{color:#9aa0a6}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes cloudDrift{from{transform:translateX(-46px)}to{transform:translateX(52px)}}
+@keyframes sunGlow{0%,100%{opacity:.55}50%{opacity:.85}}
+@keyframes settlePop{0%{transform:translateY(-9px) scale(1.14) rotate(-8deg);opacity:0}60%{transform:translateY(1px) scale(.97) rotate(-8deg)}100%{transform:translateY(0) scale(1) rotate(-8deg);opacity:1}}
+@keyframes snowFallH{from{background-position:0 0,120px 0,60px 0}to{background-position:40px 640px,90px 640px,10px 640px}}
+@media print{#homeScreen{display:none!important}#homePrint{display:block!important}body{background:#fff!important}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+</style>
+</helmet>
+<div>
+<svg aria-hidden="true" width="0" height="0" style="position:absolute"><defs>
+<filter id="grainH"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"></feTurbulence><feColorMatrix in="n" type="saturate" values="0"></feColorMatrix></filter>
+<filter id="roughH1" x="-25%" y="-25%" width="150%" height="150%"><feTurbulence type="fractalNoise" baseFrequency="0.045 0.06" numOctaves="3" seed="8" result="n"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="3.4" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter>
+<filter id="roughH2" x="-25%" y="-25%" width="150%" height="150%"><feTurbulence type="fractalNoise" baseFrequency="0.05 0.07" numOctaves="3" seed="23" result="n"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="4.2" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter>
+<filter id="woodH"><feTurbulence type="fractalNoise" baseFrequency="0.016 0.11" numOctaves="4" seed="7" result="n"></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 0.30  0 0 0 0 0.17  0 0 0 0 0.06  0 0 0 0.5 0"></feColorMatrix></filter>
+</defs></svg>
+
+<div style="min-height:100vh;background:var(--desk);background-image:var(--lamp),var(--stars);padding:26px 20px 70px;display:flex;flex-direction:column;align-items:center;gap:14px;transition:background .4s">
+
+<div style="width:100%;max-width:1240px;display:flex;justify-content:space-between;align-items:baseline;font:600 10px/1 'Space Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--label)">
+<span>turistickechaty.cz · F1 · homepage — návrh</span>
+<span>{{ rezimText }}</span>
+</div>
+
+<div id="homeScreen" style="position:relative;width:100%;max-width:1240px;background:var(--cream);border-radius:5px;box-shadow:0 30px 70px -24px rgba(24,22,30,.42),0 8px 22px -12px rgba(24,22,30,.3);overflow:hidden">
+<div style="position:absolute;top:0;left:0;right:0;height:5px;background:var(--red);z-index:6"></div>
+<svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.05;mix-blend-mode:multiply;pointer-events:none;z-index:1"><rect width="100%" height="100%" filter="url(#grainH)"></rect></svg>
+
+<div data-screen-label="Hlavička" style="position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:22px 34px 14px;gap:16px;border-bottom:1px solid var(--hair)">
+<div style="display:flex;align-items:center;gap:11px">
+<div style="width:26px;height:26px;border-radius:5px;background:var(--red);display:flex;align-items:center;justify-content:center"><div style="width:13px;height:13px;background:linear-gradient(to bottom,#fff 0 33%,var(--red) 33% 66%,#fff 66% 100%);border:1px solid rgba(255,255,255,.7)"></div></div>
+<div style="font:700 15px/1 'Space Grotesk',sans-serif;color:var(--ink)">Turistické chaty</div>
+</div>
+<div style="display:flex;gap:22px;font:500 12.5px/1 'Inter';color:var(--muted)"><span style="cursor:pointer" style-hover="color:var(--red)">Katalog chat</span><span style="cursor:pointer" style-hover="color:var(--red)">Pohoří</span><span style="cursor:pointer" style-hover="color:var(--red)">Atlas zaniklých</span><span style="cursor:pointer" style-hover="color:var(--red)">Razítkovník</span><span style="cursor:pointer" style-hover="color:var(--red)">Jak ověřujeme</span></div>
+<div onClick="{{ toggleRezim }}" style="display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:20px;background:var(--paper);border:1px solid var(--line);font:600 10.5px/1 'Space Grotesk',sans-serif;color:var(--ink);cursor:pointer;white-space:nowrap" style-hover="border-color:rgba(224,52,31,.45)">{{ rezimBtn }}</div>
+</div>
+
+<div data-screen-label="Hero" style="position:relative;z-index:2;display:grid;grid-template-columns:53fr 47fr;gap:10px;padding:34px 34px 30px;background-image:radial-gradient(circle,var(--hair) 1px,transparent 1.5px);background-size:23px 23px">
+
+<div style="display:flex;flex-direction:column;justify-content:center;gap:0;padding-right:8px">
+<div style="font:600 10px/1 'Space Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--label);margin-bottom:14px">Průvodce horskými chatami · Česko</div>
+<h1 style="margin:0;font:500 54px/1.02 var(--emph);letter-spacing:-.015em;color:var(--ink);text-wrap:pretty">Chaty, kterým<br>můžeš věřit.</h1>
+<div style="font:400 15px/1.65 'Inter';color:var(--muted);margin-top:16px;max-width:46ch;text-wrap:pretty">Každý údaj má zdroj a datum ověření. Razítka, známky, skládané mapy a příběhy bud — začínáme v Krkonoších.</div>
+
+<div style="display:flex;align-items:center;gap:9px;margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:5px 6px 5px 15px;box-shadow:0 10px 22px -14px rgba(20,18,26,.4);max-width:470px">
+<span style="color:var(--muted);font:600 14px/1 'Space Grotesk',sans-serif">⌕</span>
+<input list="chaty-list" placeholder="Najdi chatu… (Luční bouda, Samotnia…)" style="flex:1;border:0;outline:0;background:transparent;font:400 14px/1.4 'Inter';color:var(--ink);min-width:0">
+<datalist id="chaty-list"><sc-for list="{{ hutNames }}" as="h" hint-placeholder-count="6"><option value="{{ h }}"></option></sc-for></datalist>
+<div style="padding:9px 15px;border-radius:8px;background:var(--red);color:#fff;font:600 12px/1 'Space Grotesk',sans-serif;cursor:pointer;box-shadow:0 5px 12px -6px rgba(224,52,31,.7)">Hledat</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:9px;margin-top:24px;align-items:flex-start">
+<div onMouseMove="{{ tilt }}" onMouseLeave="{{ untilt }}" style="position:relative;display:inline-flex;align-items:center;gap:12px;padding:12px 34px 12px 16px;background:linear-gradient(173deg,#a87c46,#835a2a 55%,#6b4720);clip-path:polygon(0 0,calc(100% - 22px) 0,100% 50%,calc(100% - 22px) 100%,0 100%);transform:rotate(-1deg);cursor:pointer;transition:transform .3s cubic-bezier(.2,.7,.2,1);box-shadow:0 10px 20px -9px rgba(40,24,8,.55)">
+<div style="position:absolute;inset:0;opacity:.45;mix-blend-mode:multiply;pointer-events:none"><svg width="100%" height="100%"><rect width="100%" height="100%" filter="url(#woodH)"></rect></svg></div>
+<span style="position:relative;width:5px;height:5px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f2dca8,#6e5026);box-shadow:0 1px 1px rgba(50,30,8,.6)"></span>
+<span style="position:relative;font:700 13px/1 'Space Grotesk',sans-serif;letter-spacing:.08em;color:#fdf3dd;text-shadow:0 -1px 0 rgba(50,28,8,.7),0 1px 0 rgba(255,230,180,.25)">PROZKOUMAT KRKONOŠE</span>
+<span style="position:relative;font:600 10.5px/1 'Space Grotesk',sans-serif;color:#e2c891">stránka pohoří · 3D mapa</span>
+</div>
+<div onMouseMove="{{ tilt }}" onMouseLeave="{{ untilt }}" style="position:relative;display:inline-flex;align-items:center;gap:12px;padding:11px 32px 11px 16px;background:linear-gradient(173deg,#9a7140,#7c5527 55%,#63401b);clip-path:polygon(0 0,calc(100% - 22px) 0,100% 50%,calc(100% - 22px) 100%,0 100%);transform:rotate(.8deg);cursor:pointer;transition:transform .3s cubic-bezier(.2,.7,.2,1);box-shadow:0 10px 20px -9px rgba(40,24,8,.55)">
+<div style="position:absolute;inset:0;opacity:.45;mix-blend-mode:multiply;pointer-events:none"><svg width="100%" height="100%"><rect width="100%" height="100%" filter="url(#woodH)"></rect></svg></div>
+<span style="position:relative;width:5px;height:5px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f2dca8,#6e5026);box-shadow:0 1px 1px rgba(50,30,8,.6)"></span>
+<span style="position:relative;font:700 12px/1 'Space Grotesk',sans-serif;letter-spacing:.08em;color:#fdf3dd;text-shadow:0 -1px 0 rgba(50,28,8,.7),0 1px 0 rgba(255,230,180,.25)">KATALOG CHAT</span>
+<span style="position:relative;font:600 10.5px/1 'Space Grotesk',sans-serif;color:#e2c891">76 profilů</span>
+</div>
+</div>
+
+<div style="display:flex;gap:22px;align-items:baseline;margin-top:26px;padding-top:16px;border-top:1px solid var(--hair);flex-wrap:wrap">
+<div><span style="font:600 22px/1 'Space Grotesk',sans-serif;color:var(--ink)">76</span> <span style="font:500 11.5px/1 'Inter';color:var(--muted)">profilů chat</span></div>
+<div><span style="font:600 22px/1 'Space Grotesk',sans-serif;color:var(--ink)">16</span> <span style="font:500 11.5px/1 'Inter';color:var(--muted)">s razítkem</span></div>
+<div><span style="font:600 22px/1 'Space Grotesk',sans-serif;color:var(--ink)">12</span> <span style="font:500 11.5px/1 'Inter';color:var(--muted)">zaniklých v Atlasu</span></div>
+<div style="font:italic 400 11.5px/1.4 var(--emph);color:var(--muted);white-space:nowrap">naposledy ověřeno <b style="font-style:normal;color:var(--open)">19. 7. 2026</b></div>
+</div>
+<div style="font:italic 400 10.5px/1.4 var(--emph);color:var(--label);margin-top:6px"><span>†</span> jen čísla doložená v databázi — žádná vymyšlená</div>
+<div style="display:flex;gap:8px;align-items:center;margin-top:13px;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border-radius:20px;background:rgba(30,138,79,.1);font:600 10.5px/1 'Space Grotesk',sans-serif;color:var(--open);white-space:nowrap"><span style="width:6px;height:6px;border-radius:50%;background:var(--open)"></span>{{ nedavno }}</span>
+<span style="padding:6px 12px;border-radius:20px;background:var(--paper);border:1px solid var(--line);font:600 10.5px/1 'Space Grotesk',sans-serif;color:var(--ink);cursor:pointer" style-hover="border-color:rgba(224,52,31,.4);color:var(--red)">RSS</span>
+<span style="padding:6px 12px;border-radius:20px;background:var(--paper);border:1px solid var(--line);font:600 10.5px/1 'Space Grotesk',sans-serif;color:var(--ink);cursor:pointer" style-hover="border-color:rgba(224,52,31,.4);color:var(--red)">Newsletter</span>
+<span onClick="{{ doPrint }}" style="padding:6px 12px;border-radius:20px;background:var(--paper);border:1px solid var(--line);font:600 10.5px/1 'Space Grotesk',sans-serif;color:var(--ink);cursor:pointer" style-hover="border-color:rgba(224,52,31,.4);color:var(--red)">Tisk seznamu ▸</span>
+</div>
+</div>
+
+<div style="position:relative;min-height:470px" data-screen-label="Hero koláž">
+
+<div onMouseMove="{{ tilt }}" onMouseLeave="{{ untilt }}" style="position:absolute;left:-4px;top:44px;width:296px;transform:rotate(-5deg);transition:transform .35s cubic-bezier(.2,.7,.2,1);z-index:2;cursor:default;filter:drop-shadow(0 16px 22px rgba(20,18,26,.35))">
+<div style="clip-path:polygon(2% 3%,31% 0,52% 2%,78% 0,99% 4%,100% 34%,97% 55%,100% 78%,98% 97%,70% 100%,44% 97%,18% 100%,0 96%,2% 68%,0 38%);background:#fdfbf4;padding:7px">
+<div style="position:relative;clip-path:polygon(1.5% 2%,30% .5%,52% 2%,78% .5%,98.5% 3%,99.5% 34%,97% 55%,99.5% 78%,98% 96.5%,70% 99.5%,44% 97%,18% 99.5%,1% 96%,2% 68%,1% 38%);background:linear-gradient(150deg,#edf0e2,#e4ebda 55%,#dfe7dc);height:238px;overflow:hidden">
+<div style="position:absolute;inset:0;background:repeating-radial-gradient(circle at 64% 38%,transparent 0 13px,rgba(110,135,75,.14) 13px 14px),repeating-radial-gradient(circle at 22% 78%,transparent 0 17px,rgba(110,135,75,.09) 17px 18px)"></div>
+<svg viewBox="0 0 296 238" width="100%" height="100%" style="position:absolute;inset:0">
+<path d="M-8,196 C60,178 120,186 170,150 C220,114 250,122 306,96" fill="none" stroke="var(--tr-blue)" stroke-width="2.4" opacity=".75"></path>
+<path d="M24,244 C70,190 130,168 178,140 C220,116 248,86 262,44" fill="none" stroke="var(--tr-red)" stroke-width="2.8" stroke-dasharray="8 6"></path>
+<path d="M-6,120 C60,112 130,124 200,108 C250,96 280,100 302,92" fill="none" stroke="#fff" stroke-width="3.4" opacity=".7"></path>
+<circle cx="66" cy="196" r="4.5" fill="#fff" stroke="var(--ink)" stroke-width="1.8"></circle>
+<g transform="translate(196,118)"><path d="M-10,5 L0,-10 L10,5 Z" fill="var(--red)"></path><rect x="-7" y="5" width="14" height="8" fill="var(--red)"></rect><rect x="-1.5" y="7" width="4" height="6" fill="#fff"></rect></g>
+<path d="M262,44 l6,-3 M262,44 l-1,7" stroke="var(--ink)" stroke-width="1.4"></path>
+</svg>
+<div style="position:absolute;left:44px;top:200px;font:600 8.5px/1 'Space Grotesk',sans-serif;color:var(--ink);text-shadow:0 1px 2px #fff">Špindlerův Mlýn</div>
+<div style="position:absolute;left:160px;top:130px;font:700 9px/1 'Space Grotesk',sans-serif;color:var(--red);text-shadow:0 1px 2px #fff">LUČNÍ BOUDA</div>
+<div style="position:absolute;top:0;bottom:0;left:49%;width:2px;background:linear-gradient(90deg,rgba(0,0,0,.09),rgba(255,255,255,.5))"></div>
+<div style="position:absolute;right:8px;bottom:6px;font:500 7px/1 'Inter';color:rgba(40,44,60,.6)">© Mapy.com · KČT</div>
+<svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.06;mix-blend-mode:multiply"><rect width="100%" height="100%" filter="url(#grainH)"></rect></svg>
+</div>
+</div>
+<div style="position:absolute;left:-13px;top:-10px;width:64px;height:20px;background:linear-gradient(120deg,rgba(214,203,150,.6),rgba(224,216,175,.75));transform:rotate(-38deg);box-shadow:0 2px 4px rgba(0,0,0,.12)"></div>
+<div style="position:absolute;right:-8px;bottom:-6px;width:58px;height:18px;background:linear-gradient(120deg,rgba(214,203,150,.55),rgba(224,216,175,.7));transform:rotate(31deg);box-shadow:0 2px 4px rgba(0,0,0,.12)"></div>
+</div>
+
+<div onMouseMove="{{ tilt }}" onMouseLeave="{{ untilt }}" style="position:absolute;right:0;top:-6px;width:238px;transform:rotate(3.2deg);transition:transform .35s cubic-bezier(.2,.7,.2,1);z-index:3;cursor:default">
+<div style="background:#fffef9;padding:11px 11px 40px;box-shadow:0 16px 30px -14px rgba(20,18,26,.5),0 4px 9px -4px rgba(20,18,26,.35);border-radius:2px">
+<div style="position:relative;aspect-ratio:4/3.1;background:#e7e3d7;overflow:hidden">
+<image-slot id="home-hero-polaroid" shape="rect" fit="cover" placeholder="Foto hřebene / chaty — přetáhni sem"></image-slot>
+<div style="position:absolute;top:0;left:0;width:15px;height:15px;background:rgba(40,36,30,.45);clip-path:polygon(0 0,100% 0,0 100%)"></div>
+<div style="position:absolute;bottom:0;right:0;width:15px;height:15px;background:rgba(40,36,30,.45);clip-path:polygon(100% 0,0 100%,100% 100%)"></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:10px;text-align:center;font:600 19px/1 'Caveat',cursive;color:#3a4152">hřebenovka, srpen ’25</div>
+</div>
+<div style="position:absolute;left:50%;top:-11px;transform:translateX(-54%) rotate(-3deg);width:82px;height:23px;background:linear-gradient(120deg,rgba(214,203,150,.6),rgba(224,216,175,.75));box-shadow:0 2px 5px rgba(0,0,0,.13)"></div>
+</div>
+
+<sc-if value="{{ plno }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;left:150px;top:250px;z-index:4;pointer-events:none">
+<svg viewBox="0 0 120 120" width="118" height="118" style="filter:url(#roughH1);mix-blend-mode:multiply;transform:rotate(-9deg)">
+<defs><path id="hA" d="M18,60 a42,42 0 0 1 84,0" fill="none"></path><path id="hB" d="M22,62 a38,38 0 0 0 76,0" fill="none"></path></defs>
+<g fill="var(--stamp)" stroke="var(--stamp)">
+<circle cx="60" cy="60" r="53" fill="none" stroke-width="3"></circle><circle cx="60" cy="60" r="42" fill="none" stroke-width="1.4"></circle>
+<text font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="11" letter-spacing="1.5" stroke="none"><textPath href="#hA" startOffset="50%" text-anchor="middle">LUČNÍ BOUDA</textPath></text>
+<text font-family="'Space Grotesk',sans-serif" font-weight="600" font-size="9" letter-spacing="1.2" stroke="none"><textPath href="#hB" startOffset="50%" text-anchor="middle">KRKONOŠE · 1410 m</textPath></text>
+<path d="M40,66 L50,52 L57,60 L67,45 L80,66 Z" stroke="none"></path><path d="M34,72 L86,72" stroke-width="1.6"></path>
+<text x="60" y="83" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="8" letter-spacing="1" text-anchor="middle" stroke="none">EST. 1623</text>
+</g>
+</svg>
+</div>
+
+<div style="position:absolute;right:26px;bottom:118px;z-index:4;pointer-events:none">
+<svg viewBox="0 0 110 110" width="96" height="96" style="filter:url(#roughH2);mix-blend-mode:multiply;transform:rotate(6deg)">
+<g fill="#2a5cb8" stroke="#2a5cb8">
+<rect x="10" y="10" width="90" height="90" rx="7" fill="none" stroke-width="2.6"></rect>
+<rect x="17" y="17" width="76" height="76" rx="4" fill="none" stroke-width="1.1"></rect>
+<text x="55" y="38" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="10" letter-spacing="1" text-anchor="middle" stroke="none">VÝROVKA</text>
+<path d="M38,62 L47,49 L54,57 L62,44 L73,62 Z" stroke="none"></path>
+<path d="M33,68 L77,68" stroke-width="1.4"></path>
+<text x="55" y="80" font-family="'Space Grotesk',sans-serif" font-weight="600" font-size="7.5" letter-spacing=".8" text-anchor="middle" stroke="none">1370 m · KRKONOŠE</text>
+</g>
+</svg>
+</div>
+
+<div onMouseMove="{{ tilt }}" onMouseLeave="{{ untilt }}" style="position:absolute;left:56px;bottom:8px;width:88px;height:88px;border-radius:50%;z-index:5;cursor:pointer;transition:transform .35s cubic-bezier(.2,.7,.2,1);background:radial-gradient(circle at 34% 30%,#c9955c,#a9743f 46%,#7c4f27 100%);box-shadow:inset 0 3px 6px rgba(255,225,180,.55),inset 0 -5px 10px rgba(60,34,10,.6),inset 0 0 0 3px rgba(120,74,36,.55),0 11px 18px -8px rgba(40,24,8,.6)">
+<div style="position:absolute;inset:0;border-radius:50%;overflow:hidden;opacity:.5;mix-blend-mode:multiply"><svg width="88" height="88"><rect width="88" height="88" filter="url(#woodH)"></rect></svg></div>
+<div style="position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 32% 26%,rgba(255,244,220,.6),transparent 42%)"></div>
+<div style="position:absolute;inset:12px;border-radius:50%;border:1.5px solid rgba(70,42,16,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;text-shadow:0 1px 0 rgba(255,225,180,.35),0 -1px 1px rgba(50,28,8,.6);color:#4b2e12">
+<div style="font:700 7px/1 'Space Grotesk',sans-serif;letter-spacing:.1em">Č. 11</div>
+<div style="font:600 8px/1.05 'Space Grotesk',sans-serif;margin:2px 0">LUČNÍ<br>BOUDA</div>
+<div style="font:600 6px/1 'Space Grotesk',sans-serif">1410 m</div>
+</div>
+</div>
+
+<div onMouseMove="{{ tilt }}" onMouseLeave="{{ untilt }}" style="position:absolute;right:64px;bottom:-2px;z-index:5;display:flex;flex-direction:column;gap:0;transform:rotate(-2deg);transition:transform .35s cubic-bezier(.2,.7,.2,1);cursor:default;box-shadow:0 9px 16px -8px rgba(20,18,26,.5);border-radius:4px;overflow:hidden;border:1px solid rgba(56,64,87,.2)">
+<div style="width:74px;height:15px;background:#fff"></div>
+<div style="width:74px;height:15px;background:var(--tr-red)"></div>
+<div style="width:74px;height:15px;background:#fff"></div>
+<div style="position:absolute;left:3px;top:50%;transform:translateY(-50%);width:4px;height:4px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e8e8e8,#7a7f88);box-shadow:0 1px 1px rgba(0,0,0,.4)"></div>
+<div style="position:absolute;right:3px;top:50%;transform:translateY(-50%);width:4px;height:4px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e8e8e8,#7a7f88);box-shadow:0 1px 1px rgba(0,0,0,.4)"></div>
+</div>
+</sc-if>
+
+<div style="position:absolute;right:0;bottom:-16px;font:italic 400 10.5px/1.4 var(--emph);color:var(--label)">sběratelské artefakty — reálné skeny se svolením, jinak ghost</div>
+</div>
+</div>
+
+<div data-screen-label="Kalendárium" style="position:relative;z-index:2;margin:0 34px 24px;display:flex;align-items:center;gap:14px;padding:13px 18px;background:var(--paper);border:1px solid var(--line);border-radius:12px;flex-wrap:wrap">
+<span style="font:600 9.5px/1 'Space Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--label);flex:none">Kalendárium</span>
+<span style="width:7px;height:7px;background:var(--red);transform:rotate(45deg);flex:none"></span>
+<span style="font:500 15px/1.45 var(--emph);color:var(--ink);flex:1;min-width:260px">{{ vyroci }}</span>
+<span style="font:600 11px/1 'Space Grotesk',sans-serif;color:var(--red);cursor:pointer;flex:none">číst v Atlasu ▸</span>
+<span style="font:italic 400 10.5px/1 var(--emph);color:var(--label);flex:none">z milníků historie · střídá se denně</span>
+</div>
+
+<div data-screen-label="3D panorama band" style="position:relative;z-index:2;margin:0 34px">
+<div style="position:relative;border-radius:14px;overflow:hidden;box-shadow:0 16px 34px -18px rgba(20,18,26,.5),inset 0 0 0 1px var(--line)">
+<div style="position:relative;height:400px;background:linear-gradient(#f6efe1 0%,#efe9db 30%,#e4e8e4 62%,#dae4e6 100%);overflow:hidden">
+<svg id="homePano" viewBox="0 0 1200 400" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;display:block">
+<defs>
+<radialGradient id="sunH"><stop offset="0" stop-color="#fdf0cf" stop-opacity=".95"></stop><stop offset="1" stop-color="#fdf0cf" stop-opacity="0"></stop></radialGradient>
+<path id="lanovkaCable" d="M108,236 C240,268 420,262 560,206 C660,166 760,150 852,128"></path>
+</defs>
+<circle cx="980" cy="74" r="98" fill="url(#sunH)"></circle>
+<circle cx="980" cy="74" r="28" fill="#faeac6"></circle>
+<g><ellipse cx="230" cy="86" rx="86" ry="14" fill="#fdf8ec" opacity=".7"></ellipse><ellipse cx="288" cy="98" rx="54" ry="10" fill="#fdf8ec" opacity=".55"></ellipse></g>
+<g><ellipse cx="700" cy="60" rx="100" ry="15" fill="#fdf8ec" opacity=".6"></ellipse><ellipse cx="770" cy="73" rx="62" ry="10" fill="#fdf8ec" opacity=".5"></ellipse></g>
+<path d="M0,218 L146,158 L262,190 L380,124 L516,178 L648,116 L780,170 L900,134 L1040,182 L1200,144 L1200,400 L0,400 Z" fill="#bccbd8"></path>
+<path d="M380,124 L432,152 L334,166 Z" fill="#f4f7f9" opacity=".9"></path>
+<path d="M648,116 L706,152 L594,162 Z" fill="#f4f7f9" opacity=".9"></path>
+<path d="M0,218 L146,158 L262,190 L380,124 L516,178 L648,116 L780,170 L900,134 L1040,182 L1200,144 L1200,178 C1040,206 900,180 780,200 C620,226 480,204 340,224 C220,240 100,234 0,250 Z" fill="#a7bacb" opacity=".6"></path>
+<path d="M0,264 L128,228 L248,256 L384,204 L520,246 L640,196 L760,238 L880,210 L1010,248 L1130,222 L1200,240 L1200,400 L0,400 Z" fill="#9db2c3"></path>
+<path d="M0,264 L128,228 L248,256 L384,204 L520,246 L640,196 L760,238 L880,210 L1010,248 L1130,222 L1200,240 L1200,272 C1040,254 900,268 762,266 C600,264 420,248 252,282 C140,302 60,292 0,298 Z" fill="#84a0b5" opacity=".7"></path>
+<path d="M0,316 L118,286 L240,310 L360,274 L500,306 L620,268 L740,302 L860,278 L990,308 L1112,284 L1200,302 L1200,400 L0,400 Z" fill="#7e9569"></path>
+<path d="M0,316 L118,286 L240,310 L360,274 L500,306 L620,268 L740,302 L860,278 L990,308 L1112,284 L1200,302 L1200,330 C1060,314 940,330 800,326 C640,320 480,330 320,344 C200,354 90,342 0,348 Z" fill="#5f7a52" opacity=".7"></path>
+<g fill="#4f6a45" opacity=".85"><path d="M84,304 l6,-16 l6,16 Z"></path><path d="M196,308 l6,-17 l6,17 Z"></path><path d="M310,292 l6,-16 l6,16 Z"></path><path d="M448,300 l6,-17 l6,17 Z"></path><path d="M574,286 l6,-16 l6,16 Z"></path><path d="M700,296 l6,-17 l6,17 Z"></path><path d="M826,284 l6,-16 l6,16 Z"></path><path d="M952,298 l6,-17 l6,17 Z"></path><path d="M1076,288 l6,-16 l6,16 Z"></path></g>
+<path d="M0,362 L142,340 L282,358 L422,336 L562,354 L702,334 L842,352 L982,336 L1122,352 L1200,342 L1200,400 L0,400 Z" fill="#6b8a4f"></path>
+<path d="M-10,306 C120,296 250,284 410,278 C600,270 770,272 950,260 C1070,252 1150,252 1215,246" fill="none" stroke="#fdfaf2" stroke-width="4.4" opacity=".6"></path>
+<path d="M120,352 C190,332 280,352 350,338 C430,322 500,344 570,334" fill="none" stroke="var(--tr-red)" stroke-width="3" stroke-dasharray="10 7" opacity=".9"></path>
+<path d="M570,334 C650,320 730,332 820,314 C900,298 970,312 1050,300" fill="none" stroke="var(--tr-blue)" stroke-width="3" stroke-dasharray="10 7" opacity=".86"></path>
+<g stroke="#3c4552" stroke-width="3" opacity=".9"><path d="M108,236 l0,34"></path><path d="M104,270 l8,0"></path></g>
+<g stroke="#3c4552" stroke-width="3" opacity=".9"><path d="M560,206 l0,30"></path><path d="M556,236 l8,0"></path></g>
+<g stroke="#3c4552" stroke-width="3" opacity=".9"><path d="M852,128 l0,28"></path><path d="M848,156 l8,0"></path></g>
+<path d="M108,236 C240,268 420,262 560,206 C660,166 760,150 852,128" fill="none" stroke="#3c4552" stroke-width="1.6" opacity=".75"></path>
+<g transform="translate(318,257)">
+<path d="M0,0 l0,7" stroke="#3c4552" stroke-width="1.6"></path>
+<rect x="-7" y="7" width="14" height="11" rx="3" fill="var(--red)" stroke="#a8250f" stroke-width="1"></rect>
+<rect x="-4.5" y="9.5" width="9" height="4" rx="1" fill="#fdf4e4"></rect>
+</g>
+<g transform="translate(742,153)">
+<path d="M0,0 l0,7" stroke="#3c4552" stroke-width="1.6"></path>
+<rect x="-7" y="7" width="14" height="11" rx="3" fill="var(--red)" stroke="#a8250f" stroke-width="1"></rect>
+<rect x="-4.5" y="9.5" width="9" height="4" rx="1" fill="#fdf4e4"></rect>
+</g>
+</svg>
+<svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.045;mix-blend-mode:multiply;pointer-events:none"><rect width="100%" height="100%" filter="url(#grainH)"></rect></svg>
+<div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 100% at 50% 0,transparent 55%,rgba(40,44,60,.2))"></div>
+<div id="homeZima" style="position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .6s;background:linear-gradient(rgba(206,224,240,.45),rgba(232,241,248,.2) 42%,transparent 60%)"></div>
+<div id="homeZimaChip" style="position:absolute;right:14px;top:14px;display:none;align-items:center;gap:7px;padding:7px 12px;border-radius:8px;background:rgba(255,253,247,.92);border:1px solid var(--line);font:600 10px/1 'Space Grotesk',sans-serif;color:var(--alpine);box-shadow:0 4px 12px -6px rgba(20,18,26,.4)">zimní poster · podle kalendáře</div>
+<div id="homeNoc" style="position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .6s;background:rgba(10,14,24,.26)"></div>
+
+<div style="position:absolute;left:52%;top:13%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;pointer-events:none;white-space:nowrap">
+<span style="font:600 10.5px/1 'Space Grotesk',sans-serif;letter-spacing:.06em;color:#fff;text-shadow:0 1px 3px rgba(20,24,34,.85),0 0 10px rgba(20,24,34,.5)">SNĚŽKA</span>
+<span style="font:600 9px/1 'Space Grotesk',sans-serif;color:rgba(255,255,255,.82);text-shadow:0 1px 3px rgba(20,24,34,.85)">1 603 m</span>
+</div>
+
+<div style="position:absolute;left:16px;top:14px;display:flex;flex-direction:column;gap:4px">
+<span style="font:600 9px/1 'Space Grotesk',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8a8172;text-shadow:0 1px 2px rgba(255,252,242,.9)">Podpis webu</span>
+<span style="font:500 21px/1.1 var(--emph);color:#333c50;text-shadow:0 1px 3px rgba(255,252,242,.85)">Malovaná 3D mapa Krkonoš</span>
+</div>
+
+<div style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:flex-end;padding:14px 16px;background:linear-gradient(transparent,rgba(24,28,38,.34))">
+<div style="display:flex;align-items:center;gap:10px">
+<div style="display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border-radius:9px;background:var(--red);color:#fff;font:600 12.5px/1 'Space Grotesk',sans-serif;cursor:pointer;box-shadow:0 7px 16px -7px rgba(224,52,31,.85),inset 0 1px 0 rgba(255,255,255,.25)">Otevřít 3D mapu ▸</div>
+<span style="font:500 10.5px/1.4 'Inter';color:rgba(255,255,255,.92);text-shadow:0 1px 2px rgba(20,24,34,.7)">statický poster šetří data — plná 3D (i s jedoucí lanovkou)<br>se načte na stránce pohoří, three.js až po kliknutí</span>
+</div>
+<span style="font:500 8.5px/1 'Inter';color:rgba(255,255,255,.85);text-shadow:0 1px 2px rgba(20,24,34,.7)">© Mapy.com · OSM · KČT · terén ČÚZK</span>
+</div>
+</div>
+</div>
+</div>
+
+<div data-screen-label="Pohoří grid" style="position:relative;z-index:2;padding:28px 34px 0">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+<span style="width:26px;height:26px;border-radius:5px;background:var(--red);color:#fff;font:700 12px/26px 'Space Grotesk',sans-serif;text-align:center;flex:none">01</span>
+<span style="font:600 12px/1 'Space Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)">Pohoří</span>
+<span style="flex:1;height:1px;background:var(--hair)"></span>
+<span style="font:italic 400 10.5px/1 var(--emph);color:var(--muted)">pilot → expanze, poctivě</span>
+</div>
+<div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:11px">
+<div onMouseMove="{{ tilt }}" onMouseLeave="{{ untilt }}" style="position:relative;background:var(--paper);border:1px solid var(--line);border-radius:13px;overflow:hidden;cursor:pointer;transition:transform .3s cubic-bezier(.2,.7,.2,1);box-shadow:0 10px 24px -14px rgba(20,18,26,.35)">
+<div style="position:relative;height:110px;background:linear-gradient(#f0ead9,#dfe6e6)">
+<svg viewBox="0 0 460 110" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0">
+<path d="M0,64 L74,34 L140,54 L214,22 L292,52 L360,28 L420,48 L460,36 L460,110 L0,110 Z" fill="#b7c7d4"></path>
+<path d="M214,22 L242,38 L188,44 Z" fill="#f2f5f7" opacity=".9"></path>
+<path d="M0,84 L90,62 L180,80 L280,56 L380,76 L460,60 L460,110 L0,110 Z" fill="#7d9469"></path>
+<path d="M-5,74 C100,66 220,58 330,50 C380,46 430,44 465,40" fill="none" stroke="#fdfaf2" stroke-width="3" opacity=".65"></path>
+</svg>
+<span style="position:absolute;right:10px;top:10px;padding:4px 10px;border-radius:20px;background:rgba(30,138,79,.92);color:#fff;font:600 9.5px/1 'Space Grotesk',sans-serif;letter-spacing:.06em">ŽIVÉ</span>
+</div>
+<div style="padding:14px 16px 16px">
+<div style="font:500 21px/1.1 var(--emph);color:var(--ink)">Krkonoše</div>
+<div style="display:flex;gap:16px;margin-top:9px;font:500 11.5px/1.3 'Inter';color:var(--muted)"><span><b style="color:var(--ink);font-weight:600">41</b> chat</span><span><b style="color:var(--ink);font-weight:600">12</b> zaniklých</span><span><b style="color:var(--ink);font-weight:600">16</b> s razítkem</span></div>
+<div style="font:600 11px/1 'Space Grotesk',sans-serif;color:var(--red);margin-top:11px">Prozkoumat ▸</div>
+</div>
+</div>
+<sc-for list="{{ pripravujeme }}" as="p" hint-placeholder-count="3">
+<div style="background:var(--cream);border:1px dashed var(--hair);border-radius:13px;overflow:hidden">
+<div style="height:110px;background:repeating-linear-gradient(135deg,#eef0e8,#eef0e8 8px,#e7ebe2 8px,#e7ebe2 16px);display:flex;align-items:flex-end;padding:9px 12px"><span style="font:600 8.5px/1 'Space Grotesk',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#a4ac9c">silueta</span></div>
+<div style="padding:13px 15px 15px">
+<div style="font:500 17px/1.1 var(--emph);color:var(--muted)">{{ p.n }}</div>
+<div style="font:italic 400 11px/1.4 var(--emph);color:var(--muted);margin-top:6px">{{ p.note }}</div>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div data-screen-label="Namátkou z průvodce" style="position:relative;z-index:2;padding:28px 34px 0">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+<span style="width:26px;height:26px;border-radius:5px;background:var(--red);color:#fff;font:700 12px/26px 'Space Grotesk',sans-serif;text-align:center;flex:none">02</span>
+<span style="font:600 12px/1 'Space Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)">Namátkou z průvodce</span>
+<span style="flex:1;height:1px;background:var(--hair)"></span>
+<div onClick="{{ reshuffle }}" style="display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border-radius:8px;background:var(--paper);border:1px solid var(--line);font:600 10.5px/1 'Space Grotesk',sans-serif;color:var(--ink);cursor:pointer;white-space:nowrap;flex:none" style-hover="border-color:rgba(224,52,31,.45);color:var(--red)">↻ jiných pět</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:11px;align-items:stretch">
+<sc-for list="{{ picks }}" as="c" hint-placeholder-count="5">
+<div onMouseEnter="{{ c.stampIn }}" style="{{ c.style }}" style-hover="transform:translateY(-5px) rotate(0deg);box-shadow:0 16px 30px -14px rgba(20,18,26,.45)">
+<div style="height:5px;background:var(--red);opacity:.85"></div>
+<div style="position:relative;height:64px;background:repeating-linear-gradient(135deg,#eef0e8,#eef0e8 7px,#e7ebe2 7px,#e7ebe2 14px)">
+<sc-if value="{{ c.razitko }}" hint-placeholder-val="{{ false }}">
+<div data-stamp="1" style="position:absolute;right:7px;bottom:-14px;width:34px;height:34px;border-radius:50%;border:2px solid rgba(201,47,27,.65);background:rgba(255,253,247,.92);display:flex;align-items:center;justify-content:center;transform:rotate(-8deg);box-shadow:0 3px 7px -3px rgba(20,18,26,.4)"><span style="font:700 6px/1.15 'Space Grotesk',sans-serif;text-align:center;color:#c92f1b">RAZÍT<br>KO</span></div>
+</sc-if>
+</div>
+<div style="padding:11px 12px 12px;display:flex;flex-direction:column;flex:1">
+<div style="font:500 15px/1.2 var(--emph);color:var(--ink);text-wrap:pretty">{{ c.n }}</div>
+<div style="display:flex;align-items:center;gap:7px;margin-top:7px;flex-wrap:wrap">
+<span style="font:600 11px/1 'Space Grotesk',sans-serif;color:var(--ink)">{{ c.vyska }}</span>
+<span style="{{ c.pill }}">{{ c.stav }}</span>
+</div>
+<div style="flex:1"></div>
+<div style="font:italic 400 10px/1.4 var(--emph);color:var(--muted);margin-top:8px">ověř. {{ c.checked }}</div>
+<div style="font:600 10px/1 'Space Grotesk',sans-serif;color:var(--red);margin-top:5px">Otevřít profil ▸</div>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="font:italic 400 10.5px/1.4 var(--emph);color:var(--label);margin-top:9px"><span>†</span> náhodný výběr z 76 doložených profilů — žádná redakční „doporučení bez dokladu"</div>
+</div>
+
+<div data-screen-label="Pohlednice" style="position:relative;z-index:2;padding:28px 34px 0">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+<span style="width:26px;height:26px;border-radius:5px;background:var(--red);color:#fff;font:700 12px/26px 'Space Grotesk',sans-serif;text-align:center;flex:none">03</span>
+<span style="font:600 12px/1 'Space Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)">Pohlednice z hor</span>
+<span style="flex:1;height:1px;background:var(--hair)"></span>
+<span style="font:600 9px/1 'Space Grotesk',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--label)">Virální smyčka · návrh interakce</span>
+</div>
+<div style="display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;align-items:center">
+<div>
+<div style="font:500 26px/1.15 var(--emph);color:var(--ink)">Pošli chatu dál.</div>
+<div style="font:400 13.5px/1.6 'Inter';color:var(--muted);margin-top:10px;max-width:44ch;text-wrap:pretty">Z každého profilu složíš sdílitelnou pohlednici — foto chaty, otisk razítka a poštovní známka s nadmořskou výškou místo nominále.</div>
+<div style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:10px 17px;border-radius:9px;background:var(--red);color:#fff;font:600 12px/1 'Space Grotesk',sans-serif;cursor:pointer;box-shadow:0 7px 16px -7px rgba(224,52,31,.8)">Složit pohlednici z profilu ▸</div>
+<div style="font:italic 400 10.5px/1.5 var(--emph);color:var(--label);margin-top:10px"><span>†</span> sdílení šíří web dál — Fáze 2, zde návrh</div>
+</div>
+<div onMouseMove="{{ tilt }}" onMouseLeave="{{ untilt }}" style="position:relative;height:296px;background:#fdfbf4;border-radius:3px;box-shadow:0 20px 40px -18px rgba(20,18,26,.5),0 5px 12px -6px rgba(20,18,26,.3);transform:rotate(-2.2deg);transition:transform .35s cubic-bezier(.2,.7,.2,1);cursor:default;overflow:hidden">
+<svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.05;mix-blend-mode:multiply;pointer-events:none"><rect width="100%" height="100%" filter="url(#grainH)"></rect></svg>
+<div style="position:absolute;left:18px;top:14px;font:600 8px/1 'Space Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--label)">Pohlednice · turistickechaty.cz</div>
+<div style="position:absolute;left:50%;top:44px;bottom:20px;width:1px;background:var(--hair)"></div>
+<div style="position:absolute;left:20px;top:52px;width:42%;font:500 21px/1.3 'Caveat',cursive;color:#3a4152">Pozdrav z Bílé louky!<br>Ráno mlha, v poledne slunce a borůvkový koláč.<br>— M.</div>
+<div style="position:absolute;right:16px;top:16px;width:78px;background:#fff;padding:5px;box-shadow:0 3px 8px -3px rgba(20,18,26,.35)">
+<div style="border:2px dashed #d8d2c2;padding:6px 5px;display:flex;flex-direction:column;align-items:center;gap:3px">
+<span style="font:700 6.5px/1 'Space Grotesk',sans-serif;letter-spacing:.12em;color:var(--ink)">KRKONOŠE</span>
+<svg viewBox="0 0 56 26" width="56" height="26"><path d="M0,24 L14,10 L24,17 L36,6 L48,15 L56,11 L56,26 L0,26 Z" fill="#9db2c3"></path><path d="M0,26 L18,20 L38,24 L56,19 L56,26 Z" fill="#7d9469"></path></svg>
+<span style="font:700 11px/1 'Space Grotesk',sans-serif;color:var(--red)">1410 m</span>
+</div>
+</div>
+<svg viewBox="0 0 110 110" width="96" height="96" style="position:absolute;right:64px;top:34px;filter:url(#roughH2);mix-blend-mode:multiply;transform:rotate(-8deg);opacity:.85">
+<g fill="none" stroke="#566072" stroke-width="2">
+<circle cx="55" cy="55" r="34"></circle>
+<path d="M6,44 C16,40 24,48 34,44 M6,55 C16,51 24,59 34,55 M6,66 C16,62 24,70 34,66" stroke-width="1.6"></path>
+</g>
+<g fill="#566072" font-family="'Space Grotesk',sans-serif" font-weight="700" text-anchor="middle">
+<text x="55" y="48" font-size="7.5" letter-spacing="1">TURISTICKÉ</text>
+<text x="55" y="58" font-size="7.5" letter-spacing="1">CHATY</text>
+<text x="55" y="70" font-size="7">27. VII. 2026</text>
+</g>
+</svg>
+<div style="position:absolute;right:20px;bottom:26px;width:40%;display:flex;flex-direction:column;gap:26px">
+<div style="font:500 15px/1 'Caveat',cursive;color:#8a8172">Komu: tobě</div>
+<div style="height:1px;background:var(--hair)"></div>
+<div style="height:1px;background:var(--hair)"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div data-screen-label="Kurátorské pásy" style="position:relative;z-index:2;padding:28px 34px 0">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+<span style="width:26px;height:26px;border-radius:5px;background:var(--red);color:#fff;font:700 12px/26px 'Space Grotesk',sans-serif;text-align:center;flex:none">04</span>
+<span style="font:600 12px/1 'Space Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)">Z průvodce</span>
+<span style="flex:1;height:1px;background:var(--hair)"></span>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:stretch">
+
+<div style="background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:15px 16px;display:flex;flex-direction:column">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:500 17px/1.1 var(--emph);color:var(--ink)">Naposledy ověřeno</span><span style="font:600 9px/1 'Space Grotesk',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--open)">živý důkaz</span></div>
+<div style="flex:1;display:flex;flex-direction:column;margin-top:8px">
+<sc-for list="{{ overeno }}" as="o" hint-placeholder-count="3">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--hair);cursor:pointer" style-hover="background:var(--cream)">
+<span style="font:500 13px/1.2 'Inter';color:var(--ink)">{{ o.n }}</span>
+<span style="display:inline-flex;align-items:center;gap:6px;font:600 10.5px/1 'Space Grotesk',sans-serif;color:var(--open)"><span style="width:5px;height:5px;border-radius:50%;background:var(--open)"></span>{{ o.d }}</span>
+</div>
+</sc-for>
+</div>
+<div style="font:italic 400 10.5px/1.4 var(--emph);color:var(--muted);margin-top:8px">řadí se podle „checked" v databázi</div>
+</div>
+
+<div style="position:relative;background:#2b2f33;border-radius:13px;padding:15px 16px;color:#ece6d7;overflow:hidden;display:flex;flex-direction:column">
+<div style="position:absolute;right:-24px;top:-24px;width:110px;height:110px;border-radius:50%;border:2px dashed rgba(255,255,255,.14)"></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:500 17px/1.1 var(--emph)">Z Atlasu zaniklých</span><span style="font:600 10.5px/1 'Space Grotesk',sans-serif;color:#b7ad99">12 příběhů</span></div>
+<div style="flex:1;margin-top:10px">
+<div style="font:500 14px/1.25 'Inter'">Obří bouda <span style="font:600 10px 'Space Grotesk';color:#a6afac">· 1390 m · zanikla 1963</span></div>
+<div style="font:400 12px/1.55 'Inter';color:#a6afac;margin-top:5px;text-wrap:pretty">Jedna z nejstarších bud pod Sněžkou — po požáru už nebyla obnovena. Zůstalo jméno sedla a fotografie.</div>
+</div>
+<div style="display:inline-flex;align-items:center;gap:7px;margin-top:12px;padding:8px 13px;border-radius:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);font:600 10.5px/1 'Space Grotesk',sans-serif;cursor:pointer;align-self:flex-start">Otevřít Atlas ▸</div>
+</div>
+
+<div style="position:relative;background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:15px 16px;overflow:hidden;display:flex;flex-direction:column">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:500 17px/1.1 var(--emph);color:var(--ink)">Razítka a známky</span><span style="font:600 10.5px/1 'Space Grotesk',sans-serif;color:var(--muted);white-space:nowrap">46 · 11 · 0</span></div>
+<div style="flex:1;position:relative;min-height:104px;margin-top:6px">
+<svg viewBox="0 0 120 120" width="94" height="94" style="position:absolute;left:0;top:4px;filter:url(#roughH1);mix-blend-mode:multiply;transform:rotate(-7deg)">
+<g fill="var(--stamp)" stroke="var(--stamp)">
+<circle cx="60" cy="60" r="52" fill="none" stroke-width="3.2"></circle><circle cx="60" cy="60" r="41" fill="none" stroke-width="1.5"></circle>
+<path d="M40,66 L50,52 L57,60 L67,45 L80,66 Z" stroke="none"></path><path d="M36,73 L84,73" stroke-width="1.7"></path>
+<text x="60" y="35" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="9.5" letter-spacing="1" text-anchor="middle" stroke="none">RAZÍTKO</text>
+<text x="60" y="86" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="8" text-anchor="middle" stroke="none">Č. 46</text>
+</g>
+</svg>
+<div style="position:absolute;left:76px;top:14px;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#c9955c,#a9743f 46%,#7c4f27 100%);box-shadow:inset 0 2px 5px rgba(255,225,180,.55),inset 0 -4px 8px rgba(60,34,10,.6),0 8px 14px -6px rgba(40,24,8,.55)">
+<div style="position:absolute;inset:0;border-radius:50%;overflow:hidden;opacity:.5;mix-blend-mode:multiply"><svg width="64" height="64"><rect width="64" height="64" filter="url(#woodH)"></rect></svg></div>
+<div style="position:absolute;inset:9px;border-radius:50%;border:1px solid rgba(70,42,16,.55);display:flex;align-items:center;justify-content:center;text-align:center;color:#4b2e12;font:600 6.5px/1.2 'Space Grotesk',sans-serif;text-shadow:0 1px 0 rgba(255,225,180,.35)">TURIST.<br>ZNÁMKA</div>
+</div>
+<div style="position:absolute;right:0;top:30px;width:96px;border:1.5px dashed rgba(56,64,87,.25);border-radius:8px;padding:8px 9px;text-align:center">
+<div style="font:600 7.5px/1.4 'Space Grotesk',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#9aa0a6">vizitky<br>čekáme na souhlas</div>
+</div>
+</div>
+<div style="display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:8px;background:var(--cream);border:1px solid var(--line);font:600 10.5px/1 'Space Grotesk',sans-serif;color:var(--ink);cursor:pointer;align-self:flex-start" style-hover="border-color:rgba(224,52,31,.4)">Otevřít razítkovník ▸</div>
+</div>
+</div>
+</div>
+
+<div data-screen-label="Manifest" style="position:relative;z-index:2;margin:28px 34px 0;padding:18px 22px;background:var(--paper);border:1px solid var(--line);border-radius:13px;display:flex;gap:28px;align-items:center;flex-wrap:wrap">
+<div style="font:600 10px/1 'Space Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--label)">Jak to děláme</div>
+<div style="display:flex;gap:28px;flex-wrap:wrap;flex:1">
+<div style="display:flex;align-items:center;gap:9px"><span style="width:7px;height:7px;background:var(--red);transform:rotate(45deg)"></span><span style="font:500 13px/1.3 'Inter';color:var(--ink)">Ověřujeme u zdroje</span></div>
+<div style="display:flex;align-items:center;gap:9px"><span style="width:7px;height:7px;background:var(--red);transform:rotate(45deg)"></span><span style="font:500 13px/1.3 'Inter';color:var(--ink)">Rozpory přiznáváme</span></div>
+<div style="display:flex;align-items:center;gap:9px"><span style="width:7px;height:7px;background:var(--red);transform:rotate(45deg)"></span><span style="font:500 13px/1.3 'Inter';color:var(--ink)">Nic nedomýšlíme</span></div>
+</div>
+<div style="font:600 11.5px/1 'Space Grotesk',sans-serif;color:var(--red);cursor:pointer">Jak ověřujeme ▸</div>
+</div>
+
+<div data-screen-label="Footer" style="position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:20px 34px 24px;margin-top:28px;border-top:1px solid var(--hair)">
+<div style="display:flex;align-items:center;gap:10px">
+<div style="width:22px;height:22px;border-radius:4px;background:var(--red);display:flex;align-items:center;justify-content:center"><div style="width:11px;height:11px;background:linear-gradient(to bottom,#fff 0 33%,var(--red) 33% 66%,#fff 66% 100%);border:1px solid rgba(255,255,255,.7)"></div></div>
+<span style="font:600 9.5px/1.5 'Space Grotesk',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--label)">© 2026 turistickechaty.cz · průvodce s ověřenými daty</span>
+</div>
+<span style="font:500 10.5px/1 'Inter';color:var(--muted)">mapy © Mapy.com · OSM · KČT · terén ČÚZK · razítka se svolením razitkuj.cz</span>
+</div>
+
+</div>
+
+<div id="homePrint" style="display:none;width:100%;max-width:700px;margin:0 auto;background:#fff;color:#222;padding:40px 8px;font-family:'Inter',sans-serif">
+<div style="font:500 26px/1.15 var(--emph);color:#222">Turistické chaty — ověřený seznam · Krkonoše</div>
+<div style="font:400 11px/1.5 'Inter';color:#555;margin:6px 0 18px">vytištěno z turistickechaty.cz · u každé chaty datum posledního ověření · zdroje na profilech</div>
+<div style="display:grid;grid-template-columns:2.2fr .8fr 1fr 1fr .6fr;gap:8px;padding:7px 0;border-bottom:2px solid #222;font:700 9px/1 'Space Grotesk',sans-serif;letter-spacing:.1em;text-transform:uppercase"><span>Chata</span><span>Výška</span><span>Stav</span><span>Ověřeno</span><span>Razítko</span></div>
+<sc-for list="{{ vsechnyChaty }}" as="r" hint-placeholder-count="6">
+<div style="display:grid;grid-template-columns:2.2fr .8fr 1fr 1fr .6fr;gap:8px;padding:8px 0;border-bottom:1px solid #ddd;font:400 12px/1.3 'Inter'"><span>{{ r.n }}</span><span>{{ r.vyska }}</span><span>{{ r.stav }}</span><span>{{ r.checked }}</span><span>{{ r.raz }}</span></div>
+</sc-for>
+<div style="font:italic 400 10.5px/1.5 var(--emph);color:#555;margin-top:14px">† údaje převzaté ze zdrojů uvedených na profilech · mapy © Mapy.com / OSM / KČT · © 2026 turistickechaty.cz</div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1300,&quot;height&quot;:2900},&quot;artefakty&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;plno&quot;,&quot;decentne&quot;],&quot;default&quot;:&quot;plno&quot;,&quot;tsType&quot;:&quot;'plno'|'decentne'&quot;,&quot;section&quot;:&quot;Hero koláž (B3)&quot;},&quot;sezonaHero&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;auto&quot;,&quot;leto&quot;,&quot;zima&quot;],&quot;default&quot;:&quot;auto&quot;,&quot;tsType&quot;:&quot;'auto'|'leto'|'zima'&quot;,&quot;section&quot;:&quot;Sezónní režim&quot;}}">
+class Component extends DCLogic {
+  state = { seed: 1, rezimOverride: null };
+  componentDidMount(){
+    this.reduced=false;
+    try{ this.reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+    this.setState({seed: Math.floor(Math.random()*1e6)});
+    this._seasonApply();
+    this._konamiBuf=[];
+    this._kb=(e)=>{
+      const k=(e.key||'').length===1?e.key.toLowerCase():e.key;
+      this._konamiBuf.push(k);
+      if(this._konamiBuf.length>10) this._konamiBuf.shift();
+      const seq=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+      if(this._konamiBuf.join(',')===seq.join(',')) this._snow();
+    };
+    window.addEventListener('keydown',this._kb);
+  }
+  componentDidUpdate(){ this._seasonApply(); this._themeApply(); }
+  _noc(){ return (this.state.rezimOverride||((this.props||{}).rezim||'den'))==='noc'; }
+  _themeApply(){
+    const noc=this._noc();
+    const L={'--paper':'#ffffff','--cream':'#f7f6f0','--card':'#fffdf7','--line':'#e6e6e1','--ink':'#384057','--muted':'#5e6971','--red':'#e0341f','--desk':'#e7e2d6','--label':'#8a8172','--hair':'rgba(56,64,87,.14)','--open':'#1e8a4f','--gone':'#8a949c','--lamp':'none','--stars':'none','--tr-red':'#e0341f','--tr-blue':'#2a5cb8','--tr-green':'#2e8b57','--tr-yellow':'#eab308'};
+    const D={'--paper':'#161d22','--cream':'#1a2228','--card':'#212a30','--line':'rgba(255,255,255,.10)','--ink':'#ece6d7','--muted':'#a6afac','--red':'#f26a4b','--desk':'#0d1215','--label':'#b7ad99','--hair':'rgba(255,255,255,.13)','--open':'#3fae74','--gone':'#7a848c','--lamp':'radial-gradient(130% 90% at 30% -5%, rgba(255,206,140,.14), transparent 62%)','--stars':'radial-gradient(1.5px 1.5px at 12% 8%, rgba(253,246,224,.8), transparent),radial-gradient(1px 1px at 34% 4%, rgba(253,246,224,.6), transparent),radial-gradient(1.5px 1.5px at 58% 10%, rgba(253,246,224,.7), transparent),radial-gradient(1px 1px at 82% 6%, rgba(253,246,224,.6), transparent)','--tr-red':'#ff7b60','--tr-blue':'#7da2ee','--tr-green':'#5fc98e','--tr-yellow':'#f2c94c'};
+    const t=noc?D:L, r=document.documentElement;
+    for(const k in t) r.style.setProperty(k,t[k]);
+    const dim=document.getElementById('homeNoc'); if(dim) dim.style.opacity=noc?'1':'0';
+  }
+  componentWillUnmount(){ if(this._kb) window.removeEventListener('keydown',this._kb); }
+  _season(){
+    const p=(this.props||{}).sezonaHero||'auto';
+    if(p!=='auto') return p;
+    const m=new Date().getMonth()+1;
+    return (m===12||m<=3)?'zima':'leto';
+  }
+  _seasonApply(){
+    const zima=this._season()==='zima';
+    const o=document.getElementById('homeZima'); if(o) o.style.opacity=zima?'1':'0';
+    const c=document.getElementById('homeZimaChip'); if(c) c.style.display=zima?'inline-flex':'none';
+  }
+  _snow(){
+    if(this.reduced||document.getElementById('konamiSnow')) return;
+    const d=document.createElement('div'); d.id='konamiSnow';
+    d.style.cssText='position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:0;transition:opacity 1s;background-image:radial-gradient(2px 2px at 20px 30px,rgba(255,255,255,.95),transparent),radial-gradient(1.6px 1.6px at 70px 120px,rgba(255,255,255,.8),transparent),radial-gradient(2.4px 2.4px at 130px 60px,rgba(255,255,255,.9),transparent);background-size:160px 260px,210px 300px,180px 240px;animation:snowFallH 8s linear infinite';
+    const t=document.createElement('div');
+    t.style.cssText="position:fixed;left:50%;top:18px;transform:translateX(-50%);z-index:10000;background:#2b2f33;color:#ece6d7;padding:9px 16px;border-radius:9px;font:600 12px/1 'Space Grotesk',sans-serif;box-shadow:0 10px 24px rgba(0,0,0,.4);opacity:0;transition:opacity .6s";
+    t.textContent='Tajný sníh nad hřebenem! (konami)';
+    document.body.appendChild(d); document.body.appendChild(t);
+    requestAnimationFrame(()=>{d.style.opacity='1';t.style.opacity='1';});
+    setTimeout(()=>{d.style.opacity='0';t.style.opacity='0';setTimeout(()=>{d.remove();t.remove();},1100);},12000);
+  }
+  _huts(){
+    return [
+      {n:'Luční bouda',vyska:'1 410 m',stav:'v provozu',checked:'19. 7. 2026',razitko:true},
+      {n:'Labská bouda',vyska:'1 340 m',stav:'v provozu',checked:'12. 7. 2026',razitko:true},
+      {n:'Výrovka',vyska:'1 370 m',stav:'v provozu',checked:'8. 7. 2026',razitko:true},
+      {n:'Vosecká bouda',vyska:'1 260 m',stav:'v provozu',checked:'5. 7. 2026',razitko:false},
+      {n:'Samotnia',vyska:'1 195 m',stav:'v provozu',checked:'2. 7. 2026',razitko:true},
+      {n:'Dvoračky',vyska:'1 140 m',stav:'v provozu',checked:'28. 6. 2026',razitko:false},
+      {n:'Martinova bouda',vyska:'1 130 m',stav:'v provozu',checked:'24. 6. 2026',razitko:true},
+      {n:'Špindlerova bouda',vyska:'1 198 m',stav:'v provozu',checked:'20. 6. 2026',razitko:false},
+      {n:'Bouda u Bílého Labe',vyska:'1 025 m',stav:'v provozu',checked:'15. 6. 2026',razitko:true},
+      {n:'Rennerovy boudy',vyska:'1 050 m',stav:'v provozu',checked:'10. 6. 2026',razitko:false},
+      {n:'Lovecká chata',vyska:'—',stav:'v provozu',checked:'11. 7. 2026',razitko:false},
+      {n:'Obří bouda',vyska:'1 390 m',stav:'zaniklá',checked:'—',razitko:false}
+    ];
+  }
+  _picks(){
+    const huts=this._huts();
+    let s=this.state.seed||1;
+    const rnd=()=>{ s=(s*1664525+1013904223)%4294967296; return s/4294967296; };
+    const arr=huts.slice();
+    for(let i=arr.length-1;i>0;i--){ const j=Math.floor(rnd()*(i+1)); const t=arr[i];arr[i]=arr[j];arr[j]=t; }
+    return arr.slice(0,5).map((h,i)=>{
+      const rot=((rnd()*2.4)-1.2).toFixed(2);
+      const pm={'v provozu':['rgba(30,138,79,.13)','#1e8a4f'],'zaniklá':['rgba(138,148,156,.16)','#6b757c']}[h.stav];
+      return Object.assign({},h,{
+        stampIn:(e)=>{ if(this.reduced) return; const b=e.currentTarget.querySelector('[data-stamp]'); if(!b) return; b.style.animation='none'; void b.offsetWidth; b.style.animation='settlePop .5s cubic-bezier(.2,.8,.2,1)'; },
+        style:{position:'relative',display:'flex',flexDirection:'column',background:'var(--card)',border:'1px solid var(--line)',borderRadius:'10px',overflow:'hidden',boxShadow:'0 8px 18px -12px rgba(20,18,26,.4)',transform:'rotate('+rot+'deg)',transition:'transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s',cursor:'pointer'},
+        pill:{display:'inline-flex',alignItems:'center',gap:'5px',padding:'3px 8px',borderRadius:'20px',background:pm[0],color:pm[1],font:"600 9.5px/1 'Space Grotesk',sans-serif",whiteSpace:'nowrap'}
+      });
+    });
+  }
+  renderVals(){
+    const p=this.props||{};
+    return {
+      plno:(p.artefakty||'plno')==='plno',
+      picks:this._picks(),
+      reshuffle:()=>this.setState({seed:Math.floor(Math.random()*1e6)}),
+      doPrint:()=>{ try{window.print();}catch(e){} },
+      toggleRezim:()=>this.setState({rezimOverride:this._noc()?'den':'noc'}),
+      rezimBtn:this._noc()?'☾ noc · přepnout den':'☀ den · přepnout noc',
+      rezimText:this._noc()?'noc na horách · hřebenovka po tmě':'light · desktop · poster band (B: plná 3D na pohoří)',
+      vyroci:(()=>{ const ev=[{y:1623,t:'vznikla na Bílé louce první bouda — předchůdkyně dnešní Luční'},{y:1938,t:'zanikla Petrova bouda'},{y:1963,t:'po požáru zanikla Obří bouda'},{y:2004,t:'prošla Luční bouda zásadní rekonstrukcí'}]; const now=new Date(); const doy=Math.floor((now-new Date(now.getFullYear(),0,0))/864e5); const e=ev[doy%ev.length]; return 'Před '+(now.getFullYear()-e.y)+' lety ('+e.y+') '+e.t+'.'; })(),
+      nedavno:(()=>{ const now=new Date(); const n=this._huts().filter(h=>{ const m=/^(\d+)\. (\d+)\. (\d+)$/.exec(h.checked||''); if(!m) return false; const d=new Date(+m[3],+m[2]-1,+m[1]); return (now-d)/864e5<=14; }).length; return n+'× nově ověřeno za 14 dní'; })(),
+      vsechnyChaty:this._huts().map(h=>({n:h.n,vyska:h.vyska,stav:h.stav,checked:h.checked,raz:h.razitko?'ano':'—'})),
+      tilt:(e)=>{ if(this.reduced) return; const el=e.currentTarget,r=el.getBoundingClientRect(); const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5; const base=el.getAttribute('data-rot')||''; el.style.transform='perspective(760px) rotateY('+(x*8).toFixed(2)+'deg) rotateX('+(-y*8).toFixed(2)+'deg) translateY(-4px) '+base; },
+      untilt:(e)=>{ e.currentTarget.style.transform=''; },
+      hutNames:['Luční bouda','Labská bouda','Výrovka','Vosecká bouda','Špindlerova bouda','Samotnia','Dvoračky','Martinova bouda','Bouda u Bílého Labe','Rennerovy boudy','Lovecká chata','Obří bouda'],
+      pripravujeme:[{n:'Jizerské hory',note:'připravujeme — sbíráme kandidáty'},{n:'Český ráj',note:'připravujeme — sbíráme kandidáty'},{n:'Podkrkonoší',note:'přesahová oblast — s vysvětlením'}],
+      overeno:[{n:'Luční bouda',d:'19. 7. 2026'},{n:'Labská bouda',d:'12. 7. 2026'},{n:'Lovecká chata',d:'11. 7. 2026'},{n:'Výrovka',d:'8. 7. 2026'}]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -11,6 +11,30 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 20: HANDOFF F1 PŘIJAT — design session hotová, implementace odblokována
+
+**Michal večer dodal `kompletni_návrh.zip`** z design session (Claude
+Design) → převzato do `design/handoff-f1/` (3 šablony .dc.html +
+README s kompletními instrukcemi pro kodéra + image-slot.js + 18
+screenshotů; node_modules z intake omylem přibalené smazány).
+Návrh jde NAD rámec zadání a drží poctivost: homepage „sběratelský
+stůl" (koláž mapy/polaroid/otisky/známka/smaltovka, dřevěné
+rozcestníkové CTA, kalendárium z milníků, namátkou se seedovaným
+shuffle, print seznam, konami sníh), pohoří s poster placeholderem
+3D + kompletním UI overlay (léto/zima sněhové přemalování, turista,
+preview bubliny, hover řádek↔marker), vitrína sběratelství
+(fotorealistické dřevo/mosaz), FAQ, mini-stránka střediska, katalog
+jako FUNKČNÍ prototyp (filtry/řazení/URL stav) a dark mode „noc na
+horách" (noční mapa: svítí okna jen žijícím chatám). **Intake
+zjištění (design/handoff-f1/POZNAMKA-INTAKE.md):** support.js chybí
+→ prototypy lokálně neklikají (mustache kostra, ověřeno headless) —
+nevadí, runtime se nepřenáší, pravda = screenshots + kód; „Sněžka
+1 803" na screenshotu je jen PNG artefakt (kód má všude 1 603, grep).
+**BACKLOG: založen epic F1-IMPL (F1a datový základ → F1b katalog →
+F1c homepage → F1d pohoří+3D → F1e střediska → F1f noc) — PRIORITA
+ČTYŘBLOKU 28. 7.** (ruší se včerejší poznámka „na designu nestavět");
+deploy workflow: design/** přidán do paths-ignore.
+
 ## 2026-07-27 — pokračování 19: ERRATA — Lovecká chata byla na mapě 10 km vedle (záměna OSM entit)
 
 **Nález Michala na stagingu** („loveckou chatu máme špatně umístěnou",
@@ -56,8 +80,9 @@ SSG index, přesun 3D do aplikace s posterem a dynamic importem);
 z milníků vs. explicitní pole; řádky vs. karty; FAQ ano/ne; střediska
 jen sekce); (6) kap. 8 = předatelné zadání design session (šablony,
 nové komponenty, tvrdá omezení poctivosti, výstup = klikací prototyp
-light+dark+mobil, akceptační kritéria). Čtyřblok 28. 7.: na designu
-NEstavět, dokud neproběhne design session — brát jiné položky backlogu.
+light+dark+mobil, akceptační kritéria). ~~Čtyřblok 28. 7.: na designu
+NEstavět, dokud neproběhne design session.~~ **PŘEKONÁNO TÝŽ VEČER:
+handoff dorazil (pokračování 20) — čtyřblok naopak jede F1-IMPL.**
 
 **Dodatek téhož večera — Michal odpověděl na všech 5 otázek,
 promítnuto do dokumentu:** (1) homepage = statický 3D poster, plná 3D

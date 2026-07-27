@@ -45,6 +45,7 @@ on:
     paths-ignore:
       - 'docs/**'
       - 'data/kandidati/**'
+      - 'design/**'
 
 concurrency:
   group: deploy-staging
