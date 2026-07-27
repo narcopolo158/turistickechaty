@@ -44,7 +44,22 @@ web nemění). Debug sága prvních běhů, ať se z ní příště čerpá:
   PATH, SSH_KEY). Admin účet: Payload „create first user" na /admin —
   zakládá Michal.
 
-**Zbývá po INFRA-01:** INFRA-02 (noční pg_dump + fotky na R2 — Forge
+**Dohra večer — mapa (nález Michala „jsou vidět jen zaniklé chaty,
+mapa tam není"):** obojí jedna příčina — MapaChat (úvod + /chaty,
+jediný rozcestník k živým profilům) se bez klíče poctivě nevykreslí
+a `NEXT_PUBLIC_MAPY_API_KEY` se PEČE DO BUILDU (CI), na serveru je
+k ničemu. Řešení: Michal na developer.mapy.com založil druhý klíč
+„turchaty" s omezením **Referery** (dev.turistickechaty.cz +
+turistickechaty.cz + www; typ „IP adresy" doménu nebere) → GitHub
+secret `MAPY_WEB_KLIC` → workflow ho peče do buildu (serverový
+MAPY_API_KEY z DATA-06 do prohlížeče NIKDY — je bez omezení). Po
+běhu workflow mapa na stagingu JEDE (markery 76 chat vč. přesahové
+Raisovy na Zvičíně). Do Forge env se klíč nedává — svádělo by to
+k dojmu, že změna bez rebuildů něco ovlivní.
+
+**Zbývá po INFRA-01:** http→https přesměrování (web zatím obsluhuje
+i nešifrovaný provoz bez redirectu — Forge Domains „Force HTTPS",
+jinak doplnit v nginx), INFRA-02 (noční pg_dump + fotky na R2 — Forge
 zálohy jsou za Business plán), sledovat RAM (PM2 cluster 4× Next na
 4 GB spolu s hubem — Observe tab), a až staging pár dní poběží,
 produkční přepnutí @/www (mailové záznamy a MX na Active24 nedotčené).
