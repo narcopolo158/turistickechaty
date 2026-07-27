@@ -11,7 +11,7 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 
 ## Souhrn
 
-- **Publikováno:** 61 *(aktualizováno 27. 7. 2026 počtvrté — z fronty DATA-27 povýšena čtvrtá trojice od konce: Chata Sedmidolí, Jindřichův dům a Chata Smetánka)*
+- **Publikováno:** 64 *(aktualizováno 27. 7. 2026 popáté — SILNÁ FRONTA DATA-27 DOJETA: U Kotle, Chata Amor a Husova bouda uzavírají všech 15 silných; zbývá 6 s výhradou)*
 - **Kandidáti k doplnění:** 33 — z toho Tier 1 (známka + katalog) 0, Tier 2 (jen známka) 0, Tier 3 (jen katalog) 2 (**oba blokované otázkou na Michala:** Hrnčířské boudy = enkláva, ne objekt — rozpustit?; Raisova chata na Zvičině = Podkrkonoší — založit oblast?), Tier 4 (jen OSM) 31. *Křížová kontrola 27. 7. 2026: kandidátských souborů bez hlavičky POVÝŠENO je v `data/kandidati/krkonose/` **35** — rozdíl proti 33 jsou přesně dva ruční kandidáti založení 26. 7. (Poštovna na Sněžce, Modrokamenná bouda), kteří do tierové struktury zatím nejsou zařazení (Modrokamenná nese známkový spor 2640×2540, Poštovna známku č. 20 — oba by patřili nejspíš do Tier 2; zařadit při příští revizi tabulek).*
 - **Vyřazeno** (nezakládat): 10
 - Objektů se známkou: 35 · v ChatGPT katalogu: 42 · katalogových Krkonoš celkem: 42
@@ -130,6 +130,19 @@ REVIDOVÁN — hostinské pokoje od ~1900 dle KzN: Tippeltové → Hofer → Lef
 1945; výška 960 × 935 nezapsána, kapacita 50 × 55 nezapsána; mrtvý web
 404). Ve frontě zbývají 3 silné: U Kotle, Amor, Husova bouda —
 + 6 s výhradou.**
+
+**Postup fronty 27. 7. 2026 popáté — SILNÁ FRONTA DOJETA: povýšeny U Kotle
+(bar „otevřen i pro veřejnost…" doslova; kapacita 22 pokojů × 19/60
+nezapsána; 1050 m penzion vs. 1000 m středisko = dvě veličiny; obec
+Vítkovice; hornimisecky.eu nově v redirect-smyčce — triáž ho četla;
+Michal potvrdí nad profilem), Chata Amor (Firmy.cz samostatná provozovna
+„Restaurace Chata Amor" — horská hospůdka denně 11–22; text webu se od
+triáže změnil, citováno živé znění; výška bez pramene) a Husova bouda
+(1065 m, „více jak 80 let" služby turistům, Koppenblickbaude alias,
+rodina od 1994; KOREKCE: „2003 penzion" z triáže × „2003 domeček" na
+živém webu → milník nezapsán; „50 míst" jsou akce, ne lůžka). Zbývá
+6 s výhradou: Slovanka, Studenov, Zákoutí, Na Muldě, Novomísečná +
+Staromísečná.**
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |
 |---|---|---|---|---|

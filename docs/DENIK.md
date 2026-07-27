@@ -11,6 +11,42 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 12: SILNÁ FRONTA DATA-27 DOJETA — U Kotle, Amor, Husova (64 profilů)
+
+**Hotovo:** Poslední tři silní kandidáti povýšeni (61 → 64) — všech 15
+silných z triáže DATA-27 je na webu.
+
+- **U Kotle** — klíčová věta doslova: bar „otevřen i pro veřejnost, pouze
+  v době podávání večeří pro ubytované hosty se věnujeme přednostně jim"
+  (hornimisecky.eu; web je nově v redirect-smyčce ze sandboxu — triáž ho
+  26. 7. četla, stavěno z triáže). Kapacita 22 pokojů × 19/60 nezapsána;
+  1050 m (penzion) vs. 1000 m (středisko) rozlišeno jako dvě veličiny;
+  obec Vítkovice (katalogy), lyžařsky řazen i pod Špindl — próza nese
+  obojí. MICHAL POTVRDÍ NAD PROFILEM (v seznamu otázek).
+- **Chata Amor** — Firmy.cz vede restauraci jako SAMOSTATNOU provozovnu:
+  „Provoz horské hospůdky s letní terasou.", denně 11–22 → veřejné
+  občerstvení doloženo, otviraciDoba zapsána s připsáním. Text vlastního
+  webu se od triáže ZMĚNIL („malé příjemné restauraci… vařit s láskou" →
+  „útulné restauraci připravujeme domácí pokrmy s láskou") — citováno
+  živé znění, rozdíl přiznán v overeni. Výška bez pramene (875–915 m je
+  o skiareálu — nepřevzato).
+- **Husova bouda** — „Husovka je tradiční krkonošská bouda položena
+  v 1065 m.n.m…"; „sloužící turistům více jak 80 let" (web) → klíč
+  DATA-25 splněn; alias Koppenblickbaude; milník 1994 (rodina, Treking:
+  Konkolských). KOREKCE TRIÁŽE: „2003 rodinný penzion" × živý web „v roce
+  2003 rozhodli jsme se, že si zde postavíme také domeček" → milník 2003
+  NEZAPSÁN. „Až 50 míst" na webu jsou AKCE, ne lůžka — kapacita prázdná.
+
+Dnešní tři spot-fetche znovu potvrdily pravidlo živých citací: dvě
+triážní citace už na webech neběží (Amor přepsán, Husova „penzion 2003"
+nedohledatelné) — výtahy stárnou, profily se staví z živých stránek.
+
+Kontrola: validator 0 (64 profilů), ban-scan +9 dokumentované FP.
+POVÝŠENO hlavičky, master fronta. **Zbývá: 6 s výhradou (Slovanka,
+Studenov, Zákoutí, Na Muldě, Novomísečná + Staromísečná), pak DATA-25
+bod (a) — 10 vyřazených novým klíčem — a uzavření Krkonoš se seznamem
+otázek.**
+
 ## 2026-07-27 — pokračování 11: čtvrtá trojice od konce — Sedmidolí, Jindřichův dům, Smetánka (61 profilů)
 
 **Hotovo:** Z fronty DATA-27 povýšena čtvrtá trojice od konce (58 → 61).

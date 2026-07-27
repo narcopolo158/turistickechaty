@@ -1,0 +1,146 @@
+# Husova bouda — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Tradiční bouda v centru peckého areálu; vlastní web hlásí službu turistům
+# „více jak 80 let" — klíč DATA-25 (turistická minulost) splněn. Vše
+# verified: false — z vlastního webu a katalogů, vlastním dotazem neověřeno.
+
+nazev: Husova bouda
+slug: husova-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+aliasy:
+  - nazev: Koppenblickbaude
+    poznamka: >-
+      německý název dle místopisného webu (triáž DATA-27, 26. 7. 2026);
+      Koppenblick = výhled na Sněžku
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška 1065 z vlastního webu.
+lat: 50.6737105
+lng: 15.726831
+vyska: 1065
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    vlastní web boudy (husova-bouda.cz, otevřeno 27. 7. 2026), doslova:
+    „Husovka je tradiční krkonošská bouda položena v 1065 m.n.m, přímo
+    v centru lyžařského areálu v Peci pod Sněžkou." GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/291722055 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita se NEZAPISUJE: prameny nesou jen „2 a vícelůžkové pokoje"
+# a „až 50 míst" pro akce (to je kapacita akcí, ne lůžek).
+nocleh: ano
+overeniNocleh:
+  source: >-
+    vlastní web (husova-bouda.cz, otevřeno 27. 7. 2026): ubytování na
+    dvou- a vícelůžkových pokojích s polopenzí; „kapacitou až 50 míst"
+    se na webu váže k akcím (rodinné pobyty, školení), NE k lůžkům —
+    celkový počet lůžek prameny nenesou, číslo se nezapisuje.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni NEVYPLNĚNO: zda kuchyně slouží i neubytovaným, prameny
+# neříkají (poznámka dle DATA-25 v próze).
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    vlastní web (husova-bouda.cz, otevřeno 27. 7. 2026), doslova:
+    „Snídaně formou bufetu, obědy a večeře tradiční jídla české kuchyně,
+    polévka se podává i při večeři" — zda i pro neubytované, web
+    neuvádí.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ PRÁZDNÝ: „více jak 80 let" služby není letopočet
+# a zpětně nedopočítáváme. Milník 2003 se NEZAPISUJE — znění pramenů se
+# rozchází (viz source).
+milniky:
+  - rok: 1994
+    udalost: >-
+      Od roku 1994 boudu podle vlastního webu provozuje dnešní rodina —
+      server Treking ji jmenuje jako rodinu Konkolských
+overeniHistorie:
+  source: >-
+    vlastní web (husova-bouda.cz, otevřeno 27. 7. 2026), doslova:
+    „sloužící turistům více jak 80 let" a „od roku 1994 provozujeme
+    Husovu boudu"; server Treking (triáž DATA-27, 26. 7. 2026): provozuje
+    rodina Konkolských od 1994. ROK 2003 SE NEZAPISUJE: živý web říká
+    „v roce 2003 rozhodli jsme se, že si zde postavíme také domeček"
+    (stavba vedlejšího domku), kdežto triáž nesla „2003 rodinný penzion"
+    — znění se rozchází, bez jasného pramene nerozhodujeme. Německý
+    název Koppenblickbaude: místopisný web (triáž 26. 7. 2026).
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.husova-bouda.cz/
+overeniProvoz:
+  source: >-
+    vlastní web boudy živý (husova-bouda.cz, otevřeno 27. 7. 2026) —
+    aktivní nabídka ubytování s polopenzí i akcí. Provozovatel vlastním
+    dotazem neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Tradiční krkonošská bouda v 1065 metrech přímo v centru peckého
+  lyžařského areálu, která podle vlastního webu slouží turistům víc než
+  osmdesát let — německy se jí říkalo Koppenblickbaude, bouda s výhledem
+  na Sněžku. Od roku 1994 ji vede dnešní rodina; vaří se tu česká
+  kuchyně od snídaně po večeři.
+text:
+  - >-
+    Husova bouda — domácky Husovka — stojí podle vlastního webu v 1065
+    metrech přímo v centru lyžařského areálu v Peci pod Sněžkou. Německý
+    název Koppenblickbaude, doložený místopisným webem, prozrazuje, čím
+    si místo získávalo hosty odjakživa: výhledem na Sněžku.
+  - >-
+    Na dnešním webu boudy stojí, že dům slouží turistům „více jak
+    80 let" — přesný letopočet vzniku ale žádný z pramenů nenese, a tak
+    ho nedopočítáváme a necháváme prázdný. Jisté je, že od roku 1994
+    boudu provozuje dnešní rodina, kterou server Treking jmenuje jako
+    Konkolských; hostům dnes patří celá bouda od pokojů po jídelnu.
+  - >-
+    Kuchyně vaří podle webu tradiční česká jídla: snídaně bufetem, obědy
+    i večeře, polévka se podává i k večeři. Jestli se tu nají i turista,
+    který jen prochází areálem, web neříká — a my to bez dokladu
+    netvrdíme. Celkový počet lůžek prameny nenesou; padesát míst, které
+    web zmiňuje, platí pro pořádané akce, ne pro nocleh.
+  - >-
+    Údaje pocházejí z vlastního webu boudy, ze serveru Treking
+    a z místopisného webu; vlastním dotazem u provozovatele jsme zatím
+    neověřili nic. Souřadnice jsou z mapových dat OpenStreetMap
+    (© přispěvatelé OpenStreetMap, ODbL) a v terénu je nikdo
+    nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Vlastní web boudy — 1065 m, centrum areálu, služba turistům přes
+      80 let, rodina od 1994, česká kuchyně (otevřeno 27. 7. 2026)
+    url: https://www.husova-bouda.cz/
+  - popis: >-
+      Treking — rodina Konkolských od 1994, tradiční bouda (triáž
+      DATA-27, 26. 7. 2026)
+    url: https://www.treking.cz/chaty/husova-bouda.htm
+  - popis: >-
+      Místopisný web — německý název Koppenblickbaude (triáž DATA-27,
+      26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/husova-bouda.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 + spot-fetch vlastního webu (hlavní stránka nese historii; podstránka /husova-bouda jen ceník a vybavení).
+  KOREKCE TRIÁŽE: „2003 rodinný penzion" (triáž) × „v roce 2003 rozhodli jsme se, že si zde postavíme také domeček" (živý web) — milník 2003 NEZAPSÁN, dokud znění nepotvrdí provozovatel. Další doklad pravidla živých citací.
+  Kapacita: „až 50 míst" na webu = akce, ne lůžka — nezapsáno (pozor při přebírání z výtahů, Firmy.cz to vedlo jako kapacitu).
+  Alias Koppenblickbaude dle místopisného webu (suchanoha, triáž) — překlad „výhled na Sněžku" je jazykový převod jména, ne tvrzení o dokladu.
+  K dotažení: rok vzniku (80 let je tvrzení webu), kapacita lůžek, komu slouží kuchyně (DATA-04 telefonát), hero fotka.

@@ -1,0 +1,137 @@
+# Chata Amor — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Roubená chata kousek od centra Pece; Firmy.cz vede restauraci jako
+# SAMOSTATNOU provozovnu „Restaurace Chata Amor" s denní otvíračkou —
+# veřejná horská hospůdka. Vše verified: false.
+
+nazev: Chata Amor
+slug: amor
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ZÁMĚRNĚ NEVYPLNĚNA: prameny
+# ji nenesou (rozpětí 875–915 m platí pro skiareál Javor, nepřebíráme).
+lat: 50.6963659
+lng: 15.7204422
+obec: Pec pod Sněžkou # adresa „Pec pod Sněžkou 163" — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    vlastní web chaty (chata-amor.cz, otevřeno 27. 7. 2026): adresa Pec
+    pod Sněžkou 163. Katalog kempy-chaty.cz (triáž DATA-27, 26. 7. 2026):
+    roubená chata zhruba 800 m od centra Pece. Výšku prameny neuvádějí —
+    rozpětí 875–915 m se váže ke skiareálu Javor, ne k objektu,
+    nepřebírá se. GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/656460100 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 35
+overeniNocleh:
+  source: >-
+    katalog kempy-chaty.cz (triáž DATA-27, 26. 7. 2026): 35 lůžek —
+    jediný pramen s celkovým číslem. Vlastní web (otevřeno 27. 7. 2026)
+    celkovou kapacitu neuvádí, doslova: „Nabízíme ubytování v pokojích
+    pro 2 až 5 osob".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+otviraciDoba: >-
+  restaurace denně 11:00–22:00 podle záznamu Firmy.cz (triáž 26. 7. 2026);
+  u provozovatele neověřeno
+overeniObcerstveni:
+  source: >-
+    Firmy.cz (triáž DATA-27, 26. 7. 2026) vede SAMOSTATNOU provozovnu
+    „Restaurace Chata Amor", doslova: „Provoz horské hospůdky s letní
+    terasou.", otevřeno denně 11–22 — veřejná hospůdka. Vlastní web
+    (otevřeno 27. 7. 2026), doslova: „V naší útulné restauraci
+    připravujeme domácí pokrmy s láskou, doplněné výborným pivem."
+    POZNÁMKA: triáž nesla starší znění téže věty („V naší malé příjemné
+    restauraci se snažíme vařit s láskou…") — text webu se mezitím
+    změnil, citujeme živou stránku.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: k historii chaty (i k původu jména
+# Amor) nenese žádný z otevřených pramenů jediný údaj.
+overeniHistorie:
+  source: >-
+    K historii chaty jsme v otevřených pramenech (vlastní web, Firmy.cz,
+    katalogy; hledáno 26.–27. 7. 2026) nenašli jediný doložený údaj —
+    „hledali jsme a nenašli". Ani původ jména Amor prameny nenesou.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.chata-amor.cz/
+overeniProvoz:
+  source: >-
+    vlastní web chaty živý (chata-amor.cz, otevřeno 27. 7. 2026);
+    restaurace vedena na Firmy.cz jako aktivní provozovna (triáž 26. 7.
+    2026). Provozovatel vlastním dotazem neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Roubená chata kousek nad centrem Pece pod Sněžkou, jejíž restaurace
+  s letní terasou je vedená jako samostatná horská hospůdka s celodenním
+  provozem — sem se tedy dá zajít na jídlo a pivo i bez noclehu. Spí se
+  tu v pokojích pro dva až pět lidí.
+text:
+  - >-
+    Chata Amor stojí podle katalogu zhruba osm set metrů od centra Pece
+    pod Sněžkou — roubená stavba na dosah sjezdovek Javoru i cest do
+    Obřího dolu. Nadmořskou výšku neuvádíme: prameny ji u samotné chaty
+    nenesou a čísla udávaná pro okolní skiareál nepřebíráme.
+  - >-
+    To hlavní tu je kuchyně: restaurace Chaty Amor je v katalogu firem
+    vedená jako samostatná provozovna — horská hospůdka s letní terasou
+    otevřená denně od dopoledne do večera. Vlastní web k tomu píše, že
+    v útulné restauraci připravují domácí pokrmy s láskou a k tomu
+    výborné pivo. Turista procházející Pecí se tu tedy nají bez noclehu
+    — a to je přesně služba, kterou v průvodci hledáme.
+  - >-
+    Nocleh chata nabízí v pokojích pro dva až pět lidí; celkových
+    pětatřicet lůžek uvádí jen katalog, vlastní web souhrn nenese, a tak
+    číslo bereme s touto výhradou. O historii domu, a dokonce ani o tom,
+    proč se jmenuje zrovna Amor, jsme v otevřených pramenech nenašli
+    jediný doložený údaj; jakmile se pramen najde, doplníme ho.
+  - >-
+    Údaje pocházejí z vlastního webu chaty, z katalogu firem a z katalogů
+    ubytování; vlastním dotazem u provozovatele jsme zatím neověřili
+    nic. Souřadnice jsou z mapových dat OpenStreetMap (© přispěvatelé
+    OpenStreetMap, ODbL) a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Vlastní web chaty — restaurace (živé znění věty), pokoje 2–5 osob,
+      adresa (otevřeno 27. 7. 2026)
+    url: https://www.chata-amor.cz/
+  - popis: >-
+      Firmy.cz — samostatná provozovna Restaurace Chata Amor: „Provoz
+      horské hospůdky s letní terasou.", denně 11–22 (triáž DATA-27,
+      26. 7. 2026)
+  - popis: >-
+      Katalog kempy-chaty.cz — roubená chata 800 m od centra Pece,
+      35 lůžek (triáž DATA-27, 26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/amor.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 + spot-fetch vlastního webu.
+  NÁZEV: OSM tag „Amor", web/Firmy.cz „Chata Amor" — zapsán tvar s „Chata".
+  ZMĚNA TEXTU WEBU: triážní citace restaurace („V naší malé příjemné restauraci se snažíme vařit s láskou…") už na webu není — nahrazena „V naší útulné restauraci připravujeme domácí pokrmy s láskou…". Citujeme živou stránku; další doklad pravidla živých citací.
+  Kapacita 35 = jediný pramen (kempy-chaty); web jen rozpětí pokojů 2–5 — zapsáno s výhradou v próze i overeni.
+  Adresa „Pec pod Sněžkou 163" jen interně/v source (ban č. p. a PSČ v próze).
+  K dotažení: výška, historie a původ jména, otvírací doba od provozovatele (DATA-04), hero fotka.

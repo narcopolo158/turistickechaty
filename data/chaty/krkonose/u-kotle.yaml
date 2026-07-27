@@ -1,0 +1,135 @@
+# U Kotle — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Rodinný penzion na samotě u Horních Míseček; bar podle vlastního webu
+# „otevřen i pro veřejnost" — klíč zařazení splněn doslovně. Michal 20. 7.:
+# zařadit hraničně, POTVRDÍ NAD PROFILEM (otázka trvá). Vše verified: false.
+
+nazev: U Kotle
+slug: u-kotle
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška 1050 je o penzionu; „1 000 m"
+# na témže webu je o STŘEDISKU Horní Mísečky — dvě veličiny, ne rozpor.
+lat: 50.7399894
+lng: 15.555509
+vyska: 1050
+obec: Vítkovice # lokalita Horní Mísečky, adresa „Horní Mísečky 137" — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    vlastní web penzionu (hornimisecky.eu, triáž DATA-27, 26. 7. 2026):
+    rodinný penzion na samotě u Horních Míseček, 1050 m n. m.; týž web
+    uvádí „1 000 m n.m." o středisku Horní Mísečky — jde o dvě veličiny.
+    Obec: katalogy (hotelypenziony.cz, ubytovani-semily.cz; hledáno
+    27. 7. 2026) vedou „Horní Mísečky, Vítkovice"; katalog České hory
+    řadí Mísečky lyžařsky pod Špindlerův Mlýn — poštovně patří objekt
+    k Vítkovicím. GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/46787903 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# kapacita/pokoje se NEZAPISUJÍ: vlastní web 22 pokojů × katalog České hory
+# 19 pokojů / 60 lůžek — rozpor se přiznává, nerozhodujeme.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    vlastní web (hornimisecky.eu, triáž DATA-27, 26. 7. 2026): 22 pokojů ×
+    katalog České hory: 19 pokojů / 60 lůžek — ROZPOR, čísla se
+    nezapisují.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni NEVYPLNĚNO: číselník nemá hodnotu „bar" (obdoba DATA-23) —
+# veřejný bar nese próza s doslovnou citací.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    vlastní web penzionu (hornimisecky.eu, triáž DATA-27, 26. 7. 2026),
+    o baru doslova: „otevřen i pro veřejnost, pouze v době podávání
+    večeří pro ubytované hosty se věnujeme přednostně jim" — veřejné
+    občerstvení doloženo přímo formulací provozovatele.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: prameny nesou jen izolovaná slova
+# („Horská Chata", „Buda") bez kontextu a letopočtů.
+overeniHistorie:
+  source: >-
+    K historii objektu jsme v otevřených pramenech (vlastní web, katalogy;
+    triáž DATA-27, 26. 7. 2026) nenašli jediný doložený údaj — „hledali
+    jsme a nenašli".
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Web se z našeho připojení 27. 7. nepodařilo otevřít (smyčka přesměrování)
+# — triáž ho 26. 7. četla, adresa se proto vede.
+kontakty:
+  web: https://www.hornimisecky.eu/
+overeniProvoz:
+  source: >-
+    vlastní web penzionu živý při triáži (hornimisecky.eu, 26. 7. 2026);
+    aktivní záznamy v rezervačních katalozích (hledáno 27. 7. 2026).
+    Z našeho připojení web 27. 7. padal na smyčku přesměrování — může jít
+    o omezení na naší straně. Provozovatel vlastním dotazem neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Rodinný penzion na samotě u Horních Míseček v 1050 metrech, na půl
+  cesty mezi Vítkovicemi a hřebeny Kotle. Bar tu podle vlastního webu
+  otevírají i pro veřejnost — jen v době večeří mají přednost ubytovaní.
+  Na počtu pokojů se prameny neshodnou, a tak čísla neuvádíme.
+text:
+  - >-
+    Penzion U Kotle stojí na samotě u Horních Míseček ve výšce 1050
+    metrů — jméno nese po hoře Kotel, která se zvedá nad střediskem.
+    Poštovní adresou patří k Vítkovicím, lyžařsky ho ale katalogy řadí
+    i ke Špindlerovu Mlýnu, kam z Míseček vede silnička na Medvědín;
+    obojí říkáme, protože obojí je pravda každá po svém.
+  - >-
+    Pro kolemjdoucího turistu je podstatná jedna věta, kterou přebíráme
+    z vlastního webu doslova: bar je „otevřen i pro veřejnost, pouze
+    v době podávání večeří pro ubytované hosty se věnujeme přednostně
+    jim". Kdo tedy schází od Kotle nebo stoupá na Mísečky, může se tu
+    zastavit — jen u večeře počítejte s tím, že dům vaří především svým
+    hostům.
+  - >-
+    Nocleh penzion nabízí, ale na velikosti se prameny neshodnou:
+    vlastní web mluví o dvaadvaceti pokojích, katalog o devatenácti
+    pokojích se šedesáti lůžky — žádné číslo proto nepřebíráme.
+    O historii domu jsme zatím nenašli jediný doložený údaj; jakmile se
+    pramen objeví, doplníme ho.
+  - >-
+    Údaje pocházejí z vlastního webu penzionu a z katalogů; vlastním
+    dotazem u provozovatele jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Vlastní web penzionu — bar otevřený i pro veřejnost (doslovná
+      citace), 1050 m, 22 pokojů, samota u Horních Míseček (triáž
+      DATA-27, 26. 7. 2026)
+    url: https://www.hornimisecky.eu/
+  - popis: >-
+      Katalog České hory — 19 pokojů / 60 lůžek: rozpor s vlastním webem
+      (triáž DATA-27, 26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/u-kotle.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 (web 27. 7. ze sandboxu nedostupný — smyčka přesměrování, přidat na seznam blokovaných domén; triáž ho 26. 7. četla).
+  MICHAL 20. 7.: „zařadit hraničně, potvrdí nad profilem" — OTÁZKA TRVÁ, profil je připraven k jeho kontrole (do seznamu otázek).
+  ROZPOR KAPACITY: 22 pokojů (web) × 19 pokojů / 60 lůžek (České hory) — nezapsáno.
+  VÝŠKA: 1050 m (penzion) vs. „1 000 m n.m." (středisko, týž web) — dvě veličiny, zapsána 1050.
+  Adresa „Horní Mísečky 137" jen interně/v source (ban č. p. v próze). Obec Vítkovice dle katalogů (titulky) — DATA-20 poštovní pramen; ceskehory řadí pod Špindl.
+  K dotažení: kapacita od provozovatele (DATA-04), historie, hero fotka; otázka Mísečky (jeden areál × dva profily Novomísečná/Staromísečná) souvisí.
