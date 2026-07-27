@@ -11,7 +11,45 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
-## 2026-07-27 — pokračování 17: INFRA-01 — živé zakládání situ na pticore (PROBÍHÁ)
+## 2026-07-27 — pokračování 17: INFRA-01 HOTOVO — staging dev.turistickechaty.cz ŽIJE (76 profilů)
+
+**Výsledek:** běh workflow #5 zelený (5 m 50 s), `/api/health` vrací
+`{"ok":true,…}` ověřeno zvenku (Michalův mobil, platný Let's Encrypt
+certifikát), homepage naběhla. Deploy na push do main ZAPNUT
+(paths-ignore: docs/**, data/kandidati/** — čistě dokumentační pushe
+web nemění). Debug sága prvních běhů, ať se z ní příště čerpá:
+
+- **Běh #3 — Wikimedia 429:** seed v CI stahuje hero fotky
+  z upload.wikimedia.org a Actions IP dostává throttling (stejný vzorec
+  jako Overpass v DATA-28). Oprava v seed-chaty.ts: stahniFotku()
+  s opakováním (Retry-After / 10–20–40 s), rozestupy 1,5 s, MĚKKÉ
+  selhání (nedotažená fotka běh neshodí — doplní ji příští idempotentní
+  seed; po 3 vzdaných se zbytek běhu přeskakuje).
+- **Běh #4 — „SASL: client password must be a string":** serverovému
+  seedu nedorazila DATABASE_URL — `payload run` si Forge env (symlink
+  `.env` → sdílený soubor situ) sám nenačte. Workflow teď env načítá
+  explicitně (set -a + source, chyby bez výpisu hodnot) a přidává
+  bezpečnou diagnostiku struktury URL (jen délky, nikdy hodnoty).
+  Skutečná příčina pak banální: v DATABASE_URL **chyběla dvojtečka
+  mezi uživatelem a heslem** — diagnostika ji odhalila na první pohled
+  („heslo=CHYBI!").
+- **DNS dohra:** Michalovo PC po zapnutí drželo v cache wildcardovou
+  odpověď (`*` → Active24 multihosting vč. AAAA) → Edge hlásil
+  ERR_SSL_UNRECOGNIZED_NAME_ALERT; z mobilu vše OK. Odsud ověřeno:
+  veřejné resolvery vracejí pro `dev` správně jen 81.95.108.230 (bez
+  AAAA — explicitní záznam wildcard vypíná). Řešení: flushdns/TTL.
+- Provozní: PowerShell generátor secretů (Forge Commands usekává
+  výstup); klíč pro Actions = ed25519 lokálně, pub do Forge SSH Keys
+  (user forge), priv do secret PTICORE_SSH_KEY; secrets jen 3 (HOST,
+  PATH, SSH_KEY). Admin účet: Payload „create first user" na /admin —
+  zakládá Michal.
+
+**Zbývá po INFRA-01:** INFRA-02 (noční pg_dump + fotky na R2 — Forge
+zálohy jsou za Business plán), sledovat RAM (PM2 cluster 4× Next na
+4 GB spolu s hubem — Observe tab), a až staging pár dní poběží,
+produkční přepnutí @/www (mailové záznamy a MX na Active24 nedotčené).
+
+## 2026-07-27 — pokračování 17a (průběžný zápis, nahrazen finálem výše): INFRA-01 — živé zakládání situ na pticore
 
 **Hotovo (Michal kliká ve Forge, já naviguji):** Site
 `dev.turistickechaty.cz` založen — nový Forge má nativní typ **Next.js**

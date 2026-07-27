@@ -19,8 +19,10 @@
 # POZOR: tlačítko Deploy ve Forge vytvoří NOVOU release bez .next → po
 # každém ručním Forge deployi je potřeba spustit tenhle workflow.
 #
-# SPOUŠTĚNÍ: zatím ručně (workflow_dispatch) — na push do main se přepne,
-# až staging poběží (odkomentovat blok push níž).
+# SPOUŠTĚNÍ: na push do main (zapnuto 27. 7. 2026 po zeleném běhu #5
+# a ověření stagingu zvenku) + ručně přes workflow_dispatch. Čistě
+# dokumentační pushe (docs/**, data/kandidati/** — nejsou na webu)
+# deploy nespouštějí.
 #
 # POTŘEBNÉ SECRETS (Settings → Secrets and variables → Actions):
 #   PTICORE_SSH_KEY  — privátní OpenSSH klíč; veřejnou půlku přidat na
@@ -38,8 +40,11 @@ name: 'INFRA-01: deploy staging (pticore)'
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches: [main]
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'docs/**'
+      - 'data/kandidati/**'
 
 concurrency:
   group: deploy-staging
