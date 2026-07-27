@@ -16,7 +16,22 @@ server. Ověřeno 27. 7.: build bez DB spadne (prerender čte Postgres),
 proto workflow seeduje — git je zdroj pravdy, obsah artefaktu = obsah
 serverové DB po seedu.
 
-Oficiální postup, o který se opíráme: [Deploying your Next.js App To
+**ZJIŠTĚNO při prvním Forge deployi (27. 7. večer):** nový Forge má
+nativní typ situ **Next.js** a serverovou část dělá sám — nasazuje přes
+`releases/<id>` + symlink `current` (linkuje env soubor i storage
+adresáře, staré release maže) a proces řídí **PM2** (app
+`site-3312291` = Site ID, cluster, user forge; nginx proxy na Server
+port 3017 si typ konfiguruje také sám). Z toho plyne: **ruční daemon se
+NEzakládá** (dialog „New background process" = supervisor, běžel by
+navíc proti PM2 na tomtéž portu), secret PTICORE_DAEMON odpadl a
+workflow pracuje v aktuální release (`current`) a restartuje
+`pm2 restart site-3312291`. POZOR: tlačítko **Deploy ve Forge vytvoří
+novou release bez `.next`** (build command je záměrně jen echo) → po
+každém ručním Forge deployi spustit náš workflow, jinak site zůstane
+na 502.
+
+Oficiální postup, o který jsme se opírali (dnes už částečně překonaný
+novým Forge UI, viz ZJIŠTĚNO výše): [Deploying your Next.js App To
 Forge](https://laravel.com/blog/deploying-your-nextjs-app-to-forge)
 (site typ Static/Next.js, daemon `npm run start`, proxy_pass na lokální
 port) a praxe restartu daemonu z deploy skriptu přes
@@ -49,22 +64,24 @@ port) a praxe restartu daemonu z deploy skriptu přes
    (PAYLOAD_SECRET vygenerovat, heslo DB z kroku 1, PORT **3017** —
    NE 3000). Next.js čte `.env` z kořene situ, což je přesně soubor,
    který Forge editor spravuje.
-4. **Nginx:** Site → Edit Nginx Configuration → vlepit obsah
-   `nginx-site.conf` (a smazat PHP pozůstatky dle poznámky v souboru).
-   Restart nginx.
-5. **Daemon:** Site → New Daemon — command `npm run start`, directory
-   = kořen situ, user `forge`. Poznamenat si číslo daemonu. (Do prvního
-   nasazení bude daemon padat — chybí mu .next; to je v pořádku.)
+4. **Nginx: ODPADÁ (27. 7.)** — typ Next.js si proxy na Server port
+   3017 nastavil sám; `nginx-site.conf` zůstává jen jako reference
+   (immutable cache statiky apod. případně doladíme později).
+5. **Daemon: ODPADÁ (27. 7.)** — proces spravuje PM2 založené Forge
+   (app `site-3312291`), viz ZJIŠTĚNO výše. Nic se nezakládá; do
+   prvního běhu workflow bude PM2 app crash-loopovat (chybí `.next`,
+   site vrací 502) — to je v pořádku.
 6. **Seed DB: automaticky** — deploy workflow po `npm ci` na serveru
    spouští `npx payload run scripts/seed-chaty.ts` (idempotentní,
    doloženo u F0-06) při KAŽDÉM nasazení → serverová DB je vždy
    srovnaná s gitem. Ruční SSH krok odpadá.
-7. **GitHub secrets + první deploy:** do repa přidat PTICORE_SSH_KEY /
-   PTICORE_HOST / PTICORE_PATH / PTICORE_DAEMON (viz hlavička
-   deploy-staging.yml) a spustit Actions → „INFRA-01: deploy staging" —
-   workflow postaví .next, nahraje ho a restartuje daemon. Quick Deploy
-   ve Forge NEzapínat (deploy řídí Actions; po ověření se ve workflow
-   odkomentuje spouštění na push do main).
+7. **GitHub secrets + první deploy:** do repa přidat **tři** secrets
+   PTICORE_SSH_KEY / PTICORE_HOST / PTICORE_PATH (viz hlavička
+   deploy-staging.yml; PTICORE_DAEMON odpadl — PM2) a spustit Actions →
+   „INFRA-01: deploy staging" — workflow postaví .next, nahraje ho do
+   aktuální release a restartuje `pm2 restart site-3312291`. Quick
+   Deploy ve Forge NEzapínat (deploy řídí Actions; po ověření se ve
+   workflow odkomentuje spouštění na push do main).
 8. **SSL:** Let's Encrypt certifikát ve Forge (až po DNS kroku).
 9. **DNS (Active24):** A záznam `dev` → IP pticore (produkce potom
    `@` + `www`; maily zůstávají na Active24 — neměnit MX).

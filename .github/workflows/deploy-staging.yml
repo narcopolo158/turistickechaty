@@ -9,22 +9,30 @@
 # seedu. Vzor service+seed převzat z ověřeného workflow
 # vizualni-kontrola-mapy.yml.
 #
-# Server pak jen: git pull, npm ci (instalaci 4 GB RAM zvládne), rozbalit
-# .next z artefaktu, restart daemonu, health kontrola.
+# SERVEROVÁ ČÁST (zjištěno z prvního Forge deploy logu 27. 7. 2026):
+# nový Forge u nativního typu Next.js nasazuje přes releases/<id> +
+# symlink `current` (linkuje env soubor i storage, staré release maže)
+# a proces řídí SÁM přes PM2 — app `site-3312291` (jméno = Site ID),
+# cluster, user forge. Žádný ruční daemon/supervisor se nezakládá.
+# Server tedy jen: v aktuální release git reset na origin/main, npm ci,
+# seed, rozbalit .next z artefaktu, `pm2 restart site-3312291`, health.
+# POZOR: tlačítko Deploy ve Forge vytvoří NOVOU release bez .next → po
+# každém ručním Forge deployi je potřeba spustit tenhle workflow.
 #
 # SPOUŠTĚNÍ: zatím ručně (workflow_dispatch) — na push do main se přepne,
 # až staging poběží (odkomentovat blok push níž).
 #
 # POTŘEBNÉ SECRETS (Settings → Secrets and variables → Actions):
 #   PTICORE_SSH_KEY  — privátní OpenSSH klíč; veřejnou půlku přidat na
-#                      serveru uživateli forge (jde to přes Forge UI →
-#                      server → SSH Keys)
+#                      serveru uživateli forge (Forge UI → server → SSH Keys)
 #   PTICORE_HOST     — pticore.a24vps.com
 #   PTICORE_PATH     — /home/forge/dev.turistickechaty.cz
-#   PTICORE_DAEMON   — číslo daemonu z Forge (Site → Daemons)
+# (Dřívější PTICORE_DAEMON odpadl — proces spravuje PM2 pod jménem
+#  site-3312291, které je dané Site ID a je zapsané níž v kroku restartu.)
 #
-# Runtime env čte server ze svého .env.local (deploy/env.production.example)
-# — do artefaktu se žádná tajemství nebalí.
+# Runtime env čte server z env souboru situ (Forge → Settings →
+# Environment; Forge ho linkuje do každé release) — do artefaktu se
+# žádná tajemství nebalí.
 
 name: 'INFRA-01: deploy staging (pticore)'
 
@@ -91,12 +99,19 @@ jobs:
           scp -i ~/.ssh/id_deploy /tmp/chaty-build.tar.gz \
             "forge@${{ secrets.PTICORE_HOST }}:/tmp/chaty-build.tar.gz"
 
-      - name: Nasadit na serveru
+      - name: Nasadit na serveru (aktualni Forge release)
         run: |
           ssh -i ~/.ssh/id_deploy "forge@${{ secrets.PTICORE_HOST }}" bash -s <<NASAZENI
           set -euo pipefail
-          cd "${{ secrets.PTICORE_PATH }}"
-          git pull origin main
+          CIL="${{ secrets.PTICORE_PATH }}/current"
+          if [ ! -e "\$CIL" ]; then
+            CIL=\$(ls -d "${{ secrets.PTICORE_PATH }}"/releases/* | sort | tail -n 1)
+          fi
+          CIL=\$(readlink -f "\$CIL")
+          echo "Nasazuji do release: \$CIL"
+          cd "\$CIL"
+          git fetch origin main
+          git reset --hard origin/main
           npm ci --no-audit --no-fund
           npx payload run scripts/seed-chaty.ts
           rm -rf .next
@@ -104,16 +119,19 @@ jobs:
           rm -f /tmp/chaty-build.tar.gz
           NASAZENI
 
-      - name: Restart daemonu + health
+      - name: Restart aplikace (PM2) + health
         run: |
           ssh -i ~/.ssh/id_deploy "forge@${{ secrets.PTICORE_HOST }}" bash -s <<NASAZENI
           set -euo pipefail
-          sudo -n supervisorctl restart "daemon-${{ secrets.PTICORE_DAEMON }}:*"
-          for i in \$(seq 1 30); do
+          pm2 restart site-3312291
+          for i in \$(seq 1 45); do
             if curl -fsS "http://127.0.0.1:3017/api/health" >/dev/null 2>&1; then
-              echo "OK: /api/health odpovida"; exit 0
+              echo "OK: /api/health odpovida"
+              exit 0
             fi
-            sleep 1
+            sleep 2
           done
-          echo "!! aplikace po restartu neodpovida" >&2; exit 1
+          echo "!! aplikace po restartu neodpovida na /api/health" >&2
+          pm2 logs site-3312291 --lines 60 --nostream || true
+          exit 1
           NASAZENI

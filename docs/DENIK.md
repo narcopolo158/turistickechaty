@@ -34,10 +34,25 @@ serverové výstupy číst ze souborů, ne z Commands UI. Trik s _diag.txt
 tady zatím nejde — web na situ ještě neběží, soubor by nebylo jak
 stáhnout.
 
-**Zbývá (pořadí):** PAYLOAD_SECRET (lokální generování) do env → první
-Deploy (naklonuje repo; build = echo, server nic těžkého nedělá) →
-daemon `npm run start` (číslo procesu → secret PTICORE_DAEMON) → SSL
-Let's Encrypt → 4 GitHub secrets (PTICORE_SSH_KEY/HOST/PATH/DAEMON) →
+**První Deploy (zelený) odhalil serverovou architekturu:** nový Forge
+u typu Next.js nasazuje přes `releases/74198272` + symlink `current`
+(linkuje env i storage, staré release purguje) a proces řídí sám přes
+**PM2** — app `site-3312291` (= Site ID), cluster 4 instance, user
+forge; ↺15 v logu = crash-loop bez `.next`, srovná ho první artefakt
+(do té doby site vrací 502 — nginx proxy na 3017 si typ nastavil taky
+sám). **Krok „daemon" tím ODPADÁ** — Michal už stál nad dialogem „New
+background process" (= supervisor, běžel by navíc proti PM2), zastaveno
+včas; odpadá i secret PTICORE_DAEMON. Workflow přepsán: server pracuje
+v `current` (fallback = nejnovější release), `git reset --hard
+origin/main`, npm ci, seed, artefakt, `pm2 restart site-3312291`,
+health smyčka 45×2 s + výpis `pm2 logs --nostream` při selhání. POZOR
+zapsáno do README i workflow: ruční Forge Deploy vytvoří novou release
+bez `.next` → po něm vždy spustit workflow. Kroky nginx (proxy řeší
+typ sám) a daemon v deploy/README.md označeny ODPADÁ.
+
+**Zbývá (pořadí):** SSL Let's Encrypt (Domains; HTTP-01 + ECDSA
+výchozí) → ssh-keygen lokálně v PowerShellu → **3** GitHub secrets
+(PTICORE_SSH_KEY/HOST/PATH) → zkontrolovat PAYLOAD_SECRET v env →
 první běh workflow „INFRA-01: deploy staging" → kontrola
 /api/health + /admin. Zápis se dopíše, až staging poběží.
 
