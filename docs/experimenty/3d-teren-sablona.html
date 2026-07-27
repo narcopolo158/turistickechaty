@@ -33,12 +33,14 @@
 <body>
 <div id="scena"></div>
 <div class="panel">
-  <div class="badge">PROTOTYP · ILUSTRAČNÍ RELIÉF</div>
+  <div class="badge" id="badge">PROTOTYP · ILUSTRAČNÍ RELIÉF</div>
   <h1>Krkonoše ve 3D — chaty průvodce</h1>
-  <div class="pozn">Reliéf je <b>interpolace z výšek __KOTVY__ objektů</b> v datech
+  <div class="pozn" id="pozn">Reliéf je <b>interpolace z výšek __KOTVY__ objektů</b> v datech
   projektu — <b>není to skutečný terén</b> (hřebeny jsou vyhlazené). Ostrý model
   vznikne z DMR&nbsp;5G / Mapy.com výškopisu stejným prohlížečem.</div>
   <label><input type="checkbox" id="chkVrst" checked> vrstevnice (po 100 m)</label>
+  <label id="lblTrasy" style="display:none"><input type="checkbox" id="chkTrasy" checked> značené trasy (OSM)</label>
+  <label id="lblVrch" style="display:none"><input type="checkbox" id="chkVrch" checked> vrcholy s popiskem</label>
   <label><input type="checkbox" id="chkKand"> kandidáti (šedě)</label>
   <label><input type="checkbox" id="chkPrech"> přechody chata–chata <span style="color:#6a7186">(schematické přímky, reálné délky)</span></label>
   <label>převýšení <input type="range" id="rngZ" min="1" max="3.5" step="0.1" value="2.4"> <span id="zval">2.4×</span></label>
@@ -50,12 +52,23 @@
 </div>
 <div id="karta"></div>
 <div id="tip"></div>
-<div id="pata">Polohy a výšky: vlastní data průvodce + OpenStreetMap (© přispěvatelé
-OpenStreetMap, ODbL). Přechody: délky po značených trasách, kreslené schematicky
-přímkou. Vygenerováno 26.&nbsp;7.&nbsp;2026 · turistickechaty.cz — experiment.</div>
+<div id="pata">Polohy a výšky chat: vlastní data průvodce + OpenStreetMap (© přispěvatelé
+OpenStreetMap, ODbL). <span id="pataZdroj"></span> Přechody: délky po značených trasách,
+kreslené schematicky přímkou. turistickechaty.cz — experiment.</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 const D = /*__DATA__*/null/*__/DATA__*/;
+// ── přepnutí režimu podle původu výškopisu ──
+if (D.realDem) {
+  const b=document.getElementById('badge');
+  b.textContent='VÝŠKOPIS: MAPY.COM (VÝŠKOVÝ MODEL)'; b.style.background='#1B6E9E';
+  document.getElementById('pozn').innerHTML='Reliéf z <b>Mapy.com Elevation API</b> '
+    +'(výškový model — nemusí odpovídat realitě, verified:false). Trasy a vrcholy: '
+    +'OpenStreetMap'+(D.stavOsm?' (stav '+D.stavOsm+')':'')+'.';
+  document.getElementById('pataZdroj').textContent='Výškopis: Mapy.com Elevation API. Trasy a vrcholy: OpenStreetMap (ODbL).';
+} else {
+  document.getElementById('pataZdroj').textContent='Reliéf: '+D.zdrojVysky+' — ilustrační.';
+}
 const cont = document.getElementById('scena');
 const W = () => cont.clientWidth, H = () => cont.clientHeight;
 const scene = new THREE.Scene();
@@ -153,6 +166,48 @@ for(const ch of D.chaty){
 }
 function poziceChat(){for(const g of piny){const ch=g.userData;g.position.y=zOf(ch.ele||eleNa(ch.lat,ch.lng));}}
 
+// ── značené trasy z OSM (polylinie po terénu) ──
+const trasyGrp=new THREE.Group(); scene.add(trasyGrp);
+const BARVA_TRAS={cervena:0xE0341F,modra:0x1B6E9E,zelena:0x3d8f2a,zluta:0xD9A600};
+function stavTrasy(){
+  trasyGrp.clear();
+  if(!D.trasy||!D.trasy.length)return;
+  const maty={}; for(const k in BARVA_TRAS) maty[k]=new THREE.LineBasicMaterial({color:BARVA_TRAS[k],transparent:true,opacity:.85});
+  for(const t of D.trasy){
+    const pts=[];
+    for(const [la,lo] of t.body){
+      if(la<D.bbox.latMin||la>D.bbox.latMax||lo<D.bbox.lngMin||lo>D.bbox.lngMax)continue;
+      pts.push(new THREE.Vector3(sx(lo), zOf(eleNa(la,lo))+.03, -sy(la)));
+    }
+    if(pts.length>=2) trasyGrp.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), maty[t.barva]||maty.cervena));
+  }
+}
+
+// ── vrcholy s popisky ──
+const vrchGrp=new THREE.Group(); scene.add(vrchGrp);
+function textSprite(txt){
+  const c=document.createElement('canvas'); const g=c.getContext('2d');
+  g.font='700 26px Inter,sans-serif'; const w=g.measureText(txt).width;
+  c.width=w+18; c.height=40; const g2=c.getContext('2d');
+  g2.font='700 26px Inter,sans-serif';
+  g2.fillStyle='rgba(250,246,238,.85)'; g2.fillRect(0,0,c.width,c.height);
+  g2.fillStyle='#384057'; g2.fillText(txt,9,29);
+  const tx=new THREE.CanvasTexture(c); tx.minFilter=THREE.LinearFilter;
+  const s=new THREE.Sprite(new THREE.SpriteMaterial({map:tx,depthTest:false}));
+  s.scale.set(c.width/55,c.height/55,1); return s;
+}
+function stavVrcholy(){
+  vrchGrp.clear();
+  if(!D.vrcholy||!D.vrcholy.length)return;
+  const mat=new THREE.MeshLambertMaterial({color:0x384057});
+  for(const v of D.vrcholy.slice(0,12)){
+    const kuzel=new THREE.Mesh(new THREE.ConeGeometry(.09,.26,4),mat);
+    const x=sx(v.lng), z=-sy(v.lat), y=zOf(v.ele);
+    kuzel.position.set(x,y+.13,z); vrchGrp.add(kuzel);
+    const sp=textSprite(v.n+' '+v.ele); sp.position.set(x,y+.75,z); vrchGrp.add(sp);
+  }
+}
+
 // ── přechody (schematické přímky) ──
 const prGrp=new THREE.Group(); prGrp.visible=false; scene.add(prGrp);
 function stavPrechody(){
@@ -170,6 +225,11 @@ function stavPrechody(){
   }
 }
 stavPrechody();
+stavTrasy(); stavVrcholy();
+if(D.trasy&&D.trasy.length){document.getElementById('lblTrasy').style.display='flex';}
+else trasyGrp.visible=false;
+if(D.vrcholy&&D.vrcholy.length){document.getElementById('lblVrch').style.display='flex';}
+else vrchGrp.visible=false;
 
 // ── kamera + vlastní orbit (bez závislosti na examples) ──
 let dist=30, rotY=-0.45, rotX=0.55, cx=0, cz=0;
@@ -228,9 +288,11 @@ ren.domElement.addEventListener('click',e=>{
 
 // ── ovládání panelu ──
 document.getElementById('chkVrst').onchange=e=>vrstGrp.visible=e.target.checked;
+document.getElementById('chkTrasy').onchange=e=>trasyGrp.visible=e.target.checked;
+document.getElementById('chkVrch').onchange=e=>vrchGrp.visible=e.target.checked;
 document.getElementById('chkKand').onchange=e=>{for(const g of piny) if(!g.userData.pub) g.visible=e.target.checked;};
 document.getElementById('chkPrech').onchange=e=>prGrp.visible=e.target.checked;
-document.getElementById('rngZ').oninput=e=>{ZEX=+e.target.value;document.getElementById('zval').textContent=ZEX.toFixed(1)+'×';stavTeren();stavVrstevnice();poziceChat();stavPrechody();};
+document.getElementById('rngZ').oninput=e=>{ZEX=+e.target.value;document.getElementById('zval').textContent=ZEX.toFixed(1)+'×';stavTeren();stavVrstevnice();poziceChat();stavPrechody();stavTrasy();stavVrcholy();};
 
 addEventListener('resize',()=>{cam.aspect=W()/H();cam.updateProjectionMatrix();ren.setSize(W(),H())});
 (function smycka(){requestAnimationFrame(smycka);ren.render(scene,cam)})();

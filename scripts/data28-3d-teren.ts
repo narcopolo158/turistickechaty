@@ -1,0 +1,280 @@
+/**
+ * DATA-28: 3D model Krkonoš — OSTRÁ datová pipeline (nástupce experimentu
+ * z 26. 7. 2026, scripts/experimenty/3d-teren-krkonose.mjs).
+ *
+ * Co dělá (v GitHub Actions, kde je síť; sandbox denních sessions na
+ * api.mapy.com ani Overpass nedosáhne):
+ *   1. VÝŠKOPIS: mřížka 240×144 přes bbox masivu z Mapy.com Elevation API
+ *      (klíč hlavičkou X-Mapy-Api-Key ze secrets, max 256 pozic/dotaz,
+ *      lon,lat pořadí — konvence viz scripts/vyskovy-profil.ts).
+ *   2. TRASY: Overpass `relation[route=hiking] out geom;` (týž dotaz jako
+ *      DATA-06), polylinie slité po relacích, decimované na ~60 m,
+ *      obarvené podle osmc/kct značení.
+ *   3. VRCHOLY: Overpass `node[natural=peak][name]` s tagem ele — popisky
+ *      pro orientaci.
+ *   4. CHATY + PŘECHODY: z YAML korpusu a data/trasy/krkonose/prechody.json
+ *      (stejně jako experiment).
+ *   5. Zapíše docs/experimenty/3d-teren-data.json a SLOŽÍ FINÁLNÍ HTML
+ *      (šablona + přibalený three.js + data) → docs/experimenty/
+ *      3d-teren-krkonose.html.
+ *
+ * BEZ KLÍČE/SÍTĚ (lokální běh): spadne zpět na ILUSTRAČNÍ interpolaci IDW
+ * z výšek objektů korpusu (realDem:false) — tedy chování experimentu.
+ * Přepínač --bez-site vynutí fallback bez pokusů o síť.
+ *
+ * Poctivost: výškopis je VÝŠKOVÝ MODEL (verified:false, „nemusí odpovídat
+ * realitě" — formulace z DATA-06); trasy a vrcholy jsou OSM (ODbL,
+ * atribuce v HTML); nic z toho nejde do publikovaných profilů.
+ *
+ *   npx tsx scripts/data28-3d-teren.ts [--bez-site]
+ */
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+
+import { parse } from 'yaml'
+
+import { stahniOverpass, VYCHOZI_API_INSTANCE } from './data01-overpass-krkonose'
+import { overpassDotazTrasy, type TrasaRelace } from './data06-trasy'
+import { MAX_POZIC_NA_DOTAZ } from './vyskovy-profil'
+
+const BBOX = { latMin: 50.6, latMax: 50.82, lngMin: 15.35, lngMax: 15.95 }
+const BBOX_STR = `${BBOX.latMin},${BBOX.lngMin},${BBOX.latMax},${BBOX.lngMax}`
+const NX = 240
+const NY = 144
+const ELEVATION_URL = 'https://api.mapy.com/v1/elevation'
+const DECIMACE_M = 60
+const KOREN = process.cwd()
+const ADR = join(KOREN, 'docs', 'experimenty')
+
+type Chata = { n: string; lat: number; lng: number; ele: number | null; typ: string | null; stav: string | null; pub: boolean }
+type Trasa = { ref: string | null; barva: string; body: [number, number][] }
+type Vrchol = { n: string; lat: number; lng: number; ele: number }
+
+// ── chaty + kotvy z korpusu ─────────────────────────────────────────────────
+const nactiChaty = (): { chaty: Chata[]; kotvy: { lat: number; lng: number; ele: number }[] } => {
+  const chaty: Chata[] = []
+  const kotvy: { lat: number; lng: number; ele: number }[] = []
+  for (const [dir, pub] of [
+    ['data/chaty/krkonose', true],
+    ['data/kandidati/krkonose', false],
+  ] as const) {
+    for (const f of readdirSync(join(KOREN, dir))) {
+      if (!f.endsWith('.yaml')) continue
+      const d = (parse(readFileSync(join(KOREN, dir, f), 'utf8')) ?? {}) as Record<string, unknown>
+      const lat = Number(d.lat), lng = Number(d.lng)
+      if (!lat || !lng) continue
+      const ele = d.vyska ? Number(d.vyska) : null
+      const rec: Chata = { n: String(d.nazev ?? f), lat, lng, ele,
+        typ: d.typ ? String(d.typ) : null, stav: d.stav ? String(d.stav) : null, pub }
+      if (pub || !chaty.some((c) => c.n === rec.n)) chaty.push(rec)
+      if (ele) kotvy.push({ lat, lng, ele })
+    }
+  }
+  for (const src of ['_overpass-export-cz.json', '_overpass-export-pl.json']) {
+    const j = JSON.parse(readFileSync(join(KOREN, 'data/kandidati/krkonose', src), 'utf8')) as {
+      elements?: { lat?: number; lon?: number; center?: { lat: number; lon: number }; tags?: Record<string, string> }[]
+    }
+    for (const e of j.elements ?? []) {
+      const lat = e.lat ?? e.center?.lat, lng = e.lon ?? e.center?.lon
+      const ele = Number(e.tags?.ele)
+      if (lat && lng && ele) kotvy.push({ lat, lng, ele })
+    }
+  }
+  return { chaty, kotvy }
+}
+
+// ── výškopis: Mapy.com (ostrý) ──────────────────────────────────────────────
+const stahniGridMapy = async (klic: string): Promise<number[][]> => {
+  const pozice: [number, number][] = [] // [lon, lat]
+  for (let iy = 0; iy < NY; iy++) {
+    const lat = BBOX.latMin + ((BBOX.latMax - BBOX.latMin) * iy) / (NY - 1)
+    for (let ix = 0; ix < NX; ix++) {
+      const lng = BBOX.lngMin + ((BBOX.lngMax - BBOX.lngMin) * ix) / (NX - 1)
+      pozice.push([lng, lat])
+    }
+  }
+  const vysky: number[] = []
+  for (let i = 0; i < pozice.length; i += MAX_POZIC_NA_DOTAZ) {
+    const davka = pozice.slice(i, i + MAX_POZIC_NA_DOTAZ)
+    const url = `${ELEVATION_URL}?positions=${davka.map(([lo, la]) => `${lo.toFixed(5)},${la.toFixed(5)}`).join(';')}`
+    const res = await fetch(url, { headers: { 'X-Mapy-Api-Key': klic } })
+    if (!res.ok) throw new Error(`Elevation API HTTP ${res.status} (dávka ${i / MAX_POZIC_NA_DOTAZ + 1})`)
+    const j = (await res.json()) as { items?: { elevation: number }[] }
+    if (!j.items || j.items.length !== davka.length)
+      throw new Error(`Elevation API: čekáno ${davka.length} bodů, přišlo ${j.items?.length ?? 0}`)
+    for (const it of j.items) vysky.push(Math.round(it.elevation))
+    if (i % (MAX_POZIC_NA_DOTAZ * 25) === 0) console.log(`  výškopis: ${Math.min(i + MAX_POZIC_NA_DOTAZ, pozice.length)}/${pozice.length} bodů`)
+    await new Promise((r) => setTimeout(r, 40)) // limit 30 dotazů/s s rezervou
+  }
+  const grid: number[][] = []
+  for (let iy = 0; iy < NY; iy++) grid.push(vysky.slice(iy * NX, (iy + 1) * NX))
+  return grid
+}
+
+// ── výškopis: IDW fallback (ilustrační — chování experimentu) ───────────────
+const spocitejGridIdw = (kotvy: { lat: number; lng: number; ele: number }[]): number[][] => {
+  const k = [...kotvy]
+  for (let i = 0; i <= 20; i++) {
+    const lng = BBOX.lngMin + ((BBOX.lngMax - BBOX.lngMin) * i) / 20
+    k.push({ lat: BBOX.latMin, lng, ele: 480 }, { lat: BBOX.latMax, lng, ele: 400 })
+  }
+  for (let i = 1; i < 8; i++) {
+    const lat = BBOX.latMin + ((BBOX.latMax - BBOX.latMin) * i) / 8
+    k.push({ lat, lng: BBOX.lngMin, ele: 520 }, { lat, lng: BBOX.lngMax, ele: 520 })
+  }
+  const grid: number[][] = []
+  for (let iy = 0; iy < NY; iy++) {
+    const radek: number[] = []
+    const lat = BBOX.latMin + ((BBOX.latMax - BBOX.latMin) * iy) / (NY - 1)
+    for (let ix = 0; ix < NX; ix++) {
+      const lng = BBOX.lngMin + ((BBOX.lngMax - BBOX.lngMin) * ix) / (NX - 1)
+      let sw = 0, se = 0
+      for (const b of k) {
+        const dy = (b.lat - lat) * 111.32
+        const dx = (b.lng - lng) * 111.32 * Math.cos((lat * Math.PI) / 180)
+        const d2 = dx * dx + dy * dy + 0.15
+        const w = 1 / (d2 * d2)
+        sw += w
+        se += w * b.ele
+      }
+      radek.push(Math.round(se / sw))
+    }
+    grid.push(radek)
+  }
+  return grid
+}
+
+// ── trasy z Overpass ────────────────────────────────────────────────────────
+const BARVY: [RegExp, string][] = [
+  [/red|cervena/, 'cervena'],
+  [/blue|modra/, 'modra'],
+  [/green|zelena/, 'zelena'],
+  [/yellow|zluta/, 'zluta'],
+]
+const barvaRelace = (tags: Record<string, string> = {}): string | null => {
+  const osmc = tags['osmc:symbol'] ?? ''
+  for (const [re, b] of BARVY) if (re.test(osmc.split(':')[0])) return b
+  for (const b of ['red', 'blue', 'green', 'yellow'])
+    if (tags[`kct_${b}`]) return BARVY.find(([re]) => re.test(b))![1]
+  return null
+}
+
+const vzdM = (aLat: number, aLon: number, bLat: number, bLon: number): number => {
+  const dy = (bLat - aLat) * 111_320
+  const dx = (bLon - aLon) * 111_320 * Math.cos(((aLat + bLat) / 2) * (Math.PI / 180))
+  return Math.hypot(dx, dy)
+}
+
+const stahniTrasy = async (): Promise<{ trasy: Trasa[]; stavOsm: string }> => {
+  const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, overpassDotazTrasy())
+  const telo = JSON.parse(raw) as { elements?: TrasaRelace[]; osm3s?: { timestamp_osm_base?: string } }
+  const trasy: Trasa[] = []
+  for (const rel of telo.elements ?? []) {
+    const barva = barvaRelace(rel.tags)
+    if (!barva) continue
+    for (const clen of rel.members ?? []) {
+      const g = clen.geometry
+      if (!g || g.length < 2) continue
+      const body: [number, number][] = []
+      let posledni: { lat: number; lon: number } | null = null
+      for (const b of g) {
+        if (!posledni || vzdM(posledni.lat, posledni.lon, b.lat, b.lon) >= DECIMACE_M) {
+          body.push([Number(b.lat.toFixed(4)), Number(b.lon.toFixed(4))])
+          posledni = b
+        }
+      }
+      const konec = g[g.length - 1]
+      if (posledni && (posledni.lat !== konec.lat || posledni.lon !== konec.lon))
+        body.push([Number(konec.lat.toFixed(4)), Number(konec.lon.toFixed(4))])
+      if (body.length >= 2) trasy.push({ ref: rel.tags?.ref ?? null, barva, body })
+    }
+  }
+  return { trasy, stavOsm: telo.osm3s?.timestamp_osm_base?.slice(0, 10) ?? 'neznámý' }
+}
+
+const stahniVrcholy = async (): Promise<Vrchol[]> => {
+  const dotaz = `[out:json][timeout:60];node["natural"="peak"]["name"]["ele"](${BBOX_STR});out;`
+  const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
+  const telo = JSON.parse(raw) as { elements?: { lat: number; lon: number; tags?: Record<string, string> }[] }
+  return (telo.elements ?? [])
+    .map((e) => ({ n: e.tags?.name ?? '', lat: e.lat, lng: e.lon, ele: Math.round(Number(e.tags?.ele)) }))
+    .filter((v) => v.n && Number.isFinite(v.ele) && v.ele >= 1100)
+    .sort((a, b) => b.ele - a.ele)
+}
+
+// ── přechody (schematické spojnice; reálné délky z prechody.json) ──────────
+const nactiPrechody = (chaty: Chata[]): { a: string; b: string; km: number }[] => {
+  const j = JSON.parse(readFileSync(join(KOREN, 'data/trasy/krkonose/prechody.json'), 'utf8')) as {
+    chaty?: { nazev: string; prechody?: { cilNazev: string; delkaKm: number }[] }[]
+  }
+  const idx = new Set(chaty.filter((c) => c.pub).map((c) => c.n))
+  const out: { a: string; b: string; km: number }[] = []
+  const seen = new Set<string>()
+  for (const ch of j.chaty ?? []) {
+    for (const p of ch.prechody ?? []) {
+      const key = [ch.nazev, p.cilNazev].sort().join('|')
+      if (seen.has(key) || !idx.has(ch.nazev) || !idx.has(p.cilNazev)) continue
+      seen.add(key)
+      out.push({ a: ch.nazev, b: p.cilNazev, km: p.delkaKm })
+    }
+  }
+  return out
+}
+
+// ── složení HTML ────────────────────────────────────────────────────────────
+const slozHtml = (dataJson: string, kotvyPocet: number): void => {
+  let html = readFileSync(join(ADR, '3d-teren-sablona.html'), 'utf8')
+  const three = readFileSync(join(KOREN, 'node_modules/three/build/three.min.js'), 'utf8')
+  html = html.replace(
+    '<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>',
+    `<script>/* three.js r128 (MIT) — přibaleno, ať soubor funguje offline */\n${three}\n</script>`,
+  )
+  html = html.replace('/*__DATA__*/null/*__/DATA__*/', dataJson)
+  html = html.replace('__KOTVY__', String(kotvyPocet))
+  writeFileSync(join(ADR, '3d-teren-krkonose.html'), html)
+}
+
+// ── běh ─────────────────────────────────────────────────────────────────────
+const main = async () => {
+  const bezSite = process.argv.includes('--bez-site')
+  const klic = process.env.MAPY_API_KEY
+  const { chaty, kotvy } = nactiChaty()
+  const prechody = nactiPrechody(chaty)
+
+  let grid: number[][]
+  let trasy: Trasa[] = []
+  let vrcholy: Vrchol[] = []
+  let realDem = false
+  let stavOsm: string | null = null
+
+  if (!bezSite && klic) {
+    console.log(`Výškopis: Mapy.com Elevation API, mřížka ${NX}×${NY}…`)
+    grid = await stahniGridMapy(klic)
+    realDem = true
+    console.log('Trasy: Overpass out geom…')
+    const t = await stahniTrasy()
+    trasy = t.trasy
+    stavOsm = t.stavOsm
+    console.log(`  tras (barevných úseků): ${trasy.length}, stav OSM ${stavOsm}`)
+    console.log('Vrcholy: Overpass natural=peak…')
+    vrcholy = await stahniVrcholy()
+    console.log(`  vrcholů ≥1100 m se jménem: ${vrcholy.length}`)
+  } else {
+    console.log(bezSite ? 'Vynucen běh bez sítě' : 'MAPY_API_KEY není v env', '→ ILUSTRAČNÍ reliéf (IDW z korpusu).')
+    grid = spocitejGridIdw(kotvy)
+  }
+
+  const data = { bbox: BBOX, nx: NX, ny: NY, grid, chaty, prechody, trasy, vrcholy,
+    realDem, stavOsm, kotvy: kotvy.length,
+    zdrojVysky: realDem ? 'Mapy.com Elevation API (výškový model)' : `ilustrační interpolace z výšek ${kotvy.length} objektů korpusu` }
+  const dataJson = JSON.stringify(data)
+  writeFileSync(join(ADR, '3d-teren-data.json'), dataJson)
+  slozHtml(dataJson, kotvy.length)
+  console.log(`Zapsáno: 3d-teren-data.json (${(dataJson.length / 1024).toFixed(0)} kB) + 3d-teren-krkonose.html`)
+  console.log(`realDem: ${realDem} | chaty: ${chaty.length} | trasy: ${trasy.length} | vrcholy: ${vrcholy.length}`)
+}
+
+main().catch((chyba) => {
+  console.error(chyba instanceof Error ? chyba.message : chyba)
+  process.exit(1)
+})
