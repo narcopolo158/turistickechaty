@@ -145,6 +145,21 @@ text:
 # data/kandidati/fotky/krkonose/medvedi-bouda.yaml — výběr a licenční
 # kontrola na stránce souboru se dělá ručně, nasadí se dodatečně.
 
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/0/04/Medv%C4%9Bd%C3%AD_bouda_%2804%29.jpg
+    alt: Medvědí bouda (čp. 84) ve Špindlerově Mlýně
+    typ: soucasna
+    autor: ŠJů
+    licence: cc-by
+    licencePoznamka: CC BY 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Medv%C4%9Bd%C3%AD_bouda_(04).jpg
+    prevzatoDne: '2026-07-27'
+    overeni:
+      source: >-
+        Wikimedia Commons (geosearch + Category dle názvu chaty, DATA-02 export z 2026-07-20; 42 m od chaty, popis „Špindlerův Mlýn , Trutnov District , Czechia . House No. 84, Medvědí bouda.“, 2592×1944, licence CC BY 4.0 z licenčního síta DATA-02; redakční výběr 2026-07-27 nad exportem — Commons živě nedosaženo)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
 zdroje:
   - popis: >-
       Web boudy (medvedibouda.cz, stránka O nás) — výška, poloha,

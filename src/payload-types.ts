@@ -345,7 +345,7 @@ export interface Chaty {
    */
   perex?: string | null;
   /**
-   * 2–4 odstavce: charakter místa, co si dát, kdy přijít.
+   * Článek jako v knižním průvodci: poloha a okolí, historie, dnešní provoz a zázemí, přístup, na závěr odstavec o tom, odkud údaje pocházejí a co ověřené není. Délka se řídí tím, co je doložené — u dobře podložených chat 400–600 slov, u chudě doložených 120–200. Nic nedomýšlet: co není v profilu doložené, do textu nepatří. Tvrzení z druhé ruky připsat zdroji („podle…"), rozpory přiznat. Bez cen, telefonů, e-mailů, URL, GPS a čísel turistických známek.
    */
   text?: {
     root: {

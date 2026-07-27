@@ -193,6 +193,22 @@ text:
     z toho jsme zatím neověřili vlastním dotazem. Před cestou proto
     doporučujeme potvrdit si přímo u boudy otvírací dobu restaurace i to, zda
     je otevřená veřejnosti.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/6/67/Ly%C5%BEa%C5%99sk%C3%A1_bouda%2C_Krkono%C5%A1e.jpg
+    alt: Lyžařská bouda v Krkonoších
+    typ: soucasna
+    autor: Honza Groh ( Jagro )
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Ly%C5%BEa%C5%99sk%C3%A1_bouda,_Krkono%C5%A1e.jpg
+    prevzatoDne: '2026-07-27'
+    overeni:
+      source: >-
+        Wikimedia Commons (geosearch + Category dle názvu chaty, DATA-02 export z 2026-07-20; 84 m od chaty, popis „Lyžařská bouda, Krkonoše“, 3648×2736, licence CC BY-SA 3.0 z licenčního síta DATA-02; redakční výběr 2026-07-27 nad exportem — Commons živě nedosaženo)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-20'
+
 zdroje:
   - popis: >-
       Vlastní web boudy — historie (1717 jako letní bouda, 1930 přestavba na

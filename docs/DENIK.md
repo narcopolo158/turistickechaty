@@ -11,6 +11,52 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — denní session (bezobslužný běh): hero fotky devíti profilů z kandidátů DATA-02
+
+**Hotovo:**
+
+**DATA-02 (nejvyšší nehotová položka): redakční výběr hero fotek z už
+commitnutých kandidátních metadat — devět publikovaných profilů má hero.**
+Martinova bouda (Petr Vodička, CC BY-SA 4.0, 4560×2864), Brádlerovy boudy,
+Moravská bouda a Medvědí bouda (vše ŠJů, CC BY 4.0, záběry z 05/2023),
+Bouda Růžohorky, Jelenka a Lyžařská bouda (Honza Groh — Jagro, CC BY-SA 3.0),
+Výrovka (Stanislav Dusík, CC BY-SA 4.0, geotag 2 m!) a Chalupa Na Rozcestí
+(Ladabohac, CC0). Kritérium poctivosti drženo tvrdě: vybráno JEN tam, kde
+popis souboru na Commons výslovně jmenuje chatu a geotag je u budovy
+(2–95 m); bloky `fotky:` nesou plnou atribuci (autor, licence, zdrojová
+stránka, original URL) a `verified: false` — oční kontrolu licence na stránce
+souboru udělá Michal, sandbox na Commons nedosáhne (výběr proveden nad
+exportem z 20. 7., přiznáno v `overeni.source`).
+
+**Poctivě BEZ hero:** Kochanówka — všech 35 geosearch kandidátů zobrazuje
+vodospad Szklarki a okolí, žádný popis nepotvrzuje budovu; Richtrovy boudy —
+jediný kandidát („Outside Pec pod Sněžkou", 152 m) budovu nepotvrzuje. Obojí
+zapsáno v `interniPoznamky` profilů; pomůže až fulltext sklizeň (klik) nebo
+oční výběr. Stav korpusu: **25 z 49 publikovaných profilů má hero** (bylo 16);
+zbylých 22 bez hero: 19 kandidáty nemá (15 profilů z povyšování 25.–26. 7.
+bez kandidátního YAML — geosearch pro ně nikdy neběžel + 4 s prázdným YAML
+vč. Tetřevek) a 3 zamítly už sessions 29/31 (Špindlerovka, Szrenica, Okraj).
+
+**Měření:** `npm run kontrola` zelené (validator CHYB 0, audit-mech 0,
+kolize 0, zdroje 0, ban-scan drží 140 známých zásahů — žádný nový, fixtura
+4/4). V sandboxu poprvé postaven lokální Postgres → **seed prošel plný
+(SEED_BEZ_FOTEK=1) a idempotentně**, int testy **216/216** (25 souborů —
+vč. tří DB-závislých, které bez DB neběží), lint i tsc čisté.
+
+**Příště:** (1) po Michalově kliku na DATA-02 fulltext workflow projít novou
+sklizeň — klik pokryje i 15 profilů bez kandidátních YAML (geosearch pro ně
+neběžel; skript bere profily z `data/chaty/**` automaticky, stačí jeden
+re-run); (2) fronta povyšování z DATA-27
+(Jelení Louky, Bouda Na Pláni, Helena, U Kotle…) — materiál s citacemi je
+připravený; (3) DATA-25 bod (a) — 10 vyřazených projít novým klíčem.
+
+**Otázky pro Michala:** žádná nová — trvá klik na „DATA-02: fotky chat
+z Wikimedia Commons" (Actions → Run workflow; teď pokryje i 18 nových
+profilů bez kandidátů a 4 kandidáty mimo Krkonoše) a oční kontrola licencí
+devíti dnešních hero (pak `overeni.verified: true` u bloku fotky).
+
+---
+
 ## 2026-07-26 — pokračování 7: Tier 4 komplet ztriážován — 15 + 6 do fronty povyšování, plné citace v DATA-27
 
 **Zadání Michala:** „pokracuj samostatne komplet tier 4."
