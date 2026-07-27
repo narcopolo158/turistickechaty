@@ -113,6 +113,25 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
           npm ci --no-audit --no-fund
+          # Env: payload run si Forge env soubor sam nenacte (doloz. 27.7.
+          # — SASL "password must be a string") -> nacist explicitne.
+          echo "Env soubory v release:"
+          ls -la .env* 2>/dev/null || echo "(zadne .env* soubory)"
+          ENVSOUBOR=""
+          for f in .env .env.local .env.production .env*; do
+            [ "\$f" = ".env.example" ] && continue
+            if [ -f "\$f" ]; then ENVSOUBOR="\$f"; break; fi
+          done
+          if [ -n "\$ENVSOUBOR" ]; then
+            echo "Nacitam prostredi z \$ENVSOUBOR"
+            set -a
+            . "./\$ENVSOUBOR" >/dev/null 2>&1 || { echo "!! env soubor se nepodarilo nacist (zvlastni znaky? zabal hodnoty ve Forge editoru do uvozovek)" >&2; exit 1; }
+            set +a
+          fi
+          if [ -z "\${DATABASE_URL:-}" ]; then
+            echo "!! DATABASE_URL nedorazila (env soubor chybi, nebo ji neobsahuje) — viz vypis vyse" >&2
+            exit 1
+          fi
           npx payload run scripts/seed-chaty.ts
           rm -rf .next
           tar -xzf /tmp/chaty-build.tar.gz
