@@ -44,18 +44,21 @@ port) a praxe restartu daemonu z deploy skriptu přes
 2. **New Site:** doména `dev.turistickechaty.cz`, typ **Static HTML /
    Nuxt.js / Next.js**, web directory `/`. Repo napojit na GitHub
    (Forge si vymění deploy key — PAT z chatu se NEpoužívá), větev `main`.
-3. **Env:** na serveru vytvořit `.env.local` dle
-   `env.production.example` (vygenerovat PAYLOAD_SECRET, zvolit PORT —
-   **na pticore už žije hub, takže NE 3000**; navrženo 3017 staging).
+3. **Env:** Site → **Environment** (editor ve Forge, žádné SSH) —
+   vložit obsah dle `env.production.example` s reálnými hodnotami
+   (PAYLOAD_SECRET vygenerovat, heslo DB z kroku 1, PORT **3017** —
+   NE 3000). Next.js čte `.env` z kořene situ, což je přesně soubor,
+   který Forge editor spravuje.
 4. **Nginx:** Site → Edit Nginx Configuration → vlepit obsah
    `nginx-site.conf` (a smazat PHP pozůstatky dle poznámky v souboru).
    Restart nginx.
 5. **Daemon:** Site → New Daemon — command `npm run start`, directory
    = kořen situ, user `forge`. Poznamenat si číslo daemonu. (Do prvního
    nasazení bude daemon padat — chybí mu .next; to je v pořádku.)
-6. **Seed DB na serveru (jednorázově):** `ssh forge@pticore`, `cd` do
-   situ, `npm ci && npx payload run scripts/seed-chaty.ts` — instalace
-   i seed 4 GB RAM zvládnou, jen build ne.
+6. **Seed DB: automaticky** — deploy workflow po `npm ci` na serveru
+   spouští `npx payload run scripts/seed-chaty.ts` (idempotentní,
+   doloženo u F0-06) při KAŽDÉM nasazení → serverová DB je vždy
+   srovnaná s gitem. Ruční SSH krok odpadá.
 7. **GitHub secrets + první deploy:** do repa přidat PTICORE_SSH_KEY /
    PTICORE_HOST / PTICORE_PATH / PTICORE_DAEMON (viz hlavička
    deploy-staging.yml) a spustit Actions → „INFRA-01: deploy staging" —
@@ -77,7 +80,7 @@ prvním buildu jednorázově spustit seed skript projektu (viz
 jen přes deploye (git je zdroj pravdy, DB se plní seedem, ne ručně).
 Fotky (public/znamky, media) jedou v repu, dokud nepřijde R2 (INFRA-02).
 
-## Otevřené body (blokují start — odpovědi od Michala)
+## Otevřené body — 27. 7. 2026 večer VŠECHNY VYŘEŠENY
 
 1. ~~Postgres~~ **VYŘEŠENO 27. 7.: PostgreSQL 17 na serveru běží**
    (Forge → Storage) — jen založit DB + uživatele.
@@ -86,9 +89,9 @@ Fotky (public/znamky, media) jedou v repu, dokud nepřijde R2 (INFRA-02).
 3. ~~Porty~~ **VYŘEŠENO 27. 7.: hub je čistě PHP** (jediný daemon =
    `artisan horizon`, Forge → Processes) — na 3xxx nic neposlouchá,
    **3017 staging / 3016 produkce platí**.
-4. **Node na serveru — POSLEDNÍ NEZNÁMÁ:** Forge UI (Runtime → Node.js)
-   verzi neukazuje, jen npm credentials → ověřit přes SSH: `node -v`
-   (potřebujeme ≥ 20, ideálně 22). Když bude starý/chybět, doinstalujeme.
+4. ~~Node~~ **VYŘEŠENO 27. 7.: v22.23.0** (Michal, Forge site Command
+   `node -v`) — shodná major verze s vývojem i CI. **VŠECHNY OTEVŘENÉ
+   BODY VYŘEŠENY — start blokuje už jen provedení kroků 1–10.**
 
 ## Co schválně NEřešíme teď
 

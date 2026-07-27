@@ -98,6 +98,7 @@ jobs:
           cd "${{ secrets.PTICORE_PATH }}"
           git pull origin main
           npm ci --no-audit --no-fund
+          npx payload run scripts/seed-chaty.ts
           rm -rf .next
           tar -xzf /tmp/chaty-build.tar.gz
           rm -f /tmp/chaty-build.tar.gz
