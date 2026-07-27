@@ -11,6 +11,33 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 18: návrh F1 rozcestníků + zadání pro design session
+
+**Zadání Michala:** „navrhni uspořádání homepage, rozcestníky (chaty)
+a stránky pohoří — vlastní žebříčky (nejvýše položená, nejstarší),
+charakteristika pohoří (nejvyšší hora, střediska, top cíle) a hlavně ta
+3D mapa!!! … nejdřív brainstorming s inspirací jinde, pak návrhy a
+zadání pro design session."
+
+**Hotovo: docs/NAVRH-F1-ROZCESTNIKY.md** — (1) inspirace: PeakVisor
+(stat-hero, žebříčky s dvojím řazením, 3D provázaná se vším), SAC
+portál (datová karta chaty; rezervační logiku nebereme), ceskehory.cz
+jako anti-vzor (ceníkové karty, stránkování, bez zdrojů), komoot guides
+(top cíle s 1 větou, FAQ, křížové rozcestníky); (2) principy: mapa-první,
+poctivá čísla jen z DB, kurátorství bez cen, zaniklé plnohodnotně,
+přesahy přiznané, 3D líně; (3) návrhy sekcí všech tří šablon (homepage
+s hledáním + poctivými countery + 3D bandem; katalog s chips filtry bez
+stránkování + přepínačem řádky/karty/2D mapa; pohoří jako vlajková loď
+s 3D centerpiece, žebříčky „jen doložené hodnoty", středisky, top cíli,
+FAQ z dat); (4) datové předpoklady (metadata oblasti, pole dolozenoOd?,
+SSG index, přesun 3D do aplikace s posterem a dynamic importem);
+(5) 5 otázek pro Michala (3D na homepage poster vs. živá; nejstarší
+z milníků vs. explicitní pole; řádky vs. karty; FAQ ano/ne; střediska
+jen sekce); (6) kap. 8 = předatelné zadání design session (šablony,
+nové komponenty, tvrdá omezení poctivosti, výstup = klikací prototyp
+light+dark+mobil, akceptační kritéria). Čtyřblok 28. 7.: na designu
+NEstavět, dokud neproběhne design session — brát jiné položky backlogu.
+
 ## 2026-07-27 — pokračování 17: INFRA-01 HOTOVO — staging dev.turistickechaty.cz ŽIJE (76 profilů)
 
 **Výsledek:** běh workflow #5 zelený (5 m 50 s), `/api/health` vrací
