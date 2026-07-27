@@ -1,0 +1,261 @@
+# Chata Jelení Louky — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026,
+# z fronty DATA-27 (Tier 4, silný materiál č. 1). Citace z rešerše 26. 7. 2026
+# (docs/DATA-27-tier4-triaz.md) + Kudy z nudy načteno přímo 27. 7. 2026.
+# POZOR: web objektu jelenilouky.cz měl 27. 7. 2026 PROŠLÝ certifikát a nešel
+# načíst — citace z něj drží checked 2026-07-26 (rešerše DATA-27).
+# Klíč zařazení: hospůdka „občerstvit i nasytit po celý den" (web i Kudy
+# z nudy) — výslovná věta o neubytovaných ale CHYBÍ, přiznáno v próze.
+# Vše verified:false — redakce zatím neověřila vlastním dotazem ani návštěvou.
+
+nazev: Chata Jelení Louky
+slug: chata-jeleni-louky
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+aliasy:
+  - nazev: Horská chata Jelení Louky
+    poznamka: tvar dle Kudy z nudy; katalogy píší i „Jelení louky" s malým l
+  - nazev: Zehgrundbauden
+    poznamka: do roku 1945, podle dřevařské rodiny Zee (dle serveru Turistika.cz)
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Hospůdka v chatě se hlásí k tradici od roku 1731, kdy Karl Zee získal
+      výčepní oprávnění a chalupa se stala hostincem
+    kategorie: stari
+    zdroj: >-
+      jelenilouky.cz a Kudy z nudy („hospůdka s tradicí od roku 1731");
+      letopočet a výčepní oprávnění Karla Zee dle serveru Turistika.cz
+      (sekundární zdroje, verified:false)
+  - text: >-
+      Místní kynuté knedlíky jsou podle webu chaty vyhlášené — tvrzení
+      provozovatele
+    kategorie: gastro
+    zdroj: jelenilouky.cz (web objektu, rešerše 2026-07-26, verified:false)
+  - text: >-
+      Od roku 1931 měla bouda elektřinu z vlastní vodní elektrárny; elektrárna
+      byla roku 1995 obnovena
+    kategorie: jine
+    zdroj: Turistika.cz (sekundární zdroj, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7020113
+lng: 15.7022562
+vyska: 986
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/656460094 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 986 m shodně web objektu (rešerše 2026-07-26) a Kudy z nudy
+    (načteno 2026-07-27: „v malebném údolí ve výšce 986 mnm"); ROZPOR:
+    Turistika.cz uvádí 959 m — přiznáno v próze, publikována hodnota
+    z webu objektu. Obec z adresy dle Kudy z nudy: „Jelení louky Pec pod
+    Sněžkou 77, 542 21 Pec pod Sněžkou" — poštovní pramen (výhrada DATA-20).
+    Poloha dle Kudy z nudy: z centra Pece pod Sněžkou cca 3 km po červené
+    značce směr Richtrovy boudy, Výrovka. Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 40
+overeniNocleh:
+  source: >-
+    Kapacita 40 lůžek JEN dle ubytovacího katalogu HotelyPenziony.cz (rešerše
+    2026-07-26) — jediný zdroj, web objektu číslo v rešerši nenesl a Kudy
+    z nudy kapacitu neuvádí. Existenci ubytování vedle toho naznačují
+    i titulky katalogů penziony.cz a firmy.cz ve výsledcích vyhledávání
+    (křížový signál DATA-03, 2026-07-20 — jen signál, obsah stránek
+    nečten, proto nejsou ve zdrojích). Sekundární zdroje, verified:false —
+    ověřit u chaty
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: kynuté knedlíky (dle webu chaty)
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy (načteno 2026-07-27), doslova: „Součástí chaty je také
+    hospůdka s tradicí od roku 1731, kde se můžete občerstvit i nasytit po
+    celý den." Web objektu (rešerše 2026-07-26) shodně: „hospůdka s tradicí
+    od roku 1731", „můžete se občerstvit i nasytit po celý den", „Místní
+    kynuté knedlíky a jiné dobroty jsou vyhlášené". VÝSLOVNÁ věta o obsluze
+    neubytovaných/kolemjdoucích CHYBÍ — přiznáno v próze (jazyk obou stránek
+    ale oslovuje návštěvníka obecně, ne ubytovaného). Tripadvisor vede
+    restauraci s otvírací dobou 10–22 (rešerše 2026-07-26) — komunitní
+    zdroj, do polí nepřevzato. Verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: +420 499 896 212
+  email: jelenky@volny.cz
+  web: https://www.jelenilouky.cz/
+overeniProvoz:
+  source: >-
+    Telefon +420 499 896 212 shodně Kudy z nudy (načteno 2026-07-27)
+    a OpenStreetMap (tag objektu) — vzácná dvojshoda. E-mail jelenky@volny.cz
+    dle Kudy z nudy. POZOR: web jelenilouky.cz měl 27. 7. 2026 PROŠLÝ
+    certifikát (SSL expired) a nešel načíst; rešerše 26. 7. 2026 z něj
+    citovala — doména tedy žila, ale certifikát je zanedbaný. Před cestou
+    ověřit provoz telefonicky. Sekundární zdroje + OSM, verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku 1731 = rok, kdy se chalupa stala hostincem (výčepní oprávnění
+# Karla Zee dle Turistika.cz) — týž vzor jako Černá bouda (1888 = otevření
+# hostince v hájence). Luční enkláva je doložena už v 16. století; stáří
+# dnešní budovy žádný pramen neuvádí — nedomýšlet. Otázka „stavba × místo
+# × provoz" u pole rokVzniku je vedena v DATA-04 (exponát Výrovka) —
+# kdyby padlo jiné pravidlo, přepsat i tady.
+rokVzniku: 1731
+milniky:
+  - udalost: >-
+      V 16. století na místě vznikla luční enkláva (bez přesnějšího letopočtu)
+  - rok: 1719
+    udalost: >-
+      V letech 1719–1737 se v okolí dolovala železná ruda
+  - rok: 1731
+    udalost: >-
+      Karl Zee získal výčepní oprávnění a chalupa se stala hostincem
+  - rok: 1897
+    udalost: Enklávu postihla povodeň a zemní lavina
+  - rok: 1900
+    udalost: Johann Kohl přistavěl pokoje pro hosty
+  - rok: 1925
+    udalost: Přibyl velký sál
+  - rok: 1931
+    udalost: Bouda získala elektřinu z vlastní vodní elektrárny
+  - rok: 1945
+    udalost: >-
+      Do tohoto roku nesla enkláva jméno Zehgrundbauden podle dřevařské
+      rodiny Zee
+  - rok: 1995
+    udalost: Vodní elektrárna byla obnovena
+overeniHistorie:
+  source: >-
+    Celá chronologie dle serveru Turistika.cz (rešerše DATA-27, 2026-07-26):
+    16. stol. luční enkláva; 1719–1737 dolování železné rudy; 1731 „Karl Zee
+    získal výčepní oprávnění, chalupa se stala hostincem"; do 1945
+    Zehgrundbauden podle dřevařské rodiny Zee; 1897 povodeň + zemní lavina;
+    1900 Johann Kohl přistavěl pokoje; 1925 velký sál; 1931 elektřina
+    z vodní elektrárny; 1995 elektrárna obnovena. Jediný (sekundární) zdroj,
+    verified:false — ověřit primárním pramenem
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata s hospůdkou v údolní enklávě Jelení louky u Pece pod Sněžkou.
+  Hospůdka se hlásí k tradici od roku 1731, kdy tu podle serveru Turistika.cz
+  získal Karl Zee výčepní oprávnění; do roku 1945 nesla enkláva podle téhož
+  zdroje jméno Zehgrundbauden. Web chaty měl v červenci 2026 prošlý
+  certifikát — před cestou doporučujeme zavolat.
+text:
+  - >-
+    Chata Jelení Louky stojí v luční enklávě stejného jména v údolí u Pece
+    pod Sněžkou, ve výšce 986 metrů podle webu chaty i portálu Kudy z nudy;
+    server Turistika.cz uvádí 959 metrů a rozpor rozřešený nemáme. Z centra
+    Pece je to sem podle Kudy z nudy zhruba tři kilometry po červené
+    turistické značce směrem na Richtrovy boudy a Výrovku. Adresou patří
+    chata k Peci pod Sněžkou.
+  - >-
+    Enkláva je podle serveru Turistika.cz doložena už v 16. století a v
+    letech 1719 až 1737 se v okolí dolovala železná ruda. Klíčový letopočet
+    ale zní 1731: Karl Zee tehdy získal výčepní oprávnění a chalupa se stala
+    hostincem. Právě k tomuto roku se dnešní hospůdka hlásí. Jméno rodiny
+    Zee neslo místo až do roku 1945 — enklávě se říkalo Zehgrundbauden.
+    Rok 1897 přinesl povodeň a zemní lavinu, roku
+    1900 přistavěl Johann Kohl pokoje pro hosty a v roce 1925 přibyl velký
+    sál. Zajímavá je i energetika: od roku 1931 měla bouda elektřinu
+    z vlastní vodní elektrárny a ta byla po letech, v roce 1995, obnovena.
+    Celou tuhle osu přebíráme z jediného sekundárního zdroje a primárním
+    pramenem ji ověřenou nemáme.
+  - >-
+    Hospůdka je to hlavní, čím se chata prezentuje. Web chaty i Kudy
+    z nudy shodně píšou, že se tu můžete občerstvit i nasytit po celý den,
+    a web se chlubí vyhlášenými kynutými knedlíky — to druhé je tvrzení
+    provozovatele, které nezávisle doložené nemáme. Poctivě dodáváme, že
+    výslovnou větu, zda hospůdka obsluhuje i hosty bez noclehu, jsme
+    v žádném prameni nenašli; jazyk obou stránek nicméně oslovuje
+    návštěvníka obecně, ne jen ubytovaného.
+  - >-
+    Nocleh chata nabízí, ale s čísly je to slabší: čtyřicet lůžek uvádí
+    jen ubytovací katalog HotelyPenziony.cz a web chaty ani Kudy z nudy
+    kapacitu nenesou, takže číslo berte s rezervou. Skladbu pokojů doloženou
+    nemáme.
+  - >-
+    Jedna praktická věc na závěr: web chaty se nám 27. července 2026 kvůli
+    prošlému bezpečnostnímu certifikátu nepodařilo načíst; ještě o den dřív
+    z něj přitom náš průzkum citoval. Vypadá to tedy spíš na zanedbanou
+    údržbu webu než na konec provozu, jistotu ale nemáme.
+    Přesto doporučujeme si otvírací dobu hospůdky i volná lůžka před cestou
+    ověřit telefonicky; telefonní číslo uvádí shodně Kudy z nudy
+    i OpenStreetMap, což je aspoň malá křížová opora.
+  - >-
+    Údaje na téhle stránce pocházejí z webu chaty (citace z redakčního
+    průzkumu 26. července 2026), z portálu Kudy z nudy, ze serveru
+    Turistika.cz a z ubytovacího katalogu HotelyPenziony.cz; polohu vede
+    OpenStreetMap. Redakce zatím nic z toho neověřila vlastním dotazem ani
+    návštěvou. Kde se prameny rozcházejí (výška) nebo kde údaj stojí na
+    jediném prameni (kapacita), říkáme to výslovně a nevybíráme mezi
+    čísly potichu.
+
+zdroje:
+  - popis: >-
+      Web chaty jelenilouky.cz — hospůdka s tradicí od 1731, „občerstvit
+      i nasytit po celý den", kynuté knedlíky, výška 986 m (citace z rešerše
+      DATA-27, 26. 7. 2026; 27. 7. 2026 měl web prošlý certifikát a nešel
+      načíst); web objektu, verified:false
+    url: https://www.jelenilouky.cz/
+  - popis: >-
+      Kudy z nudy — „Horská chata Jelení Louky" (poloha, výška 986 m, adresa
+      Pec pod Sněžkou 77, kontakty, hospůdka od 1731 „po celý den"; načteno
+      27. 7. 2026); sekundární zdroj, verified:false
+    url: https://www.kudyznudy.cz/aktivity/horska-chata-jeleni-louky
+  - popis: >-
+      Turistika.cz — historie enklávy Jelení louky (16. stol., dolování
+      1719–1737, výčepní oprávnění Karla Zee 1731, Zehgrundbauden do 1945,
+      povodeň 1897, přístavby 1900 a 1925, vodní elektrárna 1931/1995,
+      výška 959 m); sekundární zdroj, verified:false
+    url: https://www.turistika.cz/mista/jeleni-louky/detail
+  - popis: >-
+      HotelyPenziony.cz — kapacita 40 lůžek (jediný zdroj čísla); sekundární
+      zdroj, verified:false. POZOR: přímé URL stránky objektu z rešerše
+      nemáme — odkaz vede na katalog, detail dohledat (DATA-04)
+    url: https://www.hotelypenziony.cz/
+  - popis: OpenStreetMap (GPS objektu, telefon; ODbL)
+    url: https://www.openstreetmap.org/node/656460094
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/chata-jeleni-louky.yaml (DATA-01, OSM)
+  27. 7. 2026 — fronta DATA-27 (Tier 4 silná, č. 1 „⭐"). Citace z triáže
+  26. 7. 2026; Kudy z nudy načteno přímo 27. 7. 2026 (WebFetch prošel).
+
+  ⚠ KLÍČ ZAŘAZENÍ: hospůdka „občerstvit i nasytit po celý den" (web i KzN
+  shodně) + tradice hostince od 1731 (DATA-25 minulost) — výslovná věta
+  o neubytovaných ale CHYBÍ, v próze přiznáno. Tripadvisor otvíračka 10–22
+  do polí nepřevzata (komunitní zdroj).
+
+  ⚠ WEB: jelenilouky.cz 27. 7. 2026 PROŠLÝ certifikát (WebFetch:
+  ROBOTS_DISALLOWED / certificate has expired) — rešerše 26. 7. z něj ještě
+  citovala. V próze přiznáno vč. výkladu (zanedbaný web, ne nutně konec
+  provozu). Telefon má dvojshodu KzN + OSM.
+
+  ⚠ ROZPOR výška: 986 (web, KzN) × 959 (Turistika.cz) — publikováno 986,
+  přiznáno. Kapacita 40 jen HotelyPenziony.cz (jediný zdroj) — zapsána
+  s výhradou v overeni i próze.
+
+  ⚠ HERO FOTKA NEVYBRÁNA: geosearch kandidáti obsahují File:Dům čp. 76,
+  Jelení Louky (popis „usedlost") — adresa chaty je ale čp. 77 (KzN),
+  takže čp. 76 je SOUSEDNÍ usedlost, ne chata → nevzato (zbytek kandidátů
+  jsou snímky Země z ISS, geosearch kuriozita). Hero dá až oční výběr
+  nebo chatař.
+
+  K dotažení (DATA-04, verified:true): potvrzení provozu a otvírací doby
+  hospůdky (a zda obsluhuje neubytované — klíčová věta), kapacita a skladba
+  pokojů, stav webu/certifikátu, výška (986×959), stáří dnešní budovy.

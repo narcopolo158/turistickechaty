@@ -1,0 +1,268 @@
+# Bouda Na Pláni — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026,
+# z fronty DATA-27 (Tier 4, silný materiál č. 2). Web boudy načten přímo
+# 27. 7. 2026 (WebFetch prošel) — kontakty, výška, kapacita i historie
+# citovány z něj; spindleruv-mlyn.com z rešerše 26. 7. 2026.
+# IDENTITA: OSM vede objekt jako „Chata na Pláni", web jako „Bouda Na Pláni";
+# ztotožnění potvrzuje GPS webu (50.7027842N, 15.6253642E) ≈ GPS OSM (~35 m).
+# POZOR na charakter: stravování je SAMOOBSLUŽNÉ — pronájem pokojů, komunitní
+# kuchyň, bar s lehkým občerstvením; klasická restaurace s obsluhou tu podle
+# prezentace boudy není. typ: obsluhovana přesto platí — bouda má
+# provozovatele a personál (bar, pronájem); „útulna" by značila neobsluhovaný
+# objekt, což tohle není. Rok 1530 nese JEN vlastní web — připsáno,
+# nevydáváno za doložené (obdoba 1717 u Lyžařské boudy). Vše verified:false.
+
+nazev: Bouda Na Pláni
+slug: chata-na-plani
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+aliasy:
+  - nazev: Chata na Pláni
+    poznamka: tvar dle OpenStreetMap
+  - nazev: Planurbaude
+    poznamka: německý název dle webu boudy
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Podle webu boudy postavili boudu Rennerové už v roce 1530 — letopočet
+      nese jen vlastní prezentace, nezávisle doložený není
+    kategorie: stari
+    zdroj: boudanaplani.com (web objektu, načteno 2026-07-27, verified:false)
+  - text: >-
+      Web boudy uvádí, že se tu v březnu 1944 naposledy sešel plukovník
+      Claus von Stauffenberg s rodinou a že zde byly domluveny detaily
+      atentátu na Adolfa Hitlera — tvrzení provozovatele, nezávisle
+      nedoloženo
+    kategorie: jine
+    zdroj: boudanaplani.com (web objektu, načteno 2026-07-27, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.702992
+lng: 15.6250393
+vyska: 1180
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/225909476 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    web boudy (načteno 2026-07-27) uvádí „GPS poloha: 50.7027842N,
+    15.6253642E" — shoda s OSM v řádu desítek metrů (~35 m) POTVRZUJE
+    ztotožnění objektu
+    (OSM jméno „Chata na Pláni" × web „Bouda Na Pláni"). Výška a poloha
+    dle webu boudy, doslova: „leží v nadmořské výšce 1180 m n. m. na
+    vrcholu Přední Planiny", „800m od vrchní stanice lanovky Špindlerův
+    Mlýn - Svatý Petr". Obec z adresy dle webu boudy: „Přední Labská 75
+    Špindlerův Mlýn okres Trutnov" — poštovní pramen (výhrada DATA-20;
+    Přední Labská je část Špindlerova Mlýna). Web objektu + OSM,
+    verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# `kapacita` ZÁMĚRNĚ NEVYPLNĚNA — web boudy uvádí „až 53 osob", oficiální
+# web Špindlerova Mlýna 50; „až" je navíc marketingové maximum. Nedomýšlet.
+nocleh: ano
+pokoje:
+  - typ: Dvoulůžkové a třílůžkové pokoje
+  - typ: Čtyřlůžkový pokoj
+  - typ: Pětilůžkový pokoj
+overeniNocleh:
+  source: >-
+    Web boudy (načteno 2026-07-27), doslova: „Nabízíme pronájem dvou
+    a třílůžkových pokojů", „Čtyřlůžkový pokoj", „Pětilůžkový pokoj",
+    „celkové kapacitě až 53 osob". ROZPOR: oficiální web Špindlerova Mlýna
+    spindleruv-mlyn.com uvádí 50 osob (rešerše 2026-07-26) — kapacita proto
+    vědomě NEVYPLNĚNA, rozsah přiznává próza. Ubytování má samoobslužný
+    ráz (komunitní kuchyň, viz občerstvení). Verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# POZOR: není tu klasická restaurace. Bar nabízí nápoje a lehké občerstvení;
+# vaření si hosté obstarávají sami v komunitní kuchyni. Komu bar slouží
+# (jen ubytovaným, nebo i kolemjdoucím), žádný pramen neříká — přiznáno.
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Web boudy (načteno 2026-07-27), doslova: „Společenské prostory (jídelna,
+    denní místnost, večerní posezení) s barem (k dispozici teplé, studené
+    nápoje, lehké občerstvení)" a „K dispozici je společná komunitní plně
+    vybavená velkokapacitní kuchyň". typObcerstveni: bufet zvoleno jako
+    nejbližší hodnota číselníku pro bar s lehkým občerstvením — klasická
+    restaurace tu NENÍ. Komu bar slouží (ubytovaní/kolemjdoucí), web
+    neuvádí — přiznáno v próze. Klíč zařazení se opírá o bar + turistickou
+    minulost dle DATA-25. Verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: +420 734 189 897
+  email: info@boudanaplani.com
+  web: https://www.boudanaplani.com/
+overeniProvoz:
+  source: >-
+    Kontakty z webu boudy (načteno 2026-07-27): telefony „+420 734 189 897"
+    a „+420 737 237 115" (druhé číslo vedeno jen zde v poznámce — pole nese
+    jedno), e-mail info@boudanaplani.com, adresa Přední Labská 75,
+    Špindlerův Mlýn. Web objektu, verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku 1530 = tvrzení VLASTNÍHO webu boudy („Rennerové postavili boudu
+# už v roce 1530") — jediný pramen, připsáno, nevydáváno za doložené
+# (obdoba roku 1717 u Lyžařské boudy). Nezávislé doložení nemáme.
+rokVzniku: 1530
+milniky:
+  - rok: 1530
+    udalost: >-
+      Rennerové podle webu boudy postavili boudu (letopočet nese jen vlastní
+      prezentace boudy)
+  - rok: 1944
+    udalost: >-
+      V březnu se tu podle webu boudy sešli odpůrci nacismu včetně
+      plukovníka Clause von Stauffenberga (web mluví o setkání s rodinou);
+      web uvádí, že zde byly domluveny detaily atentátu na Adolfa Hitlera
+overeniHistorie:
+  source: >-
+    Web boudy (načteno 2026-07-27), doslova: „Rennerové postavili boudu už
+    v roce 1530", „Bouda Na Pláni (německy Planurbaude)", „V zastrčené
+    Boudě na Pláni uprostřed hor se sešli naposledy v březnu 1944",
+    „plukovník hrabě Claus von Stauffenberg se svojí rodinou", „Domluvili
+    zde detaily atentátu na Adolfa Hitlera". Rešerše DATA-27 (26. 7. 2026)
+    z téhož webu citovala i formulaci „v březnu 1944 se zde sešli odpůrci
+    nacismu včetně plukovníka Clause von Stauffenberga" — obě znění nese
+    táž prezentace. VŠE jsou tvrzení vlastní prezentace boudy bez
+    nezávislého dokladu — v polích i próze důsledně připsáno („podle webu
+    boudy"). Rok 1530 by byl nejstarší letopočet, jaký zatím u krkonošských
+    bud v datech vedeme (další nejstarší je 1623) — právě proto ho
+    nevydáváme za doložený. Verified:false — ověřit primárním/nezávislým
+    pramenem
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda se samoobslužným stravováním na vrcholu Přední Planiny — podle
+  vlastního webu ve výšce 1 180 metrů, osm set metrů od horní stanice
+  lanovky Špindlerův Mlýn — Svatý Petr. Nabízí pronájem pokojů, společnou
+  komunitní kuchyň a bar s lehkým občerstvením. Web boudy klade její
+  počátky až do roku 1530 k rodině Rennerů a k březnu 1944 sem situuje
+  setkání odpůrců nacismu kolem plukovníka Stauffenberga — obojí jsou
+  tvrzení provozovatele, která nezávisle doložená nemáme.
+text:
+  - >-
+    Bouda Na Pláni stojí podle vlastního webu na vrcholu Přední Planiny
+    v nadmořské výšce 1 180 metrů, zhruba osm set metrů od horní stanice
+    lanovky Špindlerův Mlýn — Svatý Petr. Adresou spadá pod Přední Labskou,
+    část Špindlerova Mlýna. Polohu z webu potvrzuje i mapová databáze
+    OpenStreetMap, která ale objekt vede pod jménem Chata na Pláni; držíme
+    se tvaru Bouda Na Pláni, jak se objekt jmenuje sám, a německého jména
+    Planurbaude, které web také uvádí.
+  - >-
+    Historie je tu vyprávěná odvážně a je fér říct, odkud pochází: obojí
+    níže nese jen vlastní web boudy. Ten píše, že boudu postavili Rennerové
+    už v roce 1530 — byl by to nejstarší letopočet, jaký zatím u krkonošských
+    bud vedeme, a právě proto ho nevydáváme za doložený, dokud ho nepotvrdí
+    nezávislý pramen. A dál: v březnu 1944 se tu podle webu sešli odpůrci
+    nacismu včetně plukovníka hraběte Clause von Stauffenberga — web mluví
+    o setkání s jeho rodinou a dodává, že zde byly domluveny detaily
+    atentátu na Adolfa Hitlera. Tvrzení o domlouvání detailů atentátu je
+    silné a nezávislé doložení k němu nemáme — berte celé vyprávění jako
+    podání provozovatele, dokud neřekneme jinak.
+  - >-
+    Charakter dnešního provozu je důležité pochopit předem: podle toho, jak
+    se bouda sama prezentuje, tu klasická restaurace s obsluhou není —
+    stravování je samoobslužné. Bouda nabízí pronájem dvou-
+    a třílůžkových pokojů, k tomu čtyřlůžkový a pětilůžkový pokoj, a hosté
+    si vaří sami ve společné, podle webu plně vybavené velkokapacitní
+    kuchyni. Ve společenských prostorech — jídelně a denní místnosti —
+    funguje bar s teplými a studenými nápoji a lehkým občerstvením. Kolik
+    lůžek bouda přesně má, neuvádíme: vlastní web mluví o kapacitě až 53
+    osob, oficiální web Špindlerova Mlýna o padesáti, a mezi čísly
+    nevybíráme.
+  - >-
+    Pro kolemjdoucího turistu je podstatná jedna nejistota: jestli bar
+    obslouží i hosty, kteří v boudě nespí, žádný z pramenů neříká. Poloha
+    kousek od horní stanice lanovky k zastavení svádí — a právě proto to
+    odmítáme domýšlet. Před cestou s plánem na občerstvení doporučujeme
+    zavolat.
+  - >-
+    Údaje na téhle stránce pocházejí z webu boudy, který jsme načetli
+    27. července 2026, z oficiálního webu Špindlerova Mlýna a z mapové
+    databáze OpenStreetMap; redakce je zatím neověřila vlastním dotazem ani
+    návštěvou. Historické letopočty nesou jen vlastní prezentaci boudy
+    a čekají na nezávislé doložení.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/1/10/Bouda_na_Pl%C3%A1ni.jpg
+    alt: Bouda Na Pláni na Přední Planině v Krkonoších
+    typ: soucasna
+    autor: Semipepino
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Bouda_na_Pl%C3%A1ni.jpg
+    prevzatoDne: '2026-07-27'
+    overeni:
+      source: >-
+        Wikimedia Commons — DATA-02 sklizeň, export z 2026-07-27; 76 m od
+        chaty (geosearch), popis souboru jmenuje boudu („Bouda na Pláni leží
+        v Krkonoších. V roce 1944 zde plukovník Claus von Stauffenberg…" —
+        popis přebírá vyprávění webu boudy, pro výběr fotky je podstatné
+        ztotožnění objektu, ne obsah tvrzení); 4032×2272, licence CC BY-SA
+        4.0 z licenčního síta DATA-02; redakční výběr 27. 7. 2026 nad
+        exportem — objekt i licenci na stránce souboru potvrdí očima
+        redakce (Michal)
+      verified: false # oční kontrola objektu i licence na stránce souboru = Michal — pak přepnout
+      checked: '2026-07-27'
+
+zdroje:
+  - popis: >-
+      Web boudy boudanaplani.com — poloha, výška 1 180 m, GPS, pokoje
+      a kapacita „až 53 osob", komunitní kuchyň, bar, kontakty, historie
+      (1530 Rennerové, Planurbaude, březen 1944 Stauffenberg); web objektu,
+      načteno 27. 7. 2026, verified:false
+    url: https://www.boudanaplani.com/
+  - popis: >-
+      Oficiální web Špindlerova Mlýna spindleruv-mlyn.com — kapacita 50 osob
+      (rozpor s webem boudy); sekundární zdroj, rešerše 26. 7. 2026,
+      verified:false. POZOR: přímé URL stránky boudy z rešerše nemáme —
+      odkaz vede na portál, detail dohledat (DATA-04)
+    url: https://www.spindleruv-mlyn.com/
+  - popis: OpenStreetMap (GPS objektu, jméno „Chata na Pláni"; ODbL)
+    url: https://www.openstreetmap.org/way/225909476
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/chata-na-plani.yaml (DATA-01, OSM)
+  27. 7. 2026 — fronta DATA-27 (Tier 4 silná, č. 2 „⭐"). Web boudy načten
+  přímo 27. 7. 2026 (WebFetch prošel) — kontakty/kapacita/pokoje/historie
+  z něj, checked 2026-07-27.
+
+  ✅ IDENTITA POTVRZENA: GPS webu 50.7027842N, 15.6253642E ≈ OSM (~35 m —
+  přepočteno auditem 27. 7., původní odhad ~20 m byl chybný);
+  primární název dle webu „Bouda Na Pláni", OSM tvar „Chata na Pláni"
+  v aliasech (návrh z DATA-03 splněn).
+
+  ⚠ KLÍČ ZAŘAZENÍ: bar s lehkým občerstvením (web) + turistická minulost
+  (DATA-25). Komu bar slouží, web neříká — přiznáno v próze i overeni.
+  CHARAKTER: stravování samoobslužné (komunitní kuchyň, pronájem pokojů) —
+  poctivě v próze, typObcerstveni: bufet jako nejbližší hodnota číselníku.
+  typ: obsluhovana VĚDOMĚ — bouda má provozovatele a personál (bar,
+  pronájem), samoobslužný je jen způsob stravování; útulna by značila
+  neobsluhovaný objekt. Kdyby taxonomie někdy dostala jemnější typ,
+  přehodnotit.
+
+  ⚠ ROK 1530 a STAUFFENBERG 1944: obojí nese JEN web boudy — důsledně
+  připsáno („podle webu boudy"), v próze výslovná výhrada u atentátu
+  (silné tvrzení bez nezávislého dokladu). rokVzniku 1530 zapsán s
+  komentářem (vzor 1717 Lyžařská, 1784 Erlebachova — připsaný letopočet).
+
+  ⚠ ROZPOR kapacita: „až 53 osob" (web) × 50 (spindleruv-mlyn.com) →
+  NEVYPLNĚNA, próza rozsah přiznává. Druhý telefon +420 737 237 115
+  veden jen v overeniProvoz.
+
+  K dotažení (DATA-04, verified:true): obsluha baru pro kolemjdoucí
+  (klíčová otázka), kapacita (53×50), sezóna/otvírací doba (web neuvádí),
+  nezávislé doložení 1530 a validace vyprávění o 1944 (regionální
+  literatura — např. Kulturní památky Krkonoš / muzeum KRNAP).

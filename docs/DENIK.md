@@ -11,6 +11,68 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 2: fronta DATA-27 otevřena — Jelení Louky, Na Pláni a Helena povýšeny (52 profilů)
+
+**Zadání Michala:** „muzes pokracovat ted.“
+
+**Hotovo:**
+
+**Z fronty povyšování DATA-27 povýšena první trojice „silných“ — Chata
+Jelení Louky, Bouda Na Pláni a Bouda Helena. Korpus má 52 publikovaných
+profilů.** Ruční běh dovolil WebFetch: weby Na Pláně a Heleny načteny přímo
+(checked 2026-07-27) — Helena potvrdila klíčovou větu o neubytovaných
+(„…nabízíme pro neubytované hosty telefonickou rezervaci do 20:00…“, 70
+míst) i adresu Černý Důl 183; Na Pláni dala kontakty, výšku 1180 m, GPS
+(shoda s OSM ~35 m = potvrzená identita „Chata na Pláni“ = „Bouda Na
+Pláni“) a doslovné znění historek. **jelenilouky.cz měl 27. 7. PROŠLÝ
+certifikát** (nový nález — třída „zanedbaný web“ jako Výrovka/Richtrovy);
+profil stojí na citacích rešerše z 26. 7. + Kudy z nudy (načteno dnes,
+telefon +420 499 896 212 v dvojshodě KzN × OSM, adresa čp. 77).
+
+**Poctivost drží:** rok 1530 (Na Pláni) i vyprávění o Stauffenbergovi
+z března 1944 jsou důsledně připsané webu boudy (próza: „berte celé
+vyprávění jako podání provozovatele“); 1530 by byl nejstarší letopočet
+korpusu (další je 1623) — proto nevydáván za doložený. Kapacity Na Pláně
+(53×50) a Heleny (28×23×20!) nevyplněny, rozpory v próze. Helena je
+adresní exponát DATA-20 (Černý Důl × Lučiny/Pec) — do dotazu DATA-20
+přidat. Jelení Louky: hospůdka „občerstvit i nasytit po celý den“ (web
+i KzN), věta o neubytovaných chybí — přiznáno; kapacita 40 jen
+z HotelyPenziony.cz (jediný zdroj, přiznáno). Hero: Na Pláni (76 m,
+Semipepino), Helena (34 m, ŠJů — čp. 183 na fotce = adresa z webu, silné
+ztotožnění); Jelení Louky BEZ hero (kandidát čp. 76 je sousední usedlost
+— adresa chaty je čp. 77; zbytek kandidátů jsou kuriózně snímky Země
+z ISS).
+
+**Konvence auditu se znovu vyplatila:** nezávislý průchod (subagent)
+vrátil „NENÍ připraven“ u všech tří a **25 nálezů** (2 vysoké: presupozice
+„co chata kolemjdoucímu nabízí“ u nedoloženého; „mezi čísly nevybíráme“
+u Heleny, zatímco pole výšku neslo; + mj. domyšlený překlad
+„Zehgrundbauden = boudy v Zeeho dole“, ~20 m místo ~33 m u GPS shody,
+neoznačený redakční superlativ). Vše opraveno před commitem; homepage-URL
+tří katalogových zdrojů přiznány v popisech jako „detail dohledat“.
+
+**Měření:** kontrola zelená (validator CHYB 0 na 52 souborech, audit-mech
+0, kolize 0, fixtura 4/4); ban-scan 140 → **146** (+6 = přesně vzor
+„OpenStreetMap/redakce neověřila“ v závěrečných odstavcích tří nových
+profilů — dokumentovaný falešný poplach, žádná nová třída); seed 52 chat
+idempotentně; int **216/216**; render všech tří profilů i katalogu 200
+(dev server + obsahová kontrola frází). Master aktualizován (52/33/31)
+vč. křížové kontroly souborů: 35 kandidátů bez hlavičky POVÝŠENO = 33
+tierových + 2 ruční z 26. 7. (Poštovna, Modrokamenná — do tierů zařadit
+při revizi, poznámka v masteru).
+
+**Příště:** pokračovat frontou — U Kotle (klíč doslovně splněn), Amor,
+Husova bouda, Smetánka, Srebrny Potok… (zbývá 12 silných + 6 s výhradou).
+U Kotle má od Michala 20. 7. „zařadit hraničně, potvrdí nad profilem“ —
+při povýšení mu profil ukázat.
+
+**Otázky pro Michala:** žádná nová naléhavá — trvá oční kontrola licencí
+hero (dnes +2: Na Pláni, Helena) a k DATA-20 přibyl třetí adresní exponát
+(Helena). Poznámka: profily Na Pláně a Heleny čerpají z webů načtených
+dnes — kdyby ses chtěl mrknout očima, odkazy jsou ve zdrojích profilů.
+
+---
+
 ## 2026-07-27 — pokračování: Michal klikl na DATA-02 → fulltext sklizeň, +7 hero (32/49)
 
 **Zadání Michala:** „spustil jsem data-02, az to dobehne, muzes pokracovat."

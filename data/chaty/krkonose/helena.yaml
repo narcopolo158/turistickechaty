@@ -1,0 +1,255 @@
+# Bouda Helena — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026,
+# z fronty DATA-27 (Tier 4, silný materiál č. 3). Web objektu načten přímo
+# 27. 7. 2026 (WebFetch prošel). KLÍČ ZAŘAZENÍ SPLNĚN DOSLOVNOU VĚTOU z webu:
+# „…nabízíme pro neubytované hosty telefonickou rezervaci do 20:00 hodin…".
+# ADRESNÍ EXPONÁT DATA-20: adresa Černý Důl 183, ale bouda stojí v enklávě
+# Lučiny, kterou prameny řadí i k Peci pod Sněžkou — Kudy z nudy na
+# nesrovnalost samo upozorňuje; Commons (ŠJů) řadí Lučiny čp. 183 pod Černý
+# Důl. Vše verified:false — redakce neověřila vlastním dotazem ani návštěvou.
+
+nazev: Bouda Helena
+slug: helena
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+aliasy:
+  - nazev: Hotel Bouda Helena
+    poznamka: obchodní název dle webu objektu (tři hvězdy)
+  - nazev: Chata Helena
+    poznamka: dřívější označení dle serveru Treking.cz
+  - nazev: Helenenbaude
+    poznamka: původní německý název dle serveru Treking.cz
+  - nazev: Helena
+    poznamka: tvar dle OpenStreetMap
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Restaurace nabízí podle webu objektu neubytovaným hostům telefonickou
+      rezervaci místa do 20 hodin — vzácně výslovná věta o obsluze
+      kolemjdoucích
+    kategorie: gastro
+    zdroj: hotel-bouda-helena.cz (web objektu, načteno 2026-07-27, verified:false)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# obec z adresy webu (Černý Důl 183) — POZOR, poštovní pramen (DATA-20):
+# enklávu Lučiny řadí prameny i k Peci pod Sněžkou; nesrovnalost přiznána
+# v próze, rozhodne RÚIAN/obecní úřad (DATA-04).
+lat: 50.6699409
+lng: 15.7302024
+vyska: 1115
+obec: Černý Důl
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/893979789 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška dle webu objektu (načteno 2026-07-27): „v nadmořské výšce 1.115m";
+    ROZPOR: ceskehory.cz i treking.cz uvádějí 1 100 m (rešerše 2026-07-26) —
+    publikována hodnota z webu objektu, rozpor přiznán v próze. Poloha dle
+    webu objektu, doslova: „Hotel Bouda Helena*** se nachází v krásném
+    prostředí východních Krkonoš" (opora pro „východní Krkonoše" v próze).
+    Adresa dle webu objektu: „Černý Důl 183, 543 44". ADRESNÍ NESROVNALOST
+    (exponát DATA-20): bouda stojí v enklávě Lučiny — Kudy z nudy na rozpor
+    adresy (Černý Důl) a lokality (Lučiny/Pec pod Sněžkou) samo upozorňuje;
+    nezávislý signál pro Černý Důl: Wikimedia Commons (ŠJů) popisuje
+    čp. 183 jako „Černý Důl, Lučiny". Commons (ŠJů, květen 2023) zároveň
+    řadí do Lučin i čp. 215 Pražskou boudu a čp. 182 Slovanku — opora pro
+    větu prózy o dalších stavbách enklávy. Web objektu + sekundární zdroje,
+    verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# `kapacita` ZÁMĚRNĚ NEVYPLNĚNA — TŘI různá čísla: 28 (web objektu) ×
+# 23 (ceskehory.cz) × 20 (treking.cz, 10×2). Nedomýšlet, rozsah nese próza.
+nocleh: ano
+pokoje:
+  - typ: Pokoj Standard pro 2 osoby (25 m²)
+  - typ: Pokoj Deluxe pro 3 osoby (27 m²)
+  - typ: Apartmán pro 4 osoby (50 m²)
+overeniNocleh:
+  source: >-
+    Web objektu (načteno 2026-07-27): „Počet lůžek: 28", pokoje „Standard"
+    (2 osoby, 25 m²), „Deluxe" (3 osoby, 27 m²), „Apartmán" (4 osoby,
+    50 m²). ROZPOR KAPACITY VE TŘECH: 28 (web objektu) × 23 (ceskehory.cz)
+    × 20 (treking.cz — „10×2"; oba rešerše 2026-07-26) — pole proto vědomě
+    NEVYPLNĚNO, rozsah přiznává próza. Verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    KLÍČ ZAŘAZENÍ SPLNĚN doslovnou větou z webu objektu (načteno
+    2026-07-27): „Milí hosté, pro Váš kvalitnější prožitek v naší
+    restauraci nabízíme pro neubytované hosty telefonickou rezervaci do
+    20:00 hodin, (mimo ubytovaných)." Tamtéž: „Míst na sezení
+    v restauraci: 70". Otvírací doba na webu NENÍ — nedomýšlet. Web
+    objektu, verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: +420 774 744 666
+  email: info@hotel-bouda-helena.cz
+  web: https://www.hotel-bouda-helena.cz/
+overeniProvoz:
+  source: >-
+    Kontakty z webu objektu (načteno 2026-07-27): telefony „+420 774 744
+    666" a „+420 605 100 659" (druhé číslo vedeno jen zde — pole nese
+    jedno), e-mail info@hotel-bouda-helena.cz. Web objektu, verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ZÁMĚRNĚ NEVYPLNĚN a milníky nejsou: jediná historická stopa je
+# posloupnost jmen Helenenbaude → Chata Helena → Bouda Helena dle
+# treking.cz, BEZ letopočtů. Web objektu historii nenese. Nedomýšlet.
+overeniHistorie:
+  source: >-
+    Treking.cz (rešerše 2026-07-26): posloupnost názvů Helenenbaude →
+    Chata Helena → Bouda Helena, BEZ letopočtů — vedeno v aliasech,
+    milníky proto nejsou. Web objektu (načteno 2026-07-27) historii
+    neuvádí. Rok vzniku nedoložen žádným pramenem. Verified:false
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda s restaurací v enklávě Lučiny, podle vlastního webu ve východních
+  Krkonoších ve výšce 1 115 metrů. Web výslovně počítá s neubytovanými
+  hosty: restaurace jim nabízí telefonickou rezervaci místa do osmi večer.
+  Podle serveru Treking.cz nesla původně jméno Helenenbaude; dnes se objekt
+  prezentuje jako Hotel Bouda Helena.
+text:
+  - >-
+    Bouda Helena stojí v enklávě Lučiny, podle vlastního webu v krásném
+    prostředí východních Krkonoš a v nadmořské výšce 1 115 metrů; servery
+    Českéhory.cz a Treking.cz uvádějí 1 100 metrů — držíme se údaje z webu
+    objektu a rozpor rozřešený nemáme. S adresou je
+    to tu zajímavější než obvykle: web uvádí Černý Důl 183, jenže Lučiny
+    jako lokalitu řadí část pramenů k Peci pod Sněžkou — na nesrovnalost
+    upozorňuje i portál Kudy z nudy. Fotografická dokumentace na Wikimedia
+    Commons přitom vede stavení čp. 183 pod Černým Dolem. Kam bouda
+    administrativně patří doopravdy, si necháme potvrdit; zatím se držíme
+    adresy z webu.
+  - >-
+    Jméno prošlo třemi podobami: původní Helenenbaude, později Chata Helena
+    a dnes Bouda Helena — tak posloupnost popisuje server Treking.cz,
+    bohužel bez letopočtů, takže časovou osu nevedeme. Sám objekt se dnes
+    prezentuje jako tříhvězdičkový Hotel Bouda Helena; charakterem jde
+    o boudu v enklávě — fotografická dokumentace na Wikimedia Commons řadí
+    do Lučin vedle Heleny (čp. 183) i Pražskou boudu (čp. 215) a Slovanku
+    (čp. 182), Helena tedy nestojí o samotě.
+  - >-
+    Pro kolemjdoucího turistu je Helena příjemná výjimka mezi boudami,
+    které jsme v Krkonoších zatím prošli: web nenechává otázku občerstvení
+    bez odpovědi, ale píše výslovně, že restaurace nabízí pro neubytované
+    hosty telefonickou rezervaci do osmi hodin večer. Jinými slovy —
+    s příchozími zvenku se tu počítá, jen si mají zavolat o místo.
+    Restaurace má podle webu sedmdesát míst na sezení. Otvírací dobu web
+    neuvádí, takže ji neuvádíme ani my.
+  - >-
+    Nocleh nabízí bouda ve třech typech pokojů: Standard pro dva na
+    pětadvaceti metrech, Deluxe pro tři a apartmán pro čtyři osoby na
+    padesáti metrech čtverečních. U celkového počtu lůžek se prameny
+    rozcházejí hned natřikrát — web objektu uvádí dvacet osm, servery
+    Českéhory.cz a Treking.cz pak třiadvacet, respektive dvacet — proto
+    číslo neuvádíme a čekáme na potvrzení od boudy.
+  - >-
+    Údaje na téhle stránce pocházejí z webu objektu, který jsme načetli
+    27. července 2026, a ze serverů Treking.cz, Českéhory.cz a portálu
+    Kudy z nudy; polohu vede OpenStreetMap. Redakce je zatím neověřila
+    vlastním dotazem ani návštěvou. Rozpory ve výšce, kapacitě i adresní
+    příslušnosti přiznáváme výše — než je rozřešíme, doporučujeme si
+    rezervaci místa v restauraci i nocleh domluvit telefonicky předem.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/c/ce/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena_%2801%29.jpg
+    alt: Bouda Helena (čp. 183) v enklávě Lučiny, Krkonoše
+    typ: soucasna
+    autor: ŠJů
+    licence: cc-by
+    licencePoznamka: CC BY 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._183,_bouda_Helena_(01).jpg
+    prevzatoDne: '2026-07-27'
+    overeni:
+      source: >-
+        Wikimedia Commons — DATA-02 sklizeň, export z 2026-07-27; 34 m od
+        chaty (geosearch), popis „Černý Důl , Trutnov District , Czechia .
+        House no. 183, Bouda Helena." — čp. 183 se SHODUJE s adresou z webu
+        objektu (silné ztotožnění); 2592×1944, licence CC BY 4.0
+        z licenčního síta DATA-02; redakční výběr 27. 7. 2026 nad exportem —
+        objekt i licenci na stránce souboru potvrdí očima redakce (Michal)
+      verified: false # oční kontrola objektu i licence na stránce souboru = Michal — pak přepnout
+      checked: '2026-07-27'
+
+zdroje:
+  - popis: >-
+      Web objektu hotel-bouda-helena.cz — doslovná věta o neubytovaných
+      hostech (telefonická rezervace do 20:00), 70 míst v restauraci,
+      výška 1 115 m, adresa Černý Důl 183, pokoje a počet lůžek 28,
+      kontakty; web objektu, načteno 27. 7. 2026, verified:false
+    url: https://www.hotel-bouda-helena.cz/
+  - popis: >-
+      Treking.cz — „Helena" (posloupnost názvů Helenenbaude → Chata Helena →
+      Bouda Helena bez letopočtů, výška 1 100 m, kapacita 20 lůžek);
+      sekundární zdroj, rešerše 26. 7. 2026, verified:false
+    url: https://www.treking.cz/chaty/helena.htm
+  - popis: >-
+      Českéhory.cz — výška 1 100 m, kapacita 23 lůžek; sekundární zdroj,
+      rešerše 26. 7. 2026, verified:false. POZOR: přímé URL stránky objektu
+      z rešerše nemáme — odkaz vede na server, detail dohledat (DATA-04)
+    url: https://www.ceskehory.cz/
+  - popis: >-
+      Kudy z nudy — upozornění na nesrovnalost adresy (Černý Důl) a lokality
+      (Lučiny/Pec pod Sněžkou); sekundární zdroj, rešerše 26. 7. 2026,
+      verified:false. POZOR: přímé URL stránky objektu z rešerše nemáme —
+      odkaz vede na portál, detail dohledat (DATA-04)
+    url: https://www.kudyznudy.cz/
+  - popis: >-
+      Wikimedia Commons (ŠJů, květen 2023) — fotografická dokumentace enklávy
+      Lučiny: čp. 183 bouda Helena, čp. 215 Pražská bouda, čp. 182 Slovanka,
+      vše popisem řazeno pod Černý Důl; nezávislý signál pro adresní otázku
+      i pro složení enklávy, verified:false
+    url: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._183,_bouda_Helena_(01).jpg
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+    url: https://www.openstreetmap.org/way/893979789
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/helena.yaml (DATA-01, OSM) 27. 7. 2026 —
+  fronta DATA-27 (Tier 4 silná, č. 3 „⭐ klíč splněn doslovně"). Web objektu
+  načten přímo 27. 7. 2026 (WebFetch prošel), checked 2026-07-27.
+
+  ✅ KLÍČ ZAŘAZENÍ SPLNĚN doslovnou větou z webu objektu: „Milí hosté, pro
+  Váš kvalitnější prožitek v naší restauraci nabízíme pro neubytované hosty
+  telefonickou rezervaci do 20:00 hodin, (mimo ubytovaných)." + 70 míst.
+
+  ⚠ ADRESNÍ EXPONÁT DATA-20 (vedle Lysečinské a Lesní): adresa Černý Důl
+  183 (web) × lokalita Lučiny, kterou prameny řadí i k Peci pod Sněžkou
+  (KzN na nesrovnalost samo upozorňuje). Nezávislý signál pro Černý Důl:
+  Commons/ŠJů popisuje čp. 183 „Černý Důl, Lučiny". obec: Černý Důl
+  z adresy, rozhodne RÚIAN/úřad (DATA-04) — přidat do dotazu DATA-20.
+
+  ⚠ ROZPOR kapacita VE TŘECH: 28 (web) × 23 (ceskehory) × 20 (treking
+  10×2) → NEVYPLNĚNA. ⚠ ROZPOR výška: 1115 (web) × 1100 (ceskehory,
+  treking) → publikováno 1115 (web objektu), přiznáno v próze.
+
+  ⚠ typ: obsluhovana ponechán (ne horsky-hotel), ačkoli se objekt
+  prezentuje jako „Hotel Bouda Helena***": charakterem jde o boudu
+  v enklávě (28 lůžek dle webu), ne resort typu Špindlerovka/Tetřevky;
+  obchodní název veden v aliasech. Kdyby Michal viděl jinak, přepnout.
+
+  ⚠ Otvírací doba restaurace na webu NENÍ — pole prázdné. Druhý telefon
+  +420 605 100 659 jen v overeniProvoz. Historie beze letopočtů (treking) —
+  milníky nevedeny, jen aliasy.
+
+  Hero: čp. 183 na fotce ŠJů se shoduje s adresou webu — silné ztotožnění.
+  Sousedství: Pražská bouda (profil máme) a Slovanka (kandidát, fronta
+  s výhradou) — až budou obě na webu, zvážit vzájemné odkazy v textech
+  (enkláva Lučiny).
+
+  K dotažení (DATA-04, verified:true): kapacita (28×23×20), otvírací doba
+  restaurace, administrativní obec (RÚIAN — exponát DATA-20), letopočty
+  k Helenenbaude (regionální literatura), sezóna.
