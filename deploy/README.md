@@ -35,10 +35,12 @@ port) a praxe restartu daemonu z deploy skriptu přes
 
 ## Postup ve Forge (staging `dev.turistickechaty.cz`)
 
-1. **Postgres na serveru:** ověřit `psql --version` / služby — laravelové
-   VPS bývají na MySQL. Když chybí → Forge recipe „Install PostgreSQL".
-   Založit DB `turistickechaty` + stejnojmenného uživatele (oddělené
-   heslo; nic sdíleného s hubem).
+1. **Postgres: JE — PostgreSQL 17** (ověřeno 27. 7. ve Forge → Storage;
+   výchozí databáze `forge`, přístup přes SSH tunel uživatele forge).
+   Zbývá jen Storage → Databases → **Add database**: jméno
+   `turistickechaty` + stejnojmenný uživatel s vlastním heslem (nic
+   sdíleného s hubem). POZOR: Forge zálohy DB jsou za Business plán —
+   noční dump si uděláme sami (INFRA-02).
 2. **New Site:** doména `dev.turistickechaty.cz`, typ **Static HTML /
    Nuxt.js / Next.js**, web directory `/`. Repo napojit na GitHub
    (Forge si vymění deploy key — PAT z chatu se NEpoužívá), větev `main`.
@@ -77,12 +79,16 @@ Fotky (public/znamky, media) jedou v repu, dokud nepřijde R2 (INFRA-02).
 
 ## Otevřené body (blokují start — odpovědi od Michala)
 
-1. Běží na pticore **Postgres**, nebo instalujeme recipe? (plán s tím počítá)
+1. ~~Postgres~~ **VYŘEŠENO 27. 7.: PostgreSQL 17 na serveru běží**
+   (Forge → Storage) — jen založit DB + uživatele.
 2. ~~RAM serveru~~ **VYŘEŠENO 27. 7.: 4 GB (Active24 panel) → build
    v GitHub Actions, na server jen artefakt (workflow připraven).**
-3. **Porty:** které porty hub už drží? (návrh 3017 staging / 3016 prod)
-4. **Node na serveru:** potřebujeme ≥ 20 (ideálně 22, jako ve vývoji) —
-   ověřit `node -v`, případně Forge recipe na novější Node.
+3. ~~Porty~~ **VYŘEŠENO 27. 7.: hub je čistě PHP** (jediný daemon =
+   `artisan horizon`, Forge → Processes) — na 3xxx nic neposlouchá,
+   **3017 staging / 3016 produkce platí**.
+4. **Node na serveru — POSLEDNÍ NEZNÁMÁ:** Forge UI (Runtime → Node.js)
+   verzi neukazuje, jen npm credentials → ověřit přes SSH: `node -v`
+   (potřebujeme ≥ 20, ideálně 22). Když bude starý/chybět, doinstalujeme.
 
 ## Co schválně NEřešíme teď
 
