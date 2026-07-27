@@ -12,6 +12,14 @@ name: 'DATA-28: 3D terén Krkonoš'
 
 on:
   workflow_dispatch:
+  # Auto-běh při změně generátoru nebo šablony: nová vrstva/vzhled se do
+  # modelu dostane bez ručního kliknutí. Commit z Actions se skriptu ani
+  # šablony nedotýká, takže se běh nezacyklí.
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/data28-3d-teren.ts'
+      - 'docs/experimenty/3d-teren-sablona.html'
 
 permissions:
   contents: write

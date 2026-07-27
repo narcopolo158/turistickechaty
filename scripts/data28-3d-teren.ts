@@ -192,6 +192,51 @@ const stahniTrasy = async (): Promise<{ trasy: Trasa[]; stavOsm: string }> => {
   return { trasy, stavOsm: telo.osm3s?.timestamp_osm_base?.slice(0, 10) ?? 'neznámý' }
 }
 
+// ── lanovky a vleky (aerialway) ─────────────────────────────────────────────
+type Lanovka = { typ: string; nazev: string | null; body: [number, number][] }
+const stahniLanovky = async (): Promise<Lanovka[]> => {
+  const dotaz = `[out:json][timeout:90];way["aerialway"~"^(cable_car|gondola|mixed_lift|chair_lift|drag_lift|t-bar|platter|magic_carpet)$"](${BBOX_STR});out geom;`
+  const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
+  const telo = JSON.parse(raw) as { elements?: { tags?: Record<string, string>; geometry?: { lat: number; lon: number }[] }[] }
+  const out: Lanovka[] = []
+  for (const w of telo.elements ?? []) {
+    const g = w.geometry
+    if (!g || g.length < 2) continue
+    out.push({
+      typ: w.tags?.aerialway ?? 'lift',
+      nazev: w.tags?.name ?? null,
+      body: g.map((b) => [Number(b.lat.toFixed(5)), Number(b.lon.toFixed(5))]),
+    })
+  }
+  return out
+}
+
+// ── řeky a pojmenované potoky (waterway) ────────────────────────────────────
+type Reka = { nazev: string | null; body: [number, number][] }
+const stahniReky = async (): Promise<Reka[]> => {
+  const dotaz = `[out:json][timeout:120];(way["waterway"="river"](${BBOX_STR});way["waterway"="stream"]["name"](${BBOX_STR}););out geom;`
+  const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
+  const telo = JSON.parse(raw) as { elements?: { tags?: Record<string, string>; geometry?: { lat: number; lon: number }[] }[] }
+  const out: Reka[] = []
+  for (const w of telo.elements ?? []) {
+    const g = w.geometry
+    if (!g || g.length < 2) continue
+    const body: [number, number][] = []
+    let posledni: { lat: number; lon: number } | null = null
+    for (const b of g) {
+      if (!posledni || vzdM(posledni.lat, posledni.lon, b.lat, b.lon) >= 50) {
+        body.push([Number(b.lat.toFixed(4)), Number(b.lon.toFixed(4))])
+        posledni = b
+      }
+    }
+    const konec = g[g.length - 1]
+    if (posledni && (posledni.lat !== konec.lat || posledni.lon !== konec.lon))
+      body.push([Number(konec.lat.toFixed(4)), Number(konec.lon.toFixed(4))])
+    if (body.length >= 2) out.push({ nazev: w.tags?.name ?? null, body })
+  }
+  return out
+}
+
 const stahniVrcholy = async (): Promise<Vrchol[]> => {
   const dotaz = `[out:json][timeout:60];node["natural"="peak"]["name"]["ele"](${BBOX_STR});out;`
   const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
@@ -244,6 +289,8 @@ const main = async () => {
   let grid: number[][]
   let trasy: Trasa[] = []
   let vrcholy: Vrchol[] = []
+  let lanovky: Lanovka[] = []
+  let reky: Reka[] = []
   let realDem = false
   let stavOsm: string | null = null
 
@@ -256,6 +303,12 @@ const main = async () => {
     trasy = t.trasy
     stavOsm = t.stavOsm
     console.log(`  tras (barevných úseků): ${trasy.length}, stav OSM ${stavOsm}`)
+    console.log('Lanovky: Overpass aerialway…')
+    lanovky = await stahniLanovky()
+    console.log(`  lanovek a vleků: ${lanovky.length}`)
+    console.log('Řeky: Overpass waterway…')
+    reky = await stahniReky()
+    console.log(`  řek a pojmenovaných potoků: ${reky.length}`)
     console.log('Vrcholy: Overpass natural=peak…')
     vrcholy = await stahniVrcholy()
     console.log(`  vrcholů ≥1100 m se jménem: ${vrcholy.length}`)
@@ -264,14 +317,14 @@ const main = async () => {
     grid = spocitejGridIdw(kotvy)
   }
 
-  const data = { bbox: BBOX, nx: NX, ny: NY, grid, chaty, prechody, trasy, vrcholy,
+  const data = { bbox: BBOX, nx: NX, ny: NY, grid, chaty, prechody, trasy, vrcholy, lanovky, reky,
     realDem, stavOsm, kotvy: kotvy.length,
     zdrojVysky: realDem ? 'Mapy.com Elevation API (výškový model)' : `ilustrační interpolace z výšek ${kotvy.length} objektů korpusu` }
   const dataJson = JSON.stringify(data)
   writeFileSync(join(ADR, '3d-teren-data.json'), dataJson)
   slozHtml(dataJson, kotvy.length)
   console.log(`Zapsáno: 3d-teren-data.json (${(dataJson.length / 1024).toFixed(0)} kB) + 3d-teren-krkonose.html`)
-  console.log(`realDem: ${realDem} | chaty: ${chaty.length} | trasy: ${trasy.length} | vrcholy: ${vrcholy.length}`)
+  console.log(`realDem: ${realDem} | chaty: ${chaty.length} | trasy: ${trasy.length} | lanovky: ${lanovky.length} | reky: ${reky.length} | vrcholy: ${vrcholy.length}`)
 }
 
 main().catch((chyba) => {
