@@ -63,7 +63,13 @@ port) a praxe restartu daemonu z deploy skriptu přes
    vložit obsah dle `env.production.example` s reálnými hodnotami
    (PAYLOAD_SECRET vygenerovat, heslo DB z kroku 1, PORT **3017** —
    NE 3000). Next.js čte `.env` z kořene situ, což je přesně soubor,
-   který Forge editor spravuje.
+   který Forge editor spravuje. POZOR (nález 27. 7. večer): mapa na
+   webu potřebuje `NEXT_PUBLIC_MAPY_API_KEY` **už při buildu v CI**
+   (NEXT_PUBLIC_* se peče do bundle) → GitHub secret `MAPY_WEB_KLIC`
+   s klíčem **omezeným na domény** dev.turistickechaty.cz +
+   turistickechaty.cz (serverový MAPY_API_KEY bez omezení do
+   prohlížeče NIKDY); bez něj se mapa poctivě nevykreslí a web nemá
+   rozcestník k živým profilům (vidět je jen Atlas zaniklých).
 4. **Nginx: ODPADÁ (27. 7.)** — typ Next.js si proxy na Server port
    3017 nastavil sám; `nginx-site.conf` zůstává jen jako reference
    (immutable cache statiky apod. případně doladíme později).

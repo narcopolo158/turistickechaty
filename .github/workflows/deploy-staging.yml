@@ -72,6 +72,12 @@ jobs:
       DATABASE_URL: postgres://user:heslo@localhost:5432/turistickechaty
       PAYLOAD_SECRET: ci-deploy-staging-build
       NEXT_PUBLIC_SERVER_URL: https://dev.turistickechaty.cz
+      # Klíč Mapy.com pro dlaždice v prohlížeči — NEXT_PUBLIC_* se peče do
+      # buildu, proto musí být tady (ne až na serveru). MUSÍ jít o klíč
+      # s doménovým omezením (dev.turistickechaty.cz + turistickechaty.cz),
+      # NIKDY serverový MAPY_API_KEY z DATA-06 (bez omezení). Bez secretu
+      # je hodnota prázdná a mapa se poctivě vůbec nevykreslí (MapaChat).
+      NEXT_PUBLIC_MAPY_API_KEY: ${{ secrets.MAPY_WEB_KLIC }}
     steps:
       - uses: actions/checkout@v4
 
