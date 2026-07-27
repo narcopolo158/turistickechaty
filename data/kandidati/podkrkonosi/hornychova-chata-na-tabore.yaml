@@ -1,0 +1,63 @@
+# Hornychova chata na Táboře (u Lomnice nad Popelkou) — KANDIDÁT
+# z rozhlédnutí DATA-29 (27. 7. 2026). PRVNÍ OBYVATEL kandidátské složky
+# podkrkonosi (systém přesahových oblastí — Raisova na Zvičině už je
+# publikovaná přesahově v Krkonoších, tohle je další objekt Krkonošského
+# podhůří). Vše verified: false. Nic nedomýšlet!
+#
+# POZOR — otevřená otázka klíče zařazení: bývalá turistická chata je dnes
+# vedena jako penzion. Vrcholová poloha s rozhlednou a doložená turistická
+# historie mluví PRO (Michalova výjimka pro objekty na samotě / výš /
+# na zajímavém místě), režim služeb je ale potřeba doložit.
+
+nazev: Hornychova chata na Táboře
+slug: hornychova-chata-na-tabore
+zeme: cz
+oblast: podkrkonosi
+typ: obsluhovana
+vyska: 678
+# BEZ GPS — doplnit z OSM před povýšením.
+overeniLokace:
+  source: >-
+    kudyznudy.cz (Tichánkova rozhledna na hoře Tábor…, čteno 27. 7.
+    2026): „Vrch Tábor (678 m.n.m.)" — dominanta okolí Lomnice nad
+    Popelkou; chata stojí na vrcholu pod rozhlednou.
+  verified: false
+  checked: '2026-07-27'
+overeniProvoz:
+  source: >-
+    kudyznudy.cz (čteno 27. 7. 2026): „pod rozhlednou se nacházela také
+    turistická chata, dnes penzion." — tj. objekt stojí a funguje, ale
+    režim (penzion vs. turistická chata s veřejným občerstvením) je
+    K DOLOŽENÍ. Jméno „Hornychova chata" nese titulek stránky města:
+    „Tichánkova rozhledna a Hornychova chata na Táboře" (web
+    lomnicenadpopelkou.cz — odsud nedostupný, ConnectTimeout; obsah
+    stránky NEčten, jen titulek z výsledků vyhledávání).
+  verified: false
+  checked: '2026-07-27'
+historie:
+  - rok: 1911
+    text: na vrcholu postavena Tichánkova rozhledna (nahradila starší konstrukci)
+overeniHistorie:
+  source: >-
+    kudyznudy.cz (čteno 27. 7. 2026): „Rozhledna, která v roce 1911
+    nahradila starší kontrukci, stojí na vrcholu kopce dodnes."
+    Historie samotné chaty (rok stavby, kdo ji postavil — Hornych?)
+    zatím NEdoložena — nedomýšlet, dohledat.
+  verified: false
+  checked: '2026-07-27'
+interniPoznamky: >-
+  KANDIDÁT z rozhlédnutí DATA-29 (27. 7. 2026), první ve složce
+  podkrkonosi. Tábor (678 m) u Lomnice nad Popelkou = Krkonošské
+  podhůří; poutní/výletní vrchol s rozhlednou z roku 1911.
+
+  K rozhodnutí dle klíče střediska/samoty: bývalá „turistická chata,
+  dnes penzion" (Kudy z nudy) — vrcholová samota s rozhlednou a
+  turistickou historií mluví pro zařazení, ALE musí se doložit: veřejné
+  občerstvení (restaurace pro kolemjdoucí?), historie chaty (kdy
+  postavena, vazba na Hornycha — jméno z titulku městského webu),
+  aktuální provozovatel. Město lomnicenadpopelkou.cz je odsud
+  nedostupné (timeout) → zkusit WebSearch výcucy, případně nechat
+  na Michalovi/telefonátu.
+
+  Publikace: až bude podkrkonoší mít ~5 objektů, vlastní sekce; do té
+  doby případně přesahově (precedent Raisova chata na Zvičině).

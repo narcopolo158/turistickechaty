@@ -1,0 +1,84 @@
+# Riegrova chata na Kozákově — KANDIDÁT z rozhlédnutí DATA-29 (27. 7. 2026,
+# večerní samostatná práce po spuštění stagingu). Druhý obyvatel kandidátské
+# složky cesky-raj (po Prachovu). Vše verified: false — na web povyšovat až
+# po dotažení. Nic nedomýšlet!
+#
+# SILNÝ KANDIDÁT: skutečná turistická chata KČT (vlastní ji odbor KČT
+# Semily), doložená historie od 1928, restaurace i ubytování v provozu,
+# vrchol Kozákova s rozhlednou. Přesně typ objektu, kvůli kterému systém
+# přesahových oblastí vznikl.
+
+nazev: Riegrova chata na Kozákově
+slug: riegrova-chata-na-kozakove
+zeme: cz
+oblast: cesky-raj
+typ: obsluhovana
+stav: v-provozu
+vyska: 744
+# BEZ GPS — doplnit z OSM/KČT před povýšením (Wikipedie má článek
+# „Riegrova chata (Kozákov)", ale je odsud nedostupná — cache-only).
+overeniLokace:
+  source: >-
+    kct-semily.cz (Kozákov – Riegrova chata, čteno 27. 7. 2026): „Tvoří
+    jihovýchodní konec Ještědsko-kozákovského hřebenu v nadmořské výšce
+    744 m." Vlastní web chata-kozakov.cz: „Riegrova chata se nachází
+    v nadmořské výšce 744 m na vrcholu Kozákova."
+  verified: false
+  checked: '2026-07-27'
+nocleh:
+  ano: true
+overeniNocleh:
+  source: >-
+    chata-kozakov.cz (čteno 27. 7. 2026): „Riegrova chata nabízí
+    ubytování v krásných pokojích s vlastním sociálním zařízením.
+    Ubytováváme na 2 a více nocí, na jednu noc po telefonické domluvě."
+    kct-semily.cz k rekonstrukci 2003: „V objektu je pořízen nový
+    interiér restaurace a 7 pokojů se sociálním vybavením."
+  verified: false
+  checked: '2026-07-27'
+obcerstveni:
+  ano: true
+overeniObcerstveni:
+  source: >-
+    chata-kozakov.cz (čteno 27. 7. 2026): „V Riegrově chatě je
+    restaurace, kde můžete ochutnat výborná jídla. Pro rychlé
+    občerstvení je ideální venkovní kiosek Kozáček."
+  verified: false
+  checked: '2026-07-27'
+historie:
+  - rok: 1926
+    text: zadání stavby staviteli Rudolfu Kousalovi ze Železného Brodu
+  - rok: 1928
+    text: slavnostní otevření Riegrovy turistické chaty (24. 6. 1928)
+  - rok: 1994
+    text: chatu kupuje a přebírá odbor KČT Semily (smlouva 28. 11., převzetí 1. 12.)
+  - rok: 2003
+    text: rekonstrukce — nový interiér restaurace a 7 pokojů se sociálním vybavením
+overeniHistorie:
+  source: >-
+    kct-semily.cz (Kozákov – Riegrova chata, čteno 27. 7. 2026): „14. 4.
+    1926 byla stavba zadána staviteli Rudolfu Kousalovi ze Železného
+    Brodu…", „24. 6. 1928 se konalo slavnostní otevření Reigrovy
+    turistické chaty na Kozákově.", „28. 11. 1994 byla podepsaná smlouva
+    o koupi chaty mezi Okresním úřadem v Semilech a KČT v Semilech.",
+    „1. 12. 1994 přebírá objekt odbor KČT Semily", „…postavená v roce
+    1928 a rekonstruovaná v roce 2003." Pojmenování podle Dr. Františka
+    Ladislava Riegra (semilský rodák) — dle KČT Semily vzešla chata ze
+    staré myšlenky Riegrova pomníku na Kozákově.
+  verified: false
+  checked: '2026-07-27'
+interniPoznamky: >-
+  KANDIDÁT z rozhlédnutí DATA-29 (27. 7. 2026). Vlastník = odbor KČT
+  Semily; vedle chaty šestiboká věž sloužící jako rozhledna, kterou
+  provozuje týž odbor (kct-semily.cz: „V těsné blízkosti je šestiboká
+  vojenská věž s plošinou, která slouží jako rozhledna provozovaná
+  odborem KČT Semily.").
+
+  Geomorfologicky Ještědsko-kozákovský hřbet, turisticky Český ráj
+  (tak se prezentuje chata i KČT) → oblast cesky-raj, ve shodě
+  s Prachovem.
+
+  K dotažení před povýšením: GPS (OSM/Wikipedie), obec (Chuchelna?
+  dle ubytovacích portálů), kapacita lůžek (7 pokojů — kolik lůžek?),
+  otvíračka restaurace, telefonát. Signály dalších pramenů:
+  ceskehory.cz (popis ubytování), kudyznudy.cz (rozhledna + chata).
