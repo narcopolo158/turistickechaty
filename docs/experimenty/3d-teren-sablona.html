@@ -34,6 +34,15 @@
   #pata{position:absolute;left:16px;bottom:12px;font-size:11px;color:#6a7186;
     background:rgba(250,246,238,.9);padding:5px 9px;border-radius:7px;max-width:660px}
   #hod{font-variant-numeric:tabular-nums;min-width:44px;display:inline-block;font-weight:600}
+  /* malovaný panoramatický režim: papírové zrno + plakátový titul */
+  #zrno{position:absolute;inset:0;pointer-events:none;display:none;mix-blend-mode:multiply;opacity:.5;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='.055'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
+  #titulPan{position:absolute;left:50%;top:14px;transform:translateX(-50%);text-align:center;
+    pointer-events:none;display:none}
+  #titulPan .t1{font:800 34px/1.05 "Space Grotesk",Inter,sans-serif;letter-spacing:.07em;
+    color:#26476b;text-shadow:0 1px 0 #fff,0 -1px 0 #fff,1px 0 0 #fff,-1px 0 0 #fff,0 2px 10px rgba(255,255,255,.8)}
+  #titulPan .t2{font:600 12px Inter,sans-serif;letter-spacing:.22em;color:#4a6a8c;text-transform:uppercase;
+    text-shadow:0 1px 0 rgba(255,255,255,.9)}
 </style>
 </head>
 <body>
@@ -49,11 +58,15 @@
       <button data-s="leto">léto</button><button data-s="podzim">podzim</button><button data-s="zima">zima</button>
     </div>
   </div>
+  <label><input type="checkbox" id="chkPan"> 🖼 <b>panoramatická mapa</b> <span style="color:#6a7186">(malovaný styl, stejná data)</span></label>
+  <label id="lblPop" style="display:none"><input type="checkbox" id="chkPop" checked> jména bud v mapě</label>
   <label><input type="checkbox" id="chkVrst" checked> vrstevnice (po 100 m)</label>
   <label id="lblTrasy" style="display:none"><input type="checkbox" id="chkTrasy" checked> značené trasy (OSM)</label>
   <label id="lblLan" style="display:none"><input type="checkbox" id="chkLan" checked> lanovky s kabinkami (OSM)</label>
   <label id="lblVlek" style="display:none"><input type="checkbox" id="chkVlek"> vleky skiareálů (OSM)</label>
   <label id="lblReky" style="display:none"><input type="checkbox" id="chkReky" checked> řeky (OSM)</label>
+  <label id="lblLes" style="display:none"><input type="checkbox" id="chkLes" checked> lesy — smrčky <span style="color:#6a7186">(stylizace ploch OSM)</span></label>
+  <label id="lblSjez" style="display:none"><input type="checkbox" id="chkSjez" checked> sjezdovky <span style="color:#6a7186">(OSM, jen v zimě)</span></label>
   <label id="lblVrch" style="display:none"><input type="checkbox" id="chkVrch" checked> vrcholy s popiskem</label>
   <label><input type="checkbox" id="chkMraky" checked> stíny mraků <span style="color:#6a7186">(dekorace)</span></label>
   <label><input type="checkbox" id="chkKand"> kandidáti (šedě)</label>
@@ -67,6 +80,8 @@
 </div>
 <div id="karta"></div>
 <div id="tip"></div>
+<div id="zrno"></div>
+<div id="titulPan"><div class="t1">KRKONOŠE</div><div class="t2">panoramatická mapa · experiment</div></div>
 <div id="pata">Polohy a výšky chat: vlastní data průvodce + OpenStreetMap (© přispěvatelé
 OpenStreetMap, ODbL). <span id="pataZdroj"></span> Mraky, hvězdy a světla oken jsou
 dekorace, ne data. turistickechaty.cz — experiment.</div>
@@ -112,6 +127,7 @@ function eleNa(lat,lng){ // bilineární interpolace — hrubá mřížka jinak 
 const ted=new Date();
 let HODINA=Math.min(23,Math.max(4,ted.getHours()+ted.getMinutes()/60));
 let SEZONA=[12,1,2,3].includes(ted.getMonth()+1)?'zima':([9,10,11].includes(ted.getMonth()+1)?'podzim':'leto');
+let PANORAMA=false; // malovaný styl dle klasických panoramatických map
 
 // ── světla ──
 const amb=new THREE.AmbientLight(0xffffff,.5); scene.add(amb);
@@ -150,9 +166,27 @@ function stavTeren(){
   geo.attributes.color.needsUpdate=true;
 }
 stavTeren();
-const teren=new THREE.Mesh(geo,new THREE.MeshLambertMaterial({vertexColors:true}));
+// dva materiály: běžný Lambert a „kvašový" toon (kvantované světlo jako na
+// ručně malovaných panoramatech — 5 jasových stupňů přes gradientMap)
+const matLambert=new THREE.MeshLambertMaterial({vertexColors:true});
+const matToon=(()=>{
+  const c=document.createElement('canvas'); c.width=6; c.height=1;
+  const g=c.getContext('2d'); const st=[.58,.7,.8,.9,.97,1];
+  for(let i=0;i<6;i++){const v=Math.round(st[i]*255);g.fillStyle='rgb('+v+','+v+','+v+')';g.fillRect(i,0,1,1);}
+  const t=new THREE.CanvasTexture(c); t.minFilter=t.magFilter=THREE.NearestFilter;
+  return new THREE.MeshToonMaterial({vertexColors:true,gradientMap:t});
+})();
+const teren=new THREE.Mesh(geo,matLambert);
 teren.castShadow=true; teren.receiveShadow=true;
 scene.add(teren);
+// malovaná obloha (svislý gradient) pro panoramatický režim
+const nebeTex=(()=>{
+  const c=document.createElement('canvas'); c.width=2; c.height=256;
+  const g=c.getContext('2d'); const gr=g.createLinearGradient(0,0,0,256);
+  gr.addColorStop(0,'#6FA8D8'); gr.addColorStop(.55,'#BFDCF0'); gr.addColorStop(.8,'#E8F2F8'); gr.addColorStop(1,'#F3EFE2');
+  g.fillStyle=gr; g.fillRect(0,0,2,256);
+  const t=new THREE.CanvasTexture(c); t.minFilter=THREE.LinearFilter; return t;
+})();
 
 // ── diorama sokl ──
 const soklGrp=new THREE.Group(); scene.add(soklGrp);
@@ -223,6 +257,23 @@ function textSprite(txt,vyskaPx){
   const tx=new THREE.CanvasTexture(c); tx.minFilter=THREE.LinearFilter;
   const s=new THREE.Sprite(new THREE.SpriteMaterial({map:tx,depthTest:false}));
   s.scale.set(c.width/55,c.height/55,1); return s;
+}
+// popisek s bílým halo (styl popisků na malovaných panoramatech)
+function popisSprite(txt,fs,barva){
+  fs=fs||26;
+  const c=document.createElement('canvas'); const g=c.getContext('2d');
+  g.font='700 '+fs+'px Inter,sans-serif';
+  const w=Math.ceil(g.measureText(txt).width);
+  c.width=w+16; c.height=fs+14;
+  const q=c.getContext('2d'); q.font='700 '+fs+'px Inter,sans-serif';
+  q.lineJoin='round'; q.lineWidth=Math.max(5,fs*.22); q.strokeStyle='rgba(255,255,255,.92)';
+  q.strokeText(txt,8,fs+3); q.fillStyle=barva||'#2b3247'; q.fillText(txt,8,fs+3);
+  const tx=new THREE.CanvasTexture(c); tx.minFilter=THREE.LinearFilter;
+  const s=new THREE.Sprite(new THREE.SpriteMaterial({map:tx,depthTest:false,transparent:true}));
+  s.scale.set(c.width/58,c.height/58,1);
+  s.userData.px={w:c.width,h:c.height};
+  s.userData.zaklad=s.scale.clone(); // pro perspektivní tlumení velikosti
+  return s;
 }
 
 // ── chaty ──
@@ -418,7 +469,7 @@ function stavVrcholy(){
     const kuzel=new THREE.Mesh(new THREE.ConeGeometry(.08,.24,4),mat);
     const x=sx(v.lng), z=-sy(v.lat), y=zOf(v.ele);
     kuzel.position.set(x,y+.12,z); vrchGrp.add(kuzel);
-    const sp=textSprite(v.n+' '+v.ele,24); sp.position.set(x,y+.8,z); vrchGrp.add(sp);
+    const sp=popisSprite(v.n+' '+v.ele,24,'#26476b'); sp.position.set(x,y+.8,z); vrchGrp.add(sp);
   }
 }
 
@@ -438,13 +489,283 @@ function stavPrechody(){
   }
 }
 
+// ── panoramatický (malovaný) režim ──
+// Předloha: klasické ručně malované panoramatické mapy středisek — trasy a
+// řeky jako plné stuhy, boudy jako domečky s barevnou střechou, jména přímo
+// v mapě, kvašové stínování, atmosférická dálka. Stejná data, jiný kabát.
+function ribbonGeo(polylines,sirka,yOff){
+  const V=[],I=[]; let base=0;
+  for(const body of polylines){
+    let usek=[]; const useky=[];
+    for(const [la,lo] of body){
+      if(la<D.bbox.latMin||la>D.bbox.latMax||lo<D.bbox.lngMin||lo>D.bbox.lngMax){
+        if(usek.length>1)useky.push(usek); usek=[]; continue;
+      }
+      usek.push([sx(lo),zOf(eleNa(la,lo))+yOff,-sy(la)]);
+    }
+    if(usek.length>1)useky.push(usek);
+    for(const u of useky){
+      for(let i=0;i<u.length;i++){
+        const p=u[i], a=u[Math.max(0,i-1)], b=u[Math.min(u.length-1,i+1)];
+        let dx=b[0]-a[0], dz=b[2]-a[2];
+        const dl=Math.hypot(dx,dz)||1; dx/=dl; dz/=dl;
+        const px=-dz*sirka/2, pz=dx*sirka/2;
+        V.push(p[0]+px,p[1],p[2]+pz, p[0]-px,p[1],p[2]-pz);
+      }
+      for(let i=0;i<u.length-1;i++){
+        const a=base+i*2; I.push(a,a+1,a+2, a+1,a+3,a+2);
+      }
+      base+=u.length*2;
+    }
+  }
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.Float32BufferAttribute(V,3));
+  g.setIndex(I); g.computeVertexNormals(); return g;
+}
+const trasyRib=new THREE.Group(); trasyRib.visible=false; scene.add(trasyRib);
+const rekyRib=new THREE.Group(); rekyRib.visible=false; scene.add(rekyRib);
+let ribbonyOk=false;
+function stavRibbony(){
+  trasyRib.clear(); rekyRib.clear();
+  const proridit=body=>body.length<5?body:body.filter((_,i)=>i%2===0||i===body.length-1);
+  if(D.trasy&&D.trasy.length){
+    const dle={};
+    for(const t of D.trasy){(dle[t.barva]=dle[t.barva]||[]).push(proridit(t.body));}
+    for(const k in dle){
+      trasyRib.add(new THREE.Mesh(ribbonGeo(dle[k],.05,.034),
+        new THREE.MeshBasicMaterial({color:BARVA_TRAS[k]||BARVA_TRAS.cervena,transparent:true,opacity:.9,side:THREE.DoubleSide})));
+    }
+  }
+  if(D.reky&&D.reky.length){
+    // potoky decentně — malované mapy nechávají vodě vedlejší roli
+    rekyRib.add(new THREE.Mesh(ribbonGeo(D.reky.map(r=>proridit(r.body)),.03,.026),
+      new THREE.MeshBasicMaterial({color:0x7FB3D8,transparent:true,opacity:.7,side:THREE.DoubleSide})));
+  }
+  ribbonyOk=true;
+}
+// domečky: bílé stěny + sedlová střecha barvou kategorie + komín
+function prismGeo(w,d,h){
+  const x=w/2,z=d/2;
+  const v=[-x,0,-z,-x,h,0,-x,0,z,  x,0,-z,x,0,z,x,h,0,
+    -x,0,-z,x,0,-z,x,h,0,  -x,0,-z,x,h,0,-x,h,0,
+    -x,0,z,-x,h,0,x,h,0,  -x,0,z,x,h,0,x,0,z];
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.Float32BufferAttribute(v,3));
+  g.computeVertexNormals(); return g;
+}
+const domGrp=new THREE.Group(); domGrp.visible=false; scene.add(domGrp);
+let domInst=null, domMapa=[];
+function stavDomecky(){
+  domGrp.clear(); domMapa=[]; domInst=null;
+  const vidit=piny.filter(p=>p.visible);
+  if(!vidit.length)return;
+  // schválně přehnané měřítko — na malovaných mapách jsou boudy vidět z dálky
+  const geoS=new THREE.BoxGeometry(.3,.13,.21); geoS.translate(0,.065,0);
+  const steny=new THREE.InstancedMesh(geoS,new THREE.MeshLambertMaterial({color:0xf7f2e6}),vidit.length);
+  steny.castShadow=true;
+  const geoR=prismGeo(.36,.26,.14); geoR.translate(0,.13,0);
+  const geoKom=new THREE.BoxGeometry(.045,.09,.045); geoKom.translate(.08,.23,.03);
+  const kat=ch=>!ch.pub?0x9aa1b5:(ch.typ==='horsky-hotel'?0x1B6E9E:(ch.stav&&ch.stav!=='v-provozu'?0x70757f:0xC23524));
+  const dle=new Map();
+  vidit.forEach((g,i)=>{const k=kat(g.userData);(dle.get(k)||dle.set(k,[]).get(k)).push(i);});
+  const m4=new THREE.Matrix4(), q=new THREE.Quaternion(), eul=new THREE.Euler(),
+        sc1=new THREE.Vector3(1,1,1), pv=new THREE.Vector3();
+  const mat=i=>{const g=vidit[i]; eul.set(0,(i%7-3)*.16,0); q.setFromEuler(eul);
+    pv.copy(g.position); m4.compose(pv,q,sc1); return m4;};
+  vidit.forEach((g,i)=>steny.setMatrixAt(i,mat(i)));
+  steny.userData.mapa=vidit;
+  domGrp.add(steny); domInst=steny; domMapa=vidit;
+  for(const [barva,idx] of dle){
+    const im=new THREE.InstancedMesh(geoR,new THREE.MeshLambertMaterial({color:barva,side:THREE.DoubleSide}),idx.length);
+    im.castShadow=true;
+    idx.forEach((gi,j)=>im.setMatrixAt(j,mat(gi)));
+    im.userData.mapa=idx.map(gi=>vidit[gi]);
+    domGrp.add(im);
+    const ik=new THREE.InstancedMesh(geoKom,new THREE.MeshLambertMaterial({color:0x5b616f}),idx.length);
+    idx.forEach((gi,j)=>ik.setMatrixAt(j,mat(gi)));
+    ik.userData.mapa=idx.map(gi=>vidit[gi]);
+    domGrp.add(ik);
+  }
+}
+// lesy: stylizované smrčky rozmístěné v lesních plochách OSM (rastr maska).
+// Je to KABÁT plochy, ne jednotlivé stromy; paseky/díry se nevykreslují.
+const lesGrp=new THREE.Group(); lesGrp.visible=false; scene.add(lesGrp);
+let lesOk=false;
+function stavLes(){
+  lesGrp.clear(); lesOk=true;
+  if(!D.lesy||!D.lesy.length)return;
+  const cw=480,chh=288;
+  const c=document.createElement('canvas'); c.width=cw; c.height=chh;
+  const g=c.getContext('2d');
+  g.fillStyle='#000'; g.fillRect(0,0,cw,chh); g.fillStyle='#fff';
+  for(const ring of D.lesy){
+    g.beginPath();
+    for(let i=0;i<ring.length;i++){
+      const x=(ring[i][1]-D.bbox.lngMin)/(D.bbox.lngMax-D.bbox.lngMin)*cw;
+      const y=(1-(ring[i][0]-D.bbox.latMin)/(D.bbox.latMax-D.bbox.latMin))*chh;
+      i?g.lineTo(x,y):g.moveTo(x,y);
+    }
+    g.closePath(); g.fill();
+  }
+  const maska=g.getImageData(0,0,cw,chh).data;
+  const jeLes=(la,lo)=>{
+    const x=Math.floor((lo-D.bbox.lngMin)/(D.bbox.lngMax-D.bbox.lngMin)*cw);
+    const y=Math.floor((1-(la-D.bbox.latMin)/(D.bbox.latMax-D.bbox.latMin))*chh);
+    return x>=0&&y>=0&&x<cw&&y<chh&&maska[(y*cw+x)*4]>127;
+  };
+  let seed=7; const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+  const body=[];
+  const krokLat=(D.bbox.latMax-D.bbox.latMin)/(NY*1.35);
+  const krokLng=(D.bbox.lngMax-D.bbox.lngMin)/(NX*1.35);
+  for(let la=D.bbox.latMin;la<=D.bbox.latMax;la+=krokLat)
+    for(let lo=D.bbox.lngMin;lo<=D.bbox.lngMax;lo+=krokLng){
+      const jla=la+(rnd()-.5)*krokLat*1.3, jlo=lo+(rnd()-.5)*krokLng*1.3;
+      if(!jeLes(jla,jlo))continue;
+      const e=eleNa(jla,jlo);
+      if(e>1350)continue; // horní hranice lesa — výš už jen kosodřevina
+      body.push([sx(jlo),zOf(e),-sy(jla),rnd()]);
+    }
+  if(!body.length)return;
+  while(body.length>45000)for(let i=body.length-1;i>=0;i-=2)body.splice(i,1); // výkonová pojistka
+  const geo=new THREE.ConeGeometry(.05,.16,5); geo.translate(0,.08,0);
+  const im=new THREE.InstancedMesh(geo,
+    new THREE.MeshLambertMaterial({color:0xffffff}),body.length);
+  const m4=new THREE.Matrix4(),q=new THREE.Quaternion(),pv=new THREE.Vector3(),sc=new THREE.Vector3();
+  for(let i=0;i<body.length;i++){
+    const b=body[i], s=.7+b[3]*.7;
+    pv.set(b[0],b[1],b[2]); sc.set(s,s+b[3]*.35,s);
+    m4.compose(pv,q,sc); im.setMatrixAt(i,m4);
+  }
+  im.userData.rnds=body.map(b=>b[3]);
+  lesGrp.add(im); lesGrp.userData.im=im;
+  obarvSmrcky();
+}
+function obarvSmrcky(){
+  const im=lesGrp.userData.im; if(!im)return;
+  const cb=new THREE.Color();
+  const rnds=im.userData.rnds;
+  for(let i=0;i<rnds.length;i++){
+    const r=rnds[i];
+    if(SEZONA==='zima')cb.setHSL(.36+(r-.5)*.02,.14+(r-.5)*.06,.3+(r-.5)*.07);
+    else if(SEZONA==='podzim')cb.setHSL(.24+(r-.5)*.06,.32+(r-.5)*.1,.26+(r-.5)*.06);
+    else cb.setHSL(.33+(r-.5)*.03,.34+(r-.5)*.1,.25+(r-.5)*.06);
+    im.setColorAt(i,cb);
+  }
+  if(im.instanceColor)im.instanceColor.needsUpdate=true;
+}
+// sjezdovky: bílý koridor s barevným lemem dle obtížnosti (jen zimní plakát)
+const sjezGrp=new THREE.Group(); sjezGrp.visible=false; scene.add(sjezGrp);
+let sjezOk=false;
+function stavSjezdovky(){
+  sjezGrp.clear(); sjezOk=true;
+  if(!D.sjezdovky||!D.sjezdovky.length)return;
+  const barvaObt=o=>/novice|easy/.test(o||'')?0x3F8FD2:(/advanced|expert/.test(o||'')?0x30343e:0xD23F2F);
+  const dle={};
+  for(const s of D.sjezdovky){const k=barvaObt(s.obtiznost);(dle[k]=dle[k]||[]).push(s.body);}
+  for(const k in dle){
+    sjezGrp.add(new THREE.Mesh(ribbonGeo(dle[k],.11,.028),
+      new THREE.MeshBasicMaterial({color:+k,transparent:true,opacity:.55,side:THREE.DoubleSide})));
+    sjezGrp.add(new THREE.Mesh(ribbonGeo(dle[k],.075,.03),
+      new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:.92,side:THREE.DoubleSide})));
+  }
+}
+// jména bud přímo v mapě + automatické proředění (nepřekrývat se)
+const popGrp=new THREE.Group(); popGrp.visible=false; scene.add(popGrp);
+let popisky=[];
+function stavPopisky(){
+  popGrp.clear(); popisky=[];
+  for(const g of piny){
+    if(!g.userData.pub)continue;
+    const s=popisSprite(g.userData.n,25,'#2b3247');
+    s.position.set(g.position.x,g.position.y+.36,g.position.z);
+    s.userData.pin=g; popGrp.add(s); popisky.push(s);
+  }
+  kamPred.identity();
+}
+const _v3=new THREE.Vector3();
+function boxNa(s,pxNaUnit){
+  _v3.copy(s.position).project(cam);
+  if(_v3.z>1||_v3.x<-1.15||_v3.x>1.15||_v3.y<-1.15||_v3.y>1.15)return null;
+  const d=cam.position.distanceTo(s.position);
+  const w=s.scale.x*pxNaUnit/d, h=s.scale.y*pxNaUnit/d;
+  const cxp=(_v3.x+1)/2*W(), cyp=(1-_v3.y)/2*H();
+  return {x1:cxp-w/2,x2:cxp+w/2,y1:cyp-h/2,y2:cyp+h/2};
+}
+function tlumVelikost(s){
+  // popisek se přibližováním zvětšuje jen mírně (jinak při zoomu zakryje mapu)
+  if(!s.userData.zaklad)return;
+  const d=cam.position.distanceTo(s.position);
+  s.scale.copy(s.userData.zaklad).multiplyScalar(Math.max(.2,Math.pow(Math.max(3,d)/48,.8)));
+}
+function declutter(){
+  const pxNaUnit=H()/(2*Math.tan(cam.fov*Math.PI/360));
+  const prijate=[];
+  if(vrchGrp.visible)for(const o of vrchGrp.children){
+    if(!o.isSprite)continue;
+    if(PANORAMA)tlumVelikost(o);
+    const b=boxNa(o,pxNaUnit);
+    if(!b){o.visible=false;continue}
+    const kol=prijate.some(p=>!(b.x1>p.x2||b.x2<p.x1||b.y1>p.y2||b.y2<p.y1));
+    o.visible=!kol; if(!kol)prijate.push(b);
+  }
+  const kand=popisky.map(s=>({s,d:cam.position.distanceTo(s.position)})).sort((a,b)=>a.d-b.d);
+  for(const {s}of kand){
+    tlumVelikost(s);
+    const b=boxNa(s,pxNaUnit);
+    if(!b){s.visible=false;continue}
+    const kolize=prijate.some(p=>!(b.x1>p.x2||b.x2<p.x1||b.y1>p.y2||b.y2<p.y1));
+    s.visible=!kolize; if(!kolize)prijate.push(b);
+  }
+}
+let kamPred=new THREE.Matrix4(), declT=0;
+// přepínač režimu: kabát + kamera (nízký telefoto pohled od jihu jako na plakátech)
+let ROTX_MIN=.12, ROTX_MAX=1.35;
+function zapniPanorama(on){
+  PANORAMA=on;
+  teren.material=on?matToon:matLambert;
+  if(on){
+    if(!ribbonyOk)stavRibbony();
+    if(!domMapa.length)stavDomecky();
+    if(!popisky.length)stavPopisky();
+    if(!lesOk)stavLes();
+    if(!sjezOk)stavSjezdovky();
+    $('chkVrst').checked=false;
+    HODINA=10.5; $('rngHod').value=HODINA;
+    cam.fov=34; ROTX_MIN=.2; ROTX_MAX=.78;
+    rotY=0; rotX=.31; dist=Math.min(92,SIRKA); cx=0; cz=0; LOOKY=2.5; cil=null;
+  } else {
+    cam.fov=48; ROTX_MIN=.12; ROTX_MAX=1.35;
+    dist=30; rotY=-.45; rotX=.55; cx=0; cz=0; LOOKY=1.1; cil=null;
+    for(const o of vrchGrp.children)if(o.isSprite&&o.userData.zaklad){o.scale.copy(o.userData.zaklad);o.visible=true;}
+  }
+  cam.updateProjectionMatrix(); poziceKam();
+  document.getElementById('zrno').style.display=on?'block':'none';
+  document.getElementById('titulPan').style.display=on?'block':'none';
+  document.getElementById('lblPop').style.display=on?'flex':'none';
+  syncVid(); osvetli();
+}
+function syncVid(){
+  const t=!!(D.trasy&&D.trasy.length)&&$('chkTrasy').checked;
+  trasyGrp.visible=t&&!PANORAMA; trasyRib.visible=t&&PANORAMA;
+  const r=!!(D.reky&&D.reky.length)&&$('chkReky').checked;
+  rekyGrp.visible=r&&!PANORAMA; rekyRib.visible=r&&PANORAMA;
+  pinGrp.visible=!PANORAMA; domGrp.visible=PANORAMA;
+  popGrp.visible=PANORAMA&&$('chkPop').checked;
+  vrstGrp.visible=$('chkVrst').checked;
+  lesGrp.visible=PANORAMA&&!!(D.lesy&&D.lesy.length)&&$('chkLes').checked;
+  sjezGrp.visible=PANORAMA&&SEZONA==='zima'&&!!(D.sjezdovky&&D.sjezdovky.length)&&$('chkSjez').checked;
+  // stíny mraků na zimním „plakátu" špiní sníh — mimo malovanou zimu dle checkboxu
+  mrakGrp.visible=$('chkMraky').checked&&!(PANORAMA&&SEZONA==='zima');
+}
+
 // ── prostředí: slunce, obloha, noc ──
 function osvetli(){
   const h=HODINA;
   const vych=5.2, zap=20.8; // letní rozsah; zjednodušená dráha
   const t=(h-vych)/(zap-vych);
   const denni=t>0&&t<1;
-  const el=denni?Math.sin(t*Math.PI)*1.05:0; // max ~60°
+  let el=denni?Math.sin(t*Math.PI)*1.05:0; // max ~60°
+  if(PANORAMA&&denni)el=el*.55+.13; // malovaný styl: nižší boční světlo po celý den
   const az=Math.PI*(0.08+t*0.84); // V→Z
   const R=120;
   sun.position.set(Math.cos(az)*R*Math.cos(el), Math.sin(el)*R, -Math.sin(az)*R*Math.cos(el)*.6);
@@ -454,27 +775,39 @@ function osvetli(){
   const teplo=1-Math.min(1,soumrak*1.15);
   sun.color.setHSL(0.09+0.03*(1-teplo),0.55*teplo+0.12,0.62+0.13*(1-teplo*.5));
   amb.intensity=denni?(0.32+0.3*soumrak):0.16;
+  if(PANORAMA&&denni){
+    // stíny do modra (Niehues styl): chladný ambient + o chlup silnější slunce
+    amb.color.setHex(SEZONA==='zima'?0xa9c3e8:0xc8d6ea);
+    sun.intensity+=.18; amb.intensity=Math.max(.3,amb.intensity-.04);
+  } else amb.color.setHex(0xffffff);
   mesic.intensity=denni?0:0.34;
   const den=new THREE.Color(0xFAF6EE), vecer=new THREE.Color(0xf0cfae), noc=new THREE.Color(0x141a2a);
   let bg;
   if(!denni) bg=noc;
   else if(soumrak<1) bg=vecer.clone().lerp(den,soumrak);
   else bg=den;
-  scene.background=bg;
-  scene.fog=new THREE.Fog(bg.getHex(),70,240);
+  if(PANORAMA&&denni){
+    // malovaná obloha + atmosférická dálka (světlé modré dálky jako na panoramatech)
+    scene.background=nebeTex;
+    scene.fog=new THREE.Fog(0xcfe3f2,42,200);
+    document.body.style.background='#F3EFE2';
+  } else {
+    scene.background=bg;
+    scene.fog=new THREE.Fog(bg.getHex(),70,240);
+    document.body.style.background='#'+bg.getHexString();
+  }
   hvezdy.material.opacity=denni?0:.9;
   const svetla=denni?0:1;
   for(const s of svetlaBud.children) s.material.opacity=svetla*.95;
-  document.body.style.background='#'+bg.getHexString();
   document.getElementById('hod').textContent=String(Math.floor(h)).padStart(2,'0')+':'+String(Math.round((h%1)*60)).padStart(2,'0');
 }
 
 // ── kamera: orbit + fly-to ──
-let dist=30, rotY=-0.45, rotX=0.55, cx=0, cz=0;
+let dist=30, rotY=-0.45, rotX=0.55, cx=0, cz=0, LOOKY=1.1;
 let cil=null; // fly-to animace
 function poziceKam(){
   cam.position.set(cx+dist*Math.sin(rotY)*Math.cos(rotX), dist*Math.sin(rotX), cz+dist*Math.cos(rotY)*Math.cos(rotX));
-  cam.lookAt(cx,1.1,cz);
+  cam.lookAt(cx,LOOKY,cz);
 }
 poziceKam();
 function flyTo(x,z){cil={cx:x,cz:z,dist:9,t:0,od:{cx,cz,dist}};}
@@ -496,7 +829,7 @@ addEventListener('pointermove',e=>{
   if(!drag)return;
   const dx=e.clientX-drag.x, dy=e.clientY-drag.y; drag.x=e.clientX; drag.y=e.clientY;
   if(drag.b===2||drag.shift){const s=dist/600; cx-=dx*s*Math.cos(rotY); cz-=dy*s*1.3;}
-  else {rotY-=dx*.005; rotX=Math.min(1.35,Math.max(.12,rotX+dy*.004));}
+  else {rotY-=dx*.005; rotX=Math.min(ROTX_MAX,Math.max(ROTX_MIN,rotX+dy*.004));}
   poziceKam();
 });
 ren.domElement.addEventListener('contextmenu',e=>e.preventDefault());
@@ -509,6 +842,16 @@ function pinHit(e){
   const r=ren.domElement.getBoundingClientRect();
   const v=new THREE.Vector2(((e.clientX-r.left)/r.width)*2-1,-((e.clientY-r.top)/r.height)*2+1);
   ray.setFromCamera(v,cam);
+  if(PANORAMA&&domInst){
+    // domeček (stěny/střecha/komín) — a když nic, klikatelná jsou i jména
+    let hit=ray.intersectObject(domGrp,true);
+    if(hit.length){
+      const o=hit[0].object;
+      if(o.userData.mapa&&hit[0].instanceId!=null)return o.userData.mapa[hit[0].instanceId];
+    }
+    hit=ray.intersectObjects(popisky.filter(s=>s.visible));
+    return hit.length?hit[0].object.userData.pin:null;
+  }
   const hit=ray.intersectObjects(piny.filter(p=>p.visible).map(p=>p.children[1]));
   return hit.length?hit[0].object.parent:null;
 }
@@ -542,19 +885,27 @@ for(const b of document.querySelectorAll('.sez button')){
   if(b.dataset.s===SEZONA)b.classList.add('akt');
   b.onclick=()=>{SEZONA=b.dataset.s;
     document.querySelectorAll('.sez button').forEach(x=>x.classList.toggle('akt',x===b));
-    stavTeren();stavVrstevnice();};
+    stavTeren();stavVrstevnice();osvetli();obarvSmrcky();syncVid();};
 }
-$('chkVrst').onchange=e=>vrstGrp.visible=e.target.checked;
-$('chkTrasy').onchange=e=>trasyGrp.visible=e.target.checked;
+$('chkVrst').onchange=syncVid;
+$('chkTrasy').onchange=syncVid;
 $('chkLan').onchange=e=>lanGrp.visible=e.target.checked;
 $('chkVlek').onchange=e=>vlekGrp.visible=e.target.checked;
-$('chkReky').onchange=e=>rekyGrp.visible=e.target.checked;
-$('chkVrch').onchange=e=>vrchGrp.visible=e.target.checked;
-$('chkMraky').onchange=e=>mrakGrp.visible=e.target.checked;
-$('chkKand').onchange=e=>{for(const g of piny) if(!g.userData.pub) g.visible=e.target.checked;};
+$('chkReky').onchange=syncVid;
+$('chkVrch').onchange=e=>{vrchGrp.visible=e.target.checked;kamPred.identity();};
+$('chkMraky').onchange=syncVid;
+$('chkKand').onchange=e=>{for(const g of piny) if(!g.userData.pub) g.visible=e.target.checked;
+  if(PANORAMA)stavDomecky(); else domMapa=[];};
 $('chkPrech').onchange=e=>prGrp.visible=e.target.checked;
+$('chkPan').onchange=e=>zapniPanorama(e.target.checked);
+$('chkPop').onchange=syncVid;
+$('chkLes').onchange=syncVid;
+$('chkSjez').onchange=syncVid;
 $('rngZ').oninput=e=>{ZEX=+e.target.value;$('zval').textContent=ZEX.toFixed(1)+'×';
-  stavTeren();stavVrstevnice();poziceChat();stavPrechody();stavTrasy();stavLanovky();stavReky();stavVrcholy();stavSokl();};
+  stavTeren();stavVrstevnice();poziceChat();stavPrechody();stavTrasy();stavLanovky();stavReky();stavVrcholy();stavSokl();
+  if(PANORAMA){stavRibbony();stavDomecky();stavPopisky();stavLes();stavSjezdovky();}
+  else {ribbonyOk=false;lesOk=false;sjezOk=false;domMapa=[];popisky=[];
+    trasyRib.clear();rekyRib.clear();domGrp.clear();popGrp.clear();lesGrp.clear();sjezGrp.clear();}};
 
 // ── sestavení scén ──
 stavTrasy(); stavLanovky(); stavReky(); stavVrcholy(); stavPrechody(); stavSokl();
@@ -562,7 +913,11 @@ if(D.trasy&&D.trasy.length)$('lblTrasy').style.display='flex'; else trasyGrp.vis
 if(D.lanovky&&D.lanovky.length){$('lblLan').style.display='flex';$('lblVlek').style.display='flex';} else {lanGrp.visible=false;vlekGrp.visible=false;}
 if(D.reky&&D.reky.length)$('lblReky').style.display='flex'; else rekyGrp.visible=false;
 if(D.vrcholy&&D.vrcholy.length)$('lblVrch').style.display='flex'; else vrchGrp.visible=false;
-osvetli();
+if(D.lesy&&D.lesy.length)$('lblLes').style.display='flex';
+if(D.sjezdovky&&D.sjezdovky.length)$('lblSjez').style.display='flex';
+if((D.lesy&&D.lesy.length)||(D.sjezdovky&&D.sjezdovky.length))
+  document.getElementById('pataZdroj').textContent+=' Lesy a sjezdovky: OpenStreetMap (zjednodušená stylizace ploch — smrčky nejsou jednotlivé stromy, paseky se nekreslí).';
+syncVid(); osvetli();
 
 addEventListener('resize',()=>{cam.aspect=W()/H();cam.updateProjectionMatrix();ren.setSize(W(),H())});
 let cas=performance.now();
@@ -572,6 +927,9 @@ let cas=performance.now();
   krokKamera(dt); krokKabinky(dt);
   for(const m of mrakGrp.children){m.position.x+=m.userData.v*dt; if(m.position.x>SIRKA/2+8)m.position.x=-SIRKA/2-8;}
   if(rekyMat)rekyMat.dashOffset=(rekyMat.dashOffset||0)-dt*.35;
+  declT+=dt;
+  if((popGrp.visible||vrchGrp.visible)&&declT>.35){declT=0;
+    if(!kamPred.equals(cam.matrixWorld)){kamPred.copy(cam.matrixWorld);declutter();}}
   ren.render(scene,cam);
 })();
 </script>

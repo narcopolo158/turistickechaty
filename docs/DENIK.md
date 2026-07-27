@@ -11,6 +11,50 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 10: 3D mapa dostala panoramatický (malovaný) režim dle Michalových předloh
+
+**Zadání Michala (s doslovným zněním):** „vymysli jak 3d mapu priblizit
+panoramatickym mapam v priloze" — 7 předloh: kanadské ručně malované
+panorama střediska (Niehues styl), letní malovaná mapa Pece pod Sněžkou
+s boudami-domečky, tři zimní malované mapy Rokytnice/„horské středisko",
+letecká fotomapa se zákresem tratí, staré malované panorama Špindlu.
+
+**Hotovo — nový přepínač „🖼 panoramatická mapa" v šabloně (stejná data,
+jiný kabát), vše lokální kompozice bez regenerace ostrých dat:**
+
+- **kvašové stínování**: MeshToonMaterial s 6stupňovým gradientem
+  (kvantované světlo jako malba); slunce v režimu drženo níž (boční
+  světlo), ambient do modra → modré stíny na sněhu jako na předlohách
+- **malovaná obloha** (svislý gradient) + atmosférická dálka (světlá
+  modrá mlha), papírové zrno přes celý obraz (SVG šum, multiply)
+- **trasy a řeky jako stuhy** (ribbon geometrie nad terénem, KČT barvy;
+  potoky schválně decentní), body prořeďované pro hladší tah
+- **boudy jako domečky** — bílé stěny, sedlová střecha (červená bouda /
+  modrá hotel / šedá mimo provoz či kandidát), komín; schválně přehnané
+  měřítko jako na malovaných mapách; klik na domeček i na JMÉNO
+- **jména bud přímo v mapě** se stínovým halo + automatické proředění
+  (screen-space kolize, přednost bližším; vrcholy mají prioritu) +
+  perspektivní tlumení velikosti (blízko se nezvětšují do obludnosti)
+- **plakátová kompozice**: nízký telefoto pohled od jihu (FOV 34),
+  omezený náklon, titul KRKONOŠE; vypnutí vrátí vše beze zbytku
+- **připraveno na lesy a sjezdovky**: data28 skript nově stahuje
+  landuse=forest/natural=wood (spojování ringů multipolygonů, decimace,
+  pojistka objemu) a piste:type=downhill (jen osové linie; polygonové
+  plochy se přiznaně vynechávají). Šablona už umí smrčky (InstancedMesh
+  v rastru lesní masky, sezónní barvy, strop 1350 m — nad ním kosodřevina,
+  výkonová pojistka 45 tisíc instancí) i bílé koridory s lemem obtížnosti
+  (jen zimní plakát). Ověřeno na SYNTETICKÝCH datech v /tmp — ostrá data
+  potřebují jeden klik na workflow data28 v Actions.
+
+Headless ověření: zapnutí/vypnutí režimu, léto/zima, klik na jméno →
+fly-to + karta (Bouda Růžohorky), 0 pageerrors. Náhledy:
+3d-teren-nahled-pan-{leto,zima,detail}.png. Poctivost: pata přiznává, že
+smrčky jsou stylizace ploch OSM (ne stromy) a paseky se nekreslí.
+
+**Příště:** Michal klikne Run workflow → lesy + sjezdovky naostro; pak
+zpět k frontě povyšování (zbývá 6 silných od konce: Sedmidolí, Jindřichův
+dům, Smetánka, Husova, Amor, U Kotle).
+
 ## 2026-07-27 — pokračování 9: třetí trojice od konce fronty — Náchodská, Na Lučinách, Betyna (58 profilů)
 
 **Zadání Michala:** „pokracuj" (samostatný režim trvá; otázky až po uzavření Krkonoš).

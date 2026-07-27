@@ -237,6 +237,102 @@ const stahniReky = async (): Promise<Reka[]> => {
   return out
 }
 
+// ── lesy (landuse=forest / natural=wood) — pro malovaný panoramatický režim ──
+// Šablona z nich rozmisťuje stylizované smrčky (instancovaně). Bereme vnější
+// obrysy; díry (paseky) se ve stylizaci nevykreslují — je to kabát, ne data.
+type Bod = { lat: number; lon: number }
+const spojRingy = (members: { role?: string; geometry?: Bod[] }[]): Bod[][] => {
+  const segs = members
+    .filter((m) => m.role !== 'inner' && m.geometry && m.geometry.length >= 2)
+    .map((m) => [...(m.geometry as Bod[])])
+  const ringy: Bod[][] = []
+  const klic = (b: Bod) => `${b.lat.toFixed(6)},${b.lon.toFixed(6)}`
+  while (segs.length) {
+    let ring = segs.shift() as Bod[]
+    let zmena = true
+    while (zmena && klic(ring[0]) !== klic(ring[ring.length - 1])) {
+      zmena = false
+      for (let i = 0; i < segs.length; i++) {
+        const s = segs[i]
+        if (klic(s[0]) === klic(ring[ring.length - 1])) { ring = ring.concat(s.slice(1)); segs.splice(i, 1); zmena = true; break }
+        if (klic(s[s.length - 1]) === klic(ring[ring.length - 1])) { ring = ring.concat([...s].reverse().slice(1)); segs.splice(i, 1); zmena = true; break }
+        if (klic(s[s.length - 1]) === klic(ring[0])) { ring = s.concat(ring.slice(1)); segs.splice(i, 1); zmena = true; break }
+        if (klic(s[0]) === klic(ring[0])) { ring = [...s].reverse().concat(ring.slice(1)); segs.splice(i, 1); zmena = true; break }
+      }
+    }
+    if (klic(ring[0]) === klic(ring[ring.length - 1]) && ring.length >= 4) ringy.push(ring)
+  }
+  return ringy
+}
+const plochaKm2 = (ring: Bod[]): number => {
+  let s = 0
+  for (let i = 0; i < ring.length - 1; i++) {
+    const a = ring[i], b = ring[i + 1]
+    const ax = a.lon * 111.32 * Math.cos((a.lat * Math.PI) / 180), ay = a.lat * 111.32
+    const bx = b.lon * 111.32 * Math.cos((b.lat * Math.PI) / 180), by = b.lat * 111.32
+    s += ax * by - bx * ay
+  }
+  return Math.abs(s) / 2
+}
+const decimujRing = (ring: Bod[], krokM: number): [number, number][] => {
+  const body: [number, number][] = []
+  let posledni: Bod | null = null
+  for (const b of ring) {
+    if (!posledni || vzdM(posledni.lat, posledni.lon, b.lat, b.lon) >= krokM) {
+      body.push([Number(b.lat.toFixed(4)), Number(b.lon.toFixed(4))])
+      posledni = b
+    }
+  }
+  const prvni = body[0], konec = body[body.length - 1]
+  if (prvni && konec && (prvni[0] !== konec[0] || prvni[1] !== konec[1])) body.push(prvni)
+  return body
+}
+const stahniLesy = async (): Promise<[number, number][][]> => {
+  const dotaz = `[out:json][timeout:180];(way["landuse"="forest"](${BBOX_STR});way["natural"="wood"](${BBOX_STR});relation["landuse"="forest"](${BBOX_STR});relation["natural"="wood"](${BBOX_STR}););out geom;`
+  const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
+  const telo = JSON.parse(raw) as { elements?: { type: string; geometry?: Bod[]; members?: { role?: string; geometry?: Bod[] }[] }[] }
+  const ringy: Bod[][] = []
+  for (const e of telo.elements ?? []) {
+    if (e.type === 'way' && e.geometry && e.geometry.length >= 4) ringy.push(e.geometry)
+    else if (e.type === 'relation' && e.members) ringy.push(...spojRingy(e.members))
+  }
+  let krok = 80
+  let out = ringy.filter((r) => plochaKm2(r) >= 0.02).map((r) => decimujRing(r, krok)).filter((r) => r.length >= 4)
+  let bodu = out.reduce((s, r) => s + r.length, 0)
+  while (bodu > 120_000 && krok < 640) {
+    krok *= 2
+    out = ringy.filter((r) => plochaKm2(r) >= 0.02).map((r) => decimujRing(r, krok)).filter((r) => r.length >= 4)
+    bodu = out.reduce((s, r) => s + r.length, 0)
+    console.log(`  lesy: příliš bodů, decimace zhrubena na ${krok} m → ${bodu} bodů`)
+  }
+  return out
+}
+
+// ── sjezdovky (piste:type=downhill) — bílé koridory zimního „plakátu" ───────
+type Sjezdovka = { obtiznost: string | null; body: [number, number][] }
+const stahniSjezdovky = async (): Promise<Sjezdovka[]> => {
+  const dotaz = `[out:json][timeout:90];way["piste:type"="downhill"](${BBOX_STR});out geom;`
+  const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
+  const telo = JSON.parse(raw) as { elements?: { tags?: Record<string, string>; geometry?: Bod[] }[] }
+  const out: Sjezdovka[] = []
+  let ploch = 0
+  for (const w of telo.elements ?? []) {
+    const g = w.geometry
+    if (!g || g.length < 2) continue
+    // polygonové sjezdovky (obrys plochy) zatím vynecháváme — ribbon po
+    // obvodu by lhal; centerline z plochy je úloha na později
+    const jePolygon = w.tags?.area === 'yes' ||
+      (g.length > 3 && g[0].lat === g[g.length - 1].lat && g[0].lon === g[g.length - 1].lon)
+    if (jePolygon) { ploch++; continue }
+    out.push({
+      obtiznost: w.tags?.['piste:difficulty'] ?? null,
+      body: g.map((b) => [Number(b.lat.toFixed(4)), Number(b.lon.toFixed(4))]),
+    })
+  }
+  if (ploch) console.log(`  sjezdovky: ${ploch} polygonových ploch vynecháno (jen osové linie)`)
+  return out
+}
+
 const stahniVrcholy = async (): Promise<Vrchol[]> => {
   const dotaz = `[out:json][timeout:60];node["natural"="peak"]["name"]["ele"](${BBOX_STR});out;`
   const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, dotaz)
@@ -291,6 +387,8 @@ const main = async () => {
   let vrcholy: Vrchol[] = []
   let lanovky: Lanovka[] = []
   let reky: Reka[] = []
+  let lesy: [number, number][][] = []
+  let sjezdovky: Sjezdovka[] = []
   let realDem = false
   let stavOsm: string | null = null
 
@@ -312,19 +410,26 @@ const main = async () => {
     console.log('Vrcholy: Overpass natural=peak…')
     vrcholy = await stahniVrcholy()
     console.log(`  vrcholů ≥1100 m se jménem: ${vrcholy.length}`)
+    console.log('Lesy: Overpass landuse=forest/natural=wood…')
+    lesy = await stahniLesy()
+    console.log(`  lesních obrysů: ${lesy.length} (${lesy.reduce((s, r) => s + r.length, 0)} bodů)`)
+    console.log('Sjezdovky: Overpass piste:type=downhill…')
+    sjezdovky = await stahniSjezdovky()
+    console.log(`  sjezdovek (osové linie): ${sjezdovky.length}`)
   } else {
     console.log(bezSite ? 'Vynucen běh bez sítě' : 'MAPY_API_KEY není v env', '→ ILUSTRAČNÍ reliéf (IDW z korpusu).')
     grid = spocitejGridIdw(kotvy)
   }
 
   const data = { bbox: BBOX, nx: NX, ny: NY, grid, chaty, prechody, trasy, vrcholy, lanovky, reky,
+    lesy, sjezdovky,
     realDem, stavOsm, kotvy: kotvy.length,
     zdrojVysky: realDem ? 'Mapy.com Elevation API (výškový model)' : `ilustrační interpolace z výšek ${kotvy.length} objektů korpusu` }
   const dataJson = JSON.stringify(data)
   writeFileSync(join(ADR, '3d-teren-data.json'), dataJson)
   slozHtml(dataJson, kotvy.length)
   console.log(`Zapsáno: 3d-teren-data.json (${(dataJson.length / 1024).toFixed(0)} kB) + 3d-teren-krkonose.html`)
-  console.log(`realDem: ${realDem} | chaty: ${chaty.length} | trasy: ${trasy.length} | lanovky: ${lanovky.length} | reky: ${reky.length} | vrcholy: ${vrcholy.length}`)
+  console.log(`realDem: ${realDem} | chaty: ${chaty.length} | trasy: ${trasy.length} | lanovky: ${lanovky.length} | reky: ${reky.length} | vrcholy: ${vrcholy.length} | lesy: ${lesy.length} | sjezdovky: ${sjezdovky.length}`)
 }
 
 main().catch((chyba) => {
