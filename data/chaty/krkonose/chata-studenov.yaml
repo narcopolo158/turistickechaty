@@ -1,0 +1,130 @@
+# Chata Studenov — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026
+# (fronta „s výhradou" DATA-27). Verdikt „penzion — nezařazovat" z 20. 7.
+# REVIDOVÁN: katalog vede objekt doslova jako „turistickou ubytovnu" —
+# nocleh pro turisty je turistická služba. Restaurace v areálu slouží jen
+# ubytovaným — profil to říká nahlas. Vše verified: false.
+
+nazev: Chata Studenov
+slug: chata-studenov
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). POZOR NA JMENOVCE: na Studenově
+# stojí i „Turistická chata - Studenov" (jiný objekt, u Rybínových bud) —
+# náš zápis je dle GPS ubytovna na vrcholku.
+lat: 50.7483559
+lng: 15.4474469
+vyska: 900
+obec: Rokytnice nad Jizerou
+overeniLokace:
+  source: >-
+    katalog České hory (ceskehory.cz, otevřeno 27. 7. 2026), doslova:
+    „Turistická ubytovna umístěna na vrcholku Studenova. Ideální poloha
+    pro výlety na hřebeny, do Rokytnice či Harrachova a okolí.";
+    „nadmořská výška: 900 m."; katalog objekt řadí pod Rokytnici nad
+    Jizerou. JMENOVEC: týž katalog vede i „Turistická chata - Studenov"
+    (u Rybínových bud) — jiný objekt, nezaměňovat; náš zápis dle GPS
+    odpovídá ubytovně na vrcholku. GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/29689152 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 72
+overeniNocleh:
+  source: >-
+    katalog České hory (ceskehory.cz, otevřeno 27. 7. 2026): „kapacita:
+    72 lůžek". Jediný pramen, provozovatelem nepotvrzeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni ZÁMĚRNĚ NEVYPLNĚNO: restaurace v druhém objektu areálu
+# slouží dle katalogu ubytovaným — veřejné občerstvení doloženo není.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    katalog České hory (ceskehory.cz, otevřeno 27. 7. 2026), doslova:
+    „V druhém objektu se nachází restaurace, kde se ubytovaní stravují,
+    jejíž součástí je bar." — formulace váže stravování na ubytované;
+    veřejné občerstvení doloženo není, číselník se nevyplňuje.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: prameny k historii mlčí.
+overeniHistorie:
+  source: >-
+    K historii objektu jsme v otevřených pramenech (katalog, přehled
+    serveru Treking; hledáno 20.–27. 7. 2026) nenašli jediný doložený
+    údaj — „hledali jsme a nenašli".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# kontakty NEVYPLNĚNY: vlastní web nedoložen (jen katalogy).
+overeniProvoz:
+  source: >-
+    aktivní záznam v katalogu České hory (otevřeno 27. 7. 2026); objekt
+    figuruje i v přehledu ubytování Krkonoš na serveru Treking (načteno
+    20. 7. 2026). Vlastní web nedoložen, provozovatel vlastním dotazem
+    neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Turistická ubytovna na vrcholku Studenova nad Rokytnicí nad Jizerou,
+  v devíti stech metrech a s dvaasedmdesáti lůžky. Restaurace s barem
+  ve vedlejším objektu patří podle katalogu ubytovaným — kolemjdoucí
+  s ní počítat nemůže. A pozor při hledání: na Studenově stojí i druhá,
+  menší chata podobného jména.
+text:
+  - >-
+    Chata Studenov stojí podle katalogu na vrcholku Studenova nad
+    Rokytnicí nad Jizerou v devíti stech metrech — „ideální poloha pro
+    výlety na hřebeny, do Rokytnice či Harrachova a okolí", jak píše
+    katalog doslova. Západní Krkonoše odtud má turista skutečně na
+    dosah.
+  - >-
+    Je to turistická ubytovna — tak ji katalog vede — se dvaasedmdesáti
+    lůžky, tedy dům stavěný na skupiny a levnější nocleh. Stravování
+    popisuje katalog větou, kterou přebíráme doslova: „V druhém objektu
+    se nachází restaurace, kde se ubytovaní stravují, jejíž součástí je
+    bar." Vaří se tu tedy ubytovaným; že by se najedl i turista jdoucí
+    kolem, doloženo není, a tak to netvrdíme.
+  - >-
+    Jedno upozornění na závěr: na Studenově stojí ještě druhý ubytovací
+    objekt podobného jména, menší chata u Rybínových bud. Náš zápis
+    patří ubytovně na vrcholku — při hledání či rezervaci se vyplatí
+    dát pozor, který z obou domů máte před sebou. O historii ubytovny
+    jsme zatím nenašli jediný doložený údaj.
+  - >-
+    Údaje pocházejí z katalogu České hory a z přehledu serveru Treking;
+    vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Katalog České hory — turistická ubytovna na vrcholku Studenova
+      (doslovné citace), 72 lůžek, 900 m, restaurace pro ubytované
+      (otevřeno 27. 7. 2026)
+    url: https://www.ceskehory.cz/ubytovani/chata-studenov-rokytnice-nad-jizerou.html
+  - popis: >-
+      Treking — přehled ubytování Krkonoš, objekt v tabulce (načteno
+      20. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/chata-studenov.yaml (DATA-01, OSM) 27. 7. 2026 z fronty „s výhradou" DATA-27 + spot-fetch České hory (všechny citace potvrzeny živě).
+  REVIZE VERDIKTU (do seznamu otázek pro Michala): 20. 7. „penzion — nezařazovat"; katalog vede objekt doslova jako „turistickou ubytovnu" → nocleh pro turisty je turistická služba, zařazeno s poctivou charakteristikou (restaurace jen ubytovaní — nahlas). Michal potvrdí.
+  JMENOVEC (DATA-17): „Turistická chata - Studenov" u Rybínových bud (týž katalog, ceskehory.cz/ubytovani/turisticka-chata-studenov-rokytnice-nad-jizerou.html) — jiný objekt; náš = ubytovna na vrcholku dle GPS. Próza nese opatrné upozornění.
+  K dotažení: vlastní web/kontakt (DATA-04), historie, komu přesně slouží bar, hero fotka.

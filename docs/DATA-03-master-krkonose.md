@@ -11,7 +11,7 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 
 ## Souhrn
 
-- **Publikováno:** 64 *(aktualizováno 27. 7. 2026 popáté — SILNÁ FRONTA DATA-27 DOJETA: U Kotle, Chata Amor a Husova bouda uzavírají všech 15 silných; zbývá 6 s výhradou)*
+- **Publikováno:** 68 *(aktualizováno 27. 7. 2026 pošesté — CELÁ FRONTA DATA-27 DOJETA: z „s výhradou" povýšeny Bouda Slovanka, Chata Studenov, Chata Zákoutí a Horská bouda Na Muldě; Novomísečná + Staromísečná DRŽENY na otázce Michala)*
 - **Kandidáti k doplnění:** 33 — z toho Tier 1 (známka + katalog) 0, Tier 2 (jen známka) 0, Tier 3 (jen katalog) 2 (**oba blokované otázkou na Michala:** Hrnčířské boudy = enkláva, ne objekt — rozpustit?; Raisova chata na Zvičině = Podkrkonoší — založit oblast?), Tier 4 (jen OSM) 31. *Křížová kontrola 27. 7. 2026: kandidátských souborů bez hlavičky POVÝŠENO je v `data/kandidati/krkonose/` **35** — rozdíl proti 33 jsou přesně dva ruční kandidáti založení 26. 7. (Poštovna na Sněžce, Modrokamenná bouda), kteří do tierové struktury zatím nejsou zařazení (Modrokamenná nese známkový spor 2640×2540, Poštovna známku č. 20 — oba by patřili nejspíš do Tier 2; zařadit při příští revizi tabulek).*
 - **Vyřazeno** (nezakládat): 10
 - Objektů se známkou: 35 · v ChatGPT katalogu: 42 · katalogových Krkonoš celkem: 42
@@ -143,6 +143,23 @@ rodina od 1994; KOREKCE: „2003 penzion" z triáže × „2003 domeček" na
 živém webu → milník nezapsán; „50 míst" jsou akce, ne lůžka). Zbývá
 6 s výhradou: Slovanka, Studenov, Zákoutí, Na Muldě, Novomísečná +
 Staromísečná.**
+
+**Postup fronty 27. 7. 2026 pošesté — CELÁ FRONTA DATA-27 DOJETA (64 → 68):
+z fronty „s výhradou" povýšeny Bouda Slovanka (skupinová rekreační bouda
+v Lučinách — charakter přiznán; 1120 × 1125 vnitřní rozpor katalogu,
+zapsáno 1120 dle shody s OSM; web nedostupný), Chata Studenov (verdikt
+„penzion" REVIDOVÁN — katalog vede doslova „turistickou ubytovnu"; 72
+lůžek, 900 m; restaurace jen ubytovaní — nahlas; JMENOVEC „Turistická
+chata - Studenov" u Rybínových bud odlišen), Chata Zákoutí (Vítkovice —
+jmenovec „V Zákoutí" Harrachov odlišen; 25 lůžek / 9 pokojů doloženo
+živě; výška 820 a „nově otevřená" z triáže NEpřevzaty — bez pramene;
+vlastní web mrtvý 404/410) a Horská bouda Na Muldě (třetí univerzitní
+objekt — UK FTVS; pronájem skupinám od 20 osob, veřejnosti neslouží —
+nahlas; 43/14 z živého webu FTVS; výška 1036 × 1000 nezapsána; bar
+z archivu nepřevzat). Novomísečná + Staromísečná DRŽENY (jediné
+z fronty): tenký materiál + otázka Michala jeden areál × dva zápisy.
+FRONTA DATA-27 UZAVŘENA — zbývá DATA-25 bod (a): 10 vyřazených novým
+klíčem, a uzavření Krkonoš.**
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |
 |---|---|---|---|---|

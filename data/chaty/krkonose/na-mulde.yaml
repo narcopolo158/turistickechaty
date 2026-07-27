@@ -1,0 +1,150 @@
+# Horská bouda Na Muldě — profil povýšen z kandidáta DATA-01 (OSM)
+# 27. 7. 2026 (fronta „s výhradou" DATA-27). Účelová bouda UK FTVS (vzor
+# Richtrovy/Patejdlova — DATA-25): pronajímá se skupinám, kolemjdoucí
+# veřejnosti neslouží a profil to říká nahlas. Vše verified: false.
+
+nazev: Horská bouda Na Muldě
+slug: na-mulde
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ZÁMĚRNĚ NEVYPLNĚNA: prameny
+# se rozcházejí (1036 m turistický server a webkamera × 1000 m archivní
+# katalogový zápis) — nerozhodujeme.
+lat: 50.6756374
+lng: 15.7275906
+obec: Pec pod Sněžkou # adresa „Pec pod Sněžkou 34" — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    vlastní web UK FTVS (ftvs.cuni.cz, otevřeno 27. 7. 2026): adresa Pec
+    pod Sněžkou 34; poloha s „nezapomenutelným výhledem na Sněžku"
+    (doslova). Výška: 1036 m (turistika.cz a stránka webkamery, triáž
+    DATA-27, 26. 7. 2026) × 1000 m (archivní zápis katalogu České hory
+    s varováním o stáří) — ROZPOR, výška se nezapisuje. GPS:
+    OpenStreetMap https://www.openstreetmap.org/node/5488661857 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    v terénu neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh je pronájmový: skupiny od 20 osob (menší jen na vyhlášené
+# termíny) — poznámka dle DATA-25 v próze.
+nocleh: ano
+kapacita: 43
+pokoje: 14
+overeniNocleh:
+  source: >-
+    vlastní web UK FTVS (ftvs.cuni.cz, otevřeno 27. 7. 2026), doslova:
+    „Bouda disponuje kapacitou 14 pokojů se základním vybavením",
+    kapacita 43 osob; „Chata je vhodná pro skupiny od 20 osob. Pro
+    rodiny či menší skupiny nabízíme speciální silvestrovské pobyty" —
+    nocleh se pronajímá skupinám, kolemjdoucí veřejnosti neslouží.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni ZÁMĚRNĚ NEVYPLNĚNO: kuchyně vaří ubytovaným skupinám
+# („dle penze"), veřejné občerstvení doloženo není.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    vlastní web UK FTVS (ftvs.cuni.cz, otevřeno 27. 7. 2026), doslova:
+    stravování „domácí kuchyně dle penze" — vaří se ubytovaným skupinám.
+    Bar zmiňoval jen archivní katalogový zápis (triáž DATA-27) —
+    nepřebírá se. Veřejné občerstvení doloženo není.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: web mluví o rekonstrukcích
+# a zachovaném původním charakteru — bez jediného letopočtu.
+overeniHistorie:
+  source: >-
+    vlastní web UK FTVS (ftvs.cuni.cz, otevřeno 27. 7. 2026), doslova:
+    „V minulosti prošla několika rekonstrukcemi, přičemž byl zachován
+    její původní charakter" — bez letopočtů. Nic dalšího jsme
+    v otevřených pramenech nenašli — „hledali jsme a nenašli".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: >-
+  v létě příjezd autem na vjezdové povolení, v zimě skútr nebo rolba
+  (vlastní web UK FTVS, otevřeno 27. 7. 2026)
+overeniPristup:
+  source: >-
+    vlastní web UK FTVS (ftvs.cuni.cz, otevřeno 27. 7. 2026), doslova:
+    „V letních měsících je k chatě možný příjezd autem (nutné zakoupit
+    vjezdové povolení), v zimě je přístup zajištěn pomocí skútru nebo
+    rolby".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.ftvs.cuni.cz/cs/sluzby/ubytovani-a-rekreacni-strediska/rekreacni-strediska/horska-bouda-na-mulde
+overeniProvoz:
+  source: >-
+    vlastní web UK FTVS živý (ftvs.cuni.cz, otevřeno 27. 7. 2026) —
+    aktivní nabídka pronájmů skupinám. Provozovatel: Fakulta tělesné
+    výchovy a sportu Univerzity Karlovy. Vlastním dotazem neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Účelová bouda Fakulty tělesné výchovy a sportu Univerzity Karlovy nad
+  Pecí pod Sněžkou, s výhledem na Sněžku a třiačtyřiceti lůžky ve
+  čtrnácti pokojích. Pronajímá se skupinám od dvaceti lidí — a proto
+  rovnou: kolemjdoucí turista tu nocleh ani občerstvení nenajde.
+text:
+  - >-
+    Horská bouda Na Muldě stojí nad Pecí pod Sněžkou u svahů, po nichž
+    jezdí vlek Mulda — a z boudy je podle vlastního webu fakulty
+    „nezapomenutelný výhled na Sněžku". Nadmořskou výšku neuvádíme:
+    turistický server měří 1036 metrů, starý katalogový zápis tisíc,
+    a než mezi nimi rozhodovat, necháváme pole prázdné.
+  - >-
+    Boudu vlastní a provozuje Fakulta tělesné výchovy a sportu
+    Univerzity Karlovy jako své rekreační středisko: čtrnáct pokojů se
+    základním vybavením, třiačtyřicet lůžek, domácí kuchyně podle
+    objednané penze. Pronajímá se skupinám od dvaceti lidí — menším
+    a rodinám jen na vyhlášené termíny, třeba silvestrovské pobyty.
+    Kolemjdoucí veřejnosti bouda neslouží, a proto to říkáme hned
+    v úvodu.
+  - >-
+    Přístup je horský i logisticky: v létě se k boudě dá vyjet autem na
+    vjezdové povolení, v zimě vozí hosty skútr nebo rolba. Z historie
+    web říká jen tolik, že dům prošel několika rekonstrukcemi a zachoval
+    si původní charakter — bez jediného letopočtu; jakmile se pramen
+    najde, doplníme ho.
+  - >-
+    Údaje pocházejí z vlastního webu fakulty; vlastním dotazem jsme
+    zatím neověřili nic. Souřadnice jsou z mapových dat OpenStreetMap
+    (© přispěvatelé OpenStreetMap, ODbL) a v terénu je nikdo
+    nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Vlastní web UK FTVS — kapacita 43 osob / 14 pokojů, pronájem
+      skupinám od 20 osob, kuchyně dle penze, příjezd, rekonstrukce bez
+      dat (otevřeno 27. 7. 2026)
+    url: https://www.ftvs.cuni.cz/cs/sluzby/ubytovani-a-rekreacni-strediska/rekreacni-strediska/horska-bouda-na-mulde
+  - popis: >-
+      Turistický server a stránka webkamery — výška 1036 m: rozpor
+      s archivním katalogovým zápisem 1000 m (triáž DATA-27, 26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/na-mulde.yaml (DATA-01, OSM) 27. 7. 2026 z fronty „s výhradou" DATA-27 + spot-fetch webu UK FTVS (živý, potvrdil kapacitu, režim pronájmů, příjezd; bar z archivního zápisu NEpřevzat).
+  NÁZEV dle provozovatele: „Horská bouda Na Muldě" (FTVS); OSM tag jen „Na Muldě"; katalogy vedou i „Bouda Mulda - FTVS UK".
+  REŽIM: účelová UK FTVS — třetí univerzitní objekt korpusu (vzor Richtrovy/Patejdlova); pronájem skupinám od 20 osob ≠ veřejná služba — próza říká nahlas.
+  WEBKAMERA: provozuje Humlnet (NE Horská služba — starší tvrzení kandidáta z DATA-03 neobstálo, opraveno triáží).
+  ROZPOR VÝŠKY: 1036 (turistika.cz + webkamera) × 1000 (archivní ceskehory) — nezapsáno.
+  Adresa „Pec pod Sněžkou 34" jen interně/v source (ban č. p. v próze).
+  K dotažení: výška, historie s letopočty, hero fotka.

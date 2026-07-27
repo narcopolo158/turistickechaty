@@ -1,0 +1,131 @@
+# Chata Zákoutí — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026
+# (fronta „s výhradou" DATA-27). Identita vyřešena: Vítkovice v Krkonoších
+# (jmenovec „Chata V Zákoutí" v Harrachově je JINÝ objekt). Vlastní web
+# mrtvý — profil stojí na katalogu a firemním zápisu. Vše verified: false.
+
+nazev: Chata Zákoutí
+slug: zakouti
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ZÁMĚRNĚ NEVYPLNĚNA: hodnota
+# 820 m z triáže se nepodařilo doložit živým pramenem — bez pramene
+# nezapisujeme.
+lat: 50.6894014
+lng: 15.552249
+obec: Vítkovice # adresa „Vítkovice 297" — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    katalog České hory (ceskehory.cz, popis objektu, otevřeno 27. 7.
+    2026) vede objekt pod Vítkovicemi v Krkonoších; adresa Vítkovice 297
+    (triáž DATA-27, 26. 7. 2026). POZOR NA JMENOVCE: „Chata V Zákoutí"
+    v Harrachově je JINÝ objekt — identita naší chaty vyřešena triáží
+    dle GPS a adresy. Výšku živé prameny nenesou (hodnota 820 m z triáže
+    bez dohledatelného pramene — nezapsána). GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/12587992255 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 25
+pokoje: 9
+overeniNocleh:
+  source: >-
+    firemní zápis na Firmy.cz (otevřeno 27. 7. 2026), doslova: „Ubytování
+    v srdci Krkonoš s celkovou kapacitou 25 lůžek." Katalog České hory
+    (otevřeno 27. 7. 2026), doslova: „klasická horská chata s devíti
+    pokoji se společným sociálním zařízením".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni ZÁMĚRNĚ NEVYPLNĚNO: snídaně/polopenze se dle znění
+# nastavují k pobytu — veřejné občerstvení doloženo není.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    firemní zápis na Firmy.cz (otevřeno 27. 7. 2026), doslova: „Nabízíme
+    možnost stravování které si nastavíte jak budete potřebovat,
+    snídaně, polopenze." — stravování se váže k pobytu; veřejné
+    občerstvení doloženo není, číselník se nevyplňuje.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: prameny k historii mlčí („nově
+# otevřená" z triáže bez roku a bez dohledatelného pramene — nepřebírá se).
+overeniHistorie:
+  source: >-
+    K historii chaty jsme v otevřených pramenech (katalog, firemní zápis;
+    hledáno 26.–27. 7. 2026) nenašli jediný doložený údaj — „hledali
+    jsme a nenašli".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# kontakty.web NEVYPLNĚN: chatazakouti.cz vrací 404 (kořen) i 410
+# (katalogová kopie) — mrtvý či přestěhovaný web.
+overeniProvoz:
+  source: >-
+    aktivní záznamy v katalogu České hory a na Firmy.cz (otevřeno 27. 7.
+    2026). Vlastní web chatazakouti.cz vrací 404, katalogová kopie 410
+    (27. 7. 2026) — web se nevede. Provozovatel vlastním dotazem
+    neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Klasická horská chata ve Vítkovicích v Krkonoších — devět pokojů se
+  společným sociálním zařízením a pětadvacet lůžek. Stravování se podle
+  firemního zápisu domlouvá k pobytu, snídaně nebo polopenze; a pozor,
+  Chata V Zákoutí v Harrachově je úplně jiný dům.
+text:
+  - >-
+    Chata Zákoutí stojí ve Vítkovicích v Krkonoších, v údolí pod
+    západními hřebeny. Nadmořskou výšku neuvádíme — živé prameny ji
+    nenesou a číslo bez pramene nepřebíráme. Hned na úvod také jedno
+    varování při hledání: „Chata V Zákoutí" v Harrachově je jiný objekt,
+    jména si jsou blízká, domy ne.
+  - >-
+    Katalog chatu popisuje doslova jako „klasickou horskou chatu
+    s devíti pokoji se společným sociálním zařízením" a firemní zápis
+    počítá pětadvacet lůžek — dům pro rodiny a menší skupiny, žádný
+    hotel. Stravování se podle téhož zápisu „nastavuje, jak budete
+    potřebovat" — snídaně, polopenze; vaří se tedy hostům k pobytu
+    a veřejné občerstvení pro kolemjdoucí doloženo není.
+  - >-
+    Vlastní web chaty je mrtvý — adresy z katalogů vracejí chybu — a tak
+    stavíme na katalogu a firemním zápisu. O historii domu jsme
+    v otevřených pramenech nenašli jediný doložený údaj; jakmile se
+    pramen objeví, nebo se provozovateli dovoláme, doplníme ho.
+  - >-
+    Údaje pocházejí z katalogu České hory a z firemního zápisu;
+    vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Katalog České hory — klasická horská chata s devíti pokoji
+      (doslovná citace), zařazení pod Vítkovice (otevřeno 27. 7. 2026)
+    url: https://www.ceskehory.cz/ubytovani/popis/chata-zakouti-vitkovice.html
+  - popis: >-
+      Firmy.cz — 25 lůžek, stravování snídaně/polopenze k pobytu
+      (otevřeno 27. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/zakouti.yaml (DATA-01, OSM) 27. 7. 2026 z fronty „s výhradou" DATA-27 + spot-fetche (České hory popis, Firmy.cz detail 13206803 — obě živě; hotel.cz kopie vrací 410).
+  IDENTITA (DATA-17): Vítkovice 297 — jmenovec „Chata V Zákoutí" Harrachov je jiný objekt; próza nese varování.
+  NEPŘEVZATO z triáže (bez dohledatelného pramene): výška 820 m, „nově otevřená" — obě jen v triážním digestu, živé stránky je nenesou.
+  WEB: chatazakouti.cz 404 (kořen i /kontakt dle katalogů), hotel.cz kopie 410 — hledat nový web / DATA-04 telefonát.
+  Adresa „Vítkovice 297" jen interně/v source (ban č. p. v próze).
+  K dotažení: výška, historie, web/kontakt, komu slouží kuchyně, hero fotka.

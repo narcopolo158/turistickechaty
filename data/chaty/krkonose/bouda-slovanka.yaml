@@ -1,0 +1,126 @@
+# Bouda Slovanka — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026
+# (fronta „s výhradou" DATA-27). Skupinová rekreační bouda v Lučinách —
+# charakter se přiznává; služba kolemjdoucím doložena není. Vše
+# verified: false — z katalogu, vlastním dotazem neověřeno.
+
+nazev: Bouda Slovanka
+slug: bouda-slovanka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška 1120: OSM tag i katalog;
+# druhá stránka téhož katalogu vede 1125 — drobný vnitřní rozpor přiznán.
+lat: 50.6704804
+lng: 15.7283689
+vyska: 1120
+obec: Černý Důl # adresa „Na Lučinách 182" — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    katalog České hory (ceskehory.cz, otevřeno 27. 7. 2026), doslova:
+    „Bouda leží na trase Pec pod Sněžkou-Černá Hora-Černý Důl.";
+    „nadmořská výška: 1120 m."; adresa Na Lučinách 182, Černý Důl —
+    bouda stojí v enklávě Lučiny. Druhá stránka téhož katalogu vede
+    1125 m (triáž DATA-27, 26. 7. 2026) — drobný vnitřní rozpor, zapsána
+    hodnota shodná s OSM tagem (1120). GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/31360811 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 59
+overeniNocleh:
+  source: >-
+    katalog České hory (ceskehory.cz, otevřeno 27. 7. 2026): „kapacita:
+    59 lůžek". Jediný pramen, provozovatelem nepotvrzeno.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# kuchyne i typObcerstveni ZÁMĚRNĚ NEVYPLNĚNY (nezjištěno): stravování
+# katalog v otevřené části nepopisuje a vlastní web se nepodařilo otevřít.
+overeniObcerstveni:
+  source: >-
+    stravování jsme v otevřených pramenech nedoložili: katalog České hory
+    (otevřeno 27. 7. 2026) ho v dostupné části neuvádí, vlastní web
+    z OSM (slovanka-cz.com) se nepodařilo otevřít (20. 7. i 27. 7. 2026).
+    Pole se nechávají nezjištěná.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: prameny k historii mlčí.
+overeniHistorie:
+  source: >-
+    K historii boudy jsme v otevřených pramenech (katalog, hledáno
+    26.–27. 7. 2026) nenašli jediný doložený údaj — „hledali jsme
+    a nenašli".
+  verified: false
+  checked: '2026-07-27'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# kontakty.web NEVYPLNĚN: slovanka-cz.com (z OSM) se opakovaně nepodařilo
+# otevřít — bez potvrzení, že žije, ho nevedeme.
+overeniProvoz:
+  source: >-
+    aktivní záznam v katalogu České hory (otevřeno 27. 7. 2026), doslova:
+    „Horská bouda využívaná hlavně pro účely rodinné rekreace, lyž.
+    kursy, školy v přírodě apod." Vlastní web z OSM se opakovaně
+    nepodařilo otevřít (20. 7. a 27. 7. 2026) — provoz vlastním dotazem
+    neověřen.
+  verified: false
+  checked: '2026-07-27'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Velká bouda v enklávě Lučiny na trase z Pece pod Sněžkou přes Černou
+  horu do Černého Dolu, v 1120 metrech. Katalog ji popisuje jako boudu
+  pro rodinnou rekreaci, lyžařské kurzy a školy v přírodě — a přesně tak
+  je třeba ji brát: spí tu skupiny, kolemjdoucím žádná doložená služba
+  nekyne.
+text:
+  - >-
+    Bouda Slovanka stojí v luční enklávě Lučiny — poštovní adresou patří
+    k Černému Dolu — ve výšce 1120 metrů. Katalog ji klade na trasu
+    z Pece pod Sněžkou přes Černou horu do Černého Dolu, takže se kolem
+    ní chodí; na druhé stránce téhož katalogu je výška o pět metrů
+    jinak, což přiznáváme a bereme hodnotu shodnou s mapovými daty.
+  - >-
+    Charakter boudy přebíráme z katalogu doslova: je „využívaná hlavně
+    pro účely rodinné rekreace, lyž. kursy, školy v přírodě apod."
+    Devětapadesát lůžek tomu odpovídá — tohle je dům pro skupiny, které
+    si ho objednají dopředu. Jestli se tu zastaví i turista jdoucí kolem
+    na čaj nebo polévku, žádný pramen neříká, a my to bez dokladu
+    netvrdíme.
+  - >-
+    O stravování ani o historii boudy jsme v otevřených pramenech
+    nenašli nic doloženého a vlastní web se nám opakovaně nepodařilo
+    otevřít. Až se pramen objeví — nebo až se provozovateli dovoláme —
+    všechno tu doplníme.
+  - >-
+    Údaje pocházejí z katalogu České hory; vlastním dotazem jsme zatím
+    neověřili nic. Souřadnice jsou z mapových dat OpenStreetMap
+    (© přispěvatelé OpenStreetMap, ODbL) a v terénu je nikdo
+    nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Katalog České hory — skupinová rekreační bouda (doslovná
+      charakteristika), 59 lůžek, 1120 m, trasa Pec–Černá hora–Černý Důl,
+      adresa v Lučinách (otevřeno 27. 7. 2026)
+    url: https://www.ceskehory.cz/ubytovani/bouda-slovanka-cerny-dul.html
+  - popis: OpenStreetMap (GPS objektu a výška; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/bouda-slovanka.yaml (DATA-01, OSM) 27. 7. 2026 z fronty „s výhradou" DATA-27 + spot-fetch České hory (citace potvrzeny živě, přibyla adresa Na Lučinách 182 → enkláva Lučiny, obec Černý Důl).
+  CHARAKTER: skupinová rekreační bouda — přiznán v perexu i próze; služba kolemjdoucím nedoložena.
+  VÝŠKA: 1120 (OSM tag + katalog) × 1125 (druhá stránka katalogu) — zapsána 1120, rozpor přiznán.
+  WEB: slovanka-cz.com (OSM) nedostupný 20. 7. (ConnectError) i 27. 7. — nezapsán; DATA-04 telefonát rozhodne.
+  Adresa „Na Lučinách 182" jen interně/v source (ban č. p. v próze).
+  K dotažení: stravování (kuchyne nezjištěno), historie, web, hero fotka.

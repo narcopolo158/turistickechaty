@@ -11,6 +11,48 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-27 — pokračování 13: CELÁ FRONTA DATA-27 DOJETA — čtveřice „s výhradou" (68 profilů), Mísečky drženy
+
+**Hotovo:** Fronta „s výhradou" vyřízena (64 → 68); Novomísečná +
+Staromísečná jako jediné DRŽENY (verdikt zapsán do obou kandidátů).
+**Tím je celá fronta povyšování z triáže DATA-27 uzavřená: 15 silných +
+4 s výhradou = 19 povýšených, 2 držené na otázce Michala.**
+
+- **Bouda Slovanka** — „Horská bouda využívaná hlavně pro účely rodinné
+  rekreace, lyž. kursy, školy v přírodě apod." (živě potvrzeno) —
+  skupinový charakter přiznán v perexu; 59 lůžek; 1120 m (OSM + katalog)
+  × 1125 (druhá stránka katalogu) — zapsáno 1120, rozpor přiznán; adresa
+  odhalila enklávu Lučiny (obec Černý Důl); web nedostupný → kontakty
+  prázdné; stravování NEZJIŠTĚNO (kuchyne nevyplněno).
+- **Chata Studenov** — verdikt „penzion — nezařazovat" z 20. 7. REVIDOVÁN:
+  katalog vede doslova „Turistickou ubytovnu" na vrcholku Studenova →
+  nocleh pro turisty je turistická služba. 72 lůžek, 900 m, Rokytnice;
+  „V druhém objektu se nachází restaurace, kde se ubytovaní stravují…" —
+  jen ubytovaní, nahlas. JMENOVEC „Turistická chata - Studenov"
+  u Rybínových bud odlišen (próza varuje). Michal potvrdí (otázky).
+- **Chata Zákoutí** — Vítkovice (jmenovec „V Zákoutí" Harrachov je jiný
+  dům — próza varuje); 9 pokojů (České hory živě) + 25 lůžek a snídaně/
+  polopenze k pobytu (Firmy.cz živě). Výška 820 m a „nově otevřená"
+  z triáže NEPŘEVZATY — živé prameny je nenesou. Vlastní web mrtvý
+  (404 kořen, 410 katalogová kopie).
+- **Horská bouda Na Muldě** — třetí univerzitní objekt korpusu (po
+  Richtrových a Patejdlově): UK FTVS, pronájem skupinám od 20 osob
+  (menší jen vyhlášené termíny) → veřejnosti neslouží, řečeno v perexu;
+  43 osob / 14 pokojů a příjezd (léto auto na povolení, zima rolba)
+  z živého webu FTVS; výška 1036 × 1000 nezapsána; bar z archivního
+  zápisu nepřevzat; webkamera je Humlnet, ne Horská služba.
+
+Ban-scan přitom chytil TŘI reálné zásahy — slovo „profil" v mé próze
+(Slovanka, Zákoutí ×2) — přepsáno; brzda funguje.
+
+**Mezi tím 3D:** běh data28 #5 spadl (Michalův screenshot, exit 1) —
+lesní dotaz přes celý bbox Overpass neunesl. Oprava 8a01ed8: lesy po
+4 dlaždicích s pauzami; lesy i sjezdovky jsou best-effort (selhání už
+build neshodí). Michal poprošen o nový klik na Run workflow.
+
+**Příště:** DATA-25 bod (a) — projít 10 vyřazených novým klíčem — a pak
+UZAVŘÍT KRKONOŠE s kompletním seznamem otázek pro Michala.
+
 ## 2026-07-27 — pokračování 12: SILNÁ FRONTA DATA-27 DOJETA — U Kotle, Amor, Husova (64 profilů)
 
 **Hotovo:** Poslední tři silní kandidáti povýšeni (61 → 64) — všech 15
