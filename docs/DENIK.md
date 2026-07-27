@@ -168,6 +168,70 @@ devíti dnešních hero (pak `overeni.verified: true` u bloku fotky).
 
 ---
 
+## 2026-07-27 — pokračování 8: 3D mapa naostro (P0 + lanovky s opravou) a druhá trojice fronty (55 profilů)
+
+**Zadání Michala:** vize 3D mapy „jdeme to rovnou udělat, pracuj samostatně";
+k tomu screenshot s nálezem „to jsou vleky v detailu? nevypada to dobre";
+průběžně „pokracuj samostatne dal".
+
+**Hotovo:**
+
+**3D mapa — P0 balík naostro (DATA-28).** Šablona dostala: posuvník hodiny dne
+se skutečnou drahou slunce a stínovými mapami terénu; noc s hvězdami, měsíčním
+světlem a SVÍTÍCÍMI boudami (jen publikované v provozu; v patě výslovně
+„dekorace, ne data"); přepínač léto/podzim/zima se zasněženou zimní rampou;
+plující stíny mraků; fly-to kameru na klik; muzejní sokl s bočnicemi
+z obrysové výšky terénu a rohovými kótami. Pipeline data28 rozšířena o vrstvy
+`aerialway` a `waterway`; workflow nově běží i na push při změně generátoru
+nebo šablony — **push trigger ale nezafungoval** (běh se nespustil; příčina
+nezjištěna, ruční Run workflow funguje — nechat jako známý stav, neřešit
+naslepo). Michal spustil běh ručně: **295 lanovek a vleků, 1 330 řek
+a pojmenovaných potoků** (běh #4, 2m 46s).
+
+**Michalův nález na mobilu: vleky vypadaly jako rozbité zipy — potvrzeno
+a opraveno.** Příčina: lano kopírovalo každý bod OSM s výškou z NEJBLIŽŠÍHO
+uzlu mřížky (~230 m buňka), takže skákalo po schodech terénu, a podpěra stála
+u každého druhého bodu. Oprava: (a) `eleNa()` nově **bilineární interpolace**
+— vyhladila i trasy, řeky a piny; (b) lanovka je **rovná vzdušná úsečka mezi
+stanicemi** s podpěrami od terénu k lanu po ~350 m (instancovaně) a mírným
+průvěsem; (c) kabinky jen na kabinových/sedačkových (jeden InstancedMesh);
+(d) **vleky odděleně** — tenčí, světlejší, výchozí stav VYPNUTO (nový
+přepínač) → shluky ve skiareálech zmizely; (e) lana batchovaná do dvou
+LineSegments. Ověřeno headless renderem, konzole čistá.
+
+**Druhá trojice fronty DATA-27 — od konce, aby se nesrazila s paralelní
+session (ta ráno povýšila Jelení Louky, Na Pláni a Helenu):**
+
+**Srebrny Potok** — s opravou vlastního staršího zápisu: leží nad Jarkowicemi
+na Grzbietu Lasockém (východní okraj polských Krkonoš, 615 m), NE u Przełęczy
+Okraj. Nejníže položený a nejvýchodnější objekt korpusu; bar, nepřetržitý
+celoroční provoz; kapacita 45 (vlastní web) × 35 (Naszesudety) přiznána.
+Historie: hledali jsme a nenašli.
+
+**Patejdlova bouda** — účelová chata Univerzity Karlovy (vzor Richtrovy):
+46 lůžek / 13 pokojů pro posluchače a zaměstnance, veřejnosti neslouží
+a próza to říká v perexu. Rok **1710** (vídeňská rodina Eichlerů) a převzetí
+univerzitou **1961** připsány univerzitnímu magazínu — bez dokladu,
+nevydáváno za doložené.
+
+**Barborka** — **první profil korpusu se stavem `mimo-provoz`**: vlastní web
+doslova „Z důvodu havarijního stavu objektu dočasně uzavřeno." Výška záměrně
+nezapsána (jediný katalog si na dvou stránkách protiřečí 1000 × 1010 m),
+kapacita nezapsána (15 × 20+5 × 25 z éry provozu). Jmenovec v Horní Malé Úpě
+veden zatím interně dle DATA-17. V zásobě 51 fotokandidátů z Commons.
+
+**Měření:** validator CHYB 0, `audit-mech` nula, `kolize-jmen` nula (226
+souborů / 91 objektů), fixtura 4/4. `ban-scan` 140 (po 49) → **155** (po 55):
++9 mé trio (vše OpenStreetMap/ODbL připsání + slovo „souřadnice"), +6 ranní
+trojice paralelní session — žádná nová třída.
+
+**Příště:** zbývá 9 silných (U Kotle, Amor, Husova, Smetánka, Jindřichův dům,
+Sedmidolí, Betyna, Na Lučinách, Náchodská) + 6 s výhradou; pak DATA-25 bod (a)
+— 10 vyřazených novým klíčem — a uzavřít Krkonoše s kompletním seznamem
+otázek pro Michala.
+
+---
+
 ## 2026-07-26 — pokračování 7: Tier 4 komplet ztriážován — 15 + 6 do fronty povyšování, plné citace v DATA-27
 
 **Zadání Michala:** „pokracuj samostatne komplet tier 4."

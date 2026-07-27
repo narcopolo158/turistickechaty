@@ -11,7 +11,7 @@ Poctivost: sloučení je čistě organizační pomůcka. Nic tu není „ověře
 
 ## Souhrn
 
-- **Publikováno:** 52 *(aktualizováno 27. 7. 2026 — z fronty DATA-27 povýšena první trojice: Chata Jelení Louky, Bouda Na Pláni a Bouda Helena)*
+- **Publikováno:** 55 *(aktualizováno 27. 7. 2026 podruhé — z fronty DATA-27 povýšena i druhá trojice, tentokrát od konce fronty: Srebrny Potok, Patejdlova bouda a Barborka — první profil korpusu se stavem mimo-provoz)*
 - **Kandidáti k doplnění:** 33 — z toho Tier 1 (známka + katalog) 0, Tier 2 (jen známka) 0, Tier 3 (jen katalog) 2 (**oba blokované otázkou na Michala:** Hrnčířské boudy = enkláva, ne objekt — rozpustit?; Raisova chata na Zvičině = Podkrkonoší — založit oblast?), Tier 4 (jen OSM) 31. *Křížová kontrola 27. 7. 2026: kandidátských souborů bez hlavičky POVÝŠENO je v `data/kandidati/krkonose/` **35** — rozdíl proti 33 jsou přesně dva ruční kandidáti založení 26. 7. (Poštovna na Sněžce, Modrokamenná bouda), kteří do tierové struktury zatím nejsou zařazení (Modrokamenná nese známkový spor 2640×2540, Poštovna známku č. 20 — oba by patřili nejspíš do Tier 2; zařadit při příští revizi tabulek).*
 - **Vyřazeno** (nezakládat): 10
 - Objektů se známkou: 35 · v ChatGPT katalogu: 42 · katalogových Krkonoš celkem: 42
@@ -101,6 +101,15 @@ v aliasech) a Bouda Helena (OSM tvar „Helena"). Ve frontě zbývá 12 silných
 U Kotle, Amor, Husova bouda, Smetánka, Srebrny Potok, Patejdlova, Jindřichův
 dům, Sedmidolí, Betyna, Na Lučinách, Náchodská, Barborka (mimo-provoz) —
 + 6 s výhradou.**
+
+**Postup fronty 27. 7. 2026 podruhé (od konce, kvůli paralelní session):
+povýšeny Srebrny Potok (s opravou polohy — Jarkowice/Grzbiet Lasocki, ne
+Okraj; nejníže položený a nejvýchodnější objekt korpusu), Patejdlova bouda
+(účelová UK, rok 1710 připsán univerzitnímu magazínu) a Barborka — PRVNÍ
+profil se stavem `mimo-provoz` („Z důvodu havarijního stavu objektu dočasně
+uzavřeno" dle vlastního webu). Ve frontě zbývá 9 silných: U Kotle, Amor,
+Husova bouda, Smetánka, Jindřichův dům, Sedmidolí, Betyna, Na Lučinách,
+Náchodská — + 6 s výhradou.**
 
 | Bouda | Známka | ChatGPT katalog | Naše výška | Typ |
 |---|---|---|---|---|

@@ -1,0 +1,144 @@
+# Patejdlova bouda — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Účelová chata Univerzity Karlovy (vzor Richtrovy boudy, DATA-25): veřejnosti
+# neslouží a profil to říká nahlas; do průvodce patří třísetletou turistickou
+# minulostí. Vše verified: false — z webů UK a OSM, vlastním dotazem neověřeno.
+
+nazev: Patejdlova bouda
+slug: patejdlova-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu # v provozu jako účelové zařízení UK; veřejná služba není (viz próza)
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno); poloha dle webu UK.
+lat: 50.7542703
+lng: 15.5915486
+vyska: 1000
+obec: Špindlerův Mlýn
+overeniLokace:
+  source: >-
+    web rekreačních zařízení UK (rekreace.cuni.cz, detail objektu, otevřeno
+    26. 7. 2026): horská chata na svahu Labského dolu poblíž Brádlerových
+    bud, ~1000 m n. m., Špindlerův Mlýn. GPS: OpenStreetMap
+    https://www.openstreetmap.org/ — data © přispěvatelé OpenStreetMap,
+    ODbL 1.0 (openstreetmap.org/copyright); v terénu neověřeno.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh slouží posluchačům a zaměstnancům UK, ne veřejnosti — poznámka
+# dle DATA-25; kapacita je z webu UK.
+nocleh: ano
+kapacita: 46
+pokoje: 13
+overeniNocleh:
+  source: >-
+    web rekreačních zařízení UK (rekreace.cuni.cz, otevřeno 26. 7. 2026):
+    46 lůžek ve 13 pokojích; objekt slouží „výuce a soustředění posluchačů
+    a rekreaci zaměstnanců" univerzity. Veřejnosti se nocleh nenabízí.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Jídelna je součástí účelového provozu UK (~35 míst) — NE veřejné
+# občerstvení; typObcerstveni proto nevyplněno.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    web rekreačních zařízení UK (rekreace.cuni.cz, otevřeno 26. 7. 2026):
+    jídelna s kapacitou kolem 35 míst pro hosty univerzity. Veřejné
+    občerstvení objekt nenabízí — klíč zařazení naplňuje turistická
+    minulost boudy (DATA-25), ne dnešní služba.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku 1710 nese článek univerzitního magazínu („Patejdlova bouda
+# slaví 300 let") — instituční pramen bez odkazu na doklad; próza připisuje.
+rokVzniku: 1710
+milniky:
+  - rok: 1710
+    udalost: >-
+      Podle článku univerzitního magazínu postavila boudu vídeňská rodina
+      Eichlerů
+  - rok: 1961
+    udalost: >-
+      Bývalou dřevorubeckou boudu získala Univerzita Karlova od
+      Ministerstva školství a osvěty; od té doby slouží celoročním kurzům
+      studentů a rekreaci zaměstnanců
+overeniHistorie:
+  source: >-
+    článek univerzitního magazínu iForum (iforum.cuni.cz, „Patejdlova
+    bouda slaví 300 let", otevřeno 26. 7. 2026): boudu postavila
+    „vídeňská rodina Eichlerů v roce 1710"; jméno nese po gen. JUDr.
+    Josefu Patejdlovi; „Bývalou dřevorubeckou boudu získala univerzita
+    v roce 1961 od Ministerstva školství a osvěty". Instituční pramen bez
+    odkazů na doklady — próza připisuje, nevydává za doložené.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://rekreace.cuni.cz/
+overeniProvoz:
+  source: >-
+    web rekreačních zařízení UK (rekreace.cuni.cz, otevřeno 26. 7. 2026);
+    provoz potvrzují i pokyny kvestora UK z roku 2025 k rekreacím
+    zaměstnanců. Provozovatel: Univerzita Karlova. Objekt slouží výuce,
+    soustředěním a rekreaci univerzitní obce — veřejnosti se služby
+    nenabízejí.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda na svahu Labského dolu poblíž Brádlerových bud (kolem 1 000 m),
+  kterou podle univerzitního magazínu postavila roku 1710 vídeňská rodina
+  Eichlerů. Od roku 1961 patří Univerzitě Karlově a slouží studentským
+  kurzům a rekreaci zaměstnanců — kolemjdoucí veřejnosti služby nenabízí,
+  a proto to říkáme hned v úvodu.
+text:
+  - >-
+    Patejdlova bouda stojí na svahu Labského dolu nad Špindlerovým
+    Mlýnem, poblíž Brádlerových bud, ve výšce kolem tisíce metrů. Jméno
+    nese podle článku univerzitního magazínu po generálu JUDr. Josefu
+    Patejdlovi.
+  - >-
+    Její historie je podle téhož pramene třísetletá: boudu měla roku 1710
+    postavit vídeňská rodina Eichlerů a dlouho sloužila jako dřevorubecká
+    bouda. Zlom přišel v roce 1961, kdy ji od Ministerstva školství
+    a osvěty získala Univerzita Karlova — a od té doby tu běží celoroční
+    kurzy studentů a rekreace zaměstnanců. Letopočty přebíráme
+    z univerzitního článku, který k nim neuvádí doklady; uvádíme je proto
+    s připsáním.
+  - >-
+    A teď to podstatné pro turistu na hřebeni: Patejdlova bouda je dnes
+    účelové zařízení Univerzity Karlovy — 46 lůžek ve třinácti pokojích
+    a jídelna slouží posluchačům a zaměstnancům, ne kolemjdoucí
+    veřejnosti. Do průvodce patří svou třísetletou minulostí a tím, že
+    je pevným bodem krajiny Labského dolu; s obědem nebo noclehem tu ale
+    poutník počítat nemůže.
+  - >-
+    Údaje pocházejí z webu rekreačních zařízení univerzity a z jejího
+    magazínu; vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Rekreační zařízení Univerzity Karlovy — detail objektu: kapacita,
+      jídelna, účel provozu (otevřeno 26. 7. 2026)
+    url: https://rekreace.cuni.cz/
+  - popis: >-
+      iForum, magazín Univerzity Karlovy — „Patejdlova bouda slaví
+      300 let": rok 1710, rodina Eichlerů, jméno po gen. Patejdlovi,
+      převzetí univerzitou 1961 (otevřeno 26. 7. 2026)
+    url: https://iforum.cuni.cz/IFORUM-9873.html
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/patejdlova-bouda.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 (kategorie 🎓 účelové chaty; vzor Richtrovy — DATA-25: účelový objekt s turistickou minulostí se uvádí s poctivou poznámkou).
+  rokVzniku 1710 = tvrzení univerzitního magazínu bez dokladu — próza připisuje (obdoba 1717 u Lyžařské). Nezvyšovat na verified bez nezávislého pramene.
+  K dotažení: přesná výška (web UK uvádí ~1000 m), telefon/e-mail správy, hero fotka, případně detailnější historie (univerzitní archiv).

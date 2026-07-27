@@ -1,0 +1,132 @@
+# Barborka — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# PRVNÍ PROFIL KORPUSU SE STAVEM mimo-provoz: vlastní web hlásí dočasné
+# uzavření kvůli havarijnímu stavu. Pod DATA-25 patří dovnitř (bouda
+# s turistickou službou), stav se přiznává. Vše verified: false.
+
+nazev: Barborka
+slug: barborka
+zeme: cz
+typ: obsluhovana
+# stav mimo-provoz dle vlastního webu („dočasně uzavřeno" kvůli havarijnímu
+# stavu objektu) — při znovuotevření přepnout a upravit prózu.
+stav: mimo-provoz
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno). Výška ZÁMĚRNĚ NEVYPLNĚNA: jediný
+# pramen (katalog České hory) si na dvou stránkách protiřečí (1000 × 1010 m)
+# a vlastní web výšku neuvádí.
+lat: 50.6783824
+lng: 15.7280519
+obec: Pec pod Sněžkou # adresa „Vysoký svah 21" — poštovní pramen (DATA-20)
+overeniLokace:
+  source: >-
+    vlastní web boudy (barborkavpeci.cz, otevřeno 26. 7. 2026): lokalita
+    Vysoký svah, Pec pod Sněžkou; adresa Vysoký svah 21. Katalog České
+    hory (ceskehory.cz, otevřeno 26. 7. 2026) uvádí na dvou stránkách
+    výšku 1000 m a 1010 m — VNITŘNÍ ROZPOR jediného pramene, výška se
+    nezapisuje. GPS: OpenStreetMap https://www.openstreetmap.org/ — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    v terénu neověřeno. POZOR NA JMENOVCE: v Horní Malé Úpě stojí jiná
+    Chata Barborka (vede ji ubytovací portál) — rozlišení zatím interní
+    dle pravidla DATA-17, veřejná věta až s pevnějším pramenem.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# nocleh/kapacita se NEZAPISUJÍ: bouda je dočasně uzavřená a kapacitní
+# čísla z éry provozu se rozcházejí třemi způsoby (15 × 20+5 × 25).
+overeniNocleh:
+  source: >-
+    TŘI RŮZNÁ ČÍSLA KAPACITY z éry provozu, žádné nezapsáno: 15 lůžek ×
+    „20 + 5 přistýlek" × 25 lůžek (katalog České hory na dvou stránkách
+    a krajský katalog, otevřeno 26. 7. 2026). Bouda je navíc dočasně
+    uzavřená — dnešní nabídka noclehu neexistuje.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# kuchyne/typObcerstveni se NEZAPISUJÍ: jídelna s polopenzí patří éře
+# provozu (katalogy), dnes je objekt zavřený.
+overeniObcerstveni:
+  source: >-
+    katalog České hory (otevřeno 26. 7. 2026): v éře provozu penzion se
+    stravováním (polopenze, jídelna). Dnes objekt dočasně uzavřen (viz
+    overeniProvoz) — občerstvení se nenabízí.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: žádný z otevřených pramenů nenese
+# k historii boudy jediný letopočet.
+overeniHistorie:
+  source: >-
+    K historii boudy jsme v otevřených pramenech (vlastní web, katalog
+    České hory, krajský katalog; hledáno 26. 7. 2026) nenašli jediný
+    doložený údaj. Zapsáno jako „hledali jsme a nenašli".
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.barborkavpeci.cz/
+overeniProvoz:
+  source: >-
+    vlastní web boudy (barborkavpeci.cz, otevřeno 26. 7. 2026), doslova:
+    „Z důvodu havarijního stavu objektu dočasně uzavřeno." — stav
+    mimo-provoz nese tuhle větu; „dočasně" je slovo webu, ne náš odhad.
+    Provozovatel nedoložen.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bouda na Vysokém svahu v Peci pod Sněžkou, která bývala malým penzionem
+  se stravou. Teď je ale potřeba říct hlavně jedno: podle vlastního webu
+  je objekt kvůli havarijnímu stavu dočasně uzavřený — a dokud se
+  neotevře, nemá tu turista co hledat.
+text:
+  - >-
+    Barborka stojí na Vysokém svahu, v klidnější boční části Pece pod
+    Sněžkou nad centrem střediska. Výšku neuvádíme schválně: jediný
+    katalog, který ji nese, si na dvou vlastních stránkách protiřečí,
+    a web boudy mlčí — raději prázdné pole než hádání.
+  - >-
+    V dobách provozu byla Barborka malý penzion se stravou — katalogy
+    z té éry popisují jídelnu s polopenzí a ubytování, na jehož velikosti
+    se ovšem neshodnou: patnáct lůžek, dvacet s pěti přistýlkami, nebo
+    pětadvacet, podle toho, kterou stránku otevřete. Ani jedno číslo
+    proto nepřebíráme.
+  - >-
+    Dnes platí jediná věta, a to z vlastního webu boudy: „Z důvodu
+    havarijního stavu objektu dočasně uzavřeno." Vedeme proto Barborku
+    jako boudu mimo provoz — slovo „dočasně" je slovem webu, takže se
+    sem snad jednou vrátí život; do té doby je v průvodci proto, aby
+    nikdo nešel na Vysoký svah zbytečně. O historii objektu jsme zatím
+    nedoložili nic; jakmile se pramen najde, doplníme ho.
+  - >-
+    Poloha pochází z webu boudy, kapacitní čísla z katalogů éry provozu
+    a vlastním dotazem jsme zatím neověřili nic. Souřadnice jsou
+    z mapových dat OpenStreetMap (© přispěvatelé OpenStreetMap, ODbL)
+    a v terénu je nikdo nekontroloval. Pozor při hledání: v Horní Malé
+    Úpě stojí jiná chata téhož jména.
+
+# Bez hero fotky: v data/kandidati/fotky/krkonose je pro Barborku
+# připraveno 51 fotokandidátů z Commons — výběr a licenční kontrola se
+# dělá ručně, nasadí se dodatečně.
+
+zdroje:
+  - popis: >-
+      Vlastní web boudy — lokalita Vysoký svah a věta o dočasném uzavření
+      kvůli havarijnímu stavu (otevřeno 26. 7. 2026)
+    url: https://www.barborkavpeci.cz/
+  - popis: >-
+      Katalog České hory — éra provozu: penzion s polopenzí; vnitřní
+      rozpory výšky (1000 × 1010 m) i kapacity (otevřeno 26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/barborka.yaml (DATA-01, OSM) 27. 7. 2026 z citací triáže DATA-27 — PRVNÍ PROFIL SE STAVEM mimo-provoz v korpusu. Hlídat, jak stav vykreslí šablona (stavová pilulka) a že se objekt správně chová v mapě/filtrech.
+  Při znovuotevření boudy: přepnout stav, přepsat prózu (odstavce 3–4), dohledat kapacitu a výšku od provozovatele.
+  JMENOVEC: Chata Barborka v Horní Malé Úpě (ubytovací portál) — rozlišení zatím INTERNÍ dle DATA-17 (žádost o veřejnou větu vyžaduje pevnější pramen); závěrečný odstavec nese jen opatrné upozornění bez připsání konkrétnímu prameni — při revizi DATA-17 posoudit, jestli stačí.
+  FOTKY: 51 kandidátů z Commons připraveno (data/kandidati/fotky/krkonose/barborka.yaml) — po výběru nasadit, bouda si hero zaslouží i mimo provoz.
+  K dotažení: historie, provozovatel, výška s pramenem, stav objektu (web sledovat).

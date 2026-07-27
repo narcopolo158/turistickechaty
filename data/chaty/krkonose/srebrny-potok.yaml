@@ -1,0 +1,139 @@
+# Srebrny Potok — profil povýšen z kandidáta DATA-01 (OSM) 27. 7. 2026.
+# Povýšení schválil Michal už 20. 7. 2026 (kategorie ✅ přehledu DATA-03
+# en bloc); provedeno z citací triáže DATA-27. POZOR: rešerše opravila
+# starší zápis o poloze — objekt leží nad vsí Jarkowice na Grzbietu
+# Lasockém (východní okraj Krkonoš), NE u Przełęczy Okraj.
+# Vše verified: false — z webu schroniska a portálů, vlastním dotazem
+# neověřeno.
+
+nazev: Srebrny Potok
+slug: srebrny-potok
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z OSM (ODbL, v terénu neověřeno); poloha a výška z vlastního webu.
+lat: 50.7161202
+lng: 15.8814204
+vyska: 615
+obec: Jarkowice # „ponad wsią Jarkowice" z vlastního webu — nejbližší ves (sémantika pole: DATA-20)
+overeniLokace:
+  source: >-
+    vlastní web schroniska (srebrny-potok.net, stránka Lokalizacja,
+    otevřeno 26. 7. 2026), doslova: „w dolinie Białego Strumienia …
+    ponad wsią Jarkowice, na wschodnich zboczach karkonoskiego Grzbietu
+    Lasockiego"; výška 615 m tamtéž. OPRAVA STARŠÍHO ZÁPISU: kandidátská
+    poznámka z 20. 7. kladla objekt k Przełęczy Okraj — to bylo špatně,
+    Grzbiet Lasocki je východní okraj Krkonoš nad Jarkowicemi. GPS:
+    OpenStreetMap https://www.openstreetmap.org/ — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# ROZPOR KAPACITY: vlastní web 45 lůžek × naszesudety.pl 35. Pole nese
+# hodnotu vlastního webu, rozpor je přiznaný v próze (vzor Jelenka).
+nocleh: ano
+kapacita: 45
+overeniNocleh:
+  source: >-
+    vlastní web schroniska (srebrny-potok.net, otevřeno 26. 7. 2026):
+    „45 miejsc noclegowych". Portál Naszesudety (naszesudety.pl, otevřeno
+    26. 7. 2026): „35 miejscami noclegowymi" — ROZPOR 45 × 35,
+    nerozhodnuto, přiznáno v próze.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Bar doložen z vlastního webu; enum typObcerstveni hodnotu „bar" nemá,
+# proto nevyplněno a podoba je popsaná v próze.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    vlastní web schroniska (srebrny-potok.net, otevřeno 26. 7. 2026):
+    „duży drewniany bar". Objekt se popisuje jako „obiekt noclegowy
+    (schronisko turystyczne)" s nepřetržitým provozem — u schroniska
+    s barem je občerstvení z povahy věci pro příchozí; výslovná věta
+    o kolemjdoucích ale na webu není.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku i milniky ZÁMĚRNĚ PRÁZDNÉ: žádný z otevřených pramenů nenese
+# k historii objektu jediný letopočet.
+overeniHistorie:
+  source: >-
+    K historii schroniska jsme v otevřených pramenech (vlastní web,
+    naszesudety.pl, mapa-turystyczna.pl; hledáno 26. 7. 2026) nenašli
+    jediný doložený údaj. Zapsáno jako „hledali jsme a nenašli".
+  verified: false
+  checked: '2026-07-26'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://srebrny-potok.net/
+sezona: celoročně
+otviraciDoba: >-
+  podle vlastního webu je schronisko otevřené nepřetržitě („czynne 24h");
+  vlastním dotazem neověřeno
+overeniProvoz:
+  source: >-
+    vlastní web schroniska (srebrny-potok.net, otevřeno 26. 7. 2026):
+    „Schronisko jest czynne 24h", provoz celoroční. Provozovatel
+    nedoložen.
+  verified: false
+  checked: '2026-07-26'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko v údolí Białego Strumienia nad vsí Jarkowice, na východním
+  okraji polských Krkonoš (615 m). Nabízí nocleh — podle vlastního webu
+  45 míst, podle portálu Naszesudety 35 — a velký dřevěný bar; otevřeno
+  má podle vlastních stránek nepřetržitě. O historii objektu jsme zatím
+  nedoložili nic.
+text:
+  - >-
+    Srebrny Potok stojí podle vlastních stránek v údolí Białego
+    Strumienia nad vsí Jarkowice, na východních svazích Grzbietu
+    Lasockého — tedy na východním okraji polských Krkonoš, stranou
+    hlavního hřebene, ve výšce 615 metrů. Je to nejníže položený
+    a nejvýchodnější objekt tohoto průvodce; kdo přechází Lasocký hřbet
+    směrem k Okraji, má schronisko pod sebou na polské straně.
+  - >-
+    Provozem je to klasické polské schronisko turystyczne: nocleh a velký
+    dřevěný bar, otevřeno podle vlastního webu nepřetržitě a po celý rok.
+    Na počtu míst se prameny neshodnou — vlastní stránky uvádějí 45,
+    portál Naszesudety 35 — a protože nevíme, které číslo je novější,
+    uvádíme obě. U baru výslovná věta o obsluze kolemjdoucích na webu
+    nestojí; u schroniska s nepřetržitým provozem ji ale nahrazuje sama
+    povaha podniku.
+  - >-
+    O historii objektu neumíme doložit vůbec nic — žádný letopočet, žádné
+    starší jméno. Hledali jsme a nenašli; jakmile se pramen objeví,
+    doplníme ho. Do té doby je Srebrny Potok v průvodci hlavně jako
+    praktická zastávka východního okraje hor.
+  - >-
+    Poloha, výška, kapacita i provoz pocházejí z vlastního webu schroniska
+    a z polských turistických portálů; vlastním dotazem jsme zatím
+    neověřili nic. Souřadnice jsou z mapových dat OpenStreetMap
+    (© přispěvatelé OpenStreetMap, ODbL) a v terénu je nikdo nekontroloval.
+
+# Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
+
+zdroje:
+  - popis: >-
+      Vlastní web schroniska — poloha nad Jarkowicemi, 615 m, 45 míst,
+      bar, nepřetržitý celoroční provoz (otevřeno 26. 7. 2026)
+    url: https://srebrny-potok.net/
+  - popis: >-
+      Portál Naszesudety — 35 míst (rozpor s vlastním webem; otevřeno
+      26. 7. 2026)
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+interniPoznamky: |-
+  Povýšeno z data/kandidati/krkonose/srebrny-potok.yaml (DATA-01, OSM) 27. 7. 2026 — schváleno Michalem 20. 7. 2026 (✅ en bloc), provedeno z citací triáže DATA-27 (plné citace tam).
+  OPRAVA STARŠÍHO ZÁPISU: poloha „u Przełęczy Okraj" z kandidáta byla špatně — vlastní web klade objekt nad Jarkowice na Grzbiet Lasocki. Věta „nejníže položený a nejvýchodnější objekt průvodce" je ověřitelná proti korpusu (615 m je minimum; lng 15.88 maximum) — přepočítat při růstu korpusu.
+  ROZPOR kapacity 45 (vlastní web) × 35 (Naszesudety) — pole nese vlastní web, přiznáno v próze.
+  K dotažení: historie (polské prameny?), provozovatel, telefon/e-mail, polský znaczek (seznam znaczki-turystyczne.pl ze sandboxu nedostupný), hero fotka, GPS proti mapě.
