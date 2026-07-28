@@ -276,6 +276,31 @@ přesměrování), scraper naslepo psát nebudu; potřebuje jednorázový
 průzkum struktury (Michal uloží HTML stránky katalogu, nebo zkusit
 z Actions runneru curl — navrhnu příště).
 
+**Dodatek 13 (týž den, zadání Michala: „příprava na komunitní sběr
+razítek a fotek — apel na homepage i pipeline na upload a verifikaci"):
+KOMUNITNÍ SBĚR ŽIJE.** K zázemí z 21. 7. (moderace razítek přes koncepty)
+přistavěna veřejná cesta: (1) **/prispet** — formulář pro otisk razítka
+NEBO fotku chaty: chata z datalistu vedených profilů (podání vážeme jen
+na vedené), jméno = veřejný kredit, e-mail neveřejný, licenční souhlas
+DOSLOVNÝM zněním (ukládá se k podání pro doložitelnost), poctivá popiska
+procesu („nic se nezveřejňuje automaticky"); deep-link ?chata=slug.
+(2) **/api/podani** — honeypot (roboti dostanou tiché „ok" bez uložení),
+rate-limit 5/10 min/IP, 8 MB + MIME whitelist; fotka vzniká s typem
+`komunitni-podani` (šablony vybírají podle typu → čekárna se NIKDE
+nekreslí), razítko jako koncept (veřejné čtení pouští jen publikovaná —
+zázemí 21. 7.). (3) **Fotky** rozšířeny o typ komunitni-podani + skupinu
+podani + beforeChange guard: schválení = redakce po kontrole přepne typ,
+bez licenčního souhlasu to hook nepustí (symetrie s razítkovým guardem).
+(4) **Apel na homepage** s počty z dat (31 chat bez razítka, 34 bez
+fotky) + CTA; (5) **CTA na každém profilu** pod sběratelskými místy —
+jiná věta s razítkem („Máš jiný otisk nebo novější fotku?") a bez něj
+(„Razítko téhle chaty zatím nemáme — máš otisk?"). Moderace: Payload
+admin — koncepty razítek + Fotky filtrované na typ komunitni-podani.
+Schema změny aditivní (drizzle push v deployi). Testy +9 (validace,
+formulář vč. deep-linku a odmítnutí nevedené chaty, apel), 280 passed,
+tsc/lint/kontrola čisté. **Návrh příště:** e-mail notifikace redakci
+o novém podání (teď se pozná jen pohledem do adminu).
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

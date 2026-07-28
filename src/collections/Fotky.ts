@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { APIError } from 'payload'
 
 import { overeni } from '../fields/overeni'
 
@@ -18,6 +19,20 @@ export const Fotky: CollectionConfig = {
       'Každá fotka má autora a licenci; převzaté i zdrojové URL. Fotky z Google Maps a Mapy.com se nepoužívají nikdy.',
   },
   access: { read: () => true },
+  hooks: {
+    beforeChange: [
+      ({ data, originalDoc }) => {
+        // Komunitní fotka nesmí být schválena (typ přepnut mimo čekárnu) bez
+        // licenčního souhlasu odesilatele — stejná brána jako u razítek.
+        const byloPodani =
+          originalDoc?.typ === 'komunitni-podani' || Boolean(originalDoc?.podani?.hostJmeno) || Boolean(data?.podani?.hostJmeno)
+        if (byloPodani && data?.typ && data.typ !== 'komunitni-podani' && !data?.podani?.licencniSouhlas) {
+          throw new APIError('Komunitní fotku nelze schválit bez licenčního souhlasu odesilatele.', 400)
+        }
+        return data
+      },
+    ],
+  },
   upload: {
     mimeTypes: ['image/*'],
     imageSizes: [
@@ -42,6 +57,11 @@ export const Fotky: CollectionConfig = {
         { label: 'Dobová pohlednice / archivní snímek', value: 'dobova' },
         { label: 'Otisk razítka', value: 'otisk-razitka' },
         { label: 'Ilustrační / atmosférická', value: 'ilustracni' },
+        // Komunitní podání ČEKÁ na posouzení: šablony vybírají fotky podle
+        // typu (hero = soucasna, otisk přes publikované razítko), takže
+        // podání s tímhle typem se na webu NIKDE nekreslí. Schválení =
+        // redakce po kontrole přepne typ (a tím fotku pustí do výběrů).
+        { label: 'Komunitní podání (čeká na posouzení)', value: 'komunitni-podani' },
       ],
     },
     {
@@ -100,5 +120,47 @@ export const Fotky: CollectionConfig = {
     overeni('overeni', {
       admin: { description: 'Ověření licence a autorství (kdo a kdy je zkontroloval).' },
     }),
+    // ── Komunitní podání (fotka od návštěvníka webu) ──────────────────────
+    {
+      name: 'podani',
+      type: 'group',
+      label: 'Komunitní podání',
+      admin: {
+        condition: (data) => data?.typ === 'komunitni-podani' || Boolean(data?.podani?.hostJmeno),
+        description:
+          'Kdo fotku poslal a jeho licenční souhlas. Schválení = po kontrole přepnout Typ (tím se fotka pustí do výběrů šablon) — bez souhlasu to hook nedovolí.',
+      },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            { name: 'hostJmeno', type: 'text', label: 'Jméno', admin: { width: '50%' } },
+            {
+              name: 'hostEmail',
+              type: 'email',
+              label: 'E-mail',
+              admin: { width: '50%', description: 'Neveřejné — jen pro redakci (kontakt k podání).' },
+            },
+          ],
+        },
+        {
+          name: 'licencniSouhlas',
+          type: 'checkbox',
+          label: 'Licenční souhlas udělen',
+          defaultValue: false,
+          admin: {
+            description:
+              'Odesilatel potvrdil, že snímek sám pořídil / má k němu práva a souhlasí se zveřejněním s uvedením jména (licence „se svolením").',
+          },
+        },
+        { name: 'souhlasZneni', type: 'textarea', label: 'Znění souhlasu' },
+        {
+          name: 'souhlasDatum',
+          type: 'date',
+          label: 'Datum souhlasu',
+          admin: { date: { pickerAppearance: 'dayOnly', displayFormat: 'd. M. yyyy' } },
+        },
+      ],
+    },
   ],
 }

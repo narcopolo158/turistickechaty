@@ -133,6 +133,14 @@ describe('Homepage F1c — datové pásy', () => {
     expect(kartaPohori.getAttribute('href')).toBe('/cesko/krkonose')
   })
 
+  it('komunitní apel: počty chybějících z dat, CTA na /prispet', async () => {
+    render(await HomePage())
+    // mock: 3 profily, 2 s razítkem, 3 bez heroUrl
+    expect(screen.getByText('Máš v deníku otisk, který nám chybí?')).toBeTruthy()
+    expect(screen.getByText(/1 chat vedeme bez doloženého razítka a 3 bez fotky/)).toBeTruthy()
+    expect(screen.getByRole('link', { name: 'Přispět otiskem či fotkou ▸' }).getAttribute('href')).toBe('/prispet')
+  })
+
   it('printový seznam (B13) nese všechny profily s poctivými „—"', async () => {
     render(await HomePage())
     const tabulka = document.querySelector('.hf1-print table')!

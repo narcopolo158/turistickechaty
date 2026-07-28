@@ -58,6 +58,8 @@ export type ZapData = {
   mapa: { lat: number; lng: number; trasy: TrasaNaMape[] } | null
   /** Deep-link na 3D mapu pohoří (?chata=<název>) — null u chat bez GPS. */
   mapa3dUrl: string | null
+  /** Odkaz na komunitní podání s předvyplněnou chatou (/prispet?chata=slug). */
+  prispetUrl: string | null
   sousede: ZapSoused[]
   historie: { rozsah: string | null; milniky: ZapMilnik[]; text: string[] } | null
   zajimavosti: ZapZaj[]
@@ -231,6 +233,13 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
                   {data.vizitka && <VizitkaObjekt v={data.vizitka} tilt={tilt} />}
                 </div>
               </>
+            )}
+            {data.prispetUrl && (
+              <a className="zap-prispet" href={data.prispetUrl}>
+                {data.razitko
+                  ? 'Máš jiný otisk nebo novější fotku? Pošli je do sbírky ▸'
+                  : 'Razítko téhle chaty zatím nemáme — máš otisk? Pošli ho ▸'}
+              </a>
             )}
 
             {/* Skládaná mapa */}

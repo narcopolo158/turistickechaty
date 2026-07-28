@@ -369,6 +369,7 @@ function sestavData(chata: Chata): ZapData {
       chata.lat != null && chata.lng != null && oblast?.slug === 'krkonose'
         ? `/cesko/krkonose?chata=${encodeURIComponent(chata.nazev)}`
         : null,
+    prispetUrl: `/prispet?chata=${encodeURIComponent(chata.slug!)}`,
     hero: heroFoto?.url ? { url: heroFoto.url, alt: heroFoto.alt ?? chata.nazev } : null,
     heroAtribuce: heroFoto ? { text: heroAtribuceText || 'zdroj', url: heroFoto.zdrojUrl ?? null } : null,
     heroCaption: [chata.nazev, chata.obec].filter(Boolean).join(' · '),

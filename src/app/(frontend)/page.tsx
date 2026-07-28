@@ -231,6 +231,24 @@ export default async function HomePage() {
           <NamatkouPas index={index} seed={denVRoce(dnes)} />
         </section>
 
+        {/* Komunitní apel (rozhodnutí Michala 28. 7. 2026): počty POČÍTANÉ
+            z dat — kolika chatám otisk/fotka opravdu chybí. */}
+        <section className="wrap" aria-label="Pomoz průvodci">
+          <div className="hf1-apel">
+            <div className="hf1-apel-text">
+              <b>Máš v deníku otisk, který nám chybí?</b>
+              <p>
+                {index.length - sRazitkem} chat vedeme bez doloženého razítka a{' '}
+                {index.filter((ch) => ch.heroUrl == null).length} bez fotky. Pošli sken otisku nebo
+                snímek z výletu — po redakční kontrole je zveřejníme s tvým jménem u snímku.
+              </p>
+            </div>
+            <Link href="/prispet" className="hf1-apel-cta">
+              Přispět otiskem či fotkou ▸
+            </Link>
+          </div>
+        </section>
+
         <section className="wrap sec" aria-label="Z průvodce">
           <SectionBar num="03" title="Z průvodce" variant="red" />
           <div className="hf1-zpruvodce">

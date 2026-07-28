@@ -304,3 +304,7 @@ body.dark .zap-mil .dot { background:var(--cream); }
 /* Deep-link na 3D mapu pohoří (F1d) — pod skládanou mapou */
 .zap-3d-odkaz { display: inline-block; font: 600 11.5px/1 'Space Grotesk', sans-serif; color: var(--red); text-decoration: none; margin-top: 8px; }
 .zap-3d-odkaz:hover { text-decoration: underline; }
+
+/* Komunitní podání z profilu — CTA pod sběratelskými místy */
+.zap-prispet { display: inline-block; font: 600 11.5px/1.4 'Space Grotesk', sans-serif; color: var(--red); text-decoration: none; margin-top: 9px; }
+.zap-prispet:hover { text-decoration: underline; }

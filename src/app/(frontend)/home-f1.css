@@ -504,3 +504,30 @@
   .hf1-listek:hover { transform: rotate(var(--rot, 0deg)); }
   .hf1-listek-razitko { animation: none; }
 }
+
+/* ── Komunitní apel „Pomoz průvodci" ───────────────────────────────────── */
+.hf1-apel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 17px 20px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--red);
+  border-radius: 13px;
+  flex-wrap: wrap;
+}
+.hf1-apel-text b { display: block; font: 500 17px/1.25 var(--font-emph, Georgia, serif); color: var(--ink); }
+.hf1-apel-text p { font: 400 12.5px/1.6 Inter, sans-serif; color: var(--muted); margin: 6px 0 0; max-width: 62ch; text-wrap: pretty; }
+.hf1-apel-cta {
+  flex: none;
+  display: inline-flex;
+  padding: 11px 18px;
+  border-radius: 9px;
+  background: var(--red);
+  color: #fff;
+  font: 600 12.5px/1 'Space Grotesk', sans-serif;
+  text-decoration: none;
+  box-shadow: 0 7px 16px -7px rgba(224, 52, 31, 0.8);
+}

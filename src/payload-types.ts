@@ -526,7 +526,7 @@ export interface Oblasti {
 export interface Fotky {
   id: number;
   alt: string;
-  typ?: ('soucasna' | 'dobova' | 'otisk-razitka' | 'ilustracni') | null;
+  typ?: ('soucasna' | 'dobova' | 'otisk-razitka' | 'ilustracni' | 'komunitni-podani') | null;
   /**
    * Fotka se pak sama nabídne v profilu chaty.
    */
@@ -547,6 +547,22 @@ export interface Fotky {
     source?: string | null;
     verified?: boolean | null;
     checked?: string | null;
+  };
+  /**
+   * Kdo fotku poslal a jeho licenční souhlas. Schválení = po kontrole přepnout Typ (tím se fotka pustí do výběrů šablon) — bez souhlasu to hook nedovolí.
+   */
+  podani?: {
+    hostJmeno?: string | null;
+    /**
+     * Neveřejné — jen pro redakci (kontakt k podání).
+     */
+    hostEmail?: string | null;
+    /**
+     * Odesilatel potvrdil, že snímek sám pořídil / má k němu práva a souhlasí se zveřejněním s uvedením jména (licence „se svolením").
+     */
+    licencniSouhlas?: boolean | null;
+    souhlasZneni?: string | null;
+    souhlasDatum?: string | null;
   };
   updatedAt: string;
   createdAt: string;
@@ -1398,6 +1414,15 @@ export interface FotkySelect<T extends boolean = true> {
         source?: T;
         verified?: T;
         checked?: T;
+      };
+  podani?:
+    | T
+    | {
+        hostJmeno?: T;
+        hostEmail?: T;
+        licencniSouhlas?: T;
+        souhlasZneni?: T;
+        souhlasDatum?: T;
       };
   updatedAt?: T;
   createdAt?: T;

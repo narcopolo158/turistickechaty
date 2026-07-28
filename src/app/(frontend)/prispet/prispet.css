@@ -1,0 +1,69 @@
+/* Komunitní podání (/prispet) — papírový formulář dle tokens. */
+.prsp { max-width: 720px; padding-top: 24px; padding-bottom: 40px; }
+.prsp-eyebrow { font: 600 10px/1 'Space Grotesk', sans-serif; letter-spacing: 0.2em; text-transform: uppercase; color: var(--label); margin-bottom: 12px; }
+.prsp-hero h1 { margin: 0; font: 500 40px/1.1 var(--font-emph, Georgia, serif); letter-spacing: -0.01em; color: var(--ink); }
+.prsp-hero p { font: 400 14.5px/1.65 Inter, sans-serif; color: var(--muted); margin: 14px 0 0; max-width: 58ch; text-wrap: pretty; }
+.prsp-hero p b { color: var(--ink); }
+
+.prsp-form {
+  margin-top: 22px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 14px 30px -18px rgba(20, 18, 26, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.prsp-druh { display: flex; gap: 7px; }
+.prsp-druh button {
+  padding: 9px 15px;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  font: 600 12px/1 'Space Grotesk', sans-serif;
+  color: var(--ink);
+  cursor: pointer;
+}
+.prsp-druh button.akt { background: var(--red); border-color: var(--red); color: #fff; }
+.prsp-radek { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.prsp-pole { display: flex; flex-direction: column; gap: 5px; }
+.prsp-pole span { font: 600 10.5px/1 'Space Grotesk', sans-serif; letter-spacing: 0.08em; text-transform: uppercase; color: var(--label); }
+.prsp-pole input {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--paper);
+  padding: 9px 12px;
+  font: 400 14px/1.4 Inter, sans-serif;
+  color: var(--ink);
+}
+.prsp-pole input[type='file'] { padding: 8px 10px; font-size: 12.5px; }
+.prsp-pole i { font: italic 400 10.5px/1.4 var(--font-emph, Georgia, serif); color: var(--label); }
+.prsp-past { position: absolute; left: -9999px; top: -9999px; }
+.prsp-souhlas { display: flex; gap: 10px; align-items: flex-start; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 11px 13px; cursor: pointer; }
+.prsp-souhlas input { margin-top: 3px; accent-color: var(--red); }
+.prsp-souhlas span { font: 400 12px/1.55 Inter, sans-serif; color: var(--muted); }
+.prsp-chyby { margin: 0; padding: 11px 13px 11px 30px; background: rgba(224, 52, 31, 0.07); border: 1px solid rgba(224, 52, 31, 0.3); border-radius: 10px; }
+.prsp-chyby li { font: 400 12.5px/1.5 Inter, sans-serif; color: var(--red); }
+.prsp-btn {
+  align-self: flex-start;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--red);
+  color: #fff;
+  font: 600 13px/1 'Space Grotesk', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 7px 16px -7px rgba(224, 52, 31, 0.8);
+}
+.prsp-btn:disabled { opacity: 0.6; cursor: wait; }
+.prsp-btn.ghost { background: var(--paper); color: var(--ink); border: 1px solid var(--line); box-shadow: none; }
+.prsp-pozn { font: italic 400 11px/1.5 var(--font-emph, Georgia, serif); color: var(--label); margin: 0; }
+.prsp-pata { font: italic 400 11.5px/1.6 var(--font-emph, Georgia, serif); color: var(--muted); margin: 16px 0 0; }
+.prsp-hotovo { margin-top: 22px; background: rgba(30, 138, 79, 0.08); border: 1px solid rgba(30, 138, 79, 0.3); border-radius: 14px; padding: 20px 22px; }
+.prsp-hotovo b { font: 500 18px/1.3 var(--font-emph, Georgia, serif); color: var(--ink); }
+.prsp-hotovo p { font: 400 13.5px/1.6 Inter, sans-serif; color: var(--muted); margin: 8px 0 14px; max-width: 56ch; }
+@media (max-width: 560px) {
+  .prsp-radek { grid-template-columns: 1fr; }
+}
