@@ -1,0 +1,30 @@
+# Pomezní bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
+# Zdroj: Category:Pomezní bouda + fulltext „Pomezní bouda" (namespace File) na commons.wikimedia.org
+# Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;
+# u geotagovaných nálezů je surový geotag snímku, polohu vůči chatě posoudí redakce.
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
+# STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
+# kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
+
+chata: pomezni-bouda
+oblast: krkonose
+nazevChaty: Pomezní bouda
+zdroj: "Wikimedia Commons API (kategorie + fulltext — chata bez GPS v YAML,
+  geosearch neproběhl), profil chaty: data/chaty"
+checked: 2026-07-28
+fotky:
+  - soubor: File:Pomezní bouda.JPG
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_bouda.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/4/43/Pomezn%C3%AD_bouda.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pomezn%C3%AD_bouda.JPG/960px-Pomezn%C3%AD_bouda.JPG
+    rozmery: 2592×1944
+    geotag: 50.74588889, 15.82030556
+    datum: 2008-05
+    popis: Pomezní bouda (Blaschkebaude, Goderbaude) - mountain hostel in Malá Úpa,
+      Riesengebirge (Karkonosze), Czech Republic

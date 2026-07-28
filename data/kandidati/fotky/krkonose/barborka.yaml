@@ -1,4 +1,4 @@
-# Barborka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Barborka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Barborka + fulltext „Barborka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: krkonose
 nazevChaty: Barborka
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   data/chaty"
-checked: 2026-07-27
+checked: 2026-07-28
 fotky:
   - soubor: File:Filip Kořínek.jpg
     autor: Jarber
@@ -246,7 +246,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0003-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/56/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0003-RIKiWK-MCD.jpg
-    nalezeno: kategorie + fulltext
+    nalezeno: kategorie
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0003-RIKiWK-MCD.jpg/960px-Uroczysta_Msza_%C5%9Awi%C4%99ta_w_intencji_g%C3%B3rnik%C3%B3w_z_okazji_wspomnienia_%C5%9Bw._Barbary-Radziechowy-2024-0003-RIKiWK-MCD.jpg
     rozmery: 8254×5503
@@ -621,7 +621,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0001-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/5/5b/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0001-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0001-RIKiWK-MCD.jpg/960px-Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0001-RIKiWK-MCD.jpg
     rozmery: 8256×5504
@@ -636,7 +636,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0002-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/1f/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0002-RIKiWK-MCD.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0002-RIKiWK-MCD.jpg/960px-Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0002-RIKiWK-MCD.jpg
     rozmery: 5504×8256
@@ -696,7 +696,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0006-RIKiWK-MCD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9a/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0006-RIKiWK-MCD.jpg
-    nalezeno: kategorie + fulltext
+    nalezeno: kategorie
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0006-RIKiWK-MCD.jpg/960px-Uroczysto%C5%9B%C4%87_%C5%9Awi%C4%99ta_G%C3%B3rnik%C3%B3w_-_Dzie%C5%84_%C5%9Awi%C4%99tej_Barbary-K%C5%82obuck-2022-0006-RIKiWK-MCD.jpg
     rozmery: 5504×8256

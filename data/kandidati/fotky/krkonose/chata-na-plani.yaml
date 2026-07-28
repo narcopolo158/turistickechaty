@@ -1,4 +1,4 @@
-# Bouda Na Pláni — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Bouda Na Pláni — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Bouda Na Pláni + fulltext „Bouda Na Pláni" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,14 +11,14 @@ oblast: krkonose
 nazevChaty: Bouda Na Pláni
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   data/chaty"
-checked: 2026-07-27
+checked: 2026-07-28
 fotky:
   - soubor: File:Bouda na Pláni.jpg
     autor: Semipepino
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Bouda_na_Pl%C3%A1ni.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/10/Bouda_na_Pl%C3%A1ni.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bouda_na_Pl%C3%A1ni.jpg/960px-Bouda_na_Pl%C3%A1ni.jpg
     rozmery: 4032×2272
@@ -26,13 +26,3 @@ fotky:
     datum: 2023-09-28 16:16:39
     popis: Bouda na Pláni leží v Krkonoších. V roce 1944 zde plukovník Claus von
       Stauffenberg s dalšími plánovali atentát na Adolfa Hitlera.
-  - soubor: File:Plá 5.JPG
-    autor: Zákupák
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:Pl%C3%A1_5.JPG
-    original: https://upload.wikimedia.org/wikipedia/commons/d/d4/Pl%C3%A1_5.JPG
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Pl%C3%A1_5.JPG/960px-Pl%C3%A1_5.JPG
-    rozmery: 3648×2432
-    datum: 2013-10-12
-    popis: Chata Na pláni

@@ -1,4 +1,4 @@
-# Bouda Helena — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-27)
+# Bouda Helena — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Bouda Helena + fulltext „Bouda Helena" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: krkonose
 nazevChaty: Bouda Helena
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   data/chaty"
-checked: 2026-07-27
+checked: 2026-07-28
 fotky:
   - soubor: File:Černý Důl, Lučiny, čp. 215, Pražská bouda (02).jpg
     autor: ŠJů
@@ -30,7 +30,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._183,_bouda_Helena_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/ce/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena_%2801%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena_%2801%29.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena_%2801%29.jpg
     rozmery: 2592×1944
@@ -66,7 +66,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._183,_bouda_Helena.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/2c/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena.jpg
     rozmery: 2513×1593
@@ -128,7 +128,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._183,_bouda_Helena_(02).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/8a/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena_%2802%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena_%2802%29.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._183%2C_bouda_Helena_%2802%29.jpg
     rozmery: 2592×1944
@@ -178,7 +178,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._215,_Pra%C5%BEsk%C3%A1_bouda,_vlevo_Slovanka,_Oddech_a_Helena.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/37/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda%2C_vlevo_Slovanka%2C_Oddech_a_Helena.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda%2C_vlevo_Slovanka%2C_Oddech_a_Helena.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda%2C_vlevo_Slovanka%2C_Oddech_a_Helena.jpg
     rozmery: 2592×1944
@@ -277,7 +277,7 @@ fotky:
     licence: CC BY 4.0
     stranka: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%BD_D%C5%AFl,_Lu%C4%8Diny,_%C4%8Dp._215,_Pra%C5%BEsk%C3%A1_bouda,_vlevo_Slovanka,_Oddech_a_Helena_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/cd/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda%2C_vlevo_Slovanka%2C_Oddech_a_Helena_%2801%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda%2C_vlevo_Slovanka%2C_Oddech_a_Helena_%2801%29.jpg/960px-%C4%8Cern%C3%BD_D%C5%AFl%2C_Lu%C4%8Diny%2C_%C4%8Dp._215%2C_Pra%C5%BEsk%C3%A1_bouda%2C_vlevo_Slovanka%2C_Oddech_a_Helena_%2801%29.jpg
     rozmery: 2592×1944
@@ -458,368 +458,25 @@ fotky:
     datum: Taken on 27 May 2023
     popis: Pec pod Sněžkou , Trutnov District , Czechia . House no. 217, Lidická
       bouda.
-  - soubor: File:1860s Helena, Montana - Main Street.jpg
-    autor: Unknown (1860s). Published in the Helena, Montana Independent Record
-      (newspaper) in 2018.
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:1860s_Helena,_Montana_-_Main_Street.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/1/1c/1860s_Helena%2C_Montana_-_Main_Street.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/1860s_Helena%2C_Montana_-_Main_Street.jpg/960px-1860s_Helena%2C_Montana_-_Main_Street.jpg
-    rozmery: 1200×677
-    datum: 1869-12-31
-    popis: "Helena, Montana, U.S., Main Street in the 1860s Source: Bradbury, Mary
-      Jane; Shields, Mike; Jacobson, Hal History of Helena - Catalog - Helena
-      College .</ref><ref> .mw-parser-output
-      cite.citation{font-style:inherit;word-wrap:break-word}.mw…"
-  - soubor: File:1865 Street scene - Helena, Montana Territory (probably S Park Ave
-      looking East).jpg
-    autor: Unidentified photographer from 1865.
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:1865_Street_scene_-_Helena,_Montana_Territory_(probably_S_Park_Ave_looking_East).jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/f/f1/1865_Street_scene_-_Helena%2C_Montana_Territory_%28probably_S_Park_Ave_looking_East%29.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/1865_Street_scene_-_Helena%2C_Montana_Territory_%28probably_S_Park_Ave_looking_East%29.jpg/960px-1865_Street_scene_-_Helena%2C_Montana_Territory_%28probably_S_Park_Ave_looking_East%29.jpg
-    rozmery: 1518×738
-    datum: 1865-12-31
-    popis: '* 1865 photograph of street scene in Helena , Montana Territory . From
-      source: "This was the first photograph of Helena, taken in 1865. Stand on
-      South Park Street with the old federal building on your right and the
-      library on your left. Lo…'
-  - soubor: File:1868 Plat map of Helena, Montana.png
-    autor: A. C. Wheaton, T. E. (apparently the 1868 equivalent of a civil engineer)
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:1868_Plat_map_of_Helena,_Montana.png
-    original: https://upload.wikimedia.org/wikipedia/commons/d/d5/1868_Plat_map_of_Helena%2C_Montana.png
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/1868_Plat_map_of_Helena%2C_Montana.png/960px-1868_Plat_map_of_Helena%2C_Montana.png
-    rozmery: 1684×2447
-    datum: 1868-12-31
-    popis: 1868 plat map of Helena, Montana , U.S. Uploader added light blue color
-      fill to streets, that was not in the 1868 original.
-  - soubor: File:1870+ Front-page banners of early newspapers in Helena, Montana.jpg
-    autor: Designers of front page top banners of newspapers in Helena, Montana,
-      U.S., from 1870 through 1918
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:1870%2B_Front-page_banners_of_early_newspapers_in_Helena,_Montana.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/1/14/1870%2B_Front-page_banners_of_early_newspapers_in_Helena%2C_Montana.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/1870%2B_Front-page_banners_of_early_newspapers_in_Helena%2C_Montana.jpg/960px-1870%2B_Front-page_banners_of_early_newspapers_in_Helena%2C_Montana.jpg
-    rozmery: 2500×1492
-    datum: 1870-10-27
-    popis: Front-page banners of early newspapers in Helena, Montana , U.S.
-  - soubor: File:1870s Helena, Montana - Last Chance Gulch - looking north from
-      Anchor Park.jpg
-    autor: Unknown photographer from the 1870s in Helena, Montana (US)
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:1870s_Helena,_Montana_-_Last_Chance_Gulch_-_looking_north_from_Anchor_Park.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/a/a3/1870s_Helena%2C_Montana_-_Last_Chance_Gulch_-_looking_north_from_Anchor_Park.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/1870s_Helena%2C_Montana_-_Last_Chance_Gulch_-_looking_north_from_Anchor_Park.jpg/960px-1870s_Helena%2C_Montana_-_Last_Chance_Gulch_-_looking_north_from_Anchor_Park.jpg
-    rozmery: 1369×993
-    datum: 1870-01-01
-    popis: "Photograph of Last Chance Gulch (now commonly, \"Main Street\") in
-      Helena, Montana looking northward from what is now Anchor Park Source:
-      (2003) Camp to Capital / Step into Helena's Past , Helena, Montana (US):
-      Montana Historical Society, p.…"
-  - soubor: File:18730704 Helena, Montana - Last Chance Gulch - South from Broadway.jpg
-    autor: Unknown photographer from July 4, 1873 in Helena, Montana (US)
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:18730704_Helena,_Montana_-_Last_Chance_Gulch_-_South_from_Broadway.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/5/59/18730704_Helena%2C_Montana_-_Last_Chance_Gulch_-_South_from_Broadway.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/18730704_Helena%2C_Montana_-_Last_Chance_Gulch_-_South_from_Broadway.jpg/960px-18730704_Helena%2C_Montana_-_Last_Chance_Gulch_-_South_from_Broadway.jpg
-    rozmery: 1381×1092
-    datum: 1873-07-04
-    popis: "Photograph of Last Chance Gulch (now commonly, \"Main Street\") in
-      Helena, Montana looking southward from what is now Broadway, with a
-      fireman's parade on July 4, 1873 Source: (2003) Camp to Capital / Step
-      into Helena's Past , Helena, Montan…"
-  - soubor: File:18900601 Helena Business College advertisement - The Daily
-      Independent (Helena, Montana).jpg
-    autor: Advertiser generating display ad for business school as published in The
-      Daily Independent newspaper, 1890
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:18900601_Helena_Business_College_advertisement_-_The_Daily_Independent_(Helena,_Montana).jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/8/8d/18900601_Helena_Business_College_advertisement_-_The_Daily_Independent_%28Helena%2C_Montana%29.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/18900601_Helena_Business_College_advertisement_-_The_Daily_Independent_%28Helena%2C_Montana%29.jpg/960px-18900601_Helena_Business_College_advertisement_-_The_Daily_Independent_%28Helena%2C_Montana%29.jpg
-    rozmery: 2500×2063
-    datum: 1890-06-01
-    popis: Newspaper display advertisement in The Daily Independent for Helena
-      Business College in Helena, Montana , U.S. (June 1, 1890)
-  - soubor: File:1891 Power Block building - Helena, Montana.jpg
-    autor: 1891 image in Figure 13 of source credited in source to "A. W. Lyman".
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:1891_Power_Block_building_-_Helena,_Montana.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/1/1b/1891_Power_Block_building_-_Helena%2C_Montana.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/1891_Power_Block_building_-_Helena%2C_Montana.jpg/960px-1891_Power_Block_building_-_Helena%2C_Montana.jpg
-    rozmery: 969×713
-    datum: 1891-12-31
-    popis: 1891 image of Power Building, now known as the Power Block, in Helena,
-      Montana , U.S. Image credited to A. W. Lyman
-  - soubor: File:1900s Helena, Montana - Main street.jpg
-    autor: Unknown maker of postcard from the 1900s decade, published in the Helena,
-      Montana Independent Record (newspaper) in 2017.
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:1900s_Helena,_Montana_-_Main_street.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/9/98/1900s_Helena%2C_Montana_-_Main_street.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/1900s_Helena%2C_Montana_-_Main_street.jpg/960px-1900s_Helena%2C_Montana_-_Main_street.jpg
-    rozmery: 1200×829
-    datum: 1900-12-31
-    popis: "Helena, Montana, U.S., Main Street in the 1900s (decade) Source:
-      https://helenair.com/news/local/postcards-show-what-helena-looked-like-10\
-      0-years-ago/collection_8a7df574-bf04-53a7-8b3c-c9f7b5795057.html Archive
-      of source: https://web.archi…"
-  - soubor: File:1900s Helena, Montana - Mount Helena postcard.jpg
-    autor: "Postcard of Mount Helena in Helena, Montana , U.S., Main Street in the
-      1900s (decade) Source:
-      https://helenair.com/news/local/postcards-show-what-helena-looked-like-10\
-      0-years-ago/collection_8a7df574-bf04-53a7-8b3c-c9f7b5795057.html Archive
-      of source: https://web.archive.org/web/20200716054830/https…"
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:1900s_Helena,_Montana_-_Mount_Helena_postcard.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/5/5d/1900s_Helena%2C_Montana_-_Mount_Helena_postcard.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/1900s_Helena%2C_Montana_-_Mount_Helena_postcard.jpg/960px-1900s_Helena%2C_Montana_-_Mount_Helena_postcard.jpg
-    rozmery: 1200×795
-    datum: 1909-12-31
-    popis: "Postcard of Mount Helena in Helena, Montana, U.S. (1900s decade) Source:
-      https://helenair.com/news/local/postcards-show-what-helena-looked-like-10\
-      0-years-ago/collection_8a7df574-bf04-53a7-8b3c-c9f7b5795057.html Archive
-      of source: https://w…"
-  - soubor: File:1912 John P. Carroll - Mount Saint Charles Scholastic - Helena,
-      Montana.jpg
-    autor: Mount St. Charles College (now Carroll College), published by State
-      Publishing Company, Helena, Montana
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:1912_John_P._Carroll_-_Mount_Saint_Charles_Scholastic_-_Helena,_Montana.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/6/6d/1912_John_P._Carroll_-_Mount_Saint_Charles_Scholastic_-_Helena%2C_Montana.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/1912_John_P._Carroll_-_Mount_Saint_Charles_Scholastic_-_Helena%2C_Montana.jpg/960px-1912_John_P._Carroll_-_Mount_Saint_Charles_Scholastic_-_Helena%2C_Montana.jpg
-    rozmery: 1440×2331
-    datum: 1912-07-01
-    popis: Photographic portrait of John P. Carroll, founder of Mount St. Charles
-      College which is now Carroll College in Helena, Montana, U.S., as
-      published on July 1, 1912 in Mount Saint Charles Scholastic quarterly of
-      the college.
-  - soubor: File:19120701 Mount Saint Charles Scholastic (cover) - Helena, Montana.jpg
-    autor: Mount St. Charles College (now Carroll College), published by State
-      Publishing Company, Helena, Montana
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:19120701_Mount_Saint_Charles_Scholastic_(cover)_-_Helena,_Montana.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/4/47/19120701_Mount_Saint_Charles_Scholastic_%28cover%29_-_Helena%2C_Montana.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/19120701_Mount_Saint_Charles_Scholastic_%28cover%29_-_Helena%2C_Montana.jpg/960px-19120701_Mount_Saint_Charles_Scholastic_%28cover%29_-_Helena%2C_Montana.jpg
-    rozmery: 1760×2716
-    datum: 1912-07-01
-    popis: Cover of quarterly magazine of what is now Carroll College , Mount Saint
-      Charles Scholastic (July 1, 1912), in Helena, Montana , U.S.
-  - soubor: File:5d790fbb3fa27.image.jpg
-    autor: Mellanby13!
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:5d790fbb3fa27.image.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/1/1e/5d790fbb3fa27.image.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/1/1e/5d790fbb3fa27.image.jpg
-    rozmery: 750×498
-    datum: 2019-01-01
-    popis: "Brian D'Ambrosio, author of Montana Entertainers: Famous and Almost
-      Forgotten, outside of the former Helena home of Charley Pride."
-  - soubor: File:Back cover of Helena's Social Supremacy.png
-    autor: Anonymous Unknown author
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:Back_cover_of_Helena%27s_Social_Supremacy.png
-    original: https://upload.wikimedia.org/wikipedia/commons/2/20/Back_cover_of_Helena%27s_Social_Supremacy.png
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Back_cover_of_Helena%27s_Social_Supremacy.png/960px-Back_cover_of_Helena%27s_Social_Supremacy.png
-    rozmery: 1318×700
-    datum: "1894"
-    popis: Back cover of Helena's Social Supremacy (1894). Shows Helena an octopus,
-      grasping other cities in Montana.
-  - soubor: File:Brian D'Ambrosio Montana.jpg
-    autor: Mellanby13!
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Brian_D%27Ambrosio_Montana.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/0/01/Brian_D%27Ambrosio_Montana.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/0/01/Brian_D%27Ambrosio_Montana.jpg
-    rozmery: 960×772
-    datum: 2016-08-11
-    popis: Brian D'Ambrosio, left, filming of Montana boxing documentary, with
-      welterweight Duran Caferro, center.
-  - soubor: File:Cemetery of Polish victims of the German Nazi massacre in Sochy
-      from June 1, 1943 Skrzypa family.jpg
-    autor: KoronaC
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_from_June_1,_1943_Skrzypa_family.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/1/11/Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_from_June_1%2C_1943_Skrzypa_family.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_from_June_1%2C_1943_Skrzypa_family.jpg/960px-Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_from_June_1%2C_1943_Skrzypa_family.jpg
-    rozmery: 3648×2736
-    datum: 2019-09-15
-    popis: Cemetery of Polish victims of the German Nazi massacre in Sochy (near
-      Zwierzyniec) on June 1, 1943 during the German occupation of Poland from
-      1939-1945. Skrzypa family. Piotr Skrzypa, age 63, Stanisław Skrzypa, age
-      15, Helena Skrzypa, age…
-  - soubor: File:Fort Curtis Helena AR 006.jpg
-    autor: Thomas R Machnitzki (thomas@machnitzki.com)
-    licence: CC BY 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Fort_Curtis_Helena_AR_006.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/c/cb/Fort_Curtis_Helena_AR_006.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Fort_Curtis_Helena_AR_006.jpg/960px-Fort_Curtis_Helena_AR_006.jpg
-    rozmery: 1024×768
-    datum: 2012-03-18
-    popis: Civil War Fort Curtis in Helena, Arkansas
-  - soubor: File:Helena Modjeska Chase Johnson Drea (23 Sep 1900 - 22 Dec 1986)
-      taken in ca1975.jpg
-    autor: Dailynewsa
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Helena_Modjeska_Chase_Johnson_Drea_(23_Sep_1900_-_22_Dec_1986)_taken_in_ca1975.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/7/76/Helena_Modjeska_Chase_Johnson_Drea_%2823_Sep_1900_-_22_Dec_1986%29_taken_in_ca1975.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Helena_Modjeska_Chase_Johnson_Drea_%2823_Sep_1900_-_22_Dec_1986%29_taken_in_ca1975.jpg/960px-Helena_Modjeska_Chase_Johnson_Drea_%2823_Sep_1900_-_22_Dec_1986%29_taken_in_ca1975.jpg
-    rozmery: 1988×2828
-    datum: 2022-04-12 02:19:49
-    popis: Muofhe Maanda known as Sllimy_tox(08 oct 2008
-  - soubor: File:Helena Montana 2006.jpg
-    autor: RTC at English Wikipedia
+  - soubor: File:Chata Helena.JPG
+    autor: O. Mejsnar
     licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Helena_Montana_2006.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/7/75/Helena_Montana_2006.jpg
-    nalezeno: fulltext
-    licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Helena_Montana_2006.jpg/960px-Helena_Montana_2006.jpg
-    rozmery: 3907×1666
-    datum: 2 September 2006 (original upload date)
-    popis: Photo of Helena , Montana with similar view to that in the 1870 photo, to
-      show changes since then to 2006.
-  - soubor: File:Chief Eagle Cap signs a petition at the Montana League of Women
-      Voters booth at the Montana State Fair in Helena.jpg
-    autor: Unknown author Unknown author
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Chief_Eagle_Cap_signs_a_petition_at_the_Montana_League_of_Women_Voters_booth_at_the_Montana_State_Fair_in_Helena.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/e/e9/Chief_Eagle_Cap_signs_a_petition_at_the_Montana_League_of_Women_Voters_booth_at_the_Montana_State_Fair_in_Helena.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/e/e9/Chief_Eagle_Cap_signs_a_petition_at_the_Montana_League_of_Women_Voters_booth_at_the_Montana_State_Fair_in_Helena.jpg
-    rozmery: 620×481
-    datum: 1919-01-02
-    popis: Chief Eagle Cap signs a petition at the Montana League of Women Voters
-      booth at the Montana State Fair in Helena. Left to right, Agnes Webster,
-      Helen Seth, Chief Eagle Cap (Blackfeet), Charlotte Bowman, Mrs. E.K.
-      Bowman.
-  - soubor: File:Isis nursing Horus MET 17.190.1641 front.jpg
-    autor: This file was donated to Wikimedia Commons as part of a project by the
-      Metropolitan Museum of Art . See the Image and Data Resources Open Access
-      Policy
-    licence: CC0
-    stranka: https://commons.wikimedia.org/wiki/File:Isis_nursing_Horus_MET_17.190.1641_front.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/c/ca/Isis_nursing_Horus_MET_17.190.1641_front.jpg
-    nalezeno: fulltext
-    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Isis_nursing_Horus_MET_17.190.1641_front.jpg/960px-Isis_nursing_Horus_MET_17.190.1641_front.jpg
-    rozmery: 1083×2000
-    datum: circa 1070 date QS:P571,+1070-00-00T00:…
-    popis: Statuette, Isis, Horus
-  - soubor: File:Kazimierz Sirko lat 2 yo Cemetery of Polish victims of the German
-      Nazi massacre in Sochy from June 1, 1943 Sirko family plaque.jpg
-    autor: KoronaC
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Kazimierz_Sirko_lat_2_yo_Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_from_June_1,_1943_Sirko_family_plaque.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/9/98/Kazimierz_Sirko_lat_2_yo_Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_from_June_1%2C_1943_Sirko_family_plaque.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Kazimierz_Sirko_lat_2_yo_Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_from_June_1%2C_1943_Sirko_family_plaque.jpg/960px-Kazimierz_Sirko_lat_2_yo_Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_from_June_1%2C_1943_Sirko_family_plaque.jpg
-    rozmery: 3648×2736
-    datum: 2019-09-15
-    popis: The cemetery of Polish victims of the German Nazi massacre in Sochy (near
-      Zwierzyniec, in the Zamość County, Lublin Voivodeship) on June 1, 1943,
-      during the German occupation of Poland from 1939 to 1945. During World War
-      II. June 1 is a sy…
-  - soubor: File:Kazimierz Sirko lat 2 yo Cemetery of Polish victims of the German
-      Nazi massacre in Sochy in Poland from June 1, 1943 Sirko family.jpg
-    autor: KoronaC
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Kazimierz_Sirko_lat_2_yo_Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_in_Poland_from_June_1,_1943_Sirko_family.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/4/4f/Kazimierz_Sirko_lat_2_yo_Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_in_Poland_from_June_1%2C_1943_Sirko_family.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Kazimierz_Sirko_lat_2_yo_Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_in_Poland_from_June_1%2C_1943_Sirko_family.jpg/960px-Kazimierz_Sirko_lat_2_yo_Cemetery_of_Polish_victims_of_the_German_Nazi_massacre_in_Sochy_in_Poland_from_June_1%2C_1943_Sirko_family.jpg
-    rozmery: 3648×2736
-    datum: 2019-09-15
-    popis: The cemetery of Polish victims of the German Nazi massacre in Sochy (near
-      Zwierzyniec, in the Zamość County, Lublin Voivodeship) on June 1, 1943,
-      during the German occupation of Poland from 1939 to 1945. During World War
-      II. June 1 is a sy…
-  - soubor: File:Northern Pacific Railway1382 Locomotive Helena Montana.jpg
-    autor: Fishinphoto
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Northern_Pacific_Railway1382_Locomotive_Helena_Montana.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/0/0a/Northern_Pacific_Railway1382_Locomotive_Helena_Montana.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/0/0a/Northern_Pacific_Railway1382_Locomotive_Helena_Montana.jpg
-    rozmery: 600×440
-    datum: 2025-05-12 04:51:17
-    popis: Northern Pacific Railway1382 Locomotive Helena Montana
-  - soubor: File:P267301coll3 7443 medium.jpg
-    autor: Leslie H. Jorud
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:P267301coll3_7443_medium.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/4/44/P267301coll3_7443_medium.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/4/44/P267301coll3_7443_medium.jpg
-    rozmery: 500×351
-    datum: 1922-11-01
-    popis: American Railway Express employees pose with a loaded freight wagon in
-      Helena, Montana, November 1, 1922. L. H. Jorud, photographer. In the
-      collection of the Montana Historical Society Photograph Archives, Lot 037
-      CB B01 F18a E2.1
-  - soubor: File:Relief with Scene from the Legend of the True Cross MET
-      sf23-79-1s4.jpg
-    autor: This file was donated to Wikimedia Commons as part of a project by the
-      Metropolitan Museum of Art . See the Image and Data Resources Open Access
-      Policy
-    licence: CC0
-    stranka: https://commons.wikimedia.org/wiki/File:Relief_with_Scene_from_the_Legend_of_the_True_Cross_MET_sf23-79-1s4.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/2/29/Relief_with_Scene_from_the_Legend_of_the_True_Cross_MET_sf23-79-1s4.jpg
-    nalezeno: fulltext
-    licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Relief_with_Scene_from_the_Legend_of_the_True_Cross_MET_sf23-79-1s4.jpg/960px-Relief_with_Scene_from_the_Legend_of_the_True_Cross_MET_sf23-79-1s4.jpg
-    rozmery: 1446×3129
-    datum: circa 1400 date QS:P571,+1400-00-00T00:…
-    popis: South Netherlandish; Relief; Sculpture-Stone
-  - soubor: File:Sanborn Fire Insurance Map from Helena, Lewis and Clark County,
-      Montana, 1950, Plate 0139.jpg
-    autor: Unknown author Unknown author
-    licence: Public domain
-    stranka: https://commons.wikimedia.org/wiki/File:Sanborn_Fire_Insurance_Map_from_Helena,_Lewis_and_Clark_County,_Montana,_1950,_Plate_0139.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/2/22/Sanborn_Fire_Insurance_Map_from_Helena%2C_Lewis_and_Clark_County%2C_Montana%2C_1950%2C_Plate_0139.jpg
-    nalezeno: fulltext
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sanborn_Fire_Insurance_Map_from_Helena%2C_Lewis_and_Clark_County%2C_Montana%2C_1950%2C_Plate_0139.jpg/960px-Sanborn_Fire_Insurance_Map_from_Helena%2C_Lewis_and_Clark_County%2C_Montana%2C_1950%2C_Plate_0139.jpg
-    rozmery: 6519×7796
-    datum: "1950"
-    popis: Sanborn Fire Insurance Map from Helena, Lewis and Clark County, Montana,
-      1950, Plate 0139
-  - soubor: File:The Bullwacker John B Weaver, Montana Historical Society Museum
-      Store, Helena.jpg
-    autor: Fishinphoto
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:The_Bullwacker_John_B_Weaver,_Montana_Historical_Society_Museum_Store,_Helena.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/b/b9/The_Bullwacker_John_B_Weaver%2C_Montana_Historical_Society_Museum_Store%2C_Helena.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/b/b9/The_Bullwacker_John_B_Weaver%2C_Montana_Historical_Society_Museum_Store%2C_Helena.jpg
-    rozmery: 424×600
-    datum: 2025-05-09 06:33:31
-    popis: The Bullwacker John B Weaver, Montana Historical Society Museum Store,
-      Helena
+    stranka: https://commons.wikimedia.org/wiki/File:Chata_Helena.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/2/27/Chata_Helena.JPG
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Chata_Helena.JPG/960px-Chata_Helena.JPG
+    rozmery: 3872×2592
+    datum: 2012-03-03
+    popis: Bouda Helena naproti Pražské boudě
+  - soubor: File:Prazska bouda.JPG
+    autor: O. Mejsnar
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Prazska_bouda.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e4/Prazska_bouda.JPG
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Prazska_bouda.JPG/960px-Prazska_bouda.JPG
+    rozmery: 3872×2592
+    datum: 2012-03-03
+    popis: Pražská bouda a chata Helena focená z modré turistické trasy

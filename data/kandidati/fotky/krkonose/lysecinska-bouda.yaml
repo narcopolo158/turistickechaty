@@ -1,0 +1,39 @@
+# Lysečinská bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
+# Zdroj: Category:Lysečinská bouda + fulltext „Lysečinská bouda" (namespace File) na commons.wikimedia.org
+# Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;
+# u geotagovaných nálezů je surový geotag snímku, polohu vůči chatě posoudí redakce.
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
+# STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
+# kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
+
+chata: lysecinska-bouda
+oblast: krkonose
+nazevChaty: Lysečinská bouda
+zdroj: "Wikimedia Commons API (kategorie + fulltext — chata bez GPS v YAML,
+  geosearch neproběhl), profil chaty: data/chaty"
+checked: 2026-07-28
+fotky:
+  - soubor: File:Lysečinská b. - rozcestník.JPG
+    autor: Vojáček Karel
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Lyse%C4%8Dinsk%C3%A1_b._-_rozcestn%C3%ADk.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/1/11/Lyse%C4%8Dinsk%C3%A1_b._-_rozcestn%C3%ADk.JPG
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Lyse%C4%8Dinsk%C3%A1_b._-_rozcestn%C3%ADk.JPG/960px-Lyse%C4%8Dinsk%C3%A1_b._-_rozcestn%C3%ADk.JPG
+    rozmery: 3648×2736
+    datum: 2014-04-05 13:48:20
+    popis: Rozcestník u Lysečinské boudy v Krkonoších z jara 2014
+  - soubor: File:Lysečinská bouda.JPG
+    autor: Vojáček Karel
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Lyse%C4%8Dinsk%C3%A1_bouda.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/2/25/Lyse%C4%8Dinsk%C3%A1_bouda.JPG
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Lyse%C4%8Dinsk%C3%A1_bouda.JPG/960px-Lyse%C4%8Dinsk%C3%A1_bouda.JPG
+    rozmery: 3470×2480
+    datum: 2014-04-05 13:49:30
+    popis: Chata Lysečiny, Lysečinské boudy v Krkonoších z jara 2014
