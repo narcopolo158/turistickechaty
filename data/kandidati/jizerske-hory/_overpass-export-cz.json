@@ -1,0 +1,205 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-28T12:43:06Z",
+    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 2650423742,
+  "lat": 50.7599755,
+  "lon": 15.2876306,
+  "tags": {
+    "addr:city": "Albrechtice v Jizerských horách",
+    "addr:housenumber": "54",
+    "addr:place": "Albrechtice v Jizerských horách",
+    "addr:postcode": "46843",
+    "name": "Koryna",
+    "note": "info viz. Web",
+    "operator": "pí. Bartoňová",
+    "phone": "+420 603 581 336",
+    "source": "Provozovatelka",
+    "tourism": "alpine_hut",
+    "website": "http://www.koryna.xf.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 4342957853,
+  "lat": 50.7532081,
+  "lon": 15.2013541,
+  "tags": {
+    "ele": "742",
+    "email": "chatabarbora@gmail.com",
+    "name": "Barbora",
+    "tourism": "alpine_hut",
+    "website": "https://www.barbora.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 4800362017,
+  "lat": 50.8140049,
+  "lon": 15.1577559,
+  "tags": {
+    "beds": "63",
+    "ele": "780",
+    "email": "info@samalova-chata.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Šámalova chata",
+    "name:de": "Samals Hütte",
+    "rooms": "15",
+    "tourism": "alpine_hut",
+    "website": "https://www.samalova-chata.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 4806291024,
+  "lat": 50.7575355,
+  "lon": 15.2113236,
+  "tags": {
+    "beds": "56",
+    "ele": "710",
+    "email": "chatalucanka@seznam.cz",
+    "name": "Lučanka",
+    "tourism": "alpine_hut",
+    "website": "http://www.lucanka.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 30778232,
+  "center": {
+    "lat": 50.8249909,
+    "lon": 15.3365597
+  },
+  "nodes": [
+    340355938,
+    340355939,
+    340355941,
+    340355942,
+    340355943,
+    340355945,
+    340355946,
+    340355947,
+    340355935,
+    340355937,
+    340355938
+  ],
+  "tags": {
+    "building": "house",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "name": "Chata Pešákovna",
+    "ref:ruian:building": "12050695",
+    "source": "cuzk:ruian",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 51573239,
+  "center": {
+    "lat": 50.8878990,
+    "lon": 15.2302406
+  },
+  "nodes": [
+    659558572,
+    659558568,
+    659558571,
+    659558565,
+    659558567,
+    659558566,
+    659558563,
+    659558569,
+    659558564,
+    659558570,
+    659558572
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Hubertka",
+    "name:de": "Hubertusbaude",
+    "source": "cuzk:km",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 707844707,
+  "center": {
+    "lat": 50.8883645,
+    "lon": 15.0997596
+  },
+  "nodes": [
+    6651294206,
+    6651294207,
+    6651294208,
+    6651294209,
+    6651294206
+  ],
+  "tags": {
+    "building": "yes",
+    "fireplace": "no",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 917434994,
+  "center": {
+    "lat": 50.8016297,
+    "lon": 15.2779577
+  },
+  "nodes": [
+    8521048867,
+    8521048866,
+    8521048865,
+    8521048864,
+    8521048867
+  ],
+  "tags": {
+    "access": "yes",
+    "alt_name": "Krömerova bouda",
+    "amenity": "cafe",
+    "atmosphere": "informal",
+    "building": "hut",
+    "building:colour": "#85552e",
+    "building:material": "wood",
+    "cafe:type": "self_service",
+    "children": "yes",
+    "covered": "yes",
+    "cuisine": "fast_food;coffee;alcoholic_beverages;beer;wine",
+    "description": "Samoobslužný bar v přírodě v malebném prostředí Jizerských hor s venkovní terasou a výhledem na okolní hory.",
+    "description:en": "Self-service forest bar in a scenic part of the Jizera Mountains with an outdoor terrace and mountain views.",
+    "dine_in": "yes",
+    "fireplace": "yes",
+    "groups": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Lesní bar Krömerova bouda",
+    "operator": "Lesy České republiky",
+    "outdoor_seating": "yes",
+    "pets": "yes",
+    "seating": "outdoor",
+    "shelter": "yes",
+    "shelter_type": "basic_hut",
+    "start_date": "2015",
+    "takeaway": "yes",
+    "tourism": "wilderness_hut",
+    "wikidata": "Q20755170",
+    "wikimedia_commons": "Category:Krömerova_bouda",
+    "wikipedia": "cs:Krömerova_bouda"
+  }
+}
+
+  ]
+}

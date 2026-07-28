@@ -1,0 +1,118 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-28T12:43:06Z",
+    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 98214072,
+  "center": {
+    "lat": 50.8150688,
+    "lon": 15.3831562
+  },
+  "nodes": [
+    1136178786,
+    12640537676,
+    3032182187,
+    1136178782,
+    1136178756,
+    5882595733,
+    1136178786
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "hotel",
+    "name": "Stacja Turystyczna Orle",
+    "opening_hours": "Mo-Su 08:00-21:00",
+    "phone": "+48500610115",
+    "tourism": "alpine_hut",
+    "website": "http://www.orleturystyczne.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 122672323,
+  "center": {
+    "lat": 50.8546685,
+    "lon": 15.3608086
+  },
+  "nodes": [
+    1370090660,
+    1370090659,
+    1370090655,
+    1370090656,
+    12036415599,
+    1370090660
+  ],
+  "tags": {
+    "building": "hotel",
+    "contact:email": "chatkagorzystow@o2.pl",
+    "contact:facebook": "https://www.facebook.com/pages/Chatka-G%C3%B3rzyst%C3%B3w/148609605212071",
+    "description": "Własność: prywatne. Otwarte: cały rok Ceny: 29 zł, „gleba” 12, pole namiotowe 10 zł, rabaty: HDK",
+    "name": "Chatka Górzystów",
+    "name:de": "Groß-Iser-Baude",
+    "name:pl": "Chatka Górzystów",
+    "note": "budynek nie ma oficjalnego adresu-sprawdzone w Starostwie Powiatowym Lwówek Śląski",
+    "phone": "+48 75 753 25 33;+48 607 426 998",
+    "restaurant": "yes",
+    "shower": "yes",
+    "toilets": "yes",
+    "tourism": "alpine_hut",
+    "water_heater": "yes",
+    "website": "https://www.chatkagorzystow.pl/index.html",
+    "wikidata": "Q9334431",
+    "wikipedia": "pl:Chatka Górzystów"
+  }
+},
+{
+  "type": "way",
+  "id": 128436123,
+  "center": {
+    "lat": 50.8923100,
+    "lon": 15.3087384
+  },
+  "nodes": [
+    1419404294,
+    1419404292,
+    13108588726,
+    3282995342,
+    4400941801,
+    3282995343,
+    3282995344,
+    3282995345,
+    3282995347,
+    3282995346,
+    1419404291,
+    1419404293,
+    3282995341,
+    3282995339,
+    3282995337,
+    3282995338,
+    1419404294
+  ],
+  "tags": {
+    "building": "yes",
+    "contact:email": "stogizerski@op.pl",
+    "contact:phone": "+48 601 974 896",
+    "ele": "1060",
+    "image": "https://sunny-trails.sonnige-pfade.de/wp-content/uploads/2024/02/Heufuder_Baude.jpg",
+    "name": "Schronisko na Stogu Izerskim",
+    "name:de": "Heufuderbaude",
+    "name:pl": "Schronisko na Stogu Izerskim",
+    "operator": "PTTK",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "tourism": "alpine_hut",
+    "website": "http://schroniskonastoguizerskim.pl/",
+    "wheelchair": "no",
+    "wikidata": "Q11835730",
+    "wikipedia": "pl:Schronisko PTTK na Stogu Izerskim"
+  }
+}
+
+  ]
+}

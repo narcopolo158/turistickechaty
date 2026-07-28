@@ -1,0 +1,37 @@
+# Koryna — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-28)
+# Zdroj: https://www.openstreetmap.org/node/2650423742 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Koryna
+slug: koryna
+zeme: cz
+oblast: krkonose
+typ: obsluhovana
+lat: 50.7599755
+lng: 15.2876306
+obec: Albrechtice v Jizerských horách
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2650423742 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-28
+kontakty:
+  telefon: +420 603 581 336
+  web: http://www.koryna.xf.cz
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2650423742 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-28
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-28) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: pí. Bartoňová
+
+  Poznámka z OSM: info viz. Web
