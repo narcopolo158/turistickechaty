@@ -11,6 +11,49 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-28 — denní session (bezobslužný běh): DATA-05 — párování razítek dohnalo korpus, přiřazení nově jen potvrzené
+
+**Hotovo:** Pořadí backlogu: DATA-02 blokovaná (čeká na Michalův klik),
+DATA-04 blokovaná (telefonáty = Michal, podklady v TELEFONATY-KRKONOSE.md
+hotové) → vzata **DATA-05**. Párování razítek razitkuj.cz naposledy běželo
+nad 23 chatami — publikovaných je dnes 76. Přepočet: jmenná shoda u **46
+chat (+30)** — nově mj. Výrovka (dřív „kandidát na dohledání", teď je náš
+profil), Vrbatova, Brádlerovky, Erlebachova, Kolínská, Pomezní, Rýchorská,
+Barborka, Kochanówka, Studenov… Přitom vyplulo riziko: stahovací skript
+bral shody rovnou, jenže jmenná shoda nad CELOSTÁTNÍM checklistem není
+přiřazení — „Portáš" (jiný objekt, nejspíš Javorníky) by se chytil na
+Portášky, „Chatka AKT na Pietraszonce" (cizí místní jméno) na naši
+krkonošskou chatku AKT, a publikovaná Martinova bouda má jmenovce na
+Benecku (DATA-17). Proto zaveden **potvrzovací mechanismus**:
+`data/razitka/_parovani-potvrzene.yaml` (potvrzené páry + `nesouvisi` pro
+prokazatelně cizí, vzor `_vyrazeno.yaml` z DATA-01), `sparuj` klasifikuje
+shodu **přesná/částečná** a nese `potvrzeno`; otisky se stahují VÝHRADNĚ
+u potvrzených (nepotvrzené workflow jen vypíše). Seed = 16 chat
+schválených Michalem 21. 7.; kontrolní průchod doložil, že potvrzený filtr
+= přesně stávající manifest (klik na workflow nic nezmění, dokud redakce
+nepotvrdí nové páry). Report `DATA-05-razitka-parovani.md` nově: potvrzené
+/ 32 ke kontrole (částečné shody vyznačené) / vyřazené / bez razítka (30)
+/ kandidáti na dohledání (3). Testy 15/15 data05 (+4 nové), data08/data10
+beze změn, tsc i lint čisté.
+
+**Příště:** (1) po potvrzení párů: klik na otisky-workflow → skeny nové
+vlny → `data05-razitkuj-zaloz` + seed; (2) jinak dle pořadí backlogu —
+DATA-06 zbývá render tras na profilu + výšky/časy (Actions) a katalog tras
+je z éry 23 chat (po vyrostlém korpusu chce přepočet – klik), nebo
+pokračování čtyřbloku F1 (session 2/4: kontrola deploye 6 večerních
+commitů v Actions, vizuální kontrola katalogu/homepage na stagingu, F1c
+2. průchod — hero koláž).
+
+**Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
+projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
+u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh
+se mnou? Bez potvrzení se nic nestahuje. (2) Pozor na dva podezřelé:
+„Portáš" × Portášky a „Chatka AKT na Pietraszonce" × naše chatka AKT —
+pokud potvrdíš, že jde o cizí objekty, zapíšu je do `nesouvisi` a párování
+je přestane nabízet. (3) Trvá klik na DATA-02 (fulltext sklizeň fotek pro
+všechny chaty vč. bez-GPS) a otázky z čtyřbloku (ČÚZK výšky středisek,
+zaokrouhlení Sněžky 1603, kontrola deploye).
+
 ## 2026-07-27 — pokračování 23 (čtyřblok 1/4, druhá část po „pokracuj"): F1b UI HOTOVO + F1c 1. průchod
 
 **Hotovo (2 commity):**

@@ -1,0 +1,97 @@
+# DATA-05 — redakčně POTVRZENÉ páry chata ↔ razítko na razitkuj.cz.
+#
+# Proč tenhle soubor existuje: párování je jen JMENNÁ shoda nad celostátním
+# checklistem — a jméno není přiřazení (jmenovci existují i uvnitř Krkonoš,
+# viz docs/DATA-17-jmenovci.md; „Portáš" není „Portášky"). Otisky se proto
+# stahují VÝHRADNĚ u párů potvrzených tady (skript data05-razitkuj-otisky.ts
+# nepotvrzené páry přeskočí a jen je vypíše). Pár potvrzuje redakce po
+# kontrole detailu razítka (obrázek/kontext na razitkuj.cz) — s poznámkou,
+# čím je přiřazení doloženo.
+#
+# `nesouvisi:` je opak — páry, u kterých kontrola prokázala, že jde o CIZÍ
+# objekt téhož/podobného jména; párování je pak přestane nabízet (vzor
+# data/kandidati/_vyrazeno.yaml z DATA-01).
+
+potvrzene:
+  - slug: bouda-bile-labe
+    url: http://www.razitkuj.cz/5469_bouda-bile-labe
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: dom-slaski
+    url: http://www.razitkuj.cz/misto-dom-slaski/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: hotel-spindlerova-bouda
+    url: http://www.razitkuj.cz/misto-spindlerova-bouda/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: chata-dvoracky
+    url: http://www.razitkuj.cz/misto-dvoracky/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: labska-bouda
+    url: http://www.razitkuj.cz/misto-labska-bouda/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: lesni-bouda
+    url: http://www.razitkuj.cz/misto-lesni-bouda/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: lucni-bouda
+    url: http://www.razitkuj.cz/misto-lucni-bouda/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: schronisko-kamienczyk
+    url: http://www.razitkuj.cz/6549_schronisko-kamienczyk
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: schronisko-odrodzenie
+    url: http://www.razitkuj.cz/misto-schronisko-odrodzenie/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: schronisko-pttk-na-przeleczy-okraj
+    url: http://www.razitkuj.cz/misto-schronisko-pttk-na-przeleczy-okraj/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: schronisko-pod-labskim-szczytem
+    url: http://www.razitkuj.cz/misto-schronisko-pod-labskim-szczytem/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: schronisko-samotnia
+    url: http://www.razitkuj.cz/misto-schronisko-pttk-samotnia/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: schronisko-szrenica
+    url: http://www.razitkuj.cz/6361_schronisko-szrenica
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: strzecha-akademicka
+    url: http://www.razitkuj.cz/misto-schronisko-strzecha-akademicka/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: tetrevi-boudy
+    url: http://www.razitkuj.cz/misto-tetrev/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+  - slug: vosecka-bouda
+    url: http://www.razitkuj.cz/misto-vosecka-bouda/1
+    poznamka: >-
+      rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
+      (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
+
+nesouvisi: []

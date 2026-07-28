@@ -18,7 +18,9 @@ import {
   ocistiNazevRazitka,
   shodaNazvu,
   sparuj,
+  typShodyNazvu,
   type Chata,
+  type PotvrzeneParovani,
 } from '../../scripts/data05-razitkuj-parovani'
 import { otiskyZDetailu } from '../../scripts/data05-razitkuj-otisky'
 import { razitkoZaznam } from '../../scripts/data05-razitkuj-zaloz'
@@ -99,6 +101,14 @@ describe('DATA-05 · normalizace a shoda názvu', () => {
     expect(shodaNazvu(['Schronisko Samotnia', 'Samotnia'], 'Samotnia')).toBe(true) // přes alias
     expect(shodaNazvu(['Luční bouda'], 'Labská bouda')).toBe(false)
   })
+
+  it('typ shody: rovnost (i přes alias) = presna, obsažení = castecna', () => {
+    expect(typShodyNazvu(['Bouda Bílé Labe'], 'Bouda bílé labe')).toBe('presna') // jen velikost písmen
+    expect(typShodyNazvu(['Schronisko Samotnia', 'Samotnia'], 'Samotnia')).toBe('presna') // rovnost s aliasem
+    expect(typShodyNazvu(['Chata Dvoračky'], 'Dvoračky')).toBe('castecna') // razítko kratší
+    expect(typShodyNazvu(['Portášky'], 'Portáš')).toBe('castecna') // ⚠ takhle se chytí i cizí objekt
+    expect(typShodyNazvu(['Luční bouda'], 'Labská bouda')).toBeNull()
+  })
 })
 
 describe('DATA-05 · otisky z detailu razítka (fáze 3b)', () => {
@@ -164,11 +174,38 @@ describe('DATA-05 · párování katalogu s checklistem', () => {
     { nazev: 'Chata Šerlich - Orlické hory', url: 'http://www.razitkuj.cz/9_serlich' }, // bez shody, ne-krkonošské
   ]
 
+  const zadnaPotvrzeni: PotvrzeneParovani = { potvrzene: [], nesouvisi: [] }
+
   it('spáruje naše chaty, vypíše chaty bez razítka a kandidáty na dohledání', () => {
-    const { shody, bezRazitka, kandidatiChat } = sparuj(chaty, razitka)
+    const { shody, bezRazitka, kandidatiChat } = sparuj(chaty, razitka, zadnaPotvrzeni)
     expect(shody.map((s) => s.slug).sort()).toEqual(['bouda-bile-labe', 'schronisko-samotnia'])
     expect(bezRazitka.map((b) => b.slug)).toEqual(['lucni-bouda']) // Luční u nás je, razítko v mocku ne
     // „Kolínská bouda - Krkonoše" nemá u nás chatu, ale zavání Krkonošemi → kandidát; Šerlich ne.
     expect(kandidatiChat.map((k) => k.nazev)).toEqual(['Kolínská bouda - Krkonoše'])
+  })
+
+  it('shoda nese typ a příznak potvrzení z redakčního seznamu', () => {
+    const { shody } = sparuj(chaty, razitka, {
+      potvrzene: [{ slug: 'bouda-bile-labe', url: 'http://www.razitkuj.cz/5469_bouda-bile-labe' }],
+      nesouvisi: [],
+    })
+    const labe = shody.find((s) => s.slug === 'bouda-bile-labe')
+    expect(labe).toMatchObject({ typ: 'presna', potvrzeno: true })
+    const samotnia = shody.find((s) => s.slug === 'schronisko-samotnia')
+    expect(samotnia).toMatchObject({ typ: 'castecna', potvrzeno: false }) // „Schronisko PTTK Samotnia" ⊃ alias
+  })
+
+  it('pár z `nesouvisi` (prokázaný cizí objekt) jde do vyřazených, chata zůstane „bez razítka"', () => {
+    const { shody, bezRazitka, vyrazene, kandidatiChat } = sparuj(chaty, razitka, {
+      potvrzene: [],
+      nesouvisi: [{ slug: 'schronisko-samotnia', url: 'http://www.razitkuj.cz/misto-samotnia/1' }],
+    })
+    expect(shody.map((s) => s.slug)).toEqual(['bouda-bile-labe'])
+    expect(vyrazene.map((v) => v.slug)).toEqual(['schronisko-samotnia'])
+    expect(bezRazitka.map((b) => b.slug).sort()).toEqual(['lucni-bouda', 'schronisko-samotnia'])
+    // Razítko vyřazeného páru NEztrácí šanci být kandidátem na dohledání JINÉ
+    // chaty (vzor: razítko Martinovy boudy na Benecku ≠ hřebenová Martinovka,
+    // ale krkonošské je) — s krkonošským klíčem v názvu se mezi kandidáty vrací.
+    expect(kandidatiChat.map((k) => k.nazev)).toEqual(['Schronisko PTTK Samotnia', 'Kolínská bouda - Krkonoše'])
   })
 })

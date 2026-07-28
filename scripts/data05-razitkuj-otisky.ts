@@ -86,9 +86,19 @@ const main = async () => {
   const checklist = JSON.parse(readFileSync(CHECKLIST_JSON, 'utf8')) as { razitka?: RazitkoPolozka[] }
   const { shody } = sparuj(nactiChaty(), checklist.razitka ?? [])
 
-  // Jedna chata = jeden zdrojUrl (první shoda); víc otisků se vezme z detailu.
+  // Stahuje se VÝHRADNĚ z párů potvrzených redakcí (_parovani-potvrzene.yaml):
+  // jmenná shoda není přiřazení (jmenovci, cizí objekty téhož jména — DATA-17).
+  const nepotvrzene = shody.filter((s) => !s.potvrzeno)
+  if (nepotvrzene.length) {
+    console.log(`Nepotvrzené shody (${nepotvrzene.length}) se NEstahují — čekají na redakci v data/razitka/_parovani-potvrzene.yaml:`)
+    for (const s of nepotvrzene) console.log(`  · ${s.chata} × „${s.razitko}" (${s.typ === 'castecna' ? 'částečná shoda' : 'přesná shoda'}) — ${s.url}`)
+  }
+
+  // Jedna chata = jeden zdrojUrl (první potvrzená shoda); víc otisků má detail.
   const dleSlug = new Map<string, { nazev: string; zdrojUrl: string }>()
-  for (const s of shody) if (!dleSlug.has(s.slug)) dleSlug.set(s.slug, { nazev: s.chata, zdrojUrl: s.url })
+  for (const s of shody) {
+    if (s.potvrzeno && !dleSlug.has(s.slug)) dleSlug.set(s.slug, { nazev: s.chata, zdrojUrl: s.url })
+  }
   const chaty = [...dleSlug.entries()].slice(0, limit === Infinity ? undefined : limit)
 
   mkdirSync(SKENY_ADRESAR, { recursive: true })
