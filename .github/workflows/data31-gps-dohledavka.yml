@@ -1,0 +1,64 @@
+# DATA-31: dohledávka souřadnic pro publikované profily bez GPS.
+# Dvanáct profilů Krkonoš vzniklo z pramenů, které polohu neuvádějí — nemají
+# tedy mapu na profilu, vypadly z výpočtu přístupových tras i z 3D modelu.
+# Hlavní export (DATA-01) je nenajde: ptá se na tourism=alpine_hut/wilderness_hut/hut,
+# kdežto tyhle objekty bývají v OSM vedené jako hotel/chalet/budova. Tenhle běh
+# se ptá JMÉNEM bez ohledu na tag a sestaví REPORT s návrhy — do profilů
+# nezapisuje nic, identitu potvrzuje redakce (Actions → Run workflow).
+name: 'DATA-31: dohledávka GPS (dle oblasti)'
+
+on:
+  workflow_dispatch:
+    inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory'
+        required: false
+        default: 'krkonose'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data31-gps
+  cancel-in-progress: false
+
+jobs:
+  dohledavka:
+    name: Overpass podle jmen → návrhy souřadnic
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Dotaz na jména bez omezení tagem
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
+        run: |
+          npx tsx scripts/data31-gps-dohledavka.ts --oblast "$OBLAST" | tee report.txt
+          echo '## DATA-31 — dohledávka souřadnic' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit reportu a návrhů do main
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/DATA-31-gps-*.md data/kandidati
+          if git diff --cached --quiet; then
+            echo 'Beze změny — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m "data: DATA-31 dohledávka souřadnic (${OBLAST}) — návrhy z OSM k potvrzení" \
+            -m 'Zdroj: OpenStreetMap (ODbL), hledáno jménem bez omezení tagem. NÁVRHY, ne fakta — do profilů se souřadnice zapisují až po potvrzení redakcí (shoda jména identitu neprokazuje).'
+          git pull --rebase origin main
+          git push origin main

@@ -268,10 +268,10 @@ export const nactiExport = (rawJson: string): { elementy: OsmElement[]; checked:
 
 export const osmUrl = (el: OsmElement): string => `https://www.openstreetmap.org/${el.type}/${el.id}`
 
-const ATRIBUCE = 'data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)'
+export const ATRIBUCE = 'data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)'
 
 /** Souřadnice: node je nese přímo, way/relation dává Overpass přes `out center`. */
-const souradnice = (el: OsmElement): { lat: number; lng: number } | null => {
+export const souradnice = (el: OsmElement): { lat: number; lng: number } | null => {
   const lat = el.lat ?? el.center?.lat
   const lng = el.lon ?? el.center?.lon
   return typeof lat === 'number' && typeof lng === 'number' ? { lat, lng } : null

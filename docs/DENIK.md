@@ -559,6 +559,40 @@ přitisknutí i přechody. Jediná varianta se chová přesně jako dřív.
 Ověřeno lokálně nad seedovanou DB (Postgres + 110 otisků) screenshoty den/noc
 a na mobilní šířce; 8 nových testů (312 celkem), lint, tsc i kontrola čisté.
 
+**Dodatek 23 (týž den, hlášení Michala): „Chata pod Studničnou i Erlebachova
+bouda nemá na profilu mapu" — není to šablona, je to díra v datech.** Obě chaty
+nemají v YAML `lat`/`lng`, a mapa se bez souřadnic nekreslí. **Měření ukázalo,
+že takových profilů je dvanáct:** Pod Studničnou, Rezek, Rozhled, Erlebachova,
+Kolínská, Lysečinská, Petrova, Pomezní, Portášky, Pražská, Rýchorská a polská
+Nad Łomniczką. Vznikly z externího katalogu a z webů chat — a žádný z těch
+pramenů polohu neuvádí; kandidátní YAML to říká výslovně („katalog ji nenese").
+Chybějící GPS přitom nesráží jen mapu: **tytéž chaty vypadly i z DATA-06**
+(pokryla 63 ze 76 profilů) a z 3D modelu. Zkusil jsem, co šlo hned: web
+Chaty pod Studničnou souřadnice nemá (jen adresu), kct.cz je pro robota
+zavřený, Wikipedie z tohohle prostředí nejde načíst a Overpass přes fetch
+zakazuje robots.txt — obcházet to nebudu.
+**Proč je nenajde DATA-01:** hlavní export se ptá na `tourism=alpine_hut`,
+`wilderness_hut` a `hut`. Tyhle objekty jsou v OSM vedené jinak (hotel, chalet,
+jen budova), takže je dotaz vůbec nepotká — ověřeno v surových exportech,
+ani jeden z dvanácti v nich není.
+**Hotovo dnes, dvě věci.** (1) **Profil bez souřadnic to přiznává** místo
+prázdného místa po sekci: „Souřadnice téhle chaty zatím nemáme doložené…
+odhadnout je z okolí by znamenalo tvrdit něco, co nemáme čím podložit" +
+odkaz na /prispet. Prázdno bez vysvětlení vypadá jako rozbitá stránka, tohle
+říká, co chybí, proč a co s tím může čtenář udělat. (2) **DATA-31 —
+dohledávka souřadnic** (`scripts/data31-gps-dohledavka.ts` + workflow):
+najde profily bez GPS, zeptá se Overpassu **jménem bez omezení tagem**
+a sestaví report s návrhy — u každého nálezu tagy, obec z OSM proti obci
+z profilu a typ shody (přesná / částečná přes jádro názvu, protože OSM jméno
+bývá bez typového slova). **Do profilů nezapisuje nic**: shoda jména identitu
+neprokazuje a precedens je čerstvý — 27. 7. seděla Lovecká chata na mapě
+10 km vedle kvůli záměně OSM entit. Rozpor obcí report vyznačí `⚠`.
+11 testů, ověřeno i offline během nad skutečným korpusem (vypsalo přesně těch
+dvanáct i s obcemi). 323 testů celkem, tsc, lint i kontrola čisté.
+**Čeká na Michala:** klik na **„DATA-31: dohledávka GPS"** (oblast `krkonose`).
+Až návrhy projdeš, druhý krok je zapíše do profilů se `source` + ODbL
+a `verified: false` — a dvanáct chat dostane mapu, přístupové trasy i pin v 3D.
+
 **Otázky pro Michala:** (0) **Jaký `typ` mají dostat rozhledny s občerstvením?**
 Číselník z plánu kap. 5 zná obsluhovaná / útulna / bivak / horský hotel —
 přidat pátou hodnotu `rozhledna`, nebo je vést jako obsluhované s poznámkou?

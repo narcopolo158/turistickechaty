@@ -382,3 +382,11 @@ body.dark .zap-otisk-pasparta { background:#1b232b; border-color:#2a343d; }
 body.dark .zap-otisk-plocha, body.dark .zap-list-otisk { background:#141b21; border-color:#2a343d; }
 body.dark .zap-list-otisk .cislo { background:#1b232b; border-color:#2a343d; }
 body.dark .zap-otisk-plocha img, body.dark .zap-list-otisk img { mix-blend-mode:screen; filter:invert(1) hue-rotate(180deg) brightness(1.12); }
+
+/* Chybějící mapa se přizná — prázdné místo po sekci vypadá jako chyba webu,
+   kdežto tohle říká, co chybí a proč (a co s tím může čtenář udělat). */
+.zap-mapa-chybi { border:1px dashed var(--ghost); background:var(--paper); padding:14px 16px; display:flex; flex-direction:column; gap:6px; }
+.zap-mapa-chybi b { font:600 12px/1.35 var(--font-display); color:var(--ink); }
+.zap-mapa-chybi span { font:italic 400 11.5px/1.55 var(--font-emph); color:var(--muted); }
+.zap-mapa-chybi .zap-3d-odkaz { margin-top:2px; }
+body.dark .zap-mapa-chybi { background:#1b232b; border-color:#39434d; }

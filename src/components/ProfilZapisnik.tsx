@@ -254,6 +254,25 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
                 )}
               </>
             )}
+            {/* Bez souřadnic mapa chybí — a je poctivější to říct než nechat
+                prázdno, které vypadá jako rozbitá stránka. Profil se sem dostal
+                z pramenů, které GPS neuvádějí (katalog, web chaty); dokud je
+                nedoložíme, mapu nekreslíme, protože polohu nedomýšlíme. */}
+            {!data.mapa && (
+              <>
+                <div className="zap-strip"><b>Mapa · skládaná</b><span className="line" /><span className="tag">Chybí podklad</span></div>
+                <div className="zap-mapa-chybi">
+                  <b>Souřadnice téhle chaty zatím nemáme doložené.</b>
+                  <span>
+                    Prameny, ze kterých profil vznikl, polohu neuvádějí — a odhadnout ji z okolí by znamenalo
+                    tvrdit něco, co nemáme čím podložit. Mapu proto nekreslíme, dokud souřadnice nedoložíme.
+                  </span>
+                  {data.prispetUrl && (
+                    <a className="zap-3d-odkaz" href={data.prispetUrl}>Znáš přesnou polohu? Pošli ji do sbírky ▸</a>
+                  )}
+                </div>
+              </>
+            )}
 
             {/* Osobní stopa — veřejná (ghost, Fáze 4) */}
             <div className="zap-osobni">

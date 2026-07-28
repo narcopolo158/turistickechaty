@@ -1,0 +1,246 @@
+/**
+ * DATA-31: dohledávka souřadnic pro publikované profily, které GPS nemají.
+ *
+ * PROČ: 28. 7. 2026 Michal nahlásil, že Chata Pod Studničnou a Erlebachova
+ * bouda nemají na profilu mapu. Příčina není v šabloně — obě chaty nemají
+ * v datech `lat`/`lng`. Měření ukázalo, že takových profilů je **dvanáct**:
+ * vznikly z externího katalogu a z webů chat, a žádný z těch pramenů polohu
+ * neuvádí (kandidátní YAML to říká výslovně: „katalog ji nenese"). Chybějící
+ * souřadnice pak nesrazí jen mapu: chata vypadne z výpočtu přístupových tras
+ * (DATA-06 pokryla 63 ze 76 profilů), z 3D modelu i z mapového pásu.
+ *
+ * PROČ TO NENAJDE DATA-01: hlavní export bere `tourism=alpine_hut`,
+ * `wilderness_hut` a `hut`. Tyhle objekty jsou v OSM zpravidla vedené jinak
+ * (hotel, chalet, guest_house, jen budova), takže je dotaz vůbec nepotká —
+ * ověřeno v surových exportech, ani jeden z dvanácti v nich není.
+ *
+ * CO SKRIPT DĚLÁ: pro zvolenou oblast najde profily bez GPS, zeptá se
+ * Overpassu na objekty JMÉNEM (bez ohledu na tag) v okně oblasti a sestaví
+ * REPORT s nálezy — u každého tagy, obec z OSM proti obci z profilu a typ
+ * shody jména. **Nic nezapisuje do profilů.** Precedens je čerstvý: 27. 7.
+ * 2026 se ukázalo, že Lovecká chata seděla na mapě 10 km vedle kvůli záměně
+ * OSM entit; jméno samo tedy identitu neprokazuje a poslední slovo má redakce.
+ * Návrhy se ukládají do `data/kandidati/<oblast>/_gps-navrhy.yaml`, odkud je
+ * po potvrzení přenese do profilů druhý krok (se `source` + ODbL, verified:false).
+ *
+ * Spuštění (sandbox na Overpass nedosáhne — ostrý běh dělá GitHub Actions):
+ *   npx tsx scripts/data31-gps-dohledavka.ts --oblast krkonose
+ *   npx tsx scripts/data31-gps-dohledavka.ts --z-jsonu    # jen přepočet z uloženého exportu
+ */
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+
+import { parse, stringify } from 'yaml'
+
+import {
+  ATRIBUCE,
+  VYCHOZI_API_INSTANCE,
+  nactiExport,
+  osmUrl,
+  souradnice,
+  stahniOverpass,
+  type OsmElement,
+} from './data01-overpass-krkonose'
+import { bboxStr, oblastZArgv } from './oblasti'
+
+export type ProfilBezGps = { slug: string; nazev: string; obec: string | null }
+
+/** Porovnávací tvar jména: bez diakritiky, malá písmena, jedna mezera. */
+export const normJmeno = (s: string): string =>
+  s
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/gu, '')
+    .toLowerCase()
+    .replace(/\s+/gu, ' ')
+    .trim()
+
+/** Typová slova, po jejichž odebrání zbude jádro názvu (jako u kolize-jmen). */
+const TYPOVA = /\b(chata|bouda|hotel|horska|horsky|schronisko|turystyczne|pttk)\b/giu
+
+/** Jádro názvu pro volnější shodu („Chata Pod Studničnou" → „pod studnicnou"). */
+export const jadroJmena = (s: string): string => normJmeno(s).replace(TYPOVA, ' ').replace(/\s+/gu, ' ').trim()
+
+/** Publikované profily zvolené oblasti, které nemají `lat`/`lng`. */
+export const profilyBezGps = (adresar: string): ProfilBezGps[] => {
+  if (!existsSync(adresar)) return []
+  const out: ProfilBezGps[] = []
+  for (const f of readdirSync(adresar).sort()) {
+    if (!f.endsWith('.yaml') || f.startsWith('_')) continue
+    const d = (parse(readFileSync(join(adresar, f), 'utf8')) ?? {}) as Record<string, unknown>
+    if (typeof d.lat === 'number' && typeof d.lng === 'number') continue
+    if (typeof d.nazev !== 'string') continue
+    out.push({
+      slug: typeof d.slug === 'string' ? d.slug : f.replace(/\.yaml$/u, ''),
+      nazev: d.nazev,
+      obec: typeof d.obec === 'string' ? d.obec : null,
+    })
+  }
+  return out
+}
+
+/** Escape do řetězcového literálu Overpass regexu (uvozovky a metaznaky). */
+const escRegex = (s: string): string => s.replace(/[\\^$.*+?()[\]{}|"]/gu, (z) => `\\${z}`)
+
+/**
+ * Dotaz hledá JMÉNEM, ne tagem — to je celý smysl dohledávky. Kromě celých
+ * názvů se ptá i na jádra („Pod Studničnou"), protože OSM jméno bývá bez
+ * typového slova; volnější shodu pak report označí a rozhodne o ní redakce.
+ */
+export const overpassDotazJmena = (iso: string, jmena: string[], okno: string): string => {
+  const alternativy = [...new Set(jmena.map((j) => j.trim()).filter(Boolean).map(escRegex))].join('|')
+  return `[out:json][timeout:180];
+area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
+nwr["name"~"${alternativy}",i](area.stat)(${okno});
+out center;`
+}
+
+export type Nalez = {
+  osm: string
+  nazev: string
+  typShody: 'presna' | 'castecna'
+  lat: number
+  lng: number
+  obecOsm: string | null
+  tagy: string
+}
+export type NavrhGps = { slug: string; nazev: string; obecProfilu: string | null; nalezy: Nalez[] }
+
+const ZAJIMAVE_TAGY = ['tourism', 'building', 'amenity', 'ele', 'addr:city', 'operator', 'website']
+
+/** Ke každému profilu bez GPS přiřadí nálezy z odpovědi (přesné i částečné). */
+export const sparujNalezy = (profily: ProfilBezGps[], elementy: OsmElement[]): NavrhGps[] =>
+  profily.map((p) => {
+    const cil = normJmeno(p.nazev)
+    const jadro = jadroJmena(p.nazev)
+    const nalezy: Nalez[] = []
+    for (const el of elementy) {
+      const jmeno = el.tags?.name
+      const gps = souradnice(el)
+      if (!jmeno || !gps) continue
+      const n = normJmeno(jmeno)
+      const presna = n === cil
+      // Jádro musí mít aspoň tři znaky, jinak by „U Kotle" chytalo půl pohoří.
+      const castecna = !presna && jadro.length >= 3 && (n.includes(jadro) || jadroJmena(jmeno) === jadro)
+      if (!presna && !castecna) continue
+      nalezy.push({
+        osm: osmUrl(el),
+        nazev: jmeno,
+        typShody: presna ? 'presna' : 'castecna',
+        lat: gps.lat,
+        lng: gps.lng,
+        obecOsm: el.tags?.['addr:city'] ?? null,
+        tagy: ZAJIMAVE_TAGY.filter((t) => el.tags?.[t]).map((t) => `${t}=${el.tags![t]}`).join(', '),
+      })
+    }
+    nalezy.sort((a, b) => (a.typShody === b.typShody ? a.nazev.localeCompare(b.nazev, 'cs') : a.typShody === 'presna' ? -1 : 1))
+    return { slug: p.slug, nazev: p.nazev, obecProfilu: p.obec, nalezy }
+  })
+
+/** Report do Actions summary i do docs — čte ho člověk, ne stroj. */
+export const sestavReport = (navrhy: NavrhGps[], oblastNazev: string): string => {
+  const s: string[] = []
+  const s1 = navrhy.filter((n) => n.nalezy.length)
+  const bez = navrhy.filter((n) => !n.nalezy.length)
+  s.push(`# DATA-31 — dohledávka souřadnic (${oblastNazev})`)
+  s.push('')
+  s.push(`Profilů bez GPS: **${navrhy.length}** · s nálezem v OSM: **${s1.length}** · bez nálezu: **${bez.length}**`)
+  s.push('')
+  s.push('Nálezy jsou NÁVRHY, ne fakta: shoda jména identitu neprokazuje (27. 7. 2026')
+  s.push('seděla Lovecká chata na mapě 10 km vedle kvůli záměně OSM entit). Než se')
+  s.push('souřadnice zapíšou do profilu, potvrdí je redakce — pomůckou je obec:')
+  s.push('když se `addr:city` z OSM rozchází s `obec` v profilu, je to jiný objekt.')
+  s.push('')
+  for (const n of s1) {
+    s.push(`## ${n.nazev}${n.obecProfilu ? ` — obec v profilu: ${n.obecProfilu}` : ''}`)
+    for (const x of n.nalezy) {
+      const obec = x.obecOsm ? `obec OSM: ${x.obecOsm}` : 'obec v OSM chybí'
+      const varovani = x.obecOsm && n.obecProfilu && normJmeno(x.obecOsm) !== normJmeno(n.obecProfilu) ? ' ⚠ obec nesedí' : ''
+      s.push(`- **${x.typShody === 'presna' ? 'přesná shoda' : 'částečná shoda'}** „${x.nazev}" — ${x.lat}, ${x.lng} · ${obec}${varovani}`)
+      s.push(`  - ${x.tagy || 'bez zajímavých tagů'} — ${x.osm}`)
+    }
+    s.push('')
+  }
+  if (bez.length) {
+    s.push('## Bez nálezu v OSM')
+    s.push('')
+    for (const n of bez) s.push(`- ${n.nazev}${n.obecProfilu ? ` (${n.obecProfilu})` : ''} — jméno v okně oblasti nikde`)
+    s.push('')
+  }
+  s.push(`Zdroj nálezů: OpenStreetMap — ${ATRIBUCE}`)
+  s.push('')
+  return s.join('\n')
+}
+
+// ── CLI ─────────────────────────────────────────────────────────────────────
+
+const main = async () => {
+  const argv = process.argv.slice(2)
+  const zJsonu = argv.includes('--z-jsonu')
+  const apiIndex = argv.indexOf('--api')
+  const instance = apiIndex >= 0 && argv[apiIndex + 1] ? [argv[apiIndex + 1]] : VYCHOZI_API_INSTANCE
+  const oblast = oblastZArgv(argv)
+  const okno = bboxStr(oblast.bbox)
+  const kandAdr = join(process.cwd(), 'data', 'kandidati', oblast.slug)
+
+  const profily = profilyBezGps(join(process.cwd(), 'data', 'chaty', oblast.slug))
+  console.log(`Oblast: ${oblast.nazev} (${oblast.slug}) — profilů bez GPS: ${profily.length}`)
+  if (!profily.length) {
+    console.log('Není co dohledávat — všechny publikované profily oblasti mají souřadnice.')
+    return
+  }
+  for (const p of profily) console.log(`  - ${p.nazev}${p.obec ? ` (${p.obec})` : ''}`)
+
+  const jmena = [...profily.map((p) => p.nazev), ...profily.map((p) => jadroJmena(p.nazev)).filter((j) => j.length >= 3)]
+  const elementy: OsmElement[] = []
+  for (const { zeme, iso } of [
+    { zeme: 'cz', iso: 'CZ' },
+    { zeme: 'pl', iso: 'PL' },
+  ]) {
+    const soubor = join(kandAdr, `_overpass-gps-${zeme}.json`)
+    let raw: string
+    if (zJsonu) {
+      if (!existsSync(soubor)) {
+        console.log(`--z-jsonu: ${soubor} neexistuje — ${zeme} se přeskakuje.`)
+        continue
+      }
+      raw = readFileSync(soubor, 'utf8')
+    } else {
+      console.log(`Overpass dotaz ${iso} — hledám ${jmena.length} jmen v okně ${okno}…`)
+      // Prázdná odpověď je tu legitimní výsledek: v Polsku nemusí být ani jedno
+      // z hledaných jmen, a pád běhu by z toho udělal chybu, kterou to není.
+      const vysledek = await stahniOverpass(instance, overpassDotazJmena(iso, jmena, okno), { povolitPrazdno: true })
+      raw = vysledek.raw
+      mkdirSync(kandAdr, { recursive: true })
+      writeFileSync(soubor, raw, 'utf8')
+      console.log(`Surový export uložen: ${soubor} (doklad nálezu).`)
+    }
+    elementy.push(...nactiExport(raw).elementy)
+  }
+
+  const navrhy = sparujNalezy(profily, elementy)
+  const report = sestavReport(navrhy, oblast.nazev)
+  const reportCesta = join(process.cwd(), 'docs', `DATA-31-gps-${oblast.slug}.md`)
+  writeFileSync(reportCesta, report, 'utf8')
+  mkdirSync(kandAdr, { recursive: true })
+  writeFileSync(
+    join(kandAdr, '_gps-navrhy.yaml'),
+    [
+      '# NÁVRHY souřadnic pro publikované profily bez GPS (DATA-31).',
+      '# Nezapisuje se automaticky do profilů: shoda jména identitu NEPROKAZUJE',
+      '# (Lovecká chata seděla 27. 7. 2026 na mapě 10 km vedle kvůli záměně entit).',
+      `# Zdroj: OpenStreetMap — ${ATRIBUCE}`,
+      '',
+      stringify({ navrhy }),
+    ].join('\n'),
+    'utf8',
+  )
+  console.log(`\nReport: ${reportCesta}\n`)
+  console.log(report)
+}
+
+if (process.argv[1]?.endsWith('data31-gps-dohledavka.ts')) {
+  main().catch((chyba: unknown) => {
+    console.error(chyba instanceof Error ? chyba.message : chyba)
+    process.exit(1)
+  })
+}
