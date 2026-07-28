@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 
-import { MAX_VELIKOST_B, POVOLENE_MIME, SOUHLAS_ZNENI, zkontrolujPodani } from '@/lib/podani'
+import { MAX_VELIKOST_B, POVOLENE_MIME, SOUHLAS_ZNENI, zkontrolujPodani, zmensiObrazek } from '@/lib/podani'
 
 export type PrispetChata = { slug: string; nazev: string }
 
@@ -53,6 +53,9 @@ export default function PrispetForm({ chaty }: { chaty: PrispetChata[] }) {
     if (mistniChyby.length || !soubor || !chata) return
 
     setStav('odesílá')
+    // Telefonní fotky mají klidně 10 MB — zmenšíme je v prohlížeči, ať upload
+    // projde i na mobilních datech a nenarazí na limit velikosti požadavku.
+    const kOdeslani = await zmensiObrazek(soubor)
     const form = new FormData()
     form.set('druh', druh)
     form.set('chata', chata.slug)
@@ -60,19 +63,37 @@ export default function PrispetForm({ chaty }: { chaty: PrispetChata[] }) {
     if (email.trim()) form.set('email', email.trim())
     if (poznamka.trim()) form.set('poznamka', poznamka.trim())
     form.set('souhlas', souhlas ? 'ano' : '')
-    form.set('soubor', soubor)
+    form.set('soubor', kOdeslani)
     try {
       const res = await fetch('/api/podani', { method: 'POST', body: form })
-      const telo = (await res.json()) as { ok?: boolean; chyby?: string[] }
-      if (res.ok && telo.ok) {
-        setStav('hotovo')
-      } else {
-        setStav('piše')
-        setChyby(telo.chyby ?? ['Odeslání se nepovedlo — zkus to prosím znovu.'])
+      // Odpověď nemusí být JSON (chybová stránka serveru, 413 z proxy) —
+      // pak se nesmí tvářit jako výpadek sítě: uživateli i nám je k ničemu.
+      type Odpoved = { ok?: boolean; chyby?: string[]; detail?: string }
+      let telo: Odpoved | null = null
+      try {
+        telo = (await res.json()) as Odpoved
+      } catch {
+        telo = null
       }
-    } catch {
+      if (res.ok && telo?.ok) {
+        setStav('hotovo')
+        return
+      }
       setStav('piše')
-      setChyby(['Odeslání se nepovedlo (síť) — zkus to prosím znovu.'])
+      if (telo?.chyby?.length) {
+        setChyby(telo.detail ? [...telo.chyby, `Technický detail: ${telo.detail}`] : telo.chyby)
+      } else if (res.status === 413) {
+        setChyby(['Snímek je pro server moc velký — zkus prosím menší soubor (nebo napiš, ať limit zvedneme).'])
+      } else {
+        setChyby([
+          `Server odpověděl chybou (HTTP ${res.status}) — na naší straně. Zkus to prosím znovu; když to vydrží, dej nám vědět a spravíme to.`,
+        ])
+      }
+    } catch (chyba) {
+      setStav('piše')
+      setChyby([
+        `Odeslání se nepovedlo — spojení se serverem selhalo (${chyba instanceof Error ? chyba.message : 'neznámá chyba'}). Zkontroluj připojení a zkus to znovu.`,
+      ])
     }
   }
 
@@ -121,7 +142,10 @@ export default function PrispetForm({ chaty }: { chaty: PrispetChata[] }) {
       <label className="prsp-pole">
         <span>{druh === 'razitko' ? 'Sken / foto otisku' : 'Fotka'}</span>
         <input ref={souborRef} type="file" accept={POVOLENE_MIME.join(',')} required />
-        <i>JPEG, PNG, WebP, GIF nebo HEIC · do {Math.round(MAX_VELIKOST_B / 1024 / 1024)} MB</i>
+        <i>
+          JPEG, PNG, WebP, GIF nebo HEIC · do {Math.round(MAX_VELIKOST_B / 1024 / 1024)} MB · velké snímky
+          zmenšíme v prohlížeči na 2400 px, ať upload projde i na horách
+        </i>
       </label>
 
       <div className="prsp-radek">

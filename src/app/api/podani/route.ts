@@ -36,6 +36,23 @@ const odpoved = (status: number, telo: Record<string, unknown>) =>
   Response.json(telo, { status })
 
 export async function POST(req: Request): Promise<Response> {
+  try {
+    return await zpracujPodani(req)
+  } catch (chyba) {
+    // Bez tohohle by Next vrátil HTML error page, `res.json()` na klientu by
+    // hodil výjimku a formulář by hlásil „síť“ — přesně ta past 28. 7. 2026.
+    console.error('[podani] neočekávaná chyba:', chyba)
+    return odpoved(500, {
+      ok: false,
+      chyby: ['Podání se nepodařilo uložit — chyba na naší straně. Zkus to prosím znovu.'],
+      // Detail posíláme do UI záměrně: bez něj je hlášení chyby slepé
+      // (28. 7. 2026 se serverová chyba tvářila jako výpadek sítě).
+      detail: (chyba instanceof Error ? chyba.message : String(chyba)).slice(0, 200),
+    })
+  }
+}
+
+async function zpracujPodani(req: Request): Promise<Response> {
   let form: FormData
   try {
     form = await req.formData()
@@ -96,7 +113,7 @@ export async function POST(req: Request): Promise<Response> {
       autor: vstup.jmeno!,
       licence: 'se-svolenim',
       licencePoznamka: 'komunitní podání — souhlas se zveřejněním s uvedením jména',
-      ...(vstup.poznamka ? { datovani: undefined } : {}),
+      ...(vstup.druh === 'fotka' && vstup.poznamka ? { datovani: vstup.poznamka.slice(0, 120) } : {}),
       podani: {
         hostJmeno: vstup.jmeno,
         hostEmail: vstup.email ?? undefined,
@@ -129,14 +146,6 @@ export async function POST(req: Request): Promise<Response> {
           souhlasDatum: dnes,
         },
       },
-      overrideAccess: true,
-    })
-  } else if (vstup.poznamka) {
-    // Poznámka k fotce (kdy foceno apod.) → datování snímku k posouzení redakcí.
-    await payload.update({
-      collection: 'fotky',
-      id: fotka.id,
-      data: { datovani: vstup.poznamka.slice(0, 120) },
       overrideAccess: true,
     })
   }

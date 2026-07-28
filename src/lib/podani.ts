@@ -43,3 +43,37 @@ export const zkontrolujPodani = (v: PodaniVstup): string[] => {
   }
   return chyby
 }
+
+/**
+ * Zmenšení snímku PŘED odesláním (canvas): telefonní fotky mají běžně 4–12 MB
+ * a upload z hor po mobilních datech je pomalý — navíc reverse proxy před
+ * aplikací mívá vlastní strop na velikost těla požadavku (typicky 1–10 MB),
+ * který se projeví jako nečitelná chyba. Web stejně servíruje nejvýš 1600 px,
+ * takže 2400 px dlouhé hrany je s rezervou dost i pro redakční posouzení.
+ *
+ * Poctivost: nezdaří-li se zmenšení (HEIC bez podpory dekodéru, malý soubor,
+ * výsledek by byl větší), vrací se PŮVODNÍ soubor — nikdy se nic nezahodí.
+ */
+export const MAX_HRANA_PX = 2400
+export const ZMENSOVAT_NAD_B = 1_200_000
+
+export const zmensiObrazek = async (soubor: File): Promise<File> => {
+  if (soubor.size <= ZMENSOVAT_NAD_B) return soubor
+  if (typeof document === 'undefined' || typeof createImageBitmap !== 'function') return soubor
+  try {
+    const bitmap = await createImageBitmap(soubor)
+    const merit = Math.min(1, MAX_HRANA_PX / Math.max(bitmap.width, bitmap.height))
+    const canvas = document.createElement('canvas')
+    canvas.width = Math.max(1, Math.round(bitmap.width * merit))
+    canvas.height = Math.max(1, Math.round(bitmap.height * merit))
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return soubor
+    ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height)
+    bitmap.close?.()
+    const blob = await new Promise<Blob | null>((res) => canvas.toBlob(res, 'image/jpeg', 0.85))
+    if (!blob || blob.size >= soubor.size) return soubor
+    return new File([blob], soubor.name.replace(/\.[^.]+$/, '') + '.jpg', { type: 'image/jpeg' })
+  } catch {
+    return soubor // nedekódovatelný formát (HEIC v některých prohlížečích) → pošle se originál
+  }
+}

@@ -3,8 +3,8 @@
  * a formulář — poctivost procesu v UI (čekárna, kredit, souhlas doslovným
  * zněním, honeypot). API route s Payloadem testuje CI build se seedem.
  */
-import { cleanup, fireEvent, render, screen } from '@testing-library/react'
-import { afterEach, describe, expect, it } from 'vitest'
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 
 import PrispetForm from '@/components/PrispetForm'
 import { SOUHLAS_ZNENI, zkontrolujPodani } from '@/lib/podani'
@@ -67,5 +67,47 @@ describe('PrispetForm', () => {
     fireEvent.change(screen.getByPlaceholderText(/začni psát/), { target: { value: 'Neznámá bouda' } })
     fireEvent.submit(container.querySelector('form')!)
     expect(screen.getByRole('alert').textContent).toContain('vyber ze seznamu')
+  })
+})
+
+describe('PrispetForm — hlášení chyb odeslání', () => {
+  const chaty = [{ slug: 'lucni-bouda', nazev: 'Luční bouda' }]
+
+  const vyplnAOdesli = async (container: HTMLElement) => {
+    fireEvent.change(screen.getByPlaceholderText(/začni psát/), { target: { value: 'Luční bouda' } })
+    fireEvent.change(screen.getByPlaceholderText('zveřejníme jako kredit'), { target: { value: 'Michal' } })
+    fireEvent.click(screen.getByRole('checkbox'))
+    const soubor = new File(['x'], 'foto.jpg', { type: 'image/jpeg' })
+    fireEvent.change(container.querySelector('input[type="file"]')!, { target: { files: [soubor] } })
+    fireEvent.submit(container.querySelector('form')!)
+  }
+
+  afterEach(() => vi.unstubAllGlobals())
+
+  it('serverová chyba s JSON detailem se ukáže — NE jako „síť"', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => new Response(
+      JSON.stringify({ ok: false, chyby: ['Podání se nepodařilo uložit.'], detail: 'column "podani_host_jmeno" does not exist' }),
+      { status: 500, headers: { 'content-type': 'application/json' } },
+    )))
+    const { container } = render(<PrispetForm chaty={chaty} />)
+    await vyplnAOdesli(container)
+    await waitFor(() => expect(screen.getByRole('alert').textContent).toContain('Podání se nepodařilo uložit.'))
+    expect(screen.getByRole('alert').textContent).toContain('column "podani_host_jmeno" does not exist')
+    expect(screen.getByRole('alert').textContent).not.toContain('síť')
+  })
+
+  it('odpověď, která není JSON (chybová stránka / proxy), hlásí HTTP kód, ne výpadek sítě', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => new Response('<html>502 Bad Gateway</html>', { status: 502 })))
+    const { container } = render(<PrispetForm chaty={chaty} />)
+    await vyplnAOdesli(container)
+    await waitFor(() => expect(screen.getByRole('alert').textContent).toContain('HTTP 502'))
+    expect(screen.getByRole('alert').textContent).not.toContain('spojení se serverem selhalo')
+  })
+
+  it('413 od proxy dostane vlastní srozumitelnou hlášku', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => new Response('too large', { status: 413 })))
+    const { container } = render(<PrispetForm chaty={chaty} />)
+    await vyplnAOdesli(container)
+    await waitFor(() => expect(screen.getByRole('alert').textContent).toContain('pro server moc velký'))
   })
 })

@@ -301,6 +301,33 @@ formulář vč. deep-linku a odmítnutí nevedené chaty, apel), 280 passed,
 tsc/lint/kontrola čisté. **Návrh příště:** e-mail notifikace redakci
 o novém podání (teď se pozná jen pohledem do adminu).
 
+**Dodatek 14 (týž den, Michal zkusil první podání na /prispet a dostal
+„Odeslání se nepovedlo (síť)"): tři vady najednou, dvě z nich systémové.**
+(1) **Hlášení chyby lhalo.** Klient volal `res.json()` bez ochrany —
+jakákoli odpověď, která není JSON (chybová stránka serveru, 413/502 od
+proxy), skončila v catch větvi hlásící „síť". Uživatel i my jsme byli
+slepí. Opraveno: odpověď se parsuje opatrně, rozlišují se **serverová
+chyba s detailem**, **413** („snímek je pro server moc velký") a
+**skutečný výpadek spojení**; API je nově celé v try/catch a vrací VŽDY
+JSON (+ `detail` chyby do UI — vědomé, bez něj se ladí naslepo).
+Testy +3 přesně na tyhle větve. (2) **Podezření na pravou příčinu:
+schéma se na server nemuselo propsat.** `postgresAdapter` neměl explicitní
+`push` a Payload ho v produkci (NODE_ENV=production z Forge env souboru)
+MLČKY vypíná — nové sloupce `podani_*` u Fotek ani nová hodnota enumu
+`typ` by pak v serverové databázi nevznikly a zápis by padal až za běhu
+(přesně dnešní příznak). Opraveno deterministicky: adapter čte
+`PAYLOAD_DB_PUSH`, deploy pouští serverový seed s `PAYLOAD_DB_PUSH=1`.
+**Pozor — týká se to i střediska (dfd9065) a všech dřívějších schema
+změn:** pokud push na serveru neběžel, může být rozbitá i sekce Střediska
+na stránce pohoří. Po tomhle deployi se schéma dorovná. (3) **Prevence
+na klientu:** telefonní fotky (4–12 MB) se před odesláním zmenší v
+prohlížeči na 2400 px / JPEG 0,85 — projde i mobilní upload a nenarazí
+na limit velikosti požadavku; při nezdaru (HEIC bez dekodéru) se pošle
+originál, nikdy se nic nezahodí. Popiska to říká nahlas. 283 testů,
+tsc/lint čisté. **Michale: až doběhne deploy, zkus podání znovu** — když
+zase spadne, hláška teď ukáže HTTP kód a technický detail; to mi stačí
+k přesné opravě.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

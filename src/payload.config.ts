@@ -35,6 +35,11 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URL || '',
     },
+    // Propis schématu (drizzle push) je jinak řízen NODE_ENV a v produkci se
+    // MLČKY vypne — nové sloupce a hodnoty enumů by pak v serverové databázi
+    // nevznikly a zápis by padal až za běhu. Deploy proto pouští seed
+    // s PAYLOAD_DB_PUSH=1 a schéma se propíše deterministicky, ne náhodou.
+    push: process.env.PAYLOAD_DB_PUSH ? process.env.PAYLOAD_DB_PUSH === '1' : process.env.NODE_ENV !== 'production',
   }),
   sharp,
   plugins: [],

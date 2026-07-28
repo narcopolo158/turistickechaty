@@ -152,7 +152,7 @@ jobs:
               + ' | heslo=' + (u.password ? 'ano, ' + u.password.length + ' znaku' : 'CHYBI!')
               + ' | host=' + u.host + ' | databaze=' + u.pathname)
           " || echo "!! DATABASE_URL nejde rozebrat jako URL (zvlastni znak v hesle? zakoduj ho, nebo zvol heslo jen z pismen a cisel)" >&2
-          npx payload run scripts/seed-chaty.ts
+          PAYLOAD_DB_PUSH=1 npx payload run scripts/seed-chaty.ts
           rm -rf .next
           tar -xzf /tmp/chaty-build.tar.gz
           rm -f /tmp/chaty-build.tar.gz
