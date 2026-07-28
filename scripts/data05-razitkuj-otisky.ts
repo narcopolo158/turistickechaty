@@ -58,17 +58,41 @@ export const otiskyZDetailu = (html: string, base: string = BASE): OtiskDetail[]
 
 const UA = 'turistickechaty.cz (otisky se svolením provozovatele; repo narcopolo158/turistickechaty)'
 
+const pauza = (ms: number) => new Promise((res) => setTimeout(res, ms))
+
+/**
+ * Fetch s retry a rozestupem — razitkuj.cz je malý web (a partner): mezi
+ * požadavky se čeká, dočasná chyba (429/5xx/síť) se zkouší znovu s backoffem
+ * místo shození celého běhu. Přesně tohle položilo první 45chatový běh
+ * 28. 7. 2026 (16 chat prošlo bez throttlingu, trojnásobek už ne).
+ */
+const ROZESTUP_MS = 700
+const stahniSRetry = async (url: string): Promise<Response> => {
+  let posledni: unknown
+  for (const cekej of [0, 4000, 12000]) {
+    if (cekej) await pauza(cekej)
+    try {
+      await pauza(ROZESTUP_MS)
+      const r = await fetch(url, { headers: { 'User-Agent': UA } })
+      if (r.ok || r.status === 404) return r
+      posledni = new Error(`HTTP ${r.status} u ${url}`)
+    } catch (chyba) {
+      posledni = chyba
+    }
+  }
+  throw posledni instanceof Error ? posledni : new Error(`nedostupné: ${url}`)
+}
+
 const stahniText = async (url: string): Promise<string> => {
-  const r = await fetch(url, { headers: { 'User-Agent': UA } })
+  const r = await stahniSRetry(url)
   if (r.status === 404) return ''
-  if (!r.ok) throw new Error(`HTTP ${r.status} u ${url}`)
   return r.text()
 }
 
 /** Stáhne obrázek: nejdřív plnou verzi, při 404 náhled. Vrátí data + skutečné URL. */
 const stahniObrazek = async (otisk: OtiskDetail): Promise<{ data: Buffer; url: string } | null> => {
   for (const url of [otisk.urlPlny, otisk.url]) {
-    const r = await fetch(url, { headers: { 'User-Agent': UA } })
+    const r = await stahniSRetry(url)
     if (r.ok) return { data: Buffer.from(await r.arrayBuffer()), url }
   }
   return null
@@ -102,38 +126,66 @@ const main = async () => {
   const chaty = [...dleSlug.entries()].slice(0, limit === Infinity ? undefined : limit)
 
   mkdirSync(SKENY_ADRESAR, { recursive: true })
+  // Stávající manifest: chata, u které dnešní běh selže, PODRŽÍ svůj starý
+  // záznam (jinak by ho přepis manifestu tiše zahodil) — a selhání se vypíše.
+  const staryManifest = existsSync(MANIFEST_JSON)
+    ? (JSON.parse(readFileSync(MANIFEST_JSON, 'utf8')) as { chaty?: ManifestChata[] })
+    : { chaty: [] }
+  const staryDleSlug = new Map((staryManifest.chaty ?? []).map((ch) => [ch.slug, ch]))
+
   const manifest: ManifestChata[] = []
+  const selhale: { slug: string; nazev: string; chyba: string }[] = []
   let otiskuCelkem = 0
 
   for (const [slug, info] of chaty) {
-    const html = await stahniText(info.zdrojUrl)
-    const otisky = otiskyZDetailu(html)
-    const adr = join(SKENY_ADRESAR, slug)
-    const zapsane: ManifestOtisk[] = []
-    if (otisky.length) mkdirSync(adr, { recursive: true })
-    for (const o of otisky) {
-      const stazeny = await stahniObrazek(o)
-      if (!stazeny) {
-        console.error(`  ! otisk ${o.id} (${slug}) se nepodařilo stáhnout`)
-        continue
+    try {
+      const html = await stahniText(info.zdrojUrl)
+      const otisky = otiskyZDetailu(html)
+      const adr = join(SKENY_ADRESAR, slug)
+      const zapsane: ManifestOtisk[] = []
+      if (otisky.length) mkdirSync(adr, { recursive: true })
+      for (const o of otisky) {
+        const stazeny = await stahniObrazek(o)
+        if (!stazeny) {
+          console.error(`  ! otisk ${o.id} (${slug}) se nepodařilo stáhnout`)
+          continue
+        }
+        const soubor = `${o.id}.${o.ext}`
+        writeFileSync(join(adr, soubor), stazeny.data)
+        zapsane.push({ id: o.id, soubor: `${slug}/${soubor}`, obrazekUrl: stazeny.url })
       }
-      const soubor = `${o.id}.${o.ext}`
-      writeFileSync(join(adr, soubor), stazeny.data)
-      zapsane.push({ id: o.id, soubor: `${slug}/${soubor}`, obrazekUrl: stazeny.url })
+      otiskuCelkem += zapsane.length
+      manifest.push({ slug, nazev: info.nazev, zdrojUrl: info.zdrojUrl, otisky: zapsane })
+      console.log(`${info.nazev} (${slug}): ${zapsane.length} otisků`)
+    } catch (chyba) {
+      const text = chyba instanceof Error ? chyba.message : String(chyba)
+      selhale.push({ slug, nazev: info.nazev, chyba: text })
+      const stary = staryDleSlug.get(slug)
+      if (stary) {
+        manifest.push(stary) // starý záznam drží — soubory na disku jsou
+        console.error(`  ! ${info.nazev} (${slug}): ${text} — v manifestu zůstává stav z minulého běhu`)
+      } else {
+        console.error(`  ! ${info.nazev} (${slug}): ${text} — přeskočeno, zkusí příští běh`)
+      }
     }
-    otiskuCelkem += zapsane.length
-    manifest.push({ slug, nazev: info.nazev, zdrojUrl: info.zdrojUrl, otisky: zapsane })
-    console.log(`${info.nazev} (${slug}): ${zapsane.length} otisků`)
   }
 
   writeFileSync(
     MANIFEST_JSON,
-    JSON.stringify({ zdroj: 'razitkuj.cz', svolil: SVOLIL, stazeno: new Date().toISOString().slice(0, 10), pocetChat: manifest.length, pocetOtisku: otiskuCelkem, chaty: manifest }, null, 2) + '\n',
+    JSON.stringify({ zdroj: 'razitkuj.cz', svolil: SVOLIL, stazeno: new Date().toISOString().slice(0, 10), pocetChat: manifest.length, pocetOtisku: manifest.reduce((s, ch) => s + ch.otisky.length, 0), chaty: manifest }, null, 2) + '\n',
     'utf8',
   )
   console.log(`\n## DATA-05 fáze 3b — otisky staženy`)
-  console.log(`Chat: ${manifest.length} · otisků celkem: ${otiskuCelkem}`)
+  console.log(`Chat v manifestu: ${manifest.length} · dnes staženo otisků: ${otiskuCelkem}`)
+  if (selhale.length) {
+    console.log(`Selhalo chat: ${selhale.length} — ${selhale.map((s) => s.slug).join(', ')}`)
+  }
   console.log(`Manifest: ${MANIFEST_JSON}`)
+  // Exit 1 jen když neprošlo vůbec nic — částečný úspěch se commitne
+  // a selhavší chaty doženou příští klik (viditelně vypsané výše).
+  if (chaty.length > 0 && manifest.length === 0) {
+    throw new Error('Nepodařilo se stáhnout ani jednu chatu — zkontroluj dostupnost razitkuj.cz.')
+  }
 }
 
 if (process.argv[1]?.endsWith('data05-razitkuj-otisky.ts')) {
