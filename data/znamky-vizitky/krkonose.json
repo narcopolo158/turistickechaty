@@ -1,25 +1,78 @@
 {
-  "zdroj": "Turistické známky (Turistické známky s.r.o., Rýmařov) a turistické vizitky / Wander Card (Wander Book) — katalog ChatGPT nad oficiálními seznamy vydavatelů, verified:false. Jen číslo + odkaz + fakt; obrázky se nepřebírají (autorské dílo — jen se svolením).",
-  "pocetChat": 37,
+  "zdroj": "Turistické známky (Turistické známky s.r.o., Rýmařov) a turistické vizitky / Wander Card (Wander Book) — katalog ChatGPT nad oficiálními seznamy vydavatelů, verified:false. Jen číslo + odkaz + fakt; obrázky se nepřebírají (autorské dílo — jen se svolením). Záznamy s puvod:kuratorsky doplnila redakce mimo katalog (fyzické kotouče od Michala, oficiální seznam vydavatele) — regenerace je NIKDY nemaže (DATA-26).",
+  "pocetChat": 39,
   "chaty": [
     {
-      "slug": "chata-dvoracky",
-      "nazev": "Chata Dvoračky",
+      "slug": "bouda-bile-labe",
+      "nazev": "Bouda Bílé Labe",
       "produkty": [
         {
           "system": "znamka",
-          "cislo": "22",
-          "nazev": "Dvoračky · Štumpovka, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/dvoracky-stumpovka-c22",
+          "cislo": "2012",
+          "nazev": "Bouda u Bílého Labe, Špindlerův Mlýn",
+          "url": "https://www.turisticke-znamky.cz/znamky/bouda-u-bileho-labe-c2012",
           "stav": "vedeno v oficiálním seznamu",
           "jistota": "A",
-          "poznamka": "sdílená známka Dvoračky · Štumpovka; číslo ověřeno z fyzické známky, odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
+          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
+        }
+      ]
+    },
+    {
+      "slug": "nova-klinovka",
+      "nazev": "Bouda Klínovka",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "3092",
+          "nazev": "Bouda Klínovka, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/bouda-klinovka-c3092",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
+        }
+      ]
+    },
+    {
+      "slug": "bouda-ruzohorky",
+      "nazev": "Bouda Růžohorky",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "75",
+          "nazev": "Růžohorky",
+          "url": "https://www.turisticke-znamky.cz/znamky/ruzohorky-c75",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
         },
         {
           "system": "vizitka",
-          "cislo": "CZ-409",
-          "nazev": "Chata Dvoračky",
-          "url": "https://cs.wander-book.com/chata-dvoracky-m216.htm",
+          "cislo": "CZ-2246",
+          "nazev": "Horská bouda Růžohorky",
+          "url": "https://cs.wander-book.com/horska-bouda-ruzohorky-m672.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "bradlerovy-boudy",
+      "nazev": "Brádlerovy boudy",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "394",
+          "nazev": "Brádlerovy boudy",
+          "url": "https://www.turisticke-znamky.cz/znamky/bradlerovy-boudy-c394",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-2144",
+          "nazev": "Brádlerovy boudy",
+          "url": "https://cs.wander-book.com/bradlerovy-boudy-m862.htm",
           "stav": "aktivní v katalogu Wander Book",
           "jistota": "A"
         }
@@ -35,6 +88,44 @@
           "nazev": "Schronisko Górskie Dom Śląski - Karkonosze",
           "url": "https://www.znaczki-turystyczne.pl/znaczkowe-miejsca-turystyczne/schronisko-gorskie-dom-slaski-karkonosze-c94",
           "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "erlebachova-bouda",
+      "nazev": "Erlebachova bouda",
+      "produkty": [
+        {
+          "system": "vizitka",
+          "cislo": "CZ-2933",
+          "nazev": "Erlebachova bouda",
+          "url": "https://cs.wander-book.com/erlebachova-bouda-m3917.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "friesovy-boudy",
+      "nazev": "Friesovy boudy",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "2049",
+          "nazev": "Friesovy boudy, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/friesovy-boudy-c2049",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-2529",
+          "nazev": "Friesovy boudy",
+          "url": "https://cs.wander-book.com/friesovy-boudy-m4552.htm",
+          "stav": "aktivní v katalogu Wander Book",
           "jistota": "A"
         }
       ]
@@ -56,6 +147,128 @@
           "cislo": "CZ-2340",
           "nazev": "Špindlerova bouda",
           "url": "https://cs.wander-book.com/spindlerova-bouda-m1631.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "chalupa-na-rozcesti",
+      "nazev": "Chalupa Na Rozcestí",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "13",
+          "nazev": "Chalupa Na Rozcestí",
+          "url": "https://www.turisticke-znamky.cz/znamky/chalupa-na-rozcesti-c13",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-2459",
+          "nazev": "Chalupa Na Rozcestí",
+          "url": "https://cs.wander-book.com/chalupa-na-rozcesti-m625.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "chata-dvoracky",
+      "nazev": "Chata Dvoračky",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "22",
+          "nazev": "Dvoračky · Štumpovka, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/dvoracky-stumpovka-c22",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "sdílená známka Dvoračky · Štumpovka; číslo ověřeno z fyzické známky, odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-409",
+          "nazev": "Chata Dvoračky",
+          "url": "https://cs.wander-book.com/chata-dvoracky-m216.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "chata-rezek",
+      "nazev": "Chata Rezek",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "19",
+          "nazev": "Osada Rezek · Jeruzalém, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/osada-rezek-jeruzalem-c19",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "B",
+          "poznamka": "číslo ověřeno z fyzické známky; známka je vydána pro OSADU Rezek · Jeruzalém, ne prokazatelně pro tuto chatu — vazba k ověření (kde se známka prodává). Odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
+        }
+      ]
+    },
+    {
+      "slug": "chata-rozhled",
+      "nazev": "Chata Rozhled",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "14",
+          "nazev": "Chata Rozhled - Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/rozhled-c14",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky (obrázek dodal Michal, 22. 7. 2026) a položka 14 oficiálního seznamu vydavatele (červenec 2026, DATA-22); URL viděna ve výsledcích vyhledávání 26. 7. 2026 (ověřit klikem)",
+          "puvod": "kuratorsky"
+        }
+      ]
+    },
+    {
+      "slug": "jelenka",
+      "nazev": "Jelenka",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "1367",
+          "nazev": "Horská bouda Jelenka",
+          "url": "https://www.turisticke-znamky.cz/znamky/horska-bouda-jelenka-c1367",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-410",
+          "nazev": "Bouda Jelenka",
+          "url": "https://cs.wander-book.com/bouda-jelenka-m1415.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "kolinska-bouda",
+      "nazev": "Kolínská bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "1719",
+          "nazev": "Kolínská bouda – Pec pod Sněžkou",
+          "url": "https://www.turisticke-znamky.cz/znamky/kolinska-bouda-pec-pod-snezkou-c1719",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-2097",
+          "nazev": "Kolínská bouda",
+          "url": "https://cs.wander-book.com/kolinska-bouda-m2636.htm",
           "stav": "aktivní v katalogu Wander Book",
           "jistota": "A"
         }
@@ -120,6 +333,225 @@
       ]
     },
     {
+      "slug": "lysecinska-bouda",
+      "nazev": "Lysečinská bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "1336",
+          "nazev": "Lysečinská bouda, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/lysecinska-bouda-krkonose-c1336",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "lyzarska-bouda",
+      "nazev": "Lyžařská bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "2210",
+          "nazev": "Lyžařská bouda · Liščí louka, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/lyzarska-bouda-lisci-louka-c2210",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky; rytina nese výšku 1206 m shodně s profilem. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-3522",
+          "nazev": "Lyžařská bouda",
+          "url": "https://cs.wander-book.com/lyzarska-bouda-m2637.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "martinova-bouda",
+      "nazev": "Martinova bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "674",
+          "nazev": "Martinova bouda",
+          "url": "https://www.turisticke-znamky.cz/znamky/martinova-bouda-c674",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-2141",
+          "nazev": "Martinova bouda",
+          "url": "https://cs.wander-book.com/martinova-bouda-m1034.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "medvedi-bouda",
+      "nazev": "Medvědí bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "1274",
+          "nazev": "Medvědí bouda",
+          "url": "https://www.turisticke-znamky.cz/znamky/medvedi-bouda-c1274",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky (zip od Michala, 22. 7. 2026) a položka 1274 oficiálního seznamu vydavatele (červenec 2026, DATA-22); odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
+        }
+      ]
+    },
+    {
+      "slug": "moravska-bouda",
+      "nazev": "Moravská bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "1873",
+          "nazev": "Moravská Bouda - Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/moravska-bouda-krkonose-c1873",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-2573",
+          "nazev": "Moravská bouda",
+          "url": "https://cs.wander-book.com/moravska-bouda-m5620.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "petrova-bouda",
+      "nazev": "Petrova bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "671",
+          "nazev": "Petrova bouda, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/petrova-bouda-c671",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
+        }
+      ]
+    },
+    {
+      "slug": "pomezni-bouda",
+      "nazev": "Pomezní bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "673",
+          "nazev": "Pomezní boudy",
+          "url": "https://www.turisticke-znamky.cz/znamky/pomezni-boudy-c673",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "B",
+          "poznamka": "Oficiální známka je vedena v množném čísle jako lokalita Pomezní boudy."
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-1208",
+          "nazev": "Pomezní bouda",
+          "url": "https://cs.wander-book.com/pomezni-bouda-m3094.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "portasky",
+      "nazev": "Portášky",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "675",
+          "nazev": "Portášky",
+          "url": "https://www.turisticke-znamky.cz/znamky/portasky-c675",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "prazska-bouda",
+      "nazev": "Pražská bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "2249",
+          "nazev": "Pražská bouda, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/prazska-bouda-krkonose-c2249",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "B",
+          "poznamka": "položka 2249 oficiálního seznamu vydavatele (červenec 2026, DATA-22); odkaz na detail sestaven dle vzoru webu, neověřen (ověřit klikem)",
+          "puvod": "kuratorsky"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-5981",
+          "nazev": "Pražská bouda",
+          "url": "https://cs.wander-book.com/prazska-bouda-m9515.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "richtrovy-boudy",
+      "nazev": "Richtrovy boudy",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "1602",
+          "nazev": "Richtrovy boudy",
+          "url": "https://www.turisticke-znamky.cz/znamky/richtrovy-boudy-c1602",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-2524",
+          "nazev": "Richtrovy boudy",
+          "url": "https://cs.wander-book.com/richtrovy-boudy-m2770.htm",
+          "stav": "vyřazena z projektu v roce 2022",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "rychorska-bouda",
+      "nazev": "Rýchorská bouda",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "390",
+          "nazev": "Rýchorská bouda",
+          "url": "https://www.turisticke-znamky.cz/znamky/rychorska-bouda-c390",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        },
+        {
+          "system": "vizitka",
+          "cislo": "CZ-458",
+          "nazev": "Rýchorská bouda",
+          "url": "https://cs.wander-book.com/rychorska-bouda-m859.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
       "slug": "schronisko-kamienczyk",
       "nazev": "Schronisko Kamieńczyk",
       "produkty": [
@@ -164,6 +596,20 @@
           "cislo": "47",
           "nazev": "Schronisko PTTK na Przełęczy Okraj",
           "url": "https://www.znaczki-turystyczne.pl/znaczkowe-miejsca-turystyczne/schronisko-pttk-na-przeleczy-okraj-c47",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A"
+        }
+      ]
+    },
+    {
+      "slug": "schronisko-pttk-na-hali-szrenickiej",
+      "nazev": "Schronisko PTTK na Hali Szrenickiej",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "99",
+          "nazev": "Schronisko PTTK na Hali Szrenickiej",
+          "url": "https://www.znaczki-turystyczne.pl/znaczkowe-miejsca-turystyczne/schronisko-pttk-na-hali-szrenickiej-c99",
           "stav": "vedeno v oficiálním seznamu",
           "jistota": "A"
         }
@@ -236,6 +682,22 @@
       ]
     },
     {
+      "slug": "tetrevi-boudy",
+      "nazev": "Tetřeví Boudy",
+      "produkty": [
+        {
+          "system": "znamka",
+          "cislo": "1347",
+          "nazev": "Tetřeví Boudy, Krkonoše",
+          "url": "https://www.turisticke-znamky.cz/znamky/tetrevi-boudy-c1347",
+          "stav": "vedeno v oficiálním seznamu",
+          "jistota": "A",
+          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
+        }
+      ]
+    },
+    {
       "slug": "vosecka-bouda",
       "nazev": "Vosecká bouda",
       "produkty": [
@@ -258,291 +720,6 @@
       ]
     },
     {
-      "slug": "tetrevi-boudy",
-      "nazev": "Tetřeví Boudy",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "1347",
-          "nazev": "Tetřeví Boudy, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/tetrevi-boudy-c1347",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "bouda-bile-labe",
-      "nazev": "Bouda u Bílého Labe",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "2012",
-          "nazev": "Bouda u Bílého Labe, Špindlerův Mlýn",
-          "url": "https://www.turisticke-znamky.cz/znamky/bouda-u-bileho-labe-c2012",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "nova-klinovka",
-      "nazev": "Bouda Klínovka",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "3092",
-          "nazev": "Bouda Klínovka, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/bouda-klinovka-c3092",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "martinova-bouda",
-      "nazev": "Martinova bouda",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "674",
-          "nazev": "Martinova bouda, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/martinova-bouda-c674",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "vyrovka",
-      "nazev": "Výrovka",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "12",
-          "nazev": "Chata Výrovka, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/chata-vyrovka-c12",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "petrova-bouda",
-      "nazev": "Petrova bouda",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "671",
-          "nazev": "Petrova bouda, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/petrova-bouda-c671",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "chalupa-na-rozcesti",
-      "nazev": "Chalupa Na Rozcestí",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "13",
-          "nazev": "Chalupa Na Rozcestí, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/chalupa-na-rozcesti-c13",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "jelenka",
-      "nazev": "Jelenka",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "1367",
-          "nazev": "Horská bouda Jelenka, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/horska-bouda-jelenka-c1367",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail ověřen ve výsledku vyhledávání"
-        }
-      ]
-    },
-    {
-      "slug": "kolinska-bouda",
-      "nazev": "Kolínská bouda",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "1719",
-          "nazev": "Kolínská bouda, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/kolinska-bouda-c1719",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo opravil Michal (z rytiny jsem četl 1716); odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "bradlerovy-boudy",
-      "nazev": "Brádlerovy boudy",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "394",
-          "nazev": "Brádlerovy boudy, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/bradlerovy-boudy-c394",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "rychorska-bouda",
-      "nazev": "Rýchorská bouda",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "390",
-          "nazev": "Rýchorská bouda, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/rychorska-bouda-c390",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "friesovy-boudy",
-      "nazev": "Friesovy boudy",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "2049",
-          "nazev": "Friesovy boudy, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/friesovy-boudy-c2049",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "bouda-ruzohorky",
-      "nazev": "Bouda Růžohorky",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "75",
-          "nazev": "Růžohorky, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/ruzohorky-c75",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "B",
-          "poznamka": "číslo ověřeno z fyzické známky; známka je vydána pro místo „Růžohorky“ (jméno osady i boudy) — vazba na tento konkrétní objekt nedoložena; navíc rytina nese 1250 m, zatímco zdroje u boudy uvádějí 1280 m. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "chata-rezek",
-      "nazev": "Chata Rezek",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "19",
-          "nazev": "Osada Rezek · Jeruzalém, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/osada-rezek-jeruzalem-c19",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "B",
-          "poznamka": "číslo ověřeno z fyzické známky; známka je vydána pro OSADU Rezek · Jeruzalém, ne prokazatelně pro tuto chatu — vazba k ověření (kde se známka prodává). Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "lysecinska-bouda",
-      "nazev": "Lysečinská bouda",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "1336",
-          "nazev": "Lysečinská bouda, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/lysecinska-bouda-c1336",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "lyzarska-bouda",
-      "nazev": "Lyžařská bouda",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "2210",
-          "nazev": "Lyžařská bouda · Liščí louka, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/lyzarska-bouda-lisci-louka-c2210",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; rytina nese výšku 1206 m shodně s profilem. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "moravska-bouda",
-      "nazev": "Moravská bouda",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "1873",
-          "nazev": "Moravská bouda, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/moravska-bouda-c1873",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; rytina nese výšku 1225 m shodně s profilem (České hory uvádějí 1220 m). Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "pomezni-bouda",
-      "nazev": "Pomezní bouda",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "673",
-          "nazev": "Pomezní Boudy · Malá Úpa, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/pomezni-boudy-mala-upa-c673",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "B",
-          "poznamka": "číslo ověřeno z fyzické známky; známka je vydána pro místo „Pomezní Boudy · Malá Úpa“, tedy pro sedlo/osadu s více objekty — vazba na tuto boudu k ověření. Rytina nese 1050 m shodně s profilem. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "portasky",
-      "nazev": "Portášky",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "675",
-          "nazev": "Portášky, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/portasky-c675",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; rytina nese 1050 m, externí katalog uvádí 1060 m — výška v profilu proto vědomě nevyplněna. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
       "slug": "vrbatova-bouda",
       "nazev": "Vrbatova bouda",
       "produkty": [
@@ -553,67 +730,30 @@
           "url": "https://www.turisticke-znamky.cz/znamky/vrbatova-bouda-c393",
           "stav": "vedeno v oficiálním seznamu",
           "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky; kotouč nese 1400 m, shodně s výškou v profilu (kudyznudy.cz 1 400 m) — zdroje se přitom rozcházejí (1396 / 1390 m), rozpor je zapsán v profilu. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
+          "poznamka": "číslo ověřeno z fyzické známky; kotouč nese 1400 m, shodně s výškou v profilu (kudyznudy.cz 1 400 m) — zdroje se přitom rozcházejí (1396 / 1390 m), rozpor je zapsán v profilu. Odkaz na detail sestaven dle vzoru webu (ověřit klikem)",
+          "puvod": "kuratorsky"
         }
       ]
     },
     {
-      "slug": "chata-rozhled",
-      "nazev": "Chata Rozhled",
+      "slug": "vyrovka",
+      "nazev": "Výrovka",
       "produkty": [
         {
           "system": "znamka",
-          "cislo": "14",
-          "nazev": "Chata Rozhled - Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/rozhled-c14",
+          "cislo": "12",
+          "nazev": "Chata Výrovka",
+          "url": "https://www.turisticke-znamky.cz/znamky/chata-vyrovka-c12",
           "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky (obrázek dodal Michal, 22. 7. 2026) a položka 14 oficiálního seznamu vydavatele (červenec 2026, DATA-22); URL viděna ve výsledcích vyhledávání 26. 7. 2026 (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "medvedi-bouda",
-      "nazev": "Medvědí bouda",
-      "produkty": [
+          "jistota": "A"
+        },
         {
-          "system": "znamka",
-          "cislo": "1274",
-          "nazev": "Medvědí bouda",
-          "url": "https://www.turisticke-znamky.cz/znamky/medvedi-bouda-c1274",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "číslo ověřeno z fyzické známky (zip od Michala, 22. 7. 2026) a položka 1274 oficiálního seznamu vydavatele (červenec 2026, DATA-22); odkaz na detail sestaven dle vzoru webu (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "prazska-bouda",
-      "nazev": "Pražská bouda",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "2249",
-          "nazev": "Pražská bouda, Krkonoše",
-          "url": "https://www.turisticke-znamky.cz/znamky/prazska-bouda-krkonose-c2249",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "B",
-          "poznamka": "položka 2249 oficiálního seznamu vydavatele (červenec 2026, DATA-22); odkaz na detail sestaven dle vzoru webu, neověřen (ověřit klikem)"
-        }
-      ]
-    },
-    {
-      "slug": "richtrovy-boudy",
-      "nazev": "Richtrovy boudy",
-      "produkty": [
-        {
-          "system": "znamka",
-          "cislo": "1602",
-          "nazev": "Richtrovy boudy",
-          "url": "https://www.turisticke-znamky.cz/znamky/richtrovy-boudy-c1602",
-          "stav": "vedeno v oficiálním seznamu",
-          "jistota": "A",
-          "poznamka": "položka 1602 oficiálního seznamu vydavatele (červenec 2026, DATA-22); URL viděna ve výsledcích vyhledávání 26. 7. 2026, detail se ze sandboxu nenačte (ověřit klikem)"
+          "system": "vizitka",
+          "cislo": "CZ-359",
+          "nazev": "Chata Výrovka",
+          "url": "https://cs.wander-book.com/chata-vyrovka-m624.htm",
+          "stav": "aktivní v katalogu Wander Book",
+          "jistota": "A"
         }
       ]
     }

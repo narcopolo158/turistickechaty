@@ -5,7 +5,7 @@
  */
 import { describe, expect, it } from 'vitest'
 
-import { nactiKatalog, produktZRadku } from '../../scripts/data10-znamky-vizitky'
+import { nactiKatalog, produktZRadku, sloucSKuratorskymi, type Produkt } from '../../scripts/data10-znamky-vizitky'
 
 const radek = (over: Record<string, string> = {}): Record<string, string> => ({
   'ID chaty': 'HUT-0001',
@@ -61,5 +61,45 @@ describe('DATA-10 · nactiKatalog', () => {
 
   it('prázdný CSV → prázdná mapa', () => {
     expect(nactiKatalog('').size).toBe(0)
+  })
+})
+
+describe('DATA-26 · merge s kurátorskou vrstvou', () => {
+  const gen = (slug: string, cislo: string): { slug: string; nazev: string; produkty: Produkt[] } => ({
+    slug,
+    nazev: slug,
+    produkty: [{ system: 'znamka' as const, cislo, nazev: 'x', url: 'https://x', stav: 's', jistota: 'B' }],
+  })
+  const kuratorsky: Produkt = { system: 'znamka', cislo: '2249', nazev: 'Pražská bouda', url: 'https://x/2249', stav: 's', jistota: 'B', puvod: 'kuratorsky' }
+
+  it('kurátorský záznam regenerace NIKDY nesmaže — drží se i bez shody generátoru', () => {
+    const vysledek = sloucSKuratorskymi(
+      [gen('labska-bouda', '5')],
+      [{ slug: 'prazska-bouda', produkty: [kuratorsky] }],
+      [{ slug: 'prazska-bouda', nazev: 'Pražská bouda' }, { slug: 'labska-bouda', nazev: 'Labská bouda' }],
+    )
+    const prazska = vysledek.find((ch) => ch.slug === 'prazska-bouda')
+    expect(prazska?.produkty).toHaveLength(1)
+    expect(prazska?.produkty[0].puvod).toBe('kuratorsky')
+    expect(vysledek.find((ch) => ch.slug === 'labska-bouda')?.produkty).toHaveLength(1)
+  })
+
+  it('při kolizi čísla vyhrává kurátorský; negenerované NEkurátorské záznamy mizí (obnova z katalogu)', () => {
+    const vysledek = sloucSKuratorskymi(
+      [gen('prazska-bouda', '2249')],
+      [
+        {
+          slug: 'prazska-bouda',
+          produkty: [
+            { ...kuratorsky, poznamka: 'kurátorská verze' },
+            { system: 'znamka', cislo: '999', nazev: 'stará generovaná', url: 'https://x/999', stav: 's', jistota: 'B' },
+          ],
+        },
+      ],
+      [{ slug: 'prazska-bouda', nazev: 'Pražská bouda' }],
+    )
+    const prazska = vysledek.find((ch) => ch.slug === 'prazska-bouda')!
+    expect(prazska.produkty).toHaveLength(1) // 999 bez puvod=kuratorsky se z katalogu neobnovila → pryč
+    expect(prazska.produkty[0].poznamka).toBe('kurátorská verze') // kolize 2249 → kurátorský vyhrál
   })
 })

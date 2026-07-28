@@ -258,6 +258,24 @@ zůstávají v YAML jako doložená data. Celá trasová pipeline je tím
 v režimu údržby (přepočet lokálně + klik na výšky při růstu korpusu).
 19 testů DATA-06 zelených.
 
+**Dodatek 12 (týž den, „pokracuj"): DATA-26 HOTOVÁ — data10 už
+kurátorovaná data nezahodí; katalog známek/vizitek dohnal korpus.**
+Zvolena varianta (a) merge: záznamy doplněné redakcí mimo katalog nesou
+`puvod: kuratorsky` (12 označeno — pozor, hrubá detekce „číslo není
+v CSV" minula známku 14 Rozhledu, protože číslo 14 nese v CSV i cizí
+objekt; odhalil ji až nasucho diff −1 → doznačena, pak −0), merge je
+nikdy nemaže (kolize čísla → kurátorský vyhrává; drží se i bez profilu
+v korpusu) a výchozí běh je NASUCHO s diffem — zapisuje jen `--zapis`
+(vzor DATA-24). První ostrý merge: **+16/−0** — vizitky profilů
+povýšených po DATA-21 (Růžohorky, Brádlerovky, Erlebachova, Pomezní,
+Pražská CZ-5981…) a známka 99 Hali Szrenickiej; **karta Sběratelská
+místa teď u 39 chat (37 známek + 25 vizitek, 12 kurátorských)**. Testy
++2 (8/8 data10). **DATA-22 zbývá poslední krok:** projít katalog
+vydavatele doopravdy — detailní stránky se ze sandboxu nenačtou (smyčka
+přesměrování), scraper naslepo psát nebudu; potřebuje jednorázový
+průzkum struktury (Michal uloží HTML stránky katalogu, nebo zkusit
+z Actions runneru curl — navrhnu příště).
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh
