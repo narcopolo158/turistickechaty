@@ -175,6 +175,28 @@ text:
     restaurací. Rozcházejí se i internetové adresy, které o boudě prameny
     uvádějí. Před cestou proto doporučujeme otvírací dobu i možnost stravování
     potvrdit přímo u boudy.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/2/25/Lyse%C4%8Dinsk%C3%A1_bouda.JPG
+    alt: Lysečinská bouda (jaro 2014)
+    typ: soucasna
+    autor: Vojáček Karel
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Lyse%C4%8Dinsk%C3%A1_bouda.JPG
+    prevzatoDne: '2026-07-28'
+    overeni:
+      source: >-
+        Wikimedia Commons (kategorie + fulltext dle názvu chaty, DATA-02
+        export z 2026-07-28; CHATA BEZ GPS V YAML — geosearch neproběhl a
+        vzdálenost od chaty nelze měřit, snímek bez geotagu; popis „Chata
+        Lysečiny, Lysečinské boudy v Krkonoších z jara 2014“ — VÝHRADA:
+        popis jmenuje lokalitu i skupinu bud v plurálu, že jde o budovu
+        Lysečinské boudy potvrdí redakce na stránce souboru; 3470×2480,
+        licence CC BY-SA 4.0 z licenčního síta DATA-02; redakční výběr
+        2026-07-28 nad exportem — Commons živě nedosaženo)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-28'
+
 zdroje:
   - popis: >-
       Kudy z nudy — „Lysečinská bouda – pohoda v srdci Krkonoš" (výška, adresa,

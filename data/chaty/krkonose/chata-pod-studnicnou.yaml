@@ -135,6 +135,29 @@ text:
 # Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nesbírali
 # (DATA-02 běžela nad objekty s GPS). Doplnit po doložení souřadnic.
 
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/e/e8/Chata_Pod_Studnicnou_-_Pec_pod_Snezkou.jpg
+    alt: Chata Pod Studničnou v Peci pod Sněžkou (srpen 2010)
+    typ: soucasna
+    autor: Jan Kovář BK
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Chata_Pod_Studnicnou_-_Pec_pod_Snezkou.jpg
+    prevzatoDne: '2026-07-28'
+    overeni:
+      source: >-
+        Wikimedia Commons (fulltext dle názvu chaty, DATA-02 export z
+        2026-07-28; CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenost
+        od chaty nelze měřit, geotag snímku 50.708791, 15.726305 (Pec pod
+        Sněžkou); popis „Chata Pod Studničnou v Peci pod Sněžkou“,
+        2048×1536, licence CC BY-SA 3.0 z licenčního síta DATA-02; jméno
+        autora Jan Kovář BK dovozeno z uživatelských odkazů v poli Artist
+        surového exportu (samotný text pole nese jen podmínky užití) —
+        potvrdí redakce na stránce souboru; redakční výběr 2026-07-28 nad
+        exportem — Commons živě nedosaženo)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-28'
+
 zdroje:
   - popis: >-
       Klub českých turistů — stránka chaty: výška, adresa, kapacita,

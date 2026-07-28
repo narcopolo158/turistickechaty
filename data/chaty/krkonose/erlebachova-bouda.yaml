@@ -140,6 +140,27 @@ text:
 # Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nesbírali
 # (DATA-02 běžela nad objekty s GPS). Doplnit po doložení souřadnic.
 
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/4/45/Erlebachova_Bouda_-zima25.jpg
+    alt: Erlebachova bouda v zimě (leden 2024)
+    typ: soucasna
+    autor: Erlebachova Bouda
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Erlebachova_Bouda_-zima25.jpg
+    prevzatoDne: '2026-07-28'
+    overeni:
+      source: >-
+        Wikimedia Commons (kategorie + fulltext dle názvu chaty, DATA-02
+        export z 2026-07-28; CHATA BEZ GPS V YAML — geosearch neproběhl a
+        vzdálenost od chaty nelze měřit, snímek bez geotagu; popis „Winter
+        view of Erlebachova Bouda…“, autorské pole = účet provozovatele
+        (Erlebachova Bouda) — vlastní snímek boudy po rekonstrukci, focen
+        1/2024, 6472×4315, licence CC BY-SA 4.0 z licenčního síta DATA-02;
+        redakční výběr 2026-07-28 nad exportem — Commons živě nedosaženo)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-28'
+
 zdroje:
   - popis: >-
       Web boudy (erlebachovabouda.cz) — restaurace Panorama, otvírací

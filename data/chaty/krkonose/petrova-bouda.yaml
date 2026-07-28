@@ -149,6 +149,28 @@ text:
     ověřená ale není. Před cestou proto doporučujeme potvrdit si přímo u boudy
     zejména otvírací dobu útulny a to, zda restaurace opravdu vaří jen pro
     ubytované.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/3/3a/Petrova_bouda_2023.jpg
+    alt: Petrova bouda ve Špindlerově Mlýně (čp. 89), snímek z května 2023
+    typ: soucasna
+    autor: ŠJů
+    licence: cc-by
+    licencePoznamka: CC BY 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Petrova_bouda_2023.jpg
+    prevzatoDne: '2026-07-28'
+    overeni:
+      source: >-
+        Wikimedia Commons (kategorie + fulltext dle názvu chaty, DATA-02
+        export z 2026-07-28; CHATA BEZ GPS V YAML — geosearch neproběhl a
+        vzdálenost od chaty nelze měřit, geotag snímku 50.7727467,
+        15.6123803; popis „Špindlerův Mlýn, Trutnov District, Czechia. House
+        no. 89, Petrova bouda.“, focen 28. 5. 2023 — tedy současná budova
+        (dokončená 2020), 2592×1944, licence CC BY 4.0 z licenčního síta
+        DATA-02; redakční výběr 2026-07-28 nad exportem — Commons živě
+        nedosaženo)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-28'
+
 zdroje:
   - popis: >-
       Kudy z nudy — „Petrova bouda ve Špindlerově Mlýně" (historie, kapacita,

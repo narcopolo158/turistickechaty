@@ -148,6 +148,26 @@ text:
 # (DATA-02 běžela nad objekty s GPS; Pražská ji nemá). Doplnit po
 # doložení souřadnic.
 
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/8/84/Pec_pod_Snezkou_2022_P05_Prazska_bouda.jpg
+    alt: Pražská bouda v zimě (únor 2022)
+    typ: soucasna
+    autor: Fallaner
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Pec_pod_Snezkou_2022_P05_Prazska_bouda.jpg
+    prevzatoDne: '2026-07-28'
+    overeni:
+      source: >-
+        Wikimedia Commons (kategorie + fulltext dle názvu chaty, DATA-02
+        export z 2026-07-28; CHATA BEZ GPS V YAML — geosearch neproběhl a
+        vzdálenost od chaty nelze měřit, snímek bez geotagu; popis „Pražská
+        bouda“, série SkiTour Janské Lázně–Pec 2/2022, 5184×3888, licence CC
+        BY-SA 4.0 z licenčního síta DATA-02; redakční výběr 2026-07-28 nad
+        exportem — Commons živě nedosaženo)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-28'
+
 zdroje:
   - popis: >-
       Kudy z nudy — pokoje, restaurace s terasou, poloha u sjezdovky
@@ -173,3 +193,8 @@ interniPoznamky: |-
   Podle DATA-22 má bouda známku č. 2249 (oficiální seznam vydavatele, červenec 2026) — fakticky tedy byla Tier 1 (známka + katalog), ač ji master fronta vedla v Tier 3; katalog znamky-vizitky.csv pro ni vede jen vizitku CZ-5981 (Wander Book — bez svolení se nepoužívá) a řádek známky 2249 CHYBÍ; doplnění katalogu vedeno v DATA-22, bez něj data10 kartu sběratelských míst nevyrobí.
   ROZPORY A MEZERY vedené otevřeně: obec Pec pod Sněžkou (katalog, bez opory) × Černý Důl (adresa ve dvou zápisech) — pole přepsáno na adresní hodnotu, exponát DATA-20; veřejnost restaurace nedoložena (otvíračka 11–22 denně na Firmy.cz je nejsilnější signál; otázka na telefonát DATA-04); historie nedoložena vůbec; GPS chybí; kapacita lůžek nedopočítávána z 24×2.
   K dotažení (DATA-04 / Michal): web v prohlížeči (sandbox ho nenačte), telefonát — veřejnost restaurace; GPS s pramenem; historie (samostatná rešerše — knižní prameny?); hero fotka po doložení GPS.
+
+  DATA-02 (2026-07-28): popisy fotoserie ŠJů na Commons uvádějí „Černý Důl,
+  Lučiny, čp. 215, Pražská bouda" — další nezávislý zápis pro adresu Černý Důl
+  215 (k adresnímu rozporu vedenému výše; popisy na Commons jsou sekundární
+  pramen).

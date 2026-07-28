@@ -60,6 +60,29 @@ záznamů), meta vyloučen, chaty 76 / oblasti 1 / střediska 7 beze změny.
 Večerní deploy F1c (#16, commit 9603c1e) prošel — staging má katalog
 i homepage z čtyřbloku, vizuální kontrola dává smysl.
 
+**Dodatek 2 (týž den, Michal online — „data-02 doběhlo zeleně"):**
+sklizeň zpracována. Běh commitnul 96 kandidátních YAML (b1317e9) — poprvé
+vč. chat bez GPS. Z nich **hero pro 8 z 12 bez-GPS profilů**: Petrova
+(ŠJů 2023 — současná budova čp. 89, po dostavbě 2020), Pražská (Fallaner,
+SkiTour 2022, 5184×3888), Kolínská (O. Mejsnar 2012), Rýchorská (Breta
+Valek 2015, geotag na Rýchorách), Lysečinská (Vojáček Karel 2014 —
+VÝHRADA: popis jmenuje skupinu bud v plurálu), Pod Studničnou (Jan Kovář
+BK 2010 — jméno autora dovozeno z uživatelských odkazů v surovém poli
+Artist, samotný text pole nese jen podmínky užití), Pomezní (Pudelek
+2008 — stáří záběru v poznámce), Erlebachova (účet provozovatele, zima
+2024 po rekonstrukci, 6472×4315). Vše `verified: false`, oční kontrola
+licencí = Michal. **Publikovaných s hero: 34 → 42 (z 76).** Poctivě bez
+hero: **Portášky** — 13 kandidátů je vesměs lanovka/sjezdovka/rozcestník/
+Sagesserovy boudy, budovu nic nepotvrzuje (interniPoznamky). Bonus:
+popisy ŠJů série na Commons dávají další nezávislý zápis „Černý Důl,
+čp. 215" k adresnímu rozporu Pražské (interniPoznamky). Kontrola
+`npm run kontrola` zelená. **Zbývá z téže sklizně** (další session):
+Na Lučinách (34 kandidátů), Slovanka (35), Náchodská (11), Studenov (8),
+Smetánka (7), Betyna (7), Husova (5), Jelení Louky (7), Raisova (37),
+Barborka (51), + znovu posoudit Kochanówku (35), Okraj (24) a Loveckou
+(15 — pozor jmenovci); Rezek, Rozhled, U Jirky, Friesovky, Sedmidolí,
+U Kotle, Zákoutí, Amor, Na Muldě mají 0 kandidátů → chataři se svolením.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

@@ -177,6 +177,27 @@ text:
     na mapě zatím doloženou nemáme — v mapových datech, ze kterých vycházíme,
     bouda nefiguruje. Než sem doplníme ověřené údaje, doporučujeme si nocleh,
     občerstvení i aktuální provoz potvrdit přímo u boudy.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/4/43/Pomezn%C3%AD_bouda.JPG
+    alt: Pomezní bouda v Malé Úpě (květen 2008)
+    typ: soucasna
+    autor: Pudelek
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_bouda.JPG
+    prevzatoDne: '2026-07-28'
+    overeni:
+      source: >-
+        Wikimedia Commons (fulltext dle názvu chaty, DATA-02 export z
+        2026-07-28; CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenost
+        od chaty nelze měřit, geotag snímku 50.74588889, 15.82030556
+        (Pomezní Boudy); popis „Pomezní bouda (Blaschkebaude, Goderbaude) -
+        mountain hostel in Malá Úpa“ — snímek z 5/2008, stáří záběru vzít v
+        potaz; 2592×1944, licence CC BY-SA 4.0 z licenčního síta DATA-02;
+        redakční výběr 2026-07-28 nad exportem — Commons živě nedosaženo)
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-07-28'
+
 zdroje:
   - popis: >-
       Kudy z nudy — „Horský hotel Pomezní bouda v Horní Malé Úpě" (výška,
