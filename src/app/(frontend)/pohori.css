@@ -230,3 +230,159 @@
   .pchs-radek { grid-template-columns: 1fr 64px 90px; }
   .pchs-sluzby, .pchs-overeno { display: none; }
 }
+
+/* ── 07 Vitrína sběratelství — dřevo, mosaz, sklo ──────────────────────── */
+.vit { display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px; align-items: start; }
+.vit-skrinka {
+  position: relative;
+  border-radius: 10px;
+  padding: 26px;
+  background: linear-gradient(168deg, #7a5730, #5f4022 55%, #4a3018);
+  box-shadow:
+    inset 0 2px 3px rgba(255, 226, 180, 0.35),
+    inset 0 -3px 6px rgba(30, 18, 6, 0.6),
+    0 22px 44px -18px rgba(30, 20, 8, 0.55);
+  overflow: hidden;
+}
+.vit-kresba { position: absolute; inset: 0; opacity: 0.5; mix-blend-mode: multiply; pointer-events: none; }
+.vit-pokos { position: absolute; left: 0; right: 0; height: 26px; pointer-events: none; }
+.vit-pokos.horni { top: 0; background: linear-gradient(135deg, rgba(255, 226, 180, 0.22), transparent 30%), linear-gradient(-135deg, rgba(255, 226, 180, 0.22), transparent 30%); }
+.vit-pokos.dolni { bottom: 0; background: linear-gradient(45deg, rgba(30, 18, 6, 0.4), transparent 30%), linear-gradient(-45deg, rgba(30, 18, 6, 0.4), transparent 30%); }
+.vit-sroub {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f4dfae, #b08d4c 55%, #6e5324);
+  box-shadow: 0 1px 2px rgba(20, 12, 4, 0.7), inset 0 -1px 1px rgba(60, 40, 12, 0.7);
+}
+.vit-sroub::after { content: ''; position: absolute; left: 1.5px; right: 1.5px; top: 50%; height: 1.3px; transform: translateY(-50%) rotate(38deg); background: rgba(70, 48, 16, 0.85); border-radius: 1px; }
+.vit-sroub.tl { left: 9px; top: 9px; }
+.vit-sroub.tr { right: 9px; top: 9px; }
+.vit-sroub.bl { left: 9px; bottom: 9px; }
+.vit-sroub.br { right: 9px; bottom: 9px; }
+.vit-zada {
+  position: relative;
+  border-radius: 5px;
+  padding: 18px 16px 8px;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 118px, rgba(24, 14, 5, 0.35) 118px 120px),
+    repeating-linear-gradient(90deg, rgba(255, 220, 170, 0.05) 0 120px, rgba(20, 12, 4, 0.08) 120px 240px),
+    linear-gradient(174deg, #6b4a26, #543a1e 60%, #46301a);
+  box-shadow:
+    inset 0 8px 16px rgba(22, 13, 4, 0.65),
+    inset 0 -6px 12px rgba(22, 13, 4, 0.5),
+    inset 4px 0 10px rgba(22, 13, 4, 0.45),
+    inset -4px 0 10px rgba(22, 13, 4, 0.45);
+}
+.vit-patro { position: relative; padding-bottom: 20px; }
+.vit-patro + .vit-patro { margin-top: 6px; }
+.vit-artefakty { position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: center; gap: 14px; min-height: 128px; padding-bottom: 2px; flex-wrap: wrap; }
+.vit-police {
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  bottom: 6px;
+  height: 11px;
+  background: linear-gradient(#a8834e, #7c5a2e 40%, #5d421f);
+  border-top: 1px solid rgba(255, 228, 182, 0.5);
+  border-radius: 2px;
+  box-shadow: 0 14px 20px -7px rgba(20, 12, 4, 0.65);
+}
+.vit-pasparta {
+  margin: 0;
+  background: #fdfbf4;
+  padding: 8px 8px 5px;
+  border-radius: 2px;
+  transform: rotate(var(--vrot, 0deg));
+  transform-origin: 50% 100%;
+  box-shadow: 0 6px 12px -5px rgba(20, 12, 4, 0.65), inset 0 0 0 1px rgba(120, 100, 70, 0.25);
+  text-align: center;
+  max-width: 118px;
+}
+.vit-pasparta img { display: block; width: 92px; height: 92px; object-fit: contain; mix-blend-mode: multiply; margin: 0 auto; }
+.vit-pasparta figcaption { font: 600 7.5px/1.3 'Space Grotesk', sans-serif; letter-spacing: 0.04em; color: #57503f; margin-top: 4px; text-transform: uppercase; }
+.vit-pasparta figcaption span { color: #8a8172; }
+.vit-pasparta.prazdna .vit-prazdno {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 92px;
+  margin: 0 auto;
+  border: 2px dashed #d8d2c2;
+  border-radius: 3px;
+  font: 500 26px/1 var(--font-emph, Georgia, serif);
+  color: #c9c2b0;
+}
+.vit-znamka {
+  position: relative;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  transform: rotate(var(--vrot, 0deg));
+  transform-origin: 50% 100%;
+  background: radial-gradient(circle at 34% 30%, #c9955c, #a9743f 46%, #7c4f27 100%);
+  box-shadow:
+    inset 0 3px 5px rgba(255, 225, 180, 0.55),
+    inset 0 -4px 8px rgba(60, 34, 10, 0.6),
+    inset 0 0 0 3px rgba(120, 74, 36, 0.55),
+    0 8px 14px -6px rgba(20, 12, 4, 0.7);
+}
+.vit-znamka-kresba { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; opacity: 0.5; mix-blend-mode: multiply; }
+.vit-znamka-lesk { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 32% 26%, rgba(255, 244, 220, 0.6), transparent 42%); }
+.vit-znamka-stred {
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(70, 42, 16, 0.55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1px;
+  color: #4b2e12;
+  text-shadow: 0 1px 0 rgba(255, 225, 180, 0.35), 0 -1px 1px rgba(50, 28, 8, 0.6);
+}
+.vit-znamka-stred .c { font: 700 6.5px/1 'Space Grotesk', sans-serif; letter-spacing: 0.1em; }
+.vit-znamka-stred .n { font: 600 7px/1.1 'Space Grotesk', sans-serif; text-transform: uppercase; max-width: 48px; }
+.vit-znamka-stred .v { font: 600 5.5px/1 'Space Grotesk', sans-serif; }
+.vit-stitek {
+  position: relative;
+  background: linear-gradient(160deg, #e8c887, #c9a45c 55%, #a5813e);
+  border-radius: 5px;
+  padding: 9px 16px;
+  text-align: center;
+  box-shadow: 0 5px 10px -4px rgba(20, 12, 4, 0.7), inset 0 1px 1px rgba(255, 240, 200, 0.7), inset 0 -1px 2px rgba(70, 48, 14, 0.55);
+  transform: rotate(var(--vrot, 0deg));
+  transform-origin: 50% 100%;
+}
+.vit-stitek b { display: block; font: 700 10px/1.2 'Space Grotesk', sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #4a3410; text-shadow: 0 1px 0 rgba(255, 240, 200, 0.6); }
+.vit-stitek span { display: block; font: 600 8px/1.5 'Space Grotesk', sans-serif; color: #5d4517; margin-top: 3px; }
+.vit-nytek {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f8ecc8, #a5813e);
+  box-shadow: 0 1px 1px rgba(40, 26, 6, 0.7);
+}
+.vit-nytek.levy { left: 5px; }
+.vit-nytek.pravy { right: 5px; }
+.vit-sklo {
+  position: absolute;
+  inset: 20px;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.14) 0 12%, transparent 12.5% 100%),
+    linear-gradient(115deg, transparent 0 60%, rgba(255, 255, 255, 0.07) 61% 72%, transparent 72.5%);
+  border-radius: 5px;
+}
+.vit-svetlo { position: absolute; left: 0; right: 0; top: 0; height: 60px; pointer-events: none; background: linear-gradient(rgba(255, 240, 205, 0.18), transparent); }
+.vit-info p { font: 400 13px/1.65 Inter, sans-serif; color: var(--muted); margin: 0 0 14px; max-width: 40ch; text-wrap: pretty; }
+@media (max-width: 860px) {
+  .vit { grid-template-columns: 1fr; }
+}

@@ -327,3 +327,14 @@ export async function getStrediskaOblasti(oblastSlug: string): Promise<Stredisko
     .filter((s) => typeof s.oblast === 'object' && s.oblast?.slug === oblastSlug)
     .sort((a, b) => cs.compare(a.nazev, b.nazev))
 }
+
+/** Počet publikovaných razítek (vitrína sběratelství) — počítá se, nepíše. */
+export async function getPocetPublikovanychRazitek(): Promise<number> {
+  const payload = await getPayload({ config })
+  const res = await payload.count({
+    collection: 'razitka',
+    where: { _status: { equals: 'published' } },
+    overrideAccess: false,
+  })
+  return res.totalDocs
+}

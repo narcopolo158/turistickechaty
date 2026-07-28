@@ -208,6 +208,28 @@ s filtrem, FAQ+JSON-LD, deep-link), celkem 270 passed, tsc/lint/kontrola
 dřevo/mosaz chce samostatný soustředěný průchod; sekce jsou zatím
 číslované bez ní (přečíslují se, až vitrína přibude).
 
+**Dodatek 9 (týž den, „pokracuj"): VITRÍNA SBĚRATELSTVÍ — stránka
+pohoří kompletní dle handoffu.** Sekce 07 doplněna
+(`VitrinaSberatelstvi.tsx`): fotorealistická dřevěná skříňka — rám
+s pokosy a 4 mosaznými šrouby s drážkou, ořechová feTurbulence
+dřevokresba, prkenná záda se spárami a hlubokými inset stíny, 2 police
+(světlý horní lem, vržený stín dolů), skleněné odlesky + horní světlo.
+Artefakty STOJÍ na policích (transform-origin 50% 100%, rotace ±2°)
+a jsou REÁLNÉ: 3 paspartované skeny otisků (kurátorská trojice Luční /
+Výrovka / Samotnia s fallbackem na první doložené), dřevěná známka
+č. 11 — číslo NOVĚ Z DAT (znamkyVizitkyChaty, ne hardcoded), poctivá
+prázdná pasparta „{n} chatám razítko zatím nemáme — sháníme" a mosazný
+rytý štítek s nýtky a počty z databáze (chat s razítkem · otisků
+(getPocetPublikovanychRazitek) · se známkou · vizitky čekají na souhlas).
+FAQ přečíslováno na 08, přesahy na 09 — číslování teď sedí s handoffem
+1:1. Test vitríny +1 (otisk z mocku, prázdná pasparta, štítek), celkem
+271 passed, tsc/lint/kontrola čisté. Dark mode nových sekcí jede přes
+tokens (dřevo/mosaz/pasparty jsou fyzické materiály — v noci se nemění
+záměrně); plné F1f „noc na horách" (noční 3D okna) má 3D aplikace
+v hodinovém sliceru už dnes. **Z F1 epicu zbývá:** F1e mini-stránky
+středisek (čekají hlavně na obsahová data — perexy/doprava/výšky ČÚZK;
+teď by byly prázdné) a F1f doladění nočních detailů šablon.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

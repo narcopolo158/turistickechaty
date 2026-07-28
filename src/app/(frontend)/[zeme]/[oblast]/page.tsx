@@ -5,8 +5,10 @@ import React from 'react'
 
 import Mapa3D from '@/components/Mapa3D'
 import PohoriChatySeznam from '@/components/PohoriChatySeznam'
+import VitrinaSberatelstvi, { type VitrinaOtisk } from '@/components/VitrinaSberatelstvi'
 import { SectionBar } from '@/components/ui'
-import { getIndexChat, getOblastBySlug, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
+import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
+import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
 import { zanikleChaty } from '@/lib/zanikle'
 
@@ -20,9 +22,11 @@ export const revalidate = 3600
  * hero s kurátorskou charakteristikou (z kolekce Oblasti, se zdrojovou
  * popiskou) a 4 stat-tiles s mikro-zdroji → 01 3D mapa (SKUTEČNÁ aplikace
  * z pipeline DATA-28 — výškopis Mapy.com Elevation, ne malovaný placeholder
- * z návrhu; poster→klik, three.js až po kliknutí) → 02 chaty oblasti (CTA
- * katalog) → 03 top cíle. Žebříčky, střediska, vitrína, FAQ a přesahy
- * (sekce handoffu 03–09) přijdou dalšími průchody F1d.
+ * z návrhu; poster→klik, three.js až po kliknutí) → 02 chaty oblasti
+ * (tabulkové řádky s chips filtry) → 03 žebříčky (jen doložené hodnoty)
+ * → 04 střediska → 05 top cíle → 06 zaniklé → 07 vitrína sběratelství
+ * (reálné otisky se svolením) → 08 FAQ (odpovědi z dat + JSON-LD)
+ * → 09 přesahy. Číslování dle handoffu; mini-stránky středisek = F1e.
  *
  * Kanonická cesta pohoří je /cesko/krkonose (Krkonoše jsou přeshraniční,
  * jedna stránka) — /polsko/krkonose sem přesměruje natrvalo.
@@ -52,10 +56,11 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
   if (!Object.values(ZEME_SLUG).includes(zeme)) notFound()
   if (zeme !== KANONICKA_ZEME) permanentRedirect(`/${KANONICKA_ZEME}/${oblastSlug}`)
 
-  const [oblast, { index }, strediska] = await Promise.all([
+  const [oblast, { index }, strediska, pocetRazitek] = await Promise.all([
     getOblastBySlug(oblastSlug),
     getIndexChat(),
     getStrediskaOblasti(oblastSlug),
+    getPocetPublikovanychRazitek(),
   ])
   if (!oblast) notFound()
 
@@ -89,6 +94,28 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
 
   // Zaniklé (handoff 06): 2 příběhy s doloženým rokem i příčinou.
   const zaniklePribehy = zanikle.filter((z) => z.rokZaniku && z.pricinaZaniku).slice(0, 2)
+
+  // Vitrína (handoff 07): kurátorská trojice reálných otisků (fallback první
+  // s doloženým skenem), známka se skutečným číslem z DATA-10, poctivé počty.
+  const kuratorske = ['lucni-bouda', 'vyrovka', 'schronisko-samotnia']
+  const sOtiskem = vOblasti.filter((ch) => ch.otiskUrl != null)
+  const vitrinoveChaty = [
+    ...kuratorske.map((slug) => sOtiskem.find((ch) => ch.slug === slug)).filter((ch) => ch != null),
+    ...sOtiskem,
+  ]
+  const vitrinaOtisky: VitrinaOtisk[] = [...new Map(vitrinoveChaty.map((ch) => [ch.slug, ch])).values()]
+    .slice(0, 3)
+    .map((ch) => ({
+      url: ch.otiskUrl!,
+      alt: ch.otiskAlt ?? `Otisk razítka — ${ch.nazev}`,
+      nazev: ch.nazev,
+      vyska: ch.vyska,
+    }))
+  const znamkaLucni = znamkyVizitkyChaty('lucni-bouda').find((p) => p.system === 'znamka')
+  const lucniIndex = vOblasti.find((ch) => ch.slug === 'lucni-bouda')
+  const vitrinaZnamka = znamkaLucni
+    ? { cislo: znamkaLucni.cislo, nazev: 'Luční bouda', vyska: lucniIndex?.vyska ?? null }
+    : null
 
   // FAQ (handoff 08): odpovědi GENEROVANÉ z dat + JSON-LD FAQPage.
   const pocetPl = vOblasti.filter((ch) => ch.zeme === 'pl').length
@@ -303,8 +330,25 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         </div>
       </section>
 
+      <section className="sec" aria-label="Sběratelství">
+        <SectionBar num="07" title="Sběratelství — vitrína Krkonoš" variant="red" />
+        <VitrinaSberatelstvi
+          otisky={vitrinaOtisky}
+          znamka={vitrinaZnamka}
+          pocty={{
+            sRazitkem,
+            otisku: pocetRazitek,
+            seZnamkou: vOblasti.filter((ch) => ch.znamka).length,
+            bezRazitka: vOblasti.length - sRazitkem,
+          }}
+        />
+        <p className="pohori-mikropozn">
+          otisky se svolením razitkuj.cz · známka dle oficiálního seznamu vydavatele · počty z databáze
+        </p>
+      </section>
+
       <section className="sec" aria-label="Časté otázky">
-        <SectionBar num="07" title="Časté otázky" variant="red" />
+        <SectionBar num="08" title="Časté otázky" variant="red" />
         <div className="pohori-faq">
           {faq.map((f) => (
             <details key={f.q} className="pohori-faq-polozka">
@@ -317,7 +361,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       </section>
 
       <section className="sec" aria-label="Přesahy">
-        <SectionBar num="08" title="Přesahy pohoří" variant="red" />
+        <SectionBar num="09" title="Přesahy pohoří" variant="red" />
         <div className="pohori-presah">
           <b>Podkrkonoší</b>
           <p>

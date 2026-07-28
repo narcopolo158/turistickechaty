@@ -38,6 +38,7 @@ const chata = (prepis: Partial<IndexChata>): IndexChata => ({
 
 vi.mock('@/lib/chaty', () => ({
   ZEME_SLUG: { cz: 'cesko', pl: 'polsko' },
+  getPocetPublikovanychRazitek: async () => 110,
   getStrediskaOblasti: async () => [
     { slug: 'pec-pod-snezkou', nazev: 'Pec pod Sněžkou', zeme: 'cz' },
     { slug: 'karpacz', nazev: 'Karpacz', zeme: 'pl' },
@@ -54,7 +55,7 @@ vi.mock('@/lib/chaty', () => ({
   }),
   getIndexChat: async () => ({
     index: [
-      chata({ slug: 'lucni-bouda', nazev: 'Luční bouda', vyska: 1410, razitko: true, checked: '2026-07-19', nejstarsiRok: 1623 }),
+      chata({ slug: 'lucni-bouda', nazev: 'Luční bouda', vyska: 1410, razitko: true, checked: '2026-07-19', nejstarsiRok: 1623, otiskUrl: '/media/otisky/lucni.gif', otiskAlt: 'Otisk — Luční bouda' }),
       chata({ slug: 'dom-slaski', nazev: 'Dom Śląski', url: '/cesko/krkonose/dom-slaski', vyska: 1400, zeme: 'pl' }),
       chata({ slug: 'labska-bouda', nazev: 'Labská bouda', vyska: 1340, kapacita: 70 }),
       chata({ slug: 'bez-vysky', nazev: 'Bez výšky' }),
@@ -154,6 +155,16 @@ describe('Stránka pohoří (F1d)', () => {
     expect(iframe).toBeTruthy() // bez kliknutí — deep-link startuje sám
     expect(iframe.getAttribute('src')).toBe('/3d/krkonose.html?chata=Lu%C4%8Dn%C3%AD%20bouda')
     window.history.replaceState(null, '', '/cesko/krkonose')
+  })
+
+  it('vitrína sběratelství: reálné otisky na policích, prázdná pasparta a počty z dat', async () => {
+    const { container } = render(await PohoriPage({ params: params('cesko') }))
+    expect(screen.getByText('Sběratelství — vitrína Krkonoš')).toBeTruthy()
+    const otisk = container.querySelector('.vit-pasparta img')!
+    expect(otisk.getAttribute('src')).toBe('/media/otisky/lucni.gif') // reálný sken z mocku
+    expect(screen.getByText(/3 chatám razítko zatím nemáme/)).toBeTruthy() // poctivá prázdná pasparta
+    expect(screen.getByText(/1 chat s razítkem · 110 otisků/)).toBeTruthy() // mosazný štítek z dat
+    expect(screen.getByText('Otevřít razítkovník ▸')).toBeTruthy()
   })
 
   it('/polsko/krkonose přesměruje na kanonickou /cesko/krkonose (jedno pohoří, jedna stránka)', async () => {
