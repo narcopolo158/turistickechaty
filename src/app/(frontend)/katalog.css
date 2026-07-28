@@ -242,3 +242,8 @@
   .ktl-karta { transform: none; transition: none; }
   .ktl-karta:hover { transform: none; }
 }
+
+/* Ikona typu „rozhledna s občerstvením" u názvu — dědí barvu textu řádku. */
+.ktl-karta-nazev, .ktl-radek-nazev b { display:inline-flex; align-items:center; gap:6px; }
+.ktl-karta-nazev svg, .ktl-radek-nazev svg { color:var(--muted); }
+.ktl-radek-nazev { display:flex; align-items:center; gap:6px; }

@@ -4,6 +4,7 @@ import React, { useCallback, useMemo } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
+import IkonaRozhledna from './IkonaRozhledna'
 import MapaChat, { type MapovaChata } from './MapaChat'
 import RazitkoSvg from './RazitkoSvg'
 import type { IndexChata } from '@/lib/index-chat'
@@ -103,7 +104,7 @@ export default function KatalogClient({ index }: { index: IndexChata[] }) {
     () =>
       vysledek.flatMap((ch) =>
         ch.lat != null && ch.lng != null && ch.url != null
-          ? [{ slug: ch.slug, nazev: ch.nazev, vyska: ch.vyska, stav: ch.stav as MapovaChata['stav'], lat: ch.lat, lng: ch.lng, url: ch.url }]
+          ? [{ slug: ch.slug, nazev: ch.nazev, vyska: ch.vyska, stav: ch.stav as MapovaChata['stav'], lat: ch.lat, lng: ch.lng, url: ch.url, typ: ch.typ }]
           : [],
       ),
     [vysledek],
@@ -208,7 +209,7 @@ export default function KatalogClient({ index }: { index: IndexChata[] }) {
                   </span>
                   <span className="ktl-karta-telo">
                     <span className="ktl-karta-pohori">{ch.oblastNazev ?? '—'}</span>
-                    <span className="ktl-karta-nazev">{ch.nazev}</span>
+                    <span className="ktl-karta-nazev">{ch.nazev}{ch.typ === 'rozhledna' && <IkonaRozhledna size={15} />}</span>
                     <span className="ktl-karta-tag">{tagKarty(ch)}</span>
                     <span className="ktl-karta-fakta">
                       <b>{formatVyskaM(ch.vyska)}</b>
@@ -253,6 +254,7 @@ export default function KatalogClient({ index }: { index: IndexChata[] }) {
                 <>
                   <span className="ktl-radek-nazev">
                     <b>{ch.nazev}</b>
+                    {ch.typ === 'rozhledna' && <IkonaRozhledna size={14} />}
                     <i className="ktl-karta-tag">{tagKarty(ch)}</i>
                   </span>
                   <span className="ktl-num">{formatVyskaM(ch.vyska)}</span>

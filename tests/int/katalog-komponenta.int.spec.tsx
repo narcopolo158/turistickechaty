@@ -79,6 +79,16 @@ describe('KatalogClient', () => {
     expect(lucni.querySelector('.ktl-otisk svg')).not.toBeNull()
   })
 
+
+  // Michal 28. 7. 2026: rozhledny s občerstvením mají v katalogu vlastní ikonku,
+  // ať se v seznamu poznají od chat, kterými nejsou.
+  it('rozhledna s občerstvením nese u názvu vlastní ikonu, chata ji nemá', () => {
+    render(<KatalogClient index={[chata({ slug: 'vez', nazev: 'Rozhledna Žalý', typ: 'rozhledna' }), chata({ slug: 'bouda', nazev: 'Luční bouda' })]} />)
+    const ikony = screen.getAllByRole('img', { name: 'Rozhledna s občerstvením' })
+    expect(ikony).toHaveLength(1)
+    expect(ikony[0].closest('.ktl-karta-nazev')?.textContent).toContain('Rozhledna Žalý')
+  })
+
   it('thumb karty nese hero fotku profilu; bez hero zůstává silueta (žádný img)', () => {
     const { container } = render(
       <KatalogClient

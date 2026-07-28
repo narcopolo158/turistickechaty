@@ -2,7 +2,7 @@
 
 Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se svolením R. Šindlera / KiBob). Checklist má 354 razítek; katalog 76 chat. Odkaz = „razítko existuje s tímto názvem", NE přiřazení: checklist je celostátní a jmenovci existují i uvnitř Krkonoš (docs/DATA-17-jmenovci.md), takže pár potvrzuje redakce v `data/razitka/_parovani-potvrzene.yaml` — otisky se stahují jen u potvrzených.
 
-## Potvrzené páry — otisky se stahují (46 shod, 45 chat)
+## Potvrzené páry — otisky se stahují (47 shod, 46 chat)
 - **Barborka** → [„Barborka"](http://www.razitkuj.cz/misto-barborka/1)
 - **Bouda Bílé Labe** → [„Bouda Bílé Labe"](http://www.razitkuj.cz/5469_bouda-bile-labe)
 - **Bouda Na Lučinách** → [„Bouda na Lučinách"](http://www.razitkuj.cz/10131_bouda-na-lucinach)
@@ -41,6 +41,7 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - **Schronisko PTTK „Kochanówka"** → [„Schronisko PTTK Kochanówka"](http://www.razitkuj.cz/10331_schronisko-pttk-kochanowka)
 - **Schronisko PTTK "Na Przełęczy Okraj"** → [„Schronisko PTTK Na Przełęczy Okraj"](http://www.razitkuj.cz/misto-schronisko-pttk-na-przeleczy-okraj/1)
 - **Schronisko PTTK „Pod Łabskim Szczytem"** → [„Schronisko pod Łabskim Szczytem"](http://www.razitkuj.cz/misto-schronisko-pod-labskim-szczytem/1)
+- **Schronisko PTTK na Hali Szrenickiej** → [„Schronisko na Hali Szrenickiej"](http://www.razitkuj.cz/6362_schronisko-na-hali-szrenickiej)
 - **Schronisko Samotnia** → [„Schronisko PTTK Samotnia"](http://www.razitkuj.cz/misto-schronisko-pttk-samotnia/1)
 - **Schronisko Szrenica** → [„Schronisko Szrenica"](http://www.razitkuj.cz/6361_schronisko-szrenica)
 - **Strzecha Akademicka** → [„Schronisko Strzecha Akademicka"](http://www.razitkuj.cz/misto-schronisko-strzecha-akademicka/1) · *částečná shoda (název se liší!)*
@@ -59,7 +60,7 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - Chatka AKT Towarzystwa Bażynowego × [„Chatka AKT na Pietraszonce"](http://www.razitkuj.cz/misto-chatka-akt-na-pietraszonce/1)
 - Portášky × [„Portáš"](http://www.razitkuj.cz/misto-portas/1)
 
-## Naše chaty BEZ nalezeného razítka (31)
+## Naše chaty BEZ nalezeného razítka (30)
 - Chata Amor (`amor`)
 - Chata Betyna (`betyna`)
 - Černá bouda (`cerna-bouda`)
@@ -85,14 +86,12 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - Patejdlova bouda (`patejdlova-bouda`)
 - Raisova chata na Zvičině (`raisova-chata-na-zvicine`)
 - Schronisko PTTK „Nad Łomniczką" (`schronisko-nad-lomniczka`)
-- Schronisko PTTK na Hali Szrenickiej (`schronisko-pttk-na-hali-szrenickiej`)
 - Srebrny Potok (`srebrny-potok`)
 - Staromísečná bouda (`staromisecna-bouda`)
 - U Kotle (`u-kotle`)
 - Vebrovy boudy (`vebrovy-boudy`)
 - Chata Zákoutí (`zakouti`)
 
-## Kandidáti na zpětné dohledání chat — „vypadá krkonošsky", bez shody (3) — K OVĚŘENÍ
+## Kandidáti na zpětné dohledání chat — „vypadá krkonošsky", bez shody (2) — K OVĚŘENÍ
 - [„Lesní Zátiší Harrachov"](http://www.razitkuj.cz/6097_lesni-zatisi-harrachov)
-- [„Schronisko na Hali Szrenickiej"](http://www.razitkuj.cz/6362_schronisko-na-hali-szrenickiej)
 - [„Śnieżka - Karpacz"](http://www.razitkuj.cz/misto-sniezka-karpacz/1)

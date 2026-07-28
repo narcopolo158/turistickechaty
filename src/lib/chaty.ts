@@ -37,6 +37,7 @@ export const TYP_NAZEV: Record<string, string> = {
   utulna: 'Útulna',
   bivak: 'Bivak',
   'horsky-hotel': 'Horský hotel',
+  rozhledna: 'Rozhledna s občerstvením',
 }
 
 /** Barvy pásových značek — terénní, neměnit (tokens: --tr-*) */
@@ -185,6 +186,7 @@ export async function getChatyProMapu(): Promise<MapovaChata[]> {
         lat: chata.lat,
         lng: chata.lng,
         url,
+        typ: chata.typ ?? null,
       },
     ]
   })

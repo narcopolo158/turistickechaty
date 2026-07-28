@@ -29,7 +29,12 @@ export const OBLASTI: OblastKonfig[] = [
     // Pokrývá Harrachov až Rýchory a na severu polské podhůří
     // (Szklarska Poręba, Karpacz) s rezervou.
     bbox: { latMin: 50.55, lngMin: 15.3, latMax: 50.87, lngMax: 16.05 },
-    bbox3d: { latMin: 50.6, lngMin: 15.35, latMax: 50.82, lngMax: 15.95 },
+    // Severní hrana 50,84 (dřív 50,82): pod 50,82 zůstávalo mimo model
+    // Schronisko PTTK „Kochanówka" (50,830) — publikovaný profil, který by
+    // model tiše vynechal. Rozšíření je 2,2 km polského podhůří nad Szklarskou
+    // Porębou, ne půl Slezska: hřeben zůstává tam, kde byl (rozhodnutí
+    // 28. 7. 2026 — Michal ho nechal na mně, viz deník).
+    bbox3d: { latMin: 50.6, lngMin: 15.35, latMax: 50.84, lngMax: 15.95 },
     poznamka: 'pilotní oblast průvodce (76 publikovaných profilů k 28. 7. 2026)',
   },
   {

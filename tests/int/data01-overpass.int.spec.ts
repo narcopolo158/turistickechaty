@@ -124,14 +124,14 @@ describe('rozhledny s občerstvením', () => {
     expect(r.obcerstveni[0]).toMatchObject({ nazev: 'Bouda pod rozhlednou', jeChata: true })
   })
 
-  it('kandidát z rozhledny nese doklad občerstvení a typ nechává redakci', () => {
+  it('kandidát z rozhledny nese doklad občerstvení a typ `rozhledna`', () => {
     const vysledek = chataZElementu(vez(50, { height: '24' }), CHECKED, 'cz', {
       oblast: 'jizerske-hory',
       obcerstveni: [{ url: 'https://www.openstreetmap.org/node/51', nazev: 'Bufet', znacka: 'amenity=fast_food', vzdalenostM: 12, jeChata: false }],
     })
     expect('duvod' in vysledek).toBe(false)
     const { data } = vysledek as { data: Record<string, unknown> }
-    expect(data.typ).toBeUndefined() // číselník typů rozhlednu (zatím) nezná
+    expect(data.typ).toBe('rozhledna') // pátá hodnota číselníku (Michal 28. 7. 2026)
     expect(data.oblast).toBe('jizerske-hory')
     const poznamky = data.interniPoznamky as string
     expect(poznamky).toContain('ROZHLEDNA S OBČERSTVENÍM')

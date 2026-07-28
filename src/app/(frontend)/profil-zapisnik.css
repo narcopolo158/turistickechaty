@@ -390,3 +390,6 @@ body.dark .zap-otisk-plocha img, body.dark .zap-list-otisk img { mix-blend-mode:
 .zap-mapa-chybi span { font:italic 400 11.5px/1.55 var(--font-emph); color:var(--muted); }
 .zap-mapa-chybi .zap-3d-odkaz { margin-top:2px; }
 body.dark .zap-mapa-chybi { background:#1b232b; border-color:#39434d; }
+
+/* Ikona typu (rozhledna s občerstvením) v řádku faktů — sedí na účaří textu. */
+.zap-fact .v { display:flex; align-items:center; gap:6px; }

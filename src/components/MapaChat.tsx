@@ -6,6 +6,8 @@ import React, { useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import type * as Leaflet from 'leaflet'
 
+import { KRESBA_ROZHLEDNY_MARKER } from './IkonaRozhledna'
+
 /** 1410 → „1 410" (úzká nezlomitelná mezera; lokálně — lib/chaty.ts je server-only) */
 const formatCislo = (n: number): string =>
   new Intl.NumberFormat('cs-CZ').format(n).replace(/\s/g, ' ')
@@ -29,6 +31,8 @@ export type MapovaChata = {
   url: string
   /** Vybraná chata: červený marker r12 s bílou střechou, jediná se stínem. */
   vybrana?: boolean
+  /** Typ objektu — rozhledna má vlastní značku (věž místo prostého kolečka). */
+  typ?: string | null
 }
 
 const DLAZDICE = 'https://api.mapy.com/v1/maptiles/outdoor'
@@ -45,6 +49,15 @@ const MARKER = {
   /** zaniklá — bílá se šedým čárkovaným okrajem */
   zanikla:
     '<svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.5" fill="#fff" stroke="#8a949c" stroke-width="2" stroke-dasharray="3.5 3"/></svg>',
+  /**
+   * rozhledna s občerstvením — modrá jako ostatní v provozu (je to táž
+   * navigační vrstva), ale s věží místo prázdného kolečka: jinak by se
+   * v mapě ztratila mezi chatami, kterými není.
+   */
+  rozhledna:
+    '<svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2.5"/>' +
+    KRESBA_ROZHLEDNY_MARKER +
+    '</svg>',
   /** vybraná — červená s bílou střechou, jako jediná se stínem (řeší CSS .mk-vybrana) */
   vybrana:
     '<svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="12" fill="#e0341f" stroke="#fff" stroke-width="3"/><polygon points="15,9.5 20,16.5 10,16.5" fill="#fff"/></svg>',
@@ -112,7 +125,13 @@ export default function MapaChat({ chaty }: { chaty: MapovaChata[] }) {
       const pre = preRef.current
       const body = document.createElement('div')
       chaty.forEach((ch) => {
-        const varianta = ch.vybrana ? 'vybrana' : ch.stav === 'zanikla' ? 'zanikla' : 'provoz'
+        const varianta = ch.vybrana
+          ? 'vybrana'
+          : ch.stav === 'zanikla'
+            ? 'zanikla'
+            : ch.typ === 'rozhledna'
+              ? 'rozhledna'
+              : 'provoz'
         const velikost = varianta === 'vybrana' ? 30 : 20
         const marker = L.marker([ch.lat, ch.lng], {
           icon: L.divIcon({

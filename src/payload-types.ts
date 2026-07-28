@@ -154,7 +154,7 @@ export interface Chaty {
   /**
    * Taxonomie dle plánu kap. 5.
    */
-  typ?: ('obsluhovana' | 'utulna' | 'bivak' | 'horsky-hotel') | null;
+  typ?: ('obsluhovana' | 'utulna' | 'bivak' | 'horsky-hotel' | 'rozhledna') | null;
   stav?: ('v-provozu' | 'mimo-provoz' | 'zanikla') | null;
   aliasy?:
     | {

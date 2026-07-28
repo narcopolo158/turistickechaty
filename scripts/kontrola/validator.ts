@@ -14,7 +14,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
 import { najdiYaml, nactiYaml, seznamMap } from './lib'
 
-const TYP = new Set(['obsluhovana', 'utulna', 'bivak', 'horsky-hotel'])
+const TYP = new Set(['obsluhovana', 'utulna', 'bivak', 'horsky-hotel', 'rozhledna'])
 const STAV = new Set(['v-provozu', 'mimo-provoz', 'zanikla'])
 const OBC = new Set(['restaurace', 'bufet', 'kiosek'])
 const KAT = new Set(['stari', 'vyska', 'velikost', 'gastro', 'jine'])

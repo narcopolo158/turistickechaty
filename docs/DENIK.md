@@ -6,6 +6,50 @@ Formát zápisu (nejnovější nahoře):
 ## YYYY-MM-DD
 **Hotovo:** co se dnes udělalo (položka backlogu, commity)
 **Příště:** čím navázat
+**Dodatek 28 (týž den, Michalova rozhodnutí): typ `rozhledna`, vlastní ikona,
+ruční páry razítek a severní hrana 3D okna.**
+
+**(1) Typ pro rozhledny — doporučeno a rovnou provedeno: pátá hodnota
+číselníku `rozhledna` („Rozhledna s občerstvením").** Zvažoval jsem vecpat je
+do `obsluhovana` s poznámkou, ale katalog se filtruje podle toho, kde se dá
+přespat a najíst — a věž s bufetem není chata; útulna ani horský hotel taky
+ne. Pátá hodnota je jediná, která nelže, a zároveň drží zásadu, že objekt bez
+občerstvení do průvodce nepatří (to řeší DATA-01, ne číselník). Rozšířeno na
+pěti místech naráz: Payload kolekce, popisky ve frontendu, `validator.ts`,
+DATA-01 (kandidát rovnou dostane `typ: rozhledna`) a testy. **Pozn. k plánu:**
+taxonomie je v `docs/plan.md` kap. 5, do kterého bez zadání nesahám — tohle
+je tedy návrh změny plánu k Michalovu zanesení, data i kód už ji znají.
+
+**(2) Ikona.** Dvě kresby, protože každá slouží jinému místu — a rozhodl
+pohled, ne odhad: varianty se vyrenderovaly ve 14–44 px vedle sebe. Do
+**katalogu a profilu** jde věž s prolukou mezi nohama + šálek vedle (věž říká,
+co to je, šálek proč to v průvodci je; plná silueta vypadala při 16 px jako
+maják). Do **mapového markeru** jde jen věž v modrém kolečku — šálek se do
+20 px nevešel, přetékal přes okraj a rozbíjel kruh, kterým celá mapová vrstva
+mluví. Obě kresby drží jeden zdroj (`IkonaRozhledna.tsx`), marker jako řetězec,
+protože Leaflet skládá `innerHTML` bez Reactu.
+
+**(3) Razítka — „vše potvrzuji".** Fronta ke kontrole byla po dnešním běhu už
+prázdná (46 párů / 45 chat potvrzeno en bloc), ale ruční průchod reportem
+odhalil pár, který automat nikdy nenabídl: **Schronisko PTTK na Hali
+Szrenickiej** — razitkuj vede totéž místo bez „PTTK", takže jmenná shoda
+nevznikla a chatě by razítko chybělo napořád. Z toho plyne oprava mechanismu:
+**potvrzený pár teď platí i bez jmenné shody** (`typ: rucni`, v reportu se
+pozná), protože za ním stojí člověk, který viděl otisk — to je silnější doklad
+než shoda řetězců. Překlep v seznamu (neznámý slug, URL mimo checklist) se
+mlčky ignoruje, běh neshodí. Nově tedy **47 potvrzených párů, 46 chat
+s razítkem, 30 bez, 2 kandidáti k dohledání** (Lesní Zátiší Harrachov,
+Śnieżka – Karpacz). Otisk Hali Szrenickiej stáhne příští klik na DATA-05.
+
+**(4) Severní hrana 3D okna — rozhodnutí na mně: rozšířeno na 50,84.**
+Pod starou hranou 50,82 zůstávalo mimo model Schronisko PTTK „Kochanówka"
+(50,830), publikovaný profil, který by model tiše vynechal — a tiché vynechání
+je přesně to, co jsme dnes ráno u Jizerek zavrhli. Rozšíření je 2,2 km
+polského podhůří nad Szklarskou Porębou, ne půl Slezska: hřeben zůstává tam,
+kde byl. Projeví se příštím během DATA-28.
+
+330 testů (+4), kontrola, lint i tsc čisté.
+
 **Otázky pro Michala:** (pokud jsou — jinak vynechat)
 ```
 

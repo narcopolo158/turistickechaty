@@ -58,6 +58,11 @@ export const Chaty: CollectionConfig = {
         { label: 'Útulna (neobsluhovaná)', value: 'utulna' },
         { label: 'Bivak (nouzový přístřešek)', value: 'bivak' },
         { label: 'Horský hotel v roli chaty', value: 'horsky-hotel' },
+        // Pátá hodnota (rozhodnutí Michala 28. 7. 2026): rozhledna, u které je
+        // občerstvení nebo chata. Do „obsluhované chaty" ji nacpat nešlo —
+        // katalog se filtruje podle toho, kde se dá přespat a najíst, a věž
+        // s bufetem není chata. Samotné volně přístupné věže v průvodci nejsou.
+        { label: 'Rozhledna s občerstvením', value: 'rozhledna' },
       ],
       admin: { position: 'sidebar', description: 'Taxonomie dle plánu kap. 5.' },
     },

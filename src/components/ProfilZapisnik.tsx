@@ -11,6 +11,7 @@ import React, { useState, useSyncExternalStore } from 'react'
 import Link from 'next/link'
 
 import MapaTrasy, { type TrasaNaMape } from './MapaTrasy'
+import IkonaRozhledna from './IkonaRozhledna'
 import RazitkaVarianty, { VybranyOtisk, type VariantaOtisku } from './RazitkaVarianty'
 import RazitkoSvg from './RazitkoSvg'
 import VyskovyProfil, { type BodProfilu } from './VyskovyProfil'
@@ -217,7 +218,10 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
                 {data.facts.map((f) => (
                   <div className="zap-fact" key={f.k}>
                     <span className="k">{f.k}</span>
-                    <span className="v">{f.v}</span>
+                    <span className="v">
+                      {f.k === 'Typ' && f.v.startsWith('Rozhledna') && <IkonaRozhledna size={16} />}
+                      {f.v}
+                    </span>
                   </div>
                 ))}
               </div>

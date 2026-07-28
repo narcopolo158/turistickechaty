@@ -195,6 +195,33 @@ describe('DATA-05 · párování katalogu s checklistem', () => {
     expect(samotnia).toMatchObject({ typ: 'castecna', potvrzeno: false }) // „Schronisko PTTK Samotnia" ⊃ alias
   })
 
+
+  // Michal 28. 7. 2026 („párování — vše potvrzuji"): potvrzený pár platí i tam,
+  // kde jmenná shoda nic nenašla — razitkuj vede „Schronisko na Hali
+  // Szrenickiej" bez „PTTK", takže automat pár nikdy nenabídl a chatě by
+  // razítko chybělo napořád. Za ručním párem stojí člověk, co viděl otisk.
+  it('ruční potvrzený pár platí i bez jmenné shody — a pozná se v reportu', () => {
+    const { shody, bezRazitka, kandidatiChat } = sparuj(chaty, razitka, {
+      potvrzene: [{ slug: 'lucni-bouda', url: 'http://www.razitkuj.cz/9_kolinska-bouda' }],
+      nesouvisi: [],
+    })
+    const lucni = shody.find((s) => s.slug === 'lucni-bouda')
+    expect(lucni).toMatchObject({ typ: 'rucni', potvrzeno: true, razitko: 'Kolínská bouda - Krkonoše' })
+    expect(bezRazitka.map((b) => b.slug)).toEqual([]) // Luční už razítko má
+    expect(kandidatiChat.map((k) => k.nazev)).toEqual([]) // a přestala být kandidátem k dohledání
+  })
+
+  it('ruční pár na neznámý slug nebo cizí URL se mlčky ignoruje (překlep neshodí běh)', () => {
+    const { shody } = sparuj(chaty, razitka, {
+      potvrzene: [
+        { slug: 'neexistuje', url: 'http://www.razitkuj.cz/9_kolinska-bouda' },
+        { slug: 'lucni-bouda', url: 'http://www.razitkuj.cz/999_neni-v-checklistu' },
+      ],
+      nesouvisi: [],
+    })
+    expect(shody.map((s) => s.slug).sort()).toEqual(['bouda-bile-labe', 'schronisko-samotnia'])
+  })
+
   it('pár z `nesouvisi` (prokázaný cizí objekt) jde do vyřazených, chata zůstane „bez razítka"', () => {
     const { shody, bezRazitka, vyrazene, kandidatiChat } = sparuj(chaty, razitka, {
       potvrzene: [],

@@ -317,10 +317,12 @@ export const chataZElementu = (
     oblast: volby.oblast ?? 'krkonose',
     // `stav` vědomě chybí: OSM provoz spolehlivě nenese, nedomýšlíme.
   }
-  // Typ jen z jednoznačného tagu; nestandardní `hut` i rozhledna nechávají
-  // typ redakci (číselník typů rozhlednu zatím nezná — viz deník 28. 7. 2026).
+  // Typ jen z jednoznačného tagu; nestandardní `hut` nechává typ redakci.
   if (tagy.tourism === 'alpine_hut') data.typ = 'obsluhovana'
   if (tagy.tourism === 'wilderness_hut') data.typ = 'utulna'
+  // Rozhledna se sem dostane jen s doloženým občerstvením (viz parujRozhledny),
+  // takže typ je jednoznačný — číselník ho od 28. 7. 2026 zná.
+  if (jeRozhledna(el)) data.typ = 'rozhledna'
 
   const aliasy = [
     ...hodnoty(tagy.alt_name).map((nazev) => ({ nazev, poznamka: 'alternativní název (OSM alt_name)' })),
@@ -358,7 +360,7 @@ export const chataZElementu = (
   const poznamky = [
     `KANDIDÁT z OSM (DATA-01, stav dat ${checked}) — na web povýšit do data/chaty/ až po křížovém ověření (DATA-03).`,
     jeRozhledna(el)
-      ? 'ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen s občerstvením/restaurací nebo s chatou). Typ nevyplněn — číselník typů rozhlednu zatím nezná, určí redakce.'
+      ? 'ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.'
       : tagy.tourism === 'hut'
         ? 'OSM tag tourism=hut je nestandardní — typ nevyplněn, určí redakce.'
         : `Typ odvozen z OSM tagu tourism=${tagy.tourism} (alpine_hut = obsluhovaná, wilderness_hut = útulna).`,
