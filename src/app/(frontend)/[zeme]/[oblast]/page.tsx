@@ -4,8 +4,9 @@ import { notFound, permanentRedirect } from 'next/navigation'
 import React from 'react'
 
 import Mapa3D from '@/components/Mapa3D'
+import PohoriChatySeznam from '@/components/PohoriChatySeznam'
 import { SectionBar } from '@/components/ui'
-import { getIndexChat, getOblastBySlug, ZEME_SLUG } from '@/lib/chaty'
+import { getIndexChat, getOblastBySlug, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
 import { zanikleChaty } from '@/lib/zanikle'
 
@@ -51,7 +52,11 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
   if (!Object.values(ZEME_SLUG).includes(zeme)) notFound()
   if (zeme !== KANONICKA_ZEME) permanentRedirect(`/${KANONICKA_ZEME}/${oblastSlug}`)
 
-  const [oblast, { index }] = await Promise.all([getOblastBySlug(oblastSlug), getIndexChat()])
+  const [oblast, { index }, strediska] = await Promise.all([
+    getOblastBySlug(oblastSlug),
+    getIndexChat(),
+    getStrediskaOblasti(oblastSlug),
+  ])
   if (!oblast) notFound()
 
   const vOblasti = index.filter((ch) => ch.oblastSlug === oblastSlug)
@@ -72,6 +77,51 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
   const chataUrl = (slug: string | null | undefined): string | null => {
     if (!slug) return null
     return vOblasti.find((ch) => ch.slug === slug)?.url ?? null
+  }
+
+  // Žebříčky (handoff 03): jen doložené hodnoty, poznámka o doloženosti
+  // v hlavičce každé karty. Zaniklá se značí †, nevyřazuje se.
+  const nejvyse = [...vOblasti].filter((ch) => ch.vyska != null).sort((a, b) => b.vyska! - a.vyska!).slice(0, 5)
+  const sRokem = vOblasti.filter((ch) => ch.nejstarsiRok != null)
+  const nejstarsi = [...sRokem].sort((a, b) => a.nejstarsiRok! - b.nejstarsiRok!).slice(0, 5)
+  const sKapacitou = vOblasti.filter((ch) => ch.kapacita != null)
+  const nejvetsi = [...sKapacitou].sort((a, b) => b.kapacita! - a.kapacita!).slice(0, 5)
+
+  // Zaniklé (handoff 06): 2 příběhy s doloženým rokem i příčinou.
+  const zaniklePribehy = zanikle.filter((z) => z.rokZaniku && z.pricinaZaniku).slice(0, 2)
+
+  // FAQ (handoff 08): odpovědi GENEROVANÉ z dat + JSON-LD FAQPage.
+  const pocetPl = vOblasti.filter((ch) => ch.zeme === 'pl').length
+  const faq: { q: string; a: string }[] = [
+    {
+      q: 'Kolik chat průvodce vede?',
+      a: `V Krkonoších vedeme ${vOblasti.length} profilů — ${vOblasti.length - pocetPl} na české a ${pocetPl} na polské straně. K tomu ${zanikle.length} zaniklých chat v samostatném Atlasu.`,
+    },
+    {
+      q: 'Co znamená „ověřeno" u údajů?',
+      a: 'Ověřeno znamená, že údaj potvrdil člověk redakce vlastní kontrolou — telefonátem nebo návštěvou. Údaje převzaté z webů a katalogů vedeme se zdrojem a datem poslední kontroly, ale bez značky ověření; nic si nedomýšlíme.',
+    },
+    {
+      q: 'Kde seženu otisky razítek?',
+      a: `${sRazitkem} chat má doložené razítko — otisky si prohlédneš na profilech a sbíráš je do svého razítkovníku, který zůstává ve tvém prohlížeči. Převzaté skeny neseme se svolením razitkuj.cz.`,
+    },
+    {
+      q: 'Jsou v průvodci i polské boudy?',
+      a: `Ano. Krkonoše vedeme jako jedno přeshraniční pohoří — ${pocetPl} schronisek na polské straně patří do téhož katalogu, s původními polskými názvy.`,
+    },
+    {
+      q: 'Chybí tu chata, kterou znám. Proč?',
+      a: 'Vedeme jen doložené profily: každý údaj má zdroj a datum kontroly. Kandidáty prověřujeme postupně (křížové ověření webů, katalogů a OSM) — objekt bez doložené veřejné služby do průvodce nezařazujeme.',
+    },
+  ]
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
   }
 
   return (
@@ -127,26 +177,91 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
 
       <section className="sec" aria-label="Chaty oblasti">
         <SectionBar num="02" title="Chaty oblasti" variant="red" />
-        <div className="pohori-chaty-blok">
-          <p>
-            Vedeme <b>{vOblasti.length} profilů</b> — od hřebenových bud po schroniska na polské straně
-            ({sRazitkem} s doloženým razítkem{posledni ? `, naposledy ověřeno ${formatCheckedDatum(posledni)}` : ''}).
-            Filtrování podle stavu, služeb a razítek běží v katalogu.
-          </p>
-          <div className="pohori-chaty-cta">
-            <Link href="/chaty" className="pohori-cta-red">
-              Otevřít katalog chat ▸
-            </Link>
-            <Link href="/chaty?view=mapa" className="pohori-cta-ghost">
-              Mapa chat ▸
-            </Link>
+        <p className="pohori-uvodka">
+          Vedeme <b>{vOblasti.length} profilů</b> — od hřebenových bud po schroniska na polské straně
+          ({sRazitkem} s doloženým razítkem{posledni ? `, naposledy ověřeno ${formatCheckedDatum(posledni)}` : ''}).
+        </p>
+        <PohoriChatySeznam index={vOblasti} />
+      </section>
+
+      <section className="sec" aria-label="Žebříčky">
+        <SectionBar num="03" title="Žebříčky" variant="red" />
+        <div className="pohori-zebricky">
+          <div className="pohori-zebricek">
+            <div className="pohori-zebricek-hlava">
+              <b>Nejvýše položené</b>
+              <span>{vysky.length} z {vOblasti.length} chat má doloženou výšku</span>
+            </div>
+            {nejvyse.map((ch, i) => (
+              <Link key={ch.slug} href={ch.url ?? '/chaty'} className="pohori-zebricek-radek">
+                <i>{i + 1}</i>
+                <span>
+                  {ch.nazev}
+                  {ch.stav === 'zanikla' && <em title="zaniklá"> †</em>}
+                </span>
+                <b>{formatVyskaM(ch.vyska)}</b>
+              </Link>
+            ))}
+          </div>
+          <div className="pohori-zebricek">
+            <div className="pohori-zebricek-hlava">
+              <b>Nejstarší doložený rok</b>
+              <span>{sRokem.length} z {vOblasti.length} chat má rok z milníků</span>
+            </div>
+            {nejstarsi.map((ch, i) => (
+              <Link key={ch.slug} href={ch.url ?? '/chaty'} className="pohori-zebricek-radek">
+                <i>{i + 1}</i>
+                <span>
+                  {ch.nazev}
+                  {ch.stav === 'zanikla' && <em title="zaniklá"> †</em>}
+                </span>
+                <b>{ch.nejstarsiRok}</b>
+              </Link>
+            ))}
+            <p className="pohori-zebricek-pozn">nejstarší doložený rok v historii profilu — netvrdíme založení</p>
+          </div>
+          <div className="pohori-zebricek">
+            <div className="pohori-zebricek-hlava">
+              <b>Největší kapacita</b>
+              <span>{sKapacitou.length} z {vOblasti.length} chat kapacitu uvádí</span>
+            </div>
+            {nejvetsi.map((ch, i) => (
+              <Link key={ch.slug} href={ch.url ?? '/chaty'} className="pohori-zebricek-radek">
+                <i>{i + 1}</i>
+                <span>
+                  {ch.nazev}
+                  {ch.stav === 'zanikla' && <em title="zaniklá"> †</em>}
+                </span>
+                <b>{ch.kapacita} lůžek</b>
+              </Link>
+            ))}
+            <p className="pohori-zebricek-pozn">kapacity dle provozovatelů (verified:false) — chaty bez údaje v žebříčku nejsou</p>
           </div>
         </div>
       </section>
 
+      {strediska.length > 0 && (
+        <section className="sec" aria-label="Střediska">
+          <SectionBar num="04" title="Střediska" variant="red" />
+          <div className="pohori-strediska">
+            {strediska.map((s) => (
+              <div key={s.slug} className="pohori-stredisko">
+                <b>{s.nazev}</b>
+                {s.zeme === 'pl' && <span className="pohori-tag-pl">PL</span>}
+                {s.perex && <p>{s.perex}</p>}
+              </div>
+            ))}
+          </div>
+          <p className="pohori-mikropozn">
+            výchozí body túr ke chatám · počty dostupných chat doplní přepočet přístupových tras (DATA-06),
+            výšky obcí ověření ČÚZK (DATA-04) · mini-stránky středisek připravujeme
+          </p>
+        </section>
+      )}
+
       {topCile.length > 0 && (
         <section className="sec" aria-label="Top cíle">
-          <SectionBar num="03" title="Top cíle" variant="red" />
+          <SectionBar num="05" title="Top cíle" variant="red" />
           <div className="pohori-cile">
             {topCile.map((cil) => {
               const url = chataUrl(cil.nejblizChataSlug)
@@ -167,6 +282,53 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
           <p className="pohori-mikropozn">kurátorský výběr s vazbou na doložené profily — žádná hodnocení ani ceny</p>
         </section>
       )}
+
+      <section className="sec" aria-label="Zaniklé chaty">
+        <SectionBar num="06" title="Z Atlasu zaniklých" variant="red" />
+        <div className="pohori-zanikle">
+          <div className="pohori-zanikle-karta">
+            <div className="pohori-zanikle-hlava">
+              <b>Boudy, které už nestojí</b>
+              <span>{zanikle.length} příběhů</span>
+            </div>
+            {zaniklePribehy.map((z) => (
+              <p key={z.slug} className="pohori-zanikle-pribeh">
+                <b>{z.nazev}</b> · zanikla {z.rokZaniku} — {z.pricinaZaniku}
+              </p>
+            ))}
+            <Link href="/zanikle" className="pohori-cta-ghost svetly">
+              Otevřít Atlas zaniklých ▸
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec" aria-label="Časté otázky">
+        <SectionBar num="07" title="Časté otázky" variant="red" />
+        <div className="pohori-faq">
+          {faq.map((f) => (
+            <details key={f.q} className="pohori-faq-polozka">
+              <summary>{f.q}</summary>
+              <p>{f.a}</p>
+            </details>
+          ))}
+        </div>
+        <p className="pohori-mikropozn">odpovědi se počítají z databáze průvodce — čísla nikdy nepíšeme ručně</p>
+      </section>
+
+      <section className="sec" aria-label="Přesahy">
+        <SectionBar num="08" title="Přesahy pohoří" variant="red" />
+        <div className="pohori-presah">
+          <b>Podkrkonoší</b>
+          <p>
+            Raisova chata na Zvičině leží už v Podkrkonoší — vedeme ji v krkonošském fondu s poctivou
+            poznámkou o poloze. Další kandidáty přesahových oblastí sbíráme; samostatná oblast vznikne,
+            až jich bude dost na vlastní stránku.
+          </p>
+        </div>
+      </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     </div>
   )
 }

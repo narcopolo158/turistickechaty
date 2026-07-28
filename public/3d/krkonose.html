@@ -1095,6 +1095,15 @@ if(D.trasy&&D.trasy.length){$('radekTurista').style.display='flex';$('btnTurista
 syncVid(); osvetli();
 // panoramatická (malovaná) mapa je od 27. 7. VÝCHOZÍ režim (Michal)
 $('chkPan').checked=true; zapniPanorama(true);
+// Deep-link ?chata=<název> (odkaz „Ukázat na 3D mapě" z profilů): po startu
+// přiletí kamera na chatu — stejná shoda jako hledání (přesně, pak substring).
+const qChata=new URLSearchParams(location.search).get('chata');
+if(qChata){
+  const hled=qChata.trim().toLowerCase();
+  const gq=piny.find(p=>p.userData.pub&&p.userData.n.toLowerCase()===hled)
+    ||piny.find(p=>p.userData.pub&&p.userData.n.toLowerCase().includes(hled));
+  if(gq)ukazChatu(gq);
+}
 
 addEventListener('resize',()=>{cam.aspect=W()/H();cam.updateProjectionMatrix();ren.setSize(W(),H())});
 let cas=performance.now();

@@ -20,6 +20,16 @@ import type { IndexChata } from './index-chat'
 
 /** Chips dle prototypu; hodnoty jsou i URL tokeny. */
 export const CHIP_KLICE = ['v-provozu', 'zanikla', 'nocleh', 'obcerstveni', 'razitko', 'znamka'] as const
+
+/** Lidské popisky chips — sdílí katalog i seznam chat na stránce pohoří. */
+export const CHIP_POPISKY: Record<(typeof CHIP_KLICE)[number], string> = {
+  'v-provozu': 'v provozu',
+  zanikla: 'zaniklá',
+  nocleh: 'nocleh',
+  obcerstveni: 'občerstvení',
+  razitko: 'razítko',
+  znamka: 'známka',
+}
 export type ChipKlic = (typeof CHIP_KLICE)[number]
 
 /** Stavové chips = OR (výběr množiny stavů); zbytek jsou službové = AND. */

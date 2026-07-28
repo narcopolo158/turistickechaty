@@ -28,6 +28,7 @@ const chata = (prepis: Partial<IndexChata>): IndexChata => ({
   otiskAlt: null,
   heroUrl: null,
   heroAlt: null,
+  kapacita: null,
   znamka: false,
   checked: null,
   verified: false,
@@ -37,6 +38,10 @@ const chata = (prepis: Partial<IndexChata>): IndexChata => ({
 
 vi.mock('@/lib/chaty', () => ({
   ZEME_SLUG: { cz: 'cesko', pl: 'polsko' },
+  getStrediskaOblasti: async () => [
+    { slug: 'pec-pod-snezkou', nazev: 'Pec pod Sněžkou', zeme: 'cz' },
+    { slug: 'karpacz', nazev: 'Karpacz', zeme: 'pl' },
+  ],
   getOblastBySlug: async () => ({
     nazev: 'Krkonoše',
     slug: 'krkonose',
@@ -49,16 +54,19 @@ vi.mock('@/lib/chaty', () => ({
   }),
   getIndexChat: async () => ({
     index: [
-      chata({ slug: 'lucni-bouda', nazev: 'Luční bouda', vyska: 1410, razitko: true, checked: '2026-07-19' }),
+      chata({ slug: 'lucni-bouda', nazev: 'Luční bouda', vyska: 1410, razitko: true, checked: '2026-07-19', nejstarsiRok: 1623 }),
       chata({ slug: 'dom-slaski', nazev: 'Dom Śląski', url: '/cesko/krkonose/dom-slaski', vyska: 1400, zeme: 'pl' }),
-      chata({ slug: 'labska-bouda', nazev: 'Labská bouda', vyska: 1340 }),
+      chata({ slug: 'labska-bouda', nazev: 'Labská bouda', vyska: 1340, kapacita: 70 }),
       chata({ slug: 'bez-vysky', nazev: 'Bez výšky' }),
     ],
     kalendarium: [],
   }),
 }))
 vi.mock('@/lib/zanikle', () => ({
-  zanikleChaty: () => Array.from({ length: 12 }, (_, i) => ({ slug: `z${i}` })),
+  zanikleChaty: () => [
+    { slug: 'obri-bouda', nazev: 'Obří bouda', rokZaniku: '1982', pricinaZaniku: 'zbořena po požáru' },
+    ...Array.from({ length: 11 }, (_, i) => ({ slug: `z${i}`, nazev: `Z${i}`, rokZaniku: null, pricinaZaniku: null })),
+  ],
 }))
 vi.mock('next/navigation', () => ({
   notFound: () => {
@@ -106,7 +114,46 @@ describe('Stránka pohoří (F1d)', () => {
   it('top cíle nesou vazbu na doložené profily, CTA vede do katalogu', async () => {
     render(await PohoriPage({ params: params('cesko') }))
     expect(screen.getByRole('link', { name: 'Nejblíž: Dom Śląski ▸' }).getAttribute('href')).toBe('/cesko/krkonose/dom-slaski')
-    expect(screen.getByText('Otevřít katalog chat ▸').getAttribute('href')).toBe('/chaty')
+    expect(screen.getByRole('link', { name: 'Katalog chat ▸' }).getAttribute('href')).toBe('/chaty')
+  })
+
+  it('žebříčky jen z doložených hodnot s poznámkou o doloženosti', async () => {
+    render(await PohoriPage({ params: params('cesko') }))
+    expect(screen.getByText('Nejvýše položené')).toBeTruthy()
+    expect(screen.getByText('3 z 4 chat má doloženou výšku')).toBeTruthy()
+    expect(screen.getByText('1 z 4 chat má rok z milníků')).toBeTruthy() // jen Luční
+    expect(screen.getByText('1623')).toBeTruthy()
+    expect(screen.getByText('1 z 4 chat kapacitu uvádí')).toBeTruthy() // jen Labská
+    expect(screen.getByText('70 lůžek')).toBeTruthy()
+    expect(screen.getByText(/netvrdíme založení/)).toBeTruthy()
+  })
+
+  it('seznam chat oblasti: tabulkové řádky + chips filtrují jen doložené', async () => {
+    const { container } = render(await PohoriPage({ params: params('cesko') }))
+    expect(container.querySelectorAll('.pchs-radek')).toHaveLength(4)
+    fireEvent.click(screen.getByRole('button', { name: 'razítko' })) // jen Luční má razítko
+    expect(container.querySelectorAll('.pchs-radek')).toHaveLength(1)
+    expect(screen.getByText(/1 z 4 profilů/)).toBeTruthy()
+  })
+
+  it('střediska, zaniklý příběh, FAQ z dat + JSON-LD FAQPage', async () => {
+    const { container } = render(await PohoriPage({ params: params('cesko') }))
+    expect(screen.getByText('Pec pod Sněžkou')).toBeTruthy()
+    expect(screen.getByText('Karpacz')).toBeTruthy()
+    expect(screen.getByText(/zanikla 1982 — zbořena po požáru/)).toBeTruthy()
+    expect(screen.getByText('Kolik chat průvodce vede?')).toBeTruthy()
+    expect(screen.getByText(/V Krkonoších vedeme 4 profilů — 3 na české a 1 na polské straně/)).toBeTruthy()
+    const jsonLd = container.querySelector('script[type="application/ld+json"]')!
+    expect(JSON.parse(jsonLd.textContent!)['@type']).toBe('FAQPage')
+  })
+
+  it('deep-link ?chata= spustí 3D rovnou a předá dotaz aplikaci', async () => {
+    window.history.replaceState(null, '', '/cesko/krkonose?chata=Lu%C4%8Dn%C3%AD%20bouda')
+    const { container } = render(await PohoriPage({ params: params('cesko') }))
+    const iframe = container.querySelector('iframe')!
+    expect(iframe).toBeTruthy() // bez kliknutí — deep-link startuje sám
+    expect(iframe.getAttribute('src')).toBe('/3d/krkonose.html?chata=Lu%C4%8Dn%C3%AD%20bouda')
+    window.history.replaceState(null, '', '/cesko/krkonose')
   })
 
   it('/polsko/krkonose přesměruje na kanonickou /cesko/krkonose (jedno pohoří, jedna stránka)', async () => {

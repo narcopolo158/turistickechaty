@@ -300,3 +300,7 @@ body.dark .zap-mil .dot { background:var(--cream); }
   .zap-sheet { box-shadow:none; }
   .zap-map-cover, .zap-map-fold { display:none !important; }
 }
+
+/* Deep-link na 3D mapu pohoří (F1d) — pod skládanou mapou */
+.zap-3d-odkaz { display: inline-block; font: 600 11.5px/1 'Space Grotesk', sans-serif; color: var(--red); text-decoration: none; margin-top: 8px; }
+.zap-3d-odkaz:hover { text-decoration: underline; }

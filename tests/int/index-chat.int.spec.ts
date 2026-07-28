@@ -39,6 +39,7 @@ const zaznam = (prepis: Partial<IndexChata>): IndexChata => ({
   heroUrl: null,
   heroAlt: null,
   otiskAlt: null,
+  kapacita: null,
   znamka: false,
   checked: null,
   verified: false,

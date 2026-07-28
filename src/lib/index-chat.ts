@@ -44,6 +44,8 @@ export type IndexChata = {
    */
   heroUrl: string | null
   heroAlt: string | null
+  /** Celková kapacita lůžek (žebříček „Největší") — null = neuvádíme/nedoloženo. */
+  kapacita: number | null
   /** Má turistickou známku (katalog DATA-10, verified:false se zdrojem). */
   znamka: boolean
   /** Nejnovější `checked` napříč bloky ověření profilu (ISO datum), null = nikdy. */

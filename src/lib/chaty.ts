@@ -1,7 +1,7 @@
 import { getPayload } from 'payload'
 import config from '../payload.config'
 
-import type { Chaty as Chata, Fotky as Fotka, Oblasti as Oblast, Razitka } from '../payload-types'
+import type { Chaty as Chata, Fotky as Fotka, Oblasti as Oblast, Razitka, Strediska as Stredisko } from '../payload-types'
 import type { MapovaChata } from '../components/MapaChat'
 import type { RazitkovnikChata } from '../components/RazitkovnikClient'
 import { nejstarsiDolozenyRok, type IndexChata, type KalendariumPolozka } from './index-chat'
@@ -249,6 +249,7 @@ export async function getIndexChat(): Promise<{
       otiskAlt: otisk?.alt ?? null,
       heroUrl: hero ? (hero.sizes?.nahled?.url ?? hero.url ?? null) : null,
       heroAlt: hero?.alt ?? null,
+      kapacita: chata.kapacita ?? null,
       znamka: znamkyVizitkyChaty(chata.slug!).some((p) => p.system === 'znamka'),
       checked: overeni?.checked ?? null,
       verified: overeni?.verified ?? false,
@@ -310,4 +311,19 @@ export async function getOblastBySlug(slug: string): Promise<Oblast | null> {
     overrideAccess: false,
   })
   return res.docs[0] ?? null
+}
+
+/** Střediska oblasti (F1a kolekce) — karty na stránce pohoří, řazené česky. */
+export async function getStrediskaOblasti(oblastSlug: string): Promise<Stredisko[]> {
+  const payload = await getPayload({ config })
+  const res = await payload.find({
+    collection: 'strediska',
+    depth: 1,
+    limit: 100,
+    overrideAccess: false,
+  })
+  const cs = new Intl.Collator('cs')
+  return res.docs
+    .filter((s) => typeof s.oblast === 'object' && s.oblast?.slug === oblastSlug)
+    .sort((a, b) => cs.compare(a.nazev, b.nazev))
 }

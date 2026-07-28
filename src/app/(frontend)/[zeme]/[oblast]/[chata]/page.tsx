@@ -365,6 +365,10 @@ function sestavData(chata: Chata): ZapData {
     eyebrow: eyebrow || 'Turistická chata',
     crumb: crumb || chata.nazev,
     vyskaText: chata.vyska != null ? `${formatCislo(chata.vyska)} m n. m.` : null,
+    mapa3dUrl:
+      chata.lat != null && chata.lng != null && oblast?.slug === 'krkonose'
+        ? `/cesko/krkonose?chata=${encodeURIComponent(chata.nazev)}`
+        : null,
     hero: heroFoto?.url ? { url: heroFoto.url, alt: heroFoto.alt ?? chata.nazev } : null,
     heroAtribuce: heroFoto ? { text: heroAtribuceText || 'zdroj', url: heroFoto.zdrojUrl ?? null } : null,
     heroCaption: [chata.nazev, chata.obec].filter(Boolean).join(' · '),

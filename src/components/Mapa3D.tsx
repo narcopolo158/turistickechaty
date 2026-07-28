@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 /**
  * 3D mapa Krkonoš na stránce pohoří (F1d): poster → klik/tap → plná 3D
@@ -12,20 +12,33 @@ import React, { useState } from 'react'
  * panoramatický malovaný režim) i vlastní atribuci v patičce.
  */
 export default function Mapa3D({ posterUrl, appUrl }: { posterUrl: string; appUrl: string }) {
-  const [spusteno, setSpusteno] = useState(false)
+  // stav: 'poster' | 'app' | 'app+deeplink' — deep-link „Ukázat na 3D mapě"
+  // z profilů (?chata=<název>) spouští 3D rovnou a dotaz předá aplikaci
+  // (přílet kamery). Query se čte až na klientu (useEffect) — server i první
+  // klientský render kreslí poster (žádný hydration mismatch), stránka SSG.
+  const [stav, setStav] = useState<{ spusteno: boolean; deepLink: string | null }>({ spusteno: false, deepLink: null })
+
+  useEffect(() => {
+    const chata = new URLSearchParams(window.location.search).get('chata')
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- záměrné jednorázové převzetí query po hydrataci (SSG bez searchParams)
+    if (chata) setStav({ spusteno: true, deepLink: chata })
+  }, [])
+
+  const spusteno = stav.spusteno
+  const iframeSrc = stav.deepLink ? `${appUrl}?chata=${encodeURIComponent(stav.deepLink)}` : appUrl
 
   return (
     <div className="m3d">
       {spusteno ? (
         <iframe
           className="m3d-app"
-          src={appUrl}
+          src={iframeSrc}
           title="3D mapa Krkonoš — chaty průvodce"
           loading="lazy"
           allowFullScreen
         />
       ) : (
-        <button type="button" className="m3d-poster" onClick={() => setSpusteno(true)} aria-label="Spustit 3D mapu Krkonoš">
+        <button type="button" className="m3d-poster" onClick={() => setStav((s) => ({ ...s, spusteno: true }))} aria-label="Spustit 3D mapu Krkonoš">
           {/* eslint-disable-next-line @next/next/no-img-element -- statický poster z public/3d */}
           <img src={posterUrl} alt="Náhled 3D mapy Krkonoš — malovaný panoramatický režim" loading="lazy" decoding="async" />
           <span className="m3d-poster-overlay">

@@ -9,6 +9,7 @@ import RazitkoSvg from './RazitkoSvg'
 import type { IndexChata } from '@/lib/index-chat'
 import {
   CHIP_KLICE,
+  CHIP_POPISKY,
   filtrujKatalog,
   formatCheckedDatum,
   formatVyskaM,
@@ -36,15 +37,6 @@ import {
  * s useSearchParams. Data přicházejí jako props ze server komponenty
  * (SSG index) — klient nedotazuje nic.
  */
-
-const CHIP_POPISKY: Record<ChipKlic, string> = {
-  'v-provozu': 'v provozu',
-  zanikla: 'zaniklá',
-  nocleh: 'nocleh',
-  obcerstveni: 'občerstvení',
-  razitko: 'razítko',
-  znamka: 'známka',
-}
 
 const RAZENI_POPISKY: Record<Razeni, string> = {
   abc: 'abecedně',

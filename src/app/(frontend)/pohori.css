@@ -123,3 +123,110 @@
   .pohori-hero-text h1 { font-size: 44px; }
   .m3d-app { height: 70vh; }
 }
+
+/* ── 02 Chaty oblasti: chips + tabulkové řádky ─────────────────────────── */
+.pohori-uvodka { font: 400 13.5px/1.6 Inter, sans-serif; color: var(--muted); margin: 0 0 12px; max-width: 68ch; }
+.pohori-uvodka b { color: var(--ink); }
+.pchs-lista { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+.pchs-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.pchs-chip {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  font: 600 10.5px/1 'Space Grotesk', sans-serif;
+  color: var(--ink);
+  cursor: pointer;
+}
+.pchs-chip.akt { background: var(--red); border-color: var(--red); color: #fff; }
+.pchs-razeni { display: flex; gap: 4px; }
+.pchs-razeni button {
+  padding: 6px 11px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  font: 600 10.5px/1 'Space Grotesk', sans-serif;
+  color: var(--muted);
+  cursor: pointer;
+}
+.pchs-razeni button.akt { background: var(--card); border-color: var(--line); color: var(--ink); }
+.pchs-tabulka { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--card); }
+.pchs-radek {
+  display: grid;
+  grid-template-columns: 1.6fr 76px 108px 70px 110px;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--hair);
+  text-decoration: none;
+  color: inherit;
+}
+.pchs-radek:last-child { border-bottom: 0; }
+.pchs-radek:hover { background: var(--paper); }
+.pchs-nazev { font: 500 14px/1.25 var(--font-emph, Georgia, serif); color: var(--ink); }
+.pchs-tag { font: italic 400 10.5px/1 var(--font-emph, Georgia, serif); color: var(--muted); }
+.pchs-vyska { font: 600 12px/1 'Space Grotesk', sans-serif; color: var(--ink); text-align: right; }
+.pchs-pill { justify-self: start; padding: 3px 9px; border-radius: 20px; font: 600 9px/1 'Space Grotesk', sans-serif; }
+.pchs-pill.ok { background: rgba(30, 138, 79, 0.12); color: var(--open, #1e8a4f); }
+.pchs-pill.zanikla { background: rgba(138, 148, 156, 0.16); color: var(--gone, #8a949c); }
+.pchs-pill.mimo { background: rgba(224, 52, 31, 0.1); color: var(--red); }
+.pchs-pill.nezn { background: rgba(138, 148, 156, 0.12); color: var(--muted); }
+.pchs-sluzby { display: flex; gap: 6px; font-size: 12px; color: var(--muted); }
+.pchs-overeno { font-size: 9.5px; color: var(--label); text-align: right; }
+.pchs-prazdno { font: 400 13px/1.5 Inter, sans-serif; color: var(--muted); margin: 12px 0 0; }
+.pchs-reset { border: 0; background: none; color: var(--red); font: 600 12px/1 'Space Grotesk', sans-serif; cursor: pointer; padding: 0; }
+.pchs-pozn { font: italic 400 10.5px/1.5 var(--font-emph, Georgia, serif); color: var(--label); margin: 9px 0 0; }
+.pchs-pozn a { color: var(--red); text-decoration: none; }
+
+/* ── 03 Žebříčky ───────────────────────────────────────────────────────── */
+.pohori-zebricky { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 11px; }
+.pohori-zebricek { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 13px 15px; }
+.pohori-zebricek-hlava { display: flex; flex-direction: column; gap: 2px; margin-bottom: 9px; }
+.pohori-zebricek-hlava b { font: 500 16px/1.2 var(--font-emph, Georgia, serif); color: var(--ink); }
+.pohori-zebricek-hlava span { font: italic 400 10px/1.4 var(--font-emph, Georgia, serif); color: var(--label); }
+.pohori-zebricek-radek {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--hair);
+  text-decoration: none;
+  color: inherit;
+}
+.pohori-zebricek-radek:hover span { color: var(--red); }
+.pohori-zebricek-radek i { font: 700 10px/1 'Space Grotesk', sans-serif; color: var(--label); font-style: normal; min-width: 14px; }
+.pohori-zebricek-radek span { flex: 1; font: 500 13px/1.3 Inter, sans-serif; color: var(--ink); }
+.pohori-zebricek-radek span em { color: var(--gone, #8a949c); font-style: normal; }
+.pohori-zebricek-radek b { font: 600 12px/1 'Space Grotesk', sans-serif; color: var(--ink); white-space: nowrap; }
+.pohori-zebricek-pozn { font: italic 400 9.5px/1.4 var(--font-emph, Georgia, serif); color: var(--label); margin: 8px 0 0; }
+
+/* ── 04 Střediska · 06 Zaniklé · 07 FAQ · 08 Přesahy ───────────────────── */
+.pohori-strediska { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.pohori-stredisko { background: var(--card); border: 1px solid var(--line); border-radius: 11px; padding: 12px 14px; }
+.pohori-stredisko b { font: 500 15px/1.2 var(--font-emph, Georgia, serif); color: var(--ink); }
+.pohori-stredisko p { font: 400 11.5px/1.5 Inter, sans-serif; color: var(--muted); margin: 6px 0 0; }
+.pohori-tag-pl { margin-left: 7px; padding: 2px 7px; border-radius: 12px; background: rgba(42, 92, 184, 0.1); font: 600 9px/1 'Space Grotesk', sans-serif; color: var(--tr-blue, #2a5cb8); vertical-align: 2px; }
+
+.pohori-zanikle-karta { background: #232630; border-radius: 13px; padding: 16px 18px; color: #e8e5dc; }
+.pohori-zanikle-hlava { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+.pohori-zanikle-hlava b { font: 500 17px/1.2 var(--font-emph, Georgia, serif); }
+.pohori-zanikle-hlava span { font: 600 10px/1 'Space Grotesk', sans-serif; color: rgba(232, 229, 220, 0.6); }
+.pohori-zanikle-pribeh { font: 400 12.5px/1.6 Inter, sans-serif; color: rgba(232, 229, 220, 0.85); margin: 6px 0; }
+.pohori-zanikle-pribeh b { color: #fff; font-weight: 600; }
+.pohori-cta-ghost.svetly { margin-top: 10px; background: transparent; border-color: rgba(232, 229, 220, 0.3); color: #e8e5dc; }
+.pohori-cta-ghost.svetly:hover { border-color: rgba(232, 229, 220, 0.6); color: #fff; }
+
+.pohori-faq { display: flex; flex-direction: column; gap: 7px; max-width: 760px; }
+.pohori-faq-polozka { background: var(--card); border: 1px solid var(--line); border-radius: 11px; padding: 0 15px; }
+.pohori-faq-polozka summary { font: 500 14px/1.3 var(--font-emph, Georgia, serif); color: var(--ink); padding: 12px 0; cursor: pointer; list-style-position: inside; }
+.pohori-faq-polozka summary:hover { color: var(--red); }
+.pohori-faq-polozka p { font: 400 13px/1.6 Inter, sans-serif; color: var(--muted); margin: 0; padding: 0 0 13px 18px; max-width: 64ch; }
+
+.pohori-presah { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--tr-blue, #2a5cb8); border-radius: 11px; padding: 14px 16px; max-width: 760px; }
+.pohori-presah b { font: 500 16px/1.2 var(--font-emph, Georgia, serif); color: var(--ink); }
+.pohori-presah p { font: 400 13px/1.6 Inter, sans-serif; color: var(--muted); margin: 7px 0 0; max-width: 64ch; }
+
+@media (max-width: 700px) {
+  .pchs-radek { grid-template-columns: 1fr 64px 90px; }
+  .pchs-sluzby, .pchs-overeno { display: none; }
+}

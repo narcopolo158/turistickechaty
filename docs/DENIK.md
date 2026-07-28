@@ -182,6 +182,32 @@ u původních 16 jen posun checked na 2026-07-28 (dnešní re-download).
 Seed je nahraje s příštím deployem — otisky se objeví na profilech,
 v katalogu (mini-otisky karet) i v razítkovníku.
 
+**Dodatek 8 (týž den, „můžeš pokračovat"): stránka pohoří DOPLNĚNA
+o sekce 02–08 + deep-link do 3D.** (1) **02 Chaty oblasti** — tabulkové
+řádky s chips filtry a řazením (reuse čisté logiky katalogu — službové
+filtry jen doložené „ano"; CHIP_POPISKY přesunuty do lib, sdílí je katalog
+i pohoří); poctivé „—" u výšky, PL tag, prázdný stav. (2) **03 Žebříčky**
+— Nejvýše / Nejstarší doložený rok / Největší kapacita: jen doložené
+hodnoty, v hlavičce každé karty počet „(n z m chat údaj má)", zaniklá se
+značí † a nevyřazuje, index rozšířen o pole kapacita (50 chat ji uvádí;
+Luční chybí přirozeně — kapacitu neuvádí, přesně jak předvídal handoff).
+(3) **04 Střediska** — karty 7 středisek z kolekce (PL badge; počty chat
+a výšky obcí poctivě NEuvedeny — čekají na přepočet tras DATA-06 a ČÚZK
+DATA-04, popiska to říká; mini-stránky = F1e). (4) 05 Top cíle
+(přečíslováno), (5) **06 Z Atlasu zaniklých** — tmavá karta s 2 doloženými
+příběhy (rok + příčina zániku) a CTA. (6) **07 Časté otázky** — akordeon
+(nativní details, bez JS) s odpověďmi POČÍTANÝMI z dat + JSON-LD FAQPage.
+(7) **08 Přesahy** — Podkrkonoší (Raisova s poznámkou o poloze). (8)
+**Deep-link 3D:** šablona i obě HTML aplikace nově čtou `?chata=<název>`
+(přílet kamery, táž shoda jako hledání); Mapa3D při deep-linku startuje
+rovnou (query čte na klientu — SSG drží, hydratace bez mismatche);
+na profilu chaty s GPS v Krkonoších přibyl odkaz „Ukázat na 3D mapě
+pohoří ▸" pod skládanou mapou. Testy pohoří 4 → 8 (žebříčky, seznam
+s filtrem, FAQ+JSON-LD, deep-link), celkem 270 passed, tsc/lint/kontrola
+čisté. **Vitrína sběratelství (07 handoffu) vědomě odložena** — fotorealistické
+dřevo/mosaz chce samostatný soustředěný průchod; sekce jsou zatím
+číslované bez ní (přečíslují se, až vitrína přibude).
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

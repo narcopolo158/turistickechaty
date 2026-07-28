@@ -56,6 +56,8 @@ export type ZapData = {
   pristupIntro: string | null
   routes: ZapRoute[]
   mapa: { lat: number; lng: number; trasy: TrasaNaMape[] } | null
+  /** Deep-link na 3D mapu pohoří (?chata=<název>) — null u chat bez GPS. */
+  mapa3dUrl: string | null
   sousede: ZapSoused[]
   historie: { rozsah: string | null; milniky: ZapMilnik[]; text: string[] } | null
   zajimavosti: ZapZaj[]
@@ -237,6 +239,9 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
                 <div className="zap-strip"><b>Mapa · skládaná</b><span className="line" /><span className="tag">Podpisový prvek</span></div>
                 <SkladanaMapa mapa={data.mapa} nazev={data.nazev} unfolded={unfolded} setUnfolded={setUnfolded} reduced={reduced} />
                 <div className="zap-srcnote"><span className="t">†</span> živé dlaždice Mapy.com pod dekorativní papírovou vrstvou · sklady ve „whisper“ úrovni, neruší ovládání</div>
+                {data.mapa3dUrl && (
+                  <a className="zap-3d-odkaz" href={data.mapa3dUrl}>Ukázat na 3D mapě pohoří ▸</a>
+                )}
               </>
             )}
 
