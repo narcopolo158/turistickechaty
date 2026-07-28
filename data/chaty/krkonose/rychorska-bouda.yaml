@@ -26,8 +26,11 @@ zajimavosti:
     zdroj: rychorska-bouda.cz — vlastní web boudy (sekundární zdroj, verified:false)
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
-# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+# GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
+# export DATA-01 objekt minul, protože bere jen tourism=alpine_hut/wilderness_hut/hut).
+# Doklad a míra jistoty jsou v overeniLokace níž; verified zůstává false.
+lat: 50.6602261
+lng: 15.8498815
 vyska: 1000
 obec: Žacléř
 overeniLokace:
@@ -36,8 +39,15 @@ overeniLokace:
     katalogu ChatGPT; adresa „Rýchorská bouda čp. 55, 542 01 Žacléř"; poloha na
     nejvýchodnějším hřebeni Krkonoš v 1. zóně KRNAP dle Kudy z nudy. GPS
     nedoložena — doplnit z OSM. Sekundární zdroje, verified:false
+
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/239899454 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    dohledáno 28. 7. 2026 (DATA-31), přesná shoda jména; do 59 m stojí
+    bufet a rozcestník KČT téhož jména (ten uvádí 990 m, profil má z
+    jiného pramene 1 000 m) a tři geotagy fotek z Wikimedia Commons leží
+    31–50 m odtud. Redakčně neověřeno v terénu, verified zůstává false.
   verified: false
-  checked: '2026-07-24'
+  checked: '2026-07-28'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -206,3 +216,7 @@ interniPoznamky: >-
   restaurace, aktuální sezónní režim, potvrdit kontakty a provozovatele. Hero
   fotka: kandidáti DATA-02. Známka č.390 — obrázek připraven v
   data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c390-rychorska-bouda.png.
+
+  GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
+  overeniLokace): starší věty výše o chybějících souřadnicích tím padají.
+  Zůstávají schválně, je z nich vidět, čím profil prošel.

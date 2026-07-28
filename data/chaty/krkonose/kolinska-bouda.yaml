@@ -2,14 +2,9 @@
 # křížovém ověření. Master fronta Tier 1 (známka č.1719 + katalog). Data ze
 # sekundárních médií Kudy z nudy a ceskehory.cz (verified:false — vlastní web
 # kolinskabouda.cz je ze sandboxu nedostupný; ověřit primárně, DATA-04).
-# GPS ZÁMĚRNĚ NEVYPLNĚNA (katalog ji nenese, OSM export objekt neobsahuje —
-# nedomýšlet). Vše verified:false.
-#
-# DATA-21 (26. 7. 2026): vlastní web se načíst PODAŘILO a nese obsáhlou
-# kroniku boudy — doplněno devět milníků. POZOR: rokVzniku ZŮSTÁVÁ NEVYPLNĚN.
-# Rok 1927 je rok KOUPĚ, ne stavby, a kronika rok stavby vůbec neuvádí.
-# POZOR 2: číslo 1719 je ČÍSLO TURISTICKÉ ZNÁMKY, ne letopočet — dřívější
-# otázka „1927, nebo 1719?" byla nedorozumění a je uzavřená.
+# GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
+# export DATA-01 objekt minul, protože bere jen tourism=alpine_hut/wilderness_hut/hut).
+# Doklad a míra jistoty jsou v overeniLokace níž; verified zůstává false.
 
 nazev: Kolínská bouda
 slug: kolinska-bouda
@@ -35,6 +30,8 @@ zajimavosti:
 # GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu, který
 # souřadnice nenese, a v OSM exportu DATA-01 objekt není. Doplnit z OSM
 # (Overpass je ze sandboxu nedosažitelný — přes Actions) nebo ručně.
+lat: 50.6702745
+lng: 15.7375509
 vyska: 1117
 obec: Pec pod Sněžkou
 overeniLokace:
@@ -54,8 +51,15 @@ overeniLokace:
     takže nejspíš jde o týž svah pod starším jménem — DOKÁZANÉ TO ALE NENÍ,
     žádný pramen tu rovnici výslovně neuvádí. Nedomýšlet, ověřit.
     Sekundární média, verified:false
+
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/31360798 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    dohledáno 28. 7. 2026 (DATA-31), přesná shoda jména, tag
+    tourism=hotel; čtyři objekty téhož jména (budova, restaurace,
+    rozcestník KČT) leží do 63 m a deset geotagů fotek z Wikimedia Commons
+    13–45 m odtud. Redakčně neověřeno v terénu, verified zůstává false.
   verified: false
-  checked: '2026-07-26'
+  checked: '2026-07-28'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -382,3 +386,7 @@ interniPoznamky: >-
   DATA-02. Známka č.1719 — obrázek připraven v
   data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c1719-kolinska-bouda.png
   (číslo opravil Michal — původně jsem z rytiny četl 1716).
+
+  GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
+  overeniLokace): starší věty výše o chybějících souřadnicích tím padají.
+  Zůstávají schválně, je z nich vidět, čím profil prošel.

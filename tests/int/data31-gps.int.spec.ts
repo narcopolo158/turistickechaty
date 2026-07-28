@@ -16,6 +16,7 @@ import { describe, expect, it } from 'vitest'
 
 import {
   jadroJmena,
+  jadroProDotaz,
   normJmeno,
   overpassDotazJmena,
   profilyBezGps,
@@ -56,6 +57,15 @@ describe('jméno a jeho jádro', () => {
     // takže ho NFD nerozloží — kdežto „ą" o ocásek přijde. Pro porovnání to
     // nevadí (obě strany projdou touž normalizací), ale ať to nikoho nepřekvapí.
     expect(jadroJmena('Schronisko PTTK nad Łomniczką')).toBe('nad łomniczka')
+  })
+
+  // Regrese z prvního ostrého běhu (28. 7. 2026): do dotazu šlo jádro BEZ
+  // diakritiky, takže Overpass hledal „nad łomniczka" a jméno „nad Łomniczką"
+  // minul — jediný ze dvanácti profilů, který zůstal bez nálezu.
+  it('jádro pro dotaz drží diakritiku (jinak by ji Overpass nenašel) a zbaví se uvozovek', () => {
+    expect(jadroProDotaz('Schronisko PTTK „Nad Łomniczką"')).toBe('Nad Łomniczką')
+    expect(jadroProDotaz('Rýchorská bouda')).toBe('Rýchorská')
+    expect(normJmeno(jadroProDotaz('Chata Pod Studničnou'))).toBe(jadroJmena('Chata Pod Studničnou'))
   })
 })
 

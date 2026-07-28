@@ -13,12 +13,11 @@ stav: v-provozu
 oblast: krkonose
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS ZÁMĚRNĚ NEVYPLNĚNA: bouda nebyla v OSM exportu DATA-01 a externí
-# katalog souřadnice nenese — doplnit s pramenem, nedomýšlet.
-# obec: adresu „Černý Důl 215" nesou shodně dva zápisy (firemní katalog,
-# Kudy z nudy); externí katalog vedl „Pec pod Sněžkou", ale bez viditelné
-# opory — pole proto nese adresní hodnotu. Sémantika pole se řeší
-# v DATA-20 (bouda stojí na křižovatce katastrů, exponát tam už je).
+# GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
+# export DATA-01 objekt minul, protože bere jen tourism=alpine_hut/wilderness_hut/hut).
+# Doklad a míra jistoty jsou v overeniLokace níž; verified zůstává false.
+lat: 50.6707087
+lng: 15.7302361
 vyska: 1115
 obec: Černý Důl
 overeniLokace:
@@ -33,8 +32,15 @@ overeniLokace:
     katalog uváděl „Pec pod Sněžkou" bez viditelné opory; adresní prameny
     shodně Černý Důl — pole přepsáno na adresní hodnotu 26. 7. 2026,
     rozpor zůstává zaznamenán (DATA-20).
+
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/19923488 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    dohledáno 28. 7. 2026 (DATA-31), přesná shoda jména, tag
+    tourism=hotel; restaurace téhož jména 15 m odtud a patnáct geotagů
+    fotek z Wikimedia Commons 7–13 m odtud. Redakčně neověřeno v terénu,
+    verified zůstává false.
   verified: false
-  checked: '2026-07-26'
+  checked: '2026-07-28'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 # kapacita LŮŽEK se NEZAPISUJE: Kudy z nudy uvádí 24 dvoulůžkových pokojů
@@ -198,3 +204,7 @@ interniPoznamky: |-
   Lučiny, čp. 215, Pražská bouda" — další nezávislý zápis pro adresu Černý Důl
   215 (k adresnímu rozporu vedenému výše; popisy na Commons jsou sekundární
   pramen).
+
+  GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
+  overeniLokace): starší věty výše o chybějících souřadnicích tím padají.
+  Zůstávají schválně, je z nich vidět, čím profil prošel.

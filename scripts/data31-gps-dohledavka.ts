@@ -60,6 +60,15 @@ const TYPOVA = /\b(chata|bouda|hotel|horska|horsky|schronisko|turystyczne|pttk)\
 /** Jádro názvu pro volnější shodu („Chata Pod Studničnou" → „pod studnicnou"). */
 export const jadroJmena = (s: string): string => normJmeno(s).replace(TYPOVA, ' ').replace(/\s+/gu, ' ').trim()
 
+/**
+ * Jádro pro DOTAZ — s diakritikou. `jadroJmena` diakritiku shazuje, protože
+ * porovnává; kdyby ale takový tvar šel do Overpassu, hledal by „nad łomniczka"
+ * a jméno „nad Łomniczką" by minul. Přesně to se stalo 28. 7. 2026 při prvním
+ * běhu: polské schronisko jako jediné ze dvanácti nemělo nález.
+ */
+export const jadroProDotaz = (s: string): string =>
+  s.replace(TYPOVA, ' ').replace(/[„"]/gu, ' ').replace(/\s+/gu, ' ').trim()
+
 /** Publikované profily zvolené oblasti, které nemají `lat`/`lng`. */
 export const profilyBezGps = (adresar: string): ProfilBezGps[] => {
   if (!existsSync(adresar)) return []
@@ -190,7 +199,7 @@ const main = async () => {
   }
   for (const p of profily) console.log(`  - ${p.nazev}${p.obec ? ` (${p.obec})` : ''}`)
 
-  const jmena = [...profily.map((p) => p.nazev), ...profily.map((p) => jadroJmena(p.nazev)).filter((j) => j.length >= 3)]
+  const jmena = [...profily.map((p) => p.nazev), ...profily.map((p) => jadroProDotaz(p.nazev)).filter((j) => j.length >= 3)]
   const elementy: OsmElement[] = []
   for (const { zeme, iso } of [
     { zeme: 'cz', iso: 'CZ' },

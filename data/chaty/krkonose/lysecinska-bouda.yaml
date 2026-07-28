@@ -27,8 +27,11 @@ zajimavosti:
     zdroj: Kudy z nudy „Lysečinská bouda – pohoda v srdci Krkonoš" (sekundární médium, verified:false)
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
-# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+# GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
+# export DATA-01 objekt minul, protože bere jen tourism=alpine_hut/wilderness_hut/hut).
+# Doklad a míra jistoty jsou v overeniLokace níž; verified zůstává false.
+lat: 50.7127501
+lng: 15.8343288
 vyska: 1000
 obec: Horní Maršov
 overeniLokace:
@@ -51,8 +54,16 @@ overeniLokace:
     prameny — primární je registr územní identifikace nebo dotaz na obecní
     úřad, a ten se vede dál v DATA-20 / DATA-04. Rozpor zůstává přiznaný
     v próze; profil netvrdí, že je věc uzavřená.
+
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/137029464 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    dohledáno 28. 7. 2026 (DATA-31), přesná shoda jména, tagy
+    tourism=guest_house + building; do 68 m stojí i restaurace a
+    rozcestník KČT téhož jména. Rozpor, který tím vyplul: rozcestník KČT
+    uvádí 958 m, profil má z jiného pramene 1 000 m — výšku je potřeba
+    ověřit. Redakčně neověřeno v terénu, verified zůstává false.
   verified: false
-  checked: '2026-07-26'
+  checked: '2026-07-28'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -306,3 +317,7 @@ interniPoznamky: >-
   a veřejná přístupnost druhé restaurace, sezónní režim, platná doména. Hero
   fotka: kandidáti DATA-02. Známka č.1336 — obrázek připraven v
   data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c1336-lysecinska-bouda.png.
+
+  GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
+  overeniLokace): starší věty výše o chybějících souřadnicích tím padají.
+  Zůstávají schválně, je z nich vidět, čím profil prošel.

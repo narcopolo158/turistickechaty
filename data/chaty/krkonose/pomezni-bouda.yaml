@@ -28,8 +28,11 @@ zajimavosti:
     zdroj: Kudy z nudy „Horský hotel Pomezní bouda v Horní Malé Úpě" (sekundární médium, verified:false)
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
-# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
+# GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
+# export DATA-01 objekt minul, protože bere jen tourism=alpine_hut/wilderness_hut/hut).
+# Doklad a míra jistoty jsou v overeniLokace níž; verified zůstává false.
+lat: 50.7460809
+lng: 15.8220807
 vyska: 1050
 obec: Malá Úpa
 overeniLokace:
@@ -39,8 +42,15 @@ overeniLokace:
     „Horní Malá Úpa 40, 542 27 Malá Úpa"; poloha na hřebeni Krkonoš přímo u
     hraničního přechodu s Polskem, 7 km od vrcholu Sněžky (malaupa.cz). GPS
     nedoložena — doplnit z OSM. Sekundární zdroje, verified:false
+
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/96093567 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    dohledáno 28. 7. 2026 (DATA-31), přesná shoda jména, tagy
+    tourism=hotel + building a web pomezni-bouda.cz shodný s webem boudy;
+    restaurace téhož jména leží 3 m odtud. Redakčně neověřeno v terénu,
+    verified zůstává false.
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-07-28'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -249,3 +259,7 @@ interniPoznamky: >-
   data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/c673-pomezni-boudy.png
   (známka je vydána pro místo „Pomezní Boudy · Malá Úpa", tedy pro sedlo/osadu —
   vazba na tento konkrétní objekt k ověření).
+
+  GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
+  overeniLokace): starší věty výše o chybějících souřadnicích tím padají.
+  Zůstávají schválně, je z nich vidět, čím profil prošel.

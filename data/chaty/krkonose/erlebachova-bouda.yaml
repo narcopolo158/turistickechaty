@@ -12,8 +12,11 @@ stav: v-provozu
 oblast: krkonose
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS ZÁMĚRNĚ NEVYPLNĚNA: objekt nebyl v OSM exportu DATA-01 a katalog
-# souřadnice nenese — doplnit s pramenem, nedomýšlet.
+# GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
+# export DATA-01 objekt minul, protože bere jen tourism=alpine_hut/wilderness_hut/hut).
+# Doklad a míra jistoty jsou v overeniLokace níž; verified zůstává false.
+lat: 50.7589321
+lng: 15.633979
 vyska: 1150
 obec: Špindlerův Mlýn
 overeniLokace:
@@ -22,8 +25,15 @@ overeniLokace:
     nachází na horském hřebeni v Krkonošském národním parku ve výšce
     1 150 m n. m., asi šest kilometrů od centra Špindlerova Mlýna".
     Výška 1150 m shodně externí katalog ČR/SK (2026). GPS nedoložena.
+
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/31128152 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    dohledáno 28. 7. 2026 (DATA-31), přesná shoda jména, tagy
+    tourism=hotel + amenity=restaurant a web erlebachovabouda.cz shodný s
+    webem boudy; sedm geotagů fotek z Wikimedia Commons leží 20–95 m
+    odtud. Redakčně neověřeno v terénu, verified zůstává false.
   verified: false
-  checked: '2026-07-26'
+  checked: '2026-07-28'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 # kapacita ZÁMĚRNĚ NEVYPLNĚNA — žádný otevřený pramen nedává číslo lůžek
@@ -179,3 +189,7 @@ interniPoznamky: |-
   RESORT SVATÝ FRANTIŠEK: čtyři budovy (Kudy z nudy), z nich jmenovitě známe Josefovu boudu. Podle precedentu Dvoračky × Štumpovka (rozhodnutí Michala 21. 7.) by KAŽDÁ budova resortu s turistickou službou měla mít vlastní profil — Josefova bouda je adept na kandidáta; do otázek pro Michala (střádají se na konec Krkonoš).
   Vizitka CZ-2933 (Wander Book) existuje v katalogu — bez svolení Wander Booku se nepoužívá (DATA-13 filtruje). Známka v oficiálním seznamu vydavatele není.
   K dotažení (DATA-04 / Michal): veřejnost restaurace (telefonát), kapacita samotné boudy, GPS s pramenem, po kom se bouda jmenuje (rešerše — jméno Erlebach je nejspíš rodové, ale bez pramene se nevyslovuje), hero fotka po GPS.
+
+  GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
+  overeniLokace): starší věty výše o chybějících souřadnicích tím padají.
+  Zůstávají schválně, je z nich vidět, čím profil prošel.

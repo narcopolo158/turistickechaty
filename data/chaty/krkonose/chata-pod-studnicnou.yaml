@@ -13,8 +13,11 @@ stav: v-provozu
 oblast: krkonose
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS ZÁMĚRNĚ NEVYPLNĚNA: objekt nebyl v OSM exportu DATA-01 a katalog
-# souřadnice nenese — doplnit s pramenem, nedomýšlet.
+# GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
+# export DATA-01 objekt minul, protože bere jen tourism=alpine_hut/wilderness_hut/hut).
+# Doklad a míra jistoty jsou v overeniLokace níž; verified zůstává false.
+lat: 50.7090155
+lng: 15.7259695
 vyska: 890
 obec: Pec pod Sněžkou # adresa z kct.cz — poštovní pramen (sémantika pole: DATA-20)
 overeniLokace:
@@ -26,8 +29,15 @@ overeniLokace:
     26. 7. 2026): „Chatu pod Studničnou naleznete v Obřím dole kousek od
     Pece pod Sněžkou a jak už název chaty napovídá, tak se nachází pod
     Studničnou horou." GPS nedoložena.
+
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/1269086646 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); dohledáno 28. 7. 2026 (DATA-31), přesná
+    shoda jména, tag tourism=chalet a web podstudnicnou.cz shodný s webem
+    chaty; geotag fotky z Wikimedia Commons leží 34 m odtud. Redakčně
+    neověřeno v terénu, verified zůstává false.
   verified: false
-  checked: '2026-07-26'
+  checked: '2026-07-28'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -180,3 +190,7 @@ interniPoznamky: |-
   DVĚ DOMÉNY: podstudnicnoukct.cz (uvádí KČT; ze sandboxu se nenačte — robots/timeout, NEOBCHÁZET) × chatapodstudnicnou.cz (vlastní, dostupná). Do kontaktů vzata KČT doména jako od správce.
   ČASOVANÁ INFORMACE: nájemní smlouva nájemce do 28. 2. 2031 (kct.cz) — provozní údaje vázané na nájemce.
   K dotažení (DATA-04 / Michal): veřejnost občerstvení (jde ověřit i přes KČT, ne jen telefonátem na chatu — čísla v kontaktech), GPS s pramenem, starší jméno chaty a rok stavby (KČT archiv? vlastivědná literatura), hero fotka po GPS. Známka: v oficiálním seznamu vydavatele ani v sadě od Michala není.
+
+  GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
+  overeniLokace): starší věty výše o chybějících souřadnicích tím padají.
+  Zůstávají schválně, je z nich vidět, čím profil prošel.

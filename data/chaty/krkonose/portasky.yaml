@@ -31,9 +31,11 @@ zajimavosti:
       prezentace) — sekundární média, verified:false
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS ZÁMĚRNĚ NEVYPLNĚNA: kandidát pochází z externího katalogu bez souřadnic a
-# v OSM exportu DATA-01 objekt není. Doplnit z OSM (přes Actions) nebo ručně.
-# `vyska` ZÁMĚRNĚ NEVYPLNĚNA — viz rozpor v overeniLokace.
+# GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
+# export DATA-01 objekt minul, protože bere jen tourism=alpine_hut/wilderness_hut/hut).
+# Doklad a míra jistoty jsou v overeniLokace níž; verified zůstává false.
+lat: 50.7020225
+lng: 15.7688638
 obec: Pec pod Sněžkou
 overeniLokace:
   source: >-
@@ -45,8 +47,16 @@ overeniLokace:
     neuvádějí, takže žádná varianta není doložena druhým nezávislým zdrojem —
     pole `vyska` proto vědomě NEVYPLNĚNO (nedomýšlet). GPS nedoložena — doplnit
     z OSM. Sekundární zdroje, verified:false
+
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/656462446 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    dohledáno 28. 7. 2026 (DATA-31), jméno v OSM zní „Horská chata
+    Portášky", identitu ale dokládá web portasky.cz shodný s webem chaty;
+    třináct geotagů fotek z Wikimedia Commons leží 94–110 m odtud. Tentýž
+    objekt nese ele=1050. Redakčně neověřeno v terénu, verified zůstává
+    false.
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-07-28'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -237,3 +247,7 @@ interniPoznamky: >-
   kandidátů, vesměs lanovka Velká Úpa–Portášky, sjezdovka, rozcestník a
   Sagesserovy boudy — žádný popis nepotvrzuje budovu chaty Portášky, hero
   zůstává nevybráno (oční výběr, nebo foto od chataře).
+
+  GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
+  overeniLokace): starší věty výše o chybějících souřadnicích tím padají.
+  Zůstávají schválně, je z nich vidět, čím profil prošel.

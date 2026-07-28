@@ -593,6 +593,37 @@ dvanáct i s obcemi). 323 testů celkem, tsc, lint i kontrola čisté.
 Až návrhy projdeš, druhý krok je zapíše do profilů se `source` + ODbL
 a `verified: false` — a dvanáct chat dostane mapu, přístupové trasy i pin v 3D.
 
+**Dodatek 24 (týž den, po Michalových klicích): OSM našel jedenáct z dvanácti,
+osm profilů má souřadnice — a osm chat tím dostalo mapu.** DATA-31 doběhla
+(a s ní i DATA-28 pro Jizerské hory, model je v `public/3d/jizerske-hory.html`).
+Report `docs/DATA-31-gps-krkonose.md`: nález u 11 z 12 profilů. Prošel jsem je
+kus po kuse a **zapsal jen ty, kde identitu drží víc než jméno**:
+Pod Studničnou, Erlebachova, Kolínská, Lysečinská, Pomezní, Portášky, Pražská
+a Rýchorská. U každé stojí v `overeniLokace` doklad — OSM objekt s tagy, shoda
+webu s webem chaty (podstudnicnou.cz, erlebachovabouda.cz, pomezni-bouda.cz,
+portasky.cz) a **nezávislé potvrzení z druhé strany: geotagy fotek z Wikimedia
+Commons**, které DATA-02 nasbírala. U Pražské boudy sedí na 7 m, u Erlebachovy
+na 20 m, u Kolínské na 21 m. `verified` zůstává false — v terénu to nikdo
+z nás neověřil (konvence B). Kontrolní přepočet: každá nová poloha leží
+v bboxu Krkonoš a nejbližší jiný profil sedí, kde má (Pomezní bouda 211 m od
+polského Schroniska na Przełęczy Okraj — přesně jak stojí naproti sobě
+v sedle). Seed + ověřeno na běžícím webu: osm profilů má mapovou sekci,
+Chata Rezek (dál bez souřadnic) poctivou hlášku.
+**Nezapsáno (4) — a proč:** *Chata Rezek* a *Chata Rozhled* nemají v OSM nic,
+co by šlo ztotožnit (jádra „rezek"/„rozhled" chytila zastávky, rozcestníky
+a všechny rozhledny v okolí); *Petrova bouda* má jen názvy tras, které ji
+připomínají — nejbližší nález je 737 m od shluku 21 fotek, což na zápis nestačí;
+*Schronisko PTTK „Nad Łomniczką"* nemělo nález vůbec — a to byla **moje chyba**:
+do dotazu šlo jádro názvu **bez diakritiky**, takže Overpass hledal
+„nad łomniczka", kdežto v OSM stojí „Łomniczką". Opraveno (`jadroProDotaz`
+drží diakritiku i velikost písmen) + regresní test; příští běh ho má najít.
+**Vedlejší nález k ověření:** u Lysečinské a Rýchorské boudy uvádí rozcestník
+KČT v OSM 958 m, resp. 990 m, kdežto profil má z jiného pramene 1 000 m —
+zapsáno do dokladu jako otevřená otázka, výšku nepřepisuji.
+**Čeká na Michala:** (a) mrknout na ty čtyři nezapsané v reportu, (b) klik na
+**DATA-31** znovu (po opravě diakritiky), (c) klik na **DATA-06** — osm nových
+poloh znamená, že se pro ně dají spočítat přístupové trasy (dosud 63 ze 76).
+
 **Otázky pro Michala:** (0) **Jaký `typ` mají dostat rozhledny s občerstvením?**
 Číselník z plánu kap. 5 zná obsluhovaná / útulna / bivak / horský hotel —
 přidat pátou hodnotu `rozhledna`, nebo je vést jako obsluhované s poznámkou?
