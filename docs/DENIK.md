@@ -245,6 +245,19 @@ v katalogu nově odkazuje na žebříčky stránky pohoří (#zebricky — F1b
 odchylka „mrtvé odkazy neděláme" tím zaniká, cíl existuje). 271 testů,
 tsc čisté.
 
+**Dodatek 11 (týž den, Michal: „data-06 dobehlo"): DATA-06 HOTOVÁ
+A ODŠKRTNUTA.** Klik na výšky doplnil všem **127 přístupům výškový profil
+(Mapy.com Elevation) a orientační čas dle DIN 33466**; křížová kontrola
+proti ručně doloženým GPX trasám Luční sedí (Pec: výpočet 8,29 km/+762 m/
+4:03 vs. GPX 8,0/+742/3:40; Špindl: 7,32/+733/3:28 vs. 6,8/+699/3:15 —
+jiné přesné nástupy, rozumná shoda). Sekce „Odkud vyjít" na profilech
+teď nese délku, značení úseků, převýšení, čas i výškový profil pro
+63 chat. Poslední drobek zadání („zpětné značení dvou tras Luční")
+vyřešen renderem — web ukazuje data06 trasy SE značením; ruční GPX
+zůstávají v YAML jako doložená data. Celá trasová pipeline je tím
+v režimu údržby (přepočet lokálně + klik na výšky při růstu korpusu).
+19 testů DATA-06 zelených.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh
