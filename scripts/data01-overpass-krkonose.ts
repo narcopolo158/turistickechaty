@@ -47,10 +47,20 @@ import { slugify } from '../src/fields/slug'
  * overpass-api.de sdílené IP GitHub Actions runnerů často rate-limituje,
  * kumi.systems bývá benevolentnější). `--api URL` fallback vypíná a vynutí
  * jedinou instanci.
+ *
+ * Do seznamu smí JEN instance s celosvětovými daty. Regionální zrcadla
+ * (overpass.osm.ch = jen Švýcarsko, atownsend.org.uk = Britské ostrovy…) by
+ * na náš dotaz odpověděla HTTP 200 a prázdným seznamem — tedy tiše prázdným
+ * exportem, což je horší než pád. Proto se u nich drží zdroj:
+ * wiki.openstreetmap.org/wiki/Overpass_API, oddíl veřejných instancí,
+ * kontrolováno 28. 7. 2026 (private.coffee je tam vedená jako „global data
+ * coverage"). Prázdnou odpověď navíc `stahniZInstance` bere jako selhání
+ * instance — viz `povolitPrazdno`.
  */
 export const VYCHOZI_API_INSTANCE = [
   'https://overpass-api.de/api/interpreter',
   'https://overpass.kumi.systems/api/interpreter',
+  'https://overpass.private.coffee/api/interpreter',
 ]
 // Adresáře i dotaz se odvozují z konfigurace oblasti (scripts/oblasti.ts) —
 // nové pohoří se přidává tam, ne kopií tohohle skriptu.
@@ -121,7 +131,7 @@ export type OsmElement = {
 // ── Stažení a načtení exportu ───────────────────────────────────────────────
 
 /** Stáhne surovou odpověď z jedné instance a ověří, že je to validní export. */
-const stahniZInstance = async (api: string, dotaz: string): Promise<string> => {
+const stahniZInstance = async (api: string, dotaz: string, povolitPrazdno = false): Promise<string> => {
   const odpoved = await fetch(api, {
     method: 'POST',
     headers: {
@@ -136,24 +146,63 @@ const stahniZInstance = async (api: string, dotaz: string): Promise<string> => {
     throw new Error(`HTTP ${odpoved.status}${napoveda}`)
   }
   const text = await odpoved.text()
-  nactiExport(text) // validace už při stažení — vadný export se neukládá
+  const { elementy } = nactiExport(text) // validace už při stažení — vadný export se neukládá
+  // Prázdno není výsledek, ale podezření: instance s regionálními daty odpoví
+  // na dotaz mimo svůj výřez HTTP 200 a `elements: []`. Bez téhle pojistky by
+  // se takový export uložil a běh by hlásil „0 nových kandidátů" jako úspěch.
+  if (!elementy.length && !povolitPrazdno) {
+    throw new Error('0 objektů — instance nejspíš nemá celosvětová data (nebo dotaz minul); prázdno vynutíš přepínačem --povolit-prazdno')
+  }
   return text
 }
 
+export type StahniVolby = {
+  /** Kolik kol se seznam instancí projde (výchozí 3). */
+  kola?: number
+  /** Pauzy mezi koly v ms; poslední hodnota platí i pro další kola. */
+  pauzy?: number[]
+  /** Vstřik spánku (testy si ho nahradí, aby nečekaly). */
+  spanek?: (ms: number) => Promise<void>
+  /** Prázdná odpověď je legitimní výsledek, ne selhání instance. */
+  povolitPrazdno?: boolean
+}
+
+const VYCHOZI_PAUZY = [30_000, 90_000]
+const usni = (ms: number) => new Promise<void>((hotovo) => setTimeout(hotovo, ms))
+
 /**
  * Zkouší instance po řadě, dokud jedna nevrátí validní export — rate limit
- * či výpadek jedné veřejné instance běh neshodí. Selžou-li všechny, chyba
- * nese souhrn všech pokusů (do anotace Actions).
+ * či výpadek jedné veřejné instance běh neshodí. Selžou-li všechny, počká
+ * a projde je ZNOVU: HTTP 504 z Overpassu znamená „teď mám nával", ne „tvůj
+ * dotaz je špatně", a po půl minutě zpravidla projde (28. 7. 2026 spadl běh
+ * DATA-01 pro Jizerské hory právě takhle — obě tehdejší instance vrátily 504
+ * ve stejné vteřině a jediný pokus na instanci znamenal konec).
+ * Selžou-li všechna kola, chyba nese souhrn všech pokusů (do anotace Actions).
  */
-export const stahniOverpass = async (instance: string[], dotaz: string): Promise<{ raw: string; api: string }> => {
+export const stahniOverpass = async (
+  instance: string[],
+  dotaz: string,
+  volby: StahniVolby = {},
+): Promise<{ raw: string; api: string }> => {
+  const kola = Math.max(1, volby.kola ?? 3)
+  const pauzy = volby.pauzy ?? VYCHOZI_PAUZY
+  const spanek = volby.spanek ?? usni
   const chyby: string[] = []
-  for (const api of instance) {
-    try {
-      return { raw: await stahniZInstance(api, dotaz), api }
-    } catch (chyba) {
-      const zprava = chyba instanceof Error ? chyba.message : String(chyba)
-      chyby.push(`${api}: ${zprava}`)
-      console.error(`Instance selhala — ${api}: ${zprava}`)
+
+  for (let kolo = 1; kolo <= kola; kolo++) {
+    for (const api of instance) {
+      try {
+        return { raw: await stahniZInstance(api, dotaz, volby.povolitPrazdno), api }
+      } catch (chyba) {
+        const zprava = chyba instanceof Error ? chyba.message : String(chyba)
+        chyby.push(`${api} (kolo ${kolo}/${kola}): ${zprava}`)
+        console.error(`Instance selhala — ${api} (kolo ${kolo}/${kola}): ${zprava}`)
+      }
+    }
+    if (kolo < kola) {
+      const pauza = pauzy[Math.min(kolo - 1, pauzy.length - 1)] ?? 0
+      console.error(`Všechny instance v kole ${kolo} selhaly — čekám ${Math.round(pauza / 1000)} s a zkusím znovu.`)
+      await spanek(pauza)
     }
   }
   throw new Error(`Všechny Overpass instance selhaly:\n${chyby.map((ch) => `- ${ch}`).join('\n')}`)
@@ -416,6 +465,9 @@ const main = async () => {
   const apiIndex = argv.indexOf('--api')
   const instance = apiIndex >= 0 && argv[apiIndex + 1] ? [argv[apiIndex + 1]] : VYCHOZI_API_INSTANCE
   const zJsonu = argv.includes('--z-jsonu')
+  // Prázdný výsledek je ve výchozím stavu selhání instance (viz stahniZInstance).
+  // Přepínač je pro případ, kdy víme, že v okně opravdu nic není.
+  const povolitPrazdno = argv.includes('--povolit-prazdno')
 
   const oblast: OblastKonfig = oblastZArgv(argv)
   // Země dotazu bere konfigurace oblasti (přeshraniční pohoří „vcelku").
@@ -438,7 +490,7 @@ const main = async () => {
       raw = readFileSync(soubor, 'utf8')
     } else {
       console.log(`Overpass dotaz ${iso} (alpine_hut + wilderness_hut + hut, ${iso} ∩ okno ${oblast.nazev}); instance: ${instance.join(', ')}…`)
-      const vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno))
+      const vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno), { povolitPrazdno })
       raw = vysledek.raw
       console.log(`Staženo z ${vysledek.api}.`)
       mkdirSync(kandAdr, { recursive: true })

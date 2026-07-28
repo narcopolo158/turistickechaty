@@ -437,6 +437,32 @@ je **doloženo měřením, ne vírou**: `git show eb7fd57:…/data01-overpass.ym
 → `[A] ř. 21 Map keys must be unique` — přesně ten řádek. Celé repo:
 13 workflow, 0 vad; `npm run kontrola` zelené, lint i tsc čisté.
 
+**Dodatek 19 (týž den, druhý screenshot z Actions): workflow už je v pořádku,
+ale Overpass měl nával — DATA-01 se učí čekat.** Michalův druhý klik doložil,
+že oprava z dodatku 18 sedí: běh doběhl až k našemu skriptu a správně vypsal
+`Oblast: Jizerské hory (jizerske-hory) — okno dotazu 50.75,15.05,51.02,15.45`.
+Spadl ale o kus dál a **cizí vinou**: `overpass-api.de` i `overpass.kumi.systems`
+vrátily během dvou minut **HTTP 504 (přetížená instance)**. Skript měl jeden
+pokus na instanci, takže dvě 504 ve stejné chvíli znamenaly konec běhu — což je
+u Overpassu špatný předpoklad: 504 říká „mám nával", ne „tvůj dotaz je špatně".
+**Změněno ve `stahniOverpass` (a tím pro DATA-01, DATA-06 i DATA-28 najednou):**
+instance se procházejí ve **třech kolech** s pauzami 30 s a 90 s (čísla i spánek
+jsou vstřikovatelné, testy tedy nečekají), chyba na konci nese číslo kola,
+a `timeout-minutes: 30` v workflow je pojistka proti zaseknutí. Přibyla **třetí
+veřejná instance** `overpass.private.coffee` — vybraná podle seznamu na
+wiki.openstreetmap.org (oddíl veřejných instancí, kontrolováno dnes), kde je
+vedená jako „global data coverage". A právě proto přibyla i pojistka opačným
+směrem: regionální zrcadla (`overpass.osm.ch` = jen Švýcarsko,
+`atownsend.org.uk` = Britské ostrovy) by na náš dotaz odpověděla **HTTP 200
+a prázdným seznamem**, což by skončilo tiše uloženým prázdným exportem a hláškou
+„0 nových kandidátů" tvářící se jako úspěch. **Prázdná odpověď se proto bere
+jako selhání instance** (vynutit ji jde `--povolit-prazdno`) — tichý nesmysl je
+horší než hlasitý pád. Testy data01 24/24 (+3 nové: opakování kol s ověřením
+délek pauz, vyčerpaná kola, prázdná odpověď); 289 testů zelených, tsc, lint
+i kontrola workflow čisté. (Tři suity dnes v sandboxu neběží — chtějí Postgres
+a `PAYLOAD_SECRET`; s Overpassem nemají nic společného.)
+**Čeká na Michala:** spustit DATA-01 pro `jizerske-hory` znovu.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

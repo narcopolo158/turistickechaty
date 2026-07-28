@@ -286,12 +286,23 @@ describe('zapisKandidaty', () => {
 describe('stahniOverpass (mock API)', () => {
   afterEach(() => vi.unstubAllGlobals())
 
+  /** Nejmenší platný export — jeden objekt, ať prázdno zůstane vyhrazené pojistce níž. */
+  const RAW = JSON.stringify({
+    osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' },
+    elements: [{ type: 'node', id: 1, lat: 50.7, lon: 15.4, tags: { tourism: 'alpine_hut', name: 'Zkušební bouda' } }],
+  })
+  const PRAZDNY = JSON.stringify({ osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' }, elements: [] })
+  /** Spánek se v testech jen zaznamenává — čekat 30 s doopravdy nechceme. */
+  const spanekSpy = () => {
+    const cekani: number[] = []
+    return { cekani, spanek: async (ms: number) => void cekani.push(ms) }
+  }
+
   it('POSTuje dotaz jako data= a vrací surový text exportu i použitou instanci', async () => {
-    const raw = JSON.stringify({ osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' }, elements: [] })
-    const fetchMock = vi.fn().mockResolvedValue(new Response(raw, { status: 200 }))
+    const fetchMock = vi.fn().mockResolvedValue(new Response(RAW, { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
     await expect(stahniOverpass(['https://overpass.example/api/interpreter'], overpassDotaz('CZ'))).resolves.toEqual({
-      raw,
+      raw: RAW,
       api: 'https://overpass.example/api/interpreter',
     })
     const [url, init] = fetchMock.mock.calls[0]
@@ -301,28 +312,71 @@ describe('stahniOverpass (mock API)', () => {
   })
 
   it('rate limit první instance → fallback na zrcadlo (přesně scénář GitHub Actions runnerů)', async () => {
-    const raw = JSON.stringify({ osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' }, elements: [] })
     const fetchMock = vi
       .fn()
       .mockResolvedValueOnce(new Response('busy', { status: 429 }))
-      .mockResolvedValueOnce(new Response(raw, { status: 200 }))
+      .mockResolvedValueOnce(new Response(RAW, { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
     await expect(stahniOverpass(['https://hlavni.example', 'https://zrcadlo.example'], overpassDotaz('CZ'))).resolves.toEqual({
-      raw,
+      raw: RAW,
       api: 'https://zrcadlo.example',
     })
     expect(fetchMock).toHaveBeenCalledTimes(2)
   })
 
-  it('selhání všech instancí (HTTP, síť i chybová HTML stránka) dává souhrnnou chybu', async () => {
+  it('selhání všech instancí v jediném kole (HTTP, síť i chybová HTML stránka) dává souhrnnou chybu', async () => {
     const fetchMock = vi
       .fn()
       .mockResolvedValueOnce(new Response('busy', { status: 429 }))
       .mockRejectedValueOnce(new TypeError('fetch failed'))
       .mockResolvedValueOnce(new Response('<html>rate limited</html>', { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
-    await expect(stahniOverpass(['https://a.example', 'https://b.example', 'https://c.example'], overpassDotaz('CZ'))).rejects.toThrow(
-      /Všechny Overpass instance selhaly:[\s\S]*a\.example: HTTP 429[\s\S]*b\.example: fetch failed[\s\S]*c\.example.*validní JSON/,
+    await expect(
+      stahniOverpass(['https://a.example', 'https://b.example', 'https://c.example'], overpassDotaz('CZ'), { kola: 1 }),
+    ).rejects.toThrow(
+      /Všechny Overpass instance selhaly:[\s\S]*a\.example \(kolo 1\/1\): HTTP 429[\s\S]*b\.example \(kolo 1\/1\): fetch failed[\s\S]*c\.example.*validní JSON/,
     )
+  })
+
+  // Přesně scénář z 28. 7. 2026: obě instance vrátily 504 ve stejné vteřině
+  // a běh DATA-01 pro Jizerské hory skončil. 504 je „mám nával", ne „špatný
+  // dotaz" — po pauze se to zpravidla stáhne napodruhé.
+  it('504 ze všech instancí → počká a projde je znovu (kolo 2 uspěje)', async () => {
+    const { cekani, spanek } = spanekSpy()
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(new Response('too busy', { status: 504 }))
+      .mockResolvedValueOnce(new Response('too busy', { status: 504 }))
+      .mockResolvedValueOnce(new Response(RAW, { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+    await expect(
+      stahniOverpass(['https://a.example', 'https://b.example'], overpassDotaz('CZ'), { pauzy: [30_000, 90_000], spanek }),
+    ).resolves.toEqual({ raw: RAW, api: 'https://a.example' })
+    expect(fetchMock).toHaveBeenCalledTimes(3)
+    expect(cekani).toEqual([30_000]) // jedna pauza: po prvním neúspěšném kole
+  })
+
+  it('vyčerpaná kola nesou v chybě číslo kola a délky pauz rostou', async () => {
+    const { cekani, spanek } = spanekSpy()
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('too busy', { status: 504 })))
+    await expect(
+      stahniOverpass(['https://a.example'], overpassDotaz('CZ'), { kola: 3, pauzy: [30_000, 90_000], spanek }),
+    ).rejects.toThrow(/kolo 3\/3\): HTTP 504 \(přetížená instance\)/)
+    expect(cekani).toEqual([30_000, 90_000])
+  })
+
+  // Regionální zrcadlo (jen Švýcarsko, jen Britské ostrovy…) odpoví na dotaz
+  // mimo svůj výřez HTTP 200 a prázdným seznamem. Bez pojistky by se uložil
+  // prázdný export a běh by hlásil „0 nových kandidátů" jako úspěch.
+  it('prázdná odpověď je selhání instance — a `povolitPrazdno` ji přijme', async () => {
+    const { spanek } = spanekSpy()
+    // Tělo Response se dá přečíst jen jednou — každý pokus dostane vlastní.
+    vi.stubGlobal('fetch', vi.fn().mockImplementation(async () => new Response(PRAZDNY, { status: 200 })))
+    await expect(stahniOverpass(['https://regionalni.example'], overpassDotaz('CZ'), { kola: 1, spanek })).rejects.toThrow(
+      /0 objektů — instance nejspíš nemá celosvětová data/,
+    )
+    await expect(
+      stahniOverpass(['https://regionalni.example'], overpassDotaz('CZ'), { kola: 1, spanek, povolitPrazdno: true }),
+    ).resolves.toEqual({ raw: PRAZDNY, api: 'https://regionalni.example' })
   })
 })
