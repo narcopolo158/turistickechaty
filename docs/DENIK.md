@@ -50,6 +50,24 @@ kde byl. Projeví se příštím během DATA-28.
 
 330 testů (+4), kontrola, lint i tsc čisté.
 
+**Dodatek 29 (týž den, Michalova předloha): ikona rozhledny překreslena podle
+legendy českých turistických map.** Michal poslal srovnávací tabulku značek
+(SHOCart · SmartMaps · KČT dříve/aktuální · GOL · VKÚ · Kompass) se zadáním
+vyjít z ní. Vyplatilo se řádek zvětšit a podívat se pořádně: **ve všech těch
+klíčích je rozhledna táž věc — štíhlá věž se špičatou stříškou, ochozem
+a rozšířenou patou.** Moje první kresba měla rozkročené nohy jako příhradový
+stožár, což je jiná značka; kdo zná mapu, tomu by to skřípalo. Překresleno na
+tvar z legendy. Občerstvení: SHOCart je kreslí jako **půllitr** („bufet a jiné
+občerstvení"), KČT jako stolek — vzat půllitr, protože při 16 px je čitelný,
+kdežto stolek se rozpadne na skvrnu (opět ověřeno renderem 14–40 px vedle sebe,
+ne odhadem).
+**Dvě varianty podle místa:** do **mapy a katalogu** jde sama věž — drží tvar
+i ve 14 px a v katalogovém řádku stejně vedle stojí služba ☕, takže by se
+šálek opakoval; na **profil** jde věž + půllitr, tam má ikona 17 px a nese
+celý význam typu i bez okolních značek. Marker je věž bíle v modrém kolečku,
+tedy táž navigační vrstva jako chaty, jen s vlastním tvarem.
+330 testů, kontrola, lint i tsc čisté.
+
 **Otázky pro Michala:** (pokud jsou — jinak vynechat)
 ```
 

@@ -219,7 +219,7 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
                   <div className="zap-fact" key={f.k}>
                     <span className="k">{f.k}</span>
                     <span className="v">
-                      {f.k === 'Typ' && f.v.startsWith('Rozhledna') && <IkonaRozhledna size={16} />}
+                      {f.k === 'Typ' && f.v.startsWith('Rozhledna') && <IkonaRozhledna size={17} varianta="vez-obcerstveni" />}
                       {f.v}
                     </span>
                   </div>
