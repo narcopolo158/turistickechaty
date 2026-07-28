@@ -1,6 +1,8 @@
 import type { CollectionConfig } from 'payload'
 import { APIError } from 'payload'
 
+import { revalidujPoSmazani, revalidujPoZmene } from '../hooks/revalidace'
+
 import { overeni } from '../fields/overeni'
 
 /**
@@ -59,6 +61,9 @@ export const Razitka: CollectionConfig = {
         return data
       },
     ],
+    // Publikace razítka mění razítkovník, katalog i vitrínu — obnovit hned.
+    afterChange: [revalidujPoZmene],
+    afterDelete: [revalidujPoSmazani],
   },
   fields: [
     {

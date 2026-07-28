@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { APIError } from 'payload'
 
 import { overeni } from '../fields/overeni'
+import { revalidujPoSmazani, revalidujPoZmene } from '../hooks/revalidace'
 
 /**
  * Fotka — každá nese autora, licenci a zdrojové URL (plán kap. 7).
@@ -32,6 +33,9 @@ export const Fotky: CollectionConfig = {
         return data
       },
     ],
+    // Schválení komunitní fotky mění přehledy — obnovit je hned (ne až za 10 min).
+    afterChange: [revalidujPoZmene],
+    afterDelete: [revalidujPoSmazani],
   },
   upload: {
     mimeTypes: ['image/*'],

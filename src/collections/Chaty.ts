@@ -4,6 +4,7 @@ import { verejneJenPublikovane } from '../access/verejneCteni'
 import { overeni } from '../fields/overeni'
 import { slugField } from '../fields/slug'
 import { ANO_NE_OPTIONS, OBTIZNOST_OPTIONS, ZEME_OPTIONS, ZNACENI_OPTIONS } from './spolecne'
+import { revalidujPoSmazani, revalidujPoZmene } from '../hooks/revalidace'
 
 const sluzba = (name: string, label: string) => ({
   name,
@@ -33,6 +34,11 @@ export const Chaty: CollectionConfig = {
   },
   access: { read: verejneJenPublikovane },
   versions: { drafts: true },
+  hooks: {
+    // Úprava profilu mění katalog, homepage i stránku pohoří.
+    afterChange: [revalidujPoZmene],
+    afterDelete: [revalidujPoSmazani],
+  },
   fields: [
     { name: 'nazev', type: 'text', label: 'Název', required: true },
     slugField(),

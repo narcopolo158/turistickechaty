@@ -356,6 +356,25 @@ DB po seedu"**, který příští selhání pojmenuje místo hádání. Konvence
 k zapamatování: **sandbox umí Postgres — CI i produkční běh jde
 reprodukovat, měřit místo odhadovat.**
 
+**Dodatek 16 (týž den): PRVNÍ KOMUNITNÍ FOTKA NA WEBU — a obnova
+přehledů po schválení.** Michal nahrál přes /prispet fotku Labské boudy,
+schválil ji v adminu a je hero na profilu — **celá smyčka podání →
+čekárna → schválení → publikace funguje naostro**. Jeho nález: v katalogu
+zůstala stará fotka. Příčina: profil chaty se renderuje na vyžádání
+(vidí změnu hned), kdežto přehledy jsou statické s `revalidate`
+(katalog a razítkovník 10 min, homepage a pohoří hodinu) — čekaly by na
+vypršení. **Řešení: on-demand revalidace** — `src/hooks/revalidace.ts`
++ `afterChange`/`afterDelete` na kolekcích Fotky, Razitka a Chaty:
+redakční zásah obnoví souhrnné stránky (/, /chaty, /razitkovnik,
+/zanikle, /cesko/krkonose, /prispet) i dotčený profil. Poctivost
+k prostředí: `revalidatePath` existuje jen v Next runtime, proto
+dynamický import a spolknutá chyba — seed ani CLI skripty kvůli obnově
+cache NIKDY nespadnou (test to hlídá). **Ověřeno end-to-end lokálně**
+(Postgres v sandboxu + build + `next start`): podání fotky Labské boudy
+se v katalogu PŘED schválením neobjeví, po schválení přes API (PATCH
+v Next runtime, tedy jako z adminu) je nová fotka v katalogu OKAMŽITĚ,
+bez čekání na revalidaci. Testy +3 (286 celkem), tsc/lint/kontrola čisté.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh
