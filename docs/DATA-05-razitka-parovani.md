@@ -20,7 +20,7 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - **Tetřeví Boudy** → [„Tetřev"](http://www.razitkuj.cz/misto-tetrev/1) · *částečná shoda (název se liší!)*
 - **Vosecká bouda** → [„Vosecká bouda"](http://www.razitkuj.cz/misto-vosecka-bouda/1)
 
-## Nové shody KE KONTROLE — nestahují se, dokud je redakce nepotvrdí (32 shod)
+## Nové shody KE KONTROLE — nestahují se, dokud je redakce nepotvrdí (30 shod)
 
 Částečná shoda znamená, že se názvy liší (jeden obsahuje druhý) — tam bývají cizí objekty: „Portáš" není „Portášky", „Chatka AKT na Pietraszonce" nese cizí místní jméno. Kontrola = otevřít detail razítka a posoudit otisk/kontext.
 
@@ -37,7 +37,6 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - **Chata Pod Studničnou** → [„Chata Pod Studničnou"](http://www.razitkuj.cz/9792_chata-pod-studnicnou)
 - **Chata Sedmidolí** → [„Horská chata Sedmidolí"](http://www.razitkuj.cz/9097_horska-chata-sedmidoli) · *částečná shoda (název se liší!)*
 - **Chata Studenov** → [„Chata Studenov"](http://www.razitkuj.cz/6098_chata-studenov)
-- **Chatka AKT Towarzystwa Bażynowego** → [„Chatka AKT na Pietraszonce"](http://www.razitkuj.cz/misto-chatka-akt-na-pietraszonce/1) · *částečná shoda (název se liší!)*
 - **Jelenka** → [„Horská bouda Jelenka"](http://www.razitkuj.cz/misto-horska-bouda-jelenka/1)
 - **Kolínská bouda** → [„Kolínská bouda"](http://www.razitkuj.cz/misto-kolinska-bouda/1)
 - **Lysečinská bouda** → [„Lysečinská bouda"](http://www.razitkuj.cz/113_lysecinska-bouda)
@@ -47,7 +46,6 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - **Moravská bouda** → [„Moravská bouda"](http://www.razitkuj.cz/9744_moravska-bouda)
 - **Petrova bouda** → [„Petrova bouda"](http://www.razitkuj.cz/9743_petrova-bouda)
 - **Pomezní bouda** → [„Pomezní bouda"](http://www.razitkuj.cz/misto-pomezni-bouda/1)
-- **Portášky** → [„Portáš"](http://www.razitkuj.cz/misto-portas/1) · *částečná shoda (název se liší!)*
 - **Portášky** → [„Portášky"](http://www.razitkuj.cz/misto-portasky/1)
 - **Pražská bouda** → [„Pražská bouda"](http://www.razitkuj.cz/misto-prazska-bouda/1)
 - **Richtrovy boudy** → [„Richtrovy Boudy"](http://www.razitkuj.cz/misto-richtrovy-boudy/1)
@@ -57,9 +55,11 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - **Vrbatova bouda** → [„Vrbatova bouda"](http://www.razitkuj.cz/misto-vrbatova-bouda/1)
 - **Výrovka** → [„Výrovka"](http://www.razitkuj.cz/misto-vyrovka/1)
 
-## Vyřazené páry — redakce prokázala cizí objekt (0)
+## Vyřazené páry — redakce prokázala cizí objekt (2)
+- Chatka AKT Towarzystwa Bażynowego × [„Chatka AKT na Pietraszonce"](http://www.razitkuj.cz/misto-chatka-akt-na-pietraszonce/1)
+- Portášky × [„Portáš"](http://www.razitkuj.cz/misto-portas/1)
 
-## Naše chaty BEZ nalezeného razítka (30)
+## Naše chaty BEZ nalezeného razítka (31)
 - Chata Amor (`amor`)
 - Chata Betyna (`betyna`)
 - Černá bouda (`cerna-bouda`)
@@ -68,6 +68,7 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - Chata Rozhled (`chata-rozhled`)
 - Chata Smetánka (`chata-smetanka`)
 - Chata U Jirky (`chata-u-jirky`)
+- Chatka AKT Towarzystwa Bażynowego (`chatka-akt-towarzystwa-bazynowego`)
 - Chatka Puchatka (`chatka-puchatka`)
 - Chatka Smogorniak (`chatka-smogorniak`)
 - Chatka Wielkanocna (`chatka-wielkanocna`)

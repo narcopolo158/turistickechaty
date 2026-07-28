@@ -94,4 +94,16 @@ potvrzene:
       rozsah 16 spárovaných chat schválil Michal v chatu 21. 7. 2026
       (deník: razítka fáze 3b/3c); otisky staženy 2026-07-21
 
-nesouvisi: []
+nesouvisi:
+  - slug: portasky
+    url: http://www.razitkuj.cz/misto-portas/1
+    poznamka: >-
+      potvrdil Michal 28. 7. 2026: Portáš je horská chata/hotel na hřebeni
+      Javorníků — cizí objekt, ne naše Portášky (Velká Úpa)
+  - slug: chatka-akt-towarzystwa-bazynowego
+    url: http://www.razitkuj.cz/misto-chatka-akt-na-pietraszonce/1
+    poznamka: >-
+      Chatka AKT na Pietraszonce = Istebna, Beskid Śląski (spolek AKT Watra
+      Gliwice) — shodně titulky akt.gliwice.pl, pl.wikipedia a slaskie.travel,
+      checked 2026-07-28; naše chatka AKT Towarzystwa Bażynowego je krkonošská
+      (GPS z OSM) — cizí objekt, shoda vznikla přes alias „Chatka AKT"
