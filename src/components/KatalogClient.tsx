@@ -206,7 +206,12 @@ export default function KatalogClient({ index }: { index: IndexChata[] }) {
               const telo = (
                 <>
                   <span className="ktl-karta-linka" aria-hidden="true" />
-                  <span className="ktl-karta-thumb" aria-hidden="true">
+                  {/* Thumb: hero fotka profilu; bez ní silueta (rozhodnutí Michala 28. 7. 2026 — handoff měl siluetu jako placeholder). */}
+                  <span className={`ktl-karta-thumb${ch.heroUrl ? ' ktl-karta-thumb--foto' : ''}`} aria-hidden="true">
+                    {ch.heroUrl && (
+                      // eslint-disable-next-line @next/next/no-img-element -- miniatura z Payload (nahled 480×320), next/image nad lokálním uploadem nepřidá nic
+                      <img className="ktl-thumb-foto" src={ch.heroUrl} alt="" loading="lazy" decoding="async" />
+                    )}
                     {ch.razitko && <MiniOtisk ch={ch} />}
                   </span>
                   <span className="ktl-karta-telo">

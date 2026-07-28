@@ -37,6 +37,13 @@ export type IndexChata = {
   /** Sken otisku razítka (miniatura na kartě katalogu) — null bez skenu (fallback stylizované SVG). */
   otiskUrl: string | null
   otiskAlt: string | null
+  /**
+   * Hero fotka profilu (typ `soucasna`, velikost `nahled` 480×320) pro thumb
+   * karty katalogu — null bez hero (fallback silueta dle handoffu; rozhodnutí
+   * Michala 28. 7. 2026: thumb = fotka, silueta jen když fotka není).
+   */
+  heroUrl: string | null
+  heroAlt: string | null
   /** Má turistickou známku (katalog DATA-10, verified:false se zdrojem). */
   znamka: boolean
   /** Nejnovější `checked` napříč bloky ověření profilu (ISO datum), null = nikdy. */

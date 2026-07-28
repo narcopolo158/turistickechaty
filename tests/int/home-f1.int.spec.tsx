@@ -26,6 +26,8 @@ const chata = (prepis: Partial<IndexChata>): IndexChata => ({
   obcerstveni: null,
   razitko: false,
   otiskUrl: null,
+  heroUrl: null,
+  heroAlt: null,
   otiskAlt: null,
   znamka: false,
   checked: null,

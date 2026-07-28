@@ -43,6 +43,8 @@ const chata = (prepis: Partial<IndexChata>): IndexChata => ({
   obcerstveni: null,
   razitko: false,
   otiskUrl: null,
+  heroUrl: null,
+  heroAlt: null,
   otiskAlt: null,
   znamka: false,
   checked: null,
@@ -74,6 +76,25 @@ describe('KatalogClient', () => {
     expect(lucni.getAttribute('href')).toBe('/cesko/krkonose/lucni-bouda')
     // mini-otisk jen u chaty s razítkem (bez skenu stylizované SVG)
     expect(lucni.querySelector('.ktl-otisk svg')).not.toBeNull()
+  })
+
+  it('thumb karty nese hero fotku profilu; bez hero zůstává silueta (žádný img)', () => {
+    const { container } = render(
+      <KatalogClient
+        index={[
+          chata({ slug: 'a', nazev: 'S fotkou', heroUrl: '/media/fotky/hero-480.jpg', heroAlt: 'S fotkou — hero' }),
+          chata({ slug: 'b', nazev: 'Bez fotky' }),
+        ]}
+      />,
+    )
+    const fotky = container.querySelectorAll('img.ktl-thumb-foto')
+    expect(fotky).toHaveLength(1) // jen karta s heroUrl
+    expect(fotky[0].getAttribute('src')).toBe('/media/fotky/hero-480.jpg')
+    expect(fotky[0].getAttribute('loading')).toBe('lazy')
+    // fotka je dekorativní (název je textem karty) — alt prázdný, thumb aria-hidden
+    expect(fotky[0].getAttribute('alt')).toBe('')
+    expect(container.querySelectorAll('.ktl-karta-thumb--foto')).toHaveLength(1)
+    expect(container.querySelectorAll('.ktl-karta-thumb')).toHaveLength(2) // silueta zůstává oběma jako podklad
   })
 
   it('službový chip filtruje jen doložené „ano" a zapisuje stav do URL (pushState)', () => {

@@ -226,6 +226,10 @@ export async function getIndexChat(): Promise<{
     const razitka = (chata.razitka?.docs ?? []).filter((r): r is Razitka => typeof r === 'object')
     const razitko = razitka.find((r) => r.stav === 'k-dispozici') ?? razitka[0] ?? null
     const otisk = razitko && typeof razitko.otisk === 'object' ? razitko.otisk : null
+    // Hero pro thumb karty: týž výběr jako profil (první fotka typu
+    // `soucasna` s url); miniatura `nahled` (480×320), fallback plná fotka.
+    const fotkyChaty = (chata.fotky?.docs ?? []).filter((f): f is Fotka => typeof f === 'object')
+    const hero = fotkyChaty.find((f) => f.typ === 'soucasna' && f.url) ?? null
     index.push({
       slug: chata.slug!,
       nazev: chata.nazev,
@@ -243,6 +247,8 @@ export async function getIndexChat(): Promise<{
       razitko: razitka.length > 0,
       otiskUrl: otisk?.url ?? null,
       otiskAlt: otisk?.alt ?? null,
+      heroUrl: hero ? (hero.sizes?.nahled?.url ?? hero.url ?? null) : null,
+      heroAlt: hero?.alt ?? null,
       znamka: znamkyVizitkyChaty(chata.slug!).some((p) => p.system === 'znamka'),
       checked: overeni?.checked ?? null,
       verified: overeni?.verified ?? false,

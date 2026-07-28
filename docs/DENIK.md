@@ -83,6 +83,22 @@ Barborka (51), + znovu posoudit Kochanówku (35), Okraj (24) a Loveckou
 (15 — pozor jmenovci); Rezek, Rozhled, U Jirky, Friesovky, Sedmidolí,
 U Kotle, Zákoutí, Amor, Na Muldě mají 0 kandidátů → chataři se svolením.
 
+**Dodatek 3 (týž den, Michal: „na přehledu chaty nejsou vidět fotky,
+homepage vypadá chudě oproti návrhu"):** (1) **Katalog: thumb karet nese
+hero fotku profilu** — handoff měl „silueta thumb" (a u karet středisek
+vzor „chybí foto → silueta"), Michal rozhodl: thumb = fotka, silueta jen
+fallback. Index chat rozšířen o heroUrl/heroAlt (týž výběr jako hero
+profilu — první fotka typu soucasna; velikost `nahled` 480×320, fallback
+plná), karta s fotkou má pásek 112px místo 68px (vědomá odchylka od
+prototypu — silueta byla nízká schválně, fotka potřebuje vzduch), fotka
+dekorativní (alt prázdný, název je textem karty), lazy loading. Test
+komponenty +1 (fotka jen u karty s heroUrl, silueta zůstává), mocky
+IndexChata doplněny, 30/30 int, tsc i lint čisté. (2) **Homepage:
+vysvětleno — není hotová, je v půlce.** 1. průchod F1c (countery,
+kalendárium, Z průvodce, print) je nasazený; hero koláž „sběratelský
+stůl", dřevěná rozcestníková CTA, poster band, pohoří grid a „Namátkou"
+= 2. průchod (plán session 3/4 čtyřbloku) — další krok.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh
