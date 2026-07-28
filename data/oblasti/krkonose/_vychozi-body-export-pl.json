@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-06-12T12:14:17Z",
-    "timestamp_areas_base": "2026-06-12T12:14:17Z",
+    "timestamp_osm_base": "2026-07-02T16:51:45Z",
+    "timestamp_areas_base": "2026-07-02T16:51:45Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -174,6 +174,18 @@
 },
 {
   "type": "node",
+  "id": 199410578,
+  "lat": 50.8319410,
+  "lon": 15.5576590,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba - Parking Szklarka",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
   "id": 255229804,
   "lat": 50.7942433,
   "lon": 15.5145085,
@@ -181,6 +193,18 @@
     "aerialway": "station",
     "public_transport": "station",
     "url": "https://photos.app.goo.gl/UKHPi4HWdK8Rs6zF7"
+  }
+},
+{
+  "type": "node",
+  "id": 258722531,
+  "lat": 50.8341657,
+  "lon": 15.6833829,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Kościół",
+    "public_transport": "stop_position"
   }
 },
 {
@@ -235,6 +259,18 @@
   "lon": 15.5042018,
   "tags": {
     "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 303032493,
+  "lat": 50.8056457,
+  "lon": 15.8192981,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Jeleniogórska",
+    "public_transport": "stop_position"
   }
 },
 {
@@ -647,6 +683,18 @@
     "url": "https://polska-org.pl/504486,Sosnowka.html",
     "wikidata": "Q7563896",
     "wikipedia": "pl:Sosnówka (powiat karkonoski)"
+  }
+},
+{
+  "type": "node",
+  "id": 500319955,
+  "lat": 50.8217224,
+  "lon": 15.6844311,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Ośrodek Zdrowia",
+    "public_transport": "stop_position"
   }
 },
 {
@@ -1101,6 +1149,66 @@
 },
 {
   "type": "node",
+  "id": 762879429,
+  "lat": 50.7082217,
+  "lon": 15.9961043,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Karkonoska - Ośrodek Zdrowia",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 762879547,
+  "lat": 50.7081684,
+  "lon": 15.9959390,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Karkonoska - Ośrodek Zdrowia",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 801288161,
+  "lat": 50.8121428,
+  "lon": 15.8121371,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kostrzyca Jeleniogórska/Karpacka",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 801288726,
+  "lat": 50.7682258,
+  "lon": 15.8514541,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Podgórze / Pętla",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
   "id": 907975411,
   "lat": 50.8266625,
   "lon": 15.4970629,
@@ -1150,6 +1258,24 @@
     "opening_hours": "Mo-Su 09:00-16:30",
     "public_transport": "station",
     "website": "https://szrenicaskiarena.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 1373119954,
+  "lat": 50.8212353,
+  "lon": 15.6570204,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Zachełmie",
+    "operator": "MZK Jelenia Góra",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "type": "last stop"
   }
 },
 {
@@ -1300,6 +1426,38 @@
 },
 {
   "type": "node",
+  "id": 1841698963,
+  "lat": 50.7002336,
+  "lon": 15.9031706,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Opawa nr 81 (nż)",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1841739251,
+  "lat": 50.7001224,
+  "lon": 15.8935693,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Opawa nr 28 (pętla)",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
   "id": 2136783800,
   "lat": 50.7825021,
   "lon": 15.7616497,
@@ -1417,6 +1575,18 @@
 },
 {
   "type": "node",
+  "id": 2241988442,
+  "lat": 50.8185010,
+  "lon": 15.6792479,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Górny",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
   "id": 2270778851,
   "lat": 50.7442392,
   "lon": 15.9900281,
@@ -1481,6 +1651,116 @@
 },
 {
   "type": "node",
+  "id": 2843114525,
+  "lat": 50.6087937,
+  "lon": 16.0159309,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Okrzeszyn granica n/ż",
+    "passenger_information_display": "no",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2843114526,
+  "lat": 50.6197819,
+  "lon": 16.0295191,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Okrzeszyn nż",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2843114527,
+  "lat": 50.6127367,
+  "lon": 16.0259729,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Okrzeszyn",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2843114529,
+  "lat": 50.6269497,
+  "lon": 16.0358550,
+  "tags": {
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Uniemyśl I",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2843114530,
+  "lat": 50.6299287,
+  "lon": 16.0434349,
+  "tags": {
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Uniemyśl",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2944449914,
+  "lat": 50.8600395,
+  "lon": 15.7889014,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Łomnica Papiernia",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 2947983052,
+  "lat": 50.8124102,
+  "lon": 15.8117769,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kostrzyca Jeleniogórska/Karpacka",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 2956095364,
+  "lat": 50.8120357,
+  "lon": 15.6739635,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Przesieka Olimpia",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
   "id": 2961951749,
   "lat": 50.8262014,
   "lon": 15.8210807,
@@ -1499,6 +1779,257 @@
     "url": "https://polska-org.pl/504465,Bukowiec.html",
     "wikidata": "Q4987079",
     "wikipedia": "pl:Bukowiec (powiat karkonoski)"
+  }
+},
+{
+  "type": "node",
+  "id": 3029758288,
+  "lat": 50.8296519,
+  "lon": 15.5435520,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Szklarska Poręba Średnia (84)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3037406001,
+  "lat": 50.8330810,
+  "lon": 15.5212541,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Armii Krajowej, przychodnia zdrowia",
+    "name:signed": "no",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3037406002,
+  "lat": 50.8486285,
+  "lon": 15.5334117,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Szklarska Poręba Zakręt Śmierci",
+    "note:pl": "przystanek na żadanie",
+    "operator": "PKS Tour Sp. z o.o. Jelenia Góra",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "source": "survey",
+    "tactile_paving": "no",
+    "waste_basket": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3037463700,
+  "lat": 50.8417021,
+  "lon": 15.5526030,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Piastowska, kościół",
+    "public_transport": "platform",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3037463701,
+  "lat": 50.8419106,
+  "lon": 15.5227060,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Górna, skrz. z Armii Krajowej",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 3037463702,
+  "lat": 50.8425634,
+  "lon": 15.5292835,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "ul. Górna 21, Rzemieślnik",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 3037463704,
+  "lat": 50.8430906,
+  "lon": 15.5387029,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Górna 33, skrzyżowanie z ul. Sanatoryjną",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 3038180723,
+  "lat": 50.8191793,
+  "lon": 15.4369312,
+  "tags": {
+    "bus": "yes",
+    "check_date:shelter": "2025-11-10",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba I - Rest. Bombaj (13)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3038180724,
+  "lat": 50.8225028,
+  "lon": 15.4434868,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Szklarska Poręba I - Leśniczówka (15)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3038180725,
+  "lat": 50.8146575,
+  "lon": 15.4299924,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "check_date:shelter": "2025-11-10",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba I - Bieg Piastów (11)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "route_ref": "Flixbus 1300",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3048081186,
+  "lat": 50.8232315,
+  "lon": 15.4985176,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba I - Kamieńczyk (17)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3357897903,
+  "lat": 50.8250124,
+  "lon": 15.6864301,
+  "tags": {
+    "addr:city": "Podgórzyn",
+    "addr:postcode": "58-562",
+    "addr:street": "Żołnierska",
+    "bench": "no",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Żołnierska 44a",
+    "operator": "MZK sp. z o.o. w Jeleniej Górze",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3357902431,
+  "lat": 50.8366873,
+  "lon": 15.6787902,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Sklep",
+    "operator": "PKS Tour Jelenia Góra sp. z o.o.",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3357904901,
+  "lat": 50.8324016,
+  "lon": 15.6814408,
+  "tags": {
+    "bench": "no",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Żołnierska",
+    "operator": "MZK sp. z o.o. w Jeleniej Górze"
+  }
+},
+{
+  "type": "node",
+  "id": 3357905883,
+  "lat": 50.8369370,
+  "lon": 15.6796578,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Dolny",
+    "operator": "MZK sp. z o.o. w Jeleniej Górze",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3357909312,
+  "lat": 50.8282121,
+  "lon": 15.6841879,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Podgórzyn - Przedszkole",
+    "operator": "PKS Tour Jelenia Góra sp. z o.o.",
+    "public_transport": "stop_position"
   }
 },
 {
@@ -1557,6 +2088,301 @@
 },
 {
   "type": "node",
+  "id": 3418326146,
+  "lat": 50.7937262,
+  "lon": 15.6919754,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Borowice",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 3442907867,
+  "lat": 50.8297076,
+  "lon": 15.7874402,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mysłakowice Urząd Gminy",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3444793891,
+  "lat": 50.7842285,
+  "lon": 16.0224412,
+  "tags": {
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "name": "Stanowisko 1",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3444793892,
+  "lat": 50.7842832,
+  "lon": 16.0224464,
+  "tags": {
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "name": "Stanowisko 2",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3444795193,
+  "lat": 50.7843324,
+  "lon": 16.0224510,
+  "tags": {
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "name": "Stanowisko 3",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3444795194,
+  "lat": 50.7843788,
+  "lon": 16.0224554,
+  "tags": {
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "name": "Stanowisko 4",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3444795195,
+  "lat": 50.7844258,
+  "lon": 16.0224599,
+  "tags": {
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "name": "Stanowisko 5",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3444795196,
+  "lat": 50.7844787,
+  "lon": 16.0224649,
+  "tags": {
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "name": "Stanowisko 6",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3444795197,
+  "lat": 50.7845248,
+  "lon": 16.0224693,
+  "tags": {
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "name": "Stanowisko 7",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3449501234,
+  "lat": 50.8086744,
+  "lon": 15.7618713,
+  "tags": {
+    "amenity": "shelter",
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Miłków kościół",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "shelter_type": "public_transport"
+  }
+},
+{
+  "type": "node",
+  "id": 3453872364,
+  "lat": 50.8118371,
+  "lon": 15.7219711,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "150",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3460297970,
+  "lat": 50.8192644,
+  "lon": 15.8071991,
+  "tags": {
+    "amenity": "shelter",
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Kostrzyca Jeleniogórska/Kościuszki",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "shelter_type": "public_transport"
+  }
+},
+{
+  "type": "node",
+  "id": 3460310696,
+  "lat": 50.8193638,
+  "lon": 15.8074723,
+  "tags": {
+    "amenity": "shelter",
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Kostrzyca Jeleniogórska/Kościuszki",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "shelter_type": "public_transport"
+  }
+},
+{
+  "type": "node",
+  "id": 3462141814,
+  "lat": 50.8121195,
+  "lon": 15.8120711,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kostrzyca Jeleniogórska/Karpacka",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3462141818,
+  "lat": 50.8124390,
+  "lon": 15.8118474,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kostrzyca Jeleniogórska/Karpacka",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3671872573,
+  "lat": 50.7833924,
+  "lon": 16.0362043,
+  "tags": {
+    "alt_name": "Aleja Wojska Polskiego 36",
+    "bench": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Aleja Wojska Polskiego",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3671872574,
+  "lat": 50.7838100,
+  "lon": 16.0308637,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Spacerowa Intermarche",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3671872575,
+  "lat": 50.7807741,
+  "lon": 16.0275259,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Staszica 11",
+    "old_name": "Fornalskiej",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3671872576,
+  "lat": 50.7913702,
+  "lon": 16.0337145,
+  "tags": {
+    "alt_name": "Bohaterów Getta (Leśniczówka)",
+    "bench": "no",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Leśniczówka",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3671872577,
+  "lat": 50.8025063,
+  "lon": 16.0155349,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Osiedle Antonówka",
+    "network": "PKS Kamienna Góra",
+    "operator": "PKS Kamienna Góra",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
   "id": 3700951316,
   "lat": 50.7727317,
   "lon": 15.7378476,
@@ -1575,6 +2401,189 @@
     "aerialway": "station",
     "name": "Kolej linowa Biały Jar - stacja górna",
     "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3707781121,
+  "lat": 50.8263573,
+  "lon": 15.6612194,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Zachełmie Sklep",
+    "operator": "MZK Jelenia Góra",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3707785611,
+  "lat": 50.8356499,
+  "lon": 15.6636646,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podzamcze",
+    "operator": "MZK sp. z o.o. w Jeleniej Górze",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 3737720391,
+  "lat": 50.7193293,
+  "lon": 16.0454240,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Lipienica nr 24 (nż)",
+    "network": "PKS Kamienna Góra",
+    "note": "Dawna nazwa przystanku: \"Lipienica - Szkoła\"",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3737720392,
+  "lat": 50.7133520,
+  "lon": 16.0349843,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Lipienica - pętla końcowa",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3754543726,
+  "lat": 50.6973864,
+  "lon": 15.9535598,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szczepanów Dolny",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3754543734,
+  "lat": 50.6978258,
+  "lon": 15.9545275,
+  "tags": {
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szczepanów Dolny",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3926046688,
+  "lat": 50.7735856,
+  "lon": 15.7286809,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Karpacz, Pegaz",
+    "name:de": "Krummhübel, Pegaz",
+    "name:pl": "Karpacz, Pegaz",
+    "operator": "Karpacz Bus",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3928576462,
+  "lat": 50.7777797,
+  "lon": 16.0405643,
+  "tags": {
+    "alt_name": "Kamienna Góra Zalew",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kościuszki Zalew",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 3928576659,
+  "lat": 50.7776900,
+  "lon": 16.0404569,
+  "tags": {
+    "alt_name": "Kamienna Góra Zalew",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kościuszki Zalew",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 4011477209,
+  "lat": 50.8338027,
+  "lon": 15.7070602,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Marczyce",
+    "operator": "PKS Tour Jelenia Góra sp. z o.o.",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 4011477270,
+  "lat": 50.8345698,
+  "lon": 15.7092746,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Marczyce",
+    "operator": "PKS Tour Jelenia Góra sp. z o.o.",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 4011478754,
+  "lat": 50.8223209,
+  "lon": 15.7211155,
+  "tags": {
+    "alt_name": "Sosnówka Dolna",
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Sosnówka Kościół",
+    "shelter": "yes"
   }
 },
 {
@@ -1605,12 +2614,235 @@
 },
 {
   "type": "node",
+  "id": 4021659989,
+  "lat": 50.8086549,
+  "lon": 15.7620140,
+  "tags": {
+    "amenity": "shelter",
+    "bench": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Miłków kościół",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "shelter_type": "public_transport"
+  }
+},
+{
+  "type": "node",
+  "id": 4021660017,
+  "lat": 50.8151880,
+  "lon": 15.7554892,
+  "tags": {
+    "amenity": "shelter",
+    "bench": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Głębock skrzyżowanie",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "shelter_type": "public_transport"
+  }
+},
+{
+  "type": "node",
   "id": 4120849943,
   "lat": 50.7670228,
   "lon": 15.7295169,
   "tags": {
     "aerialway": "station",
     "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4199232848,
+  "lat": 50.7063007,
+  "lon": 16.0009663,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Lubawka",
+    "network": "PKS Kamienna Góra",
+    "operator": "Gmina Lubawka",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4200830554,
+  "lat": 50.7072933,
+  "lon": 15.9647611,
+  "tags": {
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Bukówka",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4200830555,
+  "lat": 50.7073493,
+  "lon": 15.9637847,
+  "tags": {
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Bukówka",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4207873717,
+  "lat": 50.7075892,
+  "lon": 15.9240579,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Opawa skrzyżowanie",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4362784403,
+  "lat": 50.7825286,
+  "lon": 16.0459598,
+  "tags": {
+    "alt_name": "Krzeszowska Os. Tkaczy Śląskich",
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kamienna Góra, ul. Krzeszowska",
+    "operator": "PKS Kamienna Góra",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "source": "survey",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4371603416,
+  "lat": 50.7334850,
+  "lon": 15.9443735,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Stara Białka skrzyżowanie",
+    "network": "PKS Kamiena Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4371603420,
+  "lat": 50.7393647,
+  "lon": 15.9135065,
+  "tags": {
+    "bench": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Paczyn - pętla końcowa",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4371603431,
+  "lat": 50.7275117,
+  "lon": 15.9510784,
+  "tags": {
+    "bench": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Paprotki nr 14",
+    "network": "PKS Kamiena Góra",
+    "operator": "Powiat Kamiennogórski",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4460874213,
+  "lat": 50.7628477,
+  "lon": 15.8672132,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Kowary, Przełęcz Kowarska",
+    "name:de": "Schmiedeberg, Schmiedeberger Pass",
+    "name:pl": "Kowary, Przełęcz Kowarska",
+    "public_transport": "platform",
+    "source": "survey",
+    "surface": "grass",
+    "tactile_paving": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4460874214,
+  "lat": 50.7630945,
+  "lon": 15.8670422,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Przełęcz Kowarska",
+    "name:de": "Schmiedeberger Pass",
+    "name:pl": "Przełęcz Kowarska",
+    "public_transport": "platform",
+    "source": "survey",
+    "surface": "grass",
+    "tactile_paving": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4461426440,
+  "lat": 50.7636262,
+  "lon": 15.8853002,
+  "tags": {
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Ogorzelec",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "source": "survey"
   }
 },
 {
@@ -1630,6 +2862,1368 @@
 },
 {
   "type": "node",
+  "id": 4607046861,
+  "lat": 50.8339716,
+  "lon": 15.6835405,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Kościół",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 4609471369,
+  "lat": 50.8370912,
+  "lon": 15.6795380,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Dolny",
+    "operator": "MZK sp. z o.o. w Jeleniej Górze",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 4802008497,
+  "lat": 50.8032125,
+  "lon": 15.6572032,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Przesieka",
+    "operator": "MZK Jelenia Góra",
+    "public_transport": "stop_position",
+    "tactile_paving": "no",
+    "train": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5399075608,
+  "lat": 50.8258390,
+  "lon": 15.5395791,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Ski Bus",
+    "public_transport": "platform",
+    "surface": "paving_stones"
+  }
+},
+{
+  "type": "node",
+  "id": 5754611029,
+  "lat": 50.7854660,
+  "lon": 16.0238855,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Trans Express",
+    "operator": "TRANS EXPRES s.c.",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5777639553,
+  "lat": 50.8593412,
+  "lon": 15.7321394,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Staniszów Dolny",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 6008380186,
+  "lat": 50.8335527,
+  "lon": 15.5090123,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Biała Dolina/Demokratów",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6387894085,
+  "lat": 50.7846515,
+  "lon": 15.9591605,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Pisarzowice WDK"
+  }
+},
+{
+  "type": "node",
+  "id": 7006589152,
+  "lat": 50.7752543,
+  "lon": 16.0352136,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Słowackiego 25",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7006589153,
+  "lat": 50.7714801,
+  "lon": 16.0310587,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Słowackiego/Śląska",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7006589154,
+  "lat": 50.7739869,
+  "lon": 16.0401735,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Cegielniana - Dino",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7006589155,
+  "lat": 50.7752853,
+  "lon": 16.0353761,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Słowackiego 25",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7006589156,
+  "lat": 50.7745502,
+  "lon": 16.0401102,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Cegielniana Dino",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7006589157,
+  "lat": 50.7850687,
+  "lon": 16.0275793,
+  "tags": {
+    "alt_name": "C.H. Kaufland",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jana Pawła II Kaufland",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7075021571,
+  "lat": 50.6981194,
+  "lon": 15.9376775,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szczepanów Górny",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7080367797,
+  "lat": 50.7858423,
+  "lon": 16.0414348,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Wałbrzyska (Mała)",
+    "network": "PKS Kamienna Góra",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7224544371,
+  "lat": 50.7833323,
+  "lon": 16.0217872,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Jeleniogórska 9",
+    "network": "Kamienna Góra",
+    "operator": "PKS Kamienna Góra",
+    "public_transport": "platform",
+    "shelter": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8038063836,
+  "lat": 50.7361577,
+  "lon": 15.9206500,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Paczyn wieś (nr 5)",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8038072774,
+  "lat": 50.7414520,
+  "lon": 15.9618181,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Stara Białka",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8038145021,
+  "lat": 50.7145046,
+  "lon": 15.9305766,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Miszkowice nr 94 - apteka",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8038155167,
+  "lat": 50.7469279,
+  "lon": 15.9826909,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Błażkowa skrzyżowanie",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8038219126,
+  "lat": 50.7184032,
+  "lon": 15.9161411,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Miszkowice - Kościół",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8038242926,
+  "lat": 50.7152302,
+  "lon": 15.9272509,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Miszkowice - Zbiornik Bukówka",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8038247459,
+  "lat": 50.7369241,
+  "lon": 15.8731460,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Jarkowice - Leśniczówka",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8038280144,
+  "lat": 50.7486085,
+  "lon": 15.8640661,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "name": "Rozdroże Kowarskie skrz.",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8038294581,
+  "lat": 50.7319027,
+  "lon": 15.8789517,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Jarkowice - Klatka (pętla)",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8038994816,
+  "lat": 50.7138894,
+  "lon": 15.9288504,
+  "tags": {
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Miszkowice - Zbiornik Bukówka",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8040302234,
+  "lat": 50.7194711,
+  "lon": 15.9037174,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Jarkowice - Małocin",
+    "network": "PKS Kamienna Góra",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8040371183,
+  "lat": 50.6892385,
+  "lon": 15.8829213,
+  "tags": {
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Niedamirów nr 67 - pętla końcowa",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8040438222,
+  "lat": 50.7106320,
+  "lon": 16.0010384,
+  "tags": {
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "name": "Lubawka (dla wysiadających)",
+    "operator": "Gmina Lubawka",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8040510600,
+  "lat": 50.6926581,
+  "lon": 16.0233922,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Lubawka - Ulanowice",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8040513280,
+  "lat": 50.7441521,
+  "lon": 15.9886544,
+  "tags": {
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Błażkowa nr 20",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8040865496,
+  "lat": 50.7652876,
+  "lon": 15.9888651,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Janiszów",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8040873862,
+  "lat": 50.7575197,
+  "lon": 15.9843670,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "yes",
+    "highway": "bus_stop",
+    "name": "Janiszów nż",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8040897745,
+  "lat": 50.7545771,
+  "lon": 15.9871464,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Janiszów II",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8040903581,
+  "lat": 50.7697223,
+  "lon": 15.9952720,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Janiszów nr 26",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8040910396,
+  "lat": 50.7630438,
+  "lon": 15.9897584,
+  "tags": {
+    "bus": "yes",
+    "check_date:shelter": "2025-09-07",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Janiszów I",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8040921353,
+  "lat": 50.7350966,
+  "lon": 15.9831421,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Błażkowa I (wieś)",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8050992269,
+  "lat": 50.7542908,
+  "lon": 16.0159353,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Przedwojów",
+    "network": "PKS Kamienna Góra",
+    "operator": "Gmina Kamienna Góra",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8051018548,
+  "lat": 50.7976225,
+  "lon": 15.9865016,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Raszów nr 52 (nż)",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8051047431,
+  "lat": 50.8057287,
+  "lon": 15.9800881,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Raszów - pętla końcowa",
+    "network": "PKS Kamienna Góra",
+    "operator": "Powiat Kamiennogórski",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8187684494,
+  "lat": 50.8355568,
+  "lon": 15.5663220,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Piechowice - Hotel Las (25)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8187751628,
+  "lat": 50.8268166,
+  "lon": 15.5091756,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba Huta (86)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8187758772,
+  "lat": 50.8266570,
+  "lon": 15.5091586,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba Huta (19)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8187779324,
+  "lat": 50.8260781,
+  "lon": 15.4618240,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba I - Parking Babiniec (86.1)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8187794264,
+  "lat": 50.8078027,
+  "lon": 15.4260627,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "check_date:shelter": "2025-11-10",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba IV - Pętla końcowa",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "ref": "88",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8423812304,
+  "lat": 50.7791758,
+  "lon": 16.0164376,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jeleniogórska Biedronka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9020771341,
+  "lat": 50.8152632,
+  "lon": 15.7555264,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Głębock skrzyżowanie",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9020771342,
+  "lat": 50.8181508,
+  "lon": 15.7374296,
+  "tags": {
+    "amenity": "shelter",
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Sosnówka Radzicz",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "shelter_type": "public_transport"
+  }
+},
+{
+  "type": "node",
+  "id": 9020771343,
+  "lat": 50.8183559,
+  "lon": 15.7371982,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Sosnówka Radzicz",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9020771344,
+  "lat": 50.8222507,
+  "lon": 15.7212619,
+  "tags": {
+    "alt_name": "Sosnówka Dolna",
+    "highway": "bus_stop",
+    "name": "Sosnówka Kościół"
+  }
+},
+{
+  "type": "node",
+  "id": 9022395007,
+  "lat": 50.8523595,
+  "lon": 15.7841254,
+  "tags": {
+    "alt_name": "Mysłakowice Jeleniogórska/Karkonoska",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mysłakowice - POLAM",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9022395010,
+  "lat": 50.8528496,
+  "lon": 15.7841000,
+  "tags": {
+    "alt_name": "Mysłakowice Jeleniogórska/Karkonoska",
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Mysłakowice - POLAM",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9022395012,
+  "lat": 50.8462689,
+  "lon": 15.7860298,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Mysłakowice - Żołnierza",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9022395013,
+  "lat": 50.8462313,
+  "lon": 15.7858967,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Mysłakowice - Żołnierza",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9022395015,
+  "lat": 50.8352375,
+  "lon": 15.7884291,
+  "tags": {
+    "alt_name": "Mysłakowice Jeleniogórska Dw. Kolejowy",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mysłakowice - PKP",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9022395016,
+  "lat": 50.8354497,
+  "lon": 15.7886384,
+  "tags": {
+    "alt_name": "Mysłakowice Jeleniogórska Dw. Kolejowy",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mysłakowice - PKP",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9022419922,
+  "lat": 50.8053864,
+  "lon": 15.8196446,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Jeleniogórska",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9022419932,
+  "lat": 50.7914648,
+  "lon": 15.8048090,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Kowary, Krzaczyna",
+    "name:de": "Schmiedeberg, Buschvorwerk",
+    "name:pl": "Kowary, Krzaczyna",
+    "public_transport": "platform",
+    "shelter": "no",
+    "surface": "concrete",
+    "tactile_paving": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9024583984,
+  "lat": 50.8292761,
+  "lon": 15.5425470,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba Średnia",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9024583991,
+  "lat": 50.8320972,
+  "lon": 15.5579697,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba - Parking Szklarka",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9024634521,
+  "lat": 50.8268377,
+  "lon": 15.5235244,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba Górna",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9040089197,
+  "lat": 50.8395754,
+  "lon": 15.6790775,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Szkoła Podstawowa",
+    "network": "MZK sp. z o.o. w Jeleniej Górze",
+    "operator": "Gmina Podgórzyn",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "start_date": "2021-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 9040089198,
+  "lat": 50.8397245,
+  "lon": 15.6791732,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Szkoła Podstawowa",
+    "network": "MZK sp. z o.o. w Jeleniej Górze",
+    "operator": "Gmina Podgórzyn",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "start_date": "2021-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 9041087320,
+  "lat": 50.8344261,
+  "lon": 15.6799655,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Urząd Gminy",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9041087321,
+  "lat": 50.8348991,
+  "lon": 15.6794816,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Podgórzyn Urząd Gminy",
+    "network": "MZK sp. z o.o. w Jeleniej Górze;PKS Tour Jelenia Góra sp. z o.o.",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9044313444,
+  "lat": 50.8249715,
+  "lon": 15.6868446,
+  "tags": {
+    "alt_name": "Podgórzyn Żołnierska 44",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Średni",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9044313449,
+  "lat": 50.8251368,
+  "lon": 15.6871688,
+  "tags": {
+    "alt_name": "Podgórzyn Żołnierska 44",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Średni",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9044877969,
+  "lat": 50.7827277,
+  "lon": 15.8485278,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Wiejska/Filce",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9044877974,
+  "lat": 50.7902551,
+  "lon": 15.8433657,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Wolności/Średnie",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9044877975,
+  "lat": 50.7915591,
+  "lon": 15.8392792,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Wolności 4/Poczta",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9044877978,
+  "lat": 50.7942386,
+  "lon": 15.8320111,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Jagiellończyka/Biedronka",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9045433931,
+  "lat": 50.8451635,
+  "lon": 15.6827253,
+  "tags": {
+    "bench": "no",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Stawy",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9045433932,
+  "lat": 50.8453732,
+  "lon": 15.6830795,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Podgórzyn Stawy",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9045433935,
+  "lat": 50.8075592,
+  "lon": 15.6659614,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Przesieka Pod Lipami",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9045433938,
+  "lat": 50.8109759,
+  "lon": 15.6672200,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Przesieka Sklep",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9045433949,
+  "lat": 50.8218952,
+  "lon": 15.6846351,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyn Ośrodek Zdrowia",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9061946621,
+  "lat": 50.8639845,
+  "lon": 15.7953692,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Łomnica Sklep",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9061946624,
+  "lat": 50.8641522,
+  "lon": 15.7956448,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Łomnica Sklep",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9062381592,
+  "lat": 50.8601474,
+  "lon": 15.7889413,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Łomnica Papiernia",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9071462811,
+  "lat": 50.7738312,
+  "lon": 15.8511515,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Wiejska / Pętla",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 9071462815,
+  "lat": 50.7787885,
+  "lon": 15.8507500,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Wiejska 54 / Filce II",
+    "note": "umiejscowienie orientacyjne - znasz dokładniejsze miejsce - popraw",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9071462816,
+  "lat": 50.7788020,
+  "lon": 15.8508826,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kowary Wiejska 54 / Filce II",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9274496112,
+  "lat": 50.7850457,
+  "lon": 16.0420185,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Wałbrzyska/Mała",
+    "operator": "PKS w Kamiennej Górze",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9392610518,
+  "lat": 50.8511030,
+  "lon": 15.7337313,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Staniszów Średni",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9399369136,
+  "lat": 50.7065711,
+  "lon": 16.0024233,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Lubawka",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9399369146,
+  "lat": 50.8430711,
+  "lon": 15.5677054,
+  "tags": {
+    "alt_name": "Szklarska Poręba Dolna",
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice skrzyżowanie",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9399369147,
+  "lat": 50.8425627,
+  "lon": 15.5677245,
+  "tags": {
+    "alt_name": "Szklarska Poręba Dolna",
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Piechowice skrzyżowanie",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9405394747,
+  "lat": 50.8446283,
+  "lon": 15.7408204,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Staniszów Górny",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9422656436,
+  "lat": 50.8109795,
+  "lon": 15.6669715,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Przesieka Sklep",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9454634071,
+  "lat": 50.8356305,
+  "lon": 15.6644145,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podzamcze",
+    "operator": "MZK sp. z o.o. w Jeleniej Górze",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9484426023,
+  "lat": 50.8300925,
+  "lon": 15.7876783,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mysłakowice ul. Szkolna",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9484477924,
+  "lat": 50.8256591,
+  "lon": 15.7865952,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Mysłakowice Orzeł",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9774099211,
+  "lat": 50.8521858,
+  "lon": 15.8690214,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karpniki Pętla",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9774099212,
+  "lat": 50.8521147,
+  "lon": 15.8690670,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karpniki Pętla",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
   "id": 10258115266,
   "lat": 50.8146295,
   "lon": 15.4295162,
@@ -1643,6 +4237,91 @@
     "uic_ref": "5105622",
     "wikidata": "Q1966570",
     "wikipedia": "pl:Polana Jakuszycka (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 10291048366,
+  "lat": 50.7690076,
+  "lon": 15.7285774,
+  "tags": {
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Kopa",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11010722797,
+  "lat": 50.8415275,
+  "lon": 15.5593194,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Piastowska, Lipa Sądowa",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11019646424,
+  "lat": 50.8148217,
+  "lon": 15.4299275,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba I - Bieg Piastów (11)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "route_ref": "Flixbus 1300",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11157927732,
+  "lat": 50.8368182,
+  "lon": 15.9725720,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Wieściszowice",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11157927733,
+  "lat": 50.7807830,
+  "lon": 15.9635437,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pisarzowice Wieś",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11277738155,
+  "lat": 50.8352097,
+  "lon": 15.5649612,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Piechowice - Hotel Las",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
   }
 },
 {
@@ -1669,6 +4348,67 @@
 },
 {
   "type": "node",
+  "id": 11724658734,
+  "lat": 50.7785158,
+  "lon": 16.0154632,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jeleniogórska Biedronka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11724658735,
+  "lat": 50.7841818,
+  "lon": 16.0224486,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jeleniogórska 9",
+    "note": "to nie jest przystanek dalekobieżny",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11724658736,
+  "lat": 50.7877566,
+  "lon": 16.0272461,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bohaterów Getta Lidl",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11724658737,
+  "lat": 50.7809809,
+  "lon": 16.0279271,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Staszica 11",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11724658738,
+  "lat": 50.7825164,
+  "lon": 16.0353578,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kościuszki Sąd",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
   "id": 11831904332,
   "lat": 50.8098459,
   "lon": 15.7638880,
@@ -1686,6 +4426,161 @@
     "train": "yes",
     "wikidata": "Q11784055",
     "wikipedia": "pl:Miłków (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 12025808189,
+  "lat": 50.7840648,
+  "lon": 16.0260189,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Jana Pawła II rondo",
+    "network": "PKS Kamienna Góra",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12054994049,
+  "lat": 50.7948390,
+  "lon": 15.6991207,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "DW Limba",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12055134470,
+  "lat": 50.7968568,
+  "lon": 15.6907849,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Borowice Skrzyżowanie",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12108062028,
+  "lat": 50.7816950,
+  "lon": 16.0358446,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Kościuszki Przychodnia",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12459244515,
+  "lat": 50.8368665,
+  "lon": 15.5292371,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "11 Listopada, os. Leśników",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12459244516,
+  "lat": 50.8306434,
+  "lon": 15.5279610,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Obrońców Pokoju, SP 5",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12459244517,
+  "lat": 50.8328868,
+  "lon": 15.5174198,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Dworcowa, dworzec kolejowy",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12817159276,
+  "lat": 50.7825003,
+  "lon": 16.0461585,
+  "tags": {
+    "alt_name": "Krzeszowska Os. Tkaczy Śląskich",
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kamienna Góra, ul. Krzeszowska",
+    "operator": "PKS Kamienna Góra",
+    "public_transport": "platform",
+    "shelter": "no",
+    "source": "survey",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12818896260,
+  "lat": 50.7691214,
+  "lon": 16.0466440,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Krzeszowska - Czadrówek",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12818896261,
+  "lat": 50.7691295,
+  "lon": 16.0468053,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Krzeszowska - Czadrówek"
+  }
+},
+{
+  "type": "node",
+  "id": 12818990339,
+  "lat": 50.7903413,
+  "lon": 16.0327274,
+  "tags": {
+    "alt_name": "Bohaterów Getta (Leśniczówka)",
+    "bench": "no",
+    "bus": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Leśniczówka",
+    "public_transport": "platform",
+    "shelter": "no"
   }
 },
 {
@@ -1728,6 +4623,1424 @@
 },
 {
   "type": "node",
+  "id": 12907599758,
+  "lat": 50.8680338,
+  "lon": 15.7544558,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Wrzosowa 07",
+    "public_transport": "stop_position",
+    "ref": "Wrzosowa 07"
+  }
+},
+{
+  "type": "node",
+  "id": 12909020309,
+  "lat": 50.8692317,
+  "lon": 15.6968984,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sołtysia Góra 17",
+    "public_transport": "stop_position",
+    "ref": "Sołtysia Góra 17"
+  }
+},
+{
+  "type": "node",
+  "id": 12909020312,
+  "lat": 50.8676070,
+  "lon": 15.6936294,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "K. Marcinkowskiego 20",
+    "public_transport": "stop_position",
+    "ref": "K. Marcinkowskiego 20"
+  }
+},
+{
+  "type": "node",
+  "id": 12909020315,
+  "lat": 50.8675077,
+  "lon": 15.6939790,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "K. Marcinkowskiego 19",
+    "public_transport": "stop_position",
+    "ref": "K. Marcinkowskiego 19"
+  }
+},
+{
+  "type": "node",
+  "id": 12909020319,
+  "lat": 50.8696772,
+  "lon": 15.6893328,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Dworcowa - Cmentarz 02",
+    "public_transport": "stop_position",
+    "ref": "Dworcowa - Cmentarz 02"
+  }
+},
+{
+  "type": "node",
+  "id": 12909020323,
+  "lat": 50.8695607,
+  "lon": 15.6895855,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Dworcowa - Cmentarz 01",
+    "public_transport": "stop_position",
+    "ref": "Dworcowa - Cmentarz 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12909020324,
+  "lat": 50.8692765,
+  "lon": 15.6853218,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Stacja Kolejowa Cieplice 04",
+    "public_transport": "stop_position",
+    "ref": "Stacja Kolejowa Cieplice 04"
+  }
+},
+{
+  "type": "node",
+  "id": 12909020328,
+  "lat": 50.8689493,
+  "lon": 15.6834188,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Stacja Kolejowa Cieplice 01",
+    "public_transport": "stop_position",
+    "ref": "Stacja Kolejowa Cieplice 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127645,
+  "lat": 50.8646629,
+  "lon": 15.6899023,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Plac Piastowski 22",
+    "public_transport": "stop_position",
+    "ref": "Plac Piastowski 22"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127648,
+  "lat": 50.8634856,
+  "lon": 15.6889395,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Plac Piastowski 21",
+    "public_transport": "stop_position",
+    "ref": "Plac Piastowski 21"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127651,
+  "lat": 50.8605879,
+  "lon": 15.6983398,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Krośnieńska - Działki 01",
+    "public_transport": "stop_position",
+    "ref": "Krośnieńska - Działki 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127654,
+  "lat": 50.8604584,
+  "lon": 15.6983784,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Krośnieńska - Działki 02",
+    "public_transport": "stop_position",
+    "ref": "Krośnieńska - Działki 02"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127657,
+  "lat": 50.8586002,
+  "lon": 15.6999455,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Krośnieńska - Cmentarz 04",
+    "public_transport": "stop_position",
+    "ref": "Krośnieńska - Cmentarz 04"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127659,
+  "lat": 50.8588535,
+  "lon": 15.6832364,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Termy Cieplickie 23",
+    "public_transport": "stop_position",
+    "ref": "Termy Cieplickie 23"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127660,
+  "lat": 50.8590051,
+  "lon": 15.6831835,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Termy Cieplickie 24",
+    "public_transport": "stop_position",
+    "ref": "Termy Cieplickie 24"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127662,
+  "lat": 50.8562203,
+  "lon": 15.6829665,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Dwudziestolecia 02",
+    "public_transport": "stop_position",
+    "ref": "Dwudziestolecia 02"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127663,
+  "lat": 50.8555275,
+  "lon": 15.6839201,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Dwudziestolecia 01",
+    "public_transport": "stop_position",
+    "ref": "Dwudziestolecia 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127664,
+  "lat": 50.8509217,
+  "lon": 15.6855827,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Podgórzyńska 04",
+    "public_transport": "stop_position",
+    "ref": "Podgórzyńska 04"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127668,
+  "lat": 50.8612255,
+  "lon": 15.6778728,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Cervi-Sanatorium 02",
+    "public_transport": "stop_position",
+    "ref": "Cervi-Sanatorium 02"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127671,
+  "lat": 50.8618353,
+  "lon": 15.6782494,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Cervi-Sanatorium 01",
+    "public_transport": "stop_position",
+    "ref": "Cervi-Sanatorium 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127674,
+  "lat": 50.8650031,
+  "lon": 15.6784991,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Cieplicka - Uzdrowisko 02",
+    "public_transport": "stop_position",
+    "ref": "Cieplicka - Uzdrowisko 02"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127676,
+  "lat": 50.8649249,
+  "lon": 15.6780878,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Cieplicka - Uzdrowisko 01",
+    "public_transport": "stop_position",
+    "ref": "Cieplicka - Uzdrowisko 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127678,
+  "lat": 50.8642567,
+  "lon": 15.6736306,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "K. Pułaskiego 04",
+    "public_transport": "stop_position",
+    "ref": "K. Pułaskiego 04"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127681,
+  "lat": 50.8632634,
+  "lon": 15.6732478,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "K. Pułaskiego-Cieplicka 01",
+    "public_transport": "stop_position",
+    "ref": "K. Pułaskiego-Cieplicka 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127683,
+  "lat": 50.8641206,
+  "lon": 15.6721289,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "K. Pułaskiego 03",
+    "public_transport": "stop_position",
+    "ref": "K. Pułaskiego 03"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127685,
+  "lat": 50.8603670,
+  "lon": 15.6728717,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "S. Staszica 02",
+    "public_transport": "stop_position",
+    "ref": "S. Staszica 02"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127687,
+  "lat": 50.8597309,
+  "lon": 15.6760477,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "S. Staszica 01",
+    "public_transport": "stop_position",
+    "ref": "S. Staszica 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127690,
+  "lat": 50.8639560,
+  "lon": 15.6665446,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pod Wałami 06",
+    "public_transport": "stop_position",
+    "ref": "Pod Wałami 06"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127694,
+  "lat": 50.8634862,
+  "lon": 15.6643308,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pod Wałami 05",
+    "public_transport": "stop_position",
+    "ref": "Pod Wałami 05"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127695,
+  "lat": 50.8642237,
+  "lon": 15.6629776,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "M. Rataja 02",
+    "public_transport": "stop_position",
+    "ref": "M. Rataja 02"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127696,
+  "lat": 50.8650186,
+  "lon": 15.6623228,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "M. Rataja 01",
+    "public_transport": "stop_position",
+    "ref": "M. Rataja 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12912127697,
+  "lat": 50.8682612,
+  "lon": 15.6720025,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sobieszowska 02",
+    "public_transport": "stop_position",
+    "ref": "Sobieszowska 02"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134103,
+  "lat": 50.8681967,
+  "lon": 15.6790799,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Św. J. Śląskiej 01",
+    "public_transport": "stop_position",
+    "ref": "Św. J. Śląskiej 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134107,
+  "lat": 50.8626819,
+  "lon": 15.6594176,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "W. Stwosza 08",
+    "public_transport": "stop_position",
+    "ref": "W. Stwosza 08"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134110,
+  "lat": 50.8623540,
+  "lon": 15.6590988,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Osiedle Orle 10",
+    "public_transport": "stop_position",
+    "ref": "Osiedle Orle 10"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134112,
+  "lat": 50.8620159,
+  "lon": 15.6584957,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Osiedle Orle 07",
+    "public_transport": "stop_position",
+    "ref": "Osiedle Orle 07"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134116,
+  "lat": 50.8555659,
+  "lon": 15.6508884,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Polna 12",
+    "public_transport": "stop_position",
+    "ref": "Polna 12"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134119,
+  "lat": 50.8549355,
+  "lon": 15.6506462,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Polna 09",
+    "public_transport": "stop_position",
+    "ref": "Polna 09"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134121,
+  "lat": 50.8488882,
+  "lon": 15.6459714,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Muflon 14",
+    "public_transport": "stop_position",
+    "ref": "Muflon 14"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134123,
+  "lat": 50.8487000,
+  "lon": 15.6461409,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Muflon 11",
+    "public_transport": "stop_position",
+    "ref": "Muflon 11"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134125,
+  "lat": 50.8469932,
+  "lon": 15.6418496,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pałac Sobieszów 16",
+    "public_transport": "stop_position",
+    "ref": "Pałac Sobieszów 16"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134126,
+  "lat": 50.8469827,
+  "lon": 15.6411758,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pałac Sobieszów 13",
+    "public_transport": "stop_position",
+    "ref": "Pałac Sobieszów 13"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134129,
+  "lat": 50.8456067,
+  "lon": 15.6414376,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karkonoski Park Narodowy",
+    "public_transport": "stop_position",
+    "ref": "Karkonoski Park Narodowy"
+  }
+},
+{
+  "type": "node",
+  "id": 12912134131,
+  "lat": 50.8455126,
+  "lon": 15.6415149,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karkonoski Park Narodowy 01",
+    "public_transport": "stop_position",
+    "ref": "Karkonoski Park Narodowy 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012906,
+  "lat": 50.8396018,
+  "lon": 15.6351707,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karkonoska 54 03",
+    "public_transport": "stop_position",
+    "ref": "Karkonoska 54 03"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012909,
+  "lat": 50.8395008,
+  "lon": 15.6350594,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karkonoska 54 04",
+    "public_transport": "stop_position",
+    "ref": "Karkonoska 54 04"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012912,
+  "lat": 50.8371052,
+  "lon": 15.6317875,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pod Chojnikiem 06",
+    "public_transport": "stop_position",
+    "ref": "Pod Chojnikiem 06"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012915,
+  "lat": 50.8371491,
+  "lon": 15.6319778,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pod Chojnikiem 05",
+    "public_transport": "stop_position",
+    "ref": "Pod Chojnikiem 05"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012918,
+  "lat": 50.8352584,
+  "lon": 15.6271180,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karkonoska 76 08",
+    "public_transport": "stop_position",
+    "ref": "Karkonoska 76 08"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012921,
+  "lat": 50.8350461,
+  "lon": 15.6270729,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karkonoska 76 07",
+    "public_transport": "stop_position",
+    "ref": "Karkonoska 76 07"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012924,
+  "lat": 50.8274896,
+  "lon": 15.6231704,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karkonoska 95 10",
+    "public_transport": "stop_position",
+    "ref": "Karkonoska 95 10"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012927,
+  "lat": 50.8263194,
+  "lon": 15.6218975,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kręta 09",
+    "public_transport": "stop_position",
+    "ref": "Kręta 09"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012930,
+  "lat": 50.8223653,
+  "lon": 15.6171954,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Agnieszkowska 12",
+    "public_transport": "stop_position",
+    "ref": "Agnieszkowska 12"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012933,
+  "lat": 50.8220303,
+  "lon": 15.6166877,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Agnieszkowska 01",
+    "public_transport": "stop_position",
+    "ref": "Agnieszkowska 01"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012936,
+  "lat": 50.8214739,
+  "lon": 15.6126731,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowicka - Kościół 03",
+    "public_transport": "stop_position",
+    "ref": "Michałowicka - Kościół 03"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012939,
+  "lat": 50.8212686,
+  "lon": 15.6118141,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowicka - Kościół 04",
+    "public_transport": "stop_position",
+    "ref": "Michałowicka - Kościół 04"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012942,
+  "lat": 50.8157617,
+  "lon": 15.6084678,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Dom Gerharta Hauptmanna 04",
+    "public_transport": "stop_position",
+    "ref": "Dom Gerharta Hauptmanna 04"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012945,
+  "lat": 50.8159447,
+  "lon": 15.6085105,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Dom Gerharta Hauptmanna 05",
+    "public_transport": "stop_position",
+    "ref": "Dom Gerharta Hauptmanna 05"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012948,
+  "lat": 50.8275460,
+  "lon": 15.5910997,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowice Sudecka",
+    "public_transport": "stop_position",
+    "ref": "Michałowice Sudecka"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012951,
+  "lat": 50.8274464,
+  "lon": 15.5911288,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowice Sudecka",
+    "public_transport": "stop_position",
+    "ref": "Michałowice Sudecka"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012954,
+  "lat": 50.8317014,
+  "lon": 15.5872197,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowice Śnieżna",
+    "public_transport": "stop_position",
+    "ref": "Michałowice Śnieżna"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012956,
+  "lat": 50.8316382,
+  "lon": 15.5870806,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowice Śnieżna",
+    "public_transport": "stop_position",
+    "ref": "Michałowice Śnieżna"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012959,
+  "lat": 50.8340406,
+  "lon": 15.5879731,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowice Pętla",
+    "public_transport": "stop_position",
+    "ref": "Michałowice Pętla"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012962,
+  "lat": 50.8341263,
+  "lon": 15.5880272,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowice Pętla",
+    "public_transport": "stop_position",
+    "ref": "Michałowice Pętla"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012965,
+  "lat": 50.8379269,
+  "lon": 15.5889185,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowice Dolne",
+    "public_transport": "stop_position",
+    "ref": "Michałowice Dolne"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012968,
+  "lat": 50.8377337,
+  "lon": 15.5890717,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Michałowice Dolne",
+    "public_transport": "stop_position",
+    "ref": "Michałowice Dolne"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012971,
+  "lat": 50.8475138,
+  "lon": 15.5789598,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Górne",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Górne"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012974,
+  "lat": 50.8477500,
+  "lon": 15.5790426,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Górne",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Górne"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012977,
+  "lat": 50.8506898,
+  "lon": 15.5864937,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Przedszkole",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Przedszkole"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012980,
+  "lat": 50.8505435,
+  "lon": 15.5868052,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Przedszkole",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Przedszkole"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012983,
+  "lat": 50.8522634,
+  "lon": 15.5811326,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Górzyniec Wiadukt",
+    "public_transport": "stop_position",
+    "ref": "Górzyniec Wiadukt"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012986,
+  "lat": 50.8521291,
+  "lon": 15.5815160,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Górzyniec Wiadukt",
+    "public_transport": "stop_position",
+    "ref": "Górzyniec Wiadukt"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012989,
+  "lat": 50.8544299,
+  "lon": 15.5754356,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Górzyniec Izerska",
+    "public_transport": "stop_position",
+    "ref": "Górzyniec Izerska"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012992,
+  "lat": 50.8545791,
+  "lon": 15.5760502,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Górzyniec Izerska",
+    "public_transport": "stop_position",
+    "ref": "Górzyniec Izerska"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012995,
+  "lat": 50.8571613,
+  "lon": 15.5685006,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Górzyniec Izerska",
+    "public_transport": "stop_position",
+    "ref": "Górzyniec Izerska"
+  }
+},
+{
+  "type": "node",
+  "id": 12919012998,
+  "lat": 50.8513878,
+  "lon": 15.5912463,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Dw PKP",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Dw PKP"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046901,
+  "lat": 50.8492811,
+  "lon": 15.5922045,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Centrum",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Centrum"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046904,
+  "lat": 50.8494132,
+  "lon": 15.5921819,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Centrum",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Centrum"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046906,
+  "lat": 50.8492785,
+  "lon": 15.5976658,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Kościół",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Kościół"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046909,
+  "lat": 50.8497813,
+  "lon": 15.5972849,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Szkolna",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Szkolna"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046912,
+  "lat": 50.8485480,
+  "lon": 15.5997137,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Kościół",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Kościół"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046915,
+  "lat": 50.8476375,
+  "lon": 15.6066399,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Dolne",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Dolne"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046919,
+  "lat": 50.8478401,
+  "lon": 15.6057610,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Dolne",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Dolne"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046922,
+  "lat": 50.8498165,
+  "lon": 15.6142309,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Karelma",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Karelma"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046925,
+  "lat": 50.8496897,
+  "lon": 15.6143192,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Karelma",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Karelma"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046928,
+  "lat": 50.8530434,
+  "lon": 15.6198508,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Papiernia",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Papiernia"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046931,
+  "lat": 50.8534676,
+  "lon": 15.6210286,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Papiernia",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Papiernia"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046934,
+  "lat": 50.8539925,
+  "lon": 15.6249082,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Szk.Leśna",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Szk.Leśna"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046937,
+  "lat": 50.8539190,
+  "lon": 15.6245853,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Szk.Leśna",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Szk.Leśna"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046940,
+  "lat": 50.8569131,
+  "lon": 15.6239392,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pakoszów Papiernia",
+    "public_transport": "stop_position",
+    "ref": "Pakoszów Papiernia"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046943,
+  "lat": 50.8569269,
+  "lon": 15.6237608,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pakoszów Papiernia",
+    "public_transport": "stop_position",
+    "ref": "Pakoszów Papiernia"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046946,
+  "lat": 50.8588192,
+  "lon": 15.6159409,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pakoszów Polna",
+    "public_transport": "stop_position",
+    "ref": "Pakoszów Polna"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046949,
+  "lat": 50.8589144,
+  "lon": 15.6159564,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pakoszów Polna",
+    "public_transport": "stop_position",
+    "ref": "Pakoszów Polna"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046952,
+  "lat": 50.8629364,
+  "lon": 15.6049129,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Jeleniogórska",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Jeleniogórska"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046954,
+  "lat": 50.8628508,
+  "lon": 15.6051877,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Jeleniogórska",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Jeleniogórska"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046956,
+  "lat": 50.8650916,
+  "lon": 15.6049213,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piastów Kościół",
+    "public_transport": "stop_position",
+    "ref": "Piastów Kościół"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046959,
+  "lat": 50.8657887,
+  "lon": 15.6048096,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piastów Kościół",
+    "public_transport": "stop_position",
+    "ref": "Piastów Kościół"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046976,
+  "lat": 50.8544784,
+  "lon": 15.5948001,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Cmentarz",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Cmentarz"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046979,
+  "lat": 50.8530880,
+  "lon": 15.5944059,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Cmentarz",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Cmentarz"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046981,
+  "lat": 50.8514062,
+  "lon": 15.5965204,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice SP 1",
+    "public_transport": "stop_position",
+    "ref": "Piechowice SP 1"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046984,
+  "lat": 50.8509555,
+  "lon": 15.5973881,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice SP 1",
+    "public_transport": "stop_position",
+    "ref": "Piechowice SP 1"
+  }
+},
+{
+  "type": "node",
+  "id": 12919046987,
+  "lat": 50.8493850,
+  "lon": 15.6057954,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piechowice Orzeszkowej",
+    "public_transport": "stop_position",
+    "ref": "Piechowice Orzeszkowej"
+  }
+},
+{
+  "type": "node",
+  "id": 12946484027,
+  "lat": 50.8325239,
+  "lon": 15.5298559,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "ul. 11 Listopada, ZSOiMS",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13115361030,
+  "lat": 50.8429483,
+  "lon": 15.5382903,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Górna 33, skrzyżowanie z ul. Sanatoryjną",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13115361031,
+  "lat": 50.8382112,
+  "lon": 15.5395702,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "ul. Muzealna, PKP",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13121450879,
+  "lat": 50.8682549,
+  "lon": 15.6732668,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sobieszowska 03",
+    "public_transport": "stop_position",
+    "ref": "Sobieszowska 03"
+  }
+},
+{
+  "type": "node",
+  "id": 13265466779,
+  "lat": 50.8223704,
+  "lon": 15.5293534,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "ul. Okrzei, SP 1",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13361840932,
+  "lat": 50.7726862,
+  "lon": 15.7721414,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Karpacz, Skalna Orlik",
+    "name:de": "Krummhübel, Skalna Orlik",
+    "name:pl": "Karpacz, Skalna Orlik",
+    "operator": "Karpacz Bus",
+    "public_transport": "platform",
+    "shelter": "no",
+    "surface": "grass",
+    "tactile_paving": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
   "id": 13414176167,
   "lat": 50.8602010,
   "lon": 15.5675911,
@@ -1758,6 +6071,196 @@
     "railway": "halt",
     "uic_name": "Piechowice Dolne",
     "uic_ref": "5102755"
+  }
+},
+{
+  "type": "node",
+  "id": 13784431903,
+  "lat": 50.8511132,
+  "lon": 15.8767627,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "yes",
+    "highway": "bus_stop",
+    "name": "Karpniki Rudawska 72",
+    "public_transport": "platform",
+    "request_stop": "yes",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13784431904,
+  "lat": 50.8495945,
+  "lon": 15.8639072,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karpniki Cmetarz",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784431905,
+  "lat": 50.8496660,
+  "lon": 15.8638393,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karpniki Cmetarz",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896783,
+  "lat": 50.8491417,
+  "lon": 15.8456496,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karpniki Skrzyż.",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896784,
+  "lat": 50.8430819,
+  "lon": 15.8391397,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Krogulec Dolny",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896785,
+  "lat": 50.8382867,
+  "lon": 15.8398844,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Krogulec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896786,
+  "lat": 50.8475492,
+  "lon": 15.8566687,
+  "tags": {
+    "bus": "yes",
+    "fixme": "exact location",
+    "highway": "bus_stop",
+    "name": "Karpniki Klub",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896787,
+  "lat": 50.8391720,
+  "lon": 15.8866842,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Strużnica 15",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896788,
+  "lat": 50.8336605,
+  "lon": 15.8868831,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Strużnica 58",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896789,
+  "lat": 50.8215803,
+  "lon": 15.8724351,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Gruszków",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896790,
+  "lat": 50.8334741,
+  "lon": 15.8867991,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Strużnica 58",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896792,
+  "lat": 50.8391637,
+  "lon": 15.8868319,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Strużnica 15",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896794,
+  "lat": 50.8476008,
+  "lon": 15.8566787,
+  "tags": {
+    "bus": "yes",
+    "fixme": "exact location",
+    "highway": "bus_stop",
+    "name": "Karpniki Klub",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13784896795,
+  "lat": 50.8491909,
+  "lon": 15.8457392,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karpniki Skrzyż.",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13912669518,
+  "lat": 50.7716325,
+  "lon": 15.7632218,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Skalny ul. Obrońców Pokoju",
+    "public_transport": "platform"
   }
 },
 {
