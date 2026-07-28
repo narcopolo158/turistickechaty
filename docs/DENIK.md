@@ -99,6 +99,38 @@ kalendárium, Z průvodce, print) je nasazený; hero koláž „sběratelský
 stůl", dřevěná rozcestníková CTA, poster band, pohoří grid a „Namátkou"
 = 2. průchod (plán session 3/4 čtyřbloku) — další krok.
 
+**Dodatek 4 (týž den, Michal: „pokračuj"): F1c 2. průchod HOTOV —
+homepage už není chudá.** Dle F1-Homepage.dc.html + screenshots 01–05:
+**hero „sběratelský stůl"** — claim „Chaty, kterým můžeš věřit.", funkční
+hledání s datalistem všech profilů (přesná shoda → profil, jinak
+/chaty?q=), 2 dřevěné rozcestníkové cedule (clip-path šipky, feTurbulence
+kresba, frézovaný text, mosazný šroubek), koláž 5 faux-3D artefaktů
+s hover tiltem: mapový výřez s roztrhanými okraji, **polaroid s reálnou
+hero fotkou Luční** (atribuce Dusík CC BY-SA přímo na fotce; bez fotky
+poctivý ghost), **reálný sken otisku Luční** (razitkuj se svolením;
+Výrovka ghost SVG — sken nemáme), **dřevěná známka se SKUTEČNÝM č. 11**
+(oficiální seznam vydavatele) a smaltová pásová značka; popiska „reálné
+skeny se svolením, jinak ghost". Dál **statický poster band** (malované
+hřebeny, Sněžka 1603 halo, zmrzlá lanovka; zimní vrstva jen dle kalendáře
+XII–III — funkce jeZimniPoster s testy), **01 Pohoří grid** (Krkonoše
+živá karta s čísly z dat + 3 „připravujeme" doložené kandidátními
+složkami), **02 Namátkou z průvodce** (seedovaný Fisher–Yates/LCG, seed
+= dayOfYear → server i klient týž render, „↻ jiných pět", settlePop
+razítka na hover, thumb s hero fotkou jako v katalogu) a **manifest pás**.
+TiltDiv (perspective 760px ±8°) respektuje prefers-reduced-motion; CSS
+media query vypíná i transitions a settlePop. **Vědomé odchylky** (vše
+poctivost/mrtvé prvky): sekce 03 Pohlednice vynechána (Fáze 2 — mrtvá
+CTA), sekce přečíslovány (Z průvodce 04 → 03); RSS/Newsletter a Konami
+sníh vynechány; cedule „Prozkoumat Krkonoše" i poster CTA vedou na #mapa
+(stránka pohoří přijde s F1d — pak přepnout); poster atribuce
+„© Mapy.com·OSM·KČT·ČÚZK" z prototypu VYNECHÁNA — malovaný poster je
+ilustrace a žádná ta data nenese (atribuci dostane až render z DATA-28),
+místo ní „ilustrační panorama"; eyebrow „· Krkonoše" místo „· Česko"
+(fond nese i PL profily). Testy: home-f1 4 → 8, index-chat +4
+(seedovanyVyber determinismus, jeZimniPoster), celkem 262 passed;
+3 padající soubory = environmentální Payload bez DB (ověřeno git stash:
+padají i na čistém main). tsc i lint čisté.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

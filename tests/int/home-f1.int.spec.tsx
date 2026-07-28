@@ -53,6 +53,10 @@ vi.mock('@/lib/zanikle', () => ({
   zanikleChaty: () => Array.from({ length: 12 }, (_, i) => ({ slug: `z${i}` })),
 }))
 vi.mock('@/components/MapaChat', () => ({ default: () => <div data-testid="mapa-mock" /> }))
+// HledaniChat používá app router (useRouter) — v jsdom se mockuje.
+vi.mock('next/navigation', () => ({
+  useRouter: () => ({ push: () => {} }),
+}))
 
 import HomePage from '@/app/(frontend)/page'
 
@@ -86,6 +90,44 @@ describe('Homepage F1c — datové pásy', () => {
       expect.stringContaining('Luční bouda'),
       expect.stringContaining('Výrovka'),
     ])
+  })
+
+  it('hero dle handoffu: claim, dřevěné cedule, koláž s ghost artefakty (mock bez fotky/otisku) a známka č. 11', async () => {
+    render(await HomePage())
+    expect(screen.getByRole('heading', { level: 1 }).textContent).toContain('Chaty, kterým')
+    expect(screen.getByText('PROZKOUMAT KRKONOŠE')).toBeTruthy()
+    expect(screen.getByText('KATALOG CHAT')).toBeTruthy()
+    // mock index nemá heroUrl ani otiskUrl Luční → polaroid i otisk poctivě ghost
+    expect(screen.getByText(/foto hřebene — doplníme/)).toBeTruthy()
+    expect(screen.getByText('EST. 1623')).toBeTruthy() // ghost SVG otisku (doložený milník)
+    expect(screen.getByText('Č. 11')).toBeTruthy() // reálné číslo známky z DATA-10
+  })
+
+  it('pohoří grid: živá karta Krkonoš s čísly z dat, tři „připravujeme" s kandidátní popiskou', async () => {
+    const { container } = render(await HomePage())
+    const ziva = container.querySelector('.hf1-pohori-ziva') as HTMLElement
+    expect(within(ziva).getByText('Krkonoše')).toBeTruthy()
+    expect(within(ziva).getByText('ŽIVÉ')).toBeTruthy()
+    expect(within(ziva).getByText('3')).toBeTruthy() // chat z mock indexu, ne ručně psané
+    expect(screen.getAllByText(/připravujeme — sbíráme kandidáty/)).toHaveLength(2)
+    expect(screen.getByText(/přesahová oblast/)).toBeTruthy()
+  })
+
+  it('namátkou z průvodce: 3 lístky z mock indexu (víc jich není), reshuffle tlačítko, poctivá popiska', async () => {
+    const { container } = render(await HomePage())
+    expect(screen.getByText('Namátkou z průvodce')).toBeTruthy()
+    expect(container.querySelectorAll('.hf1-listek')).toHaveLength(3)
+    expect(screen.getByRole('button', { name: '↻ jiných pět' })).toBeTruthy()
+    expect(screen.getByText(/náhodný výběr z 3 doložených profilů/)).toBeTruthy()
+  })
+
+  it('poster band: statický, v červenci bez zimní vrstvy, CTA vede na mapu (F1d zatím není)', async () => {
+    const { container } = render(await HomePage())
+    expect(screen.getByText('Malovaná 3D mapa Krkonoš')).toBeTruthy()
+    expect(screen.getByText('SNĚŽKA')).toBeTruthy()
+    expect(container.querySelector('.hf1-poster-zima')).toBeNull() // build v červenci
+    const cta = screen.getByText('Otevřít mapu chat ▸')
+    expect(cta.getAttribute('href')).toBe('#mapa')
   })
 
   it('printový seznam (B13) nese všechny profily s poctivými „—"', async () => {

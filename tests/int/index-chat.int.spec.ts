@@ -8,11 +8,13 @@ import { describe, expect, it } from 'vitest'
 import {
   denVRoce,
   feedNaposledyOvereno,
+  jeZimniPoster,
   kalendariumVeta,
   kalendariumVyber,
   nejstarsiDolozenyRok,
   pocetNoveOverenychZa,
   posledniOvereniFondu,
+  seedovanyVyber,
   type IndexChata,
   type KalendariumPolozka,
 } from '@/lib/index-chat'
@@ -123,5 +125,37 @@ describe('kalendárium', () => {
     expect(kalendariumVeta(polozky[1], '2026-07-27')).toBe(
       'Před 403 lety (1623) letopočet na základním kameni.',
     )
+  })
+})
+
+describe('seedovanyVyber — „Namátkou z průvodce"', () => {
+  const polozky = Array.from({ length: 20 }, (_, i) => `chata-${i}`)
+
+  it('je deterministický pro stejný seed (server i klient kreslí totéž)', () => {
+    expect(seedovanyVyber(polozky, 209)).toEqual(seedovanyVyber(polozky, 209))
+  })
+
+  it('jiný seed dá jiné pořadí („↻ jiných pět") a nemění vstup', () => {
+    const puvodni = [...polozky]
+    const a = seedovanyVyber(polozky, 209)
+    const b = seedovanyVyber(polozky, 210)
+    expect(a).not.toEqual(b)
+    expect(polozky).toEqual(puvodni) // shuffle jede nad kopií
+  })
+
+  it('vrací žádaný počet a u malého vstupu vše bez duplicit', () => {
+    expect(seedovanyVyber(polozky, 7)).toHaveLength(5)
+    const male = seedovanyVyber(['a', 'b', 'c'], 7)
+    expect([...male].sort()).toEqual(['a', 'b', 'c'])
+  })
+})
+
+describe('jeZimniPoster — zimní vrstva jen podle kalendáře', () => {
+  it('XII–III zima, jinak ne (žádná fake předpověď)', () => {
+    expect(jeZimniPoster('2026-12-01')).toBe(true)
+    expect(jeZimniPoster('2026-01-15')).toBe(true)
+    expect(jeZimniPoster('2026-03-31')).toBe(true)
+    expect(jeZimniPoster('2026-04-01')).toBe(false)
+    expect(jeZimniPoster('2026-07-28')).toBe(false)
   })
 })

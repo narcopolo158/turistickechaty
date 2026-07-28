@@ -1,12 +1,19 @@
 import Link from 'next/link'
 import React from 'react'
 
+import HeroKolaz from '@/components/HeroKolaz'
+import HledaniChat from '@/components/HledaniChat'
 import MapaChat from '@/components/MapaChat'
+import NamatkouPas from '@/components/NamatkouPas'
+import PosterBand from '@/components/PosterBand'
+import TiltDiv from '@/components/TiltDiv'
 import TiskButton from '@/components/TiskButton'
 import { SectionBar } from '@/components/ui'
 import { getChatyProMapu, getIndexChat } from '@/lib/chaty'
 import {
+  denVRoce,
   feedNaposledyOvereno,
+  jeZimniPoster,
   kalendariumVeta,
   kalendariumVyber,
   pocetNoveOverenychZa,
@@ -15,17 +22,25 @@ import {
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
 import { zanikleChaty } from '@/lib/zanikle'
 
-// Denní rotace kalendária a čerstvé countery: stránka se přegeneruje
-// nejpozději po hodině (jinak s každým deployem).
+// Denní rotace kalendária/namátkou a čerstvé countery: stránka se
+// přegeneruje nejpozději po hodině (jinak s každým deployem).
 export const revalidate = 3600
 
 /**
- * Homepage — mezistav F1c: hero z F0-02 doplněný o poctivé countery
- * s mikroblokem, kalendárium pás (build-time výběr z milníků, žádné falešné
- * „přesně dnes"), sekci „Z průvodce" (Naposledy ověřeno · Atlas zaniklých ·
- * Razítka a známky) a printový čistý seznam chat (B13). Hero koláž
- * „sběratelský stůl", poster band a pohoří grid přijdou dalším průchodem
- * F1c (handoff design/handoff-f1/).
+ * Homepage dle handoffu F1 (design/handoff-f1/F1-Homepage.dc.html +
+ * screenshots 01–05): hero „sběratelský stůl" (koláž faux-3D artefaktů
+ * z DOLOŽENÝCH dat — hero fotka a reálný otisk Luční, známka č. 11),
+ * dřevěné rozcestníkové CTA, poctivé countery s mikroblokem, kalendárium,
+ * statický poster band (zimní vrstva jen dle kalendáře), pohoří grid,
+ * „Namátkou z průvodce" (seedovaný Fisher–Yates), mapa chat, kurátorské
+ * pásy Z průvodce, manifest a printový seznam (B13).
+ *
+ * Vědomé odchylky od prototypu (deník 28. 7. 2026): sekce 03 Pohlednice
+ * vynechána (funkce Fáze 2 — mrtvá CTA neděláme, sekce přečíslovány);
+ * RSS/Newsletter chipy a Konami sníh vynechány (backend/nízká priorita);
+ * cedule „Prozkoumat Krkonoše" a poster CTA vedou na mapu chat (#mapa) —
+ * stránka pohoří přijde s F1d; eyebrow říká „Krkonoše" (fond nese CZ i PL
+ * profily, „Česko" z prototypu by lhalo).
  * Všechna čísla POČÍTANÁ z dat — nikde žádné ručně psané.
  */
 export default async function HomePage() {
@@ -38,53 +53,111 @@ export default async function HomePage() {
   const posledniOvereni = posledniOvereniFondu(index)
   const nedavno = pocetNoveOverenychZa(index, dnes, 14)
   const vyroci = kalendariumVyber(kalendarium, dnes)
-  const overenoFeed = feedNaposledyOvereno(index, 3)
+  const overenoFeed = feedNaposledyOvereno(index, 4)
+
+  // Artefakty koláže z doložených dat: hero fotka + reálný otisk Luční boudy.
+  const lucni = index.find((ch) => ch.slug === 'lucni-bouda') ?? null
+  const polaroid = lucni?.heroUrl
+    ? {
+        url: lucni.heroUrl,
+        popisek: 'Luční bouda, 1 410 m',
+        atribuce: 'foto: Stanislav Dusík · CC BY-SA · Wikimedia Commons',
+      }
+    : null
+  const otiskLucni = lucni?.otiskUrl ? { url: lucni.otiskUrl, alt: lucni.otiskAlt ?? 'otisk razítka Luční boudy' } : null
+
+  const pripravujeme = [
+    { n: 'Jizerské hory', note: 'připravujeme — sbíráme kandidáty' },
+    { n: 'Český ráj', note: 'připravujeme — sbíráme kandidáty' },
+    { n: 'Podkrkonoší', note: 'přesahová oblast — s vysvětlením' },
+  ]
 
   return (
     <>
-      <div className="hf1-jen-obrazovka">
-        <section className="wrap hero">
-          <div className="kick mn">
-            <i aria-hidden="true" />
-            Průvodce horskými chatami · Česko a Slovensko
-          </div>
-          <h1>
-            Každá bouda, <span style={{ color: 'var(--red)' }}>útulna</span> i bivak.
-            <br />S horami, příběhem a <span style={{ color: 'var(--blue)' }}>razítkem</span>.
-          </h1>
-          <p>
-            Připravujeme profily chat s ověřenými otvíračkami a trasami, historii s dobovými
-            pohlednicemi a sbírku razítek jako za mlada. Začínáme Krkonošemi.
-          </p>
+      {/* SVG filtry sdílené kolážovými artefakty a dřevěnými cedulemi */}
+      <svg aria-hidden="true" width="0" height="0" style={{ position: 'absolute' }}>
+        <defs>
+          <filter id="hf1-wood">
+            <feTurbulence type="fractalNoise" baseFrequency="0.016 0.11" numOctaves="4" seed="7" result="n" />
+            <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.30  0 0 0 0 0.17  0 0 0 0 0.06  0 0 0 0.5 0" />
+          </filter>
+        </defs>
+      </svg>
 
-          <div className="hf1-countery">
-            <div>
-              <b>{index.length}</b> <span>profilů chat</span>
+      <div className="hf1-jen-obrazovka">
+        <section className="wrap hf1-hero" aria-label="Úvod">
+          <div className="hf1-hero-text">
+            <div className="hf1-eyebrow">Průvodce horskými chatami · Krkonoše</div>
+            <h1 className="hf1-claim">
+              Chaty, kterým
+              <br />
+              můžeš věřit.
+            </h1>
+            <p className="hf1-perex">
+              Každý údaj má zdroj a datum ověření. Razítka, známky, skládané mapy a příběhy bud — začínáme
+              v Krkonoších.
+            </p>
+
+            <HledaniChat polozky={index.map((ch) => ({ nazev: ch.nazev, url: ch.url }))} />
+
+            <div className="hf1-cedule">
+              <TiltDiv zaklad="rotate(-1deg)" className="hf1-cedule-prkno velke">
+                <Link href="#mapa" className="hf1-cedule-obsah">
+                  <span className="hf1-cedule-kresba" aria-hidden="true">
+                    <svg width="100%" height="100%">
+                      <rect width="100%" height="100%" filter="url(#hf1-wood)" />
+                    </svg>
+                  </span>
+                  <span className="hf1-sroubek" aria-hidden="true" />
+                  <span className="hf1-cedule-titul">PROZKOUMAT KRKONOŠE</span>
+                  <span className="hf1-cedule-pozn">mapa chat</span>
+                </Link>
+              </TiltDiv>
+              <TiltDiv zaklad="rotate(.8deg)" className="hf1-cedule-prkno">
+                <Link href="/chaty" className="hf1-cedule-obsah">
+                  <span className="hf1-cedule-kresba" aria-hidden="true">
+                    <svg width="100%" height="100%">
+                      <rect width="100%" height="100%" filter="url(#hf1-wood)" />
+                    </svg>
+                  </span>
+                  <span className="hf1-sroubek" aria-hidden="true" />
+                  <span className="hf1-cedule-titul">KATALOG CHAT</span>
+                  <span className="hf1-cedule-pozn">{index.length} profilů</span>
+                </Link>
+              </TiltDiv>
             </div>
-            <div>
-              <b>{sRazitkem}</b> <span>s razítkem</span>
-            </div>
-            {zanikle.length > 0 && (
+
+            <div className="hf1-countery">
               <div>
-                <b>{zanikle.length}</b> <span>zaniklých v Atlasu</span>
+                <b>{index.length}</b> <span>profilů chat</span>
               </div>
-            )}
-            {posledniOvereni && (
-              <div className="hf1-overeno">
-                naposledy ověřeno <b>{formatCheckedDatum(posledniOvereni)}</b>
+              <div>
+                <b>{sRazitkem}</b> <span>s razítkem</span>
               </div>
-            )}
+              {zanikle.length > 0 && (
+                <div>
+                  <b>{zanikle.length}</b> <span>zaniklých v Atlasu</span>
+                </div>
+              )}
+              {posledniOvereni && (
+                <div className="hf1-overeno">
+                  naposledy ověřeno <b>{formatCheckedDatum(posledniOvereni)}</b>
+                </div>
+              )}
+            </div>
+            <div className="hf1-pozn">jen čísla doložená v databázi — žádná vymyšlená</div>
+            <div className="hf1-mikroblok">
+              {nedavno > 0 && (
+                <span className="hf1-chip-nedavno">
+                  <i aria-hidden="true" />
+                  {nedavno}× nově ověřeno za 14 dní
+                </span>
+              )}
+              <TiskButton className="hf1-chip-tisk">Tisk seznamu ▸</TiskButton>
+            </div>
           </div>
-          <div className="hf1-pozn">jen čísla doložená v databázi — žádná vymyšlená</div>
-          <div className="hf1-mikroblok">
-            {nedavno > 0 && (
-              <span className="hf1-chip-nedavno">
-                <i aria-hidden="true" />
-                {nedavno}× nově ověřeno za 14 dní
-              </span>
-            )}
-            <TiskButton className="hf1-chip-tisk">Tisk seznamu ▸</TiskButton>
-          </div>
+
+          <HeroKolaz polaroid={polaroid} otiskLucni={otiskLucni} />
         </section>
 
         {vyroci && (
@@ -99,10 +172,70 @@ export default async function HomePage() {
           </section>
         )}
 
-        <MapaChat chaty={chatyProMapu} />
+        <section className="wrap" aria-label="Panorama Krkonoš">
+          <PosterBand zima={jeZimniPoster(dnes)} />
+        </section>
+
+        <section className="wrap sec" aria-label="Pohoří">
+          <div className="hf1-sekce-hlava">
+            <span className="hf1-sekce-num">01</span>
+            <span className="hf1-sekce-titul">Pohoří</span>
+            <span className="hf1-sekce-cara" aria-hidden="true" />
+            <span className="hf1-sekce-tag">pilot → expanze, poctivě</span>
+          </div>
+          <div className="hf1-pohori-grid">
+            <TiltDiv className="hf1-pohori-ziva">
+              <Link href="/chaty" className="hf1-pohori-obsah">
+                <span className="hf1-pohori-panorama" aria-hidden="true">
+                  <svg viewBox="0 0 460 110" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                    <path d="M0,64 L74,34 L140,54 L214,22 L292,52 L360,28 L420,48 L460,36 L460,110 L0,110 Z" fill="#b7c7d4" />
+                    <path d="M214,22 L242,38 L188,44 Z" fill="#f2f5f7" opacity=".9" />
+                    <path d="M0,84 L90,62 L180,80 L280,56 L380,76 L460,60 L460,110 L0,110 Z" fill="#7d9469" />
+                    <path d="M-5,74 C100,66 220,58 330,50 C380,46 430,44 465,40" fill="none" stroke="#fdfaf2" strokeWidth="3" opacity=".65" />
+                  </svg>
+                  <span className="hf1-pohori-zive-badge">ŽIVÉ</span>
+                </span>
+                <span className="hf1-pohori-telo">
+                  <span className="hf1-pohori-nazev">Krkonoše</span>
+                  <span className="hf1-pohori-cisla">
+                    <span>
+                      <b>{index.length}</b> chat
+                    </span>
+                    <span>
+                      <b>{zanikle.length}</b> zaniklých
+                    </span>
+                    <span>
+                      <b>{sRazitkem}</b> s razítkem
+                    </span>
+                  </span>
+                  <span className="hf1-pohori-cta">Prozkoumat ▸</span>
+                </span>
+              </Link>
+            </TiltDiv>
+            {pripravujeme.map((p) => (
+              <div key={p.n} className="hf1-pohori-pripravujeme">
+                <span className="hf1-pohori-silueta" aria-hidden="true">
+                  <span>silueta</span>
+                </span>
+                <span className="hf1-pohori-telo">
+                  <span className="hf1-pohori-nazev tichy">{p.n}</span>
+                  <span className="hf1-pohori-note">{p.note}</span>
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="wrap sec" aria-label="Namátkou z průvodce">
+          <NamatkouPas index={index} seed={denVRoce(dnes)} />
+        </section>
+
+        <div id="mapa">
+          <MapaChat chaty={chatyProMapu} />
+        </div>
 
         <section className="wrap sec" aria-label="Z průvodce">
-          <SectionBar num="04" title="Z průvodce" variant="red" />
+          <SectionBar num="03" title="Z průvodce" variant="red" />
           <div className="hf1-zpruvodce">
             <div className="hf1-panel">
               <div className="hf1-panel-hlava">
@@ -157,6 +290,21 @@ export default async function HomePage() {
                 Otevřít razítkovník ▸
               </Link>
             </div>
+          </div>
+        </section>
+
+        <section className="wrap" aria-label="Jak to děláme">
+          <div className="hf1-manifest">
+            <span className="hf1-label">Jak to děláme</span>
+            <span className="hf1-manifest-bod">
+              <i aria-hidden="true" /> Ověřujeme u zdroje
+            </span>
+            <span className="hf1-manifest-bod">
+              <i aria-hidden="true" /> Rozpory přiznáváme
+            </span>
+            <span className="hf1-manifest-bod">
+              <i aria-hidden="true" /> Nic nedomýšlíme
+            </span>
           </div>
         </section>
         <div style={{ paddingBottom: 30 }} />

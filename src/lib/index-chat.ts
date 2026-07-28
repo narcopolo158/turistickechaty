@@ -149,3 +149,32 @@ export const kalendariumVeta = (polozka: KalendariumPolozka, isoDatum: string): 
   const pred = rokDnes - polozka.rok
   return `Před ${pred} lety (${polozka.rok}) ${polozka.udalost}`
 }
+
+/**
+ * „Namátkou z průvodce" (handoff homepage 02): seedovaný Fisher–Yates nad
+ * celým indexem — deterministický pro daný seed (server i klient vykreslí
+ * totéž, žádný hydration mismatch; „↻ jiných pět" jen zvýší seed). LCG dle
+ * Numerical Recipes (a=1664525, c=1013904223, m=2^32).
+ */
+export const seedovanyVyber = <T>(polozky: T[], seed: number, pocet = 5): T[] => {
+  const kopie = [...polozky]
+  let stav = seed >>> 0
+  const dalsi = () => {
+    stav = (Math.imul(stav, 1664525) + 1013904223) >>> 0
+    return stav / 2 ** 32
+  }
+  for (let i = kopie.length - 1; i > 0; i--) {
+    const j = Math.floor(dalsi() * (i + 1))
+    ;[kopie[i], kopie[j]] = [kopie[j], kopie[i]]
+  }
+  return kopie.slice(0, Math.min(pocet, kopie.length))
+}
+
+/**
+ * Sezónní vrstva poster bandu (handoff: „auto = XII–III zima → zimní tint
+ * + chip; jen kalendář, žádná fake předpověď").
+ */
+export const jeZimniPoster = (isoDatum: string): boolean => {
+  const mesic = Number(isoDatum.slice(5, 7))
+  return mesic === 12 || mesic <= 3
+}
