@@ -19,6 +19,9 @@ const KROKY = [
   // jako jedina z trojice seznamovych kontrol ROZHODUJE: cisty stav je presne
   // nula, takze kazdy zasah je regrese, ne polozka k posouzeni
   ['kolize-jmen', 'kolize nazvu chat v celem korpusu', true],
+  // jedina kontrola mimo datovou vrstvu: definice GitHub Actions. Rozhoduje,
+  // protoze vadny workflow se jinak pozna az na webu Actions (padly beh).
+  ['workflows', 'definice GitHub Actions (.github/workflows)', true],
   ['test-fixtura', 'regresni test kontrol proti fixture', true],
 ] as const
 

@@ -1,15 +1,16 @@
-# DATA-01: export chat Krkonoš z OpenStreetMap — sandbox denních sessions na
-# Overpass API nedosáhne (proxy), GitHub Actions ano. Spouští se ručně jedním
-# klikem (Actions → „DATA-01: OSM export chat Krkonoš" → Run workflow).
+# DATA-01: export chat z OpenStreetMap pro zvolenou oblast — sandbox denních
+# sessions na Overpass API nedosáhne (proxy), GitHub Actions ano. Spouští se
+# ručně jedním klikem (Actions → „DATA-01: OSM export chat (dle oblasti)" →
+# Run workflow → vyber oblast).
 #
 # Běh: (1) stáhne surový JSON export (commituje se jako doklad — nese
 # timestamp stavu OSM dat i copyright hlavičku Overpass), (2) v témže běhu
-# ho transformační skript převede na YAML KANDIDÁTŮ v data/kandidati/krkonose/
+# ho transformační skript převede na YAML KANDIDÁTŮ v data/kandidati/<oblast>/
 # — kandidáti NEJSOU na webu (seed čte jen data/chaty/**); do data/chaty/ se
 # povyšují ručně až po křížovém ověření (DATA-03). Ruční profily (Luční
 # bouda) se nikdy nepřepisují — skript je jen porovná v reportu (summary).
 # Opakované spuštění je idempotentní — přidá jen nově vzniklé objekty.
-name: 'DATA-01: OSM export chat Krkonoš'
+name: 'DATA-01: OSM export chat (dle oblasti)'
 
 on:
   workflow_dispatch:
@@ -18,7 +19,6 @@ on:
         description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory'
         required: false
         default: 'krkonose'
-    inputs:
       api:
         description: 'Overpass endpoint — nech prázdné (skript zkouší overpass-api.de a při selhání zrcadlo kumi.systems); vyplň jen pro vynucení konkrétní instance'
         required: false
@@ -33,7 +33,7 @@ concurrency:
 
 jobs:
   export:
-    name: Overpass → kandidáti (data/kandidati/krkonose)
+    name: Overpass → kandidáti (data/kandidati)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -51,14 +51,18 @@ jobs:
         shell: bash
         env:
           API_INPUT: ${{ inputs.api }}
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
         run: |
           ARG=()
           if [ -n "$API_INPUT" ]; then ARG=(--api "$API_INPUT"); fi
-          npx tsx scripts/data01-overpass-krkonose.ts --oblast "${{ inputs.oblast || 'krkonose' }}" "${ARG[@]}" | tee report.txt
+          npx tsx scripts/data01-overpass-krkonose.ts --oblast "$OBLAST" "${ARG[@]}" | tee report.txt
           echo '## DATA-01 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit exportu a kandidátů do main
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -68,7 +72,7 @@ jobs:
             exit 0
           fi
           pocet=$(git diff --cached --name-only --diff-filter=A -- 'data/kandidati/**/*.yaml' | wc -l)
-          git commit -m "data: OSM Overpass export chat Krkonoš — kandidáti (+${pocet} nových, z Actions)" \
+          git commit -m "data: OSM Overpass export chat (${OBLAST}) — kandidáti (+${pocet} nových, z Actions)" \
             -m 'Zdroj: OpenStreetMap (ODbL), tourism=alpine_hut/wilderness_hut/hut, vše verified: false. Kandidáti nejsou na webu — do data/chaty/ povyšovat po křížovém ověření (DATA-03).'
           git pull --rebase origin main
           git push origin main

@@ -402,6 +402,41 @@ nově filtrovaný na oblast. Ověřeno lokálně buildem i běžící aplikací:
 286 testů, tsc/lint/kontrola čisté. **Čeká na Michala: dva kliky** —
 DATA-01 a DATA-28, u obou vybrat oblast `jizerske-hory`.
 
+**Dodatek 18 (týž den, z Michalova screenshotu Actions): TY DVA KLIKY BY
+NEBYLY FUNGOVALY — rozbil jsem workflow a poznalo se to až na webu.**
+Michal se ptal, jestli „DATA-01" je ten Overpass; na screenshotu ale byla
+vidět důležitější věc: běh **#6 na commitu eb7fd57 je červený**, a workflow
+je v levém sloupci Actions vedený jako holá cesta
+`.github/workflows/data01-overpass.yml` místo svým jménem. **Příčina je
+moje včerejší úprava:** vstup `oblast` jsem přidal jako **druhý klíč
+`inputs:`** vedle původního `api` místo do něj. Duplicitní klíč je
+nevalidní YAML, GitHub soubor odmítne **celý** — proto ztratil jméno,
+proto padl push (běh **nemá trvání**, na rozdíl od #4 a #5; nespustil se,
+jen se rovnou označil za „Invalid workflow file") a tlačítko Run workflow
+by nabízelo starou definici bez výběru oblasti. Nezachytil to **ani lint,
+ani tsc, ani build, ani CI** — soubor není součástí aplikace, tedy dosud
+jediná cesta do repa, kterou nikdo nekontroloval. (Červené #4 a #5 z 20. 7.
+jsou starší běhy z jiné příčiny, ty jsem dnes nezkoumal.)
+**Opraveno:** oba `inputs` sloučeny; oblast se do skriptu předává přes
+`env: OBLAST` a čte jako `"$OBLAST"` — stejně jako `API_INPUT`/`LIMIT_INPUT`
+jinde v repu, takže se hodnota z formuláře nelepí do příkazu; commit
+message obou workflow nese oblast (dřív hlásily „Krkonoš" i pro Jizerky).
+Workflow se **přejmenovaly** podle toho, čím teď jsou: „DATA-01: OSM export
+chat (dle oblasti)" a „DATA-28: 3D terén (dle oblasti)" — Michalova otázka
+byla oprávněná, staré názvy slibovaly Krkonoše.
+**Aby se to neopakovalo:** nová kontrola `scripts/kontrola/workflows.ts`
+v `npm run kontrola` (rozhoduje, tedy shodí CI) — šest tříd: nevalidní YAML,
+chybějící `name:`, chybějící kostra, `inputs.X` bez deklarace, `inputs.X`
+bez zálohy `|| 'výchozí'` tam, kde workflow spouští i push, a vyplnitelná
+hodnota interpolovaná rovnou do `run:`. O `secrets.*` mlčí vědomě (secret
+zadává majitel repa, GitHub ho maskuje — hlásit ho by znamenalo přepsat
+funkční SSH nasazení kvůli riziku, které tam není), a hlídá to i „tichá"
+ukázka v self-testu. Regresní pojistkou je **self-test uvnitř skriptu**
+(8 ukázek v paměti, běží před každou kontrolou). Že chytí skutečnou škodu,
+je **doloženo měřením, ne vírou**: `git show eb7fd57:…/data01-overpass.yml`
+→ `[A] ř. 21 Map keys must be unique` — přesně ten řádek. Celé repo:
+13 workflow, 0 vad; `npm run kontrola` zelené, lint i tsc čisté.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

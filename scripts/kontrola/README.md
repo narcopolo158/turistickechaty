@@ -3,9 +3,12 @@
 Pět skriptů, které hlídají to, co dělá tenhle web webem: **že se údaje dají
 ověřit a že se nic nedomýšlí**. Nejsou to unit testy aplikace — čtou YAML
 profily v `data/chaty/**` a hlásí, kde próza tvrdí víc, než co je doložené.
+Šestý, `workflows.ts`, do datové vrstvy nepatří vůbec: hlídá definice GitHub
+Actions, protože tudy do repa vede jediná cesta, kterou nekontroluje ani lint,
+ani build (viz níže).
 
 ```
-npm run kontrola        # spustí všech pět + regresní test
+npm run kontrola        # spustí všech šest + regresní test
 npm run kontrola:test   # jen regresní test proti fixtuře
 ```
 
@@ -17,6 +20,7 @@ npx tsx scripts/kontrola/zdroje.ts       [soubor.yaml …]
 npx tsx scripts/kontrola/ban-scan.ts     [soubor.yaml …]
 npx tsx scripts/kontrola/audit-mech.ts   [soubor.yaml …]
 npx tsx scripts/kontrola/kolize-jmen.ts  [soubor.yaml …]
+npx tsx scripts/kontrola/workflows.ts    [soubor.yml …]
 ```
 
 `kolize-jmen.ts` je jediný, který sám od sebe čte i `data/kandidati/**` —
@@ -181,6 +185,38 @@ jako `oblast/slug`, ne jako cesta k souboru — jinak by kontrola hlásila
 čtyřicet „kolizí", což jsou samé případy téhož objektu ve dvou patrech
 (publikovaný profil × kandidát). Oblast v totožnosti zůstat musí: bez ní by
 filtr „týž slug ⇒ týž objekt" zakryl přesně to, kvůli čemu kontrola vznikla.
+
+**`workflows.ts` — verdikt.** Jediná kontrola mimo datovou vrstvu: čte
+`.github/workflows/*.yml`. Vznikla z konkrétní škody 28. 7. 2026 — do repa se
+dostal `data01-overpass.yml` se **dvěma klíči `inputs:` pod sebou** (nový vstup
+`oblast` se přidal vedle původního `api` místo do něj). Duplicitní klíč je
+nevalidní YAML, GitHub soubor odmítne celý, a pozná se to jen na webu Actions:
+workflow zmizí ze seznamu pod svým jménem a zůstane tam holá cesta
+`.github/workflows/data01-overpass.yml`, push rovnou založí padlý běh
+(„Invalid workflow file") a tlačítko **Run workflow** nabízí staré vstupy.
+Ani lint, ani typecheck, ani build o tom nevědí — ten soubor není součástí
+aplikace. Kontrolovaných tříd je šest: **A** nevalidní YAML (sem spadl i ten
+duplicitní klíč) · **B** chybí `name:` · **C** chybí `on:`/`jobs:`, job bez
+`runs-on` nebo bez `steps` · **D** `inputs.X`, které není deklarované ve
+`workflow_dispatch.inputs` (GitHub takový výraz nezhavaruje, jen tiše dosadí
+prázdno) · **E** `inputs.X` bez zálohy `|| 'výchozí'` ve workflow, které má
+i jiný spouštěč než `workflow_dispatch` (při pushi je kontext `inputs` prázdný)
+· **F** vyplnitelná hodnota interpolovaná rovnou do `run:` místo přes `env:`.
+
+Třída **F** vědomě mlčí o `secrets.*`. Secret nevyplňuje ten, kdo běh spouští,
+ale majitel repa v nastavení, a GitHub ho v logu maskuje — hlásit ho by
+znamenalo přepsat funkční SSH nasazení kvůli riziku, které tam není. Hlídají se
+jen kontexty, jejichž obsah píše odesilatel běhu: `inputs.*`, `github.event.*`,
+`github.head_ref`, `github.ref_name`. Aby se hranice nerozšířila zpátky
+nedopatřením, má self-test i **tichou ukázku**: secret v `run:` se hlásit nesmí.
+
+Regresní pojistkou téhle kontroly není fixtura na disku, ale **self-test
+v samotném skriptu** — osm ukázek v paměti (šest vadných, jedna čistá, jedna
+tichá), které proběhnou před každým během. Vadné ukázky nejsou opsané ze
+zadání: každá vznikla úpravou té čisté, takže se nedá „projít" tím, že by
+kontrola přestala fungovat úplně. Že chytí i skutečnou škodu, se ověřilo
+měřením na původním souboru: `git show eb7fd57:.github/workflows/data01-overpass.yml`
+→ `[A] ř. 21 Map keys must be unique` — přesně ten řádek, na kterém to prasklo.
 
 ## Proč je `kolize-jmen.ts` jediná ze seznamových kontrol, která rozhoduje
 
