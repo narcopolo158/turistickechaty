@@ -44,6 +44,22 @@ pokračování čtyřbloku F1 (session 2/4: kontrola deploye 6 večerních
 commitů v Actions, vizuální kontrola katalogu/homepage na stagingu, F1c
 2. průchod — hero koláž).
 
+**Dodatek (ruční pokračování s Michalem, ráno 28. 7.):** (1) Michal
+potvrdil: **Portáš = horská chata/hotel na hřebeni Javorníků** → pár
+zapsán do `nesouvisi`; (2) k „Chatka AKT na Pietraszonce" doložen cizí
+objekt titulky vyhledávání (Istebna, Beskid Śląski — akt.gliwice.pl,
+pl.wikipedia, slaskie.travel; checked 2026-07-28) → `nesouvisi`; ke
+kontrole zbývá 30 párů. (3) Michal spustil DATA-02 (#4 běží) a poslal
+screenshot Actions: **deploye #17 a #18 (dnešní commity) spadly** —
+příčina nalezena v kódu: seed bere rekurzivně všechny YAML pod
+`data/razitka/` a nový meta soubor `_parovani-potvrzene.yaml` nemá pole
+`chata` → „chata undefined neexistuje". Oprava: `yamlSoubory` v seedu
+přeskakuje soubory s prefixem `_` (konvence meta souborů — `_otisky.json`,
+`_vyrazeno.yaml`); doloženo průchodem: razítka 47 YAML (beze změny počtu
+záznamů), meta vyloučen, chaty 76 / oblasti 1 / střediska 7 beze změny.
+Večerní deploy F1c (#16, commit 9603c1e) prošel — staging má katalog
+i homepage z čtyřbloku, vizuální kontrola dává smysl.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

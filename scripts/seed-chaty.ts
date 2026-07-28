@@ -19,7 +19,7 @@
  * (profil má fallback siluetu, nic se nevymýšlí).
  */
 import { readdirSync, readFileSync } from 'node:fs'
-import { dirname, join } from 'node:path'
+import { basename, dirname, join } from 'node:path'
 
 import { getPayload, type RequiredDataFromCollectionSlug } from 'payload'
 import { parse } from 'yaml'
@@ -50,10 +50,13 @@ const lexical = (odstavce: string[]) => ({
   },
 })
 
+// Soubory s prefixem `_` jsou meta soubory (redakční seznamy, manifesty —
+// např. data/razitka/_parovani-potvrzene.yaml), NE datové záznamy: seed je
+// přeskakuje. Bez toho seed spadl na „chata undefined neexistuje" (deploy #17).
 const yamlSoubory = (slozka: string, rekurzivne = true): string[] => {
   try {
     return readdirSync(slozka, { recursive: rekurzivne, encoding: 'utf8' })
-      .filter((f) => f.endsWith('.yaml'))
+      .filter((f) => f.endsWith('.yaml') && !basename(f).startsWith('_'))
       .map((f) => join(slozka, f))
   } catch {
     return []
