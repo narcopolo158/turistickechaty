@@ -624,6 +624,21 @@ zapsáno do dokladu jako otevřená otázka, výšku nepřepisuji.
 **DATA-31** znovu (po opravě diakritiky), (c) klik na **DATA-06** — osm nových
 poloh znamená, že se pro ně dají spočítat přístupové trasy (dosud 63 ze 76).
 
+**Dodatek 25 (týž den, Michalova poznámka „rezek je i zastávka autobusu"):
+dohledávka se nově ptá i podle WEBU profilu.** Přesně to je ten případ, kdy
+jméno netřídí: „Rezek" je v OSM osada, zastávka, rozcestník i restaurace,
+takže částečná shoda vrátí deset objektů a žádný z nich se nedá potvrdit.
+Co ale profily mají a dosud se nevyužívalo, je `kontakty.web` — a odkaz na
+týž web není náhoda. DATA-31 proto přidala druhou a třetí větev dotazu
+(`website` a `contact:website` na doménu z profilu) a nová síla důkazu zní
+**web > přesné jméno > jádro jména**; nález podle webu se v reportu jmenuje
+SHODA WEBU a řadí se první. Vedlejší efekt: takový objekt se najde, i když
+`name` nemá vůbec — dřív se zahodil hned. Všechny čtyři zbylé profily web
+mají (hotelrezek.cz, chatarozhled.cz, petrovyboudy.cz, pttk.jgora.pl), takže
+příští běh má čím je chytit. +3 testy (327 celkem), lint, tsc i kontrola čisté.
+**Čeká na Michala:** klik na **DATA-31** (teď už s webovou větví i s opravenou
+diakritikou) a klik na **DATA-06** kvůli přístupovým trasám osmi nových poloh.
+
 **Otázky pro Michala:** (0) **Jaký `typ` mají dostat rozhledny s občerstvením?**
 Číselník z plánu kap. 5 zná obsluhovaná / útulna / bivak / horský hotel —
 přidat pátou hodnotu `rozhledna`, nebo je vést jako obsluhované s poznámkou?

@@ -15,9 +15,11 @@
  * ověřeno v surových exportech, ani jeden z dvanácti v nich není.
  *
  * CO SKRIPT DĚLÁ: pro zvolenou oblast najde profily bez GPS, zeptá se
- * Overpassu na objekty JMÉNEM (bez ohledu na tag) v okně oblasti a sestaví
- * REPORT s nálezy — u každého tagy, obec z OSM proti obci z profilu a typ
- * shody jména. **Nic nezapisuje do profilů.** Precedens je čerstvý: 27. 7.
+ * Overpassu na objekty JMÉNEM (bez ohledu na tag) a na objekty s TÝMŽ WEBEM,
+ * jaký nese profil, a sestaví REPORT s nálezy — u každého tagy, obec z OSM
+ * proti obci z profilu a síla důkazu (web > přesné jméno > jádro jména).
+ * Web přibyl 28. 7. 2026 po Michalově poznámce „rezek je i zastávka
+ * autobusu": obecné jméno netřídí, kdežto odkaz na týž web ano. **Nic nezapisuje do profilů.** Precedens je čerstvý: 27. 7.
  * 2026 se ukázalo, že Lovecká chata seděla na mapě 10 km vedle kvůli záměně
  * OSM entit; jméno samo tedy identitu neprokazuje a poslední slovo má redakce.
  * Návrhy se ukládají do `data/kandidati/<oblast>/_gps-navrhy.yaml`, odkud je
@@ -43,7 +45,19 @@ import {
 } from './data01-overpass-krkonose'
 import { bboxStr, oblastZArgv } from './oblasti'
 
-export type ProfilBezGps = { slug: string; nazev: string; obec: string | null }
+export type ProfilBezGps = { slug: string; nazev: string; obec: string | null; webDomena: string | null }
+
+/**
+ * Doména z `kontakty.web` profilu — pro dohledávku je to nejsilnější stopa,
+ * jakou máme: jméno v OSM se liší nebo je obecné („Rezek" je taky autobusová
+ * zastávka, jak upozornil Michal 28. 7. 2026), kdežto `website` na objektu
+ * ukazuje na týž web jako profil, a to shoda náhodou nebývá.
+ */
+export const domenaZUrl = (url: unknown): string | null => {
+  if (typeof url !== 'string') return null
+  const m = url.match(/^(?:https?:\/\/)?(?:www\.)?([a-z0-9.-]+\.[a-z]{2,})/iu)
+  return m ? m[1].toLowerCase() : null
+}
 
 /** Porovnávací tvar jména: bez diakritiky, malá písmena, jedna mezera. */
 export const normJmeno = (s: string): string =>
@@ -78,10 +92,12 @@ export const profilyBezGps = (adresar: string): ProfilBezGps[] => {
     const d = (parse(readFileSync(join(adresar, f), 'utf8')) ?? {}) as Record<string, unknown>
     if (typeof d.lat === 'number' && typeof d.lng === 'number') continue
     if (typeof d.nazev !== 'string') continue
+    const kontakty = (d.kontakty ?? {}) as Record<string, unknown>
     out.push({
       slug: typeof d.slug === 'string' ? d.slug : f.replace(/\.yaml$/u, ''),
       nazev: d.nazev,
       obec: typeof d.obec === 'string' ? d.obec : null,
+      webDomena: domenaZUrl(kontakty.web),
     })
   }
   return out
@@ -95,18 +111,29 @@ const escRegex = (s: string): string => s.replace(/[\\^$.*+?()[\]{}|"]/gu, (z) =
  * názvů se ptá i na jádra („Pod Studničnou"), protože OSM jméno bývá bez
  * typového slova; volnější shodu pak report označí a rozhodne o ní redakce.
  */
-export const overpassDotazJmena = (iso: string, jmena: string[], okno: string): string => {
+export const overpassDotazJmena = (iso: string, jmena: string[], okno: string, domeny: string[] = []): string => {
   const alternativy = [...new Set(jmena.map((j) => j.trim()).filter(Boolean).map(escRegex))].join('|')
+  const web = [...new Set(domeny.map((d) => d.trim().toLowerCase()).filter(Boolean).map(escRegex))].join('|')
+  // Druhá a třetí větev hledá podle WEBU profilu — objekt se může jmenovat
+  // jinak (nebo obecně), ale odkaz na týž web je stopa, která nelže.
+  const vetve = [
+    `  nwr["name"~"${alternativy}",i](area.stat)(${okno});`,
+    ...(web
+      ? [`  nwr["website"~"${web}",i](area.stat)(${okno});`, `  nwr["contact:website"~"${web}",i](area.stat)(${okno});`]
+      : []),
+  ]
   return `[out:json][timeout:180];
 area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
-nwr["name"~"${alternativy}",i](area.stat)(${okno});
+(
+${vetve.join('\n')}
+);
 out center;`
 }
 
 export type Nalez = {
   osm: string
   nazev: string
-  typShody: 'presna' | 'castecna'
+  typShody: 'web' | 'presna' | 'castecna'
   lat: number
   lng: number
   obecOsm: string | null
@@ -123,25 +150,32 @@ export const sparujNalezy = (profily: ProfilBezGps[], elementy: OsmElement[]): N
     const jadro = jadroJmena(p.nazev)
     const nalezy: Nalez[] = []
     for (const el of elementy) {
-      const jmeno = el.tags?.name
       const gps = souradnice(el)
-      if (!jmeno || !gps) continue
-      const n = normJmeno(jmeno)
-      const presna = n === cil
+      if (!gps) continue
+      const jmeno = el.tags?.name
+      // Web nad jméno: objekt bez jména nebo s obecným jménem („Rezek" je
+      // i autobusová zastávka) se pozná podle odkazu na týž web jako profil.
+      const webObjektu = `${el.tags?.website ?? ''} ${el.tags?.['contact:website'] ?? ''}`.toLowerCase()
+      const shodaWebu = !!p.webDomena && webObjektu.includes(p.webDomena)
+      if (!jmeno && !shodaWebu) continue
+      const n = jmeno ? normJmeno(jmeno) : ''
+      const presna = !!jmeno && n === cil
       // Jádro musí mít aspoň tři znaky, jinak by „U Kotle" chytalo půl pohoří.
-      const castecna = !presna && jadro.length >= 3 && (n.includes(jadro) || jadroJmena(jmeno) === jadro)
-      if (!presna && !castecna) continue
+      const castecna = !!jmeno && !presna && jadro.length >= 3 && (n.includes(jadro) || jadroJmena(jmeno) === jadro)
+      if (!shodaWebu && !presna && !castecna) continue
       nalezy.push({
         osm: osmUrl(el),
-        nazev: jmeno,
-        typShody: presna ? 'presna' : 'castecna',
+        nazev: jmeno ?? '(bez jména)',
+        typShody: shodaWebu ? 'web' : presna ? 'presna' : 'castecna',
         lat: gps.lat,
         lng: gps.lng,
         obecOsm: el.tags?.['addr:city'] ?? null,
         tagy: ZAJIMAVE_TAGY.filter((t) => el.tags?.[t]).map((t) => `${t}=${el.tags![t]}`).join(', '),
       })
     }
-    nalezy.sort((a, b) => (a.typShody === b.typShody ? a.nazev.localeCompare(b.nazev, 'cs') : a.typShody === 'presna' ? -1 : 1))
+    // Pořadí síly důkazu: web > přesné jméno > jádro jména.
+    const sila = { web: 0, presna: 1, castecna: 2 } as const
+    nalezy.sort((a, b) => sila[a.typShody] - sila[b.typShody] || a.nazev.localeCompare(b.nazev, 'cs'))
     return { slug: p.slug, nazev: p.nazev, obecProfilu: p.obec, nalezy }
   })
 
@@ -154,6 +188,9 @@ export const sestavReport = (navrhy: NavrhGps[], oblastNazev: string): string =>
   s.push('')
   s.push(`Profilů bez GPS: **${navrhy.length}** · s nálezem v OSM: **${s1.length}** · bez nálezu: **${bez.length}**`)
   s.push('')
+  s.push('Síla důkazu klesá shora dolů: SHODA WEBU (objekt odkazuje na týž web')
+  s.push('jako profil) → přesná shoda jména → částečná shoda jádra názvu.')
+  s.push('')
   s.push('Nálezy jsou NÁVRHY, ne fakta: shoda jména identitu neprokazuje (27. 7. 2026')
   s.push('seděla Lovecká chata na mapě 10 km vedle kvůli záměně OSM entit). Než se')
   s.push('souřadnice zapíšou do profilu, potvrdí je redakce — pomůckou je obec:')
@@ -164,7 +201,8 @@ export const sestavReport = (navrhy: NavrhGps[], oblastNazev: string): string =>
     for (const x of n.nalezy) {
       const obec = x.obecOsm ? `obec OSM: ${x.obecOsm}` : 'obec v OSM chybí'
       const varovani = x.obecOsm && n.obecProfilu && normJmeno(x.obecOsm) !== normJmeno(n.obecProfilu) ? ' ⚠ obec nesedí' : ''
-      s.push(`- **${x.typShody === 'presna' ? 'přesná shoda' : 'částečná shoda'}** „${x.nazev}" — ${x.lat}, ${x.lng} · ${obec}${varovani}`)
+      const stitek = { web: 'SHODA WEBU', presna: 'přesná shoda jména', castecna: 'částečná shoda jména' }[x.typShody]
+      s.push(`- **${stitek}** „${x.nazev}" — ${x.lat}, ${x.lng} · ${obec}${varovani}`)
       s.push(`  - ${x.tagy || 'bez zajímavých tagů'} — ${x.osm}`)
     }
     s.push('')
@@ -200,6 +238,7 @@ const main = async () => {
   for (const p of profily) console.log(`  - ${p.nazev}${p.obec ? ` (${p.obec})` : ''}`)
 
   const jmena = [...profily.map((p) => p.nazev), ...profily.map((p) => jadroProDotaz(p.nazev)).filter((j) => j.length >= 3)]
+  const domeny = profily.map((p) => p.webDomena).filter((d): d is string => !!d)
   const elementy: OsmElement[] = []
   for (const { zeme, iso } of [
     { zeme: 'cz', iso: 'CZ' },
@@ -214,10 +253,10 @@ const main = async () => {
       }
       raw = readFileSync(soubor, 'utf8')
     } else {
-      console.log(`Overpass dotaz ${iso} — hledám ${jmena.length} jmen v okně ${okno}…`)
+      console.log(`Overpass dotaz ${iso} — hledám ${jmena.length} jmen a ${domeny.length} webů v okně ${okno}…`)
       // Prázdná odpověď je tu legitimní výsledek: v Polsku nemusí být ani jedno
       // z hledaných jmen, a pád běhu by z toho udělal chybu, kterou to není.
-      const vysledek = await stahniOverpass(instance, overpassDotazJmena(iso, jmena, okno), { povolitPrazdno: true })
+      const vysledek = await stahniOverpass(instance, overpassDotazJmena(iso, jmena, okno, domeny), { povolitPrazdno: true })
       raw = vysledek.raw
       mkdirSync(kandAdr, { recursive: true })
       writeFileSync(soubor, raw, 'utf8')

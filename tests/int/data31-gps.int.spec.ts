@@ -15,6 +15,7 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 
 import {
+  domenaZUrl,
   jadroJmena,
   jadroProDotaz,
   normJmeno,
@@ -33,13 +34,17 @@ describe('výběr profilů bez GPS', () => {
     const tmp = mkdtempSync(join(tmpdir(), 'data31-'))
     mkdirSync(tmp, { recursive: true })
     writeFileSync(join(tmp, 'ma-gps.yaml'), 'nazev: Má GPS\nslug: ma-gps\nlat: 50.7\nlng: 15.6\n', 'utf8')
-    writeFileSync(join(tmp, 'bez-gps.yaml'), 'nazev: Erlebachova bouda\nslug: erlebachova-bouda\nobec: Špindlerův Mlýn\n', 'utf8')
+    writeFileSync(
+      join(tmp, 'bez-gps.yaml'),
+      'nazev: Erlebachova bouda\nslug: erlebachova-bouda\nobec: Špindlerův Mlýn\nkontakty:\n  web: https://www.erlebachovabouda.cz/\n',
+      'utf8',
+    )
     writeFileSync(join(tmp, 'jen-sirka.yaml'), 'nazev: Půlka\nslug: pulka\nlat: 50.7\n', 'utf8')
     writeFileSync(join(tmp, '_meta.yaml'), 'neco: jiného\n', 'utf8')
 
     expect(profilyBezGps(tmp)).toEqual([
-      { slug: 'erlebachova-bouda', nazev: 'Erlebachova bouda', obec: 'Špindlerův Mlýn' },
-      { slug: 'pulka', nazev: 'Půlka', obec: null },
+      { slug: 'erlebachova-bouda', nazev: 'Erlebachova bouda', obec: 'Špindlerův Mlýn', webDomena: 'erlebachovabouda.cz' },
+      { slug: 'pulka', nazev: 'Půlka', obec: null, webDomena: null },
     ])
     expect(profilyBezGps(join(tmp, 'neexistuje'))).toEqual([])
   })
@@ -91,10 +96,41 @@ describe('dotaz', () => {
   })
 })
 
+describe('shoda podle webu profilu', () => {
+  it('doména se vytáhne z URL bez ohledu na protokol a www', () => {
+    expect(domenaZUrl('https://www.hotelrezek.cz/')).toBe('hotelrezek.cz')
+    expect(domenaZUrl('http://portasky.cz')).toBe('portasky.cz')
+    expect(domenaZUrl('www.pttk.jgora.pl/kontakt')).toBe('pttk.jgora.pl')
+    expect(domenaZUrl(undefined)).toBeNull()
+    expect(domenaZUrl('telefon 481 582 334')).toBeNull()
+  })
+
+  it('dotaz přidá větev na website i contact:website, když profily web mají', () => {
+    const dotaz = overpassDotazJmena('CZ', ['Chata Rezek'], '1,2,3,4', ['hotelrezek.cz'])
+    expect(dotaz).toContain('["website"~"hotelrezek\\.cz",i]')
+    expect(dotaz).toContain('["contact:website"~"hotelrezek\\.cz",i]')
+    expect(overpassDotazJmena('CZ', ['Chata Rezek'], '1,2,3,4')).not.toContain('website')
+  })
+
+  // Michal 28. 7. 2026: „rezek je i zastávka autobusu" — jméno tu netřídí,
+  // proto se web bere jako silnější důkaz a řadí se v reportu první.
+  it('objekt s týmž webem je nález i bez shody jména a stojí před jmennými', () => {
+    const profily: ProfilBezGps[] = [{ slug: 'chata-rezek', nazev: 'Chata Rezek', obec: 'Vítkovice', webDomena: 'hotelrezek.cz' }]
+    const [r] = sparujNalezy(profily, [
+      node(1, { name: 'Horní Dušnice, Rezek' }, 50.706, 15.514),
+      node(2, { name: 'Horský hotel', website: 'https://www.hotelrezek.cz/' }, 50.7063, 15.5146),
+      { type: 'way', id: 3, center: { lat: 50.7064, lon: 15.5147 }, tags: { 'contact:website': 'hotelrezek.cz' } },
+    ])
+    expect(r.nalezy.map((x) => x.typShody)).toEqual(['web', 'web', 'castecna'])
+    expect(r.nalezy[0].nazev).toBe('(bez jména)') // objekt bez name se dřív zahodil
+    expect(sestavReport(r ? [r] : [], 'Krkonoše')).toContain('SHODA WEBU')
+  })
+})
+
 describe('párování nálezů', () => {
   const profily: ProfilBezGps[] = [
-    { slug: 'erlebachova-bouda', nazev: 'Erlebachova bouda', obec: 'Špindlerův Mlýn' },
-    { slug: 'chata-pod-studnicnou', nazev: 'Chata Pod Studničnou', obec: 'Pec pod Sněžkou' },
+    { slug: 'erlebachova-bouda', nazev: 'Erlebachova bouda', obec: 'Špindlerův Mlýn', webDomena: 'erlebachovabouda.cz' },
+    { slug: 'chata-pod-studnicnou', nazev: 'Chata Pod Studničnou', obec: 'Pec pod Sněžkou', webDomena: null },
   ]
 
   it('rozliší přesnou a částečnou shodu a přesnou dá první', () => {
