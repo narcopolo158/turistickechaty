@@ -5,7 +5,6 @@ import HeroKolaz from '@/components/HeroKolaz'
 import HledaniChat from '@/components/HledaniChat'
 import MapaChat from '@/components/MapaChat'
 import NamatkouPas from '@/components/NamatkouPas'
-import PosterBand from '@/components/PosterBand'
 import TiltDiv from '@/components/TiltDiv'
 import TiskButton from '@/components/TiskButton'
 import { SectionBar } from '@/components/ui'
@@ -13,7 +12,6 @@ import { getChatyProMapu, getIndexChat } from '@/lib/chaty'
 import {
   denVRoce,
   feedNaposledyOvereno,
-  jeZimniPoster,
   kalendariumVeta,
   kalendariumVyber,
   pocetNoveOverenychZa,
@@ -31,16 +29,17 @@ export const revalidate = 3600
  * screenshots 01–05): hero „sběratelský stůl" (koláž faux-3D artefaktů
  * z DOLOŽENÝCH dat — hero fotka a reálný otisk Luční, známka č. 11),
  * dřevěné rozcestníkové CTA, poctivé countery s mikroblokem, kalendárium,
- * statický poster band (zimní vrstva jen dle kalendáře), pohoří grid,
- * „Namátkou z průvodce" (seedovaný Fisher–Yates), mapa chat, kurátorské
- * pásy Z průvodce, manifest a printový seznam (B13).
+ * turistická mapa chat, pohoří grid, „Namátkou z průvodce" (seedovaný
+ * Fisher–Yates), kurátorské pásy Z průvodce, manifest a printový
+ * seznam (B13).
  *
  * Vědomé odchylky od prototypu (deník 28. 7. 2026): sekce 03 Pohlednice
  * vynechána (funkce Fáze 2 — mrtvá CTA neděláme, sekce přečíslovány);
  * RSS/Newsletter chipy a Konami sníh vynechány (backend/nízká priorita);
- * cedule „Prozkoumat Krkonoše" a poster CTA vedou na mapu chat (#mapa) —
- * stránka pohoří přijde s F1d; eyebrow říká „Krkonoše" (fond nese CZ i PL
- * profily, „Česko" z prototypu by lhalo).
+ * eyebrow říká „Krkonoše" (fond nese CZ i PL profily, „Česko" z prototypu
+ * by lhalo). Malovaný poster band z návrhu NAHRAZEN skutečnou turistickou
+ * mapou chat (rozhodnutí Michala 28. 7. 2026: 3D patří na stránku pohoří,
+ * homepage nese reálnou mapu — dlaždice Mapy.com outdoor s markery).
  * Všechna čísla POČÍTANÁ z dat — nikde žádné ručně psané.
  */
 export default async function HomePage() {
@@ -102,7 +101,7 @@ export default async function HomePage() {
 
             <div className="hf1-cedule">
               <TiltDiv zaklad="rotate(-1deg)" className="hf1-cedule-prkno velke">
-                <Link href="#mapa" className="hf1-cedule-obsah">
+                <Link href="/cesko/krkonose" className="hf1-cedule-obsah">
                   <span className="hf1-cedule-kresba" aria-hidden="true">
                     <svg width="100%" height="100%">
                       <rect width="100%" height="100%" filter="url(#hf1-wood)" />
@@ -110,7 +109,7 @@ export default async function HomePage() {
                   </span>
                   <span className="hf1-sroubek" aria-hidden="true" />
                   <span className="hf1-cedule-titul">PROZKOUMAT KRKONOŠE</span>
-                  <span className="hf1-cedule-pozn">mapa chat</span>
+                  <span className="hf1-cedule-pozn">stránka pohoří · 3D mapa</span>
                 </Link>
               </TiltDiv>
               <TiltDiv zaklad="rotate(.8deg)" className="hf1-cedule-prkno">
@@ -172,9 +171,11 @@ export default async function HomePage() {
           </section>
         )}
 
-        <section className="wrap" aria-label="Panorama Krkonoš">
-          <PosterBand zima={jeZimniPoster(dnes)} />
-        </section>
+        {/* Skutečná turistická mapa (dlaždice Mapy.com outdoor + markery
+            všech chat) — na místě, kde měl návrh malovaný poster. */}
+        <div id="mapa">
+          <MapaChat chaty={chatyProMapu} />
+        </div>
 
         <section className="wrap sec" aria-label="Pohoří">
           <div className="hf1-sekce-hlava">
@@ -185,7 +186,7 @@ export default async function HomePage() {
           </div>
           <div className="hf1-pohori-grid">
             <TiltDiv className="hf1-pohori-ziva">
-              <Link href="/chaty" className="hf1-pohori-obsah">
+              <Link href="/cesko/krkonose" className="hf1-pohori-obsah">
                 <span className="hf1-pohori-panorama" aria-hidden="true">
                   <svg viewBox="0 0 460 110" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
                     <path d="M0,64 L74,34 L140,54 L214,22 L292,52 L360,28 L420,48 L460,36 L460,110 L0,110 Z" fill="#b7c7d4" />
@@ -229,10 +230,6 @@ export default async function HomePage() {
         <section className="wrap sec" aria-label="Namátkou z průvodce">
           <NamatkouPas index={index} seed={denVRoce(dnes)} />
         </section>
-
-        <div id="mapa">
-          <MapaChat chaty={chatyProMapu} />
-        </div>
 
         <section className="wrap sec" aria-label="Z průvodce">
           <SectionBar num="03" title="Z průvodce" variant="red" />

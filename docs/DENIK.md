@@ -140,6 +140,38 @@ Pietraszonce → Beskid Śląski). Otisky-workflow po kliku stáhne 45 chat
 (dřív 16) — pak zaloz + seed a razítka nové vlny naskočí na profily
 i do razítkovníku.
 
+**Dodatek 6 (týž den, Michal ke screenshotu homepage: „malovaná mapa
+tam nepatří — 3D až na stránce pohoří, na homepage statická turistická
+mapa; oprav homepage a založ stránku pohoří s perfektně zasazenou 3D
+mapou"):** (1) **Homepage:** malovaný poster band z návrhu ODSTRANĚN
+(PosterBand.tsx smazán) — na jeho místě skutečná turistická mapa chat
+(MapaChat: dlaždice Mapy.com outdoor, markery všech profilů); cedule
+„Prozkoumat Krkonoše" i živá karta pohoří vedou na novou stránku
+/cesko/krkonose. (2) **Stránka pohoří ZALOŽENA** (`[zeme]/[oblast]/
+page.tsx`, F1d 1. průchod): breadcrumb → hero s kurátorskou
+charakteristikou z kolekce Oblasti (se zdrojovou popiskou) + 4 stat-tiles
+počítané z dat (Sněžka 1603 z dat oblasti s odkazem na ověření ČÚZK
+v DATA-04, počet profilů, rozpětí doložených výšek s poctivým „(n z m)",
+zaniklí) → **01 SKUTEČNÁ 3D mapa z pipeline DATA-28** (ne placeholder
+z návrhu): public/3d/krkonose.html — samostatná aplikace s reálným
+výškopisem Mapy.com Elevation (240×144), trasami/lanovkami/řekami/vrcholy
+z OSM a vlastním ovládáním (hledání, sezóny, čas, panoramatický režim);
+zasazená vzorem **poster→klik** (Mapa3D.tsx: statický poster 168 kB,
+three.js a ~3,4 MB dat se načte AŽ po kliknutí — přesně dle handoffu,
+mobil poster→tap; + „otevřít na celou obrazovku", atribuce Mapy.com/OSM
+pod mapou) → 02 chaty oblasti (CTA katalog + mapa) → 03 top cíle (vazby
+na profily Dom Śląski a Labská). /polsko/krkonose → permanentRedirect na
+kanonickou /cesko/krkonose. Pipeline data28 nově zapisuje HTML i do
+public/3d/ (workflow git add rozšířen) — příští klik na DATA-28 aktualizuje
+mapu na webu. (3) Předtím **fix otisků DATA-05** (9066759): 45chatový běh
+spadl bez throttlingu — přidán rozestup 700 ms, retry s backoffem, merge
+manifestu (selhavší chata drží starý záznam), exit 1 jen při totálním
+selhání; Michal spustil znovu. Testy: +4 pohoří spec, home-f1 upraven
+(poster → mapa/odkazy), celkem 266 passed; tsc, lint i kontrola čisté.
+**Zbývá z F1d:** žebříčky, střediska, vitrína, FAQ, přesahy (sekce 03–09
+handoffu), deep-link ?chata= do 3D a zpětné „Ukázat na 3D mapě"
+z profilů; F1e mini-stránky středisek; F1f noc.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

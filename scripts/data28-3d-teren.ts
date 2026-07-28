@@ -28,7 +28,7 @@
  *
  *   npx tsx scripts/data28-3d-teren.ts [--bez-site]
  */
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 import { parse } from 'yaml'
@@ -406,6 +406,10 @@ const slozHtml = (dataJson: string, kotvyPocet: number): void => {
   html = html.replace('/*__DATA__*/null/*__/DATA__*/', dataJson)
   html = html.replace('__KOTVY__', String(kotvyPocet))
   writeFileSync(join(ADR, '3d-teren-krkonose.html'), html)
+  // Táž aplikace se servíruje webem: stránka pohoří ji zasazuje přes
+  // poster→klik (public/3d/krkonose.html). Jeden běh aktualizuje obojí.
+  mkdirSync(join(KOREN, 'public', '3d'), { recursive: true })
+  writeFileSync(join(KOREN, 'public', '3d', 'krkonose.html'), html)
 }
 
 // ── odolnost: opakování s čekáním + převzetí vrstvy z minulého běhu ────────

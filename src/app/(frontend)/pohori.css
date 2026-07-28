@@ -1,0 +1,125 @@
+/* Stránka pohoří (F1d, 1. průchod) — hero + stat-tiles dle handoffu
+   (screenshot 01-pohori) a zasazení skutečné 3D mapy (poster→klik).
+   Vše z tokens; dark mode přepínají proměnné. */
+
+.pohori { padding-top: 18px; }
+.pohori-breadcrumb { font: 600 10px/1 'Space Grotesk', sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: var(--label); }
+.pohori-breadcrumb a { color: inherit; text-decoration: none; }
+.pohori-breadcrumb a:hover { color: var(--red); }
+.pohori-breadcrumb span { color: var(--ink); }
+
+.pohori-hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: start; margin-top: 10px; }
+.pohori-hero-text h1 { margin: 0; font: 500 52px/1.05 var(--font-emph, Georgia, serif); letter-spacing: -0.015em; color: var(--ink); }
+.pohori-charakteristika { font: 400 15px/1.65 Inter, sans-serif; color: var(--muted); margin: 14px 0 0; max-width: 52ch; text-wrap: pretty; }
+.pohori-mikropozn { font: italic 400 10.5px/1.5 var(--font-emph, Georgia, serif); color: var(--label); margin: 10px 0 0; }
+.pohori-mikropozn a { color: inherit; }
+
+.pohori-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+.pohori-tile {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 8px 20px -14px rgba(20, 18, 26, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.pohori-tile b { font: 600 22px/1.1 'Space Grotesk', sans-serif; color: var(--ink); }
+.pohori-tile span { font: 500 12px/1.35 Inter, sans-serif; color: var(--ink); }
+.pohori-tile i { font: italic 400 10px/1.4 var(--font-emph, Georgia, serif); color: var(--label); }
+.pohori-tile i a { color: inherit; }
+
+/* ── 3D mapa: poster→klik→aplikace ─────────────────────────────────────── */
+.m3d { margin-top: 4px; }
+.m3d-poster {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 16px 34px -18px rgba(20, 18, 26, 0.5), inset 0 0 0 1px var(--line);
+  background: var(--paper);
+}
+.m3d-poster img { display: block; width: 100%; height: auto; }
+.m3d-poster-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: radial-gradient(90% 70% at 50% 50%, rgba(24, 28, 38, 0.08), rgba(24, 28, 38, 0.34));
+  transition: background 0.3s;
+}
+.m3d-poster:hover .m3d-poster-overlay { background: radial-gradient(90% 70% at 50% 50%, rgba(24, 28, 38, 0.02), rgba(24, 28, 38, 0.28)); }
+.m3d-poster-cta {
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: var(--red);
+  color: #fff;
+  font: 600 14px/1 'Space Grotesk', sans-serif;
+  box-shadow: 0 8px 18px -7px rgba(224, 52, 31, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.m3d-poster-pozn {
+  padding: 5px 11px;
+  border-radius: 8px;
+  background: rgba(255, 253, 247, 0.92);
+  font: 500 10.5px/1.4 Inter, sans-serif;
+  color: var(--ink);
+}
+.m3d-app {
+  display: block;
+  width: 100%;
+  height: min(78vh, 720px);
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 16px 34px -18px rgba(20, 18, 26, 0.5), inset 0 0 0 1px var(--line);
+  background: var(--cream);
+}
+.m3d-lista { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-top: 7px; flex-wrap: wrap; }
+.m3d-atribuce { font: 500 10px/1.4 Inter, sans-serif; color: var(--label); }
+.m3d-fullscreen { font: 600 10.5px/1 'Space Grotesk', sans-serif; color: var(--red); text-decoration: none; white-space: nowrap; }
+
+/* ── Chaty oblasti + top cíle ──────────────────────────────────────────── */
+.pohori-chaty-blok { background: var(--paper); border: 1px solid var(--line); border-radius: 13px; padding: 16px 18px; }
+.pohori-chaty-blok p { font: 400 13.5px/1.6 Inter, sans-serif; color: var(--muted); margin: 0; max-width: 68ch; }
+.pohori-chaty-blok p b { color: var(--ink); }
+.pohori-chaty-cta { display: flex; gap: 10px; margin-top: 13px; flex-wrap: wrap; }
+.pohori-cta-red {
+  display: inline-flex;
+  padding: 10px 17px;
+  border-radius: 9px;
+  background: var(--red);
+  color: #fff;
+  font: 600 12px/1 'Space Grotesk', sans-serif;
+  text-decoration: none;
+  box-shadow: 0 7px 16px -7px rgba(224, 52, 31, 0.8);
+}
+.pohori-cta-ghost {
+  display: inline-flex;
+  padding: 10px 17px;
+  border-radius: 9px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font: 600 12px/1 'Space Grotesk', sans-serif;
+  text-decoration: none;
+}
+.pohori-cta-ghost:hover { border-color: rgba(224, 52, 31, 0.4); color: var(--red); }
+
+.pohori-cile { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 11px; }
+.pohori-cil { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.pohori-cil b { font: 500 17px/1.2 var(--font-emph, Georgia, serif); color: var(--ink); }
+.pohori-cil p { font: 400 12.5px/1.55 Inter, sans-serif; color: var(--muted); margin: 7px 0 0; }
+.pohori-cil-chata { display: inline-block; font: 600 11px/1 'Space Grotesk', sans-serif; color: var(--red); text-decoration: none; margin-top: 9px; }
+
+@media (max-width: 860px) {
+  .pohori-hero { grid-template-columns: 1fr; }
+  .pohori-hero-text h1 { font-size: 44px; }
+  .m3d-app { height: 70vh; }
+}

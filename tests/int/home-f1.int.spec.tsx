@@ -121,13 +121,15 @@ describe('Homepage F1c — datové pásy', () => {
     expect(screen.getByText(/náhodný výběr z 3 doložených profilů/)).toBeTruthy()
   })
 
-  it('poster band: statický, v červenci bez zimní vrstvy, CTA vede na mapu (F1d zatím není)', async () => {
+  it('místo malovaného posteru je skutečná mapa chat; cedule i karta pohoří vedou na /cesko/krkonose', async () => {
     const { container } = render(await HomePage())
-    expect(screen.getByText('Malovaná 3D mapa Krkonoš')).toBeTruthy()
-    expect(screen.getByText('SNĚŽKA')).toBeTruthy()
-    expect(container.querySelector('.hf1-poster-zima')).toBeNull() // build v červenci
-    const cta = screen.getByText('Otevřít mapu chat ▸')
-    expect(cta.getAttribute('href')).toBe('#mapa')
+    // rozhodnutí Michala 28. 7.: 3D patří na stránku pohoří, homepage nese turistickou mapu
+    expect(screen.queryByText('Malovaná 3D mapa Krkonoš')).toBeNull()
+    expect(container.querySelector('#mapa [data-testid="mapa-mock"]')).toBeTruthy()
+    const cedule = screen.getByText('PROZKOUMAT KRKONOŠE').closest('a')!
+    expect(cedule.getAttribute('href')).toBe('/cesko/krkonose')
+    const kartaPohori = container.querySelector('.hf1-pohori-ziva a')!
+    expect(kartaPohori.getAttribute('href')).toBe('/cesko/krkonose')
   })
 
   it('printový seznam (B13) nese všechny profily s poctivými „—"', async () => {

@@ -296,3 +296,18 @@ export async function getChatyProRazitkovnik(): Promise<RazitkovnikChata[]> {
     }
   })
 }
+
+/**
+ * Oblast dle slugu (stránka pohoří, F1d) — metadata z F1a: charakteristika
+ * s blokem ověření, nejvyšší hora se zdrojem, top cíle s vazbou na chaty.
+ */
+export async function getOblastBySlug(slug: string): Promise<Oblast | null> {
+  const payload = await getPayload({ config })
+  const res = await payload.find({
+    collection: 'oblasti',
+    where: { slug: { equals: slug } },
+    limit: 1,
+    overrideAccess: false,
+  })
+  return res.docs[0] ?? null
+}

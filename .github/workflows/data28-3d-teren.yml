@@ -59,7 +59,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/experimenty/3d-teren-data.json docs/experimenty/3d-teren-krkonose.html
+          git add docs/experimenty/3d-teren-data.json docs/experimenty/3d-teren-krkonose.html public/3d/krkonose.html
           if git diff --cached --quiet; then
             echo 'Beze změny — nic ke commitu.'
             exit 0
