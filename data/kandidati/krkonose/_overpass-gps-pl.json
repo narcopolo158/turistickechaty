@@ -1,0 +1,104 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-02T16:51:45Z",
+    "timestamp_areas_base": "2026-07-02T16:51:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "relation",
+  "id": 3281717,
+  "center": {
+    "lat": 50.7664823,
+    "lon": 15.6228543
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 1432785067,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 47188667,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 32644961,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 41057480,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 88226739,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 187292224,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 32603783,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 242795768,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 232271073,
+      "role": ""
+    },
+    {
+      "type": "node",
+      "ref": 576032645,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 3686647472,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 3686647473,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 2084996386,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 2084996372,
+      "role": "guidepost"
+    }
+  ],
+  "tags": {
+    "complete": "yes",
+    "destinations": "Špindlerovka - Petrova bouda",
+    "kct_red": "wheelchair",
+    "name": "Krkonoše bez barier: Špindlerovka - Petrova bouda",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_wheelchair",
+    "route": "wheelchair",
+    "type": "route"
+  }
+}
+
+  ]
+}

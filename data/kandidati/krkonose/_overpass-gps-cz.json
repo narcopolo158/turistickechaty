@@ -1,0 +1,1938 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-12T12:14:17Z",
+    "timestamp_areas_base": "2026-06-12T12:14:17Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 292592404,
+  "lat": 50.7460640,
+  "lon": 15.8221046,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Pomezní bouda",
+    "name:de": "Grenzbaude"
+  }
+},
+{
+  "type": "node",
+  "id": 462698512,
+  "lat": 50.6700963,
+  "lon": 15.7373037,
+  "tags": {
+    "bicycle": "yes",
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Kolínská bouda",
+    "note": "cyklorozcestníky: ref=MT031",
+    "operator": "cz:KČT",
+    "ref": "TK135",
+    "source": "gps",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 462698532,
+  "lat": 50.6706140,
+  "lon": 15.7306264,
+  "tags": {
+    "bicycle": "yes",
+    "ele": "1125",
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Lučiny - Pražská bouda",
+    "operator": "cz:KČT",
+    "ref": "TU137;MT031",
+    "ski": "yes",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 565521058,
+  "lat": 50.7068168,
+  "lon": 15.5145592,
+  "tags": {
+    "name": "Rezek",
+    "name:cs": "Rezek",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 596391310,
+  "lat": 50.7061129,
+  "lon": 15.5149352,
+  "tags": {
+    "ele": "875",
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Rezek",
+    "operator": "cz:KČT",
+    "ref": "SK137",
+    "source": "survey;cuzk:km",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 596547001,
+  "lat": 50.7061537,
+  "lon": 15.5148073,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Horní Dušnice, Rezek",
+    "official_name": "Jablonec n.Jiz.,Horní Dušnice,Rezek",
+    "public_transport": "platform",
+    "ref:idol": "12422"
+  }
+},
+{
+  "type": "node",
+  "id": 650918422,
+  "lat": 50.6701810,
+  "lon": 15.7375702,
+  "tags": {
+    "addr:conscriptionnumber": "319",
+    "addr:country": "CZ",
+    "addr:housenumber": "319",
+    "addr:place": "Velká Úpa",
+    "addr:postcode": "54221",
+    "amenity": "restaurant",
+    "brewery": "kolínský_speciál",
+    "cuisine": "regional",
+    "name": "Kolínská bouda",
+    "toilets": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656462446,
+  "lat": 50.7020225,
+  "lon": 15.7688638,
+  "tags": {
+    "addr:conscriptionnumber": "110",
+    "addr:country": "CZ",
+    "addr:housenumber": "110",
+    "addr:place": "Velká Úpa",
+    "addr:postcode": "54221",
+    "amenity": "restaurant",
+    "capacity": "150",
+    "ele": "1050",
+    "name": "Horská chata Portášky",
+    "website": "http://www.portasky.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 656464518,
+  "lat": 50.7127375,
+  "lon": 15.8343950,
+  "tags": {
+    "addr:conscriptionnumber": "51",
+    "addr:country": "CZ",
+    "addr:housenumber": "51",
+    "addr:place": "Horní Lysečiny",
+    "addr:postcode": "54226",
+    "amenity": "restaurant",
+    "microbrewery": "no",
+    "name": "Lysečinská bouda",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "ref:ruian:addr": "2331870"
+  }
+},
+{
+  "type": "node",
+  "id": 1269086646,
+  "lat": 50.7090155,
+  "lon": 15.7259695,
+  "tags": {
+    "email": "podstudnicnou@seznam.cz",
+    "internet_access": "no",
+    "name": "Chata pod Studničnou",
+    "phone": "+420 499 736 020",
+    "tourism": "chalet",
+    "website": "http://www.podstudnicnou.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1944336845,
+  "lat": 50.6602093,
+  "lon": 15.8499890,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Rýchorská bouda",
+    "name:de": "Rehornbaude"
+  }
+},
+{
+  "type": "node",
+  "id": 2229115255,
+  "lat": 50.6748638,
+  "lon": 15.6578270,
+  "tags": {
+    "name": "Hanapetrova Paseka",
+    "name:cs": "Hanapetrova Paseka",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 2431290110,
+  "lat": 50.6598196,
+  "lon": 15.8505642,
+  "tags": {
+    "ele": "990",
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Rýchorská bouda",
+    "name:de": "Rehornbaude",
+    "operator": "cz:KČT",
+    "ref": "TK525;TU525",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 2449506225,
+  "lat": 50.6707738,
+  "lon": 15.7306477,
+  "tags": {
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Lučiny Pražská bouda",
+    "note": "ukazatel pouze pro zelenou",
+    "operator": "cz:KČT",
+    "ref": "TU137",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 2452724167,
+  "lat": 50.7128705,
+  "lon": 15.8353310,
+  "tags": {
+    "bicycle": "yes",
+    "ele": "958",
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Lysečinská bouda",
+    "note": "cyklorozcestníky: ref=MT023",
+    "operator": "cz:KČT",
+    "ref": "TU065",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 2482552645,
+  "lat": 50.6766869,
+  "lon": 15.6555470,
+  "tags": {
+    "ele": "883",
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Hanapetrova paseka",
+    "operator": "cz:KČT",
+    "ref": "TK504",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 2976274498,
+  "lat": 50.7064885,
+  "lon": 15.5148076,
+  "tags": {
+    "bicycle": "yes",
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Rezek",
+    "operator": "cz:KČT",
+    "ref": "MT105;SK028",
+    "source": "survey;cuzk:km",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 3080367322,
+  "lat": 50.5754718,
+  "lon": 16.0123827,
+  "tags": {
+    "alt_name:cs": "Slavětínská rozhledna",
+    "ele": "708",
+    "name": "Markoušovická rozhledna",
+    "start_date": "2014",
+    "tourism": "viewpoint",
+    "wikidata": "Q18006326"
+  }
+},
+{
+  "type": "node",
+  "id": 3411838582,
+  "lat": 50.6883259,
+  "lon": 15.7070696,
+  "tags": {
+    "access": "yes",
+    "ele": "1207.45",
+    "fee": "no",
+    "height": "30.8",
+    "man_made": "tower",
+    "name": "rozhledna Hnědý vrch",
+    "opening_hours": "Jun-Oct 09:00-16:00",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q12019872",
+    "wikipedia": "cs:Hnědý vrch (rozhledna)"
+  }
+},
+{
+  "type": "node",
+  "id": 3751284305,
+  "lat": 50.6488299,
+  "lon": 15.7519847,
+  "tags": {
+    "check_date": "2025-08-24",
+    "information": "board",
+    "name": "Rozhledna panorama",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 4011517089,
+  "lat": 50.6126002,
+  "lon": 15.3604067,
+  "tags": {
+    "name": "Cimrmanova nejnižší rozhledna",
+    "tourism": "viewpoint"
+  }
+},
+{
+  "type": "node",
+  "id": 4211909920,
+  "lat": 50.5786317,
+  "lon": 16.0112978,
+  "tags": {
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Markoušovická rozhledna odbočka",
+    "operator": "cz:KČT",
+    "ref": "TU597",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 4211909921,
+  "lat": 50.5752504,
+  "lon": 16.0122039,
+  "tags": {
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Markoušovická rozhledna",
+    "operator": "cz:KČT",
+    "ref": "TU598",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 4231596089,
+  "lat": 50.6713295,
+  "lon": 15.6569801,
+  "tags": {
+    "hiking": "yes",
+    "information": "guidepost",
+    "name": "Hanapetrova paseka",
+    "operator": "cz:KČT",
+    "ref": "TU505",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 4855162856,
+  "lat": 50.6604061,
+  "lon": 15.4017093,
+  "tags": {
+    "name": "Pokladna Rozhledna U borovice",
+    "opening_hours": "Sa-Su 10:00-15:00",
+    "shop": "ticket"
+  }
+},
+{
+  "type": "node",
+  "id": 5488661844,
+  "lat": 50.6706195,
+  "lon": 15.7303989,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Pražská bouda"
+  }
+},
+{
+  "type": "node",
+  "id": 6566001453,
+  "lat": 50.5997162,
+  "lon": 15.9039545,
+  "tags": {
+    "board_type": "history",
+    "information": "board",
+    "name": "Rozhledna",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 6768041591,
+  "lat": 50.7061663,
+  "lon": 15.5149021,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Horní Dušnice, Rezek",
+    "official_name": "Jablonec n.Jiz.,Horní Dušnice,Rezek",
+    "public_transport": "platform",
+    "ref:idol": "12422"
+  }
+},
+{
+  "type": "node",
+  "id": 12124631358,
+  "lat": 50.7021122,
+  "lon": 15.7691267,
+  "tags": {
+    "addr:city": "Pec pod Sněžkou - Velká Úpa",
+    "addr:country": "CZ",
+    "addr:housenumber": "110",
+    "addr:postcode": "542 21",
+    "addr:street": "Velká Úpa",
+    "amenity": "charging_station",
+    "bicycle": "designated",
+    "brand": "Powerbox.one",
+    "brand:wikidata": "Q131535492",
+    "description": "Nabíjecí stanice se nachází vedle vchodu do restaurace v blízkosti zahrádky.",
+    "email": "portasky@portasky.cz",
+    "fee": "no",
+    "motorcar": "no",
+    "name": "Horská chata Portášky",
+    "network": "Powerbox.one",
+    "network:wikidata": "Q131535492",
+    "opening_hours": "Mar-Sep Mo-Fr 08:00-20:00; Mar-Sep Sa,Su 08:00-23:00",
+    "operator": "JURIKOL",
+    "operator:ref:ico": "25080644",
+    "operator:wikidata": "Q133153012",
+    "phone": "+420777334450",
+    "ref": "536",
+    "socket:bosch_3pin": "1",
+    "socket:schuko": "2",
+    "socket:shimano_steps_5pin": "1",
+    "socket:xlr_3pin_cable": "1",
+    "source": "powerbox",
+    "website": "https://powerbox.one/place/horska-chata-portasky/"
+  }
+},
+{
+  "type": "node",
+  "id": 12126173699,
+  "lat": 50.6603634,
+  "lon": 15.8501138,
+  "tags": {
+    "addr:city": "Žacléř",
+    "addr:country": "CZ",
+    "addr:housenumber": "55",
+    "addr:postcode": "542 26",
+    "addr:street": "Rýchory",
+    "amenity": "charging_station",
+    "bicycle": "designated",
+    "brand": "Powerbox.one",
+    "brand:wikidata": "Q131535492",
+    "description": "Nabíjecí stanice se nachází před restaurací. Nabíjecí kabely si lze zapůjčit u obsluhy v provozní době.",
+    "email": "martinasvkrystof@gmail.com",
+    "fee": "no",
+    "motorcar": "no",
+    "name": "Restaurace Rýchorská bouda",
+    "network": "Powerbox.one",
+    "network:wikidata": "Q131535492",
+    "opening_hours": "Apr-Oct 10:00-17:00",
+    "operator": "Bekot z.s.",
+    "operator:ref:ico": "04308816",
+    "phone": "+420777045673",
+    "ref": "478",
+    "socket:bosch_3pin": "1",
+    "socket:schuko": "2",
+    "socket:shimano_steps_5pin": "1",
+    "socket:xlr_3pin_cable": "1",
+    "source": "powerbox",
+    "website": "https://powerbox.one/place/restaurace-rychorska-bouda/"
+  }
+},
+{
+  "type": "node",
+  "id": 12771004856,
+  "lat": 50.6601882,
+  "lon": 15.8499576,
+  "tags": {
+    "board_type": "history",
+    "information": "board",
+    "name": "Rýchorská bouda",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 12964446320,
+  "lat": 50.6994866,
+  "lon": 15.5145503,
+  "tags": {
+    "bus": "yes",
+    "name": "Jablonec nad Jizerou, Horní Dušnice, Rezek odbočka",
+    "operator": "IDOL",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "way",
+  "id": 19923488,
+  "center": {
+    "lat": 50.6707087,
+    "lon": 15.7302361
+  },
+  "nodes": [
+    209146843,
+    209146858,
+    366730623,
+    366730624,
+    366730625,
+    366730622,
+    2136401725,
+    366730621,
+    366730626,
+    2136401729,
+    366730627,
+    209146875,
+    366730620,
+    366730628,
+    366730629,
+    366730619,
+    209146843
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Pražská bouda",
+    "source": "cuzk:km",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 31128152,
+  "center": {
+    "lat": 50.7589321,
+    "lon": 15.6339790
+  },
+  "nodes": [
+    10943660330,
+    10943660329,
+    10943660328,
+    10943660327,
+    10943660326,
+    346120753,
+    346120755,
+    10943660325,
+    10943660324,
+    10943660323,
+    10943660322,
+    10943660321,
+    10943660320,
+    10943660319,
+    346120756,
+    10943660318,
+    10943660317,
+    10943660316,
+    10943660315,
+    10943660314,
+    346120750,
+    10943660313,
+    10943660312,
+    10943660311,
+    10943660310,
+    10943660309,
+    10943660308,
+    10943660307,
+    10943660306,
+    10943660305,
+    10943660304,
+    10943660303,
+    10943660302,
+    10943660301,
+    10943660300,
+    10943660299,
+    10943660330
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "109",
+    "addr:country": "CZ",
+    "addr:housenumber": "109",
+    "addr:place": "Špindlerův Mlýn",
+    "addr:postcode": "54351",
+    "amenity": "restaurant",
+    "building": "hotel",
+    "building:flats": "1",
+    "building:levels": "5",
+    "building:ruian:type": "11",
+    "email": "betlem@spmlyn.cz",
+    "fax": "+420 731 598895",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Erlebachova bouda",
+    "name:de": "Erlebachbaude",
+    "phone": "+420 499 523329",
+    "ref:ruian:building": "2324024",
+    "roof:shape": "gabled",
+    "source": "cuzk:ruian",
+    "stars": "3",
+    "start_date": "2022-12-28",
+    "tourism": "hotel",
+    "website": "https://www.erlebachovabouda.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 31360798,
+  "center": {
+    "lat": 50.6702745,
+    "lon": 15.7375509
+  },
+  "nodes": [
+    349293968,
+    349293969,
+    349293970,
+    349293971,
+    349293972,
+    349293973,
+    349293974,
+    349293977,
+    349293983,
+    349293987,
+    349293991,
+    349293997,
+    349293968
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Kolínská bouda",
+    "source": "cuzk:km",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 44631758,
+  "center": {
+    "lat": 50.7062862,
+    "lon": 15.5145371
+  },
+  "nodes": [
+    566573578,
+    6725839131,
+    6725839130,
+    6725839129,
+    6725839128,
+    6725839127,
+    6725839126,
+    6725839125,
+    566573583,
+    566573573,
+    566573572,
+    566573579,
+    566573578
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "house",
+    "building:flats": "1",
+    "building:ruian:type": "7",
+    "name": "Restaurant Rezek-Jerusalem",
+    "opening_hours": "Fr,Sa 11:00-21:00, Su 11:00-17:00",
+    "phone": "+420 481582814",
+    "ref:ruian:building": "16775732",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 45588542,
+  "center": {
+    "lat": 50.6966901,
+    "lon": 15.7691247
+  },
+  "nodes": [
+    581289156,
+    12492492366,
+    12492492367,
+    12492492368,
+    12492492369,
+    12492492370,
+    12492492371,
+    12492492372,
+    12492492373,
+    12492492374,
+    12492492375,
+    12492492376,
+    581289157
+  ],
+  "tags": {
+    "aerialway": "chair_lift",
+    "aerialway:bubble": "no",
+    "aerialway:heating": "no",
+    "aerialway:occupancy": "3",
+    "name": "Lanová dráha Portášky"
+  }
+},
+{
+  "type": "way",
+  "id": 74863462,
+  "center": {
+    "lat": 50.7577864,
+    "lon": 15.6317577
+  },
+  "nodes": [
+    884205389,
+    884205351
+  ],
+  "tags": {
+    "aerialway": "platter",
+    "name": "Erlebachova bouda",
+    "name:de": "Erlebachhüttelift"
+  }
+},
+{
+  "type": "way",
+  "id": 96093567,
+  "center": {
+    "lat": 50.7460809,
+    "lon": 15.8220807
+  },
+  "nodes": [
+    1113310722,
+    1113310291,
+    1113311038,
+    1113310493,
+    1113308725,
+    1113308226,
+    1113308989,
+    1113308420,
+    1113310052,
+    1113309491,
+    1113310302,
+    1113309763,
+    1113310722
+  ],
+  "tags": {
+    "building": "yes",
+    "capacity": "50",
+    "email": "pomezbouda@gmail.com",
+    "name": "Pomezní bouda",
+    "phone": "+420 604 268 327",
+    "ref:nap": "20312",
+    "source": "cuzk:km",
+    "tourism": "hotel",
+    "website": "https://www.pomezni-bouda.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 125508571,
+  "center": {
+    "lat": 50.6489259,
+    "lon": 15.7519880
+  },
+  "nodes": [
+    1393832814,
+    1393832809,
+    1393832811,
+    1393832816,
+    1393832814
+  ],
+  "tags": {
+    "fee": "yes",
+    "height": "25.7",
+    "man_made": "tower",
+    "name": "Rozhledna Panorama",
+    "opening_hours": "Sa-Su 10:00-16:00",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 137029464,
+  "center": {
+    "lat": 50.7127501,
+    "lon": 15.8343288
+  },
+  "nodes": [
+    1503193820,
+    1503193823,
+    1503193801,
+    1503193813,
+    1503193751,
+    1503193747,
+    1503193792,
+    1503193786,
+    1503193808,
+    1503193820
+  ],
+  "tags": {
+    "building": "yes",
+    "check_date": "2025-07-23",
+    "name": "Lysečinská bouda",
+    "source": "cuzk:km;uhul:ortofoto",
+    "tourism": "guest_house",
+    "website": "http://www.horsky-hotel-lysecinska-bouda-horni-marsov.rs-ubytovani.net"
+  }
+},
+{
+  "type": "way",
+  "id": 204127549,
+  "center": {
+    "lat": 50.6901497,
+    "lon": 15.7682017
+  },
+  "nodes": [
+    2141411692,
+    6552472992,
+    2141411695,
+    6552472991,
+    2141411693,
+    2952084008,
+    6552472990,
+    6552472989,
+    2141411698,
+    2141411678,
+    6552472988,
+    6552472987,
+    2141411679,
+    2141411676,
+    2141411662,
+    2141411671,
+    2141411664,
+    2141411692
+  ],
+  "tags": {
+    "building": "residential",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "name": "Lanová dráha Portášky",
+    "ref:ruian:building": "20808399",
+    "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 239899454,
+  "center": {
+    "lat": 50.6602261,
+    "lon": 15.8498815
+  },
+  "nodes": [
+    2476716720,
+    2476716713,
+    12771004862,
+    2476716708,
+    2476716705,
+    2476716704,
+    2476716702,
+    2476716701,
+    2476716707,
+    2476716706,
+    2476716709,
+    2476716710,
+    2476716715,
+    2476716718,
+    2476716722,
+    2476716724,
+    2476716721,
+    2476716720
+  ],
+  "tags": {
+    "addr:country": "CZ",
+    "addr:housenumber": "ev.55",
+    "addr:place": "Žacléř",
+    "addr:postcode": "54226",
+    "addr:provisionalnumber": "55",
+    "addr:street": "Rýchory",
+    "building": "yes",
+    "name": "Rýchorská bouda",
+    "name:de": "Rehornbaude",
+    "ref:ruian:addr": "2373335",
+    "source": "cuzk:km"
+  }
+},
+{
+  "type": "way",
+  "id": 303365344,
+  "center": {
+    "lat": 50.7399206,
+    "lon": 15.3453645
+  },
+  "nodes": [
+    3077190147,
+    4844435549,
+    3077190148,
+    4844435550,
+    4844435556,
+    4844435551,
+    3077190149,
+    4844435552,
+    4844435553,
+    3077190150,
+    4844435544,
+    3077190152,
+    4844435545,
+    4844435555,
+    4844435546,
+    4844435554,
+    4844435547,
+    3077190151,
+    3077190153,
+    3077190154,
+    4844435548,
+    3077190147
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "23.7",
+    "man_made": "tower",
+    "name": "Rozhledna Maják J. Cimrmanna",
+    "opening_hours": "May-Sep 10:00-18:00; Oct-Apr 10:00-17:00",
+    "start_date": "2013",
+    "tower:type": "observation",
+    "wikipedia": "cs:Maják Járy Cimrmana"
+  }
+},
+{
+  "type": "way",
+  "id": 307633839,
+  "center": {
+    "lat": 50.6293910,
+    "lon": 15.9112094
+  },
+  "nodes": [
+    3128318488,
+    12769235994,
+    12769235993,
+    3128318490,
+    12769236000,
+    3128318491,
+    12769235999,
+    12769235998,
+    12769235997,
+    3128318489,
+    12769235996,
+    12769235995,
+    3128318488
+  ],
+  "tags": {
+    "building": "yes",
+    "ele": "632",
+    "height": "24.5",
+    "man_made": "tower",
+    "name": "rozhledna Eliška",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 415701652,
+  "center": {
+    "lat": 50.6581957,
+    "lon": 15.5723726
+  },
+  "nodes": [
+    4166876233,
+    5183230449,
+    4166876239,
+    4166876240,
+    4166876238,
+    4166876236,
+    4166876228,
+    4166876227,
+    4166876231,
+    4166876233
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "tower",
+    "building:ruian:type": "15",
+    "contact:facebook": "rozhledna.zaly",
+    "contact:phone": "+420 732 801 804",
+    "fee": "yes",
+    "height": "18",
+    "man_made": "tower",
+    "material": "stone",
+    "name": "Rozhledna Žalý",
+    "opening_hours": "Dec 25-Jan 31 Mo-Su 10:00-16:00; Feb-Mar Mo-Su 10:00-16:30; Apr,Oct-Nov Sa-Su 10:00-16:00; May-Jun,Sep Tu-Su 10:00-17:00; Jul-Aug Mo-Su 10:00-17:30; Dec 01-Dec 24 Sa-Su 10:00-16:00",
+    "ref:ruian:building": "47881925",
+    "start_date": "1892",
+    "tourism": "attraction",
+    "tower:type": "observation",
+    "website": "http://www.zaly.cz/",
+    "wikidata": "Q101440937"
+  }
+},
+{
+  "type": "way",
+  "id": 1011094086,
+  "center": {
+    "lat": 50.7577787,
+    "lon": 15.6319303
+  },
+  "nodes": [
+    884205351,
+    9328359406,
+    9328359407,
+    9588622486,
+    9328359408,
+    9588622487,
+    9588622488,
+    9588622489,
+    9588622490,
+    9588622492,
+    9588622495,
+    9588622494,
+    9588622493,
+    9588622491,
+    9328359410,
+    9588622496,
+    9328359411,
+    884205389
+  ],
+  "tags": {
+    "lit": "yes",
+    "name": "Erlebachova bouda",
+    "name:de": "Erlebachbaudenhang",
+    "piste:difficulty": "easy",
+    "piste:grooming": "classic",
+    "piste:type": "downhill"
+  }
+},
+{
+  "type": "way",
+  "id": 1280339937,
+  "center": {
+    "lat": 50.6704273,
+    "lon": 15.7365712
+  },
+  "nodes": [
+    11884680238,
+    11884680239
+  ],
+  "tags": {
+    "access": "customers",
+    "aerialway": "rope_tow",
+    "name": "Kolínská bouda"
+  }
+},
+{
+  "type": "relation",
+  "id": 64354,
+  "center": {
+    "lat": 50.7269144,
+    "lon": 15.4933249
+  },
+  "members": [
+    {
+      "type": "node",
+      "ref": 5572899766,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 255446792,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 5572899767,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 5572900126,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 5572899769,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 596431949,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 598450360,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 597838776,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 596391310,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 3154721913,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 9309907093,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 10109786016,
+      "role": "guidepost"
+    },
+    {
+      "type": "way",
+      "ref": 46870348,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46870349,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46870351,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46870352,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 440804044,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 44523974,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 32599099,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27562737,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 47335633,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1028168500,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 284914952,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 32599160,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 32599159,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 23590719,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 29694609,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 120594019,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 29698305,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 386071995,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 587542244,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 28885472,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 908918977,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 23590712,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 229977552,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 29698314,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 23590715,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46672043,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46673536,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 23589706,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 29701413,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46670264,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 44523972,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 47335636,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "complete": "yes",
+    "destinations": "Rokytnice;Rezek",
+    "kct_yellow": "major",
+    "name": "[Ž] Rokytnice - Rezek",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "ref": "7308",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 64408,
+  "center": {
+    "lat": 50.7223949,
+    "lon": 15.4919557
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 127410103,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 386063906,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 29698319,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 142946948,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 143842327,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27557621,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 29701413,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 29701418,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46779679,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46779642,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46779648,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 339596813,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 196578373,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1339042427,
+      "role": ""
+    },
+    {
+      "type": "node",
+      "ref": 5572899766,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 302543248,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 597770166,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 597838776,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 596391310,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 9309907093,
+      "role": "guidepost"
+    }
+  ],
+  "tags": {
+    "complete": "yes",
+    "destinations": "Rezek;Pod Dvoračkami",
+    "kct_green": "major",
+    "name": "[Z] Rezek - Pod Dvoračkami",
+    "network": "rwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_bar",
+    "ref": "4272",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 341098,
+  "center": {
+    "lat": 50.7729139,
+    "lon": 15.5937709
+  },
+  "members": [
+    {
+      "type": "node",
+      "ref": 2084996395,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 576013060,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 2084996372,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 600921853,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 600921850,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 600921851,
+      "role": "guidepost"
+    },
+    {
+      "type": "way",
+      "ref": 46897741,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27049812,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 47188665,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 41057479,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 30445367,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 47132404,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 32644820,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 47188662,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 571478758,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "complete": "yes",
+    "destinations": "Pod Smělcem;Petrova bouda",
+    "kct_blue": "major",
+    "name": "[M] Pod Smělcem - Petrova bouda",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "ref": "1802",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 366459,
+  "center": {
+    "lat": 50.7136204,
+    "lon": 15.5122896
+  },
+  "members": [
+    {
+      "type": "node",
+      "ref": 2976274498,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 596391315,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 302543248,
+      "role": "guidepost"
+    },
+    {
+      "type": "way",
+      "ref": 39219877,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27557624,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 725967227,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 725967228,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 725967231,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 725967232,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 143842327,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 142946948,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27557621,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46670264,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 46670263,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 92128196,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 44631780,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 92128122,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 92128145,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 44631779,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 324552440,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 324552441,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 92118625,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "complete": "yes",
+    "name": "Dolní Dušnice-Rezek-Skelné Hutě",
+    "network": "lcn",
+    "operator": "cz:krnap",
+    "ref": "8A",
+    "route": "bicycle",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1684465,
+  "center": {
+    "lat": 50.7452051,
+    "lon": 15.3647534
+  },
+  "members": [
+    {
+      "type": "node",
+      "ref": 5589738217,
+      "role": "guidepost"
+    },
+    {
+      "type": "way",
+      "ref": 1069131984,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1069131983,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1069131981,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 32623342,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1329047257,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 38554203,
+      "role": ""
+    },
+    {
+      "type": "node",
+      "ref": 567112868,
+      "role": "guidepost"
+    }
+  ],
+  "tags": {
+    "complete": "yes",
+    "destinations": "rozhledna Štěpánka",
+    "kct_green": "peak",
+    "name": "[Z] odbočka k rozhledně Štěpánka",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "green:white:green_triangle",
+    "ref": "1664",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3199393,
+  "center": {
+    "lat": 50.6866201,
+    "lon": 15.8270995
+  },
+  "members": [
+    {
+      "type": "node",
+      "ref": 3966031780,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 2452724167,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 3966031781,
+      "role": "guidepost"
+    },
+    {
+      "type": "way",
+      "ref": 48198018,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27443254,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 196296645,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 96060301,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 237536011,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 196296641,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 96060251,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 70013439,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 70013434,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 70013436,
+      "role": ""
+    },
+    {
+      "type": "node",
+      "ref": 6712730953,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "complete": "yes",
+    "kct_blue": "major",
+    "name": "[M] Horní Maršov - Lysečinská bouda",
+    "network": "nwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "blue:white:blue_bar",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3263630,
+  "center": {
+    "lat": 50.6499029,
+    "lon": 15.7502630
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 241892743,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 954695874,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1292079429,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1292079430,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 954695873,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 241892742,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "complete": "no",
+    "kct_yellow": "peak",
+    "name": "[Ž] Černá hora: kiosek - rozhledna Panorama",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "yellow:white:yellow_triangle",
+    "route": "hiking",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3281717,
+  "center": {
+    "lat": 50.7664823,
+    "lon": 15.6228543
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 1432785067,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 47188667,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 32644961,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 41057480,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 88226739,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 187292224,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 32603783,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 242795768,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 232271073,
+      "role": ""
+    },
+    {
+      "type": "node",
+      "ref": 576032645,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 3686647472,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 3686647473,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 2084996386,
+      "role": "guidepost"
+    },
+    {
+      "type": "node",
+      "ref": 2084996372,
+      "role": "guidepost"
+    }
+  ],
+  "tags": {
+    "complete": "yes",
+    "destinations": "Špindlerovka - Petrova bouda",
+    "kct_red": "wheelchair",
+    "name": "Krkonoše bez barier: Špindlerovka - Petrova bouda",
+    "network": "lwn",
+    "operator": "cz:KČT",
+    "osmc:symbol": "red:white:red_wheelchair",
+    "route": "wheelchair",
+    "type": "route"
+  }
+}
+
+  ]
+}

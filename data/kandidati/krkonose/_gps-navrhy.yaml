@@ -1,0 +1,458 @@
+# NÁVRHY souřadnic pro publikované profily bez GPS (DATA-31).
+# Nezapisuje se automaticky do profilů: shoda jména identitu NEPROKAZUJE
+# (Lovecká chata seděla 27. 7. 2026 na mapě 10 km vedle kvůli záměně entit).
+# Zdroj: OpenStreetMap — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+
+navrhy:
+  - slug: chata-pod-studnicnou
+    nazev: Chata Pod Studničnou
+    obecProfilu: Pec pod Sněžkou
+    nalezy:
+      - osm: https://www.openstreetmap.org/node/1269086646
+        nazev: Chata pod Studničnou
+        typShody: presna
+        lat: 50.7090155
+        lng: 15.7259695
+        obecOsm: null
+        tagy: tourism=chalet, website=http://www.podstudnicnou.cz/
+  - slug: chata-rezek
+    nazev: Chata Rezek
+    obecProfilu: Vítkovice
+    nalezy:
+      - osm: https://www.openstreetmap.org/relation/64408
+        nazev: "[Z] Rezek - Pod Dvoračkami"
+        typShody: castecna
+        lat: 50.7223949
+        lng: 15.4919557
+        obecOsm: null
+        tagy: operator=cz:KČT
+      - osm: https://www.openstreetmap.org/relation/64354
+        nazev: "[Ž] Rokytnice - Rezek"
+        typShody: castecna
+        lat: 50.7269144
+        lng: 15.4933249
+        obecOsm: null
+        tagy: operator=cz:KČT
+      - osm: https://www.openstreetmap.org/relation/366459
+        nazev: Dolní Dušnice-Rezek-Skelné Hutě
+        typShody: castecna
+        lat: 50.7136204
+        lng: 15.5122896
+        obecOsm: null
+        tagy: operator=cz:krnap
+      - osm: https://www.openstreetmap.org/node/596547001
+        nazev: Horní Dušnice, Rezek
+        typShody: castecna
+        lat: 50.7061537
+        lng: 15.5148073
+        obecOsm: null
+        tagy: ""
+      - osm: https://www.openstreetmap.org/node/6768041591
+        nazev: Horní Dušnice, Rezek
+        typShody: castecna
+        lat: 50.7061663
+        lng: 15.5149021
+        obecOsm: null
+        tagy: ""
+      - osm: https://www.openstreetmap.org/node/12964446320
+        nazev: Jablonec nad Jizerou, Horní Dušnice, Rezek odbočka
+        typShody: castecna
+        lat: 50.6994866
+        lng: 15.5145503
+        obecOsm: null
+        tagy: operator=IDOL
+      - osm: https://www.openstreetmap.org/way/44631758
+        nazev: Restaurant Rezek-Jerusalem
+        typShody: castecna
+        lat: 50.7062862
+        lng: 15.5145371
+        obecOsm: null
+        tagy: tourism=guest_house, building=house, amenity=restaurant
+      - osm: https://www.openstreetmap.org/node/565521058
+        nazev: Rezek
+        typShody: castecna
+        lat: 50.7068168
+        lng: 15.5145592
+        obecOsm: null
+        tagy: ""
+      - osm: https://www.openstreetmap.org/node/596391310
+        nazev: Rezek
+        typShody: castecna
+        lat: 50.7061129
+        lng: 15.5149352
+        obecOsm: null
+        tagy: tourism=information, ele=875, operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/2976274498
+        nazev: Rezek
+        typShody: castecna
+        lat: 50.7064885
+        lng: 15.5148076
+        obecOsm: null
+        tagy: tourism=information, operator=cz:KČT
+  - slug: chata-rozhled
+    nazev: Chata Rozhled
+    obecProfilu: Strážné
+    nalezy:
+      - osm: https://www.openstreetmap.org/relation/1684465
+        nazev: "[Z] odbočka k rozhledně Štěpánka"
+        typShody: castecna
+        lat: 50.7452051
+        lng: 15.3647534
+        obecOsm: null
+        tagy: operator=cz:KČT
+      - osm: https://www.openstreetmap.org/relation/3263630
+        nazev: "[Ž] Černá hora: kiosek - rozhledna Panorama"
+        typShody: castecna
+        lat: 50.6499029
+        lng: 15.750263
+        obecOsm: null
+        tagy: operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/4011517089
+        nazev: Cimrmanova nejnižší rozhledna
+        typShody: castecna
+        lat: 50.6126002
+        lng: 15.3604067
+        obecOsm: null
+        tagy: tourism=viewpoint
+      - osm: https://www.openstreetmap.org/node/3080367322
+        nazev: Markoušovická rozhledna
+        typShody: castecna
+        lat: 50.5754718
+        lng: 16.0123827
+        obecOsm: null
+        tagy: tourism=viewpoint, ele=708
+      - osm: https://www.openstreetmap.org/node/4211909921
+        nazev: Markoušovická rozhledna
+        typShody: castecna
+        lat: 50.5752504
+        lng: 16.0122039
+        obecOsm: null
+        tagy: tourism=information, operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/4211909920
+        nazev: Markoušovická rozhledna odbočka
+        typShody: castecna
+        lat: 50.5786317
+        lng: 16.0112978
+        obecOsm: null
+        tagy: tourism=information, operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/4855162856
+        nazev: Pokladna Rozhledna U borovice
+        typShody: castecna
+        lat: 50.6604061
+        lng: 15.4017093
+        obecOsm: null
+        tagy: ""
+      - osm: https://www.openstreetmap.org/node/6566001453
+        nazev: Rozhledna
+        typShody: castecna
+        lat: 50.5997162
+        lng: 15.9039545
+        obecOsm: null
+        tagy: tourism=information
+      - osm: https://www.openstreetmap.org/way/307633839
+        nazev: rozhledna Eliška
+        typShody: castecna
+        lat: 50.629391
+        lng: 15.9112094
+        obecOsm: null
+        tagy: tourism=viewpoint, building=yes, ele=632
+      - osm: https://www.openstreetmap.org/node/3411838582
+        nazev: rozhledna Hnědý vrch
+        typShody: castecna
+        lat: 50.6883259
+        lng: 15.7070696
+        obecOsm: null
+        tagy: tourism=viewpoint, ele=1207.45
+      - osm: https://www.openstreetmap.org/way/303365344
+        nazev: Rozhledna Maják J. Cimrmanna
+        typShody: castecna
+        lat: 50.7399206
+        lng: 15.3453645
+        obecOsm: null
+        tagy: building=yes
+      - osm: https://www.openstreetmap.org/node/3751284305
+        nazev: Rozhledna panorama
+        typShody: castecna
+        lat: 50.6488299
+        lng: 15.7519847
+        obecOsm: null
+        tagy: tourism=information
+      - osm: https://www.openstreetmap.org/way/125508571
+        nazev: Rozhledna Panorama
+        typShody: castecna
+        lat: 50.6489259
+        lng: 15.751988
+        obecOsm: null
+        tagy: tourism=viewpoint
+      - osm: https://www.openstreetmap.org/way/415701652
+        nazev: Rozhledna Žalý
+        typShody: castecna
+        lat: 50.6581957
+        lng: 15.5723726
+        obecOsm: null
+        tagy: tourism=attraction, building=tower, website=http://www.zaly.cz/
+  - slug: erlebachova-bouda
+    nazev: Erlebachova bouda
+    obecProfilu: Špindlerův Mlýn
+    nalezy:
+      - osm: https://www.openstreetmap.org/way/31128152
+        nazev: Erlebachova bouda
+        typShody: presna
+        lat: 50.7589321
+        lng: 15.633979
+        obecOsm: null
+        tagy: tourism=hotel, building=hotel, amenity=restaurant,
+          website=https://www.erlebachovabouda.cz/
+      - osm: https://www.openstreetmap.org/way/74863462
+        nazev: Erlebachova bouda
+        typShody: presna
+        lat: 50.7577864
+        lng: 15.6317577
+        obecOsm: null
+        tagy: ""
+      - osm: https://www.openstreetmap.org/way/1011094086
+        nazev: Erlebachova bouda
+        typShody: presna
+        lat: 50.7577787
+        lng: 15.6319303
+        obecOsm: null
+        tagy: ""
+  - slug: kolinska-bouda
+    nazev: Kolínská bouda
+    obecProfilu: Pec pod Sněžkou
+    nalezy:
+      - osm: https://www.openstreetmap.org/node/462698512
+        nazev: Kolínská bouda
+        typShody: presna
+        lat: 50.6700963
+        lng: 15.7373037
+        obecOsm: null
+        tagy: tourism=information, operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/650918422
+        nazev: Kolínská bouda
+        typShody: presna
+        lat: 50.670181
+        lng: 15.7375702
+        obecOsm: null
+        tagy: amenity=restaurant
+      - osm: https://www.openstreetmap.org/way/31360798
+        nazev: Kolínská bouda
+        typShody: presna
+        lat: 50.6702745
+        lng: 15.7375509
+        obecOsm: null
+        tagy: tourism=hotel, building=yes
+      - osm: https://www.openstreetmap.org/way/1280339937
+        nazev: Kolínská bouda
+        typShody: presna
+        lat: 50.6704273
+        lng: 15.7365712
+        obecOsm: null
+        tagy: ""
+  - slug: lysecinska-bouda
+    nazev: Lysečinská bouda
+    obecProfilu: Horní Maršov
+    nalezy:
+      - osm: https://www.openstreetmap.org/node/656464518
+        nazev: Lysečinská bouda
+        typShody: presna
+        lat: 50.7127375
+        lng: 15.834395
+        obecOsm: null
+        tagy: amenity=restaurant
+      - osm: https://www.openstreetmap.org/node/2452724167
+        nazev: Lysečinská bouda
+        typShody: presna
+        lat: 50.7128705
+        lng: 15.835331
+        obecOsm: null
+        tagy: tourism=information, ele=958, operator=cz:KČT
+      - osm: https://www.openstreetmap.org/way/137029464
+        nazev: Lysečinská bouda
+        typShody: presna
+        lat: 50.7127501
+        lng: 15.8343288
+        obecOsm: null
+        tagy: tourism=guest_house, building=yes,
+          website=http://www.horsky-hotel-lysecinska-bouda-horni-marsov.rs-ubytovani.net
+      - osm: https://www.openstreetmap.org/relation/3199393
+        nazev: "[M] Horní Maršov - Lysečinská bouda"
+        typShody: castecna
+        lat: 50.6866201
+        lng: 15.8270995
+        obecOsm: null
+        tagy: operator=cz:KČT
+  - slug: petrova-bouda
+    nazev: Petrova bouda
+    obecProfilu: Špindlerův Mlýn
+    nalezy:
+      - osm: https://www.openstreetmap.org/relation/341098
+        nazev: "[M] Pod Smělcem - Petrova bouda"
+        typShody: castecna
+        lat: 50.7729139
+        lng: 15.5937709
+        obecOsm: null
+        tagy: operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/2482552645
+        nazev: Hanapetrova paseka
+        typShody: castecna
+        lat: 50.6766869
+        lng: 15.655547
+        obecOsm: null
+        tagy: tourism=information, ele=883, operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/4231596089
+        nazev: Hanapetrova paseka
+        typShody: castecna
+        lat: 50.6713295
+        lng: 15.6569801
+        obecOsm: null
+        tagy: tourism=information, operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/2229115255
+        nazev: Hanapetrova Paseka
+        typShody: castecna
+        lat: 50.6748638
+        lng: 15.657827
+        obecOsm: null
+        tagy: ""
+      - osm: https://www.openstreetmap.org/relation/3281717
+        nazev: "Krkonoše bez barier: Špindlerovka - Petrova bouda"
+        typShody: castecna
+        lat: 50.7664823
+        lng: 15.6228543
+        obecOsm: null
+        tagy: operator=cz:KČT
+      - osm: https://www.openstreetmap.org/relation/3281717
+        nazev: "Krkonoše bez barier: Špindlerovka - Petrova bouda"
+        typShody: castecna
+        lat: 50.7664823
+        lng: 15.6228543
+        obecOsm: null
+        tagy: operator=cz:KČT
+  - slug: pomezni-bouda
+    nazev: Pomezní bouda
+    obecProfilu: Malá Úpa
+    nalezy:
+      - osm: https://www.openstreetmap.org/node/292592404
+        nazev: Pomezní bouda
+        typShody: presna
+        lat: 50.746064
+        lng: 15.8221046
+        obecOsm: null
+        tagy: amenity=restaurant
+      - osm: https://www.openstreetmap.org/way/96093567
+        nazev: Pomezní bouda
+        typShody: presna
+        lat: 50.7460809
+        lng: 15.8220807
+        obecOsm: null
+        tagy: tourism=hotel, building=yes, website=https://www.pomezni-bouda.cz/
+  - slug: portasky
+    nazev: Portášky
+    obecProfilu: Pec pod Sněžkou
+    nalezy:
+      - osm: https://www.openstreetmap.org/node/656462446
+        nazev: Horská chata Portášky
+        typShody: castecna
+        lat: 50.7020225
+        lng: 15.7688638
+        obecOsm: null
+        tagy: amenity=restaurant, ele=1050, website=http://www.portasky.cz/
+      - osm: https://www.openstreetmap.org/node/12124631358
+        nazev: Horská chata Portášky
+        typShody: castecna
+        lat: 50.7021122
+        lng: 15.7691267
+        obecOsm: Pec pod Sněžkou - Velká Úpa
+        tagy: amenity=charging_station, addr:city=Pec pod Sněžkou - Velká Úpa,
+          operator=JURIKOL,
+          website=https://powerbox.one/place/horska-chata-portasky/
+      - osm: https://www.openstreetmap.org/way/45588542
+        nazev: Lanová dráha Portášky
+        typShody: castecna
+        lat: 50.6966901
+        lng: 15.7691247
+        obecOsm: null
+        tagy: ""
+      - osm: https://www.openstreetmap.org/way/204127549
+        nazev: Lanová dráha Portášky
+        typShody: castecna
+        lat: 50.6901497
+        lng: 15.7682017
+        obecOsm: null
+        tagy: building=residential
+  - slug: prazska-bouda
+    nazev: Pražská bouda
+    obecProfilu: Černý Důl
+    nalezy:
+      - osm: https://www.openstreetmap.org/node/5488661844
+        nazev: Pražská bouda
+        typShody: presna
+        lat: 50.6706195
+        lng: 15.7303989
+        obecOsm: null
+        tagy: amenity=restaurant
+      - osm: https://www.openstreetmap.org/way/19923488
+        nazev: Pražská bouda
+        typShody: presna
+        lat: 50.6707087
+        lng: 15.7302361
+        obecOsm: null
+        tagy: tourism=hotel, building=yes
+      - osm: https://www.openstreetmap.org/node/462698532
+        nazev: Lučiny - Pražská bouda
+        typShody: castecna
+        lat: 50.670614
+        lng: 15.7306264
+        obecOsm: null
+        tagy: tourism=information, ele=1125, operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/2449506225
+        nazev: Lučiny Pražská bouda
+        typShody: castecna
+        lat: 50.6707738
+        lng: 15.7306477
+        obecOsm: null
+        tagy: tourism=information, operator=cz:KČT
+  - slug: rychorska-bouda
+    nazev: Rýchorská bouda
+    obecProfilu: Žacléř
+    nalezy:
+      - osm: https://www.openstreetmap.org/node/1944336845
+        nazev: Rýchorská bouda
+        typShody: presna
+        lat: 50.6602093
+        lng: 15.849989
+        obecOsm: null
+        tagy: amenity=fast_food
+      - osm: https://www.openstreetmap.org/node/2431290110
+        nazev: Rýchorská bouda
+        typShody: presna
+        lat: 50.6598196
+        lng: 15.8505642
+        obecOsm: null
+        tagy: tourism=information, ele=990, operator=cz:KČT
+      - osm: https://www.openstreetmap.org/node/12771004856
+        nazev: Rýchorská bouda
+        typShody: presna
+        lat: 50.6601882
+        lng: 15.8499576
+        obecOsm: null
+        tagy: tourism=information
+      - osm: https://www.openstreetmap.org/way/239899454
+        nazev: Rýchorská bouda
+        typShody: presna
+        lat: 50.6602261
+        lng: 15.8498815
+        obecOsm: null
+        tagy: building=yes
+      - osm: https://www.openstreetmap.org/node/12126173699
+        nazev: Restaurace Rýchorská bouda
+        typShody: castecna
+        lat: 50.6603634
+        lng: 15.8501138
+        obecOsm: Žacléř
+        tagy: amenity=charging_station, addr:city=Žacléř, operator=Bekot z.s.,
+          website=https://powerbox.one/place/restaurace-rychorska-bouda/
+  - slug: schronisko-nad-lomniczka
+    nazev: Schronisko PTTK „Nad Łomniczką"
+    obecProfilu: Karpacz
+    nalezy: []
