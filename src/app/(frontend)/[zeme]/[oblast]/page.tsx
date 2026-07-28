@@ -211,7 +211,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         <PohoriChatySeznam index={vOblasti} />
       </section>
 
-      <section className="sec" aria-label="Žebříčky">
+      <section className="sec" id="zebricky" aria-label="Žebříčky">
         <SectionBar num="03" title="Žebříčky" variant="red" />
         <div className="pohori-zebricky">
           <div className="pohori-zebricek">

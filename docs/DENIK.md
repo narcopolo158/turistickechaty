@@ -230,6 +230,21 @@ v hodinovém sliceru už dnes. **Z F1 epicu zbývá:** F1e mini-stránky
 středisek (čekají hlavně na obsahová data — perexy/doprava/výšky ČÚZK;
 teď by byly prázdné) a F1f doladění nočních detailů šablon.
 
+**Dodatek 10 (týž den, „pokracuj"): DATA-06 dohnala korpus — trasy pro
+63 chat.** Katalogy přístupů i přechodů byly z éry 23 chat; přepočet nad
+76 profily: **přístupové trasy 63/64 chat s GPS (127 přístupů, 0 k ruční
+kontrole)** — 27 chat z ověřovaného katalogu nástupů, 36 z nejbližších
+středisek; jediná bez trasy je poctivě **Raisova chata na Zvičině**
+(9,8 km od sítě krkonošských značených tras — je v Podkrkonoší, správně).
+**Přechody chata–chata přepočteny na 63 chat.** Render na profilech už
+existoval (sekce Odkud vyjít + skládaná mapa čtou katalog) — rozšíření
+se propíše deployem samo; časy a převýšení zatím poctivě chybí
+(„—“), doplní je Michalův klik na workflow **„DATA-06: výšky přístupů"**
+(Mapy.com Elevation + DIN 33466 nad novým katalogem). Bonus: „Kam dál"
+v katalogu nově odkazuje na žebříčky stránky pohoří (#zebricky — F1b
+odchylka „mrtvé odkazy neděláme" tím zaniká, cíl existuje). 271 testů,
+tsc čisté.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh
