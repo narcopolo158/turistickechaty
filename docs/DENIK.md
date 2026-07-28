@@ -131,6 +131,15 @@ místo ní „ilustrační panorama"; eyebrow „· Krkonoše" místo „· Čes
 3 padající soubory = environmentální Payload bez DB (ověřeno git stash:
 padají i na čistém main). tsc i lint čisté.
 
+**Dodatek 5 (týž den, Michal: párování „vypadá všechno ok — můžeš to
+takhle zpracovat"):** všech 30 párů nové vlny potvrzeno en bloc a zapsáno
+do `_parovani-potvrzene.yaml` (poznámka u každého: prošel Michal očima na
+razitkuj.cz, potvrzeno v chatu 28. 7. 2026). Stav: **46 potvrzených shod
+/ 45 chat, 0 ke kontrole, 2 vyřazené** (Portáš → Javorníky, Chatka AKT na
+Pietraszonce → Beskid Śląski). Otisky-workflow po kliku stáhne 45 chat
+(dřív 16) — pak zaloz + seed a razítka nové vlny naskočí na profily
+i do razítkovníku.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh
