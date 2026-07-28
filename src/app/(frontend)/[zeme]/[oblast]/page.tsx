@@ -1,3 +1,6 @@
+import { existsSync } from 'node:fs'
+import { join } from 'node:path'
+
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound, permanentRedirect } from 'next/navigation'
@@ -7,7 +10,7 @@ import Mapa3D from '@/components/Mapa3D'
 import PohoriChatySeznam from '@/components/PohoriChatySeznam'
 import VitrinaSberatelstvi, { type VitrinaOtisk } from '@/components/VitrinaSberatelstvi'
 import { SectionBar } from '@/components/ui'
-import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
+import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
 import { zanikleChaty } from '@/lib/zanikle'
@@ -35,7 +38,10 @@ export const revalidate = 3600
 const KANONICKA_ZEME = 'cesko'
 
 export async function generateStaticParams() {
-  return [{ zeme: KANONICKA_ZEME, oblast: 'krkonose' }]
+  // Oblasti se berou z databáze — nové pohoří dostane stránku samo,
+  // jakmile ho seed nahraje (rozhodnutí Michala 28. 7. 2026: Jizerské hory).
+  const slugy = await getSlugyOblasti()
+  return slugy.map((oblast) => ({ zeme: KANONICKA_ZEME, oblast }))
 }
 
 type Params = { zeme: string; oblast: string }
@@ -60,12 +66,11 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
     getOblastBySlug(oblastSlug),
     getIndexChat(),
     getStrediskaOblasti(oblastSlug),
-    getPocetPublikovanychRazitek(),
+    getPocetPublikovanychRazitek(oblastSlug),
   ])
   if (!oblast) notFound()
 
   const vOblasti = index.filter((ch) => ch.oblastSlug === oblastSlug)
-  if (vOblasti.length === 0 && oblastSlug !== 'krkonose') notFound()
   const zanikle = zanikleChaty()
   const sRazitkem = vOblasti.filter((ch) => ch.razitko).length
   const vysky = vOblasti.map((ch) => ch.vyska).filter((v): v is number => v != null)
@@ -76,6 +81,13 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
     .filter((c): c is string => c != null)
     .sort()
     .at(-1)
+
+  // 3D mapa se ukáže jen tam, kde ji pipeline DATA-28 opravdu vyrobila —
+  // jinak by sekce slibovala něco, co neexistuje.
+  const ma3d = existsSync(join(process.cwd(), 'public', '3d', `${oblastSlug}.html`))
+  const poster3d = existsSync(join(process.cwd(), 'public', '3d', `poster-${oblastSlug}.jpg`))
+    ? `/3d/poster-${oblastSlug}.jpg`
+    : '/3d/poster.jpg'
 
   const hora = oblast.nejvyssiHora
   const topCile = (oblast.topCile ?? []).filter((c) => c.nazev)
@@ -122,7 +134,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
   const faq: { q: string; a: string }[] = [
     {
       q: 'Kolik chat průvodce vede?',
-      a: `V Krkonoších vedeme ${vOblasti.length} profilů — ${vOblasti.length - pocetPl} na české a ${pocetPl} na polské straně. K tomu ${zanikle.length} zaniklých chat v samostatném Atlasu.`,
+      a: `V oblasti ${oblast.nazev} vedeme ${vOblasti.length} profilů — ${vOblasti.length - pocetPl} na české a ${pocetPl} na polské straně. K tomu ${zanikle.length} zaniklých chat v samostatném Atlasu.`,
     },
     {
       q: 'Co znamená „ověřeno" u údajů?',
@@ -133,8 +145,8 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       a: `${sRazitkem} chat má doložené razítko — otisky si prohlédneš na profilech a sbíráš je do svého razítkovníku, který zůstává ve tvém prohlížeči. Převzaté skeny neseme se svolením razitkuj.cz.`,
     },
     {
-      q: 'Jsou v průvodci i polské boudy?',
-      a: `Ano. Krkonoše vedeme jako jedno přeshraniční pohoří — ${pocetPl} schronisek na polské straně patří do téhož katalogu, s původními polskými názvy.`,
+      q: 'Jsou v průvodci i objekty za hranicí?',
+      a: `Ano. ${oblast.nazev} vedeme jako jedno přeshraniční pohoří — ${pocetPl} objektů na polské straně patří do téhož katalogu, s původními místními názvy.`,
     },
     {
       q: 'Chybí tu chata, kterou znám. Proč?',
@@ -197,11 +209,28 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         </div>
       </header>
 
-      <section className="sec" aria-label="3D mapa">
-        <SectionBar num="01" title="3D mapa Krkonoš" variant="red" />
-        <Mapa3D posterUrl="/3d/poster.jpg" appUrl="/3d/krkonose.html" />
-      </section>
+      {ma3d && (
+        <section className="sec" aria-label="3D mapa">
+          <SectionBar num="01" title={`3D mapa — ${oblast.nazev}`} variant="red" />
+          <Mapa3D posterUrl={poster3d} appUrl={`/3d/${oblastSlug}.html`} />
+        </section>
+      )}
 
+      {vOblasti.length === 0 && (
+        <section className="sec" aria-label="Stav oblasti">
+          <div className="pohori-presah">
+            <b>Oblast připravujeme</b>
+            <p>
+              {oblast.nazev} jsou další pohoří v pořadí — kandidáty sbíráme z OpenStreetMap
+              a křížově ověřujeme; profily zveřejníme, až budou doložené. Radši prázdno než
+              nepodložený seznam. Máš tip na chatu, otisk razítka nebo fotku?{' '}
+              <Link href="/prispet">Pošli je do sbírky ▸</Link>
+            </p>
+          </div>
+        </section>
+      )}
+
+      {vOblasti.length > 0 && (
       <section className="sec" aria-label="Chaty oblasti">
         <SectionBar num="02" title="Chaty oblasti" variant="red" />
         <p className="pohori-uvodka">
@@ -210,7 +239,9 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         </p>
         <PohoriChatySeznam index={vOblasti} />
       </section>
+      )}
 
+      {vOblasti.length > 0 && (
       <section className="sec" id="zebricky" aria-label="Žebříčky">
         <SectionBar num="03" title="Žebříčky" variant="red" />
         <div className="pohori-zebricky">
@@ -266,6 +297,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
           </div>
         </div>
       </section>
+      )}
 
       {strediska.length > 0 && (
         <section className="sec" aria-label="Střediska">
@@ -330,8 +362,9 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         </div>
       </section>
 
+      {(vitrinaOtisky.length > 0 || sRazitkem > 0) && (
       <section className="sec" aria-label="Sběratelství">
-        <SectionBar num="07" title="Sběratelství — vitrína Krkonoš" variant="red" />
+        <SectionBar num="07" title={`Sběratelství — vitrína ${oblast.nazev}`} variant="red" />
         <VitrinaSberatelstvi
           otisky={vitrinaOtisky}
           znamka={vitrinaZnamka}
@@ -346,6 +379,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
           otisky se svolením razitkuj.cz · známka dle oficiálního seznamu vydavatele · počty z databáze
         </p>
       </section>
+      )}
 
       <section className="sec" aria-label="Časté otázky">
         <SectionBar num="08" title="Časté otázky" variant="red" />
@@ -360,6 +394,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         <p className="pohori-mikropozn">odpovědi se počítají z databáze průvodce — čísla nikdy nepíšeme ručně</p>
       </section>
 
+      {oblastSlug === 'krkonose' && (
       <section className="sec" aria-label="Přesahy">
         <SectionBar num="09" title="Přesahy pohoří" variant="red" />
         <div className="pohori-presah">
@@ -371,6 +406,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
           </p>
         </div>
       </section>
+      )}
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     </div>

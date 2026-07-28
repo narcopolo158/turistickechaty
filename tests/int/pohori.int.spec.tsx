@@ -143,7 +143,7 @@ describe('Stránka pohoří (F1d)', () => {
     expect(screen.getByText('Karpacz')).toBeTruthy()
     expect(screen.getByText(/zanikla 1982 — zbořena po požáru/)).toBeTruthy()
     expect(screen.getByText('Kolik chat průvodce vede?')).toBeTruthy()
-    expect(screen.getByText(/V Krkonoších vedeme 4 profilů — 3 na české a 1 na polské straně/)).toBeTruthy()
+    expect(screen.getByText(/V oblasti Krkonoše vedeme 4 profilů — 3 na české a 1 na polské straně/)).toBeTruthy()
     const jsonLd = container.querySelector('script[type="application/ld+json"]')!
     expect(JSON.parse(jsonLd.textContent!)['@type']).toBe('FAQPage')
   })
@@ -159,7 +159,7 @@ describe('Stránka pohoří (F1d)', () => {
 
   it('vitrína sběratelství: reálné otisky na policích, prázdná pasparta a počty z dat', async () => {
     const { container } = render(await PohoriPage({ params: params('cesko') }))
-    expect(screen.getByText('Sběratelství — vitrína Krkonoš')).toBeTruthy()
+    expect(screen.getByText('Sběratelství — vitrína Krkonoše')).toBeTruthy()
     const otisk = container.querySelector('.vit-pasparta img')!
     expect(otisk.getAttribute('src')).toBe('/media/otisky/lucni.gif') // reálný sken z mocku
     expect(screen.getByText(/3 chatám razítko zatím nemáme/)).toBeTruthy() // poctivá prázdná pasparta

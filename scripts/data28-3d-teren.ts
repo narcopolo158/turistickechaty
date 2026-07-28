@@ -12,7 +12,7 @@
  *      obarvené podle osmc/kct značení.
  *   3. VRCHOLY: Overpass `node[natural=peak][name]` s tagem ele — popisky
  *      pro orientaci.
- *   4. CHATY + PŘECHODY: z YAML korpusu a data/trasy/krkonose/prechody.json
+ *   4. CHATY + PŘECHODY: z YAML korpusu a data/trasy/${OBLAST.slug}/prechody.json
  *      (stejně jako experiment).
  *   5. Zapíše docs/experimenty/3d-teren-data.json a SLOŽÍ FINÁLNÍ HTML
  *      (šablona + přibalený three.js + data) → docs/experimenty/
@@ -34,10 +34,14 @@ import { join } from 'node:path'
 import { parse } from 'yaml'
 
 import { stahniOverpass, VYCHOZI_API_INSTANCE } from './data01-overpass-krkonose'
+import { oblastZArgv } from './oblasti'
 import { overpassDotazTrasy, type TrasaRelace } from './data06-trasy'
 import { MAX_POZIC_NA_DOTAZ } from './vyskovy-profil'
 
-const BBOX = { latMin: 50.6, latMax: 50.82, lngMin: 15.35, lngMax: 15.95 }
+// Oblast se volí `--oblast <slug>` (výchozí krkonose) — konfigurace
+// v scripts/oblasti.ts, aby nové pohoří neznamenalo kopii skriptu.
+const OBLAST = oblastZArgv()
+const BBOX = OBLAST.bbox3d
 const BBOX_STR = `${BBOX.latMin},${BBOX.lngMin},${BBOX.latMax},${BBOX.lngMax}`
 const NX = 240
 const NY = 144
@@ -45,6 +49,9 @@ const ELEVATION_URL = 'https://api.mapy.com/v1/elevation'
 const DECIMACE_M = 60
 const KOREN = process.cwd()
 const ADR = join(KOREN, 'docs', 'experimenty')
+// Krkonošský soubor si drží původní jméno (je commitnutý a odkazuje se na něj
+// z dokumentace); další oblasti dostávají jméno se slugem.
+const DATA_JSON = OBLAST.slug === 'krkonose' ? '3d-teren-data.json' : `3d-teren-data-${OBLAST.slug}.json`
 
 type Chata = { n: string; lat: number; lng: number; ele: number | null; typ: string | null; stav: string | null; pub: boolean }
 type Trasa = { ref: string | null; barva: string; body: [number, number][] }
@@ -55,8 +62,8 @@ const nactiChaty = (): { chaty: Chata[]; kotvy: { lat: number; lng: number; ele:
   const chaty: Chata[] = []
   const kotvy: { lat: number; lng: number; ele: number }[] = []
   for (const [dir, pub] of [
-    ['data/chaty/krkonose', true],
-    ['data/kandidati/krkonose', false],
+    [`data/chaty/${OBLAST.slug}`, true],
+    [`data/kandidati/${OBLAST.slug}`, false],
   ] as const) {
     for (const f of readdirSync(join(KOREN, dir))) {
       if (!f.endsWith('.yaml')) continue
@@ -77,7 +84,7 @@ const nactiChaty = (): { chaty: Chata[]; kotvy: { lat: number; lng: number; ele:
     }
   }
   for (const src of ['_overpass-export-cz.json', '_overpass-export-pl.json']) {
-    const j = JSON.parse(readFileSync(join(KOREN, 'data/kandidati/krkonose', src), 'utf8')) as {
+    const j = JSON.parse(readFileSync(join(KOREN, `data/kandidati/${OBLAST.slug}`, src), 'utf8')) as {
       elements?: { lat?: number; lon?: number; center?: { lat: number; lon: number }; tags?: Record<string, string> }[]
     }
     for (const e of j.elements ?? []) {
@@ -378,7 +385,7 @@ const stahniVrcholy = async (): Promise<Vrchol[]> => {
 
 // ── přechody (schematické spojnice; reálné délky z prechody.json) ──────────
 const nactiPrechody = (chaty: Chata[]): { a: string; b: string; km: number }[] => {
-  const j = JSON.parse(readFileSync(join(KOREN, 'data/trasy/krkonose/prechody.json'), 'utf8')) as {
+  const j = JSON.parse(readFileSync(join(KOREN, `data/trasy/${OBLAST.slug}/prechody.json`), 'utf8')) as {
     chaty?: { nazev: string; prechody?: { cilNazev: string; delkaKm: number }[] }[]
   }
   const idx = new Set(chaty.filter((c) => c.pub).map((c) => c.n))
@@ -405,11 +412,11 @@ const slozHtml = (dataJson: string, kotvyPocet: number): void => {
   )
   html = html.replace('/*__DATA__*/null/*__/DATA__*/', dataJson)
   html = html.replace('__KOTVY__', String(kotvyPocet))
-  writeFileSync(join(ADR, '3d-teren-krkonose.html'), html)
+  writeFileSync(join(ADR, `3d-teren-${OBLAST.slug}.html`), html)
   // Táž aplikace se servíruje webem: stránka pohoří ji zasazuje přes
   // poster→klik (public/3d/krkonose.html). Jeden běh aktualizuje obojí.
   mkdirSync(join(KOREN, 'public', '3d'), { recursive: true })
-  writeFileSync(join(KOREN, 'public', '3d', 'krkonose.html'), html)
+  writeFileSync(join(KOREN, 'public', '3d', `${OBLAST.slug}.html`), html)
 }
 
 // ── odolnost: opakování s čekáním + převzetí vrstvy z minulého běhu ────────
@@ -418,7 +425,7 @@ const slozHtml = (dataJson: string, kotvyPocet: number): void => {
 // zkouší 3× s rozestupem, a když nedá, převezme se z posledního úspěšného
 // 3d-teren-data.json v repu (stáří dat pak přiznává stavOsm).
 const nactiPredchoziData = (): Record<string, unknown> | null => {
-  try { return JSON.parse(readFileSync(join(ADR, '3d-teren-data.json'), 'utf8')) as Record<string, unknown> }
+  try { return JSON.parse(readFileSync(join(ADR, DATA_JSON), 'utf8')) as Record<string, unknown> }
   catch { return null }
 }
 const sOpakovanim = async <T>(nazev: string, fn: () => Promise<T>): Promise<T | null> => {
@@ -499,9 +506,9 @@ const main = async () => {
     realDem, stavOsm, kotvy: kotvy.length,
     zdrojVysky: realDem ? 'Mapy.com Elevation API (výškový model)' : `ilustrační interpolace z výšek ${kotvy.length} objektů korpusu` }
   const dataJson = JSON.stringify(data)
-  writeFileSync(join(ADR, '3d-teren-data.json'), dataJson)
+  writeFileSync(join(ADR, DATA_JSON), dataJson)
   slozHtml(dataJson, kotvy.length)
-  console.log(`Zapsáno: 3d-teren-data.json (${(dataJson.length / 1024).toFixed(0)} kB) + 3d-teren-krkonose.html`)
+  console.log(`Zapsáno: 3d-teren-data-${OBLAST.slug}.json (${(dataJson.length / 1024).toFixed(0)} kB) + 3d-teren-${OBLAST.slug}.html + public/3d/${OBLAST.slug}.html`)
   console.log(`realDem: ${realDem} | chaty: ${chaty.length} | trasy: ${trasy.length} | lanovky: ${lanovky.length} | reky: ${reky.length} | vrcholy: ${vrcholy.length} | lesy: ${lesy.length} | sjezdovky: ${sjezdovky.length}`)
 }
 

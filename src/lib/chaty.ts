@@ -328,13 +328,26 @@ export async function getStrediskaOblasti(oblastSlug: string): Promise<Stredisko
     .sort((a, b) => cs.compare(a.nazev, b.nazev))
 }
 
-/** Počet publikovaných razítek (vitrína sběratelství) — počítá se, nepíše. */
-export async function getPocetPublikovanychRazitek(): Promise<number> {
+/**
+ * Počet publikovaných razítek — volitelně jen v jedné oblasti (vitrína
+ * sběratelství na stránce pohoří). Bez filtru by vitrína nové oblasti
+ * ukazovala otisky cizího pohoří, což by lhalo.
+ */
+export async function getPocetPublikovanychRazitek(oblastSlug?: string): Promise<number> {
   const payload = await getPayload({ config })
   const res = await payload.count({
     collection: 'razitka',
-    where: { _status: { equals: 'published' } },
+    where: oblastSlug
+      ? { and: [{ _status: { equals: 'published' } }, { 'chata.oblast.slug': { equals: oblastSlug } }] }
+      : { _status: { equals: 'published' } },
     overrideAccess: false,
   })
   return res.totalDocs
+}
+
+/** Slugy všech oblastí (stránky pohoří se generují z dat, ne ze seznamu v kódu). */
+export async function getSlugyOblasti(): Promise<string[]> {
+  const payload = await getPayload({ config })
+  const res = await payload.find({ collection: 'oblasti', limit: 100, depth: 0, overrideAccess: false })
+  return res.docs.map((o) => o.slug).filter((s): s is string => !!s)
 }

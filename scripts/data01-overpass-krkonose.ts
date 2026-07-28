@@ -37,6 +37,8 @@ import { join } from 'node:path'
 
 import { parse, stringify } from 'yaml'
 
+import { bboxStr, oblastZArgv, type OblastKonfig } from './oblasti'
+
 // Slug generujeme stejně jako Payload hook — jeden zdroj pravdy.
 import { slugify } from '../src/fields/slug'
 
@@ -50,10 +52,11 @@ export const VYCHOZI_API_INSTANCE = [
   'https://overpass-api.de/api/interpreter',
   'https://overpass.kumi.systems/api/interpreter',
 ]
-const KANDIDATI_ADRESAR = join(process.cwd(), 'data', 'kandidati', 'krkonose')
-const RUCNI_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
+// Adresáře i dotaz se odvozují z konfigurace oblasti (scripts/oblasti.ts) —
+// nové pohoří se přidává tam, ne kopií tohohle skriptu.
+const kandidatiAdresar = (oblast: string) => join(process.cwd(), 'data', 'kandidati', oblast)
+const rucniAdresar = (oblast: string) => join(process.cwd(), 'data', 'chaty', oblast)
 const VYRAZENO_SOUBOR = join(process.cwd(), 'data', 'kandidati', '_vyrazeno.yaml')
-const exportJson = (zeme: Zeme) => join(KANDIDATI_ADRESAR, `_overpass-export-${zeme}.json`)
 
 /**
  * Vyřazené OSM objekty (redakční rozhodnutí v `data/kandidati/_vyrazeno.yaml`):
@@ -97,12 +100,12 @@ export const BBOX_KRKONOSE = '50.55,15.30,50.87,16.05'
 // `tourism=hut` je nestandardní (wiki zná alpine_hut/wilderness_hut), ale
 // zadání ručního běhu ho chce v checklistu — kandidáty nic nekazí, nanejvýš
 // přinese pár objektů k ruční kontrole navíc.
-export const overpassDotaz = (iso: string): string => `[out:json][timeout:120];
+export const overpassDotaz = (iso: string, okno: string = BBOX_KRKONOSE): string => `[out:json][timeout:120];
 area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
 (
-  nwr["tourism"="alpine_hut"](area.stat)(${BBOX_KRKONOSE});
-  nwr["tourism"="wilderness_hut"](area.stat)(${BBOX_KRKONOSE});
-  nwr["tourism"="hut"](area.stat)(${BBOX_KRKONOSE});
+  nwr["tourism"="alpine_hut"](area.stat)(${okno});
+  nwr["tourism"="wilderness_hut"](area.stat)(${okno});
+  nwr["tourism"="hut"](area.stat)(${okno});
 );
 out center;`
 
@@ -414,10 +417,17 @@ const main = async () => {
   const instance = apiIndex >= 0 && argv[apiIndex + 1] ? [argv[apiIndex + 1]] : VYCHOZI_API_INSTANCE
   const zJsonu = argv.includes('--z-jsonu')
 
+  const oblast: OblastKonfig = oblastZArgv(argv)
+  // Země dotazu bere konfigurace oblasti (přeshraniční pohoří „vcelku").
+  const kandAdr = kandidatiAdresar(oblast.slug)
+  const rucAdr = rucniAdresar(oblast.slug)
+  const okno = bboxStr(oblast.bbox)
+  console.log(`Oblast: ${oblast.nazev} (${oblast.slug}) — okno dotazu ${okno}`)
+
   const polozky: ExportPolozka[] = []
   const stavy: string[] = []
   for (const { zeme, iso } of ZEME_DOTAZU) {
-    const soubor = exportJson(zeme)
+    const soubor = join(kandAdr, `_overpass-export-${zeme}.json`)
     let raw: string
     if (zJsonu) {
       if (!existsSync(soubor)) {
@@ -427,11 +437,11 @@ const main = async () => {
       console.log(`Offline transformace commitnutého exportu ${soubor}…`)
       raw = readFileSync(soubor, 'utf8')
     } else {
-      console.log(`Overpass dotaz ${iso} (alpine_hut + wilderness_hut + hut, ${iso} ∩ bbox Krkonoš); instance: ${instance.join(', ')}…`)
-      const vysledek = await stahniOverpass(instance, overpassDotaz(iso))
+      console.log(`Overpass dotaz ${iso} (alpine_hut + wilderness_hut + hut, ${iso} ∩ okno ${oblast.nazev}); instance: ${instance.join(', ')}…`)
+      const vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno))
       raw = vysledek.raw
       console.log(`Staženo z ${vysledek.api}.`)
-      mkdirSync(KANDIDATI_ADRESAR, { recursive: true })
+      mkdirSync(kandAdr, { recursive: true })
       writeFileSync(soubor, raw, 'utf8')
       console.log(`Surový export uložen: ${soubor} (commituje se jako doklad).`)
     }
@@ -444,7 +454,7 @@ const main = async () => {
     throw new Error('--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.')
   }
 
-  const report = zapisKandidaty(polozky, KANDIDATI_ADRESAR, RUCNI_ADRESAR, nactiVyrazene())
+  const report = zapisKandidaty(polozky, kandAdr, rucAdr, nactiVyrazene())
 
   console.log(`\n## DATA-01 report (stav OSM dat: ${stavy.join(', ')})`)
   console.log(`\nNoví kandidáti: ${report.zapsano.length}`)

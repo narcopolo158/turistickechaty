@@ -375,6 +375,33 @@ se v katalogu PŘED schválením neobjeví, po schválení přes API (PATCH
 v Next runtime, tedy jako z adminu) je nová fotka v katalogu OKAMŽITĚ,
 bez čekání na revalidaci. Testy +3 (286 celkem), tsc/lint/kontrola čisté.
 
+**Dodatek 17 (týž den, rozhodnutí Michala: „po Krkonoších Jizerské hory,
+a zase 3D model"): ZÁZEMÍ DRUHÉ OBLASTI HOTOVÉ.** Výběr pohoří padl nad
+daty, ne dojmem: externí katalog má po přeshraničním sečtení Beskydy 35,
+Šumavu s Bayerischer Wald 27, Jizerky 15 objektů; sběratelsky vedou
+Beskydy (10 známkových míst, 7 razítek) před Jizerkami (7 a 7).
+Doporučil jsem Jizerky pro nejnižší cenu startu (kandidáti už v repu,
+navazující bbox, Michalův dojezd k telefonátům — kritická cesta
+k verified:true) a Michal je vzal. **Uděláno:** (1) **pipeline
+zobecněny na oblasti** — `scripts/oblasti.ts` drží konfiguraci (okno
+dotazu + užší bbox pro 3D reliéf), DATA-01 i DATA-28 berou `--oblast`,
+obě workflow mají výběr oblasti; nové pohoří je tím záznam v konfiguraci,
+ne kopie skriptu. (2) **Oblast Jizerské hory založena** — s doloženou
+zvláštností: nejvyšší bod CELÉHO pohoří je **Wysoka Kopa 1126 m**
+(polská strana), nejvyšší česká **Smrk 1124 m**; vedeme první, druhé
+v poznámce (princip „pohoří vcelku" jako u Krkonoš). (3) **Stránka
+pohoří zobecněna** — generateStaticParams z databáze (nová oblast
+dostane stránku sama), 3D sekce jen když pipeline soubor opravdu
+vyrobila, poctivý stav prázdné oblasti („Oblast připravujeme… radši
+prázdno než nepodložený seznam" + odkaz na /prispet), žebříčky a vitrína
+jen s obsahem. **Vada odchycená při ověřování:** vitrína počítala otisky
+GLOBÁLNĚ — nová oblast by se chlubila 110 otisky z Krkonoš; počet je
+nově filtrovaný na oblast. Ověřeno lokálně buildem i běžící aplikací:
+/cesko/jizerske-hory ukazuje charakteristiku, Wysokou Kopu a stav
+„připravujeme", bez 3D a bez vitríny; /cesko/krkonose beze změny.
+286 testů, tsc/lint/kontrola čisté. **Čeká na Michala: dva kliky** —
+DATA-01 a DATA-28, u obou vybrat oblast `jizerske-hory`.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

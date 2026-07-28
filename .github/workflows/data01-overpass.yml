@@ -14,6 +14,11 @@ name: 'DATA-01: OSM export chat Krkonoš'
 on:
   workflow_dispatch:
     inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory'
+        required: false
+        default: 'krkonose'
+    inputs:
       api:
         description: 'Overpass endpoint — nech prázdné (skript zkouší overpass-api.de a při selhání zrcadlo kumi.systems); vyplň jen pro vynucení konkrétní instance'
         required: false
@@ -49,7 +54,7 @@ jobs:
         run: |
           ARG=()
           if [ -n "$API_INPUT" ]; then ARG=(--api "$API_INPUT"); fi
-          npx tsx scripts/data01-overpass-krkonose.ts "${ARG[@]}" | tee report.txt
+          npx tsx scripts/data01-overpass-krkonose.ts --oblast "${{ inputs.oblast || 'krkonose' }}" "${ARG[@]}" | tee report.txt
           echo '## DATA-01 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 

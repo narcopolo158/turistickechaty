@@ -12,6 +12,11 @@ name: 'DATA-28: 3D terén Krkonoš'
 
 on:
   workflow_dispatch:
+    inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory'
+        required: false
+        default: 'krkonose'
   # Auto-běh při změně generátoru nebo šablony: nová vrstva/vzhled se do
   # modelu dostane bez ručního kliknutí. Commit z Actions se skriptu ani
   # šablony nedotýká, takže se běh nezacyklí.
@@ -51,7 +56,7 @@ jobs:
             echo '::error::Chybí secret MAPY_API_KEY (Settings → Secrets → Actions).'
             exit 1
           fi
-          npx tsx scripts/data28-3d-teren.ts | tee report.txt
+          npx tsx scripts/data28-3d-teren.ts --oblast "${{ inputs.oblast || 'krkonose' }}" | tee report.txt
           echo '## DATA-28 — 3D terén: výstup běhu' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 
@@ -59,7 +64,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/experimenty/3d-teren-data.json docs/experimenty/3d-teren-krkonose.html public/3d/krkonose.html
+          git add docs/experimenty/3d-teren-data*.json docs/experimenty/3d-teren-*.html public/3d/*.html
           if git diff --cached --quiet; then
             echo 'Beze změny — nic ke commitu.'
             exit 0

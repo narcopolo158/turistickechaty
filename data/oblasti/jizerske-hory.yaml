@@ -1,0 +1,53 @@
+# Oblast Jizerské hory — druhá oblast průvodce (rozhodnutí Michala 28. 7. 2026,
+# po uzavření krkonošského pilotu). Vedena stejným principem jako Krkonoše:
+# PŘESHRANIČNÍ POHOŘÍ VCELKU — česká strana i polské Góry Izerskie.
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat, žebříčky)
+# se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Jizerské hory
+slug: jizerske-hory
+typ: pohori
+zeme: cz
+
+charakteristika: >-
+  Pohoří na severu Čech, které pokračuje za hranicí jako Góry Izerskie —
+  průvodce ho proto vede vcelku, z obou stran. Proti sousedním Krkonoším
+  jsou Jizerky nižší a plošší: místo ostrého hřebene rašeliniště, bučiny
+  a osamělé kamenné vrcholy nad plání.
+overeniCharakteristika:
+  source: >-
+    Poloha a přeshraniční rozsah: OpenStreetMap (ODbL) a titulky výsledků
+    WebSearch 2026-07-28 (jizerskehory.cz, kgp.info.pl „Góry Izerskie");
+    obsah stránek neotevřen — sandbox. Popis charakteru je redakční shrnutí
+    fondu tohoto průvodce, ne převzaté tvrzení; ověřit v terénu (DATA-04).
+  verified: false
+  checked: '2026-07-28'
+
+# POZOR na dvě různá tvrzení, obě doložená a obě pravdivá v jiném rozsahu:
+# nejvyšší bod CELÉHO pohoří (vč. polské strany) je Wysoka Kopa 1126 m,
+# nejvyšší bod ČESKÉ strany je Smrk 1124 m. Průvodce vede pohoří vcelku,
+# proto se jako „nejvyšší hora" uvádí Wysoka Kopa a Smrk je v poznámce.
+nejvyssiHora:
+  nazev: Wysoka Kopa
+  vyska: 1126
+  source: >-
+    korona-gor-polski.pl a kgp.info.pl („Góry Izerskie – Wysoka Kopa –
+    1126 m n.p.m.") — titulky WebSearch 2026-07-28, obsah neotevřen;
+    nejvyšší hora české strany je Smrk 1124 m (kudyznudy.cz „Vrchol Smrk –
+    nejvyšší hora Jizerských hor", jizerky.eu „Smrk – 1124 m n.m.").
+    Ověření očima/ČÚZK: DATA-04.
+
+# Top cíle se doplní, až budou vazby na doložené profily (po prvním exportu
+# kandidátů a povyšování) — prázdné pole je poctivější než odhad.
+topCile: []
+
+interniPoznamky: >-
+  Založeno 28. 7. 2026 jako druhá oblast. Vyhledávací okno pro DATA-01/DATA-28
+  je v scripts/oblasti.ts (jizerske-hory) a na východě se vědomě mírně překrývá
+  s krkonošským — Jizerka a Harrachov leží na pomezí a duplicity vyřeší
+  kandidátní triáž, ne ořez okna. V repu už leží tři kandidáti z krkonošských
+  běhů (Chatka Górzystów, Stacja Turystyczna Orle, Pešákovna = osada Jizerka)
+  a z DATA-22 čeká na posouzení informační středisko na Mariánskohorských
+  boudách (otevřeno 12. 6. 2026, provozuje STŘEVLIK; drobné občerstvení —
+  kvalifikovalo by rozšířeným klíčem DATA-23). Ještěd leží mimo pohoří
+  (Ještědsko-kozákovský hřbet) — pokud ho zařadíme, pak jako vlastní oblast,
+  ne pod Jizerky.
