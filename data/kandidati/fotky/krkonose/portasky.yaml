@@ -1,8 +1,6 @@
 # Portášky — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
-# Zdroj: Category:Portášky + fulltext „Portášky" (namespace File) na commons.wikimedia.org
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Portášky + fulltext „Portášky" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
-# CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;
-# u geotagovaných nálezů je surový geotag snímku, polohu vůči chatě posoudí redakce.
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
@@ -11,121 +9,107 @@
 chata: portasky
 oblast: krkonose
 nazevChaty: Portášky
-zdroj: "Wikimedia Commons API (kategorie + fulltext — chata bez GPS v YAML,
-  geosearch neproběhl), profil chaty: data/chaty"
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
 checked: 2026-07-28
 fotky:
-  - soubor: File:Lanovka na portášky v létě.jpg
+  - soubor: File:Dům čp. 37 Šímovy Chalupy 03.jpg
+    autor: Al.trcka
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:D%C5%AFm_%C4%8Dp._37_%C5%A0%C3%ADmovy_Chalupy_03.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ec/D%C5%AFm_%C4%8Dp._37_%C5%A0%C3%ADmovy_Chalupy_03.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/D%C5%AFm_%C4%8Dp._37_%C5%A0%C3%ADmovy_Chalupy_03.jpg/960px-D%C5%AFm_%C4%8Dp._37_%C5%A0%C3%ADmovy_Chalupy_03.jpg
+    rozmery: 5120×3840
+    vzdalenostM: 30
+    datum: 2018-06-30 15:34:14
+    popis: Dům čp. 37 Šímovy Chalupy
+  - soubor: File:Dům čp. 37 Šímovy Chalupy 04.jpg
+    autor: Al.trcka
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:D%C5%AFm_%C4%8Dp._37_%C5%A0%C3%ADmovy_Chalupy_04.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/61/D%C5%AFm_%C4%8Dp._37_%C5%A0%C3%ADmovy_Chalupy_04.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/D%C5%AFm_%C4%8Dp._37_%C5%A0%C3%ADmovy_Chalupy_04.jpg/960px-D%C5%AFm_%C4%8Dp._37_%C5%A0%C3%ADmovy_Chalupy_04.jpg
+    rozmery: 5120×3840
+    vzdalenostM: 30
+    datum: 2018-06-30 15:34:28
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Portášovy boudy.jpg
     autor: Honza Groh ( Jagro )
     licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_port%C3%A1%C5%A1ky_v_l%C3%A9t%C4%9B.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/3/3b/Lanovka_na_port%C3%A1%C5%A1ky_v_l%C3%A9t%C4%9B.jpg
-    nalezeno: fulltext
+    stranka: https://commons.wikimedia.org/wiki/File:Port%C3%A1%C5%A1ovy_boudy.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/8d/Port%C3%A1%C5%A1ovy_boudy.jpg
+    nalezeno: geosearch
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Lanovka_na_port%C3%A1%C5%A1ky_v_l%C3%A9t%C4%9B.jpg/960px-Lanovka_na_port%C3%A1%C5%A1ky_v_l%C3%A9t%C4%9B.jpg
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Port%C3%A1%C5%A1ovy_boudy.jpg/960px-Port%C3%A1%C5%A1ovy_boudy.jpg
     rozmery: 3648×2736
-    geotag: 50.69911944, 15.76923889
+    vzdalenostM: 55
     datum: 2009-09-27
-    popis: Chairlift Velká Úpa – Portášky
+    popis: Portášovy boudy, Krkonoše
   - soubor: File:Lanovka na Portášky, horní stanice.jpg
     autor: Honza Groh ( Jagro )
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_Port%C3%A1%C5%A1ky,_horn%C3%AD_stanice.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/ac/Lanovka_na_Port%C3%A1%C5%A1ky%2C_horn%C3%AD_stanice.jpg
-    nalezeno: fulltext
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Lanovka_na_Port%C3%A1%C5%A1ky%2C_horn%C3%AD_stanice.jpg/960px-Lanovka_na_Port%C3%A1%C5%A1ky%2C_horn%C3%AD_stanice.jpg
     rozmery: 2560×1920
-    geotag: 50.70293333, 15.76945556
+    vzdalenostM: 110
     datum: 1. 3. 2009
     popis: Chairlift Velká Úpa – Portášovy boudy, station Portášovy boudy, Velká
       Úpa, Kronoše
-  - soubor: File:Lanovka na Portášky, podhled od spodní stanice.jpg
-    autor: Honza Groh ( Jagro )
-    licence: CC BY 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_Port%C3%A1%C5%A1ky,_podhled_od_spodn%C3%AD_stanice.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/c/c8/Lanovka_na_Port%C3%A1%C5%A1ky%2C_podhled_od_spodn%C3%AD_stanice.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Lanovka_na_Port%C3%A1%C5%A1ky%2C_podhled_od_spodn%C3%AD_stanice.jpg/960px-Lanovka_na_Port%C3%A1%C5%A1ky%2C_podhled_od_spodn%C3%AD_stanice.jpg
-    rozmery: 2560×1920
-    geotag: 50.69110833, 15.7682
-    datum: 1. 3. 2009
-    popis: Chairlift Velká Úpa – Portášovy boudy, Velká Úpa, Kronoše
-  - soubor: File:Lanovka na Portášky, podhled od vrchu Hoferu.jpg
-    autor: Honza Groh ( Jagro )
-    licence: CC BY 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_Port%C3%A1%C5%A1ky,_podhled_od_vrchu_Hoferu.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/1/1f/Lanovka_na_Port%C3%A1%C5%A1ky%2C_podhled_od_vrchu_Hoferu.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Lanovka_na_Port%C3%A1%C5%A1ky%2C_podhled_od_vrchu_Hoferu.jpg/960px-Lanovka_na_Port%C3%A1%C5%A1ky%2C_podhled_od_vrchu_Hoferu.jpg
-    rozmery: 2560×1920
-    geotag: 50.69946111, 15.76948056
-    datum: 1. 3. 2009
-    popis: Chairlift Velká Úpa – Portášovy boudy, Velká Úpa, Kronoše
-  - soubor: File:Lanovka na Portášky, pohled cestou.jpg
-    autor: Honza Groh ( Jagro )
-    licence: CC BY 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_Port%C3%A1%C5%A1ky,_pohled_cestou.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/b/bc/Lanovka_na_Port%C3%A1%C5%A1ky%2C_pohled_cestou.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Lanovka_na_Port%C3%A1%C5%A1ky%2C_pohled_cestou.jpg/960px-Lanovka_na_Port%C3%A1%C5%A1ky%2C_pohled_cestou.jpg
-    rozmery: 1920×2560
-    geotag: 50.69420278, 15.76893056
-    datum: 1. 3. 2009
-    popis: Chairlift Velká Úpa – Portášovy boudy, Velká Úpa, Kronoše
-  - soubor: File:Lanovka na Portášky, původní.jpg
-    autor: Honza Groh ( Jagro )
-    licence: CC BY 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_Port%C3%A1%C5%A1ky,_p%C5%AFvodn%C3%AD.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/c/ca/Lanovka_na_Port%C3%A1%C5%A1ky%2C_p%C5%AFvodn%C3%AD.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/c/ca/Lanovka_na_Port%C3%A1%C5%A1ky%2C_p%C5%AFvodn%C3%AD.jpg
-    rozmery: 655×875
-    geotag: 50.69429722, 15.76878889
-    datum: circa 2000 date QS:P,+2000-00-00T00:00:…
-    popis: Former chairlift Velká Úpa – Portášovy boudy, station Portášovy boudy,
-      Velká Úpa, Kronoše
-  - soubor: File:Lanovka na Portášky, spodní stanice.jpg
-    autor: Honza Groh ( Jagro )
-    licence: CC BY 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_Port%C3%A1%C5%A1ky,_spodn%C3%AD_stanice.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/0/09/Lanovka_na_Port%C3%A1%C5%A1ky%2C_spodn%C3%AD_stanice.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Lanovka_na_Port%C3%A1%C5%A1ky%2C_spodn%C3%AD_stanice.jpg/960px-Lanovka_na_Port%C3%A1%C5%A1ky%2C_spodn%C3%AD_stanice.jpg
-    rozmery: 2560×1920
-    geotag: 50.69091667, 15.76806389
-    datum: 1. 3. 2009
-    popis: Chairlift Velká Úpa – Portášovy boudy, station Portášovy boudy, Velká
-      Úpa, Kronoše
-  - soubor: File:Portášovy boudy, rozcestník.jpg
-    autor: Honza Groh ( Jagro )
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Port%C3%A1%C5%A1ovy_boudy,_rozcestn%C3%ADk.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/7/71/Port%C3%A1%C5%A1ovy_boudy%2C_rozcestn%C3%ADk.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Port%C3%A1%C5%A1ovy_boudy%2C_rozcestn%C3%ADk.jpg/960px-Port%C3%A1%C5%A1ovy_boudy%2C_rozcestn%C3%ADk.jpg
-    rozmery: 2300×3066
-    geotag: 50.70337222, 15.76861111
-    datum: 2009-09-27
-    popis: Portášky, finger-post, Krkonoše
   - soubor: File:Portášovy boudy, stanice LD.jpg
     autor: Honza Groh ( Jagro )
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Port%C3%A1%C5%A1ovy_boudy,_stanice_LD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/fe/Port%C3%A1%C5%A1ovy_boudy%2C_stanice_LD.jpg
-    nalezeno: fulltext
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Port%C3%A1%C5%A1ovy_boudy%2C_stanice_LD.jpg/960px-Port%C3%A1%C5%A1ovy_boudy%2C_stanice_LD.jpg
     rozmery: 3056×2292
-    geotag: 50.70298056, 15.76978056
+    vzdalenostM: 125
     datum: 2009-09-27
     popis: Upper station, Chairlift Velká Úpa – Portášky
+  - soubor: File:Portášovy boudy, pohled.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Port%C3%A1%C5%A1ovy_boudy,_pohled.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/93/Port%C3%A1%C5%A1ovy_boudy%2C_pohled.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Port%C3%A1%C5%A1ovy_boudy%2C_pohled.jpg/960px-Port%C3%A1%C5%A1ovy_boudy%2C_pohled.jpg
+    rozmery: 3265×2449
+    vzdalenostM: 141
+    datum: 2009-09-27
+    popis: Portášovy boudy, Krkonoše
+  - soubor: File:Portášovy boudy, rozcestník.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Port%C3%A1%C5%A1ovy_boudy,_rozcestn%C3%ADk.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/71/Port%C3%A1%C5%A1ovy_boudy%2C_rozcestn%C3%ADk.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Port%C3%A1%C5%A1ovy_boudy%2C_rozcestn%C3%ADk.jpg/960px-Port%C3%A1%C5%A1ovy_boudy%2C_rozcestn%C3%ADk.jpg
+    rozmery: 2300×3066
+    vzdalenostM: 151
+    datum: 2009-09-27
+    popis: Portášky, finger-post, Krkonoše
+  - soubor: File:Lanovka na Portášky, podhled od vrchu Hoferu.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_Port%C3%A1%C5%A1ky,_podhled_od_vrchu_Hoferu.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/1f/Lanovka_na_Port%C3%A1%C5%A1ky%2C_podhled_od_vrchu_Hoferu.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Lanovka_na_Port%C3%A1%C5%A1ky%2C_podhled_od_vrchu_Hoferu.jpg/960px-Lanovka_na_Port%C3%A1%C5%A1ky%2C_podhled_od_vrchu_Hoferu.jpg
+    rozmery: 2560×1920
+    vzdalenostM: 288
+    datum: 1. 3. 2009
+    popis: Chairlift Velká Úpa – Portášovy boudy, Velká Úpa, Kronoše
   - soubor: File:Sagesserovy boudy.jpg
     autor: Honza Groh ( Jagro )
     licence: CC BY-SA 3.0
@@ -135,33 +119,21 @@ fotky:
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Sagesserovy_boudy.jpg/960px-Sagesserovy_boudy.jpg
     rozmery: 3216×2412
-    geotag: 50.70456111, 15.770925
+    vzdalenostM: 317
     datum: 2009-09-27
     popis: Sagesserovy mountain huts, Portášky, Krkonoše
-  - soubor: File:Sjezdovka ve Velké Úpě - Portášky.jpg
-    autor: Ladislav Boháč
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Sjezdovka_ve_Velk%C3%A9_%C3%9Ap%C4%9B_-_Port%C3%A1%C5%A1ky.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/5/57/Sjezdovka_ve_Velk%C3%A9_%C3%9Ap%C4%9B_-_Port%C3%A1%C5%A1ky.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sjezdovka_ve_Velk%C3%A9_%C3%9Ap%C4%9B_-_Port%C3%A1%C5%A1ky.jpg/960px-Sjezdovka_ve_Velk%C3%A9_%C3%9Ap%C4%9B_-_Port%C3%A1%C5%A1ky.jpg
-    rozmery: 4000×3000
-    geotag: 50.697615, 15.769018
-    datum: 2021-01-31 09:48:13
-    popis: Sjezdovka ve Velké Úpě - Portášky
-  - soubor: File:Velká Úpa, pohled ze lanovky na Portášky.jpg
+  - soubor: File:Lanovka na portášky v létě.jpg
     autor: Honza Groh ( Jagro )
-    licence: CC BY 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Velk%C3%A1_%C3%9Apa,_pohled_ze_lanovky_na_Port%C3%A1%C5%A1ky.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/a/a5/Velk%C3%A1_%C3%9Apa%2C_pohled_ze_lanovky_na_Port%C3%A1%C5%A1ky.jpg
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_port%C3%A1%C5%A1ky_v_l%C3%A9t%C4%9B.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/3b/Lanovka_na_port%C3%A1%C5%A1ky_v_l%C3%A9t%C4%9B.jpg
     nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Velk%C3%A1_%C3%9Apa%2C_pohled_ze_lanovky_na_Port%C3%A1%C5%A1ky.jpg/960px-Velk%C3%A1_%C3%9Apa%2C_pohled_ze_lanovky_na_Port%C3%A1%C5%A1ky.jpg
-    rozmery: 2560×1920
-    geotag: 50.69296944, 15.76887778
-    datum: 1. 3. 2009
-    popis: Velká Úpa from chairlift, Velká Úpa, Kronoše
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Lanovka_na_port%C3%A1%C5%A1ky_v_l%C3%A9t%C4%9B.jpg/960px-Lanovka_na_port%C3%A1%C5%A1ky_v_l%C3%A9t%C4%9B.jpg
+    rozmery: 3648×2736
+    vzdalenostM: 324
+    datum: 2009-09-27
+    popis: Chairlift Velká Úpa – Portášky
   - soubor: File:Velká Úpa, skiareál, Hofer a sjezdovka.jpg
     autor: Honza Groh ( Jagro )
     licence: CC BY 3.0
@@ -171,6 +143,43 @@ fotky:
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Velk%C3%A1_%C3%9Apa%2C_skiare%C3%A1l%2C_Hofer_a_sjezdovka.jpg/960px-Velk%C3%A1_%C3%9Apa%2C_skiare%C3%A1l%2C_Hofer_a_sjezdovka.jpg
     rozmery: 1994×1496
-    geotag: 50.69840833, 15.76945
+    vzdalenostM: 404
     datum: 1. 3. 2009
     popis: Look at skiareal Velká Úpa, Kronoše
+  - soubor: File:Sjezdovka ve Velké Úpě - Portášky.jpg
+    autor: Ladislav Boháč
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Sjezdovka_ve_Velk%C3%A9_%C3%9Ap%C4%9B_-_Port%C3%A1%C5%A1ky.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/57/Sjezdovka_ve_Velk%C3%A9_%C3%9Ap%C4%9B_-_Port%C3%A1%C5%A1ky.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sjezdovka_ve_Velk%C3%A9_%C3%9Ap%C4%9B_-_Port%C3%A1%C5%A1ky.jpg/960px-Sjezdovka_ve_Velk%C3%A9_%C3%9Ap%C4%9B_-_Port%C3%A1%C5%A1ky.jpg
+    rozmery: 4000×3000
+    vzdalenostM: 490
+    datum: 2021-01-31 09:48:13
+    popis: Sjezdovka ve Velké Úpě - Portášky
+  - soubor: File:Lanovka na Portášky, původní.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_Port%C3%A1%C5%A1ky,_p%C5%AFvodn%C3%AD.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/ca/Lanovka_na_Port%C3%A1%C5%A1ky%2C_p%C5%AFvodn%C3%AD.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/c/ca/Lanovka_na_Port%C3%A1%C5%A1ky%2C_p%C5%AFvodn%C3%AD.jpg
+    rozmery: 655×875
+    vzdalenostM: 859
+    datum: circa 2000 date QS:P,+2000-00-00T00:00:…
+    popis: Former chairlift Velká Úpa – Portášovy boudy, station Portášovy boudy,
+      Velká Úpa, Kronoše
+  - soubor: File:Lanovka na Portášky, pohled cestou.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Lanovka_na_Port%C3%A1%C5%A1ky,_pohled_cestou.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/bc/Lanovka_na_Port%C3%A1%C5%A1ky%2C_pohled_cestou.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Lanovka_na_Port%C3%A1%C5%A1ky%2C_pohled_cestou.jpg/960px-Lanovka_na_Port%C3%A1%C5%A1ky%2C_pohled_cestou.jpg
+    rozmery: 1920×2560
+    vzdalenostM: 870
+    datum: 1. 3. 2009
+    popis: Chairlift Velká Úpa – Portášovy boudy, Velká Úpa, Kronoše

@@ -1,8 +1,6 @@
 # Schronisko PTTK „Nad Łomniczką" — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
-# Zdroj: Category:Schronisko PTTK „Nad Łomniczką" + fulltext „Schronisko PTTK „Nad Łomniczką"" (namespace File) na commons.wikimedia.org
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Schronisko PTTK „Nad Łomniczką" + fulltext „Schronisko PTTK „Nad Łomniczką"" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
-# CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;
-# u geotagovaných nálezů je surový geotag snímku, polohu vůči chatě posoudí redakce.
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
@@ -11,7 +9,55 @@
 chata: schronisko-nad-lomniczka
 oblast: krkonose
 nazevChaty: Schronisko PTTK „Nad Łomniczką"
-zdroj: "Wikimedia Commons API (kategorie + fulltext — chata bez GPS v YAML,
-  geosearch neproběhl), profil chaty: data/chaty"
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
 checked: 2026-07-28
-fotky: []
+fotky:
+  - soubor: File:Łomniczka - panoramio (7).jpg
+    autor: Jarosław Szczepaniak
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:%C5%81omniczka_-_panoramio_(7).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/0d/%C5%81omniczka_-_panoramio_%287%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%C5%81omniczka_-_panoramio_%287%29.jpg/960px-%C5%81omniczka_-_panoramio_%287%29.jpg
+    rozmery: 4592×3056
+    vzdalenostM: 27
+    datum: Taken on 5 July 2016
+    popis: Łomniczka
+  - soubor: File:Schronisko "Nad Łomniczka" - panoramio.jpg
+    autor: Sławek Zawadzki
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_%22Nad_%C5%81omniczka%22_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/5e/Schronisko_%22Nad_%C5%81omniczka%22_-_panoramio.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Schronisko_%22Nad_%C5%81omniczka%22_-_panoramio.jpg/960px-Schronisko_%22Nad_%C5%81omniczka%22_-_panoramio.jpg
+    rozmery: 1280×960
+    vzdalenostM: 33
+    datum: Taken on 3 September 2011
+    popis: Schronisko "Nad Łomniczka"
+  - soubor: File:Snezka (36675993765).jpg
+    autor: Twisted Realm from Gdansk, Poland
+    licence: CC BY 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Snezka_(36675993765).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/ba/Snezka_%2836675993765%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Snezka_%2836675993765%29.jpg/960px-Snezka_%2836675993765%29.jpg
+    rozmery: 4608×3456
+    vzdalenostM: 80
+    datum: 2017-07-31 10:29
+    popis: Poland
+  - soubor: File:Snezka (36675999545).jpg
+    autor: Twisted Realm from Gdansk, Poland
+    licence: CC BY 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Snezka_(36675999545).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f8/Snezka_%2836675999545%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Snezka_%2836675999545%29.jpg/960px-Snezka_%2836675999545%29.jpg
+    rozmery: 3456×4608
+    vzdalenostM: 80
+    datum: 2017-07-31 10:25
+    popis: Poland

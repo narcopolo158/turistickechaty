@@ -1,8 +1,6 @@
 # Erlebachova bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
-# Zdroj: Category:Erlebachova bouda + fulltext „Erlebachova bouda" (namespace File) na commons.wikimedia.org
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Erlebachova bouda + fulltext „Erlebachova bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
-# CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;
-# u geotagovaných nálezů je surový geotag snímku, polohu vůči chatě posoudí redakce.
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
@@ -11,10 +9,204 @@
 chata: erlebachova-bouda
 oblast: krkonose
 nazevChaty: Erlebachova bouda
-zdroj: "Wikimedia Commons API (kategorie + fulltext — chata bez GPS v YAML,
-  geosearch neproběhl), profil chaty: data/chaty"
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
 checked: 2026-07-28
 fotky:
+  - soubor: File:Pohled z Erlebachovabouda - panoramio.jpg
+    autor: G.Elser
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pohled_z_Erlebachovabouda_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/2f/Pohled_z_Erlebachovabouda_-_panoramio.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Pohled_z_Erlebachovabouda_-_panoramio.jpg/960px-Pohled_z_Erlebachovabouda_-_panoramio.jpg
+    rozmery: 1181×886
+    vzdalenostM: 5
+    datum: Taken on 3 February 2008
+    popis: Pohled z Erlebachovabouda
+  - soubor: File:Matyáš Zrno.jpg
+    autor: Draceane
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Maty%C3%A1%C5%A1_Zrno.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ee/Maty%C3%A1%C5%A1_Zrno.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Maty%C3%A1%C5%A1_Zrno.jpg/960px-Maty%C3%A1%C5%A1_Zrno.jpg
+    rozmery: 1988×2526
+    vzdalenostM: 13
+    datum: 2015-08-29 10:16:14
+    popis: Matyáš Zrno
+  - soubor: File:Jindřich Šídlo LŠOI.jpg
+    autor: Draceane
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Jind%C5%99ich_%C5%A0%C3%ADdlo_L%C5%A0OI.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/00/Jind%C5%99ich_%C5%A0%C3%ADdlo_L%C5%A0OI.jpg
+    nalezeno: geosearch + kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Jind%C5%99ich_%C5%A0%C3%ADdlo_L%C5%A0OI.jpg/960px-Jind%C5%99ich_%C5%A0%C3%ADdlo_L%C5%A0OI.jpg
+    rozmery: 2928×1952
+    vzdalenostM: 20
+    datum: 2015-08-29
+    popis: Jindřich Šídlo during discussion taken at Summer school of Občanský
+      institut (Citizen institute), Erlebachova bouda (Erlebach's chalet),
+      Špindlerův Mlýn, Czech Republic
+  - soubor: File:Karel Šimka.jpg
+    autor: Draceane
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Karel_%C5%A0imka.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/60/Karel_%C5%A0imka.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Karel_%C5%A0imka.jpg/960px-Karel_%C5%A0imka.jpg
+    rozmery: 2088×1392
+    vzdalenostM: 20
+    datum: 2015-08-24
+    popis: Karel Šimka during presentation taken at Summer school of Občanský
+      institut (Citizen institute), Erlebachova bouda (Erlebach's chalet),
+      Špindlerův Mlýn, Czech Republic
+  - soubor: File:Lukáš Kovanda.jpg
+    autor: Draceane
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Luk%C3%A1%C5%A1_Kovanda.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/62/Luk%C3%A1%C5%A1_Kovanda.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/6/62/Luk%C3%A1%C5%A1_Kovanda.jpg
+    rozmery: 764×1146
+    vzdalenostM: 20
+    datum: 2015-08-25
+    popis: Lukáš Kovanda during presentation taken at Summer school of Občanský
+      institut (Citizen institute), Erlebachova bouda (Erlebach's chalet),
+      Špindlerův Mlýn, Czech Republic
+  - soubor: File:Martin Kovář.jpg
+    autor: Draceane
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Martin_Kov%C3%A1%C5%99.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/64/Martin_Kov%C3%A1%C5%99.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Martin_Kov%C3%A1%C5%99.jpg/960px-Martin_Kov%C3%A1%C5%99.jpg
+    rozmery: 4272×2848
+    vzdalenostM: 20
+    datum: 2015-08-27
+    popis: Martin Kovář during presentation taken at Summer school of Občanský
+      institut (Citizen institute), Erlebachova bouda (Erlebach's chalet),
+      Špindlerův Mlýn, Czech Republic
+  - soubor: File:Martin Weiss LŠOI.jpg
+    autor: Draceane
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Martin_Weiss_L%C5%A0OI.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/51/Martin_Weiss_L%C5%A0OI.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Martin_Weiss_L%C5%A0OI.jpg/960px-Martin_Weiss_L%C5%A0OI.jpg
+    rozmery: 1432×2148
+    vzdalenostM: 20
+    datum: 2015-08-29 10:16:45
+    popis: Martin Weiss during presentation taken at Summer school of Občanský
+      institut (Citizen institute), Erlebachova bouda (Erlebach's chalet),
+      Špindlerův Mlýn, Czech Republic
+  - soubor: File:Mojmír Hampl.jpg
+    autor: Draceane
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Mojm%C3%ADr_Hampl.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/10/Mojm%C3%ADr_Hampl.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Mojm%C3%ADr_Hampl.jpg/960px-Mojm%C3%ADr_Hampl.jpg
+    rozmery: 3059×2039
+    vzdalenostM: 20
+    datum: 2015-08-25
+    popis: Mojmír Hampl during presentation taken at Summer school of Občanský
+      institut (Citizen institute), Erlebachova bouda (Erlebach's chalet),
+      Špindlerův Mlýn, Czech Republic
+  - soubor: File:Erlebachova bouda, pohled na Medvědín.JPG
+    autor: Ondřej Mejsnar
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Erlebachova_bouda,_pohled_na_Medv%C4%9Bd%C3%ADn.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f3/Erlebachova_bouda%2C_pohled_na_Medv%C4%9Bd%C3%ADn.JPG
+    nalezeno: geosearch + kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/f/f3/Erlebachova_bouda%2C_pohled_na_Medv%C4%9Bd%C3%ADn.JPG
+    rozmery: 640×480
+    vzdalenostM: 25
+    datum: 2012-09-16 13:15:24
+    popis: Krkonošská tisícovka Medvědín (1235 m.n.m.) vyfocená od Erlebachových bud
+      (1150 m.n.m.)
+  - soubor: File:Josefova bouda.JPG
+    autor: Ondřej Mejsnar
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Josefova_bouda.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/a/aa/Josefova_bouda.JPG
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/a/aa/Josefova_bouda.JPG
+    rozmery: 640×480
+    vzdalenostM: 25
+    datum: 2012-09-16 13:16:50
+    popis: Josefova bouda (1150 m.n.m.)
+  - soubor: File:Kaple sv. Františka z Assisi.JPG
+    autor: Ondřej Mejsnar
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Kaple_sv._Franti%C5%A1ka_z_Assisi.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/4/45/Kaple_sv._Franti%C5%A1ka_z_Assisi.JPG
+    nalezeno: geosearch + kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/4/45/Kaple_sv._Franti%C5%A1ka_z_Assisi.JPG
+    rozmery: 640×480
+    vzdalenostM: 25
+    datum: 2012-09-16 13:17:24
+    popis: Kamenná kaple sv. Františka z Asissi v komplexu Erlebachových bud (1150
+      m.n.m.)
+  - soubor: File:V zimě před Erlebachovabouda - panoramio.jpg
+    autor: G.Elser
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:V_zim%C4%9B_p%C5%99ed_Erlebachovabouda_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ed/V_zim%C4%9B_p%C5%99ed_Erlebachovabouda_-_panoramio.jpg
+    nalezeno: geosearch + kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/V_zim%C4%9B_p%C5%99ed_Erlebachovabouda_-_panoramio.jpg/960px-V_zim%C4%9B_p%C5%99ed_Erlebachovabouda_-_panoramio.jpg
+    rozmery: 1181×886
+    vzdalenostM: 107
+    datum: Taken on 3 February 2008
+    popis: v zimě před Erlebachovabouda
+  - soubor: File:Erlebachova bouda, pohled.JPG
+    autor: Ondřej Mejsnar
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Erlebachova_bouda,_pohled.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/f/ff/Erlebachova_bouda%2C_pohled.JPG
+    nalezeno: geosearch + kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/f/ff/Erlebachova_bouda%2C_pohled.JPG
+    rozmery: 640×480
+    vzdalenostM: 179
+    datum: 2012-09-16 13:34:05
+    popis: Pohled na Kozí hřbety (ca. 1300 m.n.m.) od Erlebachovy boudy.
+  - soubor: File:Rozcestník Lužická bouda (01).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozcestn%C3%ADk_Lu%C5%BEick%C3%A1_bouda_(01).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/d2/Rozcestn%C3%ADk_Lu%C5%BEick%C3%A1_bouda_%2801%29.jpg
+    nalezeno: geosearch
+    licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rozcestn%C3%ADk_Lu%C5%BEick%C3%A1_bouda_%2801%29.jpg/960px-Rozcestn%C3%ADk_Lu%C5%BEick%C3%A1_bouda_%2801%29.jpg
+    rozmery: 2048×1536
+    vzdalenostM: 193
+    datum: 2007-06-02
+    popis: Giant Mountains .
+  - soubor: File:Rozcestník Lužická bouda (02).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozcestn%C3%ADk_Lu%C5%BEick%C3%A1_bouda_(02).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/13/Rozcestn%C3%ADk_Lu%C5%BEick%C3%A1_bouda_%2802%29.jpg
+    nalezeno: geosearch
+    licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Rozcestn%C3%ADk_Lu%C5%BEick%C3%A1_bouda_%2802%29.jpg/960px-Rozcestn%C3%ADk_Lu%C5%BEick%C3%A1_bouda_%2802%29.jpg
+    rozmery: 2048×1536
+    vzdalenostM: 193
+    datum: 2007-06-02
+    popis: Giant Mountains .
   - soubor: File:Bergbauden im Riesengebirge.jpg
     autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
       MagentaGreen
@@ -174,31 +366,6 @@ fotky:
       stojí Erlebachova bouda – horský resort s duší a příběhem sahajícím až do
       roku 1784. Ve výšce 1 150 m n. m. odtud vedou atraktivní turistické trasy
       –k prameni Labe neb…
-  - soubor: File:Erlebachova bouda, pohled na Medvědín.JPG
-    autor: Ondřej Mejsnar
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Erlebachova_bouda,_pohled_na_Medv%C4%9Bd%C3%ADn.JPG
-    original: https://upload.wikimedia.org/wikipedia/commons/f/f3/Erlebachova_bouda%2C_pohled_na_Medv%C4%9Bd%C3%ADn.JPG
-    nalezeno: kategorie + fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/f/f3/Erlebachova_bouda%2C_pohled_na_Medv%C4%9Bd%C3%ADn.JPG
-    rozmery: 640×480
-    geotag: 50.758796, 15.633695
-    datum: 2012-09-16 13:15:24
-    popis: Krkonošská tisícovka Medvědín (1235 m.n.m.) vyfocená od Erlebachových bud
-      (1150 m.n.m.)
-  - soubor: File:Erlebachova bouda, pohled.JPG
-    autor: Ondřej Mejsnar
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Erlebachova_bouda,_pohled.JPG
-    original: https://upload.wikimedia.org/wikipedia/commons/f/ff/Erlebachova_bouda%2C_pohled.JPG
-    nalezeno: kategorie + fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/f/ff/Erlebachova_bouda%2C_pohled.JPG
-    rozmery: 640×480
-    geotag: 50.759054, 15.631437
-    datum: 2012-09-16 13:34:05
-    popis: Pohled na Kozí hřbety (ca. 1300 m.n.m.) od Erlebachovy boudy.
   - soubor: File:Erlebachova bouda.JPG
     autor: O. Mejsnar
     licence: CC BY-SA 3.0
@@ -255,20 +422,6 @@ fotky:
     rozmery: 1920×1280
     datum: 2022-06-15 19:36:26
     popis: Erlebachova bouda, Krkonoše, 1 150 m n.m.
-  - soubor: File:Jindřich Šídlo LŠOI.jpg
-    autor: Draceane
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Jind%C5%99ich_%C5%A0%C3%ADdlo_L%C5%A0OI.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/0/00/Jind%C5%99ich_%C5%A0%C3%ADdlo_L%C5%A0OI.jpg
-    nalezeno: kategorie + fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Jind%C5%99ich_%C5%A0%C3%ADdlo_L%C5%A0OI.jpg/960px-Jind%C5%99ich_%C5%A0%C3%ADdlo_L%C5%A0OI.jpg
-    rozmery: 2928×1952
-    geotag: 50.758758, 15.634052
-    datum: 2015-08-29
-    popis: Jindřich Šídlo during discussion taken at Summer school of Občanský
-      institut (Citizen institute), Erlebachova bouda (Erlebach's chalet),
-      Špindlerův Mlýn, Czech Republic
   - soubor: File:JOSEFOVA BOUDA.jpg
     autor: Erlebachova Bouda
     licence: CC BY-SA 4.0
@@ -280,19 +433,6 @@ fotky:
     rozmery: 5443×3629
     datum: 2016-11-29 12:15:24
     popis: Josefova Bouda in the Krkonoše Mountains.
-  - soubor: File:Kaple sv. Františka z Assisi.JPG
-    autor: Ondřej Mejsnar
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Kaple_sv._Franti%C5%A1ka_z_Assisi.JPG
-    original: https://upload.wikimedia.org/wikipedia/commons/4/45/Kaple_sv._Franti%C5%A1ka_z_Assisi.JPG
-    nalezeno: kategorie + fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/4/45/Kaple_sv._Franti%C5%A1ka_z_Assisi.JPG
-    rozmery: 640×480
-    geotag: 50.758796, 15.633695
-    datum: 2012-09-16 13:17:24
-    popis: Kamenná kaple sv. Františka z Asissi v komplexu Erlebachových bud (1150
-      m.n.m.)
   - soubor: File:Kaplička sv. Františka.jpg
     autor: Erlebachova Bouda
     licence: CC BY-SA 4.0
@@ -328,34 +468,6 @@ fotky:
     datum: 2011-09-03
     popis: Komplex Erlebachovy, Josefovy boudy a menších bud okolo focený přes údolí
       Bílého Labe
-  - soubor: File:Martin Weiss LŠOI.jpg
-    autor: Draceane
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Martin_Weiss_L%C5%A0OI.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/5/51/Martin_Weiss_L%C5%A0OI.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Martin_Weiss_L%C5%A0OI.jpg/960px-Martin_Weiss_L%C5%A0OI.jpg
-    rozmery: 1432×2148
-    geotag: 50.758758, 15.634052
-    datum: 2015-08-29 10:16:45
-    popis: Martin Weiss during presentation taken at Summer school of Občanský
-      institut (Citizen institute), Erlebachova bouda (Erlebach's chalet),
-      Špindlerův Mlýn, Czech Republic
-  - soubor: File:Mojmír Hampl.jpg
-    autor: Draceane
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Mojm%C3%ADr_Hampl.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/1/10/Mojm%C3%ADr_Hampl.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Mojm%C3%ADr_Hampl.jpg/960px-Mojm%C3%ADr_Hampl.jpg
-    rozmery: 3059×2039
-    geotag: 50.758758, 15.634052
-    datum: 2015-08-25
-    popis: Mojmír Hampl during presentation taken at Summer school of Občanský
-      institut (Citizen institute), Erlebachova bouda (Erlebach's chalet),
-      Špindlerův Mlýn, Czech Republic
   - soubor: File:Svatý František z Assisi kaplicka2.jpg
     autor: Jiří Erben
     licence: CC BY-SA 3.0
@@ -368,18 +480,6 @@ fotky:
     datum: 2011-10-09
     popis: Kaple sv. Františka z Assisi u Erlebachovy boudy v Krkonoších pod horou
       Malý šišák.
-  - soubor: File:V zimě před Erlebachovabouda - panoramio.jpg
-    autor: G.Elser
-    licence: CC BY 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:V_zim%C4%9B_p%C5%99ed_Erlebachovabouda_-_panoramio.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/e/ed/V_zim%C4%9B_p%C5%99ed_Erlebachovabouda_-_panoramio.jpg
-    nalezeno: kategorie + fulltext
-    licenceUrl: https://creativecommons.org/licenses/by/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/V_zim%C4%9B_p%C5%99ed_Erlebachovabouda_-_panoramio.jpg/960px-V_zim%C4%9B_p%C5%99ed_Erlebachovabouda_-_panoramio.jpg
-    rozmery: 1181×886
-    geotag: 50.758287, 15.632858
-    datum: Taken on 3 February 2008
-    popis: v zimě před Erlebachovabouda
   - soubor: File:Zetor-Proxima75-Spindl (1).JPG
     autor: Jiří Erben
     licence: CC BY-SA 3.0

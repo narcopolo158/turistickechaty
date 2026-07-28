@@ -1,8 +1,6 @@
 # Lysečinská bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
-# Zdroj: Category:Lysečinská bouda + fulltext „Lysečinská bouda" (namespace File) na commons.wikimedia.org
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Lysečinská bouda + fulltext „Lysečinská bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
-# CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;
-# u geotagovaných nálezů je surový geotag snímku, polohu vůči chatě posoudí redakce.
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
@@ -11,10 +9,47 @@
 chata: lysecinska-bouda
 oblast: krkonose
 nazevChaty: Lysečinská bouda
-zdroj: "Wikimedia Commons API (kategorie + fulltext — chata bez GPS v YAML,
-  geosearch neproběhl), profil chaty: data/chaty"
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
 checked: 2026-07-28
 fotky:
+  - soubor: File:Dacia Duster na gąsienicach (52384042327).jpg
+    autor: Olgierd (Creative Commons licensed only)
+    licence: CC BY 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Dacia_Duster_na_g%C4%85sienicach_(52384042327).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/95/Dacia_Duster_na_g%C4%85sienicach_%2852384042327%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Dacia_Duster_na_g%C4%85sienicach_%2852384042327%29.jpg/960px-Dacia_Duster_na_g%C4%85sienicach_%2852384042327%29.jpg
+    rozmery: 2000×1277
+    vzdalenostM: 50
+    datum: 2022-09-25 15:22
+    popis: Compact car on a continuous track drive -- good for snowy conditions in
+      the mountains
+  - soubor: File:Rýchory (v dáli) - panoramio.jpg
+    autor: Michal Kriška
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:R%C3%BDchory_(v_d%C3%A1li)_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/75/R%C3%BDchory_%28v_d%C3%A1li%29_-_panoramio.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/R%C3%BDchory_%28v_d%C3%A1li%29_-_panoramio.jpg/960px-R%C3%BDchory_%28v_d%C3%A1li%29_-_panoramio.jpg
+    rozmery: 1280×960
+    vzdalenostM: 121
+    datum: Taken on 21 August 2008
+    popis: Rýchory (v dáli)
+  - soubor: File:Chata Poutník, Rýchory, Jeseníky - panoramio.jpg
+    autor: Michal Kriška
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Chata_Poutn%C3%ADk,_R%C3%BDchory,_Jesen%C3%ADky_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/75/Chata_Poutn%C3%ADk%2C_R%C3%BDchory%2C_Jesen%C3%ADky_-_panoramio.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Chata_Poutn%C3%ADk%2C_R%C3%BDchory%2C_Jesen%C3%ADky_-_panoramio.jpg/960px-Chata_Poutn%C3%ADk%2C_R%C3%BDchory%2C_Jesen%C3%ADky_-_panoramio.jpg
+    rozmery: 1280×960
+    vzdalenostM: 168
+    datum: Taken on 23 August 2008
+    popis: chata Poutník, Rýchory, Jeseníky
   - soubor: File:Lysečinská b. - rozcestník.JPG
     autor: Vojáček Karel
     licence: CC BY-SA 4.0

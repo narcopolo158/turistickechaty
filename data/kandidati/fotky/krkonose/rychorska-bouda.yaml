@@ -1,8 +1,6 @@
 # Rýchorská bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
-# Zdroj: Category:Rýchorská bouda + fulltext „Rýchorská bouda" (namespace File) na commons.wikimedia.org
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Rýchorská bouda + fulltext „Rýchorská bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
-# CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;
-# u geotagovaných nálezů je surový geotag snímku, polohu vůči chatě posoudí redakce.
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
@@ -11,10 +9,46 @@
 chata: rychorska-bouda
 oblast: krkonose
 nazevChaty: Rýchorská bouda
-zdroj: "Wikimedia Commons API (kategorie + fulltext — chata bez GPS v YAML,
-  geosearch neproběhl), profil chaty: data/chaty"
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
 checked: 2026-07-28
 fotky:
+  - soubor: File:Rýchorská bouda 2015 01.jpg
+    autor: Breta Valek
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:R%C3%BDchorsk%C3%A1_bouda_2015_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/8e/R%C3%BDchorsk%C3%A1_bouda_2015_01.jpg
+    nalezeno: geosearch + kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/R%C3%BDchorsk%C3%A1_bouda_2015_01.jpg/960px-R%C3%BDchorsk%C3%A1_bouda_2015_01.jpg
+    rozmery: 4930×3287
+    vzdalenostM: 38
+    datum: 2015-06-16 11:41:48
+    popis: Rýchorská bouda v Krkonoších
+  - soubor: File:Rychory, cesta u Rýchorské boudy .jpg
+    autor: Vojtěch Dostál
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rychory,_cesta_u_R%C3%BDchorsk%C3%A9_boudy_.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/51/Rychory%2C_cesta_u_R%C3%BDchorsk%C3%A9_boudy_.jpg
+    nalezeno: geosearch + kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Rychory%2C_cesta_u_R%C3%BDchorsk%C3%A9_boudy_.jpg/960px-Rychory%2C_cesta_u_R%C3%BDchorsk%C3%A9_boudy_.jpg
+    rozmery: 4128×3096
+    vzdalenostM: 38
+    datum: 21 October 2019 (according to Exif data)
+    popis: ulice
+  - soubor: File:Maxova bouda, zbytky.jpg
+    autor: Vojtěch Dostál
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Maxova_bouda,_zbytky.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f1/Maxova_bouda%2C_zbytky.jpg
+    nalezeno: geosearch + kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Maxova_bouda%2C_zbytky.jpg/960px-Maxova_bouda%2C_zbytky.jpg
+    rozmery: 4128×3096
+    vzdalenostM: 74
+    datum: 21 October 2019 (according to Exif data)
+    popis: horská bouda
   - soubor: File:Highland cattle-Rýchory2010c.jpg
     autor: Ben Skála
     licence: CC BY-SA 3.0
@@ -37,18 +71,6 @@ fotky:
     datum: 2009-07-06
     popis: Rýchorská bouda on top of the mountain Kutná in the Giant Mountains
       (Krkonoše).
-  - soubor: File:Maxova bouda, zbytky.jpg
-    autor: Vojtěch Dostál
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Maxova_bouda,_zbytky.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/f/f1/Maxova_bouda%2C_zbytky.jpg
-    nalezeno: kategorie + fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Maxova_bouda%2C_zbytky.jpg/960px-Maxova_bouda%2C_zbytky.jpg
-    rozmery: 4128×3096
-    geotag: 50.66083333, 15.84944444
-    datum: 21 October 2019 (according to Exif data)
-    popis: horská bouda
   - soubor: File:Němé značky Krkonoš.svg
     autor: "Němé_značky_Krkonoš.jpg : Kamil Vladislav Muttich (1873–1924), v mapách
       KČT chybně označován jako Kamil Vlastimil Muttich derivative work: Maoman
@@ -73,18 +95,6 @@ fotky:
     rozmery: 59×52
     datum: installed in 1923
     popis: Orientation symbols from Krkonoše, now the Czech Republic.
-  - soubor: File:Rýchorská bouda 2015 01.jpg
-    autor: Breta Valek
-    licence: CC BY-SA 2.0
-    stranka: https://commons.wikimedia.org/wiki/File:R%C3%BDchorsk%C3%A1_bouda_2015_01.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/8/8e/R%C3%BDchorsk%C3%A1_bouda_2015_01.jpg
-    nalezeno: kategorie + fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/R%C3%BDchorsk%C3%A1_bouda_2015_01.jpg/960px-R%C3%BDchorsk%C3%A1_bouda_2015_01.jpg
-    rozmery: 4930×3287
-    geotag: 50.660262, 15.850417
-    datum: 2015-06-16 11:41:48
-    popis: Rýchorská bouda v Krkonoších
   - soubor: File:Rýchorská bouda.jpg
     autor: Dezidor
     licence: CC BY 3.0
@@ -96,18 +106,6 @@ fotky:
     rozmery: 4416×3312
     datum: "2010"
     popis: Rýchorská bouda
-  - soubor: File:Rychory, cesta u Rýchorské boudy .jpg
-    autor: Vojtěch Dostál
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Rychory,_cesta_u_R%C3%BDchorsk%C3%A9_boudy_.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/5/51/Rychory%2C_cesta_u_R%C3%BDchorsk%C3%A9_boudy_.jpg
-    nalezeno: kategorie + fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Rychory%2C_cesta_u_R%C3%BDchorsk%C3%A9_boudy_.jpg/960px-Rychory%2C_cesta_u_R%C3%BDchorsk%C3%A9_boudy_.jpg
-    rozmery: 4128×3096
-    geotag: 50.66055556, 15.85
-    datum: 21 October 2019 (according to Exif data)
-    popis: ulice
   - soubor: File:Skotský náhorní skot na Rýchorách.jpg
     autor: Matěj Čadil
     licence: CC BY-SA 4.0

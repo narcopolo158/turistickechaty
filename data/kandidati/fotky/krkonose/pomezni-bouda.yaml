@@ -1,8 +1,6 @@
 # Pomezní bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
-# Zdroj: Category:Pomezní bouda + fulltext „Pomezní bouda" (namespace File) na commons.wikimedia.org
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Pomezní bouda + fulltext „Pomezní bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
-# CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;
-# u geotagovaných nálezů je surový geotag snímku, polohu vůči chatě posoudí redakce.
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
 # STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
@@ -11,20 +9,491 @@
 chata: pomezni-bouda
 oblast: krkonose
 nazevChaty: Pomezní bouda
-zdroj: "Wikimedia Commons API (kategorie + fulltext — chata bez GPS v YAML,
-  geosearch neproběhl), profil chaty: data/chaty"
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
 checked: 2026-07-28
 fotky:
+  - soubor: File:Malá Úpa, Pomezní Boudy, před smyčkou, Irisbus Crossway.jpg
+    autor: Harold
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Mal%C3%A1_%C3%9Apa,_Pomezn%C3%AD_Boudy,_p%C5%99ed_smy%C4%8Dkou,_Irisbus_Crossway.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c9/Mal%C3%A1_%C3%9Apa%2C_Pomezn%C3%AD_Boudy%2C_p%C5%99ed_smy%C4%8Dkou%2C_Irisbus_Crossway.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mal%C3%A1_%C3%9Apa%2C_Pomezn%C3%AD_Boudy%2C_p%C5%99ed_smy%C4%8Dkou%2C_Irisbus_Crossway.jpg/960px-Mal%C3%A1_%C3%9Apa%2C_Pomezn%C3%AD_Boudy%2C_p%C5%99ed_smy%C4%8Dkou%2C_Irisbus_Crossway.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 22
+    datum: 2010-08-19
+    popis: Irisbus Crossway bus of Trutnovská autobusová doprava, Pomezní Boudy,
+      Malá Úpa, Czech Republic
+  - soubor: File:Pomezní Boudy, nové budovy.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_nov%C3%A9_budovy.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ee/Pomezn%C3%AD_Boudy%2C_nov%C3%A9_budovy.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Pomezn%C3%AD_Boudy%2C_nov%C3%A9_budovy.jpg/960px-Pomezn%C3%AD_Boudy%2C_nov%C3%A9_budovy.jpg
+    rozmery: 3270×2452
+    vzdalenostM: 23
+    datum: 2009-09-27
+    popis: New buildings, Pomezní Boudy, Krkonoše
+  - soubor: File:Opuštěná sjezdovka na Pomezkách.jpg
+    autor: Ladislav Boháč
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Opu%C5%A1t%C4%9Bn%C3%A1_sjezdovka_na_Pomezk%C3%A1ch.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/0b/Opu%C5%A1t%C4%9Bn%C3%A1_sjezdovka_na_Pomezk%C3%A1ch.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Opu%C5%A1t%C4%9Bn%C3%A1_sjezdovka_na_Pomezk%C3%A1ch.jpg/960px-Opu%C5%A1t%C4%9Bn%C3%A1_sjezdovka_na_Pomezk%C3%A1ch.jpg
+    rozmery: 4000×2003
+    vzdalenostM: 25
+    datum: 2021-01-11 15:11:51
+    popis: Opuštěná sjezdovka na Pomezkách
+  - soubor: File:Pomezní Boudy, pohled k hranici.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_pohled_k_hranici.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a8/Pomezn%C3%AD_Boudy%2C_pohled_k_hranici.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Pomezn%C3%AD_Boudy%2C_pohled_k_hranici.jpg/960px-Pomezn%C3%AD_Boudy%2C_pohled_k_hranici.jpg
+    rozmery: 3648×2736
+    vzdalenostM: 33
+    datum: 2009-09-27
+    popis: View toward border, Pomezní Boudy, Krkonoše
+  - soubor: File:Pomezní Boudy, informační centrum.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_informa%C4%8Dn%C3%AD_centrum.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/27/Pomezn%C3%AD_Boudy%2C_informa%C4%8Dn%C3%AD_centrum.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Pomezn%C3%AD_Boudy%2C_informa%C4%8Dn%C3%AD_centrum.jpg/960px-Pomezn%C3%AD_Boudy%2C_informa%C4%8Dn%C3%AD_centrum.jpg
+    rozmery: 3336×2502
+    vzdalenostM: 39
+    datum: 2009-09-27
+    popis: Information point, Pomezní Boudy, Krkonoše
+  - soubor: File:Widok na Śnieżkę z Przełęczy OKRAJ - panoramio.jpg
+    autor: woda
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Widok_na_%C5%9Anie%C5%BCk%C4%99_z_Prze%C5%82%C4%99czy_OKRAJ_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/3b/Widok_na_%C5%9Anie%C5%BCk%C4%99_z_Prze%C5%82%C4%99czy_OKRAJ_-_panoramio.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Widok_na_%C5%9Anie%C5%BCk%C4%99_z_Prze%C5%82%C4%99czy_OKRAJ_-_panoramio.jpg/960px-Widok_na_%C5%9Anie%C5%BCk%C4%99_z_Prze%C5%82%C4%99czy_OKRAJ_-_panoramio.jpg
+    rozmery: 2048×1536
+    vzdalenostM: 54
+    datum: Taken on 29 August 2007
+    popis: Widok na Śnieżkę z Przełęczy OKRAJ Śnieżka z przełęczy Okraj
+  - soubor: File:Pomezní Boudy, hotel Družba.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_hotel_Dru%C5%BEba.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/83/Pomezn%C3%AD_Boudy%2C_hotel_Dru%C5%BEba.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Pomezn%C3%AD_Boudy%2C_hotel_Dru%C5%BEba.jpg/960px-Pomezn%C3%AD_Boudy%2C_hotel_Dru%C5%BEba.jpg
+    rozmery: 3204×2403
+    vzdalenostM: 81
+    datum: 2009-09-27
+    popis: Družba Hotel, Pomezní Boudy, Krkonoše
+  - soubor: File:Pomezní Boudy, silnice.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_silnice.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/8e/Pomezn%C3%AD_Boudy%2C_silnice.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Pomezn%C3%AD_Boudy%2C_silnice.jpg/960px-Pomezn%C3%AD_Boudy%2C_silnice.jpg
+    rozmery: 3280×2460
+    vzdalenostM: 109
+    datum: 2009-09-27
+    popis: View toward border, Pomezní Boudy, Krkonoše
+  - soubor: File:SkiBus maly.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:SkiBus_maly.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/72/SkiBus_maly.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/SkiBus_maly.jpg/960px-SkiBus_maly.jpg
+    rozmery: 1600×1200
+    vzdalenostM: 122
+    datum: 2008-02-17
+    popis: Skibus in Pomezních Bud, Krkonoše
+  - soubor: File:Malá Úpa - house.JPG
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Mal%C3%A1_%C3%9Apa_-_house.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/f/fa/Mal%C3%A1_%C3%9Apa_-_house.JPG
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Mal%C3%A1_%C3%9Apa_-_house.JPG/960px-Mal%C3%A1_%C3%9Apa_-_house.JPG
+    rozmery: 2592×1944
+    vzdalenostM: 127
+    datum: 2008-05
+    popis: House in village Malá Úpa, Czech Republic
+  - soubor: File:Malá Úpa - view.JPG
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Mal%C3%A1_%C3%9Apa_-_view.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/1/19/Mal%C3%A1_%C3%9Apa_-_view.JPG
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Mal%C3%A1_%C3%9Apa_-_view.JPG/960px-Mal%C3%A1_%C3%9Apa_-_view.JPG
+    rozmery: 2592×1944
+    vzdalenostM: 127
+    datum: 2008-05
+    popis: Village Malá Úpa (Klein Aupa) in Czech Republic
   - soubor: File:Pomezní bouda.JPG
     autor: Pudelek
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_bouda.JPG
     original: https://upload.wikimedia.org/wikipedia/commons/4/43/Pomezn%C3%AD_bouda.JPG
-    nalezeno: fulltext
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pomezn%C3%AD_bouda.JPG/960px-Pomezn%C3%AD_bouda.JPG
     rozmery: 2592×1944
-    geotag: 50.74588889, 15.82030556
+    vzdalenostM: 127
     datum: 2008-05
     popis: Pomezní bouda (Blaschkebaude, Goderbaude) - mountain hostel in Malá Úpa,
       Riesengebirge (Karkonosze), Czech Republic
+  - soubor: File:Ruins of shop in Malá Úpa.JPG
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Ruins_of_shop_in_Mal%C3%A1_%C3%9Apa.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/8/8b/Ruins_of_shop_in_Mal%C3%A1_%C3%9Apa.JPG
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Ruins_of_shop_in_Mal%C3%A1_%C3%9Apa.JPG/960px-Ruins_of_shop_in_Mal%C3%A1_%C3%9Apa.JPG
+    rozmery: 2592×1944
+    vzdalenostM: 127
+    datum: 2008-05
+    popis: Ruin of shop (Potraviny) in Malá Úpa, Czech Republic
+  - soubor: File:Town sign in Malá Úpa.jpg
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Town_sign_in_Mal%C3%A1_%C3%9Apa.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/64/Town_sign_in_Mal%C3%A1_%C3%9Apa.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Town_sign_in_Mal%C3%A1_%C3%9Apa.jpg/960px-Town_sign_in_Mal%C3%A1_%C3%9Apa.jpg
+    rozmery: 1814×2592
+    vzdalenostM: 127
+    datum: 2008-05
+    popis: Town sing in village Malá Úpa, Czech Republic
+  - soubor: File:Pomezní Boudy, hraniční přechod.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_hrani%C4%8Dn%C3%AD_p%C5%99echod.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/06/Pomezn%C3%AD_Boudy%2C_hrani%C4%8Dn%C3%AD_p%C5%99echod.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Pomezn%C3%AD_Boudy%2C_hrani%C4%8Dn%C3%AD_p%C5%99echod.jpg/960px-Pomezn%C3%AD_Boudy%2C_hrani%C4%8Dn%C3%AD_p%C5%99echod.jpg
+    rozmery: 1673×1136
+    vzdalenostM: 130
+    datum: 2008-02-17
+    popis: Czech-Poland border, Pomezní Boudy, Krkonoše
+  - soubor: File:(Horní) Malá Úpa (32752388731).jpg
+    autor: David Short from Windsor, UK
+    licence: CC BY 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:(Horn%C3%AD)_Mal%C3%A1_%C3%9Apa_(32752388731).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/16/%28Horn%C3%AD%29_Mal%C3%A1_%C3%9Apa_%2832752388731%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/%28Horn%C3%AD%29_Mal%C3%A1_%C3%9Apa_%2832752388731%29.jpg/960px-%28Horn%C3%AD%29_Mal%C3%A1_%C3%9Apa_%2832752388731%29.jpg
+    rozmery: 3648×2432
+    vzdalenostM: 133
+    datum: 2016-08-31 10:55
+    popis: The Polish border post.
+  - soubor: File:CZ-PL boundary stone 21-1.jpg
+    autor: Szydzio
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:CZ-PL_boundary_stone_21-1.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e5/CZ-PL_boundary_stone_21-1.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/CZ-PL_boundary_stone_21-1.jpg/960px-CZ-PL_boundary_stone_21-1.jpg
+    rozmery: 1500×2000
+    vzdalenostM: 137
+    datum: 2023-06-10 18:17:15
+    popis: CZ-PL boundary stone 21-1
+  - soubor: File:Horní Malá Úpa - memorial stone of Ing. Jiří Novák path.jpg
+    autor: Szydzio
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Horn%C3%AD_Mal%C3%A1_%C3%9Apa_-_memorial_stone_of_Ing._Ji%C5%99%C3%AD_Nov%C3%A1k_path.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/ac/Horn%C3%AD_Mal%C3%A1_%C3%9Apa_-_memorial_stone_of_Ing._Ji%C5%99%C3%AD_Nov%C3%A1k_path.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Horn%C3%AD_Mal%C3%A1_%C3%9Apa_-_memorial_stone_of_Ing._Ji%C5%99%C3%AD_Nov%C3%A1k_path.jpg/960px-Horn%C3%AD_Mal%C3%A1_%C3%9Apa_-_memorial_stone_of_Ing._Ji%C5%99%C3%AD_Nov%C3%A1k_path.jpg
+    rozmery: 3000×4000
+    vzdalenostM: 137
+    datum: 2023-06-10 18:19:27
+    popis: Horní Malá Úpa - memorial stone of Ing. Jiří Novák path
+  - soubor: File:CZ-PL boundary stone 21-2.jpg
+    autor: Szydzio
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:CZ-PL_boundary_stone_21-2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/21/CZ-PL_boundary_stone_21-2.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/CZ-PL_boundary_stone_21-2.jpg/960px-CZ-PL_boundary_stone_21-2.jpg
+    rozmery: 1500×2000
+    vzdalenostM: 138
+    datum: 2023-06-10 18:16:45
+    popis: CZ-PL boundary stone 21-2
+  - soubor: File:CZ-PL boundary stone IV-21a.jpg
+    autor: Szydzio
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:CZ-PL_boundary_stone_IV-21a.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/d6/CZ-PL_boundary_stone_IV-21a.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/CZ-PL_boundary_stone_IV-21a.jpg/960px-CZ-PL_boundary_stone_IV-21a.jpg
+    rozmery: 1500×2000
+    vzdalenostM: 138
+    datum: 2023-06-10 18:18:18
+    popis: CZ-PL border stone IV-21a Horni Mala Upa
+  - soubor: File:CZ-PL boundary stone IV-21b.jpg
+    autor: Szydzio
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:CZ-PL_boundary_stone_IV-21b.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/6b/CZ-PL_boundary_stone_IV-21b.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/CZ-PL_boundary_stone_IV-21b.jpg/960px-CZ-PL_boundary_stone_IV-21b.jpg
+    rozmery: 1500×2000
+    vzdalenostM: 140
+    datum: 2023-06-10 18:18:00
+    popis: CZ-PL boundary stone IV-21b Horni Mala Upa
+  - soubor: File:CZ-PL boundary stone 21-3.jpg
+    autor: Szydzio
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:CZ-PL_boundary_stone_21-3.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/3f/CZ-PL_boundary_stone_21-3.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/CZ-PL_boundary_stone_21-3.jpg/960px-CZ-PL_boundary_stone_21-3.jpg
+    rozmery: 1500×2000
+    vzdalenostM: 141
+    datum: 2023-06-10 18:16:22
+    popis: CZ-PL boundary stone 21-3
+  - soubor: File:Pomezní Boudy, cyklobus s návěsem.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_cyklobus_s_n%C3%A1v%C4%9Bsem.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a2/Pomezn%C3%AD_Boudy%2C_cyklobus_s_n%C3%A1v%C4%9Bsem.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pomezn%C3%AD_Boudy%2C_cyklobus_s_n%C3%A1v%C4%9Bsem.jpg/960px-Pomezn%C3%AD_Boudy%2C_cyklobus_s_n%C3%A1v%C4%9Bsem.jpg
+    rozmery: 3648×2736
+    vzdalenostM: 146
+    datum: 2009-09-27
+    popis: Bus for transporting bicycles, Pomezní Boudy, Krkonoše
+  - soubor: File:Kudy tudy - panoramio.jpg
+    autor: Novotný M.
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Kudy_tudy_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/8a/Kudy_tudy_-_panoramio.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Kudy_tudy_-_panoramio.jpg/960px-Kudy_tudy_-_panoramio.jpg
+    rozmery: 2112×2816
+    vzdalenostM: 150
+    datum: Taken on 7 September 2013
+    popis: Wanderwegweiser am Grenzbaudenpass
+  - soubor: File:Malá Úpa, Pomezní Boudy, parkoviště, SOR C 10,5.jpg
+    autor: Harold
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Mal%C3%A1_%C3%9Apa,_Pomezn%C3%AD_Boudy,_parkovi%C5%A1t%C4%9B,_SOR_C_10,5.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/40/Mal%C3%A1_%C3%9Apa%2C_Pomezn%C3%AD_Boudy%2C_parkovi%C5%A1t%C4%9B%2C_SOR_C_10%2C5.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mal%C3%A1_%C3%9Apa%2C_Pomezn%C3%AD_Boudy%2C_parkovi%C5%A1t%C4%9B%2C_SOR_C_10%2C5.jpg/960px-Mal%C3%A1_%C3%9Apa%2C_Pomezn%C3%AD_Boudy%2C_parkovi%C5%A1t%C4%9B%2C_SOR_C_10%2C5.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 155
+    datum: 2010-08-19
+    popis: SOR C 10,5 bus of CDS Náchod, Pomezní Boudy, Malá Úpa, Czech Republic
+  - soubor: File:Horní Malá Úpa - SKiMU Sport Centrum Pomezky 1 piste, downhill
+      view.jpg
+    autor: Szydzio
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Horn%C3%AD_Mal%C3%A1_%C3%9Apa_-_SKiMU_Sport_Centrum_Pomezky_1_piste,_downhill_view.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/06/Horn%C3%AD_Mal%C3%A1_%C3%9Apa_-_SKiMU_Sport_Centrum_Pomezky_1_piste%2C_downhill_view.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Horn%C3%AD_Mal%C3%A1_%C3%9Apa_-_SKiMU_Sport_Centrum_Pomezky_1_piste%2C_downhill_view.jpg/960px-Horn%C3%AD_Mal%C3%A1_%C3%9Apa_-_SKiMU_Sport_Centrum_Pomezky_1_piste%2C_downhill_view.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 159
+    datum: 2016-12-30 12:09:31
+    popis: SKiMU Sport Centre in Horní Malá Úpa, piste Pomezky 1, view towards
+      Pomezní Boudy (downhill)
+  - soubor: File:Malá Úpa, Pomezní Boudy, parkoviště, Karosa C 954 E.jpg
+    autor: Harold
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Mal%C3%A1_%C3%9Apa,_Pomezn%C3%AD_Boudy,_parkovi%C5%A1t%C4%9B,_Karosa_C_954_E.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/32/Mal%C3%A1_%C3%9Apa%2C_Pomezn%C3%AD_Boudy%2C_parkovi%C5%A1t%C4%9B%2C_Karosa_C_954_E.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mal%C3%A1_%C3%9Apa%2C_Pomezn%C3%AD_Boudy%2C_parkovi%C5%A1t%C4%9B%2C_Karosa_C_954_E.jpg/960px-Mal%C3%A1_%C3%9Apa%2C_Pomezn%C3%AD_Boudy%2C_parkovi%C5%A1t%C4%9B%2C_Karosa_C_954_E.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 161
+    datum: 2010-08-19
+    popis: Karosa C 954 E bus of ČSAD Semily, Pomezní Boudy, Malá Úpa, Czech Republic
+  - soubor: File:Pomezní Boudy, cyklobus, návěs.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_cyklobus,_n%C3%A1v%C4%9Bs.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/5d/Pomezn%C3%AD_Boudy%2C_cyklobus%2C_n%C3%A1v%C4%9Bs.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Pomezn%C3%AD_Boudy%2C_cyklobus%2C_n%C3%A1v%C4%9Bs.jpg/960px-Pomezn%C3%AD_Boudy%2C_cyklobus%2C_n%C3%A1v%C4%9Bs.jpg
+    rozmery: 3054×2290
+    vzdalenostM: 167
+    datum: 2009-09-27
+    popis: Bus for transporting bicycles, Pomezní Boudy, Krkonoše
+  - soubor: File:Pomezní boudy.jpg
+    autor: Ladislav Boháč
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_boudy.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/71/Pomezn%C3%AD_boudy.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Pomezn%C3%AD_boudy.jpg/960px-Pomezn%C3%AD_boudy.jpg
+    rozmery: 4000×3000
+    vzdalenostM: 170
+    datum: 2021-01-11 15:17:17
+    popis: Pomezní boudy
+  - soubor: File:Pomezní Boudy, cyklobus.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_cyklobus.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/90/Pomezn%C3%AD_Boudy%2C_cyklobus.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Pomezn%C3%AD_Boudy%2C_cyklobus.jpg/960px-Pomezn%C3%AD_Boudy%2C_cyklobus.jpg
+    rozmery: 2936×2202
+    vzdalenostM: 177
+    datum: 2009-09-27
+    popis: Bus for transporting bicycles, Pomezní Boudy, Krkonoše
+  - soubor: File:Krzyż Stulecia przy Amelkowej Chacie.jpg
+    autor: Szydzio
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Krzy%C5%BC_Stulecia_przy_Amelkowej_Chacie.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/76/Krzy%C5%BC_Stulecia_przy_Amelkowej_Chacie.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Krzy%C5%BC_Stulecia_przy_Amelkowej_Chacie.jpg/960px-Krzy%C5%BC_Stulecia_przy_Amelkowej_Chacie.jpg
+    rozmery: 1440×2560
+    vzdalenostM: 179
+    datum: 2021-07-03 17:11:11
+    popis: Krzyż Stulecia przy Amelkowej Chacie na Przełęczy Okraj
+  - soubor: File:Malá Úpa - boudy.jpg
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Mal%C3%A1_%C3%9Apa_-_boudy.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/95/Mal%C3%A1_%C3%9Apa_-_boudy.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mal%C3%A1_%C3%9Apa_-_boudy.jpg/960px-Mal%C3%A1_%C3%9Apa_-_boudy.jpg
+    rozmery: 2592×1944
+    vzdalenostM: 181
+    datum: 2008-05
+    popis: Village Malá Úpa in Czech Republic. Hotel Druzba and Penzion Horec
+  - soubor: File:Malá Úpa - Klein Aupa.jpg
+    autor: Pudelek
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Mal%C3%A1_%C3%9Apa_-_Klein_Aupa.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/42/Mal%C3%A1_%C3%9Apa_-_Klein_Aupa.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mal%C3%A1_%C3%9Apa_-_Klein_Aupa.jpg/960px-Mal%C3%A1_%C3%9Apa_-_Klein_Aupa.jpg
+    rozmery: 2048×1152
+    vzdalenostM: 181
+    datum: 2008-05
+    popis: Village Malá Úpa (Klein Aupa) in Krkonoše (Riesengebirge)
+  - soubor: File:Horní Malá Úpa, 542 21 Malá Úpa, Czech Republic - panoramio.jpg
+    autor: Václav Zavřel
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Horn%C3%AD_Mal%C3%A1_%C3%9Apa,_542_21_Mal%C3%A1_%C3%9Apa,_Czech_Republic_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/12/Horn%C3%AD_Mal%C3%A1_%C3%9Apa%2C_542_21_Mal%C3%A1_%C3%9Apa%2C_Czech_Republic_-_panoramio.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Horn%C3%AD_Mal%C3%A1_%C3%9Apa%2C_542_21_Mal%C3%A1_%C3%9Apa%2C_Czech_Republic_-_panoramio.jpg/960px-Horn%C3%AD_Mal%C3%A1_%C3%9Apa%2C_542_21_Mal%C3%A1_%C3%9Apa%2C_Czech_Republic_-_panoramio.jpg
+    rozmery: 8409×2399
+    vzdalenostM: 182
+    datum: Taken on 15 July 2015
+    popis: Horní Malá Úpa, 542 21 Malá Úpa, Czech Republic
+  - soubor: File:Pomezní Boudy, konec cesty česko-polského přátelství.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_konec_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/09/Pomezn%C3%AD_Boudy%2C_konec_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pomezn%C3%AD_Boudy%2C_konec_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD.jpg/960px-Pomezn%C3%AD_Boudy%2C_konec_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD.jpg
+    rozmery: 2920×2190
+    vzdalenostM: 186
+    datum: 2009-09-27
+    popis: End of cesta česko-polského přátelství, Pomezní Boudy, Krkonoše
+  - soubor: File:Pomezní Boudy, nová sjezdovka směrem k obci.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_nov%C3%A1_sjezdovka_sm%C4%9Brem_k_obci.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/8a/Pomezn%C3%AD_Boudy%2C_nov%C3%A1_sjezdovka_sm%C4%9Brem_k_obci.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Pomezn%C3%AD_Boudy%2C_nov%C3%A1_sjezdovka_sm%C4%9Brem_k_obci.jpg/960px-Pomezn%C3%AD_Boudy%2C_nov%C3%A1_sjezdovka_sm%C4%9Brem_k_obci.jpg
+    rozmery: 3648×2736
+    vzdalenostM: 189
+    datum: 2009-09-27
+    popis: Construction of new sky resort , Pomezní Boudy, Krkonoše
+  - soubor: File:Pomezní Boudy, nová sjezdovka vzhůru.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_nov%C3%A1_sjezdovka_vzh%C5%AFru.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/1d/Pomezn%C3%AD_Boudy%2C_nov%C3%A1_sjezdovka_vzh%C5%AFru.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Pomezn%C3%AD_Boudy%2C_nov%C3%A1_sjezdovka_vzh%C5%AFru.jpg/960px-Pomezn%C3%AD_Boudy%2C_nov%C3%A1_sjezdovka_vzh%C5%AFru.jpg
+    rozmery: 3648×2736
+    vzdalenostM: 189
+    datum: 2009-09-27
+    popis: Construction of new sky resort , Pomezní Boudy, Krkonoše
+  - soubor: File:Pomezní Boudy, označník na koneci cesty česko-polského přátelství.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_ozna%C4%8Dn%C3%ADk_na_koneci_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a6/Pomezn%C3%AD_Boudy%2C_ozna%C4%8Dn%C3%ADk_na_koneci_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pomezn%C3%AD_Boudy%2C_ozna%C4%8Dn%C3%ADk_na_koneci_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD.jpg/960px-Pomezn%C3%AD_Boudy%2C_ozna%C4%8Dn%C3%ADk_na_koneci_cesty_%C4%8Desko-polsk%C3%A9ho_p%C5%99%C3%A1telstv%C3%AD.jpg
+    rozmery: 2565×3420
+    vzdalenostM: 196
+    datum: 2009-09-27
+    popis: End of cesta česko-polského přátelství, Pomezní Boudy, Krkonoše
+  - soubor: File:Horní Malá Úpa, 542 21 Malá Úpa, Czech Republic - panoramio (1).jpg
+    autor: Václav Zavřel
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Horn%C3%AD_Mal%C3%A1_%C3%9Apa,_542_21_Mal%C3%A1_%C3%9Apa,_Czech_Republic_-_panoramio_(1).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/30/Horn%C3%AD_Mal%C3%A1_%C3%9Apa%2C_542_21_Mal%C3%A1_%C3%9Apa%2C_Czech_Republic_-_panoramio_%281%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Horn%C3%AD_Mal%C3%A1_%C3%9Apa%2C_542_21_Mal%C3%A1_%C3%9Apa%2C_Czech_Republic_-_panoramio_%281%29.jpg/960px-Horn%C3%AD_Mal%C3%A1_%C3%9Apa%2C_542_21_Mal%C3%A1_%C3%9Apa%2C_Czech_Republic_-_panoramio_%281%29.jpg
+    rozmery: 8000×2528
+    vzdalenostM: 218
+    datum: Taken on 15 July 2015
+    popis: Horní Malá Úpa, 542 21 Malá Úpa, Czech Republic
+  - soubor: File:Pomezní Boudy, pošta.jpg
+    autor: Honza Groh ( Jagro )
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pomezn%C3%AD_Boudy,_po%C5%A1ta.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/ba/Pomezn%C3%AD_Boudy%2C_po%C5%A1ta.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pomezn%C3%AD_Boudy%2C_po%C5%A1ta.jpg/960px-Pomezn%C3%AD_Boudy%2C_po%C5%A1ta.jpg
+    rozmery: 3318×2488
+    vzdalenostM: 261
+    datum: 2009-09-27
+    popis: Post and Municipal building, Pomezní Boudy, Krkonoše
