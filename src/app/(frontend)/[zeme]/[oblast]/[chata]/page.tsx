@@ -317,18 +317,48 @@ function sestavData(chata: Chata): ZapData {
 
   // Sběratelské artefakty
   const razitka = (chata.razitka?.docs ?? []).filter((r): r is Razitka => typeof r === 'object')
+  // Pořadí variant: nejdřív ta, která se dnes razítkuje, pak ostatní, historické
+  // nakonec — a uvnitř skupin podle názvu, ať je pořadí stabilní mezi buildy.
+  const poradiStavu = (s?: string | null) => (s === 'k-dispozici' ? 0 : s === 'historicke' ? 2 : 1)
+  const varianty = [...razitka]
+    .sort((a, b) => poradiStavu(a.stav) - poradiStavu(b.stav) || (a.nazev ?? '').localeCompare(b.nazev ?? '', 'cs'))
+    .map((r, i) => {
+      const o = typeof r.otisk === 'object' ? r.otisk : null
+      // Popisek varianty se skládá JEN z doložených polí — období užívání,
+      // kde se razítkuje, kdo otisk doložil. Co v datech není, se nepíše.
+      // „neznámo" v `platnostDo` je poctivé v datech, ale v popisce by z něj
+      // vzniklo „cca konec 80. let – neznámo"; nevědomost už nese samo to,
+      // že konec chybí, tak se nedopisuje.
+      const doHodnota = /^(neznámo|neznámé|neznamo|\?)$/iu.test(r.platnostDo ?? '') ? null : r.platnostDo
+      const obdobi = r.platnostOd
+        ? `${r.platnostOd}${doHodnota ? ` – ${doHodnota}` : r.stav === 'historicke' ? '' : ' – dosud'}`
+        : null
+      return {
+        id: String(r.id),
+        poradi: i + 1,
+        nazev: r.nazev ?? `Otisk ${i + 1}`,
+        otiskUrl: o?.url ?? null,
+        otiskAlt: o?.alt ?? null,
+        historicke: r.stav === 'historicke',
+        stav: r.stav === 'historicke' ? 'historický otisk' : r.stav === 'nedostupne' ? 'dočasně nedostupné' : 'k dispozici',
+        obdobi,
+        dolozil: r.dolozil ?? null,
+        zdrojUrl: (typeof r.prevzeti === 'object' && r.prevzeti?.zdrojUrl) || null,
+        zdroj: (typeof r.prevzeti === 'object' && r.prevzeti?.zdroj) || null,
+      }
+    })
   const razitkoRec = razitka.find((r) => r.stav === 'k-dispozici') ?? razitka[0]
-  const otisk = razitkoRec && typeof razitkoRec.otisk === 'object' ? razitkoRec.otisk : null
   const razitko = razitkoRec
     ? {
         slug: chata.slug,
         nazev: chata.nazev,
         pohori: oblast?.nazev ?? null,
         vyska: chata.vyska ?? null,
-        otiskUrl: otisk?.url ?? null,
-        otiskAlt: otisk?.alt ?? null,
+        otiskUrl: varianty[0]?.otiskUrl ?? null,
+        otiskAlt: varianty[0]?.otiskAlt ?? null,
         caption: `Razítko · ${razitka.length} ${pluralOtisk(razitka.length)}`,
         stav: razitkoRec.stav === 'historicke' ? 'historický otisk' : 'k dispozici',
+        varianty,
       }
     : null
 

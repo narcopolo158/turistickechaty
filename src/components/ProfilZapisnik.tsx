@@ -11,6 +11,7 @@ import React, { useState, useSyncExternalStore } from 'react'
 import Link from 'next/link'
 
 import MapaTrasy, { type TrasaNaMape } from './MapaTrasy'
+import RazitkaVarianty, { VybranyOtisk, type VariantaOtisku } from './RazitkaVarianty'
 import RazitkoSvg from './RazitkoSvg'
 import VyskovyProfil, { type BodProfilu } from './VyskovyProfil'
 import { formatDatumDeniku, pridejDoDeniku, useZaznamDeniku } from '@/lib/denik'
@@ -64,7 +65,7 @@ export type ZapData = {
   historie: { rozsah: string | null; milniky: ZapMilnik[]; text: string[] } | null
   zajimavosti: ZapZaj[]
   zdroje: ZapZdroj[]
-  razitko: { slug: string; nazev: string; pohori: string | null; vyska: number | null; otiskUrl: string | null; otiskAlt: string | null; caption: string; stav: string } | null
+  razitko: { slug: string; nazev: string; pohori: string | null; vyska: number | null; otiskUrl: string | null; otiskAlt: string | null; caption: string; stav: string; varianty: VariantaOtisku[] } | null
   znamka: { cislo: string; url: string; stav: string; aktivni: boolean; obrazekUrl: string | null; obrazekZdroj: string | null } | null
   vizitka: { cislo: string; nazev: string; url: string; stav: string; vyrazena: boolean; obrazekUrl: string | null; obrazekZdroj: string | null } | null
   dalsiList: string | null
@@ -228,7 +229,7 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
               <>
                 <div className="zap-strip"><b>Sběratelská místa</b><span className="line" /><span className="tag">Artefakt</span></div>
                 <div className="zap-artefakty">
-                  {data.razitko && <RazitkoObjekt r={data.razitko} />}
+                  {data.razitko && <RazitkoObjekt r={data.razitko} reduced={reduced} />}
                   {data.znamka && <ZnamkaObjekt z={data.znamka} tilt={tilt} />}
                   {data.vizitka && <VizitkaObjekt v={data.vizitka} tilt={tilt} />}
                 </div>
@@ -457,26 +458,41 @@ function SekceHlavicka({ n, t, tag, tagItalic }: { n: string; t: string; tag?: s
 }
 
 // ── Razítko (reálný otisk / stylizované SVG) + sběr do deníku ──────────────
-function RazitkoObjekt({ r }: { r: NonNullable<ZapData['razitko']> }) {
+function RazitkoObjekt({ r, reduced }: { r: NonNullable<ZapData['razitko']>; reduced: boolean }) {
   const zaznam = useZaznamDeniku(r.slug)
   const [hit, setHit] = useState(false)
+  // Vybraná varianta otisku (víc verzí razítka — zadání Michala 28. 7. 2026).
+  const [vybranaId, setVybranaId] = useState(r.varianty[0]?.id ?? '')
   const sbirat = () => {
     if (zaznam || hit) return
     setHit(true)
     window.setTimeout(() => pridejDoDeniku(r.slug), 480)
   }
+  const vic = r.varianty.length > 1
+  const vybrana = r.varianty.find((v) => v.id === vybranaId) ?? r.varianty[0] ?? null
+
   return (
-    <div className="zap-razitko">
-      <div className="zap-obj-stage">
-        {r.otiskUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={r.otiskUrl} alt={r.otiskAlt ?? `Otisk razítka — ${r.nazev}`} style={{ maxWidth: 122, maxHeight: 122, mixBlendMode: 'multiply' }} />
-        ) : (
-          <div style={{ width: 122 }}><RazitkoSvg nazev={r.nazev} pohori={r.pohori} vyska={r.vyska} /></div>
-        )}
-      </div>
-      <div className="zap-obj-cap">{r.caption}</div>
-      <div className="zap-obj-sub"><span className="dot" style={{ color: 'var(--open)' }}>●</span> {r.stav}</div>
+    <div className={`zap-razitko${vic ? ' ma-varianty' : ''}`}>
+      {vic && vybrana ? (
+        <>
+          <div className="zap-obj-cap nad">{r.caption}</div>
+          <VybranyOtisk varianta={vybrana} celkem={r.varianty.length} nazevChaty={r.nazev} reduced={reduced} />
+        </>
+      ) : (
+        <>
+          <div className="zap-obj-stage">
+            {r.otiskUrl ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={r.otiskUrl} alt={r.otiskAlt ?? `Otisk razítka — ${r.nazev}`} style={{ maxWidth: 122, maxHeight: 122, mixBlendMode: 'multiply' }} />
+            ) : (
+              <div style={{ width: 122 }}><RazitkoSvg nazev={r.nazev} pohori={r.pohori} vyska={r.vyska} /></div>
+            )}
+          </div>
+          <div className="zap-obj-cap">{r.caption}</div>
+          <div className="zap-obj-sub"><span className="dot" style={{ color: 'var(--open)' }}>●</span> {r.stav}</div>
+        </>
+      )}
+      <RazitkaVarianty varianty={r.varianty} vybranaId={vybrana?.id ?? ''} onVyber={setVybranaId} reduced={reduced} />
       {zaznam ? (
         <button type="button" className="btn done" style={{ marginTop: 8, fontSize: 11 }} aria-disabled>✓ Ve sbírce · {formatDatumDeniku(zaznam.datum)}</button>
       ) : (

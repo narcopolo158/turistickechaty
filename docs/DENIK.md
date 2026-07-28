@@ -527,6 +527,38 @@ v `docs/DATA-17-jmenovci.md` §5 a v README kontrol. Testy data01 32/32 (+8),
 (dober rozhledny) a pro `krkonose` (zpětné dobrání, mj. Žalý). Běh je
 idempotentní, chaty se znovu nezakládají.
 
+**Dodatek 22 (týž den, zadání Michala): VŠECHNY VARIANTY OTISKU na profilu, ne
+jen jedna.** Zadání: „škoda ukazovat na profilu jen jednu verzi razítka, když
+jich máme víc — vymysli, jak je zobrazit, drž wow efekt a dohlédni, ať to
+graficky vypadá skvěle." Data to unesou: Rýchorská bouda má 7 otisků, Luční
+7 (6 z razitkuj.cz + historický ze sbírky Michala), Dvoračky 5, další čtyři.
+Profil přitom bral `razitka[0]` a zbytek zahazoval. **Řešení vychází z toho,
+čím profil je** — zápisník: sběratel nemá jednu verzi, má LIST. Varianty proto
+leží pod velkým otiskem jako **vějíř otisků na papíře**: mírné pootočení
+(−6° … +6°), mělký oblouk, přesah přes sebe, `mix-blend-mode: multiply`, takže
+otisk je do papíru vtištěný, ne nalepený. Vybraná varianta se z vějíře vytáhne
+nahoru a přistane ve **velké paspartě s okénkem**; výměna se „přitiskne"
+(scale 1,16 → 0,965, rozpití inkoustu, 420 ms, jednou). Najetí na otisk ukáže
+jeho název místo nápovědy, takže se vějíř dá přečíst bez klikání.
+**Poctivost pod otiskem:** štítek skládá jen doložená pole varianty — stav
+(zelená tečka „k dispozici" / šedá „historický otisk"), období užívání, kdo
+otisk doložil. Co v datech není, se nedopisuje; „platnostDo: neznámo" se do
+popisky nepromítá, protože nevědomost nese už chybějící konec. Chybějící sken
+varianty se přizná větou, nevykreslí se prázdné okno.
+**Detaily, které rozhodly o výsledku (všechny měřené na živém webu, ne
+odhadem):** natočení je deterministické z pořadí — s náhodou by se rozešla
+hydratace a vějíř by při každém renderu cukl; vějíř se při najetí
+NEROZESTUPUJE, protože měnit rozteč znamená měnit šířku listu a ten by se pod
+rukou rozjel do vodorovného scrollu (pohyb dělá jen otisk pod kurzorem); šířka
+dlaždic je 51 px právě proto, aby se sedm otisků vešlo do bloku bez scrollu
+(299 px = 299 px, změřeno) a aby červený obrys vybraného otisku neuřízl levý
+okraj. V noci by `multiply` otisk spolkl, proto se přepíná na `screen`
+s inverzí. Klávesnice: `radiogroup` s roving tabindexem, šipky dokola,
+Home/End na kraje, změnu ohlásí `aria-live`. `prefers-reduced-motion` vypíná
+přitisknutí i přechody. Jediná varianta se chová přesně jako dřív.
+Ověřeno lokálně nad seedovanou DB (Postgres + 110 otisků) screenshoty den/noc
+a na mobilní šířce; 8 nových testů (312 celkem), lint, tsc i kontrola čisté.
+
 **Otázky pro Michala:** (0) **Jaký `typ` mají dostat rozhledny s občerstvením?**
 Číselník z plánu kap. 5 zná obsluhovaná / útulna / bivak / horský hotel —
 přidat pátou hodnotu `rozhledna`, nebo je vést jako obsluhované s poznámkou?
