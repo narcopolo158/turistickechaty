@@ -172,6 +172,16 @@ selhání; Michal spustil znovu. Testy: +4 pohoří spec, home-f1 upraven
 handoffu), deep-link ?chata= do 3D a zpětné „Ukázat na 3D mapě"
 z profilů; F1e mini-stránky středisek; F1f noc.
 
+**Dodatek 7 (týž den): OTISKY DOMA — razítkovník naskočí na 45 chat.**
+Opravený workflow doběhl (e37d339): **45 chat / 110 otisků** (nově mj.
+Výrovka 4 varianty, Vrbatova, Brádlerovky, Barborka, Kochanówka, Portášky,
+Erlebachova…), žádná chata neselhala. `data05-razitkuj-zaloz` založil
+110 razítkových YAML (`prevzato-se-svolenim`, zdroj + svolení KiBob,
+verified:false, stav nenastaven — aktuálnost varianty razitkuj neuvádí);
+u původních 16 jen posun checked na 2026-07-28 (dnešní re-download).
+Seed je nahraje s příštím deployem — otisky se objeví na profilech,
+v katalogu (mini-otisky karet) i v razítkovníku.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh
