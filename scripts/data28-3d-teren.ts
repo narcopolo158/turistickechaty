@@ -28,7 +28,7 @@
  *
  *   npx tsx scripts/data28-3d-teren.ts [--bez-site]
  */
-import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 import { parse } from 'yaml'
@@ -58,6 +58,37 @@ type Trasa = { ref: string | null; barva: string; body: [number, number][] }
 type Vrchol = { n: string; lat: number; lng: number; ele: number }
 
 // ── chaty + kotvy z korpusu ─────────────────────────────────────────────────
+
+/**
+ * Vstupy, které v nové oblasti ještě NEMUSÍ existovat — a jejich nepřítomnost
+ * není chyba, nýbrž normální stav pohoří na začátku. Publikované profily
+ * (`data/chaty/<oblast>`) přibývají až po křížovém ověření kandidátů, přechody
+ * dopočítá DATA-06 a surové exporty leží v repu až po prvním běhu DATA-01.
+ * Do 28. 7. 2026 to skript nevěděl a na Jizerských horách spadl na
+ * `ENOENT: scandir data/chaty/jizerske-hory` — model přitom dává smysl
+ * i bez jediné chaty (terén, značené trasy a vrcholy jsou doložená data).
+ */
+const souboryNeboPrazdno = (dir: string, pripona: string): string[] => {
+  const p = join(KOREN, dir)
+  if (!existsSync(p)) {
+    console.log(`  3D: ${dir} v této oblasti zatím není — přeskakuji.`)
+    return []
+  }
+  return readdirSync(p).filter((f) => f.endsWith(pripona))
+}
+
+const nactiJsonNeboNull = <T>(cesta: string): T | null => {
+  const p = join(KOREN, cesta)
+  if (!existsSync(p)) {
+    console.log(`  3D: ${cesta} v této oblasti zatím není — přeskakuji.`)
+    return null
+  }
+  return JSON.parse(readFileSync(p, 'utf8')) as T
+}
+
+/** Objekty korpusu, které padly mimo okno 3D modelu — do reportu běhu. */
+const mimoBbox: string[] = []
+
 const nactiChaty = (): { chaty: Chata[]; kotvy: { lat: number; lng: number; ele: number }[] } => {
   const chaty: Chata[] = []
   const kotvy: { lat: number; lng: number; ele: number }[] = []
@@ -65,7 +96,7 @@ const nactiChaty = (): { chaty: Chata[]; kotvy: { lat: number; lng: number; ele:
     [`data/chaty/${OBLAST.slug}`, true],
     [`data/kandidati/${OBLAST.slug}`, false],
   ] as const) {
-    for (const f of readdirSync(join(KOREN, dir))) {
+    for (const f of souboryNeboPrazdno(dir, '.yaml')) {
       if (!f.endsWith('.yaml')) continue
       const d = (parse(readFileSync(join(KOREN, dir, f), 'utf8')) ?? {}) as Record<string, unknown>
       const lat = Number(d.lat), lng = Number(d.lng)
@@ -74,6 +105,7 @@ const nactiChaty = (): { chaty: Chata[]; kotvy: { lat: number; lng: number; ele:
       // bbox mapy — do 3D se neberou, jinak by pin visel na okraji diorámy
       if (lat < BBOX.latMin || lat > BBOX.latMax || lng < BBOX.lngMin || lng > BBOX.lngMax) {
         console.log(`  3D: mimo bbox, vynechávám ${String(d.nazev ?? f)}`)
+        mimoBbox.push(String(d.nazev ?? f))
         continue
       }
       const ele = d.vyska ? Number(d.vyska) : null
@@ -84,10 +116,10 @@ const nactiChaty = (): { chaty: Chata[]; kotvy: { lat: number; lng: number; ele:
     }
   }
   for (const src of ['_overpass-export-cz.json', '_overpass-export-pl.json']) {
-    const j = JSON.parse(readFileSync(join(KOREN, `data/kandidati/${OBLAST.slug}`, src), 'utf8')) as {
+    const j = nactiJsonNeboNull<{
       elements?: { lat?: number; lon?: number; center?: { lat: number; lon: number }; tags?: Record<string, string> }[]
-    }
-    for (const e of j.elements ?? []) {
+    }>(`data/kandidati/${OBLAST.slug}/${src}`)
+    for (const e of j?.elements ?? []) {
       const lat = e.lat ?? e.center?.lat, lng = e.lon ?? e.center?.lon
       const ele = Number(e.tags?.ele)
       if (lat && lng && ele) kotvy.push({ lat, lng, ele })
@@ -385,13 +417,15 @@ const stahniVrcholy = async (): Promise<Vrchol[]> => {
 
 // ── přechody (schematické spojnice; reálné délky z prechody.json) ──────────
 const nactiPrechody = (chaty: Chata[]): { a: string; b: string; km: number }[] => {
-  const j = JSON.parse(readFileSync(join(KOREN, `data/trasy/${OBLAST.slug}/prechody.json`), 'utf8')) as {
+  // Přechody dopočítává DATA-06 nad publikovanými profily — v nové oblasti
+  // soubor prostě ještě není a spojnice se nekreslí (radši žádné než domyšlené).
+  const j = nactiJsonNeboNull<{
     chaty?: { nazev: string; prechody?: { cilNazev: string; delkaKm: number }[] }[]
-  }
+  }>(`data/trasy/${OBLAST.slug}/prechody.json`)
   const idx = new Set(chaty.filter((c) => c.pub).map((c) => c.n))
   const out: { a: string; b: string; km: number }[] = []
   const seen = new Set<string>()
-  for (const ch of j.chaty ?? []) {
+  for (const ch of j?.chaty ?? []) {
     for (const p of ch.prechody ?? []) {
       const key = [ch.nazev, p.cilNazev].sort().join('|')
       if (seen.has(key) || !idx.has(ch.nazev) || !idx.has(p.cilNazev)) continue
@@ -510,6 +544,12 @@ const main = async () => {
   slozHtml(dataJson, kotvy.length)
   console.log(`Zapsáno: 3d-teren-data-${OBLAST.slug}.json (${(dataJson.length / 1024).toFixed(0)} kB) + 3d-teren-${OBLAST.slug}.html + public/3d/${OBLAST.slug}.html`)
   console.log(`realDem: ${realDem} | chaty: ${chaty.length} | trasy: ${trasy.length} | lanovky: ${lanovky.length} | reky: ${reky.length} | vrcholy: ${vrcholy.length} | lesy: ${lesy.length} | sjezdovky: ${sjezdovky.length}`)
+  // Ať je v souhrnu běhu vidět, co model NEUKAZUJE — tichý ořez okna je
+  // přesně ten druh ztráty, které si nikdo nevšimne (28. 7. 2026 vypadly
+  // z Jizerek tři chaty z deseti, než se okno rozšířilo na jih).
+  if (mimoBbox.length) {
+    console.log(`mimo okno 3D modelu (bbox3d v scripts/oblasti.ts): ${mimoBbox.length} — ${mimoBbox.join(', ')}`)
+  }
 }
 
 main().catch((chyba) => {

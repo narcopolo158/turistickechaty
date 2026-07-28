@@ -463,6 +463,33 @@ i kontrola workflow čisté. (Tři suity dnes v sandboxu neběží — chtějí 
 a `PAYLOAD_SECRET`; s Overpassem nemají nic společného.)
 **Čeká na Michala:** spustit DATA-01 pro `jizerske-hory` znovu.
 
+**Dodatek 20 (týž den): DATA-01 pro Jizerky doběhla (+7 kandidátů), DATA-28
+spadla na tom, že nová oblast ještě nemá publikované profily.** Export prošel
+napodruhé bez zásahu — instance se uklidnily a opakování kol se osvědčilo
+(commit ec0e464, +7 kandidátů: Chatka Górzystów, Schronisko na Stogu Izerskim,
+Stacja Turystyczna Orle, Šámalova chata, Hubertka, Chata Pešákovna, Lesní bar
+Krömerova bouda — v `data/kandidati/jizerske-hory/` je jich teď 10). 3D model
+ale skončil na `ENOENT: scandir data/chaty/jizerske-hory`: skript předpokládal,
+že adresář **publikovaných** profilů existuje. V nové oblasti neexistuje —
+a nemá proč, kandidáti se do `data/chaty/` povyšují až po křížovém ověření.
+Prázdno tu není chyba, ale normální začátek pohoří: model dává smysl
+i bez jediné chaty (terén, značené trasy a vrcholy jsou doložená data).
+**Opraveno** — tři vstupy, které v nové oblasti ještě nemusí být, se čtou
+tolerantně a řeknou to do logu: `data/chaty/<oblast>`, surové exporty DATA-01
+a `data/trasy/<oblast>/prechody.json` (ty dopočítá DATA-06 nad publikovanými
+profily, dřív ne). **Vedlejší nález, který byl horší než ten pád:** offline
+zkouška (`--bez-site`, ilustrační reliéf — vygenerované soubory jsem po
+ověření smazal, do repa nepatří) ukázala, že z deseti kandidátů model tiše
+vyřízl **tři** — Barbora, Koryna a Lučanka leží na jihozápadním úbočí nad
+Lučany a Bedřichovem, tedy pod jižní hranou užšího 3D okna (50,78). Okno
+jsem srovnal s oknem dotazu (50,75; terén tam pořád stoupá, není to město)
+a přidal do souhrnu běhu **řádek „mimo okno 3D modelu"** — tichý ořez je
+přesně ten druh ztráty, které si nikdo nevšimne. Po opravě model bere všech
+deset. Ověřeno reálným během skriptu nad skutečným stavem repa, ne unit
+testem (funkce jsou modulové, neexportované) — a to, co ověřit nešlo (ostrý
+výškopis z Mapy.com, trasy a vrcholy z Overpassu), doplní až běh v Actions.
+**Čeká na Michala:** spustit DATA-28 pro `jizerske-hory` znovu.
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

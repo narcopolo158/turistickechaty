@@ -41,7 +41,11 @@ export const OBLASTI: OblastKonfig[] = [
     // Na východě se okno vědomě mírně překrývá s krkonošským (Jizerka /
     // Harrachov) — duplicity řeší kandidátní triáž, ne ořez okna.
     bbox: { latMin: 50.75, lngMin: 15.05, latMax: 51.02, lngMax: 15.45 },
-    bbox3d: { latMin: 50.78, lngMin: 15.1, latMax: 50.98, lngMax: 15.42 },
+    // Jižní hranu 3D okna drží stejně nízko jako okno dotazu (50.75): první
+    // běh DATA-01 (28. 7. 2026) našel na jihozápadním úbočí nad Lučany
+    // a Bedřichovem tři chaty z deseti (Barbora, Koryna, Lučanka) a užší okno
+    // 50.78 by je z modelu tiše vyřízlo. Terén tam pořád stoupá, není to město.
+    bbox3d: { latMin: 50.75, lngMin: 15.1, latMax: 50.98, lngMax: 15.42 },
     poznamka: 'druhá oblast (rozhodnutí Michala 28. 7. 2026) — přeshraniční s Górami Izerskimi',
   },
 ]
