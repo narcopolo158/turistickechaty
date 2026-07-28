@@ -22,6 +22,15 @@
  *   npx tsx scripts/data01-overpass-krkonose.ts --api https://overpass.kumi.systems/api/interpreter
  *   npx tsx scripts/data01-overpass-krkonose.ts --z-jsonu        # offline: jen transformace commitnutého exportu
  *
+ * ROZHLEDNY (rozhodnutí Michala 28. 7. 2026): druhý dotaz sbírá rozhledny
+ * (`tower:type=observation`) a k nim občerstvení v okolí. Kandidátem se stane
+ * jen rozhledna s DOLOŽENÝM občerstvením (restaurace, bufet, kavárna…) —
+ * volně přístupná věž bez občerstvení do průvodce nepatří a zůstane jen
+ * v reportu. Když je tím občerstvením chata, která už kandidátem je,
+ * rozhledna se zvlášť nezakládá (byl by to druhý objekt na témž místě) —
+ * dvojici posoudí redakce. Doklad (objekt, tag, vzdálenost) jde do
+ * `interniPoznamky` kandidáta, ať je co ověřovat.
+ *
  * Poctivost dat (CLAUDE.md): skript nic nedomýšlí — zapisuje pouze to, co
  * v OSM je. Stav provozu OSM spolehlivě nenese → `stav` se nevyplňuje.
  * Typ jen z jednoznačného významu tagu dle OSM wiki: alpine_hut = obsluhovaná
@@ -116,6 +125,33 @@ area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
   nwr["tourism"="alpine_hut"](area.stat)(${okno});
   nwr["tourism"="wilderness_hut"](area.stat)(${okno});
   nwr["tourism"="hut"](area.stat)(${okno});
+);
+out center;`
+
+/**
+ * ROZHLEDNY (rozhodnutí Michala 28. 7. 2026): „v Jizerkách je hodně rozhleden,
+ * většina jich má občerstvení nebo restauraci nebo je její součástí chata —
+ * všechny takové bych určitě zahrnul. Samotné rozhledny (volně přístupné bez
+ * občerstvení) nebereme."
+ *
+ * Občerstvení u rozhledny OSM skoro nikdy netagguje na věži samotné — bufet
+ * bývá vedle jako vlastní objekt. Dotaz proto vybere rozhledny do množiny
+ * `.rozhledny` a k nim přibalí objekty s občerstvením v okolí; spárování
+ * a rozhodnutí „bereme / nebereme" dělá skript nad odpovědí (`parujRozhledny`),
+ * ne dotaz — ať je v surovém exportu vidět i to, co jsme NEvzali.
+ *
+ * `tower:type=observation` je společný jmenovatel obou obvyklých zápisů
+ * (`man_made=tower` i `building=tower`), proto se selektuje jím.
+ */
+export const OKOLI_OBCERSTVENI_M = 100
+
+export const overpassDotazRozhledny = (iso: string, okno: string = BBOX_KRKONOSE): string => `[out:json][timeout:180];
+area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
+nwr["tower:type"="observation"](area.stat)(${okno})->.rozhledny;
+(
+  .rozhledny;
+  nwr(around.rozhledny:${OKOLI_OBCERSTVENI_M})["amenity"~"^(restaurant|cafe|fast_food|bar|pub|biergarten)$"];
+  nwr(around.rozhledny:${OKOLI_OBCERSTVENI_M})["tourism"~"^(alpine_hut|wilderness_hut|hut|chalet)$"];
 );
 out center;`
 
@@ -266,6 +302,7 @@ export const chataZElementu = (
   el: OsmElement,
   checked: string,
   zeme: Zeme = 'cz',
+  volby: { oblast?: string; obcerstveni?: ObcerstveniUObjektu[] } = {},
 ): { data: Record<string, unknown> } | Preskoceni => {
   const tagy = el.tags ?? {}
   const url = osmUrl(el)
@@ -277,10 +314,11 @@ export const chataZElementu = (
     nazev: tagy.name,
     slug: slugify(tagy.name),
     zeme, // zaručeno průnikem s area ISO3166-1 daného státu přímo v dotazu
-    oblast: 'krkonose',
+    oblast: volby.oblast ?? 'krkonose',
     // `stav` vědomě chybí: OSM provoz spolehlivě nenese, nedomýšlíme.
   }
-  // Typ jen z jednoznačného tagu; nestandardní `hut` nechává typ redakci.
+  // Typ jen z jednoznačného tagu; nestandardní `hut` i rozhledna nechávají
+  // typ redakci (číselník typů rozhlednu zatím nezná — viz deník 28. 7. 2026).
   if (tagy.tourism === 'alpine_hut') data.typ = 'obsluhovana'
   if (tagy.tourism === 'wilderness_hut') data.typ = 'utulna'
 
@@ -319,9 +357,21 @@ export const chataZElementu = (
 
   const poznamky = [
     `KANDIDÁT z OSM (DATA-01, stav dat ${checked}) — na web povýšit do data/chaty/ až po křížovém ověření (DATA-03).`,
-    tagy.tourism === 'hut'
-      ? 'OSM tag tourism=hut je nestandardní — typ nevyplněn, určí redakce.'
-      : `Typ odvozen z OSM tagu tourism=${tagy.tourism} (alpine_hut = obsluhovaná, wilderness_hut = útulna).`,
+    jeRozhledna(el)
+      ? 'ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen s občerstvením/restaurací nebo s chatou). Typ nevyplněn — číselník typů rozhlednu zatím nezná, určí redakce.'
+      : tagy.tourism === 'hut'
+        ? 'OSM tag tourism=hut je nestandardní — typ nevyplněn, určí redakce.'
+        : `Typ odvozen z OSM tagu tourism=${tagy.tourism} (alpine_hut = obsluhovaná, wilderness_hut = útulna).`,
+    // Doklad občerstvení: konkrétní OSM objekty a vzdálenosti, ať je co ověřit.
+    // Bez dokladu se rozhledna kandidátem vůbec nestane (viz parujRozhledny).
+    ...(volby.obcerstveni?.length
+      ? [
+          `Doklad občerstvení (OSM, ${OKOLI_OBCERSTVENI_M} m okolí): ${volby.obcerstveni
+            .map((o) => `${o.nazev ?? '(bez názvu)'} — ${o.znacka}, ${o.vzdalenostM} m, ${o.url}`)
+            .join(' · ')}`,
+        ]
+      : []),
+    ...(tagy.height ? [`Výška věže dle OSM: ${tagy.height} m`] : []),
     ...(tagy.operator ? [`Provozovatel dle OSM: ${tagy.operator}`] : []),
     ...(tagy.opening_hours ? [`Otvírací doba dle OSM (surový formát, neověřeno): ${tagy.opening_hours}`] : []),
     ...(tagy.note ? [`Poznámka z OSM: ${tagy.note}`] : []),
@@ -332,6 +382,63 @@ export const chataZElementu = (
 }
 
 // ── Porovnání s ručně kurátorovaným profilem ────────────────────────────────
+
+// ── rozhledny s občerstvením ────────────────────────────────────────────────
+
+const OBCERSTVENI_AMENITY = new Set(['restaurant', 'cafe', 'fast_food', 'bar', 'pub', 'biergarten'])
+const CHATA_TOURISM = new Set(['alpine_hut', 'wilderness_hut', 'hut', 'chalet'])
+
+export type ObcerstveniUObjektu = {
+  url: string
+  nazev: string | null
+  znacka: string
+  vzdalenostM: number
+  /** Občerstvení je samo chata (pak rozhledna nejspíš patří k ní, ne naopak). */
+  jeChata: boolean
+}
+export type Rozhledna = { el: OsmElement; obcerstveni: ObcerstveniUObjektu[] }
+
+export const jeRozhledna = (el: OsmElement): boolean => el.tags?.['tower:type'] === 'observation'
+
+/** Doklad občerstvení z tagů objektu — `null`, když objekt občerstvení nenese. */
+export const znackaObcerstveni = (el: OsmElement): { znacka: string; jeChata: boolean } | null => {
+  const t = el.tags ?? {}
+  if (t.amenity && OBCERSTVENI_AMENITY.has(t.amenity)) return { znacka: `amenity=${t.amenity}`, jeChata: false }
+  if (t.tourism && CHATA_TOURISM.has(t.tourism)) return { znacka: `tourism=${t.tourism}`, jeChata: true }
+  return null
+}
+
+/**
+ * Ke každé rozhledně z odpovědi najde objekty s občerstvením do `limitM`.
+ * Rozhledna, která občerstvení nese sama (bufet zatagovaný přímo na věži),
+ * dostane doklad se vzdáleností 0. Prázdný seznam = rozhledna, kterou dle
+ * rozhodnutí Michala NEBEREME — ale zůstane v reportu, ať je vidět, co se
+ * zahodilo a proč.
+ */
+export const parujRozhledny = (elementy: OsmElement[], limitM: number = OKOLI_OBCERSTVENI_M): Rozhledna[] => {
+  const rozhledny = elementy.filter(jeRozhledna)
+  const zdroje = elementy.filter((el) => !jeRozhledna(el) && znackaObcerstveni(el))
+  return rozhledny.map((el) => {
+    const gps = souradnice(el)
+    const obcerstveni: ObcerstveniUObjektu[] = []
+    const vlastni = znackaObcerstveni(el)
+    if (vlastni) {
+      obcerstveni.push({ url: osmUrl(el), nazev: el.tags?.name ?? null, znacka: vlastni.znacka, vzdalenostM: 0, jeChata: vlastni.jeChata })
+    }
+    if (gps) {
+      for (const z of zdroje) {
+        const zGps = souradnice(z)
+        if (!zGps) continue
+        const d = vzdalenostM(gps.lat, gps.lng, zGps.lat, zGps.lng)
+        if (d > limitM) continue
+        const zn = znackaObcerstveni(z)!
+        obcerstveni.push({ url: osmUrl(z), nazev: z.tags?.name ?? null, znacka: zn.znacka, vzdalenostM: d, jeChata: zn.jeChata })
+      }
+    }
+    obcerstveni.sort((a, b) => a.vzdalenostM - b.vzdalenostM || a.url.localeCompare(b.url))
+    return { el, obcerstveni }
+  })
+}
 
 /** Vzdálenost dvou GPS bodů v metrech (haversine — stačí na sanity check). */
 export const vzdalenostM = (aLat: number, aLng: number, bLat: number, bLng: number): number => {
@@ -381,7 +488,7 @@ export const yamlChaty = (data: Record<string, unknown>, url: string, checked: s
     `# ${data.nazev} — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat ${checked})`,
     `# Zdroj: ${url} · ${ATRIBUCE}`,
     '# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web',
-    '# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav',
+    `# (data/chaty/${data.oblast ?? 'krkonose'}/) povyšovat až po křížovém ověření (DATA-03). Stav`,
     '# provozu OSM nenese, proto tu není. Nic nedomýšlet!',
     '',
     stringify(data),
@@ -396,7 +503,7 @@ export type Report = {
 }
 
 /** Element s metadaty svého exportu (země dle area v dotazu, checked dle stavu dat). */
-export type ExportPolozka = { el: OsmElement; zeme: Zeme; checked: string }
+export type ExportPolozka = { el: OsmElement; zeme: Zeme; checked: string; obcerstveni?: ObcerstveniUObjektu[] }
 
 /**
  * Zapíše YAML kandidátů (obě země do téhož adresáře pohoří — Krkonoše jsou
@@ -411,6 +518,10 @@ export const zapisKandidaty = (
   kandidatiAdresar: string,
   rucniAdresar: string,
   vyrazene: Map<string, string> = new Map(),
+  // Oblast se zapisuje do YAML kandidáta. Výchozí „krkonose" drží zpětnou
+  // kompatibilitu; běh pro jinou oblast ji předává z konfigurace (28. 7. 2026
+  // právě tenhle hardcode poslal sedm jizerskohorských kandidátů do Krkonoš).
+  oblast: string = 'krkonose',
 ): Report => {
   const report: Report = { zapsano: [], jizKandidat: [], rucni: [], preskoceno: [], vyrazeno: [] }
   const slugyBehu = new Set<string>()
@@ -421,14 +532,14 @@ export const zapisKandidaty = (
     (a, b) => (a.el.tags?.name ?? '').localeCompare(b.el.tags?.name ?? '', 'cs') || a.el.id - b.el.id,
   )
 
-  for (const { el, zeme, checked } of serazene) {
+  for (const { el, zeme, checked, obcerstveni } of serazene) {
     // Redakčně vyřazené objekty (duplicity, mimo pohoří) se znovu nezakládají.
     const duvodVyrazeni = vyrazene.get(osmUrl(el))
     if (duvodVyrazeni !== undefined) {
       report.vyrazeno.push({ url: osmUrl(el), duvod: duvodVyrazeni })
       continue
     }
-    const vysledek = chataZElementu(el, checked, zeme)
+    const vysledek = chataZElementu(el, checked, zeme, { oblast, obcerstveni })
     if ('duvod' in vysledek) {
       report.preskoceno.push(vysledek)
       continue
@@ -506,7 +617,55 @@ const main = async () => {
     throw new Error('--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.')
   }
 
-  const report = zapisKandidaty(polozky, kandAdr, rucAdr, nactiVyrazene())
+  // ── rozhledny (jen s doloženým občerstvením) ──────────────────────────────
+  // URL chat z hlavního exportu: rozhledna, u které je občerstvením PRÁVĚ
+  // takováto chata, se nezakládá zvlášť — byl by to druhý objekt na témž
+  // místě. Do reportu jde jako dvojice a redakce rozhodne, co je hlavní.
+  const urlChat = new Set(polozky.map((p) => osmUrl(p.el)))
+  const rozhlednyVzate: { nazev: string; url: string; doklad: string }[] = []
+  const rozhlednyUChaty: { nazev: string; url: string; chata: string }[] = []
+  const rozhlednyBezObcerstveni: { nazev: string; url: string }[] = []
+
+  for (const { zeme, iso } of ZEME_DOTAZU) {
+    const soubor = join(kandAdr, `_overpass-rozhledny-${zeme}.json`)
+    let raw: string
+    if (zJsonu) {
+      if (!existsSync(soubor)) {
+        console.log(`--z-jsonu: export rozhleden ${soubor} neexistuje — země ${zeme} se přeskakuje.`)
+        continue
+      }
+      raw = readFileSync(soubor, 'utf8')
+    } else {
+      console.log(`Overpass dotaz ${iso} (rozhledny tower:type=observation + občerstvení do ${OKOLI_OBCERSTVENI_M} m)…`)
+      // Oblast bez jediné rozhledny je legitimní stav, prázdno tu neplaší.
+      const vysledek = await stahniOverpass(instance, overpassDotazRozhledny(iso, okno), { povolitPrazdno: true })
+      raw = vysledek.raw
+      mkdirSync(kandAdr, { recursive: true })
+      writeFileSync(soubor, raw, 'utf8')
+      console.log(`Surový export rozhleden uložen: ${soubor}.`)
+    }
+    const { elementy, checked } = nactiExport(raw)
+    for (const r of parujRozhledny(elementy)) {
+      const nazev = r.el.tags?.name ?? '(bez názvu)'
+      if (!r.obcerstveni.length) {
+        rozhlednyBezObcerstveni.push({ nazev, url: osmUrl(r.el) })
+        continue
+      }
+      const chataVedle = r.obcerstveni.find((o) => o.jeChata && urlChat.has(o.url))
+      if (chataVedle) {
+        rozhlednyUChaty.push({ nazev, url: osmUrl(r.el), chata: `${chataVedle.nazev ?? '(bez názvu)'} (${chataVedle.vzdalenostM} m, ${chataVedle.url})` })
+        continue
+      }
+      polozky.push({ el: r.el, zeme, checked, obcerstveni: r.obcerstveni })
+      rozhlednyVzate.push({
+        nazev,
+        url: osmUrl(r.el),
+        doklad: r.obcerstveni.map((o) => `${o.nazev ?? '(bez názvu)'} — ${o.znacka}, ${o.vzdalenostM} m`).join(' · '),
+      })
+    }
+  }
+
+  const report = zapisKandidaty(polozky, kandAdr, rucAdr, nactiVyrazene(), oblast.slug)
 
   console.log(`\n## DATA-01 report (stav OSM dat: ${stavy.join(', ')})`)
   console.log(`\nNoví kandidáti: ${report.zapsano.length}`)
@@ -526,6 +685,14 @@ const main = async () => {
   for (const p of report.preskoceno) console.log(`- ${p.url} (${p.duvod === 'bez-nazvu' ? 'chybí name' : 'chybí souřadnice'})`)
   console.log(`\nVyřazeno redakcí (data/kandidati/_vyrazeno.yaml — nezakládá se): ${report.vyrazeno.length}`)
   for (const v of report.vyrazeno) console.log(`- ${v.url} — ${v.duvod}`)
+
+  console.log(`\n### Rozhledny (bereme jen s doloženým občerstvením — rozhodnutí Michala 28. 7. 2026)`)
+  console.log(`\nVzaté jako kandidáti: ${rozhlednyVzate.length}`)
+  for (const r of rozhlednyVzate) console.log(`- ${r.nazev} — doklad: ${r.doklad} — ${r.url}`)
+  console.log(`\nU chaty, která už kandidátem je (dvojici posoudí redakce, zvlášť se nezakládá): ${rozhlednyUChaty.length}`)
+  for (const r of rozhlednyUChaty) console.log(`- ${r.nazev} × ${r.chata} — ${r.url}`)
+  console.log(`\nBez doloženého občerstvení (NEBEREME): ${rozhlednyBezObcerstveni.length}`)
+  for (const r of rozhlednyBezObcerstveni) console.log(`- ${r.nazev} — ${r.url}`)
 }
 
 // Spuštěno přímo (tsx) → CLI; import z testů main nespouští.

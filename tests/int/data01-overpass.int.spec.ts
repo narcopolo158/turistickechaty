@@ -12,17 +12,22 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { parse } from 'yaml'
 
 import {
+  OKOLI_OBCERSTVENI_M,
   ZEME_DOTAZU,
   chataZElementu,
+  jeRozhledna,
   nactiExport,
   nactiVyrazene,
   osmUrl,
   overpassDotaz,
+  overpassDotazRozhledny,
+  parujRozhledny,
   porovnejSRucnim,
   stahniOverpass,
   vzdalenostM,
   yamlChaty,
   zapisKandidaty,
+  znackaObcerstveni,
   type ExportPolozka,
   type OsmElement,
 } from '../../scripts/data01-overpass-krkonose'
@@ -54,6 +59,84 @@ describe('overpassDotaz', () => {
       { zeme: 'pl', iso: 'PL' },
     ])
     expect(overpassDotaz('PL')).toContain('area["ISO3166-1"="PL"]')
+  })
+})
+
+/**
+ * Rozhodnutí Michala 28. 7. 2026: rozhledny bereme JEN s občerstvením
+ * (restaurace, bufet) nebo když je jejich součástí chata. Volně přístupná
+ * věž bez občerstvení do průvodce nepatří.
+ */
+describe('rozhledny s občerstvením', () => {
+  const vez = (id: number, tags: Record<string, string> = {}, lat = 50.7, lon = 15.7) =>
+    node(id, { 'tower:type': 'observation', name: `Rozhledna ${id}`, ...tags }, lat, lon)
+  // ~44 m severně (0,0004° zeměpisné šířky) a ~330 m severně.
+  const BLIZKO = 50.7004
+  const DALEKO = 50.703
+
+  it('dotaz vybere rozhledny a k nim občerstvení v okolí — v area státu a okně oblasti', () => {
+    const dotaz = overpassDotazRozhledny('CZ', '50.75,15.05,51.02,15.45')
+    expect(dotaz).toContain('"tower:type"="observation"')
+    expect(dotaz).toContain('->.rozhledny')
+    expect(dotaz).toContain(`around.rozhledny:${OKOLI_OBCERSTVENI_M}`)
+    expect(dotaz).toContain('restaurant|cafe|fast_food|bar|pub|biergarten')
+    expect(dotaz).toContain('alpine_hut|wilderness_hut|hut|chalet')
+    expect(dotaz).toContain('area["ISO3166-1"="CZ"]')
+    expect(dotaz).toContain('50.75,15.05,51.02,15.45')
+  })
+
+  it('pozná rozhlednu a doklad občerstvení z tagů', () => {
+    expect(jeRozhledna(vez(1))).toBe(true)
+    expect(jeRozhledna(node(2, { tourism: 'alpine_hut', name: 'Bouda' }))).toBe(false)
+    expect(znackaObcerstveni(node(3, { amenity: 'fast_food' }))).toEqual({ znacka: 'amenity=fast_food', jeChata: false })
+    expect(znackaObcerstveni(node(4, { tourism: 'alpine_hut' }))).toEqual({ znacka: 'tourism=alpine_hut', jeChata: true })
+    // atrakce u rozhledny občerstvení nedokládá — nesmí ji propašovat dovnitř
+    expect(znackaObcerstveni(node(5, { tourism: 'attraction' }))).toBeNull()
+    expect(znackaObcerstveni(node(6, { amenity: 'toilets' }))).toBeNull()
+  })
+
+  it('spáruje bufet v okolí, vzdálený objekt nebere a řadí od nejbližšího', () => {
+    const [r] = parujRozhledny([
+      vez(10),
+      node(11, { amenity: 'cafe', name: 'Kavárna u věže' }, BLIZKO),
+      node(12, { amenity: 'restaurant', name: 'Restaurace daleko' }, DALEKO),
+      node(13, { amenity: 'fast_food', name: 'Bufet' }, 50.7002),
+    ])
+    expect(r.obcerstveni.map((o) => o.nazev)).toEqual(['Bufet', 'Kavárna u věže'])
+    expect(r.obcerstveni[0].vzdalenostM).toBeLessThan(r.obcerstveni[1].vzdalenostM)
+    expect(r.obcerstveni.every((o) => o.vzdalenostM <= OKOLI_OBCERSTVENI_M)).toBe(true)
+  })
+
+  it('občerstvení zatagované přímo na věži je doklad se vzdáleností 0', () => {
+    const [r] = parujRozhledny([vez(20, { amenity: 'cafe' })])
+    expect(r.obcerstveni).toEqual([
+      { url: osmUrl(vez(20)), nazev: 'Rozhledna 20', znacka: 'amenity=cafe', vzdalenostM: 0, jeChata: false },
+    ])
+  })
+
+  it('rozhledna bez občerstvení má prázdný doklad — tu podle rozhodnutí nebereme', () => {
+    const [r] = parujRozhledny([vez(30), node(31, { amenity: 'restaurant', name: 'Restaurace daleko' }, DALEKO)])
+    expect(r.obcerstveni).toEqual([])
+  })
+
+  it('chata u rozhledny se pozná (dvojici pak posoudí redakce, ať nevznikne dvojí objekt)', () => {
+    const [r] = parujRozhledny([vez(40), node(41, { tourism: 'alpine_hut', name: 'Bouda pod rozhlednou' }, BLIZKO)])
+    expect(r.obcerstveni[0]).toMatchObject({ nazev: 'Bouda pod rozhlednou', jeChata: true })
+  })
+
+  it('kandidát z rozhledny nese doklad občerstvení a typ nechává redakci', () => {
+    const vysledek = chataZElementu(vez(50, { height: '24' }), CHECKED, 'cz', {
+      oblast: 'jizerske-hory',
+      obcerstveni: [{ url: 'https://www.openstreetmap.org/node/51', nazev: 'Bufet', znacka: 'amenity=fast_food', vzdalenostM: 12, jeChata: false }],
+    })
+    expect('duvod' in vysledek).toBe(false)
+    const { data } = vysledek as { data: Record<string, unknown> }
+    expect(data.typ).toBeUndefined() // číselník typů rozhlednu (zatím) nezná
+    expect(data.oblast).toBe('jizerske-hory')
+    const poznamky = data.interniPoznamky as string
+    expect(poznamky).toContain('ROZHLEDNA S OBČERSTVENÍM')
+    expect(poznamky).toContain('Bufet — amenity=fast_food, 12 m')
+    expect(poznamky).toContain('Výška věže dle OSM: 24 m')
   })
 })
 
@@ -256,6 +339,18 @@ describe('zapisKandidaty', () => {
     expect(report.zapsano.map((z) => z.slug)).toEqual(['poctiva-bouda'])
     expect(report.vyrazeno).toEqual([{ url: 'https://www.openstreetmap.org/node/11', duvod: 'duplicita — sloučeno' }])
     expect(readdirSync(kandidati).sort()).toEqual(['poctiva-bouda.yaml']) // duplicitní se nezaložila
+  })
+
+  // Regrese z 28. 7. 2026: oblast byla v transformaci natvrdo „krkonose",
+  // takže první běh pro Jizerské hory založil sedm kandidátů s cizí oblastí
+  // (a hlavičkou, která posílala povyšovat do data/chaty/krkonose/).
+  it('oblast se propisuje do YAML i do hlavičky — nová oblast nedědí Krkonoše', () => {
+    const polozky: ExportPolozka[] = [{ el: node(60, { tourism: 'alpine_hut', name: 'Jizerská bouda' }), zeme: 'cz', checked: CHECKED }]
+    zapisKandidaty(polozky, kandidati, rucni, new Map(), 'jizerske-hory')
+    const soubor = readFileSync(join(kandidati, 'jizerska-bouda.yaml'), 'utf8')
+    expect(parse(soubor).oblast).toBe('jizerske-hory')
+    expect(soubor).toContain('data/chaty/jizerske-hory/')
+    expect(soubor).not.toContain('data/chaty/krkonose/')
   })
 
   it('nactiVyrazene čte seznam z YAML (klíč = OSM URL) a bez souboru vrací prázdnou mapu', () => {

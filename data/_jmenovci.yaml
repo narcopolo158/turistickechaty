@@ -1,0 +1,30 @@
+# Známí jmenovci — kolize názvů, které redakce VIDĚLA a rozhodla o nich.
+#
+# Pravidlo pro rozlišení jmenovců je v `docs/DATA-17-jmenovci.md`: rozlišovačem
+# je `obec`, a nic jiného (R2), a když `obec` chybí, NEVYMÝŠLÍ se — doplní se
+# z pramene a do té doby zůstává rozlišení interní (R6). Tenhle registr je
+# právě ten „do té doby": kontrola `scripts/kontrola/kolize-jmen.ts` zapsanou
+# kolizi hlásí v oddíle Z, ale neshazuje na ní běh. Verdikt tak dál platí pro
+# kolize NOVÉ — a to je celý smysl kontroly (ohlásit okamžik, kdy jmenovec
+# do korpusu přibude), ne trvale červená kontrola, kterou nikdo nečte.
+#
+# Klíčem je MNOŽINA objektů (`oblast/slug`), ne jádro názvu: přibude-li
+# k dvojici třetí jmenovec, kontrola se ozve znovu, protože množina je jiná.
+# Zápis sem není vyřešení kolize — je to doklad, že se o ní ví a na co se čeká.
+
+jmenovci:
+  - jadro: hubertka
+    objekty:
+      - jizerske-hory/hubertka
+      - krkonose/chata-hubertka
+    duvod: >-
+      Dva různé objekty asi 40 km od sebe: „Hubertka" v Jizerských horách
+      (OSM way/51573239) a „Chata Hubertka" v Krkonoších (OSM node/12590285723).
+      Oba jsou zatím jen kandidáti, na webu nestojí ani jeden, takže čtenáře
+      dnes zaměnit nemůžou. Rozlišovačem má být `obec` (DATA-17 R2), ta ale
+      u ani jednoho není doložená — dle R6 se nevymýšlí a doplní se z pramene
+      (DATA-03 křížové ověření, u krkonošské i DATA-04 telefonát; její web
+      z OSM byl 20. 7. 2026 nedostupný). Rozlišení tedy zůstává interní
+      a slug s příponou obce se přidělí až s doloženou obcí (R5).
+    rozhodl: Claude (návrh z 28. 7. 2026) — čeká na potvrzení Michalem
+    checked: 2026-07-28

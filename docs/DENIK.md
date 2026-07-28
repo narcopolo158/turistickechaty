@@ -490,7 +490,52 @@ testem (funkce jsou modulové, neexportované) — a to, co ověřit nešlo (ost
 výškopis z Mapy.com, trasy a vrcholy z Overpassu), doplní až běh v Actions.
 **Čeká na Michala:** spustit DATA-28 pro `jizerske-hory` znovu.
 
-**Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
+**Dodatek 21 (týž den, zadání Michala): ROZHLEDNY S OBČERSTVENÍM se sbírají,
+samotné věže ne.** Zadání doslova: „v Jizerkách je hodně rozhleden, většina jich
+má občerstvení nebo restauraci nebo je její součástí chata — všechny takové bych
+určitě zahrnul; kdybys takové našel i v Krkonoších, zpětně je přidej (napadá mě
+rozhledna Žalý). Samotné rozhledny (volně přístupné bez občerstvení) nebereme."
+**Jak je to udělané:** DATA-01 má druhý dotaz — rozhledny (`tower:type=observation`,
+společný jmenovatel obou obvyklých zápisů) a k nim objekty s občerstvením do
+100 m (`around`), protože bufet u rozhledny se v OSM skoro nikdy netagguje na
+věži samotné. Párování a rozhodnutí „bereme / nebereme" dělá skript nad
+odpovědí, ne dotaz — v surovém exportu tak zůstane i to, co jsme NEvzali.
+Kandidátem se stane jen rozhledna s **doloženým** občerstvením a doklad
+(objekt, tag, vzdálenost) jde do `interniPoznamky`, ať je co ověřovat. Když je
+tím občerstvením chata, která už kandidátem je, rozhledna se zvlášť nezakládá —
+byl by to druhý objekt na témž místě, dvojici posoudí redakce. Report má tři
+oddíly: vzaté / u chaty / bez občerstvení (nebereme). `typ` rozhledna
+nedostává: číselník typů (obsluhovana, utulna, bivak, horsky-hotel) rozhlednu
+nezná a vymýšlet hodnotu do taxonomie z plánu kap. 5 nebudu — **otázka níž**.
+**Nález při té práci:** transformace měla oblast natvrdo `krkonose`, takže
+sedmi jizerskohorským kandidátům z dnešního běhu seděla cizí oblast a hlavička
+je posílala povyšovat do `data/chaty/krkonose/`. Opraveno u zdroje (oblast se
+propisuje z konfigurace) i v datech (10 souborů) a přibyl regresní test.
+**A kontrola udělala přesně to, kvůli čemu vznikla:** `kolize-jmen` zahlásila,
+že jizerská **Hubertka** má jmenovce v krkonošské **Chatě Hubertce** — dva
+různé objekty ~40 km od sebe, oba zatím kandidáti. Tím se ale ukázalo, že
+pravidlu DATA-17 chybí místo pro stav, který samo předepisuje: dle R6 se
+u objektů bez doložené `obec` rozlišovač nevymýšlí a čeká se na pramen — jenže
+kontrola je verdikt, takže by po celou tu dobu svítila červeně, a trvale
+červená kontrola je k nerozeznání od rozbité. Proto **`data/_jmenovci.yaml`**:
+rozhodnutá kolize se hlásí v oddílu Z i s důvodem, ale běh neshazuje; verdikt
+dál platí pro kolize nové a klíčem je množina objektů, takže třetí jmenovec
+kontrolu probudí znovu. Snímek fixtury přegenerován (přibyl oddíl Z), popsáno
+v `docs/DATA-17-jmenovci.md` §5 a v README kontrol. Testy data01 32/32 (+8),
+`npm run kontrola` zelené, tsc i lint čisté.
+**Čeká na Michala:** spustit DATA-01 **dvakrát** — pro `jizerske-hory`
+(dober rozhledny) a pro `krkonose` (zpětné dobrání, mj. Žalý). Běh je
+idempotentní, chaty se znovu nezakládají.
+
+**Otázky pro Michala:** (0) **Jaký `typ` mají dostat rozhledny s občerstvením?**
+Číselník z plánu kap. 5 zná obsluhovaná / útulna / bivak / horský hotel —
+přidat pátou hodnotu `rozhledna`, nebo je vést jako obsluhované s poznámkou?
+Do rozhodnutí zůstává `typ` u těchhle kandidátů prázdný. (0b) Potvrdíš registr
+známých jmenovců (`data/_jmenovci.yaml`) jako mechanismus a zápis o Hubertkách?
+Do potvrzení je zápis podepsaný jako návrh. (0c) Kdyby rozhledna Žalý v OSM
+občerstvení u sebe zatagované neměla, skript ji nevezme — dej vědět a udělám
+pro takové případy potvrzovací seznam jako u razítek.
+(1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh
 se mnou? Bez potvrzení se nic nestahuje. (2) Pozor na dva podezřelé:

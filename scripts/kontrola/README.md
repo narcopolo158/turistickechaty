@@ -218,6 +218,17 @@ kontrola přestala fungovat úplně. Že chytí i skutečnou škodu, se ověřil
 měřením na původním souboru: `git show eb7fd57:.github/workflows/data01-overpass.yml`
 → `[A] ř. 21 Map keys must be unique` — přesně ten řádek, na kterém to prasklo.
 
+**Registr známých jmenovců (`data/_jmenovci.yaml`) — přibyl 28. 7. 2026.** Když
+první export Jizerských hor přinesl „Hubertku" k už evidované krkonošské „Chatě
+Hubertce", kontrola zafungovala přesně jak měla — a rovnou ukázala, co jí
+chybělo: DATA-17 pravidlo R6 říká, že když `obec` není doložená, rozlišovač se
+**nevymýšlí** a čeká se na pramen. Bez registru by kontrola musela zůstat
+červená po celou tu dobu, což je stav, ve kterém verdikt přestane kdokoli číst.
+Zapsaná kolize se proto hlásí v oddílu **Z** i s důvodem, ale běh neshazuje;
+verdikt dál platí pro kolize **nové**. Klíčem je **množina objektů**, ne jádro
+názvu — přibude-li k dvojici třetí jmenovec, kontrola se ozve znovu. Zápis do
+registru tedy není vyřešení kolize, ale doklad, že se o ní ví a na co se čeká.
+
 ## Proč je `kolize-jmen.ts` jediná ze seznamových kontrol, která rozhoduje
 
 `ban-scan` a `audit-mech` vracejí seznam k posouzení a jejich **ustálený stav je

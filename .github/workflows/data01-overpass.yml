@@ -76,7 +76,7 @@ jobs:
             exit 0
           fi
           pocet=$(git diff --cached --name-only --diff-filter=A -- 'data/kandidati/**/*.yaml' | wc -l)
-          git commit -m "data: OSM Overpass export chat (${OBLAST}) — kandidáti (+${pocet} nových, z Actions)" \
-            -m 'Zdroj: OpenStreetMap (ODbL), tourism=alpine_hut/wilderness_hut/hut, vše verified: false. Kandidáti nejsou na webu — do data/chaty/ povyšovat po křížovém ověření (DATA-03).'
+          git commit -m "data: OSM Overpass export chat a rozhleden s občerstvením (${OBLAST}) — kandidáti (+${pocet} nových, z Actions)" \
+            -m 'Zdroj: OpenStreetMap (ODbL), tourism=alpine_hut/wilderness_hut/hut + tower:type=observation s doloženým občerstvením do 100 m, vše verified: false. Kandidáti nejsou na webu — do data/chaty/ povyšovat po křížovém ověření (DATA-03).'
           git pull --rebase origin main
           git push origin main

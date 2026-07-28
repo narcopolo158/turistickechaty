@@ -39,8 +39,9 @@
  *
  *   npx tsx scripts/kontrola/kolize-jmen.ts [soubor.yaml …]
  */
+import { existsSync } from 'node:fs'
 import { basename, dirname } from 'node:path'
-import { najdiYaml, nactiYaml } from './lib'
+import { najdiYaml, nactiYaml, seznamMap } from './lib'
 
 // POZOR: v tomhle souboru se nesmí objevit `\b` ani `\w` — viz komentář v lib.ts.
 // Konstanty WB0/WB1 tu ale nejsou potřeba: `norm()` sráží název na holé ASCII
@@ -143,8 +144,30 @@ for (const z of zaznamy) {
   else hromadky.set(j, [z])
 }
 
+/**
+ * Známí jmenovci (`data/_jmenovci.yaml`): kolize, které redakce VIDĚLA
+ * a rozhodla o nich. Bez tohohle registru by kontrola musela zůstat červená
+ * po celou dobu, kdy se čeká na `obec` z pramene — a to je přesně stav,
+ * ve kterém verdikt přestane kdokoli číst (DATA-17, pravidlo R6: rozlišovač
+ * se nevymýšlí, doplní se z pramene). Klíčem je MNOŽINA objektů, ne jádro
+ * názvu: přibude-li k dvojici třetí jmenovec, kontrola se ozve znovu.
+ */
+const ZNAME_SOUBOR = 'data/_jmenovci.yaml'
+const klicMnoziny = (kdo: string[]): string => [...kdo].sort().join(' + ')
+
+const zname = new Map<string, string>()
+{
+  const d = existsSync(ZNAME_SOUBOR) ? nactiYaml(ZNAME_SOUBOR) : {}
+  for (const z of seznamMap(d.jmenovci)) {
+    const objekty = Array.isArray(z.objekty) ? z.objekty.filter((o): o is string => typeof o === 'string') : []
+    if (objekty.length < 2) continue
+    zname.set(klicMnoziny(objekty), typeof z.duvod === 'string' ? z.duvod.trim().replace(/\s+/gu, ' ') : 'bez udaneho duvodu')
+  }
+}
+
 const A: string[] = []
 const B: string[] = []
+const Z: string[] = []
 const objekty = new Set(zaznamy.map((z) => z.kdo))
 
 for (const [j, skupina] of [...hromadky].sort(([a], [b]) => (a < b ? -1 : 1))) {
@@ -163,6 +186,13 @@ for (const [j, skupina] of [...hromadky].sort(([a], [b]) => (a < b ? -1 : 1))) {
   }
   const zaznam = radky.join('\n')
 
+  // Rozhodnutá kolize se hlásí, ale neshazuje běh — verdikt platí pro nové.
+  const duvod = zname.get(klicMnoziny(kdo))
+  if (duvod !== undefined) {
+    Z.push(`${zaznam}\n     ROZHODNUTO: ${duvod}`)
+    continue
+  }
+
   // Shodný i celý název => tvrdá kolize; jinak se objekty liší typovým slovem.
   const jmena = new Set(skupina.map((z) => norm(z.nazev)))
   if (jmena.size === 1) A.push(zaznam)
@@ -176,12 +206,13 @@ function vypis(nalezy: string[], nadpis: string) {
 
 vypis(A, 'A: shodny cely nazev')
 vypis(B, 'B: shodne jadro nazvu, cely nazev se lisi typovym slovem')
+vypis(Z, `Z: znami jmenovci (${ZNAME_SOUBOR}) — rozhodnuti redakce, neshazuji beh`)
 
 console.log()
 console.log(
   `souboru: ${cesty.length} | profilu s nazvem: ${zaznamy.length} | ` +
     `objektu: ${objekty.size} | kolizi: ${A.length + B.length} ` +
-    `(A ${A.length} · B ${B.length})`,
+    `(A ${A.length} · B ${B.length}) | znamych: ${Z.length}`,
 )
 
 process.exit(A.length + B.length ? 1 : 0)

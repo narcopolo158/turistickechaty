@@ -235,3 +235,26 @@ Kontrola **nehlídá** dodržení pravidla samotného: že perex nese obec (R3),
 rozlišovací věta má pramen (R4) ani že slug dostal příponu (R5). To je redakční
 práce spuštěná tím, že kontrola zahlásí. Nechat to tak je vědomé rozhodnutí —
 strojově vynutitelná část je „všimni si", ne „naformuluj".
+
+## 5. Dodatek 28. 7. 2026 — registr známých jmenovců (návrh k potvrzení)
+
+Předpověď z oddílu 1 vyšla dřív, než se čekalo: první export Jizerských hor
+přinesl **„Hubertku"** (OSM way/51573239) k už evidované krkonošské **„Chatě
+Hubertce"** (node/12590285723) — jádro `hubertka`, oddíl B, dva různé objekty
+asi 40 km od sebe. Stroj to ohlásil, čtenář ne. Potud vše podle plánu.
+
+Ukázalo se ale, že pravidlu chybí místo pro stav, který samo předepisuje:
+podle **R6** se u objektů bez doložené `obec` rozlišovač nevymýšlí a čeká se na
+pramen — jenže kontrola je verdikt, takže by po celou tu dobu svítila červeně.
+A trvale červená kontrola je k nerozeznání od rozbité.
+
+Proto vznikl **`data/_jmenovci.yaml`**: kolize, o které redakce ví a rozhodla
+o ní, se hlásí ve zvláštním oddílu **Z** i s důvodem, ale běh neshazuje.
+Verdikt tím neztrácí smysl — dál platí pro kolize **nové**, a protože klíčem je
+množina objektů (`oblast/slug`), ozve se kontrola znovu, jakmile ke dvojici
+přibude třetí jmenovec. Zápis do registru **není vyřešení kolize**, jen doklad,
+že se o ní ví a na co se čeká; u Hubertek se čeká na `obec` z pramene
+(DATA-03, u krkonošské i DATA-04 — její web z OSM byl 20. 7. 2026 nedostupný).
+
+Mechanismus je **návrh** — dokud ho Michal nepotvrdí, je zápis v registru
+podepsaný jako návrh, ne jako redakční rozhodnutí.
