@@ -1,15 +1,11 @@
 # DATA-31 — dohledávka souřadnic (Krkonoše)
 
-Profilů bez GPS: **12** · s nálezem v OSM: **11** · bez nálezu: **1**
+Profilů bez GPS: **4** · s nálezem v OSM: **3** · bez nálezu: **1**
 
 Nálezy jsou NÁVRHY, ne fakta: shoda jména identitu neprokazuje (27. 7. 2026
 seděla Lovecká chata na mapě 10 km vedle kvůli záměně OSM entit). Než se
 souřadnice zapíšou do profilu, potvrdí je redakce — pomůckou je obec:
 když se `addr:city` z OSM rozchází s `obec` v profilu, je to jiný objekt.
-
-## Chata Pod Studničnou — obec v profilu: Pec pod Sněžkou
-- **přesná shoda** „Chata pod Studničnou" — 50.7090155, 15.7259695 · obec v OSM chybí
-  - tourism=chalet, website=http://www.podstudnicnou.cz/ — https://www.openstreetmap.org/node/1269086646
 
 ## Chata Rezek — obec v profilu: Vítkovice
 - **částečná shoda** „[Z] Rezek - Pod Dvoračkami" — 50.7223949, 15.4919557 · obec v OSM chybí
@@ -63,34 +59,6 @@ když se `addr:city` z OSM rozchází s `obec` v profilu, je to jiný objekt.
 - **částečná shoda** „Rozhledna Žalý" — 50.6581957, 15.5723726 · obec v OSM chybí
   - tourism=attraction, building=tower, website=http://www.zaly.cz/ — https://www.openstreetmap.org/way/415701652
 
-## Erlebachova bouda — obec v profilu: Špindlerův Mlýn
-- **přesná shoda** „Erlebachova bouda" — 50.7589321, 15.633979 · obec v OSM chybí
-  - tourism=hotel, building=hotel, amenity=restaurant, website=https://www.erlebachovabouda.cz/ — https://www.openstreetmap.org/way/31128152
-- **přesná shoda** „Erlebachova bouda" — 50.7577864, 15.6317577 · obec v OSM chybí
-  - bez zajímavých tagů — https://www.openstreetmap.org/way/74863462
-- **přesná shoda** „Erlebachova bouda" — 50.7577787, 15.6319303 · obec v OSM chybí
-  - bez zajímavých tagů — https://www.openstreetmap.org/way/1011094086
-
-## Kolínská bouda — obec v profilu: Pec pod Sněžkou
-- **přesná shoda** „Kolínská bouda" — 50.6700963, 15.7373037 · obec v OSM chybí
-  - tourism=information, operator=cz:KČT — https://www.openstreetmap.org/node/462698512
-- **přesná shoda** „Kolínská bouda" — 50.670181, 15.7375702 · obec v OSM chybí
-  - amenity=restaurant — https://www.openstreetmap.org/node/650918422
-- **přesná shoda** „Kolínská bouda" — 50.6702745, 15.7375509 · obec v OSM chybí
-  - tourism=hotel, building=yes — https://www.openstreetmap.org/way/31360798
-- **přesná shoda** „Kolínská bouda" — 50.6704273, 15.7365712 · obec v OSM chybí
-  - bez zajímavých tagů — https://www.openstreetmap.org/way/1280339937
-
-## Lysečinská bouda — obec v profilu: Horní Maršov
-- **přesná shoda** „Lysečinská bouda" — 50.7127375, 15.834395 · obec v OSM chybí
-  - amenity=restaurant — https://www.openstreetmap.org/node/656464518
-- **přesná shoda** „Lysečinská bouda" — 50.7128705, 15.835331 · obec v OSM chybí
-  - tourism=information, ele=958, operator=cz:KČT — https://www.openstreetmap.org/node/2452724167
-- **přesná shoda** „Lysečinská bouda" — 50.7127501, 15.8343288 · obec v OSM chybí
-  - tourism=guest_house, building=yes, website=http://www.horsky-hotel-lysecinska-bouda-horni-marsov.rs-ubytovani.net — https://www.openstreetmap.org/way/137029464
-- **částečná shoda** „[M] Horní Maršov - Lysečinská bouda" — 50.6866201, 15.8270995 · obec v OSM chybí
-  - operator=cz:KČT — https://www.openstreetmap.org/relation/3199393
-
 ## Petrova bouda — obec v profilu: Špindlerův Mlýn
 - **částečná shoda** „[M] Pod Smělcem - Petrova bouda" — 50.7729139, 15.5937709 · obec v OSM chybí
   - operator=cz:KČT — https://www.openstreetmap.org/relation/341098
@@ -104,44 +72,6 @@ když se `addr:city` z OSM rozchází s `obec` v profilu, je to jiný objekt.
   - operator=cz:KČT — https://www.openstreetmap.org/relation/3281717
 - **částečná shoda** „Krkonoše bez barier: Špindlerovka - Petrova bouda" — 50.7664823, 15.6228543 · obec v OSM chybí
   - operator=cz:KČT — https://www.openstreetmap.org/relation/3281717
-
-## Pomezní bouda — obec v profilu: Malá Úpa
-- **přesná shoda** „Pomezní bouda" — 50.746064, 15.8221046 · obec v OSM chybí
-  - amenity=restaurant — https://www.openstreetmap.org/node/292592404
-- **přesná shoda** „Pomezní bouda" — 50.7460809, 15.8220807 · obec v OSM chybí
-  - tourism=hotel, building=yes, website=https://www.pomezni-bouda.cz/ — https://www.openstreetmap.org/way/96093567
-
-## Portášky — obec v profilu: Pec pod Sněžkou
-- **částečná shoda** „Horská chata Portášky" — 50.7020225, 15.7688638 · obec v OSM chybí
-  - amenity=restaurant, ele=1050, website=http://www.portasky.cz/ — https://www.openstreetmap.org/node/656462446
-- **částečná shoda** „Horská chata Portášky" — 50.7021122, 15.7691267 · obec OSM: Pec pod Sněžkou - Velká Úpa ⚠ obec nesedí
-  - amenity=charging_station, addr:city=Pec pod Sněžkou - Velká Úpa, operator=JURIKOL, website=https://powerbox.one/place/horska-chata-portasky/ — https://www.openstreetmap.org/node/12124631358
-- **částečná shoda** „Lanová dráha Portášky" — 50.6966901, 15.7691247 · obec v OSM chybí
-  - bez zajímavých tagů — https://www.openstreetmap.org/way/45588542
-- **částečná shoda** „Lanová dráha Portášky" — 50.6901497, 15.7682017 · obec v OSM chybí
-  - building=residential — https://www.openstreetmap.org/way/204127549
-
-## Pražská bouda — obec v profilu: Černý Důl
-- **přesná shoda** „Pražská bouda" — 50.6706195, 15.7303989 · obec v OSM chybí
-  - amenity=restaurant — https://www.openstreetmap.org/node/5488661844
-- **přesná shoda** „Pražská bouda" — 50.6707087, 15.7302361 · obec v OSM chybí
-  - tourism=hotel, building=yes — https://www.openstreetmap.org/way/19923488
-- **částečná shoda** „Lučiny - Pražská bouda" — 50.670614, 15.7306264 · obec v OSM chybí
-  - tourism=information, ele=1125, operator=cz:KČT — https://www.openstreetmap.org/node/462698532
-- **částečná shoda** „Lučiny Pražská bouda" — 50.6707738, 15.7306477 · obec v OSM chybí
-  - tourism=information, operator=cz:KČT — https://www.openstreetmap.org/node/2449506225
-
-## Rýchorská bouda — obec v profilu: Žacléř
-- **přesná shoda** „Rýchorská bouda" — 50.6602093, 15.849989 · obec v OSM chybí
-  - amenity=fast_food — https://www.openstreetmap.org/node/1944336845
-- **přesná shoda** „Rýchorská bouda" — 50.6598196, 15.8505642 · obec v OSM chybí
-  - tourism=information, ele=990, operator=cz:KČT — https://www.openstreetmap.org/node/2431290110
-- **přesná shoda** „Rýchorská bouda" — 50.6601882, 15.8499576 · obec v OSM chybí
-  - tourism=information — https://www.openstreetmap.org/node/12771004856
-- **přesná shoda** „Rýchorská bouda" — 50.6602261, 15.8498815 · obec v OSM chybí
-  - building=yes — https://www.openstreetmap.org/way/239899454
-- **částečná shoda** „Restaurace Rýchorská bouda" — 50.6603634, 15.8501138 · obec OSM: Žacléř
-  - amenity=charging_station, addr:city=Žacléř, operator=Bekot z.s., website=https://powerbox.one/place/restaurace-rychorska-bouda/ — https://www.openstreetmap.org/node/12126173699
 
 ## Bez nálezu v OSM
 

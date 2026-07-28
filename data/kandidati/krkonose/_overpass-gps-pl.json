@@ -9,6 +9,58 @@
   "elements": [
 
 {
+  "type": "node",
+  "id": 8951363503,
+  "lat": 50.7483093,
+  "lon": 15.7436908,
+  "tags": {
+    "board_type": "nature",
+    "check_date": "2025-08-04",
+    "information": "board",
+    "name": "Stanowisko monitoringu porostów Schronisko Nad Łomniczką",
+    "tourism": "information"
+  }
+},
+{
+  "type": "way",
+  "id": 405165026,
+  "center": {
+    "lat": 50.7481762,
+    "lon": 15.7437389
+  },
+  "nodes": [
+    4073853964,
+    4073853965,
+    4073853967,
+    4073853969,
+    4073853968,
+    4073853972,
+    4073853960,
+    4073853959,
+    4073853951,
+    4073853950,
+    4073853958,
+    4073853952,
+    4073853955,
+    4073853949,
+    4073853954,
+    4073853957,
+    4073853964
+  ],
+  "tags": {
+    "alt_name": "Nad Małą Łomniczką",
+    "building": "yes",
+    "construction:tourism": "alpine_hut",
+    "ele": "1002",
+    "name": "Nad Łomniczką",
+    "note:pl": "schronisko w remoncie",
+    "old_name:de": "Melzergrundbaude",
+    "operator": "PTTK",
+    "wikidata": "Q9334375",
+    "wikipedia": "pl:Schronisko PTTK „Nad Łomniczką”"
+  }
+},
+{
   "type": "relation",
   "id": 3281717,
   "center": {
@@ -96,6 +148,170 @@
     "operator": "cz:KČT",
     "osmc:symbol": "red:white:red_wheelchair",
     "route": "wheelchair",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5663111,
+  "center": {
+    "lat": 50.7656516,
+    "lon": 15.7533264
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 1041636454,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1041636455,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984257265,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 822120785,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1041636457,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 201271861,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 701664057,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 701698812,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 8436535,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 633687519,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 4614891,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 633687518,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1280900099,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 609763672,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 235960250,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 235960249,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 300745982,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 365757466,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 174688975,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 174687105,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 174687104,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 365822437,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 326280954,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984918874,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 380268164,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 380268168,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 380268133,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 230155553,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1096222065,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "yellow",
+    "name": "Karpacz PKP - Schronisko PTTK nad Łomniczką",
+    "network": "rwn",
+    "operator": "PTTK Jelenia Góra",
+    "osmc:symbol": "yellow:white:yellow_bar",
+    "route": "hiking",
     "type": "route"
   }
 }
