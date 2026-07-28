@@ -1,10 +1,27 @@
 {
   "zdroj": "razitkuj.cz",
   "svolil": "Robert Šindler (KiBob), razitkuj.cz — 21. 7. 2026",
-  "stazeno": "2026-07-21",
-  "pocetChat": 16,
-  "pocetOtisku": 46,
+  "stazeno": "2026-07-28",
+  "pocetChat": 45,
+  "pocetOtisku": 110,
   "chaty": [
+    {
+      "slug": "barborka",
+      "nazev": "Barborka",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-barborka/1",
+      "otisky": [
+        {
+          "id": 52,
+          "soubor": "barborka/52.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/52_barborka.gif"
+        },
+        {
+          "id": 6979,
+          "soubor": "barborka/6979.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/6979_barborka.gif"
+        }
+      ]
+    },
     {
       "slug": "bouda-bile-labe",
       "nazev": "Bouda Bílé Labe",
@@ -14,6 +31,76 @@
           "id": 5469,
           "soubor": "bouda-bile-labe/5469.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/5469_bouda-bile-labe.gif"
+        }
+      ]
+    },
+    {
+      "slug": "bouda-na-lucinach",
+      "nazev": "Bouda Na Lučinách",
+      "zdrojUrl": "http://www.razitkuj.cz/10131_bouda-na-lucinach",
+      "otisky": [
+        {
+          "id": 10131,
+          "soubor": "bouda-na-lucinach/10131.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10131_bouda-na-lucinach.gif"
+        }
+      ]
+    },
+    {
+      "slug": "chata-na-plani",
+      "nazev": "Bouda Na Pláni",
+      "zdrojUrl": "http://www.razitkuj.cz/2556_bouda-na-plani",
+      "otisky": [
+        {
+          "id": 2556,
+          "soubor": "chata-na-plani/2556.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/2556_bouda-na-plani.gif"
+        }
+      ]
+    },
+    {
+      "slug": "bouda-ruzohorky",
+      "nazev": "Bouda Růžohorky",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-ruzohorky/1",
+      "otisky": [
+        {
+          "id": 111,
+          "soubor": "bouda-ruzohorky/111.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/111_ruzohorky.gif"
+        },
+        {
+          "id": 3911,
+          "soubor": "bouda-ruzohorky/3911.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3911_ruzohorky.gif"
+        }
+      ]
+    },
+    {
+      "slug": "bouda-slovanka",
+      "nazev": "Bouda Slovanka",
+      "zdrojUrl": "http://www.razitkuj.cz/9794_bouda-slovanka",
+      "otisky": [
+        {
+          "id": 9794,
+          "soubor": "bouda-slovanka/9794.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9794_bouda-slovanka.gif"
+        }
+      ]
+    },
+    {
+      "slug": "bradlerovy-boudy",
+      "nazev": "Brádlerovy boudy",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-bradlerovy-boudy/1",
+      "otisky": [
+        {
+          "id": 9101,
+          "soubor": "bradlerovy-boudy/9101.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9101_bradlerovy-boudy.gif"
+        },
+        {
+          "id": 9787,
+          "soubor": "bradlerovy-boudy/9787.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9787_bradlerovy-boudy.gif"
         }
       ]
     },
@@ -31,6 +118,28 @@
           "id": 5940,
           "soubor": "dom-slaski/5940.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/5940_dom-slaski.gif"
+        }
+      ]
+    },
+    {
+      "slug": "erlebachova-bouda",
+      "nazev": "Erlebachova bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-erlebachova-bouda/1",
+      "otisky": [
+        {
+          "id": 9102,
+          "soubor": "erlebachova-bouda/9102.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9102_erlebachova-bouda.gif"
+        },
+        {
+          "id": 9105,
+          "soubor": "erlebachova-bouda/9105.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9105_erlebachova-bouda.gif"
+        },
+        {
+          "id": 9786,
+          "soubor": "erlebachova-bouda/9786.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9786_erlebachova-bouda.gif"
         }
       ]
     },
@@ -53,6 +162,40 @@
           "id": 10361,
           "soubor": "hotel-spindlerova-bouda/10361.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/10361_spindlerova-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "husova-bouda",
+      "nazev": "Husova bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/10140_husova-bouda",
+      "otisky": [
+        {
+          "id": 10140,
+          "soubor": "husova-bouda/10140.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10140_husova-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "chalupa-na-rozcesti",
+      "nazev": "Chalupa Na Rozcestí",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-chalupa-na-rozcesti/1",
+      "otisky": [
+        {
+          "id": 3871,
+          "soubor": "chalupa-na-rozcesti/3871.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3871_chalupa-na-rozcesti.gif"
+        },
+        {
+          "id": 3872,
+          "soubor": "chalupa-na-rozcesti/3872.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3872_chalupa-na-rozcesti.gif"
+        },
+        {
+          "id": 10359,
+          "soubor": "chalupa-na-rozcesti/10359.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10359_chalupa-na-rozcesti.gif"
         }
       ]
     },
@@ -85,6 +228,98 @@
           "id": 9005,
           "soubor": "chata-dvoracky/9005.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/9005_dvoracky.gif"
+        }
+      ]
+    },
+    {
+      "slug": "chata-jeleni-louky",
+      "nazev": "Chata Jelení Louky",
+      "zdrojUrl": "http://www.razitkuj.cz/10132_jeleni-louky",
+      "otisky": [
+        {
+          "id": 10132,
+          "soubor": "chata-jeleni-louky/10132.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10132_jeleni-louky.gif"
+        }
+      ]
+    },
+    {
+      "slug": "chata-pod-studnicnou",
+      "nazev": "Chata Pod Studničnou",
+      "zdrojUrl": "http://www.razitkuj.cz/9792_chata-pod-studnicnou",
+      "otisky": [
+        {
+          "id": 9792,
+          "soubor": "chata-pod-studnicnou/9792.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9792_chata-pod-studnicnou.gif"
+        }
+      ]
+    },
+    {
+      "slug": "sedmidoli",
+      "nazev": "Chata Sedmidolí",
+      "zdrojUrl": "http://www.razitkuj.cz/9097_horska-chata-sedmidoli",
+      "otisky": [
+        {
+          "id": 9097,
+          "soubor": "sedmidoli/9097.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9097_horska-chata-sedmidoli.gif"
+        }
+      ]
+    },
+    {
+      "slug": "chata-studenov",
+      "nazev": "Chata Studenov",
+      "zdrojUrl": "http://www.razitkuj.cz/6098_chata-studenov",
+      "otisky": [
+        {
+          "id": 6098,
+          "soubor": "chata-studenov/6098.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/6098_chata-studenov.gif"
+        }
+      ]
+    },
+    {
+      "slug": "jelenka",
+      "nazev": "Jelenka",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-horska-bouda-jelenka/1",
+      "otisky": [
+        {
+          "id": 1244,
+          "soubor": "jelenka/1244.png",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1244_horska-bouda-jelenka.png"
+        },
+        {
+          "id": 1321,
+          "soubor": "jelenka/1321.png",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1321_horska-bouda-jelenka.png"
+        },
+        {
+          "id": 4638,
+          "soubor": "jelenka/4638.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/4638_horska-bouda-jelenka.gif"
+        }
+      ]
+    },
+    {
+      "slug": "kolinska-bouda",
+      "nazev": "Kolínská bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-kolinska-bouda/1",
+      "otisky": [
+        {
+          "id": 1352,
+          "soubor": "kolinska-bouda/1352.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1352_kolinska-bouda.gif"
+        },
+        {
+          "id": 4928,
+          "soubor": "kolinska-bouda/4928.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/4928_kolinska-bouda.gif"
+        },
+        {
+          "id": 4929,
+          "soubor": "kolinska-bouda/4929.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/4929_kolinska-bouda.gif"
         }
       ]
     },
@@ -175,6 +410,233 @@
       ]
     },
     {
+      "slug": "lysecinska-bouda",
+      "nazev": "Lysečinská bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/113_lysecinska-bouda",
+      "otisky": [
+        {
+          "id": 113,
+          "soubor": "lysecinska-bouda/113.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/113_lysecinska-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "lyzarska-bouda",
+      "nazev": "Lyžařská bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-lyzarska-bouda/1",
+      "otisky": [
+        {
+          "id": 5574,
+          "soubor": "lyzarska-bouda/5574.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5574_lyzarska-bouda.gif"
+        },
+        {
+          "id": 9603,
+          "soubor": "lyzarska-bouda/9603.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9603_lyzarska-bouda.gif"
+        },
+        {
+          "id": 9604,
+          "soubor": "lyzarska-bouda/9604.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9604_lyzarska-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "martinova-bouda",
+      "nazev": "Martinova bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-martinova-bouda/1",
+      "otisky": [
+        {
+          "id": 5326,
+          "soubor": "martinova-bouda/5326.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5326_martinova-bouda.gif"
+        },
+        {
+          "id": 9602,
+          "soubor": "martinova-bouda/9602.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9602_martinova-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "medvedi-bouda",
+      "nazev": "Medvědí bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-medvedi-bouda/1",
+      "otisky": [
+        {
+          "id": 5321,
+          "soubor": "medvedi-bouda/5321.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5321_medvedi-bouda.gif"
+        },
+        {
+          "id": 9093,
+          "soubor": "medvedi-bouda/9093.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9093_medvedi-bouda.gif"
+        },
+        {
+          "id": 9601,
+          "soubor": "medvedi-bouda/9601.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9601_medvedi-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "moravska-bouda",
+      "nazev": "Moravská bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/9744_moravska-bouda",
+      "otisky": [
+        {
+          "id": 9744,
+          "soubor": "moravska-bouda/9744.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9744_moravska-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "petrova-bouda",
+      "nazev": "Petrova bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/9743_petrova-bouda",
+      "otisky": [
+        {
+          "id": 9743,
+          "soubor": "petrova-bouda/9743.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9743_petrova-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "pomezni-bouda",
+      "nazev": "Pomezní bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-pomezni-bouda/1",
+      "otisky": [
+        {
+          "id": 3922,
+          "soubor": "pomezni-bouda/3922.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3922_pomezni-bouda.gif"
+        },
+        {
+          "id": 3923,
+          "soubor": "pomezni-bouda/3923.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3923_pomezni-bouda.gif"
+        },
+        {
+          "id": 4637,
+          "soubor": "pomezni-bouda/4637.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/4637_pomezni-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "portasky",
+      "nazev": "Portášky",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-portasky/1",
+      "otisky": [
+        {
+          "id": 112,
+          "soubor": "portasky/112.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/112_portasky.gif"
+        },
+        {
+          "id": 3909,
+          "soubor": "portasky/3909.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3909_portasky.gif"
+        },
+        {
+          "id": 3976,
+          "soubor": "portasky/3976.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3976_portasky.gif"
+        }
+      ]
+    },
+    {
+      "slug": "prazska-bouda",
+      "nazev": "Pražská bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-prazska-bouda/1",
+      "otisky": [
+        {
+          "id": 9814,
+          "soubor": "prazska-bouda/9814.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9814_prazska-bouda.gif"
+        },
+        {
+          "id": 10006,
+          "soubor": "prazska-bouda/10006.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10006_prazska-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "richtrovy-boudy",
+      "nazev": "Richtrovy boudy",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-richtrovy-boudy/1",
+      "otisky": [
+        {
+          "id": 8679,
+          "soubor": "richtrovy-boudy/8679.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/8679_richtrovy-boudy-krkonose.gif"
+        },
+        {
+          "id": 8680,
+          "soubor": "richtrovy-boudy/8680.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/8680_richtrovy-boudy-krkonose.gif"
+        },
+        {
+          "id": 10007,
+          "soubor": "richtrovy-boudy/10007.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10007_richtrovy-boudy.gif"
+        },
+        {
+          "id": 10008,
+          "soubor": "richtrovy-boudy/10008.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10008_richtrovy-boudy.gif"
+        }
+      ]
+    },
+    {
+      "slug": "rychorska-bouda",
+      "nazev": "Rýchorská bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-rychorska-bouda/1",
+      "otisky": [
+        {
+          "id": 6414,
+          "soubor": "rychorska-bouda/6414.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/6414_rychorska-bouda.gif"
+        },
+        {
+          "id": 6415,
+          "soubor": "rychorska-bouda/6415.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/6415_rychorska-bouda.gif"
+        },
+        {
+          "id": 6416,
+          "soubor": "rychorska-bouda/6416.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/6416_rychorska-bouda.gif"
+        },
+        {
+          "id": 6565,
+          "soubor": "rychorska-bouda/6565.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/6565_rychorska-bouda.gif"
+        },
+        {
+          "id": 6566,
+          "soubor": "rychorska-bouda/6566.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/6566_rychorska-bouda.gif"
+        },
+        {
+          "id": 6567,
+          "soubor": "rychorska-bouda/6567.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/6567_rychorska-bouda.gif"
+        },
+        {
+          "id": 7744,
+          "soubor": "rychorska-bouda/7744.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/7744_rychorska-bouda.gif"
+        }
+      ]
+    },
+    {
       "slug": "schronisko-kamienczyk",
       "nazev": "Schronisko Kamieńczyk",
       "zdrojUrl": "http://www.razitkuj.cz/6549_schronisko-kamienczyk",
@@ -200,6 +662,18 @@
           "id": 10360,
           "soubor": "schronisko-odrodzenie/10360.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/10360_schronisko-odrodzenie.gif"
+        }
+      ]
+    },
+    {
+      "slug": "kochanowka",
+      "nazev": "Schronisko PTTK „Kochanówka\"",
+      "zdrojUrl": "http://www.razitkuj.cz/10331_schronisko-pttk-kochanowka",
+      "otisky": [
+        {
+          "id": 10331,
+          "soubor": "kochanowka/10331.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10331_schronisko-pttk-kochanowka.gif"
         }
       ]
     },
@@ -344,6 +818,55 @@
           "id": 11953,
           "soubor": "vosecka-bouda/11953.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/11953_vosecka-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "vrbatova-bouda",
+      "nazev": "Vrbatova bouda",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-vrbatova-bouda/1",
+      "otisky": [
+        {
+          "id": 5323,
+          "soubor": "vrbatova-bouda/5323.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5323_vrbatova-bouda.gif"
+        },
+        {
+          "id": 5325,
+          "soubor": "vrbatova-bouda/5325.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5325_vrbatova-bouda.gif"
+        },
+        {
+          "id": 8353,
+          "soubor": "vrbatova-bouda/8353.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/8353_vrbatova-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "vyrovka",
+      "nazev": "Výrovka",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-vyrovka/1",
+      "otisky": [
+        {
+          "id": 1250,
+          "soubor": "vyrovka/1250.jpg",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1250_chata-vyrovka.jpg"
+        },
+        {
+          "id": 1325,
+          "soubor": "vyrovka/1325.png",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1325_vyrovka.png"
+        },
+        {
+          "id": 2507,
+          "soubor": "vyrovka/2507.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/2507_vyrovka.gif"
+        },
+        {
+          "id": 3878,
+          "soubor": "vyrovka/3878.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3878_vyrovka.gif"
         }
       ]
     }
