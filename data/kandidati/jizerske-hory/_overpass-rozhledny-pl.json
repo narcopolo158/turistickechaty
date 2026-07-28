@@ -1,0 +1,173 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-28T18:32:36Z",
+    "timestamp_areas_base": "2026-07-27T18:43:01Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 6969204606,
+  "lat": 50.9112448,
+  "lon": 15.2892721,
+  "tags": {
+    "description": "Jednocześnie może na niej przebywać maksymalnie 20 osób.",
+    "ele": "778",
+    "fee": "no",
+    "height": "15",
+    "man_made": "tower",
+    "name": "Wieża Widokowa na Czerniawskiej Kopie",
+    "start_date": "2019-10-1",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 8792952523,
+  "lat": 50.9000861,
+  "lon": 15.3372852,
+  "tags": {
+    "addr:city": "Świeradów-Zdrój",
+    "addr:city:simc": "0936457",
+    "addr:housenumber": "6",
+    "addr:postcode": "59-850",
+    "addr:street": "Jarosława Dąbrowskiego",
+    "charge": "53-69 PLN/person",
+    "check_date": "2025-09-19",
+    "contact:email": "info@visitskywalk.today",
+    "contact:facebook": "skywalk.swieradow",
+    "contact:instagram": "skywalk.swieradow",
+    "contact:website": "https://www.skywalk-swieradow.pl",
+    "fee": "yes",
+    "height": "67",
+    "image": "https://static.polskieszlaki.pl/zdjecia/turystyka/2021-05/728_491/sky-walk-3.jpeg",
+    "image:0": "https://photos.app.goo.gl/QhzMjAD7nFHjJjRw9",
+    "man_made": "tower",
+    "name": "Sky Walk",
+    "name:cs": "Nebeská procházka",
+    "name:de": "Sky Walk Bad Flinsberg",
+    "name:pl": "Podniebny spacer",
+    "opening_hours": "Nov-Mar Mo-Su 09:00-17:00; Apr Mo-Su 09:00-17:00(18:00); May-Sep Mo-Su 09:00-19:00; Oct 1-25 Mo-Su 09:00-18:00 Oct 26-31 Mo-Su 09:00-17:00",
+    "source": "https://www.polskieszlaki.pl/wieza-sky-walk-w-swieradowie-zdroju.htm",
+    "start_date": "2021-06-01",
+    "tourism": "attraction",
+    "tower:type": "observation",
+    "url": "https://www.youtube.com/watch?v=MKd-vW1xHUM",
+    "url:0": "https://polska-org.pl/9087967,Swieradow_Zdroj,Wieza_widokowa_Sky_Walk.html",
+    "url:1": "https://fotopolska.eu/402382,obiekt.html?map_z=18",
+    "url:2": "https://swieradowzdroj.pl/upload/pdf/5610/raport-architektoniczny-skywalk-swieradow-zdroj-spolka-z-ograniczona-odpowiedzialnoscia-polska.pdf",
+    "url:3": "https://www.youtube.com/watch?v=PNAXjg8fE40",
+    "url:4": "https://skywalk-swieradow.pl/godziny-otwarcia/"
+  }
+},
+{
+  "type": "node",
+  "id": 9181248789,
+  "lat": 50.9656174,
+  "lon": 15.3786346,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "bistro",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9181299966,
+  "lat": 50.9136898,
+  "lon": 15.3131055,
+  "tags": {
+    "fee": "no",
+    "height": "33.8",
+    "man_made": "tower",
+    "name": "Młynica",
+    "start_date": "2021",
+    "step_count": "148",
+    "tower:construction": "lattice_steel",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13996375421,
+  "lat": 50.9003593,
+  "lon": 15.3377017,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-07-08"
+  }
+},
+{
+  "type": "node",
+  "id": 13996375422,
+  "lat": 50.8995376,
+  "lon": 15.3378201,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-07-08"
+  }
+},
+{
+  "type": "way",
+  "id": 279037336,
+  "center": {
+    "lat": 50.9658213,
+    "lon": 15.3778868
+  },
+  "nodes": [
+    2833037318,
+    2833037324,
+    2833037320,
+    2833037316,
+    2833037309,
+    2833037300,
+    2833037307,
+    2833037306,
+    2833037314,
+    2833037318
+  ],
+  "tags": {
+    "building": "yes",
+    "email": "biuro@kopalniakrobica.pl",
+    "image": "https://photos.app.goo.gl/FjTn63iqSmchqMEUA",
+    "man_made": "tower",
+    "name": "Wieża Widokowa Mirsk",
+    "phone": "+48 451 523 200",
+    "tower:type": "observation",
+    "url": "https://fotopolska.eu/97141,obiekt.html?map_z=18",
+    "url:0": "https://wiezecisnien.eu/dolnoslaskie/mirsk/",
+    "url:1": "https://polska-org.pl/537158,Mirsk,Wieza_cisnien.html",
+    "website": "https://wiezawidokowamirsk.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 996889657,
+  "center": {
+    "lat": 50.8995036,
+    "lon": 15.3373231
+  },
+  "nodes": [
+    9204839535,
+    9204839534,
+    9204839533,
+    9204839532,
+    9204839535
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "building": "yes",
+    "check_date": "2026-07-08",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes"
+  }
+}
+
+  ]
+}

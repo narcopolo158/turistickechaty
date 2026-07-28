@@ -1,0 +1,32 @@
+# Tanvaldský Špičák — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-28)
+# Zdroj: https://www.openstreetmap.org/node/2634007384 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/jizerske-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Tanvaldský Špičák
+slug: tanvaldsky-spicak
+zeme: cz
+oblast: jizerske-hory
+typ: rozhledna
+lat: 50.7514424
+lng: 15.282407
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2634007384 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-28
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-28) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Rozhledna — amenity=restaurant, 6 m,
+  https://www.openstreetmap.org/node/3065884727 · (bez názvu) —
+  amenity=fast_food, 11 m, https://www.openstreetmap.org/node/4692722113 · Ski
+  Chata — amenity=restaurant, 72 m,
+  https://www.openstreetmap.org/node/3065890263
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Jul-Aug: 10:00-17:00

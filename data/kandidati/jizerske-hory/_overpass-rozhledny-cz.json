@@ -1,0 +1,384 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-28T18:32:36Z",
+    "timestamp_areas_base": "2026-07-27T18:43:01Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 205395000,
+  "lat": 50.7919877,
+  "lon": 15.1578831,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Sluneční terasa",
+    "opening_hours": "Su-Th 10:00-17:00; Fr-Sa 10:00-19:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.hotelkralovka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 205416283,
+  "lat": 50.7730287,
+  "lon": 15.1965637,
+  "tags": {
+    "amenity": "restaurant",
+    "email": "info@slovanka.eu",
+    "indoor_seating": "yes",
+    "name": "Slovanka",
+    "opening_hours": "Mo-Su 10:00-16:00",
+    "outdoor_seating": "yes",
+    "phone": "+420483300886",
+    "tourism": "guest_house",
+    "website": "https://www.slovanka.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 1355509559,
+  "lat": 50.8330125,
+  "lon": 15.2315971,
+  "tags": {
+    "colour": "brown",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Na Čihadle",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1431292046,
+  "lat": 50.8893178,
+  "lon": 15.2718206,
+  "tags": {
+    "fee": "no",
+    "height": "20",
+    "man_made": "tower",
+    "name": "Rozhledna na Smrku",
+    "tourism": "viewpoint",
+    "tower:construction": "lattice",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2597515743,
+  "lat": 50.7782458,
+  "lon": 15.0917457,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date:currency:XBT": "2024-06-12",
+    "name": "Liberecká Výšina",
+    "payment:qerko": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2634007384,
+  "lat": 50.7514424,
+  "lon": 15.2824070,
+  "tags": {
+    "man_made": "tower",
+    "name": "Tanvaldský Špičák",
+    "opening_hours": "Jul-Aug: 10:00-17:00",
+    "step_count": "70",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3065884727,
+  "lat": 50.7514269,
+  "lon": 15.2824926,
+  "tags": {
+    "amenity": "restaurant",
+    "brewery": "kozel;yes;Pilsner Urquell",
+    "check_date": "2024-08-11",
+    "contact:facebook": "https://www.facebook.com/Rozhlednatanvaldskyspicakaskichata/",
+    "name": "Rozhledna",
+    "note": "Otevřené Červenec a Srpen",
+    "opening_hours": "Jul-Aug: 10:00-17:00",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "toilets": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3065890263,
+  "lat": 50.7516874,
+  "lon": 15.2833472,
+  "tags": {
+    "amenity": "restaurant",
+    "brewery": "Pilsner Urquell",
+    "check_date": "2024-08-11",
+    "name": "Ski Chata",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4692722113,
+  "lat": 50.7513826,
+  "lon": 15.2825303,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2024-08-11",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "smoking": "outside",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4807747010,
+  "lat": 50.7564207,
+  "lon": 15.2057071,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "občerstvení Bramberk",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5794499547,
+  "lat": 50.9347814,
+  "lon": 15.0768827,
+  "tags": {
+    "amenity": "fast_food"
+  }
+},
+{
+  "type": "node",
+  "id": 5794499549,
+  "lat": 50.9347634,
+  "lon": 15.0766813,
+  "tags": {
+    "height": "20.8",
+    "man_made": "tower",
+    "name": "Frýdlantská výšina",
+    "opening_hours": "May,Jun,Sep: Sa,Su,PH 9:00-18:00; Jul,Aug: Tu-Fr 10:00-17:00, Sa,Su 9:00-18:00",
+    "start_date": "1907",
+    "tower:type": "observation",
+    "viewpoint": "yes",
+    "website": "https://www.mesto-frydlant.cz/cs/turista/zajimavosti-a-cile-ve-frydlantu/rozhledna-frydlantska-vysina.html",
+    "wikidata": "Q16902825",
+    "wikimedia_commons": "Category:Frýdlantská rozhledna",
+    "wikipedia": "cs:Frýdlantská rozhledn"
+  }
+},
+{
+  "type": "node",
+  "id": 9032501824,
+  "lat": 50.7637911,
+  "lon": 15.2927280,
+  "tags": {
+    "man_made": "tower",
+    "name": "Světlý vrch",
+    "tower:type": "observation",
+    "wikidata": "Q114980894"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694504,
+  "lat": 50.7561983,
+  "lon": 15.2055081,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata Bramberk",
+    "opening_hours": "Mo-Su 10:00-20:00; Fr,Sa 10:00-22:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694657,
+  "lat": 50.7616561,
+  "lon": 15.4299016,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Čerťák",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 101211426,
+  "center": {
+    "lat": 50.7920570,
+    "lon": 15.1575267
+  },
+  "nodes": [
+    1168430981,
+    1168431006,
+    1168431079,
+    13534501222,
+    1168430907,
+    1168430981
+  ],
+  "tags": {
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Rozhledna Královka",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q1245661"
+  }
+},
+{
+  "type": "way",
+  "id": 173701702,
+  "center": {
+    "lat": 50.7562514,
+    "lon": 15.2059081
+  },
+  "nodes": [
+    1844732513,
+    1844732537,
+    1844732539,
+    1844732515,
+    1844732513
+  ],
+  "tags": {
+    "building": "civic",
+    "building:ruian:type": "5",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Rozhledna Bramberk",
+    "opening_hours": "Apr-Sep Sa,Su 10:30-16:00; Jun-Aug 10:30-17:00",
+    "ref:ruian:building": "38435179",
+    "source": "cuzk:ruian",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q897545",
+    "wikipedia": "cs:Bramberk"
+  }
+},
+{
+  "type": "way",
+  "id": 470025078,
+  "center": {
+    "lat": 50.7732735,
+    "lon": 15.1962678
+  },
+  "nodes": [
+    4642802279,
+    4642802278,
+    4642802277,
+    4642802276,
+    4642802279
+  ],
+  "tags": {
+    "building": "yes",
+    "building:colour": "#708090",
+    "building:ruian:type": "19",
+    "description": "Celokovová rozhledna Slovanka",
+    "man_made": "tower",
+    "name": "rozhledna Slovanka",
+    "ref:ruian:building": "44216564",
+    "source": "cuzk:ruian",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q1500935",
+    "wikipedia": "cs:Slovanka (Jizerské hory)"
+  }
+},
+{
+  "type": "way",
+  "id": 987669810,
+  "center": {
+    "lat": 50.7611598,
+    "lon": 15.4255127
+  },
+  "nodes": [
+    1874120550,
+    9129254077,
+    9129254078,
+    9129254079,
+    9129254080,
+    9129254085,
+    9129254081,
+    9129254082,
+    9129254083,
+    1874120550
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "4",
+    "man_made": "tower",
+    "name": "vyhlídka na Jizerské hory",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 987669812,
+  "center": {
+    "lat": 50.7622634,
+    "lon": 15.4307535
+  },
+  "nodes": [
+    4943701481,
+    9129254092,
+    9129254093,
+    9129254094,
+    9129254095,
+    9129254096,
+    9129254097,
+    9129254098,
+    4943701481
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "5",
+    "man_made": "tower",
+    "name": "vyhlídka na Harrachov",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1478639957,
+  "center": {
+    "lat": 50.7781899,
+    "lon": 15.0916604
+  },
+  "nodes": [
+    13564781056,
+    13564781055,
+    13564781054,
+    2069886086,
+    13564781052,
+    700767371,
+    13564781056
+  ],
+  "tags": {
+    "height": "25",
+    "man_made": "tower",
+    "name": "Rozhledna Liberecká výšina",
+    "name:de": "Liebieg-Warte",
+    "name:en": "Liebieg Lookout Tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}
