@@ -666,6 +666,29 @@ u všech tří má OSM jen okolní objekty (zastávky, rozcestníky, názvy tras
 a web chaty na žádném z nich není. Tady už dohledávka narazila na strop:
 další krok je telefonát nebo návštěva (DATA-04), ne další dotaz.
 
+**Dodatek 27 (týž den, poslední klik): 3D model má o devět pinů víc — a den
+tím zavírá kruh.** DATA-28 přegenerovala krkonošský model nad novými daty:
+**71 publikovaných pinů** (dřív 62), všech devět dnešních poloh je uvnitř,
+189 přechodů, 17 151 značených tras, 58 vrcholů, ostrý výškopis.
+Mimo model zůstává pět profilů a je poctivé říct, které a proč: **Rezek,
+Rozhled a Petrova bouda** dosud nemají souřadnice (dohledávka u nich narazila
+na strop — OSM má jen okolní objekty, web chaty na žádném z nich není; další
+krok je telefonát, DATA-04), **Raisova chata na Zvičině** (50,455) a
+**Schronisko PTTK „Kochanówka"** (50,830 / 15,556) leží mimo okno 3D modelu —
+Zvičina je přesahový profil mimo pohoří, Kochanówka je nad Szklarskou Porębou
+severně od okna. To druhé stojí za rozhodnutí: buď okno na severu povolit,
+nebo přiznat, že model kreslí hřeben a ne celé polské podhůří.
+
+**Souhrn dne 28. 7. 2026 (jeden souvislý blok práce, ne dvě session):**
+DATA-05 párování razítek · Jizerské hory jako druhá oblast (pipeline
+zobecněny na `--oblast`, 3D model, stránka pohoří) · oprava rozbitého
+workflow + nová kontrola definic Actions · odolnost Overpassu (tři kola,
+třetí instance, prázdno = selhání) · rozhledny s občerstvením · registr
+známých jmenovců · varianty otisků razítek na profilu · a nakonec celá
+větev kolem chybějících souřadnic: DATA-31, dvanáct dohledaných poloh,
+přístupové trasy 63 → 72 a 3D model 62 → 71 pinů. Zůstávají tři chaty bez
+GPS a otázky níž.
+
 **Otázky pro Michala:** (0) **Jaký `typ` mají dostat rozhledny s občerstvením?**
 Číselník z plánu kap. 5 zná obsluhovaná / útulna / bivak / horský hotel —
 přidat pátou hodnotu `rozhledna`, nebo je vést jako obsluhované s poznámkou?
