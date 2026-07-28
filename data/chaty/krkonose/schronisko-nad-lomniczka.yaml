@@ -17,10 +17,11 @@ stav: v-provozu
 oblast: krkonose
 
 # ── Lokace ────────────────────────────────────────────────────────────────
-# GPS ZÁMĚRNĚ NEVYPLNĚNA: objekt nebyl v OSM exportu DATA-01; souřadnice
-# uvádí jen sekundární portál — do polí se neberou, dokud je nepotvrdí OSM
-# nebo mapa. ROZPOR VÝŠKY: 1002 m (PTTK, druhý portál, katalog) × 1003 m
-# (třetí portál) — vzata oficiální a nejčastější hodnota, rozpor přiznán.
+# GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
+# export DATA-01 objekt minul, protože nemá žádný tag tourism, jen building).
+# Doklad a míra jistoty jsou v overeniLokace níž; verified zůstává false.
+lat: 50.7481762
+lng: 15.7437389
 vyska: 1002
 obec: Karpacz # z adresy na oficiální stránce PTTK — poštovní pramen (DATA-20)
 overeniLokace:
@@ -30,8 +31,20 @@ overeniLokace:
     objekt leží dle portálu Góry i Ludzie v Karkonoskim Parku Narodowym.
     Souřadnice 50°44'53"N, 15°44'36"E uvádí týž portál — sekundární zdroj,
     do polí NEVZATO. ROZPOR VÝŠKY: 1003 m dle portálu Trasygorskie.
+
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/405165026 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    dohledáno 28. 7. 2026 (DATA-31), částečná shoda jména („Nad Łomniczką"
+    bez „Schronisko PTTK"), ale identitu drží tři nezávislé stopy: tag
+    operator=PTTK, ele=1002 shodné s výškou v profilu na metr, a 15 m
+    odtud stojí měřicí bod pojmenovaný „Stanowisko monitoringu porostów
+    Schronisko Nad Łomniczką". Trasu k němu vede i relace PTTK Jelenia
+    Góra „Karpacz PKP - Schronisko PTTK nad Łomniczką". Čtvrtá stopa:
+    souřadnice 50°44'53"N, 15°44'36"E ze sekundárního portálu, které se
+    dřív do polí vědomě nevzaly, leží 32 m odtud — vzájemně se potvrzují.
+    Redakčně neověřeno v terénu, verified zůstává false.
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-07-28'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 # nocleh: ne — přímo z oficiální stránky PTTK („nie posiada miejsc
@@ -176,3 +189,6 @@ interniPoznamky: |-
   stav: v-provozu = vědomá volba podle oficiálního pramene provozovatele (PTTK); Trasygorskie a Góry i Ludzie hlásí remont/nieczynny. Kdyby dotaz na PTTK potvrdil remont, přepnout stav na mimo-provoz a upravit prózu (třetí odstavec).
   JEDINÝ publikovaný objekt korpusu s nocleh: ne — hlídat, že šablona profilu tuhle kombinaci vykreslí rozumně (sekce Nocleh).
   K dotažení (DATA-04): dotaz na PTTK Jelenia Góra — provoz (remont?), podoba občerstvení, otvírací doba/sezóna; dá se spojit s dotazem ke Kochanówce (týž správce). GPS potvrdit z OSM/mapy (portalová 50°44'53"N 15°44'36"E do polí nevzata). Polská známka (znaczek): v naší sadě není, seznam znaczki-turystyczne.pl je ze sandboxu nedostupný — prověřit později.
+
+  GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
+  overeniLokace): starší věty výše o chybějících souřadnicích tím padají.

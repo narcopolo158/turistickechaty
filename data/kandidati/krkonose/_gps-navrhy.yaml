@@ -229,4 +229,25 @@ navrhy:
   - slug: schronisko-nad-lomniczka
     nazev: Schronisko PTTK „Nad Łomniczką"
     obecProfilu: Karpacz
-    nalezy: []
+    nalezy:
+      - osm: https://www.openstreetmap.org/relation/5663111
+        nazev: Karpacz PKP - Schronisko PTTK nad Łomniczką
+        typShody: castecna
+        lat: 50.7656516
+        lng: 15.7533264
+        obecOsm: null
+        tagy: operator=PTTK Jelenia Góra
+      - osm: https://www.openstreetmap.org/way/405165026
+        nazev: Nad Łomniczką
+        typShody: castecna
+        lat: 50.7481762
+        lng: 15.7437389
+        obecOsm: null
+        tagy: building=yes, ele=1002, operator=PTTK
+      - osm: https://www.openstreetmap.org/node/8951363503
+        nazev: Stanowisko monitoringu porostów Schronisko Nad Łomniczką
+        typShody: castecna
+        lat: 50.7483093
+        lng: 15.7436908
+        obecOsm: null
+        tagy: tourism=information

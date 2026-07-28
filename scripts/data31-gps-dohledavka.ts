@@ -59,11 +59,18 @@ export const domenaZUrl = (url: unknown): string | null => {
   return m ? m[1].toLowerCase() : null
 }
 
-/** Porovnávací tvar jména: bez diakritiky, malá písmena, jedna mezera. */
+/**
+ * Porovnávací tvar jména: bez diakritiky, bez uvozovek, malá písmena, jedna
+ * mezera. Uvozovky musí pryč, jinak jádro názvu „Schronisko PTTK „Nad
+ * Łomniczką"" nese uvozovky s sebou a shodu s prostým „Nad Łomniczką" z OSM
+ * mine — přesně to se stalo 28. 7. 2026: objekt v odpovědi BYL (way/405165026,
+ * building + operator=PTTK + ele=1002), ale párování ho zahodilo.
+ */
 export const normJmeno = (s: string): string =>
   s
     .normalize('NFD')
     .replace(/[̀-ͯ]/gu, '')
+    .replace(/[„“”"«»]/gu, '')
     .toLowerCase()
     .replace(/\s+/gu, ' ')
     .trim()

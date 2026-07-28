@@ -639,6 +639,33 @@ příští běh má čím je chytit. +3 testy (327 celkem), lint, tsc i kontrola
 **Čeká na Michala:** klik na **DATA-31** (teď už s webovou větví i s opravenou
 diakritikou) a klik na **DATA-06** kvůli přístupovým trasám osmi nových poloh.
 
+**Dodatek 26 (týž den, po dalších klicích): dvanáct z dvanácti má souřadnice
+a přístupové trasy narostly z 63 na 72 chat.** Druhý běh DATA-31 (s webovou
+větví) nepřinesl ani jednu SHODU WEBU — OSM prostě u těch objektů `website`
+netagguje. Zato v surovém exportu **byl** polský objekt, který report hlásil
+jako „bez nálezu": `way/405165026` „Nad Łomniczką", building + operator=PTTK
++ ele=1002. Nenašlo ho párování, ne dotaz — a příčina je hloupá a poučná:
+jádro našeho názvu **Schronisko PTTK „Nad Łomniczką"** si s sebou neslo
+**uvozovky**, takže se porovnávalo „„nad łomniczka"" proti „nad łomniczka".
+`normJmeno` je teď zahazuje (i „ " » «) a přepočet z už commitnutého exportu
+(`--z-jsonu`, žádný další klik) dal nález okamžitě. **Zapsáno** — a je to
+nejlíp doložená poloha z celé dvanáctky: `ele=1002` sedí na metr s výškou
+v profilu, 15 m odtud stojí měřicí bod „Stanowisko monitoringu porostów
+Schronisko Nad Łomniczką", vede k němu relace PTTK Jelenia Góra, a souřadnice
+ze sekundárního portálu, které jsme dřív vědomě odmítli, leží 32 m odtud.
+**Přepočet DATA-06 (lokálně, taky bez kliku):** přístupové trasy má nově
+**72 chat** místo 63 — všech devět nových poloh dostalo nástup, který dává
+smysl (Pomezní bouda 0,08 km od zastávky Pomezní Boudy, Erlebachova 0,76 km
+od Špindlerovy boudy, Schronisko 3,9 km z Karpacze). Přepočítány i přechody
+mezi chatami. Bez trasy zůstává jediná: Raisova chata na Zvičině, 9,8 km od
+sítě — přesahový profil mimo pohoří, čekaný stav. Ověřeno na běžícím webu:
+mapa i „Doporučené nástupy" jsou na profilech vidět (polský profil žije na
+`/polsko/krkonose/…`). 327 testů, kontrola, lint i tsc čisté.
+**Zbývají tři profily bez GPS:** Chata Rezek, Chata Rozhled a Petrova bouda —
+u všech tří má OSM jen okolní objekty (zastávky, rozcestníky, názvy tras)
+a web chaty na žádném z nich není. Tady už dohledávka narazila na strop:
+další krok je telefonát nebo návštěva (DATA-04), ne další dotaz.
+
 **Otázky pro Michala:** (0) **Jaký `typ` mají dostat rozhledny s občerstvením?**
 Číselník z plánu kap. 5 zná obsluhovaná / útulna / bivak / horský hotel —
 přidat pátou hodnotu `rozhledna`, nebo je vést jako obsluhované s poznámkou?

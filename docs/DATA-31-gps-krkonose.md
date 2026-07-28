@@ -1,6 +1,6 @@
 # DATA-31 — dohledávka souřadnic (Krkonoše)
 
-Profilů bez GPS: **4** · s nálezem v OSM: **3** · bez nálezu: **1**
+Profilů bez GPS: **4** · s nálezem v OSM: **4** · bez nálezu: **0**
 
 Síla důkazu klesá shora dolů: SHODA WEBU (objekt odkazuje na týž web
 jako profil) → přesná shoda jména → částečná shoda jádra názvu.
@@ -76,8 +76,12 @@ když se `addr:city` z OSM rozchází s `obec` v profilu, je to jiný objekt.
 - **částečná shoda jména** „Krkonoše bez barier: Špindlerovka - Petrova bouda" — 50.7664823, 15.6228543 · obec v OSM chybí
   - operator=cz:KČT — https://www.openstreetmap.org/relation/3281717
 
-## Bez nálezu v OSM
-
-- Schronisko PTTK „Nad Łomniczką" (Karpacz) — jméno v okně oblasti nikde
+## Schronisko PTTK „Nad Łomniczką" — obec v profilu: Karpacz
+- **částečná shoda jména** „Karpacz PKP - Schronisko PTTK nad Łomniczką" — 50.7656516, 15.7533264 · obec v OSM chybí
+  - operator=PTTK Jelenia Góra — https://www.openstreetmap.org/relation/5663111
+- **částečná shoda jména** „Nad Łomniczką" — 50.7481762, 15.7437389 · obec v OSM chybí
+  - building=yes, ele=1002, operator=PTTK — https://www.openstreetmap.org/way/405165026
+- **částečná shoda jména** „Stanowisko monitoringu porostów Schronisko Nad Łomniczką" — 50.7483093, 15.7436908 · obec v OSM chybí
+  - tourism=information — https://www.openstreetmap.org/node/8951363503
 
 Zdroj nálezů: OpenStreetMap — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)

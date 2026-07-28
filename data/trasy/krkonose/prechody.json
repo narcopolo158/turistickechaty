@@ -1,7 +1,7 @@
 {
   "zdroj": "OpenStreetMap Overpass (route=hiking) — data © přispěvatelé OpenStreetMap, ODbL 1.0. Planární routing po značených trasách, verified:false.",
   "pozn": "Sousední chaty = nejbližší jiné chaty po značených trasách. Výšky a casMin (DIN 33466) dopočítá krok s Mapy.com Elevation API (Actions).",
-  "pocetChat": 63,
+  "pocetChat": 72,
   "chaty": [
     {
       "slug": "amor",
@@ -176,6 +176,20 @@
       "nazev": "Chata Betyna",
       "prechody": [
         {
+          "cilSlug": "chata-pod-studnicnou",
+          "cilNazev": "Chata Pod Studničnou",
+          "cilUrl": "/cesko/krkonose/chata-pod-studnicnou",
+          "delkaKm": 0.34,
+          "useky": [
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.34
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "chata-aurora",
           "cilNazev": "Chata Aurora",
           "cilUrl": "/cesko/krkonose/chata-aurora",
@@ -252,32 +266,6 @@
           ],
           "podilNeznacenychProc": 0,
           "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "amor",
-          "cilNazev": "Chata Amor",
-          "cilUrl": "/cesko/krkonose/amor",
-          "delkaKm": 3.16,
-          "useky": [
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.91
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.44
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.63
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 1.18
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
         }
       ]
     },
@@ -285,6 +273,20 @@
       "slug": "bouda-bile-labe",
       "nazev": "Bouda Bílé Labe",
       "prechody": [
+        {
+          "cilSlug": "erlebachova-bouda",
+          "cilNazev": "Erlebachova bouda",
+          "cilUrl": "/cesko/krkonose/erlebachova-bouda",
+          "delkaKm": 2.61,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 2.6
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
         {
           "cilSlug": "hotel-spindlerova-bouda",
           "cilNazev": "Hotel Špindlerova bouda",
@@ -350,32 +352,6 @@
           ],
           "podilNeznacenychProc": 0,
           "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "sedmidoli",
-          "cilNazev": "Chata Sedmidolí",
-          "cilUrl": "/cesko/krkonose/sedmidoli",
-          "delkaKm": 5.46,
-          "useky": [
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.03
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 2.89
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.36
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 2.18
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
         }
       ]
     },
@@ -383,6 +359,20 @@
       "slug": "bouda-na-lucinach",
       "nazev": "Bouda Na Lučinách",
       "prechody": [
+        {
+          "cilSlug": "prazska-bouda",
+          "cilNazev": "Pražská bouda",
+          "cilUrl": "/cesko/krkonose/prazska-bouda",
+          "delkaKm": 0.16,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.16
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
         {
           "cilSlug": "helena",
           "cilNazev": "Bouda Helena",
@@ -448,28 +438,6 @@
           ],
           "podilNeznacenychProc": 0,
           "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "horska-chata-krakonos",
-          "cilNazev": "Horská chata Krakonoš",
-          "cilUrl": "/cesko/krkonose/horska-chata-krakonos",
-          "delkaKm": 0.46,
-          "useky": [
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.19
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.03
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.24
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
         }
       ]
     },
@@ -477,6 +445,20 @@
       "slug": "bouda-ruzohorky",
       "nazev": "Bouda Růžohorky",
       "prechody": [
+        {
+          "cilSlug": "portasky",
+          "cilNazev": "Portášky",
+          "cilUrl": "/cesko/krkonose/portasky",
+          "delkaKm": 1.74,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 1.74
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
         {
           "cilSlug": "betyna",
           "cilNazev": "Chata Betyna",
@@ -504,6 +486,32 @@
           "kRucniKontrole": false
         },
         {
+          "cilSlug": "chata-pod-studnicnou",
+          "cilNazev": "Chata Pod Studničnou",
+          "cilUrl": "/cesko/krkonose/chata-pod-studnicnou",
+          "delkaKm": 2.99,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.01
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 1.7
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.67
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.61
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "chata-aurora",
           "cilNazev": "Chata Aurora",
           "cilUrl": "/cesko/krkonose/chata-aurora",
@@ -524,46 +532,6 @@
           ],
           "podilNeznacenychProc": 0,
           "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "lovecka-chata",
-          "cilNazev": "Lovecká chata",
-          "cilUrl": "/cesko/krkonose/lovecka-chata",
-          "delkaKm": 4.07,
-          "useky": [
-            {
-              "znaceni": "zluta",
-              "delkaKm": 3.69
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.06
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.32
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "dom-slaski",
-          "cilNazev": "Dom Śląski",
-          "cilUrl": "/polsko/krkonose/dom-slaski",
-          "delkaKm": 4.28,
-          "useky": [
-            {
-              "znaceni": "zluta",
-              "delkaKm": 3.2
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 1.08
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
         }
       ]
     },
@@ -580,6 +548,28 @@
             {
               "znaceni": "cervena",
               "delkaKm": 0.13
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "prazska-bouda",
+          "cilNazev": "Pražská bouda",
+          "cilUrl": "/cesko/krkonose/prazska-bouda",
+          "delkaKm": 0.25,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.2
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.03
             }
           ],
           "podilNeznacenychProc": 0,
@@ -616,36 +606,6 @@
             {
               "znaceni": "cervena",
               "delkaKm": 0.45
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "husova-bouda",
-          "cilNazev": "Husova bouda",
-          "cilUrl": "/cesko/krkonose/husova-bouda",
-          "delkaKm": 0.82,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.2
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.03
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.19
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.3
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.1
             }
           ],
           "podilNeznacenychProc": 0,
@@ -760,6 +720,20 @@
       "nazev": "Černá bouda",
       "prechody": [
         {
+          "cilSlug": "kolinska-bouda",
+          "cilNazev": "Kolínská bouda",
+          "cilUrl": "/cesko/krkonose/kolinska-bouda",
+          "delkaKm": 2.01,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.01
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "horska-chata-krakonos",
           "cilNazev": "Horská chata Krakonoš",
           "cilUrl": "/cesko/krkonose/horska-chata-krakonos",
@@ -774,38 +748,10 @@
           "kRucniKontrole": false
         },
         {
-          "cilSlug": "helena",
-          "cilNazev": "Bouda Helena",
-          "cilUrl": "/cesko/krkonose/helena",
-          "delkaKm": 2.58,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 2.58
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "bouda-slovanka",
-          "cilNazev": "Bouda Slovanka",
-          "cilUrl": "/cesko/krkonose/bouda-slovanka",
-          "delkaKm": 2.71,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 2.71
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "bouda-na-lucinach",
-          "cilNazev": "Bouda Na Lučinách",
-          "cilUrl": "/cesko/krkonose/bouda-na-lucinach",
-          "delkaKm": 2.72,
+          "cilSlug": "prazska-bouda",
+          "cilNazev": "Pražská bouda",
+          "cilUrl": "/cesko/krkonose/prazska-bouda",
+          "delkaKm": 2.56,
           "useky": [
             {
               "znaceni": "cervena",
@@ -817,7 +763,21 @@
             },
             {
               "znaceni": "zelena",
-              "delkaKm": 0.19
+              "delkaKm": 0.03
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "helena",
+          "cilNazev": "Bouda Helena",
+          "cilUrl": "/cesko/krkonose/helena",
+          "delkaKm": 2.58,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.58
             }
           ],
           "podilNeznacenychProc": 0,
@@ -970,10 +930,10 @@
           "kRucniKontrole": false
         },
         {
-          "cilSlug": "chata-smetanka",
-          "cilNazev": "Chata Smetánka",
-          "cilUrl": "/cesko/krkonose/chata-smetanka",
-          "delkaKm": 2.93,
+          "cilSlug": "chata-pod-studnicnou",
+          "cilNazev": "Chata Pod Studničnou",
+          "cilUrl": "/cesko/krkonose/chata-pod-studnicnou",
+          "delkaKm": 2.89,
           "useky": [
             {
               "znaceni": "modra",
@@ -981,15 +941,15 @@
             },
             {
               "znaceni": "zelena",
-              "delkaKm": 1.57
+              "delkaKm": 0.21
             },
             {
               "znaceni": "cervena",
-              "delkaKm": 0.22
+              "delkaKm": 0.44
             },
             {
-              "znaceni": "zelena",
-              "delkaKm": 0.15
+              "znaceni": "modra",
+              "delkaKm": 1.25
             }
           ],
           "podilNeznacenychProc": 0,
@@ -1288,6 +1248,104 @@
             {
               "znaceni": "zelena",
               "delkaKm": 0.15
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "chata-pod-studnicnou",
+      "nazev": "Chata Pod Studničnou",
+      "prechody": [
+        {
+          "cilSlug": "betyna",
+          "cilNazev": "Chata Betyna",
+          "cilUrl": "/cesko/krkonose/betyna",
+          "delkaKm": 0.34,
+          "useky": [
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.34
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "chata-aurora",
+          "cilNazev": "Chata Aurora",
+          "cilUrl": "/cesko/krkonose/chata-aurora",
+          "delkaKm": 2.89,
+          "useky": [
+            {
+              "znaceni": "modra",
+              "delkaKm": 1.25
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.44
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.21
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.99
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "bouda-ruzohorky",
+          "cilNazev": "Bouda Růžohorky",
+          "cilUrl": "/cesko/krkonose/bouda-ruzohorky",
+          "delkaKm": 2.99,
+          "useky": [
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.61
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.67
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 1.7
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.01
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "richtrovy-boudy",
+          "cilNazev": "Richtrovy boudy",
+          "cilUrl": "/cesko/krkonose/richtrovy-boudy",
+          "delkaKm": 3.38,
+          "useky": [
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.85
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 1.29
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.17
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.07
             }
           ],
           "podilNeznacenychProc": 0,
@@ -1742,6 +1800,20 @@
           "kRucniKontrole": false
         },
         {
+          "cilSlug": "pomezni-bouda",
+          "cilNazev": "Pomezní bouda",
+          "cilUrl": "/cesko/krkonose/pomezni-bouda",
+          "delkaKm": 3.15,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 3.15
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "schronisko-pttk-na-przeleczy-okraj",
           "cilNazev": "Schronisko PTTK \"Na Przełęczy Okraj\"",
           "cilUrl": "/polsko/krkonose/schronisko-pttk-na-przeleczy-okraj",
@@ -1776,28 +1848,6 @@
             {
               "znaceni": "cervena",
               "delkaKm": 0.23
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "bouda-ruzohorky",
-          "cilNazev": "Bouda Růžohorky",
-          "cilUrl": "/cesko/krkonose/bouda-ruzohorky",
-          "delkaKm": 6.49,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.52
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 3.69
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 2.28
             }
           ],
           "podilNeznacenychProc": 0,
@@ -1850,6 +1900,32 @@
           "kRucniKontrole": false
         },
         {
+          "cilSlug": "erlebachova-bouda",
+          "cilNazev": "Erlebachova bouda",
+          "cilUrl": "/cesko/krkonose/erlebachova-bouda",
+          "delkaKm": 3.23,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 2.03
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.53
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.48
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.19
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "moravska-bouda",
           "cilNazev": "Moravská bouda",
           "cilUrl": "/cesko/krkonose/moravska-bouda",
@@ -1866,28 +1942,6 @@
             {
               "znaceni": "zelena",
               "delkaKm": 0.79
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "schronisko-samotnia",
-          "cilNazev": "Schronisko Samotnia",
-          "cilUrl": "/polsko/krkonose/schronisko-samotnia",
-          "delkaKm": 5.45,
-          "useky": [
-            {
-              "znaceni": "zelena",
-              "delkaKm": 2.4
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.95
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 2.1
             }
           ],
           "podilNeznacenychProc": 0,
@@ -2022,6 +2076,20 @@
       "nazev": "Dom Śląski",
       "prechody": [
         {
+          "cilSlug": "schronisko-nad-lomniczka",
+          "cilNazev": "Schronisko PTTK „Nad Łomniczką\"",
+          "cilUrl": "/polsko/krkonose/schronisko-nad-lomniczka",
+          "delkaKm": 2.12,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.12
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "lucni-bouda",
           "cilNazev": "Luční bouda",
           "cilUrl": "/cesko/krkonose/lucni-bouda",
@@ -2098,28 +2166,6 @@
             {
               "znaceni": "modra",
               "delkaKm": 0.63
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "jelenka",
-          "cilNazev": "Jelenka",
-          "cilUrl": "/cesko/krkonose/jelenka",
-          "delkaKm": 3.86,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.23
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.96
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 2.67
             }
           ],
           "podilNeznacenychProc": 0,
@@ -2218,6 +2264,100 @@
             {
               "znaceni": "modra",
               "delkaKm": 1.22
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "erlebachova-bouda",
+      "nazev": "Erlebachova bouda",
+      "prechody": [
+        {
+          "cilSlug": "hotel-spindlerova-bouda",
+          "cilNazev": "Hotel Špindlerova bouda",
+          "cilUrl": "/cesko/krkonose/hotel-spindlerova-bouda",
+          "delkaKm": 0.71,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.19
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.48
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.04
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "schronisko-odrodzenie",
+          "cilNazev": "Schronisko Odrodzenie",
+          "cilUrl": "/polsko/krkonose/schronisko-odrodzenie",
+          "delkaKm": 1.01,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.19
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.48
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.23
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.12
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "bouda-bile-labe",
+          "cilNazev": "Bouda Bílé Labe",
+          "cilUrl": "/cesko/krkonose/bouda-bile-labe",
+          "delkaKm": 2.61,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 2.6
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "moravska-bouda",
+          "cilNazev": "Moravská bouda",
+          "cilUrl": "/cesko/krkonose/moravska-bouda",
+          "delkaKm": 3.13,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.19
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.48
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.67
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.79
             }
           ],
           "podilNeznacenychProc": 0,
@@ -2338,6 +2478,28 @@
           "kRucniKontrole": false
         },
         {
+          "cilSlug": "prazska-bouda",
+          "cilNazev": "Pražská bouda",
+          "cilUrl": "/cesko/krkonose/prazska-bouda",
+          "delkaKm": 0.13,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.08
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.03
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "bouda-na-lucinach",
           "cilNazev": "Bouda Na Lučinách",
           "cilUrl": "/cesko/krkonose/bouda-na-lucinach",
@@ -2372,36 +2534,6 @@
           ],
           "podilNeznacenychProc": 0,
           "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "husova-bouda",
-          "cilNazev": "Husova bouda",
-          "cilUrl": "/cesko/krkonose/husova-bouda",
-          "delkaKm": 0.69,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.08
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.03
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.19
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.3
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.1
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
         }
       ]
     },
@@ -2409,6 +2541,42 @@
       "slug": "horska-chata-krakonos",
       "nazev": "Horská chata Krakonoš",
       "prechody": [
+        {
+          "cilSlug": "kolinska-bouda",
+          "cilNazev": "Kolínská bouda",
+          "cilUrl": "/cesko/krkonose/kolinska-bouda",
+          "delkaKm": 0.25,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.25
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "prazska-bouda",
+          "cilNazev": "Pražská bouda",
+          "cilUrl": "/cesko/krkonose/prazska-bouda",
+          "delkaKm": 0.29,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.24
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.03
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
         {
           "cilSlug": "helena",
           "cilNazev": "Bouda Helena",
@@ -2436,58 +2604,6 @@
           ],
           "podilNeznacenychProc": 0,
           "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "bouda-na-lucinach",
-          "cilNazev": "Bouda Na Lučinách",
-          "cilUrl": "/cesko/krkonose/bouda-na-lucinach",
-          "delkaKm": 0.46,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.24
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.03
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.19
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "husova-bouda",
-          "cilNazev": "Husova bouda",
-          "cilUrl": "/cesko/krkonose/husova-bouda",
-          "delkaKm": 0.86,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.24
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.03
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.19
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.3
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.1
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
         }
       ]
     },
@@ -2508,6 +2624,28 @@
             {
               "znaceni": "modra",
               "delkaKm": 0.12
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "erlebachova-bouda",
+          "cilNazev": "Erlebachova bouda",
+          "cilUrl": "/cesko/krkonose/erlebachova-bouda",
+          "delkaKm": 0.71,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.04
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.48
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.19
             }
           ],
           "podilNeznacenychProc": 0,
@@ -2544,28 +2682,6 @@
             {
               "znaceni": "zelena",
               "delkaKm": 0.79
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "bouda-bile-labe",
-          "cilNazev": "Bouda Bílé Labe",
-          "cilUrl": "/cesko/krkonose/bouda-bile-labe",
-          "delkaKm": 3.32,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.04
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.48
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 2.8
             }
           ],
           "podilNeznacenychProc": 0,
@@ -2614,6 +2730,28 @@
           "kRucniKontrole": false
         },
         {
+          "cilSlug": "prazska-bouda",
+          "cilNazev": "Pražská bouda",
+          "cilUrl": "/cesko/krkonose/prazska-bouda",
+          "delkaKm": 0.56,
+          "useky": [
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.1
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.3
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.17
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "barborka",
           "cilNazev": "Barborka",
           "cilUrl": "/cesko/krkonose/barborka",
@@ -2622,20 +2760,6 @@
             {
               "znaceni": "modra",
               "delkaKm": 0.57
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "konopindova-chata",
-          "cilNazev": "Konopindova chata",
-          "cilUrl": "/cesko/krkonose/konopindova-chata",
-          "delkaKm": 0.62,
-          "useky": [
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.62
             }
           ],
           "podilNeznacenychProc": 0,
@@ -2656,6 +2780,32 @@
             {
               "znaceni": "cervena",
               "delkaKm": 0.45
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "pomezni-bouda",
+          "cilNazev": "Pomezní bouda",
+          "cilUrl": "/cesko/krkonose/pomezni-bouda",
+          "delkaKm": 3.51,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.06
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 3.25
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.17
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.03
             }
           ],
           "podilNeznacenychProc": 0,
@@ -2708,28 +2858,6 @@
             {
               "znaceni": "cervena",
               "delkaKm": 0.23
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "bouda-ruzohorky",
-          "cilNazev": "Bouda Růžohorky",
-          "cilUrl": "/cesko/krkonose/bouda-ruzohorky",
-          "delkaKm": 6.04,
-          "useky": [
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.07
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 3.69
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 2.28
             }
           ],
           "podilNeznacenychProc": 0,
@@ -2832,6 +2960,76 @@
             {
               "znaceni": "modra",
               "delkaKm": 0.12
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "kolinska-bouda",
+      "nazev": "Kolínská bouda",
+      "prechody": [
+        {
+          "cilSlug": "horska-chata-krakonos",
+          "cilNazev": "Horská chata Krakonoš",
+          "cilUrl": "/cesko/krkonose/horska-chata-krakonos",
+          "delkaKm": 0.25,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.25
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "prazska-bouda",
+          "cilNazev": "Pražská bouda",
+          "cilUrl": "/cesko/krkonose/prazska-bouda",
+          "delkaKm": 0.54,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.49
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.03
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "helena",
+          "cilNazev": "Bouda Helena",
+          "cilUrl": "/cesko/krkonose/helena",
+          "delkaKm": 0.57,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.57
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "bouda-slovanka",
+          "cilNazev": "Bouda Slovanka",
+          "cilUrl": "/cesko/krkonose/bouda-slovanka",
+          "delkaKm": 0.69,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.69
             }
           ],
           "podilNeznacenychProc": 0,
@@ -3282,6 +3480,136 @@
             {
               "znaceni": "modra",
               "delkaKm": 2.03
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "lysecinska-bouda",
+      "nazev": "Lysečinská bouda",
+      "prechody": [
+        {
+          "cilSlug": "srebrny-potok",
+          "cilNazev": "Srebrny Potok",
+          "cilUrl": "/polsko/krkonose/srebrny-potok",
+          "delkaKm": 4.05,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.18
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.17
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.84
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.1
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.42
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.33
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "pomezni-bouda",
+          "cilNazev": "Pomezní bouda",
+          "cilUrl": "/cesko/krkonose/pomezni-bouda",
+          "delkaKm": 5.57,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.85
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 2.51
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.17
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.03
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "schronisko-pttk-na-przeleczy-okraj",
+          "cilNazev": "Schronisko PTTK \"Na Przełęczy Okraj\"",
+          "cilUrl": "/polsko/krkonose/schronisko-pttk-na-przeleczy-okraj",
+          "delkaKm": 5.8,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.85
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 2.51
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.17
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.19
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.08
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "portasky",
+          "cilNazev": "Portášky",
+          "cilUrl": "/cesko/krkonose/portasky",
+          "delkaKm": 6.05,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.88
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 1.61
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.5
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.22
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 2.6
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.24
             }
           ],
           "podilNeznacenychProc": 0,
@@ -3758,10 +4086,10 @@
           "kRucniKontrole": false
         },
         {
-          "cilSlug": "bouda-na-lucinach",
-          "cilNazev": "Bouda Na Lučinách",
-          "cilUrl": "/cesko/krkonose/bouda-na-lucinach",
-          "delkaKm": 1.22,
+          "cilSlug": "prazska-bouda",
+          "cilNazev": "Pražská bouda",
+          "cilUrl": "/cesko/krkonose/prazska-bouda",
+          "delkaKm": 1.16,
           "useky": [
             {
               "znaceni": "modra",
@@ -3769,19 +4097,15 @@
             },
             {
               "znaceni": "cervena",
-              "delkaKm": 0.03
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.76
+              "delkaKm": 0.98
             },
             {
               "znaceni": "zluta",
-              "delkaKm": 0.3
+              "delkaKm": 0.03
             },
             {
               "znaceni": "zelena",
-              "delkaKm": 0.01
+              "delkaKm": 0.03
             }
           ],
           "podilNeznacenychProc": 0,
@@ -4060,6 +4384,296 @@
       ]
     },
     {
+      "slug": "pomezni-bouda",
+      "nazev": "Pomezní bouda",
+      "prechody": [
+        {
+          "cilSlug": "schronisko-pttk-na-przeleczy-okraj",
+          "cilNazev": "Schronisko PTTK \"Na Przełęczy Okraj\"",
+          "cilUrl": "/polsko/krkonose/schronisko-pttk-na-przeleczy-okraj",
+          "delkaKm": 0.24,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.16
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.08
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "chatka-puchatka",
+          "cilNazev": "Chatka Puchatka",
+          "cilUrl": "/polsko/krkonose/chatka-puchatka",
+          "delkaKm": 3.15,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 3.15
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "jelenka",
+          "cilNazev": "Jelenka",
+          "cilUrl": "/cesko/krkonose/jelenka",
+          "delkaKm": 3.51,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.17
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 3.25
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.06
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "lysecinska-bouda",
+          "cilNazev": "Lysečinská bouda",
+          "cilUrl": "/cesko/krkonose/lysecinska-bouda",
+          "delkaKm": 5.57,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.17
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 2.51
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.85
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "portasky",
+      "nazev": "Portášky",
+      "prechody": [
+        {
+          "cilSlug": "bouda-ruzohorky",
+          "cilNazev": "Bouda Růžohorky",
+          "cilUrl": "/cesko/krkonose/bouda-ruzohorky",
+          "delkaKm": 1.74,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 1.74
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "lovecka-chata",
+          "cilNazev": "Lovecká chata",
+          "cilUrl": "/cesko/krkonose/lovecka-chata",
+          "delkaKm": 3.36,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.27
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.2
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 2.09
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.14
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.34
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.32
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "chata-aurora",
+          "cilNazev": "Chata Aurora",
+          "cilUrl": "/cesko/krkonose/chata-aurora",
+          "delkaKm": 3.94,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.27
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.2
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 2.09
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.14
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.34
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.89
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "betyna",
+          "cilNazev": "Chata Betyna",
+          "cilUrl": "/cesko/krkonose/betyna",
+          "delkaKm": 4.39,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 1.75
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 1.7
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.67
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.27
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "prazska-bouda",
+      "nazev": "Pražská bouda",
+      "prechody": [
+        {
+          "cilSlug": "helena",
+          "cilNazev": "Bouda Helena",
+          "cilUrl": "/cesko/krkonose/helena",
+          "delkaKm": 0.13,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.08
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "bouda-na-lucinach",
+          "cilNazev": "Bouda Na Lučinách",
+          "cilUrl": "/cesko/krkonose/bouda-na-lucinach",
+          "delkaKm": 0.16,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.16
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "bouda-slovanka",
+          "cilNazev": "Bouda Slovanka",
+          "cilUrl": "/cesko/krkonose/bouda-slovanka",
+          "delkaKm": 0.25,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.2
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "horska-chata-krakonos",
+          "cilNazev": "Horská chata Krakonoš",
+          "cilUrl": "/cesko/krkonose/horska-chata-krakonos",
+          "delkaKm": 0.29,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.24
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
       "slug": "richtrovy-boudy",
       "nazev": "Richtrovy boudy",
       "prechody": [
@@ -4134,6 +4748,164 @@
             {
               "znaceni": "cervena",
               "delkaKm": 1.32
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "rychorska-bouda",
+      "nazev": "Rýchorská bouda",
+      "prechody": [
+        {
+          "cilSlug": "lysecinska-bouda",
+          "cilNazev": "Lysečinská bouda",
+          "cilUrl": "/cesko/krkonose/lysecinska-bouda",
+          "delkaKm": 8.01,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.05
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.38
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 3.7
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 2.7
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.18
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "srebrny-potok",
+          "cilNazev": "Srebrny Potok",
+          "cilUrl": "/polsko/krkonose/srebrny-potok",
+          "delkaKm": 8.34,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.05
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.38
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 3.7
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.32
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.75
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 2.39
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.42
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.33
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "cerna-bouda",
+          "cilNazev": "Černá bouda",
+          "cilUrl": "/cesko/krkonose/cerna-bouda",
+          "delkaKm": 10.51,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 3.36
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.22
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 1.71
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.09
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 2.02
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 2.69
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.4
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.01
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "kolinska-bouda",
+          "cilNazev": "Kolínská bouda",
+          "cilUrl": "/cesko/krkonose/kolinska-bouda",
+          "delkaKm": 12.1,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 3.36
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.22
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 1.71
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.09
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 2.02
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 3.35
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.34
             }
           ],
           "podilNeznacenychProc": 0,
@@ -4220,6 +4992,112 @@
       ]
     },
     {
+      "slug": "schronisko-nad-lomniczka",
+      "nazev": "Schronisko PTTK „Nad Łomniczką\"",
+      "prechody": [
+        {
+          "cilSlug": "dom-slaski",
+          "cilNazev": "Dom Śląski",
+          "cilUrl": "/polsko/krkonose/dom-slaski",
+          "delkaKm": 2.12,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.12
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "lucni-bouda",
+          "cilNazev": "Luční bouda",
+          "cilUrl": "/cesko/krkonose/lucni-bouda",
+          "delkaKm": 4.62,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.13
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 2.35
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.02
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.07
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.06
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "strzecha-akademicka",
+          "cilNazev": "Strzecha Akademicka",
+          "cilUrl": "/polsko/krkonose/strzecha-akademicka",
+          "delkaKm": 4.96,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.46
+            },
+            {
+              "znaceni": "cerna",
+              "delkaKm": 1.87
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.62
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.01
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "chatka-puchatka",
+          "cilNazev": "Chatka Puchatka",
+          "cilUrl": "/polsko/krkonose/chatka-puchatka",
+          "delkaKm": 5.23,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.06
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 1.7
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.59
+            },
+            {
+              "znaceni": "cerna",
+              "delkaKm": 2.58
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.3
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
       "slug": "schronisko-odrodzenie",
       "nazev": "Schronisko Odrodzenie",
       "prechody": [
@@ -4236,6 +5114,32 @@
             {
               "znaceni": "cervena",
               "delkaKm": 0.18
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "erlebachova-bouda",
+          "cilNazev": "Erlebachova bouda",
+          "cilUrl": "/cesko/krkonose/erlebachova-bouda",
+          "delkaKm": 1.01,
+          "useky": [
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.12
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.22
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.48
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.19
             }
           ],
           "podilNeznacenychProc": 0,
@@ -4280,32 +5184,6 @@
             {
               "znaceni": "zelena",
               "delkaKm": 0.79
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "bouda-bile-labe",
-          "cilNazev": "Bouda Bílé Labe",
-          "cilUrl": "/cesko/krkonose/bouda-bile-labe",
-          "delkaKm": 3.62,
-          "useky": [
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.12
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.22
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.48
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 2.8
             }
           ],
           "podilNeznacenychProc": 0,
@@ -4502,6 +5380,24 @@
       "nazev": "Schronisko PTTK \"Na Przełęczy Okraj\"",
       "prechody": [
         {
+          "cilSlug": "pomezni-bouda",
+          "cilNazev": "Pomezní bouda",
+          "cilUrl": "/cesko/krkonose/pomezni-bouda",
+          "delkaKm": 0.24,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.08
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.16
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "chatka-puchatka",
           "cilNazev": "Chatka Puchatka",
           "cilUrl": "/polsko/krkonose/chatka-puchatka",
@@ -4550,10 +5446,10 @@
           "kRucniKontrole": false
         },
         {
-          "cilSlug": "dom-slaski",
-          "cilNazev": "Dom Śląski",
-          "cilUrl": "/polsko/krkonose/dom-slaski",
-          "delkaKm": 7.61,
+          "cilSlug": "lysecinska-bouda",
+          "cilNazev": "Lysečinská bouda",
+          "cilUrl": "/cesko/krkonose/lysecinska-bouda",
+          "delkaKm": 5.8,
           "useky": [
             {
               "znaceni": "zluta",
@@ -4569,61 +5465,11 @@
             },
             {
               "znaceni": "zluta",
-              "delkaKm": 3.25
+              "delkaKm": 2.51
             },
             {
               "znaceni": "cervena",
-              "delkaKm": 2.73
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.96
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.23
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "srebrny-potok",
-          "cilNazev": "Srebrny Potok",
-          "cilUrl": "/polsko/krkonose/srebrny-potok",
-          "delkaKm": 8.18,
-          "useky": [
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.08
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 5.14
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.1
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.17
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 1.84
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.1
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.42
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.33
+              "delkaKm": 2.85
             }
           ],
           "podilNeznacenychProc": 0,
@@ -4914,6 +5760,40 @@
       "nazev": "Srebrny Potok",
       "prechody": [
         {
+          "cilSlug": "lysecinska-bouda",
+          "cilNazev": "Lysečinská bouda",
+          "cilUrl": "/cesko/krkonose/lysecinska-bouda",
+          "delkaKm": 4.05,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.33
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.42
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.1
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.84
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.17
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.18
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "schronisko-pttk-na-przeleczy-okraj",
           "cilNazev": "Schronisko PTTK \"Na Przełęczy Okraj\"",
           "cilUrl": "/polsko/krkonose/schronisko-pttk-na-przeleczy-okraj",
@@ -4956,10 +5836,10 @@
           "kRucniKontrole": false
         },
         {
-          "cilSlug": "chatka-puchatka",
-          "cilNazev": "Chatka Puchatka",
-          "cilUrl": "/polsko/krkonose/chatka-puchatka",
-          "delkaKm": 11.42,
+          "cilSlug": "pomezni-bouda",
+          "cilNazev": "Pomezní bouda",
+          "cilUrl": "/cesko/krkonose/pomezni-bouda",
+          "delkaKm": 8.27,
           "useky": [
             {
               "znaceni": "zluta",
@@ -4991,17 +5871,17 @@
             },
             {
               "znaceni": "cervena",
-              "delkaKm": 3.31
+              "delkaKm": 0.16
             }
           ],
           "podilNeznacenychProc": 0,
           "kRucniKontrole": false
         },
         {
-          "cilSlug": "jelenka",
-          "cilNazev": "Jelenka",
-          "cilUrl": "/cesko/krkonose/jelenka",
-          "delkaKm": 11.78,
+          "cilSlug": "rychorska-bouda",
+          "cilNazev": "Rýchorská bouda",
+          "cilUrl": "/cesko/krkonose/rychorska-bouda",
+          "delkaKm": 8.34,
           "useky": [
             {
               "znaceni": "zluta",
@@ -5013,101 +5893,27 @@
             },
             {
               "znaceni": "modra",
-              "delkaKm": 0.1
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 1.84
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.17
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.1
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 5.14
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.19
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.17
+              "delkaKm": 2.39
             },
             {
               "znaceni": "zluta",
-              "delkaKm": 3.25
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.06
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "lovecka-chata",
-          "cilNazev": "Lovecká chata",
-          "cilUrl": "/cesko/krkonose/lovecka-chata",
-          "delkaKm": 11.79,
-          "useky": [
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.33
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.42
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 0.1
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 1.84
+              "delkaKm": 0.75
             },
             {
               "znaceni": "zelena",
-              "delkaKm": 0.17
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 2.06
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 1.61
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.5
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.22
-            },
-            {
-              "znaceni": "modra",
-              "delkaKm": 3.74
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.14
-            },
-            {
-              "znaceni": "zelena",
-              "delkaKm": 0.34
-            },
-            {
-              "znaceni": "modra",
               "delkaKm": 0.32
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 3.7
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.38
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.05
             }
           ],
           "podilNeznacenychProc": 0,
@@ -5288,26 +6094,26 @@
           "kRucniKontrole": false
         },
         {
-          "cilSlug": "vyrovka",
-          "cilNazev": "Výrovka",
-          "cilUrl": "/cesko/krkonose/vyrovka",
-          "delkaKm": 5.07,
+          "cilSlug": "schronisko-nad-lomniczka",
+          "cilNazev": "Schronisko PTTK „Nad Łomniczką\"",
+          "cilUrl": "/polsko/krkonose/schronisko-nad-lomniczka",
+          "delkaKm": 4.96,
           "useky": [
             {
               "znaceni": "modra",
-              "delkaKm": 1.39
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.31
+              "delkaKm": 0.01
             },
             {
               "znaceni": "zluta",
-              "delkaKm": 0.82
+              "delkaKm": 0.62
+            },
+            {
+              "znaceni": "cerna",
+              "delkaKm": 1.87
             },
             {
               "znaceni": "cervena",
-              "delkaKm": 2.55
+              "delkaKm": 2.46
             }
           ],
           "podilNeznacenychProc": 0,
@@ -5536,6 +6342,42 @@
       "nazev": "Vebrovy boudy",
       "prechody": [
         {
+          "cilSlug": "kolinska-bouda",
+          "cilNazev": "Kolínská bouda",
+          "cilUrl": "/cesko/krkonose/kolinska-bouda",
+          "delkaKm": 0.89,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.44
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 0.44
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 0.01
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "prazska-bouda",
+          "cilNazev": "Pražská bouda",
+          "cilUrl": "/cesko/krkonose/prazska-bouda",
+          "delkaKm": 1.08,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 1.08
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
           "cilSlug": "horska-chata-krakonos",
           "cilNazev": "Horská chata Krakonoš",
           "cilUrl": "/cesko/krkonose/horska-chata-krakonos",
@@ -5574,42 +6416,6 @@
             {
               "znaceni": "cervena",
               "delkaKm": 0.08
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "bouda-na-lucinach",
-          "cilNazev": "Bouda Na Lučinách",
-          "cilUrl": "/cesko/krkonose/bouda-na-lucinach",
-          "delkaKm": 1.25,
-          "useky": [
-            {
-              "znaceni": "zelena",
-              "delkaKm": 1.25
-            }
-          ],
-          "podilNeznacenychProc": 0,
-          "kRucniKontrole": false
-        },
-        {
-          "cilSlug": "bouda-slovanka",
-          "cilNazev": "Bouda Slovanka",
-          "cilUrl": "/cesko/krkonose/bouda-slovanka",
-          "delkaKm": 1.29,
-          "useky": [
-            {
-              "znaceni": "zelena",
-              "delkaKm": 1.06
-            },
-            {
-              "znaceni": "zluta",
-              "delkaKm": 0.03
-            },
-            {
-              "znaceni": "cervena",
-              "delkaKm": 0.2
             }
           ],
           "podilNeznacenychProc": 0,
