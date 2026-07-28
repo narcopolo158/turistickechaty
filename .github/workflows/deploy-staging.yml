@@ -93,6 +93,16 @@ jobs:
       - name: Seed obsahu z gitu (data/chaty/**)
         run: npx payload run scripts/seed-chaty.ts
 
+      - name: Kontrola DB po seedu (prerender staví nad ní)
+        run: |
+          node -e "
+            const { Client } = require('pg')
+            const c = new Client({ connectionString: process.env.DATABASE_URL })
+            c.connect().then(() => c.query('select count(*)::int as n from chaty'))
+              .then((r) => { console.log('chat v DB pred buildem: ' + r.rows[0].n); if (!r.rows[0].n) process.exit(1); return c.end() })
+              .catch((e) => { console.error('DB neni pripravena pro build: ' + e.message); process.exit(1) })
+          "
+
       - name: Build (Next + Payload admin, prerender nad seedem)
         run: npm run build
 
@@ -152,7 +162,11 @@ jobs:
               + ' | heslo=' + (u.password ? 'ano, ' + u.password.length + ' znaku' : 'CHYBI!')
               + ' | host=' + u.host + ' | databaze=' + u.pathname)
           " || echo "!! DATABASE_URL nejde rozebrat jako URL (zvlastni znak v hesle? zakoduj ho, nebo zvol heslo jen z pismen a cisel)" >&2
-          PAYLOAD_DB_PUSH=1 npx payload run scripts/seed-chaty.ts
+          # NODE_ENV=development je tu ZÁMĚR, ne omyl: Payload propisuje schéma
+          # jen mimo produkci (connect.js), takže bez toho by nové sloupce
+          # v serverové databázi nikdy nevznikly. Týká se jen tohoto procesu,
+          # běžící aplikace jede dál v produkčním režimu.
+          NODE_ENV=development npx payload run scripts/seed-chaty.ts
           rm -rf .next
           tar -xzf /tmp/chaty-build.tar.gz
           rm -f /tmp/chaty-build.tar.gz

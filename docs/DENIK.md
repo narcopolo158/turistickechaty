@@ -328,6 +328,34 @@ tsc/lint čisté. **Michale: až doběhne deploy, zkus podání znovu** — kdy�
 zase spadne, hláška teď ukáže HTTP kód a technický detail; to mi stačí
 k přesné opravě.
 
+**Dodatek 15 (týž den): PŘÍČINA PADAJÍCÍHO PODÁNÍ DOLOŽENA MĚŘENÍM —
+a můj předchozí „fix" byl no-op.** V sandboxu je PostgreSQL 16 (dosud
+nevyužité!), takže se dá celé CI i běh aplikace reprodukovat lokálně —
+udělal jsem to a hádání skončilo: **Payload propisuje schéma (drizzle
+push) JEN když `NODE_ENV !== 'production'`** (podmínka v
+`@payloadcms/db-postgres/dist/connect.js:110`) — `push: true` v produkci
+NEDĚLÁ NIC, takže dodatek 14 byl neúčinný. Změřeno: seed proti čisté DB
+s `NODE_ENV=production` **padá** přesně toutéž chybou jako CI log
+(`relation … does not exist`, parse_relation.c:1449), s
+`NODE_ENV=development` projde a **vytvoří 5 sloupců `podani_*` u fotek**.
+Na serveru se tedy nové sloupce nikdy nepropsaly (Forge env má
+NODE_ENV=production) a zápis podání padal — přesně Michalův příznak.
+**Oprava:** deploy pouští serverový seed s `NODE_ENV=development`
+(záměr vysvětlen v komentáři workflow — týká se jen toho procesu,
+aplikace běží dál produkčně); `payload.config` má pravdivý komentář
+a `push` se dá už jen vypnout (`PAYLOAD_DB_PUSH=0`, až budou migrace).
+**End-to-end ověřeno lokálně** (build + `next start` + curl):
+podání uloženo (fotka `komunitni-podani` + razítko `draft`), honeypot
+vrátí ok a NIC neuloží, bez souhlasu i neznámá chata odmítnuty,
+na profilu chaty se čekárna nikde neobjeví, a **licenční brána drží**
+(schválení bez souhlasu = APIError, se souhlasem projde). **Otevřené:**
+CI build commitu 8511fdd spadl na prázdné DB, ačkoli seed krok byl
+zelený a lokální reprodukce téhož kódu prošla — příčinu nemám doloženou
+(služba Postgres v Actions?), proto do workflow přibyl krok **„Kontrola
+DB po seedu"**, který příští selhání pojmenuje místo hádání. Konvence
+k zapamatování: **sandbox umí Postgres — CI i produkční běh jde
+reprodukovat, měřit místo odhadovat.**
+
 **Otázky pro Michala:** (1) **32 nových párů razítek čeká na potvrzení** —
 projdeš je očima na razitkuj.cz (odkazy v `docs/DATA-05-razitka-parovani.md`,
 u každého stačí mrknout na otisk/kontext), nebo to necháme na ruční běh

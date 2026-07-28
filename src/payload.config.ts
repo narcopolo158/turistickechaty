@@ -35,11 +35,14 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URL || '',
     },
-    // Propis schématu (drizzle push) je jinak řízen NODE_ENV a v produkci se
-    // MLČKY vypne — nové sloupce a hodnoty enumů by pak v serverové databázi
-    // nevznikly a zápis by padal až za běhu. Deploy proto pouští seed
-    // s PAYLOAD_DB_PUSH=1 a schéma se propíše deterministicky, ne náhodou.
-    push: process.env.PAYLOAD_DB_PUSH ? process.env.PAYLOAD_DB_PUSH === '1' : process.env.NODE_ENV !== 'production',
+    // POZOR (doloženo měřením 28. 7. 2026): Payload propisuje schéma
+    // (drizzle push) JEN když `NODE_ENV !== 'production'` — viz podmínka
+    // v @payloadcms/db-postgres/dist/connect.js. Samotné `push: true`
+    // v produkci NEUDĚLÁ NIC. Deploy proto pouští seed s NODE_ENV=development
+    // (jinak nové sloupce v serverové DB nevzniknou a zápis padá až za běhu —
+    // přesně tak spadlo první komunitní podání). Tady se dá push už jen
+    // vypnout (PAYLOAD_DB_PUSH=0), až projekt přejde na řádné migrace.
+    push: process.env.PAYLOAD_DB_PUSH !== '0',
   }),
   sharp,
   plugins: [],
