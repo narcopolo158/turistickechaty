@@ -95,3 +95,12 @@ vyrazeno:
       „Penzion Zvonička" (katalogy ho kladou do Velké Úpy — kandidátův way
       leží u Lučin; nesoulad lokalit přiznán, může jít o jmenovce) — žádný
       signál veřejného občerstvení ani turistické minulosti. Vyřazení DRŽÍ.
+  - osm: https://www.openstreetmap.org/way/987669812
+    slug: vyhlidka-na-harrachov
+    duvod: >-
+      Vyhlídková plošina u skokanských můstků, ne rozhledna: OSM u ní uvádí
+      height=5. Kandidátem se stala v prvním běhu rozhleden (28. 7. 2026),
+      než v DATA-01 přibyl práh MIN_VYSKA_ROZHLEDNY_M = 8 m. Objekt v OSM
+      dál je, takže bez tohohle zápisu by ho okno chytalo znovu.
+    rozhodl: Claude (návrh z 28. 7. 2026, práh výšky) — k potvrzení Michalem
+    checked: 2026-07-28

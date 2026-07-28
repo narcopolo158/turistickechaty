@@ -68,6 +68,38 @@ celý význam typu i bez okolních značek. Marker je věž bíle v modrém kole
 tedy táž navigační vrstva jako chaty, jen s vlastním tvarem.
 330 testů, kontrola, lint i tsc čisté.
 
+**Dodatek 30 (týž den, po Michalových kliknutích na DATA-01 a DATA-02):
+rozhledny naostro, práh výšky a měřitelný dopad souřadnic na fotky.**
+
+**Rozhledny v Jizerkách — devět nálezů, osm kandidátů.** První ostrý běh dal
+za pravdu Michalovu odhadu („v Jizerkách je hodně rozhleden"): Tanvaldský
+Špičák, Královka, Bramberk, Slovanka, Frýdlantská výšina, Liberecká výšina,
+Sky Walk (Świeradów) a Wieża Widokowa Mirsk — všechny s doloženým občerstvením
+do 100 m, všechny rovnou s typem `rozhledna`. **Pět věží skript nevzal**,
+protože u nich občerstvení doložené není (Na Čihadle, Smrk, Světlý vrch,
+Czerniawska Kopa, Młynica) — přesně jak zadání říká.
+**Nový práh, protože data ukázala díru:** mezi nálezy byla i „vyhlídka na
+Harrachov" s `height=5` a „vyhlídka na Jizerské hory" se 4 m — pětimetrová
+plošina u skokanských můstků není rozhledna. DATA-01 má proto
+`MIN_VYSKA_ROZHLEDNY_M = 8`; filtr sahá **jen na doloženou výšku**, co OSM
+neuvádí, se nedomýšlí a jde k posouzení. Harrachovská vyhlídka smazána
+z kandidátů a zapsána do `_vyrazeno.yaml`, aby ji další běh nezaložil znovu.
+
+**Tři kandidáti k rozhodnutí (nechávám na Michalovi, jsou to kandidáti mimo
+web):** *Frýdlantská výšina* (50,935 / 15,077 — frýdlantské podhůří),
+*Rozhledna Liberecká výšina* (50,778 / 15,092 — nad Libercem) a *Wieża
+Widokowa Mirsk* (50,966 / 15,378 — město Mirsk v podhůří). Všechny tři leží
+v okně dotazu, ale spíš na jeho okraji než v Jizerských horách; klíč zařazení
+je redakční rozhodnutí, ne měření. Zbylých pět je uvnitř pohoří bez debat.
+
+**DATA-02 HOTOVA a odškrtnuta** — doběhl běh, na který položka čekala (první,
+který hledá fotky i chatám bez GPS). A ukázal se hezký řetěz dnešní práce:
+devět profilů, které dnes dostaly souřadnice, má **101 → 187 kandidátů fotek**,
+z toho **130 nových z geosearche**, který u nich předtím neměl kolem čeho
+hledat (Pomezní bouda 1 → 40, Pražská 25 → 45, Kolínská 18 → 28). Doplnit
+souřadnice tedy nebylo jen o mapě: rozsvítilo to i fotky a přístupové trasy.
+331 testů (+1), kontrola, lint i tsc čisté.
+
 **Otázky pro Michala:** (pokud jsou — jinak vynechat)
 ```
 

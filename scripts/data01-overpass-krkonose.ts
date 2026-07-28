@@ -400,7 +400,28 @@ export type ObcerstveniUObjektu = {
 }
 export type Rozhledna = { el: OsmElement; obcerstveni: ObcerstveniUObjektu[] }
 
+/**
+ * Nejnižší doložená výška, při které objekt ještě bereme jako rozhlednu.
+ * První ostrý běh v Jizerských horách (28. 7. 2026) přinesl mezi devíti nálezy
+ * i „vyhlídku na Harrachov" s `height=5` — pětimetrová plošina u skokanských
+ * můstků není rozhledna a v průvodci nemá co dělat. Filtr sahá JEN na objekty,
+ * které výšku doloženou mají: co OSM neuvádí, se nedomýšlí a jde k posouzení.
+ */
+export const MIN_VYSKA_ROZHLEDNY_M = 8
+
+/** Doložená výška věže z tagu `height` (jen číslo v metrech), jinak null. */
+export const vyskaVeze = (el: OsmElement): number | null => {
+  const h = Number.parseFloat((el.tags?.height ?? '').replace(',', '.'))
+  return Number.isFinite(h) && h > 0 ? h : null
+}
+
 export const jeRozhledna = (el: OsmElement): boolean => el.tags?.['tower:type'] === 'observation'
+
+/** Rozhledna, jejíž doložená výška je pod prahem — vyhlídková plošina, ne věž. */
+export const jePrilisNizka = (el: OsmElement): boolean => {
+  const v = vyskaVeze(el)
+  return v != null && v < MIN_VYSKA_ROZHLEDNY_M
+}
 
 /** Doklad občerstvení z tagů objektu — `null`, když objekt občerstvení nenese. */
 export const znackaObcerstveni = (el: OsmElement): { znacka: string; jeChata: boolean } | null => {
@@ -627,6 +648,7 @@ const main = async () => {
   const rozhlednyVzate: { nazev: string; url: string; doklad: string }[] = []
   const rozhlednyUChaty: { nazev: string; url: string; chata: string }[] = []
   const rozhlednyBezObcerstveni: { nazev: string; url: string }[] = []
+  const rozhlednyNizke: { nazev: string; url: string; vyska: number }[] = []
 
   for (const { zeme, iso } of ZEME_DOTAZU) {
     const soubor = join(kandAdr, `_overpass-rozhledny-${zeme}.json`)
@@ -649,6 +671,11 @@ const main = async () => {
     const { elementy, checked } = nactiExport(raw)
     for (const r of parujRozhledny(elementy)) {
       const nazev = r.el.tags?.name ?? '(bez názvu)'
+      // Doložená výška pod prahem = vyhlídková plošina, ne rozhledna.
+      if (jePrilisNizka(r.el)) {
+        rozhlednyNizke.push({ nazev, url: osmUrl(r.el), vyska: vyskaVeze(r.el)! })
+        continue
+      }
       if (!r.obcerstveni.length) {
         rozhlednyBezObcerstveni.push({ nazev, url: osmUrl(r.el) })
         continue
@@ -695,6 +722,8 @@ const main = async () => {
   for (const r of rozhlednyUChaty) console.log(`- ${r.nazev} × ${r.chata} — ${r.url}`)
   console.log(`\nBez doloženého občerstvení (NEBEREME): ${rozhlednyBezObcerstveni.length}`)
   for (const r of rozhlednyBezObcerstveni) console.log(`- ${r.nazev} — ${r.url}`)
+  console.log(`\nPod prahem výšky ${MIN_VYSKA_ROZHLEDNY_M} m — vyhlídková plošina, ne rozhledna (NEBEREME): ${rozhlednyNizke.length}`)
+  for (const r of rozhlednyNizke) console.log(`- ${r.nazev} (${r.vyska} m) — ${r.url}`)
 }
 
 // Spuštěno přímo (tsx) → CLI; import z testů main nespouští.

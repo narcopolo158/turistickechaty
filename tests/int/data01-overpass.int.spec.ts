@@ -15,6 +15,8 @@ import {
   OKOLI_OBCERSTVENI_M,
   ZEME_DOTAZU,
   chataZElementu,
+  MIN_VYSKA_ROZHLEDNY_M,
+  jePrilisNizka,
   jeRozhledna,
   nactiExport,
   nactiVyrazene,
@@ -24,6 +26,7 @@ import {
   parujRozhledny,
   porovnejSRucnim,
   stahniOverpass,
+  vyskaVeze,
   vzdalenostM,
   yamlChaty,
   zapisKandidaty,
@@ -112,6 +115,18 @@ describe('rozhledny s občerstvením', () => {
     expect(r.obcerstveni).toEqual([
       { url: osmUrl(vez(20)), nazev: 'Rozhledna 20', znacka: 'amenity=cafe', vzdalenostM: 0, jeChata: false },
     ])
+  })
+
+  // Z prvního ostrého běhu v Jizerkách (28. 7. 2026): mezi devíti nálezy byla
+  // i „vyhlídka na Harrachov" s height=5 — pětimetrová plošina u můstků není
+  // rozhledna. Práh sahá JEN na doloženou výšku; co OSM neuvádí, se nedomýšlí.
+  it('doložená výška pod prahem dělá z nálezu vyhlídkovou plošinu, ne rozhlednu', () => {
+    expect(jePrilisNizka(vez(60, { height: '5' }))).toBe(true)
+    expect(jePrilisNizka(vez(61, { height: '20.8' }))).toBe(false)
+    expect(jePrilisNizka(vez(62))).toBe(false) // bez údaje se nevyřazuje
+    expect(jePrilisNizka(vez(63, { height: '5,5' }))).toBe(true) // desetinná čárka
+    expect(vyskaVeze(vez(64, { height: 'vysoká' }))).toBeNull()
+    expect(MIN_VYSKA_ROZHLEDNY_M).toBe(8)
   })
 
   it('rozhledna bez občerstvení má prázdný doklad — tu podle rozhodnutí nebereme', () => {
