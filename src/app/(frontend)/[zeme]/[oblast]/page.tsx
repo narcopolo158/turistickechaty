@@ -14,12 +14,14 @@ import PohoriHero from '@/components/PohoriHero'
 import FotoPas from '@/components/FotoPas'
 import FotoVlepena from '@/components/FotoVlepena'
 import RezHrebenem, { type BodChaty } from '@/components/RezHrebenem'
+import StrediskoKarta from '@/components/StrediskoKarta'
 import { SectionBar } from '@/components/ui'
 import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
 import { fotkaStrediska } from '@/lib/fotky-stredisek'
 import { lanovkyOblasti } from '@/lib/lanovky'
+import { chatZBodu } from '@/lib/pristupy'
 import { vrcholyOblasti } from '@/lib/vrcholy'
 import { zanikleChaty } from '@/lib/zanikle'
 
@@ -373,33 +375,19 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         <section className="sec" id="s04" aria-label="Střediska">
           <SectionBar num="04" title="Střediska" variant="red" />
           <div className="pohori-strediska">
-            {strediska.map((s) => {
-              const foto = s.slug ? fotkaStrediska(oblast.slug!, s.slug) : null
-              return (
-                <div key={s.slug} className="pohori-stredisko">
-                  {foto && (
-                    <figure className="pohori-stredisko-foto">
-                      {/* eslint-disable-next-line @next/next/no-img-element -- statická příloha repa (DATA-33), ne upload */}
-                      <img src={foto.url} alt={`${s.nazev} — pohled na středisko`} loading="lazy" />
-                      <figcaption>
-                        foto {foto.autor}, {foto.licence} ·{' '}
-                        <a href={foto.stranka} target="_blank" rel="noopener noreferrer nofollow">
-                          Wikimedia Commons
-                        </a>
-                      </figcaption>
-                    </figure>
-                  )}
-                  <b>{s.nazev}</b>
-                  {s.zeme === 'pl' && <span className="pohori-tag-pl">PL</span>}
-                  {s.perex && <p>{s.perex}</p>}
-                  {s.lanovka && <p className="pohori-stredisko-lanovka">🚡 {s.lanovka}</p>}
-                </div>
-              )
-            })}
+            {strediska.map((s) => (
+              <StrediskoKarta
+                key={s.slug}
+                stredisko={s}
+                foto={s.slug ? fotkaStrediska(oblast.slug!, s.slug) : null}
+                pristupy={chatZBodu(oblastSlug, s.nazev)}
+              />
+            ))}
           </div>
           <p className="pohori-mikropozn">
-            výchozí body túr ke chatám · počty dostupných chat doplní přepočet přístupových tras (DATA-06),
-            výšky obcí ověření ČÚZK (DATA-04) · mini-stránky středisek připravujeme
+            výchozí body túr ke chatám · počet „chat odtud“ je z doložených přístupových tras
+            (DATA-06, značené trasy OpenStreetMap) — kde trasy spočítané nemáme, stojí pomlčka,
+            ne nula · výšky obcí ověření ČÚZK (DATA-04) · mini-stránky středisek připravujeme
           </p>
         </section>
       )}

@@ -507,14 +507,84 @@ stránce je snadný přehlédnutelný nedodělek.
 382 testů (+10), kontrola, lint i tsc čisté; ověřeno rendrem v denním
 i nočním režimu a na mobilu.
 
-**Otázky k dodatku:** 15. **Co je na Twardo fotce?** Stránka snímku říká jen
-„Karkonosze", návrh tvrdí Sněžné jámy. Když to potvrdíš (jako u Luční boudy),
-doplním popisku, body ve fotce i kartu cíle přímo do pásu. 16. **A na
-Mierzejewského snímku** — je to bývalá bouda nad Sněžnými jámami, dnes
-vysílač? Pak dostane rukopisnou popisku a vazbu na Atlas. 17. **Zdrojové
-adresy snímků** (stránka fotky na Unsplash/Pexels) — máš je po ruce? Handoff
-je neuvádí a ze sandboxu se nedohledají; atribuci máme, odkaz na pramen by ji
-uzavřel.
+~~**Otázky k dodatku:** 15. **Co je na Twardo fotce?** 16. **A na
+Mierzejewského snímku?**~~ — **zodpovězeno týž den („na obou je to, co říká
+návrh — potvrzuji"), viz dodatek 10.** 17. **Zdrojové adresy snímků**
+(stránka fotky na Unsplash/Pexels) — máš je po ruce? Handoff je neuvádí a ze
+sandboxu se nedohledají; atribuci máme, odkaz na pramen by ji uzavřel.
+
+**Dodatek 10 (týž den, dvě zprávy od Michala: potvrzení obsahu fotek
+a druhé kolo návrhu „vylepšený návrh — zapracuj"): fotky mluví, přibyl řez
+hřebenem, lišta s kotvami a karty středisek s číslem, které dosud chybělo.**
+Commity `fb66975` a `13db5fb`.
+
+**(1) Potvrzené fotky.** Michal potvrdil, co je na obou snímcích, takže podle
+konvence B smí popisky mluvit. Pás dostal **dva body ve fotce** (bývalá bouda
+nad Sněžnými jámami — dnes vysílač; stěny karů) a **kartu cíle**. Karta se
+ale nevěší na „první cíl v seznamu": u fotky je nové pole **`cilNazev`**,
+které říká, KTERÝ cíl je na snímku, a stránka podle něj hledá záznam
+v `topCile`. Bez toho pole karta nebude — to je pojistka proti tomu, aby
+někdy v budoucnu přistála karta „Sněžka" na fotce odjinud.
+Pás také přešel na **výřez 2400×860 s pevným poměrem stran**: body mají
+polohu v procentech, a kdyby `cover` ořezával podle šířky okna, ukazovaly by
+vedle. Pod 760 px se body schovávají, protože tam se ořez vrací.
+Do `topCile` přibyly **Sněžné jámy** (vazba na Schronisko PTTK na Hali
+Szrenickiej). **Výšku 1 490 m z návrhu jsem nepřevzal** — Michal potvrzoval,
+co je na snímku, ne kótu.
+
+**(2) Řez hřebenem — vlajková novinka druhého kola, a rovnou vylepšená.**
+Návrh u řezu píše „vodorovné rozestupy jsou ilustrační", protože prototyp
+neměl data. My je máme, takže **vodorovná osa je skutečná zeměpisná délka**
+(západ → východ) a svislá nadmořská výška: kdo si najde chatu na křivce, vidí,
+kde na hřebeni doopravdy stojí. Silueta vede přes nejvyšší pojmenované vrcholy
+OSM, body jsou profily s doloženou výškou **i** polohou — 55 z 63, a komponenta
+to řekne. Body jsou **odkazy, ne divy s onClick**: klávesnice je projde tabem,
+čtečka přečte název i výšku. Kotva má plochu 22 px, aby se dala trefit prstem;
+nulová plocha by byla past.
+Dvě věci, které řekl až render: popisky **Luční hory (1 556 m) a Studniční
+hory (1 555 m)** se překryly do nečitelné kaše — vybírají se proto tři nejvyšší
+**s odstupem**; a data na řez se nevytahují z 4MB 3D stránky při každém buildu,
+ale jednorázově skriptem **`vrcholy-z-3d.ts`** do `data/vrcholy/<oblast>.json`
+(Krkonoše 58 vrcholů, Jizerky 6). Není to nový pramen, jen použitelný tvar
+téhož (OSM, ODbL).
+
+**(3) Lišta „na stránce".** Tenký sticky pás s kotvami. Odkazuje **jen na
+sekce, které oblast opravdu má** — odkaz na sekci, kterou stránka nemá, by
+vedl do prázdna. `top` musel jít pod hlavičku webu (jinak lišta zajela pod ni
+a byl z ní vidět proužek) a sekce mají `scroll-margin-top`, aby kotva
+neskončila pod obojím.
+
+**(4) Karty středisek — a číslo, které tam mělo být od začátku.** Návrh chce
+velké „N chat odtud"; u nás u něj do dneška stála poznámka „doplní přepočet
+přístupových tras". Přitom ta data v repu leží od DATA-06. Past byla
+v názvech: pipeline zapisuje výchozí body podrobněji, než se jmenují střediska
+(„Janské Lázně, horní stanice kabinkové lanovky", „Szklarska Poręba Górna,
+železniční stanice"), takže porovnání celých názvů dá polovině středisek
+pomlčku, i když trasy odtud doložené máme. Porovnává se proto **obec** (část
+před čárkou, i s upřesněním bez čárky) a **počítají se chaty, ne trasy**.
+Vyšlo: Pec pod Sněžkou 32, Špindlerův Mlýn 15, Janské Lázně 6, Szklarska
+Poręba 6, Strážné 6, Černý Důl 4, Karpacz 3. **Vrchlabí a Vítkovice mají
+pomlčku** a je u ní napsáno proč — nula by tvrdila, že odtud nikam cesta
+nevede. Karta k tomu dostala malovaný hřeben s vlaječkou v barvě země.
+
+**Co z druhého kola návrhu VĚDOMĚ nezpracovávám** (a proč, ať se to nemusí
+znovu odvozovat): **zimní varianta hera** čeká na zimní snímek (mechanika je
+levná, fotka chybí); **pás „Podmínky na hřebeni"** je v návrhu nenapojený
+placeholder s poznámkou „živě po napojení ČHMÚ" — prázdný slib na stránce,
+která si zakládá na tom, že neslibuje, dokud nemá; **foto-sloty v top cílech**
+jsou prototypový nástroj pro předání, ne produkční prvek; **jízdenkové karty
+místo tabulky lanovek** by ubraly údaje (délka, převýšení, chaty nahoře),
+takže by to byl regres. **Malovaná 3D mapa** zůstává nepřevzatá ze stejného
+důvodu jako minule — pod posterem běží skutečný model.
+
+397 testů (+15), kontrola, lint i tsc čisté; ověřeno rendrem včetně hoveru
+bodů řezu, skoku na kotvu a nočního režimu.
+
+**Otázky k dodatku:** 18. **Jízdenkové karty lanovek** — chceš je jako
+DOPLNĚK pod tabulku (tabulka zůstane), nebo tabulka stačí? 19. **Zimní fotka**
+do sezónního hera — máš nějakou, nebo ji hledat na Unsplash jako ty ostatní?
+20. **Podmínky na hřebeni** — trvám na tom, že prázdný pás neslibovat; kdybys
+chtěl opak, řekni a doplním ho v podobě z návrhu.
 
 ---
 

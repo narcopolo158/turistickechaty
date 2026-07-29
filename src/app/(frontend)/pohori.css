@@ -717,3 +717,21 @@ body.dark .pohori-nav a { background: #1b242e; border-color: #2a3541; color: #e7
 @media print {
   .pohori-nav { display: none; }
 }
+
+/* ── Karta střediska s emblémem (handoff F1 v2, sekce 04) ─────────────────
+   Malovaný hřeben s vlaječkou v hlavičce (dekorace v barvě země) a velké
+   číslo „N chat odtud" z doložených přístupových tras. */
+.strk-emblem { margin: -14px -16px 10px; height: 44px; }
+.strk-emblem svg { display: block; width: 100%; height: 100%; }
+.strk-hreben-zad { fill: rgba(157, 178, 195, 0.35); }
+.strk-hreben { fill: rgba(157, 178, 195, 0.6); }
+body.dark .strk-hreben-zad { fill: rgba(157, 178, 195, 0.16); }
+body.dark .strk-hreben { fill: rgba(157, 178, 195, 0.28); }
+.strk-vlajka path { stroke: var(--red); stroke-width: 2; fill: var(--red); }
+.pohori-stredisko--pl .strk-vlajka path { stroke: #2a5cb8; fill: #2a5cb8; }
+.strk-hlava { display: flex; align-items: baseline; gap: 8px; }
+.strk-cislo { display: flex; align-items: baseline; gap: 7px; margin: 8px 0 2px; }
+.strk-cislo b { font: 600 26px/1 'Space Grotesk', sans-serif; color: var(--ink); }
+.strk-cislo b.strk-cislo--prazdno { color: var(--label); }
+.strk-cislo span { font: 500 11.5px/1.35 Inter, sans-serif; color: var(--muted); }
+body.dark .strk-cislo b { color: #e7ecf1; }
