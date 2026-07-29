@@ -26,10 +26,19 @@
  * PRAVIDLA VÝBĚRU (v tomhle pořadí, ať je rozhodnutí přezkoumatelné):
  *   1. `prefer` z manifestu — redakční volba přebíjí všechno ostatní,
  *   2. licence musí projít sítem DATA-02 (CC0/BY/BY-SA/PD; NC a ND ven),
- *   3. nález z geosearche před fulltextem (geotag = fotka opravdu odtud),
- *   4. na šířku před na výšku (karta i hlavička střediska jsou širší než vyšší),
- *   5. větší plocha před menší.
+ *   3. u lanovky tři síta předmětu (viz `jmenujeJinouDrahu`, `jeOStavbe`,
+ *      `jePohledZLanovky`) — bez nich se na stránku dostane sousední dráha,
+ *      dům pod ní nebo výhled z kabiny,
+ *   4. snímek, který objekt JMENUJE, před snímkem, který ho jen geotaguje,
+ *   5. nález z geosearche před fulltextem (geotag = fotka opravdu odtud),
+ *   6. na šířku před na výšku (karta i hlavička střediska jsou širší než vyšší),
+ *   7. větší plocha před menší,
+ *   8. jeden soubor jen pro jeden objekt — dvě dráhy nesmí sdílet fotku.
  * Co pravidla nevyberou, se nestahuje — radši žádná fotka než náhodná.
+ *
+ * POPISKA: do manifestu jde i `popis` = název souboru na Commons a web ho
+ * vypisuje pod fotkou. Snímek tak sám říká, co je na něm — kdyby výběr přesto
+ * jednou minul, pozná to čtenář i redakce na první pohled, ne až po roce.
  *
  * ATRIBUCE: licence CC BY/BY-SA vyžadují uvedení autora — proto se autor
  * ukládá do manifestu a web ho vypisuje u fotky. Fotka bez doloženého autora
@@ -140,6 +149,124 @@ export const jeOLanovce = (s: CommonsStranka): boolean => {
   return SLOVA_LANOVKY.some((slovo) => text.includes(slovo))
 }
 
+/* ------------------------------------------------------------------ *
+ * Kdo je na snímku — a co z něj je jen kulisa
+ *
+ * První ostrý běh ukázal, že samo slovo „lanovka" v názvu nestačí. Prošly
+ * tři druhy snímků, které na stránce dráhy tvrdily něco, co na nich není:
+ *   1. CIZÍ DRÁHA — „Lanovka Protěž" se vybrala pro Hofmanky Express,
+ *      „Lanová dráha Pec–Hnědý vrch" pro Zahrádky Express;
+ *   2. STAVBA POD DRÁHOU — „Černý Důl, čp. 263 pod lanovkou Saxner" je
+ *      fotka domu, ne dráhy; „Karpacz, Hotel Gołębiewski" prošel na zmínku
+ *      v popisu;
+ *   3. VÝHLED Z LANOVKY — „Widok z wyciągu" je snímek krajiny, lanovka je
+ *      stanoviště fotografa, ne předmět.
+ * Každý z těch tří případů má níž vlastní síto a vlastní test.
+ * ------------------------------------------------------------------ */
+
+/** Text na holé ASCII malými písmeny — Commons je vícejazyčný a skloňuje. */
+export const bezDiakritiky = (s: string): string =>
+  s
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/gu, '')
+    .replace(/ł/gu, 'l')
+    .replace(/Ł/gu, 'l')
+    .toLowerCase()
+
+/**
+ * Slova názvu, která nic nerozlišují: „lanovka", „express" i „wyciąg" nese
+ * skoro každá dráha v okolí. Kdyby se porovnávala i ta, byl by „shodou"
+ * s Hofmanky Expressem každý snímek s popiskou „lanovka".
+ */
+const GENERICKA_SLOVA = new Set([
+  'lanovka', 'lanovky', 'lanova', 'lanove', 'draha', 'drahy', 'sedackova', 'kabinova', 'vlek',
+  'wyciag', 'wyciagu', 'kolej', 'kolejka', 'linowa', 'linowy', 'express', 'expres', 'line',
+  'lift', 'chairlift', 'seilbahn', 'gondola', 'hora', 'gora', 'vrch',
+])
+
+/** Slova názvu, po kterých se dráha pozná — bez generických a krátkých. */
+export const rozlisujiciSlova = (nazev: string): string[] =>
+  bezDiakritiky(nazev)
+    .split(/[^a-z0-9]+/u)
+    .filter((s) => s.length >= 4 && !GENERICKA_SLOVA.has(s))
+
+/**
+ * Slovo v textu i ve skloňovaném tvaru: „Szrenica" má na Commons podobu
+ * „Szrenicę" i „Szrenice", takže se porovnává začátek slova, ne celé.
+ */
+const obsahujeSlovo = (text: string, slovo: string): boolean =>
+  new RegExp(`\\b${slovo.slice(0, Math.max(4, slovo.length - 2))}`, 'u').test(text)
+
+/** Nakolik text pojmenovává dráhu: všechna rozlišující slova / aspoň jedno / žádné. */
+export const shodaNazvu = (text: string, nazev: string): 'plna' | 'castecna' | 'zadna' => {
+  const slova = rozlisujiciSlova(nazev)
+  if (slova.length === 0) return 'zadna'
+  const nalezena = slova.filter((s) => obsahujeSlovo(text, s)).length
+  if (nalezena === slova.length) return 'plna'
+  return nalezena > 0 ? 'castecna' : 'zadna'
+}
+
+/**
+ * Snímek pojmenovává JINOU dráhu a tuhle vůbec — pak na její stránce nemá
+ * co dělat. Podmínka je schválně nesymetrická: u cizí dráhy se žádá shoda
+ * ve všech rozlišujících slovech (aby veto nezpůsobila náhoda), u vlastní
+ * stačí jediné (Szrenica I a II mají rozlišující slovo společné, takže se
+ * navzájem nevetují — rozdělí je až pravidlo o jednom souboru pro jednu
+ * dráhu).
+ */
+export const jmenujeJinouDrahu = (s: CommonsStranka, nazev: string, ostatni: string[]): boolean => {
+  const text = bezDiakritiky(textStranky(s))
+  if (shodaNazvu(text, nazev) !== 'zadna') return false
+  return ostatni.some((jiny) => shodaNazvu(text, jiny) === 'plna')
+}
+
+/**
+ * Předmětem snímku je stavba, ne dráha. „Černý Důl, čp. 263 pod lanovkou
+ * Saxner" je fotka domu — dráha je v názvu jen jako orientační bod.
+ */
+const SLOVA_STAVBY = [
+  'čp.', 'č.p.', 'hotel', 'kostel', 'kostol', 'kościół', 'kaple', 'kaplič', 'kaplic',
+  'penzion', 'pension', 'restaurac', 'restauracj', 'fontán', 'hřbitov', 'cmentarz',
+  'muzeum', 'pomník', 'socha', 'zámek', 'dworzec', 'křížová cesta', 'fontána',
+]
+export const jeOStavbeText = (text: string): boolean =>
+  SLOVA_STAVBY.some((slovo) => text.toLowerCase().includes(slovo))
+export const jeOStavbe = (s: CommonsStranka): boolean => jeOStavbeText(textStranky(s))
+
+/**
+ * Naopak: snímek CELÉHO místa, ne jedné budovy. U střediska je to ta lepší
+ * fotka — první běh dal Vítkovicím kostel, Dolnímu Dvoru hřbitov a Benecku
+ * kapličku, přestože v týchž kandidátech ležel „celkový pohled", „údolí"
+ * i „bouda Morava". Fráze jsou úzké schválně: „, centrum" projde u „Benecko,
+ * centrum", ale ne u „Vrchlabi Krkonosska 16 IT Centrum".
+ */
+const SLOVA_ROZHLEDU = [
+  'celkovy pohled', 'panorama', 'udoli', 'sjezdovka', 'pohled na', 'widok na',
+  'view of', ', centrum', 'centrum obce',
+]
+export const maRozhled = (text: string): boolean => {
+  const t = bezDiakritiky(text)
+  return SLOVA_ROZHLEDU.some((slovo) => t.includes(slovo))
+}
+
+/**
+ * Lanovka je stanoviště fotografa, ne předmět: „Widok z wyciągu" ukazuje
+ * krajinu. Fráze jsou schválně úzké — „pohled od Slunečné dolů" je naopak
+ * pohled NA dráhu a projít musí.
+ */
+const SLOVA_ZPOHLEDU = [
+  'widok z wyciag', 'widok z kolei', 'widok z gondol', 'pohled z lanovky',
+  'z okna lanovky', 'view from the cable', 'view from the chairlift', 'blick von der seilbahn',
+]
+export const jePohledZLanovky = (s: CommonsStranka): boolean => {
+  const text = bezDiakritiky(textStranky(s))
+  return SLOVA_ZPOHLEDU.some((slovo) => text.includes(bezDiakritiky(slovo)))
+}
+
+/** Popiska pod fotkou: název souboru bez „File:" a bez přípony. */
+export const popisSouboru = (soubor: string): string =>
+  soubor.replace(/^File:/u, '').replace(/\.[a-z0-9]+$/iu, '').replace(/_/gu, ' ').trim()
+
 export type FotkaStrediska = {
   soubor: string
   autor: string
@@ -184,19 +311,39 @@ export const kandidatZeStranky = (
 
 /**
  * Pořadí kandidátů podle pravidel výběru. `prefer` (redakční volba) vyhrává,
- * pak geosearch nad fulltextem, pak šířka nad výškou, pak větší plocha.
+ * pak snímek, který objekt jmenuje, pak geosearch nad fulltextem, pak šířka
+ * nad výškou, pak větší plocha.
+ *
+ * PROČ SHODA JMÉNA PŘED GEOSEARCHEM: geotag říká jen „vyfoceno tady".
+ * U Hofmanky Expressu tak vyhrál geotagovaný snímek sousední Protěže nad
+ * fulltextovým „Janske Lazne 2022 P57 Hofmanky Express", který dráhu
+ * jmenuje. Doložené jméno je silnější důkaz než souřadnice o pár set metrů
+ * vedle.
  */
-export const seradKandidaty = (kandidati: FotkaStrediska[], prefer?: string): FotkaStrediska[] =>
-  [...kandidati].sort((a, b) => {
+export const seradKandidaty = (
+  kandidati: FotkaStrediska[],
+  volby?: string | { prefer?: string; nazev?: string },
+): FotkaStrediska[] => {
+  const { prefer, nazev } = typeof volby === 'string' ? { prefer: volby, nazev: undefined } : (volby ?? {})
+  const poradiShody = { plna: 0, castecna: 1, zadna: 2 } as const
+  const shoda = (f: FotkaStrediska) =>
+    nazev ? poradiShody[shodaNazvu(bezDiakritiky(f.soubor), nazev)] : 0
+  /** Celé místo před jednou budovou — u střediska chceme obec, ne kapličku. */
+  const predmet = (f: FotkaStrediska) =>
+    maRozhled(f.soubor) ? 0 : jeOStavbeText(f.soubor) ? 2 : 1
+  return [...kandidati].sort((a, b) => {
     if (prefer) {
       if (a.soubor === prefer) return -1
       if (b.soubor === prefer) return 1
     }
+    if (shoda(a) !== shoda(b)) return shoda(a) - shoda(b)
+    if (predmet(a) !== predmet(b)) return predmet(a) - predmet(b)
     if (a.nalezeno !== b.nalezeno) return a.nalezeno === 'geosearch' ? -1 : 1
     const naSirku = (f: FotkaStrediska) => (f.sirka > f.vyska ? 0 : 1)
     if (naSirku(a) !== naSirku(b)) return naSirku(a) - naSirku(b)
     return b.sirka * b.vyska - a.sirka * a.vyska
   })
+}
 
 export type ZaznamManifestu = {
   slug: string
@@ -204,8 +351,12 @@ export type ZaznamManifestu = {
   soubor: string
   vybrano: FotkaStrediska
   alternativy: FotkaStrediska[]
+  /** Název souboru na Commons jako popiska — ať snímek na webu řekne, co je na něm. */
+  popis?: string
   /** Redakční volba — když je vyplněná, další běh vezme tenhle soubor. */
   prefer?: string
+  /** Proč ta redakční volba — přenáší se do dalšího běhu, ať důvod nezmizí. */
+  poznamka?: string
 }
 
 const MANIFEST = (oblast: string) => join(process.cwd(), 'data', 'strediska', `_fotky-${oblast}.json`)
@@ -328,11 +479,21 @@ const zpracujSkupinu = async (vstup: {
       ] ?? [])
     : []
   const preferDle = new Map(stary.filter((z) => z.prefer).map((z) => [z.slug, z.prefer!]))
+  const poznamkaDle = new Map(stary.filter((z) => z.poznamka).map((z) => [z.slug, z.poznamka!]))
 
   const manifest: ZaznamManifestu[] = []
   const bezFotky: { slug: string; duvod: string }[] = []
+  /**
+   * Jeden soubor smí posloužit jen jednomu objektu. Po prvním běhu měly tři
+   * dvojice drah tutéž fotku (Hnědý vrch a Zahrádky Express, Saxner a Family
+   * Express, Szrenica I a II) — u jedné z nich to nutně byla fotka cizí
+   * dráhy. Redakční `prefer` se rezervuje dopředu, ať mu ho dřívější objekt
+   * nesebere.
+   */
+  const pouzite = new Set<string>([...preferDle.values()])
 
   for (const s of objekty) {
+    const ostatniNazvy = objekty.filter((o) => o.slug !== s.slug).map((o) => o.nazev)
     const kandidati: FotkaStrediska[] = []
     const odmitnuti: string[] = []
     for (const [url, druhNalezu] of [
@@ -347,6 +508,22 @@ const zpracujSkupinu = async (vstup: {
           odmitnuti.push(`${stranka.title}: název ani popis nemluví o lanovce`)
           continue
         }
+        // Tři síta z prvního ostrého běhu: cizí dráha, stavba pod dráhou,
+        // výhled Z lanovky. Redakční `prefer` je přebíjí — člověk se díval.
+        if (s.jenOLanovce && stranka.title !== preferDle.get(s.slug)) {
+          if (jmenujeJinouDrahu(stranka, s.nazev, ostatniNazvy)) {
+            odmitnuti.push(`${stranka.title}: jmenuje jinou dráhu, tuhle ne`)
+            continue
+          }
+          if (jeOStavbe(stranka)) {
+            odmitnuti.push(`${stranka.title}: předmětem snímku je stavba, dráha je jen orientační bod`)
+            continue
+          }
+          if (jePohledZLanovky(stranka)) {
+            odmitnuti.push(`${stranka.title}: výhled Z lanovky, ne snímek lanovky`)
+            continue
+          }
+        }
         const v = kandidatZeStranky(stranka, druhNalezu)
         if ('odmitnuto' in v) odmitnuti.push(`${stranka.title}: ${v.odmitnuto}`)
         else if (!kandidati.some((k) => k.soubor === v.soubor)) kandidati.push(v)
@@ -355,20 +532,28 @@ const zpracujSkupinu = async (vstup: {
       await new Promise((r) => setTimeout(r, dobaCekaniMs(1, 1_200)))
     }
 
-    const serazeni = seradKandidaty(kandidati, preferDle.get(s.slug))
-    const vybrano = serazeni[0]
+    const serazeni = seradKandidaty(kandidati, { prefer: preferDle.get(s.slug), nazev: s.nazev })
+    const vybrano = serazeni.find((k) => !pouzite.has(k.soubor))
     if (!vybrano) {
-      bezFotky.push({ slug: s.slug, duvod: `žádný licenčně čistý kandidát (odmítnuto ${odmitnuti.length})` })
+      bezFotky.push({
+        slug: s.slug,
+        duvod: kandidati.length
+          ? `všichni kandidáti (${kandidati.length}) už patří jinému objektu`
+          : `žádný licenčně čistý kandidát (odmítnuto ${odmitnuti.length})`,
+      })
       console.log(`  ${s.nazev}: bez fotky — ${odmitnuti.length} kandidátů neprošlo sítem`)
       continue
     }
+    pouzite.add(vybrano.soubor)
     manifest.push({
       slug: s.slug,
       nazev: s.nazev,
       soubor: cestaVWebu(s.slug),
       vybrano,
-      alternativy: serazeni.slice(1, 6),
+      popis: popisSouboru(vybrano.soubor),
+      alternativy: serazeni.filter((k) => k.soubor !== vybrano.soubor).slice(0, 5),
       ...(preferDle.get(s.slug) ? { prefer: preferDle.get(s.slug) } : {}),
+      ...(poznamkaDle.get(s.slug) ? { poznamka: poznamkaDle.get(s.slug) } : {}),
     })
     console.log(
       `  ${s.nazev}: ${vybrano.soubor} (${vybrano.sirka}×${vybrano.vyska}, ${vybrano.licence}, ${vybrano.nalezeno}) + ${serazeni.length - 1} alternativ`,

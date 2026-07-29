@@ -22,7 +22,14 @@ export type Stredisko = {
   lanovka?: string | null
 }
 
-export type FotoStrediska = { url: string; autor: string; licence: string; stranka: string }
+export type FotoStrediska = {
+  url: string
+  autor: string
+  licence: string
+  stranka: string
+  /** Název souboru na Commons — popiska, ať snímek sám řekne, co je na něm. */
+  popis?: string
+}
 
 export function StrediskoKarta({
   stredisko,
@@ -55,8 +62,9 @@ export function StrediskoKarta({
       {foto && (
         <figure className="pohori-stredisko-foto">
           {/* eslint-disable-next-line @next/next/no-img-element -- statická příloha repa (DATA-33), ne upload */}
-          <img src={foto.url} alt={`${stredisko.nazev} — pohled na středisko`} loading="lazy" />
+          <img src={foto.url} alt={foto.popis ?? `${stredisko.nazev} — pohled na středisko`} loading="lazy" />
           <figcaption>
+            {foto.popis && <b className="foto-popis" title={foto.popis}>{foto.popis}</b>}
             foto {foto.autor}, {foto.licence} ·{' '}
             <a href={foto.stranka} target="_blank" rel="noopener noreferrer nofollow">
               Wikimedia Commons

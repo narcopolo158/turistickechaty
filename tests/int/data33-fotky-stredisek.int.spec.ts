@@ -7,7 +7,7 @@
  * výběru je přesně to napsané v hlavičce skriptu — jinak by se do repa
  * commitla náhodná fotka a nikdo by nepoznal proč.
  */
-import { mkdirSync, mkdtempSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 
@@ -15,9 +15,15 @@ import { describe, expect, it } from 'vitest'
 
 import {
   jeOLanovce,
+  jeOStavbe,
+  jePohledZLanovky,
+  jmenujeJinouDrahu,
   kandidatZeStranky,
   nactiStrediska,
+  popisSouboru,
+  rozlisujiciSlova,
   seradKandidaty,
+  shodaNazvu,
   type FotkaStrediska,
 } from '../../scripts/data33-fotky-stredisek'
 
@@ -175,6 +181,141 @@ describe('pořadí výběru', () => {
       'File:RedakceChce.jpg',
     )
     expect(prvni.soubor).toBe('File:RedakceChce.jpg')
+  })
+
+  /**
+   * Přesně ten případ, který první ostrý běh prohrál: Hofmanky Express dostal
+   * geotagovaný snímek sousední Protěže, protože geosearch měl přednost před
+   * fulltextem. Geotag ale říká jen „vyfoceno poblíž"; doložené jméno v názvu
+   * souboru je silnější důkaz než souřadnice o pár set metrů vedle.
+   */
+  it('snímek, který dráhu JMENUJE, jde před ten, který ji jen geotaguje', () => {
+    const [prvni] = seradKandidaty(
+      [
+        foto({ soubor: 'File:Lanovka Protěž, pohled od Slunečné dolů.jpg', nalezeno: 'geosearch', sirka: 4000, vyska: 3000 }),
+        foto({ soubor: 'File:Janske Lazne 2022 P57 Hofmanky Express.jpg', nalezeno: 'fulltext', sirka: 1000, vyska: 800 }),
+      ],
+      { nazev: 'Hofmanky Express' },
+    )
+    expect(prvni.soubor).toContain('Hofmanky Express')
+  })
+})
+
+/**
+ * Síta předmětu snímku (oprava po prvním ostrém běhu, 29. 7. 2026).
+ *
+ * Samo slovo „lanovka" v názvu nestačilo: na stránky drah se dostala sousední
+ * dráha, dům pod dráhou i výhled Z kabiny. Každé síto má proto svůj test —
+ * a hlavně test na to, co propustit MUSÍ, protože nejsnazší způsob, jak síto
+ * „opravit", je utáhnout ho tak, že nepustí ani správný snímek.
+ */
+describe('kdo je na snímku', () => {
+  const stranka = (title: string, popis?: string) =>
+    ({
+      title,
+      imageinfo: [{ extmetadata: popis ? { ImageDescription: { value: popis } } : {} }],
+    }) as Parameters<typeof jeOStavbe>[0]
+
+  const DRAHY = ['Hofmanky Express', 'Protěž', 'Hnědý vrch', 'Zahrádky Express', 'Szrenica I', 'Szrenica II', 'Čertova hora']
+
+  describe('cizí dráha', () => {
+    it('„Lanovka Protěž" se nesmí vydávat za Hofmanky Express', () => {
+      expect(jmenujeJinouDrahu(stranka('File:Lanovka Protěž, pohled od Slunečné dolů.jpg'), 'Hofmanky Express', DRAHY)).toBe(true)
+      expect(jmenujeJinouDrahu(stranka('File:Lanová dráha Pec pod Sněžkou-Hnědý vrch, lanovka(1).jpg'), 'Zahrádky Express', DRAHY)).toBe(true)
+    })
+
+    it('vlastní dráze její vlastní snímek nevetuje', () => {
+      expect(jmenujeJinouDrahu(stranka('File:Lanovka Protěž,spodní stanice.jpg'), 'Protěž', DRAHY)).toBe(false)
+    })
+
+    it('Szrenica I a II se navzájem nevetují — rozlišující slovo mají společné', () => {
+      const s = stranka('File:Wyciąg na Szrenicę - przesiadka na II etap - panoramio.jpg')
+      expect(jmenujeJinouDrahu(s, 'Szrenica I', DRAHY)).toBe(false)
+      expect(jmenujeJinouDrahu(s, 'Szrenica II', DRAHY)).toBe(false)
+      // …zato Karkonosz Express, který v textu není, tenhle snímek nedostane.
+      expect(jmenujeJinouDrahu(s, 'Karkonosz Express', DRAHY)).toBe(true)
+    })
+
+    it('skloňovaný tvar polského jména se pozná (Szrenicę, Szrenice)', () => {
+      expect(shodaNazvu('wyciag na szrenice', 'Szrenica I')).toBe('plna')
+      expect(rozlisujiciSlova('1 - Wyciąg „Zbyszek"')).toEqual(['zbyszek'])
+      expect(rozlisujiciSlova('Hnědý vrch')).toEqual(['hnedy'])
+    })
+  })
+
+  describe('stavba pod dráhou', () => {
+    it('dům ani hotel nejsou fotka dráhy, i když ji název zmiňuje', () => {
+      expect(jeOStavbe(stranka('File:Černý Důl, čp. 263 pod lanovkou Saxner.jpg'))).toBe(true)
+      expect(jeOStavbe(stranka('File:Karpacz, Hotel Gołębiewski - fotopolska.eu (192884).jpg'))).toBe(true)
+    })
+
+    it('stanice dráhy stavba v tomhle smyslu není — jinak by síto vyhodilo to nejlepší', () => {
+      expect(jeOStavbe(stranka('File:Černý Důl, dolní stanice lanovky Saxner.jpg'))).toBe(false)
+      expect(jeOStavbe(stranka('File:Špindlerův Mlýn, sedačková lanovka na Medvědín.jpg'))).toBe(false)
+    })
+  })
+
+  describe('výhled Z lanovky', () => {
+    it('„Widok z wyciągu" je snímek krajiny, ne dráhy', () => {
+      expect(jePohledZLanovky(stranka('File:Widok z wyciągu ^1 - panoramio.jpg'))).toBe(true)
+    })
+
+    it('„pohled od Slunečné dolů" je naopak pohled NA dráhu a projít musí', () => {
+      expect(jePohledZLanovky(stranka('File:Lanovka Protěž, pohled od Slunečné dolů.jpg'))).toBe(false)
+    })
+  })
+
+  it('popiska pod fotkou je název souboru bez File: a bez přípony', () => {
+    expect(popisSouboru('File:Lanovka_Svatý_Petr-Pláň_1949.png')).toBe('Lanovka Svatý Petr-Pláň 1949')
+  })
+})
+
+/**
+ * Hlídka nad tím, co je opravdu v repu. Testy výš hlídají pravidla, tenhle
+ * hlídá výsledek — protože ke čtenáři se dostane commitnutý manifest, ne
+ * funkce. Po prvním ostrém běhu měly tři dvojice drah tutéž fotku; u jedné
+ * z každé dvojice to nutně byl snímek cizí dráhy.
+ */
+describe('manifest v repu', () => {
+  const manifest = (cesta: string, klic: string) => {
+    const p = join(process.cwd(), 'data', cesta)
+    if (!existsSync(p)) return []
+    return (JSON.parse(readFileSync(p, 'utf8'))[klic] ?? []) as {
+      slug: string
+      soubor: string
+      popis?: string
+      vybrano: { soubor: string }
+    }[]
+  }
+  const lanovky = manifest(join('lanovky', '_fotky-krkonose.json'), 'lanovky')
+  const strediska = manifest(join('strediska', '_fotky-krkonose.json'), 'strediska')
+
+  it('jeden soubor z Commons slouží nejvýš jednomu objektu', () => {
+    for (const [kde, zaznamy] of [
+      ['lanovky', lanovky],
+      ['střediska', strediska],
+    ] as const) {
+      const dle = new Map<string, string[]>()
+      for (const z of zaznamy) dle.set(z.vybrano.soubor, [...(dle.get(z.vybrano.soubor) ?? []), z.slug])
+      const sdilene = [...dle].filter(([, slugy]) => slugy.length > 1)
+      expect(sdilene, `${kde}: tentýž soubor u víc objektů → u jednoho z nich je to fotka něčeho jiného`).toEqual([])
+    }
+  })
+
+  it('každý záznam nese popisku, aby fotka na webu řekla, co je na ní', () => {
+    const bez = [...lanovky, ...strediska].filter((z) => !z.popis).map((z) => z.slug)
+    expect(bez).toEqual([])
+  })
+
+  it('ke každému záznamu existuje i stažený soubor (a naopak žádný osiřelý)', () => {
+    for (const [adresar, zaznamy] of [
+      ['lanovky', lanovky],
+      ['strediska', strediska],
+    ] as const) {
+      const kor = join(process.cwd(), 'public', adresar)
+      const naDisku = existsSync(kor) ? readdirSync(kor).filter((f) => f.endsWith('.jpg')).sort() : []
+      expect(zaznamy.map((z) => `${z.slug}.jpg`).sort(), `${adresar}: manifest a public/ se rozešly`).toEqual(naDisku)
+    }
   })
 })
 

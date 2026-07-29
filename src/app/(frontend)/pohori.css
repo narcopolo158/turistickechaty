@@ -828,3 +828,12 @@ body.dark .lanovky-tabulka summary { color: #e7ecf1; }
 .strk-hlava b a:hover { color: var(--red); }
 .lan-karta h3 a, .jzd-telo-karty b a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--akcent, var(--jzd, var(--red))); }
 .lan-karta h3 a:hover, .jzd-telo-karty b a:hover { color: var(--akcent, var(--jzd, var(--red))); }
+
+/* Popiska fotky = název souboru na Commons (DATA-33). Stojí nad atribucí
+   samostatně, protože říká, CO na snímku je — u karty střediska i u mini-stránek
+   je to jediná pojistka, aby fotka tiše netvrdila něco jiného, než ukazuje. */
+.pohori-stredisko-foto .foto-popis,
+.mini-foto .foto-popis,
+.foto-popis { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+  font: 600 9.5px/1.35 Inter, sans-serif; color: var(--ink); margin-bottom: 1px; }
+body.dark .foto-popis { color: #e7ecf1; }

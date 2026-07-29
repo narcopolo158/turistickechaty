@@ -14,12 +14,15 @@ export type FotkaLanovky = {
   licence: string
   licenceUrl?: string
   stranka: string
+  /** Název souboru na Commons — popiska, ať snímek sám řekne, co je na něm. */
+  popis?: string
 }
 
 type Manifest = {
   lanovky?: {
     slug?: string
     soubor?: string
+    popis?: string
     vybrano?: { autor?: string; licence?: string; licenceUrl?: string; stranka?: string }
   }[]
 }
@@ -42,6 +45,7 @@ const nactiManifest = (oblast: string): Map<string, FotkaLanovky> => {
         licence: v.licence,
         licenceUrl: v.licenceUrl,
         stranka: v.stranka,
+        popis: z.popis,
       })
     }
   }

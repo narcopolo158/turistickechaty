@@ -17,12 +17,15 @@ export type FotkaStrediska = {
   licenceUrl?: string
   /** Stránka souboru na Commons — doklad licence i původu. */
   stranka: string
+  /** Název souboru na Commons — popiska, ať snímek sám řekne, co je na něm. */
+  popis?: string
 }
 
 type Manifest = {
   strediska?: {
     slug?: string
     soubor?: string
+    popis?: string
     vybrano?: { autor?: string; licence?: string; licenceUrl?: string; stranka?: string }
   }[]
 }
@@ -41,7 +44,14 @@ const nactiManifest = (oblast: string): Map<string, FotkaStrediska> => {
       // Bez kompletního doložení se fotka nepoužije — půlka atribuce je horší
       // než žádná: čtenář by nevěděl, komu snímek patří.
       if (!z.slug || !z.soubor || !v?.autor || !v.licence || !v.stranka) continue
-      mapa.set(z.slug, { url: z.soubor, autor: v.autor, licence: v.licence, licenceUrl: v.licenceUrl, stranka: v.stranka })
+      mapa.set(z.slug, {
+        url: z.soubor,
+        autor: v.autor,
+        licence: v.licence,
+        licenceUrl: v.licenceUrl,
+        stranka: v.stranka,
+        popis: z.popis,
+      })
     }
   }
   cache.set(oblast, mapa)

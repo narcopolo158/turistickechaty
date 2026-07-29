@@ -11,6 +11,92 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-29 — DATA-33 podruhé: běh doběhl, ale sedm fotek lanovek ukazovalo něco jiného, než tvrdilo
+
+**Hotovo:** Michal potvrdil, že běh DATA-33 z Actions dopadl OK (commit
+`d0902c2`: 16 fotek středisek, 21 lanovek, licenčně čisté, s doloženým
+autorem). Prohlídka výsledku ale ukázala, že „doběhlo OK" a „je to
+správně" nejsou totéž. **Sedm snímků lanovek ukazovalo něco jiného, než
+tvrdila stránka, na které visely:**
+
+- **tři dvojice drah sdílely tentýž soubor** (Hnědý vrch + Zahrádky
+  Express, Saxner + Family Express, Szrenica I + II a k tomu Karkonosz
+  Express) — u jedné z každé dvojice to nutně byl snímek cizí dráhy;
+- **Hofmanky Express** dostal soubor `Lanovka Protěž` — sousední dráhu;
+- **Biały Jar** dostal interiér Hotelu Gołębiewski, **Saxner** a **Family
+  Express** dům `čp. 263 pod lanovkou` — tedy stavbu, ne dráhu.
+
+Síto `jeOLanovce` z minulé session tohle nechytlo, protože slovo
+„lanovka" v názvu opravdu bylo — jen se týkalo něčeho jiného než předmětu
+snímku. **Sedm fotek jsem z repa sundal** (soubor i záznam v manifestu);
+raději prázdné místo než snímek, který tvrdí cizí dráhu.
+
+**Oprava pravidel (aby to příští běh neudělal znovu), tři nová síta:**
+(1) `jmenujeJinouDrahu` — snímek, který jmenuje jinou dráhu z téže oblasti
+a tuhle vůbec, neprojde (podmínka je nesymetrická schválně: Szrenica I
+a II mají rozlišující slovo společné, takže se navzájem nevetují, a dělí
+je až pravidlo o jednom souboru pro jeden objekt); (2) `jeOStavbe` —
+`čp.`, hotel, kostel, penzion: předmětem je stavba, dráha je jen
+orientační bod; (3) `jePohledZLanovky` — „Widok z wyciągu" je snímek
+krajiny, lanovka je stanoviště fotografa. K tomu **shoda jména jde nově
+před geosearch** (geotag říká jen „vyfoceno poblíž"; doložené jméno je
+silnější důkaz) a **jeden soubor smí posloužit jen jednomu objektu**.
+
+**Zkouška nanečisto na datech prvního běhu** (kandidáti zůstali
+v manifestu jako `alternativy`) říká, co příští běh doplní: Hofmanky
+Express → `Janske Lazne 2022 P57 Hofmanky Express`, Saxner → `Černý Důl,
+dolní stanice lanovky Saxner`, Szrenica I → `Szrenica I etap`. Karkonosz
+Express, Zahrádky Express, Family Express a Biały Jar **zůstanou bez
+fotky** — doložený snímek prostě mezi kandidáty není a vymyslet ho nejde.
+
+**U středisek** táž oprava zabrala jako vedlejší efekt: kde první běh
+vybral kostel, hřbitov nebo kapličku, dá nová priorita (snímek, který
+obec jmenuje → celé místo před jednou budovou) `Benecko, centrum`,
+`Dolní Dvůr, bouda Morava`, `Vítkovice, údolí`, `Bývalý pivovar Horní
+Maršov` a `Janské Lázně - panoramio`. Dnes se nic z toho nestáhlo (sandbox
+na Commons nedosáhne), přijde to dalším během.
+
+**Popiska pod fotkou = název souboru na Commons** (nové pole `popis`,
+vykresluje se na kartě střediska i na obou mini-stránkách). Je to laciná
+pojistka s velkým dosahem: kdyby výběr přesto jednou minul, čtenář i
+redakce to uvidí hned pod obrázkem, ne až za rok. Zpětně by tahle jediná
+řádka celý dnešní problém odhalila v den prvního běhu.
+
+**Redakční volby zapsané ručně** (pole `prefer` + nově `poznamka`, kterou
+běh přenáší dál, ať důvod nezmizí): `certova-hora` — soubor
+`Harrachov - wyciąg 001.JPG` dráhu nejmenuje, ale na snímku jsou
+harrachovské skokanské můstky a sedačka k nim míří; dolní stanice dráhy
+(50.7726, 15.42568) je od můstků ~150 m, druhá harrachovská dráha
+(Ryžoviště) je 1,3 km jinde. Dál `strazne` (sjezdovka Popelka místo
+obecního úřadu) a dva úseky sněžkové lanovky, kde by nová pravidla dala
+přednost interiéru stanice před stanicí na hřebeni. Vše jsou doložené
+snímky týchž objektů — jde o výběr, ne o fakt.
+
+**Testy:** 433 prochází (bylo 420). Nové jsou tři skupiny: síta předmětu
+(a schválně i to, co propustit MUSÍ — nejsnazší způsob, jak síto
+„opravit", je utáhnout ho tak, že nepustí ani správný snímek), pořadí
+shody jména před geosearchem a **hlídka nad manifestem v repu**: žádný
+soubor u dvou objektů, každý záznam s popiskou, manifest a `public/`
+v souladu. Ke čtenáři se dostane commitnutý manifest, ne funkce.
+
+**Příště:** pustit workflow DATA-33 znovu (jedním klikem, `workflow_dispatch`,
+oblast `krkonose`) — doplní tři lanovky a přebere lepší fotky středisek;
+pak zkontrolovat výsledek stejně jako dnes. Potom zpět na backlog.
+
+**Otázky pro Michala:**
+1. **Čtyři lanovky zůstanou bez fotky** (Karkonosz Express, Zahrádky
+   Express, Family Express, Biały Jar) — na Commons pro ně doložený
+   snímek není. Nechat prázdné místo, nebo je pro tebe přijatelné vzít
+   snímek celého areálu s popiskou „areál, ne konkrétní dráha"?
+2. `certova-hora` je moje redakční přiřazení podle můstků na snímku
+   a vzdálenosti stanice — ne konvence B. Chceš to tak nechat, nebo tam
+   má být fotka jen tehdy, když dráhu jmenuje přímo název souboru?
+3. Pořád visí ze starších zápisů: zimní fotka pro sezónní hero (Q19),
+   pruh „Podmínky na hřebeni" (Q20) a zdrojové URL tří fotek z handoffu
+   na Unsplash/Pexels (Q17).
+
+---
+
 ## 2026-07-29 — denní session (bezobslužný běh): DATA-23 — rozšířený klíč nad pilotem, a hlavně zjištění, že se pilotu nikdo nezeptal
 
 **Hotovo:** Pořadí backlogu: DATA-04 blokovaná (telefonáty = Michal),

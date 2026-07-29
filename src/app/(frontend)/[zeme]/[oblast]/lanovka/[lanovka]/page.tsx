@@ -158,8 +158,11 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
         {foto && (
           <figure className="mini-foto">
             {/* eslint-disable-next-line @next/next/no-img-element -- statická příloha repa (DATA-33) */}
-            <img src={foto.url} alt={`${nazev} — pohled na lanovku`} loading="eager" />
+            <img src={foto.url} alt={foto.popis ?? `${nazev} — pohled na lanovku`} loading="eager" />
             <figcaption>
+              {/* Popiska = název souboru na Commons: snímek sám řekne, co je na něm,
+                  takže případný přehmat výběru pozná čtenář i redakce hned. */}
+              {foto.popis && <b className="foto-popis" title={foto.popis}>{foto.popis}</b>}
               foto {foto.autor}, {foto.licence} ·{' '}
               <a href={foto.stranka} target="_blank" rel="noopener noreferrer nofollow">
                 Wikimedia Commons
