@@ -14,6 +14,7 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 
 import {
+  jeOLanovce,
   kandidatZeStranky,
   nactiStrediska,
   seradKandidaty,
@@ -174,5 +175,46 @@ describe('pořadí výběru', () => {
       'File:RedakceChce.jpg',
     )
     expect(prvni.soubor).toBe('File:RedakceChce.jpg')
+  })
+})
+
+/**
+ * Síto lanovek (zadání Michala 29. 7. 2026: „sběr fotek lanovek zařaď").
+ *
+ * U střediska stačí, že snímek pochází z obce — je to fotka MÍSTA. U lanovky
+ * ne: geosearch kolem dráhy vrátí i kostel z téže vsi a takový snímek by na
+ * stránce lanovky tvrdil něco, co na něm není. Proto tenhle test — kdyby síto
+ * jednou přestalo platit, stránka by vypadala pořád stejně a nikdo by nepoznal,
+ * že se dívá na náves.
+ */
+describe('síto „je to opravdu lanovka"', () => {
+  const stranka = (title: string, popis?: string) =>
+    ({
+      title,
+      imageinfo: [
+        {
+          url: 'https://upload.wikimedia.org/x.jpg',
+          descriptionurl: 'https://commons.wikimedia.org/wiki/File:X.jpg',
+          width: 1000,
+          height: 800,
+          extmetadata: popis ? { ImageDescription: { value: popis } } : {},
+        },
+      ],
+    }) as Parameters<typeof jeOLanovce>[0]
+
+  it('pozná lanovku česky, polsky, německy i anglicky', () => {
+    expect(jeOLanovce(stranka('File:Lanovka na Sněžku.jpg'))).toBe(true)
+    expect(jeOLanovce(stranka('File:Kolej linowa Szrenica.jpg'))).toBe(true)
+    expect(jeOLanovce(stranka('File:Seilbahn Schneekoppe.jpg'))).toBe(true)
+    expect(jeOLanovce(stranka('File:Chairlift Medvedin.jpg'))).toBe(true)
+  })
+
+  it('vezme i snímek, který lanovku jmenuje až v popisu', () => {
+    expect(jeOLanovce(stranka('File:IMG_2043.jpg', 'Sedačková lanovka na Portášky'))).toBe(true)
+  })
+
+  it('kostel z téže vsi neprojde — a to je celý smysl toho síta', () => {
+    expect(jeOLanovce(stranka('File:Kostel svatého Petra, Pec pod Sněžkou.jpg'))).toBe(false)
+    expect(jeOLanovce(stranka('File:Namesti v Peci.jpg', 'Pohled na náměstí'))).toBe(false)
   })
 })

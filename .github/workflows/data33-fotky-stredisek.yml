@@ -1,11 +1,13 @@
-# DATA-33: fotky středisek z Wikimedia Commons — dohledá, vybere a STÁHNE.
+# DATA-33: fotky středisek A LANOVEK z Wikimedia Commons — dohledá, vybere
+# a STÁHNE (jeden klik obstará obojí; zadání Michala 29. 7. 2026).
 # Sandbox denních sessions na commons.wikimedia.org nedosáhne (proxy), Actions
 # ano. Na rozdíl od DATA-02 (fotky chat = jen návrhy pro redakci) tenhle běh
 # rovnou stahuje: u střediska je sázka nižší (obec, ne konkrétní budova)
 # a pravidla výběru jsou napsaná ve skriptu. Jinou fotku vybereš tak, že
-# k záznamu v `data/strediska/_fotky-<oblast>.json` dopíšeš "prefer": "File:…"
+# k záznamu v `data/strediska/_fotky-<oblast>.json` (u lanovek
+# `data/lanovky/_fotky-<oblast>.json`) dopíšeš "prefer": "File:…"
 # a pustíš workflow znovu.
-name: 'DATA-33: fotky středisek (dle oblasti)'
+name: 'DATA-33: fotky středisek a lanovek (dle oblasti)'
 
 on:
   workflow_dispatch:
@@ -24,7 +26,7 @@ concurrency:
 
 jobs:
   fotky:
-    name: Commons → public/strediska
+    name: Commons → public/strediska + public/lanovky
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -43,7 +45,7 @@ jobs:
           OBLAST: ${{ inputs.oblast || 'krkonose' }}
         run: |
           npx tsx scripts/data33-fotky-stredisek.ts --oblast "$OBLAST" | tee report.txt
-          echo '## DATA-33 — fotky středisek' >> "$GITHUB_STEP_SUMMARY"
+          echo '## DATA-33 — fotky středisek a lanovek' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit fotek a manifestu do main
@@ -53,12 +55,12 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/strediska data/strediska
+          git add public/strediska data/strediska public/lanovky data/lanovky
           if git diff --cached --quiet; then
             echo 'Beze změny — nic ke commitu.'
             exit 0
           fi
-          git commit -m "data: fotky středisek z Wikimedia Commons (${OBLAST}, z Actions)" \
+          git commit -m "data: fotky středisek a lanovek z Wikimedia Commons (${OBLAST}, z Actions)" \
             -m 'Zdroj: Wikimedia Commons — jen licence CC0/CC BY/CC BY-SA/public domain s doloženým autorem (NC a ND vyřazeny). Autor, licence a odkaz na stránku souboru jsou v manifestu a web je vypisuje u fotky.'
           git pull --rebase origin main
           git push origin main

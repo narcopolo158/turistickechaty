@@ -716,6 +716,41 @@ zrovna žádná chata průvodce nestojí.
 
 417 testů, kontrola, lint i tsc čisté.
 
+**Dodatek 15 (týž den, Michal: „ano — sběr fotek lanovek zařaď, čas chůze
+řešit nemusíš, stačí km po stezce"): DATA-33 nově obstará obojí jedním
+klikem.**
+
+**Fotky lanovek.** Pipeline běží po téže trase jako u středisek (licenční
+síto CC0/BY/BY-SA/PD, doložený autor, pořadí výběru, `prefer` pro redakční
+volbu) — schválně, protože dvě kopie kódu by se dřív nebo později rozešly
+v tom, co pouštějí dál. **Dvě věci jsou u lanovky jinak, a obě z jednoho
+důvodu:**
+*Bod dotazu je STŘED dráhy, ne stanice*, a okruh pokrývá aspoň polovinu
+délky — fotograf stojí kdekoli podél lana, od stanice by okruh minul půlku
+trati.
+*Přibylo síto „mluví to o lanovce?"* U střediska stačí, že snímek pochází
+z obce: je to fotka MÍSTA. U lanovky by ale geosearch kolem dráhy nabídl
+i kostel z téže vsi — a takový snímek by na stránce lanovky tvrdil něco, co
+na něm není. Projde proto jen soubor, jehož název nebo popis o lanovce
+opravdu mluví, a to mnohojazyčně (lanovka, kolej linowa, Seilbahn, chairlift…),
+protože Commons je mnohojazyčný. Test to hlídá z obou stran: že projde
+i snímek se jménem lanovky až v popisu, a že kostel z Pece neprojde.
+Fotky míří do `public/lanovky/<slug>.jpg`, manifest do
+`data/lanovky/_fotky-<oblast>.json`; mini-stránka lanovky ho už umí číst.
+Workflow se jmenuje „DATA-33: fotky středisek a lanovek" a commituje obě
+dvojice adresářů.
+
+**Čas chůze se řešit nebude** — Michal rozhodl, že stačí kilometry po stezce.
+Odhad podle DIN 33466 tedy na mini-stránky nepřidávám a otázka 23 padá.
+Dosavadní stav (délka trasy + pásové značky, bez času) je tím konečný.
+
+420 testů (+3), kontrola, lint i tsc čisté.
+
+**Otázka k dodatku:** 24. **Klik na DATA-33** — teď stáhne fotky středisek
+i lanovek najednou. Krkonoše mají 16 středisek a 41 drah, takže běh bude
+delší (dotazy na Commons jedou po 1,2 s); po doběhnutí se karty i mini-stránky
+zaplní samy.
+
 ---
 
 ## 2026-07-28 — denní session (bezobslužný běh): DATA-05 — párování razítek dohnalo korpus, přiřazení nově jen potvrzené
