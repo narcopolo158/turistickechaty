@@ -6,100 +6,6 @@ Formát zápisu (nejnovější nahoře):
 ## YYYY-MM-DD
 **Hotovo:** co se dnes udělalo (položka backlogu, commity)
 **Příště:** čím navázat
-**Dodatek 28 (týž den, Michalova rozhodnutí): typ `rozhledna`, vlastní ikona,
-ruční páry razítek a severní hrana 3D okna.**
-
-**(1) Typ pro rozhledny — doporučeno a rovnou provedeno: pátá hodnota
-číselníku `rozhledna` („Rozhledna s občerstvením").** Zvažoval jsem vecpat je
-do `obsluhovana` s poznámkou, ale katalog se filtruje podle toho, kde se dá
-přespat a najíst — a věž s bufetem není chata; útulna ani horský hotel taky
-ne. Pátá hodnota je jediná, která nelže, a zároveň drží zásadu, že objekt bez
-občerstvení do průvodce nepatří (to řeší DATA-01, ne číselník). Rozšířeno na
-pěti místech naráz: Payload kolekce, popisky ve frontendu, `validator.ts`,
-DATA-01 (kandidát rovnou dostane `typ: rozhledna`) a testy. **Pozn. k plánu:**
-taxonomie je v `docs/plan.md` kap. 5, do kterého bez zadání nesahám — tohle
-je tedy návrh změny plánu k Michalovu zanesení, data i kód už ji znají.
-
-**(2) Ikona.** Dvě kresby, protože každá slouží jinému místu — a rozhodl
-pohled, ne odhad: varianty se vyrenderovaly ve 14–44 px vedle sebe. Do
-**katalogu a profilu** jde věž s prolukou mezi nohama + šálek vedle (věž říká,
-co to je, šálek proč to v průvodci je; plná silueta vypadala při 16 px jako
-maják). Do **mapového markeru** jde jen věž v modrém kolečku — šálek se do
-20 px nevešel, přetékal přes okraj a rozbíjel kruh, kterým celá mapová vrstva
-mluví. Obě kresby drží jeden zdroj (`IkonaRozhledna.tsx`), marker jako řetězec,
-protože Leaflet skládá `innerHTML` bez Reactu.
-
-**(3) Razítka — „vše potvrzuji".** Fronta ke kontrole byla po dnešním běhu už
-prázdná (46 párů / 45 chat potvrzeno en bloc), ale ruční průchod reportem
-odhalil pár, který automat nikdy nenabídl: **Schronisko PTTK na Hali
-Szrenickiej** — razitkuj vede totéž místo bez „PTTK", takže jmenná shoda
-nevznikla a chatě by razítko chybělo napořád. Z toho plyne oprava mechanismu:
-**potvrzený pár teď platí i bez jmenné shody** (`typ: rucni`, v reportu se
-pozná), protože za ním stojí člověk, který viděl otisk — to je silnější doklad
-než shoda řetězců. Překlep v seznamu (neznámý slug, URL mimo checklist) se
-mlčky ignoruje, běh neshodí. Nově tedy **47 potvrzených párů, 46 chat
-s razítkem, 30 bez, 2 kandidáti k dohledání** (Lesní Zátiší Harrachov,
-Śnieżka – Karpacz). Otisk Hali Szrenickiej stáhne příští klik na DATA-05.
-
-**(4) Severní hrana 3D okna — rozhodnutí na mně: rozšířeno na 50,84.**
-Pod starou hranou 50,82 zůstávalo mimo model Schronisko PTTK „Kochanówka"
-(50,830), publikovaný profil, který by model tiše vynechal — a tiché vynechání
-je přesně to, co jsme dnes ráno u Jizerek zavrhli. Rozšíření je 2,2 km
-polského podhůří nad Szklarskou Porębou, ne půl Slezska: hřeben zůstává tam,
-kde byl. Projeví se příštím během DATA-28.
-
-330 testů (+4), kontrola, lint i tsc čisté.
-
-**Dodatek 29 (týž den, Michalova předloha): ikona rozhledny překreslena podle
-legendy českých turistických map.** Michal poslal srovnávací tabulku značek
-(SHOCart · SmartMaps · KČT dříve/aktuální · GOL · VKÚ · Kompass) se zadáním
-vyjít z ní. Vyplatilo se řádek zvětšit a podívat se pořádně: **ve všech těch
-klíčích je rozhledna táž věc — štíhlá věž se špičatou stříškou, ochozem
-a rozšířenou patou.** Moje první kresba měla rozkročené nohy jako příhradový
-stožár, což je jiná značka; kdo zná mapu, tomu by to skřípalo. Překresleno na
-tvar z legendy. Občerstvení: SHOCart je kreslí jako **půllitr** („bufet a jiné
-občerstvení"), KČT jako stolek — vzat půllitr, protože při 16 px je čitelný,
-kdežto stolek se rozpadne na skvrnu (opět ověřeno renderem 14–40 px vedle sebe,
-ne odhadem).
-**Dvě varianty podle místa:** do **mapy a katalogu** jde sama věž — drží tvar
-i ve 14 px a v katalogovém řádku stejně vedle stojí služba ☕, takže by se
-šálek opakoval; na **profil** jde věž + půllitr, tam má ikona 17 px a nese
-celý význam typu i bez okolních značek. Marker je věž bíle v modrém kolečku,
-tedy táž navigační vrstva jako chaty, jen s vlastním tvarem.
-330 testů, kontrola, lint i tsc čisté.
-
-**Dodatek 30 (týž den, po Michalových kliknutích na DATA-01 a DATA-02):
-rozhledny naostro, práh výšky a měřitelný dopad souřadnic na fotky.**
-
-**Rozhledny v Jizerkách — devět nálezů, osm kandidátů.** První ostrý běh dal
-za pravdu Michalovu odhadu („v Jizerkách je hodně rozhleden"): Tanvaldský
-Špičák, Královka, Bramberk, Slovanka, Frýdlantská výšina, Liberecká výšina,
-Sky Walk (Świeradów) a Wieża Widokowa Mirsk — všechny s doloženým občerstvením
-do 100 m, všechny rovnou s typem `rozhledna`. **Pět věží skript nevzal**,
-protože u nich občerstvení doložené není (Na Čihadle, Smrk, Světlý vrch,
-Czerniawska Kopa, Młynica) — přesně jak zadání říká.
-**Nový práh, protože data ukázala díru:** mezi nálezy byla i „vyhlídka na
-Harrachov" s `height=5` a „vyhlídka na Jizerské hory" se 4 m — pětimetrová
-plošina u skokanských můstků není rozhledna. DATA-01 má proto
-`MIN_VYSKA_ROZHLEDNY_M = 8`; filtr sahá **jen na doloženou výšku**, co OSM
-neuvádí, se nedomýšlí a jde k posouzení. Harrachovská vyhlídka smazána
-z kandidátů a zapsána do `_vyrazeno.yaml`, aby ji další běh nezaložil znovu.
-
-**Tři kandidáti k rozhodnutí (nechávám na Michalovi, jsou to kandidáti mimo
-web):** *Frýdlantská výšina* (50,935 / 15,077 — frýdlantské podhůří),
-*Rozhledna Liberecká výšina* (50,778 / 15,092 — nad Libercem) a *Wieża
-Widokowa Mirsk* (50,966 / 15,378 — město Mirsk v podhůří). Všechny tři leží
-v okně dotazu, ale spíš na jeho okraji než v Jizerských horách; klíč zařazení
-je redakční rozhodnutí, ne měření. Zbylých pět je uvnitř pohoří bez debat.
-
-**DATA-02 HOTOVA a odškrtnuta** — doběhl běh, na který položka čekala (první,
-který hledá fotky i chatám bez GPS). A ukázal se hezký řetěz dnešní práce:
-devět profilů, které dnes dostaly souřadnice, má **101 → 187 kandidátů fotek**,
-z toho **130 nových z geosearche**, který u nich předtím neměl kolem čeho
-hledat (Pomezní bouda 1 → 40, Pražská 25 → 45, Kolínská 18 → 28). Doplnit
-souřadnice tedy nebylo jen o mapě: rozsvítilo to i fotky a přístupové trasy.
-331 testů (+1), kontrola, lint i tsc čisté.
-
 **Otázky pro Michala:** (pokud jsou — jinak vynechat)
 ```
 
@@ -373,6 +279,56 @@ celou stránku a nově týž výškopis jmenuje i přehled lanovek.
 9. **Lanovky** — mají v přehledu zůstat i sedačky, které nikam k chatě
    nevozí (čistě sjezdovkové, jako Hromovka nebo Protěž), nebo je vypustit
    a nechat jen ty, které pěšímu k něčemu jsou? Zatím jsou v seznamu dole.
+
+**Dodatek 6 (týž den, zadání Michala „u středisek chci taky fotky… nepřidáme
+další střediska jako Rokytnice? napadají tě ještě další?" a „tady máš seznam
+letních lanovek, najdi i polské"): devět nových středisek, letní lanovky
+s prameny a pipeline DATA-33.** Commit `aaad1f5`.
+
+**Střediska — na otázku „napadají tě další?" neodpověděl odhad, ale počet.**
+Místo vypisování známých jmen jsem se zeptal dat: která místa už v korpusu
+opravdu slouží jako **nástupy přístupových tras** (DATA-06). Vyšlo devět
+a v tomhle pořadí: **Strážné** (6 přístupů), **Černý Důl** (4), **Rokytnice
+nad Jizerou**, **Horní Maršov**, **Dolní Dvůr** a **Przesieka** (po 2), plus
+**Vítkovice**, **Vrchlabí** a **Benecko** — obce s doloženou lanovkou. Rokytnice,
+kterou Michal navrhl, mezi nimi je; nebyla to tedy náhoda, ale nedodělek.
+Korpus má **16 středisek**. GPS jsou z katalogu výchozích bodů (OSM/ODbL),
+ostatní pole zůstávají poctivě prázdná, dokud nebudou doložená.
+
+**Lanovky — pramen se musel najít jinde, než odkud přišlo zadání.**
+`krkonose.eu` je pro robota **zavřený v robots.txt**, takže z něj neberu ani
+fakta, ani obcházkou; seznam posloužil jako vodítko, co dohledat. Doloženo
+z `leto.skiresort.cz` (Černohorský Express 9–17, Hnědý vrch so–ne 9–16,
+Portášky 9–16) a `region-krkonose.cz` (katalog lanových drah). **Polská strana**
+(zadání „najdi i polské") stojí na `kpn.gov.pl` a `krainawycieczek.pl`:
+**Szrenica** ze Szklarské Poręby (dva úseky, horní stanice 1 309,6 m, léto
+zhruba 9–16:30) a **Kopa** v Karpaczi (ne–čt 9–16:30, pá–so 9–17:30). Kde
+letní provoz doložený není, je to v textu **řečeno**, ne domyšleno.
+
+**DATA-33 — fotky středisek z Commons, a proto psaná pravidla výběru.**
+Na rozdíl od DATA-02 pipeline rovnou **stahuje** (u střediska je sázka nižší
+než u konkrétní boudy — fotka Harrachova zestárne pomaleji než fotka boudy,
+která zrovna mění majitele). Aby se do repa nedostal náhodný snímek, je pořadí
+výběru napsané a přezkoumatelné: redakční `prefer` > licence CC0/BY/BY-SA/PD
+**s doloženým autorem** > geosearch před fulltextem > na šířku před na výšku >
+větší plocha. **Fotka bez doloženého autora se nestahuje vůbec** — uvedení
+autora je podmínka licence, ne ozdoba; půlka atribuce je horší než žádná,
+protože čtenář by nevěděl, komu snímek patří. Stránka pohoří fotku i lanovku
+vykreslí, atribuce je vidět. 361 testů (+31), kontrola, lint i tsc čisté.
+
+**Dva úklidy po souběžné session.** (1) Rebase přinesl **dvě lint varování** —
+`<img>` bez `next/image` v `PohoriHeroFoto.tsx` a na homepage (obojí z FOTO-01).
+V repu je na to ustálená konvence: vědomý `<img>` nese `eslint-disable-next-line`
+**s důvodem**, aby se příště nemuselo znovu rozhodovat; doplněno, sada je zase
+na nule. (2) **Deník sám měl vadu:** dodatky 28–30 se zapsaly **dovnitř
+ukázkového bloku formátu** hned pod nadpisem souboru, takže se zobrazovaly jako
+kód a šablona zápisu byla rozbitá. Přesunuty na konec zápisu 28. 7., kam patří
+(navazují na dodatek 27 a odpovídají na otázky téhož dne); šablona je zpátky
+čtyřřádková. Text dodatků se neměnil.
+
+**Otázka k dodatku:** 10. **Klik na DATA-33** (Actions → „DATA-33: fotky
+středisek") — bez něj zůstane manifest prázdný a karty středisek budou bez
+fotek; skript ze sandboxu na Commons nedosáhne.
 
 ---
 
@@ -1071,6 +1027,100 @@ pokud potvrdíš, že jde o cizí objekty, zapíšu je do `nesouvisi` a párová
 je přestane nabízet. (3) Trvá klik na DATA-02 (fulltext sklizeň fotek pro
 všechny chaty vč. bez-GPS) a otázky z čtyřbloku (ČÚZK výšky středisek,
 zaokrouhlení Sněžky 1603, kontrola deploye).
+
+**Dodatek 28 (týž den, Michalova rozhodnutí): typ `rozhledna`, vlastní ikona,
+ruční páry razítek a severní hrana 3D okna.**
+
+**(1) Typ pro rozhledny — doporučeno a rovnou provedeno: pátá hodnota
+číselníku `rozhledna` („Rozhledna s občerstvením").** Zvažoval jsem vecpat je
+do `obsluhovana` s poznámkou, ale katalog se filtruje podle toho, kde se dá
+přespat a najíst — a věž s bufetem není chata; útulna ani horský hotel taky
+ne. Pátá hodnota je jediná, která nelže, a zároveň drží zásadu, že objekt bez
+občerstvení do průvodce nepatří (to řeší DATA-01, ne číselník). Rozšířeno na
+pěti místech naráz: Payload kolekce, popisky ve frontendu, `validator.ts`,
+DATA-01 (kandidát rovnou dostane `typ: rozhledna`) a testy. **Pozn. k plánu:**
+taxonomie je v `docs/plan.md` kap. 5, do kterého bez zadání nesahám — tohle
+je tedy návrh změny plánu k Michalovu zanesení, data i kód už ji znají.
+
+**(2) Ikona.** Dvě kresby, protože každá slouží jinému místu — a rozhodl
+pohled, ne odhad: varianty se vyrenderovaly ve 14–44 px vedle sebe. Do
+**katalogu a profilu** jde věž s prolukou mezi nohama + šálek vedle (věž říká,
+co to je, šálek proč to v průvodci je; plná silueta vypadala při 16 px jako
+maják). Do **mapového markeru** jde jen věž v modrém kolečku — šálek se do
+20 px nevešel, přetékal přes okraj a rozbíjel kruh, kterým celá mapová vrstva
+mluví. Obě kresby drží jeden zdroj (`IkonaRozhledna.tsx`), marker jako řetězec,
+protože Leaflet skládá `innerHTML` bez Reactu.
+
+**(3) Razítka — „vše potvrzuji".** Fronta ke kontrole byla po dnešním běhu už
+prázdná (46 párů / 45 chat potvrzeno en bloc), ale ruční průchod reportem
+odhalil pár, který automat nikdy nenabídl: **Schronisko PTTK na Hali
+Szrenickiej** — razitkuj vede totéž místo bez „PTTK", takže jmenná shoda
+nevznikla a chatě by razítko chybělo napořád. Z toho plyne oprava mechanismu:
+**potvrzený pár teď platí i bez jmenné shody** (`typ: rucni`, v reportu se
+pozná), protože za ním stojí člověk, který viděl otisk — to je silnější doklad
+než shoda řetězců. Překlep v seznamu (neznámý slug, URL mimo checklist) se
+mlčky ignoruje, běh neshodí. Nově tedy **47 potvrzených párů, 46 chat
+s razítkem, 30 bez, 2 kandidáti k dohledání** (Lesní Zátiší Harrachov,
+Śnieżka – Karpacz). Otisk Hali Szrenickiej stáhne příští klik na DATA-05.
+
+**(4) Severní hrana 3D okna — rozhodnutí na mně: rozšířeno na 50,84.**
+Pod starou hranou 50,82 zůstávalo mimo model Schronisko PTTK „Kochanówka"
+(50,830), publikovaný profil, který by model tiše vynechal — a tiché vynechání
+je přesně to, co jsme dnes ráno u Jizerek zavrhli. Rozšíření je 2,2 km
+polského podhůří nad Szklarskou Porębou, ne půl Slezska: hřeben zůstává tam,
+kde byl. Projeví se příštím během DATA-28.
+
+330 testů (+4), kontrola, lint i tsc čisté.
+
+**Dodatek 29 (týž den, Michalova předloha): ikona rozhledny překreslena podle
+legendy českých turistických map.** Michal poslal srovnávací tabulku značek
+(SHOCart · SmartMaps · KČT dříve/aktuální · GOL · VKÚ · Kompass) se zadáním
+vyjít z ní. Vyplatilo se řádek zvětšit a podívat se pořádně: **ve všech těch
+klíčích je rozhledna táž věc — štíhlá věž se špičatou stříškou, ochozem
+a rozšířenou patou.** Moje první kresba měla rozkročené nohy jako příhradový
+stožár, což je jiná značka; kdo zná mapu, tomu by to skřípalo. Překresleno na
+tvar z legendy. Občerstvení: SHOCart je kreslí jako **půllitr** („bufet a jiné
+občerstvení"), KČT jako stolek — vzat půllitr, protože při 16 px je čitelný,
+kdežto stolek se rozpadne na skvrnu (opět ověřeno renderem 14–40 px vedle sebe,
+ne odhadem).
+**Dvě varianty podle místa:** do **mapy a katalogu** jde sama věž — drží tvar
+i ve 14 px a v katalogovém řádku stejně vedle stojí služba ☕, takže by se
+šálek opakoval; na **profil** jde věž + půllitr, tam má ikona 17 px a nese
+celý význam typu i bez okolních značek. Marker je věž bíle v modrém kolečku,
+tedy táž navigační vrstva jako chaty, jen s vlastním tvarem.
+330 testů, kontrola, lint i tsc čisté.
+
+**Dodatek 30 (týž den, po Michalových kliknutích na DATA-01 a DATA-02):
+rozhledny naostro, práh výšky a měřitelný dopad souřadnic na fotky.**
+
+**Rozhledny v Jizerkách — devět nálezů, osm kandidátů.** První ostrý běh dal
+za pravdu Michalovu odhadu („v Jizerkách je hodně rozhleden"): Tanvaldský
+Špičák, Královka, Bramberk, Slovanka, Frýdlantská výšina, Liberecká výšina,
+Sky Walk (Świeradów) a Wieża Widokowa Mirsk — všechny s doloženým občerstvením
+do 100 m, všechny rovnou s typem `rozhledna`. **Pět věží skript nevzal**,
+protože u nich občerstvení doložené není (Na Čihadle, Smrk, Světlý vrch,
+Czerniawska Kopa, Młynica) — přesně jak zadání říká.
+**Nový práh, protože data ukázala díru:** mezi nálezy byla i „vyhlídka na
+Harrachov" s `height=5` a „vyhlídka na Jizerské hory" se 4 m — pětimetrová
+plošina u skokanských můstků není rozhledna. DATA-01 má proto
+`MIN_VYSKA_ROZHLEDNY_M = 8`; filtr sahá **jen na doloženou výšku**, co OSM
+neuvádí, se nedomýšlí a jde k posouzení. Harrachovská vyhlídka smazána
+z kandidátů a zapsána do `_vyrazeno.yaml`, aby ji další běh nezaložil znovu.
+
+**Tři kandidáti k rozhodnutí (nechávám na Michalovi, jsou to kandidáti mimo
+web):** *Frýdlantská výšina* (50,935 / 15,077 — frýdlantské podhůří),
+*Rozhledna Liberecká výšina* (50,778 / 15,092 — nad Libercem) a *Wieża
+Widokowa Mirsk* (50,966 / 15,378 — město Mirsk v podhůří). Všechny tři leží
+v okně dotazu, ale spíš na jeho okraji než v Jizerských horách; klíč zařazení
+je redakční rozhodnutí, ne měření. Zbylých pět je uvnitř pohoří bez debat.
+
+**DATA-02 HOTOVA a odškrtnuta** — doběhl běh, na který položka čekala (první,
+který hledá fotky i chatám bez GPS). A ukázal se hezký řetěz dnešní práce:
+devět profilů, které dnes dostaly souřadnice, má **101 → 187 kandidátů fotek**,
+z toho **130 nových z geosearche**, který u nich předtím neměl kolem čeho
+hledat (Pomezní bouda 1 → 40, Pražská 25 → 45, Kolínská 18 → 28). Doplnit
+souřadnice tedy nebylo jen o mapě: rozsvítilo to i fotky a přístupové trasy.
+331 testů (+1), kontrola, lint i tsc čisté.
 
 ## 2026-07-27 — pokračování 23 (čtyřblok 1/4, druhá část po „pokracuj"): F1b UI HOTOVO + F1c 1. průchod
 

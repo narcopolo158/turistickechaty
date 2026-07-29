@@ -38,6 +38,7 @@ export function PohoriHeroFoto({ foto }: { foto: Oblast['heroFoto'] }) {
       {/* Bez next/image schválně: soubor je statický, rozměry známe a poster
           nepotřebuje runtime optimalizaci — o velikost se stará build (dvě
           varianty, menší pro úzké displeje). */}
+      {/* eslint-disable-next-line @next/next/no-img-element -- statická příloha repa (FOTO-01), viz komentář výše */}
       <img
         className="pohori-herofoto-img"
         src={foto.soubor}

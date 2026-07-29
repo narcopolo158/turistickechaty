@@ -198,6 +198,7 @@ export default async function HomePage() {
                       panorama zůstává jako záloha, aby karta nikdy nebyla prázdná
                       — a u „připravujeme" oblastí je pořád jediná varianta. */}
                   {heroFotoKrkonose?.nahled ? (
+                    // eslint-disable-next-line @next/next/no-img-element -- náhled titulní fotky (FOTO-01), statická příloha repa
                     <img
                       className="hf1-pohori-foto"
                       src={heroFotoKrkonose.nahled}
