@@ -384,6 +384,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
                 stredisko={s}
                 foto={s.slug ? fotkaStrediska(oblast.slug!, s.slug) : null}
                 pristupy={chatZBodu(oblastSlug, s.nazev)}
+                url={s.slug ? `/${KANONICKA_ZEME}/${oblastSlug}/stredisko/${s.slug}` : null}
               />
             ))}
           </div>

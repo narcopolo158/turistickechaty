@@ -650,9 +650,52 @@ střediska ztratil. Totéž u „Nahoře:" v kartách lanovek: polské dráhy vy
 tři schroniska a karta se kvůli tomu natáhla přes dvojnásobek sousední.
 Karta je přehled, ne článek; celé znění patří na mini-stránku střediska (F1e).
 
-**Otázky k dodatku:** 21. **Mini-stránky středisek** (F1e) — mám je vzít jako
-další krok? Právě ony jsou to místo, kde se plné věty o lanovkách a přístupech
-vypíšou bez krácení.
+~~**Otázky k dodatku:** 21. **Mini-stránky středisek** (F1e)~~ —
+**zodpovězeno týž den („ano a udělej i mini-stránky lanovek"), viz
+dodatek 13.**
+
+**Dodatek 13 (týž den, Michal: „ano a udělej i mini-stránky lanovek —
+ideálně s fotkou lanovky + přehled chat a cílů nahoře i se značením
+a obrázky"): dvě nové šablony a s nimi konečně smysl pro data, která
+v repu ležela nevyužitá.**
+
+**Mini-stránka střediska** `/cesko/<oblast>/stredisko/<slug>` (F1e). Nese to,
+co karta na stránce pohoří zkracuje na tři řádky: **celé znění** perexu i věty
+o lanovce s prameny. K tomu čtyři dlaždice (chat odtud, nejbližší
+a nejvzdálenější trasa, lanovek v místě), **seznam chat dostupných odtud
+s délkou trasy a PÁSOVÝMI ZNAČKAMI úseků** (DATA-06, značky z OSM),
+odkazy na lanovky, které z místa vyjíždějí, a mapa těch chat.
+
+**Mini-stránka lanovky** `/cesko/<oblast>/lanovka/<slug>`. Odpovídá na
+jedinou otázku — **co mi ta dráha nahoře otevře**: chaty u horní stanice
+(vzdušná čára z DATA-32) rovnou s délkou pěší trasy a značkami, kde ji máme;
+**dál pěšky odtud** (trasy, které u stanice začínají); **cíle nahoře**
+(pojmenované vrcholy s výškou do 2,5 km, OSM); mapa. Fotka lanovky se bere
+z manifestu DATA-33 — mechanismus je hotový, snímky dodá běh na Actions.
+
+**Dvě věci, které řekla až data.**
+*Geometrie tras je uložená OD CHATY dolů*, takže výchozí bod je POSLEDNÍ prvek
+pole. Podle prvního bodu vycházelo, že všechny přístupy jedné chaty „začínají"
+na jednom místě — u horní stanice Černohorského Expressu by pak nestála ani
+jedna trasa, ačkoli jich odtud vede jedenáct. Hledá se proto podle souřadnic
+konce trasy (do 800 m od stanice), ne podle názvu výchozího bodu: jména jsou
+v datech psaná různě, souřadnice ne.
+*Velké „Ł" propadalo slugem do prázdna* — rozklad NFD ho nerozloží a náhrada
+`ł → l` běžela před `toLowerCase()`, takže z „Łabski" zbylo „abski". Pořadí
+otočeno, test to hlídá.
+
+Karty na stránce pohoří teď na mini-stránky odkazují (název střediska, CTA
+„Odtud ▸", názvy lanovek v kartách i na jízdenkových útržcích).
+
+417 testů (+11), kontrola, lint i tsc čisté; ověřeno rendrem na 1280 i 412 px,
+šířka stránky se nikde nepřetéká.
+
+**Otázky k dodatku:** 22. **Fotky lanovek** — mám do DATA-33 přidat i sběr
+snímků lanovek z Commons (geosearch kolem dolní stanice + fulltext podle
+názvu), aby je jeden klik stáhl spolu s fotkami středisek? 23. **Čas chůze**
+na mini-stránkách zatím nikde není — doložený ho nemáme a z délky se
+nedopočítává; chceš ho odhadovat podle DIN 33466 (jako u tras Luční boudy),
+nebo nechat prázdno?
 
 ---
 

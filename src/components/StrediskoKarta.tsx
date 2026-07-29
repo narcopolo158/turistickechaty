@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 import type { PristupyZBodu } from '@/lib/pristupy'
@@ -27,10 +28,13 @@ export function StrediskoKarta({
   stredisko,
   foto,
   pristupy,
+  url,
 }: {
   stredisko: Stredisko
   foto?: FotoStrediska | null
   pristupy?: PristupyZBodu | null
+  /** Odkaz na mini-stránku střediska; bez něj karta zůstane bez CTA. */
+  url?: string | null
 }) {
   const pl = stredisko.zeme === 'pl'
 
@@ -62,7 +66,7 @@ export function StrediskoKarta({
       )}
 
       <div className="strk-hlava">
-        <b>{stredisko.nazev}</b>
+        <b>{url ? <Link href={url}>{stredisko.nazev}</Link> : stredisko.nazev}</b>
         {pl && <span className="pohori-tag-pl">PL</span>}
       </div>
 
@@ -94,6 +98,11 @@ export function StrediskoKarta({
         <p className="pohori-stredisko-lanovka strk-text" title={stredisko.lanovka}>
           <span aria-hidden="true">🚡</span> {stredisko.lanovka}
         </p>
+      )}
+      {url && (
+        <Link className="strk-cta" href={url}>
+          Odtud ▸
+        </Link>
       )}
     </div>
   )

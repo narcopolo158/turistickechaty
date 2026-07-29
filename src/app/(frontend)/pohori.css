@@ -822,3 +822,9 @@ body.dark .jzd-chaty a { color: #e7ecf1; }
 .lanovky-tabulka summary { cursor: pointer; font: 600 11.5px/1.4 'Space Grotesk', sans-serif; color: var(--ink); padding: 8px 0; }
 .lanovky-tabulka summary:hover { color: var(--red); }
 body.dark .lanovky-tabulka summary { color: #e7ecf1; }
+.strk-cta { align-self: flex-start; margin-top: 9px; font: 600 11px/1 'Space Grotesk', sans-serif; letter-spacing: 0.04em; color: var(--red); text-decoration: none; }
+.strk-cta:hover { color: var(--red-deep); }
+.strk-hlava b a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--red); }
+.strk-hlava b a:hover { color: var(--red); }
+.lan-karta h3 a, .jzd-telo-karty b a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--akcent, var(--jzd, var(--red))); }
+.lan-karta h3 a:hover, .jzd-telo-karty b a:hover { color: var(--akcent, var(--jzd, var(--red))); }

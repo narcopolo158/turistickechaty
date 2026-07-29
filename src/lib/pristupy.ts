@@ -83,3 +83,144 @@ export const chatZBodu = (oblastSlug: string, nazevStrediska: string): PristupyZ
   const seznam = [...chaty.values()].sort((a, b) => a.nazev.localeCompare(b.nazev, 'cs'))
   return { pocet: seznam.length, chaty: seznam }
 }
+
+/** Jeden úsek trasy — barva pásové značky a její délka. */
+export type Usek = { znaceni: string | null; delkaKm: number | null }
+
+/** Přístup ke konkrétní chatě z jednoho výchozího bodu. */
+export type Pristup = {
+  slug: string
+  nazev: string
+  /** Přesný název výchozího bodu z dat („Pec pod Sněžkou, parkoviště P1"). */
+  vychoziBod: string
+  delkaKm: number | null
+  useky: Usek[]
+  /** Kolik procent trasy vede po neznačené cestě (z pipeline DATA-06). */
+  podilNeznacenychProc: number | null
+}
+
+type SouborPodrobne = {
+  zdroj?: string
+  pozn?: string
+  chaty?: {
+    slug?: string
+    nazev?: string
+    pristupy?: {
+      vychoziBod?: string
+      delkaKm?: number
+      podilNeznacenychProc?: number
+      useky?: { znaceni?: string; delkaKm?: number }[]
+      /** Body trasy OD CHATY dolů — poslední bod je výchozí bod túry. */
+      geometrie?: { lat: number; lng: number }[]
+    }[]
+  }[]
+}
+
+const cachePodrobne = new Map<string, SouborPodrobne>()
+
+const nactiSoubor = (oblastSlug: string): SouborPodrobne => {
+  const hotovo = cachePodrobne.get(oblastSlug)
+  if (hotovo) return hotovo
+  const cesta = join(process.cwd(), 'data', 'trasy', oblastSlug, 'pristupove-trasy.json')
+  const d = existsSync(cesta) ? (JSON.parse(readFileSync(cesta, 'utf8')) as SouborPodrobne) : {}
+  cachePodrobne.set(oblastSlug, d)
+  return d
+}
+
+/**
+ * Přístupy ze střediska i s délkou a značením úseků — podklad pro mini-stránku
+ * střediska. Z každé dvojice (chata, středisko) se bere NEJKRATŠÍ doložený
+ * přístup: víc tras k téže chatě je informace pro plánovač, ne pro přehled
+ * „co je odtud dostupné".
+ */
+export const pristupyStrediska = (oblastSlug: string, nazevStrediska: string): Pristup[] => {
+  const hledany = nazevStrediska.trim().toLocaleLowerCase('cs')
+  const out = new Map<string, Pristup>()
+  for (const ch of nactiSoubor(oblastSlug).chaty ?? []) {
+    if (!ch.slug || !ch.nazev) continue
+    for (const p of ch.pristupy ?? []) {
+      if (!p.vychoziBod) continue
+      const obec = obecZBodu(p.vychoziBod)
+      if (obec !== hledany && !obec.startsWith(`${hledany} `)) continue
+      const kandidat: Pristup = {
+        slug: ch.slug,
+        nazev: ch.nazev,
+        vychoziBod: p.vychoziBod,
+        delkaKm: typeof p.delkaKm === 'number' ? p.delkaKm : null,
+        useky: (p.useky ?? []).map((u) => ({
+          znaceni: u.znaceni ?? null,
+          delkaKm: typeof u.delkaKm === 'number' ? u.delkaKm : null,
+        })),
+        podilNeznacenychProc:
+          typeof p.podilNeznacenychProc === 'number' ? p.podilNeznacenychProc : null,
+      }
+      const stavajici = out.get(ch.slug)
+      if (
+        !stavajici ||
+        (kandidat.delkaKm != null && (stavajici.delkaKm == null || kandidat.delkaKm < stavajici.delkaKm))
+      ) {
+        out.set(ch.slug, kandidat)
+      }
+    }
+  }
+  return [...out.values()].sort((a, b) => (a.delkaKm ?? 99) - (b.delkaKm ?? 99))
+}
+
+/** Zdroj přístupových tras (do patičky mini-stránky). */
+export const zdrojPristupu = (oblastSlug: string): string | null =>
+  nactiSoubor(oblastSlug).zdroj ?? null
+
+/** Vzdušná vzdálenost v metrech (na těchhle délkách stačí rovinná aproximace). */
+const vzdalenostM = (
+  a: { lat: number; lng: number },
+  b: { lat: number; lng: number },
+): number => {
+  const stred = ((a.lat + b.lat) / 2) * (Math.PI / 180)
+  const dx = (a.lng - b.lng) * Math.cos(stred) * 111_320
+  const dy = (a.lat - b.lat) * 110_540
+  return Math.hypot(dx, dy)
+}
+
+/**
+ * Přístupy, které ZAČÍNAJÍ u zadaného bodu — podklad pro mini-stránku lanovky
+ * („co odtud dojdu pěšky"). Nehledá se podle názvu výchozího bodu, ale podle
+ * souřadnic: jména výchozích bodů jsou v datech psaná různě („Černá hora"
+ * × „Černá hora, horní stanice kabinkové lanovky Černohorský Express"),
+ * kdežto souřadnice se nepřejmenují.
+ *
+ * POZOR na směr geometrie: pipeline DATA-06 ukládá body OD CHATY k výchozímu
+ * bodu, takže výchozí bod je POSLEDNÍ prvek. Podle prvního to nesedělo — tam
+ * stojí chata a všechny její přístupy tím pádem začínají „na tomtéž místě".
+ */
+export const pristupyOdBodu = (
+  oblastSlug: string,
+  bod: { lat: number; lng: number },
+  radiusM = 800,
+): (Pristup & { odstupM: number })[] => {
+  const out = new Map<string, Pristup & { odstupM: number }>()
+  for (const ch of nactiSoubor(oblastSlug).chaty ?? []) {
+    if (!ch.slug || !ch.nazev) continue
+    for (const p of ch.pristupy ?? []) {
+      const zacatek = p.geometrie?.[p.geometrie.length - 1]
+      if (!zacatek || typeof zacatek.lat !== 'number' || typeof zacatek.lng !== 'number') continue
+      const odstup = vzdalenostM(bod, zacatek)
+      if (odstup > radiusM) continue
+      const kandidat = {
+        slug: ch.slug,
+        nazev: ch.nazev,
+        vychoziBod: p.vychoziBod ?? '',
+        delkaKm: typeof p.delkaKm === 'number' ? p.delkaKm : null,
+        useky: (p.useky ?? []).map((u) => ({
+          znaceni: u.znaceni ?? null,
+          delkaKm: typeof u.delkaKm === 'number' ? u.delkaKm : null,
+        })),
+        podilNeznacenychProc:
+          typeof p.podilNeznacenychProc === 'number' ? p.podilNeznacenychProc : null,
+        odstupM: Math.round(odstup),
+      }
+      const stavajici = out.get(ch.slug)
+      if (!stavajici || (kandidat.delkaKm ?? 99) < (stavajici.delkaKm ?? 99)) out.set(ch.slug, kandidat)
+    }
+  }
+  return [...out.values()].sort((a, b) => (a.delkaKm ?? 99) - (b.delkaKm ?? 99))
+}

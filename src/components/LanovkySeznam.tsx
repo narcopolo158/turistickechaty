@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import LanovkyScena from './LanovkyScena'
 
+import { slugLanovky } from '@/lib/lanovky'
 import type { Lanovka, LanovkyOblasti } from '@/lib/lanovky'
 
 /**
@@ -86,6 +87,16 @@ export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
   // Útržky nesou zbytek — nejdřív ty, které vyvezou k chatě, pak podle délky
   // (totéž pořadí, v jakém dráhy chodí z pipeline).
   const jizdenky = data.lanovky.filter((l) => !vKartach.has(l.id))
+  // URL mini-stránky lanovky — slug se počítá stejně jako v `lanovkySeSlugy`,
+  // včetně přípony u kolize názvů, jinak by odkaz vedl na cizí dráhu.
+  const pouzite = new Map<string, number>()
+  const urlLanovky = new Map<string, string>()
+  for (const l of data.lanovky) {
+    const zaklad = slugLanovky(l.nazev, l.id)
+    const kolikrat = (pouzite.get(zaklad) ?? 0) + 1
+    pouzite.set(zaklad, kolikrat)
+    urlLanovky.set(l.id, `/cesko/${data.oblast}/lanovka/${kolikrat === 1 ? zaklad : `${zaklad}-${kolikrat}`}`)
+  }
 
   return (
     <div className="lanovky">
@@ -96,7 +107,9 @@ export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
             {karty.map((l, i) => (
               <article key={l.id} className={`lan-karta lan-karta--${AKCENTY[i] ?? 'cerv'}`}>
                 <span className="lan-pill">vyveze do {format(l.horni.vyska!)} m</span>
-                <h3>{l.nazev ?? 'bez názvu v mapových datech'}</h3>
+                <h3>
+                  <Link href={urlLanovky.get(l.id)!}>{l.nazev ?? 'bez názvu v mapových datech'}</Link>
+                </h3>
                 <dl className="lan-udaje">
                   <div>
                     <dt>Trasa</dt>
@@ -173,7 +186,11 @@ export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
                 </div>
                 <span className="jzd-punc" aria-hidden="true" />
                 <div className="jzd-telo-karty">
-                  <b>{l.nazev ?? 'bez názvu v mapových datech'}</b>
+                  <b>
+                    <Link href={urlLanovky.get(l.id)!}>
+                      {l.nazev ?? 'bez názvu v mapových datech'}
+                    </Link>
+                  </b>
                   {l.dolni.vyska != null && l.horni.vyska != null && (
                     <span className="jzd-trasa">
                       {format(l.dolni.vyska)} → {format(l.horni.vyska)} m
