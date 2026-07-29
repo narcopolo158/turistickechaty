@@ -1,0 +1,44 @@
+{
+  "zdroj": "OpenStreetMap (natural=peak se jménem a nadmořskou výškou, ODbL) — vytaženo z 3D modelu oblasti (pipeline DATA-28)",
+  "pozn": "Výšky jsou z OSM, ne z vlastního měření. Řez hřebenem je kreslí tak, jak jsou; co v OSM výšku nemá, se sem nedostane.",
+  "oblast": "jizerske-hory",
+  "pocet": 6,
+  "vrcholy": [
+    {
+      "nazev": "Smrk",
+      "lat": 50.8891265,
+      "lng": 15.2730576,
+      "vyska": 1124
+    },
+    {
+      "nazev": "Smrek",
+      "lat": 50.8897222,
+      "lng": 15.2797222,
+      "vyska": 1123
+    },
+    {
+      "nazev": "Jizera",
+      "lat": 50.8339641,
+      "lng": 15.2595336,
+      "vyska": 1122
+    },
+    {
+      "nazev": "Sine Skałki",
+      "lat": 50.8573497,
+      "lng": 15.4058633,
+      "vyska": 1122
+    },
+    {
+      "nazev": "Przednia Kopa",
+      "lat": 50.8598698,
+      "lng": 15.4141014,
+      "vyska": 1114
+    },
+    {
+      "nazev": "Stóg Izerski",
+      "lat": 50.8910033,
+      "lng": 15.3038222,
+      "vyska": 1108
+    }
+  ]
+}

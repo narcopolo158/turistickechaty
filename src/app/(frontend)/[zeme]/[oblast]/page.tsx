@@ -13,12 +13,14 @@ import LanovkySeznam from '@/components/LanovkySeznam'
 import PohoriHero from '@/components/PohoriHero'
 import FotoPas from '@/components/FotoPas'
 import FotoVlepena from '@/components/FotoVlepena'
+import RezHrebenem, { type BodChaty } from '@/components/RezHrebenem'
 import { SectionBar } from '@/components/ui'
 import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
 import { fotkaStrediska } from '@/lib/fotky-stredisek'
 import { lanovkyOblasti } from '@/lib/lanovky'
+import { vrcholyOblasti } from '@/lib/vrcholy'
 import { zanikleChaty } from '@/lib/zanikle'
 
 import '../../pohori.css'
@@ -103,6 +105,13 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
   // Když je oblast nemá, sekce se vykreslí bez nich — placeholder nikde.
   const fotoPas = (oblast.fotky ?? []).find((f) => f.role === 'pas-cile' && f.soubor)
   const fotoPamet = (oblast.fotky ?? []).find((f) => f.role === 'pamet' && f.soubor)
+  // Řez hřebenem (handoff F1 v2): body chat s doloženou výškou I polohou.
+  // Co jedno z toho nemá, se do řezu nedostane — a komponenta to řekne.
+  const vrcholy = vrcholyOblasti(oblastSlug)
+  const bodyRezu: BodChaty[] = vOblasti
+    .filter((ch) => ch.vyska != null && ch.lng != null && ch.url)
+    .map((ch) => ({ slug: ch.slug, nazev: ch.nazev, vyska: ch.vyska!, lng: ch.lng!, url: ch.url! }))
+
   // Cíl, který je na fotce — jen když to data výslovně říkají A je to ověřené.
   const cilVeFotce =
     fotoPas?.overeni?.verified && fotoPas.cilNazev
@@ -243,10 +252,37 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         </div>
       </header>
 
+      {/* Lišta „na stránce" (handoff F1 v2) — kotvy na sekce, které opravdu
+          existují: odkaz na sekci, kterou oblast nemá, by vedl do prázdna. */}
+      <nav className="pohori-nav" aria-label="Sekce stránky">
+        <span className="pohori-nav-popisek">Na stránce</span>
+        {ma3d && <a href="#s01">Mapa</a>}
+        {bodyRezu.length >= 3 && <a href="#srez">Řez hřebenem</a>}
+        {vOblasti.length > 0 && <a href="#s02">Chaty</a>}
+        {vOblasti.length > 0 && <a href="#s03">Žebříčky</a>}
+        {strediska.length > 0 && <a href="#s04">Střediska</a>}
+        {lanovky && lanovky.lanovky.length > 0 && <a href="#s05">Lanovky</a>}
+        {topCile.length > 0 && <a href="#s06">Cíle</a>}
+        <a href="#s07">Paměť hor</a>
+        {(vitrinaOtisky.length > 0 || sRazitkem > 0) && <a href="#s08">Sbírka</a>}
+        <a href="#s09">FAQ</a>
+      </nav>
+
       {ma3d && (
-        <section className="sec" aria-label="3D mapa">
+        <section className="sec" id="s01" aria-label="3D mapa">
           <SectionBar num="01" title={`3D mapa — ${oblast.nazev}`} variant="red" />
           <Mapa3D posterUrl={poster3d} appUrl={`/3d/${oblastSlug}.html`} />
+        </section>
+      )}
+
+      {bodyRezu.length >= 3 && (
+        <section className="sec" id="srez" aria-label="Řez hřebenem">
+          <SectionBar num="◭" title="Řez hřebenem" variant="night" />
+          <RezHrebenem
+            chaty={bodyRezu}
+            vrcholy={vrcholy?.vrcholy ?? []}
+            zdrojVrcholu={vrcholy?.zdroj}
+          />
         </section>
       )}
 
@@ -265,7 +301,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       )}
 
       {vOblasti.length > 0 && (
-      <section className="sec" aria-label="Chaty oblasti">
+      <section className="sec" id="s02" aria-label="Chaty oblasti">
         <SectionBar num="02" title="Chaty oblasti" variant="red" />
         <p className="pohori-uvodka">
           Vedeme <b>{vOblasti.length} profilů</b> — od hřebenových bud po schroniska na polské straně
@@ -276,7 +312,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       )}
 
       {vOblasti.length > 0 && (
-      <section className="sec" id="zebricky" aria-label="Žebříčky">
+      <section className="sec" id="s03" aria-label="Žebříčky">
         <SectionBar num="03" title="Žebříčky" variant="red" />
         <div className="pohori-zebricky">
           <div className="pohori-zebricek">
@@ -334,7 +370,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       )}
 
       {strediska.length > 0 && (
-        <section className="sec" aria-label="Střediska">
+        <section className="sec" id="s04" aria-label="Střediska">
           <SectionBar num="04" title="Střediska" variant="red" />
           <div className="pohori-strediska">
             {strediska.map((s) => {
@@ -369,14 +405,14 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       )}
 
       {lanovky && lanovky.lanovky.length > 0 && (
-        <section className="sec" aria-label="Lanovky">
+        <section className="sec" id="s05" aria-label="Lanovky">
           <SectionBar num="05" title="Lanovky" variant="red" />
           <LanovkySeznam data={lanovky} />
         </section>
       )}
 
       {topCile.length > 0 && (
-        <section className="sec" aria-label="Top cíle">
+        <section className="sec" id="s06" aria-label="Top cíle">
           <SectionBar num="06" title="Top cíle" variant="red" />
           {/* Foto pás přes celou šířku (handoff F1, sekce 05).
               Karta s cílem se do pásu položí JEN u snímku, u kterého je
@@ -422,7 +458,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         </section>
       )}
 
-      <section className="sec" aria-label="Zaniklé chaty">
+      <section className="sec" id="s07" aria-label="Zaniklé chaty">
         <SectionBar num="07" title="Z Atlasu zaniklých" variant="red" />
         <div className={`pohori-zanikle${fotoPamet ? ' pohori-zanikle--sfotkou' : ''}`}>
           {/* Vlepený snímek (handoff F1, sekce 07) — vedle tmavé karty Atlasu. */}
@@ -445,7 +481,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       </section>
 
       {(vitrinaOtisky.length > 0 || sRazitkem > 0) && (
-      <section className="sec" aria-label="Sběratelství">
+      <section className="sec" id="s08" aria-label="Sběratelství">
         <SectionBar num="08" title={`Sběratelství — vitrína ${oblast.nazev}`} variant="red" />
         <VitrinaSberatelstvi
           otisky={vitrinaOtisky}
@@ -463,7 +499,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       </section>
       )}
 
-      <section className="sec" aria-label="Časté otázky">
+      <section className="sec" id="s09" aria-label="Časté otázky">
         <SectionBar num="09" title="Časté otázky" variant="red" />
         <div className="pohori-faq">
           {faq.map((f) => (

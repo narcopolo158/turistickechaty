@@ -661,3 +661,59 @@ body.dark .fvlep-rukopis { color: #e7ecf1; }
 @media (prefers-reduced-motion: reduce) {
   .fvlep-ram, .fvlep-ram:hover { transform: none; transition: none; }
 }
+
+/* ── Řez hřebenem (handoff F1 v2, sekce mezi 01 a 02) ─────────────────────
+   Výškový profil oblasti. Svislá osa je výška, vodorovná zeměpisná délka —
+   proto se SVG kreslí s `preserveAspectRatio="none"` (natahuje se do šířky),
+   ale body chat leží v procentech nad ním, aby zůstaly kulaté. */
+.rez { background: var(--paper); border: 1px solid var(--line); border-radius: 13px; padding: 18px 20px 14px; box-shadow: 0 10px 24px -16px rgba(20, 18, 26, 0.4); }
+body.dark .rez { background: #1b242e; border-color: #2a3541; }
+.rez-plocha { position: relative; height: clamp(180px, 22vw, 240px); }
+.rez-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.rez-mrizka line { stroke: var(--hair); stroke-width: 1; vector-effect: non-scaling-stroke; }
+body.dark .rez-mrizka line { stroke: rgba(255, 255, 255, 0.13); }
+.rez-hreben { stroke: #9db2c3; stroke-width: 1.4; vector-effect: non-scaling-stroke; }
+body.dark .rez-hreben { stroke: #6d8194; }
+.rez-osa { position: absolute; left: 2px; transform: translateY(-100%); font: 600 8px/1 'Space Grotesk', sans-serif; color: var(--label); }
+.rez-vrchol { position: absolute; transform: translate(-50%, -100%); margin-top: -6px; font: 600 8.5px/1.15 'Space Grotesk', sans-serif; color: var(--alpine); text-align: center; white-space: nowrap; pointer-events: none; }
+
+/* Bod chaty je ODKAZ, ne div s onClick: klávesnice ho projde tabem a čtečka
+   přečte název i výšku (aria-label). Popisek se ukáže na hover i na focus. */
+/* Kotva je bod na křivce, ale kliknout se musí dát pohodlně: odkaz má proto
+   plochu 22 px a zápornými okraji se vystředí přesně na ten bod. Nulová
+   plocha by byla past — myší i prstem by se trefoval jen samotný 8px puntík. */
+.rez-bod { position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px; }
+.rez-bod-tecka { position: absolute; left: 50%; top: 50%; width: 8px; height: 8px; margin: -4px 0 0 -4px; border-radius: 50%; background: var(--red); border: 1.5px solid var(--paper); box-shadow: 0 1px 4px rgba(20, 18, 26, 0.35); transition: transform 0.15s; }
+body.dark .rez-bod-tecka { border-color: #1b242e; }
+.rez-bod-stopka { position: absolute; left: 50%; top: 50%; margin-left: -0.5px; width: 1px; height: 15px; background: var(--ghost); }
+.rez-bod-popis { position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%); white-space: nowrap; padding: 5px 9px; border-radius: 8px; background: var(--ink); color: #fff; font: 600 10.5px/1.3 'Space Grotesk', sans-serif; opacity: 0; visibility: hidden; transition: opacity 0.15s; z-index: 3; }
+.rez-bod:hover .rez-bod-popis, .rez-bod:focus-visible .rez-bod-popis { opacity: 1; visibility: visible; }
+.rez-bod:hover .rez-bod-tecka, .rez-bod:focus-visible .rez-bod-tecka { transform: scale(1.5); }
+.rez-bod:focus-visible { outline: none; }
+.rez-bod:focus-visible .rez-bod-tecka { outline: 2px solid var(--red); outline-offset: 3px; }
+.rez-pozn { margin: 12px 0 0; font: italic 400 10.5px/1.55 var(--font-emph, Georgia, serif); color: var(--muted); max-width: 96ch; }
+.rez-pozn b { font-style: normal; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rez-bod-tecka, .rez-bod-popis { transition: none; }
+}
+
+/* ── Lišta „na stránce" (handoff F1 v2) ───────────────────────────────────
+   Tenký sticky pás s kotvami na sekce. Leží NAD kartou stránky, ne v ní:
+   uvnitř prvku s `overflow:hidden` by sticky nefungoval. */
+/* `top` musí být POD hlavičkou webu (62 px + mezera), jinak lišta zajede
+   pod ni a je z ní vidět jen okraj. */
+.pohori-nav { position: sticky; top: 72px; z-index: 20; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin: 0 0 14px; padding: 9px 14px; background: var(--cream); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 8px 20px -12px rgba(20, 18, 26, 0.5); }
+body.dark .pohori-nav { background: #171f27; border-color: #242f39; }
+.pohori-nav-popisek { font: 600 9px/1 'Space Grotesk', sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: var(--label); margin-right: 2px; }
+.pohori-nav a { padding: 5px 11px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); font: 600 10.5px/1 'Space Grotesk', sans-serif; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.pohori-nav a:hover { border-color: rgba(224, 52, 31, 0.45); color: var(--red); }
+body.dark .pohori-nav a { background: #1b242e; border-color: #2a3541; color: #e7ecf1; }
+/* Kotva nesmí skončit pod hlavičkou ANI pod lištou (62 + 48 + mezera). */
+.sec[id] { scroll-margin-top: 128px; }
+@media (max-width: 760px) {
+  .pohori-nav { display: none; }
+}
+@media print {
+  .pohori-nav { display: none; }
+}
