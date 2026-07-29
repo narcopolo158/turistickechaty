@@ -384,9 +384,78 @@ zapíše jako redakční `prefer` do manifestu a DATA-33 ho stáhne i s atribuc�
 
 **Otázky k dodatku:** 11. **Titulní fotka Jizerek** — vybereš jednu
 z Commons odkazu, který jsi poslal, nebo mám sáhnout na Unsplash jako
-u Krkonoš? 12. **Anotace ve fotce** — chceš ji na krkonošském snímku vůbec?
-Šla by poctivě jedině tak, že bys potvrdil, co je na fotce vidět (autor to
-neuvádí), a pak by pole `anotace` mohlo ukázat třeba na hřeben.
+u Krkonoš? ~~12. **Anotace ve fotce**~~ — **zodpovězeno týž den, viz
+dodatek 8.**
+
+**Dodatek 8 (týž den, dvě věci od Michala naráz — spadlá DATA-33 a „popisek
+u hero fotky Luční boudy uveď, je to Luční bouda — ověřeno"): pád byl
+v diakritice, anotace je doložená a sekce lanovek dostala nový vzhled.**
+Commity `aea0e8d` a níže.
+
+**(1) DATA-33 spadla na „ř".** Michalův první klik skončil hláškou `Cannot
+convert argument to a ByteString because the character at index 36 has a value
+of 345`. Index 36 bylo **„ř" ze slova „středisek" v User-Agentu**: hodnota
+hlavičky se ve fetchi převádí na ByteString, kam se vejdou jen znaky do 255 —
+„í" (237) projde, „ř" (345) ani „ě" (283) ne. Proto tatáž chyba nikdy
+nepotkala DATA-05, kde je v UA jen „razítek": náhoda, ne návrh. UA je nově bez
+diakritiky a **test čte všechny skripty** a hlídá každý řetězec, který se
+posílá do hlavičky — past je totiž v tom, že se chyba neprojeví u toho, kdo má
+náhodou jen znaky do 255, a další skript si ji přinese znovu. Test má
+i kontrolu sebe sama (na původním řetězci musí najít „ř" na indexu 36).
+Při té příležitosti dostalo **stahování obrázku opakování** (3 pokusy, backoff
+s respektem k `Retry-After`, 4xx kromě 429 se neopakuje): dotazy na API
+opakování dávno mají, kdežto stahování běželo na jeden pokus, takže jedna
+přechodná 429 by tiše nechala středisko bez fotky. Běh došel až k prvnímu
+stažení, takže **do repa se nedostalo nic** — po opravě stačí spustit znovu.
+
+**(2) Luční bouda smí být jmenovaná.** Michal potvrdil vlastní znalostí místa,
+že budova na titulní fotce JE Luční bouda — tím je splněná konvence B, přibyl
+blok `overeniHeroFoto` (`verified: true`, checked 29. 7.) a popisek i `alt`
+ji nově jmenují. Vykreslí se **rukopisná anotace se šipkou „Luční bouda,
+1 410 m"** (výška z profilu chaty, ne z hlavy). Kotva anotace je **poloha
+předmětu, ne poloha textu**: šipka má hrot přesně tam a popiska se skládá
+k němu. První verze to měla obráceně a na mobilu ukazovala o padesát pixelů
+vedle — rám se zmenší, kresba pevných 150×104 px ne. Ověřeno rendrem ve třech
+šířkách (1280, 900, 390): hrot sedí na boudě ve všech; na úzkém displeji se
+popiska skládá vlevo od boudy, jinak by přetekla přes okraj.
+
+**(3) Sekce 06 — lanovky jako grafický prvek, ne panel.** Nad tabulkou stojí
+**animované pozadí** (dvě lana, tři podpěry, dvě červené kabiny a dvě modré
+sedačky) a **tři barevně odlišené karty**. Dvě odchylky od návrhu, obě
+z téhož důvodu:
+*Pohyb dělají keyframes, ne SMIL* — `animateMotion` z návrhu se nedá vypnout
+médiem `prefers-reduced-motion`, muselo by na to běžet `pauseAnimations()`.
+Pohyb po přímém laně se ale dá popsat i klíčovými snímky a ten už systémové
+nastavení respektuje bez řádku JS: kdo má animace vypnuté, vidí vozy stát
+v půli lana.
+*Trojici v kartách vybírá pravidlo, ne vkus* — návrh jmenuje Sněžku, Černou
+horu a Medvědín; my bereme **dráhy, které vyvezou nejvýš a nahoře u nich stojí
+chata průvodce**, přičemž **úseky téže dráhy se počítají jednou**. Bez toho
+druhého by v kartách stála Sněžka dvakrát (lanovka na ni má dva úseky
+s přestupem na Růžové hoře) — přesně na tohle je test. Vyšlo: Růžová hora ⇔
+Sněžka (1 561 m), Wyciąg „Zbyszek" (1 353 m) a Lysá Hora (1 311 m). Pravidlo
+je napsané i v UI. **Doba jízdy v kartách chybí schválně**: doloženou ji
+nemáme a dopočítat ji z délky dráhy by znamenalo vydávat vlastní výpočet za
+údaj provozovatele.
+Vedle toho **dark režim**: nové karty dostaly noční pravidla — a při té
+příležitosti i **stat-dlaždice hlavičky**, které na noční stránce svítily
+bíle od chvíle, kdy vznikly. Barva třetí karty musela být zapsaná číslem:
+token `--alpine` je v paletě **zelený** (horská louka), takže „alpská modrá"
+z návrhu by z něj byla travnatá.
+
+**Co z nového návrhu ZATÍM není** (odpověď na Michalovu otázku „udělal jsi
+i zbytek stránky?"): hotová je **hlavička** a **sekce 06**. Ostatní sekce
+běží ve starší podobě. Tři fotografické momenty návrhu (Sněžné jámy
+s hotspoty v sekci 05, vlepený snímek vysílače v 07) čekají na snímky
+s doloženou licencí — v handoffu přišly tři fotky, ale bez autora a licence
+je do repa dát nemůžu. 372 testů (+6), kontrola, lint i tsc čisté.
+
+**Otázky k dodatku:** 13. **Fotky z handoffu** (`foto-bila-louka.jpg`,
+`foto-snezne-jamy.jpg`, `foto-vysilac.jpg`) — kdo je autor a pod jakou
+licencí je smíme použít? README handoffu říká jen, že originály dodá
+zadavatel. Bez téhle odpovědi zůstanou sekce 05 a 07 v dosavadní podobě.
+14. **Pořadí dál** — mám pokračovat 3D mapou (sekce 01, návrh chce malovaný
+styl s parallaxem místo dnešního posteru), nebo vitrínou a žebříčky?
 
 ---
 

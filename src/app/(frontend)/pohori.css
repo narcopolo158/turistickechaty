@@ -471,6 +471,92 @@ body.dark .phf-razitko { opacity: 0.85; }
   .vit { grid-template-columns: 1fr; }
 }
 
+/* ── Lanovky: karty s animovaným pozadím (handoff F1, sekce 06) ───────────
+   Pozadí je dekorace, ne schéma: lana a podpěry jdou v tlumených tokenech,
+   kabiny v akcentech, a nic z toho nenese údaj. Pohyb popisují keyframes
+   (ne SMIL), aby ho `prefers-reduced-motion` uměl vypnout bez skriptu. */
+.lan-blok { position: relative; margin: 4px 0 20px; padding: 96px 22px 34px; border-radius: 16px; overflow: hidden; background: linear-gradient(160deg, rgba(42, 92, 184, 0.05), var(--cream) 62%); border: 1px solid var(--line); }
+.lan-scena { position: absolute; inset: 0; pointer-events: none; }
+.lan-lana { position: absolute; inset: 0; width: 100%; height: 100%; }
+.lan-lano { fill: none; stroke: var(--ghost, rgba(56, 64, 87, 0.26)); stroke-width: 1.4; vector-effect: non-scaling-stroke; }
+.lan-podpera { fill: none; stroke: var(--label); stroke-width: 1.6; vector-effect: non-scaling-stroke; opacity: 0.35; }
+
+.lan-vozy { position: absolute; inset: 0; }
+/* Vůz visí POD lanem: bod dráhy je závěs, proto se posouvá jen vodorovně. */
+.lan-voz { position: absolute; width: 26px; height: 30px; margin: 0 0 0 -13px; opacity: 0.92; }
+.lan-voz svg { width: 100%; height: 100%; overflow: visible; }
+.lan-zaves { stroke: var(--label); stroke-width: 1.6; fill: none; }
+.lan-noha { stroke: var(--label); stroke-width: 1.4; fill: none; }
+.lan-telo--cerv { fill: var(--red); }
+/* Modrá je alpská modř z tokenů návrhu (#2a5cb8), ne token `--alpine`
+   — ten je v paletě zelený (horská louka), a kabina by z něj byla travnatá. */
+.lan-telo--modr { fill: #2a5cb8; }
+.lan-okno { fill: rgba(255, 255, 255, 0.82); }
+.lan-kyv { display: block; width: 100%; height: 100%; transform-origin: 50% 0; animation: lanKyv 3.4s ease-in-out infinite alternate; }
+
+/* Dráhy odpovídají lanům ve `LanovkyScena`: A klesá doprava, B stoupá.
+   Zpoždění rozestavuje vozy po laně, `alternate` nikde není — lanovka jede
+   pořád jedním směrem a protijedoucí vůz je druhý vůz, ne tentýž zpátky. */
+.lan-voz--a { animation: lanA 34s linear infinite; }
+.lan-voz--b { animation: lanA 34s linear infinite; animation-delay: -17s; }
+.lan-voz--c { animation: lanB 40s linear infinite; }
+.lan-voz--d { animation: lanB 40s linear infinite; animation-delay: -20s; }
+
+/* Procenta odpovídají lanům ve `LanovkyScena` (viewBox 0 0 100 40):
+   lano A jde z 3 do 9 → 7,5 % až 22,5 % výšky bloku, lano B opačně. */
+@keyframes lanA { from { left: -4%; top: 7.5%; } to { left: 104%; top: 22.5%; } }
+@keyframes lanB { from { left: 104%; top: 21.5%; } to { left: -4%; top: 6.5%; } }
+@keyframes lanKyv { from { transform: rotate(-3.5deg); } to { transform: rotate(3.5deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  /* Vypnout, ne zpomalit: kdo si vyžádal klid, nemá dostat pomalý pohyb.
+     Vozy zůstanou stát v půli lana, sekce tím o nic informačního nepřijde. */
+  .lan-voz, .lan-kyv { animation: none; }
+  .lan-voz--a { left: 30%; top: 12%; }
+  .lan-voz--b { left: 68%; top: 18.5%; }
+  .lan-voz--c { left: 44%; top: 14.5%; }
+  .lan-voz--d { left: 82%; top: 8.5%; }
+}
+
+.lan-karty { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.lan-karta { background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--akcent); border-radius: 12px; padding: 13px 15px 14px; box-shadow: 0 10px 26px -20px rgba(20, 18, 26, 0.5); background-image: linear-gradient(160deg, var(--akcent-ton), var(--paper) 60%); }
+.lan-karta--cerv { --akcent: var(--red); --akcent-ton: rgba(224, 52, 31, 0.08); }
+.lan-karta--jantar { --akcent: #c98a2e; --akcent-ton: rgba(201, 138, 46, 0.09); }
+.lan-karta--alpska { --akcent: #2a5cb8; --akcent-ton: rgba(42, 92, 184, 0.08); }
+.lan-pill { display: inline-block; padding: 3px 9px; border-radius: 999px; background: var(--akcent); color: #fff; font: 600 10px/1.3 'Space Grotesk', sans-serif; letter-spacing: 0.06em; text-transform: uppercase; }
+.lan-karta h3 { margin: 9px 0 0; font: 500 19px/1.2 var(--font-emph, Georgia, serif); color: var(--ink); }
+.lan-udaje { display: grid; gap: 4px; margin: 10px 0 0; }
+.lan-udaje > div { display: flex; gap: 8px; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--hair); padding-bottom: 3px; }
+.lan-udaje dt { font: 500 11px/1.3 Inter, sans-serif; color: var(--label); }
+.lan-udaje dd { margin: 0; font: 600 12.5px/1.35 'Space Grotesk', sans-serif; color: var(--ink); text-align: right; }
+.lan-chaty { margin: 10px 0 0; font: 400 12px/1.45 Inter, sans-serif; color: var(--muted); }
+.lan-chaty a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--akcent); }
+.lan-chaty a:hover { color: var(--akcent); }
+.lan-pravidlo { position: relative; margin: 14px 0 0; font: italic 400 11.5px/1.55 var(--font-emph, Georgia, serif); color: var(--muted); max-width: 76ch; }
+
+@media (max-width: 860px) {
+  .lan-karty { grid-template-columns: 1fr; }
+  .lan-blok { padding: 78px 14px 16px; }
+}
+
+/* Noc na horách. Dark režim v tomhle projektu nepřepisuje tokeny, ale
+   dobarvuje komponenty (`body.dark .x`) — nové karty proto potřebují vlastní
+   pravidla, jinak by na tmavé stránce svítily bíle. Při té příležitosti
+   dostávají svá i stat-dlaždice hlavičky: bílé karty na noční stránce byly
+   ve stávající šabloně vidět od začátku, jen si toho nikdo nevšiml. */
+body.dark .lan-blok { background: linear-gradient(160deg, rgba(42, 92, 184, 0.16), #141c24 62%); border-color: #242f39; }
+body.dark .lan-karta { background-color: #1b242e; background-image: linear-gradient(160deg, var(--akcent-ton), #1b242e 60%); border-color: #2a3541; }
+body.dark .lan-karta h3, body.dark .lan-udaje dd, body.dark .lan-chaty a { color: #e7ecf1; }
+body.dark .lan-chaty, body.dark .lan-pravidlo { color: #a9b6c2; }
+body.dark .lan-udaje > div { border-color: #2a3541; }
+body.dark .lan-lano { stroke: rgba(231, 236, 241, 0.22); }
+body.dark .lan-podpera { stroke: rgba(231, 236, 241, 0.3); }
+body.dark .lan-zaves, body.dark .lan-noha { stroke: rgba(231, 236, 241, 0.45); }
+body.dark .lan-okno { fill: rgba(231, 236, 241, 0.75); }
+body.dark .pohori-tile { background: #1b242e; border-color: #2a3541; }
+body.dark .pohori-tile b, body.dark .pohori-tile span { color: #e7ecf1; }
+body.dark .pohori-tile i { color: #93a4b2; }
+
 /* ── Lanovky (DATA-32) ────────────────────────────────────────────────────
    Tabulkový jazyk profilu: tenké linky, klidná hlavička, mikropoznámka pod.
    Dráhy, které někam k chatě vyvezou, řadí skript nahoru — CSS jen nesmí ten

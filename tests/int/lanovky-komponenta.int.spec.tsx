@@ -13,7 +13,7 @@ import { cleanup, render, screen } from '@testing-library/react'
 import React from 'react'
 import { afterEach, describe, expect, it } from 'vitest'
 
-import LanovkySeznam from '@/components/LanovkySeznam'
+import LanovkySeznam, { vyberKarty } from '@/components/LanovkySeznam'
 import type { LanovkyOblasti } from '@/lib/lanovky'
 
 const DATA = JSON.parse(
@@ -63,5 +63,77 @@ describe('LanovkySeznam nad reálnými daty Krkonoš', () => {
   it('bez dat nevykreslí nic (nová oblast nemá prázdnou tabulku)', () => {
     const { container } = render(<LanovkySeznam data={null} />)
     expect(container.innerHTML).toBe('')
+  })
+})
+
+/**
+ * Karty sekce 06 (handoff F1). Návrh v nich jmenuje konkrétní trojici; my ji
+ * musíme odvodit pravidlem, protože redakční výběr bez pravidla by byl
+ * netestovatelné tvrzení. Past, kvůli které tenhle blok existuje: lanovka na
+ * Sněžku má DVA úseky s přestupem na Růžové hoře, takže naivní „tři nejvyšší"
+ * by dalo Sněžku dvakrát.
+ */
+describe('výběr tří karet', () => {
+  const l = (
+    id: string,
+    horniVyska: number,
+    dolni: [number, number],
+    horni: [number, number],
+    chaty = 1,
+  ) =>
+    ({
+      id,
+      nazev: id,
+      typ: 'gondola',
+      typNazev: 'kabinková',
+      delkaM: 1000,
+      prevyseniM: 300,
+      useku: 1,
+      dolni: { lat: dolni[0], lng: dolni[1], vyska: horniVyska - 300 },
+      horni: { lat: horni[0], lng: horni[1], vyska: horniVyska },
+      uHorniStanice: Array.from({ length: chaty }, (_, i) => ({
+        slug: `chata-${id}-${i}`,
+        nazev: `Chata ${id} ${i}`,
+        vzdalenostM: 300,
+      })),
+    }) as LanovkyOblasti['lanovky'][number]
+
+  it('bere nejvyšší horní stanice, ale úseky téže dráhy počítá jednou', () => {
+    // Spodní úsek končí tam, kde horní začíná (Pec → Růžová hora → Sněžka).
+    const horni = l('sneska-horni', 1561, [50.72, 15.75], [50.736, 15.74])
+    const spodni = l('sneska-spodni', 1334, [50.7, 15.73], [50.7201, 15.7502])
+    const jina = l('jina', 1353, [50.75, 15.6], [50.76, 15.61])
+    const dalsi = l('dalsi', 1311, [50.65, 15.4], [50.66, 15.41])
+    // `spodni.horni` leží 20 m od `horni.dolni` → tentýž přestup.
+    const vybrane = vyberKarty([spodni, jina, horni, dalsi]).map((x) => x.id)
+    expect(vybrane).toEqual(['sneska-horni', 'jina', 'dalsi'])
+  })
+
+  it('dráhu bez chaty nahoře ani bez výšky horní stanice do karet nepustí', () => {
+    const bezChaty = l('bez-chaty', 1600, [50.1, 15.1], [50.11, 15.11], 0)
+    const bezVysky = {
+      ...l('bez-vysky', 1500, [50.2, 15.2], [50.21, 15.21]),
+      horni: { lat: 50.21, lng: 15.21, vyska: null },
+    } as LanovkyOblasti['lanovky'][number]
+    const dobra = l('dobra', 1000, [50.3, 15.3], [50.31, 15.31])
+    expect(vyberKarty([bezChaty, bezVysky, dobra]).map((x) => x.id)).toEqual(['dobra'])
+  })
+
+  it('nad reálnými daty dá tři různé dráhy a každá je i v tabulce', () => {
+    const vybrane = vyberKarty(DATA.lanovky)
+    expect(vybrane).toHaveLength(3)
+    expect(new Set(vybrane.map((x) => x.id)).size).toBe(3)
+    render(<LanovkySeznam data={DATA} />)
+    expect(document.querySelectorAll('.lan-karta')).toHaveLength(3)
+    // Karta nesmí tvrdit dobu jízdy — doloženou ji nemáme.
+    expect(document.querySelector('.lan-karty')!.textContent).not.toMatch(/min|doba jízdy/i)
+    // Tisícové mezery jsou úzké nezlomitelné — pro porovnání se odmažou.
+    const bezMezer = document.querySelector('.lan-karty')!.textContent!.replace(/\s/gu, '')
+    for (const v of vybrane) expect(bezMezer).toContain(String(v.horni.vyska))
+  })
+
+  it('řekne, podle čeho vybírá — čtenář nemá hádat, proč vidí zrovna tyhle', () => {
+    render(<LanovkySeznam data={DATA} />)
+    expect(screen.getByText(/Vybráno pravidlem, ne redakčním vkusem/)).toBeTruthy()
   })
 })
