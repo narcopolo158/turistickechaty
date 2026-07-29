@@ -386,3 +386,44 @@
 @media (max-width: 860px) {
   .vit { grid-template-columns: 1fr; }
 }
+
+/* ── Titulní fotka oblasti (FOTO-01) ──────────────────────────────────────
+   Krajinný pás nad hlavičkou. Držíme papírový jazyk zbytku webu: bílý rám
+   jako u polaroidu v heru homepage, jemný stín, popiska pod snímkem místo
+   přes něj (text přes fotku je na horských snímcích špatně čitelný a halo
+   by hádalo s tokeny). Atribuce je součástí popisky, ne patičky — u fotky
+   se má číst tam, kde fotka je. */
+.pohori-herofoto {
+  margin: 12px 0 6px;
+  padding: 0;
+  background: var(--paper, #fdfaf2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px -20px rgba(20, 18, 26, 0.45);
+}
+.pohori-herofoto-img {
+  display: block;
+  width: 100%;
+  height: clamp(180px, 34vw, 340px);
+  object-fit: cover;
+  object-position: center 42%;
+}
+.pohori-herofoto-popis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 7px 12px 8px;
+  font: 400 12px/1.35 var(--font-ui, system-ui, sans-serif);
+  color: var(--ink-3, #6b6560);
+  border-top: 1px solid var(--line);
+}
+.pohori-herofoto-misto { letter-spacing: 0.01em; }
+.pohori-herofoto-atr { color: var(--ink-3, #6b6560); text-decoration: none; border-bottom: 1px dotted currentColor; }
+.pohori-herofoto-atr:hover { color: var(--ink, #241f1c); }
+
+@media print {
+  .pohori-herofoto { display: none; }
+}

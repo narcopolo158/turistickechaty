@@ -8,7 +8,7 @@ import NamatkouPas from '@/components/NamatkouPas'
 import TiltDiv from '@/components/TiltDiv'
 import TiskButton from '@/components/TiskButton'
 import { SectionBar } from '@/components/ui'
-import { getChatyProMapu, getIndexChat } from '@/lib/chaty'
+import { getChatyProMapu, getIndexChat, getOblastBySlug } from '@/lib/chaty'
 import {
   denVRoce,
   feedNaposledyOvereno,
@@ -43,7 +43,11 @@ export const revalidate = 3600
  * Všechna čísla POČÍTANÁ z dat — nikde žádné ručně psané.
  */
 export default async function HomePage() {
-  const [chatyProMapu, { index, kalendarium }] = await Promise.all([getChatyProMapu(), getIndexChat()])
+  const [chatyProMapu, { index, kalendarium }, oblastKrkonose] = await Promise.all([
+    getChatyProMapu(),
+    getIndexChat(),
+    getOblastBySlug('krkonose'),
+  ])
 
   const dnes = new Date().toISOString().slice(0, 10)
   const sRazitkem = index.filter((ch) => ch.razitko).length
@@ -53,6 +57,8 @@ export default async function HomePage() {
   const nedavno = pocetNoveOverenychZa(index, dnes, 14)
   const vyroci = kalendariumVyber(kalendarium, dnes)
   const overenoFeed = feedNaposledyOvereno(index, 4)
+  // Titulní fotka oblasti (FOTO-01) — na kartě pohoří místo kresleného panoramatu.
+  const heroFotoKrkonose = oblastKrkonose?.heroFoto ?? null
 
   // Artefakty koláže z doložených dat: hero fotka + reálný otisk Luční boudy.
   const lucni = index.find((ch) => ch.slug === 'lucni-bouda') ?? null
@@ -188,12 +194,25 @@ export default async function HomePage() {
             <TiltDiv className="hf1-pohori-ziva">
               <Link href="/cesko/krkonose" className="hf1-pohori-obsah">
                 <span className="hf1-pohori-panorama" aria-hidden="true">
+                  {/* Titulní fotka oblasti, když ji data mají (FOTO-01); kreslené
+                      panorama zůstává jako záloha, aby karta nikdy nebyla prázdná
+                      — a u „připravujeme" oblastí je pořád jediná varianta. */}
+                  {heroFotoKrkonose?.nahled ? (
+                    <img
+                      className="hf1-pohori-foto"
+                      src={heroFotoKrkonose.nahled}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ) : (
                   <svg viewBox="0 0 460 110" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
                     <path d="M0,64 L74,34 L140,54 L214,22 L292,52 L360,28 L420,48 L460,36 L460,110 L0,110 Z" fill="#b7c7d4" />
                     <path d="M214,22 L242,38 L188,44 Z" fill="#f2f5f7" opacity=".9" />
                     <path d="M0,84 L90,62 L180,80 L280,56 L380,76 L460,60 L460,110 L0,110 Z" fill="#7d9469" />
                     <path d="M-5,74 C100,66 220,58 330,50 C380,46 430,44 465,40" fill="none" stroke="#fdfaf2" strokeWidth="3" opacity=".65" />
                   </svg>
+                  )}
                   <span className="hf1-pohori-zive-badge">ŽIVÉ</span>
                 </span>
                 <span className="hf1-pohori-telo">

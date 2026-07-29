@@ -498,6 +498,23 @@ export interface Oblasti {
       }[]
     | null;
   /**
+   * Krajinný snímek do hlavičky stránky pohoří. NENÍ to fotka objektu — u fotek chat musí být doložené, která budova to je (kolekce Fotky), kdežto tady stačí doložená lokalita. Soubory leží v public/foto/pohori/.
+   */
+  heroFoto?: {
+    soubor?: string | null;
+    nahled?: string | null;
+    alt?: string | null;
+    autor?: string | null;
+    autorUrl?: string | null;
+    licence?: ('unsplash' | 'pexels' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'se-svolenim' | 'vlastni') | null;
+    zdrojUrl?: string | null;
+    /**
+     * Píše se jen to, co dokládá popis u zdroje. Když autor budovu nejmenuje, nejmenujeme ji ani my.
+     */
+    popisMista?: string | null;
+    prevzatoDne?: string | null;
+  };
+  /**
    * Volitelné ohraničení pro výřez mapy oblasti (WGS84).
    */
   bbox?: {
@@ -1212,6 +1229,19 @@ export interface OblastiSelect<T extends boolean = true> {
         nejblizChataSlug?: T;
         source?: T;
         id?: T;
+      };
+  heroFoto?:
+    | T
+    | {
+        soubor?: T;
+        nahled?: T;
+        alt?: T;
+        autor?: T;
+        autorUrl?: T;
+        licence?: T;
+        zdrojUrl?: T;
+        popisMista?: T;
+        prevzatoDne?: T;
       };
   bbox?:
     | T

@@ -107,6 +107,62 @@ export const Oblasti: CollectionConfig = {
       ],
     },
     {
+      name: 'heroFoto',
+      type: 'group',
+      label: 'Titulní fotka oblasti',
+      admin: {
+        description:
+          'Krajinný snímek do hlavičky stránky pohoří. NENÍ to fotka objektu — ' +
+          'u fotek chat musí být doložené, která budova to je (kolekce Fotky), ' +
+          'kdežto tady stačí doložená lokalita. Soubory leží v public/foto/pohori/.',
+      },
+      fields: [
+        { name: 'soubor', type: 'text', label: 'Cesta k souboru (od /)' },
+        { name: 'nahled', type: 'text', label: 'Cesta k náhledu (menší varianta)' },
+        { name: 'alt', type: 'text', label: 'Alternativní popis (co je na snímku)' },
+        {
+          type: 'row',
+          fields: [
+            { name: 'autor', type: 'text', label: 'Autor', admin: { width: '50%' } },
+            { name: 'autorUrl', type: 'text', label: 'Profil autora', admin: { width: '50%' } },
+          ],
+        },
+        {
+          type: 'row',
+          fields: [
+            {
+              name: 'licence',
+              type: 'select',
+              label: 'Licence',
+              options: [
+                { label: 'Unsplash License', value: 'unsplash' },
+                { label: 'Pexels License', value: 'pexels' },
+                { label: 'CC BY', value: 'cc-by' },
+                { label: 'CC BY-SA', value: 'cc-by-sa' },
+                { label: 'CC0', value: 'cc0' },
+                { label: 'Volné dílo (public domain)', value: 'pd' },
+                { label: 'Se svolením', value: 'se-svolenim' },
+                { label: 'Vlastní (redakce)', value: 'vlastni' },
+              ],
+              admin: { width: '50%' },
+            },
+            { name: 'zdrojUrl', type: 'text', label: 'Stránka snímku', admin: { width: '50%' } },
+          ],
+        },
+        {
+          name: 'popisMista',
+          type: 'text',
+          label: 'Co je na snímku (jen doložené)',
+          admin: {
+            description:
+              'Píše se jen to, co dokládá popis u zdroje. Když autor budovu nejmenuje, ' +
+              'nejmenujeme ji ani my.',
+          },
+        },
+        { name: 'prevzatoDne', type: 'text', label: 'Převzato dne (YYYY-MM-DD)' },
+      ],
+    },
+    {
       name: 'bbox',
       type: 'group',
       label: 'Mapové ohraničení (bbox)',

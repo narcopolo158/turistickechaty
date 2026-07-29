@@ -32,6 +32,28 @@ nejvyssiHora:
     tisicovky.cz („Sněžka (HLV 1; 1603 m)") + kudyznudy.cz („nejvyšší hora
     Česka i Slezska") — titulky WebSearch 2026-07-27, obsah neotevřen
 
+# ── Titulní fotka oblasti (FOTO-01) ───────────────────────────────────────
+# Krajinný snímek do hlavičky stránky pohoří. Je to JINÝ druh fotky než
+# fotka chaty: u profilu musí být doložené, která budova to je, tady stačí
+# doložená lokalita (rozlišení z docs/FOTKY-ZDROJE-A-LICENCE.md, oddíl 1).
+# Unsplash atribuci nevyžaduje — uvádíme ji přesto, protože web u každého
+# údaje říká, odkud je, a u obrázků by to jinak neplatilo.
+heroFoto:
+  soubor: /foto/pohori/krkonose-hero-jan-kopriva.jpg
+  nahled: /foto/pohori/krkonose-hero-jan-kopriva-nahled.jpg
+  alt: >-
+    Pohled z vrcholu Sněžky přes hřebenovou pláň se stavbou horské boudy,
+    v pozadí modré vrstvy vzdálených hřebenů
+  autor: Jan Kopřiva
+  autorUrl: https://unsplash.com/@jxk
+  licence: unsplash
+  zdrojUrl: https://unsplash.com/photos/mbFs0yZYb74
+  # Autor u snímku uvádí „View from the top of Czech Republic - Sněžka
+  # 1603 m" (načteno 2026-07-29). Budovu na pláni ani vzdálený vrchol
+  # s vysílačem NEJMENUJEME — autor je nejmenuje a my si to nedomýšlíme.
+  popisMista: pohled z vrcholu Sněžky (dle popisu autora u snímku)
+  prevzatoDne: '2026-07-29'
+
 topCile:
   - nazev: Sněžka
     veta: Nejvyšší hora Česka (1603 m) na hřebeni nad Obřím dolem a Równí pod Śnieżką.

@@ -531,3 +531,8 @@
   text-decoration: none;
   box-shadow: 0 7px 16px -7px rgba(224, 52, 31, 0.8);
 }
+
+/* Titulní fotka oblasti na kartě pohoří (FOTO-01) — nahrazuje kreslené
+   panorama tam, kde data fotku mají. Rám i rádius drží karta, obrázek jen
+   vyplní plochu; hover tilt zajišťuje TiltDiv nad kartou. */
+.hf1-pohori-foto { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }

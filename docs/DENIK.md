@@ -284,6 +284,41 @@ přesně model, který v projektu funguje u historického razítka Luční boudy
 z Michalovy sbírky, a pořizovací cena běžné dobové pohlednice je v desítkách
 až stovkách korun.
 
+**Dodatek 4 (týž den, Michal poslal tři fotky z Unsplash „na hlavní foto
+Krkonoš"): Krkonoše mají titulní fotku — a projekt nový druh obrázku.**
+
+Autory i licence jsem ověřil na stránkách snímků: **Jan Kopřiva** (popis
+autora „View from the top of Czech Republic - Sněžka 1603 m"), **Małgorzata
+Twardo** (Karkonosze, polská strana) a **Petr Urbanek** (cedule Krkonošského
+národního parku). Jako titulní jsem vzal Kopřivův snímek — je to jediný ze
+tří, na kterém je vidět **bouda v krajině**, což je přesně to, o čem je celý
+web; zbylé dva leží připravené v `public/foto/pohori/` pro sekce, které je
+uplatní.
+
+**Nový datový typ, ne nová fotka chaty.** Zavedl jsem `heroFoto` do kolekce
+Oblasti a komponentu `PohoriHeroFoto`, vědomě oddělenou od kolekce Fotky —
+důvod je ten rozdíl z ranní rešerše: u fotky chaty musí být doložené, KTERÁ
+budova to je, kdežto u titulní fotky pohoří stačí doložená lokalita. Kdyby
+obojí sdílelo jednu cestu, dřív nebo později by se krajinný snímek vydával za
+doklad objektu.
+
+**Dvě věci, které hlídají testy** (5 nových, celkem 336 zeleně): atribuce se
+vypisuje **i u licence, která ji nevyžaduje** — Unsplash ji nechce, ale web,
+který u faktů jmenuje prameny a u obrázků mlčí, si protiřečí; a popisek nese
+jen to, co dokládá popis u zdroje. Autor budovu na snímku nejmenuje, takže ji
+nejmenujeme ani my (test to výslovně kontroluje na „Luční bouda" a „Ještěd" —
+obojí by se nabízelo, doložené to není).
+
+Fotka je i na kartě Krkonoš na homepage místo kresleného panoramatu; kreslená
+varianta zůstává jako záloha a u „připravujeme" oblastí je pořád jediná.
+
+**Bonus — vizuální kontrola, na kterou F1b/F1c čekaly.** Postavil jsem lokálně
+Postgres, naseedoval 77 profilů a proklikal to Playwrightem: homepage, katalog,
+stránka pohoří a nový profil Žalého, v denním i nočním režimu. Snímky jsou
+v `docs/screenshots/f1-vizualni-2026-07-29/`. Nic rozbitého; drobnost k zápisu:
+konzole hlásí hydration warning na stránkách s klientskými komponentami (pás
+razítek a mapa) — na vzhled to nemá vliv, ale patří to na seznam k dořešení.
+
 **Otázky pro Michala k dodatkům:**
 4. **Stezka korunami stromů Krkonoše** — bereme vyhlídkové stezky jako
    rozhledny, nebo je klíč míněn jen na věže?
@@ -295,6 +330,9 @@ až stovkách korun.
 7. **Nákup originálů** — chceš zkusit koupit pár dobových pohlednic
    klíčových bud (Labská, Petrova, zaniklé boudy) a naskenovat je? Je to
    licenčně nejčistší cesta, jakou jsem našel.
+8. **Titulní fotka** — sedí ti Kopřivův snímek jako hlavní fotka Krkonoš,
+   nebo bys dal přednost dramatičtějším skalám od Małgorzaty Twardo?
+   Přehodit je otázka jednoho řádku v `data/oblasti/krkonose.yaml`.
 
 ---
 

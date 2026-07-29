@@ -9,6 +9,7 @@ import React from 'react'
 import Mapa3D from '@/components/Mapa3D'
 import PohoriChatySeznam from '@/components/PohoriChatySeznam'
 import VitrinaSberatelstvi, { type VitrinaOtisk } from '@/components/VitrinaSberatelstvi'
+import PohoriHeroFoto from '@/components/PohoriHeroFoto'
 import { SectionBar } from '@/components/ui'
 import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
@@ -168,6 +169,8 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       <nav className="pohori-breadcrumb mn" aria-label="Drobečková navigace">
         <Link href="/">Česko</Link> / <span>{oblast.nazev}</span>
       </nav>
+
+      <PohoriHeroFoto foto={oblast.heroFoto} />
 
       <header className="pohori-hero">
         <div className="pohori-hero-text">

@@ -49,6 +49,9 @@ const KALENDARIUM: KalendariumPolozka[] = [
 vi.mock('@/lib/chaty', () => ({
   getChatyProMapu: async () => [],
   getIndexChat: async () => ({ index: INDEX, kalendarium: KALENDARIUM }),
+  // Titulní fotka oblasti (FOTO-01): mock ji schválně NEMÁ — karta pohoří má
+  // fungovat i bez fotky (kreslené panorama je záloha, viz page.tsx).
+  getOblastBySlug: async () => null,
 }))
 vi.mock('@/lib/zanikle', () => ({
   zanikleChaty: () => Array.from({ length: 12 }, (_, i) => ({ slug: `z${i}` })),
