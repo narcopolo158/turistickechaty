@@ -259,3 +259,31 @@ sám o sobě doklad**, který u staženého souboru nikdy nemáme.
 
 *Zapsáno jako podklad k rozhodnutí; nic z toho se zatím do dat ani do kódu
 nepromítlo.*
+
+---
+
+## 6. Fronta konkrétních snímků od Michala (29. 7. 2026)
+
+Michal poslal k novému návrhu stránky pohoří dva odkazy. **Ani jeden se z téhle
+session zpracovat nedá**: Commons je ze sandboxu nedostupný (proxy), a licenci
+ani autora si nesmíme domyslet — obojí se čte ze stránky souboru. Zapsáno sem,
+aby se odkazy neztratily, a s tím, co u každého chybí.
+
+1. **Lanovka na Sněžku, jízda vzhůru** —
+   `https://commons.wikimedia.org/wiki/File:Lanovka_na_Sn%C4%9B%C5%BEku,_j%C3%ADzda_vzh%C5%AFru.jpg`
+   Chybí: autor, licence, rok, rozměry. Cíl: sekce lanovek na stránce pohoří
+   (návrh F1, sekce 06) nebo karta střediska Pec pod Sněžkou. Až budou metadata
+   známá, zapíše se soubor jako redakční `prefer` do
+   `data/strediska/_fotky-krkonose.json` a pipeline **DATA-33** ho stáhne
+   i s atribucí — mechanismus na to už existuje, chybí jen běh.
+2. **Jizerské hory — hledání na Commons** —
+   `https://commons.wikimedia.org/w/index.php?limit=500&search=Jizera+Mountains&title=Special:Search&profile=default&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1`
+   Není to jeden snímek, ale zásoba: 500 výsledků k protřídění. Sem míří
+   **DATA-33 pro oblast `jizerske-hory`** (skript je na oblasti parametrický)
+   a titulní fotka Jizerek — ta zatím žádná není, takže hlavička jizerské
+   stránky běží v textové variantě.
+
+**Co k tomu potřebuju:** jeden klik na Actions → „DATA-33: fotky středisek"
+(pro obě oblasti). Běh sáhne na Commons z runneru, přečte autora i licenci
+u každého souboru a zapíše je do manifestu; bez doloženého autora se nestahuje
+nic (pravidlo pipeline, ne výjimka).

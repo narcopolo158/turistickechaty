@@ -330,6 +330,64 @@ kód a šablona zápisu byla rozbitá. Přesunuty na konec zápisu 28. 7., kam p
 středisek") — bez něj zůstane manifest prázdný a karty středisek budou bez
 fotek; skript ze sandboxu na Commons nedosáhne.
 
+**Dodatek 7 (týž den, Michalovo zadání „tady máš vylepšený design pro stránky
+pohoří"): nová hlavička stránky pohoří — fotka přes celou šířku, název v ní,
+razítko přes trhaný okraj.** Commit níže; návrh rozbalen v handoffu
+`handoff_pohori_krkonose`, edice „foto".
+
+**Co se postavilo.** První ze tří fotografických momentů návrhu: fotka
+**přes celou šířku okna** (560 px na desktopu, `clamp` dolů na mobil), **jemný
+pohyb při scrollu** (obrázek má 160 px přesahu, aby se měl kam posunout;
+`prefers-reduced-motion` ho vypne — nastavení systému má přednost před
+efektem), **trhaný spodní okraj** do papíru (`clip-path`, 28 bodů 1:1
+z návrhu), tmavý spodní přechod pro čitelnost textu, **noční ztlumení**
+v dark režimu, **název pohoří 96 px uvnitř snímku**, kredit vpravo nahoře
+a **razítko oblasti přesahující přes okraj**. Drobečková navigace šla pod
+fotku, jak návrh ukazuje.
+
+**Dvě věci z návrhu jsem VĚDOMĚ nepřevzal — a je to poctivostní rozhodnutí,
+ne lenost.**
+(1) **Rukopisná anotace se šipkou** („Luční bouda, 1 410 m") ukazuje v návrhu
+na konkrétní boudu ve fotce. Náš snímek je jiný a jeho autor budovu na pláni
+**nejmenuje** (zapsáno u `heroFoto` v datech oblasti) — šipka by ukazovala na
+dohad. Místo abych moment zahodil, udělal jsem z něj **datové pole**:
+`heroFoto.anotace` (text, poloha v %, přepínač šipky). Kdo doloží, co je na
+fotce, vyplní pole a anotace se vykreslí; Krkonoše ji zatím nemají a v YAML
+je u prázdného pole napsané proč.
+(2) **Slogan v razítku** („KRAJ BOUD · OD 1623") je tvrzení jako každé jiné
+a pramen pro něj v datech není. Razítko proto nese jen doložené údaje:
+v horním oblouku název oblasti, ve spodním **nejvyšší horu** a uprostřed
+**její výšku** — všechno z `nejvyssiHora`, které má v datech svůj `source`.
+Bez doložené hory zůstane jen název a prázdný oblouk se nekreslí.
+
+**Zbytek úklidu.** Stará komponenta `PohoriHeroFoto` (pás s popiskou pod
+snímkem) zmizela i s CSS — název pohoří se přestěhoval do fotky, takže
+komponenta **vykresluje H1 i tehdy, když fotka chybí** (stránka bez nadpisu
+by byla vada, ne design; Jizerky titulní fotku zatím nemají a jedou v textové
+variantě). Nadtitulek „ČESKO A POLSKO · POHOŘÍ" se skládá z doložených údajů:
+ze zemí, ve kterých fond oblasti opravdu má profily, a z úrovně oblasti —
+superlativ z návrhu („nejvyšší české pohoří") by potřeboval pole s pramenem.
+
+**Ověřeno pohledem, ne odhadem:** čtyři snímky Playwrightem (desktop, po
+scrollu, noc, mobil 390 px). První verze uložila razítko **na dlaždici**
+s počty — přesah patří na papír, ne na kartu, takže hlavička dostala spodní
+odsazení a razítko se posunulo o 12 px výš. 366 testů (+5; nové hlídají, že
+se anotace bez dat nekreslí a že v razítku slogan není), kontrola, lint i tsc
+čisté.
+
+**Fotky od Michala — zapsané, ne zpracované.** Odkaz na lanovku na Sněžku
+i vyhledávání Jizerek na Commons jsou v `docs/FOTKY-ZDROJE-A-LICENCE.md`
+(nový oddíl 6) i s tím, co u nich chybí. **Z téhle session je zpracovat
+nejde** — Commons je ze sandboxu nedostupný (ověřeno dnes znovu) a autora
+ani licenci si nesmíme domyslet. Mechanismus na to už existuje: soubor se
+zapíše jako redakční `prefer` do manifestu a DATA-33 ho stáhne i s atribucí.
+
+**Otázky k dodatku:** 11. **Titulní fotka Jizerek** — vybereš jednu
+z Commons odkazu, který jsi poslal, nebo mám sáhnout na Unsplash jako
+u Krkonoš? 12. **Anotace ve fotce** — chceš ji na krkonošském snímku vůbec?
+Šla by poctivě jedině tak, že bys potvrdil, co je na fotce vidět (autor to
+neuvádí), a pak by pole `anotace` mohlo ukázat třeba na hřeben.
+
 ---
 
 ## 2026-07-28 — denní session (bezobslužný běh): DATA-05 — párování razítek dohnalo korpus, přiřazení nově jen potvrzené

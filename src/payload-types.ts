@@ -513,6 +513,18 @@ export interface Oblasti {
      */
     popisMista?: string | null;
     prevzatoDne?: string | null;
+    /**
+     * Ručně psaná popiska přes snímek (návrh F1: „Luční bouda, 1 410 m" se šipkou). Vyplň JEN tehdy, když je předmět popisky doložený — u fotky, kde autor budovu nejmenuje, by šipka ukazovala na dohad. Prázdné pole znamená, že se anotace nekreslí.
+     */
+    anotace?: {
+      text?: string | null;
+      x?: number | null;
+      y?: number | null;
+      /**
+       * Jen když je jasné, na co ukazuje.
+       */
+      sipka?: boolean | null;
+    };
   };
   /**
    * Volitelné ohraničení pro výřez mapy oblasti (WGS84).
@@ -1242,6 +1254,14 @@ export interface OblastiSelect<T extends boolean = true> {
         zdrojUrl?: T;
         popisMista?: T;
         prevzatoDne?: T;
+        anotace?:
+          | T
+          | {
+              text?: T;
+              x?: T;
+              y?: T;
+              sipka?: T;
+            };
       };
   bbox?:
     | T

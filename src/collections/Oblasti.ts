@@ -160,6 +160,34 @@ export const Oblasti: CollectionConfig = {
           },
         },
         { name: 'prevzatoDne', type: 'text', label: 'Převzato dne (YYYY-MM-DD)' },
+        {
+          name: 'anotace',
+          type: 'group',
+          label: 'Rukopisná anotace ve fotce',
+          admin: {
+            description:
+              'Ručně psaná popiska přes snímek (návrh F1: „Luční bouda, 1 410 m" se ' +
+              'šipkou). Vyplň JEN tehdy, když je předmět popisky doložený — u fotky, ' +
+              'kde autor budovu nejmenuje, by šipka ukazovala na dohad. Prázdné pole ' +
+              'znamená, že se anotace nekreslí.',
+          },
+          fields: [
+            { name: 'text', type: 'text', label: 'Text popisky' },
+            {
+              type: 'row',
+              fields: [
+                { name: 'x', type: 'number', label: 'Poloha zleva (% šířky)', admin: { width: '50%' } },
+                { name: 'y', type: 'number', label: 'Poloha shora (% výšky)', admin: { width: '50%' } },
+              ],
+            },
+            {
+              name: 'sipka',
+              type: 'checkbox',
+              label: 'Nakreslit šipku k předmětu popisky',
+              admin: { description: 'Jen když je jasné, na co ukazuje.' },
+            },
+          ],
+        },
       ],
     },
     {

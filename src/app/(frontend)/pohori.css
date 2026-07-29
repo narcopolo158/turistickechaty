@@ -9,7 +9,73 @@
 .pohori-breadcrumb span { color: var(--ink); }
 
 .pohori-hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: start; margin-top: 10px; }
-.pohori-hero-text h1 { margin: 0; font: 500 52px/1.05 var(--font-emph, Georgia, serif); letter-spacing: -0.015em; color: var(--ink); }
+
+/* ── Titulní fotka pohoří přes celou šířku (handoff F1, edice „foto") ─────
+   První ze tří fotografických momentů stránky. Fotka jde na celou šířku okna
+   (`calc(50% - 50vw)` jako deska zápisníku v profilu), název leží uvnitř
+   snímku, spodní okraj je „utržený" do papíru a razítko přes něj přesahuje.
+
+   Pohyb při scrollu dělá komponenta (translate3d na `.phf-img`); CSS mu jen
+   nachystá přesah — obrázek je o 160 px vyšší než rám a začíná o 100 px výš,
+   takže se má kam posunout, aniž by odkryl kraj. */
+/* Spodní odsazení není kosmetika: razítko přesahuje pod trhaný okraj a bez
+   něj by dosedlo na první dlaždici — přesah patří na papír, ne na kartu. */
+.phf { position: relative; margin: 6px calc(50% - 50vw) 26px; }
+.phf-ram {
+  position: relative;
+  margin: 0;
+  height: clamp(320px, 46vw, 560px);
+  overflow: hidden;
+  /* Trhaný dolní okraj 1:1 z návrhu — papír, ne rovná linka. */
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), 96.5% calc(100% - 8px), 93% calc(100% - 20px), 89.5% calc(100% - 6px), 86% calc(100% - 18px), 82% calc(100% - 9px), 78% calc(100% - 22px), 74% calc(100% - 7px), 70% calc(100% - 17px), 66% calc(100% - 5px), 62% calc(100% - 20px), 58% calc(100% - 11px), 54% calc(100% - 23px), 50% calc(100% - 6px), 46% calc(100% - 18px), 42% calc(100% - 9px), 38% calc(100% - 22px), 34% calc(100% - 7px), 30% calc(100% - 16px), 26% calc(100% - 5px), 22% calc(100% - 20px), 18% calc(100% - 11px), 14% calc(100% - 22px), 10% calc(100% - 6px), 6% calc(100% - 16px), 3% calc(100% - 9px), 0 calc(100% - 22px));
+}
+.phf-img {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  width: 100%;
+  height: calc(100% + 160px);
+  object-fit: cover;
+  object-position: center 46%;
+  will-change: transform;
+}
+.phf-stin { position: absolute; inset: 0; background: linear-gradient(rgba(14, 18, 28, 0.22), transparent 26%, transparent 52%, rgba(14, 18, 28, 0.58)); }
+.phf-noc { position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity 0.6s; background: rgba(10, 14, 24, 0.34); }
+body.dark .phf-noc { opacity: 1; }
+
+.phf-titul { position: absolute; left: max(36px, calc(50vw - 504px)); right: 36px; bottom: 42px; color: #fff; }
+.phf-titul h1 { margin: 8px 0 0; font: 500 clamp(46px, 8.6vw, 96px)/0.92 var(--font-emph, Georgia, serif); letter-spacing: -0.02em; color: #fff; text-shadow: 0 3px 34px rgba(10, 14, 24, 0.6); }
+.phf-kicker { margin: 0; font: 600 10.5px/1 'Space Grotesk', sans-serif; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255, 255, 255, 0.85); text-shadow: 0 1px 8px rgba(10, 14, 24, 0.8); }
+
+.phf-kredit { position: absolute; right: 16px; top: 16px; display: flex; flex-direction: column; gap: 5px; align-items: flex-end; text-align: right; max-width: min(46vw, 420px); }
+.phf-misto { font: italic 400 10.5px/1.35 var(--font-emph, Georgia, serif); color: rgba(255, 255, 255, 0.9); text-shadow: 0 1px 6px rgba(10, 14, 24, 0.8); }
+.phf-autor { font: 500 9.5px/1.3 Inter, sans-serif; color: rgba(255, 255, 255, 0.74); text-shadow: 0 1px 6px rgba(10, 14, 24, 0.8); text-decoration: none; }
+a.phf-autor:hover { color: #fff; border-bottom: 1px dotted currentColor; }
+
+/* Rukopisná anotace — jen když ji nesou data (viz komentář v komponentě). */
+.phf-anotace { position: absolute; pointer-events: none; }
+.phf-anotace-text { display: block; font: 600 22px/1.25 var(--font-hand, cursive); color: rgba(255, 255, 255, 0.96); text-shadow: 0 1px 10px rgba(10, 14, 24, 0.85); transform: rotate(-3deg); }
+.phf-sipka { position: absolute; left: -46px; top: calc(100% - 6px); overflow: visible; stroke: rgba(255, 255, 255, 0.92); }
+
+/* Razítko přesahuje přes trhaný okraj dolů do papíru. */
+.phf-razitko { position: absolute; right: max(52px, calc(50vw - 488px)); bottom: -54px; z-index: 6; pointer-events: none; opacity: 0.92; transform: rotate(8deg); filter: drop-shadow(0 2px 6px rgba(20, 18, 26, 0.18)); }
+body.dark .phf-razitko { opacity: 0.85; }
+
+/* Hlavička bez fotky — oblast, která titulní snímek nemá, není bez nadpisu. */
+.pohori-hero-holy { margin: 10px 0 0; }
+.pohori-hero-holy h1 { margin: 6px 0 0; font: 500 clamp(38px, 6vw, 62px)/1.02 var(--font-emph, Georgia, serif); letter-spacing: -0.015em; color: var(--ink); }
+.pohori-hero-holy .phf-kicker { color: var(--label); text-shadow: none; }
+
+@media (max-width: 760px) {
+  .phf-titul { left: 18px; right: 18px; bottom: 30px; }
+  .phf-kredit { right: 12px; top: 12px; max-width: 60vw; }
+  .phf-razitko { right: 16px; bottom: -52px; width: 104px; height: 104px; }
+  .phf-anotace-text { font-size: 18px; }
+}
+
+@media print {
+  .phf { display: none; }
+}
 .pohori-charakteristika { font: 400 15px/1.65 Inter, sans-serif; color: var(--muted); margin: 14px 0 0; max-width: 52ch; text-wrap: pretty; }
 .pohori-mikropozn { font: italic 400 10.5px/1.5 var(--font-emph, Georgia, serif); color: var(--label); margin: 10px 0 0; }
 .pohori-mikropozn a { color: inherit; }
@@ -120,7 +186,6 @@
 
 @media (max-width: 860px) {
   .pohori-hero { grid-template-columns: 1fr; }
-  .pohori-hero-text h1 { font-size: 44px; }
   .m3d-app { height: 70vh; }
 }
 
@@ -392,47 +457,6 @@
 .vit-info p { font: 400 13px/1.65 Inter, sans-serif; color: var(--muted); margin: 0 0 14px; max-width: 40ch; text-wrap: pretty; }
 @media (max-width: 860px) {
   .vit { grid-template-columns: 1fr; }
-}
-
-/* ── Titulní fotka oblasti (FOTO-01) ──────────────────────────────────────
-   Krajinný pás nad hlavičkou. Držíme papírový jazyk zbytku webu: bílý rám
-   jako u polaroidu v heru homepage, jemný stín, popiska pod snímkem místo
-   přes něj (text přes fotku je na horských snímcích špatně čitelný a halo
-   by hádalo s tokeny). Atribuce je součástí popisky, ne patičky — u fotky
-   se má číst tam, kde fotka je. */
-.pohori-herofoto {
-  margin: 12px 0 6px;
-  padding: 0;
-  background: var(--paper, #fdfaf2);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 14px 30px -20px rgba(20, 18, 26, 0.45);
-}
-.pohori-herofoto-img {
-  display: block;
-  width: 100%;
-  height: clamp(180px, 34vw, 340px);
-  object-fit: cover;
-  object-position: center 42%;
-}
-.pohori-herofoto-popis {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 12px;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 7px 12px 8px;
-  font: 400 12px/1.35 var(--font-ui, system-ui, sans-serif);
-  color: var(--ink-3, #6b6560);
-  border-top: 1px solid var(--line);
-}
-.pohori-herofoto-misto { letter-spacing: 0.01em; }
-.pohori-herofoto-atr { color: var(--ink-3, #6b6560); text-decoration: none; border-bottom: 1px dotted currentColor; }
-.pohori-herofoto-atr:hover { color: var(--ink, #241f1c); }
-
-@media print {
-  .pohori-herofoto { display: none; }
 }
 
 /* ── Lanovky (DATA-32) ────────────────────────────────────────────────────

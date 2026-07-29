@@ -53,6 +53,10 @@ heroFoto:
   # s vysílačem NEJMENUJEME — autor je nejmenuje a my si to nedomýšlíme.
   popisMista: pohled z vrcholu Sněžky (dle popisu autora u snímku)
   prevzatoDne: '2026-07-29'
+  # Pole `anotace` (rukopisná popiska se šipkou přes fotku, návrh F1) je tu
+  # ZÁMĚRNĚ prázdné: šipka musí ukazovat na doložený předmět a autor snímku
+  # budovu na pláni nejmenuje. Až bude titulní fotka, u které víme, co je na
+  # ní, vyplní se `anotace: { text, x, y, sipka }` a hlavička ji vykreslí.
 
 topCile:
   - nazev: Sněžka

@@ -10,7 +10,7 @@ import Mapa3D from '@/components/Mapa3D'
 import PohoriChatySeznam from '@/components/PohoriChatySeznam'
 import VitrinaSberatelstvi, { type VitrinaOtisk } from '@/components/VitrinaSberatelstvi'
 import LanovkySeznam from '@/components/LanovkySeznam'
-import PohoriHeroFoto from '@/components/PohoriHeroFoto'
+import PohoriHero from '@/components/PohoriHero'
 import { SectionBar } from '@/components/ui'
 import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
@@ -137,6 +137,20 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
 
   // FAQ (handoff 08): odpovědi GENEROVANÉ z dat + JSON-LD FAQPage.
   const pocetPl = vOblasti.filter((ch) => ch.zeme === 'pl').length
+
+  // Nadtitulek v titulní fotce. Návrh tu má „Česko · nejvyšší české pohoří";
+  // superlativ je ale tvrzení a pole pro něj (s pramenem) nemáme, takže se
+  // skládá jen z toho, co je doložené: ze zemí, ve kterých fond oblasti
+  // opravdu má profily, a z úrovně oblasti. Pro Krkonoše tedy „Česko
+  // a Polsko · pohoří" — a kdyby polský profil nebyl ani jeden, řeklo by to
+  // jen „Česko".
+  const zemeVFondu = [
+    ...(vOblasti.length - pocetPl > 0 ? ['Česko'] : []),
+    ...(pocetPl > 0 ? ['Polsko'] : []),
+  ]
+  const kicker = [zemeVFondu.join(' a '), oblast.typ === 'podoblast' ? 'podoblast' : 'pohoří']
+    .filter(Boolean)
+    .join(' · ')
   const faq: { q: string; a: string }[] = [
     {
       q: 'Kolik chat průvodce vede?',
@@ -171,15 +185,16 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
 
   return (
     <div className="wrap pohori">
+      {/* Titulní fotka nese název oblasti uvnitř snímku (handoff F1, edice
+          „foto"); drobečková navigace jde pod ni, jak návrh ukazuje. */}
+      <PohoriHero nazev={oblast.nazev} kicker={kicker} foto={oblast.heroFoto} hora={hora} />
+
       <nav className="pohori-breadcrumb mn" aria-label="Drobečková navigace">
         <Link href="/">Česko</Link> / <span>{oblast.nazev}</span>
       </nav>
 
-      <PohoriHeroFoto foto={oblast.heroFoto} />
-
       <header className="pohori-hero">
         <div className="pohori-hero-text">
-          <h1>{oblast.nazev}</h1>
           {oblast.charakteristika && <p className="pohori-charakteristika">{oblast.charakteristika}</p>}
           <p className="pohori-mikropozn">
             <span aria-hidden="true">†</span> charakteristika oblasti — kurátorský text se zdroji v datech oblasti
