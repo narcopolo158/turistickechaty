@@ -24,6 +24,7 @@ import {
   rozlisujiciSlova,
   seradKandidaty,
   shodaNazvu,
+  vyberProObjekt,
   type FotkaStrediska,
 } from '../../scripts/data33-fotky-stredisek'
 
@@ -198,6 +199,48 @@ describe('pořadí výběru', () => {
       { nazev: 'Hofmanky Express' },
     )
     expect(prvni.soubor).toContain('Hofmanky Express')
+  })
+})
+
+/**
+ * Rezervace souborů (jeden soubor = jeden objekt) a její střet s redakční
+ * volbou.
+ *
+ * Tenhle blok existuje kvůli konkrétní škodě: druhý ostrý běh 29. 7. 2026
+ * si `prefer` předrezervoval mezi „už použité", takže si ho vlastní objekt
+ * nesměl vzít. Tři redakční volby se tiše ignorovaly a Čertova hora — která
+ * měla jediného kandidáta, a byl to právě její `prefer` — vypadla z manifestu
+ * úplně. Na výsledku to nevypadalo jako chyba, jen jako „na Commons nic není".
+ */
+describe('rezervace souborů vs. redakční volba', () => {
+  const kand = (soubor: string, p: Partial<FotkaStrediska> = {}) => foto({ soubor, ...p })
+
+  it('objekt si svůj `prefer` vezme, i když je předem rezervovaný', () => {
+    const { vybrano } = vyberProObjekt([kand('File:A.jpg'), kand('File:Chce.jpg')], {
+      prefer: 'File:Chce.jpg',
+      pouzite: new Set(['File:Chce.jpg']),
+    })
+    expect(vybrano?.soubor).toBe('File:Chce.jpg')
+  })
+
+  it('jediný kandidát, který je zároveň `prefer`, nesmí objekt připravit o fotku', () => {
+    const { vybrano } = vyberProObjekt([kand('File:Harrachov - wyciąg 001.JPG')], {
+      prefer: 'File:Harrachov - wyciąg 001.JPG',
+      pouzite: new Set(['File:Harrachov - wyciąg 001.JPG']),
+    })
+    expect(vybrano).toBeTruthy()
+  })
+
+  it('cizímu objektu rezervovaný soubor naopak nedá — od toho rezervace je', () => {
+    const { vybrano } = vyberProObjekt([kand('File:Rezervovano.jpg'), kand('File:Volne.jpg')], {
+      pouzite: new Set(['File:Rezervovano.jpg']),
+    })
+    expect(vybrano?.soubor).toBe('File:Volne.jpg')
+  })
+
+  it('když jsou všechny obsazené, vrátí prázdno místo cizí fotky', () => {
+    const { vybrano } = vyberProObjekt([kand('File:A.jpg')], { pouzite: new Set(['File:A.jpg']) })
+    expect(vybrano).toBeUndefined()
   })
 })
 

@@ -11,6 +11,58 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-29 (podvečer) — druhý běh DATA-33: pravidla zabrala, ale moje rezervace souborů sebrala Čertově hoře fotku
+
+**Hotovo:** Michal pustil workflow znovu (`e0f4221`). **Nová pravidla
+zabrala přesně tak, jak měla:** Hofmanky Express dostal
+`Janske Lazne 2022 P57 Hofmanky Express`, Saxner `Černý Důl, dolní stanice
+lanovky Saxner`, Szrenica I `Szrenica I etap` — a u středisek zmizely
+kostely a hřbitovy: `Cerny Dul celkovy pohled`, `Horní Maršov - celkový
+pohled`, `Janske Lazne sjezdovka`, `Vítkovice, údolí`, `Horní Rokytnice,
+vlek Tatrapoma a sjezdovka`, `Sjezdovka Labuť noční lyžování` v Peci.
+Všech 33 snímků jsem prošel očima; ukazují to, co tvrdí.
+
+**Ale sám jsem si do včerejší opravy zanesl chybu.** Rezervace „jeden
+soubor jen pro jeden objekt" si předrezervovala i redakční `prefer` —
+aby ho nesebral dřívější objekt. Tím ho ale nesměl vzít ani ten, komu ho
+redakce přidělila: **tři redakční volby se tiše ignorovaly a Čertova hora
+z manifestu vypadla úplně**, protože měla jediného kandidáta a byl to
+právě její `prefer`. Na výsledku to nevypadalo jako chyba, jen jako „na
+Commons nic není" — což je přesně ten druh selhání, který si člověk
+nevšimne.
+
+Opraveno: rezervace brání CIZÍMU objektu, ne vlastnímu (`vyberProObjekt`,
+vytažené z běhového kódu ven, aby šlo testovat bez sítě). Přidané čtyři
+testy jdou přímo po té škodě — včetně „jediný kandidát, který je zároveň
+`prefer`, nesmí objekt připravit o fotku".
+
+**Chybu odhalila hlídka nad manifestem z dopolední session**: test
+„ke každému záznamu existuje i stažený soubor a naopak žádný osiřelý"
+ukázal `certova-hora.jpg` ležící v `public/` bez záznamu. Díky tomu
+nebylo co dohledávat — soubor je bit po bitu tentýž jako v `d0902c2`
+(ověřeno md5), takže záznam šel vrátit i s doložením autora a licence.
+Stejně jsem z historie vrátil i tři fotky, které měl `prefer` udržet:
+stanice na hřebeni místo interiéru čekárny (Růžová hora ⇔ Sněžka),
+dolní úsek z Pece místo strojovny a sjezdovka Popelka místo obecního
+úřadu ve Strážném. Co běh vybral, zůstalo v `alternativy` — nic se
+nezahodilo. **Další běh už tedy pro tyhle čtyři nic měnit nebude**, ale
+až poběží, teprve tehdy se ověří, že `prefer` funguje i ostře.
+
+**Stav fotek:** 17 lanovek a 16 středisek se snímkem, žádný soubor
+nepoužitý dvakrát. Bez fotky zůstávají čtyři dráhy (Karkonosz Express,
+Zahrádky Express, Family Express, Biały Jar) — doložený snímek pro ně na
+Commons není.
+
+**Testy:** 437 (bylo 433).
+
+**Příště:** zpět na backlog. Fotky jsou hotové, DATA-33 už nepotřebuje
+další klik.
+
+**Otázky pro Michala:** beze změny proti dopolednímu zápisu (čtyři dráhy
+bez fotky, redakční přiřazení u Čertovy hory, a starší Q17/Q19/Q20).
+
+---
+
 ## 2026-07-29 — DATA-33 podruhé: běh doběhl, ale sedm fotek lanovek ukazovalo něco jiného, než tvrdilo
 
 **Hotovo:** Michal potvrdil, že běh DATA-33 z Actions dopadl OK (commit

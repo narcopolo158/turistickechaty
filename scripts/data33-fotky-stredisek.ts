@@ -345,6 +345,29 @@ export const seradKandidaty = (
   })
 }
 
+/**
+ * Výběr jednoho snímku pro objekt: pořadí pravidel + rezervace už použitých
+ * souborů.
+ *
+ * REDAKČNÍ `prefer` JE Z REZERVACE VYJMUTÝ — a stálo to jednu fotku. Běh
+ * 29. 7. 2026 (druhý ostrý) měl `prefer` předrezervovaný v `pouzite`, aby ho
+ * nesebral dřívější objekt, jenže tím ho nesměl vzít ani ten, komu ho redakce
+ * přidělila: tři redakční volby se tiše ignorovaly a Čertova hora, která měla
+ * jediného kandidáta a ten byl její `prefer`, přišla o fotku úplně. Rezervace
+ * má bránit CIZÍMU objektu, ne vlastnímu.
+ */
+export const vyberProObjekt = (
+  kandidati: FotkaStrediska[],
+  volby: { prefer?: string; nazev?: string; pouzite?: ReadonlySet<string> },
+): { vybrano?: FotkaStrediska; serazeni: FotkaStrediska[] } => {
+  const serazeni = seradKandidaty(kandidati, { prefer: volby.prefer, nazev: volby.nazev })
+  const pouzite = volby.pouzite ?? new Set<string>()
+  return {
+    vybrano: serazeni.find((k) => k.soubor === volby.prefer || !pouzite.has(k.soubor)),
+    serazeni,
+  }
+}
+
 export type ZaznamManifestu = {
   slug: string
   nazev: string
@@ -532,8 +555,11 @@ const zpracujSkupinu = async (vstup: {
       await new Promise((r) => setTimeout(r, dobaCekaniMs(1, 1_200)))
     }
 
-    const serazeni = seradKandidaty(kandidati, { prefer: preferDle.get(s.slug), nazev: s.nazev })
-    const vybrano = serazeni.find((k) => !pouzite.has(k.soubor))
+    const { vybrano, serazeni } = vyberProObjekt(kandidati, {
+      prefer: preferDle.get(s.slug),
+      nazev: s.nazev,
+      pouzite,
+    })
     if (!vybrano) {
       bezFotky.push({
         slug: s.slug,
