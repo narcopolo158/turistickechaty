@@ -200,6 +200,97 @@ export const Oblasti: CollectionConfig = {
       },
     }),
     {
+      name: 'fotky',
+      type: 'array',
+      label: 'Fotky sekcí stránky pohoří',
+      admin: {
+        description:
+          'Snímky, které nesou jednotlivé sekce (handoff F1): foto pás u top cílů ' +
+          'a vlepený snímek u paměti hor. Titulní fotka má vlastní pole `heroFoto`. ' +
+          'Platí totéž pravidlo: popis říká jen to, co je doložené — když nevíme, ' +
+          'co přesně je na snímku, zůstane u fotky jen atribuce.',
+      },
+      fields: [
+        {
+          name: 'role',
+          type: 'select',
+          label: 'Kde se snímek použije',
+          required: true,
+          options: [
+            { label: 'Foto pás u top cílů (sekce 05)', value: 'pas-cile' },
+            { label: 'Vlepený snímek u paměti hor (sekce 07)', value: 'pamet' },
+          ],
+        },
+        {
+          type: 'row',
+          fields: [
+            { name: 'soubor', type: 'text', label: 'Cesta k souboru (od /)', admin: { width: '50%' } },
+            { name: 'nahled', type: 'text', label: 'Cesta k náhledu', admin: { width: '50%' } },
+          ],
+        },
+        { name: 'alt', type: 'text', label: 'Alternativní popis (co je vidět)' },
+        {
+          type: 'row',
+          fields: [
+            { name: 'autor', type: 'text', label: 'Autor', admin: { width: '50%' } },
+            { name: 'autorUrl', type: 'text', label: 'Profil autora', admin: { width: '50%' } },
+          ],
+        },
+        {
+          type: 'row',
+          fields: [
+            {
+              name: 'licence',
+              type: 'select',
+              label: 'Licence',
+              options: [
+                { label: 'Unsplash License', value: 'unsplash' },
+                { label: 'Pexels License', value: 'pexels' },
+                { label: 'CC BY', value: 'cc-by' },
+                { label: 'CC BY-SA', value: 'cc-by-sa' },
+                { label: 'CC0', value: 'cc0' },
+                { label: 'Volné dílo (public domain)', value: 'pd' },
+                { label: 'Se svolením', value: 'se-svolenim' },
+                { label: 'Vlastní (redakce)', value: 'vlastni' },
+              ],
+              admin: { width: '50%' },
+            },
+            { name: 'zdrojUrl', type: 'text', label: 'Stránka snímku', admin: { width: '50%' } },
+          ],
+        },
+        {
+          name: 'popis',
+          type: 'text',
+          label: 'Popiska (jen doložené)',
+          admin: { description: 'Prázdné pole = u fotky se ukáže jen atribuce. To je v pořádku.' },
+        },
+        {
+          name: 'hotspoty',
+          type: 'array',
+          label: 'Body ve fotce (sekce 05)',
+          admin: {
+            description:
+              'Klikací body s popiskem. Vyplň jen to, co je na snímku doložené — ' +
+              'bod ukazující na dohad je horší než snímek bez bodů.',
+          },
+          fields: [
+            { name: 'text', type: 'text', label: 'Popisek bodu', required: true },
+            {
+              type: 'row',
+              fields: [
+                { name: 'x', type: 'number', label: 'Zleva (% šířky)', admin: { width: '50%' } },
+                { name: 'y', type: 'number', label: 'Shora (% výšky)', admin: { width: '50%' } },
+              ],
+            },
+          ],
+        },
+        overeni('overeni', {
+          label: 'Ověření obsahu snímku',
+          admin: { description: 'Kdo a čím doložil, co je na fotce (konvence B).' },
+        }),
+      ],
+    },
+    {
       name: 'bbox',
       type: 'group',
       label: 'Mapové ohraničení (bbox)',

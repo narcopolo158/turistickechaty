@@ -450,12 +450,71 @@ s hotspoty v sekci 05, vlepený snímek vysílače v 07) čekají na snímky
 s doloženou licencí — v handoffu přišly tři fotky, ale bez autora a licence
 je do repa dát nemůžu. 372 testů (+6), kontrola, lint i tsc čisté.
 
-**Otázky k dodatku:** 13. **Fotky z handoffu** (`foto-bila-louka.jpg`,
-`foto-snezne-jamy.jpg`, `foto-vysilac.jpg`) — kdo je autor a pod jakou
-licencí je smíme použít? README handoffu říká jen, že originály dodá
-zadavatel. Bez téhle odpovědi zůstanou sekce 05 a 07 v dosavadní podobě.
+~~**Otázky k dodatku:** 13. **Fotky z handoffu**~~ — **zodpovězeno týž den
+(„jsou z Unsplash, mají jméno autora v názvu"), viz dodatek 9.**
 14. **Pořadí dál** — mám pokračovat 3D mapou (sekce 01, návrh chce malovaný
 styl s parallaxem místo dnešního posteru), nebo vitrínou a žebříčky?
+
+**Dodatek 9 (týž den, Michal: „fotky z handoffu jsou z Unsplash… dej do repa
+a použij a dodělej zbytek stránky podle návrhu"): tři fotky v repu, zbylé dva
+fotografické momenty postavené — a jedna věc, kterou jsem vědomě nepostavil.**
+
+**Autory jsem nakonec nenašel v názvech souborů, ale v samotném návrhu.**
+Soubory se jmenují `foto-bila-louka.jpg` a spol., EXIF je prázdný — kredity
+ale stojí přímo v HTML handoffu: **Jan Kopřiva** (Unsplash), **Małgorzata
+Twardo** (Unsplash) a **Mateusz Mierzejewski** — a ten třetí je podle kreditu
+z **Pexels**, ne z Unsplash. Zapsáno tak, jak to v prameni je.
+Přitom vyšlo najevo, že **dvě ze tří fotek už v repu byly**: Kopřivova je naše
+titulní (porovnání pixel po pixelu: tentýž snímek, jen 1920 px proti 2400 px
+v návrhu) a Twardo ležela v `public/foto/pohori/` od 29. 7. jako připravená
+záloha. Obě jsem tedy **povýšil na verzi 2400 px** z návrhu a přegeneroval
+náhledy; Mierzejewského snímek je nový.
+
+**Sekce 05 — foto pás s klikacími body.** Pás jde přes celou šířku okna,
+body jsou **tlačítka, ne divy s `:hover`** (jinak by byl popisek pro
+klávesnici neviditelný) a pulzují, dokud si čtenář nevypne animace.
+**Body se kreslí jen z dat** — návrh v nich má tvrzení o tom, co na snímku je
+(„bývalá bouda → vysílač", „stěny karů"), a to musí někdo doložit; zatím je
+tedy pás fotkou s popiskou. **A kartu s cílem jsem do pásu vědomě nepoložil**:
+karta „Sněžka" přes snímek odjinud by čtenáři řekla, že se dívá na Sněžku,
+i kdyby to nikde nestálo. Karta se v kódu vykreslí, jakmile bude u fotky
+`overeni.verified` — přesně jako u Luční boudy v titulní fotce.
+
+**Sekce 07 — vlepený snímek.** Fotka v albu: bílý rám s místem na popisku,
+čtyři rohové fotorožky, natočení −1,4°, které se při najetí srovná (a při
+vypnutých animacích se netočí vůbec). Sekce se s fotkou rozdělí na dva
+sloupce, bez ní zůstane karta Atlasu přes celou šířku jako dosud.
+Rukopisný popisek se bere z dat, a protože o té stavbě nemáme doklad,
+zůstává u snímku **jen atribuce**. Fakta v sekci nesou příběhy z Atlasu, ne
+popiska fotky.
+
+**Nový datový typ.** Kolekce Oblasti má pole `fotky[]` (role `pas-cile` /
+`pamet`, cesta, náhled, alt, autor, licence, zdrojUrl, popiska, body ve fotce
+a vlastní blok `overeni`). Rozšíření o další sekci nebo oblast je tím řádek
+v datech, ne nová komponenta.
+
+**Co jsem NEUDĚLAL, ačkoli to návrh chce: malovanou 3D mapu se čtyřmi
+parallax vrstvami (sekce 01).** V návrhu je poster placeholder s dovětkem,
+že v produkci poběží three.js — a ten už tam běží: DATA-28 kreslí skutečný
+model se 71 piny nad výškopisem Mapy.com. Vyměnit ho za malovanou kulisu by
+byl regres, ne vylepšení. Zůstává tedy poster→klik→živý model.
+
+**Vylepšení nad rámec návrhu** (drobná, ale patří do zápisu): stat-dlaždice
+hlavičky a nové karty dostaly noční pravidla — dark režim v tomhle projektu
+nepřepisuje tokeny, ale dobarvuje komponenty, takže bílá karta na noční
+stránce je snadný přehlédnutelný nedodělek.
+
+382 testů (+10), kontrola, lint i tsc čisté; ověřeno rendrem v denním
+i nočním režimu a na mobilu.
+
+**Otázky k dodatku:** 15. **Co je na Twardo fotce?** Stránka snímku říká jen
+„Karkonosze", návrh tvrdí Sněžné jámy. Když to potvrdíš (jako u Luční boudy),
+doplním popisku, body ve fotce i kartu cíle přímo do pásu. 16. **A na
+Mierzejewského snímku** — je to bývalá bouda nad Sněžnými jámami, dnes
+vysílač? Pak dostane rukopisnou popisku a vazbu na Atlas. 17. **Zdrojové
+adresy snímků** (stránka fotky na Unsplash/Pexels) — máš je po ruce? Handoff
+je neuvádí a ze sandboxu se nedohledají; atribuci máme, odkaz na pramen by ji
+uzavřel.
 
 ---
 

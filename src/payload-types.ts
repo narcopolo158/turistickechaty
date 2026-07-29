@@ -535,6 +535,45 @@ export interface Oblasti {
     checked?: string | null;
   };
   /**
+   * Snímky, které nesou jednotlivé sekce (handoff F1): foto pás u top cílů a vlepený snímek u paměti hor. Titulní fotka má vlastní pole `heroFoto`. Platí totéž pravidlo: popis říká jen to, co je doložené — když nevíme, co přesně je na snímku, zůstane u fotky jen atribuce.
+   */
+  fotky?:
+    | {
+        role: 'pas-cile' | 'pamet';
+        soubor?: string | null;
+        nahled?: string | null;
+        alt?: string | null;
+        autor?: string | null;
+        autorUrl?: string | null;
+        licence?: ('unsplash' | 'pexels' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'se-svolenim' | 'vlastni') | null;
+        zdrojUrl?: string | null;
+        /**
+         * Prázdné pole = u fotky se ukáže jen atribuce. To je v pořádku.
+         */
+        popis?: string | null;
+        /**
+         * Klikací body s popiskem. Vyplň jen to, co je na snímku doložené — bod ukazující na dohad je horší než snímek bez bodů.
+         */
+        hotspoty?:
+          | {
+              text: string;
+              x?: number | null;
+              y?: number | null;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Kdo a čím doložil, co je na fotce (konvence B).
+         */
+        overeni?: {
+          source?: string | null;
+          verified?: boolean | null;
+          checked?: string | null;
+        };
+        id?: string | null;
+      }[]
+    | null;
+  /**
    * Volitelné ohraničení pro výřez mapy oblasti (WGS84).
    */
   bbox?: {
@@ -1277,6 +1316,35 @@ export interface OblastiSelect<T extends boolean = true> {
         source?: T;
         verified?: T;
         checked?: T;
+      };
+  fotky?:
+    | T
+    | {
+        role?: T;
+        soubor?: T;
+        nahled?: T;
+        alt?: T;
+        autor?: T;
+        autorUrl?: T;
+        licence?: T;
+        zdrojUrl?: T;
+        popis?: T;
+        hotspoty?:
+          | T
+          | {
+              text?: T;
+              x?: T;
+              y?: T;
+              id?: T;
+            };
+        overeni?:
+          | T
+          | {
+              source?: T;
+              verified?: T;
+              checked?: T;
+            };
+        id?: T;
       };
   bbox?:
     | T

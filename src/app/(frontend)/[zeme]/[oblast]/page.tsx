@@ -11,6 +11,8 @@ import PohoriChatySeznam from '@/components/PohoriChatySeznam'
 import VitrinaSberatelstvi, { type VitrinaOtisk } from '@/components/VitrinaSberatelstvi'
 import LanovkySeznam from '@/components/LanovkySeznam'
 import PohoriHero from '@/components/PohoriHero'
+import FotoPas from '@/components/FotoPas'
+import FotoVlepena from '@/components/FotoVlepena'
 import { SectionBar } from '@/components/ui'
 import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
@@ -97,6 +99,10 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
 
   const hora = oblast.nejvyssiHora
   const topCile = (oblast.topCile ?? []).filter((c) => c.nazev)
+  // Fotky sekcí (handoff F1): pás u top cílů a vlepený snímek u paměti hor.
+  // Když je oblast nemá, sekce se vykreslí bez nich — placeholder nikde.
+  const fotoPas = (oblast.fotky ?? []).find((f) => f.role === 'pas-cile' && f.soubor)
+  const fotoPamet = (oblast.fotky ?? []).find((f) => f.role === 'pamet' && f.soubor)
   const chataUrl = (slug: string | null | undefined): string | null => {
     if (!slug) return null
     return vOblasti.find((ch) => ch.slug === slug)?.url ?? null
@@ -367,6 +373,29 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       {topCile.length > 0 && (
         <section className="sec" aria-label="Top cíle">
           <SectionBar num="06" title="Top cíle" variant="red" />
+          {/* Foto pás přes celou šířku (handoff F1, sekce 05).
+              Karta s cílem se do pásu položí JEN u snímku, u kterého je
+              doložené, co je na něm: karta „Sněžka" přes fotku odjinud by
+              čtenáři řekla, že se dívá na Sněžku, i kdyby to nikde nestálo.
+              Dokud je `overeni.verified` false, zůstane pás jen fotkou
+              s popiskou — a cíle si čtenář přečte v mřížce pod ním. */}
+          <FotoPas
+            fotka={fotoPas}
+            karta={
+              fotoPas?.overeni?.verified && topCile[0] ? (
+                <>
+                  <b>{topCile[0].nazev}</b>
+                  {topCile[0].veta && <p>{topCile[0].veta}</p>}
+                  {chataUrl(topCile[0].nejblizChataSlug) && (
+                    <Link href={chataUrl(topCile[0].nejblizChataSlug)!}>
+                      Nejblíž:{' '}
+                      {vOblasti.find((ch) => ch.slug === topCile[0].nejblizChataSlug)?.nazev} ▸
+                    </Link>
+                  )}
+                </>
+              ) : null
+            }
+          />
           <div className="pohori-cile">
             {topCile.map((cil) => {
               const url = chataUrl(cil.nejblizChataSlug)
@@ -390,7 +419,9 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
 
       <section className="sec" aria-label="Zaniklé chaty">
         <SectionBar num="07" title="Z Atlasu zaniklých" variant="red" />
-        <div className="pohori-zanikle">
+        <div className={`pohori-zanikle${fotoPamet ? ' pohori-zanikle--sfotkou' : ''}`}>
+          {/* Vlepený snímek (handoff F1, sekce 07) — vedle tmavé karty Atlasu. */}
+          <FotoVlepena fotka={fotoPamet} />
           <div className="pohori-zanikle-karta">
             <div className="pohori-zanikle-hlava">
               <b>Boudy, které už nestojí</b>

@@ -71,6 +71,53 @@ overeniHeroFoto:
   verified: true
   checked: '2026-07-29'
 
+# ── Fotky sekcí stránky (handoff F1) ──────────────────────────────────────
+# Snímky přišly v návrhu od Michala (29. 7. 2026) a jsou z fotobank, které
+# atribuci nevyžadují — uvádíme ji přesto, stejně jako u titulní fotky.
+# Autoři a licence jsou z kreditů v handoffu; adresu konkrétní stránky snímku
+# handoff neuvádí a ze sandboxu se nedohledá, proto `zdrojUrl` chybí a je to
+# tady napsané, ne zamlčené.
+#
+# POPISKY: u obou snímků je `popis` VĚDOMĚ jen o tom, co je doložené.
+# Návrh u nich tvrdí konkrétní místa („Sněžné jámy", „bývalá bouda nad
+# Sněžnými jámami, dnes vysílač"); doklad k tomu nemáme, a dokud ho nedodá
+# Michal (jako u Luční boudy v titulní fotce), zůstávají popisky obecné
+# a `hotspoty` prázdné.
+fotky:
+  - role: pas-cile
+    soubor: /foto/pohori/karkonosze-malgorzata-twardo.jpg
+    nahled: /foto/pohori/karkonosze-malgorzata-twardo-nahled.jpg
+    alt: >-
+      Skalnaté srázy krkonošských karů se zbytky sněhu, v pozadí zvlněné
+      hřebeny
+    autor: Małgorzata Twardo
+    licence: unsplash
+    popis: Karkonosze — polská strana Krkonoš
+    overeni:
+      source: >-
+        Autor a licence z kreditu v handoffu F1 (29. 7. 2026); „Karkonosze,
+        polská strana" ověřeno na stránce snímku 29. 7. 2026 (zápis
+        v deníku, dodatek 4). Konkrétní místo (Sněžné jámy) tvrdí návrh,
+        doloženo není.
+      verified: false
+      checked: '2026-07-29'
+  - role: pamet
+    soubor: /foto/pohori/pamet-hor-mateusz-mierzejewski.jpg
+    nahled: /foto/pohori/pamet-hor-mateusz-mierzejewski-nahled.jpg
+    alt: >-
+      Kamenitá stezka stoupá k horské stavbě s věží, červenou střechou
+      a parabolami vysílače
+    autor: Mateusz Mierzejewski
+    licence: pexels
+    overeni:
+      source: >-
+        Autor a licence z kreditu v handoffu F1 (29. 7. 2026). Co je na
+        snímku za stavbu, doložené nemáme — návrh uvádí bývalou boudu nad
+        Sněžnými jámami, ale pramen k tomu nedodává, takže popisku
+        nepíšeme.
+      verified: false
+      checked: '2026-07-29'
+
 topCile:
   - nazev: Sněžka
     veta: Nejvyšší hora Česka (1603 m) na hřebeni nad Obřím dolem a Równí pod Śnieżką.
