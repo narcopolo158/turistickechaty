@@ -254,10 +254,24 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
         </section>
       )}
 
-      {naMapu.length > 0 && (
-        <section className="sec" aria-label="Mapa chat dostupných odtud">
-          <SectionBar num={s.lanovka ? '03' : '02'} title="Kam odtud vyrazit" variant="red" />
-          <MapaChat chaty={naMapu} />
+      {/* Mapa ukazuje ZASAZENÍ MÍSTA, ne rozptyl cílů (Michal 29. 7. 2026:
+          „spíš bych tam dal mapu zasazení samotného střediska"). Středisko
+          proto dostane vlastní značku — kapku — a mapa se vystředí na ně;
+          chaty v okolí zůstávají jako kontext, ne jako téma. Kdyby se výřez
+          jako dřív přizpůsobil všem cílům, obec by se v něm ztratila: u Pece
+          se rozpětí tras táhne přes deset kilometrů. */}
+      {s.lat != null && s.lng != null && (
+        <section className="sec" aria-label="Mapa zasazení střediska">
+          <SectionBar num={s.lanovka ? '03' : '02'} title={`Kde ${s.nazev} leží`} variant="red" />
+          <MapaChat
+            chaty={naMapu}
+            misto={{ nazev: s.nazev, lat: s.lat, lng: s.lng }}
+            zoom={13}
+          />
+          <p className="pohori-mikropozn">
+            Střed mapy je bod obce z katalogu výchozích bodů; kolečka jsou chaty průvodce v okolí
+            — klikem se otevře profil. Podklad Mapy.com „outdoor“.
+          </p>
         </section>
       )}
 

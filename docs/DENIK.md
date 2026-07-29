@@ -697,6 +697,25 @@ na mini-stránkách zatím nikde není — doložený ho nemáme a z délky se
 nedopočítává; chceš ho odhadovat podle DIN 33466 (jako u tras Luční boudy),
 nebo nechat prázdno?
 
+**Dodatek 14 (týž den, Michal: „na stránce střediska je sice hezká ta mapa
+kam vyrazit, ale spíš bych tam dal mapu zasazení samotného střediska"):
+mapa nově ukazuje MÍSTO, ne rozptyl cílů.**
+
+Mapa se dřív přizpůsobovala všem cílům — a u Pece pod Sněžkou se rozpětí tras
+táhne přes deset kilometrů, takže obec sama se ve výřezu ztratila. Nově se
+mapa **vystředí na středisko** (zoom 13) a středisko dostane **vlastní
+značku: kapku**, ne kolečko. Ten rozdíl není kosmetický — mapová vrstva
+průvodce mluví kolečky o CHATÁCH, takže kolečko u obce by ji četlo jako další
+chatu. Kapka s popiskou říká „tady to místo je". Chaty v okolí zůstávají jako
+kontext (klik pořád otevře profil), jen přestaly být tématem.
+
+Komponenta mapy k tomu dostala dva volitelné vstupy (`misto`, `zoom`)
+a jedno pravidlo navíc: bez chat se mapa dřív nevykreslila vůbec, teď se
+vykreslí, když je zadané místo — mapa zasazení obce dává smysl i tam, kde
+zrovna žádná chata průvodce nestojí.
+
+417 testů, kontrola, lint i tsc čisté.
+
 ---
 
 ## 2026-07-28 — denní session (bezobslužný běh): DATA-05 — párování razítek dohnalo korpus, přiřazení nově jen potvrzené

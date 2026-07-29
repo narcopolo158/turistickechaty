@@ -58,6 +58,14 @@ const MARKER = {
     '<svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="#1b6e9e" stroke="#fff" stroke-width="2.5"/>' +
     KRESBA_ROZHLEDNY_MARKER +
     '</svg>',
+  /**
+   * MÍSTO (obec, středisko) — kapka s prstencem, ne kolečko. Mapová vrstva
+   * mluví kolečky o CHATÁCH; kdyby obec dostala taky kolečko, četl by ji
+   * čtenář jako další chatu. Kapka říká „tady to místo je", což je přesně
+   * to, co má mini-stránka střediska ukázat.
+   */
+  misto:
+    '<svg width="34" height="42" viewBox="0 0 34 42"><path d="M17 41C17 41 32 25.5 32 16A15 15 0 1 0 2 16c0 9.5 15 25 15 25z" fill="#384057" stroke="#fff" stroke-width="2.5"/><circle cx="17" cy="16" r="5.5" fill="#fff"/></svg>',
   /** vybraná — červená s bílou střechou, jako jediná se stínem (řeší CSS .mk-vybrana) */
   vybrana:
     '<svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="12" fill="#e0341f" stroke="#fff" stroke-width="3"/><polygon points="15,9.5 20,16.5 10,16.5" fill="#fff"/></svg>',
@@ -69,7 +77,22 @@ const STAV_PREVIEW: Record<string, { text: string; barva: string }> = {
   zanikla: { text: 'Zaniklá', barva: '#5e6971' },
 }
 
-export default function MapaChat({ chaty }: { chaty: MapovaChata[] }) {
+export type MapoveMisto = { nazev: string; lat: number; lng: number }
+
+/**
+ * `misto` = obec nebo středisko, kolem kterého se mapa vystředí (mini-stránka
+ * střediska: „kde to místo vlastně leží"). Bez něj se mapa jako dřív přizpůsobí
+ * markerům chat.
+ */
+export default function MapaChat({
+  chaty,
+  misto,
+  zoom,
+}: {
+  chaty: MapovaChata[]
+  misto?: MapoveMisto | null
+  zoom?: number
+}) {
   const elRef = useRef<HTMLDivElement>(null)
   const preRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
@@ -77,7 +100,7 @@ export default function MapaChat({ chaty }: { chaty: MapovaChata[] }) {
 
   useEffect(() => {
     const el = elRef.current
-    if (!el || !klic || chaty.length === 0) return
+    if (!el || !klic || (chaty.length === 0 && !misto)) return
     let mapa: Leaflet.Map | undefined
     let zruseno = false
 
@@ -180,8 +203,32 @@ export default function MapaChat({ chaty }: { chaty: MapovaChata[] }) {
         marker.on('click', () => router.push(ch.url))
       })
 
-      const hranice = L.latLngBounds(chaty.map((ch) => [ch.lat, ch.lng]))
-      mapa.fitBounds(hranice, { padding: [30, 30], maxZoom: 13 })
+      if (misto) {
+        L.marker([misto.lat, misto.lng], {
+          icon: L.divIcon({
+            className: 'mk mk-misto',
+            html: MARKER.misto,
+            iconSize: [34, 42],
+            // Kapka ukazuje špičkou na bod, proto kotva dole uprostřed.
+            iconAnchor: [17, 41],
+          }),
+          alt: misto.nazev,
+          title: misto.nazev,
+          zIndexOffset: 500,
+        })
+          .addTo(mapa!)
+          .bindTooltip(misto.nazev, { permanent: true, direction: 'top', offset: [0, -40], className: 'mk-popisek' })
+      }
+
+      // Výřez: se `zoom` se mapa vystředí na místo (zasazení obce), jinak se
+      // jako dřív přizpůsobí markerům chat.
+      if (misto && zoom) {
+        mapa.setView([misto.lat, misto.lng], zoom)
+      } else {
+        const body: [number, number][] = chaty.map((ch) => [ch.lat, ch.lng])
+        if (misto) body.push([misto.lat, misto.lng])
+        mapa.fitBounds(L.latLngBounds(body), { padding: [30, 30], maxZoom: 13 })
+      }
       mapa.on('move zoom', () => {
         if (pre) pre.style.opacity = '0'
       })
@@ -191,15 +238,22 @@ export default function MapaChat({ chaty }: { chaty: MapovaChata[] }) {
       zruseno = true
       mapa?.remove()
     }
-  }, [chaty, klic, router])
+  }, [chaty, misto, zoom, klic, router])
 
-  // bez klíče nebo bez chat se pás vůbec nevykresluje — nic se nedomýšlí
-  if (!klic || chaty.length === 0) return null
+  // Bez klíče se pás nevykresluje vůbec. Bez chat taky — pokud ovšem není
+  // zadané `misto`: mapa zasazení obce dává smysl i tehdy, když kolem ní
+  // zrovna žádná chata průvodce nestojí.
+  if (!klic || (chaty.length === 0 && !misto)) return null
 
   return (
     <div className="band mapband" data-testid="mapa-chat">
       <div className="mpre" ref={preRef} aria-hidden="true" />
-      <div ref={elRef} className="mapel" role="region" aria-label="Mapa chat" />
+      <div
+        ref={elRef}
+        className="mapel"
+        role="region"
+        aria-label={misto ? `Mapa — zasazení místa ${misto.nazev}` : 'Mapa chat'}
+      />
     </div>
   )
 }
