@@ -319,6 +319,45 @@ v `docs/screenshots/f1-vizualni-2026-07-29/`. Nic rozbitého; drobnost k zápisu
 konzole hlásí hydration warning na stránkách s klientskými komponentami (pás
 razítek a mapa) — na vzhled to nemá vliv, ale patří to na seznam k dořešení.
 
+**Dodatek 5 (týž den, zadání Michala „u pohoří bych chtěl i seznam / výpis
+lanovek"): sekce 05 Lanovky na stránce pohoří — a nemuselo se pro ni nic
+stahovat.**
+
+Vrstvu `aerialway` z OpenStreetMap už do repa vozí pipeline DATA-28 (3D
+terén), takže nový skript `data32-lanovky.ts` ji jen přebírá. Běží proto
+i v bezobslužné session, která na Overpass nedosáhne; cenou je stáří dat,
+které se nese s sebou (`stavOsm`) a v UI se přiznává.
+
+**Klíč, který jsem musel zvolit, protože data ho nenabízejí:** co je vlastně
+„lanovka" pro průvodce pěších. Export má 295 objektů, ale 254 z nich jsou
+vleky, kotvy a dětské pásy — ty pěšího nevyvezou. Do přehledu jdou jen
+kabinkové, kombinované a sedačkové dráhy (41), a **počet vynechaných je
+v UI napsaný**. Kdyby tam nebyl, čtenář by četl 41 jako „všechny lanovky
+v Krkonoších" a v terénu by mu to nesedělo.
+
+Spojování úseků je konzervativní: OSM vede dráhu často jako víc `way`, takže
+se slučují úseky téhož jména, které na sebe navazují do 200 m — dva různé
+vleky „Kotva" na opačných koncích údolí tím nesplynou a paralelní „Hala
+Szrenicka I" a „II" zůstávají dvě dráhy, protože to dvě dráhy jsou.
+
+**Co z toho má čtenář:** sloupec „Vyveze k". Devatenáct ze 41 drah končí do
+1,5 km od publikované chaty — Karkonosz Express u Hali Szrenické a Szrenice,
+Černohorský Express u Černé boudy, kabinka Pec ⇔ Růžová hora u Růžohorek,
+sedačka na Žalý u dnes povýšeného profilu. To je přesně to, co člověk plánující
+výlet hledá, a dosud to na webu nebylo nikde.
+
+**Tři výhrady, které jsou ve veřejném textu, ne jen v kódu:** převýšení je
+odhad z výškového modelu (proto „≈" a zaokrouhlení na desítky metrů), délka
+je půdorysná z geometrie, vzdálenost k chatě je vzdušná čára. A **provozní
+doba ani ceny v přehledu nejsou** — doložené je nemáme a mění se každou
+sezónu; radši chybějící údaj než údaj, kterému nejde věřit. Patří do DATA-04,
+kde budou nejužitečnější u chat na horních stanicích.
+
+17 nových testů (11 nad logikou skriptu, 6 komponentových nad reálným
+`data/lanovky/krkonose.json`), celkem 353 zeleně; kontrola, lint i tsc čisté.
+Jeden cizí test jsem musel zúžit: atribuci 3D mapy hledal podle textu přes
+celou stránku a nově týž výškopis jmenuje i přehled lanovek.
+
 **Otázky pro Michala k dodatkům:**
 4. **Stezka korunami stromů Krkonoše** — bereme vyhlídkové stezky jako
    rozhledny, nebo je klíč míněn jen na věže?
@@ -330,9 +369,10 @@ razítek a mapa) — na vzhled to nemá vliv, ale patří to na seznam k dořeš
 7. **Nákup originálů** — chceš zkusit koupit pár dobových pohlednic
    klíčových bud (Labská, Petrova, zaniklé boudy) a naskenovat je? Je to
    licenčně nejčistší cesta, jakou jsem našel.
-8. **Titulní fotka** — sedí ti Kopřivův snímek jako hlavní fotka Krkonoš,
-   nebo bys dal přednost dramatičtějším skalám od Małgorzaty Twardo?
-   Přehodit je otázka jednoho řádku v `data/oblasti/krkonose.yaml`.
+8. **Titulní fotka** — potvrzeno Michalem 29. 7. („sedí").
+9. **Lanovky** — mají v přehledu zůstat i sedačky, které nikam k chatě
+   nevozí (čistě sjezdovkové, jako Hromovka nebo Protěž), nebo je vypustit
+   a nechat jen ty, které pěšímu k něčemu jsou? Zatím jsou v seznamu dole.
 
 ---
 

@@ -9,11 +9,13 @@ import React from 'react'
 import Mapa3D from '@/components/Mapa3D'
 import PohoriChatySeznam from '@/components/PohoriChatySeznam'
 import VitrinaSberatelstvi, { type VitrinaOtisk } from '@/components/VitrinaSberatelstvi'
+import LanovkySeznam from '@/components/LanovkySeznam'
 import PohoriHeroFoto from '@/components/PohoriHeroFoto'
 import { SectionBar } from '@/components/ui'
 import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
+import { lanovkyOblasti } from '@/lib/lanovky'
 import { zanikleChaty } from '@/lib/zanikle'
 
 import '../../pohori.css'
@@ -73,6 +75,8 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
 
   const vOblasti = index.filter((ch) => ch.oblastSlug === oblastSlug)
   const zanikle = zanikleChaty()
+  // Přehled lanovek oblasti (DATA-32) — které vyvezou pěšího k chatám.
+  const lanovky = lanovkyOblasti(oblastSlug)
   const sRazitkem = vOblasti.filter((ch) => ch.razitko).length
   const vysky = vOblasti.map((ch) => ch.vyska).filter((v): v is number => v != null)
   const vyskaMin = vysky.length ? Math.min(...vysky) : null
@@ -321,9 +325,16 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         </section>
       )}
 
+      {lanovky && lanovky.lanovky.length > 0 && (
+        <section className="sec" aria-label="Lanovky">
+          <SectionBar num="05" title="Lanovky" variant="red" />
+          <LanovkySeznam data={lanovky} />
+        </section>
+      )}
+
       {topCile.length > 0 && (
         <section className="sec" aria-label="Top cíle">
-          <SectionBar num="05" title="Top cíle" variant="red" />
+          <SectionBar num="06" title="Top cíle" variant="red" />
           <div className="pohori-cile">
             {topCile.map((cil) => {
               const url = chataUrl(cil.nejblizChataSlug)
@@ -346,7 +357,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       )}
 
       <section className="sec" aria-label="Zaniklé chaty">
-        <SectionBar num="06" title="Z Atlasu zaniklých" variant="red" />
+        <SectionBar num="07" title="Z Atlasu zaniklých" variant="red" />
         <div className="pohori-zanikle">
           <div className="pohori-zanikle-karta">
             <div className="pohori-zanikle-hlava">
@@ -367,7 +378,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
 
       {(vitrinaOtisky.length > 0 || sRazitkem > 0) && (
       <section className="sec" aria-label="Sběratelství">
-        <SectionBar num="07" title={`Sběratelství — vitrína ${oblast.nazev}`} variant="red" />
+        <SectionBar num="08" title={`Sběratelství — vitrína ${oblast.nazev}`} variant="red" />
         <VitrinaSberatelstvi
           otisky={vitrinaOtisky}
           znamka={vitrinaZnamka}
@@ -385,7 +396,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       )}
 
       <section className="sec" aria-label="Časté otázky">
-        <SectionBar num="08" title="Časté otázky" variant="red" />
+        <SectionBar num="09" title="Časté otázky" variant="red" />
         <div className="pohori-faq">
           {faq.map((f) => (
             <details key={f.q} className="pohori-faq-polozka">
@@ -399,7 +410,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
 
       {oblastSlug === 'krkonose' && (
       <section className="sec" aria-label="Přesahy">
-        <SectionBar num="09" title="Přesahy pohoří" variant="red" />
+        <SectionBar num="10" title="Přesahy pohoří" variant="red" />
         <div className="pohori-presah">
           <b>Podkrkonoší</b>
           <p>

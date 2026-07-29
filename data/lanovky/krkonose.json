@@ -1,0 +1,1066 @@
+{
+  "oblast": "krkonose",
+  "zdroj": "OpenStreetMap (tag aerialway) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); přebráno z exportu pipeline DATA-28",
+  "stavOsm": "2026-07-28",
+  "zdrojVysek": "Mapy.com Elevation API (výškový model)",
+  "poznamka": "Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). Vleky a dětské pásy (254 v témž exportu) přehled nevede. Převýšení je z výškového modelu, ne z měření — zaokrouhleno na desítky metrů; délka je půdorysná z geometrie OSM. Vzdálenost k chatám je vzdušná čára.",
+  "vygenerovano": "scripts/data32-lanovky.ts",
+  "pocet": 41,
+  "vleku": 254,
+  "lanovky": [
+    {
+      "id": "karkonosz-express",
+      "nazev": "Karkonosz Express",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 2339,
+      "prevyseniM": 510,
+      "dolni": {
+        "lat": 50.81785,
+        "lng": 15.51682,
+        "vyska": 715
+      },
+      "horni": {
+        "lat": 50.79745,
+        "lng": 15.50869,
+        "vyska": 1222
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "schronisko-pttk-na-hali-szrenickiej",
+          "nazev": "Schronisko PTTK na Hali Szrenickiej",
+          "vzdalenostM": 622
+        },
+        {
+          "slug": "schronisko-szrenica",
+          "nazev": "Schronisko Szrenica",
+          "vzdalenostM": 696
+        }
+      ]
+    },
+    {
+      "id": "cernohorsky-express",
+      "nazev": "Černohorský Express",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 2279,
+      "prevyseniM": 570,
+      "dolni": {
+        "lat": 50.63143,
+        "lng": 15.7704,
+        "vyska": 688
+      },
+      "horni": {
+        "lat": 50.64808,
+        "lng": 15.75157,
+        "vyska": 1254
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "cerna-bouda",
+          "nazev": "Černá bouda",
+          "vzdalenostM": 770
+        }
+      ]
+    },
+    {
+      "id": "1-wyciag-zbyszek",
+      "nazev": "1 - Wyciąg \"Zbyszek\"",
+      "typ": "mixed_lift",
+      "typNazev": "kombinovaná (kabinky i sedačky)",
+      "delkaM": 2204,
+      "prevyseniM": 530,
+      "dolni": {
+        "lat": 50.7675,
+        "lng": 15.72912,
+        "vyska": 820
+      },
+      "horni": {
+        "lat": 50.74771,
+        "lng": 15.7273,
+        "vyska": 1353
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "dom-slaski",
+          "nazev": "Dom Śląski",
+          "vzdalenostM": 920
+        },
+        {
+          "slug": "schronisko-nad-lomniczka",
+          "nazev": "Schronisko PTTK „Nad Łomniczką\"",
+          "vzdalenostM": 1158
+        },
+        {
+          "slug": "strzecha-akademicka",
+          "nazev": "Strzecha Akademicka",
+          "vzdalenostM": 1375
+        }
+      ]
+    },
+    {
+      "id": "lysa-hora-a5",
+      "nazev": "Lysá Hora (A5)",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 2117,
+      "prevyseniM": 580,
+      "dolni": {
+        "lat": 50.73981,
+        "lng": 15.48805,
+        "vyska": 734
+      },
+      "horni": {
+        "lat": 50.75388,
+        "lng": 15.50645,
+        "vyska": 1311
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-dvoracky",
+          "nazev": "Chata Dvoračky",
+          "vzdalenostM": 823
+        }
+      ]
+    },
+    {
+      "id": "ruzova-hora-snezka",
+      "nazev": "Růžová hora ⇔ Sněžka",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 2003,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 50.71772,
+        "lng": 15.74619,
+        "vyska": 1334
+      },
+      "horni": {
+        "lat": 50.73536,
+        "lng": 15.74044,
+        "vyska": 1561
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "dom-slaski",
+          "nazev": "Dom Śląski",
+          "vzdalenostM": 929
+        },
+        {
+          "slug": "schronisko-nad-lomniczka",
+          "nazev": "Schronisko PTTK „Nad Łomniczką\"",
+          "vzdalenostM": 1444
+        }
+      ]
+    },
+    {
+      "id": "spindleruv-mlyn-medvedin",
+      "nazev": "Špindlerův Mlýn - Medvědín",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1857,
+      "prevyseniM": 480,
+      "dolni": {
+        "lat": 50.73392,
+        "lng": 15.6066,
+        "vyska": 744
+      },
+      "horni": {
+        "lat": 50.74141,
+        "lng": 15.58301,
+        "vyska": 1224
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "staromisecna-bouda",
+          "nazev": "Staromísečná bouda",
+          "vzdalenostM": 1009
+        },
+        {
+          "slug": "novomisecna-bouda",
+          "nazev": "Novomísečná bouda",
+          "vzdalenostM": 1024
+        }
+      ]
+    },
+    {
+      "id": "pec-pod-snezkou-ruzova-hora",
+      "nazev": "Pec pod Sněžkou ⇔ Růžová hora",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1685,
+      "prevyseniM": 490,
+      "dolni": {
+        "lat": 50.70517,
+        "lng": 15.73278,
+        "vyska": 848
+      },
+      "horni": {
+        "lat": 50.71772,
+        "lng": 15.74619,
+        "vyska": 1334
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "bouda-ruzohorky",
+          "nazev": "Bouda Růžohorky",
+          "vzdalenostM": 861
+        }
+      ]
+    },
+    {
+      "id": "innogy-line-svaty-petr",
+      "nazev": "innogy line Svatý Petr",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1541,
+      "prevyseniM": 420,
+      "dolni": {
+        "lat": 50.72059,
+        "lng": 15.61236,
+        "vyska": 755
+      },
+      "horni": {
+        "lat": 50.70698,
+        "lng": 15.61651,
+        "vyska": 1179
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-na-plani",
+          "nazev": "Bouda Na Pláni",
+          "vzdalenostM": 747
+        }
+      ]
+    },
+    {
+      "id": "lanova-draha-portasky",
+      "nazev": "Lanová dráha Portášky",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1423,
+      "prevyseniM": 340,
+      "dolni": {
+        "lat": 50.69031,
+        "lng": 15.76838,
+        "vyska": 713
+      },
+      "horni": {
+        "lat": 50.70307,
+        "lng": 15.76987,
+        "vyska": 1057
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "portasky",
+          "nazev": "Portášky",
+          "vzdalenostM": 136
+        }
+      ]
+    },
+    {
+      "id": "lanova-draha-zaly",
+      "nazev": "Lanová dráha Žalý",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1383,
+      "prevyseniM": 410,
+      "dolni": {
+        "lat": 50.65858,
+        "lng": 15.59495,
+        "vyska": 590
+      },
+      "horni": {
+        "lat": 50.65807,
+        "lng": 15.57535,
+        "vyska": 996
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "zaly",
+          "nazev": "Žalý",
+          "vzdalenostM": 230
+        }
+      ]
+    },
+    {
+      "id": "labska",
+      "nazev": "Labská",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1275,
+      "prevyseniM": 320,
+      "dolni": {
+        "lat": 50.71478,
+        "lng": 15.58082,
+        "vyska": 710
+      },
+      "horni": {
+        "lat": 50.72453,
+        "lng": 15.57128,
+        "vyska": 1032
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "staromisecna-bouda",
+          "nazev": "Staromísečná bouda",
+          "vzdalenostM": 1284
+        },
+        {
+          "slug": "novomisecna-bouda",
+          "nazev": "Novomísečná bouda",
+          "vzdalenostM": 1314
+        }
+      ]
+    },
+    {
+      "id": "horni-misecky-medvedin",
+      "nazev": "Horní Mísečky - Medvědín",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1270,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 50.73318,
+        "lng": 15.5689,
+        "vyska": 996
+      },
+      "horni": {
+        "lat": 50.7411,
+        "lng": 15.58191,
+        "vyska": 1223
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "staromisecna-bouda",
+          "nazev": "Staromísečná bouda",
+          "vzdalenostM": 927
+        },
+        {
+          "slug": "novomisecna-bouda",
+          "nazev": "Novomísečná bouda",
+          "vzdalenostM": 940
+        }
+      ]
+    },
+    {
+      "id": "szrenica-ii",
+      "nazev": "Szrenica II",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1269,
+      "prevyseniM": 420,
+      "dolni": {
+        "lat": 50.80571,
+        "lng": 15.52076,
+        "vyska": 873
+      },
+      "horni": {
+        "lat": 50.79494,
+        "lng": 15.51479,
+        "vyska": 1294
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "schronisko-szrenica",
+          "nazev": "Schronisko Szrenica",
+          "vzdalenostM": 333
+        },
+        {
+          "slug": "schronisko-pttk-na-hali-szrenickiej",
+          "nazev": "Schronisko PTTK na Hali Szrenickiej",
+          "vzdalenostM": 933
+        },
+        {
+          "slug": "vosecka-bouda",
+          "nazev": "Vosecká bouda",
+          "vzdalenostM": 1357
+        }
+      ]
+    },
+    {
+      "id": "hofmanky-express",
+      "nazev": "Hofmanky Express",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1138,
+      "prevyseniM": 310,
+      "dolni": {
+        "lat": 50.63335,
+        "lng": 15.75904,
+        "vyska": 787
+      },
+      "horni": {
+        "lat": 50.64341,
+        "lng": 15.75608,
+        "vyska": 1094
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "cerna-bouda",
+          "nazev": "Černá bouda",
+          "vzdalenostM": 1377
+        }
+      ]
+    },
+    {
+      "id": "hnedy-vrch",
+      "nazev": "Hnědý vrch",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1123,
+      "prevyseniM": 310,
+      "dolni": {
+        "lat": 50.68439,
+        "lng": 15.72131,
+        "vyska": 903
+      },
+      "horni": {
+        "lat": 50.68869,
+        "lng": 15.70688,
+        "vyska": 1208
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "lyzarska-bouda",
+          "nazev": "Lyžařská bouda",
+          "vzdalenostM": 697
+        },
+        {
+          "slug": "chata-smetanka",
+          "nazev": "Chata Smetánka",
+          "vzdalenostM": 970
+        },
+        {
+          "slug": "amor",
+          "nazev": "Chata Amor",
+          "vzdalenostM": 1281
+        },
+        {
+          "slug": "lesni-bouda",
+          "nazev": "Lesní bouda",
+          "vzdalenostM": 1304
+        }
+      ]
+    },
+    {
+      "id": "lanova-draha-bubakov",
+      "nazev": "Lanová dráha Bubákov",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1105,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 50.65254,
+        "lng": 15.60282,
+        "vyska": 551
+      },
+      "horni": {
+        "lat": 50.65242,
+        "lng": 15.58715,
+        "vyska": 766
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "zaly",
+          "nazev": "Žalý",
+          "vzdalenostM": 1237
+        }
+      ]
+    },
+    {
+      "id": "svaty-petr-cerna",
+      "nazev": "Svatý Petr – černá",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 895,
+      "prevyseniM": 290,
+      "dolni": {
+        "lat": 50.72011,
+        "lng": 15.61467,
+        "vyska": 752
+      },
+      "horni": {
+        "lat": 50.71249,
+        "lng": 15.61704,
+        "vyska": 1047
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-na-plani",
+          "nazev": "Bouda Na Pláni",
+          "vzdalenostM": 1197
+        }
+      ]
+    },
+    {
+      "id": "zahradky-express",
+      "nazev": "Zahrádky Express",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 852,
+      "prevyseniM": 180,
+      "dolni": {
+        "lat": 50.68392,
+        "lng": 15.72275,
+        "vyska": 902
+      },
+      "horni": {
+        "lat": 50.67728,
+        "lng": 15.71673,
+        "vyska": 1086
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "lesni-bouda",
+          "nazev": "Lesní bouda",
+          "vzdalenostM": 530
+        },
+        {
+          "slug": "konopindova-chata",
+          "nazev": "Konopindova chata",
+          "vzdalenostM": 769
+        },
+        {
+          "slug": "na-mulde",
+          "nazev": "Horská bouda Na Muldě",
+          "vzdalenostM": 787
+        },
+        {
+          "slug": "barborka",
+          "nazev": "Barborka",
+          "vzdalenostM": 807
+        },
+        {
+          "slug": "husova-bouda",
+          "nazev": "Husova bouda",
+          "vzdalenostM": 815
+        },
+        {
+          "slug": "chata-smetanka",
+          "nazev": "Chata Smetánka",
+          "vzdalenostM": 921
+        },
+        {
+          "slug": "nachodska-bouda",
+          "nazev": "Náchodská bouda",
+          "vzdalenostM": 1005
+        },
+        {
+          "slug": "bouda-na-lucinach",
+          "nazev": "Bouda Na Lučinách",
+          "vzdalenostM": 1052
+        },
+        {
+          "slug": "bouda-slovanka",
+          "nazev": "Bouda Slovanka",
+          "vzdalenostM": 1115
+        },
+        {
+          "slug": "prazska-bouda",
+          "nazev": "Pražská bouda",
+          "vzdalenostM": 1200
+        },
+        {
+          "slug": "helena",
+          "nazev": "Bouda Helena",
+          "vzdalenostM": 1252
+        },
+        {
+          "slug": "lyzarska-bouda",
+          "nazev": "Lyžařská bouda",
+          "vzdalenostM": 1356
+        },
+        {
+          "slug": "horska-chata-krakonos",
+          "nazev": "Horská chata Krakonoš",
+          "vzdalenostM": 1447
+        }
+      ]
+    },
+    {
+      "id": "kejnos",
+      "nazev": "Kejnos",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 747,
+      "prevyseniM": 170,
+      "dolni": {
+        "lat": 50.65794,
+        "lng": 15.54801,
+        "vyska": 672
+      },
+      "horni": {
+        "lat": 50.66261,
+        "lng": 15.55563,
+        "vyska": 845
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "zaly",
+          "nazev": "Žalý",
+          "vzdalenostM": 1262
+        }
+      ]
+    },
+    {
+      "id": "szrenica-i",
+      "nazev": "Szrenica I",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1413,
+      "prevyseniM": 170,
+      "dolni": {
+        "lat": 50.81826,
+        "lng": 15.51749,
+        "vyska": 708
+      },
+      "horni": {
+        "lat": 50.80568,
+        "lng": 15.52034,
+        "vyska": 879
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "hromovka",
+      "nazev": "Hromovka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1396,
+      "prevyseniM": 330,
+      "dolni": {
+        "lat": 50.72444,
+        "lng": 15.60071,
+        "vyska": 704
+      },
+      "horni": {
+        "lat": 50.71214,
+        "lng": 15.60465,
+        "vyska": 1031
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "certova-hora",
+      "nazev": "Čertova hora",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1243,
+      "prevyseniM": 340,
+      "dolni": {
+        "lat": 50.7726,
+        "lng": 15.42568,
+        "vyska": 665
+      },
+      "horni": {
+        "lat": 50.76169,
+        "lng": 15.4295,
+        "vyska": 1010
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "protez",
+      "nazev": "Protěž",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1241,
+      "prevyseniM": 300,
+      "dolni": {
+        "lat": 50.63347,
+        "lng": 15.77906,
+        "vyska": 700
+      },
+      "horni": {
+        "lat": 50.64145,
+        "lng": 15.76676,
+        "vyska": 1000
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "horni-domky",
+      "nazev": "Horní domky",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1218,
+      "prevyseniM": 240,
+      "dolni": {
+        "lat": 50.7372,
+        "lng": 15.4789,
+        "vyska": 659
+      },
+      "horni": {
+        "lat": 50.74626,
+        "lng": 15.48863,
+        "vyska": 902
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "paseky-nad-jizerou",
+      "nazev": "Paseky nad Jizerou",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1126,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 50.72301,
+        "lng": 15.39056,
+        "vyska": 626
+      },
+      "horni": {
+        "lat": 50.72985,
+        "lng": 15.37877,
+        "vyska": 853
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "knezicky-expres",
+      "nazev": "Kněžický Expres",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1057,
+      "prevyseniM": 150,
+      "dolni": {
+        "lat": 50.63601,
+        "lng": 15.60236,
+        "vyska": 549
+      },
+      "horni": {
+        "lat": 50.63658,
+        "lng": 15.5874,
+        "vyska": 694
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "saxner",
+      "nazev": "Saxner",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 978,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 50.63735,
+        "lng": 15.70567,
+        "vyska": 630
+      },
+      "horni": {
+        "lat": 50.64572,
+        "lng": 15.70139,
+        "vyska": 863
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "family-express",
+      "nazev": "Family Express",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 968,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 50.63682,
+        "lng": 15.7073,
+        "vyska": 617
+      },
+      "horni": {
+        "lat": 50.64529,
+        "lng": 15.70412,
+        "vyska": 850
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "2-wyciag-liczykrupa",
+      "nazev": "2 - Wyciąg Liczykrupa",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 908,
+      "prevyseniM": 120,
+      "dolni": {
+        "lat": 50.76702,
+        "lng": 15.72952,
+        "vyska": 833
+      },
+      "horni": {
+        "lat": 50.75887,
+        "lng": 15.72877,
+        "vyska": 954
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kebrlak",
+      "nazev": "Kebrlák",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 876,
+      "prevyseniM": 140,
+      "dolni": {
+        "lat": 50.63673,
+        "lng": 15.60312,
+        "vyska": 539
+      },
+      "horni": {
+        "lat": 50.63732,
+        "lng": 15.59074,
+        "vyska": 679
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "ryzoviste",
+      "nazev": "Ryžoviště",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 834,
+      "prevyseniM": 280,
+      "dolni": {
+        "lat": 50.76452,
+        "lng": 15.44263,
+        "vyska": 723
+      },
+      "horni": {
+        "lat": 50.7614,
+        "lng": 15.43184,
+        "vyska": 1006
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "pizar",
+      "nazev": "Pizár",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 692,
+      "prevyseniM": 160,
+      "dolni": {
+        "lat": 50.72678,
+        "lng": 15.39025,
+        "vyska": 685
+      },
+      "horni": {
+        "lat": 50.73069,
+        "lng": 15.3826,
+        "vyska": 849
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "rejdice",
+      "nazev": "Rejdice",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 638,
+      "prevyseniM": 160,
+      "dolni": {
+        "lat": 50.73456,
+        "lng": 15.36118,
+        "vyska": 667
+      },
+      "horni": {
+        "lat": 50.73728,
+        "lng": 15.36916,
+        "vyska": 825
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "aldrov-prezidentsky-expres",
+      "nazev": "Aldrov - Prezidentský expres",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 618,
+      "prevyseniM": 110,
+      "dolni": {
+        "lat": 50.68311,
+        "lng": 15.52102,
+        "vyska": 651
+      },
+      "horni": {
+        "lat": 50.6789,
+        "lng": 15.51696,
+        "vyska": 763
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "bia-y-jar",
+      "nazev": "Biały Jar",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 566,
+      "prevyseniM": 70,
+      "dolni": {
+        "lat": 50.77226,
+        "lng": 15.73715,
+        "vyska": 723
+      },
+      "horni": {
+        "lat": 50.76905,
+        "lng": 15.7323,
+        "vyska": 790
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "buky-i",
+      "nazev": "Buky I.",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 541,
+      "prevyseniM": 10,
+      "dolni": {
+        "lat": 50.60098,
+        "lng": 15.84574,
+        "vyska": 484
+      },
+      "horni": {
+        "lat": 50.6005,
+        "lng": 15.84602,
+        "vyska": 495
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "mustky",
+      "nazev": "Můstky",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 472,
+      "prevyseniM": 160,
+      "dolni": {
+        "lat": 50.76926,
+        "lng": 15.42699,
+        "vyska": 719
+      },
+      "horni": {
+        "lat": 50.76511,
+        "lng": 15.42841,
+        "vyska": 883
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "hranice-1-c2",
+      "nazev": "Hranice 1 (C2)",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 362,
+      "prevyseniM": 50,
+      "dolni": {
+        "lat": 50.73261,
+        "lng": 15.44228,
+        "vyska": 598
+      },
+      "horni": {
+        "lat": 50.73504,
+        "lng": 15.43885,
+        "vyska": 649
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "karolinka",
+      "nazev": "Karolinka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 316,
+      "prevyseniM": 60,
+      "dolni": {
+        "lat": 50.6426,
+        "lng": 15.90646,
+        "vyska": 529
+      },
+      "horni": {
+        "lat": 50.63996,
+        "lng": 15.90481,
+        "vyska": 590
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "pod-wangiem-duzy",
+      "nazev": "Pod Wangiem Duży",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 315,
+      "prevyseniM": 50,
+      "dolni": {
+        "lat": 50.78029,
+        "lng": 15.7302,
+        "vyska": 768
+      },
+      "horni": {
+        "lat": 50.78016,
+        "lng": 15.72572,
+        "vyska": 816
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "priblizovaci-lanova-draha-bubakov",
+      "nazev": "Přibližovací lanová dráha Bubákov",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 169,
+      "prevyseniM": 20,
+      "dolni": {
+        "lat": 50.65351,
+        "lng": 15.60336,
+        "vyska": 531
+      },
+      "horni": {
+        "lat": 50.65329,
+        "lng": 15.60251,
+        "vyska": 551
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    }
+  ]
+}

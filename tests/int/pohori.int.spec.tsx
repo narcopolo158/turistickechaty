@@ -108,7 +108,12 @@ describe('Stránka pohoří (F1d)', () => {
     const iframe = container.querySelector('iframe')!
     expect(iframe.getAttribute('src')).toBe('/3d/krkonose.html')
     // atribuce reálných dat 3D mapy (Mapy.com výškopis + OSM)
-    expect(screen.getByText(/Mapy\.com Elevation API/)).toBeTruthy()
+    // Atribuci 3D mapy hledáme uvnitř jejího vlastního bloku: od 29. 7. 2026
+    // jmenuje týž výškopis i přehled lanovek (DATA-32), takže hledání podle
+    // textu přes celou stránku by našlo dva prvky a padalo by na tom.
+    expect(
+      document.querySelector('.m3d-atribuce')?.textContent ?? '',
+    ).toContain('Mapy.com Elevation API')
     expect(screen.getByText(/OpenStreetMap \(ODbL\)/)).toBeTruthy()
   })
 
