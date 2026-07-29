@@ -184,6 +184,88 @@ zpracovat rozhlednové kandidáty pilotu a teprve pak odškrtnout DATA-23;
 3. **Slovanka** — potvrzuješ zápis dvojice mezi známé jmenovce? (Stejně
    jako u Hubertky je to zatím můj návrh, ne tvůj verdikt.)
 
+**Dodatek 1 (týž den, Michal online — klik na DATA-01, „zaly rovnou povysit
+a zaradit, slovanka ok"): DATA-23 uzavřena, Žalý je prvním profilem s typem
+`rozhledna`, a rozhlednový běh odhalil díru mezi oblastmi.**
+
+**Běh dal čtyři kandidáty (commit 42222b3) a každý znamená něco jiného.**
+(1) **Rozhledna Žalý** je OSM entita samotné věže u objektu, který jsem týž
+den povyšoval — zůstává kandidátem jako doklad a jako připravená půlka pro
+případné rozdělení, v registru jmenovců je dvojice zapsaná s výslovnou
+poznámkou, že to není jmenovec, nýbrž jeden objekt ve dvou entitách.
+(2) **Stezka korunami stromů Krkonoše** (Janské Lázně, 45,5 m, občerstvení
+Lestánek a V Korunách do sta metrů) klíčem formálně prochází — jenže
+vyhlídková stezka není věž a tohle je redakční rozhodnutí, ne měření;
+otázka pro Michala níž. (3) a (4) **Štěpánka a Maják Járy Cimrmana** do
+Krkonoš nepatří: přehledy Libereckého kraje i Kudy z nudy je vedou
+v Jizerských horách u Kořenova. Přesunuty, zapsány do `_vyrazeno.yaml`.
+
+**A právě u nich se ukázala vada, která by jinak zůstala neviditelná:**
+jizerskohorské okno dotazu mělo jižní hranu 50,75, jenže Štěpánka leží na
+50,7465 a Maják na 50,7399. Krkonošský běh je najde a vyhodí jako cizí,
+jizerský je nenajde vůbec — propadly by mezi oblastmi a nikdo by se to
+nedozvěděl, protože v žádném reportu nechybí nic, co se nehledalo. Hrana
+proto rozšířena na 50,73, a to i pro 3D okno (týž důvod jako včera
+u Kochanówky: co vedeme, to model nesmí tiše vynechat).
+
+**Žalý povýšen — 77 publikovaných.** Data z Kudy z nudy, webu města Vrchlabí
+a serveru ceskehory.cz; vlastní web zaly.cz se ze sandboxu nenačte ani
+napodruhé, takže z něj není citováno nic. Věž postavil hrabě Jan Harrach
+a otevřela se 7. září 1892, dřevěná vyhlídka tu ale stála už od roku 1836.
+**Vědomá odchylka od rozhodnutí o Sněžce:** věž a restauraci u paty vedu
+jako JEDEN objekt, protože je drží jeden provoz — telefon +420 732 801 804
+nese v OSM restaurace a Kudy z nudy ho uvádí u rozhledny, e-maily sedí na
+tutéž doménu. V profilu je to přiznané i s návodem, jak je rozdělit, kdyby
+to Michal chtěl jinak. **Nerozřešené rozpory přiznané v próze:** datace
+restaurace má čtyři letopočty ze tří vyprávění (1890 zaniklá 1943 ×
+dřevěná chata 1904 rozebraná 1939 × obnova 2009 × RÚIAN 2013) a výška
+vrcholu tři hodnoty (1019 × 1018 × dvojvrchol 1012/1036) — do polí šlo jen
+to, co má dva prameny. Hero z kandidátů DATA-02: `File:Benecko 95 Chata
+Zaly.jpg`, kde číslo popisné 95 na snímku sedí s adresou z Kudy z nudy —
+vzácně silné ztotožnění objektu. Kontrola, lint i tsc čisté, 324 int testů
+(3 soubory padají na chybějícím `PAYLOAD_SECRET` v sandboxu, doloženo, že
+i bez dnešních změn).
+
+**Dodatek 2 (týž den, zadání Michala k fotkám): rešerše zdrojů a právního
+stavu historických snímků — `docs/FOTKY-ZDROJE-A-LICENCE.md`, backlog
+FOTO-01.**
+
+Hlavní věc, kterou rešerše přinesla, není seznam bank, ale **rozdělení
+úlohy na dvě**: fotka chaty musí prokazatelně zachycovat ten objekt (proto
+u ní fotobanky neobstojí — nikdy nedoložíte, která budova to je), kdežto
+titulní fotka pohoří stačí hezká a z pohoří. Unsplash, Pexels ani Pixabay
+atribuci nevyžadují (licence načteny 29. 7.); přesto navrhuju autora
+i zdroj uvádět, protože web, který u faktů jmenuje prameny a u obrázků ne,
+si protiřečí.
+
+**Historické snímky:** 70 let po smrti autora, a u **anonymních děl 70 let
+od zveřejnění** — takže pohlednice vydaná 1955 a dřív s neznámým autorem je
+dnes volná, což pokrývá většinu dobových krkonošských pohlednic. Dvě pasti:
+„anonymní" musí platit doopravdy (signované snímky se počítají od smrti
+autora) a vydavatel na rubu není autor snímku. **Co jsem NEDOVĚŘIL a říkám
+to rovnou:** jestli má sken volného díla vlastní ochranu (čl. 14 směrnice
+DSM × česká novela 429/2022 — primární text vrátil 403 a komentáře o tom
+mlčí) a jak je to s „pouhou fotografií" ve starším právu. Do vyjasnění
+konzervativní postup: skeny z cizích sbírek jen se svolením, jako
+u razítek.
+
+**Ke zdroji, který poslal Michal:** Digitální atlas zaniklých krajin (PřF
+UK) má přesně to, co u zaniklých bud nemáme — fotorealistické 3D modely
+včetně Labské boudy ve stavu z 30. let, dobové snímky, výpovědi pamětníků.
+**Žádné podmínky užití ale neuvádí**, jen copyrightovou patičku, takže bez
+dotazu nepřebírat nic. Zároveň je to nejlepší kandidát na spolupráci, jakého
+jsme zatím viděli (akademický projekt, průnik s naší položkou „Atlas
+zaniklých chat"); text oslovení připravím, až Michal řekne.
+
+**Otázky pro Michala k dodatkům:**
+4. **Stezka korunami stromů Krkonoše** — bereme vyhlídkové stezky jako
+   rozhledny, nebo je klíč míněn jen na věže?
+5. **Žalý** — souhlasíš s vedením věže a restaurace jako jednoho objektu,
+   nebo je rozdělit podle pravidla o Sněžce?
+6. **Fotky** — mám připravit e-mail na Zaniklé krajiny (a případně na
+   Krkonošské muzeum / Správu KRNAP), stejným způsobem jako u razítkových
+   webů?
+
 ---
 
 ## 2026-07-28 — denní session (bezobslužný běh): DATA-05 — párování razítek dohnalo korpus, přiřazení nově jen potvrzené
