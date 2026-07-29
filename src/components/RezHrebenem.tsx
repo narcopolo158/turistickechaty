@@ -1,155 +1,197 @@
 import Link from 'next/link'
 import React from 'react'
 
-import type { Vrchol } from '@/lib/vrcholy'
+import type { Vrchol, Vrstva } from '@/lib/vrcholy'
 
 /**
- * Řez hřebenem — výškový profil oblasti (handoff F1 v2, nová sekce mezi 01
- * a 02).
+ * Řez hřebenem — panoramatický výškový profil oblasti (handoff F1 v2, sekce
+ * mezi 01 a 02). Druhá verze: první byla graf s puntíky, tahle je pohled na
+ * hory.
  *
- * JEDNA ODCHYLKA OD NÁVRHU, A JE TO VYLEPŠENÍ, NE ÚSPORA: návrh u řezu píše
- * „vodorovné rozestupy jsou ilustrační", protože prototyp neměl data. My je
- * máme — chaty i vrcholy nesou souřadnice — takže vodorovná osa je skutečná
- * zeměpisná délka (západ → východ). Řez tím přestává být kulisou: kdo si
- * najde chatu na křivce, vidí, kde na hřebeni doopravdy stojí.
+ * CO SE ZMĚNILO A PROČ (Michal 29. 7. 2026: „řez hřebenem udělej lépe,
+ * výsledek není wow ani dobrý"):
  *
- * CO SE KRESLÍ A Z ČEHO:
- *   — silueta hřebene z pojmenovaných vrcholů OSM (nejvyšší vrchol v každém
- *     svislém pruhu; mezi nimi se interpoluje — proto „schematický řez");
- *   — body chat z publikovaných profilů, které mají výšku i polohu;
- *   — popisky tří nejvyšších vrcholů oblasti.
- * Co výšku nebo polohu nemá, se nekreslí. Radši prázdno než odhad.
+ *   1. **Silueta je teď skutečný terén, ne spojnice vrcholů.** Kreslí se ze
+ *      stejného výškového modelu, ze kterého žije 3D mapa (Mapy.com Elevation,
+ *      mřížka 240×144): pro každý sloupec se vezme nejvyšší terén ve třech
+ *      zeměpisných pásech — jižní podhůří, hřeben, severní strana. Bližší
+ *      hřbety tak překrývají vzdálenější a vznikne hloubka. Lomená čára mezi
+ *      vrcholy vypadala jako kardiogram, protože jím taky byla.
+ *   2. **Puntíky přestaly být mračnem.** Chaty se nekreslí jako 55 stejných
+ *      teček: nejvyšší z nich mají popisku napevno (s odstupem, ať se
+ *      nepřekrývají), ostatní se ukážou při najetí. Kdo si sáhne na kteroukoli,
+ *      dostane jméno a výšku.
+ *   3. **Přibyla obloha, opar a orientace** (západ → východ, výškové linky).
+ *      Bez nich to byl graf bez jednotek.
  *
- * PŘÍSTUPNOST: každý bod chaty je odkaz na profil (ne div s `onClick`), takže
- * ho klávesnice projde tabem a čtečka přečte název i výšku. Popisek se ukáže
- * na hover i na focus.
+ * POCTIVOST BEZE ZMĚNY: vodorovná osa je zeměpisná délka, svislá nadmořská
+ * výška, obojí z dat. Terén je MODEL (nemusí odpovídat realitě na metry) a je
+ * to napsané pod řezem, ne schované.
+ *
+ * PŘÍSTUPNOST: bod chaty je odkaz na profil s popisem v `aria-label`, takže
+ * ho klávesnice projde tabem a čtečka přečte název i výšku.
  */
 
-/** Svislý rozsah řezu: pod 1000 m se v Krkonoších hřeben nekreslí. */
-const V_MIN = 1000
-const V_MAX = 1650
-const Y0 = 180
-const VYSKA_KRIVKY = 150
-
-export const yProVysku = (v: number): number =>
-  Y0 - ((Math.min(Math.max(v, V_MIN), V_MAX) - V_MIN) / (V_MAX - V_MIN)) * VYSKA_KRIVKY
+const SIRKA = 1000
+const VYSKA = 260
+/** Spodní hrana kresby: pod ní je patka s popiskami os. */
+const Y0 = 232
+const V_MIN = 400
 
 export type BodChaty = { slug: string; nazev: string; vyska: number; lng: number; url: string }
-
-/** Silueta z vrcholů: nejvyšší vrchol v každém z `pruhu` svislých pruhů. */
-export const siluetaZVrcholu = (
-  vrcholy: Vrchol[],
-  lngMin: number,
-  lngMax: number,
-  pruhu = 26,
-): { x: number; y: number }[] => {
-  if (!vrcholy.length || lngMax <= lngMin) return []
-  const nejvyssiVPruhu = new Map<number, Vrchol>()
-  for (const v of vrcholy) {
-    const pruh = Math.min(pruhu - 1, Math.floor(((v.lng - lngMin) / (lngMax - lngMin)) * pruhu))
-    const stavajici = nejvyssiVPruhu.get(pruh)
-    if (!stavajici || v.vyska > stavajici.vyska) nejvyssiVPruhu.set(pruh, v)
-  }
-  return [...nejvyssiVPruhu.entries()]
-    .sort(([a], [b]) => a - b)
-    .map(([, v]) => ({
-      x: ((v.lng - lngMin) / (lngMax - lngMin)) * 1000,
-      y: yProVysku(v.vyska),
-    }))
-}
 
 type Props = {
   chaty: BodChaty[]
   vrcholy: Vrchol[]
+  vrstvy?: Vrstva[]
+  bbox?: { lngMin: number; lngMax: number } | null
   zdrojVrcholu?: string | null
+  zdrojVyskopisu?: string | null
 }
 
-export function RezHrebenem({ chaty, vrcholy, zdrojVrcholu }: Props) {
-  const body = chaty.filter((ch) => ch.vyska >= V_MIN)
-  if (body.length < 3) return null
+/** Výška → y v plátně. Rozsah se počítá z dat, ne z konstant pro Krkonoše. */
+export const mapaVysky = (vMax: number) => {
+  const strop = Math.ceil((vMax + 60) / 100) * 100
+  return (v: number) => Y0 - ((Math.min(Math.max(v, V_MIN), strop) - V_MIN) / (strop - V_MIN)) * (Y0 - 24)
+}
 
-  const lngs = [...body.map((b) => b.lng), ...vrcholy.map((v) => v.lng)]
-  const lngMin = Math.min(...lngs)
-  const lngMax = Math.max(...lngs)
+/** Hladká křivka (Catmull-Rom → bezier) — terén nemá lomené hrany. */
+export const hladkaCesta = (body: { x: number; y: number }[]): string => {
+  if (body.length < 2) return ''
+  const d = [`M${body[0].x.toFixed(1)},${body[0].y.toFixed(1)}`]
+  for (let i = 0; i < body.length - 1; i++) {
+    const p0 = body[Math.max(0, i - 1)]
+    const p1 = body[i]
+    const p2 = body[i + 1]
+    const p3 = body[Math.min(body.length - 1, i + 2)]
+    const c1x = p1.x + (p2.x - p0.x) / 6
+    const c1y = p1.y + (p2.y - p0.y) / 6
+    const c2x = p2.x - (p3.x - p1.x) / 6
+    const c2y = p2.y - (p3.y - p1.y) / 6
+    d.push(`C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${p2.x.toFixed(1)},${p2.y.toFixed(1)}`)
+  }
+  return d.join(' ')
+}
+
+/** Vybere popisky s vodorovným odstupem — jinak splynou v kaši. */
+const sOdstupem = <T,>(polozky: T[], x: (p: T) => number, minOdstup: number, kolik: number): T[] => {
+  const vybrane: T[] = []
+  for (const p of polozky) {
+    if (vybrane.length === kolik) break
+    if (vybrane.some((v) => Math.abs(x(v) - x(p)) < minOdstup)) continue
+    vybrane.push(p)
+  }
+  return vybrane
+}
+
+export function RezHrebenem({
+  chaty,
+  vrcholy,
+  vrstvy = [],
+  bbox,
+  zdrojVrcholu,
+  zdrojVyskopisu,
+}: Props) {
+  if (chaty.length < 3) return null
+
+  const lngMin = bbox?.lngMin ?? Math.min(...chaty.map((c) => c.lng))
+  const lngMax = bbox?.lngMax ?? Math.max(...chaty.map((c) => c.lng))
   const x = (lng: number) => ((lng - lngMin) / (lngMax - lngMin)) * 100
 
-  const silueta = siluetaZVrcholu(vrcholy, lngMin, lngMax)
-  const cesta = silueta.length
-    ? `M0,${silueta[0].y.toFixed(1)} ${silueta
-        .map((b) => `L${b.x.toFixed(1)},${b.y.toFixed(1)}`)
-        .join(' ')} L1000,${silueta[silueta.length - 1].y.toFixed(1)} L1000,200 L0,200 Z`
-    : null
+  const vMaxTerenu = vrstvy.length ? Math.max(...vrstvy.flatMap((v) => v.vysky)) : 0
+  const vMax = Math.max(vMaxTerenu, ...chaty.map((c) => c.vyska), ...vrcholy.map((v) => v.vyska))
+  const y = mapaVysky(vMax)
 
-  // Popisky vrcholů: tři nejvyšší, ale s odstupem — Luční hora (1 556 m)
-  // a Studniční hora (1 555 m) stojí 1,5 km od sebe a jejich jména se
-  // v řezu překryla do nečitelné kaše. Kdo je druhý nejvyšší, se tím
-  // nemění; jen se místo něj popíše nejvyšší vrchol jinde na hřebeni.
-  const popisky: Vrchol[] = []
-  for (const v of [...vrcholy].sort((a, b) => b.vyska - a.vyska)) {
-    if (popisky.length === 3) break
-    if (popisky.some((p) => Math.abs(x(p.lng) - x(v.lng)) < 11)) continue
-    popisky.push(v)
-  }
+  // Vrstvy se kreslí odzadu: sever (nejdál), hřeben, jih (nejblíž pozorovateli
+  // stojícímu na české straně). Pořadí je v datech, tady se jen respektuje.
+  const poradi: Vrstva['pas'][] = ['sever', 'hreben', 'jih']
+  const kresby = poradi
+    .map((pas) => vrstvy.find((v) => v.pas === pas))
+    .filter((v): v is Vrstva => !!v && v.vysky.length > 1)
+    .map((v) => {
+      const krok = SIRKA / (v.vysky.length - 1)
+      const body = v.vysky.map((h, i) => ({ x: i * krok, y: y(h) }))
+      return { pas: v.pas, d: `${hladkaCesta(body)} L${SIRKA},${VYSKA} L0,${VYSKA} Z` }
+    })
+
+  const linky = [1600, 1400, 1200, 1000].filter((v) => v < vMax)
+  const popiskyVrcholu = sOdstupem([...vrcholy].sort((a, b) => b.vyska - a.vyska), (v) => x(v.lng), 12, 3)
+  const stale = sOdstupem([...chaty].sort((a, b) => b.vyska - a.vyska), (ch) => x(ch.lng), 9, 5)
+  const staleSlugy = new Set(stale.map((ch) => ch.slug))
 
   return (
     <div className="rez">
       <div className="rez-plocha">
-        <svg className="rez-svg" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
+        <svg className="rez-svg" viewBox={`0 0 ${SIRKA} ${VYSKA}`} preserveAspectRatio="none" aria-hidden="true">
           <defs>
-            <linearGradient id="rezVypln" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stopColor="rgba(157,178,195,.34)" />
-              <stop offset="1" stopColor="rgba(157,178,195,.04)" />
+            <linearGradient id="rezNebe" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stopColor="var(--rez-nebe-h)" />
+              <stop offset="1" stopColor="var(--rez-nebe-d)" />
             </linearGradient>
+            <radialGradient id="rezSlunce" cx="0.78" cy="0.16" r="0.34">
+              <stop offset="0" stopColor="rgba(255,236,190,.75)" />
+              <stop offset="1" stopColor="rgba(255,236,190,0)" />
+            </radialGradient>
           </defs>
+          <rect x="0" y="0" width={SIRKA} height={VYSKA} fill="url(#rezNebe)" />
+          <rect x="0" y="0" width={SIRKA} height={VYSKA} fill="url(#rezSlunce)" />
           <g className="rez-mrizka">
-            {[1600, 1400, 1200].map((v) => (
-              <line key={v} x1="0" y1={yProVysku(v)} x2="1000" y2={yProVysku(v)} />
+            {linky.map((v) => (
+              <line key={v} x1="0" y1={y(v)} x2={SIRKA} y2={y(v)} />
             ))}
           </g>
-          {cesta && <path className="rez-hreben" d={cesta} fill="url(#rezVypln)" />}
+          {kresby.map((k) => (
+            <path key={k.pas} className={`rez-vrstva rez-vrstva--${k.pas}`} d={k.d} />
+          ))}
         </svg>
 
-        {[1600, 1400, 1200].map((v) => (
-          <span key={v} className="rez-osa" style={{ top: `${(yProVysku(v) / 200) * 100}%` }}>
+        {linky.map((v) => (
+          <span key={v} className="rez-osa" style={{ top: `${(y(v) / VYSKA) * 100}%` }}>
             {v.toLocaleString('cs-CZ')} m
           </span>
         ))}
 
-        {popisky.map((v) => (
+        {popiskyVrcholu.map((v) => (
           <span
             key={v.nazev}
             className="rez-vrchol"
-            style={{ left: `${x(v.lng)}%`, top: `${(yProVysku(v.vyska) / 200) * 100}%` }}
+            style={{ left: `${x(v.lng)}%`, top: `${(y(v.vyska) / VYSKA) * 100}%` }}
           >
-            {v.nazev.toUpperCase()}
-            <br />
-            {v.vyska.toLocaleString('cs-CZ')}
+            {/* Název se nekrátí: hraniční vrcholy nesou v OSM obě jména
+                („Śnieżka / Sněžka") a průvodce vede místní názvy tak, jak jsou
+                — u polských schronisek to platí taky. */}
+            <b>{v.nazev}</b>
+            {v.vyska.toLocaleString('cs-CZ')} m
           </span>
         ))}
 
-        {body.map((ch) => (
+        {chaty.map((ch) => (
           <Link
             key={ch.slug}
             href={ch.url}
-            className="rez-bod"
-            style={{ left: `${x(ch.lng)}%`, top: `${(yProVysku(ch.vyska) / 200) * 100}%` }}
+            className={`rez-bod${staleSlugy.has(ch.slug) ? ' rez-bod--stale' : ''}`}
+            style={{ left: `${x(ch.lng)}%`, top: `${(y(ch.vyska) / VYSKA) * 100}%` }}
             aria-label={`${ch.nazev}, ${ch.vyska.toLocaleString('cs-CZ')} m — otevřít profil`}
           >
             <span className="rez-bod-popis">
               {ch.nazev} · {ch.vyska.toLocaleString('cs-CZ')} m
             </span>
-            <span className="rez-bod-stopka" aria-hidden="true" />
             <span className="rez-bod-tecka" aria-hidden="true" />
           </Link>
         ))}
+
+        <span className="rez-smer rez-smer--z">západ</span>
+        <span className="rez-smer rez-smer--v">východ</span>
       </div>
 
       <p className="rez-pozn">
-        <span aria-hidden="true">†</span> schematický řez západ → východ:{' '}
-        <b>svislá osa je nadmořská výška, vodorovná zeměpisná délka</b> — obojí z doložených
-        dat, ne z odhadu. Silueta hřebene vede přes nejvyšší pojmenované vrcholy, mezi nimi je
-        dokreslená; vykreslují se jen chaty, které mají doloženou výšku i polohu ({body.length}{' '}
-        z {chaty.length}).{zdrojVrcholu ? ` Vrcholy: ${zdrojVrcholu}` : ''}
+        <span aria-hidden="true">†</span> pohled na pohoří od jihu:{' '}
+        <b>vodorovně zeměpisná délka, svisle nadmořská výška</b> — obojí z dat, ne z odhadu.
+        Terén je <b>výškový model</b> (tři pásy: jižní podhůří, hřeben, severní strana), ne obrys
+        změřený v terénu. Vykresleno {chaty.length} chat s doloženou výškou i polohou; popisku
+        napevno má pět nejvyšších, ostatní se ukážou po najetí nebo tabulátorem.
+        {zdrojVyskopisu ? ` Výškopis: ${zdrojVyskopisu}.` : ''}
+        {zdrojVrcholu ? ` Vrcholy: ${zdrojVrcholu}.` : ''}
       </p>
     </div>
   )

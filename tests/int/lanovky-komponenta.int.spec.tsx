@@ -137,3 +137,40 @@ describe('výběr tří karet', () => {
     expect(screen.getByText(/Vybráno pravidlem, ne redakčním vkusem/)).toBeTruthy()
   })
 })
+
+/**
+ * Jízdenkové útržky (zadání Michala 29. 7.: „jízdenkové karty lanovek chci").
+ * Hlídá se, že útržky NEnahradily tabulku, ale doplnily ji: tabulka nese
+ * délku, převýšení a vzdálenost k chatě, které se do útržku nevejdou, a bez
+ * ní by přehled tiše zchudl.
+ */
+describe('jízdenkové útržky', () => {
+  it('nesou všechny dráhy, které nejsou v hlavních kartách', () => {
+    const { container } = render(<LanovkySeznam data={DATA} />)
+    const utrzku = container.querySelectorAll('.jzd').length
+    expect(utrzku).toBe(DATA.lanovky.length - 3)
+    expect(utrzku).toBeGreaterThan(0)
+  })
+
+  it('tabulka s úplnými údaji zůstává — jen složená', () => {
+    const { container } = render(<LanovkySeznam data={DATA} />)
+    const detail = container.querySelector('details.lanovky-tabulka')
+    expect(detail).toBeTruthy()
+    expect(detail!.querySelectorAll('.lanovky-tab tbody tr')).toHaveLength(DATA.lanovky.length)
+    expect(detail!.querySelector('summary')!.textContent).toContain(String(DATA.lanovky.length))
+  })
+
+  it('útržek říká druh dráhy a barví se podle něj, ne podle důležitosti', () => {
+    const { container } = render(<LanovkySeznam data={DATA} />)
+    const prvni = container.querySelector('.jzd')!
+    expect(prvni.className).toMatch(/jzd--(sedacka|kabina|kombi|jina)/)
+    expect(prvni.querySelector('.jzd-pill')!.textContent).toBeTruthy()
+  })
+
+  it('ani na útržku nejsou ceny a jízdní řády — a je to napsané', () => {
+    const { container } = render(<LanovkySeznam data={DATA} />)
+    const blok = container.querySelector('.lan-jizdenky')!
+    expect(blok.textContent).toMatch(/Jízdní řády ani ceny/)
+    expect(blok.textContent).not.toMatch(/\bKč\b/)
+  })
+})

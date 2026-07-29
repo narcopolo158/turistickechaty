@@ -283,7 +283,10 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
           <RezHrebenem
             chaty={bodyRezu}
             vrcholy={vrcholy?.vrcholy ?? []}
+            vrstvy={vrcholy?.vrstvy}
+            bbox={vrcholy?.bbox}
             zdrojVrcholu={vrcholy?.zdroj}
+            zdrojVyskopisu={vrcholy?.zdrojVyskopisu}
           />
         </section>
       )}

@@ -662,40 +662,78 @@ body.dark .fvlep-rukopis { color: #e7ecf1; }
   .fvlep-ram, .fvlep-ram:hover { transform: none; transition: none; }
 }
 
-/* ── Řez hřebenem (handoff F1 v2, sekce mezi 01 a 02) ─────────────────────
-   Výškový profil oblasti. Svislá osa je výška, vodorovná zeměpisná délka —
-   proto se SVG kreslí s `preserveAspectRatio="none"` (natahuje se do šířky),
-   ale body chat leží v procentech nad ním, aby zůstaly kulaté. */
-.rez { background: var(--paper); border: 1px solid var(--line); border-radius: 13px; padding: 18px 20px 14px; box-shadow: 0 10px 24px -16px rgba(20, 18, 26, 0.4); }
-body.dark .rez { background: #1b242e; border-color: #2a3541; }
-.rez-plocha { position: relative; height: clamp(180px, 22vw, 240px); }
+/* ── Řez hřebenem: panorama pohoří (handoff F1 v2, druhá verze) ──────────
+   Není to graf, ale pohled na hory od jihu: obloha, tři vrstvy terénu
+   z výškového modelu (vzdálenější bledší) a body chat nad nimi. SVG se
+   natahuje do šířky (`preserveAspectRatio="none"`), proto v něm nejsou
+   žádné kulaté tvary — tečky chat leží až nad ním v procentech. */
+.rez {
+  --rez-nebe-h: #eaf1f6;
+  --rez-nebe-d: #fdfaf2;
+  --rez-sever: #c3d0da;
+  --rez-hreben: #9db2c3;
+  --rez-jih: #7f97a9;
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 24px -16px rgba(20, 18, 26, 0.4);
+}
+body.dark .rez {
+  --rez-nebe-h: #16202a;
+  --rez-nebe-d: #1b242e;
+  --rez-sever: #2c3a47;
+  --rez-hreben: #3a4b5a;
+  --rez-jih: #4a5d6d;
+  background: #1b242e;
+  border-color: #2a3541;
+}
+.rez-plocha { position: relative; height: clamp(240px, 27vw, 330px); }
 .rez-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.rez-mrizka line { stroke: var(--hair); stroke-width: 1; vector-effect: non-scaling-stroke; }
-body.dark .rez-mrizka line { stroke: rgba(255, 255, 255, 0.13); }
-.rez-hreben { stroke: #9db2c3; stroke-width: 1.4; vector-effect: non-scaling-stroke; }
-body.dark .rez-hreben { stroke: #6d8194; }
-.rez-osa { position: absolute; left: 2px; transform: translateY(-100%); font: 600 8px/1 'Space Grotesk', sans-serif; color: var(--label); }
-.rez-vrchol { position: absolute; transform: translate(-50%, -100%); margin-top: -6px; font: 600 8.5px/1.15 'Space Grotesk', sans-serif; color: var(--alpine); text-align: center; white-space: nowrap; pointer-events: none; }
+.rez-mrizka line { stroke: rgba(56, 64, 87, 0.16); stroke-width: 1; stroke-dasharray: 3 5; vector-effect: non-scaling-stroke; }
+body.dark .rez-mrizka line { stroke: rgba(255, 255, 255, 0.12); }
+.rez-vrstva--sever { fill: var(--rez-sever); }
+.rez-vrstva--hreben { fill: var(--rez-hreben); }
+.rez-vrstva--jih { fill: var(--rez-jih); }
+.rez-osa { position: absolute; left: 8px; transform: translateY(-100%); font: 600 8.5px/1 'Space Grotesk', sans-serif; letter-spacing: 0.04em; color: var(--label); }
 
-/* Bod chaty je ODKAZ, ne div s onClick: klávesnice ho projde tabem a čtečka
-   přečte název i výšku (aria-label). Popisek se ukáže na hover i na focus. */
-/* Kotva je bod na křivce, ale kliknout se musí dát pohodlně: odkaz má proto
-   plochu 22 px a zápornými okraji se vystředí přesně na ten bod. Nulová
-   plocha by byla past — myší i prstem by se trefoval jen samotný 8px puntík. */
+/* Popiska vrcholu stojí NAD hřebenem — proto se posouvá celá nahoru. */
+.rez-vrchol { position: absolute; transform: translate(-50%, -100%); margin-top: -8px; display: flex; flex-direction: column; align-items: center; font: 600 8.5px/1.25 'Space Grotesk', sans-serif; color: rgba(56, 64, 87, 0.75); text-align: center; white-space: nowrap; pointer-events: none; letter-spacing: 0.04em; text-transform: uppercase; }
+.rez-vrchol b { font-size: 9.5px; color: var(--ink); }
+body.dark .rez-vrchol { color: rgba(231, 236, 241, 0.7); }
+body.dark .rez-vrchol b { color: #e7ecf1; }
+
+/* Bod chaty je ODKAZ (klávesnice + čtečka). Plocha 22 px, aby se dal trefit
+   prstem; tečka je uprostřed. Pět nejvyšších má popisku napevno, ostatní
+   se ukážou po najetí — 55 popisek naráz je nečitelná kaše. */
 .rez-bod { position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px; }
-.rez-bod-tecka { position: absolute; left: 50%; top: 50%; width: 8px; height: 8px; margin: -4px 0 0 -4px; border-radius: 50%; background: var(--red); border: 1.5px solid var(--paper); box-shadow: 0 1px 4px rgba(20, 18, 26, 0.35); transition: transform 0.15s; }
+.rez-bod-tecka { position: absolute; left: 50%; top: 50%; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%; background: var(--red); border: 2px solid #fff; box-shadow: 0 2px 5px rgba(20, 18, 26, 0.45); transition: transform 0.16s; }
 body.dark .rez-bod-tecka { border-color: #1b242e; }
-.rez-bod-stopka { position: absolute; left: 50%; top: 50%; margin-left: -0.5px; width: 1px; height: 15px; background: var(--ghost); }
-.rez-bod-popis { position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%); white-space: nowrap; padding: 5px 9px; border-radius: 8px; background: var(--ink); color: #fff; font: 600 10.5px/1.3 'Space Grotesk', sans-serif; opacity: 0; visibility: hidden; transition: opacity 0.15s; z-index: 3; }
-.rez-bod:hover .rez-bod-popis, .rez-bod:focus-visible .rez-bod-popis { opacity: 1; visibility: visible; }
-.rez-bod:hover .rez-bod-tecka, .rez-bod:focus-visible .rez-bod-tecka { transform: scale(1.5); }
+.rez-bod-popis { position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); white-space: nowrap; padding: 4px 8px; border-radius: 7px; background: rgba(255, 253, 247, 0.95); color: var(--ink); font: 600 9.5px/1.3 'Space Grotesk', sans-serif; box-shadow: 0 6px 16px -10px rgba(20, 18, 26, 0.8); opacity: 0; visibility: hidden; transition: opacity 0.15s; z-index: 3; }
+body.dark .rez-bod-popis { background: rgba(27, 36, 46, 0.95); color: #e7ecf1; }
+.rez-bod--stale .rez-bod-popis { opacity: 1; visibility: visible; }
+.rez-bod:hover .rez-bod-popis, .rez-bod:focus-visible .rez-bod-popis { opacity: 1; visibility: visible; z-index: 4; }
+.rez-bod:hover .rez-bod-tecka, .rez-bod:focus-visible .rez-bod-tecka { transform: scale(1.55); }
 .rez-bod:focus-visible { outline: none; }
 .rez-bod:focus-visible .rez-bod-tecka { outline: 2px solid var(--red); outline-offset: 3px; }
-.rez-pozn { margin: 12px 0 0; font: italic 400 10.5px/1.55 var(--font-emph, Georgia, serif); color: var(--muted); max-width: 96ch; }
+
+.rez-smer { position: absolute; bottom: 8px; font: 600 8.5px/1 'Space Grotesk', sans-serif; letter-spacing: 0.16em; text-transform: uppercase; color: var(--label); }
+.rez-smer--z { left: 10px; }
+.rez-smer--v { right: 10px; }
+
+.rez-pozn { margin: 0; padding: 11px 16px 13px; border-top: 1px solid var(--line); font: italic 400 10.5px/1.6 var(--font-emph, Georgia, serif); color: var(--muted); }
+body.dark .rez-pozn { border-color: #2a3541; color: #a9b6c2; }
 .rez-pozn b { font-style: normal; }
 
 @media (prefers-reduced-motion: reduce) {
   .rez-bod-tecka, .rez-bod-popis { transition: none; }
+}
+@media (max-width: 760px) {
+  /* Na úzkém displeji by se popisky napevno překryly — zůstane hover/focus. */
+  .rez-bod--stale .rez-bod-popis { opacity: 0; visibility: hidden; }
+  .rez-vrchol { font-size: 7.5px; }
 }
 
 /* ── Lišta „na stránce" (handoff F1 v2) ───────────────────────────────────
@@ -735,3 +773,42 @@ body.dark .strk-hreben { fill: rgba(157, 178, 195, 0.28); }
 .strk-cislo b.strk-cislo--prazdno { color: var(--label); }
 .strk-cislo span { font: 500 11.5px/1.35 Inter, sans-serif; color: var(--muted); }
 body.dark .strk-cislo b { color: #e7ecf1; }
+
+/* ── Jízdenkové karty lanovek (handoff F1 v2) ─────────────────────────────
+   Útržek jízdenky: barevný pás s vozem na laně, perforace s punčem
+   a tělo s údaji. Barva pásu říká druh dráhy, ne důležitost. */
+.lan-jizdenky { margin: 18px 0 6px; }
+.lan-jizdenky-nadpis { margin: 0 0 10px; font: 600 11px/1 'Space Grotesk', sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: var(--label); }
+.lan-jizdenky-mrizka { display: grid; grid-template-columns: repeat(auto-fill, minmax(216px, 1fr)); gap: 10px; }
+
+.jzd { --jzd: var(--red); position: relative; display: grid; grid-template-columns: 34px 1fr; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; box-shadow: 0 8px 20px -16px rgba(20, 18, 26, 0.55); }
+.jzd--sedacka { --jzd: #2a5cb8; }
+.jzd--kabina { --jzd: var(--red); }
+.jzd--kombi { --jzd: #c98a2e; }
+body.dark .jzd { background: #1b242e; border-color: #2a3541; }
+
+.jzd-pas { background: color-mix(in srgb, var(--jzd) 12%, transparent); border-right: 1px dashed color-mix(in srgb, var(--jzd) 45%, transparent); }
+.jzd-pas svg { display: block; width: 100%; height: auto; }
+.jzd-lano { stroke: color-mix(in srgb, var(--jzd) 55%, transparent); stroke-width: 1.2; fill: none; }
+.jzd-tah { stroke: color-mix(in srgb, var(--jzd) 72%, transparent); stroke-width: 1.4; fill: none; stroke-linecap: round; }
+.jzd-telo { fill: var(--jzd); }
+.jzd-okno { fill: rgba(255, 255, 255, 0.85); }
+/* Punc: půlkruhový výsek na perforaci, jako když průvodčí cvakne jízdenku. */
+.jzd-punc { position: absolute; left: 34px; top: 50%; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; border-radius: 50%; background: var(--cream); box-shadow: inset 0 0 0 1px var(--line); }
+body.dark .jzd-punc { background: #141c24; box-shadow: inset 0 0 0 1px #2a3541; }
+
+.jzd-telo-karty { padding: 11px 13px 12px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.jzd-telo-karty b { font: 500 14px/1.25 var(--font-emph, Georgia, serif); color: var(--ink); }
+body.dark .jzd-telo-karty b { color: #e7ecf1; }
+.jzd-trasa { font: 600 11px/1.3 'Space Grotesk', sans-serif; color: var(--muted); }
+.jzd-chaty { font: 400 11px/1.4 Inter, sans-serif; color: var(--muted); }
+.jzd-chaty a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--jzd); }
+.jzd-chaty a:hover { color: var(--jzd); }
+body.dark .jzd-chaty a { color: #e7ecf1; }
+.jzd-pill { align-self: flex-start; margin-top: 4px; padding: 2px 8px; border-radius: 999px; background: color-mix(in srgb, var(--jzd) 14%, transparent); color: color-mix(in srgb, var(--jzd) 82%, var(--ink)); font: 600 9.5px/1.5 'Space Grotesk', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }
+
+/* Tabulka zůstává, jen složená — nese údaje, které se do útržku nevejdou. */
+.lanovky-tabulka { margin-top: 14px; }
+.lanovky-tabulka summary { cursor: pointer; font: 600 11.5px/1.4 'Space Grotesk', sans-serif; color: var(--ink); padding: 8px 0; }
+.lanovky-tabulka summary:hover { color: var(--red); }
+body.dark .lanovky-tabulka summary { color: #e7ecf1; }

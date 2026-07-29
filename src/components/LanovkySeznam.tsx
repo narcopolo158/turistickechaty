@@ -72,9 +72,20 @@ export const vyberKarty = (lanovky: Lanovka[], kolik = 3): Lanovka[] => {
 
 const AKCENTY = ['cerv', 'jantar', 'alpska'] as const
 
+/** Barva útržku podle druhu dráhy — kabinky červeně, sedačky modře. */
+const TRIDA_TYPU: Record<string, string> = {
+  gondola: 'kabina',
+  chair_lift: 'sedacka',
+  mixed_lift: 'kombi',
+}
+
 export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
   if (!data || !data.lanovky.length) return null
   const karty = vyberKarty(data.lanovky)
+  const vKartach = new Set(karty.map((l) => l.id))
+  // Útržky nesou zbytek — nejdřív ty, které vyvezou k chatě, pak podle délky
+  // (totéž pořadí, v jakém dráhy chodí z pipeline).
+  const jizdenky = data.lanovky.filter((l) => !vKartach.has(l.id))
 
   return (
     <div className="lanovky">
@@ -125,6 +136,75 @@ export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
         </div>
       )}
 
+      {/* Jízdenkové karty (handoff F1 v2, zadání Michala 29. 7.: „jízdenkové
+          karty lanovek chci"). Nesou dráhy, které nejsou v kartách výše —
+          každá jako útržek jízdenky s perforací a punčem. Údaje jsou tytéž
+          jako v tabulce, jen v čitelnějším tvaru; tabulka zůstává pod nimi
+          rozbalovací, protože nese navíc délku, převýšení a vzdálenost
+          k chatě, a ty by karty jen zahltily. */}
+      {jizdenky.length > 0 && (
+        <div className="lan-jizdenky">
+          <h3 className="lan-jizdenky-nadpis">Další lanovky v oblasti</h3>
+          <div className="lan-jizdenky-mrizka">
+            {jizdenky.map((l) => (
+              <article key={l.id} className={`jzd jzd--${TRIDA_TYPU[l.typ] ?? 'jina'}`}>
+                <div className="jzd-pas" aria-hidden="true">
+                  {/* Kresba se NEnatahuje (`meet`): natažená sedačka vypadala
+                      jako kbelík. Vůz visí u horní hrany, zbytek pásu je volný
+                      jako na útržku jízdenky. */}
+                  <svg viewBox="0 0 34 46" preserveAspectRatio="xMidYMin meet">
+                    <path className="jzd-lano" d="M0,9 L34,5" />
+                    <g className="jzd-vuz">
+                      {l.typ === 'chair_lift' ? (
+                        <>
+                          <path className="jzd-tah" d="M17,7 L17,20 M13,20 L25,20" />
+                          <path className="jzd-tah" d="M25,20 L25,11 M15,20 L14,27 M23,20 L22,27" />
+                          <path className="jzd-telo" d="M13,20 L25,20 L25,24 L15,24 Z" />
+                        </>
+                      ) : (
+                        <>
+                          <path className="jzd-tah" d="M17,6 L17,15" />
+                          <rect className="jzd-telo" x="9" y="15" width="16" height="14" rx="4" />
+                          <rect className="jzd-okno" x="12" y="18" width="10" height="5" rx="1.5" />
+                        </>
+                      )}
+                    </g>
+                  </svg>
+                </div>
+                <span className="jzd-punc" aria-hidden="true" />
+                <div className="jzd-telo-karty">
+                  <b>{l.nazev ?? 'bez názvu v mapových datech'}</b>
+                  {l.dolni.vyska != null && l.horni.vyska != null && (
+                    <span className="jzd-trasa">
+                      {format(l.dolni.vyska)} → {format(l.horni.vyska)} m
+                    </span>
+                  )}
+                  {l.uHorniStanice.length > 0 && (
+                    <span className="jzd-chaty">
+                      nahoře:{' '}
+                      {l.uHorniStanice.slice(0, 2).map((ch, i) => (
+                        <span key={ch.slug}>
+                          {i > 0 && ', '}
+                          <Link href={`/cesko/${data.oblast}/${ch.slug}`}>{ch.nazev}</Link>
+                        </span>
+                      ))}
+                      {l.uHorniStanice.length > 2 && ` +${l.uHorniStanice.length - 2}`}
+                    </span>
+                  )}
+                  <span className="jzd-pill">{l.typNazev}</span>
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="lan-pravidlo">
+            Jízdní řády ani ceny na kartách nejsou schválně — mění se každou sezónu a doložené je
+            nemáme. Kompletní údaje (délka, převýšení, vzdálenost k chatě) drží tabulka níž.
+          </p>
+        </div>
+      )}
+
+      <details className="lanovky-tabulka">
+        <summary>Celý přehled tabulkou — {data.lanovky.length} drah s délkou a převýšením</summary>
       <table className="lanovky-tab">
         <thead>
           <tr>
@@ -168,6 +248,7 @@ export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
           ))}
         </tbody>
       </table>
+      </details>
 
       <p className="lanovky-pozn">
         Přehled vede jen dráhy, které vyvezou pěšího — kabinkové, kombinované a sedačkové.{' '}

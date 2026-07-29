@@ -580,11 +580,50 @@ důvodu jako minule — pod posterem běží skutečný model.
 397 testů (+15), kontrola, lint i tsc čisté; ověřeno rendrem včetně hoveru
 bodů řezu, skoku na kotvu a nočního režimu.
 
-**Otázky k dodatku:** 18. **Jízdenkové karty lanovek** — chceš je jako
-DOPLNĚK pod tabulku (tabulka zůstane), nebo tabulka stačí? 19. **Zimní fotka**
-do sezónního hera — máš nějakou, nebo ji hledat na Unsplash jako ty ostatní?
-20. **Podmínky na hřebeni** — trvám na tom, že prázdný pás neslibovat; kdybys
-chtěl opak, řekni a doplním ho v podobě z návrhu.
+~~**Otázky k dodatku:** 18. **Jízdenkové karty lanovek**~~ — **zodpovězeno
+týž den („jízdenkové karty lanovek chci"), viz dodatek 11.** 19. **Zimní
+fotka** do sezónního hera — máš nějakou, nebo ji hledat na Unsplash jako ty
+ostatní? 20. **Podmínky na hřebeni** — trvám na tom, že prázdný pás
+neslibovat; kdybys chtěl opak, řekni a doplním ho v podobě z návrhu.
+
+**Dodatek 11 (týž den, Michal: „řez hřebenem udělej lépe, výsledek není wow
+ani dobrý, jízdenkové karty lanovek chci"): řez je nově panorama z výškopisu
+a lanovky mají útržky jízdenek.**
+
+**(1) Řez hřebenem, druhá verze — a Michal měl pravdu.** První pokus byl graf
+s puntíky: lomená spojnice vrcholů (vypadala jako kardiogram, protože jím
+taky byla) a mračno 55 stejných teček. Co se změnilo:
+*Silueta je teď skutečný terén.* Kreslí se z **téhož výškového modelu, ze
+kterého žije 3D mapa** (Mapy.com Elevation, mřížka 240×144) — pro každý
+sloupec se vezme nejvyšší terén ve třech zeměpisných pásech: jižní podhůří,
+hřeben, severní strana. Bližší hřbety překrývají vzdálenější a vznikne
+hloubka; křivka je hladká (Catmull-Rom), ne lomená.
+*Tečky přestaly být mračnem.* Pět nejvyšších chat má popisku napevno (vybírá
+se s vodorovným odstupem, aby se nepřekryly), ostatní se ukážou po najetí nebo
+tabulátorem. Každá je pořád odkaz na profil s výškou v `aria-label`.
+*Přibyla obloha, sluneční opar, výškové linky a orientace západ → východ.*
+V nočním režimu se celé panorama převléká do „noci na horách".
+Měřítko se **odvozuje z dat**, ne z konstant pro Krkonoše: v Jizerkách
+(nejvyšší terén 1 127 m) se řez neroztáhne pod prázdnou oblohu.
+Data pro to leží v `data/vrcholy/<oblast>.json` vedle vrcholů — týž skript
+`vrcholy-z-3d.ts` je vytáhne z 3D exportu (Krkonoše i Jizerky).
+**Poctivost se nezměnila**: terén je MODEL, ne obrys změřený v terénu, a je
+to napsané pod řezem.
+
+**(2) Jízdenkové útržky lanovek.** Návrh je chtěl místo tabulky, Michal je
+chce taky — postavené jsou tedy jako **útržek jízdenky**: barevný pás
+s vozem na laně (sedačka × kabina, barva podle druhu dráhy), perforovaná
+linka s **punčem** a tělo s názvem, trasou (dolní → horní stanice) a chatami
+nahoře. Útržků je 38, tedy všechny dráhy kromě tří v hlavních kartách.
+**Tabulka nezmizela, jen se složila** do rozbalovacího „celý přehled" —
+nese délku, převýšení a vzdálenost k chatě, které se do útržku nevejdou, a bez
+ní by přehled tiše zchudl. Ceny a jízdní řády nejsou ani na útržcích a je to
+u nich napsané.
+Drobnost, kterou řekl až render: kresba se **nesmí natahovat** do výšky pásu
+(`preserveAspectRatio="none"`) — natažená sedačka vypadala jako kbelík.
+
+406 testů (+9), kontrola, lint i tsc čisté; ověřeno rendrem v denním i nočním
+režimu.
 
 ---
 

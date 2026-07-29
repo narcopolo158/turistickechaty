@@ -10,11 +10,17 @@ import { join } from 'node:path'
  */
 export type Vrchol = { nazev: string; lat: number; lng: number; vyska: number }
 
+/** Vrstva panoramatu: nejvyšší terén ve sloupci mřížky pro jeden zeměpisný pás. */
+export type Vrstva = { pas: 'jih' | 'hreben' | 'sever'; vysky: number[] }
+
 export type VrcholyOblasti = {
   zdroj: string
+  zdrojVyskopisu?: string
   pozn: string
   oblast: string
   pocet: number
+  bbox?: { latMin: number; lngMin: number; latMax: number; lngMax: number }
+  vrstvy?: Vrstva[]
   vrcholy: Vrchol[]
 }
 
