@@ -45,12 +45,20 @@ export const OBLASTI: OblastKonfig[] = [
     // polská Góry Izerskie po Świeradów-Zdrój a Szklarską Porębę.
     // Na východě se okno vědomě mírně překrývá s krkonošským (Jizerka /
     // Harrachov) — duplicity řeší kandidátní triáž, ne ořez okna.
-    bbox: { latMin: 50.75, lngMin: 15.05, latMax: 51.02, lngMax: 15.45 },
-    // Jižní hranu 3D okna drží stejně nízko jako okno dotazu (50.75): první
-    // běh DATA-01 (28. 7. 2026) našel na jihozápadním úbočí nad Lučany
+    // Jižní hrana 50.73 (dřív 50.75): první běh rozhleden nad Krkonošemi
+    // (29. 7. 2026) vyplavil dva jizerskohorské objekty, které krkonošské
+    // okno chytilo a jizerské minulo o pár set metrů — rozhledna Štěpánka
+    // (50.7465) a Maják Járy Cimrmana v Příchovicích (50.7399). Přehledy
+    // Libereckého kraje i Kudy z nudy je vedou v Jizerských horách, hrana
+    // byla tedy vedená příliš vysoko; objekty cizí nejsou.
+    bbox: { latMin: 50.73, lngMin: 15.05, latMax: 51.02, lngMax: 15.45 },
+    // Jižní hranu 3D okna drží stejně nízko jako okno dotazu: první běh
+    // DATA-01 (28. 7. 2026) našel na jihozápadním úbočí nad Lučany
     // a Bedřichovem tři chaty z deseti (Barbora, Koryna, Lučanka) a užší okno
-    // 50.78 by je z modelu tiše vyřízlo. Terén tam pořád stoupá, není to město.
-    bbox3d: { latMin: 50.75, lngMin: 15.1, latMax: 50.98, lngMax: 15.42 },
+    // 50.78 by je z modelu tiše vyřízlo. Terén tam pořád stoupá, není to
+    // město. Rozšíření na 50.73 (29. 7. 2026) drží stejné pravidlo pro
+    // Štěpánku a Maják — jinak by je model vynechal, i když je vedeme.
+    bbox3d: { latMin: 50.73, lngMin: 15.1, latMax: 50.98, lngMax: 15.42 },
     poznamka: 'druhá oblast (rozhodnutí Michala 28. 7. 2026) — přeshraniční s Górami Izerskimi',
   },
 ]

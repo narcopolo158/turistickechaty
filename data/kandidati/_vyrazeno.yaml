@@ -104,3 +104,24 @@ vyrazeno:
       dál je, takže bez tohohle zápisu by ho okno chytalo znovu.
     rozhodl: Claude (návrh z 28. 7. 2026, práh výšky) — k potvrzení Michalem
     checked: 2026-07-28
+  - osm: https://www.openstreetmap.org/way/1056085802
+    slug: stepanka
+    duvod: >-
+      Mimo Krkonoše — rozhledna Štěpánka patří do Jizerských hor, obec
+      Kořenov (přehledy Libereckého kraje i Kudy z nudy ji vedou jako
+      „nejstarší rozhlednu Jizerských hor"; titulky vyhledávání,
+      checked 2026-07-29). Do krkonošského okna spadla přesahem bboxu.
+      Přesunuta do data/kandidati/jizerske-hory/; jižní hrana jizerského
+      okna zároveň rozšířena (leží na 50,7465, stará hrana byla 50,75).
+    rozhodl: Claude (návrh z 29. 7. 2026) — k potvrzení Michalem
+    checked: 2026-07-29
+  - osm: https://www.openstreetmap.org/way/303365344
+    slug: rozhledna-majak-j-cimrmanna
+    duvod: >-
+      Mimo Krkonoše — Maják Járy Cimrmana stojí v Příchovicích u Kořenova
+      a přehledy (Liberecký kraj, Regiontourist, treking.cz) ho vedou
+      v Jizerských horách (titulky vyhledávání, checked 2026-07-29).
+      Přesunut do data/kandidati/jizerske-hory/; táž past s jižní hranou
+      jizerského okna jako u Štěpánky (leží na 50,7399).
+    rozhodl: Claude (návrh z 29. 7. 2026) — k potvrzení Michalem
+    checked: 2026-07-29

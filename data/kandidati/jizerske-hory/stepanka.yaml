@@ -7,7 +7,7 @@
 nazev: Štěpánka
 slug: stepanka
 zeme: cz
-oblast: krkonose
+oblast: jizerske-hory
 typ: rozhledna
 lat: 50.7464976
 lng: 15.3659075
@@ -25,3 +25,15 @@ interniPoznamky: >-
 
   Doklad občerstvení (OSM, 100 m okolí): Kiosek — amenity=fast_food, 21 m,
   https://www.openstreetmap.org/node/13970692693
+
+  TRIÁŽ 29. 7. 2026 (session po běhu DATA-01 s rozhlednami): objekt vypadl
+  z KRKONOŠSKÉHO okna dotazu, ale patří do JIZERSKÝCH HOR — přehledy
+  Libereckého kraje i Kudy z nudy ji vedou jako „nejstarší rozhlednu
+  Jizerských hor", obec Kořenov (titulky vyhledávání, checked 2026-07-29;
+  obsah stránek neotevřen). Soubor proto přesunut do
+  data/kandidati/jizerske-hory/ a objekt zapsán do _vyrazeno.yaml pro
+  Krkonoše. POZOR na past, kvůli které tu vůbec byl: jizerskohorské okno
+  dotazu má jižní hranu 50,75 a Štěpánka leží na 50,7465 — o 400 metrů
+  jižněji, takže by ji jizerský běh NENAŠEL. Hrana proto rozšířena
+  (scripts/oblasti.ts) a při dalším běhu DATA-01 pro Jizerky se objekt
+  potvrdí z vlastního dotazu.

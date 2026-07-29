@@ -1,0 +1,304 @@
+# Žalý — profil povýšen z kandidáta DATA-01 (OSM) 29. 7. 2026 na pokyn Michala
+# („zaly rovnou povysit a zaradit"), z nálezu DATA-23: rozšířený klíč
+# („rozhoduje občerstvení, ne typ stavby") tenhle objekt pouští dovnitř.
+# PRVNÍ PROFIL S TYPEM `rozhledna` — rozhledna s restaurací u paty věže,
+# obojí pod jedním provozem (telefon +420 732 801 804 shodně u restaurace
+# v OSM i u rozhledny na Kudy z nudy, e-maily rozhledna@ a restaurace@zaly.cz).
+# POZOR: web zaly.cz se ze sandboxu nenačte (robots.txt ConnectTimeout,
+# potvrzeno 20. 7. i 29. 7. 2026) — fakta jsou ze sekundárních pramenů.
+# Vše verified:false — redakce zatím neověřila vlastním dotazem ani návštěvou.
+
+nazev: Žalý
+slug: zaly
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+aliasy:
+  - nazev: Horská bouda a rozhledna Žalý
+    poznamka: >-
+      titulek vlastního webu zaly.cz ve výsledcích vyhledávání (obsah stránky
+      se ze sandboxu načíst nedal)
+  - nazev: Chata Žalý
+    poznamka: tvar dle popisu snímku na Wikimedia Commons („Benecko 95, Chata Žalý")
+  - nazev: Rozhledna Přední Žalý
+    poznamka: tvar dle turistických přehledů podle jména vrcholu
+oblast: krkonose
+zajimavosti:
+  - text: >-
+      Kamennou rozhlednu dal na vrcholu postavit hrabě Jan Harrach a slavnostně
+      se otevřela 7. září 1892
+    kategorie: stari
+    zdroj: >-
+      web města Vrchlabí (anglická verze stránky o rozhledně, načteno
+      2026-07-29) a Kudy z nudy — sekundární zdroje, verified:false
+  - text: >-
+      Dřevěná vyhlídková stavba stála na Předním Žalém už od roku 1836,
+      tedy více než půl století před dnešní kamennou věží
+    kategorie: stari
+    zdroj: >-
+      ceskehory.cz, stránka Přední Žalý (načteno 2026-07-29) — jediný pramen
+      tohoto letopočtu, verified:false
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.6581408
+lng: 15.5720933
+vyska: 1019
+obec: Benecko
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/151987319 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); jde
+    o budovu restaurace u paty věže. Výška 1019 m je nadmořská výška vrcholu
+    Přední Žalý shodně dle ceskehory.cz a webu města Vrchlabí (obojí načteno
+    2026-07-29), NE výška samotné budovy — ta doložená není. ROZPOR v okolí:
+    popisy snímků na Wikimedia Commons uvádějí u Předního Žalého i 1018 m
+    a hovoří o dvojvrcholové hoře (1012 a 1036 m); publikujeme hodnotu ze
+    dvou nejsilnějších pramenů a rozdíl přiznáváme v próze. Obec Benecko
+    z adresy „Žalý, čp. 95, 514 01 Benecko" dle Kudy z nudy — poštovní
+    pramen, katastrální příslušnost tím doložena není (výhrada DATA-20).
+    Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-29'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    OpenStreetMap vede objekt jako `amenity=restaurant` s celoroční otvírací
+    dobou, telefonem +420 732 801 804 a e-mailem restauracezaly@gmail.com
+    (way/151987319, stav dat 2026-06-12) — právě tenhle doklad otevřel
+    objektu cestu do průvodce (DATA-23). Web města Vrchlabí (načteno
+    2026-07-29) mluví o dřevěné výletní restauraci, kterou u věže roku 2009
+    znovu postavili podle projektu architekta Klosa; Kudy z nudy zmiňuje
+    „atmosféru hor, dřeva a kachlových kamen". Kuchyni, sortiment ani větu
+    o obsluze kolemjdoucích bez rezervace žádný z dostupných pramenů
+    neuvádí — nedomýšlíme je. Verified:false
+  verified: false
+  checked: '2026-07-29'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: >-
+  Rozhledna dle Kudy z nudy (2026): duben so–ne 10:00–16:30; květen–červen
+  út–ne 10:00–17:00; červenec–srpen denně 10:00–17:30; září út–ne
+  10:00–17:00; říjen–prosinec so–ne 10:00–16:00; vstup do věže je
+  placený. Restaurace má v mapových podkladech vlastní, o něco širší
+  rozpis (mj. 25. 12.–31. 1. denně 10:00–16:00 a únor–březen denně
+  10:00–16:30). Před cestou ověřit — údaj je z pramenů, ne od
+  provozovatele.
+kontakty:
+  telefon: +420 481 010 208
+  email: rozhledna@zaly.cz
+  web: http://www.zaly.cz/
+  facebook: https://www.facebook.com/rozhledna.zaly/
+overeniProvoz:
+  source: >-
+    Kontakty a otvírací doba dle Kudy z nudy (načteno 2026-07-29): telefony
+    +420 481 010 208 a +420 732 801 804, e-mail rozhledna@zaly.cz, adresa
+    „Žalý, čp. 95, 514 01 Benecko", vstupné 60/30 Kč. Druhý telefon je
+    shodný s telefonem restaurace v OpenStreetMap — křížová opora, že věž
+    i restauraci drží jeden provoz; facebookový profil rozhledna.zaly nese
+    OSM v tagu `contact:facebook`. Web zaly.cz se ze sandboxu nenačetl
+    (robots.txt ConnectTimeout 20. 7. i 29. 7. 2026), obsah vlastního webu
+    tedy citovaný není. `stav: v-provozu` stojí na aktuálním rozpisu
+    otvírací doby u Kudy z nudy a na otvírací době v OSM, ne na vyjádření
+    provozovatele. Sekundární zdroje + OSM, verified:false
+  verified: false
+  checked: '2026-07-29'
+
+# ── Doprava ───────────────────────────────────────────────────────────────
+lanovka: >-
+  Sedačková lanovka z Herlíkovic (dle webu města Vrchlabí a ceskehory.cz;
+  provozní dobu ani ceny prameny neuvádějí)
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku 1892 = rok dnešní kamenné rozhledny (dva prameny shodně).
+# Rok vzniku BUDOVY restaurace je sporný, viz overeniHistorie — proto se
+# do pole nedostal ani jeden z letopočtů 1890/1904/2009/2013.
+rokVzniku: 1892
+milniky:
+  - rok: 1836
+    udalost: >-
+      Na Předním Žalém stála dřevěná vyhlídková stavba (dle ceskehory.cz)
+  - rok: 1892
+    udalost: >-
+      Hrabě Jan Harrach dal postavit dnešní kamennou věž, slavnostně otevřena
+      7. září 1892
+  - rok: 2009
+    udalost: >-
+      U věže byla znovu postavena dřevěná restaurace podle projektu
+      architekta Klosa (dle webu města Vrchlabí)
+overeniHistorie:
+  source: >-
+    Rok 1892 a hrabě Jan Harrach shodně web města Vrchlabí (anglická verze,
+    načteno 2026-07-29: „Today's stone tower was built by Count Jan Harrach
+    in 1892", „inaugurated on 7 September 1892") a Kudy z nudy („postavena
+    v roce 1892 hrabětem Harrachem"). Dřevěná vyhlídka od roku 1836, výška
+    dnešní věže 18 m a předchozí kovová věž 15 m dle ceskehory.cz; výšku
+    18 m nezávisle potvrzuje i OpenStreetMap u samostatné entity věže
+    (way/415701652 → viz kandidát rozhledna-zaly, běh DATA-01 z 29. 7.
+    2026) — vzácná dvojshoda. ROZPOR O RESTAURACI, který nemáme rozřešený: ceskehory.cz uvádí
+    dřevěnou restauraci s verandou z roku 1890, která zanikla roku 1943;
+    popis dobového snímku na Wikimedia Commons (File:Žalý 1921.jpg) mluví
+    o dřevěné chatě postavené roku 1904, obnovené po první světové válce
+    a rozebrané roku 1939; web města Vrchlabí klade obnovu restaurace do
+    roku 2009, kdežto OpenStreetMap vede u dnešní budovy `start_date`
+    2013-01-09 z registru RÚIAN. Do milníků je proto vzato jen to, co má
+    dva prameny nebo je jednoznačné, a rozpor je přiznaný ve veřejném textu.
+    Sekundární zdroje, verified:false
+  verified: false
+  checked: '2026-07-29'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná rozhledna na vrcholu Přední Žalý mezi Beneckem a Vrchlabím a dřevěná
+  restaurace u její paty — v průvodci je vedeme jako jeden objekt, protože je
+  drží jeden provoz. Věž dal postavit hrabě Jan Harrach a otevřela se 7. září
+  1892; dřevěná vyhlídka tu přitom stála už od roku 1836. Nahoru vede červená
+  značka z Benecka, v sezóně i sedačková lanovka z Herlíkovic.
+text:
+  - >-
+    Přední Žalý je zalesněný vrchol Žalského hřbetu mezi Beneckem a Vrchlabím
+    a podle serveru ceskehory.cz i webu města Vrchlabí měří 1019 metrů. Stojí
+    na něm kamenná rozhledna, kterou dal postavit hrabě Jan Harrach a která
+    se slavnostně otevřela 7. září 1892; server ceskehory.cz uvádí, že věž měří osmnáct metrů a že jí
+    předcházela kovová patnáctimetrová. Dřevěná
+    vyhlídková stavba tu přitom byla už roku 1836, takže tradice výhledu je
+    na Žalém starší než dnešní věž.
+  - >-
+    U paty rozhledny stojí dřevěná restaurace a právě ona je důvodem,
+    proč Žalý mezi horskými chatami vedeme: rozhoduje občerstvení pro
+    turisty, ne to, jestli je stavba bouda, nebo věž.
+    Otevřená mapová databáze vede budovu jako restauraci s celoroční
+    otvírací dobou, vlastním telefonem i e-mailem. Věž a restauraci
+    navíc drží jeden provoz: telefonní číslo uvedené u rozhledny na
+    portálu Kudy z nudy je totéž, které u restaurace nese mapová
+    databáze. Co se tu vaří, jestli restaurace obslouží i kolemjdoucího
+    bez rezervace a jak je to tu s noclehem, v žádném z dostupných
+    pramenů nestojí — a víc, než co je doložené, tady neuvádíme.
+  - >-
+    Historie restaurace je popletená a rozřešenou ji nemáme. Server
+    ceskehory.cz píše o dřevěné restauraci s verandou postavené roku 1890,
+    která zanikla v roce 1943. Popis dobové fotografie z roku 1921 na
+    Wikimedia Commons naproti tomu mluví o dřevěné chatě z roku 1904,
+    obnovené po první světové válce a rozebrané roku 1939. Web města
+    Vrchlabí uvádí, že restauraci u věže znovu postavili v roce 2009 podle
+    projektu architekta Klosa — kdežto v registru budov RÚIAN má dnešní stavba jako datum vzniku
+    9. leden 2013.
+    Čtyři letopočty, tři různá vyprávění; do naší časové osy jsme proto
+    vzali jen ty, které stojí na shodě dvou pramenů.
+  - >-
+    Nahoru se dá dojít po červené turistické značce z Benecka, v sezóně
+    vyjet sedačkovou lanovkou z Herlíkovic a v létě podle ceskehory.cz
+    i na kole nebo koloběžce. Rozhledna má podle portálu Kudy z nudy otevřeno od dubna do
+    prosince, v hlavní sezóně denně, a vstup do věže je placený.
+    Restaurace má podle mapových podkladů rozpis o něco širší, včetně
+    zimních měsíců. Otvírací doby jsou ale
+    údaj, který stárne nejrychleji ze všech, a od provozovatele je
+    potvrzené nemáme — před cestou zavolejte.
+  - >-
+    Ještě k výšce: 1019 metrů uvádějí shodně dva prameny, ale ne všechny
+    přehledy se s nimi shodují. Popisy fotografií na Wikimedia Commons
+    mluví o Předním Žalém jako o vrcholu 1018 metrů vysokém a o Žalém jako
+    o dvojvrcholové hoře s kótami 1012 a 1036 metrů. Rozdíly jsou v řádu
+    metrů a plynou nejspíš z toho, co se za vrchol počítá; publikujeme
+    hodnotu ze dvou nejsilnějších pramenů a mezi čísly potichu nevybíráme.
+  - >-
+    Údaje na téhle stránce pocházejí z portálu Kudy z nudy, z webu města Vrchlabí, ze serveru ceskehory.cz a z otevřené mapové
+    databáze; vlastní web provozovatele se nám ani napodruhé nepodařilo
+    načíst, takže z něj tu není citováno nic. Vlastním dotazem ani
+    návštěvou zatím žádný z údajů ověřený není — všechny sem přišly z
+    pramenů uvedených níž.
+
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/a/a0/Benecko_95_Chata_Zaly.jpg
+    alt: Dřevěná restaurace u rozhledny na Předním Žalém
+    typ: soucasna
+    autor: JiriMatejicek
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Benecko_95_Chata_Zaly.jpg
+    prevzatoDne: '2026-07-29'
+    overeni:
+      source: >-
+        Wikimedia Commons — DATA-02 sklizeň, export z 2026-07-28; 24 m od
+        objektu (geosearch), nalezeno geosearchem, kategorií i fulltextem.
+        Popis souboru zní „Benecko 95, Chata Žalý" a číslo popisné 95 se
+        shoduje s adresou „Žalý, čp. 95, 514 01 Benecko" dle Kudy z nudy —
+        vzácně silné ztotožnění objektu. 3264×2448, CC BY-SA 4.0
+        z licenčního síta DATA-02; redakční výběr 29. 7. 2026 nad exportem
+        — objekt i licenci na stránce souboru potvrdí očima redakce (Michal)
+      verified: false # oční kontrola objektu i licence na stránce souboru = Michal — pak přepnout
+      checked: '2026-07-29'
+
+zdroje:
+  - popis: >-
+      Kudy z nudy — „Rozhledna a nová restaurace na vrcholu Žalý"
+      (rok 1892 a hrabě Harrach, otvírací doba 2026, vstupné 60/30 Kč,
+      adresa Žalý čp. 95, kontakty; načteno 29. 7. 2026); sekundární zdroj,
+      verified:false
+    url: https://www.kudyznudy.cz/aktivity/rozhledna-a-nova-restaurace-na-vrcholu-zaly-v-krko
+  - popis: >-
+      Web města Vrchlabí — stránka o rozhledně Žalý (kamenná věž hraběte
+      Jana Harracha 1892, otevření 7. 9. 1892, dřevěná výletní restaurace
+      z roku 1890 znovu postavená 2009 podle projektu architekta Klosa,
+      přístup po červené z Benecka a lanovkou z Herlíkovic, vrchol 1019 m;
+      načteno 29. 7. 2026 v anglické verzi — česká verze se ze sandboxu
+      nenačetla); sekundární zdroj, verified:false
+    url: https://www.mestovrchlabi.cz/en/zaly-viewing-tower
+  - popis: >-
+      ceskehory.cz — Přední Žalý (1019 m, kamenná věž 18 m z roku 1892,
+      dřevěná vyhlídka od 1836, kovová věž 15 m, dřevěná restaurace
+      s verandou 1890 zaniklá 1943, přístup a lanovka; načteno 29. 7. 2026);
+      sekundární zdroj, verified:false
+    url: https://predni-zaly.ceskehory.cz/
+  - popis: >-
+      OpenStreetMap (GPS budovy restaurace, amenity=restaurant, otvírací
+      doba, telefon, e-mail, facebook, start_date 2013-01-09 z RÚIAN; ODbL)
+    url: https://www.openstreetmap.org/way/151987319
+  - popis: >-
+      Wikimedia Commons, File:Žalý 1921.jpg — dobový snímek s popisem
+      o dřevěné chatě z roku 1904, obnovené po první světové válce
+      a rozebrané roku 1939 (public domain; použit jako pramen rozporu
+      v dataci restaurace, snímek zatím nepřevzat)
+    url: https://commons.wikimedia.org/wiki/File:%C5%BDal%C3%BD_1921.jpg
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/zaly.yaml (DATA-01, OSM) 29. 7. 2026 na
+  výslovný pokyn Michala („zaly rovnou povysit a zaradit") — nález DATA-23,
+  bodu (4): jediný krkonošský kandidát, kterému rozšířený klíč otevřel cestu.
+
+  ⚠ PRVNÍ PROFIL S TYPEM `rozhledna`. Objekt je v datech VEDEN JAKO JEDEN,
+  ačkoli fyzicky jde o dvě stavby (kamenná věž z 1892 + dřevěná restaurace
+  u paty). Rozhodnutí Michala o Sněžce (26. 7. 2026) říká „profil každého
+  objektu zvlášť" — tady jsme se od něj vědomě odchýlili, protože obě
+  stavby drží jeden provoz (shodný telefon u restaurace v OSM a u rozhledny
+  na Kudy z nudy, e-maily rozhledna@zaly.cz i restauracezaly@gmail.com,
+  facebook rozhledna.zaly) a žádný pramen je nevede odděleně. Kdyby to
+  Michal chtěl jinak, rozdělení je levné: věž dostane vlastní profil
+  a tenhle zůstane restauraci.
+
+  ⚠ WEB: zaly.cz se ze sandboxu nenačte (robots.txt ConnectTimeout, 20. 7.
+  i 29. 7. 2026) — z vlastního webu tedy NEcitujeme nic; titulek
+  „Horská bouda a rozhledna Žalý" je jen z výsledku vyhledávání a je veden
+  jako alias s touto výhradou. Stránka zaly.cz/provozni-doba.html taky
+  nedostupná.
+
+  ⚠ ROZPOR V DATACI RESTAURACE (nerozřešený, přiznaný v próze): 1890
+  zaniklá 1943 (ceskehory.cz) × dřevěná chata 1904, rozebraná 1939 (popis
+  snímku Commons z r. 1921) × obnova 2009 (web Vrchlabí) × start_date
+  2013-01-09 z RÚIAN (OSM). Do `rokVzniku` vzat jen rok věže (1892, dva
+  prameny shodně).
+
+  ⚠ ROZPOR VE VÝŠCE: 1019 (ceskehory + Vrchlabí) × 1018 a dvojvrchol
+  1012/1036 (popisy snímků Commons). Publikováno 1019, přiznáno v próze.
+  Výška samotné budovy restaurace doložená není.
+
+  ⚠ OBEC Benecko je z POŠTOVNÍ adresy (Kudy z nudy) — katastr tím doložený
+  není (výhrada DATA-20, tam se to řeší napříč korpusem).
+
+  K dotažení (DATA-04, verified:true — telefon je na profilu dvakrát,
+  +420 481 010 208 i +420 732 801 804): obsluhuje restaurace kolemjdoucí
+  bez rezervace a co vaří; je tu nocleh (žádný pramen ho neuvádí ani
+  nevylučuje); která datace restaurace platí; provozní doba lanovky
+  z Herlíkovic; potvrzení otvírací doby a vstupného na sezónu.

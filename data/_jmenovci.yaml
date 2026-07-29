@@ -47,3 +47,22 @@ jmenovci:
       ověření Jizerských hor (JIZ-01), do té doby je rozlišení interní (R5).
     rozhodl: Claude (návrh z 29. 7. 2026) — čeká na potvrzení Michalem
     checked: 2026-07-29
+  - jadro: zaly
+    objekty:
+      - krkonose/rozhledna-zaly
+      - krkonose/zaly
+    duvod: >-
+      NENÍ jmenovec, ale týž objekt ve dvou entitách OpenStreetMap: publikovaný
+      profil „Žalý" (data/chaty/krkonose/zaly.yaml) popisuje celek na vrcholu
+      Přední Žalý — kamennou rozhlednu z roku 1892 i dřevěnou restauraci u její
+      paty (OSM way/151987319, budova restaurace) —, kdežto kandidát „Rozhledna
+      Žalý" je OSM entita samotné věže (way/415701652), kterou přinesl první
+      rozhlednový běh DATA-01 nad Krkonošemi 29. 7. 2026. Že jde o jeden
+      provoz, dokládá shodný telefon +420 732 801 804 (u restaurace v OSM,
+      u rozhledny na Kudy z nudy) a e-maily na téže doméně. Kandidát se proto
+      nepovyšuje jako druhý profil; kdyby Michal chtěl uplatnit i tady
+      rozhodnutí o Sněžce („profil každého objektu zvlášť"), rozdělení je
+      připravené a názvy se pak musí rozlišit (věž × bouda), ne nechat oba
+      „Žalý".
+    rozhodl: Claude (návrh z 29. 7. 2026) — čeká na potvrzení Michalem
+    checked: 2026-07-29
