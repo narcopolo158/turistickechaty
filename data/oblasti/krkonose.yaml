@@ -84,41 +84,65 @@ overeniHeroFoto:
 # Michal (jako u Luční boudy v titulní fotce), zůstávají popisky obecné
 # a `hotspoty` prázdné.
 fotky:
+  # Pás používá VÝŘEZ snímku (2400×860) — plná fotka má travnaté popředí,
+  # které by pás jen zvětšovalo, a hlavně: pevný poměr stran drží polohu bodů
+  # ve fotce. Kdyby se rám ořezával podle šířky okna, body by ukazovaly vedle.
   - role: pas-cile
-    soubor: /foto/pohori/karkonosze-malgorzata-twardo.jpg
-    nahled: /foto/pohori/karkonosze-malgorzata-twardo-nahled.jpg
+    soubor: /foto/pohori/snezne-jamy-malgorzata-twardo-pas.jpg
+    nahled: /foto/pohori/snezne-jamy-malgorzata-twardo-pas-nahled.jpg
     alt: >-
-      Skalnaté srázy krkonošských karů se zbytky sněhu, v pozadí zvlněné
-      hřebeny
+      Skalnaté stěny Sněžných jam se zbytky sněhu, nahoře na hraně stojí
+      bývalá bouda s věží, dnes vysílač
     autor: Małgorzata Twardo
     licence: unsplash
-    popis: Karkonosze — polská strana Krkonoš
+    popis: Sněžné jámy — ledovcové kary na polské straně hřebene
+    cilNazev: Sněžné jámy
+    hotspoty:
+      - text: Bývalá bouda nad Sněžnými jámami — dnes vysílač
+        x: 65
+        y: 13
+      - text: Stěny karů — ledovcové kotle pod hřebenem
+        x: 44
+        y: 55
     overeni:
       source: >-
         Autor a licence z kreditu v handoffu F1 (29. 7. 2026); „Karkonosze,
-        polská strana" ověřeno na stránce snímku 29. 7. 2026 (zápis
-        v deníku, dodatek 4). Konkrétní místo (Sněžné jámy) tvrdí návrh,
-        doloženo není.
-      verified: false
+        polská strana" ze stránky snímku (deník, dodatek 4). Že jde
+        o Sněžné jámy a že stavba na hraně je bývalá bouda, dnes vysílač,
+        potvrdil Michal 29. 7. 2026 („na obou je to, co říká návrh —
+        potvrzuji").
+      verified: true
       checked: '2026-07-29'
   - role: pamet
     soubor: /foto/pohori/pamet-hor-mateusz-mierzejewski.jpg
     nahled: /foto/pohori/pamet-hor-mateusz-mierzejewski-nahled.jpg
     alt: >-
-      Kamenitá stezka stoupá k horské stavbě s věží, červenou střechou
-      a parabolami vysílače
+      Kamenitá stezka stoupá k bývalé boudě nad Sněžnými jámami — stavba
+      s věží, červenou střechou a parabolami vysílače
     autor: Mateusz Mierzejewski
     licence: pexels
+    popis: nad Sněžnými jámami — z boudy vysílač
     overeni:
       source: >-
-        Autor a licence z kreditu v handoffu F1 (29. 7. 2026). Co je na
-        snímku za stavbu, doložené nemáme — návrh uvádí bývalou boudu nad
-        Sněžnými jámami, ale pramen k tomu nedodává, takže popisku
-        nepíšeme.
-      verified: false
+        Autor a licence z kreditu v handoffu F1 (29. 7. 2026); že je na
+        snímku bývalá bouda nad Sněžnými jámami (dnes vysílač), potvrdil
+        Michal 29. 7. 2026 („na obou je to, co říká návrh — potvrzuji").
+      verified: true
       checked: '2026-07-29'
 
 topCile:
+  # Sněžné jámy stojí v seznamu první schválně: nese je foto pás sekce 05
+  # (vazba přes `cilNazev` u fotky). Výšku 1 490 m, kterou uvádí návrh,
+  # ZÁMĚRNĚ nepíšeme — Michal potvrzoval, co je na snímku, ne kótu.
+  - nazev: Sněžné jámy
+    veta: >-
+      Dvojice ledovcových karů na polské straně hřebene; na jejich horní
+      hraně stojí bývalá bouda, dnes vysílač.
+    nejblizChataSlug: schronisko-pttk-na-hali-szrenickiej
+    source: >-
+      Co je na snímku (kary i bývalá bouda nad nimi) potvrdil Michal
+      29. 7. 2026; vazba na chatu z přehledu lanovek a profilů západního
+      hřebene (data/lanovky/krkonose.json, checked 2026-07-28)
   - nazev: Sněžka
     veta: Nejvyšší hora Česka (1603 m) na hřebeni nad Obřím dolem a Równí pod Śnieżką.
     nejblizChataSlug: dom-slaski

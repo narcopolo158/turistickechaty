@@ -54,7 +54,9 @@ export function FotoPas({ fotka, karta }: { fotka?: Fotka | null; karta?: React.
       {hotspoty.map((h, i) => (
         <div
           key={`${h.text}-${i}`}
-          className="fpas-bod"
+          // Bod u horní hrany dostane popisek POD sebe — nad ním by přetekl
+          // z fotky ven a čtenář by z něj viděl půlku.
+          className={`fpas-bod${(h.y ?? 50) < 25 ? ' fpas-bod--dole' : ''}`}
           style={{ left: `${h.x ?? 50}%`, top: `${h.y ?? 50}%` }}
         >
           <button type="button" className="fpas-bod-tlacitko">

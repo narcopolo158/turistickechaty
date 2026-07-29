@@ -265,6 +265,17 @@ export const Oblasti: CollectionConfig = {
           admin: { description: 'Prázdné pole = u fotky se ukáže jen atribuce. To je v pořádku.' },
         },
         {
+          name: 'cilNazev',
+          type: 'text',
+          label: 'Který top cíl je na snímku',
+          admin: {
+            description:
+              'Název ze seznamu `topCile`. Vyplň jen tehdy, když je doložené, že ' +
+              'snímek zachycuje právě tenhle cíl — karta s cílem se pak položí ' +
+              'do fotky. Prázdné = pás zůstane jen fotkou s popiskou.',
+          },
+        },
+        {
           name: 'hotspoty',
           type: 'array',
           label: 'Body ve fotce (sekce 05)',

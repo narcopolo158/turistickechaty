@@ -552,6 +552,10 @@ export interface Oblasti {
          */
         popis?: string | null;
         /**
+         * Název ze seznamu `topCile`. Vyplň jen tehdy, když je doložené, že snímek zachycuje právě tenhle cíl — karta s cílem se pak položí do fotky. Prázdné = pás zůstane jen fotkou s popiskou.
+         */
+        cilNazev?: string | null;
+        /**
          * Klikací body s popiskem. Vyplň jen to, co je na snímku doložené — bod ukazující na dohad je horší než snímek bez bodů.
          */
         hotspoty?:
@@ -1329,6 +1333,7 @@ export interface OblastiSelect<T extends boolean = true> {
         licence?: T;
         zdrojUrl?: T;
         popis?: T;
+        cilNazev?: T;
         hotspoty?:
           | T
           | {
