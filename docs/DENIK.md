@@ -625,6 +625,35 @@ Drobnost, kterou řekl až render: kresba se **nesmí natahovat** do výšky pá
 406 testů (+9), kontrola, lint i tsc čisté; ověřeno rendrem v denním i nočním
 režimu.
 
+**Dodatek 12 (týž den, Michal poslal čtyři screenshoty z telefonu: „podívej se
+na výsledek středisek a lanovek — ještě by to chtělo doladit"): jedna vada
+v CSS rozhodila celou stránku na mobilu.**
+
+**Příčina byla jinde, než kam ukazovaly screenshoty.** Na fotkách měl text
+o lanovce u střediska VĚTŠÍ písmo než název střediska a stránka běžela
+v desktopovém rozvržení na telefonu. Vypadalo to na chybu v kartách; ve
+skutečnosti to byl **Android font boosting** — prohlížeč sám zvětšuje text,
+když je stránka širší než viewport. A širší byla kvůli tomuhle:
+`aspect-ratio` **spolu s** `min-height` nezvětší výšku, ale **šířku**. Foto pás
+u top cílů měl na 412px displeji rám široký **558 px**, stránka přetekla do
+strany, prohlížeč se odzoomoval (proto desktopová navigace) a písmo si začal
+zvětšovat sám. Změřeno, ne odhadnuto: `scrollWidth` 558 proti `clientWidth`
+412, a po opravě 412 = 412.
+Opraveno dvakrát — na úzkém displeji se poměr stran vypíná a rám má pevnou
+výšku, a do globálních stylů přibylo `text-size-adjust: 100 %`, aby se
+zvětšování písma nemohlo vrátit odjinud (zoom prstem to neblokuje).
+
+**Doladění karet.** Věta o lanovce a perex jsou v datech celé i s prameny —
+na kartě se teď zkracují na tři řádky (`title` nese plné znění), protože
+z nezkrácených vět vznikaly sloupce různé výšky, ve kterých se název
+střediska ztratil. Totéž u „Nahoře:" v kartách lanovek: polské dráhy vypisují
+tři schroniska a karta se kvůli tomu natáhla přes dvojnásobek sousední.
+Karta je přehled, ne článek; celé znění patří na mini-stránku střediska (F1e).
+
+**Otázky k dodatku:** 21. **Mini-stránky středisek** (F1e) — mám je vzít jako
+další krok? Právě ony jsou to místo, kde se plné věty o lanovkách a přístupech
+vypíšou bez krácení.
+
 ---
 
 ## 2026-07-28 — denní session (bezobslužný běh): DATA-05 — párování razítek dohnalo korpus, přiřazení nově jen potvrzené

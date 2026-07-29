@@ -80,8 +80,21 @@ export function StrediskoKarta({
         )}
       </div>
 
-      {stredisko.perex && <p>{stredisko.perex}</p>}
-      {stredisko.lanovka && <p className="pohori-stredisko-lanovka">🚡 {stredisko.lanovka}</p>}
+      {/* Perex i věta o lanovce jsou v datech celé i s prameny — na kartě se
+          ukazují zkrácené na tři řádky (`title` nese plné znění a mini-stránka
+          střediska ho jednou vypíše celé). Nezkrácené věty dělaly z mřížky
+          karet sloupce různé výšky, ve kterých se název ztratil: karta je
+          přehled, ne článek. */}
+      {stredisko.perex && (
+        <p className="strk-text" title={stredisko.perex}>
+          {stredisko.perex}
+        </p>
+      )}
+      {stredisko.lanovka && (
+        <p className="pohori-stredisko-lanovka strk-text" title={stredisko.lanovka}>
+          <span aria-hidden="true">🚡</span> {stredisko.lanovka}
+        </p>
+      )}
     </div>
   )
 }
