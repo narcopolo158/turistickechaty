@@ -1,0 +1,491 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-02T16:51:45Z",
+    "timestamp_areas_base": "2026-07-02T16:51:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 462685972,
+  "lat": 50.6605256,
+  "lon": 15.7475667,
+  "tags": {
+    "height": "5",
+    "man_made": "tower",
+    "source": "gps",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3077189931,
+  "lat": 50.7397458,
+  "lon": 15.3462618,
+  "tags": {
+    "addr:city": "Kořenov",
+    "addr:conscriptionnumber": "1",
+    "addr:country": "CZ",
+    "addr:housenumber": "1",
+    "addr:place": "Příchovice",
+    "addr:postcode": "46848",
+    "amenity": "restaurant",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "U Čápa",
+    "phone": "+420 724 188 462",
+    "source:addr": "cuzk:ruian",
+    "tourism": "hotel",
+    "website": "https://ucapa.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 3411838582,
+  "lat": 50.6883259,
+  "lon": 15.7070696,
+  "tags": {
+    "access": "yes",
+    "ele": "1207.45",
+    "fee": "no",
+    "height": "30.8",
+    "man_made": "tower",
+    "name": "rozhledna Hnědý vrch",
+    "opening_hours": "Jun-Oct 09:00-16:00",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q12019872",
+    "wikipedia": "cs:Hnědý vrch (rozhledna)"
+  }
+},
+{
+  "type": "node",
+  "id": 5034630508,
+  "lat": 50.6310947,
+  "lon": 15.7576434,
+  "tags": {
+    "access": "customers",
+    "ele": "826",
+    "height": "45.5",
+    "layer": "2",
+    "man_made": "tower",
+    "name": "Stezka korunami stromů Krkonoše",
+    "name:de": "Baumwipfelpfad Krkonoše",
+    "name:en": "Treetop Walk Krkonoše",
+    "name:pl": "Ścieżka w Koronach Drzew Krkonoše",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "https://www.stezkakrkonose.cz/",
+    "wheelchair": "yes",
+    "wikidata": "Q80350104",
+    "wikipedia": "cs:Stezka korunami stromů Krkonoše"
+  }
+},
+{
+  "type": "node",
+  "id": 12142140429,
+  "lat": 50.6315038,
+  "lon": 15.7565177,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2024-08-28",
+    "name": "Lestánek"
+  }
+},
+{
+  "type": "node",
+  "id": 13970692693,
+  "lat": 50.7463278,
+  "lon": 15.3657768,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Kiosek"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694657,
+  "lat": 50.7616561,
+  "lon": 15.4299016,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Čerťák",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 125508571,
+  "center": {
+    "lat": 50.6489259,
+    "lon": 15.7519880
+  },
+  "nodes": [
+    1393832814,
+    1393832809,
+    1393832811,
+    1393832816,
+    1393832814
+  ],
+  "tags": {
+    "fee": "yes",
+    "height": "25.7",
+    "man_made": "tower",
+    "name": "Rozhledna Panorama",
+    "opening_hours": "Sa-Su 10:00-16:00",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 151987319,
+  "center": {
+    "lat": 50.6581408,
+    "lon": 15.5720933
+  },
+  "nodes": [
+    1648201197,
+    4166876235,
+    4166876237,
+    4166876234,
+    4166876232,
+    1648201196,
+    4166876230,
+    4166876229,
+    1648201193,
+    1648201194,
+    1648201197
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:levels": "3",
+    "building:ruian:type": "5",
+    "contact:email": "restauracezaly@gmail.com",
+    "contact:facebook": "rozhledna.zaly",
+    "contact:phone": "+420 732 801 804",
+    "name": "Žalý",
+    "opening_hours": "Dec 25-Jan 31 Mo-Su 10:00-16:00; Feb-Mar Mo-Su 10:00-16:30; Apr,Oct-Nov Sa-Su 10:00-16:00; May-Jun,Sep Tu-Su 10:00-17:00; Jul-Aug Mo-Su 10:00-17:30; Dec 01-24 Sa-Su 10:00-16:00",
+    "ref:ruian:building": "34001786",
+    "source": "cuzk:ruian",
+    "start_date": "2013-01-09",
+    "tourism": "alpine_hut",
+    "website": "http://www.zaly.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 281634727,
+  "center": {
+    "lat": 50.6603914,
+    "lon": 15.4014373
+  },
+  "nodes": [
+    2856207880,
+    2856207891,
+    2856207884,
+    2856207878,
+    2856207880
+  ],
+  "tags": {
+    "building": "yes",
+    "building:flats": "0",
+    "building:levels": "0",
+    "building:ruian:type": "19",
+    "height": "18",
+    "man_made": "tower",
+    "name": "U borovice",
+    "ref:ruian:building": "47745371",
+    "source": "cuzk:km",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 303365344,
+  "center": {
+    "lat": 50.7399206,
+    "lon": 15.3453645
+  },
+  "nodes": [
+    3077190147,
+    4844435549,
+    3077190148,
+    4844435550,
+    4844435556,
+    4844435551,
+    3077190149,
+    4844435552,
+    4844435553,
+    3077190150,
+    4844435544,
+    3077190152,
+    4844435545,
+    4844435555,
+    4844435546,
+    4844435554,
+    4844435547,
+    3077190151,
+    3077190153,
+    3077190154,
+    4844435548,
+    3077190147
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "23.7",
+    "man_made": "tower",
+    "name": "Rozhledna Maják J. Cimrmanna",
+    "opening_hours": "May-Sep 10:00-18:00; Oct-Apr 10:00-17:00",
+    "start_date": "2013",
+    "tower:type": "observation",
+    "wikipedia": "cs:Maják Járy Cimrmana"
+  }
+},
+{
+  "type": "way",
+  "id": 307633839,
+  "center": {
+    "lat": 50.6293910,
+    "lon": 15.9112094
+  },
+  "nodes": [
+    3128318488,
+    12769235994,
+    12769235993,
+    3128318490,
+    12769236000,
+    3128318491,
+    12769235999,
+    12769235998,
+    12769235997,
+    3128318489,
+    12769235996,
+    12769235995,
+    3128318488
+  ],
+  "tags": {
+    "building": "yes",
+    "ele": "632",
+    "height": "24.5",
+    "man_made": "tower",
+    "name": "rozhledna Eliška",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 315046994,
+  "center": {
+    "lat": 50.5754790,
+    "lon": 16.0123853
+  },
+  "nodes": [
+    8904899432,
+    3211302662,
+    3211302663,
+    8904899433,
+    8904899443,
+    8904899432
+  ],
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 415701652,
+  "center": {
+    "lat": 50.6581957,
+    "lon": 15.5723726
+  },
+  "nodes": [
+    4166876233,
+    5183230449,
+    4166876239,
+    4166876240,
+    4166876238,
+    4166876236,
+    4166876228,
+    4166876227,
+    4166876231,
+    4166876233
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "tower",
+    "building:ruian:type": "15",
+    "contact:facebook": "rozhledna.zaly",
+    "contact:phone": "+420 732 801 804",
+    "fee": "yes",
+    "height": "18",
+    "man_made": "tower",
+    "material": "stone",
+    "name": "Rozhledna Žalý",
+    "opening_hours": "Dec 25-Jan 31 Mo-Su 10:00-16:00; Feb-Mar Mo-Su 10:00-16:30; Apr,Oct-Nov Sa-Su 10:00-16:00; May-Jun,Sep Tu-Su 10:00-17:00; Jul-Aug Mo-Su 10:00-17:30; Dec 01-Dec 24 Sa-Su 10:00-16:00",
+    "ref:ruian:building": "47881925",
+    "start_date": "1892",
+    "tourism": "attraction",
+    "tower:type": "observation",
+    "website": "http://www.zaly.cz/",
+    "wikidata": "Q101440937"
+  }
+},
+{
+  "type": "way",
+  "id": 471356701,
+  "center": {
+    "lat": 50.6479528,
+    "lon": 15.7520304
+  },
+  "nodes": [
+    4655145918,
+    4655145912,
+    4655145920,
+    4655145906,
+    4655145911,
+    4655145913,
+    4655145921,
+    4655145907,
+    4655145914,
+    4655145919,
+    4655145922,
+    4655145908,
+    4655145915,
+    4655145905,
+    4655145923,
+    4655145909,
+    4655145916,
+    4655145924,
+    4655145910,
+    4655145918
+  ],
+  "tags": {
+    "amenity": "bar",
+    "building": "yes",
+    "name": "FordBar Černá hora"
+  }
+},
+{
+  "type": "way",
+  "id": 987669810,
+  "center": {
+    "lat": 50.7611598,
+    "lon": 15.4255127
+  },
+  "nodes": [
+    1874120550,
+    9129254077,
+    9129254078,
+    9129254079,
+    9129254080,
+    9129254085,
+    9129254081,
+    9129254082,
+    9129254083,
+    1874120550
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "4",
+    "man_made": "tower",
+    "name": "vyhlídka na Jizerské hory",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 987669812,
+  "center": {
+    "lat": 50.7622634,
+    "lon": 15.4307535
+  },
+  "nodes": [
+    4943701481,
+    9129254092,
+    9129254093,
+    9129254094,
+    9129254095,
+    9129254096,
+    9129254097,
+    9129254098,
+    4943701481
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "5",
+    "man_made": "tower",
+    "name": "vyhlídka na Harrachov",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1056085802,
+  "center": {
+    "lat": 50.7464976,
+    "lon": 15.3659075
+  },
+  "nodes": [
+    9703964103,
+    9703964102,
+    9703964101,
+    9703964100,
+    9703964099,
+    9703964098,
+    9703964097,
+    9703964096,
+    9703964103
+  ],
+  "tags": {
+    "building": "civic",
+    "building:ruian:type": "5",
+    "man_made": "tower",
+    "name": "Štěpánka",
+    "ref:ruian:building": "44225318",
+    "source": "cuzk:ruian",
+    "tower:type": "observation",
+    "wikidata": "Q9373865"
+  }
+},
+{
+  "type": "way",
+  "id": 1448059733,
+  "center": {
+    "lat": 50.6316329,
+    "lon": 15.7566423
+  },
+  "nodes": [
+    5034630649,
+    13286108170,
+    13286108171,
+    13286108172,
+    5034630649
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building:part": "yes",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "name": "V Korunách",
+    "opening_hours": "Mo-Su 09:30-18:00",
+    "opening_hours:kitchen": "Mo-Su 09:30-17:30",
+    "outdoor_seating": "yes",
+    "website": "https://treetop-walks.com/krkonose/o-stezce/restaurace/"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-29T05:06:43Z",
+    "timestamp_areas_base": "2026-07-28T13:02:21Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 7973913537,
+  "lat": 50.6902945,
+  "lon": 16.0174824,
+  "tags": {
+    "access": "yes",
+    "ele": "580",
+    "height": "12",
+    "man_made": "tower",
+    "material": "steel",
+    "source": "https://geoportal.dolnyslask.pl",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "viewpoint": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 213254013,
+  "center": {
+    "lat": 50.8640927,
+    "lon": 15.7039667
+  },
+  "nodes": [
+    2229867594,
+    2229867578,
+    2229867580,
+    2229867593,
+    2229867594
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "tower",
+    "fee": "no",
+    "image": "https://photos.app.goo.gl/2n9w6AdBLQ7yjwub9",
+    "man_made": "tower",
+    "name": "Wieża Sołtysia",
+    "opening_hours": "May-Oct: Mo-Su 08:00-20:00; Nov-Mar: 08:00-16:00",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "url": "https://fotopolska.eu/46308,obiekt.html?map_z=17",
+    "url:0": "https://polska-org.pl/540946,Jelenia_Gora,Wieza_widokowa_na_Soltysiej_Gorze.html",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 364321447,
+  "center": {
+    "lat": 50.8315668,
+    "lon": 15.8203411
+  },
+  "nodes": [
+    3683643693,
+    3683643695,
+    3683643694,
+    3683643696,
+    3683643697,
+    3683643698,
+    3683643699,
+    3683643700,
+    3683643709,
+    3683643707,
+    3683643708,
+    3683643706,
+    3683643705,
+    3683643702,
+    3683643701,
+    3683643703,
+    3683643693
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "tower",
+    "ele": "480",
+    "fee": "no",
+    "historic": "yes",
+    "image": "https://my.matterport.com/show/?m=JiD3buMaeKY",
+    "man_made": "tower",
+    "name": "Strażnica",
+    "ruins": "yes",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 513097031,
+  "center": {
+    "lat": 50.8452585,
+    "lon": 15.4917908
+  },
+  "nodes": [
+    9121147591,
+    5016435723,
+    5016435722,
+    9121147592,
+    9121147591
+  ],
+  "tags": {
+    "building": "yes",
+    "check_date": "2023-07-25",
+    "construction": "tower",
+    "image": "https://photos.app.goo.gl/NGCG68Z1u8cR6Vmt6",
+    "man_made": "tower",
+    "note:pl": "otwarcie wieży obserwacyjnej planowane na rok 2022",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "url": "https://youtu.be/DtsMPbhVxeU?si=As9QwFXOxDL7MAN1",
+    "url:0": "https://youtu.be/NwapDzCqFh4?si=YFo_BobSY0zxPkxQ"
+  }
+},
+{
+  "type": "way",
+  "id": 518439272,
+  "center": {
+    "lat": 50.8456719,
+    "lon": 15.4917689
+  },
+  "nodes": [
+    5057174784,
+    5057174780,
+    12221974166,
+    12221974167,
+    12221974175,
+    12221974174,
+    12221974173,
+    12221974172,
+    1419877664,
+    12221974171,
+    12221974170,
+    12221974169,
+    12221974168,
+    12221974164,
+    1419877656,
+    1419877658,
+    12221974165,
+    5057174783,
+    5057174793,
+    5057174792,
+    5057174795,
+    5057174791,
+    5057174790,
+    12221974176,
+    5057174789,
+    12221974177,
+    5057174786,
+    5057174785,
+    5057174794,
+    5057174784
+  ],
+  "tags": {
+    "addr:housenumber": "180",
+    "addr:place": "Kopaniec",
+    "addr:postcode": "58-512",
+    "amenity": "cafe",
+    "beds": "0",
+    "building": "yes",
+    "building:levels": "1",
+    "contact:email": "golbam@wp.pl",
+    "description:en": "no sleeping accommodation due to lack of tap water, no toilets, no electricity, buffet open during object's opening hours",
+    "description:pl": "Schronisko nie oferuje jeszcze noclegów ze względu na brak bieżącej wody;brak toalety;bufet czynny w godzinach otwarcia obiektu",
+    "drinking_water": "no",
+    "ele": "1058",
+    "electricity": "no",
+    "image": "https://photos.app.goo.gl/sHuUjoEqHsFn2B4p7",
+    "internet_access": "no",
+    "name": "Schronisko Wysoki Kamień",
+    "name:de": "Hochsteinbaude",
+    "name:pl": "Schronisko Wysoki Kamień",
+    "note:pl": "tagowane jako proposed:tourism ze względu na brak (jeszcze) możliwości noclegu",
+    "opening_hours": "Apr-Sep Mo-Su 10:00-18:00; Oct-Mar Mo-Su 10:00-16:00",
+    "proposed:tourism": "alpine_hut",
+    "rooms": "0",
+    "source:addr": "gugik.gov.pl",
+    "toilets": "no",
+    "url": "https://www.youtube.com/watch?v=-l3h8r6DJHw",
+    "url:0": "https://youtu.be/NwapDzCqFh4?si=YFo_BobSY0zxPkxQ",
+    "url:1": "https://youtu.be/DtsMPbhVxeU?si=As9QwFXOxDL7MAN1",
+    "website": "http://www.wysokikamien.com.pl",
+    "wikidata": "Q9334436",
+    "wikipedia": "pl:Schronisko Wysoki Kamień"
+  }
+}
+
+  ]
+}
