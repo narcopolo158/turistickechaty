@@ -23,6 +23,14 @@ overeniLokace:
 vychoziBody:
   - nazev: Janské Lázně
 
+lanovka: >-
+  Kabinová lanovka Černohorský Express na Černou horu; v létě podle provozovatele „v provozu 09:00–17:00".
+overeniLanovka:
+  source: >-
+    leto.skiresort.cz/lanovky/ (načteno 28. 7. 2026)
+  verified: false
+  checked: '2026-07-28'
+
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
   (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;

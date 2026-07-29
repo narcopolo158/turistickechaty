@@ -45,15 +45,25 @@ const katalogBodu = (): Set<string> => {
 describe('střediska Krkonoš (data/strediska/krkonose)', () => {
   const strediska = nactiStrediska()
 
-  it('je jich 7 dle handoffu (5 CZ + 2 PL) a slug sedí s názvem souboru', () => {
-    expect(strediska).toHaveLength(7)
+  // Handoff F1 začínal se sedmi středisky (5 CZ + 2 PL). 28. 7. 2026 Michal
+  // zadal rozšíření („nepřidáme další střediska jako třeba Rokytnice nad
+  // Jizerou?"), a přibylo devět nástupních obcí z přepočtu přístupových tras.
+  // Test proto hlídá invarianty a původní sedmičku, ne pevný počet — jinak
+  // by padal při každém dalším rozšíření, což je normální vývoj korpusu.
+  const HANDOFF_SEDM = ['harrachov', 'janske-lazne', 'karpacz', 'mala-upa', 'pec-pod-snezkou', 'spindleruv-mlyn', 'szklarska-poreba']
+
+  it('drží původní sedmičku z handoffu, slug sedí s názvem souboru a země je z číselníku', () => {
+    expect(strediska.length).toBeGreaterThanOrEqual(HANDOFF_SEDM.length)
+    for (const slug of HANDOFF_SEDM) {
+      expect(strediska.map(({ data }) => data.slug), `chybí středisko ${slug} z handoffu`).toContain(slug)
+    }
     for (const { soubor, data } of strediska) {
       expect(soubor).toBe(`${data.slug}.yaml`)
       expect(data.nazev).toBeTruthy()
       expect(data.oblast).toBe('krkonose')
       expect(['cz', 'pl']).toContain(data.zeme)
     }
-    expect(strediska.filter(({ data }) => data.zeme === 'pl')).toHaveLength(2)
+    expect(strediska.filter(({ data }) => data.zeme === 'pl').length).toBeGreaterThanOrEqual(2)
   })
 
   it('lokace je doložená: GPS + source (OSM/ODbL) + checked; výška obce zatím poctivě chybí', () => {

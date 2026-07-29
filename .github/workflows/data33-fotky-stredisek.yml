@@ -1,0 +1,64 @@
+# DATA-33: fotky středisek z Wikimedia Commons — dohledá, vybere a STÁHNE.
+# Sandbox denních sessions na commons.wikimedia.org nedosáhne (proxy), Actions
+# ano. Na rozdíl od DATA-02 (fotky chat = jen návrhy pro redakci) tenhle běh
+# rovnou stahuje: u střediska je sázka nižší (obec, ne konkrétní budova)
+# a pravidla výběru jsou napsaná ve skriptu. Jinou fotku vybereš tak, že
+# k záznamu v `data/strediska/_fotky-<oblast>.json` dopíšeš "prefer": "File:…"
+# a pustíš workflow znovu.
+name: 'DATA-33: fotky středisek (dle oblasti)'
+
+on:
+  workflow_dispatch:
+    inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory'
+        required: false
+        default: 'krkonose'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data33-fotky-stredisek
+  cancel-in-progress: false
+
+jobs:
+  fotky:
+    name: Commons → public/strediska
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Dohledání a stažení fotek
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
+        run: |
+          npx tsx scripts/data33-fotky-stredisek.ts --oblast "$OBLAST" | tee report.txt
+          echo '## DATA-33 — fotky středisek' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit fotek a manifestu do main
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/strediska data/strediska
+          if git diff --cached --quiet; then
+            echo 'Beze změny — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m "data: fotky středisek z Wikimedia Commons (${OBLAST}, z Actions)" \
+            -m 'Zdroj: Wikimedia Commons — jen licence CC0/CC BY/CC BY-SA/public domain s doloženým autorem (NC a ND vyřazeny). Autor, licence a odkaz na stránku souboru jsou v manifestu a web je vypisuje u fotky.'
+          git pull --rebase origin main
+          git push origin main

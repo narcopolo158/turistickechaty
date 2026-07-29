@@ -202,7 +202,14 @@
 
 /* ── 04 Střediska · 06 Zaniklé · 07 FAQ · 08 Přesahy ───────────────────── */
 .pohori-strediska { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
-.pohori-stredisko { background: var(--card); border: 1px solid var(--line); border-radius: 11px; padding: 12px 14px; }
+.pohori-stredisko { background: var(--card); border: 1px solid var(--line); border-radius: 11px; padding: 12px 14px; overflow: hidden; }
+/* Fotka střediska (DATA-33, Commons) — vytáhne se na kraje karty, atribuce
+   pod ní: uvedení autora je podmínka licence CC BY/BY-SA, ne ozdoba. */
+.pohori-stredisko-foto { margin: -12px -14px 10px; }
+.pohori-stredisko-foto img { display: block; width: 100%; height: 132px; object-fit: cover; }
+.pohori-stredisko-foto figcaption { font: 400 9.5px/1.35 Inter, sans-serif; color: var(--muted); padding: 5px 14px 0; }
+.pohori-stredisko-foto figcaption a { color: inherit; }
+.pohori-stredisko-lanovka { font: 400 11px/1.45 Inter, sans-serif; color: var(--muted); margin-top: 6px !important; }
 .pohori-stredisko b { font: 500 15px/1.2 var(--font-emph, Georgia, serif); color: var(--ink); }
 .pohori-stredisko p { font: 400 11.5px/1.5 Inter, sans-serif; color: var(--muted); margin: 6px 0 0; }
 .pohori-tag-pl { margin-left: 7px; padding: 2px 7px; border-radius: 12px; background: rgba(42, 92, 184, 0.1); font: 600 9px/1 'Space Grotesk', sans-serif; color: var(--tr-blue, #2a5cb8); vertical-align: 2px; }

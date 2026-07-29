@@ -1,0 +1,25 @@
+# Przesieka — středisko / východiště do hor.
+# Založeno 28. 7. 2026 na zadání Michala („nepřidáme další střediska?").
+# Důvod zařazení: nástupní bod 2 přístupových tras dle přepočtu DATA-06 (28. 7. 2026).
+# Poctivost: GPS z katalogu výchozích bodů (OSM), ostatní pole se doplní
+# z doložených zdrojů — do té doby chybí a stat-tile se nevykreslí.
+nazev: Przesieka
+slug: przesieka
+zeme: pl
+oblast: krkonose
+
+lat: 50.8087495
+lng: 15.6653035
+overeniLokace:
+  source: >-
+    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: '2026-07-28'
+
+vychoziBody:
+  - nazev: Przesieka
+
+interniPoznamky: >-
+  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
+  nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
+  pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).

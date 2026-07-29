@@ -23,6 +23,14 @@ overeniLokace:
 vychoziBody:
   - nazev: Karpacz
 
+lanovka: >-
+  Sedačková lanovka na Kopu (provozovatel Karpacz Ski Arena, lanovka bývá uváděna jako „Zbyszek"). Letní provoz dle sekundárního zdroje ne–čt 9:00–16:30, pá–so 9:00–17:30.
+overeniLanovka:
+  source: >-
+    kpn.gov.pl/wyciagi (seznam KPN) + krainawycieczek.pl „kolej linowa na Kopę w Karpaczu" (obojí načteno 28. 7. 2026; druhý zdroj je sekundární)
+  verified: false
+  checked: '2026-07-28'
+
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
   (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;

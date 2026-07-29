@@ -1,0 +1,32 @@
+# Benecko — středisko / východiště do hor.
+# Založeno 28. 7. 2026 na zadání Michala („nepřidáme další střediska?").
+# Důvod zařazení: obec u hřebene s doloženou lanovkou dle katalogu lanových drah Krkonoš.
+# Poctivost: GPS z katalogu výchozích bodů (OSM), ostatní pole se doplní
+# z doložených zdrojů — do té doby chybí a stat-tile se nevykreslí.
+nazev: Benecko
+slug: benecko
+zeme: cz
+oblast: krkonose
+
+lat: 50.6663343
+lng: 15.5481647
+overeniLokace:
+  source: >-
+    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: '2026-07-28'
+
+vychoziBody:
+  - nazev: Benecko
+
+lanovka: >-
+  Lanová dráha Benecko (katalog lanových drah Krkonoš uvádí rozpětí 700–1 000 m n. m.); letní provoz nedoložen.
+overeniLanovka:
+  source: region-krkonose.cz/lanove-drahy/ (načteno 28. 7. 2026)
+  verified: false
+  checked: '2026-07-28'
+
+interniPoznamky: >-
+  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
+  nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
+  pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
