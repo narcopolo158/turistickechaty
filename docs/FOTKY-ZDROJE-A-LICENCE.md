@@ -163,6 +163,78 @@ zaniklých chat") a takové projekty bývají rády, když je někdo cituje a od
 
 ---
 
+## 4b. Tři zdroje od Michala — prověřeno 29. 7. 2026
+
+Michal poslal tři odkazy. Každý z nich znamená něco jiného a **ani jeden se
+nedá prostě začít stahovat** — ale jeden z nich ukazuje cestu, která je čistší
+než všechno ostatní v téhle rešerši.
+
+### (a) Fotogalerie „Krkonoše staré foto" v Atlasu zaniklých krajin
+
+`zaniklekrajiny.cz/atlas/fotogalerie-4/category/47-krkonose-stare-foto` —
+**80+ snímků z let 1865 až 1985**, a přesně těch objektů, které vedeme:
+Adolfova, Bradlerovy, Davidovy, Erlebachova, Labská, Petrova a Špindlerova
+bouda, Dvoračky, Horní i Dolní Mísečky, Rokytnice, k tomu Pančavský vodopád,
+pramen Labe, Sněžné jámy a Hančova mohyla.
+
+**Zásadní nález je ale v popiscích.** Každý z nich končí stejnou formulí:
+
+> „Krkonoše – Labská bouda 1865 – **zdroj: http://fotohistorie.cz**"
+
+Atlas tedy tyhle snímky **sám odjinud přebírá** a autory jednotlivých
+fotografií neuvádí. Licenční řetěz proto nevede na univerzitu, nýbrž na
+**fotohistorie.cz** — a ptát se je potřeba tam (případně u obou, protože atlas
+by měl vědět, s jakým svolením snímky přebral). Pro naše modely zaniklých bud
+tedy Atlas zůstává skvělý partner, ale u fotogalerie je to **prostředník, ne
+pramen**.
+
+*Poznámka k dostupnosti: `fotohistorie.cz` má self-signed certifikát a ze
+sandboxu se nenačte, `staretrutnovsko.cz` padá na timeoutu — obojí patří na
+seznam blokovaných domén, obsah jsem tedy neviděl a soudím z toho, co je
+o nich vidět jinde.*
+
+### (b) staretrutnovsko.cz — sbírka pohlednic po objektech
+
+Web se starými pohlednicemi Trutnovska a Krkonoš, a co je pro nás cenné:
+**má stránky po jednotlivých boudách** — Slezská bouda, Hrnčířská bouda,
+Mísečná bouda, Dvoračky, Slezský dům, Krakonošova kníratá bouda a další.
+To je přesně struktura, kterou bychom u dobových snímků potřebovali.
+
+Provozovatel není na první pohled jmenován, ale web má **komerční dvojče
+`starekrkonose.cz`**, kde se prodávají kalendáře „Staré Krkonoše, Trutnovsko
+a Žacléřsko" s týmiž snímky (obchodní podmínky, GDPR, kontaktní formulář
+„Napište nám" — konkrétní jméno ani e-mail stránka neukazuje). Z toho plyne
+dvojí: sbírka je aktivní a někdo se o ni stará (dobré), ale zároveň na ní
+někdo staví živnost, takže svolení zadarmo není samozřejmost (poctivé to
+říct dopředu). **Postup: napsat, představit projekt, nabídnout viditelný
+kredit a zpětný odkaz** — přesně jako u razítkových webů, kde to vyšlo dvakrát
+ze tří.
+
+### (c) numismatika-ostrava.cz — e-shop, a přitom nejčistší cesta ze všech
+
+Není to galerie, je to **obchod**: prodává originální pohlednice Krkonoš od
+roku 1894, mimo jiné s razítky horských pošt; v patičce má „Copyright 2026
+Numismatika Ostrava. Všechna práva vyhrazena." Z webu tedy **nesmíme převzít
+nic** — ty náhledy jsou produktové fotky obchodu.
+
+**Jenže právě tenhle odkaz otevírá nejčistší postup, jaký v celé rešerši je:
+koupit originál a naskenovat si ho sám.** Pak totiž odpadá celý problém
+cizího skenu — nezáleží na tom, jestli má archiv ke svému skenu práva
+(otevřená otázka z oddílu 3.3), protože sken je náš. Zůstane jediná otázka,
+a ta se řeší dobře: **je sám snímek volným dílem?** U pohlednice vydané roku
+1955 a dřív s neznámým autorem podle pravidla z oddílu 3.2 ano.
+
+Je to přesně ten model, který v projektu **už funguje u razítek** — historický
+otisk Luční boudy z Michalovy sbírky je licenčně čistý, protože je to jeho
+sken jeho vlastního kusu. U pohlednic by to platilo stejně, a pořizovací cena
+běžné dobové pohlednice se pohybuje v desítkách až stovkách korun.
+
+**Návrh:** vybrat pár objektů, kde by dobový snímek nejvíc přidal (Labská
+bouda, Petrova bouda po požáru, zaniklé boudy), a zkusit koupit originály.
+Vedle Ostravy stojí za zkoušku i aukční portály filokartie. Ke každému kusu
+se pak zapíše, co říká klíč v oddílu 3.4 — a hlavně **fyzický originál je
+sám o sobě doklad**, který u staženého souboru nikdy nemáme.
+
 ## 5. Co z toho navrhuju udělat v projektu
 
 1. **Rozšířit kolekci `Fotky` o právní pole**, aby se pět bodů z klíče 3.4 dalo
@@ -172,9 +244,17 @@ zaniklých chat") a takové projekty bývají rády, když je někdo cituje a od
 2. **Hero fotky pohoří** vzít z Unsplash/Pexels jako samostatnou vrstvu (ne jako
    fotku objektu) a v datech je od fotek chat odlišit — jinak se nám smíchá
    „doložený objekt" s „hezkou horou".
-3. **Oslovit tři strany** (Zaniklé krajiny, Krkonošské muzeum / Správa KRNAP,
-   zanikleobce.cz) — stejnou cestou, jaká vyšla u razítkových webů.
-4. **Doptat právníka** na otevřené body z 3.3 (ochrana skenů volných děl,
+3. **Oslovit sbírky** — po prověrce Michalových odkazů (oddíl 4b) v tomhle
+   pořadí: **fotohistorie.cz** (pramen, ze kterého čerpá i Atlas zaniklých
+   krajin), **staretrutnovsko.cz** (pohlednice po jednotlivých boudách),
+   **Zaniklé krajiny** (kvůli 3D modelům zaniklých bud, ne kvůli galerii),
+   dál Krkonošské muzeum / Správa KRNAP a zanikleobce.cz. Stejnou cestou,
+   jaká vyšla u razítkových webů.
+4. **Zkusit koupit pár originálních pohlednic** (numismatika-ostrava.cz,
+   filokartické aukce) a naskenovat si je sami — je to jediná cesta, u které
+   nezáleží na nevyjasněné otázce práv k cizímu skenu, a v projektu už se
+   osvědčila u historického razítka Luční boudy.
+5. **Doptat právníka** na otevřené body z 3.3 (ochrana skenů volných děl,
    „pouhá fotografie"). Do té doby platí konzervativní postup.
 
 *Zapsáno jako podklad k rozhodnutí; nic z toho se zatím do dat ani do kódu

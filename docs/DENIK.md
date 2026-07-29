@@ -257,14 +257,44 @@ dotazu nepřebírat nic. Zároveň je to nejlepší kandidát na spolupráci, ja
 jsme zatím viděli (akademický projekt, průnik s naší položkou „Atlas
 zaniklých chat"); text oslovení připravím, až Michal řekne.
 
+**Dodatek 3 (týž den, Michal poslal tři konkrétní zdroje pohlednic):
+prověřeno — a jeden z nich ukazuje čistší cestu než všechno ostatní.**
+
+**Fotogalerie „Krkonoše staré foto" v Atlasu zaniklých krajin** má 80+ snímků
+z let 1865–1985 a přesně našich objektů (Labská, Petrova, Špindlerova,
+Erlebachova, Bradlerovy, Davidovy, Adolfova, Dvoračky, Mísečky). Jenže každý
+popisek končí formulí „zdroj: http://fotohistorie.cz" — **atlas je
+prostředník, ne pramen**, autory jednotlivých snímků neuvádí. Ptát se je tedy
+potřeba na fotohistorie.cz; u atlasu zůstává zájem o 3D modely zaniklých bud,
+což je jiná věc. **staretrutnovsko.cz** má pohlednice po jednotlivých boudách
+(Slezská, Hrnčířská, Mísečná, Dvoračky, Slezský dům…) a komerční dvojče
+starekrkonose.cz s kalendáři — sbírka je živá a strukturovaná přesně jak
+potřebujeme, ale svolení zadarmo tedy samozřejmost není a je poctivé to říct
+dopředu. Obě domény jsou ze sandboxu nedostupné (fotohistorie.cz self-signed
+certifikát, staretrutnovsko.cz timeout) — na seznam blokovaných.
+
+**A nejcennější je paradoxně e-shop.** numismatika-ostrava.cz prodává
+originální pohlednice Krkonoš od roku 1894 a v patičce má „Všechna práva
+vyhrazena", takže z webu se nesmí vzít nic — ale ukazuje postup, který celý
+právní problém obchází: **koupit originál a naskenovat si ho sám.** Pak
+nezáleží na nevyjasněné otázce, jestli má archiv práva ke svému skenu (bod
+3.3 rešerše), protože sken je náš; zbude jediná otázka, a ta se řeší dobře —
+je snímek volným dílem? U anonymní pohlednice vydané do roku 1955 ano. Je to
+přesně model, který v projektu funguje u historického razítka Luční boudy
+z Michalovy sbírky, a pořizovací cena běžné dobové pohlednice je v desítkách
+až stovkách korun.
+
 **Otázky pro Michala k dodatkům:**
 4. **Stezka korunami stromů Krkonoše** — bereme vyhlídkové stezky jako
    rozhledny, nebo je klíč míněn jen na věže?
 5. **Žalý** — souhlasíš s vedením věže a restaurace jako jednoho objektu,
    nebo je rozdělit podle pravidla o Sněžce?
-6. **Fotky** — mám připravit e-mail na Zaniklé krajiny (a případně na
-   Krkonošské muzeum / Správu KRNAP), stejným způsobem jako u razítkových
-   webů?
+6. **Fotky** — mám připravit e-maily? Pořadí podle prověrky: fotohistorie.cz
+   (pramen galerie), staretrutnovsko.cz (pohlednice po boudách), Zaniklé
+   krajiny (kvůli 3D modelům), pak Krkonošské muzeum / Správa KRNAP.
+7. **Nákup originálů** — chceš zkusit koupit pár dobových pohlednic
+   klíčových bud (Labská, Petrova, zaniklé boudy) a naskenovat je? Je to
+   licenčně nejčistší cesta, jakou jsem našel.
 
 ---
 
