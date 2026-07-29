@@ -45,3 +45,30 @@ interniPoznamky: >-
   ConnectTimeout). V načteném výtahu treking.cz nefiguruje. Žalý je známý
   především rozhlednou — zda objekt u rozhledny patří do průvodce chat,
   rozhodne redakce po otevření webu. K RUČNÍ KONTROLE.
+
+  DATA-23, průchod kandidátů rozšířeným klíčem (29. 7. 2026): důvod, kvůli
+  kterému tenhle kandidát 20. 7. zůstal ležet („je to rozhledna, ne bouda"),
+  rozšířeným klíčem PADL — Michal 26. 7. 2026 rozhodl, že rozhoduje
+  občerstvení, ne typ stavby. A občerstvení je doložené přímo v OSM tagu:
+  `amenity=restaurant` s celoroční otvírací dobou, telefonem a e-mailem
+  restaurace (viz výše; export _overpass-export-cz.json, stav dat
+  2026-06-12). Klíčem tedy prochází. Je to jediný z 93 krkonošských
+  kandidátů, u kterého rozšíření klíče něco změnilo.
+
+  Co se tím NEROZHODLO: jaký objekt to vlastně je. OSM popisuje BUDOVU —
+  `building:levels=3`, `start_date=2013-01-09`, `ref:ruian:building=34001786`,
+  `source=cuzk:ruian` — kdežto kamenná rozhledna na Žalém je stavba
+  podstatně starší, tedy objekt jiný; společný je tag
+  `contact:facebook=rozhledna.zaly`, což může (ale nemusí) znamenat jednoho
+  provozovatele obou. Podle rozhodnutí Michala o Sněžce (26. 7. 2026:
+  „udělal bych profil každého objektu zvlášť") by to byly dva profily. Nic
+  se ale nedomýšlí: rok vzniku rozhledny, její výška ani vztah obou staveb
+  nemají pramen, web zaly.cz je ze sandboxu nedostupný (ConnectTimeout,
+  potvrzeno 20. 7. 2026) a `typ` proto zůstává `obsluhovana` z OSM tagu,
+  nikoli `rozhledna`.
+
+  OTÁZKA PRO MICHALA (deník 29. 7. 2026): povýšit Žalý jako restauraci
+  u rozhledny, nebo počkat na doložení a vést rozhlednu zvlášť? Povyšování
+  Krkonoš je od 21. 7. uzavřené na 76 profilech s tím, že hraniční objekty
+  se nepřidávají bez výslovného pokynu — tenhle je první, kterému otevřel
+  cestu nový klíč, takže rozhodnutí patří Michalovi.

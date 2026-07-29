@@ -28,3 +28,22 @@ jmenovci:
       a slug s příponou obce se přidělí až s doloženou obcí (R5).
     rozhodl: Claude (návrh z 28. 7. 2026) — čeká na potvrzení Michalem
     checked: 2026-07-28
+  - jadro: slovanka
+    objekty:
+      - jizerske-hory/rozhledna-slovanka
+      - krkonose/bouda-slovanka
+    duvod: >-
+      Dva různé objekty asi 40 km od sebe: „rozhledna Slovanka"
+      v Jizerských horách (OSM way/470025078, 50,7733 / 15,1963) a „Bouda
+      Slovanka" v Krkonoších (OSM way/31360811, 50,6705 / 15,7284). Kolize
+      byla v korpusu od 28. 7. 2026, kdy přibyly rozhledny, ale kontrola ji
+      NEVIDĚLA: „rozhledna" nebyla mezi typovými slovy, takže jádra
+      „rozhledna slovanka" a „slovanka" spadla do dvou hromádek (opraveno
+      29. 7. 2026 — tenhle záznam je jediný nález té opravy). Zaměnit se
+      dnes dají jen v interních přehledech: krkonošská bouda je publikovaný
+      profil, jizerskohorská rozhledna zatím kandidát. Rozlišovač `obec`
+      (DATA-17 R2) má doložený jen jeden z nich — bouda `Černý Důl`;
+      u rozhledny se dle R6 NEVYMÝŠLÍ a doplní se z pramene při křížovém
+      ověření Jizerských hor (JIZ-01), do té doby je rozlišení interní (R5).
+    rozhodl: Claude (návrh z 29. 7. 2026) — čeká na potvrzení Michalem
+    checked: 2026-07-29

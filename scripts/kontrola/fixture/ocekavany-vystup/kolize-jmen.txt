@@ -4,11 +4,14 @@
      fixture/kolizni-bouda-dole | <<Kolizní bouda>> | obec: Žabovřesky | scripts/kontrola/fixture/15-kolize-jiny-objekt.yaml
      fixture/kolizni-bouda-hore | <<Kolizní bouda>> | obec: Zvíkovec | scripts/kontrola/fixture/14-kolize-shodny-nazev.yaml, scripts/kontrola/fixture/16-kolize-druhe-patro.yaml
 
-=== B: shodne jadro nazvu, cely nazev se lisi typovym slovem — 1 ===
+=== B: shodne jadro nazvu, cely nazev se lisi typovym slovem — 2 ===
+ * jadro <<fixturova>> — objektu: 2
+     fixture/fixturova-bouda | <<Fixturová bouda>> | obec: Kořenov | scripts/kontrola/fixture/20-kolize-jadro-rozhledna-bouda.yaml
+     fixture/rozhledna-fixturova | <<rozhledna Fixturová>> | obec: Janov | scripts/kontrola/fixture/19-kolize-jadro-rozhledna.yaml
  * jadro <<typoslovna>> — objektu: 2
      fixture/typoslovna-bouda | <<Typoslovná bouda>> | obec: Zvíkovec | scripts/kontrola/fixture/17-kolize-jadro-bouda.yaml
      fixture/typoslovna-chata | <<Typoslovná chata>> | obec: Žabovřesky | scripts/kontrola/fixture/18-kolize-jadro-chata.yaml
 
 === Z: znami jmenovci (data/_jmenovci.yaml) — rozhodnuti redakce, neshazuji beh — 0 ===
 
-souboru: 19 | profilu s nazvem: 19 | objektu: 18 | kolizi: 2 (A 1 · B 1) | znamych: 0
+souboru: 21 | profilu s nazvem: 21 | objektu: 20 | kolizi: 3 (A 1 · B 2) | znamych: 0

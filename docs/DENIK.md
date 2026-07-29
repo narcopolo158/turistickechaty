@@ -105,6 +105,87 @@ souřadnice tedy nebylo jen o mapě: rozsvítilo to i fotky a přístupové tras
 
 ---
 
+## 2026-07-29 — denní session (bezobslužný běh): DATA-23 — rozšířený klíč nad pilotem, a hlavně zjištění, že se pilotu nikdo nezeptal
+
+**Hotovo:** Pořadí backlogu: DATA-04 blokovaná (telefonáty = Michal),
+DATA-05 čeká na klik na otisky-workflow, DATA-20 na Michalovo rozhodnutí
+o sémantice pole `obec`, DATA-22 na tytéž telefonáty a na katalog
+vydavatele, který se ze sandboxu nenačte → vzata **DATA-23, bod (4)**:
+projít kandidáty znovu rozšířeným klíčem („rozhoduje občerstvení, ne typ
+stavby", Michal 26. 7.). Session neměla síť ven (Overpass ani weby chat —
+ověřeno znovu), takže průchod stojí výhradně na datech v repu. Zápis:
+`docs/DATA-23-rozhledny-sedla.md`.
+
+**Nález v Krkonoších je jediný — kandidát `zaly.yaml`.** Průchod všech
+surových OSM exportů na doložené občerstvení (tag `amenity` z gastro
+množiny, spárováno přes OSM URL s profily i kandidáty) našel devět
+publikovaných profilů, čtyři kandidáty a čtrnáct objektů mimo korpus —
+a z těch čtyř kandidátů je krkonošský jen Žalý; zbylí tři jsou
+jizerskohorští, tedy JIZ-01. Žalý má `amenity=restaurant` s celoroční
+otvírací dobou, telefonem i e-mailem restaurace, a důvod, kvůli kterému
+20. 7. zůstal ležet, zněl doslova „Žalý je známý především rozhlednou —
+zda objekt u rozhledny patří do průvodce chat, rozhodne redakce". Přesně
+tenhle důvod rozšířený klíč ruší. **Nepovyšuji ho** (povyšování Krkonoš je
+od 21. 7. uzavřené na 76 profilech a hraniční objekty se nepřidávají bez
+pokynu) a navíc není jasné, o který objekt jde: OSM popisuje budovu
+z roku 2013 s třemi podlažími a RÚIAN identifikátorem, kdežto kamenná
+rozhledna na Žalém je stavba jiná a starší. Podle rozhodnutí o Sněžce
+(„profil každého objektu zvlášť") by to byly dva profily — ale rok, výšku
+ani vztah obou staveb nemám z čeho doložit, web zaly.cz je ze sandboxu
+nedostupný, takže `typ` zůstává `obsluhovana` z OSM tagu. Vše zapsáno
+v `interniPoznamky` kandidáta.
+
+**Vyřazené se nevracejí a externí seznamy pilotu nic nepřidávají.**
+`_vyrazeno.yaml` (10 záznamů) znovu přečten: duplicity a mimo-Krkonoše se
+klíče netýkají, penziony padly na chybějícím veřejném občerstvení — a to
+rozšíření klíče nemění, protože klíč se rozšířil o typ stavby, ne
+o měřítko občerstvení. Checklist razitkuj.cz (354 míst) má jedinou
+krkonošskou položku se jménem sedla, a ta je náš publikovaný profil
+(Okraj); katalog ČR/SK (307 objektů) totéž.
+
+**Hlavní nález je ale jiný, než co položka čekala: pilotní oblast nikdy
+nedostala rozhlednový dotaz.** V `data/kandidati/krkonose/` leží exporty
+chat, ale `_overpass-rozhledny-*.json` tam není — druhý dotaz na
+`tower:type=observation` vznikl 28. 7. a ostrý běh proběhl jen pro
+Jizerské hory (kde rovnou dal osm kandidátů). Dnešní tabulka tedy poctivě
+říká „mezi objekty, na které jsme se ptali", ne „mezi objekty, které tam
+jsou". Skript i workflow jsou připravené (oblast je parametr), takže je to
+jeden klik — viz otázky níž.
+
+**Vedlejší nález, opravený týž den: kontrola jmenovců rozhledny neviděla.**
+Typ `rozhledna` přinesl do korpusu jména, která typovým slovem *začínají*
+(„rozhledna Slovanka"), jenže `kolize-jmen.ts` „rozhlednu" mezi typovými
+slovy neměl — jádra `rozhledna slovanka` a `slovanka` proto padla do dvou
+hromádek a jeden skutečný jmenovec zůstal nenahlášený: **Bouda Slovanka**
+(Krkonoše, publikovaný profil, obec Černý Důl) × **rozhledna Slovanka**
+(Jizerky, kandidát), asi 40 km od sebe. Typová slova doplněna
+(`rozhledna`, `rozhledny`, `wieza`, `widokowa`, `vyhlidka`), pár zapsán do
+`data/_jmenovci.yaml` s doklady OSM (dle R6 se `obec` u rozhledny
+nevymýšlí — doplní se z pramene při JIZ-01), fixtura rozšířena o past
+„typové slovo na začátku názvu" (soubory 19+20, snímky přegenerovány,
+rozdíl je jen v počtech souborů a v nové skupině oddílu B). Slovanka byla
+**jediný** nález opravy nad 111 objekty korpusu — kontrola je zase na nule.
+324 int testů zeleně (3 soubory padají na chybějícím `PAYLOAD_SECRET`
+v sandboxu — doloženo, že padají i bez dnešní změny), `npm run kontrola`,
+lint i tsc čisté.
+
+**Příště:** (1) po Michalově kliku na DATA-01 s oblastí `krkonose`
+zpracovat rozhlednové kandidáty pilotu a teprve pak odškrtnout DATA-23;
+(2) jinak dle pořadí — DATA-25 (projít držené i vyřazené kandidáty klíčem
+„turistická minulost"), nebo pokračování F1-IMPL (čtyřblok 3/4).
+
+**Otázky pro Michala:**
+1. **Klik:** Actions → „DATA-01: OSM export chat (dle oblasti)" → Run
+   workflow → oblast `krkonose`. Je to první rozhlednový dotaz nad pilotem;
+   bez něj je průchod DATA-23 nutně neúplný.
+2. **Žalý** — povýšit jako restauraci u rozhledny (klíčem prochází), nebo
+   počkat, až bude čím doložit samotnou rozhlednu, a vést je jako dva
+   objekty? Bez pokynu ho nechávám kandidátem.
+3. **Slovanka** — potvrzuješ zápis dvojice mezi známé jmenovce? (Stejně
+   jako u Hubertky je to zatím můj návrh, ne tvůj verdikt.)
+
+---
+
 ## 2026-07-28 — denní session (bezobslužný běh): DATA-05 — párování razítek dohnalo korpus, přiřazení nově jen potvrzené
 
 **Hotovo:** Pořadí backlogu: DATA-02 blokovaná (čeká na Michalův klik),

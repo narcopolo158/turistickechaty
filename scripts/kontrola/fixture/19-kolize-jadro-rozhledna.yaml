@@ -1,0 +1,9 @@
+# Past z 29. 7. 2026: typové slovo, které stojí NA ZAČÁTKU názvu. S typem
+# `rozhledna` (28. 7. 2026) přibyla do korpusu jména tvaru „rozhledna X",
+# a dokud „rozhledna" nebyla mezi typovými slovy, jádro znělo „rozhledna
+# fixturova" místo „fixturova" — jmenovec ve dvojici s `20-…` tedy propadl
+# bez hlášení. Reálný případ, který to odhalil: Bouda Slovanka × rozhledna
+# Slovanka (data/_jmenovci.yaml).
+slug: rozhledna-fixturova
+nazev: rozhledna Fixturová
+obec: Janov

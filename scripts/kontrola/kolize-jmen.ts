@@ -85,6 +85,17 @@ const TYPOVA = [
   'bacowka',
   'dom',
   'pttk',
+  // Typ `rozhledna` (28. 7. 2026) přivedl do korpusu jména, která typovým
+  // slovem ZAČÍNAJÍ („rozhledna Slovanka", „Wieża Widokowa Mirsk"). Dokud tu
+  // ta slova nebyla, kontrola jmenovce mezi rozhlednou a boudou téhož jména
+  // neviděla — a jeden takový v korpusu opravdu stál: krkonošská Bouda
+  // Slovanka × jizerskohorská rozhledna Slovanka, 40 km od sebe.
+  // „widokowa" je přídavné jméno, ale ve dvojici s „wieza" nese týž význam.
+  'rozhledna',
+  'rozhledny',
+  'wieza',
+  'widokowa',
+  'vyhlidka',
 ]
 const TYPOVE_SLOVO = new RegExp(` (?:${TYPOVA.join('|')}) `, 'gu')
 
