@@ -48,7 +48,20 @@ import {
 } from './data02-commons-fotky'
 import { oblastZArgv } from './oblasti'
 
-const UA = 'turistickechaty.cz (DATA-33 fotky středisek; repo narcopolo158/turistickechaty)'
+/**
+ * User-Agent MUSÍ být bez diakritiky — a stálo to jeden spadlý běh.
+ *
+ * První ostrý běh (29. 7. 2026, Michalův klik) došel až k prvnímu stažení
+ * a spadl na `Cannot convert argument to a ByteString because the character
+ * at index 36 has a value of 345`. Index 36 bylo „ř" ze slova „středisek":
+ * hodnota hlavičky se ve fetchi převádí na ByteString, do kterého se vejdou
+ * jen znaky do 255. „í" (237) projde, „ř" (345) ani „ě" (283) ne — proto
+ * tatáž chyba nikdy nepotkala DATA-05, kde je v UA jen „razítek".
+ *
+ * Kontrolu, že se sem diakritika nevrátí, dělá test `data33-fotky-stredisek`
+ * — a schválně nad VŠEMI skripty, ne jen nad tímhle.
+ */
+const UA = 'turistickechaty.cz (DATA-33 fotky stredisek; repo narcopolo158/turistickechaty)'
 /** Okruh geosearche kolem bodu obce — středisko je plocha, ne budova. */
 export const RADIUS_STREDISKA_M = 900
 
@@ -139,6 +152,33 @@ export type ZaznamManifestu = {
 const MANIFEST = (oblast: string) => join(process.cwd(), 'data', 'strediska', `_fotky-${oblast}.json`)
 const CIL = (slug: string) => join(process.cwd(), 'public', 'strediska', `${slug}.jpg`)
 
+/**
+ * Stažení snímku s opakováním. Dotazy na API opakování dávno mají (DATA-02 se
+ * to naučila na 429 od Commons, které limituje sdílené IP Actions runnerů),
+ * kdežto stahování obrázku běželo na jeden pokus — a jedna přechodná 429 by
+ * tiše nechala středisko bez fotky. Chybějící fotka se hlásí, ale mlčky vzniklá
+ * díra se hledá hůř než pád.
+ */
+const stahniObrazek = async (url: string, pokusy = 3): Promise<Buffer | null> => {
+  for (let i = 1; i <= pokusy; i++) {
+    const res = await fetch(url, { headers: { 'User-Agent': UA } })
+    if (res.ok) return Buffer.from(await res.arrayBuffer())
+    // 4xx kromě 429 opakování nespraví (403 = blokace, 404 = jiný soubor).
+    if (res.status !== 429 && res.status < 500) {
+      console.log(`    stažení: HTTP ${res.status} — neopakuji`)
+      return null
+    }
+    if (i === pokusy) {
+      console.log(`    stažení: HTTP ${res.status} ani po ${pokusy} pokusech`)
+      return null
+    }
+    const cekat = dobaCekaniMs(i, 15_000, res.headers.get('retry-after'))
+    console.log(`    stažení: HTTP ${res.status}, čekám ${Math.round(cekat / 1000)} s a zkouším znovu`)
+    await new Promise((r) => setTimeout(r, cekat))
+  }
+  return null
+}
+
 // ── běh ─────────────────────────────────────────────────────────────────────
 
 const main = async () => {
@@ -193,13 +233,13 @@ const main = async () => {
     console.log(`  ${s.nazev}: ${vybrano.soubor} (${vybrano.sirka}×${vybrano.vyska}, ${vybrano.licence}, ${vybrano.nalezeno}) + ${serazeni.length - 1} alternativ`)
 
     if (bezStahovani) continue
-    const res = await fetch(vybrano.nahled, { headers: { 'User-Agent': UA } })
-    if (!res.ok) {
-      bezFotky.push({ slug: s.slug, duvod: `stažení selhalo: HTTP ${res.status}` })
+    const data = await stahniObrazek(vybrano.nahled)
+    if (!data) {
+      bezFotky.push({ slug: s.slug, duvod: 'stažení selhalo i po opakování' })
       continue
     }
     mkdirSync(join(process.cwd(), 'public', 'strediska'), { recursive: true })
-    writeFileSync(CIL(s.slug), Buffer.from(await res.arrayBuffer()))
+    writeFileSync(CIL(s.slug), data)
   }
 
   writeFileSync(

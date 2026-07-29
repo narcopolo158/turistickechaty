@@ -7,7 +7,7 @@
  * výběru je přesně to napsané v hlavičce skriptu — jinak by se do repa
  * commitla náhodná fotka a nikdo by nepoznal proč.
  */
-import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs'
+import { mkdirSync, mkdtempSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 
@@ -51,6 +51,45 @@ const foto = (p: Partial<FotkaStrediska>): FotkaStrediska => ({
   vyska: 800,
   nalezeno: 'geosearch',
   ...p,
+})
+
+describe('hlavičky HTTP snesou jen znaky do 255', () => {
+  /**
+   * První ostrý běh DATA-33 spadl na `Cannot convert argument to a ByteString
+   * because the character at index 36 has a value of 345` — bylo to „ř" ze
+   * slova „středisek" v User-Agentu. Hodnota hlavičky se převádí na ByteString
+   * (znaky ≤ 255), takže „í" (237) projde a „ř" (345) ani „ě" (283) ne.
+   *
+   * Test schválně nekontroluje jen DATA-33: past je v tom, že se chyba
+   * neprojeví u nikoho, kdo má v UA náhodou jen znaky do 255, a další skript
+   * si ji přinese znovu. Proto se čtou VŠECHNY skripty a hlídá se KAŽDÝ řetězec
+   * přiřazený hlavičce.
+   */
+  const SKRIPTY = join(process.cwd(), 'scripts')
+  const zdroje = readdirSync(SKRIPTY)
+    .filter((f) => f.endsWith('.ts'))
+    .map((f) => ({ f, text: readFileSync(join(SKRIPTY, f), 'utf8') }))
+
+  it('žádný skript neposílá do hlavičky znak nad 255', () => {
+    const spatne: string[] = []
+    for (const { f, text } of zdroje) {
+      // 'User-Agent': '…' i konstanty, které se do hlavičky dosazují.
+      for (const m of text.matchAll(/'(?:User-Agent|Referer|Accept[\w-]*)':\s*'([^']*)'/gu)) {
+        if ([...m[1]].some((z) => z.codePointAt(0)! > 255)) spatne.push(`${f}: ${m[1]}`)
+      }
+      for (const m of text.matchAll(/^const (?:UA|USER_AGENT) = '([^']*)'/gmu)) {
+        if ([...m[1]].some((z) => z.codePointAt(0)! > 255)) spatne.push(`${f}: ${m[1]}`)
+      }
+    }
+    expect(spatne, `hlavičky s nepřevoditelným znakem:\n${spatne.join('\n')}`).toEqual([])
+  })
+
+  it('test by ten pád opravdu chytil (kontrola samotné kontroly)', () => {
+    const stary = 'turistickechaty.cz (DATA-33 fotky středisek; repo narcopolo158/turistickechaty)'
+    const zavadne = [...stary].filter((z) => z.codePointAt(0)! > 255)
+    expect(zavadne).toEqual(['ř'])
+    expect(stary.codePointAt(36)).toBe(345)
+  })
 })
 
 describe('načtení středisek', () => {

@@ -190,6 +190,15 @@ export const Oblasti: CollectionConfig = {
         },
       ],
     },
+    overeni('overeniHeroFoto', {
+      label: 'Ověření toho, co je na titulní fotce',
+      admin: {
+        description:
+          'Kdo a čím doložil, co snímek zachycuje. `verified: true` jen tehdy, ' +
+          'když to potvrdil člověk redakce vlastní znalostí místa — popis autora ' +
+          'u snímku je zdroj, ne ověření (konvence B).',
+      },
+    }),
     {
       name: 'bbox',
       type: 'group',

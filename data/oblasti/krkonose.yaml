@@ -42,21 +42,34 @@ heroFoto:
   soubor: /foto/pohori/krkonose-hero-jan-kopriva.jpg
   nahled: /foto/pohori/krkonose-hero-jan-kopriva-nahled.jpg
   alt: >-
-    Pohled z vrcholu Sněžky přes hřebenovou pláň se stavbou horské boudy,
-    v pozadí modré vrstvy vzdálených hřebenů
+    Pohled z vrcholu Sněžky přes Bílou louku na Luční boudu, v pozadí modré
+    vrstvy vzdálených hřebenů
   autor: Jan Kopřiva
   autorUrl: https://unsplash.com/@jxk
   licence: unsplash
   zdrojUrl: https://unsplash.com/photos/mbFs0yZYb74
-  # Autor u snímku uvádí „View from the top of Czech Republic - Sněžka
-  # 1603 m" (načteno 2026-07-29). Budovu na pláni ani vzdálený vrchol
-  # s vysílačem NEJMENUJEME — autor je nejmenuje a my si to nedomýšlíme.
-  popisMista: pohled z vrcholu Sněžky (dle popisu autora u snímku)
+  # Autor u snímku uvádí jen „View from the top of Czech Republic - Sněžka
+  # 1603 m" (načteno 2026-07-29) — budovu na pláni NEJMENUJE. Že je to Luční
+  # bouda, potvrdil 29. 7. 2026 Michal vlastní znalostí místa; teprve tím se
+  # smí jmenovat (konvence B, viz overeniHeroFoto níže). Vzdálený vrchol
+  # s vysílačem doložený není a jmenovaný nezůstává.
+  popisMista: Luční bouda z vrcholu Sněžky
   prevzatoDne: '2026-07-29'
-  # Pole `anotace` (rukopisná popiska se šipkou přes fotku, návrh F1) je tu
-  # ZÁMĚRNĚ prázdné: šipka musí ukazovat na doložený předmět a autor snímku
-  # budovu na pláni nejmenuje. Až bude titulní fotka, u které víme, co je na
-  # ní, vyplní se `anotace: { text, x, y, sipka }` a hlavička ji vykreslí.
+  # Rukopisná anotace se šipkou (návrh F1). `x`/`y` je POLOHA BOUDY ve
+  # vykreslené fotce (v procentech plochy) — tam míří hrot šipky a popiska se
+  # k němu skládá. Odečteno z renderu, ne odhadem.
+  anotace:
+    text: Luční bouda, 1 410 m
+    x: 53.9
+    y: 46.3
+    sipka: true
+overeniHeroFoto:
+  source: >-
+    Michal — vlastní znalost místa (29. 7. 2026, „je to Luční bouda —
+    ověřeno"). Výška 1 410 m z profilu chaty (data/chaty/krkonose/
+    lucni-bouda.yaml, zdroj lucnibouda.cz).
+  verified: true
+  checked: '2026-07-29'
 
 topCile:
   - nazev: Sněžka

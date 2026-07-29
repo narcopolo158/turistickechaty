@@ -20,10 +20,16 @@ import type { Oblasti as Oblast } from '@/payload-types'
  * CO SE SEM VĚDOMĚ NEPŘENESLO Z NÁVRHU (a proč):
  *
  *   1. **Rukopisná anotace se šipkou na Luční boudu.** Návrh ukazuje na
- *      konkrétní boudu ve fotce. U našeho snímku autor budovu na pláni
- *      NEJMENUJE (viz `data/oblasti/krkonose.yaml`), takže bychom ukazovali
- *      šipkou na dohad. Anotace se proto kreslí jen tehdy, když ji data mají
- *      (`heroFoto.anotace`) — a Krkonoše ji zatím nemají.
+ *      konkrétní boudu ve fotce, a autor našeho snímku budovu NEJMENUJE.
+ *      Anotace se proto kreslí jen tehdy, když ji data mají
+ *      (`heroFoto.anotace`) — u Krkonoš ji povolil až Michal 29. 7. 2026
+ *      vlastní znalostí místa („je to Luční bouda — ověřeno", konvence B).
+ *
+ *      `x`/`y` v datech je POLOHA PŘEDMĚTU, na který se ukazuje, ne poloha
+ *      textu: šipka má tedy hrot přesně tam a popiska se skládá k němu.
+ *      Původní pořadí (kotva u textu, šipka pevných 150×104 px) vypadalo
+ *      dobře na desktopu a na mobilu ukazovalo o dobrých padesát pixelů
+ *      vedle — rám se totiž zmenší, kdežto pevná kresba ne.
  *   2. **Podtitul „Domov nejstarší tradice horských bud — od roku 1623".**
  *      Hezká věta, ale je to tvrzení bez pole a bez pramene. Místo něj nese
  *      hlavička nadtitulek složený z doložených údajů (země fondu a typ
@@ -123,13 +129,13 @@ export default function PohoriHero({ nazev, kicker, foto, hora }: Props) {
 
         {anotaceText && (
           <div
-            className="phf-anotace"
+            className={`phf-anotace${anotace?.sipka ? '' : ' phf-anotace--bezsipky'}`}
             style={{ left: `${anotace?.x ?? 56}%`, top: `${anotace?.y ?? 24}%` }}
             aria-hidden="true"
           >
             <span className="phf-anotace-text">{anotaceText}</span>
             {anotace?.sipka && (
-              <svg className="phf-sipka" width="150" height="104" viewBox="0 0 150 104">
+              <svg className="phf-sipka" viewBox="0 0 150 104">
                 <path d="M132,6 C92,26 64,52 40,84" fill="none" strokeWidth="2.2" strokeLinecap="round" />
                 <path
                   d="M52,74 L38,86 L56,92"

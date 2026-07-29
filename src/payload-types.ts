@@ -527,6 +527,14 @@ export interface Oblasti {
     };
   };
   /**
+   * Kdo a čím doložil, co snímek zachycuje. `verified: true` jen tehdy, když to potvrdil člověk redakce vlastní znalostí místa — popis autora u snímku je zdroj, ne ověření (konvence B).
+   */
+  overeniHeroFoto?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
    * Volitelné ohraničení pro výřez mapy oblasti (WGS84).
    */
   bbox?: {
@@ -1262,6 +1270,13 @@ export interface OblastiSelect<T extends boolean = true> {
               y?: T;
               sipka?: T;
             };
+      };
+  overeniHeroFoto?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
       };
   bbox?:
     | T
