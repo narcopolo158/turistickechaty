@@ -72,13 +72,17 @@ takže tam může stát nepravdivá věta o horní stanici. Návrh: v DATA-06 p�
 slučovat body podle blízkosti, když si jejich názvy odporují (horní × dolní),
 a jména z katalogu ověřit proti stanicím z DATA-32.
 
+**Rozhodnutí Michala (30. 7. 2026): „asi počkej na celý přepočet"** — nálezu se
+tedy nedělá samostatná položka backlogu a nic se kvůli němu neopravuje ručně;
+vyřeší se, až se bude přepočítávat celá pipeline DATA-06. Do té doby platí, co
+je výš: mini-stránky lanovek jsou v pořádku (párují podle souřadnic), kdežto
+mini-stránka střediska může u některých tras vypsat jméno výchozího bodu, které
+si s jeho polohou odporuje. Až přepočet přijde, začít u něj tímhle odstavcem.
+
 **Příště:** triáž 76 jizerských kandidátů (DATA-03) po dávkách — začít osmi,
 které Michal jmenoval (Smědava, Knajpa, chaty na Jizerce).
 
 **Otázky pro Michala:**
-- Ten nález u DATA-06 (jména „horní/dolní stanice" na jednom bodu) — mám ho vzít
-  jako samostatnou položku backlogu, nebo to necháme, dokud se nebude
-  přepočítávat celá pipeline?
 - Pořád čeká: běh DATA-06 pro `jizerske-hory` (dal by střediskům GPS, mapy
   i fotky), potvrzení jizerského hera (Paličník × bučiny), určení dvou
   nepřiřazených snímků „lanovka" a DATA-01 pro `jestedsky-hrbet`.
