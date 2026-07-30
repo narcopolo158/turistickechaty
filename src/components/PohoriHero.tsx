@@ -44,6 +44,13 @@ import type { Oblasti as Oblast } from '@/payload-types'
  * z rešerše FOTO-01).
  */
 
+/**
+ * Znění kreditu podle zdroje. U mediabanky CzechTourism je **předepsané**
+ * (podmínky užití ověřené 30. 7. 2026, aktualizace podmínek 31. 7. 2025):
+ * „© CzechTourism – mediabanka, autor: [jméno]" — proto tu nestojí jen
+ * název banky jako u Unsplash, ale celý požadovaný tvar, který se skládá
+ * se jménem autora do jedné věty.
+ */
 const LICENCE_TEXT: Record<string, string> = {
   unsplash: 'Unsplash',
   pexels: 'Pexels',
@@ -53,6 +60,7 @@ const LICENCE_TEXT: Record<string, string> = {
   pd: 'volné dílo',
   'se-svolenim': 'se svolením',
   vlastni: 'foto redakce',
+  'mediabanka-czt': '© CzechTourism – mediabanka',
 }
 
 /** Nejvyšší posun fotky při scrollu (px) — víc, než kolik má obrázek přesahu. */
@@ -103,7 +111,12 @@ export default function PohoriHero({ nazev, kicker, foto, hora }: Props) {
   }
 
   const licence = foto.licence ? LICENCE_TEXT[foto.licence] : null
-  const atribuce = ['foto: ' + (foto.autor ?? 'neznámý autor'), licence].filter(Boolean).join(' · ')
+  // Mediabanka CzechTourism má znění kreditu PŘEDEPSANÉ v podmínkách, včetně
+  // pořadí slov — nesmí se poskládat naším obvyklým „foto: X · zdroj".
+  const atribuce =
+    foto.licence === 'mediabanka-czt'
+      ? `© CzechTourism – mediabanka, autor: ${foto.autor ?? 'neuveden'}`
+      : ['foto: ' + (foto.autor ?? 'neznámý autor'), licence].filter(Boolean).join(' · ')
   const anotace = foto.anotace
   const anotaceText = anotace?.text?.trim()
 

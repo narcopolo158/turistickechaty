@@ -506,7 +506,9 @@ export interface Oblasti {
     alt?: string | null;
     autor?: string | null;
     autorUrl?: string | null;
-    licence?: ('unsplash' | 'pexels' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'se-svolenim' | 'vlastni') | null;
+    licence?:
+      | ('unsplash' | 'mediabanka-czt' | 'pexels' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'se-svolenim' | 'vlastni')
+      | null;
     zdrojUrl?: string | null;
     /**
      * Píše se jen to, co dokládá popis u zdroje. Když autor budovu nejmenuje, nejmenujeme ji ani my.
@@ -545,7 +547,9 @@ export interface Oblasti {
         alt?: string | null;
         autor?: string | null;
         autorUrl?: string | null;
-        licence?: ('unsplash' | 'pexels' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'se-svolenim' | 'vlastni') | null;
+        licence?:
+          | ('unsplash' | 'mediabanka-czt' | 'pexels' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'se-svolenim' | 'vlastni')
+          | null;
         zdrojUrl?: string | null;
         /**
          * Prázdné pole = u fotky se ukáže jen atribuce. To je v pořádku.
@@ -622,7 +626,7 @@ export interface Fotky {
   lanovkaSlug?: string | null;
   datovani?: string | null;
   autor: string;
-  licence: 'vlastni' | 'se-svolenim' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'jina';
+  licence: 'vlastni' | 'se-svolenim' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'mediabanka-czt' | 'jina';
   licencePoznamka?: string | null;
   /**
    * U převzatých fotek povinné (Wikimedia Commons apod.).

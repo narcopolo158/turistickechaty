@@ -235,6 +235,53 @@ Vedle Ostravy stojí za zkoušku i aukční portály filokartie. Ke každému ku
 se pak zapíše, co říká klíč v oddílu 3.4 — a hlavně **fyzický originál je
 sám o sobě doklad**, který u staženého souboru nikdy nemáme.
 
+### 4c. Mediabanka CzechTourism (media.visitczechia.com) — prověřeno 30. 7. 2026
+
+Zdroj od Michala. **Podmínky ověřeny přímo na `media.visitczechia.com/terms`**
+(poslední aktualizace podmínek 31. 7. 2025). Shrnutí toho, co je pro nás
+podstatné:
+
+| Co | Jak to je |
+|---|---|
+| Registrace | **Není potřeba**, stahování zdarma |
+| Web / internet | **Povolen** — nekomerčně i komerčně |
+| Podmínka obsahu | „Obsah musí propagovat Českou republiku jako destinaci cestovního ruchu" |
+| Kredit | **Povinný a s předepsaným zněním** (viz níž), viditelně, v jazyce cílové země |
+| Komerční sdělení | U nekomerčního užití se snímek **nesmí spojovat s komerční nabídkou** |
+| Sublicencování | **Zakázáno** |
+| Hromadné užití | **Zakázáno:** „Uživatelé nesmějí jednotlivé fotografie nebo jejich celky užívat systematicky, opakovaně či nadměrně" |
+| Úpravy | Podmínky **mlčí** → konzervativně jen ořez, nic, co by měnilo vyznění |
+| Porušení | „Neoprávněným užitím obsahu může dojít ke spáchání správního deliktu či trestného činu" |
+
+**Předepsané znění kreditu** (jedna z variant, doslova):
+
+> Tato fotografie byla získána z mediabanky České centrály cestovního ruchu –
+> CzechTourism. Autor fotografie: [jméno]
+
+nebo zkráceně:
+
+> © CzechTourism – mediabanka, autor: [jméno]
+
+**Naše rozhodnutí (30. 7. 2026): ANO, ale jen ručně a po kusech.**
+
+- **K čemu ano:** titulní (hero) fotky pohoří a krajinné snímky. Průvodce
+  českými horskými chatami podmínku „propagovat ČR jako destinaci" splňuje
+  bez natahování.
+- **K čemu ne:** profily chat. Platí totéž, co u Unsplash a Pexels (oddíl 3):
+  fotka chaty musí prokazatelně zachycovat **ten objekt**, a to snímek
+  z turistické banky bez geotagu nedoloží.
+- **Hlavní omezení, které se nás týká nejvíc:** zákaz systematického
+  a hromadného užití. Naše pipeline (DATA-02, DATA-33) je přesně to, co se
+  nesmí — **mediabanku proto do žádného skriptu nezapojujeme**. Jednotlivé
+  vybrané snímky stahuje člověk.
+- **Pozor do budoucna:** kdyby web někdy nesl reklamu nebo affiliate odkazy
+  vedle takové fotky, podmínka „bez komerční nabídky" padá. Až to bude
+  aktuální, projít znovu.
+- Zapsáno v datech: kolekce `Fotky` i hero pohoří mají licenci
+  `mediabanka-czt` a web u ní vypisuje **předepsané znění kreditu**, ne naše
+  obvyklé „foto: X · zdroj".
+
+
 ## 5. Co z toho navrhuju udělat v projektu
 
 1. **Rozšířit kolekci `Fotky` o právní pole**, aby se pět bodů z klíče 3.4 dalo

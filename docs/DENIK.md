@@ -57,6 +57,32 @@ staretrutnovsko.cz, Zaniklé krajiny (jiný cíl než ostatní: práva ke galeri
 nedrží, zajímavé jsou 3D modely zaniklých bud, a nabízíme jim naše data) a
 Krkonošské muzeum / KRNAP. **Čeká na Michala — odeslat.**
 
+**Dodatek téhož večera — mediabanka CzechTourism** (Michal poslal odkaz
+`media.visitczechia.com/terms` s dotazem, jestli je to OK): **prověřeno,
+ANO — ale jen ručně a po kusech.** Registrace není potřeba, web je povolen
+komerčně i nekomerčně, podmínka „obsah musí propagovat ČR jako destinaci
+cestovního ruchu" nám sedí bez natahování. Dvě věci ale mění, jak s bankou
+zacházet:
+
+1. **Zákaz systematického užití** — doslova „Uživatelé nesmějí jednotlivé
+   fotografie nebo jejich celky užívat systematicky, opakovaně či nadměrně".
+   To je přesně popis našich pipeline (DATA-02, DATA-33), takže **mediabanku
+   do žádného skriptu nezapojujeme**; jednotlivé snímky vybírá a stahuje
+   člověk.
+2. **Kredit má předepsané znění** — „© CzechTourism – mediabanka, autor:
+   [jméno]". Naše obvyklé „foto: X · zdroj" by podmínku nesplnilo, i když
+   autora poctivě jmenuje. Hero pohoří proto u téhle licence skládá kredit
+   jinak než u všech ostatních; hlídá to test (a kontrola samotné kontroly,
+   ať nechytá jen zmizení obvyklého tvaru).
+
+Platí i tady rozlišení z rešerše: **hero pohoří ano, profily chat ne** —
+fotka chaty musí doložit, že je na ní ten objekt, a snímek z turistické
+banky to bez geotagu neudělá. Podmínky mají poslední aktualizaci
+31. 7. 2025; zápis je v `docs/FOTKY-ZDROJE-A-LICENCE.md`, oddíl 4c, i s
+tabulkou a citacemi. Pozor do budoucna: kdyby web nesl reklamu vedle takové
+fotky, podmínka „bez komerční nabídky" padá.
+
+
 **JIZ-01 nezačato, a proč:** položka pořád visí na **dvou klicích do
 Actions** (DATA-01 export kandidátů pro `jizerske-hory`, DATA-28 terén).
 V repu leží tři kandidáti z krkonošských běhů, na triáž to nestačí, a ze

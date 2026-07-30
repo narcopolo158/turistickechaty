@@ -152,6 +152,11 @@ export const Fotky: CollectionConfig = {
             { label: 'CC BY-SA', value: 'cc-by-sa' },
             { label: 'CC0', value: 'cc0' },
             { label: 'Volné dílo (public domain)', value: 'pd' },
+            // Mediabanka CzechTourism: stažení zdarma bez registrace, web
+            // povolen komerčně i nekomerčně, ale kredit má PŘEDEPSANÉ znění
+            // a platí zákaz systematického a hromadného užití — proto vlastní
+            // volba, ne „jiná" (viz docs/FOTKY-ZDROJE-A-LICENCE.md, odd. 4c).
+            { label: 'Mediabanka CzechTourism', value: 'mediabanka-czt' },
             { label: 'Jiná (viz poznámka)', value: 'jina' },
           ],
           admin: { width: '50%' },

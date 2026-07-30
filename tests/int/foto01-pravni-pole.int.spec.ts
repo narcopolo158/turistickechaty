@@ -12,6 +12,9 @@
  * k redakci commitnutou konfigurací, stejně jako se noc dostane ke čtenáři
  * commitnutým stylopisem.
  */
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
+
 import { APIError } from 'payload'
 import { describe, expect, it } from 'vitest'
 
@@ -78,5 +81,30 @@ describe('brána: „nevyjasněno" se nepublikuje', () => {
 
   it('fotky bez právních polí (Commons, CC) se nezměnily — brána se jich netýká', () => {
     expect(() => hook({ data: { typ: 'soucasna', licence: 'cc-by-sa' } })).not.toThrow()
+  })
+})
+
+/**
+ * Mediabanka CzechTourism (prověřena 30. 7. 2026, na Michalův podnět).
+ *
+ * Podmínky banky předepisují ZNĚNÍ kreditu doslova — „© CzechTourism –
+ * mediabanka, autor: [jméno]". Náš obvyklý tvar „foto: X · zdroj" by tedy
+ * podmínku nesplnil, i když by autora poctivě jmenoval. Test hlídá právě
+ * tenhle rozdíl: je to jediné místo, kde nestačí uvést autora po svém.
+ */
+describe('mediabanka CzechTourism — předepsaný kredit', () => {
+  it('licence je mezi volbami u fotek i u hero pohoří', () => {
+    const licence = podleJmena('licence')?.options?.map((o) => o.value) ?? []
+    expect(licence).toContain('mediabanka-czt')
+    const oblasti = readFileSync(join(process.cwd(), 'src/collections/Oblasti.ts'), 'utf8')
+    expect(oblasti).toContain("value: 'mediabanka-czt'")
+  })
+
+  it('hero vypisuje předepsané znění, ne naše obvyklé „foto: X · zdroj"', () => {
+    const hero = readFileSync(join(process.cwd(), 'src/components/PohoriHero.tsx'), 'utf8')
+    expect(hero).toContain('© CzechTourism – mediabanka, autor:')
+    // A kontrola samotné kontroly: obvyklý tvar v komponentě pořád je,
+    // takže test nechytá jen to, že se odtud „foto: " ztratilo.
+    expect(hero).toContain("'foto: '")
   })
 })

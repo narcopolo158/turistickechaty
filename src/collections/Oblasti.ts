@@ -136,6 +136,9 @@ export const Oblasti: CollectionConfig = {
               label: 'Licence',
               options: [
                 { label: 'Unsplash License', value: 'unsplash' },
+                // Mediabanka CzechTourism — kredit má předepsané znění
+                // (viz docs/FOTKY-ZDROJE-A-LICENCE.md, odd. 4c).
+                { label: 'Mediabanka CzechTourism', value: 'mediabanka-czt' },
                 { label: 'Pexels License', value: 'pexels' },
                 { label: 'CC BY', value: 'cc-by' },
                 { label: 'CC BY-SA', value: 'cc-by-sa' },
@@ -245,6 +248,9 @@ export const Oblasti: CollectionConfig = {
               label: 'Licence',
               options: [
                 { label: 'Unsplash License', value: 'unsplash' },
+                // Mediabanka CzechTourism — kredit má předepsané znění
+                // (viz docs/FOTKY-ZDROJE-A-LICENCE.md, odd. 4c).
+                { label: 'Mediabanka CzechTourism', value: 'mediabanka-czt' },
                 { label: 'Pexels License', value: 'pexels' },
                 { label: 'CC BY', value: 'cc-by' },
                 { label: 'CC BY-SA', value: 'cc-by-sa' },
