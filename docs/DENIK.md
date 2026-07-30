@@ -11,6 +11,57 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (večer, podruhé) — DATA-01 pro Ještěd spadlo: ptali jsme se Polska na český hřbet
+
+**Hotovo:** Michalův druhý běh DATA-01 skončil červeně po **17 minutách**.
+Z logu je to čitelné celé:
+
+- `Oblast: Ještědský hřbet (jestedsky-hrbet) — okno dotazu 50.62,14.8,50.84,15.12`
+- **Český dotaz prošel** — `Export cz: 7 objektů, stav OSM dat 2026-06-01`.
+- Pak přišel polský dotaz a **selhal třikrát u tří instancí**: dvakrát HTTP 504
+  („přetížená instance"), ale jinde `0 objektů — instance nejspíš nemá
+  celosvětová data`. Po třech kolech s pauzami 30 a 90 s běh spadl na exit 1.
+- Tím pádem se **nezacommitoval ani hotový český export**: commit krok se po
+  nenulovém návratovém kódu přeskočí. Sedm nalezených objektů šlo do koše.
+
+**Příčina není přetížený Overpass, ale to, že jsme se ptali.** Ještědský hřbet
+je **celý v Česku** — v okně (50,62–50,84 N, 14,8–15,12 E) žádné polské území
+neleží, polská odpověď tedy byla prázdná právem. Jenže prázdno se ve výchozím
+stavu počítá za **selhání instance** (instance bez celosvětových dat vrací
+totéž), takže se legitimní „nic tu není" tvářilo jako výpadek a stálo tři kola
+retry.
+
+Konfigurace oblasti přitom `zeme: ['CZ']` nesla od 30. 7. — jenže DATA-01 měla
+seznam zemí napevno v konstantě `ZEME_DOTAZU = [CZ, PL]` a konfigurace se
+neptala. (Dopoledne jsem tohle opravil v DATA-06 novou funkcí `zemeDotazu`,
+ale do DATA-01 jsem ji nedotáhl — pipeline se opravují celé, ne po jedné.)
+
+**Oprava:** `ZEME_DOTAZU` je pryč; DATA-01 i DATA-31 berou země z konfigurace
+oblasti (`zemeDotazu(oblast)`), a to ve všech třech dotazech — chaty,
+dohledávka podle jmen i rozhledny. Ověřeno: Ještěd pošle **jeden** dotaz (CZ),
+Krkonoše i Jizerky beze změny **dva** (CZ, PL).
+
+**Druhá, menší oprava — čitelný verdikt.** Když spadne druhá země, log končil
+zdí selhaných instancí a nebylo z něj poznat, že první země je hotová a že se
+ani ta nezacommituje. Nově se před pádem vypíše: které země už byly hotové, že
+se jejich data NEcommitnou a že běh stačí zopakovat.
+
+**Testy:** 552 (z 551) — přibylo „Ještědský hřbet se Polska neptá"; test
+krkonošských zemí se přepsal z konstanty na konfiguraci, aby držel rozhodnutí,
+ne implementaci.
+
+**Příště:** až Michal pustí DATA-01 pro Ještěd znovu, projít nálezy (má jich
+být kolem sedmi + dohledávka podle jmen a rozhledny) a založit triáž. Pak
+jizerských 75 kandidátů.
+
+**Otázka pro Michala:**
+- **Má neúplný běh commitnout, co stihl?** Dnešní stav je „všechno, nebo nic":
+  když spadne druhá země, přijde vniveč i hotová první (dnes 17 minut). Šlo by
+  zapsat, co se povedlo, a v souhrnu i commitu jasně napsat, která země chybí —
+  kandidáti se jen přidávají, nic se nepřepisuje, takže by to nebylo
+  destruktivní. Cena je, že „zelený" běh by pak nemusel znamenat úplný export.
+  Nechávám na tobě, sám bych se do změny významu zeleného běhu nepouštěl.
+
 ## 2026-07-30 (večer) — „u data-06 nejde vybrat oblast"
 
 **Hotovo:** Michal chtěl spustit DATA-06 pro Jizerky a zjistil, že tlačítko

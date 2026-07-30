@@ -43,7 +43,7 @@ import {
   stahniOverpass,
   type OsmElement,
 } from './data01-overpass-krkonose'
-import { bboxStr, oblastZArgv } from './oblasti'
+import { bboxStr, oblastZArgv, zemeDotazu } from './oblasti'
 
 export type ProfilBezGps = { slug: string; nazev: string; obec: string | null; webDomena: string | null }
 
@@ -247,10 +247,9 @@ const main = async () => {
   const jmena = [...profily.map((p) => p.nazev), ...profily.map((p) => jadroProDotaz(p.nazev)).filter((j) => j.length >= 3)]
   const domeny = profily.map((p) => p.webDomena).filter((d): d is string => !!d)
   const elementy: OsmElement[] = []
-  for (const { zeme, iso } of [
-    { zeme: 'cz', iso: 'CZ' },
-    { zeme: 'pl', iso: 'PL' },
-  ]) {
+  // Země bere konfigurace oblasti (stejně jako DATA-01) — u oblasti celé
+  // v Česku by polský dotaz byl jen prázdný soubor a minuta navíc.
+  for (const { zeme, iso } of zemeDotazu(oblast)) {
     const soubor = join(kandAdr, `_overpass-gps-${zeme}.json`)
     let raw: string
     if (zJsonu) {

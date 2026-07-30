@@ -52,7 +52,7 @@ import { join } from 'node:path'
 
 import { parse, stringify } from 'yaml'
 
-import { bboxStr, oblastZArgv, type OblastKonfig } from './oblasti'
+import { bboxStr, oblastZArgv, zemeDotazu, type OblastKonfig } from './oblasti'
 
 // Slug generujeme stejně jako Payload hook — jeden zdroj pravdy.
 import { slugify } from '../src/fields/slug'
@@ -103,15 +103,18 @@ export const nactiVyrazene = (soubor: string = VYRAZENO_SOUBOR): Map<string, str
 }
 
 /**
- * Krkonoše bereme celé — přes státní hranici (rozhodnutí Michala 20. 7.;
- * obecný princip pro přeshraniční pohoří, příště německá strana Šumavy).
- * Země se dotazuje po jedné (průnik area státu + bbox), aby každý kandidát
- * nesl doloženou `zeme` — bbox sám hranici nezná a domýšlet ji nebudeme.
+ * Přeshraniční pohoří bereme celá — přes státní hranici (rozhodnutí Michala
+ * 20. 7.; obecný princip, příště německá strana Šumavy). Země se dotazuje po
+ * jedné (průnik area státu + okno), aby každý kandidát nesl doloženou `zeme` —
+ * okno samo hranici nezná a domýšlet ji nebudeme.
+ *
+ * KTERÉ země to jsou, říká konfigurace oblasti (`zemeDotazu` v oblasti.ts), ne
+ * konstanta tady. Do 30. 7. 2026 tu stálo napevno CZ + PL a běh pro Ještědský
+ * hřbet — celý v Česku — se proto ptal i Polska. Prázdná odpověď se přitom
+ * počítá za selhání instance (instance bez celosvětových dat vrací totéž), tak
+ * to zkusil třikrát u tří instancí, 17 minut se přesypávalo a nakonec spadlo
+ * na exit 1. Úspěšný český export (7 objektů) tím propadl bez commitu.
  */
-export const ZEME_DOTAZU: { zeme: Zeme; iso: string }[] = [
-  { zeme: 'cz', iso: 'CZ' },
-  { zeme: 'pl', iso: 'PL' },
-]
 
 export type Zeme = 'cz' | 'pl'
 
@@ -777,9 +780,14 @@ const main = async () => {
   const okno = bboxStr(oblast.bbox)
   console.log(`Oblast: ${oblast.nazev} (${oblast.slug}) — okno dotazu ${okno}`)
 
+  // Jeden seznam pro všechny tři dotazy (chaty, dohledávka podle jmen,
+  // rozhledny) — kdyby se lišily, ptala by se každá část jiných zemí.
+  const zeme_dotazu = zemeDotazu(oblast).map((z) => ({ iso: z.iso, zeme: z.zeme as Zeme }))
+  console.log(`Země dotazu: ${zeme_dotazu.map((z) => z.iso).join(', ')} (dle konfigurace oblasti)`)
+
   const polozky: ExportPolozka[] = []
   const stavy: string[] = []
-  for (const { zeme, iso } of ZEME_DOTAZU) {
+  for (const { zeme, iso } of zeme_dotazu) {
     const soubor = join(kandAdr, `_overpass-export-${zeme}.json`)
     let raw: string
     if (zJsonu) {
@@ -791,7 +799,21 @@ const main = async () => {
       raw = readFileSync(soubor, 'utf8')
     } else {
       console.log(`Overpass dotaz ${iso} (hutové tagy + civilně tagované boudy podle názvu, ${iso} ∩ okno ${oblast.nazev}); instance: ${instance.join(', ')}…`)
-      const vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno), { povolitPrazdno })
+      // Když spadne DRUHÁ země, výpis končí zdí selhaných instancí a není z něj
+      // vidět, že první země je hotová a že se ani ta nezacommituje (běh skončí
+      // nenulovým kódem, commit krok se přeskočí). Verdikt to řekne rovnou.
+      let vysledek: Awaited<ReturnType<typeof stahniOverpass>>
+      try {
+        vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno), { povolitPrazdno })
+      } catch (chyba) {
+        const hotove = stavy.length ? stavy.map((s) => s.split(' ')[0]!.toUpperCase()).join(', ') : 'žádná'
+        console.error(
+          `\nDotaz ${iso} se nepovedl. Hotové země do této chvíle: ${hotove} — jejich data se NEcommitnou, ` +
+            `běh je neúplný. Zopakuj workflow (Overpass instance bývají přetížené po nárazech), ` +
+            `nebo pusť jen tuhle zemi znovu.`,
+        )
+        throw chyba
+      }
       raw = vysledek.raw
       console.log(`Staženo z ${vysledek.api}.`)
       mkdirSync(kandAdr, { recursive: true })
@@ -815,7 +837,7 @@ const main = async () => {
   const nalezenaJmena = new Set<string>()
   if (jmena.length) {
     console.log(`\nDohledávka podle ${jmena.length} jmen z externího katalogu (${oblast.katalogPohori?.join(', ')})…`)
-    for (const { zeme, iso } of ZEME_DOTAZU) {
+    for (const { zeme, iso } of zeme_dotazu) {
       const soubor = join(kandAdr, `_overpass-dle-jmen-${zeme}.json`)
       let raw: string
       if (zJsonu) {
@@ -863,7 +885,7 @@ const main = async () => {
   const rozhlednyBezObcerstveni: { nazev: string; url: string }[] = []
   const rozhlednyNizke: { nazev: string; url: string; vyska: number }[] = []
 
-  for (const { zeme, iso } of ZEME_DOTAZU) {
+  for (const { zeme, iso } of zeme_dotazu) {
     const soubor = join(kandAdr, `_overpass-rozhledny-${zeme}.json`)
     let raw: string
     if (zJsonu) {

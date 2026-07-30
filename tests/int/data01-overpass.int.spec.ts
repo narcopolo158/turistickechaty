@@ -13,7 +13,6 @@ import { parse } from 'yaml'
 
 import {
   OKOLI_OBCERSTVENI_M,
-  ZEME_DOTAZU,
   chataZElementu,
   MIN_VYSKA_ROZHLEDNY_M,
   jePrilisNizka,
@@ -34,6 +33,7 @@ import {
   type ExportPolozka,
   type OsmElement,
 } from '../../scripts/data01-overpass-krkonose'
+import { oblastDleSlugu, zemeDotazu } from '../../scripts/oblasti'
 
 const CHECKED = '2026-07-20'
 
@@ -59,11 +59,22 @@ describe('overpassDotaz', () => {
   })
 
   it('Krkonoše se dotazují za obě země — ČR i Polsko (přeshraniční pohoří vcelku)', () => {
-    expect(ZEME_DOTAZU).toEqual([
+    expect(zemeDotazu(oblastDleSlugu('krkonose'))).toEqual([
       { zeme: 'cz', iso: 'CZ' },
       { zeme: 'pl', iso: 'PL' },
     ])
     expect(overpassDotaz('PL')).toContain('area["ISO3166-1"="PL"]')
+  })
+
+  /**
+   * Běh z 30. 7. 2026 spadl na tom, že se Ještědského hřbetu — celého v Česku —
+   * ptal i Polska. V okně (50.62–50.84 N, 14.8–15.12 E) žádné polské území
+   * není, takže odpověď byla prázdná; prázdno se ale počítá za selhání
+   * instance, a po třech kolech u tří instancí (17 minut) spadl celý běh
+   * s exit 1 — i s hotovým českým exportem, který se tím nezacommitoval.
+   */
+  it('Ještědský hřbet se Polska neptá — je celý v Česku', () => {
+    expect(zemeDotazu(oblastDleSlugu('jestedsky-hrbet'))).toEqual([{ zeme: 'cz', iso: 'CZ' }])
   })
 })
 
