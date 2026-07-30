@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-28T18:32:36Z",
-    "timestamp_areas_base": "2026-07-27T18:43:01Z",
+    "timestamp_osm_base": "2026-07-30T07:35:01Z",
+    "timestamp_areas_base": "2026-05-12T07:36:16Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -128,6 +128,42 @@
 },
 {
   "type": "node",
+  "id": 3077189931,
+  "lat": 50.7397458,
+  "lon": 15.3462618,
+  "tags": {
+    "addr:city": "Kořenov",
+    "addr:conscriptionnumber": "1",
+    "addr:country": "CZ",
+    "addr:housenumber": "1",
+    "addr:place": "Příchovice",
+    "addr:postcode": "46848",
+    "amenity": "restaurant",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "U Čápa",
+    "phone": "+420 724 188 462",
+    "source:addr": "cuzk:ruian",
+    "tourism": "hotel",
+    "website": "https://ucapa.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 3510131409,
+  "lat": 50.7421743,
+  "lon": 15.1296955,
+  "tags": {
+    "ele": "586",
+    "height": "24",
+    "man_made": "tower",
+    "name": "Nad Prosečí",
+    "tower:construction": "stone",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
   "id": 4692722113,
   "lat": 50.7513826,
   "lon": 15.2825303,
@@ -181,6 +217,36 @@
 },
 {
   "type": "node",
+  "id": 7367255224,
+  "lat": 50.7457721,
+  "lon": 15.2901007,
+  "tags": {
+    "fee": "no",
+    "man_made": "tower",
+    "tower:construction": "Špička_na_Malém_Špičáku",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7847415253,
+  "lat": 50.7420261,
+  "lon": 15.1299280,
+  "tags": {
+    "amenity": "restaurant",
+    "brewery": "Radegast",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Chata Proseč",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
   "id": 9032501824,
   "lat": 50.7637911,
   "lon": 15.2927280,
@@ -189,6 +255,16 @@
     "name": "Světlý vrch",
     "tower:type": "observation",
     "wikidata": "Q114980894"
+  }
+},
+{
+  "type": "node",
+  "id": 13970692693,
+  "lat": 50.7463278,
+  "lon": 15.3657768,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Kiosek"
   }
 },
 {
@@ -265,6 +341,118 @@
     "tower:type": "observation",
     "wikidata": "Q897545",
     "wikipedia": "cs:Bramberk"
+  }
+},
+{
+  "type": "way",
+  "id": 203263417,
+  "center": {
+    "lat": 50.7309301,
+    "lon": 15.2141626
+  },
+  "nodes": [
+    4896431871,
+    4896431870,
+    4896431869,
+    4896431868,
+    2132556327,
+    4896431867,
+    4896431866,
+    2132556326,
+    4896431865,
+    4896431864,
+    4896431863,
+    4896431862,
+    4896431861,
+    2132556324,
+    4896431860,
+    4896431859,
+    4896431858,
+    4896431857,
+    4896431856,
+    4896431855,
+    2132556320,
+    4896431854,
+    4896431853,
+    4896431852,
+    4896431851,
+    4896431850,
+    4896431849,
+    4896431848,
+    4896431847,
+    2132556321,
+    4896431846,
+    4896431845,
+    4896431844,
+    4896431843,
+    2132556323,
+    4896431842,
+    4896431841,
+    4896431840,
+    4896431839,
+    4896431838,
+    2132556325,
+    4896431837,
+    4896431836,
+    4896431835,
+    4896431834,
+    4896431833,
+    4896431832,
+    2132556328,
+    4896431831,
+    4896431871
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "19",
+    "man_made": "tower",
+    "name": "Rozhledna Nisanka",
+    "ref:ruian:building": "49158589",
+    "source": "cuzk:ruian",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 303365344,
+  "center": {
+    "lat": 50.7399206,
+    "lon": 15.3453645
+  },
+  "nodes": [
+    3077190147,
+    4844435549,
+    3077190148,
+    4844435550,
+    4844435556,
+    4844435551,
+    3077190149,
+    4844435552,
+    4844435553,
+    3077190150,
+    4844435544,
+    3077190152,
+    4844435545,
+    4844435555,
+    4844435546,
+    4844435554,
+    4844435547,
+    3077190151,
+    3077190153,
+    3077190154,
+    4844435548,
+    3077190147
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "23.7",
+    "man_made": "tower",
+    "name": "Rozhledna Maják J. Cimrmanna",
+    "opening_hours": "May-Sep 10:00-18:00; Oct-Apr 10:00-17:00",
+    "start_date": "2013",
+    "tower:type": "observation",
+    "wikipedia": "cs:Maják Járy Cimrmana"
   }
 },
 {
@@ -350,6 +538,63 @@
     "name": "vyhlídka na Harrachov",
     "tourism": "viewpoint",
     "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1056085802,
+  "center": {
+    "lat": 50.7464976,
+    "lon": 15.3659075
+  },
+  "nodes": [
+    9703964103,
+    9703964102,
+    9703964101,
+    9703964100,
+    9703964099,
+    9703964098,
+    9703964097,
+    9703964096,
+    9703964103
+  ],
+  "tags": {
+    "building": "civic",
+    "building:ruian:type": "5",
+    "man_made": "tower",
+    "name": "Štěpánka",
+    "ref:ruian:building": "44225318",
+    "source": "cuzk:ruian",
+    "tower:type": "observation",
+    "wikidata": "Q9373865"
+  }
+},
+{
+  "type": "way",
+  "id": 1448026583,
+  "center": {
+    "lat": 50.7457677,
+    "lon": 15.2900984
+  },
+  "nodes": [
+    13285829143,
+    13285829144,
+    13285829145,
+    13285829146,
+    13285829147,
+    13285829148,
+    13285829149,
+    13285829150,
+    13285829151,
+    13285829152,
+    13285829143
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "man_made": "tower",
+    "tower:construction": "metal",
     "tower:type": "observation"
   }
 },

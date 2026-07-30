@@ -2,12 +2,36 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-28T18:32:36Z",
-    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "timestamp_osm_base": "2026-07-30T07:34:01Z",
+    "timestamp_areas_base": "2026-07-29T06:16:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
+{
+  "type": "node",
+  "id": 664098358,
+  "lat": 50.7488538,
+  "lon": 15.1960500,
+  "tags": {
+    "addr:conscriptionnumber": "23",
+    "addr:country": "CZ",
+    "addr:housenumber": "23",
+    "addr:place": "Jindřichov",
+    "addr:postcode": "46602",
+    "email": "info@chatajavor.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Javor",
+    "operator": "Ladislav Marko",
+    "phone": "+420 608 272 931",
+    "ref:ruian:addr": "12125814",
+    "reservation": "recommended",
+    "rooms": "23",
+    "tourism": "alpine_hut",
+    "website": "http://www.chatajavor.cz"
+  }
+},
 {
   "type": "node",
   "id": 2650423742,
@@ -74,6 +98,46 @@
 },
 {
   "type": "way",
+  "id": 29689152,
+  "center": {
+    "lat": 50.7483559,
+    "lon": 15.4474469
+  },
+  "nodes": [
+    326762802,
+    326762788,
+    326762748,
+    326762722,
+    326762692,
+    326762670,
+    326762649,
+    326762535,
+    326762517,
+    326762500,
+    326762472,
+    326762451,
+    326762429,
+    326762413,
+    2083158920,
+    2083158922,
+    326762925,
+    326762890,
+    326762863,
+    326762836,
+    326762802
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:flats": "1",
+    "building:ruian:type": "11",
+    "name": "Chata Studenov",
+    "ref:ruian:building": "15013022",
+    "source": "cuzk:ruian",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
   "id": 30778232,
   "center": {
     "lat": 50.8249909,
@@ -130,6 +194,34 @@
     "name:de": "Hubertusbaude",
     "source": "cuzk:km",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 127173127,
+  "center": {
+    "lat": 50.7352717,
+    "lon": 15.4447117
+  },
+  "nodes": [
+    1408244760,
+    1408244778,
+    1408244783,
+    1408244769,
+    1408244760
+  ],
+  "tags": {
+    "building": "residential",
+    "building:flats": "1",
+    "building:levels": "4",
+    "building:ruian:type": "3",
+    "name": "Penzion Roxana",
+    "ref:ruian:building": "15001679",
+    "source": "cuzk:ruian",
+    "source:name": "survey 1 Jul 2013",
+    "source:tourism": "survey 1 Jul 2013",
+    "tourism": "alpine_hut",
+    "website": "http://www.rokytnice.com/roxana"
   }
 },
 {
