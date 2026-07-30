@@ -15,7 +15,7 @@
  * poctivě označené jako odhad. Orientace: geometrie z routingu je chata→nástup,
  * pro profil se OTÁČÍ na nástup→chata (stoupání k chatě).
  */
-import { existsSync, readFileSync, writeFileSync } from 'node:fs'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 import {
@@ -28,6 +28,7 @@ import {
   type ProfilBod,
 } from './vyskovy-profil'
 import { cestyOblasti, oblastZArgv } from './oblasti'
+import { lzeDopocitatVysky, popisStavu, stavRetezu } from './data06-stav'
 
 const OBLAST = oblastZArgv()
 const VYSTUP_JSON = join(cestyOblasti(OBLAST.slug).trasy, 'pristupove-trasy.json')
@@ -100,7 +101,18 @@ const main = async () => {
     console.error('Chybí API klíč: nastav MAPY_API_KEY (secret v Actions) nebo NEXT_PUBLIC_MAPY_API_KEY v .env.')
     process.exit(1)
   }
-  if (!existsSync(VYSTUP_JSON)) throw new Error(`Chybí ${VYSTUP_JSON} — nejdřív DATA-06 3b (přístupové trasy).`)
+  // „Ještě není na řadě" není chyba běhu — viz data06-stav.ts. Rozlišit to
+  // musíme tady, jinak workflow zčervená i tam, kde se jen sešlo pořadí prací
+  // (Michal 30. 7. 2026: výšky pro Jizerky, které nemají publikované profily).
+  const stav = stavRetezu(OBLAST.slug)
+  const verdikt = lzeDopocitatVysky(OBLAST, stav)
+  if (!verdikt.lze) {
+    console.log(popisStavu(OBLAST, stav))
+    console.log(`\n${verdikt.duvod}`)
+    if (verdikt.chyba) process.exit(1)
+    console.log('\nBěh končí bez práce — nic se nezkazilo, jen na tenhle krok ještě nedošlo.')
+    return
+  }
 
   const katalog = JSON.parse(readFileSync(VYSTUP_JSON, 'utf8')) as Katalog
   let hotovo = 0

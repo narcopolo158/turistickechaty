@@ -11,6 +11,58 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (noc) — „ještě není na řadě" není chyba běhu
+
+**Hotovo:** Michal pustil pro Jizerky poslední krok DATA-06 (výšky
+přístupových tras) a workflow zčervenalo: *„Chybí
+data/trasy/jizerske-hory/pristupove-trasy.json — nejdřív DATA-06 3b."*
+Hláška byla pravdivá a k ničemu — **3b pro Jizerky spustit nejde**: oblast
+nemá jediný publikovaný profil chaty (75 kandidátů čeká na triáž), takže není
+ke které chatě trasu počítat. Poslal jsem ho tím do slepé uličky.
+
+**Rozdíl, který dosud nikde nebyl:** chybějící vstup znamená dvě různé věci.
+Buď se **přeskočil krok** (oblast na něj má, jen se nespustil ten před ním) —
+to je chyba pořadí a má spadnout červeně. Nebo **na krok ještě nedošlo** —
+a to není chyba běhu, jen pořadí prací; červený křížek by tvrdil, že se něco
+pokazilo. Nový `scripts/data06-stav.ts` to rozlišuje a oba dotčené kroky
+(routing 3b, výšky) se podle toho chovají: buď `exit 1`, nebo klidné skončení
+bez práce.
+
+Běh navíc teď vypíše, **kde oblast v řetězu stojí**, ať je další krok vidět:
+
+```
+Stav řetězu DATA-06 pro oblast Jizerské hory (jizerske-hory):
+  1. značené trasy ............ jsou
+  2. výchozí body ............. CHYBÍ
+  —  publikované profily chat . ŽÁDNÉ (kandidáti čekají na triáž DATA-03)
+  3b. přístupové trasy ........ CHYBÍ
+```
+
+Z toho je rovnou vidět, co má smysl klikat: **Jizerky už mají značené trasy**
+(122 tras, stav OSM 30. 7. 2026 — Michalův běh prošel), takže na řadě jsou
+**výchozí body**, a ty jsou zrovna to, z čeho vzniknou GPS středisek.
+
+**Ještě jedna past, na kterou jsem přišel při zkoušení:** i kdyby skript
+skončil v pořádku, workflow by stejně zčervenalo — commit krok dělal
+`git add` na neexistující soubor. Teď si existenci ověří.
+
+**Kolize po ještědském běhu (CI bylo červené).** Michalův DATA-01 pro Ještěd
+přinesl dva kandidáty, kteří už byli v Jizerkách: `Česká chalupa`
+a `Rozhledna Liberecká výšina`. Nejsou to jmenovci — je to **týž OSM objekt**
+(shodné id i souřadnice), protože se okna Jizerek a Ještědu přes Liberec
+překrývají. Zůstala jizerská kopie a rozhodlo o tom měření, ne dojem: oba
+objekty leží 2,8 a 4,4 km od centra Liberce v azimutu **62–64°**, tedy na
+severovýchodní straně liberecké kotliny, kdežto Ještěd je 6,3 km v azimutu
+**233°** — na opačné straně města. Na ještědský hřbet tedy nepatří. Obojí je
+zapsané v `_vyrazeno.yaml` i s tím, že o příslušnosti k průvodci (rozhledna
+s občerstvením? městská hrana?) rozhodne teprve triáž.
+
+**Testy:** 567 (z 557) — deset nových na stav řetězu, hlavně na ten rozdíl
+mezi „přeskočeno" a „ještě nedošlo", a na to, že výšky u oblasti bez profilů
+NEradí „spusť 3b" (což je právě to, co udělat nejde).
+
+**Příště:** triáž jizerských kandidátů — tím se odemkne routing i výšky.
+
 ## 2026-07-30 (večer, potřetí) — neúplný běh zapíše, co našel
 
 **Hotovo:** Michal rozhodl otázku z minulého zápisu: *„uprav to tak, že

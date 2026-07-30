@@ -213,3 +213,29 @@ vyrazeno:
       na tobě"); vedeno stejně jako Žalý.
     rozhodl: Claude (30. 7. 2026, pravidlo rozhleden z 28. 7. 2026)
     checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/1478639957
+    slug: jestedsky-hrbet/rozhledna-liberecka-vysina
+    duvod: >-
+      TÝŽ OSM objekt jako jizerske-hory/rozhledna-liberecka-vysina (shodné id
+      i souřadnice 50,77819 / 15,09166) — mechanická duplicita ze dvou oken:
+      jizerské (50,73–51,02 N; 15,05–15,45 E) a ještědské (50,62–50,84 N;
+      14,8–15,12 E) se přes Liberec překrývají. Zůstává jizerská kopie:
+      rozhledna stojí 2,8 km od centra Liberce v azimutu 64°, tedy na
+      SEVEROVÝCHODNÍ straně liberecké kotliny, kdežto Ještěd leží 6,3 km
+      v azimutu 233° — na opačné straně města. Na ještědský hřbet tedy
+      nepatří. Zda objekt vůbec patří do průvodce (rozhledna s doloženým
+      občerstvením? městská hrana?), rozhodne triáž JIZ-01 / DATA-03 —
+      tenhle záznam řeší jen dvojí výskyt téhož objektu.
+    rozhodl: Claude (30. 7. 2026, oblasti přenechal Michal 30. 7. 2026)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/196388693
+    slug: jestedsky-hrbet/ceska-chalupa
+    duvod: >-
+      TÝŽ OSM objekt jako jizerske-hory/ceska-chalupa (shodné id i souřadnice
+      50,78614 / 15,11148) — táž mechanická duplicita z překryvu oken jako
+      u Liberecké výšiny. Zůstává jizerská kopie: objekt leží 4,4 km od centra
+      Liberce v azimutu 62° (severovýchodně, k Jizerkám), Ještěd je opačným
+      směrem (233°); k Ještědu je to 10,7 km. Příslušnost k průvodci posoudí
+      triáž JIZ-01 / DATA-03.
+    rozhodl: Claude (30. 7. 2026, oblasti přenechal Michal 30. 7. 2026)
+    checked: 2026-07-30

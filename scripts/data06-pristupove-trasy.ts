@@ -33,6 +33,7 @@ import {
 import { nactiDoporuceneZeSouboru, type DoporucenyBod, type OsmBod } from './data06-katalog-vychozi'
 import { type TrasaRelace } from './data06-trasy'
 import { cestyOblasti, oblastZArgv } from './oblasti'
+import { lzeRoutovat, popisStavu, stavRetezu } from './data06-stav'
 
 /**
  * Cesty se odvozují od zvolené oblasti (`--oblast`), ne napevno. Do 30. 7. 2026
@@ -204,7 +205,15 @@ const nactiChaty = (dir: string): Chata[] => {
 // ── CLI ─────────────────────────────────────────────────────────────────────
 
 const main = () => {
-  if (!existsSync(EXPORT_JSON)) throw new Error(`Export tras ${EXPORT_JSON} neexistuje — workflow „DATA-06: export značených tras".`)
+  const stav = stavRetezu(cesty.oblast.slug)
+  const verdikt = lzeRoutovat(cesty.oblast, stav)
+  if (!verdikt.lze) {
+    console.log(popisStavu(cesty.oblast, stav))
+    console.log(`\n${verdikt.duvod}`)
+    if (verdikt.chyba) process.exit(1)
+    console.log('\nBěh končí bez práce — nic se nezkazilo, jen na tenhle krok ještě nedošlo.')
+    return
+  }
 
   const { elementy } = nactiExport(readFileSync(EXPORT_JSON, 'utf8'))
   const graf = postavGraf(elementy as unknown as TrasaRelace[])

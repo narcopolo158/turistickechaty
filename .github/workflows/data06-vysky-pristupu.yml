@@ -61,7 +61,16 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add "data/trasy/${OBLAST}/pristupove-trasy.json"
+          # Soubor nemusí existovat: u oblasti, která na tenhle krok ještě
+          # nedošla (nemá publikované profily), skript korektně skončí bez
+          # práce — a `git add` neexistující cesty by běh shodil na červeno
+          # za něco, co chyba není.
+          SOUBOR="data/trasy/${OBLAST}/pristupove-trasy.json"
+          if [ ! -f "$SOUBOR" ]; then
+            echo "Soubor $SOUBOR neexistuje — běh neměl co počítat, není co commitovat."
+            exit 0
+          fi
+          git add "$SOUBOR"
           if git diff --cached --quiet; then
             echo 'Beze změny — nic ke commitu.'
             exit 0
