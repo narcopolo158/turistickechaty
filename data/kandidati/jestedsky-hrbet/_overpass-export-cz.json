@@ -1,0 +1,137 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-30T16:47:30Z",
+    "timestamp_areas_base": "2026-07-30T00:32:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1488735697,
+  "lat": 50.7303225,
+  "lon": 14.9865574,
+  "tags": {
+    "capacity": "22",
+    "check_date": "2024-08-07",
+    "email": "chatajestedka@seznam.cz",
+    "name": "Horská chata Ještědka",
+    "tourism": "alpine_hut",
+    "website": "http://www.jestedka.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 1798342294,
+  "lat": 50.7437258,
+  "lon": 14.9784175,
+  "tags": {
+    "amenity": "fast_food",
+    "description:de": "Baude in den 1930er Jahren.",
+    "name": "Bouda Tetřeví sedlo",
+    "name:de": "Ausgespann-Baude",
+    "outdoor_seating": "yes",
+    "url": "http://deutschboehmen.de/index.php?title=Kammweg"
+  }
+},
+{
+  "type": "node",
+  "id": 3418246133,
+  "lat": 50.7290692,
+  "lon": 15.1009363,
+  "tags": {
+    "name": "Tyršova chata",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 6943200711,
+  "lat": 50.8000967,
+  "lon": 14.8234454,
+  "tags": {
+    "name": "Černá Louže",
+    "tourism": "chalet",
+    "website": "https://kempcernalouze.cz/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 9751061036,
+  "lat": 50.7688118,
+  "lon": 14.8335627,
+  "tags": {
+    "name": "Black Cattle Camp",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 168593461,
+  "center": {
+    "lat": 50.7208246,
+    "lon": 15.0031958
+  },
+  "nodes": [
+    1798339918,
+    1798339899,
+    1798339876,
+    1798339870,
+    1798339912,
+    1798339918
+  ],
+  "tags": {
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Chata Pláně pod Ještědem",
+    "source": "cuzk:km",
+    "tourism": "alpine_hut",
+    "website": "http://www.plane.cz",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 196388693,
+  "center": {
+    "lat": 50.7861375,
+    "lon": 15.1114760
+  },
+  "nodes": [
+    2067309273,
+    2067309270,
+    5808184333,
+    5808184334,
+    5808184332,
+    2067309263,
+    2067309262,
+    2067309260,
+    2067309257,
+    2067309258,
+    2067309249,
+    2067309256,
+    2067309259,
+    2067309261,
+    2067309273
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:levels": "1",
+    "building:ruian:type": "5",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "name": "Česká chalupa",
+    "opening_hours": "Sa,Su 12:00-16:00",
+    "outdoor_seating": "yes",
+    "ref:ruian:building": "23349531",
+    "source": "cuzk:ruian",
+    "tourism": "hotel"
+  }
+}
+
+  ]
+}

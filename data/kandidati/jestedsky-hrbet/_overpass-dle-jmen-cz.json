@@ -1,0 +1,68 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-30T16:47:30Z",
+    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1798340204,
+  "lat": 50.7326460,
+  "lon": 14.9847780,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "horský hotel Ještěd"
+  }
+},
+{
+  "type": "node",
+  "id": 6271348193,
+  "lat": 50.7207109,
+  "lon": 15.0032245,
+  "tags": {
+    "air_conditioning": "no",
+    "amenity": "restaurant",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Pláně pod Ještědem",
+    "opening_hours": "Mo-Fr 11:00-20:00; Sa 10:30-20:00; Su 10:30-18:00",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "smoking": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 168593461,
+  "center": {
+    "lat": 50.7208246,
+    "lon": 15.0031958
+  },
+  "nodes": [
+    1798339918,
+    1798339899,
+    1798339876,
+    1798339870,
+    1798339912,
+    1798339918
+  ],
+  "tags": {
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Chata Pláně pod Ještědem",
+    "source": "cuzk:km",
+    "tourism": "alpine_hut",
+    "website": "http://www.plane.cz",
+    "wheelchair": "no"
+  }
+}
+
+  ]
+}
