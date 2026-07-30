@@ -11,6 +11,78 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (podvečer) — „jak to může být pěšky kratší než vzdušnou čarou?"
+
+**Hotovo:** Michal si na mini-stránce lanovky **Lysá Hora (A5)** všiml řádky,
+která nemohla být pravda: „Chata Dvoračky · 1 140 m · **823 m vzdušnou čarou**
+· **pěšky 0,6 km**". Pěšky se nedá jít kratší cestou než vzdušnou čarou.
+
+**Obě čísla byla spočítaná správně — jen každé z jiného místa.** Vzdušná čára
+se měřila od horní stanice lanovky (50,75388/15,50645), kdežto délka trasy od
+jejího doloženého začátku, který leží **638 m odtud**. Dvě různá východiska
+v jedné řádce vypadají jako chyba měření, i když chyba je v tom páru.
+
+**Proč tam ten odstup je — a že to není vada pipeline.** Změřeno proti síti
+značených tras z Overpassu (230 825 uzlů): nejbližší uzel značené sítě je od
+horní stanice A5 vzdálený **637 m** a náš začátek trasy JE jeden z těch
+nejbližších uzlů. Horní stanice A5 prostě na značenou síť v OSM navázaná není.
+DATA-06 tedy odvedlo, co šlo; dopočítat těch 638 m by znamenalo vymyslet si
+spojku, kterou v datech nemáme. Zbývá to **říct**, ne to zamlčet.
+
+**Rozsah problému (měřeno na všech dvojicích lanovka–chata v obou oblastech):**
+z osmi párů si **tři** odporovaly — Lysá Hora A5 → Dvoračky (odstup 638 m),
+Karkonosz Express → Schronisko Szrenica (509 m) a Hofmanky Express → Černá
+bouda (650 m). Trasy, které u stanice **opravdu** začínají, mají odstup 13, 46
+a 60 m. Mezi 60 a 509 m je v datech díra — hranice `ZACINA_U_BODU_M = 150`
+leží v ní, ne v odhadu.
+
+**Oprava (`src/lib/pristupy.ts` + mini-stránka lanovky):** nové
+`jakUkazatPesky(delkaKm, odstupM, vzdusnaM)` rozhoduje, kdy smí stát holé
+„pěšky X km". Holé je smí být jen tehdy, když trasa u toho bodu začíná **a**
+číslo si se vzdušnou čarou neodporuje; jinak se odstup **musí** ukázat:
+„pěšky 0,6 km — ovšem po značené cestě, která začíná 638 m od stanice".
+Délku nikde neskrýváme, jen se u ní říká, odkud se měří.
+
+Pozor na past, do které jsem šlápl na první pokus: u Hofmanky Expressu začíná
+u téhož bodu **deset** tras, takže se tatáž věta vypsala desetkrát a přestala
+být čitelná. Když je odstup u všech řádků společný, řekne se **jednou** pod
+seznamem („Všechny tyhle trasy začínají na jednom místě 650 m od horní
+stanice").
+
+**Mimochodem — čísla sekcí.** Na stránce Lysé hory stálo 01, 02, **04**: číslo
+mapy bylo napsané napevno a chybějící sekce po sobě nechala díru. Teď se počítá
+z toho, které sekce na stránce opravdu jsou.
+
+**Testy:** nový `tests/int/pesky-vs-vzduch.int.spec.ts` (8) drží pravidlo i
+skutečná data — kdyby se do dat vrátil pár, který mlčí o odstupu, spadne to
+v CI, ne na stránce. Celkem **548** testů, `npm run kontrola` zelená.
+
+**Nález k DATA-06, který sem patří zapsat (neopravováno):** několik různých
+názvů výchozích bodů z katalogu sedí na **jednom** uzlu sítě, a to i takových,
+které si odporují. Bod 50,63138/15,77069 (21 m od **dolní** stanice
+Černohorského Expressu, 688 m n. m.) nese jméno „Janské Lázně, **horní** stanice
+kabinkové lanovky Černohorský Express" — horní je přitom v 1 260 m. Bod
+50,68435/15,72201 (50 m od dolní stanice Hnědého vrchu) nese jména tři, mezi
+nimi „Pec pod Sněžkou, **horní** stanice lanovky Sněžka" (ta je v 1 602 m)
+a „**Portášky**, horní stanice lanovky". Bod 50,79485/15,51466 je naopak horní
+stanice Szrenicy II (1 294 m), ale jmenuje se „…**dolní** stanice lanovky".
+Mini-stránky lanovek to nepálí — trasy se párují podle **souřadnic**, ne podle
+jmen —, ale mini-stránka střediska ta jména vypisuje doslova („z bodu: …"),
+takže tam může stát nepravdivá věta o horní stanici. Návrh: v DATA-06 přestat
+slučovat body podle blízkosti, když si jejich názvy odporují (horní × dolní),
+a jména z katalogu ověřit proti stanicím z DATA-32.
+
+**Příště:** triáž 76 jizerských kandidátů (DATA-03) po dávkách — začít osmi,
+které Michal jmenoval (Smědava, Knajpa, chaty na Jizerce).
+
+**Otázky pro Michala:**
+- Ten nález u DATA-06 (jména „horní/dolní stanice" na jednom bodu) — mám ho vzít
+  jako samostatnou položku backlogu, nebo to necháme, dokud se nebude
+  přepočítávat celá pipeline?
+- Pořád čeká: běh DATA-06 pro `jizerske-hory` (dal by střediskům GPS, mapy
+  i fotky), potvrzení jizerského hera (Paličník × bučiny), určení dvou
+  nepřiřazených snímků „lanovka" a DATA-01 pro `jestedsky-hrbet`.
+
 ## 2026-07-30 (odpoledne, dodatek) — osm snímků z mediabanky CzechTourism: hera pro dvě nové oblasti a Rokytnice
 
 **Hotovo:** Michal poslal **osm snímků z mediabanky CzechTourism i s licenčními

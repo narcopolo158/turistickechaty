@@ -11,7 +11,7 @@ import { fotkaLanovky } from '@/lib/fotky-lanovek'
 import { redakcniFotkyLanovek } from '@/lib/fotky-redakcni'
 import { formatVyskaM } from '@/lib/katalog'
 import { lanovkaPodleSlugu, lanovkySeSlugy } from '@/lib/lanovky'
-import { pristupyOdBodu, zdrojPristupu, type Usek } from '@/lib/pristupy'
+import { jakUkazatPesky, pristupyOdBodu, zdrojPristupu, type Usek } from '@/lib/pristupy'
 import { vrcholyOblasti } from '@/lib/vrcholy'
 
 import '../../../../pohori.css'
@@ -81,6 +81,37 @@ const format = (n: number): string => n.toLocaleString('cs-CZ')
 const formatKm = (km: number | null): string =>
   km == null ? '—' : `${km.toLocaleString('cs-CZ', { maximumFractionDigits: 1 })} km`
 
+/**
+ * Řádek „pěšky …". Když trasa u stanice nezačíná, řekne se to rovnou v něm —
+ * bez toho vycházelo, že je pěšky blíž než vzdušnou čarou (viz `jakUkazatPesky`).
+ */
+const Pesky = ({
+  delkaKm,
+  odstupM,
+  vzdusnaM,
+  odstupJinde,
+}: {
+  delkaKm: number | null
+  odstupM: number
+  vzdusnaM?: number | null
+  /** Odstup je řečený hromadně pod seznamem — v řádku by se jen opakoval. */
+  odstupJinde?: boolean
+}) => {
+  const jak = jakUkazatPesky(delkaKm, odstupM, vzdusnaM ?? null)
+  if (!jak) return <>délku trasy nemáme spočítanou</>
+  return (
+    <>
+      pěšky {formatKm(jak.km)}
+      {jak.odstupM != null && !odstupJinde && (
+        <span className="mini-chata-odkud">
+          {' '}
+          — ovšem po značené cestě, která začíná {format(jak.odstupM)} m od stanice
+        </span>
+      )}
+    </>
+  )
+}
+
 const vzdalenostM = (a: { lat: number; lng: number }, b: { lat: number; lng: number }): number => {
   const stred = ((a.lat + b.lat) / 2) * (Math.PI / 180)
   return Math.hypot((a.lng - b.lng) * Math.cos(stred) * 111_320, (a.lat - b.lat) * 110_540)
@@ -109,6 +140,13 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
   }))
   const vNahore = new Set(nahore.map((n) => n.slug))
   const pesky = vsechnyPristupy.filter((p) => !vNahore.has(p.slug))
+  // Když všechny trasy v seznamu začínají u jednoho a téhož bodu mimo stanici
+  // (Hofmanky Express: deset tras z horní stanice Černohorského Expressu 650 m
+  // odtud), řekne se to JEDNOU pod seznamem. V každém řádku by z toho byla
+  // desetkrát tatáž věta a čtenář by ji přestal vidět.
+  const odstupyPesky = new Set(pesky.map((p) => jakUkazatPesky(p.delkaKm, p.odstupM, null)?.odstupM))
+  const spolecnyOdstupM =
+    pesky.length > 1 && odstupyPesky.size === 1 ? ([...odstupyPesky][0] ?? null) : null
   const vrcholy = (vrcholyOblasti(oblastSlug)?.vrcholy ?? [])
     .map((v) => ({ ...v, odstupM: Math.round(vzdalenostM(l.horni, v)) }))
     .filter((v) => v.odstupM <= OKOLI_CILU_M)
@@ -128,6 +166,20 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
       url: ch!.url!,
       typ: ch!.typ,
     }))
+
+  // Čísla sekcí se počítají z toho, které sekce na stránce OPRAVDU jsou.
+  // Napevno napsaná („04" u mapy) dělala na stránce Lysé hory řadu 01, 02, 04 —
+  // čtenář hledá, co mu vypadlo, a nic mu nevypadlo.
+  const cislo = (() => {
+    let n = 0
+    return (je: boolean) => (je ? String(++n).padStart(2, '0') : null)
+  })()
+  const cisla = {
+    nahore: cislo(nahore.length > 0),
+    pesky: cislo(pesky.length > 0),
+    cile: cislo(vrcholy.length > 0),
+    mapa: cislo(naMapu.length > 0),
+  }
 
   return (
     <div className="wrap mini">
@@ -181,7 +233,7 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
 
       {nahore.length > 0 && (
         <section className="sec" aria-label="Chaty u horní stanice">
-          <SectionBar num="01" title="Chaty u horní stanice" variant="red" />
+          <SectionBar num={cisla.nahore!} title="Chaty u horní stanice" variant="red" />
           <ul className="mini-chaty">
             {nahore.map((n) => (
               <li key={n.slug} className="mini-chata">
@@ -196,7 +248,16 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
                   <span className="mini-chata-fakta">
                     {n.chata?.vyska != null && <>{formatVyskaM(n.chata.vyska)} · </>}
                     {format(n.vzdalenostM)} m vzdušnou čarou
-                    {n.pristup?.delkaKm != null && <> · pěšky {formatKm(n.pristup.delkaKm)}</>}
+                    {n.pristup?.delkaKm != null && (
+                      <>
+                        {' · '}
+                        <Pesky
+                          delkaKm={n.pristup.delkaKm}
+                          odstupM={n.pristup.odstupM}
+                          vzdusnaM={n.vzdalenostM}
+                        />
+                      </>
+                    )}
                   </span>
                   {n.pristup && znackyTrasy(n.pristup.useky).length > 0 && (
                     <span className="mini-znacky">
@@ -214,7 +275,7 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
 
       {pesky.length > 0 && (
         <section className="sec" aria-label="Odtud pěšky">
-          <SectionBar num={nahore.length ? '02' : '01'} title="Dál pěšky odtud" variant="red" />
+          <SectionBar num={cisla.pesky!} title="Dál pěšky odtud" variant="red" />
           <ul className="mini-chaty">
             {pesky.map((p) => {
               const znacky = znackyTrasy(p.useky)
@@ -231,7 +292,11 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
                     <b>{chata?.url ? <Link href={chata.url}>{p.nazev}</Link> : p.nazev}</b>
                     <span className="mini-chata-fakta">
                       {chata?.vyska != null && <>{formatVyskaM(chata.vyska)} · </>}
-                      {formatKm(p.delkaKm)}
+                      <Pesky
+                        delkaKm={p.delkaKm}
+                        odstupM={p.odstupM}
+                        odstupJinde={spolecnyOdstupM != null}
+                      />
                     </span>
                     {znacky.length > 0 && (
                       <span className="mini-znacky">
@@ -246,19 +311,25 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
             })}
           </ul>
           <p className="pohori-mikropozn">
-            Trasy, které u horní stanice začínají (do 800 m od ní) — z pipeline přístupových tras.
-            Značky pocházejí z OpenStreetMap, délka je půdorysná. Čas chůze neuvádíme.
+            {spolecnyOdstupM != null && (
+              <>
+                <b>
+                  Všechny tyhle trasy začínají na jednom místě {format(spolecnyOdstupM)} m od horní
+                  stanice
+                </b>{' '}
+                — k jejich délce si tedy připočtěte cestu ke značce.{' '}
+              </>
+            )}
+            Trasy z okolí horní stanice (do 800 m od ní) — z pipeline přístupových tras. Značky
+            pocházejí z OpenStreetMap, délka je půdorysná a <b>měří se od začátku trasy, ne od
+            stanice</b>. Čas chůze neuvádíme.
           </p>
         </section>
       )}
 
       {vrcholy.length > 0 && (
         <section className="sec" aria-label="Cíle u horní stanice">
-          <SectionBar
-            num={nahore.length && pesky.length ? '03' : nahore.length || pesky.length ? '02' : '01'}
-            title="Cíle u horní stanice"
-            variant="blue"
-          />
+          <SectionBar num={cisla.cile!} title="Cíle u horní stanice" variant="blue" />
           <ul className="mini-cile">
             {vrcholy.map((v) => (
               <li key={v.nazev}>
@@ -278,7 +349,7 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
 
       {naMapu.length > 0 && (
         <section className="sec" aria-label="Mapa">
-          <SectionBar num="04" title="Chaty nahoře na mapě" variant="red" />
+          <SectionBar num={cisla.mapa!} title="Chaty nahoře na mapě" variant="red" />
           <MapaChat chaty={naMapu} />
         </section>
       )}

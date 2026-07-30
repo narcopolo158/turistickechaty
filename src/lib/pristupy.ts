@@ -192,6 +192,42 @@ const vzdalenostM = (
  * bodu, takže výchozí bod je POSLEDNÍ prvek. Podle prvního to nesedělo — tam
  * stojí chata a všechny její přístupy tím pádem začínají „na tomtéž místě".
  */
+/**
+ * Do kolika metrů se doložený začátek trasy počítá za „u toho bodu". Uzly
+ * stanic v OSM a napojení na cestní síť nesedí na metr, takže nějaká vůle
+ * být musí; 150 m je zvolených tak, aby se do nich vešlo snapování, ale ne
+ * vedlejší stanice ani parkoviště o půl kilometru dál. Měření z 30. 7. 2026
+ * (8 párů lanovka–chata v Krkonoších): trasy, které u stanice skutečně
+ * začínají, mají odstup 13, 46 a 60 m; ty, které začínají jinde, 509, 638
+ * a 650 m. Mezi tím je díra, hranice leží v ní.
+ */
+export const ZACINA_U_BODU_M = 150
+
+/**
+ * Jak se smí délka trasy ukázat vedle vzdušné čáry z daného bodu.
+ *
+ * Vzniklo 30. 7. 2026 z Michalovy otázky nad mini-stránkou lanovky Lysá hora
+ * (A5): „jak to může být pěšky kratší než vzdušnou čarou?" Stálo tam
+ * „Chata Dvoračky · 823 m vzdušnou čarou · pěšky 0,6 km". Obojí bylo správně
+ * spočítané, ale z JINÝCH bodů: vzdušná čára od horní stanice, kdežto délka
+ * trasy od jejího doloženého začátku 638 m odtud. Dvě různá východiska
+ * v jedné řádce vypadají jako chyba měření, i když chyba je v páru.
+ *
+ * Vrací `odstupM: null`, když trasa začíná tady a číslo si se vzdušnou čarou
+ * neodporuje — pak se ukáže prostě „pěšky X km". Jinak vrací odstup, který
+ * MUSÍ být v textu vidět: ne že bychom délku zatajili, ale musí být řečeno,
+ * odkud se měří. `null` znamená, že délku nemáme vůbec.
+ */
+export const jakUkazatPesky = (
+  delkaKm: number | null,
+  odstupM: number,
+  vzdusnaM: number | null,
+): { km: number; odstupM: number | null } | null => {
+  if (delkaKm == null) return null
+  const odporujeSi = vzdusnaM != null && delkaKm * 1_000 < vzdusnaM
+  return { km: delkaKm, odstupM: odstupM > ZACINA_U_BODU_M || odporujeSi ? odstupM : null }
+}
+
 export const pristupyOdBodu = (
   oblastSlug: string,
   bod: { lat: number; lng: number },
