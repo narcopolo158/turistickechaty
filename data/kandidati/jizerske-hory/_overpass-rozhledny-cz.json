@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-30T07:35:01Z",
-    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "timestamp_osm_base": "2026-05-31T22:37:44Z",
+    "timestamp_areas_base": "2026-05-31T22:37:44Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -258,39 +258,6 @@
   }
 },
 {
-  "type": "node",
-  "id": 13970692693,
-  "lat": 50.7463278,
-  "lon": 15.3657768,
-  "tags": {
-    "amenity": "fast_food",
-    "name": "Kiosek"
-  }
-},
-{
-  "type": "node",
-  "id": 13970694504,
-  "lat": 50.7561983,
-  "lon": 15.2055081,
-  "tags": {
-    "amenity": "restaurant",
-    "name": "Chata Bramberk",
-    "opening_hours": "Mo-Su 10:00-20:00; Fr,Sa 10:00-22:00",
-    "outdoor_seating": "yes"
-  }
-},
-{
-  "type": "node",
-  "id": 13970694657,
-  "lat": 50.7616561,
-  "lon": 15.4299016,
-  "tags": {
-    "amenity": "fast_food",
-    "name": "Čerťák",
-    "outdoor_seating": "yes"
-  }
-},
-{
   "type": "way",
   "id": 101211426,
   "center": {
@@ -312,6 +279,30 @@
     "tourism": "viewpoint",
     "tower:type": "observation",
     "wikidata": "Q1245661"
+  }
+},
+{
+  "type": "way",
+  "id": 159686358,
+  "center": {
+    "lat": 50.7616555,
+    "lon": 15.4299008
+  },
+  "nodes": [
+    1717941465,
+    1717941467,
+    1717941460,
+    1717941456,
+    1717941465
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "building": "civic",
+    "building:ruian:type": "15",
+    "name": "Čerťák",
+    "outdoor_seating": "yes",
+    "ref:ruian:building": "38495392",
+    "source": "cuzk:ruian"
   }
 },
 {
@@ -341,6 +332,37 @@
     "tower:type": "observation",
     "wikidata": "Q897545",
     "wikipedia": "cs:Bramberk"
+  }
+},
+{
+  "type": "way",
+  "id": 173702374,
+  "center": {
+    "lat": 50.7562006,
+    "lon": 15.2055077
+  },
+  "nodes": [
+    1844732545,
+    4807747071,
+    4807747070,
+    1844732548,
+    1844732503,
+    1844732481,
+    4807747069,
+    4807747068,
+    1844732480,
+    1844732501,
+    1844732545
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:ruian:type": "5",
+    "name": "Chata Bramberk",
+    "opening_hours": "Mo-Su 10:00-20:00; Fr,Sa 10:00-22:00",
+    "outdoor_seating": "yes",
+    "ref:ruian:building": "12061522",
+    "source": "cuzk:ruian"
   }
 },
 {
@@ -568,6 +590,29 @@
     "source": "cuzk:ruian",
     "tower:type": "observation",
     "wikidata": "Q9373865"
+  }
+},
+{
+  "type": "way",
+  "id": 1056085803,
+  "center": {
+    "lat": 50.7463278,
+    "lon": 15.3657767
+  },
+  "nodes": [
+    9703964107,
+    9703964106,
+    9703964105,
+    9703964104,
+    9703964107
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "building": "yes",
+    "building:ruian:type": "19",
+    "name": "Kiosek",
+    "ref:ruian:building": "44224001",
+    "source": "cuzk:ruian"
   }
 },
 {

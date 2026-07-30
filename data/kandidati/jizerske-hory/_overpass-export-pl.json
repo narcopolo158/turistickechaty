@@ -2,12 +2,50 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-05-31T22:37:44Z",
-    "timestamp_areas_base": "2026-05-31T22:37:44Z",
+    "timestamp_osm_base": "2026-07-30T10:03:02Z",
+    "timestamp_areas_base": "2026-07-29T06:16:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
+{
+  "type": "node",
+  "id": 6594821676,
+  "lat": 50.9107029,
+  "lon": 15.3233668,
+  "tags": {
+    "amenity": "restaurant",
+    "brewery": "Perła",
+    "cuisine": "fish",
+    "name": "Chata Izerska",
+    "payment": "credit_cards"
+  }
+},
+{
+  "type": "node",
+  "id": 7775524087,
+  "lat": 50.9690726,
+  "lon": 15.3384459,
+  "tags": {
+    "internet_access": "wlan",
+    "name": "Chata Rycha",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "node",
+  "id": 10251520737,
+  "lat": 50.9479386,
+  "lon": 15.3286894,
+  "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Wolimierz",
+    "name": "Agroturystyka Chata na Borowinowej",
+    "phone": "+48 698 618 710",
+    "tourism": "guest_house",
+    "website": "https://chatanaborowinowej.pl/"
+  }
+},
 {
   "type": "way",
   "id": 98214072,
@@ -50,8 +88,7 @@
     1370090660
   ],
   "tags": {
-    "amenity": "restaurant",
-    "building": "yes",
+    "building": "hotel",
     "contact:email": "chatkagorzystow@o2.pl",
     "contact:facebook": "https://www.facebook.com/pages/Chatka-G%C3%B3rzyst%C3%B3w/148609605212071",
     "description": "Własność: prywatne. Otwarte: cały rok Ceny: 29 zł, „gleba” 12, pole namiotowe 10 zł, rabaty: HDK",
@@ -59,8 +96,8 @@
     "name:de": "Groß-Iser-Baude",
     "name:pl": "Chatka Górzystów",
     "note": "budynek nie ma oficjalnego adresu-sprawdzone w Starostwie Powiatowym Lwówek Śląski",
-    "phone": "+48 75 753 25 33",
-    "phone_1": "+48 607 426 998",
+    "phone": "+48 75 753 25 33;+48 607 426 998",
+    "restaurant": "yes",
     "shower": "yes",
     "toilets": "yes",
     "tourism": "alpine_hut",
@@ -112,6 +149,95 @@
     "wheelchair": "no",
     "wikidata": "Q11835730",
     "wikipedia": "pl:Schronisko PTTK na Stogu Izerskim"
+  }
+},
+{
+  "type": "way",
+  "id": 397427035,
+  "center": {
+    "lat": 50.9107598,
+    "lon": 15.3232884
+  },
+  "nodes": [
+    4002227987,
+    4002227975,
+    4002227887,
+    4002227902,
+    4002227987
+  ],
+  "tags": {
+    "addr:city": "Świeradów-Zdrój",
+    "addr:city:simc": "0936457",
+    "addr:housenumber": "18",
+    "addr:postcode": "59-850",
+    "addr:street": "Zakopiańska",
+    "addr:street:sym_ul": "25458",
+    "building": "yes",
+    "name": "Izerska Chata",
+    "source:addr": "mswieradowzdroj.e-mapa.net",
+    "source:geometry": "geoportal.gov.pl, GPS",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 402181381,
+  "center": {
+    "lat": 50.9485176,
+    "lon": 15.3687673
+  },
+  "nodes": [
+    4046030968,
+    4046030961,
+    4046030956,
+    4046030965,
+    4046030968
+  ],
+  "tags": {
+    "addr:city:simc": "0191218",
+    "addr:housenumber": "24",
+    "addr:place": "Kamień",
+    "addr:postcode": "59-630",
+    "building": "yes",
+    "building:levels": "2",
+    "internet_access": "yes",
+    "name": "Schronisko Turystyczne \"Halny\"",
+    "rooms": "11",
+    "source:addr": "emuia.gugik.gov.pl",
+    "source:geometry": "geoportal.gov.pl, GPS",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "way",
+  "id": 402181404,
+  "center": {
+    "lat": 50.9487291,
+    "lon": 15.3674536
+  },
+  "nodes": [
+    4046031092,
+    4046030973,
+    4046030971,
+    4046030979,
+    4046031092
+  ],
+  "tags": {
+    "addr:city:simc": "0191218",
+    "addr:housenumber": "23",
+    "addr:place": "Kamień",
+    "addr:postcode": "59-630",
+    "building": "yes",
+    "email": "schroniskohalny@gmail.com",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Schronisko Turystyczne \"Halny\"",
+    "phone": "+48757834336;+48667226993",
+    "rooms": "15",
+    "source:addr": "emuia.gugik.gov.pl",
+    "source:geometry": "geoportal.gov.pl, GPS",
+    "tourism": "hostel",
+    "website": "https://www.schroniskohalny.pl/"
   }
 }
 
