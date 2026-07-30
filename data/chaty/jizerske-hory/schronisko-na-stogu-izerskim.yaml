@@ -1,0 +1,75 @@
+# Na Stogu Izerskim — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Na Stogu Izerskim
+slug: schronisko-na-stogu-izerskim
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.89231
+lng: 15.3087384
+vyska: 1060
+obec: Świeradów-Zdrój
+overeniLokace:
+  source: 'Nadmořská výška 1060 m a nejbližší obec Świeradów-Zdrój (část pohoří Stóg Izerski):
+    externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Na
+    Stogu Izerskim", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/). GPS: OpenStreetMap https://www.openstreetmap.org/way/128436123
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ano
+overeniNocleh:
+  source: 'Ubytování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Na Stogu Izerskim", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/) — kapacitu lůžek katalog neuvádí, nezapisuje se.'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Na Stogu Izerskim", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/).'
+  verified: false
+  checked: '2026-07-30'
+kontakty:
+  telefon: +48 601 974 896
+  email: stogizerski@op.pl
+  web: http://schroniskonastoguizerskim.pl/
+overeniProvoz:
+  source: 'Provoz „celoročně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Na Stogu Izerskim", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/). Kontakty: telefon +48 601 974 896, email stogizerski@op.pl,
+    web http://schroniskonastoguizerskim.pl/ — OSM tagy https://www.openstreetmap.org/way/128436123,
+    neověřeno vlastním dotazem.'
+  verified: false
+  checked: '2026-07-30'
+perex: Schronisko na Stogu Izerskim, podle katalogu v 1060 m n. m. — nejvýše položená chata,
+  kterou v Jizerských horách vedeme. Celoročně, s ubytováním i stravováním.
+text:
+- Na Stogu Izerskim je v katalogu vedené jako schronisko górskie s jistotou A, s prameny z
+  přehledu polských horských chat a seznamu ubytování PTTK; nejbližší obcí je Świeradów-Zdrój.
+- OpenStreetMap objekt vede s tagem horské chaty a jako provozovatele uvádí PTTK, tedy polský
+  turistický svaz. To s katalogem souhlasí.
+- Nadmořskou výšku 1060 m uvádí katalog. Kapacitu lůžek ani otvírací dobu nemáme doloženou.
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Na Stogu Izerskim“ (výška,
+    obec, provoz, ubytování, stravování)
+  url: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen
+- popis: Seznam ubytování PTTK (pramen katalogu u polských schronisek)
+  url: https://pttk.pl/accommodations/
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/way/128436123
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/schronisko-na-stogu-izerskim.yaml
+  (DATA-01, stav OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: hutový tag v OSM, vedeno v externím katalogu (jistota A, typ objektu „schronisko
+  górskie“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.'

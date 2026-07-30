@@ -1,0 +1,74 @@
+# Hubertka — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Hubertka
+slug: hubertka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.887899
+lng: 15.2302406
+vyska: 621
+obec: Lázně Libverda
+overeniLokace:
+  source: 'Nadmořská výška 621 m a nejbližší obec Lázně Libverda (část pohoří Tišina): externí
+    katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Hubertka",
+    jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty). GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/51573239 — data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); v terénu neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ano
+overeniNocleh:
+  source: 'Ubytování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Hubertka", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty)
+    — kapacitu lůžek katalog neuvádí, nezapisuje se.'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Hubertka", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    Potvrzuje i OSM tag amenity=restaurant (https://www.openstreetmap.org/way/51573239, data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)).'
+  verified: false
+  checked: '2026-07-30'
+overeniProvoz:
+  source: 'Provoz „sezónně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Hubertka", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).'
+  verified: false
+  checked: '2026-07-30'
+perex: Chata na Tišině u Lázní Libverda, podle katalogu v 621 m n. m., se sezonním provozem,
+  ubytováním i stravováním. Je také známkovým místem č. 1935.
+text:
+- Hubertku vede katalog jako turistickou / horskou chatu se sezonním provozem; nejbližší obcí
+  jsou Lázně Libverda, část pohoří Tišina. Vydavatelův výpis známkových míst ji zná jako č.
+  1935 „Chata Hubertka, Jizerské hory“ a uvádí u ní adresu Bílý Potok 370.
+- OpenStreetMap objekt vede zároveň jako horskou chatu a restauraci — obojí souhlasí s katalogem,
+  který u ní má stravování „ano“.
+- 'Prameny se rozcházejí v obci: katalog uvádí Lázně Libverda, výpis známkových míst Bílý
+  Potok. Zapsali jsme údaj z katalogu a rozpor přiznáváme; rozhodne ověření u provozovatele.'
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Hubertka“ (výška, obec, provoz,
+    ubytování, stravování)
+  url: https://nocleh.kct.cz/chaty
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/way/51573239
+- popis: Vydavatelův výpis známkových míst z 30. 7. 2026 (data/externi/znamkova-mista-2026)
+  url: https://www.turisticke-znamky.cz/
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/hubertka.yaml (DATA-01, stav OSM
+  dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: hutový tag v OSM, občerstvení doložené tagem amenity, vedeno v externím katalogu
+  (jistota B, typ objektu „turistická / horská chata“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.
+
+  Rozpor pramenů: obec Lázně Libverda (katalog) × adresa Bílý Potok 370 (výpis známkových
+  míst) — zapsán katalog.'

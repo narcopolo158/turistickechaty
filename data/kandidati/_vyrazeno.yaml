@@ -239,3 +239,171 @@ vyrazeno:
       triáž JIZ-01 / DATA-03.
     rozhodl: Claude (30. 7. 2026, oblasti přenechal Michal 30. 7. 2026)
     checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/10251520737
+    slug: jizerske-hory/agroturystyka-chata-na-borowinowej
+    duvod: >-
+      Agroturystyka — venkovské ubytování na hospodářství (OSM
+      tourism=guest_house, název „Agroturystyka Chata na Borowinowej"). Doklad
+      služby veřejnosti (občerstvení, role na trase) nemáme v OSM ani v externím
+      katalogu.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/1114953181
+    slug: jizerske-hory/bike-haven
+    duvod: >-
+      Soukromý pronájem (OSM tourism=chalet, jeden byt v objektu, provozovatel
+      uvedený jménem fyzických osob). Občerstvení pro veřejnost nedoloženo.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/266623512
+    slug: jizerske-hory/chalupa-blaza
+    duvod: >-
+      Chalupa k pronájmu (OSM tourism=chalet, jeden byt v objektu). Bez
+      doloženého občerstvení pro veřejnost.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/12791875905
+    slug: jizerske-hory/chalupa-harrachov-90
+    duvod: >-
+      Chalupa k pronájmu (OSM tourism=chalet, 28 lůžek, provozovatel uvedený
+      jménem fyzické osoby). Bez doloženého občerstvení pro veřejnost.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/428863767
+    slug: jizerske-hory/chalupa-podlesi
+    duvod: >-
+      Ubytovací objekt „Chalupa Podlesí" (OSM tourism=hotel, žádný tag
+      občerstvení). Bez druhého pramene a bez doložené služby kolemjdoucím.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/1470820730
+    slug: jizerske-hory/chalupa-u-smrku
+    duvod: >-
+      Ubytovací objekt „Chalupa U Smrku" (OSM tourism=hotel, žádný tag
+      občerstvení), 30 m od předchozího. Bez druhého pramene.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/142872321
+    slug: jizerske-hory/chata-barborka
+    duvod: >-
+      Ubytování „Chata Barborka" (OSM tourism=guest_house, kontaktní e-mail
+      ubytovani-barborka…). Bez doloženého občerstvení pro veřejnost. Pozor: jde
+      o jiný objekt než krkonošská Barborka i než jizerská Barbora — viz
+      data/_jmenovci.yaml.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/7775524087
+    slug: jizerske-hory/chata-rycha
+    duvod: >-
+      Apartmán (OSM tourism=apartment). Do rozsahu průvodce nepatří — chybí
+      občerstvení pro veřejnost i role na trase.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/13434261743
+    slug: jizerske-hory/chata-sport-ski
+    duvod: >-
+      Duplicita: týž provoz jako kandidát chata-sportski (OSM node/428910643,
+      amenity=restaurant) — 15 m od sebe, tentýž web chata-sport-ski.cz. Zůstává
+      entita s doloženým občerstvením.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/11137605465
+    slug: jizerske-hory/chata-v-zakouti
+    duvod: >-
+      Bed & breakfast v Harrachově (OSM tourism=hostel,
+      guest_house=bed_and_breakfast). Bez doloženého občerstvení pro veřejnost.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/51240254
+    slug: jizerske-hory/hacienda
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, 18 lůžek ve 3 pokojích, název
+      „Hacienda"). Bez doloženého občerstvení pro veřejnost.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/12124881209
+    slug: jizerske-hory/horska-chata-bludicka
+    duvod: >-
+      Pronájem chaty (OSM tourism=chalet, provozovatelem obchodní společnost).
+      Občerstvení pro veřejnost nedoloženo — název „horská chata" sám o sobě
+      dokladem není.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/101624397
+    slug: jizerske-hory/izolka
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, jeden byt). Bez doloženého
+      občerstvení pro veřejnost.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/377064297
+    slug: jizerske-hory/jcamp
+    duvod: >-
+      Ubytovna pro školní a sportovní skupiny — OSM description doslova
+      „Ubytování pro školu, sport" (tourism=chalet). Kolemjdoucím neslouží.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/142821874
+    slug: jizerske-hory/penzion-karlovka
+    duvod: >-
+      Penzion (OSM tourism=chalet, 7 pokojů / 23 lůžek, název „Penzion
+      Karlovka"). Bez doloženého občerstvení pro veřejnost.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/291837474
+    slug: jizerske-hory/rekreacni-stredisko-bily-potok
+    duvod: >-
+      Rekreační středisko (OSM tourism=chalet, název „Rekreační středisko Bílý
+      Potok"). Skupinová rekreace, ne turistická chata na trase.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/125239814
+    slug: jizerske-hory/rekreacni-zarizeni-jizerky
+    duvod: >-
+      Rekreační zařízení (OSM tourism=chalet, název „Rekreační zařízení
+      Jizerky"). Skupinová rekreace, ne turistická chata na trase.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/51240264
+    slug: jizerske-hory/rosvita
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, 14 lůžek ve 2 pokojích). Bez
+      doloženého občerstvení pro veřejnost.
+    rozhodl: >-
+      Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
+    checked: 2026-07-30

@@ -1,0 +1,81 @@
+# Horská chata Smědava — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Horská chata Smědava
+slug: horska-chata-smedava
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.8434244
+lng: 15.2741872
+vyska: 847
+obec: Bílý Potok
+overeniLokace:
+  source: 'Nadmořská výška 847 m a nejbližší obec Bílý Potok (část pohoří Smědava): externí
+    katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Horská chata
+    Smědava", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/1260537646 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ano
+overeniNocleh:
+  source: 'Ubytování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Horská chata Smědava", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty)
+    — kapacitu lůžek katalog neuvádí, nezapisuje se.'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Horská chata Smědava", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).'
+  verified: false
+  checked: '2026-07-30'
+kontakty:
+  web: https://chatasmedava.cz/
+overeniProvoz:
+  source: 'Provoz „celoročně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Horská chata Smědava", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    Kontakty: web https://chatasmedava.cz/ — OSM tagy https://www.openstreetmap.org/way/1260537646,
+    neověřeno vlastním dotazem.'
+  verified: false
+  checked: '2026-07-30'
+perex: Horská chata na Smědavě nad Bílým Potokem, podle katalogu v 847 m n. m., celoročně,
+  s ubytováním i stravováním. Je také známkovým místem č. 42.
+text:
+- OpenStreetMap vede Smědavu jako hotel, ne jako horskou chatu. Do průvodce ji řadí katalog
+  turistických chat, který ji zná jako „Horskou chatu Smědava“ se stravováním i ubytováním,
+  a vydavatelův výpis známkových míst, kde figuruje jako č. 42 „Horská chata Smědava — Jizerské
+  hory“.
+- Katalog uvádí nadmořskou výšku 847 m, nejbližší obec Bílý Potok, celoroční provoz a ubytování
+  i stravování. Kapacitu lůžek ani otvírací dobu neuvádí, proto je tu nenajdete.
+- 'Web se v pramenech liší: OpenStreetMap i výpis známkových míst vedou chatasmedava.cz, katalog
+  smedava.com. Zapsali jsme adresu, kterou nesou dva prameny ze tří, a rozpor přiznáváme.'
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Horská chata Smědava“ (výška,
+    obec, provoz, ubytování, stravování)
+  url: https://nocleh.kct.cz/chaty
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/way/1260537646
+- popis: Vydavatelův výpis známkových míst z 30. 7. 2026 (data/externi/znamkova-mista-2026)
+  url: https://www.turisticke-znamky.cz/
+- popis: Web chaty uváděný OSM i výpisem známkových míst
+  url: https://chatasmedava.cz/
+- popis: Web uváděný u téže chaty katalogem (druhá, nepotvrzená doména — uvedeno kvůli rozporu
+    pramenů)
+  url: https://www.smedava.com/
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/smedava-1260537646.yaml (DATA-01,
+  stav OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: OSM hutový tag NEMÁ, vedeno v externím katalogu (jistota B, typ objektu „turistická
+  / horská chata“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.
+
+  Rozpor pramenů: web smedava.com (katalog) × chatasmedava.cz (OSM i výpis známkových míst)
+  — zapsán chatasmedava.cz.'

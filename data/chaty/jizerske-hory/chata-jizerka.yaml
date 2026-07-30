@@ -1,0 +1,70 @@
+# Chata Jizerka — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Chata Jizerka
+slug: chata-jizerka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.81639
+lng: 15.3482113
+vyska: 860
+obec: Kořenov
+overeniLokace:
+  source: 'Nadmořská výška 860 m a nejbližší obec Kořenov (část pohoří Jizerka): externí katalog
+    turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Chata Jizerka",
+    jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty). GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/27782609 — data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); v terénu neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ano
+overeniNocleh:
+  source: 'Ubytování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Chata Jizerka", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty)
+    — kapacitu lůžek katalog neuvádí, nezapisuje se.'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Chata Jizerka", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).'
+  verified: false
+  checked: '2026-07-30'
+overeniProvoz:
+  source: 'Provoz „celoročně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Chata Jizerka", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    Kontakty: web https://www.tschechienhotel.com/ZER — OSM tagy https://www.openstreetmap.org/way/27782609,
+    neověřeno vlastním dotazem.'
+  verified: false
+  checked: '2026-07-30'
+perex: Chata v osadě Jizerka, podle katalogu v 860 m n. m., celoročně, s ubytováním i stravováním.
+text:
+- Osada Jizerka je malá a objektů s jejím jménem vede OpenStreetMap hned několik — zastávku,
+  katastrální území i restauraci. Tenhle profil popisuje objekt, který OSM vede jako „Chata
+  Jizerka“ a katalog turistických chat pod týmž názvem.
+- Katalog uvádí nadmořskou výšku 860 m, nejbližší obec Kořenov a celoroční provoz s ubytováním
+  i stravováním. OpenStreetMap k objektu doplňuje regionální kuchyni.
+- Vlastní web chaty katalog neuvádí a odkaz z OSM vede na rezervační portál, ne na stránky
+  chaty — proto tu kontakt na web nenajdete.
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Chata Jizerka“ (výška, obec,
+    provoz, ubytování, stravování)
+  url: https://nocleh.kct.cz/chaty
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/way/27782609
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/chata-jizerka.yaml (DATA-01, stav
+  OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: OSM hutový tag NEMÁ, vedeno v externím katalogu (jistota B, typ objektu „turistická
+  / horská chata“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.
+
+  OSM nese website na rezervační portál (tschechienhotel.com), ne na stránky chaty — do kontaktů
+  se nezapisuje.'

@@ -1,0 +1,79 @@
+# Bártlova bouda — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Bártlova bouda
+slug: bartlova-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.873274
+lng: 15.2379683
+vyska: 520
+obec: Bílý Potok
+overeniLokace:
+  source: 'Nadmořská výška 520 m a nejbližší obec Bílý Potok (část pohoří Štolpich): externí
+    katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Bártlova
+    bouda", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/660824421 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ano
+overeniNocleh:
+  source: 'Ubytování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Bártlova bouda", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty)
+    — kapacitu lůžek katalog neuvádí, nezapisuje se.'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Bártlova bouda", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    Potvrzuje i OSM tag amenity=restaurant (https://www.openstreetmap.org/node/660824421,
+    data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)); otevírací
+    doba dle OSM tagu opening_hours=„Fr 16:00-22:00; Sa 11:00-22:00; Su 11:00-18:00" (neověřeno
+    u provozovatele, mění se sezónně — na webu ji neuvádíme).'
+  verified: false
+  checked: '2026-07-30'
+kontakty:
+  telefon: +420 482 322 038
+  web: https://www.bartlovabouda.cz/
+overeniProvoz:
+  source: 'Provoz „celoročně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Bártlova bouda", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    Kontakty: telefon +420 482 322 038, web https://www.bartlovabouda.cz/ — OSM tagy https://www.openstreetmap.org/node/660824421,
+    neověřeno vlastním dotazem.'
+  verified: false
+  checked: '2026-07-30'
+perex: Bouda u Štolpichu nad Bílým Potokem, podle katalogu v 520 m n. m. — z jizerských objektů,
+  které vedeme, je nejníže položená. Celoročně, s ubytováním i stravováním.
+text:
+- Bártlova bouda je v katalogu vedená jako turistická / horská chata s celoročním provozem,
+  ubytováním i stravováním; nejbližší obcí je Bílý Potok, část pohoří Štolpich.
+- OpenStreetMap objekt vede zároveň jako restauraci a penzion a nese u něj regionální kuchyni.
+  Otvírací dobu OSM sice uvádí, ale sezonní rozpisy se mění a provozovatel nám je nepotvrdil,
+  proto ji na webu neuvádíme.
+- Nadmořská výška 520 m je z katalogu; je to připomínka, že do průvodce objekty nezařazuje
+  výška, ale role na trase a občerstvení pro veřejnost.
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Bártlova bouda“ (výška, obec,
+    provoz, ubytování, stravování)
+  url: https://nocleh.kct.cz/chaty
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/node/660824421
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/bartlova-bouda.yaml (DATA-01, stav
+  OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: OSM hutový tag NEMÁ, občerstvení doložené tagem amenity, vedeno v externím
+  katalogu (jistota B, typ objektu „turistická / horská chata“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.
+
+  OSM tag opening_hours=„Fr 16:00-22:00; Sa 11:00-22:00; Su 11:00-18:00“ — na web se nepíše
+  (sezonní rozpisy se mění, provozovatel nepotvrdil).'

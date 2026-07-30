@@ -1,0 +1,75 @@
+# Chatka Górzystów — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Chatka Górzystów
+slug: chatka-gorzystow
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.8546685
+lng: 15.3608086
+vyska: 840
+obec: Świeradów-Zdrój
+overeniLokace:
+  source: 'Nadmořská výška 840 m a nejbližší obec Świeradów-Zdrój (část pohoří Hala Izerska):
+    externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Chatka
+    Górzystów", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/). GPS: OpenStreetMap https://www.openstreetmap.org/way/122672323
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ano
+overeniNocleh:
+  source: 'Ubytování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Chatka Górzystów", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/) — kapacitu lůžek katalog neuvádí, nezapisuje se.'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Chatka Górzystów", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/).'
+  verified: false
+  checked: '2026-07-30'
+kontakty:
+  telefon: +48 75 753 25 33;+48 607 426 998
+  email: chatkagorzystow@o2.pl
+  web: https://www.chatkagorzystow.pl/index.html
+overeniProvoz:
+  source: 'Provoz „celoročně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Chatka Górzystów", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/). Kontakty: telefon +48 75 753 25 33;+48 607 426 998,
+    email chatkagorzystow@o2.pl, web https://www.chatkagorzystow.pl/index.html — OSM tagy
+    https://www.openstreetmap.org/way/122672323, neověřeno vlastním dotazem.'
+  verified: false
+  checked: '2026-07-30'
+perex: Chatka na Hale Izerské v polské části Jizerských hor, podle katalogu v 840 m n. m.,
+  celoročně, s ubytováním i stravováním.
+text:
+- Chatku Górzystów vede katalog jako schronisko górskie s jistotou A; nejbližší obcí je Świeradów-Zdrój,
+  část pohoří Hala Izerska.
+- OpenStreetMap objekt vede s tagem horské chaty. Kapacitu lůžek ani otvírací dobu žádný z
+  pramenů nenese, takže je tu nenajdete.
+- Souřadnice jsou z OpenStreetMap a v terénu je nikdo neověřil.
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Chatka Górzystów“ (výška, obec,
+    provoz, ubytování, stravování)
+  url: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen
+- popis: Seznam ubytování PTTK (pramen katalogu u polských schronisek)
+  url: https://pttk.pl/accommodations/
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/way/122672323
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/chatka-gorzystow.yaml (DATA-01,
+  stav OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: hutový tag v OSM, vedeno v externím katalogu (jistota A, typ objektu „schronisko
+  górskie“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.'

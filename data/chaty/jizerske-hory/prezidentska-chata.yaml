@@ -1,0 +1,69 @@
+# Prezidentská chata — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Prezidentská chata
+slug: prezidentska-chata
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.7948317
+lng: 15.1635118
+vyska: 822
+obec: Bedřichov
+overeniLokace:
+  source: 'Nadmořská výška 822 m a nejbližší obec Bedřichov (část pohoří Bedřichov): externí
+    katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Prezidentská
+    chata", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/53679813 — data © přispěvatelé OpenStreetMap,
+    ODbL 1.0 (openstreetmap.org/copyright); v terénu neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ano
+overeniNocleh:
+  source: 'Ubytování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Prezidentská chata", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty)
+    — kapacitu lůžek katalog neuvádí, nezapisuje se.'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Prezidentská chata", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).'
+  verified: false
+  checked: '2026-07-30'
+kontakty:
+  web: https://www.prezidentska.cz/
+overeniProvoz:
+  source: 'Provoz „celoročně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Prezidentská chata", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    Kontakty: web https://www.prezidentska.cz/ — OSM tagy https://www.openstreetmap.org/way/53679813,
+    neověřeno vlastním dotazem.'
+  verified: false
+  checked: '2026-07-30'
+perex: Turistická chata v Bedřichově, podle katalogu v 822 m n. m., celoročně otevřená, s
+  ubytováním i stravováním.
+text:
+- Prezidentská chata je v katalogu turistických chat vedená s jistotou A — tedy v nejvyšší
+  kategorii spolehlivosti, kterou katalog používá —, s nadmořskou výškou 822 m a nejbližší
+  obcí Bedřichov.
+- Ubytování i stravování katalog potvrzuje; kapacitu lůžek ani otvírací dobu neuvádí a my
+  si je nedomýšlíme. Souřadnice máme z OpenStreetMap a v terénu je nikdo neověřil.
+- Rozsah služeb i aktuální provoz doporučujeme před cestou ověřit u chaty.
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Prezidentská chata“ (výška,
+    obec, provoz, ubytování, stravování)
+  url: https://nocleh.kct.cz/chaty
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/way/53679813
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/prezidentska-chata.yaml (DATA-01,
+  stav OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: OSM hutový tag NEMÁ, vedeno v externím katalogu (jistota A, typ objektu „turistická
+  / horská chata“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.'

@@ -1,0 +1,72 @@
+# Šámalova chata — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Šámalova chata
+slug: samalova-chata
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.8140049
+lng: 15.1577559
+vyska: 780
+obec: Bedřichov
+overeniLokace:
+  source: 'Nadmořská výška 780 m a nejbližší obec Bedřichov (část pohoří Nová Louka): externí
+    katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Šámalova
+    chata", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/4800362017 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ano
+overeniNocleh:
+  source: 'Ubytování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Šámalova chata", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty)
+    — kapacitu lůžek katalog neuvádí, nezapisuje se.'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Šámalova chata", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).'
+  verified: false
+  checked: '2026-07-30'
+kontakty:
+  email: info@samalova-chata.cz
+  web: https://www.samalova-chata.cz/
+overeniProvoz:
+  source: 'Provoz „celoročně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Šámalova chata", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    Kontakty: email info@samalova-chata.cz, web https://www.samalova-chata.cz/ — OSM tagy
+    https://www.openstreetmap.org/node/4800362017, neověřeno vlastním dotazem.'
+  verified: false
+  checked: '2026-07-30'
+perex: Turistická chata na Nové Louce nad Bedřichovem v Jizerských horách. Katalog ji vede
+  v 780 m n. m. jako celoročně otevřenou, s ubytováním i stravováním; OpenStreetMap ji má
+  zapsanou jako horskou chatu.
+text:
+- Šámalova chata stojí podle katalogu na Nové Louce, nejbližší obcí je Bedřichov. Nadmořskou
+  výšku 780 m i celoroční provoz uvádí týž pramen — v terénu jsme nic z toho neověřili.
+- Ubytování i stravování katalog potvrzuje, podrobnosti (kapacita lůžek, otvírací doba kuchyně)
+  v něm ale nejsou, takže je neuvádíme ani my. OpenStreetMap objekt vede s tagem horské chaty,
+  což potvrzuje charakter, ne rozsah služeb.
+- Před cestou doporučujeme provoz ověřit přímo u chaty; redakce ho vlastním dotazem zatím
+  nepotvrdila.
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Šámalova chata“ (výška, obec,
+    provoz, ubytování, stravování)
+  url: https://nocleh.kct.cz/chaty
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/node/4800362017
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/samalova-chata.yaml (DATA-01, stav
+  OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: hutový tag v OSM, vedeno v externím katalogu (jistota A, typ objektu „turistická
+  / horská chata“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.'

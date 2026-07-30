@@ -1,0 +1,84 @@
+# Stacja Turystyczna Orle — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Stacja Turystyczna Orle
+slug: stacja-turystyczna-orle
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.8150688
+lng: 15.3831562
+vyska: 840
+obec: Szklarska Poręba
+overeniLokace:
+  source: 'Nadmořská výška 840 m a nejbližší obec Szklarska Poręba (část pohoří Orle): externí
+    katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Stacja Turystyczna
+    Orle", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/). GPS: OpenStreetMap https://www.openstreetmap.org/way/98214072
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); v terénu
+    neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ano
+overeniNocleh:
+  source: 'Ubytování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Stacja Turystyczna Orle", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/) — kapacitu lůžek katalog neuvádí, nezapisuje se.'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Stacja Turystyczna Orle", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/). Potvrzuje i OSM tag amenity=restaurant (https://www.openstreetmap.org/way/98214072,
+    data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)); otevírací
+    doba dle OSM tagu opening_hours=„Mo-Su 08:00-21:00" (neověřeno u provozovatele, mění se
+    sezónně — na webu ji neuvádíme).'
+  verified: false
+  checked: '2026-07-30'
+kontakty:
+  telefon: '+48500610115'
+  web: http://www.orleturystyczne.pl/
+overeniProvoz:
+  source: 'Provoz „celoročně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Stacja Turystyczna Orle", jistota A, ověřeno k 2026-07-21; pramen katalogu: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen,
+    https://pttk.pl/accommodations/). Kontakty: telefon +48500610115, web http://www.orleturystyczne.pl/
+    — OSM tagy https://www.openstreetmap.org/way/98214072, neověřeno vlastním dotazem.'
+  verified: false
+  checked: '2026-07-30'
+perex: Schronisko na Orlu v polské části Jizerských hor, podle katalogu v 840 m n. m., celoročně,
+  s ubytováním i stravováním.
+text:
+- Orle vede katalog jako schronisko górskie s jistotou A a s prameny z přehledu polských horských
+  chat a seznamu ubytování PTTK. Nejbližší obcí je Szklarska Poręba.
+- OpenStreetMap objekt vede zároveň jako horskou chatu a restauraci a uvádí u něj otevírací
+  dobu; tu na webu nepíšeme, protože se sezonně mění a nemáme ji potvrzenou od provozovatele.
+- Web se v pramenech liší — katalog uvádí jednu doménu, OpenStreetMap druhou. Zapsali jsme
+  tu z OSM a rozpor přiznáváme.
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Stacja Turystyczna Orle“ (výška,
+    obec, provoz, ubytování, stravování)
+  url: https://de.wikipedia.org/wiki/Liste_von_Schutzh%C3%BCtten_in_Polen
+- popis: Seznam ubytování PTTK (pramen katalogu u polských schronisek)
+  url: https://pttk.pl/accommodations/
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/way/98214072
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/stacja-turystyczna-orle.yaml (DATA-01,
+  stav OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: hutový tag v OSM, občerstvení doložené tagem amenity, vedeno v externím katalogu
+  (jistota A, typ objektu „schronisko górskie“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.
+
+  OSM tag opening_hours=„Mo-Su 08:00-21:00“ — na web se nepíše (sezonní rozpisy se mění, provozovatel
+  nepotvrdil).
+
+  Rozpor pramenů: web orleizerskie.pl (katalog) × orleturystyczne.pl (OSM) — zapsán ten z
+  OSM.'

@@ -1,0 +1,68 @@
+# Hřebínek — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Hřebínek
+slug: hrebinek
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.8394048
+lng: 15.1609534
+vyska: 845
+obec: Bedřichov
+overeniLokace:
+  source: 'Nadmořská výška 845 m a nejbližší obec Bedřichov (část pohoří Hřebínek): externí
+    katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Hřebínek",
+    jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty). GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/13970697345 — data © přispěvatelé OpenStreetMap, ODbL
+    1.0 (openstreetmap.org/copyright); v terénu neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ne
+overeniNocleh:
+  source: 'Ubytování „ne": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Hřebínek", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty)'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Hřebínek", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    Potvrzuje i OSM tag amenity=fast_food (https://www.openstreetmap.org/node/13970697345,
+    data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)).'
+  verified: false
+  checked: '2026-07-30'
+overeniProvoz:
+  source: 'Provoz „sezónně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Hřebínek", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).'
+  verified: false
+  checked: '2026-07-30'
+perex: Sezonní občerstvení na Hřebínku nad Bedřichovem, podle katalogu v 845 m n. m. Nespí
+  se tu — katalog vede ubytování výslovně jako „ne“.
+text:
+- 'Hřebínek je jedním z objektů, které do průvodce patří rolí, ne velikostí: katalog ho vede
+  jako turistickou / horskou chatu se stravováním, ale bez ubytování a se sezonním provozem.
+  OpenStreetMap ho zná jako rychlé občerstvení.'
+- Nadmořskou výšku 845 m a nejbližší obec Bedřichov uvádí katalog; vlastní web objektu v něm
+  ani v OSM není, takže tu žádný neuvádíme.
+- Protože je provoz sezonní a otvírací dobu žádný z pramenů nenese, vyplatí se otevřeno si
+  ověřit předem.
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Hřebínek“ (výška, obec, provoz,
+    ubytování, stravování)
+  url: https://nocleh.kct.cz/chaty
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/node/13970697345
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/hrebinek-13970697345.yaml (DATA-01,
+  stav OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: OSM hutový tag NEMÁ, občerstvení doložené tagem amenity, vedeno v externím
+  katalogu (jistota B, typ objektu „turistická / horská chata“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.'

@@ -11,6 +11,79 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (noc, podruhé) — triáž jizerských kandidátů a stránka pohoří
+
+**Hotovo:** zadání Michala „proveď triáž kandidátů Jizerek a dokonči stránku
+pohoří". Ze 75 kandidátů, které přinesl rozšířený DATA-01, je po triáži
+**12 profilů, 18 vyřazených a 45 čekajících**.
+
+**Klíč triáže je z CLAUDE.md, ne z dojmu:** rozhoduje role na trase
+a občerstvení pro veřejnost, ne typ stavby ani výška. Aby to šlo rozhodnout
+doložitelně, sešel jsem u každého kandidáta tři důkazy: OSM tagy z exportu
+(hutový tag, `amenity` občerstvení, `operator`, `description`), externí katalog
+turistických chat ČR/SK a vydavatelův výpis známkových míst.
+
+**Povýšeno 12** — všechny mají druhý pramen (katalog, jehož vlastním pramenem
+je seznam ubytování KČT), takže neposílám na web nic, co by stálo jen na
+strojovém výpisu z OSM: Šámalova chata, Horská chata Smědava, Prezidentská
+chata, Hřebínek, Kiosek Knajpa, Chata Jizerka, Pešákovna, Bártlova bouda,
+Hubertka, Stacja Turystyczna Orle, Chatka Górzystów a Na Stogu Izerskim.
+Smědava a Hubertka jsou navíc známková místa (č. 42 a 1935).
+
+Profily nesou jen to, co prameny říkají. **Kapacita lůžek ani otvírací doba
+nikde nejsou** — katalog je nevede a OSM `opening_hours` je sezonní rozpis,
+který provozovatel nepotvrdil. Kde si prameny odporují, je to napsané ve
+veřejném textu: web Smědavy (chatasmedava.cz × smedava.com), web Orle
+(orleturystyczne.pl × orleizerskie.pl), obec Hubertky (Lázně Libverda ×
+Bílý Potok). U Chaty Jizerka nemá profil web vůbec — odkaz z OSM vede na
+rezervační portál, ne na stránky chaty.
+
+**Vyřazeno 18** a u každého stojí důvod opřený o konkrétní tag, ne o pocit:
+apartmány a chalupy k pronájmu (`tourism=chalet` s jedním bytem, provozovatel
+jménem fyzické osoby), rekreační střediska a zařízení, ubytovna pro školní
+a sportovní skupiny (OSM `description` doslova „Ubytování pro školu, sport"),
+bed & breakfast — a jedna mechanická duplicita (`chata-sport-ski` je týž provoz
+jako `chata-sportski` 15 m vedle, zůstala entita s doloženým občerstvením).
+
+**45 zůstává kandidáty**, a je to vědomé: 31 z nich má doložené občerstvení
+nebo hutový tag, ale zatím jen jeden pramen; zbytek jsou rozhledny a případy
+jako `weberova-chata` nebo `schronisko-turystyczne-halny`, kde jméno napovídá
+chatu, ale doklad chybí. Vyhodit je by bylo tvrzení, že chaty nejsou — to
+nevíme. **Kdyby je někdo měl vyhodit, ať to udělá s pramenem v ruce.**
+
+**Stránka pohoří tím ožila.** Katalog vede 12 profilů (od 520 m Bártlovy boudy
+po 1 060 m Na Stogu Izerskim), řez hřebenem je kreslí do terénu, žebříček
+nejvýše položených má konečně obsah a stat-tile ukazuje rozpětí výšek
+520–1 060 m místo pomlčky. Žebříčky „nejstarší rok" a „největší kapacita"
+zůstávají prázdné se zdůvodněním (0 z 12 chat má doložený údaj) — prázdný
+žebříček s vysvětlením je lepší než vymyšlený.
+
+**Co stránce ještě chybí a proč:** střediska mají u počtu tras pomlčku, protože
+přístupové trasy pro Jizerky nejsou spočítané. Řetěz DATA-06 je teď v tomhle
+stavu — značené trasy jsou (122 tras), profily jsou (12), **chybí výchozí
+body**. To je jediný zbývající klik do Actions; routing 3b pak poběží
+i v session. Fotky chat (DATA-02) a razítka čekají zvlášť.
+
+**Katalog vede tři objekty, které v OSM exportu nemáme** — Pyramida Jizerka,
+Královka (OSM tam má věž „Rozhledna Královka" a 26 m od ní restauraci
+„Sluneční terasa"; že je to táž chata, doložené nemáme) a Wysoki Kamień
+(leží těsně mimo okno). Nevymýšlím je — jde to jako úkol do DATA-31.
+
+**Testy:** 572 (z 567) — pět nových drží pravidlo povyšování, ne dnešní počty:
+profil musí stát i na jiném prameni než OSM, obsluhovaná chata musí mít
+doložené občerstvení, každý pramen musí mít popis, a vyřazený kandidát musí
+mít důvod i datum.
+
+**Příště:** po kliku na výchozí body dopočítat trasy (DATA-06 3b + výšky), pak
+fotky. Pak triáž dalších jizerských kandidátů proti druhému prameni.
+
+**Otázky pro Michala:**
+- **Královka**: katalog ji vede jako chatu (859 m, web kralovka.cz), OSM zná
+  jen věž a restauraci „Sluneční terasa" 26 m od ní. Mám je vést jako jeden
+  objekt (jako Žalý), nebo počkat na ověření u provozovatele?
+- Zůstane 45 kandidátů čekat na druhý pramen, nebo chceš u nich zkusit
+  webovou dohledávku (u toho potřebuju schválení WebFetch, dnes se nepovedlo)?
+
 ## 2026-07-30 (noc) — „ještě není na řadě" není chyba běhu
 
 **Hotovo:** Michal pustil pro Jizerky poslední krok DATA-06 (výšky

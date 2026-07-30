@@ -1,0 +1,66 @@
+# Kiosek Knajpa — profil povýšen z kandidáta DATA-01 (OSM) triáží 30. 7. 2026.
+# Druhý pramen: externí katalog turistických chat ČR/SK 2026
+# (data/externi/katalog-cr-sk-2026; jeho vlastní pramen je uveden u každého
+# ověření). Vše verified: false — z katalogu a OSM tagů, redakce údaje
+# vlastním dotazem neověřila. Nic nedomýšleno: co katalog ani OSM nenesou
+# (kapacita, otvírací doba, popis terénu), tu není.
+
+nazev: Kiosek Knajpa
+slug: knajpa
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+lat: 50.8308592
+lng: 15.2428086
+vyska: 996
+obec: Hejnice
+overeniLokace:
+  source: 'Nadmořská výška 996 m a nejbližší obec Hejnice (část pohoří Čihadla): externí katalog
+    turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026, řádek „Kiosek Knajpa",
+    jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty). GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/13970697344 — data © přispěvatelé OpenStreetMap, ODbL
+    1.0 (openstreetmap.org/copyright); v terénu neověřeno.'
+  verified: false
+  checked: '2026-07-30'
+nocleh: ne
+overeniNocleh:
+  source: 'Ubytování „ne": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Kiosek Knajpa", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty)'
+  verified: false
+  checked: '2026-07-30'
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: 'Stravování „ano": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Kiosek Knajpa", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).
+    Potvrzuje i OSM tag amenity=fast_food (https://www.openstreetmap.org/node/13970697344,
+    data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)).'
+  verified: false
+  checked: '2026-07-30'
+overeniProvoz:
+  source: 'Provoz „sezónně": externí katalog turistických chat ČR/SK 2026 (data/externi/katalog-cr-sk-2026,
+    řádek „Kiosek Knajpa", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).'
+  verified: false
+  checked: '2026-07-30'
+perex: Sezonní kiosek na Knajpě nad Hejnicemi, podle katalogu nejvýše položený z jizerských
+  objektů, které vedeme — 996 m n. m. Ubytování nenabízí.
+text:
+- OpenStreetMap vede Knajpu jako rychlé občerstvení, ne jako chatu. Katalog turistických chat
+  ji řadí mezi turistické / horské chaty se stravováním, bez ubytování a se sezonním provozem.
+- Nadmořskou výšku 996 m a nejbližší obec Hejnice uvádí katalog; část pohoří vede jako Čihadla.
+  Vlastní web objektu žádný pramen nenese.
+- Otvírací dobu neuvádíme — sezonní provoz se mění a doložený rozpis nemáme.
+zdroje:
+- popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Kiosek Knajpa“ (výška, obec,
+    provoz, ubytování, stravování)
+  url: https://nocleh.kct.cz/chaty
+- popis: OpenStreetMap (GPS a tagy objektu; ODbL)
+  url: https://www.openstreetmap.org/node/13970697344
+interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/horska-stanice-knajpa.yaml (DATA-01,
+  stav OSM dat 2026-07-30) triáží 30. 7. 2026.
+
+  Klíč triáže: OSM hutový tag NEMÁ, občerstvení doložené tagem amenity, vedeno v externím
+  katalogu (jistota B, typ objektu „turistická / horská chata“).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.'
