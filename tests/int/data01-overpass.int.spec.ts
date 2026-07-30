@@ -46,11 +46,13 @@ const node = (id: number, tags: Record<string, string>, lat = 50.7, lon = 15.7):
 })
 
 describe('overpassDotaz', () => {
-  it('ptá se na všechny tři tagy chat, v area státu a s bboxem Krkonoš', () => {
+  it('ptá se na hutové tagy, v area státu a s bboxem Krkonoš', () => {
+    // Od 30. 7. 2026 jsou tagy v jednom regexu (přibyl `chalet`) a k nim
+    // druhá vrstva na civilně tagované boudy — podrobnosti hlídá
+    // `data01-siroky-dotaz`. Tady jde o kostru dotazu.
     const dotaz = overpassDotaz('CZ')
-    expect(dotaz).toContain('"tourism"="alpine_hut"')
-    expect(dotaz).toContain('"tourism"="wilderness_hut"')
-    expect(dotaz).toContain('"tourism"="hut"')
+    for (const tag of ['alpine_hut', 'wilderness_hut', 'hut', 'chalet']) expect(dotaz).toContain(tag)
+    expect(dotaz).toContain('"tourism"~')
     expect(dotaz).toContain('area["ISO3166-1"="CZ"]')
     expect(dotaz).toContain('50.55,15.30,50.87,16.05')
     expect(dotaz).toContain('out center') // way/relation potřebují souřadnice středu

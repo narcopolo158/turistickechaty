@@ -11,6 +11,70 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (noc) — proč jizerský export minul Smědavu, Knajpu i chaty na Jizerce
+
+**Hotovo:** Michal pustil DATA-01 pro Jizerky a napsal, že ho překvapilo, že
+v seznamu nejsou známé jizerské chaty. Měl pravdu a byla to naše chyba —
+tady je, kde přesně.
+
+**Nebyl to bbox.** Okno Jizerských hor (50.73–51.02, 15.05–15.45) pohoří
+pokrývá celé a vytáhlo z něj Šámalovu chatu, Hubertku i Pešákovnu. **Byl to
+dotaz.** Ptal se přesně na tři tagy — `tourism=alpine_hut`, `wilderness_hut`,
+`hut` — a všech 11 českých nálezů je má. V **Krkonoších to stačí**, protože
+tamní boudy jsou v OSM skoro vždy `alpine_hut`. V **Jizerkách je táž věc
+mapovaná civilně**: jako restaurace, hotel nebo penzion.
+
+**Doklad je v našich vlastních datech**, ne v dohadu: druhý dotaz DATA-01
+(rozhledny) bere okolní občerstvení podle `amenity`, a přinesl `Chata Proseč`
+(restaurant), `Chata Bramberk` (restaurant), `Ski Chata` (restaurant),
+`Slovanka` (guest_house) i `U Čápa` (hotel). Tytéž objekty by hutový dotaz
+nikdy nenašel — a nenašel.
+
+**Jak velká ta díra je (měřeno, ne odhadem):** proti externímu katalogu
+v repu (`data/externi/katalog-cr-sk-2026`) vedeme z 15 jizerských objektů
+sedm. **Chybí osm:** Horská chata Smědava, Prezidentská chata, Hřebínek,
+Kiosek Knajpa, Pyramida Jizerka, Chata Jizerka, Bártlova bouda a polský
+Wysoki Kamień. Michal jmenoval tři z nich.
+
+**Oprava — dotaz má nově tři vrstvy:**
+
+1. **hutové tagy** jako dosud, plus `chalet`, který v hlavním dotazu chyběl
+   (byl jen v podotázce rozhleden — tichá díra i pro Krkonoše);
+2. **civilně tagované boudy**: `amenity=restaurant|cafe|fast_food|bar|pub`
+   a `tourism=hotel|guest_house|hostel|…`, ale **jen když má objekt v NÁZVU
+   slovo boudy** (chata, bouda, schronisko, baude, útulna…). Rozšířit dotaz
+   na všechny restaurace v okně nejde — bbox obsahuje Liberec i Jablonec
+   a vrátil by stovky hospod; název je to, co horskou hospodu odliší od
+   pizzerie na náměstí. Tím se konečně dohnal **klíč zařazení**
+   („rozhoduje občerstvení, ne typ stavby", Michal 26. 7.), který dosud
+   platil jen při ruční triáži nad tím, co dotaz náhodou přinesl;
+3. **dohledávka podle jmen z katalogu** — pro objekty, které nemají ani
+   hutový tag, ani slovo boudy v názvu (Kiosek Knajpa, Pyramida Jizerka,
+   Hřebínek). Obrácený směr dotazu: ne „co v tom okně je?", ale „kde je
+   tohle, o čem víme?". Katalog přitom **neurčuje, co do průvodce patří** —
+   to dělá klíč a triáž; jen říká, že objekt existuje. Přidávají se i zkrácená
+   jádra názvů, protože katalog píše „Horská chata Smědava" a OSM „Smědava".
+   Co se nenajde, se **nevymýšlí** — vypíše se na konci běhu jako „katalog
+   vede, OSM nemá" a je to úkol pro DATA-31.
+
+**Testy:** 489 (bylo 477). Nový soubor `data01-siroky-dotaz` (12) hlídá obojí:
+že se civilně tagované boudy chytí, a že se dotaz nerozlil na všechny hospody
+v okně (každý řádek s `amenity` musí mít i podmínku na název).
+
+**Příště:** **znovu pustit DATA-01 pro `jizerske-hory`** — teprve ostrý běh
+ukáže, kolik z těch osmi rozšířený dotaz opravdu najde. Pak triáž vzorem
+DATA-03.
+
+**Otázky pro Michala:**
+1. Zbylých pět chybějících (Prezidentská chata, Hřebínek, Bártlova bouda,
+   Pyramida Jizerka, Wysoki Kamień) jsem nedohledával ručně — počkal bych na
+   běh, ať vidíme, co dotaz zvládne sám. Souhlas?
+2. Napadají tě další jizerské objekty, které katalog nevede? Katalog
+   u Krkonoš podhodnocoval (30 objektů proti našim 76), takže i těch 15 bude
+   spíš spodní hranice — tvoje znalost terénu je tu cennější než seznam.
+
+---
+
 ## 2026-07-30 (večer) — karty středisek podle Michalovy výtky, upload vlastních fotek, a FOTO-01 (a) + (c)
 
 **Hotovo:** tři věci ze zadání Michala (screenshot mobilu + „mám pro některá

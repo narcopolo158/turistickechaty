@@ -1,9 +1,15 @@
 /**
  * DATA-01: export chat Krkonoš z OpenStreetMap (Overpass API) — kandidáti.
  *
- * Stáhne objekty `tourism=alpine_hut` / `wilderness_hut` / `hut` v celých
- * Krkonoších — česká i polská strana, po zemích (průnik area státu + bbox
- * pohoří; rozhodnutí Michala 20. 7.: přeshraniční pohoří bereme celá).
+ * Stáhne objekty s hutovým tagem (`tourism=alpine_hut` / `wilderness_hut` /
+ * `hut` / `chalet`) a k tomu **civilně tagované boudy** — restaurace, hotely
+ * a penziony, které mají v NÁZVU „chata", „bouda", „schronisko" a spol.
+ * (nález 30. 7. 2026: v Jizerkách je tak mapovaná většina známých bud, viz
+ * `SLOVA_BOUDY`). Třetí vrstvou je **dohledávka podle jmen z externího
+ * katalogu** pro objekty, které nemají ani hutový tag, ani slovo boudy
+ * v názvu (Kiosek Knajpa, Pyramida Jizerka). Vše po zemích (průnik area
+ * státu + bbox pohoří; rozhodnutí Michala 20. 7.: přeshraniční pohoří
+ * bereme celá).
  * Surové odpovědi uloží do `data/kandidati/krkonose/_overpass-export-<zeme>.json`
  * (commitují se — doklad exportu vč. timestampu a copyright hlavičky
  * Overpass) a transformuje je na `data/kandidati/krkonose/<slug>.yaml` —
@@ -119,14 +125,70 @@ export const BBOX_KRKONOSE = '50.55,15.30,50.87,16.05'
 // `tourism=hut` je nestandardní (wiki zná alpine_hut/wilderness_hut), ale
 // zadání ručního běhu ho chce v checklistu — kandidáty nic nekazí, nanejvýš
 // přinese pár objektů k ruční kontrole navíc.
-export const overpassDotaz = (iso: string, okno: string = BBOX_KRKONOSE): string => `[out:json][timeout:120];
+const HUTOVE_TAGY = '^(alpine_hut|wilderness_hut|hut|chalet)$'
+
+/**
+ * SLOVA V NÁZVU, po kterých je objekt horská bouda, i když ho OSM tagovalo
+ * jako restauraci nebo penzion.
+ *
+ * Proč to tu je (nález 30. 7. 2026 po prvním jizerském běhu): Michal se divil,
+ * že v seznamu nejsou Smědava, Knajpa ani chaty na Jizerce. Nebyl to bbox —
+ * ten Jizerky pokrývá celé. Byl to dotaz: ptal se na tři „hut" tagy a v KRKONOŠÍCH
+ * to stačí, protože tamní boudy jsou v OSM skoro vždy `alpine_hut`. V Jizerkách
+ * je táž věc mapovaná jako `amenity=restaurant`, `tourism=hotel` nebo
+ * `guest_house` — a je to vidět na našich vlastních datech: dotaz na rozhledny,
+ * který okolní občerstvení bere podle `amenity`, vytáhl „Chata Proseč"
+ * (restaurant), „Chata Bramberk" (restaurant), „Ski Chata" (restaurant),
+ * „Slovanka" (guest_house) i „U Čápa" (hotel). Tytéž objekty by hutový dotaz
+ * nikdy nenašel.
+ *
+ * Rozšířit dotaz na všechny restaurace v okně nejde — bbox Jizerských hor
+ * obsahuje Liberec i Jablonec a vrátil by stovky hospod. Filtruje se proto
+ * NÁZVEM: „chata", „bouda", „schronisko" a spol. nese horská hospoda i tehdy,
+ * když je tagovaná jako restaurace, a nenese ho pizzerie na náměstí.
+ *
+ * Klíč zařazení („rozhoduje občerstvení, ne typ stavby", Michal 26. 7. 2026)
+ * tím dotaz konečně dohání — dosud platil jen při ruční triáži nad tím, co
+ * dotaz náhodou přinesl.
+ */
+const SLOVA_BOUDY = 'chata|chatka|chalupa|bouda|boudy|schronisko|hut[ae]?|útuln|utuln|hájenka|hajenka|horská|horska|baude'
+const OBCERSTVENI_TAGY = '^(restaurant|cafe|fast_food|bar|pub|biergarten)$'
+const UBYTOVANI_TAGY = '^(hotel|guest_house|hostel|motel|apartment)$'
+
+export const overpassDotaz = (iso: string, okno: string = BBOX_KRKONOSE): string => `[out:json][timeout:180];
 area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
 (
-  nwr["tourism"="alpine_hut"](area.stat)(${okno});
-  nwr["tourism"="wilderness_hut"](area.stat)(${okno});
-  nwr["tourism"="hut"](area.stat)(${okno});
+  nwr["tourism"~"${HUTOVE_TAGY}"](area.stat)(${okno});
+  nwr["amenity"~"${OBCERSTVENI_TAGY}"]["name"~"${SLOVA_BOUDY}",i](area.stat)(${okno});
+  nwr["tourism"~"${UBYTOVANI_TAGY}"]["name"~"${SLOVA_BOUDY}",i](area.stat)(${okno});
 );
 out center;`
+
+/**
+ * DOHLEDÁVKA PODLE JMEN Z KATALOGU — druhá záchranná síť.
+ *
+ * Ani rozšířený dotaz nechytí objekt, který se jmenuje „Kiosek Knajpa",
+ * „Pyramida Jizerka" nebo „Hřebínek": slovo „chata" v názvu nemá a tag má
+ * civilní. Přitom o jeho existenci VÍME — vede ho externí katalog v repu
+ * (`data/externi/katalog-cr-sk-2026/katalog.json`, sběratelské zdroje).
+ *
+ * Dotaz proto vezme jména z katalogu pro danou oblast a hledá je v OSM
+ * jmenovitě. Je to obrácený směr než u ostatních dotazů: tam se ptáme „co
+ * v tom okně je?", tady „kde je tohle, o čem víme?". Co se nenajde, se
+ * NEVYMÝŠLÍ — zůstane v reportu jako „katalog vede, OSM nemá" a je to
+ * úkol pro ruční dohledání souřadnic (DATA-31).
+ */
+export const overpassDotazDleJmen = (iso: string, jmena: string[], okno: string = BBOX_KRKONOSE): string => {
+  // Regex s alternativami je jeden dotaz místo N — Overpass sdílené instance
+  // rate-limitují a padesát dotazů po jednom by běh protáhlo o minuty.
+  const alternativy = jmena
+    .map((j) => j.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&'))
+    .join('|')
+  return `[out:json][timeout:180];
+area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
+nwr["name"~"^(${alternativy})$",i](area.stat)(${okno});
+out center;`
+}
 
 /**
  * ROZHLEDNY (rozhodnutí Michala 28. 7. 2026): „v Jizerkách je hodně rozhleden,
@@ -154,6 +216,27 @@ nwr["tower:type"="observation"](area.stat)(${okno})->.rozhledny;
   nwr(around.rozhledny:${OKOLI_OBCERSTVENI_M})["tourism"~"^(alpine_hut|wilderness_hut|hut|chalet)$"];
 );
 out center;`
+
+/**
+ * Jména objektů, o kterých VÍME z externího katalogu, ale dotaz je nemusí
+ * najít. Bere se jen název — katalog neurčuje, co do průvodce patří (to dělá
+ * klíč a redakční triáž), jen říká „tenhle objekt v tomhle pohoří existuje".
+ */
+export const jmenaZKatalogu = (katalogCesta: string, pohori: string[] | undefined): string[] => {
+  if (!pohori?.length || !existsSync(katalogCesta)) return []
+  const katalog = JSON.parse(readFileSync(katalogCesta, 'utf8')) as { Pohoří?: string; Název?: string }[]
+  const jmena = new Set<string>()
+  for (const z of katalog) {
+    if (!z.Pohoří || !pohori.includes(z.Pohoří) || !z.Název) continue
+    jmena.add(z.Název.trim())
+    // Katalog píše plné názvy („Horská chata Smědava"), OSM často jen jádro
+    // („Smědava"). Bez zkrácené varianty by dohledávka minula právě to, kvůli
+    // čemu vznikla.
+    const jadro = z.Název.replace(/^(Horská chata|Chata|Kiosek|Bouda|Penzion|Hotel|Schronisko( PTTK)?)\s+/iu, '').trim()
+    if (jadro && jadro !== z.Název.trim()) jmena.add(jadro)
+  }
+  return [...jmena].sort((a, b) => a.localeCompare(b, 'cs'))
+}
 
 export type OsmElement = {
   type: 'node' | 'way' | 'relation'
@@ -623,7 +706,7 @@ const main = async () => {
       console.log(`Offline transformace commitnutého exportu ${soubor}…`)
       raw = readFileSync(soubor, 'utf8')
     } else {
-      console.log(`Overpass dotaz ${iso} (alpine_hut + wilderness_hut + hut, ${iso} ∩ okno ${oblast.nazev}); instance: ${instance.join(', ')}…`)
+      console.log(`Overpass dotaz ${iso} (hutové tagy + civilně tagované boudy podle názvu, ${iso} ∩ okno ${oblast.nazev}); instance: ${instance.join(', ')}…`)
       const vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno), { povolitPrazdno })
       raw = vysledek.raw
       console.log(`Staženo z ${vysledek.api}.`)
@@ -638,6 +721,40 @@ const main = async () => {
   }
   if (polozky.length === 0 && zJsonu) {
     throw new Error('--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.')
+  }
+
+  // ── dohledávka podle jmen z katalogu ──────────────────────────────────────
+  // Druhá záchranná síť po nálezu 30. 7. 2026 (chyběly Smědava, Knajpa,
+  // chaty na Jizerce). Co katalog vede a dotaz nenajde, se NEVYMÝŠLÍ —
+  // vypíše se na konci jako úkol pro ruční dohledání (DATA-31).
+  const jmena = jmenaZKatalogu(join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json'), oblast.katalogPohori)
+  const nalezenaJmena = new Set<string>()
+  if (jmena.length) {
+    console.log(`\nDohledávka podle ${jmena.length} jmen z externího katalogu (${oblast.katalogPohori?.join(', ')})…`)
+    for (const { zeme, iso } of ZEME_DOTAZU) {
+      const soubor = join(kandAdr, `_overpass-dle-jmen-${zeme}.json`)
+      let raw: string
+      if (zJsonu) {
+        if (!existsSync(soubor)) continue
+        raw = readFileSync(soubor, 'utf8')
+      } else {
+        // Prázdno je tu legitimní: v druhé zemi nemusí být z katalogu nic.
+        const vysledek = await stahniOverpass(instance, overpassDotazDleJmen(iso, jmena, okno), { povolitPrazdno: true })
+        raw = vysledek.raw
+        mkdirSync(kandAdr, { recursive: true })
+        writeFileSync(soubor, raw, 'utf8')
+      }
+      const { elementy, checked } = nactiExport(raw)
+      console.log(`  ${zeme}: ${elementy.length} objektů dohledáno podle jména.`)
+      for (const el of elementy) {
+        const nazev = el.tags?.name?.trim()
+        if (nazev) nalezenaJmena.add(nazev)
+        // Duplicity s hlavním exportem se zahodí — týž objekt jednou.
+        if (!polozky.some((p) => p.el.type === el.type && p.el.id === el.id)) {
+          polozky.push({ el, zeme, checked })
+        }
+      }
+    }
   }
 
   // ── rozhledny (jen s doloženým občerstvením) ──────────────────────────────
@@ -724,6 +841,13 @@ const main = async () => {
   for (const r of rozhlednyBezObcerstveni) console.log(`- ${r.nazev} — ${r.url}`)
   console.log(`\nPod prahem výšky ${MIN_VYSKA_ROZHLEDNY_M} m — vyhlídková plošina, ne rozhledna (NEBEREME): ${rozhlednyNizke.length}`)
   for (const r of rozhlednyNizke) console.log(`- ${r.nazev} (${r.vyska} m) — ${r.url}`)
+
+  // Co katalog vede a OSM nemá: úkol pro ruční dohledání, ne důvod k výmyslu.
+  if (jmena.length) {
+    const nenalezene = jmena.filter((j) => ![...nalezenaJmena].some((n) => n.localeCompare(j, 'cs', { sensitivity: 'accent' }) === 0))
+    console.log(`\nKatalog vede, OSM podle jména nenašlo (${nenalezene.length} z ${jmena.length}) — souřadnice doplní ruční dohledávka DATA-31:`)
+    for (const j of nenalezene) console.log(`- ${j}`)
+  }
 }
 
 // Spuštěno přímo (tsx) → CLI; import z testů main nespouští.

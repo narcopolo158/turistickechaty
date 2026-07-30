@@ -19,6 +19,13 @@ export type OblastKonfig = {
   /** Užší okno pro 3D reliéf (mřížka výškopisu) — bez okolního podhůří. */
   bbox3d: { latMin: number; lngMin: number; latMax: number; lngMax: number }
   poznamka: string
+  /**
+   * Jak se pohoří jmenuje v externím katalogu (`data/externi/katalog-cr-sk-2026`).
+   * Slouží dohledávce DATA-01 podle jmen: katalog o objektu ví, ale OSM ho
+   * tagovalo civilně (Kiosek Knajpa, Pyramida Jizerka), takže ho hutový dotaz
+   * mine. Přeshraniční pohoří má v katalogu dva názvy — proto pole.
+   */
+  katalogPohori?: string[]
 }
 
 export const OBLASTI: OblastKonfig[] = [
@@ -36,6 +43,7 @@ export const OBLASTI: OblastKonfig[] = [
     // 28. 7. 2026 — Michal ho nechal na mně, viz deník).
     bbox3d: { latMin: 50.6, lngMin: 15.35, latMax: 50.84, lngMax: 15.95 },
     poznamka: 'pilotní oblast průvodce (76 publikovaných profilů k 28. 7. 2026)',
+    katalogPohori: ['Krkonoše', 'Karkonosze'],
   },
   {
     slug: 'jizerske-hory',
@@ -60,6 +68,7 @@ export const OBLASTI: OblastKonfig[] = [
     // Štěpánku a Maják — jinak by je model vynechal, i když je vedeme.
     bbox3d: { latMin: 50.73, lngMin: 15.1, latMax: 50.98, lngMax: 15.42 },
     poznamka: 'druhá oblast (rozhodnutí Michala 28. 7. 2026) — přeshraniční s Górami Izerskimi',
+    katalogPohori: ['Jizerské hory', 'Góry Izerskie'],
   },
 ]
 
