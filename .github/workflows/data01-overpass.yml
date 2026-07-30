@@ -76,7 +76,17 @@ jobs:
             exit 0
           fi
           pocet=$(git diff --cached --name-only --diff-filter=A -- 'data/kandidati/**/*.yaml' | wc -l)
-          git commit -m "data: OSM Overpass export chat a rozhleden s občerstvením (${OBLAST}) — kandidáti (+${pocet} nových, z Actions)" \
-            -m 'Zdroj: OpenStreetMap (ODbL), tourism=alpine_hut/wilderness_hut/hut + tower:type=observation s doloženým občerstvením do 100 m, vše verified: false. Kandidáti nejsou na webu — do data/chaty/ povyšovat po křížovém ověření (DATA-03).'
+          # Neúplný běh (jedna země se nestáhla) commituje, co našel — ale MUSÍ
+          # to být vidět v historii, jinak by commit tvrdil úplný export.
+          # Skript to říká řádkem „NEUPLNY_BEH: PL" (viz verdiktBehu).
+          CHYBI=$(sed -n 's/^NEUPLNY_BEH: //p' report.txt | head -1)
+          if [ -n "$CHYBI" ]; then
+            TITULEK="data: OSM Overpass export chat a rozhleden (${OBLAST}) — NEÚPLNÝ, chybí ${CHYBI} (+${pocet} nových, z Actions)"
+            DOVETEK="POZOR: dotaz na ${CHYBI} se v tomhle běhu nepovedl (Overpass), kandidáti z té země tu NEJSOU. Spusť workflow znovu — je idempotentní, nic se nepřepisuje."
+          else
+            TITULEK="data: OSM Overpass export chat a rozhleden s občerstvením (${OBLAST}) — kandidáti (+${pocet} nových, z Actions)"
+            DOVETEK='Zdroj: OpenStreetMap (ODbL), tourism=alpine_hut/wilderness_hut/hut + tower:type=observation s doloženým občerstvením do 100 m, vše verified: false. Kandidáti nejsou na webu — do data/chaty/ povyšovat po křížovém ověření (DATA-03).'
+          fi
+          git commit -m "$TITULEK" -m "$DOVETEK"
           git pull --rebase origin main
           git push origin main

@@ -181,7 +181,7 @@ const main = async () => {
   const okno = bboxStr(oblast.bbox)
   const OBLAST_ADRESAR = cestyOblasti(oblast.slug).oblast
   const KATALOG_JSON = join(OBLAST_ADRESAR, 'vychozi-body-kandidati.json')
-  const exportJson = (zeme: string) => join(OBLAST_ADRESAR, `_vychozi-body-export-${zeme}.json`)
+  const exportJson = (zeme: Zeme) => join(OBLAST_ADRESAR, `_vychozi-body-export-${zeme}.json`)
   console.log(`Oblast: ${oblast.nazev} (${oblast.slug}) — okno dotazu ${okno}, země ${oblast.zeme.join(', ')}`)
 
   mkdirSync(OBLAST_ADRESAR, { recursive: true })
@@ -208,8 +208,8 @@ const main = async () => {
     }
     const { elementy, checked } = nactiExport(raw)
     console.log(`Export ${zeme}: ${elementy.length} objektů, stav OSM dat ${checked}.`)
-    stavy[zeme as Zeme] = checked
-    polozky.push(...elementy.map((el) => ({ el, zeme: zeme as Zeme })))
+    stavy[zeme] = checked
+    polozky.push(...elementy.map((el) => ({ el, zeme })))
   }
   if (polozky.length === 0 && zJsonu) {
     throw new Error('--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.')
@@ -229,7 +229,7 @@ const main = async () => {
   const dleZeme = (z: Zeme) => body.filter((b) => b.zeme === z).length
   console.log(`\n## DATA-06 report — výchozí body oblasti (stav OSM dat: ${Object.entries(stavy).map(([z, c]) => `${z} ${c}`).join(', ') || '—'})`)
   console.log(`Objektů v exportu: ${polozky.length}`)
-  const dleZemi = oblast.zeme.map((iso) => `${iso} ${dleZeme(iso.toLowerCase() as Zeme)}`).join(', ')
+  const dleZemi = zemeDotazu(oblast).map((z) => `${z.iso} ${dleZeme(z.zeme)}`).join(', ')
   console.log(`Výchozích bodů (do katalogu): ${body.length} — obce ${dle('obec')}, lanovky ${dle('lanovka')}, železnice ${dle('zeleznice')} · ${dleZemi}`)
   console.log(`Vynecháno (k ruční kontrole, NEzapsáno): ${vynechano.length}`)
   for (const b of body.slice(0, 30)) {

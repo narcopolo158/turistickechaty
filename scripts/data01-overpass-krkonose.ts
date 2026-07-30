@@ -52,7 +52,7 @@ import { join } from 'node:path'
 
 import { parse, stringify } from 'yaml'
 
-import { bboxStr, oblastZArgv, zemeDotazu, type OblastKonfig } from './oblasti'
+import { bboxStr, oblastZArgv, zemeDotazu, type OblastKonfig, type ZemeIso } from './oblasti'
 
 // Slug generujeme stejně jako Payload hook — jeden zdroj pravdy.
 import { slugify } from '../src/fields/slug'
@@ -116,7 +116,51 @@ export const nactiVyrazene = (soubor: string = VYRAZENO_SOUBOR): Map<string, str
  * na exit 1. Úspěšný český export (7 objektů) tím propadl bez commitu.
  */
 
-export type Zeme = 'cz' | 'pl'
+/**
+ * Země kandidáta — odvozená od seznamu v konfiguraci oblastí, ne psaná zvlášť.
+ * Kdyby to byly dva nezávislé seznamy, přidání Slovenska do oblasti by prošlo
+ * typovou kontrolou a `zeme: 'sk'` by se do dat dostalo přes přetypování.
+ */
+export type Zeme = Lowercase<ZemeIso>
+
+/** Jak dopadl dotaz na jednu zemi. */
+export type StavZeme = { iso: string; ok: boolean; chyba?: string }
+
+/**
+ * Verdikt o úplnosti běhu — a jestli se smí zapisovat.
+ *
+ * Rozhodnutí Michala 30. 7. 2026 („uprav to tak, že zacommituje co najde"):
+ * když spadne jedna země, běh **není** k zahození. Předtím platilo všechno,
+ * nebo nic: 30. 7. spadl polský dotaz na Ještěd, a s ním přišel vniveč
+ * i hotový český export (7 objektů, 17 minut běhu).
+ *
+ * Co se tím NEsmí ztratit, je pravda o tom, co v datech je: neúplný běh musí
+ * být vidět ve výpisu i v commit message, jinak by „zelený" běh tvrdil úplný
+ * export. Proto `sentinel` — řádek, který si workflow přečte a přilepí do
+ * commitu. Kandidáti se jen přidávají a nic se nepřepisuje, takže zapsat
+ * neúplný výsledek není destruktivní; zamlčet ho by bylo.
+ */
+export const verdiktBehu = (
+  stavy: StavZeme[],
+): {
+  zapsat: boolean
+  neuplny: boolean
+  hotove: string[]
+  selhale: string[]
+  zprava: string
+  sentinel: string | null
+} => {
+  const hotove = stavy.filter((z) => z.ok).map((z) => z.iso)
+  const selhale = stavy.filter((z) => !z.ok).map((z) => z.iso)
+  const zapsat = hotove.length > 0
+  const neuplny = zapsat && selhale.length > 0
+  const zprava = !zapsat
+    ? `Nestáhla se ani jedna země (${selhale.join(', ') || '—'}) — není co zapsat. Overpass instance bývají přetížené, zopakuj běh.`
+    : neuplny
+      ? `NEÚPLNÝ BĚH: staženo ${hotove.join(', ')}, NEPOVEDLO SE ${selhale.join(', ')}. Zapisuje se, co je — kandidáti z chybějících zemí v tomhle běhu NEJSOU. Až Overpass pustí, spusť workflow znovu; běh je idempotentní (nic se nepřepisuje, jen doplní).`
+      : `Staženy všechny země oblasti (${hotove.join(', ')}).`
+  return { zapsat, neuplny, hotove, selhale, zprava, sentinel: neuplny ? `NEUPLNY_BEH: ${selhale.join(',')}` : null }
+}
 
 /**
  * Hrubé vyhledávací okno Krkonoš (jih, západ, sever, východ) — jen okno
@@ -782,11 +826,14 @@ const main = async () => {
 
   // Jeden seznam pro všechny tři dotazy (chaty, dohledávka podle jmen,
   // rozhledny) — kdyby se lišily, ptala by se každá část jiných zemí.
-  const zeme_dotazu = zemeDotazu(oblast).map((z) => ({ iso: z.iso, zeme: z.zeme as Zeme }))
+  const zeme_dotazu = zemeDotazu(oblast)
   console.log(`Země dotazu: ${zeme_dotazu.map((z) => z.iso).join(', ')} (dle konfigurace oblasti)`)
 
   const polozky: ExportPolozka[] = []
   const stavy: string[] = []
+  // Pád jedné země NERUŠÍ celý běh (rozhodnutí Michala 30. 7. 2026) — zapíše
+  // se, co se stáhlo, a `verdiktBehu` se postará, aby neúplnost byla vidět.
+  const stavyZemi: StavZeme[] = []
   for (const { zeme, iso } of zeme_dotazu) {
     const soubor = join(kandAdr, `_overpass-export-${zeme}.json`)
     let raw: string
@@ -799,35 +846,31 @@ const main = async () => {
       raw = readFileSync(soubor, 'utf8')
     } else {
       console.log(`Overpass dotaz ${iso} (hutové tagy + civilně tagované boudy podle názvu, ${iso} ∩ okno ${oblast.nazev}); instance: ${instance.join(', ')}…`)
-      // Když spadne DRUHÁ země, výpis končí zdí selhaných instancí a není z něj
-      // vidět, že první země je hotová a že se ani ta nezacommituje (běh skončí
-      // nenulovým kódem, commit krok se přeskočí). Verdikt to řekne rovnou.
-      let vysledek: Awaited<ReturnType<typeof stahniOverpass>>
       try {
-        vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno), { povolitPrazdno })
+        const vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno), { povolitPrazdno })
+        raw = vysledek.raw
+        console.log(`Staženo z ${vysledek.api}.`)
+        mkdirSync(kandAdr, { recursive: true })
+        writeFileSync(soubor, raw, 'utf8')
+        console.log(`Surový export uložen: ${soubor} (commituje se jako doklad).`)
       } catch (chyba) {
-        const hotove = stavy.length ? stavy.map((s) => s.split(' ')[0]!.toUpperCase()).join(', ') : 'žádná'
-        console.error(
-          `\nDotaz ${iso} se nepovedl. Hotové země do této chvíle: ${hotove} — jejich data se NEcommitnou, ` +
-            `běh je neúplný. Zopakuj workflow (Overpass instance bývají přetížené po nárazech), ` +
-            `nebo pusť jen tuhle zemi znovu.`,
-        )
-        throw chyba
+        const zprava = chyba instanceof Error ? chyba.message : String(chyba)
+        console.error(`\n::warning::Dotaz ${iso} se nepovedl — pokračuji bez něj. ${zprava.split('\n')[0]}`)
+        stavyZemi.push({ iso, ok: false, chyba: zprava })
+        continue
       }
-      raw = vysledek.raw
-      console.log(`Staženo z ${vysledek.api}.`)
-      mkdirSync(kandAdr, { recursive: true })
-      writeFileSync(soubor, raw, 'utf8')
-      console.log(`Surový export uložen: ${soubor} (commituje se jako doklad).`)
     }
     const { elementy, checked } = nactiExport(raw)
     console.log(`Export ${zeme}: ${elementy.length} objektů, stav OSM dat ${checked}.`)
     stavy.push(`${zeme} ${checked}`)
+    stavyZemi.push({ iso, ok: true })
     polozky.push(...elementy.map((el) => ({ el, zeme, checked })))
   }
   if (polozky.length === 0 && zJsonu) {
     throw new Error('--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.')
   }
+  const verdikt = verdiktBehu(stavyZemi)
+  if (!zJsonu && !verdikt.zapsat) throw new Error(verdikt.zprava)
 
   // ── dohledávka podle jmen z katalogu ──────────────────────────────────────
   // Druhá záchranná síť po nálezu 30. 7. 2026 (chyběly Smědava, Knajpa,
@@ -844,11 +887,18 @@ const main = async () => {
         if (!existsSync(soubor)) continue
         raw = readFileSync(soubor, 'utf8')
       } else {
-        // Prázdno je tu legitimní: v druhé zemi nemusí být z katalogu nic.
-        const vysledek = await stahniOverpass(instance, overpassDotazDleJmen(iso, jmena, okno), { povolitPrazdno: true })
-        raw = vysledek.raw
-        mkdirSync(kandAdr, { recursive: true })
-        writeFileSync(soubor, raw, 'utf8')
+        try {
+          // Prázdno je tu legitimní: v druhé zemi nemusí být z katalogu nic.
+          const vysledek = await stahniOverpass(instance, overpassDotazDleJmen(iso, jmena, okno), { povolitPrazdno: true })
+          raw = vysledek.raw
+          mkdirSync(kandAdr, { recursive: true })
+          writeFileSync(soubor, raw, 'utf8')
+        } catch (chyba) {
+          // Dohledávka je záchranná síť, ne podmínka: bez ní se jen nedoplní
+          // civilně tagované boudy z katalogu — a to se vypíše.
+          console.error(`::warning::Dohledávka podle jmen (${iso}) se nepovedla — pokračuji bez ní. ${(chyba instanceof Error ? chyba.message : String(chyba)).split('\n')[0]}`)
+          continue
+        }
       }
       const { elementy, checked } = nactiExport(raw)
       console.log(`  ${zeme}: ${elementy.length} objektů dohledáno podle jména.`)
@@ -896,8 +946,14 @@ const main = async () => {
       raw = readFileSync(soubor, 'utf8')
     } else {
       console.log(`Overpass dotaz ${iso} (rozhledny tower:type=observation + občerstvení do ${OKOLI_OBCERSTVENI_M} m)…`)
-      // Oblast bez jediné rozhledny je legitimní stav, prázdno tu neplaší.
-      const vysledek = await stahniOverpass(instance, overpassDotazRozhledny(iso, okno), { povolitPrazdno: true })
+      let vysledek: Awaited<ReturnType<typeof stahniOverpass>>
+      try {
+        // Oblast bez jediné rozhledny je legitimní stav, prázdno tu neplaší.
+        vysledek = await stahniOverpass(instance, overpassDotazRozhledny(iso, okno), { povolitPrazdno: true })
+      } catch (chyba) {
+        console.error(`::warning::Dotaz na rozhledny (${iso}) se nepovedl — pokračuji bez nich. ${(chyba instanceof Error ? chyba.message : String(chyba)).split('\n')[0]}`)
+        continue
+      }
       raw = vysledek.raw
       mkdirSync(kandAdr, { recursive: true })
       writeFileSync(soubor, raw, 'utf8')
@@ -932,6 +988,13 @@ const main = async () => {
   const report = zapisKandidaty(polozky, kandAdr, rucAdr, nactiVyrazene(), oblast.slug)
 
   console.log(`\n## DATA-01 report (stav OSM dat: ${stavy.join(', ')})`)
+  // Verdikt se týká STAHOVÁNÍ, offline transformace ho nemá co hlásit.
+  if (!zJsonu) {
+    console.log(`\n${verdikt.zprava}`)
+    // Sentinel čte workflow a přilepí ho do commit message — aby ani po
+    // měsících nešlo z historie vyčíst „export hotov", když v něm země chybí.
+    if (verdikt.sentinel) console.log(verdikt.sentinel)
+  }
   console.log(`\nNoví kandidáti: ${report.zapsano.length}`)
   for (const ch of report.zapsano) console.log(`- ${ch.nazev} (\`${ch.slug}.yaml\`) — ${ch.url}`)
   console.log(`\nUž kandidátem z dřívějška (nepřepsáno): ${report.jizKandidat.length}`)

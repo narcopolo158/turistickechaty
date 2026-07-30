@@ -32,6 +32,7 @@ import {
   znackaObcerstveni,
   type ExportPolozka,
   type OsmElement,
+  verdiktBehu,
 } from '../../scripts/data01-overpass-krkonose'
 import { oblastDleSlugu, zemeDotazu } from '../../scripts/oblasti'
 
@@ -501,5 +502,61 @@ describe('stahniOverpass (mock API)', () => {
     await expect(
       stahniOverpass(['https://regionalni.example'], overpassDotaz('CZ'), { kola: 1, spanek, povolitPrazdno: true }),
     ).resolves.toEqual({ raw: PRAZDNY, api: 'https://regionalni.example' })
+  })
+})
+
+/**
+ * Rozhodnutí Michala 30. 7. 2026: „uprav to tak, že zacommituje co najde."
+ *
+ * Předtím platilo všechno, nebo nic — a stálo to celý běh: polský dotaz na
+ * Ještěd selhal (prázdno = selhání instance) a s ním přišel vniveč i hotový
+ * český export, 7 objektů a 17 minut. Testy drží obě strany té dohody:
+ * neúplný běh se ZAPÍŠE, ale musí být VIDĚT — ve výpisu i v commit message.
+ */
+describe('DATA-01 · verdikt neúplného běhu', () => {
+  it('všechny země prošly → zapisuje se a nic se nehlásí', () => {
+    const v = verdiktBehu([
+      { iso: 'CZ', ok: true },
+      { iso: 'PL', ok: true },
+    ])
+    expect(v.zapsat).toBe(true)
+    expect(v.neuplny).toBe(false)
+    expect(v.sentinel).toBeNull()
+    expect(v.zprava).toContain('CZ, PL')
+  })
+
+  it('jedna země selhala → zapisuje se, co je, a neúplnost jde do commitu', () => {
+    const v = verdiktBehu([
+      { iso: 'CZ', ok: true },
+      { iso: 'PL', ok: false, chyba: 'HTTP 504' },
+    ])
+    expect(v.zapsat).toBe(true)
+    expect(v.neuplny).toBe(true)
+    expect(v.hotove).toEqual(['CZ'])
+    expect(v.selhale).toEqual(['PL'])
+    // Sentinel čte workflow (sed) a lepí ho do commit message — tvar se
+    // nesmí měnit bez úpravy .github/workflows/data01-overpass.yml.
+    expect(v.sentinel).toBe('NEUPLNY_BEH: PL')
+    expect(v.zprava).toContain('NEÚPLNÝ BĚH')
+  })
+
+  it('neselhala-li ani jedna, ale žádná neprošla → není co zapsat', () => {
+    const v = verdiktBehu([{ iso: 'CZ', ok: false, chyba: 'HTTP 504' }])
+    expect(v.zapsat).toBe(false)
+    expect(v.sentinel).toBeNull()
+    expect(v.zprava).toContain('ani jedna')
+  })
+
+  it('běh bez zemí (nic se nedotazovalo) se nepovažuje za úspěch', () => {
+    expect(verdiktBehu([]).zapsat).toBe(false)
+  })
+
+  it('víc selhaných zemí se do sentinelu vypíše všech', () => {
+    const v = verdiktBehu([
+      { iso: 'CZ', ok: true },
+      { iso: 'PL', ok: false },
+      { iso: 'SK', ok: false },
+    ])
+    expect(v.sentinel).toBe('NEUPLNY_BEH: PL,SK')
   })
 })

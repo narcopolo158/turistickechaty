@@ -11,6 +11,56 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (večer, potřetí) — neúplný běh zapíše, co našel
+
+**Hotovo:** Michal rozhodl otázku z minulého zápisu: *„uprav to tak, že
+zacommituje co najde — asi bysme si pak při dalších pohořích mohli říct, které
+země to má chytat; beskydy budou mít část na Slovensku, žádné Polsko ani
+Německo."*
+
+**Pád jedné země už neruší celý běh.** Dřív platilo všechno, nebo nic — a stálo
+to dnes ráno 17 minut i s hotovým českým exportem. Nově se každá země stahuje
+zvlášť, pád se zaznamená a jede se dál; na konci `verdiktBehu` rozhodne, co se
+smí zapsat:
+
+- **aspoň jedna země prošla** → zapisuje se, co je (kandidáti se jen přidávají,
+  nic se nepřepisuje — neúplný zápis proto není destruktivní);
+- **neprošla ani jedna** → běh padá, není co zapisovat;
+- **něco chybí** → do výpisu jde `NEÚPLNÝ BĚH: staženo CZ, NEPOVEDLO SE PL…`.
+
+**Co se tím nesmělo ztratit, je pravda o datech.** Kdyby neúplný běh commitoval
+mlčky, znamenal by „zelený" běh úplný export a za měsíc by to z historie nikdo
+nevyčetl. Skript proto tiskne strojový řádek `NEUPLNY_BEH: PL`, workflow si ho
+přečte a **commit se jmenuje jinak**: „…— NEÚPLNÝ, chybí PL", v těle s větou,
+že kandidáti z té země v běhu nejsou a že stačí workflow spustit znovu.
+Dohledávka podle jmen a dotaz na rozhledny se chovají stejně — jsou to
+záchranné sítě, ne podmínky, takže jejich pád jen vypíše `::warning::`.
+
+**K té druhé polovině zadání (které země která oblast chytá).** Přesně tak to
+od dneška funguje — a udělal jsem k tomu ještě jeden krok, ať to nejde
+odbýt překlepem: seznam zemí je **typ**, ne volný řetězec (`ZemeIso`), a `Zeme`
+u kandidáta se z něj odvozuje. Kdyby to byly dva nezávislé seznamy, přidání
+Slovenska by prošlo typovou kontrolou a `zeme: 'sk'` by se do dat dostalo
+přetypováním. **Slovensko jsem do typu přidal rovnou**, ať se u Beskyd přidává
+jen záznam oblasti.
+
+Až na Beskydy dojde: okno bude potřeba prohlédnout na severu — Moravskoslezské
+i Slezské Beskydy se v okolí Hrčavy a Bílého Kříže dotýkají i Polska, takže
+seznam zemí u nich posoudíme podle toho, kudy okno povedeme. Nic to nemění na
+principu: rozhoduje záznam oblasti.
+
+**Ověřeno nanečisto, ne jen testem:** pustil jsem skutečný běh s podvrženým
+Overpassem (CZ odpoví, PL vrací HTTP 504) v dočasném pracovním adresáři —
+kandidát z CZ se zapsal, běh skončil nulou a v reportu stojí sentinel.
+
+**Testy:** 557 (z 552) — pět nových na `verdiktBehu` (všechno prošlo; jedna
+země spadla; nespadla ani jedna, ale žádná neprošla; běh bez zemí; víc
+spadlých zemí v sentinelu). Tvar sentinelu drží test, protože ho čte shell
+ve workflow.
+
+**Příště:** až Michal pustí DATA-01 pro Ještěd, projít nálezy a založit triáž;
+pak jizerských 75 kandidátů.
+
 ## 2026-07-30 (večer, podruhé) — DATA-01 pro Ještěd spadlo: ptali jsme se Polska na český hřbet
 
 **Hotovo:** Michalův druhý běh DATA-01 skončil červeně po **17 minutách**.

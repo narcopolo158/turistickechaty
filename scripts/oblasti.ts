@@ -11,11 +11,25 @@
 
 import { join } from 'node:path'
 
+/**
+ * Země, po kterých umíme dotazovat OSM. Seznam je TYP, ne volný řetězec:
+ * `zeme` z konfigurace se propisuje do pole `zeme` u každého kandidáta, takže
+ * překlep („SL" místo „SK") by se tiše rozlezl do dat. Rozšiřuje se vědomě —
+ * až přibude pohoří, které tu zemi opravdu má. Slovensko sem přibylo
+ * 30. 7. 2026 dopředu na Michalův pokyn („beskydy budou mít část na
+ * Slovensku"), ať se pak přidává jen záznam oblasti, ne typ.
+ */
+export type ZemeIso = 'CZ' | 'PL' | 'SK'
+
 export type OblastKonfig = {
   slug: string
   nazev: string
-  /** ISO kódy zemí, po kterých se dotazuje OSM (průnik area × bbox). */
-  zeme: string[]
+  /**
+   * ISO kódy zemí, po kterých se dotazuje OSM (průnik area × bbox) — a jen
+   * po nich. Oblast celá v Česku má `['CZ']`; ptát se navíc Polska stálo
+   * 30. 7. 2026 celý běh DATA-01 (prázdná odpověď = selhání instance).
+   */
+  zeme: ZemeIso[]
   /** Hrubé okno dotazu: jih, západ, sever, východ. */
   bbox: { latMin: number; lngMin: number; latMax: number; lngMax: number }
   /** Užší okno pro 3D reliéf (mřížka výškopisu) — bez okolního podhůří. */
@@ -122,8 +136,8 @@ export const bboxStr = (b: OblastKonfig['bbox']): string =>
  * hřbet je celý v Česku, takže polský dotaz by u něj byl jen prázdný soubor
  * navíc; přeshraniční pohoří mají v `zeme` obě.
  */
-export const zemeDotazu = (o: OblastKonfig): { zeme: string; iso: string }[] =>
-  o.zeme.map((iso) => ({ zeme: iso.toLowerCase(), iso }))
+export const zemeDotazu = (o: OblastKonfig): { zeme: Lowercase<ZemeIso>; iso: ZemeIso }[] =>
+  o.zeme.map((iso) => ({ zeme: iso.toLowerCase() as Lowercase<ZemeIso>, iso }))
 
 /**
  * Kde v repu leží data oblasti. Jedno místo pro celou pipeline DATA-06 —
