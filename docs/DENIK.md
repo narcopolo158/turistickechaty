@@ -11,6 +11,70 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (dopoledne) — CI padala na jmenovci, a otázka oblastí sepsaná k rozhodnutí
+
+**Hotovo — nejdřív ta padající CI.** Michal poslal screenshot z Actions: CI
+#245 a #246 na main červené. Nebylo to od těch commitů, ale od **prvního
+jizerského běhu DATA-01** (3081ea2): založil kandidáta
+`jizerske-hory/chata-studenov`, který má se **zveřejněným** profilem
+`krkonose/chata-studenov` shodné GPS na sedm desetinných míst
+(50.7483559, 15.4474469) i shodný název. Je to týž objekt — chata stojí
+v Rokytnici nad Jizerou, tedy v Krkonoších. Jizerské okno ji chytilo proto,
+že jeho východní hrana (lng 15,45) vede vědomě přes pomezí
+Jizerka–Harrachov a chata leží 2,5 tisíciny stupně pod ní.
+
+Kontrola kolizí jmen to označila správně (třída A) a shodila běh — dělala
+přesně to, k čemu je. Okno se **neořezává** (rozhodnutí u založení Jizerek:
+„duplicity vyřeší kandidátní triáž, ne ořez okna"), objekt jde do
+`_vyrazeno.yaml` podle URL v OSM, aby ho další běh nezaložil znovu, a soubor
+kandidáta se mazal. `npm run kontrola`: vše zelené.
+
+Zbylých 21 jizerských kandidátů jsem proti oběma oknům proměřil: čtyři leží
+v překryvu (Pešákovna, Górzystów, Orle, Maják J. Cimrmanna, Štěpánka), ale
+duplicita to není — v Krkonoších protějšek nemají.
+
+**A pak ta věcná otázka.** Michal: „nevím jestli vytvářet ještědský hřbet jako
+samostatné pohoří, nebo ho připojit k většímu celku; jak zacházet s chatou na
+Kozákově a s Prachovem; jaké oblasti chceš vytvářet? pojďme to vyřešit rovnou."
+Sepsáno jako **návrh k odsouhlasení**: `docs/OBLASTI-NAVRH.md` (plán se bez
+zadání nemění, proto samostatný dokument).
+
+Jádro nálezu: **prameny se rozcházejí a žádný není „ten správný".**
+ceskehory.cz vede Ještědský hřbet s Jizerkami, risy.cz s Lužickými horami —
+tentýž hřbet přilepený na opačné strany —, vydavatel známek ho má jako vlastní
+kategorii a geomorfologie říká, že je to samostatný celek
+(Ještědsko-kozákovský hřbet), Jizerkám sousední, ne nadřazený. Nemá tedy smysl
+hledat pravdu; je potřeba napsat konvenci.
+
+**Návrh:** oblast = turistická oblast, jak ji hledá turista (průvodce je pro
+turisty, ne pro geomorfology), ale se čtyřmi pravidly, která z měkké hranice
+udělají tvrdou: každá oblast má napsáno, co obsahuje; **přiznává, kde ji
+prameny řežou jinak** (věta přímo na stránce pohoří); profil chaty nese
+geomorfologický celek jako doložený údaj, když se liší od oblasti; oblasti se
+nepřekrývají a hraniční případy mají zapsaný důvod.
+
+Konkrétně: **Ještědský hřbet zůstat samostatně** (do Jizerek nepatří a dva
+turistické prameny ho lepí na opačné strany — a samostatnou oblast lze později
+sloučit, sloučenou rozdělit bolí kvůli URL), **Kozákov i Prachov do Českého
+ráje** — s tím, že Český ráj bude oblast typu `turisticka-oblast`, ne `pohori`,
+protože pohoří opravdu není a průvodce by to neměl předstírat.
+
+**Otevřel jsem u toho otázku, kterou to samo neřeší:** průvodce se představuje
+jako průvodce *horskými* chatami, ale Prachov ani Kozákov horské chaty nejsou.
+Buď se rozsah drží a oba se vyřadí, nebo se rozšíří na *turistické* chaty
+a průvodce to řekne. Doporučuju druhé (oba už v repu leží jako kandidáti a mají
+turistickou známku), ale je to rozhodnutí o povaze průvodce — Michalovo.
+
+**Příště:** podle Michalova rozhodnutí — buď potvrdit stávající stav, nebo
+přejmenovat/sloučit Ještědský hřbet (dnes levné: nula profilů). Pak dva běhy
+DATA-01 (`jizerske-hory` s rozšířeným dotazem, `jestedsky-hrbet`).
+
+**Otázky pro Michala:** viz `docs/OBLASTI-NAVRH.md`, oddíly 5–6 — tři objekty
+a rozsah průvodce. Jinak trvá: prodejní místa známek ano/ne a plný výpis
+známkových míst, pokud k němu máš přístup.
+
+---
+
 ## 2026-07-30 (noc, dodatek 2) — Ještědský hřbet jako třetí oblast, a co u toho vyplavalo
 
 **Hotovo:** Michal rozhodl: „bereme i ještědský hřbet". Ještěd do Jizerek
