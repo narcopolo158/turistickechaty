@@ -550,18 +550,18 @@ body.dark .phf-razitko { opacity: 0.85; }
    pravidla, jinak by na tmavé stránce svítily bíle. Při té příležitosti
    dostávají svá i stat-dlaždice hlavičky: bílé karty na noční stránce byly
    ve stávající šabloně vidět od začátku, jen si toho nikdo nevšiml. */
-body.dark .lan-blok { background: linear-gradient(160deg, rgba(42, 92, 184, 0.16), #141c24 62%); border-color: #242f39; }
-body.dark .lan-karta { background-color: #1b242e; background-image: linear-gradient(160deg, var(--akcent-ton), #1b242e 60%); border-color: #2a3541; }
-body.dark .lan-karta h3, body.dark .lan-udaje dd, body.dark .lan-chaty a { color: #e7ecf1; }
-body.dark .lan-chaty, body.dark .lan-pravidlo { color: #a9b6c2; }
-body.dark .lan-udaje > div { border-color: #2a3541; }
+body.dark .lan-blok { background: linear-gradient(160deg, rgba(42, 92, 184, 0.16), var(--desk) 62%); border-color: var(--hair); }
+body.dark .lan-karta { background-color: var(--card); background-image: linear-gradient(160deg, var(--akcent-ton), var(--card) 60%); border-color: var(--hair); }
+body.dark .lan-karta h3, body.dark .lan-udaje dd, body.dark .lan-chaty a { color: var(--ink); }
+body.dark .lan-chaty, body.dark .lan-pravidlo { color: var(--muted); }
+body.dark .lan-udaje > div { border-color: var(--hair); }
 body.dark .lan-lano { stroke: rgba(231, 236, 241, 0.22); }
 body.dark .lan-podpera { stroke: rgba(231, 236, 241, 0.3); }
 body.dark .lan-zaves, body.dark .lan-noha { stroke: rgba(231, 236, 241, 0.45); }
 body.dark .lan-okno { fill: rgba(231, 236, 241, 0.75); }
-body.dark .pohori-tile { background: #1b242e; border-color: #2a3541; }
-body.dark .pohori-tile b, body.dark .pohori-tile span { color: #e7ecf1; }
-body.dark .pohori-tile i { color: #93a4b2; }
+body.dark .pohori-tile { background: var(--card); border-color: var(--hair); }
+body.dark .pohori-tile b, body.dark .pohori-tile span { color: var(--ink); }
+body.dark .pohori-tile i { color: var(--muted); }
 
 /* ── Lanovky (DATA-32) ────────────────────────────────────────────────────
    Tabulkový jazyk profilu: tenké linky, klidná hlavička, mikropoznámka pod.
@@ -620,11 +620,11 @@ body.dark .fpas-noc { opacity: 1; }
 .fpas-bod-tlacitko:focus-visible { outline: 3px solid #fff; outline-offset: 3px; border-radius: 50%; }
 
 .fpas-karta { position: absolute; left: max(24px, calc(50vw - 516px)); bottom: 26px; max-width: min(420px, 78vw); padding: 13px 16px 14px; border-radius: 12px; background: rgba(255, 253, 247, 0.95); box-shadow: 0 16px 34px -20px rgba(20, 18, 26, 0.7); }
-body.dark .fpas-karta { background: rgba(27, 36, 46, 0.95); color: #e7ecf1; }
+body.dark .fpas-karta { background: rgba(27, 36, 46, 0.95); color: var(--ink); }
 .fpas-karta b { display: block; font: 500 19px/1.2 var(--font-emph, Georgia, serif); color: var(--ink); }
-body.dark .fpas-karta b { color: #e7ecf1; }
+body.dark .fpas-karta b { color: var(--ink); }
 .fpas-karta p { margin: 6px 0 0; font: 400 12.5px/1.5 Inter, sans-serif; color: var(--muted); }
-body.dark .fpas-karta p { color: #a9b6c2; }
+body.dark .fpas-karta p { color: var(--muted); }
 .fpas-karta a { color: var(--red); text-decoration: none; font: 600 12px/1.3 'Space Grotesk', sans-serif; }
 
 .fpas-kredit { position: absolute; right: 16px; top: 14px; display: flex; flex-direction: column; gap: 4px; align-items: flex-end; text-align: right; max-width: min(46vw, 420px); }
@@ -652,7 +652,7 @@ a.fpas-autor:hover { color: #fff; border-bottom: 1px dotted currentColor; }
 .fvlep { margin: 0; }
 .fvlep-ram { position: relative; background: #fffdf7; padding: 10px 10px 42px; border-radius: 3px; box-shadow: 0 18px 36px -22px rgba(20, 18, 26, 0.75), 0 1px 0 rgba(20, 18, 26, 0.08); transform: rotate(-1.4deg); transition: transform 0.35s ease, box-shadow 0.35s ease; }
 .fvlep-ram:hover { transform: rotate(0deg) translateY(-3px); box-shadow: 0 26px 44px -24px rgba(20, 18, 26, 0.8); }
-body.dark .fvlep-ram { background: #232c35; }
+body.dark .fvlep-ram { background: var(--card); }
 .fvlep-img { display: block; width: 100%; height: clamp(220px, 30vw, 330px); object-fit: cover; object-position: center 42%; }
 .fvlep-rozek { position: absolute; width: 22px; height: 22px; background: rgba(56, 64, 87, 0.22); }
 body.dark .fvlep-rozek { background: rgba(231, 236, 241, 0.24); }
@@ -662,7 +662,7 @@ body.dark .fvlep-rozek { background: rgba(231, 236, 241, 0.24); }
 .fvlep-rozek--pd { right: 2px; bottom: 44px; clip-path: polygon(100% 0, 0 100%, 100% 100%); }
 .fvlep-popis { position: absolute; left: 12px; right: 12px; bottom: 8px; display: flex; flex-direction: column; gap: 2px; }
 .fvlep-rukopis { font: 600 17px/1.2 var(--font-hand, cursive); color: var(--ink); }
-body.dark .fvlep-rukopis { color: #e7ecf1; }
+body.dark .fvlep-rukopis { color: var(--ink); }
 .fvlep-autor { font: 500 9.5px/1.3 Inter, sans-serif; color: var(--label); text-decoration: none; }
 .fvlep-autor:hover { color: var(--ink); border-bottom: 1px dotted currentColor; }
 @media (prefers-reduced-motion: reduce) {
@@ -694,8 +694,8 @@ body.dark .rez {
   --rez-sever: #2c3a47;
   --rez-hreben: #3a4b5a;
   --rez-jih: #4a5d6d;
-  background: #1b242e;
-  border-color: #2a3541;
+  background: var(--card);
+  border-color: var(--hair);
 }
 .rez-plocha { position: relative; height: clamp(240px, 27vw, 330px); }
 .rez-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -710,16 +710,16 @@ body.dark .rez-mrizka line { stroke: rgba(255, 255, 255, 0.12); }
 .rez-vrchol { position: absolute; transform: translate(-50%, -100%); margin-top: -8px; display: flex; flex-direction: column; align-items: center; font: 600 8.5px/1.25 'Space Grotesk', sans-serif; color: rgba(56, 64, 87, 0.75); text-align: center; white-space: nowrap; pointer-events: none; letter-spacing: 0.04em; text-transform: uppercase; }
 .rez-vrchol b { font-size: 9.5px; color: var(--ink); }
 body.dark .rez-vrchol { color: rgba(231, 236, 241, 0.7); }
-body.dark .rez-vrchol b { color: #e7ecf1; }
+body.dark .rez-vrchol b { color: var(--ink); }
 
 /* Bod chaty je ODKAZ (klávesnice + čtečka). Plocha 22 px, aby se dal trefit
    prstem; tečka je uprostřed. Pět nejvyšších má popisku napevno, ostatní
    se ukážou po najetí — 55 popisek naráz je nečitelná kaše. */
 .rez-bod { position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px; }
 .rez-bod-tecka { position: absolute; left: 50%; top: 50%; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%; background: var(--red); border: 2px solid #fff; box-shadow: 0 2px 5px rgba(20, 18, 26, 0.45); transition: transform 0.16s; }
-body.dark .rez-bod-tecka { border-color: #1b242e; }
+body.dark .rez-bod-tecka { border-color: var(--card); }
 .rez-bod-popis { position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); white-space: nowrap; padding: 4px 8px; border-radius: 7px; background: rgba(255, 253, 247, 0.95); color: var(--ink); font: 600 9.5px/1.3 'Space Grotesk', sans-serif; box-shadow: 0 6px 16px -10px rgba(20, 18, 26, 0.8); opacity: 0; visibility: hidden; transition: opacity 0.15s; z-index: 3; }
-body.dark .rez-bod-popis { background: rgba(27, 36, 46, 0.95); color: #e7ecf1; }
+body.dark .rez-bod-popis { background: rgba(27, 36, 46, 0.95); color: var(--ink); }
 .rez-bod--stale .rez-bod-popis { opacity: 1; visibility: visible; }
 .rez-bod:hover .rez-bod-popis, .rez-bod:focus-visible .rez-bod-popis { opacity: 1; visibility: visible; z-index: 4; }
 .rez-bod:hover .rez-bod-tecka, .rez-bod:focus-visible .rez-bod-tecka { transform: scale(1.55); }
@@ -731,7 +731,7 @@ body.dark .rez-bod-popis { background: rgba(27, 36, 46, 0.95); color: #e7ecf1; }
 .rez-smer--v { right: 10px; }
 
 .rez-pozn { margin: 0; padding: 11px 16px 13px; border-top: 1px solid var(--line); font: italic 400 10.5px/1.6 var(--font-emph, Georgia, serif); color: var(--muted); }
-body.dark .rez-pozn { border-color: #2a3541; color: #a9b6c2; }
+body.dark .rez-pozn { border-color: var(--hair); color: var(--muted); }
 .rez-pozn b { font-style: normal; }
 
 @media (prefers-reduced-motion: reduce) {
@@ -749,11 +749,11 @@ body.dark .rez-pozn { border-color: #2a3541; color: #a9b6c2; }
 /* `top` musí být POD hlavičkou webu (62 px + mezera), jinak lišta zajede
    pod ni a je z ní vidět jen okraj. */
 .pohori-nav { position: sticky; top: 72px; z-index: 20; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin: 0 0 14px; padding: 9px 14px; background: var(--cream); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 8px 20px -12px rgba(20, 18, 26, 0.5); }
-body.dark .pohori-nav { background: #171f27; border-color: #242f39; }
+body.dark .pohori-nav { background: var(--paper); border-color: var(--hair); }
 .pohori-nav-popisek { font: 600 9px/1 'Space Grotesk', sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: var(--label); margin-right: 2px; }
 .pohori-nav a { padding: 5px 11px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); font: 600 10.5px/1 'Space Grotesk', sans-serif; color: var(--ink); text-decoration: none; white-space: nowrap; }
 .pohori-nav a:hover { border-color: rgba(224, 52, 31, 0.45); color: var(--red); }
-body.dark .pohori-nav a { background: #1b242e; border-color: #2a3541; color: #e7ecf1; }
+body.dark .pohori-nav a { background: var(--card); border-color: var(--hair); color: var(--ink); }
 /* Kotva nesmí skončit pod hlavičkou ANI pod lištou (62 + 48 + mezera). */
 .sec[id] { scroll-margin-top: 128px; }
 @media (max-width: 760px) {
@@ -782,7 +782,7 @@ body.dark .strk-hreben { fill: rgba(157, 178, 195, 0.28); }
 /* Zkrácení na tři řádky: plné znění drží `title` i data, karta má být přehled.
    `line-clamp` bez `-webkit-` prefixu zatím neprochází všude, proto obojí. */
 .strk-text { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
-body.dark .strk-cislo b { color: #e7ecf1; }
+body.dark .strk-cislo b { color: var(--ink); }
 
 /* ── Jízdenkové karty lanovek (handoff F1 v2) ─────────────────────────────
    Útržek jízdenky: barevný pás s vozem na laně, perforace s punčem
@@ -795,7 +795,7 @@ body.dark .strk-cislo b { color: #e7ecf1; }
 .jzd--sedacka { --jzd: #2a5cb8; }
 .jzd--kabina { --jzd: var(--red); }
 .jzd--kombi { --jzd: #c98a2e; }
-body.dark .jzd { background: #1b242e; border-color: #2a3541; }
+body.dark .jzd { background: var(--card); border-color: var(--hair); }
 
 .jzd-pas { background: color-mix(in srgb, var(--jzd) 12%, transparent); border-right: 1px dashed color-mix(in srgb, var(--jzd) 45%, transparent); }
 .jzd-pas svg { display: block; width: 100%; height: auto; }
@@ -805,23 +805,23 @@ body.dark .jzd { background: #1b242e; border-color: #2a3541; }
 .jzd-okno { fill: rgba(255, 255, 255, 0.85); }
 /* Punc: půlkruhový výsek na perforaci, jako když průvodčí cvakne jízdenku. */
 .jzd-punc { position: absolute; left: 34px; top: 50%; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; border-radius: 50%; background: var(--cream); box-shadow: inset 0 0 0 1px var(--line); }
-body.dark .jzd-punc { background: #141c24; box-shadow: inset 0 0 0 1px #2a3541; }
+body.dark .jzd-punc { background: var(--desk); box-shadow: inset 0 0 0 1px var(--hair); }
 
 .jzd-telo-karty { padding: 11px 13px 12px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .jzd-telo-karty b { font: 500 14px/1.25 var(--font-emph, Georgia, serif); color: var(--ink); }
-body.dark .jzd-telo-karty b { color: #e7ecf1; }
+body.dark .jzd-telo-karty b { color: var(--ink); }
 .jzd-trasa { font: 600 11px/1.3 'Space Grotesk', sans-serif; color: var(--muted); }
 .jzd-chaty { font: 400 11px/1.4 Inter, sans-serif; color: var(--muted); }
 .jzd-chaty a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--jzd); }
 .jzd-chaty a:hover { color: var(--jzd); }
-body.dark .jzd-chaty a { color: #e7ecf1; }
+body.dark .jzd-chaty a { color: var(--ink); }
 .jzd-pill { align-self: flex-start; margin-top: 4px; padding: 2px 8px; border-radius: 999px; background: color-mix(in srgb, var(--jzd) 14%, transparent); color: color-mix(in srgb, var(--jzd) 82%, var(--ink)); font: 600 9.5px/1.5 'Space Grotesk', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }
 
 /* Tabulka zůstává, jen složená — nese údaje, které se do útržku nevejdou. */
 .lanovky-tabulka { margin-top: 14px; }
 .lanovky-tabulka summary { cursor: pointer; font: 600 11.5px/1.4 'Space Grotesk', sans-serif; color: var(--ink); padding: 8px 0; }
 .lanovky-tabulka summary:hover { color: var(--red); }
-body.dark .lanovky-tabulka summary { color: #e7ecf1; }
+body.dark .lanovky-tabulka summary { color: var(--ink); }
 .strk-cta { align-self: flex-start; margin-top: 9px; font: 600 11px/1 'Space Grotesk', sans-serif; letter-spacing: 0.04em; color: var(--red); text-decoration: none; }
 .strk-cta:hover { color: var(--red-deep); }
 .strk-hlava b a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--red); }
@@ -836,4 +836,4 @@ body.dark .lanovky-tabulka summary { color: #e7ecf1; }
 .mini-foto .foto-popis,
 .foto-popis { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
   font: 600 9.5px/1.35 Inter, sans-serif; color: var(--ink); margin-bottom: 1px; }
-body.dark .foto-popis { color: #e7ecf1; }
+body.dark .foto-popis { color: var(--ink); }

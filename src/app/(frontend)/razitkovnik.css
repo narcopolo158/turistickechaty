@@ -23,9 +23,9 @@
 .es .lk { display: inline-block; margin-top: 9px; font-size: 12.5px; font-weight: 600; color: var(--blue); }
 
 /* dark „hřebenovka po tmě" — povrchy dle prototypu ř. „body.dark ." */
-body.dark .slot { background: #1b242e; border-color: #2a3541; color: #e7ecf1; }
-body.dark .pbar .tr { background: #242f39; }
-body.dark .es { background: #1b242e; }
+body.dark .slot { background: var(--card); border-color: var(--hair); color: var(--ink); }
+body.dark .pbar .tr { background: var(--card); }
+body.dark .es { background: var(--card); }
 
 @media (max-width: 760px) {
   .slotg { grid-template-columns: repeat(2, 1fr); }

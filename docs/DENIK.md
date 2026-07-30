@@ -11,6 +11,70 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (pokračování) — F1f dotažena: dvě různé noci na jedné stránce se sjednotily na tokenech
+
+**Hotovo:** Backlog nejdřív: DATA-04/05/20/22/28 blokované tak, jak je
+zapsala dopolední session, DATA-25 má ve frontě jen případy pro Michala.
+Vzato tedy **to, co si dopolední session sama nechala na konec F1f** —
+„dotažení nočních detailů starších šablon (pevné barvy `body.dark` z F0-03
+se rozcházejí s novou sadou — `#1b242e` × `--card #212a30`)".
+
+**Co to bylo za problém:** noc se do repa dostávala ve dvou vlnách.
+Starší komponenty (F0-03) si nesly ručně psanou **chladnou modrošedou**
+sadu — `#1b242e` plocha, `#2a3541` linka, `#e7ecf1` text — kdežto noční
+sada tokenů z handoffu je **teplá** (`--card #212a30`, `--ink #ece6d7`,
+`--muted #a6afac`). Na jedné stránce se pak potkaly dvě různé noci: karta
+střediska svítila modrošedě vedle teplého papíru sekce pod ní. Nebyla to
+chyba jednoho pravidla, ale 93 deklarací v sedmi stylopisech.
+
+**Řešení:** převod na tokeny, ne přebarvení. Skript prošel bloky, jejichž
+selektor obsahuje `body.dark`, a nahradil starou sadu podle ROLE, ne podle
+barvy — táž hodnota sloužila jednou jako plocha a jednou jako linka a token
+je pro každou jiný (`#242f39` → `var(--card)` u pozadí, `var(--hair)`
+u rámečku). 93 náhrad: `components.css` 17, `pohori.css` 37, `mini.css` 11,
+`profil-zapisnik.css` 10, `styles.css` 10, `razitkovnik.css` 5,
+`profil.css` 3.
+
+**Co zůstalo napevno, a proč to není nedodělek:** barevné tinty infoboxů
+a stavů (`#331712` výstraha, `#1a2b14` alpská poznámka, `#152836`/`#173040`
+info), noční modrá odkazů, papírová **pasparta otisku** `#f4efe3` (fyzický
+artefakt, v noci se nepřekresluje — a pod `multiply` by otisk na tmavé
+ploše zmizel) a **malovaná scéna řezu hřebenem** (`--rez-nebe-*`,
+`--rez-sever/hreben/jih`). Řez je obraz krajiny, ne plocha rozhraní; kdyby
+se převedl na tokeny, panorama by zplihlo do jedné plochy. Noční sada pro
+tyhle věci token nemá a mít nemá.
+
+**Doloženo srovnáním den/noc nad reálnými daty** (Playwright, `tc-dark`
+v localStorage, 1240×1000): homepage, katalog, pohoří, mini-stránka
+střediska i lanovky, před × po. Rozdíl je přesně ten zamýšlený — text se
+z modrobílé posunul do teplé krémové, plochy karet na `--card`, linky na
+`--hair`; nikde nezmizel kontrast ani text. Prošel jsem i spodek stránky
+pohoří (tabulka 77 chat, žebříčky, karty středisek s novými fotkami
+z DATA-33) — čitelné.
+
+**Test:** k devatenácti testům dopolední session přibyly čtyři
+(`f1f-noc.int.spec.ts`, celkem 460 v repu): žádné pravidlo `body.dark`
+nepíše starou chladnou sadu natvrdo; kontrola samotné kontroly (kdyby se
+seznam hlídaných hodnot vyprázdnil, test výš by procházel vždy); scéna
+řezu si svou paletu drží; tinty a artefakty zůstávají. Noc nemá funkci,
+kterou by šlo zavolat — hlídá se tedy zdroj stylopisu, stejně jako
+u manifestu fotek.
+
+**Vedlejší nález (sandbox, ne repo):** když v sandboxu spadne Postgres,
+`generateStaticParams` stránky pohoří vrátí prázdný seznam a routa pak
+vrací 404 i po nastartování DB, dokud se soubor nezmění. Není to chyba
+webu (v produkci se generuje při buildu), ale příště to ušetří deset minut
+hledání.
+
+**Příště:** F1-IMPL má odškrtnuté F1a–F1f; zbývá vizuální kontrola katalogu
+proti `screenshots/01-katalog.png` na stagingu (F1b) a poznámky
+o hotovosti F1d/F1e v backlogu. Pak JIZ-01 nebo FOTO-01.
+
+**Otázky pro Michala:** beze změny (čtyři lanovky bez fotky, redakční
+přiřazení Čertovy hory, Q17/Q19/Q20).
+
+---
+
 ## 2026-07-30 — denní session (bezobslužný běh): F1f „noc na horách" — a nález, že dvě nejnovější šablony noc vůbec neměly
 
 **Hotovo:** Pořadí backlogu nejdřív: **DATA-04** blokovaná (telefonáty umí

@@ -85,19 +85,19 @@ a.row:hover, .row.click:hover { background: #fbfaf6; color: var(--ink); }
 .hc .fx .v { font-family: var(--font-display); font-size: 13.5px; font-weight: 700; font-variant-numeric: tabular-nums; }
 
 /* dark mode */
-body.dark .card, body.dark .hc, body.dark .fchips span, body.dark .fchips button, body.dark .btn.gh, body.dark .btn.done, body.dark .row .st, body.dark .status { background: #1b242e; border-color: #2a3541; color: #e7ecf1; }
+body.dark .card, body.dark .hc, body.dark .fchips span, body.dark .fchips button, body.dark .btn.gh, body.dark .btn.done, body.dark .row .st, body.dark .status { background: var(--card); border-color: var(--hair); color: var(--ink); }
 body.dark .fchips .on { background: var(--red); border-color: var(--red); color: #fff; }
 body.dark .status.solid { background: var(--open); color: #fff; }
-body.dark .row { border-color: #242f39; }
-body.dark a.row:hover, body.dark .row.click:hover { background: #1b242e; color: #e7ecf1; }
+body.dark .row { border-color: var(--hair); }
+body.dark a.row:hover, body.dark .row.click:hover { background: var(--card); color: var(--ink); }
 body.dark .chip { background: #173040; color: #a9cbe0; }
 body.dark .ibox { background: #152836; color: #a9cbe0; }
 body.dark .ibox.alp { background: #1a2b14; color: #a7d67f; }
 body.dark .ibox.red { background: #331712; color: #f0a99e; }
-body.dark .znk { background: #1b242e; }
-body.dark .hc .fx, body.dark .hc .fx div { border-color: #2a3541; }
-body.dark .hc, body.dark a.hc:hover { color: #e7ecf1; }
-body.dark .row { color: #e7ecf1; }
+body.dark .znk { background: var(--card); }
+body.dark .hc .fx, body.dark .hc .fx div { border-color: var(--hair); }
+body.dark .hc, body.dark a.hc:hover { color: var(--ink); }
+body.dark .row { color: var(--ink); }
 body.dark .row .st.o { color: #4cc07d; }
 
 /* mobil dle prototypu */
@@ -117,9 +117,9 @@ body.dark .row .st.o { color: #4cc07d; }
 .mlogo a { display: block; line-height: 0; }
 .mlogo img { height: 18px; }
 .mapel .leaflet-control-attribution { font: 10.5px/1.5 Inter, system-ui, sans-serif; background: rgba(255, 255, 255, .82); color: #5e6971; }
-body.dark .mapband { background: #171f27; border-color: #242f39; }
-body.dark .mapel { background: #171f27; }
-body.dark .mpre { background: #1b242e; color: #e7ecf1; }
+body.dark .mapband { background: var(--paper); border-color: var(--hair); }
+body.dark .mapel { background: var(--paper); }
+body.dark .mpre { background: var(--card); color: var(--ink); }
 
 /* razítkovací moment (F0-08) — pad, dopad a rozpití 1:1 z handoffu razitko-moment.html */
 .pad { position: relative; width: 150px; height: 150px; background: #fbfaf6; border: 1.5px dashed #d3cdbe; border-radius: 12px; display: grid; place-items: center; flex: none; }
@@ -137,4 +137,4 @@ body.dark .mpre { background: #1b242e; color: #e7ecf1; }
   75% { transform: scale(1.03) rotate(-6.5deg); }
   100% { opacity: 1; transform: scale(1) rotate(-7deg); }
 }
-body.dark .pad { background: #1b242e; border-color: #2a3541; }
+body.dark .pad { background: var(--card); border-color: var(--hair); }
