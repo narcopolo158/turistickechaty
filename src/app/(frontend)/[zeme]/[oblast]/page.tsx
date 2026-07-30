@@ -20,6 +20,7 @@ import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOb
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
 import { fotkaStrediska } from '@/lib/fotky-stredisek'
+import { redakcniFotkyStredisek } from '@/lib/fotky-redakcni'
 import { lanovkyOblasti } from '@/lib/lanovky'
 import { chatZBodu } from '@/lib/pristupy'
 import { vrcholyOblasti } from '@/lib/vrcholy'
@@ -72,11 +73,14 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
   if (!Object.values(ZEME_SLUG).includes(zeme)) notFound()
   if (zeme !== KANONICKA_ZEME) permanentRedirect(`/${KANONICKA_ZEME}/${oblastSlug}`)
 
-  const [oblast, { index }, strediska, pocetRazitek] = await Promise.all([
+  const [oblast, { index }, strediska, pocetRazitek, vlastniFotky] = await Promise.all([
     getOblastBySlug(oblastSlug),
     getIndexChat(),
     getStrediskaOblasti(oblastSlug),
     getPocetPublikovanychRazitek(oblastSlug),
+    // Vlastní (redakční či schválené komunitní) fotky mají přednost před
+    // automatickým výběrem z Commons — kdo tam byl, ví to líp než skript.
+    redakcniFotkyStredisek(),
   ])
   if (!oblast) notFound()
 
@@ -382,7 +386,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
               <StrediskoKarta
                 key={s.slug}
                 stredisko={s}
-                foto={s.slug ? fotkaStrediska(oblast.slug!, s.slug) : null}
+                foto={vlastniFotky.get(String(s.id)) ?? (s.slug ? fotkaStrediska(oblast.slug!, s.slug) : null)}
                 pristupy={chatZBodu(oblastSlug, s.nazev)}
                 url={s.slug ? `/${KANONICKA_ZEME}/${oblastSlug}/stredisko/${s.slug}` : null}
               />

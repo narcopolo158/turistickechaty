@@ -7,6 +7,7 @@ import MapaChat, { type MapovaChata } from '@/components/MapaChat'
 import { SectionBar, TrailBlaze } from '@/components/ui'
 import { getIndexChat, getOblastBySlug, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { fotkaStrediska } from '@/lib/fotky-stredisek'
+import { redakcniFotkyStredisek } from '@/lib/fotky-redakcni'
 import { formatVyskaM } from '@/lib/katalog'
 import { lanovkySeSlugy } from '@/lib/lanovky'
 import { pristupyStrediska, zdrojPristupu, type Usek } from '@/lib/pristupy'
@@ -93,7 +94,7 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
   const s = strediska.find((x) => x.slug === slug)
   if (!oblast || !s) notFound()
 
-  const foto = fotkaStrediska(oblastSlug, slug)
+  const foto = (await redakcniFotkyStredisek()).get(String(s.id)) ?? fotkaStrediska(oblastSlug, slug)
   const pristupy = pristupyStrediska(oblastSlug, s.nazev)
   const chataDle = new Map(index.map((ch) => [ch.slug, ch]))
   const radky = pristupy.map((p) => ({ ...p, chata: chataDle.get(p.slug) }))
@@ -151,10 +152,15 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
               {/* Popiska = název souboru na Commons: snímek sám řekne, co je na něm,
                   takže případný přehmat výběru pozná čtenář i redakce hned. */}
               {foto.popis && <b className="foto-popis" title={foto.popis}>{foto.popis}</b>}
-              foto {foto.autor}, {foto.licence} ·{' '}
-              <a href={foto.stranka} target="_blank" rel="noopener noreferrer nofollow">
-                Wikimedia Commons
-              </a>
+              foto {foto.autor}, {foto.licence}
+              {foto.stranka && (
+                <>
+                  {' · '}
+                  <a href={foto.stranka} target="_blank" rel="noopener noreferrer nofollow">
+                    Wikimedia Commons
+                  </a>
+                </>
+              )}
             </figcaption>
           </figure>
         )}

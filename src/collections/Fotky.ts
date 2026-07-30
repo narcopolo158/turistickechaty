@@ -75,6 +75,47 @@ export const Fotky: CollectionConfig = {
       label: 'Chata',
       admin: { description: 'Fotka se pak sama nabídne v profilu chaty.' },
     },
+    /**
+     * Předmět snímku, když to není chata (zadání Michala 30. 7. 2026: „mám
+     * pro některá střediska a lanovky lepší vlastní fotky — přidej tam
+     * i upload ostatních fotek, ať to můžu editovat sám").
+     *
+     * Středisko je kolekce, takže se váže vztahem. Lanovka kolekce NENÍ —
+     * dráhy vznikají z OSM (DATA-32) a mají jen slug v rámci oblasti; váže
+     * se proto dvojicí textů. Redakční fotka má u obou přednost před
+     * automatickým výběrem z Commons (DATA-33): vlastní snímek od Michala
+     * ví o místě víc než algoritmus nad cizím katalogem.
+     */
+    {
+      name: 'stredisko',
+      type: 'relationship',
+      relationTo: 'strediska',
+      label: 'Středisko',
+      admin: {
+        description: 'Fotka se pak ukáže na kartě i mini-stránce střediska — místo snímku z Commons.',
+      },
+    },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'lanovkaOblast',
+          type: 'text',
+          label: 'Lanovka — oblast',
+          admin: {
+            width: '50%',
+            placeholder: 'krkonose',
+            description: 'Lanovka nemá vlastní kolekci (vzniká z OSM) — váže se oblastí a slugem z přehledu lanovek.',
+          },
+        },
+        {
+          name: 'lanovkaSlug',
+          type: 'text',
+          label: 'Lanovka — slug dráhy',
+          admin: { width: '50%', placeholder: 'cernohorsky-express' },
+        },
+      ],
+    },
     {
       name: 'datovani',
       type: 'text',

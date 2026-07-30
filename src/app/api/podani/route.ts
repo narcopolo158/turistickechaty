@@ -1,7 +1,8 @@
 import { getPayload } from 'payload'
 
 import config from '@/payload.config'
-import { SOUHLAS_ZNENI, zkontrolujPodani } from '@/lib/podani'
+import { PREDMET_DRUHU, SOUHLAS_ZNENI, zkontrolujPodani, type DruhPodani } from '@/lib/podani'
+import { lanovkaPodleSlugu } from '@/lib/lanovky'
 
 /**
  * Komunitní podání otisku razítka / fotky chaty (POST multipart/form-data).
@@ -86,34 +87,75 @@ async function zpracujPodani(req: Request): Promise<Response> {
   if (chyby.length) return odpoved(400, { ok: false, chyby })
 
   const payload = await getPayload({ config })
-  const chataRes = await payload.find({
-    collection: 'chaty',
-    where: { slug: { equals: vstup.chataSlug } },
-    limit: 1,
-    depth: 0,
-    overrideAccess: false,
-  })
-  const chata = chataRes.docs[0]
-  if (!chata) return odpoved(400, { ok: false, chyby: ['Tuhle chatu v průvodci nevedeme — vyber ji ze seznamu.'] })
+  const druh = vstup.druh as DruhPodani
+  const predmetDruh = PREDMET_DRUHU[druh]
 
+  /**
+   * Předmět podání. Chata i středisko jsou kolekce, takže se ověří dotazem
+   * a uloží vztahem. Lanovka kolekci NEMÁ (dráhy vznikají z OSM, DATA-32) —
+   * ověří se proti přehledu lanovek a uloží se dvojicí oblast + slug.
+   * Neověřený předmět se nepřijímá: podání, které nikam nepatří, by v adminu
+   * skončilo jako fotka bez místa.
+   */
+  let chata: { id: number; slug?: string | null; nazev: string } | null = null
+  let stredisko: { id: number; slug?: string | null; nazev: string } | null = null
+  let lanovka: { oblast: string; slug: string; nazev: string } | null = null
+
+  if (predmetDruh === 'chata' || predmetDruh === 'stredisko') {
+    const kolekce = predmetDruh === 'chata' ? ('chaty' as const) : ('strediska' as const)
+    const res = await payload.find({
+      collection: kolekce,
+      where: { slug: { equals: vstup.chataSlug } },
+      limit: 1,
+      depth: 0,
+      overrideAccess: false,
+    })
+    const doc = res.docs[0] as { id: number; slug?: string | null; nazev: string } | undefined
+    if (!doc) {
+      return odpoved(400, {
+        ok: false,
+        chyby: [
+          predmetDruh === 'chata'
+            ? 'Tuhle chatu v průvodci nevedeme — vyber ji ze seznamu.'
+            : 'Tohle středisko v průvodci nevedeme — vyber ho ze seznamu.',
+        ],
+      })
+    }
+    if (predmetDruh === 'chata') chata = doc
+    else stredisko = doc
+  } else {
+    // `oblast/slug` — formulář posílá obojí v jednom poli, ať API zůstane
+    // s jedním předmětem místo dvou paralelních cest.
+    const [oblast, slug] = (vstup.chataSlug ?? '').split('/')
+    const draha = oblast && slug ? lanovkaPodleSlugu(oblast, slug) : null
+    if (!draha) {
+      return odpoved(400, { ok: false, chyby: ['Tuhle lanovku v přehledu nevedeme — vyber ji ze seznamu.'] })
+    }
+    lanovka = { oblast, slug, nazev: draha.nazev ?? slug }
+  }
+
+  const predmetNazev = chata?.nazev ?? stredisko?.nazev ?? lanovka?.nazev ?? ''
+  const predmetSlug = chata?.slug ?? stredisko?.slug ?? lanovka?.slug ?? 'podani'
   const dnes = new Date().toISOString().slice(0, 10)
   const data = Buffer.from(await (soubor as File).arrayBuffer())
   const bezpecnaPripona = ((soubor as File).name.split('.').pop() || 'jpg').toLowerCase().replace(/[^a-z0-9]/g, '') || 'jpg'
-  const nazevSouboru = `podani-${chata.slug}-${Date.now()}.${bezpecnaPripona}`
+  const nazevSouboru = `podani-${predmetSlug}-${Date.now()}.${bezpecnaPripona}`
 
   const fotka = await payload.create({
     collection: 'fotky',
     data: {
       alt:
-        vstup.druh === 'razitko'
-          ? `Komunitní podání — otisk razítka, ${chata.nazev} (čeká na posouzení)`
-          : `Komunitní podání — fotka, ${chata.nazev} (čeká na posouzení)`,
+        druh === 'razitko'
+          ? `Komunitní podání — otisk razítka, ${predmetNazev} (čeká na posouzení)`
+          : `Komunitní podání — fotka, ${predmetNazev} (čeká na posouzení)`,
       typ: 'komunitni-podani',
-      chata: chata.id,
+      ...(chata ? { chata: chata.id } : {}),
+      ...(stredisko ? { stredisko: stredisko.id } : {}),
+      ...(lanovka ? { lanovkaOblast: lanovka.oblast, lanovkaSlug: lanovka.slug } : {}),
       autor: vstup.jmeno!,
       licence: 'se-svolenim',
       licencePoznamka: 'komunitní podání — souhlas se zveřejněním s uvedením jména',
-      ...(vstup.druh === 'fotka' && vstup.poznamka ? { datovani: vstup.poznamka.slice(0, 120) } : {}),
+      ...(druh !== 'razitko' && vstup.poznamka ? { datovani: vstup.poznamka.slice(0, 120) } : {}),
       podani: {
         hostJmeno: vstup.jmeno,
         hostEmail: vstup.email ?? undefined,
@@ -126,7 +168,7 @@ async function zpracujPodani(req: Request): Promise<Response> {
     overrideAccess: true,
   })
 
-  if (vstup.druh === 'razitko') {
+  if (druh === 'razitko' && chata) {
     await payload.create({
       collection: 'razitka',
       draft: true,

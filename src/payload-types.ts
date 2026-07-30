@@ -611,6 +611,15 @@ export interface Fotky {
    * Fotka se pak sama nabídne v profilu chaty.
    */
   chata?: (number | null) | Chaty;
+  /**
+   * Fotka se pak ukáže na kartě i mini-stránce střediska — místo snímku z Commons.
+   */
+  stredisko?: (number | null) | Strediska;
+  /**
+   * Lanovka nemá vlastní kolekci (vzniká z OSM) — váže se oblastí a slugem z přehledu lanovek.
+   */
+  lanovkaOblast?: string | null;
+  lanovkaSlug?: string | null;
   datovani?: string | null;
   autor: string;
   licence: 'vlastni' | 'se-svolenim' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'jina';
@@ -681,6 +690,75 @@ export interface Fotky {
       filename?: string | null;
     };
   };
+}
+/**
+ * Východiště do hor (Pec, Špindl, Harrachov…). Počty chat a rozpětí přístupů se počítají z tras — neukládají se.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "strediska".
+ */
+export interface Strediska {
+  id: number;
+  nazev: string;
+  /**
+   * Část adresy stránky. Nevyplněný se vytvoří z názvu.
+   */
+  slug: string;
+  zeme?: ('cz' | 'sk' | 'pl' | 'at' | 'de' | 'ch' | 'it' | 'si' | 'fr') | null;
+  oblast?: (number | null) | Oblasti;
+  /**
+   * Hero mini-stránky: 2 věty, jen doložitelné údaje — žádné ceníky ani hodnocení.
+   */
+  perex?: string | null;
+  lat?: number | null;
+  lng?: number | null;
+  /**
+   * Stat-tile „výška obce" — zdroj ČÚZK do bloku ověření.
+   */
+  vyskaObce?: number | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniLokace?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
+   * Názvy výchozích bodů z katalogu DATA-06 (data/oblasti/<oblast>/vychozi-body-kandidati.json), které patří k tomuto středisku. Přes ně se při buildu počítá „chat dostupných odtud" a rozpětí přístupů — vazba dat, žádná ručně psaná čísla.
+   */
+  vychoziBody?:
+    | {
+        nazev: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Jen doložený fakt (např. „kabinová lanovka na Sněžku") — bez jízdních řádů.
+   */
+  lanovka?: string | null;
+  /**
+   * Fakta o dopravním napojení (vlak/bus/auto) — žádné jízdní řády.
+   */
+  doprava?: {
+    vlak?: string | null;
+    bus?: string | null;
+    auto?: string | null;
+  };
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniDoprava?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
+  /**
+   * Jen pro redakci, nikdy se nezobrazují na webu.
+   */
+  interniPoznamky?: string | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * Katalog turistických razítek — archiv variant v čase. Záznam může existovat i bez otisku (víme o razítku, sháníme sken). Komunitní podání čeká jako koncept, než ho redakce publikuje.
@@ -825,75 +903,6 @@ export interface Clanky {
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
-}
-/**
- * Východiště do hor (Pec, Špindl, Harrachov…). Počty chat a rozpětí přístupů se počítají z tras — neukládají se.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "strediska".
- */
-export interface Strediska {
-  id: number;
-  nazev: string;
-  /**
-   * Část adresy stránky. Nevyplněný se vytvoří z názvu.
-   */
-  slug: string;
-  zeme?: ('cz' | 'sk' | 'pl' | 'at' | 'de' | 'ch' | 'it' | 'si' | 'fr') | null;
-  oblast?: (number | null) | Oblasti;
-  /**
-   * Hero mini-stránky: 2 věty, jen doložitelné údaje — žádné ceníky ani hodnocení.
-   */
-  perex?: string | null;
-  lat?: number | null;
-  lng?: number | null;
-  /**
-   * Stat-tile „výška obce" — zdroj ČÚZK do bloku ověření.
-   */
-  vyskaObce?: number | null;
-  /**
-   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
-   */
-  overeniLokace?: {
-    source?: string | null;
-    verified?: boolean | null;
-    checked?: string | null;
-  };
-  /**
-   * Názvy výchozích bodů z katalogu DATA-06 (data/oblasti/<oblast>/vychozi-body-kandidati.json), které patří k tomuto středisku. Přes ně se při buildu počítá „chat dostupných odtud" a rozpětí přístupů — vazba dat, žádná ručně psaná čísla.
-   */
-  vychoziBody?:
-    | {
-        nazev: string;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Jen doložený fakt (např. „kabinová lanovka na Sněžku") — bez jízdních řádů.
-   */
-  lanovka?: string | null;
-  /**
-   * Fakta o dopravním napojení (vlak/bus/auto) — žádné jízdní řády.
-   */
-  doprava?: {
-    vlak?: string | null;
-    bus?: string | null;
-    auto?: string | null;
-  };
-  /**
-   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
-   */
-  overeniDoprava?: {
-    source?: string | null;
-    verified?: boolean | null;
-    checked?: string | null;
-  };
-  /**
-   * Jen pro redakci, nikdy se nezobrazují na webu.
-   */
-  interniPoznamky?: string | null;
-  updatedAt: string;
-  createdAt: string;
 }
 /**
  * Redakční výlety a přechody. Každá chata má mít aspoň jeden propojený výlet.
@@ -1540,6 +1549,9 @@ export interface FotkySelect<T extends boolean = true> {
   alt?: T;
   typ?: T;
   chata?: T;
+  stredisko?: T;
+  lanovkaOblast?: T;
+  lanovkaSlug?: T;
   datovani?: T;
   autor?: T;
   licence?: T;

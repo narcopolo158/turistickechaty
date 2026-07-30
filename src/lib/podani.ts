@@ -16,6 +16,39 @@ export const SOUHLAS_ZNENI =
 export const MAX_VELIKOST_B = 8 * 1024 * 1024 // 8 MB
 export const POVOLENE_MIME = ['image/jpeg', 'image/png', 'image/gif', 'image/webp', 'image/heic', 'image/heif']
 
+/**
+ * Co všechno jde poslat (zadání Michala 30. 7. 2026: „mám pro některá
+ * střediska a lanovky lepší vlastní fotky — přidej tam i upload ostatních
+ * fotek, ať to můžu editovat sám").
+ *
+ * Předmět podání je vždy JEDEN vedený objekt — chata, středisko nebo
+ * lanovka. Volná fotka „odněkud z hor" se nesbírá: fotka bez předmětu by
+ * neměla kde viset a nikdo by po letech nepoznal, co je na ní.
+ */
+export const DRUHY_PODANI = ['razitko', 'fotka', 'fotka-strediska', 'fotka-lanovky'] as const
+export type DruhPodani = (typeof DRUHY_PODANI)[number]
+
+/** Které pole nese předmět daného druhu — formulář i API se ptají stejně. */
+export const PREDMET_DRUHU: Record<DruhPodani, 'chata' | 'stredisko' | 'lanovka'> = {
+  razitko: 'chata',
+  fotka: 'chata',
+  'fotka-strediska': 'stredisko',
+  'fotka-lanovky': 'lanovka',
+}
+
+export const NAZEV_PREDMETU = { chata: 'Chata', stredisko: 'Středisko', lanovka: 'Lanovka' } as const
+
+/**
+ * Celé věty, ne skládání z názvu: čeština skloňuje a mění rod, takže
+ * „Vyber lanovka, ke které…" by vzniklo samo od sebe. Hláška, která se
+ * čtenáři plete, je horší než žádná — ta aspoň nemate.
+ */
+const VYZVA_PREDMETU = {
+  chata: 'Vyber chatu, ke které podání patří.',
+  stredisko: 'Vyber středisko, ke kterému podání patří.',
+  lanovka: 'Vyber lanovku, ke které podání patří.',
+} as const
+
 export type PodaniVstup = {
   druh: string | null
   chataSlug: string | null
@@ -31,8 +64,13 @@ export type PodaniVstup = {
 /** Validace podání — vrací seznam lidsky čitelných chyb (prázdný = OK). */
 export const zkontrolujPodani = (v: PodaniVstup): string[] => {
   const chyby: string[] = []
-  if (v.druh !== 'razitko' && v.druh !== 'fotka') chyby.push('Vyber, jestli posíláš otisk razítka, nebo fotku chaty.')
-  if (!v.chataSlug?.trim()) chyby.push('Vyber chatu, ke které podání patří.')
+  const druh = DRUHY_PODANI.find((d) => d === v.druh)
+  if (!druh) chyby.push('Vyber, co posíláš — otisk razítka, nebo fotku chaty, střediska či lanovky.')
+  // Předmět se drží v témž poli pro všechny druhy: podání bez vedeného
+  // objektu nemá kde viset, ať je to chata, obec pod sjezdovkou nebo dráha.
+  if (!v.chataSlug?.trim()) {
+    chyby.push(druh ? VYZVA_PREDMETU[PREDMET_DRUHU[druh]] : 'Vyber, ke kterému místu podání patří.')
+  }
   if (!v.jmeno?.trim()) chyby.push('Napiš jméno nebo přezdívku — zveřejníme ji jako kredit u snímku.')
   if (v.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email)) chyby.push('E-mail nevypadá platně (a klidně ho vynech).')
   if (!v.souhlas) chyby.push('Bez licenčního souhlasu nemůžeme snímek zveřejnit.')

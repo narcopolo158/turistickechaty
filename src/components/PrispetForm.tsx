@@ -2,9 +2,20 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 
-import { MAX_VELIKOST_B, POVOLENE_MIME, SOUHLAS_ZNENI, zkontrolujPodani, zmensiObrazek } from '@/lib/podani'
+import {
+  MAX_VELIKOST_B,
+  NAZEV_PREDMETU,
+  POVOLENE_MIME,
+  PREDMET_DRUHU,
+  SOUHLAS_ZNENI,
+  zkontrolujPodani,
+  zmensiObrazek,
+  type DruhPodani,
+} from '@/lib/podani'
 
 export type PrispetChata = { slug: string; nazev: string }
+/** Střediska a lanovky jdou do týchž seznamů — liší se jen tím, co je slug. */
+export type PrispetPredmety = { strediska: PrispetChata[]; lanovky: PrispetChata[] }
 
 /**
  * Formulář komunitního podání (/prispet): otisk razítka NEBO fotka chaty.
@@ -12,9 +23,20 @@ export type PrispetChata = { slug: string; nazev: string }
  * nezveřejňuje samo), kredit jménem, e-mail neveřejný, licenční souhlas
  * doslovným zněním. Honeypot pole `web` je skryté — roboti ho vyplní.
  * `?chata=<slug>` předvyplní chatu (odkazy z profilů).
+ *
+ * Od 30. 7. 2026 (zadání Michala) jde poslat i fotka STŘEDISKA a LANOVKY —
+ * u obojího dnes web ukazuje automatický výběr z Commons (DATA-33) a vlastní
+ * snímek ho má přebít. Formulář zůstal jeden: mění se jen seznam předmětů,
+ * ne cesta podání, takže čekárna, souhlas i kredit fungují všem stejně.
  */
-export default function PrispetForm({ chaty }: { chaty: PrispetChata[] }) {
-  const [druh, setDruh] = useState<'razitko' | 'fotka'>('razitko')
+export default function PrispetForm({
+  chaty,
+  predmety = { strediska: [], lanovky: [] },
+}: {
+  chaty: PrispetChata[]
+  predmety?: PrispetPredmety
+}) {
+  const [druh, setDruh] = useState<DruhPodani>('razitko')
   const [chataNazev, setChataNazev] = useState('')
   const [jmeno, setJmeno] = useState('')
   const [email, setEmail] = useState('')
@@ -34,10 +56,23 @@ export default function PrispetForm({ chaty }: { chaty: PrispetChata[] }) {
     if (q.get('druh') === 'fotka') setDruh('fotka')
   }, [chaty])
 
+  const kterePredmety = PREDMET_DRUHU[druh]
+  const seznam =
+    kterePredmety === 'chata' ? chaty : kterePredmety === 'stredisko' ? predmety.strediska : predmety.lanovky
+  const stitek = NAZEV_PREDMETU[kterePredmety]
+
+  const prepniDruh = (d: DruhPodani) => {
+    // Předmět se při změně druhu maže: „Luční bouda" vybraná pro razítko
+    // by u fotky lanovky zůstala v poli a odeslání by spadlo na neznámém
+    // slugu — s chybou, která nesedí na to, co člověk udělal.
+    if (PREDMET_DRUHU[d] !== PREDMET_DRUHU[druh]) setChataNazev('')
+    setDruh(d)
+  }
+
   const odesli = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const soubor = souborRef.current?.files?.[0] ?? null
-    const chata = chaty.find((c) => c.nazev.localeCompare(chataNazev.trim(), 'cs', { sensitivity: 'accent' }) === 0)
+    const chata = seznam.find((c) => c.nazev.localeCompare(chataNazev.trim(), 'cs', { sensitivity: 'accent' }) === 0)
     const mistniChyby = zkontrolujPodani({
       druh,
       chataSlug: chata?.slug ?? null,
@@ -48,7 +83,9 @@ export default function PrispetForm({ chaty }: { chaty: PrispetChata[] }) {
       past: null,
       soubor: soubor ? { velikost: soubor.size, mime: soubor.type } : null,
     })
-    if (!chata && chataNazev.trim()) mistniChyby.unshift('Chatu vyber ze seznamu — podání vážeme na vedený profil.')
+    if (!chata && chataNazev.trim()) {
+      mistniChyby.unshift(`${stitek} vyber ze seznamu — podání vážeme na vedený objekt.`)
+    }
     setChyby(mistniChyby)
     if (mistniChyby.length || !soubor || !chata) return
 
@@ -102,7 +139,7 @@ export default function PrispetForm({ chaty }: { chaty: PrispetChata[] }) {
       <div className="prsp-hotovo" role="status">
         <b>Díky! Podání je v redakční čekárně.</b>
         <p>
-          Projdeme ho, zkontrolujeme licenci a po schválení se objeví na profilu chaty s tvým jménem
+          Projdeme ho, zkontrolujeme licenci a po schválení se objeví u toho místa s tvým jménem
           u snímku. Nic se nezveřejňuje automaticky — proto to může den dva trvat.
         </p>
         <button type="button" className="prsp-btn ghost" onClick={() => { setStav('piše'); setSouhlas(false); setPoznamka(''); if (souborRef.current) souborRef.current.value = '' }}>
@@ -115,25 +152,43 @@ export default function PrispetForm({ chaty }: { chaty: PrispetChata[] }) {
   return (
     <form className="prsp-form" onSubmit={odesli} aria-label="Poslat otisk razítka nebo fotku">
       <div className="prsp-druh" role="group" aria-label="Co posíláš">
-        <button type="button" className={druh === 'razitko' ? 'akt' : ''} onClick={() => setDruh('razitko')}>
+        <button type="button" className={druh === 'razitko' ? 'akt' : ''} onClick={() => prepniDruh('razitko')}>
           ◉ Otisk razítka
         </button>
-        <button type="button" className={druh === 'fotka' ? 'akt' : ''} onClick={() => setDruh('fotka')}>
+        <button type="button" className={druh === 'fotka' ? 'akt' : ''} onClick={() => prepniDruh('fotka')}>
           ▣ Fotka chaty
         </button>
+        {predmety.strediska.length > 0 && (
+          <button
+            type="button"
+            className={druh === 'fotka-strediska' ? 'akt' : ''}
+            onClick={() => prepniDruh('fotka-strediska')}
+          >
+            ⌂ Fotka střediska
+          </button>
+        )}
+        {predmety.lanovky.length > 0 && (
+          <button
+            type="button"
+            className={druh === 'fotka-lanovky' ? 'akt' : ''}
+            onClick={() => prepniDruh('fotka-lanovky')}
+          >
+            ⛷ Fotka lanovky
+          </button>
+        )}
       </div>
 
       <label className="prsp-pole">
-        <span>Chata</span>
+        <span>{stitek}</span>
         <input
-          list="prsp-chaty"
+          list="prsp-predmety"
           value={chataNazev}
           onChange={(e) => setChataNazev(e.target.value)}
           placeholder="začni psát a vyber ze seznamu…"
           required
         />
-        <datalist id="prsp-chaty">
-          {chaty.map((c) => (
+        <datalist id="prsp-predmety">
+          {seznam.map((c) => (
             <option key={c.slug} value={c.nazev} />
           ))}
         </datalist>
@@ -187,7 +242,7 @@ export default function PrispetForm({ chaty }: { chaty: PrispetChata[] }) {
         {stav === 'odesílá' ? 'Odesílám…' : 'Poslat do redakční čekárny ▸'}
       </button>
       <p className="prsp-pozn">
-        Podání schvaluje redakce — zkontrolujeme, že snímek sedí k chatě, a teprve pak ho zveřejníme
+        Podání schvaluje redakce — zkontrolujeme, že snímek sedí k místu, a teprve pak ho zveřejníme
         s tvým jménem. Nic se nezveřejňuje automaticky.
       </p>
     </form>
