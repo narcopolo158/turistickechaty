@@ -34,7 +34,7 @@ import { join } from 'node:path'
 import { parse } from 'yaml'
 
 import { stahniOverpass, VYCHOZI_API_INSTANCE } from './data01-overpass-krkonose'
-import { oblastZArgv } from './oblasti'
+import { bboxStr, oblastZArgv } from './oblasti'
 import { overpassDotazTrasy, type TrasaRelace } from './data06-trasy'
 import { MAX_POZIC_NA_DOTAZ } from './vyskovy-profil'
 
@@ -217,7 +217,9 @@ const vzdM = (aLat: number, aLon: number, bLat: number, bLon: number): number =>
 }
 
 const stahniTrasy = async (): Promise<{ trasy: Trasa[]; stavOsm: string }> => {
-  const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, overpassDotazTrasy())
+  // Značené trasy se berou v ŠIROKÉM okně oblasti (ne v užším 3D okně) —
+  // stejné okno jako dosud, jen odvozené z konfigurace místo konstanty.
+  const { raw } = await stahniOverpass(VYCHOZI_API_INSTANCE, overpassDotazTrasy(bboxStr(OBLAST.bbox)))
   const telo = JSON.parse(raw) as { elements?: TrasaRelace[]; osm3s?: { timestamp_osm_base?: string } }
   const trasy: Trasa[] = []
   for (const rel of telo.elements ?? []) {

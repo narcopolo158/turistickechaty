@@ -1,7 +1,12 @@
-# DATA-06 (increment 2): export výchozích bodů oblasti Krkonoš z OSM —
+# DATA-06 (increment 2): export výchozích bodů ZVOLENÉ OBLASTI z OSM —
 # sandbox denních sessions na Overpass nedosáhne (proxy), GitHub Actions ano.
 # Spouští se ručně jedním klikem (Actions → „DATA-06: výchozí body oblasti" →
-# Run workflow).
+# Run workflow → vyber oblast).
+#
+# Oblast se přidala 30. 7. 2026 (Michal: „u data-06 nejde vybrat oblast").
+# Okno dotazu, ZEMĚ dotazu i cílový adresář `data/oblasti/<oblast>/` se berou
+# z konfigurace v scripts/oblasti.ts — Ještědský hřbet je celý v Česku, takže
+# se u něj polský dotaz vůbec nepošle.
 #
 # Běh: (1) stáhne surový JSON export (obce place=town/village, lanovky
 # aerialway=station, železnice railway=station/halt; commituje se jako doklad —
@@ -15,6 +20,10 @@ name: 'DATA-06: výchozí body oblasti'
 on:
   workflow_dispatch:
     inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet'
+        required: false
+        default: 'krkonose'
       api:
         description: 'Overpass endpoint — nech prázdné (skript zkouší overpass-api.de a při selhání zrcadlo kumi.systems); vyplň jen pro vynucení konkrétní instance'
         required: false
@@ -29,7 +38,7 @@ concurrency:
 
 jobs:
   export:
-    name: Overpass → výchozí body (data/oblasti/krkonose)
+    name: Overpass → výchozí body (data/oblasti/<oblast>)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,14 +54,18 @@ jobs:
         shell: bash
         env:
           API_INPUT: ${{ inputs.api }}
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
         run: |
           ARG=()
           if [ -n "$API_INPUT" ]; then ARG=(--api "$API_INPUT"); fi
-          npx tsx scripts/data06-vychozi-body.ts "${ARG[@]}" | tee report.txt
+          npx tsx scripts/data06-vychozi-body.ts --oblast "$OBLAST" "${ARG[@]}" | tee report.txt
           echo '## DATA-06 — výchozí body: výstup běhu' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit exportu a katalogu výchozích bodů do main
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -61,7 +74,7 @@ jobs:
             echo 'Beze změny exportu i katalogu — nic ke commitu.'
             exit 0
           fi
-          git commit -m 'data: OSM export výchozích bodů Krkonoš — obce/lanovky/železnice (z Actions)' \
+          git commit -m "data: OSM export výchozích bodů (${OBLAST}) — obce/lanovky/železnice (z Actions)" \
             -m 'Zdroj: OpenStreetMap (ODbL), place=town/village + aerialway=station + railway station/halt. Vstup pro routing přístupových tras (DATA-06 increment 3).'
           git pull --rebase origin main
           git push origin main

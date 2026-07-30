@@ -9,10 +9,15 @@
 # je zpět do JSON. Idempotentní. Klíč jde hlavičkou X-Mapy-Api-Key (secret
 # MAPY_API_KEY) — nikdy do URL ani logu. Výšky = výškový model (verified:false),
 # čas = odhad z délky a převýšení.
-name: 'DATA-06: výšky přístupových tras'
+name: 'DATA-06: výšky přístupových tras (dle oblasti)'
 
 on:
   workflow_dispatch:
+    inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet'
+        required: false
+        default: 'krkonose'
 
 permissions:
   contents: write
@@ -39,25 +44,29 @@ jobs:
         shell: bash
         env:
           MAPY_API_KEY: ${{ secrets.MAPY_API_KEY }}
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
         run: |
           if [ -z "$MAPY_API_KEY" ]; then
             echo '::error::Chybí secret MAPY_API_KEY (Settings → Secrets → Actions).'
             exit 1
           fi
-          npx tsx scripts/data06-vysky-pristupu.ts | tee report.txt
+          npx tsx scripts/data06-vysky-pristupu.ts --oblast "$OBLAST" | tee report.txt
           echo '## DATA-06 — výšky přístupových tras: výstup běhu' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit přístupových tras s výškami do main
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/trasy/krkonose/pristupove-trasy.json
+          git add "data/trasy/${OBLAST}/pristupove-trasy.json"
           if git diff --cached --quiet; then
             echo 'Beze změny — nic ke commitu.'
             exit 0
           fi
-          git commit -m 'data: výšky, převýšení a odhad času přístupových tras (z Actions)' \
+          git commit -m "data: výšky, převýšení a odhad času přístupových tras (${OBLAST}, z Actions)" \
             -m 'Zdroj: Mapy.com Elevation API (výškový model, verified:false). Čas = odhad DIN 33466 z délky a převýšení.'
           git pull --rebase origin main
           git push origin main

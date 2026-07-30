@@ -1,9 +1,9 @@
 /**
- * DATA-06 (increment 1): export značených turistických tras Krkonoš z OSM.
+ * DATA-06 (increment 1): export značených turistických tras oblasti z OSM.
  *
  * Cíl celé DATA-06: pro každou chatu spočítat přístupové trasy automaticky.
  * Tenhle první krok postaví ROUTOVATELNÝ PODKLAD — stáhne z Overpass relace
- * `route=hiking` v Krkonoších i s geometrií a z tagu `osmc:symbol` (příp.
+ * `route=hiking` v okně oblasti i s geometrií a z tagu `osmc:symbol` (příp.
  * `kct_*` / `colour`) určí **barvu značení KČT** (červená/modrá/zelená/žlutá).
  * Výstup: surový export (doklad) + katalog značených tras `znacene-trasy.json`
  * (osmId, název, ref, znaceni, délka, počet úseků) — vstup pro pozdější
@@ -16,17 +16,16 @@
  *
  * Spuštění (sandbox na Overpass nedosáhne — ostrý běh dělá GitHub Actions
  * workflow „DATA-06: export značených tras"):
- *   npx tsx scripts/data06-trasy.ts                 # stáhne + zpracuje
- *   npx tsx scripts/data06-trasy.ts --z-jsonu       # offline nad commitnutým exportem
+ *   npx tsx scripts/data06-trasy.ts                             # Krkonoše (výchozí)
+ *   npx tsx scripts/data06-trasy.ts --oblast jizerske-hory      # jiná oblast
+ *   npx tsx scripts/data06-trasy.ts --z-jsonu                   # offline nad commitnutým exportem
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
-import { BBOX_KRKONOSE, nactiExport, stahniOverpass, VYCHOZI_API_INSTANCE, vzdalenostM } from './data01-overpass-krkonose'
+import { nactiExport, stahniOverpass, VYCHOZI_API_INSTANCE, vzdalenostM } from './data01-overpass-krkonose'
+import { bboxStr, cestyOblasti, oblastZArgv } from './oblasti'
 
-const TRASY_ADRESAR = join(process.cwd(), 'data', 'trasy', 'krkonose')
-const EXPORT_JSON = join(TRASY_ADRESAR, '_overpass-trasy.json')
-const KATALOG_JSON = join(TRASY_ADRESAR, 'znacene-trasy.json')
 const ATRIBUCE = 'data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)'
 
 export type Znaceni = 'cervena' | 'modra' | 'zelena' | 'zluta' | 'cerna'
@@ -116,8 +115,9 @@ export type TrasaRelace = {
 
 // `out geom;` (NE `out geom tags;` — to vrací jen tagy bez geometrie, délky
 // pak vyjdou 0) — u relací přidá geometrii ke každé členské cestě i tagy relace.
-export const overpassDotazTrasy = (): string => `[out:json][timeout:180];
-relation["route"="hiking"](${BBOX_KRKONOSE});
+// Okno je parametr: jedna a táž funkce slouží všem oblastem (viz oblasti.ts).
+export const overpassDotazTrasy = (okno: string): string => `[out:json][timeout:180];
+relation["route"="hiking"](${okno});
 out geom;`
 
 /** Součet délek všech členských cest relace (haversine po sobě jdoucích bodů), km. */
@@ -185,6 +185,13 @@ const main = async () => {
   const apiIndex = argv.indexOf('--api')
   const instance = apiIndex >= 0 && argv[apiIndex + 1] ? [argv[apiIndex + 1]] : VYCHOZI_API_INSTANCE
 
+  const oblast = oblastZArgv(argv)
+  const okno = bboxStr(oblast.bbox)
+  const TRASY_ADRESAR = cestyOblasti(oblast.slug).trasy
+  const EXPORT_JSON = join(TRASY_ADRESAR, '_overpass-trasy.json')
+  const KATALOG_JSON = join(TRASY_ADRESAR, 'znacene-trasy.json')
+  console.log(`Oblast: ${oblast.nazev} (${oblast.slug}) — okno dotazu ${okno}`)
+
   mkdirSync(TRASY_ADRESAR, { recursive: true })
   let raw: string
   if (zJsonu) {
@@ -192,8 +199,8 @@ const main = async () => {
     console.log(`Offline zpracování commitnutého exportu ${EXPORT_JSON}…`)
     raw = readFileSync(EXPORT_JSON, 'utf8')
   } else {
-    console.log(`Overpass dotaz: route=hiking ∩ bbox Krkonoš; instance: ${instance.join(', ')}…`)
-    const vysledek = await stahniOverpass(instance, overpassDotazTrasy())
+    console.log(`Overpass dotaz: route=hiking ∩ okno ${oblast.nazev}; instance: ${instance.join(', ')}…`)
+    const vysledek = await stahniOverpass(instance, overpassDotazTrasy(okno))
     raw = vysledek.raw
     console.log(`Staženo z ${vysledek.api}.`)
     writeFileSync(EXPORT_JSON, raw, 'utf8')
@@ -205,7 +212,7 @@ const main = async () => {
   const { znacene, bezZnaceni } = zpracujTrasy(relace)
 
   const katalog = {
-    zdroj: `OpenStreetMap Overpass (route=hiking, bbox Krkonoš) — ${ATRIBUCE}`,
+    zdroj: `OpenStreetMap Overpass (route=hiking, okno ${oblast.nazev}) — ${ATRIBUCE}`,
     stavOsmDat: checked,
     pocetTras: znacene.length,
     trasy: znacene,

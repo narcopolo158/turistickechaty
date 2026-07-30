@@ -21,6 +21,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 import { nactiExport, vzdalenostM } from './data01-overpass-krkonose'
+import { cestyOblasti, oblastZArgv } from './oblasti'
 import { znaceniZTagu, type TrasaRelace, type Znaceni } from './data06-trasy'
 
 /** Kolikrát dražší je vést cestu po NEznačené hraně (preference značených). */
@@ -299,7 +300,10 @@ export const najdiTrasu = (graf: Graf, start: UzelKlic, cil: UzelKlic): Trasa | 
 // ── Smoke nad reálným exportem ──────────────────────────────────────────────
 
 const smoke = (): void => {
-  const cesta = join(process.cwd(), 'data', 'trasy', 'krkonose', '_overpass-trasy.json')
+  const oblast = oblastZArgv()
+  const cesty = cestyOblasti(oblast.slug)
+  console.log(`Oblast: ${oblast.nazev} (${oblast.slug})`)
+  const cesta = join(cesty.trasy, '_overpass-trasy.json')
   if (!existsSync(cesta)) throw new Error(`Smoke: export ${cesta} neexistuje — stáhne ho workflow „DATA-06: export značených tras".`)
   const { elementy } = nactiExport(readFileSync(cesta, 'utf8'))
   const relace = elementy as unknown as TrasaRelace[]
@@ -314,7 +318,7 @@ const smoke = (): void => {
   // Demo trasa mezi dvěma reálnými chatami (souřadnice z jejich YAML).
   const dvouChat = ['lucni-bouda', 'labska-bouda']
   const body = dvouChat.map((slug) => {
-    const y = readFileSync(join(process.cwd(), 'data', 'chaty', 'krkonose', `${slug}.yaml`), 'utf8')
+    const y = readFileSync(join(cesty.chaty, `${slug}.yaml`), 'utf8')
     const lat = Number(/^lat:\s*([\d.]+)/m.exec(y)?.[1])
     const lng = Number(/^lng:\s*([\d.]+)/m.exec(y)?.[1])
     return { slug, lat, lng, uzel: najdiNejblizsiUzel(graf, lat, lng) }

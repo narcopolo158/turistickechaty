@@ -11,6 +11,61 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (večer) — „u data-06 nejde vybrat oblast"
+
+**Hotovo:** Michal chtěl spustit DATA-06 pro Jizerky a zjistil, že tlačítko
+Run workflow žádnou oblast nenabízí. Měl pravdu doslova: **celá pipeline
+DATA-06 měla „krkonose" napevno** — v každém kroku zvlášť, v deseti cestách
+a dvou Overpass dotazech. DATA-01 se generalizovala 28. 7., DATA-06 se na to
+zapomnělo.
+
+**Generalizováno je to celé, ne půlka.** To bylo to hlavní rozhodnutí: kdyby
+se udělaly jen dva „overpassové" kroky s tlačítkem, krok 1 by stáhl Jizerky
+a krok 3 by pak beze slova routoval Krkonoše — přehmat, který by v datech
+nebylo poznat. Oblast tedy berou všechny: `data06-trasy`, `data06-vychozi-body`,
+`data06-graf`, `data06-pristupove-trasy`, `data06-prechody`
+i `data06-vysky-pristupu`.
+
+- **Cesty na jednom místě:** nové `cestyOblasti(slug)` v `scripts/oblasti.ts`
+  (`data/trasy/<slug>`, `data/oblasti/<slug>`, `data/chaty/<slug>`).
+- **Okno dotazu je parametr**, ne konstanta: `overpassDotazTrasy(okno)`
+  a `overpassDotazVychoziBody(iso, okno)`.
+- **Země si určuje oblast** (`zemeDotazu`) — Ještědský hřbet je celý v Česku,
+  takže se u něj polský dotaz vůbec nepošle. Dosud se ptaly obě vždycky.
+- **Tlačítko:** `oblast` přibyla do tří workflow (značené trasy, výchozí body,
+  výšky přístupových tras) stejně jako u DATA-01 — přes `env:`, ne interpolací
+  do shellu. U výšek to málem uteklo: commit krok četl `${OBLAST}` bez `env:`,
+  takže by dělal `git add data/trasy//pristupove-trasy.json`.
+
+**Ověřeno měřením, ne odhadem:** oba kroky se pustily offline nad commitnutými
+exporty (`--z-jsonu`) a výstup se porovnal s tím, co v repu leželo. Rozdíl jsou
+**dvě řádky** — popis zdroje („bbox Krkonoš" → „okno Krkonoše"); 294 tras
+i 1 909 objektů výchozích bodů sedí na bajt. Generalizace tedy Krkonoším nic
+nepřepsala.
+
+**A pojistka, aby se to nestalo znovu.** `kontrola/workflows.ts` má novou
+kontrolu **G**: když `run:` volá skript, který umí `--oblast` (pozná se podle
+`oblastZArgv`), a workflow mu ji nepředá, je to vada. Přesně tenhle stav
+Michal viděl — skript zobecněný, tlačítko krkonošské. Self-test 11/11, všech
+15 workflow čistých.
+
+**Co tím Jizerky dostanou a co ne.** Kroky 1–2 (značené trasy, výchozí body)
+poběží hned a výchozí body jsou to, z čeho vzniknou GPS středisek. Routing
+(krok 3) potřebuje **publikované profily** v `data/chaty/jizerske-hory/`,
+a tam je zatím nula — 75 kandidátů čeká na triáž. Spuštěný routing tedy
+korektně skončí hláškou, že chybí export, ne tichým prázdnem.
+
+**Testy:** 551 (z 548) — přibylo „každá oblast se ptá na SVÉ okno" u obou
+dotazů a „země dotazu si určuje oblast, ne skript". `npm run kontrola` zelená.
+
+**Příště:** triáž jizerských kandidátů (DATA-03) po dávkách — začít osmi, které
+Michal jmenoval (Smědava, Knajpa, chaty na Jizerce). Tím se otevře i routing.
+
+**Otázky pro Michala:**
+- DATA-01 pro Ještěd běží (spustil 30. 7.) — až doběhne, mrknu na výsledek.
+- Pro Jizerky teď stačí kliknout „DATA-06: export značených tras (dle oblasti)"
+  a „DATA-06: výchozí body oblasti" a vybrat `jizerske-hory`.
+
 ## 2026-07-30 (podvečer) — „jak to může být pěšky kratší než vzdušnou čarou?"
 
 **Hotovo:** Michal si na mini-stránce lanovky **Lysá Hora (A5)** všiml řádky,

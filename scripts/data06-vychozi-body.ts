@@ -25,27 +25,24 @@
  *
  * Spuštění (sandbox na Overpass nedosáhne — ostrý běh dělá GitHub Actions
  * workflow „DATA-06: výchozí body oblasti"):
- *   npx tsx scripts/data06-vychozi-body.ts                 # stáhne + zpracuje
- *   npx tsx scripts/data06-vychozi-body.ts --z-jsonu       # offline nad commitnutým exportem
+ *   npx tsx scripts/data06-vychozi-body.ts                          # Krkonoše (výchozí)
+ *   npx tsx scripts/data06-vychozi-body.ts --oblast jizerske-hory   # jiná oblast
+ *   npx tsx scripts/data06-vychozi-body.ts --z-jsonu                # offline nad commitnutým exportem
  *   npx tsx scripts/data06-vychozi-body.ts --api https://overpass.kumi.systems/api/interpreter
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 import {
-  BBOX_KRKONOSE,
   nactiExport,
   osmUrl,
   stahniOverpass,
   VYCHOZI_API_INSTANCE,
-  ZEME_DOTAZU,
   type OsmElement,
   type Zeme,
 } from './data01-overpass-krkonose'
+import { bboxStr, cestyOblasti, oblastZArgv, zemeDotazu } from './oblasti'
 
-const OBLAST_ADRESAR = join(process.cwd(), 'data', 'oblasti', 'krkonose')
-const KATALOG_JSON = join(OBLAST_ADRESAR, 'vychozi-body-kandidati.json')
-const exportJson = (zeme: Zeme) => join(OBLAST_ADRESAR, `_vychozi-body-export-${zeme}.json`)
 const ATRIBUCE = 'data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)'
 
 /** Typ výchozího bodu — z jednoznačného OSM tagu, jinak null (nedomýšlet). */
@@ -83,17 +80,17 @@ const vyskaZTagu = (ele: string | undefined): number | null => {
 // ── Overpass ────────────────────────────────────────────────────────────────
 
 /**
- * Výchozí body v jedné zemi (průnik area státu + bbox Krkonoš — stejně jako
+ * Výchozí body v jedné zemi (průnik area státu + okno oblasti — stejně jako
  * DATA-01, aby každý bod nesl doloženou `zeme`). `place` bereme jen jako node
  * (sídelní bod), lanovky a železnice `nwr` (stanice bývá node i way).
  */
-export const overpassDotazVychoziBody = (iso: string): string => `[out:json][timeout:120];
+export const overpassDotazVychoziBody = (iso: string, okno: string): string => `[out:json][timeout:120];
 area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
 (
-  node["place"~"^(town|village)$"](area.stat)(${BBOX_KRKONOSE});
-  nwr["aerialway"="station"](area.stat)(${BBOX_KRKONOSE});
-  nwr["railway"~"^(station|halt)$"](area.stat)(${BBOX_KRKONOSE});
-  node["highway"="bus_stop"]["name"](area.stat)(${BBOX_KRKONOSE});
+  node["place"~"^(town|village)$"](area.stat)(${okno});
+  nwr["aerialway"="station"](area.stat)(${okno});
+  nwr["railway"~"^(station|halt)$"](area.stat)(${okno});
+  node["highway"="bus_stop"]["name"](area.stat)(${okno});
 );
 out center;`
 
@@ -180,11 +177,18 @@ const main = async () => {
   const apiIndex = argv.indexOf('--api')
   const instance = apiIndex >= 0 && argv[apiIndex + 1] ? [argv[apiIndex + 1]] : VYCHOZI_API_INSTANCE
 
+  const oblast = oblastZArgv(argv)
+  const okno = bboxStr(oblast.bbox)
+  const OBLAST_ADRESAR = cestyOblasti(oblast.slug).oblast
+  const KATALOG_JSON = join(OBLAST_ADRESAR, 'vychozi-body-kandidati.json')
+  const exportJson = (zeme: string) => join(OBLAST_ADRESAR, `_vychozi-body-export-${zeme}.json`)
+  console.log(`Oblast: ${oblast.nazev} (${oblast.slug}) — okno dotazu ${okno}, země ${oblast.zeme.join(', ')}`)
+
   mkdirSync(OBLAST_ADRESAR, { recursive: true })
   const polozky: ExportPolozka[] = []
   const stavy: Partial<Record<Zeme, string>> = {}
 
-  for (const { zeme, iso } of ZEME_DOTAZU) {
+  for (const { zeme, iso } of zemeDotazu(oblast)) {
     const soubor = exportJson(zeme)
     let raw: string
     if (zJsonu) {
@@ -195,8 +199,8 @@ const main = async () => {
       console.log(`Offline zpracování commitnutého exportu ${soubor}…`)
       raw = readFileSync(soubor, 'utf8')
     } else {
-      console.log(`Overpass dotaz ${iso} (place town/village + aerialway=station + railway station/halt, ${iso} ∩ bbox Krkonoš); instance: ${instance.join(', ')}…`)
-      const vysledek = await stahniOverpass(instance, overpassDotazVychoziBody(iso))
+      console.log(`Overpass dotaz ${iso} (place town/village + aerialway=station + railway station/halt, ${iso} ∩ okno ${oblast.nazev}); instance: ${instance.join(', ')}…`)
+      const vysledek = await stahniOverpass(instance, overpassDotazVychoziBody(iso, okno))
       raw = vysledek.raw
       console.log(`Staženo z ${vysledek.api}.`)
       writeFileSync(soubor, raw, 'utf8')
@@ -204,8 +208,8 @@ const main = async () => {
     }
     const { elementy, checked } = nactiExport(raw)
     console.log(`Export ${zeme}: ${elementy.length} objektů, stav OSM dat ${checked}.`)
-    stavy[zeme] = checked
-    polozky.push(...elementy.map((el) => ({ el, zeme })))
+    stavy[zeme as Zeme] = checked
+    polozky.push(...elementy.map((el) => ({ el, zeme: zeme as Zeme })))
   }
   if (polozky.length === 0 && zJsonu) {
     throw new Error('--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.')
@@ -214,7 +218,7 @@ const main = async () => {
   const { body, vynechano } = zpracujBody(polozky)
 
   const katalog = {
-    zdroj: `OpenStreetMap Overpass (place town/village + aerialway=station + railway station/halt, bbox Krkonoš) — ${ATRIBUCE}`,
+    zdroj: `OpenStreetMap Overpass (place town/village + aerialway=station + railway station/halt, okno ${oblast.nazev}) — ${ATRIBUCE}`,
     stavOsmDat: stavy,
     pocetBodu: body.length,
     body,
@@ -225,7 +229,8 @@ const main = async () => {
   const dleZeme = (z: Zeme) => body.filter((b) => b.zeme === z).length
   console.log(`\n## DATA-06 report — výchozí body oblasti (stav OSM dat: ${Object.entries(stavy).map(([z, c]) => `${z} ${c}`).join(', ') || '—'})`)
   console.log(`Objektů v exportu: ${polozky.length}`)
-  console.log(`Výchozích bodů (do katalogu): ${body.length} — obce ${dle('obec')}, lanovky ${dle('lanovka')}, železnice ${dle('zeleznice')} · CZ ${dleZeme('cz')}, PL ${dleZeme('pl')}`)
+  const dleZemi = oblast.zeme.map((iso) => `${iso} ${dleZeme(iso.toLowerCase() as Zeme)}`).join(', ')
+  console.log(`Výchozích bodů (do katalogu): ${body.length} — obce ${dle('obec')}, lanovky ${dle('lanovka')}, železnice ${dle('zeleznice')} · ${dleZemi}`)
   console.log(`Vynecháno (k ruční kontrole, NEzapsáno): ${vynechano.length}`)
   for (const b of body.slice(0, 30)) {
     console.log(`- [${b.typ}] ${b.nazev}${b.vyska != null ? ` (${b.vyska} m)` : ''} — ${b.url}`)

@@ -19,11 +19,21 @@ import { parse } from 'yaml'
 import { nactiExport } from './data01-overpass-krkonose'
 import { dijkstraOdUzlu, najdiNejblizsiUzel, postavGraf, slozTrasu, type Graf, type Trasa, type UzelKlic } from './data06-graf'
 import { type TrasaRelace } from './data06-trasy'
+import { cestyOblasti, oblastZArgv } from './oblasti'
 
-const TRASY_ADRESAR = join(process.cwd(), 'data', 'trasy', 'krkonose')
-const EXPORT_JSON = join(TRASY_ADRESAR, '_overpass-trasy.json')
-const CHATY_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
-const VYSTUP_JSON = join(TRASY_ADRESAR, 'prechody.json')
+/** Cesty se odvozují od zvolené oblasti (`--oblast`), ne napevno. */
+const cesty = (() => {
+  const oblast = oblastZArgv()
+  const c = cestyOblasti(oblast.slug)
+  return {
+    oblast,
+    TRASY_ADRESAR: c.trasy,
+    EXPORT_JSON: join(c.trasy, '_overpass-trasy.json'),
+    CHATY_ADRESAR: c.chaty,
+    VYSTUP_JSON: join(c.trasy, 'prechody.json'),
+  }
+})()
+const { TRASY_ADRESAR, EXPORT_JSON, CHATY_ADRESAR, VYSTUP_JSON } = cesty
 
 /** Dál než tolik metrů od nejbližšího uzlu sítě = nepřipojeno (nepočítá se). */
 const MAX_SNAP_M = 1500

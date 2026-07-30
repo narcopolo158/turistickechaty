@@ -32,16 +32,29 @@ import {
 } from './data06-graf'
 import { nactiDoporuceneZeSouboru, type DoporucenyBod, type OsmBod } from './data06-katalog-vychozi'
 import { type TrasaRelace } from './data06-trasy'
+import { cestyOblasti, oblastZArgv } from './oblasti'
 
-const TRASY_ADRESAR = join(process.cwd(), 'data', 'trasy', 'krkonose')
-const EXPORT_JSON = join(TRASY_ADRESAR, '_overpass-trasy.json')
-const OBLAST_ADRESAR = join(process.cwd(), 'data', 'oblasti', 'krkonose')
-// Přednostně kurátorovaný seznam středisek (reálná východiska túr, ruční výběr),
-// jinak fallback na plný OSM katalog kandidátů.
-const STREDISKA_YAML = join(OBLAST_ADRESAR, 'vychozi-body.yaml')
-const VYCHOZI_JSON = join(OBLAST_ADRESAR, 'vychozi-body-kandidati.json')
-const CHATY_ADRESAR = join(process.cwd(), 'data', 'chaty', 'krkonose')
-const VYSTUP_JSON = join(TRASY_ADRESAR, 'pristupove-trasy.json')
+/**
+ * Cesty se odvozují od zvolené oblasti (`--oblast`), ne napevno. Do 30. 7. 2026
+ * tu stálo „krkonose" a routing by po exportu jiné oblasti tiše počítal pořád
+ * Krkonoše — tichý přehmat, který by v datech nebylo poznat.
+ */
+const cesty = (() => {
+  const oblast = oblastZArgv()
+  const c = cestyOblasti(oblast.slug)
+  return {
+    oblast,
+    TRASY_ADRESAR: c.trasy,
+    EXPORT_JSON: join(c.trasy, '_overpass-trasy.json'),
+    // Přednostně kurátorovaný seznam středisek (reálná východiska túr, ruční
+    // výběr), jinak fallback na plný OSM katalog kandidátů.
+    STREDISKA_YAML: join(c.oblast, 'vychozi-body.yaml'),
+    VYCHOZI_JSON: join(c.oblast, 'vychozi-body-kandidati.json'),
+    CHATY_ADRESAR: c.chaty,
+    VYSTUP_JSON: join(c.trasy, 'pristupove-trasy.json'),
+  }
+})()
+const { TRASY_ADRESAR, EXPORT_JSON, STREDISKA_YAML, VYCHOZI_JSON, CHATY_ADRESAR, VYSTUP_JSON } = cesty
 // Katalog doporučených nástupů (ChatGPT podklad, per-chata pořadí + zdroje).
 // Geokóduje se proti OSM katalogu výchozích bodů (VYCHOZI_JSON).
 const KATALOG_CSV = join(process.cwd(), 'data', 'externi', 'vychozi-body-cr-sk-2026', 'vychozi-body.csv')

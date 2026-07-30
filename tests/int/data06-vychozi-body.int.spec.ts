@@ -7,6 +7,8 @@
  */
 import { describe, expect, it } from 'vitest'
 
+import { bboxStr, oblastDleSlugu, zemeDotazu } from '../../scripts/oblasti'
+
 import {
   overpassDotazVychoziBody,
   typBoduZTagu,
@@ -105,7 +107,7 @@ describe('DATA-06 · roztřídění a dedup výchozích bodů', () => {
 
 describe('DATA-06 · tvar Overpass dotazu na výchozí body', () => {
   it('ptá se na place town/village + aerialway + railway v area ∩ bboxu, out center', () => {
-    const dotaz = overpassDotazVychoziBody('CZ')
+    const dotaz = overpassDotazVychoziBody('CZ', bboxStr(oblastDleSlugu('krkonose').bbox))
     expect(dotaz).toContain('ISO3166-1"="CZ"')
     expect(dotaz).toContain('place')
     expect(dotaz).toContain('town|village')
@@ -113,5 +115,20 @@ describe('DATA-06 · tvar Overpass dotazu na výchozí body', () => {
     expect(dotaz).toContain('railway')
     expect(dotaz).toContain('bus_stop')
     expect(dotaz).toContain('out center;')
+  })
+
+  it('okno je parametr — Jizerky se neptají na krkonošský bbox', () => {
+    const ji = overpassDotazVychoziBody('CZ', bboxStr(oblastDleSlugu('jizerske-hory').bbox))
+    expect(ji).toContain('50.73,15.05,51.02,15.45')
+    expect(ji).not.toContain('16.05')
+  })
+
+  /**
+   * Ještědský hřbet je celý v Česku — polský dotaz by u něj byl jen prázdný
+   * soubor navíc. Země se proto berou z konfigurace oblasti.
+   */
+  it('země dotazu si určuje oblast, ne skript', () => {
+    expect(zemeDotazu(oblastDleSlugu('jestedsky-hrbet'))).toEqual([{ zeme: 'cz', iso: 'CZ' }])
+    expect(zemeDotazu(oblastDleSlugu('krkonose')).map((z) => z.iso)).toEqual(['CZ', 'PL'])
   })
 })

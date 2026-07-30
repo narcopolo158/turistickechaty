@@ -9,6 +9,8 @@
  * „pohoří vcelku" — rozhodnutí Michala 20. 7. 2026 u polských schronisek).
  */
 
+import { join } from 'node:path'
+
 export type OblastKonfig = {
   slug: string
   nazev: string
@@ -114,3 +116,24 @@ export const oblastZArgv = (argv: string[] = process.argv.slice(2)): OblastKonfi
 /** Okno dotazu ve tvaru, jaký chce Overpass: „jih,západ,sever,východ". */
 export const bboxStr = (b: OblastKonfig['bbox']): string =>
   `${b.latMin},${b.lngMin},${b.latMax},${b.lngMax}`
+
+/**
+ * Země, po kterých se oblast dotazuje — z konfigurace, ne napevno. Ještědský
+ * hřbet je celý v Česku, takže polský dotaz by u něj byl jen prázdný soubor
+ * navíc; přeshraniční pohoří mají v `zeme` obě.
+ */
+export const zemeDotazu = (o: OblastKonfig): { zeme: string; iso: string }[] =>
+  o.zeme.map((iso) => ({ zeme: iso.toLowerCase(), iso }))
+
+/**
+ * Kde v repu leží data oblasti. Jedno místo pro celou pipeline DATA-06 —
+ * cesty byly do 30. 7. 2026 v každém kroku zvlášť a všechny napevno na
+ * „krkonose", takže se oblast nedala vybrat (výtka Michala: „u data-06 nejde
+ * vybrat oblast"). Půl generalizace by byla horší než žádná: krok 1 by stáhl
+ * Jizerky a krok 3 by pak tiše routoval Krkonoše.
+ */
+export const cestyOblasti = (slug: string) => ({
+  trasy: join(process.cwd(), 'data', 'trasy', slug),
+  oblast: join(process.cwd(), 'data', 'oblasti', slug),
+  chaty: join(process.cwd(), 'data', 'chaty', slug),
+})

@@ -1,7 +1,11 @@
-# DATA-06 (increment 1): export značených turistických tras Krkonoš z OSM —
-# sandbox denních sessions na Overpass nedosáhne (proxy), GitHub Actions ano.
-# Spouští se ručně jedním klikem (Actions → „DATA-06: export značených tras" →
-# Run workflow).
+# DATA-06 (increment 1): export značených turistických tras ZVOLENÉ OBLASTI
+# z OSM — sandbox denních sessions na Overpass nedosáhne (proxy), GitHub
+# Actions ano. Spouští se ručně jedním klikem (Actions → „DATA-06: export
+# značených tras" → Run workflow → vyber oblast).
+#
+# Oblast se přidala 30. 7. 2026 (Michal: „u data-06 nejde vybrat oblast") —
+# okno dotazu i cílový adresář `data/trasy/<oblast>/` se berou z konfigurace
+# v scripts/oblasti.ts, ne z konstanty ve skriptu.
 #
 # Běh: (1) stáhne surový JSON export relací route=hiking i s geometrií
 # (commituje se jako doklad — timestamp stavu OSM dat + copyright Overpass),
@@ -10,11 +14,15 @@
 # routing přístupových tras k chatám). Trasy bez rozpoznaného značení jdou do
 # reportu, ne do katalogu (nedomýšlet). Idempotentní — přepíše export i katalog
 # aktuálním stavem OSM.
-name: 'DATA-06: export značených tras'
+name: 'DATA-06: export značených tras (dle oblasti)'
 
 on:
   workflow_dispatch:
     inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet'
+        required: false
+        default: 'krkonose'
       api:
         description: 'Overpass endpoint — nech prázdné (skript zkouší overpass-api.de a při selhání zrcadlo kumi.systems); vyplň jen pro vynucení konkrétní instance'
         required: false
@@ -29,7 +37,7 @@ concurrency:
 
 jobs:
   export:
-    name: Overpass → značené trasy (data/trasy/krkonose)
+    name: Overpass → značené trasy (data/trasy/<oblast>)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,14 +53,18 @@ jobs:
         shell: bash
         env:
           API_INPUT: ${{ inputs.api }}
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
         run: |
           ARG=()
           if [ -n "$API_INPUT" ]; then ARG=(--api "$API_INPUT"); fi
-          npx tsx scripts/data06-trasy.ts "${ARG[@]}" | tee report.txt
+          npx tsx scripts/data06-trasy.ts --oblast "$OBLAST" "${ARG[@]}" | tee report.txt
           echo '## DATA-06 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
           cat report.txt >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit exportu a katalogu tras do main
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -61,7 +73,7 @@ jobs:
             echo 'Beze změny exportu i katalogu — nic ke commitu.'
             exit 0
           fi
-          git commit -m 'data: OSM export značených tras Krkonoš — route=hiking + značení KČT (z Actions)' \
+          git commit -m "data: OSM export značených tras (${OBLAST}) — route=hiking + značení KČT (z Actions)" \
             -m 'Zdroj: OpenStreetMap (ODbL), relace route=hiking; barva z osmc:symbol/kct_*/colour. Vstup pro routing přístupových tras (DATA-06 increment 2).'
           git pull --rebase origin main
           git push origin main

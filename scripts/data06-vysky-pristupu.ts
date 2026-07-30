@@ -27,8 +27,10 @@ import {
   type Bod,
   type ProfilBod,
 } from './vyskovy-profil'
+import { cestyOblasti, oblastZArgv } from './oblasti'
 
-const VYSTUP_JSON = join(process.cwd(), 'data', 'trasy', 'krkonose', 'pristupove-trasy.json')
+const OBLAST = oblastZArgv()
+const VYSTUP_JSON = join(cestyOblasti(OBLAST.slug).trasy, 'pristupove-trasy.json')
 /** Decimace profilu (m). Auto-trasy jsou delší než ruční GPX → hrubší tolerance. */
 const TOLERANCE_M = 8
 

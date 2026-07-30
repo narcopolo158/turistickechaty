@@ -7,6 +7,8 @@
  */
 import { describe, expect, it } from 'vitest'
 
+import { bboxStr, oblastDleSlugu } from '../../scripts/oblasti'
+
 import {
   delkaTrasyKm,
   overpassDotazTrasy,
@@ -89,12 +91,25 @@ describe('DATA-06 · délka a roztřídění tras', () => {
 })
 
 describe('DATA-06 · tvar Overpass dotazu', () => {
-  it('ptá se na route=hiking s geometrií v bboxu Krkonoš', () => {
-    const dotaz = overpassDotazTrasy()
+  it('ptá se na route=hiking s geometrií v zadaném okně', () => {
+    const dotaz = overpassDotazTrasy(bboxStr(oblastDleSlugu('krkonose').bbox))
     expect(dotaz).toContain('route')
     expect(dotaz).toContain('hiking')
     expect(dotaz).toContain('out geom;')
     // `out geom tags;` by vrátilo jen tagy bez geometrie → nulové délky.
     expect(dotaz).not.toContain('out geom tags')
+  })
+
+  /**
+   * Okno je parametr, ne konstanta (30. 7. 2026, „u data-06 nejde vybrat
+   * oblast"). Kdyby se do dotazu vrátilo napevno krkonošské okno, běh pro
+   * Jizerky by beze slova stáhl Krkonoše — a na výsledku by to nebylo poznat.
+   */
+  it('každá oblast se ptá na SVÉ okno', () => {
+    const kr = overpassDotazTrasy(bboxStr(oblastDleSlugu('krkonose').bbox))
+    const ji = overpassDotazTrasy(bboxStr(oblastDleSlugu('jizerske-hory').bbox))
+    expect(kr).not.toBe(ji)
+    expect(ji).toContain('50.73,15.05,51.02,15.45')
+    expect(ji).not.toContain('16.05')
   })
 })

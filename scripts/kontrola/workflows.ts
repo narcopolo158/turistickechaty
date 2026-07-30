@@ -17,11 +17,22 @@
  * v `VZORKY` — každá kontrola má svou vadnou ukázku, takže se pozná, když
  * kontrola přestane zabírat (regresní pojistka bez další fixtury na disku).
  */
-import { readdirSync, readFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { LineCounter, parseDocument } from 'yaml'
 
 const ADRESAR = '.github/workflows'
+
+/**
+ * Umí ten skript vybrat oblast? Pozná se podle `oblastZArgv` — tak si ji
+ * z argumentů bere celá pipeline (scripts/oblasti.ts).
+ */
+const skriptBereOblast = (cestaSkriptu: string): boolean =>
+  existsSync(cestaSkriptu) && /oblastZArgv/.test(readFileSync(cestaSkriptu, 'utf8'))
+
+/** Volání `npx tsx scripts/…​.ts` v `run:` bloku. */
+const volaneSkripty = (run: string): string[] =>
+  [...run.matchAll(/npx\s+tsx\s+(scripts\/[\w./-]+\.ts)/g)].map((m) => m[1])
 
 type Vada = { kod: string; radek: number | null; zprava: string }
 
@@ -46,7 +57,11 @@ function spoustece(on: unknown): string[] {
   return []
 }
 
-export function zkontrolujWorkflow(cesta: string, obsah: string): Vada[] {
+export function zkontrolujWorkflow(
+  cesta: string,
+  obsah: string,
+  bereOblast: (cestaSkriptu: string) => boolean = skriptBereOblast,
+): Vada[] {
   const vady: Vada[] = []
   const pocitadlo = new LineCounter()
   const doc = parseDocument(obsah, { lineCounter: pocitadlo })
@@ -115,6 +130,19 @@ export function zkontrolujWorkflow(cesta: string, obsah: string): Vada[] {
         }
       }
 
+      // G — skript umí `--oblast`, ale workflow mu ji nepředá. Běh pak tiše
+      // spočítá výchozí oblast (krkonose) pod jménem té, kterou uživatel
+      // vybral — na výsledku to není poznat. Přesně tohle se stalo DATA-06:
+      // skripty se generalizovaly, tlačítko zůstalo krkonošské a Michal
+      // 30. 7. 2026 hlásil „u data-06 nejde vybrat oblast".
+      if (typeof krok.run === 'string') {
+        for (const skript of volaneSkripty(krok.run)) {
+          if (!bereOblast(skript)) continue
+          if (/--oblast/.test(krok.run)) continue
+          vady.push({ kod: 'G', radek: r, zprava: `${kde}: \`${skript}\` umí \`--oblast\`, ale workflow mu ji nepředá — běh spočítá výchozí oblast` })
+        }
+      }
+
       const env = je(krok.env) ? Object.values(krok.env) : []
       const jobEnv = je(job.env) ? Object.values(job.env) : []
       for (const hodnota of [...env, ...jobEnv, typeof krok.run === 'string' ? krok.run : '']) {
@@ -170,11 +198,14 @@ const VZORKY: Array<[string, string, string]> = [
   ['D', 'překlep ve jménu vstupu', DOBRY.replace('inputs.oblast }}', 'inputs.oblastt }}')],
   ['E', 'inputs bez zálohy u push spouštěče', DOBRY.replace('on:\n', 'on:\n  push:\n    branches: [main]\n')],
   ['F', 'výraz přímo v run:', DOBRY.replace('run: echo "$OBLAST"', "run: echo \"\\${{ inputs.oblast }}\"")],
+  ['G', 'skript umí --oblast, workflow ji nepředá', DOBRY.replace('run: echo "$OBLAST"', 'run: npx tsx scripts/data06-trasy.ts')],
 ]
 
 /** Ukázky, které se hlásit NESMÍ (aby kontrola nezačala plašit). */
 const TICHE: Array<[string, string]> = [
   ['secret přímo v run: (nevyplňuje ho odesilatel běhu)', DOBRY.replace('run: echo "$OBLAST"', 'run: echo "\\${{ secrets.MAPY_API_KEY }}" > klic')],
+  ['skript s --oblast v run: (předává se)', DOBRY.replace('run: echo "$OBLAST"', 'run: npx tsx scripts/data06-trasy.ts --oblast "$OBLAST"')],
+  ['skript, který oblast neumí', DOBRY.replace('run: echo "$OBLAST"', 'run: npx tsx scripts/seed-chaty.ts')],
 ]
 
 function selfTest(): boolean {
