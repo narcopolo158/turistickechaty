@@ -5,6 +5,7 @@ import React from 'react'
 
 import MapaChat, { type MapovaChata } from '@/components/MapaChat'
 import { SectionBar, TrailBlaze } from '@/components/ui'
+import { kreditFotky, nazevZdroje } from '@/lib/atribuce'
 import { getIndexChat, getOblastBySlug, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { fotkaStrediska } from '@/lib/fotky-stredisek'
 import { redakcniFotkyStredisek } from '@/lib/fotky-redakcni'
@@ -152,12 +153,12 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
               {/* Popiska = název souboru na Commons: snímek sám řekne, co je na něm,
                   takže případný přehmat výběru pozná čtenář i redakce hned. */}
               {foto.popis && <b className="foto-popis" title={foto.popis}>{foto.popis}</b>}
-              foto {foto.autor}, {foto.licence}
+              {kreditFotky(foto.autor, foto.licence)}
               {foto.stranka && (
                 <>
                   {' · '}
                   <a href={foto.stranka} target="_blank" rel="noopener noreferrer nofollow">
-                    Wikimedia Commons
+                    {nazevZdroje(foto.stranka)}
                   </a>
                 </>
               )}

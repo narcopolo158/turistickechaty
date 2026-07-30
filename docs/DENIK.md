@@ -11,6 +11,72 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (odpoledne, dodatek) — osm snímků z mediabanky CzechTourism: hera pro dvě nové oblasti a Rokytnice
+
+**Hotovo:** Michal poslal **osm snímků z mediabanky CzechTourism i s licenčními
+soubory** („jak na hero jizerek, tak další, co se budou hodit — je tam třeba
+dobrá fotka lanovky v Rokytnici, na Lysou horu"). Rozbaleno, prohlédnuto,
+zařazeno.
+
+**Použité hned tři:**
+- **hero Jizerských hor** ← „Paličník, Jizerské hory" (Marek Šaroch): zasněžený
+  skalní vrchol s křížem v ranním světle. Oblast tím má konečně tvář.
+- **hero Ještědského hřbetu** ← „Výhled z Ještědu" (Martin Rak): zimní panorama
+  s kupami kopců v inverzi.
+- **středisko Rokytnice nad Jizerou** ← „Skiareál Spartak Rokytnice nad Jizerou"
+  (Tomáš Rucký) — přebíjí automatický výběr z Commons („vlek Tatrapoma
+  a sjezdovka"). Karta u něj mimochodem sama píše „Lanová dráha Rokytnice –
+  Horní Domky na Lysou horu", takže se to potkalo.
+
+**Dva snímky se ZÁMĚRNĚ nepřiřadily.** Mediabanka je pojmenovala prostě
+„lanovka", bez místa. Vypadají skvěle a bylo by lákavé je dát ke konkrétní
+dráze — jenže to je přesně to, co jsme dopoledne opravovali u DATA-33: fotka
+lanovky musí ukazovat **tu** dráhu, u které visí. Leží tedy v
+`public/foto/mediabanka/` s poznámkou NEPŘIŘAZENO. Stejně tak čeká „Rozhledna
+Štěpánka" (až se povýší kandidát) a „Osečná v Podještědí".
+
+**Licenční registr `data/foto-mediabanka-czt.yaml`:** u každého z osmi snímků
+asset ID, jméno souboru v mediabance, autor, licence a odkaz na podmínky —
+doslova z licenčního souboru, ne z odhadu — plus kde v repu leží a k čemu se
+používá (nebo že nepoužívá a proč). Za rok se u každého souboru dá dohledat,
+čí je a odkud; snímek bez dokladu by nešlo obhájit.
+
+**Redakční vrstva fotek středisek.** DATA-33 přepisuje `public/strediska/`
+při každém běhu a mediabanku do pipeline zapojit nesmíme (zákaz systematického
+užití). Vlastní snímky proto leží v `public/foto/strediska/` a čte je nový
+soubor `data/strediska/_fotky-redakcni.yaml`, který má **přednost** před
+manifestem z Commons. Táž zásada jako u Payloadu z dopoledne, jen pro repo.
+
+**A jedna chyba, kterou přinesla první nekomonsová fotka.** Karta střediska
+měla dvě věci napevno: pořadí slov v kreditu a název zdroje „Wikimedia
+Commons". U mediabanky je obojí špatně a výsledek zněl **„foto Tomáš Rucký,
+© CzechTourism – mediabanka · Wikimedia Commons"** — porušené předepsané znění
+kreditu a nepravda o zdroji v jedné řádce. Nově to skládá `src/lib/atribuce.ts`
+na jednom místě: mediabanka dostane své předepsané znění, ostatní licence
+obvyklé, a jméno odkazu se bere z domény (neznámou ukáže doslova — raději
+„example.org" než nesprávné Commons).
+
+K tomu ještě: kredit na kartě se **nesmí zkracovat třemi tečkami**. Podmínky
+mediabanky žádají uvedení autora „viditelným způsobem" a „© CzechTourism –
+mediabanka, au…" to nesplní — popiska proto místo jednoho řádku s ellipsis
+zalomí do dvou.
+
+**Testy:** 540 (bylo 534). Nové hlídají znění kreditu, název zdroje podle
+domény, to, že šablony skládají kredit přes helper (a ne po svém), a registr
+snímků včetně toho, že dva jsou vedené jako nepřiřazené.
+
+**Příště:** triáž jizerských kandidátů (DATA-03) po dávkách.
+
+**Otázky pro Michala:**
+1. **Hero Jizerek: Paličník, nebo bučiny?** Vzal jsem Paličník (dramatický,
+   a jméno souboru výslovně říká Jizerské hory). Letní „Jizerskohorské bučiny"
+   od Libora Sváčka leží v repu jako záloha — přehození je jeden řádek.
+2. Ty dva snímky „lanovka" bez místa: **víš, které dráhy to jsou?** Když to
+   potvrdíš, přiřadím je; bez toho zůstanou nepřiřazené.
+3. Trvá: DATA-06 pro `jizerske-hory` (GPS středisek), prodejní místa známek.
+
+---
+
 ## 2026-07-30 (odpoledne) — Jizerky dotaženy: lanovky, střediska, panorama a cíle; Bramberk rozhodnut; Český ráj založen
 
 **Hotovo:** Michal: *„ohledně oblastí dám na tebe, bramberk nechám na tobě,

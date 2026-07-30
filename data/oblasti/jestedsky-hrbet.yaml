@@ -37,6 +37,22 @@ overeniCharakteristika:
   verified: false
   checked: '2026-07-30'
 
+# Hero snímek z mediabanky CzechTourism (Michal 30. 7. 2026). Předepsaný kredit
+# nese licence `mediabanka-czt`. Popis místa je doslova ten, který snímku dala
+# mediabanka — „Výhled z Ještědu" —, takže se netvrdí, které vrcholy jsou
+# v dálce vidět; to by byl odhad z obrázku.
+heroFoto:
+  soubor: /foto/pohori/jestedsky-hrbet-hero-vyhled-martin-rak.jpg
+  nahled: /foto/pohori/jestedsky-hrbet-hero-vyhled-martin-rak-nahled.jpg
+  alt: >-
+    Zimní výhled z Ještědu přes zasněžené stromy do krajiny s kupami kopců
+    v ranním světle
+  popisMista: Výhled z Ještědu
+  autor: Martin Rak
+  licence: mediabanka-czt
+  zdrojUrl: https://media.visitczechia.com
+  prevzatoDne: '2026-07-30'
+
 # Ještěd je nejvyšší bod nejen vlastního Ještědského hřbetu, ale celého
 # Ještědsko-kozákovského hřbetu — a jeho jediná tisícovka.
 nejvyssiHora:

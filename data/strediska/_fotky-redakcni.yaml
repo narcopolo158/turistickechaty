@@ -1,0 +1,20 @@
+# Redakční fotky středisek — přednost před automatickým výběrem z Commons (DATA-33).
+zdroj: 'Redakční fotky středisek z repa — snímky, které nejdou z Wikimedia Commons (mediabanka CzechTourism,
+  vlastní snímky se svolením). Mají PŘEDNOST před automatickým výběrem DATA-33: kdo tam byl, ví
+  o místě víc než skript nad cizím katalogem. Licenční doklad každého snímku je v data/foto-mediabanka-czt.yaml
+  nebo u záznamu níž.'
+pozn: Soubory leží v public/foto/strediska/, tedy MIMO public/strediska/, které přepisuje každý
+  běh DATA-33 — jinak by redakční snímek při dalším běhu zmizel.
+strediska:
+- oblast: krkonose
+  slug: rokytnice-nad-jizerou
+  soubor: /foto/strediska/rokytnice-nad-jizerou-skiareal-tomas-rucky.jpg
+  popis: Skiareál Spartak Rokytnice nad Jizerou
+  autor: Tomáš Rucký
+  licence: mediabanka-czt
+  zdrojUrl: https://media.visitczechia.com
+  prevzatoDne: '2026-07-30'
+  duvod: 'Michal 30. 7. 2026: „je tam třeba dobrá fotka lanovky v Rokytnici — na Lysou horu." Automatický
+    výběr DATA-33 měl pro Rokytnici snímek „Horní Rokytnice nad Jizerou, vlek Tatrapoma a sjezdovka"
+    z Commons; tenhle ukazuje areál se sedačkovou lanovkou a je od profesionála. Mediabanka jej
+    pojmenovala „Skiareál Spartak Rokytnice nad Jizerou" — dál se netvrdí, kterou dráhu snímek zachycuje.'

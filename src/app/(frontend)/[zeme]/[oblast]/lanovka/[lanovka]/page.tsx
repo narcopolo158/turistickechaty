@@ -5,6 +5,7 @@ import React from 'react'
 
 import MapaChat, { type MapovaChata } from '@/components/MapaChat'
 import { SectionBar, TrailBlaze } from '@/components/ui'
+import { kreditFotky, nazevZdroje } from '@/lib/atribuce'
 import { getIndexChat, getOblastBySlug, getSlugyOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { fotkaLanovky } from '@/lib/fotky-lanovek'
 import { redakcniFotkyLanovek } from '@/lib/fotky-redakcni'
@@ -164,12 +165,12 @@ export default async function LanovkaPage({ params }: { params: Promise<Params> 
               {/* Popiska = název souboru na Commons: snímek sám řekne, co je na něm,
                   takže případný přehmat výběru pozná čtenář i redakce hned. */}
               {foto.popis && <b className="foto-popis" title={foto.popis}>{foto.popis}</b>}
-              foto {foto.autor}, {foto.licence}
+              {kreditFotky(foto.autor, foto.licence)}
               {foto.stranka && (
                 <>
                   {' · '}
                   <a href={foto.stranka} target="_blank" rel="noopener noreferrer nofollow">
-                    Wikimedia Commons
+                    {nazevZdroje(foto.stranka)}
                   </a>
                 </>
               )}

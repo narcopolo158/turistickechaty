@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
+import { kreditFotky, nazevZdroje } from '@/lib/atribuce'
 import type { PristupyZBodu } from '@/lib/pristupy'
 
 /**
@@ -63,12 +64,12 @@ export function StrediskoKarta({
               nese `title` a alt — vypsaný by na úzké kartě zabral víc místa
               než samotný snímek; celý ho ukazuje mini-stránka střediska. */}
           <figcaption title={foto.popis}>
-            foto {foto.autor}, {foto.licence}
+            {kreditFotky(foto.autor, foto.licence)}
             {foto.stranka && (
               <>
                 {' · '}
                 <a href={foto.stranka} target="_blank" rel="noopener noreferrer nofollow">
-                  Wikimedia Commons
+                  {nazevZdroje(foto.stranka)}
                 </a>
               </>
             )}

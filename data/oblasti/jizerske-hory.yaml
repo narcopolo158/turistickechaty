@@ -22,6 +22,24 @@ overeniCharakteristika:
   verified: false
   checked: '2026-07-28'
 
+# Hero snímek z mediabanky CzechTourism (poslal Michal 30. 7. 2026 i s licenčním
+# souborem). Kredit má PŘEDEPSANÉ znění — proto licence `mediabanka-czt`, u které
+# web skládá popisku podle podmínek, ne po našem. Co je na snímku, se tvrdí jen
+# v rozsahu, jak ho pojmenovala sama mediabanka („Paličník, Jizerské hory");
+# `anotace` se nepřidává, protože polohu konkrétního objektu ve snímku
+# neověřoval člověk.
+heroFoto:
+  soubor: /foto/pohori/jizerske-hory-hero-palicnik-marek-saroch.jpg
+  nahled: /foto/pohori/jizerske-hory-hero-palicnik-marek-saroch-nahled.jpg
+  alt: >-
+    Zasněžený skalní vrchol Paličník v Jizerských horách nad zamrzlými
+    smrky, v ranním světle
+  popisMista: Paličník, Jizerské hory
+  autor: Marek Šaroch
+  licence: mediabanka-czt
+  zdrojUrl: https://media.visitczechia.com
+  prevzatoDne: '2026-07-30'
+
 # POZOR na dvě různá tvrzení, obě doložená a obě pravdivá v jiném rozsahu:
 # nejvyšší bod CELÉHO pohoří (vč. polské strany) je Wysoka Kopa 1126 m,
 # nejvyšší bod ČESKÉ strany je Smrk 1124 m. Průvodce vede pohoří vcelku,

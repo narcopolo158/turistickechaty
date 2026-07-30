@@ -1,0 +1,86 @@
+# Snímky z mediabanky CzechTourism — licenční registr
+#
+# Osm snímků poslal Michal 30. 7. 2026 („tady máš pár fotek včetně licencí
+# z czechtourism — jak na hero jizerek, tak další, co se budou hodit").
+# Stažené balíčky nesly u každého snímku licenční soubor; údaje níž jsou
+# z něj DOSLOVA, ne z odhadu.
+#
+# PODMÍNKY (ověřeny 30. 7. 2026, viz docs/FOTKY-ZDROJE-A-LICENCE.md odd. 4c):
+# web povolen, registrace není potřeba, ale kredit má PŘEDEPSANÉ znění
+# „© CzechTourism – mediabanka, autor: <jméno>" a platí zákaz systematického
+# a hromadného užití — proto se mediabanka nezapojuje do žádné pipeline
+# a snímky vybírá člověk po kusech.
+#
+# CO SE SMÍ TVRDIT: jen to, co mediabanka u snímku uvádí jménem souboru.
+# U dvou snímků stojí prostě „lanovka" bez místa — takový snímek se proto
+# NEPŘIŘAZUJE ke konkrétní dráze, i když by se hodil: fotka lanovky musí
+# ukazovat tu dráhu, u které visí (pravidlo DATA-33).
+
+zdroj: Czechia Digital Media Library (mediabanka CzechTourism), https://media.visitczechia.com
+prevzatoDne: '2026-07-30'
+kreditPredepsany: '© CzechTourism – mediabanka, autor: <jméno autora>'
+snimky:
+  - assetId: '809280'
+    souborMediabanky: 809280-lanovka.jpg
+    autor: Ondřej Holas
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/mediabanka/lanovka-zimni-rano-ondrej-holas.jpg
+    pouziti: >-
+      NEPŘIŘAZENO — mediabanka neuvádí, která lanovka; k lanovce se přiřadit nesmí
+  - assetId: '309905'
+    souborMediabanky: 309905-vyhled-z-jestedu-view-from-jested.jpg
+    autor: Martin Rak
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/pohori/jestedsky-hrbet-hero-vyhled-martin-rak.jpg
+    pouziti: >-
+      hero oblasti Ještědský hřbet
+  - assetId: '809183'
+    souborMediabanky: 809183-palicnik-jizerske-hory.jpg
+    autor: Marek Šaroch
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/pohori/jizerske-hory-hero-palicnik-marek-saroch.jpg
+    pouziti: >-
+      hero oblasti Jizerské hory
+  - assetId: '308549'
+    souborMediabanky: 308549-jizerskohorske-buciny.tif
+    autor: Libor Sváček / vydavatelství MCU
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/pohori/jizerske-hory-buciny-libor-svacek.jpg
+    pouziti: >-
+      záloha hera Jizerských hor (letní varianta) — nepoužito
+  - assetId: '809283'
+    souborMediabanky: 809283-rozhledna-stepanka.jpg
+    autor: Ondřej Holas
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/mediabanka/stepanka-rozhledna-ondrej-holas.jpg
+    pouziti: >-
+      čeká na povýšení kandidáta jizerske-hory/stepanka
+  - assetId: '809289'
+    souborMediabanky: 809289-lanovka.jpg
+    autor: Ondřej Holas
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/mediabanka/lanovka-inverze-ondrej-holas.jpg
+    pouziti: >-
+      NEPŘIŘAZENO — mediabanka neuvádí, která lanovka
+  - assetId: '809284'
+    souborMediabanky: 809284-osecna-v-podjestedi.jpg
+    autor: Ondřej Holas
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/mediabanka/osecna-v-podjestedi-ondrej-holas.jpg
+    pouziti: >-
+      čeká — Osečná není naše středisko; hodí se k Ještědskému hřbetu
+  - assetId: '304365'
+    souborMediabanky: 304365-skiareal-spartak-rokytnice-nad-jizerou.jpg
+    autor: Tomáš Rucký
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/strediska/rokytnice-nad-jizerou-skiareal-tomas-rucky.jpg
+    pouziti: >-
+      fotka střediska Rokytnice nad Jizerou (Krkonoše)

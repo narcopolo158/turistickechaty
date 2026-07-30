@@ -12,13 +12,16 @@
  * k redakci commitnutou konfigurací, stejně jako se noc dostane ke čtenáři
  * commitnutým stylopisem.
  */
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 import { APIError } from 'payload'
 import { describe, expect, it } from 'vitest'
 
+import { parse as parseYaml } from 'yaml'
+
 import { Fotky } from '@/collections/Fotky'
+import { kreditFotky, nazevZdroje } from '@/lib/atribuce'
 
 type Pole = { name?: string; type: string; options?: { value: string }[]; fields?: Pole[] }
 const vsechnaPole = (pole: Pole[]): Pole[] =>
@@ -106,5 +109,77 @@ describe('mediabanka CzechTourism — předepsaný kredit', () => {
     // A kontrola samotné kontroly: obvyklý tvar v komponentě pořád je,
     // takže test nechytá jen to, že se odtud „foto: " ztratilo.
     expect(hero).toContain("'foto: '")
+  })
+})
+
+/**
+ * Kredit u fotky — jedno místo pro všechny šablony (30. 7. 2026).
+ *
+ * Karta střediska měla dvě věci napevno: pořadí slov v kreditu a název
+ * zdroje „Wikimedia Commons". U prvních snímků z mediabanky CzechTourism
+ * bylo obojí špatně a výsledek zněl „foto Tomáš Rucký, © CzechTourism –
+ * mediabanka · Wikimedia Commons" — porušené předepsané znění kreditu
+ * a nepravda o zdroji v jedné řádce.
+ */
+describe('kredit a název zdroje', () => {
+  it('mediabanka má předepsané znění, ostatní licence obvyklé', () => {
+    expect(kreditFotky('Tomáš Rucký', '© CzechTourism – mediabanka')).toBe(
+      '© CzechTourism – mediabanka, autor: Tomáš Rucký',
+    )
+    expect(kreditFotky('ŠJů', 'CC BY 4.0')).toBe('foto ŠJů, CC BY 4.0')
+  })
+
+  it('název zdroje se bere z domény, ne napevno', () => {
+    expect(nazevZdroje('https://commons.wikimedia.org/wiki/File:X.jpg')).toBe('Wikimedia Commons')
+    expect(nazevZdroje('https://media.visitczechia.com')).toBe('mediabanka CzechTourism')
+    // Neznámou doménu ukáže doslova — raději „example.org" než nesprávné Commons.
+    expect(nazevZdroje('https://www.example.org/foto/1')).toBe('example.org')
+    expect(nazevZdroje('nesmysl')).toBe('zdroj')
+  })
+
+  it('šablony kredit skládají přes helper, ne po svém', () => {
+    for (const cesta of [
+      'src/components/StrediskoKarta.tsx',
+      'src/app/(frontend)/[zeme]/[oblast]/stredisko/[stredisko]/page.tsx',
+      'src/app/(frontend)/[zeme]/[oblast]/lanovka/[lanovka]/page.tsx',
+    ]) {
+      const zdroj = readFileSync(join(process.cwd(), cesta), 'utf8')
+      expect(zdroj, cesta).toContain('kreditFotky(foto.autor, foto.licence)')
+      // Napevno psaný název zdroje se nesmí vrátit.
+      expect(zdroj.includes('>\n                  Wikimedia Commons'), cesta).toBe(false)
+    }
+  })
+})
+
+/**
+ * Snímky z mediabanky, které Michal poslal 30. 7. 2026, a jejich licenční
+ * doklad. Registr je v repu proto, aby se za rok dalo u každého souboru
+ * dohledat, čí je a odkud — u snímku bez dokladu se nedá poznat, jestli tam
+ * smí být.
+ */
+describe('registr snímků z mediabanky', () => {
+  const registr = parseYaml(readFileSync(join(process.cwd(), 'data/foto-mediabanka-czt.yaml'), 'utf8')) as {
+    kreditPredepsany: string
+    snimky: { assetId: string; autor: string; licence: string; vRepu: string; pouziti: string }[]
+  }
+
+  it('každý snímek má autora, licenci a cestu v repu', () => {
+    expect(registr.snimky.length).toBe(8)
+    for (const s of registr.snimky) {
+      expect(s.autor, s.assetId).toBeTruthy()
+      expect(s.licence, s.assetId).toMatch(/Licence/iu)
+      expect(existsSync(join(process.cwd(), s.vRepu)), s.vRepu).toBe(true)
+    }
+  })
+
+  it('dva snímky bez místa v názvu jsou vedené jako NEPŘIŘAZENÉ', () => {
+    // Mediabanka u nich uvádí prostě „lanovka" — přiřadit je ke konkrétní
+    // dráze by tvrdilo, co nevíme (pravidlo DATA-33).
+    const neprirazene = registr.snimky.filter((s) => s.pouziti.startsWith('NEPŘIŘAZENO'))
+    expect(neprirazene).toHaveLength(2)
+  })
+
+  it('registr nese předepsané znění kreditu', () => {
+    expect(registr.kreditPredepsany).toContain('© CzechTourism – mediabanka, autor:')
   })
 })
