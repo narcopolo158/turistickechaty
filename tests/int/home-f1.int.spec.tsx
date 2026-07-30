@@ -55,6 +55,7 @@ vi.mock('@/lib/chaty', () => ({
 }))
 vi.mock('@/lib/zanikle', () => ({
   zanikleChaty: () => Array.from({ length: 12 }, (_, i) => ({ slug: `z${i}` })),
+  zanikleChatyVse: () => Array.from({ length: 12 }, (_, i) => ({ slug: `z${i}` })),
 }))
 vi.mock('@/components/MapaChat', () => ({ default: () => <div data-testid="mapa-mock" /> }))
 // HledaniChat používá app router (useRouter) — v jsdom se mockuje.

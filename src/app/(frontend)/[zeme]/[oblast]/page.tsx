@@ -85,7 +85,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
   if (!oblast) notFound()
 
   const vOblasti = index.filter((ch) => ch.oblastSlug === oblastSlug)
-  const zanikle = zanikleChaty()
+  const zanikle = zanikleChaty(oblastSlug)
   // Přehled lanovek oblasti (DATA-32) — které vyvezou pěšího k chatám.
   const lanovky = lanovkyOblasti(oblastSlug)
   const sRazitkem = vOblasti.filter((ch) => ch.razitko).length
@@ -454,6 +454,10 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         </section>
       )}
 
+      {/* Sekce se kreslí, jen když oblast opravdu nějaké zaniklé boudy má —
+          stejně jako střediska nebo žebříčky. Prázdná černá karta s „0 příběhů"
+          a odkazem do Atlasu je na stránce nové oblasti šum, ne obsah. */}
+      {zanikle.length > 0 && (
       <section className="sec" id="s07" aria-label="Zaniklé chaty">
         <SectionBar num="07" title="Z Atlasu zaniklých" variant="red" />
         <div className={`pohori-zanikle${fotoPamet ? ' pohori-zanikle--sfotkou' : ''}`}>
@@ -475,6 +479,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
           </div>
         </div>
       </section>
+      )}
 
       {(vitrinaOtisky.length > 0 || sRazitkem > 0) && (
       <section className="sec" id="s08" aria-label="Sběratelství">

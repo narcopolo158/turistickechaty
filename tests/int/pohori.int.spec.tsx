@@ -68,6 +68,10 @@ vi.mock('@/lib/zanikle', () => ({
     { slug: 'obri-bouda', nazev: 'Obří bouda', rokZaniku: '1982', pricinaZaniku: 'zbořena po požáru' },
     ...Array.from({ length: 11 }, (_, i) => ({ slug: `z${i}`, nazev: `Z${i}`, rokZaniku: null, pricinaZaniku: null })),
   ],
+  zanikleChatyVse: () => [
+    { slug: 'obri-bouda', nazev: 'Obří bouda', rokZaniku: '1982', pricinaZaniku: 'zbořena po požáru' },
+    ...Array.from({ length: 11 }, (_, i) => ({ slug: `z${i}`, nazev: `Z${i}`, rokZaniku: null, pricinaZaniku: null })),
+  ],
 }))
 vi.mock('next/navigation', () => ({
   notFound: () => {

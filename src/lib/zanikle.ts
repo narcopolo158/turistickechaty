@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 
 /**
@@ -29,12 +29,36 @@ export type ZaniklaChata = {
   zdroje: string[]
 }
 
-let cache: ZaniklaChata[] | null = null
+const cache = new Map<string, ZaniklaChata[]>()
 
-/** Všechny zaniklé chaty (Česko první, dle názvu) — prázdné pole, když data chybí. */
-export const zanikleChaty = (): ZaniklaChata[] => {
-  if (cache) return cache
-  const cesta = join(process.cwd(), 'data', 'zanikle', 'krkonose.json')
-  cache = existsSync(cesta) ? ((JSON.parse(readFileSync(cesta, 'utf8')).chaty as ZaniklaChata[]) ?? []) : []
-  return cache
+const nactiOblast = (oblast: string): ZaniklaChata[] => {
+  const hotovo = cache.get(oblast)
+  if (hotovo) return hotovo
+  const cesta = join(process.cwd(), 'data', 'zanikle', `${oblast}.json`)
+  const chaty = existsSync(cesta)
+    ? ((JSON.parse(readFileSync(cesta, 'utf8')).chaty as ZaniklaChata[]) ?? [])
+    : []
+  cache.set(oblast, chaty)
+  return chaty
+}
+
+/**
+ * Zaniklé chaty JEDNÉ oblasti (`data/zanikle/<oblast>.json`).
+ *
+ * Argument je povinný záměrně. Do 30. 7. 2026 funkce brala vždycky
+ * `krkonose.json`, protože jiná data neexistovala — a v den, kdy vznikla
+ * třetí oblast (Ještědský hřbet), z toho byla tichá nepravda: stránka
+ * úplně prázdné oblasti hlásila „17 zaniklých v Atlasu" a v sekci
+ * ukazovala Bodenwiesbaude a Českou boudu na Sněžce, tedy Krkonoše.
+ * Číslo z cizího pohoří je horší než nula, protože vypadá jako obsah.
+ */
+export const zanikleChaty = (oblast: string): ZaniklaChata[] => nactiOblast(oblast)
+
+/** Celý Atlas přes všechny oblasti, které data mají — pro stránku `/zanikle`. */
+export const zanikleChatyVse = (): ZaniklaChata[] => {
+  const adresar = join(process.cwd(), 'data', 'zanikle')
+  if (!existsSync(adresar)) return []
+  return readdirSync(adresar)
+    .filter((f) => f.endsWith('.json') && !f.startsWith('_'))
+    .flatMap((f) => nactiOblast(f.replace(/\.json$/u, '')))
 }

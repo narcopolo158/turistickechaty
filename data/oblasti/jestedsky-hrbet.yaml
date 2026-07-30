@@ -1,0 +1,70 @@
+# Oblast Ještědský hřbet — třetí oblast průvodce (rozhodnutí Michala
+# 30. 7. 2026: „bereme i ještědský hřbet").
+#
+# PROČ VLASTNÍ OBLAST, A NE POD JIZERKY: Ještěd do Jizerských hor nepatří —
+# leží v Ještědsko-kozákovském hřbetu, tedy v jiné geomorfologické jednotce,
+# a hranice jizerské oblasti je v našich datech vedená právě
+# ještědsko-kozákovským předělem. Poznámku „pokud ho zařadíme, pak jako
+# vlastní oblast" nese YAML Jizerských hor od 28. 7. 2026; tímhle souborem
+# se vyplnila.
+#
+# CO SEM PATŘÍ: samotný Ještědský hřbet (severozápadní část celku) — Ještěd,
+# Rašovka, Pláně pod Ještědem, hřeben nad Libercem a Kryštofovým údolím.
+# Kozákovský hřbet na jihovýchodě sem NEPATŘÍ: Riegrovu chatu na Kozákově
+# vedeme jako kandidáta Českého ráje (data/kandidati/cesky-raj) a to se
+# tímhle nemění.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat, žebříčky)
+# se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Ještědský hřbet
+slug: jestedsky-hrbet
+typ: pohori
+zeme: cz
+
+charakteristika: >-
+  Úzký hrásťový hřbet, který se zvedá přímo nad Libercem a táhne se od
+  severozápadu k jihovýchodu. Nemá plochý hřeben ani rašeliniště jako
+  sousední Jizerky — je to jediný výrazný vrchol s dlouhým ramenem, na jehož
+  temeni stojí vysílač Ještěd, a pod ním sedla, sjezdovky a hospody, ke
+  kterým se chodí od města.
+overeniCharakteristika:
+  source: >-
+    Tvar a rozsah hřbetu: cumbres.cz (České hory / Ještědsko-kozákovský
+    hřbet, čteno 2026-07-30) — „hrásťový hřeben táhnoucí se v délce téměř
+    60 km od severozápadu na jihovýchod", šířka do 15 km, ohraničený
+    Mohelkou a Jizerou. Popis charakteru je redakční shrnutí, ne převzaté
+    tvrzení; ověřit v terénu (DATA-04).
+  verified: false
+  checked: '2026-07-30'
+
+# Ještěd je nejvyšší bod nejen vlastního Ještědského hřbetu, ale celého
+# Ještědsko-kozákovského hřbetu — a jeho jediná tisícovka.
+nejvyssiHora:
+  nazev: Ještěd
+  vyska: 1012
+  source: >-
+    cumbres.cz (Ještědsko-kozákovský hřbet, čteno 2026-07-30): „Ještěd
+    (1012 m)" — „mohutný suk" a „jediná tisícovka" pohoří; totéž číslo nese
+    titulek mapotic.com („Ještědsko-kozákovský hřbet, Ještěd (1012)")
+    i vydavatelův výpis známkových míst z 30. 7. 2026 („No. 40 Ještěd
+    1012m"). Ověření ČÚZK: DATA-04.
+
+# Střediska a top cíle se doplní, až budou vazby na doložené profily
+# (po prvním exportu kandidátů a povyšování) — prázdné pole je poctivější
+# než odhad.
+topCile: []
+
+interniPoznamky: >-
+  Založeno 30. 7. 2026 na pokyn Michala („bereme i ještědský hřbet"), a to
+  po nálezu z vydavatelova výpisu známkových míst: tři z pěti tehdejších
+  jizerských položek ležely na Ještědském hřbetu, tedy mimo okno Jizerských
+  hor (všechny s lng < 15,0; okno začíná na 15,05). Konkrétně jsou to
+  známková místa č. 39 Pláně pod Ještědem (prodejní místo „Turistická chata
+  Pláně", chataplane.cz), č. 40 Ještěd 1012m („Horský hotel Ještěd",
+  jested.cz) a č. 1296 Rozhledna Rašovka. Žádný z nich není zatím kandidát —
+  export DATA-01 pro tuhle oblast ještě neběžel a souřadnice ani tagy z OSM
+  proto nemáme. Vyhledávací okno je v scripts/oblasti.ts (jestedsky-hrbet)
+  a vědomě zahrnuje okraj Liberce: hřbet se zvedá přímo nad městem a bez
+  městského okraje by se okno minulo dolní stanici lanovky i parkoviště,
+  odkud se na Ještěd chodí. Duplicity a městské hospody vyřeší kandidátní
+  triáž, ne ořez okna.

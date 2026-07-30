@@ -11,6 +11,66 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (noc, dodatek 2) — Ještědský hřbet jako třetí oblast, a co u toho vyplavalo
+
+**Hotovo:** Michal rozhodl: „bereme i ještědský hřbet". Ještěd do Jizerek
+nepatří — je v jiné geomorfologické jednotce a hranice jizerské oblasti je
+v našich datech vedená právě ještědsko-kozákovským předělem; poznámku „pokud
+ho zařadíme, pak jako vlastní oblast" nese jizerský YAML od 28. 7. Tou
+poznámkou se dnes řídilo.
+
+**Vznikla třetí oblast `jestedsky-hrbet`:** `data/oblasti/jestedsky-hrbet.yaml`
+(nejvyšší hora **Ještěd 1012 m** s doložením — cumbres.cz „jediná tisícovka"
+pohoří, totéž číslo nese mapotic i vydavatelův výpis známek), okno v
+`scripts/oblasti.ts`, naseedováno, čtyři workflow znají nový slug, 14 testů.
+
+**Dvě vědomá rozhodnutí o okně**, obě zapsaná v kódu i v YAML:
+- **okraj Liberce je uvnitř** — hřbet se zvedá přímo nad městem a bez
+  městského okraje by okno minulo dolní stanici lanovky i parkoviště, odkud
+  se na Ještěd chodí. Že dotaz přinese pár městských hospod s „chatou"
+  v názvu, vyřeší triáž; ořez okna by naopak vyřízl doložené výchozí body;
+- **Kozákov uvnitř není** — celek je bezmála 60 km dlouhý a jeho jihovýchodní
+  část vedeme u Českého ráje (Riegrova chata na Kozákově je tam kandidátem
+  od dřívějška). Tohle okno na tom nic nemění.
+
+**A hned to našlo chybu, která tu ležela od začátku.** Stránka úplně prázdné
+oblasti hlásila **„17 zaniklých v Atlasu"** a v sekci ukazovala Bodenwiesbaude
+a Českou boudu na Sněžce — tedy Krkonoše. Důvod: `zanikleChaty()` četla
+natvrdo `data/zanikle/krkonose.json`, protože jiná data neexistovala, a
+stránka pohoří ji volala bez ohledu na to, které pohoří kreslí. U razítek se
+tahle past ošetřila při zakládání Jizerek (počet otisků se filtruje na
+oblast), u zaniklých se na ni zapomnělo.
+
+Opraveno: `zanikleChaty(oblast)` bere data své oblasti a **argument je
+povinný** — aby příště nešlo zavolat „nějaké zaniklé" omylem; `zanikleChatyVse()`
+sečte oblasti pro `/zanikle` a homepage, kde je Atlas vcelku správně.
+Sekce se navíc na stránce nekreslí, když je prázdná — stejně jako střediska
+nebo žebříčky; prázdná černá karta s „0 příběhů" je šum, ne obsah.
+**Číslo z cizího pohoří je horší než nula, protože vypadá jako obsah.**
+
+**Stav nové oblasti je poctivě prázdný:** 0 chat, 0 zaniklých, „Oblast
+připravujeme" s odkazem na /prispet. Známková místa z vydavatelova výpisu
+(Chata Pláně, Horský hotel Ještěd, Rozhledna Rašovka) zatím **nejsou
+kandidáti** — export DATA-01 pro tuhle oblast neběžel, takže nemáme
+souřadnice ani tagy z OSM a vymýšlet je nebudeme.
+
+**Testy:** 511 (bylo 497).
+
+**Příště:** dva běhy DATA-01 — pro `jizerske-hory` (s rozšířeným dotazem)
+a nově pro `jestedsky-hrbet`.
+
+**Otázky pro Michala:**
+1. **Pusť DATA-01 dvakrát:** `jizerske-hory` (rozšířený dotaz najde, doufám,
+   Smědavu a spol.) a `jestedsky-hrbet` (zatím tam nemáme ani jednoho
+   kandidáta).
+2. Ještědský hřbet nemá **hero fotku** — Krkonoše i Jizerky ji mají. Až
+   budeš u mediabanky CzechTourism, hodila by se; Ještěd je na snímky
+   vděčný a licence sedí (viz oddíl 4c rešerše).
+3. Trvá: prodejní místa známek jako doložený údaj ano/ne, a plný výpis
+   známkových míst pro celé pohoří, pokud k němu máš přístup.
+
+---
+
 ## 2026-07-30 (noc, dodatek) — známková místa od Michala: Smědava potvrzena, Hubertka rozsouzena, Ještěd je jiné pohoří
 
 **Hotovo:** Michal poslal `tz_300726.txt` — výpis turistických známkových míst

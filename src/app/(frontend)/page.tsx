@@ -18,7 +18,7 @@ import {
   posledniOvereniFondu,
 } from '@/lib/index-chat'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
-import { zanikleChaty } from '@/lib/zanikle'
+import { zanikleChatyVse } from '@/lib/zanikle'
 
 // Denní rotace kalendária/namátkou a čerstvé countery: stránka se
 // přegeneruje nejpozději po hodině (jinak s každým deployem).
@@ -52,7 +52,7 @@ export default async function HomePage() {
   const dnes = new Date().toISOString().slice(0, 10)
   const sRazitkem = index.filter((ch) => ch.razitko).length
   const seZnamkou = index.filter((ch) => ch.znamka).length
-  const zanikle = zanikleChaty()
+  const zanikle = zanikleChatyVse()
   const posledniOvereni = posledniOvereniFondu(index)
   const nedavno = pocetNoveOverenychZa(index, dnes, 14)
   const vyroci = kalendariumVyber(kalendarium, dnes)

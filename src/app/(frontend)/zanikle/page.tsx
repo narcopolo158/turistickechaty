@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { zanikleChaty, type ZaniklaChata } from '@/lib/zanikle'
+import { zanikleChatyVse, type ZaniklaChata } from '@/lib/zanikle'
 
 export const revalidate = 600
 
@@ -79,7 +79,7 @@ const Karta = ({ c }: { c: ZaniklaChata }) => {
 }
 
 export default function ZaniklePage() {
-  const chaty = zanikleChaty()
+  const chaty = zanikleChatyVse()
   const cz = chaty.filter((c) => c.zeme === 'Česko')
   const pl = chaty.filter((c) => c.zeme !== 'Česko')
 

@@ -70,6 +70,33 @@ export const OBLASTI: OblastKonfig[] = [
     poznamka: 'druhá oblast (rozhodnutí Michala 28. 7. 2026) — přeshraniční s Górami Izerskimi',
     katalogPohori: ['Jizerské hory', 'Góry Izerskie'],
   },
+  {
+    slug: 'jestedsky-hrbet',
+    nazev: 'Ještědský hřbet',
+    zeme: ['CZ'],
+    /**
+     * Okno kryje VLASTNÍ Ještědský hřbet — od Rozstání a Kryštofova údolí na
+     * severozápadě po Hodkovice nad Mohelkou na jihovýchodě, s Ještědem
+     * (50.73, 14.98), Rašovkou a Plánemi pod Ještědem uprostřed.
+     *
+     * Dvě vědomá rozhodnutí:
+     * (1) OKRAJ LIBERCE JE VEVNITŘ. Hřbet se zvedá přímo nad městem; bez
+     *     městského okraje by okno minulo dolní stanici lanovky i parkoviště,
+     *     odkud se na Ještěd chodí. Že dotaz přinese i pár městských hospod
+     *     s „chatou" v názvu, vyřeší triáž — ořez okna by naopak vyřízl
+     *     doložené výchozí body.
+     * (2) KOZÁKOV VEVNITŘ NENÍ. Ještědsko-kozákovský hřbet je dlouhý bezmála
+     *     60 km a jeho jihovýchodní část (Kozákov 744 m) vedeme u Českého
+     *     ráje — Riegrova chata na Kozákově je tam kandidátem od dřívějška
+     *     a tohle okno to nemění.
+     */
+    bbox: { latMin: 50.62, lngMin: 14.8, latMax: 50.84, lngMax: 15.12 },
+    // 3D okno o kus užší: severozápadní i jihovýchodní konec hřbetu už
+    // klesá do podhůří a model by z něj měl hlavně roviny.
+    bbox3d: { latMin: 50.64, lngMin: 14.85, latMax: 50.82, lngMax: 15.08 },
+    poznamka: 'třetí oblast (rozhodnutí Michala 30. 7. 2026) — Ještěd nepatří do Jizerek, je to jiná geomorfologická jednotka',
+    katalogPohori: ['Ještědský hřbet'],
+  },
 ]
 
 export const oblastDleSlugu = (slug: string): OblastKonfig => {
