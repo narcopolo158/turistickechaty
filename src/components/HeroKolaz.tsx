@@ -33,13 +33,13 @@ export default function HeroKolaz({
               <path d="M-8,196 C60,178 120,186 170,150 C220,114 250,122 306,96" fill="none" stroke="var(--tr-blue, #2a5cb8)" strokeWidth="2.4" opacity=".75" />
               <path d="M24,244 C70,190 130,168 178,140 C220,116 248,86 262,44" fill="none" stroke="var(--tr-red, #c92f1b)" strokeWidth="2.8" strokeDasharray="8 6" />
               <path d="M-6,120 C60,112 130,124 200,108 C250,96 280,100 302,92" fill="none" stroke="#fff" strokeWidth="3.4" opacity=".7" />
-              <circle cx="66" cy="196" r="4.5" fill="#fff" stroke="var(--ink)" strokeWidth="1.8" />
+              <circle cx="66" cy="196" r="4.5" fill="#fff" stroke="var(--ink-artefakt)" strokeWidth="1.8" />
               <g transform="translate(196,118)">
                 <path d="M-10,5 L0,-10 L10,5 Z" fill="var(--red)" />
                 <rect x="-7" y="5" width="14" height="8" fill="var(--red)" />
                 <rect x="-1.5" y="7" width="4" height="6" fill="#fff" />
               </g>
-              <path d="M262,44 l6,-3 M262,44 l-1,7" stroke="var(--ink)" strokeWidth="1.4" />
+              <path d="M262,44 l6,-3 M262,44 l-1,7" stroke="var(--ink-artefakt)" strokeWidth="1.4" />
             </svg>
             <span className="hf1-mapa-popisek" style={{ left: 44, top: 200 }}>
               Špindlerův Mlýn

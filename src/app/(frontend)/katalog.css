@@ -247,3 +247,22 @@
 .ktl-karta-nazev, .ktl-radek-nazev b { display:inline-flex; align-items:center; gap:6px; }
 .ktl-karta-nazev svg, .ktl-radek-nazev svg { color:var(--muted); }
 .ktl-radek-nazev { display:flex; align-items:center; gap:6px; }
+
+/* ── F1f „noc na horách" — katalog ─────────────────────────────────────────
+   Plochy, text i chips jedou přes noční sadu tokenů (`styles.css`), takže
+   tady zbývají jen dvě věci, které tokeny vyřešit nemohou:
+
+   1. **Mini-otisk razítka je fyzický artefakt.** Pasparta pod ním musí zůstat
+      papírová — otisk se do ní vkládá `mix-blend-mode: multiply`, a nad tmavou
+      plochou by multiply otisk pohltil (dole tmavá × tmavá = tmavá). Handoff
+      to říká výslovně: dřevo, mosaz a razítka se v noci nemění.
+   2. **Prázdná pasparta u chat bez razítka** má tichý papírový podklad z týchž
+      důvodů (ghost kruh „?" v prázdném stavu naopak přes tokeny jede).
+
+   ODCHYLKA OD HANDOFFU, VĚDOMÁ: „noční mapa" prototypu (hvězdy, měsíční
+   srpek, svítící okna chat) se nepřenáší — zobrazení Mapa v katalogu jsou
+   ŽIVÉ dlaždice Mapy.com (`MapaChat.tsx`), ne kreslený placeholder. Barvit
+   cizí mapový podklad do noci nejde bez vlastního mapsetu a přebarvit ho
+   filtrem by zhoršilo čitelnost vrstevnic i značených tras. Otázka pro
+   Michala v deníku. */
+body.dark .ktl-otisk { background: #f4efe3; border-color: rgba(120, 100, 70, 0.35); }

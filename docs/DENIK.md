@@ -11,6 +11,95 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 — denní session (bezobslužný běh): F1f „noc na horách" — a nález, že dvě nejnovější šablony noc vůbec neměly
+
+**Hotovo:** Pořadí backlogu nejdřív: **DATA-04** blokovaná (telefonáty umí
+jen Michal), **DATA-05** čeká na klik na otisky-workflow a na potvrzení 32
+párů razítek, **DATA-20** na Michalovo rozhodnutí o sémantice pole `obec`,
+**DATA-22** na tytéž telefonáty a na katalog vydavatele (ze sandboxu se
+nenačte), **DATA-25** má ve frontě už jen tři případy, které bezobslužný běh
+neuzavře (Javorka — Archa Krkonoš nedostupná; Tereza a Sasanka — dotaz na
+restauraci pro veřejnost = DATA-04), **DATA-28** visí na kliku do Actions.
+Vzata tedy **F1-IMPL, fáze F1f — dark mode „noc na horách"**. Vše u každé
+položky okomentováno přímo v backlogu.
+
+**Nález, kvůli kterému má tahle fáze větší dosah, než jak byla zapsaná:**
+`katalog.css` (249 řádků) a `home-f1.css` (538 řádků) neměly do dneška
+**ani jednu** noční deklaraci. Nebyla to nedbalost — obě šablony jsou
+napsané výhradně nad tokeny, jak handoff žádá. Jenže noc se v repu dělala
+pravidly `body.dark .x` s pevně psanými barvami, tedy komponenta po
+komponentě (F0-03), a **tokeny se nepřepínaly vůbec**. Katalog i homepage
+proto v noci svítily denními hodnotami: bílý papír, tmavý text — celá
+šablona mimo režim, přepínač ☀/☾ na nich nedělal nic.
+
+**Řešení je proto jedna změna, ne dvě stě:** noční sada tokenů z handoffu
+(`design/handoff-f1/README.md`) je nově na `body.dark` ve `styles.css` —
+plochy `--paper/--cream/--card/--desk`, `--ink/--muted/--label`, noční
+`--red #f26a4b`, `--gone`, světlé vlasové linky a noční, světlejší odstíny
+značených tras `--tr-*` (akceptační kritérium handoffu: noc ani zima nesmí
+snížit kontrast tras). Šablony F1 tím dostaly noc **celé**, ne po částech, a
+starší komponenty si drží svá specifičtější pravidla, takže se jim nic
+nerozbilo. Handoff píše sadu na `:root[data-theme="noc"]`, u nás noc přepíná
+třída `body.dark` (SiteHeader, `tc-dark`) — sada proto stojí na ní, jinak by
+šablony potřebovaly dvojí přepínač.
+
+**Tři věci, které tokeny vyřešit nemohly, protože nejsou barva, ale
+atmosféra nebo fyzika:** (1) **lampa + hvězdy** nad hero „sběratelským
+stolem" (`--lamp`, `--stars`, jen v noci — ve dne jsou proměnné prázdné a
+`background-image` degraduje na `none`); (2) **soumrakový overlay**
+`rgba(10,14,24,.26)` na malovaném posteru — poster je fyzický artefakt,
+v noci se nepřekresluje, jen se přes něj položí soumrak; (3) **`--ink-artefakt`**
+— tuš, která se v noci NEobrací. Bez ní by se převrácený `--ink` obrátil i
+tam, kde kreslí do papíru, který zůstává světlý: popisky papírové mapy
+v koláži, kresba v `HeroKolaz`, tooltip výškového profilu (světlé pozadí pod
+bílým textem) a hlavně **pasparta mini-otisku razítka v katalogu** — otisk
+se do ní vkládá `mix-blend-mode: multiply`, takže na tmavé ploše by prostě
+zmizel. Tohle je ten druh vady, který se v noci nepozná jako chyba, jen jako
+„razítko tam asi není".
+
+**Doloženo, ne odhadnuto.** Postavil jsem statický harness nad **reálnými**
+CSS soubory z repa (tokens + styles + components + katalog + home-f1) a
+sejmul den i noc: karty katalogu jsou v noci čitelné (krémový název, tichý
+tag, červená pilulka), mini-otisk na světlé paspartě viditelný, hero má nad
+sebou lampu, filtr-bar, chips i prázdný stav sedí — a **den se nezměnil**.
+K tomu **19 nových testů nad zdrojem CSS** (`tests/int/f1f-noc.int.spec.ts`):
+hodnoty tokenů 1:1 s handoffem, noční trasy, lampa/hvězdy jen v noci,
+soumrak na posteru a všechna čtyři místa, kde artefakt musí kreslit
+`--ink-artefakt`. Noc nemá funkci, kterou by šlo zavolat — ke čtenáři jde
+commitnutý stylopis, tak se kontroluje ten. Celkem **449 testů** (bylo 437;
+tři soubory dál padají na chybějícím `PAYLOAD_SECRET` v sandboxu, stejně
+jako před dnešní změnou). `npm run kontrola`, lint i tsc čisté.
+
+**Vědomá odchylka od handoffu:** „noční mapa" prototypu — hvězdy, měsíční
+srpek a **svítící okna jen u žijících chat** — se nepřenáší. V prototypu je
+mapa kreslený placeholder, u nás jsou to živé dlaždice Mapy.com
+(`MapaChat.tsx`). Cizí mapový podklad nelze obarvit do noci bez vlastního
+mapsetu a přebarvit ho CSS filtrem by zhoršilo čitelnost vrstevnic i
+značených tras — tedy přesně to, co má handoff v akceptačních kritériích
+chránit. Odchylka je zapsaná v komentáři `katalog.css`, ať ji příští kodér
+nečte jako opomenutí. Poctivost „zaniklé nesvítí" tím nemizí — v katalogu ji
+nese stavová pilulka a šedý `--gone`.
+
+**Příště:** dotáhnout noční detaily starších šablon — pevné barvy `body.dark`
+z F0-03 se teď rozcházejí s novou sadou (`#1b242e` × `--card #212a30`), což
+na hranici katalogu a starých komponent uvidí i oko; a vizuální kontrola
+noci nad reálnými daty na stagingu (harness dokládá CSS, ne aplikaci).
+Pak dál dle backlogu.
+
+**Otázky pro Michala:**
+1. **Noční mapa** — souhlasíš s odchylkou výš (živé dlaždice necháváme
+   v noci tak, jak jsou)? Kdybys chtěl noční mapu doopravdy, znamená to
+   vlastní mapset u Mapy.com, ne CSS trik — je to samostatný úkol.
+2. **Sjednotit noc starých komponent na novou sadu tokenů?** Znamená to
+   smazat desítky pevných `body.dark .x` pravidel a nechat je jet přes
+   proměnné. Je to úklid s rizikem drobných vizuálních rozdílů — chceš ho
+   jako samostatný krok, nebo to nechat dožít?
+3. Pořád visí ze starších zápisů: čtyři lanovky bez fotky (Q z 29. 7.),
+   zimní fotka pro sezónní hero (Q19), pruh „Podmínky na hřebeni" (Q20)
+   a zdrojová URL tří fotek z handoffu (Q17).
+
+---
+
 ## 2026-07-29 (podvečer) — druhý běh DATA-33: pravidla zabrala, ale moje rezervace souborů sebrala Čertově hoře fotku
 
 **Hotovo:** Michal pustil workflow znovu (`e0f4221`). **Nová pravidla
