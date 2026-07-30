@@ -628,6 +628,18 @@ export interface Fotky {
    * U převzatých fotek povinné (Wikimedia Commons apod.).
    */
   zdrojUrl?: string | null;
+  /**
+   * Proč smí snímek na web. „Nevyjasněno" je poctivý stav pro rozpracované — takový snímek se nepoužije.
+   */
+  pravniStatus?: ('volne-autor' | 'volne-anonym' | 'cc' | 'se-svolenim' | 'nevyjasneno') | null;
+  instituce?: string | null;
+  signatura?: string | null;
+  rokVydani?: string | null;
+  puvodOriginalu?: string | null;
+  /**
+   * Čím je status doložen: „autor A. Novák zemřel 1943", „anonym, vydáno 1928 dle rubu", „svolení sbírky X z 12. 6. 2026". Bez toho se za rok nedá přezkoumat, proč snímek na webu je.
+   */
+  pravniPoznamka?: string | null;
   prevzatoDne?: string | null;
   /**
    * Ověření licence a autorství (kdo a kdy je zkontroloval).
@@ -1557,6 +1569,12 @@ export interface FotkySelect<T extends boolean = true> {
   licence?: T;
   licencePoznamka?: T;
   zdrojUrl?: T;
+  pravniStatus?: T;
+  instituce?: T;
+  signatura?: T;
+  rokVydani?: T;
+  puvodOriginalu?: T;
+  pravniPoznamka?: T;
   prevzatoDne?: T;
   overeni?:
     | T

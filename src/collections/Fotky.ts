@@ -30,6 +30,20 @@ export const Fotky: CollectionConfig = {
         if (byloPodani && data?.typ && data.typ !== 'komunitni-podani' && !data?.podani?.licencniSouhlas) {
           throw new APIError('Komunitní fotku nelze schválit bez licenčního souhlasu odesilatele.', 400)
         }
+        /**
+         * FOTO-01: „nevyjasněno" je pracovní stav, ne licence. Dokud se
+         * nedoloží, PROČ smí snímek na web, nesmí dostat typ, kterým ho
+         * šablony vybírají — jinak by na webu visel historický snímek
+         * „protože je starý", což je přesně ta úvaha, kterou rešerše
+         * (docs/FOTKY-ZDROJE-A-LICENCE.md) vyvrací.
+         */
+        const status = data?.pravniStatus ?? originalDoc?.pravniStatus
+        if (status === 'nevyjasneno' && data?.typ && data.typ !== 'komunitni-podani') {
+          throw new APIError(
+            'Fotka s právním statusem „nevyjasněno" se nesmí publikovat — doplň, proč je volná, nebo čí je svolení.',
+            400,
+          )
+        }
         return data
       },
     ],
@@ -155,6 +169,82 @@ export const Fotky: CollectionConfig = {
       type: 'text',
       label: 'Zdrojové URL',
       admin: { description: 'U převzatých fotek povinné (Wikimedia Commons apod.).' },
+    },
+    /**
+     * FOTO-01, bod (a) — pole pro HISTORICKÉ snímky (rešerše
+     * `docs/FOTKY-ZDROJE-A-LICENCE.md`, zadání Michala 29. 7. 2026: „jak je
+     * to s použitím historických fotografií? jaká je hranice pro copyright?").
+     *
+     * Dosavadní model počítal s Commons a licencí CC — u dobové pohlednice
+     * ale nerozhoduje „licence", nýbrž PROČ je dílo volné: majetková práva
+     * končí 70 let po smrti autora, u anonymních děl 70 let od zveřejnění.
+     * Pohlednice vydaná 1955 a dřív s neznámým autorem je tedy dnes volná,
+     * signovaný snímek téhož roku nemusí být. Bez zapsaného důvodu se to za
+     * rok nedá přezkoumat a snímek by na webu visel „protože je starý".
+     *
+     * Klíč z oddílu 3.4 rešerše žádá pět bodů: kde je originál, kdo je autor
+     * (i doložené „neznámý"), rok vydání, proč je volný / čí je svolení, a co
+     * je na něm. Autora a popis nesou pole výš; zbytek stojí tady. Chybí-li
+     * kterýkoli bod, snímek se nepoužije — stejné pravidlo jako u faktů.
+     */
+    {
+      name: 'pravniStatus',
+      type: 'select',
+      label: 'Právní status (u historických snímků)',
+      options: [
+        { label: 'Volné dílo — autor zemřel před 70+ lety', value: 'volne-autor' },
+        { label: 'Volné dílo — anonym vydaný před 70+ lety', value: 'volne-anonym' },
+        { label: 'Volná licence (CC / CC0)', value: 'cc' },
+        { label: 'Se svolením držitele originálu', value: 'se-svolenim' },
+        { label: 'Nevyjasněno — NEPUBLIKOVAT', value: 'nevyjasneno' },
+      ],
+      admin: {
+        description:
+          'Proč smí snímek na web. „Nevyjasněno" je poctivý stav pro rozpracované — takový snímek se nepoužije.',
+      },
+    },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'instituce',
+          type: 'text',
+          label: 'Kde je originál',
+          admin: { width: '50%', placeholder: 'např. Krkonošské muzeum / soukromá sbírka J. N.' },
+        },
+        {
+          name: 'signatura',
+          type: 'text',
+          label: 'Signatura / inventární číslo',
+          admin: { width: '50%' },
+        },
+      ],
+    },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'rokVydani',
+          type: 'text',
+          label: 'Rok vydání (i odhadem)',
+          admin: { width: '50%', placeholder: 'např. 1928 / „před 1945" (z rubu pohlednice)' },
+        },
+        {
+          name: 'puvodOriginalu',
+          type: 'text',
+          label: 'Podoba originálu',
+          admin: { width: '50%', placeholder: 'pohlednice / skleněný negativ / novinový tisk' },
+        },
+      ],
+    },
+    {
+      name: 'pravniPoznamka',
+      type: 'textarea',
+      label: 'Odůvodnění a doklad',
+      admin: {
+        description:
+          'Čím je status doložen: „autor A. Novák zemřel 1943", „anonym, vydáno 1928 dle rubu", „svolení sbírky X z 12. 6. 2026". Bez toho se za rok nedá přezkoumat, proč snímek na webu je.',
+      },
     },
     {
       name: 'prevzatoDne',

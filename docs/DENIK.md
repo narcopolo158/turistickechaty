@@ -11,6 +11,78 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (večer) — karty středisek podle Michalovy výtky, upload vlastních fotek, a FOTO-01 (a) + (c)
+
+**Hotovo:** tři věci ze zadání Michala (screenshot mobilu + „mám pro některá
+střediska a lanovky lepší vlastní fotky… pak pokračuj dál JIZ-01 a FOTO-01").
+
+**1. Karta střediska.** Nad fotkou stál ještě malovaný hřeben — jenže ten je
+**zástupný obrázek pro dobu, než fotka je**. Po DATA-33 se karta četla jako
+dvě hlavičky nad sebou a tatáž kresba se opakovala u každého střediska
+(„ten stejný obrázek nad každou fotkou… působí nepatřičně"). Fotka teď bere
+týž pruh a tutéž výšku, jakou měl hřeben (132 → 62 px), atribuce je na jeden
+řádek a název souboru z Commons se přesunul do `title`/alt — celý ho ukazuje
+mini-stránka, kde je na něj místo. Karta na mobilu spadla z ~330 na 218 px;
+doloženo snímky 412 px i 1240 px.
+
+**2. Komunitní upload fotek středisek a lanovek.** Formulář `/prispet` uměl
+otisk a fotku chaty; nově i **fotku střediska a lanovky**. Středisko je
+kolekce → vztah; **lanovka kolekci nemá** (dráhy vznikají z OSM, DATA-32),
+takže se váže dvojicí `oblast` + `slug` a formulář ji posílá jako
+`oblast/slug` — jeden slug by napříč oblastmi nestačil. Vlastní fotka má
+**přednost před automatickým výběrem z Commons**: kdo tam byl, ví to líp než
+skript, a Commons zůstává výplní. Čekárna platí dál — podání vzniká s typem
+`komunitni-podani`, který žádná šablona nevybírá, a zveřejní ho až redakce.
+Odkaz „Wikimedia Commons" se v popisce kreslí jen tam, kde zdroj je; vlastní
+snímek stránku na Commons nemá a odkaz do prázdna by tvrdil původ.
+
+Drobnost, která stála za vlastní test: hlášky se **neskládají z názvu
+předmětu**. „Vyber lanovka, ke které…" vzniklo samo od sebe, jakmile jsem
+zkusil být chytrý a lowercasovat nominativ; čeština skloňuje a mění rod,
+takže jsou v kódu tři celé věty.
+
+**3. FOTO-01, bod (a) — právní pole pro historické snímky.** Rešerše z 29. 7.
+došla k tomu, že u dobové fotky nerozhoduje „licence", ale PROČ je dílo
+volné: 70 let po smrti autora, u anonymních děl 70 let od zveřejnění.
+Kolekce `Fotky` proto má `pravniStatus` (volné-autor / volné-anonym / cc /
+se-svolením / **nevyjasněno**), `instituce`, `signatura`, `rokVydani`,
+`puvodOriginalu` a `pravniPoznamka` na doslovné doložení. K tomu **brána
+v hooku**: snímek se statusem `nevyjasneno` nedostane typ, kterým ho šablony
+vybírají. Bez ní by pole byla jen formulář — a historický snímek by na webu
+visel „protože je starý", což je přesně ta úvaha, kterou rešerše vyvrací.
+
+**4. FOTO-01, bod (c) — dopisy sbírkám.** `docs/FOTO-01-dopisy-sbirkam.md`:
+čtyři texty k odeslání v pořadí z rešerše — fotohistorie.cz,
+staretrutnovsko.cz, Zaniklé krajiny (jiný cíl než ostatní: práva ke galerii
+nedrží, zajímavé jsou 3D modely zaniklých bud, a nabízíme jim naše data) a
+Krkonošské muzeum / KRNAP. **Čeká na Michala — odeslat.**
+
+**JIZ-01 nezačato, a proč:** položka pořád visí na **dvou klicích do
+Actions** (DATA-01 export kandidátů pro `jizerske-hory`, DATA-28 terén).
+V repu leží tři kandidáti z krkonošských běhů, na triáž to nestačí, a ze
+sandboxu se na Overpass ani Mapy.com nedosáhne — běh nejde nahradit ničím,
+co bych tu spustil. Zapsáno u položky v backlogu.
+
+**Testy:** 475 (bylo 460). Nové: podání s předměty (8 — včetně toho, že slug
+lanovky bez oblasti dráhu nenajde, proto se posílá dvojice) a právní pole
+FOTO-01 (7 — včetně kontroly, že brána nezavře i to, co je v pořádku).
+
+**Příště:** až Michal klikne DATA-01 pro Jizerky, triáž kandidátů vzorem
+DATA-03. Jinak F1b — vizuální kontrola katalogu proti
+`design/handoff-f1/screenshots/01-katalog.png`.
+
+**Otázky pro Michala:**
+1. **Fotky, které máš vlastní** — pošli je přes `/prispet` (tlačítka „Fotka
+   střediska" a „Fotka lanovky"), nebo je nahraj rovnou v adminu do kolekce
+   Fotky a vyplň vazbu (Středisko, nebo Lanovka = oblast + slug). Přes web
+   je to rychlejší z telefonu, admin má zas víc polí.
+2. **Dopisy sbírkám** čekají na odeslání — chceš je nejdřív projít, nebo mám
+   příště připravit i variantu pro zanikleobce.cz a fotogalerie obcí?
+3. Beze změny: čtyři lanovky bez fotky, redakční přiřazení Čertovy hory,
+   Q17 (zdrojová URL tří fotek z handoffu) / Q19 / Q20.
+
+---
+
 ## 2026-07-30 (pokračování) — F1f dotažena: dvě různé noci na jedné stránce se sjednotily na tokenech
 
 **Hotovo:** Backlog nejdřív: DATA-04/05/20/22/28 blokované tak, jak je
