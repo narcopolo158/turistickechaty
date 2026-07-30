@@ -11,6 +11,67 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (dopoledne, dodatek 2) — druhý jizerský běh: našel všechno, a rovnou ukázal dvě chyby v mém dotazu
+
+**Hotovo:** Michal pustil DATA-01 pro Jizerky znovu, s rozšířeným dotazem.
+**Našel všech osm objektů, které chyběly** — Smědava, Knajpa (jako „Horská
+stanice Knajpa"), Chata Jizerka, Hřebínek, Bártlova bouda, Prezidentská
+chata i další. Zároveň ale přinesl **+85 kandidátů** a shodil kontrolu kolizí
+jmen. Obojí byla vada mé práce z předchozí session, ne Michalova běhu.
+
+**Vada č. 1 — dohledávka podle jmen brala cokoli, co se tak jmenuje.**
+Ptal jsem se `nwr["name"~"^(Jizerka|Smědava|…)$"]` **bez síta druhu**, a jméno
+„Jizerka" v OSM nese kdeco: deset informačních tabulí, dvě autobusové
+zastávky, osadu, katastrální území, vrchol Hřebínek, piknikové místo i kus
+silnice. Z 107 kandidátů jich 25 chatou nebylo. Opraveno: dohledávka hledá
+jméno **jen u objektů s hutovým, ubytovacím nebo hostinským tagem**. Těch 25
+smazáno — ne přes `_vyrazeno.yaml`, protože je opravený dotaz už nepřinese;
+seznam je v commitu.
+
+**Vada č. 2 — týž objekt propadl dvěma vrstvami dotazu.** OSM běžně vede
+boudu jako POI uzel **a zároveň** jako budovu. Dokud se dotaz ptal na jediný
+tag, přišla vždy jen jedna entita; rozšířený dotaz chytí obě. Vzniklo pět
+dvojic: Šámalova chata 0 m, Hubertka 4 m, Prezidentská chata 5 m, chata
+Hvězda 6 m, Schronisko Halny 100 m — a k tomu „Chata Izerska" × „Izerska
+Chata" 9 m, což je totéž jméno dvakrát jinak. Tohle **nesmí řešit ruční
+triáž**, protože se to bude opakovat u každé další oblasti. Skript proto od
+dneška slučuje sám (`slucDuplicity`): slučuje **jen při shodě obojího** —
+jádro názvu i poloha do 150 m. Sama shoda jména nestačí (Hubertka jizerská ×
+krkonošská je 33 km od sebe a sloučit je by znamenalo smazat objekt), sama
+poloha taky ne. Zůstává entita s víc tagy, URL té druhé jde do
+`interniPoznamky` a do `_vyrazeno.yaml`.
+
+**Zbylé čtyři kolize jsou skutečné a zapsané, ne vyřešené.** Do
+`data/_jmenovci.yaml` (registr „víme o tom a čekáme na doklad"):
+`barborka` (jizerská chata × publikovaná krkonošská, 41 km), `jizerka`
+(dva podniky v osadě, 330 m), `lesni` (tři objekty 17–27 km od sebe)
+a `bramberk` — ten je zvláštní případ: **rozhledna a chata u její paty, 28 m
+od sebe**. Není to jmenovec ani duplicita, ale dvojice na jednom místě, na
+kterou myslí pravidlo rozhleden z 28. 7.; obě entity se do korpusu dostaly
+každá jinou vrstvou dotazu. Jestli mají mít jeden profil nebo dva, je
+redakční rozhodnutí téhož druhu jako u Žalého — čeká na triáž.
+
+U všech čtyř platí DATA-17: rozlišovačem má být `obec`, ta u jizerských
+kandidátů doložená není, **a nevymýšlí se** — doplní se z pramene při
+křížovém ověření.
+
+**Stav:** 76 jizerských kandidátů (bylo 107 před úklidem, 22 před během),
+kolizí 0, `npm run kontrola` zelená, testy **525** (bylo 519; nových šest je
+na slučování duplicit a na síto druhu v dohledávce).
+
+**Příště:** triáž jizerských kandidátů vzorem DATA-03 — 76 objektů je na
+jednu session moc, půjde to po dávkách; začnu tou osmičkou, kterou Michal
+jmenoval, protože u ní víme, že do průvodce patří.
+
+**Otázky pro Michala:**
+1. **Bramberk: jeden profil, nebo dva?** (rozhledna + chata u paty, 28 m).
+   U Žalého jsme to nechali jako jeden profil s poznámkou; potvrdíš stejný
+   postup, nebo chceš „profil každého objektu zvlášť" jako u Sněžky?
+2. Trvá: potvrzení oddílu 5 návrhu oblastí (Kozákov a Prachov do Českého
+   ráje), běh DATA-01 pro `jestedsky-hrbet`, prodejní místa známek.
+
+---
+
 ## 2026-07-30 (dopoledne, dodatek) — rozsah průvodce: „turistické chaty", řečeno nahlas
 
 **Hotovo:** Michal rozhodl otázku, kterou otevřel návrh oblastí (oddíl 6):

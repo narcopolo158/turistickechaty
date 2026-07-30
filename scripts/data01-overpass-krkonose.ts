@@ -154,6 +154,8 @@ const HUTOVE_TAGY = '^(alpine_hut|wilderness_hut|hut|chalet)$'
 const SLOVA_BOUDY = 'chata|chatka|chalupa|bouda|boudy|schronisko|hut[ae]?|útuln|utuln|hájenka|hajenka|horská|horska|baude'
 const OBCERSTVENI_TAGY = '^(restaurant|cafe|fast_food|bar|pub|biergarten)$'
 const UBYTOVANI_TAGY = '^(hotel|guest_house|hostel|motel|apartment)$'
+/** Hutové i ubytovací tagy v jednom regexu — pro dohledávku podle jmen. */
+const HUTOVE_TAGY_A_UBYTOVANI = '^(alpine_hut|wilderness_hut|hut|chalet|hotel|guest_house|hostel|motel|apartment)$'
 
 export const overpassDotaz = (iso: string, okno: string = BBOX_KRKONOSE): string => `[out:json][timeout:180];
 area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
@@ -184,9 +186,20 @@ export const overpassDotazDleJmen = (iso: string, jmena: string[], okno: string 
   const alternativy = jmena
     .map((j) => j.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&'))
     .join('|')
+  /**
+   * SÍTO DRUHU JE POVINNÉ. První běh s dohledávkou (30. 7. 2026) se ptal jen
+   * na jméno — a přinesl 25 objektů, které chatou nejsou: deset informačních
+   * tabulí „Jizerka", dvě autobusové zastávky, osadu, katastrální území,
+   * vrchol Hřebínek, piknikové místo i kus silnice. Jméno „Jizerka" totiž
+   * v OSM nese kdeco. Dohledávka proto hledá jméno JEN u objektů, které by
+   * chatou být mohly; ostatní by triáž musela probírat ručně a utopila by se.
+   */
   return `[out:json][timeout:180];
 area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
-nwr["name"~"^(${alternativy})$",i](area.stat)(${okno});
+(
+  nwr["name"~"^(${alternativy})$",i]["tourism"~"${HUTOVE_TAGY_A_UBYTOVANI}"](area.stat)(${okno});
+  nwr["name"~"^(${alternativy})$",i]["amenity"~"${OBCERSTVENI_TAGY}"](area.stat)(${okno});
+);
 out center;`
 }
 
@@ -677,6 +690,77 @@ export const zapisKandidaty = (
 
 // ── CLI ─────────────────────────────────────────────────────────────────────
 
+/**
+ * SLOUČENÍ TÉHOŽ OBJEKTU, KTERÝ PŘIŠEL DVAKRÁT.
+ *
+ * OSM běžně vede jednu boudu jako POI uzel A ZÁROVEŇ jako budovu (way).
+ * Dokud se dotaz ptal na jediný tag, přišla vždycky jen jedna z těch dvou
+ * entit. Rozšířený dotaz (30. 7. 2026) se ptá na hutové tagy, na civilně
+ * tagované boudy i na jména z katalogu — a týž objekt tak propadne dvěma
+ * vrstvami naráz. První ostrý běh vyrobil pět takových dvojic
+ * (Šámalova chata 0 m, Hubertka 4 m, Prezidentská chata 5 m, chata Hvězda
+ * 6 m, Schronisko Halny 100 m) a shodil kontrolu kolizí jmen.
+ *
+ * Slučuje se jen při shodě OBOJÍHO: jádro názvu i poloha do
+ * `SLOUCIT_DO_M`. Sama shoda jména nestačí — jmenovci v různých pohořích
+ * jsou legitimní (Hubertka jizerská × krkonošská, 33 km) a sloučit je by
+ * znamenalo smazat objekt. Sama poloha taky ne: chata a rozhledna na témž
+ * kopci jsou dva objekty a rozhoduje o nich redakce.
+ *
+ * Zůstává entita s VÍC TAGY (nese víc doložených údajů); URL té druhé se
+ * vrací, aby se dala zapsat do `interniPoznamky` — ať je co ověřovat.
+ */
+export const SLOUCIT_DO_M = 150
+
+const jadroNazvu = (s: string | undefined): string =>
+  (s ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/gu, ' ')
+    .replace(/(^| )(chata|chatka|bouda|boudy|schronisko|horska|horsky|hotel|penzion|rozhledna|turystyczne|turisticka)( |$)/gu, ' ')
+    .replace(/\s+/gu, ' ')
+    .trim()
+
+export const slucDuplicity = <T extends { el: OsmElement }>(
+  polozky: T[],
+): { polozky: T[]; slouceno: { zustava: string; slouceno: string; nazev: string; vzdalenostM: number }[] } => {
+  const bod = (el: OsmElement) => ({ lat: el.center?.lat ?? el.lat, lng: el.center?.lon ?? el.lon })
+  const pocetTagu = (el: OsmElement) => Object.keys(el.tags ?? {}).length
+  const vysledek: T[] = []
+  const slouceno: { zustava: string; slouceno: string; nazev: string; vzdalenostM: number }[] = []
+
+  for (const p of polozky) {
+    const jadro = jadroNazvu(p.el.tags?.name)
+    const a = bod(p.el)
+    const dvojnik = jadro
+      ? vysledek.find((q) => {
+          const b = bod(q.el)
+          if (jadroNazvu(q.el.tags?.name) !== jadro) return false
+          if (a.lat == null || a.lng == null || b.lat == null || b.lng == null) return false
+          return vzdalenostM(a.lat, a.lng, b.lat, b.lng) <= SLOUCIT_DO_M
+        })
+      : undefined
+    if (!dvojnik) {
+      vysledek.push(p)
+      continue
+    }
+    const b = bod(dvojnik.el)
+    const vzdal = Math.round(vzdalenostM(a.lat!, a.lng!, b.lat!, b.lng!))
+    // Vítězí entita s víc tagy; při rovnosti zůstává ta dřívější.
+    const prohral = pocetTagu(p.el) > pocetTagu(dvojnik.el) ? dvojnik : p
+    const vitez = prohral === p ? dvojnik : p
+    if (prohral === dvojnik) vysledek[vysledek.indexOf(dvojnik)] = p
+    slouceno.push({
+      zustava: osmUrl(vitez.el),
+      slouceno: osmUrl(prohral.el),
+      nazev: vitez.el.tags?.name ?? '(bez názvu)',
+      vzdalenostM: vzdal,
+    })
+  }
+  return { polozky: vysledek, slouceno }
+}
+
 const main = async () => {
   const argv = process.argv.slice(2)
   const apiIndex = argv.indexOf('--api')
@@ -754,6 +838,18 @@ const main = async () => {
           polozky.push({ el, zeme, checked })
         }
       }
+    }
+  }
+
+  // ── sloučení téhož objektu z různých vrstev dotazu ────────────────────────
+  {
+    const pred = polozky.length
+    const { polozky: bezDuplicit, slouceno } = slucDuplicity(polozky)
+    polozky.length = 0
+    polozky.push(...bezDuplicit)
+    if (slouceno.length) {
+      console.log(`\nSloučeno ${pred - polozky.length} duplicit (týž objekt z víc vrstev dotazu, do ${SLOUCIT_DO_M} m):`)
+      for (const d of slouceno) console.log(`- ${d.nazev}: zůstává ${d.zustava}, sloučeno ${d.slouceno} (${d.vzdalenostM} m)`)
     }
   }
 

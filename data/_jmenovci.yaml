@@ -66,3 +66,64 @@ jmenovci:
       „Žalý".
     rozhodl: Claude (návrh z 29. 7. 2026) — čeká na potvrzení Michalem
     checked: 2026-07-29
+  - jadro: barborka
+    objekty:
+      - jizerske-hory/chata-barborka
+      - krkonose/barborka
+    duvod: >-
+      Dva různé objekty ~41 km od sebe: „Chata Barborka" v Jizerských horách
+      (50,7651 / 15,1952) a publikovaný profil „Barborka" v Krkonoších, obec
+      Pec pod Sněžkou. Krkonošská je na webu, jizerská je zatím kandidát —
+      zaměnit se dnes dají jen v interních přehledech. Rozlišovačem má být
+      `obec` (DATA-17 R2); u jizerské není doložená, dle R6 se NEVYMÝŠLÍ
+      a doplní se z pramene při křížovém ověření Jizerských hor (JIZ-01),
+      do té doby je rozlišení interní (R5).
+    rozhodl: Claude (návrh z 30. 7. 2026 po druhém jizerském běhu) — čeká na potvrzení Michalem
+    checked: 2026-07-30
+  - jadro: bramberk
+    objekty:
+      - jizerske-hory/chata-bramberk
+      - jizerske-hory/rozhledna-bramberk
+    duvod: >-
+      NENÍ jmenovec ani duplicita, ale DVOJICE NA JEDNOM MÍSTĚ: rozhledna
+      Bramberk (50,75625 / 15,20591) a chata u její paty (50,75620 /
+      15,20551) — 28 m od sebe. Přesně ten případ, na který myslí pravidlo
+      rozhleden z 28. 7. 2026: kandidátem má být objekt s doloženým
+      občerstvením, a když je tím občerstvením chata, která už kandidátem je,
+      rozhledna se zvlášť nezakládá. Tady se obě entity dostaly do korpusu
+      každá jinou vrstvou rozšířeného dotazu (chata jako `amenity=restaurant`,
+      rozhledna jako `tower:type=observation`). Sloučit je automaticky nelze —
+      jsou to dva objekty, a jestli mají mít jeden profil, nebo dva, je
+      redakční rozhodnutí stejného druhu jako u Žalého. Čeká na triáž DATA-03.
+    rozhodl: Claude (návrh z 30. 7. 2026) — k posouzení Michalem při triáži
+    checked: 2026-07-30
+  - jadro: jizerka
+    objekty:
+      - jizerske-hory/chata-jizerka
+      - jizerske-hory/jizerka-4281268070
+    duvod: >-
+      Dva různé podniky v osadě Jizerka, ~330 m od sebe: „Chata Jizerka"
+      (50,81639 / 15,34821) a „Jizerka" (50,81503 / 15,35220). Osada je malá
+      a objektů s tímhle jménem v ní OSM vede několik — jméno „Jizerka" tam
+      nese i zastávka, katastrální území a informační tabule (ty už z korpusu
+      vypadly, viz `_vyrazeno.yaml`). Tyhle dva zůstávají, protože oba nesou
+      hostinský tag. Rozlišovač `obec` je u obou týž (Kořenov), takže podle
+      DATA-17 R2 nepomůže — rozliší je až doložený název provozu z pramene
+      (DATA-03), do té doby zůstává rozlišení interní.
+    rozhodl: Claude (návrh z 30. 7. 2026) — čeká na potvrzení Michalem
+    checked: 2026-07-30
+  - jadro: lesni
+    objekty:
+      - jizerske-hory/chata-lesni
+      - jizerske-hory/lesni-chata
+      - krkonose/lesni-bouda
+    duvod: >-
+      Tři různé objekty: „Chata Lesni" v Jizerských horách (50,76379 /
+      15,37683), „Lesní chata" tamtéž ale 17 km jinde (50,79461 / 15,14584)
+      a publikovaný profil „Lesní bouda" v Krkonoších (Pec pod Sněžkou,
+      27 km od první z nich). Jádro názvu je u všech tří „lesni", což je
+      zdrojem kolize, ale vzdálenosti vylučují duplicitu. Krkonošská je na
+      webu, jizerské jsou kandidáti. Rozlišovačem má být `obec` (R2);
+      u jizerských není doložená → R6, doplní se z pramene (JIZ-01 / DATA-03).
+    rozhodl: Claude (návrh z 30. 7. 2026) — čeká na potvrzení Michalem
+    checked: 2026-07-30

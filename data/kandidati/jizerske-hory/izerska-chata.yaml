@@ -1,9 +1,3 @@
-# Izerska Chata — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-30)
-# Zdroj: https://www.openstreetmap.org/way/397427035 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
-# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
-# (data/chaty/jizerske-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
-# provozu OSM nenese, proto tu není. Nic nedomýšlet!
-
 nazev: Izerska Chata
 slug: izerska-chata
 zeme: pl
@@ -12,13 +6,16 @@ lat: 50.9107598
 lng: 15.3232884
 obec: Świeradów-Zdrój
 overeniLokace:
-  source: OpenStreetMap https://www.openstreetmap.org/way/397427035 — data ©
-    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  source: OpenStreetMap https://www.openstreetmap.org/way/397427035 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
   verified: false
   checked: 2026-07-30
-interniPoznamky: >-
-  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-30) — na web povýšit do data/chaty/
+interniPoznamky: 'KANDIDÁT z OSM (DATA-01, stav dat 2026-07-30) — na web povýšit do data/chaty/
   až po křížovém ověření (DATA-03).
 
-  Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
-  = útulna).
+  Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut = útulna).
+
+
+  Sloučená duplicita z 30. 7. 2026: OSM vede týž objekt ještě jako https://www.openstreetmap.org/node/6594821676
+  (rozšířený dotaz DATA-01 chytil obě entity — POI uzel i budovu). Zůstala tato entita, protože
+  nese víc doložených údajů; druhá je v data/kandidati/_vyrazeno.yaml.'

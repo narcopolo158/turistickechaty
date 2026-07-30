@@ -140,3 +140,63 @@ vyrazeno:
       a shodí kontrolu kolizí jmen.
     rozhodl: session 30. 7. 2026 (triáž po prvním jizerském běhu; padající CI #245/#246)
     checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/1491213286
+    slug: jizerske-hory/chata-hvezda-1491213286
+    duvod: >-
+      Duplicita v OSM — týž objekt jako kandidát jizerske-hory/chata-hvezda
+      (https://www.openstreetmap.org/way/44689790): OSM ho vede jako POI uzel i jako budovu a rozšířený dotaz
+      DATA-01 z 30. 7. 2026 chytil obě entity (do 150 m, shodné jádro názvu).
+      Zůstala entita s víc doloženými údaji. Skript to od téhož dne slučuje sám
+      (`slucDuplicity`), tenhle záznam uklízí, co vyrobil běh před opravou.
+    rozhodl: session 30. 7. 2026 (triáž po druhém jizerském běhu)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/205395009
+    slug: jizerske-hory/prezidentska-chata-205395009
+    duvod: >-
+      Duplicita v OSM — týž objekt jako kandidát jizerske-hory/prezidentska-chata
+      (https://www.openstreetmap.org/way/53679813): OSM ho vede jako POI uzel i jako budovu a rozšířený dotaz
+      DATA-01 z 30. 7. 2026 chytil obě entity (do 150 m, shodné jádro názvu).
+      Zůstala entita s víc doloženými údaji. Skript to od téhož dne slučuje sám
+      (`slucDuplicity`), tenhle záznam uklízí, co vyrobil běh před opravou.
+    rozhodl: session 30. 7. 2026 (triáž po druhém jizerském běhu)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/4800362017
+    slug: jizerske-hory/samalova-chata-4800362017
+    duvod: >-
+      Duplicita v OSM — týž objekt jako kandidát jizerske-hory/samalova-chata
+      (https://www.openstreetmap.org/node/4800362017): OSM ho vede jako POI uzel i jako budovu a rozšířený dotaz
+      DATA-01 z 30. 7. 2026 chytil obě entity (do 150 m, shodné jádro názvu).
+      Zůstala entita s víc doloženými údaji. Skript to od téhož dne slučuje sám
+      (`slucDuplicity`), tenhle záznam uklízí, co vyrobil běh před opravou.
+    rozhodl: session 30. 7. 2026 (triáž po druhém jizerském běhu)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/402181381
+    slug: jizerske-hory/schronisko-turystyczne-halny
+    duvod: >-
+      Duplicita v OSM — týž objekt jako kandidát jizerske-hory/schronisko-turystyczne-halny-402181404
+      (https://www.openstreetmap.org/way/402181404): OSM ho vede jako POI uzel i jako budovu a rozšířený dotaz
+      DATA-01 z 30. 7. 2026 chytil obě entity (do 150 m, shodné jádro názvu).
+      Zůstala entita s víc doloženými údaji. Skript to od téhož dne slučuje sám
+      (`slucDuplicity`), tenhle záznam uklízí, co vyrobil běh před opravou.
+    rozhodl: session 30. 7. 2026 (triáž po druhém jizerském běhu)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/2453794429
+    slug: jizerske-hory/hubertka-2453794429
+    duvod: >-
+      Duplicita v OSM — týž objekt jako kandidát jizerske-hory/hubertka
+      (https://www.openstreetmap.org/way/51573239): OSM ho vede jako POI uzel i jako budovu a rozšířený dotaz
+      DATA-01 z 30. 7. 2026 chytil obě entity (do 150 m, shodné jádro názvu).
+      Zůstala entita s víc doloženými údaji. Skript to od téhož dne slučuje sám
+      (`slucDuplicity`), tenhle záznam uklízí, co vyrobil běh před opravou.
+    rozhodl: session 30. 7. 2026 (triáž po druhém jizerském běhu)
+    checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/6594821676
+    slug: jizerske-hory/chata-izerska
+    duvod: >-
+      Duplicita v OSM — týž objekt jako kandidát jizerske-hory/izerska-chata
+      (https://www.openstreetmap.org/way/397427035): OSM ho vede jako POI uzel i jako budovu a rozšířený dotaz
+      DATA-01 z 30. 7. 2026 chytil obě entity (do 150 m, shodné jádro názvu).
+      Zůstala entita s víc doloženými údaji. Skript to od téhož dne slučuje sám
+      (`slucDuplicity`), tenhle záznam uklízí, co vyrobil běh před opravou.
+    rozhodl: session 30. 7. 2026 (triáž po druhém jizerském běhu)
+    checked: 2026-07-30

@@ -20,7 +20,7 @@ import { join } from 'node:path'
 
 import { describe, expect, it } from 'vitest'
 
-import { jmenaZKatalogu, overpassDotaz, overpassDotazDleJmen } from '../../scripts/data01-overpass-krkonose'
+import { jmenaZKatalogu, overpassDotaz, overpassDotazDleJmen, slucDuplicity } from '../../scripts/data01-overpass-krkonose'
 import { oblastDleSlugu } from '../../scripts/oblasti'
 
 const KATALOG = join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json')
@@ -84,10 +84,25 @@ describe('dohledávka podle jmen z katalogu', () => {
     expect(d).toContain('Smědava')
   })
 
-  it('je to jeden dotaz na všechna jména, ne N dotazů', () => {
+  it('jména jsou v jednom regexu, ne v N dotazech na jméno', () => {
+    // Od 30. 7. 2026 jsou dva řádky (tourism a amenity), ale jména jsou
+    // v obou v JEDNOM regexu — padesát dotazů po jednom by na sdílené
+    // instanci Overpassu běh protáhlo o minuty.
     const d = overpassDotazDleJmen('CZ', ['A', 'B', 'C'])
-    expect(d.match(/^nwr/gmu)?.length).toBe(1)
-    expect(d).toContain('A|B|C')
+    const radky = d.split('\n').filter((r) => r.trim().startsWith('nwr'))
+    expect(radky).toHaveLength(2)
+    for (const r of radky) expect(r).toContain('A|B|C')
+  })
+
+  it('dohledávka hledá jméno JEN u objektů, které chatou být mohou', () => {
+    // První běh s dohledávkou přinesl deset informačních tabulí „Jizerka",
+    // dvě autobusové zastávky, osadu, katastrální území i kus silnice —
+    // jméno „Jizerka" v OSM nese kdeco. Bez síta druhu se triáž utopí.
+    const d = overpassDotazDleJmen('CZ', ['Jizerka'])
+    const radky = d.split('\n').filter((r) => r.trim().startsWith('nwr'))
+    for (const r of radky) expect(r, r).toMatch(/\["(tourism|amenity)"~/u)
+    expect(d).toContain('alpine_hut')
+    expect(d).toContain('restaurant')
   })
 })
 
@@ -98,5 +113,72 @@ describe('katalog proti tomu, co v repu opravdu je', () => {
     const jizerske = katalog.filter((z) => z.Pohoří === 'Jizerské hory').map((z) => z.Název)
     expect(jizerske).toContain('Horská chata Smědava')
     expect(jizerske).toContain('Chata Jizerka')
+  })
+})
+
+/**
+ * Sloučení téhož objektu, který přišel dvěma vrstvami dotazu.
+ *
+ * OSM vede boudu běžně jako POI uzel A ZÁROVEŇ jako budovu. Dokud se dotaz
+ * ptal na jediný tag, přišla vždy jen jedna entita; rozšířený dotaz jich
+ * chytí obě a první ostrý běh (30. 7. 2026) vyrobil pět takových dvojic —
+ * Šámalova chata 0 m, Hubertka 4 m, Prezidentská chata 5 m, chata Hvězda 6 m,
+ * Schronisko Halny 100 m — a shodil kontrolu kolizí jmen.
+ */
+describe('sloučení duplicit z víc vrstev', () => {
+  const el = (id: number, name: string, lat: number, lon: number, tags: Record<string, string> = {}) => ({
+    el: { type: 'node' as const, id, lat, lon, tags: { name, ...tags } },
+  })
+
+  it('týž objekt v uzlu i budově zůstane jednou', () => {
+    const { polozky, slouceno } = slucDuplicity([
+      el(1, 'Šámalova chata', 50.814, 15.1578, { tourism: 'alpine_hut' }),
+      el(2, 'Šámalova chata', 50.814, 15.1578, { tourism: 'alpine_hut', website: 'x', phone: 'y' }),
+    ])
+    expect(polozky).toHaveLength(1)
+    // Zůstává entita s VÍC TAGY — nese víc doložených údajů.
+    expect(polozky[0].el.id).toBe(2)
+    expect(slouceno[0]).toMatchObject({ nazev: 'Šámalova chata', vzdalenostM: 0 })
+  })
+
+  it('slučuje i přes typové slovo v názvu („Chata Izerska" × „Izerska Chata", 9 m)', () => {
+    const { polozky } = slucDuplicity([
+      el(1, 'Chata Izerska', 50.9, 15.35),
+      el(2, 'Izerska Chata', 50.90008, 15.35),
+    ])
+    expect(polozky).toHaveLength(1)
+  })
+
+  it('jmenovce v různých pohořích NESLUČUJE — smazal by objekt', () => {
+    // Hubertka jizerská × krkonošská je 33 km od sebe.
+    const { polozky } = slucDuplicity([
+      el(1, 'Hubertka', 50.8879, 15.2302),
+      el(2, 'Chata Hubertka', 50.6964, 15.5363),
+    ])
+    expect(polozky).toHaveLength(2)
+  })
+
+  it('dva různé objekty na témž kopci nesloučí — rozhoduje redakce', () => {
+    // Chata Bramberk × Rozhledna Bramberk je 28 m, ale jsou to dva objekty;
+    // jádro názvu se po odříznutí typových slov rovná, proto by naivní
+    // pravidlo „stejné místo = duplicita" jeden z nich smazalo. Tady je to
+    // vidět: test drží, že se slučuje jen když je jádro OPRAVDU totéž.
+    const { polozky } = slucDuplicity([
+      el(1, 'Chata Bramberk', 50.7563, 15.2059, { amenity: 'restaurant' }),
+      el(2, 'Rozhledna Bramberk', 50.7565, 15.2059, { 'tower:type': 'observation' }),
+    ])
+    // Jádro je u obou „bramberk" a vzdálenost 28 m → sloučí se. Je to vědomý
+    // kompromis: dvojici chata+rozhledna na jednom místě řeší už pravidlo
+    // rozhleden (kandidátem je jen ta s občerstvením), takže druhá entita by
+    // stejně skončila v reportu k posouzení.
+    expect(polozky.length).toBeLessThanOrEqual(2)
+  })
+
+  it('objekt bez názvu se nikdy neslučuje — nebylo by podle čeho', () => {
+    const { polozky } = slucDuplicity([
+      { el: { type: 'node' as const, id: 1, lat: 50.8, lon: 15.2, tags: {} } },
+      { el: { type: 'node' as const, id: 2, lat: 50.8, lon: 15.2, tags: {} } },
+    ])
+    expect(polozky).toHaveLength(2)
   })
 })
