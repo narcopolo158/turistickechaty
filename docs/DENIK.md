@@ -11,6 +11,73 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (noc, dodatek) — známková místa od Michala: Smědava potvrzena, Hubertka rozsouzena, Ještěd je jiné pohoří
+
+**Hotovo:** Michal poslal `tz_300726.txt` — výpis turistických známkových míst
+se stavem k 30. 7. 2026, bez komentáře, jako odpověď na otázku „napadají tě
+další jizerské objekty?". Zpracováno do repa jako doložený externí zdroj
+(`data/externi/znamkova-mista-2026/` s README o původu) a proti korpusu
+projito rozšířeným DATA-22.
+
+**Čím je ten výpis cennější než dosavadní CSV:** dosud jsme měli od vydavatele
+jen **číslo + název** (a ještě filtrovaně). Tenhle nese **prodejní místa**
+s adresami a weby — a prodejní místo bývá i sám objekt. U známky **č. 42** je
+prvním prodejním místem „Horská chata Smědava, Bílý Potok
+(chatasmedava.cz)", což je zároveň doklad obce a oficiálního webu chaty.
+Ostatní prodejní místa (trafika v Josefově Dole, cukrárna v Hejnicích,
+infocentra) jsou podklad pro budoucí „kde známku sehnat" a pro položku
+„Razítko dnes".
+
+**Tři věci, které z toho padly hned:**
+
+1. **Smědava potvrzena** — vydavatel ji vede jako známkové místo v kategorii
+   „Jizerské hory / Horské chaty a boudy". Je to jeden z osmi objektů, na
+   které dopoledne narazil rozšířený dotaz DATA-01, a teď má i obec a web.
+2. **Hubertka rozsouzena.** DATA-22 vedla od 26. 7. otevřenou otázku
+   (poznámka 5 v hlavičce skriptu): známka 1935 „Chata Hubertka, Jizerské
+   hory" se párovala s krkonošským kandidátem u Benecka, a nebylo čím
+   rozhodnout. Prodejní místo známky je „Chata Hubertka, **Bílý Potok 370**,
+   chatahubertka.cz" — tedy jizerská. Náš `jizerske-hory/hubertka`
+   (50.888, 15.230) leží v okně Jizerských hor, `krkonose/chata-hubertka`
+   (50.696, 15.536) v okně Krkonoš; report to nově vypisuje se souřadnicemi
+   obou, ať je rozhodnutí přezkoumatelné. **Známka patří jizerskému objektu.**
+3. **Tři místa nejsou z Jizerek.** Pláně pod Ještědem (39), Ještěd (40)
+   a Rozhledna Rašovka (1296) leží na **Ještědském hřbetu** — všechny mají
+   lng < 15,0, kdežto okno Jizerských hor začíná na 15,05. Není to chyba
+   exportu; vydavatel řadí známky po regionech a Ještěd k libereckému okolí
+   patří. Pro nás je to **otázka rozsahu**, ne úkol — viz níž.
+
+**Kód:** parser výpisu (`nactiZnamkovaMista`) je součástí DATA-22, ne nový
+skript — položka „oficiální seznam vydavatele proti našemu korpusu" je přesně
+tohle, jen bohatší vstup. Osm testů; nejdřív spadl jeden, který jsem si sám
+vynutil: závorka na konci řádku je jednou odkaz („jested.cz"), jednou
+upřesnění místa („(u kostela)", „(parkoviště)"), a první verze parseru z
+poznámky dělala odkaz. Rozlišuje se tečkou a chybějící mezerou.
+
+Cestou opraveny dvě tiché pasti: CLI část DATA-22 běžela **při importu**
+(takže test vypisoval celý report — nově je pod strážcem `process.argv[1]`),
+a hledání YAML kandidáta trefovalo `data/kandidati/fotky/<oblast>/<slug>.yaml`,
+což je návrh FOTKY bez souřadnic — cesta teď musí končit `<oblast>/<slug>`.
+
+**Testy:** 497 (bylo 489).
+
+**Příště:** pořád platí — pustit DATA-01 pro `jizerske-hory` znovu
+s rozšířeným dotazem.
+
+**Otázky pro Michala:**
+1. **Ještědský hřbet — bereme, nebo ne?** Vydavatel tam vede tři známková
+   místa (Chata Pláně, Horský hotel Ještěd, Rozhledna Rašovka) a všechna leží
+   mimo okno Jizerských hor. Jsou to kandidáti buď na samostatnou oblast,
+   nebo na „přesahové oblasti" (DATA-29). Neřešil jsem to sám — je to
+   rozhodnutí o rozsahu průvodce.
+2. Máš přístup k **výpisu známkových míst pro celé pohoří** (ne jen pět
+   míst)? Tenhle export vypadá jako výsek; se plným seznamem by šla křížová
+   kontrola dělat pro Jizerky naráz.
+3. Prodejní místa: mám je začít ukládat k razítkům/známkám jako doložený
+   údaj („kde sehnat"), nebo to nechat, dokud nebude položka „Razítko dnes"?
+
+---
+
 ## 2026-07-30 (noc) — proč jizerský export minul Smědavu, Knajpu i chaty na Jizerce
 
 **Hotovo:** Michal pustil DATA-01 pro Jizerky a napsal, že ho překvapilo, že
