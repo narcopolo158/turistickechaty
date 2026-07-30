@@ -125,3 +125,18 @@ vyrazeno:
       jizerského okna jako u Štěpánky (leží na 50,7399).
     rozhodl: Claude (návrh z 29. 7. 2026) — k potvrzení Michalem
     checked: 2026-07-29
+  - osm: https://www.openstreetmap.org/way/29689152
+    slug: jizerske-hory/chata-studenov
+    duvod: >-
+      Duplicita z PŘEKRYVU OKEN, ne z OSM — týž objekt jako publikovaný profil
+      krkonose/chata-studenov: shodné GPS na sedm desetinných míst
+      (50.7483559, 15.4474469) i shodný název. Chata stojí v Rokytnici nad
+      Jizerou, tedy v Krkonoších; jizerské okno ji chytilo proto, že jeho
+      východní hrana (lng 15.45) vede vědomě přes pomezí Jizerka–Harrachov
+      a chata leží 2,5 tisíciny stupně pod ní. Okno se kvůli tomu NEOŘEZÁVÁ
+      (rozhodnutí u založení oblasti 28. 7. 2026: „duplicity vyřeší kandidátní
+      triáž, ne ořez okna") — objekt patří do Krkonoš a v Jizerkách se
+      nezakládá. Bez tohohle záznamu ho každý další běh DATA-01 vrátí
+      a shodí kontrolu kolizí jmen.
+    rozhodl: session 30. 7. 2026 (triáž po prvním jizerském běhu; padající CI #245/#246)
+    checked: 2026-07-30
