@@ -80,23 +80,6 @@ jmenovci:
       do té doby je rozlišení interní (R5).
     rozhodl: Claude (návrh z 30. 7. 2026 po druhém jizerském běhu) — čeká na potvrzení Michalem
     checked: 2026-07-30
-  - jadro: bramberk
-    objekty:
-      - jizerske-hory/chata-bramberk
-      - jizerske-hory/rozhledna-bramberk
-    duvod: >-
-      NENÍ jmenovec ani duplicita, ale DVOJICE NA JEDNOM MÍSTĚ: rozhledna
-      Bramberk (50,75625 / 15,20591) a chata u její paty (50,75620 /
-      15,20551) — 28 m od sebe. Přesně ten případ, na který myslí pravidlo
-      rozhleden z 28. 7. 2026: kandidátem má být objekt s doloženým
-      občerstvením, a když je tím občerstvením chata, která už kandidátem je,
-      rozhledna se zvlášť nezakládá. Tady se obě entity dostaly do korpusu
-      každá jinou vrstvou rozšířeného dotazu (chata jako `amenity=restaurant`,
-      rozhledna jako `tower:type=observation`). Sloučit je automaticky nelze —
-      jsou to dva objekty, a jestli mají mít jeden profil, nebo dva, je
-      redakční rozhodnutí stejného druhu jako u Žalého. Čeká na triáž DATA-03.
-    rozhodl: Claude (návrh z 30. 7. 2026) — k posouzení Michalem při triáži
-    checked: 2026-07-30
   - jadro: jizerka
     objekty:
       - jizerske-hory/chata-jizerka

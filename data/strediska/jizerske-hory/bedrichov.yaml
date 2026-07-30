@@ -1,0 +1,23 @@
+# Bedřichov — středisko / východiště do Jizerských hor.
+nazev: Bedřichov
+slug: bedrichov
+zeme: cz
+oblast: jizerske-hory
+vychoziBody:
+- nazev: Bedřichov, Maliník
+  typ: autobusová zastávka + parkoviště
+- nazev: Bedřichov, stadion
+  typ: hlavní turistická autobusová zastávka + parkoviště
+overeniLokace:
+  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21);
+    zdrojová URL katalogu: https://www.jizerky.cz/doprava, https://www.prezidentska.cz/, https://www.samalova-chata.cz/'
+  verified: false
+  checked: '2026-07-30'
+interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
+  pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
+  bodů vede Bedřichov jako nejbližší obec/uzel pro Hřebínek, Prezidentská chata, Šámalova chata.
+  SOUŘADNICE ZÁMĚRNĚ CHYBÍ: krkonošská střediska je mají z bodu obce v katalogu výchozích bodů
+  DATA-06, a ten pro Jizerské hory ještě neběžel (Overpass ze sandboxu nedosáhneme). Nevymýšlejí
+  se — doplní je běh DATA-06 --oblast jizerske-hory, a teprve pak se vykreslí mapa zasazení a
+  dohledá fotka střediska (DATA-33). Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex
+  a dopravu.'

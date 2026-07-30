@@ -94,7 +94,10 @@ describe('Stránka pohoří (F1d)', () => {
     expect(screen.getByRole('heading', { level: 1 }).textContent).toBe('Krkonoše')
     expect(screen.getByText(/Nejvyšší pohoří Česka/)).toBeTruthy()
     expect(screen.getByText(/kurátorský text se zdroji/)).toBeTruthy()
-    expect(screen.getByText('1 603 m')).toBeTruthy() // nejvyšší hora z dat oblasti
+    // Kóta se od 30. 7. 2026 objevuje dvakrát: ve stat-tile a jako popisek
+    // vrcholu v panoramatu hřebene (to se nově kreslí i bez tří chat, když je
+    // doložený výškopis). Hledá se proto v dlaždicích, ne kdekoli na stránce.
+    expect(document.querySelector('.pohori-tiles')!.textContent).toContain('1 603 m')
     expect(screen.getByText('Sněžka — nejvyšší hora')).toBeTruthy()
     expect(screen.getByText('4')).toBeTruthy() // chat v průvodci z indexu
     const rozpeti = document.querySelector('.pohori-tiles')!

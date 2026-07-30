@@ -1,0 +1,22 @@
+# Lázně Libverda — středisko / východiště do Jizerských hor.
+nazev: Lázně Libverda
+slug: lazne-libverda
+zeme: cz
+oblast: jizerske-hory
+vychoziBody:
+- nazev: Hejnice, železniční stanice
+  typ: vlak + turistické město
+- nazev: Lázně Libverda, centrum / autobusová zastávka
+  typ: lázeňské místo + autobus + parkoviště
+overeniLokace:
+  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21);
+    zdrojová URL katalogu: https://www.jizerky.cz/doprava'
+  verified: false
+  checked: '2026-07-30'
+interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
+  pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
+  bodů vede Lázně Libverda jako nejbližší obec/uzel pro Hubertka. SOUŘADNICE ZÁMĚRNĚ CHYBÍ: krkonošská
+  střediska je mají z bodu obce v katalogu výchozích bodů DATA-06, a ten pro Jizerské hory ještě
+  neběžel (Overpass ze sandboxu nedosáhneme). Nevymýšlejí se — doplní je běh DATA-06 --oblast
+  jizerske-hory, a teprve pak se vykreslí mapa zasazení a dohledá fotka střediska (DATA-33). Doplnit
+  z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu.'

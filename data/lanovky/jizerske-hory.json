@@ -1,0 +1,72 @@
+{
+  "oblast": "jizerske-hory",
+  "zdroj": "OpenStreetMap (tag aerialway) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); přebráno z exportu pipeline DATA-28",
+  "stavOsm": "2026-06-12",
+  "zdrojVysek": "Mapy.com Elevation API (výškový model)",
+  "poznamka": "Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). Vleky a dětské pásy (53 v témž exportu) přehled nevede. Převýšení je z výškového modelu, ne z měření — zaokrouhleno na desítky metrů; délka je půdorysná z geometrie OSM. Vzdálenost k chatám je vzdušná čára.",
+  "vygenerovano": "scripts/data32-lanovky.ts",
+  "pocet": 3,
+  "vleku": 53,
+  "lanovky": [
+    {
+      "id": "stog-izerski",
+      "nazev": "Stóg Izerski",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 2145,
+      "prevyseniM": 440,
+      "dolni": {
+        "lat": 50.91001,
+        "lng": 15.31961,
+        "vyska": 615
+      },
+      "horni": {
+        "lat": 50.89173,
+        "lng": 15.30986,
+        "vyska": 1053
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "spicak-1-lanova-draha",
+      "nazev": "Špičák 1 - lanová dráha",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1150,
+      "prevyseniM": 260,
+      "dolni": {
+        "lat": 50.75955,
+        "lng": 15.27224,
+        "vyska": 540
+      },
+      "horni": {
+        "lat": 50.75136,
+        "lng": 15.28221,
+        "vyska": 797
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "spicak-ii-lanova-draha",
+      "nazev": "Špičák II - lanová dráha",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 896,
+      "prevyseniM": 210,
+      "dolni": {
+        "lat": 50.7595,
+        "lng": 15.28157,
+        "vyska": 592
+      },
+      "horni": {
+        "lat": 50.75148,
+        "lng": 15.28286,
+        "vyska": 797
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    }
+  ]
+}

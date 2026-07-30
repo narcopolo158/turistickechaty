@@ -11,6 +11,84 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (odpoledne) — Jizerky dotaženy: lanovky, střediska, panorama a cíle; Bramberk rozhodnut; Český ráj založen
+
+**Hotovo:** Michal: *„ohledně oblastí dám na tebe, bramberk nechám na tobě,
+jdu pustit data-01 pro ještědský hřbet, ty zatím vyhledej lanovky a střediska
+a dotáhni pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše."*
+
+**Lanovky Jizerských hor — a zjištění, že na ně nebyl potřeba další běh.**
+DATA-32 nečte Overpass, ale **3D export z DATA-28**, a ten pro Jizerky už
+v repu byl. Přehled tedy vznikl offline: ze **56 aerialway objektů** oblasti
+vyvezou pěšího **tři** (Stóg Izerski — kabinková, 2 145 m / +440 m; Špičák I
+a II — sedačkové), zbylých 53 jsou vleky a dětské pásy, které do přehledu
+nepatří. Mini-stránky drah se tím zaplnily samy.
+
+**Střediska (6) z doloženého pramene, bez vymyšlených souřadnic.** Vzaty
+z katalogu výchozích bodů v repu: **Bedřichov, Bílý Potok, Hejnice, Janov nad
+Nisou, Kořenov, Lázně Libverda** — u každého ty výchozí body, které katalog
+u objektů v obci uvádí (Bedřichov stadion i Maliník, Jizerka–Mořina, Smědava,
+Bílý Potok pod Smrkem…). **GPS ZÁMĚRNĚ CHYBÍ:** krkonošská střediska ji mají
+z bodu obce v katalogu DATA-06 a ten pro Jizerky neběžel; domýšlet těžiště
+obce z polohy chat by byl odhad vydávaný za data. Proto zatím není mapa
+zasazení ani fotka střediska (DATA-33 potřebuje GPS) — a poznámka u každého
+střediska říká, co přesně na to čeká.
+
+**Top cíle (4) z výškopisu, ne z hlavy:** Smrk 1 124 m, Smrek 1 123 m (polský
+soused, o metr nižší v témž pramenu), Jizera 1 122 m a Stóg Izerski 1 108 m
+s jedinou kabinovou lanovkou oblasti. Kóty a polohy jsou z OSM přes DATA-28;
+vazba `nejblizChataSlug` zůstala **prázdná**, protože oblast nemá zveřejněné
+profily a odkaz by vedl na neexistující stránku.
+
+**Panorama hřebene se nově kreslí i bez chat — a to je oprava, ne ozdoba.**
+Podmínka žádala tři chaty s doloženou výškou, takže u Jizerek se nekreslilo
+nic, přestože výškopis i šest vrcholů byly v repu od 12. 6. Sekce přitom měla
+nadpis: čtenář viděl „Řez hřebenem" a pod ním prázdno. Terén oblasti nezávisí
+na tom, kolik profilů redakce zveřejnila. Kreslí se tedy, když je čím —
+vrstvy výškopisu a aspoň tři pojmenované vrcholy —, chaty jsou popisky navíc
+a **popiska pod obrázkem to říká**: „Chaty v panoramatu zatím nejsou — oblast
+nemá zveřejněné profily, a domýšlet jejich polohu do obrázku by tvrdilo víc,
+než víme."
+
+**Bramberk (Michal to nechal na mně):** rozhledna a chata u její paty jsou
+28 m od sebe. Rozhodl jsem podle **pravidla, které projekt už má** (28. 7.:
+rozhledna je kandidátem jen s doloženým občerstvením, a když je tím
+občerstvením chata, která už kandidátem je, rozhledna se zvlášť nezakládá):
+zůstává **jeden objekt — chata**, věž je zapsaná v jejích interních
+poznámkách i s výškou z OSM. Vedeno stejně jako Žalý. Rozdělení na dva
+profily je připravené, kdyby se uplatnilo rozhodnutí o Sněžce.
+
+**Český ráj založen jako `turisticka-oblast`** (oblasti Michal nechal na mně,
+návrh oddíl 5). Pohoří to není a slepit Kozákov s Prachovem geomorfologicky
+nelze — Kozákovský hřbet patří k Ještědsko-kozákovskému hřbetu, Prachovské
+skály k Jičínské pahorkatině. Turisticky ale patří k sobě a čtenář je tak
+hledá; charakteristika sama říká, že to pohoří není, a **nejvyšší hora se
+neuvádí** (u turistické oblasti by to nic neříkalo). Oba kandidáti už v ní
+byli vedení, takže se nic nepřesouvalo.
+
+**Kde Jizerky pořád nejsou na úrovni Krkonoš:** chybí sekce Chaty, Žebříčky,
+Paměť hor a Sbírka — všechny čtyři stojí na **zveřejněných profilech**, a těch
+je nula ze 76 kandidátů. To není práce na dopsání, to je triáž (DATA-03)
+a u konvence B i Michalovo ověřování. Chybí taky hero fotka.
+
+**Testy:** 534 (bylo 525). Jeden starý padl a byl to týž druh nálezu jako
+u footeru: test hledal kótu „1 603 m" kdekoli na stránce a od chvíle, kdy
+panorama kreslí popisky vrcholů i bez chat, je na stránce dvakrát. Zúžen na
+dlaždice.
+
+**Příště:** triáž jizerských kandidátů po dávkách (DATA-03), začnu osmičkou,
+kterou Michal jmenoval. A až doběhne jeho DATA-01 pro Ještědský hřbet, totéž
+tam.
+
+**Otázky pro Michala:**
+1. **DATA-06 pro `jizerske-hory`** by dal střediskům GPS (a tím mapy i fotky
+   z DATA-33) — pustíš? Je to týž workflow jako u Krkonoš, jen s jinou oblastí.
+2. Hero fotka Jizerek: mediabanka CzechTourism je na to ověřená a licence
+   sedí. Vybereš snímek, nebo mám navrhnout kritéria a ty jen kliknout?
+3. Trvá: prodejní místa známek jako doložený údaj ano/ne.
+
+---
+
 ## 2026-07-30 (dopoledne, dodatek 2) — druhý jizerský běh: našel všechno, a rovnou ukázal dvě chyby v mém dotazu
 
 **Hotovo:** Michal pustil DATA-01 pro Jizerky znovu, s rozšířeným dotazem.

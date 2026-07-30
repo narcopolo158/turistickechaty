@@ -10,7 +10,7 @@
  * krylo hřbet (a ne o kus vedle), aby si oblasti nekradly objekty a aby
  * dokumentace oblasti nesla doklad u čísla, které tvrdí superlativ.
  */
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 
 import { describe, expect, it } from 'vitest'
@@ -131,5 +131,93 @@ describe('zaniklé chaty patří své oblasti', () => {
   it('celý Atlas přes oblasti obsahuje aspoň to, co Krkonoše', () => {
     // `/zanikle` a homepage ukazují Atlas vcelku — tam se oblasti sčítají.
     expect(zanikleChatyVse().length).toBeGreaterThanOrEqual(zanikleChaty('krkonose').length)
+  })
+})
+
+/**
+ * Dotažení Jizerských hor na úroveň Krkonoš (zadání Michala 30. 7. 2026:
+ * „vyhledej lanovky a střediska a dotáhni pohoří Jizerské hory na stejnou
+ * úroveň jako mají teď Krkonoše").
+ *
+ * Testy hlídají, co se dá pokazit tiše: že střediska nesou doložení a NEMAJÍ
+ * vymyšlené souřadnice, a že top cíle mají u každé kóty pramen.
+ */
+describe('Jizerské hory — střediska a cíle', () => {
+  const strediska = readdirSync(join(process.cwd(), 'data/strediska/jizerske-hory'))
+    .filter((f) => f.endsWith('.yaml'))
+    .map((f) => parse(readFileSync(join(process.cwd(), 'data/strediska/jizerske-hory', f), 'utf8')) as Record<string, unknown>)
+
+  it('střediska existují a nesou oblast i výchozí body', () => {
+    expect(strediska.length).toBeGreaterThanOrEqual(6)
+    for (const s of strediska) {
+      expect(s.oblast, String(s.slug)).toBe('jizerske-hory')
+      expect((s.vychoziBody as unknown[]).length, String(s.slug)).toBeGreaterThan(0)
+    }
+  })
+
+  it('GPS se NEVYMÝŠLÍ — chybí, dokud ji nedoloží běh DATA-06', () => {
+    // Krkonošská střediska mají bod obce z katalogu výchozích bodů (DATA-06);
+    // pro Jizerky ten běh ještě nebyl, takže lat/lng chybí a poznámka říká proč.
+    for (const s of strediska) {
+      expect(s.lat, String(s.slug)).toBeUndefined()
+      expect(String(s.interniPoznamky)).toMatch(/SOUŘADNICE ZÁMĚRNĚ CHYBÍ/u)
+    }
+  })
+
+  it('každé středisko má doložený zdroj svého zařazení', () => {
+    for (const s of strediska) {
+      const ov = s.overeniLokace as { source: string; verified: boolean }
+      expect(ov.source, String(s.slug)).toMatch(/katalog výchozích bodů/iu)
+      expect(ov.verified, 'konvence B — doložené ≠ ověřené').toBe(false)
+    }
+  })
+
+  it('top cíle mají u každé kóty pramen, a vazba na chatu chybí (nejsou profily)', () => {
+    const oblast = parse(readFileSync(join(process.cwd(), 'data/oblasti/jizerske-hory.yaml'), 'utf8')) as {
+      topCile: { nazev: string; source?: string; nejblizChataSlug?: string }[]
+    }
+    expect(oblast.topCile.length).toBeGreaterThanOrEqual(3)
+    for (const c of oblast.topCile) {
+      expect(c.source, c.nazev).toMatch(/OpenStreetMap/u)
+      expect(c.nejblizChataSlug, 'odkaz na kandidáta by vedl na neexistující stránku').toBeUndefined()
+    }
+  })
+
+  it('lanovky oblasti jsou vygenerované a vedou jen dráhy pro pěší', () => {
+    const l = JSON.parse(readFileSync(join(process.cwd(), 'data/lanovky/jizerske-hory.json'), 'utf8')) as {
+      lanovky: { nazev: string | null; typ: string }[]
+      vleku?: number
+    }
+    expect(l.lanovky.length).toBeGreaterThan(0)
+    // Vleky a dětské pásy do přehledu nepatří — pěšího nevyvezou.
+    for (const d of l.lanovky) expect(['chair_lift', 'gondola', 'cable_car', 'mixed_lift']).toContain(d.typ)
+  })
+})
+
+/**
+ * Český ráj — turistická oblast, ne pohoří (návrh oblastí, oddíl 5;
+ * rozhodnutí o oblastech přenechal Michal 30. 7. 2026).
+ */
+describe('Český ráj jako turistická oblast', () => {
+  const raj = parse(readFileSync(join(process.cwd(), 'data/oblasti/cesky-raj.yaml'), 'utf8')) as Record<string, unknown>
+
+  it('má úroveň `turisticka-oblast`, ne `pohori`', () => {
+    expect(raj.typ).toBe('turisticka-oblast')
+  })
+
+  it('nejvyšší horu NEUVÁDÍ — u turistické oblasti by to nic neříkalo', () => {
+    expect(raj.nejvyssiHora).toBeUndefined()
+  })
+
+  it('charakteristika sama říká, že to pohoří není', () => {
+    expect(String(raj.charakteristika)).toMatch(/[Nn]ení to pohoří/u)
+  })
+
+  it('oba kandidáti jsou vedení v téhle oblasti', () => {
+    const kandidati = readdirSync(join(process.cwd(), 'data/kandidati/cesky-raj'))
+      .filter((f) => f.endsWith('.yaml'))
+      .map((f) => parse(readFileSync(join(process.cwd(), 'data/kandidati/cesky-raj', f), 'utf8')) as { oblast: string })
+    expect(kandidati.length).toBe(2)
+    for (const k of kandidati) expect(k.oblast).toBe('cesky-raj')
   })
 })

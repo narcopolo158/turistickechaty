@@ -200,3 +200,16 @@ vyrazeno:
       (`slucDuplicity`), tenhle záznam uklízí, co vyrobil běh před opravou.
     rozhodl: session 30. 7. 2026 (triáž po druhém jizerském běhu)
     checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/way/173701702
+    slug: jizerske-hory/rozhledna-bramberk
+    duvod: >-
+      Rozhledna 28 m od kandidáta jizerske-hory/chata-bramberk, tedy TÝŽ objekt
+      v tom smyslu, jak ho vede průvodce: pravidlo z 28. 7. 2026 říká, že
+      rozhledna je kandidátem jen s doloženým občerstvením, a když je tím
+      občerstvením chata, která už kandidátem je, rozhledna se zvlášť
+      nezakládá. Věž je zapsaná v `interniPoznamky` chaty (i s výškou z OSM),
+      takže se nic neztratilo a případné rozdělení na dva profily je
+      připravené. Rozhodnutí přenechal Michal 30. 7. 2026 („bramberk nechám
+      na tobě"); vedeno stejně jako Žalý.
+    rozhodl: Claude (30. 7. 2026, pravidlo rozhleden z 28. 7. 2026)
+    checked: 2026-07-30

@@ -92,7 +92,21 @@ export function RezHrebenem({
   zdrojVrcholu,
   zdrojVyskopisu,
 }: Props) {
-  if (chaty.length < 3) return null
+  /**
+   * Panorama je terén a vrcholy; chaty jsou popisky NAVÍC.
+   *
+   * Do 30. 7. 2026 se komponenta bez tří chat nekreslila vůbec — a u nové
+   * oblasti to znamenalo prázdnou sekci s nadpisem: Jizerské hory měly
+   * výškopis i šest vrcholů z DATA-28, ale ani jeden zveřejněný profil.
+   * Nakreslit hory a přiznat, že chaty ještě nemáme, je poctivější než
+   * nekreslit nic a tvrdit nadpisem, že tam něco je.
+   *
+   * Kreslí se tedy, když je čím: buď tři chaty (jako dřív), nebo výškopisné
+   * vrstvy a k nim bbox, podle kterého se určí vodorovná osa. Bez bboxu by
+   * osa musela vyjít z chat — a těch může být nula.
+   */
+  const maTeren = vrstvy.length > 0 && bbox != null
+  if (chaty.length < 3 && !maTeren) return null
 
   const lngMin = bbox?.lngMin ?? Math.min(...chaty.map((c) => c.lng))
   const lngMax = bbox?.lngMax ?? Math.max(...chaty.map((c) => c.lng))
@@ -188,8 +202,18 @@ export function RezHrebenem({
         <span aria-hidden="true">†</span> pohled na pohoří od jihu:{' '}
         <b>vodorovně zeměpisná délka, svisle nadmořská výška</b> — obojí z dat, ne z odhadu.
         Terén je <b>výškový model</b> (tři pásy: jižní podhůří, hřeben, severní strana), ne obrys
-        změřený v terénu. Vykresleno {chaty.length} chat s doloženou výškou i polohou; popisku
-        napevno má pět nejvyšších, ostatní se ukážou po najetí nebo tabulátorem.
+        změřený v terénu.{' '}
+        {chaty.length > 0 ? (
+          <>
+            Vykresleno {chaty.length} chat s doloženou výškou i polohou; popisku napevno má pět
+            nejvyšších, ostatní se ukážou po najetí nebo tabulátorem.
+          </>
+        ) : (
+          <>
+            Chaty v panoramatu <b>zatím nejsou</b> — oblast nemá zveřejněné profily, a domýšlet
+            jejich polohu do obrázku by tvrdilo víc, než víme. Popisky vrcholů jsou z dat.
+          </>
+        )}
         {zdrojVyskopisu ? ` Výškopis: ${zdrojVyskopisu}.` : ''}
         {zdrojVrcholu ? ` Vrcholy: ${zdrojVrcholu}.` : ''}
       </p>

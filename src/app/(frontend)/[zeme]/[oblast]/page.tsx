@@ -118,6 +118,18 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
     .filter((ch) => ch.vyska != null && ch.lng != null && ch.url)
     .map((ch) => ({ slug: ch.slug, nazev: ch.nazev, vyska: ch.vyska!, lng: ch.lng!, url: ch.url! }))
 
+  /**
+   * Panorama hřebene se kreslí, když je čím ho nakreslit — tedy když oblast
+   * má výškopisné vrstvy z DATA-28 a aspoň tři pojmenované vrcholy. Chaty
+   * jsou popisky NAVÍC, ne podmínka.
+   *
+   * Do 30. 7. 2026 podmínka žádala tři chaty s výškou, což u nové oblasti
+   * znamenalo, že se panorama nekreslilo, i když výškopis i vrcholy dávno
+   * byly (Jizerky: 6 vrcholů, vrstvy z 12. 6. 2026). Terén oblasti přitom
+   * nezávisí na tom, kolik profilů už redakce zveřejnila.
+   */
+  const maRez = (vrcholy?.vrstvy?.length ?? 0) > 0 && (vrcholy?.vrcholy?.length ?? 0) >= 3
+
   // Cíl, který je na fotce — jen když to data výslovně říkají A je to ověřené.
   const cilVeFotce =
     fotoPas?.overeni?.verified && fotoPas.cilNazev
@@ -283,7 +295,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       <nav className="pohori-nav" aria-label="Sekce stránky">
         <span className="pohori-nav-popisek">Na stránce</span>
         {ma3d && <a href="#s01">Mapa</a>}
-        {bodyRezu.length >= 3 && <a href="#srez">Řez hřebenem</a>}
+        {maRez && <a href="#srez">Řez hřebenem</a>}
         {vOblasti.length > 0 && <a href="#s02">Chaty</a>}
         {vOblasti.length > 0 && <a href="#s03">Žebříčky</a>}
         {strediska.length > 0 && <a href="#s04">Střediska</a>}
@@ -301,7 +313,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
         </section>
       )}
 
-      {bodyRezu.length >= 3 && (
+      {maRez && (
         <section className="sec" id="srez" aria-label="Řez hřebenem">
           <SectionBar num="◭" title="Řez hřebenem" variant="night" />
           <RezHrebenem

@@ -36,9 +36,46 @@ nejvyssiHora:
     nejvyšší hora Jizerských hor", jizerky.eu „Smrk – 1124 m n.m.").
     Ověření očima/ČÚZK: DATA-04.
 
-# Top cíle se doplní, až budou vazby na doložené profily (po prvním exportu
-# kandidátů a povyšování) — prázdné pole je poctivější než odhad.
-topCile: []
+# Top cíle doplněny 30. 7. 2026 z DOLOŽENÉHO výškopisu a OSM (pipeline
+# DATA-28 → data/vrcholy/jizerske-hory.json, stav dat 12. 6. 2026). Bere se
+# jen to, co pramen opravdu nese: jméno a kóta. Věta u cíle je redakční popis
+# polohy, ne převzaté tvrzení — proto u ní stojí, odkud je poloha.
+# Vazba `nejblizChataSlug` zůstává PRÁZDNÁ, dokud oblast nemá zveřejněné
+# profily: odkaz na kandidáta by vedl na stránku, která neexistuje.
+topCile:
+  - nazev: Smrk
+    veta: >-
+      Nejvyšší hora české strany Jizerských hor; na vrcholu stojí rozhledna
+      a od ní vede hřebenová cesta k polské hranici.
+    source: >-
+      Kóta 1 124 m a poloha (50,8891 / 15,2731) z OpenStreetMap
+      (natural=peak se jménem a výškou, ODbL), vytaženo pipeline DATA-28 do
+      data/vrcholy/jizerske-hory.json — stav OSM dat 2026-06-12. Rozhledna
+      na vrcholu je redakční poznámka k poloze, ne údaj z pramene; ověřit
+      v terénu (DATA-04).
+  - nazev: Jizera
+    veta: >-
+      Skalnatý dvojvrchol nad rašeliništi uprostřed hor, přístupný jen
+      z české strany.
+    source: >-
+      Kóta 1 122 m a poloha (50,8340 / 15,2595) z OpenStreetMap přes
+      DATA-28 (data/vrcholy/jizerske-hory.json, stav 2026-06-12).
+  - nazev: Stóg Izerski
+    veta: >-
+      Polský vrchol nad Świeradowem-Zdrojem, kam vede jediná kabinová
+      lanovka oblasti.
+    source: >-
+      Kóta 1 108 m a poloha (50,8910 / 15,3038) z OpenStreetMap přes
+      DATA-28; lanovka z přehledu drah oblasti
+      (data/lanovky/jizerske-hory.json, stav OSM dat 2026-06-12).
+  - nazev: Smrek
+    veta: >-
+      Polský soused Smrku — dva vrcholy téhož jména po obou stranách
+      hranice, jen o metr různě vysoké.
+    source: >-
+      Kóta 1 123 m a poloha (50,8897 / 15,2797) z OpenStreetMap přes
+      DATA-28 (stav 2026-06-12); rozdíl proti českému Smrku (1 124 m) je
+      rozdíl obou kót v témž pramenu, ne tvrzení o měření.
 
 interniPoznamky: >-
   Založeno 28. 7. 2026 jako druhá oblast. Vyhledávací okno pro DATA-01/DATA-28

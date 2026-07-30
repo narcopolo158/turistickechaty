@@ -1,0 +1,26 @@
+# Oblast Český ráj — turistická oblast, NE pohoří (rozhodnutí o oblastech
+# přenechal Michal 30. 7. 2026; návrh docs/OBLASTI-NAVRH.md, oddíl 5).
+nazev: Český ráj
+slug: cesky-raj
+typ: turisticka-oblast
+zeme: cz
+charakteristika: 'Pískovcová skalní města a vyhlídkové kopce mezi Turnovem a Jičínem. Není to
+  pohoří a průvodce to nepředstírá — přesto tu turistické chaty stojí: v Prachovských skalách
+  a na Kozákově, tedy na místech, kam se chodí za výhledem a kde je kde se najíst.'
+overeniCharakteristika:
+  source: 'Poloha a povaha oblasti: vlastní kandidáti v repu (Riegrova chata na Kozákově, Turistická
+    chata Prachov — OSM, ODbL) a katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026).
+    Geomorfologicky nejde o jednu jednotku: Kozákovský hřbet patří k Ještědsko-kozákovskému hřbetu,
+    Prachovské skály k Jičínské pahorkatině — proto je to turistická oblast, ne pohoří. Popis
+    je redakční shrnutí, ne převzaté tvrzení.'
+  verified: false
+  checked: '2026-07-30'
+topCile: []
+interniPoznamky: 'Založeno 30. 7. 2026 podle návrhu docs/OBLASTI-NAVRH.md, oddílu 5; rozhodnutí
+  o oblastech přenechal Michal („ohledně oblastí dám na tebe"), rozsah „turistické chaty" potvrdil
+  týž den. ÚROVEŇ JE `turisticka-oblast` schválně: Český ráj pohoří není a slepit Kozákov s Prachovem
+  geomorfologicky nelze (dvě různé jednotky). Turisticky ale patří k sobě a takhle je čtenář hledá.
+  Nejvyšší hora se ZÁMĚRNĚ neuvádí — u turistické oblasti to není údaj, který by o ní něco říkal,
+  a Kozákov (744 m) je nejvyšší bod Kozákovského hřbetu, ne Českého ráje. Vyhledávací okno pro
+  pipeline zatím NENÍ: obě chaty už kandidáty jsou (z krkonošských a jizerských běhů), takže DATA-01
+  tu nic nepotřebuje; okno se doplní, až bude důvod oblast prohledávat celou.'
