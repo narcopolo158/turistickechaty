@@ -32,7 +32,7 @@ export default async function OgImage(props: { params: Promise<{ chata: string }
       ]
         .filter(Boolean)
         .join(' · ')
-    : 'průvodce všemi horskými chatami'
+    : 'průvodce turistickými chatami'
 
   const [sg, inter] = await Promise.all([
     font('space-grotesk-700.ttf'),

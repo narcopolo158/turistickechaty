@@ -439,9 +439,9 @@ export interface Oblasti {
    */
   slug: string;
   /**
-   * Země je samostatné pole — hierarchii tvoří pohoří a podoblasti.
+   * Země je samostatné pole — hierarchii tvoří pohoří a podoblasti. „Turistická oblast" je pro celky, které pohoří nejsou (skalní města).
    */
-  typ: 'pohori' | 'podoblast';
+  typ: 'pohori' | 'podoblast' | 'turisticka-oblast';
   /**
    * U podoblasti její pohoří (např. Východní Krkonoše → Krkonoše).
    */

@@ -11,6 +11,60 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-30 (dopoledne, dodatek) — rozsah průvodce: „turistické chaty", řečeno nahlas
+
+**Hotovo:** Michal rozhodl otázku, kterou otevřel návrh oblastí (oddíl 6):
+*„řekněme nahlas turistické chaty."* Do dneška se web představoval jako
+průvodce **horskými** chatami, ale do korpusu už mířily objekty, které horské
+chaty nejsou — turistická chata v Prachovských skalách a Riegrova chata na
+Kozákově. Buď je vyřadit, nebo rozsah rozšířit a nepředstírat, že jsou to
+hory. Michal zvolil druhé, takže:
+
+**Slib pokrytí se změnil na osmi místech, kde web říká, CO vede** — titulek
+a popis v `layout`, brand řádek ve footeru, hlavička homepage, popis katalogu,
+metadata stránky oblasti, OG obrázek profilu, `/prispet` a razítkovník.
+Věty o Krkonoších, které mluví o horských boudách, zůstaly: tam to hory
+opravdu jsou a přepisovat je by bylo horší než nechat.
+
+**„Nahlas" ale neznamená přepsat slovo — znamená to říct to čtenáři.** Proto
+je na stránce oblasti **nová první otázka ve FAQ: „Jaké chaty průvodce
+vede?"** s odpovědí, která jmenuje i to, co hory nejsou (chaty ve skalních
+městech, rozhledny s občerstvením, útulny), přizná úroveň oblasti („X vedeme
+jako pohoří" × „X není pohoří, je to turistická oblast") a řekne hranici:
+**rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby ani
+nadmořská výška.** Věta o typu stavby navazuje na rozšířený klíč z 26. 7.
+Odpověď je i v JSON-LD FAQPage, takže na ni odpoví i vyhledávač.
+
+**Kolekce Oblasti umí novou úroveň `turisticka-oblast`** („není pohoří") —
+Český ráj pohoří opravdu není. Pohoří i podoblast zůstávají; hodnota je
+přidaná, ne náhrada.
+
+**Zapsáno tam, kde se rozhoduje:** do `CLAUDE.md` (rozsah + pravidlo, že se
+ve veřejné próze píše „turistické chaty") a do `docs/plan.md` — a to
+**dopsáním k původní definici, ne přepsáním**, aby bylo vidět, co platilo
+předtím a čím se to změnilo. Plán jsem jinak nesahal.
+
+**Osm nových testů** hlídá slib z obou stran: že nový je vidět a že se starý
+nevrátil zadními dveřmi (plus kontrola samotné kontroly). Jeden starý test
+padl a bylo to poučné: `site-footer` držel brand řádek „z prototypu beze
+změny" — což je správná věc, dokud rozhodnutí neřekne jinak. Přepsal jsem ho
+tak, aby držel **rozhodnutí**, ne prototyp, a napsal do něj proč.
+
+**Testy:** 519 (bylo 511), `npm run kontrola` zelená.
+
+**Příště:** zbytek návrhu oblastí čeká na Michalovo slovo — Ještědský hřbet
+samostatně (dnes nula profilů, tedy levné na změnu) a Kozákov s Prachovem do
+Českého ráje jako `turisticka-oblast`. Pak dva běhy DATA-01.
+
+**Otázky pro Michala:**
+1. Rozsah je hotový. **Potvrdíš i oddíl 5 návrhu** (tři objekty a tři
+   oblasti), nebo to chceš jinak? Až to potvrdíš, založím Český ráj a přesunu
+   do něj Kozákov s Prachovem — dnes jsou to kandidáti bez oblasti.
+2. Trvá: dva běhy DATA-01, prodejní místa známek ano/ne, plný výpis
+   známkových míst.
+
+---
+
 ## 2026-07-30 (dopoledne) — CI padala na jmenovci, a otázka oblastí sepsaná k rozhodnutí
 
 **Hotovo — nejdřív ta padající CI.** Michal poslal screenshot z Actions: CI

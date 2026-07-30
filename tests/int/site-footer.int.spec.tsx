@@ -14,11 +14,17 @@ import SiteFooter from '../../src/components/SiteFooter'
 afterEach(cleanup)
 
 describe('SiteFooter', () => {
-  it('drží brand řádek z prototypu beze změny', () => {
+  /**
+   * Brand řádek byl do 30. 7. 2026 doslovně z prototypu („průvodce všemi
+   * horskými chatami"). Rozhodnutí Michala téhož dne („řekněme nahlas
+   * turistické chaty") slib pokrytí změnilo — test proto drží ROZHODNUTÍ,
+   * ne prototyp; rozsah hlídá `rozsah-turisticke-chaty`.
+   */
+  it('drží brand řádek — slib pokrytí dle rozhodnutí z 30. 7. 2026', () => {
     render(<SiteFooter />)
     expect(screen.getByText('Turistické chaty')).toBeTruthy()
     expect(
-      screen.getByText('průvodce všemi horskými chatami · Krkonoše → Česko → Slovensko → Alpy'),
+      screen.getByText('průvodce turistickými chatami · Krkonoše → Česko → Slovensko → Alpy'),
     ).toBeTruthy()
     expect(screen.getByText('MAPY.COM · KČT · SIL OFL FONTY')).toBeTruthy()
   })

@@ -62,8 +62,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const oblast = await getOblastBySlug(oblastSlug)
   if (!oblast) return {}
   return {
-    title: `${oblast.nazev} — horské chaty | turistickechaty.cz`,
-    description: oblast.charakteristika ?? `Průvodce horskými chatami: ${oblast.nazev}.`,
+    title: `${oblast.nazev} — turistické chaty | turistickechaty.cz`,
+    description: oblast.charakteristika ?? `Průvodce turistickými chatami: ${oblast.nazev}.`,
     alternates: { canonical: `/${KANONICKA_ZEME}/${oblastSlug}` },
   }
 }
@@ -177,7 +177,27 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
   const kicker = [zemeVFondu.join(' a '), oblast.typ === 'podoblast' ? 'podoblast' : 'pohoří']
     .filter(Boolean)
     .join(' · ')
+  /**
+   * ROZSAH PRŮVODCE, ŘEČENÝ NAHLAS (rozhodnutí Michala 30. 7. 2026:
+   * „řekněme nahlas turistické chaty").
+   *
+   * Do 30. 7. se průvodce představoval jako průvodce HORSKÝMI chatami, ale do
+   * korpusu už mířily objekty, které horské chaty nejsou — turistická chata
+   * v Prachovských skalách a Riegrova chata na Kozákově. Buď je vyřadit, nebo
+   * rozsah rozšířit a NEPŘEDSTÍRAT, že jsou to hory. Michal zvolil druhé, tak
+   * to stránka říká sama, ne jen v dokumentaci: čtenář, který přijde na
+   * skalní chatu, má vědět, že to není omyl.
+   */
   const faq: { q: string; a: string }[] = [
+    {
+      q: 'Jaké chaty průvodce vede?',
+      a:
+        'Turistické chaty — tedy objekty, které slouží turistům na trase: horské boudy a schroniska, ' +
+        'útulny a bivaky, rozhledny s občerstvením a chaty ve skalních městech. Většina jich stojí ' +
+        'v horách, ale ne všechny, a kde to hory nejsou, tam to říkáme; ' +
+        `${oblast.nazev} ${oblast.typ === 'pohori' ? 'vedeme jako pohoří' : 'není pohoří, je to turistická oblast'}. ` +
+        'Běžný hotel u silnice do průvodce nepatří — rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby.',
+    },
     {
       q: 'Kolik chat průvodce vede?',
       a: `V oblasti ${oblast.nazev} vedeme ${vOblasti.length} profilů — ${vOblasti.length - pocetPl} na české a ${pocetPl} na polské straně. K tomu ${zanikle.length} zaniklých chat v samostatném Atlasu.`,

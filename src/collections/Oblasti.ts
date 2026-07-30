@@ -30,8 +30,17 @@ export const Oblasti: CollectionConfig = {
       options: [
         { label: 'Pohoří', value: 'pohori' },
         { label: 'Podoblast', value: 'podoblast' },
+        // Turistická oblast (rozhodnutí Michala 30. 7. 2026 „řekněme nahlas
+        // turistické chaty"): Český ráj ani jiné skalní město pohoří NENÍ
+        // a průvodce by to neměl předstírat — přesto tam turistické chaty
+        // stojí (Prachov, Kozákov). Úroveň se proto přiznává v datech
+        // a stránka ji vypisuje ve FAQ o rozsahu průvodce.
+        { label: 'Turistická oblast (není pohoří)', value: 'turisticka-oblast' },
       ],
-      admin: { description: 'Země je samostatné pole — hierarchii tvoří pohoří a podoblasti.' },
+      admin: {
+        description:
+          'Země je samostatné pole — hierarchii tvoří pohoří a podoblasti. „Turistická oblast" je pro celky, které pohoří nejsou (skalní města).',
+      },
     },
     {
       name: 'nadrazena',

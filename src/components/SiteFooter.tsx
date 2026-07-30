@@ -15,7 +15,7 @@ export default function SiteFooter() {
         <span className="sg" style={{ fontWeight: 700 }}>
           Turistické chaty
         </span>
-        <span>průvodce všemi horskými chatami · Krkonoše → Česko → Slovensko → Alpy</span>
+        <span>průvodce turistickými chatami · Krkonoše → Česko → Slovensko → Alpy</span>
         <span className="mn" style={{ marginLeft: 'auto', fontSize: 9 }}>
           MAPY.COM · KČT · SIL OFL FONTY
         </span>

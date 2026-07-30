@@ -7,7 +7,7 @@ export const revalidate = 600
 
 export const metadata = {
   title: 'Razítkovník — turistickechaty.cz',
-  description: 'Deník razítek z horských chat — sbírka jako za mlada. Sbírá se na profilech chat, deník zůstává ve tvém prohlížeči.',
+  description: 'Deník razítek z turistických chat — sbírka jako za mlada. Sbírá se na profilech chat, deník zůstává ve tvém prohlížeči.',
 }
 
 export default async function RazitkovnikPage() {

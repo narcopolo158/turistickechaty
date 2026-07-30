@@ -1,6 +1,8 @@
 # CLAUDE.md — turistickechaty.cz
 
-Průvodce všemi horskými chatami: profily s ověřenými daty, mapa, výlety, historie, katalog razítek. Pilot: Krkonoše → ČR → SK → Alpy. Obsah česky.
+Průvodce **turistickými chatami**: profily s ověřenými daty, mapa, výlety, historie, katalog razítek. Pilot: Krkonoše → ČR → SK → Alpy. Obsah česky.
+
+**Rozsah (rozhodnutí Michala 30. 7. 2026: „řekněme nahlas turistické chaty"):** vedle horských bud a schronisek i útulny, bivaky, rozhledny s občerstvením a chaty ve skalních městech (Prachov, Kozákov). Rozhoduje **role na trase a občerstvení pro veřejnost, ne typ stavby ani nadmořská výška**. Kde to nejsou hory, průvodce to říká — oblast má úroveň `turisticka-oblast` a FAQ rozsah vypisuje. Slib „všemi horskými chatami" se proto na webu už neobjevuje; ve veřejné próze se píše „turistické chaty".
 
 ## Stack a reference
 - Next.js (App Router) + TypeScript + Payload CMS + PostgreSQL. Mapa: Leaflet/MapLibre + dlaždice Mapy.com „outdoor" (API klíč v env, nikdy v repu).

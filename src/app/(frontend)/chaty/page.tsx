@@ -10,7 +10,7 @@ export const revalidate = 600
 export const metadata = {
   title: 'Katalog chat — turistickechaty.cz',
   description:
-    'Katalog horských chat s ověřenými daty — bez cen a hvězdiček: stav, výška, služby a datum ověření. Filtry, řazení, mapa.',
+    'Katalog turistických chat s ověřenými daty — bez cen a hvězdiček: stav, výška, služby a datum ověření. Filtry, řazení, mapa.',
 }
 
 /**

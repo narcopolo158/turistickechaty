@@ -92,7 +92,7 @@ export default async function HomePage() {
       <div className="hf1-jen-obrazovka">
         <section className="wrap hf1-hero" aria-label="Úvod">
           <div className="hf1-hero-text">
-            <div className="hf1-eyebrow">Průvodce horskými chatami · Krkonoše</div>
+            <div className="hf1-eyebrow">Průvodce turistickými chatami · Krkonoše</div>
             <h1 className="hf1-claim">
               Chaty, kterým
               <br />

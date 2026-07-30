@@ -17,9 +17,9 @@ import './home-f1.css'
 export const metadata: Metadata = {
   // Absolutní základ pro kanonické a OG URL (Next jinak varuje u og:image).
   metadataBase: new URL('https://turistickechaty.cz'),
-  title: 'turistickechaty.cz — průvodce horskými chatami',
+  title: 'turistickechaty.cz — průvodce turistickými chatami',
   description:
-    'Průvodce všemi horskými chatami: ověřená data, mapa, výlety, historie a katalog razítek. Začínáme Krkonošemi.',
+    'Průvodce turistickými chatami: ověřená data, mapa, výlety, historie a katalog razítek. Začínáme Krkonošemi.',
   // Discovery odkaz pro AI asistenty (llms.txt) — z hlavičky každé stránky.
   alternates: {
     types: { 'text/markdown': '/llms.txt' },

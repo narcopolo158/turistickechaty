@@ -12,7 +12,7 @@ export const revalidate = 3600
 export const metadata: Metadata = {
   title: 'Přispěj otiskem nebo fotkou | turistickechaty.cz',
   description:
-    'Pošli otisk razítka nebo fotku horské chaty. Podání projde redakční kontrolou a zveřejníme ho s tvým jménem.',
+    'Pošli otisk razítka nebo fotku turistické chaty. Podání projde redakční kontrolou a zveřejníme ho s tvým jménem.',
 }
 
 /**
