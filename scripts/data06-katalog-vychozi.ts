@@ -61,7 +61,15 @@ const tokeny = (s: string): string[] => normalizuj(s).split(' ').filter(Boolean)
  * Preferuje konkrétní bod (lanovka/železnice/zastávka) před obcí a delší
  * (specifičtější) název; fallback na „nejbližší obec/uzel". null = nezgeokódováno.
  */
-export const geokodujBod = (bod: string, uzel: string, osm: OsmBod[]): OsmBod | null => {
+/**
+ * Výsledek geokódování: kromě bodu i to, ČÍM se trefil. Rozdíl není kosmetický
+ * — když se konkrétní výchozí bod („Stóg Izerski, horní stanice gondoly")
+ * v OSM nenajde a zabere až fallback na obec, leží nalezený bod někde jinde
+ * než ten pojmenovaný. Trasa se pak nesmí tvářit, že vede odtud.
+ */
+export type Geokod = { bod: OsmBod; podle: 'bod' | 'uzel' }
+
+export const geokodujBod = (bod: string, uzel: string, osm: OsmBod[]): Geokod | null => {
   const kandidati = (q: string): OsmBod[] => {
     const qt = new Set(tokeny(q))
     if (!qt.size) return []
@@ -78,17 +86,26 @@ export const geokodujBod = (bod: string, uzel: string, osm: OsmBod[]): OsmBod | 
       return normalizuj(b.nazev).length - normalizuj(a.nazev).length // delší (specifičtější) název první
     })
   }
-  for (const q of [bod, uzel]) {
+  for (const [q, podle] of [[bod, 'bod'], [uzel, 'uzel']] as const) {
     if (!q) continue
     const c = kandidati(q)
-    if (c.length) return c[0]
+    if (c.length) return { bod: c[0], podle }
   }
   return null
 }
 
 export type DoporucenyBod = {
   poradi: number
+  /** Jméno bodu, který se v OSM OPRAVDU našel (z něj se parsuje obec střediska). */
   vychoziBod: string
+  /**
+   * Nástup, který katalog doporučuje, ale v OSM se nenašel — trasa proto
+   * začíná jinde (u obce či uzlu). Nález 31. 7. 2026: „Stóg Izerski, horní
+   * stanice gondoly" se geokódovalo na nádraží ve Świeradowě 3,2 km od chaty,
+   * takže by profil tvrdil pětikilometrovou cestu od horní stanice — a ta
+   * přitom stojí 100 m od schroniska.
+   */
+  nastupZKatalogu?: string
   typ: string
   doprava: string
   sezona: string
@@ -123,9 +140,18 @@ export const nactiDoporucene = (csvText: string, osm: OsmBod[]): Map<string, Dop
     if (r.length < h.length - 1 || !r[iChata]) continue
     const g = geokodujBod(r[iBod] ?? '', r[iUzel] ?? '', osm)
     if (!g) continue
+    // Když se konkrétní bod z katalogu v OSM nenašel a zabral až fallback na
+    // obec, NESE trasa jméno toho, co se opravdu našlo. Nález 31. 7. 2026:
+    // „Stóg Izerski, horní stanice gondoly" se geokódovalo na nádraží ve
+    // Świeradowě-Zdroji 3,2 km od chaty — profil by pak tvrdil pětikilometrovou
+    // cestu od horní stanice, ačkoli ta stojí 100 m od schroniska.
+    // Jméno bodu zůstává ČISTÉ (parsuje se z něj obec střediska), nedoložený
+    // nástup z katalogu jde do vlastního pole a UI ho ukáže jako poznámku.
+    const trefa = g.podle === 'bod'
     const zaznam: DoporucenyBod = {
       poradi: Number(r[iPoradi]) || 99,
-      vychoziBod: (r[iBod] ?? '').trim(),
+      vychoziBod: trefa ? (r[iBod] ?? '').trim() : g.bod.nazev,
+      nastupZKatalogu: trefa ? undefined : (r[iBod] ?? '').trim(),
       typ: (r[iTyp] ?? '').trim(),
       doprava: (r[iDoprava] ?? '').trim(),
       sezona: (r[iSezona] ?? '').trim(),
@@ -134,8 +160,8 @@ export const nactiDoporucene = (csvText: string, osm: OsmBod[]): Map<string, Dop
         .split(/[\s\n]+/)
         .map((u) => u.trim())
         .filter((u) => /^https?:\/\//.test(u)),
-      lat: g.lat,
-      lng: g.lng,
+      lat: g.bod.lat,
+      lng: g.bod.lng,
     }
     const klic = normalizuj(r[iChata])
     const seznam = dle.get(klic)

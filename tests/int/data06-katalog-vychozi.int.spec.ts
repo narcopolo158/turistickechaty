@@ -50,24 +50,32 @@ describe('DATA-06 katalog · geokodujBod (shoda po celých slovech)', () => {
   it('„…stanice lanovky" NESEDÍ na obec Lánov (lanov ⊂ lanovky)', () => {
     // regresní pojistka: podřetězcová shoda by dala Lánov 20 km vedle
     const g = geokodujBod('Szrenica, horní stanice lanovky', 'Szklarska Poręba', osm)
-    expect(g?.nazev).not.toBe('Lánov')
-    expect(g?.nazev).toBe('Szrenica I') // krátký token „I" se pro shodu ignoruje
+    expect(g?.bod.nazev).not.toBe('Lánov')
+    expect(g?.bod.nazev).toBe('Szrenica I') // krátký token „I" se pro shodu ignoruje
   })
 
   it('preferuje konkrétní bod (lanovka) před obcí', () => {
     const g = geokodujBod('Rokytnice nad Jizerou, Lysá hora – lanovka', '', osm)
-    expect(g?.nazev).toBe('Lysá hora')
-    expect(g?.typ).toBe('lanovka')
+    expect(g?.bod.nazev).toBe('Lysá hora')
+    expect(g?.bod.typ).toBe('lanovka')
   })
 
   it('preferuje delší (specifičtější) název při stejném typu', () => {
     const g = geokodujBod('Szklarska Poręba Górna, železniční stanice', '', osm)
-    expect(g?.nazev).toBe('Szklarska Poręba Górna')
+    expect(g?.bod.nazev).toBe('Szklarska Poręba Górna')
   })
 
   it('fallback na „nejbližší uzel", když popis bodu nesedí', () => {
     const g = geokodujBod('U starého mostu (bez OSM názvu)', 'Pec pod Sněžkou', osm)
-    expect(g?.nazev).toBe('Pec pod Sněžkou')
+    expect(g?.bod.nazev).toBe('Pec pod Sněžkou')
+    // A hlavně: řekne, že to byl fallback. Nález 31. 7. 2026 — „Stóg Izerski,
+    // horní stanice gondoly" se takhle geokódovalo na nádraží ve Świeradowě
+    // 3,2 km od chaty a trasa se pak tvářila, že vede od horní stanice.
+    expect(g?.podle).toBe('uzel')
+  })
+
+  it('shoda na konkrétní bod se pozná od fallbacku', () => {
+    expect(geokodujBod('Rokytnice nad Jizerou, Lysá hora – lanovka', 'Rokytnice nad Jizerou', osm)?.podle).toBe('bod')
   })
 
   it('null, když nesedí bod ani uzel', () => {

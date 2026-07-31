@@ -38,7 +38,19 @@ describe('chaty dostupné ze střediska', () => {
     // Nula by tvrdila „odtud nikam cesta nevede", což je jiné tvrzení než
     // „trasy odtud nemáme spočítané".
     expect(chatZBodu('krkonose', 'Neexistující Ves')).toBeNull()
-    expect(chatZBodu('jizerske-hory', 'Bedřichov')).toBeNull()
+    expect(chatZBodu('jizerske-hory', 'Neexistující Ves')).toBeNull()
+  })
+
+  /**
+   * Do 31. 7. 2026 tady stálo, že Bedřichov vrací `null` — tehdy pravda, protože
+   * pro Jizerky ještě neběžel routing. Teď běžel, takže by tentýž řádek hlídal
+   * opak toho, co má: `null` znamená „nemáme spočítáno", ne „odtud nic nevede".
+   */
+  it('po doběhnutí routingu Jizerek vrací Bedřichov skutečné chaty', () => {
+    const bedrichov = chatZBodu('jizerske-hory', 'Bedřichov')
+    expect(bedrichov).not.toBeNull()
+    expect(bedrichov!.pocet).toBeGreaterThan(0)
+    expect(bedrichov!.chaty.map((ch) => ch.slug)).toContain('hrebinek')
   })
 
   it('nechytá cizí obec se stejným začátkem slova (Malá × Velká Úpa)', () => {

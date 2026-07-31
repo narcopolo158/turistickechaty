@@ -11,6 +11,57 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (ráno) — přístupové trasy Jizerek: 12 z 12, a jeden nepravdivý nástup cestou
+
+**Hotovo:** Michal pustil export výchozích bodů (**729 bodů**: 79 obcí, 46
+železnic, 19 lanovek, 585 zastávek) a tím se řetěz DATA-06 pro Jizerky zavřel —
+routing 3b už běžel tady v session, protože je čistě planární.
+
+**Výsledek: 12 z 12 chat má doloženou přístupovou trasu**, celkem 25 přístupů,
+žádný nad prahem 15 % neznačené délky. Střediska na stránce pohoří tím ožila:
+Bedřichov 4 chaty, Bílý Potok 2, Hejnice 2, Kořenov 2, Lázně Libverda 1. Janov
+nad Nisou má dál pomlčku — od něj doloženou trasu nemáme (chata Královka, která
+tam patří, publikovaná není).
+
+**Kontrola, kterou u tras dělám vždycky, tentokrát něco chytila.** Porovnal
+jsem u všech 25 přístupů délku trasy se vzdušnou čarou od jejího začátku:
+poměry vyšly 1,09–2,74, nikde ne pod jedničkou — čísla si tedy neodporují.
+Jedno mi ale nesedělo věcně: **Na Stogu Izerskim „5,31 km od Stóg Izerski,
+horní stanice gondoly"**, přestože horní stanice gondoly stojí **100 m** od
+schroniska.
+
+**Příčina byla v geokódování katalogu, ne v routingu.** Nástup „Stóg Izerski,
+horní stanice gondoly" se v OSM nenašel (tamní stanice se jmenuje „Górna stacja
+kolei gondolowej Ski & Sun"), takže zabral fallback na obec — a trasa dostala
+souřadnice **nádraží ve Świeradowě-Zdroji, 3,2 km od chaty**. Číslo 5,31 km je
+spočítané správně, jen to není cesta od horní stanice; profil by tvrdil
+pětikilometrovou túru odtamtud, kam se dojde za dvě minuty.
+
+**Oprava:** `geokodujBod` nově vrací i to, **čím** se trefil (`bod` × `uzel`).
+Když zabral až fallback, nese trasa jméno toho, co se opravdu našlo, a katalogový
+nástup jde do vlastního pole `nastupZKatalogu` — ať je vidět, co katalog
+doporučuje a co se nedoložilo. Jméno bodu zůstává čisté schválně: parsuje se
+z něj obec střediska, takže poznámka v závorce by rozbila párování karet.
+
+Po přeběhnutí routingu jsou takové tři z 25: Na Stogu Izerskim (Świeradów-Zdrój
+místo horní stanice gondoly), Smědava a Knajpa (obě začínají u obce, ne
+u „Smědava, autobusová zastávka"). Zbylých 22 sedí na pojmenovaný bod.
+
+**Jeden test bylo potřeba přepsat, ne opravit.** `pristupy-ze-strediska`
+tvrdil, že Bedřichov v Jizerkách vrací `null` — to platilo, dokud routing
+neběžel. Teď by hlídal opak toho, co má (`null` = „nemáme spočítáno", ne „odtud
+nic nevede"), takže drží novou pravdu: Bedřichov vrací skutečné chaty včetně
+Hřebínku.
+
+**Testy:** 588 (z 572), `kontrola` zelená.
+
+**Příště:** dopočítat výšky a odhad času tras (Mapy.com Elevation) — na to
+sandbox nedosáhne, je to klik do Actions. Pak fotky chat (DATA-02).
+
+**Pro Michala — jeden klik:** Actions → „DATA-06: výšky přístupových tras
+(dle oblasti)" → `jizerske-hory`. Teprve pak budou u tras převýšení a čas dle
+DIN 33466; do té doby ukazujeme jen délku, což je poctivé.
+
 ## 2026-07-31 (denní bezobslužná session) — „odtud dál" nesmí být odhad z mapy
 
 **Hotovo:** šest položek nad F1-IMPL je pořád na tobě (DATA-04 a DATA-25 na

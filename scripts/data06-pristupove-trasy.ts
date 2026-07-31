@@ -84,6 +84,8 @@ const vzdusneKm = (aLat: number, aLng: number, bLat: number, bLng: number): numb
 export type VychoziSnap = { nazev: string; typ: string; uzel: UzelKlic }
 export type Pristup = {
   vychoziBod: string
+  /** Nástup doporučený katalogem, který se v OSM nenašel — trasa začíná jinde. */
+  nastupZKatalogu?: string
   typ: string
   delkaKm: number
   useky: Trasa['useky']
@@ -165,6 +167,7 @@ export const vyberPristupyZKatalogu = (
     pouzityUzel.add(nej.klic)
     pristupy.push({
       vychoziBod: d.vychoziBod,
+      ...(d.nastupZKatalogu ? { nastupZKatalogu: d.nastupZKatalogu } : {}),
       typ: d.typ,
       delkaKm: t.delkaKm,
       useky: t.useky,
