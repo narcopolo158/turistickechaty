@@ -448,6 +448,13 @@ const slozHtml = (dataJson: string, kotvyPocet: number): void => {
   )
   html = html.replace('/*__DATA__*/null/*__/DATA__*/', dataJson)
   html = html.replace('__KOTVY__', String(kotvyPocet))
+  // Jméno oblasti do titulku, nadpisu i panoramatické vinětky. Do 31. 7. 2026
+  // je šablona měla napevno „Krkonoše", takže jizerská aplikace nesla správná
+  // DATA, ale hlásila se jako Krkonoše — a přesně tak to Michal viděl na
+  // stránce Jizerských hor („na stránce pohoří jizerek je mapa krkonoše").
+  // Data byla přitom jizerská; klamal jen popisek, což je horší než prázdno.
+  html = html.replaceAll('__OBLAST_VELKA__', OBLAST.nazev.toLocaleUpperCase('cs'))
+  html = html.replaceAll('__OBLAST__', OBLAST.nazev)
   writeFileSync(join(ADR, `3d-teren-${OBLAST.slug}.html`), html)
   // Táž aplikace se servíruje webem: stránka pohoří ji zasazuje přes
   // poster→klik (public/3d/krkonose.html). Jeden běh aktualizuje obojí.
@@ -478,6 +485,22 @@ const sOpakovanim = async <T>(nazev: string, fn: () => Promise<T>): Promise<T | 
 // ── běh ─────────────────────────────────────────────────────────────────────
 const main = async () => {
   const bezSite = process.argv.includes('--bez-site')
+  /**
+   * `--jen-html`: složí aplikaci znovu z ULOŽENÝCH dat (docs/experimenty/
+   * 3d-teren-data-<oblast>.json) — bez sítě, bez přepočtu reliéfu, bez dotazů
+   * na Mapy.com a Overpass. Pro případ, kdy se změní ŠABLONA, ne data: dřív by
+   * to znamenalo celý běh DATA-28 (a s ním nové volání placeného výškového
+   * API), nebo ruční editaci vygenerovaného HTML. Přidáno 31. 7. 2026, když
+   * šablona dostala jméno oblasti do titulku.
+   */
+  if (process.argv.includes('--jen-html')) {
+    const ulozena = nactiPredchoziData()
+    if (!ulozena) throw new Error(`--jen-html: ${DATA_JSON} neexistuje — data musí nejdřív spočítat plný běh.`)
+    const dataJson = JSON.stringify(ulozena)
+    slozHtml(dataJson, Number(ulozena.kotvy) || 0)
+    console.log(`Složeno znovu z uložených dat: 3d-teren-${OBLAST.slug}.html + public/3d/${OBLAST.slug}.html (data beze změny, ${(dataJson.length / 1024).toFixed(0)} kB).`)
+    return
+  }
   const klic = process.env.MAPY_API_KEY
   const { chaty, kotvy } = nactiChaty()
   const prechody = nactiPrechody(chaty)

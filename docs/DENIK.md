@@ -11,6 +11,63 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (dopoledne, podruhé) — 3D mapa Jizerek se hlásila jako Krkonoše
+
+**Hotovo:** Michal poslal screenshot: sekce „01 3D mapa — Jizerské hory" a v ní
+aplikace s titulkem **KRKONOŠE — panoramatická mapa**.
+
+**Data byla celou dobu správně.** Nahlédnutí dovnitř souboru
+`public/3d/jizerske-hory.html` ukázalo bbox 50,75–50,98 / 15,1–15,42 (Jizerky),
+vrcholy Smrk 1124, Jizera 1122, Stóg Izerski 1108 a jizerské lanovky. Lhal jen
+**popisek**: šablona `docs/experimenty/3d-teren-sablona.html` měla „Krkonoše"
+napevno v titulku, nadpisu i panoramatické vinětce, takže každá vygenerovaná
+oblast se hlásila jako Krkonoše. To je zákeřnější než prázdné místo — čtenář
+vidí jméno cizího pohoří nad správným terénem a nemá důvod věřit ničemu.
+
+**Oprava** je v šabloně (`__OBLAST__`, `__OBLAST_VELKA__`) a v DATA-28, která
+jméno dosadí z konfigurace oblasti.
+
+**A k tomu drobnost, která ušetří peníze:** aby se z opravené šablony daly
+soubory složit znovu, nemusí běžet celá DATA-28 (výškopis přes placené API
+a dotazy na Overpass). Nový přepínač **`--jen-html`** složí aplikaci
+z ULOŽENÝCH dat — bez sítě, bez přepočtu reliéfu. Krkonošský soubor po
+přeložení vyšel bajt po bajtu stejně, což je zároveň důkaz, že se skládá věrně;
+jizerskému se změnily jen ty tři popisky.
+
+**Pozor — jizerský 3D model je z 28. 7.**, tedy z doby před triáží. Terén,
+trasy i lanovky sedí, ale dvanáct publikovaných chat v něm ještě není. Model
+se obnoví až plným během DATA-28 pro `jizerske-hory` (Actions).
+
+### Při odpovědi na dotaz k DATA-02 se uklidilo i něco jiného
+
+Michal se ptal, jestli má DATA-02 spustit, když nenabízí výběr oblasti.
+**Nenabízí ho, protože ho nepotřebuje**: skript prochází všechny oblasti pod
+`data/chaty/**` i `data/kandidati/**`. Dnes to je 161 objektů, z toho 57
+jizerských (48 z nich fotky ještě nemá).
+
+Cestou se ale ukázalo **7 osiřelých souborů** s kandidátními fotkami — metadata
+k objektům, které v korpusu už nejsou. Vznikají triáží: když se kandidát povýší
+(změní se oblast i slug) nebo vyřadí, jeho soubor s fotkami zůstane ležet pod
+starým jménem. Nikoho to neshodí, jen se nikdy nepřečte a vedle něj přibude
+nový.
+
+Naložilo se s nimi podle toho, co v nich je, ne hromadně:
+- **Tři se přesunuly** pod nový slug — Pešákovna (14 fotek), Chatka Górzystów
+  (23) a Orle (38). Byly to povýšené chaty a smazat je by znamenalo zahodit
+  hotový sběr, který by DATA-02 musela dohledat znovu.
+- **Jeden byl duplicita** téhož objektu pod kandidátním slugem.
+- **Tři patřily vyřazeným kandidátům** (všechny doložené v `_vyrazeno.yaml`) —
+  smazány.
+
+Nová kontrola `osirele-fotky` je do budoucna hlídá, ale **NEROZHODUJE**
+o návratovém kódu: osiření je běžný důsledek triáže, ne chyba, která by měla
+blokovat cizí práci v CI. Má být vidět v logu, ne shazovat běh.
+
+**Testy:** 592, `kontrola` zelená (nová kontrola hlásí 0 osiřelých).
+
+**Příště:** DATA-02 (klik), pak plný DATA-28 pro Jizerky, ať 3D model zná
+dvanáct nových profilů.
+
 ## 2026-07-31 (dopoledne) — výšky tras doběhly a odhalily, že web četl jen Krkonoše
 
 **Hotovo:** Michal pustil dopočet výšek (Mapy.com Elevation) a Jizerky mají

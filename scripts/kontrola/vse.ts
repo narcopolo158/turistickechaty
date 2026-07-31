@@ -16,6 +16,9 @@ const KROKY = [
   ['zdroje', 'domena jmenovana v proze musi stat i ve `zdroje`', false],
   ['ban-scan', 'zakazane vzory ve verejne proze (seznam k posouzeni)', false],
   ['audit-mech', 'mechanicky audit A-F (seznam k posouzeni)', false],
+  // NEROZHODUJE: osirela fotka je bezny dusledek triaze (objekt povysen nebo
+  // vyrazen), ne chyba, ktera by mela blokovat cizi PR. Ma byt videt v logu.
+  ['osirele-fotky', 'kandidatni fotky k neexistujicimu objektu', false],
   // jako jedina z trojice seznamovych kontrol ROZHODUJE: cisty stav je presne
   // nula, takze kazdy zasah je regrese, ne polozka k posouzeni
   ['kolize-jmen', 'kolize nazvu chat v celem korpusu', true],
