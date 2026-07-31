@@ -11,6 +11,68 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (noc, dodatek 2) — prostředí umí zapisovat z nasazeného adminu (commit přes GitHub API), ověřeno naostro
+
+**Zadání Michala:** *„prostředí bych chtěl používat z adminu."* Do teď zápis
+fungoval jen tam, kde je pracovní kopie repa — tedy lokálně. Nasazený admin
+prostředí ukazoval, ale jen ke čtení.
+
+**Řešení: commit přes GitHub API.** Rozhodnutí pořád patří do repa (je zdrojem
+pravdy), jen se tam dostane jinou cestou: kontejner nemá pracovní kopii, tak
+prostředí zavolá Contents API a rozhodnutí commitne. Projde pak běžnou cestou
+commit → CI → deploy a v historii je vidět, kdo a proč. Zápis má tedy dva
+režimy — **github** (nasazený web, zapíná `REDAKCE_GITHUB_TOKEN`
++ `REDAKCE_GITHUB_REPO`) a **disk** (lokální `npm run dev`) — a když není ani
+jeden, prostředí je jen ke čtení a **říká to nahlas** barevným pruhem nahoře.
+
+**Dvě věci, na kterých stojí, jestli se práce neztratí** (a obojí má test):
+*(1)* Čte se ze STEJNÉHO místa, kam se zapisuje. Soubory v kontejneru jsou ze
+stavu při buildu a mezitím mohl přijít cizí commit (noční běh pipeline) —
+kdyby prostředí patchovalo verzi z disku a poslalo ji jako celý soubor,
+přepsalo by cizí změny. *(2)* `sha` je zámek: když mezi čtením a zápisem někdo
+commitne, GitHub vrátí 409 a prostředí zopakuje **celý** postup nad čerstvým
+obsahem. Slepé opakování zápisu by cizí práci smazalo. Token se nikdy nedostane
+do odpovědi ani do chybové hlášky — testuju i to.
+
+**Spojení se ověřuje při otevření prostředí**, ne až při zápisu: token bez práva
+zápisu je horší než žádný, protože chyba by přišla, až když člověk vyplní popis
+snímku. Pruh nahoře rovnou říká „Zapisuje se do narcopolo158/turistickechaty
+(větev main)", nebo co konkrétně chybí.
+
+**Drobnost, která by jinak štvala:** v režimu github se rozhodnutí projeví
+v datech až po deployi (kontejner čte soubory z buildu). Prostředí si proto
+pamatuje, co jsi vyřídil v tomhle sezení, a takovou chatu z fronty odebere —
+jinak bys ji vyřizoval podruhé.
+
+**Ověřeno NAOSTRO, ne jen mockem.** api.github.com je ze sandboxu dosažitelné
+(na rozdíl od Overpassu a Commons), takže jsem celý řetěz projel proti
+skutečnému repu tokenem z gitového remote: `overSpojeni` vrátilo „zapisuje se
+do narcopolo158/turistickechaty (větev main)" a zápis vyrobil commit
+**a0e6627**. Jako testovací zápis jsem schválně použil rozhodnutí, které je
+pravdivé a stejně bylo potřeba: **Rozhledna Královka je nově odložená** —
+s doloženým důvodem, že není vyřešené, jestli je to jeden objekt, nebo dva
+(OSM vede rozhlednu a 26 m vedle restauraci „Sluneční terasa", externí katalog
+zná „Královku" jako chatu). Do rozhodnutí se nepovyšuje ani nevyřazuje. Fronta
+proto teď hlásí 65 čeká / 1 odloženo.
+
+**Testy:** 674 zelených (14 nových na GitHub zápis — dekódování base64, sha
+jako zámek, opakování při souběhu, mlčení o tokenu, degradace při nedostupném
+GitHubu).
+
+**Co Michal potřebuje udělat, aby to jelo z nasazeného adminu:** vyrobit
+jemnozrnný PAT s právem **Contents: Read and write** jen na tenhle repozitář
+a vložit ho do prostředí webu jako `REDAKCE_GITHUB_TOKEN`; `REDAKCE_GITHUB_REPO`
+už má výchozí hodnotu v `.env.example`. Nic víc token potřebovat nemá.
+
+**Příště:** výběr fotek podle toho, co v prostředí vybereš.
+
+**Otázky pro Michala:** 1) Souhlasíš s tím, že prostředí commituje **rovnou do
+`main`**? Alternativa je zvláštní větev (`REDAKCE_GITHUB_BRANCH`) a pull
+requesty — bezpečnější, ale rozhodnutí by se na web dostávala až po merge.
+2) Odložení Královky výš je moje rozhodnutí z ostrého testu; když ji chceš
+rovnou povýšit nebo vyřadit, řekni a přepíšu to. 3) Trvá otázka, jestli má
+fronta hlídat kadenci ověřování po jednotlivých polích.
+
 ## 2026-07-31 (dodatek) — fronta hlídá i to, co chybí hotovým profilům
 
 **Hotovo:** Uzavřel jsem první dvě díry z vlastního seznamu v

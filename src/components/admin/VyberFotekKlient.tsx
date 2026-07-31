@@ -23,6 +23,9 @@ import type { FotkaVeFronte, FotkyChaty, Souhrn } from '@/lib/redakce/fronta'
 
 type Data = {
   zapisPovolen: boolean
+  /** Kam se zapisuje: commit do repa (github), pracovní kopie (disk), nebo nikam. */
+  rezim: 'github' | 'disk' | 'jen-cteni'
+  stavZapisu: string
   souhrn: Souhrn
   fotky: FotkyChaty[]
 }
@@ -45,6 +48,13 @@ export default function VyberFotekKlient() {
   const [duvod, setDuvod] = useState('')
   const [pracuje, setPracuje] = useState(false)
   const [hlaska, setHlaska] = useState<string | null>(null)
+  /**
+   * Rozhodnutí zapsaná v TOMHLE sezení. V režimu `github` se totiž projeví
+   * v datech až po deployi — kontejner čte soubory ze stavu při buildu.
+   * Bez téhle množiny by chata, kterou člověk právě vyřídil, zůstala ve frontě
+   * a vyřizoval by ji podruhé.
+   */
+  const [hotove, setHotove] = useState<Set<string>>(new Set())
 
   const nacti = useCallback(async () => {
     setChyba(null)
@@ -78,6 +88,7 @@ export default function VyberFotekKlient() {
         return
       }
       setHlaska(`✓ Zapsáno do ${odpoved.soubor}`)
+      if (typeof telo.chata === 'string') setHotove((d) => new Set(d).add(telo.chata as string))
       setVybrana(null)
       setAlt('')
       setDuvod('')
@@ -118,16 +129,29 @@ export default function VyberFotekKlient() {
         </select>
       </div>
 
-      {!data.zapisPovolen && (
-        <p style={{ background: '#fdf1ea', border: `1px solid ${barvy.red}`, borderRadius: 9, padding: '9px 12px', fontSize: 12.5, margin: '0 0 14px' }}>
-          <b>Jen ke čtení.</b> Zápis je vypnutý (<code>REDAKCE_ZAPIS</code>), protože rozhodnutí se
-          zapisují do YAML v repozitáři — tam, kde je pracovní kopie. Na nasazeném webu by se ztratila
-          při příštím deployi.
-        </p>
-      )}
+      <p
+        style={{
+          background: data.zapisPovolen ? '#eef3ec' : '#fdf1ea',
+          border: `1px solid ${data.zapisPovolen ? barvy.zelena : barvy.red}`,
+          borderRadius: 9,
+          padding: '9px 12px',
+          fontSize: 12.5,
+          margin: '0 0 14px',
+        }}
+      >
+        <b>
+          {data.rezim === 'github'
+            ? 'Zápis commitem do repa.'
+            : data.rezim === 'disk'
+              ? 'Zápis do pracovní kopie.'
+              : 'Jen ke čtení.'}
+        </b>{' '}
+        {data.stavZapisu}
+        {data.rezim === 'github' && ' Vybraná fotka se na webu objeví po nejbližším nasazení.'}
+      </p>
 
       {data.fotky
-        .filter((ch) => ch.jeProfil && !ch.maFotku && !ch.uzavrena)
+        .filter((ch) => ch.jeProfil && !ch.maFotku && !ch.uzavrena && !hotove.has(ch.slug))
         .map((ch) => (
           <section key={`${ch.oblast}/${ch.slug}`} style={{ borderTop: `1px solid ${barvy.line}`, padding: '16px 0 6px' }}>
             <h2 style={{ font: '600 16px/1.2 system-ui', margin: '0 0 9px', display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>

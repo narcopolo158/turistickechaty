@@ -5,6 +5,7 @@ import { getPayload } from 'payload'
 
 import config from '@/payload.config'
 import { frontaFotek, mezeryProfilu, souhrnFronty, stavKandidatu } from '@/lib/redakce/fronta'
+import { konfiguraceZProstredi, overSpojeni, upravSoubor } from '@/lib/redakce/github'
 import {
   pridejOdlozeni,
   pridejRozhodnutiFotky,
@@ -17,30 +18,72 @@ import {
 /**
  * REDAKČNÍ PROSTŘEDÍ — data a zápis rozhodnutí (GET fronta, POST rozhodnutí).
  *
- * PROČ TENHLE ENDPOINT VŮBEC JE: zdrojem pravdy je repozitář, ne databáze
- * (seed jede jedním směrem `data/**` → Payload). Kdyby výběr fotky ukládal
+ * PROČ SE ZAPISUJE DO REPA, A NE DO DATABÁZE: zdrojem pravdy je repozitář
+ * (seed jede jedním směrem `data/**` → Payload). Kdyby výběr fotky uložil
  * záznam jen do DB, přepsal by ho první deploy a nikdo by nepoznal proč.
- * Prostředí proto zapisuje do TÝCHŽ YAML souborů, které čte seed a hlídá
- * `npm run kontrola` — rozhodnutí pak projde běžnou cestou (commit → CI →
- * deploy) a je po něm stopa v historii.
  *
- * PROČ SE ZÁPIS DÁ VYPNOUT: soubory se dají měnit jen tam, kde je pracovní
- * kopie repa — tedy lokálně u Michala. Na nasazeném webu by zápis buď spadl,
- * nebo (hůř) uspěl do kontejneru, který příští deploy zahodí; tichá ztráta
- * rozhodnutí je to nejhorší, co může redakční nástroj udělat. Zápis je proto
- * povolený jen s `REDAKCE_ZAPIS=1` (výchozí ve vývoji) a prostředí to říká
- * nahlas: bez něj ukazuje frontu jen ke čtení.
+ * DVA REŽIMY ZÁPISU (rozhodnutí Michala 31. 7. 2026: „prostředí bych chtěl
+ * používat z adminu"):
+ *  - **github** — commit přes API, když je nastavený `REDAKCE_GITHUB_TOKEN`
+ *    a `REDAKCE_GITHUB_REPO`. Tohle je režim nasazeného webu: kontejner nemá
+ *    pracovní kopii, takže rozhodnutí jde rovnou do repa a projeví se po
+ *    nejbližším deployi.
+ *  - **disk** — zápis do pracovní kopie, když prostředí běží lokálně
+ *    (`npm run dev`). Rychlejší smyčka: rozhodnutí je vidět hned a commitne
+ *    se ručně.
+ * Když není ani jedno, prostředí je JEN KE ČTENÍ a řekne to nahlas. Tichá
+ * ztráta rozhodnutí je to nejhorší, co může redakční nástroj udělat.
  *
  * PŘÍSTUP: jen přihlášená redakce (týž účet jako do adminu).
  */
 
-const zapisPovolen = (): boolean =>
+const koren = () => process.cwd()
+const odpoved = (status: number, telo: Record<string, unknown>) => Response.json(telo, { status })
+
+/** Zápis na disk se hodí jen tam, kde je pracovní kopie repa (vývoj). */
+const zapisNaDiskPovolen = (): boolean =>
   process.env.REDAKCE_ZAPIS === '1' ||
   (process.env.REDAKCE_ZAPIS !== '0' && process.env.NODE_ENV !== 'production')
 
-const koren = () => process.cwd()
+export type Rezim = 'github' | 'disk' | 'jen-cteni'
 
-const odpoved = (status: number, telo: Record<string, unknown>) => Response.json(telo, { status })
+/**
+ * Úložiště rozhodnutí. Obě implementace mají týž tvar „načti → uprav → zapiš",
+ * aby akce nemusely vědět, kam se vlastně píše.
+ */
+type Uloziste = {
+  rezim: Rezim
+  uprav: (
+    cesta: string,
+    uprav: (obsah: string | null) => string,
+    zprava: string,
+  ) => Promise<{ misto: string }>
+}
+
+const ulozisteProZapis = (): Uloziste | null => {
+  const gh = konfiguraceZProstredi()
+  if (gh) {
+    return {
+      rezim: 'github',
+      uprav: async (cesta, uprav, zprava) => {
+        const { commit } = await upravSoubor(gh, cesta, uprav, zprava)
+        return { misto: `${cesta} (commit ${commit.slice(0, 7)} ve větvi ${gh.vetev})` }
+      },
+    }
+  }
+  if (zapisNaDiskPovolen()) {
+    return {
+      rezim: 'disk',
+      uprav: async (cesta, uprav) => {
+        const plna = join(koren(), cesta)
+        const puvodni = existsSync(plna) ? readFileSync(plna, 'utf8') : null
+        writeFileSync(plna, uprav(puvodni), 'utf8')
+        return { misto: cesta }
+      },
+    }
+  }
+  return null
+}
 
 /** Přihlášený uživatel Payloadu; jinak `null`. */
 const redaktor = async (req: Request): Promise<{ email?: string } | null> => {
@@ -59,18 +102,26 @@ export async function GET(req: Request): Promise<Response> {
   const oblast = url.searchParams.get('oblast') ?? undefined
   const k = koren()
   const dnes = new Date().toISOString().slice(0, 10)
+  const uloziste = ulozisteProZapis()
+  const gh = konfiguraceZProstredi()
+  // Spojení se ověřuje HNED při otevření prostředí, ne až při zápisu: chybu
+  // oprávnění je lepší vidět dřív, než člověk vyplní popis snímku.
+  const spojeni = gh ? await overSpojeni(gh) : null
+
   return odpoved(200, {
-    zapisPovolen: zapisPovolen(),
+    rezim: uloziste?.rezim ?? 'jen-cteni',
+    zapisPovolen: !!uloziste && (spojeni?.ok ?? true),
+    stavZapisu:
+      spojeni?.zprava ??
+      (uloziste?.rezim === 'disk'
+        ? 'Zapisuje se do pracovní kopie repa — změny commitni ručně.'
+        : 'Zápis není nastavený (REDAKCE_GITHUB_TOKEN / REDAKCE_ZAPIS).'),
     souhrn: souhrnFronty(k, dnes),
     fotky: frontaFotek(k, oblast),
     kandidati: stavKandidatu(k).filter((kand) => !oblast || kand.oblast === oblast),
     mezery: mezeryProfilu(k, dnes).filter((m) => !oblast || m.oblast === oblast),
   })
 }
-
-/** Cesta k profilu chaty; kandidátní i profilové soubory leží po oblastech. */
-const cestaProfilu = (oblast: string, slug: string) =>
-  join(koren(), 'data', 'chaty', oblast, `${slug}.yaml`)
 
 type Telo = {
   akce: 'vybrat-fotku' | 'odmitnout-fotku' | 'uzavrit-fotky' | 'odlozit-kandidata' | 'vyradit-kandidata'
@@ -94,10 +145,11 @@ type Telo = {
 export async function POST(req: Request): Promise<Response> {
   const uzivatel = await redaktor(req)
   if (!uzivatel) return odpoved(401, { chyba: 'Přihlas se do adminu.' })
-  if (!zapisPovolen())
+  const uloziste = ulozisteProZapis()
+  if (!uloziste)
     return odpoved(423, {
       chyba:
-        'Zápis je vypnutý (REDAKCE_ZAPIS). Prostředí běží jen ke čtení — rozhodnutí se zapisují tam, kde je pracovní kopie repa.',
+        'Zápis není nastavený. Na nasazeném webu ho zapne REDAKCE_GITHUB_TOKEN + REDAKCE_GITHUB_REPO, lokálně REDAKCE_ZAPIS=1.',
     })
 
   let telo: Telo
@@ -108,8 +160,11 @@ export async function POST(req: Request): Promise<Response> {
   }
   const dnes = new Date().toISOString().slice(0, 10)
   const rozhodl = uzivatel.email ?? 'redakce'
-  const souborRozhodnuti = join(koren(), 'data', 'kandidati', 'fotky', '_rozhodnuti.yaml')
-  const souborOdlozeni = join(koren(), 'data', 'kandidati', '_odlozeno.yaml')
+  const CESTA_ROZHODNUTI = 'data/kandidati/fotky/_rozhodnuti.yaml'
+  const CESTA_ODLOZENI = 'data/kandidati/_odlozeno.yaml'
+  const CESTA_VYRAZENI = 'data/kandidati/_vyrazeno.yaml'
+  /** Podpis v commitu: kdo rozhodl, ať to jde dohledat i po měsících. */
+  const podpis = (co: string) => `data: ${co} (redakční prostředí, ${rozhodl})`
 
   try {
     switch (telo.akce) {
@@ -121,15 +176,19 @@ export async function POST(req: Request): Promise<Response> {
         const alt = (telo.alt ?? '').trim()
         if (alt.length < 3)
           return odpoved(400, { chyba: 'Doplň popis snímku (alt) — co je na fotce vidět. Tvrzení patří člověku.' })
-        const cesta = cestaProfilu(telo.oblast, telo.chata)
-        if (!existsSync(cesta))
-          return odpoved(404, { chyba: `Profil ${telo.oblast}/${telo.chata} neexistuje — nejdřív povýšit kandidáta.` })
-        const puvodni = readFileSync(cesta, 'utf8')
-        if (uzJeVProfilu(puvodni, telo.fotka.original))
-          return odpoved(409, { chyba: 'Tuhle fotku už profil má.' })
         const zaznam = zaznamFotky({ ...telo.fotka, alt, dnes })
-        writeFileSync(cesta, vlozFotkuDoProfilu(puvodni, zaznam), 'utf8')
-        return odpoved(200, { hotovo: true, soubor: `data/chaty/${telo.oblast}/${telo.chata}.yaml` })
+        const cesta = `data/chaty/${telo.oblast}/${telo.chata}.yaml`
+        const { misto } = await uloziste.uprav(
+          cesta,
+          (puvodni) => {
+            if (puvodni == null)
+              throw new Error(`Profil ${telo.oblast}/${telo.chata} neexistuje — nejdřív povýšit kandidáta.`)
+            if (uzJeVProfilu(puvodni, telo.fotka!.original)) throw new Error('Tuhle fotku už profil má.')
+            return vlozFotkuDoProfilu(puvodni, zaznam)
+          },
+          podpis(`fotka k profilu ${telo.chata} z Wikimedia Commons`),
+        )
+        return odpoved(200, { hotovo: true, soubor: misto, rezim: uloziste.rezim })
       }
       case 'odmitnout-fotku':
       case 'uzavrit-fotky': {
@@ -137,49 +196,62 @@ export async function POST(req: Request): Promise<Response> {
           return odpoved(400, { chyba: 'Chybí chata nebo důvod — bez důvodu se rozhodnutí nezapisuje.' })
         if (telo.akce === 'odmitnout-fotku' && !telo.fotka?.soubor)
           return odpoved(400, { chyba: 'Chybí soubor odmítané fotky.' })
-        const puvodni = existsSync(souborRozhodnuti) ? readFileSync(souborRozhodnuti, 'utf8') : null
-        const novy = pridejRozhodnutiFotky(puvodni, {
-          chata: telo.chata,
-          soubor: telo.fotka?.soubor,
-          stav: telo.akce === 'odmitnout-fotku' ? 'odmitnuta' : 'uzavrena',
-          duvod: telo.duvod.trim(),
-          rozhodl,
-          checked: dnes,
-        })
-        writeFileSync(souborRozhodnuti, novy, 'utf8')
-        return odpoved(200, { hotovo: true, soubor: 'data/kandidati/fotky/_rozhodnuti.yaml' })
+        const { misto } = await uloziste.uprav(
+          CESTA_ROZHODNUTI,
+          (puvodni) =>
+            pridejRozhodnutiFotky(puvodni, {
+              chata: telo.chata!,
+              soubor: telo.fotka?.soubor,
+              stav: telo.akce === 'odmitnout-fotku' ? 'odmitnuta' : 'uzavrena',
+              duvod: telo.duvod!.trim(),
+              rozhodl,
+              checked: dnes,
+            }),
+          podpis(
+            telo.akce === 'odmitnout-fotku'
+              ? `odmítnutá kandidátní fotka u ${telo.chata}`
+              : `u ${telo.chata} nebereme fotku z Commons`,
+          ),
+        )
+        return odpoved(200, { hotovo: true, soubor: misto, rezim: uloziste.rezim })
       }
       case 'odlozit-kandidata': {
         if (!telo.chata || !telo.oblast || !telo.duvod?.trim())
           return odpoved(400, { chyba: 'Chybí kandidát, oblast nebo důvod.' })
-        const puvodni = existsSync(souborOdlozeni) ? readFileSync(souborOdlozeni, 'utf8') : null
-        const novy = pridejOdlozeni(puvodni, {
-          slug: telo.chata,
-          oblast: telo.oblast,
-          duvod: telo.duvod.trim(),
-          rozhodl,
-          checked: dnes,
-        })
-        writeFileSync(souborOdlozeni, novy, 'utf8')
-        return odpoved(200, { hotovo: true, soubor: 'data/kandidati/_odlozeno.yaml' })
+        const { misto } = await uloziste.uprav(
+          CESTA_ODLOZENI,
+          (puvodni) =>
+            pridejOdlozeni(puvodni, {
+              slug: telo.chata!,
+              oblast: telo.oblast!,
+              duvod: telo.duvod!.trim(),
+              rozhodl,
+              checked: dnes,
+            }),
+          podpis(`odložený kandidát ${telo.chata}`),
+        )
+        return odpoved(200, { hotovo: true, soubor: misto, rezim: uloziste.rezim })
       }
       case 'vyradit-kandidata': {
         if (!telo.chata || !telo.duvod?.trim())
           return odpoved(400, { chyba: 'Chybí kandidát nebo důvod — vyřazení bez důvodu se nezapisuje.' })
-        // Identitou vyřazeného je OSM URL: přežije přejmenování i přesun mezi
-        // oblastmi, takže se objekt nevrátí dalším během DATA-01 pod jiným
-        // slugem. Když ji neznáme, zapíše se aspoň slug.
-        const souborVyrazeni = join(koren(), 'data', 'kandidati', '_vyrazeno.yaml')
-        if (!existsSync(souborVyrazeni)) return odpoved(500, { chyba: 'Chybí data/kandidati/_vyrazeno.yaml.' })
-        const novy = pridejVyrazeni(readFileSync(souborVyrazeni, 'utf8'), {
-          slug: telo.chata,
-          osm: telo.osm,
-          duvod: telo.duvod.trim(),
-          rozhodl,
-          checked: dnes,
-        })
-        writeFileSync(souborVyrazeni, novy, 'utf8')
-        return odpoved(200, { hotovo: true, soubor: 'data/kandidati/_vyrazeno.yaml' })
+        const { misto } = await uloziste.uprav(
+          CESTA_VYRAZENI,
+          (puvodni) => {
+            if (puvodni == null) throw new Error('Chybí data/kandidati/_vyrazeno.yaml.')
+            // Identitou vyřazeného je OSM URL: přežije přejmenování i přesun
+            // mezi oblastmi, takže se objekt nevrátí dalším během DATA-01.
+            return pridejVyrazeni(puvodni, {
+              slug: telo.chata!,
+              osm: telo.osm,
+              duvod: telo.duvod!.trim(),
+              rozhodl,
+              checked: dnes,
+            })
+          },
+          podpis(`vyřazený kandidát ${telo.chata}`),
+        )
+        return odpoved(200, { hotovo: true, soubor: misto, rezim: uloziste.rezim })
       }
       default:
         return odpoved(400, { chyba: 'Neznámá akce.' })

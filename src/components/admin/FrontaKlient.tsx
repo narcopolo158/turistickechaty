@@ -21,7 +21,14 @@ import type { Kandidat, MezeraProfilu, Souhrn } from '@/lib/redakce/fronta'
  * odkaz do OSM, signály) a hlídá, že se na objekt nezapomene.
  */
 
-type Data = { zapisPovolen: boolean; souhrn: Souhrn; kandidati: Kandidat[]; mezery: MezeraProfilu[] }
+type Data = {
+  zapisPovolen: boolean
+  rezim: 'github' | 'disk' | 'jen-cteni'
+  stavZapisu: string
+  souhrn: Souhrn
+  kandidati: Kandidat[]
+  mezery: MezeraProfilu[]
+}
 
 /** Pátý „stav" není stav kandidáta, ale pohled na hotové profily. */
 type Pohled = Kandidat['stav'] | 'mezery'
@@ -41,6 +48,8 @@ export default function FrontaKlient() {
   const [stav, setStav] = useState<Pohled>('nezpracovan')
   const [oblast, setOblast] = useState('')
   const [hlaska, setHlaska] = useState<string | null>(null)
+  /** Rozhodnutí z tohohle sezení — v režimu `github` se v datech projeví až po deployi. */
+  const [hotove, setHotove] = useState<Set<string>>(new Set())
 
   const nacti = useCallback(async () => {
     const res = await fetch('/api/redakce')
@@ -66,7 +75,10 @@ export default function FrontaKlient() {
     })
     const o = (await res.json()) as { chyba?: string; soubor?: string }
     setHlaska(res.ok ? `✓ Zapsáno do ${o.soubor}` : `⚠ ${o.chyba ?? 'Nepovedlo se.'}`)
-    if (res.ok) await nacti()
+    if (res.ok) {
+      if (typeof telo.chata === 'string') setHotove((d) => new Set(d).add(telo.chata as string))
+      await nacti()
+    }
   }
 
   if (chyba) return <p style={{ padding: 24, color: barvy.red }}>{chyba}</p>
@@ -74,7 +86,9 @@ export default function FrontaKlient() {
 
   const k = data.souhrn.kandidati
   const f = data.souhrn.fotky
-  const seznam = data.kandidati.filter((x) => x.stav === stav && (!oblast || x.oblast === oblast))
+  const seznam = data.kandidati.filter(
+    (x) => x.stav === stav && (!oblast || x.oblast === oblast) && !(stav === 'nezpracovan' && hotove.has(x.slug)),
+  )
   const seznamMezer = (data.mezery ?? []).filter(
     (m) => m.chybi.length > 0 && (!oblast || m.oblast === oblast),
   )
@@ -129,6 +143,27 @@ export default function FrontaKlient() {
           </table>
         </div>
       </div>
+
+      <p
+        style={{
+          background: data.zapisPovolen ? '#eef3ec' : '#fdf1ea',
+          border: `1px solid ${data.zapisPovolen ? barvy.zelena : barvy.red}`,
+          borderRadius: 9,
+          padding: '9px 12px',
+          fontSize: 12.5,
+          margin: '0 0 12px',
+        }}
+      >
+        <b>
+          {data.rezim === 'github'
+            ? 'Zápis commitem do repa.'
+            : data.rezim === 'disk'
+              ? 'Zápis do pracovní kopie.'
+              : 'Jen ke čtení.'}
+        </b>{' '}
+        {data.stavZapisu}
+        {data.rezim === 'github' && ' Rozhodnutí se v číslech projeví po nejbližším nasazení.'}
+      </p>
 
       <p style={{ margin: '0 0 12px' }}>
         <Link href="/admin/vyber-fotek" style={{ color: barvy.red, fontWeight: 600, fontSize: 13 }}>

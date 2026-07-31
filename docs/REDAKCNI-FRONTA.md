@@ -98,10 +98,32 @@ deploy a nikdo by nepoznal proč. Prostředí proto zapisuje do týchž YAML
 souborů, které čte seed a hlídá `npm run kontrola`; rozhodnutí pak projde
 běžnou cestou commit → CI → deploy a je po něm stopa v historii.
 
-Z toho plyne omezení: **zápis funguje tam, kde je pracovní kopie repa** (tedy
-lokálně, `npm run dev`). Na nasazeném webu je prostředí jen ke čtení a říká to
-nahlas — proměnná `REDAKCE_ZAPIS` (výchozí: zapnuto ve vývoji, vypnuto
-v produkci).
+Zápis má proto **dva režimy** (rozhodnutí Michala 31. 7. 2026: *„prostředí bych
+chtěl používat z adminu"*):
+
+* **`github`** — commit přes GitHub API. Tak to jede na nasazeném webu:
+  kontejner pracovní kopii nemá, takže rozhodnutí jde rovnou do repa a v číslech
+  se projeví po nejbližším nasazení. Zapíná ho `REDAKCE_GITHUB_TOKEN`
+  + `REDAKCE_GITHUB_REPO`; token je jemnozrnný PAT s právem *Contents: Read and
+  write* na tenhle repozitář a nikde jinde nemá co dělat.
+* **`disk`** — zápis do pracovní kopie, když prostředí běží lokálně
+  (`npm run dev`). Rychlejší smyčka: rozhodnutí je vidět hned, commit je ruční.
+
+Když není nastavené ani jedno, prostředí je jen ke čtení a **říká to nahlas** —
+tichá ztráta rozhodnutí je to nejhorší, co může redakční nástroj udělat. Režim
+je vidět v barevném pruhu nahoře na obou obrazovkách.
+
+Dvě věci, na kterých v režimu `github` stojí, jestli se práce neztratí:
+
+1. **Čte se ze stejného místa, kam se zapisuje.** Soubory v kontejneru jsou ze
+   stavu při buildu a mezitím mohl přijít cizí commit (noční běh pipeline).
+   Před každým zápisem se proto načte aktuální obsah z API i s jeho `sha`.
+2. **`sha` je zámek.** Když mezi čtením a zápisem někdo commitne, GitHub vrátí
+   409 — a prostředí zopakuje **celý** postup nad čerstvým obsahem. Slepé
+   opakování zápisu by cizí práci přepsalo.
+
+Spojení se ověřuje hned při otevření prostředí, ne až při zápisu: chybu
+oprávnění je lepší vidět dřív, než člověk vyplní popis snímku.
 
 Zápis do YAML je **textový vpich**, ne přeparsování dokumentu: první verze
 soubor načetla a vypsala zpátky, čímž přeformátovala dlouhé složené bloky a
