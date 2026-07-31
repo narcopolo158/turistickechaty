@@ -11,6 +11,57 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (noc, dodatek 3) — galerie chat, profilová fotka a přesun snímku k lanovce či středisku
+
+**Zadání Michala** (při procházení nalezených fotek v adminu): *„jsou tam mezi
+fotkami chat dobré fotky třeba k lanovce — je škoda je jen zahodit. Dále můžeme
+mít u každé chaty víc fotek — jednu profilovou a pak další; připrav na to
+profily chat a vyřeš to v adminu — přesun fotek k jinému objektu (může být
+středisko i lanovka i jiná chata) + správu galerií chat a možnost poslat do ní
+fotku z třídění nalezených fotek."*
+
+**Profilová fotka je nově vědomá volba.** Do teď se hero poznal tak, že to byla
+PRVNÍ současná fotka, kterou vrátila databáze. S jedinou fotkou to fungovalo;
+s galerií by o hlavním snímku rozhodovalo pořadí v joinu, tedy náhoda. Kolekce
+Fotky má proto `hero` a `poradi`, web řadí galerii podle pořadí a hero bere
+z příznaku — a když ho nemá žádná fotka, platí staré pravidlo, takže starší
+data zůstávají v platnosti.
+
+**Přesun k jinému objektu.** Panel výběru fotek má nově cíl: **chata / středisko
+/ lanovka**, seznam se skládá z dat (89 chat, 22 středisek, 44 lanovek), ne
+z číselníku. U chat se navíc vybírá role — profilová, nebo další do galerie.
+Fotky objektů bez profilu jdou do nového `data/fotky/_redakcni.yaml`; seed je
+stáhne a založí v kolekci Fotky s vazbou na středisko (slug) nebo lanovku
+(oblast + slug), kde už **mají přednost před automatickým výběrem z Commons** —
+tahle vrstva v projektu byla od 30. 7., jen do ní nevedla cesta z prostředí.
+Slug lanovky se počítá týmž `slugLanovky` jako na webu; kdyby si ho fronta
+počítala po svém, fotka by mířila na jiné URL, než jaké má mini-stránka dráhy.
+
+**Nová obrazovka `/admin/galerie`.** Chaty, které mají aspoň jednu fotku (dnes
+44), s miniaturami a u každé fotky: *Profilová*, šipky pro pořadí a *Odebrat…*
+s povinným důvodem. Profilová je vždycky právě jedna — nastavení jedné ostatním
+příznak sebere; dvě by znamenaly návrat k náhodě.
+
+**Dva nálezy z ostrého testu** (celý řetěz jsem projel přes API v přihlášeném
+adminu): *(1)* zápis fotky lanovce spadl na `ENOENT` — nová složka `data/fotky/`
+neexistovala. GitHub API si cestu vyrobí samo, souborový systém ne; disková
+větev teď složku založí. *(2)* Editace galerie se nedá dělat textovým vpichem,
+tak se blok `fotky:` vyřízne, přeparsuje a vloží zpátky — jenže první verze
+uvozovala plošně a přesun jediné fotky měl diff přes celý blok. S `PLAIN`
+uvozováním mění přesun **čtyři řádky** z 296.
+
+**Testy:** 681 zelených (7 nových na galerii, profilovou fotku, přesun a cílové
+objekty), `npm run kontrola` zelená, obě obrazovky ověřené v prohlížeči.
+
+**Příště:** projít fotky v adminu — teď už je kam posílat i to, co k chatě
+nepatří.
+
+**Otázky pro Michala:** 1) Galerie zatím **není vidět na profilu chaty** — web
+bere jen profilovou fotku. Chceš pás s galerií na profilu (a kde: pod
+hlavičkou, nebo až za historií)? 2) Fotka poslaná lanovce nebo středisku se
+objeví po nejbližším seedu, tedy po deployi — sedí to, nebo ji chceš stahovat
+hned? 3) Trvá otázka, jestli má prostředí commitovat rovnou do main.
+
 ## 2026-07-31 (noc, dodatek 2) — prostředí umí zapisovat z nasazeného adminu (commit přes GitHub API), ověřeno naostro
 
 **Zadání Michala:** *„prostředí bych chtěl používat z adminu."* Do teď zápis

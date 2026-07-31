@@ -67,7 +67,32 @@ Slabé nálezy jsou schované schválně: kategorie i fulltext jsou shoda **jmé
 Chata Barborka si takhle přitáhla 50 snímků polské „Barbórky" (hornického
 svátku v Bytomi), chata Barbora 28 portrétů herečky Barbory Štěpánové.
 
-### 3. Pohled „mezery v profilech"
+### 3. `/admin/galerie` — správa galerií chat
+
+Chata může mít víc fotek: jednu **profilovou** a další do galerie (zadání
+Michala 31. 7. 2026). Obrazovka umí přepnout profilovou, přeházet pořadí
+a odebrat fotku — odebrání s povinným důvodem, který jde do commitu.
+
+Profilová je vždycky **právě jedna**: nastavení jedné ostatním příznak sebere.
+Do 31. 7. 2026 byl hero prostě první současná fotka, kterou vrátila databáze —
+s galerií by o hlavním snímku rozhodovalo pořadí v joinu, tedy náhoda. Když
+`hero` nemá žádná fotka, staré pravidlo pořád platí a obrazovka to říká nahlas
+(„profilová — první v pořadí").
+
+### 4. Přesun fotky k jinému objektu
+
+Mezi kandidátními snímky chaty se často najde dobrá fotka **něčeho jiného** —
+typicky lanovky, která k chatě vede. Zahodit ji je škoda: patří jinam, ne pryč.
+Panel výběru proto nabízí cíl (chata / středisko / lanovka; seznam se skládá
+z dat, ne z číselníku) a u chat i roli (profilová / do galerie).
+
+Fotky objektů bez profilu jdou do `data/fotky/_redakcni.yaml`; seed je stáhne
+a založí v kolekci Fotky s vazbou na středisko (slug) nebo lanovku
+(oblast + slug), kde už mají **přednost před automatickým výběrem z Commons**
+(`src/lib/fotky-redakcni.ts`). Slug lanovky se počítá stejně jako na webu —
+jinak by fotka mířila na jiné URL, než jaké má mini-stránka dráhy.
+
+### 5. Pohled „mezery v profilech"
 
 Fronta hlídá i to, co objektu chybí, **ačkoli už na webu stojí**: GPS (bez ní
 se nedostane na mapu), kontakt, otvírací doba, přístupová trasa (z výstupu
@@ -75,7 +100,7 @@ DATA-06) a fotka. U každého profilu ukazuje i **nejstarší `checked`** např�
 bloky ověření — podle něj se pozná stárnutí. Nic z toho nespadne samo, tak to
 musí někdo počítat.
 
-### 4. `npm run kontrola` → krok `fronta`
+### 6. `npm run kontrola` → krok `fronta`
 
 Obrazovku vidí jen ten, kdo si ji otevře; číslo v CI vidí každý. Report běží
 při každé kontrole a vypisuje rozpracovanost i jmenný seznam profilů, kterým
@@ -85,7 +110,7 @@ Commons nenabídla vůbec nic.
 odložený objekt, který už má profil, a rozhodnutí o fotce k neexistujícímu
 objektu. Samotná rozpracovanost vada není — je to práce.
 
-### 5. `scripts/fotky-prehlidka.ts` — kontaktní arch mimo admin
+### 7. `scripts/fotky-prehlidka.ts` — kontaktní arch mimo admin
 
 Statická HTML stránka s týmiž daty, k projití bez spuštěné aplikace. Zůstává
 jako záloha a pro rychlé přehlédnutí celé nabídky.
@@ -125,10 +150,13 @@ Dvě věci, na kterých v režimu `github` stojí, jestli se práce neztratí:
 Spojení se ověřuje hned při otevření prostředí, ne až při zápisu: chybu
 oprávnění je lepší vidět dřív, než člověk vyplní popis snímku.
 
-Zápis do YAML je **textový vpich**, ne přeparsování dokumentu: první verze
+Zápis nové fotky do YAML je **textový vpich**, ne přeparsování dokumentu: první verze
 soubor načetla a vypsala zpátky, čímž přeformátovala dlouhé složené bloky a
 diff jednoho přidaného snímku měl 97 změněných řádků. Teď mění jen to, co
-přibylo.
+přibylo. Editace galerie (pořadí, profilová, odebrání) textovým vpichem nejde,
+tak se vyřízne **jen blok `fotky:`**, přeparsuje sám o sobě a vloží zpátky —
+zbytek souboru se nedotkne. Přesun jedné fotky tak mění čtyři řádky, ne celý
+soubor.
 
 ## Co systém ZATÍM nehlídá
 
