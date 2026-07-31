@@ -72,6 +72,14 @@ export const spustFrontu = (koren = process.cwd()): { vady: number } => {
     console.log(`  ${o.oblast}: ${o.kandidatiNezpracovani} kandidatu, ${o.profilyBezFotky} profilu bez fotky`)
   }
 
+  const pr = souhrn.profily
+  console.log(
+    `profily: ${pr.sMezerou}/${pr.celkem} ma aspon jednu mezeru | ${pr.zastaraleOvereni} s overenim starsim nez rok`,
+  )
+  if (pr.dleDruhu.length > 0) {
+    console.log(`  chybi: ${pr.dleDruhu.map((d) => `${d.pocet}× ${d.druh}`).join(', ')}`)
+  }
+
   // Profily, kterým Commons nenabídla vůbec nic — ty se z fronty samy
   // nevyřeší a je fér je vypsat jmenovitě, ne je nechat v čísle.
   const bezNabidky = frontaFotek(koren)

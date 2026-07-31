@@ -4,7 +4,7 @@ import { join } from 'node:path'
 import { getPayload } from 'payload'
 
 import config from '@/payload.config'
-import { frontaFotek, souhrnFronty, stavKandidatu } from '@/lib/redakce/fronta'
+import { frontaFotek, mezeryProfilu, souhrnFronty, stavKandidatu } from '@/lib/redakce/fronta'
 import {
   pridejOdlozeni,
   pridejRozhodnutiFotky,
@@ -58,11 +58,13 @@ export async function GET(req: Request): Promise<Response> {
   const url = new URL(req.url)
   const oblast = url.searchParams.get('oblast') ?? undefined
   const k = koren()
+  const dnes = new Date().toISOString().slice(0, 10)
   return odpoved(200, {
     zapisPovolen: zapisPovolen(),
-    souhrn: souhrnFronty(k),
+    souhrn: souhrnFronty(k, dnes),
     fotky: frontaFotek(k, oblast),
     kandidati: stavKandidatu(k).filter((kand) => !oblast || kand.oblast === oblast),
+    mezery: mezeryProfilu(k, dnes).filter((m) => !oblast || m.oblast === oblast),
   })
 }
 

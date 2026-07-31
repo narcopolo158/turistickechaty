@@ -68,9 +68,38 @@ export type FotkyChaty = {
   odmitnute: { soubor: string; duvod: string }[]
 }
 
+/**
+ * Mezera v profilu — údaj, který na webu chybí, ačkoli objekt na webu stojí.
+ *
+ * PROČ (doplněno 31. 7. 2026 k původní frontě): fronta hlídala, jestli profil
+ * VZNIKL a má fotku. Chata ale může mít profil a být skoro prázdná — bez GPS
+ * se nedostane na mapu, bez kontaktu si čtenář neověří otvíračku, bez data
+ * kontroly nikdo nepozná, že údaj zestárl. Tohle jsou práce, které se jinak
+ * neozvou: nic nespadne, jen stránka mlčí.
+ */
+export type MezeraProfilu = {
+  slug: string
+  nazev: string
+  oblast: string
+  /** Čeho se nedostává — čitelné názvy, jdou rovnou do reportu i na obrazovku. */
+  chybi: string[]
+  /** Nejstarší `checked` napříč bloky ověření (podle něj se pozná stárnutí). */
+  nejstarsiOvereni: string | null
+  /** Stáří nejstaršího ověření ve dnech; `null` = objekt nemá ověření žádné. */
+  stariDnu: number | null
+}
+
 export type Souhrn = {
   kandidati: { celkem: number; nezpracovan: number; odlozen: number; povysen: number; vyrazen: number }
   fotky: { profilu: number; sFotkou: number; cekaRozhodnuti: number; bezNabidky: number; uzavrenych: number }
+  /** Úplnost profilů: co na webu stojí, ale mlčí. */
+  profily: {
+    celkem: number
+    sMezerou: number
+    dleDruhu: { druh: string; pocet: number }[]
+    /** Profily s nejstarším ověřením starším než rok. */
+    zastaraleOvereni: number
+  }
   /** Oblasti, ve kterých fronta něco drží — ať je vidět, kde se stojí. */
   dleOblasti: { oblast: string; kandidatiNezpracovani: number; profilyBezFotky: number }[]
 }
@@ -254,10 +283,93 @@ export const plocha = (rozmery: string | undefined): number => {
   return m ? Number(m[1]) * Number(m[2]) : 0
 }
 
+
+/** Nejstarší `checked` napříč bloky ověření profilu. */
+const nejstarsiChecked = (profil: Record<string, unknown>): string | null => {
+  const data: string[] = []
+  for (const [klic, hodnota] of Object.entries(profil)) {
+    if (!klic.startsWith('overeni') || !hodnota || typeof hodnota !== 'object') continue
+    const checked = (hodnota as { checked?: unknown }).checked
+    if (typeof checked === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(checked)) data.push(checked)
+    else if (checked instanceof Date) data.push(checked.toISOString().slice(0, 10))
+  }
+  return data.sort()[0] ?? null
+}
+
+/** Slugy chat, ke kterým DATA-06 spočítala aspoň jednu přístupovou trasu. */
+const chatySTrasami = (koren: string): Set<string> => {
+  const slugy = new Set<string>()
+  const korenTras = join(koren, 'data', 'trasy')
+  let oblasti: string[] = []
+  try {
+    oblasti = readdirSync(korenTras, { encoding: 'utf8' })
+  } catch {
+    return slugy
+  }
+  for (const oblast of oblasti) {
+    const soubor = join(korenTras, oblast, 'pristupove-trasy.json')
+    if (!existsSync(soubor)) continue
+    try {
+      const data = JSON.parse(readFileSync(soubor, 'utf8')) as { chaty?: Record<string, unknown> | unknown[] }
+      const chaty = data.chaty ?? {}
+      for (const klic of Array.isArray(chaty)
+        ? chaty.map((c) => (c as { slug?: string }).slug ?? '')
+        : Object.keys(chaty))
+        if (klic) slugy.add(klic)
+    } catch {
+      // Rozbitý soubor tras není chyba fronty — hlásí ho vlastní kontrola.
+    }
+  }
+  return slugy
+}
+
+/**
+ * Mezery profilů: co objektu na webu chybí, ačkoli na webu stojí.
+ * `dnes` se předává, aby šlo stárnutí testovat bez závislosti na kalendáři.
+ */
+export const mezeryProfilu = (koren: string, dnes: string): MezeraProfilu[] => {
+  const sTrasami = chatySTrasami(koren)
+  const vysledek: MezeraProfilu[] = []
+  for (const soubor of yamlSoubory(join(koren, 'data', 'chaty'))) {
+    const d = nactiYaml<Record<string, unknown>>(soubor)
+    if (!d || typeof d.slug !== 'string') continue
+    const kontakty = (d.kontakty ?? {}) as { telefon?: unknown; web?: unknown; email?: unknown }
+    const chybi: string[] = []
+    if (d.lat == null || d.lng == null) chybi.push('GPS')
+    if (!kontakty.telefon && !kontakty.web && !kontakty.email) chybi.push('kontakt')
+    if (!d.otviraciDoba && !d.sezona) chybi.push('otvírací doba')
+    if (!sTrasami.has(d.slug)) chybi.push('přístupová trasa')
+    if (!Array.isArray(d.fotky) || d.fotky.length === 0) chybi.push('fotka')
+    const nejstarsi = nejstarsiChecked(d)
+    const stariDnu =
+      nejstarsi != null
+        ? Math.round((Date.parse(dnes) - Date.parse(nejstarsi)) / 86_400_000)
+        : null
+    vysledek.push({
+      slug: d.slug,
+      nazev: typeof d.nazev === 'string' ? d.nazev : d.slug,
+      oblast: typeof d.oblast === 'string' ? d.oblast : '—',
+      chybi,
+      nejstarsiOvereni: nejstarsi,
+      stariDnu,
+    })
+  }
+  // Nejvíc chybějícího napřed; při shodě nejstarší ověření.
+  return vysledek.sort(
+    (a, b) => b.chybi.length - a.chybi.length || (b.stariDnu ?? 0) - (a.stariDnu ?? 0),
+  )
+}
+
+/** Hranice, za kterou se ověření považuje za zastaralé (konvence: rok). */
+export const ROK_DNU = 365
+
 /** Čísla do reportu i do hlavičky redakčního prostředí. */
-export const souhrnFronty = (koren: string): Souhrn => {
+export const souhrnFronty = (koren: string, dnes = new Date().toISOString().slice(0, 10)): Souhrn => {
   const kandidati = stavKandidatu(koren)
   const fotky = frontaFotek(koren)
+  const mezery = mezeryProfilu(koren, dnes)
+  const dleDruhu = new Map<string, number>()
+  for (const m of mezery) for (const druh of m.chybi) dleDruhu.set(druh, (dleDruhu.get(druh) ?? 0) + 1)
   const profily = fotky.filter((f) => f.jeProfil)
   const oblasti = [...new Set([...kandidati.map((k) => k.oblast), ...fotky.map((f) => f.oblast)])].sort()
   return {
@@ -274,6 +386,12 @@ export const souhrnFronty = (koren: string): Souhrn => {
       cekaRozhodnuti: profily.filter((f) => !f.maFotku && !f.uzavrena && f.ceka.length > 0).length,
       bezNabidky: profily.filter((f) => !f.maFotku && !f.uzavrena && f.ceka.length === 0).length,
       uzavrenych: profily.filter((f) => !!f.uzavrena).length,
+    },
+    profily: {
+      celkem: mezery.length,
+      sMezerou: mezery.filter((m) => m.chybi.length > 0).length,
+      dleDruhu: [...dleDruhu].map(([druh, pocet]) => ({ druh, pocet })).sort((a, b) => b.pocet - a.pocet),
+      zastaraleOvereni: mezery.filter((m) => (m.stariDnu ?? 0) > ROK_DNU).length,
     },
     dleOblasti: oblasti.map((oblast) => ({
       oblast,

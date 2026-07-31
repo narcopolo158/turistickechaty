@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import React, { useCallback, useEffect, useState } from 'react'
 
-import type { Kandidat, Souhrn } from '@/lib/redakce/fronta'
+import type { Kandidat, MezeraProfilu, Souhrn } from '@/lib/redakce/fronta'
 
 /**
  * FRONTA — jediná obrazovka, na které je vidět, co ještě čeká.
@@ -21,7 +21,10 @@ import type { Kandidat, Souhrn } from '@/lib/redakce/fronta'
  * odkaz do OSM, signály) a hlídá, že se na objekt nezapomene.
  */
 
-type Data = { zapisPovolen: boolean; souhrn: Souhrn; kandidati: Kandidat[] }
+type Data = { zapisPovolen: boolean; souhrn: Souhrn; kandidati: Kandidat[]; mezery: MezeraProfilu[] }
+
+/** Pátý „stav" není stav kandidáta, ale pohled na hotové profily. */
+type Pohled = Kandidat['stav'] | 'mezery'
 
 const barvy = { ink: '#26221d', muted: '#6d675e', line: '#e3ded3', red: '#c8352a', paper: '#fdfaf2', zelena: '#3d6b40' }
 
@@ -35,7 +38,7 @@ const STAVY: { klic: Kandidat['stav']; popis: string }[] = [
 export default function FrontaKlient() {
   const [data, setData] = useState<Data | null>(null)
   const [chyba, setChyba] = useState<string | null>(null)
-  const [stav, setStav] = useState<Kandidat['stav']>('nezpracovan')
+  const [stav, setStav] = useState<Pohled>('nezpracovan')
   const [oblast, setOblast] = useState('')
   const [hlaska, setHlaska] = useState<string | null>(null)
 
@@ -72,6 +75,9 @@ export default function FrontaKlient() {
   const k = data.souhrn.kandidati
   const f = data.souhrn.fotky
   const seznam = data.kandidati.filter((x) => x.stav === stav && (!oblast || x.oblast === oblast))
+  const seznamMezer = (data.mezery ?? []).filter(
+    (m) => m.chybi.length > 0 && (!oblast || m.oblast === oblast),
+  )
   const oblasti = data.souhrn.dleOblasti.map((o) => o.oblast)
 
   return (
@@ -96,6 +102,11 @@ export default function FrontaKlient() {
           { popis: 'čeká na výběr', hodnota: f.cekaRozhodnuti, zvyraznit: f.cekaRozhodnuti > 0 },
           { popis: 'bez nabídky z Commons', hodnota: f.bezNabidky },
           { popis: 'uzavřeno bez fotky', hodnota: f.uzavrenych },
+        ]} />
+        <Karta titul="Úplnost profilů" polozky={[
+          { popis: 'profilů s mezerou', hodnota: `${data.souhrn.profily.sMezerou}/${data.souhrn.profily.celkem}`, zvyraznit: data.souhrn.profily.sMezerou > 0 },
+          ...data.souhrn.profily.dleDruhu.map((d) => ({ popis: `bez: ${d.druh}`, hodnota: d.pocet })),
+          { popis: 'ověření starší než rok', hodnota: data.souhrn.profily.zastaraleOvereni, zvyraznit: data.souhrn.profily.zastaraleOvereni > 0 },
         ]} />
         <div>
           <h3 style={{ font: '600 12px/1 system-ui', textTransform: 'uppercase', letterSpacing: '.08em', color: barvy.muted, margin: '0 0 8px' }}>
@@ -126,7 +137,7 @@ export default function FrontaKlient() {
       </p>
 
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center', margin: '0 0 12px' }}>
-        {STAVY.map((s) => (
+        {[...STAVY, { klic: 'mezery' as const, popis: 'mezery v profilech' }].map((s) => (
           <button
             key={s.klic}
             type="button"
@@ -141,7 +152,11 @@ export default function FrontaKlient() {
               cursor: 'pointer',
             }}
           >
-            {s.popis} ({data.kandidati.filter((x) => x.stav === s.klic).length})
+            {s.popis} (
+            {s.klic === 'mezery'
+              ? data.souhrn.profily.sMezerou
+              : data.kandidati.filter((x) => x.stav === s.klic).length}
+            )
           </button>
         ))}
         <select value={oblast} onChange={(e) => setOblast(e.target.value)} style={{ marginLeft: 'auto', padding: '6px 9px', borderRadius: 8, border: `1px solid ${barvy.line}` }}>
@@ -154,6 +169,41 @@ export default function FrontaKlient() {
         </select>
       </div>
 
+      {stav === 'mezery' ? (
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+          <thead>
+            <tr style={{ textAlign: 'left', color: barvy.muted, fontSize: 11.5, textTransform: 'uppercase', letterSpacing: '.06em' }}>
+              <th style={{ padding: '6px 8px 6px 0' }}>Profil</th>
+              <th style={{ padding: '6px 8px' }}>Oblast</th>
+              <th style={{ padding: '6px 8px' }}>Chybí</th>
+              <th style={{ padding: '6px 8px' }}>Nejstarší ověření</th>
+            </tr>
+          </thead>
+          <tbody>
+            {seznamMezer.map((m) => (
+              <tr key={`${m.oblast}/${m.slug}`} style={{ borderTop: `1px solid ${barvy.line}` }}>
+                <td style={{ padding: '7px 8px 7px 0' }}>
+                  <b>{m.nazev}</b>
+                  <br />
+                  <span style={{ font: '11px ui-monospace, monospace', color: barvy.muted }}>{m.slug}</span>
+                </td>
+                <td style={{ padding: '7px 8px', color: barvy.muted }}>{m.oblast}</td>
+                <td style={{ padding: '7px 8px' }}>
+                  {m.chybi.map((c) => (
+                    <span key={c} style={{ display: 'inline-block', border: `1px solid ${barvy.line}`, borderRadius: 12, padding: '1px 8px', marginRight: 5, fontSize: 11.5 }}>
+                      {c}
+                    </span>
+                  ))}
+                </td>
+                <td style={{ padding: '7px 8px', fontSize: 12, color: barvy.muted }}>
+                  {m.nejstarsiOvereni ?? '—'}
+                  {m.stariDnu != null ? ` (${m.stariDnu} dní)` : ''}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
         <thead>
           <tr style={{ textAlign: 'left', color: barvy.muted, fontSize: 11.5, textTransform: 'uppercase', letterSpacing: '.06em' }}>
@@ -223,7 +273,8 @@ export default function FrontaKlient() {
           ))}
         </tbody>
       </table>
-      {seznam.length === 0 && (
+      )}
+      {stav !== 'mezery' && seznam.length === 0 && (
         <p style={{ color: barvy.muted, fontStyle: 'italic', marginTop: 14 }}>
           Nic tu není — v tomhle stavu (a výběru oblasti) žádný objekt neleží.
         </p>

@@ -67,7 +67,15 @@ Slabé nálezy jsou schované schválně: kategorie i fulltext jsou shoda **jmé
 Chata Barborka si takhle přitáhla 50 snímků polské „Barbórky" (hornického
 svátku v Bytomi), chata Barbora 28 portrétů herečky Barbory Štěpánové.
 
-### 3. `npm run kontrola` → krok `fronta`
+### 3. Pohled „mezery v profilech"
+
+Fronta hlídá i to, co objektu chybí, **ačkoli už na webu stojí**: GPS (bez ní
+se nedostane na mapu), kontakt, otvírací doba, přístupová trasa (z výstupu
+DATA-06) a fotka. U každého profilu ukazuje i **nejstarší `checked`** napříč
+bloky ověření — podle něj se pozná stárnutí. Nic z toho nespadne samo, tak to
+musí někdo počítat.
+
+### 4. `npm run kontrola` → krok `fronta`
 
 Obrazovku vidí jen ten, kdo si ji otevře; číslo v CI vidí každý. Report běží
 při každé kontrole a vypisuje rozpracovanost i jmenný seznam profilů, kterým
@@ -77,7 +85,7 @@ Commons nenabídla vůbec nic.
 odložený objekt, který už má profil, a rozhodnutí o fotce k neexistujícímu
 objektu. Samotná rozpracovanost vada není — je to práce.
 
-### 4. `scripts/fotky-prehlidka.ts` — kontaktní arch mimo admin
+### 5. `scripts/fotky-prehlidka.ts` — kontaktní arch mimo admin
 
 Statická HTML stránka s týmiž daty, k projití bez spuštěné aplikace. Zůstává
 jako záloha a pro rychlé přehlédnutí celé nabídky.
@@ -104,15 +112,13 @@ přibylo.
 
 Poctivý seznam děr, ať se neztratí:
 
-1. **Úplnost profilů.** Fronta hlídá, jestli profil vznikl a má fotku — ne
-   jestli má GPS, otvírací dobu, kontakty nebo přístupové trasy. Chata může být
-   „hotová" a přitom skoro prázdná.
-2. **Stárnutí údajů.** `checked` se nikde nesleduje proti kalendáři; profil
-   ověřený před rokem vypadá stejně jako včerejší. (Backlog: *Datová volatilita
-   → kadence ověřování*.)
-3. **Objekty, které OSM nemá.** Externí katalog vede tři jizerské objekty, které
+1. **Objekty, které OSM nemá.** Externí katalog vede tři jizerské objekty, které
    v exportu nejsou (DATA-31) — do fronty se nedostanou, protože kandidátní
    soubor pro ně nikdo nezaložil.
-4. **Komunitní podání.** Otisky a fotky od čtenářů čekají jako koncepty
+2. **Komunitní podání.** Otisky a fotky od čtenářů čekají jako koncepty
    v Payloadu; ve frontě zatím nejsou.
-5. **Povýšení jedním klikem.** Vědomě chybí — viz výš.
+3. **Kadence ověřování.** Stáří `checked` se počítá a zastaralé profily se
+   hlásí, ale hranice je zatím jedna pro všechno (rok). Backlog *Datová
+   volatilita* chce různou kadenci pro stabilní pole (GPS, výška) a proměnlivá
+   (telefon, otvíračka).
+4. **Povýšení jedním klikem.** Vědomě chybí — viz výš.

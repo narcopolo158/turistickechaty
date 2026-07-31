@@ -11,6 +11,47 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (dodatek) — fronta hlídá i to, co chybí hotovým profilům
+
+**Hotovo:** Uzavřel jsem první dvě díry z vlastního seznamu v
+`docs/REDAKCNI-FRONTA.md`. Fronta do teď hlídala, jestli profil **vznikl**
+a má fotku — jenže chata může mít profil a přitom mlčet: bez GPS se nedostane
+na mapu, bez kontaktu si čtenář neověří otvíračku, bez data kontroly nikdo
+nepozná, že údaj zestárl. Nic z toho nespadne, takže to nikdo nenajde, dokud
+se to nepočítá.
+
+Nový pohled **„mezery v profilech"** (`/admin/fronta`, pátý chip) vypisuje
+u každého profilu, co mu chybí — GPS, kontakt, otvírací doba, přístupová trasa
+(bere se z výstupu DATA-06, ne z YAML profilu, kde trasy nejsou) a fotka —
+plus **nejstarší `checked`** napříč bloky ověření a jeho stáří ve dnech.
+Řadí se podle počtu mezer, takže nahoře stojí to nejprázdnější. Totéž je
+v reportu `npm run kontrola` → `fronta`.
+
+**Co to hned ukázalo:** 64 z 89 profilů má aspoň jednu mezeru — 53× chybí
+otvírací doba, 46× fotka, 18× kontakt, 5× přístupová trasa, 3× GPS. Zastaralé
+ověření zatím nemá ani jeden profil (korpus je mladý, nejstarší kontrola je
+z 25. 7.). Nejchudší jsou Chata Rozhled a Chata Rezek — čtyři, respektive tři
+chybějící věci.
+
+Stáří se počítá k **předanému dni**, ne ke kalendáři: `souhrnFronty(koren,
+dnes)`. Jinak by test za rok začal hnít a nikdo by nevěděl proč.
+
+**Poznámka k triáži:** zbylých 66 kandidátů (41 Jizerky, 14 Krkonoše, zbytek
+Ještěd a Český ráj) se dnes posunout nedalo — potřebují **druhý pramen**, a na
+ten se ze sandboxu nedosáhne (WebFetch čeká na schválení, externí katalog už
+byl vytěžen v předchozí triáži). Fronta je aspoň drží na očích.
+
+**Testy:** 660 zelených (4 nové na mezery a stárnutí), `npm run kontrola`
+zelená, pohled ověřen v prohlížeči.
+
+**Příště:** výběr fotek podle toho, co Michal v prostředí vybere; triáž
+kandidátů, jakmile bude čím doložit druhý pramen.
+
+**Otázky pro Michala:** trvají tři z předchozího zápisu (kde chceš prostředí
+používat — lokálně vs. přes GitHub API z nasazeného adminu; sedí ti, že
+povýšení zůstává ruční; a jestli má fronta hlídat i kadenci ověřování po
+polích, ne jednou hranicí pro všechno).
+
 ## 2026-07-31 (pozdě v noci) — redakční prostředí v adminu: výběr fotek, fronta práce a záruka, že nic nezůstane ležet
 
 **Zadání Michala:** *„udělej mi prostředí v adminu na výběr fotek a pořádně to

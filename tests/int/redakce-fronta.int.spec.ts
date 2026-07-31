@@ -17,7 +17,7 @@ import { join } from 'node:path'
 import { parse } from 'yaml'
 import { describe, expect, it } from 'vitest'
 
-import { frontaFotek, souhrnFronty, stavKandidatu } from '@/lib/redakce/fronta'
+import { frontaFotek, mezeryProfilu, souhrnFronty, stavKandidatu } from '@/lib/redakce/fronta'
 import {
   licenceDoCiselniku,
   pridejOdlozeni,
@@ -276,5 +276,63 @@ describe('vady fronty (kontrola)', () => {
     const zpravy = vadyFronty(koren).map((v) => v.zprava).join(' ')
     expect(zpravy).toMatch(/neznámý objekt/)
     expect(zpravy).toMatch(/nemá důvod/)
+  })
+})
+
+/**
+ * Úplnost profilů (doplněno 31. 7. 2026). Fronta původně hlídala jen to, jestli
+ * profil VZNIKL a má fotku — jenže chata může mít profil a přitom mlčet: bez
+ * GPS se nedostane na mapu, bez kontaktu si čtenář neověří otvíračku, bez data
+ * kontroly nikdo nepozná, že údaj zestárl. Nic z toho nespadne, tak to musí
+ * někdo počítat.
+ */
+describe('mezery v profilech', () => {
+  const postavProfil = (obsah: string) => {
+    const koren = mkdtempSync(join(tmpdir(), 'mezery-'))
+    mkdirSync(join(koren, 'data', 'chaty', 'krkonose'), { recursive: true })
+    mkdirSync(join(koren, 'data', 'trasy', 'krkonose'), { recursive: true })
+    writeFileSync(join(koren, 'data', 'chaty', 'krkonose', 'chata.yaml'), obsah, 'utf8')
+    writeFileSync(
+      join(koren, 'data', 'trasy', 'krkonose', 'pristupove-trasy.json'),
+      JSON.stringify({ chaty: { 'jina-chata': {} } }),
+      'utf8',
+    )
+    return koren
+  }
+
+  it('prázdný profil hlásí všechno, co chybí', () => {
+    const koren = postavProfil('nazev: Chata\nslug: chata\noblast: krkonose\n')
+    const m = mezeryProfilu(koren, '2026-07-31')[0]!
+    expect(m.chybi.sort()).toEqual(['GPS', 'fotka', 'kontakt', 'otvírací doba', 'přístupová trasa'].sort())
+    expect(m.nejstarsiOvereni).toBeNull()
+    expect(m.stariDnu).toBeNull()
+  })
+
+  it('vyplněný profil nehlásí nic a trasu bere z výstupu DATA-06', () => {
+    const koren = postavProfil(
+      'nazev: Chata\nslug: jina-chata\noblast: krkonose\nlat: 50.7\nlng: 15.7\nsezona: celoročně\nkontakty:\n  telefon: 123\nfotky:\n  - stahnoutZ: https://x.jpg\n',
+    )
+    expect(mezeryProfilu(koren, '2026-07-31')[0]!.chybi).toEqual([])
+  })
+
+  /** Stárnutí se počítá k předanému dni, ne ke kalendáři — jinak by test hnil. */
+  it('stáří ověření bere NEJSTARŠÍ blok, ne nejnovější', () => {
+    const koren = postavProfil(
+      'nazev: Chata\nslug: chata\noblast: krkonose\novereniLokace:\n  checked: 2024-07-31\novereniProvoz:\n  checked: 2026-07-30\n',
+    )
+    const m = mezeryProfilu(koren, '2026-07-31')[0]!
+    expect(m.nejstarsiOvereni).toBe('2024-07-31')
+    expect(m.stariDnu).toBe(730)
+  })
+
+  it('souhrn počítá profily s mezerou i zastaralá ověření', () => {
+    const koren = postavProfil(
+      'nazev: Chata\nslug: chata\noblast: krkonose\novereniLokace:\n  checked: 2024-07-31\n',
+    )
+    const s = souhrnFronty(koren, '2026-07-31')
+    expect(s.profily.celkem).toBe(1)
+    expect(s.profily.sMezerou).toBe(1)
+    expect(s.profily.zastaraleOvereni).toBe(1)
+    expect(s.profily.dleDruhu.map((d) => d.druh)).toContain('GPS')
   })
 })
