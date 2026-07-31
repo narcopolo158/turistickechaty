@@ -44,6 +44,20 @@ export const konfiguraceZProstredi = (
   return { token, repo, vetev: env.REDAKCE_GITHUB_BRANCH?.trim() || 'main' }
 }
 
+/**
+ * Které proměnné pro zápis přes GitHub v prostředí chybí.
+ *
+ * PROČ JMENOVITĚ: `REDAKCE_GITHUB_REPO` má hodnotu v `.env.example`, což svádí
+ * k domněnce, že je to výchozí nastavení — ale `.env.example` je jen vzor, do
+ * běhu se nenačítá nikde. Kdo na nasazeném webu vyplní jen token, zůstane
+ * v režimu jen pro čtení a obecná hláška „zápis není nastavený" mu neřekne
+ * proč. (Nález 1. 8. 2026, když si Michal nastavoval token.)
+ */
+export const chybejiciProstredi = (
+  env: Record<string, string | undefined> = process.env,
+): string[] =>
+  (['REDAKCE_GITHUB_TOKEN', 'REDAKCE_GITHUB_REPO'] as const).filter((jmeno) => !env[jmeno]?.trim())
+
 const hlavicky = (k: Konfigurace) => ({
   authorization: `Bearer ${k.token}`,
   accept: 'application/vnd.github+json',

@@ -14,6 +14,7 @@ import { describe, expect, it, vi } from 'vitest'
 
 import {
   ChybaGitHubu,
+  chybejiciProstredi,
   konfiguraceZProstredi,
   nactiSoubor,
   overSpojeni,
@@ -38,6 +39,20 @@ describe('konfigurace z prostředí', () => {
     expect(konfiguraceZProstredi({})).toBeNull()
     expect(konfiguraceZProstredi({ REDAKCE_GITHUB_TOKEN: 'x' })).toBeNull()
     expect(konfiguraceZProstredi({ REDAKCE_GITHUB_REPO: 'a/b' })).toBeNull()
+  })
+
+  /**
+   * Hláška má jmenovat, co chybí. `.env.example` má u repa předvyplněnou
+   * hodnotu, což svádí k domněnce, že je to výchozí nastavení — kdo vyplní
+   * jen token, musí se to dozvědět, ne hádat.
+   */
+  it('řekne jmenovitě, která proměnná chybí', () => {
+    expect(chybejiciProstredi({})).toEqual(['REDAKCE_GITHUB_TOKEN', 'REDAKCE_GITHUB_REPO'])
+    expect(chybejiciProstredi({ REDAKCE_GITHUB_TOKEN: 'x' })).toEqual(['REDAKCE_GITHUB_REPO'])
+    expect(chybejiciProstredi({ REDAKCE_GITHUB_TOKEN: 'x', REDAKCE_GITHUB_REPO: 'a/b' })).toEqual([])
+    // Prázdné a mezerové hodnoty se počítají jako chybějící — v panelech
+    // hostingu se prázdný řádek zakládá snadno.
+    expect(chybejiciProstredi({ REDAKCE_GITHUB_TOKEN: '  ', REDAKCE_GITHUB_REPO: '' })).toHaveLength(2)
   })
 
   it('výchozí větev je main, dá se přebít', () => {

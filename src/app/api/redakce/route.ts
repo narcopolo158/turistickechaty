@@ -12,7 +12,7 @@ import {
   souhrnFronty,
   stavKandidatu,
 } from '@/lib/redakce/fronta'
-import { konfiguraceZProstredi, overSpojeni, upravSoubor } from '@/lib/redakce/github'
+import { chybejiciProstredi, konfiguraceZProstredi, overSpojeni, upravSoubor } from '@/lib/redakce/github'
 import {
   nastavProfilovou,
   presunVGalerii,
@@ -130,7 +130,7 @@ export async function GET(req: Request): Promise<Response> {
       spojeni?.zprava ??
       (uloziste?.rezim === 'disk'
         ? 'Zapisuje se do pracovní kopie repa — změny commitni ručně.'
-        : 'Zápis není nastavený (REDAKCE_GITHUB_TOKEN / REDAKCE_ZAPIS).'),
+        : `Zápis není nastavený — v prostředí chybí ${chybejiciProstredi().join(' a ')}.`),
     souhrn: souhrnFronty(k, dnes),
     fotky: frontaFotek(k, oblast),
     kandidati: stavKandidatu(k).filter((kand) => !oblast || kand.oblast === oblast),
@@ -181,8 +181,7 @@ export async function POST(req: Request): Promise<Response> {
   const uloziste = ulozisteProZapis()
   if (!uloziste)
     return odpoved(423, {
-      chyba:
-        'Zápis není nastavený. Na nasazeném webu ho zapne REDAKCE_GITHUB_TOKEN + REDAKCE_GITHUB_REPO, lokálně REDAKCE_ZAPIS=1.',
+      chyba: `Zápis není nastavený — v prostředí chybí ${chybejiciProstredi().join(' a ')}. (Lokálně stačí REDAKCE_ZAPIS=1.)`,
     })
 
   let telo: Telo
