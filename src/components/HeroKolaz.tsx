@@ -63,7 +63,9 @@ export default function HeroKolaz({
               // eslint-disable-next-line @next/next/no-img-element -- miniatura z Payload
               <img src={polaroid.url} alt={polaroid.popisek} loading="lazy" decoding="async" />
             ) : (
-              <span className="hf1-polaroid-ghost">foto hřebene — doplníme z doloženého profilu</span>
+              // Prázdný rámeček mluví za sebe; slovo „doložený" v popisce
+              // znělo jako poznámka z redakčního systému (31. 7. 2026).
+              <span className="hf1-polaroid-ghost">fotku sem teprve hledáme</span>
             )}
             <span className="hf1-rozek levy" aria-hidden="true" />
             <span className="hf1-rozek pravy" aria-hidden="true" />
@@ -154,7 +156,11 @@ export default function HeroKolaz({
         <span className="sroubek pravy" aria-hidden="true" />
       </TiltDiv>
 
-      <div className="hf1-kolaz-pozn">sběratelské artefakty — reálné skeny se svolením, jinak ghost</div>
+      {/* Popiska „sběratelské artefakty — reálné skeny se svolením, jinak
+          ghost" tu byla do 31. 7. 2026. Slovo „ghost" je název stavu ze
+          šablony, ne čeština, a původ skenů patří k tiráži, ne pod obrázek
+          (zadání Michala: zdroje pohromadě v patičce). Autor a licence
+          konkrétní fotky zůstávají přímo na ní. */}
     </div>
   )
 }

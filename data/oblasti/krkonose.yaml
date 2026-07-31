@@ -6,6 +6,13 @@ slug: krkonose
 typ: pohori
 zeme: cz
 
+# Skloňované tvary názvu do vět na webu (viz pole `sklonovani` v kolekci
+# Oblasti). Čeština je algoritmem neskloní — tvar patří k oblasti.
+sklonovani:
+  druhy: Krkonoš
+  sesty: Krkonoších
+
+
 charakteristika: >-
   Nejvyšší pohoří Česka, rozložené po obou stranách česko-polské hranice.
   Po hřebenech i v údolích stojí desítky horských bud a schronisek

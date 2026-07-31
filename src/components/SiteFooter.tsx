@@ -20,6 +20,12 @@ export default function SiteFooter() {
           MAPY.COM · KČT · SIL OFL FONTY
         </span>
       </div>
+      {/* Tiráž je od 31. 7. 2026 JEDINÉ místo, kde web mluví o původu dat
+          souhrnně (zadání Michala: „zdroje nemusí být na každém řádku textu,
+          ale nějak pohromadě v patičce nebo pod textem"). Z homepage kvůli
+          tomu zmizely poznámky pod jednotlivými pásy — přibyly sem fotky
+          a otisky, aby tu byl výčet úplný. Konkrétní zdroj konkrétního údaje
+          zůstává u údaje na profilu; tohle je přehled, ne náhrada. */}
       <div className="wrap zdroje">
         <span className="mn">Zdroje dat:</span> každý údaj o chatě má svůj zdroj uvedený přímo na
         profilu. Databázi chat stavíme nad weby jednotlivých chat a nad daty{' '}
@@ -27,7 +33,10 @@ export default function SiteFooter() {
         OpenStreetMap, licence <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL</a>.
         Mapové podklady <a href="https://api.mapy.com/copyright">Mapy.com</a> © Seznam.cz a.s. a
         další. Turistické značení v terénu spravuje{' '}
-        <a href="https://kct.cz">Klub českých turistů</a>.
+        <a href="https://kct.cz">Klub českých turistů</a>. Fotografie přebíráme z{' '}
+        <a href="https://commons.wikimedia.org">Wikimedia Commons</a> pod licencemi CC (autor
+        a licence u každého snímku), otisky razítek se svolením sbírky{' '}
+        <a href="https://razitkuj.cz">razitkuj.cz</a>.
       </div>
     </footer>
   )

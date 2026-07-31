@@ -4,6 +4,13 @@ nazev: Český ráj
 slug: cesky-raj
 typ: turisticka-oblast
 zeme: cz
+
+# Skloňované tvary názvu do vět na webu (viz pole `sklonovani` v kolekci
+# Oblasti). Čeština je algoritmem neskloní — tvar patří k oblasti.
+sklonovani:
+  druhy: Českého ráje
+  sesty: Českém ráji
+
 charakteristika: 'Pískovcová skalní města a vyhlídkové kopce mezi Turnovem a Jičínem. Není to
   pohoří a průvodce to nepředstírá — přesto tu turistické chaty stojí: v Prachovských skalách
   a na Kozákově, tedy na místech, kam se chodí za výhledem a kde je kde se najíst.'

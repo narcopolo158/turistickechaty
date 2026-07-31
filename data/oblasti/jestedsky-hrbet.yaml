@@ -21,6 +21,13 @@ slug: jestedsky-hrbet
 typ: pohori
 zeme: cz
 
+# Skloňované tvary názvu do vět na webu (viz pole `sklonovani` v kolekci
+# Oblasti). Čeština je algoritmem neskloní — tvar patří k oblasti.
+sklonovani:
+  druhy: Ještědského hřbetu
+  sesty: Ještědském hřbetu
+
+
 charakteristika: >-
   Úzký hrásťový hřbet, který se zvedá přímo nad Libercem a táhne se od
   severozápadu k jihovýchodu. Nemá plochý hřeben ani rašeliniště jako

@@ -1,4 +1,5 @@
-import { getChatyProMapu, getZiveOblasti, spojVyctem } from '@/lib/chaty'
+import { getChatyProMapu, getIndexChat, getZiveOblasti, spojVyctem, ZEME_NAZEV } from '@/lib/chaty'
+import { vOblastech } from '@/lib/cestina'
 
 /**
  * /llms.txt — kurátorovaný vstupní bod pro AI asistenty a vyhledávače
@@ -34,6 +35,34 @@ export async function GET(): Promise<Response> {
     // DB nedostupná — věta o oblastech se vynechá, zbytek kostry platí.
   }
   const oblastiVeta = oblastiOdkazy.length ? spojVyctem(oblastiOdkazy.map((o) => o.nazev)) : 'Krkonoše'
+  const kdeVeta = vOblastech(oblastiOdkazy)
+
+  /**
+   * Přeshraniční oblasti se POČÍTAJÍ z profilů, ne tvrdí. Do 31. 7. 2026 tu
+   * stálo „obě přeshraniční" — věta psaná pro dvě oblasti, která by u třetí
+   * mlčky lhala, a u jednostranné oblasti by lhala rovnou.
+   */
+  let prehranicni: { nazev: string; zeme: string[] }[] = []
+  try {
+    const { index } = await getIndexChat()
+    prehranicni = oblastiOdkazy
+      .map((o) => ({
+        nazev: o.nazev,
+        // Země se čtou z profilů oblasti — i to, KTERÉ to jsou. Beskydy budou
+        // česko-slovenské a věta o „polské straně" by u nich byla nesmysl.
+        zeme: [...new Set(index.filter((ch) => ch.oblastSlug === o.slug).map((ch) => ch.zeme))]
+          .filter((z): z is string => !!z)
+          .map((z) => ZEME_NAZEV[z] ?? z),
+      }))
+      .filter((o) => o.zeme.length > 1)
+  } catch {
+    // DB nedostupná — věta o přeshraničnosti se vynechá.
+  }
+  const prehranicniVeta = prehranicni.length
+    ? ` Přeshraniční pohoří vedeme vcelku: ${spojVyctem(
+        prehranicni.map((o) => `${o.nazev} (${spojVyctem(o.zeme)})`),
+      )}.`
+    : ''
   const oblastiRadky = oblastiOdkazy
     .map(
       (o) =>
@@ -50,13 +79,13 @@ export async function GET(): Promise<Response> {
 
   const text = `# turistickechaty.cz
 
-> turistickechaty.cz je průvodce po horských a turistických chatách pro české turisty — od Jeseníků po Alpy. U každé chaty najdete ověřená data (poloha, nadmořská výška, provoz, přístupové trasy s převýšením a časem), sběratelskou vrstvu (turistická razítka, známky a vizitky) a historii. Každý údaj nese zdroj a datum ověření. Zpracovaná pohoří: ${oblastiVeta} — obě přeshraniční, vedeme je vcelku z české i polské strany.
+> turistickechaty.cz je průvodce turistickými chatami ${kdeVeta} — horskými boudami a schronisky, útulnami, bivaky, rozhlednami s občerstvením i chatami ve skalních městech. Do průvodce patří objekt podle role na trase a služby pro veřejnost, ne podle typu stavby nebo nadmořské výšky. U každé chaty najdete ověřená data (poloha, nadmořská výška, provoz, přístupové trasy s převýšením a časem), sběratelskou vrstvu (turistická razítka, známky a vizitky) a historii; každý údaj nese zdroj a datum poslední kontroly.${prehranicniVeta} Další oblasti přibývají postupně — vždy až s doloženými profily.
 
 ## Hlavní stránky
 
 - [Katalog chat](${BASE}/chaty): mapa a seznam chat s ověřenými daty (zatím ${oblastiVeta}).
 - [Razítkovník](${BASE}/razitkovnik): sbírka turistických razítek horských chat.
-- [Atlas zaniklých chat](${BASE}/zanikle): zaniklé boudy a schroniska Krkonoš — kdy a proč zanikly, co je na místě dnes.
+- [Atlas zaniklých chat](${BASE}/zanikle): zaniklé boudy a schroniska — kdy a proč zanikly, co je na místě dnes.
 - [Výlety](${BASE}/vylety): připravované trasy a přechody mezi chatami.
 ${oblastiRadky}
 
@@ -73,6 +102,8 @@ ${chatyRadky}
 ## Pro AI agenty a vyhledávače
 
 - Každý profil chaty nese strukturovaná data JSON-LD (TouristAttraction / LodgingBusiness / FoodEstablishment + BreadcrumbList).
+- Úvodní strana nese WebSite, Organization, CollectionPage se seznamem oblastí a FAQPage s odpověďmi na časté otázky (${BASE}/#caste-otazky); stránky pohoří vlastní FAQPage.
+- Co doložené není, se nezveřejňuje: v datech ani v odpovědích nenajdete odhad vydávaný za fakt. Hodnocení ani recenze web nevede.
 - Kompletní mapa webu: ${BASE}/sitemap.xml
 - Obsah je server-rendered (nejen JavaScript), URL jsou hierarchické: /zeme/pohori/chata.
 

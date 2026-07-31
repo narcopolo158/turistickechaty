@@ -89,10 +89,11 @@ export default function NamatkouPas({ index, seed }: { index: IndexChata[]; seed
           )
         })}
       </div>
-      <div className="hf1-pozn">
-        <span aria-hidden="true">†</span> náhodný výběr z {index.length} doložených profilů — žádná redakční „doporučení
-        bez dokladu“
-      </div>
+      {/* Poznámka se 31. 7. 2026 zkrátila na holý fakt. Dřív se tu web hájil
+          („žádná redakční doporučení bez dokladu") — obhajoba, kterou nikdo
+          nežádal, a čtenář ji čte jako by se něco stalo. Že výběr nikdo
+          neplatí, plyne z toho, že je náhodný. */}
+      <div className="hf1-pozn">náhodný výběr z {index.length} profilů · po obnovení stránky jiné</div>
     </>
   )
 }

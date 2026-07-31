@@ -59,6 +59,48 @@ export const Oblasti: CollectionConfig = {
       options: ZEME_OPTIONS,
       admin: { position: 'sidebar' },
     },
+    {
+      /**
+       * SKLOŇOVANÉ TVARY NÁZVU (31. 7. 2026).
+       *
+       * Web o oblastech mluví ve větách („chaty v Krkonoších", „nejvyšší hora
+       * Jizerských hor"), ale skloňovat český název algoritmem nejde: Krkonoše
+       * jsou pomnožné, Jizerské hory dvouslovné se shodou, Český ráj mužský
+       * neživotný. Dokud stála na webu jedna oblast, byly tvary napevno
+       * v šabloně — přesně ten vzorec, kvůli kterému stránka Jizerek chvíli
+       * ukazovala krkonošskou mapu. Tvar patří k oblasti, ne do šablony.
+       *
+       * Nevyplněné pole není chyba: texty pak volí vazbu, která si vystačí
+       * s 1. pádem (viz `vOblastech` v src/lib/cestina.ts). Nikdy se tvar
+       * nedomýšlí.
+       */
+      name: 'sklonovani',
+      type: 'group',
+      label: 'Skloňování názvu',
+      admin: {
+        description:
+          'Tvary do vět na webu. Bez nich se věty poskládají opisem v 1. pádu — nikdy se neskloňuje automaticky.',
+      },
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            {
+              name: 'druhy',
+              type: 'text',
+              label: '2. pád (koho/čeho)',
+              admin: { width: '50%', placeholder: 'Krkonoš / Jizerských hor' },
+            },
+            {
+              name: 'sesty',
+              type: 'text',
+              label: '6. pád (o kom/čem)',
+              admin: { width: '50%', placeholder: 'Krkonoších / Jizerských horách' },
+            },
+          ],
+        },
+      ],
+    },
     { name: 'popis', type: 'richText', label: 'Popis' },
     {
       name: 'charakteristika',

@@ -18,8 +18,12 @@ export const metadata: Metadata = {
   // Absolutní základ pro kanonické a OG URL (Next jinak varuje u og:image).
   metadataBase: new URL('https://turistickechaty.cz'),
   title: 'turistickechaty.cz — průvodce turistickými chatami',
+  // Výchozí popis pro stránky, které si vlastní nepíšou. Jména oblastí sem
+  // NEPATŘÍ: do 31. 7. 2026 tu stálo „Zatím Krkonoše a Jizerské hory" natvrdo
+  // a s každou další oblastí by to tiše zastarávalo. Homepage si popis
+  // s aktuálním výčtem skládá z dat sama (generateMetadata).
   description:
-    'Průvodce turistickými chatami: ověřená data, mapa, výlety, historie a katalog razítek. Zatím Krkonoše a Jizerské hory.',
+    'Průvodce turistickými chatami: horské boudy, schroniska, útulny a rozhledny s občerstvením. Ověřená data, mapa, přístupové trasy, historie a katalog razítek.',
   // Discovery odkaz pro AI asistenty (llms.txt) — z hlavičky každé stránky.
   alternates: {
     types: { 'text/markdown': '/llms.txt' },

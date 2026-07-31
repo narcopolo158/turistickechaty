@@ -447,6 +447,13 @@ export interface Oblasti {
    */
   nadrazena?: (number | null) | Oblasti;
   zeme?: ('cz' | 'sk' | 'pl' | 'at' | 'de' | 'ch' | 'it' | 'si' | 'fr') | null;
+  /**
+   * Tvary do vět na webu. Bez nich se věty poskládají opisem v 1. pádu — nikdy se neskloňuje automaticky.
+   */
+  sklonovani?: {
+    druhy?: string | null;
+    sesty?: string | null;
+  };
   popis?: {
     root: {
       type: string;
@@ -1293,6 +1300,12 @@ export interface OblastiSelect<T extends boolean = true> {
   typ?: T;
   nadrazena?: T;
   zeme?: T;
+  sklonovani?:
+    | T
+    | {
+        druhy?: T;
+        sesty?: T;
+      };
   popis?: T;
   charakteristika?: T;
   overeniCharakteristika?:

@@ -95,6 +95,18 @@
 .hf1-panel.tmavy .hf1-panel-cta { color: #f2b8ac; }
 .hf1-panel.tmavy .hf1-kruh { position: absolute; right: -24px; top: -24px; width: 110px; height: 110px; border-radius: 50%; border: 2px dashed rgba(255, 255, 255, 0.14); }
 
+/* ── Časté otázky ───────────────────────────────────────────────────────
+   Skládané odpovědi ve dvou sloupcích: seznam otázek se dá přeletět očima,
+   ale rozbalený text zůstane čitelně úzký. Vzhled drží stejný jazyk jako
+   FAQ na stránce pohoří (pohori.css) — je to táž věc na jiném místě. */
+.hf1-faq { columns: 2; column-gap: 12px; margin-top: 14px; }
+.hf1-faq-polozka { break-inside: avoid; background: var(--card); border: 1px solid var(--line); border-radius: 11px; padding: 0 15px; margin: 0 0 8px; }
+.hf1-faq-polozka summary { font: 500 14px/1.35 var(--font-emph, Georgia, serif); color: var(--ink); padding: 12px 0; cursor: pointer; list-style-position: inside; }
+.hf1-faq-polozka summary:hover { color: var(--red); }
+.hf1-faq-polozka[open] summary { color: var(--red); }
+.hf1-faq-polozka p { font: 400 13px/1.65 Inter, sans-serif; color: var(--muted); margin: 0; padding: 0 0 13px 18px; max-width: 62ch; }
+@media (max-width: 900px) { .hf1-faq { columns: 1; } }
+
 /* ── Print (B13): homepage tiskne čistý seznam chat ────────────────────── */
 .hf1-print { display: none; }
 @media print {
@@ -120,7 +132,12 @@
 }
 .hf1-hero-text { display: flex; flex-direction: column; justify-content: center; padding-right: 8px; }
 .hf1-eyebrow { font: 600 10px/1 'Space Grotesk', sans-serif; letter-spacing: 0.2em; text-transform: uppercase; color: var(--label); margin-bottom: 14px; }
-.hf1-claim { margin: 0; font: 500 54px/1.02 var(--font-emph, Georgia, serif); letter-spacing: -0.015em; color: var(--ink); text-wrap: pretty; }
+/* Nadpis roste s délkou jmen oblastí (skládá se z dat), proto clamp
+   a `text-wrap: balance` — s třetím pohořím se řádky rozloží samy. */
+.hf1-claim { margin: 0; font: 500 clamp(38px, 4.6vw, 54px)/1.04 var(--font-emph, Georgia, serif); letter-spacing: -0.015em; color: var(--ink); text-wrap: balance; }
+/* Druhá řádka nadpisu (záměr průvodce) drží vlastní řádek — jinak zlom padne
+   doprostřed vazby a čte se „Turistické chaty od / českých hor po Alpy". */
+.hf1-claim-kde { display: block; color: var(--red); }
 .hf1-perex { font: 400 15px/1.65 Inter, sans-serif; color: var(--muted); margin: 16px 0 0; max-width: 46ch; text-wrap: pretty; }
 
 .hf1-hledani {
@@ -411,8 +428,8 @@
 .hf1-pohori-cisla b { color: var(--ink); font-weight: 600; }
 .hf1-pohori-cta { display: block; font: 600 11px/1 'Space Grotesk', sans-serif; color: var(--red); margin-top: 11px; }
 .hf1-pohori-pripravujeme { background: var(--cream); border: 1px dashed var(--hair); border-radius: 13px; overflow: hidden; }
-.hf1-pohori-silueta { height: 110px; background: repeating-linear-gradient(135deg, #eef0e8, #eef0e8 8px, #e7ebe2 8px, #e7ebe2 16px); display: flex; align-items: flex-end; padding: 9px 12px; }
-.hf1-pohori-silueta span { font: 600 8.5px/1 'Space Grotesk', sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #a4ac9c; }
+.hf1-pohori-silueta { height: 110px; background: repeating-linear-gradient(135deg, #eef0e8, #eef0e8 8px, #e7ebe2 8px, #e7ebe2 16px); display: block; overflow: hidden; color: #7f8a78; }
+.hf1-pohori-silueta svg { display: block; width: 100%; height: 100%; }
 .hf1-pohori-pripravujeme .hf1-pohori-telo { padding: 13px 15px 15px; }
 .hf1-pohori-note { display: block; font: italic 400 11px/1.4 var(--font-emph, Georgia, serif); color: var(--muted); margin-top: 6px; }
 

@@ -9,6 +9,7 @@ import { beforeAll, describe, expect, it } from 'vitest'
 
 import config from '@/payload.config'
 import sitemap from '@/app/sitemap'
+import robots from '@/app/robots'
 import { GET as llmsGet } from '@/app/llms.txt/route'
 
 const BASE = 'https://turistickechaty.cz'
@@ -43,5 +44,55 @@ describe('llms.txt', () => {
     expect(text).toContain(`${BASE}/sitemap.xml`)
     expect(text).toContain(`${BASE}/chaty`)
     expect(text).toMatch(/Aktualizováno: \d{4}-\d{2}-\d{2}/)
+  })
+
+  /**
+   * Definiční věta se skládá z DAT (31. 7. 2026). Do té doby slibovala pokrytí
+   * „od Jeseníků po Alpy" — Jeseníky přitom v průvodci nejsou a nikdy nebyly —
+   * a končila slovem „obě", tedy větou napsanou pro právě dvě oblasti.
+   */
+  it('neslibuje pokrytí, které průvodce nemá, a nepočítá s pevným počtem oblastí', async () => {
+    const text = await (await llmsGet()).text()
+    expect(text).not.toContain('Jeseník')
+    expect(text).not.toMatch(/obě přeshraniční/)
+    expect(text).toContain('turistickými chatami')
+    // Oblasti se jmenují v 6. pádu z dat — „v Krkonoších", ne „v Krkonoše".
+    expect(text).toMatch(/průvodce turistickými chatami v \p{Lu}/u)
+  })
+})
+
+/**
+ * robots.txt (31. 7. 2026) — web žádný neměl. Sítě před weby dnes AI roboty
+ * ve výchozím stavu blokují a řídí se právě tímhle souborem, takže mlčení
+ * znamená neviditelnost pro jazykové modely.
+ */
+describe('robots.txt', () => {
+  const pravidla = () => {
+    const r = robots()
+    return Array.isArray(r.rules) ? r.rules : [r.rules!]
+  }
+
+  it('pouští obecné roboty i jmenované AI crawlery', () => {
+    const agenti = pravidla().map((p) => p.userAgent)
+    expect(agenti).toContain('*')
+    expect(agenti).toContain('GPTBot')
+    expect(agenti).toContain('ClaudeBot')
+    expect(agenti).toContain('PerplexityBot')
+    expect(agenti).toContain('Google-Extended')
+    expect(pravidla().every((p) => p.allow === '/')).toBe(true)
+  })
+
+  it('zavírá administraci a API, ale NE statické soubory Next.js', () => {
+    for (const p of pravidla()) {
+      const zakaz = (Array.isArray(p.disallow) ? p.disallow : [p.disallow!]) as string[]
+      expect(zakaz).toContain('/admin')
+      expect(zakaz).toContain('/api/')
+      // Blokovaný /_next/ = crawler si stránku vykreslí bez CSS a potrestá ji.
+      expect(zakaz.some((c) => c.includes('_next'))).toBe(false)
+    }
+  })
+
+  it('odkazuje sitemapu absolutní adresou', () => {
+    expect(robots().sitemap).toBe(`${BASE}/sitemap.xml`)
   })
 })

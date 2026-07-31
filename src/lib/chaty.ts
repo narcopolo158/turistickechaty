@@ -354,7 +354,16 @@ export async function getSlugyOblasti(): Promise<string[]> {
   return res.docs.map((o) => o.slug).filter((s): s is string => !!s)
 }
 
-export type ZivaOblast = { slug: string; nazev: string; pocetChat: number }
+export type ZivaOblast = {
+  slug: string
+  nazev: string
+  pocetChat: number
+  /** Úroveň oblasti — ne každá živá oblast bude pohoří (skalní města). */
+  typ: 'pohori' | 'podoblast' | 'turisticka-oblast' | null
+  /** Skloňované tvary názvu z dat oblasti; `null` = texty volí opis v 1. pádu. */
+  druhy: string | null
+  sesty: string | null
+}
 
 /**
  * Oblasti, které na webu OPRAVDU stojí — mají aspoň jeden publikovaný profil.
@@ -378,7 +387,14 @@ export async function getZiveOblasti(): Promise<ZivaOblast[]> {
   }
   return res.docs
     .filter((o): o is typeof o & { slug: string; nazev: string } => !!o.slug && !!o.nazev)
-    .map((o) => ({ slug: o.slug, nazev: o.nazev, pocetChat: pocty.get(o.slug) ?? 0 }))
+    .map((o) => ({
+      slug: o.slug,
+      nazev: o.nazev,
+      pocetChat: pocty.get(o.slug) ?? 0,
+      typ: o.typ ?? null,
+      druhy: o.sklonovani?.druhy ?? null,
+      sesty: o.sklonovani?.sesty ?? null,
+    }))
     .filter((o) => o.pocetChat > 0)
     .sort((a, b) => b.pocetChat - a.pocetChat)
 }

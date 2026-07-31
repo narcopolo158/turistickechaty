@@ -8,6 +8,13 @@ slug: jizerske-hory
 typ: pohori
 zeme: cz
 
+# Skloňované tvary názvu do vět na webu (viz pole `sklonovani` v kolekci
+# Oblasti). Čeština je algoritmem neskloní — tvar patří k oblasti.
+sklonovani:
+  druhy: Jizerských hor
+  sesty: Jizerských horách
+
+
 charakteristika: >-
   Pohoří na severu Čech, které pokračuje za hranicí jako Góry Izerskie —
   průvodce ho proto vede vcelku, z obou stran. Proti sousedním Krkonoším

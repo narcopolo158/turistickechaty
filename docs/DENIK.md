@@ -11,6 +11,103 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (večer) — textace homepage přepsána: nadpis nese celý plán, technické poznámky pryč, web má strukturovaná data
+
+**Hotovo:** Zadání Michala mělo dvě části a druhá přišla až během práce.
+Nejdřív: *„nelíbí se mi slogan Chaty, kterým můžeš věřit — projdi textaci
+homepage a předělej ji kompletně, aby odpovídala best practices v SEO a GEO,
+aby byl web ready pro AI agenty a bral se jako relevantní zdroj, a zároveň aby
+to působilo redakčně… redukuj vše, co zní technicky, na nejnutnější minimum
+(zdroje nemusí být na každém řádku textu, ale pohromadě v patičce nebo pod
+textem)."* Pak, když už nadpis jmenoval obě živé oblasti: *„neomezuj headline
+na 2 pohoří, rovnou ber celkový plán."*
+
+**Nadpis.** Slogan o důvěře je pryč — důvěru si má čtenář udělat z toho, co pod
+nadpisem uvidí, ne z toho, že si o ni web řekne. První náhrada zněla
+„Turistické chaty v Krkonoších a Jizerských horách" (místo místo sloganu), ale
+tím by se průvodce natrvalo představoval jako krkonošsko-jizerský, ačkoli plán
+míří přes Česko a Slovensko do Alp. Teď stojí v heru **„Turistické chaty od
+českých hor po Alpy"** — oblouk záměru — a hned pod ním perex drží realitu:
+*„Stavíme ho postupně: zatím 89 profilů v Krkonoších a Jizerských horách…"*.
+Slovo „zatím" je tam schválně; bez něj by dvojice nadpis + perex slibovala
+Alpy. Titulek stránky (`<title>`) drží týž oblouk, protože na dotaz „chaty
+Krkonoše" má odpovídat stránka Krkonoš, ne homepage — konkrétní jména oblastí
+patří do titulků JEJICH stránek.
+
+**Skloňování oblastí z dat (nová infrastruktura).** Věty jako „chaty
+v Krkonoších" nešly složit bez toho, aby v šabloně stál tvar napevno — a to je
+přesně vzorec, kvůli kterému stránka Jizerek chvíli ukazovala krkonošskou mapu.
+Kolekce Oblasti má nově skupinu `sklonovani` (2. a 6. pád), vyplněnou ve všech
+čtyřech `data/oblasti/*.yaml`; `src/lib/cestina.ts` z toho skládá `vOblastech()`
+(„v Krkonoších a Jizerských horách") a `tvarOblasti()` — to druhé hlídá, že se
+o oblastech mluví jako o „pohořích" jen dokud jimi opravdu všechny jsou (až
+přijde Český ráj, cedule i popisky se přepnou samy na „oblasti"). Když oblast
+tvary v datech nemá, věta se **nezkomolí**: přepne se na opis v 1. pádu
+(„v oblastech Krkonoše a Beskydy"). Do `tvarChaty` přibyl 2. pád, protože ten
+se láme jinde než ostatní: „u 2 chat", ne „u 2 chaty".
+
+**Technické poznámky pryč.** Zmizely mikropoznámky, které zněly jako výpis
+z admina: „jen čísla doložená v databázi — žádná vymyšlená", „řadí se podle
+checked v databázi", „z milníků historie · střídá se denně", „† náhodný výběr
+z 89 doložených profilů — žádná redakční doporučení bez dokladu", štítek „živý
+důkaz" (nahradil ho prostě datum) a slovo „ghost" v koláži. Slovo „silueta"
+v kartách připravovaných oblastí bylo popiskou z návrhu, která se omylem stala
+obsahem — teď je tam kreslené panorama v tlumené šedi. O původu dat se mluví
+**na dvou místech pohromadě**: v novém FAQ („Odkud data pocházejí?") a v tiráži
+patičky, kam přibyly fotky (Wikimedia Commons, CC) a otisky (razitkuj.cz se
+svolením). Konkrétní zdroj konkrétního údaje zůstává u údaje na profilu.
+
+**Vedlejší nález v datech:** pět milníků ve třech chatách mělo jméno zdroje
+přímo ve větě („korona-gor-polski.pl uvádí, že…", „dle ceskehory.cz") a jeden
+z nich se točí v kalendáriu na homepage. Přepsáno tak, aby **hedge zůstal**
+(„podle jediného zdroje", „zdroje se rozcházejí: … jinde rekonstrukce až
+v roce 2016") a doména stála tam, kam patří — v `overeniHistorie.source`, kde
+už stála. Žádné tvrzení se nezměnilo, jen se přestalo číst jako poznámka
+redaktora.
+
+**FAQ + strukturovaná data.** Homepage neměla **žádný** JSON-LD (profily
+i stránky pohoří ho mají dávno), takže vyhledávače a jazykové modely o webu
+jako celku nevěděly nic. Nově: `WebSite` se `SearchAction` (míří na
+`/chaty?q=`, což katalog opravdu umí), `Organization`, `CollectionPage` se
+seznamem oblastí a `dateModified` shodným s viditelným „naposledy ověřeno",
+a `FAQPage` s osmi otázkami — týmiž, které jsou vidět na stránce. Otázky jsou
+formulované, jak se ptají lidé („Dá se na chatách přespat?", „Co znamená
+ověřeno u údaje?"), odpovědi samonosné a čísla počítaná z fondu. Nic se
+nevymýšlí: žádné hodnocení, žádný počet recenzí, žádné logo.
+
+**robots.txt** web neměl vůbec. Sítě před weby dnes AI roboty ve výchozím stavu
+blokují a řídí se právě tímhle souborem, takže mlčení znamená neviditelnost.
+Nový `src/app/robots.ts` pouští obecné roboty i jmenovitě třináct AI crawlerů,
+zavírá `/admin`, `/api/` a `/design` — a schválně **ne** `/_next/` (bez CSS by
+si crawler stránku vykreslil rozbitou a potrestal ji za to).
+
+**llms.txt** slibovalo pokrytí „od Jeseníků po Alpy" (Jeseníky v průvodci
+nejsou a nikdy nebyly) a končilo větou „obě přeshraniční" — psanou pro právě
+dvě oblasti. Teď se definiční věta skládá z dat, přeshraniční oblasti se
+počítají z profilů (i to, KTERÉ země to jsou — Beskydy budou česko-slovenské)
+a přibyl odstavec o strukturovaných datech homepage.
+
+**Testy:** 624 zelených (dřív 601). Nový `tests/int/cestina.int.spec.ts` hlídá
+hranice tvarů 1 / 2–4 / 5+ a nouzový opis; `home-f1` má nově pět testů na
+nadpis, perex, zmizelé poznámky a strukturovaná data (mimo jiné že JSON-LD
+vůbec **parsuje** — jediná chyba by celý blok zneplatnila — a že si nevymýšlí
+hodnocení); `sitemap-llms` hlídá robots.txt a to, že llms.txt neslibuje, co
+průvodce nemá. `npm run kontrola` zelená, lint i tsc čisté.
+
+**Příště:** DATA-02 doběhlo, takže na řadě je **prohlídka stažených fotek**
+a pak **triáž zbylých 45 kandidátů Jizerek**. Pořadí backlogu beze změny.
+
+**Otázky pro Michala:** 1) Nadpis „od českých hor po Alpy" je záměr, ne
+pokrytí — perex pod ním hned říká, co průvodce opravdu má. Sedí ti to takhle,
+nebo chceš oblouk ještě jinými slovy? 2) Brand řádek v patičce pořád začíná
+„Krkonoše → Česko → Slovensko → Alpy"; jako roadmapa je to pravda, ale je to
+poslední místo, kde stojí Krkonoše napevno — nechat, nebo zkrátit na „Česko →
+Slovensko → Alpy"? 3) V koláži hera visí prázdný polaroid („fotku sem teprve
+hledáme"), protože Luční bouda nemá titulní fotku — až doběhne prohlídka fotek
+z DATA-02, doplní se sám. 4) Trvá otázka Královky (jeden objekt vs. rozhledna
++ restaurace 26 m vedle) a otázka, jestli mám web-checkem prověřit zbylé
+kandidáty Jizerek (potřebuje schválení WebFetch).
+
 ## 2026-07-31 (podvečer) — dřevěná cedule je nově rozcestník, ne odkaz na Krkonoše
 
 **Hotovo:** Michal se přiklonil k neutrálnímu rozcestníku („asi bych dal
