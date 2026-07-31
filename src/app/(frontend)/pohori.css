@@ -123,6 +123,14 @@ body.dark .phf-razitko { opacity: 0.85; }
   background: var(--paper);
 }
 .m3d-poster img { display: block; width: 100%; height: auto; }
+/* Oblast bez vlastního posteru: neutrální plocha v barvách reliéfu, ne snímek
+   cizího pohoří (viz Mapa3D). Poměr drží stejný rám jako poster 1500×950. */
+.m3d-poster-prazdno {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1500 / 950;
+  background: linear-gradient(170deg, #cfe0ee 0%, #cfe0ee 46%, #dfe7d4 46%, #eef0e8 100%);
+}
 .m3d-poster-overlay {
   position: absolute;
   inset: 0;

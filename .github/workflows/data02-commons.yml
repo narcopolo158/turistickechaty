@@ -44,6 +44,18 @@ jobs:
 
       - run: npm ci
 
+      # Běh trvá přes deset minut a mezitím se do main může dostat cizí commit
+      # (30. 7. 2026 jsme takhle z repa uklidili osiřelé kandidátní fotky).
+      # Generovat ze zastaralého stavu by znamenalo zapsat soubory k objektům,
+      # které už v korpusu nejsou, a při závěrečném rebase konflikt
+      # „modify/delete". Proto se před generováním main dotáhne.
+      - name: Aktualizovat main před generováním
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main
+
       - name: Dotazy na Commons API + licenční síto
         # Explicitní shell: bash zapíná pipefail — pád skriptu se nesmí
         # ztratit v pipe přes tee (lekce z prvního běhu DATA-01).
@@ -65,7 +77,23 @@ jobs:
             exit 0
           fi
           pocet=$(git diff --cached --name-only -- 'data/kandidati/fotky/**/*.yaml' | wc -l)
-          git commit -m "data: Wikimedia Commons — kandidátní fotky chat (${pocet} YAML, z Actions)" \
-            -m 'Jen metadata (autor, licence, URL) po licenčním sítu CC0/CC BY/CC BY-SA/PD. Soubory se nestahují — výběr a nahrání do kolekce Fotky dělá redakce.'
-          git pull --rebase origin main
-          git push origin main
+          # Neúplný běh (část chat se nestáhla) commituje, co našel — ale musí
+          # to být vidět v historii. Skript to říká řádkem „NEUPLNY_BEH: N chat".
+          CHYBI=$(sed -n 's/^NEUPLNY_BEH: //p' report.txt | head -1)
+          if [ -n "$CHYBI" ]; then
+            TITULEK="data: Wikimedia Commons — kandidátní fotky chat (${pocet} YAML) — NEÚPLNÝ, nestáhlo se ${CHYBI} (z Actions)"
+            DOVETEK="POZOR: u ${CHYBI} se dotaz na Commons nepovedl (limit sdílené IP runnerů), jejich fotky v tomhle běhu NEJSOU. Spusť workflow znovu — je idempotentní."
+          else
+            TITULEK="data: Wikimedia Commons — kandidátní fotky chat (${pocet} YAML, z Actions)"
+            DOVETEK='Jen metadata (autor, licence, URL) po licenčním sítu CC0/CC BY/CC BY-SA/PD. Soubory se nestahují — výběr a nahrání do kolekce Fotky dělá redakce.'
+          fi
+          git commit -m "$TITULEK" -m "$DOVETEK"
+          # Push se zkusí dvakrát: mezi generováním a pushem může přibýt cizí
+          # commit a rebase pak potřebuje druhý pokus.
+          for pokus in 1 2; do
+            git pull --rebase origin main && git push origin main && exit 0
+            echo "push se nepovedl (pokus ${pokus}) — zkouším znovu za 10 s"
+            sleep 10
+          done
+          echo '::error::Nepodařilo se pushnout ani na druhý pokus — data jsou v běhu, spusť workflow znovu.'
+          exit 1

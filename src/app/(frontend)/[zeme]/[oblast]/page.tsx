@@ -101,9 +101,15 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
   // 3D mapa se ukáže jen tam, kde ji pipeline DATA-28 opravdu vyrobila —
   // jinak by sekce slibovala něco, co neexistuje.
   const ma3d = existsSync(join(process.cwd(), 'public', '3d', `${oblastSlug}.html`))
+  // Poster JEN vlastní oblasti. Do 31. 7. 2026 se padalo na obecný
+  // `/3d/poster.jpg` — jenže to byl snímek KRKONOŠ, takže stránka Jizerských
+  // hor ukazovala pod nadpisem „3D mapa — Jizerské hory" panorama cizího
+  // pohoří i s krkonošskými boudami v popiscích (nález Michala: „tady to
+  // pořád říká Krkonoše"). Když poster nemáme, ukáže se neutrální plocha
+  // s tlačítkem — prázdno je lepší než cizí hory.
   const poster3d = existsSync(join(process.cwd(), 'public', '3d', `poster-${oblastSlug}.jpg`))
     ? `/3d/poster-${oblastSlug}.jpg`
-    : '/3d/poster.jpg'
+    : null
 
   const hora = oblast.nejvyssiHora
   const topCile = (oblast.topCile ?? []).filter((c) => c.nazev)

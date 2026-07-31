@@ -611,23 +611,60 @@ const main = async () => {
     // Tempo pod 1 dotaz/s: první ostrý běh na 2/s narážel na 429 po ~10
     // dotazech — limiter sdílených IP runnerů chce opravdu volnou chůzi.
     const TEMPO_MS = 1200
-    for (const chata of chaty) {
-      const sGps = maGps(chata)
-      const geosearch = sGps ? await stahniJson(urlGeosearch(api, chata, radiusM)) : undefined
-      if (sGps) await spanek(TEMPO_MS)
-      const kategorie = await stahniJson(urlKategorie(api, chata))
-      await spanek(TEMPO_MS)
-      const fulltext = await stahniJson(urlFulltext(api, chata))
-      await spanek(TEMPO_MS)
-      // U chat bez GPS klíč `geosearch` v exportu vůbec není — doklad, že dotaz neproběhl.
-      exportDat.dotazy[`${chata.oblast}/${chata.slug}`] = sGps
-        ? { geosearch, kategorie, fulltext }
-        : { kategorie, fulltext }
-      console.log(`- ${chata.nazev}: dotazy staženy${sGps ? '' : ' (bez GPS — jen kategorie + fulltext)'}`)
-    }
+    /**
+     * Pád jednoho dotazu NESHODÍ celý běh (stejné rozhodnutí jako u DATA-01
+     * 30. 7. 2026: „uprav to tak, že zacommituje co najde").
+     *
+     * Proč to sem patří: běh je při 1,2 s na dotaz a ~160 chatách přes deset
+     * minut práce a Commons limituje sdílené IP runnerů po dávkách. Když 429
+     * přišlo u sto padesáté chaty, výjimka propadla z `main()` ven — a export
+     * se přitom zapisoval AŽ ZA smyčkou, takže se zahodilo i všech 149
+     * hotových chat. Nově se každá chata ošetří zvlášť a export se ukládá
+     * průběžně, ať je co commitovat i po pádu.
+     */
+    const selhalo: { klic: string; duvod: string }[] = []
     mkdirSync(join(koren, 'data', 'kandidati', 'fotky'), { recursive: true })
-    writeFileSync(cestaExportu(koren), `${JSON.stringify(exportDat, null, 1)}\n`, 'utf8')
+    const ulozExport = () =>
+      writeFileSync(cestaExportu(koren), `${JSON.stringify(exportDat, null, 1)}\n`, 'utf8')
+    for (const chata of chaty) {
+      const klic = `${chata.oblast}/${chata.slug}`
+      const sGps = maGps(chata)
+      try {
+        const geosearch = sGps ? await stahniJson(urlGeosearch(api, chata, radiusM)) : undefined
+        if (sGps) await spanek(TEMPO_MS)
+        const kategorie = await stahniJson(urlKategorie(api, chata))
+        await spanek(TEMPO_MS)
+        const fulltext = await stahniJson(urlFulltext(api, chata))
+        await spanek(TEMPO_MS)
+        // U chat bez GPS klíč `geosearch` v exportu vůbec není — doklad, že dotaz neproběhl.
+        exportDat.dotazy[klic] = sGps ? { geosearch, kategorie, fulltext } : { kategorie, fulltext }
+        console.log(`- ${chata.nazev}: dotazy staženy${sGps ? '' : ' (bez GPS — jen kategorie + fulltext)'}`)
+      } catch (chyba) {
+        const duvod = chyba instanceof Error ? chyba.message : String(chyba)
+        console.error(`::warning::${chata.nazev} (${klic}): dotaz se nepovedl — pokračuji bez něj. ${duvod}`)
+        selhalo.push({ klic, duvod })
+        continue
+      }
+      // Průběžné ukládání: po pádu ať zůstane, co se stihlo. Soubor je velký,
+      // ale zápis jednou za chatu je proti minutám čekání na API zanedbatelný.
+      ulozExport()
+    }
+    ulozExport()
     console.log(`Surový export uložen: ${cestaExportu(koren)} (commituje se jako doklad).`)
+    if (selhalo.length) {
+      const hotovo = Object.keys(exportDat.dotazy).length
+      if (!hotovo) {
+        throw new Error(
+          `Nestáhla se ani jedna chata (${selhalo.length} pokusů) — není co zapsat. Commons limituje sdílené IP runnerů; zopakuj běh.`,
+        )
+      }
+      console.log(
+        `\nNEÚPLNÝ BĚH: staženo ${hotovo} z ${chaty.length} chat, NEPOVEDLO SE ${selhalo.length}. ` +
+          `Zapisuje se, co je — u zbytku zůstávají fotky z minula (nebo žádné). Běh je idempotentní, stačí spustit znovu.`,
+      )
+      for (const s of selhalo) console.log(`  - ${s.klic}: ${s.duvod}`)
+      console.log(`NEUPLNY_BEH: ${selhalo.length} chat`)
+    }
   }
 
   const reporty: ReportChaty[] = []

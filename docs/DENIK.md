@@ -11,6 +11,72 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (dopoledne, potřetí) — DATA-02 spadlo a vzalo s sebou všechno; poster Jizerek ukazoval Krkonoše
+
+**Dvě hlášení od Michala naráz.**
+
+### 1. „DATA-02 doběhlo, ale hlásí chybu"
+
+Log jsem neviděl (ze sandboxu na Actions API nedosáhnu) a v repu nepřibyl
+žádný commit — takže běh spadl **před** commitem. Offline transformace
+(`--z-jsonu`) přitom prošla, takže chyba je v živé části. Podezřelí jsou dva
+a **oba jsou teď ošetřené**, protože oba stojí za opravu tak jako tak:
+
+**(a) Jeden neúspěšný dotaz zahodil celý běh.** Stahovací smyčka neměla u chat
+žádné ošetření a export se zapisoval **až za ní**. Při 1,2 s na dotaz a 161
+chatách je to přes deset minut práce — a když Commons u sto padesáté chaty
+vrátí 429 (limituje sdílené IP runnerů), výjimka propadla z `main()` ven
+a zahodila i všech 149 hotových. Nově se každá chata ošetří zvlášť, export se
+ukládá **průběžně** a na konci se řekne, co se nepovedlo. Je to táž dohoda,
+kterou Michal zvolil 30. 7. u DATA-01: *zacommituj, co najdeš* — včetně
+sentinelu `NEUPLNY_BEH: N chat`, který workflow přilepí do commit message.
+Pád nastane jen tehdy, když neprojde ANI JEDNA chata.
+
+**(b) Souběh s mým commitem.** Běh trvá přes deset minut a já mu mezitím
+uklidil osiřelé kandidátní fotky (236b5ec). Workflow generovalo ze stavu při
+checkoutu, takže mohlo zapsat soubory k objektům, které už v korpusu nejsou —
+a `git pull --rebase` na konci pak narazí na konflikt „modify/delete". Nově se
+main dotáhne **před** generováním a push má druhý pokus.
+
+Kdyby to spadlo znovu, stačí poslat log — pak se pozná, který z těch dvou to
+byl. Zatím platí, že běh je idempotentní a nic se ztratit nemá.
+
+### 2. „Tady to pořád říká Krkonoše"
+
+Screenshot z dev.turistickechaty.cz: pod nadpisem **„3D mapa — Jizerské hory"**
+panorama s titulkem KRKONOŠE a krkonošskými boudami (Friesovy boudy, Richtrovy
+boudy, Chata U Jirky). Tohle už nebyla ta včerejší šablona — tohle byl
+**poster**, tedy náhled před kliknutím. Stránka pohoří na něj padala takhle:
+poster oblasti, a když není, obecný `/3d/poster.jpg`. Jenže ten obecný poster
+JE snímek Krkonoš, takže každá nová oblast zdědila cizí hory.
+
+**Opraveno trojím způsobem:**
+- `poster.jpg` se přejmenoval na `poster-krkonose.jpg` — obecné jméno svádělo
+  k tomu považovat krkonošský snímek za neutrální výplň;
+- **fallback je pryč**: oblast bez posteru dostane neutrální plochu
+  v barvách reliéfu. Prázdno je lepší než cizí pohoří;
+- vznikl **poster Jizerských hor** — a k němu skript `scripts/3d-poster.ts`,
+  aby to příště nebyla ruční práce.
+
+Při jeho výrobě vyšlo najevo, proč krkonošský poster vypadá „malovaně":
+vznikl **před** vrstvou lesů a sjezdovek, takže je na něm holý reliéf
+s trasami. Skript proto smrčky, sjezdovky a stíny mraků pro poster vypíná —
+jinak by na náhledu velikosti dlaždice zbyla jen zelená plocha.
+
+**Poctivá poznámka k tomu posteru:** jizerský 3D model je pořád z 28. 7., tedy
+z doby před triáží, takže na náhledu nejsou popisky chat — model o nich ještě
+neví. Až doběhne DATA-28 pro Jizerky, stačí skript pustit znovu.
+
+**Vedlejší produkt diagnostiky:** offline běh DATA-02 přepsal šest kandidátních
+YAML s fotkami — u chat, které mezitím přešly z kandidátů na profily, se
+opravil řádek zdroje (`kandidát DATA-01` → `data/chaty`). Je to strojově
+generovaný soubor, tak to nechávám v repu.
+
+**Testy:** 592, `kontrola` zelená.
+
+**Příště:** až Michal pustí DATA-02 znovu, projít nalezené fotky; pak DATA-28
+pro Jizerky a nový poster.
+
 ## 2026-07-31 (odpoledne) — Jizerské hory na homepage, a co všechno k tomu patřilo
 
 **Hotovo:** zadání Michala „na homepage přidej Jizerské hory — podívej se

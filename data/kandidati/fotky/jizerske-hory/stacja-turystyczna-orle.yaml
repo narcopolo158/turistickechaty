@@ -1,465 +1,582 @@
+# Stacja Turystyczna Orle — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Stacja Turystyczna Orle + fulltext „Stacja Turystyczna Orle" (namespace File) na commons.wikimedia.org
+# Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
+# POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
+# ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
+# STROJOVĚ GENEROVÁNO — další běh soubor přepíše. Soubory se nestahují: výběr,
+# kontrolu licence na stránce souboru a nahrání do kolekce Fotky dělá redakce.
+
 chata: stacja-turystyczna-orle
 oblast: jizerske-hory
 nazevChaty: Stacja Turystyczna Orle
-zdroj: 'Wikimedia Commons API (geosearch + kategorie), profil chaty: kandidát DATA-01'
-checked: 2026-07-20
+zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
+  data/chaty"
+checked: 2026-07-28
 fotky:
-- soubor: File:Schronisko Orle - panoramio (1).jpg
-  autor: krysi@
-  licence: CC BY 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Orle_-_panoramio_(1).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/5/54/Schronisko_Orle_-_panoramio_%281%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Schronisko_Orle_-_panoramio_%281%29.jpg/960px-Schronisko_Orle_-_panoramio_%281%29.jpg
-  rozmery: 1600×1200
-  vzdalenostM: 2
-  datum: Taken on 9 March 2013
-  popis: Schronisko Orle
-- soubor: File:X Bieg Retro - panoramio (1).jpg
-  autor: krysi@
-  licence: CC BY 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:X_Bieg_Retro_-_panoramio_(1).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/6/62/X_Bieg_Retro_-_panoramio_%281%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/X_Bieg_Retro_-_panoramio_%281%29.jpg/960px-X_Bieg_Retro_-_panoramio_%281%29.jpg
-  rozmery: 1600×1200
-  vzdalenostM: 2
-  datum: Taken on 9 March 2013
-  popis: X Bieg Retro
-- soubor: File:Orle, rzeźba.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_rze%C5%BAba.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/a/a6/Orle%2C_rze%C5%BAba.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Orle%2C_rze%C5%BAba.jpg/960px-Orle%2C_rze%C5%BAba.jpg
-  rozmery: 2448×3264
-  vzdalenostM: 14
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, zegar słoneczny (01).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_zegar_s%C5%82oneczny_(01).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/4/46/Orle%2C_zegar_s%C5%82oneczny_%2801%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Orle%2C_zegar_s%C5%82oneczny_%2801%29.jpg/960px-Orle%2C_zegar_s%C5%82oneczny_%2801%29.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 14
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). A sundial.
-- soubor: File:Orle, Bar pod beczką.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_Bar_pod_beczk%C4%85.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/8/8d/Orle%2C_Bar_pod_beczk%C4%85.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Orle%2C_Bar_pod_beczk%C4%85.jpg/960px-Orle%2C_Bar_pod_beczk%C4%85.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 15
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). A barrel bar.
-- soubor: File:Orle, vývěsní štít.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_v%C3%BDv%C4%9Bsn%C3%AD_%C5%A1t%C3%ADt.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/2/29/Orle%2C_v%C3%BDv%C4%9Bsn%C3%AD_%C5%A1t%C3%ADt.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Orle%2C_v%C3%BDv%C4%9Bsn%C3%AD_%C5%A1t%C3%ADt.jpg/960px-Orle%2C_v%C3%BDv%C4%9Bsn%C3%AD_%C5%A1t%C3%ADt.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 15
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, zegar słoneczny.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_zegar_s%C5%82oneczny.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/1/16/Orle%2C_zegar_s%C5%82oneczny.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Orle%2C_zegar_s%C5%82oneczny.jpg/960px-Orle%2C_zegar_s%C5%82oneczny.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 16
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). A sundial.
-- soubor: File:Psy haski przy schronisku Orle - panoramio.jpg
-  autor: fot. Slawek Ilski
-  licence: CC BY 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Psy_haski_przy_schronisku_Orle_-_panoramio.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/b/ba/Psy_haski_przy_schronisku_Orle_-_panoramio.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Psy_haski_przy_schronisku_Orle_-_panoramio.jpg/960px-Psy_haski_przy_schronisku_Orle_-_panoramio.jpg
-  rozmery: 4288×2848
-  vzdalenostM: 17
-  datum: Taken on 13 February 2010
-  popis: psy haski przy schronisku Orle
-- soubor: File:Orle (05).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle_(05).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/e/e5/Orle_%2805%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Orle_%2805%29.jpg/960px-Orle_%2805%29.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 19
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, znaki rowerowe (01).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_znaki_rowerowe_(01).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/6/63/Orle%2C_znaki_rowerowe_%2801%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Orle%2C_znaki_rowerowe_%2801%29.jpg/960px-Orle%2C_znaki_rowerowe_%2801%29.jpg
-  rozmery: 2448×3264
-  vzdalenostM: 19
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). Cycling route signs.
-- soubor: File:Schronisko Orle - panoramio - krysi@ (1).jpg
-  autor: krysi@
-  licence: CC BY 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Orle_-_panoramio_-_krysi@_(1).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/6/63/Schronisko_Orle_-_panoramio_-_krysi%40_%281%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Schronisko_Orle_-_panoramio_-_krysi%40_%281%29.jpg/960px-Schronisko_Orle_-_panoramio_-_krysi%40_%281%29.jpg
-  rozmery: 4000×2248
-  vzdalenostM: 19
-  datum: Taken on 23 September 2016
-  popis: Schronisko Orle
-- soubor: File:Szklarska Poręba, Osad Orle 1 - panoramio.jpg
-  autor: Tomasz Sudoł
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Osad_Orle_1_-_panoramio.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/f/f6/Szklarska_Por%C4%99ba%2C_Osad_Orle_1_-_panoramio.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Szklarska_Por%C4%99ba%2C_Osad_Orle_1_-_panoramio.jpg/960px-Szklarska_Por%C4%99ba%2C_Osad_Orle_1_-_panoramio.jpg
-  rozmery: 1920×1080
-  vzdalenostM: 21
-  datum: Taken on 18 January 2015
-  popis: Szklarska Poręba, Osad Orle 1
-- soubor: File:Schronisko Orle - panoramio.jpg
-  autor: krysi@
-  licence: CC BY 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Orle_-_panoramio.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/4/49/Schronisko_Orle_-_panoramio.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Schronisko_Orle_-_panoramio.jpg/960px-Schronisko_Orle_-_panoramio.jpg
-  rozmery: 4000×2248
-  vzdalenostM: 23
-  datum: Taken on 23 September 2016
-  popis: Schronisko Orle
-- soubor: File:Schronisko Orle - panoramio - krysi@.jpg
-  autor: krysi@
-  licence: CC BY 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Orle_-_panoramio_-_krysi@.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/a/aa/Schronisko_Orle_-_panoramio_-_krysi%40.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Schronisko_Orle_-_panoramio_-_krysi%40.jpg/960px-Schronisko_Orle_-_panoramio_-_krysi%40.jpg
-  rozmery: 4000×2248
-  vzdalenostM: 24
-  datum: Taken on 23 September 2016
-  popis: Schronisko Orle
-- soubor: File:Orle, schronisko (02).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_schronisko_(02).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/9/9e/Orle%2C_schronisko_%2802%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Orle%2C_schronisko_%2802%29.jpg/960px-Orle%2C_schronisko_%2802%29.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 29
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, znaki turystyczne.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_znaki_turystyczne.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/7/73/Orle%2C_znaki_turystyczne.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Orle%2C_znaki_turystyczne.jpg/960px-Orle%2C_znaki_turystyczne.jpg
-  rozmery: 2448×3264
-  vzdalenostM: 32
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). Hiking route signs.
-- soubor: File:Orle, schronisko.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_schronisko.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/f/f1/Orle%2C_schronisko.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Orle%2C_schronisko.jpg/960px-Orle%2C_schronisko.jpg
-  rozmery: 3202×2273
-  vzdalenostM: 40
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, tablica informacyjna.jpg
-  autor: photo by cs:ŠJů (board by Towarzystwo Izerskie)
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_tablica_informacyjna.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/0/07/Orle%2C_tablica_informacyjna.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Orle%2C_tablica_informacyjna.jpg/960px-Orle%2C_tablica_informacyjna.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 40
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). Infoboard about the settlement.
-- soubor: File:Orle, schronisko (01).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_schronisko_(01).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/6/6c/Orle%2C_schronisko_%2801%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Orle%2C_schronisko_%2801%29.jpg/960px-Orle%2C_schronisko_%2801%29.jpg
-  rozmery: 3257×1699
-  vzdalenostM: 51
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Widok na schronisko Orle - panoramio.jpg
-  autor: krysi@
-  licence: CC BY 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Widok_na_schronisko_Orle_-_panoramio.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/6/6b/Widok_na_schronisko_Orle_-_panoramio.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Widok_na_schronisko_Orle_-_panoramio.jpg/960px-Widok_na_schronisko_Orle_-_panoramio.jpg
-  rozmery: 4000×2248
-  vzdalenostM: 56
-  datum: Taken on 23 September 2016
-  popis: widok na schronisko Orle
-- soubor: File:Orle, sklář (01).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_skl%C3%A1%C5%99_(01).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/a/a9/Orle%2C_skl%C3%A1%C5%99_%2801%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Orle%2C_skl%C3%A1%C5%99_%2801%29.jpg/960px-Orle%2C_skl%C3%A1%C5%99_%2801%29.jpg
-  rozmery: 2448×3264
-  vzdalenostM: 57
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, sklář.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_skl%C3%A1%C5%99.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/9/99/Orle%2C_skl%C3%A1%C5%99.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Orle%2C_skl%C3%A1%C5%99.jpg/960px-Orle%2C_skl%C3%A1%C5%99.jpg
-  rozmery: 2448×3264
-  vzdalenostM: 57
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, znaki rowerowe.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_znaki_rowerowe.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/2/23/Orle%2C_znaki_rowerowe.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Orle%2C_znaki_rowerowe.jpg/960px-Orle%2C_znaki_rowerowe.jpg
-  rozmery: 2448×3264
-  vzdalenostM: 65
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). Cycling route signs.
-- soubor: File:Orle, rozcestník a pohraničnické domky.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_rozcestn%C3%ADk_a_pohrani%C4%8Dnick%C3%A9_domky.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/5/5d/Orle%2C_rozcestn%C3%ADk_a_pohrani%C4%8Dnick%C3%A9_domky.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Orle%2C_rozcestn%C3%ADk_a_pohrani%C4%8Dnick%C3%A9_domky.jpg/960px-Orle%2C_rozcestn%C3%ADk_a_pohrani%C4%8Dnick%C3%A9_domky.jpg
-  rozmery: 2448×3264
-  vzdalenostM: 73
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle (04).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle_(04).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/1/1a/Orle_%2804%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Orle_%2804%29.jpg/960px-Orle_%2804%29.jpg
-  rozmery: 3205×1828
-  vzdalenostM: 75
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, rozcestník.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_rozcestn%C3%ADk.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/e/e4/Orle%2C_rozcestn%C3%ADk.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Orle%2C_rozcestn%C3%ADk.jpg/960px-Orle%2C_rozcestn%C3%ADk.jpg
-  rozmery: 2448×3264
-  vzdalenostM: 83
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, podmínky překračování hranice.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_podm%C3%ADnky_p%C5%99ekra%C4%8Dov%C3%A1n%C3%AD_hranice.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/c/cd/Orle%2C_podm%C3%ADnky_p%C5%99ekra%C4%8Dov%C3%A1n%C3%AD_hranice.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Orle%2C_podm%C3%ADnky_p%C5%99ekra%C4%8Dov%C3%A1n%C3%AD_hranice.jpg/960px-Orle%2C_podm%C3%ADnky_p%C5%99ekra%C4%8Dov%C3%A1n%C3%AD_hranice.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 92
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). Conditions for crossing the state border.
-- soubor: File:Jakuszyce - panoramio.jpg
-  autor: fot. Slawek Ilski
-  licence: CC BY 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Jakuszyce_-_panoramio.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/d/da/Jakuszyce_-_panoramio.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Jakuszyce_-_panoramio.jpg/960px-Jakuszyce_-_panoramio.jpg
-  rozmery: 1600×1063
-  vzdalenostM: 96
-  datum: Taken on 10 February 2010
-  popis: Jakuszyce
-- soubor: File:Orle, Breslau i Glogau (01).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_Breslau_i_Glogau_(01).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/4/4f/Orle%2C_Breslau_i_Glogau_%2801%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Orle%2C_Breslau_i_Glogau_%2801%29.jpg/960px-Orle%2C_Breslau_i_Glogau_%2801%29.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 148
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). Former frontier guard houses "Breslau" and "Glogau".
-- soubor: File:Orle, strażnica.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_stra%C5%BCnica.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/b/b3/Orle%2C_stra%C5%BCnica.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Orle%2C_stra%C5%BCnica.jpg/960px-Orle%2C_stra%C5%BCnica.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 149
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Jakuszyce - panoramio (2).jpg
-  autor: fot. Slawek Ilski
-  licence: CC BY 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Jakuszyce_-_panoramio_(2).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/f/fd/Jakuszyce_-_panoramio_%282%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Jakuszyce_-_panoramio_%282%29.jpg/960px-Jakuszyce_-_panoramio_%282%29.jpg
-  rozmery: 1600×1063
-  vzdalenostM: 150
-  datum: Taken on 13 February 2010
-  popis: Jakuszyce
-- soubor: File:Orle (06).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle_(06).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/1/10/Orle_%2806%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Orle_%2806%29.jpg/960px-Orle_%2806%29.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 172
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, strażnica, okno.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_stra%C5%BCnica,_okno.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/9/93/Orle%2C_stra%C5%BCnica%2C_okno.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Orle%2C_stra%C5%BCnica%2C_okno.jpg/960px-Orle%2C_stra%C5%BCnica%2C_okno.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 172
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle (02).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle_(02).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/a/ae/Orle_%2802%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Orle_%2802%29.jpg/960px-Orle_%2802%29.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 210
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle (03).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle_(03).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/5/51/Orle_%2803%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Orle_%2803%29.jpg/960px-Orle_%2803%29.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 210
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, Breslau i Glogau panoramic.jpg
-  autor: 'source images: cs:ŠJů derivative work: Justass ( talk )'
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_Breslau_i_Glogau_panoramic.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/0/00/Orle%2C_Breslau_i_Glogau_panoramic.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Orle%2C_Breslau_i_Glogau_panoramic.jpg/960px-Orle%2C_Breslau_i_Glogau_panoramic.jpg
-  rozmery: 10452×2546
-  vzdalenostM: 210
-  datum: Taken on 15 November 2009, panorama cre…
-  popis: Orle (Szklarska Poręba, Poland).
-- soubor: File:Orle, Breslau i Glogau.jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle,_Breslau_i_Glogau.jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/d/d1/Orle%2C_Breslau_i_Glogau.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Orle%2C_Breslau_i_Glogau.jpg/960px-Orle%2C_Breslau_i_Glogau.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 210
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland). Former frontier guard houses "Breslau" and "Glogau".
-- soubor: File:Orle (07).jpg
-  autor: cs:ŠJů
-  licence: CC BY-SA 3.0
-  stranka: https://commons.wikimedia.org/wiki/File:Orle_(07).jpg
-  original: https://upload.wikimedia.org/wikipedia/commons/b/b4/Orle_%2807%29.jpg
-  nalezeno: geosearch
-  licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-  nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Orle_%2807%29.jpg/960px-Orle_%2807%29.jpg
-  rozmery: 3264×2448
-  vzdalenostM: 247
-  datum: 2009-11-15
-  popis: Orle (Szklarska Poręba, Poland).
-poznamka: 'Přesunuto 31. 7. 2026 z krkonose/stacja-turystyczna-orle: objekt byl povýšen z kandidáta na
-  profil (triáž Jizerských hor 30. 7. 2026), takže se změnila oblast i slug. Seznam fotek je z původního
-  běhu DATA-02 — stav Commons k 2026-07-20, nepřepočítáno.'
+  - soubor: File:Schronisko Orle - panoramio (1).jpg
+    autor: krysi@
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Orle_-_panoramio_(1).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/54/Schronisko_Orle_-_panoramio_%281%29.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Schronisko_Orle_-_panoramio_%281%29.jpg/960px-Schronisko_Orle_-_panoramio_%281%29.jpg
+    rozmery: 1600×1200
+    vzdalenostM: 2
+    datum: Taken on 9 March 2013
+    popis: Schronisko Orle
+  - soubor: File:X Bieg Retro - panoramio (1).jpg
+    autor: krysi@
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:X_Bieg_Retro_-_panoramio_(1).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/62/X_Bieg_Retro_-_panoramio_%281%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/X_Bieg_Retro_-_panoramio_%281%29.jpg/960px-X_Bieg_Retro_-_panoramio_%281%29.jpg
+    rozmery: 1600×1200
+    vzdalenostM: 2
+    datum: Taken on 9 March 2013
+    popis: X Bieg Retro
+  - soubor: File:Orle, rzeźba.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_rze%C5%BAba.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a6/Orle%2C_rze%C5%BAba.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Orle%2C_rze%C5%BAba.jpg/960px-Orle%2C_rze%C5%BAba.jpg
+    rozmery: 2448×3264
+    vzdalenostM: 14
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, zegar słoneczny (01).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_zegar_s%C5%82oneczny_(01).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/46/Orle%2C_zegar_s%C5%82oneczny_%2801%29.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Orle%2C_zegar_s%C5%82oneczny_%2801%29.jpg/960px-Orle%2C_zegar_s%C5%82oneczny_%2801%29.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 14
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). A sundial.
+  - soubor: File:Orle, Bar pod beczką.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_Bar_pod_beczk%C4%85.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/8d/Orle%2C_Bar_pod_beczk%C4%85.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Orle%2C_Bar_pod_beczk%C4%85.jpg/960px-Orle%2C_Bar_pod_beczk%C4%85.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 15
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). A barrel bar.
+  - soubor: File:Orle, vývěsní štít.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_v%C3%BDv%C4%9Bsn%C3%AD_%C5%A1t%C3%ADt.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/29/Orle%2C_v%C3%BDv%C4%9Bsn%C3%AD_%C5%A1t%C3%ADt.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Orle%2C_v%C3%BDv%C4%9Bsn%C3%AD_%C5%A1t%C3%ADt.jpg/960px-Orle%2C_v%C3%BDv%C4%9Bsn%C3%AD_%C5%A1t%C3%ADt.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 15
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, zegar słoneczny.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_zegar_s%C5%82oneczny.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/16/Orle%2C_zegar_s%C5%82oneczny.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Orle%2C_zegar_s%C5%82oneczny.jpg/960px-Orle%2C_zegar_s%C5%82oneczny.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 16
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). A sundial.
+  - soubor: File:Psy haski przy schronisku Orle - panoramio.jpg
+    autor: fot. Slawek Ilski
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Psy_haski_przy_schronisku_Orle_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/ba/Psy_haski_przy_schronisku_Orle_-_panoramio.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Psy_haski_przy_schronisku_Orle_-_panoramio.jpg/960px-Psy_haski_przy_schronisku_Orle_-_panoramio.jpg
+    rozmery: 4288×2848
+    vzdalenostM: 17
+    datum: Taken on 13 February 2010
+    popis: psy haski przy schronisku Orle
+  - soubor: File:Orle (05).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle_(05).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e5/Orle_%2805%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Orle_%2805%29.jpg/960px-Orle_%2805%29.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 19
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, znaki rowerowe (01).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_znaki_rowerowe_(01).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/63/Orle%2C_znaki_rowerowe_%2801%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Orle%2C_znaki_rowerowe_%2801%29.jpg/960px-Orle%2C_znaki_rowerowe_%2801%29.jpg
+    rozmery: 2448×3264
+    vzdalenostM: 19
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). Cycling route signs.
+  - soubor: File:Schronisko Orle - panoramio - krysi@ (1).jpg
+    autor: krysi@
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Orle_-_panoramio_-_krysi@_(1).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/63/Schronisko_Orle_-_panoramio_-_krysi%40_%281%29.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Schronisko_Orle_-_panoramio_-_krysi%40_%281%29.jpg/960px-Schronisko_Orle_-_panoramio_-_krysi%40_%281%29.jpg
+    rozmery: 4000×2248
+    vzdalenostM: 19
+    datum: Taken on 23 September 2016
+    popis: Schronisko Orle
+  - soubor: File:Szklarska Poręba, Osad Orle 1 - panoramio.jpg
+    autor: Tomasz Sudoł
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Osad_Orle_1_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f6/Szklarska_Por%C4%99ba%2C_Osad_Orle_1_-_panoramio.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Szklarska_Por%C4%99ba%2C_Osad_Orle_1_-_panoramio.jpg/960px-Szklarska_Por%C4%99ba%2C_Osad_Orle_1_-_panoramio.jpg
+    rozmery: 1920×1080
+    vzdalenostM: 21
+    datum: Taken on 18 January 2015
+    popis: Szklarska Poręba, Osad Orle 1
+  - soubor: File:Schronisko Orle - panoramio.jpg
+    autor: krysi@
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Orle_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/49/Schronisko_Orle_-_panoramio.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Schronisko_Orle_-_panoramio.jpg/960px-Schronisko_Orle_-_panoramio.jpg
+    rozmery: 4000×2248
+    vzdalenostM: 23
+    datum: Taken on 23 September 2016
+    popis: Schronisko Orle
+  - soubor: File:Schronisko Orle - panoramio - krysi@.jpg
+    autor: krysi@
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Orle_-_panoramio_-_krysi@.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/aa/Schronisko_Orle_-_panoramio_-_krysi%40.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Schronisko_Orle_-_panoramio_-_krysi%40.jpg/960px-Schronisko_Orle_-_panoramio_-_krysi%40.jpg
+    rozmery: 4000×2248
+    vzdalenostM: 24
+    datum: Taken on 23 September 2016
+    popis: Schronisko Orle
+  - soubor: File:Orle, schronisko (02).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_schronisko_(02).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/9e/Orle%2C_schronisko_%2802%29.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Orle%2C_schronisko_%2802%29.jpg/960px-Orle%2C_schronisko_%2802%29.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 29
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, znaki turystyczne.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_znaki_turystyczne.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/73/Orle%2C_znaki_turystyczne.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Orle%2C_znaki_turystyczne.jpg/960px-Orle%2C_znaki_turystyczne.jpg
+    rozmery: 2448×3264
+    vzdalenostM: 32
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). Hiking route signs.
+  - soubor: File:Orle, schronisko.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_schronisko.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f1/Orle%2C_schronisko.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Orle%2C_schronisko.jpg/960px-Orle%2C_schronisko.jpg
+    rozmery: 3202×2273
+    vzdalenostM: 40
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, tablica informacyjna.jpg
+    autor: photo by cs:ŠJů (board by Towarzystwo Izerskie)
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_tablica_informacyjna.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/07/Orle%2C_tablica_informacyjna.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Orle%2C_tablica_informacyjna.jpg/960px-Orle%2C_tablica_informacyjna.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 40
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). Infoboard about the settlement.
+  - soubor: File:Orle, schronisko (01).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_schronisko_(01).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/6c/Orle%2C_schronisko_%2801%29.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Orle%2C_schronisko_%2801%29.jpg/960px-Orle%2C_schronisko_%2801%29.jpg
+    rozmery: 3257×1699
+    vzdalenostM: 51
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Widok na schronisko Orle - panoramio.jpg
+    autor: krysi@
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Widok_na_schronisko_Orle_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/6b/Widok_na_schronisko_Orle_-_panoramio.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Widok_na_schronisko_Orle_-_panoramio.jpg/960px-Widok_na_schronisko_Orle_-_panoramio.jpg
+    rozmery: 4000×2248
+    vzdalenostM: 56
+    datum: Taken on 23 September 2016
+    popis: widok na schronisko Orle
+  - soubor: File:Orle, sklář (01).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_skl%C3%A1%C5%99_(01).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a9/Orle%2C_skl%C3%A1%C5%99_%2801%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Orle%2C_skl%C3%A1%C5%99_%2801%29.jpg/960px-Orle%2C_skl%C3%A1%C5%99_%2801%29.jpg
+    rozmery: 2448×3264
+    vzdalenostM: 57
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, sklář.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_skl%C3%A1%C5%99.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/99/Orle%2C_skl%C3%A1%C5%99.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Orle%2C_skl%C3%A1%C5%99.jpg/960px-Orle%2C_skl%C3%A1%C5%99.jpg
+    rozmery: 2448×3264
+    vzdalenostM: 57
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, znaki rowerowe.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_znaki_rowerowe.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/23/Orle%2C_znaki_rowerowe.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Orle%2C_znaki_rowerowe.jpg/960px-Orle%2C_znaki_rowerowe.jpg
+    rozmery: 2448×3264
+    vzdalenostM: 65
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). Cycling route signs.
+  - soubor: File:Orle, rozcestník a pohraničnické domky.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_rozcestn%C3%ADk_a_pohrani%C4%8Dnick%C3%A9_domky.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/5d/Orle%2C_rozcestn%C3%ADk_a_pohrani%C4%8Dnick%C3%A9_domky.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Orle%2C_rozcestn%C3%ADk_a_pohrani%C4%8Dnick%C3%A9_domky.jpg/960px-Orle%2C_rozcestn%C3%ADk_a_pohrani%C4%8Dnick%C3%A9_domky.jpg
+    rozmery: 2448×3264
+    vzdalenostM: 73
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle (04).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle_(04).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/1a/Orle_%2804%29.jpg
+    nalezeno: geosearch + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Orle_%2804%29.jpg/960px-Orle_%2804%29.jpg
+    rozmery: 3205×1828
+    vzdalenostM: 75
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, rozcestník.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_rozcestn%C3%ADk.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e4/Orle%2C_rozcestn%C3%ADk.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Orle%2C_rozcestn%C3%ADk.jpg/960px-Orle%2C_rozcestn%C3%ADk.jpg
+    rozmery: 2448×3264
+    vzdalenostM: 83
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, podmínky překračování hranice.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_podm%C3%ADnky_p%C5%99ekra%C4%8Dov%C3%A1n%C3%AD_hranice.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/cd/Orle%2C_podm%C3%ADnky_p%C5%99ekra%C4%8Dov%C3%A1n%C3%AD_hranice.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Orle%2C_podm%C3%ADnky_p%C5%99ekra%C4%8Dov%C3%A1n%C3%AD_hranice.jpg/960px-Orle%2C_podm%C3%ADnky_p%C5%99ekra%C4%8Dov%C3%A1n%C3%AD_hranice.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 92
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). Conditions for crossing the state border.
+  - soubor: File:Jakuszyce - panoramio.jpg
+    autor: fot. Slawek Ilski
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Jakuszyce_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/da/Jakuszyce_-_panoramio.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Jakuszyce_-_panoramio.jpg/960px-Jakuszyce_-_panoramio.jpg
+    rozmery: 1600×1063
+    vzdalenostM: 96
+    datum: Taken on 10 February 2010
+    popis: Jakuszyce
+  - soubor: File:Orle, Breslau i Glogau (01).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_Breslau_i_Glogau_(01).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/4f/Orle%2C_Breslau_i_Glogau_%2801%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Orle%2C_Breslau_i_Glogau_%2801%29.jpg/960px-Orle%2C_Breslau_i_Glogau_%2801%29.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 148
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). Former frontier guard houses "Breslau"
+      and "Glogau".
+  - soubor: File:Orle, strażnica.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_stra%C5%BCnica.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b3/Orle%2C_stra%C5%BCnica.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Orle%2C_stra%C5%BCnica.jpg/960px-Orle%2C_stra%C5%BCnica.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 149
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Jakuszyce - panoramio (2).jpg
+    autor: fot. Slawek Ilski
+    licence: CC BY 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Jakuszyce_-_panoramio_(2).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/fd/Jakuszyce_-_panoramio_%282%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Jakuszyce_-_panoramio_%282%29.jpg/960px-Jakuszyce_-_panoramio_%282%29.jpg
+    rozmery: 1600×1063
+    vzdalenostM: 150
+    datum: Taken on 13 February 2010
+    popis: Jakuszyce
+  - soubor: File:Orle (06).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle_(06).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/10/Orle_%2806%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Orle_%2806%29.jpg/960px-Orle_%2806%29.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 172
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, strażnica, okno.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_stra%C5%BCnica,_okno.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/93/Orle%2C_stra%C5%BCnica%2C_okno.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Orle%2C_stra%C5%BCnica%2C_okno.jpg/960px-Orle%2C_stra%C5%BCnica%2C_okno.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 172
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle (02).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle_(02).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/ae/Orle_%2802%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Orle_%2802%29.jpg/960px-Orle_%2802%29.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 210
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle (03).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle_(03).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/51/Orle_%2803%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Orle_%2803%29.jpg/960px-Orle_%2803%29.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 210
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, Breslau i Glogau panoramic.jpg
+    autor: "source images: cs:ŠJů derivative work: Justass ( talk )"
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_Breslau_i_Glogau_panoramic.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/00/Orle%2C_Breslau_i_Glogau_panoramic.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Orle%2C_Breslau_i_Glogau_panoramic.jpg/960px-Orle%2C_Breslau_i_Glogau_panoramic.jpg
+    rozmery: 10452×2546
+    vzdalenostM: 210
+    datum: Taken on 15 November 2009, panorama cre…
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Orle, Breslau i Glogau.jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle,_Breslau_i_Glogau.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/d1/Orle%2C_Breslau_i_Glogau.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Orle%2C_Breslau_i_Glogau.jpg/960px-Orle%2C_Breslau_i_Glogau.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 210
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland). Former frontier guard houses "Breslau"
+      and "Glogau".
+  - soubor: File:Orle (07).jpg
+    autor: cs:ŠJů
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Orle_(07).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b4/Orle_%2807%29.jpg
+    nalezeno: geosearch
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Orle_%2807%29.jpg/960px-Orle_%2807%29.jpg
+    rozmery: 3264×2448
+    vzdalenostM: 247
+    datum: 2009-11-15
+    popis: Orle (Szklarska Poręba, Poland).
+  - soubor: File:Schronisko Orle.JPG
+    autor: Pudelek
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_Orle.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/d/d2/Schronisko_Orle.JPG
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Schronisko_Orle.JPG/960px-Schronisko_Orle.JPG
+    rozmery: 1600×1200
+    datum: 2007-12
+    popis: Szklarska Poręba - Schronisko Turystyczne "Orle" w Górach Izerskich
+  - soubor: File:Schronisko turystyczne orle.JPG
+    autor: Admirał Bum aka Admirał Bang
+    licence: CC BY 2.5
+    stranka: https://commons.wikimedia.org/wiki/File:Schronisko_turystyczne_orle.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/0/0b/Schronisko_turystyczne_orle.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/2.5
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Schronisko_turystyczne_orle.JPG/960px-Schronisko_turystyczne_orle.JPG
+    rozmery: 967×438
+    datum: Winter 2006 date QS:P,+2006-00-00T00:00…
+    popis: Schronisko turystyczne "Orle" zimą
+  - soubor: File:Szklarska Poręba, Schronisko turystyczne Orle - fotopolska.eu
+      (104622).jpg
+    autor: pawulon
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Schronisko_turystyczne_Orle_-_fotopolska.eu_(104622).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/a8/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104622%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104622%29.jpg/960px-Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104622%29.jpg
+    rozmery: 1200×803
+    datum: 2010-05-02
+    popis: Szklarska Poręba - Schronisko Orle
+  - soubor: File:Szklarska Poręba, Schronisko turystyczne Orle - fotopolska.eu
+      (104623).jpg
+    autor: pawulon
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Schronisko_turystyczne_Orle_-_fotopolska.eu_(104623).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/2f/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104623%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104623%29.jpg/960px-Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104623%29.jpg
+    rozmery: 1100×736
+    datum: 2010-05-02
+    popis: Główny korytarz w schronisku .
+  - soubor: File:Szklarska Poręba, Schronisko turystyczne Orle - fotopolska.eu
+      (104624).jpg
+    autor: pawulon
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Schronisko_turystyczne_Orle_-_fotopolska.eu_(104624).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ee/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104624%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104624%29.jpg/960px-Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104624%29.jpg
+    rozmery: 1000×669
+    datum: 2010-05-02
+    popis: Stary piec stojący w korytarzu schroniska .
+  - soubor: File:Szklarska Poręba, Schronisko turystyczne Orle - fotopolska.eu
+      (104625).jpg
+    autor: pawulon
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Schronisko_turystyczne_Orle_-_fotopolska.eu_(104625).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/8f/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104625%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104625%29.jpg/960px-Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104625%29.jpg
+    rozmery: 1100×736
+    datum: 2010-05-02
+    popis: Bar "pod Beczką" należący do schroniska "Orle" .
+  - soubor: File:Szklarska Poręba, Schronisko turystyczne Orle - fotopolska.eu
+      (104631).jpg
+    autor: pawulon
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Schronisko_turystyczne_Orle_-_fotopolska.eu_(104631).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/33/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104631%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104631%29.jpg/960px-Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104631%29.jpg
+    rozmery: 1200×803
+    datum: 2010-05-02
+    popis: Schronisko "Orle" . Widoczny po prawej zegar słoneczny (powiększenie) a
+      po lewej tablica z zaproszeniem do wejścia do schroniska i skosztowania
+      czegoś dobrego :)
+  - soubor: File:Szklarska Poręba, Schronisko turystyczne Orle - fotopolska.eu
+      (104635).jpg
+    autor: pawulon
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Schronisko_turystyczne_Orle_-_fotopolska.eu_(104635).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/d2/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104635%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104635%29.jpg/960px-Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104635%29.jpg
+    rozmery: 1200×803
+    datum: 2010-05-02
+    popis: Ciekawe płaskorzeźby wykonane za pomocą... gumówki.
+  - soubor: File:Szklarska Poręba, Schronisko turystyczne Orle - fotopolska.eu
+      (104636).jpg
+    autor: pawulon
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Szklarska_Por%C4%99ba,_Schronisko_turystyczne_Orle_-_fotopolska.eu_(104636).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/17/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104636%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104636%29.jpg/960px-Szklarska_Por%C4%99ba%2C_Schronisko_turystyczne_Orle_-_fotopolska.eu_%28104636%29.jpg
+    rozmery: 1200×803
+    datum: 2010-05-02
+    popis: Widok na cały kompleks schroniska "Orle" . W miejscu gdzie po prawej
+      stoją zaparkowane samochody, kiedyś znajdowała się Gospoda Schneidera

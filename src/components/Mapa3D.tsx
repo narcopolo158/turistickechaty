@@ -16,7 +16,8 @@ export default function Mapa3D({
   appUrl,
   oblastNazev,
 }: {
-  posterUrl: string
+  /** Náhled scény. `null` = oblast svůj poster nemá → neutrální plocha. */
+  posterUrl: string | null
   appUrl: string
   /**
    * Jméno oblasti do titulku iframu, aria-labelu tlačítka a altu posteru.
@@ -53,8 +54,17 @@ export default function Mapa3D({
         />
       ) : (
         <button type="button" className="m3d-poster" onClick={() => setStav((s) => ({ ...s, spusteno: true }))} aria-label={`Spustit 3D mapu — ${oblastNazev}`}>
-          {/* eslint-disable-next-line @next/next/no-img-element -- statický poster z public/3d */}
-          <img src={posterUrl} alt={`Náhled 3D mapy — ${oblastNazev}, malovaný panoramatický režim`} loading="lazy" decoding="async" />
+          {posterUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element -- statický poster z public/3d
+            <img
+              src={posterUrl}
+              alt={`Náhled 3D mapy — ${oblastNazev}, malovaný panoramatický režim`}
+              loading="lazy"
+              decoding="async"
+            />
+          ) : (
+            <span className="m3d-poster-prazdno" aria-hidden="true" />
+          )}
           <span className="m3d-poster-overlay">
             <span className="m3d-poster-cta">▶ Spustit 3D mapu</span>
             <span className="m3d-poster-pozn">poster šetří data — 3D scéna (~3,4 MB) se načte až po kliknutí</span>
