@@ -1,4 +1,4 @@
-# Sasanka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
+# Sasanka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-31)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Sasanka + fulltext „Sasanka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: krkonose
 nazevChaty: Sasanka
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   kandidát DATA-01"
-checked: 2026-07-28
+checked: 2026-07-31
 fotky:
   - soubor: File:LD Hnědý vrch, pohled na sjezdovku.jpg
     autor: Honza Groh ( Jagro )
@@ -119,6 +119,21 @@ fotky:
     rozmery: 5729×3172
     datum: 2020-04-05
     popis: Eine Biene fliegt auf zwei Küchenschellen in einem Trockenrasenhang zu
+  - soubor: File:Fruchstand einer Küchenschelle, Gorchi-Tereldsch-Nationalpark
+      unweit des Jalman Meadows Wilderness Camp, Mongolei.jpg
+    autor: GerritR
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Fruchstand_einer_K%C3%BCchenschelle,_Gorchi-Tereldsch-Nationalpark_unweit_des_Jalman_Meadows_Wilderness_Camp,_Mongolei.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/2b/Fruchstand_einer_K%C3%BCchenschelle%2C_Gorchi-Tereldsch-Nationalpark_unweit_des_Jalman_Meadows_Wilderness_Camp%2C_Mongolei.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Fruchstand_einer_K%C3%BCchenschelle%2C_Gorchi-Tereldsch-Nationalpark_unweit_des_Jalman_Meadows_Wilderness_Camp%2C_Mongolei.jpg/960px-Fruchstand_einer_K%C3%BCchenschelle%2C_Gorchi-Tereldsch-Nationalpark_unweit_des_Jalman_Meadows_Wilderness_Camp%2C_Mongolei.jpg
+    rozmery: 3888×2592
+    datum: 2019-07-23 11:54:55
+    popis: "Fruchstand einer Küchenschelle, Gorchi-Tereldsch-Nationalpark unweit des
+      Jalman Meadows Wilderness Camp, Mongolei Object location 48° 05′ 04″ N,
+      107° 51′ 59″ E View this and other nearby images on: OpenStreetMap
+      48.084430; 107.866452"
   - soubor: File:Gauda Kingdom.jpg
     autor: Zsskala
     licence: CC BY-SA 4.0
@@ -269,17 +284,6 @@ fotky:
     popis: Die Kuhschelle scheint im Steilhang des Bogenberges förmlich aus den
       Felsen zu wachsen. Sie kommt dort an mehreren Stellen vor und ist
       geschützt.
-  - soubor: File:Kuhschelle-KiH.jpg
-    autor: Selbst
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Kuhschelle-KiH.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/6/6c/Kuhschelle-KiH.jpg
-    nalezeno: fulltext
-    licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kuhschelle-KiH.jpg/960px-Kuhschelle-KiH.jpg
-    rozmery: 3008×2000
-    datum: 2006-04
-    popis: Küchenschelle/Kissiner Heide
   - soubor: File:Kuhschelle, Bogenberg NSG.jpg
     autor: Rosa-Maria Rinkl
     licence: CC BY-SA 4.0
@@ -294,6 +298,17 @@ fotky:
       Bogenberg. Der Hang ist nach Süden zur Donau hin ausgerichtet. Die Blüten
       zeigen sich im zeitigen Frühjahr. Das Naturschutzgebiet Bogenberg weist
       eine Größe von 7,77 Hekta…
+  - soubor: File:Küchenschelle.jpg
+    autor: Olliver Konopik
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:K%C3%BCchenschelle.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/da/K%C3%BCchenschelle.jpg
+    nalezeno: fulltext
+    licenceUrl: http://creativecommons.org/licenses/by-sa/3.0/
+    nahled: https://upload.wikimedia.org/wikipedia/commons/d/da/K%C3%BCchenschelle.jpg
+    rozmery: 667×500
+    datum: 2007-01-20
+    popis: Küchenschellen im Wollmatinger Ried
   - soubor: File:Maharaja Shashanka of Bengal.jpg
     autor: Zsskala
     licence: CC BY-SA 4.0
@@ -405,6 +420,17 @@ fotky:
       und Bayern vom Aussterben bedroht (Rote Liste: 1). Sie kommt heute nur
       noch an wenigen Standorten in Bayern vor. Zufällig vermehrt sich diese
       schöne Pflanze und Heilkra…"
+  - soubor: File:Первоцвет прострел.jpg
+    autor: Денис Пронин 57
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D1%86%D0%B2%D0%B5%D1%82_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B5%D0%BB.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/25/%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D1%86%D0%B2%D0%B5%D1%82_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B5%D0%BB.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D1%86%D0%B2%D0%B5%D1%82_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B5%D0%BB.jpg/960px-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D1%86%D0%B2%D0%B5%D1%82_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B5%D0%BB.jpg
+    rozmery: 1920×1200
+    datum: 2022-04-30 17:04:38
+    popis: На фото изображён прострел
   - soubor: File:Первоцветы Забайкалья.jpg
     autor: Suchkova Angelina
     licence: CC BY 4.0

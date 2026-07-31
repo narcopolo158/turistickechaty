@@ -1,4 +1,4 @@
-# Na Stogu Izerskim — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-28)
+# Na Stogu Izerskim — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-31)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Na Stogu Izerskim + fulltext „Na Stogu Izerskim" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: jizerske-hory
 nazevChaty: Na Stogu Izerskim
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   data/chaty"
-checked: 2026-07-28
+checked: 2026-07-31
 fotky:
   - soubor: File:Stog Izerski, trails (1).jpg
     autor: MOs810
@@ -145,7 +145,7 @@ fotky:
     rozmery: 3872×2576
     vzdalenostM: 24
     datum: 2014-08-25 11:20:34
-    popis: This is a a picture of a Natura 2000 protected area with ID
+    popis: This is a photograph of a Natura 2000 protected area with ID
   - soubor: File:Panorama z tarasu Schroniska na Stogu Izerskim.jpg
     autor: Szydzio
     licence: CC BY-SA 4.0
@@ -332,7 +332,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Schronisko,_Stog_Izerski_(3).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/44/Schronisko%2C_Stog_Izerski_%283%29.jpg
-    nalezeno: geosearch + fulltext
+    nalezeno: geosearch
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Schronisko%2C_Stog_Izerski_%283%29.jpg/960px-Schronisko%2C_Stog_Izerski_%283%29.jpg
     rozmery: 3968×2976
@@ -717,6 +717,15 @@ fotky:
     rozmery: 3140×2355
     datum: 2022-08-08 13:39:12
     popis: Heufuderbaude (1060 m) bei Bad Flinsberg (Świeradów-Zdrój)
+  - soubor: File:Postcard-Bad-Flinsberg-Świeradów-Zdrój-Heufuderbaude-Gastraum-1932.jpg
+    autor: Unknown author Unknown author
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Postcard-Bad-Flinsberg-%C5%9Awierad%C3%B3w-Zdr%C3%B3j-Heufuderbaude-Gastraum-1932.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/9d/Postcard-Bad-Flinsberg-%C5%9Awierad%C3%B3w-Zdr%C3%B3j-Heufuderbaude-Gastraum-1932.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Postcard-Bad-Flinsberg-%C5%9Awierad%C3%B3w-Zdr%C3%B3j-Heufuderbaude-Gastraum-1932.jpg/960px-Postcard-Bad-Flinsberg-%C5%9Awierad%C3%B3w-Zdr%C3%B3j-Heufuderbaude-Gastraum-1932.jpg
+    rozmery: 981×616
+    popis: Gastraum der Heufuderbaude 1932
   - soubor: File:SchroniskoPTTKNaStoguIzerskim-Drogowskazy-POL, Stóg Izerski.jpg
     autor: Mach240390
     licence: CC BY 4.0
