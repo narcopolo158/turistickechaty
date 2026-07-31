@@ -12,6 +12,7 @@ import {
   CHIP_KLICE,
   CHIP_POPISKY,
   filtrujKatalog,
+  oblastiZIndexu,
   formatCheckedDatum,
   formatVyskaM,
   RAZENI,
@@ -82,7 +83,13 @@ function MiniOtisk({ ch }: { ch: IndexChata }) {
 
 export default function KatalogClient({ index }: { index: IndexChata[] }) {
   const searchParams = useSearchParams()
-  const stav: KatalogStav = useMemo(() => stavZUrl(new URLSearchParams(searchParams.toString())), [searchParams])
+  // Pohoří do filtru se berou z INDEXU, ne z číselníku — nová oblast se objeví
+  // sama, jakmile má první publikovaný profil (zadání Michala 31. 7. 2026).
+  const oblasti = useMemo(() => oblastiZIndexu(index), [index])
+  const stav: KatalogStav = useMemo(
+    () => stavZUrl(new URLSearchParams(searchParams.toString()), oblasti.map((o) => o.slug)),
+    [searchParams, oblasti],
+  )
   const vysledek = useMemo(() => filtrujKatalog(index, stav), [index, stav])
 
   const zmen = useCallback(
@@ -99,6 +106,13 @@ export default function KatalogClient({ index }: { index: IndexChata[] }) {
   const prepniChip = (chip: ChipKlic) =>
     zmen({ chips: stav.chips.includes(chip) ? stav.chips.filter((c) => c !== chip) : [...stav.chips, chip] })
 
+  const prepniOblast = (slug: string) =>
+    zmen({
+      oblasti: stav.oblasti.includes(slug)
+        ? stav.oblasti.filter((o) => o !== slug)
+        : [...stav.oblasti, slug],
+    })
+
   // Mapa: markery = přefiltrovaná množina; jen profily s doloženou GPS a URL.
   const proMapu: MapovaChata[] = useMemo(
     () =>
@@ -112,7 +126,7 @@ export default function KatalogClient({ index }: { index: IndexChata[] }) {
   const bezGpsPocet = vysledek.length - proMapu.length
 
   // Klíč gridu = otisk filtru → přefiltrování remountne výpis → fadeUp animace (prototyp).
-  const filtrKlic = `${stav.q}|${stav.chips.join(',')}|${stav.sort}|${stav.view}`
+  const filtrKlic = `${stav.q}|${stav.chips.join(',')}|${stav.oblasti.join(',')}|${stav.sort}|${stav.view}`
 
   return (
     <>
@@ -160,6 +174,33 @@ export default function KatalogClient({ index }: { index: IndexChata[] }) {
             ))}
           </div>
         </div>
+        {/* Lišta pohoří jen tehdy, když je z čeho vybírat. S jedinou oblastí
+            by to byl přepínač bez alternativy — a zároveň nepravdivý dojem,
+            že průvodce vede víc pohoří, než vede. */}
+        {oblasti.length > 1 && (
+          <div className="ktl-bar-radek ktl-bar-chips">
+            <span className="ktl-mikrolabel">Pohoří</span>
+            {oblasti.map((o) => {
+              const aktivni = stav.oblasti.includes(o.slug)
+              return (
+                <button
+                  key={o.slug}
+                  type="button"
+                  className={`ktl-chip${aktivni ? ' akt' : ''}`}
+                  aria-pressed={aktivni}
+                  onClick={() => prepniOblast(o.slug)}
+                >
+                  {o.nazev} <span className="ktl-chip-pocet">{o.pocet}</span>
+                  {aktivni ? ' ×' : ''}
+                </button>
+              )
+            })}
+            <span className="ktl-vypln" />
+            <span className="ktl-pozn mn">
+              bez výběru katalog vede všechna pohoří · počty jsou publikované profily
+            </span>
+          </div>
+        )}
         <div className="ktl-bar-radek ktl-bar-chips">
           <span className="ktl-mikrolabel">Filtry</span>
           {CHIP_KLICE.map((chip) => {
@@ -188,7 +229,7 @@ export default function KatalogClient({ index }: { index: IndexChata[] }) {
               Vedeme jen doložené profily — nic si nedomýšlíme. Zkus ubrat filtr, nebo se podívej do{' '}
               <Link href="/zanikle">Atlasu zaniklých</Link>.
             </p>
-            <button type="button" className="ktl-reset" onClick={() => zmen({ q: '', chips: [] })}>
+            <button type="button" className="ktl-reset" onClick={() => zmen({ q: '', chips: [], oblasti: [] })}>
               Zrušit filtry
             </button>
           </div>

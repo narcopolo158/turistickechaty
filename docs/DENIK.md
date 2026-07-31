@@ -11,6 +11,50 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (odpoledne, podruhé) — filtr podle pohoří v katalogu
+
+**Hotovo:** zadání Michala „na přehledu všech chat budeme potřebovat filtr
+podle pohoří — a připrav to rovnou tak, aby to fungovalo pro všechna nově
+založená pohoří i do budoucna".
+
+**Ta druhá půlka zadání rozhodla o návrhu.** Nabízelo se přidat pohoří mezi
+`CHIP_KLICE` — jenže to je pevný seznam v kódu a každá nová oblast by
+znamenala sáhnout do dvou souborů a nezapomenout. **Seznam pohoří se proto
+odvozuje z indexu** (`oblastiZIndexu`): co má aspoň jeden publikovaný profil,
+to je ve filtru. Nová oblast se objeví tím, že vznikne — nikdo na to nemusí
+sáhnout.
+
+**Jak se to chová:**
+- výběr pohoří je **OR** (jako stavové chips), kombinace s ostatními filtry
+  **AND** — „Jizerské hory + občerstvení" dá jizerské chaty s doloženým
+  občerstvením;
+- **prázdný výběr = všechna pohoří**, ne žádné (to by vymazalo katalog);
+- stav se veze v URL (`?oblasti=jizerske-hory`), takže odkaz jde poslat
+  a tlačítko zpět funguje — stejně jako u ostatních filtrů;
+- u každého pohoří stojí **počet profilů** (Krkonoše 77, Jizerské hory 12);
+- **lišta se ukáže, jen když je z čeho vybírat.** S jedinou oblastí by to byl
+  přepínač bez alternativy a zároveň nepravdivý dojem, že průvodce vede víc
+  pohoří, než vede. Než přibyly Jizerky, filtr by byl lež.
+
+**Odolnost odkazů.** Neznámý slug v ručně upravené URL se zahodí — stejně jako
+neznámý chip. Bez toho by překlep ukázal prázdný katalog, což čtenář přečte
+jako „průvodce nic nemá". Funkce `stavZUrl` proto umí dostat seznam skutečných
+oblastí; bez něj zůstává čistá a slug přijme (filtr pak jen nezabere).
+
+**Stránky pohoří se to nedotklo** — `PohoriChatySeznam` sdílí `filtrujKatalog`
+a bere výchozí stav, takže filtruje dál jen svoje chaty; lišta pohoří tam
+nedává smysl a není tam.
+
+**Testy:** 601 (z 592) — devět nových: nabídka vzniká z dat a řadí se dle
+počtu, profil bez oblasti do nabídky nepatří, prázdný výběr = vše, OR i AND
+kombinace, roundtrip URL, zahození neznámého slugu, a v komponentě to, že
+lišta s jedinou oblastí NENÍ a s druhou přibude i s počty.
+
+**Odpověď na Michalův dotaz:** ano, DATA-02 spustit znovu — předchozí běh spadl
+před commitem, takže se nic neuložilo, a skript teď dílčí pád ustojí.
+
+**Příště:** projít fotky z DATA-02, pak DATA-28 pro Jizerky a nový poster.
+
 ## 2026-07-31 (dopoledne, potřetí) — DATA-02 spadlo a vzalo s sebou všechno; poster Jizerek ukazoval Krkonoše
 
 **Dvě hlášení od Michala naráz.**

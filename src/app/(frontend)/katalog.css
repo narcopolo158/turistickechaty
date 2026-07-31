@@ -74,6 +74,9 @@
   white-space: nowrap;
 }
 .ktl-chip.akt { background: var(--red); border-color: var(--red); color: #fff; }
+/* Počet profilů u pohoří — tlumeně, ať zůstane názvem dominantní jméno oblasti. */
+.ktl-chip-pocet { opacity: 0.62; font-weight: 500; }
+.ktl-chip.akt .ktl-chip-pocet { opacity: 0.8; }
 .ktl-vypln { flex: 1; }
 .ktl-pozn { font-size: 10.5px; line-height: 1.4; color: var(--label); }
 

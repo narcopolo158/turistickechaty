@@ -161,4 +161,53 @@ describe('KatalogClient', () => {
     const razeni = within(screen.getByRole('group', { name: 'Řazení' }))
     expect(razeni.getByRole('button', { name: 'abecedně' }).className).toContain('akt')
   })
+
+  /**
+   * Lišta pohoří se ukazuje, JEN když je z čeho vybírat. S jedinou oblastí by
+   * to byl přepínač bez alternativy a zároveň nepravdivý dojem, že průvodce
+   * vede víc pohoří, než vede. Seznam se bere z indexu, takže nová oblast se
+   * objeví sama (zadání Michala 31. 7. 2026).
+   */
+  it('lišta pohoří: s jednou oblastí není, s druhou přibude i s počty', () => {
+    const { container } = render(<KatalogClient index={INDEX} />)
+    expect(container.textContent).not.toContain('Pohoří')
+    cleanup()
+
+    render(
+      <KatalogClient
+        index={[
+          ...INDEX,
+          chata({
+            slug: 'smedava',
+            nazev: 'Smědava',
+            url: '/cesko/jizerske-hory/smedava',
+            oblastSlug: 'jizerske-hory',
+            oblastNazev: 'Jizerské hory',
+          }),
+        ]}
+      />,
+    )
+    const tlacitko = screen.getByRole('button', { name: /Jizerské hory/ })
+    expect(tlacitko.textContent).toContain('1') // počet profilů oblasti
+    expect(screen.getByRole('button', { name: /Krkonoše/ }).textContent).toContain('3')
+  })
+
+  it('výběr pohoří filtruje výpis a zapíše se do URL', () => {
+    render(
+      <KatalogClient
+        index={[
+          ...INDEX,
+          chata({
+            slug: 'smedava',
+            nazev: 'Smědava',
+            url: '/cesko/jizerske-hory/smedava',
+            oblastSlug: 'jizerske-hory',
+            oblastNazev: 'Jizerské hory',
+          }),
+        ]}
+      />,
+    )
+    fireEvent.click(screen.getByRole('button', { name: /Jizerské hory/ }))
+    expect(window.location.search).toContain('oblasti=jizerske-hory')
+  })
 })
