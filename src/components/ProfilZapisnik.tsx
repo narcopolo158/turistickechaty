@@ -7,7 +7,7 @@
  * Faux-3D jen pro artefakty + hero (restraint). Noc = globální body.dark. Serif (Newsreader) default.
  */
 
-import React, { useState, useSyncExternalStore } from 'react'
+import React, { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import Link from 'next/link'
 
 import MapaTrasy, { type TrasaNaMape } from './MapaTrasy'
@@ -43,6 +43,16 @@ export type ZapData = {
   crumb: string
   vyskaText: string | null
   hero: { url: string; alt: string } | null
+  /** Album — současné snímky kromě profilového (galerie chaty). */
+  galerie: {
+    url: string
+    plna: string
+    alt: string
+    autor: string | null
+    licence: string | null
+    zdrojUrl: string | null
+    datovani: string | null
+  }[]
   heroAtribuce: { text: string; url: string | null } | null
   heroCaption: string
   status: { kind: 'open' | 'gone' | 'none'; label: string; sub: string | null }
@@ -124,7 +134,18 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
     () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
     () => false,
   )
-  const [unfolded, setUnfolded] = useState(false)
+  /**
+   * Mapa je rozbalená ROVNOU (rozhodnutí Michala 31. 7. 2026: „nesedí mi tam
+   * ten placeholder přes mapu, líbila by se mi rovnou rozbalená").
+   *
+   * Skládaná obálka byla z grafického návrhu — hezká metafora, ale mezi
+   * čtenářem a tím, proč sem přišel, stálo kliknutí. Papírové sklady zůstávají
+   * jako dekorace nad živými dlaždicemi a „Složit" pořád funguje; jen se
+   * nezačíná zavřené. Dlaždice se přitom natáhnou, až se mapa doroluje do
+   * záběru — API Mapy.com se tedy nešahá kvůli návštěvníkům, kteří tam
+   * nedojdou (to bylo na skládání to jediné praktické).
+   */
+  const [unfolded, setUnfolded] = useState(true)
   const [slider, setSlider] = useState(52)
   const tilt = useTilt(reduced)
 
@@ -250,9 +271,8 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
             {/* Skládaná mapa */}
             {data.mapa && (
               <>
-                <div className="zap-strip"><b>Mapa · skládaná</b><span className="line" /><span className="tag">Podpisový prvek</span></div>
+                <div className="zap-strip"><b>Mapa</b><span className="line" /><span className="tag">trasy a nástupy</span></div>
                 <SkladanaMapa mapa={data.mapa} nazev={data.nazev} unfolded={unfolded} setUnfolded={setUnfolded} reduced={reduced} />
-                <div className="zap-srcnote"><span className="t">†</span> živé dlaždice Mapy.com pod dekorativní papírovou vrstvou · sklady ve „whisper“ úrovni, neruší ovládání</div>
                 {data.mapa3dUrl && (
                   <a className="zap-3d-odkaz" href={data.mapa3dUrl}>Ukázat na 3D mapě pohoří ▸</a>
                 )}
@@ -275,6 +295,34 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
                     <a className="zap-3d-odkaz" href={data.prispetUrl}>Znáš přesnou polohu? Pošli ji do sbírky ▸</a>
                   )}
                 </div>
+              </>
+            )}
+
+            {/*
+              ALBUM — další snímky chaty (rozhodnutí Michala 31. 7. 2026:
+              „další fotky pod razítka a mapu, do levé části").
+
+              Proč zrovna sem: levý sloupec je v zápisníku ta „měkká" strana —
+              artefakty, mapa, paměť. Album po mapě uzavírá cestu, kterou
+              stránka vede: co to je (hlavička) → co si odsud odnesu
+              (razítko) → jak se tam dostanu (mapa) → jak to tam vypadá.
+              Vpravo jsou tvrdá data a fotky by je tříštily.
+
+              Vizuálně navazuje na vlepené snímky z alba pohoří: bílý rám,
+              fotorožky, drobné natočení, které se při najetí srovná. První
+              fotka je přes celou šířku sloupce (má nést dojem z místa),
+              zbytek v dvojicích.
+            */}
+            {data.galerie.length > 0 && (
+              <>
+                <div className="zap-strip">
+                  <b>Album</b>
+                  <span className="line" />
+                  <span className="tag">
+                    {data.galerie.length} {data.galerie.length === 1 ? 'snímek' : data.galerie.length < 5 ? 'snímky' : 'snímků'}
+                  </span>
+                </div>
+                <Album fotky={data.galerie} nazev={data.nazev} reduced={reduced} />
               </>
             )}
 
@@ -591,13 +639,47 @@ function VizitkaObjekt({ v, tilt }: { v: NonNullable<ZapData['vizitka']>; tilt: 
 
 // ── Skládaná mapa (obálka → unfold → živé dlaždice + papír) ────────────────
 function SkladanaMapa({ mapa, nazev, unfolded, setUnfolded, reduced }: { mapa: NonNullable<ZapData['mapa']>; nazev: string; unfolded: boolean; setUnfolded: (v: boolean) => void; reduced: boolean }) {
+  /**
+   * Dlaždice se natáhnou, teprve až mapa vjede do záběru. Skládaná obálka to
+   * dřív dělala klikem — teď to dělá scroll, takže mapa vypadá hotově a přitom
+   * se dotaz na Mapy.com pošle jen za čtenáře, který k ní opravdu dojde.
+   */
+  const [vzahledu, setVzahledu] = useState(false)
+  const ramRef = useRef<HTMLDivElement | null>(null)
+  useEffect(() => {
+    const prvek = ramRef.current
+    if (!prvek || vzahledu) return
+    if (typeof IntersectionObserver === 'undefined') {
+      // Prohlížeč bez pozorovatele (starší, testovací prostředí) mapu prostě
+      // ukáže; odložení do mikroúlohy drží pravidlo „žádný setState přímo
+      // v efektu", které jinak spouští kaskádu překreslení.
+      const id = setTimeout(() => setVzahledu(true), 0)
+      return () => clearTimeout(id)
+    }
+    const pozorovatel = new IntersectionObserver(
+      (zaznamy) => {
+        if (zaznamy.some((z) => z.isIntersecting)) {
+          setVzahledu(true)
+          pozorovatel.disconnect()
+        }
+      },
+      { rootMargin: '300px' },
+    )
+    pozorovatel.observe(prvek)
+    return () => pozorovatel.disconnect()
+  }, [vzahledu])
+
   return (
-    <div className="zap-map">
+    <div className="zap-map" ref={ramRef}>
       <div className={`zap-map-inner${unfolded && !reduced ? ' unfold' : ''}`}>
         {unfolded ? (
           <>
             <div className="zap-map-live">
-              <MapaTrasy hut={{ nazev, lat: mapa.lat, lng: mapa.lng }} trasy={mapa.trasy} />
+              {vzahledu ? (
+                <MapaTrasy hut={{ nazev, lat: mapa.lat, lng: mapa.lng }} trasy={mapa.trasy} />
+              ) : (
+                <div className="zap-map-ceka" aria-hidden />
+              )}
             </div>
             <div className="zap-map-paper" aria-hidden>
               <div className="fold-v" style={{ left: '33.3%' }} />
@@ -614,12 +696,121 @@ function SkladanaMapa({ mapa, nazev, unfolded, setUnfolded, reduced }: { mapa: N
               <div className="fold-v" style={{ left: '66.6%', background: 'linear-gradient(90deg,rgba(0,0,0,.14),rgba(255,255,255,.55))' }} />
               <div className="fold-h" style={{ top: '50%', background: 'linear-gradient(rgba(0,0,0,.12),rgba(255,255,255,.5))' }} />
             </div>
-            <div><div className="t1">Mapy.com · outdoor</div><div className="t2">Skládaná turistická mapa</div></div>
             <span className="btn">Rozložit mapu ▸</span>
           </button>
         )}
       </div>
     </div>
+  )
+}
+
+/**
+ * ALBUM — vlepené snímky v levém sloupci profilu.
+ *
+ * Návrhová rozhodnutí, která tu stojí za pozornost:
+ *  - **První snímek přes celou šířku**, zbytek v dvojicích. Album má nejdřív
+ *    dát dojem z místa, teprve pak detaily; mřížka stejně velkých čtverců by
+ *    z toho udělala kontaktní arch.
+ *  - **Fotorožky a drobné natočení** navazují na vlepené snímky v albu pohoří —
+ *    stránka je zápisník, ne galerie stocku. Při najetí se snímek srovná
+ *    a nadzvedne; `prefers-reduced-motion` to vypíná.
+ *  - **Atribuce u každého snímku**, i když licence nevyžaduje. Web, který
+ *    u faktů jmenuje prameny a u fotek ne, si protiřečí.
+ *  - **Lupa přes celou obrazovku** po kliknutí: šipky, Esc, klik mimo. Bez ní
+ *    by album bylo jen ozdoba — na fotce chaty chce člověk vidět detail.
+ */
+function Album({ fotky, nazev, reduced }: { fotky: ZapData['galerie']; nazev: string; reduced: boolean }) {
+  const [otevrena, setOtevrena] = useState<number | null>(null)
+  const zavri = useCallback(() => setOtevrena(null), [])
+  const posun = useCallback(
+    (o: number) => setOtevrena((i) => (i == null ? null : (i + o + fotky.length) % fotky.length)),
+    [fotky.length],
+  )
+
+  useEffect(() => {
+    if (otevrena == null) return
+    const naKlavesu = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') zavri()
+      if (e.key === 'ArrowRight') posun(1)
+      if (e.key === 'ArrowLeft') posun(-1)
+    }
+    window.addEventListener('keydown', naKlavesu)
+    return () => window.removeEventListener('keydown', naKlavesu)
+  }, [otevrena, zavri, posun])
+
+  const atribuce = (f: ZapData['galerie'][number]) =>
+    ['foto: ' + (f.autor ?? 'neznámý autor'), f.licence, f.datovani].filter(Boolean).join(' · ')
+
+  return (
+    <>
+      <div className="zap-album">
+        {fotky.map((f, i) => (
+          <figure
+            key={f.plna}
+            /**
+             * Velký úvodní snímek jen u LICHÉHO počtu — zbytek se pak srovná
+             * do dvojic a mřížka nikdy nekončí osamělou půlkou. U sudého počtu
+             * jsou všechny stejné, což je taky v pořádku: album má vypadat
+             * složené, ne rozsypané.
+             */
+            className={`zap-album-snimek${i === 0 && fotky.length % 2 === 1 ? ' velky' : ''}`}
+            style={reduced ? undefined : ({ '--rot': `${((i % 3) - 1) * 0.9}deg` } as React.CSSProperties)}
+          >
+            <button type="button" onClick={() => setOtevrena(i)} aria-label={`Zvětšit: ${f.alt}`}>
+              {/* eslint-disable-next-line @next/next/no-img-element -- náhled z Payloadu, rozměry řídí CSS */}
+              <img src={f.url} alt={f.alt} loading="lazy" decoding="async" />
+              <span className="roh lh" aria-hidden />
+              <span className="roh ph" aria-hidden />
+              <span className="roh ld" aria-hidden />
+              <span className="roh pd" aria-hidden />
+            </button>
+            <figcaption>
+              <span className="popis">{f.alt}</span>
+              <span className="atr">{atribuce(f)}</span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+
+      {otevrena != null && fotky[otevrena] && (
+        <div className="zap-lupa" role="dialog" aria-modal="true" aria-label={`Album — ${nazev}`} onClick={zavri}>
+          <div className="zap-lupa-obsah" onClick={(e) => e.stopPropagation()}>
+            {/* eslint-disable-next-line @next/next/no-img-element -- plná fotka z Payloadu */}
+            <img src={fotky[otevrena]!.plna} alt={fotky[otevrena]!.alt} />
+            <div className="zap-lupa-popis">
+              <b>{fotky[otevrena]!.alt}</b>
+              <span>
+                {atribuce(fotky[otevrena]!)}
+                {fotky[otevrena]!.zdrojUrl && (
+                  <>
+                    {' · '}
+                    <a href={fotky[otevrena]!.zdrojUrl!} target="_blank" rel="noreferrer">
+                      zdroj snímku ▸
+                    </a>
+                  </>
+                )}
+              </span>
+            </div>
+            {fotky.length > 1 && (
+              <>
+                <button type="button" className="zap-lupa-sip vlevo" onClick={() => posun(-1)} aria-label="Předchozí snímek">
+                  ‹
+                </button>
+                <button type="button" className="zap-lupa-sip vpravo" onClick={() => posun(1)} aria-label="Další snímek">
+                  ›
+                </button>
+                <span className="zap-lupa-pocet">
+                  {otevrena + 1} / {fotky.length}
+                </span>
+              </>
+            )}
+            <button type="button" className="zap-lupa-zavri" onClick={zavri} aria-label="Zavřít">
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   )
 }
 

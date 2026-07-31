@@ -11,6 +11,62 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-01 (noc) — album na profilu chaty a mapa, která už nečeká na kliknutí
+
+**Zadání Michala:** *„vymysli nejlepší umístění dalších fotek na profilu chaty
+podle best practices… osobně bych dal další fotky pod razítka (a mapu) do levé
+části… nesedí mi tam ten placeholder text z grafického návrhu ‚skládací mapa'
+přes mapu. Líbila by se mi rovnou rozbalená, pokud jsi ji tedy neschoval
+schválně, kvůli šetření API Mapy.com."*
+
+**Mapa: rozbalená rovnou, ale dlaždice až na dosah.** Odpověď na otázku zní:
+skládaná obálka byla z grafického návrhu, ne kvůli API — jen měla tu vedlejší
+výhodu, že se dlaždice nenačetly, dokud na ni někdo neklikl. Teď se mapa otevírá
+rozbalená a **dlaždice se natáhnou, teprve až vjede do záběru**
+(IntersectionObserver s 300px předstihem), takže se API Mapy.com nešahá kvůli
+čtenářům, kteří k mapě nedojdou. Papírové sklady zůstaly jako dekorace nad
+živou mapou a „Složit" pořád funguje — metafora zůstala jako textura, přestala
+být branou. Zmizel i pruh „Mapa · skládaná / Podpisový prvek" a poznámka
+o „whisper úrovni skladů": to byl jazyk grafického návrhu, ne řeč pro čtenáře.
+
+**Album: pod razítka a mapu, do levé části** — přesně jak Michal navrhl, a dává
+to i redakční smysl. Levý sloupec je v zápisníku ta „měkká" strana a album po
+mapě uzavírá cestu, kterou stránka vede: **co to je** (hlavička) → **co si
+odsud odnesu** (razítko) → **jak se tam dostanu** (mapa) → **jak to tam
+vypadá** (album). Vpravo jsou tvrdá data a fotky by je tříštily.
+
+Vizuálně navazuje na vlepené snímky z alba pohoří: bílý rám, fotorožky, drobné
+natočení, které se při najetí srovná a snímek se nadzvedne. Detail, na kterém mi
+záleželo: **velký úvodní snímek jen u lichého počtu fotek** — zbytek se pak
+srovná do dvojic a mřížka nikdy nekončí osamělou půlkou. U sudého počtu jsou
+všechny stejné. Album má vypadat složené, ne rozsypané.
+
+Kliknutí otevře **lupu přes celou obrazovku**: šipky, Esc, klik mimo, počítadlo
+a odkaz na zdroj snímku. Bez ní by album bylo jen ozdoba — na fotce chaty chce
+člověk vidět detail. U každého snímku stojí atribuce (autor · licence ·
+datování) i tam, kde ji licence nevyžaduje; web, který u faktů jmenuje prameny
+a u fotek ne, si protiřečí.
+
+Profil zároveň nově respektuje **profilovou fotku z redakčního prostředí**
+(`hero`) a řadí album podle `poradi` — do teď bral prostě první současnou fotku.
+
+**Ověřeno v prohlížeči** na Luční boudě se třemi dočasně vloženými snímky
+(po kontrole smazány): album se vykreslí pod mapou, lupa se otevře i zavře,
+mapa je živá bez kliknutí a placeholder je pryč. 686 testů zelených (5 nových
+na album, mřížku, lupu a rozbalenou mapu), `npm run kontrola` zelená.
+
+**K zápisu z adminu:** ano, dokud v prostředí webu není `REDAKCE_GITHUB_TOKEN`,
+je redakční prostředí jen ke čtení a řekne to pruhem nahoře. Token stačí
+jemnozrnný, s právem Contents: Read and write na tenhle repozitář.
+
+**Příště:** projít fotky v prostředí — teď už mají kam jít i snímky, které
+k chatě nepatří, i ty, které patří, ale nejsou profilové.
+
+**Otázky pro Michala:** 1) Album zatím bere jen snímky typu „současná fotka" —
+dobové pohlednice mají vlastní místo (Tehdy/dnes) a otisky taky. Sedí ti to,
+nebo chceš album smíšené? 2) Trvá otázka, jestli má prostředí commitovat rovnou
+do main.
+
 ## 2026-07-31 (noc, dodatek 3) — galerie chat, profilová fotka a přesun snímku k lanovce či středisku
 
 **Zadání Michala** (při procházení nalezených fotek v adminu): *„jsou tam mezi

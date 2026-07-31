@@ -393,3 +393,75 @@ body.dark .zap-mapa-chybi { background:var(--cream); border-color:var(--hair); }
 
 /* Ikona typu (rozhledna s občerstvením) v řádku faktů — sedí na účaří textu. */
 .zap-fact .v { display:flex; align-items:center; gap:6px; }
+
+/* ── Mapa: čekání na dlaždice ────────────────────────────────────────────
+   Mapa se od 31. 7. 2026 otevírá rozbalená a dlaždice se natáhnou, teprve až
+   vjede do záběru. Než přijdou, drží místo papírový podklad — ne prázdno,
+   které vypadá jako rozbitá stránka. */
+.zap-map-ceka {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(90deg, rgba(120,130,105,.07) 0 1px, transparent 1px 46px),
+    repeating-linear-gradient(rgba(120,130,105,.07) 0 1px, transparent 1px 46px),
+    linear-gradient(160deg, #eef1e4, #e7ecdb);
+}
+
+/* ── Album (galerie chaty) ───────────────────────────────────────────────
+   Vlepené snímky v levém sloupci, pod razítky a mapou (rozhodnutí Michala
+   31. 7. 2026). Vizuálně navazují na album pohoří: bílý rám, fotorožky,
+   drobné natočení, které se při najetí srovná. První snímek přes celou
+   šířku — album má nejdřív dát dojem z místa, teprve pak detaily. */
+.zap-album { display:grid; grid-template-columns:1fr 1fr; gap:14px 12px; margin-top:4px; }
+.zap-album-snimek { margin:0; grid-column:span 1; }
+.zap-album-snimek.velky { grid-column:1 / -1; }
+.zap-album-snimek button {
+  position:relative; display:block; width:100%; padding:8px 8px 0; border:0; cursor:zoom-in;
+  background:#fff; border-radius:3px;
+  box-shadow:0 10px 22px -14px rgba(20,18,26,.55), 0 0 0 1px rgba(20,18,26,.06);
+  transform:rotate(var(--rot,0deg));
+  transition:transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s;
+}
+.zap-album-snimek button:hover,
+.zap-album-snimek button:focus-visible {
+  transform:rotate(0deg) translateY(-4px);
+  box-shadow:0 20px 34px -16px rgba(20,18,26,.6), 0 0 0 1px rgba(20,18,26,.09);
+}
+.zap-album-snimek img { display:block; width:100%; height:150px; object-fit:cover; background:#eceae4; }
+.zap-album-snimek.velky img { height:230px; }
+/* Fotorožky — čtvrtkruhy v rozích, jako v albu. */
+.zap-album-snimek .roh { position:absolute; width:16px; height:16px; background:linear-gradient(135deg,rgba(60,50,30,.30),rgba(60,50,30,.06)); pointer-events:none; }
+.zap-album-snimek .roh.lh { left:2px; top:2px; clip-path:polygon(0 0,100% 0,0 100%); }
+.zap-album-snimek .roh.ph { right:2px; top:2px; clip-path:polygon(0 0,100% 0,100% 100%); }
+.zap-album-snimek .roh.ld { left:2px; bottom:2px; clip-path:polygon(0 0,0 100%,100% 100%); }
+.zap-album-snimek .roh.pd { right:2px; bottom:2px; clip-path:polygon(100% 0,100% 100%,0 100%); }
+.zap-album-snimek figcaption { display:flex; flex-direction:column; gap:2px; padding:7px 3px 0; }
+.zap-album-snimek .popis { font:400 12px/1.45 var(--font-emph, Georgia, serif); color:var(--ink); }
+.zap-album-snimek .atr { font:400 9.5px/1.4 var(--font-display); letter-spacing:.02em; color:var(--label); }
+@media (max-width:560px) { .zap-album { grid-template-columns:1fr; } .zap-album-snimek img { height:190px; } }
+@media (prefers-reduced-motion:reduce) {
+  .zap-album-snimek button { transform:none; transition:none; }
+  .zap-album-snimek button:hover, .zap-album-snimek button:focus-visible { transform:none; }
+}
+
+/* ── Lupa (fotka přes obrazovku) ─────────────────────────────────────────
+   Bez ní by album bylo jen ozdoba — na fotce chaty chce člověk vidět detail.
+   Zavírá Esc i klik mimo, šipky listují. */
+.zap-lupa { position:fixed; inset:0; z-index:60; background:rgba(18,16,14,.88); display:flex; align-items:center; justify-content:center; padding:24px; cursor:zoom-out; }
+.zap-lupa-obsah { position:relative; max-width:min(1100px,94vw); max-height:90vh; display:flex; flex-direction:column; gap:10px; cursor:default; }
+.zap-lupa-obsah img { max-width:100%; max-height:78vh; object-fit:contain; border-radius:4px; background:#000; box-shadow:0 30px 60px -20px rgba(0,0,0,.7); }
+.zap-lupa-popis { display:flex; flex-direction:column; gap:3px; color:#f3eee4; }
+.zap-lupa-popis b { font:500 14px/1.4 var(--font-emph, Georgia, serif); }
+.zap-lupa-popis span { font:400 11px/1.5 var(--font-display); color:rgba(243,238,228,.72); }
+.zap-lupa-popis a { color:#f2b8ac; }
+.zap-lupa-sip { position:absolute; top:38%; width:44px; height:44px; border-radius:50%; border:1px solid rgba(255,255,255,.28); background:rgba(0,0,0,.35); color:#fff; font-size:26px; line-height:1; cursor:pointer; }
+.zap-lupa-sip:hover { background:rgba(0,0,0,.6); }
+.zap-lupa-sip.vlevo { left:-58px; }
+.zap-lupa-sip.vpravo { right:-58px; }
+.zap-lupa-pocet { position:absolute; right:0; top:-26px; font:600 10px/1 var(--font-display); letter-spacing:.1em; color:rgba(243,238,228,.7); }
+.zap-lupa-zavri { position:absolute; right:0; top:-30px; width:26px; height:26px; border:0; background:transparent; color:rgba(243,238,228,.8); font-size:16px; cursor:pointer; }
+.zap-lupa-pocet { right:34px; }
+@media (max-width:820px) {
+  .zap-lupa-sip.vlevo { left:4px; }
+  .zap-lupa-sip.vpravo { right:4px; }
+}

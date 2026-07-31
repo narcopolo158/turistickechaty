@@ -176,8 +176,15 @@ function sestavData(chata: Chata): ZapData {
   const eyebrow = [oblast?.nazev, typLabel].filter(Boolean).join(' · ')
   const crumb = [chata.zeme ? ZEME_NAZEV[chata.zeme] : null, oblast?.nazev, chata.obec].filter(Boolean).join(' · ')
 
-  const fotky = (chata.fotky?.docs ?? []).filter((f): f is Fotka => typeof f === 'object')
-  const heroFoto = fotky.find((f) => f.typ === 'soucasna' && f.url)
+  const fotky = (chata.fotky?.docs ?? [])
+    .filter((f): f is Fotka => typeof f === 'object')
+    // Galerie se řadí podle `poradi` z dat; nevyplněné jde na konec, aby nová
+    // fotka nepřeházela, co redakce srovnala.
+    .sort((a, b) => (a.poradi ?? Number.MAX_SAFE_INTEGER) - (b.poradi ?? Number.MAX_SAFE_INTEGER))
+  // Profilová fotka je vědomá volba redakce (`hero`); bez ní platí staré
+  // pravidlo „první současná" — viz kolekce Fotky.
+  const heroFoto =
+    fotky.find((f) => f.hero && f.typ === 'soucasna' && f.url) ?? fotky.find((f) => f.typ === 'soucasna' && f.url)
   const heroAtribuceText = heroFoto ? [heroFoto.autor, heroFoto.licencePoznamka].filter(Boolean).join(' · ') : ''
 
   // Fakta (specimen tabulka) — jen doložená
@@ -401,6 +408,23 @@ function sestavData(chata: Chata): ZapData {
         : null,
     prispetUrl: `/prispet?chata=${encodeURIComponent(chata.slug!)}`,
     hero: heroFoto?.url ? { url: heroFoto.url, alt: heroFoto.alt ?? chata.nazev } : null,
+    /**
+     * ALBUM: současné snímky chaty kromě toho profilového (zadání Michala
+     * 31. 7. 2026 — „u každé chaty můžeme mít víc fotek"). Dobové pohlednice
+     * a otisky razítek sem NEPATŘÍ: mají na stránce vlastní místa (Tehdy/dnes,
+     * Sběratelská místa) a smíchat je by z alba udělalo skladiště.
+     */
+    galerie: fotky
+      .filter((f) => f.typ === 'soucasna' && f.url && f.id !== heroFoto?.id)
+      .map((f) => ({
+        url: f.sizes?.karta?.url ?? f.url!,
+        plna: f.url!,
+        alt: f.alt ?? chata.nazev,
+        autor: f.autor ?? null,
+        licence: f.licencePoznamka ?? f.licence ?? null,
+        zdrojUrl: f.zdrojUrl ?? null,
+        datovani: f.datovani ?? null,
+      })),
     heroAtribuce: heroFoto ? { text: heroAtribuceText || 'zdroj', url: heroFoto.zdrojUrl ?? null } : null,
     heroCaption: [chata.nazev, chata.obec].filter(Boolean).join(' · '),
     status,
