@@ -11,6 +11,87 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (pozdě v noci) — redakční prostředí v adminu: výběr fotek, fronta práce a záruka, že nic nezůstane ležet
+
+**Zadání Michala:** *„udělej mi prostředí v adminu na výběr fotek a pořádně to
+promysli — budeme ho asi používat dost, zamysli se i nad povyšováním
+kandidátních chat celkově a systematicky a ujisti se, že k tomu budu mít
+všechny potřebné nástroje a nic nám neproklouzne a nic nezůstane
+nezpracované."* Plus dřívější věta o patičce, která je hotová: brand řádek
+říká finální stav („od českých hor po Alpy"), ne roadmapu.
+
+**Nejdřív rozhodnutí, na kterém všechno stojí: stav se ODVOZUJE z dat.**
+Nikde nevzniká druhý seznam „co je hotové". Povýšený kandidát je ten, který má
+profil; vyřazený ten, který stojí ve `_vyrazeno.yaml`; odložený ten, který je
+v novém `_odlozeno.yaml`. Co není ani jedno, leží ve frontě. Druhý seznam by
+se rozešel s realitou první den, kdy by někdo povýšil chatu ručně. Zvlášť se
+proto zapisují jen rozhodnutí, která z jiných dat poznat NEJDOU — odložení
+a odmítnutí fotky. Obojí je aktivní volba člověka a obojí **musí mít důvod**;
+kontrola to vynucuje.
+
+**`/admin/vyber-fotek`.** Miniatury z Commons, silné nálezy (geotag u chaty)
+oddělené od slabých (pouhá shoda jména — Barborka × polská Barbórka), u každé
+autor, licence, rozměry, popis a odkaz na stránku souboru. Klik otevře panel,
+kde se vyplní **alt** — a bez něj tlačítko „Vybrat" nejde zmáčknout. Metadata
+říkají autora a licenci, ale ne to, CO je na snímku, a přesně tohle tvrzení jde
+na web (konvence B). Zapíše se blok `fotky:` do profilu chaty s `verified:
+false`; licence se překládá do číselníku kolekce Fotky, a co se do něj nevejde,
+se **nehádá** — zápis rovnou řekne, že to patří ruce.
+
+**`/admin/fronta`.** Kolik čeká, kolik je odloženo, povýšeno, vyřazeno; totéž
+po oblastech; u každého nezpracovaného kandidáta signály z OSM (GPS,
+občerstvení, výška, odkaz do OSM) a tlačítka **Odložit…** a **Vyřadit…**, obojí
+s povinným důvodem. **Povyšovat se odsud nedá a je to záměr:** povýšení
+znamená křížové ověření druhým pramenem, sepsání profilu se zdroji a datem
+kontroly — to je redakční práce, ne jedno tlačítko. Fronta k ní dává podklad
+a hlídá, že se na objekt nezapomene.
+
+**Záruka „nic nezůstane nezpracované" nestojí na obrazovce, ale na kontrole.**
+Obrazovku vidí jen ten, kdo si ji otevře; číslo v CI vidí každý. Nový krok
+`npm run kontrola` → `fronta` vypíše rozpracovanost i jmenný seznam profilů,
+kterým Commons nenabídla vůbec nic, a jako **vadu** (červenou kontrolu) hlásí
+rozhodnutí bez důvodu, odložený objekt, který už má profil, a rozhodnutí
+o fotce k neexistujícímu objektu. Dnešní stav: **66 kandidátů čeká**, 43/89
+profilů má fotku, 35 čeká na výběr, 11 nemá z Commons žádnou nabídku.
+
+**Kam se rozhodnutí ukládají — a proč to má háček.** Zdrojem pravdy je repo,
+ne databáze (seed jede jedním směrem). Kdyby prostředí ukládalo do DB, přepsal
+by to první deploy. Zapisuje proto do týchž YAML, které čte seed — což znamená,
+že **zápis funguje tam, kde je pracovní kopie repa**, tedy lokálně
+(`npm run dev`). Na nasazeném webu je prostředí jen ke čtení a říká to nahlas
+(proměnná `REDAKCE_ZAPIS`). Jestli to má fungovat i z nasazeného adminu,
+existuje cesta — commit přes GitHub API tokenem ze secretu — ale to je vědomé
+rozšíření, ne vedlejší efekt; otázka níž.
+
+**Nález z ostrého testu.** První verze zápisu načetla YAML knihovnou a vypsala
+ho zpátky. Komentáře přežily, ale dokument se přeformátoval: dlouhé složené
+bloky se přelomily na jiné šířce a diff **jednoho přidaného snímku měl 97
+změněných řádků**. Takový diff se nedá číst a v review propadne cokoli. Zápis
+je teď textový vpich — po druhém testu má tentýž úkon 15 přidaných řádků a nic
+jiného. Při té příležitosti se ukázalo i to, že nekvotované `2026-07-31` je
+v YAML datum, ne řetězec; datumy se teď uvozují vždy.
+
+**Ověřeno naostro:** přihlášení do adminu, oba pohledy se vykreslí, výběr fotky
+přes UI opravdu zapsal blok do `data/chaty/jizerske-hory/schronisko-na-stogu-izerskim.yaml`
+(a byl vrácen). 656 testů zelených (20 nových), `npm run kontrola` zelená.
+Popis systému včetně **poctivého seznamu děr** je v `docs/REDAKCNI-FRONTA.md`.
+
+**Co systém zatím NEhlídá** (a je to v dokumentu i tady, ať to nezapadne):
+úplnost profilů (chata může mít profil a být skoro prázdná), stárnutí údajů
+(`checked` se nesleduje proti kalendáři), objekty, které OSM nemá (DATA-31),
+a komunitní podání čekající jako koncepty v Payloadu.
+
+**Příště:** projít frontu — 66 kandidátů a 35 chat čekajících na fotku.
+
+**Otázky pro Michala:** 1) **Kde chceš prostředí používat?** Teď zapisuje
+lokálně (`npm run dev` v pracovní kopii) a rozhodnutí pak commitneš. Když ho
+chceš mít i z nasazeného adminu (třeba z mobilu), doplním zápis přes GitHub API
+— potřebuje token v env a znamená to, že web bude commitovat do repa. 2) Sedí
+ti, že **povýšení kandidáta zůstává ruční** (v session s křížovým ověřením),
+a fronta jen hlídá, aby se nezapomnělo? 3) Z děr výš: chceš, aby fronta hlídala
+i **úplnost profilů** (chybí GPS, otvíračka, kontakty, trasy) a **stárnutí
+`checked`**? To je další krok, ne dnešní práce.
+
 ## 2026-07-31 (noc) — patička říká finální stav; výsledky Actions prohlédnuty a z 2 994 fotek je kontaktní arch
 
 **Patička.** Michal: *„v patičce bych nedával roadmapu, rovnou to stav pro

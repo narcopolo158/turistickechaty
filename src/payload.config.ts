@@ -24,6 +24,30 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    components: {
+      // Vlastní pohledy se do menu samy nepřidají — bez odkazu by o nich
+      // věděl jen ten, kdo si pamatuje URL.
+      afterNavLinks: ['/components/admin/NavRedakce#default'],
+      views: {
+        /**
+         * REDAKČNÍ PROSTŘEDÍ (31. 7. 2026, zadání Michala „udělej mi prostředí
+         * v adminu na výběr fotek… ať nám nic neproklouzne").
+         *
+         * Proč vlastní pohled a ne kolekce: kandidátní fotky NEJSOU záznamy
+         * databáze — leží v repu jako výstup pipeline DATA-02 a do Payloadu se
+         * dostane až to, co redakce vybere. Kolekce „kandidáti" by znamenala
+         * druhý zdroj pravdy a při každém běhu pipeline synchronizaci navíc.
+         */
+        vyberFotek: {
+          Component: '/components/admin/VyberFotek#default',
+          path: '/vyber-fotek',
+        },
+        fronta: {
+          Component: '/components/admin/Fronta#default',
+          path: '/fronta',
+        },
+      },
+    },
   },
   collections: [Chaty, Oblasti, Strediska, Vylety, Razitka, Clanky, Fotky, Media, Users],
   editor: lexicalEditor(),
