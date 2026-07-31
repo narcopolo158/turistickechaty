@@ -1,0 +1,19 @@
+# Odložení kandidáti — aktivní „zatím ne", ne zapomenutí.
+
+# Kandidát bez rozhodnutí leží ve frontě a `npm run kontrola` ho počítá jako
+# nezpracovaného. Když ale víme, PROČ se rozhodnout nedá (chybí ověření
+# v terénu, čeká se na odpověď chataře), patří to sem — jinak fronta hlásí
+# práci, která se dělat nemá, a přestane se jí věřit.
+
+# Odložení není vyřazení: objekt se do fronty vrátí, jakmile se ze seznamu
+# odstraní. Vyřazené vede `_vyrazeno.yaml` a DATA-01 je znovu nezakládá.
+
+odlozeno:
+  - slug: rozhledna-kralovka
+    oblast: jizerske-hory
+    duvod: 'Nevyřešené, jestli je to jeden objekt, nebo dva: OSM vede rozhlednu a 26
+      m vedle restauraci „Sluneční terasa", kdežto externí katalog zná
+      „Královku" jako chatu. Do rozhodnutí (Michal, případně kontrola v terénu)
+      se nepovyšuje ani nevyřazuje.'
+    rozhodl: redakční prostředí (ostrý test zápisu přes GitHub API)
+    checked: 2026-07-31
