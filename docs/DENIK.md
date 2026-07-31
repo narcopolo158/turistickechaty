@@ -11,6 +11,67 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (denní bezobslužná session) — „odtud dál" nesmí být odhad z mapy
+
+**Hotovo:** šest položek nad F1-IMPL je pořád na tobě (DATA-04 a DATA-25 na
+telefonátech, DATA-05 a DATA-28 na kliku do Actions, DATA-20 na rozhodnutí
+o sémantice pole `obec`, DATA-22 na katalogu vydavatele) — u každé je dnešní
+poznámka v backlogu. Vzal jsem tedy **F1-IMPL / F1e** a doplnil dva kusy
+šablony mini-stránky střediska, které v ní podle handoffu chyběly: blok
+**„Odtud dál"** a **„další list" listování** v patičce.
+
+**Proč to nebylo jen překreslení návrhu.** Prototyp má v bloku tři karty:
+Sněžku, hřebenovku a sousední východiště. Na stránce Pece je to pravda —
+jenže šablona běží nad dvaadvaceti středisky (16 Krkonoše + 6 Jizerky) a „Sněžka odtud" pro Harrachov
+by bylo tvrzení, které nemáme z čeho doložit. Cíl se proto vypisuje jen
+tehdy, když k němu vede **řetěz dvou doložených vazeb**: cíl → jeho nejbližší
+chata (pole `nejblizChataSlug`, které má v datech oblasti vlastní `source`)
+→ ta chata má z tohohle střediska spočítanou přístupovou trasu (DATA-06).
+Cíl bez takového řetězu na stránce prostě není. Kartu **hřebenovky jsem
+neudělal vůbec** a je to vědomé: přechody z DATA-06 vedou mezi chatami, ne
+ze střediska, takže bych musel vymyslet, kde přechod začíná.
+
+**Sousední východiště jsou vzdušnou čarou — a stránka to říká.** Počítají se
+haversinem z bodů obcí, protože pěší vzdálenost mezi středisky spočítanou
+nemáme. O dvě sekce výš přitom stojí délky přístupových tras, tedy jiná míra;
+kdyby se obě jmenovaly „km", čtenář je sečte. Je to totéž poučení jako
+30. 7. u „pěšky nesmí vyjít kratší než vzdušnou čarou", jen z druhé strany.
+
+**Jedna oprava po cestě.** Čísla sekcí se odvozovala od jediné podmínky
+(`s.lanovka ? '02' : '01'`). Se čtvrtou sekcí by to u středisek bez lanovky
+začalo lhát, takže se čísla teď počítají průběžně podle toho, které sekce se
+opravdu vykreslí.
+
+**Testy:** 587 (z 572) — patnáct nových drží rozhodnutí, ne dnešní počty:
+cíl bez doložené trasy mlčí, chybějící GPS znamená vypadnutí ze seznamu (ne
+nulovou vzdálenost), pořadí cílů zůstává pořadím z dat oblasti a listování je
+cyklické podle českého řazení (nad skutečnými YAML: kruh projde všech
+všech šestnáct krkonošských středisek a vrátí se na začátek). Lint i typecheck
+zelené. **Osm testů v sandboxu padá na chybějícím Postgresu** (`missing secret
+key` → connect refused) — jsou to tytéž, které nad DB nepustí ani předchozí
+běhy; s mou změnou nesouvisí, sahají na Payload.
+
+**Co dnes nešlo a stojí za zaznamenání:** `api.mapy.com` je ze sandboxu
+nedostupné (curl exit 56) a **WebFetch vyžaduje schválení**, které v bezobslužném
+běhu nemá kdo dát. Zbytek F1a — výšky obcí u dvaadvaceti středisek — proto
+zůstává nedoplněný; ani obchvat přes výškopis DATA-28 nedává poctivé číslo
+(mřížka 240×144 vyhladí údolí, Špindl by v ní byl o desítky metrů vedle).
+
+**Příště:** JSON-LD mini-stránky střediska a sekce „Jak se sem dostat" (pole
+`doprava` v kolekci je, v datech ho nemá ani jedno středisko). Pak vizuální
+kontrola F1 šablon nad reálnými daty.
+
+**Otázky pro Michala:**
+- **Výška obce u středisek (zbytek F1a).** Handoff chce ČÚZK, ale bezobslužná
+  session se na web nedostane. Varianty: (a) doplníš čísla očima ze ČÚZK,
+  (b) pustím to jako krok v Actions přes Mapy.com Elevation API — pak ale ve
+  stat-tile nebude „výška obce dle ČÚZK", nýbrž „nadmořská výška bodu obce dle
+  výškového modelu", protože to je jiný údaj a tvářit se jinak nesmí,
+  (c) necháme dlaždici nevykreslenou, dokud nebude úřední pramen.
+- **Schválení WebFetch** pro denní běh: bez něj nedokážu ověřit nic, co je
+  jen na webu (dohledávka 45 jizerských kandidátů, katalog vydavatele známek).
+  Necháváš to takhle záměrně, nebo to jde povolit?
+
 ## 2026-07-30 (noc, podruhé) — triáž jizerských kandidátů a stránka pohoří
 
 **Hotovo:** zadání Michala „proveď triáž kandidátů Jizerek a dokonči stránku

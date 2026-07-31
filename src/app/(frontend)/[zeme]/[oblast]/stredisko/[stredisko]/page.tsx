@@ -11,6 +11,7 @@ import { fotkaStrediska } from '@/lib/fotky-stredisek'
 import { redakcniFotkyStredisek } from '@/lib/fotky-redakcni'
 import { formatVyskaM } from '@/lib/katalog'
 import { lanovkySeSlugy } from '@/lib/lanovky'
+import { cileOdtud, dalsiList, sousedniVychodiste } from '@/lib/odtud-dal'
 import { pristupyStrediska, zdrojPristupu, type Usek } from '@/lib/pristupy'
 
 import '../../../../pohori.css'
@@ -111,6 +112,27 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
       })
     : []
 
+  // „Odtud dál" (handoff F1 §3 bod 6). Cíle jen s doloženou vazbou cíl↔chata
+  // ↔trasa odtud; sousedi z GPS bodů obcí, tedy vzdušnou čarou.
+  const cile = cileOdtud(oblast.topCile ?? [], pristupy)
+  const sousedi = sousedniVychodiste(s, strediska)
+  const list = dalsiList(strediska, slug)
+
+  // Sekce se číslují průběžně podle toho, které se opravdu vykreslí — dřív
+  // se čísla odvozovala od jediné podmínky (`s.lanovka`), což by po přibytí
+  // čtvrté sekce začalo lhát u středisek bez lanovky.
+  const maOdtudDal = cile.length > 0 || sousedi.length > 0
+  const cisla = (() => {
+    let n = 0
+    const dal = () => String(++n).padStart(2, '0')
+    return {
+      lanovka: s.lanovka ? dal() : '',
+      chaty: radky.length > 0 ? dal() : '',
+      mapa: s.lat != null && s.lng != null ? dal() : '',
+      odtudDal: maOdtudDal ? dal() : '',
+    }
+  })()
+
   const naMapu: MapovaChata[] = radky
     .map((r) => r.chata)
     .filter((ch) => ch != null && ch.lat != null && ch.lng != null && ch.url)
@@ -196,7 +218,7 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
 
       {s.lanovka && (
         <section className="sec" aria-label="Lanovka">
-          <SectionBar num="01" title="Lanovka odtud" variant="blue" />
+          <SectionBar num={cisla.lanovka} title="Lanovka odtud" variant="blue" />
           <p className="mini-text">{s.lanovka}</p>
           {lanovky.length > 0 && (
             <ul className="mini-lanovky">
@@ -216,7 +238,7 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
 
       {radky.length > 0 && (
         <section className="sec" aria-label="Chaty dostupné odtud">
-          <SectionBar num={s.lanovka ? '02' : '01'} title="Chaty dostupné odtud" variant="red" />
+          <SectionBar num={cisla.chaty} title="Chaty dostupné odtud" variant="red" />
           <ul className="mini-chaty">
             {radky.map((r) => {
               const znacky = znackyTrasy(r.useky)
@@ -272,7 +294,7 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
           se rozpětí tras táhne přes deset kilometrů. */}
       {s.lat != null && s.lng != null && (
         <section className="sec" aria-label="Mapa zasazení střediska">
-          <SectionBar num={s.lanovka ? '03' : '02'} title={`Kde ${s.nazev} leží`} variant="red" />
+          <SectionBar num={cisla.mapa} title={`Kde ${s.nazev} leží`} variant="red" />
           <MapaChat
             chaty={naMapu}
             misto={{ nazev: s.nazev, lat: s.lat, lng: s.lng }}
@@ -285,13 +307,67 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
         </section>
       )}
 
+      {/* „Odtud dál" (handoff F1 §3 bod 6). Cíl se vypisuje jen tehdy, když
+          k němu vede řetěz dvou doložených vazeb: cíl→nejbližší chata (pole
+          `nejblizChataSlug` se `source` v datech oblasti) a ta chata→trasa
+          odtud (DATA-06). Sousední východiště jsou vzdušnou čarou z bodů
+          obcí — jiná míra než délky tras výš, takže se tak i jmenuje. */}
+      {maOdtudDal && (
+        <section className="sec" aria-label="Odtud dál">
+          <SectionBar num={cisla.odtudDal} title="Odtud dál" variant="red" />
+          <div className="mini-dal">
+            {cile.map((c) => (
+              <article className="mini-dal-cil" key={c.nazev}>
+                <b>{c.nazev}</b>
+                {c.veta && <span>{c.veta}</span>}
+                <span className="mini-dal-vazba">
+                  Nejblíž stojí{' '}
+                  <Link href={`/${KANONICKA_ZEME}/${oblastSlug}/${c.chataSlug}`}>{c.chataNazev}</Link>
+                  {c.delkaKm != null && <> — odtud {formatKm(c.delkaKm)} po značené trase</>}.
+                </span>
+              </article>
+            ))}
+            {sousedi.length > 0 && (
+              <article className="mini-dal-sousedi">
+                <b>
+                  {sousedi.map((so, i) => (
+                    <React.Fragment key={so.slug}>
+                      {i > 0 && ' · '}
+                      <Link href={`/${KANONICKA_ZEME}/${oblastSlug}/stredisko/${so.slug}`}>
+                        {so.nazev}
+                      </Link>
+                    </React.Fragment>
+                  ))}
+                </b>
+                <span>
+                  Sousední východiště —{' '}
+                  {sousedi.map((so) => formatKm(Math.round(so.vzdusnaKm * 10) / 10)).join(', ')}{' '}
+                  vzdušnou čarou (bod obce, ne pěší vzdálenost).
+                </span>
+              </article>
+            )}
+          </div>
+        </section>
+      )}
+
       <p className="mini-zdroje">
         Zdroje: data střediska (`data/strediska/{oblastSlug}/{slug}.yaml`) ·{' '}
         {zdrojPristupu(oblastSlug) ?? 'přístupové trasy DATA-06'}
       </p>
 
+      {/* Listování šablonou (handoff §3, mikrodetaily: „další list —
+          Špindlerův Mlýn →"). Pořadí je abecední a cyklické, takže se dá
+          projít všechna střediska oblasti a vrátit se na začátek. */}
       <p className="mini-zpet">
         <Link href={`/${KANONICKA_ZEME}/${oblastSlug}`}>◂ zpět na {oblast.nazev}</Link>
+        {list && (
+          <Link
+            className="mini-dalsi-list"
+            href={`/${KANONICKA_ZEME}/${oblastSlug}/stredisko/${list.slug}`}
+          >
+            další list — {list.nazev} →
+          </Link>
+        )}
       </p>
     </div>
   )
