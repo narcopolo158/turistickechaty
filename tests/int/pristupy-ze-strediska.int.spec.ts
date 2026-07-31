@@ -10,6 +10,7 @@
  */
 import { describe, expect, it } from 'vitest'
 
+import { pristupyChaty } from '@/lib/pristupove-trasy'
 import { chatZBodu } from '@/lib/pristupy'
 
 describe('chaty dostupné ze střediska', () => {
@@ -60,5 +61,37 @@ describe('chaty dostupné ze střediska', () => {
     expect(velka).not.toBeNull()
     // Množiny chat se nesmí shodovat — jsou to dvě různá východiska.
     expect(mala!.chaty.map((c) => c.slug)).not.toEqual(velka!.chaty.map((c) => c.slug))
+  })
+})
+
+/**
+ * Profil chaty čte trasy ze VŠECH oblastí, ne jen z krkonošské.
+ *
+ * Nález 31. 7. 2026: `src/lib/pristupove-trasy.ts` i `src/lib/prechody.ts`
+ * měly cestu napevno na `data/trasy/krkonose/…`, takže jizerské profily
+ * neměly sekci „Odkud vyjít", přestože trasy pro ně spočítané byly. Nebylo to
+ * vidět jako pád — jen jako chybějící sekce, což je horší: stránka vypadala
+ * hotově a mlčky zamlčela doložená data.
+ */
+describe('profil chaty · trasy napříč oblastmi', () => {
+  it('krkonošská i jizerská chata mají svoje přístupy', () => {
+    expect(pristupyChaty('lucni-bouda').length).toBeGreaterThan(0)
+    expect(pristupyChaty('horska-chata-smedava').length).toBeGreaterThan(0)
+  })
+
+  it('jizerská trasa nese délku i dopočítané převýšení a čas (DATA-06 výšky)', () => {
+    const p = pristupyChaty('horska-chata-smedava')[0]!
+    expect(p.delkaKm).toBeGreaterThan(0)
+    expect(p.prevyseni).toBeGreaterThan(0)
+    expect(p.casMin).toBeGreaterThan(0)
+    // Výškový profil má končit u chaty, ne u nástupu — jinak by křivka i šipka
+    // „↑ převýšení" ukazovaly cestu opačným směrem.
+    const profil = p.vyskovyProfil ?? []
+    expect(profil.length).toBeGreaterThan(1)
+    expect(profil[profil.length - 1]![1]).toBeGreaterThan(profil[0]![1])
+  })
+
+  it('neznámý slug vrací prázdno, ne výjimku', () => {
+    expect(pristupyChaty('vymyslena-chata')).toEqual([])
   })
 })

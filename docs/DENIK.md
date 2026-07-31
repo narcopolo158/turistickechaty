@@ -11,6 +11,43 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (dopoledne) — výšky tras doběhly a odhalily, že web četl jen Krkonoše
+
+**Hotovo:** Michal pustil dopočet výšek (Mapy.com Elevation) a Jizerky mají
+u všech 25 přístupů převýšení, klesání, výškový profil i odhad času dle
+DIN 33466.
+
+**Ověřeno, ne odkliknuto.** U výškových dat se dá snadno splést směr — geometrie
+tras se ukládá OD CHATY dolů, takže kdyby krok počítal stoupání po uložené
+geometrii, vyšlo by přesně obráceně. Porovnal jsem proto u všech 25 přístupů
+konec výškového profilu s výškou chaty z katalogu: **sedí u všech**, odchylky
+3–21 m jsou rozdíl výškového modelu proti katalogu. A směr sedí taky — Na Stogu
+Izerskim stoupá 469 → 1 063 m (↑ 614 m), Hubertka od Hejnic 379 → 620 m
+(↑ 252 m). Časy odpovídají délce i převýšení (Smědava z Bílého Potoka: 5,82 km,
+↑ 437 m, 2 h 14).
+
+**A pak se ukázalo, že profily chat trasy vůbec neukazují.** Sekce „Odkud
+vyjít" na jizerských profilech chyběla — přestože data v repu ležela. Příčina
+byla stejná past jako včera u pipeline, jen na webu: `src/lib/pristupove-trasy.ts`
+i `src/lib/prechody.ts` měly cestu **napevno na `data/trasy/krkonose/…`**.
+
+Tohle je horší druh chyby než pád: stránka vypadala hotově a mlčky zamlčela
+doložená data. Nic nekřičelo, nic nespadlo — jen tam nic nebylo. Oba moduly
+teď čtou **všechny oblasti** (klíčem je slug chaty, který je v korpusu
+jedinečný — hlídá validátor), takže další pohoří se rozjede samo.
+
+**Testy:** 592 (z 589) — tři nové drží, že profily obou oblastí mají svoje
+trasy, že jizerská trasa nese převýšení i čas, a hlavně **že výškový profil
+končí výš, než začíná**: kdyby se někdy obrátil směr, šipka „↑ převýšení"
+i křivka by ukazovaly cestu z kopce.
+
+**Jizerky jsou tím na úrovni Krkonoš** ve všem kromě fotek a razítek: 12 profilů
+s prameny, přístupové trasy s převýšením a časem, střediska s počty, lanovky,
+3D terén, řez hřebenem.
+
+**Příště:** fotky chat (DATA-02, Commons) — na to sandbox nedosáhne, je to
+workflow. Pak triáž zbylých 45 kandidátů proti druhému prameni.
+
 ## 2026-07-31 (ráno) — přístupové trasy Jizerek: 12 z 12, a jeden nepravdivý nástup cestou
 
 **Hotovo:** Michal pustil export výchozích bodů (**729 bodů**: 79 obcí, 46

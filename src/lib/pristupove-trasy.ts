@@ -1,12 +1,17 @@
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 /**
  * Přístupové trasy k chatám (DATA-06 increment 3b) — načtení pro profil.
  * Data počítá `scripts/data06-pristupove-trasy.ts` do
- * `data/trasy/krkonose/pristupove-trasy.json` (routing po značených KČT trasách
- * z kurátorovaných středisek). Tady se jen čtou pro server-render profilu.
- * Geometrie (pro mapu) se zatím nenačítá — seznam „odkud vyjít" ji nepotřebuje.
+ * `data/trasy/<oblast>/pristupove-trasy.json` (routing po značených KČT trasách).
+ * Tady se jen čtou pro server-render profilu.
+ *
+ * ČTOU SE VŠECHNY OBLASTI, ne jen krkonošská. Do 31. 7. 2026 tu byla cesta
+ * napevno na `krkonose`, takže jizerské profily neměly sekci „Odkud vyjít",
+ * přestože trasy pro ně spočítané byly — chyba nebyla vidět jako pád, jen jako
+ * chybějící sekce. Klíčem je slug chaty, který je v korpusu jedinečný (hlídá
+ * validátor), takže se mapy oblastí můžou spojit do jedné.
  */
 export type PristupUsek = { znaceni: string; delkaKm: number }
 export type Bod = { lat: number; lng: number }
@@ -44,8 +49,11 @@ let cache: Map<string, Pristup[]> | null = null
 const nactiKatalog = (): Map<string, Pristup[]> => {
   if (cache) return cache
   cache = new Map()
-  const cesta = join(process.cwd(), 'data', 'trasy', 'krkonose', 'pristupove-trasy.json')
-  if (existsSync(cesta)) {
+  const koren = join(process.cwd(), 'data', 'trasy')
+  if (!existsSync(koren)) return cache
+  for (const oblast of readdirSync(koren)) {
+    const cesta = join(koren, oblast, 'pristupove-trasy.json')
+    if (!existsSync(cesta)) continue
     const katalog = JSON.parse(readFileSync(cesta, 'utf8')) as Katalog
     for (const c of katalog.chaty ?? []) cache.set(c.slug, c.pristupy)
   }
