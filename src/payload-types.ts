@@ -631,6 +631,14 @@ export interface Fotky {
    */
   lanovkaOblast?: string | null;
   lanovkaSlug?: string | null;
+  /**
+   * Hlavní snímek objektu (hero). Když ji nemá žádná fotka, vezme se první současná.
+   */
+  hero?: boolean | null;
+  /**
+   * Menší číslo = dřív. Nevyplněné jde na konec.
+   */
+  poradi?: number | null;
   datovani?: string | null;
   autor: string;
   licence: 'vlastni' | 'se-svolenim' | 'cc-by' | 'cc-by-sa' | 'cc0' | 'pd' | 'mediabanka-czt' | 'jina';
@@ -1581,6 +1589,8 @@ export interface FotkySelect<T extends boolean = true> {
   stredisko?: T;
   lanovkaOblast?: T;
   lanovkaSlug?: T;
+  hero?: T;
+  poradi?: T;
   datovani?: T;
   autor?: T;
   licence?: T;

@@ -14,12 +14,14 @@
  * Funkce jsou ČISTÉ (text → text), aby šly testovat bez souborového systému;
  * o samotný zápis se stará `zapisRozhodnuti` v route handleru.
  */
-import { Document, parseDocument, type YAMLSeq } from 'yaml'
+import { Document, parse, parseDocument, stringify, type YAMLSeq } from 'yaml'
 
 /** Fotka vybraná redakcí, ve tvaru, jaký čte seed (`stahnoutZ` + metadata). */
 export type VybranaFotka = {
   stahnoutZ: string
   alt: string
+  /** Profilová fotka objektu (galerie od 31. 7. 2026). */
+  hero?: boolean
   typ?: string
   datovani?: string
   autor?: string
@@ -108,6 +110,7 @@ export const radkyFotky = (f: VybranaFotka): string[] =>
     `  - stahnoutZ: ${f.stahnoutZ}`,
     `    alt: ${skalar(f.alt)}`,
     f.typ ? `    typ: ${f.typ}` : null,
+    f.hero ? '    hero: true # profilová fotka objektu' : null,
     f.datovani ? `    datovani: ${skalar(f.datovani, true)} # z metadat Commons` : null,
     f.autor ? `    autor: ${skalar(f.autor)}` : null,
     `    licence: ${f.licence}`,
@@ -255,5 +258,117 @@ export const pridejVyrazeni = (yamlText: string, v: VyrazenyKandidat): string =>
   })
   if (seq && typeof seq.add === 'function') seq.add(zaznam)
   else dok.set('vyrazeno', dok.createNode([zaznam]))
+  return String(dok)
+}
+
+// ── Galerie objektu ─────────────────────────────────────────────────────────
+
+/** Jedna položka bloku `fotky:` v profilu chaty, jak ji čte seed. */
+export type PolozkaGalerie = Record<string, unknown> & { stahnoutZ?: string; alt?: string; hero?: boolean }
+
+/** Hranice bloku `fotky:` v textu profilu; `null` = blok tam není. */
+const najdiBlokFotek = (radky: string[]): { zacatek: number; konec: number } | null => {
+  const zacatek = radky.findIndex((r) => /^fotky:\s*$/.test(r))
+  if (zacatek === -1) return null
+  let konec = zacatek + 1
+  while (konec < radky.length && (radky[konec] === '' || /^\s/.test(radky[konec]!))) konec++
+  while (konec > zacatek + 1 && radky[konec - 1]!.trim() === '') konec--
+  return { zacatek, konec }
+}
+
+/**
+ * Přepíše blok `fotky:` v profilu chaty — a NIC JINÉHO.
+ *
+ * Editace galerie (pořadí, profilová fotka, odebrání) se textovým vpichem
+ * dělat nedá, tak se blok vyřízne, přeparsuje sám o sobě a vloží zpátky.
+ * Zbytek souboru se nedotkne ani znakem: v komentářích okolo je půlka
+ * projektové paměti a přeformátovaný diff se nedá číst (nález z 31. 7. 2026,
+ * kdy přeparsování celého dokumentu vyrobilo 97 změněných řádků).
+ */
+export const upravGalerii = (
+  yamlText: string,
+  uprav: (fotky: PolozkaGalerie[]) => PolozkaGalerie[],
+): string => {
+  const radky = yamlText.split('\n')
+  const blok = najdiBlokFotek(radky)
+  if (!blok) throw new Error('Profil zatím nemá blok `fotky:` — není co upravovat.')
+  const puvodni = (parse(radky.slice(blok.zacatek, blok.konec).join('\n')) ?? {}) as { fotky?: PolozkaGalerie[] }
+  const nove = uprav(puvodni.fotky ?? [])
+  const vypis =
+    nove.length === 0
+      ? []
+      // PLAIN = uvozovky jen tam, kde je YAML opravdu potřebuje. S plošným
+      // uvozováním měl i pouhý přesun fotky diff přes celý blok.
+      : stringify({ fotky: nove }, { lineWidth: 0, defaultStringType: 'PLAIN', defaultKeyType: 'PLAIN' })
+          .replace(/\n$/, '')
+          .split('\n')
+  return [...radky.slice(0, blok.zacatek), ...vypis, ...radky.slice(blok.konec)].join('\n')
+}
+
+/** Fotky objektu z profilu (jen ke čtení) — podklad pro obrazovku galerie. */
+export const nactiGalerii = (yamlText: string): PolozkaGalerie[] => {
+  const radky = yamlText.split('\n')
+  const blok = najdiBlokFotek(radky)
+  if (!blok) return []
+  const d = (parse(radky.slice(blok.zacatek, blok.konec).join('\n')) ?? {}) as { fotky?: PolozkaGalerie[] }
+  return d.fotky ?? []
+}
+
+/**
+ * Profilová fotka je právě jedna. Nastavení `hero` proto ostatním fotkám
+ * příznak ODEBERE — dvě profilové by znamenaly, že o hlavním snímku zase
+ * rozhoduje pořadí, a to je přesně to, čemu se `hero` vyhýbá.
+ */
+export const nastavProfilovou = (fotky: PolozkaGalerie[], index: number): PolozkaGalerie[] =>
+  fotky.map((f, i) => {
+    const { hero: _hero, ...zbytek } = f
+    return i === index ? { ...zbytek, hero: true } : zbytek
+  })
+
+/** Posun fotky v galerii o jedno místo; mimo rozsah se nic nestane. */
+export const presunVGalerii = (fotky: PolozkaGalerie[], index: number, smer: -1 | 1): PolozkaGalerie[] => {
+  const cil = index + smer
+  if (index < 0 || index >= fotky.length || cil < 0 || cil >= fotky.length) return fotky
+  const kopie = [...fotky]
+  const [vyjmuta] = kopie.splice(index, 1)
+  kopie.splice(cil, 0, vyjmuta!)
+  return kopie
+}
+
+// ── Fotky objektů, které nemají profil v `data/chaty` (střediska, lanovky) ──
+
+export type CizFotka = {
+  /** `stredisko` váže slugem, `lanovka` dvojicí oblast + slug. */
+  predmet: 'stredisko' | 'lanovka'
+  slug: string
+  oblast?: string
+  stahnoutZ: string
+  zdrojUrl: string
+  alt: string
+  autor?: string
+  licence: string
+  licencePoznamka?: string
+  datovani?: string
+  prevzatoDne: string
+  overeni: { source: string; verified: false; checked: string }
+}
+
+const HLAVICKA_CIZI = `Fotky objektů, které nemají vlastní profil v data/chaty — střediska a lanovky.
+
+Vznikají v redakčním prostředí, když se mezi kandidátními snímky chaty najde
+dobrá fotka NĚČEHO JINÉHO (zadání Michala 31. 7. 2026: „jsou tam mezi fotkami
+chat dobré fotky třeba k lanovce — je škoda je jen zahodit").
+
+Seed je stáhne a založí v kolekci Fotky s vazbou na středisko (slug) nebo
+lanovku (oblast + slug). Na webu pak mají PŘEDNOST před automatickým výběrem
+z Commons — viz src/lib/fotky-redakcni.ts.`
+
+/** Přidá fotku objektu bez profilu do `data/fotky/_redakcni.yaml`. */
+export const pridejCiziFotku = (yamlText: string | null, f: CizFotka): string => {
+  const dok = yamlText ? parseDocument(yamlText) : novyDokument('fotky', HLAVICKA_CIZI)
+  const seq = dok.get('fotky') as YAMLSeq | undefined
+  const zaznam = dok.createNode(f)
+  if (seq && typeof seq.add === 'function') seq.add(zaznam)
+  else dok.set('fotky', dok.createNode([f]))
   return String(dok)
 }

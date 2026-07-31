@@ -130,6 +130,37 @@ export const Fotky: CollectionConfig = {
         },
       ],
     },
+    /**
+     * GALERIE OBJEKTU (zadání Michala 31. 7. 2026: „u každé chaty můžeme mít
+     * víc fotek — jednu profilovou a pak další").
+     *
+     * Do teď se profilová fotka poznala tak, že to byla PRVNÍ současná fotka,
+     * kterou vrátila databáze. To fungovalo, dokud měla chata jedinou —
+     * s galerií by o hlavním snímku rozhodovalo pořadí v joinu, tedy náhoda.
+     * `hero` je proto vědomá volba člověka; `poradi` řadí zbytek galerie.
+     * Když `hero` nemá žádná fotka, platí staré pravidlo (první současná),
+     * takže starší data zůstávají v platnosti.
+     */
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'hero',
+          type: 'checkbox',
+          label: 'Profilová fotka',
+          admin: {
+            width: '50%',
+            description: 'Hlavní snímek objektu (hero). Když ji nemá žádná fotka, vezme se první současná.',
+          },
+        },
+        {
+          name: 'poradi',
+          type: 'number',
+          label: 'Pořadí v galerii',
+          admin: { width: '50%', description: 'Menší číslo = dřív. Nevyplněné jde na konec.' },
+        },
+      ],
+    },
     {
       name: 'datovani',
       type: 'text',

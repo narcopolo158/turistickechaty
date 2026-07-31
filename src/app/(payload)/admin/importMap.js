@@ -24,6 +24,7 @@ import { ItalicFeatureClient as ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0
 import { default as default_99d783b053c37dd5ff544fd8d76ce6a7 } from '../../../components/admin/NavRedakce'
 import { default as default_f408ea3a0f30e59c788c704ffbfe4f57 } from '../../../components/admin/VyberFotek'
 import { default as default_57dd58c5c9d35dfb824d8ef462d9879d } from '../../../components/admin/Fronta'
+import { default as default_bfacdcda5731909ddffed66c17677ef6 } from '../../../components/admin/Galerie'
 import { CollectionCards as CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1 } from '@payloadcms/next/rsc'
 
 /** @type import('payload').ImportMap */
@@ -54,5 +55,6 @@ export const importMap = {
   "/components/admin/NavRedakce#default": default_99d783b053c37dd5ff544fd8d76ce6a7,
   "/components/admin/VyberFotek#default": default_f408ea3a0f30e59c788c704ffbfe4f57,
   "/components/admin/Fronta#default": default_57dd58c5c9d35dfb824d8ef462d9879d,
+  "/components/admin/Galerie#default": default_bfacdcda5731909ddffed66c17677ef6,
   "@payloadcms/next/rsc#CollectionCards": CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1
 }

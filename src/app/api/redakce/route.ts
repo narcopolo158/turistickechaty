@@ -1,16 +1,27 @@
-import { existsSync, readFileSync, writeFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
 
 import { getPayload } from 'payload'
 
 import config from '@/payload.config'
-import { frontaFotek, mezeryProfilu, souhrnFronty, stavKandidatu } from '@/lib/redakce/fronta'
+import {
+  ciloveObjekty,
+  frontaFotek,
+  galerieChat,
+  mezeryProfilu,
+  souhrnFronty,
+  stavKandidatu,
+} from '@/lib/redakce/fronta'
 import { konfiguraceZProstredi, overSpojeni, upravSoubor } from '@/lib/redakce/github'
 import {
+  nastavProfilovou,
+  presunVGalerii,
+  pridejCiziFotku,
   pridejOdlozeni,
   pridejRozhodnutiFotky,
   pridejVyrazeni,
   uzJeVProfilu,
+  upravGalerii,
   vlozFotkuDoProfilu,
   zaznamFotky,
 } from '@/lib/redakce/zapis'
@@ -77,6 +88,10 @@ const ulozisteProZapis = (): Uloziste | null => {
       uprav: async (cesta, uprav) => {
         const plna = join(koren(), cesta)
         const puvodni = existsSync(plna) ? readFileSync(plna, 'utf8') : null
+        // Nový soubor může mířit do složky, která ještě není (data/fotky/
+        // vzniká až první fotkou objektu bez profilu). GitHub API si cestu
+        // vyrobí samo, souborový systém ne — nález z ostrého testu 31. 7. 2026.
+        mkdirSync(dirname(plna), { recursive: true })
         writeFileSync(plna, uprav(puvodni), 'utf8')
         return { misto: cesta }
       },
@@ -120,17 +135,35 @@ export async function GET(req: Request): Promise<Response> {
     fotky: frontaFotek(k, oblast),
     kandidati: stavKandidatu(k).filter((kand) => !oblast || kand.oblast === oblast),
     mezery: mezeryProfilu(k, dnes).filter((m) => !oblast || m.oblast === oblast),
+    // Kam všude jde fotku poslat, a co už v galeriích je.
+    cile: ciloveObjekty(k),
+    galerie: galerieChat(k).filter((g) => !oblast || g.oblast === oblast),
   })
 }
 
 type Telo = {
-  akce: 'vybrat-fotku' | 'odmitnout-fotku' | 'uzavrit-fotky' | 'odlozit-kandidata' | 'vyradit-kandidata'
+  akce:
+    | 'vybrat-fotku'
+    | 'odmitnout-fotku'
+    | 'uzavrit-fotky'
+    | 'odlozit-kandidata'
+    | 'vyradit-kandidata'
+    | 'galerie-profilova'
+    | 'galerie-poradi'
+    | 'galerie-odebrat'
   chata?: string
   oblast?: string
   duvod?: string
   alt?: string
   /** OSM URL kandidáta — identita, která přežije přejmenování. */
   osm?: string
+  /** Kam snímek patří; bez něj se bere chata, u které byl nalezen. */
+  cil?: { druh: 'chata' | 'stredisko' | 'lanovka'; slug: string; oblast?: string }
+  /** `hero` = profilová fotka objektu, `galerie` = další snímek. */
+  role?: 'hero' | 'galerie'
+  /** Index fotky v galerii (u akcí galerie-*). */
+  index?: number
+  smer?: -1 | 1
   fotka?: {
     soubor: string
     original: string
@@ -177,16 +210,48 @@ export async function POST(req: Request): Promise<Response> {
         if (alt.length < 3)
           return odpoved(400, { chyba: 'Doplň popis snímku (alt) — co je na fotce vidět. Tvrzení patří člověku.' })
         const zaznam = zaznamFotky({ ...telo.fotka, alt, dnes })
-        const cesta = `data/chaty/${telo.oblast}/${telo.chata}.yaml`
+        // Cíl je ve výchozím stavu chata, u které se snímek našel — ale nemusí
+        // jím být. Mezi kandidáty chaty se často najde dobrá fotka lanovky
+        // nebo střediska; zahodit ji je škoda, patří jinam (Michal 31. 7. 2026).
+        const cil = telo.cil ?? { druh: 'chata' as const, slug: telo.chata, oblast: telo.oblast }
+
+        if (cil.druh === 'chata') {
+          const jeHero = telo.role !== 'galerie'
+          const { misto } = await uloziste.uprav(
+            `data/chaty/${cil.oblast ?? telo.oblast}/${cil.slug}.yaml`,
+            (puvodni) => {
+              if (puvodni == null)
+                throw new Error(`Profil ${cil.oblast ?? telo.oblast}/${cil.slug} neexistuje — nejdřív povýšit kandidáta.`)
+              if (uzJeVProfilu(puvodni, telo.fotka!.original)) throw new Error('Tuhle fotku už profil má.')
+              const sFotkou = vlozFotkuDoProfilu(puvodni, jeHero ? { ...zaznam, hero: true } : zaznam)
+              // Profilová je právě jedna: nová `hero` ostatním příznak sebere.
+              return jeHero ? upravGalerii(sFotkou, (fotky) => nastavProfilovou(fotky, fotky.length - 1)) : sFotkou
+            },
+            podpis(`${jeHero ? 'profilová fotka' : 'fotka do galerie'} — ${cil.slug} (Wikimedia Commons)`),
+          )
+          return odpoved(200, { hotovo: true, soubor: misto, rezim: uloziste.rezim })
+        }
+
+        // Středisko a lanovka profil v `data/chaty` nemají — jejich fotky vede
+        // společný redakční seznam, ze kterého je seed stáhne a naváže.
         const { misto } = await uloziste.uprav(
-          cesta,
-          (puvodni) => {
-            if (puvodni == null)
-              throw new Error(`Profil ${telo.oblast}/${telo.chata} neexistuje — nejdřív povýšit kandidáta.`)
-            if (uzJeVProfilu(puvodni, telo.fotka!.original)) throw new Error('Tuhle fotku už profil má.')
-            return vlozFotkuDoProfilu(puvodni, zaznam)
-          },
-          podpis(`fotka k profilu ${telo.chata} z Wikimedia Commons`),
+          'data/fotky/_redakcni.yaml',
+          (puvodni) =>
+            pridejCiziFotku(puvodni, {
+              predmet: cil.druh as 'stredisko' | 'lanovka',
+              slug: cil.slug,
+              ...(cil.druh === 'lanovka' ? { oblast: cil.oblast ?? telo.oblast! } : {}),
+              stahnoutZ: zaznam.stahnoutZ,
+              zdrojUrl: zaznam.zdrojUrl,
+              alt: zaznam.alt,
+              ...(zaznam.autor ? { autor: zaznam.autor } : {}),
+              licence: zaznam.licence,
+              ...(zaznam.licencePoznamka ? { licencePoznamka: zaznam.licencePoznamka } : {}),
+              ...(zaznam.datovani ? { datovani: zaznam.datovani } : {}),
+              prevzatoDne: zaznam.prevzatoDne,
+              overeni: zaznam.overeni,
+            }),
+          podpis(`fotka pro ${cil.druh} ${cil.slug} (nalezena u chaty ${telo.chata})`),
         )
         return odpoved(200, { hotovo: true, soubor: misto, rezim: uloziste.rezim })
       }
@@ -250,6 +315,35 @@ export async function POST(req: Request): Promise<Response> {
             })
           },
           podpis(`vyřazený kandidát ${telo.chata}`),
+        )
+        return odpoved(200, { hotovo: true, soubor: misto, rezim: uloziste.rezim })
+      }
+      case 'galerie-profilova':
+      case 'galerie-poradi':
+      case 'galerie-odebrat': {
+        if (!telo.chata || !telo.oblast || typeof telo.index !== 'number')
+          return odpoved(400, { chyba: 'Chybí chata, oblast nebo index fotky.' })
+        if (telo.akce === 'galerie-odebrat' && !telo.duvod?.trim())
+          return odpoved(400, { chyba: 'Odebrání z galerie potřebuje důvod — jinak nikdo nepozná proč.' })
+        const index = telo.index
+        const { misto } = await uloziste.uprav(
+          `data/chaty/${telo.oblast}/${telo.chata}.yaml`,
+          (puvodni) => {
+            if (puvodni == null) throw new Error(`Profil ${telo.oblast}/${telo.chata} neexistuje.`)
+            return upravGalerii(puvodni, (fotky) => {
+              if (index < 0 || index >= fotky.length) throw new Error('Fotka na tomhle místě v galerii není.')
+              if (telo.akce === 'galerie-profilova') return nastavProfilovou(fotky, index)
+              if (telo.akce === 'galerie-poradi') return presunVGalerii(fotky, index, telo.smer === -1 ? -1 : 1)
+              return fotky.filter((_, i) => i !== index)
+            })
+          },
+          podpis(
+            telo.akce === 'galerie-profilova'
+              ? `profilová fotka ${telo.chata}`
+              : telo.akce === 'galerie-poradi'
+                ? `pořadí fotek v galerii ${telo.chata}`
+                : `odebraná fotka z galerie ${telo.chata} — ${telo.duvod!.trim()}`,
+          ),
         )
         return odpoved(200, { hotovo: true, soubor: misto, rezim: uloziste.rezim })
       }

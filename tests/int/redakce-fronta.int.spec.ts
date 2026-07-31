@@ -17,12 +17,23 @@ import { join } from 'node:path'
 import { parse } from 'yaml'
 import { describe, expect, it } from 'vitest'
 
-import { frontaFotek, mezeryProfilu, souhrnFronty, stavKandidatu } from '@/lib/redakce/fronta'
+import {
+  ciloveObjekty,
+  frontaFotek,
+  mezeryProfilu,
+  souhrnFronty,
+  stavKandidatu,
+} from '@/lib/redakce/fronta'
 import {
   licenceDoCiselniku,
+  nactiGalerii,
+  nastavProfilovou,
+  presunVGalerii,
+  pridejCiziFotku,
   pridejOdlozeni,
   pridejRozhodnutiFotky,
   pridejVyrazeni,
+  upravGalerii,
   uzJeVProfilu,
   vlozFotkuDoProfilu,
   zaznamFotky,
@@ -334,5 +345,98 @@ describe('mezery v profilech', () => {
     expect(s.profily.sMezerou).toBe(1)
     expect(s.profily.zastaraleOvereni).toBe(1)
     expect(s.profily.dleDruhu.map((d) => d.druh)).toContain('GPS')
+  })
+})
+
+/**
+ * GALERIE OBJEKTU (zadání Michala 31. 7. 2026: „u každé chaty můžeme mít víc
+ * fotek — jednu profilovou a pak další… + přesun fotek k jinému objektu").
+ *
+ * Testuje se to, co může tiše pokazit web: že úprava galerie nesáhne na zbytek
+ * profilu, že profilová je vždycky právě jedna a že fotka poslaná lanovce
+ * skončí ve správném seznamu se všemi doklady.
+ */
+describe('galerie a přesun fotek', () => {
+  const PROFIL =
+    '# komentář, který musí přežít\nnazev: Chata\nslug: chata\noblast: krkonose\nfotky:\n' +
+    "  - stahnoutZ: https://a.jpg\n    alt: první\n    licence: cc-by\n" +
+    "  - stahnoutZ: https://b.jpg\n    alt: druhá\n    licence: cc-by\n" +
+    'zajimavosti:\n  - text: něco za blokem fotek\n'
+
+  it('čte galerii z profilu', () => {
+    expect(nactiGalerii(PROFIL).map((f) => f.alt)).toEqual(['první', 'druhá'])
+    expect(nactiGalerii('nazev: Chata\n')).toEqual([])
+  })
+
+  it('úprava galerie nesáhne na komentáře ani na klíče za blokem', () => {
+    const novy = upravGalerii(PROFIL, (f) => presunVGalerii(f, 0, 1))
+    expect(novy).toContain('# komentář, který musí přežít')
+    const d = parse(novy) as { fotky: { alt: string }[]; zajimavosti: unknown[]; nazev: string }
+    expect(d.fotky.map((f) => f.alt)).toEqual(['druhá', 'první'])
+    expect(d.zajimavosti).toHaveLength(1)
+    expect(d.nazev).toBe('Chata')
+  })
+
+  /** Dvě profilové = o hlavním snímku zase rozhoduje pořadí, tedy náhoda. */
+  it('profilová je vždycky právě jedna', () => {
+    const s1 = upravGalerii(PROFIL, (f) => nastavProfilovou(f, 1))
+    const d1 = parse(s1) as { fotky: { alt: string; hero?: boolean }[] }
+    expect(d1.fotky.filter((f) => f.hero)).toHaveLength(1)
+    expect(d1.fotky.find((f) => f.hero)!.alt).toBe('druhá')
+
+    const s2 = upravGalerii(s1, (f) => nastavProfilovou(f, 0))
+    const d2 = parse(s2) as { fotky: { alt: string; hero?: boolean }[] }
+    expect(d2.fotky.filter((f) => f.hero)).toHaveLength(1)
+    expect(d2.fotky.find((f) => f.hero)!.alt).toBe('první')
+  })
+
+  it('odebrání fotky nechá zbytek galerie', () => {
+    const novy = upravGalerii(PROFIL, (f) => f.filter((_, i) => i !== 0))
+    expect((parse(novy) as { fotky: { alt: string }[] }).fotky.map((f) => f.alt)).toEqual(['druhá'])
+  })
+
+  it('posun mimo rozsah nic neudělá (ochrana proti dvojkliku na kraji)', () => {
+    const fotky = nactiGalerii(PROFIL)
+    expect(presunVGalerii(fotky, 0, -1)).toEqual(fotky)
+    expect(presunVGalerii(fotky, 1, 1)).toEqual(fotky)
+  })
+
+  it('fotka poslaná lanovce jde do redakčního seznamu se všemi doklady', () => {
+    const text = pridejCiziFotku(null, {
+      predmet: 'lanovka',
+      slug: 'cernohorsky-express',
+      oblast: 'krkonose',
+      stahnoutZ: 'https://upload.wikimedia.org/x.jpg',
+      zdrojUrl: 'https://commons.wikimedia.org/wiki/File:X.jpg',
+      alt: 'Sedačková lanovka na Černou horu',
+      autor: 'A. Autor',
+      licence: 'cc-by-sa',
+      prevzatoDne: '2026-07-31',
+      overeni: { source: 'Wikimedia Commons API', verified: false, checked: '2026-07-31' },
+    })
+    const d = parse(text) as { fotky: { predmet: string; slug: string; oblast: string; overeni: { verified: boolean } }[] }
+    expect(d.fotky[0]).toMatchObject({ predmet: 'lanovka', slug: 'cernohorsky-express', oblast: 'krkonose' })
+    expect(d.fotky[0]!.overeni.verified).toBe(false)
+    expect(text).toMatch(/^#/) // hlavička vysvětluje, proč soubor existuje
+  })
+
+  it('cílové objekty se skládají z dat (chaty, střediska, lanovky)', () => {
+    const koren = postavRepo()
+    mkdirSync(join(koren, 'data', 'lanovky'), { recursive: true })
+    // Lanovky nemají v datech slug — vzniká z názvu (`slugLanovky`), stejně
+    // jako na webu. Kdyby si ho fronta počítala po svém, fotka by mířila na
+    // jiné URL, než jaké má mini-stránka dráhy.
+    writeFileSync(
+      join(koren, 'data', 'lanovky', 'krkonose.json'),
+      JSON.stringify({ lanovky: [{ id: 'way/1', nazev: 'Černohorský Express' }] }),
+      'utf8',
+    )
+    const cile = ciloveObjekty(koren)
+    expect(cile.some((c) => c.druh === 'chata' && c.slug === 'povysena')).toBe(true)
+    expect(cile.find((c) => c.druh === 'lanovka')).toMatchObject({
+      slug: 'cernohorsky-express',
+      nazev: 'Černohorský Express',
+      oblast: 'krkonose',
+    })
   })
 })

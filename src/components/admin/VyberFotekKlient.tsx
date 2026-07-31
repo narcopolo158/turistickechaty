@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useState } from 'react'
 
-import type { FotkaVeFronte, FotkyChaty, Souhrn } from '@/lib/redakce/fronta'
+import type { CilovyObjekt, FotkaVeFronte, FotkyChaty, Souhrn } from '@/lib/redakce/fronta'
 
 /**
  * Redakční prostředí pro výběr fotek (klientská část).
@@ -28,6 +28,23 @@ type Data = {
   stavZapisu: string
   souhrn: Souhrn
   fotky: FotkyChaty[]
+  cile: CilovyObjekt[]
+}
+
+/** Lidské názvy druhů objektů do výběru cíle. */
+const DRUHY: Record<'chata' | 'stredisko' | 'lanovka', string> = {
+  chata: 'Chaty',
+  stredisko: 'Střediska',
+  lanovka: 'Lanovky',
+}
+
+/** „chata:lucni-bouda:krkonose" → objekt pro API. */
+const rozlozCil = (
+  hodnota: string,
+): { druh: 'chata' | 'stredisko' | 'lanovka'; slug: string; oblast: string } | null => {
+  const [druh, slug, oblast] = hodnota.split(':')
+  if (!druh || !slug) return null
+  return { druh: druh as 'chata' | 'stredisko' | 'lanovka', slug, oblast: oblast ?? '' }
 }
 
 const barvy = {
@@ -46,6 +63,13 @@ export default function VyberFotekKlient() {
   const [vybrana, setVybrana] = useState<{ chata: FotkyChaty; fotka: FotkaVeFronte } | null>(null)
   const [alt, setAlt] = useState('')
   const [duvod, setDuvod] = useState('')
+  /**
+   * Kam snímek poslat. Výchozí je chata, u které se našel — ale nemusí to být
+   * ona: mezi kandidáty chaty se často najde dobrá fotka lanovky nebo
+   * střediska (Michal 31. 7. 2026: „je škoda je jen zahodit").
+   */
+  const [cil, setCil] = useState('')
+  const [role, setRole] = useState<'hero' | 'galerie'>('hero')
   const [pracuje, setPracuje] = useState(false)
   const [hlaska, setHlaska] = useState<string | null>(null)
   /**
@@ -172,6 +196,8 @@ export default function VyberFotekKlient() {
                 setVybrana({ chata: ch, fotka: f })
                 setAlt('')
                 setDuvod('')
+                setCil(`chata:${ch.slug}:${ch.oblast}`)
+                setRole(ch.maFotku ? 'galerie' : 'hero')
               }}
               aktivni={vybrana?.fotka.soubor}
             />
@@ -188,6 +214,8 @@ export default function VyberFotekKlient() {
                       setVybrana({ chata: ch, fotka: f })
                       setAlt('')
                       setDuvod('')
+                      setCil(`chata:${ch.slug}:${ch.oblast}`)
+                      setRole(ch.maFotku ? 'galerie' : 'hero')
                     }}
                     aktivni={vybrana?.fotka.soubor}
                   />
@@ -230,6 +258,39 @@ export default function VyberFotekKlient() {
                   popis ze zdroje: {vybrana.fotka.popis.slice(0, 220)}
                 </p>
               )}
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center', margin: '0 0 8px' }}>
+                <label style={{ fontSize: 12 }}>Patří k:</label>
+                <select
+                  value={cil}
+                  onChange={(e) => setCil(e.target.value)}
+                  style={{ padding: '6px 9px', borderRadius: 7, border: 'none', fontSize: 12.5, maxWidth: 380 }}
+                >
+                  {(['chata', 'stredisko', 'lanovka'] as const).map((druh) => (
+                    <optgroup key={druh} label={DRUHY[druh]}>
+                      {data.cile
+                        .filter((c) => c.druh === druh)
+                        .map((c) => (
+                          <option key={`${c.druh}:${c.slug}`} value={`${c.druh}:${c.slug}:${c.oblast}`}>
+                            {c.nazev} ({c.oblast})
+                          </option>
+                        ))}
+                    </optgroup>
+                  ))}
+                </select>
+                {cil.startsWith('chata:') && (
+                  <>
+                    <label style={{ fontSize: 12, marginLeft: 6 }}>jako:</label>
+                    <select
+                      value={role}
+                      onChange={(e) => setRole(e.target.value as 'hero' | 'galerie')}
+                      style={{ padding: '6px 9px', borderRadius: 7, border: 'none', fontSize: 12.5 }}
+                    >
+                      <option value="hero">profilovou fotku</option>
+                      <option value="galerie">další fotku do galerie</option>
+                    </select>
+                  </>
+                )}
+              </div>
               <label style={{ display: 'block', fontSize: 12, marginBottom: 4 }}>
                 Co je na snímku vidět (alt — jde na web, tvrdíš to ty):
               </label>
@@ -249,12 +310,18 @@ export default function VyberFotekKlient() {
                       chata: vybrana.chata.slug,
                       oblast: vybrana.chata.oblast,
                       alt,
+                      role,
+                      cil: rozlozCil(cil) ?? undefined,
                       fotka: vybrana.fotka,
                     })
                   }
                   style={{ background: barvy.zelena, color: '#fff', border: 0, borderRadius: 7, padding: '8px 14px', fontSize: 13, cursor: 'pointer', opacity: alt.trim().length < 3 ? 0.5 : 1 }}
                 >
-                  Vybrat do profilu
+                  {cil.startsWith('chata:')
+                    ? role === 'hero'
+                      ? 'Vybrat jako profilovou'
+                      : 'Přidat do galerie'
+                    : 'Poslat k objektu'}
                 </button>
                 <input
                   value={duvod}

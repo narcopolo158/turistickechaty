@@ -18,7 +18,7 @@
  * fotka běh NEshodí, jen se ohlásí — idempotentní seed ji doplní příště
  * (profil má fallback siluetu, nic se nevymýšlí).
  */
-import { readdirSync, readFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { basename, dirname, join } from 'node:path'
 
 import { getPayload, type RequiredDataFromCollectionSlug } from 'payload'
@@ -243,6 +243,68 @@ if (fotekVzdano > 0) {
   payload.logger.warn(
     `Fotky: ${fotekVzdano} nedotaženo kvůli throttlingu/chybám — běh pokračoval dál, příští seed je doplní (idempotence dle zdrojUrl)`,
   )
+}
+
+// ── 2c. Fotky objektů bez profilu (střediska, lanovky) ─────────────────────
+/**
+ * `data/fotky/_redakcni.yaml` — snímky, které NEPATŘÍ chatě.
+ *
+ * Vznikají v redakčním prostředí: mezi kandidátními fotkami chaty se občas
+ * najde dobrá fotka něčeho jiného (zadání Michala 31. 7. 2026: „jsou tam mezi
+ * fotkami chat dobré fotky třeba k lanovce — je škoda je jen zahodit").
+ * Středisko se váže slugem (má vlastní kolekci), lanovka dvojicí oblast+slug
+ * (dráhy vznikají z OSM a kolekci nemají). Na webu mají tyhle fotky přednost
+ * před automatickým výběrem z Commons — viz src/lib/fotky-redakcni.ts.
+ *
+ * Idempotence stejná jako u fotek chat: klíčem je `zdrojUrl`, takže opakovaný
+ * seed jen srovná metadata a nic nestahuje.
+ */
+const souborCizichFotek = join(DATA, 'fotky', '_redakcni.yaml')
+if (existsSync(souborCizichFotek) && process.env.SEED_BEZ_FOTEK !== '1') {
+  const { fotky: cizi = [] } = (parse(readFileSync(souborCizichFotek, 'utf8')) ?? {}) as {
+    fotky?: ({ predmet: string; slug: string; oblast?: string; stahnoutZ: string } & Record<string, unknown>)[]
+  }
+  for (const { predmet, slug, oblast, stahnoutZ, ...metadata } of cizi) {
+    if (!stahnoutZ || !metadata.zdrojUrl) throw new Error(`fotky/_redakcni.yaml: záznam ${slug} potřebuje stahnoutZ i zdrojUrl`)
+    let vazba: Record<string, unknown>
+    if (predmet === 'stredisko') {
+      const nalezene = await payload.find({ collection: 'strediska', where: { slug: { equals: slug } }, limit: 1 })
+      if (!nalezene.docs[0]) {
+        payload.logger.warn(`fotka (${slug}): středisko neexistuje — přeskakuji (doplní se, až vznikne)`)
+        continue
+      }
+      vazba = { stredisko: nalezene.docs[0].id }
+    } else if (predmet === 'lanovka') {
+      if (!oblast) throw new Error(`fotky/_redakcni.yaml: lanovka ${slug} potřebuje oblast`)
+      vazba = { lanovkaOblast: oblast, lanovkaSlug: slug }
+    } else {
+      throw new Error(`fotky/_redakcni.yaml: neznámý předmět „${predmet}" u ${slug}`)
+    }
+    const fotkaData = { ...metadata, ...vazba } as unknown as RequiredDataFromCollectionSlug<'fotky'>
+    const stavajici = await payload.find({
+      collection: 'fotky',
+      where: { zdrojUrl: { equals: metadata.zdrojUrl } },
+      limit: 1,
+    })
+    if (stavajici.docs[0]) {
+      await payload.update({ collection: 'fotky', id: stavajici.docs[0].id, data: fotkaData })
+      payload.logger.info(`fotka ${predmet} (${slug}): aktualizována metadata`)
+      continue
+    }
+    const nazev = nazevSouboruZUrl(stahnoutZ)
+    const data = await stahniFotku(stahnoutZ, slug)
+    if (!data) {
+      payload.logger.warn(`fotka ${predmet} (${slug}): NEstažena — doplní ji příští seed`)
+      continue
+    }
+    await payload.create({
+      collection: 'fotky',
+      data: fotkaData,
+      file: { data, name: nazev, mimetype: mimeTypSouboru(nazev), size: data.byteLength },
+    })
+    payload.logger.info(`fotka ${predmet} (${slug}): stažena a nahrána — ${nazev}`)
+    await pauza(1500)
+  }
 }
 
 // ── 3. Razítka (otisk = upload do Fotek, idempotentně dle filename) ─────────

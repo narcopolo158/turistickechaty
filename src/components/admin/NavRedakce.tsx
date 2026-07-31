@@ -28,6 +28,9 @@ export default function NavRedakce() {
       <Link href="/admin/vyber-fotek" style={{ display: 'block', padding: '4px 0' }}>
         Výběr fotek
       </Link>
+      <Link href="/admin/galerie" style={{ display: 'block', padding: '4px 0' }}>
+        Galerie chat
+      </Link>
     </div>
   )
 }

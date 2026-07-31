@@ -46,6 +46,10 @@ export default buildConfig({
           Component: '/components/admin/Fronta#default',
           path: '/fronta',
         },
+        galerie: {
+          Component: '/components/admin/Galerie#default',
+          path: '/galerie',
+        },
       },
     },
   },

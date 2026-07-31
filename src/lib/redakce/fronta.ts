@@ -21,6 +21,8 @@ import { basename, join } from 'node:path'
 
 import { parse } from 'yaml'
 
+import { slugLanovky } from '../lanovky'
+
 /** Stav kandidátního objektu. `nezpracovan` = leží ve frontě. */
 export type StavKandidata = 'povysen' | 'vyrazen' | 'odlozen' | 'nezpracovan'
 
@@ -399,4 +401,66 @@ export const souhrnFronty = (koren: string, dnes = new Date().toISOString().slic
       profilyBezFotky: profily.filter((f) => f.oblast === oblast && !f.maFotku && !f.uzavrena).length,
     })),
   }
+}
+
+// ── Cílové objekty pro přesun fotky ────────────────────────────────────────
+
+export type CilovyObjekt = {
+  druh: 'chata' | 'stredisko' | 'lanovka'
+  slug: string
+  nazev: string
+  oblast: string
+}
+
+/**
+ * Objekty, kterým jde přiřadit fotka.
+ *
+ * PROČ (zadání Michala 31. 7. 2026): mezi kandidátními snímky chaty se často
+ * najde dobrá fotka NĚČEHO JINÉHO — typicky lanovky, která k chatě vede.
+ * Zahodit ji je škoda: patří jinam, ne pryč. Seznam se skládá z dat, ne
+ * z číselníku, aby v něm bylo přesně to, co web opravdu vede.
+ */
+export const ciloveObjekty = (koren: string): CilovyObjekt[] => {
+  const cile: CilovyObjekt[] = []
+
+  for (const soubor of yamlSoubory(join(koren, 'data', 'chaty'))) {
+    const d = nactiYaml<{ slug?: string; nazev?: string; oblast?: string }>(soubor)
+    if (d?.slug) cile.push({ druh: 'chata', slug: d.slug, nazev: d.nazev ?? d.slug, oblast: d.oblast ?? '—' })
+  }
+  for (const soubor of yamlSoubory(join(koren, 'data', 'strediska'))) {
+    const d = nactiYaml<{ slug?: string; nazev?: string; oblast?: string }>(soubor)
+    if (d?.slug) cile.push({ druh: 'stredisko', slug: d.slug, nazev: d.nazev ?? d.slug, oblast: d.oblast ?? '—' })
+  }
+  // Lanovky nemají YAML profily — vznikají z OSM (DATA-32) a leží v JSONu po
+  // oblastech. Slug + oblast je jejich identita i v kolekci Fotky.
+  const korenLanovek = join(koren, 'data', 'lanovky')
+  try {
+    for (const nazev of readdirSync(korenLanovek, { encoding: 'utf8' })) {
+      if (!nazev.endsWith('.json') || nazev.startsWith('_')) continue
+      const oblast = nazev.replace(/\.json$/, '')
+      const data = JSON.parse(readFileSync(join(korenLanovek, nazev), 'utf8')) as {
+        lanovky?: { id?: string; nazev?: string | null }[]
+      }
+      // Slug dráhy se počítá stejně jako na webu (`slugLanovky`) — jinak by
+      // fotka mířila na jiné URL, než jaké má mini-stránka lanovky.
+      for (const l of data.lanovky ?? [])
+        if (l.id) cile.push({ druh: 'lanovka', slug: slugLanovky(l.nazev ?? null, l.id), nazev: l.nazev ?? l.id, oblast })
+    }
+  } catch {
+    // Bez souborů lanovek se prostě nenabídnou.
+  }
+  return cile.sort((a, b) => a.druh.localeCompare(b.druh) || a.nazev.localeCompare(b.nazev, 'cs'))
+}
+
+/** Chaty, které už mají v profilu galerii — podklad pro obrazovku správy. */
+export const galerieChat = (
+  koren: string,
+): { slug: string; nazev: string; oblast: string; fotky: Record<string, unknown>[] }[] => {
+  const vysledek: { slug: string; nazev: string; oblast: string; fotky: Record<string, unknown>[] }[] = []
+  for (const soubor of yamlSoubory(join(koren, 'data', 'chaty'))) {
+    const d = nactiYaml<{ slug?: string; nazev?: string; oblast?: string; fotky?: Record<string, unknown>[] }>(soubor)
+    if (!d?.slug || !Array.isArray(d.fotky) || d.fotky.length === 0) continue
+    vysledek.push({ slug: d.slug, nazev: d.nazev ?? d.slug, oblast: d.oblast ?? '—', fotky: d.fotky })
+  }
+  return vysledek.sort((a, b) => b.fotky.length - a.fotky.length || a.nazev.localeCompare(b.nazev, 'cs'))
 }

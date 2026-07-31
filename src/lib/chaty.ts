@@ -230,8 +230,20 @@ export async function getIndexChat(): Promise<{
     const otisk = razitko && typeof razitko.otisk === 'object' ? razitko.otisk : null
     // Hero pro thumb karty: týž výběr jako profil (první fotka typu
     // `soucasna` s url); miniatura `nahled` (480×320), fallback plná fotka.
-    const fotkyChaty = (chata.fotky?.docs ?? []).filter((f): f is Fotka => typeof f === 'object')
-    const hero = fotkyChaty.find((f) => f.typ === 'soucasna' && f.url) ?? null
+    const fotkyChaty = (chata.fotky?.docs ?? [])
+      .filter((f): f is Fotka => typeof f === 'object')
+      // Galerie se řadí podle `poradi`; nevyplněné jde na konec, aby přidání
+      // fotky bez čísla nepřeházelo, co už redakce srovnala.
+      .sort((a, b) => (a.poradi ?? Number.MAX_SAFE_INTEGER) - (b.poradi ?? Number.MAX_SAFE_INTEGER))
+    /**
+     * Profilová fotka: nejdřív ta, kterou člověk označil (`hero`), teprve pak
+     * staré pravidlo „první současná". Do 31. 7. 2026 platilo jen to druhé —
+     * s galerií by o hlavním snímku rozhodovalo pořadí v joinu, tedy náhoda.
+     */
+    const hero =
+      fotkyChaty.find((f) => f.hero && f.typ === 'soucasna' && f.url) ??
+      fotkyChaty.find((f) => f.typ === 'soucasna' && f.url) ??
+      null
     index.push({
       slug: chata.slug!,
       nazev: chata.nazev,
