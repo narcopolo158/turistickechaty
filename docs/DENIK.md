@@ -11,6 +11,68 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (odpoledne) — Jizerské hory na homepage, a co všechno k tomu patřilo
+
+**Hotovo:** zadání Michala „na homepage přidej Jizerské hory — podívej se
+nejdřív, co vše je třeba aktualizovat". Ta prohlídka byla užitečnější než
+samotné přidání: **karta pohoří by si po přidání druhé oblasti přivlastnila
+cizí čísla.** Krkonošská karta totiž brala počty z CELÉHO fondu
+(`index.length`, `zanikleChatyVse()`, všechna razítka), takže by u Krkonoš
+stálo 89 chat místo 77 — a nikdo by to nepoznal, protože to číslo předtím
+sedělo.
+
+**Co se našlo a spravilo (osm míst):**
+
+1. **Karta pohoří** — místo jedné napevno psané Krkonoše se vykreslují všechny
+   oblasti s publikovanými profily a **čísla se počítají per oblast**
+   (Krkonoše 77 / 17 zaniklých / 45 s razítkem, Jizerky 12 / 0).
+2. **„Připravujeme"** — Jizerské hory z toho seznamu zmizely (visely by na
+   homepage dvakrát, jednou živé a jednou jako slib) a nahradil je Ještědský
+   hřbet. Seznam se navíc filtruje proti živým, aby se to nemohlo opakovat.
+3. **Eyebrow a perex** — „· Krkonoše" → „· Krkonoše a Jizerské hory", složené
+   z dat.
+4. **Mřížka pohoří (CSS)** — byla stavěná na jednu širokou živou kartu a tři
+   placeholdery; s pátou kartou se lámala do prázdna. Nově `auto-fit`, takže
+   se srovná při jakémkoli počtu oblastí.
+5. **`llms.txt`** — vedl „Pilotní pohoří: Krkonoše" na třech místech; teď
+   jmenuje obě a přidává odkazy na stránky pohoří i s počty chat.
+6. **`sitemap.xml`** — **stránky pohoří v ní vůbec nebyly**. Rozcestník oblasti
+   je po katalogu nejsilnější stránka průvodce a vyhledávačům se nenabízel.
+7. **Revalidace** — `SOUHRNNE_CETY` měly `/cesko/krkonose` napevno: jizerský
+   rozcestník by se po editaci nikdy nepřegeneroval, krkonošský naopak i kvůli
+   změně v cizí oblasti. Nově se odvozuje z profilu, kterého se změna týká.
+8. **Popisky komponent** — `Mapa3D` měla v titulku iframu, aria-labelu
+   i altu „Krkonoš" napevno, `VitrinaSberatelstvi` štítek „Sbírka Krkonoš".
+   Na jizerské stránce tedy čtečka četla cizí pohoří. Obojí bere jméno oblasti
+   z dat.
+
+**Jeden zdroj pravdy místo tří.** Homepage, llms.txt i sitemap si zpočátku
+filtrovaly oblasti každá po svém a hned se to vymstilo: seedované jsou i Český
+ráj a Ještědský hřbet (zatím bez chat), takže první verze llms.txt nabízela
+prázdné rozcestníky. Nové `getZiveOblasti()` vrací jen oblasti s aspoň jedním
+publikovaným profilem a používají ho všechna tři místa.
+
+**A čeština.** První pokus o výčet dal „Český ráj a Ještědský hřbet a Krkonoše
+a Jizerské hory" — proto `spojVyctem` („A, B a C"). Vzápětí test odhalil větu
+**„2 chat vedeme bez doloženého razítka"**: apel měl tvar „chat" napevno a
+dokud byla chata jedna, znělo to jen mírně divně („1 chat"). Nový
+`src/lib/cestina.ts` skloňuje podle hranic 1 / 2–4 / 5+ a používá ho i karta
+střediska, která si to dosud řešila po svém.
+
+**Testy:** 592 — homepage test nově drží, že **každá živá oblast má vlastní
+čísla** a že oblast, která na webu stojí, se zároveň nenabízí jako
+„připravujeme". Mock dostal druhou oblast, takže by stará chyba (počty
+z celého fondu) test shodila.
+
+**Příště:** až doběhne DATA-02, projít nalezené fotky; pak plný DATA-28 pro
+Jizerky (3D model je z doby před triáží).
+
+**Otázka pro Michala:**
+- **Dřevěná cedule v heru** pořád vede „PROZKOUMAT KRKONOŠE". Nechat pilot
+  napevno, přidat druhé prkno pro Jizerky, nebo z ní udělat neutrální
+  rozcestník na oblasti? Layout počítá se dvěma prkny (velké + katalog), takže
+  třetí by chtělo úpravu mřížky.
+
 ## 2026-07-31 (dopoledne, podruhé) — 3D mapa Jizerek se hlásila jako Krkonoše
 
 **Hotovo:** Michal poslal screenshot: sekce „01 3D mapa — Jizerské hory" a v ní

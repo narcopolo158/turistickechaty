@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://turistickechaty.cz'),
   title: 'turistickechaty.cz — průvodce turistickými chatami',
   description:
-    'Průvodce turistickými chatami: ověřená data, mapa, výlety, historie a katalog razítek. Začínáme Krkonošemi.',
+    'Průvodce turistickými chatami: ověřená data, mapa, výlety, historie a katalog razítek. Zatím Krkonoše a Jizerské hory.',
   // Discovery odkaz pro AI asistenty (llms.txt) — z hlavičky každé stránky.
   alternates: {
     types: { 'text/markdown': '/llms.txt' },

@@ -383,7 +383,12 @@
 }
 .hf1-reshuffle:hover { border-color: rgba(224, 52, 31, 0.45); color: var(--red); }
 
-.hf1-pohori-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 11px; }
+/* Mřížka se přizpůsobí počtu oblastí. Původní `1.6fr 1fr 1fr 1fr` byla
+   stavěná na JEDNU živou kartu a tři placeholdery; s druhou živou oblastí
+   (Jizerské hory, 31. 7. 2026) se pátá karta lámala na nový řádek do širokého
+   sloupce a vypadala jako omyl. `auto-fit` drží karty stejně široké, ať jich
+   je čtyři, pět nebo osm — a živá karta se pozná fotkou a odznakem, ne šířkou. */
+.hf1-pohori-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 11px; }
 .hf1-pohori-ziva {
   position: relative;
   background: var(--paper);
@@ -400,7 +405,7 @@
 .hf1-pohori-telo { display: block; padding: 14px 16px 16px; }
 .hf1-pohori-nazev { display: block; font: 500 21px/1.1 var(--font-emph, Georgia, serif); color: var(--ink); }
 .hf1-pohori-nazev.tichy { font-size: 17px; color: var(--muted); }
-.hf1-pohori-cisla { display: flex; gap: 16px; margin-top: 9px; font: 500 11.5px/1.3 Inter, sans-serif; color: var(--muted); }
+.hf1-pohori-cisla { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 9px; font: 500 11.5px/1.3 Inter, sans-serif; color: var(--muted); }
 .hf1-pohori-cisla b { color: var(--ink); font-weight: 600; }
 .hf1-pohori-cta { display: block; font: 600 11px/1 'Space Grotesk', sans-serif; color: var(--red); margin-top: 11px; }
 .hf1-pohori-pripravujeme { background: var(--cream); border: 1px dashed var(--hair); border-radius: 13px; overflow: hidden; }

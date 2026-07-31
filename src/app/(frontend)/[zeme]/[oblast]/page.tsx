@@ -309,7 +309,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       {ma3d && (
         <section className="sec" id="s01" aria-label="3D mapa">
           <SectionBar num="01" title={`3D mapa — ${oblast.nazev}`} variant="red" />
-          <Mapa3D posterUrl={poster3d} appUrl={`/3d/${oblastSlug}.html`} />
+          <Mapa3D posterUrl={poster3d} appUrl={`/3d/${oblastSlug}.html`} oblastNazev={oblast.nazev} />
         </section>
       )}
 
@@ -517,6 +517,7 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       <section className="sec" id="s08" aria-label="Sběratelství">
         <SectionBar num="08" title={`Sběratelství — vitrína ${oblast.nazev}`} variant="red" />
         <VitrinaSberatelstvi
+          oblastNazev={oblast.nazev}
           otisky={vitrinaOtisky}
           znamka={vitrinaZnamka}
           pocty={{

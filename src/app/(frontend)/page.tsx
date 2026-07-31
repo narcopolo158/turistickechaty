@@ -8,7 +8,7 @@ import NamatkouPas from '@/components/NamatkouPas'
 import TiltDiv from '@/components/TiltDiv'
 import TiskButton from '@/components/TiskButton'
 import { SectionBar } from '@/components/ui'
-import { getChatyProMapu, getIndexChat, getOblastBySlug } from '@/lib/chaty'
+import { getChatyProMapu, getIndexChat, getOblastBySlug, getZiveOblasti, spojVyctem } from '@/lib/chaty'
 import {
   denVRoce,
   feedNaposledyOvereno,
@@ -18,7 +18,8 @@ import {
   posledniOvereniFondu,
 } from '@/lib/index-chat'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
-import { zanikleChatyVse } from '@/lib/zanikle'
+import { tvarChaty } from '@/lib/cestina'
+import { zanikleChaty, zanikleChatyVse } from '@/lib/zanikle'
 
 // Denní rotace kalendária/namátkou a čerstvé countery: stránka se
 // přegeneruje nejpozději po hodině (jinak s každým deployem).
@@ -43,11 +44,23 @@ export const revalidate = 3600
  * Všechna čísla POČÍTANÁ z dat — nikde žádné ručně psané.
  */
 export default async function HomePage() {
-  const [chatyProMapu, { index, kalendarium }, oblastKrkonose] = await Promise.all([
+  const [chatyProMapu, { index, kalendarium }, ziveOblasti] = await Promise.all([
     getChatyProMapu(),
     getIndexChat(),
-    getOblastBySlug('krkonose'),
+    getZiveOblasti(),
   ])
+  // Oblasti, které na webu OPRAVDU stojí — tedy ty s aspoň jedním publikovaným
+  // profilem. Do 31. 7. 2026 tu byly Krkonoše napevno; když přibyly Jizerské
+  // hory, karta pohoří by o nich mlčela a krkonošská by si navíc přivlastnila
+  // jejich čísla (počty se braly z celého fondu). Teď se počítají per oblast.
+  // Detail oblasti se dotahuje jen kvůli titulní fotce. Když se nenačte,
+  // karta se NEZAHODÍ — jen zůstane s kresleným panoramatem; jinak by chyba
+  // v jednom dokumentu tiše smazala celou oblast z rozcestníku.
+  const detailOblasti = new Map(
+    (await Promise.all(ziveOblasti.map((o) => getOblastBySlug(o.slug))))
+      .filter((o): o is NonNullable<typeof o> => o != null)
+      .map((o) => [o.slug, o]),
+  )
 
   const dnes = new Date().toISOString().slice(0, 10)
   const sRazitkem = index.filter((ch) => ch.razitko).length
@@ -57,8 +70,6 @@ export default async function HomePage() {
   const nedavno = pocetNoveOverenychZa(index, dnes, 14)
   const vyroci = kalendariumVyber(kalendarium, dnes)
   const overenoFeed = feedNaposledyOvereno(index, 4)
-  // Titulní fotka oblasti (FOTO-01) — na kartě pohoří místo kresleného panoramatu.
-  const heroFotoKrkonose = oblastKrkonose?.heroFoto ?? null
 
   // Artefakty koláže z doložených dat: hero fotka + reálný otisk Luční boudy.
   const lucni = index.find((ch) => ch.slug === 'lucni-bouda') ?? null
@@ -71,11 +82,30 @@ export default async function HomePage() {
     : null
   const otiskLucni = lucni?.otiskUrl ? { url: lucni.otiskUrl, alt: lucni.otiskAlt ?? 'otisk razítka Luční boudy' } : null
 
+  /**
+   * Karta pohoří = jedna oblast s publikovanými profily, čísla POČÍTANÁ jen
+   * z jejích chat. Řadí se podle počtu profilů, ať je pilot první.
+   */
+  const zive = ziveOblasti.map((o) => {
+    const chatyOblasti = index.filter((ch) => ch.oblastSlug === o.slug)
+    return {
+      slug: o.slug,
+      nazev: o.nazev,
+      heroFoto: detailOblasti.get(o.slug)?.heroFoto ?? null,
+      chat: chatyOblasti.length,
+      zanikle: zanikleChaty(o.slug).length,
+      sRazitkem: chatyOblasti.filter((ch) => ch.razitko).length,
+    }
+  })
+
+  // Oblasti, ke kterým máme jen kandidáty (nebo ani to) — kartu „připravujeme"
+  // dostane jen ta, která na webu ještě nestojí; jinak by Jizerky visely na
+  // homepage dvakrát, jednou živé a jednou jako slib.
   const pripravujeme = [
-    { n: 'Jizerské hory', note: 'připravujeme — sbíráme kandidáty' },
+    { n: 'Ještědský hřbet', note: 'připravujeme — sbíráme kandidáty' },
     { n: 'Český ráj', note: 'připravujeme — sbíráme kandidáty' },
     { n: 'Podkrkonoší', note: 'přesahová oblast — s vysvětlením' },
-  ]
+  ].filter((p) => !zive.some((z) => z.nazev === p.n))
 
   return (
     <>
@@ -92,15 +122,21 @@ export default async function HomePage() {
       <div className="hf1-jen-obrazovka">
         <section className="wrap hf1-hero" aria-label="Úvod">
           <div className="hf1-hero-text">
-            <div className="hf1-eyebrow">Průvodce turistickými chatami · Krkonoše</div>
+            <div className="hf1-eyebrow">
+              Průvodce turistickými chatami · {spojVyctem(zive.map((o) => o.nazev))}
+            </div>
             <h1 className="hf1-claim">
               Chaty, kterým
               <br />
               můžeš věřit.
             </h1>
             <p className="hf1-perex">
-              Každý údaj má zdroj a datum ověření. Razítka, známky, skládané mapy a příběhy bud — začínáme
-              v Krkonoších.
+              Každý údaj má zdroj a datum ověření. Razítka, známky, skládané mapy a příběhy bud —
+              {/* Jména oblastí se do věty vkládají v 1. pádu jako výčet („zatím
+                  Krkonoše a Jizerské hory"). Skloňovat je podle šablony by
+                  znamenalo hádat pád u každého nového pohoří — a čeština to
+                  odpouští jen do prvního „v Jizerské hory". */}
+              {zive.length ? ` zatím ${spojVyctem(zive.map((o) => o.nazev))}.` : ' pilot teprve začíná.'}
             </p>
 
             <HledaniChat polozky={index.map((ch) => ({ nazev: ch.nazev, url: ch.url }))} />
@@ -191,48 +227,54 @@ export default async function HomePage() {
             <span className="hf1-sekce-tag">pilot → expanze, poctivě</span>
           </div>
           <div className="hf1-pohori-grid">
-            <TiltDiv className="hf1-pohori-ziva">
-              <Link href="/cesko/krkonose" className="hf1-pohori-obsah">
-                <span className="hf1-pohori-panorama" aria-hidden="true">
-                  {/* Titulní fotka oblasti, když ji data mají (FOTO-01); kreslené
-                      panorama zůstává jako záloha, aby karta nikdy nebyla prázdná
-                      — a u „připravujeme" oblastí je pořád jediná varianta. */}
-                  {heroFotoKrkonose?.nahled ? (
-                    // eslint-disable-next-line @next/next/no-img-element -- náhled titulní fotky (FOTO-01), statická příloha repa
-                    <img
-                      className="hf1-pohori-foto"
-                      src={heroFotoKrkonose.nahled}
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  ) : (
-                  <svg viewBox="0 0 460 110" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-                    <path d="M0,64 L74,34 L140,54 L214,22 L292,52 L360,28 L420,48 L460,36 L460,110 L0,110 Z" fill="#b7c7d4" />
-                    <path d="M214,22 L242,38 L188,44 Z" fill="#f2f5f7" opacity=".9" />
-                    <path d="M0,84 L90,62 L180,80 L280,56 L380,76 L460,60 L460,110 L0,110 Z" fill="#7d9469" />
-                    <path d="M-5,74 C100,66 220,58 330,50 C380,46 430,44 465,40" fill="none" stroke="#fdfaf2" strokeWidth="3" opacity=".65" />
-                  </svg>
-                  )}
-                  <span className="hf1-pohori-zive-badge">ŽIVÉ</span>
-                </span>
-                <span className="hf1-pohori-telo">
-                  <span className="hf1-pohori-nazev">Krkonoše</span>
-                  <span className="hf1-pohori-cisla">
-                    <span>
-                      <b>{index.length}</b> chat
-                    </span>
-                    <span>
-                      <b>{zanikle.length}</b> zaniklých
-                    </span>
-                    <span>
-                      <b>{sRazitkem}</b> s razítkem
-                    </span>
+            {zive.map((o) => (
+              <TiltDiv key={o.slug} className="hf1-pohori-ziva">
+                <Link href={`/cesko/${o.slug}`} className="hf1-pohori-obsah">
+                  <span className="hf1-pohori-panorama" aria-hidden="true">
+                    {/* Titulní fotka oblasti, když ji data mají (FOTO-01); kreslené
+                        panorama zůstává jako záloha, aby karta nikdy nebyla prázdná
+                        — a u „připravujeme" oblastí je pořád jediná varianta. */}
+                    {o.heroFoto?.nahled ? (
+                      // eslint-disable-next-line @next/next/no-img-element -- náhled titulní fotky (FOTO-01), statická příloha repa
+                      <img
+                        className="hf1-pohori-foto"
+                        src={o.heroFoto.nahled}
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <svg viewBox="0 0 460 110" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                        <path d="M0,64 L74,34 L140,54 L214,22 L292,52 L360,28 L420,48 L460,36 L460,110 L0,110 Z" fill="#b7c7d4" />
+                        <path d="M214,22 L242,38 L188,44 Z" fill="#f2f5f7" opacity=".9" />
+                        <path d="M0,84 L90,62 L180,80 L280,56 L380,76 L460,60 L460,110 L0,110 Z" fill="#7d9469" />
+                        <path d="M-5,74 C100,66 220,58 330,50 C380,46 430,44 465,40" fill="none" stroke="#fdfaf2" strokeWidth="3" opacity=".65" />
+                      </svg>
+                    )}
+                    <span className="hf1-pohori-zive-badge">ŽIVÉ</span>
                   </span>
-                  <span className="hf1-pohori-cta">Prozkoumat ▸</span>
-                </span>
-              </Link>
-            </TiltDiv>
+                  <span className="hf1-pohori-telo">
+                    <span className="hf1-pohori-nazev">{o.nazev}</span>
+                    <span className="hf1-pohori-cisla">
+                      <span>
+                        <b>{o.chat}</b> chat
+                      </span>
+                      {/* Nula zaniklých u nové oblasti není chyba, ale ani zpráva —
+                          Atlas se plní zvlášť, tak se prázdná položka neukazuje. */}
+                      {o.zanikle > 0 && (
+                        <span>
+                          <b>{o.zanikle}</b> zaniklých
+                        </span>
+                      )}
+                      <span>
+                        <b>{o.sRazitkem}</b> s razítkem
+                      </span>
+                    </span>
+                    <span className="hf1-pohori-cta">Prozkoumat ▸</span>
+                  </span>
+                </Link>
+              </TiltDiv>
+            ))}
             {pripravujeme.map((p) => (
               <div key={p.n} className="hf1-pohori-pripravujeme">
                 <span className="hf1-pohori-silueta" aria-hidden="true">
@@ -258,7 +300,8 @@ export default async function HomePage() {
             <div className="hf1-apel-text">
               <b>Máš v deníku otisk, který nám chybí?</b>
               <p>
-                {index.length - sRazitkem} chat vedeme bez doloženého razítka a{' '}
+                {index.length - sRazitkem} {tvarChaty(index.length - sRazitkem, 'ctvrty')} vedeme bez
+                doloženého razítka a{' '}
                 {index.filter((ch) => ch.heroUrl == null).length} bez fotky. Pošli sken otisku nebo
                 snímek z výletu — po redakční kontrole je zveřejníme s tvým jménem u snímku.
               </p>

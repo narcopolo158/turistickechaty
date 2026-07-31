@@ -353,3 +353,42 @@ export async function getSlugyOblasti(): Promise<string[]> {
   const res = await payload.find({ collection: 'oblasti', limit: 100, depth: 0, overrideAccess: false })
   return res.docs.map((o) => o.slug).filter((s): s is string => !!s)
 }
+
+export type ZivaOblast = { slug: string; nazev: string; pocetChat: number }
+
+/**
+ * Oblasti, které na webu OPRAVDU stojí — mají aspoň jeden publikovaný profil.
+ *
+ * Seedovaných oblastí je víc než živých: Český ráj i Ještědský hřbet existují
+ * jako záznam, ale zatím jen s kandidáty. Nabídnout je čtenáři (nebo robotům
+ * v llms.txt a sitemap) by znamenalo poslat je na prázdný rozcestník, což je
+ * horší než mlčet. Vzniklo 31. 7. 2026 při přidávání Jizerských hor na
+ * homepage: tři místa si tehdy filtrovala oblasti každé po svém.
+ */
+export async function getZiveOblasti(): Promise<ZivaOblast[]> {
+  const payload = await getPayload({ config })
+  const res = await payload.find({ collection: 'oblasti', limit: 100, depth: 0, overrideAccess: false })
+  // Počítá se z INDEXU profilů, ne z mapových bodů: mapa vede jen chaty se
+  // souřadnicemi, takže by Krkonoše hlásily 74 tam a 77 jinde — dvě různá
+  // čísla o téže věci na jedné stránce.
+  const { index } = await getIndexChat()
+  const pocty = new Map<string, number>()
+  for (const ch of index) {
+    if (ch.oblastSlug) pocty.set(ch.oblastSlug, (pocty.get(ch.oblastSlug) ?? 0) + 1)
+  }
+  return res.docs
+    .filter((o): o is typeof o & { slug: string; nazev: string } => !!o.slug && !!o.nazev)
+    .map((o) => ({ slug: o.slug, nazev: o.nazev, pocetChat: pocty.get(o.slug) ?? 0 }))
+    .filter((o) => o.pocetChat > 0)
+    .sort((a, b) => b.pocetChat - a.pocetChat)
+}
+
+/**
+ * Výčet do české věty: „Krkonoše", „Krkonoše a Jizerské hory", „A, B a C".
+ * Spojovat všechno slovem „a" (jak to dělal první pokus) dá paskvil
+ * „Český ráj a Ještědský hřbet a Krkonoše a Jizerské hory".
+ */
+export const spojVyctem = (polozky: string[]): string =>
+  polozky.length <= 1
+    ? (polozky[0] ?? '')
+    : `${polozky.slice(0, -1).join(', ')} a ${polozky[polozky.length - 1]}`

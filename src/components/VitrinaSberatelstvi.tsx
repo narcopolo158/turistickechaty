@@ -19,10 +19,13 @@ export default function VitrinaSberatelstvi({
   otisky,
   znamka,
   pocty,
+  oblastNazev,
 }: {
   otisky: VitrinaOtisk[]
   znamka: { cislo: string; nazev: string; vyska: number | null } | null
   pocty: { sRazitkem: number; otisku: number; seZnamkou: number; bezRazitka: number }
+  /** Jméno oblasti na štítek sbírky — do 31. 7. 2026 tu byly „Krkonoše" napevno. */
+  oblastNazev: string
 }) {
   return (
     <div className="vit">
@@ -93,7 +96,7 @@ export default function VitrinaSberatelstvi({
               <div className="vit-stitek" style={{ '--vrot': '0deg' } as React.CSSProperties}>
                 <span className="vit-nytek levy" aria-hidden="true" />
                 <span className="vit-nytek pravy" aria-hidden="true" />
-                <b>Sbírka Krkonoš</b>
+                <b>Sbírka — {oblastNazev}</b>
                 <span>
                   {pocty.sRazitkem} chat s razítkem · {pocty.otisku} otisků
                   <br />

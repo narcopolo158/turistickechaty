@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-import { getChatyProMapu } from '@/lib/chaty'
+import { getChatyProMapu, getZiveOblasti } from '@/lib/chaty'
 
 /**
  * Mapa webu (/sitemap.xml). Statické stránky + všechny publikované chaty
@@ -22,6 +22,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE}/vylety`, lastModified: dnes, changeFrequency: 'monthly', priority: 0.5 },
   ]
 
+  // Stránky pohoří v mapě webu do 31. 7. 2026 CHYBĚLY — sitemap vedla jen
+  // statické stránky a profily chat, takže rozcestník oblasti (nejsilnější
+  // stránka průvodce hned po katalogu) se vyhledávačům nenabízel vůbec.
+  let oblasti: MetadataRoute.Sitemap = []
+  try {
+    // Jen oblasti s publikovanými profily — prázdný rozcestník do mapy webu
+    // nepatří (seedované jsou i Český ráj a Ještědský hřbet, zatím bez chat).
+    oblasti = (await getZiveOblasti()).map((o) => ({
+      url: `${BASE}/cesko/${o.slug}`,
+      lastModified: dnes,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    }))
+  } catch {
+    // DB nedostupná — stránky pohoří se do mapy nedostanou, statické ano.
+  }
+
   let chaty: MetadataRoute.Sitemap = []
   try {
     const docs = await getChatyProMapu()
@@ -32,5 +49,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // DB nedostupná (např. build bez DB) — aspoň statické stránky.
   }
 
-  return [...staticke, ...chaty]
+  return [...staticke, ...oblasti, ...chaty]
 }

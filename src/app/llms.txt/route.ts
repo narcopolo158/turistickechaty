@@ -1,4 +1,4 @@
-import { getChatyProMapu } from '@/lib/chaty'
+import { getChatyProMapu, getZiveOblasti, spojVyctem } from '@/lib/chaty'
 
 /**
  * /llms.txt — kurátorovaný vstupní bod pro AI asistenty a vyhledávače
@@ -24,6 +24,23 @@ export async function GET(): Promise<Response> {
     // DB nedostupná — kostra bez seznamu chat.
   }
 
+  // Jména oblastí, které na webu opravdu stojí — do 31. 7. 2026 tu byly
+  // „Krkonoše" napevno na třech místech, takže by llms.txt tvrdil jediné
+  // pilotní pohoří i dlouho poté, co přibylo druhé.
+  let oblastiOdkazy: { nazev: string; slug: string; pocetChat: number }[] = []
+  try {
+    oblastiOdkazy = await getZiveOblasti()
+  } catch {
+    // DB nedostupná — věta o oblastech se vynechá, zbytek kostry platí.
+  }
+  const oblastiVeta = oblastiOdkazy.length ? spojVyctem(oblastiOdkazy.map((o) => o.nazev)) : 'Krkonoše'
+  const oblastiRadky = oblastiOdkazy
+    .map(
+      (o) =>
+        `- [${o.nazev}](${BASE}/cesko/${o.slug}): stránka pohoří — ${o.pocetChat} chat s ověřenými daty, střediska, lanovky, přístupové trasy, 3D mapa.`,
+    )
+    .join('\n')
+
   const dnes = new Date().toISOString().slice(0, 10)
   const chatyRadky = vlajkove.length
     ? vlajkove
@@ -33,16 +50,17 @@ export async function GET(): Promise<Response> {
 
   const text = `# turistickechaty.cz
 
-> turistickechaty.cz je průvodce po horských a turistických chatách pro české turisty — od Jeseníků po Alpy. U každé chaty najdete ověřená data (poloha, nadmořská výška, provoz, přístupové trasy s převýšením a časem), sběratelskou vrstvu (turistická razítka, známky a vizitky) a historii. Každý údaj nese zdroj a datum ověření. Pilotní pohoří: Krkonoše (česká i polská strana).
+> turistickechaty.cz je průvodce po horských a turistických chatách pro české turisty — od Jeseníků po Alpy. U každé chaty najdete ověřená data (poloha, nadmořská výška, provoz, přístupové trasy s převýšením a časem), sběratelskou vrstvu (turistická razítka, známky a vizitky) a historii. Každý údaj nese zdroj a datum ověření. Zpracovaná pohoří: ${oblastiVeta} — obě přeshraniční, vedeme je vcelku z české i polské strany.
 
 ## Hlavní stránky
 
-- [Katalog chat](${BASE}/chaty): mapa a seznam chat s ověřenými daty (zatím Krkonoše).
+- [Katalog chat](${BASE}/chaty): mapa a seznam chat s ověřenými daty (zatím ${oblastiVeta}).
 - [Razítkovník](${BASE}/razitkovnik): sbírka turistických razítek horských chat.
 - [Atlas zaniklých chat](${BASE}/zanikle): zaniklé boudy a schroniska Krkonoš — kdy a proč zanikly, co je na místě dnes.
 - [Výlety](${BASE}/vylety): připravované trasy a přechody mezi chatami.
+${oblastiRadky}
 
-## Vybrané chaty (Krkonoše)
+## Vybrané chaty (${oblastiVeta})
 
 ${chatyRadky}
 

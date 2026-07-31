@@ -13,7 +13,7 @@ import type { CollectionAfterChangeHook, CollectionAfterDeleteHook } from 'paylo
  */
 
 /** Stránky, které nesou souhrny nad všemi profily (počty, karty, žebříčky). */
-const SOUHRNNE_CESTY = ['/', '/chaty', '/razitkovnik', '/zanikle', '/cesko/krkonose', '/prispet']
+const SOUHRNNE_CESTY = ['/', '/chaty', '/razitkovnik', '/zanikle', '/prispet']
 
 export const revaliduj = async (cesty: string[]): Promise<void> => {
   try {
@@ -38,6 +38,12 @@ export const revalidujPoZmene: CollectionAfterChangeHook = async ({ doc }) => {
   const cesty = [...SOUHRNNE_CESTY]
   const profil = cestaProfilu(doc) ?? cestaProfilu((doc as { chata?: unknown })?.chata)
   if (profil) cesty.push(profil)
+  // Stránka pohoří té chaty, které se změna týká. Do 31. 7. 2026 tu byla
+  // `/cesko/krkonose` napevno: po přidání Jizerských hor by se jejich
+  // rozcestník po editaci nikdy nepřegeneroval, kdežto krkonošský by se
+  // přegeneroval i kvůli změně v jiné oblasti.
+  const oblastProfilu = profil?.split('/')[2]
+  if (oblastProfilu) cesty.push(`/cesko/${oblastProfilu}`)
   await revaliduj(cesty)
   return doc
 }

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 import { kreditFotky, nazevZdroje } from '@/lib/atribuce'
+import { tvarChaty } from '@/lib/cestina'
 import type { PristupyZBodu } from '@/lib/pristupy'
 
 /**
@@ -97,7 +98,7 @@ export function StrediskoKarta({
         {pristupy ? (
           <>
             <b>{pristupy.pocet}</b>
-            <span>{pristupy.pocet === 1 ? 'chata odtud' : pristupy.pocet < 5 ? 'chaty odtud' : 'chat odtud'}</span>
+            <span>{tvarChaty(pristupy.pocet)} odtud</span>
           </>
         ) : (
           <>
