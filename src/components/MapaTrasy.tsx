@@ -16,9 +16,17 @@ export type Bod = { lat: number; lng: number }
 export type TrasaNaMape = { vychoziBod: string; typ: string; delkaKm: number; body: Bod[] }
 
 const DLAZDICE = 'https://api.mapy.com/v1/maptiles/outdoor'
-const ATRIBUCE_FALLBACK =
-  '<a href="https://api.mapy.com/copyright" target="_blank">&copy; Seznam.cz a.s. a další</a>'
-const LOGO_SVG = 'https://api.mapy.com/img/api/logo.svg'
+
+/**
+ * Mapy.com u svých podkladů VYŽADUJÍ dvě věci: odkaz na jejich copyright
+ * a své logo někde nad mapou. Živé mapě je přidává Leaflet, statickému náhledu
+ * na profilu je musíme přidat sami — proto jsou tyhle tři hodnoty vyvezené,
+ * ať se na dvou místech nerozejdou.
+ */
+export const MAPY_COPYRIGHT = 'https://api.mapy.com/copyright'
+export const MAPY_ATRIBUCE = '© Seznam.cz a.s. a další'
+export const LOGO_SVG = 'https://api.mapy.com/img/api/logo.svg'
+const ATRIBUCE_FALLBACK = `<a href="${MAPY_COPYRIGHT}" target="_blank">&copy; Seznam.cz a.s. a další</a>`
 
 /** Barvy čar tras — záměrně odlišné od KČT značek (červená/modrá/zelená/žlutá) pod mapou. */
 const BARVY_TRAS = ['#d81f6a', '#7a3ea8', '#0e6e6e']

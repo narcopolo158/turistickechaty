@@ -465,3 +465,47 @@ body.dark .zap-mapa-chybi { background:var(--cream); border-color:var(--hair); }
   .zap-lupa-sip.vlevo { left:4px; }
   .zap-lupa-sip.vpravo { right:4px; }
 }
+
+/* ── Náhled mapy (statický obrázek místo živých dlaždic) ─────────────────
+   Mapa je vidět hned, ale plná interaktivní verze se natáhne až po kliknutí
+   (nápad Michala 1. 8. 2026). Náhled má tytéž dlaždice, značku i barvy tras,
+   takže přechod vypadá, jako by se mapa probrala — ne jako by se vyměnila. */
+.zap-map-nahled { position:absolute; inset:0; display:block; width:100%; height:100%; padding:0; border:0; background:none; cursor:pointer; }
+.zap-map-nahled img { display:block; width:100%; height:100%; object-fit:cover; }
+/*
+  Vpravo NAHOŘE schválně. Vpravo dole sedí „Složit", vlevo dole povinné logo
+  a atribuce Mapy.com — a doprostřed to nejde, tam je značka chaty, tedy to
+  jediné, kvůli čemu se čtenář na mapu dívá. Roh zbývá jediný.
+*/
+.zap-map-nahled .btn {
+  position:absolute; right:12px; top:12px; z-index:4;
+  padding:7px 13px; border-radius:9px;
+  background:var(--card); border:1px solid var(--line);
+  font:600 10.5px/1 var(--font-display); letter-spacing:.06em; color:var(--ink);
+  box-shadow:0 6px 14px -8px rgba(20,18,26,.5);
+  transition:transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s;
+}
+.zap-map-nahled:hover .btn, .zap-map-nahled:focus-visible .btn {
+  transform:translateY(-2px); box-shadow:0 10px 20px -10px rgba(20,18,26,.55);
+}
+@media (prefers-reduced-motion:reduce) {
+  .zap-map-nahled .btn, .zap-map-nahled:hover .btn { transform:none; transition:none; }
+}
+/*
+  Povinné znaky poskytovatele nad náhledem: logo Mapy.com a odkaz na copyright.
+  Živé mapě je kreslí Leaflet, statickému obrázku je musíme dát sami. Leží NAD
+  obrázkem, ale mimo tlačítko „Rozhýbat mapu", aby šly kliknout zvlášť —
+  a vlevo dole, kde nepřekáží tlačítku vpravo dole.
+*/
+.zap-map-nahledbox { position:absolute; inset:0; }
+.zap-map-logo { position:absolute; left:10px; bottom:9px; z-index:5; display:block; line-height:0; }
+.zap-map-logo img { display:block; width:60px; height:auto; filter:drop-shadow(0 1px 2px rgba(255,255,255,.85)); }
+.zap-map-atribuce {
+  position:absolute; left:78px; bottom:10px; z-index:5;
+  padding:2px 6px; border-radius:5px;
+  background:rgba(255,255,255,.76);
+  font:400 9.5px/1.4 var(--font-body); letter-spacing:.01em;
+  color:#4a4550; text-decoration:none;
+}
+.zap-map-atribuce:hover, .zap-map-atribuce:focus-visible { text-decoration:underline; }
+body.dark .zap-map-atribuce { background:rgba(28,26,33,.72); color:#cfc9d6; }

@@ -17,7 +17,12 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 
 import type { ZapData } from '@/components/ProfilZapisnik'
 
-vi.mock('@/components/MapaTrasy', () => ({ default: () => <div data-testid="mapa-mock" /> }))
+// Živá mapa se nahrazuje atrapou (Leaflet v jsdom nekreslí), ale KONSTANTY
+// zůstávají skutečné — test atribuce má hlídat opravdové hodnoty, ne své vlastní.
+vi.mock('@/components/MapaTrasy', async (puvodni) => ({
+  ...(await puvodni<typeof import('@/components/MapaTrasy')>()),
+  default: () => <div data-testid="mapa-mock" />,
+}))
 // jsdom `matchMedia` nemá; komponenta si jím zjišťuje prefers-reduced-motion.
 window.matchMedia = ((dotaz: string) => ({
   matches: false,
@@ -62,6 +67,7 @@ const DATA = (galerie: ZapData['galerie']): ZapData =>
     pristupIntro: null,
     routes: [],
     mapa: { lat: 50.7, lng: 15.7, trasy: [] },
+    mapaNahledUrl: null,
     mapa3dUrl: null,
     prispetUrl: null,
     sousede: [],
@@ -129,5 +135,65 @@ describe('Album na profilu chaty', () => {
     expect(container.querySelector('.zap-map-live')).toBeTruthy()
     expect(screen.getByText('◂ Složit')).toBeTruthy()
     expect(screen.queryByText(/Skládaná turistická mapa/)).toBeNull()
+  })
+})
+
+/**
+ * DVĚ ÚROVNĚ MAPY (nápad Michala 1. 8. 2026: „natáhli bysme mapu do cache
+ * a načetla by se až po kliknutí — mapa by tam vždy byla, ale šetřili bysme
+ * načítání plné mapy").
+ *
+ * Hlídá se, že se živé dlaždice NENAČTOU dřív, než o ně někdo stojí — v tom
+ * je celá úspora — a zároveň že mapa není nikdy prázdná: bez náhledu (chybí
+ * klíč, API odmítlo) se musí natáhnout živá.
+ */
+describe('náhled mapy a živé dlaždice', () => {
+  const sNahledem = () => ({ ...DATA([]), mapaNahledUrl: '/api/mapa-nahled/zkusebni' })
+
+  it('s náhledem se živá mapa nenačte, dokud se neklikne', () => {
+    const { container } = render(<ProfilZapisnik data={sNahledem()} />)
+    expect(container.querySelector('.zap-map-nahled img')).toBeTruthy()
+    expect(container.querySelector('[data-testid="mapa-mock"]')).toBeNull()
+    fireEvent.click(container.querySelector('.zap-map-nahled')!)
+    expect(container.querySelector('[data-testid="mapa-mock"]')).toBeTruthy()
+  })
+
+  it('náhled má popis pro čtečku a tlačítko, které říká, co se stane', () => {
+    render(<ProfilZapisnik data={sNahledem()} />)
+    expect(screen.getByAltText(/Mapa okolí — Zkušební bouda/)).toBeTruthy()
+    expect(screen.getByText('Rozhýbat mapu ▸')).toBeTruthy()
+  })
+
+  /** Rozbitý náhled nesmí nechat na stránce díru — spadne se na živou mapu. */
+  it('když náhled selže, mapa se natáhne živá', () => {
+    const { container } = render(<ProfilZapisnik data={sNahledem()} />)
+    fireEvent.error(container.querySelector('.zap-map-nahled img')!)
+    expect(container.querySelector('[data-testid="mapa-mock"]')).toBeTruthy()
+  })
+
+  it('bez náhledu (chybí klíč) se mapa chová jako dřív — živá', () => {
+    const { container } = render(<ProfilZapisnik data={DATA([])} />)
+    expect(container.querySelector('.zap-map-nahled')).toBeNull()
+    expect(container.querySelector('.zap-map-live')).toBeTruthy()
+  })
+
+  /**
+   * Mapy.com u svých podkladů vyžadují logo a odkaz na copyright. Živé mapě je
+   * kreslí Leaflet; statický náhled by se bez téhle kontroly mohl tiše vydat
+   * bez nich — a to je porušení licence, ne kosmetika.
+   */
+  it('náhled nese logo Mapy.com i odkaz na copyright', () => {
+    const { container } = render(<ProfilZapisnik data={sNahledem()} />)
+    const logo = container.querySelector('a.zap-map-logo')
+    expect(logo?.getAttribute('href')).toContain('mapy.com')
+    expect(logo?.querySelector('img')?.getAttribute('alt')).toBe('Mapy.com')
+    const atribuce = screen.getByText('© Seznam.cz a.s. a další')
+    expect(atribuce.getAttribute('href')).toBe('https://api.mapy.com/copyright')
+  })
+
+  /** Odkaz uvnitř tlačítka je neplatné HTML — a čtečka z toho udělá guláš. */
+  it('logo ani atribuce nejsou uvnitř tlačítka', () => {
+    const { container } = render(<ProfilZapisnik data={sNahledem()} />)
+    expect(container.querySelector('.zap-map-nahled a')).toBeNull()
   })
 })

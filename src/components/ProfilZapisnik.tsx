@@ -10,7 +10,7 @@
 import React, { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import Link from 'next/link'
 
-import MapaTrasy, { type TrasaNaMape } from './MapaTrasy'
+import MapaTrasy, { LOGO_SVG, MAPY_ATRIBUCE, MAPY_COPYRIGHT, type TrasaNaMape } from './MapaTrasy'
 import IkonaRozhledna from './IkonaRozhledna'
 import RazitkaVarianty, { VybranyOtisk, type VariantaOtisku } from './RazitkaVarianty'
 import RazitkoSvg from './RazitkoSvg'
@@ -68,6 +68,8 @@ export type ZapData = {
   pristupIntro: string | null
   routes: ZapRoute[]
   mapa: { lat: number; lng: number; trasy: TrasaNaMape[] } | null
+  /** Statický náhled mapy (jeden dotaz, cachovaný) — `null` bez API klíče. */
+  mapaNahledUrl: string | null
   /** Deep-link na 3D mapu pohoří (?chata=<název>) — null u chat bez GPS. */
   mapa3dUrl: string | null
   /** Odkaz na komunitní podání s předvyplněnou chatou (/prispet?chata=slug). */
@@ -272,7 +274,14 @@ export default function ProfilZapisnik({ data }: { data: ZapData }) {
             {data.mapa && (
               <>
                 <div className="zap-strip"><b>Mapa</b><span className="line" /><span className="tag">trasy a nástupy</span></div>
-                <SkladanaMapa mapa={data.mapa} nazev={data.nazev} unfolded={unfolded} setUnfolded={setUnfolded} reduced={reduced} />
+                <SkladanaMapa
+                  mapa={data.mapa}
+                  nazev={data.nazev}
+                  nahledUrl={data.mapaNahledUrl}
+                  unfolded={unfolded}
+                  setUnfolded={setUnfolded}
+                  reduced={reduced}
+                />
                 {data.mapa3dUrl && (
                   <a className="zap-3d-odkaz" href={data.mapa3dUrl}>Ukázat na 3D mapě pohoří ▸</a>
                 )}
@@ -638,21 +647,48 @@ function VizitkaObjekt({ v, tilt }: { v: NonNullable<ZapData['vizitka']>; tilt: 
 }
 
 // ── Skládaná mapa (obálka → unfold → živé dlaždice + papír) ────────────────
-function SkladanaMapa({ mapa, nazev, unfolded, setUnfolded, reduced }: { mapa: NonNullable<ZapData['mapa']>; nazev: string; unfolded: boolean; setUnfolded: (v: boolean) => void; reduced: boolean }) {
+function SkladanaMapa({
+  mapa,
+  nazev,
+  nahledUrl,
+  unfolded,
+  setUnfolded,
+  reduced,
+}: {
+  mapa: NonNullable<ZapData['mapa']>
+  nazev: string
+  nahledUrl: string | null
+  unfolded: boolean
+  setUnfolded: (v: boolean) => void
+  reduced: boolean
+}) {
   /**
-   * Dlaždice se natáhnou, teprve až mapa vjede do záběru. Skládaná obálka to
-   * dřív dělala klikem — teď to dělá scroll, takže mapa vypadá hotově a přitom
-   * se dotaz na Mapy.com pošle jen za čtenáře, který k ní opravdu dojde.
+   * DVĚ ÚROVNĚ MAPY (nápad Michala 1. 8. 2026: „natáhli bysme mapu do cache
+   * a načetla by se až po kliknutí — mapa by tam vždy byla, ale šetřili bysme
+   * načítání plné mapy").
+   *
+   * 1. **Náhled** je statický obrázek z jednoho dotazu, který si server drží
+   *    v keši. Je vidět hned, se značkou chaty i s přístupovými trasami, takže
+   *    čtenář ví, kde chata je, aniž by cokoli klikal — a Mapy.com se přitom
+   *    ptáme jednou za období, ne za každého návštěvníka.
+   * 2. **Živá mapa** (dvacet dlaždic, posun, přiblížení) se natáhne, teprve až
+   *    o ni někdo stojí.
+   *
+   * Náhled i živá mapa mají tytéž dlaždice, značku i barvy tras, takže přechod
+   * vypadá, jako by se mapa probrala — ne jako by se vyměnila.
+   *
+   * Bez náhledu (chybí klíč, API odmítlo) se nic neláme: mapa se pak natáhne
+   * živá, jakmile vjede do záběru. Prázdno tu být nesmí.
    */
+  const [zive, setZive] = useState(false)
+  const maNahled = !!nahledUrl
   const [vzahledu, setVzahledu] = useState(false)
   const ramRef = useRef<HTMLDivElement | null>(null)
+
   useEffect(() => {
     const prvek = ramRef.current
-    if (!prvek || vzahledu) return
+    if (!prvek || vzahledu || maNahled) return
     if (typeof IntersectionObserver === 'undefined') {
-      // Prohlížeč bez pozorovatele (starší, testovací prostředí) mapu prostě
-      // ukáže; odložení do mikroúlohy drží pravidlo „žádný setState přímo
-      // v efektu", které jinak spouští kaskádu překreslení.
       const id = setTimeout(() => setVzahledu(true), 0)
       return () => clearTimeout(id)
     }
@@ -667,7 +703,9 @@ function SkladanaMapa({ mapa, nazev, unfolded, setUnfolded, reduced }: { mapa: N
     )
     pozorovatel.observe(prvek)
     return () => pozorovatel.disconnect()
-  }, [vzahledu])
+  }, [vzahledu, maNahled])
+
+  const ukazZivou = zive || (!maNahled && vzahledu)
 
   return (
     <div className="zap-map" ref={ramRef}>
@@ -675,8 +713,48 @@ function SkladanaMapa({ mapa, nazev, unfolded, setUnfolded, reduced }: { mapa: N
         {unfolded ? (
           <>
             <div className="zap-map-live">
-              {vzahledu ? (
+              {ukazZivou ? (
                 <MapaTrasy hut={{ nazev, lat: mapa.lat, lng: mapa.lng }} trasy={mapa.trasy} />
+              ) : maNahled ? (
+                <div className="zap-map-nahledbox">
+                  <button
+                    type="button"
+                    className="zap-map-nahled"
+                    onClick={() => setZive(true)}
+                    aria-label="Načíst interaktivní mapu"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element -- statický náhled z vlastní route, ne z /public */}
+                    <img
+                      src={nahledUrl!}
+                      alt={`Mapa okolí — ${nazev}, se značkou chaty a přístupovými trasami`}
+                      loading="lazy"
+                      decoding="async"
+                      // Rozbitý náhled nesmí nechat na stránce díru — a čekat
+                      // na doscrollování nemá smysl, čtenář se dívá právě sem.
+                      onError={() => setZive(true)}
+                    />
+                    <span className="btn">Rozhýbat mapu ▸</span>
+                  </button>
+                  {/*
+                    Logo a atribuce Mapy.com vyžadují u svých podkladů — u statického
+                    náhledu stejně jako u živé mapy, kde je přidává Leaflet sám.
+                    Stojí VEDLE tlačítka, ne v něm: odkaz uvnitř tlačítka je
+                    neplatné HTML a čtečka by z toho udělala jeden zmatený prvek.
+                  */}
+                  <a
+                    className="zap-map-logo"
+                    href="https://mapy.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Mapy.com"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element -- povinné logo poskytovatele z jejich domény */}
+                    <img src={LOGO_SVG} alt="Mapy.com" width={60} height={18} />
+                  </a>
+                  <a className="zap-map-atribuce" href={MAPY_COPYRIGHT} target="_blank" rel="noreferrer">
+                    {MAPY_ATRIBUCE}
+                  </a>
+                </div>
               ) : (
                 <div className="zap-map-ceka" aria-hidden />
               )}
@@ -701,6 +779,14 @@ function SkladanaMapa({ mapa, nazev, unfolded, setUnfolded, reduced }: { mapa: N
         )}
       </div>
     </div>
+  )
+}
+
+function MapaTrasyOdkaz() {
+  return (
+    <p className="zap-srcnote" style={{ marginTop: 4 }}>
+      <span className="t">†</span> trasy počítané ze značení KČT v OpenStreetMap; převýšení z výškového modelu Mapy.com, čas je odhad (DIN 33466) — orientační.
+    </p>
   )
 }
 
@@ -811,14 +897,6 @@ function Album({ fotky, nazev, reduced }: { fotky: ZapData['galerie']; nazev: st
         </div>
       )}
     </>
-  )
-}
-
-function MapaTrasyOdkaz() {
-  return (
-    <p className="zap-srcnote" style={{ marginTop: 4 }}>
-      <span className="t">†</span> trasy počítané ze značení KČT v OpenStreetMap; převýšení z výškového modelu Mapy.com, čas je odhad (DIN 33466) — orientační.
-    </p>
   )
 }
 

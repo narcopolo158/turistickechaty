@@ -402,6 +402,12 @@ function sestavData(chata: Chata): ZapData {
     eyebrow: eyebrow || 'Turistická chata',
     crumb: crumb || chata.nazev,
     vyskaText: chata.vyska != null ? `${formatCislo(chata.vyska)} m n. m.` : null,
+    /**
+     * Statický náhled mapy z vlastní cachované route — mapa je na profilu
+     * vidět hned a živé dlaždice se natáhnou až po kliknutí (nápad Michala
+     * 1. 8. 2026). Bez souřadnic náhled nemá co ukázat.
+     */
+    mapaNahledUrl: mapa ? `/api/mapa-nahled/${chata.slug}` : null,
     mapa3dUrl:
       chata.lat != null && chata.lng != null && oblast?.slug === 'krkonose'
         ? `/cesko/krkonose?chata=${encodeURIComponent(chata.nazev)}`

@@ -11,6 +11,78 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-01 (ráno) — mapa je na profilu vidět vždycky; keš ale licence nedovoluje
+
+**Zadání Michala:** *„k té mapě a šetření API mě napadlo, že bysme natáhli mapu
+(výřez na profilu) do cache a načetla by se až po kliknutí (jako to rozbalení) —
+tím pádem by tam mapa vždy byla, ale šetřili bysme načítání plné mapy."*
+
+**Hotovo je to a funguje to** — mapa je na profilu vidět hned, plné dlaždice se
+natáhnou až po kliknutí na „Rozhýbat mapu ▸". Náhled je statický obrázek
+z jednoho dotazu (Mapy.com **Static Maps API**, `mapset=outdoor`) se značkou
+chaty a přístupovými trasami v týchž barvách jako živá mapa, takže přechod
+vypadá, jako by se mapa probrala, ne jako by se vyměnila. Chodí přes vlastní
+route `/api/mapa-nahled/[slug]`, aby klíč nikdy neopustil server; když klíč
+chybí nebo API odmítne, vrátí se 404 a mapa se prostě natáhne živá — díra na
+stránce nevznikne.
+
+**Ale tu keš tam dát nemůžeme, a je to důležité.** Dokumentace statických map
+říká doslova: *„Images are intended for online display only. Long-term storage
+or caching is not permitted – see terms of service."* Držet si obrázek týden na
+serveru je přesně to, co ta věta zakazuje — a je to Michalův klíč a jeho účet.
+Úspora se proto bere jinudy a je pořád velká:
+
+| | dotazů na Mapy.com při zobrazení profilu |
+|---|---|
+| dřív (živá mapa hned) | ~20 dlaždic |
+| teď (náhled + živá až na klik) | **1** |
+| s keší (kdyby šla) | ~1 na chatu za období |
+
+Cíl zadání — *„šetřili bysme načítání plné mapy"* — je tedy splněný, jen bez
+kroku, který smlouva zapovídá. Zbytek cesty je jedna konstanta v route
+(`revalidate`) a jedna v hlavičce; kdyby to tarif dovoloval, je to změna dvou
+čísel. Otázka pro Michala níž.
+
+**Chyběla povinná atribuce.** Mapy.com u svých podkladů vyžadují odkaz na
+copyright a své logo nad mapou. Živé mapě je kreslí Leaflet — statický náhled
+by se bez povšimnutí vydal bez nich, což není kosmetika, ale porušení licence.
+Doplněno vlevo dole (logo + „© Seznam.cz a.s. a další"), hodnoty jsou vyvezené
+z `MapaTrasy.tsx`, aby se na dvou místech nerozešly, a hlídá to test.
+
+**Tlačítko „Rozhýbat mapu" je vpravo nahoře** — vpravo dole sedí „Složit",
+vlevo dole povinné logo s atribucí a doprostřed to nejde, tam je značka chaty,
+tedy to jediné, kvůli čemu se čtenář na mapu dívá. Roh zbýval jediný. (První
+verze měla tlačítko vpravo dole a překrývalo se se „Složit" — vidět to bylo až
+na snímku obrazovky, ne v testech.)
+
+**Ověření, které ze sandboxu nejde.** Adresu statické mapy jsem sestavil podle
+dokumentace, ale nikdy neproběhla naostro: sandbox na `api.mapy.com` nedosáhne
+(*„Host not in allowlist"* — což je zeď sandboxu, ne odmítnutí od Mapy.com).
+Zvlášť u varianty s trasami (`shapes` + `padding` bez `zoom`) je to riziko —
+dokumentace ji popisuje, ale na příkladu neukazuje. Proto přibyl skript
+`scripts/smoke-mapa-nahled.ts`, který adresu staví **skutečným kódem** z
+`src/lib/mapa-nahled.ts` a zeptá se doopravdy; pouští se z Actions jako job
+`nahled` ve workflow **„Smoke: Mapy.com API"** (klíč se do logu nedostane,
+tiskne se s hvězdičkami). Než tenhle běh projde, považuju náhled za neověřený.
+
+**Vedle toho:** lokální databáze v sandboxu chyběla (spadla s kontejnerem), tak
+je znovu založená a naseedovaná — díky tomu běží celá sada, ne jen její část:
+**701/701 testů, `npm run kontrola` celá zelená**, lint i typecheck čisté.
+
+**Příště:** spustit z Actions „Smoke: Mapy.com API" (job `nahled`) a podle
+výsledku buď náhled potvrdit, nebo doladit parametry; pak zpět k frontě —
+65 kandidátů čeká na druhý pramen a 35 profilů na výběr fotky.
+
+**Otázky pro Michala:**
+1. **Keš náhledů — dovoluje ji tvůj tarif?** Dokumentace ji zakazuje plošně, ale
+   podmínky se u placených tarifů liší a ty na ně vidíš (developer.mapy.com →
+   účet). Kdyby ano, je to změna dvou čísel a spadneme z ~1 dotazu na čtenáře na
+   ~1 na chatu za období. Pro pořádek: Extended tarif má podle dokumentace až
+   10 milionů kreditů měsíčně zdarma pro veřejné projekty, takže i bez keše to
+   nejspíš není problém — ale je to tvoje rozhodnutí, ne moje.
+2. **Pustíš „Smoke: Mapy.com API"?** Je to `workflow_dispatch`, tlačítko Run
+   workflow. Bez něj nevím, jestli Mapy.com adresu s trasami přijmou.
+
 ## 2026-08-01 (noc) — album na profilu chaty a mapa, která už nečeká na kliknutí
 
 **Zadání Michala:** *„vymysli nejlepší umístění dalších fotek na profilu chaty

@@ -36,3 +36,20 @@ jobs:
           echo "HTTP ${code}"
           test "${code}" = "200"
           file dlazdice.png | tee /dev/stderr | grep -qiE 'image|png|jpeg'
+
+  # Statický náhled (profil chaty) — adresu staví `src/lib/mapa-nahled.ts`,
+  # takže se ověřuje SKUTEČNÝ kód, ne ručně opsaná URL. Unit testy hlídají tvar
+  # adresy; jestli ji Mapy.com přijmou, se pozná jen odsud.
+  nahled:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: statický náhled mapy vrací obrázek (bez tras i s trasami)
+        env:
+          MAPY_API_KEY: ${{ secrets.MAPY_API_KEY }}
+        run: npx tsx scripts/smoke-mapa-nahled.ts
