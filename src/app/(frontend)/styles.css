@@ -10,6 +10,12 @@
    jeden odstavec 28 px, sousední 11 px. Nastavení říká „velikosti si řídíme
    sami"; zoom prstem to neblokuje. */
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+/* Kotvy uvnitř stránky (rozcestník v heru → sekce Pohoří) mají doplout, ne
+   škubnout. Kdo má v systému vypnuté animace, dostane skok — respektuje se
+   prefers-reduced-motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 
 body {
   font-family: var(--font-body);

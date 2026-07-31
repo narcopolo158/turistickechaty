@@ -388,6 +388,8 @@
    (Jizerské hory, 31. 7. 2026) se pátá karta lámala na nový řádek do širokého
    sloupce a vypadala jako omyl. `auto-fit` drží karty stejně široké, ať jich
    je čtyři, pět nebo osm — a živá karta se pozná fotkou a odznakem, ne šířkou. */
+/* Kotva rozcestníku: nadpis sekce se nesmí schovat pod lepenou hlavičku. */
+#pohori { scroll-margin-top: 96px; }
 .hf1-pohori-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 11px; }
 .hf1-pohori-ziva {
   position: relative;
@@ -490,11 +492,15 @@
   .hf1-hero { grid-template-columns: 1fr; }
   .hf1-kolaz { min-height: 430px; margin-top: 26px; }
   .hf1-claim { font-size: 44px; }
-  .hf1-pohori-grid { grid-template-columns: 1fr 1fr; }
+  /* Kotva rozcestníku: nadpis sekce se nesmí schovat pod lepenou hlavičku. */
+#pohori { scroll-margin-top: 96px; }
+.hf1-pohori-grid { grid-template-columns: 1fr 1fr; }
   .hf1-namatkou { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) {
-  .hf1-pohori-grid { grid-template-columns: 1fr; }
+  /* Kotva rozcestníku: nadpis sekce se nesmí schovat pod lepenou hlavičku. */
+#pohori { scroll-margin-top: 96px; }
+.hf1-pohori-grid { grid-template-columns: 1fr; }
   .hf1-namatkou { grid-template-columns: 1fr; }
   .hf1-poster-scena { height: 300px; }
 }

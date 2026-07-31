@@ -143,15 +143,24 @@ export default async function HomePage() {
 
             <div className="hf1-cedule">
               <TiltDiv zaklad="rotate(-1deg)" className="hf1-cedule-prkno velke">
-                <Link href="/cesko/krkonose" className="hf1-cedule-obsah">
+                {/* Rozcestník míří na sekci Pohoří, ne na jedno pohoří.
+                    Do 31. 7. 2026 tu stálo „PROZKOUMAT KRKONOŠE" — s druhou
+                    živou oblastí by to čtenáři tvrdilo, že průvodce je pořád
+                    jen krkonošský, a přidat prkno za každou oblast se nedá
+                    donekonečna (rozhodnutí Michala: „asi bych dal neutrální
+                    rozcestník"). Cíl je pravdivý: dole stojí karty všech
+                    oblastí s fotkou, počty a odkazem. */}
+                <Link href="#pohori" className="hf1-cedule-obsah">
                   <span className="hf1-cedule-kresba" aria-hidden="true">
                     <svg width="100%" height="100%">
                       <rect width="100%" height="100%" filter="url(#hf1-wood)" />
                     </svg>
                   </span>
                   <span className="hf1-sroubek" aria-hidden="true" />
-                  <span className="hf1-cedule-titul">PROZKOUMAT KRKONOŠE</span>
-                  <span className="hf1-cedule-pozn">stránka pohoří · 3D mapa</span>
+                  <span className="hf1-cedule-titul">PROZKOUMAT POHOŘÍ</span>
+                  {/* „pohoří" se neskloňuje ani nemění v množném čísle, takže
+                      tahle věta žádné skloňování nepotřebuje — na rozdíl od chat. */}
+                  <span className="hf1-cedule-pozn">{zive.length} pohoří · stránky s 3D mapou</span>
                 </Link>
               </TiltDiv>
               <TiltDiv zaklad="rotate(.8deg)" className="hf1-cedule-prkno">
@@ -219,7 +228,7 @@ export default async function HomePage() {
           <MapaChat chaty={chatyProMapu} />
         </div>
 
-        <section className="wrap sec" aria-label="Pohoří">
+        <section id="pohori" className="wrap sec" aria-label="Pohoří">
           <div className="hf1-sekce-hlava">
             <span className="hf1-sekce-num">01</span>
             <span className="hf1-sekce-titul">Pohoří</span>

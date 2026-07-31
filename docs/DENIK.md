@@ -11,6 +11,41 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (podvečer) — dřevěná cedule je nově rozcestník, ne odkaz na Krkonoše
+
+**Hotovo:** Michal se přiklonil k neutrálnímu rozcestníku („asi bych dal
+neutrální rozcestník — co bys zde navrhoval?"). Velké prkno v heru vedlo od
+začátku na Krkonoše; s druhou živou oblastí to čtenáři tvrdilo, že průvodce je
+pořád jen krkonošský.
+
+**Zvážené možnosti:**
+1. **Nechat pilot napevno** — nejmenší práce, ale Jizerky by z hlavní CTA
+   vypadly úplně a s třetí oblastí by to bylo čím dál nepravdivější.
+2. **Prkno za každou oblast** — sedí to metafoře rozcestníku, jenže neškáluje:
+   při pěti oblastech je z heru rozcestník o pěti ramenech a katalog se ztratí.
+   Layout navíc počítá se dvěma prkny.
+3. **Neutrální rozcestník** (zvoleno) — velké prkno **„PROZKOUMAT POHOŘÍ"**
+   s popiskou počítanou z dat („2 pohoří · stránky s 3D mapou") míří na sekci
+   Pohoří níž na stránce, kde stojí karty všech oblastí s fotkou, počty
+   a odkazem. Žádná oblast není privilegovaná a s přibývajícími pohořími se
+   nemusí nic přepisovat.
+
+**Detaily, které k tomu patřily:** sekce Pohoří dostala kotvu `#pohori`
+a `scroll-margin`, aby nadpis neskončil pod lepenou hlavičkou (po kliknutí
+sedí na y = 96 px), a plynulé rolování respektuje `prefers-reduced-motion` —
+kdo má animace vypnuté, dostane skok.
+
+**Proč ne rovnou samostatná stránka `/pohori`:** dávala by smysl pro
+vyhledávače a při větším počtu oblastí, ale dnes by jen zdvojila sekci, která
+na homepage už je — a rozcestník o dvou položkách nepotřebuje vlastní URL.
+Až oblastí přibude (nebo se ukáže, že lidé hledají „turistické chaty
+<pohoří>"), je to malý krok: karty se přesunou do vlastní stránky a cedule
+změní cíl z kotvy na `/pohori`.
+
+**Testy:** 601 — hero test drží, že cedule míří na `#pohori`, že ta kotva
+v dokumentu **existuje** (odkaz do prázdna by čtenáře nechal stát na místě),
+že popiska počítá živé oblasti z dat a že karty vedou na jednotlivá pohoří.
+
 ## 2026-07-31 (odpoledne, podruhé) — filtr podle pohoří v katalogu
 
 **Hotovo:** zadání Michala „na přehledu všech chat budeme potřebovat filtr

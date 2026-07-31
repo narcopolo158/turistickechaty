@@ -116,7 +116,7 @@ describe('Homepage F1c — datové pásy', () => {
   it('hero dle handoffu: claim, dřevěné cedule, koláž s ghost artefakty (mock bez fotky/otisku) a známka č. 11', async () => {
     render(await HomePage())
     expect(screen.getByRole('heading', { level: 1 }).textContent).toContain('Chaty, kterým')
-    expect(screen.getByText('PROZKOUMAT KRKONOŠE')).toBeTruthy()
+    expect(screen.getByText('PROZKOUMAT POHOŘÍ')).toBeTruthy()
     expect(screen.getByText('KATALOG CHAT')).toBeTruthy()
     // mock index nemá heroUrl ani otiskUrl Luční → polaroid i otisk poctivě ghost
     expect(screen.getByText(/foto hřebene — doplníme/)).toBeTruthy()
@@ -155,15 +155,29 @@ describe('Homepage F1c — datové pásy', () => {
     expect(screen.getByText(/náhodný výběr z 4 doložených profilů/)).toBeTruthy()
   })
 
-  it('místo malovaného posteru je skutečná mapa chat; cedule i karta pohoří vedou na /cesko/krkonose', async () => {
+  /**
+   * Rozcestník v heru je NEUTRÁLNÍ (rozhodnutí Michala 31. 7. 2026). Do té doby
+   * vedlo velké prkno na Krkonoše — s druhou živou oblastí by to čtenáři
+   * tvrdilo, že průvodce je pořád jen krkonošský, a prkno za každou oblast se
+   * přidávat nedá donekonečna. Test drží obojí: cedule míří na sekci Pohoří
+   * a karty odtud vedou na jednotlivá pohoří.
+   */
+  it('místo malovaného posteru je skutečná mapa chat; cedule vede na rozcestník, karty na pohoří', async () => {
     const { container } = render(await HomePage())
     // rozhodnutí Michala 28. 7.: 3D patří na stránku pohoří, homepage nese turistickou mapu
     expect(screen.queryByText('Malovaná 3D mapa Krkonoš')).toBeNull()
     expect(container.querySelector('#mapa [data-testid="mapa-mock"]')).toBeTruthy()
-    const cedule = screen.getByText('PROZKOUMAT KRKONOŠE').closest('a')!
-    expect(cedule.getAttribute('href')).toBe('/cesko/krkonose')
-    const kartaPohori = container.querySelector('.hf1-pohori-ziva a')!
-    expect(kartaPohori.getAttribute('href')).toBe('/cesko/krkonose')
+    const cedule = screen.getByText('PROZKOUMAT POHOŘÍ').closest('a')!
+    expect(cedule.getAttribute('href')).toBe('#pohori')
+    // Kotva musí existovat — odkaz do prázdna by čtenáře nechal stát na místě.
+    expect(container.querySelector('#pohori')).toBeTruthy()
+    // Popiska počítá živé oblasti z dat (mock jich má dvě).
+    expect(screen.getByText(/2 pohoří · stránky s 3D mapou/)).toBeTruthy()
+    const karty = container.querySelectorAll('.hf1-pohori-ziva a')
+    expect([...karty].map((a) => a.getAttribute('href'))).toEqual([
+      '/cesko/krkonose',
+      '/cesko/jizerske-hory',
+    ])
   })
 
   it('komunitní apel: počty chybějících z dat, CTA na /prispet', async () => {
