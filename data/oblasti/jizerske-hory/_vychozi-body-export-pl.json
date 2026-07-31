@@ -1,0 +1,1546 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-31T05:58:30Z",
+    "timestamp_areas_base": "2026-07-30T00:32:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 29265635,
+  "lat": 51.0134987,
+  "lon": 15.4409698,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Krzewie Wielkie",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 31781965,
+  "lat": 51.0136249,
+  "lon": 15.3378963,
+  "tags": {
+    "is_in:county": "powiat lubański",
+    "is_in:municipality": "gmina Leśna",
+    "is_in:province": "województwo dolnośląskie",
+    "name": "Złotniki Lubańskie",
+    "name:de": "Goldentraum",
+    "name:pl": "Złotniki Lubańskie",
+    "place": "village",
+    "population": "214",
+    "postal_code": "59-812",
+    "source:population": "wikipedia",
+    "teryt:rm": "01",
+    "teryt:simc": "0190288",
+    "teryt:stan_na": "2009-01-01",
+    "teryt:updated_by": "teryt2osm combine.py v. 43",
+    "wikidata": "Q249070",
+    "wikipedia": "pl:Złotniki Lubańskie"
+  }
+},
+{
+  "type": "node",
+  "id": 31783716,
+  "lat": 51.0100880,
+  "lon": 15.4026304,
+  "tags": {
+    "is_in:county": "powiat lwówecki",
+    "is_in:municipality": "gmina Gryfów Śląski",
+    "is_in:province": "województwo dolnośląskie",
+    "name": "Wieża",
+    "name:de": "Wiesa",
+    "name:en": "Wieża",
+    "name:pl": "Wieża",
+    "place": "village",
+    "postal_code": "59-620",
+    "teryt:rm": "01",
+    "teryt:simc": "0189658",
+    "teryt:stan_na": "2009-01-01",
+    "teryt:updated_by": "teryt2osm combine.py v. 43",
+    "wikidata": "Q7999450",
+    "wikipedia": "pl:Wieża"
+  }
+},
+{
+  "type": "node",
+  "id": 31795650,
+  "lat": 51.0161027,
+  "lon": 15.1252261,
+  "tags": {
+    "alt_name": "Miedziane",
+    "name": "Miedziana",
+    "name:de": "Küpper",
+    "name:hsb": "Koprow",
+    "name:ru": "Медзяна",
+    "old_name": "Piastowo;Piastów",
+    "place": "village",
+    "postal_code": "59-970",
+    "url": "http://dolny-slask.org.pl/507019,Miedziana.html"
+  }
+},
+{
+  "type": "node",
+  "id": 31797289,
+  "lat": 51.0171524,
+  "lon": 15.4461870,
+  "tags": {
+    "is_in:county": "powiat lwówecki",
+    "is_in:municipality": "gmina Gryfów Śląski",
+    "is_in:province": "województwo dolnośląskie",
+    "name": "Krzewie Wielkie",
+    "name:de": "Groß Stöckigt",
+    "name:pl": "Krzewie Wielkie",
+    "place": "village",
+    "postal_code": "59-620",
+    "teryt:rm": "01",
+    "teryt:simc": "0189606",
+    "teryt:stan_na": "2009-01-01",
+    "teryt:updated_by": "teryt2osm combine.py v. 43",
+    "wikidata": "Q6440025",
+    "wikipedia": "pl:Krzewie Wielkie"
+  }
+},
+{
+  "type": "node",
+  "id": 31916940,
+  "lat": 50.9093388,
+  "lon": 15.3332153,
+  "tags": {
+    "name": "Świeradów-Zdrój",
+    "name:de": "Bad Flinsberg",
+    "name:ru": "Сверадув-Здруй",
+    "name:sr": "Свјерадов-Здрој",
+    "old_name:de": "Bad Flinsberg",
+    "place": "town",
+    "population": "4094",
+    "population:date": "2021-06-30",
+    "postal_code": "59-850",
+    "source:population": "Narodowy Spis Powszechny 2021",
+    "teryt:simc": "0936457",
+    "teryt:terc": "0210021",
+    "wikidata": "Q387561",
+    "wikipedia": "pl:Świeradów-Zdrój"
+  }
+},
+{
+  "type": "node",
+  "id": 359136461,
+  "lat": 51.0116513,
+  "lon": 15.4426739,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Krzewie Wielkie",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 421218567,
+  "lat": 50.8942963,
+  "lon": 15.3681767,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kamieniec - Nadbrzeżna (Tartak)",
+    "public_transport": "stop_position",
+    "ref": "003-01"
+  }
+},
+{
+  "type": "node",
+  "id": 557955580,
+  "lat": 50.9879728,
+  "lon": 15.4463597,
+  "tags": {
+    "is_in:county": "powiat lwówecki",
+    "is_in:municipality": "gmina Lubomierz",
+    "is_in:province": "województwo dolnośląskie",
+    "name": "Młyńsko",
+    "name:de": "Mühlseiffen",
+    "name:pl": "Młyńsko",
+    "place": "village",
+    "postal_code": "59-620",
+    "teryt:simc": "0189612"
+  }
+},
+{
+  "type": "node",
+  "id": 675977537,
+  "lat": 51.0076686,
+  "lon": 15.1937666,
+  "tags": {
+    "name": "Grabiszyce Górne",
+    "name:de": "Ober-Gerlachsheim",
+    "name:prefix": "wieś",
+    "old_name:de": "Ober-Gerlachsheim",
+    "place": "village",
+    "postal_code": "59-820",
+    "teryt:simc": "0190070",
+    "wikidata": "Q5590680",
+    "wikipedia": "pl:Grabiszyce Górne"
+  }
+},
+{
+  "type": "node",
+  "id": 675977563,
+  "lat": 51.0169217,
+  "lon": 15.2039625,
+  "tags": {
+    "name": "Grabiszyce Średnie",
+    "name:de": "Mittel-Gerlachsheim",
+    "name:pl": "Grabiszyce Średnie",
+    "place": "village",
+    "postal_code": "59-820",
+    "teryt:simc": "0190087"
+  }
+},
+{
+  "type": "node",
+  "id": 678451703,
+  "lat": 50.9183489,
+  "lon": 15.3425976,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Grunwaldzka/Wiejska",
+    "public_transport": "stop_position",
+    "ref": "047-01"
+  }
+},
+{
+  "type": "node",
+  "id": 678451732,
+  "lat": 50.9293305,
+  "lon": 15.3542599,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Orłowice-Krobica",
+    "public_transport": "stop_position",
+    "ref": "048-01"
+  }
+},
+{
+  "type": "node",
+  "id": 678467293,
+  "lat": 50.9020038,
+  "lon": 15.3473309,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Nadbrzeżna/Kościuszki",
+    "public_transport": "stop_position",
+    "ref": "005-02"
+  }
+},
+{
+  "type": "node",
+  "id": 685134505,
+  "lat": 50.9388910,
+  "lon": 15.2969477,
+  "tags": {
+    "name": "Pobiedna",
+    "name:de": "Wigandsthal",
+    "name:pl": "Pobiedna",
+    "place": "village",
+    "population": "1267",
+    "postal_code": "59-814",
+    "teryt:simc": "0190160"
+  }
+},
+{
+  "type": "node",
+  "id": 685134586,
+  "lat": 50.9876609,
+  "lon": 15.2896788,
+  "tags": {
+    "name": "Świecie",
+    "name:de": "Schwerta",
+    "name:pl": "Świecie",
+    "place": "village",
+    "postal_code": "59-820",
+    "teryt:simc": "0190242"
+  }
+},
+{
+  "type": "node",
+  "id": 692464236,
+  "lat": 50.9312032,
+  "lon": 15.3540660,
+  "tags": {
+    "name": "Orłowice",
+    "name:de": "Ullersdorf",
+    "name:pl": "Orłowice",
+    "name:prefix": "wieś",
+    "old_name:de": "Gräflich Ullersdorf",
+    "place": "village",
+    "postal_code": "59-630",
+    "teryt:simc": "0191320",
+    "wikidata": "Q2353514",
+    "wikipedia": "pl:Orłowice"
+  }
+},
+{
+  "type": "node",
+  "id": 692464427,
+  "lat": 50.9357616,
+  "lon": 15.3607689,
+  "tags": {
+    "name": "Krobica",
+    "name:de": "Krobsdorf",
+    "name:pl": "Krobica",
+    "name:prefix": "wieś",
+    "place": "village",
+    "postal_code": "59-630",
+    "teryt:simc": "0191253",
+    "teryt:typ": "wieś",
+    "wikidata": "Q3846521",
+    "wikipedia": "pl:Krobica"
+  }
+},
+{
+  "type": "node",
+  "id": 692603782,
+  "lat": 50.9787801,
+  "lon": 15.3487183,
+  "tags": {
+    "is_in:province": "województwo dolnośląskie",
+    "name": "Giebułtów",
+    "name:de": "Gebhardsdorf",
+    "name:pl": "Giebułtów",
+    "place": "village",
+    "population": "1801",
+    "postal_code": "59-630",
+    "teryt:simc": "0191158"
+  }
+},
+{
+  "type": "node",
+  "id": 692603838,
+  "lat": 51.0043300,
+  "lon": 15.3879000,
+  "tags": {
+    "is_in:province": "województwo dolnośląskie",
+    "name": "Zacisze",
+    "name:de": "Hartha",
+    "name:pl": "Zacisze",
+    "place": "village",
+    "postal_code": "59-820",
+    "teryt:simc": "0190271"
+  }
+},
+{
+  "type": "node",
+  "id": 692603845,
+  "lat": 50.9553872,
+  "lon": 15.3696206,
+  "tags": {
+    "name": "Mroczkowice",
+    "name:de": "Egelsdorf",
+    "name:pl": "Mroczkowice",
+    "name:prefix": "wieś",
+    "place": "village",
+    "postal_code": "59-630",
+    "teryt:simc": "0191313",
+    "wikidata": "Q3845836",
+    "wikipedia": "pl:Mroczkowice (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 692603908,
+  "lat": 50.9312060,
+  "lon": 15.4015186,
+  "tags": {
+    "name": "Gierczyn",
+    "name:de": "Giehren",
+    "name:prefix": "wieś",
+    "place": "village",
+    "postal_code": "59-630",
+    "teryt:simc": "0191193",
+    "wikidata": "Q3891619",
+    "wikipedia": "pl:Gierczyn (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 692849809,
+  "lat": 50.9459438,
+  "lon": 15.4238136,
+  "tags": {
+    "is_in:province": "województwo dolnośląskie",
+    "name": "Mlądz",
+    "name:de": "Mühldorf",
+    "name:pl": "Mlądz",
+    "place": "village",
+    "postal_code": "59-630",
+    "teryt:simc": "0191307"
+  }
+},
+{
+  "type": "node",
+  "id": 692849889,
+  "lat": 50.9247700,
+  "lon": 15.4377596,
+  "tags": {
+    "name": "Przecznica",
+    "name:de": "Querbach",
+    "name:prefix": "wieś",
+    "place": "village",
+    "postal_code": "59-630",
+    "teryt:simc": "0191342",
+    "wikidata": "Q2168210",
+    "wikipedia": "pl:Przecznica (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 1216495429,
+  "lat": 50.9100061,
+  "lon": 15.3196117,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "ele": "617",
+    "internet_access": "no",
+    "name": "Dolna stacja kolei gondolowej Ski & Sun",
+    "name:de": "Talstation Gondelbahn Ski & Sun",
+    "name:pl": "Dolna stacja kolei gondolowej Ski & Sun",
+    "opening_hours": "Mo-Fr 09:00-16:00; Sa-Su 09:00-17:00",
+    "operator": "Sku&Sun sp. z o.o. sp. k.",
+    "public_transport": "station",
+    "website": "https://skisun.pl/",
+    "wikidata": "Q26260637",
+    "wikipedia": "pl:Kolej gondolowa na Stóg Izerski"
+  }
+},
+{
+  "type": "node",
+  "id": 1216495607,
+  "lat": 50.8917653,
+  "lon": 15.3098842,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "name": "Górna stacja kolei gondolowej Ski & Sun",
+    "name:de": "Bergstation Gondelbahn Ski & Sun",
+    "name:pl": "Górna stacja kolei gondolowej Ski & Sun",
+    "opening_hours": "Mo-Su 09:00-17:00",
+    "public_transport": "station",
+    "website": "https://skisun.pl/",
+    "wikidata": "Q26260637",
+    "wikipedia": "pl:Kolej gondolowa na Stóg Izerski"
+  }
+},
+{
+  "type": "node",
+  "id": 1870584144,
+  "lat": 50.9527248,
+  "lon": 15.3697507,
+  "tags": {
+    "name": "Kamień",
+    "name:de": "Steine",
+    "name:pl": "Kamień",
+    "place": "village",
+    "postal_code": "59-630",
+    "teryt:simc": "0191218"
+  }
+},
+{
+  "type": "node",
+  "id": 2445808157,
+  "lat": 50.9142855,
+  "lon": 15.3462702,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sosnowa",
+    "public_transport": "stop_position",
+    "ref": "007-01"
+  }
+},
+{
+  "type": "node",
+  "id": 2460664318,
+  "lat": 50.9291760,
+  "lon": 15.3542205,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Orłowice-Krobica",
+    "public_transport": "stop_position",
+    "ref": "048-02"
+  }
+},
+{
+  "type": "node",
+  "id": 2484571597,
+  "lat": 50.9164213,
+  "lon": 15.3014574,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Spadzista - Dom Zdrojowy",
+    "public_transport": "stop_position",
+    "ref": "017-01;017-11"
+  }
+},
+{
+  "type": "node",
+  "id": 2716738003,
+  "lat": 50.9618658,
+  "lon": 15.3769520,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "Przystanek",
+    "name": "Mroczkowice I",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2716747276,
+  "lat": 50.9721836,
+  "lon": 15.3857926,
+  "tags": {
+    "name": "Mirsk",
+    "name:de": "Friedeberg",
+    "name:lv": "Mirska",
+    "name:pl": "Mirsk",
+    "name:ru": "Мирск",
+    "name:sr": "Мирск",
+    "name:uk": "Мірськ",
+    "name:zh": "米爾斯克",
+    "old_name:de": "Friedeberg im Isergebirge",
+    "old_name:pl": "Spokojna Góra",
+    "place": "town",
+    "population": "3706",
+    "population:date": "2021-06-30",
+    "postal_code": "59-630",
+    "source:population": "Narodowy Spis Powszechny 2021",
+    "teryt:simc": "0936233",
+    "teryt:terc": "0212044",
+    "wikidata": "Q991849",
+    "wikipedia": "pl:Mirsk"
+  }
+},
+{
+  "type": "node",
+  "id": 2942755147,
+  "lat": 50.9141968,
+  "lon": 15.3444472,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Wiśniowa",
+    "public_transport": "stop_position",
+    "ref": "008-01"
+  }
+},
+{
+  "type": "node",
+  "id": 3009689428,
+  "lat": 51.0044444,
+  "lon": 15.3608333,
+  "tags": {
+    "name": "Bartoszówka",
+    "name:adjective": "bartoszówecki",
+    "name:de": "Scholzendorf",
+    "name:genitive": "Bartoszówki",
+    "place": "village",
+    "postal_code": "59-820",
+    "source": "PRNG",
+    "teryt:simc": "0190041"
+  }
+},
+{
+  "type": "node",
+  "id": 3009691416,
+  "lat": 50.9919444,
+  "lon": 15.3905555,
+  "tags": {
+    "name": "Brzeziniec",
+    "name:adjective": "brzeziniecki",
+    "name:de": "Birkicht",
+    "name:genitive": "Brzezińca",
+    "place": "village",
+    "postal_code": "59-630",
+    "source": "PRNG",
+    "teryt:simc": "0191135"
+  }
+},
+{
+  "type": "node",
+  "id": 3009702772,
+  "lat": 50.9673291,
+  "lon": 15.3354570,
+  "tags": {
+    "name": "Giebułtówek",
+    "name:de": "Neugebhardsdorf",
+    "name:genitive": "Giebułtówka",
+    "place": "village",
+    "postal_code": "59-630",
+    "source": "PRNG",
+    "teryt:simc": "0191170"
+  }
+},
+{
+  "type": "node",
+  "id": 3009713189,
+  "lat": 50.9958333,
+  "lon": 15.3855555,
+  "tags": {
+    "name": "Karłowiec",
+    "name:adjective": "karłowiecki",
+    "name:de": "Karlsberg",
+    "name:genitive": "Karłowca",
+    "place": "village",
+    "postal_code": "59-630",
+    "source": "PRNG",
+    "teryt:simc": "0191224"
+  }
+},
+{
+  "type": "node",
+  "id": 3009717007,
+  "lat": 50.9243808,
+  "lon": 15.3828763,
+  "tags": {
+    "name": "Kotlina",
+    "name:adjective": "kotliński",
+    "name:de": "Regensberg",
+    "name:genitive": "Kotliny",
+    "name:prefix": "wieś",
+    "place": "village",
+    "postal_code": "59-630",
+    "source": "PRNG",
+    "teryt:simc": "0191247",
+    "wikidata": "Q6434128",
+    "wikipedia": "pl:Kotlina (województwo dolnośląskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 3009742255,
+  "lat": 50.9994444,
+  "lon": 15.4225000,
+  "tags": {
+    "name": "Proszówka",
+    "name:adjective": "proszówecki",
+    "name:de": "Gräflich Neundorf",
+    "name:genitive": "Proszówki",
+    "place": "village",
+    "postal_code": "59-620",
+    "source": "PRNG",
+    "teryt:simc": "0189629"
+  }
+},
+{
+  "type": "node",
+  "id": 3009772977,
+  "lat": 51.0130556,
+  "lon": 15.3708333,
+  "tags": {
+    "name": "Złoty Potok",
+    "name:adjective": "złotopotocki",
+    "name:de": "Goldbach",
+    "name:genitive": "Złotego Potoku",
+    "place": "village",
+    "postal_code": "59-820",
+    "source": "PRNG",
+    "teryt:simc": "0190294"
+  }
+},
+{
+  "type": "node",
+  "id": 3038180723,
+  "lat": 50.8191793,
+  "lon": 15.4369312,
+  "tags": {
+    "bus": "yes",
+    "check_date:shelter": "2025-11-10",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba I - Rest. Bombaj (13)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3038180724,
+  "lat": 50.8225028,
+  "lon": 15.4434868,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Szklarska Poręba I - Leśniczówka (15)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3038180725,
+  "lat": 50.8146575,
+  "lon": 15.4299924,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "check_date:shelter": "2025-11-10",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba I - Bieg Piastów (11)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "route_ref": "Flixbus 1300",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3235170334,
+  "lat": 51.0088549,
+  "lon": 15.2510027,
+  "tags": {
+    "name": "Miłoszów",
+    "name:de": "Hartmannsdorf",
+    "name:pl": "Miłoszów",
+    "place": "village",
+    "teryt:simc": "0190153"
+  }
+},
+{
+  "type": "node",
+  "id": 3280159367,
+  "lat": 50.9588466,
+  "lon": 15.3100022,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Wolimierz Krzyż",
+    "operator": "Bielawabus",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3280159368,
+  "lat": 50.9575027,
+  "lon": 15.3181204,
+  "tags": {
+    "amenity": "shelter",
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Nowa Skiba",
+    "operator": "Bielawabus",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "shelter_type": "public_transport"
+  }
+},
+{
+  "type": "node",
+  "id": 3280159548,
+  "lat": 50.9496348,
+  "lon": 15.3189406,
+  "tags": {
+    "amenity": "shelter",
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Stara Skiba",
+    "operator": "Bielawabus",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "shelter_type": "public_transport"
+  }
+},
+{
+  "type": "node",
+  "id": 3309511358,
+  "lat": 50.9235117,
+  "lon": 15.2862934,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ulicko- Graniczna",
+    "public_transport": "stop_position",
+    "ref": "015-02"
+  }
+},
+{
+  "type": "node",
+  "id": 3309511647,
+  "lat": 50.9272717,
+  "lon": 15.3083046,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Czerniawa-Zdrój/Sanatoryjna-Szkolna",
+    "public_transport": "stop_position",
+    "ref": "013-01;013-11"
+  }
+},
+{
+  "type": "node",
+  "id": 3309511951,
+  "lat": 50.9288987,
+  "lon": 15.3142459,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Lwówecka - Czarci Młyn",
+    "public_transport": "stop_position",
+    "ref": "112-01"
+  }
+},
+{
+  "type": "node",
+  "id": 3309511992,
+  "lat": 50.9291642,
+  "lon": 15.3259582,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Czerniawa-Zdrój/Łęczyna- Lwówecka",
+    "public_transport": "stop_position",
+    "ref": "011-01"
+  }
+},
+{
+  "type": "node",
+  "id": 3745933416,
+  "lat": 50.9086036,
+  "lon": 15.3388146,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "K. S. Wyszyńskiego - Plac zabaw",
+    "public_transport": "stop_position",
+    "ref": "002-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4154033479,
+  "lat": 50.9579652,
+  "lon": 15.3142714,
+  "tags": {
+    "is_in:province": "województwo dolnośląskie",
+    "name": "Wolimierz",
+    "name:de": "Volkersdorf",
+    "name:pl": "Wolimierz",
+    "place": "village",
+    "postal_code": "59-820",
+    "source:geometry": "geoportal.gov.pl:Orto/ISOK_CIEŃ-laser/EGB",
+    "teryt:simc": "0190265"
+  }
+},
+{
+  "type": "node",
+  "id": 4409401459,
+  "lat": 50.9103979,
+  "lon": 15.3328816,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sienkiewicza - EKO (Delikatesy Centrum)",
+    "operator": "Zakład Komunikacji Miejskiej w Świeradowie Zdroju",
+    "public_transport": "stop_position",
+    "ref": "100-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4418398028,
+  "lat": 51.0179451,
+  "lon": 15.4179449,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Szpital",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 4418398029,
+  "lat": 51.0180548,
+  "lon": 15.4160998,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "n.ż.",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4418398030,
+  "lat": 51.0180481,
+  "lon": 15.4080787,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Wieża"
+  }
+},
+{
+  "type": "node",
+  "id": 6412718184,
+  "lat": 50.9314252,
+  "lon": 15.2900816,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ulicko - Długa",
+    "public_transport": "stop_position",
+    "ref": "052-01"
+  }
+},
+{
+  "type": "node",
+  "id": 6424300094,
+  "lat": 50.9271830,
+  "lon": 15.3081872,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Czerniawa-Zdrój/Sanatoryjna-Szkolna",
+    "public_transport": "stop_position",
+    "ref": "013-02"
+  }
+},
+{
+  "type": "node",
+  "id": 6424300104,
+  "lat": 50.9237642,
+  "lon": 15.3065863,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Pracownia Piernikowa",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7875421126,
+  "lat": 50.9115044,
+  "lon": 15.3405089,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "11 Listopada - Biedronka",
+    "public_transport": "stop_position",
+    "ref": "009-01;009-02;009-11"
+  }
+},
+{
+  "type": "node",
+  "id": 8187794264,
+  "lat": 50.8078027,
+  "lon": 15.4260627,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "check_date:shelter": "2025-11-10",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba IV - Pętla końcowa",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "ref": "88",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9824179880,
+  "lat": 50.9017724,
+  "lon": 15.3488206,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Nadbrzeżna/Kościuszki",
+    "public_transport": "stop_position",
+    "ref": "005-01"
+  }
+},
+{
+  "type": "node",
+  "id": 9824179916,
+  "lat": 50.9188613,
+  "lon": 15.3432653,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Grunwaldzka/Wiejska",
+    "public_transport": "stop_position",
+    "ref": "047-02"
+  }
+},
+{
+  "type": "node",
+  "id": 9824197968,
+  "lat": 50.9468354,
+  "lon": 15.3617218,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mroczkowice - Kamień",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9824197969,
+  "lat": 50.9472647,
+  "lon": 15.3618613,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mroczkowice - Kamień",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9824197971,
+  "lat": 50.9552639,
+  "lon": 15.3690523,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mroczkowice II",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9824197972,
+  "lat": 50.9551693,
+  "lon": 15.3692454,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mroczkowice II",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9824197974,
+  "lat": 50.9620049,
+  "lon": 15.3774100,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mroczkowice I",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10258115266,
+  "lat": 50.8146295,
+  "lon": 15.4295162,
+  "tags": {
+    "name": "Polana Jakuszycka",
+    "old_name": "Szklarska Poręba Jakuszyce",
+    "operator": "Dolnośląska Służba Dróg i Kolei we Wrocławiu",
+    "railway": "halt",
+    "start_date": "2022-12-11",
+    "uic_name": "Szklarska Poreba-Jakuszyce",
+    "uic_ref": "5105622",
+    "wikidata": "Q1966570",
+    "wikipedia": "pl:Polana Jakuszycka (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 11019646424,
+  "lat": 50.8148217,
+  "lon": 15.4299275,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Szklarska Poręba I - Bieg Piastów (11)",
+    "operator": "GDDKiA o/Wrocław",
+    "public_transport": "platform",
+    "route_ref": "Flixbus 1300",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11252036715,
+  "lat": 50.9114270,
+  "lon": 15.3435063,
+  "tags": {
+    "addr:city": "Świeradów-Zdrój",
+    "addr:city:simc": "0936457",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-850",
+    "addr:street": "Dworcowa",
+    "name": "Świeradów-Zdrój",
+    "network": "DSDiK",
+    "operator": "Gmina Miejska Świeradów-Zdrój",
+    "public_transport": "station",
+    "railway": "station",
+    "start_date": "2023-12-10",
+    "train": "yes",
+    "uic_ref": "5103422",
+    "wheelchair": "limited",
+    "wikidata": "Q599560",
+    "wikipedia": "pl:Świeradów-Zdrój (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 11374585673,
+  "lat": 50.9318348,
+  "lon": 15.3521135,
+  "tags": {
+    "name": "Orłowice",
+    "old_name": "Krobica",
+    "railway": "halt",
+    "start_date": "2023-12-10",
+    "train": "yes",
+    "uic_ref": "5101545",
+    "wikidata": "Q1964998",
+    "wikipedia": "pl:Orłowice (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 11374585699,
+  "lat": 50.9475224,
+  "lon": 15.3616628,
+  "tags": {
+    "name": "Mroczkowice",
+    "railway": "halt",
+    "start_date": "2023-12-10",
+    "uic_ref": "5102327",
+    "wikidata": "Q11786360",
+    "wikipedia": "pl:Mroczkowice (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 11374585708,
+  "lat": 50.9731622,
+  "lon": 15.3803284,
+  "tags": {
+    "name": "Mirsk",
+    "public_transport": "station",
+    "railway": "halt",
+    "start_date": "2023-12-10",
+    "train": "yes",
+    "uic_ref": "5102331",
+    "wikidata": "Q2833853",
+    "wikipedia": "pl:Mirsk (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 11374585713,
+  "lat": 51.0100176,
+  "lon": 15.4245432,
+  "tags": {
+    "name": "Proszówka",
+    "railway": "halt",
+    "start_date": "2023-12-10",
+    "uic_ref": "5102912",
+    "wikidata": "Q16591645",
+    "wikipedia": "pl:Proszówka (przystanek kolejowy)"
+  }
+},
+{
+  "type": "node",
+  "id": 11676639010,
+  "lat": 50.9239561,
+  "lon": 15.2853243,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Długa",
+    "public_transport": "stop_position",
+    "ref": "019-02"
+  }
+},
+{
+  "type": "node",
+  "id": 11676639015,
+  "lat": 50.9209959,
+  "lon": 15.2683118,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Długa - Granica",
+    "public_transport": "stop_position",
+    "ref": "018-02"
+  }
+},
+{
+  "type": "node",
+  "id": 11676639022,
+  "lat": 50.9210758,
+  "lon": 15.2683895,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Długa - Granica",
+    "public_transport": "stop_position",
+    "ref": "018-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11676639028,
+  "lat": 50.9234907,
+  "lon": 15.2866305,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ulicko- Graniczna",
+    "public_transport": "stop_position",
+    "ref": "015-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11676639033,
+  "lat": 50.9197318,
+  "lon": 15.3023779,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Izerska/Sanatoryjna",
+    "public_transport": "stop_position",
+    "ref": "001-01;001-11"
+  }
+},
+{
+  "type": "node",
+  "id": 11676639055,
+  "lat": 50.9288729,
+  "lon": 15.3141420,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Lwówecka - Czarci Młyn",
+    "public_transport": "stop_position",
+    "ref": "112-02"
+  }
+},
+{
+  "type": "node",
+  "id": 11676639062,
+  "lat": 50.9292327,
+  "lon": 15.3267523,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Czerniawa-Zdrój/Łęczyna- Lwówecka",
+    "public_transport": "stop_position",
+    "ref": "011-02"
+  }
+},
+{
+  "type": "node",
+  "id": 11676650479,
+  "lat": 50.9133297,
+  "lon": 15.3409569,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Grunwaldzka - Urząd Miasta",
+    "public_transport": "stop_position",
+    "ref": "049-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11676650490,
+  "lat": 50.9059616,
+  "lon": 15.3421229,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Górska - Lewiatan",
+    "public_transport": "stop_position",
+    "ref": "012-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11676650495,
+  "lat": 50.9055195,
+  "lon": 15.3377982,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mickiewicza - Goplana",
+    "public_transport": "stop_position",
+    "ref": "111-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11676650508,
+  "lat": 50.9103430,
+  "lon": 15.3286081,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopiańska - Mini Golf",
+    "public_transport": "stop_position",
+    "ref": "016-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11676650515,
+  "lat": 50.9130133,
+  "lon": 15.3391202,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sienkiewicza - Stadion",
+    "public_transport": "stop_position",
+    "ref": "010-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11676650517,
+  "lat": 50.9113067,
+  "lon": 15.3431079,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Dworcowa/PKP - (Stacja Kultury)",
+    "public_transport": "stop_position",
+    "ref": "226-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11676650526,
+  "lat": 50.8945391,
+  "lon": 15.3673990,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kamieniec - Nadbrzeżna (Tartak)",
+    "public_transport": "stop_position",
+    "ref": "003-02"
+  }
+},
+{
+  "type": "node",
+  "id": 11676650530,
+  "lat": 50.8964164,
+  "lon": 15.3626630,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Chopina",
+    "public_transport": "stop_position",
+    "ref": "004-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11677025340,
+  "lat": 50.9304531,
+  "lon": 15.3040645,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Główna - Kościół",
+    "public_transport": "stop_position",
+    "ref": "114-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11677025341,
+  "lat": 50.9314417,
+  "lon": 15.2901339,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ulicko - Długa",
+    "public_transport": "stop_position",
+    "ref": "052-02"
+  }
+},
+{
+  "type": "node",
+  "id": 11681706511,
+  "lat": 50.9253045,
+  "lon": 15.2850563,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Długa",
+    "public_transport": "stop_position",
+    "ref": "019-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11681706518,
+  "lat": 50.9305803,
+  "lon": 15.3041319,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Główna - Kościół",
+    "public_transport": "stop_position",
+    "ref": "114-02"
+  }
+},
+{
+  "type": "node",
+  "id": 11746558670,
+  "lat": 50.9374517,
+  "lon": 15.2959441,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pobiedna - Nowomiejska",
+    "public_transport": "stop_position",
+    "ref": "051-01"
+  }
+},
+{
+  "type": "node",
+  "id": 11746558671,
+  "lat": 50.9373556,
+  "lon": 15.2957890,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Pobiedna - Nowomiejska",
+    "public_transport": "stop_position",
+    "ref": "051-02"
+  }
+},
+{
+  "type": "node",
+  "id": 11945627547,
+  "lat": 51.0135189,
+  "lon": 15.1995587,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Grabiszyce Górne I",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12022949580,
+  "lat": 51.0059299,
+  "lon": 15.1942417,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Grabiszyce Górne II OSP",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13463855508,
+  "lat": 50.9936095,
+  "lon": 15.3838382,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karłowiec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13463855509,
+  "lat": 50.9936167,
+  "lon": 15.3839396,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karłowiec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13463855510,
+  "lat": 51.0011485,
+  "lon": 15.3868933,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zacisze",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13463855511,
+  "lat": 51.0011235,
+  "lon": 15.3870544,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zacisze",
+    "public_transport": "platform"
+  }
+}
+
+  ]
+}
