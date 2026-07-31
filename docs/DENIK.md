@@ -11,6 +11,65 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-07-31 (noc) — patička říká finální stav; výsledky Actions prohlédnuty a z 2 994 fotek je kontaktní arch
+
+**Patička.** Michal: *„v patičce bych nedával roadmapu, rovnou to stav pro
+finální stav, ať to nemusíme měnit při každé aktualizaci."* Brand řádek zněl
+„Krkonoše → Česko → Slovensko → Alpy" — poslední místo na webu, kde pilotní
+pohoří stálo napevno. Nově tam stojí totéž co v nadpisu homepage: **„průvodce
+turistickými chatami od českých hor po Alpy"**. Test to hlídá z obou stran —
+znění musí sedět a nesmí se v něm objevit šipka ani jméno pohoří.
+
+**Výsledky Actions.** Na běhy se ze sandboxu podívat nedá (api.github.com
+vrací 403), ale výsledek je v repu: commit `eba6197` „Wikimedia Commons —
+kandidátní fotky chat (160 YAML)". Podstatné je, co v titulku **není** —
+sentinel `NEÚPLNÝ`. Oprava z 30. 7., která nutí běh commitovat i to, co stihl,
+tedy prošla naostro a tenhle běh byl kompletní: **160 objektů, 2 994 snímků**,
+licenční síto bez výjimky (CC BY-SA 3.0/4.0, CC BY, PD, CC0). Podle oblastí:
+Krkonoše 1 530, Jizerky 1 262, Ještědský hřbet 185, Rudawy 17; Český ráj
+a Podkrkonoší nula (tam ještě nemáme objekty s GPS).
+
+**Prohlídka toho, co přišlo — a nález, kvůli kterému se to celé přeskládalo.**
+Napoprvé jsem bral jako silný signál geotag *i* kategorii. Arch to vyvrátil
+během minuty: chata **Barborka** měla 51 „silných" nálezů, z toho 50 z polské
+kategorie **Barbórka** — hornického svátku v Bytomi. Kategorie se totiž
+přiřazuje podle shody JMÉNA, ne podle objektu; stejně dopadla **Barbora**
+v Jizerkách (28 portrétů herečky Barbory Štěpánové) a čekají i Hvězda a Peklo.
+Silný signál je proto jen `geosearch` (geotag do 300 m od chaty) — a ani ten
+neříká, CO je na snímku: jediný geotagovaný snímek u Barborky je portrét
+člověka. Po přeskládání: 544 silných nálezů u 35 profilů místo zdánlivých
+1 537. Nález je zapsaný u DATA-02 pro příští běh (kategorii brát jen jako
+vlastní kategorii objektu, jinak ji značit slabou už v exportu).
+
+**Kontaktní arch (`scripts/fotky-prehlidka.ts`).** 2 994 řádků YAML nikdo
+neprojde — a přitom je výběr fotky poslední krok, který MUSÍ udělat člověk
+(jestli je na snímku ta chata, pozná oko; licenci potvrzuje redakce, konvence
+B). Skript proto nic nevybírá, jen staví kontaktní arch: samostatnou HTML
+stránku, kde jsou miniatury, autor, licence, rozměry, datum, popis ze zdroje
+a odkaz na stránku souboru. Sandbox na `upload.wikimedia.org` nedosáhne
+(ověřeno, curl vrací 000), ale prohlížeč Michala ano — arch si obrázky natáhne
+sám, přesně jako mapa dlaždice Mapy.com. Po kliknutí na snímek se dole složí
+**YAML blok `fotky:`** v tom tvaru, jaký čte seed: `stahnoutZ`, licence
+přeložená do číselníku kolekce Fotky, atribuce z metadat — a natvrdo
+`verified: false` s prázdným `alt`, protože „na snímku je tahle budova" je
+tvrzení, které nesmí napsat stroj. Do repa se arch necommituje (leží v `out/`,
+což je v .gitignore), commituje se skript a 12 testů.
+
+**Stav fotek, jak vyšel z dat:** 89 profilů, **46 je bez fotky**. 35 z nich má
+kandidáty (544 silných nálezů), **2 nemají ani jeden silný** a **11 nemá
+kandidáta vůbec** — těm Commons nepomůže a bude potřeba jiný zdroj (vlastní
+snímky, svolení chatařů, dobové pohlednice dle FOTO-01).
+
+**Příště:** podle toho, co Michal z archu vybere — vložit bloky do profilů,
+seed, kontrola. Souběžně zbývá **triáž 45 kandidátů Jizerek**.
+
+**Otázky pro Michala:** 1) **Projdi prosím arch** (`out/fotky-prehlidka.html`,
+posílám ho v chatu — otevři v prohlížeči, klikni na snímek, zkopíruj blok).
+Stačí i pár chat na zkoušku, ať víme, jestli je arch použitelný, než ho
+pustíš přes všech 35. 2) U 11 profilů bez jediného kandidáta: chceš je nechat
+bez fotky, nebo zkusit dopsat chatařům o svolení? 3) Trvá otázka Královky
+a otázka web-checku zbylých kandidátů Jizerek (potřebuje schválení WebFetch).
+
 ## 2026-07-31 (večer) — textace homepage přepsána: nadpis nese celý plán, technické poznámky pryč, web má strukturovaná data
 
 **Hotovo:** Zadání Michala mělo dvě části a druhá přišla až během práce.

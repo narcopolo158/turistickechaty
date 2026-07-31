@@ -15,17 +15,19 @@ afterEach(cleanup)
 
 describe('SiteFooter', () => {
   /**
-   * Brand řádek byl do 30. 7. 2026 doslovně z prototypu („průvodce všemi
-   * horskými chatami"). Rozhodnutí Michala téhož dne („řekněme nahlas
-   * turistické chaty") slib pokrytí změnilo — test proto drží ROZHODNUTÍ,
-   * ne prototyp; rozsah hlídá `rozsah-turisticke-chaty`.
+   * Brand řádek prošel dvěma rozhodnutími. 30. 7. 2026 („řekněme nahlas
+   * turistické chaty") změnilo slib pokrytí; 31. 7. 2026 z něj zmizela
+   * roadmapa: „v patičce bych nedával roadmapu, rovnou to stav pro finální
+   * stav, ať to nemusíme měnit při každé aktualizaci." Test drží ROZHODNUTÍ,
+   * ne prototyp — a hlídá i to, že se v patičce neobjeví aktuální stav
+   * (jméno pohoří, šipky), který by za měsíc lhal.
    */
-  it('drží brand řádek — slib pokrytí dle rozhodnutí z 30. 7. 2026', () => {
+  it('drží brand řádek — finální stav, ne roadmapa ani dnešní pokrytí', () => {
     render(<SiteFooter />)
     expect(screen.getByText('Turistické chaty')).toBeTruthy()
-    expect(
-      screen.getByText('průvodce turistickými chatami · Krkonoše → Česko → Slovensko → Alpy'),
-    ).toBeTruthy()
+    const brand = screen.getByText('průvodce turistickými chatami od českých hor po Alpy')
+    expect(brand).toBeTruthy()
+    expect(brand.textContent).not.toMatch(/→|Krkonoš|Jizersk/)
     expect(screen.getByText('MAPY.COM · KČT · SIL OFL FONTY')).toBeTruthy()
   })
 

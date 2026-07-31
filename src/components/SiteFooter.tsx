@@ -15,7 +15,14 @@ export default function SiteFooter() {
         <span className="sg" style={{ fontWeight: 700 }}>
           Turistické chaty
         </span>
-        <span>průvodce turistickými chatami · Krkonoše → Česko → Slovensko → Alpy</span>
+        {/* Brand řádek říká, ČÍM průvodce je — ne kam se zrovna dostal
+            (rozhodnutí Michala 31. 7. 2026: „v patičce bych nedával roadmapu,
+            rovnou to stav pro finální stav, ať to nemusíme měnit při každé
+            aktualizaci"). Do té doby tu stála šipková roadmapa začínající
+            Krkonošemi — poslední místo na webu, kde pilotní pohoří stálo
+            napevno, a s každou další oblastí by zastarávala. Nové znění je
+            totéž jako nadpis homepage, takže se obojí drží pohromadě. */}
+        <span>průvodce turistickými chatami od českých hor po Alpy</span>
         <span className="mn" style={{ marginLeft: 'auto', fontSize: 9 }}>
           MAPY.COM · KČT · SIL OFL FONTY
         </span>
