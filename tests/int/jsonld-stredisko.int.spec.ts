@@ -7,7 +7,8 @@
  *   2. `containedInPlace` je pohoří (vazba, kterou data mají), kdežto chaty
  *      dostupné odtud se nepíšou vůbec — přístupová trasa dokládá
  *      dosažitelnost po svých, ne příslušnost k destinaci;
- *   3. drobečková navigace jde po URL webu (vše pod `/cesko`), zatímco
+ *   3. drobečková navigace i adresa nesou zemi OBJEKTU (od 1. 8. 2026,
+ *      stejně jako profil chaty), zatímco
  *      `addressCountry` nese skutečnou zemi objektu — polská východiště `PL`;
  *   4. nad SKUTEČNÝMI YAML všech středisek musí výstup zůstat serializovatelný
  *      a bez `undefined`, protože jde do stránky přes `JSON.stringify`.
@@ -75,9 +76,11 @@ describe('JSON-LD střediska — tvar', () => {
     expect(misto).not.toHaveProperty('touristAttraction')
   })
 
-  it('drobečková navigace má tři stupně v pořadí web → pohoří → středisko', () => {
+  it('drobečková navigace má tři stupně v pořadí země → pohoří → středisko', () => {
     expect(breadcrumb.itemListElement).toEqual([
-      { '@type': 'ListItem', position: 1, name: 'Česko', item: 'https://turistickechaty.cz/' },
+      // První článek míří na /{zeme} — stejný tvar jako profil chaty; routa
+      // /[zeme] tu adresu trvale přesměruje na úvod.
+      { '@type': 'ListItem', position: 1, name: 'Česko', item: 'https://turistickechaty.cz/cesko' },
       {
         '@type': 'ListItem',
         position: 2,
@@ -115,15 +118,27 @@ describe('JSON-LD střediska — co v datech není, se nepíše', () => {
     expect((misto.geo as Record<string, unknown>).elevation).toBe(769)
   })
 
-  it('polské východisko nese addressCountry PL, ale drobečky vedou přes /cesko', () => {
+  /**
+   * Od 1. 8. 2026 nese zemi objektu i adresa a drobečky (stejné pravidlo jako
+   * u chat) — stránka Karpacze proto předává kontext s `polsko`. Do té doby
+   * šly drobečky přes /cesko a tenhle test to zamykal; po nálezu 404 odkazů
+   * na polské chaty se konvence srovnala.
+   */
+  it('polské východisko: addressCountry PL a kanonická adresa i drobečky pod /polsko', () => {
     const [misto, breadcrumb] = jsonLdStrediska(
       { nazev: 'Karpacz', slug: 'karpacz', zeme: 'pl' },
-      KONTEXT,
+      { ...KONTEXT, zemeSlug: 'polsko', zemeNazev: 'Polsko' },
     )
     expect(misto.address).toEqual({ '@type': 'PostalAddress', addressCountry: 'PL' })
-    const prvni = (breadcrumb.itemListElement as { name: string }[])[0]
-    expect(prvni.name).toBe('Česko')
-    expect(misto.url).toContain('/cesko/krkonose/stredisko/karpacz')
+    const clanky = breadcrumb.itemListElement as { name: string; item: string }[]
+    expect(clanky[0]).toEqual({
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Polsko',
+      item: 'https://turistickechaty.cz/polsko',
+    })
+    expect(misto.url).toBe('https://turistickechaty.cz/polsko/krkonose/stredisko/karpacz')
+    expect(String(misto.url)).not.toContain('/cesko/')
   })
 })
 

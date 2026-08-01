@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-import { getChatyProMapu, getStrediskaOblasti, getZiveOblasti } from '@/lib/chaty'
+import { getChatyProMapu, getStrediskaOblasti, getZiveOblasti, strediskoPath } from '@/lib/chaty'
 
 /**
  * Mapa webu (/sitemap.xml). Statické stránky + všechny publikované chaty
@@ -41,16 +41,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     }))
     for (const o of zive) {
-      // Středisko bez slugu nemá mini-stránku — do mapy webu tedy nepatří.
-      const s = (await getStrediskaOblasti(o.slug)).filter((x) => x.slug)
-      strediska.push(
-        ...s.map((x) => ({
-          url: `${BASE}/cesko/${o.slug}/stredisko/${x.slug}`,
+      // Cesta nese zemi OBJEKTU (rozhodnutí 1. 8. 2026): Karpacz je v mapě
+      // webu pod /polsko/…. Středisko bez slugu nebo doložené země kanonickou
+      // cestu nemá — do mapy webu tedy nepatří.
+      for (const x of await getStrediskaOblasti(o.slug)) {
+        const cesta = strediskoPath(x, o.slug!)
+        if (!cesta) continue
+        strediska.push({
+          url: `${BASE}${cesta}`,
           lastModified: dnes,
           changeFrequency: 'monthly' as const,
           priority: 0.6,
-        })),
-      )
+        })
+      }
     }
   } catch {
     // DB nedostupná — stránky pohoří ani středisek se do mapy nedostanou,

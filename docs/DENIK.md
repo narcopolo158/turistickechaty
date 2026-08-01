@@ -11,6 +11,54 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (noc) — Karpacz bydlí pod /polsko; a náhled mapy je ověřený naostro
+
+**Zadání Michala:** *„smoke test mapy prošel. pokračuj samostatně systematicky
+dál na všem, kde víš, co máš dělat sám."*
+
+**Náhled mapy je ověřený.** Michal pustil „Smoke: Mapy.com API" s novým jobem
+`nahled` a prošel — adresa statické mapy, kterou staví `src/lib/mapa-nahled.ts`,
+tedy Mapy.com přijímají v obou podobách (bez tras i s `shapes` + `padding` bez
+`zoom`, což byla ta nikde nepředvedená kombinace). Tím padá výhrada z 1. 8.
+(„než ten běh projde, považuju náhled za neověřený") a dvouúrovňová mapa na
+profilu je hotová věc.
+
+**Kanonické adresy středisek srovnány s chatami** — bod 2 z včerejších
+rozhodnutí, ohlášený jako „příště", takže přesně ta práce, kde vím, co dělat:
+
+- **Pravidlo je jedno pro celý web: země v adrese je země OBJEKTU.** Karpacz,
+  Przesieka a Szklarska Poręba bydlí pod
+  `/polsko/krkonose/stredisko/<slug>`, přesně jako polská schroniska bydlí pod
+  `/polsko/krkonose/<slug>`. Pohoří zůstává na `/cesko/krkonose` — přeshraniční
+  celek, jedna stránka. Cestu skládá jediný helper `strediskoPath` (zrcadlo
+  `chataPath`, i s pravidlem „bez doložené země není cesta") a používá ho
+  stránka střediska, karta na pohoří, „další list", sousední východiště
+  i mapa webu — ruční skládání adresy nikde nezůstalo.
+- **Staré adresy neumírají.** `/cesko/krkonose/stredisko/karpacz` vrací trvalé
+  přesměrování (308) na `/polsko/…` — vyhledávače i cizí weby, které starou
+  adresu znají, doputují na novou. Ověřeno naostro, oběma směry (Pec pod
+  `/polsko/…` se zase vrací pod `/cesko/…`).
+- **Vedlejší nález: drobečky VŠECH profilů posílaly stroje na 404.** JSON-LD
+  drobečková navigace má prvním článkem zemi s adresou `/cesko` či `/polsko` —
+  jenže routa `/[zeme]` bez oblasti neexistovala, takže každý z 89 profilů
+  chat (a nově i střediska) ukazoval strojům neexistující adresu. Přibyla
+  routa `/[zeme]`, která trvale přesměruje na úvod; až někdy vznikne skutečný
+  rozcestník země, dostane tuhle adresu a přesměrování zmizí.
+- **Viditelné drobečky střediska teď nesou zemi objektu jako text** („Polsko /
+  Krkonoše / Karpacz") — stejně, jako ji nese hlavička profilu chaty. Odkaz
+  domů to nebyl nikdy potřeba: vede tam logo v hlavičce.
+
+Ověřeno na běžícím webu: mapa webu nese 19 středisek pod `/cesko` + 3 pod
+`/polsko` a žádnou starou adresu; karta Karpacze na stránce pohoří, sousedi
+z Pece (Przesieka přes hranici!) i „další list" odkazují kanonicky; JSON-LD,
+viditelná navigace i `<link rel=canonical>` se shodují. **720/720 testů**
+(redirect test + zpřísněná mapa webu + přepsané drobečky), kontrola, lint
+i typecheck zelené.
+
+**Příště:** zbytek dokladových otázek DATA-04 (Nad Łomniczką: provoz vs.
+rekonstrukce; doména Kochanówky), pak fronta — 65 kandidátů čeká na druhý
+pramen, 35 profilů na výběr fotky.
+
 ## 2026-08-01 (dopoledne) — adresa chaty nese její zemi; polské odkazy vedly na 404
 
 **Zadání Michala:** *„rozhodni všechny otázky sám podle nejlepšího uvážení

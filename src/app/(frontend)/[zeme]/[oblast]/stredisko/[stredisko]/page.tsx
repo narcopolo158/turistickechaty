@@ -11,6 +11,7 @@ import {
   getOblastBySlug,
   getSlugyOblasti,
   getStrediskaOblasti,
+  strediskoPath,
   ZEME_NAZEV,
   ZEME_SLUG,
 } from '@/lib/chaty'
@@ -44,8 +45,6 @@ export const revalidate = 3600
  * kolečkem, a značky pocházejí z OSM; obojí je napsané v patičce.
  */
 
-const KANONICKA_ZEME = 'cesko'
-
 type Params = { zeme: string; oblast: string; stredisko: string }
 
 export async function generateStaticParams() {
@@ -53,7 +52,11 @@ export async function generateStaticParams() {
   const out: { zeme: string; oblast: string; stredisko: string }[] = []
   for (const oblast of slugy) {
     for (const s of await getStrediskaOblasti(oblast)) {
-      if (s.slug) out.push({ zeme: KANONICKA_ZEME, oblast, stredisko: s.slug })
+      // Země v adrese je země OBJEKTU (rozhodnutí 1. 8. 2026) — Karpacz má
+      // /polsko/…, stejně jako polská schroniska. Bez doložené země není
+      // kanonická cesta, a tedy ani mini-stránka.
+      const cesta = strediskoPath(s, oblast)
+      if (cesta && s.slug) out.push({ zeme: cesta.split('/')[1], oblast, stredisko: s.slug })
     }
   }
   return out
@@ -68,7 +71,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description:
       s.perex ??
       `Chaty dostupné z místa ${s.nazev}, přístupové trasy se značením a lanovky v okolí.`,
-    alternates: { canonical: `/${KANONICKA_ZEME}/${oblastSlug}/stredisko/${slug}` },
+    alternates: { canonical: strediskoPath(s, oblastSlug) ?? undefined },
   }
 }
 
@@ -94,7 +97,6 @@ const formatKm = (km: number | null): string =>
 export default async function StrediskoPage({ params }: { params: Promise<Params> }) {
   const { zeme, oblast: oblastSlug, stredisko: slug } = await params
   if (!Object.values(ZEME_SLUG).includes(zeme)) notFound()
-  if (zeme !== KANONICKA_ZEME) permanentRedirect(`/${KANONICKA_ZEME}/${oblastSlug}/stredisko/${slug}`)
 
   const [oblast, strediska, { index }] = await Promise.all([
     getOblastBySlug(oblastSlug),
@@ -103,6 +105,13 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
   ])
   const s = strediska.find((x) => x.slug === slug)
   if (!oblast || !s) notFound()
+
+  // Kanonická cesta nese zemi OBJEKTU (jako u chat). Stará adresa pod
+  // /cesko/… u polských středisek nezmizí do 404 — přesměruje se natrvalo,
+  // aby odkazy z indexů vyhledávačů i cizích webů dál fungovaly.
+  const cesta = strediskoPath(s, oblastSlug)
+  if (!cesta) notFound()
+  if (`/${zeme}/${oblastSlug}/stredisko/${slug}` !== cesta) permanentRedirect(cesta)
 
   const foto = (await redakcniFotkyStredisek()).get(String(s.id)) ?? fotkaStrediska(oblastSlug, slug)
   const pristupy = pristupyStrediska(oblastSlug, s.nazev)
@@ -157,9 +166,14 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
 
   return (
     <div className="wrap mini">
+      {/* První článek je země OBJEKTU — Karpacz je „Polsko / Krkonoše /
+          Karpacz", stejně jako ji nese profil chaty v hlavičce. Bez odkazu:
+          domů vede logo v hlavičce a stránka země zatím neexistuje
+          (/polsko přesměruje na úvod). Pohoří odkazuje na svou kanonickou
+          adresu pod /cesko — přeshraniční celek, jedna stránka. */}
       <nav className="pohori-breadcrumb mn" aria-label="Drobečková navigace">
-        <Link href="/">Česko</Link> / <Link href={`/${KANONICKA_ZEME}/${oblastSlug}`}>{oblast.nazev}</Link> /{' '}
-        <span>{s.nazev}</span>
+        <span>{ZEME_NAZEV[s.zeme ?? ''] ?? 'Česko'}</span> /{' '}
+        <Link href={`/cesko/${oblastSlug}`}>{oblast.nazev}</Link> / <span>{s.nazev}</span>
       </nav>
 
       <header className="mini-hero">
@@ -346,14 +360,20 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
             {sousedi.length > 0 && (
               <article className="mini-dal-sousedi">
                 <b>
-                  {sousedi.map((so, i) => (
-                    <React.Fragment key={so.slug}>
-                      {i > 0 && ' · '}
-                      <Link href={`/${KANONICKA_ZEME}/${oblastSlug}/stredisko/${so.slug}`}>
-                        {so.nazev}
-                      </Link>
-                    </React.Fragment>
-                  ))}
+                  {sousedi.map((so, i) => {
+                    // Soused může být za hranicí (Pec ↔ Karpacz) — cesta se
+                    // bere z kanonického helperu, ne ze země téhle stránky.
+                    const cestaSouseda = strediskoPath(
+                      strediska.find((x) => x.slug === so.slug) ?? {},
+                      oblastSlug,
+                    )
+                    return (
+                      <React.Fragment key={so.slug}>
+                        {i > 0 && ' · '}
+                        {cestaSouseda ? <Link href={cestaSouseda}>{so.nazev}</Link> : so.nazev}
+                      </React.Fragment>
+                    )
+                  })}
                 </b>
                 <span>
                   Sousední východiště —{' '}
@@ -375,15 +395,18 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
           Špindlerův Mlýn →"). Pořadí je abecední a cyklické, takže se dá
           projít všechna střediska oblasti a vrátit se na začátek. */}
       <p className="mini-zpet">
-        <Link href={`/${KANONICKA_ZEME}/${oblastSlug}`}>◂ zpět na {oblast.nazev}</Link>
-        {list && (
-          <Link
-            className="mini-dalsi-list"
-            href={`/${KANONICKA_ZEME}/${oblastSlug}/stredisko/${list.slug}`}
-          >
-            další list — {list.nazev} →
-          </Link>
-        )}
+        <Link href={`/cesko/${oblastSlug}`}>◂ zpět na {oblast.nazev}</Link>
+        {(() => {
+          // Další list může být jiná země než tenhle (Pec → Przesieka):
+          // cesta se bere z kanonického helperu, ne ze země aktuální stránky.
+          const dalsi = list && strediska.find((x) => x.slug === list.slug)
+          const cestaDalsiho = dalsi && strediskoPath(dalsi, oblastSlug)
+          return cestaDalsiho ? (
+            <Link className="mini-dalsi-list" href={cestaDalsiho}>
+              další list — {list!.nazev} →
+            </Link>
+          ) : null
+        })()}
       </p>
 
       {/* Strukturovaná data (handoff F1 §3: „breadcrumb + JSON-LD"). Obsah se
@@ -393,12 +416,12 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             jsonLdStrediska(s, {
-              zemeSlug: KANONICKA_ZEME,
+              // Země objektu (rozhodnutí 1. 8. 2026): kanonická adresa
+              // i drobečky nesou zemi střediska, stejně jako profil chaty.
+              zemeSlug: ZEME_SLUG[s.zeme ?? ''] ?? 'cesko',
               oblastSlug,
               oblastNazev: oblast.nazev,
-              // Drobečková navigace jde po URL webu, kde je vše pod `/cesko`
-              // — i polská východiště. Poloha objektu je jinde (`address`).
-              zemeNazev: ZEME_NAZEV.cz,
+              zemeNazev: ZEME_NAZEV[s.zeme ?? ''] ?? ZEME_NAZEV.cz,
             }),
           ),
         }}

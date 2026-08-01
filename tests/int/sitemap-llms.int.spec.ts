@@ -38,11 +38,16 @@ describe('sitemap.xml', () => {
     const mini = urls.filter((u) => u.includes('/stredisko/'))
     expect(mini.length).toBeGreaterThan(0)
     // Adresy musí sedět s routou `/[zeme]/[oblast]/stredisko/[slug]`, jinak
-    // by mapa webu poslala robota na 404.
+    // by mapa webu poslala robota na 404. Země je země OBJEKTU (1. 8. 2026),
+    // takže se tu potkávají /cesko i /polsko.
     expect(
-      mini.every((u) => /^https:\/\/turistickechaty\.cz\/cesko\/[^/]+\/stredisko\/[^/]+$/.test(u)),
+      mini.every((u) => /^https:\/\/turistickechaty\.cz\/(cesko|polsko)\/[^/]+\/stredisko\/[^/]+$/.test(u)),
     ).toBe(true)
     expect(new Set(mini).size).toBe(mini.length) // žádné duplicity
+    // Polská východiště pod /polsko — mapa webu má nést KANONICKÉ adresy;
+    // stará /cesko/…/karpacz jen přesměrovává a do mapy nepatří.
+    expect(mini).toContain('https://turistickechaty.cz/polsko/krkonose/stredisko/karpacz')
+    expect(mini.some((u) => u.includes('/cesko/') && u.endsWith('/karpacz'))).toBe(false)
   })
 })
 

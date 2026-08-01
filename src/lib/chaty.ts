@@ -101,6 +101,26 @@ export const chataPath = (chata: Chata): string | null => {
   return `/${zeme}/${oblast.slug}/${chata.slug}`
 }
 
+/**
+ * Kanonická cesta mini-stránky střediska — STEJNÉ PRAVIDLO JAKO U CHAT:
+ * země v adrese je země OBJEKTU, ne země stránky, která odkazuje
+ * (rozhodnutí 1. 8. 2026, po nálezu 404 odkazů na polské chaty).
+ * Karpacz tedy žije na `/polsko/krkonose/stredisko/karpacz`, přestože stránka
+ * pohoří zůstává na `/cesko/krkonose` — pohoří je přeshraniční celek, jedna
+ * stránka; středisko je konkrétní obec se svou zemí, jako chata.
+ *
+ * Bez doložené země nebo slugu cesta není (`null`) a středisko nemá
+ * mini-stránku — země se nedomýšlí ani tady.
+ */
+export const strediskoPath = (
+  s: { zeme?: string | null; slug?: string | null },
+  oblastSlug: string,
+): string | null => {
+  const zeme = s.zeme ? ZEME_SLUG[s.zeme] : null
+  if (!s.slug || !zeme) return null
+  return `/${zeme}/${oblastSlug}/stredisko/${s.slug}`
+}
+
 /** Nejnovější datum `checked` napříč bloky ověření + celková věrohodnost. */
 export const posledniOvereni = (
   chata: Chata,

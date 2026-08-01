@@ -16,7 +16,7 @@ import FotoVlepena from '@/components/FotoVlepena'
 import RezHrebenem, { type BodChaty } from '@/components/RezHrebenem'
 import StrediskoKarta from '@/components/StrediskoKarta'
 import { SectionBar } from '@/components/ui'
-import { cestyChat, getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
+import { cestyChat, getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, strediskoPath, ZEME_SLUG } from '@/lib/chaty'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
 import { fotkaStrediska } from '@/lib/fotky-stredisek'
@@ -426,7 +426,8 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
                 stredisko={s}
                 foto={vlastniFotky.get(String(s.id)) ?? (s.slug ? fotkaStrediska(oblast.slug!, s.slug) : null)}
                 pristupy={chatZBodu(oblastSlug, s.nazev)}
-                url={s.slug ? `/${KANONICKA_ZEME}/${oblastSlug}/stredisko/${s.slug}` : null}
+                // Cesta nese zemi OBJEKTU (Karpacz → /polsko/…), jako u chat.
+                url={strediskoPath(s, oblastSlug)}
               />
             ))}
           </div>

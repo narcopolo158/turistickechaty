@@ -22,10 +22,14 @@
  *    nepíšou**: schema.org na ně nabízí `includesAttraction`, jenže to znamená
  *    „je součástí destinace", a přístupová trasa DATA-06 dokládá dosažitelnost
  *    po svých, ne příslušnost. Použít ji by bylo tvrzení navíc.
- *  - **`addressCountry` podle země střediska** (polská východiště nesou `PL`),
- *    kdežto **drobečková navigace jde po URL webu**, kde je vše pod `/cesko`.
- *    Jsou to dvě různé věci — poloha objektu a cesta webem — a tak se i
- *    vypisují.
+ *  - **`addressCountry` podle země střediska** (polská východiště nesou `PL`)
+ *    a od 1. 8. 2026 nese zemi objektu i **kanonická adresa a drobečky** —
+ *    stejné pravidlo jako u profilů chat (Karpacz =
+ *    `/polsko/krkonose/stredisko/karpacz`). Článek pohoří v drobečcích jde
+ *    přes segment země objektu (`/polsko/krkonose`) a trvale se přesměruje na
+ *    kanonické `/cesko/krkonose` — pohoří je přeshraniční celek, jedna
+ *    stránka. Tvar je 1:1 s profilem chaty, ať se stránky nečtou pokaždé
+ *    jinak.
  */
 
 /** Vstup: jen pole, na která funkce opravdu sahá (kolekce jich má víc). */
@@ -92,7 +96,9 @@ export const jsonLdStrediska = (
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: k.zemeNazev, item: `${origin}/` },
+      // Stejný tvar jako profil chaty: první článek je země objektu a míří na
+      // /{zeme} — ta adresa dnes trvale přesměruje na úvod (route /[zeme]).
+      { '@type': 'ListItem', position: 1, name: k.zemeNazev, item: `${origin}/${k.zemeSlug}` },
       { '@type': 'ListItem', position: 2, name: k.oblastNazev, item: `${origin}${cestaOblast}` },
       { '@type': 'ListItem', position: 3, name: s.nazev, item: `${origin}${cesta}` },
     ],

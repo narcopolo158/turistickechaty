@@ -38,6 +38,12 @@ const chata = (prepis: Partial<IndexChata>): IndexChata => ({
 
 vi.mock('@/lib/chaty', () => ({
   ZEME_SLUG: { cz: 'cesko', pl: 'polsko' },
+  // Skutečná implementace: cesta střediska nese zemi OBJEKTU (Karpacz →
+  // /polsko/…). Mock s jinou logikou by hlídal fikci.
+  strediskoPath: (s: { zeme?: string | null; slug?: string | null }, oblastSlug: string) => {
+    const zeme = s.zeme === 'cz' ? 'cesko' : s.zeme === 'pl' ? 'polsko' : null
+    return s.slug && zeme ? `/${zeme}/${oblastSlug}/stredisko/${s.slug}` : null
+  },
   // Skutečná implementace nad mockovaným indexem — kdyby se tu adresa
   // skládala jinak než v provozu, test by hlídal fikci.
   cestyChat: (index: { slug: string; url: string | null }[]) =>
@@ -91,6 +97,7 @@ vi.mock('next/navigation', () => ({
 }))
 
 import PohoriPage from '@/app/(frontend)/[zeme]/[oblast]/page'
+import StrediskoPage from '@/app/(frontend)/[zeme]/[oblast]/stredisko/[stredisko]/page'
 
 afterEach(cleanup)
 
@@ -189,5 +196,19 @@ describe('Stránka pohoří (F1d)', () => {
 
   it('/polsko/krkonose přesměruje na kanonickou /cesko/krkonose (jedno pohoří, jedna stránka)', async () => {
     await expect(PohoriPage({ params: params('polsko') })).rejects.toThrow('redirect:/cesko/krkonose')
+  })
+
+  /**
+   * OPAČNÝM SMĚREM než pohoří: kanonická adresa STŘEDISKA nese zemi objektu
+   * (1. 8. 2026, stejné pravidlo jako u chat). Stará adresa Karpacze pod
+   * /cesko nesmí zmizet do 404 — vyhledávače i cizí weby ji mají v indexech —
+   * proto trvalé přesměrování na /polsko.
+   */
+  it('stará adresa polského střediska pod /cesko trvale přesměruje na /polsko', async () => {
+    await expect(
+      StrediskoPage({
+        params: Promise.resolve({ zeme: 'cesko', oblast: 'krkonose', stredisko: 'karpacz' }),
+      }),
+    ).rejects.toThrow('redirect:/polsko/krkonose/stredisko/karpacz')
   })
 })
