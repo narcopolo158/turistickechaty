@@ -6,9 +6,17 @@ import React from 'react'
 import MapaChat, { type MapovaChata } from '@/components/MapaChat'
 import { SectionBar, TrailBlaze } from '@/components/ui'
 import { kreditFotky, nazevZdroje } from '@/lib/atribuce'
-import { getIndexChat, getOblastBySlug, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
+import {
+  getIndexChat,
+  getOblastBySlug,
+  getSlugyOblasti,
+  getStrediskaOblasti,
+  ZEME_NAZEV,
+  ZEME_SLUG,
+} from '@/lib/chaty'
 import { fotkaStrediska } from '@/lib/fotky-stredisek'
 import { redakcniFotkyStredisek } from '@/lib/fotky-redakcni'
+import { jsonLdStrediska } from '@/lib/jsonld-stredisko'
 import { formatVyskaM } from '@/lib/katalog'
 import { lanovkySeSlugy } from '@/lib/lanovky'
 import { cileOdtud, dalsiList, sousedniVychodiste } from '@/lib/odtud-dal'
@@ -369,6 +377,24 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
           </Link>
         )}
       </p>
+
+      {/* Strukturovaná data (handoff F1 §3: „breadcrumb + JSON-LD"). Obsah se
+          skládá v `@/lib/jsonld-stredisko` — tvrdí jen to, co je v datech. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            jsonLdStrediska(s, {
+              zemeSlug: KANONICKA_ZEME,
+              oblastSlug,
+              oblastNazev: oblast.nazev,
+              // Drobečková navigace jde po URL webu, kde je vše pod `/cesko`
+              // — i polská východiště. Poloha objektu je jinde (`address`).
+              zemeNazev: ZEME_NAZEV.cz,
+            }),
+          ),
+        }}
+      />
     </div>
   )
 }

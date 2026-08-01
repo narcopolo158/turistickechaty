@@ -32,6 +32,18 @@ describe('sitemap.xml', () => {
     expect(urls.some((u) => u.includes('/design'))).toBe(false)
     expect(urls.some((u) => u.includes('[') || u.includes('...'))).toBe(false) // žádné šablonové cesty
   })
+
+  it('vede i mini-stránky středisek — routa bez místa v mapě webu je slepá', async () => {
+    const urls = (await sitemap()).map((e) => e.url)
+    const mini = urls.filter((u) => u.includes('/stredisko/'))
+    expect(mini.length).toBeGreaterThan(0)
+    // Adresy musí sedět s routou `/[zeme]/[oblast]/stredisko/[slug]`, jinak
+    // by mapa webu poslala robota na 404.
+    expect(
+      mini.every((u) => /^https:\/\/turistickechaty\.cz\/cesko\/[^/]+\/stredisko\/[^/]+$/.test(u)),
+    ).toBe(true)
+    expect(new Set(mini).size).toBe(mini.length) // žádné duplicity
+  })
 })
 
 describe('llms.txt', () => {

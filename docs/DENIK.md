@@ -11,6 +11,66 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-01 (denní bezobslužná session) — mini-stránky středisek mluví i na stroje
+
+**Hotovo:** šest položek nad F1-IMPL je pořád na tobě (DATA-04 a DATA-25 na
+telefonátech, DATA-05 a DATA-28 na kliku do Actions, DATA-20 na rozhodnutí
+o sémantice pole `obec`, DATA-22 na katalogu vydavatele) — dnešní poznámky mají
+v backlogu. Vzal jsem tedy **F1-IMPL / F1e** a dodělal poslední kus, který šel
+bez tebe: **JSON-LD mini-stránky střediska**. K tomu se cestou našla a spravila
+díra, o které jsme nevěděli.
+
+**Co stránka strojům říká — a hlavně co neříká.** Skládá se to v
+`src/lib/jsonld-stredisko.ts`, čisté funkci, aby se dalo testovat nad
+skutečnými YAML a ne jen přes render. Výstup je dvojice `TouristDestination` +
+`BreadcrumbList`, stejný tvar jako na profilu chaty. Tři rozhodnutí, která
+v tom stojí za vysvětlení:
+
+- **Typ je destinace, ne `SkiResort` ani `LodgingBusiness`.** Že se v Peci
+  lyžuje a ubytovává, je nejspíš pravda — ale z našich dat to neplyne
+  a schema.org není místo, kde si to domýšlet. Vedeme východisko túr, tak to
+  tak i řekneme.
+- **Chaty dostupné odtud se nepíšou vůbec.** Nabízí se `includesAttraction`,
+  jenže to znamená „je součástí destinace", kdežto přístupová trasa z DATA-06
+  dokládá, že se tam dá dojít po svých. To je jiné tvrzení a rozdíl se nedá
+  schovat za značku, které nikdo nekouká pod ruku.
+- **`elevation` nevzniká, protože výšku obce nemá ani jedno z 22 středisek**
+  (čeká na ČÚZK — viz otázka z 31. 7.). Prázdná nadmořská výška je lepší než
+  dopočítaná z výškového modelu, protože to je jiný údaj pod týmž jménem.
+  Test tu premisu hlídá: až čísla doplníš, spadne — a je to připomínka
+  k přepsání, ne rozbitá věc.
+
+Ještě jedna drobnost, kterou stojí za to mít napsanou: **`addressCountry` nese
+skutečnou zemi objektu** (Karpacz `PL`), zatímco drobečková navigace jde po URL
+webu, kde je vše pod `/cesko`. Jsou to dvě různé věci — poloha místa a cesta
+webem — a tvářit se, že je to totéž, by strojům lhalo o jednom nebo o druhém.
+
+**Vedlejší nález, který mi přišel důležitější než samotné zadání: mini-stránky
+středisek vůbec nebyly v `sitemap.xml`.** Routa existuje, strukturovaná data má
+nově taky, ale vyhledávač ani AI crawler se o dvaadvaceti východištích neměl jak
+dozvědět, pokud na ně nenarazil odkazem. Je to tatáž mezera, jakou tu 31. 7.
+měly stránky pohoří, jen o patro níž — a mapa webu je jediné místo, kde se dá
+zkontrolovat jedním pohledem, co všechno průvodce vlastně nabízí. Doplněno,
+s testem na tvar adres (aby mapa neposlala robota na 404) a na duplicity.
+
+**Ověřeno naostro, ne jen v testech.** V sandboxu chyběla databáze, tak jsem ji
+znovu založil a naseedoval; pak jsem si obě stránky vytáhl z běžícího webu —
+Pec pod Sněžkou i Karpacz vracejí 200 a nesou přesně ten blok, který funkce
+slibuje. Sitemapa má 22 mini-stránek. **715/715 testů zelených** (12 nových na
+JSON-LD, 1 na sitemapu), `npm run kontrola` celá zelená, lint i typecheck čisté.
+
+**Příště:** z F1e zbývá už jen sekce „Jak se sem dostat" — pole `doprava` je
+v kolekci, ale v datech ho nemá ani jedno středisko, takže to je dohledávka
+z doložených zdrojů (a bez schváleného WebFetch bezobslužně nepůjde). Pak
+vizuální kontrola F1 šablon nad reálnými daty na stagingu.
+
+**Otázky pro Michala:**
+- **Trvá otázka z 31. 7. na výšky obcí** (ČÚZK očima × Mapy.com Elevation ×
+  nevykreslit dlaždici). Teď má i druhý dopad: bez ní nemají mini-stránky
+  v JSON-LD nadmořskou výšku.
+- **Trvá otázka na schválení WebFetch** pro denní běh — bez něj nedokážu ověřit
+  nic, co je jen na webu (dnes by to byla právě doprava do středisek).
+
 ## 2026-08-01 (ráno) — mapa je na profilu vidět vždycky; keš ale licence nedovoluje
 
 **Zadání Michala:** *„k té mapě a šetření API mě napadlo, že bysme natáhli mapu

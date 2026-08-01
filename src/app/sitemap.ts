@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-import { getChatyProMapu, getZiveOblasti } from '@/lib/chaty'
+import { getChatyProMapu, getStrediskaOblasti, getZiveOblasti } from '@/lib/chaty'
 
 /**
  * Mapa webu (/sitemap.xml). Statické stránky + všechny publikované chaty
@@ -26,17 +26,35 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // statické stránky a profily chat, takže rozcestník oblasti (nejsilnější
   // stránka průvodce hned po katalogu) se vyhledávačům nenabízel vůbec.
   let oblasti: MetadataRoute.Sitemap = []
+  // Mini-stránky středisek (F1e) v mapě webu do 1. 8. 2026 CHYBĚLY — tatáž
+  // mezera, jakou tu 31. 7. měly stránky pohoří: routa i strukturovaná data
+  // existují, ale vyhledávač se o dvaadvaceti východištích nedozvěděl.
+  const strediska: MetadataRoute.Sitemap = []
   try {
     // Jen oblasti s publikovanými profily — prázdný rozcestník do mapy webu
     // nepatří (seedované jsou i Český ráj a Ještědský hřbet, zatím bez chat).
-    oblasti = (await getZiveOblasti()).map((o) => ({
+    const zive = await getZiveOblasti()
+    oblasti = zive.map((o) => ({
       url: `${BASE}/cesko/${o.slug}`,
       lastModified: dnes,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     }))
+    for (const o of zive) {
+      // Středisko bez slugu nemá mini-stránku — do mapy webu tedy nepatří.
+      const s = (await getStrediskaOblasti(o.slug)).filter((x) => x.slug)
+      strediska.push(
+        ...s.map((x) => ({
+          url: `${BASE}/cesko/${o.slug}/stredisko/${x.slug}`,
+          lastModified: dnes,
+          changeFrequency: 'monthly' as const,
+          priority: 0.6,
+        })),
+      )
+    }
   } catch {
-    // DB nedostupná — stránky pohoří se do mapy nedostanou, statické ano.
+    // DB nedostupná — stránky pohoří ani středisek se do mapy nedostanou,
+    // statické ano.
   }
 
   let chaty: MetadataRoute.Sitemap = []
@@ -49,5 +67,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // DB nedostupná (např. build bez DB) — aspoň statické stránky.
   }
 
-  return [...staticke, ...oblasti, ...chaty]
+  return [...staticke, ...oblasti, ...strediska, ...chaty]
 }
