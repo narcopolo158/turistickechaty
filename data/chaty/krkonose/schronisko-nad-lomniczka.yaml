@@ -8,11 +8,11 @@ nazev: Schronisko PTTK „Nad Łomniczką"
 slug: schronisko-nad-lomniczka
 zeme: pl
 typ: obsluhovana
-# stav: v-provozu je vědomá volba PODLE OFICIÁLNÍHO PRAMENE PROVOZOVATELE
-# (PTTK vede objekt jako fungující s wyżywienie); dva sekundární portály
-# hlásí remont/nieczynny — rozpor je přiznaný v próze a rozhodne ho dotaz
-# na PTTK (DATA-04). Kdyby se potvrdil remont, přepnout na mimo-provoz
-# I upravit prózu.
+# stav: v-provozu — ROZPOR PRAMENŮ VYŘEŠEN 2. 8. 2026 (DATA-04, dokladově):
+# oba měly pravdu, každý ze své doby. Schronisko bylo zhruba pět let zavřené
+# kvůli rekonstrukci (odtud „remont/nieczynny" na portálech) a 27. 3. 2026
+# se znovu otevřelo (odtud „funguje" u PTTK) — doloženo dvěma nezávislými
+# reportážemi z otevření, viz overeniProvoz.
 stav: v-provozu
 oblast: krkonose
 
@@ -57,9 +57,12 @@ overeniNocleh:
     posiada miejsc noclegowych". Portál Góry i Ludzie dodává, že „nie
     prowadzi jednak noclegów", takže podle nich právně nesplňuje definici
     horského schroniska — pro nás je to bod odpočinku s občerstvením,
-    což klíč zařazení (DATA-25) pokrývá.
+    což klíč zařazení (DATA-25) pokrývá. Potvrzeno i po rekonstrukci
+    a znovuotevření 27. 3. 2026 — Magazyn Na Szczycie (28. 3. 2026),
+    doslova: „tak jak przed remontem, nie ma tu noclegów dla turystów,
+    ale w przyszłości może to się zmieni".
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-08-02'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 # typObcerstveni nevyplněno — podobu občerstvení pramen nepopisuje.
@@ -87,6 +90,10 @@ milniky:
       Schronisko bylo postaveno; téměř hned po dostavbě je podle portálu
       Trasygorskie zničila kamenitá lavina (kdy přesně bylo obnoveno,
       pramen neuvádí)
+  - rok: 2026
+    udalost: >-
+      27. března znovuotevřeno po rekonstrukci — podle reportáží po
+      zhruba pěti letech uzavření; noclehy dál nenabízí
 overeniHistorie:
   source: >-
     portál Trasygorskie (otevřeno 25. 7. 2026), doslova: „niemal
@@ -100,32 +107,36 @@ overeniHistorie:
   checked: '2026-07-25'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
-# ⚠ PRAMENY SI ODPORUJÍ a rozpor se nerozhoduje: PTTK (provozovatel,
-# oficiální) vede objekt jako fungující; Trasygorskie „jest w remoncie",
-# Góry i Ludzie „nieczynny (remontowany)". Přiznáno v próze.
+# Rozpor pramenů (PTTK „funguje" × portály „remont") VYŘEŠEN 2. 8. 2026:
+# rekonstrukce byla skutečná a skončila — znovuotevřeno 27. 3. 2026.
+otviraciDoba: >-
+  Denně 9:00–18:00 (údaj z reportáže ze znovuotevření v březnu 2026 —
+  „otwarcie techniczne", režim se může měnit; před cestou ověřit)
 kontakty:
   web: https://www.pttk.jgora.pl
 overeniProvoz:
   source: >-
-    ⚠ ROZPOR: oficiální stránka PTTK (otevřeno 25. 7. 2026) vede objekt
-    jako fungující („oferuje wyżywienie"); portál Trasygorskie nese
-    varování „Uwaga: Schronisko PTTK nad Łomniczką jest w remoncie"
-    a portál Góry i Ludzie objekt označuje „nieczynny (remontowany)".
-    Otvírací dobu ani sezónu neuvádí žádný pramen. Provozovatel: PTTK
-    (oddíl Jelenia Góra — týž správce jako u Kochanówky). Stránky
-    pttk.jgora.pl ani přehled schronisek národního parku se ze sandboxu
-    nenačtou — rozpor rozhodne dotaz na PTTK (DATA-04). stav: v-provozu
-    zvoleno podle oficiálního pramene provozovatele; próza varuje.
+    ROZPOR VYŘEŠEN (DATA-04, dokladově 2. 8. 2026): schronisko bylo zhruba
+    pět let zavřené kvůli rekonstrukci a 27. 3. 2026 se znovu otevřelo —
+    proto PTTK vedl objekt jako fungující, kdežto portály Trasygorskie
+    a Góry i Ludzie hlásily remont; oba obrazy byly momentky z různých dob.
+    Doklady: reportáž Jelonka.com z 28. 3. 2026 „Schronisko PTTK Nad
+    Łomniczką znów otwarte! Po 5 latach wraca na szlak pod Śnieżką" —
+    vedoucí Grzegorz Błaszczyk: „W tej chwili jest otwarcie, bym
+    powiedział, takie techniczne", personál: „Zapraszamy codziennie od
+    godziny 9 do 18"; a Magazyn Na Szczycie z 28. 3. 2026: znovuotevřeno
+    27. 3. 2026, občerstvení ano, noclehy ne. Otvírací doba je z okamžiku
+    „technického otevření" — ostrý režim/sezónu potvrdí až dotaz na PTTK
+    (zbývá v DATA-04). Provozovatel: PTTK (oddíl Jelenia Góra).
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-08-02'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
   Malé dřevěné schronisko bez noclehu v údolí Łomniczky pod Sněžkou
-  (1 002 m), zastávka na hlavní sudetské magistrále z roku 1901. Pozor
-  ale: jeho správce PTTK ho vede jako fungující s občerstvením, kdežto
-  dva polské turistické portály hlásí, že je v rekonstrukci — a my ten
-  rozpor neumíme rozhodnout od stolu.
+  (1 002 m), zastávka na hlavní sudetské magistrále z roku 1901. Po
+  zhruba pěti letech rekonstrukce se 27. března 2026 znovu otevřelo —
+  občerstvení podle reportáží z otevření nabízí denně, nocleh dál ne.
 text:
   - >-
     Schronisko Nad Łomniczką stojí v nadmořské výšce 1 002 metrů v údolí
@@ -133,8 +144,8 @@ text:
     Oficiální stránka PTTK ho popisuje jako nevelkou dřevěnou budovu na
     hlavní sudetské magistrále a pohodlný bod odpočinku pro turisty
     scházející ze Sněžky. Na výšce se prameny liší o metr — jeden portál
-    uvádí 1 003 — a souřadnice zatím nemáme potvrzené, proto objekt na
-    mapě neukazujeme.
+    uvádí 1 003 metry. Polohu na mapě ukazujeme podle OpenStreetMap;
+    v terénu jsme ji vlastníma nohama neověřili.
   - >-
     Od většiny bud v tomhle průvodci se schronisko liší jednou podstatnou
     věcí: nenabízí nocleh. Správce to říká výslovně a portál Góry
@@ -142,13 +153,15 @@ text:
     horského schroniska. Pro turistu na hřebeni je to prostě občerstvovací
     zastávka — a přesně jako taková patří do průvodce.
   - >-
-    A teď to podstatné, co musí zaznít dřív než cokoli dalšího: prameny
-    se neshodnou na tom, jestli objekt vůbec funguje. Správcovská stránka
-    PTTK ho vede jako fungující s nabídkou stravy; portál Trasygorskie
-    ale varuje, že schronisko je v rekonstrukci, a portál Góry i Ludzie
-    ho rovnou označuje za nečinné. Nevíme, který údaj je novější,
-    a nechceme hádat. Kdo sem míří a počítá s občerstvením, měl by si
-    provoz ověřit předem — jinak riskuje zavřené dveře po dlouhém sestupu.
+    Když tenhle profil v červenci 2026 vznikal, prameny se neshodly ani na
+    tom, jestli objekt vůbec funguje: správce PTTK ho vedl jako fungující,
+    dva turistické portály hlásily rekonstrukci. Ukázalo se, že pravdu
+    měli všichni — jen každý ze své doby. Schronisko bylo podle reportáží
+    zhruba pět let zavřené kvůli velké rekonstrukci a 27. března 2026 se
+    znovu otevřelo; vedoucí při otevření mluvil o „technickém" provozu,
+    personál zval denně od devíti do šesti. Otvírací doba je tedy údaj
+    z okamžiku otevření, ne zaběhnutý režim — kdo sem míří a počítá
+    s občerstvením, měl by si provoz před cestou pro jistotu ověřit.
   - >-
     Historie objektu je krátká na zápis, ale dramatická: podle portálu
     Trasygorskie bylo schronisko postaveno roku 1901 a téměř hned po
@@ -160,10 +173,10 @@ text:
     stojí na jediném sekundárním prameni — uvádíme to s připsáním.
   - >-
     Výška a charakter objektu pocházejí z oficiální stránky PTTK, historie
-    a varování o rekonstrukci z polských turistických portálů; stránky
-    správce se nám opakovaně nepodařilo otevřít celé a vlastním dotazem
-    jsme zatím neověřili nic. U objektu, o jehož provozu se prameny přou,
-    to platí dvojnásob.
+    z polských turistických portálů a znovuotevření z reportáží Jelonka.com
+    a Magazyn Na Szczycie z konce března 2026. Vlastním dotazem u správce
+    jsme zatím neověřili nic — ostrý provozní režim a sezóna proto v datech
+    chybí a doplní je až odpověď PTTK.
 
 # Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nesbírali
 # (DATA-02 běžela nad objekty s GPS). Doplnit po doložení souřadnic.
@@ -184,11 +197,20 @@ zdroje:
   - popis: >-
       Externí katalog turistických chat ČR/SK (2026) — výška 1002 m, typ
       (kompilace, jistota B; bez veřejné URL)
+  - popis: >-
+      Jelonka.com — reportáž ze znovuotevření 28. 3. 2026: „znów otwarte!
+      Po 5 latach", denně 9:00–18:00, „otwarcie techniczne" (otevřeno
+      2. 8. 2026)
+    url: https://www.jelonka.com/schronisko-pttk-nad-lomniczka-znow-otwarte-po-5-latach-wraca-na-szlak-pod-sniezka-139900
+  - popis: >-
+      Magazyn Na Szczycie — znovuotevřeno 27. 3. 2026, občerstvení ano,
+      „tak jak przed remontem, nie ma tu noclegów" (otevřeno 2. 8. 2026)
+    url: https://magazynnaszczycie.pl/artykul/schronisko-nad-lomniczka-n2251364
 interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/schronisko-nad-lomniczka.yaml (ruční kandidát z 25. 7. 2026) 26. 7. 2026 na základě rozhodnutí Michala o rozšíření klíče zařazení (DATA-25): objekt slouží turistům od 1901 a spor o dnešní provoz se přiznává, nerozhoduje. Verdikt kandidáta „do vyřešení rozporu se nepovyšuje" tím revidován — rozpor je teď přiznaný ve veřejné próze.
   stav: v-provozu = vědomá volba podle oficiálního pramene provozovatele (PTTK); Trasygorskie a Góry i Ludzie hlásí remont/nieczynny. Kdyby dotaz na PTTK potvrdil remont, přepnout stav na mimo-provoz a upravit prózu (třetí odstavec).
   JEDINÝ publikovaný objekt korpusu s nocleh: ne — hlídat, že šablona profilu tuhle kombinaci vykreslí rozumně (sekce Nocleh).
-  K dotažení (DATA-04): dotaz na PTTK Jelenia Góra — provoz (remont?), podoba občerstvení, otvírací doba/sezóna; dá se spojit s dotazem ke Kochanówce (týž správce). GPS potvrdit z OSM/mapy (portalová 50°44'53"N 15°44'36"E do polí nevzata). Polská známka (znaczek): v naší sadě není, seznam znaczki-turystyczne.pl je ze sandboxu nedostupný — prověřit později.
+  K dotažení (DATA-04): rozpor provozu VYŘEŠEN dokladově 2. 8. 2026 (remont skončil, znovuotevřeno 27. 3. 2026 — reportáže v overeniProvoz). Na dotaz PTTK Jelenia Góra zbývá: ostrý provozní režim/sezóna (údaj 9–18 je z „technického otevření"), podoba občerstvení; dá se spojit s dotazem ke Kochanówce (týž správce). GPS potvrdit z OSM/mapy (portalová 50°44'53"N 15°44'36"E do polí nevzata). Polská známka (znaczek): v naší sadě není, seznam znaczki-turystyczne.pl je ze sandboxu nedostupný — prověřit později.
 
   GPS DOPLNĚNA 28. 7. 2026 (DATA-31, OpenStreetMap — doklad v
   overeniLokace): starší věty výše o chybějících souřadnicích tím padají.

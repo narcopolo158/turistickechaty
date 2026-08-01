@@ -55,9 +55,27 @@ viditelná navigace i `<link rel=canonical>` se shodují. **720/720 testů**
 (redirect test + zpřísněná mapa webu + přepsané drobečky), kontrola, lint
 i typecheck zelené.
 
-**Příště:** zbytek dokladových otázek DATA-04 (Nad Łomniczką: provoz vs.
-rekonstrukce; doména Kochanówky), pak fronta — 65 kandidátů čeká na druhý
-pramen, 35 profilů na výběr fotky.
+### A druhá dokladová část DATA-04: rozpor o Nad Łomniczką je rozřešený
+
+Profil Schroniska PTTK „Nad Łomniczką" od povýšení poctivě přiznával, že se
+prameny neshodnou, jestli objekt vůbec funguje (PTTK „funguje" × dva portály
+„remont"), a čekalo se na telefonát. Ukázalo se, že odpověď je dohledatelná:
+**pravdu měli všichni, jen každý ze své doby.** Schronisko bylo podle
+reportáží zhruba pět let zavřené kvůli velké rekonstrukci a **27. března 2026
+se znovu otevřelo** — „otwarcie techniczne", personál zval denně 9–18,
+a noclehy dál nenabízí (doslova: *„tak jak przed remontem, nie ma tu noclegów
+dla turystów"*). Doklady: reportáže Jelonka.com a Magazyn Na Szczycie, obě
+z 28. 3. 2026, s URL ve zdrojích profilu.
+
+Profil je přepsaný: stav `v-provozu` už nestojí na sporném prameni, přibyla
+otvírací doba (s poctivou výhradou, že je z okamžiku „technického otevření"),
+milník 2026 a próza vypráví rozuzlení místo rozporu. Cestou se spravila
+i věta, která od doplnění GPS z 28. 7. lhala — tvrdila, že objekt na mapě
+neukazujeme, a mapa přitom na profilu dávno je. `verified` zůstává všude
+`false` (konvence B); na dotaz PTTK zbývá jen ostrý režim/sezóna.
+
+**Příště:** poslední dokladový kousek DATA-04 (doména Kochanówky z OSM), pak
+fronta — 65 kandidátů čeká na druhý pramen, 35 profilů na výběr fotky.
 
 ## 2026-08-01 (dopoledne) — adresa chaty nese její zemi; polské odkazy vedly na 404
 
