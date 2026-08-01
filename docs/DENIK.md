@@ -11,6 +11,72 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-01 (dopoledne) — adresa chaty nese její zemi; polské odkazy vedly na 404
+
+**Zadání Michala:** *„rozhodni všechny otázky sám podle nejlepšího uvážení
+a pracuj samostatně dál."* Rozhodnutí jsou dole, nejdřív nález.
+
+**Kontrola ranního běhu našla živý 404 na webu.** Prohlížel jsem výsledek
+bezobslužné session (JSON-LD středisek) a přitom si všiml, že Karpacz odkazuje
+polská schroniska pod `/polsko/…`, kdežto stránka Pece pod Sněžkou vede na
+Dom Śląski přes `/cesko/krkonose/dom-slaski`. Ta adresa **vrací 404**: profil
+chaty porovnává cestu s kanonickou (`nactiChatu`) a jinou nepřijme, a Dom Śląski
+stojí na polské straně Sněžky, takže jeho kanonická cesta je `/polsko/…`.
+
+Příčina byla vždycky stejná — **adresa se skládala ze slugu oblasti a natvrdo
+zapsaného „cesko"**, tedy ze země STRÁNKY místo ze země OBJEKTU. Bylo to na
+třech místech: „Odtud dál" na mini-stránce střediska a dvakrát v seznamu
+lanovek (karty i tabulka). Devatenáct polských chat v korpusu, takže to nebyl
+okrajový případ.
+
+**Proč to nikdo nechytil: test tu chybu zamykal jako očekávaný stav.** Ve
+fixtuře `pohori.int.spec.tsx` měl Dom Śląski `url: '/cesko/krkonose/dom-slaski'`
+— polská chata s českou kanonickou adresou, což v datech nemůže nastat — a
+tvrzení na to sedělo. Zelený test tak potvrzoval, že rozbitý odkaz je správně.
+Opraveno obojí; u fixtury je teď poznámka, proč tam `/polsko/` patří.
+
+**Oprava je taková, aby to nešlo napsat znovu.** Přibyla `cestyChat(index)`
+v `@/lib/chaty` — jediný způsob, jak se cesta profilu smí získat — a
+`LanovkySeznam` ji dostává **povinným propem**. Kdo by chtěl adresu zase
+skládat ručně, narazí na typovou chybu, ne na tichý 404. Chata bez kanonické
+cesty (chybí země nebo oblast) se vypíše jménem bez odkazu: mrtvý odkaz je
+horší než žádný.
+
+Ověřeno na běžícím webu: na stránce Krkonoš je Dom Śląski 16× pod `/polsko/`,
+na Peci 5×, a sken domovské stránky, katalogu i obou stránek pohoří nenašel
+ani jednu z 19 polských chat pod `/cesko/`. **719/719 testů** (3 nové),
+kontrola, lint i typecheck zelené.
+
+### Rozhodnutí, o která si Michal řekl
+
+1. **Keš náhledů mapy: nebude.** Dokumentace Mapy.com ji zakazuje a číst za
+   Michala jeho smlouvu nebudu. Úspora 20 dlaždic → 1 dotaz je i tak většina
+   cesty; zbytek je jedna konstanta, kdyby se podmínky změnily.
+2. **Kanonické adresy středisek: srovnat s chatami** (`/polsko/krkonose/stredisko/karpacz`),
+   protože středisko je konkrétní objekt se svou zemí, stejně jako chata. Dnes
+   to nedělám: mění se veřejné adresy tří stránek a chce to přesměrování ze
+   starých, ne odvahu. Poznámka je u F1e. **Pohoří zůstává pod `/cesko`** —
+   Krkonoše jsou přeshraniční celek, jedna stránka, to je jiný případ.
+3. **Výšky obcí: nedopočítávat z výškového modelu.** Výška obce je úřední údaj;
+   výška terénu v bodě obce je jiná veličina pod týmž jménem. Doplní se
+   z doloženého zdroje jako běžná dohledávka (`verified: false`), do té doby
+   `elevation` v JSON-LD prostě nevzniká. Nic to neblokuje.
+4. **Zápis redakce jde do `main`, ne přes PR.** Jeden člověk, drobné úpravy
+   YAML, CI běží na main — PR by přidal krok bez recenzenta. `REDAKCE_GITHUB_BRANCH`
+   zůstává jako pojistka, kdyby to někdy chtělo jinak.
+5. **Galerie chaty nemíchá historické pohlednice.** Album odpovídá na otázku
+   „jak to tam vypadá", a snímek z roku 1912 na ni odpovídá špatně. Historické
+   snímky mají svou roli a patří k historii objektu.
+6. **Kadence ověření po jednotlivých polích: zatím ne.** Fronta dnes hlásí
+   0 profilů s ověřením starším než rok, takže by to byl aparát na problém,
+   který nemáme. Až se to zvedne, přidá se.
+7. **Bezobslužné běhy bez WebFetch:** úkol, který se bez webu ověřit nedá, se
+   nebere „aspoň částečně" — přeskočí se na další v pořadí a důvod se zapíše.
+   Ranní session to tak udělala správně, takže je to zapsané pravidlo, ne změna.
+
+**Příště:** srovnat kanonické adresy středisek (bod 2) i s přesměrováním
+a testem, ať staré adresy nezůstanou viset.
+
 ## 2026-08-01 (denní bezobslužná session) — mini-stránky středisek mluví i na stroje
 
 **Hotovo:** šest položek nad F1-IMPL je pořád na tobě (DATA-04 a DATA-25 na

@@ -330,7 +330,15 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
                 {c.veta && <span>{c.veta}</span>}
                 <span className="mini-dal-vazba">
                   Nejblíž stojí{' '}
-                  <Link href={`/${KANONICKA_ZEME}/${oblastSlug}/${c.chataSlug}`}>{c.chataNazev}</Link>
+                  {/* Cesta profilu se BERE z indexu, neskládá se ze slugu oblasti:
+                      nese zemi objektu, takže polská schroniska mají `/polsko/…`.
+                      Do 1. 8. 2026 se tu adresa skládala s natvrdo psaným „cesko"
+                      a odkaz na Dom Śląski ze stránky Pece vracel 404. */}
+                  {chataDle.get(c.chataSlug)?.url ? (
+                    <Link href={chataDle.get(c.chataSlug)!.url!}>{c.chataNazev}</Link>
+                  ) : (
+                    c.chataNazev
+                  )}
                   {c.delkaKm != null && <> — odtud {formatKm(c.delkaKm)} po značené trase</>}.
                 </span>
               </article>

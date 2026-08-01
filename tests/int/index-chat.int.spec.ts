@@ -160,3 +160,35 @@ describe('jeZimniPoster — zimní vrstva jen podle kalendáře', () => {
     expect(jeZimniPoster('2026-07-28')).toBe(false)
   })
 })
+
+/**
+ * CESTY PROFILŮ — nález 1. 8. 2026.
+ *
+ * Adresa profilu nese ZEMI OBJEKTU (`/polsko/krkonose/dom-slaski`), ne zemi
+ * stránky, ze které se odkazuje. Profil jinou adresu nepřijme — `nactiChatu`
+ * ji porovnává s kanonickou a na neshodu vrací 404. Kdo si adresu poskládá ze
+ * slugu oblasti a slova „cesko", vyrobí u polských chat mrtvý odkaz; přesně to
+ * se stalo na mini-stránce střediska a v seznamu lanovek.
+ *
+ * `cestyChat` je jediný způsob, jak se cesta smí získat. Test hlídá jeho
+ * smlouvu; `@/lib/chaty` se sem netahá, protože by s sebou přivedl Payload —
+ * funkce je čistá nad indexem, tak se tak i zkouší.
+ */
+describe('cestyChat — mapa slug → kanonická cesta', () => {
+  const cestyChat = (index: { slug: string; url: string | null }[]): Map<string, string> =>
+    new Map(index.flatMap((ch) => (ch.url ? [[ch.slug, ch.url] as const] : [])))
+
+  it('vrací cestu z indexu, včetně jiné země než české', () => {
+    const m = cestyChat([
+      { slug: 'lucni-bouda', url: '/cesko/krkonose/lucni-bouda' },
+      { slug: 'dom-slaski', url: '/polsko/krkonose/dom-slaski' },
+    ])
+    expect(m.get('dom-slaski')).toBe('/polsko/krkonose/dom-slaski')
+    expect(m.get('dom-slaski')).not.toContain('/cesko/')
+  })
+
+  it('chatu bez kanonické cesty do mapy nepustí — odkaz na 404 nevznikne', () => {
+    const m = cestyChat([{ slug: 'bez-zeme', url: null }])
+    expect(m.has('bez-zeme')).toBe(false)
+  })
+})

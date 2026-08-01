@@ -38,6 +38,10 @@ const chata = (prepis: Partial<IndexChata>): IndexChata => ({
 
 vi.mock('@/lib/chaty', () => ({
   ZEME_SLUG: { cz: 'cesko', pl: 'polsko' },
+  // Skutečná implementace nad mockovaným indexem — kdyby se tu adresa
+  // skládala jinak než v provozu, test by hlídal fikci.
+  cestyChat: (index: { slug: string; url: string | null }[]) =>
+    new Map(index.flatMap((ch) => (ch.url ? [[ch.slug, ch.url] as const] : []))),
   getPocetPublikovanychRazitek: async () => 110,
   getStrediskaOblasti: async () => [
     { slug: 'pec-pod-snezkou', nazev: 'Pec pod Sněžkou', zeme: 'cz' },
@@ -56,7 +60,11 @@ vi.mock('@/lib/chaty', () => ({
   getIndexChat: async () => ({
     index: [
       chata({ slug: 'lucni-bouda', nazev: 'Luční bouda', vyska: 1410, razitko: true, checked: '2026-07-19', nejstarsiRok: 1623, otiskUrl: '/media/otisky/lucni.gif', otiskAlt: 'Otisk — Luční bouda' }),
-      chata({ slug: 'dom-slaski', nazev: 'Dom Śląski', url: '/cesko/krkonose/dom-slaski', vyska: 1400, zeme: 'pl' }),
+      // Polská chata MÁ polskou kanonickou adresu. Do 1. 8. 2026 tu stálo
+      // `/cesko/…` a test tím zamykal chybu jako očekávaný stav: profil
+      // takovou adresu nepřijme (`nactiChatu` ji porovnává s kanonickou)
+      // a odkaz vedl na 404.
+      chata({ slug: 'dom-slaski', nazev: 'Dom Śląski', url: '/polsko/krkonose/dom-slaski', vyska: 1400, zeme: 'pl' }),
       chata({ slug: 'labska-bouda', nazev: 'Labská bouda', vyska: 1340, kapacita: 70 }),
       chata({ slug: 'bez-vysky', nazev: 'Bez výšky' }),
     ],
@@ -126,7 +134,7 @@ describe('Stránka pohoří (F1d)', () => {
 
   it('top cíle nesou vazbu na doložené profily, CTA vede do katalogu', async () => {
     render(await PohoriPage({ params: params('cesko') }))
-    expect(screen.getByRole('link', { name: 'Nejblíž: Dom Śląski ▸' }).getAttribute('href')).toBe('/cesko/krkonose/dom-slaski')
+    expect(screen.getByRole('link', { name: 'Nejblíž: Dom Śląski ▸' }).getAttribute('href')).toBe('/polsko/krkonose/dom-slaski')
     expect(screen.getByRole('link', { name: 'Katalog chat ▸' }).getAttribute('href')).toBe('/chaty')
   })
 

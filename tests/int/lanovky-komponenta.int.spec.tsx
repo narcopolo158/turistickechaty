@@ -20,31 +20,43 @@ const DATA = JSON.parse(
   readFileSync(join(process.cwd(), 'data', 'lanovky', 'krkonose.json'), 'utf8'),
 ) as LanovkyOblasti
 
+/**
+ * Cesty profilů chat, jak je stránka pohoří bere z indexu. Schválně tu NENÍ
+ * poskládaná ze slugu oblasti: adresa nese ZEMI OBJEKTU, takže polské
+ * schronisko má `/polsko/…`. Právě tenhle rozdíl 1. 8. 2026 vyrobil 404
+ * odkazy, když si je komponenta skládala sama.
+ */
+const CESTY = new Map<string, string>(
+  DATA.lanovky.flatMap((l) =>
+    l.uHorniStanice.map((ch) => [ch.slug, `/${ch.slug === 'dom-slaski' ? 'polsko' : 'cesko'}/krkonose/${ch.slug}`] as const),
+  ),
+)
+
 afterEach(cleanup)
 
 describe('LanovkySeznam nad reálnými daty Krkonoš', () => {
   it('vypíše dráhy pro pěší a jejich počet sedí s daty', () => {
-    render(<LanovkySeznam data={DATA} />)
+    render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     const radky = document.querySelectorAll('.lanovky-tab tbody tr')
     expect(radky.length).toBe(DATA.lanovky.length)
     expect(DATA.lanovky.length).toBeGreaterThan(0)
   })
 
   it('přiznává, že vleky v přehledu nejsou (i jejich počet)', () => {
-    render(<LanovkySeznam data={DATA} />)
+    render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     expect(screen.getByText(/Vleky a dětské pásy v něm nejsou/)).toBeTruthy()
     expect(document.body.textContent).toContain(String(DATA.vleku))
   })
 
   it('u převýšení říká, že jde o odhad z modelu, a značí ho „≈"', () => {
-    render(<LanovkySeznam data={DATA} />)
+    render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     expect(document.body.textContent).toContain('odhad z výškového modelu')
     const sPrevysenim = DATA.lanovky.filter((l) => l.prevyseniM != null)
     if (sPrevysenim.length) expect(document.body.textContent).toContain('≈')
   })
 
   it('vzdálenost k chatě označuje jako vzdušnou čáru a odkazuje na profil', () => {
-    render(<LanovkySeznam data={DATA} />)
+    render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     expect(document.body.textContent).toContain('vzdušná čára')
     const sChatou = DATA.lanovky.find((l) => l.uHorniStanice.length)
     if (sChatou) {
@@ -54,15 +66,42 @@ describe('LanovkySeznam nad reálnými daty Krkonoš', () => {
   })
 
   it('uvádí zdroj dat i stáří (ODbL a datum stavu OSM)', () => {
-    render(<LanovkySeznam data={DATA} />)
+    render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     expect(document.body.textContent).toContain('OpenStreetMap')
     expect(document.body.textContent).toContain('ODbL')
     if (DATA.stavOsm) expect(document.body.textContent).toContain(DATA.stavOsm)
   })
 
   it('bez dat nevykreslí nic (nová oblast nemá prázdnou tabulku)', () => {
-    const { container } = render(<LanovkySeznam data={null} />)
+    const { container } = render(<LanovkySeznam data={null} cestyChat={CESTY} />)
     expect(container.innerHTML).toBe('')
+  })
+
+  /**
+   * NÁLEZ 1. 8. 2026: komponenta si adresu profilu skládala sama ze slugu
+   * oblasti a natvrdo psaného „cesko". U polských schronisek tím vyráběla
+   * odkaz na 404 — profil je porovnává s kanonickou cestou a jinou nepřijme.
+   * Adresa teď chodí z indexu; tenhle test hlídá, že se to nevrátí.
+   */
+  it('polskou chatu odkazuje pod /polsko, ne pod /cesko', () => {
+    render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
+    const polske = [...CESTY].filter(([, url]) => url.startsWith('/polsko/'))
+    expect(polske.length).toBeGreaterThan(0)
+    for (const [slug, url] of polske) {
+      const nazev = DATA.lanovky.flatMap((l) => l.uHorniStanice).find((ch) => ch.slug === slug)!.nazev
+      for (const odkaz of screen.getAllByRole('link', { name: nazev })) {
+        expect(odkaz.getAttribute('href')).toBe(url)
+        expect(odkaz.getAttribute('href')).not.toContain('/cesko/')
+      }
+    }
+  })
+
+  /** Chata bez kanonické cesty se vypíše jménem — mrtvý odkaz je horší než žádný. */
+  it('bez známé cesty nevznikne odkaz, jen jméno', () => {
+    render(<LanovkySeznam data={DATA} cestyChat={new Map()} />)
+    const nazev = DATA.lanovky.find((l) => l.uHorniStanice.length)!.uHorniStanice[0].nazev
+    expect(document.body.textContent).toContain(nazev)
+    expect(screen.queryAllByRole('link', { name: nazev })).toHaveLength(0)
   })
 })
 
@@ -123,7 +162,7 @@ describe('výběr tří karet', () => {
     const vybrane = vyberKarty(DATA.lanovky)
     expect(vybrane).toHaveLength(3)
     expect(new Set(vybrane.map((x) => x.id)).size).toBe(3)
-    render(<LanovkySeznam data={DATA} />)
+    render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     expect(document.querySelectorAll('.lan-karta')).toHaveLength(3)
     // Karta nesmí tvrdit dobu jízdy — doloženou ji nemáme.
     expect(document.querySelector('.lan-karty')!.textContent).not.toMatch(/min|doba jízdy/i)
@@ -133,7 +172,7 @@ describe('výběr tří karet', () => {
   })
 
   it('řekne, podle čeho vybírá — čtenář nemá hádat, proč vidí zrovna tyhle', () => {
-    render(<LanovkySeznam data={DATA} />)
+    render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     expect(screen.getByText(/Vybráno pravidlem, ne redakčním vkusem/)).toBeTruthy()
   })
 })
@@ -146,14 +185,14 @@ describe('výběr tří karet', () => {
  */
 describe('jízdenkové útržky', () => {
   it('nesou všechny dráhy, které nejsou v hlavních kartách', () => {
-    const { container } = render(<LanovkySeznam data={DATA} />)
+    const { container } = render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     const utrzku = container.querySelectorAll('.jzd').length
     expect(utrzku).toBe(DATA.lanovky.length - 3)
     expect(utrzku).toBeGreaterThan(0)
   })
 
   it('tabulka s úplnými údaji zůstává — jen složená', () => {
-    const { container } = render(<LanovkySeznam data={DATA} />)
+    const { container } = render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     const detail = container.querySelector('details.lanovky-tabulka')
     expect(detail).toBeTruthy()
     expect(detail!.querySelectorAll('.lanovky-tab tbody tr')).toHaveLength(DATA.lanovky.length)
@@ -161,14 +200,14 @@ describe('jízdenkové útržky', () => {
   })
 
   it('útržek říká druh dráhy a barví se podle něj, ne podle důležitosti', () => {
-    const { container } = render(<LanovkySeznam data={DATA} />)
+    const { container } = render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     const prvni = container.querySelector('.jzd')!
     expect(prvni.className).toMatch(/jzd--(sedacka|kabina|kombi|jina)/)
     expect(prvni.querySelector('.jzd-pill')!.textContent).toBeTruthy()
   })
 
   it('ani na útržku nejsou ceny a jízdní řády — a je to napsané', () => {
-    const { container } = render(<LanovkySeznam data={DATA} />)
+    const { container } = render(<LanovkySeznam data={DATA} cestyChat={CESTY} />)
     const blok = container.querySelector('.lan-jizdenky')!
     expect(blok.textContent).toMatch(/Jízdní řády ani ceny/)
     expect(blok.textContent).not.toMatch(/\bKč\b/)

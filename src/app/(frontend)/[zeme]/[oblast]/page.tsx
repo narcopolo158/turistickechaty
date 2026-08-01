@@ -16,7 +16,7 @@ import FotoVlepena from '@/components/FotoVlepena'
 import RezHrebenem, { type BodChaty } from '@/components/RezHrebenem'
 import StrediskoKarta from '@/components/StrediskoKarta'
 import { SectionBar } from '@/components/ui'
-import { getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
+import { cestyChat, getIndexChat, getOblastBySlug, getPocetPublikovanychRazitek, getSlugyOblasti, getStrediskaOblasti, ZEME_SLUG } from '@/lib/chaty'
 import { znamkyVizitkyChaty } from '@/lib/znamky-vizitky'
 import { formatCheckedDatum, formatVyskaM } from '@/lib/katalog'
 import { fotkaStrediska } from '@/lib/fotky-stredisek'
@@ -441,7 +441,9 @@ export default async function PohoriPage({ params }: { params: Promise<Params> }
       {lanovky && lanovky.lanovky.length > 0 && (
         <section className="sec" id="s05" aria-label="Lanovky">
           <SectionBar num="05" title="Lanovky" variant="red" />
-          <LanovkySeznam data={lanovky} />
+          {/* Cesty chat jdou z indexu — u polských schronisek nesou `/polsko/…`,
+              a poskládat je ze slugu oblasti by znamenalo odkaz na 404. */}
+          <LanovkySeznam data={lanovky} cestyChat={cestyChat(index)} />
         </section>
       )}
 

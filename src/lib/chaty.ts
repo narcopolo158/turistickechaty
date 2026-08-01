@@ -76,6 +76,23 @@ export const formatDatum = (iso: string): string => {
 export const formatGps = (lat: number, lng: number): string =>
   `${Math.abs(lat).toFixed(4)} ${lat >= 0 ? 'N' : 'S'}, ${Math.abs(lng).toFixed(4)} ${lng >= 0 ? 'E' : 'W'}`
 
+/**
+ * Slug chaty → kanonická cesta profilu, vzatá z indexu.
+ *
+ * PROČ TAHLE FUNKCE EXISTUJE (nález 1. 8. 2026): cesta profilu nese **zemi
+ * objektu**, ne zemi stránky, na které odkaz stojí. Polská schroniska žijí pod
+ * `/polsko/…` a profil na jiné adrese vrací 404 (`nactiChatu` porovnává cestu
+ * s kanonickou). Kdo si adresu poskládá ze slugu oblasti a slova „cesko",
+ * vyrobí u polských chat mrtvý odkaz — přesně to se stalo na mini-stránce
+ * střediska („Odtud dál" → Dom Śląski) a v seznamu lanovek.
+ *
+ * Odkaz se proto nikde neskládá ručně; bere se odsud. Chata bez země nebo
+ * oblasti nemá kanonickou cestu, a tak v mapě prostě není — volající pak
+ * vypíše jméno bez odkazu, což je poctivější než odkaz na 404.
+ */
+export const cestyChat = (index: IndexChata[]): Map<string, string> =>
+  new Map(index.flatMap((ch) => (ch.url ? [[ch.slug, ch.url] as const] : [])))
+
 /** Kanonická cesta profilu chaty; null, dokud chatě chybí země nebo oblast. */
 export const chataPath = (chata: Chata): string | null => {
   const oblast = typeof chata.oblast === 'object' ? chata.oblast : null

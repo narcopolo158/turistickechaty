@@ -80,7 +80,27 @@ const TRIDA_TYPU: Record<string, string> = {
   mixed_lift: 'kombi',
 }
 
-export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
+/**
+ * Odkaz na profil chaty u lanovky. Bez známé kanonické cesty (chata bez země
+ * nebo oblasti) se vypíše jen jméno — mrtvý odkaz je horší než žádný.
+ */
+function OdkazChaty({ slug, nazev, cesty }: { slug: string; nazev: string; cesty: Map<string, string> }) {
+  const cesta = cesty.get(slug)
+  return cesta ? <Link href={cesta}>{nazev}</Link> : <>{nazev}</>
+}
+
+export function LanovkySeznam({
+  data,
+  cestyChat,
+}: {
+  data: LanovkyOblasti | null
+  /**
+   * Slug chaty → kanonická cesta profilu (`@/lib/chaty` → `cestyChat`).
+   * Skládat adresu tady ze slugu oblasti nejde: polská schroniska žijí pod
+   * `/polsko/…` a poskládaná adresa by u nich vedla na 404.
+   */
+  cestyChat: Map<string, string>
+}) {
   if (!data || !data.lanovky.length) return null
   const karty = vyberKarty(data.lanovky)
   const vKartach = new Set(karty.map((l) => l.id))
@@ -134,7 +154,7 @@ export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
                   {l.uHorniStanice.map((ch, j) => (
                     <span key={ch.slug}>
                       {j > 0 && ', '}
-                      <Link href={`/cesko/${data.oblast}/${ch.slug}`}>{ch.nazev}</Link>
+                      <OdkazChaty slug={ch.slug} nazev={ch.nazev} cesty={cestyChat} />
                     </span>
                   ))}
                 </p>
@@ -202,7 +222,7 @@ export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
                       {l.uHorniStanice.slice(0, 2).map((ch, i) => (
                         <span key={ch.slug}>
                           {i > 0 && ', '}
-                          <Link href={`/cesko/${data.oblast}/${ch.slug}`}>{ch.nazev}</Link>
+                          <OdkazChaty slug={ch.slug} nazev={ch.nazev} cesty={cestyChat} />
                         </span>
                       ))}
                       {l.uHorniStanice.length > 2 && ` +${l.uHorniStanice.length - 2}`}
@@ -252,7 +272,7 @@ export function LanovkySeznam({ data }: { data: LanovkyOblasti | null }) {
                     {l.uHorniStanice.map((ch, i) => (
                       <span key={ch.slug}>
                         {i > 0 && ', '}
-                        <Link href={`/cesko/krkonose/${ch.slug}`}>{ch.nazev}</Link>{' '}
+                        <OdkazChaty slug={ch.slug} nazev={ch.nazev} cesty={cestyChat} />{' '}
                         <span className="lanovky-tise">({format(ch.vzdalenostM)} m)</span>
                       </span>
                     ))}
