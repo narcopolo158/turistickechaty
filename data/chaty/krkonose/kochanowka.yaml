@@ -108,9 +108,14 @@ overeniProvoz:
     korona-gor-polski.pl („Dostępność: całoroczne", „Aktualnie: otwarte").
     Provozovatel PTTK shodně dle OSM tagu operator i dle vlastních stránek
     PTTK. Otvírací doba nedoložena. Oficiální zdroj správce + OSM,
-    verified:false
+    verified:false. DATA-04, 2. 8. 2026: obě oficiální stránky PTTK znovu
+    přečteny — regionální pttk.jgora.pl vede dál jen „58-573 Piechowice,
+    tel. +48 601420347" (bez e-mailu, bez vlastního webu schroniska),
+    celostátní pttk.pl odkazuje pouze na pttk.jgora.pl. Doménu
+    kochanowka.wszklarskiej.net z OSM nezná ani jedna; rozpor telefonů
+    trvá a rozhodne ho až telefonát.
   verified: false
-  checked: '2026-07-25'
+  checked: '2026-08-02'
 
 # ── Historie ──────────────────────────────────────────────────────────────
 rokVzniku: 1868
@@ -242,7 +247,13 @@ interniPoznamky: >-
   ⚠ ROZPOR telefon: +48 601420347 (pttk.jgora.pl, správce) vs. +48 781 024 159
   (OSM). Do profilu vzat kontakt PTTK. Web: PTTK vlastní stránku vs. OSM
   kochanowka.wszklarskiej.net — do profilu vzata stránka PTTK, doména z OSM
-  NEOVĚŘENA.
+  NEOVĚŘENA. Doplněk 2. 8. 2026 (DATA-04): obě oficiální stránky PTTK
+  (regionální i celostátní) znovu přečteny — doménu z OSM nezná ani jedna
+  a schronisku nepřipisují žádný vlastní web; telefon u správce beze změny.
+  Pokus otevřít doménu z OSM napřímo skončil 2. 8. 2026 stejně jako 25. 7.:
+  načtení by chtělo Michalovo svolení, neobcházeno. Rozpor telefonů tedy trvá
+  a rozhodne ho až telefonát (jde spojit s dotazem k Nad Łomniczką — týž
+  správce; tam už jen ostrý režim/sezóna).
 
   OPRAVA ZÁPISU 25. 7. 2026: dřívější znění téhle poznámky dodávalo, že „ze
   sandboxu byla kochanowka.com.pl nedostupná". To bylo zavádějící hned dvakrát.

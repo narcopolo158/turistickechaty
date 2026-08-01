@@ -74,8 +74,26 @@ i věta, která od doplnění GPS z 28. 7. lhala — tvrdila, že objekt na map�
 neukazujeme, a mapa přitom na profilu dávno je. `verified` zůstává všude
 `false` (konvence B); na dotaz PTTK zbývá jen ostrý režim/sezóna.
 
-**Příště:** poslední dokladový kousek DATA-04 (doména Kochanówky z OSM), pak
-fronta — 65 kandidátů čeká na druhý pramen, 35 profilů na výběr fotky.
+### Doména Kochanówky: dokladová cesta vyčerpána, zbytek je telefonát
+
+Poslední dokladový kousek DATA-04. Obě oficiální stránky PTTK — regionální
+pttk.jgora.pl i celostátní pttk.pl — znovu přečteny: doménu
+`kochanowka.wszklarskiej.net` z OSM **nezná ani jedna** a schronisku
+nepřipisují žádný vlastní web (regionální vede jen „58-573 Piechowice,
+tel. +48 601420347", celostátní odkazuje na regionální). Přímé načtení domény
+z OSM by si vyžádalo Michalovo svolení — neobcházeno, stejně jako 25. 7.
+Rozpor telefonů (+48 601420347 PTTK × +48 781 024 159 OSM) trvá a rozhodne ho
+až telefonát; v profilu je `checked` zvednuto s přesným záznamem, co se
+zjistilo a co ne.
+
+**Tím je dokladová část DATA-04 vyčerpaná.** Co zbývá, je čistě telefonní
+a je to na tobě — podklady drží `docs/TELEFONATY-KRKONOSE.md`: KRNAP (Zlaté
+návrší), PTTK Jelenia Góra (telefon Kochanówky, ostrý režim Nad Łomniczką,
+smysl „nejstarší" u Strzechy), Luční bouda (pramen pravidla o vaření pro
+neubytované), Petrova bouda (platná doména).
+
+**Příště:** fronta — 65 kandidátů čeká na druhý pramen, 35 profilů na výběr
+fotky; a vizuální kontrola F1 šablon na stagingu.
 
 ## 2026-08-01 (dopoledne) — adresa chaty nese její zemi; polské odkazy vedly na 404
 
