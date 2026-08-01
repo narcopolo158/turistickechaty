@@ -74,8 +74,38 @@ kontrola, lint i typecheck zelené.
    nebere „aspoň částečně" — přeskočí se na další v pořadí a důvod se zapíše.
    Ranní session to tak udělala správně, takže je to zapsané pravidlo, ne změna.
 
+### A pak DATA-04, poprvé — protože nebyla blokovaná celá
+
+Nejvyšší nehotová položka backlogu je **DATA-04** (otvíračky a kontakty pěti
+nejnavštěvovanějších bud) a čtyři bezobslužné běhy po sobě ji odložily se
+stejnou větou: „telefonáty umí jen Michal". To platí — ale jen na část. Když
+jsem si její poznámky přečetl pořádně, ukázalo se, že **čtyři z otázek jsou
+dokladové, ne telefonní**: dají se zodpovědět čtením pramene, který profil už
+cituje. Vzal jsem tedy tu část.
+
+**Petrova bouda: mezera, kterou profil přiznával, je zavřená.** Ve veřejném
+textu stálo *„jestli nová bouda stojí přesně na místě té staré, naše prameny
+neříkají"*. Týž pramen (Kudy z nudy) přitom odpovídá doslova: *„Po požáru
+z původní Petrovy boudy zbyly pouze kamenné podezdívky, které byly následně
+zahrnuty do současné stavby dokončené v květnu 2020."* Nová bouda tedy
+nestojí vedle té staré — vyrostla na jejích základech. Opraven text, milník
+roku 2020 i zajímavost.
+
+**Otvírací doba a kontakty znovu přečteny** — útulna denně 8:00–18:00,
+restaurace jen pro ubytované, telefon i e-mail beze změny. To je přesně to, co
+DATA-04 chce („zapsat checked datum"), takže `checked` je nově 2026-08-01
+u provozu, občerstvení a historie. **U noclehu a služeb zůstalo 2026-07-22** —
+ta pole jsem znovu nečetl a razítkovat kontrolu, která neproběhla, by z
+`checked` udělalo ozdobu. `verified` zůstává všude `false`: konvence B, pramen
+je sekundární médium.
+
+**Co se nepovedlo:** doména `petrovabouda.cz` z OSM zůstává neověřená. Ve
+vyhledávání se neukázala vůbec — což ale není doklad, že neexistuje, jen že
+jsem ji nenašel. V profilu proto dál stojí, že se prameny rozcházejí.
+
 **Příště:** srovnat kanonické adresy středisek (bod 2) i s přesměrováním
-a testem, ať staré adresy nezůstanou viset.
+a testem, ať staré adresy nezůstanou viset. Pak zbytek dokladových otázek
+DATA-04 (Nad Łomniczką: provoz vs. rekonstrukce; telefon Kochanówky).
 
 ## 2026-08-01 (denní bezobslužná session) — mini-stránky středisek mluví i na stroje
 

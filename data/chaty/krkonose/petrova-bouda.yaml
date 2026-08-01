@@ -11,8 +11,8 @@ stav: v-provozu
 oblast: krkonose
 zajimavosti:
   - text: >-
-      Původní boudu zničil 31. 7. 2011 požár; dnešní moderní budova byla
-      dokončena v květnu 2020
+      Původní boudu zničil 31. 7. 2011 požár; zbyly z ní pouze kamenné
+      podezdívky, na kterých vyrostla dnešní budova dokončená v květnu 2020
     kategorie: stari
     zdroj: Kudy z nudy „Petrova bouda ve Špindlerově Mlýně" (sekundární médium, verified:false)
   - text: Stojí na hřebeni Krkonoš přímo u státní hranice s Polskem
@@ -57,9 +57,11 @@ overeniObcerstveni:
     Kudy z nudy „Petrova bouda ve Špindlerově Mlýně": restaurace je určena jen
     ubytovaným hostům (NENÍ veřejně přístupná); samostatná útulna umožňuje
     kolemjdoucím úkryt a konzumaci vlastního jídla, otevřená denně 8:00–18:00;
-    sekundární médium, verified:false
+    sekundární médium, verified:false. DATA-04, 1. 8. 2026: pramen znovu
+    přečten, věta „Restaurace však není veřejně dostupná, slouží pro ubytované
+    hosty." i otvírací doba útulny beze změny
   verified: false
-  checked: '2026-07-22'
+  checked: '2026-08-01'
 
 # ── Služby ────────────────────────────────────────────────────────────────
 overeniSluzby:
@@ -82,9 +84,11 @@ overeniProvoz:
     Kudy z nudy „Petrova bouda ve Špindlerově Mlýně": útulna denně 8:00–18:00,
     tel. +420 779 970 770, info@petrovyboudy.cz, petrovyboudy.cz; OSM/katalog
     nesly doménu petrovabouda.cz — ověřit platnou. Sekundární médium,
-    verified:false
+    verified:false. DATA-04, 1. 8. 2026: pramen znovu přečten, otvírací doba
+    ani kontakty se nezměnily a doména petrovyboudy.cz tam stojí dál; co dělá
+    petrovabouda.cz z OSM, zjištěno NEBYLO — otázka zůstává otevřená
   verified: false
-  checked: '2026-07-22'
+  checked: '2026-08-01'
 
 # ── Historie ──────────────────────────────────────────────────────────────
 rokVzniku: 1790
@@ -98,14 +102,18 @@ milniky:
   - rok: 2011
     udalost: 31. července požár zničil původní budovu
   - rok: 2020
-    udalost: V květnu dokončena nová budova
+    udalost: V květnu dokončena nová budova na kamenných podezdívkách původní
 overeniHistorie:
   source: >-
     Kudy z nudy „Petrova bouda ve Špindlerově Mlýně": zmínky kolem 1790,
     celoroční bouda 1811 (J. Pittermann), 1887 chráněná podoba, požár 31. 7. 2011,
-    nová budova květen 2020; sekundární médium, verified:false — ověřit primárně
+    nová budova květen 2020; sekundární médium, verified:false — ověřit primárně.
+    DATA-04, 1. 8. 2026: týž pramen odpovídá na mezeru, kterou profil dosud
+    přiznával — „Po požáru z původní Petrovy boudy zbyly pouze kamenné
+    podezdívky, které byly následně zahrnuty do současné stavby dokončené
+    v květnu 2020." Nová bouda tedy stojí na základech původní
   verified: false
-  checked: '2026-07-22'
+  checked: '2026-08-01'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
@@ -122,10 +130,11 @@ text:
     potvrzenou z dalšího pramene.
   - >-
     Dnešní podoba boudy je nová. Původní historickou budovu zničil 31.
-    července 2011 požár a moderní stavbu, která ji nahradila, dokončili podle
-    Kudy z nudy v květnu 2020; jestli nová bouda stojí přesně na místě té
-    staré, naše prameny neříkají. Kořeny místa ovšem sahají mnohem hlouběji:
-    první zmínky se vážou k roku 1790, kdy tu stála letní chata, celoročně
+    července 2011 požár; podle Kudy z nudy z ní zbyly pouze kamenné
+    podezdívky, které pak byly zahrnuty do současné stavby dokončené v květnu
+    2020. Nová bouda tedy nestojí vedle té staré — vyrostla na jejích
+    základech. Kořeny místa ovšem sahají mnohem hlouběji: první zmínky se
+    vážou k roku 1790, kdy tu stála letní chata, celoročně
     obývanou boudu tu v roce 1811 postavil Johann Pittermann a z roku 1887 je
     doložena nejstarší chráněná podoba boudy. Celou tuhle časovou osu
     přebíráme ze sekundárního média a primárním pramenem zatím ověřená není.
