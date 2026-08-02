@@ -11,6 +11,27 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-03 (dopoledne) — první pětice jizerské fronty křížově ověřena
+
+**Pokračování bez ptaní.** Po ještědských povýšeních jsem otevřel jizerskou
+frontu (40 kandidátů) a začal pěticí nejsilnějších hutových kandidátů:
+
+- **Lesní bar Krömerova bouda** — UKÁZKOVÝ kandidát: útulna se samoobslužným
+  Lesním barem na kase důvěry („Volně k dispozici, samoobsluha. K platbě je
+  uvnitř malá kasa"), otevřená 22. 6. 2015 u Protržené přehrady; dva
+  nezávislé prameny + Wikipedie, 818 m sedí s OSM. Povýšit prvního.
+- **Lučanka** — 73 lůžek (65 + 8 ve srubu), 710 m sedí s kandidátem na metr,
+  restaurace, pod Bramberkem. Povýšení možné.
+- **Barbora** — 42 lůžek, 742 m sedí na metr, ALE pramen je archivní listing
+  a jmenovci číhají (Barborka v Horním Maxově, Barbora v Krušných horách —
+  zapsáno). Před povýšením zkusit vlastní web.
+- **Javor** — živý vlastní web (domácí strava, Jindřichov), druhý nezávislý
+  pramen zatím chybí.
+- **Koryna** — hledání nevrací k objektu nic (jen sousední Mariánku); stojí
+  dál jen na OSM, nepovyšovat.
+
+Verdikty s citacemi jsou v poznámkách kandidátů. Kontrola zelená.
+
 ## 2026-08-03 (ráno) — pět ještědských profilů povýšeno; hřbet má první publikované chaty
 
 **Zadání Michala:** *„povýš pět ještědských kandidátů a pracuj dál
