@@ -11,6 +11,65 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (denní bezobslužná session) — „Jak se sem dostat" se dala složit z dat, která už v repu ležela
+
+**Hotovo:** poslední chybějící kus F1e — sekce **02 Jak se sem dostat** na
+mini-stránce střediska. Položka od 31. 7. čekala na to, až někdo dohledá
+dopravní napojení z doložených zdrojů a naplní ruční pole `doprava`. Ta cesta
+zůstává a **má přednost**, jenže část odpovědi v repu už byla: katalog
+výchozích bodů DATA-06 nese vedle obcí i **železniční stanice** a **autobusové
+zastávky** z OpenStreetMap, se souřadnicemi i odkazem na OSM objekt. Nová
+čistá funkce `src/lib/jak-se-sem-dostat.ts` z nich složí dva řádky pro všech
+16 krkonošských středisek — Pec pod Sněžkou: nejbližší stanice Svoboda nad
+Úpou 10,0 km vzdušnou čarou, 6 autobusových zastávek do 1,5 km od bodu obce,
+nejblíž „Pec pod Sněžkou, parkoviště u kapličky" (500 m).
+
+**Čemu se blok vyhýbá** (celá práce je vlastně o tomhle):
+
+- **Netvrdí spojení.** Že v obci stojí zastávka, je fakt z mapy; že tam něco
+  jezdí a odkud, z našich dat neplyne — a řádek to říká nahlas, místo aby to
+  zamlčel. Jízdní řády ani linky neuvádíme (i handoff píše „fakta, ne jízdní
+  řády").
+- **Vzdálenosti se jmenují vzdušné.** Táž lekce jako u sousedních východišť
+  30. 7.: dvě různé míry pojmenované stejně si čtenář sečte, a o sekci výš
+  stojí půdorysné délky tras.
+- **Řádek „Autem" vznikne jedině z doloženého pole.** Kudy se přijíždí, kde se
+  parkuje a co je zrovna regulované, žádná mapová vrstva neříká — u Pece
+  obzvlášť.
+- **Lanovka se sem oproti prototypu nekopíruje.** Má na stránce vlastní sekci
+  s odkazy na konkrétní dráhy; týž fakt dvakrát na jedné stránce není věrnost
+  předloze, jen šum.
+
+Jizerská střediska zůstávají prázdná — a správně: souřadnice jim záměrně
+chybí, dokud pro Jizerky neproběhne DATA-01, takže není od čeho měřit. Blok se
+bez jediného řádku nevykreslí vůbec; prázdná tabulka neříká nic.
+
+Cestou se opravila skloňovací past: první verze psala „11 autobusová zastávek".
+Vazba se mění celá (sloveso i přívlastek), tak je celá v `cestina.ts` jako
+`jeAutobusovaZastavka` — „je 1 autobusová zastávka / jsou 2 autobusové
+zastávky / je 11 autobusových zastávek".
+
+18 nových testů (736 celkem), `tsc` i lint zelené. Osm testů závislých na
+Payloadu padá i na čistém checkoutu — sandbox nemá Postgres, není to regrese.
+
+**Příště:** doložená próza `doprava.auto` u krkonošských středisek (regulace
+vjezdu do Pece, parkoviště) — dnes nešla dohledat, viz otázky; pak fronta:
+65 kandidátů čeká na druhý pramen, 35 profilů na výběr fotky.
+
+**Otázky pro Michala:**
+
+1. **Sedí ti řádky složené z mapy?** Vědomě říkají míň, než by čtenář chtěl
+   („zastávka tu je, co jezdí, nevíme"). Alternativa je nechat sekci
+   prázdnou, dokud nebude ruční próza ke každému středisku — přišlo mi horší
+   mlčet o tom, co doložené máme.
+2. **WebFetch v bezobslužné session vyžaduje schválení** (dnes už podruhé —
+   viz 31. 7.), takže dohledávat fakta z webů obcí a KRNAP odsud nejde;
+   WebSearch vrací jen tituly a odkazy, což jako pramen nestačí. Když chceš
+   `doprava.auto` a oficiální perexy středisek, buď to musí být ruční běh
+   s tebou, nebo mi dopředu povol domény (obce, KRNAP, region-krkonose.cz).
+3. Telefonní zbytek DATA-04 je pořád na tobě — podklady drží
+   `docs/TELEFONATY-KRKONOSE.md`.
+
 ## 2026-08-02 (noc) — Karpacz bydlí pod /polsko; a náhled mapy je ověřený naostro
 
 **Zadání Michala:** *„smoke test mapy prošel. pokračuj samostatně systematicky

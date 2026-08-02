@@ -27,6 +27,21 @@ export const tvarChaty = (pocet: number, pad: Pad = 'prvni'): string => {
 }
 
 /**
+ * Celá vazba „je 1 autobusová zastávka / jsou 2 autobusové zastávky /
+ * je 11 autobusových zastávek" — pro blok „Jak se sem dostat".
+ *
+ * Sloveso i přívlastek se v ní mění spolu s podstatným jménem, takže je
+ * nemá smysl skládat po kusech: u pětky a výš se počítaný předmět stává
+ * podmětem v 2. pádě a sloveso spadne zpátky do jednotného čísla.
+ */
+export const jeAutobusovaZastavka = (pocet: number): string => {
+  const n = Math.abs(pocet)
+  if (n === 1) return 'je 1 autobusová zastávka'
+  if (n >= 2 && n <= 4) return `jsou ${n} autobusové zastávky`
+  return `je ${n} autobusových zastávek`
+}
+
+/**
  * Tvar slova „profil": „1 profil / 2 profily / 5 profilů".
  */
 export const tvarProfily = (pocet: number): string => {

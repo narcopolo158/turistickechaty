@@ -17,6 +17,7 @@ import {
 } from '@/lib/chaty'
 import { fotkaStrediska } from '@/lib/fotky-stredisek'
 import { redakcniFotkyStredisek } from '@/lib/fotky-redakcni'
+import { bodyKatalogu, jakSeSemDostat } from '@/lib/jak-se-sem-dostat'
 import { jsonLdStrediska } from '@/lib/jsonld-stredisko'
 import { formatVyskaM } from '@/lib/katalog'
 import { lanovkySeSlugy } from '@/lib/lanovky'
@@ -139,6 +140,13 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
   // se čísla odvozovala od jediné podmínky (`s.lanovka`), což by po přibytí
   // čtvrté sekce začalo lhát u středisek bez lanovky.
   const maOdtudDal = cile.length > 0 || sousedi.length > 0
+
+  // „Jak se sem dostat" (handoff F1 §3 bod 5). Ručně doložená próza z pole
+  // `doprava` má přednost; kde chybí, složí se řádek z katalogu výchozích
+  // bodů DATA-06 (železniční stanice a autobusové zastávky z OSM). Blok se
+  // nevykreslí, dokud není aspoň jeden řádek — prázdná tabulka neříká nic.
+  const dopravaRadky = jakSeSemDostat(s, bodyKatalogu(oblastSlug), s.doprava)
+
   const cisla = (() => {
     let n = 0
     const dal = () => String(++n).padStart(2, '0')
@@ -146,6 +154,7 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
       lanovka: s.lanovka ? dal() : '',
       chaty: radky.length > 0 ? dal() : '',
       mapa: s.lat != null && s.lng != null ? dal() : '',
+      dostat: dopravaRadky.length > 0 ? dal() : '',
       odtudDal: maOdtudDal ? dal() : '',
     }
   })()
@@ -326,6 +335,32 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
             Střed mapy je bod obce z katalogu výchozích bodů; kolečka jsou chaty průvodce v okolí
             — klikem se otevře profil. Podklad Mapy.com „outdoor“.
           </p>
+        </section>
+      )}
+
+      {/* „Jak se sem dostat" (handoff F1 §3 bod 5: „Vlak/Bus/Auto/Lanovka —
+          fakta, ne jízdní řády"). Řádek z katalogu OSM mluví o zastávce
+          a stanici, ne o spojení: že tam něco jezdí, z mapových dat neplyne.
+          Lanovka má vlastní sekci s odkazy na dráhy, takže se sem — oproti
+          prototypu — nekopíruje. */}
+      {dopravaRadky.length > 0 && (
+        <section className="sec" aria-label="Jak se sem dostat">
+          <SectionBar num={cisla.dostat} title="Jak se sem dostat" variant="blue" />
+          <dl className="mini-doprava">
+            {dopravaRadky.map((r) => (
+              <div key={r.klic}>
+                <dt>{r.klic}</dt>
+                <dd>{r.hodnota}</dd>
+              </div>
+            ))}
+          </dl>
+          {dopravaRadky.some((r) => r.puvod === 'katalog') && (
+            <p className="pohori-mikropozn">
+              Stanice a zastávky pocházejí z katalogu výchozích bodů (OpenStreetMap, ODbL);
+              vzdálenosti jsou vzdušné od bodu obce, ne pěší. Jízdní řády ani linky neuvádíme —
+              doložené je ležení zastávky, ne provoz na ní.
+            </p>
+          )}
         </section>
       )}
 
