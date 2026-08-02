@@ -45,9 +45,19 @@ opravena na 2. 8. (checked u Krömerovky, Lučanky a obou verdiktů
 věží) a nadpisy dnešních bloků přeznačeny na neutrální „blok 1–8".
 Ponaučení: datum zápisu se bere ze stroje, ne z vyprávění.
 
-**Příště:** ① Jizerské hory mají 4 nové profily bez přístupových tras —
-přegenerovat DATA-06: Actions „výchozí body" (jizerske-hory) → routing
-v sandboxu → Actions „výšky". ② Pokračovat jizerskou frontou (Sky Walk
+**Routing pro Jizerky přepočítán ještě v tomto bloku** (vstupy byly
+čerstvé: značené trasy 30. 7. i výchozí body 31. 7., obojí už
+s rozšířeným jižním oknem kvůli Štěpánce): 16/16 chat, 33 přístupů,
+0 k ruční kontrole. Nové: Štěpánka z Příchovic 1,23 km, Špičák
+z Albrechtic 1,35 km, Lučanka z Horního Maxova 1,57 km, Krömerovka
+z Josefova Dolu (železnice) 4,36 km. Všechny čtyři stránky sekci
+„Odkud vyjít" renderují; časy a převýšení celé oblasti se doplní až
+během výšek — do té doby jizerské profily poctivě ukazují jen délky.
+
+**Příště:** ① Jediný klik na Michalovi: Actions „DATA-06: výšky
+přístupů" pro jizerske-hory (Mapy.com klíč žije jen tam) — pak má
+oblast zase časy a převýšení, nově pro 16 chat. ② Pokračovat
+jizerskou frontou (Sky Walk
 — ověřit zemi, nejspíš PL Świeradów; rozhledny Slovanka, Královka,
 Nad Prosečí…; Barbora přes barbora.org; Javor; Koryna). ③ Na Michalovi:
 výběr fotek v adminu a REDAKCE_GITHUB_TOKEN na Forge (recap poslán).
