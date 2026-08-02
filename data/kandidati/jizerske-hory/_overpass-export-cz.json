@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-30T10:03:02Z",
+    "timestamp_osm_base": "2026-08-02T15:53:36Z",
     "timestamp_areas_base": "2026-05-12T07:36:16Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
@@ -179,6 +179,22 @@
 },
 {
   "type": "node",
+  "id": 664100506,
+  "lat": 50.7201650,
+  "lon": 15.2281900,
+  "tags": {
+    "addr:country": "CZ",
+    "addr:housenumber": "ev.601",
+    "addr:place": "Nová Ves nad Nisou",
+    "addr:postcode": "46827",
+    "addr:provisionalnumber": "601",
+    "name:signed": "no",
+    "ref:ruian:addr": "12139220",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
   "id": 1314035613,
   "lat": 50.7882558,
   "lon": 15.1329625,
@@ -241,6 +257,16 @@
 },
 {
   "type": "node",
+  "id": 3418246133,
+  "lat": 50.7290692,
+  "lon": 15.1009363,
+  "tags": {
+    "name": "Tyršova chata",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
   "id": 4017819345,
   "lat": 50.7342399,
   "lon": 15.2388650,
@@ -270,6 +296,17 @@
     "name": "Barbora",
     "tourism": "alpine_hut",
     "website": "https://www.barbora.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 4342957855,
+  "lat": 50.7286258,
+  "lon": 15.1989707,
+  "tags": {
+    "name": "Kynast",
+    "tourism": "alpine_hut",
+    "website": "http://www.kynast.cz"
   }
 },
 {
@@ -1188,6 +1225,84 @@
     "ref:ruian:building": "23349531",
     "source": "cuzk:ruian",
     "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 203262780,
+  "center": {
+    "lat": 50.7182579,
+    "lon": 15.2393513
+  },
+  "nodes": [
+    2132552446,
+    2132552444,
+    2132552456,
+    2132552464,
+    2132552469,
+    2132552473,
+    2132552470,
+    2132552472,
+    2132552452,
+    5547056421,
+    5547056320,
+    2132552448,
+    2132552442,
+    2132552441,
+    2132552446
+  ],
+  "tags": {
+    "building": "detached",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "email": "info@chalupa-amalka.cz",
+    "phone": "+420736778395",
+    "ref:ruian:building": "19633068",
+    "source": "cuzk:ruian",
+    "tourism": "chalet",
+    "website": "https://www.chalupa-amalka.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 203319548,
+  "center": {
+    "lat": 50.7183610,
+    "lon": 15.2440106
+  },
+  "nodes": [
+    2133346818,
+    5547056039,
+    5547056037,
+    5547056036,
+    2133346820,
+    2133346830,
+    12229310470,
+    12229310469,
+    2133346828,
+    12229310466,
+    12229310467,
+    12229310468,
+    2133346818
+  ],
+  "tags": {
+    "addr:housenumber": "ev.112",
+    "addr:street": "Jelení kout",
+    "building": "detached",
+    "building:levels": "3",
+    "building:ruian:type": "8",
+    "check_date": "2024-10-04",
+    "check_date:internet_access": "2024-10-02",
+    "internet_access": "wlan",
+    "name": "Penzion Aron",
+    "operator": "Radmila Majerova",
+    "phone": "+420 602 241 457",
+    "ref:ruian:building": "19640404",
+    "smoking": "outside",
+    "source": "cuzk:ruian",
+    "tourism": "chalet",
+    "wheelchair": "no"
   }
 },
 {

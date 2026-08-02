@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-30T10:03:02Z",
-    "timestamp_areas_base": "2026-07-29T06:16:21Z",
+    "timestamp_osm_base": "2026-05-31T22:37:44Z",
+    "timestamp_areas_base": "2026-05-31T22:37:44Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -88,7 +88,8 @@
     1370090660
   ],
   "tags": {
-    "building": "hotel",
+    "amenity": "restaurant",
+    "building": "yes",
     "contact:email": "chatkagorzystow@o2.pl",
     "contact:facebook": "https://www.facebook.com/pages/Chatka-G%C3%B3rzyst%C3%B3w/148609605212071",
     "description": "Własność: prywatne. Otwarte: cały rok Ceny: 29 zł, „gleba” 12, pole namiotowe 10 zł, rabaty: HDK",
@@ -96,8 +97,8 @@
     "name:de": "Groß-Iser-Baude",
     "name:pl": "Chatka Górzystów",
     "note": "budynek nie ma oficjalnego adresu-sprawdzone w Starostwie Powiatowym Lwówek Śląski",
-    "phone": "+48 75 753 25 33;+48 607 426 998",
-    "restaurant": "yes",
+    "phone": "+48 75 753 25 33",
+    "phone_1": "+48 607 426 998",
     "shower": "yes",
     "toilets": "yes",
     "tourism": "alpine_hut",
