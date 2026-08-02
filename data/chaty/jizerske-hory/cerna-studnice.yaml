@@ -1,0 +1,161 @@
+# Rozhledna Černá studnice — profil založen 2. 8. 2026 PŘÍMO NA ZADÁNÍ
+# MICHALA (objekt ležel pod jižní hranou okna DATA-01, proto nemá
+# kandidátní soubor; hrana v scripts/oblasti.ts rozšířena na 50.70).
+# Křížové ověření: krajský portál + Treking.cz + regionální katalog;
+# 26 m a 91 schodů se shodují. GPS ze zadání, OSM identifikátor se
+# NEVYMÝŠLÍ — doplní ho příští běh DATA-01. Vše verified: false.
+
+nazev: Rozhledna Černá studnice
+slug: cerna-studnice
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Výška: dva prameny 869 m; jeden dodává, že „některé mapy uvádějí 865",
+# a Mapy.com v zadání nesou 872 — zapsáno 869, rozptyl přiznán v source.
+lat: 50.7119728
+lng: 15.2336017
+vyska: 869
+obec: Smržovka
+overeniLokace:
+  source: >-
+    Krajský portál liberecky-kraj.cz (načteno 2. 8. 2026): „Rozhledna
+    Černá Studnice (869 m n. m.)", „Ve Smržovce, nedaleko Jablonce nad
+    Nisou"; Treking.cz: „na stejnojmenném vrcholu Černé studnice
+    v nadmořské výšce 869 m (některé mapy uvádějí 865 m)", „v katastru
+    obce Smržovka". Mapy.com v zadání Michala uvádějí 872 m — rozptyl
+    865–872 nerozhodujeme, zapsána hodnota dvou shodných pramenů. GPS
+    ze zadání Michala 2. 8. 2026 (https://mapy.com/s/donadohaju);
+    OSM identifikátor doplní příští běh DATA-01. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Pole se nevyplňuje: chata u věže historicky ubytovávala („dřevěná
+# chata s ubytovnou"), jeden nedatovaný pramen ji ale vede jako
+# uzavřenou — aktuální stav ubytování nedoložen, nedomýšlí se.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Regionální katalog (regionalniprodukt.cz, systém krajského portálu,
+    načteno 2. 8. 2026): u věže funguje restaurace i kiosek —
+    „Rozhledna je přístupná v provozní době restaurace nebo kiosku.",
+    „Restaurace vaří do 16.30 hodin." Treking.cz: „chata je uzavřena
+    a turisté musí vzít zavděk restaurací" (nedatováno). Vlastní web
+    cernastudnice.eu existuje (vede stránky restaurace, kiosku
+    i rekonstrukce areálu), ze sandboxu se 2. 8. 2026 nenačetl
+    (timeout).
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Rozhledna je přístupná v provozní době restaurace nebo kiosku;
+  restaurace vaří do 16.30.
+kontakty:
+  telefon: '+420 774 305 830'
+  email: info@cernastudnice.eu
+  web: https://cernastudnice.eu/
+overeniProvoz:
+  source: >-
+    Regionální katalog (načteno 2. 8. 2026): vazba přístupnosti věže na
+    provoz restaurace/kiosku, „Restaurace vaří do 16.30 hodin", GSM
+    +420 774 305 830, e-mail info@cernastudnice.eu, web
+    cernastudnice.eu. Konkrétní denní hodiny katalog vypisuje jen útržkem
+    a Treking je uvádí s „pravděpodobně" — nezapisují se.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1905
+milniky:
+  - rok: 1885
+    udalost: Na vrcholu postavena dřevěná vyhlídka
+  - rok: 1905
+    udalost: >-
+      Dokončena 26metrová žulová rozhledna podle projektu jabloneckého
+      architekta Roberta Hemmricha (stavitel Corazza, stavba od roku
+      1904); spolu s ní vznikala i přilehlá dřevěná chata s ubytovnou
+      a hostinskou místností
+overeniHistorie:
+  source: >-
+    Krajský portál liberecky-kraj.cz (načteno 2. 8. 2026): dřevěná
+    vyhlídka „již v roce 1885", věž „v letech 1904-5", „vyprojektoval
+    úspěšný jablonecký architekt Robert Hemmrich", „stavitel Corazza",
+    „26 m vysoká žulová rozhledna", „Spolu s rozhlednou vznikala
+    i přilehlá dřevěná chata s ubytovnou a hostinskou místností".
+    Treking.cz: „kamenná rozhledna z roku 1905", 26 m, plošina ve 21 m,
+    91 schodů.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Žulová rozhledna z roku 1905 na vrcholu Černé studnice (869 m) nad
+  Smržovkou, podle projektu jabloneckého architekta Roberta Hemmricha.
+  Na plošinu v jednadvaceti metrech vede 91 schodů a věž má otevřeno,
+  když má otevřeno restaurace nebo kiosek u její paty.
+text:
+  - >-
+    Černostudniční hřeben je nejjižnější výspa Jizerských hor — a jeho
+    vrchol nese jednu z nejhezčích kamenných věží v okolí. Dřevěná
+    vyhlídka tu stála už roku 1885; dnešní žulovou rozhlednu podle
+    projektu jabloneckého architekta Roberta Hemmricha dokončil
+    stavitel Corazza v roce 1905.
+  - >-
+    Věž měří 26 metrů, vyhlídková plošina je v jednadvaceti a vede na
+    ni 91 schodů. Výhled obsáhne Jizerky, Krkonoše i Černostudniční
+    hřeben pod vámi; na nadmořské výšce se prameny úplně neshodnou —
+    dva uvádějí 869 metrů, mapy 865 až 872 — a my ten rozptyl
+    nerozhodujeme.
+  - >-
+    Spolu s věží vyrostla i dřevěná chata s ubytovnou a hostinskou
+    místností. Dnes u paty věže funguje restaurace a kiosek — a platí
+    tu stejné pravidlo jako na Rašovce: rozhledna je přístupná
+    v provozní době restaurace nebo kiosku, kuchyně vaří do půl páté.
+    Jestli se v chatě dá znovu i spát, doložené nemáme — jeden pramen
+    ubytovnu vede jako uzavřenou.
+  - >-
+    Údaje na téhle stránce pocházejí z krajského katalogu
+    a z horského magazínu; souřadnice jsou ze zadání redakce. Vlastní
+    web areálu se nám zatím nepodařilo načíst. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Krajský portál liberecky-kraj.cz — dřevěná vyhlídka 1885, žulová
+      věž 1904–05 (Hemmrich, Corazza), 26 m, 869 m n. m., chata
+      s ubytovnou a hostinskou místností, Smržovka (načteno 2. 8. 2026)
+    url: https://www.liberecky-kraj.cz/dr-cs/1017-rozhledna-cerna-studnice.html
+  - popis: >-
+      Treking.cz — rok 1905, 26 m s plošinou ve 21 m, 91 schodů, 869 m
+      (některé mapy 865), katastr Smržovky, přístupy po značkách
+      (načteno 2. 8. 2026)
+    url: https://www.treking.cz/regiony/cerna-studnice-rozhledna.htm
+  - popis: >-
+      Regionální katalog regionalniprodukt.cz — věž přístupná v provozní
+      době restaurace nebo kiosku, kuchyně do 16.30, kontakty areálu
+      (načteno 2. 8. 2026)
+    url: https://www.regionalniprodukt.cz/dr-cs/1017-rozhledna-cerna-studnice.html
+  - popis: Vlastní web areálu (2. 8. 2026 nedostupný ze sandboxu)
+    url: https://cernastudnice.eu/
+interniPoznamky: >-
+  Založeno 2. 8. 2026 PŘÍMO NA ZADÁNÍ MICHALA („ještě mi tam chybí
+  třeba Černá studnice") — objekt ležel pod jižní hranou okna DATA-01
+  (50.7120 < 50.73), proto nemá kandidátní soubor. Hrana okna
+  v scripts/oblasti.ts rozšířena na 50.70 (Černostudniční hřeben celý).
+  PO ROZŠÍŘENÍ SPUSTIT: DATA-01 (jizerske-hory) — doplní OSM
+  identifikátor a případné další objekty jižního pásu (pozor na párování
+  s tímhle slugem), DATA-06 export značených tras + výchozích bodů
+  (starší exporty jižní pás nemají — bez nich se trasa nedopočítá),
+  pak routing a výšky.
+
+  NEDOLOŽENO (nezapsáno): aktuální stav ubytování, denní otvírací
+  hodiny (útržkovité/nejisté), OSM id, počet míst restaurace. Rozptyl
+  výšky 865–872 m (zapsáno 869 dle dvou pramenů; Mapy.com v zadání 872).
+  Vlastní web cernastudnice.eu načíst příště (timeout) — vede stránky
+  „Rekonstrukce areálu", může nést novější stav než katalogy.

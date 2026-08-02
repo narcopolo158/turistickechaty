@@ -69,20 +69,25 @@ export const OBLASTI: OblastKonfig[] = [
     // polská Góry Izerskie po Świeradów-Zdrój a Szklarską Porębę.
     // Na východě se okno vědomě mírně překrývá s krkonošským (Jizerka /
     // Harrachov) — duplicity řeší kandidátní triáž, ne ořez okna.
-    // Jižní hrana 50.73 (dřív 50.75): první běh rozhleden nad Krkonošemi
-    // (29. 7. 2026) vyplavil dva jizerskohorské objekty, které krkonošské
-    // okno chytilo a jizerské minulo o pár set metrů — rozhledna Štěpánka
-    // (50.7465) a Maják Járy Cimrmana v Příchovicích (50.7399). Přehledy
-    // Libereckého kraje i Kudy z nudy je vedou v Jizerských horách, hrana
-    // byla tedy vedená příliš vysoko; objekty cizí nejsou.
-    bbox: { latMin: 50.73, lngMin: 15.05, latMax: 51.02, lngMax: 15.45 },
+    // Jižní hrana 50.70 (dřív 50.75 → 50.73 → 50.70): hrana se posouvá
+    // už potřetí a pokaždé ze stejného důvodu — jižní hřebeny Jizerek
+    // jsou pořád Jizerky. 29. 7. 2026 ji na 50.73 stáhly Štěpánka
+    // (50.7465) a Maják Járy Cimrmana (50.7399), které chytilo krkonošské
+    // okno; 2. 8. 2026 Michal doplnil rozhlednu Černá studnice (50.7120,
+    // Černostudniční hřeben, katastr Smržovky), která ležela i pod novou
+    // hranou → 50.70, aby okno pokrylo celý Černostudniční hřeben.
+    // Po každém posunu je potřeba znovu spustit DATA-01 i oba exporty
+    // DATA-06 (značené trasy, výchozí body) — starší exporty jižní pás
+    // nemají.
+    bbox: { latMin: 50.7, lngMin: 15.05, latMax: 51.02, lngMax: 15.45 },
     // Jižní hranu 3D okna drží stejně nízko jako okno dotazu: první běh
     // DATA-01 (28. 7. 2026) našel na jihozápadním úbočí nad Lučany
     // a Bedřichovem tři chaty z deseti (Barbora, Koryna, Lučanka) a užší okno
     // 50.78 by je z modelu tiše vyřízlo. Terén tam pořád stoupá, není to
-    // město. Rozšíření na 50.73 (29. 7. 2026) drží stejné pravidlo pro
-    // Štěpánku a Maják — jinak by je model vynechal, i když je vedeme.
-    bbox3d: { latMin: 50.73, lngMin: 15.1, latMax: 50.98, lngMax: 15.42 },
+    // město. Rozšíření na 50.73 (29. 7. 2026) drželo stejné pravidlo pro
+    // Štěpánku a Maják; 2. 8. 2026 hrana klesla na 50.70 spolu s oknem
+    // dotazu (Černá studnice na Černostudničním hřebeni).
+    bbox3d: { latMin: 50.7, lngMin: 15.1, latMax: 50.98, lngMax: 15.42 },
     poznamka: 'druhá oblast (rozhodnutí Michala 28. 7. 2026) — přeshraniční s Górami Izerskimi',
     katalogPohori: ['Jizerské hory', 'Góry Izerskie'],
   },

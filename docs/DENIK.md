@@ -11,6 +11,35 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (blok 11) — Černá studnice na zadání Michala; jižní okno potřetí a snad naposledy
+
+**Povýšení č. 17 — Rozhledna Černá studnice (869 m, Smržovka).** Michal:
+„ještě mi tam chybí třeba Černá studnice". Příčina stejná jako dřív
+u Štěpánky a Majáku: objekt (50.7120) ležel POD jižní hranou okna
+DATA-01 (50.73). Hrana v `scripts/oblasti.ts` proto klesla potřetí —
+50.75 → 50.73 → **50.70** — aby pokryla celý Černostudniční hřeben;
+komentář u okna teď říká i to, že po každém posunu je nutné znovu
+spustit DATA-01 a oba exporty DATA-06.
+
+Profil vznikl přímo z pramenů (bez kandidáta — vysvětleno v poznámkách):
+žulová věž 1905 od jabloneckého architekta Roberta Hemmricha (stavitel
+Corazza), dřevěná vyhlídka už 1885, 26 m / 91 schodů, chata s ubytovnou
+od počátku — dnes doložená restaurace a kiosek, věž přístupná v jejich
+provozní době (vzor Rašovka). Ubytování dnes nedoloženo (jeden
+nedatovaný pramen: chata uzavřena) — pole prázdné. Výška: prameny 869,
+mapy 865–872 (Mapy.com v zadání 872) — zapsáno 869, rozptyl přiznán.
+GPS ze zadání; OSM id se NEVYMÝŠLÍ, doplní ho příští DATA-01. Stránka
+ověřena naostro, kontrola zelená.
+
+**Příště — POŘADÍ KLIKŮ pro Michala (kvůli rozšířenému oknu):**
+① DATA-01 (jizerske-hory) — doplní OSM id Černé studnice a vyplaví
+případné další objekty pásu 50.70–50.73; ② DATA-06 „export značených
+tras" (jizerske-hory); ③ DATA-06 „výchozí body" (jizerske-hory) —
+starší exporty jižní pás nemají, bez nich se trasa k Černé studnici
+nedopočítá; pak já routing; ④ DATA-06 „výšky přístupů". Pokud už běží
+výšky pro současných 23 chat, nevadí — Černá studnice se sveze
+s další rundou.
+
 ## 2026-08-02 (blok 10) — Sky Walk bydlí pod /polsko; jizerská fronta bez CZ rozhleden
 
 **Povýšení č. 16 — Sky Walk (Świeradów-Zdrój, zeme: pl).** Adresa
