@@ -43,9 +43,15 @@ pryč — neověřenost nese systém ověření, ne závorka v textu). Stejně t
 už dřív napsané dopravní řádky středisek („podle oficiálního webu města"
 vyčištěno ještě před commitem dopravy).
 
-**Příště:** pokračovat v úklidu prózy od nejhorších (kolínská 6, Jelenka 6,
-Rychorská 5, Portášky 5, Jelení Louky 5…) — počítadlo v ban-scanu; a doprava
-zbylých středisek.
+**Dodatek: Kolínská bouda a Jelenka přepsány týmž způsobem** (dohromady
+12 vsuvek pryč). U obou zůstala epistemika rozporů, jen beze jmen: „jeden
+pramen píše o 26 hostech ve čtyřech pokojích, druhý popisuje rozložení
+docela jiné" — kdo je kdo, stojí dole ve zdrojích. Počítadlo kleslo
+133 → 114.
+
+**Příště:** pokračovat v úklidu prózy od nejhorších (Rychorská 5, Portášky 5,
+Jelení Louky 5, chata-jeleni-louky…) — počítadlo běží v každé kontrole;
+a doprava zbylých středisek.
 
 ## 2026-08-02 (dopoledne) — doprava u tří středisek z oficiálních webů měst; ranní běh zkontrolován
 

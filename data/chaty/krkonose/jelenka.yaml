@@ -120,8 +120,8 @@ overeniSluzby:
 # ── Provoz ────────────────────────────────────────────────────────────────
 sezona: celoročně
 otviraciDoba: |-
-  Dle OSM tagu (neověřeno) po–ne 8:00–18:00; Kudy z nudy uvádí celoroční provoz
-  bez konkrétní otvírací doby — ověřit přímo u boudy.
+  Po–ne 8:00–18:00 (údaj z mapových dat, ověřený není); uvádí se i celoroční
+  provoz. Před cestou ověřit přímo u boudy.
 kontakty:
   telefon: +420 499 895 105
   email: chata.jelenka@seznam.cz
@@ -139,8 +139,7 @@ overeniProvoz:
 
 # ── Přístup ───────────────────────────────────────────────────────────────
 autem: |-
-  Autem k boudě nelze — oblast je chráněná. Nejbližší parkoviště jsou ve
-  vzdálenosti 2–4 km (dle Kudy z nudy, neověřeno).
+  Autem k boudě nelze — oblast je chráněná. Nejbližší parkoviště jsou ve vzdálenosti 2–4 km.
 
 # ── Historie ──────────────────────────────────────────────────────────────
 # rokVzniku = rok postavení CHATY. Týž pramen ale píše, že kiosek pro turisty
@@ -172,8 +171,8 @@ overeniHistorie:
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
-  Hřebenová bouda mezi Pomezními boudami a Sněžkou (1 260 m; Kudy z nudy jako
-  jediný uvádí 1 263 m). Postavit ji dal podle jednoho z pramenů roku 1936
+  Hřebenová bouda mezi Pomezními boudami a Sněžkou (1 260 m; jediný z pramenů
+  uvádí 1 263 m). Postavit ji dal podle jednoho z pramenů roku 1936
   hrabě Czernin-Morzin, jméno má po vodním prameni Emmy. Kolik nabízí lůžek,
   se prameny neshodnou — buď 26 ve čtyřech pokojích, nebo 25 v pěti. Autem se
   k ní nedostanete.
@@ -181,47 +180,39 @@ text:
   - >-
     Jelenka — úředně Horská bouda Jelenka, německy Emmaquellenbaude — stojí na
     hlavním krkonošském hřebeni mezi Pomezními boudami a Sněžkou; adresou
-    patří pod Horní Malou Úpu 122. Ve výšce se prameny mírně rozcházejí:
-    OpenStreetMap, obecní web Malé Úpy i server Krkonose.eu uvádějí shodně
-    1 260 metrů, Kudy z nudy jako jediný 1 263. Bouda stojí na křižovatce
-    turistických cest, jak píše web obce i Krkonose.eu; autem se k ní dojet
-    nedá, protože je oblast chráněná, a nejbližší parkoviště jsou podle Kudy
-    z nudy dva až čtyři kilometry daleko.
+    patří pod Horní Malou Úpu 122. Ve výšce se prameny mírně rozcházejí: tři se shodují na 1 260 metrech,
+    čtvrtý jako jediný uvádí 1 263. Bouda stojí na křižovatce turistických
+    cest; autem se k ní dojet nedá, protože je oblast chráněná, a nejbližší
+    parkoviště jsou dva až čtyři kilometry daleko.
   - >-
-    Postavit chatu dal podle serveru Krkonose.eu v roce 1936 hrabě
-    Czernin-Morzin, a to na svém panství — to podle téhož zdroje sahalo až na
-    vrchol Sněžky. Turisté se tu ale zastavovali už předtím: podle Krkonose.eu
-    tady tehdy stál kiosek. Jméno má bouda po vodním prameni Emmy, který z ní
-    vyvěrá, a německy se jí proto říkalo Emma-quelle Baude. Kdo a kdy postavil
-    kiosek ani kdy se z Emmaquellenbaude stala Jelenka, se z dosažitelných
-    pramenů dozvědět nedá — a Krkonose.eu neuvádí, odkud svou verzi má.
+    Postavit chatu dal podle jediného pramene, který o historii mluví, v roce
+    1936 hrabě Czernin-Morzin, a to na svém panství — to sahalo až na vrchol
+    Sněžky. Turisté se tu ale zastavovali už předtím: tehdy tu stál kiosek. Jméno má bouda po vodním prameni Emmy, který z ní
+    vyvěrá, a německy se jí proto říkalo Emma-quelle Baude. Kdo a kdy postavil kiosek ani kdy se z Emmaquellenbaude stala Jelenka, se
+    z dosažitelných pramenů dozvědět nedá — a ten jediný pramen neuvádí,
+    odkud svou verzi má.
   - >-
-    Kolik lidí se do boudy vejde, záleží na tom, koho se zeptáte. Kudy z nudy
-    píše o 26 hostech ve čtyřech pokojích — dvou čtyřlůžkových, jednom
-    šestilůžkovém a jednom dvanáctilůžkovém. Server Krkonose.eu popisuje
-    rozložení docela jiné: 25 lůžek v pěti pokojích po třech, čtyřech,
+    Kolik lidí se do boudy vejde, záleží na tom, koho se zeptáte. Jeden pramen píše o 26 hostech ve čtyřech pokojích — dvou čtyřlůžkových,
+    jednom šestilůžkovém a jednom dvanáctilůžkovém. Druhý popisuje rozložení
+    docela jiné: 25 lůžek v pěti pokojích po třech, čtyřech,
     čtyřech, šesti a osmi lůžkách, část z nich na palandách. O překlep
     v jednom čísle nejde, obě varianty dávají vlastní součet — spíš jde o dva
     různé stavy domu z různých let a který platí dnes, nevíme; v přehledu
     proto vedeme opatrnější nižší číslo. Přespat se dá
-    i ve vlastním spacáku a v pokojích teče teplá i studená voda. Sporná je
-    i podoba sociálního zázemí: Kudy z nudy popisuje společné zařízení se
-    sprchou na patře, obecní web Malé Úpy naopak píše o sociálním zařízení
-    přímo na pokoji.
+    i ve vlastním spacáku a v pokojích teče teplá i studená voda. Sporná je i podoba sociálního zázemí: jeden pramen popisuje společné
+    zařízení se sprchou na patře, druhý naopak sociální zařízení přímo na
+    pokoji.
   - >-
-    Restaurace nabízí podle Kudy z nudy teplá i studená jídla, točené pivo
-    a limonádu; web Malé Úpy dodává jen tolik, že stravování je k dispozici.
-    Otvírací doba po–ne od 8:00 do 18:00 pochází z OpenStreetMap a ověřená
-    není; Kudy z nudy mluví o celoročním provozu, konkrétní hodiny ale
-    neuvádí. Výslovně doložené není ani to, že restaurace obsluhuje
-    kolemjdoucí. Domácí mazlíčci jsou podle webu obce povoleni, rozporná je
-    naopak Wi-Fi: OpenStreetMap ji u boudy vede jako dostupnou a bezplatnou,
-    web Malé Úpy uvádí, že k dispozici není. Jako majitele obecní web jmenuje
-    Pavla Hofmana.
+    Restaurace nabízí teplá i studená jídla, točené pivo a limonádu; jinde se
+    dočtete jen tolik, že stravování je k dispozici. Otvírací doba po–ne od
+    8:00 do 18:00 pochází z mapových dat a ověřená není; mluví se i o
+    celoročním provozu, konkrétní hodiny ale chybí. Výslovně doložené není ani to, že restaurace obsluhuje
+    kolemjdoucí. Domácí mazlíčci jsou povoleni, rozporná je naopak Wi-Fi: mapová data ji u
+    boudy vedou jako dostupnou a bezplatnou, podle jiného pramene k dispozici
+    není. Jako majitel se uvádí Pavel Hofman.
   - >-
-    Historii boudy nese jediný dosažitelný pramen, server Krkonose.eu, a ten
-    neuvádí, odkud ji má; Kudy z nudy zmiňuje jen nedávnou rekonstrukci, kterou
-    ale nedatuje. Ostatní údaje pocházejí ze sekundárních médií
+    Historii boudy nese jediný dosažitelný pramen a ten neuvádí, odkud ji má;
+    jinde se zmiňuje jen nedávná rekonstrukce, bez data. Ostatní údaje pocházejí ze sekundárních médií
     a z OpenStreetMap a nic z toho jsme zatím neověřili vlastním dotazem. Před
     cestou proto doporučujeme potvrdit si přímo u boudy počet lůžek, podobu
     sociálního zázemí, dostupnost Wi-Fi i otvírací dobu restaurace.
