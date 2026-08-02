@@ -1,0 +1,128 @@
+# Chata Pláně pod Ještědem — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2. 8. 2026 (pokyn Michala „povýš pět ještědských kandidátů"). Nejsilnější
+# kandidát oblasti: restaurace výslovně pro veřejnost s otvírací dobou na
+# vlastním webu, druhý pramen oficiální stránky obce Světlá pod Ještědem.
+# Vše verified: false — z webů, redakce neověřila vlastním dotazem.
+
+nazev: Chata Pláně pod Ještědem
+slug: plane-pod-jestedem
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jestedsky-hrbet
+zajimavosti:
+  - text: >-
+      Patří Klubu českých turistů a stojí přímo na Ještědském hřebeni,
+      2,5 km od vrcholu Ještědu
+    kategorie: jine
+    zdroj: web chaty chataplane.cz (načteno 2. 8. 2026)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7207109
+lng: 15.0032245
+vyska: 780
+obec: Světlá pod Ještědem
+overeniLokace:
+  source: >-
+    Web chaty chataplane.cz (načteno 2. 8. 2026): „780 m.n.m. přímo na
+    Ještědském hřebeni, 2,5 km od vrcholku Ještědu". Obec Světlá pod
+    Ještědem: chatu vede oficiální web obce v sekci ubytování
+    (svetlapodjestedem.cz). GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/6271348193 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 86
+pokoje:
+  - typ: Hlavní budova s restaurací — 20 lůžek (vyšší standard)
+  - typ: Vedlejší budova — 66 lůžek (turistické ubytování)
+overeniNocleh:
+  source: >-
+    Web chaty chataplane.cz (načteno 2. 8. 2026): „20 lůžek v hlavní
+    budově" s vyšším standardem a „66 lůžek ve vedlejší budově"
+    s turistickým ubytováním — dohromady 86. Jediný pramen, verified:false.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Web chaty chataplane.cz/restaurace (načteno 2. 8. 2026): „Tradiční
+    česká kuchyně, která nezapomíná na vegetariány", místní suroviny
+    a lesní bylinky; restaurace se zveřejněnou otvírací dobou pro
+    veřejnost — jde o podnik otevřený kolemjdoucím, ne jen ubytovaným.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Restaurace po–čt 11:00–20:00, pá 11:00–22:00, so 10:30–22:00,
+  ne 10:30–19:00; otevřeno i o svátcích.
+sezona: celoročně
+kontakty:
+  telefon: '+420 777 400 121'
+  email: info@chataplane.cz
+  web: https://chataplane.cz/
+overeniProvoz:
+  source: >-
+    Web chaty chataplane.cz (načteno 2. 8. 2026): otvírací doba restaurace
+    po dnech, „známou horskou restaurací s celoročním provozem", telefon
+    777 400 121, e-mail info@chataplane.cz. Jediný pramen, verified:false.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata Klubu českých turistů přímo na Ještědském hřebeni (780 m),
+  2,5 kilometru od vrcholu Ještědu. Restaurace s tradiční českou kuchyní
+  má celoroční provoz a otevřeno pro veřejnost každý den; spí se tu
+  na 86 lůžkách ve dvou budovách.
+text:
+  - >-
+    Chata Pláně stojí v lokalitě Pláně pod Ještědem přímo na hřebeni,
+    ve výšce 780 metrů a zhruba dva a půl kilometru od vrcholu Ještědu;
+    adresou patří k obci Světlá pod Ještědem. Vlastní ji Klub českých
+    turistů a v průvodci je přesně tím, čím má hřebenová chata být:
+    zastávkou na trase, kde se nají i ten, kdo jde jen kolem.
+  - >-
+    Restaurace vaří tradiční českou kuchyni, která podle vlastních slov
+    nezapomíná na vegetariány, z místních surovin a lesních bylinek.
+    Otevřeno je každý den včetně svátků — ve všední dny od jedenácti,
+    o víkendu už od půl jedenácté — a provoz je celoroční. Přesné hodiny
+    uvádíme v přehledu; jako u všech časových údajů platí, že se mění
+    snáz, než stačíme kontrolovat.
+  - >-
+    Nocleh nabízí chata na šestaosmdesáti lůžkách ve dvou budovách:
+    dvacet jich je v hlavní budově s restaurací a vyšším standardem,
+    šestašedesát ve vedlejší budově s turistickým ubytováním. Kdo chce
+    horskou klasiku, spí vedle; kdo pohodlí, v hlavní budově.
+  - >-
+    Údaje na téhle stránce pocházejí z webu chaty a z oficiálních stránek
+    obce Světlá pod Ještědem, které chatu vedou v přehledu ubytování;
+    polohu nese OpenStreetMap. Redakce zatím nic neověřila vlastním
+    dotazem ani návštěvou — před cestou s noclehem doporučujeme zavolat.
+zdroje:
+  - popis: >-
+      Web chaty — poloha a výška, kapacita obou budov, restaurace
+      s otvírací dobou, celoroční provoz, kontakty (načteno 2. 8. 2026)
+    url: https://chataplane.cz/
+  - popis: >-
+      Oficiální stránky obce Světlá pod Ještědem — chata v přehledu
+      ubytování (druhý pramen existence a příslušnosti k obci)
+    url: https://www.svetlapodjestedem.cz/zivot-v-obci/turistika/ubytovani/chata-plane-23cs.html
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+    url: https://www.openstreetmap.org/node/6271348193
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jestedsky-hrbet/plane-pod-jestedem.yaml
+  triáží 2. 8. 2026 na pokyn Michala („povýš pět ještědských kandidátů").
+  Křížové ověření v poznámkách kandidáta. Název dle vlastního webu
+  „Chata Pláně pod Ještědem" (OSM nese jen „Pláně pod Ještědem").
+
+  NEDOLOŽENO (nezapsáno): historie a rok vzniku (žádný pramen ji
+  nevypráví), přístupové trasy s délkami, Wi-Fi, platba kartou, psi.

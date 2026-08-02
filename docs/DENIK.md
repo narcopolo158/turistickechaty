@@ -11,6 +11,42 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-03 (ráno) — pět ještědských profilů povýšeno; hřbet má první publikované chaty
+
+**Zadání Michala:** *„povýš pět ještědských kandidátů a pracuj dál
+samostatně."*
+
+Všech pět kandidátů s hotovým křížovým ověřením má teď plný profil
+v `data/chaty/jestedsky-hrbet/` — první publikované objekty téhle oblasti:
+
+- **Chata Pláně pod Ještědem** — nejúplnější: 780 m, 86 lůžek ve dvou
+  budovách (20 + 66), restaurace KČT chaty s otvírací dobou po dnech
+  a celoročním provozem. Jediný z pěti s vyplněnou otvírací dobou.
+- **Hotel Ještěd** — vrcholová ikona v roli chaty: 1 012 m, milníková osa
+  1907 (první chata) → 1963 (požár) → 1966–73 (Hubáčkova stavba) → 1969
+  (Perretova cena) → 2000 (Stavba století) → 2006 (národní kulturní
+  památka). Restaurace a bufet; kapacitu hotel neuvádí, tak ji neuvádíme.
+- **Rozhledna Rašovka** — vzor Žalý: rozhledna (2006, 22,5 m, první
+  soukromá zděná v novodobé historii ČR) s restaurací, jejíž otvírací
+  dobou se řídí i věž.
+- **Bouda Tetřeví sedlo** — kiosek na Výpřeži po vzoru jizerských
+  (Hřebínek, Knajpa): jednoduchá jídla k pivu, nocleh ne.
+- **Horská chata Ještědka** — 23 lůžek; próza PŘIZNÁVÁ otevřenou otázku,
+  jestli hospůdka obslouží kolemjdoucího (web míří na skupinové pronájmy)
+  — `typObcerstveni` se proto nevyplňuje.
+
+Všude nová konvence prózy (žádné vsuvky, prameny dole), `verified: false`
+všude, nedoložené věci vyjmenované v interních poznámkách místo domýšlení
+(u Rašovky ani `nocleh: ne` — žádný pramen ho nezmiňuje, tak pole prostě
+není). Kolize jmen: 0. Seed proběhl, všech pět stránek i stránka oblasti
+vracejí 200, JSON-LD Hotelu Ještěd nese elevation 1012. 738/738 testů,
+kontrola celá zelená.
+
+**Fronta oblasti: hotovo.** Ještědský hřbet má 0 kandidátů ve frontě
+(5 povýšeno, 1 odloženo, 2 vyřazeno) — první oblast se zcela prázdnou
+triáží. **Na tobě:** fotky pro 5 nových profilů (DATA-02 pro
+jestedsky-hrbet = klik v Actions) a přístupové trasy (DATA-06 tamtéž).
+
 ## 2026-08-02 (pozdě večer) — triáž Ještědského hřbetu: všech osm kandidátů rozhodnuto
 
 **Pokračování bez ptaní.** Po dokončení prózy přišla na řadu fronta — a začal

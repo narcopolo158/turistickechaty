@@ -1,0 +1,119 @@
+# Rozhledna Rašovka — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2. 8. 2026 (pokyn Michala „povýš pět ještědských kandidátů"). Rozhledna
+# s restaurací — klíč zařazení dle rozhodnutí Michala z 28. 7. 2026
+# (rozhledny bereme jen s občerstvením). Vše verified: false.
+
+nazev: Rozhledna Rašovka
+slug: rasovka
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jestedsky-hrbet
+zajimavosti:
+  - text: >-
+      První soukromá zděná rozhledna v novodobé historii České republiky
+      (postavena 2006, 22,5 m)
+    kategorie: jine
+    zdroj: >-
+      turistický portál Libereckého kraje, liberecky-kraj.cz (načteno
+      2. 8. 2026)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Výška obce/stanoviště nedoložena — neuvádí se (22,5 m je výška VĚŽE).
+lat: 50.697657
+lng: 15.048447
+obec: Šimonovice
+overeniLokace:
+  source: >-
+    Turistický portál Libereckého kraje (liberecky-kraj.cz, načteno
+    2. 8. 2026): rozhledna stojí „na kraji osady Rašovka (součást obce
+    Šimonovice) u Liberce" na Ještědském hřbetu. Nadmořská výška
+    stanoviště v prameni není — neuvádí se. GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/3482042418 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Žádný pramen nocleh nezmiňuje — pole se nevyplňuje (nedomýšlet ani „ne").
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Turistický portál Libereckého kraje (liberecky-kraj.cz, načteno
+    2. 8. 2026): u rozhledny funguje restaurace — „minutková kuchyně
+    včetně domácích dezertů"; otvírací doba věže „je stejná jako
+    otevírací doba přilehlé restaurace". Přesné hodiny pramen neuvádí.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    Turistický portál Libereckého kraje (načteno 2. 8. 2026): otvírací
+    doba rozhledny se řídí restaurací, konkrétní hodiny ani sezóna
+    v prameni nejsou — nezapisují se.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 2006
+milniky:
+  - rok: 2006
+    udalost: >-
+      Postavena zděná rozhledna vysoká 22,5 metru — první soukromá zděná
+      rozhledna novodobé české historie
+overeniHistorie:
+  source: >-
+    Turistický portál Libereckého kraje (liberecky-kraj.cz, načteno
+    2. 8. 2026): „od roku 2006", „22,5 m vysoká", „první soukromá zděná
+    rozhledna v novodobé historii České republiky".
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Zděná rozhledna z roku 2006 na kraji osady Rašovka nad Libercem,
+  vysoká 22,5 metru — první soukromá zděná rozhledna novodobé české
+  historie. U věže je restaurace s minutkovou kuchyní; rozhledna má
+  otevřeno, když má otevřeno restaurace.
+text:
+  - >-
+    Rašovka stojí na jižním konci Ještědského hřbetu, na kraji stejnojmenné
+    osady patřící k obci Šimonovice. Do průvodce ji řadí totéž pravidlo
+    jako krkonošský Žalý: rozhoduje občerstvení pro turisty, ne to,
+    jestli je stavba bouda, nebo věž.
+  - >-
+    Věž je mladá a svým způsobem průkopnická: postavena byla v roce 2006,
+    měří 22,5 metru a je první soukromou zděnou rozhlednou v novodobé
+    historii České republiky.
+  - >-
+    U rozhledny funguje restaurace s minutkovou kuchyní a domácími
+    dezerty — a provoz obou je spojený doslova: otvírací doba věže je
+    stejná jako otvírací doba restaurace. Konkrétní hodiny prameny
+    neuvádějí, takže je neuvádíme ani my; před cestou se vyplatí ověřit,
+    že je otevřeno.
+  - >-
+    Údaje na téhle stránce pocházejí z turistického portálu Libereckého
+    kraje; polohu nese OpenStreetMap. Redakce zatím nic neověřila
+    vlastním dotazem ani návštěvou. Nedoložený zůstává vztah rozhledny
+    a sousední restaurace V Trnčí — jestli jde o týž provoz, si necháme
+    potvrdit.
+zdroje:
+  - popis: >-
+      Turistický portál Libereckého kraje — rok 2006, výška věže 22,5 m,
+      prvenství, restaurace a společná otvírací doba, osada Rašovka
+      (Šimonovice), načteno 2. 8. 2026
+    url: https://www.liberecky-kraj.cz/dr-cs/5875-rozhledna-rasovka.html
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+    url: https://www.openstreetmap.org/node/3482042418
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jestedsky-hrbet/rasovka.yaml triáží 2. 8. 2026
+  na pokyn Michala. Klíč: rozhledna s občerstvením (rozhodnutí 28. 7. 2026).
+
+  NEDOLOŽENO (nezapsáno): nadmořská výška stanoviště, nocleh (žádný pramen
+  ho nezmiňuje — pole prázdné, ne „ne"), otvírací hodiny, vztah k sousední
+  restauraci V Trnčí (možná týž provoz — prověřit), kontakty.

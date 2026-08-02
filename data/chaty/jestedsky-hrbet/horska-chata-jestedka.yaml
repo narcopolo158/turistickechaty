@@ -1,0 +1,123 @@
+# Horská chata Ještědka — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2. 8. 2026 (pokyn Michala „povýš pět ještědských kandidátů"). POZOR:
+# web chaty míří na skupinové pronájmy — jestli obslouží kolemjdoucího,
+# je otevřená otázka a próza ji přiznává. Vše verified: false.
+
+nazev: Horská chata Ještědka
+slug: horska-chata-jestedka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jestedsky-hrbet
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Výška nedoložena — neuvádí se.
+lat: 50.7303225
+lng: 14.9865574
+obec: Světlá pod Ještědem
+overeniLokace:
+  source: >-
+    Web chaty chatajestedka.cz (načteno 2. 8. 2026): chata stojí „v sedle
+    pod vrcholem Ještědu" s výhledy na Liberec. Obec Světlá pod Ještědem
+    dle ubytovacích katalogů (penzion.cz, hotel.cz: „Chata Ještědka,
+    Světlá pod Ještědem") — poštovní pramen, DATA-20. Nadmořská výška
+    v pramenech není — neuvádí se. GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/1488735697 (tag tourism=alpine_hut)
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 23
+pokoje:
+  - typ: 7 pokojů
+  - typ: Rodinný apartmán — 5 lůžek
+overeniNocleh:
+  source: >-
+    Web chaty chatajestedka.cz (načteno 2. 8. 2026), doslova: „Chata
+    disponujeme kapacitou 23 lůžek v 7 pokojích a jednom rodinném
+    apartmánu s 5 lůžky". Jediný pramen, verified:false.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni se nevyplňuje: hospůdka s barem je doložená jako součást
+# chaty, ale komu slouží (kolemjdoucím × jen ubytovaným skupinám), doloženo
+# není — viz próza.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    Web chaty chatajestedka.cz (načteno 2. 8. 2026): „velký společenský
+    prostor ve stylu pravé horské hospůdky s kamny, s vlastním barem";
+    u skupinových pronájmů „Ve stylové restauraci si můžete denně pořádat
+    své akce včetně vaření pokrmů a servírování nápojů". Web míří na
+    SKUPINOVÉ pronájmy (titulek „Skupinové rezervace 2026/2027") —
+    obsluha kolemjdoucích doložená není, próza to přiznává.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 220 770 727'
+  email: sales@chatajestedka.cz
+  web: https://www.chatajestedka.cz/
+overeniProvoz:
+  source: >-
+    Web chaty chatajestedka.cz (načteno 2. 8. 2026): telefon
+    +420 220 770 727, e-mail sales@chatajestedka.cz; ceníky vypsané pro
+    období roku 2026 — sezóna ani otvírací doba výslovně uvedeny nejsou,
+    nezapisují se.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Stylová horská chata v sedle pod vrcholem Ještědu s výhledy na Liberec.
+  Ubytuje 23 hostů v sedmi pokojích a rodinném apartmánu a má hospůdku
+  s barem — web ale míří hlavně na skupinové pronájmy, takže jestli
+  obslouží i kolemjdoucího, si před cestou ověřte.
+text:
+  - >-
+    Ještědka stojí v sedle pod vrcholem Ještědu, kousek pod hlavní
+    hřebenovou trasou, a vlastními slovy nabízí výhledy na Liberec;
+    adresou patří k obci Světlá pod Ještědem. V mapových datech je vedená
+    jako obsluhovaná horská chata.
+  - >-
+    Spí se tu na třiadvaceti lůžkách v sedmi pokojích a jednom rodinném
+    apartmánu pro pět osob. K vybavení patří lyžárna a velký společenský
+    prostor ve stylu horské hospůdky s kamny a vlastním barem — chata
+    zkrátka vypadá přesně tak, jak si horskou chatu představujete.
+  - >-
+    Jedno je ale potřeba říct rovnou: web chaty míří především na
+    skupinové pronájmy — pobyty škol, oddílů a firem, s rezervacemi
+    vypsanými na sezóny 2026/2027 — a o obsluze turisty, který jde jen
+    kolem, neříká nic. Netvrdíme tedy, že se tu kolemjdoucí nají;
+    dokud to nebude doložené, počítejte spíš s tím, že hospůdka slouží
+    ubytovaným skupinám.
+  - >-
+    Údaje na téhle stránce pocházejí z webu chaty a z ubytovacích
+    katalogů; polohu nese OpenStreetMap. Redakce zatím nic neověřila
+    vlastním dotazem ani návštěvou — před cestou doporučujeme zavolat,
+    zvlášť pokud počítáte s občerstvením bez noclehu.
+zdroje:
+  - popis: >-
+      Web chaty — poloha v sedle pod Ještědem, kapacita 23 lůžek
+      (7 pokojů + apartmán), hospůdka s barem, skupinové rezervace,
+      kontakty (načteno 2. 8. 2026)
+    url: https://www.chatajestedka.cz/
+  - popis: >-
+      Ubytovací katalog penzion.cz — „Chata Ještědka, Světlá pod
+      Ještědem" (druhý pramen existence a obce)
+    url: https://chata-jestedka-pod-jestedem.penzion.cz/
+  - popis: OpenStreetMap (GPS a tag objektu; ODbL)
+    url: https://www.openstreetmap.org/node/1488735697
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jestedsky-hrbet/horska-chata-jestedka.yaml
+  triáží 2. 8. 2026 na pokyn Michala. OTEVŘENÁ OTÁZKA (do DATA-04 stylu
+  dotazů): obslouží hospůdka kolemjdoucího mimo skupinový pronájem?
+  Web to neříká; próza to přiznává a `typObcerstveni` se nevyplňuje.
+
+  NEDOLOŽENO (nezapsáno): výška, sezóna, otvírací doba, historie
+  a rok vzniku.

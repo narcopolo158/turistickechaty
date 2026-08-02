@@ -1,0 +1,178 @@
+# Hotel Ještěd — profil povýšen z kandidáta DATA-01 (OSM) triáží 2. 8. 2026
+# (pokyn Michala „povýš pět ještědských kandidátů"). Horský hotel v roli
+# vrcholové chaty (vzor: Hotel Špindlerova bouda, Tetřeví Boudy): rozhoduje
+# role na trase a občerstvení pro veřejnost, ne typ stavby. Vše
+# verified: false — z webů, redakce neověřila vlastním dotazem.
+
+nazev: Hotel Ještěd
+slug: horsky-hotel-jested
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jestedsky-hrbet
+zajimavosti:
+  - text: >-
+      Hubáčkova stavba tvaru rotačního hyperboloidu získala roku 1969
+      prestižní Perretovu cenu a v roce 2000 byla zvolena českou Stavbou
+      století
+    kategorie: jine
+    zdroj: >-
+      web hotelu jested.cz/cs/historie + turistický portál Libereckého
+      kraje (načteno 2. 8. 2026)
+  - text: >-
+      Od 1. ledna 2006 je horský hotel s vysílačem národní kulturní
+      památkou
+    kategorie: stari
+    zdroj: web hotelu jested.cz/cs/historie (načteno 2. 8. 2026)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.732646
+lng: 14.984778
+vyska: 1012
+obec: Liberec
+overeniLokace:
+  source: >-
+    Turistický portál Libereckého kraje (liberecky-kraj.cz, načteno
+    2. 8. 2026): „Nadmořská výška: 1012 m n.m.", budova vysoká 94 metrů
+    o průměru 33 metrů na vrcholu Ještědu. Obec Liberec dle Památkového
+    katalogu (heslo „horský hotel a televizní vysílač Ještěd"). GPS:
+    OpenStreetMap https://www.openstreetmap.org/node/1798340204 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita se nikde neuvádí — nedopočítávat.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Web hotelu jestedliberec.cz (načteno 2. 8. 2026): objekt funguje jako
+    hotel s ubytováním; počet pokojů ani lůžek web neuvádí, kapacita se
+    proto nezapisuje.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Web hotelu jestedliberec.cz (načteno 2. 8. 2026): „Restaurace
+    v atraktivním prostředí hotelu Ještěd". Turistický portál Libereckého
+    kraje dodává „v hotelu je restaurace, bufet" — bufet je formát pro
+    kolemjdoucí návštěvníky vrcholu. Otvírací doba nikde uvedena není,
+    nezapisuje se.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.jestedliberec.cz/
+overeniProvoz:
+  source: >-
+    Web hotelu jestedliberec.cz (načteno 2. 8. 2026) — aktivní hotelový
+    provoz. Otvírací doba restaurace ani sezóna uvedeny nejsou.
+    Vlastnictví: Liberecký kraj objekt koupil (kraj-lbc.cz, aktualita
+    o koupi horského hotelu a vysílače).
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1907
+milniky:
+  - rok: 1907
+    udalost: V lednu vznikla na vrcholu Ještědu nová horská chata
+  - rok: 1963
+    udalost: 31. ledna horská chata vyhořela
+  - rok: 1966
+    udalost: 30. července začala stavba Hubáčkova hotelu s vysílačem
+  - rok: 1969
+    udalost: Karel Hubáček získal za projekt Perretovu cenu
+  - rok: 1973
+    udalost: V létě byla stavba dokončena
+  - rok: 2000
+    udalost: Ještěd zvolen Stavbou století v české architektuře
+  - rok: 2006
+    udalost: Od 1. ledna národní kulturní památka
+overeniHistorie:
+  source: >-
+    Web hotelu jested.cz/cs/historie (načteno 2. 8. 2026): chata z ledna
+    1907, požár 31. 1. 1963, stavba od 30. 7. 1966, „V létě 1973 byla
+    stavba na Ještědu dokončena", Perretova cena 1969, kulturní památka
+    od 26. 3. 1998, národní kulturní památka od 1. 1. 2006, Stavba
+    století 2000. Rok vzniku 1907 patří PRVNÍ chatě na vrcholu — dnešní
+    budova je z let 1966–1973.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Hubáčkův horský hotel s televizním vysílačem na vrcholu Ještědu
+  (1 012 m) — rotační hyperboloid, který prodlužuje siluetu hory,
+  Perretova cena 1969, Stavba století 2000 a od roku 2006 národní
+  kulturní památka. Pro turistu na hřebeni: restaurace a bufet,
+  nahoru vede i lanovka.
+text:
+  - >-
+    Hotel Ještěd stojí na vrcholu hory, jejíž jméno nese celý hřbet,
+    v nadmořské výšce 1 012 metrů. Do průvodce turistickými chatami patří
+    rolí, ne podobou: je to vrcholový cíl hlavních tras hřebene
+    s restaurací a bufetem pro návštěvníky — a zároveň nejslavnější
+    česká horská stavba dvacátého století.
+  - >-
+    Tradice vrcholového hostince je starší než dnešní silueta. V lednu
+    1907 vyrostla na vrcholu horská chata a sloužila přes půl století,
+    než 31. ledna 1963 vyhořela. Nový dům se začal stavět 30. července
+    1966 podle projektu Karla Hubáčka, který jako jediný ze soutěžících
+    umístil vysílač i hotel s restaurací do jediné stavby — rotačního
+    hyperboloidu, jenž horu opticky prodlužuje místo toho, aby jí
+    konkuroval. Za projekt dostal už v roce 1969 prestižní Perretovu
+    cenu; stavba byla dokončena v létě 1973.
+  - >-
+    Uznání se od té doby jen vrší: v roce 2000 byl Ještěd zvolen českou
+    Stavbou století a od 1. ledna 2006 je horský hotel s vysílačem
+    národní kulturní památkou. Objekt dnes vlastní Liberecký kraj.
+  - >-
+    Prakticky pro turistu: v budově je hotelová restaurace a bufet,
+    tedy i rychlé občerstvení pro ty, kdo na vrchol jen vystoupali.
+    Nahoru vede lanovka a značené pěší cesty z Liberce; kapacitu
+    ubytování ani otvírací dobu restaurace prameny neuvádějí, takže je
+    neuvádíme ani my — před cestou za noclehem doporučujeme hotel
+    kontaktovat přímo.
+  - >-
+    Údaje na téhle stránce pocházejí z webů hotelu, z turistického
+    portálu Libereckého kraje a z Památkového katalogu; polohu nese
+    OpenStreetMap. Redakce zatím nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Web hotelu — historie s daty (chata 1907, požár 1963, stavba
+      1966–1973, Perretova cena, památková ochrana), načteno 2. 8. 2026
+    url: https://www.jested.cz/cs/historie
+  - popis: >-
+      Web hotelu — provoz, restaurace (načteno 2. 8. 2026)
+    url: https://www.jestedliberec.cz/
+  - popis: >-
+      Turistický portál Libereckého kraje — výška 1012 m, rozměry stavby,
+      restaurace a bufet, lanovka i pěší přístup
+    url: https://www.liberecky-kraj.cz/dr-cs/1013-jested-televizni-vysilac-a-hotel.html
+  - popis: >-
+      Památkový katalog — „horský hotel a televizní vysílač Ještěd"
+      (památková ochrana, obec Liberec)
+    url: https://pamatkovykatalog.cz/horsky-hotel-a-televizni-vysilac-jested-15843868
+  - popis: >-
+      Liberecký kraj — aktualita o koupi horského hotelu a vysílače
+      (vlastnictví)
+    url: https://www.kraj-lbc.cz/aktuality/liberecky-kraj-koupil-horsky-hotel-a-vysilac-jested-n587749.htm
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+    url: https://www.openstreetmap.org/node/1798340204
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jestedsky-hrbet/horsky-hotel-jested.yaml
+  triáží 2. 8. 2026 na pokyn Michala. „Horský hotel v roli chaty" —
+  rozhoduje role na trase (vrcholový cíl hřebene) a občerstvení pro
+  veřejnost (restaurace + bufet). Slug ponechán z kandidáta.
+
+  NEDOLOŽENO (nezapsáno): kapacita ubytování, otvírací doba restaurace
+  i bufetu, sezóna, kontaktní telefon/e-mail (web je neuvádí přehledně —
+  doplnit při ručním běhu), délky pěších tras.

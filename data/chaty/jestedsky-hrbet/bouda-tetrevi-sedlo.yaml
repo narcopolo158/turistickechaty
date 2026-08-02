@@ -1,0 +1,109 @@
+# Bouda Tetřeví sedlo — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2. 8. 2026 (pokyn Michala „povýš pět ještědských kandidátů"). Sezónní
+# kiosek na sedle Výpřež — do průvodce patří rolí, ne velikostí (vzor:
+# jizerské kiosky Hřebínek a Knajpa). Vše verified: false.
+
+nazev: Bouda Tetřeví sedlo
+slug: bouda-tetrevi-sedlo
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jestedsky-hrbet
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Výška nedoložena — neuvádí se.
+lat: 50.7437258
+lng: 14.9784175
+obec: Kryštofovo Údolí
+overeniLokace:
+  source: >-
+    Kiosek stojí u parkoviště na sedle Výpřež pod Ještědem — tak ho vede
+    vlastní web tetrevisedlo.eu (titulek „Kiosek a parkoviště Výpřež pod
+    Ještědem") i katalog firem (Firmy.cz: „Bouda Tetřeví Sedlo, Kryštofovo
+    Údolí"). Obec Kryštofovo Údolí dle obou. Nadmořská výška v pramenech
+    není — neuvádí se. GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/1798342294 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Jde o kiosek u parkoviště („dřevěná bouda přímo na parkovišti pod
+    Ještědem" — recenzní popis na Pivním deníčku, načteno 2. 8. 2026);
+    žádný pramen ubytování nezmiňuje a formát objektu ho vylučuje.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Pivní deníček (načteno 2. 8. 2026), recenzní popis: „Dřevěná bouda
+    přímo na parkovišti pod Ještědem. Má zahrádku s pár lavicemi,
+    jednoduchá jídla k pivu" a „ideální spíš na letní zastávku na túře";
+    na čepu uváděn Plzeňský Prazdroj a Radegast. Vlastní web
+    tetrevisedlo.eu existuje, obsah se ale nepodařilo načíst (timeout
+    serveru).
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://tetrevisedlo.eu/
+overeniProvoz:
+  source: >-
+    Otvírací dobu žádný dosažitelný pramen neuvádí (Pivní deníček ji vede
+    jako neznámou); recenzní popis mluví o letní zastávce, sezónnost ale
+    doložená není — nezapisuje se.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěný kiosek na sedle Výpřež pod Ještědem, u parkoviště na křižovatce
+  cest z Kryštofova Údolí na hřeben. Jednoduchá jídla k pivu a zahrádka
+  s lavicemi — zastávka na túře, ne nocležiště.
+text:
+  - >-
+    Bouda Tetřeví sedlo je jedním z objektů, které do průvodce patří
+    rolí, ne velikostí — stejně jako jizerské kiosky Hřebínek nebo
+    Knajpa. Stojí u parkoviště na sedle Výpřež, kudy se z Kryštofova
+    Údolí vychází na ještědský hřeben, a slouží přesně tomu, čemu má
+    sloužit zastávka na trase: pivo, jednoduchá jídla, zahrádka s pár
+    lavicemi.
+  - >-
+    Nespí se tu — je to kiosek, ne nocležiště. Otvírací dobu žádný
+    z dosažitelných pramenů neuvádí a popis „letní zastávka na túře"
+    napovídá sezónní provoz, doložený ale není; kdo sem míří mimo hlavní
+    sezónu, měl by počítat i se zavřeno.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu kiosku (který se
+    nám nepodařilo načíst celý), z katalogu firem a z recenzního popisu;
+    polohu nese OpenStreetMap. Redakce zatím nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web kiosku — titulek „Kiosek a parkoviště Výpřež pod
+      Ještědem" (obsah se 2. 8. 2026 nepodařilo načíst — timeout)
+    url: https://tetrevisedlo.eu/
+  - popis: >-
+      Pivní deníček — recenzní popis kiosku (jednoduchá jídla k pivu,
+      zahrádka, letní zastávka; otvírací doba neznámá), načteno 2. 8. 2026
+    url: https://www.pivnidenicek.cz/restaurace-a-hospody/ceska-republika/liberecky-kraj/liberec/krystofovo-udoli/44566-bouda-tetrevi-sedlo
+  - popis: Firmy.cz — „Bouda Tetřeví Sedlo (Kryštofovo Údolí)"
+    url: https://www.firmy.cz/detail/13330945-bouda-tetrevi-sedlo-krystofovo-udoli.html
+  - popis: OpenStreetMap (GPS objektu; ODbL)
+    url: https://www.openstreetmap.org/node/1798342294
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jestedsky-hrbet/bouda-tetrevi-sedlo.yaml
+  triáží 2. 8. 2026 na pokyn Michala. Sedlu se říká Výpřež i Tetřeví
+  sedlo (Wikipedie má heslo Výpřež) — jméno objektu nese druhou variantu.
+
+  NEDOLOŽENO (nezapsáno): výška, otvírací doba, sezóna (popis napovídá
+  léto, doklad chybí), telefon. Web tetrevisedlo.eu zkusit načíst znovu
+  při příštím běhu — 2. 8. 2026 timeout.
