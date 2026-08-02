@@ -31,8 +31,30 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Vlak a bus se tu
+# záměrně nevyplňují: stránka města o nich strukturně nic neříká (odkazuje
+# na jízdní řády). Ceny parkování se nepíšou, mění se každou sezónu.
+doprava:
+  auto: >-
+    Hlavní záchytná parkoviště podle města jsou P2 Hromovka (0,3 km od
+    centra) a P3 Medvědín (1 km od centra), obě v nepřetržitém provozu
+    s automatickou platbou; menší placené plochy jsou přímo v centru
+    (u Domu služeb, u samoobsluh a u bobové dráhy).
+overeniDoprava:
+  source: >-
+    Oficiální stránky města Špindlerův Mlýn, „Parkování na území města"
+    (spindleruvmlyn.org, načteno 2. 8. 2026): P2 Hromovka „0,3 km od centra
+    města (5 min.)", P3 Medvědín „1 km od centra města (15 min.)", obě
+    non-stop s automatickou platbou; menší plochy v centru (Dům služeb,
+    u samoobsluh, u bobové dráhy). Omezení vjezdu do centra stránka
+    neuvádí — proto se o něm nepíše. Vlak a bus strukturně nepopisuje,
+    řádky proto zůstávají z katalogu DATA-06. Ceny se do profilu nepíšou —
+    mění se každou sezónu.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
-  (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;
-  u polských středisek zatím žádná čísla (rozhodnutí handoffu: „PL bez
-  čísel" do doby doložení).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex
+  (oficiální web střediska/obce); u polských středisek zatím žádná čísla
+  (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
+  doplněna 2. 8. 2026 z oficiálních stránek města.

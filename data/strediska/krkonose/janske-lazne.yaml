@@ -31,8 +31,32 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Vlak a bus se tu
+# záměrně nevyplňují: k vlaku město mluví o spojích z Prahy (jízdní řády, ne
+# strukturní fakt) a nejbližší stanici neuvádí — řádek z mapových dat je
+# poctivější. Ceny parkování se nepíšou, mění se každou sezónu.
+doprava:
+  auto: >-
+    Vjezd do centra města je podle oficiálního webu zakázán (mimo dopravní
+    obsluhu nebo na povolení). Hlavní centrální parkoviště s cca 500 místy
+    leží pod dolní stanicí lanovky; menší plochy jsou u Lesního domu
+    a na Hofmankách.
+overeniDoprava:
+  source: >-
+    Oficiální web města Janské Lázně, stránka Doprava a parkování (načteno
+    2. 8. 2026): doslova „Vjezd do centra města je zakázán (mimo dopravní
+    obsluhu nebo na povolení)"; centrální parkoviště pod lanovkou cca 500
+    míst, dále parkoviště Lesní dům (80 míst) a Hofmanky; jednorázová
+    povolení k vjezdu z platebních automatů. K vlaku stránka popisuje spoje
+    (Praha–Trutnov s přestupy) a nejbližší stanici nejmenuje, k busu přímé
+    spoje z měst — obojí jízdní řády, ne strukturní fakta; řádky Vlakem
+    a Autobusem proto zůstávají z katalogu DATA-06. Ceny se do profilu
+    nepíšou — mění se každou sezónu.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
-  (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;
-  u polských středisek zatím žádná čísla (rozhodnutí handoffu: „PL bez
-  čísel" do doby doložení).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex
+  (oficiální web střediska/obce); u polských středisek zatím žádná čísla
+  (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
+  doplněna 2. 8. 2026 z oficiálního webu města.

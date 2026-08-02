@@ -31,8 +31,38 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06 (jak-se-sem-dostat.ts).
+# Bus se tu záměrně nevyplňuje: oficiální web města o autobusech neříká nic
+# konkrétního (jen odkaz na IDOS) — řádek složený z mapových dat je poctivější.
+# Ceny parkování se nepíšou, mění se každou sezónu.
+doprava:
+  vlak: >-
+    Železnice do Pece nevede. Vlakové spoje podle oficiálního webu města
+    končí v Trutnově nebo ve Svobodě nad Úpou a dál se přestupuje na
+    navazující autobusové spojení.
+  auto: >-
+    Město leží v Krkonošském národním parku a návštěvníky žádá, aby pokud
+    možno parkovali v Dopravním terminálu P1 (parkovací dům u benzinové
+    stanice, 450 míst). Do částí Pece a Velké Úpy je vjezd omezen dopravním
+    značením — jednorázové povolení k vjezdu prodávají automaty.
+overeniDoprava:
+  source: >-
+    Oficiální web města Pec pod Sněžkou (načteno 2. 8. 2026):
+    pecpodsnezkou.cz/doprava/ — doslova „Vlakové spoje končí v Trutnově nebo
+    ve Svobodě nad Úpou, poté je potřeba přestoupit na navazující autobusové
+    spojení" a „Město se nachází v Krkonošském národním parku a proto prosíme
+    návštěvníky, aby pokud možno parkovali v Dopravním terminálu P1"; vjezd
+    do částí Pece a Velké Úpy „omezen dopravním značením", jednorázová
+    povolení z automatů. pecpodsnezkou.cz/parkovani/ — P1 parkovací dům
+    u benzinové stanice, 450 míst (z toho 150 k rezervaci); P3A uzavřeno do
+    15. 12. 2027. K busu web nic konkrétního neuvádí (odkazuje na IDOS.cz),
+    řádek Autobusem proto zůstává z katalogu DATA-06. Ceny se do profilu
+    nepíšou — mění se každou sezónu.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
-  (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;
-  u polských středisek zatím žádná čísla (rozhodnutí handoffu: „PL bez
-  čísel" do doby doložení).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex
+  (oficiální web střediska/obce); u polských středisek zatím žádná čísla
+  (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava doplněna
+  2. 8. 2026 z oficiálního webu města (vlak + auto; bus vědomě z katalogu).

@@ -11,6 +11,54 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (dopoledne) — doprava u tří středisek z oficiálních webů měst; ranní běh zkontrolován
+
+**Zadání Michala:** *„podívej se na výsledek ranní session a pokračuj
+samostatně dál."*
+
+**Kontrola ranního běhu (commit `3a8cb61`):** tvrzení jsem přeměřil, ne jen
+přečetl. Backlog beze změny pořadí i stavů; 738/738 testů (první běh měl dva
+pády, ale to byl studený Postgres po startu kontejneru — druhý běh čistý);
+kontrola celá zelená. Naostro na běžícím webu: Pec ukazuje přesně řádky
+z deníku (Svoboda nad Úpou 10,0 km; 6 zastávek, nejblíž „parkoviště
+u kapličky" 500 m), **Karpacz funguje taky** (stanice Karpacz 1,0 km — ranní
+běh to netvrdil, ale katalog DATA-06 polské body nese) a Bedřichov správně
+nevykresluje nic, protože jizerská střediska záměrně nemají souřadnice.
+Skloňování sedí („je 6 autobusových zastávek" / „jsou 2 autobusové
+zastávky"). Dobrá práce; nenašel jsem nic k opravě.
+
+**K ranní otázce 1 (sedí řádky složené z mapy?):** rozhodl jsem sám, v duchu
+včerejšího pověření — **řádky zůstávají.** Říkají vědomě míň, než by čtenář
+chtěl, ale všechno, co říkají, je doložené a připsané; mlčet o zastávce,
+kterou v datech máme, by nebyla opatrnost, jen ochuzení. Přesně tahle
+zdrženlivost je styl celého webu.
+
+**A hned navázání na ranní „příště": doprava z oficiálních webů měst.** Ranní
+bezobslužný běh na weby nemohl (WebFetch bez schválení); v téhle interaktivní
+session to jde. Doplněno pole `doprava` u tří středisek, vždy z oficiálního
+webu města, s citacemi a `checked: 2026-08-02`:
+
+- **Pec pod Sněžkou** — vlak: železnice do Pece nevede, spoje končí
+  v Trutnově / Svobodě nad Úpou (doslovná citace města); auto: město
+  v národním parku žádá parkovat v terminálu P1 (450 míst), vjezd do částí
+  Pece a Velké Úpy omezen značením, povolení z automatů. Bus VĚDOMĚ zůstal
+  z katalogu — město k němu neříká nic strukturního, jen odkaz na IDOS.
+- **Janské Lázně** — auto: „Vjezd do centra města je zakázán (mimo dopravní
+  obsluhu nebo na povolení)", hlavní parkoviště ~500 míst pod lanovkou.
+  Vlak i bus z katalogu (město popisuje jen spoje, tedy jízdní řády).
+- **Špindlerův Mlýn** — auto: záchytná P2 Hromovka (0,3 km od centra)
+  a P3 Medvědín (1 km), menší plochy v centru. Omezení vjezdu stránka
+  neuvádí, tak se o něm nepíše.
+
+Ceny parkování se do profilů nepíšou nikde — mění se každou sezónu (táž
+konvence jako u lanovek). Ruční řádky se na stránce míchají s katalogovými
+přesně podle přednosti: Pec má vlak+auto ruční a bus z mapy, ověřeno naostro
+na všech třech stránkách. Seed proběhl, 738/738 testů, kontrola zelená.
+
+**Příště:** doprava zbylých krkonošských středisek (Harrachov, Malá Úpa,
+Rokytnice…, po jednom z oficiálních webů), nebo fronta, až budou schválené
+domény / ruční běh s tebou.
+
 ## 2026-08-02 (denní bezobslužná session) — „Jak se sem dostat" se dala složit z dat, která už v repu ležela
 
 **Hotovo:** poslední chybějící kus F1e — sekce **02 Jak se sem dostat** na
