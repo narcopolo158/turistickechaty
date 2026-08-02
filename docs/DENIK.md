@@ -19,7 +19,7 @@ Hotel Ještěd dokonce s geosearch nálezy ze 7 metrů; DATA-06 výchozí body
 přineslo katalog pro Ještědský hřbet (obce, železnice, zastávky). DATA-06
 výšky v době zápisu ještě běželo. Vedlejší úklid: DATA-02 vygenerovalo fotky
 i dvěma ráno vyřazeným objektům (Black Cattle Camp, Černá Louže) — kontrola
-je correctly ohlásila jako osiřelé a redakce je smazala.
+je správně ohlásila jako osiřelé a redakce je smazala.
 
 **Povýšení č. 6 a 7 — první dva z jizerské fronty:**
 
