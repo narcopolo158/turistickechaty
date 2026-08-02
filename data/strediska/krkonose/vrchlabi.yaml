@@ -26,7 +26,34 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Ceny se nepíšou.
+doprava:
+  vlak: >-
+    Nádraží leží asi 1,5 km od centra, na neelektrizované jednokolejce
+    z Kunčic nad Labem; regionální spoje navazují na Trutnov, Starou Paku
+    a Chlumec nad Cidlinou.
+  bus: >-
+    Autobusové nádraží je asi 1,3 km od centra a v létě slouží jako hlavní
+    uzel krkonošských cyklobusů.
+  auto: >-
+    V centru se parkuje placeně (automaty, aplikace; parkovací kotouče pro
+    krátké stání prodává infocentrum), okrajová parkoviště — třeba
+    Vejsplachy nebo u kulturního domu Střelnice — jsou zdarma.
+overeniDoprava:
+  source: >-
+    Oficiální turistický web města Vrchlabí, stránka Doprava a parkování
+    (mestovrchlabi.cz, načteno 2. 8. 2026): nádraží 1,5 km od centra na
+    jednokolejce z Kunčic nad Labem, spoje na Trutnov / Starou Paku /
+    Chlumec nad Cidlinou; autobusové nádraží asi 1300 m od centra, v létě
+    hlavní uzel krkonošských cyklobusů; centrum placené (automaty,
+    aplikace EasyPark, kotouče z infocentra), Vejsplachy a u Střelnice
+    velká a zdarma. Ceny se do profilu nepíšou — mění se každou sezónu.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
   nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
+
+  Doprava (vlak+bus+auto) doplněna 2. 8. 2026 z oficiálního turistického webu města.

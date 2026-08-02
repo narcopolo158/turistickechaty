@@ -26,7 +26,28 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Pramen je
+# informační web střediska (spravuje sdružení pro rozvoj cestovního ruchu),
+# ne přímo obec — tak se i připisuje. Ceny se nepíšou.
+doprava:
+  auto: >-
+    V létě se parkuje zdarma: P1 u dolní
+    stanice lanovky Kejnos, P2 v centru obce, P3 u nástupu na značené trasy
+    a P4 u horní stanice lanovky.
+overeniDoprava:
+  source: >-
+    Informační web střediska benecko.info (spravuje Sdružení pro rozvoj
+    cestovního ruchu na Benecku a okolí), stránka Parkování v létě (načteno
+    2. 8. 2026): P1 „Zdarma, u dolní stanice lanovky Kejnos“, P2 v centru,
+    P3 u nástupu na trasy, P4 „zdarma, u horní stanice lanovky Kejnos“.
+    Není to web obce — obecbenecko.cz k parkování nic strukturního nenese.
+    Ceny se do profilu nepíšou.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
   nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
+
+  Doprava (auto) doplněna 2. 8. 2026 z informačního webu střediska (benecko.info).

@@ -31,8 +31,28 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06 (Karpacz má i řádek
+# Vlakem z katalogu — stanice 1,0 km). Ceny se nepíšou.
+doprava:
+  auto: >-
+    Město provozuje čtrnáct placených nehlídaných parkovišť (platí se
+    nepřetržitě, sedm dní v týdnu); jako záchytné u železniční stanice
+    slouží parkoviště č. 14 v ulici Wielkopolské.
+overeniDoprava:
+  source: >-
+    Oficiální web města Karpacz, stránka Parkingi miejskie (karpacz.pl,
+    načteno 2. 8. 2026): 14 městských placených nehlídaných parkovišť
+    („Parkingi są płatne 7 dni w tygodniu przez 24 godziny“), od č. 1
+    ul. Parkowa u Muzea sportu a turistiky po č. 14 ul. Wielkopolska —
+    záchytné parkoviště u nádraží; č. 8 ul. Polskich Olimpijczyków i pro
+    busy a autobusy. Ceny se do profilu nepíšou.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
   (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;
   u polských středisek zatím žádná čísla (rozhodnutí handoffu: „PL bez
   čísel" do doby doložení).
+
+  Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu města.

@@ -35,8 +35,27 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Ceny se nepíšou.
+doprava:
+  auto: >-
+    Ve městě je vyznačeno přes deset parkovišť a parkovacích míst dvou
+    druhů — placených i bezplatných; parkovací automaty většinou přijímají
+    jen mince, kartou se platí na parkovišti v ulici Turystyczne.
+overeniDoprava:
+  source: >-
+    Oficiální web města Szklarska Poręba, stránka Parkowanie
+    (miasto.szklarskaporeba.pl, načteno 2. 8. 2026): „W Szklarskiej
+    Porębie wyznaczonych jest kilkanaście parkingów i miejsc do parkowania
+    dwóch rodzajów: płatne i bezpłatne.“; „Automaty parkingowe przyjmują
+    tylko bilon“, kartou jen ul. Turystyczna; elektromobily a držitelé
+    průkazů OZP neplatí. Ceny se do profilu nepíšou.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
   (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;
   u polských středisek zatím žádná čísla (rozhodnutí handoffu: „PL bez
   čísel" do doby doložení).
+
+  Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu města.

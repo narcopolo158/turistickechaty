@@ -19,7 +19,24 @@ overeniLokace:
 vychoziBody:
   - nazev: Strážné
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Ceny se nepíšou.
+doprava:
+  auto: >-
+    Obec provozuje dvě parkoviště — na náměstí a v lomu; obě jsou v zimní
+    sezóně placená podle obecního nařízení o placeném stání.
+overeniDoprava:
+  source: >-
+    Oficiální web obce Strážné (strazne.eu, sekce skiareál → parkoviště,
+    načteno 2. 8. 2026): parkoviště „Náměstí“ a „Lom“, obě v zimě placená,
+    nehlídaná, dle „Nařízení č. 2/2018 o placeném stání na místních
+    komunikacích v obci Strážné“; na náměstí automat i obsluha, v lomu jen
+    platba kartou. Ceny se do profilu nepíšou — mění se každou sezónu.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
   nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
+
+  Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu obce.

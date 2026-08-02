@@ -26,7 +26,24 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Ceny se nepíšou.
+doprava:
+  auto: >-
+    Hlavní parkoviště jsou na Mísečkách: Horní Mísečky s kapacitou až 150
+    aut a Dolní Mísečky s 250 místy a třemi stáními pro autobusy.
+overeniDoprava:
+  source: >-
+    Oficiální web obce Vítkovice v Krkonoších, stránka Mapy, parkoviště
+    (vitkovicevkrk.cz, načteno 2. 8. 2026): „Parkoviště na Horních
+    Mísečkách disponuje parkovací kapacitou až pro 150 automobilů.“,
+    „Parkoviště na Dolních Mísečkách má parkovací kapacitu 250 míst
+    a 3 místa vyhrazené pro autobusy.“ Pravidla ani ceny stránka neuvádí.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
   nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
+
+  Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu obce.

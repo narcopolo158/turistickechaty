@@ -13,6 +13,29 @@ overeniLokace:
     zdrojová URL katalogu: https://www.jizerky.cz/doprava, https://www.prezidentska.cz/, https://www.samalova-chata.cz/'
   verified: false
   checked: '2026-07-30'
+# Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
+# čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
+doprava:
+  auto: >-
+    Parkování mimo čtyři vyhrazená parkoviště je v obci zakázáno. P1
+    Centrál v centru je vhodné pro nástup na Jizerskou magistrálu
+    u stadionu, P2 Maliník při příjezdu od Liberce (směr přehrada Černá
+    Nisa), P3 Nisa leží pod skiareálem Malinovka a P4 Hřiště směrem na
+    Janov nad Nisou je otevřené 6–22 h. Patnáct procent z parkovného jde
+    na úpravu Jizerské magistrály.
+overeniDoprava:
+  source: >-
+    Oficiální web obce Bedřichov (bedrichov-ou.cz, stránka Parkování,
+    načteno 2. 8. 2026): P1 Centrál „centrum obce, vhodné pro nástup na
+    trasy Jizerské magistrály na stadionu“, P2 Maliník „při příjezdu od
+    Liberce, vhodné pro nástup na trasy Jizerské magistrály směr přehrada
+    Černá Nisa“, P3 Nisa pod Ski areálem Bedřichov–Malinovka, P4 Hřiště
+    „otevřeno 6.00–22.00 h“; „Parkování mimo vyhrazená parkoviště je
+    zakázáno“; „15% z vybrané částky za parkovné je použito na úpravu
+    Jizerské magistrály“. Ceny se do profilu nepíšou.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
   pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
   bodů vede Bedřichov jako nejbližší obec/uzel pro Hřebínek, Prezidentská chata, Šámalova chata.
@@ -20,4 +43,4 @@ interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky
   DATA-06, a ten pro Jizerské hory ještě neběžel (Overpass ze sandboxu nedosáhneme). Nevymýšlejí
   se — doplní je běh DATA-06 --oblast jizerske-hory, a teprve pak se vykreslí mapa zasazení a
   dohledá fotka střediska (DATA-33). Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex
-  a dopravu.'
+  a dopravu. Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu obce.'
