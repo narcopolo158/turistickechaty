@@ -1,0 +1,151 @@
+# Rozhledna Tanvaldský Špičák — profil povýšen z kandidáta DATA-01 (OSM)
+# triáží 2. 8. 2026 (křížové ověření v poznámkách kandidáta; rok 1909
+# a výška věže 18 m se shodují ve dvou pramenech). Klíč zařazení dle
+# rozhodnutí Michala z 28. 7. 2026: rozhledna s restaurací pro veřejnost.
+# Vše verified: false.
+
+nazev: Rozhledna Tanvaldský Špičák
+slug: tanvaldsky-spicak
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+zajimavosti:
+  - text: >-
+      Restaurace s tradiční českou kuchyní funguje přímo v rozhledně
+      z roku 1909 — a na věž se chodí zdarma
+    kategorie: gastro
+    zdroj: >-
+      vlastní web rozhledny („Vstup ZDARMA!") a Českéhory.cz
+      („Restaurace je otevřena přímo v rozhledně"), načteno 2. 8. 2026
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7514424
+lng: 15.282407
+vyska: 831
+obec: Jiřetín pod Bukovou
+overeniLokace:
+  source: >-
+    Českéhory.cz (načteno 2. 8. 2026): „Tanvaldský Špičák (831 m.n.m.)";
+    na vrchol „se dostanete lanovkou z obce Jiřetín pod Bukovou". Obec
+    Jiřetín pod Bukovou nese i adresa na vlastním webu rozhledny. GPS:
+    OpenStreetMap https://www.openstreetmap.org/node/2634007384 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Žádný pramen nocleh nezmiňuje — pole se nevyplňuje (nedomýšlet ani „ne").
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web rozhlednatanvaldskyspicak.cz (načteno 2. 8. 2026):
+    „Horská restaurace s tradiční českou kuchyní"; Českéhory.cz:
+    „Restaurace je otevřena přímo v rozhledně." Nezávisle OSM: restaurace
+    6 m od věže (https://www.openstreetmap.org/node/3065884727).
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Denně (dle provozovatele); konkrétní hodiny web neuvádí.
+kontakty:
+  web: https://rozhlednatanvaldskyspicak.cz/
+overeniProvoz:
+  source: >-
+    Vlastní web rozhledny (načteno 2. 8. 2026): „Otevřeno denně",
+    „Vstup ZDARMA!"; hodiny web neuvádí. OSM nese neověřený zápis
+    otvírací doby „Jul-Aug: 10:00-17:00" — rozpor s „denně"
+    nerozhodujeme, hodiny se nezapisují.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Doprava ───────────────────────────────────────────────────────────────
+lanovka: >-
+  Na vrchol se dá vyjet lanovkou z Jiřetína pod Bukovou (provozní dobu
+  ani ceny prameny neuvádějí)
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1909
+milniky:
+  - rok: 1908
+    udalost: Zahájena stavba rozhledny
+  - rok: 1909
+    udalost: Rozhledna slavnostně otevřena 4. července
+overeniHistorie:
+  source: >-
+    Web města Tanvald (tanvald.eu, načteno 2. 8. 2026): „Stavba rozhledny
+    byla zahájena v roce 1908", „Rozhledna byla slavnostně otevřena
+    4.července 1909", „Rozhledna je vysoká 18m", „Vede na ni celkem 69
+    schodů"; k počátkům občerstvení tamtéž: „Po pár letech se nedaleko
+    skály objevila bouda, kde místní podnikatelé prodávali lahvové pivo."
+    Výšku 18 m potvrzuje i vlastní web rozhledny, rok 1909
+    i Českéhory.cz.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Rozhledna z roku 1909 na vrcholu Tanvaldského Špičáku (831 m) nad
+  Jiřetínem pod Bukovou. Osmnáctimetrová věž se 69 schody má otevřeno
+  denně a vstup zdarma, restaurace s tradiční českou kuchyní funguje
+  přímo v rozhledně — a na vrchol se dá vyjet i lanovkou.
+text:
+  - >-
+    Rozhledna stojí na vrcholu Tanvaldského Špičáku v 831 metrech;
+    adresou patří k Jiřetínu pod Bukovou, odkud na vrchol vede
+    i lanovka. Do průvodce ji řadí totéž pravidlo jako Štěpánku nebo
+    Rašovku:
+    rozhoduje občerstvení pro turisty na trase — a tady je ho
+    požehnaně, restaurace funguje přímo ve věži.
+  - >-
+    Věž je z těch staletých: stavět se začala v roce 1908 a slavnostně
+    se otevřela 4. července 1909. Tradice občerstvení u ní je přitom
+    skoro stejně stará jako věž sama — pár let po otevření se poblíž
+    objevila bouda, kde místní podnikatelé prodávali lahvové pivo.
+    Dnešní podoba je velkorysejší: horská restaurace s tradiční českou
+    kuchyní přímo v rozhledně.
+  - >-
+    Na ochoz osmnáctimetrové věže vede 69 schodů, otevřeno je denně
+    a vstup je zdarma. Konkrétní hodiny provozovatel na webu neuvádí —
+    kdo to má nahoru daleko, měl by si otevírací dobu ověřit předem.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu rozhledny, z webu
+    města a z horského listingu; rok otevření i výška věže se shodují
+    ve dvou pramenech, polohu nese OpenStreetMap. Redakce zatím nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web rozhledny — „18m rozhledna s restaurací", tradiční
+      česká kuchyně, otevřeno denně, vstup zdarma, adresa Jiřetín pod
+      Bukovou (načteno 2. 8. 2026)
+    url: https://rozhlednatanvaldskyspicak.cz/
+  - popis: >-
+      Web města Tanvald — stavba 1908, slavnostní otevření 4. 7. 1909,
+      věž 18 m a 69 schodů, historka o boudě s lahvovým pivem (načteno
+      2. 8. 2026)
+    url: https://www.tanvald.eu/dr-cs/1025-rozhledna-tanvaldsky-spicak.html
+  - popis: >-
+      Českéhory.cz — vrchol 831 m n. m., rok 1909, restaurace přímo
+      v rozhledně, lanovka z Jiřetína pod Bukovou (načteno 2. 8. 2026)
+    url: https://tanvaldsky-spicak.ceskehory.cz/
+  - popis: OpenStreetMap (GPS věže a restaurace u ní; ODbL)
+    url: https://www.openstreetmap.org/node/2634007384
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/tanvaldsky-spicak.yaml triáží
+  2. 8. 2026 (mandát „pracuj dál samostatně", slíbeno Michalovi po
+  křížovém ověření). Klíč: rozhledna s restaurací (rozhodnutí
+  28. 7. 2026).
+
+  NEDOLOŽENO (nezapsáno): otvírací hodiny (OSM nese „Jul-Aug:
+  10:00-17:00" v rozporu s webovým „denně" — nerozhodnuto), telefon,
+  provozovatel, kapacita restaurace. „Vstup zdarma" je claim
+  provozovatele z vlastního webu. Vazba na lyžařské středisko Tanvaldský
+  Špičák (táž lanovka) — propojit, až bude doložené, že jde o týž vrchol
+  a provoz. Pozor na homonymii se Ski Chatou na Špičáku (kandidát
+  ski-chata.yaml, 72 m od věže — jiný objekt). Po přidání profilu
+  přegenerovat DATA-06 pro jizerske-hory.

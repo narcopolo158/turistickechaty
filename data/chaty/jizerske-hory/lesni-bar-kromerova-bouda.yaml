@@ -1,5 +1,5 @@
 # Lesní bar Krömerova bouda — profil povýšen z kandidáta DATA-01 (OSM)
-# triáží 2.–3. 8. 2026 (křížové ověření v poznámkách kandidáta; ukázkový
+# triáží 2. 8. 2026 (křížové ověření v poznámkách kandidáta; ukázkový
 # případ klíče zařazení: útulna + občerstvení na trase, kasa důvěry).
 # Vše verified: false — z pramenů, redakce neověřila vlastním dotazem.
 
@@ -34,7 +34,7 @@ overeniLokace:
     OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
     neověřeno.
   verified: false
-  checked: '2026-08-03'
+  checked: '2026-08-02'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -45,7 +45,7 @@ overeniNocleh:
     stanování zakázáno. Jde o útulnu — nouzové přespání, žádné pokoje ani
     rezervace; kapacita se neuvádí.
   verified: false
-  checked: '2026-08-03'
+  checked: '2026-08-02'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 kuchyne: ano
@@ -56,7 +56,7 @@ overeniObcerstveni:
     k dispozici, samoobsluha. K platbě je uvnitř malá kasa"; nápoje
     z lednice, platba na důvěru. Otevřen od 22. 6. 2015.
   verified: false
-  checked: '2026-08-03'
+  checked: '2026-08-02'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
 otviraciDoba: >-
@@ -68,7 +68,7 @@ overeniProvoz:
     sezóny (letní i zimní), mimo sezónu (od konce října / listopadu) jen
     o víkendech." Provozovatele prameny nejmenují — neuvádí se.
   verified: false
-  checked: '2026-08-03'
+  checked: '2026-08-02'
 
 # ── Historie ──────────────────────────────────────────────────────────────
 milniky:
@@ -80,7 +80,7 @@ overeniHistorie:
     Historii PŮVODNÍ Krömerovy boudy, po které místo nese jméno, dosažitelné
     prameny nevyprávějí — nedomýšlí se.
   verified: false
-  checked: '2026-08-03'
+  checked: '2026-08-02'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
@@ -126,7 +126,7 @@ zdroje:
     url: https://www.openstreetmap.org/way/917434994
 interniPoznamky: >-
   Povýšeno z data/kandidati/jizerske-hory/lesni-bar-kromerova-bouda.yaml
-  triáží 2.–3. 8. 2026 (mandát „pracuj dál samostatně"). Ukázkový případ
+  triáží 2. 8. 2026 (mandát „pracuj dál samostatně"). Ukázkový případ
   klíče zařazení: role na trase + občerstvení, byť samoobslužné.
 
   NEDOLOŽENO (nezapsáno): obec, provozovatel (OSM nese Lesy ČR, ale

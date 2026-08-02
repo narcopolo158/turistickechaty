@@ -1,0 +1,139 @@
+# Rozhledna Štěpánka — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2. 8. 2026 (křížové ověření v poznámkách kandidáta; web obce Kořenov
+# a krajský portál Jizerky.cz se shodují na letopočtech 1847/1892 i výšce
+# 959 m). Nejstarší rozhledna Jizerských hor; klíč zařazení dle rozhodnutí
+# Michala z 28. 7. 2026: rozhledna s občerstvením (kiosek u věže).
+# Vše verified: false.
+
+nazev: Rozhledna Štěpánka
+slug: stepanka
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+zajimavosti:
+  - text: >-
+      Nejstarší rozhledna Jizerských hor — stavbu zahájil kníže Camille
+      Rohan už roku 1847, dokončena byla po čtyřicetileté přestávce
+      až roku 1892
+    kategorie: stari
+    zdroj: >-
+      Jizerky.cz („nejstarší rozhlednou Jizerských hor") a web obce
+      Kořenov (letopočty), načteno 2. 8. 2026
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7464976
+lng: 15.3659075
+vyska: 959
+obec: Kořenov
+overeniLokace:
+  source: >-
+    Web obce Kořenov (korenov.cz, načteno 2. 8. 2026): věž stojí
+    v 959 m n. m., z centra Kořenova k ní vedou 2 km po modré značce;
+    Jizerky.cz (načteno 2. 8. 2026) nezávisle: „vrcholu Hvězda
+    (959 m n. m.)" — dva prameny se na výšce shodují. GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/1056085802 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Žádný pramen nocleh nezmiňuje — pole se nevyplňuje (nedomýšlet ani „ne").
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Web obce Kořenov (načteno 2. 8. 2026): u věže stojí dřevěný kiosek
+    s občerstvením. Nezávisle OSM: kiosek (fast_food) 21 m od věže,
+    https://www.openstreetmap.org/node/13970692693. Otvírací doba kiosku
+    doložená není.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Věž je přístupná celoročně; otvírací dobu kiosku prameny neuvádějí.
+overeniProvoz:
+  source: >-
+    Jizerky.cz (načteno 2. 8. 2026): „Na tuto jedinečnou stavbu můžete
+    vystoupat po celý rok." Vstupné, hodiny kiosku ani kontakt na
+    provozovatele prameny neuvádějí — nezapisují se.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1892
+milniky:
+  - rok: 1847
+    udalost: Stavbu rozhledny zahájil kníže Camille Rohan
+  - rok: 1892
+    udalost: >-
+      Po čtyřicetileté přestávce věž dokončil Horský spolek a rozhledna
+      byla otevřena
+overeniHistorie:
+  source: >-
+    Web obce Kořenov (načteno 2. 8. 2026): „stavba byla zahájena knížetem
+    Camillem Rohanem roku 1847", po čtyřicetileté přestávce „Roku 1892
+    byla rozhledna dokončena"; věž 24 m, 120 schodů. Jizerky.cz
+    nezávisle: výstavbu zahájil roku 1847 kníže Camille Rohan,
+    „dokončil Horský spolek", otevření 1892.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Nejstarší rozhledna Jizerských hor stojí na vrcholu Hvězda (959 m)
+  nad Kořenovem: stavět se začala už roku 1847, hotová byla po čtyřiceti
+  letech čekání v roce 1892. Kamenná věž měří 24 metrů, nahoru vede
+  120 schodů, vystoupat se dá celoročně — a u paty stojí kiosek
+  s občerstvením.
+text:
+  - >-
+    Štěpánka stojí na vrcholu Hvězda v 959 metrech nad Kořenovem;
+    z centra obce k ní vedou zhruba dva kilometry po modré značce.
+    Do průvodce ji řadí stejné pravidlo jako Žalý nebo Rašovku:
+    rozhoduje občerstvení pro turisty na trase, ne typ stavby — a tady
+    stojí hned u věže dřevěný kiosek.
+  - >-
+    Rodokmen má na rozhlednu výjimečně dlouhý. Stavbu zahájil roku
+    1847 kníže Camille Rohan, pak ale věž zůstala
+    rozestavěná celé čtyři dekády a dokončení se dočkala až roku 1892,
+    kdy ji dotáhl Horský spolek. Právě tím je Štěpánka nejstarší
+    rozhlednou Jizerských hor.
+  - >-
+    Kamenná věž měří 24 metrů a na ochoz vede 120 schodů. Vystoupat se
+    dá po celý rok; otvírací dobu kiosku ovšem prameny neuvádějí, takže
+    mimo hlavní sezónu počítejte i s tím, že bude zavřeno.
+  - >-
+    Údaje na téhle stránce pocházejí z webu obce a z krajského
+    turistického portálu — na letopočtech i nadmořské výšce se oba
+    shodují; polohu nese OpenStreetMap. Redakce zatím nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Web obce Kořenov — zahájení 1847 (kníže Rohan), dokončení 1892,
+      věž 24 m a 120 schodů, 959 m n. m., kiosek u věže, 2 km po modré
+      z centra obce (načteno 2. 8. 2026)
+    url: https://www.korenov.cz/?page=rozhledna-stepanka
+  - popis: >-
+      Jizerky.cz — nejstarší rozhledna Jizerských hor, vrchol Hvězda
+      (959 m n. m.), dokončení Horským spolkem, otevření 1892, přístupná
+      celoročně (načteno 2. 8. 2026)
+    url: https://www.jizerky.cz/cile/rozhledna-stepanka
+  - popis: OpenStreetMap (GPS věže a kiosek u ní; ODbL)
+    url: https://www.openstreetmap.org/way/1056085802
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/stepanka.yaml triáží 2. 8. 2026
+  (mandát „pracuj dál samostatně", slíbeno Michalovi po křížovém ověření).
+  Klíč: rozhledna s občerstvením (rozhodnutí 28. 7. 2026).
+
+  NEDOLOŽENO (nezapsáno): vstupné, hodiny a sezóna kiosku, provozovatel
+  a kontakty, nocleh (pole prázdné). Výška 959 m nahradila starší údaj
+  kandidáta — bere se obecní hodnota potvrzená krajským portálem.
+  Objekt původně vypadl z krkonošského okna DATA-01 (v krkonošském
+  _vyrazeno.yaml je pointer); jižní hrana jizerského okna kvůli němu
+  rozšířena v scripts/oblasti.ts. Po přidání profilu přegenerovat
+  DATA-06 pro jizerske-hory (nová chata nemá přístupové trasy).

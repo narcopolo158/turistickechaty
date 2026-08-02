@@ -1,5 +1,5 @@
 # Horská chata Lučanka — profil povýšen z kandidáta DATA-01 (OSM) triáží
-# 2.–3. 8. 2026 (křížové ověření v poznámkách kandidáta: kapacita i výška
+# 2. 8. 2026 (křížové ověření v poznámkách kandidáta: kapacita i výška
 # sedí ve dvou pramenech). Vše verified: false.
 
 nazev: Horská chata Lučanka
@@ -25,7 +25,7 @@ overeniLokace:
     OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
     neověřeno.
   verified: false
-  checked: '2026-08-03'
+  checked: '2026-08-02'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 nocleh: ano
@@ -40,7 +40,7 @@ overeniNocleh:
     stravování od „bez stravování" po plnou penzi. Jediný podrobný pramen,
     verified:false.
   verified: false
-  checked: '2026-08-03'
+  checked: '2026-08-02'
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 # typObcerstveni se nevyplňuje: restaurace je doložená jako vybavení chaty,
@@ -52,7 +52,7 @@ overeniObcerstveni:
     stravování pro hosty od snídaní po plnou penzi. Zda restaurace
     obslouží i kolemjdoucí bez noclehu, pramen neříká — próza to přiznává.
   verified: false
-  checked: '2026-08-03'
+  checked: '2026-08-02'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
 kontakty:
@@ -64,7 +64,7 @@ overeniProvoz:
     data © přispěvatelé OpenStreetMap, ODbL 1.0); vlastní web lucanka.cz
     existuje. Otvírací doba ani sezóna nikde uvedeny nejsou — nezapisují se.
   verified: false
-  checked: '2026-08-03'
+  checked: '2026-08-02'
 
 # ── Obsah ─────────────────────────────────────────────────────────────────
 perex: >-
@@ -102,7 +102,7 @@ zdroje:
   - popis: OpenStreetMap (GPS, kontakty a tag objektu; ODbL)
     url: https://www.openstreetmap.org/node/4806291024
 interniPoznamky: >-
-  Povýšeno z data/kandidati/jizerske-hory/lucanka.yaml triáží 2.–3. 8. 2026
+  Povýšeno z data/kandidati/jizerske-hory/lucanka.yaml triáží 2. 8. 2026
   (mandát „pracuj dál samostatně").
 
   NEDOLOŽENO (nezapsáno): obsluha kolemjdoucích (typObcerstveni prázdné),

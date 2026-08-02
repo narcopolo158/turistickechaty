@@ -11,7 +11,48 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
-## 2026-08-03 (odpoledne) — Actions doběhly; Krömerovka a Lučanka povýšeny
+## 2026-08-02 (blok 8) — výšky naostro na profilech; rozhledny Štěpánka a Tanvaldský Špičák povýšeny
+
+**DATA-06 pro Ještědský hřbet je kompletní (①–④).** Běh výšek z Actions
+(commit 124c98c) ověřen naostro: kontrola zelená, seed proběhl a profil
+Hotelu Ještěd renderuje přístupy i s délkou, časem a převýšením —
+z konečné tramvaje v Horním Hanychově „3,55 km · 2 h 4 min · ↑ 485 m".
+Prvně tak jede celý řetěz značené trasy → výchozí body → routing → výšky
+pro druhou oblast.
+
+**Povýšení č. 8 a 9 — obě slíbené rozhledny z jizerské fronty:**
+
+- **Rozhledna Štěpánka** (vrchol Hvězda, 959 m, Kořenov) — nejstarší
+  rozhledna Jizerských hor: stavbu zahájil 1847 kníže Rohan, po
+  čtyřicetileté přestávce ji 1892 dokončil Horský spolek. Kamenná věž
+  24 m / 120 schodů, přístupná celoročně, u paty kiosek (doložen obcí
+  i OSM). Web obce a krajský portál se shodují na letopočtech i výšce.
+- **Rozhledna Tanvaldský Špičák** (831 m, Jiřetín pod Bukovou) — věž
+  z roku 1909 (stavba 1908, otevřena 4. 7. 1909; město a listing se
+  shodují), 18 m / 69 schodů, restaurace přímo v rozhledně, otevřeno
+  denně a vstup zdarma (claim provozovatele z vlastního webu); na vrchol
+  i lanovka. V historii hezká stopa kontinuity: pár let po otevření
+  u skály stála bouda s lahvovým pivem.
+
+Obě stránky ověřeny naostro (200, JSON-LD, zdroje pod článkem, žádné
+vsuvky pramenů). Kandidátní soubory zůstávají s verdikty, profily nesou
+plné odkazy na prameny.
+
+**Oprava dat v zápisech:** commity dokládají, že všechny dnešní bloky
+proběhly 2. 8. — části zápisů a `checked` polí jsem omylem datoval
+3. 8. a denní doby v nadpisech neodpovídaly hodinám commitů. Data
+opravena na 2. 8. (checked u Krömerovky, Lučanky a obou verdiktů
+věží) a nadpisy dnešních bloků přeznačeny na neutrální „blok 1–8".
+Ponaučení: datum zápisu se bere ze stroje, ne z vyprávění.
+
+**Příště:** ① Jizerské hory mají 4 nové profily bez přístupových tras —
+přegenerovat DATA-06: Actions „výchozí body" (jizerske-hory) → routing
+v sandboxu → Actions „výšky". ② Pokračovat jizerskou frontou (Sky Walk
+— ověřit zemi, nejspíš PL Świeradów; rozhledny Slovanka, Královka,
+Nad Prosečí…; Barbora přes barbora.org; Javor; Koryna). ③ Na Michalovi:
+výběr fotek v adminu a REDAKCE_GITHUB_TOKEN na Forge (recap poslán).
+
+## 2026-08-02 (blok 7) — Actions doběhly; Krömerovka a Lučanka povýšeny
 
 **Actions po ránu (spouštěl Michal):** DATA-02 přegenerovalo kandidátní fotky
 celého korpusu (158 YAML) — pět nových ještědských profilů má nabídky,
@@ -40,7 +81,7 @@ v pořádku, obě stránky 200, „kasa důvěry" v textu, žádné vsuvky.
 **Stav jizerské fronty:** 38 kandidátů (Barbora a Javor s částečným
 ověřením, Koryna bez druhého pramene; rozhledny zatím netknuté).
 
-## 2026-08-03 (dopoledne) — první pětice jizerské fronty křížově ověřena
+## 2026-08-02 (blok 6) — první pětice jizerské fronty křížově ověřena
 
 **Pokračování bez ptaní.** Po ještědských povýšeních jsem otevřel jizerskou
 frontu (40 kandidátů) a začal pěticí nejsilnějších hutových kandidátů:
@@ -61,7 +102,7 @@ frontu (40 kandidátů) a začal pěticí nejsilnějších hutových kandidátů
 
 Verdikty s citacemi jsou v poznámkách kandidátů. Kontrola zelená.
 
-## 2026-08-03 (ráno) — pět ještědských profilů povýšeno; hřbet má první publikované chaty
+## 2026-08-02 (blok 5) — pět ještědských profilů povýšeno; hřbet má první publikované chaty
 
 **Zadání Michala:** *„povýš pět ještědských kandidátů a pracuj dál
 samostatně."*
@@ -97,7 +138,7 @@ kontrola celá zelená.
 triáží. **Na tobě:** fotky pro 5 nových profilů (DATA-02 pro
 jestedsky-hrbet = klik v Actions) a přístupové trasy (DATA-06 tamtéž).
 
-## 2026-08-02 (pozdě večer) — triáž Ještědského hřbetu: všech osm kandidátů rozhodnuto
+## 2026-08-02 (blok 4) — triáž Ještědského hřbetu: všech osm kandidátů rozhodnuto
 
 **Pokračování bez ptaní.** Po dokončení prózy přišla na řadu fronta — a začal
 jsem oblastí, kterou šlo uzavřít celou: Ještědský hřbet, osm kandidátů z OSM.
@@ -137,7 +178,7 @@ Fronta oblasti: 8 → 5 čeká (všichni s hotovým ověřením), 1 odložen,
 pořadí navrženo výš) — každý potřebuje plný profil s prózou; pak jizerská
 čtyřicítka stejným postupem.
 
-## 2026-08-02 (večer) — úklid prózy dokončen: 133 → 0 vsuvek v celém korpusu
+## 2026-08-02 (blok 3) — úklid prózy dokončen: 133 → 0 vsuvek v celém korpusu
 
 **Pokračování bez ptaní (pokyn Michala).** Úklid, který začal odpoledne
 vzorovým přepisem Černé boudy, je hotový přes celý korpus: **všech 57
@@ -170,7 +211,7 @@ Jizerka): v textu žádná vsuvka, sekce Zdroje na místě. Po přeseedování
 o dopravě nic strukturního nepublikuje), fronta čeká na tebe — 65 kandidátů
 na druhý pramen, 35 profilů na výběr fotky v adminu; a telefonáty DATA-04.
 
-## 2026-08-02 (odpoledne) — nová konvence prózy: souvislý text, prameny pod článek
+## 2026-08-02 (blok 2) — nová konvence prózy: souvislý text, prameny pod článek
 
 **Zadání Michala (přišlo během práce):** *„když se budeš hrabat v próze,
 nelíbí se mi, že v textu u chaty je několikrát napsáno ‚podle Kudy z nudy'
@@ -212,7 +253,7 @@ docela jiné" — kdo je kdo, stojí dole ve zdrojích. Počítadlo kleslo
 Jelení Louky 5, chata-jeleni-louky…) — počítadlo běží v každé kontrole;
 a doprava zbylých středisek.
 
-## 2026-08-02 (dopoledne) — doprava u tří středisek z oficiálních webů měst; ranní běh zkontrolován
+## 2026-08-02 (blok 1) — doprava u tří středisek z oficiálních webů měst; ranní běh zkontrolován
 
 **Zadání Michala:** *„podívej se na výsledek ranní session a pokračuj
 samostatně dál."*
