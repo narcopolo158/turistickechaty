@@ -11,6 +11,39 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (večer) — úklid prózy dokončen: 133 → 0 vsuvek v celém korpusu
+
+**Pokračování bez ptaní (pokyn Michala).** Úklid, který začal odpoledne
+vzorovým přepisem Černé boudy, je hotový přes celý korpus: **všech 57
+profilů, 133 vsuvek → 0.** Sken „vsuvka pramene" v kontrole je čistý.
+
+Postupovalo se po patrech (5–7 zásahů → 3 → 2 → 1) a pokaždé rukou, ne
+hromadnou náhradou — každá věta se přepsala tak, aby epistemika zůstala:
+
+- **Rozpory pramenů zůstaly rozpory,** jen beze jmen: „jeden pramen uvádí
+  123, druhý 136", „tři prameny se shodují na 1 260 metrech, čtvrtý jako
+  jediný uvádí 1 263", „jeden píše příjmení s jedním n, druhý se dvěma".
+- **Tvrzení provozovatele zůstala připsaná provozovateli** („podle vlastních
+  slov nikdy nevyhořela", „bouda se hlásí k roku 1530", „vypráví hotel sám")
+  — to není vsuvka, to je poctivost vůči claimu.
+- **Jediný pramen zůstal slyšet** („letopočet nese jediný pramen a bez
+  dokladu"), archivnost taky („starší archivní prezentace").
+- **OpenStreetMap zůstává v závěrečných odstavcích** (atribuce ODbL — známá
+  povolená třída skenu), jinde v textu se říká „mapová data".
+- Vyčištěna i pole `otviraciDoba`, `autem`, `lanovka` a zajímavosti — závorky
+  „(dle Kudy z nudy, neověřeno)" zmizely; neověřenost nese systém ověření
+  a závěrečný odstavec, ne vsuvka v provozní době.
+
+Jména pramenů nikde nezmizela z webu — jen se přestěhovala tam, kam patří:
+do sekce Zdroje pod článkem (kontrola „zdroje" hlásí 0 chybějících připsání).
+Namátkou ověřeno na vykreslených stránkách (Luční, Černá bouda, Chata
+Jizerka): v textu žádná vsuvka, sekce Zdroje na místě. Po přeseedování
+738/738 testů, kontrola celá zelená.
+
+**Příště:** doprava zbylých středisek je vyčerpaná dokladově (zbytek obcí
+o dopravě nic strukturního nepublikuje), fronta čeká na tebe — 65 kandidátů
+na druhý pramen, 35 profilů na výběr fotky v adminu; a telefonáty DATA-04.
+
 ## 2026-08-02 (odpoledne) — nová konvence prózy: souvislý text, prameny pod článek
 
 **Zadání Michala (přišlo během práce):** *„když se budeš hrabat v próze,
