@@ -11,6 +11,42 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (blok 12) — doběhy nad rozšířeným oknem: Černá studnice má OSM identitu i trasu
+
+**Actions doběhly (spouštěl Michal): DATA-01 (jizerske-hory, okno 50.70)
+a export značených tras.** Zpracování doběhů:
+
+- **Černá studnice spárována:** DATA-01 objekt našel (node/664117301,
+  ~50 m od bodu ze zadání) — OSM identifikátory převzaty do profilu
+  (GPS + restaurace 15 m od věže, node/1396581262), kandidát přejmenován
+  na slug `cerna-studnice`, aby pároval s profilem. Prose sjednocena
+  („polohu nese OpenStreetMap").
+- **Tři duplicity z doběhu vyčištěny** (DATA-01 páruje podle slugu, ne
+  podle OSM identity — zapsáno do poznámek): `smedava` = týž way jako
+  publikovaná Horská chata Smědava → _vyrazeno s vysvětlením;
+  `jizerka` a `schronisko-turystyczne-halny` = čisté slugy k už
+  frontovaným kandidátům (týž node/way) → smazány, identita zůstává
+  u starších souborů.
+- **Tyršova chata je doma:** objekt z Prosečského hřebene, který 29. 7.
+  omylem vyplaval v ještědském okně a šel do _odlozeno, přinesl DATA-01
+  správně do Jizerek. Záznam z _odlozeno i ještědský kandidát smazány,
+  fotky přesunuty, historie přesunu v poznámkách kandidáta. _odlozeno je
+  poprvé prázdné.
+- **Nové kandidáty k triáži:** kynast, penzion-aron, horska-stanice-knajpa
+  (pozor na vztah ke kiosku Knajpa!) — fronta drží pořadí.
+- **Routing počtvrté: 24/24 chat, 49 přístupů, 0 k ruční kontrole.**
+  Černá studnice: Smržovka, Horní Ves 2,84 km a Bílý mlýn 3,19 km —
+  obě 100 % po značených cestách (sedí s pramenem „po modré ze
+  Smržovky"). Stránka trasy renderuje.
+- Slovanka: do prózy doplněna věta o nedoloženém katastru (audit-mech
+  hlásil tvrzení obce při prázdném poli — teď rozpor přiznává).
+
+**Příště:** ① klik „DATA-06: výchozí body" (jizerske-hory) — starý
+katalog končí na 50.73, jižní zastávky (Maršovice…) chybí; pak přeroutuju
+popáté. ② Klik „DATA-06: výšky přístupů" — až po ①, ať jede jen jednou.
+③ Triáž nových kandidátů + zbytek fronty (Mirsk, Barbora, Javor,
+Koryna…).
+
 ## 2026-08-02 (blok 11) — Černá studnice na zadání Michala; jižní okno potřetí a snad naposledy
 
 **Povýšení č. 17 — Rozhledna Černá studnice (869 m, Smržovka).** Michal:

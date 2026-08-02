@@ -26,4 +26,9 @@ interniPoznamky: 'KANDIDÁT z OSM (DATA-01, stav dat 2026-07-30) — na web pov�
 
   Sloučená duplicita z 30. 7. 2026: OSM vede týž objekt ještě jako https://www.openstreetmap.org/way/402181381
   (rozšířený dotaz DATA-01 chytil obě entity — POI uzel i budovu). Zůstala tato entita, protože
-  nese víc doložených údajů; druhá je v data/kandidati/_vyrazeno.yaml.'
+  nese víc doložených údajů; druhá je v data/kandidati/_vyrazeno.yaml.
+
+  DUPLIKÁT SMAZÁN 2. 8. 2026: doběh DATA-01 (rozšířené okno) vytvořil druhého
+  kandidáta s čistým slugem schronisko-turystyczne-halny — týž objekt (OSM
+  way/402181404, shodné souřadnice). Smazán, identita zůstává tady; při
+  případném povýšení slug zkrátit s dokumentací (vzor Maják).'

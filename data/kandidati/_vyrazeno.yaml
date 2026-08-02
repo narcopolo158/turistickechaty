@@ -429,3 +429,13 @@ vyrazeno:
       minulost (DATA-25) nedoložena.
     rozhodl: interaktivní session s pověřením „rozhodni sám" (2. 8. 2026)
     checked: 2026-08-02
+  - osm: https://www.openstreetmap.org/way/1260537646
+    slug: smedava
+    duvod: >-
+      Není nový objekt: týž OSM way (1260537646, shodné souřadnice) už je
+      publikovaný jako profil jizerske-hory/horska-chata-smedava. Doběh
+      DATA-01 z 2. 8. 2026 (rozšířené okno) kandidáta založil znovu jen
+      proto, že páruje podle slugu, ne podle OSM identity — vyřazeno jako
+      duplicitní kandidát publikovaného profilu, ne jako objekt.
+    rozhodl: interaktivní session s pověřením „pracuj dál samostatně" (2. 8. 2026)
+    checked: 2026-08-02

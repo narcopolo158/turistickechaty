@@ -5,7 +5,7 @@
 # provozu OSM nenese, proto tu není. Nic nedomýšlet!
 
 nazev: Rozhledna Černá Studnice
-slug: rozhledna-cerna-studnice
+slug: cerna-studnice
 zeme: cz
 oblast: jizerske-hory
 typ: rozhledna
@@ -25,3 +25,10 @@ interniPoznamky: >-
 
   Doklad občerstvení (OSM, 100 m okolí): Restaurace "Černá Studnice" —
   amenity=restaurant, 15 m, https://www.openstreetmap.org/node/1396581262
+
+  SPÁROVÁNO S PROFILEM 2. 8. 2026: profil data/chaty/jizerske-hory/cerna-
+  studnice.yaml vznikl na zadání Michala ještě PŘED tímhle doběhem DATA-01
+  (objekt ležel pod starou hranou okna) — kandidátní slug proto přejmenován na
+  cerna-studnice, aby pároval. Křížové ověření (krajský portál + Treking +
+  regionální katalog) je zapsané v profilu; OSM id node/664117301 a restaurace
+  15 m převzaty odsud. VERDIKT: POVÝŠENO (profil předchází kandidáta).

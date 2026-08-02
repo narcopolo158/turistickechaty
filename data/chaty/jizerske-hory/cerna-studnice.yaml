@@ -1,9 +1,10 @@
 # Rozhledna Černá studnice — profil založen 2. 8. 2026 PŘÍMO NA ZADÁNÍ
-# MICHALA (objekt ležel pod jižní hranou okna DATA-01, proto nemá
-# kandidátní soubor; hrana v scripts/oblasti.ts rozšířena na 50.70).
+# MICHALA (objekt ležel pod jižní hranou okna DATA-01; hrana
+# v scripts/oblasti.ts rozšířena na 50.70). Doběh DATA-01 z 2. 8. 2026
+# pak objekt našel a dodal OSM identifikátory (node/664117301) —
+# kandidát spárován pod slug cerna-studnice.
 # Křížové ověření: krajský portál + Treking.cz + regionální katalog;
-# 26 m a 91 schodů se shodují. GPS ze zadání, OSM identifikátor se
-# NEVYMÝŠLÍ — doplní ho příští běh DATA-01. Vše verified: false.
+# 26 m a 91 schodů se shodují. Vše verified: false.
 
 nazev: Rozhledna Černá studnice
 slug: cerna-studnice
@@ -15,8 +16,8 @@ oblast: jizerske-hory
 # ── Lokace ────────────────────────────────────────────────────────────────
 # Výška: dva prameny 869 m; jeden dodává, že „některé mapy uvádějí 865",
 # a Mapy.com v zadání nesou 872 — zapsáno 869, rozptyl přiznán v source.
-lat: 50.7119728
-lng: 15.2336017
+lat: 50.7117493
+lng: 15.2329732
 vyska: 869
 obec: Smržovka
 overeniLokace:
@@ -27,8 +28,10 @@ overeniLokace:
     v nadmořské výšce 869 m (některé mapy uvádějí 865 m)", „v katastru
     obce Smržovka". Mapy.com v zadání Michala uvádějí 872 m — rozptyl
     865–872 nerozhodujeme, zapsána hodnota dvou shodných pramenů. GPS
-    ze zadání Michala 2. 8. 2026 (https://mapy.com/s/donadohaju);
-    OSM identifikátor doplní příští běh DATA-01. V terénu neověřeno.
+    OpenStreetMap https://www.openstreetmap.org/node/664117301 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    doběh DATA-01 z 2. 8. 2026 objekt potvrdil ~50 m od bodu ze zadání
+    Michala (https://mapy.com/s/donadohaju). V terénu neověřeno.
   verified: false
   checked: '2026-08-02'
 
@@ -45,8 +48,10 @@ overeniObcerstveni:
     Regionální katalog (regionalniprodukt.cz, systém krajského portálu,
     načteno 2. 8. 2026): u věže funguje restaurace i kiosek —
     „Rozhledna je přístupná v provozní době restaurace nebo kiosku.",
-    „Restaurace vaří do 16.30 hodin." Treking.cz: „chata je uzavřena
-    a turisté musí vzít zavděk restaurací" (nedatováno). Vlastní web
+    „Restaurace vaří do 16.30 hodin." Nezávisle OSM: Restaurace „Černá
+    Studnice" 15 m od věže (https://www.openstreetmap.org/node/1396581262).
+    Treking.cz: „chata je uzavřena a turisté musí vzít zavděk restaurací"
+    (nedatováno). Vlastní web
     cernastudnice.eu existuje (vede stránky restaurace, kiosku
     i rekonstrukce areálu), ze sandboxu se 2. 8. 2026 nenačetl
     (timeout).
@@ -122,7 +127,7 @@ text:
     ubytovnu vede jako uzavřenou.
   - >-
     Údaje na téhle stránce pocházejí z krajského katalogu
-    a z horského magazínu; souřadnice jsou ze zadání redakce. Vlastní
+    a z horského magazínu; polohu nese OpenStreetMap. Vlastní
     web areálu se nám zatím nepodařilo načíst. Redakce nic neověřila
     vlastním dotazem ani návštěvou.
 zdroje:
@@ -146,16 +151,15 @@ zdroje:
 interniPoznamky: >-
   Založeno 2. 8. 2026 PŘÍMO NA ZADÁNÍ MICHALA („ještě mi tam chybí
   třeba Černá studnice") — objekt ležel pod jižní hranou okna DATA-01
-  (50.7120 < 50.73), proto nemá kandidátní soubor. Hrana okna
-  v scripts/oblasti.ts rozšířena na 50.70 (Černostudniční hřeben celý).
-  PO ROZŠÍŘENÍ SPUSTIT: DATA-01 (jizerske-hory) — doplní OSM
-  identifikátor a případné další objekty jižního pásu (pozor na párování
-  s tímhle slugem), DATA-06 export značených tras + výchozích bodů
-  (starší exporty jižní pás nemají — bez nich se trasa nedopočítá),
-  pak routing a výšky.
+  (50.7120 < 50.73); hrana v scripts/oblasti.ts rozšířena na 50.70
+  (Černostudniční hřeben celý). Doběh DATA-01 z 2. 8. 2026 objekt našel
+  a kandidát je spárován pod slug cerna-studnice (OSM node/664117301
+  + restaurace 15 m převzaty do overeni*). Značené trasy jižního pásu
+  dorazily týmž doběhem; ZBÝVÁ export výchozích bodů (starý katalog
+  končí na 50.73) a po routingu výšky.
 
   NEDOLOŽENO (nezapsáno): aktuální stav ubytování, denní otvírací
-  hodiny (útržkovité/nejisté), OSM id, počet míst restaurace. Rozptyl
+  hodiny (útržkovité/nejisté), počet míst restaurace. Rozptyl
   výšky 865–872 m (zapsáno 869 dle dvou pramenů; Mapy.com v zadání 872).
   Vlastní web cernastudnice.eu načíst příště (timeout) — vede stránky
   „Rekonstrukce areálu", může nést novější stav než katalogy.
