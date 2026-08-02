@@ -1,0 +1,27 @@
+# Fixtura na vzor „vsuvka pramene" (rozhodnutí Michala 2. 8. 2026: „chtěl
+# bych souvislý lidský text a zdroje až pod článkem — ať se to dobře čte").
+# Jmenovat pramen patří do sekce Zdroje pod článkem, ne doprostřed věty.
+#
+# Zabrat MUSÍ: „podle Kudy z nudy", „dle portálu Trasygorskie", „podle
+# oficiální stránky PTTK" a „Podle webu města" (i na začátku věty).
+# Zabrat NESMÍ past ve druhém odstavci: poctivostní věta bez jména pramene
+# („přebíráme z jediného pramene…") je žádoucí styl, ne vsuvka — a spojení
+# „podle všeho" je běžná čeština.
+slug: 21-vsuvka-pramene
+nazev: Fixtura na vsuvku pramene v próze
+typ: obsluhovana
+obec: Harrachov
+stav: v-provozu
+perex: >-
+  Bouda stojí podle Kudy z nudy na hřebeni a dle portálu Trasygorskie má
+  kuchyni.
+text:
+  - >-
+    Podle webu města se tu parkuje u kostela a podle oficiální stránky
+    PTTK je otevřeno celoročně.
+  - >-
+    Časovou osu přebíráme z jediného pramene a ověřená zatím není; bouda
+    je podle všeho nejstarší v údolí, doklad ale nemáme.
+zdroje:
+  - url: 'https://www.chata-fixtura.cz/'
+    popis: 'Web provozovatele'

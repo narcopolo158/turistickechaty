@@ -15,6 +15,9 @@ Průvodce **turistickými chatami**: profily s ověřenými daty, mapa, výlety,
 3. Pracuj v rozsahu ~30 minut: raději menší hotový krok než rozdělaný velký. Vždy `commit + push` (konvence: `feat:`, `data:`, `fix:`, `docs:` — česky).
 4. Na konci: zápis do `docs/DENIK.md` (datum, co je hotovo, co dál, otázky) + krátké shrnutí Michalovi.
 
+## Veřejná próza
+- **Souvislý „lidský" text, prameny až pod článkem (rozhodnutí Michala 2. 8. 2026: „nelíbí se mi, že v textu u chaty je několikrát napsáno ‚podle Kudy z nudy' apod. — chtěl bych souvislý lidský text a zdroje až pod článkem, ať se to dobře čte").** Jména pramenů („podle Kudy z nudy", „dle portálu Trasygorskie", „podle oficiální stránky PTTK") do vět NEPATŘÍ — pramen žije v `zdroje` (vypisují se pod článkem) a v `overeni*.source`. Poctivostní věty BEZ jména pramene zůstávají žádoucí („časovou osu přebíráme z jediného pramene a ověřená není"); typicky stačí jedna, v závěrečném odstavci. Hlídá to ban-scan (vzor „vsuvka pramene").
+
 ## Pravidla pro data o chatách
 - Každý údaj má `source:` (URL/„telefonát"/kniha) a `verified: true|false` + `checked: YYYY-MM-DD`. **Nikdy nedomýšlet fakta** — co není doloženo, je `verified: false` nebo se nezapisuje.
 - **Význam `verified: true` (rozhodnutí Michala 21. 7. 2026, „konvence B"):** `true` jen tehdy, když údaj **ověřil sám Michal** vlastní kontrolou (telefonát, návštěva, přímá znalost). Data převzatá z webu, OSM, katalogů apod. zůstávají **`verified: false`** — mají jen `source`. „Ověřeno" na webu tedy znamená, že to potvrdil člověk, ne že je to jen citované z internetu.

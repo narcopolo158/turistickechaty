@@ -11,6 +11,42 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (odpoledne) — nová konvence prózy: souvislý text, prameny pod článek
+
+**Zadání Michala (přišlo během práce):** *„když se budeš hrabat v próze,
+nelíbí se mi, že v textu u chaty je několikrát napsáno ‚podle Kudy z nudy'
+apod. — chtěl bych souvislý lidský text a zdroje až pod článkem — ať se to
+dobře čte."*
+
+**Konvence je zapsaná a hlídaná.** Do CLAUDE.md přibylo pravidlo „Veřejná
+próza": jména pramenů do vět nepatří — žijí v sekci Zdroje pod článkem
+a v `overeni*.source`. Dvě věci vědomě zůstávají, protože to vsuvky nejsou:
+**připsání superlativu tomu, kdo ho tvrdí** („podle provozovatele největší
+bouda Krkonoš" — tvoje pravidlo z 21. 7.) a **poctivostní věty beze jmen**
+(„časovou osu přebíráme z jediného pramene a ověřená není"). Hlídá to nový
+vzor „vsuvka pramene" v ban-scanu, s vlastní fixturou (21-vsuvka-pramene)
+včetně pastí, které se chytit nesmí („podle všeho", superlativ, poctivostní
+věta) — obnovené snímky, regresní test zelený.
+
+**Změřeno nad celým korpusem: 133 vsuvek.** Není to práce na jeden běh; každá
+věta se musí přepsat rukou, aby nezmizela epistemika (rozpor pramenů
+o kapacitě je obsah, ne balast). Sken to teď počítá při každé kontrole, takže
+je vidět, jak úklid postupuje.
+
+**Vzorový přepis: Černá bouda (nejhorší, 7 vsuvek → 0).** Ukázky proměny:
+„Bistro je podle webu objektu otevřené všem" → „Bistro je otevřené všem";
+„portál města uvádí 123, Českéhory.cz 136" → „jeden pramen uvádí 123, druhý
+136" (rozpor zůstal, jména šla dolů do zdrojů); závěrečný odstavec už
+nevyjmenovává servery — odkazuje na zdroje pod článkem. Vyčištěna i pole
+`autem`, `lanovka` a `otviraciDoba` („dle webu objektu, redakčně neověřeno"
+pryč — neověřenost nese systém ověření, ne závorka v textu). Stejně tak
+už dřív napsané dopravní řádky středisek („podle oficiálního webu města"
+vyčištěno ještě před commitem dopravy).
+
+**Příště:** pokračovat v úklidu prózy od nejhorších (kolínská 6, Jelenka 6,
+Rychorská 5, Portášky 5, Jelení Louky 5…) — počítadlo v ban-scanu; a doprava
+zbylých středisek.
+
 ## 2026-08-02 (dopoledne) — doprava u tří středisek z oficiálních webů měst; ranní běh zkontrolován
 
 **Zadání Michala:** *„podívej se na výsledek ranní session a pokračuj

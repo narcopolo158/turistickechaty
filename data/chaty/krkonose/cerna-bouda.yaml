@@ -30,8 +30,8 @@ zajimavosti:
     kategorie: jine
     zdroj: Turistika.cz „Černá bouda na Černé pasece a její historie" (sekundární zdroj, verified:false)
   - text: >-
-      Bistro je podle webu objektu otevřené nejen hotelovým hostům, ale všem
-      návštěvníkům Černé hory
+      Bistro je otevřené nejen hotelovým hostům, ale všem návštěvníkům Černé
+      hory
     kategorie: gastro
     zdroj: hotel-cerna-bouda.cz, stránka Bistro (web objektu, verified:false)
   - text: >-
@@ -98,7 +98,7 @@ overeniObcerstveni:
 # ── Provoz ────────────────────────────────────────────────────────────────
 sezona: celoročně
 otviraciDoba: |-
-  Bistro po–ne 9.00–18.00 (dle webu objektu, redakčně neověřeno).
+  Bistro po–ne 9.00–18.00.
   Provozní doba hotelové restaurace pro neubytované nedoložena.
 zimniProvoz: |-
   V zimě k hotelu nevede sjízdná cesta — web objektu upozorňuje, že
@@ -125,12 +125,11 @@ overeniProvoz:
 
 # ── Přístup ───────────────────────────────────────────────────────────────
 autem: |-
-  Mimo zimu se dá podle ceskehory.cz dojet až k hotelu autem, ale „pouze
-  ubytovaní". Web objektu upozorňuje, že v zimě nejsou dostupní žádným
-  vozidlem. Redakčně neověřeno.
+  Mimo zimu se dá dojet až k hotelu autem, ale jen pro ubytované. V zimě
+  hotel není dostupný žádným vozidlem.
 lanovka: >-
   Černohorský express — osmimístná kabinová lanovka z Janských Lázní
-  s celoročním provozem; dle webu objektu je poslední jízda v 17.30
+  s celoročním provozem; poslední jízda v 17.30
 verejnaDoprava:
   zastavka: Janské Lázně (dolní stanice lanovky Černohorský express)
 overeniPristup:
@@ -205,18 +204,15 @@ perex: >-
   Horský hotel ve výšce 1 260 m kousek pod vrcholem Černé hory nad Janskými
   Lázněmi, dostupný lanovkou Černohorský express. Sezónní hostinec tu poprvé
   otevřeli roku 1888, stará bouda ale roku 1984 padla a dnešní budovu
-  dostavěli až roku 1993. Bistro je podle webu objektu otevřené všem
-  návštěvníkům Černé hory, nejen ubytovaným.
+  dostavěli až roku 1993. Bistro je otevřené všem návštěvníkům Černé hory, nejen ubytovaným.
 text:
   - >-
     Černá bouda stojí ve výšce 1 260 metrů kousek pod vrcholem Černé hory nad
-    Janskými Lázněmi, na adrese Horská 171. Výšku uvádějí shodně web objektu,
-    oficiální portál města Janské Lázně i Českéhory.cz; jen pozor na údaj 1
-    300 metrů, který se na webu hotelu také objevuje — ten patří vrcholu hory,
-    ne boudě.
+    Janskými Lázněmi, na adrese Horská 171. Výšku uvádějí shodně tři nezávislé prameny; jen pozor na údaj 1 300
+    metrů, který se občas objevuje také — ten patří vrcholu hory, ne boudě.
   - >-
-    Historii tohoto místa podrobně popisuje Turistika.cz; primárním pramenem
-    ji zatím ověřenou nemáme, ale stojí za převyprávění. Černá paseka na
+    Historii tohoto místa přebíráme z jediného podrobného vyprávění a
+    primárním pramenem ji zatím ověřenou nemáme — stojí ale za převyprávění. Černá paseka na
     temeni hory vznikla vykácením lesa kvůli dřevu pro stříbrné doly v Kutné
     Hoře a podle josefínského katastru byla do roku 1785 zcela pustá. Brzy
     poté tu postavili letní hájenku. Zhruba o sto let později v ní hospodský a
@@ -235,39 +231,33 @@ text:
     než místo — nový horský hotel tu dostavěli až v roce 1993 a rekonstrukcí
     prošel v roce 2005.
   - >-
-    Ubytování je hotelové: podle portálu města Janské Lázně jde o dvoulůžkové
-    a čtyřlůžkové pokoje včetně dvou apartmánů, u některých s možností
-    přistýlky; web hotelu mluví jen obecně o několika typech komfortních
-    pokojů. Kolik je tu přesně lůžek, doložit neumíme — portál města uvádí
-    123, Českéhory.cz 136 a web hotelu žádné číslo nenese, takže tu přesný
-    počet raději neuvádíme, než abychom mezi čísly vybírali. Hotel se podle
-    vlastního webu orientuje mimo jiné na školy v přírodě, sportovní oddíly a
+    Ubytování je hotelové: dvoulůžkové a čtyřlůžkové pokoje včetně dvou
+    apartmánů, u některých s možností přistýlky; sám hotel mluví jen obecně o
+    několika typech komfortních pokojů. Kolik je tu přesně lůžek, doložit
+    neumíme — jeden pramen uvádí 123, druhý 136 a hotel žádné číslo nenese,
+    takže přesný počet raději neuvádíme, než abychom mezi čísly vybírali.
+    Hotel se orientuje mimo jiné na školy v přírodě, sportovní oddíly a
     firemní kolektivy.
   - >-
-    Pro kolemjdoucího turistu je podstatné bistro, protože web hotelu u něj
-    přímo píše, že nabízí nejen hotelovým hostům, ale všem návštěvníkům Černé
-    hory nápoje, jídlo a občerstvení. Otevřeno má podle téhož zdroje denně od
-    devíti do šesti. Z nabídky jmenuje polévky — gulášovou, čočkovou,
+    Pro kolemjdoucího turistu je podstatné bistro: obsluhuje nejen hotelové
+    hosty, ale všechny návštěvníky Černé hory — nápoje, jídlo a občerstvení.
+    Otevřeno má denně od devíti do šesti. Z nabídky jmenuje polévky — gulášovou, čočkovou,
     dršťkovou, kyselicu, bramboračku — hotová jídla dle nabídky dne, smažený
     sýr, kuřecí řízek, hranolky a moučník. Vedle bistra existuje ještě
     hotelová restaurace; jestli je otevřená i neubytovaným, doložené nemáme.
   - >-
     Přístup je věc, kterou je dobré si rozmyslet dopředu, protože se mění s
-    ročním obdobím. Podle portálu města Janské Lázně sem jezdí osmimístná
-    kabinová lanovka Černohorský express z Janských Lázní s celoročním
-    provozem; poslední jízda je podle webu hotelu v 17.30. Mimo zimu se dá
-    podle serveru Českéhory.cz dojet až nahoru autem, ale jen ubytovaným. V
-    zimě to neplatí vůbec: web objektu na to upozorňuje velkými písmeny — v
-    zimě nejsou dostupní žádným vozidlem. Portál města k tomu dodává, že v
-    zimním období obstará hotel dopravu od horní stanice lanovky sněžnou
+    ročním obdobím. Z Janských Lázní sem jezdí osmimístná kabinová lanovka
+    Černohorský express s celoročním provozem; poslední jízda je v 17.30.
+    Mimo zimu se dá dojet až nahoru autem, ale jen pro ubytované. V zimě to
+    neplatí vůbec — hotel upozorňuje velkými písmeny, že v zimě k boudě žádné
+    vozidlo nedojede, a od horní stanice lanovky obstará dopravu sněžnou
     rolbou nebo skútrem.
   - >-
     Údaje na téhle stránce pocházejí z webu objektu a ze tří sekundárních
-    zdrojů — jsou to server Turistika.cz, oficiální portál města Janské Lázně
-    a server Českéhory.cz — a redakce je zatím neověřila vlastním dotazem ani
-    návštěvou. Prameny se rozcházejí nejen v kapacitě, ale i v kontaktech:
-    portál města uvádí jiný telefon a jiný e-mail než hotel sám. Spolehli jsme
-    se na spojení uvedené na webu hotelu. Než sem doplníme ověřené údaje,
+    pramenů vypsaných dole ve zdrojích; redakce je zatím neověřila vlastním
+    dotazem ani návštěvou. Prameny se rozcházejí nejen v kapacitě, ale i v kontaktech — uvádíme
+    proto spojení, které zveřejňuje hotel sám. Než sem doplníme ověřené údaje,
     doporučujeme si nocleh i provoz bistra potvrdit přímo u hotelu.
 
 fotky:

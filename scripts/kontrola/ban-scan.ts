@@ -67,6 +67,27 @@ const VZORY: Array<[string, RegExp]> = [
       'gu',
     ),
   ],
+  /**
+   * Vsuvka pramene v próze (rozhodnutí Michala 2. 8. 2026: „chtěl bych
+   * souvislý lidský text a zdroje až pod článkem — ať se to dobře čte").
+   * JMENOVAT PRAMEN patří do sekce Zdroje pod článkem, ne doprostřed věty.
+   *
+   * Co vzor schválně NETREFÍ, protože to vsuvka pramene není:
+   *  - „podle provozovatele největší bouda Krkonoš" — připsání superlativu
+   *    tomu, kdo ho tvrdí (pravidlo Michala z 21. 7. 2026: claim se připíše);
+   *  - poctivostní věty bez jména („přebíráme z jediného pramene");
+   *  - jména jako aktéři děje („spor se Správou KRNAP").
+   */
+  [
+    'vsuvka pramene',
+    new RegExp(
+      `${WB0}([Pp]odle|[Dd]le)\\s+(Kudy z nudy|Seznam Zpráv|ČeskýchNovin|portálu|serveru|` +
+        `webu|stránk${W}*|katalog${W}*|oficiální(ho|ch)?\\s|reportáž|` +
+        `Trasygorskie|Treking|Góry i Ludzie)|` +
+        `uváděj[íi]\\s+Seznam Zprávy|(píše|uvádí|dodává)\\s+(portál|server|web)${WB1}`,
+      'gu',
+    ),
+  ],
 ]
 
 const cesty = process.argv.slice(2).length
