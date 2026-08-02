@@ -1,0 +1,146 @@
+# Maják Járy Cimrmana — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2. 8. 2026 (křížové ověření: krajský portál + Regiontourist; rok 2013
+# a 105 schodů se shodují). Slug opraven z OSM překlepu „cimrmanna" na
+# „cimrmana" (kandidátní soubor přejmenován spolu s fotkami — viz
+# poznámky). Klíč zařazení dle rozhodnutí Michala z 28. 7. 2026:
+# rozhledna s občerstvením (restaurace U Čápa a kiosek Severní pól).
+# Vše verified: false.
+
+nazev: Maják Járy Cimrmana
+slug: rozhledna-majak-j-cimrmana
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+zajimavosti:
+  - text: >-
+      Rozhledna ve tvaru majáku vztyčená roku 2013 „na památku mistrovu
+      neomezenému rozhledu" — ve spodní části sídlí jediné oficiální
+      muzeum Járy Cimrmana
+    kategorie: jine
+    zdroj: >-
+      krajský portál liberecky-kraj.cz (nápis na věži a muzeum), načteno
+      2. 8. 2026
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7399206
+lng: 15.3453645
+vyska: 785
+obec: Kořenov
+overeniLokace:
+  source: >-
+    Regiontourist.cz (načteno 2. 8. 2026): „dřevěnou stavbu ve výšce
+    785 m n. m." v Příchovicích, části obce Kořenov; z centra Příchovic
+    „pouhých 500 metrů". Krajský portál: po výstupu se „ocitnete
+    v nadmořské výšce 801 m n. m." (ochoz) — sedí s výškou plošiny
+    17 m nad stanovištěm 785 m. GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/303365344 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Žádný dosažitelný pramen nocleh nezmiňuje — pole se nevyplňuje
+# (areál U Čápa může ubytovávat, doklad ale chybí).
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Regiontourist.cz (načteno 2. 8. 2026): „U rozhledny se náchází
+    restaurace s vlastním minipivovarem U Čápa a o kousek dále kiosek
+    Severní pól." Nezávisle OSM: restaurace U Čápa 66 m od věže
+    (https://www.openstreetmap.org/node/3077189931). Vlastní web
+    ucapa.eu se 2. 8. 2026 nepodařilo načíst (timeout).
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Denně 10:00–17:00.
+overeniProvoz:
+  source: >-
+    Regiontourist.cz (načteno 2. 8. 2026): „denně 10:00 - 17:00".
+    Vstupné se dle pravidla o cenách nezapisuje.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 2013
+milniky:
+  - rok: 2013
+    udalost: >-
+      Maják vztyčily Svazek obcí mikroregionu Tanvaldsko a Divadlo Járy
+      Cimrmana; v létě otevřeno i muzeum
+overeniHistorie:
+  source: >-
+    Krajský portál liberecky-kraj.cz (načteno 2. 8. 2026), nápis na
+    věži: „Na památku mistrovu neomezenému rozhledu a nehynoucí slávě
+    byl tento Maják Járy Cimrmana vztyčen roku 2013."; muzeum „bylo
+    otevřeno v létě 2013"; „Výška rozhledny včetně stožáru: 23,7 m",
+    105 schodů. Regiontourist.cz: „O dřevěnou stavbu … se zasloužily
+    v roce 2013 Svazek obcí mikroregionu Tanvaldsko a Divadlo Járy
+    Cimrmana"; „Maják z borového dřeva je vysoký 24 metrů, výška
+    vyhlídkové plošiny je 17 metrů" — drobný rozdíl 23,7 × 24 m jde
+    nejspíš za zaokrouhlením.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěná rozhledna ve tvaru majáku stojí od roku 2013 v Příchovicích
+  u Kořenova (785 m) — na památku „mistrova neomezeného rozhledu".
+  Ve spodní části věže sídlí jediné oficiální muzeum Járy Cimrmana,
+  u paty láká restaurace s minipivovarem U Čápa a kousek dál kiosek
+  Severní pól.
+text:
+  - >-
+    Maják vprostřed hor je přesně ten druh vtipu, jaký by mistr ocenil:
+    vztyčily ho roku 2013 Svazek obcí mikroregionu Tanvaldsko
+    s Divadlem Járy Cimrmana a nápis na věži oznamuje, že se tak stalo
+    „na památku mistrovu neomezenému rozhledu a nehynoucí slávě".
+    Borová věž stojí v Příchovicích, části obce Kořenov, pět set metrů
+    od centra osady.
+  - >-
+    Nahoru se stoupá po 105 schodech na plošinu v sedmnácti metrech —
+    celá stavba měří i se stožárem necelých čtyřiadvacet metrů —
+    a z ochozu se díváte z osmi set metrů nad mořem na Jizerky
+    i Krkonoše. Ve spodní části věže sídlí jediné oficiální muzeum
+    našeho génia, otevřené spolu s majákem v létě 2013.
+  - >-
+    Zastávka na trase tu má i praktickou stránku: u rozhledny funguje
+    restaurace s vlastním minipivovarem U Čápa a o kousek dál kiosek
+    Severní pól. Otevřeno bývá denně od deseti do pěti.
+  - >-
+    Údaje na téhle stránce pocházejí z krajského katalogu
+    a z turistického portálu; polohu nese OpenStreetMap. Vlastní web
+    areálu U Čápa se nám zatím nepodařilo načíst. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Krajský portál liberecky-kraj.cz — nápis na věži (vztyčen 2013),
+      23,7 m včetně stožáru, 105 schodů, ochoz v 801 m n. m., muzeum
+      od léta 2013 (načteno 2. 8. 2026)
+    url: https://www.liberecky-kraj.cz/dr-cs/13982-majak-jary-cimrmana.html
+  - popis: >-
+      Regiontourist.cz — 785 m n. m., borové dřevo, 24 m s plošinou
+      v 17 m, stavebníci (Tanvaldsko + Divadlo J. C.), restaurace
+      s minipivovarem U Čápa, kiosek Severní pól, denně 10–17 (načteno
+      2. 8. 2026)
+    url: https://www.regiontourist.cz/co-podniknout/rozhledna-majak-a-muzeum-jary-cimrmana/
+  - popis: OpenStreetMap (GPS věže a restaurace u ní; ODbL)
+    url: https://www.openstreetmap.org/way/303365344
+interniPoznamky: >-
+  Povýšeno z kandidáta triáží 2. 8. 2026 (mandát „pracuj dál
+  samostatně"). Klíč: rozhledna s restaurací a kioskem (rozhodnutí
+  28. 7. 2026). SLUG OPRAVEN: kandidát nesl z OSM překlep
+  „rozhledna-majak-j-cimrmanna" (dvě n) — kandidátní soubor i fotky
+  kandidátů přejmenovány na „…cimrmana", aby URL nenesla pravopisnou
+  chybu; všechny prameny píší „Cimrmana".
+
+  NEDOLOŽENO (nezapsáno): nocleh v areálu U Čápa, kontakty, vstupné
+  (ceny se nezapisují). Web ucapa.eu zkusit načíst příště (timeout).
+  Blízko Štěpánky (~1,5 km vzdušně) — oba objekty sdílejí výchozí bod
+  Příchovice.

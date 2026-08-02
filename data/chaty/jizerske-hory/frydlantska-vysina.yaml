@@ -1,0 +1,143 @@
+# Rozhledna Frýdlantská výšina — profil povýšen z kandidáta DATA-01 (OSM)
+# triáží 2. 8. 2026 (křížové ověření: oficiální web města Frýdlant
+# + Kudy z nudy; 21 m a 399 m n. m. se shodují). Rok dnešní věže žádný
+# pramen neříká — NEZAPSÁN. Klíč zařazení dle rozhodnutí Michala
+# z 28. 7. 2026: rozhledna s občerstvením (přistavěné pohostinství,
+# OSM kiosek 14 m). Vše verified: false.
+
+nazev: Frýdlantská výšina
+slug: frydlantska-vysina
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Frýdlantsko je podhůří — 399 m n. m.; o zařazení rozhoduje role na
+# trase a občerstvení, ne nadmořská výška (rozhodnutí 30. 7. 2026).
+lat: 50.9347634
+lng: 15.0766813
+vyska: 399
+obec: Frýdlant
+overeniLokace:
+  source: >-
+    Oficiální web města Frýdlant (mesto-frydlant.cz, načteno
+    2. 8. 2026): „Ve výšce 399 metrů n. m. stojí nad městem Frýdlant";
+    Kudy z nudy nezávisle: „čedičovém kopci Resselbergu (dnes
+    Frýdlantská výšina, 399 m n. m.)". GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/5794499549 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Žádný pramen nocleh nezmiňuje — pole se nevyplňuje.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy (načteno 2. 8. 2026): k rozhledně „bylo přistavěno také
+    malé pohostinství". Nezávisle OSM: kiosek (fast_food) 14 m od věže,
+    https://www.openstreetmap.org/node/5794499547. Provozní režim
+    pohostinství prameny neuvádějí.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Sezónně: v červenci a srpnu denně kromě pondělí, v květnu, červnu
+  a září o víkendech a svátcích; přesné hodiny se v pramenech liší —
+  ověřte předem.
+overeniProvoz:
+  source: >-
+    Web města Frýdlant (načteno 2. 8. 2026): „Květen, červen, září:
+    soboty, neděle a svátky 9.00 - 18.00", „Červenec, srpen: denně kromě
+    pondělí, Úterý - pátek 9.00 - 18.00, Sobota a neděle 10.00-17.00".
+    Kudy z nudy uvádí tytéž měsíce s hodinami 10–17 — NA HODINÁCH SE
+    PRAMENY NESHODUJÍ, zapsán jen režim. Vstupné se dle pravidla
+    o cenách nezapisuje.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku dnešní věže NENÍ v pramenech („na jejím místě vyrostla") —
+# nezapisuje se, nedomýšlí se.
+milniky:
+  - rok: 1890
+    udalost: >-
+      Čerstvě založený okrašlovací spolek postavil na kopci
+      patnáctimetrovou dřevěnou vyhlídkovou věž
+  - rok: 1906
+    udalost: >-
+      Zchátralá dřevěná věž stržena; na jejím místě vyrostla dnešní
+      21metrová cihlovo-kamenná rozhledna
+overeniHistorie:
+  source: >-
+    Kudy z nudy (načteno 2. 8. 2026): „vystavěl roku 1890, čerstvě
+    založený okrašlovací spolek, patnáctimetrovou vyhlídkovou věž. Tato
+    byla ale roku 1906 z důvodu zchátralosti stržena a na jejím místě
+    vyrostla 21 metrů vysoká cihlovo-kamenná rozhledna" s plošinou
+    v 18,6 m; „Na stavbě rozhledny se výraznou měrou podílel místní
+    podnikatel v oboru truhlářství Josef Haupt", stavitel Antonín
+    Dressler. Rok dokončení dnešní věže pramen výslovně neříká.
+    Web města: „21 metrů vysoká rozhledna", „100 žulových schodech".
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Cihlovo-kamenná rozhledna nad Frýdlantem, na čedičovém kopci, kterému
+  se říkávalo Resselberg (399 m). Věž měří 21 metrů, na ochoz vede
+  100 žulových schodů a hned u ní stojí malé pohostinství. Tohle už
+  nejsou hory, ale vyhlídka na Jizerky odsud stojí za zacházku.
+text:
+  - >-
+    Frýdlantská výšina připomíná, že průvodce nedrží nadmořská výška,
+    ale role místa na trase: 399 metrů nad mořem je podhůří, jenže věž
+    s pohostinstvím nad Frýdlantem je přesně ten cíl výletu, kvůli
+    kterému se vyráží. Z města sem vede žlutá značka, od nádraží je to
+    zhruba dva a půl kilometru.
+  - >-
+    Historie má tu klasickou jizerskou zápletku: roku 1890 postavil
+    čerstvě založený okrašlovací spolek dřevěnou, patnáct metrů vysokou
+    věž, ta ale do roku 1906 zchátrala natolik, že musela k zemi. Na
+    jejím místě pak vyrostla dnešní cihlovo-kamenná rozhledna — 21
+    metrů, vyhlídková plošina v 18,6 metru, 100 žulových schodů; na
+    stavbě se výrazně podílel truhlář Josef Haupt se stavitelem
+    Antonínem Dresslerem. Přesný rok dokončení prameny neuvádějí, tak
+    ho neuvádíme ani my.
+  - >-
+    Otevřeno je sezónně — v létě denně kromě pondělí, na jaře a v září
+    o víkendech a svátcích; na přesných hodinách se prameny neshodují,
+    takže před cestou doporučujeme ověřit. U věže stojí malé
+    pohostinství, o jeho provozním režimu ale prameny mlčí.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního webu města
+    a z celostátního turistického portálu; polohu nese OpenStreetMap.
+    Redakce zatím nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální web města Frýdlant — 399 m n. m., 21 m, 100 žulových
+      schodů, sezónní otvírací doba, přístup po žluté od nádraží
+      (načteno 2. 8. 2026)
+    url: https://www.mesto-frydlant.cz/cs/turista/zajimavosti-a-cile-ve-frydlantu/rozhledna-frydlantska-vysina.html
+  - popis: >-
+      Kudy z nudy — dřevěná věž 1890 (okrašlovací spolek), stržení 1906,
+      dnešní věž 21 m s plošinou v 18,6 m, Haupt a Dressler, přistavěné
+      pohostinství, Resselberg (načteno 2. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/rozhledna-frydlantska-vysina
+  - popis: OpenStreetMap (GPS věže a kiosek u ní; ODbL)
+    url: https://www.openstreetmap.org/node/5794499549
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/frydlantska-vysina.yaml triáží
+  2. 8. 2026 (mandát „pracuj dál samostatně"). Klíč: rozhledna
+  s občerstvením (rozhodnutí 28. 7. 2026); podhůří — příklad pravidla
+  „role, ne výška".
+
+  NEDOLOŽENO (nezapsáno): rok dokončení dnešní věže (pramen říká jen
+  „na jejím místě vyrostla", bez letopočtu), kontakty, provozní režim
+  pohostinství, vstupné (ceny se nezapisují). ROZPOR hodin otvírací
+  doby město × Kudy z nudy — zapsán jen režim.

@@ -11,6 +11,51 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (blok 9) — šest jizerských rozhleden povýšeno; Královka odblokována
+
+**Povýšení č. 10–15 — rozhlednová část jizerské fronty je hotová (CZ):**
+
+- **Rozhledna Slovanka** (820 m) — nejstarší železná rozhledna v Čechách
+  (14. 8. 1887, tři sekce Německého horského spolku; claim vlastníka —
+  města Lučany n. N.), celoročně zdarma. Chata u věže má od 1. 6. 2026
+  nového provozovatele, otevření pro veřejnost ohlásil na červenec —
+  próza to přiznává, kandidát na telefonát DATA-04. Obec nedoložená
+  (vlastník Lučany × katalogy Hrabětice) — neuvádí se.
+- **Rozhledna Královka** (Nekras, 859 m) — kamenná věž 1907, 102 schodů;
+  areál s hotelem (84 lůžek / 31 pokojů), Sluneční terasou a Královskou
+  restaurací. Byla v `_odlozeno` (test zápisu z admina, otázka „jeden
+  objekt × dva") — pramen říká výslovně „součástí celého areálu … je
+  stejnojmenná rozhledna", takže povýšena JAKO JEDEN celek, lůžka na
+  profilu věže; kdyby Michal chtěl hotel zvlášť, rozdělíme. Záznam
+  z `_odlozeno` smazán (kontrola to správně hlídala jako vadu fronty).
+- **Nad Prosečí** (593 m) — věž 1932 (Horský spolek) u chaty Konráda
+  Hübnera z 1928; chata 2003 vypálena, 2018 stojí znovu. Prameny se
+  neshodují na výšce věže (28 × 24 m) — nerozhodujeme, próza přiznává.
+- **Frýdlantská výšina** (399 m) — podhůří jako příklad pravidla „role,
+  ne výška"; dřevěná věž 1890, stržena 1906, rok dnešní 21m věže
+  prameny NEŘÍKAJÍ — nezapsán. Pohostinství u věže.
+- **Liberecká výšina** — Liebiegův „hrad" 1900–01 s věží 25 m,
+  restaurace s hotelem v objektu, denně 10:30–22. Převážně jediný
+  pramen (vlastní web, EN verze) — přiznáno v próze i poznámkách.
+- **Maják Járy Cimrmana** (785 m, Příchovice) — 2013, muzeum ve věži,
+  restaurace s minipivovarem U Čápa + kiosek Severní pól. SLUG OPRAVEN
+  z OSM překlepu „cimrmanna" → „cimrmana" (kandidát i fotky
+  přejmenovány, důvod v profilu).
+
+Všech šest ověřeno naostro (200, JSON-LD, zdroje pod článkem, žádné
+vsuvky). Záznam jmenovců Slovanka × Bouda Slovanka aktualizován (oba už
+publikovaní). Routing Jizerek přepočítán potřetí a naposledy dnes:
+**22/22 chat, 45 přístupů, 0 k ruční kontrole** (Maják z Příchovic
+0,38 km — sedí s pramenem „pouhých 500 metrů"). Timeouty webů:
+chataprosec.cz, ucapa.eu, slovanka.eu čten jen částečně.
+
+**Příště:** ① klik „DATA-06: výšky přístupů" (jizerske-hory) pokryje
+všech 22 chat najednou. ② Zbytek jizerské fronty: PL dvojice Sky Walk
+(vyřešit zemi — nejspíš Świeradów-Zdrój) a Wieża widokowa Mirsk;
+Barbora (barbora.org), Javor (druhý pramen), Koryna; chata-prosec až
+se načte web. ③ Na Michalovi: výšky klik, fotky v adminu (50 čeká),
+REDAKCE_GITHUB_TOKEN na Forge.
+
 ## 2026-08-02 (blok 8) — výšky naostro na profilech; rozhledny Štěpánka a Tanvaldský Špičák povýšeny
 
 **DATA-06 pro Ještědský hřbet je kompletní (①–④).** Běh výšek z Actions

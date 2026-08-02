@@ -1,0 +1,144 @@
+# Rozhledna Slovanka — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2. 8. 2026 (křížové ověření: oficiální web města Lučany nad Nisou
+# + vlastní web chaty u věže + OSM). Nejstarší železná rozhledna
+# v Čechách (claim vlastníka — města). Klíč zařazení dle rozhodnutí
+# Michala z 28. 7. 2026: rozhledna s občerstvením (chata s restaurací
+# 34 m od věže). Vše verified: false.
+
+nazev: Rozhledna Slovanka
+slug: rozhledna-slovanka
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+zajimavosti:
+  - text: >-
+      Nejstarší železná rozhledna v Čechách — tři sekce Německého
+      horského spolku ji otevřely 14. srpna 1887
+    kategorie: stari
+    zdroj: >-
+      oficiální web města Lučany nad Nisou („Rozhledna Slovanka je
+      nejstarší železná rozhledna v Čechách"), načteno 2. 8. 2026
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Obec se neuvádí: rozhlednu vlastní město Lučany nad Nisou, chata u ní
+# je ale v katalozích vedená pod Hraběticemi (Janov nad Nisou) —
+# katastrální příslušnost věže žádný čitelný pramen neříká, nedomýšlí se.
+lat: 50.7732735
+lng: 15.1962678
+vyska: 820
+overeniLokace:
+  source: >-
+    Oficiální web města Lučany nad Nisou (lucany.cz, načteno 2. 8. 2026):
+    „výška 14 metrů, 820 metrů nad mořem". GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/470025078 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Žádný pramen nocleh u věže nezmiňuje — pole se nevyplňuje. Chata vedle
+# je ubytovací objekt, do profilu věže se její lůžka nepíší.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Chata Slovanka stojí 34 m od věže (OSM restaurace,
+    https://www.openstreetmap.org/node/205416283). Vlastní web chaty
+    slovanka.eu (načteno 2. 8. 2026): „Od 1.6.2026 má chata Slovanka
+    nového provozovatele", otevření pro veřejnost ohlášeno na začátek
+    července 2026; kontakt +420 602 362 274, kalivoda@chata-slovanka.cz.
+    Aktuální stav provozu redakce neověřila — próza to přiznává.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Věž je přístupná celoročně a zdarma; provoz chaty u věže si ověřte
+  předem.
+overeniProvoz:
+  source: >-
+    Oficiální web města Lučany nad Nisou (načteno 2. 8. 2026):
+    „Rozhledna Slovanka je přístupná celoročně a zdarma."
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1887
+milniky:
+  - rok: 1887
+    udalost: >-
+      Rozhledna slavnostně otevřena 14. srpna; vybudovaly ji společným
+      úsilím tři sekce Německého horského spolku
+  - rok: 1999
+    udalost: Rozhlednu získalo město Lučany nad Nisou
+  - rok: 2000
+    udalost: >-
+      Po obnově byla Slovanka 5. července slavnostně předána turistické
+      veřejnosti
+overeniHistorie:
+  source: >-
+    Oficiální web města Lučany nad Nisou (načteno 2. 8. 2026): „V roce
+    1887 ji společným úsilím vybudovaly tři sekce Německého horského
+    spolku", „Rozhledna byla slavnostně otevřena dne 14. srpna 1887",
+    město ji vlastní od roku 1999, „5. července 2000 byla Slovanka
+    slavnostně předána turistické veřejnosti".
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Nejstarší železná rozhledna v Čechách stojí od roku 1887 v 820 metrech
+  na hřebeni nad Lučany nad Nisou. Čtrnáctimetrová věž je přístupná
+  celoročně a zdarma — a hned vedle stojí horská chata s restaurací,
+  která právě mění provozovatele.
+text:
+  - >-
+    Slovanka je z rodu jizerských věží, kolem kterých se chodí už přes
+    sto let: tři sekce Německého horského spolku ji otevřely 14. srpna
+    1887 a drží jí prvenství nejstarší železné rozhledny v Čechách.
+    Železná konstrukce měří 14 metrů a stojí v nadmořské výšce 820
+    metrů.
+  - >-
+    Věž dnes patří městu Lučany nad Nisou — získalo ji roku 1999
+    a po obnově ji 5. července 2000 vrátilo turistům. Od té doby je
+    přístupná celoročně a zdarma, což z ní dělá jednu z nejsnáze
+    dostupných vyhlídek v horách.
+  - >-
+    Do průvodce ji řadí chata, která stojí pár desítek metrů od věže:
+    Chata Slovanka s restaurací. Tady je ale namístě poctivost — chata
+    má od června 2026 nového provozovatele a otevření pro veřejnost
+    ohlásil na začátek července 2026. Jestli už běží naplno, jsme
+    neověřovali; kdo na Slovance počítá s obědem, měl by si zavolat
+    předem.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního webu města, které
+    rozhlednu vlastní, a z webu chaty; polohu nese OpenStreetMap.
+    Redakce zatím nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální web města Lučany nad Nisou — otevření 14. 8. 1887
+      (Německý horský spolek), 14 m, 820 m n. m., nejstarší železná
+      rozhledna v Čechách, město vlastníkem od 1999, obnova 2000,
+      celoročně zdarma (načteno 2. 8. 2026)
+    url: https://www.lucany.cz/turistika/rozhledna-slovanka/
+  - popis: >-
+      Vlastní web Chaty Slovanka — nový provozovatel od 1. 6. 2026,
+      ohlášené otevření pro veřejnost začátkem července 2026, kontakty
+      (načteno 2. 8. 2026)
+    url: https://www.slovanka.eu/
+  - popis: OpenStreetMap (GPS věže a restaurace u ní; ODbL)
+    url: https://www.openstreetmap.org/way/470025078
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/rozhledna-slovanka.yaml triáží
+  2. 8. 2026 (mandát „pracuj dál samostatně"). Klíč: rozhledna s chatou
+  a restaurací (rozhodnutí 28. 7. 2026).
+
+  NEDOLOŽENO (nezapsáno): obec (vlastník Lučany × chata v katalozích pod
+  Hraběticemi/Janovem — katastr věže nikde), počet schodů, aktuální
+  provoz restaurace (přechod na nového provozovatele — kandidát na
+  telefonát DATA-04: +420 602 362 274). Chata Slovanka by po doložení
+  provozu mohla být i samostatný objekt (73?/lůžka nedoloženo).

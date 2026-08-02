@@ -1,0 +1,145 @@
+# Rozhledna Liberecká výšina — profil povýšen z kandidáta DATA-01 (OSM)
+# triáží 2. 8. 2026 (křížové ověření: vlastní web areálu + OSM; výška
+# věže 25 m se shoduje s OSM tagem). Věž s výletní restaurací v jednom
+# objektu — klíč zařazení dle rozhodnutí Michala z 28. 7. 2026.
+# Vše verified: false.
+
+nazev: Liberecká výšina
+slug: rozhledna-liberecka-vysina
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+zajimavosti:
+  - text: >-
+      Vyhlídková věž z let 1900–1901 postavená v podobě středověkého
+      hradu — textilní magnát Heinrich von Liebieg si nad Libercem
+      nechal vystavět stylovou výletní restauraci s věží
+    kategorie: jine
+    zdroj: vlastní web areálu libereckavysina.com (načteno 2. 8. 2026)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Nadmořská výška stanoviště nedoložena — neuvádí se (25 m je výška věže).
+lat: 50.7781899
+lng: 15.0916604
+obec: Liberec
+overeniLokace:
+  source: >-
+    Vlastní web areálu libereckavysina.com (načteno 2. 8. 2026): areál
+    stojí na vrchu Kovadlina nad Libercem (anglická verze: „on Kovadlina
+    Hill"). Obec Liberec (část Starý Harcov dle katalogových titulků).
+    Nadmořská výška stanoviště v pramenech není — neuvádí se. GPS:
+    OpenStreetMap https://www.openstreetmap.org/way/1478639957 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web areálu (načteno 2. 8. 2026): výletní restaurace
+    „s hotelem a wellness". Kapacitu pramen neuvádí — nezapisuje se.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web areálu (načteno 2. 8. 2026): výletní restaurace pro
+    veřejnost, otevřeno pondělí–neděle 10:30–22:00. Nezávisle OSM:
+    restaurace Liberecká Výšina 9 m od věže
+    (https://www.openstreetmap.org/node/2597515743).
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Denně 10:30–22:00 (restaurace i věž).
+kontakty:
+  web: https://www.libereckavysina.com/
+overeniProvoz:
+  source: >-
+    Vlastní web areálu (načteno 2. 8. 2026): „Pondělí - Neděle
+    10:30 - 22:00" pro restauraci i věž.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1901
+milniky:
+  - rok: 1901
+    udalost: >-
+      Heinrich von Liebieg dokončil stavbu výletní restaurace v podobě
+      středověkého hradu s pětibokou 25metrovou věží (stavěla se od
+      roku 1900)
+  - rok: 1999
+    udalost: Objekt uzavřen kvůli celkové zchátralosti
+  - rok: 2013
+    udalost: >-
+      Dokončena náročná rekonstrukce (probíhala od roku 2011); začátkem
+      roku 2022 následovala modernizace interiérů
+overeniHistorie:
+  source: >-
+    Vlastní web areálu libereckavysina.com (načteno 2. 8. 2026, anglická
+    verze): postaveno 1900–1901 v podobě středověkého hradu s „unique
+    pentagonal 25 m high tower", stavebníkem Heinrich von Liebieg;
+    v letech 1960–1969 necitlivá přestavba, 1999 uzavřeno pro
+    zchátralost, rekonstrukce 2011–2013, modernizace interiérů začátkem
+    2022.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Výletní restaurace s pětibokou pětadvacetimetrovou věží v podobě
+  středověkého hradu, kterou si nad Libercem nechal v letech 1900–1901
+  vystavět textilní magnát Heinrich von Liebieg. Dnes tu funguje
+  restaurace s hotelem, otevřeno je denně a věž patří k nejsnáze
+  dostupným vyhlídkám nad městem.
+text:
+  - >-
+    Liberecká výšina je z těch staveb, které si výletní kulturu přelomu
+    století nesou přímo v architektuře: Heinrich von Liebieg si ji
+    v letech 1900 až 1901 nechal postavit na vrchu Kovadlina nad
+    Libercem jako stylovou výletní restauraci v podobě středověkého
+    hradu, s pětibokou věží vysokou 25 metrů.
+  - >-
+    Dvacáté století s ní nezacházelo v rukavičkách — v šedesátých
+    letech prodělala necitlivou přestavbu a v roce 1999 se kvůli
+    zchátralosti zavřela úplně. Zachránila ji náročná rekonstrukce
+    v letech 2011 až 2013; začátkem roku 2022 prošly modernizací
+    i interiéry.
+  - >-
+    Dnes je to věž a restaurace v jednom objektu: výletní restaurace
+    s hotelem a wellness má otevřeno denně od půl jedenácté do deseti
+    večer a stejné hodiny platí i pro věž. Kapacitu ubytování prameny
+    neuvádějí, takže ji neuvádíme ani my.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu areálu; polohu
+    nese OpenStreetMap. Redakce zatím nic neověřila vlastním dotazem
+    ani návštěvou — a protože jde převážně o jediný pramen, berte
+    letopočty s touto výhradou.
+zdroje:
+  - popis: >-
+      Vlastní web areálu — stavba 1900–1901 (Heinrich von Liebieg),
+      pětiboká věž 25 m, přestavba 60. let, uzavření 1999, rekonstrukce
+      2011–2013 a modernizace 2022, restaurace s hotelem, otvírací doba
+      (načteno 2. 8. 2026)
+    url: https://www.libereckavysina.com/
+  - popis: OpenStreetMap (GPS věže a restaurace v objektu; ODbL)
+    url: https://www.openstreetmap.org/way/1478639957
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/rozhledna-liberecka-vysina.yaml
+  triáží 2. 8. 2026 (mandát „pracuj dál samostatně"). Klíč: rozhledna
+  s restaurací v témže objektu (rozhodnutí 28. 7. 2026). Nazev zkrácen
+  na „Liberecká výšina" (tak se objekt jmenuje na vlastním webu;
+  kandidát nesl OSM „Rozhledna Liberecká výšina" — slug zůstává).
+
+  NEDOLOŽENO (nezapsáno): nadmořská výška stanoviště, kapacita hotelu,
+  telefon/e-mail, vstupné na věž. Převážně jediný pramen (vlastní web,
+  čteno v EN verzi) — dohledat druhý pramen letopočtů, případně
+  telefonát DATA-04.

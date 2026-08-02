@@ -1,0 +1,144 @@
+# Rozhledna Královka — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2. 8. 2026 (křížové ověření: Kudy z nudy + Regiontourist + krajský
+# portál; vrch Nekras 859 m se shoduje ve dvou pramenech). Klíč zařazení
+# dle rozhodnutí Michala z 28. 7. 2026: rozhledna s restaurací — areál
+# s hotelem. Vše verified: false.
+
+nazev: Rozhledna Královka
+slug: rozhledna-kralovka
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.792057
+lng: 15.1575267
+vyska: 859
+obec: Janov nad Nisou
+overeniLokace:
+  source: >-
+    Kudy z nudy (načteno 2. 8. 2026): „na kopci Nekras (859 m)";
+    Regiontourist.cz nezávisle: „Rozhledna stojí na kopci Nekras, který
+    se vypíná do výšky 859 metrů". Obec Janov nad Nisou dle adresy
+    areálu na krajském portálu (Janov nad Nisou 1160). GPS:
+    OpenStreetMap https://www.openstreetmap.org/way/101211426 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Lůžka patří Hotelu Královka v témže areálu — profil věže je nese,
+# protože areál je jeden celek (krajský portál: „Součástí celého areálu
+# Královka je stejnojmenná kamenná rozhledna").
+nocleh: ano
+kapacita: 84
+pokoje:
+  - typ: Hotel Královka v areálu — 31 pokojů
+overeniNocleh:
+  source: >-
+    Krajský portál liberecky-kraj.cz (načteno 2. 8. 2026): „Celková
+    kapacita lůžek: 84", „Celkový počet pokojů: 31"; „Součástí celého
+    areálu Královka je stejnojmenná kamenná rozhledna." Jediný pramen,
+    verified:false.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Krajský portál liberecky-kraj.cz (načteno 2. 8. 2026): „samoobslužná
+    restaurace Sluneční terasa v přízemí a Královská restaurace v prvním
+    patře"; Regiontourist.cz: „K dispozici je restaurace a venkovní
+    stánek s občerstvením". Nezávisle OSM: restaurace Sluneční terasa
+    26 m od věže (https://www.openstreetmap.org/node/205395000).
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Denně 10.00–17.30; za příznivých podmínek déle.
+kontakty:
+  telefon: '+420 778 111 100'
+  email: recepce@hotelkralovka.cz
+overeniProvoz:
+  source: >-
+    Otvírací doba věže dle Kudy z nudy (načteno 2. 8. 2026): „Otevřeno
+    denně od 10.00 - 17.30 hod. Za příznivých podmínek otevřeno déle."
+    Kontakty areálu dle krajského portálu (GSM +420 778 111 100, e-mail
+    recepce@hotelkralovka.cz). Vstupné se dle pravidla o cenách
+    nezapisuje.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1907
+milniky:
+  - rok: 1907
+    udalost: Postavena dnešní kamenná rozhledna
+overeniHistorie:
+  source: >-
+    Kudy z nudy (načteno 2. 8. 2026): „Byla postavena roku 1907."
+    Regiontourist.cz zmiňuje dřevěnou předchůdkyni bez jasného letopočtu
+    („první, tehdy dřevěná rozhledna") — rok se nedomýšlí; tamtéž
+    „102 schodů" a pozdější přístavba horské chaty.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná rozhledna z roku 1907 na kopci Nekras (859 m) nad Janovem nad
+  Nisou, se 102 schody na ochoz. Věž je součástí areálu s hotelem
+  a dvěma restauracemi — samoobslužnou Sluneční terasou a Královskou
+  restaurací — takže tu zastávka na hřebenové túře dává smysl v každém
+  počasí.
+text:
+  - >-
+    Královka patří k nejnavštěvovanějším místům jizerského hřebene
+    a je snadné pochopit proč: kamenná věž z roku 1907 stojí na kopci
+    Nekras v 859 metrech, na ochoz vede 102 schodů a otevřeno bývá
+    denně od deseti do půl šesté, za příznivých podmínek i déle.
+    Kamenné věži předcházela starší dřevěná rozhledna.
+  - >-
+    Do průvodce ji ale řadí hlavně to, co stojí kolem: k rozhledně byla
+    později přistavěna horská chata a dnes je věž součástí areálu
+    s hotelem o 84 lůžkách v jednatřiceti pokojích. Hladového turistu
+    obslouží samoobslužná restaurace Sluneční terasa v přízemí,
+    Královská restaurace v prvním patře, a venku ještě stánek
+    s občerstvením.
+  - >-
+    Údaje na téhle stránce pocházejí ze dvou turistických portálů
+    a z krajského katalogu; na výšce kopce se prameny shodují, výšku
+    samotné věže žádný z nich neuvádí, takže ji neuvádíme ani my.
+    Redakce zatím nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Kudy z nudy — rok 1907, kopec Nekras (859 m), otvírací doba věže
+      (načteno 2. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/rozhledna-kralovka
+  - popis: >-
+      Regiontourist.cz — 102 schodů, Nekras 859 m, přistavěná horská
+      chata, samoobslužná restaurace a venkovní stánek (načteno
+      2. 8. 2026)
+    url: https://www.regiontourist.cz/co-podniknout/rozhledna-kralovka/
+  - popis: >-
+      Krajský portál liberecky-kraj.cz — areál s rozhlednou, Sluneční
+      terasa a Královská restaurace, 84 lůžek / 31 pokojů, kontakty
+      (načteno 2. 8. 2026)
+    url: https://www.liberecky-kraj.cz/dr-cs/16034-hotel-kralovka.html
+  - popis: OpenStreetMap (GPS věže a restaurace u ní; ODbL)
+    url: https://www.openstreetmap.org/way/101211426
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/rozhledna-kralovka.yaml triáží
+  2. 8. 2026 (mandát „pracuj dál samostatně"). Klíč: rozhledna
+  s restaurací a hotelem v areálu (rozhodnutí 28. 7. 2026). ROZHODNUTÍ
+  REDAKCE: lůžka Hotelu Královka jsou zapsaná na profilu věže, protože
+  jde o jeden areál (pramen to říká výslovně) — kdyby Michal chtěl hotel
+  jako samostatný objekt, rozdělit.
+
+  NEDOLOŽENO (nezapsáno): výška věže (prameny ji neuvádějí!), rok
+  dřevěné předchůdkyně, web areálu (e-mail napovídá hotelkralovka.cz,
+  ale stránku jsme nečetli — nezapsáno), vstupné (ceny se nezapisují).

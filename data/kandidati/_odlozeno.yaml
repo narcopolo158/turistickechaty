@@ -9,14 +9,6 @@
 # odstraní. Vyřazené vede `_vyrazeno.yaml` a DATA-01 je znovu nezakládá.
 
 odlozeno:
-  - slug: rozhledna-kralovka
-    oblast: jizerske-hory
-    duvod: 'Nevyřešené, jestli je to jeden objekt, nebo dva: OSM vede rozhlednu a 26
-      m vedle restauraci „Sluneční terasa", kdežto externí katalog zná
-      „Královku" jako chatu. Do rozhodnutí (Michal, případně kontrola v terénu)
-      se nepovyšuje ani nevyřazuje.'
-    rozhodl: redakční prostředí (ostrý test zápisu přes GitHub API)
-    checked: 2026-07-31
   - slug: tyrsova-chata
     oblast: jestedsky-hrbet
     duvod: >-

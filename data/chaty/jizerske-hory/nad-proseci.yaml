@@ -1,0 +1,139 @@
+# Rozhledna Nad Prosečí — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2. 8. 2026 (křížové ověření: krajský portál + Místopisy.cz; 105 schodů
+# se shoduje, výška věže se v pramenech LIŠÍ — 28 × 24 m, próza to
+# přiznává). Klíč zařazení dle rozhodnutí Michala z 28. 7. 2026:
+# rozhledna s občerstvením (Chata Proseč 23 m od věže).
+# Vše verified: false.
+
+nazev: Nad Prosečí
+slug: nad-proseci
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7421743
+lng: 15.1296955
+vyska: 593
+obec: Jablonec nad Nisou
+overeniLokace:
+  source: >-
+    Místopisy.cz (načteno 2. 8. 2026): „Leží mezi Jabloncem nad Nisou,
+    Prosečí nad Nisou a Vratislavicemi nad Nisou ve výšce 593 m n. m.",
+    na Prosečském hřebeni. Obec dle adresy na krajském portálu
+    („Nad Prosečí, Jablonec nad Nisou, 466 01"). GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/3510131409 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Žádný pramen nocleh nezmiňuje — pole se nevyplňuje.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Krajský portál liberecky-kraj.cz (načteno 2. 8. 2026): „Restaurace
+    má kapacitu padesát míst, venkovní terasa s kapacitou 20." — jde
+    o Chatu Proseč u věže (v roce 2018 nově postavenou). Nezávisle OSM:
+    restaurace Chata Proseč 23 m od věže
+    (https://www.openstreetmap.org/node/7847415253). Vlastní web
+    chataprosec.cz se 2. 8. 2026 nepodařilo načíst (timeout).
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    Otvírací dobu věže ani chaty dosažitelné prameny neuvádějí —
+    nezapisuje se.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1932
+milniky:
+  - rok: 1928
+    udalost: Konrád Hübner postavil na hřebeni turistickou chatu
+  - rok: 1932
+    udalost: >-
+      Jablonecký Horský spolek přistavěl k chatě kamennou rozhlednu
+      z žulových kvádrů; stavba trvala od května do srpna
+  - rok: 2003
+    udalost: >-
+      Chata byla 3. července zapálena, z velké části zničena a nakonec
+      zbourána
+  - rok: 2018
+    udalost: Otevřena nově postavená kamenná chata
+overeniHistorie:
+  source: >-
+    Krajský portál liberecky-kraj.cz (načteno 2. 8. 2026): „Roku 1928
+    postavil Konrád Hübner na hřebeni turistickou chatu, ke které
+    přistavěl jablonecký Horský spolek novou kamennou rozhlednu";
+    „Stavba této 28 m vysoké věže se 105 schody z masivních žulových
+    kvádrů byla zahájena v květnu 1932 a dokončena v srpnu 1932";
+    „Roku 2003 byla chata zapálena… V roce 2018 byla otevřena nově
+    postavená kamenná chata." Místopisy.cz: požár 3. 7. 2003; věž
+    „vysoká 24 m, vyhlídkový ochoz je ve výšce 20 m", 105 schodů —
+    NA VÝŠCE VĚŽE SE PRAMENY NESHODUJÍ (28 × 24 m), próza to přiznává.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná rozhledna z roku 1932 na Prosečském hřebeni mezi Jabloncem
+  nad Nisou a Libercem (593 m), se 105 schody na ochoz. Hned vedle
+  stojí Chata Proseč s restaurací — nástupkyně chaty z roku 1928, která
+  roku 2003 vyhořela a v roce 2018 vyrostla znovu z kamene.
+text:
+  - >-
+    Prosečský hřeben odděluje Jablonec od Liberce a jeho rozhledna
+    s chatou jsou učebnicový příklad dvojice, na které tenhle průvodce
+    stojí: věž a občerstvení v jednom místě. Turistickou chatu tu roku
+    1928 postavil Konrád Hübner a jablonecký Horský spolek k ní v roce
+    1932 — od května do srpna — přistavěl rozhlednu z masivních
+    žulových kvádrů.
+  - >-
+    Na ochoz vede 105 schodů; na celkové výšce věže se prameny
+    neshodují — jeden uvádí 28 metrů, druhý 24 s ochozem ve dvaceti —
+    a my ten spor nerozhodujeme. Výhled z ní obsáhne Jizerské hory,
+    Krkonoše i Ještědský hřbet.
+  - >-
+    Chata vedle věže má pohnutější osud: 3. července 2003 ji kdosi
+    zapálil, zničená byla z velké části a nakonec šla k zemi. Nová
+    kamenná chata se otevřela v roce 2018 a její restaurace dnes
+    nabízí padesát míst uvnitř a dvacet na venkovní terase. Otvírací
+    dobu věže ani chaty prameny neuvádějí — před cestou si ji ověřte.
+  - >-
+    Údaje na téhle stránce pocházejí z krajského turistického katalogu
+    a z místopisného průvodce; polohu nese OpenStreetMap. Vlastní web
+    chaty se nám zatím nepodařilo načíst. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Krajský portál liberecky-kraj.cz — chata 1928 (Hübner), rozhledna
+      1932 (Horský spolek, 28 m, 105 schodů), žhářství 2003, nová chata
+      2018, restaurace 50 + 20 míst (načteno 2. 8. 2026)
+    url: https://www.liberecky-kraj.cz/dr-cs/8417-rozhledna-prosec.html
+  - popis: >-
+      Místopisy.cz — 593 m n. m., poloha na Prosečském hřebeni, věž
+      24 m s ochozem ve 20 m, 105 schodů, požár 3. 7. 2003 (načteno
+      2. 8. 2026)
+    url: https://www.mistopisy.cz/pruvodce/body-zajmu/1128/rozhledna-nad-proseci
+  - popis: OpenStreetMap (GPS věže a restaurace u ní; ODbL)
+    url: https://www.openstreetmap.org/node/3510131409
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/nad-proseci.yaml triáží
+  2. 8. 2026 (mandát „pracuj dál samostatně"). Klíč: rozhledna
+  s restaurací (rozhodnutí 28. 7. 2026).
+
+  NEDOLOŽENO (nezapsáno): otvírací doba, kontakty, rok současné podoby
+  věže po opravách. ROZPOR výšky věže 28 × 24 m — nerozhodnuto, próza
+  přiznává. Chata Proseč je samostatný kandidát (chata-prosec.yaml) —
+  povýšit zvlášť, až se načte chataprosec.cz (2. 8. timeout). Odložená
+  Tyršova chata (_odlozeno.yaml) má souřadnice také na Prosečském
+  hřebeni — při zpracování hřebene jako podoblasti prověřit spolu.
