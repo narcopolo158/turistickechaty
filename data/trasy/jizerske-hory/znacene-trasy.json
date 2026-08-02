@@ -1,7 +1,7 @@
 {
   "zdroj": "OpenStreetMap Overpass (route=hiking, okno Jizerské hory) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)",
-  "stavOsmDat": "2026-07-30",
-  "pocetTras": 122,
+  "stavOsmDat": "2026-08-02",
+  "pocetTras": 134,
   "trasy": [
     {
       "osmId": 64341,
@@ -72,6 +72,16 @@
       "znaceniZdroj": "osmc:symbol=red:white:red_bar",
       "delkaKm": 14.6,
       "pocetUseku": 63
+    },
+    {
+      "osmId": 236869,
+      "url": "https://www.openstreetmap.org/relation/236869",
+      "nazev": null,
+      "ref": "1895",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 9.4,
+      "pocetUseku": 36
     },
     {
       "osmId": 236886,
@@ -254,6 +264,16 @@
       "pocetUseku": 1
     },
     {
+      "osmId": 6282266,
+      "url": "https://www.openstreetmap.org/relation/6282266",
+      "nazev": null,
+      "ref": null,
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_triangle",
+      "delkaKm": 0.5,
+      "pocetUseku": 2
+    },
+    {
       "osmId": 6440804,
       "url": "https://www.openstreetmap.org/relation/6440804",
       "nazev": null,
@@ -424,6 +444,16 @@
       "pocetUseku": 66
     },
     {
+      "osmId": 64356,
+      "url": "https://www.openstreetmap.org/relation/64356",
+      "nazev": "[Č] Vrbatova bouda - Vysoké nad Jizerou",
+      "ref": "0439",
+      "znaceni": "cervena",
+      "znaceniZdroj": "osmc:symbol=red:white:red_bar",
+      "delkaKm": 16.9,
+      "pocetUseku": 61
+    },
+    {
       "osmId": 1101321,
       "url": "https://www.openstreetmap.org/relation/1101321",
       "nazev": "[M] Frýdlant - Chrastava",
@@ -474,6 +504,16 @@
       "pocetUseku": 13
     },
     {
+      "osmId": 331122,
+      "url": "https://www.openstreetmap.org/relation/331122",
+      "nazev": "[M] Jablonec n. Jiz. - Pod Černou skálou",
+      "ref": "1805",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 14.9,
+      "pocetUseku": 42
+    },
+    {
       "osmId": 75403,
       "url": "https://www.openstreetmap.org/relation/75403",
       "nazev": "[M] Jablonec nad Nisou - Ferdinandov",
@@ -482,6 +522,16 @@
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
       "delkaKm": 17.3,
       "pocetUseku": 64
+    },
+    {
+      "osmId": 1665332,
+      "url": "https://www.openstreetmap.org/relation/1665332",
+      "nazev": "[M] Ještěd - Železný Brod",
+      "ref": "1641",
+      "znaceni": "modra",
+      "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
+      "delkaKm": 33.3,
+      "pocetUseku": 164
     },
     {
       "osmId": 6438059,
@@ -512,6 +562,16 @@
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
       "delkaKm": 14.5,
       "pocetUseku": 38
+    },
+    {
+      "osmId": 3789799,
+      "url": "https://www.openstreetmap.org/relation/3789799",
+      "nazev": "[Z] Berany - Železný Brod",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 10.3,
+      "pocetUseku": 60
     },
     {
       "osmId": 75402,
@@ -564,6 +624,16 @@
       "pocetUseku": 83
     },
     {
+      "osmId": 1291887,
+      "url": "https://www.openstreetmap.org/relation/1291887",
+      "nazev": "[Z] Jablonec n. N. - Pulečný",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 11.7,
+      "pocetUseku": 45
+    },
+    {
       "osmId": 1084378,
       "url": "https://www.openstreetmap.org/relation/1084378",
       "nazev": "[Z] Královka - Janov nad Nisou (za Prahou)",
@@ -572,6 +642,16 @@
       "znaceniZdroj": "osmc:symbol=green:white:green_bar",
       "delkaKm": 6.9,
       "pocetUseku": 32
+    },
+    {
+      "osmId": 338456,
+      "url": "https://www.openstreetmap.org/relation/338456",
+      "nazev": "[Z] Na Perlíčku - Jablonec n. Jiz.",
+      "ref": "4270",
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_bar",
+      "delkaKm": 5.9,
+      "pocetUseku": 23
     },
     {
       "osmId": 391735,
@@ -694,6 +774,16 @@
       "pocetUseku": 31
     },
     {
+      "osmId": 3650684,
+      "url": "https://www.openstreetmap.org/relation/3650684",
+      "nazev": "[Ž] Jablonec n. N. - Dolní Černá Studnice",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 2.7,
+      "pocetUseku": 13
+    },
+    {
       "osmId": 6329139,
       "url": "https://www.openstreetmap.org/relation/6329139",
       "nazev": "[Ž] Jablonecké Paseky - Pod Krásným",
@@ -772,6 +862,16 @@
       "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
       "delkaKm": 8.4,
       "pocetUseku": 40
+    },
+    {
+      "osmId": 3133672,
+      "url": "https://www.openstreetmap.org/relation/3133672",
+      "nazev": "[Ž] Pelíkovice – Dobrá Voda",
+      "ref": null,
+      "znaceni": "zluta",
+      "znaceniZdroj": "osmc:symbol=yellow:white:yellow_bar",
+      "delkaKm": 5.5,
+      "pocetUseku": 27
     },
     {
       "osmId": 449284,
@@ -881,7 +981,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:blue::E3:yellow",
       "delkaKm": 307.1,
-      "pocetUseku": 928
+      "pocetUseku": 929
     },
     {
       "osmId": 951694,
@@ -911,7 +1011,7 @@
       "znaceni": "cervena",
       "znaceniZdroj": "osmc:symbol=red:white::EB",
       "delkaKm": 301.1,
-      "pocetUseku": 922
+      "pocetUseku": 923
     },
     {
       "osmId": 415456,
@@ -982,6 +1082,26 @@
       "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
       "delkaKm": 1.8,
       "pocetUseku": 8
+    },
+    {
+      "osmId": 6304916,
+      "url": "https://www.openstreetmap.org/relation/6304916",
+      "nazev": "NS manželů Scheybalových 1. část",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 17.1,
+      "pocetUseku": 89
+    },
+    {
+      "osmId": 1598135,
+      "url": "https://www.openstreetmap.org/relation/1598135",
+      "nazev": "NS Mojžíšův pramen - Císařský kámen",
+      "ref": null,
+      "znaceni": "zelena",
+      "znaceniZdroj": "osmc:symbol=green:white:green_backslash",
+      "delkaKm": 5.7,
+      "pocetUseku": 39
     },
     {
       "osmId": 19210473,
@@ -1141,7 +1261,7 @@
       "znaceni": "modra",
       "znaceniZdroj": "osmc:symbol=blue:white:blue_bar",
       "delkaKm": 395.8,
-      "pocetUseku": 1192
+      "pocetUseku": 1193
     },
     {
       "osmId": 8592920,
