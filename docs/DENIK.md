@@ -55,8 +55,19 @@ konvence jako u lanovek). Ruční řádky se na stránce míchají s katalogový
 přesně podle přednosti: Pec má vlak+auto ruční a bus z mapy, ověřeno naostro
 na všech třech stránkách. Seed proběhl, 738/738 testů, kontrola zelená.
 
-**Příště:** doprava zbylých krkonošských středisek (Harrachov, Malá Úpa,
-Rokytnice…, po jednom z oficiálních webů), nebo fronta, až budou schválené
+**Dodatek téhož dopoledne — další tři střediska:** Harrachov (centrální
+parkoviště s ukazatelem obsazenosti, bezplatný Free BUS k lanovce Delta),
+Malá Úpa (vjezd za zákazové značky jen s povolenkou z automatů u infocentra;
+P1 Sportcentrum u polské hranice, P2–P4; v zimě se tři cesty mění v trasy jen
+pro rolby) a Rokytnice nad Jizerou („V celé Rokytnici nad Jizerou je zóna se
+zákazem stání mimo místa k tomu určená" — doslovná citace města; Dolní
+a Horní náměstí, P1–P4 Horní Domky, pod Družbou). Vlak a bus u všech tří
+vědomě zůstávají z katalogu — města o nich strukturně nic neříkají. Šest
+krkonošských středisek z šestnácti tedy má doloženou dopravu; zbylá česká
+(Benecko, Černý Důl, Dolní Dvůr, Horní Maršov, Strážné, Vítkovice, Vrchlabí)
+příště stejným postupem, polská s nimi.
+
+**Příště:** doprava zbylých středisek; pak fronta, až budou schválené
 domény / ruční běh s tebou.
 
 ## 2026-08-02 (denní bezobslužná session) — „Jak se sem dostat" se dala složit z dat, která už v repu ležela

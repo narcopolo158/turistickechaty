@@ -26,7 +26,29 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Vlak a bus vědomě
+# z katalogu (město strukturně popisuje jen parkování). Ceny se nepíšou.
+doprava:
+  auto: >-
+    V celé Rokytnici platí zóna se zákazem stání mimo vyznačená místa.
+    Parkuje se na Dolním a Horním náměstí, na centrálních parkovištích
+    P1–P4 Horní Domky a pod Družbou; v zimě přibývají sezónní plochy
+    (Studenov, Nad hřbitovem).
+overeniDoprava:
+  source: >-
+    Oficiální stránky města Rokytnice nad Jizerou, „Parkování ve městě"
+    (mesto-rokytnice.cz, načteno 2. 8. 2026): doslova „V celé Rokytnici
+    nad Jizerou je zóna se zákazem stání mimo místa k tomu určená.";
+    parkoviště Dolní náměstí, u čp. 5 a čp. 383 v Dolní Rokytnici (60 min
+    zdarma), Horní náměstí, pod Družbou, centrální P1–P4 Horní Domky,
+    zimní Studenov a Nad hřbitovem; vše pro vozidla do 3,5 t. Vlak a bus
+    stránka nepopisuje — řádky z katalogu DATA-06. Ceny se do profilu
+    nepíšou — mění se každou sezónu.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
-  nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
-  pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK) a perex (oficiální web obce
+  nebo střediska). Fotka střediska se dohledává pipeline DATA-33 (Wikimedia
+  Commons, jen licenčně čisté snímky). Doprava (auto) doplněna 2. 8. 2026
+  z oficiálního webu města.

@@ -24,8 +24,35 @@ vychoziBody:
   - nazev: Malá Úpa
   - nazev: Horní Malá Úpa
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Bus vědomě
+# z katalogu (obec o autobusech strukturně nic neuvádí). Ceny se nepíšou.
+doprava:
+  auto: >-
+    Obec vjezd reguluje: na místní komunikace za zákazovou značkou se smí
+    jen s povolenkou (jednodenní prodávají automaty u infocentra) a cílem
+    obce je, aby automobilový provoz rušil co nejméně. Hlavní parkoviště
+    jsou P1 Sportcentrum u hranice s Polskem (největší), P2 u infocentra,
+    P3 Zátiší a P4 Spálený Mlýn; v zimě přibývají sezónní plochy a tři
+    cesty se mění v zimní trasy jen pro rolby.
+overeniDoprava:
+  source: >-
+    Oficiální stránky obce Malá Úpa (načteno 2. 8. 2026):
+    obecmalaupa.cz/prakticke-info/parkovani/ — P1 Sportcentrum „největší
+    parkoviště přímo u hranic s Polskem", P2 Infocentrum, P3 Zátiší,
+    P4 Spálený Mlýn (Dolní Malá Úpa), zimní P5/P6 a záložní Tonovka;
+    „ZÁKAZ VÍCEDENNÍHO STÁNÍ (přes noc) KARAVANŮ".
+    malaupa.cz/doprava-po-obci/ — vjezd „na místní komunikace za zákazovou
+    značku s dodatkovou tabulkou" jen s povolenkou, jednodenní povolenka
+    z automatů u infocentra; v zimě uzavírky Pomezní Boudy Celnice –
+    U kostela, Černá Voda – U kostela a U kostela – Spálený Mlýn (jen
+    rolby); cíl „aby vaši dovolenou v Malé Úpě rušil automobilový provoz
+    co možná nejméně". Bus z katalogu DATA-06 — obec strukturně nic
+    neuvádí. Ceny se do profilu nepíšou.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
-  (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;
-  u polských středisek zatím žádná čísla (rozhodnutí handoffu: „PL bez
-  čísel" do doby doložení).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex
+  (oficiální web střediska/obce); u polských středisek zatím žádná čísla
+  (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
+  doplněna 2. 8. 2026 z oficiálního webu.

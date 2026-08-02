@@ -31,8 +31,28 @@ overeniLanovka:
   verified: false
   checked: '2026-07-28'
 
+# Ruční próza má přednost před řádky z katalogu DATA-06. Vlak a bus vědomě
+# z katalogu (Harrachov železnici MÁ — katalog ji ukáže; město strukturně
+# popisuje jen parkování). Ceny se nepíšou, mění se každou sezónu.
+doprava:
+  auto: >-
+    Město provozuje centrální parkoviště s veřejným ukazatelem obsazenosti;
+    z něj jezdí podle oficiálního webu bezplatný Free BUS k lanovce Delta
+    a zpět.
+overeniDoprava:
+  source: >-
+    Oficiální stránky města Harrachov, sekce Parkování (harrachov.cz,
+    načteno 2. 8. 2026): centrální parkoviště, odkaz „Aktuální stav —
+    obsazenost", doslova „Free BUS - z centrálního parkoviště k lanovce
+    draze delta a zpět". Omezení vjezdu stránka neuvádí — proto se o něm
+    nepíše. Vlak a bus z katalogu DATA-06 (železniční stanici Harrachov
+    katalog nese; město o vlaku strukturně nic neříká). Ceny se do profilu
+    nepíšou — mění se každou sezónu.
+  verified: false
+  checked: '2026-08-02'
+
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
-  (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;
-  u polských středisek zatím žádná čísla (rozhodnutí handoffu: „PL bez
-  čísel" do doby doložení).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex
+  (oficiální web střediska/obce); u polských středisek zatím žádná čísla
+  (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
+  doplněna 2. 8. 2026 z oficiálního webu.
