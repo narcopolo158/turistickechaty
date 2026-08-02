@@ -1,0 +1,111 @@
+# Horská chata Lučanka — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 2.–3. 8. 2026 (křížové ověření v poznámkách kandidáta: kapacita i výška
+# sedí ve dvou pramenech). Vše verified: false.
+
+nazev: Horská chata Lučanka
+slug: lucanka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7575355
+lng: 15.2113236
+vyska: 710
+obec: Lučany nad Nisou
+overeniLokace:
+  source: >-
+    Českéhory.cz (načteno 2. 8. 2026): chata „leží na klidném,
+    romantickém místě" v CHKO Jizerské hory „uprostřed lesů pod
+    rozhlednou Bramberk", „nadmořská výška: 710 m" — shoda s výškou
+    z kandidáta na metr; obec Lučany nad Nisou dle téhož listingu
+    i katalogu firem. GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/4806291024 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 73
+pokoje:
+  - typ: Hlavní budova — 65 lůžek
+  - typ: Srub — 8 lůžek
+overeniNocleh:
+  source: >-
+    Českéhory.cz (načteno 2. 8. 2026): „Příjemná horská chata s kapacitou
+    73 lůžek", z toho 65 v hlavní budově a 8 v samostatném srubu;
+    stravování od „bez stravování" po plnou penzi. Jediný podrobný pramen,
+    verified:false.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# typObcerstveni se nevyplňuje: restaurace je doložená jako vybavení chaty,
+# ale obsluha kolemjdoucích doložená není — viz próza.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    Českéhory.cz (načteno 2. 8. 2026): ve vybavení chaty „Restaurace",
+    stravování pro hosty od snídaní po plnou penzi. Zda restaurace
+    obslouží i kolemjdoucí bez noclehu, pramen neříká — próza to přiznává.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  email: chatalucanka@seznam.cz
+  web: http://www.lucanka.cz
+overeniProvoz:
+  source: >-
+    Kontakty z OSM tagů objektu (https://www.openstreetmap.org/node/4806291024,
+    data © přispěvatelé OpenStreetMap, ODbL 1.0); vlastní web lucanka.cz
+    existuje. Otvírací doba ani sezóna nikde uvedeny nejsou — nezapisují se.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata v lesích pod rozhlednou Bramberk nad Lučany nad Nisou
+  (710 m), s kapacitou 73 lůžek v hlavní budově a srubu. Restauraci má,
+  jestli ale obslouží i kolemjdoucího bez noclehu, prameny neříkají —
+  před cestou se zeptejte.
+text:
+  - >-
+    Lučanka stojí v chráněné krajinné oblasti uprostřed lesů pod
+    rozhlednou Bramberk, v nadmořské výšce 710 metrů; adresou patří
+    k Lučanům nad Nisou. Dva prameny se na výšce shodují na metr přesně —
+    což je u jizerských objektů vzácnější, než by se slušelo.
+  - >-
+    Spí se tu na třiasedmdesáti lůžkách: pětašedesát jich je v hlavní
+    budově, osm v samostatném srubu. Stravování má rozpětí od „bez
+    stravování" po plnou penzi, takže chata míří na pobytové hosty —
+    školy, oddíly, rodiny.
+  - >-
+    Restauraci chata má, ale jednu věc je fér říct rovnou: žádný
+    z dosažitelných pramenů neříká, jestli obslouží i turistu, který jde
+    jen kolem. Netvrdíme to tedy — kdo míří přes Bramberk a počítá tu
+    s obědem, měl by si zavolat předem.
+  - >-
+    Údaje na téhle stránce pocházejí ze sekundárního ubytovacího listingu
+    a z mapových dat; vlastní web chaty existuje, obsah jsme z něj ale
+    zatím nečetli. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Českéhory.cz — kapacita 73 lůžek (65 + 8 ve srubu), výška 710 m,
+      poloha pod Bramberkem, restaurace a stravování (načteno 2. 8. 2026)
+    url: https://www.ceskehory.cz/ubytovani/horska-chata-lucanka-lucany-nad-nisou.html
+  - popis: Vlastní web chaty (z OSM tagů; obsah zatím nečten)
+    url: http://www.lucanka.cz
+  - popis: OpenStreetMap (GPS, kontakty a tag objektu; ODbL)
+    url: https://www.openstreetmap.org/node/4806291024
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/lucanka.yaml triáží 2.–3. 8. 2026
+  (mandát „pracuj dál samostatně").
+
+  NEDOLOŽENO (nezapsáno): obsluha kolemjdoucích (typObcerstveni prázdné),
+  otvírací doba, sezóna, historie a rok vzniku, telefon. Vlastní web
+  lucanka.cz zkusit načíst v příštím běhu (dnes mimo provenienci fetche).
+  DATA-02 nabízí jen 1 fotku bez geosearch — výběr opatrně.

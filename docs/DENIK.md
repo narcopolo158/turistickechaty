@@ -11,6 +11,35 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-03 (odpoledne) — Actions doběhly; Krömerovka a Lučanka povýšeny
+
+**Actions po ránu (spouštěl Michal):** DATA-02 přegenerovalo kandidátní fotky
+celého korpusu (158 YAML) — pět nových ještědských profilů má nabídky,
+Hotel Ještěd dokonce s geosearch nálezy ze 7 metrů; DATA-06 výchozí body
+přineslo katalog pro Ještědský hřbet (obce, železnice, zastávky). DATA-06
+výšky v době zápisu ještě běželo. Vedlejší úklid: DATA-02 vygenerovalo fotky
+i dvěma ráno vyřazeným objektům (Black Cattle Camp, Černá Louže) — kontrola
+je correctly ohlásila jako osiřelé a redakce je smazala.
+
+**Povýšení č. 6 a 7 — první dva z jizerské fronty:**
+
+- **Lesní bar Krömerova bouda** (818 m, u Protržené přehrady) — útulna se
+  samoobslužným barem na kasu důvěry, otevřená 22. 6. 2015; oficiálně se
+  v ní smí přenocovat, voda vedle. Dva prameny se na poloze shodují na
+  metry. Provozovatele prameny nejmenují (OSM nese Lesy ČR — do profilu
+  nevzato). Historie původní Krömerovy boudy nedoložena — nevypráví se.
+- **Horská chata Lučanka** (710 m, pod Bramberkem) — 73 lůžek (65 + 8 ve
+  srubu), výška sedí ve dvou pramenech na metr; restauraci má, obsluha
+  kolemjdoucích ale doložená není a próza to přiznává (typObcerstveni
+  prázdné, vzor Ještědka).
+
+Cestou zase jednou umřel Postgres (dev server s ním) — po restartu seed
+v pořádku, obě stránky 200, „kasa důvěry" v textu, žádné vsuvky.
+738/738 testů, kontrola celá zelená.
+
+**Stav jizerské fronty:** 38 kandidátů (Barbora a Javor s částečným
+ověřením, Koryna bez druhého pramene; rozhledny zatím netknuté).
+
 ## 2026-08-03 (dopoledne) — první pětice jizerské fronty křížově ověřena
 
 **Pokračování bez ptaní.** Po ještědských povýšeních jsem otevřel jizerskou

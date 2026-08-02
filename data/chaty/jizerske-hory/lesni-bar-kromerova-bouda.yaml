@@ -1,0 +1,135 @@
+# Lesní bar Krömerova bouda — profil povýšen z kandidáta DATA-01 (OSM)
+# triáží 2.–3. 8. 2026 (křížové ověření v poznámkách kandidáta; ukázkový
+# případ klíče zařazení: útulna + občerstvení na trase, kasa důvěry).
+# Vše verified: false — z pramenů, redakce neověřila vlastním dotazem.
+
+nazev: Lesní bar Krömerova bouda
+slug: lesni-bar-kromerova-bouda
+zeme: cz
+typ: utulna
+stav: v-provozu
+oblast: jizerske-hory
+aliasy:
+  - nazev: Krömerova bouda
+    poznamka: alternativní název (OSM alt_name)
+zajimavosti:
+  - text: >-
+      Samoobslužný Lesní bar funguje na kasu důvěry — návštěvník si vezme
+      pití z lednice a peníze nechá v kase uvnitř
+    kategorie: jine
+    zdroj: Treking.cz, článek o útulně (načteno 2. 8. 2026)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Obec se neuvádí — žádný pramen ji nejmenuje (nedomýšlet).
+lat: 50.8016297
+lng: 15.2779577
+vyska: 818
+overeniLokace:
+  source: >-
+    Boudy.org (načteno 2. 8. 2026): přístřešek v Soušské hornatině,
+    „818 m n.m.", GPS 50°48'5.86" N 15°16'40.62" E — sedí s OSM na metry;
+    Treking.cz: „na křižovatce turistických cest u Protržené přehrady"
+    na Bílé Desné. GPS: OpenStreetMap
+    https://www.openstreetmap.org/way/917434994 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Boudy.org (načteno 2. 8. 2026): objekt „Zdarma volně k použití",
+    „Objekt se nachází v chráněném území, oficiální přenocování povoleno";
+    stanování zakázáno. Jde o útulnu — nouzové přespání, žádné pokoje ani
+    rezervace; kapacita se neuvádí.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Treking.cz (načteno 2. 8. 2026): samoobslužný Lesní bar — „Volně
+    k dispozici, samoobsluha. K platbě je uvnitř malá kasa"; nápoje
+    z lednice, platba na důvěru. Otevřen od 22. 6. 2015.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Denně během hlavní sezóny (letní i zimní); mimo sezónu — zhruba od
+  konce října či listopadu — jen o víkendech.
+overeniProvoz:
+  source: >-
+    Treking.cz (načteno 2. 8. 2026): „Otevřeno je denně během hlavní
+    sezóny (letní i zimní), mimo sezónu (od konce října / listopadu) jen
+    o víkendech." Provozovatele prameny nejmenují — neuvádí se.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 2015
+    udalost: 22. června otevřena dnešní útulna se samoobslužným Lesním barem
+overeniHistorie:
+  source: >-
+    Treking.cz (načteno 2. 8. 2026): dnešní přístřešek otevřen 22. 6. 2015.
+    Historii PŮVODNÍ Krömerovy boudy, po které místo nese jméno, dosažitelné
+    prameny nevyprávějí — nedomýšlí se.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Útulna se samoobslužným Lesním barem na křižovatce cest u Protržené
+  přehrady na Bílé Desné (818 m). Pití si vezmete z lednice a peníze
+  necháte v kase — celé to stojí na důvěře. Přístřešek je volně
+  k použití a oficiálně se v něm smí přenocovat.
+text:
+  - >-
+    Krömerova bouda stojí na křižovatce turistických cest u Protržené
+    přehrady na Bílé Desné, v nadmořské výšce 818 metrů. Dnešní podoba je
+    mladá — útulna se otevřela 22. června 2015 — a jméno nese po starší
+    Krömerově boudě, jejíž příběh dosažitelné prameny nevyprávějí, takže
+    ho nevyprávíme ani my.
+  - >-
+    To hlavní je Lesní bar: samoobsluha na kasu důvěry. Vezmete si pití
+    z lednice a peníze necháte v malé kase uvnitř — nikdo nekontroluje,
+    nikdo neobsluhuje. Otevřeno bývá denně během hlavní letní i zimní
+    sezóny, mimo sezónu jen o víkendech.
+  - >-
+    Přístřešek je zdarma volně k použití, voda teče hned vedle a — což
+    je u nás vzácnost — oficiálně se tu smí přenocovat; stanovat kolem
+    ovšem ne, objekt leží v chráněném území. Žádné pokoje, žádné
+    rezervace: je to útulna v nejpoctivějším smyslu slova.
+  - >-
+    Údaje na téhle stránce pocházejí ze dvou nezávislých sekundárních
+    pramenů; polohu nese OpenStreetMap a oba prameny ji potvrzují na
+    metry. Provozovatele prameny nejmenují. Redakce zatím nic neověřila
+    vlastním dotazem ani návštěvou — a u kasy důvěry snad ani není co
+    dodávat: berte si, plaťte, nezklamte ji.
+zdroje:
+  - popis: >-
+      Treking.cz — útulna a Lesní bar (otevření 22. 6. 2015, samoobsluha
+      s kasou, sezónní režim, poloha u Protržené přehrady), načteno
+      2. 8. 2026
+    url: https://www.treking.cz/chaty/kromerova-bouda.htm
+  - popis: >-
+      Boudy.org — přístřešek 818 m, „Zdarma volně k použití", oficiální
+      přenocování povoleno, voda vedle boudy, výborný stav (načteno
+      2. 8. 2026)
+    url: https://boudy.org/bouda.php?txt=cs&id=1368&par=poz
+  - popis: OpenStreetMap (GPS a tag objektu; ODbL)
+    url: https://www.openstreetmap.org/way/917434994
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/lesni-bar-kromerova-bouda.yaml
+  triáží 2.–3. 8. 2026 (mandát „pracuj dál samostatně"). Ukázkový případ
+  klíče zařazení: role na trase + občerstvení, byť samoobslužné.
+
+  NEDOLOŽENO (nezapsáno): obec, provozovatel (OSM nese Lesy ČR, ale
+  žádný čitelný pramen to nepotvrzuje — do profilu nevzato), historie
+  původní Krömerovy boudy, kapacita přístřešku. DATA-02 nabízí 50
+  geosearch fotek — výběr na Michalovi v adminu.
