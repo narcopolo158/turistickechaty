@@ -407,3 +407,25 @@ vyrazeno:
       Claude (30. 7. 2026, triáž jizerských kandidátů — klíč CLAUDE.md:
       rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby)
     checked: 2026-07-30
+  - osm: https://www.openstreetmap.org/node/9751061036
+    slug: black-cattle-camp
+    duvod: >-
+      Glamping/kemp u Křižan, ne turistická chata: klíč zařazení žádá roli
+      na trase a občerstvení pro veřejnost, doloženo není ani jedno.
+      Přímý pramen k objektu se 2. 8. 2026 nepodařilo dohledat vůbec
+      (okolí Křižan nese jen glampingové pronájmy — RozhledNa Ještěd,
+      Kupole u Ještědu); OSM tag tourism=chalet tu značí pronájem chaty,
+      ne obsluhovanou boudu. Turistická minulost (DATA-25) nedoložena.
+    rozhodl: interaktivní session s pověřením „rozhodni sám" (2. 8. 2026)
+    checked: 2026-08-02
+  - osm: https://www.openstreetmap.org/node/6943200711
+    slug: cerna-louze
+    duvod: >-
+      Kemp / chatová osada v Rynolticích (kontakt kempcernalouze.cz,
+      ceskehory.cz vede „Kemp Černá Louže"), tedy ubytovací areál — klíč
+      zařazení žádá občerstvení pro kolemjdoucí na trase a to doloženo
+      není. POZOR na jmenovce: „Penzion Černá Louže" (cernalouze.cz) je
+      jiný objekt v Branžeži v Českém ráji — nezaměnit. Turistická
+      minulost (DATA-25) nedoložena.
+    rozhodl: interaktivní session s pověřením „rozhodni sám" (2. 8. 2026)
+    checked: 2026-08-02

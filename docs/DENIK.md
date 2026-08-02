@@ -11,6 +11,46 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (pozdě večer) — triáž Ještědského hřbetu: všech osm kandidátů rozhodnuto
+
+**Pokračování bez ptaní.** Po dokončení prózy přišla na řadu fronta — a začal
+jsem oblastí, kterou šlo uzavřít celou: Ještědský hřbet, osm kandidátů z OSM.
+Každý dostal křížové ověření (DATA-03) s doslovnými citacemi v poznámkách:
+
+**Pět má druhý pramen a čeká na povýšení** (v tomhle pořadí síly):
+
+1. **Chata Pláně** — nejsilnější: vlastní web s restaurací výslovně pro
+   veřejnost (po–čt 11–20, pá 11–22, so 10:30–22, ne 10:30–19), druhý pramen
+   web obce Světlá pod Ještědem. Povýšit první.
+2. **Horský hotel Ještěd** — Hubáčkova stavba 1966–73, Perretova cena,
+   restaurace; povýšit jako „horský hotel v roli chaty" (vzor Špindlerovka).
+3. **Rozhledna Rašovka** — první soukromá zděná rozhledna novodobé historie
+   (2006, 22,5 m) s restaurací; klíč rozhleden s občerstvením splněn.
+4. **Bouda Tetřeví sedlo** — sezónní kiosek na Výpřeži („jednoduchá jídla
+   k pivu… letní zastávka na túře"); vzor jizerských kiosků.
+5. **Horská chata Ještědka** — 23 lůžek, hospůdka s barem; OTEVŘENÉ, zda
+   obslouží kolemjdoucí (web míří na skupinové pronájmy) — do prózy přiznat.
+
+**Jeden odklad:** Tyršova chata — souřadnice neleží na Ještědském hřbetu, ale
+na Prosečském hřebenu, a objekt se nepodařilo dohledat; do vyjasnění identity
+i příslušnosti (možný přesah DATA-29) se nepovyšuje ani nevyřazuje.
+
+**Dvě vyřazení (mimo klíč):** Black Cattle Camp (glamping u Křižan, přímý
+pramen nedohledán vůbec) a Černá Louže (kemp / chatová osada v Rynolticích;
+pozor na jmenovce — Penzion Černá Louže v Branžeži je jiný objekt v Českém
+ráji). U obou platí: občerstvení pro kolemjdoucí nedoloženo, turistická
+minulost (DATA-25) nedoložena. Soubory smazány, `_vyrazeno.yaml` je proti
+novému importu drží (s opravdovými OSM URL ze souborů kandidátů — první verze
+záznamu měla u Černé Louže vymyšlené ID a byla opravena dřív, než se commitla;
+lekce stará, ale platí: identifikátory se NIKDY nedomýšlí).
+
+Fronta oblasti: 8 → 5 čeká (všichni s hotovým ověřením), 1 odložen,
+2 vyřazeni. Kontrola i 738/738 testů zelené.
+
+**Příště:** povýšit pět ještědských kandidátů (materiál je v poznámkách,
+pořadí navrženo výš) — každý potřebuje plný profil s prózou; pak jizerská
+čtyřicítka stejným postupem.
+
 ## 2026-08-02 (večer) — úklid prózy dokončen: 133 → 0 vsuvek v celém korpusu
 
 **Pokračování bez ptaní (pokyn Michala).** Úklid, který začal odpoledne
