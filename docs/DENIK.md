@@ -11,6 +11,25 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-02 (blok 10) — Sky Walk bydlí pod /polsko; jizerská fronta bez CZ rozhleden
+
+**Povýšení č. 16 — Sky Walk (Świeradów-Zdrój, zeme: pl).** Adresa
+provozovatele potvrdila polskou stranu hor → URL
+/polsko/jizerske-hory/sky-walk (pravidlo „země objektu"; /cesko/…
+korektně vrací 404). Věž z roku 2021: nahoru 850 m dřevěné spirály,
+skleněná terasa 62 m nad zemí, dolů 105m tobogán; superlativy
+(„nejvyšší vyhlídková věž v Polsku", 65 m) uvedeny jako claim
+provozovatele. ROZPORY přiznány: výška věže 62 × 65 m, stanoviště
+627 × 700 m n. m. (pole `vyska` proto prázdné), letní hodiny.
+Občerstvení zatím jen z OSM (3 stánky u vstupu) — textový pramen
+dohledat. Routing přepočítán: **23/23 chat, 47 přístupů, 0 k ruční
+kontrole** (Sky Walk z centra 0,89 km).
+
+**Příště:** ① výšky klik (jizerske-hory) — pokryje všech 23 chat.
+② Wieża widokowa Mirsk (poslední rozhledna fronty, PL), pak Barbora /
+Javor / Koryna a zbytek fronty (44 čeká). ③ Na Michalovi: fotky
+v adminu, REDAKCE_GITHUB_TOKEN.
+
 ## 2026-08-02 (blok 9) — šest jizerských rozhleden povýšeno; Královka odblokována
 
 **Povýšení č. 10–15 — rozhlednová část jizerské fronty je hotová (CZ):**

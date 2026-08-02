@@ -1,0 +1,153 @@
+# Sky Walk (Świeradów-Zdrój) — profil povýšen z kandidáta DATA-01 (OSM)
+# triáží 2. 8. 2026. POLSKÝ objekt → zeme: pl, URL /polsko/… (pravidlo
+# „země objektu"). Křížové ověření: vlastní web + PTTK + praktický
+# průvodce; NADMOŘSKÁ VÝŠKA STANOVIŠTĚ SE V PRAMENECH LIŠÍ (627 × 700 m)
+# — pole vyska se nevyplňuje. Občerstvení doloženo zatím jen v OSM
+# (3 stánky ≤ 72 m) — přiznáno. Vše verified: false.
+
+nazev: Sky Walk
+slug: sky-walk
+zeme: pl
+typ: rozhledna
+stav: v-provozu
+oblast: jizerske-hory
+zajimavosti:
+  - text: >-
+      Podle provozovatele nejvyšší vyhlídková věž v Polsku (65 m) —
+      nahoru vede 850 metrů dřevěné spirálové stezky a dolů
+      105metrový tobogán, prý nejdelší kovová skluzavka v zemi
+    kategorie: vyska
+    zdroj: >-
+      vlastní web skywalk-swieradow.pl („The highest observation tower
+      in Poland!", „The longest metal slide in Poland!"), načteno
+      2. 8. 2026
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# vyska se NEVYPLŇUJE: prameny se neshodují (627 m n. m. × 700 m n. m.).
+lat: 50.9000861
+lng: 15.3372852
+obec: Świeradów-Zdrój
+overeniLokace:
+  source: >-
+    Vlastní web skywalk-swieradow.pl (načteno 2. 8. 2026): adresa
+    „ul. Dąbrowskiego 8, 59-850 Świeradów-Zdrój, Poland" — polská strana
+    Jizerských hor. Nadmořskou výšku stanoviště prameny uvádějí rozdílně
+    (PTTK: „627 m n. p. m."; praktický průvodce: „700 metrów nad
+    poziomem morza") — nerozhodnuto, nezapisuje se. GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/8792952523 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Žádný pramen nocleh nezmiňuje — pole se nevyplňuje.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Zatím doloženo jen v mapových datech: OSM vede u vstupu do areálu
+    tři občerstvovací stánky (fast_food) 42–72 m od věže
+    (https://www.openstreetmap.org/node/13996375421,
+    https://www.openstreetmap.org/way/996889657,
+    https://www.openstreetmap.org/node/13996375422). Textový pramen
+    o gastronomii chybí — próza to přiznává.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Denně 9:00–17:00, poslední vstup hodinu před zavřením; jeden pramen
+  uvádí letní prodloužení do 19:00.
+kontakty:
+  email: info@visitskywalk.today
+  web: https://skywalk-swieradow.pl/
+overeniProvoz:
+  source: >-
+    Vlastní web (načteno 2. 8. 2026): „Mon-sun 9.00 a.m. – 5.00 p.m.",
+    „Last entry: 1h before close". Praktický průvodce gorskim-szlakiem.pl
+    uvádí sezónní hodiny „28 kwietnia – 31 sierpnia 09:00 – 19:00" —
+    NA HODINÁCH SE PRAMENY NESHODUJÍ, zapsán režim dle provozovatele
+    s poznámkou. E-mail z OSM tagů objektu. Vstupné se dle pravidla
+    o cenách nezapisuje.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 2021
+milniky:
+  - rok: 2021
+    udalost: Stezka s vyhlídkovou věží otevřena
+overeniHistorie:
+  source: >-
+    Turistický klub PTTK, průvodce po Dolním Slezsku (načteno
+    2. 8. 2026): „została otwarta w 2021 r."; věž „Ma wysokość 62 m",
+    nahoru „wijąca się spiralą ścieżka – o długości 850 m", nahoře
+    skleněná platforma. Vlastní web: věž 65 m, skleněná terasa 62 m nad
+    zemí, stezka 850 m — rozdíl 62 × 65 m jde zřejmě za měřením terasy
+    × celé věže. Jediný pramen letopočtu, verified:false.
+  verified: false
+  checked: '2026-08-02'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Vyhlídková věž se spirálovou dřevěnou stezkou nad lázeňským
+  Świeradówem-Zdrojem na polské straně Jizerských hor. Podle
+  provozovatele nejvyšší vyhlídková věž v Polsku: 65 metrů, 850 metrů
+  chůze vzhůru, skleněná terasa ve dvaašedesáti metrech — a dolů to
+  jde i tobogánem.
+text:
+  - >-
+    Sky Walk je nejmladší a nejodvážnější stavba v našem jizerském
+    výběru: otevřela se roku 2021 přímo nad lázeňským Świeradówem-Zdrojem
+    a na vrchol se nechodí po schodech, ale po 850 metrů dlouhé dřevěné
+    stezce, která se kolem věže vine spirálou. Nahoře čeká skleněná
+    terasa 62 metrů nad zemí; kdo nechce zpátky pěšky, sjede
+    105metrovým tobogánem.
+  - >-
+    Superlativy tu patří provozovateli a tak je i uvádíme: nejvyšší
+    vyhlídková věž v Polsku (65 metrů) a nejdelší kovová skluzavka
+    v zemi. Na celkové výšce věže se prameny mírně rozcházejí —
+    62 a 65 metrů — nejspíš podle toho, jestli měří terasu, nebo špici.
+  - >-
+    Otevřeno je denně od devíti do pěti s posledním vstupem hodinu před
+    zavřením; jeden pramen uvádí, že v létě bývá až do sedmi. U vstupu
+    do areálu stojí podle mapových dat stánky s občerstvením, víc o nich
+    ale prameny neříkají — a nadmořskou výšku stanoviště uvádějí
+    rozdílně, takže ji neuvádíme raději vůbec.
+  - >-
+    Údaje na téhle stránce pocházejí z webu provozovatele,
+    z turistického klubu a z praktického průvodce; polohu nese
+    OpenStreetMap. Redakce zatím nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Web provozovatele — 65 m, stezka 850 m, terasa 62 m nad zemí,
+      tobogán 105 m, superlativy, denně 9–17, adresa ve Świeradówě-Zdroji
+      (načteno 2. 8. 2026)
+    url: https://skywalk-swieradow.pl/en/home/
+  - popis: >-
+      PTTK, šlaki Dolního Slezska — otevření 2021, věž 62 m, spirálová
+      stezka 850 m, skleněná platforma, 627 m n. p. m. (načteno
+      2. 8. 2026)
+    url: https://dolnoslaskie.szlaki.pttk.pl/1096-dolnoslaskie-swieradow-zdroj-skywalk
+  - popis: >-
+      Górskim Szlakiem — sezónní hodiny (v létě do 19), přístup od
+      Parku Zdrojowego cca 1 km, 700 m n. p. m. (načteno 2. 8. 2026)
+    url: https://gorskim-szlakiem.pl/sky-walk-swieradow-zdroj/
+  - popis: OpenStreetMap (GPS věže a stánky u vstupu; ODbL)
+    url: https://www.openstreetmap.org/node/8792952523
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/sky-walk.yaml triáží
+  2. 8. 2026 (mandát „pracuj dál samostatně"). POLSKÝ objekt: zeme pl
+  potvrzena adresou provozovatele — URL /polsko/jizerske-hory/sky-walk
+  (pravidlo „země objektu", oblast zůstává jedna přeshraniční). Klíč:
+  rozhledna s občerstvením (rozhodnutí 28. 7. 2026) — doklad zatím jen
+  OSM stánky, textový pramen dohledat.
+
+  NEDOLOŽENO/ROZPORY (nezapsáno): nadmořská výška stanoviště (627 × 700
+  m), výška věže 62 × 65 m (přiznáno v próze), gastro textově,
+  bezbariérovost (stezka bez schodů by mohla být bonus — ale pramen
+  mlčí, nedomýšlí se), vstupné (ceny se nezapisují).
