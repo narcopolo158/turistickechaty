@@ -94,8 +94,8 @@ overeniSluzby:
 
 # ── Provoz ────────────────────────────────────────────────────────────────
 otviraciDoba: |-
-  Restaurace denně 10:30–17:00 (dle Kudy z nudy, neověřeno; OSM uvádí
-  10:30–22:00 — rozpor).
+  Restaurace denně 10:30–17:00; mapová data uvádějí 10:30–22:00 — rozpor,
+  který prameny nerozsoudily.
 kontakty:
   telefon: +420 774 304 091
   email: rezervace@lyzarskabouda.com
@@ -154,9 +154,8 @@ text:
   - >-
     Lyžařská bouda stojí nad Černým Dolem, na adrese Liščí hora 189. Sama o
     sobě píše, že leží na jižním svahu Liščí hory ve druhé zóně Krkonošského
-    národního parku. Nadmořskou výšku 1 206 metrů uvádí shodně vlastní web
-    boudy, server Kudy z nudy i rytina turistické známky, která pro tohle
-    místo vyšla pod jménem Lyžařská bouda · Liščí louka — adresa i vlastní
+    národního parku. Nadmořskou výšku 1 206 metrů uvádějí shodně tři prameny včetně rytiny
+    turistické známky, která pro tohle místo vyšla pod jménem Lyžařská bouda · Liščí louka — adresa i vlastní
     popis tedy odkazují na Liščí horu, známka na Liščí louku.
   - >-
     O své historii říká bouda jedinou věc, zato konkrétní: že sahá do roku
@@ -168,24 +167,23 @@ text:
     uvádíme ho proto jako tvrzení boudy o sobě samé, ne jako doložené datum.
   - >-
     Rozsahem služeb jde o horský hotel; pod hlavičkou Hotel Lyžařská bouda ho
-    vede i Kudy z nudy, kdežto v OpenStreetMap je objekt zapsaný jako
+    vede i jedno z médií, kdežto v mapových datech je objekt zapsaný jako
     obsluhovaná horská bouda — které z obou označení použít, je rozhodnutí
     naše. Ubytuje 70 hostů ve tří-, čtyř- a pětilůžkových pokojích, každý
     z nich má vlastní koupelnu se sprchovým koutem a WC. Ubytovaným se podává
     snídaně formou švédského stolu a večeře s výběrem ze dvou menu.
   - >-
-    Restaurace má podle Kudy z nudy otevřeno denně od 10:30 do 17:00.
-    OpenStreetMap ale u téhož objektu nese otvírací dobu podstatně delší,
-    po–ne od 10:30 do 22:00, a který z obou údajů platí, zatím nevíme; vlastní
-    web boudy otvírací dobu na stránkách, které jsme četli, neuvádí, takže
-    rozpor nerozsoudil.
-    K vybavení podle Kudy z nudy patří masáže, stolní tenis a stolní fotbálek,
+    Restaurace má mít otevřeno denně od 10:30 do 17:00; mapová data ale u
+    téhož objektu nesou otvírací dobu podstatně delší, po–ne od 10:30 do
+    22:00, a který z obou údajů platí, zatím nevíme — sama bouda otvírací
+    dobu na stránkách, které jsme četli, neuvádí, takže rozpor nerozsoudila.
+    K vybavení patří masáže, stolní tenis a stolní fotbálek,
     dětské hřiště a hřiště pro míčové hry; po domluvě je možné grilovat.
   - >-
-    Hotel je podle Kudy z nudy určen především mateřským školám, školám
-    v přírodě a lyžařským kurzům. Zveřejněná denní otvírací doba
-    restaurace přitom odpovídá podniku otevřenému veřejnosti — výslovně to
-    ale zdroj neuvádí, takže jisté není, jestli obsluhuje i kolemjdoucí.
+    Hotel je určen především mateřským školám, školám v přírodě a lyžařským
+    kurzům. Zveřejněná denní otvírací doba restaurace přitom odpovídá podniku
+    otevřenému veřejnosti — výslovně to ale doložené nemáme, takže jisté
+    není, jestli obsluhuje i kolemjdoucí.
   - >-
     Sezónní režim neuvádí žádný z pramenů a o Wi-Fi, platbě kartou, psech ani
     lyžárně mlčí i vlastní web. Souřadnice objektu pocházejí z OpenStreetMap,
