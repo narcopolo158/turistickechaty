@@ -1,5 +1,5 @@
-# horský hotel Ještěd — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-31)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:horský hotel Ještěd + fulltext „horský hotel Ještěd" (namespace File) na commons.wikimedia.org
+# Hotel Ještěd — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Hotel Ještěd + fulltext „Hotel Ještěd" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
@@ -8,10 +8,10 @@
 
 chata: horsky-hotel-jested
 oblast: jestedsky-hrbet
-nazevChaty: horský hotel Ještěd
+nazevChaty: Hotel Ještěd
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
-  kandidát DATA-01"
-checked: 2026-07-31
+  data/chaty"
+checked: 2026-08-02
 fotky:
   - soubor: File:Ještěd , letecký pohled.jpg
     autor: Zdeněk Fiedler
@@ -30,7 +30,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Je%C5%A1t%C4%9Bd_,_leteck%C3%BD_sn%C3%ADmek.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/ee/Je%C5%A1t%C4%9Bd_%2C_leteck%C3%BD_sn%C3%ADmek.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Je%C5%A1t%C4%9Bd_%2C_leteck%C3%BD_sn%C3%ADmek.jpg/960px-Je%C5%A1t%C4%9Bd_%2C_leteck%C3%BD_sn%C3%ADmek.jpg
     rozmery: 2500×1667
@@ -156,7 +156,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Steps_in_Je%C5%A1t%C4%9Bd_restaurant_in_Liberec,_Liberec_District.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/78/Steps_in_Je%C5%A1t%C4%9Bd_restaurant_in_Liberec%2C_Liberec_District.jpg
-    nalezeno: geosearch + fulltext
+    nalezeno: geosearch
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Steps_in_Je%C5%A1t%C4%9Bd_restaurant_in_Liberec%2C_Liberec_District.jpg/960px-Steps_in_Je%C5%A1t%C4%9Bd_restaurant_in_Liberec%2C_Liberec_District.jpg
     rozmery: 3888×2592
@@ -664,6 +664,19 @@ fotky:
     vzdalenostM: 59
     datum: 2008-06-01
     popis: Ještěd Tower.
+  - soubor: File:Ještěd, věž, z terasy (01).jpg
+    autor: ŠJů
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Je%C5%A1t%C4%9Bd,_v%C4%9B%C5%BE,_z_terasy_(01).jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/9e/Je%C5%A1t%C4%9Bd%2C_v%C4%9B%C5%BE%2C_z_terasy_%2801%29.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Je%C5%A1t%C4%9Bd%2C_v%C4%9B%C5%BE%2C_z_terasy_%2801%29.jpg/960px-Je%C5%A1t%C4%9Bd%2C_v%C4%9B%C5%BE%2C_z_terasy_%2801%29.jpg
+    rozmery: 3888×5184
+    vzdalenostM: 84
+    datum: Taken on 10 May 2015
+    popis: Světlá pod Ještědem and Liberec XIX-Horní Hanychov, Liberec District ,
+      Liberec Region , Czech Republic . Ještěd hill, Ještěd Tower.
   - soubor: File:Ještěd - panoramio (42).jpg
     autor: Pavel Špindler
     licence: CC BY 3.0
@@ -688,30 +701,6 @@ fotky:
     vzdalenostM: 140
     datum: 2019-07-12 17:51:18
     popis: Ještěd Hotel and transmitter
-  - soubor: File:2022-12-15-Hotel-Jested-Tower.jpg
-    autor: Gunnar Klack
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:2022-12-15-Hotel-Jested-Tower.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/8/86/2022-12-15-Hotel-Jested-Tower.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/2022-12-15-Hotel-Jested-Tower.jpg/960px-2022-12-15-Hotel-Jested-Tower.jpg
-    rozmery: 4487×3000
-    datum: 2022-12-15
-    popis: Fernsehturm Ještěd bei Liberec/Reichenberg, Nationales Kulturdenkmal
-      Tschechiens, 1963–1973
-  - soubor: File:2022-12-15-Jested-Tower-01.jpg
-    autor: Gunnar Klack
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:2022-12-15-Jested-Tower-01.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/f/f7/2022-12-15-Jested-Tower-01.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/2022-12-15-Jested-Tower-01.jpg/960px-2022-12-15-Jested-Tower-01.jpg
-    rozmery: 3000×3000
-    datum: 2022-12-15
-    popis: Fernsehturm Ještěd bei Liberec/Reichenberg, Nationales Kulturdenkmal
-      Tschechiens, 1963–1973
   - soubor: File:Hotel a vysílač Ještěd.jpg
     autor: Pavel Kinšt
     licence: CC BY-SA 3.0
@@ -722,6 +711,28 @@ fotky:
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Hotel_a_vys%C3%ADla%C4%8D_Je%C5%A1t%C4%9Bd.jpg/960px-Hotel_a_vys%C3%ADla%C4%8D_Je%C5%A1t%C4%9Bd.jpg
     rozmery: 4206×2794
     datum: 2013-08-04 16:35:29
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Hotel hor. Ještěd.jpg
+    autor: Hadonos
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Hotel_hor._Je%C5%A1t%C4%9Bd.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/0d/Hotel_hor._Je%C5%A1t%C4%9Bd.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Hotel_hor._Je%C5%A1t%C4%9Bd.jpg/960px-Hotel_hor._Je%C5%A1t%C4%9Bd.jpg
+    rozmery: 3120×4160
+    datum: 2014-02-22 11:26:24
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Hotel horský Ještěd (Liberec) 1.JPG
+    autor: Bjalek Michal
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Hotel_horsk%C3%BD_Je%C5%A1t%C4%9Bd_(Liberec)_1.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/1/1b/Hotel_horsk%C3%BD_Je%C5%A1t%C4%9Bd_%28Liberec%29_1.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Hotel_horsk%C3%BD_Je%C5%A1t%C4%9Bd_%28Liberec%29_1.JPG/960px-Hotel_horsk%C3%BD_Je%C5%A1t%C4%9Bd_%28Liberec%29_1.JPG
+    rozmery: 1920×2560
+    datum: 2006-07-03 13:35:09
     popis: "This is a photo of a cultural monument of the Czech Republic , number:"
   - soubor: File:Hotel horský Ještěd (Liberec).JPG
     autor: Bjalek Michal
@@ -734,140 +745,6 @@ fotky:
     rozmery: 1920×2560
     datum: 2006-07-03 13:13:35
     popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - bar 01.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_bar_01.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/b/b4/Hotel_Je%C5%A1t%C4%9Bd_-_bar_01.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hotel_Je%C5%A1t%C4%9Bd_-_bar_01.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_bar_01.jpg
-    rozmery: 1704×2272
-    datum: 2014-02-22 00:42:39
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - bar 03.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_bar_03.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/3/31/Hotel_Je%C5%A1t%C4%9Bd_-_bar_03.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Hotel_Je%C5%A1t%C4%9Bd_-_bar_03.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_bar_03.jpg
-    rozmery: 1704×2272
-    datum: 2014-02-22 00:22:20
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - chodba 04.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_chodba_04.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/7/75/Hotel_Je%C5%A1t%C4%9Bd_-_chodba_04.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Hotel_Je%C5%A1t%C4%9Bd_-_chodba_04.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_chodba_04.jpg
-    rozmery: 1704×2272
-    datum: 2014-02-22 01:09:37
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - chodba 05.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_chodba_05.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/c/c9/Hotel_Je%C5%A1t%C4%9Bd_-_chodba_05.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hotel_Je%C5%A1t%C4%9Bd_-_chodba_05.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_chodba_05.jpg
-    rozmery: 2272×1704
-    datum: 2014-02-22 01:09:44
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - chodba 06.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_chodba_06.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/3/3d/Hotel_Je%C5%A1t%C4%9Bd_-_chodba_06.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hotel_Je%C5%A1t%C4%9Bd_-_chodba_06.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_chodba_06.jpg
-    rozmery: 1704×2272
-    datum: 2014-02-22 01:10:12
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - restaurace 02.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_restaurace_02.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/1/14/Hotel_Je%C5%A1t%C4%9Bd_-_restaurace_02.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Hotel_Je%C5%A1t%C4%9Bd_-_restaurace_02.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_restaurace_02.jpg
-    rozmery: 2272×1704
-    datum: 2014-02-21 20:53:13
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - restaurace 08.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_restaurace_08.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/b/be/Hotel_Je%C5%A1t%C4%9Bd_-_restaurace_08.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hotel_Je%C5%A1t%C4%9Bd_-_restaurace_08.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_restaurace_08.jpg
-    rozmery: 1704×2272
-    datum: 2014-02-22 10:42:49
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - schodiště do restaurace 02.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_schodi%C5%A1t%C4%9B_do_restaurace_02.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/5/50/Hotel_Je%C5%A1t%C4%9Bd_-_schodi%C5%A1t%C4%9B_do_restaurace_02.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Hotel_Je%C5%A1t%C4%9Bd_-_schodi%C5%A1t%C4%9B_do_restaurace_02.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_schodi%C5%A1t%C4%9B_do_restaurace_02.jpg
-    rozmery: 1704×2272
-    datum: 2014-02-21 20:37:21
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - schodiště do restaurace 06.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_schodi%C5%A1t%C4%9B_do_restaurace_06.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/0/0d/Hotel_Je%C5%A1t%C4%9Bd_-_schodi%C5%A1t%C4%9B_do_restaurace_06.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Hotel_Je%C5%A1t%C4%9Bd_-_schodi%C5%A1t%C4%9B_do_restaurace_06.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_schodi%C5%A1t%C4%9B_do_restaurace_06.jpg
-    rozmery: 1704×2272
-    datum: 2014-02-22 00:38:13
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - výzdoba schodiště.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_v%C3%BDzdoba_schodi%C5%A1t%C4%9B.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/8/84/Hotel_Je%C5%A1t%C4%9Bd_-_v%C3%BDzdoba_schodi%C5%A1t%C4%9B.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Hotel_Je%C5%A1t%C4%9Bd_-_v%C3%BDzdoba_schodi%C5%A1t%C4%9B.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_v%C3%BDzdoba_schodi%C5%A1t%C4%9B.jpg
-    rozmery: 1704×2272
-    datum: 2014-02-21 20:37:09
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd - zasedačka 01.jpg
-    autor: Hadonos
-    licence: CC BY-SA 3.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_-_zaseda%C4%8Dka_01.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/d/d1/Hotel_Je%C5%A1t%C4%9Bd_-_zaseda%C4%8Dka_01.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hotel_Je%C5%A1t%C4%9Bd_-_zaseda%C4%8Dka_01.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_-_zaseda%C4%8Dka_01.jpg
-    rozmery: 1704×2272
-    datum: 2014-02-21 23:22:58
-    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
-  - soubor: File:Hotel Ještěd Interior, 1994 (3192261502).jpg
-    autor: Sludge G
-    licence: CC BY-SA 2.0
-    stranka: https://commons.wikimedia.org/wiki/File:Hotel_Je%C5%A1t%C4%9Bd_Interior,_1994_(3192261502).jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/c/c7/Hotel_Je%C5%A1t%C4%9Bd_Interior%2C_1994_%283192261502%29.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Hotel_Je%C5%A1t%C4%9Bd_Interior%2C_1994_%283192261502%29.jpg/960px-Hotel_Je%C5%A1t%C4%9Bd_Interior%2C_1994_%283192261502%29.jpg
-    rozmery: 1764×1152
-    datum: 2009-06-09 10:35
-    popis: A touch of the Thunderbirds about this place. Have a lot of spherical
-      lamp shades been removed? A bit early for energy saving bulbs. Would have
-      loved to have stayed in this place.
   - soubor: File:Hotel Ještěd, zima.jpg
     autor: Jan Široký
     licence: CC BY-SA 4.0
@@ -880,6 +757,51 @@ fotky:
     datum: 2018-12-13 10:30:18
     popis: Mountain hotel Ještěd in the Liberec region in the first snow. Liberec
       Region, Czech republic
+  - soubor: File:JEĚTĚD LIBEREC.jpg
+    autor: 9999NUKO
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:JE%C4%9AT%C4%9AD_LIBEREC.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/98/JE%C4%9AT%C4%9AD_LIBEREC.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/JE%C4%9AT%C4%9AD_LIBEREC.jpg/960px-JE%C4%9AT%C4%9AD_LIBEREC.jpg
+    rozmery: 1944×2592
+    datum: 2014-07-29 14:54:19
+    popis: LIBEREC JEŠTĚD
+  - soubor: File:Jeschken-Gipfel-1.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Jeschken-Gipfel-1.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/83/Jeschken-Gipfel-1.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Jeschken-Gipfel-1.jpg/960px-Jeschken-Gipfel-1.jpg
+    rozmery: 3177×2383
+    datum: 2018-10-13 10:13:35
+    popis: Blick von der Fahrstraße über das Geröllfeld auf den Jeschken (Ještěd)
+  - soubor: File:Jeschken-Turm-2.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Jeschken-Turm-2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e3/Jeschken-Turm-2.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/e/e3/Jeschken-Turm-2.jpg
+    rozmery: 833×1110
+    datum: 2018-10-13 08:29:04
+    popis: Blick von Rostein (Rozstání), OT von Swetla (Světlá pod Ještědem), zum
+      Jeschken (Ještěd)
+  - soubor: File:Jested 002.JPG
+    autor: O. Mejsnar
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Jested_002.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c3/Jested_002.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Jested_002.JPG/960px-Jested_002.JPG
+    rozmery: 2592×3872
+    datum: 2011-09-11
+    popis: Ještědský vysílač
   - soubor: File:Jested Summit Liberec CzechRepublic.JPG
     autor: "User: (WT-shared) Peraltita at wts wikivoyage"
     licence: CC BY-SA 1.0
@@ -906,6 +828,18 @@ fotky:
       Ještěd im Jeschkengebirge, der 1.012 Meter hoch ist. Der Berg ist direkt
       bei der Stadt Liberec . Das Bild hab ich mit meiner Samsung-Digitalkamera
       aufgenommen. Der Turm di…
+  - soubor: File:Ještěd.jpg
+    autor: Ondřej Žváček
+    licence: CC BY 2.5
+    stranka: https://commons.wikimedia.org/wiki/File:Je%C5%A1t%C4%9Bd.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/52/Je%C5%A1t%C4%9Bd.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/2.5
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Je%C5%A1t%C4%9Bd.jpg/960px-Je%C5%A1t%C4%9Bd.jpg
+    rozmery: 2304×3072
+    datum: 2008-10-26
+    popis: Hotel and transmitter tower on the top of the Ještěd Mountain ( Liberec
+      Region , Czechia ).
   - soubor: File:Jiri Jiroutek Fenomen Jested 01.jpg
     autor: Jiří Jiroutek
     licence: CC BY-SA 3.0
@@ -927,3 +861,47 @@ fotky:
     rozmery: 2272×1704
     datum: 2014-02-22 12:59:50
     popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Liberec 2014 Ještěd 04.jpg
+    autor: Hadonos
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec_2014_Je%C5%A1t%C4%9Bd_04.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/1b/Liberec_2014_Je%C5%A1t%C4%9Bd_04.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Liberec_2014_Je%C5%A1t%C4%9Bd_04.jpg/960px-Liberec_2014_Je%C5%A1t%C4%9Bd_04.jpg
+    rozmery: 1704×2272
+    datum: 2014-02-22 13:26:27
+    popis: "This is a photo of a cultural monument of the Czech Republic , number:"
+  - soubor: File:Liberec, Žitavská, pohled na Ještěd.jpg
+    autor: PatrikPaprika
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec,_%C5%BDitavsk%C3%A1,_pohled_na_Je%C5%A1t%C4%9Bd.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/2c/Liberec%2C_%C5%BDitavsk%C3%A1%2C_pohled_na_Je%C5%A1t%C4%9Bd.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Liberec%2C_%C5%BDitavsk%C3%A1%2C_pohled_na_Je%C5%A1t%C4%9Bd.jpg/960px-Liberec%2C_%C5%BDitavsk%C3%A1%2C_pohled_na_Je%C5%A1t%C4%9Bd.jpg
+    rozmery: 1344×2448
+    datum: 2014-12-21 15:03:59
+    popis: Liberec (okres Liberec). Ulice Žitavská, pohled na Ještěd.
+  - soubor: File:Pohled na Ještěd od Noviny 02.jpg
+    autor: Hadonos
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pohled_na_Je%C5%A1t%C4%9Bd_od_Noviny_02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f7/Pohled_na_Je%C5%A1t%C4%9Bd_od_Noviny_02.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Pohled_na_Je%C5%A1t%C4%9Bd_od_Noviny_02.jpg/960px-Pohled_na_Je%C5%A1t%C4%9Bd_od_Noviny_02.jpg
+    rozmery: 1600×2133
+    datum: 2014-02-23 13:37:25
+    popis: Pohled na Ještěd od osady Novina v Kryštofově Údolí
+  - soubor: File:Socha u Ještědu.jpg
+    autor: Hadonos
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Socha_u_Je%C5%A1t%C4%9Bdu.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/16/Socha_u_Je%C5%A1t%C4%9Bdu.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Socha_u_Je%C5%A1t%C4%9Bdu.jpg/960px-Socha_u_Je%C5%A1t%C4%9Bdu.jpg
+    rozmery: 3120×4160
+    datum: 2014-02-22 11:26:44
+    popis: Socha u Ještědu

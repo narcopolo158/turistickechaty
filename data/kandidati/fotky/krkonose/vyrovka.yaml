@@ -1,4 +1,4 @@
-# Výrovka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-31)
+# Výrovka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Výrovka + fulltext „Výrovka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: krkonose
 nazevChaty: Výrovka
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   data/chaty"
-checked: 2026-07-31
+checked: 2026-08-02
 fotky:
   - soubor: File:Krkonoše, horská chata Výrovka.jpg
     autor: Stanislav Dusík
@@ -70,6 +70,18 @@ fotky:
     vzdalenostM: 112
     datum: circa 1960 date QS:P,+1960-00-00T00:00:…
     popis: Výrovka krkonošská bouda
+  - soubor: File:Bergbauden im Riesengebirge.jpg
+    autor: OpenStreetMap contributors OpenTopoMap-Mitwirkende Derivative work
+      MagentaGreen
+    licence: CC BY-SA 2.0
+    stranka: https://commons.wikimedia.org/wiki/File:Bergbauden_im_Riesengebirge.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Bergbauden_im_Riesengebirge.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bergbauden_im_Riesengebirge.jpg/960px-Bergbauden_im_Riesengebirge.jpg
+    rozmery: 2880×2160
+    datum: 2019-01-17
+    popis: Location map of the mountain huts in the Giant Mountains
   - soubor: File:Kouřim, řeka Výrovka II.jpg
     autor: I would appreciate being notified if you use my work outside Wikimedia.
       More of my work can be found in my personal gallery .
@@ -172,18 +184,6 @@ fotky:
     popis: Blick vom Liščí hřeben (Fuchsrücken) in das Tal Dlouhý důl (Langer
       Grund), im Hintergrund (Bildmitte) in westlicher Richtung die abgeholzte
       Piste des Ski-Resorts Medvědín
-  - soubor: File:Výrovka (Huštěnovická ramena) 01.JPG
-    autor: Palickap
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:V%C3%BDrovka_(Hu%C5%A1t%C4%9Bnovick%C3%A1_ramena)_01.JPG
-    original: https://upload.wikimedia.org/wikipedia/commons/b/b9/V%C3%BDrovka_%28Hu%C5%A1t%C4%9Bnovick%C3%A1_ramena%29_01.JPG
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/V%C3%BDrovka_%28Hu%C5%A1t%C4%9Bnovick%C3%A1_ramena%29_01.JPG/960px-V%C3%BDrovka_%28Hu%C5%A1t%C4%9Bnovick%C3%A1_ramena%29_01.JPG
-    rozmery: 3968×2976
-    datum: 2015-04-05 16:12:42
-    popis: Huštěnovice, Uherské Hradiště District, Czech Republic. Natural monument
-      Huštěnovická ramena, oxbow lake Výrovka.
   - soubor: File:Výrovka listopad12.jpg
     autor: Michaelavyrovka
     licence: CC BY-SA 3.0

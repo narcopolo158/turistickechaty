@@ -1,4 +1,4 @@
-# Petrova bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-31)
+# Petrova bouda — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
 # Zdroj: Category:Petrova bouda + fulltext „Petrova bouda" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # CHATA BEZ GPS V YAML — geosearch neproběhl a vzdálenosti od chaty nejsou;
@@ -13,7 +13,7 @@ oblast: krkonose
 nazevChaty: Petrova bouda
 zdroj: "Wikimedia Commons API (kategorie + fulltext — chata bez GPS v YAML,
   geosearch neproběhl), profil chaty: data/chaty"
-checked: 2026-07-31
+checked: 2026-08-02
 fotky:
   - soubor: File:23.7.1997r., Petrova Bouda (2).jpg
     autor: MOs810
@@ -364,7 +364,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Petrova_bouda_6.7.2011.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/07/Petrova_bouda_6.7.2011.jpg
-    nalezeno: kategorie
+    nalezeno: kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Petrova_bouda_6.7.2011.jpg/960px-Petrova_bouda_6.7.2011.jpg
     rozmery: 3648×2736
@@ -397,7 +397,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Petrovka-20110917b.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/37/Petrovka-20110917b.jpg
-    nalezeno: kategorie + fulltext
+    nalezeno: kategorie
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Petrovka-20110917b.jpg/960px-Petrovka-20110917b.jpg
     rozmery: 2554×1439

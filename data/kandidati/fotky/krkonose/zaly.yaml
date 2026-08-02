@@ -1,4 +1,4 @@
-# Žalý — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-31)
+# Žalý — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Žalý + fulltext „Žalý" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: krkonose
 nazevChaty: Žalý
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   data/chaty"
-checked: 2026-07-31
+checked: 2026-08-02
 fotky:
   - soubor: File:Rozhledna Žalý (01).jpg
     autor: Czeva
@@ -91,7 +91,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Benecko_Zaly_pomnik.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/c/c2/Benecko_Zaly_pomnik.jpg
-    nalezeno: geosearch + kategorie + fulltext
+    nalezeno: geosearch + kategorie
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Benecko_Zaly_pomnik.jpg/960px-Benecko_Zaly_pomnik.jpg
     rozmery: 3120×4160
@@ -199,7 +199,7 @@ fotky:
     licence: CC BY 3.0
     stranka: https://commons.wikimedia.org/wiki/File:M%C5%99%C3%AD%C4%8Dn%C3%A1-v%C3%BDchod_Slunce_nad_obc%C3%AD.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/07/M%C5%99%C3%AD%C4%8Dn%C3%A1-v%C3%BDchod_Slunce_nad_obc%C3%AD.jpg
-    nalezeno: kategorie + fulltext
+    nalezeno: kategorie
     licenceUrl: https://creativecommons.org/licenses/by/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/M%C5%99%C3%AD%C4%8Dn%C3%A1-v%C3%BDchod_Slunce_nad_obc%C3%AD.jpg/960px-M%C5%99%C3%AD%C4%8Dn%C3%A1-v%C3%BDchod_Slunce_nad_obc%C3%AD.jpg
     rozmery: 1800×900
@@ -277,6 +277,17 @@ fotky:
     rozmery: 1200×1600
     datum: 6 July 2009, 13:35:42 (according to Exi…
     popis: Zaly Observation Tower, near Vrchlabi, Czech Republic
+  - soubor: File:Rozhledna Žalý - přilehlá budova.JPG
+    autor: Czech Wikipedia user Marzper
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_%C5%BDal%C3%BD_-_p%C5%99ilehl%C3%A1_budova.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/2/25/Rozhledna_%C5%BDal%C3%BD_-_p%C5%99ilehl%C3%A1_budova.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Rozhledna_%C5%BDal%C3%BD_-_p%C5%99ilehl%C3%A1_budova.JPG/960px-Rozhledna_%C5%BDal%C3%BD_-_p%C5%99ilehl%C3%A1_budova.JPG
+    rozmery: 1600×1200
+    datum: 6 July 2009, 13:34:40 (according to Exi…
+    popis: Zaly Observation Tower, near Vrchlabi, Czech Republic
   - soubor: File:Rozhledna Žalý - ukázka výhledu 1.JPG
     autor: Czech Wikipedia user Marzper
     licence: CC BY-SA 3.0
@@ -289,6 +300,17 @@ fotky:
     datum: 6 July 2009, 13:44:03 (according to Exi…
     popis: Zaly Observation Tower, near Vrchlabi, Czech Republic - look to Krkonose
       Mountain, Snezka in the distance
+  - soubor: File:Rozhledna Žalý - ukázka výhledu.JPG
+    autor: Czech Wikipedia user Marzper
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_%C5%BDal%C3%BD_-_uk%C3%A1zka_v%C3%BDhledu.JPG
+    original: https://upload.wikimedia.org/wikipedia/commons/f/f5/Rozhledna_%C5%BDal%C3%BD_-_uk%C3%A1zka_v%C3%BDhledu.JPG
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rozhledna_%C5%BDal%C3%BD_-_uk%C3%A1zka_v%C3%BDhledu.JPG/960px-Rozhledna_%C5%BDal%C3%BD_-_uk%C3%A1zka_v%C3%BDhledu.JPG
+    rozmery: 1600×1200
+    datum: 6 July 2009, 13:41:41 (according to Exi…
+    popis: Zaly Observation Tower, near Vrchlabi, Czech Republic - view to Vrchlabi
   - soubor: File:Rozhledna Žalý.JPG
     autor: Czech Wikipedia user Marzper
     licence: CC BY-SA 3.0
@@ -311,6 +333,16 @@ fotky:
     rozmery: 2100×1400
     datum: 2010-06-06 16:02:36
     popis: Lookout tower Žalý in Krkonoše
+  - soubor: File:Rozhlednazaly.jpg
+    autor: Digidaq at Czech Wikipedia
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Rozhlednazaly.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/a/ad/Rozhlednazaly.jpg
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/a/ad/Rozhlednazaly.jpg
+    rozmery: 600×800
+    datum: 25 August 2006 (original upload date)
+    popis: Rozhledna na Žalý je častým cílem procházek po Benecku.
   - soubor: File:Vrchlabi ze zaly.JPG
     autor: Kmenicka
     licence: CC BY 3.0
@@ -348,7 +380,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:%C5%BDal%C3%BD-sn%C3%ADh2012.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/9b/%C5%BDal%C3%BD-sn%C3%ADh2012.jpg
-    nalezeno: kategorie + fulltext
+    nalezeno: kategorie
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%C5%BDal%C3%BD-sn%C3%ADh2012.jpg/960px-%C5%BDal%C3%BD-sn%C3%ADh2012.jpg
     rozmery: 2000×1000

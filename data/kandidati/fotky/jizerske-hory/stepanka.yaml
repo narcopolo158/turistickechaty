@@ -1,4 +1,4 @@
-# Štěpánka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-31)
+# Štěpánka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Štěpánka + fulltext „Štěpánka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: jizerske-hory
 nazevChaty: Štěpánka
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   kandidát DATA-01"
-checked: 2026-07-31
+checked: 2026-08-02
 fotky:
   - soubor: File:Štěpánka.JPG
     autor: Kateřina Beránková
@@ -114,7 +114,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_%C5%A0t%C4%9Bp%C3%A1nka,_trigonometrick%C3%A9_body.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/4e/Rozhledna_%C5%A0t%C4%9Bp%C3%A1nka%2C_trigonometrick%C3%A9_body.jpg
-    nalezeno: geosearch + fulltext
+    nalezeno: geosearch
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Rozhledna_%C5%A0t%C4%9Bp%C3%A1nka%2C_trigonometrick%C3%A9_body.jpg/960px-Rozhledna_%C5%A0t%C4%9Bp%C3%A1nka%2C_trigonometrick%C3%A9_body.jpg
     rozmery: 3456×5184
@@ -434,17 +434,6 @@ fotky:
     rozmery: 1987×2703
     datum: 2013-06-20 14:40:31
     popis: Štěpánka Duchková, Czech presenter
-  - soubor: File:Štěpánka Fingerhutová (2023).jpg
-    autor: Jindřich Nosek (NoJin)
-    licence: CC BY 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:%C5%A0t%C4%9Bp%C3%A1nka_Fingerhutov%C3%A1_(2023).jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/6/6e/%C5%A0t%C4%9Bp%C3%A1nka_Fingerhutov%C3%A1_%282023%29.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/%C5%A0t%C4%9Bp%C3%A1nka_Fingerhutov%C3%A1_%282023%29.jpg/960px-%C5%A0t%C4%9Bp%C3%A1nka_Fingerhutov%C3%A1_%282023%29.jpg
-    rozmery: 1024×1280
-    datum: 2023-05-13 13:24:54
-    popis: Štěpánka Fingerhutová (2023)
   - soubor: File:Štěpánka Fingerhutová.png
     autor: Mimars
     licence: CC BY-SA 4.0

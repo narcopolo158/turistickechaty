@@ -1,4 +1,4 @@
-# Javor — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-31)
+# Javor — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Javor + fulltext „Javor" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: jizerske-hory
 nazevChaty: Javor
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   kandidát DATA-01"
-checked: 2026-07-31
+checked: 2026-08-02
 fotky:
   - soubor: File:Jindřichov (Lučany nad Nisou), roubenka III.jpg
     autor: Juandev
@@ -354,6 +354,17 @@ fotky:
     vzdalenostM: 891888
     datum: 2023-10-11 11:06:08
     popis: Monument to major Ilic on Mount Javor, Serbia.
+  - soubor: File:Acer pseudoplatanus zoom60 14-09-25 2.png
+    autor: Mr. Zabej
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Acer_pseudoplatanus_zoom60_14-09-25_2.png
+    original: https://upload.wikimedia.org/wikipedia/commons/4/48/Acer_pseudoplatanus_zoom60_14-09-25_2.png
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Acer_pseudoplatanus_zoom60_14-09-25_2.png/960px-Acer_pseudoplatanus_zoom60_14-09-25_2.png
+    rozmery: 2592×1944
+    datum: 2025-09-13
+    popis: Пылок Явара з павелічэннем 60х
   - soubor: File:Ahornblätter (Acer) im Herbst.jpg
     autor: Dnalor 01
     licence: CC BY-SA 3.0 at
@@ -453,6 +464,18 @@ fotky:
     rozmery: 1040×1860
     datum: 2022-05-16
     popis: Helsingissä kukkivan vaahteran latvasto keväisenä päivänä toukokuussa 2022.
+  - soubor: File:Maple Acer saccharum stem XRT phloem & xylem 40x mag.jpg
+    autor: Tgru001
+    licence: CC BY 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Maple_Acer_saccharum_stem_XRT_phloem_%26_xylem_40x_mag.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/35/Maple_Acer_saccharum_stem_XRT_phloem_%26_xylem_40x_mag.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Maple_Acer_saccharum_stem_XRT_phloem_%26_xylem_40x_mag.jpg/960px-Maple_Acer_saccharum_stem_XRT_phloem_%26_xylem_40x_mag.jpg
+    rozmery: 4201×3146
+    datum: 2026-01-23
+    popis: Maple Acer saccharum stem XRT phloem & xylem 40x mag each image actually
+      3mm wide
   - soubor: File:Navigating a Tree in the Park in Spring.webm
     autor: Maximilian Schönherr
     licence: CC BY-SA 4.0
@@ -494,17 +517,6 @@ fotky:
     rozmery: 2496×1664
     datum: 2007-04-06
     popis: Tree seedling with its two cotyledons.
-  - soubor: File:Zámecký klen, koruna.jpg
-    autor: Klokan1988
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Z%C3%A1meck%C3%BD_klen,_koruna.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/a/a2/Z%C3%A1meck%C3%BD_klen%2C_koruna.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Z%C3%A1meck%C3%BD_klen%2C_koruna.jpg/960px-Z%C3%A1meck%C3%BD_klen%2C_koruna.jpg
-    rozmery: 5152×3864
-    datum: 2020-01-12 12:55:30
-    popis: Zámecký javor nedaleko zámku v Palvínově
   - soubor: File:Јавор планина 01.jpg
     autor: Иван Миловановић
     licence: CC BY-SA 4.0

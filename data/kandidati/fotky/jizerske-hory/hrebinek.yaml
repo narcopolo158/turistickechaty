@@ -1,4 +1,4 @@
-# Hřebínek — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-07-31)
+# Hřebínek — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Hřebínek + fulltext „Hřebínek" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: jizerske-hory
 nazevChaty: Hřebínek
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   data/chaty"
-checked: 2026-07-31
+checked: 2026-08-02
 fotky:
   - soubor: File:Hřebínek 3.jpg
     autor: LaSo
@@ -85,19 +85,6 @@ fotky:
     datum: 2023-04-10 12:55:44
     popis: Ayam biing grungsang (ayam bulu merah berdiri) mempunyai peranan penting
       dalam proses Upacara Ngangkid Desa Pedawa Bali
-  - soubor: File:Bílá skála u Srbské (17).JPG
-    autor: MartinVeselka
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:B%C3%ADl%C3%A1_sk%C3%A1la_u_Srbsk%C3%A9_(17).JPG
-    original: https://upload.wikimedia.org/wikipedia/commons/3/33/B%C3%ADl%C3%A1_sk%C3%A1la_u_Srbsk%C3%A9_%2817%29.JPG
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/B%C3%ADl%C3%A1_sk%C3%A1la_u_Srbsk%C3%A9_%2817%29.JPG/960px-B%C3%ADl%C3%A1_sk%C3%A1la_u_Srbsk%C3%A9_%2817%29.JPG
-    rozmery: 3648×2736
-    datum: 2014-02-15 13:07:40
-    popis: Přírodní památka Bílá skála severozápadně od vesnice Srbská chrání skalní
-      hřebínek tvořený vypreparovanou křemennou žílou při státní hranici s
-      Polskem.
   - soubor: File:Bílá skála u Srbské (20).JPG
     autor: MartinVeselka
     licence: CC BY-SA 4.0
@@ -265,6 +252,17 @@ fotky:
     rozmery: 1536×2048
     datum: Taken on 5 February 2009
     popis: Balené jehněčí maso
+  - soubor: File:OJ C 2 of 2015 - CS Czech.pdf
+    autor: Publications Office of the European Union
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:OJ_C_2_of_2015_-_CS_Czech.pdf
+    original: https://upload.wikimedia.org/wikipedia/commons/9/93/OJ_C_2_of_2015_-_CS_Czech.pdf
+    nalezeno: fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_C_2_of_2015_-_CS_Czech.pdf/page1-960px-OJ_C_2_of_2015_-_CS_Czech.pdf.jpg
+    rozmery: 1239×1752
+    datum: Published on 7 January 2015
+    popis: Official Journal of the European Union - C 2 of 7 January 2015 - Czech
+      edition
   - soubor: File:OJ C 466 of 2014 - CS Czech.pdf
     autor: Publications Office of the European Union
     licence: Public domain
