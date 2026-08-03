@@ -439,3 +439,61 @@ vyrazeno:
       duplicitní kandidát publikovaného profilu, ne jako objekt.
     rozhodl: interaktivní session s pověřením „pracuj dál samostatně" (2. 8. 2026)
     checked: 2026-08-02
+  - osm: https://www.openstreetmap.org/node/13970697344
+    slug: jizerske-hory/horska-stanice-knajpa
+    duvod: >-
+      Není nový objekt: týž OSM node (13970697344, shodné souřadnice
+      50.8308592 / 15.2428086) je od 30. 7. 2026 publikovaný jako profil
+      jizerske-hory/knajpa (Kiosek Knajpa) — právě z tohoto kandidáta byl
+      povýšen. Doběh DATA-01 z 2. 8. 2026 (rozšířené okno) ho založil znovu
+      jen proto, že páruje podle slugu, ne podle OSM identity; slug se přitom
+      shoduje s původním jménem kandidáta, nikoli s názvem publikovaného
+      profilu. Vyřazeno jako duplicitní kandidát publikovaného profilu, ne
+      jako objekt. Vedlejší nález převzatý do profilu: OSM objekt dnes nese
+      jméno „Horská stanice Knajpa" (my vedeme „Kiosek Knajpa" dle katalogu)
+      a wikidata=Q99650145.
+    rozhodl: >-
+      Claude (3. 8. 2026, denní bezobslužná session — triáž kandidátů
+      z doběhu DATA-01)
+    checked: 2026-08-03
+  - osm: https://www.openstreetmap.org/node/4342957855
+    slug: jizerske-hory/kynast
+    duvod: >-
+      Objekt k pronájmu, ne turistická chata na trase. OSM ho sice vede jako
+      tourism=alpine_hut, ale vlastní web objektu (chatakynast.cz, dohledán
+      3. 8. 2026 — doména z OSM kynast.cz na něj nevede) mluví jinak:
+      pronajímá se celek nebo části (11 pokojů, max. 40 lůžek, sál a louka),
+      stravování se neposkytuje, jen „pronájem velké kuchyně, kde můžete
+      využít prostory k přípravě občerstvení pro větší skupinu osob".
+      Shodně archivní prezentace na ceskehory.cz: „Pronajímáme pouze
+      prostory, žádné služby ohledně stravování neposkytujeme."
+      Občerstvení pro veřejnost tedy doloženo NENÍ. Turistická minulost
+      (klíč DATA-25) rovněž nedoložena — vlastní web vede historii teprve
+      od koupě objektu 2004 a o starším provozu mlčí; „turistická chata"
+      v názvu inzerátu na e-cesko.cz je katalogová nálepka, ne doklad.
+      Poloha dle vlastního webu: okrajová část Jablonce nad Nisou
+      (Jablonecké Paseky), 650 m n. m. V externím katalogu turistických chat
+      ČR/SK 2026 objekt není. POZOR na jmenovce: „Apartmány Kynast"
+      na Mariánské hoře jsou v katalozích vedeny zvlášť.
+    rozhodl: >-
+      Claude (3. 8. 2026, denní bezobslužná session — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost, ne typ stavby;
+      rozšíření DATA-25 o turistickou minulost prověřeno a nedoloženo)
+    checked: 2026-08-03
+  - osm: https://www.openstreetmap.org/way/203319548
+    slug: jizerske-hory/penzion-aron
+    duvod: >-
+      Penzion v osadě Jelení kout (adresa z OSM „Jelení kout ev.112",
+      zdroj tagů cuzk:ruian; osada leží na Černostudničním hřebeni
+      u Smržovky). OSM tourism=chalet, provozovatelka Radmila Majerová,
+      telefon; nic z toho nedokládá občerstvení pro veřejnost a žádný tag
+      občerstvení objekt nenese. V externím katalogu turistických chat
+      ČR/SK 2026 není a hledáním 3. 8. 2026 se k němu nepodařilo dohledat
+      ani vlastní prezentaci — což není doklad neexistence, ale ani doklad
+      role na trase. Turistická minulost (klíč DATA-25) nedoložena. Platí
+      pravidlo Michala z 27. 7. 2026: penzion bez doložené historie
+      a bez veřejného občerstvení do průvodce nepatří.
+    rozhodl: >-
+      Claude (3. 8. 2026, denní bezobslužná session — klíč CLAUDE.md
+      + pravidlo o penzionech z 27. 7. 2026)
+    checked: 2026-08-03

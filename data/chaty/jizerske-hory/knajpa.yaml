@@ -62,4 +62,17 @@ interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/horska-stanice-knajp
   Klíč triáže: OSM hutový tag NEMÁ, občerstvení doložené tagem amenity, vedeno v externím
   katalogu (jistota B, typ objektu „turistická / horská chata“).
 
-  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.'
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, popis terénu a tras.
+
+
+  JMÉNO — rozdíl proti OSM (zjištěno 3. 8. 2026 při triáži doběhu DATA-01): OSM objekt
+  (node/13970697344) se jmenuje „Horská stanice Knajpa“, my vedeme „Kiosek Knajpa“ podle
+  externího katalogu. Neopravujeme ani jedno — jsou to dvě pojmenování téhož objektu ze
+  dvou pramenů a náš název drží pramen, ze kterého pocházejí i ostatní údaje profilu. Týž
+  OSM objekt nese wikidata=Q99650145; položku jsme neotevírali, o jejím obsahu tedy nic
+  netvrdíme.
+
+
+  Doběh DATA-01 z 2. 8. 2026 založil kandidáta „horska-stanice-knajpa“ znovu (páruje podle
+  slugu, ne podle OSM identity) — vyřazen 3. 8. 2026 jako duplicita tohoto profilu, viz
+  data/kandidati/_vyrazeno.yaml.'

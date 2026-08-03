@@ -11,6 +11,82 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-03 (denní bezobslužná session) — triáž doběhu DATA-01; Barbora je otázka, ne položka; červená hlavní větev
+
+**Hotovo — triáž tří kandidátů z doběhu DATA-01 (bod ③ z včerejška).**
+Všichni tři vyřazeni, každý s doloženým důvodem v `_vyrazeno.yaml`:
+
+- **horska-stanice-knajpa = duplicita publikované Knajpy.** Týž OSM node
+  (13970697344, shodné souřadnice), a co víc: právě z tohoto kandidáta byla
+  Knajpa 30. 7. povýšena. Doběh ho založil znovu, protože DATA-01 páruje podle
+  slugu — a slug kandidáta se shoduje s jeho původním jménem, ne s názvem
+  profilu. Vzor Smědavy z 2. 8. **Vedlejší nález převzatý do profilu:** OSM
+  objekt se dnes jmenuje „Horská stanice Knajpa", my vedeme „Kiosek Knajpa"
+  podle katalogu. Neopravuji ani jedno — jsou to dvě pojmenování téhož objektu
+  ze dvou pramenů a náš název drží pramen, ze kterého jsou i ostatní údaje.
+  Týž objekt nese `wikidata=Q99650145`; položku jsem neotevíral, tak o ní nic
+  netvrdím.
+- **Kynast = objekt k pronájmu.** OSM ho vede jako `alpine_hut`, ale vlastní
+  web (chatakynast.cz — doména z OSM `kynast.cz` na něj nevede) říká opak:
+  pronajímá se celek nebo části, 11 pokojů / max. 40 lůžek, a stravování
+  „neposkytujeme", jen pronájem kuchyně k vlastní přípravě. Archivní listing
+  ceskehory.cz doslova: „Pronajímáme pouze prostory, žádné služby ohledně
+  stravování neposkytujeme." Turistická minulost (klíč DATA-25) nedoložena —
+  web vede historii teprve od koupě 2004. „Turistická chata" v názvu inzerátu
+  na e-cesko.cz je katalogová nálepka, ne doklad.
+- **Penzion Aron = penzion v osadě Jelení kout** (adresa z OSM, zdroj tagů
+  cuzk:ruian; osada na Černostudničním hřebeni u Smržovky). Žádný tag ani
+  pramen občerstvení, v externím katalogu není, vlastní prezentaci se dnes
+  nepodařilo dohledat vůbec — což není doklad neexistence, ale ani doklad role
+  na trase. Platí tvé pravidlo z 27. 7. o penzionech.
+
+**Barbora: křížové ověření dokončeno, povýšení NE — a je to otázka na tebe.**
+Vlastní web barbora.org se dnes poprvé načetl (2. 8. byl mimo dosah) a potvrdil,
+co kandidát nesl: „Horská chata Barbora (742 m.n.m.) stojí na jižním svahu vrchu
+Krásný … nedaleko rozhledny Bramberk, 1 km nad městečkem Lučany nad Nisou."
+Výška 742 m tím sedí na metr ve třech pramenech. Listingy jablonec.com
+a liberecky-kraj.cz doplňují adresu (Lučany nad Nisou 269), 40 lůžek a kontakty.
+Jenže **stravování je ve všech pramenech vázané na ubytované** (polopenze, plná
+penze, nebo vlastní vaření v kuchyňce) a historii objektu nezmiňuje žádný z nich.
+Podle klíče by se tedy vyřazovala — jenže proti tomu stojí trojí: OSM tag
+`alpine_hut`, jméno „Horská chata" ve všech pramenech, a poloha na samotě nad
+obcí u rozhledny, ne penzion ve středisku (tedy výjimka z pravidla z 27. 7.).
+Nepovyšuji a nevyřazuji, protože **to není rozhodnutí o jednom souboru**: ve
+frontě zůstává 47 jizerských kandidátů a velká část je přesně tenhle druh —
+ubytovací horská chata bez doložené veřejné hospody. Jak rozhodneš u Barbory,
+tak projdu zbytek fronty.
+
+**Vedlejší nález, který se dal opravit hned: hlavní větev byla červená.**
+Posun jižní hrany okna Jizerek na 50.70 (2. 8., kvůli Černé studnici)
+nedohnaly dva testy, které měly starou hranu 50.73 napevno v řetězci —
+`data06-trasy` a `data06-vychozi-body`. Opraveno, a k doslovnému řetězci jsem
+přidal kontrolu **důvodu** posunu (Černá studnice 50.7120 musí zůstat uvnitř),
+aby další rozšíření okna test neshodilo potřetí.
+
+**Zůstává červený jeden test a nesahal jsem na něj:**
+`pristupy-ze-strediska` → „jizerská trasa nese délku i dopočítané převýšení
+a čas (DATA-06 výšky)". Trasa na Smědavu délku má, ale `prevyseni` a `casMin`
+budou až po běhu „DATA-06: výšky přístupů" pro `jizerske-hory` — tedy po tvém
+kliku ②. Je to test napsaný dopředu jako připomínka, ne vada kódu; nechávám ho
+tak, ale znamená to, že CI na mainu bude do toho kliku červené. Kdyby ti to
+vadilo dřív, můžu ho přepsat na podmíněný.
+(Osm dalších pádů `pohori.int.spec.tsx` je jen chybějící `PAYLOAD_SECRET`
+v sandboxu — v CI se to nestává.)
+
+**Příště:** ① tvoje dva kliky z včerejška pořád platí — „DATA-06: výchozí body"
+(jizerske-hory) a po něm „DATA-06: výšky přístupů"; pak přeroutuju popáté
+a zmizí i ten červený test. ② Podle tvé odpovědi u Barbory projdu zbytek
+jizerské fronty (47 kandidátů) — Javor a Koryna čekají na druhý pramen,
+Wieża widokowa Mirsk má občerstvení doložené z OSM a je nejblíž povýšení.
+
+**Otázky pro Michala:**
+1. **Barbora — a s ní celá zbylá jizerská fronta:** bereme ubytovací horské
+   chaty, kde je stravování doložené jen pro ubytované a historie nedoložená,
+   pokud stojí na samotě a jmenují se „horská chata"? Nebo je držíme dál na
+   bráně veřejného občerstvení?
+2. Vadí ti červené CI na mainu do kliku ② (test výšek jizerských přístupů),
+   nebo ho mám přepsat tak, aby čekal tiše?
+
 ## 2026-08-02 (blok 12) — doběhy nad rozšířeným oknem: Černá studnice má OSM identitu i trasu
 
 **Actions doběhly (spouštěl Michal): DATA-01 (jizerske-hory, okno 50.70)

@@ -119,8 +119,11 @@ describe('DATA-06 · tvar Overpass dotazu na výchozí body', () => {
 
   it('okno je parametr — Jizerky se neptají na krkonošský bbox', () => {
     const ji = overpassDotazVychoziBody('CZ', bboxStr(oblastDleSlugu('jizerske-hory').bbox))
-    expect(ji).toContain('50.73,15.05,51.02,15.45')
+    expect(ji).toContain('50.7,15.05,51.02,15.45')
     expect(ji).not.toContain('16.05')
+    // Viz data06-trasy: doslovný řetězec doplňuje kontrola důvodu posunu —
+    // Černá studnice (50.7120) musí zůstat uvnitř okna.
+    expect(oblastDleSlugu('jizerske-hory').bbox.latMin).toBeLessThanOrEqual(50.712)
   })
 
   /**

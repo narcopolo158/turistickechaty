@@ -109,7 +109,12 @@ describe('DATA-06 · tvar Overpass dotazu', () => {
     const kr = overpassDotazTrasy(bboxStr(oblastDleSlugu('krkonose').bbox))
     const ji = overpassDotazTrasy(bboxStr(oblastDleSlugu('jizerske-hory').bbox))
     expect(kr).not.toBe(ji)
-    expect(ji).toContain('50.73,15.05,51.02,15.45')
+    expect(ji).toContain('50.7,15.05,51.02,15.45')
     expect(ji).not.toContain('16.05')
+    // Jižní hrana okna se posouvala třikrát a tenhle řádek ji nedohnal:
+    // 2. 8. 2026 klesla kvůli Černé studnici na 50.70, test zůstal na 50.73
+    // a hlavní větev tím zčervenala. Vedle doslovného řetězce proto
+    // kontrolujeme i DŮVOD posunu — ten další rozšíření okna přežije.
+    expect(oblastDleSlugu('jizerske-hory').bbox.latMin).toBeLessThanOrEqual(50.712)
   })
 })
