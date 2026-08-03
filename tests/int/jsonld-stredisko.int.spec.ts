@@ -178,10 +178,10 @@ describe('JSON-LD střediska — nad skutečnými daty', () => {
       const [misto] = jsonLdStrediska(s, KONTEXT)
       const geo = (misto as Record<string, unknown>).geo as Record<string, unknown> | undefined
       if (s.vyskaObce != null) {
-        expect(geo, s.slug).toBeTruthy()
-        expect(geo?.elevation, s.slug).toBe(s.vyskaObce)
+        expect(geo, s.slug ?? '').toBeTruthy()
+        expect(geo?.elevation, s.slug ?? '').toBe(s.vyskaObce)
       } else if (geo) {
-        expect(geo.elevation, s.slug).toBeUndefined()
+        expect(geo.elevation, s.slug ?? '').toBeUndefined()
       }
     }
   })
