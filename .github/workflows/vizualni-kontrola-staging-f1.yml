@@ -71,6 +71,13 @@ jobs:
 
       - name: Snimky sablon F1 (den / noc / mobil)
         continue-on-error: true
+        env:
+          # DOCASNE po http: beh 3 dolozil (viz _diagnostika.txt), ze 443
+          # vraci TLS "unrecognized name" - certifikat pro dev.* na serveru
+          # chybi/neni aktivni. Az Michal vyda Let's Encrypt ve Forge
+          # (Domains -> dev.turistickechaty.cz -> SSL), TENTO RADEK SMAZAT
+          # a fotit zase pres https (diagnostika hlida 443 dal).
+          STAGING_URL: http://dev.turistickechaty.cz
         run: node scripts/ci/screenshot-staging-f1.mjs
 
       - name: Artifact se snimky
