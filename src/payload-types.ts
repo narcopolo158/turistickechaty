@@ -741,6 +741,14 @@ export interface Strediska {
    * Hero mini-stránky: 2 věty, jen doložitelné údaje — žádné ceníky ani hodnocení.
    */
   perex?: string | null;
+  /**
+   * Odkud údaje v této skupině pocházejí a kdy byly naposledy ověřeny. Nikdy nedomýšlet fakta.
+   */
+  overeniPerex?: {
+    source?: string | null;
+    verified?: boolean | null;
+    checked?: string | null;
+  };
   lat?: number | null;
   lng?: number | null;
   /**
@@ -1425,6 +1433,13 @@ export interface StrediskaSelect<T extends boolean = true> {
   zeme?: T;
   oblast?: T;
   perex?: T;
+  overeniPerex?:
+    | T
+    | {
+        source?: T;
+        verified?: T;
+        checked?: T;
+      };
   lat?: T;
   lng?: T;
   vyskaObce?: T;

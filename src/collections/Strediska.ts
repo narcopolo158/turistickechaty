@@ -50,6 +50,10 @@ export const Strediska: CollectionConfig = {
       label: 'Perex',
       admin: { description: 'Hero mini-stránky: 2 věty, jen doložitelné údaje — žádné ceníky ani hodnocení.' },
     },
+    // Perex je veřejná próza → musí mít vlastní blok ověření jako každá
+    // věcná skupina (doplněno 3. 8. 2026 — do té doby perex neměl kam
+    // citovat pramen, proto ho žádné středisko nemělo vyplněné).
+    overeni('overeniPerex', { label: 'Ověření perexu' }),
     {
       type: 'row',
       fields: [

@@ -8,6 +8,21 @@ slug: horni-marsov
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace oficiálního portálu svazku.
+perex: >-
+  Malá rekreační obec na hranici Krkonošského národního parku, rozložená
+  v údolí řeky Úpy. Do hor odtud vedou dvě značené přístupové trasy
+  z našeho katalogu.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/horni-marsov/ (načteno 3. 8. 2026): „malá rekreační
+    obec na hranici Krkonošského národního parku", „rozkládá se v údolí
+    řeky Úpy". Druhá věta = fakt našeho katalogu (2 přístupové trasy
+    DATA-06, počítáno při buildu).
+  verified: false
+  checked: '2026-08-03'
+
 lat: 50.6586744
 lng: 15.8199838
 overeniLokace:

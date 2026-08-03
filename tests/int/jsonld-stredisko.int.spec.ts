@@ -168,10 +168,21 @@ describe('JSON-LD střediska — nad skutečnými daty', () => {
     })
   }
 
-  it('žádné středisko dnes nemá výšku obce — dokud nebude ČÚZK, elevation nevzniká', () => {
-    // Kontrola premisy F1a: až Michal výšky doplní, test spadne a je to
-    // správně — připomene, že se má přepsat, ne že je něco rozbité.
+  it('elevation vzniká přesně u středisek s doloženou výškou obce (první: Dolní Dvůr, 3. 8. 2026)', () => {
+    // Přepsáno 3. 8. 2026, když dorazila první doložená výška (dřív test
+    // hlídal, že výšku nemá nikdo). Pravidlo je párové: elevation v JSON-LD
+    // právě tehdy, když YAML nese vyskaObce — ani vymyšlená, ani ztracená.
     const vsechna = [...strediskaZeSouboru('krkonose'), ...strediskaZeSouboru('jizerske-hory')]
-    expect(vsechna.filter((s) => s.vyskaObce != null)).toHaveLength(0)
+    expect(vsechna.some((s) => s.vyskaObce != null)).toBe(true)
+    for (const s of vsechna) {
+      const [misto] = jsonLdStrediska(s, KONTEXT)
+      const geo = (misto as Record<string, unknown>).geo as Record<string, unknown> | undefined
+      if (s.vyskaObce != null) {
+        expect(geo, s.slug).toBeTruthy()
+        expect(geo?.elevation, s.slug).toBe(s.vyskaObce)
+      } else if (geo) {
+        expect(geo.elevation, s.slug).toBeUndefined()
+      }
+    }
   })
 })

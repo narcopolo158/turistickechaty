@@ -74,8 +74,15 @@ describe('střediska Krkonoš (data/strediska/krkonose)', () => {
       expect(data.overeniLokace?.source, soubor).toMatch(/ODbL/)
       expect(data.overeniLokace?.verified, soubor).toBe(false)
       expect(data.overeniLokace?.checked, soubor).toMatch(/^\d{4}-\d{2}-\d{2}$/)
-      // Výška obce se zdrojem ČÚZK je zadání F1a — dokud doklad není, pole nesmí existovat.
-      expect(data.vyskaObce, `${soubor}: výška obce bez dokladu`).toBeUndefined()
+      // Výška obce smí existovat JEN s dokladem: overeniLokace.source musí
+      // výšku výslovně zmiňovat (první doklad 3. 8. 2026: Dolní Dvůr 641 m
+      // z oficiálního portálu svazku; ověření proti ČÚZK zůstává otevřené
+      // a hlídá ho zmínka o ČÚZK v témže zdroji).
+      if (data.vyskaObce != null) {
+        expect(typeof data.vyskaObce, soubor).toBe('number')
+        expect(data.overeniLokace?.source, `${soubor}: výška obce bez dokladu ve zdroji lokace`).toMatch(/[Vv]ýšk/)
+        expect(data.overeniLokace?.source, `${soubor}: u výšky chybí poznámka o otevřeném ověření ČÚZK`).toMatch(/ČÚZK/)
+      }
     }
   })
 
