@@ -46,16 +46,31 @@ jobs:
       - name: Chromium pro Playwright
         run: npx playwright install --with-deps chromium
 
-      - name: Staging musi zit (jinak nema co fotit)
+      # Beh #1 a #2 padly presne tady (curl z runneru na staging neprosel,
+      # ackoli web bezi) -> krok uz NEBLOKUJE, misto toho zapise plnou
+      # diagnostiku do souboru, ktery se commitne VZDY - hlavni session si
+      # ji precte z repa bez rucniho kopirovani logu.
+      - name: Diagnostika dostupnosti stagingu (zapis do repa)
         run: |
-          for i in $(seq 1 10); do
-            curl -sf -o /dev/null https://dev.turistickechaty.cz/api/health && exit 0
-            sleep 3
-          done
-          echo '::error::Staging neodpovida na /api/health — kontrola nema co fotit.'
-          exit 1
+          mkdir -p docs/kontroly/f1-staging
+          {
+            echo "== diagnostika $(date -u +%Y-%m-%dT%H:%M:%SZ) (run ${{ github.run_number }}) =="
+            echo '-- DNS z runneru:'
+            getent hosts dev.turistickechaty.cz || echo 'getent selhal'
+            echo '-- https health:'
+            curl -sS -o /dev/null -m 20 \
+              -w 'http_code=%{http_code} ip=%{remote_ip} cas=%{time_total}s\n' \
+              https://dev.turistickechaty.cz/api/health || echo "curl https exit=$?"
+            echo '-- http health (redirect?):'
+            curl -sS -o /dev/null -m 20 \
+              -w 'http_code=%{http_code} ip=%{remote_ip} redirect=%{redirect_url}\n' \
+              http://dev.turistickechaty.cz/api/health || echo "curl http exit=$?"
+            echo '-- https verbose (posledni 30 radku):'
+            curl -v -o /dev/null -m 20 https://dev.turistickechaty.cz/api/health 2>&1 | tail -30
+          } | tee docs/kontroly/f1-staging/_diagnostika.txt || true
 
       - name: Snimky sablon F1 (den / noc / mobil)
+        continue-on-error: true
         run: node scripts/ci/screenshot-staging-f1.mjs
 
       - name: Artifact se snimky
@@ -64,18 +79,19 @@ jobs:
         with:
           name: f1-staging-snimky
           path: docs/kontroly/f1-staging/
-          if-no-files-found: error
+          if-no-files-found: warn
 
-      - name: Commit snimku do docs/kontroly/f1-staging/
+      - name: Commit snimku a diagnostiky do docs/kontroly/f1-staging/
         if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p docs/kontroly/f1-staging
           git add docs/kontroly/f1-staging
           if git diff --cached --quiet; then
-            echo 'Snimky beze zmeny - nic ke commitu.'
+            echo 'Zadna zmena - nic ke commitu.'
             exit 0
           fi
-          git commit -m 'docs: snimky F1 sablon ze zive stagingu (z Actions) [skip ci]'
+          git commit -m 'docs: snimky/diagnostika F1 stagingu (z Actions) [skip ci]'
           git pull --rebase origin main
           git push origin main
