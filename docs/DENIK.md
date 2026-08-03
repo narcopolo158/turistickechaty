@@ -70,13 +70,34 @@ Actions) a WebFetch dohledávky.
    být červený (předchozí release na serveru tím netrpí). PONAUČENÍ:
    tsc/lint VŽDY jako tvrdá brána před commitem, ne přes `;`.
 
-**Pro Michala / další session:** (a) Actions: zkontrolovat běh
-„F1: vizualni kontrola stagingu" (a případně ho spustit ručně) +
-zelenost deployů b6e77d0→c120799; (b) až dorazí snímky do
-docs/kontroly/f1-staging/, porovnat proti design/handoff-f1/
-screenshots/ a zapsat verdikt; (c) ČÚZK výšky obcí dál otevřené
-(první ne-ČÚZK doklad má DD); (d) Černý Důl doprava: zkusit
-region-krkonose.cz/cerny-dul/ v ručním běhu.
+**Dovětek (odpoledne, po Michalových screenshotech z Actions):**
+běhy kontroly #1–#2 padaly na hlídacím kroku — a diagnostika běhu #3
+(commitovaná do repa, vzor „_diag.txt") odhalila skutečnou příčinu:
+**HTTPS na stagingu vůbec nejede** — 443 vrací TLS „unrecognized
+name" (certifikát pro dev.* na serveru chybí/neaktivní — Let's
+Encrypt z 27. 7. se zjevně nikdy nedokončil), zatímco :80 vrací 200.
+Zpětně to vysvětluje i Michalův týdenní ERR_SSL v Edge (nebyla to jen
+DNS cache) — web celou dobu jel po http. Kontrola dočasně fotí po
+http (řádek STAGING_URL ve workflow SMAZAT po vydání certu);
+diagnostika hlídá 443 dál. **Běh #4: všech 14 snímků v repu**
+(docs/kontroly/f1-staging/). Vzorek porovnán s handoffem (homepage
+den, pohoří den, katalog karty): **shoda — hero „sběratelský stůl"
+s reálným polaroidem Luční, dřevěná CTA, poctivé countery (107·45·17
++ „105× za 14 dní"), kalendárium, pohoří grid, namátkou, FAQ,
+manifest; pohoří: foto-hero s atribucí, 4 stat-tiles s mikro-zdroji,
+3D poster→tap („scéna ~3,4 MB se načte až po kliknutí"); katalog:
+chips s počty, poctivé „— výška nedoložena", mini-otisky.** Vědomé
+evoluce sessions (živá 2D mapa na homepage místo malovaného posteru,
+jiný claim, FAQ i na homepage, pás „Přispět otiskem či fotkou")
+odpovídají zápisům. Noc/mobil/středisko snímky v repu k doprohlédnutí.
+
+**Pro Michala / další session:** (a) **JEDINÝ blok: vydat certifikát
+— Forge → Domains → dev.turistickechaty.cz → SSL → Let's Encrypt**
+(HTTP-01 projde, :80 žije a DNS sedí); až bude, smazat STAGING_URL
+řádek z vizualni-kontrola-staging-f1.yml (vrátí https) a zapnout
+redirect http→https; (b) doprohlédnout noc/mobil/středisko snímky;
+(c) ČÚZK výšky obcí dál otevřené (první ne-ČÚZK doklad má DD);
+(d) Černý Důl doprava: region-krkonose.cz/cerny-dul/ v ručním běhu.
 
 ## 2026-08-03 (blok 6) — doběh DATA-02 zpracován: fotky pro oba nové profily
 
