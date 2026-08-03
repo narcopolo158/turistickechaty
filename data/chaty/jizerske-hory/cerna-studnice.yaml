@@ -130,6 +130,25 @@ text:
     a z horského magazínu; polohu nese OpenStreetMap. Vlastní
     web areálu se nám zatím nepodařilo načíst. Redakce nic neověřila
     vlastním dotazem ani návštěvou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/cerna-studnice.yaml
+# (22 kandidátů, doběh DATA-02 z 3. 8.): jediné záběry jmenující objekt jsou panoramio série 2007; vybrán nejbližší (geotag 8 m); rozlišení jen 600×800 — kdyby se v adminu objevil lepší záběr, vyměnit.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/c/c2/%C4%8Cern%C3%A1_Studnice%2C_2007-08-30_-_panoramio_-_mirah.cz.jpg
+    alt: Rozhledna Černá studnice
+    typ: soucasna # hero záběr profilu
+    autor: mirah.cz
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:%C4%8Cern%C3%A1_Studnice,_2007-08-30_-_panoramio_-_mirah.cz.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor
+        mirah.cz, popis „Černá Studnice; 2007-08-30"), doběh DATA-02 z 3. 8. 2026;
+        geotag 8 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Krajský portál liberecky-kraj.cz — dřevěná vyhlídka 1885, žulová

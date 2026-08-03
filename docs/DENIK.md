@@ -11,6 +11,31 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-03 (blok 6) — doběh DATA-02 zpracován: fotky pro oba nové profily
+
+DATA-02 (spustil Michal) doběhlo — 159 YAML, nové nabídky pro Černou
+studnici (22 kandidátů) i Chatu Proseč (7). Redakčně přiřazeno:
+
+- **Černá studnice** — jediné záběry jmenující objekt jsou panoramio
+  série z roku 2007; vzat nejbližší (geotag 8 m, CC BY-SA 3.0).
+  Rozlišení jen 600×800 — v komentáři výslovně: kdyby se objevil lepší
+  záběr, vyměnit v adminu.
+- **Chata Proseč** — „Nová Prosečská chata" (geotag 14 m, CC BY-SA 4.0,
+  5184×3456), pojmenovaná přímo po nové budově.
+
+Jizerky tak mají hero fotku na 20 z 26 profilů; zbylých 6 čeká
+v adminu s dokumentovanými důvody (blok 3). Krkonošská většina + tahle
+dvacítka = fronta výběru se srovnala s krkonošským stavem.
+
+**Stav mandátu:** jizerská fronta kandidátů teď stojí na Michalových
+rozhodnutích (Barbora → 40+ ubytovacích chat, Mirsk → rozsah, rokVzniku
+Proseče; plus ruční kroky: klik „výšky" pro 4 nástupy, kontrola fotek
+v adminu, telefonáty DATA-04). Další samostatná práce půjde mimo frontu
+— dle pořadí backlogu: DATA-25 (audit klíče turistické minulosti nad
+kandidáty a vyřazenými) nebo F1-IMPL (šablony dle handoffu). Vzhledem
+k rozsahu obojího je čistší začít je v čerstvé session, ne na konci
+téhle.
+
 ## 2026-08-03 (blok 5) — Chata Proseč povýšena (č. 18); rozhledna vedle dostala otvíračku
 
 **Povýšení č. 18 — Chata Proseč** (586 m, Prosečský hřeben). Vlastní

@@ -122,6 +122,26 @@ text:
     a z krajského katalogu; vlastní web chaty se nám zatím nepodařilo
     načíst, takže z něj necitujeme. Polohu nese OpenStreetMap. Redakce
     nic neověřila vlastním dotazem ani návštěvou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/chata-prosec.yaml
+# (7 kandidátů, doběh DATA-02 z 3. 8.): záběr pojmenovaný přímo po nové chatě, geotag 14 m, největší rozlišení (5184×3456).
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/5/57/Nov%C3%A1_Prose%C4%8Dsk%C3%A1_chata.jpg
+    alt: Chata Proseč — nová kamenná budova z roku 2018
+    typ: soucasna # hero záběr profilu
+    datovani: 7. 8. 2016 # datum snímku z Commons
+    autor: Digiart71
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Nov%C3%A1_Prose%C4%8Dsk%C3%A1_chata.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 4.0, autor
+        Digiart71, popis „Fotografie pořízena při výletu na rozhlednu."), doběh DATA-02 z 3. 8. 2026;
+        geotag 14 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Infocentrum Jablonec nad Nisou — adresa Pod Prosečí 5313/8, 586 m,
