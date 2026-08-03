@@ -11,6 +11,38 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-03 (blok 4) — seed na Forge jede sám; Javor a Koryna dovershovány k Barbořině otázce
+
+**Otázka Michala k seedu na Forge: nic dělat nemusí.** Workflow
+„INFRA-01: deploy staging" se spouští sám na každý push do main (mimo
+čistě dokumentační) a jeho serverová část běží `git reset → npm ci →
+seed → rozbalit .next → pm2 restart` přímo na pticore — kde
+upload.wikimedia dostupná JE. Push fotek (9d5c5d5) deploy spustil,
+takže snímky se stáhnou serverovým seedem; kdyby některý spadl, seed
+je idempotentní a doplní ho příští běh. Ověřit se to dá pohledem na
+zelený běh workflow a na hero na stagingu (sandbox na
+dev.turistickechaty.cz nedosáhne — egress).
+
+**Fronta (co nečeká na rozhodnutí):**
+
+- **Javor** — identita potvrzena (GPS listingu = OSM na metry):
+  Jindřichov 23 u Jablonce, 650 m, 55 lůžek, polopenze/plná penze.
+  Listing je ale V ARCHIVU („prezentace není aktivní") a veřejné
+  občerstvení nedoloženo → týž případ jako Barbora + nejistý provoz.
+  Čeká na Barbořino rozhodnutí.
+- **Koryna** — třetí pokus, třetí prázdno: web z OSM mrtvý, hledání
+  nic, a oficiální seznam ubytování obce Albrechtice ji NEUVÁDÍ.
+  Nechána ve frontě; kdyby se rozhodlo vyřazovat nedoložené, je první
+  na řadě. Vedlejší nález: obec vede „Chata Mariánka" mezi pronájmy —
+  poznámka do jejího kandidáta (vzor Kynast).
+- **Chata Proseč** — chataprosec.cz potřetí timeout; z ostatních
+  pramenů je restaurace doložená (krajský portál), povýšení tedy
+  zvážit i bez vlastního webu v příštím bloku.
+
+**Příště:** ① odpovědi Michala (Barbora → vzor pro Javor/Korynu
+a 40+ dalších; Mirsk → rozsah), ② DATA-02 znovu po přibytí Černé
+studnice, ③ zvážit povýšení Chaty Proseč z krajského portálu.
+
 ## 2026-08-03 (blok 3) — jizerské hero fotky: 18 profilů přiřazeno redakčně, důvod rozdílu vysvětlen
 
 **Otázka Michala:** proč mají krkonošské profily fotky a jizerské ani
