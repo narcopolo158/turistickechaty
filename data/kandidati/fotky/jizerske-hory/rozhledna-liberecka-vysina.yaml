@@ -1,5 +1,5 @@
-# Rozhledna Liberecká výšina — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Rozhledna Liberecká výšina + fulltext „Rozhledna Liberecká výšina" (namespace File) na commons.wikimedia.org
+# Liberecká výšina — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-03)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Liberecká výšina + fulltext „Liberecká výšina" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
@@ -8,17 +8,17 @@
 
 chata: rozhledna-liberecka-vysina
 oblast: jizerske-hory
-nazevChaty: Rozhledna Liberecká výšina
+nazevChaty: Liberecká výšina
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
-  kandidát DATA-01"
-checked: 2026-08-02
+  data/chaty"
+checked: 2026-08-03
 fotky:
   - soubor: File:Liberecká výšina Liberec-Starý Harcov 2025-11-29 01.jpg
     autor: Leonhard Lenz
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_01.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/3/35/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_01.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_01.jpg/960px-Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_01.jpg
     rozmery: 5424×8144
@@ -43,7 +43,7 @@ fotky:
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_02.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a2/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_02.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_02.jpg/960px-Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_02.jpg
     rozmery: 8144×5424
@@ -55,7 +55,7 @@ fotky:
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_05.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/02/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_05.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_05.jpg/960px-Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_05.jpg
     rozmery: 8144×5424
@@ -67,7 +67,7 @@ fotky:
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_04.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/9/98/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_04.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_04.jpg/960px-Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_04.jpg
     rozmery: 5424×8144
@@ -79,7 +79,7 @@ fotky:
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_03.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/4/48/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_03.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_03.jpg/960px-Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_03.jpg
     rozmery: 5424×8144
@@ -91,7 +91,7 @@ fotky:
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_02.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/b7/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_02.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_02.jpg/960px-Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_02.jpg
     rozmery: 5424×8144
@@ -103,7 +103,7 @@ fotky:
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_03.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/0/0d/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_03.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_03.jpg/960px-Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_03.jpg
     rozmery: 8144×5424
@@ -115,7 +115,7 @@ fotky:
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_04.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/bd/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_04.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_04.jpg/960px-Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_04.jpg
     rozmery: 8144×5424
@@ -128,7 +128,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Star%C3%BD_Harcov_(Liberec_XV)_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_(%C4%8Dp._251)_(stav_leden_2025)_(1).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/7/73/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%281%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%281%29.jpg/960px-Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%281%29.jpg
     rozmery: 4032×3024
@@ -141,7 +141,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Star%C3%BD_Harcov_(Liberec_XV)_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_(%C4%8Dp._251)_(stav_leden_2025)_(2).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/68/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%282%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%282%29.jpg/960px-Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%282%29.jpg
     rozmery: 3024×4032
@@ -154,7 +154,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Star%C3%BD_Harcov_(Liberec_XV)_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_(%C4%8Dp._251)_(stav_leden_2025)_(3).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/ef/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%283%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%283%29.jpg/960px-Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%283%29.jpg
     rozmery: 4032×3024
@@ -167,7 +167,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Star%C3%BD_Harcov_(Liberec_XV)_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_(%C4%8Dp._251)_(stav_leden_2025)_(6).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/f6/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%286%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%286%29.jpg/960px-Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%286%29.jpg
     rozmery: 4032×3024
@@ -191,7 +191,7 @@ fotky:
     licence: CC0
     stranka: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_01.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/f9/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_01.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie
     licenceUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_01.jpg/960px-Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-12-01_01.jpg
     rozmery: 5424×8144
@@ -216,7 +216,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Star%C3%BD_Harcov_(Liberec_XV)_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_(%C4%8Dp._251)_(stav_leden_2025)_(5).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/61/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%285%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%285%29.jpg/960px-Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%285%29.jpg
     rozmery: 3024×4032
@@ -553,7 +553,7 @@ fotky:
     licence: CC BY-SA 4.0
     stranka: https://commons.wikimedia.org/wiki/File:Star%C3%BD_Harcov_(Liberec_XV)_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_(%C4%8Dp._251)_(stav_leden_2025)_(4).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/27/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%284%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%284%29.jpg/960px-Star%C3%BD_Harcov_%28Liberec_XV%29_-_Libereck%C3%A1_v%C3%BD%C5%A1ina_%28%C4%8Dp._251%29_%28stav_leden_2025%29_%284%29.jpg
     rozmery: 4032×3024
@@ -666,3 +666,254 @@ fotky:
     datum: 2025-01-22 12:02:45
     popis: Starý Harcov (Liberec XV) - areál vily Heinricha Liebiega ve Wolkerově
       ulici, park, vzadu kus vily (stav leden 2025)
+  - soubor: File:Liberec-Ambossfelsen-.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Ambossfelsen-.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/55/Liberec-Ambossfelsen-.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Liberec-Ambossfelsen-.jpg/960px-Liberec-Ambossfelsen-.jpg
+    rozmery: 3368×2632
+    datum: 2020-06-15 12:18:17
+    popis: Der Ambossfelsen an der Liebiegwarte in Reichenberg – Skála Kovadlina auf
+      der Liberecká výšina in Liberec, Wolkerova 251
+  - soubor: File:Liberec-Ambossfelsen.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Ambossfelsen.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e0/Liberec-Ambossfelsen.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Liberec-Ambossfelsen.jpg/960px-Liberec-Ambossfelsen.jpg
+    rozmery: 3186×2222
+    datum: 2020-06-15 12:15:15
+    popis: Der Ambossfelsen an der Liebiegwarte in Reichenberg – Skála Kovadlina auf
+      der Liberecká výšina in Liberec, Wolkerova 251
+  - soubor: File:Liberec-Liebiegwarte-01.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/bc/Liberec-Liebiegwarte-01.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Liberec-Liebiegwarte-01.jpg/960px-Liberec-Liebiegwarte-01.jpg
+    rozmery: 3108×2331
+    datum: 2020-06-15 11:20:01
+    popis: Ehem. Hohenhabsburg, Liebiegwarte oder Heinrichswarte in Reichenberg –
+      Liberecká výšina in Liberec, Wolkerova 251, errichtet 1900/01
+  - soubor: File:Liberec-Liebiegwarte-02.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/56/Liberec-Liebiegwarte-02.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Liberec-Liebiegwarte-02.jpg/960px-Liberec-Liebiegwarte-02.jpg
+    rozmery: 2486×3315
+    datum: 2020-06-15 11:19:53
+    popis: Ehem. Hohenhabsburg, Liebiegwarte oder Heinrichswarte in Reichenberg –
+      Liberecká výšina in Liberec, Wolkerova 251, errichtet 1900/01
+  - soubor: File:Liberec-Liebiegwarte-03.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-03.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/86/Liberec-Liebiegwarte-03.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Liberec-Liebiegwarte-03.jpg/960px-Liberec-Liebiegwarte-03.jpg
+    rozmery: 3283×3433
+    datum: 2020-06-15 11:21:02
+    popis: Ehem. Hohenhabsburg, Liebiegwarte oder Heinrichswarte in Reichenberg –
+      Liberecká výšina in Liberec, Wolkerova 251, errichtet 1900/01
+  - soubor: File:Liberec-Liebiegwarte-04.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-04.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b7/Liberec-Liebiegwarte-04.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Liberec-Liebiegwarte-04.jpg/960px-Liberec-Liebiegwarte-04.jpg
+    rozmery: 3437×2950
+    datum: 2020-06-15 12:22:44
+    popis: Ehem. Hohenhabsburg, Liebiegwarte oder Heinrichswarte in Reichenberg –
+      Liberecká výšina in Liberec, Wolkerova 251, errichtet 1900/01
+  - soubor: File:Liberec-Liebiegwarte-05.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-05.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/6c/Liberec-Liebiegwarte-05.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Liberec-Liebiegwarte-05.jpg/960px-Liberec-Liebiegwarte-05.jpg
+    rozmery: 2430×3240
+    datum: 2020-06-15 11:37:04
+    popis: Ehem. Hohenhabsburg, Liebiegwarte oder Heinrichswarte in Reichenberg –
+      Liberecká výšina in Liberec, Wolkerova 251, errichtet 1900/01
+  - soubor: File:Liberec-Liebiegwarte-06.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-06.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/0/05/Liberec-Liebiegwarte-06.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Liberec-Liebiegwarte-06.jpg/960px-Liberec-Liebiegwarte-06.jpg
+    rozmery: 2247×3264
+    datum: 2020-06-15 11:45:58
+    popis: Ehem. Hohenhabsburg, Liebiegwarte oder Heinrichswarte in Reichenberg –
+      Liberecká výšina in Liberec, Wolkerova 251, errichtet 1900/01
+  - soubor: File:Liberec-Liebiegwarte-07.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-07.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/1d/Liberec-Liebiegwarte-07.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Liberec-Liebiegwarte-07.jpg/960px-Liberec-Liebiegwarte-07.jpg
+    rozmery: 2394×3129
+    datum: 2020-06-15 11:47:36
+    popis: Ehem. Hohenhabsburg, Liebiegwarte oder Heinrichswarte in Reichenberg –
+      Liberecká výšina in Liberec, Wolkerova 251, errichtet 1900/01
+  - soubor: File:Liberec-Liebiegwarte-08.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-08.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/ec/Liberec-Liebiegwarte-08.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Liberec-Liebiegwarte-08.jpg/960px-Liberec-Liebiegwarte-08.jpg
+    rozmery: 2796×2097
+    datum: 2020-06-15 12:20:06
+    popis: Ehem. Hohenhabsburg, Liebiegwarte oder Heinrichswarte in Reichenberg –
+      Liberecká výšina in Liberec, Wolkerova 251, errichtet 1900/01
+  - soubor: File:Liberec-Liebiegwarte-Blick-1.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Blick-1.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/87/Liberec-Liebiegwarte-Blick-1.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Liberec-Liebiegwarte-Blick-1.jpg/960px-Liberec-Liebiegwarte-Blick-1.jpg
+    rozmery: 5392×2556
+    datum: 2020-06-15 11:29:35
+    popis: Blick von der Liebiegwarte in Reichenberg über die Stadt zum Jeschken –
+      Liberecká výšina in Liberec
+  - soubor: File:Liberec-Liebiegwarte-Blick-3.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Blick-3.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/89/Liberec-Liebiegwarte-Blick-3.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Liberec-Liebiegwarte-Blick-3.jpg/960px-Liberec-Liebiegwarte-Blick-3.jpg
+    rozmery: 5668×2611
+    datum: 2020-06-15 11:29:41
+    popis: Blick von der Liebiegwarte in Reichenberg über die Stadt zum Jeschken –
+      Liberecká výšina in Liberec
+  - soubor: File:Liberec-Liebiegwarte-Blick-4.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Blick-4.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/7/72/Liberec-Liebiegwarte-Blick-4.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Liberec-Liebiegwarte-Blick-4.jpg/960px-Liberec-Liebiegwarte-Blick-4.jpg
+    rozmery: 9526×2666
+    datum: 2020-06-15 11:29:35
+    popis: Blick von der Liebiegwarte in Reichenberg über die Stadt zum Jeschken –
+      Liberecká výšina in Liberec
+  - soubor: File:Liberec-Liebiegwarte-Blick-5.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Blick-5.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c1/Liberec-Liebiegwarte-Blick-5.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Liberec-Liebiegwarte-Blick-5.jpg/960px-Liberec-Liebiegwarte-Blick-5.jpg
+    rozmery: 3648×2227
+    datum: 2020-06-15 11:27:34
+    popis: Blick von der Liebiegwarte in Reichenberg nach Altharzdorf (Starý Harcov)
+      – Liberecká výšina in Liberec
+  - soubor: File:Liberec-Liebiegwarte-Blick-6.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Blick-6.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/28/Liberec-Liebiegwarte-Blick-6.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Liberec-Liebiegwarte-Blick-6.jpg/960px-Liberec-Liebiegwarte-Blick-6.jpg
+    rozmery: 3535×1988
+    datum: 2020-06-15 11:27:18
+    popis: Blick von der Liebiegwarte in Reichenberg zur Siedlung Kunratická in
+      Starý Harcov (Altharzdorf) – Liberecká výšina in Liberec
+  - soubor: File:Liberec-Liebiegwarte-Blick-7.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Blick-7.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/1/11/Liberec-Liebiegwarte-Blick-7.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Liberec-Liebiegwarte-Blick-7.jpg/960px-Liberec-Liebiegwarte-Blick-7.jpg
+    rozmery: 3648×2736
+    datum: 2020-06-15 11:31:45
+    popis: Blick von der Liebiegwarte in Reichenberg über die Stadt zum Jeschken –
+      Liberecká výšina in Liberec
+  - soubor: File:Liberec-Liebiegwarte-Teich-1.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Teich-1.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/5/5c/Liberec-Liebiegwarte-Teich-1.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Liberec-Liebiegwarte-Teich-1.jpg/960px-Liberec-Liebiegwarte-Teich-1.jpg
+    rozmery: 3648×2736
+    datum: 2020-06-15 11:20:39
+    popis: Teich (Biotop) an der Liebiegwarte in Reichenberg – Liberecká výšina in
+      Liberec, Wolkerova 251
+  - soubor: File:Liberec-Liebiegwarte-Teich-2.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Teich-2.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/4b/Liberec-Liebiegwarte-Teich-2.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Liberec-Liebiegwarte-Teich-2.jpg/960px-Liberec-Liebiegwarte-Teich-2.jpg
+    rozmery: 3002×2218
+    datum: 2020-06-15 11:34:30
+    popis: Teich (Biotop) an der Liebiegwarte in Reichenberg – Liberecká výšina in
+      Liberec, Wolkerova 251
+  - soubor: File:Liberec-Liebiegwarte-Teich-3.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Teich-3.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/38/Liberec-Liebiegwarte-Teich-3.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Liberec-Liebiegwarte-Teich-3.jpg/960px-Liberec-Liebiegwarte-Teich-3.jpg
+    rozmery: 3440×2649
+    datum: 2020-06-15 11:26:24
+    popis: Teich (Biotop) an der Liebiegwarte in Reichenberg – Liberecká výšina in
+      Liberec, Wolkerova 251
+  - soubor: File:Liberec-Liebiegwarte-Teich-4.jpg
+    autor: SchiDD
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Liberec-Liebiegwarte-Teich-4.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/bf/Liberec-Liebiegwarte-Teich-4.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Liberec-Liebiegwarte-Teich-4.jpg/960px-Liberec-Liebiegwarte-Teich-4.jpg
+    rozmery: 3435×2691
+    datum: 2020-06-15 11:26:33
+    popis: Teich (Biotop) an der Liebiegwarte in Reichenberg – Liberecká výšina in
+      Liberec, Wolkerova 251
+  - soubor: File:VÝŠINA LIBEREC.jpg
+    autor: 9999NUKO
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:V%C3%9D%C5%A0INA_LIBEREC.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/be/V%C3%9D%C5%A0INA_LIBEREC.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/V%C3%9D%C5%A0INA_LIBEREC.jpg/960px-V%C3%9D%C5%A0INA_LIBEREC.jpg
+    rozmery: 1944×2592
+    datum: 2013-08-06 13:12:12
+    popis: LIBEERCKÁ VÝŠINA

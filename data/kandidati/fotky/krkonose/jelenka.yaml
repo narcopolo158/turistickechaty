@@ -1,4 +1,4 @@
-# Jelenka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
+# Jelenka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-03)
 # Zdroj: geosearch 300 m okolo GPS chaty + Category:Jelenka + fulltext „Jelenka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
@@ -11,7 +11,7 @@ oblast: krkonose
 nazevChaty: Jelenka
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
   data/chaty"
-checked: 2026-08-02
+checked: 2026-08-03
 fotky:
   - soubor: File:Bouda Jelenka.jpg
     autor: Honza Groh ( Jagro )
@@ -174,18 +174,6 @@ fotky:
     popis: I grew two species of Athamanta from seed last year and am waiting to see
       how different they are. This batch are more advanced but that might
       because they are older. The stems are thicker and slightly fuzzy.
-  - soubor: File:Athamanta turbith - Flickr - peganum.jpg
-    autor: peganum from Small Dole, England
-    licence: CC BY-SA 2.0
-    stranka: https://commons.wikimedia.org/wiki/File:Athamanta_turbith_-_Flickr_-_peganum.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/0/0b/Athamanta_turbith_-_Flickr_-_peganum.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/2.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Athamanta_turbith_-_Flickr_-_peganum.jpg/960px-Athamanta_turbith_-_Flickr_-_peganum.jpg
-    rozmery: 2448×3264
-    datum: 2013-05-06 11:05
-    popis: My research suggests that A.turbith should be more compact with slightly
-      broader leaf segments. (nb. vestina is aka turbith hungarica)
   - soubor: File:Athamanta turbith (8752489259).jpg
     autor: peganum from Henfield, England
     licence: CC BY-SA 2.0
@@ -288,6 +276,18 @@ fotky:
     rozmery: 5730×3820
     datum: 2022-07-25 11:11:34
     popis: Athamanta turbith in the Botanischer Garten, Berlin-Dahlem
+  - soubor: File:Athamanta turbith Świniak Matthioliego 2019-04-28 01.jpg
+    autor: Agnieszka Kwiecień, Nova
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-04-28_01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/9/9e/Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-04-28_01.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-04-28_01.jpg/960px-Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-04-28_01.jpg
+    rozmery: 4094×3070
+    datum: 2019-04-28
+    popis: Athamanta turbith , plant cultivated in Wrocław University Botanical
+      Garden, Wrocław, Poland.
   - soubor: File:Athamanta turbith Świniak Matthioliego 2019-05-26 02.jpg
     autor: Agnieszka Kwiecień, Nova
     licence: CC BY-SA 4.0
@@ -309,18 +309,6 @@ fotky:
     licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-07-18_01.jpg/960px-Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-07-18_01.jpg
     rozmery: 2934×3912
-    datum: 2019-07-18
-    popis: Athamanta turbith infructescence, plant cultivated in Wrocław University
-      Botanical Garden, Wrocław, Poland.
-  - soubor: File:Athamanta turbith Świniak Matthioliego 2019-07-18 02.jpg
-    autor: Agnieszka Kwiecień, Nova
-    licence: CC BY-SA 4.0
-    stranka: https://commons.wikimedia.org/wiki/File:Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-07-18_02.jpg
-    original: https://upload.wikimedia.org/wikipedia/commons/1/1b/Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-07-18_02.jpg
-    nalezeno: fulltext
-    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
-    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-07-18_02.jpg/960px-Athamanta_turbith_%C5%9Awiniak_Matthioliego_2019-07-18_02.jpg
-    rozmery: 3658×2745
     datum: 2019-07-18
     popis: Athamanta turbith infructescence, plant cultivated in Wrocław University
       Botanical Garden, Wrocław, Poland.

@@ -1,5 +1,5 @@
-# Rozhledna Maják J. Cimrmanna — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Rozhledna Maják J. Cimrmanna + fulltext „Rozhledna Maják J. Cimrmanna" (namespace File) na commons.wikimedia.org
+# Maják Járy Cimrmana — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-03)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Maják Járy Cimrmana + fulltext „Maják Járy Cimrmana" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
@@ -8,17 +8,17 @@
 
 chata: rozhledna-majak-j-cimrmana
 oblast: jizerske-hory
-nazevChaty: Rozhledna Maják J. Cimrmanna
+nazevChaty: Maják Járy Cimrmana
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
-  kandidát DATA-01"
-checked: 2026-08-02
+  data/chaty"
+checked: 2026-08-03
 fotky:
   - soubor: File:Maják Járy Cimrana, čáp.jpg
     autor: ŠJů ( cs:ŠJů )
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrana,_%C4%8D%C3%A1p.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/a/a3/Maj%C3%A1k_J%C3%A1ry_Cimrana%2C_%C4%8D%C3%A1p.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Maj%C3%A1k_J%C3%A1ry_Cimrana%2C_%C4%8D%C3%A1p.jpg/960px-Maj%C3%A1k_J%C3%A1ry_Cimrana%2C_%C4%8D%C3%A1p.jpg
     rozmery: 2448×3264
@@ -31,7 +31,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrmana,_kotvic%C3%AD_lana.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/1/1f/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_kotvic%C3%AD_lana.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_kotvic%C3%AD_lana.jpg/960px-Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_kotvic%C3%AD_lana.jpg
     rozmery: 2448×3264
@@ -44,7 +44,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrmana,_shora_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/f8/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_shora_%2801%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_shora_%2801%29.jpg/960px-Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_shora_%2801%29.jpg
     rozmery: 3264×2448
@@ -57,7 +57,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrmana,_shora.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/e9/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_shora.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_shora.jpg/960px-Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_shora.jpg
     rozmery: 3264×2448
@@ -70,7 +70,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrmana,_zevnit%C5%99.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/f/f8/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_zevnit%C5%99.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_zevnit%C5%99.jpg/960px-Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_zevnit%C5%99.jpg
     rozmery: 3264×2448
@@ -83,7 +83,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice,_cykloakce,_z_maj%C3%A1ku_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/8/8c/P%C5%99%C3%ADchovice%2C_cykloakce%2C_z_maj%C3%A1ku_%2801%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/P%C5%99%C3%ADchovice%2C_cykloakce%2C_z_maj%C3%A1ku_%2801%29.jpg/960px-P%C5%99%C3%ADchovice%2C_cykloakce%2C_z_maj%C3%A1ku_%2801%29.jpg
     rozmery: 3264×2448
@@ -96,7 +96,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice,_cykloakce,_z_maj%C3%A1ku.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/2/2a/P%C5%99%C3%ADchovice%2C_cykloakce%2C_z_maj%C3%A1ku.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/P%C5%99%C3%ADchovice%2C_cykloakce%2C_z_maj%C3%A1ku.jpg/960px-P%C5%99%C3%ADchovice%2C_cykloakce%2C_z_maj%C3%A1ku.jpg
     rozmery: 3264×2448
@@ -109,7 +109,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice,_kostel_svat%C3%A9ho_V%C3%ADta,_z_Maj%C3%A1ku_J%C3%A1ry_Cimrmana.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/68/P%C5%99%C3%ADchovice%2C_kostel_svat%C3%A9ho_V%C3%ADta%2C_z_Maj%C3%A1ku_J%C3%A1ry_Cimrmana.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/P%C5%99%C3%ADchovice%2C_kostel_svat%C3%A9ho_V%C3%ADta%2C_z_Maj%C3%A1ku_J%C3%A1ry_Cimrmana.jpg/960px-P%C5%99%C3%ADchovice%2C_kostel_svat%C3%A9ho_V%C3%ADta%2C_z_Maj%C3%A1ku_J%C3%A1ry_Cimrmana.jpg
     rozmery: 3264×2448
@@ -122,7 +122,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice,_z_Maj%C3%A1ku_J%C3%A1ry_Cimrmana.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/6d/P%C5%99%C3%ADchovice%2C_z_Maj%C3%A1ku_J%C3%A1ry_Cimrmana.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/P%C5%99%C3%ADchovice%2C_z_Maj%C3%A1ku_J%C3%A1ry_Cimrmana.jpg/960px-P%C5%99%C3%ADchovice%2C_z_Maj%C3%A1ku_J%C3%A1ry_Cimrmana.jpg
     rozmery: 3264×2448
@@ -135,7 +135,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrmana,_vstup_na_schodi%C5%A1t%C4%9B.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/b/b9/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_vstup_na_schodi%C5%A1t%C4%9B.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_vstup_na_schodi%C5%A1t%C4%9B.jpg/960px-Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_vstup_na_schodi%C5%A1t%C4%9B.jpg
     rozmery: 2448×3264
@@ -148,7 +148,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:P%C5%99enosn%C3%A1_turistick%C3%A1_zna%C4%8Dka_Dr._Wasserfalla.jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/ef/P%C5%99enosn%C3%A1_turistick%C3%A1_zna%C4%8Dka_Dr._Wasserfalla.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/P%C5%99enosn%C3%A1_turistick%C3%A1_zna%C4%8Dka_Dr._Wasserfalla.jpg/960px-P%C5%99enosn%C3%A1_turistick%C3%A1_zna%C4%8Dka_Dr._Wasserfalla.jpg
     rozmery: 2448×3264
@@ -240,7 +240,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrmana_(02).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/6/64/Maj%C3%A1k_J%C3%A1ry_Cimrmana_%2802%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Maj%C3%A1k_J%C3%A1ry_Cimrmana_%2802%29.jpg/960px-Maj%C3%A1k_J%C3%A1ry_Cimrmana_%2802%29.jpg
     rozmery: 3191×2363
@@ -422,7 +422,7 @@ fotky:
     licence: CC BY-SA 3.0
     stranka: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrmana_(01).jpg
     original: https://upload.wikimedia.org/wikipedia/commons/e/ec/Maj%C3%A1k_J%C3%A1ry_Cimrmana_%2801%29.jpg
-    nalezeno: geosearch
+    nalezeno: geosearch + kategorie + fulltext
     licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
     nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Maj%C3%A1k_J%C3%A1ry_Cimrmana_%2801%29.jpg/960px-Maj%C3%A1k_J%C3%A1ry_Cimrmana_%2801%29.jpg
     rozmery: 2384×3075
@@ -664,3 +664,140 @@ fotky:
     datum: 2006-10-21
     popis: Kořenov -Příchovice, Jablonec nad Nisou District , Liberec Region , the
       Czech Republic . Cows.
+  - soubor: File:Pohled na Příchovice - panoramio.jpg
+    autor: Vojtěch Káně
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Pohled_na_P%C5%99%C3%ADchovice_-_panoramio.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/c/c7/Pohled_na_P%C5%99%C3%ADchovice_-_panoramio.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Pohled_na_P%C5%99%C3%ADchovice_-_panoramio.jpg/960px-Pohled_na_P%C5%99%C3%ADchovice_-_panoramio.jpg
+    rozmery: 4032×3024
+    vzdalenostM: 504
+    datum: Taken on 9 January 2014
+    popis: Pohled na Příchovice
+  - soubor: File:Maják Járy Cimrmana.jpg
+    autor: Wikihoust
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/6/66/Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg/960px-Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg
+    rozmery: 1000×662
+    datum: 2013-07-28 11:38:27
+    popis: Rozhledna Maják Járy Cimrmana Přichovice (Kořenov)
+  - soubor: File:Příchovice (Kořenov) - Maják Járy Cimrmana, 2023-08, obr01.jpg
+    autor: RomanM82
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice_(Ko%C5%99enov)_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana,_2023-08,_obr01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/4/4d/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr01.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr01.jpg/960px-P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr01.jpg
+    rozmery: 3072×4608
+    datum: 2023-08-23 15:06:42
+    popis: Příchovice (Kořenov) - Maják Járy Cimrmana
+  - soubor: File:Příchovice (Kořenov) - Maják Járy Cimrmana, 2023-08, obr02.jpg
+    autor: RomanM82
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice_(Ko%C5%99enov)_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana,_2023-08,_obr02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/de/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr02.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr02.jpg/960px-P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr02.jpg
+    rozmery: 2771×4167
+    datum: 2023-08-23 15:06:48
+    popis: Příchovice (Kořenov) - Maják Járy Cimrmana
+  - soubor: File:Příchovice (Kořenov) - Maják Járy Cimrmana, 2023-08, obr03.jpg
+    autor: RomanM82
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice_(Ko%C5%99enov)_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana,_2023-08,_obr03.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/3c/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr03.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr03.jpg/960px-P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr03.jpg
+    rozmery: 2546×3813
+    datum: 2023-08-23 15:06:58
+    popis: Příchovice (Kořenov) - Maják Járy Cimrmana
+  - soubor: File:Příchovice (Kořenov) - Maják Járy Cimrmana, 2023-08, obr04.jpg
+    autor: RomanM82
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice_(Ko%C5%99enov)_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana,_2023-08,_obr04.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/b/b1/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr04.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr04.jpg/960px-P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_Maj%C3%A1k_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr04.jpg
+    rozmery: 4608×3072
+    datum: 2023-08-23 15:24:05
+    popis: Příchovice (Kořenov) - Maják Járy Cimrmana
+  - soubor: File:Příchovice (Kořenov) - pohled z rozhledny Járy Cimrmana, 2023-08,
+      obr01.jpg
+    autor: RomanM82
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice_(Ko%C5%99enov)_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana,_2023-08,_obr01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/8/82/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr01.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr01.jpg/960px-P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr01.jpg
+    rozmery: 4263×2848
+    datum: 2023-08-23 15:15:11
+    popis: Příchovice (Kořenov) - pohled z rozhledny Járy Cimrmana
+  - soubor: File:Příchovice (Kořenov) - pohled z rozhledny Járy Cimrmana, 2023-08,
+      obr02.jpg
+    autor: RomanM82
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice_(Ko%C5%99enov)_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana,_2023-08,_obr02.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/2/26/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr02.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr02.jpg/960px-P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr02.jpg
+    rozmery: 3200×2144
+    datum: 2023-08-23 15:15:11
+    popis: Příchovice (Kořenov) - pohled z rozhledny Járy Cimrmana
+  - soubor: File:Příchovice (Kořenov) - pohled z rozhledny Járy Cimrmana, 2023-08,
+      obr03.jpg
+    autor: RomanM82
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice_(Ko%C5%99enov)_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana,_2023-08,_obr03.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/f/fa/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr03.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr03.jpg/960px-P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_pohled_z_rozhledny_J%C3%A1ry_Cimrmana%2C_2023-08%2C_obr03.jpg
+    rozmery: 3993×2659
+    datum: 2023-08-23 15:17:16
+    popis: Příchovice (Kořenov) - pohled z rozhledny Járy Cimrmana
+  - soubor: File:Příchovice (Kořenov) - rozhledna Járy Cimrmana, pohled na východ,
+      2023-08, obr01.jpg
+    autor: RomanM82
+    licence: CC BY-SA 4.0
+    stranka: https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADchovice_(Ko%C5%99enov)_-_rozhledna_J%C3%A1ry_Cimrmana,_pohled_na_v%C3%BDchod,_2023-08,_obr01.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/d/d1/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_rozhledna_J%C3%A1ry_Cimrmana%2C_pohled_na_v%C3%BDchod%2C_2023-08%2C_obr01.jpg
+    nalezeno: fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/4.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_rozhledna_J%C3%A1ry_Cimrmana%2C_pohled_na_v%C3%BDchod%2C_2023-08%2C_obr01.jpg/960px-P%C5%99%C3%ADchovice_%28Ko%C5%99enov%29_-_rozhledna_J%C3%A1ry_Cimrmana%2C_pohled_na_v%C3%BDchod%2C_2023-08%2C_obr01.jpg
+    rozmery: 4608×3072
+    datum: 2023-08-23 15:17:26
+    popis: Příchovice (Kořenov) - rozhledna Járy Cimrmana, pohled na východ
+  - soubor: File:Rozhledna Maják Járy Cimrmana.jpg
+    autor: Wikihoust
+    licence: CC BY-SA 3.0
+    stranka: https://commons.wikimedia.org/wiki/File:Rozhledna_Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/3/3e/Rozhledna_Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg
+    nalezeno: kategorie + fulltext
+    licenceUrl: https://creativecommons.org/licenses/by-sa/3.0
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rozhledna_Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg/960px-Rozhledna_Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg
+    rozmery: 1000×662
+    datum: 2013-07-28 11:38:33
+    popis: Rozhledna Maják Járy Cimrmana Příchovice (Kořenov)
+  - soubor: File:Vstupenka na Maják Járy Cimrmana.jpg
+    autor: Emited by U Čápa Příchovice s.r.o. Scanned by ŠJů ( cs:ŠJů )
+    licence: Public domain
+    stranka: https://commons.wikimedia.org/wiki/File:Vstupenka_na_Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg
+    original: https://upload.wikimedia.org/wikipedia/commons/e/e6/Vstupenka_na_Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg
+    nalezeno: kategorie + fulltext
+    nahled: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Vstupenka_na_Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg/960px-Vstupenka_na_Maj%C3%A1k_J%C3%A1ry_Cimrmana.jpg
+    rozmery: 962×1558
+    datum: 2013-07-27
+    popis: Entrance ticket of the Jára Cimrman museum and observation tower in
+      Příchovice, Jablonec nad Nisou District.

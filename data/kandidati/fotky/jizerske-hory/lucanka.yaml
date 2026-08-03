@@ -1,5 +1,5 @@
-# Lučanka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-02)
-# Zdroj: geosearch 300 m okolo GPS chaty + Category:Lučanka + fulltext „Lučanka" (namespace File) na commons.wikimedia.org
+# Horská chata Lučanka — kandidátní FOTKY z Wikimedia Commons (DATA-02, dotaz 2026-08-03)
+# Zdroj: geosearch 300 m okolo GPS chaty + Category:Horská chata Lučanka + fulltext „Horská chata Lučanka" (namespace File) na commons.wikimedia.org
 # Licenční síto: jen CC0 / CC BY / CC BY-SA / public domain (NC a ND vyřazeny už tady).
 # POZOR na nálezy s původem jen `fulltext`: jde o shodu jména v názvu/popisu souboru,
 # ne o geotag u chaty — před převzetím ověřit na stránce souboru, že je to tento objekt.
@@ -8,10 +8,10 @@
 
 chata: lucanka
 oblast: jizerske-hory
-nazevChaty: Lučanka
+nazevChaty: Horská chata Lučanka
 zdroj: "Wikimedia Commons API (geosearch + kategorie + fulltext), profil chaty:
-  kandidát DATA-01"
-checked: 2026-08-02
+  data/chaty"
+checked: 2026-08-03
 fotky:
   - soubor: File:Lučanka zima.jpg
     autor: Chata-Lučanka
