@@ -1,0 +1,81 @@
+# F1 · Vizuální kontrola ŽIVÉHO STAGINGU (dev.turistickechaty.cz).
+#
+# Uzavírá „zbývá: vizuální kontrola nad reálnými daty na stagingu",
+# které se táhne fázemi F1b/F1c/F1e/F1f — sandbox denních sessions na
+# staging nedosáhne, Actions ano (precedent F0-07). Nefotí se CI build,
+# ale SKUTEČNÝ nasazený web: to, co vidí návštěvník.
+#
+# Snímky → docs/kontroly/f1-staging/ (commit [skip ci]; docs/** deploy
+# nespouští). Porovnání s design/handoff-f1/screenshots/ dělá hlavní
+# session / Michal.
+#
+# Spouštění: ručně, nebo pushem tohoto workflow / skriptu (první běh
+# se tak spustí rovnou commitem, bez klikání).
+name: 'F1: vizualni kontrola stagingu'
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/vizualni-kontrola-staging-f1.yml'
+      - 'scripts/ci/screenshot-staging-f1.mjs'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vizualni-kontrola-staging-f1
+  cancel-in-progress: true
+
+jobs:
+  snimky:
+    name: Snimky stagingu (den/noc/mobil)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Chromium pro Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Staging musi zit (jinak nema co fotit)
+        run: |
+          for i in $(seq 1 10); do
+            curl -sf -o /dev/null https://dev.turistickechaty.cz/api/health && exit 0
+            sleep 3
+          done
+          echo '::error::Staging neodpovida na /api/health — kontrola nema co fotit.'
+          exit 1
+
+      - name: Snimky sablon F1 (den / noc / mobil)
+        run: node scripts/ci/screenshot-staging-f1.mjs
+
+      - name: Artifact se snimky
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: f1-staging-snimky
+          path: docs/kontroly/f1-staging/
+          if-no-files-found: error
+
+      - name: Commit snimku do docs/kontroly/f1-staging/
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/kontroly/f1-staging
+          if git diff --cached --quiet; then
+            echo 'Snimky beze zmeny - nic ke commitu.'
+            exit 0
+          fi
+          git commit -m 'docs: snimky F1 sablon ze zive stagingu (z Actions) [skip ci]'
+          git pull --rebase origin main
+          git push origin main
