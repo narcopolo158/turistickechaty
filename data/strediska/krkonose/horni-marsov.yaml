@@ -19,9 +19,36 @@ overeniLokace:
 vychoziBody:
   - nazev: Horní Maršov
 
+# Ruční próza má přednost před řádky z katalogu DATA-06 (jak-se-sem-dostat.ts).
+# Vlak se záměrně nevyplňuje: zdroj o železnici mlčí — řádek složený
+# z mapových dat (nejbližší stanice z katalogu) je poctivější.
+doprava:
+  bus: >-
+    Do obce jezdí autobus z Prahy-Černého Mostu, z Trutnova a Pece pod
+    Sněžkou.
+  auto: >-
+    Autem od Trutnova po silnici č. 296 přes Mladé Buky a Svobodu nad Úpou;
+    po téže silnici se dá dojet i od Pece pod Sněžkou. Parkuje se na
+    parkovišti u Bertholdova náměstí.
+overeniDoprava:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/horni-marsov/ (načteno 3. 8. 2026): „Do obce jezdí
+    autobus z Prahy-Černého Mostu, z Trutnova a Pece pod Sněžkou.", „Autem
+    od Trutnova po silnici č. 296 přes Mladé Buky a Svobodu nad Úpou. Po
+    stejné silnici dojedete do Horního Maršova i od Pece pod Sněžkou.",
+    parkování „Na parkovišti u Bertholdova náměstí." O železnici zdroj
+    mlčí — řádek Vlakem zůstává z katalogu DATA-06.
+  verified: false
+  checked: '2026-08-03'
+
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
-  nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
+  nebo střediska). Fotka střediska se dohledává
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
-  Doprava 2. 8. 2026 NEDOLOŽENA: oficiální web obce (hornimarsov.cz) nese jen úřední aktuality a stránka svazku Východní Krkonoše o dopravě nic strukturního neříká — nedomýšlet, zkusit příště jinde.
+  Doprava: 2. 8. 2026 nedoložena (hornimarsov.cz jen úřední aktuality,
+  svazek Východní Krkonoše nic strukturního — „zkusit příště jinde").
+  → DOLOŽENO 3. 8. 2026 (hlavní session, 2h blok): „jinde" = oficiální
+  portál svazku region-krkonose.cz, týž vydavatel, kterého už používáme
+  u lanovek — bus + auto + parkoviště, viz overeniDoprava.

@@ -10,18 +10,48 @@ oblast: krkonose
 
 lat: 50.6520957
 lng: 15.6558321
+# Výška obce z oficiálního portálu svazku (ověření proti ČÚZK dle zadání
+# F1a zůstává otevřené).
+vyskaObce: 641
 overeniLokace:
   source: >-
-    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+    GPS: OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška obce: oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/dolni-dvur/ (načteno 3. 8. 2026): „Horská obec
+    Dolní Dvůr se rozkládá v nadmořské výšce 641 m." — ověření proti ČÚZK
+    (zadání F1a) zůstává otevřené.
   verified: false
-  checked: '2026-07-28'
+  checked: '2026-08-03'
 
 vychoziBody:
   - nazev: Dolní Dvůr
 
+# Ruční próza má přednost před řádky z katalogu DATA-06 (jak-se-sem-dostat.ts).
+# Vlak a bus se záměrně nevyplňují: zdroj o nich mlčí — řádky složené
+# z mapových dat (nejbližší stanice/zastávky z katalogu) jsou poctivější.
+doprava:
+  auto: >-
+    Od Vrchlabí po silnici č. 14, v obci Lánov odbočka na Dolní Dvůr.
+    Parkuje se u ski areálu Luisino údolí zdarma, jinak s ohleduplností
+    volně v obci.
+overeniDoprava:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/dolni-dvur/ (načteno 3. 8. 2026): „Od Vrchlabí
+    o silnici č. 14, v obci Lánov odbočka na Dolní Dvůr." [sic — „o
+    silnici" je překlep zdroje, míněno „po silnici"], parkování „Ski areál
+    Luisino údolí zdarma, s ohleduplností volně v obci." O železnici ani
+    autobusu zdroj nic neříká — řádky zůstávají z katalogu DATA-06.
+  verified: false
+  checked: '2026-08-03'
+
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
-  nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
+  Doplnit z doložených zdrojů: perex (oficiální web obce
+  nebo střediska). Fotka střediska se dohledává
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
-  Doprava 2. 8. 2026 NEDOLOŽENA: na oficiálním webu obce (dolnidvur.cz) se nepodařilo najít nic strukturního o parkování ani dopravě.
+  Doprava: 2. 8. 2026 nedoložena (dolnidvur.cz nic strukturního).
+  → DOLOŽENO 3. 8. 2026 (hlavní session, 2h blok) z oficiálního portálu
+  svazku region-krkonose.cz — auto + parkování + výška obce 641 m
+  (tamtéž); vlak/bus dál poctivě z katalogu DATA-06.
