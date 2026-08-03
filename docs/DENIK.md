@@ -11,6 +11,21 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+> **MANDÁT PRO NEJBLIŽŠÍ SESSION (zapsala hlavní session 3. 8. ~11:55
+> na pokyn Michala) — po převzetí přepiš řádek „PŘEVZATO" níže na
+> „PŘEVZATO: [datum a čas]" a blok tu nech:** pracuj **~2 HODINY
+> V KUSE** (ne standardních ~30 minut); rozděl si práci na menší
+> dokončené kroky a průběžně pushuj (push = deploy na staging, CI musí
+> projít). **Jizerskou frontu kandidátů přeskoč** — stojí na
+> Michalových ručních rozhodnutích (Barbora, Mirsk, rokVzniku Proseče,
+> výšky nástupů, fotky v adminu, telefonáty). Vezmi dle pořadí
+> backlogu: **DATA-25** (audit klíče turistické minulosti nad drženými
+> kandidáty a vyřazenými), pak **F1-IMPL** (šablony dle
+> design/handoff-f1). Odrazové místo = blok 6 níže. Na konci: řádný
+> zápis (co hotovo, kde končíš, čím navázat) + otázky pro Michala.
+>
+> PŘEVZATO: zatím ne.
+
 ## 2026-08-03 (blok 6) — doběh DATA-02 zpracován: fotky pro oba nové profily
 
 DATA-02 (spustil Michal) doběhlo — 159 YAML, nové nabídky pro Černou
