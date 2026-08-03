@@ -56,6 +56,25 @@ text:
   i stravování. Kapacitu lůžek ani otvírací dobu neuvádí, proto je tu nenajdete.
 - 'Web se v pramenech liší: OpenStreetMap i výpis známkových míst vedou chatasmedava.cz, katalog
   smedava.com. Zapsali jsme adresu, kterou nesou dva prameny ze tří, a rozpor přiznáváme.'
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/horska-chata-smedava.yaml
+# (32 kandidátů): záběr pojmenovaný přímo po chatě, geotag 7 m, největší rozlišení (5756×3837).
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/7/7a/Chata_Sm%C4%9Bdava_-_panoramio.jpg
+    alt: Horská chata Smědava
+    typ: soucasna # hero záběr profilu
+    autor: Martin Cígler
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Chata_Sm%C4%9Bdava_-_panoramio.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor
+        Martin Cígler, popis „Chata Smědava"), export DATA-02
+        z 2. 8. 2026; geotag 7 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
 - popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Horská chata Smědava“ (výška,
     obec, provoz, ubytování, stravování)

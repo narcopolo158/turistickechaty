@@ -112,6 +112,26 @@ text:
     turistického portálu — na letopočtech i nadmořské výšce se oba
     shodují; polohu nese OpenStreetMap. Redakce zatím nic neověřila
     vlastním dotazem ani návštěvou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/stepanka.yaml
+# (41 kandidátů): záběr pojmenovaný přímo po rozhledně (foto kulturní památky), geotag 5 m, na výšku 3456×4608.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/2/2b/%C5%A0t%C4%9Bp%C3%A1nka.JPG
+    alt: Rozhledna Štěpánka na vrcholu Hvězda
+    typ: soucasna # hero záběr profilu
+    datovani: 14. 8. 2014 # datum snímku z Commons
+    autor: Kateřina Beránková
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:%C5%A0t%C4%9Bp%C3%A1nka.JPG
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 4.0, autor
+        Kateřina Beránková, popis „This is a photo of a cultural monument of the Czech Republic"), export DATA-02
+        z 2. 8. 2026; geotag 5 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Web obce Kořenov — zahájení 1847 (kníže Rohan), dokončení 1892,

@@ -58,6 +58,25 @@ text:
 - OpenStreetMap objekt vede s tagem horské chaty. Kapacitu lůžek ani otvírací dobu žádný z
   pramenů nenese, takže je tu nenajdete.
 - Souřadnice jsou z OpenStreetMap a v terénu je nikdo neověřil.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/chatka-gorzystow.yaml
+# (23 kandidátů): záběr pojmenovaný přímo po chatě, geotag 19 m, 4000×2248.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/3/38/Chatka_G%C3%B3rzyst%C3%B3w_-_panoramio.jpg
+    alt: Chatka Górzystów na Hale Izerské
+    typ: soucasna # hero záběr profilu
+    autor: krysi@
+    licence: cc-by
+    licencePoznamka: CC BY 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Chatka_G%C3%B3rzyst%C3%B3w_-_panoramio.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY 3.0, autor
+        krysi@, popis „Chatka Górzystów"), export DATA-02
+        z 2. 8. 2026; geotag 19 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
 - popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Chatka Górzystów“ (výška, obec,
     provoz, ubytování, stravování)

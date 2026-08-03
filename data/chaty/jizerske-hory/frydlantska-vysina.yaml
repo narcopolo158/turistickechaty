@@ -118,6 +118,26 @@ text:
     Údaje na téhle stránce pocházejí z oficiálního webu města
     a z celostátního turistického portálu; polohu nese OpenStreetMap.
     Redakce zatím nic neověřila vlastním dotazem ani návštěvou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/frydlantska-vysina.yaml
+# (68 kandidátů): záběr pojmenovaný přímo po rozhledně (stav 2020), geotag 44 m, na šířku 4032×3024.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/0/0e/Fr%C3%BDdlantsk%C3%A1_v%C3%BD%C5%A1ina_-_rozhledna_na_Resslerov%C4%9B_vrchu_%28t%C3%A9%C5%BE_U_Rozhledny%2C_399_m%29_%28stav_duben_2020%29_%281%29.jpg
+    alt: Rozhledna Frýdlantská výšina na Resselově vrchu
+    typ: soucasna # hero záběr profilu
+    datovani: 7. 4. 2020 # datum snímku z Commons
+    autor: MartinVeselka
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Fr%C3%BDdlantsk%C3%A1_v%C3%BD%C5%A1ina_-_rozhledna_na_Resslerov%C4%9B_vrchu_(t%C3%A9%C5%BE_U_Rozhledny,_399_m)_(stav_duben_2020)_(1).jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 4.0, autor
+        MartinVeselka, popis „Frýdlantská výšina - rozhledna na Resslerově vrchu (též U Rozhledny, 399 m) (stav duben 20"), export DATA-02
+        z 2. 8. 2026; geotag 44 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Oficiální web města Frýdlant — 399 m n. m., 21 m, 100 žulových

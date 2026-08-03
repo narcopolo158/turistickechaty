@@ -11,6 +11,42 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-03 (blok 3) — jizerské hero fotky: 18 profilů přiřazeno redakčně, důvod rozdílu vysvětlen
+
+**Otázka Michala:** proč mají krkonošské profily fotky a jizerské ani
+jednu? **Odpověď: změna procesu uprostřed práce.** Krkonošských 43 hero
+fotek jsem vybíral redakčně 20.–28. 7. (vždy s komentářem proč).
+31. 7. v noci vzniklo na Michalovo zadání prostředí výběru fotek
+v adminu — a od té chvíle jsem výběr nechával frontě adminu. Jenže
+všechny jizerské profily vznikly PO té změně (30. 7.–3. 8.), takže
+oblast zůstala celá bez fotek; napravit to šlo stejným redakčním
+postupem jako v Krkonoších.
+
+**Přiřazeno 18/24 profilů** — jen jasné případy (kandidát jmenuje
+objekt v názvu/popisu, geosearch/kategorie, licence CC z Commons API,
+u každého komentář proč): Bártlova bouda (7 m), Chata Jizerka (jediný
+záběr budovy — noční), Chatka Górzystów, Frýdlantská výšina, Smědava
+(7 m), Hubertka, Krömerovka (pohled od jihu — bližší kandidáti jsou
+cedule a mrazák), Nad Prosečí, Pešákovna, Královka (záběr věže — bližší
+kandidáti jsou výhledy Z věže), Liberecká výšina (1 m, CC0, 11/2025),
+Maják J. C. (celek z 89 m), Slovanka (věž, ne chata), Šámalova chata,
+Stóg Izerski (3 m), Orle (2 m), Štěpánka (5 m, foto kulturní památky),
+Tanvaldský Špičák (bez geotagu — kategorie + popis „Celkový pohled na
+rozhlednu"; geosearch kandidáti věž nezabírají).
+
+**Nepřiřazeno 6 — a proč:** Hřebínek (kandidáti jsou HOMONYMUM — důlní
+drážka „Hřebínek" 30 km daleko u Srbské; pozor v adminu!), Knajpa
+(žádný kandidát nezabírá kiosek), Lučanka (1 kandidát bez geosearch),
+Sky Walk (3 slabé bez geosearch), Černá studnice a Prezidentská chata
+(bez nabídky — DATA-02 běželo před jejich vznikem). Všech 6 zůstává
+frontě adminu; `verified: false` u všech 18 přiřazených — očima na
+stránce souboru je zkontroluje Michal (pak přepnout).
+
+**Příště:** ① DATA-02 znovu (jizerske-hory… běží nad celým korpusem)
+— přinese nabídky pro Černou studnici; ② stažení fotek proběhne až
+seedem na Forge (sandbox na upload.wikimedia nemůže — známé omezení);
+③ fronta dle odpovědí k Barboře a Mirsku.
+
 ## 2026-08-03 (blok 2) — výšky pro Jizerky žijí; jižní katalog vroutován bez ztráty výšek; Mirsk je otázka rozsahu
 
 **Ranní bezobslužná session zkontrolována** — triáž tří kandidátů

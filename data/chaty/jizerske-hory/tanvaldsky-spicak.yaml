@@ -118,6 +118,26 @@ text:
     města a z horského listingu; rok otevření i výška věže se shodují
     ve dvou pramenech, polohu nese OpenStreetMap. Redakce zatím nic
     neověřila vlastním dotazem ani návštěvou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/tanvaldsky-spicak.yaml
+# (34 kandidátů): popis „Celkový pohled na rozhlednu na Tanvaldském Špičáku", CC0; BEZ geotagu — nalezeno přes kategorii Commons a fulltext, geosearch kandidáti věž nezabírají.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/e/e5/Rozhledna_na_Tanvaldsk%C3%A9m_%C5%A0pi%C4%8D%C3%A1ku_1.jpg
+    alt: Rozhledna na Tanvaldském Špičáku
+    typ: soucasna # hero záběr profilu
+    datovani: 25. 8. 2021 # datum snímku z Commons
+    autor: Klimcik
+    licence: cc0
+    licencePoznamka: CC0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Rozhledna_na_Tanvaldsk%C3%A9m_%C5%A0pi%C4%8D%C3%A1ku_1.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC0, autor
+        Klimcik, popis „Celkový pohled na rozhlednu na Tanvaldském Špičáku"), export DATA-02
+        z 2. 8. 2026; bez geotagu (kategorie Commons + fulltext).
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Vlastní web rozhledny — „18m rozhledna s restaurací", tradiční

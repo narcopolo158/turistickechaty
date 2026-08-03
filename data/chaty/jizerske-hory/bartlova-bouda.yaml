@@ -61,6 +61,26 @@ text:
   proto ji na webu neuvádíme.
 - Nadmořská výška 520 m je z katalogu; je to připomínka, že do průvodce objekty nezařazuje
   výška, ale role na trase a občerstvení pro veřejnost.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/bartlova-bouda.yaml
+# (12 kandidátů): záběr pojmenovaný přímo po boudě, geotag 7 m, série WMCZ (DSLR), největší rozlišení mezi záběry budovy.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/6/61/B%C3%ADl%C3%BD_Potok%2C_B%C3%A1rtlova_bouda_%281%29.jpg
+    alt: Bártlova bouda v Bílém Potoce
+    typ: soucasna # hero záběr profilu
+    datovani: 30. 8. 2012 # datum snímku z Commons
+    autor: Jan Polák
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:B%C3%ADl%C3%BD_Potok,_B%C3%A1rtlova_bouda_(1).jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor
+        Jan Polák, popis „This photograph was taken with a DSLR from WMCZs Camera grant ."), export DATA-02
+        z 2. 8. 2026; geotag 7 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
 - popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Bártlova bouda“ (výška, obec,
     provoz, ubytování, stravování)

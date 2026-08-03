@@ -58,6 +58,26 @@ text:
 - OpenStreetMap objekt vede s tagem horské chaty a jako provozovatele uvádí PTTK, tedy polský
   turistický svaz. To s katalogem souhlasí.
 - Nadmořskou výšku 1060 m uvádí katalog. Kapacitu lůžek ani otvírací dobu nemáme doloženou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/schronisko-na-stogu-izerskim.yaml
+# (68 kandidátů): záběr pojmenovaný přímo po schronisku, geotag 3 m, 3872×2576.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/3/31/Schronisko_g%C3%B3rskie_na_Stogu_Izerskim.JPG
+    alt: Schronisko na Stogu Izerskim
+    typ: soucasna # hero záběr profilu
+    datovani: 25. 8. 2014 # datum snímku z Commons
+    autor: Katarzyna Kochańska
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0 pl
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Schronisko_g%C3%B3rskie_na_Stogu_Izerskim.JPG
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0 pl, autor
+        Katarzyna Kochańska, popis „Obszar specjalnej ochrony ptaków Góry Izerskie."), export DATA-02
+        z 2. 8. 2026; geotag 3 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
 - popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Na Stogu Izerskim“ (výška,
     obec, provoz, ubytování, stravování)

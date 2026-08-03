@@ -54,6 +54,26 @@ text:
   lůžek nenese, takže ji neuvádíme.
 - OpenStreetMap objekt vede s tagem horské chaty; souřadnice jsou odtud a v terénu je nikdo
   neověřil.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/pesakovna.yaml
+# (14 kandidátů): záběr pojmenovaný přímo po chatě (2023), geotag 22 m, 3486×2616.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/e/e3/Jizerka_%28Ko%C5%99enov%29_-_chata_Pe%C5%A1%C3%A1kovna%2C_2023-08%2C_obr01.jpg
+    alt: Chata Pešákovna v osadě Jizerka
+    typ: soucasna # hero záběr profilu
+    datovani: 20. 8. 2023 # datum snímku z Commons
+    autor: RomanM82
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Jizerka_(Ko%C5%99enov)_-_chata_Pe%C5%A1%C3%A1kovna,_2023-08,_obr01.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 4.0, autor
+        RomanM82, popis „Jizerka (Kořenov) - chata Pešákovna."), export DATA-02
+        z 2. 8. 2026; geotag 22 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
 - popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Pešákovna“ (výška, obec, provoz,
     ubytování, stravování)

@@ -111,6 +111,26 @@ text:
     metry. Provozovatele prameny nejmenují. Redakce zatím nic neověřila
     vlastním dotazem ani návštěvou — a u kasy důvěry snad ani není co
     dodávat: berte si, plaťte, nezklamte ji.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/lesni-bar-kromerova-bouda.yaml
+# (50 kandidátů): celkový pohled na boudu („od jihu"), geotag 13 m, 5184×3456; bližší kandidáti zabírají interiér a cedule.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/d/d7/Protr%C5%BEen%C3%A1_p%C5%99ehrada%2C_Kr%C3%B6merova_bouda_%282%29.jpg
+    alt: Krömerova bouda u Protržené přehrady — pohled od jihu
+    typ: soucasna # hero záběr profilu
+    datovani: 23. 9. 2016 # datum snímku z Commons
+    autor: Jan Polák
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Protr%C5%BEen%C3%A1_p%C5%99ehrada,_Kr%C3%B6merova_bouda_(2).jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor
+        Jan Polák, popis „Pohled na Krömerovu boudu od jihu."), export DATA-02
+        z 2. 8. 2026; geotag 13 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Treking.cz — útulna a Lesní bar (otevření 22. 6. 2015, samoobsluha

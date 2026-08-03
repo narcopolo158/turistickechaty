@@ -114,6 +114,26 @@ text:
     a z krajského katalogu; na výšce kopce se prameny shodují, výšku
     samotné věže žádný z nich neuvádí, takže ji neuvádíme ani my.
     Redakce zatím nic neověřila vlastním dotazem ani návštěvou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/rozhledna-kralovka.yaml
+# (25 kandidátů): záběr věže („Tower Královka…"), geotag 28 m, na výšku 2725×3629; bližší kandidáti jsou výhledy Z věže.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/8/82/Kralovka_in_2011_%284%29.jpg
+    alt: Rozhledna Královka na kopci Nekras
+    typ: soucasna # hero záběr profilu
+    datovani: 2. 10. 2011 # datum snímku z Commons
+    autor: Huhulenik
+    licence: cc-by
+    licencePoznamka: CC BY 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Kralovka_in_2011_(4).jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY 3.0, autor
+        Huhulenik, popis „Tower Královka near Janov nad Nisou and Bedřichov"), export DATA-02
+        z 2. 8. 2026; geotag 28 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Kudy z nudy — rok 1907, kopec Nekras (859 m), otvírací doba věže

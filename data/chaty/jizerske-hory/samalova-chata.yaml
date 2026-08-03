@@ -57,6 +57,25 @@ text:
   což potvrzuje charakter, ne rozsah služeb.
 - Před cestou doporučujeme provoz ověřit přímo u chaty; redakce ho vlastním dotazem zatím
   nepotvrdila.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/samalova-chata.yaml
+# (40 kandidátů): popis „Šámalova chata with restaurant", geotag 16 m; rozlišení 1600×900 je nejmenší z výběru, ale záběr jmenuje přímo chatu.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/d/de/Samalova_Chata_Nova_Louka_U_Bedrichova_A.jpg
+    alt: Šámalova chata na Nové Louce
+    typ: soucasna # hero záběr profilu
+    autor: Mojmir Churavy
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Samalova_Chata_Nova_Louka_U_Bedrichova_A.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 4.0, autor
+        Mojmir Churavy, popis „Šámalova chata with restaurant - a secluded place (Šámalova louka) named after the First R"), export DATA-02
+        z 2. 8. 2026; geotag 16 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
 - popis: Externí katalog turistických chat ČR/SK 2026 — řádek „Šámalova chata“ (výška, obec,
     provoz, ubytování, stravování)

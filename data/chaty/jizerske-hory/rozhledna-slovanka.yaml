@@ -120,6 +120,26 @@ text:
     Údaje na téhle stránce pocházejí z oficiálního webu města, které
     rozhlednu vlastní, a z webu chaty; polohu nese OpenStreetMap.
     Redakce zatím nic neověřila vlastním dotazem ani návštěvou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/rozhledna-slovanka.yaml
+# (6 kandidátů): popis „Lookout tower at the top of Slovanka", geotag 17 m, na výšku 2592×3456; druhý kandidát zabírá chatu, profil je věže.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/d/dd/Slovanka_%28Jizersk%C3%A9_hory%29%2C_rozhledna.jpg
+    alt: Rozhledna Slovanka
+    typ: soucasna # hero záběr profilu
+    datovani: 27. 3. 2016 # datum snímku z Commons
+    autor: Juandev
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Slovanka_(Jizersk%C3%A9_hory),_rozhledna.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor
+        Juandev, popis „Lookout tower at the top of Slovanka. Jablonec nad Nisou District, Czech Republic."), export DATA-02
+        z 2. 8. 2026; geotag 17 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Oficiální web města Lučany nad Nisou — otevření 14. 8. 1887

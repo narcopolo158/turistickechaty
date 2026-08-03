@@ -113,6 +113,25 @@ text:
     a z místopisného průvodce; polohu nese OpenStreetMap. Vlastní web
     chaty se nám zatím nepodařilo načíst. Redakce nic neověřila
     vlastním dotazem ani návštěvou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/nad-proseci.yaml
+# (11 kandidátů): záběr pojmenovaný přímo po rozhledně (2021), geotag 12 m; rozlišení menší (1541×1100), ale jediný celkový záběr věže.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/0/01/Rozhledna_Nad_Proseci_2021.jpg
+    alt: Rozhledna Nad Prosečí
+    typ: soucasna # hero záběr profilu
+    autor: Mojmir Churavy
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Rozhledna_Nad_Proseci_2021.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 4.0, autor
+        Mojmir Churavy, popis „Nad Prosečí (observation tower Prosečský hřeben); tourist lodge Proseč, address: Pod Prose"), export DATA-02
+        z 2. 8. 2026; geotag 12 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Krajský portál liberecky-kraj.cz — chata 1928 (Hübner), rozhledna

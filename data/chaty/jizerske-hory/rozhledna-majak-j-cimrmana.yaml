@@ -118,6 +118,25 @@ text:
     a z turistického portálu; polohu nese OpenStreetMap. Vlastní web
     areálu U Čápa se nám zatím nepodařilo načíst. Redakce nic neověřila
     vlastním dotazem ani návštěvou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/rozhledna-majak-j-cimrmana.yaml
+# (50 kandidátů): celkový záběr majáku z odstupu (89 m geotag), 3191×2363; bližší kandidáti zabírají detaily (lana, vstup, výhledy).
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/6/64/Maj%C3%A1k_J%C3%A1ry_Cimrmana_%2802%29.jpg
+    alt: Maják Járy Cimrmana v Příchovicích
+    typ: soucasna # hero záběr profilu
+    autor: ŠJů ( cs:ŠJů )
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Maj%C3%A1k_J%C3%A1ry_Cimrmana_(02).jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor
+        ŠJů ( cs:ŠJů ), popis „Kořenov -Příchovice, Jablonec nad Nisou District , Liberec Region , the Czech Republic . O"), export DATA-02
+        z 2. 8. 2026; geotag 89 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Krajský portál liberecky-kraj.cz — nápis na věži (vztyčen 2013),

@@ -123,6 +123,26 @@ text:
     nese OpenStreetMap. Redakce zatím nic neověřila vlastním dotazem
     ani návštěvou — a protože jde převážně o jediný pramen, berte
     letopočty s touto výhradou.
+# Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/rozhledna-liberecka-vysina.yaml
+# (50 kandidátů): záběr pojmenovaný přímo po objektu, geotag 1 m, čerstvý (11/2025), CC0, největší rozlišení (5424×8144).
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/3/35/Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_01.jpg
+    alt: Liberecká výšina — věž s výletní restaurací nad Libercem
+    typ: soucasna # hero záběr profilu
+    datovani: 29. 11. 2025 # datum snímku z Commons
+    autor: Leonhard Lenz
+    licence: cc0
+    licencePoznamka: CC0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Libereck%C3%A1_v%C3%BD%C5%A1ina_Liberec-Star%C3%BD_Harcov_2025-11-29_01.jpg
+    prevzatoDne: '2026-08-03'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC0, autor
+        Leonhard Lenz, popis „Liberecká výšina in Liberec-Starý Harcov."), export DATA-02
+        z 2. 8. 2026; geotag 1 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-03'
 zdroje:
   - popis: >-
       Vlastní web areálu — stavba 1900–1901 (Heinrich von Liebieg),
