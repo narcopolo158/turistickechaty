@@ -26,8 +26,57 @@ Formát zápisu (nejnovější nahoře):
 >
 > PŘEVZATO: 3. 8. ~12:05 **hlavní session** (Michal v UI nevidí tlačítko
 > ručního spuštění úlohy — server-side routina bez ovládání v aplikaci;
-> blok proto odpracuje hlavní session sama). Plánované sessions (6:30)
-> mandát už NEpřebírají.
+> blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
+> mandát už NEpřebírají. Výsledek: blok 7 níže.
+
+## 2026-08-03 (blok 7, hlavní session — 2h mandát) — zbytky F1 z dosahu sandboxu: CI kontrola stagingu + doprava/výška/perex středisek
+
+**Kontext:** mandát zněl DATA-25 → F1-IMPL, jenže obě položky jsou
+fakticky vyčerpané (DATA-25: 3 případy na Michalovi; F1-IMPL: všech
+6 fází odškrtnuto). Zbývaly přesně věci, na které denní sessions
+nedosáhnou — a hlavní session na ně dosáhne: staging zvenku (přes
+Actions) a WebFetch dohledávky.
+
+**Hotovo (5 commitů):**
+
+1. **CI vizuální kontrola ŽIVÉHO stagingu** —
+   `.github/workflows/vizualni-kontrola-staging-f1.yml` +
+   `scripts/ci/screenshot-staging-f1.mjs`: 14 snímků šablon F1
+   (homepage/katalog/pohoří/středisko × den/noc/mobil, reduced-motion,
+   fullPage) z dev.turistickechaty.cz → commit do
+   `docs/kontroly/f1-staging/`. Uzavírá „zbývá: vizuální kontrola na
+   stagingu" z F1b/F1c/F1e/F1f. **STAV: první běh se ~30 min po pushi
+   neohlásil commitem — ověřit v Actions (sandbox na API nedosáhne);
+   případný červený krok viz workflow.**
+2. **Doprava středisek (F1e zbytek):** Horní Maršov (bus z Prahy-ČM /
+   Trutnova / Pece + auto po 296 + parkoviště u Bertholdova náměstí)
+   a Dolní Dvůr (auto od Vrchlabí po č. 14, parkování Luisino údolí /
+   volně s ohleduplností) — obojí z oficiálního portálu svazku
+   region-krkonose.cz s citacemi. Černý Důl a Przesieka = poctivě
+   zdokumentované slepé uličky (kam sáhnout v ručním běhu).
+3. **První doložená výška obce:** Dolní Dvůr `vyskaObce: 641`
+   (region-krkonose.cz, doslovná citace; ČÚZK ověření zůstává
+   otevřené) → **dva hlídací testy z 1. 8. spadly PODLE PLÁNU**
+   a přepsány na párová pravidla: výška jen s dokladem ve zdroji
+   lokace (+ zmínkou ČÚZK), elevation v JSON-LD právě u středisek
+   s výškou.
+4. **Perex středisek odemčen:** kolekce Strediska neměla pro perex
+   blok ověření (proto ho nikdo nemohl poctivě vyplnit) → doplněn
+   `overeniPerex` + typy; první perex: Horní Maršov (citace portálu
+   svazku + fakt katalogu).
+5. **Přiznaná chyba procesu:** commit b6e77d0 odešel s tsc chybou
+   v testu (expect message `string | null`) — řetěz příkazů negatoval
+   tsc gate. Oprava c120799 push hned vzápětí; deploy b6e77d0 mohl
+   být červený (předchozí release na serveru tím netrpí). PONAUČENÍ:
+   tsc/lint VŽDY jako tvrdá brána před commitem, ne přes `;`.
+
+**Pro Michala / další session:** (a) Actions: zkontrolovat běh
+„F1: vizualni kontrola stagingu" (a případně ho spustit ručně) +
+zelenost deployů b6e77d0→c120799; (b) až dorazí snímky do
+docs/kontroly/f1-staging/, porovnat proti design/handoff-f1/
+screenshots/ a zapsat verdikt; (c) ČÚZK výšky obcí dál otevřené
+(první ne-ČÚZK doklad má DD); (d) Černý Důl doprava: zkusit
+region-krkonose.cz/cerny-dul/ v ručním běhu.
 
 ## 2026-08-03 (blok 6) — doběh DATA-02 zpracován: fotky pro oba nové profily
 
