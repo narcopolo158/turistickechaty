@@ -47,12 +47,17 @@ overeniObcerstveni:
   checked: '2026-08-02'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Rozhledna je přístupná v provozních hodinách sousední Chaty Proseč
+  (po–čt 11–21, pá a so 11–22, ne 11–20).
 overeniProvoz:
   source: >-
-    Otvírací dobu věže ani chaty dosažitelné prameny neuvádějí —
-    nezapisuje se.
+    Infocentrum Jablonec nad Nisou (jablonec.com, načteno 3. 8. 2026):
+    o rozhledně „Přístupná je v provozních hodinách sousední Chaty
+    Proseč."; hodiny chaty „po – čt 11 – 21 h pá, so 11 – 22 h ne
+    11 – 20 h".
   verified: false
-  checked: '2026-08-02'
+  checked: '2026-08-03'
 
 # ── Historie ──────────────────────────────────────────────────────────────
 rokVzniku: 1932
@@ -106,8 +111,9 @@ text:
     Chata vedle věže má pohnutější osud: 3. července 2003 ji kdosi
     zapálil, zničená byla z velké části a nakonec šla k zemi. Nová
     kamenná chata se otevřela v roce 2018 a její restaurace dnes
-    nabízí padesát míst uvnitř a dvacet na venkovní terase. Otvírací
-    dobu věže ani chaty prameny neuvádějí — před cestou si ji ověřte.
+    nabízí padesát míst uvnitř a dvacet na venkovní terase. A platí tu
+    stejné pravidlo jako na Rašovce: rozhledna má otevřeno, když má
+    otevřeno chata — denně, v týdnu do devíti večer.
   - >-
     Údaje na téhle stránce pocházejí z krajského turistického katalogu
     a z místopisného průvodce; polohu nese OpenStreetMap. Vlastní web
@@ -150,9 +156,10 @@ interniPoznamky: >-
   2. 8. 2026 (mandát „pracuj dál samostatně"). Klíč: rozhledna
   s restaurací (rozhodnutí 28. 7. 2026).
 
-  NEDOLOŽENO (nezapsáno): otvírací doba, kontakty, rok současné podoby
-  věže po opravách. ROZPOR výšky věže 28 × 24 m — nerozhodnuto, próza
-  přiznává. Chata Proseč je samostatný kandidát (chata-prosec.yaml) —
-  povýšit zvlášť, až se načte chataprosec.cz (2. 8. timeout). Odložená
+  NEDOLOŽENO (nezapsáno): kontakty věže, rok současné podoby věže po
+  opravách. Otvírací doba doplněna 3. 8. 2026 z infocentra Jablonec
+  (vazba na hodiny Chaty Proseč). ROZPOR výšky věže 28 × 24 m — nerozhodnuto, próza
+  přiznává. Chata Proseč povýšena 3. 8. 2026 jako samostatný profil
+  (chata-prosec). Odložená
   Tyršova chata (_odlozeno.yaml) má souřadnice také na Prosečském
   hřebeni — při zpracování hřebene jako podoblasti prověřit spolu.

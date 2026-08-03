@@ -11,6 +11,33 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-03 (blok 5) — Chata Proseč povýšena (č. 18); rozhledna vedle dostala otvíračku
+
+**Povýšení č. 18 — Chata Proseč** (586 m, Prosečský hřeben). Vlastní
+web 3× timeoutoval, ale jablonecké infocentrum dalo všechno: restaurace
+50 míst (a chlouba — tatarák), 2 apartmá / 8 lůžek, hodiny po–čt 11–21
+/ pá–so 11–22 / ne 11–20, kontakty, 586 m. Krajský portál nese historii
+(1928 Hübner, žhářství 2003, nová kamenná 2018). Veřejná restaurace
+doložena dvěma prameny — NENÍ případ Barbora. `rokVzniku` nevyplněn:
+kontinuita 1928 × budova 2018, rozhodne Michal.
+
+**Bonus pro sousedku:** infocentrum říká „Přístupná je v provozních
+hodinách sousední Chaty Proseč" — rozhledna Nad Prosečí tak dostala
+doloženou otvírací dobu (vzor Rašovka) a próza i poznámky jsou
+aktualizované.
+
+**Routing popáté: 25/25 chat, 51 přístupů, 0 k ruční kontrole**
+(Chata Proseč z Lukášova 1,05 km). Výšky 47 nezměněných přístupů
+přeneseny ze zálohy (shoda geometrie) — bez výšek jsou jen 4 nové
+nástupy (2× Černá studnice, 2× Chata Proseč) → doplní je příští klik
+„výšky". DATA-02 běží (spustil Michal) — po doběhu vybrat fotku Černé
+studnici a Chatě Proseč.
+
+**Příště:** ① po doběhu DATA-02 fotky pro nové profily; ② krátký klik
+„DATA-06: výšky přístupů" (jizerske-hory) — 4 nástupy; ③ odpovědi
+Michala: Barbora (vzor pro Javor/Korynu a 40+), Mirsk (rozsah),
+rokVzniku Proseče (1928 × 2018).
+
 ## 2026-08-03 (blok 4) — seed na Forge jede sám; Javor a Koryna dovershovány k Barbořině otázce
 
 **Otázka Michala k seedu na Forge: nic dělat nemusí.** Workflow

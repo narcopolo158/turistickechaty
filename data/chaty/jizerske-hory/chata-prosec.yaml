@@ -1,0 +1,149 @@
+# Chata Proseč — profil povýšen z kandidáta DATA-01 (OSM) triáží
+# 3. 8. 2026. Vlastní web chataprosec.cz třikrát timeoutoval — profil
+# stojí na infocentru Jablonec (jablonec.com) a krajském portálu, próza
+# to přiznává. Dvojice s rozhlednou Nad Prosečí (23 m vedle, profil
+# nad-proseci). Vše verified: false.
+
+nazev: Chata Proseč
+slug: chata-prosec
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: jizerske-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7420261
+lng: 15.129928
+vyska: 586
+obec: Jablonec nad Nisou
+overeniLokace:
+  source: >-
+    Infocentrum Jablonec nad Nisou (jablonec.com, načteno 3. 8. 2026):
+    adresa „Pod Prosečí 5313/8 46804, Jablonec nad Nisou" (část Proseč
+    nad Nisou), „Stojí v nadmořské výšce 586 m." Rozhledna Nad Prosečí
+    stojí 23 m vedle (její stanoviště vede jiný pramen v 593 m — malý
+    rozdíl dvou stanovišť/pramenů se nerozhoduje). GPS: OpenStreetMap
+    https://www.openstreetmap.org/node/7847415253 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 8
+pokoje:
+  - typ: 2 apartmá
+overeniNocleh:
+  source: >-
+    Infocentrum Jablonec (načteno 3. 8. 2026): „Druhy pokojů: apartmá",
+    „Počet apartmá: 2", „Celková kapacita lůžek: 8". Jediný pramen,
+    verified:false.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Infocentrum Jablonec (načteno 3. 8. 2026): „stylové restaurace
+    s kapacitou 50 míst, která nabízí mimo jiné i v minulosti tolik
+    oblíbený místní tatarský biftek"; krajský portál liberecky-kraj.cz
+    (načteno 2. 8. 2026): restaurace 50 míst, venkovní terasa 20.
+    Nezávisle OSM: restaurace 23 m od rozhledny.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Po–čt 11–21, pá a so 11–22, ne 11–20.
+kontakty:
+  telefon: '+420 604 520 550'
+  email: info@chataprosec.cz
+  web: https://www.chataprosec.cz/
+overeniProvoz:
+  source: >-
+    Infocentrum Jablonec (načteno 3. 8. 2026): „po – čt 11 – 21 h pá,
+    so 11 – 22 h ne 11 – 20 h"; telefon +420 604 520 550, e-mail
+    info@chataprosec.cz, web chataprosec.cz (vlastní web se ze sandboxu
+    2.–3. 8. nepodařilo načíst — obsah necitován). Tamtéž o rozhledně:
+    „Přístupná je v provozních hodinách sousední Chaty Proseč."
+  verified: false
+  checked: '2026-08-03'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1928
+    udalost: Konrád Hübner postavil na hřebeni turistickou chatu
+  - rok: 2003
+    udalost: >-
+      Chata byla 3. července zapálena, z velké části zničena a nakonec
+      zbourána
+  - rok: 2018
+    udalost: Otevřena dnešní nově postavená kamenná chata
+overeniHistorie:
+  source: >-
+    Krajský portál liberecky-kraj.cz (načteno 2. 8. 2026): „Roku 1928
+    postavil Konrád Hübner na hřebeni turistickou chatu"; „Roku 2003
+    byla chata zapálena, z velké části zničena a nakonec zbourána.
+    V roce 2018 byla otevřena nově postavená kamenná chata."
+    Místopisy.cz: požár 3. 7. 2003. rokVzniku se nevyplňuje — dnešní
+    budova je z 2018, jméno a role nesou kontinuitu od 1928; rozhodne
+    Michal, který letopočet má pole nést.
+  verified: false
+  checked: '2026-08-03'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná chata s restaurací na Prosečském hřebeni mezi Jabloncem
+  a Libercem (586 m), přímo vedle rozhledny z roku 1932 — ta má
+  otevřeno, když má otevřeno chata. Nástupkyně Hübnerovy chaty z roku
+  1928, která v roce 2003 vyhořela; dnešní budova stojí od roku 2018.
+  Padesát míst uvnitř, terasa venku a osm lůžek ve dvou apartmá.
+text:
+  - >-
+    Chata Proseč je mladší polovina učebnicové dvojice věž + chata na
+    Prosečském hřebeni: turistickou chatu tu roku 1928 postavil Konrád
+    Hübner a o čtyři roky později k ní jablonecký Horský spolek
+    přistavěl kamennou rozhlednu, která stojí dodnes.
+  - >-
+    Hübnerova chata ale současnosti nedožila — 3. července 2003 ji
+    kdosi zapálil a zbytky šly k zemi. Dnešní kamenná chata se otevřela
+    v roce 2018 a roli křižovatky hřebene převzala i s bonusem:
+    rozhledna vedle je přístupná právě v jejích provozních hodinách.
+  - >-
+    Restaurace nabízí padesát míst uvnitř a dvacet na venkovní terase —
+    a místní se rádi pochlubí tatarským biftekem. Otevřeno je denně:
+    v týdnu do devíti, v pátek a sobotu do deseti, v neděli do osmi
+    večer. Přespat se tu dá v osmi lůžkách ve dvou apartmá.
+  - >-
+    Údaje na téhle stránce pocházejí z jabloneckého infocentra
+    a z krajského katalogu; vlastní web chaty se nám zatím nepodařilo
+    načíst, takže z něj necitujeme. Polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Infocentrum Jablonec nad Nisou — adresa Pod Prosečí 5313/8, 586 m,
+      restaurace 50 míst a tatarák, 2 apartmá / 8 lůžek, otvírací doba,
+      kontakty, rozhledna přístupná v hodinách chaty (načteno 3. 8. 2026)
+    url: https://www.jablonec.com/ubytovani/chata-prosec/
+  - popis: >-
+      Krajský portál liberecky-kraj.cz — chata 1928 (Hübner), žhářství
+      2003, nová kamenná chata 2018, restaurace 50 + terasa 20 (načteno
+      2. 8. 2026)
+    url: https://www.liberecky-kraj.cz/dr-cs/8417-rozhledna-prosec.html
+  - popis: Vlastní web chaty (2.–3. 8. 2026 nedostupný ze sandboxu)
+    url: https://www.chataprosec.cz/
+  - popis: OpenStreetMap (GPS chaty; ODbL)
+    url: https://www.openstreetmap.org/node/7847415253
+interniPoznamky: >-
+  Povýšeno z data/kandidati/jizerske-hory/chata-prosec.yaml triáží
+  3. 8. 2026 (mandát „pracuj dál samostatně"). Klíč: veřejná restaurace
+  doložená dvěma prameny — NENÍ případ Barbora (tam je stravování jen
+  pro ubytované). Dvojice s profilem nad-proseci (rozhledna) — jeho
+  otvírací doba doplněna z téhož pramene.
+
+  NEDOLOŽENO (nezapsáno): rokVzniku (kontinuita 1928 × budova 2018 —
+  rozhodne Michal), provozovatel, sezónnost. Vlastní web přečíst, až
+  bude dosažitelný (3× timeout).
