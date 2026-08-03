@@ -1,10 +1,10 @@
 {
   "zdroj": "OpenStreetMap Overpass (place town/village + aerialway=station + railway station/halt, okno Jizerské hory) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)",
   "stavOsmDat": {
-    "cz": "2026-07-31",
-    "pl": "2026-07-31"
+    "cz": "2026-08-03",
+    "pl": "2026-08-03"
   },
-  "pocetBodu": 729,
+  "pocetBodu": 971,
   "body": [
     {
       "osmId": 7875421126,
@@ -480,6 +480,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 304751245,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/304751245",
+      "nazev": "Bohdalovice",
+      "typ": "obec",
+      "lat": 50.7161716,
+      "lng": 15.3256386,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 14045169376,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/14045169376",
@@ -542,6 +553,17 @@
       "typ": "zastavka",
       "lat": 50.7743645,
       "lng": 15.0846262,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4912842337,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4912842337",
+      "nazev": "Budovatelů",
+      "typ": "zastavka",
+      "lat": 50.7252445,
+      "lng": 15.1617556,
       "vyska": null,
       "zeme": "cz"
     },
@@ -674,6 +696,17 @@
       "typ": "zastavka",
       "lat": 50.9658839,
       "lng": 15.1193326,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5061883920,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5061883920",
+      "nazev": "Buřany",
+      "typ": "zastavka",
+      "lat": 50.7046381,
+      "lng": 15.4469876,
       "vyska": null,
       "zeme": "cz"
     },
@@ -1019,6 +1052,72 @@
       "zeme": "cz"
     },
     {
+      "osmId": 5167405839,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5167405839",
+      "nazev": "Divadlo",
+      "typ": "zastavka",
+      "lat": 50.725013,
+      "lng": 15.166447,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 10904863704,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/10904863704",
+      "nazev": "Divadlo",
+      "typ": "zastavka",
+      "lat": 50.7248817,
+      "lng": 15.1666423,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1587363549,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587363549",
+      "nazev": "Dlouhý Most",
+      "typ": "obec",
+      "lat": 50.710673,
+      "lng": 15.0769449,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8237547904,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8237547904",
+      "nazev": "Dlouhý Most, dolní ves",
+      "typ": "zastavka",
+      "lat": 50.715817,
+      "lng": 15.0672689,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8237547908,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8237547908",
+      "nazev": "Dlouhý Most, u pekárny",
+      "typ": "zastavka",
+      "lat": 50.7089159,
+      "lng": 15.0797405,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4000505931,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4000505931",
+      "nazev": "Dlouhý Most, U tří lip",
+      "typ": "zastavka",
+      "lat": 50.7117281,
+      "lng": 15.0760053,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 11676639010,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/11676639010",
@@ -1072,6 +1171,50 @@
       "lng": 15.3196117,
       "vyska": 617,
       "zeme": "pl"
+    },
+    {
+      "osmId": 1587389432,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587389432",
+      "nazev": "Dolní Černá Studnice",
+      "typ": "obec",
+      "lat": 50.7042192,
+      "lng": 15.2106075,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548824,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548824",
+      "nazev": "Dolní Černá Studnice",
+      "typ": "zastavka",
+      "lat": 50.7066938,
+      "lng": 15.2078904,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548873,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548873",
+      "nazev": "Dolní Černá Studnice",
+      "typ": "zastavka",
+      "lat": 50.7061861,
+      "lng": 15.2082997,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 3578784513,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/3578784513",
+      "nazev": "Dolní Dobrá Voda",
+      "typ": "obec",
+      "lat": 50.7011794,
+      "lng": 15.1563664,
+      "vyska": null,
+      "zeme": "cz"
     },
     {
       "osmId": 289746889,
@@ -1140,6 +1283,28 @@
       "zeme": "cz"
     },
     {
+      "osmId": 357478253,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/357478253",
+      "nazev": "Dolní stanice lanovky Leitner",
+      "typ": "lanovka",
+      "lat": 50.7230061,
+      "lng": 15.3905641,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 363260657,
+      "osmTyp": "way",
+      "url": "https://www.openstreetmap.org/way/363260657",
+      "nazev": "Dolní stanice lanovky Pizár",
+      "typ": "lanovka",
+      "lat": 50.72676,
+      "lng": 15.3902541,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 173700804,
       "osmTyp": "way",
       "url": "https://www.openstreetmap.org/way/173700804",
@@ -1191,6 +1356,17 @@
       "typ": "zastavka",
       "lat": 50.730504,
       "lng": 15.0549828,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 6092104140,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/6092104140",
+      "nazev": "Doubí obilná",
+      "typ": "zastavka",
+      "lat": 50.7299991,
+      "lng": 15.0543541,
       "vyska": null,
       "zeme": "cz"
     },
@@ -1910,6 +2086,61 @@
       "zeme": "cz"
     },
     {
+      "osmId": 1394185967,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1394185967",
+      "nazev": "Hamrska",
+      "typ": "obec",
+      "lat": 50.7190121,
+      "lng": 15.2914702,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 304751244,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/304751244",
+      "nazev": "Haratice",
+      "typ": "obec",
+      "lat": 50.7028622,
+      "lng": 15.3231145,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4843185494,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4843185494",
+      "nazev": "Haratice",
+      "typ": "zastavka",
+      "lat": 50.7020115,
+      "lng": 15.327431,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5794172460,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5794172460",
+      "nazev": "Haratice",
+      "typ": "zastavka",
+      "lat": 50.7021005,
+      "lng": 15.3275292,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8270180911,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8270180911",
+      "nazev": "Haratice, U lipky",
+      "typ": "zastavka",
+      "lat": 50.7041699,
+      "lng": 15.3370628,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 2535889955,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/2535889955",
@@ -2317,6 +2548,28 @@
       "zeme": "cz"
     },
     {
+      "osmId": 10723656020,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/10723656020",
+      "nazev": "Hlavní nádraží",
+      "typ": "zastavka",
+      "lat": 50.7213111,
+      "lng": 15.1610282,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141861,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141861",
+      "nazev": "Hlavní nádraží (výstupní)",
+      "typ": "zastavka",
+      "lat": 50.7215157,
+      "lng": 15.1609126,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 621380576,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/621380576",
@@ -2379,6 +2632,28 @@
       "typ": "obec",
       "lat": 50.7643612,
       "lng": 15.2147239,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5437737373,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5437737373",
+      "nazev": "Horní náměstí",
+      "typ": "zastavka",
+      "lat": 50.7271228,
+      "lng": 15.1706211,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8849263061,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8849263061",
+      "nazev": "Horní náměstí",
+      "typ": "zastavka",
+      "lat": 50.7269369,
+      "lng": 15.1703744,
       "vyska": null,
       "zeme": "cz"
     },
@@ -2482,6 +2757,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 357478257,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/357478257",
+      "nazev": "Horní stanice lanovky Leitner",
+      "typ": "lanovka",
+      "lat": 50.7298455,
+      "lng": 15.3787702,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 574964226,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/574964226",
@@ -2489,6 +2775,17 @@
       "typ": "lanovka",
       "lat": 50.7306942,
       "lng": 15.382601,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4699710948,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4699710948",
+      "nazev": "hostinec U lípy",
+      "typ": "zastavka",
+      "lat": 50.7217807,
+      "lng": 15.1884667,
       "vyska": null,
       "zeme": "cz"
     },
@@ -2599,6 +2896,171 @@
       "typ": "zastavka",
       "lat": 50.749179,
       "lng": 15.1582575,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 306541404,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/306541404",
+      "nazev": "Jablonec nad Jizerou",
+      "typ": "zeleznice",
+      "lat": 50.7004019,
+      "lng": 15.4351326,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1587333281,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587333281",
+      "nazev": "Jablonec nad Jizerou",
+      "typ": "obec",
+      "lat": 50.70344,
+      "lng": 15.4295952,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 598562323,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/598562323",
+      "nazev": "Jablonec nad Jizerou, dům kultury",
+      "typ": "zastavka",
+      "lat": 50.7060453,
+      "lng": 15.4273846,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 598562325,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/598562325",
+      "nazev": "Jablonec nad Jizerou, dům kultury",
+      "typ": "zastavka",
+      "lat": 50.706102,
+      "lng": 15.4275411,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 598562322,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/598562322",
+      "nazev": "Jablonec nad Jizerou, Hybler",
+      "typ": "zastavka",
+      "lat": 50.7001205,
+      "lng": 15.433096,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 367757554,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/367757554",
+      "nazev": "Jablonec nad Jizerou, náměstí",
+      "typ": "zastavka",
+      "lat": 50.7031865,
+      "lng": 15.429363,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 6049575889,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/6049575889",
+      "nazev": "Jablonec nad Jizerou, náměstí",
+      "typ": "zastavka",
+      "lat": 50.7032604,
+      "lng": 15.429605,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8018314466,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8018314466",
+      "nazev": "Jablonec nad Jizerou, železniční stanice",
+      "typ": "zastavka",
+      "lat": 50.7002708,
+      "lng": 15.4346467,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1587389785,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587389785",
+      "nazev": "Jablonec nad Nisou",
+      "typ": "obec",
+      "lat": 50.7240899,
+      "lng": 15.1710958,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5646229921,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5646229921",
+      "nazev": "Jablonec nad Nisou",
+      "typ": "zeleznice",
+      "lat": 50.7209403,
+      "lng": 15.1607891,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 309382440,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/309382440",
+      "nazev": "Jablonec nad Nisou centrum",
+      "typ": "zeleznice",
+      "lat": 50.7208682,
+      "lng": 15.1738149,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 309382584,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/309382584",
+      "nazev": "Jablonec nad Nisou dolní nádraží",
+      "typ": "zeleznice",
+      "lat": 50.7263561,
+      "lng": 15.1492816,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 309382407,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/309382407",
+      "nazev": "Jablonec nad Nisou zastávka",
+      "typ": "zeleznice",
+      "lat": 50.7204118,
+      "lng": 15.1854044,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4912522149,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4912522149",
+      "nazev": "Jablonec nad Nisou, autobusové nádraží",
+      "typ": "zastavka",
+      "lat": 50.7228347,
+      "lng": 15.1739181,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5200543941,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5200543941",
+      "nazev": "Jablonec nad Nisou, autobusové nádraží",
+      "typ": "zastavka",
+      "lat": 50.7227679,
+      "lng": 15.1734885,
       "vyska": null,
       "zeme": "cz"
     },
@@ -2955,6 +3417,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 5406901546,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5406901546",
+      "nazev": "Jarní",
+      "typ": "zastavka",
+      "lat": 50.7218532,
+      "lng": 15.1828875,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 621381423,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/621381423",
@@ -2999,6 +3472,50 @@
       "zeme": "cz"
     },
     {
+      "osmId": 958755218,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/958755218",
+      "nazev": "Jeřmanice",
+      "typ": "zeleznice",
+      "lat": 50.7074139,
+      "lng": 15.0863996,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 6855336577,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/6855336577",
+      "nazev": "Jeřmanice, Javorník",
+      "typ": "zastavka",
+      "lat": 50.7025989,
+      "lng": 15.0762389,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 6855336578,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/6855336578",
+      "nazev": "Jeřmanice, Javorník",
+      "typ": "zastavka",
+      "lat": 50.702487,
+      "lng": 15.0761772,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141888,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141888",
+      "nazev": "Jeřmanice, křižovatka",
+      "typ": "zastavka",
+      "lat": 50.7023029,
+      "lng": 15.0928822,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 603228283,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/603228283",
@@ -3006,6 +3523,28 @@
       "typ": "zastavka",
       "lat": 50.7412324,
       "lng": 15.0687207,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141867,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141867",
+      "nazev": "Ještědská",
+      "typ": "zastavka",
+      "lat": 50.7208395,
+      "lng": 15.1582379,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141868,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141868",
+      "nazev": "Ještědská",
+      "typ": "zastavka",
+      "lat": 50.7207572,
+      "lng": 15.158608,
       "vyska": null,
       "zeme": "cz"
     },
@@ -3362,6 +3901,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 4817327448,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4817327448",
+      "nazev": "Kamenná",
+      "typ": "zastavka",
+      "lat": 50.7220536,
+      "lng": 15.1711772,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 1870584144,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/1870584144",
@@ -3472,6 +4022,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 4883997671,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4883997671",
+      "nazev": "Kino Radnice",
+      "typ": "zastavka",
+      "lat": 50.7249102,
+      "lng": 15.171307,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 11553397777,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/11553397777",
@@ -3479,6 +4040,127 @@
       "typ": "zastavka",
       "lat": 50.7688033,
       "lng": 15.0660579,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 7717246703,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246703",
+      "nazev": "klub Woko",
+      "typ": "zastavka",
+      "lat": 50.7270744,
+      "lng": 15.176245,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548840,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548840",
+      "nazev": "Kokonín, Horní Kokonín",
+      "typ": "zastavka",
+      "lat": 50.7048074,
+      "lng": 15.1797836,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548868,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548868",
+      "nazev": "Kokonín, Horní Kokonín",
+      "typ": "zastavka",
+      "lat": 50.704945,
+      "lng": 15.180529,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5777539978,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5777539978",
+      "nazev": "Kokonín, pošta",
+      "typ": "zastavka",
+      "lat": 50.7039478,
+      "lng": 15.1852353,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5777539979,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5777539979",
+      "nazev": "Kokonín, pošta",
+      "typ": "zastavka",
+      "lat": 50.7030266,
+      "lng": 15.1859171,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548836,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548836",
+      "nazev": "Kokonín, pošta",
+      "typ": "zastavka",
+      "lat": 50.7038721,
+      "lng": 15.1859141,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141876,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141876",
+      "nazev": "Kokonín, sokolovna",
+      "typ": "zastavka",
+      "lat": 50.7007717,
+      "lng": 15.1769766,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141878,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141878",
+      "nazev": "Kokonín, sokolovna",
+      "typ": "zastavka",
+      "lat": 50.7006379,
+      "lng": 15.1777112,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8273093278,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8273093278",
+      "nazev": "Koloniál",
+      "typ": "zastavka",
+      "lat": 50.729521,
+      "lng": 15.1574166,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8412764181,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8412764181",
+      "nazev": "Koloniál",
+      "typ": "zastavka",
+      "lat": 50.729289,
+      "lng": 15.1580022,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 10576414754,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/10576414754",
+      "nazev": "Komenského",
+      "typ": "zastavka",
+      "lat": 50.7240631,
+      "lng": 15.1674755,
       "vyska": null,
       "zeme": "cz"
     },
@@ -3791,6 +4473,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 8443548871,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548871",
+      "nazev": "Krkonošská",
+      "typ": "zastavka",
+      "lat": 50.7075799,
+      "lng": 15.1854275,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 692464427,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/692464427",
@@ -3868,6 +4561,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 4912575015,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4912575015",
+      "nazev": "Lázně",
+      "typ": "zastavka",
+      "lat": 50.7229377,
+      "lng": 15.1662301,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 1587363215,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/1587363215",
@@ -3919,6 +4623,17 @@
       "typ": "zastavka",
       "lat": 50.894501,
       "lng": 15.1939416,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 7717246725,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246725",
+      "nazev": "Lesní",
+      "typ": "zastavka",
+      "lat": 50.7187546,
+      "lng": 15.1781604,
       "vyska": null,
       "zeme": "cz"
     },
@@ -4007,6 +4722,39 @@
       "typ": "zastavka",
       "lat": 50.7722077,
       "lng": 15.0557224,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4914181753,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4914181753",
+      "nazev": "Liberecká",
+      "typ": "zastavka",
+      "lat": 50.7255483,
+      "lng": 15.1623079,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 9274918111,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/9274918111",
+      "nazev": "Liberecká",
+      "typ": "zastavka",
+      "lat": 50.7259032,
+      "lng": 15.1598553,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 7717246739,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246739",
+      "nazev": "Liliová",
+      "typ": "zastavka",
+      "lat": 50.7185698,
+      "lng": 15.1801296,
       "vyska": null,
       "zeme": "cz"
     },
@@ -4198,6 +4946,39 @@
       "zeme": "cz"
     },
     {
+      "osmId": 8443548854,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548854",
+      "nazev": "Malé Vrkoslavice",
+      "typ": "zastavka",
+      "lat": 50.7106064,
+      "lng": 15.1680998,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141872,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141872",
+      "nazev": "Malé Vrkoslavice, has. zbroj.",
+      "typ": "zastavka",
+      "lat": 50.7090135,
+      "lng": 15.1741554,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 6071498013,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/6071498013",
+      "nazev": "Mánesova",
+      "typ": "zastavka",
+      "lat": 50.7296311,
+      "lng": 15.181893,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 603228275,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/603228275",
@@ -4297,6 +5078,17 @@
       "zeme": "pl"
     },
     {
+      "osmId": 7717246748,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246748",
+      "nazev": "Milířová",
+      "typ": "zastavka",
+      "lat": 50.7203482,
+      "lng": 15.1846363,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 3235170334,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/3235170334",
@@ -4306,6 +5098,72 @@
       "lng": 15.2510027,
       "vyska": null,
       "zeme": "pl"
+    },
+    {
+      "osmId": 5325141870,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141870",
+      "nazev": "Mincovní",
+      "typ": "zastavka",
+      "lat": 50.7166145,
+      "lng": 15.1600644,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1209186724,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1209186724",
+      "nazev": "Minkovice",
+      "typ": "obec",
+      "lat": 50.7176255,
+      "lng": 15.0553284,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5888682610,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5888682610",
+      "nazev": "Minkovice statek",
+      "typ": "zastavka",
+      "lat": 50.7187184,
+      "lng": 15.0557987,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5888682611,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5888682611",
+      "nazev": "Minkovice statek",
+      "typ": "zastavka",
+      "lat": 50.7191353,
+      "lng": 15.0552387,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5888682612,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5888682612",
+      "nazev": "Minkovice železniční přejezd",
+      "typ": "zastavka",
+      "lat": 50.713501,
+      "lng": 15.054637,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 10576414755,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/10576414755",
+      "nazev": "Mírové náměstí",
+      "typ": "zastavka",
+      "lat": 50.7241114,
+      "lng": 15.1716981,
+      "vyska": null,
+      "zeme": "cz"
     },
     {
       "osmId": 2716747276,
@@ -4339,6 +5197,17 @@
       "lng": 15.4238136,
       "vyska": null,
       "zeme": "pl"
+    },
+    {
+      "osmId": 7717246710,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246710",
+      "nazev": "Mlýnská",
+      "typ": "zastavka",
+      "lat": 50.7248565,
+      "lng": 15.1762404,
+      "vyska": null,
+      "zeme": "cz"
     },
     {
       "osmId": 557955580,
@@ -4693,6 +5562,28 @@
       "zeme": "pl"
     },
     {
+      "osmId": 7717246757,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246757",
+      "nazev": "na Hutích",
+      "typ": "zastavka",
+      "lat": 50.7159707,
+      "lng": 15.1876585,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 7717246750,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246750",
+      "nazev": "na Hutích sklárna",
+      "typ": "zastavka",
+      "lat": 50.7180082,
+      "lng": 15.187747,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 1500534031,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/1500534031",
@@ -4814,6 +5705,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 4281267129,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4281267129",
+      "nazev": "náměstí Boženy Němcové",
+      "typ": "zastavka",
+      "lat": 50.725878,
+      "lng": 15.1859459,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 4831430100,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/4831430100",
@@ -4832,6 +5734,721 @@
       "typ": "zastavka",
       "lat": 50.7708461,
       "lng": 15.066201,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8499512378,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8499512378",
+      "nazev": "Nemocnice hl. vchod",
+      "typ": "zastavka",
+      "lat": 50.7296737,
+      "lng": 15.1596961,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5808184327,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5808184327",
+      "nazev": "Nemocniční",
+      "typ": "zastavka",
+      "lat": 50.7271425,
+      "lng": 15.1618537,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225047,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225047",
+      "nazev": "NM 1 Dlouhá",
+      "typ": "zastavka",
+      "lat": 50.7204801,
+      "lng": 15.1701178,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225056,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225056",
+      "nazev": "NM 10 Pivovarská",
+      "typ": "zastavka",
+      "lat": 50.7152518,
+      "lng": 15.1714517,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225057,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225057",
+      "nazev": "NM 11 Pivovarská",
+      "typ": "zastavka",
+      "lat": 50.7157876,
+      "lng": 15.1706346,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225058,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225058",
+      "nazev": "NM 12 Pivovarská",
+      "typ": "zastavka",
+      "lat": 50.7162698,
+      "lng": 15.169954,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225059,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225059",
+      "nazev": "NM 13 Pivovarská",
+      "typ": "zastavka",
+      "lat": 50.7167119,
+      "lng": 15.1685497,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225060,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225060",
+      "nazev": "NM 14 Pivovarská",
+      "typ": "zastavka",
+      "lat": 50.7167958,
+      "lng": 15.1665911,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225061,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225061",
+      "nazev": "NM 15 Střelecká",
+      "typ": "zastavka",
+      "lat": 50.7165218,
+      "lng": 15.1650896,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225062,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225062",
+      "nazev": "NM 16 Střelecká",
+      "typ": "zastavka",
+      "lat": 50.7172158,
+      "lng": 15.1653035,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225063,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225063",
+      "nazev": "NM 17 Střelecká",
+      "typ": "zastavka",
+      "lat": 50.7179339,
+      "lng": 15.165536,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225064,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225064",
+      "nazev": "NM 18 Střelecká",
+      "typ": "zastavka",
+      "lat": 50.7187639,
+      "lng": 15.1655803,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225065,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225065",
+      "nazev": "NM 19 Střelecká",
+      "typ": "zastavka",
+      "lat": 50.7192808,
+      "lng": 15.1654396,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225048,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225048",
+      "nazev": "NM 2 Dlouhá",
+      "typ": "zastavka",
+      "lat": 50.7193835,
+      "lng": 15.1705426,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225066,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225066",
+      "nazev": "NM 20 Pražská",
+      "typ": "zastavka",
+      "lat": 50.7195901,
+      "lng": 15.1647137,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225067,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225067",
+      "nazev": "NM 21 Pražská",
+      "typ": "zastavka",
+      "lat": 50.7191509,
+      "lng": 15.1640321,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225068,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225068",
+      "nazev": "NM 22 Pražská",
+      "typ": "zastavka",
+      "lat": 50.718429,
+      "lng": 15.1633118,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225069,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225069",
+      "nazev": "NM 23 Květinová",
+      "typ": "zastavka",
+      "lat": 50.7182218,
+      "lng": 15.164066,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225070,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225070",
+      "nazev": "NM 24 Květinová",
+      "typ": "zastavka",
+      "lat": 50.7178674,
+      "lng": 15.1668724,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225071,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225071",
+      "nazev": "NM 25 Květinová",
+      "typ": "zastavka",
+      "lat": 50.717815,
+      "lng": 15.167996,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225072,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225072",
+      "nazev": "NM 26 Květinová",
+      "typ": "zastavka",
+      "lat": 50.7176719,
+      "lng": 15.1691905,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225073,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225073",
+      "nazev": "NM 27 Revoluční",
+      "typ": "zastavka",
+      "lat": 50.7187985,
+      "lng": 15.1692202,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225074,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225074",
+      "nazev": "NM 28 Revoluční",
+      "typ": "zastavka",
+      "lat": 50.7172325,
+      "lng": 15.1694587,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225075,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225075",
+      "nazev": "NM 29 Revoluční",
+      "typ": "zastavka",
+      "lat": 50.7161047,
+      "lng": 15.1691006,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225049,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225049",
+      "nazev": "NM 3 Dlouhá",
+      "typ": "zastavka",
+      "lat": 50.7182141,
+      "lng": 15.1711671,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225076,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225076",
+      "nazev": "NM 30 Křížová",
+      "typ": "zastavka",
+      "lat": 50.7159572,
+      "lng": 15.1681341,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225077,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225077",
+      "nazev": "NM 31 Křížová",
+      "typ": "zastavka",
+      "lat": 50.7172596,
+      "lng": 15.1683155,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225078,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225078",
+      "nazev": "NM 32 Křížová",
+      "typ": "zastavka",
+      "lat": 50.7187969,
+      "lng": 15.1684171,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225079,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225079",
+      "nazev": "NM 33 V Aleji",
+      "typ": "zastavka",
+      "lat": 50.7194195,
+      "lng": 15.1673017,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225080,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225080",
+      "nazev": "NM 34 V Aleji",
+      "typ": "zastavka",
+      "lat": 50.718156,
+      "lng": 15.1670616,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225081,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225081",
+      "nazev": "NM 35 V Aleji",
+      "typ": "zastavka",
+      "lat": 50.7160446,
+      "lng": 15.1668645,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225082,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225082",
+      "nazev": "NM 36 Lesní stezka",
+      "typ": "zastavka",
+      "lat": 50.7179178,
+      "lng": 15.1786192,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225083,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225083",
+      "nazev": "NM 37 Lesní stezka",
+      "typ": "zastavka",
+      "lat": 50.7180004,
+      "lng": 15.1765783,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225084,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225084",
+      "nazev": "NM 38 Lesní stezka",
+      "typ": "zastavka",
+      "lat": 50.71793,
+      "lng": 15.1752634,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225085,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225085",
+      "nazev": "NM 39 Kokonínská",
+      "typ": "zastavka",
+      "lat": 50.7179152,
+      "lng": 15.1740298,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225050,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225050",
+      "nazev": "NM 4 Dlouhá",
+      "typ": "zastavka",
+      "lat": 50.7165582,
+      "lng": 15.1718329,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225086,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225086",
+      "nazev": "NM 40 Kokonínská",
+      "typ": "zastavka",
+      "lat": 50.7188012,
+      "lng": 15.1732945,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225087,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225087",
+      "nazev": "NM 41 Pod Hájem",
+      "typ": "zastavka",
+      "lat": 50.7192729,
+      "lng": 15.173409,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225088,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225088",
+      "nazev": "NM 42 Pod Hájem",
+      "typ": "zastavka",
+      "lat": 50.7197383,
+      "lng": 15.1752674,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225089,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225089",
+      "nazev": "NM 43 Pod Hájem",
+      "typ": "zastavka",
+      "lat": 50.7201143,
+      "lng": 15.1767461,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225090,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225090",
+      "nazev": "NM 44 Raisova",
+      "typ": "zastavka",
+      "lat": 50.7210124,
+      "lng": 15.1750357,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225091,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225091",
+      "nazev": "NM 45 Raisova",
+      "typ": "zastavka",
+      "lat": 50.7205863,
+      "lng": 15.1738285,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225092,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225092",
+      "nazev": "NM 46 Táboritská",
+      "typ": "zastavka",
+      "lat": 50.7200526,
+      "lng": 15.1736886,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225093,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225093",
+      "nazev": "NM 47 Táboritská",
+      "typ": "zastavka",
+      "lat": 50.7194883,
+      "lng": 15.1742597,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225094,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225094",
+      "nazev": "NM 48 Táboritská",
+      "typ": "zastavka",
+      "lat": 50.7188573,
+      "lng": 15.1748866,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225095,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225095",
+      "nazev": "NM 49 Táboritská",
+      "typ": "zastavka",
+      "lat": 50.7183396,
+      "lng": 15.1754231,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225051,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225051",
+      "nazev": "NM 5 Dlouhá",
+      "typ": "zastavka",
+      "lat": 50.7159526,
+      "lng": 15.1720857,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225096,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225096",
+      "nazev": "NM 50 Zelená",
+      "typ": "zastavka",
+      "lat": 50.7187877,
+      "lng": 15.1760972,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225039,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225039",
+      "nazev": "NM 51 Petřínská",
+      "typ": "zastavka",
+      "lat": 50.7118833,
+      "lng": 15.1708165,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225040,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225040",
+      "nazev": "NM 52 Sokolovská",
+      "typ": "zastavka",
+      "lat": 50.7087849,
+      "lng": 15.1716944,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225041,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225041",
+      "nazev": "NM 53 Sokolovská",
+      "typ": "zastavka",
+      "lat": 50.708569,
+      "lng": 15.1699776,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225042,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225042",
+      "nazev": "NM 54 Sokolovská",
+      "typ": "zastavka",
+      "lat": 50.7083074,
+      "lng": 15.1678064,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225043,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225043",
+      "nazev": "NM 55 Sokolovská",
+      "typ": "zastavka",
+      "lat": 50.7080744,
+      "lng": 15.1610269,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225044,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225044",
+      "nazev": "NM 56 Dobrá Voda",
+      "typ": "zastavka",
+      "lat": 50.707144,
+      "lng": 15.1576806,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225045,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225045",
+      "nazev": "NM 57 Dobrá Voda",
+      "typ": "zastavka",
+      "lat": 50.7074768,
+      "lng": 15.1589207,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225052,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225052",
+      "nazev": "NM 6 Dlouhá",
+      "typ": "zastavka",
+      "lat": 50.7154656,
+      "lng": 15.1725425,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225053,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225053",
+      "nazev": "NM 7 Dlouhá",
+      "typ": "zastavka",
+      "lat": 50.7147589,
+      "lng": 15.1731071,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225054,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225054",
+      "nazev": "NM 8 Pivovarská",
+      "typ": "zastavka",
+      "lat": 50.7147047,
+      "lng": 15.172365,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 13755225055,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/13755225055",
+      "nazev": "NM 9 Pivovarská",
+      "typ": "zastavka",
+      "lat": 50.7149716,
+      "lng": 15.1719476,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 304751272,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/304751272",
+      "nazev": "Nová Ves nad Nisou",
+      "typ": "obec",
+      "lat": 50.7257683,
+      "lng": 15.2141311,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5312443976,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5312443976",
+      "nazev": "Nová Ves nad Nisou",
+      "typ": "zeleznice",
+      "lat": 50.7235494,
+      "lng": 15.1942529,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548822,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548822",
+      "nazev": "Nová Ves nad Nisou, dolní ves",
+      "typ": "zastavka",
+      "lat": 50.7240411,
+      "lng": 15.2052337,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548823,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548823",
+      "nazev": "Nová Ves nad Nisou, ObÚ",
+      "typ": "zastavka",
+      "lat": 50.7252046,
+      "lng": 15.2137584,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548821,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548821",
+      "nazev": "Nová Ves nad Nisou, u Nisy",
+      "typ": "zastavka",
+      "lat": 50.7240182,
+      "lng": 15.2259833,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548870,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548870",
+      "nazev": "Nová Ves nad Nisou, u Nisy",
+      "typ": "zastavka",
+      "lat": 50.7241087,
+      "lng": 15.2254369,
       "vyska": null,
       "zeme": "cz"
     },
@@ -4979,6 +6596,28 @@
       "zeme": "cz"
     },
     {
+      "osmId": 4359969416,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4359969416",
+      "nazev": "Novoveská",
+      "typ": "zastavka",
+      "lat": 50.7236301,
+      "lng": 15.1862765,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5196686739,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5196686739",
+      "nazev": "Novoveská",
+      "typ": "zastavka",
+      "lat": 50.7233712,
+      "lng": 15.1861417,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 3280159368,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/3280159368",
@@ -4997,6 +6636,28 @@
       "typ": "obec",
       "lat": 50.7842412,
       "lng": 15.3332703,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5844600700,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5844600700",
+      "nazev": "Obchodní akademie",
+      "typ": "zastavka",
+      "lat": 50.7258714,
+      "lng": 15.1708293,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5844600701,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5844600701",
+      "nazev": "Obchodní akademie",
+      "typ": "zastavka",
+      "lat": 50.7252767,
+      "lng": 15.1719534,
       "vyska": null,
       "zeme": "cz"
     },
@@ -5221,6 +6882,72 @@
       "zeme": "cz"
     },
     {
+      "osmId": 1587332826,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587332826",
+      "nazev": "Paseky nad Jizerou",
+      "typ": "obec",
+      "lat": 50.7251192,
+      "lng": 15.3996026,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8230349893,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8230349893",
+      "nazev": "Paseky nad Jizerou, papírna",
+      "typ": "zastavka",
+      "lat": 50.7230197,
+      "lng": 15.4150636,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8230349867,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8230349867",
+      "nazev": "Paseky nad Jizerou, pila",
+      "typ": "zastavka",
+      "lat": 50.7183011,
+      "lng": 15.4047467,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8440238337,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8440238337",
+      "nazev": "Paseky nad Jizerou, rozcestí",
+      "typ": "zastavka",
+      "lat": 50.7126301,
+      "lng": 15.3823178,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8440238378,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8440238378",
+      "nazev": "Paseky nad Jizerou, střed",
+      "typ": "zastavka",
+      "lat": 50.7230987,
+      "lng": 15.3979357,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8440238376,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8440238376",
+      "nazev": "Paseky nad Jizerou, V koutě",
+      "typ": "zastavka",
+      "lat": 50.7212385,
+      "lng": 15.3908694,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 1709142901,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/1709142901",
@@ -5287,6 +7014,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 4889569281,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4889569281",
+      "nazev": "Petra Bezruče",
+      "typ": "zastavka",
+      "lat": 50.7285151,
+      "lng": 15.1634066,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 1500534046,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/1500534046",
@@ -5305,6 +7043,50 @@
       "typ": "zastavka",
       "lat": 50.7316323,
       "lng": 15.1784407,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 26024353,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/26024353",
+      "nazev": "Plavy",
+      "typ": "zeleznice",
+      "lat": 50.7015958,
+      "lng": 15.317366,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1587389474,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587389474",
+      "nazev": "Plavy",
+      "typ": "obec",
+      "lat": 50.7046611,
+      "lng": 15.3180054,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 343568229,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/343568229",
+      "nazev": "Plavy, křižovatka",
+      "typ": "zastavka",
+      "lat": 50.7053147,
+      "lng": 15.3177901,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 367759124,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/367759124",
+      "nazev": "Plavy, železniční zastávka",
+      "typ": "zastavka",
+      "lat": 50.7008134,
+      "lng": 15.3181426,
       "vyska": null,
       "zeme": "cz"
     },
@@ -5331,6 +7113,17 @@
       "zeme": "pl"
     },
     {
+      "osmId": 4701184376,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4701184376",
+      "nazev": "Počátky",
+      "typ": "zastavka",
+      "lat": 50.7031568,
+      "lng": 15.4176755,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 1074748280,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/1074748280",
@@ -5342,6 +7135,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 1798089272,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1798089272",
+      "nazev": "Pod pivovarem",
+      "typ": "zastavka",
+      "lat": 50.7143976,
+      "lng": 15.1709378,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 4695248061,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/4695248061",
@@ -5349,6 +7153,17 @@
       "typ": "zastavka",
       "lat": 50.7301107,
       "lng": 15.1849642,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141871,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141871",
+      "nazev": "Pod stadionem",
+      "typ": "zastavka",
+      "lat": 50.7158983,
+      "lng": 15.1610705,
       "vyska": null,
       "zeme": "cz"
     },
@@ -5371,6 +7186,50 @@
       "typ": "zastavka",
       "lat": 50.7985411,
       "lng": 15.0708888,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5303732799,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5303732799",
+      "nazev": "Podhorská",
+      "typ": "zastavka",
+      "lat": 50.7244702,
+      "lng": 15.1773782,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4695247995,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4695247995",
+      "nazev": "Podhorská Vikýř",
+      "typ": "zastavka",
+      "lat": 50.7243733,
+      "lng": 15.1799818,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4920245994,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4920245994",
+      "nazev": "Podhorská Vikýř",
+      "typ": "zastavka",
+      "lat": 50.7242722,
+      "lng": 15.1794948,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 6071498010,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/6071498010",
+      "nazev": "Podzimní",
+      "typ": "zastavka",
+      "lat": 50.7268741,
+      "lng": 15.1821063,
       "vyska": null,
       "zeme": "cz"
     },
@@ -5439,6 +7298,50 @@
       "lng": 15.3065863,
       "vyska": null,
       "zeme": "pl"
+    },
+    {
+      "osmId": 914040377,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/914040377",
+      "nazev": "Pražská",
+      "typ": "zastavka",
+      "lat": 50.7209316,
+      "lng": 15.1681558,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 280987574,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/280987574",
+      "nazev": "Proseč nad Nisou",
+      "typ": "zeleznice",
+      "lat": 50.7283176,
+      "lng": 15.1157389,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1209159824,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1209159824",
+      "nazev": "Proseč nad Nisou",
+      "typ": "obec",
+      "lat": 50.7278956,
+      "lng": 15.118759,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 10718668167,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/10718668167",
+      "nazev": "Proseč nad Nisou, u překladiště",
+      "typ": "zastavka",
+      "lat": 50.7292846,
+      "lng": 15.1358315,
+      "vyska": null,
+      "zeme": "cz"
     },
     {
       "osmId": 3009742255,
@@ -5547,6 +7450,72 @@
       "typ": "zastavka",
       "lat": 50.8008031,
       "lng": 15.0556952,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4699859830,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4699859830",
+      "nazev": "Rádlo, odbočka",
+      "typ": "zastavka",
+      "lat": 50.7084928,
+      "lng": 15.1413372,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141885,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141885",
+      "nazev": "Rádlo, Potraviny",
+      "typ": "zastavka",
+      "lat": 50.7004066,
+      "lng": 15.119756,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548857,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548857",
+      "nazev": "Rádlo, restaurace na Rychtě",
+      "typ": "zastavka",
+      "lat": 50.7060356,
+      "lng": 15.1294063,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4973343658,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4973343658",
+      "nazev": "Rádlo, u lesa",
+      "typ": "zastavka",
+      "lat": 50.7074682,
+      "lng": 15.1340229,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548856,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548856",
+      "nazev": "Rádlo, u lesa",
+      "typ": "zastavka",
+      "lat": 50.7075859,
+      "lng": 15.134182,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 7717246717,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246717",
+      "nazev": "Raisova",
+      "typ": "zastavka",
+      "lat": 50.7210169,
+      "lng": 15.1766051,
       "vyska": null,
       "zeme": "cz"
     },
@@ -5749,6 +7718,39 @@
       "zeme": "cz"
     },
     {
+      "osmId": 8440238336,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8440238336",
+      "nazev": "Rejdice, chata Espero",
+      "typ": "zastavka",
+      "lat": 50.7260285,
+      "lng": 15.3737743,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4911487526,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4911487526",
+      "nazev": "Revoluční",
+      "typ": "zastavka",
+      "lat": 50.7154749,
+      "lng": 15.1673477,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4911487527,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4911487527",
+      "nazev": "Revoluční",
+      "typ": "zastavka",
+      "lat": 50.7154312,
+      "lng": 15.1679319,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 617236137,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/617236137",
@@ -5767,6 +7769,72 @@
       "typ": "zastavka",
       "lat": 50.7473532,
       "lng": 15.0623439,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5681074605,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5681074605",
+      "nazev": "Rokytnice nad Jizerou",
+      "typ": "zeleznice",
+      "lat": 50.7121613,
+      "lng": 15.4228582,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 366696521,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/366696521",
+      "nazev": "Rokytnice nad Jizerou, hostinec",
+      "typ": "zastavka",
+      "lat": 50.7189576,
+      "lng": 15.4228254,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 597827080,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/597827080",
+      "nazev": "Rokytnice nad Jizerou, hostinec",
+      "typ": "zastavka",
+      "lat": 50.7186966,
+      "lng": 15.4218479,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 367757553,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/367757553",
+      "nazev": "Rokytnice nad Jizerou, nad železniční stanicí",
+      "typ": "zastavka",
+      "lat": 50.7109024,
+      "lng": 15.4244544,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8230349855,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8230349855",
+      "nazev": "Rokytnice nad Jizerou, odbočka Paseky",
+      "typ": "zastavka",
+      "lat": 50.7220561,
+      "lng": 15.4171617,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 367756887,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/367756887",
+      "nazev": "Rokytnice nad Jizerou, pila",
+      "typ": "zastavka",
+      "lat": 50.7247796,
+      "lng": 15.4322505,
       "vyska": null,
       "zeme": "cz"
     },
@@ -5877,6 +7945,17 @@
       "typ": "zastavka",
       "lat": 50.7777058,
       "lng": 15.0617462,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548858,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548858",
+      "nazev": "Rychnov, odbočka Dobrá Voda",
+      "typ": "zastavka",
+      "lat": 50.7007346,
+      "lng": 15.1509954,
       "vyska": null,
       "zeme": "cz"
     },
@@ -6189,6 +8268,83 @@
       "zeme": "pl"
     },
     {
+      "osmId": 1587332492,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587332492",
+      "nazev": "Sklenařice",
+      "typ": "obec",
+      "lat": 50.7046812,
+      "lng": 15.3879751,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 367757805,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/367757805",
+      "nazev": "Sklenařice, hostinec Mexiko",
+      "typ": "zastavka",
+      "lat": 50.7022251,
+      "lng": 15.386375,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 10683905045,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/10683905045",
+      "nazev": "Sklenařice, hostinec Mexiko",
+      "typ": "zastavka",
+      "lat": 50.7022815,
+      "lng": 15.386516,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8440238339,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8440238339",
+      "nazev": "Sklenařice, Soch. Vršek",
+      "typ": "zastavka",
+      "lat": 50.7030106,
+      "lng": 15.400235,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8440238338,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8440238338",
+      "nazev": "Sklenařice, u školy",
+      "typ": "zastavka",
+      "lat": 50.704838,
+      "lng": 15.3899252,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 7717246706,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246706",
+      "nazev": "Skřivánčí",
+      "typ": "zastavka",
+      "lat": 50.719036,
+      "lng": 15.160705,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 7717246707,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246707",
+      "nazev": "Skřivánčí",
+      "typ": "zastavka",
+      "lat": 50.7194975,
+      "lng": 15.1602969,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 617236122,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/617236122",
@@ -6398,6 +8554,61 @@
       "zeme": "cz"
     },
     {
+      "osmId": 8228699607,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8228699607",
+      "nazev": "Smržovka, pramen Nisy",
+      "typ": "zastavka",
+      "lat": 50.7260481,
+      "lng": 15.2286695,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4700330690,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4700330690",
+      "nazev": "Smržovka, průmyslová zóna",
+      "typ": "zastavka",
+      "lat": 50.7261049,
+      "lng": 15.2316945,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4700330691,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4700330691",
+      "nazev": "Smržovka, průmyslová zóna",
+      "typ": "zastavka",
+      "lat": 50.7262056,
+      "lng": 15.2314462,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8228699609,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8228699609",
+      "nazev": "Smržovka, sáňkařská dráha",
+      "typ": "zastavka",
+      "lat": 50.7270456,
+      "lng": 15.2397135,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8228699610,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8228699610",
+      "nazev": "Smržovka, sáňkařská dráha",
+      "typ": "zastavka",
+      "lat": 50.7272625,
+      "lng": 15.2410693,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 7058279643,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/7058279643",
@@ -6420,13 +8631,13 @@
       "zeme": "cz"
     },
     {
-      "osmId": 8228699615,
+      "osmId": 8228699614,
       "osmTyp": "node",
-      "url": "https://www.openstreetmap.org/node/8228699615",
+      "url": "https://www.openstreetmap.org/node/8228699614",
       "nazev": "Smržovka, Zvonková",
       "typ": "zastavka",
-      "lat": 50.7301059,
-      "lng": 15.2652369,
+      "lat": 50.7298262,
+      "lng": 15.2650081,
       "vyska": null,
       "zeme": "cz"
     },
@@ -6651,6 +8862,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 12158574207,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/12158574207",
+      "nazev": "Svatopluka Čecha",
+      "typ": "zastavka",
+      "lat": 50.7259717,
+      "lng": 15.1786463,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 685134586,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/685134586",
@@ -6779,6 +9001,28 @@
       "typ": "zastavka",
       "lat": 50.7574385,
       "lng": 15.0708419,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1587362850,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587362850",
+      "nazev": "Šimonovice",
+      "typ": "obec",
+      "lat": 50.7063759,
+      "lng": 15.052623,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 2441609721,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/2441609721",
+      "nazev": "Šimonovice",
+      "typ": "zastavka",
+      "lat": 50.7078438,
+      "lng": 15.053978,
       "vyska": null,
       "zeme": "cz"
     },
@@ -7212,6 +9456,28 @@
       "zeme": "cz"
     },
     {
+      "osmId": 5325141850,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141850",
+      "nazev": "Turnovská",
+      "typ": "zastavka",
+      "lat": 50.7177707,
+      "lng": 15.1627852,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 7717246708,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246708",
+      "nazev": "Turnovská",
+      "typ": "zastavka",
+      "lat": 50.7171561,
+      "lng": 15.162543,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 8040419353,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/8040419353",
@@ -7274,6 +9540,17 @@
       "typ": "zastavka",
       "lat": 50.7748761,
       "lng": 15.0544786,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 914040375,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/914040375",
+      "nazev": "u gymnázia",
+      "typ": "zastavka",
+      "lat": 50.7206827,
+      "lng": 15.1645148,
       "vyska": null,
       "zeme": "cz"
     },
@@ -7498,6 +9775,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 8412764184,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8412764184",
+      "nazev": "ul. 28. října",
+      "typ": "zastavka",
+      "lat": 50.7265954,
+      "lng": 15.166838,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 6412718184,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/6412718184",
@@ -7575,6 +9863,160 @@
       "zeme": "cz"
     },
     {
+      "osmId": 26024341,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/26024341",
+      "nazev": "Velké Hamry",
+      "typ": "zeleznice",
+      "lat": 50.7114579,
+      "lng": 15.3137841,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1587389324,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587389324",
+      "nazev": "Velké Hamry",
+      "typ": "obec",
+      "lat": 50.7143764,
+      "lng": 15.3150838,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1406403530,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1406403530",
+      "nazev": "Velké Hamry město",
+      "typ": "zeleznice",
+      "lat": 50.7196075,
+      "lng": 15.3134904,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1407296091,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1407296091",
+      "nazev": "Velké Hamry, Lidový dům",
+      "typ": "zastavka",
+      "lat": 50.7239061,
+      "lng": 15.3148301,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 343568223,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/343568223",
+      "nazev": "Velké Hamry, náměstí",
+      "typ": "zastavka",
+      "lat": 50.7176372,
+      "lng": 15.3147699,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1407291289,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1407291289",
+      "nazev": "Velké Hamry, Pirochova vila",
+      "typ": "zastavka",
+      "lat": 50.7231478,
+      "lng": 15.3043328,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1407291283,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1407291283",
+      "nazev": "Velké Hamry, pod Muchovem",
+      "typ": "zastavka",
+      "lat": 50.7177158,
+      "lng": 15.2941732,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1407291285,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1407291285",
+      "nazev": "Velké Hamry, rozcestí Zbytky",
+      "typ": "zastavka",
+      "lat": 50.7184512,
+      "lng": 15.300025,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1406292847,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1406292847",
+      "nazev": "Velké Hamry, sokolovna",
+      "typ": "zastavka",
+      "lat": 50.7145624,
+      "lng": 15.2923588,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8270180843,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8270180843",
+      "nazev": "Velké Hamry, škola",
+      "typ": "zastavka",
+      "lat": 50.7140851,
+      "lng": 15.3112607,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1407291275,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1407291275",
+      "nazev": "Velké Hamry, U Laurinů",
+      "typ": "zastavka",
+      "lat": 50.7173599,
+      "lng": 15.2986654,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1407291291,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1407291291",
+      "nazev": "Velké Hamry, u Nováků",
+      "typ": "zastavka",
+      "lat": 50.7157686,
+      "lng": 15.2826107,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1407291286,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1407291286",
+      "nazev": "Velké Hamry, u Richtrů",
+      "typ": "zastavka",
+      "lat": 50.7113389,
+      "lng": 15.2842242,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8270180841,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8270180841",
+      "nazev": "Velké Hamry, železniční stanice",
+      "typ": "zastavka",
+      "lat": 50.7118513,
+      "lng": 15.3140871,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 603228281,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/603228281",
@@ -7604,6 +10046,28 @@
       "typ": "zastavka",
       "lat": 50.7372196,
       "lng": 15.0623543,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8237547903,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8237547903",
+      "nazev": "Vesec, rozcestí Minkovice",
+      "typ": "zastavka",
+      "lat": 50.7208114,
+      "lng": 15.0595032,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8237547906,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8237547906",
+      "nazev": "Vesec, rozcestí Minkovice",
+      "typ": "zastavka",
+      "lat": 50.721153,
+      "lng": 15.0590662,
       "vyska": null,
       "zeme": "cz"
     },
@@ -7718,6 +10182,17 @@
       "zeme": "cz"
     },
     {
+      "osmId": 7717246705,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246705",
+      "nazev": "Vodní",
+      "typ": "zastavka",
+      "lat": 50.7241269,
+      "lng": 15.1595047,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 6061559450,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/6061559450",
@@ -7784,6 +10259,28 @@
       "zeme": "cz"
     },
     {
+      "osmId": 1758908425,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1758908425",
+      "nazev": "Vrkoslavice",
+      "typ": "zastavka",
+      "lat": 50.7077514,
+      "lng": 15.1771249,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5325141874,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5325141874",
+      "nazev": "Vrkoslavice, Janáčkova",
+      "typ": "zastavka",
+      "lat": 50.7078439,
+      "lng": 15.1762705,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 5878074503,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/5878074503",
@@ -7824,6 +10321,17 @@
       "typ": "zastavka",
       "lat": 50.7603409,
       "lng": 15.0916302,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 6071498011,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/6071498011",
+      "nazev": "Vysoká",
+      "typ": "zastavka",
+      "lat": 50.7279456,
+      "lng": 15.1830957,
       "vyska": null,
       "zeme": "cz"
     },
@@ -7938,6 +10446,28 @@
       "zeme": "pl"
     },
     {
+      "osmId": 1407291284,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1407291284",
+      "nazev": "Zásada, Šisovna",
+      "typ": "zastavka",
+      "lat": 50.7068561,
+      "lng": 15.286612,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 1407291288,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1407291288",
+      "nazev": "Zásada, Zbytky",
+      "typ": "zastavka",
+      "lat": 50.7093818,
+      "lng": 15.2687229,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 621380554,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/621380554",
@@ -7960,6 +10490,72 @@
       "zeme": "cz"
     },
     {
+      "osmId": 1587389298,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/1587389298",
+      "nazev": "Zlatá Olešnice",
+      "typ": "obec",
+      "lat": 50.7088147,
+      "lng": 15.3534548,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8270180901,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8270180901",
+      "nazev": "Zlatá Olešnice, Hořenec",
+      "typ": "zastavka",
+      "lat": 50.7128245,
+      "lng": 15.3487171,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8270180907,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8270180907",
+      "nazev": "Zlatá Olešnice, hostinec Na Vrších",
+      "typ": "zastavka",
+      "lat": 50.7021438,
+      "lng": 15.3465781,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 5324485987,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/5324485987",
+      "nazev": "Zlatá Olešnice, odbočka Stanový",
+      "typ": "zastavka",
+      "lat": 50.7015511,
+      "lng": 15.3563389,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4687059657,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4687059657",
+      "nazev": "Zlatá Olešnice, pošta",
+      "typ": "zastavka",
+      "lat": 50.7053043,
+      "lng": 15.3543273,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8270180905,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8270180905",
+      "nazev": "Zlatá Olešnice, u domu č. 42",
+      "typ": "zastavka",
+      "lat": 50.7067685,
+      "lng": 15.3515415,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 10718668165,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/10718668165",
@@ -7967,6 +10563,17 @@
       "typ": "zastavka",
       "lat": 50.7300558,
       "lng": 15.130215,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 10718668166,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/10718668166",
+      "nazev": "Zlatá ulička",
+      "typ": "zastavka",
+      "lat": 50.7296266,
+      "lng": 15.1313859,
       "vyska": null,
       "zeme": "cz"
     },
@@ -7993,6 +10600,28 @@
       "zeme": "pl"
     },
     {
+      "osmId": 7717246712,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246712",
+      "nazev": "ZŠ 5. května",
+      "typ": "zastavka",
+      "lat": 50.7233258,
+      "lng": 15.1791593,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 7717246713,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/7717246713",
+      "nazev": "ZŠ 5. května",
+      "typ": "zastavka",
+      "lat": 50.7232631,
+      "lng": 15.1798681,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 5878074519,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/5878074519",
@@ -8015,6 +10644,28 @@
       "zeme": "cz"
     },
     {
+      "osmId": 8443548820,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548820",
+      "nazev": "Železniční zastávka Nová Ves",
+      "typ": "zastavka",
+      "lat": 50.7230308,
+      "lng": 15.1945545,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 8443548882,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/8443548882",
+      "nazev": "Železniční zastávka Nová Ves",
+      "typ": "zastavka",
+      "lat": 50.7231383,
+      "lng": 15.1943609,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
       "osmId": 1419657919,
       "osmTyp": "node",
       "url": "https://www.openstreetmap.org/node/1419657919",
@@ -8022,6 +10673,17 @@
       "typ": "zastavka",
       "lat": 50.779864,
       "lng": 15.0687359,
+      "vyska": null,
+      "zeme": "cz"
+    },
+    {
+      "osmId": 4699742123,
+      "osmTyp": "node",
+      "url": "https://www.openstreetmap.org/node/4699742123",
+      "nazev": "Žižkův vrch",
+      "typ": "zastavka",
+      "lat": 50.7233013,
+      "lng": 15.154036,
       "vyska": null,
       "zeme": "cz"
     }

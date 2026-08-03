@@ -2,12 +2,34 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-31T05:57:28Z",
+    "timestamp_osm_base": "2026-08-03T05:56:51Z",
     "timestamp_areas_base": "2026-05-12T07:36:16Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
+{
+  "type": "node",
+  "id": 26024341,
+  "lat": 50.7114579,
+  "lon": 15.3137841,
+  "tags": {
+    "name": "Velké Hamry",
+    "railway": "station",
+    "wikidata": "Q19401577"
+  }
+},
+{
+  "type": "node",
+  "id": 26024353,
+  "lat": 50.7015958,
+  "lon": 15.3173660,
+  "tags": {
+    "name": "Plavy",
+    "railway": "halt",
+    "wikidata": "Q55553587"
+  }
+},
 {
   "type": "node",
   "id": 31505109,
@@ -208,6 +230,17 @@
 },
 {
   "type": "node",
+  "id": 280987574,
+  "lat": 50.7283176,
+  "lon": 15.1157389,
+  "tags": {
+    "name": "Proseč nad Nisou",
+    "railway": "halt",
+    "wikidata": "Q66888754"
+  }
+},
+{
+  "type": "node",
   "id": 288195264,
   "lat": 50.7395092,
   "lon": 15.2253650,
@@ -278,6 +311,40 @@
 },
 {
   "type": "node",
+  "id": 304751244,
+  "lat": 50.7028622,
+  "lon": 15.3231145,
+  "tags": {
+    "name": "Haratice",
+    "name:cs": "Haratice",
+    "name:de": "Haratitz",
+    "place": "village",
+    "population": "512",
+    "ref:cobe": "121576",
+    "ref:zsj": "121576",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12019214",
+    "wikipedia": "cs:Haratice"
+  }
+},
+{
+  "type": "node",
+  "id": 304751245,
+  "lat": 50.7161716,
+  "lon": 15.3256386,
+  "tags": {
+    "name": "Bohdalovice",
+    "name:cs": "Bohdalovice",
+    "name:de": "Bochdalowitz",
+    "place": "village",
+    "population": "131",
+    "ref:cobe": "178748",
+    "ref:zsj": "178748",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
   "id": 304751251,
   "lat": 50.7623619,
   "lon": 15.2762385,
@@ -307,6 +374,22 @@
     "source": "csu:uir-zsj",
     "wikidata": "Q1936067",
     "wikipedia": "cs:Smržovka"
+  }
+},
+{
+  "type": "node",
+  "id": 304751272,
+  "lat": 50.7257683,
+  "lon": 15.2141311,
+  "tags": {
+    "name": "Nová Ves nad Nisou",
+    "name:cs": "Nová Ves nad Nisou",
+    "name:de": "Neudorf an der Neiße",
+    "place": "village",
+    "population": "570",
+    "ref:cobe": "105791",
+    "ref:zsj": "105791",
+    "source": "csu:uir-zsj"
   }
 },
 {
@@ -380,6 +463,19 @@
 },
 {
   "type": "node",
+  "id": 306541404,
+  "lat": 50.7004019,
+  "lon": 15.4351326,
+  "tags": {
+    "name": "Jablonec nad Jizerou",
+    "public_transport": "station",
+    "railway": "station",
+    "wheelchair": "no",
+    "wikidata": "Q18180268"
+  }
+},
+{
+  "type": "node",
   "id": 309373662,
   "lat": 50.7315410,
   "lon": 15.1904049,
@@ -387,6 +483,42 @@
     "name": "Jablonecké Paseky",
     "railway": "halt",
     "wikidata": "Q66888767"
+  }
+},
+{
+  "type": "node",
+  "id": 309382407,
+  "lat": 50.7204118,
+  "lon": 15.1854044,
+  "tags": {
+    "name": "Jablonec nad Nisou zastávka",
+    "railway": "halt",
+    "wikidata": "Q66888769"
+  }
+},
+{
+  "type": "node",
+  "id": 309382440,
+  "lat": 50.7208682,
+  "lon": 15.1738149,
+  "tags": {
+    "name": "Jablonec nad Nisou centrum",
+    "railway": "halt",
+    "railway:ref:DB": "XTJC",
+    "wikidata": "Q66888770"
+  }
+},
+{
+  "type": "node",
+  "id": 309382584,
+  "lat": 50.7263561,
+  "lon": 15.1492816,
+  "tags": {
+    "name": "Jablonec nad Nisou dolní nádraží",
+    "operator": "cz:SŽDC",
+    "railway": "halt",
+    "railway:ref": "551127",
+    "wikidata": "Q62618368"
   }
 },
 {
@@ -591,6 +723,40 @@
 },
 {
   "type": "node",
+  "id": 343568223,
+  "lat": 50.7176372,
+  "lon": 15.3147699,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, náměstí",
+    "official_name": "Velké Hamry, nám.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38662",
+    "ref:PID": "U31296Z2",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 343568229,
+  "lat": 50.7053147,
+  "lon": 15.3177901,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Plavy, křižovatka",
+    "official_name": "Plavy, křiž.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "26840",
+    "ref:PID": "U31297Z2",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
   "id": 349328483,
   "lat": 50.7586509,
   "lon": 15.3036173,
@@ -669,6 +835,30 @@
 },
 {
   "type": "node",
+  "id": 357478253,
+  "lat": 50.7230061,
+  "lon": 15.3905641,
+  "tags": {
+    "aerialway": "station",
+    "name": "Dolní stanice lanovky Leitner",
+    "public_transport": "station",
+    "source": "bing:ortofoto"
+  }
+},
+{
+  "type": "node",
+  "id": 357478257,
+  "lat": 50.7298455,
+  "lon": 15.3787702,
+  "tags": {
+    "aerialway": "station",
+    "name": "Horní stanice lanovky Leitner",
+    "public_transport": "station",
+    "source": "bing:ortofoto"
+  }
+},
+{
+  "type": "node",
   "id": 357490133,
   "lat": 50.7710062,
   "lon": 15.3929804,
@@ -684,6 +874,124 @@
     "ref:idol": "3741",
     "shelter": "yes",
     "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 366696521,
+  "lat": 50.7189576,
+  "lon": 15.4228254,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Rokytnice nad Jizerou, hostinec",
+    "official_name": "Rokytnice n. Jiz., host.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "29961",
+    "ref:PID": "U31205Z2"
+  }
+},
+{
+  "type": "node",
+  "id": 367756887,
+  "lat": 50.7247796,
+  "lon": 15.4322505,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Rokytnice nad Jizerou, pila",
+    "official_name": "Rokytnice n.Jiz.,,pila",
+    "public_transport": "platform",
+    "ref:idol": "29967",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 367757553,
+  "lat": 50.7109024,
+  "lon": 15.4244544,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Rokytnice nad Jizerou, nad železniční stanicí",
+    "official_name": "Rokytnice n.Jiz.,,nad žel.st.",
+    "public_transport": "platform",
+    "ref:idol": "29964",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 367757554,
+  "lat": 50.7031865,
+  "lon": 15.4293630,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Jablonec nad Jizerou, náměstí",
+    "official_name": "Jablonec n. Jiz., nám.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12413",
+    "ref:PID": "U31202Z2"
+  }
+},
+{
+  "type": "node",
+  "id": 367757805,
+  "lat": 50.7022251,
+  "lon": 15.3863750,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Sklenařice, hostinec Mexiko",
+    "official_name": "Vysoké n.Jiz.,Sklenařice,host.Mexiko",
+    "public_transport": "platform",
+    "ref:CIS_JR": "40891",
+    "ref:PID": "U31201Z2"
+  }
+},
+{
+  "type": "node",
+  "id": 367759124,
+  "lat": 50.7008134,
+  "lon": 15.3181426,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Plavy, železniční zastávka",
+    "official_name": "Plavy, žel. zast.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "26842",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 367759129,
+  "lat": 50.7008444,
+  "lon": 15.3183792,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Plavy, železniční zastávka",
+    "official_name": "Plavy, žel. zast.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "26842",
+    "shelter": "no"
   }
 },
 {
@@ -895,6 +1203,17 @@
 },
 {
   "type": "node",
+  "id": 574964158,
+  "lat": 50.7231454,
+  "lon": 15.3913915,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "bing"
+  }
+},
+{
+  "type": "node",
   "id": 574964226,
   "lat": 50.7306942,
   "lon": 15.3826010,
@@ -902,6 +1221,125 @@
     "aerialway": "station",
     "name": "Horní stanice lanovky Pizár",
     "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 574964259,
+  "lat": 50.7251570,
+  "lon": 15.3931835,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "bing"
+  }
+},
+{
+  "type": "node",
+  "id": 597827080,
+  "lat": 50.7186966,
+  "lon": 15.4218479,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Rokytnice nad Jizerou, hostinec",
+    "official_name": "Rokytnice n.Jiz.,,host.",
+    "public_transport": "platform",
+    "ref:idol": "29961"
+  }
+},
+{
+  "type": "node",
+  "id": 597827081,
+  "lat": 50.7191109,
+  "lon": 15.4226542,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "3",
+    "name": "Rokytnice nad Jizerou, hostinec",
+    "official_name": "Rokytnice n. Jiz., host.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "29961",
+    "ref:PID": "U31205Z3"
+  }
+},
+{
+  "type": "node",
+  "id": 597827082,
+  "lat": 50.7245338,
+  "lon": 15.4322244,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Rokytnice nad Jizerou, pila",
+    "official_name": "Rokytnice n.Jiz.,,pila",
+    "public_transport": "platform",
+    "ref:idol": "29967",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 598489991,
+  "lat": 50.7108733,
+  "lon": 15.4242986,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Rokytnice nad Jizerou, nad železniční stanicí",
+    "official_name": "Rokytnice n.Jiz.,,nad žel.st.",
+    "public_transport": "platform",
+    "ref:idol": "29964",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 598562322,
+  "lat": 50.7001205,
+  "lon": 15.4330960,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jablonec nad Jizerou, Hybler",
+    "official_name": "Jablonec n.Jiz.,,Hybler",
+    "public_transport": "platform",
+    "ref:idol": "12414"
+  }
+},
+{
+  "type": "node",
+  "id": 598562323,
+  "lat": 50.7060453,
+  "lon": 15.4273846,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jablonec nad Jizerou, dům kultury",
+    "official_name": "Jablonec n. Jiz., dům kultury",
+    "public_transport": "platform",
+    "ref:idol": "12412"
+  }
+},
+{
+  "type": "node",
+  "id": 598562325,
+  "lat": 50.7061020,
+  "lon": 15.4275411,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jablonec nad Jizerou, dům kultury",
+    "official_name": "Jablonec n. Jiz., dům kultury",
+    "public_transport": "platform",
+    "ref:idol": "12412"
   }
 },
 {
@@ -2936,6 +3374,66 @@
 },
 {
   "type": "node",
+  "id": 914040375,
+  "lat": 50.7206827,
+  "lon": 15.1645148,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "1",
+    "name": "u gymnázia",
+    "official_name": "Jablonec n. Nisou, u gymnázia",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12445",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 914040377,
+  "lat": 50.7209316,
+  "lon": 15.1681558,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "1",
+    "name": "Pražská",
+    "official_name": "Jablonec n. Nisou, Pražská",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12441",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 914040378,
+  "lat": 50.7209502,
+  "lon": 15.1676368,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "2",
+    "name": "Pražská",
+    "official_name": "Jablonec n. Nisou, Pražská",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12441",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
   "id": 916448053,
   "lat": 50.9396844,
   "lon": 15.0757036,
@@ -2944,6 +3442,15 @@
     "name:cs": "Údolí",
     "name:de": "Jäckelsthal",
     "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 920603301,
+  "lat": 50.7106480,
+  "lon": 15.1608640,
+  "tags": {
+    "aerialway": "station"
   }
 },
 {
@@ -2965,6 +3472,18 @@
 },
 {
   "type": "node",
+  "id": 958755218,
+  "lat": 50.7074139,
+  "lon": 15.0863996,
+  "tags": {
+    "name": "Jeřmanice",
+    "public_transport": "station",
+    "railway": "station",
+    "wikidata": "Q19722175"
+  }
+},
+{
+  "type": "node",
   "id": 1038237606,
   "lat": 50.7361067,
   "lon": 15.3474233,
@@ -2978,6 +3497,16 @@
   "id": 1038237614,
   "lat": 50.7410711,
   "lon": 15.3470447,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1057913219,
+  "lat": 50.7012264,
+  "lon": 15.4230398,
   "tags": {
     "aerialway": "station",
     "public_transport": "station"
@@ -3092,6 +3621,24 @@
 },
 {
   "type": "node",
+  "id": 1209159824,
+  "lat": 50.7278956,
+  "lon": 15.1187590,
+  "tags": {
+    "name": "Proseč nad Nisou",
+    "name:cs": "Proseč nad Nisou",
+    "name:de": "Proschwitz an der Neiße",
+    "place": "village",
+    "population": "814",
+    "ref:cobe": "133213",
+    "ref:zsj": "133213",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12047203",
+    "wikipedia": "cs:Proseč nad Nisou"
+  }
+},
+{
+  "type": "node",
   "id": 1209163089,
   "lat": 50.7478267,
   "lon": 15.1352040,
@@ -3104,6 +3651,24 @@
     "ref:cobe": "056120",
     "ref:zsj": "056120",
     "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1209186724,
+  "lat": 50.7176255,
+  "lon": 15.0553284,
+  "tags": {
+    "name": "Minkovice",
+    "name:cs": "Minkovice",
+    "name:de": "Münkendorf",
+    "place": "village",
+    "population": "256",
+    "ref:cobe": "162507",
+    "ref:zsj": "162507",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q12037747",
+    "wikipedia": "cs:Minkovice (Šimonovice)"
   }
 },
 {
@@ -3257,6 +3822,200 @@
     "ref:idol": "1374",
     "shelter": "yes",
     "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1394185967,
+  "lat": 50.7190121,
+  "lon": 15.2914702,
+  "tags": {
+    "name": "Hamrska",
+    "name:cs": "Hamrska",
+    "name:de": "Hammer",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 1406292847,
+  "lat": 50.7145624,
+  "lon": 15.2923588,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Velké Hamry, sokolovna",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38666"
+  }
+},
+{
+  "type": "node",
+  "id": 1406313610,
+  "lat": 50.7178058,
+  "lon": 15.3150167,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Velké Hamry, náměstí",
+    "official_name": "Velké Hamry, nám.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38662",
+    "ref:PID": "U31296Z1",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1406403530,
+  "lat": 50.7196075,
+  "lon": 15.3134904,
+  "tags": {
+    "name": "Velké Hamry město",
+    "railway": "halt",
+    "wikidata": "Q55553598"
+  }
+},
+{
+  "type": "node",
+  "id": 1407291275,
+  "lat": 50.7173599,
+  "lon": 15.2986654,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, U Laurinů",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38667"
+  }
+},
+{
+  "type": "node",
+  "id": 1407291283,
+  "lat": 50.7177158,
+  "lon": 15.2941732,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Velké Hamry, pod Muchovem",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38664"
+  }
+},
+{
+  "type": "node",
+  "id": 1407291284,
+  "lat": 50.7068561,
+  "lon": 15.2866120,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zásada, Šisovna",
+    "public_transport": "platform",
+    "ref:idol": "41473"
+  }
+},
+{
+  "type": "node",
+  "id": 1407291285,
+  "lat": 50.7184512,
+  "lon": 15.3000250,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Velké Hamry, rozcestí Zbytky",
+    "official_name": "Velké Hamry, rozc. Zbytky",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38665"
+  }
+},
+{
+  "type": "node",
+  "id": 1407291286,
+  "lat": 50.7113389,
+  "lon": 15.2842242,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Velké Hamry, u Richtrů",
+    "public_transport": "platform",
+    "ref:idol": "38669"
+  }
+},
+{
+  "type": "node",
+  "id": 1407291288,
+  "lat": 50.7093818,
+  "lon": 15.2687229,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zásada, Zbytky",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1407291289,
+  "lat": 50.7231478,
+  "lon": 15.3043328,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Velké Hamry, Pirochova vila",
+    "public_transport": "platform",
+    "ref:idol": "38663"
+  }
+},
+{
+  "type": "node",
+  "id": 1407291291,
+  "lat": 50.7157686,
+  "lon": 15.2826107,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, u Nováků",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38668"
+  }
+},
+{
+  "type": "node",
+  "id": 1407296091,
+  "lat": 50.7239061,
+  "lon": 15.3148301,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Velké Hamry, Lidový dům",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38661"
+  }
+},
+{
+  "type": "node",
+  "id": 1407296092,
+  "lat": 50.7054330,
+  "lon": 15.3180031,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Plavy, křižovatka",
+    "official_name": "Plavy, křiž.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "26840",
+    "ref:PID": "U31297Z1",
+    "shelter": "yes"
   }
 },
 {
@@ -4083,6 +4842,55 @@
 },
 {
   "type": "node",
+  "id": 1587332492,
+  "lat": 50.7046812,
+  "lon": 15.3879751,
+  "tags": {
+    "name": "Sklenařice",
+    "name:cs": "Sklenařice",
+    "name:de": "Glasersdorf",
+    "place": "village",
+    "population": "195",
+    "ref:cobe": "148237",
+    "ref:zsj": "148237",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587332826,
+  "lat": 50.7251192,
+  "lon": 15.3996026,
+  "tags": {
+    "name": "Paseky nad Jizerou",
+    "name:cs": "Paseky nad Jizerou",
+    "place": "village",
+    "population": "256",
+    "ref:cobe": "118206",
+    "ref:zsj": "118206",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587333281,
+  "lat": 50.7034400,
+  "lon": 15.4295952,
+  "tags": {
+    "name": "Jablonec nad Jizerou",
+    "name:cs": "Jablonec nad Jizerou",
+    "name:de": "Jablonetz",
+    "place": "town",
+    "population": "1467",
+    "ref:cobe": "055921",
+    "ref:zsj": "055921",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1676863",
+    "wikipedia": "cs:Jablonec nad Jizerou"
+  }
+},
+{
+  "type": "node",
   "id": 1587333378,
   "lat": 50.7720087,
   "lon": 15.4315431,
@@ -4099,6 +4907,24 @@
     "source": "csu:uir-zsj",
     "wikidata": "Q147816",
     "wikipedia": "cs:Harrachov"
+  }
+},
+{
+  "type": "node",
+  "id": 1587362850,
+  "lat": 50.7063759,
+  "lon": 15.0526230,
+  "tags": {
+    "name": "Šimonovice",
+    "name:cs": "Šimonovice",
+    "name:de": "Schimsdorf",
+    "place": "village",
+    "population": "87",
+    "ref:cobe": "162523",
+    "ref:zsj": "162523",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q391650",
+    "wikipedia": "cs:Šimonovice"
   }
 },
 {
@@ -4332,6 +5158,24 @@
 },
 {
   "type": "node",
+  "id": 1587363549,
+  "lat": 50.7106730,
+  "lon": 15.0769449,
+  "tags": {
+    "name": "Dlouhý Most",
+    "name:cs": "Dlouhý Most",
+    "name:de": "Langenbruck",
+    "place": "village",
+    "population": "561",
+    "ref:cobe": "026662",
+    "ref:zsj": "026662",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q1232369",
+    "wikipedia": "cs:Dlouhý Most"
+  }
+},
+{
+  "type": "node",
   "id": 1587363596,
   "lat": 50.8736749,
   "lon": 15.2216330,
@@ -4362,6 +5206,38 @@
     "source": "csu:uir-zsj",
     "wikidata": "Q1004713",
     "wikipedia": "cs:Bulovka (okres Liberec)"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389298,
+  "lat": 50.7088147,
+  "lon": 15.3534548,
+  "tags": {
+    "name": "Zlatá Olešnice",
+    "name:cs": "Zlatá Olešnice",
+    "name:de": "Woleschitz",
+    "place": "village",
+    "population": "442",
+    "ref:cobe": "408280",
+    "source": "csu:uir-zsj"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389324,
+  "lat": 50.7143764,
+  "lon": 15.3150838,
+  "tags": {
+    "name": "Velké Hamry",
+    "name:cs": "Velké Hamry",
+    "name:de": "Großhammer",
+    "place": "village",
+    "population": "2590",
+    "ref:cobe": "178756",
+    "ref:zsj": "178756",
+    "source": "csu:uir-zsj",
+    "wikipedia": "cs:Velké Hamry"
   }
 },
 {
@@ -4397,6 +5273,39 @@
     "source": "csu:uir-zsj",
     "wikidata": "Q149105",
     "wikipedia": "cs:Tanvald"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389432,
+  "lat": 50.7042192,
+  "lon": 15.2106075,
+  "tags": {
+    "name": "Dolní Černá Studnice",
+    "name:cs": "Dolní Černá Studnice",
+    "name:de": "Unter Schwarzbrunn",
+    "place": "village",
+    "population": "92",
+    "ref:cobe": "119091",
+    "ref:zsj": "119091",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q11817991"
+  }
+},
+{
+  "type": "node",
+  "id": 1587389474,
+  "lat": 50.7046611,
+  "lon": 15.3180054,
+  "tags": {
+    "name": "Plavy",
+    "name:cs": "Plavy",
+    "name:de": "Plaw",
+    "place": "village",
+    "population": "572",
+    "ref:cobe": "121584",
+    "ref:zsj": "121584",
+    "source": "csu:uir-zsj"
   }
 },
 {
@@ -4555,6 +5464,27 @@
 },
 {
   "type": "node",
+  "id": 1587389785,
+  "lat": 50.7240899,
+  "lon": 15.1710958,
+  "tags": {
+    "name": "Jablonec nad Nisou",
+    "name:cs": "Jablonec nad Nisou",
+    "name:de": "Gablonz an der Neiße",
+    "name:lt": "Jablonecas prie Nisos",
+    "name:pl": "Jablonec nad Nysą",
+    "name:ru": "Яблонец-над-Нисоу",
+    "name:uk": "Яблонець-над-Нисою",
+    "place": "town",
+    "population": "44588",
+    "ref:cobe": "408085",
+    "source": "csu:uir-zsj",
+    "wikidata": "Q147607",
+    "wikipedia": "cs:Jablonec nad Nisou"
+  }
+},
+{
+  "type": "node",
   "id": 1587389891,
   "lat": 50.7910170,
   "lon": 15.1426403,
@@ -4635,6 +5565,37 @@
     "ref:CIS_JR": "51739",
     "shelter": "yes",
     "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1758908425,
+  "lat": 50.7077514,
+  "lon": 15.1771249,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Vrkoslavice",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice",
+    "public_transport": "platform",
+    "ref:idol": "40468"
+  }
+},
+{
+  "type": "node",
+  "id": 1798089272,
+  "lat": 50.7143976,
+  "lon": 15.1709378,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Pod pivovarem",
+    "official_name": "Jablonec n. Nisou, Pod pivovarem",
+    "public_transport": "platform",
+    "ref:idol": "51745",
+    "shelter": "no"
   }
 },
 {
@@ -5014,6 +5975,34 @@
 },
 {
   "type": "node",
+  "id": 2441609721,
+  "lat": 50.7078438,
+  "lon": 15.0539780,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Šimonovice",
+    "public_transport": "platform",
+    "ref:dpmlj": "11502",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2441609818,
+  "lat": 50.7079235,
+  "lon": 15.0542226,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Šimonovice",
+    "public_transport": "platform",
+    "ref:dpmlj": "11512"
+  }
+},
+{
+  "type": "node",
   "id": 2535889947,
   "lat": 50.7675112,
   "lon": 15.0953745,
@@ -5246,6 +6235,15 @@
   "tags": {
     "aerialway": "station",
     "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3166400669,
+  "lat": 50.7269408,
+  "lon": 15.2547552,
+  "tags": {
+    "aerialway": "station"
   }
 },
 {
@@ -5503,6 +6501,18 @@
 },
 {
   "type": "node",
+  "id": 3578784513,
+  "lat": 50.7011794,
+  "lon": 15.1563664,
+  "tags": {
+    "name": "Dolní Dobrá Voda",
+    "name:cs": "Dolní Dobrá Voda",
+    "name:de": "Untergutbrunn",
+    "place": "village"
+  }
+},
+{
+  "type": "node",
   "id": 3720496711,
   "lat": 50.7911835,
   "lon": 15.1304035,
@@ -5582,6 +6592,20 @@
     "railway": "station",
     "train": "yes",
     "wikidata": "Q25400744"
+  }
+},
+{
+  "type": "node",
+  "id": 4000505931,
+  "lat": 50.7117281,
+  "lon": 15.0760053,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Dlouhý Most, U tří lip",
+    "public_transport": "platform",
+    "ref:idol": "5934"
   }
 },
 {
@@ -5735,6 +6759,48 @@
 },
 {
   "type": "node",
+  "id": 4281267129,
+  "lat": 50.7258780,
+  "lon": 15.1859459,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "náměstí Boženy Němcové",
+    "official_name": "Jablonec n.Nisou,,nám.B.Němcové",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "route_ref": "108;141;102",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4281267144,
+  "lat": 50.7262558,
+  "lon": 15.1856096,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "náměstí Boženy Němcové",
+    "official_name": "Jablonec n.Nisou,,nám.B.Němcové",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "route_ref": "108;190;102;141",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
   "id": 4281267381,
   "lat": 50.7383391,
   "lon": 15.2115698,
@@ -5786,6 +6852,21 @@
     "ref:idol": "54406",
     "shelter": "no",
     "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4359969416,
+  "lat": 50.7236301,
+  "lon": 15.1862765,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Novoveská",
+    "official_name": "Jablonec n.Nisou,,Novoveská",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform"
   }
 },
 {
@@ -6001,6 +7082,20 @@
 },
 {
   "type": "node",
+  "id": 4687059657,
+  "lat": 50.7053043,
+  "lon": 15.3543273,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, pošta",
+    "public_transport": "platform",
+    "ref:idol": "41903",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
   "id": 4695122427,
   "lat": 50.7380860,
   "lon": 15.2321016,
@@ -6012,6 +7107,28 @@
     "public_transport": "platform",
     "ref:idol": "19533",
     "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4695247995,
+  "lat": 50.7243733,
+  "lon": 15.1799818,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "2",
+    "name": "Podhorská Vikýř",
+    "official_name": "Jablonec n.Nisou,,Podhorská Vikýř",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51773",
+    "shelter": "no",
+    "tactile_paving": "no"
   }
 },
 {
@@ -6050,6 +7167,124 @@
     "ref:CIS_JR": "51776",
     "route_ref": "102;131;116;190;108",
     "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4699710948,
+  "lat": 50.7217807,
+  "lon": 15.1884667,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "hostinec U lípy",
+    "official_name": "Jablonec n. Nisou, host. U lípy",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12434"
+  }
+},
+{
+  "type": "node",
+  "id": 4699742123,
+  "lat": 50.7233013,
+  "lon": 15.1540360,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Žižkův vrch",
+    "official_name": "Jablonec n. Nisou, Žižkův vrch",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51768"
+  }
+},
+{
+  "type": "node",
+  "id": 4699859830,
+  "lat": 50.7084928,
+  "lon": 15.1413372,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "1",
+    "name": "Rádlo, odbočka",
+    "public_transport": "platform",
+    "ref:idol": "52479",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4700330690,
+  "lat": 50.7261049,
+  "lon": 15.2316945,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Smržovka, průmyslová zóna",
+    "official_name": "Smržovka, prům. zóna",
+    "public_transport": "platform",
+    "ref:idol": "32289"
+  }
+},
+{
+  "type": "node",
+  "id": 4700330691,
+  "lat": 50.7262056,
+  "lon": 15.2314462,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Smržovka, průmyslová zóna",
+    "official_name": "Smržovka, prům. zóna",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 4701184376,
+  "lat": 50.7031568,
+  "lon": 15.4176755,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Počátky",
+    "official_name": "Jablonec n.Jiz.,Počátky,",
+    "public_transport": "platform",
+    "ref:idol": "12425"
+  }
+},
+{
+  "type": "node",
+  "id": 4701184377,
+  "lat": 50.7030063,
+  "lon": 15.4176925,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Počátky",
+    "official_name": "Jablonec n.Jiz.,Počátky,",
+    "public_transport": "platform",
+    "ref:idol": "12425"
+  }
+},
+{
+  "type": "node",
+  "id": 4703369845,
+  "lat": 50.7173672,
+  "lon": 15.2989092,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Velké Hamry, U Laurinů",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38667"
   }
 },
 {
@@ -6254,6 +7489,52 @@
 },
 {
   "type": "node",
+  "id": 4817327448,
+  "lat": 50.7220536,
+  "lon": 15.1711772,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "1",
+    "name": "Kamenná",
+    "name:cs": "Kamenná",
+    "official_name": "Jablonec n. Nisou, Kamenná",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51740",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4817327449,
+  "lat": 50.7222369,
+  "lon": 15.1713540,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "2",
+    "name": "Kamenná",
+    "name:cs": "Kamenná",
+    "official_name": "Jablonec n. Nisou, Kamenná",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51740",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
   "id": 4825357131,
   "lat": 50.7693874,
   "lon": 15.0603863,
@@ -6364,6 +7645,20 @@
 },
 {
   "type": "node",
+  "id": 4843185494,
+  "lat": 50.7020115,
+  "lon": 15.3274310,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Haratice",
+    "official_name": "Plavy, Haratice",
+    "public_transport": "platform",
+    "ref:idol": "8437"
+  }
+},
+{
+  "type": "node",
   "id": 4864010856,
   "lat": 50.9050202,
   "lon": 15.0999683,
@@ -6437,6 +7732,25 @@
 },
 {
   "type": "node",
+  "id": 4883997671,
+  "lat": 50.7249102,
+  "lon": 15.1713070,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Kino Radnice",
+    "official_name": "Jablonec n.Nisou, Kino Radnice",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51748",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
   "id": 4884382370,
   "lat": 50.9173207,
   "lon": 15.0728538,
@@ -6457,6 +7771,43 @@
     "name": "Nové Město p.Smrkem, Na Výsluní",
     "public_transport": "platform",
     "ref:CIS_JR": "23902"
+  }
+},
+{
+  "type": "node",
+  "id": 4889569281,
+  "lat": 50.7285151,
+  "lon": 15.1634066,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Petra Bezruče",
+    "official_name": "Jablonec n. Nisou, Petra Bezruče",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51734"
+  }
+},
+{
+  "type": "node",
+  "id": 4889569282,
+  "lat": 50.7288190,
+  "lon": 15.1633483,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Petra Bezruče",
+    "official_name": "Jablonec n. Nisou, Petra Bezruče",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51734",
+    "shelter": "yes"
   }
 },
 {
@@ -6494,6 +7845,185 @@
 },
 {
   "type": "node",
+  "id": 4911487526,
+  "lat": 50.7154749,
+  "lon": 15.1673477,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "3",
+    "name": "Revoluční",
+    "official_name": "Jablonec n. Nisou, Revoluční",
+    "public_transport": "platform",
+    "ref:idol": "51746"
+  }
+},
+{
+  "type": "node",
+  "id": 4911487527,
+  "lat": 50.7154312,
+  "lon": 15.1679319,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Revoluční",
+    "official_name": "Jablonec n. Nisou, Revoluční",
+    "public_transport": "platform",
+    "ref:idol": "51746"
+  }
+},
+{
+  "type": "node",
+  "id": 4912020099,
+  "lat": 50.7205560,
+  "lon": 15.1653822,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "2",
+    "name": "u gymnázia",
+    "official_name": "Jablonec n. Nisou, u gymnázia",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12445",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4912522149,
+  "lat": 50.7228347,
+  "lon": 15.1739181,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "10",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref": "10",
+    "route_ref": "101;107;110;112;121;130;115;132;116;106",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4912523457,
+  "lat": 50.7230529,
+  "lon": 15.1741724,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "8",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "8",
+    "route_ref": "342;940;955",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4912523750,
+  "lat": 50.7229168,
+  "lon": 15.1738050,
+  "tags": {
+    "amenity": "waste_basket",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "6",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref": "6",
+    "route_ref": "102;103;108;117;118;132",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4912575015,
+  "lat": 50.7229377,
+  "lon": 15.1662301,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Lázně",
+    "official_name": "Jablonec n. Nisou, lázně",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12435",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4912842337,
+  "lat": 50.7252445,
+  "lon": 15.1617556,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Budovatelů",
+    "official_name": "Jablonec n. Nisou, Budovatelů",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51741",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4914181753,
+  "lat": 50.7255483,
+  "lon": 15.1623079,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Liberecká",
+    "official_name": "Jablonec n. Nisou, Liberecká",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51655",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4920245994,
+  "lat": 50.7242722,
+  "lon": 15.1794948,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Podhorská Vikýř",
+    "official_name": "Jablonec n.Nisou,,Podhorská Vikýř",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51773",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
   "id": 4952312856,
   "lat": 50.9809115,
   "lon": 15.0774309,
@@ -6505,6 +8035,25 @@
     "public_transport": "platform",
     "ref:CIS_JR": "26322",
     "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4973343658,
+  "lat": 50.7074682,
+  "lon": 15.1340229,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "check_date:shelter": "2026-05-21",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "1",
+    "name": "Rádlo, u lesa",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
   }
 },
 {
@@ -6525,6 +8074,25 @@
   "tags": {
     "aerialway": "station",
     "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5061883920,
+  "lat": 50.7046381,
+  "lon": 15.4469876,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Buřany",
+    "official_name": "Jablonec n. Jiz., Buřany",
+    "public_transport": "platform",
+    "ref:idol": "12417",
+    "shelter": "yes",
+    "tactile_paving": "no"
   }
 },
 {
@@ -6559,6 +8127,23 @@
     "public_transport": "platform",
     "ref:CIS_JR": "8215",
     "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5167405839,
+  "lat": 50.7250130,
+  "lon": 15.1664470,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Divadlo",
+    "official_name": "Jablonec n.Nisou,,Divadlo",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51749"
   }
 },
 {
@@ -6624,6 +8209,211 @@
     "public_transport": "platform",
     "ref:dpmlj": "9742",
     "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5196686739,
+  "lat": 50.7233712,
+  "lon": 15.1861417,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Novoveská",
+    "official_name": "Jablonec n.Nisou,,Novoveská",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12439"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543935,
+  "lat": 50.7230750,
+  "lon": 15.1739794,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "7",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "7",
+    "route_ref": "141;740;955;960;341"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543936,
+  "lat": 50.7228646,
+  "lon": 15.1737690,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "5",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "5",
+    "route_ref": "104;106;114;116"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543937,
+  "lat": 50.7228188,
+  "lon": 15.1742042,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "14",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "14",
+    "route_ref": "842;960;750",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543938,
+  "lat": 50.7227355,
+  "lon": 15.1740486,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "13",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "13",
+    "route_ref": "843;851",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543939,
+  "lat": 50.7226498,
+  "lon": 15.1738877,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "12",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "12",
+    "route_ref": "740;741;742;743;750;900;167221;1300",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543940,
+  "lat": 50.7225352,
+  "lon": 15.1736973,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "11",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "11",
+    "route_ref": "900;167221;1300",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543941,
+  "lat": 50.7227679,
+  "lon": 15.1734885,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "1",
+    "route_ref": "107;108;133"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543942,
+  "lat": 50.7228773,
+  "lon": 15.1735577,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "2",
+    "route_ref": "105;113;130"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543943,
+  "lat": 50.7229725,
+  "lon": 15.1736105,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "3",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "3",
+    "route_ref": "101;115;121"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543944,
+  "lat": 50.7230407,
+  "lon": 15.1736593,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "4",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref": "4",
+    "route_ref": "114;105"
+  }
+},
+{
+  "type": "node",
+  "id": 5200543945,
+  "lat": 50.7229818,
+  "lon": 15.1741116,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "9",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "public_transport": "platform",
+    "ref": "9",
+    "route_ref": "150;151;395;795;841"
   }
 },
 {
@@ -6832,6 +8622,41 @@
 },
 {
   "type": "node",
+  "id": 5303732799,
+  "lat": 50.7244702,
+  "lon": 15.1773782,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Podhorská",
+    "official_name": "Jablonec n. Nisou, Podhorská",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51772",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5304712738,
+  "lat": 50.7146308,
+  "lon": 15.2922674,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, sokolovna",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38666"
+  }
+},
+{
+  "type": "node",
   "id": 5305456901,
   "lat": 50.7655669,
   "lon": 15.0581983,
@@ -6872,6 +8697,37 @@
     "source": "cuzk:km;know_ledge",
     "tactile_paving": "yes",
     "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5308073061,
+  "lat": 50.7224966,
+  "lon": 15.2215268,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5308073062,
+  "lat": 50.7196042,
+  "lon": 15.2261534,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5312443976,
+  "lat": 50.7235494,
+  "lon": 15.1942529,
+  "tags": {
+    "name": "Nová Ves nad Nisou",
+    "railway": "halt",
+    "wikidata": "Q66888790"
   }
 },
 {
@@ -6959,6 +8815,20 @@
 },
 {
   "type": "node",
+  "id": 5324485987,
+  "lat": 50.7015511,
+  "lon": 15.3563389,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, odbočka Stanový",
+    "official_name": "Zlatá Olešnice, odb. Stanový",
+    "public_transport": "platform",
+    "ref:idol": "41902"
+  }
+},
+{
+  "type": "node",
   "id": 5324485992,
   "lat": 50.7519688,
   "lon": 15.3314057,
@@ -7008,6 +8878,234 @@
 },
 {
   "type": "node",
+  "id": 5325141850,
+  "lat": 50.7177707,
+  "lon": 15.1627852,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Turnovská",
+    "official_name": "Jablonec n. Nisou, Turnovská",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51750"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141860,
+  "lat": 50.7231393,
+  "lon": 15.1661846,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Lázně",
+    "official_name": "Jablonec n. Nisou, lázně",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12435"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141861,
+  "lat": 50.7215157,
+  "lon": 15.1609126,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "V",
+    "name": "Hlavní nádraží (výstupní)",
+    "official_name": "Jablonec n. Nisou, hlavní nádraží",
+    "public_transport": "platform",
+    "ref:CIS_JR": "52475"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141867,
+  "lat": 50.7208395,
+  "lon": 15.1582379,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Ještědská",
+    "official_name": "Jablonec n. Nisou, Ještědská",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51769"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141868,
+  "lat": 50.7207572,
+  "lon": 15.1586080,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Ještědská",
+    "official_name": "Jablonec n. Nisou, Ještědská",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51769"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141870,
+  "lat": 50.7166145,
+  "lon": 15.1600644,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Mincovní",
+    "official_name": "Jablonec n. Nisou, Mincovní",
+    "old_name": "Jablonec n. Nisou, Masná",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51771"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141871,
+  "lat": 50.7158983,
+  "lon": 15.1610705,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "1",
+    "name": "Pod stadionem",
+    "official_name": "Jablonec n. Nisou, pod stadionem",
+    "public_transport": "platform",
+    "ref:idol": "12440",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141872,
+  "lat": 50.7090135,
+  "lon": 15.1741554,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Malé Vrkoslavice, has. zbroj.",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, has. zbroj.",
+    "public_transport": "platform",
+    "ref:idol": "51787"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141873,
+  "lat": 50.7091284,
+  "lon": 15.1742454,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Malé Vrkoslavice, has. zbroj.",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, has. zbroj.",
+    "public_transport": "platform",
+    "ref:idol": "51787"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141874,
+  "lat": 50.7078439,
+  "lon": 15.1762705,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Vrkoslavice, Janáčkova",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, Janáčkova",
+    "public_transport": "platform",
+    "ref:idol": "51788"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141876,
+  "lat": 50.7007717,
+  "lon": 15.1769766,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Kokonín, sokolovna",
+    "official_name": "Jablonec n. Nisou, Kokonín, sokolovna",
+    "public_transport": "platform",
+    "ref:idol": "51753"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141878,
+  "lat": 50.7006379,
+  "lon": 15.1777112,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Kokonín, sokolovna",
+    "official_name": "Jablonec n. Nisou, Kokonín, sokolovna",
+    "public_transport": "platform",
+    "ref:idol": "51753",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141885,
+  "lat": 50.7004066,
+  "lon": 15.1197560,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Rádlo, Potraviny",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5325141888,
+  "lat": 50.7023029,
+  "lon": 15.0928822,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "check_date:shelter": "2026-06-06",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Jeřmanice, křižovatka",
+    "official_name": "Jeřmanice, křiž.",
+    "public_transport": "platform",
+    "ref:idol": "13026",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
   "id": 5338922515,
   "lat": 50.7415651,
   "lon": 15.1987805,
@@ -7024,6 +9122,38 @@
     "shelter": "no",
     "sign": "yes",
     "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5406901546,
+  "lat": 50.7218532,
+  "lon": 15.1828875,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jarní",
+    "official_name": "Jablonec n. Nisou, Jarní",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51774"
+  }
+},
+{
+  "type": "node",
+  "id": 5406901547,
+  "lat": 50.7218073,
+  "lon": 15.1829928,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jarní",
+    "official_name": "Jablonec n. Nisou, Jarní",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51774"
   }
 },
 {
@@ -7283,6 +9413,46 @@
 },
 {
   "type": "node",
+  "id": 5437737373,
+  "lat": 50.7271228,
+  "lon": 15.1706211,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "1",
+    "name": "Horní náměstí",
+    "official_name": "Jablonec n. Nisou, Horní nám.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12433",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5646229921,
+  "lat": 50.7209403,
+  "lon": 15.1607891,
+  "tags": {
+    "name": "Jablonec nad Nisou",
+    "name:de": "Gablonz an der Neiße",
+    "operator": "Správa železnic",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "550921",
+    "ref:ibnr": "5400262",
+    "train": "yes",
+    "uic_ref": "5455092",
+    "website": "https://www.cd.cz/stanice/5455092",
+    "wikidata": "Q18180270",
+    "wikipedia": "cs:Jablonec nad Nisou (nádraží)"
+  }
+},
+{
+  "type": "node",
   "id": 5681051516,
   "lat": 50.8760586,
   "lon": 15.2061778,
@@ -7354,6 +9524,21 @@
 },
 {
   "type": "node",
+  "id": 5681074605,
+  "lat": 50.7121613,
+  "lon": 15.4228582,
+  "tags": {
+    "name": "Rokytnice nad Jizerou",
+    "operator": "cz:SŽDC",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "571109",
+    "wheelchair": "no",
+    "wikidata": "Q18180491"
+  }
+},
+{
+  "type": "node",
   "id": 5684024023,
   "lat": 50.9247651,
   "lon": 15.2242039,
@@ -7414,6 +9599,66 @@
     "railway:ref": "549527",
     "wheelchair": "yes",
     "wikidata": "Q18180538"
+  }
+},
+{
+  "type": "node",
+  "id": 5777539978,
+  "lat": 50.7039478,
+  "lon": 15.1852353,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "5",
+    "name": "Kokonín, pošta",
+    "official_name": "Jablonec n. Nisou, Kokonín, pošta",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51752"
+  }
+},
+{
+  "type": "node",
+  "id": 5777539979,
+  "lat": 50.7030266,
+  "lon": 15.1859171,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Kokonín, pošta",
+    "official_name": "Jablonec n. Nisou, Kokonín, pošta",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51752"
+  }
+},
+{
+  "type": "node",
+  "id": 5777539980,
+  "lat": 50.7030763,
+  "lon": 15.1856439,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Kokonín, pošta",
+    "official_name": "Jablonec n. Nisou, Kokonín, pošta",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51752"
+  }
+},
+{
+  "type": "node",
+  "id": 5777539981,
+  "lat": 50.7216613,
+  "lon": 15.1883087,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "hostinec U lípy",
+    "official_name": "Jablonec n. Nisou, host. U lípy",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12434"
   }
 },
 {
@@ -7508,6 +9753,20 @@
 },
 {
   "type": "node",
+  "id": 5794172460,
+  "lat": 50.7021005,
+  "lon": 15.3275292,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Haratice",
+    "official_name": "Plavy, Haratice",
+    "public_transport": "platform",
+    "ref:idol": "8437"
+  }
+},
+{
+  "type": "node",
   "id": 5805054115,
   "lat": 50.7888594,
   "lon": 15.0505520,
@@ -7546,6 +9805,50 @@
     "shelter": "no",
     "tactile_paving": "no",
     "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5808184327,
+  "lat": 50.7271425,
+  "lon": 15.1618537,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "2",
+    "name": "Nemocniční",
+    "official_name": "Jablonec n. Nisou, Nemocniční",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51789",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5808184328,
+  "lat": 50.7272919,
+  "lon": 15.1616059,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "1",
+    "name": "Nemocniční",
+    "official_name": "Jablonec n. Nisou, Nemocniční",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:idol": "51789",
+    "shelter": "no",
+    "tactile_paving": "no"
   }
 },
 {
@@ -7629,6 +9932,66 @@
     "shelter": "yes",
     "tactile_paving": "no",
     "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5844600700,
+  "lat": 50.7258714,
+  "lon": 15.1708293,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "2",
+    "name": "Obchodní akademie",
+    "official_name": "Jablonec n.Nisou,,Obchodní akademie",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51744",
+    "shelter": "yes",
+    "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5844600701,
+  "lat": 50.7252767,
+  "lon": 15.1719534,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Obchodní akademie",
+    "official_name": "Jablonec n.Nisou,,Obchodní akademie",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51744"
+  }
+},
+{
+  "type": "node",
+  "id": 5844600706,
+  "lat": 50.7243763,
+  "lon": 15.1773913,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Podhorská",
+    "official_name": "Jablonec n. Nisou, Podhorská",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51772",
+    "shelter": "no",
+    "tactile_paving": "no"
   }
 },
 {
@@ -8105,6 +10468,74 @@
 },
 {
   "type": "node",
+  "id": 5888682610,
+  "lat": 50.7187184,
+  "lon": 15.0557987,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Minkovice statek",
+    "official_name": "Šimonovice, Minkovice, statek",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51702",
+    "ref:dpmlj": "11472",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5888682611,
+  "lat": 50.7191353,
+  "lon": 15.0552387,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Minkovice statek",
+    "official_name": "Šimonovice, Minkovice, statek",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51702",
+    "ref:dpmlj": "11462",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5888682612,
+  "lat": 50.7135010,
+  "lon": 15.0546370,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Minkovice železniční přejezd",
+    "official_name": "Šimonovice, Minkovice, žel. přejezd",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51698",
+    "ref:dpmlj": "11492",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5888682613,
+  "lat": 50.7136116,
+  "lon": 15.0546532,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Minkovice železniční přejezd",
+    "official_name": "Šimonovice, Minkovice, žel. přejezd",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51698",
+    "ref:dpmlj": "11482",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
   "id": 5907520827,
   "lat": 50.7585536,
   "lon": 15.2924216,
@@ -8133,6 +10564,24 @@
 },
 {
   "type": "node",
+  "id": 5907899641,
+  "lat": 50.7005843,
+  "lon": 15.3064281,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 5907899642,
+  "lat": 50.7025447,
+  "lon": 15.3138149,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
   "id": 5915596288,
   "lat": 50.8904659,
   "lon": 15.1911910,
@@ -8151,6 +10600,32 @@
     "public_transport": "platform",
     "ref:CIS_JR": "17578",
     "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5924361319,
+  "lat": 50.7008039,
+  "lon": 15.3920757,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 6049575889,
+  "lat": 50.7032604,
+  "lon": 15.4296050,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Jablonec nad Jizerou, náměstí",
+    "official_name": "Jablonec n. Jiz., nám.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12413",
+    "ref:PID": "U31202Z1"
   }
 },
 {
@@ -8555,6 +11030,59 @@
 },
 {
   "type": "node",
+  "id": 6071498010,
+  "lat": 50.7268741,
+  "lon": 15.1821063,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Podzimní",
+    "official_name": "Jablonec n.Nisou,,Podzimní",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51738"
+  }
+},
+{
+  "type": "node",
+  "id": 6071498011,
+  "lat": 50.7279456,
+  "lon": 15.1830957,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Vysoká",
+    "official_name": "Jablonec n. Nisou, Vysoká",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51737",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6071498013,
+  "lat": 50.7296311,
+  "lon": 15.1818930,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Mánesova",
+    "official_name": "Jablonec n. Nisou, Mánesova",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51742"
+  }
+},
+{
+  "type": "node",
   "id": 6071498014,
   "lat": 50.7316323,
   "lon": 15.1784407,
@@ -8918,6 +11446,21 @@
     "name": "Doubí obilná",
     "public_transport": "platform",
     "ref:dpmlj": "11372",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6092104140,
+  "lat": 50.7299991,
+  "lon": 15.0543541,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Doubí obilná",
+    "public_transport": "platform",
+    "ref:dpmlj": "11382",
     "wheelchair": "no"
   }
 },
@@ -10000,6 +12543,44 @@
 },
 {
   "type": "node",
+  "id": 6855336577,
+  "lat": 50.7025989,
+  "lon": 15.0762389,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "2",
+    "name": "Jeřmanice, Javorník",
+    "public_transport": "platform",
+    "ref:idol": "47430",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6855336578,
+  "lat": 50.7024870,
+  "lon": 15.0761772,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "1",
+    "name": "Jeřmanice, Javorník",
+    "public_transport": "platform",
+    "ref:idol": "47430",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
   "id": 6855395988,
   "lat": 50.7483105,
   "lon": 15.1352342,
@@ -11037,6 +13618,333 @@
 },
 {
   "type": "node",
+  "id": 7717246703,
+  "lat": 50.7270744,
+  "lon": 15.1762450,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "klub Woko",
+    "official_name": "Jablonec n. Nisou, klub Woko",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51736"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246704,
+  "lat": 50.7270243,
+  "lon": 15.1763687,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "klub Woko",
+    "official_name": "Jablonec n. Nisou, klub Woko",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51736"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246705,
+  "lat": 50.7241269,
+  "lon": 15.1595047,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vodní",
+    "official_name": "Jablonec n. Nisou, Vodní",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51791"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246706,
+  "lat": 50.7190360,
+  "lon": 15.1607050,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Skřivánčí",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51770"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246707,
+  "lat": 50.7194975,
+  "lon": 15.1602969,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Skřivánčí",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51770"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246708,
+  "lat": 50.7171561,
+  "lon": 15.1625430,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Turnovská",
+    "official_name": "Jablonec n. Nisou, Turnovská",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51750"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246710,
+  "lat": 50.7248565,
+  "lon": 15.1762404,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Mlýnská",
+    "official_name": "Jablonec n. Nisou, Mlýnská",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51735"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246711,
+  "lat": 50.7249531,
+  "lon": 15.1763368,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Mlýnská",
+    "official_name": "Jablonec n. Nisou, Mlýnská",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51735"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246712,
+  "lat": 50.7233258,
+  "lon": 15.1791593,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "ZŠ 5. května",
+    "official_name": "Jablonec n. Nisou, ZŠ 5. května",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12428",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246713,
+  "lat": 50.7232631,
+  "lon": 15.1798681,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "1",
+    "name": "ZŠ 5. května",
+    "official_name": "Jablonec n. Nisou, ZŠ 5. května",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12428",
+    "shelter": "no",
+    "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246717,
+  "lat": 50.7210169,
+  "lon": 15.1766051,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Raisova",
+    "official_name": "Jablonec n.Nisou,,Raisova",
+    "public_transport": "platform",
+    "ref:CIS_JR": "53912"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246718,
+  "lat": 50.7208802,
+  "lon": 15.1768921,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Raisova",
+    "official_name": "Jablonec n.Nisou,,Raisova",
+    "public_transport": "platform",
+    "ref:CIS_JR": "53912"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246725,
+  "lat": 50.7187546,
+  "lon": 15.1781604,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Lesní",
+    "official_name": "Jablonec n.Nisou,,Lesní",
+    "public_transport": "platform",
+    "ref:CIS_JR": "53911"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246727,
+  "lat": 50.7186124,
+  "lon": 15.1781691,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Lesní",
+    "official_name": "Jablonec n.Nisou,,Lesní",
+    "public_transport": "platform",
+    "ref:CIS_JR": "53911"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246739,
+  "lat": 50.7185698,
+  "lon": 15.1801296,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Liliová",
+    "official_name": "Jablonec n. Nisou, Liliová",
+    "public_transport": "platform",
+    "ref:CIS_JR": "54735"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246747,
+  "lat": 50.7185690,
+  "lon": 15.1802554,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Liliová",
+    "official_name": "Jablonec n. Nisou, Liliová",
+    "public_transport": "platform",
+    "ref:CIS_JR": "54735"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246748,
+  "lat": 50.7203482,
+  "lon": 15.1846363,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Milířová",
+    "official_name": "Jablonec n. Nisou, Milířová",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51782"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246749,
+  "lat": 50.7202574,
+  "lon": 15.1846739,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Milířová",
+    "official_name": "Jablonec n. Nisou, Milířová",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51782"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246750,
+  "lat": 50.7180082,
+  "lon": 15.1877470,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "na Hutích sklárna",
+    "official_name": "Jablonec n. Nisou, na Hutích sklárna",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51783"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246751,
+  "lat": 50.7177598,
+  "lon": 15.1875935,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "na Hutích sklárna",
+    "official_name": "Jablonec n. Nisou, na Hutích sklárna",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51783"
+  }
+},
+{
+  "type": "node",
+  "id": 7717246757,
+  "lat": 50.7159707,
+  "lon": 15.1876585,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "na Hutích",
+    "official_name": "Jablonec n. Nisou, na Hutích",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12437"
+  }
+},
+{
+  "type": "node",
   "id": 7986555523,
   "lat": 50.7651905,
   "lon": 15.0583348,
@@ -11066,6 +13974,22 @@
     "name": "Harrachov, Diana",
     "public_transport": "platform",
     "ref:idol": "47835"
+  }
+},
+{
+  "type": "node",
+  "id": 8018314466,
+  "lat": 50.7002708,
+  "lon": 15.4346467,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Jablonec nad Jizerou, železniční stanice",
+    "official_name": "Jablonec n. Jiz., žel. st.",
+    "public_transport": "platform",
+    "ref:PID": "U32511Z1",
+    "ref:idol": "12415"
   }
 },
 {
@@ -11841,6 +14765,61 @@
 },
 {
   "type": "node",
+  "id": 8228699607,
+  "lat": 50.7260481,
+  "lon": 15.2286695,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Smržovka, pramen Nisy",
+    "public_transport": "platform",
+    "ref:idol": "64399"
+  }
+},
+{
+  "type": "node",
+  "id": 8228699608,
+  "lat": 50.7261635,
+  "lon": 15.2288747,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Smržovka, pramen Nisy",
+    "public_transport": "platform",
+    "ref:idol": "64399"
+  }
+},
+{
+  "type": "node",
+  "id": 8228699609,
+  "lat": 50.7270456,
+  "lon": 15.2397135,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Smržovka, sáňkařská dráha",
+    "public_transport": "platform",
+    "ref:idol": "32294"
+  }
+},
+{
+  "type": "node",
+  "id": 8228699610,
+  "lat": 50.7272625,
+  "lon": 15.2410693,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Smržovka, sáňkařská dráha",
+    "public_transport": "platform",
+    "ref:idol": "32294",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
   "id": 8228699612,
   "lat": 50.7309789,
   "lon": 15.2528824,
@@ -11873,6 +14852,19 @@
     "ref:idol": "32295",
     "shelter": "yes",
     "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8228699614,
+  "lat": 50.7298262,
+  "lon": 15.2650081,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Smržovka, Zvonková",
+    "public_transport": "platform",
+    "ref:idol": "56801"
   }
 },
 {
@@ -12320,6 +15312,126 @@
     "ref:idol": "35427",
     "shelter": "yes",
     "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8230349855,
+  "lat": 50.7220561,
+  "lon": 15.4171617,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "4",
+    "name": "Rokytnice nad Jizerou, odbočka Paseky",
+    "official_name": "Rokytnice n. Jiz., odb. Paseky",
+    "public_transport": "platform",
+    "ref:idol": "29966"
+  }
+},
+{
+  "type": "node",
+  "id": 8230349856,
+  "lat": 50.7220969,
+  "lon": 15.4172234,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "3",
+    "name": "Rokytnice nad Jizerou, odbočka Paseky",
+    "official_name": "Rokytnice n. Jiz., odb. Paseky",
+    "public_transport": "platform",
+    "ref:idol": "29966"
+  }
+},
+{
+  "type": "node",
+  "id": 8230349867,
+  "lat": 50.7183011,
+  "lon": 15.4047467,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Paseky nad Jizerou, pila",
+    "official_name": "Paseky n. Jiz., pila",
+    "public_transport": "platform",
+    "ref:idol": "25997"
+  }
+},
+{
+  "type": "node",
+  "id": 8230349868,
+  "lat": 50.7183614,
+  "lon": 15.4047042,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Paseky nad Jizerou, pila",
+    "official_name": "Paseky n. Jiz., pila",
+    "public_transport": "platform",
+    "ref:idol": "25997"
+  }
+},
+{
+  "type": "node",
+  "id": 8230349891,
+  "lat": 50.7222713,
+  "lon": 15.4173186,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Rokytnice nad Jizerou, odbočka Paseky",
+    "official_name": "Rokytnice n. Jiz., odb. Paseky",
+    "public_transport": "platform",
+    "ref:idol": "29966"
+  }
+},
+{
+  "type": "node",
+  "id": 8230349892,
+  "lat": 50.7224798,
+  "lon": 15.4174045,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Rokytnice nad Jizerou, odbočka Paseky",
+    "official_name": "Rokytnice n. Jiz., odb. Paseky",
+    "public_transport": "platform",
+    "ref:idol": "29966"
+  }
+},
+{
+  "type": "node",
+  "id": 8230349893,
+  "lat": 50.7230197,
+  "lon": 15.4150636,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Paseky nad Jizerou, papírna",
+    "official_name": "Paseky n. Jiz., papírna",
+    "public_transport": "platform",
+    "ref:idol": "25996"
+  }
+},
+{
+  "type": "node",
+  "id": 8230349894,
+  "lat": 50.7231147,
+  "lon": 15.4150041,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Paseky nad Jizerou, papírna",
+    "official_name": "Paseky n. Jiz., papírna",
+    "public_transport": "platform",
+    "ref:idol": "25996"
   }
 },
 {
@@ -12900,6 +16012,128 @@
 },
 {
   "type": "node",
+  "id": 8237547883,
+  "lat": 50.7023409,
+  "lon": 15.0930141,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "check_date:shelter": "2026-06-06",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Jeřmanice, křižovatka",
+    "official_name": "Jeřmanice, křiž.",
+    "public_transport": "platform",
+    "ref:idol": "13026",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8237547903,
+  "lat": 50.7208114,
+  "lon": 15.0595032,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Vesec, rozcestí Minkovice",
+    "official_name": "Liberec, Vesec, rozc. Minkovice",
+    "public_transport": "platform",
+    "ref:idol": "18216"
+  }
+},
+{
+  "type": "node",
+  "id": 8237547904,
+  "lat": 50.7158170,
+  "lon": 15.0672689,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Dlouhý Most, dolní ves",
+    "official_name": "Dlouhý Most, dol. ves",
+    "public_transport": "platform",
+    "ref:idol": "5932"
+  }
+},
+{
+  "type": "node",
+  "id": 8237547906,
+  "lat": 50.7211530,
+  "lon": 15.0590662,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Vesec, rozcestí Minkovice",
+    "official_name": "Liberec, Vesec, rozc. Minkovice",
+    "public_transport": "platform",
+    "ref:idol": "18216"
+  }
+},
+{
+  "type": "node",
+  "id": 8237547907,
+  "lat": 50.7159020,
+  "lon": 15.0672132,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Dlouhý Most, dolní ves",
+    "official_name": "Dlouhý Most, dol. ves",
+    "public_transport": "platform",
+    "ref:idol": "5932"
+  }
+},
+{
+  "type": "node",
+  "id": 8237547908,
+  "lat": 50.7089159,
+  "lon": 15.0797405,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Dlouhý Most, u pekárny",
+    "public_transport": "platform",
+    "ref:idol": "5933"
+  }
+},
+{
+  "type": "node",
+  "id": 8237547909,
+  "lat": 50.7088168,
+  "lon": 15.0797924,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Dlouhý Most, u pekárny",
+    "public_transport": "platform",
+    "ref:idol": "5933"
+  }
+},
+{
+  "type": "node",
+  "id": 8237547910,
+  "lat": 50.7117150,
+  "lon": 15.0759300,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Dlouhý Most, U tří lip",
+    "public_transport": "platform",
+    "ref:idol": "5934"
+  }
+},
+{
+  "type": "node",
   "id": 8242149428,
   "lat": 50.7416434,
   "lon": 15.1985255,
@@ -13357,6 +16591,256 @@
 },
 {
   "type": "node",
+  "id": 8270180837,
+  "lat": 50.7112852,
+  "lon": 15.2842877,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Velké Hamry, u Richtrů",
+    "public_transport": "platform",
+    "ref:idol": "38669"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180838,
+  "lat": 50.7069036,
+  "lon": 15.2867509,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zásada, Šisovna",
+    "public_transport": "platform",
+    "ref:idol": "41473"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180839,
+  "lat": 50.7231268,
+  "lon": 15.3044130,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, Pirochova vila",
+    "public_transport": "platform",
+    "ref:idol": "38663"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180841,
+  "lat": 50.7118513,
+  "lon": 15.3140871,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, železniční stanice",
+    "official_name": "Velké Hamry, žel. st.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "63439"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180842,
+  "lat": 50.7118697,
+  "lon": 15.3141696,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Velké Hamry, železniční stanice",
+    "official_name": "Velké Hamry, žel. st.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "63439"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180843,
+  "lat": 50.7140851,
+  "lon": 15.3112607,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Velké Hamry, škola",
+    "public_transport": "platform",
+    "ref:CIS_JR": "56800"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180844,
+  "lat": 50.7142002,
+  "lon": 15.3112976,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, škola",
+    "public_transport": "platform",
+    "ref:CIS_JR": "56800"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180845,
+  "lat": 50.7239342,
+  "lon": 15.3149681,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, Lidový dům",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38661"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180901,
+  "lat": 50.7128245,
+  "lon": 15.3487171,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, Hořenec",
+    "public_transport": "platform",
+    "ref:idol": "41900"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180902,
+  "lat": 50.7128453,
+  "lon": 15.3486431,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, Hořenec",
+    "public_transport": "platform",
+    "ref:idol": "41900"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180903,
+  "lat": 50.7015450,
+  "lon": 15.3562219,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, odbočka Stanový",
+    "official_name": "Zlatá Olešnice, odb. Stanový",
+    "public_transport": "platform",
+    "ref:idol": "41902"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180904,
+  "lat": 50.7053264,
+  "lon": 15.3544785,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, pošta",
+    "public_transport": "platform",
+    "ref:idol": "41903",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180905,
+  "lat": 50.7067685,
+  "lon": 15.3515415,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, u domu č. 42",
+    "public_transport": "platform",
+    "ref:idol": "41904"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180906,
+  "lat": 50.7067839,
+  "lon": 15.3516406,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, u domu č. 42",
+    "public_transport": "platform",
+    "ref:idol": "41904"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180907,
+  "lat": 50.7021438,
+  "lon": 15.3465781,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, hostinec Na Vrších",
+    "public_transport": "platform",
+    "ref:idol": "41901"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180908,
+  "lat": 50.7020496,
+  "lon": 15.3466051,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zlatá Olešnice, hostinec Na Vrších",
+    "public_transport": "platform",
+    "ref:idol": "41901",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8270180911,
+  "lat": 50.7041699,
+  "lon": 15.3370628,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Haratice, U lipky",
+    "official_name": "Plavy, Haratice, U lipky",
+    "public_transport": "platform",
+    "ref:idol": "8438",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8273093278,
+  "lat": 50.7295210,
+  "lon": 15.1574166,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Koloniál",
+    "official_name": "Jablonec n. Nisou, Koloniál",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "52477"
+  }
+},
+{
+  "type": "node",
   "id": 8273093309,
   "lat": 50.7315336,
   "lon": 15.1501777,
@@ -13486,6 +16970,40 @@
 },
 {
   "type": "node",
+  "id": 8412764181,
+  "lat": 50.7292890,
+  "lon": 15.1580022,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Koloniál",
+    "official_name": "Jablonec n. Nisou, Koloniál",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "52477"
+  }
+},
+{
+  "type": "node",
+  "id": 8412764184,
+  "lat": 50.7265954,
+  "lon": 15.1668380,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "ul. 28. října",
+    "official_name": "Jablonec n. Nisou, ul. 28. října",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "66600"
+  }
+},
+{
+  "type": "node",
   "id": 8440238335,
   "lat": 50.7336804,
   "lon": 15.3736711,
@@ -13500,6 +17018,120 @@
 },
 {
   "type": "node",
+  "id": 8440238336,
+  "lat": 50.7260285,
+  "lon": 15.3737743,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Rejdice, chata Espero",
+    "official_name": "Kořenov, Rejdice, chata Espero",
+    "public_transport": "platform",
+    "ref:idol": "29731"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238337,
+  "lat": 50.7126301,
+  "lon": 15.3823178,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Paseky nad Jizerou, rozcestí",
+    "official_name": "Paseky n. Jiz., rozc.",
+    "public_transport": "platform",
+    "ref:idol": "25998",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238338,
+  "lat": 50.7048380,
+  "lon": 15.3899252,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sklenařice, u školy",
+    "official_name": "Vysoké n. Jiz., Sklenařice, u školy",
+    "public_transport": "platform",
+    "ref:idol": "40893"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238339,
+  "lat": 50.7030106,
+  "lon": 15.4002350,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sklenařice, Soch. Vršek",
+    "official_name": "Vysoké n. Jiz., Sklenařice, Soch. Vršek",
+    "public_transport": "platform",
+    "ref:idol": "40892"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238347,
+  "lat": 50.7030665,
+  "lon": 15.4003336,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sklenařice, Soch. Vršek",
+    "official_name": "Vysoké n. Jiz., Sklenařice, Soch. Vršek",
+    "public_transport": "platform",
+    "ref:idol": "40892"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238350,
+  "lat": 50.7263405,
+  "lon": 15.3739345,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Rejdice, chata Espero",
+    "official_name": "Kořenov, Rejdice, chata Espero",
+    "public_transport": "platform",
+    "ref:idol": "29731"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238351,
+  "lat": 50.7048576,
+  "lon": 15.3896620,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sklenařice, u školy",
+    "official_name": "Vysoké n. Jiz., Sklenařice, u školy",
+    "public_transport": "platform",
+    "ref:idol": "40893"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238352,
+  "lat": 50.7126347,
+  "lon": 15.3824319,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Paseky nad Jizerou, rozcestí",
+    "official_name": "Paseky n. Jiz., rozc.",
+    "public_transport": "platform",
+    "ref:idol": "25998",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
   "id": 8440238358,
   "lat": 50.7337963,
   "lon": 15.3738397,
@@ -13510,6 +17142,480 @@
     "official_name": "Kořenov, Rejdice, host.",
     "public_transport": "platform",
     "ref:idol": "29730"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238376,
+  "lat": 50.7212385,
+  "lon": 15.3908694,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Paseky nad Jizerou, V koutě",
+    "official_name": "Paseky n. Jiz., V koutě",
+    "public_transport": "platform",
+    "ref:idol": "26000"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238378,
+  "lat": 50.7230987,
+  "lon": 15.3979357,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Paseky nad Jizerou, střed",
+    "official_name": "Paseky n. Jiz., střed",
+    "public_transport": "platform",
+    "ref:idol": "25999"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238383,
+  "lat": 50.7212846,
+  "lon": 15.3908781,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Paseky nad Jizerou, V koutě",
+    "official_name": "Paseky n. Jiz., V koutě",
+    "public_transport": "platform",
+    "ref:idol": "26000",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8440238384,
+  "lat": 50.7232287,
+  "lon": 15.3980460,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Paseky nad Jizerou, střed",
+    "official_name": "Paseky n. Jiz., střed",
+    "public_transport": "platform",
+    "ref:idol": "25999"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548820,
+  "lat": 50.7230308,
+  "lon": 15.1945545,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Železniční zastávka Nová Ves",
+    "official_name": "Jablonec n. Nisou, žel. zast. Nová Ves",
+    "public_transport": "platform",
+    "ref:CIS_JR": "47448"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548821,
+  "lat": 50.7240182,
+  "lon": 15.2259833,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Nová Ves nad Nisou, u Nisy",
+    "official_name": "Nová Ves n. Nisou, u Nisy",
+    "public_transport": "platform",
+    "ref:idol": "23685"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548822,
+  "lat": 50.7240411,
+  "lon": 15.2052337,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Nová Ves nad Nisou, dolní ves",
+    "official_name": "Nová Ves n. Nisou, dol. ves",
+    "public_transport": "platform",
+    "ref:idol": "23683"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548823,
+  "lat": 50.7252046,
+  "lon": 15.2137584,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Nová Ves nad Nisou, ObÚ",
+    "official_name": "Nová Ves n. Nisou, ObÚ",
+    "public_transport": "platform",
+    "ref:idol": "23684"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548824,
+  "lat": 50.7066938,
+  "lon": 15.2078904,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Dolní Černá Studnice",
+    "official_name": "Pěnčín, Dolní Černá Studnice",
+    "public_transport": "platform",
+    "ref:idol": "6459"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548833,
+  "lat": 50.7079277,
+  "lon": 15.1762467,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Vrkoslavice, Janáčkova",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, Janáčkova",
+    "public_transport": "platform",
+    "ref:idol": "51788"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548834,
+  "lat": 50.7083467,
+  "lon": 15.1766543,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Vrkoslavice",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice",
+    "public_transport": "platform",
+    "ref:idol": "40468"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548835,
+  "lat": 50.7032934,
+  "lon": 15.1859010,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "3",
+    "name": "Kokonín, pošta",
+    "official_name": "Jablonec n. Nisou, Kokonín, pošta",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51752"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548836,
+  "lat": 50.7038721,
+  "lon": 15.1859141,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "4",
+    "name": "Kokonín, pošta",
+    "official_name": "Jablonec n. Nisou, Kokonín, pošta",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51752",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548838,
+  "lat": 50.7163622,
+  "lon": 15.1614205,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Pod stadionem",
+    "official_name": "Jablonec n. Nisou, pod stadionem",
+    "public_transport": "platform",
+    "ref:idol": "12440",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548839,
+  "lat": 50.7165473,
+  "lon": 15.1598279,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Mincovní",
+    "official_name": "Jablonec n. Nisou, Mincovní",
+    "old_name": "Jablonec n. Nisou, Masná",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51771"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548840,
+  "lat": 50.7048074,
+  "lon": 15.1797836,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Kokonín, Horní Kokonín",
+    "official_name": "Jablonec n. Nisou, Kokonín, Horní Kokonín",
+    "public_transport": "platform",
+    "ref:idol": "51751"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548854,
+  "lat": 50.7106064,
+  "lon": 15.1680998,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Malé Vrkoslavice",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, Malé Vrkoslavice",
+    "public_transport": "platform",
+    "ref:idol": "51786"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548856,
+  "lat": 50.7075859,
+  "lon": 15.1341820,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "2",
+    "name": "Rádlo, u lesa",
+    "official_name": "Rádlo, u lesa",
+    "public_transport": "platform",
+    "ref:idol": "29253",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548857,
+  "lat": 50.7060356,
+  "lon": 15.1294063,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "1",
+    "name": "Rádlo, restaurace na Rychtě",
+    "official_name": "Rádlo, rest. na Rychtě",
+    "public_transport": "platform",
+    "ref:idol": "29251",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548858,
+  "lat": 50.7007346,
+  "lon": 15.1509954,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Rychnov, odbočka Dobrá Voda",
+    "official_name": "Rychnov u Jablonce n. Nisou, odb. Dobrá Voda",
+    "public_transport": "platform",
+    "ref:idol": "52480",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548868,
+  "lat": 50.7049450,
+  "lon": 15.1805290,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Kokonín, Horní Kokonín",
+    "official_name": "Jablonec n. Nisou, Kokonín, Horní Kokonín",
+    "public_transport": "platform",
+    "ref:idol": "51751"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548869,
+  "lat": 50.7251986,
+  "lon": 15.2142114,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Nová Ves nad Nisou, ObÚ",
+    "official_name": "Nová Ves n. Nisou, ObÚ",
+    "public_transport": "platform",
+    "ref:idol": "23684"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548870,
+  "lat": 50.7241087,
+  "lon": 15.2254369,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Nová Ves nad Nisou, u Nisy",
+    "official_name": "Nová Ves n. Nisou, u Nisy",
+    "public_transport": "platform",
+    "ref:idol": "23685"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548871,
+  "lat": 50.7075799,
+  "lon": 15.1854275,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Krkonošská",
+    "official_name": "Jablonec n. Nisou, Kokonín, Krkonošská",
+    "public_transport": "platform",
+    "ref:CIS_JR": "14968"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548873,
+  "lat": 50.7061861,
+  "lon": 15.2082997,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Dolní Černá Studnice",
+    "official_name": "Pěnčín, Dolní Černá Studnice",
+    "public_transport": "platform",
+    "ref:idol": "6459"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548874,
+  "lat": 50.7110123,
+  "lon": 15.1682392,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Malé Vrkoslavice",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, Malé Vrkoslavice",
+    "public_transport": "platform",
+    "ref:idol": "51786"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548879,
+  "lat": 50.7239854,
+  "lon": 15.2053466,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Nová Ves nad Nisou, dolní ves",
+    "official_name": "Nová Ves n. Nisou, dol. ves",
+    "public_transport": "platform",
+    "ref:idol": "23683"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548880,
+  "lat": 50.7060721,
+  "lon": 15.1292203,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "2",
+    "name": "Rádlo, restaurace na Rychtě",
+    "official_name": "Rádlo, rest. na Rychtě",
+    "public_transport": "platform",
+    "ref:idol": "29251",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548881,
+  "lat": 50.7005467,
+  "lon": 15.1509640,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Rychnov, odbočka Dobrá Voda",
+    "official_name": "Rychnov u Jablonce n. Nisou, odb. Dobrá Voda",
+    "public_transport": "platform",
+    "ref:idol": "52480",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8443548882,
+  "lat": 50.7231383,
+  "lon": 15.1943609,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Železniční zastávka Nová Ves",
+    "official_name": "Jablonec n. Nisou, žel. zast. Nová Ves",
+    "public_transport": "platform",
+    "ref:CIS_JR": "47448"
   }
 },
 {
@@ -13585,6 +17691,21 @@
     "official_name": "Lučany n.Nisou,Jindřichov,u transf.",
     "public_transport": "platform",
     "ref:CIS_JR": "51936"
+  }
+},
+{
+  "type": "node",
+  "id": 8499512378,
+  "lat": 50.7296737,
+  "lon": 15.1596961,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Nemocnice hl. vchod",
+    "official_name": "Jablonec n. Nisou, nemocnice hl. vchod",
+    "public_transport": "platform",
+    "ref:CIS_JR": "67356"
   }
 },
 {
@@ -13677,6 +17798,25 @@
     "name": "Desná, střed",
     "public_transport": "platform",
     "ref:CIS_JR": "5570"
+  }
+},
+{
+  "type": "node",
+  "id": 8506515512,
+  "lat": 50.7045535,
+  "lon": 15.4469336,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Buřany",
+    "official_name": "Jablonec n. Jiz., Buřany",
+    "public_transport": "platform",
+    "ref:idol": "12417",
+    "shelter": "no",
+    "tactile_paving": "no"
   }
 },
 {
@@ -13877,6 +18017,43 @@
 },
 {
   "type": "node",
+  "id": 8849263060,
+  "lat": 50.7266831,
+  "lon": 15.1667829,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "ul. 28. října",
+    "official_name": "Jablonec n. Nisou, ul. 28. října",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "66600"
+  }
+},
+{
+  "type": "node",
+  "id": 8849263061,
+  "lat": 50.7269369,
+  "lon": 15.1703744,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "2",
+    "name": "Horní náměstí",
+    "official_name": "Jablonec n. Nisou, Horní nám.",
+    "public_transport": "platform",
+    "ref:CIS_JR": "12433",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
   "id": 8849263062,
   "lat": 50.7318070,
   "lon": 15.1714177,
@@ -14063,6 +18240,22 @@
 },
 {
   "type": "node",
+  "id": 9274918111,
+  "lat": 50.7259032,
+  "lon": 15.1598553,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "3",
+    "name": "Liberecká",
+    "official_name": "Jablonec n. Nisou, Liberecká",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51655",
+    "ref:dpmlj": "13972"
+  }
+},
+{
+  "type": "node",
   "id": 10196975870,
   "lat": 50.9690295,
   "lon": 15.1225251,
@@ -14105,6 +18298,58 @@
     "ref:CIS_JR": "52473",
     "shelter": "no",
     "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10576414754,
+  "lat": 50.7240631,
+  "lon": 15.1674755,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Komenského",
+    "network": "Integrovaná doprava Libereckého kraje",
+    "network:short": "IDOL",
+    "network:wikidata": "Q12021686",
+    "official_name": "Jablonec n. Nisou, Komenského",
+    "operator": "Jablonecká dopravní;ČSAD Slaný",
+    "operator:wikidata": "Q139035634;Q11090126",
+    "public_transport": "platform",
+    "ref:CIS_JR": "68161"
+  }
+},
+{
+  "type": "node",
+  "id": 10576414755,
+  "lat": 50.7241114,
+  "lon": 15.1716981,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Mírové náměstí",
+    "official_name": "Jablonec n. Nisou, Mírové náměstí",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "68109"
+  }
+},
+{
+  "type": "node",
+  "id": 10683905045,
+  "lat": 50.7022815,
+  "lon": 15.3865160,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Sklenařice, hostinec Mexiko",
+    "official_name": "Vysoké n.Jiz.,Sklenařice,host.Mexiko",
+    "public_transport": "platform",
+    "ref:CIS_JR": "40891",
+    "ref:PID": "U31201Z1"
   }
 },
 {
@@ -14219,6 +18464,134 @@
 },
 {
   "type": "node",
+  "id": 10718668166,
+  "lat": 50.7296266,
+  "lon": 15.1313859,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "no",
+    "local_ref": "1",
+    "name": "Zlatá ulička",
+    "official_name": "Jablonec n. Nisou, Proseč n. Nisou, Zlatá ulička",
+    "public_transport": "platform",
+    "ref": "1",
+    "ref:CIS_JR": "64125",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10718668167,
+  "lat": 50.7292846,
+  "lon": 15.1358315,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Proseč nad Nisou, u překladiště",
+    "official_name": "Jablonec n. Nisou, Proseč n. Nisou, u překladiště",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51780",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10718668168,
+  "lat": 50.7292095,
+  "lon": 15.1356820,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Proseč nad Nisou, u překladiště",
+    "official_name": "Jablonec n. Nisou, Proseč n. Nisou, u překladiště",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51780",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10723654268,
+  "lat": 50.7184455,
+  "lon": 15.3001310,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, rozcestí Zbytky",
+    "official_name": "Velké Hamry, rozc. Zbytky",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38665"
+  }
+},
+{
+  "type": "node",
+  "id": 10723654269,
+  "lat": 50.7176256,
+  "lon": 15.2940577,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Velké Hamry, pod Muchovem",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38664"
+  }
+},
+{
+  "type": "node",
+  "id": 10723654278,
+  "lat": 50.7158153,
+  "lon": 15.2826054,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Velké Hamry, u Nováků",
+    "public_transport": "platform",
+    "ref:CIS_JR": "38668"
+  }
+},
+{
+  "type": "node",
+  "id": 10723656018,
+  "lat": 50.7232643,
+  "lon": 15.1544742,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Žižkův vrch",
+    "official_name": "Jablonec n. Nisou, Žižkův vrch",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51768"
+  }
+},
+{
+  "type": "node",
+  "id": 10723656020,
+  "lat": 50.7213111,
+  "lon": 15.1610282,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Hlavní nádraží",
+    "official_name": "Jablonec n. Nisou, hlavní nádraží",
+    "public_transport": "platform",
+    "ref:CIS_JR": "52475"
+  }
+},
+{
+  "type": "node",
   "id": 10727646712,
   "lat": 50.7485395,
   "lon": 15.0729547,
@@ -14241,6 +18614,39 @@
     "name": "Bedřichov, centrální parkoviště",
     "public_transport": "platform",
     "ref:idol": "660"
+  }
+},
+{
+  "type": "node",
+  "id": 10904863704,
+  "lat": 50.7248817,
+  "lon": 15.1666423,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Divadlo",
+    "official_name": "Jablonec n.Nisou,,Divadlo",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51749"
+  }
+},
+{
+  "type": "node",
+  "id": 10909509432,
+  "lat": 50.7295047,
+  "lon": 15.1816654,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mánesova",
+    "official_name": "Jablonec n. Nisou, Mánesova",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref:CIS_JR": "51742"
   }
 },
 {
@@ -14298,6 +18704,21 @@
     "public_transport": "platform",
     "shelter": "no",
     "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11104053726,
+  "lat": 50.7076586,
+  "lon": 15.1853498,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Krkonošská",
+    "official_name": "Jablonec n. Nisou, Kokonín, Krkonošská",
+    "public_transport": "platform",
+    "ref:CIS_JR": "14968"
   }
 },
 {
@@ -14487,6 +18908,30 @@
 },
 {
   "type": "node",
+  "id": 12158574207,
+  "lat": 50.7259717,
+  "lon": 15.1786463,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Svatopluka Čecha",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12158574208,
+  "lat": 50.7260961,
+  "lon": 15.1787640,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Svatopluka Čecha",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
   "id": 13421649411,
   "lat": 50.9963540,
   "lon": 15.2404343,
@@ -14497,6 +18942,822 @@
     "official_name": "Horní Řasnice, Srbská, st.hr.",
     "public_transport": "platform",
     "ref:idol": "9919"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225039,
+  "lat": 50.7118833,
+  "lon": 15.1708165,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "051",
+    "name": "NM 51 Petřínská",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, NM č. 051 Petřínská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225040,
+  "lat": 50.7087849,
+  "lon": 15.1716944,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "052",
+    "name": "NM 52 Sokolovská",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, NM č. 052 Sokolovská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225041,
+  "lat": 50.7085690,
+  "lon": 15.1699776,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "053",
+    "name": "NM 53 Sokolovská",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, NM č. 053 Sokolovská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225042,
+  "lat": 50.7083074,
+  "lon": 15.1678064,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "054",
+    "name": "NM 54 Sokolovská",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, NM č. 054 Sokolovská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225043,
+  "lat": 50.7080744,
+  "lon": 15.1610269,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "055",
+    "name": "NM 55 Sokolovská",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, NM č. 055 Sokolovská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225044,
+  "lat": 50.7071440,
+  "lon": 15.1576806,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "056",
+    "name": "NM 56 Dobrá Voda",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, NM č. 056 Dobrá Voda",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225045,
+  "lat": 50.7074768,
+  "lon": 15.1589207,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "057",
+    "name": "NM 57 Dobrá Voda",
+    "official_name": "Jablonec n. Nisou, Vrkoslavice, NM č. 057 Dobrá Voda",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225046,
+  "lat": 50.7231457,
+  "lon": 15.1737143,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "15",
+    "name": "Jablonec nad Nisou, autobusové nádraží",
+    "official_name": "Jablonec n. Nisou, aut. nádr.",
+    "operator": "Jablonecká dopravní",
+    "operator:wikidata": "Q139035634",
+    "public_transport": "platform",
+    "ref": "15",
+    "route_ref": "135;136;137;138;139"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225047,
+  "lat": 50.7204801,
+  "lon": 15.1701178,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "001",
+    "name": "NM 1 Dlouhá",
+    "official_name": "Jablonec n. Nisou, NM č. 001 Dlouhá",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225048,
+  "lat": 50.7193835,
+  "lon": 15.1705426,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "002",
+    "name": "NM 2 Dlouhá",
+    "official_name": "Jablonec n. Nisou, NM č. 002 Dlouhá",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225049,
+  "lat": 50.7182141,
+  "lon": 15.1711671,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "003",
+    "name": "NM 3 Dlouhá",
+    "official_name": "Jablonec n. Nisou, NM č. 003 Dlouhá",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225050,
+  "lat": 50.7165582,
+  "lon": 15.1718329,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "004",
+    "name": "NM 4 Dlouhá",
+    "official_name": "Jablonec n. Nisou, NM č. 004 Dlouhá",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225051,
+  "lat": 50.7159526,
+  "lon": 15.1720857,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "005",
+    "name": "NM 5 Dlouhá",
+    "official_name": "Jablonec n. Nisou, NM č. 005 Dlouhá",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225052,
+  "lat": 50.7154656,
+  "lon": 15.1725425,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "006",
+    "name": "NM 6 Dlouhá",
+    "official_name": "Jablonec n. Nisou, NM č. 006 Dlouhá",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225053,
+  "lat": 50.7147589,
+  "lon": 15.1731071,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "007",
+    "name": "NM 7 Dlouhá",
+    "official_name": "Jablonec n. Nisou, NM č. 007 Dlouhá",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225054,
+  "lat": 50.7147047,
+  "lon": 15.1723650,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "008",
+    "name": "NM 8 Pivovarská",
+    "official_name": "Jablonec n. Nisou, NM č. 008 Pivovarská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225055,
+  "lat": 50.7149716,
+  "lon": 15.1719476,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "009",
+    "name": "NM 9 Pivovarská",
+    "official_name": "Jablonec n. Nisou, NM č. 009 Pivovarská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225056,
+  "lat": 50.7152518,
+  "lon": 15.1714517,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "010",
+    "name": "NM 10 Pivovarská",
+    "official_name": "Jablonec n. Nisou, NM č. 010 Pivovarská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225057,
+  "lat": 50.7157876,
+  "lon": 15.1706346,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "011",
+    "name": "NM 11 Pivovarská",
+    "official_name": "Jablonec n. Nisou, NM č. 011 Pivovarská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225058,
+  "lat": 50.7162698,
+  "lon": 15.1699540,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "012",
+    "name": "NM 12 Pivovarská",
+    "official_name": "Jablonec n. Nisou, NM č. 012 Pivovarská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225059,
+  "lat": 50.7167119,
+  "lon": 15.1685497,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "013",
+    "name": "NM 13 Pivovarská",
+    "official_name": "Jablonec n. Nisou, NM č. 013 Pivovarská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225060,
+  "lat": 50.7167958,
+  "lon": 15.1665911,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "014",
+    "name": "NM 14 Pivovarská",
+    "official_name": "Jablonec n. Nisou, NM č. 014 Pivovarská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225061,
+  "lat": 50.7165218,
+  "lon": 15.1650896,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "015",
+    "name": "NM 15 Střelecká",
+    "official_name": "Jablonec n. Nisou, NM č. 015 Střelecká",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225062,
+  "lat": 50.7172158,
+  "lon": 15.1653035,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "016",
+    "name": "NM 16 Střelecká",
+    "official_name": "Jablonec n. Nisou, NM č. 016 Střelecká",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225063,
+  "lat": 50.7179339,
+  "lon": 15.1655360,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "017",
+    "name": "NM 17 Střelecká",
+    "official_name": "Jablonec n. Nisou, NM č. 017 Střelecká",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225064,
+  "lat": 50.7187639,
+  "lon": 15.1655803,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "018",
+    "name": "NM 18 Střelecká",
+    "official_name": "Jablonec n. Nisou, NM č. 018 Střelecká",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225065,
+  "lat": 50.7192808,
+  "lon": 15.1654396,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "019",
+    "name": "NM 19 Střelecká",
+    "official_name": "Jablonec n. Nisou, NM č. 019 Střelecká",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225066,
+  "lat": 50.7195901,
+  "lon": 15.1647137,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "020",
+    "name": "NM 20 Pražská",
+    "official_name": "Jablonec n. Nisou, NM č. 020 Pražská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225067,
+  "lat": 50.7191509,
+  "lon": 15.1640321,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "021",
+    "name": "NM 21 Pražská",
+    "official_name": "Jablonec n. Nisou, NM č. 021 Pražská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225068,
+  "lat": 50.7184290,
+  "lon": 15.1633118,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "022",
+    "name": "NM 22 Pražská",
+    "official_name": "Jablonec n. Nisou, NM č. 022 Pražská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225069,
+  "lat": 50.7182218,
+  "lon": 15.1640660,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "023",
+    "name": "NM 23 Květinová",
+    "official_name": "Jablonec n. Nisou, NM č. 023 Květinová",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225070,
+  "lat": 50.7178674,
+  "lon": 15.1668724,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "024",
+    "name": "NM 24 Květinová",
+    "official_name": "Jablonec n. Nisou, NM č. 024 Květinová",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225071,
+  "lat": 50.7178150,
+  "lon": 15.1679960,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "025",
+    "name": "NM 25 Květinová",
+    "official_name": "Jablonec n. Nisou, NM č. 025 Květinová",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225072,
+  "lat": 50.7176719,
+  "lon": 15.1691905,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "026",
+    "name": "NM 26 Květinová",
+    "official_name": "Jablonec n. Nisou, NM č. 026 Květinová",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225073,
+  "lat": 50.7187985,
+  "lon": 15.1692202,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "027",
+    "name": "NM 27 Revoluční",
+    "official_name": "Jablonec n. Nisou, NM č. 027 Revoluční",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225074,
+  "lat": 50.7172325,
+  "lon": 15.1694587,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "028",
+    "name": "NM 28 Revoluční",
+    "official_name": "Jablonec n. Nisou, NM č. 028 Revoluční",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225075,
+  "lat": 50.7161047,
+  "lon": 15.1691006,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "029",
+    "name": "NM 29 Revoluční",
+    "official_name": "Jablonec n. Nisou, NM č. 029 Revoluční",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225076,
+  "lat": 50.7159572,
+  "lon": 15.1681341,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "030",
+    "name": "NM 30 Křížová",
+    "official_name": "Jablonec n. Nisou, NM č. 030 Křížová",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225077,
+  "lat": 50.7172596,
+  "lon": 15.1683155,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "031",
+    "name": "NM 31 Křížová",
+    "official_name": "Jablonec n. Nisou, NM č. 031 Křížová",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225078,
+  "lat": 50.7187969,
+  "lon": 15.1684171,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "032",
+    "name": "NM 32 Křížová",
+    "official_name": "Jablonec n. Nisou, NM č. 032 Křížová",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225079,
+  "lat": 50.7194195,
+  "lon": 15.1673017,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "033",
+    "name": "NM 33 V Aleji",
+    "official_name": "Jablonec n. Nisou, NM č. 033 V Aleji",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225080,
+  "lat": 50.7181560,
+  "lon": 15.1670616,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "034",
+    "name": "NM 34 V Aleji",
+    "official_name": "Jablonec n. Nisou, NM č. 034 V Aleji",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225081,
+  "lat": 50.7160446,
+  "lon": 15.1668645,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "035",
+    "name": "NM 35 V Aleji",
+    "official_name": "Jablonec n. Nisou, NM č. 035 V Aleji",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225082,
+  "lat": 50.7179178,
+  "lon": 15.1786192,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "036",
+    "name": "NM 36 Lesní stezka",
+    "official_name": "Jablonec n. Nisou, NM č. 036 Lesní stezka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225083,
+  "lat": 50.7180004,
+  "lon": 15.1765783,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "037",
+    "name": "NM 37 Lesní stezka",
+    "official_name": "Jablonec n. Nisou, NM č. 037 Lesní stezka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225084,
+  "lat": 50.7179300,
+  "lon": 15.1752634,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "038",
+    "name": "NM 38 Lesní stezka",
+    "official_name": "Jablonec n. Nisou, NM č. 038 Lesní stezka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225085,
+  "lat": 50.7179152,
+  "lon": 15.1740298,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "039",
+    "name": "NM 39 Kokonínská",
+    "official_name": "Jablonec n. Nisou, NM č. 039 Kokonínská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225086,
+  "lat": 50.7188012,
+  "lon": 15.1732945,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "040",
+    "name": "NM 40 Kokonínská",
+    "official_name": "Jablonec n. Nisou, NM č. 040 Kokonínská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225087,
+  "lat": 50.7192729,
+  "lon": 15.1734090,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "041",
+    "name": "NM 41 Pod Hájem",
+    "official_name": "Jablonec n. Nisou, NM č. 041 Pod Hájem",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225088,
+  "lat": 50.7197383,
+  "lon": 15.1752674,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "042",
+    "name": "NM 42 Pod Hájem",
+    "official_name": "Jablonec n. Nisou, NM č. 042 Pod Hájem",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225089,
+  "lat": 50.7201143,
+  "lon": 15.1767461,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "043",
+    "name": "NM 43 Pod Hájem",
+    "official_name": "Jablonec n. Nisou, NM č. 043 Pod Hájem",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225090,
+  "lat": 50.7210124,
+  "lon": 15.1750357,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "044",
+    "name": "NM 44 Raisova",
+    "official_name": "Jablonec n. Nisou, NM č. 044 Raisova",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225091,
+  "lat": 50.7205863,
+  "lon": 15.1738285,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "045",
+    "name": "NM 45 Raisova",
+    "official_name": "Jablonec n. Nisou, NM č. 045 Raisova",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225092,
+  "lat": 50.7200526,
+  "lon": 15.1736886,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "046",
+    "name": "NM 46 Táboritská",
+    "official_name": "Jablonec n. Nisou, NM č. 046 Táboritská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225093,
+  "lat": 50.7194883,
+  "lon": 15.1742597,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "047",
+    "name": "NM 47 Táboritská",
+    "official_name": "Jablonec n. Nisou, NM č. 047 Táboritská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225094,
+  "lat": 50.7188573,
+  "lon": 15.1748866,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "048",
+    "name": "NM 48 Táboritská",
+    "official_name": "Jablonec n. Nisou, NM č. 048 Táboritská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225095,
+  "lat": 50.7183396,
+  "lon": 15.1754231,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "049",
+    "name": "NM 49 Táboritská",
+    "official_name": "Jablonec n. Nisou, NM č. 049 Táboritská",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13755225096,
+  "lat": 50.7187877,
+  "lon": 15.1760972,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "050",
+    "name": "NM 50 Zelená",
+    "official_name": "Jablonec n. Nisou, NM č. 050 Zelená",
+    "public_transport": "platform"
   }
 },
 {
@@ -14565,6 +19826,56 @@
     "public_transport": "station",
     "ref:ruian:building": "49951033",
     "source": "cuzk:ruian"
+  }
+},
+{
+  "type": "way",
+  "id": 180990481,
+  "center": {
+    "lat": 50.7008792,
+    "lon": 15.0767284
+  },
+  "nodes": [
+    8083985526,
+    8083985525,
+    8083985524,
+    8083985523,
+    8083985522,
+    8083985521,
+    8083985520,
+    1914299454,
+    8083985526
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "transportation",
+    "building:levels": "3",
+    "building:ruian:type": "15",
+    "ref:ruian:building": "27749835",
+    "source": "cuzk:ruian",
+    "start_date": "2010-12-09"
+  }
+},
+{
+  "type": "way",
+  "id": 363260657,
+  "center": {
+    "lat": 50.7267600,
+    "lon": 15.3902541
+  },
+  "nodes": [
+    3674437659,
+    3674437660,
+    3674437658,
+    3674437657,
+    9355430399,
+    3674437659
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "name": "Dolní stanice lanovky Pizár",
+    "public_transport": "station"
   }
 }
 
