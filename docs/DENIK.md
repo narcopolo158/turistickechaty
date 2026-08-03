@@ -11,6 +11,41 @@ Formát zápisu (nejnovější nahoře):
 
 ---
 
+## 2026-08-03 (blok 2) — výšky pro Jizerky žijí; jižní katalog vroutován bez ztráty výšek; Mirsk je otázka rozsahu
+
+**Ranní bezobslužná session zkontrolována** — triáž tří kandidátů
+z doběhu (Knajpa duplicita, Kynast pronájem, Aron penzion) je doložená
+a v pořádku, oprava dvou testů po posunu okna taky; Barbořina otázka
+předána Michalovi (viz shrnutí). Test `pristupy-ze-strediska`, který
+ranní session nechala červený jako připomínku, po doběhu výšek prošel —
+spolu s oběma opravenými testy DATA-06 (30/30 zeleně).
+
+**Výšky pro Jizerky doběhly a žijí na webu:** 49/49 přístupů neslo čas
+i převýšení (Černá studnice ze Smržovky 78 min / ↑ 267 m; Štěpánka
+z Příchovic 35 min / ↑ 128 m — na stránce i s výškovým profilem).
+
+**Jižní katalog výchozích bodů vroutován BEZ ztráty výšek:** doběh
+výchozích bodů přinesl 941 bodů (243 jižně od staré hrany). Přeroutování
+změnilo jen Černou studnici — dva nové, kratší nástupy (Nová Ves nad
+Nisou, u Nisy 1,69 km; Smržovka, pramen Nisy 1,98 km) místo starých
+2,84/3,19 km. Výšky 47 nezměněných přístupů (stejný bod, délka
+i geometrie) přeneseny ze zálohy — web o ně nepřišel; bez výšek jsou
+jen 2 nové nástupy Černé studnice → jeden krátký klik „výšky" je doplní.
+
+**Wieża widokowa Mirsk — ověřena, ale odložena jako otázka rozsahu:**
+adaptovaná wieża ciśnień (1887–1890, vyhlídková od 13. 7. 2013, 37,5 m,
+platforma 21,5 m) stojí UVNITŘ města Mirsk v podhůří, u školního
+areálu; občerstvení dokládá jen OSM bistro 57 m. Všech deset dosud
+přijatých rozhleden stojí na vrcholu nebo hřebeni na trase — jestli
+rozsah pokrývá i městskou věž pod horami, rozhodne Michal
+(_odlozeno, verdikt v kandidátovi).
+
+**Příště:** ① krátký klik „DATA-06: výšky přístupů" (jizerske-hory) —
+doplní 2 nové nástupy Černé studnice. ② Odpovědi Michala: Barbora
+(vzor pro 40+ ubytovacích chat fronty) a Mirsk (rozsah). ③ Fronta:
+Javor, Koryna, chata-prosec (weby zatím timeoutují), zbytek dle
+Barbořina rozhodnutí.
+
 ## 2026-08-03 (denní bezobslužná session) — triáž doběhu DATA-01; Barbora je otázka, ne položka; červená hlavní větev
 
 **Hotovo — triáž tří kandidátů z doběhu DATA-01 (bod ③ z včerejška).**
