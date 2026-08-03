@@ -1,0 +1,29 @@
+== diagnostika 2026-08-03T15:12:16Z (run 3) ==
+-- DNS z runneru:
+81.95.108.230   dev.turistickechaty.cz
+-- https health:
+http_code=000 ip=81.95.108.230 cas=0.528735s
+curl https exit=35
+-- http health (redirect?):
+http_code=200 ip=81.95.108.230 redirect=
+-- https verbose (posledni 30 radku):
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host dev.turistickechaty.cz:443 was resolved.
+* IPv6: (none)
+* IPv4: 81.95.108.230
+*   Trying 81.95.108.230:443...
+* Connected to dev.turistickechaty.cz (81.95.108.230) port 443
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: /etc/ssl/certs
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0{ [5 bytes data]
+* TLSv1.3 (IN), TLS alert, unrecognized name (624):
+{ [2 bytes data]
+* OpenSSL/3.0.13: error:0A000458:SSL routines::tlsv1 unrecognized name
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Closing connection
+curl: (35) OpenSSL/3.0.13: error:0A000458:SSL routines::tlsv1 unrecognized name
