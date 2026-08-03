@@ -24,7 +24,10 @@ Formát zápisu (nejnovější nahoře):
 > design/handoff-f1). Odrazové místo = blok 6 níže. Na konci: řádný
 > zápis (co hotovo, kde končíš, čím navázat) + otázky pro Michala.
 >
-> PŘEVZATO: zatím ne.
+> PŘEVZATO: 3. 8. ~12:05 **hlavní session** (Michal v UI nevidí tlačítko
+> ručního spuštění úlohy — server-side routina bez ovládání v aplikaci;
+> blok proto odpracuje hlavní session sama). Plánované sessions (6:30)
+> mandát už NEpřebírají.
 
 ## 2026-08-03 (blok 6) — doběh DATA-02 zpracován: fotky pro oba nové profily
 
