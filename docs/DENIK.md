@@ -29,6 +29,43 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 11) — hero Šumavy z Michalových pěti balíčků; nový licenční případ „bez autora"
+
+**Michal poslal pět balíčků z mediabanky CzechTourism a jde spouštět
+Actions.** Snímky zpracovány a zaregistrovány:
+
+- **Hero oblasti: Březník** (asset 308957, 1280×640 panorama letních plání).
+  Vybrán redakčně jako jediný z pěti, jehož jméno v mediabance nese MÍSTO
+  („breznik-sumava-mountains") — a navíc přesně sedí s charakteristikou
+  oblasti (pláně). U „sumava_landscape" a „sumava_scenery" se místo tvrdit
+  nedá (jméno souboru ho neříká a odhad z obrázku neděláme — vzor
+  ještědského hera, kde popis místa je doslova ten z mediabanky);
+  Poledník a Špičák jsou konkrétní objekty, ne krajina pohoří.
+- **Rezervy do registru:** rozhledna Poledník (autor Jiří Vaníček — čeká na
+  budoucí profil), ski areál Špičák (Tomáš Rucký — čeká na budoucí středisko
+  Železná Ruda), dvě zimní krajiny bez místa (zálohy hera).
+
+**Nový licenční případ, který stojí za zápis: tři z pěti licenčních souborů
+NEMAJÍ řádek „Please Credit".** Mediabanka u nich autora nepředepisuje.
+Dosud každý snímek autora měl a předepsaný kredit zní „© CzechTourism –
+mediabanka, autor: [jméno]" — komponenta hera by bez autora vypsala
+„autor: neuveden", což by byl NÁŠ dodatek, ne požadované znění. Upraveno:
+bez autora se kredituje jen jméno banky. V registru jsou tři snímky vedené
+s `autor: null` a komentářem, že to není opomenutí.
+
+**Dva testy k tomu:** registr připouští `autor: null` jen vysloveně (prázdný
+řetězec nebo chybějící klíč je dál chyba) a počet snímků je práh, ne rovnost
+(`toBe(8)` by padalo při každé další dodávce — přesně to se dnes stalo);
+hero Šumavy má soubor i náhled fyzicky v repu a autora nevymyšleného.
+
+**Kontroly:** `tsc` čistý, `eslint` čistý, kontrola zelená. Vitest **752
+prošlo** (+1 po přepočtu), padá stejných 8 (testy s DB).
+
+**Stav Šumavy: založení KOMPLETNÍ, čeká se jen na běhy.** Konfigurace,
+metadata, hero, workflow — všechno v repu. Až doběhne DATA-01 a DATA-28
+(Michal právě spouští), další session udělá triáž kandidátů vzorem Jizerek
+a z vrstvy DATA-28 rovnou dopočte lanovky.
+
 ## 2026-08-04 (blok 10) — Šumava založena (CZ + Bavorský les); Ještědský hřbet má i fotky středisek
 
 **Nejdřív dobrá zpráva z tvého kliku: DATA-33 pro Ještědský hřbet doběhlo

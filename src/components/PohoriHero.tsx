@@ -113,9 +113,15 @@ export default function PohoriHero({ nazev, kicker, foto, hora }: Props) {
   const licence = foto.licence ? LICENCE_TEXT[foto.licence] : null
   // Mediabanka CzechTourism má znění kreditu PŘEDEPSANÉ v podmínkách, včetně
   // pořadí slov — nesmí se poskládat naším obvyklým „foto: X · zdroj".
+  // Část snímků mediabanky NEMÁ v licenčním souboru řádek „Please Credit"
+  // (doloženo 4. 8. 2026 u tří šumavských snímků) — u nich je předepsaný
+  // kredit jen jméno banky a dopsat „autor: neuveden" by byl náš dodatek,
+  // ne požadované znění.
   const atribuce =
     foto.licence === 'mediabanka-czt'
-      ? `© CzechTourism – mediabanka, autor: ${foto.autor ?? 'neuveden'}`
+      ? foto.autor
+        ? `© CzechTourism – mediabanka, autor: ${foto.autor}`
+        : '© CzechTourism – mediabanka'
       : ['foto: ' + (foto.autor ?? 'neznámý autor'), licence].filter(Boolean).join(' · ')
   const anotace = foto.anotace
   const anotaceText = anotace?.text?.trim()

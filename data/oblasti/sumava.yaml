@@ -42,6 +42,25 @@ overeniCharakteristika:
   verified: false
   checked: '2026-08-04'
 
+# Hero snímek z mediabanky CzechTourism (pět balíčků od Michala 4. 8. 2026).
+# Vybrán Březník: jediný z pěti, jehož jméno v mediabance nese MÍSTO
+# („breznik-sumava-mountains") — u „sumava_landscape" a „sumava_scenery"
+# se místo tvrdit nedá a Poledník i Špičák jsou konkrétní objekty, ne
+# krajina pohoří. Licenční soubor snímku NEMÁ řádek „Please Credit",
+# mediabanka tedy autora nepředepisuje — kredit je jen jméno banky
+# (PohoriHero to umí od 4. 8. 2026). Popis místa je doslova ze jména
+# souboru mediabanky, víc se netvrdí.
+heroFoto:
+  soubor: /foto/pohori/sumava-hero-breznik.jpg
+  nahled: /foto/pohori/sumava-hero-breznik-nahled.jpg
+  alt: >-
+    Letní panorama šumavských plání u Březníku — travnaté louky, roztroušené
+    smrky a zalesněný vrchol v pozadí
+  popisMista: Březník, Šumava
+  licence: mediabanka-czt
+  zdrojUrl: https://media.visitczechia.com
+  prevzatoDne: '2026-08-04'
+
 # NEJVYŠŠÍ HORA POHOŘÍ VCELKU je na bavorské straně — týž princip jako
 # u Jizerek (Wysoka Kopa na polské straně, Smrk jako nejvyšší česká).
 # Nejvyšší hora ČESKÉ části je Plechý (1378 m) — do vět webu, ne sem.
@@ -78,9 +97,11 @@ interniPoznamky: >-
   pak DATA-06 (výchozí body → značené trasy → přístupy → výšky), DATA-02
   (fotky), DATA-33/35 (střediska, až vzniknou).
 
-  Co čeká na Michala mimo Actions: hero fotka z mediabanky CzechTourism
-  (vzor Ještědský hřbet) a časem rozhodnutí o rakouské straně (Böhmerwald) —
-  katalog vede jediný rakouský objekt, Helfenberger Hütte.
+  Hero fotka DODÁNA 4. 8. 2026 (pět balíčků mediabanky od Michala; vybrán
+  Březník, zbylé čtyři v registru data/foto-mediabanka-czt.yaml jako rezervy
+  — Poledník a Špičák čekají na budoucí profily/střediska). Na Michalovi
+  zůstává časem rozhodnutí o rakouské straně (Böhmerwald) — katalog vede
+  jediný rakouský objekt, Helfenberger Hütte.
 
   Jazyková poznámka pro budoucí profily: bavorské objekty nesou německá
   jména (Schutzhaus, Berggasthof, Hütte) — vedeme je s originálním názvem

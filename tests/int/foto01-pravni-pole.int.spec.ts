@@ -160,23 +160,32 @@ describe('kredit a název zdroje', () => {
 describe('registr snímků z mediabanky', () => {
   const registr = parseYaml(readFileSync(join(process.cwd(), 'data/foto-mediabanka-czt.yaml'), 'utf8')) as {
     kreditPredepsany: string
-    snimky: { assetId: string; autor: string; licence: string; vRepu: string; pouziti: string }[]
+    snimky: { assetId: string; autor: string | null; licence: string; vRepu: string; pouziti: string }[]
   }
 
-  it('každý snímek má autora, licenci a cestu v repu', () => {
-    expect(registr.snimky.length).toBe(8)
+  it('každý snímek má licenci, cestu v repu — a autora, POKUD ho mediabanka předepsala', () => {
+    // Počet je práh, ne rovnost: 30. 7. přišlo osm snímků, 4. 8. pět
+    // šumavských. Rovnost by padala při každé další dodávce.
+    expect(registr.snimky.length).toBeGreaterThanOrEqual(13)
     for (const s of registr.snimky) {
-      expect(s.autor, s.assetId).toBeTruthy()
       expect(s.licence, s.assetId).toMatch(/Licence/iu)
       expect(existsSync(join(process.cwd(), s.vRepu)), s.vRepu).toBe(true)
+      // Autor smí být null JEN vysloveně: tři šumavské licenční soubory
+      // (4. 8. 2026) řádek „Please Credit" nemají — vymyšlený autor by byl
+      // horší než žádný. Prázdný řetězec nebo chybějící klíč je pořád chyba.
+      expect(s.autor === null || (typeof s.autor === 'string' && s.autor.length > 0), s.assetId).toBe(true)
     }
   })
 
-  it('dva snímky bez místa v názvu jsou vedené jako NEPŘIŘAZENÉ', () => {
-    // Mediabanka u nich uvádí prostě „lanovka" — přiřadit je ke konkrétní
-    // dráze by tvrdilo, co nevíme (pravidlo DATA-33).
+  it('snímky bez místa v názvu jsou vedené jako NEPŘIŘAZENÉ', () => {
+    // Mediabanka u nich uvádí prostě „lanovka" / „sumava_landscape" —
+    // přiřadit je ke konkrétnímu objektu by tvrdilo, co nevíme (DATA-33).
     const neprirazene = registr.snimky.filter((s) => s.pouziti.startsWith('NEPŘIŘAZENO'))
-    expect(neprirazene).toHaveLength(2)
+    expect(neprirazene.length).toBeGreaterThanOrEqual(2)
+    // …a naopak: každé přiřazené použití jmenuje oblast nebo objekt.
+    for (const s of registr.snimky) {
+      expect(s.pouziti?.trim().length, s.assetId).toBeGreaterThan(0)
+    }
   })
 
   it('registr nese předepsané znění kreditu', () => {

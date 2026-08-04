@@ -84,3 +84,54 @@ snimky:
     vRepu: public/foto/strediska/rokytnice-nad-jizerou-skiareal-tomas-rucky.jpg
     pouziti: >-
       fotka střediska Rokytnice nad Jizerou (Krkonoše)
+
+  # ── Šumava, 4. 8. 2026 (pět balíčků od Michala k založení oblasti) ──
+  # POZOR, novinka v licenčních souborech: tři z pěti snímků NEMAJÍ řádek
+  # „Please Credit" — mediabanka u nich žádného autora nepředepisuje.
+  # U takových se kredituje jen „© CzechTourism – mediabanka" (bez dodatku
+  # „autor: neuveden", který by byl náš výmysl); PohoriHero to od 4. 8. umí.
+  - assetId: '308957'
+    souborMediabanky: 308957-breznik-sumava-mountains.jpg
+    autor: null # licenční soubor „Please Credit" neobsahuje
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/pohori/sumava-hero-breznik.jpg
+    pouziti: >-
+      hero oblasti Šumava — jediný z pěti snímků s místem ve jménu souboru
+      (Březník); panorama plání sedí s charakteristikou oblasti
+  - assetId: '809174'
+    souborMediabanky: 809174-rozhledna-polednik.jpg
+    autor: Jiří Vaníček
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/mediabanka/polednik-rozhledna-jiri-vanicek.jpg
+    pouziti: >-
+      NEPŘIŘAZENO — rezerva pro budoucí profil rozhledny Poledník (až oblast
+      dostane kandidáty z DATA-01)
+  - assetId: '304329'
+    souborMediabanky: 304329-ski-areal-spicak-zelezna-ruda.jpg
+    autor: Tomáš Rucký
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/mediabanka/spicak-ski-areal-tomas-rucky.jpg
+    pouziti: >-
+      NEPŘIŘAZENO — rezerva pro budoucí středisko Železná Ruda / Špičák
+  - assetId: '587243'
+    souborMediabanky: 587243-sumava_landscapejpg.jpg
+    autor: null # licenční soubor „Please Credit" neobsahuje
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/mediabanka/sumava-zimni-krajina.jpg
+    pouziti: >-
+      NEPŘIŘAZENO — jméno souboru říká jen „sumava_landscape", místo se
+      z něj tvrdit nedá (zimní krajina se skalami); záloha hera
+  - assetId: '587245'
+    souborMediabanky: 587245-sumava_sceneryjpg.jpg
+    autor: null # licenční soubor „Please Credit" neobsahuje
+    licence: Commercial Licence
+    podminky: https://media.visitczechia.com/terms
+    vRepu: public/foto/mediabanka/sumava-zimni-zapad.jpg
+    pouziti: >-
+      NEPŘIŘAZENO — jméno souboru říká jen „sumava_scenery", místo se z něj
+      tvrdit nedá (západ slunce nad zimním hřebenem); záloha hera
+

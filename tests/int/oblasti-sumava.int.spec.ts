@@ -11,7 +11,7 @@
  *   3. Okno dotazu opravdu obsahuje krajní doložené body pohoří — malé okno
  *      je nejtišší chyba ze všech, dotaz prostě vrátí míň.
  */
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 import { describe, expect, it } from 'vitest'
@@ -111,6 +111,25 @@ describe('metadata oblasti (data/oblasti/sumava.yaml)', () => {
     // kdyby při úpravě věta o 1457 vypadla, číslo by vypadalo nesporně.
     expect(YAML.nejvyssiHora?.source).toMatch(/1457/)
     expect(YAML.nejvyssiHora?.source).toMatch(/Plechý/)
+  })
+
+  it('hero: soubor i náhled leží v repu, kredit mediabanky bez vymyšleného autora', () => {
+    const y = YAML as unknown as {
+      heroFoto?: { soubor?: string; nahled?: string; licence?: string; autor?: string; popisMista?: string }
+    }
+    expect(y.heroFoto?.licence).toBe('mediabanka-czt')
+    // Licenční soubor snímku 308957 řádek „Please Credit" NEMÁ — autor se
+    // proto nesmí vymyslet ani doplnit jako „neuveden"; kredit je jen banka.
+    expect(y.heroFoto?.autor).toBeUndefined()
+    // Popis místa jen ze jména souboru mediabanky (breznik-sumava-mountains).
+    expect(y.heroFoto?.popisMista).toBe('Březník, Šumava')
+    for (const cesta of [y.heroFoto?.soubor, y.heroFoto?.nahled]) {
+      expect(cesta, 'heroFoto bez cesty').toBeTruthy()
+      expect(
+        existsSync(join(process.cwd(), 'public', cesta!)),
+        `soubor ${cesta} v public/ neleží — stránka by měla rozbitý hero`,
+      ).toBe(true)
+    }
   })
 
   it('každý top cíl (až přibudou) nese zdroj a vazbu na existující profil', () => {
