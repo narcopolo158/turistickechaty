@@ -29,6 +29,56 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 8) — DATA-02 doběhlo taky: dvě ještědské fotky přiřazeny, tři odmítnuty
+
+**DATA-02 mezitím doběhlo** (commit 6f49068) a Ještědský hřbet nabídky
+dostal. Přiřazeno redakčně týmž postupem jako u Jizerek — jen jasné případy,
+kandidát musí objekt opravdu zabírat:
+
+- **Hotel Ještěd** — „Ještěd tower 2025-12-01 13.jpg", **CC0**, 8144×5424,
+  geotag 11 m, popis „Tower on the mountain Ještěd." Ze 74 nabídek vybrán
+  proto, že zabírá SAMOTNOU STAVBU: bližší kandidáti (7–9 m) jsou letecké
+  snímky a interiéry (chodba k pokojům, mříž ze zbytků staré chaty,
+  restaurace).
+- **Chata Pláně pod Ještědem** — „Plane-Kühnaibaude-2.jpg", CC BY-SA 4.0.
+  Nález je z FULLTEXTU, ne z geotagu, a přiřazuju ho jen proto, že objekt
+  jmenuje vlastní popis snímku: „An der Kühnaibaude (Pláně pod Ještědem) am
+  östlichen Jeschken-Kammweg". Vedlejší nález: německé jméno **Kühnaibaude**
+  — alias z toho nezakládám, popis fotky je na jméno stavby slabý pramen;
+  dohledat jinde.
+
+**Tři profily fotku nedostaly, a je to u každého napsané proč:**
+
+- **Horská chata Ještědka** — padesát nabídek a ani jedna není chata. Tři
+  nejbližší (38–63 m) mají v popisu „**Waymark** Ještědka", tedy rozcestník
+  toho jména, další je „Rozcestník Ještědka" (67 m); zbytek jsou skály
+  přírodní památky Terasy Ještědu a záběry vysílače. Přesně vzor Krömerovky
+  z Jizerek: geotag u objektu ještě neznamená, že je objekt na snímku.
+- **Rozhledna Rašovka** — patnáct nabídek, žádná není věž. Bližší jsou
+  památný javor klen u usedlosti U Kotků a chráněný dům če. 8 — jiné objekty,
+  spojené jen jménem MÍSTA. Kandidát na vlastní snímek.
+- **Bouda Tetřeví sedlo** — jediná nabídka („Jested morning", CC0, geotag
+  23 m), jenže její vlastní popis zní „Parkoviště Výpřež…" a název mluví
+  o Ještědu. Snímek od parkoviště, ne boudy.
+
+Fronta fotek se tím posunula na **65/107 profilů s fotkou** (z 63).
+
+**Kontroly:** `tsc` čistý, `eslint` čistý, `npm run kontrola` zelené,
+ban-scan beze změny (262). Vitest 741 prošlo, padá stejných 8 (testy s DB).
+
+**Stav Ještědského hřbetu na konci dne:** pět profilů (dva s fotkou), tři
+střediska s perexem a doloženou dopravou, top cíle, přehled šesti lanovek,
+3D terén, opravená próza o lanovce na vrchol. **Chybí už jen:** výšky
+středisek (jeden re-run DATA-35 po dnešní opravě testu), fotky středisek
+(DATA-33 pro tuhle oblast nikdy neběžel), razítka oblasti a otvíračky
+s kontakty (telefonáty).
+
+**Otázky pro Michala:** ① **re-run DATA-35** (`jestedsky-hrbet`) — teď
+projde; ② **DATA-33** (`jestedsky-hrbet`) na fotky středisek; ③ očima
+zkontrolovat licence dvou nových fotek v adminu a přepnout `verified`;
+④ starší otevřené: Odrodzenie 1230 × 1236 m, Benecko k přeměření,
+certifikát pro dev.turistickechaty.cz.
+
 ## 2026-08-04 (blok 7) — DATA-35 nad Ještědem spadl na MÉM testu; lanovky hřbetu dopočteny
 
 **Nejdřív oprava tvé zprávy, Michale: „zbytek doběhl ok" neplatí pro

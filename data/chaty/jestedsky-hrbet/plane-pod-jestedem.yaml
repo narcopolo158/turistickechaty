@@ -107,6 +107,27 @@ text:
     obce Světlá pod Ještědem, které chatu vedou v přehledu ubytování;
     polohu nese OpenStreetMap. Redakce zatím nic neověřila vlastním
     dotazem ani návštěvou — před cestou s noclehem doporučujeme zavolat.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/6/64/Plane-K%C3%BChnaibaude-2.jpg
+    alt: Chata Pláně pod Ještědem na hřebeni Ještědského hřbetu
+    typ: soucasna # hero záběr profilu
+    datovani: 13. 10. 2018 # datum snímku z Commons
+    autor: SchiDD
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Plane-K%C3%BChnaibaude-2.jpg
+    prevzatoDne: '2026-08-04'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 4.0, autor SchiDD),
+        export DATA-02 z 4. 8. 2026. POZOR, nález je z FULLTEXTU, ne z geotagu —
+        snímek souřadnice nenese. Přiřazen proto, že ho jmenuje vlastní popis:
+        „An der Kühnaibaude (Pláně pod Ještědem) am östlichen Jeschken-Kammweg",
+        tedy německy i česky týž objekt na hřebenovce. Ostatní nabídky byly
+        buď jiný objekt v okolí (boží muka, geotag 2 m), nebo krkonošští
+        jmenovci vytažení fulltextem („Chata Výrovka", „Bouda Na Pláni").
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-04'
 zdroje:
   - popis: >-
       Web chaty — poloha a výška, kapacita obou budov, restaurace
@@ -126,3 +147,8 @@ interniPoznamky: >-
 
   NEDOLOŽENO (nezapsáno): historie a rok vzniku (žádný pramen ji
   nevypráví), přístupové trasy s délkami, Wi-Fi, platba kartou, psi.
+
+  Fotka přiřazena 4. 8. 2026 z DATA-02. VEDLEJŠÍ NÁLEZ k prověření: popis
+  snímku na Commons uvádí německé jméno objektu „Kühnaibaude". Alias se z toho
+  zatím nezakládá — popis fotky je slabý pramen na jméno stavby; dohledat
+  v místopisné literatuře nebo u provozovatele (DATA-04).

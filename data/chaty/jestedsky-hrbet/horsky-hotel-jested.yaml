@@ -151,6 +151,25 @@ text:
     portálu Libereckého kraje a z Památkového katalogu; polohu nese
     OpenStreetMap. Redakce zatím nic neověřila vlastním dotazem ani
     návštěvou.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/3/33/Je%C5%A1t%C4%9Bd_tower_2025-12-01_13.jpg
+    alt: Horský hotel s televizním vysílačem na vrcholu Ještědu
+    typ: soucasna # hero záběr profilu
+    datovani: 1. 12. 2025 # datum snímku z Commons
+    autor: Leonhard Lenz
+    licence: cc0
+    licencePoznamka: CC0 1.0 (volné dílo)
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Je%C5%A1t%C4%9Bd_tower_2025-12-01_13.jpg
+    prevzatoDne: '2026-08-04'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC0, autor Leonhard Lenz,
+        popis „Tower on the mountain Ještěd."), export DATA-02 z 4. 8. 2026;
+        geotag 11 m od objektu, rozlišení 8144×5424. Ze 74 nabídek vybrán
+        tenhle, protože zabírá SAMOTNOU STAVBU: bližší kandidáti (7–9 m) jsou
+        letecké snímky a interiéry (chodba k pokojům, mříž, restaurace).
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-04'
 zdroje:
   - popis: >-
       Web hotelu — historie s daty (chata 1907, požár 1963, stavba
