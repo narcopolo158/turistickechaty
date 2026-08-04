@@ -29,6 +29,51 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 14) — Tier 1 pokračuje: Lusenschutzhaus, Turnerova chata a první profil mimo provoz
+
+**Další tři profily** (zadání: „data06 spuštěno, pokračuj samostatně dál");
+Šumava má 6 profilů, korpus 113.
+
+1. **Lusenschutzhaus** — druhý německý profil, horský dům v 1343 m pod
+   Luzným: 19 lůžek (vzácná shoda katalogu s portálem na číslo), bavorská
+   kuchyně pro příchozí, sezóna 1. 5.–31. 10. denně 9–20. Zimní otvíračka
+   se v prameni váže k letopočtu 2023 — próza proto říká „bývá" a ověření
+   každé zimy je přiznané. Pěkná vazba na hero oblasti: Luzný je ten
+   vrchol, na který se dívá březnický snímek.
+2. **Turnerova chata (Povydří)** — restaurace s krbem přímo na značené
+   cestě kaňonem Vydry; hostinec na místě od 1888, po požáru 1932 dnešní
+   chata od 1934. Jediný pramen s čísly je Treking.cz NEZNÁMÉHO STÁŘÍ —
+   kapacita (22 + 15 v noclehárně) i otvíračka se vedou s výslovnou
+   výhradou „poslední známý údaj, před cestou ověřit" v datech i v próze.
+   Vlastní web má stránku „Historie Turnerovy chaty" — načíst, až půjde.
+3. **Waldschmidthaus — PRVNÍ ŠUMAVSKÝ PROFIL MIMO PROVOZ.** Dům pod
+   Velkým Roklanem je zavřený kvůli přestavbě (katalog: uzavřená / bez
+   noclehu; OSM poznámka: „geplante Eröffnung nach Umbau 2026"; PNP psal
+   o novém návrhu — citujeme jen titulek, článek nečten). Povýšen dle
+   tvého rozhodnutí o turistické minulosti — pro plánování túry na Roklan
+   je „občerstvení tu není" zásadní informace, kterou zamlčet by bylo
+   horší než profil nemít. Vzor Nad Łomniczką.
+
+**Jazyková linie drží:** německá jména primární, české opisy („Chata pod
+Luzným", „Chata pod Roklanem") jen v aliasech jako pomocná, výslovně
+označená, že je žádný pramen nevede.
+
+**Ban-scan 266 → 270:** čtyři nové zásahy, všechny standardní závěrečný
+odstavec s ODbL atribucí — posouzeno, ponecháno.
+
+**Kontroly:** `tsc` čistý, kontrola zelená, vitest 752 / stejných 8 s DB.
+Fronta: 101 povýšeno (+3).
+
+**Stav Tier 1: 6 z 21 povýšeno.** Zbývá 15 — nejblíž Berggasthof
+Dreisessel, Osserschutzhaus, Chamer Hütte (velké hřebenové), z českých
+Alpská vyhlídka, Belveder, Rovina, Churáňov (nutno rozlišit chatu od
+hotelu — OSM jména se liší od katalogu). DATA-06 běží (Michal spustil) —
+až doběhne, přijdou trasy.
+
+**Otázky pro Michala:** beze změny (rokVzniku trojice Proseč / Prášily /
+Turnerova — kontinuita × budova; razítkové páry; Odrodzenie; Benecko;
+certifikát).
+
 ## 2026-08-04 (blok 13) — první tři šumavské profily: Klostermannova, Prášily a první německý
 
 **Povyšování Tier 1 začalo** (zadání Michala: „pokračuj na povyšování Tier 1

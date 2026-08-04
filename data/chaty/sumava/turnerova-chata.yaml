@@ -1,0 +1,143 @@
+# Turnerova chata — povýšen z kandidáta DATA-01 triáží Tier 1 (4. 8. 2026,
+# vzor DATA-03: katalog × OSM × Treking.cz). Vlastní web turnerovachata.cz
+# se ze sandboxu nenačetl (timeout) — profil stojí na Treking.cz, jehož
+# stáří neznáme; kapacita a otvíračka se proto berou s výslovnou výhradou.
+# Vše verified: false.
+
+nazev: Turnerova chata
+slug: turnerova-chata
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.0821243
+lng: 13.5153884
+vyska: 791
+obec: Rejštejn
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/168634026 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 791 m a obec Rejštejn: externí katalog (HUT-0107, ověřeno
+    k 2026-07-21); adresu „341 93 Rejštejn 54" potvrzuje Treking.cz.
+    Poloha na břehu Vydry v Povydří: Treking.cz („na břehu šumavské řeky
+    Vydra"). Ověření ČÚZK otevřené. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita z Treking.cz, jehož stáří neznáme (článek nese ceny z jiné
+# doby) — číslo se vede jako poslední známé, s výhradou v ověření.
+nocleh: ano
+kapacita: 22
+pokoje:
+  - typ: dvoulůžkové až šestilůžkové pokoje
+  - typ: společná noclehárna (15 míst)
+overeniNocleh:
+  source: >-
+    Treking.cz (načteno 4. 8. 2026, stáří článku NEZNÁMÉ): kapacita
+    22 lůžek ve 2–6lůžkových pokojích + 15 míst ve společné noclehárně.
+    Jediný pramen s čísly; katalog (HUT-0107) vede jen „ubytování ano,
+    celoročně". Před cestou ověřit u chaty — údaj může být letitý.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Treking.cz (načteno 4. 8. 2026): „Stylová restaurace s otevřeným
+    krbem je otevřena denně od 10 do 22 hodin." Chata stojí na
+    frekventované trase Povydřím, kde je restaurace zastávkou pro
+    kolemjdoucí; výslovnou větu o neubytovaných ale pramen nemá.
+    Katalog (HUT-0107): stravování ano.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 376 599 234'
+  email: info@turnerovachata.cz
+  web: https://www.turnerovachata.cz/
+overeniProvoz:
+  source: >-
+    Treking.cz (načteno 4. 8. 2026): telefon +420 376 599 234, e-mail
+    info@turnerovachata.cz, web turnerovachata.cz. Vlastní web se ze
+    sandboxu nenačetl (timeout) — obsah necitován. Katalog: provoz
+    celoročně. Otvíračka restaurace (denně 10–22) je z Treking.cz
+    neznámého stáří — bere se jako orientační.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku se nevyplňuje: hostinec na místě od 1888, dnešní chata po
+# požáru od 1934 — týž případ jako Proseč a Prášily (rozhodne Michal).
+milniky:
+  - rok: 1888
+    udalost: Na břehu Vydry vznikl hostinec, předchůdce dnešní chaty
+  - rok: 1932
+    udalost: Hostinec vyhořel
+  - rok: 1934
+    udalost: Na místě vyrostla dnešní Turnerova chata
+overeniHistorie:
+  source: >-
+    Treking.cz (načteno 4. 8. 2026): „Stylová Turnerova chata stojí na
+    břehu šumavské řeky Vydra již od roku 1934"; předchozí stavba
+    (hostinec) od roku 1888, „v roce 1932 tento hostinec shořel, avšak
+    záhy byl znovu postaven." Původ jména (turnerský spolek?) žádný
+    načtený pramen nevysvětluje — NETVRDÍ se.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata na břehu Vydry uprostřed Povydří, nejnavštěvovanějšího říčního
+  kaňonu Šumavy — restaurace s otevřeným krbem přímo u značené cesty,
+  nocleh v pokojích i noclehárně. Na místě se hostí od roku 1888; dnešní
+  chata stojí od roku 1934.
+text:
+  - >-
+    Turnerova chata je zastávka, kterou mine málokdo: stojí přímo na
+    břehu Vydry v Povydří, na značené cestě kaňonem mezi Antýglem
+    a Čeňkovou Pilou, kudy proudí návštěvníci Šumavy už přes sto let.
+    Hostinec tu stál od roku 1888; když v roce 1932 vyhořel, vyrostla na
+    jeho místě do dvou let dnešní chata.
+  - >-
+    Uvnitř je restaurace s otevřeným krbem — poslední známý údaj mluví
+    o provozu denně od deseti do deseti — a přespat se dá v pokojích pro
+    dva až šest lidí nebo ve společné noclehárně. Čísla o kapacitě
+    máme z pramene neznámého stáří, takže je před cestou za noclehem
+    lepší ověřit telefonicky.
+  - >-
+    Údaje na téhle stránce pocházejí z Treking.cz a z externího katalogu;
+    vlastní web chaty se nám zatím nepodařilo načíst, takže z něj
+    necitujeme. Polohu nese OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Treking.cz — poloha na Vydře, historie 1888/1932/1934, kapacita
+      22 + 15, restaurace s krbem 10–22, kontakty; STÁŘÍ ČLÁNKU NEZNÁMÉ
+      (načteno 4. 8. 2026)
+    url: https://www.treking.cz/chaty/turnerova-chata.htm
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0107
+      (791 m, Rejštejn, ubytování, stravování, celoročně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web chaty (4. 8. 2026 nedostupný ze sandboxu — timeout)
+    url: https://www.turnerovachata.cz/
+  - popis: OpenStreetMap (GPS a tagy; ODbL)
+    url: https://www.openstreetmap.org/way/168634026
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/turnerova-chata.yaml triáží Tier 1
+  (4. 8. 2026). Klíč zařazení: restaurace na frekventované značené trase
+  Povydřím + historie od 1888 — role na trase zjevná.
+
+  NEDOLOŽENO / K OVĚŘENÍ: rokVzniku (1888 kontinuita × 1934 budova —
+  vzor Proseč/Prášily, rozhodne Michal); kapacita a otvíračka jsou
+  z Treking.cz neznámého stáří — až bude vlastní web dosažitelný,
+  přepsat odtud (má stránku HISTORIE TURNEROVY CHATY — načíst!); původ
+  jména „Turnerova" žádný pramen nevysvětlil — nedomýšlet. Fotku dodá
+  příští běh DATA-02.

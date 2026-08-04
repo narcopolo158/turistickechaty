@@ -1,0 +1,109 @@
+# Waldschmidthaus — povýšen z kandidáta DATA-01 triáží Tier 1 (4. 8. 2026).
+# PRVNÍ ŠUMAVSKÝ PROFIL SE STAVEM MIMO PROVOZ: dům na Velkém Roklanu je
+# zavřený kvůli přestavbě, plánované znovuotevření 2026 (OSM poznámka
+# + titulek PNP). Povyšuje se dle rozhodnutí Michala z 26. 7. 2026
+# o turistické minulosti — dům sloužil turistům a jeho stav je pro
+# plánování túry na Roklan zásadní informace. Vše verified: false.
+
+nazev: Waldschmidthaus
+slug: waldschmidthaus
+zeme: de
+typ: obsluhovana
+stav: mimo-provoz
+oblast: sumava
+
+aliasy:
+  - nazev: Chata pod Roklanem
+    poznamka: >-
+      český opisný ekvivalent (Großer Rachel = Velký Roklan) — pomocné
+      jméno pro hledání, žádný pramen ho jako název nevede
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9752366
+lng: 13.3865161
+vyska: 1360
+obec: Spiegelau
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/128973305 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1360 m a obec Spiegelau: externí katalog (HUT-0288, ověřeno
+    k 2026-07-21); poloha pod vrcholem Velkého Roklanu (Großer Rachel)
+    dle katalogu („Oblast: Großer Rachel") i titulku PNP. V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Externí katalog (HUT-0288): „Ubytování: ne, kapacita 0, stav:
+    uzavřená / bez noclehu". Nocleh dům nenabízel ani před uzavřením —
+    dle katalogu byl bez noclehu.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    Stav mimo provoz: externí katalog (HUT-0288): „Provoz: uzavřeno /
+    bez noclehu, Stav: uzavřená / bez noclehu"; OpenStreetMap nese
+    poznámku „geplante Eröffnung nach Umbau 2026" (plánované otevření po
+    přestavbě 2026 — surový tag, neověřeno) a odkaz na článek PNP
+    s titulkem „Neuer Entwurf für das Waldschmidthaus auf dem Großen
+    Rachel" (obsah článku jsme nečetli — cituje se jen titulek).
+    Kontakty se nevedou — zavřený dům žádné veřejné nemá.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský dům v 1360 metrech pod vrcholem Velkého Roklanu, druhé nejvyšší
+  hory Šumavy — v současnosti mimo provoz kvůli přestavbě; mapové
+  podklady mluví o plánovaném otevření v roce 2026. Kdo jde na Roklan,
+  s občerstvením tu zatím počítat nemůže.
+text:
+  - >-
+    Waldschmidthaus stojí těsně pod holým vrcholem Velkého Roklanu
+    (Großer Rachel), druhé nejvyšší hory celé Šumavy s Bavorským lesem —
+    a pro výstupy od Spiegelau je to poslední budova pod vrcholem.
+    Právě proto je jeho dnešní stav podstatná informace: dům je mimo
+    provoz kvůli přestavbě.
+  - >-
+    Katalog, ze kterého vycházíme, vede dům jako uzavřený a bez noclehu;
+    mapová poznámka mluví o plánovaném otevření po přestavbě v roce 2026
+    a regionální tisk psal o novém návrhu domu. Kdy se skutečně otevře
+    a co nabídne, žádný z našich pramenů neříká — před túrou na Roklan
+    počítejte s tím, že občerstvení tu není.
+  - >-
+    Údaje na téhle stránce pocházejí z externího katalogu a z poznámek
+    v OpenStreetMap; z regionálního tisku známe jen titulek, článek jsme
+    nečetli. Polohu nese OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0288
+      (1360 m, Spiegelau, uzavřená / bez noclehu)
+    url: https://nocleh.kct.cz/chaty
+  - popis: >-
+      OpenStreetMap — GPS, poznámka „geplante Eröffnung nach Umbau 2026"
+      (ODbL)
+    url: https://www.openstreetmap.org/way/128973305
+  - popis: >-
+      PNP (Passauer Neue Presse) — titulek „Neuer Entwurf für das
+      Waldschmidthaus auf dem Großen Rachel"; obsah nečten
+    url: https://www.pnp.de/lokales/landkreis-regen/neuer-entwurf-fuer-das-waldschmidthaus-auf-dem-grossen-rachel-15533362
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/waldschmidthaus.yaml triáží Tier 1
+  (4. 8. 2026). Klíč zařazení: dům s turistickou rolí pod vrcholem druhé
+  nejvyšší hory pohoří — dle rozhodnutí Michala z 26. 7. 2026 se
+  turistická minulost počítá, stav mimo provoz se přiznává (týž vzor
+  jako Nad Łomniczką v Krkonoších, která se po letech rekonstrukce
+  otevřela).
+
+  K OVĚŘENÍ: skutečný stav přestavby a termín otevření (PNP článek
+  načíst, až to půjde; případně bayerischer-wald-verein.de — dům
+  historicky patří spolku, ale to NETVRDÍME, pramen chybí); historie
+  domu (žádný načtený pramen). Až se otevře, přepnout stav a doplnit
+  služby. Fotku dodá příští běh DATA-02.

@@ -1,0 +1,138 @@
+# Lusenschutzhaus — povýšen z kandidáta DATA-01 triáží Tier 1 (4. 8. 2026,
+# vzor DATA-03: katalog × OSM × oficiální turistický portál Bavorského lesa).
+# Vlastní web lusenschutzhaus.com se ze sandboxu nenačetl (permission gate) —
+# profil stojí na bayerischer-wald.de; próza to přiznává. Vše verified: false.
+
+nazev: Lusenschutzhaus
+slug: lusenschutzhaus
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Chata pod Luzným
+    poznamka: >-
+      český opisný ekvivalent (Lusen = Luzný) — pomocné jméno pro hledání,
+      žádný pramen ho jako název nevede
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9377654
+lng: 13.5075896
+vyska: 1343
+obec: Neuschönau
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/121676243 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1343 m: oficiální turistický portál bayerischer-wald.de
+    (načteno 4. 8. 2026): „auf einer Höhe von 1.343 m unterhalb des
+    Lusengipfels"; totéž číslo nese externí katalog (HUT-0281). Obec
+    Neuschönau: katalog i portál. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 19
+pokoje:
+  - typ: třílůžkové a čtyřlůžkové pokoje, skupinový pokoj až pro devět osob
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 4. 8. 2026):
+    19 lůžek, „Drei- und Vierbettzimmer" a skupinové pokoje až pro devět
+    osob, povlečení v ceně. Týchž 19 lůžek vede externí katalog
+    (HUT-0281, ověřeno k 2026-07-21) — vzácná shoda dvou pramenů na číslo.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 4. 8. 2026):
+    „bayerische Brotzeiten, Suppen, regionale und saisonale Gerichte sowie
+    hausgemachte Kuchen" — dům je uváděn jako zastávka pro výstup na
+    Luzný, tedy pro příchozí. Katalog (HUT-0281): stravování ano.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Sezónní provoz — jediný z dosud povýšených šumavských s doloženou
+# otvíračkou. Zimní termín je z pramene s konkrétním letopočtem (2023),
+# takže se bere jen jako doklad, ŽE zimní provoz o Vánocích bývá — přesné
+# dny každé zimy je nutné ověřit.
+otviraciDoba: >-
+  Letní sezóna od 1. května do 31. října denně 9–20; přes vánoční
+  prázdniny bývá otevřeno denně 10–17.
+kontakty:
+  telefon: '+49 8553 1212'
+  email: info@lusenschutzhaus.com
+  web: https://www.lusenschutzhaus.com/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 4. 8. 2026):
+    „1. května až 31. října, denně 9–20 hodin"; zimní provoz „In den
+    Weihnachtsferien vom 25.12.–08.01.2023 täglich von 10–17 Uhr" —
+    letopočet 2023 znamená, že přesné zimní dny je nutné každý rok
+    ověřit; próza proto říká „bývá". Provozovatelé Janjira a Dietmar
+    Rankl (tamtéž). Kontakty potvrzuje OSM. Katalog vede „sezónně" —
+    sedí. OSM tag otvíračky (Apr-Nov 10-18; Dec-Feb Fr-Su) se od portálu
+    liší v detailech — bereme portál, rozpor poznamenán.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Žádný z načtených pramenů historii neuvádí — zůstává prázdná.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský dům v 1343 metrech těsně pod vrcholem Luzného, na bavorské
+  straně proti Březníku — devatenáct lůžek, bavorská kuchyně a v sezóně
+  otevřeno denně. Jediné místo k přespání přímo pod slavným kamenným
+  vrcholem.
+text:
+  - >-
+    Lusenschutzhaus stojí kousek pod vrcholem Luzného, hory s holým
+    kamenným temenem, která je z české strany na dohled od Březníku —
+    hero snímek téhle oblasti se díval právě na ni. Kdo přechází hranici
+    po hřebenových trasách národních parků, potká dům jako jedinou
+    obsluhovanou zastávku mezi Modravou a bavorským podhůřím.
+  - >-
+    Uvnitř je devatenáct lůžek ve třílůžkových a čtyřlůžkových pokojích
+    a jeden skupinový pokoj až pro devět osob; povlečení je v ceně.
+    Kuchyně vede bavorské svačiny, polévky, regionální sezónní jídla
+    a domácí koláče. V letní sezóně od května do konce října je otevřeno
+    denně od devíti do osmi večer, přes vánoční prázdniny bývá otevřeno
+    přes den — přesné zimní termíny je před cestou potřeba ověřit.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní web domu se nám zatím
+    nepodařilo načíst, takže z něj necitujeme. Polohu nese OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — výška 1343 m,
+      19 lůžek a typy pokojů, kuchyně, sezóna 1. 5.–31. 10. denně 9–20,
+      vánoční provoz, provozovatelé Ranklovi, kontakty (načteno 4. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/lusenschutzhaus-uebernachtungsmoeglichkeit-9dff23c1d2
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0281
+      (19 lůžek, stravování, sezónní provoz, Neuschönau, 1343 m)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web domu (4. 8. 2026 nedostupný ze sandboxu)
+    url: https://www.lusenschutzhaus.com/
+  - popis: OpenStreetMap (GPS, kontakty, tagy; ODbL)
+    url: https://www.openstreetmap.org/way/121676243
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/lusenschutzhaus.yaml triáží Tier 1
+  (4. 8. 2026). Klíč zařazení: obsluhovaný horský dům pod vrcholem na
+  hřebenové trase, občerstvení pro příchozí doloženo. Druhý německý
+  profil korpusu.
+
+  NEDOLOŽENO (nezapsáno): historie (žádný načtený pramen ji nevede;
+  zkusit bayerischer-wald-verein.de — OSM vede spolek jako provozovatele,
+  portál ale jmenuje Ranklovy; nejspíš vlastník spolek × nájemci Ranklovi,
+  NETVRDÍME). Zimní otvíračka: pramen nese letopočet 2023 — každou zimu
+  ověřit. Fotku dodá příští běh DATA-02.
