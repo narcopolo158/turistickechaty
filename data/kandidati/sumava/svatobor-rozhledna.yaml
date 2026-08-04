@@ -1,0 +1,39 @@
+# Svatobor - rozhledna — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-04)
+# Zdroj: https://www.openstreetmap.org/way/1086253212 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Svatobor - rozhledna
+slug: svatobor-rozhledna
+zeme: cz
+oblast: sumava
+typ: rozhledna
+lat: 49.2355359
+lng: 13.4875462
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/1086253212 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+kontakty:
+  web: http://www.rozhlednasvatobor.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/1086253212 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-04) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Svatobor — amenity=restaurant, 10 m,
+  https://www.openstreetmap.org/node/9952587892
+
+  Výška věže dle OSM: 32 m
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-We 10:00-16:00; Th-Sa
+  10:00-21:00; Su 10:00-17:00

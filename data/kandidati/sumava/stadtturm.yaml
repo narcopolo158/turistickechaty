@@ -1,0 +1,42 @@
+# Stadtturm — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-05-31)
+# Zdroj: https://www.openstreetmap.org/way/202027539 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Stadtturm
+slug: stadtturm
+zeme: de
+oblast: sumava
+typ: rozhledna
+lat: 49.3079968
+lng: 12.8448761
+obec: Furth im Wald
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/202027539 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-31
+kontakty:
+  web: http://www.landestormuseum.de
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/202027539 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-31
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-05-31) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Goldie Cafe — amenity=cafe, 65 m,
+  https://www.openstreetmap.org/node/12944691702 · Ratskeller, Kleber —
+  amenity=restaurant, 68 m, https://www.openstreetmap.org/node/465241412 · Cafe
+  Bar Restaurant VIP — amenity=restaurant, 69 m,
+  https://www.openstreetmap.org/node/465241488 · Designcafé kuL — amenity=cafe,
+  73 m, https://www.openstreetmap.org/node/12009470056 · BABA´s Grill —
+  amenity=fast_food, 91 m, https://www.openstreetmap.org/node/465817300
+
+  Výška věže dle OSM: 35 m

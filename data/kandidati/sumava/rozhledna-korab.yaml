@@ -1,0 +1,27 @@
+# rozhledna Koráb — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-04)
+# Zdroj: https://www.openstreetmap.org/node/264123666 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: rozhledna Koráb
+slug: rozhledna-korab
+zeme: cz
+oblast: sumava
+typ: rozhledna
+lat: 49.3953734
+lng: 13.0752716
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/264123666 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-04) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Horská chata Koráb —
+  amenity=restaurant, 34 m, https://www.openstreetmap.org/node/13445011779

@@ -1,0 +1,35 @@
+# Alm -Häusl — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-04)
+# Zdroj: https://www.openstreetmap.org/node/11346635936 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Alm -Häusl
+slug: alm-hausl
+zeme: de
+oblast: sumava
+lat: 48.8084533
+lng: 13.1638395
+obec: Grattersdorf
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/11346635936 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+kontakty:
+  telefon: +49 9904 233
+  email: weber.hein@t-online.de
+  web: https://grattersdorf.wixsite.com/steinalm
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/11346635936 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-04) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Heinrich Weber

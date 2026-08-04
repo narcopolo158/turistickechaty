@@ -1,0 +1,1610 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-05-31T22:37:44Z",
+    "timestamp_areas_base": "2026-05-31T22:37:44Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 290221943,
+  "lat": 49.0589757,
+  "lon": 13.2432786,
+  "tags": {
+    "access": "no",
+    "construction": "yes",
+    "disused:man_made": "tower",
+    "disused:name": "Aussichtsturm im Nationalparkzentrum Falkenstein",
+    "disused:tourism": "viewpoint",
+    "height": "16",
+    "note": "The lookout tower is temporarily closed for repairs.",
+    "source:height": "estimation",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 413435439,
+  "lat": 48.8816410,
+  "lon": 12.5694653,
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "94315",
+    "addr:street": "Theresienplatz",
+    "amenity": "cafe",
+    "check_date": "2024-04-18",
+    "name": "Krönner",
+    "opening_hours": "Mo-Fr 08:15-18:00; Sa 08:00-17:00",
+    "phone": "+49 9421 10994",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 413435476,
+  "lat": 48.8818073,
+  "lon": 12.5696728,
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:postcode": "94315",
+    "amenity": "bar",
+    "name": "Feinkost Trocchia",
+    "shop": "deli"
+  }
+},
+{
+  "type": "node",
+  "id": 413449790,
+  "lat": 48.8815802,
+  "lon": 12.5690230,
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "94315",
+    "addr:street": "Theresienplatz",
+    "amenity": "restaurant",
+    "cuisine": "burger;international",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:operator": "Telekom",
+    "name": "Meating",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 413451333,
+  "lat": 48.8819886,
+  "lon": 12.5690270,
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "94315",
+    "addr:street": "Theresienplatz",
+    "amenity": "cafe",
+    "check_date": "2024-09-21",
+    "cuisine": "ice_cream",
+    "name": "Eiscafe Cortina"
+  }
+},
+{
+  "type": "node",
+  "id": 465241412,
+  "lat": 49.3079156,
+  "lon": 12.8439405,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "italian_pizza;pasta;pizza;sandwich",
+    "name": "Ratskeller, Kleber",
+    "opening_hours": "Tu-Th 19:00-00:00; Fr 19:00-01:00; Sa 18:30-01:00; Su 18:00-23:00",
+    "phone": "+4999733806",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 465241488,
+  "lat": 49.3085829,
+  "lon": 12.8445460,
+  "tags": {
+    "addr:city": "Furth im Wald",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "93437",
+    "addr:street": "Stadtplatz",
+    "amenity": "restaurant",
+    "check_date": "2023-07-29",
+    "cuisine": "international",
+    "internet_access": "wlan",
+    "name": "Cafe Bar Restaurant VIP",
+    "toilets:wheelchair": "no",
+    "website": "https://www.cafe-vip.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 465817300,
+  "lat": 49.3086529,
+  "lon": 12.8441259,
+  "tags": {
+    "addr:city": "Furth im Wald",
+    "addr:country": "DE",
+    "addr:housenumber": "13",
+    "addr:postcode": "93437",
+    "addr:street": "Stadtplatz",
+    "amenity": "fast_food",
+    "check_date": "2023-07-29",
+    "name": "BABA´s Grill",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1302694755,
+  "lat": 49.3064013,
+  "lon": 12.8998306,
+  "tags": {
+    "height": "6",
+    "name": "Aussichtsturm",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1470046877,
+  "lat": 48.5684932,
+  "lon": 13.4557845,
+  "tags": {
+    "description": "Eckturm der Kaiserin-Elisabeth-Brücke",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1653375592,
+  "lat": 48.8820902,
+  "lon": 12.5699209,
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "94315",
+    "addr:street": "Ludwigsplatz",
+    "amenity": "restaurant",
+    "cuisine": "indian",
+    "layer": "1",
+    "name": "Namaste India",
+    "phone": "+49 9421 9606770",
+    "website": "https://namasteindia-straubing.de/de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1737969346,
+  "lat": 48.8447825,
+  "lon": 13.3273729,
+  "tags": {
+    "man_made": "tower",
+    "name": "Kadernberg-Aussichtsturm",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1798349607,
+  "lat": 48.8820784,
+  "lon": 12.5698366,
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "94315",
+    "addr:street": "Ludwigsplatz",
+    "amenity": "cafe",
+    "brand": "Segafredo",
+    "brand:wikidata": "Q21282762",
+    "brand:wikipedia": "it:Segafredo Zanetti",
+    "contact:facebook": "https://fb.com/SegafredoDeutschland",
+    "contact:instagram": "https://instagram.com/segafredodeutschland",
+    "cuisine": "coffee_shop",
+    "email": "info@segafredo.de",
+    "name": "Segafredo",
+    "takeaway": "yes",
+    "website": "https://segafredo.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2367098434,
+  "lat": 48.8922942,
+  "lon": 13.4885788,
+  "tags": {
+    "amenity": "cafe",
+    "indoor_seating": "yes",
+    "name": "Waldstüberl",
+    "outdoor_seating": "yes",
+    "website": "https://www.ferienregion-nationalpark.de/themen/waldstueberl.html"
+  }
+},
+{
+  "type": "node",
+  "id": 2806581929,
+  "lat": 48.6071598,
+  "lon": 13.1308792,
+  "tags": {
+    "building": "yes",
+    "height": "13",
+    "man_made": "tower",
+    "name": "Piske-Turm",
+    "start_date": "2014",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q104972324"
+  }
+},
+{
+  "type": "node",
+  "id": 3707010904,
+  "lat": 48.8821666,
+  "lon": 12.5695945,
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "94315",
+    "addr:street": "Ludwigsplatz",
+    "amenity": "fast_food",
+    "cuisine": "asian",
+    "name": "Mai - Asia Imbiss",
+    "opening_hours": "Mo-Fr 10:00-14:30,17:00-20:00; PH off",
+    "phone": "+49 9421 1896597",
+    "takeaway": "only"
+  }
+},
+{
+  "type": "node",
+  "id": 3873148512,
+  "lat": 48.8448600,
+  "lon": 13.3272039,
+  "tags": {
+    "amenity": "pub",
+    "name": "Turmstüberl",
+    "opening_hours:url": "http://www.turmstueberl-kadernberg.de/index.php?id=14"
+  }
+},
+{
+  "type": "node",
+  "id": 4187219672,
+  "lat": 49.0113775,
+  "lon": 12.7973623,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "bavarian",
+    "name": "Egidi-Stüberl",
+    "toilets": "yes",
+    "website": "https://www.sommerrodeln.de/de/essen-und-trinken/egidi-stueberl/"
+  }
+},
+{
+  "type": "node",
+  "id": 8309071806,
+  "lat": 48.8172009,
+  "lon": 13.2161437,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Turm-Stüberl",
+    "phone": "+4917132 560 55",
+    "website": "http://www.turmstueberl-brotjacklriegel.de"
+  }
+},
+{
+  "type": "node",
+  "id": 9577090090,
+  "lat": 48.7716748,
+  "lon": 13.0054843,
+  "tags": {
+    "amenity": "hunting_stand",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 10692739089,
+  "lat": 48.7748393,
+  "lon": 12.9565237,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11093001206,
+  "lat": 48.6822712,
+  "lon": 13.5874797,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11297608469,
+  "lat": 48.8821751,
+  "lon": 12.5687649,
+  "tags": {
+    "addr:postcode": "94315",
+    "amenity": "restaurant",
+    "cuisine": "vietnamese",
+    "name": "Cô Ba's Küche",
+    "name:en": "Cô Ba's Kitchen",
+    "opening_hours": "Su 17:00-21:00; Tu-Sa 11:00-14:30,17:00-21:00",
+    "phone": "+49 9421 9688999",
+    "website": "https://www.cobaskueche.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11980635548,
+  "lat": 48.5586675,
+  "lon": 13.4107790,
+  "tags": {
+    "addr:city": "Passau",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "94036",
+    "addr:street": "Messestraße",
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "diet:vegetarian": "yes",
+    "name": "La Piazza",
+    "opening_hours": "11:00-21:00; Tu off",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "phone": "+49 851 9884033",
+    "website": "https://www.lapiazza-passau.de"
+  }
+},
+{
+  "type": "node",
+  "id": 12009470056,
+  "lat": 49.3074470,
+  "lon": 12.8443381,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Designcafé kuL",
+    "opening_hours": "Mo,Fr-Su 10:00-21:00",
+    "phone": "+4999736529260",
+    "website": "https://designcafe-kul.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 12056953378,
+  "lat": 49.0112323,
+  "lon": 12.7971313,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Schmankerlwerkstatt"
+  }
+},
+{
+  "type": "node",
+  "id": 12944691702,
+  "lat": 49.3079836,
+  "lon": 12.8439808,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:postcode": "93437",
+    "addr:street": "Stadtplatz",
+    "amenity": "cafe",
+    "name": "Goldie Cafe",
+    "opening_hours": "Mo-Su 09:00-18:00",
+    "website": "https://www.goldiecafe.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 13108884809,
+  "lat": 48.8819497,
+  "lon": 12.5709734,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "name": "Alter Kiosk",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 27840793,
+  "center": {
+    "lat": 48.8182456,
+    "lon": 13.6786838
+  },
+  "nodes": [
+    305665577,
+    305665579,
+    305665583,
+    305665586,
+    305665577
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "35",
+    "man_made": "tower",
+    "name": "Haidel Aussichtsturm",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 32639764,
+  "center": {
+    "lat": 49.1134315,
+    "lon": 13.1394901
+  },
+  "nodes": [
+    366961087,
+    2466964718,
+    2466964715,
+    2466964712,
+    2466964709,
+    366961092,
+    366961096,
+    366961100,
+    366961087
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "biergarten": "yes",
+    "building": "yes",
+    "check_date": "2024-10-07",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Eisensteiner Hütte",
+    "opening_hours": "10:00-17:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 9925 94140",
+    "toilets:wheelchair": "yes",
+    "website": "http://www.arber.de/gastronomie/eisensteiner-huette.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 32639765,
+  "center": {
+    "lat": 49.1134294,
+    "lon": 13.1390849
+  },
+  "nodes": [
+    366961102,
+    366961106,
+    366961136,
+    2466964691,
+    2466964701,
+    366961133,
+    366961111,
+    366961102
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "ele": "1358",
+    "indoor_seating": "yes",
+    "name": "Arberschutzhaus",
+    "opening_hours": "10:00-16:00; Nov,Apr off",
+    "operator": "Bayerischer Wald Verein",
+    "outdoor_seating": "yes",
+    "phone": "+49 992594 140",
+    "tourism": "alpine_hut",
+    "website": "https://arberschutzhaus.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 34389014,
+  "center": {
+    "lat": 48.6849514,
+    "lon": 13.6577209
+  },
+  "nodes": [
+    394826733,
+    394826735,
+    394826736,
+    394826739,
+    394826733
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "27 m",
+    "man_made": "tower",
+    "name": "Aussichtsturm Oberfrauenwald",
+    "operator": "Stadt Waldkirchen",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 47510242,
+  "center": {
+    "lat": 48.8921972,
+    "lon": 13.4882592
+  },
+  "nodes": [
+    604961861,
+    604961864,
+    604961859,
+    604961860,
+    604961861
+  ],
+  "tags": {
+    "building": "yes",
+    "layer": "1",
+    "man_made": "tower",
+    "tower:type": "observation",
+    "website": "https://www.baumwipfelpfade.de/bayerischer-wald/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 198621737,
+  "center": {
+    "lat": 48.8171987,
+    "lon": 13.2161517
+  },
+  "nodes": [
+    2087322914,
+    2087322911,
+    2087322906,
+    2087322912,
+    2087322914
+  ],
+  "tags": {
+    "building": "yes",
+    "direction": "0-360",
+    "height": "27",
+    "man_made": "tower",
+    "tower:type": "observation",
+    "website": "https://www.bayerischer-wald.de/Media/Attraktionen/Brotjacklriegel-Hausberg-der-Region-Sonnenwald",
+    "wikipedia": "de:Brotjacklriegel"
+  }
+},
+{
+  "type": "way",
+  "id": 202027539,
+  "center": {
+    "lat": 49.3079968,
+    "lon": 12.8448761
+  },
+  "nodes": [
+    2120117816,
+    2120117803,
+    2120117807,
+    1667948011,
+    2120117819,
+    2120117816
+  ],
+  "tags": {
+    "addr:city": "Furth im Wald",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "93437",
+    "addr:street": "Schloßplatz",
+    "building": "yes",
+    "description": "Turm mit Museum",
+    "height": "35",
+    "historic": "yes",
+    "man_made": "tower",
+    "name": "Stadtturm",
+    "start_date": "1865",
+    "toilets:wheelchair": "no",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "http://www.landestormuseum.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 202211550,
+  "center": {
+    "lat": 48.8818230,
+    "lon": 12.5695604
+  },
+  "nodes": [
+    2121910393,
+    11110595923,
+    1446455431,
+    2121910390,
+    3842691643,
+    2121910395,
+    3003592265,
+    3842691645,
+    3842691646,
+    2121910393
+  ],
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:country": "DE",
+    "addr:postcode": "94315",
+    "addr:street": "Ludwigsplatz",
+    "building": "tower",
+    "building:part": "yes",
+    "height": "68",
+    "historic": "tower",
+    "man_made": "tower",
+    "name": "Stadtturm",
+    "start_date": "1316",
+    "tourism": "attraction",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q2328293",
+    "wikipedia": "de:Stadtturm (Straubing)"
+  }
+},
+{
+  "type": "way",
+  "id": 204050025,
+  "center": {
+    "lat": 48.8725948,
+    "lon": 12.5862268
+  },
+  "nodes": [
+    310529742,
+    2140628715,
+    3012291347,
+    2140628713,
+    3012291345,
+    2140628712,
+    3012291346,
+    310529742
+  ],
+  "tags": {
+    "access": "no",
+    "building": "yes",
+    "building:levels": "1",
+    "man_made": "tower",
+    "min_height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 204050026,
+  "center": {
+    "lat": 48.8681428,
+    "lon": 12.5838782
+  },
+  "nodes": [
+    2140628698,
+    3012291338,
+    2140628699,
+    3012291337,
+    2140628697,
+    310529746,
+    2140628696,
+    2140628698
+  ],
+  "tags": {
+    "access": "no",
+    "building": "yes",
+    "building:levels": "1",
+    "man_made": "tower",
+    "min_height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 204050027,
+  "center": {
+    "lat": 48.8702168,
+    "lon": 12.5890590
+  },
+  "nodes": [
+    2140628706,
+    3012291342,
+    2140628707,
+    310529741,
+    2140628704,
+    3012291341,
+    2140628706
+  ],
+  "tags": {
+    "access": "no",
+    "building": "yes",
+    "building:levels": "1",
+    "man_made": "tower",
+    "min_height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 204050028,
+  "center": {
+    "lat": 48.8692343,
+    "lon": 12.5871568
+  },
+  "nodes": [
+    2140628702,
+    2140628703,
+    3012291340,
+    2140628701,
+    310529747,
+    3012291339,
+    2140628702
+  ],
+  "tags": {
+    "access": "no",
+    "building": "yes",
+    "building:levels": "1",
+    "man_made": "tower",
+    "min_height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 204050029,
+  "center": {
+    "lat": 48.8710194,
+    "lon": 12.5832358
+  },
+  "nodes": [
+    2140628710,
+    2140628711,
+    3012291344,
+    2140628709,
+    3012291343,
+    310529743,
+    2140628710
+  ],
+  "tags": {
+    "access": "no",
+    "building": "yes",
+    "building:levels": "1",
+    "man_made": "tower",
+    "min_height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 205383506,
+  "center": {
+    "lat": 48.8814341,
+    "lon": 12.5689792
+  },
+  "nodes": [
+    2153543816,
+    2153543826,
+    3830644985,
+    3830644982,
+    3830644983,
+    3830644972,
+    2153543768,
+    3830644973,
+    2153543803,
+    3830644997,
+    3830645006,
+    2153543736,
+    3830645011,
+    3830645009,
+    3830645008,
+    3830645003,
+    3830644996,
+    3830644992,
+    2153543772,
+    3830645007,
+    2153543747,
+    3830645017,
+    1396523384,
+    2153543816
+  ],
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:country": "DE",
+    "addr:housenumber": "9",
+    "addr:postcode": "94315",
+    "addr:street": "Theresienplatz",
+    "amenity": "restaurant",
+    "brewery": "Paulaner",
+    "building": "yes",
+    "email": "info@hotel-seethaler.de",
+    "fax": "+49 9421 9395 50",
+    "name": "Hotel-Restaurant Seethaler",
+    "phone": "+49 9421 9395 0",
+    "stars": "3",
+    "toilets:wheelchair": "no",
+    "tourism": "hotel",
+    "website": "https://www.hotel-seethaler.de/",
+    "wheelchair": "no",
+    "wikidata": "Q41269413"
+  }
+},
+{
+  "type": "way",
+  "id": 223583859,
+  "center": {
+    "lat": 48.9243195,
+    "lon": 13.0381320
+  },
+  "nodes": [
+    2324634844,
+    2324634893,
+    2324634849,
+    2324634878,
+    2324634844
+  ],
+  "tags": {
+    "addr:city": "Bischofsmais",
+    "addr:housenumber": "5",
+    "addr:place": "Unterbreitenau",
+    "addr:postcode": "94253",
+    "amenity": "restaurant",
+    "building": "yes",
+    "contact:phone": "+49 9920 336",
+    "indoor_seating": "yes",
+    "name": "Geisskopfhütte",
+    "operator": "Roland Holdenrieder",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 223583861,
+  "center": {
+    "lat": 48.9237694,
+    "lon": 13.0374464
+  },
+  "nodes": [
+    2324634840,
+    2324634845,
+    2324634887,
+    2324634835,
+    2324634840
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "height": "23",
+    "man_made": "tower",
+    "name": "Geißkopfturm",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 238897063,
+  "center": {
+    "lat": 49.1131204,
+    "lon": 13.1389201
+  },
+  "nodes": [
+    2466964678,
+    2466964651,
+    2466964662,
+    2466964682,
+    2466964678
+  ],
+  "tags": {
+    "building": "yes",
+    "description": "Personen-Aufzug",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 247910354,
+  "center": {
+    "lat": 48.7748171,
+    "lon": 13.3537116
+  },
+  "nodes": [
+    2547609817,
+    2547609815,
+    2547609814,
+    2547609816,
+    2547609817
+  ],
+  "tags": {
+    "height": "10",
+    "man_made": "tower",
+    "material": "stone;wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 255015174,
+  "center": {
+    "lat": 48.6545666,
+    "lon": 13.7963721
+  },
+  "nodes": [
+    2607688778,
+    2607688776,
+    2607688777,
+    2607688779,
+    2607688778
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "name": "Aussichtsturm Friedrichsberg",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 257445461,
+  "center": {
+    "lat": 49.3064026,
+    "lon": 12.8998424
+  },
+  "nodes": [
+    2629722729,
+    2629722723,
+    2629722719,
+    2629722726,
+    2629722729
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 263080961,
+  "center": {
+    "lat": 49.3449471,
+    "lon": 12.7361947
+  },
+  "nodes": [
+    2687015444,
+    2687015449,
+    2687015450,
+    2687015452,
+    2687015444
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "mapillary": "544630523390484",
+    "material": "wood",
+    "name": "Aussichtsturm Klammerfels",
+    "start_date": "1978",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 292116529,
+  "center": {
+    "lat": 49.0129258,
+    "lon": 13.1336899
+  },
+  "nodes": [
+    2956403539,
+    2956403537,
+    2956403538,
+    2956403540,
+    2956403539
+  ],
+  "tags": {
+    "access": "no",
+    "building": "yes",
+    "height": "28",
+    "man_made": "tower",
+    "name": "Aussichtsturm Langdorf",
+    "start_date": "2007",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 294745566,
+  "center": {
+    "lat": 49.2347315,
+    "lon": 12.9331070
+  },
+  "nodes": [
+    2983641876,
+    2983641877,
+    2983641878,
+    2983641879,
+    2983641880,
+    2983641862,
+    2983641863,
+    2983641864,
+    2983641865,
+    2983641870,
+    2983641871,
+    2983641872,
+    2983641873,
+    2983641874,
+    2983641875,
+    2983641866,
+    2983641867,
+    2983641868,
+    2983641869,
+    2983641876
+  ],
+  "tags": {
+    "addr:city": "Rimbach",
+    "addr:housenumber": "1",
+    "addr:postcode": "93485",
+    "addr:street": "Am Schwarzriegel",
+    "building": "tower",
+    "contact:website": "https://sektor-f.de/",
+    "description": "denkmalgeschützter Turm mit Aussichtsplattform, ehemals Aufklärungsturm der NATO",
+    "man_made": "tower",
+    "military": "tower",
+    "name": "sektor.f Hauptturm",
+    "source": "DOP_LVA_BY_01",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 321521229,
+  "center": {
+    "lat": 49.0125029,
+    "lon": 12.9339770
+  },
+  "nodes": [
+    3282771517,
+    3282771515,
+    3282771514,
+    3282771516,
+    3282771517
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 343052652,
+  "center": {
+    "lat": 48.8819312,
+    "lon": 12.5709510
+  },
+  "nodes": [
+    3499756257,
+    3499756260,
+    3499756262,
+    3499756264,
+    3499756266,
+    3499756265,
+    3499756263,
+    3499756261,
+    3499756258,
+    3499756256,
+    3499756254,
+    3499756252,
+    3499756250,
+    3499756251,
+    3499756253,
+    3499756255,
+    3499756257
+  ],
+  "tags": {
+    "addr:city": "Straubing",
+    "addr:postcode": "94315",
+    "amenity": "cafe",
+    "building": "commercial",
+    "check_date": "2024-09-21",
+    "name": "Alter Kiosk",
+    "source": "Bing",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 353655127,
+  "center": {
+    "lat": 48.8588347,
+    "lon": 13.1988423
+  },
+  "nodes": [
+    3594706167,
+    3594706165,
+    3594706164,
+    3594706166,
+    3594706167
+  ],
+  "tags": {
+    "man_made": "tower",
+    "name": "Aussichtsturm",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 363618631,
+  "center": {
+    "lat": 48.9638850,
+    "lon": 12.8796226
+  },
+  "nodes": [
+    3677883769,
+    3677883767,
+    3677883765,
+    3677883766,
+    3677883768,
+    3677883770,
+    3677883772,
+    3677883774,
+    3677883776,
+    3677883778,
+    3677883780,
+    3677883779,
+    3677883777,
+    3677883775,
+    3677883773,
+    3677883771,
+    3677883769
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "7",
+    "man_made": "tower",
+    "name": "Aussichtsturm Hirschenstein",
+    "start_date": "1921",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q110209243"
+  }
+},
+{
+  "type": "way",
+  "id": 372742105,
+  "center": {
+    "lat": 49.1287124,
+    "lon": 12.9981502
+  },
+  "nodes": [
+    3762932562,
+    3762932252,
+    3762932250,
+    3762932247,
+    3762932558,
+    3762932570,
+    3762932562
+  ],
+  "tags": {
+    "addr:city": "Arnbruck",
+    "addr:housenumber": "2",
+    "addr:postcode": "93471",
+    "addr:street": "Ecker Straße",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "name": "Gasthaus Vogl",
+    "opening_hours": "\"Geschlossen\"",
+    "roof:shape": "half-hipped"
+  }
+},
+{
+  "type": "way",
+  "id": 404451974,
+  "center": {
+    "lat": 49.0111083,
+    "lon": 12.7984246
+  },
+  "nodes": [
+    4067238072,
+    4067238073,
+    4067238071,
+    12001425512,
+    4067238070,
+    4067238072
+  ],
+  "tags": {
+    "building": "yes",
+    "comment": "kein Gebäude im eigentlichen Sinn, deshalb \"building=yes\" gelöscht",
+    "fee": "no",
+    "height": "20",
+    "man_made": "tower",
+    "name": "Aussichtsturm",
+    "roof:shape": "pyramidal",
+    "source": "Bing",
+    "tower:type": "observation",
+    "website": "https://www.sommerrodeln.de/de/freizeit-erlebnispark/20-meter-aussichtsturm"
+  }
+},
+{
+  "type": "way",
+  "id": 438031322,
+  "center": {
+    "lat": 48.9508271,
+    "lon": 13.1414724
+  },
+  "nodes": [
+    4357995099,
+    4357995098,
+    4357995102,
+    4357995103,
+    4357995099
+  ],
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 702304401,
+  "center": {
+    "lat": 49.1286486,
+    "lon": 12.9969871
+  },
+  "nodes": [
+    6595160842,
+    6595160841,
+    6595160840,
+    6595160838,
+    6595160818,
+    6595160839,
+    6595160842
+  ],
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "man_made": "tower",
+    "step_count": "51",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 802611690,
+  "center": {
+    "lat": 49.3267727,
+    "lon": 12.8689123
+  },
+  "nodes": [
+    7507614111,
+    7507614108,
+    7507614109,
+    7507614110,
+    7507614111
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "name": "Aussichtsturm Bayernwarte",
+    "tower:type": "observation",
+    "wikidata": "Q812516"
+  }
+},
+{
+  "type": "way",
+  "id": 910423808,
+  "center": {
+    "lat": 48.8952106,
+    "lon": 13.3452782
+  },
+  "nodes": [
+    1245099647,
+    8452978902,
+    8452978901,
+    8452978900,
+    1245099647
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "description": "Aussichtsturm",
+    "fee": "no",
+    "man_made": "tower",
+    "tourism": "attraction",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 924554691,
+  "center": {
+    "lat": 48.5583109,
+    "lon": 13.4100281
+  },
+  "nodes": [
+    8580860905,
+    8580860906,
+    8580860907,
+    8580860908,
+    8580860905
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 925955164,
+  "center": {
+    "lat": 48.7554713,
+    "lon": 13.3073022
+  },
+  "nodes": [
+    8593095122,
+    8593095123,
+    8593095124,
+    8593095125,
+    8593095122
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "25",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Aussichtsturm Ochsenstiegl",
+    "step_count": "80",
+    "tourism": "viewpoint",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 945646714,
+  "center": {
+    "lat": 48.6703758,
+    "lon": 13.5132991
+  },
+  "nodes": [
+    8108613248,
+    8754452618,
+    8754452617,
+    8108613248
+  ],
+  "tags": {
+    "ele": "540",
+    "height": "29.35 m",
+    "man_made": "tower",
+    "material": "steel",
+    "name": "Aussichtsturm Büchlberg",
+    "operator": "Gemeinde Büchlberg",
+    "start_date": "2020",
+    "step_count": "140",
+    "tourism": "viewpoint",
+    "tower:construction": "lattice",
+    "tower:type": "observation",
+    "website": "https://www.buechlberg.de/freizeit-tourismus/aussichtsturm-buechlberg/",
+    "wheelchair": "no",
+    "wikimedia_commons": "File:Aussichtsturm Büchlberg.jpg"
+  }
+},
+{
+  "type": "way",
+  "id": 987007652,
+  "center": {
+    "lat": 49.2338855,
+    "lon": 12.6637622
+  },
+  "nodes": [
+    9123171628,
+    9123171627,
+    9123171626,
+    9123171625,
+    9123171624,
+    9123171623,
+    9123171622,
+    9123171621,
+    9123171620,
+    9123171628
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "fee": "no",
+    "historic": "yes",
+    "man_made": "tower",
+    "material": "concrete",
+    "name": "Luitpoldturm",
+    "operator": "Stadt Cham",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1056412079,
+  "center": {
+    "lat": 48.8332374,
+    "lon": 13.5036710
+  },
+  "nodes": [
+    9707042178,
+    9707042167,
+    9707042185,
+    9707042168,
+    9707042165,
+    9707042175,
+    9707042186,
+    9707042177,
+    9707042183,
+    9707042164,
+    9707042179,
+    9707042173,
+    9707042188,
+    9707042170,
+    9707042184,
+    9707042172,
+    9707042176,
+    9707042178
+  ],
+  "tags": {
+    "area": "yes",
+    "area:highway": "footway",
+    "height": "4",
+    "layer": "1",
+    "man_made": "tower",
+    "name": "Aussichtsplattform Saulorn, Alpenblick",
+    "opening_hours": "24/7",
+    "platform:material": "wood",
+    "tower:platforms": "1",
+    "tower:type": "observation",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1167804323,
+  "center": {
+    "lat": 49.3320682,
+    "lon": 12.6556346
+  },
+  "nodes": [
+    10861010267,
+    10861010266,
+    10861010265,
+    10861010264,
+    10861010267
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Aussichtsturm Bleschenberg",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1278279477,
+  "center": {
+    "lat": 49.2347445,
+    "lon": 12.9337660
+  },
+  "nodes": [
+    11867102287,
+    11867102288,
+    11867102289,
+    11867102290,
+    11867102291,
+    11867102292,
+    11867102293,
+    11867102294,
+    11867102295,
+    11853765812,
+    11853765811,
+    11853765810,
+    11853765815,
+    11867102296,
+    11867102287
+  ],
+  "tags": {
+    "amenity": "biergarten",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1424943594,
+  "center": {
+    "lat": 49.0590155,
+    "lon": 13.2433034
+  },
+  "nodes": [
+    13097824976,
+    13097824977,
+    290221943,
+    13097824978,
+    13097824979,
+    13097824980,
+    13097824981,
+    13097824976
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "description": "Überdachter Beobachtungsturm nach Renovierung wieder eröffnet. Stahl-/Holzkonstruktion mit innen laufendem Treppenhaus.",
+    "direction": "360",
+    "fee": "no",
+    "height": "20",
+    "man_made": "tower",
+    "name": "Turm am Wolfsgehege",
+    "opening_hours": "24/7",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "website": "https://www.nationalpark-bayerischer-wald.bayern.de/aktuelles/pressemitteilung/detailansicht.htm?ID=A%2Bs3RgSTi2S4LjbgGIvQ7A%3D%3D"
+  }
+},
+{
+  "type": "way",
+  "id": 1430774034,
+  "center": {
+    "lat": 48.7942688,
+    "lon": 13.5357558
+  },
+  "nodes": [
+    13152040559,
+    13152040560,
+    13152040561,
+    13152040562,
+    13152040559
+  ],
+  "tags": {
+    "access": "yes",
+    "direction": "360",
+    "height": "31.5",
+    "man_made": "tower",
+    "name": "Aussichtsturm Geyersberg",
+    "step_count": "168",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

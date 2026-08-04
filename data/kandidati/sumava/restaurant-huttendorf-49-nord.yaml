@@ -1,0 +1,36 @@
+# Restaurant Hüttendorf 49° Nord — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-04)
+# Zdroj: https://www.openstreetmap.org/way/360947918 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Restaurant Hüttendorf 49° Nord
+slug: restaurant-huttendorf-49-nord
+zeme: de
+oblast: sumava
+lat: 49.0776911
+lng: 13.2070204
+obec: Bayerisch Eisenstein
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/360947918 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+kontakty:
+  telefon: +49 9925 9037890
+  email: info@49gradnord.net
+  web: https://49gradnord.online/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/360947918 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-04) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Fr 16:00-20:00; Sa, Su
+  11:00-20:00

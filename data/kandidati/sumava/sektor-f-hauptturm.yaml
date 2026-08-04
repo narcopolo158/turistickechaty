@@ -1,0 +1,35 @@
+# sektor.f Hauptturm — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-05-31)
+# Zdroj: https://www.openstreetmap.org/way/294745566 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: sektor.f Hauptturm
+slug: sektor-f-hauptturm
+zeme: de
+oblast: sumava
+typ: rozhledna
+lat: 49.2347315
+lng: 12.933107
+obec: Rimbach
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/294745566 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-31
+kontakty:
+  web: https://sektor-f.de/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/294745566 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-31
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-05-31) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): (bez názvu) — amenity=biergarten, 48 m,
+  https://www.openstreetmap.org/way/1278279477

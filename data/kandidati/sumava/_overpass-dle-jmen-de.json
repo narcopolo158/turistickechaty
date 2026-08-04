@@ -1,0 +1,430 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-04T17:46:39Z",
+    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 34972298,
+  "lat": 49.1296005,
+  "lon": 13.0522998,
+  "tags": {
+    "addr:city": "Drachselsried",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:place": "Schareben",
+    "addr:postcode": "94256",
+    "amenity": "restaurant",
+    "contact:webcam": "https://www.foto-webcam.eu/webcam/schareben/",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "ele": "1019",
+    "email": "info@berghuette-schareben.de",
+    "indoor_seating": "yes",
+    "name": "Berghütte Schareben",
+    "note": "Übernachtungsmöglichkeit: max. 26 Personen, Reservierungen telefonisch von 10:00-16:00 Uhr",
+    "opening_hours": "Tu-Su,PH 10:00-18:00",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "phone": "+49 9945 1037",
+    "smoking": "outside",
+    "takeaway": "no",
+    "website": "https://www.berghuette-schareben.de/",
+    "website:menu": "https://www.berghuette-schareben.de/speisekarte.html"
+  }
+},
+{
+  "type": "node",
+  "id": 307763242,
+  "lat": 48.9157095,
+  "lon": 13.0346222,
+  "tags": {
+    "addr:city": "Bischofsmais",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:place": "Oberbreitenau",
+    "addr:postcode": "94253",
+    "addr:suburb": "Oberbreitenau",
+    "amenity": "restaurant",
+    "contact:email": "info@bayerischer-wald-verein.de",
+    "contact:phone": "+49 9920 255",
+    "contact:website": "https://www.landshuter.haus/",
+    "name": "Landshuter Haus",
+    "opening_hours": "We-Su 10:00-19:00",
+    "opening_hours:kitchen": "We-Su 10:00-18:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 317727272,
+  "lat": 49.1133824,
+  "lon": 13.1148908,
+  "tags": {
+    "beds": "58",
+    "designation": "Am kleinen Arber",
+    "ele": "1289",
+    "name": "Chamer Hütte",
+    "tourism": "alpine_hut",
+    "website": "https://www.sc-bodenmais.de/chamer-huette/"
+  }
+},
+{
+  "type": "node",
+  "id": 2409111904,
+  "lat": 49.1133286,
+  "lon": 13.1148794,
+  "tags": {
+    "addr:city": "Bodenmais",
+    "addr:country": "DE",
+    "addr:housename": "Chamer Hütte",
+    "addr:housenumber": "1",
+    "addr:postcode": "94249",
+    "addr:street": "Chamer Hütte",
+    "amenity": "restaurant",
+    "cuisine": "bavarian",
+    "email": "info@SC-Bodenmais.de",
+    "name": "Chamer Hütte",
+    "opening_hours": "Mo-Su 10:00-17:00",
+    "smoking": "no",
+    "website": "https://www.sc-bodenmais.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 9797999351,
+  "lat": 48.9157474,
+  "lon": 13.0345833,
+  "tags": {
+    "addr:city": "Bischofsmais",
+    "addr:housenumber": "1",
+    "addr:place": "Oberbreitenau",
+    "addr:postcode": "94253",
+    "contact:email": "info@bayerischer-wald-verein.de",
+    "contact:phone": "+49 9920 255",
+    "contact:website": "https://www.landshuter.haus/das-schutzhaus/",
+    "electricity": "yes",
+    "fee": "yes",
+    "name": "Landshuter Haus",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 9991613217,
+  "lat": 49.2034214,
+  "lon": 13.1097390,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:postcode": "93462",
+    "addr:street": "Osser",
+    "name": "Osserschutzhaus",
+    "tourism": "alpine_hut",
+    "website": "https://www.osser-schutzhaus.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 26312947,
+  "center": {
+    "lat": 48.7810493,
+    "lon": 13.8031895
+  },
+  "nodes": [
+    288278575,
+    11178301842,
+    288278564,
+    288278565,
+    288278567,
+    288278575
+  ],
+  "tags": {
+    "addr:city": "Neureichenau",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:place": "Dreisesselhaus",
+    "addr:postcode": "94089",
+    "amenity": "restaurant",
+    "building": "yes",
+    "check_date": "2026-02-06",
+    "check_date:opening_hours": "2024-04-21",
+    "cuisine": "german;regional;europe",
+    "delivery": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "fee": "yes",
+    "image": "https://de.wikipedia.org/wiki/Datei:Berggasthof_Dreisessel_02.jpg",
+    "name": "Berggasthof Dreisessel",
+    "name:cs": "Horská chata Třístoličník",
+    "name:de": "Berggasthof Dreisessel",
+    "opening_hours": "Mo-Tu off; We 09:00-18:00; Th 09:00-22:00; Fr-Su 09:00-18:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 8556 350",
+    "smoking": "outside",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "tourism": "alpine_hut",
+    "website": "https://www.berggasthof-dreisessel.com/",
+    "wheelchair": "no",
+    "wikidata": "Q37701028",
+    "wikimedia_commons": "Category:Berggasthof Dreisessel"
+  }
+},
+{
+  "type": "way",
+  "id": 32639764,
+  "center": {
+    "lat": 49.1134315,
+    "lon": 13.1394901
+  },
+  "nodes": [
+    366961087,
+    2466964718,
+    2466964715,
+    2466964712,
+    2466964709,
+    366961092,
+    366961096,
+    366961100,
+    366961087
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "biergarten": "yes",
+    "building": "yes",
+    "check_date": "2024-10-07",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Eisensteiner Hütte",
+    "opening_hours": "10:00-17:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 9925 94140",
+    "toilets:wheelchair": "yes",
+    "website": "http://www.arber.de/gastronomie/eisensteiner-huette.html",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 32639765,
+  "center": {
+    "lat": 49.1134294,
+    "lon": 13.1390849
+  },
+  "nodes": [
+    366961102,
+    366961106,
+    366961136,
+    2466964691,
+    2466964701,
+    366961133,
+    366961111,
+    366961102
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "ele": "1358",
+    "indoor_seating": "yes",
+    "name": "Arberschutzhaus",
+    "opening_hours": "10:00-16:00; Nov,Apr off",
+    "operator": "Bayerischer Wald Verein",
+    "outdoor_seating": "yes",
+    "phone": "+49 992594 140",
+    "tourism": "alpine_hut",
+    "website": "https://arberschutzhaus.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 35077559,
+  "center": {
+    "lat": 48.9377654,
+    "lon": 13.5075896
+  },
+  "nodes": [
+    411496791,
+    411496792,
+    411496793,
+    2086893169,
+    2086893168,
+    411496794,
+    411496791
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "beds": "21",
+    "biergarten": "yes",
+    "building": "detached",
+    "cuisine": "regional",
+    "email": "info@lusenschutzhaus.com",
+    "name": "Lusenschutzhaus",
+    "opening_hours": "Apr 01-Nov 30: Mo-Su 10:00-18:00; Dec-Feb: Fr-Su 10:00-17:00",
+    "operator": "Bayerischer Wald - Verein",
+    "phone": "+49 8553 1212; +49 1514 0712916",
+    "rooms": "5",
+    "tourism": "alpine_hut",
+    "website": "https://lusenschutzhaus.com/",
+    "wikimedia_commons": "Category:Lusenschutzhaus"
+  }
+},
+{
+  "type": "way",
+  "id": 99344027,
+  "center": {
+    "lat": 49.1296028,
+    "lon": 13.0523421
+  },
+  "nodes": [
+    1149102635,
+    1149102634,
+    1149102639,
+    1149102633,
+    1149102635
+  ],
+  "tags": {
+    "building": "yes",
+    "check_date": "2024-06-05",
+    "name": "Berghütte Schareben",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 156065324,
+  "center": {
+    "lat": 49.1739921,
+    "lon": 12.9431417
+  },
+  "nodes": [
+    1683666519,
+    9730848298,
+    9730862125,
+    1683666522,
+    1683666529,
+    2096954359,
+    2096954482,
+    2096954505,
+    1683666531,
+    1683666519
+  ],
+  "tags": {
+    "addr:city": "Hohenwarth",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "93480",
+    "addr:street": "Kötztinger Hütte",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "bavarian",
+    "email": "Info@Koetztinger-Huette.de",
+    "name": "Kötztinger Hütte",
+    "note": "keine Unterkunft mehr; email-Antwort dauert mindestens 48h; Öffnungszeiten für 2017: in den Ferien und zwischen Osterferien bis Herbstferien alle Tage geöffnet, sonst nur Mitwoch, Samstag, Sonntag; Im Januar nach den Winterferien 1,5 Wochen zu",
+    "opening_hours": "Apr-Oct: Mo-Su 10:00-18:00",
+    "operator": "Michael Silberbauer",
+    "outdoor_seating": "yes",
+    "phone": "+49 9946 290",
+    "website": "http://www.koetztinger-huette.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 169138340,
+  "center": {
+    "lat": 48.9752366,
+    "lon": 13.3865161
+  },
+  "nodes": [
+    1803050491,
+    1803050489,
+    3669212791,
+    1803050487,
+    2181671444,
+    1803050490,
+    1803050491
+  ],
+  "tags": {
+    "addr:housenumber": "30",
+    "addr:street": "Klingenbrunn (Bahnhof)",
+    "alt_name": "Rachelschutzhaus",
+    "building": "detached",
+    "building:levels": "2",
+    "disused": "yes",
+    "name": "Waldschmidthaus",
+    "note": "geplante Eröffnung nach Umbau 2026 https://www.pnp.de/lokales/landkreis-regen/neuer-entwurf-fuer-das-waldschmidthaus-auf-dem-grossen-rachel-15533362",
+    "opening_hours": "closed",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 169358398,
+  "center": {
+    "lat": 49.1632865,
+    "lon": 12.9904720
+  },
+  "nodes": [
+    173840080,
+    1805278682,
+    1805278675,
+    12064381110,
+    1805278680,
+    173840080
+  ],
+  "tags": {
+    "addr:city": "Arrach",
+    "addr:postcode": "93474",
+    "amenity": "restaurant",
+    "building": "yes",
+    "building:material": "wood",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "name": "Berggasthof Eck",
+    "outdoor_seating": "yes",
+    "phone": "+49 9945 1351",
+    "takeaway": "no",
+    "tourism": "hotel",
+    "website": "https://www.berggasthof-eck.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 177320402,
+  "center": {
+    "lat": 49.1267640,
+    "lon": 13.1342890
+  },
+  "nodes": [
+    1877694546,
+    1877694559,
+    5046488662,
+    1877694553,
+    1877694541,
+    1877694546
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "building:colour": "white",
+    "building:levels": "2",
+    "cuisine": "german",
+    "delivery": "no",
+    "diet:vegetarian": "no",
+    "indoor_seating": "yes",
+    "internet_access": "no",
+    "name": "Berghaus Sonnenfels",
+    "outdoor_seating": "yes",
+    "roof:shape": "gabled",
+    "takeaway": "no"
+  }
+}
+
+  ]
+}

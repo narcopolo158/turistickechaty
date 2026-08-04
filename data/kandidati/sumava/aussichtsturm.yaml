@@ -1,0 +1,37 @@
+# Aussichtsturm — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-05-31)
+# Zdroj: https://www.openstreetmap.org/way/404451974 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Aussichtsturm
+slug: aussichtsturm
+zeme: de
+oblast: sumava
+typ: rozhledna
+lat: 49.0111083
+lng: 12.7984246
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/404451974 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-31
+kontakty:
+  web: https://www.sommerrodeln.de/de/freizeit-erlebnispark/20-meter-aussichtsturm
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/404451974 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-31
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-05-31) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Egidi-Stüberl — amenity=restaurant, 83
+  m, https://www.openstreetmap.org/node/4187219672 · Schmankerlwerkstatt —
+  amenity=restaurant, 95 m, https://www.openstreetmap.org/node/12056953378
+
+  Výška věže dle OSM: 20 m

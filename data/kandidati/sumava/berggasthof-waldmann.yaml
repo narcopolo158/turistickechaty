@@ -1,0 +1,31 @@
+# Berggasthof Waldmann — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-04)
+# Zdroj: https://www.openstreetmap.org/node/435104821 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Berggasthof Waldmann
+slug: berggasthof-waldmann
+zeme: de
+oblast: sumava
+lat: 49.0310952
+lng: 13.1205197
+obec: Langdorf
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/435104821 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+kontakty:
+  web: http://www.berggasthof-waldmann.com/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/435104821 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-04) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

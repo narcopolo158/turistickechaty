@@ -1,0 +1,38 @@
+# Lusenschutzhaus — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-04)
+# Zdroj: https://www.openstreetmap.org/way/35077559 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Lusenschutzhaus
+slug: lusenschutzhaus
+zeme: de
+oblast: sumava
+typ: obsluhovana
+lat: 48.9377654
+lng: 13.5075896
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/35077559 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+kontakty:
+  telefon: +49 8553 1212; +49 1514 0712916
+  email: info@lusenschutzhaus.com
+  web: https://lusenschutzhaus.com/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/35077559 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-04) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Bayerischer Wald - Verein
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Apr 01-Nov 30: Mo-Su
+  10:00-18:00; Dec-Feb: Fr-Su 10:00-17:00

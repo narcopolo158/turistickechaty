@@ -1,0 +1,35 @@
+# Kurzova věž — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-04)
+# Zdroj: https://www.openstreetmap.org/way/107223786 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Kurzova věž
+slug: kurzova-vez
+zeme: cz
+oblast: sumava
+typ: rozhledna
+aliasy:
+  - nazev: Kurzova rozhledna
+    poznamka: alternativní název (OSM alt_name)
+  - nazev: Čerchovská rozhledna
+    poznamka: alternativní název (OSM alt_name)
+lat: 49.3832364
+lng: 12.7840502
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/107223786 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-04) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Hospůdka — amenity=fast_food, 6 m,
+  https://www.openstreetmap.org/node/13970695352 · Chata Čerchov —
+  amenity=restaurant, 64 m, https://www.openstreetmap.org/node/13428176345
+
+  Výška věže dle OSM: 24 m

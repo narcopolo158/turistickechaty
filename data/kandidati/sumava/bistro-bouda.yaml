@@ -1,0 +1,32 @@
+# Bistro Bouda — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-01)
+# Zdroj: https://www.openstreetmap.org/node/7019703421 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Bistro Bouda
+slug: bistro-bouda
+zeme: cz
+oblast: sumava
+lat: 48.8109279
+lng: 14.3127506
+obec: Český Krumlov
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/7019703421 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-01
+kontakty:
+  telefon: +420 728 362 857
+  email: info@bistrobouda.cz
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/7019703421 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-01
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-01) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

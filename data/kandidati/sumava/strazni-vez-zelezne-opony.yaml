@@ -1,0 +1,30 @@
+# Strážní věž Železné opony — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-04)
+# Zdroj: https://www.openstreetmap.org/node/1359022658 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/sumava/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Strážní věž Železné opony
+slug: strazni-vez-zelezne-opony
+zeme: cz
+oblast: sumava
+typ: rozhledna
+lat: 48.96684
+lng: 13.5921806
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/1359022658 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-04
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-04) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Alpská vyhlídka — amenity=restaurant,
+  61 m, https://www.openstreetmap.org/node/12801782102 · (bez názvu) —
+  amenity=fast_food, 66 m, https://www.openstreetmap.org/way/651498690
+
+  Výška věže dle OSM: 10 m

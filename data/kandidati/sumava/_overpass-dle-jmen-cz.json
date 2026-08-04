@@ -1,0 +1,180 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-04T17:44:36Z",
+    "timestamp_areas_base": "2026-08-03T18:53:46Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1359022305,
+  "lat": 48.9674340,
+  "lon": 13.5923909,
+  "tags": {
+    "check_date": "2024-10-07",
+    "name": "Alpská vyhlídka",
+    "source": "survey",
+    "stars": "4",
+    "tourism": "hotel",
+    "website": "https://www.alpskavyhlidka.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2840232413,
+  "lat": 49.0245496,
+  "lon": 13.5009102,
+  "tags": {
+    "amenity": "restaurant",
+    "biergarten": "yes",
+    "cuisine": "regional",
+    "name": "Klostermannova chata",
+    "opening_hours": "Mo-Su 11:00-22:00",
+    "website": "https://klostermannovachata.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 4011963592,
+  "lat": 49.1431486,
+  "lon": 13.2395839,
+  "tags": {
+    "addr:city": "Železná Ruda",
+    "addr:country": "CZ",
+    "addr:housenumber": "189",
+    "addr:postcode": "340 04",
+    "addr:street": "Železná Ruda",
+    "amenity": "restaurant",
+    "craft": "brewery",
+    "email": "info@hotelbelveder.cz",
+    "microbrewery": "yes",
+    "mobile": "+420 607 111 993; +420 725 737 732",
+    "name": "Belveder",
+    "outdoor_seating": "yes",
+    "phone": "+420 376 397 016",
+    "website": "https://www.hotelbelveder.cz/belveder/pivovar.asp"
+  }
+},
+{
+  "type": "node",
+  "id": 4393348047,
+  "lat": 49.1042718,
+  "lon": 13.3791261,
+  "tags": {
+    "addr:city": "Prášily",
+    "addr:conscriptionnumber": "100",
+    "addr:country": "CZ",
+    "addr:housenumber": "100",
+    "addr:place": "Prášily",
+    "addr:postcode": "34201",
+    "name": "Chata KČT Prášily",
+    "phone": "+420 607 531 351",
+    "source:addr": "cuzk:ruian",
+    "tourism": "alpine_hut",
+    "website": "http://www.ubytovnaprasily.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 12801782102,
+  "lat": 48.9673523,
+  "lon": 13.5924912,
+  "tags": {
+    "addr:city": "Kvilda",
+    "addr:housenumber": "149",
+    "addr:postcode": "38493",
+    "addr:street": "Bučina",
+    "amenity": "restaurant",
+    "brewery": "various;yes",
+    "contact:webcam": "https://www.alpskavyhlidka.cz/alpskavyhlidka/webcam.asp",
+    "contact:website": "https://www.alpskavyhlidka.cz/alpskavyhlidka/restaurace.asp",
+    "cuisine": "regional",
+    "leisure": "outdoor_seating",
+    "name": "Alpská vyhlídka",
+    "opening_hours": "Mo-Su 10:00-18:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 34418358,
+  "center": {
+    "lat": 49.0821243,
+    "lon": 13.5153884
+  },
+  "nodes": [
+    395379416,
+    7104759626,
+    7104759625,
+    395379417,
+    7104759624,
+    7104759623,
+    7104759622,
+    395379418,
+    7104759621,
+    7104759620,
+    395379419,
+    7104759619,
+    395379416
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "building:levels": "3",
+    "building:ruian:type": "20",
+    "changing_table": "yes",
+    "cuisine": "regional",
+    "name": "Turnerova chata",
+    "name:de": "Turnerhütte",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "ref:ruian:building": "21183872",
+    "source": "cuzk:ruian",
+    "start_date": "2019-01-11",
+    "toilets": "yes",
+    "tourism": "chalet",
+    "vydrysek": "yes",
+    "wikidata": "Q12059982",
+    "wikipedia": "cs:Turnerova chata"
+  }
+},
+{
+  "type": "way",
+  "id": 109293152,
+  "center": {
+    "lat": 49.1431232,
+    "lon": 13.2394899
+  },
+  "nodes": [
+    1251599306,
+    4011963945,
+    5157174980,
+    1251599558,
+    7234696759,
+    1251599339,
+    7234696758,
+    1251600024,
+    1251599149,
+    1251599306
+  ],
+  "tags": {
+    "building": "residential",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "name": "Belveder",
+    "phone": "+420 376 397 016",
+    "ref:ruian:building": "11987286",
+    "source": "cuzk:ruian",
+    "source:name": "survey",
+    "tourism": "hotel",
+    "website": "http://www.hotelbelveder.cz"
+  }
+}
+
+  ]
+}

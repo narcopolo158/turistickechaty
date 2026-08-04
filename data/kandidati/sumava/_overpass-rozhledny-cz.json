@@ -1,0 +1,1263 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-04T17:48:39Z",
+    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 264123666,
+  "lat": 49.3953734,
+  "lon": 13.0752716,
+  "tags": {
+    "access": "customers",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "rozhledna Koráb",
+    "name:cs": "rozhledna Koráb",
+    "name:de": "Koráb Aussichtsturm",
+    "name:en": "Koráb lookout tower",
+    "tower:type": "observation",
+    "wikidata": "Q97572978",
+    "wikipedia": "cs:Rozhledna Koráb"
+  }
+},
+{
+  "type": "node",
+  "id": 283595849,
+  "lat": 49.0397519,
+  "lon": 13.5754283,
+  "tags": {
+    "man_made": "tower",
+    "name": "Jezerní slať",
+    "note": "vyhlídková věž",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 360005769,
+  "lat": 48.8653871,
+  "lon": 14.2834302,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "delivery": "no",
+    "email": "info@klet.com",
+    "internet_access": "wlan",
+    "name": "Horská chata Kleť",
+    "opening_hours": "Mo-Tu off; We-Fr 11:00-17:00; Sa-Su 09:00-17:00",
+    "operator": "Horská chata Kleť s.r.o.",
+    "outdoor_seating": "yes",
+    "phone": "+420 724 700 300",
+    "smoking": "isolated",
+    "takeaway": "no",
+    "website": "https://www.klet.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 640536696,
+  "lat": 48.8298012,
+  "lon": 13.7954779,
+  "tags": {
+    "addr:city": "Stožec",
+    "addr:conscriptionnumber": "69",
+    "addr:country": "CZ",
+    "addr:housenumber": "69",
+    "addr:place": "Stožec",
+    "addr:postcode": "38444",
+    "amenity": "restaurant",
+    "check_date:payment": "2021-09-01",
+    "cuisine": "regional",
+    "name": "Hotel Nové Údolí",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+420 388 335 222",
+    "source:addr": "cuzk:ruian",
+    "website": "https://www.noveudoli.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 765965392,
+  "lat": 49.3192629,
+  "lon": 14.4290467,
+  "tags": {
+    "access": "yes",
+    "height": "13.2",
+    "man_made": "tower",
+    "name": "Rozhledna Radětice",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "http://rozhledny.kohl.cz/rozhledna-radetice-u-bechyne"
+  }
+},
+{
+  "type": "node",
+  "id": 1087986104,
+  "lat": 49.1902241,
+  "lon": 13.5691489,
+  "tags": {
+    "fee": "no",
+    "foot": "yes",
+    "man_made": "tower",
+    "name": "Sedlo",
+    "opening_hours": "24/7",
+    "source": "gpx;survey",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q15980424",
+    "wikipedia": "cs:Sedlo (rozhledna)"
+  }
+},
+{
+  "type": "node",
+  "id": 1323174438,
+  "lat": 49.1382182,
+  "lon": 13.6534636,
+  "tags": {
+    "height": "39",
+    "man_made": "tower",
+    "name": "Klostermannova Rozhledna",
+    "opening_hours": "Nov-Mar Sa-Su 10:00-15:30; Nov-Mar PH 10:00-15:30 open",
+    "operator": "Obec Vacov",
+    "payment:coins": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "phone": "+420733666495",
+    "tower:type": "observation",
+    "wikidata": "Q12029437",
+    "wikipedia": "cs:Klostermannova rozhledna"
+  }
+},
+{
+  "type": "node",
+  "id": 1323174711,
+  "lat": 49.1382571,
+  "lon": 13.6535135,
+  "tags": {
+    "amenity": "fast_food",
+    "internet_access": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1359022658,
+  "lat": 48.9668400,
+  "lon": 13.5921806,
+  "tags": {
+    "access": "no",
+    "height": "10",
+    "man_made": "tower",
+    "name": "Strážní věž Železné opony",
+    "name:cs": "Strážní věž Železné opony",
+    "name:de": "ehemal. Wachturm",
+    "note:de": "ehemal.Grenzwachturm",
+    "source": "survey",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1786627566,
+  "lat": 48.9015638,
+  "lon": 13.8367022,
+  "tags": {
+    "access": "no",
+    "building:material": "wood",
+    "direction": "0-360",
+    "fee": "no",
+    "height": "9.22 m",
+    "man_made": "tower",
+    "name": "Soumarské rašeliniště",
+    "note": "Rozhledna je z důvodu havarijního stavu uzavřena.",
+    "tourism": "viewpoint",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "wikidata": "Q123140413",
+    "wikipedia": "cs:Soumarské rašeliniště (rozhledna)"
+  }
+},
+{
+  "type": "node",
+  "id": 1839615001,
+  "lat": 48.6526726,
+  "lon": 14.2306532,
+  "tags": {
+    "ele": "941",
+    "height": "40.2 m",
+    "man_made": "tower",
+    "name": "Stezka korunami stromů Lipno",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "https://www.stezkakorunamistromu.cz/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2275771106,
+  "lat": 49.3137521,
+  "lon": 14.0663774,
+  "tags": {
+    "height": "65",
+    "man_made": "tower",
+    "name": "Velký Kamýk",
+    "source": "position=gps;bing",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2415938905,
+  "lat": 49.1358885,
+  "lon": 14.0072942,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2415951307,
+  "lat": 49.1361871,
+  "lon": 14.0072617,
+  "tags": {
+    "amenity": "fast_food"
+  }
+},
+{
+  "type": "node",
+  "id": 2419543458,
+  "lat": 49.2535213,
+  "lon": 14.0975585,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2432689449,
+  "lat": 49.2182176,
+  "lon": 13.8448503,
+  "tags": {
+    "description": "Na vyhlídkovou plošinu ve výšce 27m vede celkem 150 schodů.",
+    "fee": "no",
+    "man_made": "tower",
+    "name": "Rozhledna Kbíl",
+    "source": "survey",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2604832113,
+  "lat": 49.3621167,
+  "lon": 13.1563333,
+  "tags": {
+    "fee": "no",
+    "height": "25.4",
+    "man_made": "tower",
+    "name": "Rozhledna Svatá Markéta",
+    "opening_hours": "24/7",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2604832161,
+  "lat": 49.3712126,
+  "lon": 13.0418870,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2988070917,
+  "lat": 48.9787705,
+  "lon": 14.0116383,
+  "tags": {
+    "amenity": "fast_food",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3151679847,
+  "lat": 49.1729752,
+  "lon": 13.2084404,
+  "tags": {
+    "access": "yes",
+    "fee": "yes",
+    "height": "26.5",
+    "man_made": "tower",
+    "name": "Rozhledna Špičák",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3822348620,
+  "lat": 48.8287637,
+  "lon": 14.2256231,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3832614482,
+  "lat": 49.0614673,
+  "lon": 13.6298058,
+  "tags": {
+    "access": "yes",
+    "description": "bývalý skokanský můstek Zadov",
+    "ele": "1109",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Rozhledna Zadov",
+    "tower:type": "observation",
+    "website": "https://www.lazadov.cz/la/leto-rozhledna.asp"
+  }
+},
+{
+  "type": "node",
+  "id": 4180959298,
+  "lat": 49.1932311,
+  "lon": 13.7589425,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhledna Hostovice",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4186886238,
+  "lat": 48.8476438,
+  "lon": 14.3270842,
+  "tags": {
+    "access": "yes",
+    "description": "Dřevěná rozhledna na svahu kopce Granátník pod Kletí ",
+    "ele": "750",
+    "fee": "no",
+    "man_made": "tower",
+    "name": "Granátník",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4217734593,
+  "lat": 48.7601677,
+  "lon": 14.0433457,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Jezerní vyhlídka",
+    "start_date": "2016",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "wikidata": "Q122200542",
+    "wikipedia": "cs:Jezerní vyhlídka"
+  }
+},
+{
+  "type": "node",
+  "id": 4397492158,
+  "lat": 48.6527713,
+  "lon": 14.2319766,
+  "tags": {
+    "addr:city": "Lipno nad Vltavou",
+    "addr:country": "CZ",
+    "addr:postcode": "38278",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Terasa Kramolín",
+    "outdoor_seating": "yes",
+    "panoramax": "359b2786-cccd-44e8-865b-86d4a34621b3",
+    "phone": "+420 702 008 247",
+    "toilets": "yes",
+    "toilets:access": "yes",
+    "website": "https://www.lipnogastro.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 4423418592,
+  "lat": 49.3085046,
+  "lon": 14.1769927,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4434144973,
+  "lat": 49.0640804,
+  "lon": 13.3950403,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Kiosek Poledník",
+    "opening_hours": "Jun-Sep: Mo-Su 10:00-16:30",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5994920671,
+  "lat": 49.3046129,
+  "lon": 14.2184376,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 6612705640,
+  "lat": 49.1728188,
+  "lon": 13.2085276,
+  "tags": {
+    "air_conditioning": "no",
+    "amenity": "fast_food",
+    "diet:gluten_free": "no",
+    "diet:vegetarian": "no",
+    "name": "Občerstvení",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6614866196,
+  "lat": 48.9120612,
+  "lon": 14.0128899,
+  "tags": {
+    "height": "6",
+    "man_made": "tower",
+    "name": "Křišťanov",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 6958641842,
+  "lat": 49.1230660,
+  "lon": 14.1167748,
+  "tags": {
+    "height": "24.5",
+    "man_made": "tower",
+    "name": "Vyhlídková věž Haniperk - Svobodné Hory",
+    "opening_hours": "24/7",
+    "operator": "Město Vodňany",
+    "short_name": "rozhledna Haniperk",
+    "tower:material": "wood",
+    "tower:type": "observation",
+    "wikidata": "Q23820164"
+  }
+},
+{
+  "type": "node",
+  "id": 9053519617,
+  "lat": 48.8294912,
+  "lon": 13.7955982,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 9695521987,
+  "lat": 48.9683586,
+  "lon": 14.4215246,
+  "tags": {
+    "man_made": "tower",
+    "name": "minirozhledna",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 9774698503,
+  "lat": 48.6525216,
+  "lon": 14.2318177,
+  "tags": {
+    "amenity": "fast_food",
+    "drink:espresso": "yes",
+    "name": "Restaurance Energo",
+    "opening_hours": "PH,We-Mo 09:30-19:00; Tu 09:30-23:00",
+    "outdoor_seating": "terrace"
+  }
+},
+{
+  "type": "node",
+  "id": 9792105325,
+  "lat": 48.8654545,
+  "lon": 14.2834650,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "regional",
+    "drive_through": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9952587892,
+  "lat": 49.2355153,
+  "lon": 13.4874125,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:email": "svatobor@horest.cz",
+    "contact:phone": "+420 605 418 433",
+    "contact:website": "https://www.chatasvatobor.cz/tipy-na-vylet/",
+    "indoor_seating": "yes",
+    "name": "Svatobor",
+    "opening_hours": "Th-Sa 11:00-21:00; Su 11:00-17:00",
+    "outdoor_seating": "terrace"
+  }
+},
+{
+  "type": "node",
+  "id": 10087359514,
+  "lat": 49.0041809,
+  "lon": 14.4033175,
+  "tags": {
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Ptačí pozorovatelna",
+    "opening_hours": "24/7",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 10148194392,
+  "lat": 49.3909737,
+  "lon": 14.3910512,
+  "tags": {
+    "man_made": "tower",
+    "name": "rozhledna Kupa",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 10773792461,
+  "lat": 48.9223374,
+  "lon": 13.9057979,
+  "tags": {
+    "man_made": "tower",
+    "name": "vyhlídková plošina",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11818122577,
+  "lat": 49.2925344,
+  "lon": 14.1270199,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 12067797781,
+  "lat": 49.1779106,
+  "lon": 13.2537870,
+  "tags": {
+    "air_conditioning": "no",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "diet:gluten_free": "yes",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "email": "klasterkova.v@seznam.cz",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Restaurace Pancíř",
+    "opening_hours": "Mo-Su 09:30-19:00",
+    "outdoor_seating": "terrace",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "phone": "+420 602 289 705",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "website": "https://www.chatapancir.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 12801782102,
+  "lat": 48.9673523,
+  "lon": 13.5924912,
+  "tags": {
+    "addr:city": "Kvilda",
+    "addr:housenumber": "149",
+    "addr:postcode": "38493",
+    "addr:street": "Bučina",
+    "amenity": "restaurant",
+    "brewery": "various;yes",
+    "contact:webcam": "https://www.alpskavyhlidka.cz/alpskavyhlidka/webcam.asp",
+    "contact:website": "https://www.alpskavyhlidka.cz/alpskavyhlidka/restaurace.asp",
+    "cuisine": "regional",
+    "leisure": "outdoor_seating",
+    "name": "Alpská vyhlídka",
+    "opening_hours": "Mo-Su 10:00-18:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13428176345,
+  "lat": 49.3830422,
+  "lon": 12.7848871,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2026-02-27",
+    "name": "Chata Čerchov",
+    "opening_hours": "Sa, Su 10:00-17:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13445011779,
+  "lat": 49.3956615,
+  "lon": 13.0751204,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "delivery": "no",
+    "dog": "leashed",
+    "indoor_seating": "yes",
+    "kids_area": "no",
+    "name": "Horská chata Koráb",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13605511119,
+  "lat": 49.3948391,
+  "lon": 13.2720729,
+  "tags": {
+    "access": "yes",
+    "charge": "25 CZK",
+    "contact:facebook": "Klatovskahurka",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Klatovská Hůrka",
+    "opening_hours": "May 01-Sep 30: Fr 15:00-19:00; May 01-Sep 30: Sa 14:00-19:00; May 01-Sep 30: Su 14:00-18:00; Oct-Mar off",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "website": "https://www.klatovy.cz/klatovy/fr.asp?tab=snet&id=13023"
+  }
+},
+{
+  "type": "node",
+  "id": 13775105789,
+  "lat": 49.0727733,
+  "lon": 13.8479406,
+  "tags": {
+    "ele": "907",
+    "man_made": "tower",
+    "name": "Rozhledna Mařský vrch",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q12036226",
+    "wikipedia": "cs:Mařský vrch"
+  }
+},
+{
+  "type": "node",
+  "id": 13775147314,
+  "lat": 48.9788345,
+  "lon": 14.0117734,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhledna Libín",
+    "ref:ruian:building": "49154818",
+    "source": "cuzk:ruian",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13775197349,
+  "lat": 49.3751315,
+  "lon": 13.8138512,
+  "tags": {
+    "man_made": "tower",
+    "name": "rozhledna Christiana Battaglii",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13918158793,
+  "lat": 48.9964125,
+  "lon": 14.4407148,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13957678714,
+  "lat": 49.1779211,
+  "lon": 13.2538499,
+  "tags": {
+    "access": "yes",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Rozhledna Pancíř",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13970693696,
+  "lat": 48.9785637,
+  "lon": 14.0115468,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:website": "https://horskachatalibin.cz/",
+    "name": "Horská chata Libín",
+    "opening_hours": "Th 12:00-18:00; Fr-Su 11:00-18:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13970695352,
+  "lat": 49.3832834,
+  "lon": 12.7841018,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-02-27",
+    "cuisine": "regional;chodská;cake;barbecue;fries",
+    "delivery": "no",
+    "drive_through": "no",
+    "indoor_seating": "yes",
+    "name": "Hospůdka",
+    "outdoor_seating": "yes",
+    "payment:apple_pay": "yes",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:cheque": "no",
+    "payment:coins": "yes",
+    "payment:credit_cards": "yes",
+    "payment:cryptocurrencies": "no",
+    "payment:debit_cards": "yes",
+    "payment:google_pay": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "seasonal": "yes",
+    "smoking": "outside",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14006931560,
+  "lat": 48.9932314,
+  "lon": 14.4437500,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 83686488,
+  "center": {
+    "lat": 48.8654179,
+    "lon": 14.2834186
+  },
+  "nodes": [
+    974438869,
+    974438878,
+    974438915,
+    974438947,
+    974438858,
+    974438885,
+    974438929,
+    9791950961,
+    974438869
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "15",
+    "ele": "1084",
+    "email": "info@klet.com",
+    "fee": "yes",
+    "internet_access": "wlan",
+    "name": "Horská chata Kleť",
+    "operator": "Horská chata Kleť s.r.o.",
+    "phone": "+420 724 700 300",
+    "ref:ruian:building": "41960653",
+    "source": "cuzk:ruian",
+    "tourism": "alpine_hut",
+    "website": "https://www.klet.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 83686493,
+  "center": {
+    "lat": 48.8655076,
+    "lon": 14.2832334
+  },
+  "nodes": [
+    12066072599,
+    5083459583,
+    5083459584,
+    12066072601,
+    974438869,
+    12066072594,
+    12066072600,
+    974438910,
+    974438846,
+    4771967998,
+    974438862,
+    5083459580,
+    5083459581,
+    974438941,
+    974438899,
+    12066072595,
+    12066072596,
+    12066072597,
+    974438850,
+    12066072598,
+    765254418,
+    4771968000,
+    12066072599
+  ],
+  "tags": {
+    "building": "civic",
+    "building:flats": "1",
+    "building:levels": "4",
+    "building:ruian:type": "15",
+    "fee": "yes",
+    "height": "12;18",
+    "historic": "yes",
+    "man_made": "tower",
+    "name": "Josefova věž",
+    "name:de": "Schöninger",
+    "ref:ruian:building": "30127912",
+    "source": "cuzk:ruian",
+    "start_date": "2009-07-13",
+    "tourism": "attraction",
+    "tower:construction": "stone",
+    "tower:type": "observation",
+    "wikidata": "Q29044153",
+    "wikipedia": "cs:Josefova věž"
+  }
+},
+{
+  "type": "way",
+  "id": 107223786,
+  "center": {
+    "lat": 49.3832364,
+    "lon": 12.7840502
+  },
+  "nodes": [
+    1232828724,
+    1232828611,
+    7080008599,
+    7080008598,
+    1232828724
+  ],
+  "tags": {
+    "access": "yes",
+    "alt_name": "Kurzova rozhledna;Čerchovská rozhledna",
+    "building": "yes",
+    "building:ruian:type": "19",
+    "check_date": "2025-07-14",
+    "fee": "yes",
+    "height": "24",
+    "man_made": "tower",
+    "material": "stone",
+    "name": "Kurzova věž",
+    "name:de": "Kurz-Turm",
+    "name:etymology": "Vilém Kurz starší",
+    "name:etymology:wikidata": "Q3508777",
+    "ref:ruian:building": "39227006",
+    "seasonal": "yes",
+    "source": "cuzk:ruian",
+    "start_date": "1905-07-16",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "wikidata": "Q12031965"
+  }
+},
+{
+  "type": "way",
+  "id": 244504465,
+  "center": {
+    "lat": 49.0641091,
+    "lon": 13.3951167
+  },
+  "nodes": [
+    4418670552,
+    4434098595,
+    6735264886,
+    6735244483,
+    2518191743,
+    4418670552
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "19",
+    "height": "37",
+    "layer": "2",
+    "man_made": "tower",
+    "name": "Poledník",
+    "name:de": "Mittagsberg",
+    "ref:ruian:building": "45148007",
+    "source": "cuzk:ruian;cuzk:km",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "https://www.npsumava.cz/",
+    "wikidata": "Q20948911",
+    "wikipedia": "cs:Poledník (rozhledna)"
+  }
+},
+{
+  "type": "way",
+  "id": 328328938,
+  "center": {
+    "lat": 48.5965654,
+    "lon": 14.2157120
+  },
+  "nodes": [
+    3351550889,
+    3351550888,
+    3351550886,
+    3351550887,
+    3351550889
+  ],
+  "tags": {
+    "building": "construction",
+    "construction": "service",
+    "man_made": "tower",
+    "source": "geoimage.at",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 422171458,
+  "center": {
+    "lat": 49.2305953,
+    "lon": 14.4100765
+  },
+  "nodes": [
+    4218887407,
+    4218887405,
+    4218887402,
+    4218887404,
+    4218887407
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "building:levels": "2",
+    "ele": "425",
+    "fee": "no",
+    "height": "7",
+    "man_made": "tower",
+    "material": "concrete",
+    "name": "rozhledna Semenec",
+    "roof:colour": "#5d352f",
+    "roof:height": "1",
+    "roof:shape": "pyramidal",
+    "start_date": "1930",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q8556123",
+    "wikipedia": "cs:Semenec"
+  }
+},
+{
+  "type": "way",
+  "id": 464309863,
+  "center": {
+    "lat": 48.9912013,
+    "lon": 13.8174461
+  },
+  "nodes": [
+    4594362615,
+    4594362616,
+    4594362617,
+    4594362618,
+    4594362615
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "description": "POZOR: ROZHLEDNA BOUBÍN JE Z DŮVODU POŠKOZENÍ KONSTRUKCE OD 5.7.2025 UZAVŘENA. ATTENTION: THE BOUBÍN OBSERVATION TOWER IS CLOSED FROM 5.7.2025 DUE TO STRUCTURAL DAMAGE.",
+    "fee": "yes",
+    "height": "21",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "rozhledna Boubín",
+    "opening_hours": "off",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:sms": "yes",
+    "surveillance": "yes",
+    "surveillance:type": "camera",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q11236252",
+    "wikipedia": "cs:Boubín (rozhledna)"
+  }
+},
+{
+  "type": "way",
+  "id": 472897670,
+  "center": {
+    "lat": 49.2313300,
+    "lon": 14.2972238
+  },
+  "nodes": [
+    4670776194,
+    13962208973,
+    4670776192,
+    13962208970,
+    4670776191,
+    13962208976,
+    13962208971,
+    4670776189,
+    4670776197,
+    13962208974,
+    4670776084,
+    13962208975,
+    4670776082,
+    13962208972,
+    4670776194
+  ],
+  "tags": {
+    "access": "conditional",
+    "building": "service",
+    "communication:mobile_phone": "yes",
+    "ele": "627",
+    "height": "46",
+    "man_made": "tower",
+    "name": "rozhledna Vysoký Kamýk",
+    "operator": "T-Mobile Czech Republic a.s.",
+    "sorting_name": "Vysoký Kamýk",
+    "start_date": "1941",
+    "tourism": "viewpoint",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "website": "https://www.vsemyslice.eu/index.php?option=com_content&view=article&id=108&Itemid=79",
+    "wikidata": "Q8556446"
+  }
+},
+{
+  "type": "way",
+  "id": 503323298,
+  "center": {
+    "lat": 48.6572261,
+    "lon": 14.3662079
+  },
+  "nodes": [
+    4936546612,
+    4936546611,
+    4936546610,
+    4936546609,
+    4936546608,
+    4936546607,
+    4936546613,
+    4936546606,
+    4936546605,
+    4936546604,
+    4936546603,
+    4936546614,
+    4936546602,
+    4936546601,
+    4936546600,
+    4936546599,
+    4936546612
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "name": "Jakobínka",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 504526114,
+  "center": {
+    "lat": 49.3621127,
+    "lon": 13.1563930
+  },
+  "nodes": [
+    4946760258,
+    4946760256,
+    4946760255,
+    11115839157,
+    4946760253,
+    4946760254,
+    10864721298,
+    4946760258
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "5",
+    "building:ruian:type": "19",
+    "fee": "no",
+    "man_made": "tower",
+    "opening_hours": "24/7",
+    "ref:ruian:building": "88713245",
+    "source": "cuzk:ruian",
+    "start_date": "2013-12-18",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 651498690,
+  "center": {
+    "lat": 48.9662507,
+    "lon": 13.5921535
+  },
+  "nodes": [
+    6109119040,
+    6109119041,
+    6109119042,
+    12750105804,
+    6109119043,
+    6109119044,
+    6109119045,
+    12750105805,
+    6109119040
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "building": "yes",
+    "outdoor_seating": "yes",
+    "shop": "kiosk"
+  }
+},
+{
+  "type": "way",
+  "id": 1086253212,
+  "center": {
+    "lat": 49.2355359,
+    "lon": 13.4875462
+  },
+  "nodes": [
+    9953153306,
+    861608652,
+    9953153294,
+    861609088,
+    9953153295,
+    9953153296,
+    9953153297,
+    861609553,
+    9953153298,
+    9953153299,
+    9953153291,
+    9953153292,
+    9953153293,
+    9953153300,
+    9953153301,
+    9953153302,
+    9953153303,
+    9953153304,
+    9953153305,
+    861609745,
+    9953153306
+  ],
+  "tags": {
+    "building:part": "tower",
+    "charge": "30 CZK",
+    "fee": "yes",
+    "height": "32",
+    "man_made": "tower",
+    "name": "Svatobor - rozhledna",
+    "opening_hours": "Mo-We 10:00-16:00; Th-Sa 10:00-21:00; Su 10:00-17:00",
+    "start_date": "12.8.1934",
+    "tourism": "viewpoint",
+    "tower:construction": "brick",
+    "tower:type": "observation",
+    "website": "http://www.rozhlednasvatobor.cz/",
+    "wheelchair": "no",
+    "wikidata": "Q15586269",
+    "wikipedia": "cs:Svatobor (rozhledna)"
+  }
+},
+{
+  "type": "way",
+  "id": 1185265184,
+  "center": {
+    "lat": 48.7724480,
+    "lon": 14.0326496
+  },
+  "nodes": [
+    11010118184,
+    11010118175,
+    11010118176,
+    11010118177,
+    11010118186,
+    11010118178,
+    11010118179,
+    11010118180,
+    11010118185,
+    11010118181,
+    11010118182,
+    11010118183,
+    11010118184
+  ],
+  "tags": {
+    "fee": "no",
+    "man_made": "tower",
+    "material": "metal",
+    "name": "Rozhledna Dobrá Voda",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}
