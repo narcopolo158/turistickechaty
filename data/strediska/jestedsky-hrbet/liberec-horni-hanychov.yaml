@@ -18,17 +18,16 @@ oblast: jestedsky-hrbet
 # Perex jen z doložené formulace pramene.
 perex: >-
   Horní okraj Liberce pod Ještědem, odkud vedou hlavní nástupy na hřbet.
-  Ještědský hřeben odtud objímá město z jihozápadu a na jeho špici
-  v nadmořské výšce 1012 metrů stojí horský hotel a televizní vysílač.
+  Ještědský hřeben odtud objímá město z jihozápadu a na jeho špici v nadmořské
+  výšce 1012 metrů stojí horský hotel a televizní vysílač.
 overeniPerex:
   source: >-
     Turistický portál Libereckého kraje, Ještědský hřbet
     liberecky-kraj.cz/dr-cs/15227-jestedsky-hrbet.html (načteno 4. 8. 2026):
-    „Ještědský hřeben objímá Liberec z jihozápadu a na jeho špici
-    v nadmořské výšce 1012 m n. m. pevně sedí a rozmarům počasí vzdoruje
-    horský hotel a televizní vysílač Ještěd." První věta je popis role
-    Horního Hanychova, který plyne z našeho vlastního katalogu přístupových
-    tras (DATA-06), ne z pramene.
+    „Ještědský hřeben objímá Liberec z jihozápadu a na jeho špici v nadmořské
+    výšce 1012 m n. m. pevně sedí a rozmarům počasí vzdoruje horský hotel a
+    televizní vysílač Ještěd." První věta je popis role Horního Hanychova, který
+    plyne z našeho vlastního katalogu přístupových tras (DATA-06), ne z pramene.
   verified: false
   checked: '2026-08-04'
 
@@ -40,17 +39,23 @@ overeniPerex:
 # / rozcestí / náměstí", a tenhle bod uzel doslova je.
 lat: 50.7360778
 lng: 15.0023303
+vyskaObce: 582
 overeniLokace:
   source: >-
-    OpenStreetMap https://www.openstreetmap.org/node/2399104980 (zastávka
-    „Horní Hanychov, u lanovky" z katalogu výchozích bodů DATA-06) — data
-    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
-    Není to uzel `place` jako u ostatních středisek, nýbrž turistický uzel
-    pod hřbetem — dopočet DATA-35 z něj tedy dává výšku NÁSTUPU v Horním
-    Hanychově, ne výšku Liberce. Středisko se ale jmenuje Liberec – Horní
-    Hanychov a je to právě ten nástup, takže je to údaj o tom, co stránka
-    popisuje; kdyby se sem někdy psala výška celého města, byl by to jiný
-    údaj pod týmž jménem.
+    OpenStreetMap https://www.openstreetmap.org/node/2399104980 (zastávka „Horní
+    Hanychov, u lanovky" z katalogu výchozích bodů DATA-06) — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). Není to
+    uzel `place` jako u ostatních středisek, nýbrž turistický uzel pod hřbetem —
+    dopočet DATA-35 z něj tedy dává výšku NÁSTUPU v Horním Hanychově, ne výšku
+    Liberce. Středisko se ale jmenuje Liberec – Horní Hanychov a je to právě ten
+    nástup, takže je to údaj o tom, co stránka popisuje; kdyby se sem někdy
+    psala výška celého města, byl by to jiný údaj pod týmž jménem. Výška obce:
+    nadmořská výška referenčního bodu střediska (uzel OSM place, týž bod jako
+    GPS výš, 50.736078, 15.002330) z výškového modelu Mapy.com Elevation API
+    (načteno 2026-08-04): 582 m — model s různou přesností, nemusí odpovídat
+    realitě, proto verified:false. Referenční bod místo rozpětí dle zadání
+    Michala 4. 8. 2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí
+    / náměstí"). Ověření proti ČÚZK zůstává otevřené.
   verified: false
   checked: '2026-08-04'
 
@@ -62,53 +67,53 @@ vychoziBody:
 
 lanovka: >-
   Kabinová lanovka na Ještěd je dlouhodobě mimo provoz, obnovení se čeká
-  nejdříve od roku 2030. Jezdí čtyřsedačková lanovka Horní Hanychov –
-  Skalka, celoročně podle jízdního řádu; od její horní stanice zbývá
-  k vrcholu Ještědu ještě zhruba 1,8 kilometru chůze.
+  nejdříve od roku 2030. Jezdí čtyřsedačková lanovka Horní Hanychov – Skalka,
+  celoročně podle jízdního řádu; od její horní stanice zbývá k vrcholu Ještědu
+  ještě zhruba 1,8 kilometru chůze.
 overeniLanovka:
   source: >-
     Turistický portál Libereckého kraje, Doprava na Ještěd
-    liberecky-kraj.cz/dr-cs/30531-doprava-na-jested.html (načteno
-    4. 8. 2026), doslova: „Kabinkou už to bohužel není možné, je
-    dlouhodobě nefunkční! Obnovení provozu se očekává nejdříve od roku
-    2030."; „Sedačkovou lanovkou Skalka - celoroční provoz, avšak v různé
-    dny a časy"; „Od horní stanice sedačkové lanovky Skalka je třeba dojít
-    k vrcholu Ještědu pěšky (1,8 km / 44 min.)". Typ „čtyřsedačková lanová
-    dráha s celoročním provozem" z téhož portálu,
+    liberecky-kraj.cz/dr-cs/30531-doprava-na-jested.html (načteno 4. 8. 2026),
+    doslova: „Kabinkou už to bohužel není možné, je dlouhodobě nefunkční!
+    Obnovení provozu se očekává nejdříve od roku 2030."; „Sedačkovou lanovkou
+    Skalka - celoroční provoz, avšak v různé dny a časy"; „Od horní stanice
+    sedačkové lanovky Skalka je třeba dojít k vrcholu Ještědu pěšky (1,8 km / 44
+    min.)". Typ „čtyřsedačková lanová dráha s celoročním provozem" z téhož
+    portálu,
     liberecky-kraj.cz/dr-cs/116-sedackova-lanovka-horni-hanychov-skalka-celorocni.html.
-    Vlastní web lanovky (lanovka-jested.cz) se načíst nepodařilo — cyklí se
-    v přesměrování https↔http; stav lanovky proto stojí na jednom prameni
-    a jízdní řády se do profilu nepíšou.
+    Vlastní web lanovky (lanovka-jested.cz) se načíst nepodařilo — cyklí se v
+    přesměrování https↔http; stav lanovky proto stojí na jednom prameni a jízdní
+    řády se do profilu nepíšou.
   verified: false
   checked: '2026-08-04'
 
 # Ruční próza má přednost před řádky z katalogu DATA-06. Ceny se nepíšou.
 doprava:
   bus: >-
-    Od konečné tramvaje jezdí od dubna do října sezónní turistická
-    autobusová linka 79 na parkoviště Ještědka; odtud k vrcholu Ještědu
-    zbývá zhruba 750 metrů pěšky.
+    Od konečné tramvaje jezdí od dubna do října sezónní turistická autobusová
+    linka 79 na parkoviště Ještědka; odtud k vrcholu Ještědu zbývá zhruba 750
+    metrů pěšky.
   auto: >-
-    Autem se odbočuje z výpadovky ve směru Turnov a Praha na Ještěd.
-    Parkuje se na velkokapacitním centrálním parkovišti P1 (kryté
-    i nekryté, nepřetržitě), dále na Výpřeži u Tetřevího sedla
-    a na Ještědce nedaleko vrcholu — obě rovněž nepřetržitě; parkoviště
-    u samotného hotelu má velmi omezenou kapacitu.
+    Autem se odbočuje z výpadovky ve směru Turnov a Praha na Ještěd. Parkuje se
+    na velkokapacitním centrálním parkovišti P1 (kryté i nekryté, nepřetržitě),
+    dále na Výpřeži u Tetřevího sedla a na Ještědce nedaleko vrcholu — obě
+    rovněž nepřetržitě; parkoviště u samotného hotelu má velmi omezenou
+    kapacitu.
 overeniDoprava:
   source: >-
     Turistický portál Libereckého kraje, Doprava na Ještěd
-    liberecky-kraj.cz/dr-cs/30531-doprava-na-jested.html (načteno
-    4. 8. 2026): tramvaj „MHD Tramvají č. 3 směr Horní Hanychov" s výstupem
-    „na konečné zastávce (Horní Hanychov)"; „Sezónní provoz (duben-říjen),
-    od konečné tramvaje jezdí turistický autobus č. 79" „na parkoviště
-    Ještědka", „Z parkoviště Ještědka je potřeba dojít k vrcholu Ještědu
-    pěšky (750 m / 11 min.)"; autem „výpadovkou" směr „Turnov / Praha“
-    a odbočka na „Ještěd“; parkoviště P1 „Velkokapacitní centrální
-    parkoviště“ „nonstop“ „kryté i nekryté“, „Výpřež“ u „Tetřeví sedlo“
-    „nonstop“, „Ještědka“ „parkoviště nedaleko vrcholu“ „nonstop“, „Hotel
-    Ještěd“ „velmi omezená kapacita“. Tramvaj je MĚSTSKÁ doprava uvnitř
-    Liberce — do řádku Autobusem nepatří a vlastní řádek pro ni kolekce
-    nemá; zmiňuje ji perex profilu Ještědu. Ceny se do profilu nepíšou.
+    liberecky-kraj.cz/dr-cs/30531-doprava-na-jested.html (načteno 4. 8. 2026):
+    tramvaj „MHD Tramvají č. 3 směr Horní Hanychov" s výstupem „na konečné
+    zastávce (Horní Hanychov)"; „Sezónní provoz (duben-říjen), od konečné
+    tramvaje jezdí turistický autobus č. 79" „na parkoviště Ještědka", „Z
+    parkoviště Ještědka je potřeba dojít k vrcholu Ještědu pěšky (750 m / 11
+    min.)"; autem „výpadovkou" směr „Turnov / Praha“ a odbočka na „Ještěd“;
+    parkoviště P1 „Velkokapacitní centrální parkoviště“ „nonstop“ „kryté i
+    nekryté“, „Výpřež“ u „Tetřeví sedlo“ „nonstop“, „Ještědka“ „parkoviště
+    nedaleko vrcholu“ „nonstop“, „Hotel Ještěd“ „velmi omezená kapacita“.
+    Tramvaj je MĚSTSKÁ doprava uvnitř Liberce — do řádku Autobusem nepatří a
+    vlastní řádek pro ni kolekce nemá; zmiňuje ji perex profilu Ještědu. Ceny se
+    do profilu nepíšou.
   verified: false
   checked: '2026-08-04'
 
@@ -116,28 +121,26 @@ interniPoznamky: >-
   Doplnit z doložených zdrojů: fotku střediska (DATA-33 pro tuhle oblast ještě
   neběžel).
 
-  PŘEHLED LANOVEK OBLASTI KABINOVOU DRÁHU NA JEŠTĚD NEOBSAHUJE, a je to
-  správně: DATA-32 (4. 8. 2026, nad čerstvým exportem DATA-28) našel v okně
-  dvanáct prvků `aerialway`, mezi nimi pět sedačkových drah — a jedinou
-  kabinovou položkou je dvaadvacetimetrový „transbordér" u Kryštofova Údolí,
-  tedy něco úplně jiného. Ještědská kabinovka v mapových datech pod běžným
-  tagem `aerialway` prostě není. Nevíme proč (pravděpodobné vysvětlení:
-  dráha je dlouhodobě mimo provoz, a takové se v OSM často přeznačují
-  předponou `disused:`, kterou dotaz nebere) — netvrdíme tedy nic o tom, jak
-  je zmapovaná. Pro čtenáře je podstatné, že přehled ukazuje dráhy, které
-  jezdí, a stav kabinovky říká nahlas pole `lanovka` tohoto střediska
-  i próza profilu Hotelu Ještěd.
+  PŘEHLED LANOVEK OBLASTI KABINOVOU DRÁHU NA JEŠTĚD NEOBSAHUJE, a je to správně:
+  DATA-32 (4. 8. 2026, nad čerstvým exportem DATA-28) našel v okně dvanáct prvků
+  `aerialway`, mezi nimi pět sedačkových drah — a jedinou kabinovou položkou je
+  dvaadvacetimetrový „transbordér" u Kryštofova Údolí, tedy něco úplně jiného.
+  Ještědská kabinovka v mapových datech pod běžným tagem `aerialway` prostě
+  není. Nevíme proč (pravděpodobné vysvětlení: dráha je dlouhodobě mimo provoz,
+  a takové se v OSM často přeznačují předponou `disused:`, kterou dotaz nebere)
+  — netvrdíme tedy nic o tom, jak je zmapovaná. Pro čtenáře je podstatné, že
+  přehled ukazuje dráhy, které jezdí, a stav kabinovky říká nahlas pole
+  `lanovka` tohoto střediska i próza profilu Hotelu Ještěd.
 
   K výšce: při zakládání 4. 8. 2026 tu stálo, že se `vyskaObce` schválně
-  nevyplní, protože referenční bod je nástup, ne střed města. Ostrý běh
-  DATA-35 téhož dne ukázal, že to byla zbytečná opatrnost ve dvou směrech.
-  Za prvé to byl jen komentář — skript o něm nemohl vědět a výšku spočítal
-  (582 m). Za druhé to bylo proti Michalovu pravidlu, které žádá výšku
-  TURISTICKÉHO UZLU, a tenhle bod uzel je. Hodnota se tedy přijímá; kdyby se
-  někdy měla vést výška celého Liberce, je to jiný údaj a chce vlastní pole
-  (souvisí s DATA-20).
+  nevyplní, protože referenční bod je nástup, ne střed města. Ostrý běh DATA-35
+  téhož dne ukázal, že to byla zbytečná opatrnost ve dvou směrech. Za prvé to
+  byl jen komentář — skript o něm nemohl vědět a výšku spočítal (582 m). Za
+  druhé to bylo proti Michalovu pravidlu, které žádá výšku TURISTICKÉHO UZLU, a
+  tenhle bod uzel je. Hodnota se tedy přijímá; kdyby se někdy měla vést výška
+  celého Liberce, je to jiný údaj a chce vlastní pole (souvisí s DATA-20).
 
-  NÁLEZ 4. 8. 2026, který si zaslouží pozornost: profil Hotelu Ještěd do
-  dneška psal „nahoru vede lanovka“. Podle oficiálního portálu kraje je
-  kabinová lanovka dlouhodobě mimo provoz a sedačková končí 1,8 km pod
-  vrcholem — próza profilu opravena týž den.
+  NÁLEZ 4. 8. 2026, který si zaslouží pozornost: profil Hotelu Ještěd do dneška
+  psal „nahoru vede lanovka“. Podle oficiálního portálu kraje je kabinová
+  lanovka dlouhodobě mimo provoz a sedačková končí 1,8 km pod vrcholem — próza
+  profilu opravena týž den.
