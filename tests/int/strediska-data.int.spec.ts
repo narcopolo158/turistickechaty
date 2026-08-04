@@ -146,6 +146,15 @@ describe('střediska všech oblastí — veřejná próza a doložená výška',
     }
   })
 
+  // 4. 8. 2026 dostalo perex poslední chybějící středisko (Černý Důl, u kterého
+  // se muselo sáhnout po krajském portálu — portál svazku ho nemá). Meta zůstává
+  // jako práh, ne jako rovnost: přibyde-li středisko, test upozorní, že mu perex
+  // chybí, místo aby mlčel.
+  it('perex má každé dnešní středisko (22 k 4. 8. 2026)', () => {
+    const bezPerexu = strediska.filter(({ data }) => !data.perex).map(({ soubor }) => soubor)
+    expect(bezPerexu, `střediska bez perexu: ${bezPerexu.join(', ')}`).toEqual([])
+  })
+
   it('perex nejmenuje pramen ve větě (pravidlo z 2. 8. 2026 — prameny až pod článkem)', () => {
     // Týž vzor jako ban-scan „vsuvka pramene": „podle …", „dle portálu …".
     const VSUVKA = /\b(podle|dle)\s+(webu|portálu|serveru|stránky|stránek|oficiáln|informačního|katalogu|Kudy)/i

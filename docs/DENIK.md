@@ -29,6 +29,65 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 5) — perex má 22 z 22; nález gminy dotáhl otevřenou otázku u Odrodzenie
+
+**Černý Důl už není bílé místo.** Portál svazku ho nemá (uzavřeno v bloku 3),
+takže perex přišel z turistického portálu Královéhradeckého kraje — tedy od
+téhož vydavatele, ze kterého mají perex jizerská střediska, takže korpus
+zůstává konzistentní. **Perex má tím všech 22 středisek**, ráno ho mělo jedno.
+Výšku 684 m z téže věty pramene jsem NEPŘEVZAL: tatáž stránka ji v kontaktní
+tabulce uvádí jako 585 m a dopočet DATA-35 dává 589 m, takže číslo z prózy je
+ze tří nejméně pravděpodobné. Poloha v údolí Čisté je na tom nezávislá.
+
+**Nález z webu gminy dotáhl otázku, která u Odrodzenie visela od 25. 7.**
+Profil vědomě nechával `obec` prázdnou s odůvodněním, že katalogové pole
+„nejbližší obec NEBO uzel" není správní příslušnost. Web gminy Podgórzyn ale
+píše rovnou, že „administracyjnie do niej należy również schronisko Odrodzenie
+na Przełęczy Karkonoskiej" — to je výrok samotné gminy o SPRÁVNÍ
+příslušnosti, takže obstojí pod oběma výklady pole `obec`, o kterých se
+rozhoduje v DATA-20. Doplněno `obec: Przesieka`.
+
+**A zpřesnil se tím i rozpor výšky.** Šest metrů mezi OSM (1230 m) a 1236 m
+neslo dosud jen kompilaci ChatGPT — bylo to „mapová data proti kompilaci".
+Dnes týchž 1236 m uvádí i oficiální web gminy, takže druhá strana zesílila.
+Pole se přesto NEMĚNÍ: 1230 m drží pramen, který profil cituje u GPS, a brát
+výšku odjinud než souřadnice by znamenalo míchat prameny v jednom bloku.
+Rozpor se dál přiznává v próze, teď ale poctivěji — próza dřív tvrdila, že
+obec doloženou nemáme, což už neplatí.
+
+**Čtyři dopravní slepé uličky, poctivě zapsané.** Nic z toho se dnes nepovedlo
+a je to zapsané i s tím, CO se zkusilo, ať příští běh neopakuje tytéž kroky:
+
+- **Janov nad Nisou** (třetí pokus) — web obce má sekci Turistika, ale
+  o parkování v ní stojí jediná věta, a ta se týká běžek. Vyhledávání nabídlo
+  provozovatelský web janovskaops.net; to není obec, nepřebírám.
+- **Lázně Libverda** — web obce stránku o parkování nemá, hledání vrátilo jen
+  komerční katalogy a navigační služby.
+- **Hejnice** (druhý pokus) — stránka „Parkování" se dál cyklí v přesměrování
+  https→http→https. Pořád platí: je to porucha webu, ne mlčení pramene.
+- **Przesieka** (třetí pokus, poprvé se zdůvodněním z primárního pramene) —
+  gmina o dojezdu říká jen marketingové „łatwo dostępna"; stránka o vodopádu
+  Podgórnej vrací 404 a archivní komunikát o organizaci provozu má vadný
+  certifikát. Doložený je zato turistický fakt: modrá značka z Podgórzyna na
+  Przełęcz Karkonoską vede přes Przesieku.
+
+**Nový hlídací test:** perex má každé středisko — práh, ne rovnost, takže
+nově založené středisko test upozorní, místo aby mlčel.
+
+**Kontroly:** `tsc` čistý, `eslint` čistý, `npm run kontrola` zelené,
+ban-scan beze změny (262). Testy středisek 16/16, JSON-LD 12/12.
+
+**Příště:** ① doprava zbylých čtyř středisek už nejde přes weby obcí — zvážit
+krajské portály (u Hejnic a Janova) nebo to nechat Michalovi ručně;
+② po běhu DATA-06 pro Jizerky pustit DATA-35 znovu (čtyři jizerská střediska
+dostanou výšku); ③ mimo střediska: fronta jizerských kandidátů dál čeká na
+Michalova rozhodnutí (Barbora, Mirsk, rokVzniku Proseče).
+
+**Otázky pro Michala:** ① **Odrodzenie — 1230 nebo 1236 m?** Teď to stojí
+mapová data proti oficiálnímu úřadu, což je vyrovnanější než dřív; kdybys tam
+byl, stačí pohled na ceduli. ② Benecko k přeměření (z bloku 4). ③ Certifikát
+pro dev.turistickechaty.cz.
+
 ## 2026-08-04 (blok 4) — DATA-35 doběhlo: 18 středisek má výšku, model rozsoudil Černý Důl
 
 **Michal pustil workflow, commit 8d08be1 dorazil.** Dopočet proběhl pro

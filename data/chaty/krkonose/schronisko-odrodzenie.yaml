@@ -34,18 +34,33 @@ aliasy:
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS a výška z OSM (ODbL); poloha na Przełęczy Karkonoské z titulků
 # WebSearch (klubpodroznikow.com, weekendowyturysta.eu, przesieka.info.pl)
-# — obec v OSM nevyplněna.
+# — obec v OSM nevyplněna, doložil ji 4. 8. 2026 web gminy (viz níž).
+obec: Przesieka
 lat: 50.7634073
 lng: 15.6395908
-vyska: 1230 # ROZPOR: externí katalog (HUT-0221) uvádí 1236 m — nerozřešeno, DATA-04
+# ROZPOR VÝŠKY, stav k 4. 8. 2026: OSM 1230 m × 1236 m. Šestimetrový rozdíl
+# nesl dosud jen externí katalog HUT-0221 (kompilace ChatGPT), takže to bylo
+# „mapová data proti kompilaci". Dnes týž údaj 1236 m uvádí i OFICIÁLNÍ web
+# gminy Podgórzyn — váha druhé strany tím povyrostla. Pole se přesto nemění:
+# 1230 m drží pramen, který profil cituje u GPS, a přepsat ho podle jiného
+# pramene by znamenalo mít výšku a souřadnice z různých míst. Rozhodne měření
+# nebo dotaz (DATA-04).
+vyska: 1230
 overeniLokace:
   source: >-
     OpenStreetMap https://www.openstreetmap.org/way/20897240 — data ©
     přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
     poloha na Przełęczy Karkonoské z titulků WebSearch (DATA-03, obsah
-    neotevřen)
+    neotevřen). OBEC doložena 4. 8. 2026 oficiálním webem gminy Podgórzyn
+    (podgorzyn.pl/gmina-podgorzyn/nasze-miejscowosci.html), který u vsi
+    Przesieka píše, že „administracyjnie do niej należy również schronisko
+    Odrodzenie na Przełęczy Karkonoskiej, usytuowane na 1236 m n.p.m." — je
+    to výrok samotné gminy o SPRÁVNÍ příslušnosti, takže obstojí pod oběma
+    výklady pole `obec` (nejbližší obec i katastr), o kterých se rozhoduje
+    v DATA-20. Tentýž pramen dává výšku 1236 m; pole `vyska` proto zůstává
+    na 1230 m z OSM a rozpor se dál přiznává v próze.
   verified: false
-  checked: '2026-07-20'
+  checked: '2026-08-04'
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 # Nocleh z titulků doložitelný není (v pttk.pl přehledu ubytování jsme
@@ -77,9 +92,10 @@ text:
   - >-
     Schronisko Odrodzenie stojí na Przełęczy Karkonoské v nadmořské výšce
     1 230 metrů. Výška i souřadnice pocházejí z OpenStreetMap, polohu na
-    sedle uvádějí titulky polských turistických portálů; obec, pod kterou
-    objekt spadá, doloženou nemáme. Externí katalog, ze kterého máme
-    historii, klade schronisko o šest metrů výš, na 1 236 metrů, a který
+    sedle uvádějí titulky polských turistických portálů. Správně objekt
+    spadá pod ves Przesiekę — uvádí to obecní úřad gminy, pod kterou
+    Przesieka patří. Tentýž úřad i externí katalog, ze kterého máme
+    historii, kladou schronisko o šest metrů výš, na 1 236 metrů; který
     z obou údajů je správný, rozřešené nemáme. Část zdrojů včetně stránek
     na doméně PTTK objekt uvádí jako Schronisko PTTK „Odrodzenie".
   - >-

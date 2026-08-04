@@ -8,6 +8,30 @@ slug: cerny-dul
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace pramene. Portál svazku, ze kterého mají perex
+# ostatní krkonošská střediska, Černý Důl nemá (doloženo 4. 8. 2026, viz
+# interní poznámky) — pramenem je proto krajský turistický portál, tedy týž
+# vydavatel jako u jizerských středisek.
+perex: >-
+  Městys v údolí potoka Čisté na úpatí Krkonoš, který patří mezi původní
+  horské obce pohoří. Skládá se ze tří katastrálních území — Černý Důl,
+  Čistá v Krkonoších a Fořt.
+overeniPerex:
+  source: >-
+    Turistický portál Královéhradeckého kraje
+    hkregion.cz/dr-cs/2097-cerny-dul.html (načteno 4. 8. 2026): „Městys
+    Černý Důl patří mezi původní horské obce Krkonoš.", „Městys leží
+    v údolí potoka Čisté na úpatí Krkonoš ve výšce 684 m. n. m."; tři
+    katastrální území Černý Důl, Čistá v Krkonoších a Fořt (potvrzuje
+    i vlastní web městyse cernydul.cz). VÝŠKU 684 m z téže věty do perexu
+    NEPŘEBÍRÁM: tatáž stránka ji v kontaktní tabulce uvádí jako 585 m
+    a dopočet DATA-35 dává v referenčním bodě 589 m, takže číslo z prózy
+    je z těch tří nejméně pravděpodobné. Poloha v údolí Čisté je na tom
+    nezávislá a přebírá se.
+  verified: false
+  checked: '2026-08-04'
+
+
 lat: 50.635115
 lng: 15.7096227
 vyskaObce: 589
