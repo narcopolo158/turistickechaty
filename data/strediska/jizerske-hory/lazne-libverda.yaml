@@ -3,16 +3,57 @@ nazev: Lázně Libverda
 slug: lazne-libverda
 zeme: cz
 oblast: jizerske-hory
+
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Obec v nadmořské výšce 420 metrů; první zmínka o ní pochází z roku 1381.
+overeniPerex:
+  source: >-
+    Oficiální web obce Lázně Libverda (laznelibverda.cz, načteno
+    4. 8. 2026), přehled základních údajů: rozloha 13,25 km², 549 obyvatel,
+    nadmořská výška 420 m n. m., první zmínka 1381. Souvislou
+    charakteristiku obce (poloha vůči hřebeni, lázeňský provoz) tenhle
+    přehled nenese — perex proto říká jen to, co je v něm doložené;
+    doplnit z prózy webu obce, až se najde.
+  verified: false
+  checked: '2026-08-04'
+
+# Výška obce z oficiálního webu obce (jedno číslo, ne rozpětí) — DATA-35
+# ji proto nepřepíše. Ověření proti ČÚZK zůstává otevřené.
+vyskaObce: 420
+
 vychoziBody:
 - nazev: Hejnice, železniční stanice
   typ: vlak + turistické město
 - nazev: Lázně Libverda, centrum / autobusová zastávka
   typ: lázeňské místo + autobus + parkoviště
 overeniLokace:
-  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21);
-    zdrojová URL katalogu: https://www.jizerky.cz/doprava'
+  source: >-
+    Výchozí body: katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026,
+    ověřeno k 2026-07-21); zdrojová URL katalogu:
+    https://www.jizerky.cz/doprava. GPS zatím chybí — doplní je běh DATA-06
+    pro Jizerské hory. Výška obce: 420 m dle přehledu základních údajů na
+    oficiálním webu obce (laznelibverda.cz, načteno 4. 8. 2026) — ověření
+    proti ČÚZK (zadání F1a) zůstává otevřené.
   verified: false
-  checked: '2026-07-30'
+  checked: '2026-08-04'
+# Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
+# čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
+doprava:
+  bus: >-
+    Z obce se do hor jede autobusem: linka 145 na Bedřichov a Janov nad Nisou, linka 650 na Hejnice, Bílý Potok a Smědavu.
+overeniDoprava:
+  source: >-
+    Oficiální web obce Lázně Libverda, článek „DO JIZEREK VEŘEJNOU
+    DOPRAVOU" (laznelibverda.cz/cs/aktuality-clanky/do-jizerek-verejnou-dopravou.html,
+    načteno 4. 8. 2026): linka 145 „směrem na Bedřichov a Janov nad Nisou",
+    linka 650 „na Hejnice u Liberce, Bílý Potok a dále na Smědavu". Pramen
+    jmenuje LINKY, ne jízdní řády ani zastávky — profil proto netvrdí, kdy
+    a odkud spoje jedou. Je to web sousední obce, ne dopravce; do prvního
+    ověření u dopravce zůstává verified:false.
+  verified: false
+  checked: '2026-08-04'
+
 interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
   pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
   bodů vede Lázně Libverda jako nejbližší obec/uzel pro Hubertka. SOUŘADNICE ZÁMĚRNĚ CHYBÍ: krkonošská

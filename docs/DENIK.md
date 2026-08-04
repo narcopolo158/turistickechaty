@@ -29,6 +29,84 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 3, 2h v kuse) — perex má všech 22 středisek; jizerské autobusy poprvé doložené
+
+**Zadání Michala:** „PL zahrnout, pokračuj samostatně dál, můžeš pracovat
+2 hodiny v kuse." Polská střediska tedy v běhu DATA-35 zůstávají —
+zapsáno do hlavičky skriptu i do backlogu, včetně důvodu: handoffové
+„PL bez čísel" se týkalo POČTŮ chat z katalogu, ne doložených údajů o obci.
+
+**Hotovo — perex má teď 22 z 22 středisek** (ráno ho mělo jedno):
+
+- **Krkonoše dodělány (6):** Malá Úpa, Strážné, Vítkovice z portálu svazku
+  a poprvé polská trojice — Karpacz z turistického portálu Dolnoslezského
+  vojvodství (oficiální web města výšku neuvádí), Szklarska Poręba
+  z oficiálního turistického webu města, Przesieka z webu gminy Podgórzyn.
+  U polských je v ověření uvedeno polské znění i to, že překlad je náš.
+- **Jizerské hory (6, dosud bez jediného):** Bedřichov z oficiálního webu
+  obce, Bílý Potok / Hejnice / Janov nad Nisou / Kořenov z turistického
+  portálu Libereckého kraje, Kořenov navíc z portálu svazku.
+- **Tři nové doložené výšky obcí, všechny jedno číslo, ne rozpětí:**
+  Vítkovice 683 m, **Bedřichov 707 m — shodně ve dvou nezávislých
+  pramenech** (web obce i portál kraje), Lázně Libverda 420 m. DATA-35 je
+  proto přeskočí; v Krkonoších by dopočet běžel pro 13 z 16, v Jizerkách
+  nemá co dělat (zbylé čtyři nemají souřadnice, čekají na DATA-06).
+- **Jizerské autobusy poprvé doložené:** linka 145 na Bedřichov a Janov nad
+  Nisou, linka 650 na Hejnice, Bílý Potok a Smědavu — z oficiálního webu
+  obce Lázně Libverda. Čtyři střediska tím dostala první doložený řádek
+  „Autobusem". Pramen jmenuje LINKY, ne jízdní řády ani zastávky, a profil
+  víc netvrdí; je to navíc web sousední obce, ne dopravce.
+- **Testy středisek nově běží nad VŠEMI oblastmi** (dřív jen Krkonoše) —
+  pravidla o veřejné próze a o doložené výšce nejsou krkonošská specialita.
+  Přibyla **pojistka proti tiché nule** (test nad prázdným seznamem by
+  prošel a nic nehlídal) a pravidlo, že výška se nesmí doložit rozpětím.
+
+**Co jsem vědomě NEpřevzal, a proč** — u každého případu je důvod v datech:
+hodnotící věty pramenů („vyhlášené rekreační středisko" u Strážného,
+„najpiękniejszych karkonoskich miast" u Karpacze, „królowa karkonoskich
+widoków" u Przesieky, „velmi bohaté turistické město" u Harrachova),
+superlativy bez čísla („jedna z nejvýše položených" u Bílého Potoku,
+„největší horské obce ČR" u Kořenova) a jednu **chybnou** větu portálu
+svazku („Malebnou obec Vítkovice naleznete na Benecku" — Benecko je
+sousední obec, ne poloha Vítkovic).
+
+**Dvě vlastní chyby, obě opravené v témže bloku:** (1) poznámka o autobusu
+se u Bedřichova zapsala omylem do `overeniPerex` místo `overeniDoprava` —
+zachytila to kontrola po zápisu, přesunuto; (2) perex Lázní Libverda jsem
+nejdřív složil z údajů, které pramen nenese („na severním úpatí Jizerských
+hor") — přepsán na to, co v přehledu opravdu je (420 m, první zmínka 1381),
+se zapsanou poznámkou, že souvislá charakteristika teprve chybí.
+
+**Ponaučení k Malé Úpě:** dopolední odklad byl zbytečný — táž adresa se
+odpoledne načetla česky. Strojově přeložená odpověď je dočasný stav webu,
+ne vlastnost pramene; vyplatí se zopakovat, ne pramen odepsat. Zapsáno
+v `interniPoznamky` profilu.
+
+**Nález, který vytáhl hlídací test — a opravená díra v JSON-LD.** Po zápisu
+výšek spadl `jsonld-stredisko` na Bedřichovu: blok `geo` se dosud vypisoval
+JEN se souřadnicemi, takže doložená výška u střediska bez GPS (jizerská
+čekají na DATA-06) by tiše vypadla ze strukturovaných dat. `GeoCoordinates`
+samotnou `elevation` unese, takže `geo` teď vzniká, jakmile je čím ho
+naplnit — souřadnicemi NEBO výškou. Pravidlo „co v datech není, se
+nevypisuje" platí dál. Test si tím zachoval smysl a nemusel se změkčovat.
+
+**Kontroly:** `tsc` čistý, `eslint` čistý, `npm run kontrola` zelené,
+ban-scan **beze změny 262 zásahů**. Vitest **731 prošlo** (o 11 víc než
+ráno), padá stejných 8 jako před blokem — testy vyžadující databázi.
+
+**Zbývá u středisek:** ① Černý Důl — jediné bez perexu i dopravy (na portálu
+svazku v přehledu obcí není, náhradní krajský pramen si u výšky sám odporuje
+684 × 585 m); ② `doprava.auto` pro Bílý Potok, Hejnice, Janov nad Nisou
+a Lázně Libverda (obecní weby o parkování mlčí — zkusit portál kraje);
+③ Przesieka pořád bez dopravy.
+
+**Otázky pro Michala:** nic nového nad rámec už zapsaných — pořád visí
+certifikát pro dev.turistickechaty.cz a klik na DATA-35. Jeden nález
+k prověření: gmina Podgórzyn počítá k Przesiece i **schronisko Odrodzenie
+na Przełęczy Karkonoskiej (1236 m)** — porovnat s naším profilem
+Odrodzenie (obec i výška), souvisí to s otevřenou otázkou DATA-20 o významu
+pole `obec`.
+
 ## 2026-08-04 (blok 2) — výška obce: rozhodnutí o referenčním bodu zapsané do pipeline (DATA-35)
 
 **Zadání Michala** (odpověď na dnešní otázku č. 2), doslova: *„u středisek

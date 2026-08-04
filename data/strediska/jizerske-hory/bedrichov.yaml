@@ -3,19 +3,52 @@ nazev: Bedřichov
 slug: bedrichov
 zeme: cz
 oblast: jizerske-hory
+
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Jizerskohorská obec s bohatou sklářskou minulostí, mezi Libercem
+  a Jabloncem nad Nisou, v nadmořské výšce 707 metrů.
+overeniPerex:
+  source: >-
+    Oficiální web obce Bedřichov, Základní údaje
+    (bedrichov-ou.cz/cs/obec/o-obci/zakladni-udaje.html, načteno 4. 8. 2026):
+    „Obec Bedřichov je malebná jizerskohorská obec s bohatou sklářskou
+    minulostí, leží v nadmořské výšce 707 m n. m." Polohu mezi Libercem
+    a Jabloncem nad Nisou potvrzuje tentýž web i turistický portál
+    Libereckého kraje liberecky-kraj.cz/dr-cs/2092-bedrichov.html („Nachází
+    se mezi městy Jablonec nad Nisou a Liberec"), který uvádí i touž výšku
+    707 m — dva nezávislé prameny se shodují.
+  verified: false
+  checked: '2026-08-04'
+
+# Výška obce: 707 m shodně ve dvou nezávislých pramenech (oficiální web
+# obce + portál kraje). Rozpětí 710–802 m, které web uvádí u skiareálu, je
+# údaj o sjezdovkách, ne o obci — do pole nepatří.
+vyskaObce: 707
+
 vychoziBody:
 - nazev: Bedřichov, Maliník
   typ: autobusová zastávka + parkoviště
 - nazev: Bedřichov, stadion
   typ: hlavní turistická autobusová zastávka + parkoviště
 overeniLokace:
-  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21);
-    zdrojová URL katalogu: https://www.jizerky.cz/doprava, https://www.prezidentska.cz/, https://www.samalova-chata.cz/'
+  source: >-
+    Výchozí body: katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026,
+    ověřeno k 2026-07-21); zdrojová URL katalogu:
+    https://www.jizerky.cz/doprava, https://www.prezidentska.cz/,
+    https://www.samalova-chata.cz/. GPS zatím chybí — doplní je běh DATA-06
+    pro Jizerské hory. Výška obce: 707 m shodně v oficiálním webu obce
+    (bedrichov-ou.cz/cs/obec/o-obci/zakladni-udaje.html: „leží v nadmořské
+    výšce 707 m n. m.") a na turistickém portálu Libereckého kraje
+    (liberecky-kraj.cz/dr-cs/2092-bedrichov.html), obojí načteno 4. 8. 2026 —
+    ověření proti ČÚZK (zadání F1a) zůstává otevřené.
   verified: false
-  checked: '2026-07-30'
+  checked: '2026-08-04'
 # Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
 # čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
 doprava:
+  bus: >-
+    Do obce jezdí autobusová linka 145 (Bedřichov – Janov nad Nisou).
   auto: >-
     Parkování mimo čtyři vyhrazená parkoviště je v obci zakázáno. P1
     Centrál v centru je vhodné pro nástup na Jizerskou magistrálu
@@ -33,8 +66,15 @@ overeniDoprava:
     „otevřeno 6.00–22.00 h“; „Parkování mimo vyhrazená parkoviště je
     zakázáno“; „15% z vybrané částky za parkovné je použito na úpravu
     Jizerské magistrály“. Ceny se do profilu nepíšou.
+
+    Autobus doplněn 4. 8. 2026 z oficiálního webu obce Lázně Libverda,
+    článek „DO JIZEREK VEŘEJNOU DOPRAVOU"
+    (laznelibverda.cz/cs/aktuality-clanky/do-jizerek-verejnou-dopravou.html):
+    linka 145 „směrem na Bedřichov a Janov nad Nisou". Pramen jmenuje
+    LINKU, ne jízdní řád ani zastávky — profil proto netvrdí, kdy a odkud
+    spoje jedou. Je to web sousední obce, ne dopravce.
   verified: false
-  checked: '2026-08-02'
+  checked: '2026-08-04'
 
 interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
   pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích

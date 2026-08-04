@@ -3,6 +3,23 @@ nazev: Bílý Potok
 slug: bily-potok
 zeme: cz
 oblast: jizerske-hory
+
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Obec ve Frýdlantském výběžku nedaleko Hejnic, první frýdlantská osada
+  na horním toku Smědé.
+overeniPerex:
+  source: >-
+    Turistický portál Libereckého kraje
+    liberecky-kraj.cz/dr-cs/2232-bily-potok.html (načteno 4. 8. 2026): „Obec
+    Bílý potok se nachází ve Frýdlantském výběžku, nedaleko města Hejnice.",
+    „Obec je první frýdlantskou osadou na horním toku Smědé a jednou
+    z nejvýše položených v této části Jizerských hor." Superlativ o výšce se
+    do perexu nepřevzal — je to tvrzení pramene bez čísla. Nadmořskou výšku
+    stránka neuvádí.
+  verified: false
+  checked: '2026-08-04'
+
 vychoziBody:
 - nazev: Bílý Potok pod Smrkem, železniční stanice
   typ: vlak
@@ -16,6 +33,23 @@ overeniLokace:
     https://www.jizerky.cz/doprava'
   verified: false
   checked: '2026-07-30'
+# Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
+# čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
+doprava:
+  bus: >-
+    Do obce jezdí autobusová linka 650 (Hejnice – Bílý Potok – Smědava).
+overeniDoprava:
+  source: >-
+    Oficiální web obce Lázně Libverda, článek „DO JIZEREK VEŘEJNOU
+    DOPRAVOU" (laznelibverda.cz/cs/aktuality-clanky/do-jizerek-verejnou-dopravou.html,
+    načteno 4. 8. 2026): linka 145 „směrem na Bedřichov a Janov nad Nisou",
+    linka 650 „na Hejnice u Liberce, Bílý Potok a dále na Smědavu". Pramen
+    jmenuje LINKY, ne jízdní řády ani zastávky — profil proto netvrdí, kdy
+    a odkud spoje jedou. Je to web sousední obce, ne dopravce; do prvního
+    ověření u dopravce zůstává verified:false.
+  verified: false
+  checked: '2026-08-04'
+
 interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
   pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
   bodů vede Bílý Potok jako nejbližší obec/uzel pro Bártlova bouda, Horská chata Smědava. SOUŘADNICE

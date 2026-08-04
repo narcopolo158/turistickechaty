@@ -13,10 +13,12 @@
  *    Středisko vedeme jako *východisko túr*; že se v něm i lyžuje nebo
  *    ubytovává, z našich dat neplyne a schema.org není místo, kde si to
  *    domýšlet.
- *  - **`geo` jen se souřadnicemi, `elevation` jen s výškou obce.** Výšku obce
- *    dnes nemá v datech ani jedno středisko (čeká na ČÚZK — viz F1a), takže se
- *    klíč zpravidla vůbec nevypíše. To je správně: prázdná nadmořská výška je
- *    lepší než vymyšlená.
+ *  - **`geo` vzniká, jakmile je čím ho naplnit — souřadnicemi NEBO výškou
+ *    obce.** Původně stálo `geo` jen na souřadnicích, jenže 4. 8. 2026 přibyly
+ *    doložené výšky u jizerských středisek, která GPS zatím nemají (čekají na
+ *    běh DATA-06 pro Jizerky) — doložený údaj by tím tiše vypadl z JSON-LD.
+ *    `GeoCoordinates` samotnou `elevation` unese. Co v datech není, se dál
+ *    nevypisuje: prázdná nadmořská výška je lepší než vymyšlená.
  *  - **`containedInPlace` = pohoří**, protože to je vazba, kterou data mají
  *    (`oblast` v kolekci). Naopak **chaty dostupné odtud se do JSON-LD
  *    nepíšou**: schema.org na ně nabízí `includesAttraction`, jenže to znamená
@@ -75,13 +77,14 @@ export const jsonLdStrediska = (
     url: `${origin}${cesta}`,
   }
   if (s.perex) misto.description = s.perex
-  if (s.lat != null && s.lng != null) {
+  const maSouradnice = s.lat != null && s.lng != null
+  if (maSouradnice || s.vyskaObce != null) {
     misto.geo = {
       '@type': 'GeoCoordinates',
-      latitude: s.lat,
-      longitude: s.lng,
-      // Výška obce je úřední údaj (ČÚZK). Dokud ho nemáme, klíč nevzniká —
-      // dopočítat ho z výškového modelu by byl jiný údaj pod týmž jménem.
+      ...(maSouradnice ? { latitude: s.lat, longitude: s.lng } : {}),
+      // Výška obce se vypisuje jen doložená (pole `vyskaObce`); dopočet
+      // z výškového modelu (DATA-35) je taky doklad, ale zapisuje se do dat,
+      // ne tady — tenhle modul jen přepisuje, co v datech stojí.
       ...(s.vyskaObce != null ? { elevation: s.vyskaObce } : {}),
     }
   }

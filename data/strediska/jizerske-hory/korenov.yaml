@@ -3,6 +3,25 @@ nazev: Kořenov
 slug: korenov
 zeme: cz
 oblast: jizerske-hory
+
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Obec na pomezí Jizerských hor a Krkonoš, mezi Tanvaldem a Harrachovem;
+  její území zasahuje až do Krkonošského národního parku.
+overeniPerex:
+  source: >-
+    Dva prameny, načteno 4. 8. 2026. Turistický portál Libereckého kraje
+    liberecky-kraj.cz/dr-cs/2188-korenov.html: „Obec Kořenov leží na pomezí
+    Jizerských hor a Krkonoš, mezi městy Tanvald a Harrachov.", výška „od 570
+    do 1025 m.n.m." Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/korenov/: „Obec Kořenov se nachází ve východní
+    části Jizerských hor a její území zasahuje až do oblasti Krkonošského
+    národního parku." Tvrzení téhož portálu, že Kořenov „patří mezi největší
+    horské obce České republiky", je superlativ bez čísla — do perexu se
+    nepřevzal. Rozpětí 570–1025 m se do `vyskaObce` nezapisuje.
+  verified: false
+  checked: '2026-08-04'
+
 vychoziBody:
 - nazev: Jakuszyce, Polana Jakuszycka
   typ: vlak + přeshraniční turistický uzel

@@ -3,6 +3,22 @@ nazev: Janov nad Nisou
 slug: janov-nad-nisou
 zeme: cz
 oblast: jizerske-hory
+
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Obec při Bílé Nise, 4,5 kilometru severně od Jablonce nad Nisou,
+  rozložená ve výškách od 520 do 859 metrů.
+overeniPerex:
+  source: >-
+    Turistický portál Libereckého kraje
+    liberecky-kraj.cz/dr-cs/2330-janov-nad-nisou.html (načteno 4. 8. 2026):
+    „Janov nad Nisou leží 4,5 km severně od Jablonce nad Nisou. Rozkládá se
+    při Bílé Nise, ve značném výškovém převýšení od 520 m do 859 m." Rozpětí
+    se do `vyskaObce` nezapisuje — jedno číslo dodá DATA-35, až budou
+    souřadnice z běhu DATA-06 pro Jizerské hory.
+  verified: false
+  checked: '2026-08-04'
+
 vychoziBody:
 - nazev: Bedřichov, stadion
   typ: hlavní turistická autobusová zastávka + parkoviště
@@ -13,6 +29,23 @@ overeniLokace:
     zdrojová URL katalogu: https://www.jizerky.cz/doprava, https://www.kralovka.cz/'
   verified: false
   checked: '2026-07-30'
+# Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
+# čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
+doprava:
+  bus: >-
+    Do obce jezdí autobusová linka 145 (Bedřichov – Janov nad Nisou).
+overeniDoprava:
+  source: >-
+    Oficiální web obce Lázně Libverda, článek „DO JIZEREK VEŘEJNOU
+    DOPRAVOU" (laznelibverda.cz/cs/aktuality-clanky/do-jizerek-verejnou-dopravou.html,
+    načteno 4. 8. 2026): linka 145 „směrem na Bedřichov a Janov nad Nisou",
+    linka 650 „na Hejnice u Liberce, Bílý Potok a dále na Smědavu". Pramen
+    jmenuje LINKY, ne jízdní řády ani zastávky — profil proto netvrdí, kdy
+    a odkud spoje jedou. Je to web sousední obce, ne dopravce; do prvního
+    ověření u dopravce zůstává verified:false.
+  verified: false
+  checked: '2026-08-04'
+
 interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
   pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
   bodů vede Janov nad Nisou jako nejbližší obec/uzel pro Královka. SOUŘADNICE ZÁMĚRNĚ CHYBÍ: krkonošská

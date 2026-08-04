@@ -3,6 +3,21 @@ nazev: Hejnice
 slug: hejnice
 zeme: cz
 oblast: jizerske-hory
+
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Město v údolí říčky Smědé na severním úpatí Jizerských hor, nedaleko
+  Frýdlantu.
+overeniPerex:
+  source: >-
+    Turistický portál Libereckého kraje
+    liberecky-kraj.cz/dr-cs/2024-hejnice.html (načteno 4. 8. 2026): „Město
+    Hejnice leží nedaleko města Frýdlant, ve stejnojmenném výběžku. Rozkládá
+    se v údolí říčky Smědé na severním úpatí Jizerských hor." Nadmořskou
+    výšku stránka neuvádí.
+  verified: false
+  checked: '2026-08-04'
+
 vychoziBody:
 - nazev: Bedřichov, stadion
   typ: hlavní turistická autobusová zastávka + parkoviště
@@ -13,6 +28,23 @@ overeniLokace:
     zdrojová URL katalogu: https://www.jizerky.cz/doprava'
   verified: false
   checked: '2026-07-30'
+# Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
+# čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
+doprava:
+  bus: >-
+    Do města jezdí autobusová linka 650, která pokračuje přes Bílý Potok na Smědavu.
+overeniDoprava:
+  source: >-
+    Oficiální web obce Lázně Libverda, článek „DO JIZEREK VEŘEJNOU
+    DOPRAVOU" (laznelibverda.cz/cs/aktuality-clanky/do-jizerek-verejnou-dopravou.html,
+    načteno 4. 8. 2026): linka 145 „směrem na Bedřichov a Janov nad Nisou",
+    linka 650 „na Hejnice u Liberce, Bílý Potok a dále na Smědavu". Pramen
+    jmenuje LINKY, ne jízdní řády ani zastávky — profil proto netvrdí, kdy
+    a odkud spoje jedou. Je to web sousední obce, ne dopravce; do prvního
+    ověření u dopravce zůstává verified:false.
+  verified: false
+  checked: '2026-08-04'
+
 interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
   pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
   bodů vede Hejnice jako nejbližší obec/uzel pro Kiosek Knajpa. SOUŘADNICE ZÁMĚRNĚ CHYBÍ: krkonošská

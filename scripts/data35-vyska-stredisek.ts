@@ -24,6 +24,12 @@
  *   3. Střed doloženého rozpětí — POSLEDNÍ možnost, jen když bod nemá
  *      souřadnice. Zapisuje se s výslovnou poznámkou, že je to střed rozpětí.
  *
+ * POLSKÁ STŘEDISKA SE ZAHRNUJÍ (rozhodnutí Michala 4. 8. 2026 na dotaz, jestli
+ * u nich neplatí handoffové „PL bez čísel"): Karpacz, Przesieka i Szklarska
+ * Poręba mají referenční bod stejně doložený jako česká, takže model jim výšku
+ * dodá se stejnou silou dokladu. „PL bez čísel" se týkalo POČTŮ chat z katalogu,
+ * ne doložených údajů o obci.
+ *
  * Poctivost: výsledek kroku 2 je hodnota z VÝŠKOVÉHO MODELU (Mapy.com sám
  * píše „model s různou přesností — nemusí odpovídat realitě"), tedy nikdy
  * `verified: true` a nikdy se nevydává za úředně evidovanou výšku obce.
@@ -126,7 +132,7 @@ export const rozhodni = (data: {
   if (typeof data.vyskaObce === 'number')
     return { akce: 'preskocit', duvod: `už má doloženou výšku ${data.vyskaObce} m (lidský pramen má přednost před modelem)` }
   if (typeof data.lat !== 'number' || typeof data.lng !== 'number')
-    return { akce: 'preskocit', duvod: 'nemá souřadnice referenčního bodu (u polských a jizerských čekáme na DATA-01)' }
+    return { akce: 'preskocit', duvod: 'nemá souřadnice referenčního bodu (jizerská střediska čekají na běh DATA-06 pro Jizerské hory)' }
   return { akce: 'dopocitat', bod: { lat: data.lat, lon: data.lng } }
 }
 

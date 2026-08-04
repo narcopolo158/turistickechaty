@@ -29,13 +29,27 @@ type StrediskoYaml = {
   vychoziBody?: { nazev: string }[]
 }
 
-const nactiStrediska = (): { soubor: string; data: StrediskoYaml }[] => {
-  const slozka = join(KOREN, 'data', 'strediska', 'krkonose')
+const nactiStrediska = (oblast = 'krkonose'): { soubor: string; data: StrediskoYaml }[] => {
+  const slozka = join(KOREN, 'data', 'strediska', oblast)
   return readdirSync(slozka)
-    .filter((f) => f.endsWith('.yaml'))
+    .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
     .sort()
-    .map((f) => ({ soubor: f, data: parse(readFileSync(join(slozka, f), 'utf8')) as StrediskoYaml }))
+    .map((f) => ({
+      soubor: `${oblast}/${f}`,
+      data: parse(readFileSync(join(slozka, f), 'utf8')) as StrediskoYaml,
+    }))
 }
+
+/**
+ * Střediska VŠECH oblastí. Pravidla o veřejné próze a o doložené výšce
+ * nejsou krkonošská specialita — platí wherever středisko vznikne, a od
+ * 4. 8. 2026 mají perex i jizerská. Kontroly vázané na krkonošský katalog
+ * (bbox, vychoziBody, sedmička z handoffu) zůstávají zvlášť níž.
+ */
+const vsechnaStrediska = (): { soubor: string; data: StrediskoYaml }[] =>
+  readdirSync(join(KOREN, 'data', 'strediska'), { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .flatMap((d) => nactiStrediska(d.name))
 
 const katalogBodu = (): Set<string> => {
   const json = JSON.parse(
@@ -60,7 +74,7 @@ describe('střediska Krkonoš (data/strediska/krkonose)', () => {
       expect(strediska.map(({ data }) => data.slug), `chybí středisko ${slug} z handoffu`).toContain(slug)
     }
     for (const { soubor, data } of strediska) {
-      expect(soubor).toBe(`${data.slug}.yaml`)
+      expect(soubor).toBe(`krkonose/${data.slug}.yaml`)
       expect(data.nazev).toBeTruthy()
       expect(data.oblast).toBe('krkonose')
       expect(['cz', 'pl']).toContain(data.zeme)
@@ -76,16 +90,39 @@ describe('střediska Krkonoš (data/strediska/krkonose)', () => {
       expect(data.overeniLokace?.source, soubor).toMatch(/ODbL/)
       expect(data.overeniLokace?.verified, soubor).toBe(false)
       expect(data.overeniLokace?.checked, soubor).toMatch(/^\d{4}-\d{2}-\d{2}$/)
-      // Výška obce smí existovat JEN s dokladem: overeniLokace.source musí
-      // výšku výslovně zmiňovat (první doklad 3. 8. 2026: Dolní Dvůr 641 m
-      // z oficiálního portálu svazku; ověření proti ČÚZK zůstává otevřené
-      // a hlídá ho zmínka o ČÚZK v témže zdroji).
-      if (data.vyskaObce != null) {
-        expect(typeof data.vyskaObce, soubor).toBe('number')
-        expect(data.overeniLokace?.source, `${soubor}: výška obce bez dokladu ve zdroji lokace`).toMatch(/[Vv]ýšk/)
-        expect(data.overeniLokace?.source, `${soubor}: u výšky chybí poznámka o otevřeném ověření ČÚZK`).toMatch(/ČÚZK/)
+    }
+  })
+
+  it('každý vychoziBod ukazuje na skutečný bod katalogu DATA-06 (překlep = tichá díra v datech)', () => {
+    const katalog = katalogBodu()
+    for (const { soubor, data } of strediska) {
+      expect(data.vychoziBody?.length, soubor).toBeGreaterThan(0)
+      for (const bod of data.vychoziBody ?? []) {
+        expect(katalog.has(bod.nazev), `${soubor}: bod „${bod.nazev}" v katalogu není`).toBe(true)
       }
     }
+  })
+
+  it('GPS všech středisek leží v bboxu Krkonoš (hrubá kontrola záměny souřadnic)', () => {
+    for (const { soubor, data } of strediska) {
+      expect(data.lat, soubor).toBeGreaterThan(50.5)
+      expect(data.lat, soubor).toBeLessThan(51.0)
+      expect(data.lng, soubor).toBeGreaterThan(15.2)
+      expect(data.lng, soubor).toBeLessThan(16.1)
+    }
+  })
+})
+
+describe('střediska všech oblastí — veřejná próza a doložená výška', () => {
+  const strediska = vsechnaStrediska()
+
+  // Pojistka proti tiché nule: kdyby se složky přejmenovaly nebo filtr
+  // přestal zabírat, testy níž by prošly nad PRÁZDNÝM seznamem a nic by
+  // nehlídaly. K 4. 8. 2026 je středisek 22 (16 Krkonoše + 6 Jizerské hory).
+  it('načte střediska ze všech oblastí, ne z prázdna', () => {
+    expect(strediska.length).toBeGreaterThanOrEqual(22)
+    expect(strediska.some(({ soubor }) => soubor.startsWith('jizerske-hory/'))).toBe(true)
+    expect(strediska.some(({ soubor }) => soubor.startsWith('krkonose/'))).toBe(true)
   })
 
   // Perex je veřejná próza — platí pro něj totéž co pro každou věcnou
@@ -116,22 +153,28 @@ describe('střediska Krkonoš (data/strediska/krkonose)', () => {
     }
   })
 
-  it('každý vychoziBod ukazuje na skutečný bod katalogu DATA-06 (překlep = tichá díra v datech)', () => {
-    const katalog = katalogBodu()
+  // Výška obce smí existovat JEN s dokladem: overeniLokace.source musí výšku
+  // výslovně zmiňovat (první doklad 3. 8. 2026: Dolní Dvůr 641 m z oficiálního
+  // portálu svazku; ověření proti ČÚZK zůstává otevřené a hlídá ho zmínka
+  // o ČÚZK v témže zdroji). Od 4. 8. 2026 pravidlo platí i pro Jizerské hory,
+  // kde první dvě výšky mají Bedřichov (707 m) a Lázně Libverda (420 m).
+  it('výška obce smí být jen s dokladem ve zdroji lokace a s přiznaným ověřením ČÚZK', () => {
     for (const { soubor, data } of strediska) {
-      expect(data.vychoziBody?.length, soubor).toBeGreaterThan(0)
-      for (const bod of data.vychoziBody ?? []) {
-        expect(katalog.has(bod.nazev), `${soubor}: bod „${bod.nazev}" v katalogu není`).toBe(true)
-      }
+      if (data.vyskaObce == null) continue
+      expect(typeof data.vyskaObce, soubor).toBe('number')
+      expect(data.overeniLokace?.source, `${soubor}: výška obce bez dokladu ve zdroji lokace`).toMatch(/[Vv]ýšk/)
+      expect(data.overeniLokace?.source, `${soubor}: u výšky chybí poznámka o otevřeném ověření ČÚZK`).toMatch(/ČÚZK/)
     }
   })
 
-  it('GPS všech středisek leží v bboxu Krkonoš (hrubá kontrola záměny souřadnic)', () => {
+  it('rozpětí výšek se do vyskaObce nezapisuje (rozhodnutí Michala 4. 8. 2026 → DATA-35)', () => {
+    // Prameny u obcí rozložených po svahu uvádějí „575 – 1555 m". Kdyby se
+    // takové rozpětí propsalo do pole, byl by to vybraný údaj, ne doložený.
     for (const { soubor, data } of strediska) {
-      expect(data.lat, soubor).toBeGreaterThan(50.5)
-      expect(data.lat, soubor).toBeLessThan(51.0)
-      expect(data.lng, soubor).toBeGreaterThan(15.2)
-      expect(data.lng, soubor).toBeLessThan(16.1)
+      if (data.vyskaObce == null) continue
+      const doklad = data.overeniLokace?.source ?? ''
+      const rozpetiUVysky = /[Vv]ýšk[^.]{0,80}?\d{3,4}\s*[–-]\s*\d{3,4}/.test(doklad)
+      expect(rozpetiUVysky, `${soubor}: výška obce doložená rozpětím, ne jedním číslem`).toBe(false)
     }
   })
 })
