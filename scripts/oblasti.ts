@@ -155,4 +155,7 @@ export const cestyOblasti = (slug: string) => ({
   trasy: join(process.cwd(), 'data', 'trasy', slug),
   oblast: join(process.cwd(), 'data', 'oblasti', slug),
   chaty: join(process.cwd(), 'data', 'chaty', slug),
+  // Střediska (F1e) — přibylo 4. 8. 2026 kvůli DATA-35 (výška obce
+  // z referenčního bodu); do té doby si cestu skládal každý skript sám.
+  strediska: join(process.cwd(), 'data', 'strediska', slug),
 })

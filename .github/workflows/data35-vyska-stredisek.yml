@@ -1,0 +1,82 @@
+# DATA-35: výška obce u středisek z nadmořské výšky referenčního bodu.
+#
+# Zadání Michala 4. 8. 2026: „u středisek s rozpětím výšek bych určil středovou
+# hodnotu, nebo lépe: vycházel z nadmořské výšky turistického uzlu / rozcestí /
+# náměstí." Oficiální portál svazku totiž u obcí rozložených po svahu uvádí
+# rozpětí (Benecko 682–1010 m, Špindl 575–1555 m, Vrchlabí 400–1036 m) — jedno
+# číslo z něj vybrat od oka by bylo domýšlení.
+#
+# Referenční bod = uzel OSM `place` uložený v YAML střediska jako lat/lng (týž
+# bod, ze kterého se routují přístupové trasy). Výška z Mapy.com Elevation API,
+# tedy z VÝŠKOVÉHO MODELU — verified:false, ověření proti ČÚZK zůstává otevřené.
+# Střediska, která už mají výšku z lidského pramene (Dolní Dvůr 641 m, Pec pod
+# Sněžkou 750 m), se NEPŘEPISUJÍ.
+#
+# Sandbox denních sessions na api.mapy.com nedosáhne (proxy) — proto Actions.
+name: 'DATA-35: výška obce u středisek (dle oblasti)'
+
+on:
+  workflow_dispatch:
+    inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet'
+        required: false
+        default: 'krkonose'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data35-vyska-stredisek
+  cancel-in-progress: false
+
+jobs:
+  vysky:
+    name: Mapy.com Elevation → data/strediska
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Dopočet výšek středisek
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
+          MAPY_API_KEY: ${{ secrets.MAPY_API_KEY }}
+        run: |
+          if [ -z "$MAPY_API_KEY" ]; then
+            echo "!! secret MAPY_API_KEY chybí — bez něj skript jen vypíše, co by dopočítal." >&2
+          fi
+          npx tsx scripts/data35-vyska-stredisek.ts --oblast "$OBLAST" | tee report.txt
+          echo '## DATA-35 — výška obce u středisek' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Kontroly nad novými daty
+        shell: bash
+        run: |
+          npx tsc --noEmit
+          npx vitest run --config ./vitest.config.mts tests/int/strediska-data.int.spec.ts
+
+      - name: Commit výšek do main
+        shell: bash
+        env:
+          OBLAST: ${{ inputs.oblast || 'krkonose' }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/strediska
+          if git diff --cached --quiet; then
+            echo 'Beze změny — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m "data: výška obce u středisek z referenčního bodu (${OBLAST}, z Actions)" \
+            -m 'Zadání Michala 4. 8. 2026: místo rozpětí výška turistického uzlu / rozcestí / náměstí. Referenční bod = uzel OSM place (týž jako GPS střediska), výška z Mapy.com Elevation API — výškový model, verified:false, ověření proti ČÚZK zůstává otevřené. Střediska s výškou z lidského pramene se nepřepisují.'
+          git pull --rebase origin main
+          git push origin main

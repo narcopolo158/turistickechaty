@@ -29,6 +29,64 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 2) — výška obce: rozhodnutí o referenčním bodu zapsané do pipeline (DATA-35)
+
+**Zadání Michala** (odpověď na dnešní otázku č. 2), doslova: *„u středisek
+s rozpětím výšek bych určil středovou hodnotu, nebo lépe: vycházel
+z nadmořské výšky turistického uzlu / rozcestí / náměstí."* Plus pokyn
+pokračovat samostatně, ruční akce (SSL, telefonáty) udělá později najednou.
+
+**Jak jsem to přeložil do dat.** „Turistický uzel / rozcestí / náměstí" už
+v datech máme, jen se tak nejmenuje: je to uzel OSM `place`, který každé
+středisko nese jako `lat`/`lng` — u českých obcí konvenčně střed obce
+a zároveň týž bod, ze kterého se routují přístupové trasy. Nemusí se tedy
+nic dohledávat, stačí ten bod vzorkovat výškovým modelem. Pořadí preference
+je zapsané v kódu, ne jen v hlavě:
+
+1. **Doložené jedno číslo z lidského pramene, které v datech UŽ je** —
+   Dolní Dvůr 641 m, Pec pod Sněžkou 750 m z portálu svazku. Skript je
+   nikdy nepřepisuje; publikovaná výška obce je silnější doklad než vzorek
+   z modelu.
+2. **Výška referenčního bodu z Mapy.com Elevation API** — hlavní cesta,
+   která odblokuje Benecko, Špindlerův Mlýn i Vrchlabí.
+3. **Střed doloženého rozpětí** — jen kdyby bod neměl souřadnice. Funkce
+   je napsaná a otestovaná, ale zatím ji nic nepotřebuje.
+
+**Hotovo (nová položka backlogu DATA-35):**
+`scripts/data35-vyska-stredisek.ts` + workflow
+`.github/workflows/data35-vyska-stredisek.yml` + 8 testů
+(`tests/int/data35-vyska-stredisek.int.spec.ts`). Detaily, na kterých
+záleží: YAML se přepisuje přes `parseDocument`, takže **komentáře
+v souborech přežijí** (jinak by první běh smazal poctivostní hlavičky);
+`vyskaObce` se vkládá **hned za `lng`**, ne na konec souboru za interní
+poznámky; workflow po dopočtu pustí `tsc` a test středisek a **teprve pak
+commituje**, aby si sám nešoupl červenou větev do main; a jeden z testů
+hlídá, že věta vkládaná do `overeniLokace.source` projde hlídacím pravidlem
+z bloku 1 (musí zmínit výšku i otevřené ověření ČÚZK) — kdyby ji někdo
+přeformuloval, pozná se to tady, ne až v CI po commitu robota.
+
+**Nasucho ověřeno:** v Krkonoších by se dopočítalo **14 z 16** středisek,
+dvě se správně přeskočí s vypsaným důvodem. Znovu doloženo, že sandbox na
+`api.mapy.com` nedosáhne (HTTP 000) — proto Actions, jako u DATA-06 a -28.
+
+**Kontroly:** `tsc` čistý, `eslint` čistý, `npm run kontrola` zelené
+(včetně validátoru workflow — 17 souborů, 0 vad). Vitest: **728 prošlo**
+(+8 nových), stejných 8 padá jako před zásahem (testy vyžadující databázi).
+
+**Příště:** ① dopsat perexy Malé Úpě a Černému Dolu (viz blok 1);
+② jizerská střediska nemají perex ani dopravu vůbec; ③ po běhu DATA-35
+zkontrolovat, jestli model u měst v údolí (Vrchlabí, Harrachov) sedí se
+skutečností.
+
+**Otázky pro Michala:**
+
+1. **Jeden klik, až budeš u toho:** Actions → „DATA-35: výška obce
+   u středisek" → Run workflow (oblast `krkonose`). Skript i workflow jsou
+   hotové, jen se odsud nedá zavolat API.
+2. **Polská střediska** (Karpacz, Przesieka, Szklarska Poręba) — handoff
+   u nich drží „PL bez čísel", ale model jim výšku dodá stejně doložně jako
+   českým. Zahrnout, nebo je z běhu vynechat?
+
 ## 2026-08-04 (denní bezobslužná session) — perexy středisek odemčeny; chybná adresa portálu svazku byla ta pravá překážka
 
 **Proč zrovna tohle.** Backlog shora: DATA-04, DATA-05, DATA-20, DATA-22,
