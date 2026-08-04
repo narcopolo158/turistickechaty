@@ -115,7 +115,14 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
   if (`/${zeme}/${oblastSlug}/stredisko/${slug}` !== cesta) permanentRedirect(cesta)
 
   const foto = (await redakcniFotkyStredisek()).get(String(s.id)) ?? fotkaStrediska(oblastSlug, slug)
-  const pristupy = pristupyStrediska(oblastSlug, s.nazev)
+  // Kromě jména se páruje i podle `vychoziBody` — u střediska, které se
+  // nejmenuje stejně jako nástupní bod (Liberec – Horní Hanychov), by
+  // samotné jméno vrátilo prázdno a stránka by tvrdila „0 chat odtud".
+  const pristupy = pristupyStrediska(
+    oblastSlug,
+    s.nazev,
+    (s.vychoziBody ?? []).map((b) => b.nazev).filter((n): n is string => !!n),
+  )
   const chataDle = new Map(index.map((ch) => [ch.slug, ch]))
   const radky = pristupy.map((p) => ({ ...p, chata: chataDle.get(p.slug) }))
   const delky = pristupy.map((p) => p.delkaKm).filter((d): d is number => d != null)

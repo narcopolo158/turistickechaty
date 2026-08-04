@@ -29,6 +29,87 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 6) — Ještědský hřbet: střediska, top cíle a jedna oprava, která měla přednost před vším
+
+**Zadání Michala:** „kompletně dotáhni Ještědský hřbet a můžeme začít sbírat
+další pohoří."
+
+**Nejdřív nález, protože je ze všeho nejdůležitější: průvodce sliboval
+lanovku, která nejezdí.** Profil Hotelu Ještěd psal v perexu „nahoru vede
+i lanovka" a v próze „Nahoru vede lanovka a značené pěší cesty z Liberce".
+Podle oficiálního portálu Libereckého kraje je ale **kabinová lanovka
+dlouhodobě mimo provoz a obnovení se čeká nejdříve od roku 2030**; sedačková
+lanovka na Skalku sice jezdí celoročně, jenže od její horní stanice zbývá na
+vrchol ještě 1,8 km chůze. To není detail — je to rozdíl mezi „vyvezu se
+nahoru" a „jdu pěšky", a nejčastější důvod, proč na Ještěd lidé jedou.
+Próza přepsána: co přesně jezdí (tramvajová linka 3 na konečnou Horní
+Hanychov, sezónní autobusová linka 79 duben–říjen na parkoviště Ještědka),
+kam to dojede a kolik zbývá po svých. Pramen doplněn do `zdroje`.
+
+**Oblast dostala první tři střediska** (dosud neměla ani jedno, ačkoli
+přístupové trasy DATA-06 jejich nástupy dávno vedly):
+
+- **Liberec – Horní Hanychov** — nástup 4 z 5 tras oblasti. Vědomě se
+  nejmenuje „Liberec": středisko není celé krajské město, ale jeho horní
+  okraj s konečnou tramvaje, dolní stanicí lanovky a záchytnými parkovišti.
+  Referenční bod je proto zastávka u lanovky, ne uzel `place` jako jinde —
+  a právě proto se u něj `vyskaObce` schválně nevyplňuje: výška nástupu není
+  výška Liberce. Nese doloženou dopravu i stav obou lanovek.
+- **Světlá pod Ještědem** — 2 trasy, jižní strana hřbetu. Vlastní web obce
+  dal charakteristiku i osm částí; výšku uvádí jako rozpětí 400–1012 m,
+  jehož horní mez je vrchol Ještědu — katastr obce podle jejího webu sahá až
+  na temeno. Zaznamenáno, ne řešeno: souvisí to s otevřenou otázkou DATA-20
+  o významu pole `obec` (Hotel Ještěd vedeme pod Libercem).
+- **Šimonovice** — 1 trasa na Rašovku. Bohdánkov jako druhý nástup na
+  Rašovku samostatné středisko nedostal (osada, ne nástupní obec) a je to
+  u Šimonovic napsané.
+
+**Top cíle oblasti vyplněny** (Ještěd, Rozhledna Rašovka, Tetřeví sedlo),
+každý se zdrojem a vazbou na existující profil. Test, který dosud žádal
+PRÁZDNÉ pole „dokud nejsou doložené profily", byl přepsán na pravidlo —
+podmínka je splněná, tak ať hlídá kvalitu cílů, ne jejich nepřítomnost.
+
+**A jedna tichá nula, kterou to vytáhlo.** Mini-stránka střediska bere
+přístupy podle JMÉNA střediska. Dokud se všechna jmenovala přesně jako obec
+ve výchozích bodech, fungovalo to; „Liberec – Horní Hanychov" to rozbil —
+a při kontrole se ukázalo, že totéž potkalo i **Vítkovice**: devět tras
+z Horních Mísečků, a na stránce „0 chat odtud". Přitom Horní Mísečky jsou
+část obce Vítkovice a obec sama na ně v profilu odkazuje u parkování.
+Párování proto nově bere i pole `vychoziBody` — které přesně k tomuhle
+vzniklo (stojí to v popisu kolekce), jen se nepoužívalo. Vítkovicím doplněny
+Horní Mísečky. Nula bez varování je horší než chyba: vypadá jako doložený
+fakt.
+
+**Nové hlídací testy:** každý vychoziBod ještědského střediska se musí
+opravdu spárovat s trasou; Vítkovice musí vidět Mísečky; a doklad, že
+rozšíření párování něco přidalo (samotné jméno „Liberec – Horní Hanychov"
+dává nulu, jméno + body ne).
+
+**Kontroly:** `tsc` čistý, `eslint` čistý, `npm run kontrola` zelené,
+ban-scan beze změny (262 — mimochodem si nejdřív spletl autobusovou „linku
+č. 79" s číslem turistické známky, tak je v próze „linka 79"). Vitest
+**741 prošlo** (+4), padá stejných 8 jako předtím (testy s databází).
+
+**Co Ještědskému hřbetu ještě chybí — a co z toho jde odsud:**
+
+- **fotky u všech 5 profilů** — DATA-02 pro tuhle oblast nikdy neběžel
+  (0 kandidátů). Actions, klik.
+- **lanovky** — DATA-32 čte vrstvu z běhu DATA-28, a ten pro tuhle oblast
+  taky neběžel. Actions, klik. Do té doby nese stav lanovek aspoň
+  středisko Liberec – Horní Hanychov.
+- **výšky středisek** — DATA-35, Actions, klik (Šimonovice a Světlá; Liberec
+  schválně ne).
+- **razítka** — tři známková místa už jsou pojmenovaná v poznámce oblasti
+  (č. 39 Pláně pod Ještědem, č. 40 Ještěd, č. 1296 Rašovka), ale
+  razítkový fond oblasti je prázdný.
+- **otvíračky a kontakty** profilů — telefonáty, tedy DATA-04.
+
+**Otázky pro Michala:** ① **Než začneme sbírat další pohoří:** tři kliky
+v Actions (DATA-02, DATA-28, DATA-35 s oblastí `jestedsky-hrbet`) doplní
+fotky, lanovky i výšky — bez nich zůstane hřbet vizuálně chudší než
+Krkonoše a Jizerky. ② Odrodzenie 1230 × 1236 m a Benecko (z předchozích
+bloků). ③ Certifikát pro dev.turistickechaty.cz.
+
 ## 2026-08-04 (blok 5) — perex má 22 z 22; nález gminy dotáhl otevřenou otázku u Odrodzenie
 
 **Černý Důl už není bílé místo.** Portál svazku ho nemá (uzavřeno v bloku 3),

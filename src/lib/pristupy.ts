@@ -132,16 +132,34 @@ const nactiSoubor = (oblastSlug: string): SouborPodrobne => {
  * střediska. Z každé dvojice (chata, středisko) se bere NEJKRATŠÍ doložený
  * přístup: víc tras k téže chatě je informace pro plánovač, ne pro přehled
  * „co je odtud dostupné".
+ *
+ * PÁRUJE SE PODLE JMÉNA STŘEDISKA **I PODLE `vychoziBody`** (doplněno
+ * 4. 8. 2026). Do té doby stačilo jméno, protože krkonošská i jizerská
+ * střediska se jmenují přesně jako obec ve výchozích bodech. Ještědský hřbet
+ * to rozbil hned prvním střediskem: nástupy na Ještěd nesou v katalogu tři
+ * různá jména („Liberec", „Liberec-Horní Hanychov, konečná tramvaje",
+ * „Horní Hanychov, u lanovky") a žádné z nich není název střediska. Jméno
+ * jako jediný klíč by tedy u takového střediska tiše ukázalo NULU chat, což
+ * je horší než chyba — vypadá to jako doložený fakt. Pole `vychoziBody`
+ * přesně k tomuhle vzniklo (viz popis v kolekci Strediska), jen se dosud
+ * nepoužívalo.
  */
-export const pristupyStrediska = (oblastSlug: string, nazevStrediska: string): Pristup[] => {
-  const hledany = nazevStrediska.trim().toLocaleLowerCase('cs')
+export const pristupyStrediska = (
+  oblastSlug: string,
+  nazevStrediska: string,
+  vychoziBody: string[] = [],
+): Pristup[] => {
+  const klice = [nazevStrediska, ...vychoziBody]
+    .map((n) => obecZBodu(n))
+    .filter((n) => n.length > 0)
+  const sedi = (obec: string) => klice.some((k) => obec === k || obec.startsWith(`${k} `))
   const out = new Map<string, Pristup>()
   for (const ch of nactiSoubor(oblastSlug).chaty ?? []) {
     if (!ch.slug || !ch.nazev) continue
     for (const p of ch.pristupy ?? []) {
       if (!p.vychoziBod) continue
       const obec = obecZBodu(p.vychoziBod)
-      if (obec !== hledany && !obec.startsWith(`${hledany} `)) continue
+      if (!sedi(obec)) continue
       const kandidat: Pristup = {
         slug: ch.slug,
         nazev: ch.nazev,

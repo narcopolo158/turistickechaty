@@ -1,0 +1,53 @@
+# Světlá pod Ještědem — středisko / východiště na Ještědský hřbet.
+# Založeno 4. 8. 2026 (zadání Michala „kompletně dotáhni Ještědský hřbet").
+# Důvod zařazení: nástupní bod 2 přístupových tras dle DATA-06 (Horská chata
+# Ještědka a Chata Pláně pod Ještědem) — jižní strana hřbetu.
+nazev: Světlá pod Ještědem
+slug: svetla-pod-jestedem
+zeme: cz
+oblast: jestedsky-hrbet
+
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Vesnice na jižní straně Ještědského hřbetu v okrese Liberec, složená
+  z osmi částí. Její katastr stoupá od 400 metrů až k vrcholu Ještědu.
+overeniPerex:
+  source: >-
+    Oficiální web obce Světlá pod Ještědem, stránka Obec
+    (svetlapodjestedem.cz/obec/, načteno 4. 8. 2026): „Světlá pod Ještědem
+    je vesnicí na severu Čech, v okresu Liberec, v Libereckém kraji.";
+    nadmořská výška „400–1012 m n.m."; osm částí (Světlá pod Ještědem,
+    Rozstání, Hodky, Dolení Paseky, Hoření Paseky, Vesec, Jiříčkov,
+    Křižany). Poloha „na jižní straně hřbetu" plyne z našich vlastních dat
+    (obec leží jižně od hřebene, přístupové trasy DATA-06 vedou odsud
+    nahoru), ne z pramene.
+  verified: false
+  checked: '2026-08-04'
+
+lat: 50.7114247
+lng: 14.9854179
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/node/1587363088 (uzel obce
+    z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap,
+    ODbL 1.0 (openstreetmap.org/copyright). Výška obce: pramen obce uvádí
+    jen ROZPĚTÍ 400–1012 m (horní mez je vrchol Ještědu), takže jedno číslo
+    z něj nevybírám — dodá ho dopočet DATA-35 z referenčního bodu. Ověření
+    proti ČÚZK zůstává otevřené.
+  verified: false
+  checked: '2026-08-04'
+
+vychoziBody:
+  - nazev: Světlá pod Ještědem
+  - nazev: Světlá p.Ještědem,,Ještědka
+
+interniPoznamky: >-
+  Doplnit z doložených zdrojů: dopravu (vlastní web obce k ní nic
+  strukturního nenese, jen odkaz na jízdní řády IDOS) a fotku střediska
+  (DATA-33 pro tuhle oblast ještě neběžel).
+
+  Pozor na rozpětí 400–1012 m: horní mez je vrchol Ještědu, takže katastr
+  obce podle vlastního webu sahá až na temeno hřbetu. Souvisí to s otázkou
+  DATA-20 o významu pole `obec` — Hotel Ještěd vedeme s obcí Liberec
+  (Památkový katalog), ale hranice tady zjevně nejsou samozřejmé. Neřeším,
+  jen zaznamenávám.

@@ -1,0 +1,47 @@
+# Šimonovice — středisko / východiště na Ještědský hřbet.
+# Založeno 4. 8. 2026 (zadání Michala „kompletně dotáhni Ještědský hřbet").
+# Důvod zařazení: nástupní bod přístupové trasy na Rozhlednu Rašovka
+# dle DATA-06 — jihovýchodní konec hřbetu.
+nazev: Šimonovice
+slug: simonovice
+zeme: cz
+oblast: jestedsky-hrbet
+
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Obec asi dva kilometry jižně od Liberce, na silnici z Liberce přes Proseč
+  pod Ještědem do Českého Dubu.
+overeniPerex:
+  source: >-
+    Turistický portál Libereckého kraje
+    liberecky-kraj.cz/dr-cs/5062-simonovice.html (načteno 4. 8. 2026):
+    „Obec Šimonovice leží asi 2 km jižně od Liberce na silnici vedoucí
+    z Liberce přes Proseč pod Ještědem do Českého Dubu." Nadmořskou výšku
+    stránka neuvádí; druhou větu pramene („svou polohou přímo vybízí
+    k návštěvě Liberce…") nepřebírám, je to doporučení, ne fakt.
+  verified: false
+  checked: '2026-08-04'
+
+lat: 50.7063759
+lng: 15.052623
+overeniLokace:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/node/1587362850 (uzel obce
+    z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap,
+    ODbL 1.0 (openstreetmap.org/copyright). Výšku obce žádný z dnešních
+    pramenů neuvádí; dodá ji dopočet DATA-35 z referenčního bodu, ověření
+    proti ČÚZK zůstává otevřené.
+  verified: false
+  checked: '2026-08-04'
+
+vychoziBody:
+  - nazev: Šimonovice
+
+interniPoznamky: >-
+  Doplnit z doložených zdrojů: dopravu a fotku střediska (DATA-33 pro tuhle
+  oblast ještě neběžel).
+
+  Rašovka je odsud dostupná i z Bohdánkova (zastávka v katalogu DATA-06,
+  50,6822 / 15,0427) — samostatné středisko z něj nezakládám, je to osada,
+  ne nástupní obec s vlastní infrastrukturou. Kdyby přibyly další chaty na
+  jihovýchodním konci hřbetu, zvážit znovu.

@@ -72,10 +72,45 @@ nejvyssiHora:
     i vydavatelův výpis známkových míst z 30. 7. 2026 („No. 40 Ještěd
     1012m"). Ověření ČÚZK: DATA-04.
 
-# Střediska a top cíle se doplní, až budou vazby na doložené profily
-# (po prvním exportu kandidátů a povyšování) — prázdné pole je poctivější
-# než odhad.
-topCile: []
+# Top cíle doplněny 4. 8. 2026, když už oblast má pět publikovaných profilů
+# a tři střediska. Každý cíl nese zdroj a vazbu na profil, který o něm
+# opravdu je — cíl bez profilu se sem nepíše.
+topCile:
+  - nazev: Ještěd
+    veta: >-
+      Vrchol hřbetu s Hubáčkovým horským hotelem a vysílačem — rotačním
+      hyperboloidem, který je od roku 2006 národní kulturní památkou.
+      Poslední úsek nahoru se jde pěšky.
+    nejblizChataSlug: horsky-hotel-jested
+    source: >-
+      Turistický portál Libereckého kraje
+      liberecky-kraj.cz/dr-cs/15227-jestedsky-hrbet.html (načteno
+      4. 8. 2026): „na jeho špici v nadmořské výšce 1012 m n. m. pevně sedí
+      a rozmarům počasí vzdoruje horský hotel a televizní vysílač Ještěd";
+      památková ochrana a autorství stavby dle profilu Hotelu Ještěd.
+      „Pěšky" dle téhož portálu, Doprava na Ještěd — kabinová lanovka je
+      dlouhodobě mimo provoz a sedačková končí 1,8 km pod vrcholem.
+  - nazev: Rozhledna Rašovka
+    veta: >-
+      Vyhlídková věž na jihovýchodním rameni hřbetu nad Šimonovicemi,
+      dostupná po značené trase z údolí.
+    nejblizChataSlug: rasovka
+    source: >-
+      Turistický portál Libereckého kraje
+      liberecky-kraj.cz/dr-cs/5875-rozhledna-rasovka.html (načteno
+      4. 8. 2026) — rozhledna vedená pod obcí Šimonovice; přístupová trasa
+      ze Šimonovic je v našem katalogu DATA-06.
+  - nazev: Tetřeví sedlo
+    veta: >-
+      Sedlo pod vrcholem na hlavní hřebenové trase, s boudou a záchytným
+      parkovištěm Výpřež.
+    nejblizChataSlug: bouda-tetrevi-sedlo
+    source: >-
+      Turistický portál Libereckého kraje, Doprava na Ještěd
+      liberecky-kraj.cz/dr-cs/30531-doprava-na-jested.html (načteno
+      4. 8. 2026): parkoviště „Výpřež" u „Tetřeví sedlo", nepřetržitě;
+      poloha na hřebeni a existence boudy dle našeho profilu
+      bouda-tetrevi-sedlo a přístupových tras DATA-06.
 
 interniPoznamky: >-
   Založeno 30. 7. 2026 na pokyn Michala („bereme i ještědský hřbet"), a to

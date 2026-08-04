@@ -13,6 +13,11 @@
 import { describe, expect, it } from 'vitest'
 
 import { lanovkaPodleSlugu, lanovkySeSlugy, slugLanovky } from '@/lib/lanovky'
+import { readdirSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
+
+import { parse } from 'yaml'
+
 import { pristupyOdBodu, pristupyStrediska } from '@/lib/pristupy'
 
 describe('slug lanovky', () => {
@@ -83,5 +88,56 @@ describe('trasy od horní stanice lanovky', () => {
 
   it('uprostřed lesa nenajde nic (a nespadne)', () => {
     expect(pristupyOdBodu('krkonose', { lat: 50.9, lng: 15.2 })).toEqual([])
+  })
+})
+
+/**
+ * Tichá nula u střediska (4. 8. 2026). Mini-stránka bere přístupy podle
+ * JMÉNA střediska; dokud se všechna střediska jmenovala přesně jako obec ve
+ * výchozích bodech, fungovalo to. Ještědský hřbet to rozbil hned prvním
+ * střediskem („Liberec – Horní Hanychov" proti bodům „Liberec",
+ * „Liberec-Horní Hanychov, konečná tramvaje", „Horní Hanychov, u lanovky")
+ * a při té příležitosti se ukázalo, že totéž tiše potkalo i Vítkovice:
+ * devět tras z Horních Mísečků, a na stránce „0 chat odtud". Párování proto
+ * bere i `vychoziBody` — a tenhle test hlídá, že se vazba nerozpadne.
+ */
+describe('středisko nesmí tiše ukazovat nulu chat', () => {
+  const strediska = (oblast: string) =>
+    readdirSync(join(process.cwd(), 'data', 'strediska', oblast))
+      .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
+      .map((f) => {
+        const d = parse(
+          readFileSync(join(process.cwd(), 'data', 'strediska', oblast, f), 'utf8'),
+        ) as { nazev: string; vychoziBody?: { nazev?: string }[] }
+        return {
+          soubor: f,
+          nazev: d.nazev,
+          body: (d.vychoziBody ?? []).map((b) => b.nazev).filter((n): n is string => !!n),
+        }
+      })
+
+  it('každý vychoziBod střediska se opravdu páruje s nějakou trasou (Ještědský hřbet)', () => {
+    for (const s of strediska('jestedsky-hrbet')) {
+      const p = pristupyStrediska('jestedsky-hrbet', s.nazev, s.body)
+      expect(p.length, `${s.soubor}: žádná přístupová trasa — vazba na katalog se rozpadla`).toBeGreaterThan(0)
+    }
+  })
+
+  it('Vítkovice vidí trasy z Horních Mísečků (regrese tiché nuly)', () => {
+    const v = strediska('krkonose').find((s) => s.nazev === 'Vítkovice')
+    expect(v, 'středisko Vítkovice zmizelo').toBeTruthy()
+    expect(v!.body).toContain('Horní Mísečky')
+    expect(pristupyStrediska('krkonose', v!.nazev, v!.body).length).toBeGreaterThan(5)
+  })
+
+  it('jméno střediska samo o sobě je slabší klíč než jméno + vychoziBody', () => {
+    // Doklad, že rozšíření párování opravdu něco přidalo, ne že jen nic nerozbilo.
+    const jenJmeno = pristupyStrediska('jestedsky-hrbet', 'Liberec – Horní Hanychov')
+    const iBody = pristupyStrediska('jestedsky-hrbet', 'Liberec – Horní Hanychov', [
+      'Liberec',
+      'Horní Hanychov, u lanovky',
+    ])
+    expect(jenJmeno.length).toBe(0)
+    expect(iBody.length).toBeGreaterThan(0)
   })
 })

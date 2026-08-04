@@ -39,8 +39,13 @@ overeniLokace:
   verified: false
   checked: '2026-08-04'
 
+# Horní Mísečky jsou část obce Vítkovice a zároveň nástup devíti přístupových
+# tras (DATA-06) — bez téhle vazby ukazovala mini-stránka „0 chat odtud",
+# ačkoli obec sama na Mísečky odkazuje v popisu parkování níž. Doplněno
+# 4. 8. 2026, když párování podle `vychoziBody` začalo fungovat.
 vychoziBody:
   - nazev: Vítkovice
+  - nazev: Horní Mísečky
 
 lanovka: >-
   Lanová dráha Medvědín – Horní Mísečky (katalog lanových drah Krkonoš, 1 000 m n. m.); letní provoz nedoložen.

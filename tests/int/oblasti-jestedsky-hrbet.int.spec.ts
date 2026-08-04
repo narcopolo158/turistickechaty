@@ -97,8 +97,30 @@ describe('dokumentace oblasti', () => {
     expect(ov.source).toBeTruthy()
   })
 
-  it('top cíle jsou prázdné, dokud nejsou doložené profily', () => {
-    expect(yaml.topCile).toEqual([])
+  // Do 4. 8. 2026 tenhle test žádal PRÁZDNÉ pole — podmínka zněla „dokud
+  // nejsou doložené profily", a ta je od téhož dne splněná (pět publikovaných
+  // profilů, tři střediska). Test proto hlídá pravidlo, ne stav: každý cíl má
+  // zdroj a vazba míří na profil, který v oblasti opravdu existuje. Týž tvar
+  // má kontrola top cílů u Krkonoš.
+  it('každý top cíl nese zdroj a míří na existující profil oblasti', () => {
+    const cile = (yaml.topCile ?? []) as unknown as {
+      nazev: string
+      source?: string
+      nejblizChataSlug?: string
+    }[]
+    expect(cile.length).toBeGreaterThan(0)
+    const profily = new Set(
+      readdirSync(join(process.cwd(), 'data', 'chaty', 'jestedsky-hrbet'))
+        .filter((f) => f.endsWith('.yaml'))
+        .map((f) => f.replace(/\.yaml$/, '')),
+    )
+    for (const c of cile) {
+      expect(c.nazev, 'cíl bez názvu').toBeTruthy()
+      expect(c.source, `cíl ${c.nazev} bez zdroje`).toBeTruthy()
+      if (c.nejblizChataSlug) {
+        expect(profily.has(c.nejblizChataSlug), `cíl ${c.nazev}: slug ${c.nejblizChataSlug}`).toBe(true)
+      }
+    }
   })
 
   it('interní poznámka drží důvod vzniku i to, proč je v okně kus města', () => {
