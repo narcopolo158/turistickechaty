@@ -29,6 +29,72 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 7) — DATA-35 nad Ještědem spadl na MÉM testu; lanovky hřbetu dopočteny
+
+**Nejdřív oprava tvé zprávy, Michale: „zbytek doběhl ok" neplatí pro
+DATA-35.** Běh #2 skončil červeně a **výšky se do repa nedostaly** — krok
+„Commit výšek do main" se vůbec nespustil. Spočítané jsou (job summary:
+Liberec – Horní Hanychov 582 m, Šimonovice 512 m, Světlá pod Ještědem
+541 m), ale v datech nejsou. DATA-28 naopak doběhlo a je v repu.
+
+**Spadlo to na mém vlastním hlídacím testu, a byl špatně napsaný.** Test
+„rozpětí výšek se do vyskaObce nezapisuje" čichal k PRÓZE: hledal ve zdroji
+lokace rozpětí poblíž slova „výška". Jenže zdroj Světlé pod Ještědem rozpětí
+400–1012 m zmiňuje **právě proto, aby řekl, že se z něj číslo nebralo** —
+test tedy trestal poctivou poznámku. Přepsáno na numerickou kontrolu:
+skutečné riziko je, že někdo z rozpětí odvodí hodnotu, a to má jen tři
+podoby — dolní mez, horní mez, střed. Když se `vyskaObce` žádné z nich
+nerovná, je jedno, kolik rozpětí zdroj zmiňuje a proč. Ověřeno obojím
+směrem: s hodnotou 541 m test prochází, s podstrčeným středem 706 m padá.
+
+**Dobrá zpráva schovaná v té špatné: brána workflow zafungovala.** Krok
+s testy běží PŘED commitem právě proto, aby pipeline nevrazila do main data,
+která neprojdou kontrolou. Udělal to, co měl — jen mu tentokrát vadilo něco,
+co vadit nemělo.
+
+**Druhá moje chyba, kterou běh odhalil: komentář místo mechanismu.** U
+střediska Liberec – Horní Hanychov jsem napsal, že se `vyskaObce` schválně
+nevyplní, protože referenční bod je nástup, ne střed města. Jenže to byl
+pouhý komentář — skript o něm nemohl vědět a výšku spočítal. A hlavně to
+bylo zbytečné: tvoje pravidlo žádá výšku TURISTICKÉHO UZLU a ten bod uzel
+doslova je. Hodnota se tedy přijímá a poznámky jsou srovnané se skutečností.
+
+**Lanovky Ještědského hřbetu dopočteny — bez dalšího kliku.** DATA-32 čte
+vrstvu z běhu DATA-28, a ten je od dneška v repu, takže to šlo rovnou
+odsud: šest drah pro pěší z dvanácti prvků `aerialway` (šest vleků mimo
+přehled). Skalka 1458 m / +340 m, Černý vrch, Nové Pláně, jedna bezejmenná,
+Obří sud a transbordér.
+
+**A z toho hned dva nálezy:**
+
+- **Kabinová dráha na Ještěd v přehledu NENÍ — a je to konzistentní.**
+  V mapových datech okna není pod běžným tagem `aerialway` vůbec; jediná
+  kabinová položka je dvaadvacetimetrový „transbordér" u Kryštofova Údolí,
+  což je něco jiného. Proč, netvrdím (pravděpodobné vysvětlení: dlouhodobě
+  odstavené dráhy se v OSM často přeznačují předponou `disused:`, kterou
+  dotaz nebere). Pro čtenáře je podstatné, že přehled ukazuje dráhy, které
+  jezdí — a stav kabinovky říká nahlas středisko i próza profilu Ještědu.
+  Sedí to s tím, co jsme zjistili v bloku 6.
+- **Jmenovec: „Obří sud".** Dráha v okně (50,7008 / 15,0765) je Obří sud
+  u Javorníku nad Libercem, ne stejnojmenný Obří sud v Lázních Libverda,
+  který vedeme u Jizerských hor. Dva různé objekty téhož jména; zapsáno do
+  poznámky oblasti, ať je při kandidátní triáži po ruce (vzor DATA-17).
+
+**Kontroly:** `tsc` čistý, `eslint` čistý, `npm run kontrola` zelené.
+Vitest 741 prošlo, padá stejných 8 (testy s databází).
+
+**Co zbývá u Ještědského hřbetu:** ① **jeden re-run DATA-35** — po opravě
+testu brána projde a výšky se konečně zapíšou; ② DATA-02 podle tebe ještě
+běží (fotky pěti profilů); ③ DATA-33 (fotky středisek) pro tuhle oblast
+ještě neběžel; ④ razítka oblasti (tři známková místa jsou pojmenovaná
+v poznámce oblasti) a ⑤ otvíračky/kontakty profilů = telefonáty.
+
+**Otázky pro Michala:** ① prosím **re-run DATA-35** s oblastí
+`jestedsky-hrbet` (teď projde); ② až doběhne DATA-02, dej vědět —
+přiřazení fotek udělám redakčně jako u Jizerek; ③ starší otevřené:
+Odrodzenie 1230 × 1236 m, Benecko k přeměření, certifikát pro
+dev.turistickechaty.cz.
+
 ## 2026-08-04 (blok 6) — Ještědský hřbet: střediska, top cíle a jedna oprava, která měla přednost před vším
 
 **Zadání Michala:** „kompletně dotáhni Ještědský hřbet a můžeme začít sbírat

@@ -30,10 +30,10 @@ overeniLokace:
   source: >-
     OpenStreetMap https://www.openstreetmap.org/node/1587363088 (uzel obce
     z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap,
-    ODbL 1.0 (openstreetmap.org/copyright). Výška obce: pramen obce uvádí
-    jen ROZPĚTÍ 400–1012 m (horní mez je vrchol Ještědu), takže jedno číslo
-    z něj nevybírám — dodá ho dopočet DATA-35 z referenčního bodu. Ověření
-    proti ČÚZK zůstává otevřené.
+    ODbL 1.0 (openstreetmap.org/copyright). Výšku obce doplní dopočet DATA-35
+    z referenčního bodu; z pramene obce se nebere, protože ten uvádí jen
+    rozpětí od 400 do 1012 metrů (horní mez je vrchol Ještědu) a vybrat
+    z něj jedno číslo by bylo domýšlení. Ověření proti ČÚZK zůstává otevřené.
   verified: false
   checked: '2026-08-04'
 

@@ -222,14 +222,32 @@ describe('střediska všech oblastí — veřejná próza a doložená výška',
     }
   })
 
-  it('rozpětí výšek se do vyskaObce nezapisuje (rozhodnutí Michala 4. 8. 2026 → DATA-35)', () => {
-    // Prameny u obcí rozložených po svahu uvádějí „575 – 1555 m". Kdyby se
-    // takové rozpětí propsalo do pole, byl by to vybraný údaj, ne doložený.
+  // PŮVODNĚ tenhle test čichal k próze: hledal ve zdroji lokace rozpětí poblíž
+  // slova „výška" a při nálezu padal. Ostrý běh DATA-35 nad Ještědským hřbetem
+  // (4. 8. 2026) ukázal, že to byl špatný nápad — spadl na Světlé pod Ještědem,
+  // jejíž zdroj rozpětí 400–1012 m zmiňuje PRÁVĚ PROTO, aby řekl, že se z něj
+  // číslo nebralo. Test tak trestal poctivou poznámku a workflow kvůli němu
+  // neodkomitovalo správně spočítané výšky.
+  //
+  // Teď se místo prózy počítá. Skutečné riziko je, že někdo z rozpětí odvodí
+  // hodnotu — a takové odvození má jen tři podoby: dolní mez, horní mez, nebo
+  // střed. Když se `vyskaObce` žádné z nich nerovná, je jedno, kolik rozpětí
+  // zdroj zmiňuje a proč.
+  it('vyskaObce není odvozená z rozpětí uvedeného ve zdroji (mez ani střed)', () => {
     for (const { soubor, data } of strediska) {
       if (data.vyskaObce == null) continue
       const doklad = data.overeniLokace?.source ?? ''
-      const rozpetiUVysky = /[Vv]ýšk[^.]{0,80}?\d{3,4}\s*[–-]\s*\d{3,4}/.test(doklad)
-      expect(rozpetiUVysky, `${soubor}: výška obce doložená rozpětím, ne jedním číslem`).toBe(false)
+      for (const [, a, b] of doklad.matchAll(/(\d{3,4})\s*[–—-]\s*(\d{3,4})\s*m/g)) {
+        const min = Number(a)
+        const max = Number(b)
+        if (!(max > min)) continue // „1 012 m" rozdělené pomlčkou to není
+        const zakazane = [min, max, Math.round((min + max) / 2)]
+        expect(
+          zakazane.includes(data.vyskaObce!),
+          `${soubor}: výška ${data.vyskaObce} m vypadá odvozeně z rozpětí ${min}–${max} m ` +
+            '(mez nebo střed) — má to být výška referenčního bodu',
+        ).toBe(false)
+      }
     }
   })
 })

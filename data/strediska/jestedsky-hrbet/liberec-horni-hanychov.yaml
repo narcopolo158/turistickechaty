@@ -35,7 +35,9 @@ overeniPerex:
 # Referenční bod = zastávka „Horní Hanychov, u lanovky" z katalogu výchozích
 # bodů DATA-06 (uzel OSM). Vědomá odchylka od zvyklosti ostatních oblastí,
 # kde je to uzel OSM place — Liberec žádný „střed obce" použitelný pro
-# východiště nemá, hřbet se nastupuje odsud.
+# východiště nemá, hřbet se nastupuje odsud. A právě proto tu výška DÁVÁ
+# smysl: Michalovo pravidlo zní „vycházej z nadmořské výšky turistického uzlu
+# / rozcestí / náměstí", a tenhle bod uzel doslova je.
 lat: 50.7360778
 lng: 15.0023303
 overeniLokace:
@@ -44,9 +46,11 @@ overeniLokace:
     „Horní Hanychov, u lanovky" z katalogu výchozích bodů DATA-06) — data
     © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
     Není to uzel `place` jako u ostatních středisek, nýbrž turistický uzel
-    pod hřbetem; DATA-35 z něj tedy dopočte výšku NÁSTUPU, ne výšku obce —
-    proto se pole `vyskaObce` u tohohle střediska nechává prázdné schválně
-    (výška Liberce je něco jiného než výška Horního Hanychova).
+    pod hřbetem — dopočet DATA-35 z něj tedy dává výšku NÁSTUPU v Horním
+    Hanychově, ne výšku Liberce. Středisko se ale jmenuje Liberec – Horní
+    Hanychov a je to právě ten nástup, takže je to údaj o tom, co stránka
+    popisuje; kdyby se sem někdy psala výška celého města, byl by to jiný
+    údaj pod týmž jménem.
   verified: false
   checked: '2026-08-04'
 
@@ -110,10 +114,28 @@ overeniDoprava:
 
 interniPoznamky: >-
   Doplnit z doložených zdrojů: fotku střediska (DATA-33 pro tuhle oblast ještě
-  neběžel). `vyskaObce` se schválně nevyplňuje — referenční bod je turistický
-  uzel, ne střed obce, takže by pole neslo výšku nástupu pod jménem výšky
-  Liberce. Kdyby se to mělo změnit, chce to napřed rozhodnutí, co pole u
-  takového střediska znamená (souvisí s DATA-20).
+  neběžel).
+
+  PŘEHLED LANOVEK OBLASTI KABINOVOU DRÁHU NA JEŠTĚD NEOBSAHUJE, a je to
+  správně: DATA-32 (4. 8. 2026, nad čerstvým exportem DATA-28) našel v okně
+  dvanáct prvků `aerialway`, mezi nimi pět sedačkových drah — a jedinou
+  kabinovou položkou je dvaadvacetimetrový „transbordér" u Kryštofova Údolí,
+  tedy něco úplně jiného. Ještědská kabinovka v mapových datech pod běžným
+  tagem `aerialway` prostě není. Nevíme proč (pravděpodobné vysvětlení:
+  dráha je dlouhodobě mimo provoz, a takové se v OSM často přeznačují
+  předponou `disused:`, kterou dotaz nebere) — netvrdíme tedy nic o tom, jak
+  je zmapovaná. Pro čtenáře je podstatné, že přehled ukazuje dráhy, které
+  jezdí, a stav kabinovky říká nahlas pole `lanovka` tohoto střediska
+  i próza profilu Hotelu Ještěd.
+
+  K výšce: při zakládání 4. 8. 2026 tu stálo, že se `vyskaObce` schválně
+  nevyplní, protože referenční bod je nástup, ne střed města. Ostrý běh
+  DATA-35 téhož dne ukázal, že to byla zbytečná opatrnost ve dvou směrech.
+  Za prvé to byl jen komentář — skript o něm nemohl vědět a výšku spočítal
+  (582 m). Za druhé to bylo proti Michalovu pravidlu, které žádá výšku
+  TURISTICKÉHO UZLU, a tenhle bod uzel je. Hodnota se tedy přijímá; kdyby se
+  někdy měla vést výška celého Liberce, je to jiný údaj a chce vlastní pole
+  (souvisí s DATA-20).
 
   NÁLEZ 4. 8. 2026, který si zaslouží pozornost: profil Hotelu Ještěd do
   dneška psal „nahoru vede lanovka“. Podle oficiálního portálu kraje je

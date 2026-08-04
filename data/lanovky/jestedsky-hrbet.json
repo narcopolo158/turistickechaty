@@ -1,0 +1,196 @@
+{
+  "oblast": "jestedsky-hrbet",
+  "zdroj": "OpenStreetMap (tag aerialway) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); přebráno z exportu pipeline DATA-28",
+  "stavOsm": "2026-08-04",
+  "zdrojVysek": "Mapy.com Elevation API (výškový model)",
+  "poznamka": "Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). Vleky a dětské pásy (6 v témž exportu) přehled nevede. Převýšení je z výškového modelu, ne z měření — zaokrouhleno na desítky metrů; délka je půdorysná z geometrie OSM. Vzdálenost k chatám je vzdušná čára.",
+  "vygenerovano": "scripts/data32-lanovky.ts",
+  "pocet": 6,
+  "vleku": 6,
+  "lanovky": [
+    {
+      "id": "lanova-draha-skalka",
+      "nazev": "Lanová dráha Skalka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1458,
+      "prevyseniM": 340,
+      "dolni": {
+        "lat": 50.73623,
+        "lng": 15.01316,
+        "vyska": 536
+      },
+      "horni": {
+        "lat": 50.72686,
+        "lng": 14.99931,
+        "vyska": 880
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "plane-pod-jestedem",
+          "nazev": "Chata Pláně pod Ještědem",
+          "vzdalenostM": 737
+        },
+        {
+          "slug": "horska-chata-jestedka",
+          "nazev": "Horská chata Ještědka",
+          "vzdalenostM": 977
+        },
+        {
+          "slug": "horsky-hotel-jested",
+          "nazev": "Hotel Ještěd",
+          "vzdalenostM": 1208
+        }
+      ]
+    },
+    {
+      "id": "lanova-draha-cerny-vrch",
+      "nazev": "Lanová dráha Černý vrch",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 759,
+      "prevyseniM": 270,
+      "dolni": {
+        "lat": 50.73387,
+        "lng": 14.99737,
+        "vyska": 651
+      },
+      "horni": {
+        "lat": 50.72802,
+        "lng": 14.99215,
+        "vyska": 920
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "horska-chata-jestedka",
+          "nazev": "Horská chata Ještědka",
+          "vzdalenostM": 470
+        },
+        {
+          "slug": "horsky-hotel-jested",
+          "nazev": "Hotel Ještěd",
+          "vzdalenostM": 731
+        },
+        {
+          "slug": "plane-pod-jestedem",
+          "nazev": "Chata Pláně pod Ještědem",
+          "vzdalenostM": 1126
+        }
+      ]
+    },
+    {
+      "id": "lanova-draha-nove-plane",
+      "nazev": "Lanová dráha Nové Pláně",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 598,
+      "prevyseniM": 170,
+      "dolni": {
+        "lat": 50.71858,
+        "lng": 14.99589,
+        "vyska": 649
+      },
+      "horni": {
+        "lat": 50.72331,
+        "lng": 14.99992,
+        "vyska": 815
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "plane-pod-jestedem",
+          "nazev": "Chata Pláně pod Ještědem",
+          "vzdalenostM": 371
+        },
+        {
+          "slug": "horska-chata-jestedka",
+          "nazev": "Horská chata Ještědka",
+          "vzdalenostM": 1222
+        },
+        {
+          "slug": "horsky-hotel-jested",
+          "nazev": "Hotel Ještěd",
+          "vzdalenostM": 1488
+        }
+      ]
+    },
+    {
+      "id": "bezejmenna-50.7307-14.9944",
+      "nazev": null,
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 324,
+      "prevyseniM": 150,
+      "dolni": {
+        "lat": 50.73326,
+        "lng": 14.99669,
+        "vyska": 657
+      },
+      "horni": {
+        "lat": 50.73072,
+        "lng": 14.99442,
+        "vyska": 804
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "horska-chata-jestedka",
+          "nazev": "Horská chata Ještědka",
+          "vzdalenostM": 555
+        },
+        {
+          "slug": "horsky-hotel-jested",
+          "nazev": "Hotel Ještěd",
+          "vzdalenostM": 712
+        },
+        {
+          "slug": "plane-pod-jestedem",
+          "nazev": "Chata Pláně pod Ještědem",
+          "vzdalenostM": 1274
+        }
+      ]
+    },
+    {
+      "id": "obri-sud",
+      "nazev": "Obří sud",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 793,
+      "prevyseniM": 120,
+      "dolni": {
+        "lat": 50.70084,
+        "lng": 15.07647,
+        "vyska": 522
+      },
+      "horni": {
+        "lat": 50.69386,
+        "lng": 15.0742,
+        "vyska": 645
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "transborder",
+      "nazev": "transbordér",
+      "typ": "cable_car",
+      "typNazev": "kabinková (visutá)",
+      "delkaM": 22,
+      "prevyseniM": 10,
+      "dolni": {
+        "lat": 50.78797,
+        "lng": 14.96998,
+        "vyska": 314
+      },
+      "horni": {
+        "lat": 50.78789,
+        "lng": 14.97026,
+        "vyska": 320
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    }
+  ]
+}
