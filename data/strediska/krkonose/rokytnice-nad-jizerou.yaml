@@ -10,31 +10,41 @@ oblast: krkonose
 
 # Perex jen z doložené formulace oficiálního portálu svazku.
 perex: >-
-  Horské město v Libereckém kraji, sevřené mezi Stráží, Čertovou horou
-  a Lysou horou.
+  Horské město v Libereckém kraji, sevřené mezi Stráží, Čertovou horou a Lysou
+  horou.
 overeniPerex:
   source: >-
     Oficiální turistický portál Svazku měst a obcí Krkonoše
-    region-krkonose.cz/obce/rokytnice-nad-jizerou/ (načteno 4. 8. 2026):
-    „Horské město Rokytnice nad Jizerou najdete v Libereckém kraji mezi
-    Stráží, Čertovou horou a Lysou horou." Výšku obce pramen neuvádí —
-    perex proto zůstává jednovětý.
+    region-krkonose.cz/obce/rokytnice-nad-jizerou/ (načteno 4. 8. 2026): „Horské
+    město Rokytnice nad Jizerou najdete v Libereckém kraji mezi Stráží, Čertovou
+    horou a Lysou horou." Výšku obce pramen neuvádí — perex proto zůstává
+    jednovětý.
   verified: false
   checked: '2026-08-04'
 
 lat: 50.7272292
 lng: 15.4638743
+vyskaObce: 583
 overeniLokace:
   source: >-
-    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). Výška
+    obce: nadmořská výška referenčního bodu střediska (uzel OSM place, týž bod
+    jako GPS výš, 50.727229, 15.463874) z výškového modelu Mapy.com Elevation
+    API (načteno 2026-08-04): 583 m — model s různou přesností, nemusí odpovídat
+    realitě, proto verified:false. Referenční bod místo rozpětí dle zadání
+    Michala 4. 8. 2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí
+    / náměstí"). Ověření proti ČÚZK zůstává otevřené.
   verified: false
-  checked: '2026-07-28'
+  checked: '2026-08-04'
 
 vychoziBody:
   - nazev: Rokytnice nad Jizerou
 
 lanovka: >-
-  Lanová dráha Rokytnice – Horní Domky na Lysou horu (v katalogu lanových drah Krkonoš uvedena s rozpětím 657–1 315 m n. m.); letní provoz u téhle lanovky nedoložen — ověřit u provozovatele.
+  Lanová dráha Rokytnice – Horní Domky na Lysou horu (v katalogu lanových drah
+  Krkonoš uvedena s rozpětím 657–1 315 m n. m.); letní provoz u téhle lanovky
+  nedoložen — ověřit u provozovatele.
 overeniLanovka:
   source: region-krkonose.cz/lanove-drahy/ (načteno 28. 7. 2026)
   verified: false
@@ -44,25 +54,23 @@ overeniLanovka:
 # z katalogu (město strukturně popisuje jen parkování). Ceny se nepíšou.
 doprava:
   auto: >-
-    V celé Rokytnici platí zóna se zákazem stání mimo vyznačená místa.
-    Parkuje se na Dolním a Horním náměstí, na centrálních parkovištích
-    P1–P4 Horní Domky a pod Družbou; v zimě přibývají sezónní plochy
-    (Studenov, Nad hřbitovem).
+    V celé Rokytnici platí zóna se zákazem stání mimo vyznačená místa. Parkuje
+    se na Dolním a Horním náměstí, na centrálních parkovištích P1–P4 Horní Domky
+    a pod Družbou; v zimě přibývají sezónní plochy (Studenov, Nad hřbitovem).
 overeniDoprava:
   source: >-
     Oficiální stránky města Rokytnice nad Jizerou, „Parkování ve městě"
-    (mesto-rokytnice.cz, načteno 2. 8. 2026): doslova „V celé Rokytnici
-    nad Jizerou je zóna se zákazem stání mimo místa k tomu určená.";
-    parkoviště Dolní náměstí, u čp. 5 a čp. 383 v Dolní Rokytnici (60 min
-    zdarma), Horní náměstí, pod Družbou, centrální P1–P4 Horní Domky,
-    zimní Studenov a Nad hřbitovem; vše pro vozidla do 3,5 t. Vlak a bus
-    stránka nepopisuje — řádky z katalogu DATA-06. Ceny se do profilu
-    nepíšou — mění se každou sezónu.
+    (mesto-rokytnice.cz, načteno 2. 8. 2026): doslova „V celé Rokytnici nad
+    Jizerou je zóna se zákazem stání mimo místa k tomu určená."; parkoviště
+    Dolní náměstí, u čp. 5 a čp. 383 v Dolní Rokytnici (60 min zdarma), Horní
+    náměstí, pod Družbou, centrální P1–P4 Horní Domky, zimní Studenov a Nad
+    hřbitovem; vše pro vozidla do 3,5 t. Vlak a bus stránka nepopisuje — řádky z
+    katalogu DATA-06. Ceny se do profilu nepíšou — mění se každou sezónu.
   verified: false
   checked: '2026-08-02'
 
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK) a perex (oficiální web obce
   nebo střediska). Fotka střediska se dohledává pipeline DATA-33 (Wikimedia
-  Commons, jen licenčně čisté snímky). Doprava (auto) doplněna 2. 8. 2026
-  z oficiálního webu města.
+  Commons, jen licenčně čisté snímky). Doprava (auto) doplněna 2. 8. 2026 z
+  oficiálního webu města.

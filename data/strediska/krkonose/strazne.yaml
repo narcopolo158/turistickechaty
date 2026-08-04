@@ -10,27 +10,33 @@ oblast: krkonose
 
 # Perex jen z doložené formulace pramene.
 perex: >-
-  Horská obec asi šest kilometrů od Vrchlabí, ve směru na
-  Špindlerův Mlýn.
+  Horská obec asi šest kilometrů od Vrchlabí, ve směru na Špindlerův Mlýn.
 overeniPerex:
   source: >-
     Oficiální turistický portál Svazku měst a obcí Krkonoše
-    region-krkonose.cz/obce/strazne/ (načteno 4. 8. 2026): „Horská obec
-    Strážné je vyhlášeným rekreačním střediskem Krkonoš. Leží asi šest
-    kilometrů od Vrchlabí ve směru na Špindlerův Mlýn." První věta je
-    hodnotící, proto se do perexu nepřevzala. Výšku Strážného pramen
-    neuvádí (zmiňuje 700 m u Kněžické chalupy, což je jiné místo).
+    region-krkonose.cz/obce/strazne/ (načteno 4. 8. 2026): „Horská obec Strážné
+    je vyhlášeným rekreačním střediskem Krkonoš. Leží asi šest kilometrů od
+    Vrchlabí ve směru na Špindlerův Mlýn." První věta je hodnotící, proto se do
+    perexu nepřevzala. Výšku Strážného pramen neuvádí (zmiňuje 700 m u Kněžické
+    chalupy, což je jiné místo).
   verified: false
   checked: '2026-08-04'
 
-
 lat: 50.6646011
 lng: 15.6139289
+vyskaObce: 793
 overeniLokace:
   source: >-
-    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). Výška
+    obce: nadmořská výška referenčního bodu střediska (uzel OSM place, týž bod
+    jako GPS výš, 50.664601, 15.613929) z výškového modelu Mapy.com Elevation
+    API (načteno 2026-08-04): 793 m — model s různou přesností, nemusí odpovídat
+    realitě, proto verified:false. Referenční bod místo rozpětí dle zadání
+    Michala 4. 8. 2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí
+    / náměstí"). Ověření proti ČÚZK zůstává otevřené.
   verified: false
-  checked: '2026-07-28'
+  checked: '2026-08-04'
 
 vychoziBody:
   - nazev: Strážné
@@ -40,30 +46,29 @@ doprava:
   auto: >-
     Autem přes Turnov na Vrchlabí, kde se odbočuje na Špindlerův Mlýn. Obec
     provozuje dvě parkoviště — na náměstí a v lomu; obě jsou v zimní sezóně
-    placená podle obecního nařízení o placeném stání, v létě nehlídaná
-    a zdarma.
+    placená podle obecního nařízení o placeném stání, v létě nehlídaná a zdarma.
 overeniDoprava:
   source: >-
-    Oficiální web obce Strážné (strazne.eu, sekce skiareál → parkoviště,
-    načteno 2. 8. 2026): parkoviště „Náměstí“ a „Lom“, obě v zimě placená,
-    nehlídaná, dle „Nařízení č. 2/2018 o placeném stání na místních
-    komunikacích v obci Strážné“; na náměstí automat i obsluha, v lomu jen
-    platba kartou. Příjezd a letní režim doplněny 4. 8. 2026 z oficiálního
-    portálu svazku region-krkonose.cz/obce/strazne/: „Autem přes Turnov na
-    Vrchlabí, kde odbočíte na Špindlerův Mlýn.", „K dispozici jsou dvě
-    velkokapacitní parkoviště.", „V létě nejsou hlídána, avšak oproti zimě
-    nabízí v tomto období parkování zdarma." Ceny se do profilu nepíšou —
-    mění se každou sezónu.
+    Oficiální web obce Strážné (strazne.eu, sekce skiareál → parkoviště, načteno
+    2. 8. 2026): parkoviště „Náměstí“ a „Lom“, obě v zimě placená, nehlídaná,
+    dle „Nařízení č. 2/2018 o placeném stání na místních komunikacích v obci
+    Strážné“; na náměstí automat i obsluha, v lomu jen platba kartou. Příjezd a
+    letní režim doplněny 4. 8. 2026 z oficiálního portálu svazku
+    region-krkonose.cz/obce/strazne/: „Autem přes Turnov na Vrchlabí, kde
+    odbočíte na Špindlerův Mlýn.", „K dispozici jsou dvě velkokapacitní
+    parkoviště.", „V létě nejsou hlídána, avšak oproti zimě nabízí v tomto
+    období parkování zdarma." Ceny se do profilu nepíšou — mění se každou
+    sezónu.
   verified: false
   checked: '2026-08-04'
 
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
-  nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
-  pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce nebo
+  střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává pipeline
+  DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
   Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu obce.
 
-  Perex a doplnění dopravy (příjezd, letní režim parkování) 4. 8. 2026
-  z oficiálního portálu svazku. Výšku obce portál neuvádí — doplní ji
-  DATA-35 z referenčního bodu, případně později ČÚZK.
+  Perex a doplnění dopravy (příjezd, letní režim parkování) 4. 8. 2026 z
+  oficiálního portálu svazku. Výšku obce portál neuvádí — doplní ji DATA-35 z
+  referenčního bodu, případně později ČÚZK.

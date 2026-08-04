@@ -10,31 +10,36 @@ oblast: krkonose
 
 # Perex jen z doložené formulace pramene.
 perex: >-
-  Horská obec ve východní části Krkonoš, nedaleko Velké Úpy a Pece
-  pod Sněžkou.
+  Horská obec ve východní části Krkonoš, nedaleko Velké Úpy a Pece pod Sněžkou.
 overeniPerex:
   source: >-
     Oficiální turistický portál Svazku měst a obcí Krkonoše
     region-krkonose.cz/obce/mala-upa/ (načteno 4. 8. 2026, tentokrát v české
     podobě — 4. 8. dopoledne se stránka načetla strojově přeložená a perex se
-    proto vědomě odložil): „Horskou obec Malou Úpu nedaleko Velké Úpy a Pece
-    pod Sněžkou, ve východní části oblasti Krkonoše." Druhou větu pramene
-    („oblíbeným centrem pro turistiku a báječné strávenou dovolenou")
-    nepřebírám — je hodnotící a mluvnicky vadná. Výšku obce pramen neuvádí.
+    proto vědomě odložil): „Horskou obec Malou Úpu nedaleko Velké Úpy a Pece pod
+    Sněžkou, ve východní části oblasti Krkonoše." Druhou větu pramene
+    („oblíbeným centrem pro turistiku a báječné strávenou dovolenou") nepřebírám
+    — je hodnotící a mluvnicky vadná. Výšku obce pramen neuvádí.
   verified: false
   checked: '2026-08-04'
-
 
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7240834
 lng: 15.8137272
+vyskaObce: 978
 overeniLokace:
   source: >-
-    OpenStreetMap https://www.openstreetmap.org/node/667243420 (bod obce z katalogu výchozích bodů DATA-06,
-    data © přispěvatelé OpenStreetMap, ODbL 1.0); výška obce zatím
-    nedoložena — doplnit ze ČÚZK
+    OpenStreetMap https://www.openstreetmap.org/node/667243420 (bod obce z
+    katalogu výchozích bodů DATA-06, data © přispěvatelé OpenStreetMap, ODbL
+    1.0); výška obce zatím nedoložena — doplnit ze ČÚZK. Výška obce: nadmořská
+    výška referenčního bodu střediska (uzel OSM place, týž bod jako GPS výš,
+    50.724083, 15.813727) z výškového modelu Mapy.com Elevation API (načteno
+    2026-08-04): 978 m — model s různou přesností, nemusí odpovídat realitě,
+    proto verified:false. Referenční bod místo rozpětí dle zadání Michala 4. 8.
+    2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí / náměstí").
+    Ověření proti ČÚZK zůstává otevřené.
   verified: false
-  checked: '2026-05-06'
+  checked: '2026-08-04'
 
 # Vazba na katalog výchozích bodů (data/oblasti/krkonose/vychozi-body-kandidati.json)
 vychoziBody:
@@ -45,39 +50,38 @@ vychoziBody:
 # z katalogu (obec o autobusech strukturně nic neuvádí). Ceny se nepíšou.
 doprava:
   auto: >-
-    Obec vjezd reguluje: na místní komunikace za zákazovou značkou se smí
-    jen s povolenkou (jednodenní prodávají automaty u infocentra) a cílem
-    obce je, aby automobilový provoz rušil co nejméně. Hlavní parkoviště
-    jsou P1 Sportcentrum u hranice s Polskem (největší), P2 u infocentra,
-    P3 Zátiší a P4 Spálený Mlýn; v zimě přibývají sezónní plochy a tři
-    cesty se mění v zimní trasy jen pro rolby.
+    Obec vjezd reguluje: na místní komunikace za zákazovou značkou se smí jen s
+    povolenkou (jednodenní prodávají automaty u infocentra) a cílem obce je, aby
+    automobilový provoz rušil co nejméně. Hlavní parkoviště jsou P1 Sportcentrum
+    u hranice s Polskem (největší), P2 u infocentra, P3 Zátiší a P4 Spálený
+    Mlýn; v zimě přibývají sezónní plochy a tři cesty se mění v zimní trasy jen
+    pro rolby.
 overeniDoprava:
   source: >-
     Oficiální stránky obce Malá Úpa (načteno 2. 8. 2026):
     obecmalaupa.cz/prakticke-info/parkovani/ — P1 Sportcentrum „největší
-    parkoviště přímo u hranic s Polskem", P2 Infocentrum, P3 Zátiší,
-    P4 Spálený Mlýn (Dolní Malá Úpa), zimní P5/P6 a záložní Tonovka;
-    „ZÁKAZ VÍCEDENNÍHO STÁNÍ (přes noc) KARAVANŮ".
-    malaupa.cz/doprava-po-obci/ — vjezd „na místní komunikace za zákazovou
-    značku s dodatkovou tabulkou" jen s povolenkou, jednodenní povolenka
-    z automatů u infocentra; v zimě uzavírky Pomezní Boudy Celnice –
-    U kostela, Černá Voda – U kostela a U kostela – Spálený Mlýn (jen
-    rolby); cíl „aby vaši dovolenou v Malé Úpě rušil automobilový provoz
-    co možná nejméně". Bus z katalogu DATA-06 — obec strukturně nic
-    neuvádí. Ceny se do profilu nepíšou.
+    parkoviště přímo u hranic s Polskem", P2 Infocentrum, P3 Zátiší, P4 Spálený
+    Mlýn (Dolní Malá Úpa), zimní P5/P6 a záložní Tonovka; „ZÁKAZ VÍCEDENNÍHO
+    STÁNÍ (přes noc) KARAVANŮ". malaupa.cz/doprava-po-obci/ — vjezd „na místní
+    komunikace za zákazovou značku s dodatkovou tabulkou" jen s povolenkou,
+    jednodenní povolenka z automatů u infocentra; v zimě uzavírky Pomezní Boudy
+    Celnice – U kostela, Černá Voda – U kostela a U kostela – Spálený Mlýn (jen
+    rolby); cíl „aby vaši dovolenou v Malé Úpě rušil automobilový provoz co
+    možná nejméně". Bus z katalogu DATA-06 — obec strukturně nic neuvádí. Ceny
+    se do profilu nepíšou.
   verified: false
   checked: '2026-08-02'
 
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex
-  (oficiální web střediska/obce); u polských středisek zatím žádná čísla
-  (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
-  doplněna 2. 8. 2026 z oficiálního webu.
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex (oficiální
+  web střediska/obce); u polských středisek zatím žádná čísla (rozhodnutí
+  handoffu: „PL bez čísel" do doby doložení). Doprava (auto) doplněna 2. 8. 2026
+  z oficiálního webu.
 
   Perex: 4. 8. 2026 dopoledne VĚDOMĚ ODLOŽEN — stránka
-  region-krkonose.cz/obce/mala-upa/ se načetla strojově přeložená
-  („… ve eastern část oblasti Krkonoše"), takže české znění vět nebylo
-  známé a citovat je nešlo. → DOPLNĚN týž den odpoledne, kdy se táž adresa
-  načetla česky; citace v overeniPerex. PONAUČENÍ pro příští běhy: strojově
-  přeložená odpověď téhož webu je dočasný stav, ne vlastnost pramene —
-  vyplatí se zopakovat, ne pramen odepsat.
+  region-krkonose.cz/obce/mala-upa/ se načetla strojově přeložená („… ve eastern
+  část oblasti Krkonoše"), takže české znění vět nebylo známé a citovat je
+  nešlo. → DOPLNĚN týž den odpoledne, kdy se táž adresa načetla česky; citace v
+  overeniPerex. PONAUČENÍ pro příští běhy: strojově přeložená odpověď téhož webu
+  je dočasný stav, ne vlastnost pramene — vyplatí se zopakovat, ne pramen
+  odepsat.

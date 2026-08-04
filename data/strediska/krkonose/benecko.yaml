@@ -10,31 +10,39 @@ oblast: krkonose
 
 # Perex jen z doložené formulace oficiálního portálu svazku.
 perex: >-
-  Malebná obec, která patří mezi oblíbené destinace v Krkonoších. Leží
-  v okrese Semily, v nadmořské výšce v rozmezí od 682 do 1010 metrů.
+  Malebná obec, která patří mezi oblíbené destinace v Krkonoších. Leží v okrese
+  Semily, v nadmořské výšce v rozmezí od 682 do 1010 metrů.
 overeniPerex:
   source: >-
     Oficiální turistický portál Svazku měst a obcí Krkonoše
-    region-krkonose.cz/obce/benecko/ (načteno 4. 8. 2026): „Malebná obec
-    Benecko patří mezi oblíbené destinace v Krkonoších.", „Obec Benecko
-    najdete v okrese Semily, v nadmořské výšce v rozmezí od 682 – 1010
-    metrů."
+    region-krkonose.cz/obce/benecko/ (načteno 4. 8. 2026): „Malebná obec Benecko
+    patří mezi oblíbené destinace v Krkonoších.", „Obec Benecko najdete v okrese
+    Semily, v nadmořské výšce v rozmezí od 682 – 1010 metrů."
   verified: false
   checked: '2026-08-04'
 
 lat: 50.6663343
 lng: 15.5481647
+vyskaObce: 790
 overeniLokace:
   source: >-
-    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). Výška
+    obce: nadmořská výška referenčního bodu střediska (uzel OSM place, týž bod
+    jako GPS výš, 50.666334, 15.548165) z výškového modelu Mapy.com Elevation
+    API (načteno 2026-08-04): 790 m — model s různou přesností, nemusí odpovídat
+    realitě, proto verified:false. Referenční bod místo rozpětí dle zadání
+    Michala 4. 8. 2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí
+    / náměstí"). Ověření proti ČÚZK zůstává otevřené.
   verified: false
-  checked: '2026-07-28'
+  checked: '2026-08-04'
 
 vychoziBody:
   - nazev: Benecko
 
 lanovka: >-
-  Lanová dráha Benecko (katalog lanových drah Krkonoš uvádí rozpětí 700–1 000 m n. m.); letní provoz nedoložen.
+  Lanová dráha Benecko (katalog lanových drah Krkonoš uvádí rozpětí 700–1 000 m
+  n. m.); letní provoz nedoložen.
 overeniLanovka:
   source: region-krkonose.cz/lanove-drahy/ (načteno 28. 7. 2026)
   verified: false
@@ -45,28 +53,28 @@ overeniLanovka:
 # ne přímo obec — tak se i připisuje. Ceny se nepíšou.
 doprava:
   auto: >-
-    V létě se parkuje zdarma: P1 u dolní
-    stanice lanovky Kejnos, P2 v centru obce, P3 u nástupu na značené trasy
-    a P4 u horní stanice lanovky.
+    V létě se parkuje zdarma: P1 u dolní stanice lanovky Kejnos, P2 v centru
+    obce, P3 u nástupu na značené trasy a P4 u horní stanice lanovky.
 overeniDoprava:
   source: >-
     Informační web střediska benecko.info (spravuje Sdružení pro rozvoj
-    cestovního ruchu na Benecku a okolí), stránka Parkování v létě (načteno
-    2. 8. 2026): P1 „Zdarma, u dolní stanice lanovky Kejnos“, P2 v centru,
-    P3 u nástupu na trasy, P4 „zdarma, u horní stanice lanovky Kejnos“.
-    Není to web obce — obecbenecko.cz k parkování nic strukturního nenese.
-    Ceny se do profilu nepíšou.
+    cestovního ruchu na Benecku a okolí), stránka Parkování v létě (načteno 2.
+    8. 2026): P1 „Zdarma, u dolní stanice lanovky Kejnos“, P2 v centru, P3 u
+    nástupu na trasy, P4 „zdarma, u horní stanice lanovky Kejnos“. Není to web
+    obce — obecbenecko.cz k parkování nic strukturního nenese. Ceny se do
+    profilu nepíšou.
   verified: false
   checked: '2026-08-02'
 
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
-  nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
-  pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce nebo
+  střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává pipeline
+  DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
-  Doprava (auto) doplněna 2. 8. 2026 z informačního webu střediska (benecko.info).
+  Doprava (auto) doplněna 2. 8. 2026 z informačního webu střediska
+  (benecko.info).
 
   Perex doplněn 4. 8. 2026 z portálu svazku. Pole `vyskaObce` ZŮSTÁVÁ prázdné
   schválně: portál uvádí ROZPĚTÍ 682–1010 m (obec se táhne po svahu), ne jednu
-  výšku obce — jedno číslo by z rozpětí musel někdo vybrat, což je domýšlení.
-  Až bude ČÚZK, zapsat odtud.
+  výšku obce — jedno číslo by z rozpětí musel někdo vybrat, což je domýšlení. Až
+  bude ČÚZK, zapsat odtud.

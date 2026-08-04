@@ -10,41 +10,49 @@ oblast: krkonose
 
 # Perex jen z doložené formulace pramene.
 perex: >-
-  Město nad říčkou Łomnicou pod Sněžkou, v nadmořské výšce
-  v rozmezí od 500 do 1375 metrů.
+  Město nad říčkou Łomnicou pod Sněžkou, v nadmořské výšce v rozmezí od 500 do
+  1375 metrů.
 overeniPerex:
   source: >-
-    Turistický portál Dolnoslezského vojvodství
-    umwd.dolnyslask.pl (sekce Karkonosze → Karpacz, načteno 4. 8. 2026),
-    doslova: „Karpacz leży nad Łomnicą, u stóp Śnieżki, na wysokości
-    500-1375 m n.p.m." Oficiální web města karpacz.pl (načteno téhož dne)
-    výšku neuvádí a jeho úvodní věta je hodnotící („jedno z najpiękniejszych
-    karkonoskich miast"), proto se nepřebírá. Překlad do češtiny je náš;
-    polské znění je uvedeno výše, ať je co porovnat.
+    Turistický portál Dolnoslezského vojvodství umwd.dolnyslask.pl (sekce
+    Karkonosze → Karpacz, načteno 4. 8. 2026), doslova: „Karpacz leży nad
+    Łomnicą, u stóp Śnieżki, na wysokości 500-1375 m n.p.m." Oficiální web města
+    karpacz.pl (načteno téhož dne) výšku neuvádí a jeho úvodní věta je hodnotící
+    („jedno z najpiękniejszych karkonoskich miast"), proto se nepřebírá. Překlad
+    do češtiny je náš; polské znění je uvedeno výše, ať je co porovnat.
   verified: false
   checked: '2026-08-04'
-
 
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7747485
 lng: 15.7542035
+vyskaObce: 619
 overeniLokace:
   source: >-
-    OpenStreetMap https://www.openstreetmap.org/node/385563068 (bod obce z katalogu výchozích bodů DATA-06,
-    data © přispěvatelé OpenStreetMap, ODbL 1.0); výška obce zatím
-    nedoložena — doplnit ze ČÚZK
+    OpenStreetMap https://www.openstreetmap.org/node/385563068 (bod obce z
+    katalogu výchozích bodů DATA-06, data © přispěvatelé OpenStreetMap, ODbL
+    1.0); výška obce zatím nedoložena — doplnit ze ČÚZK. Výška obce: nadmořská
+    výška referenčního bodu střediska (uzel OSM place, týž bod jako GPS výš,
+    50.774749, 15.754203) z výškového modelu Mapy.com Elevation API (načteno
+    2026-08-04): 619 m — model s různou přesností, nemusí odpovídat realitě,
+    proto verified:false. Referenční bod místo rozpětí dle zadání Michala 4. 8.
+    2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí / náměstí").
+    Ověření proti ČÚZK zůstává otevřené.
   verified: false
-  checked: '2026-06-12'
+  checked: '2026-08-04'
 
 # Vazba na katalog výchozích bodů (data/oblasti/krkonose/vychozi-body-kandidati.json)
 vychoziBody:
   - nazev: Karpacz
 
 lanovka: >-
-  Sedačková lanovka na Kopu (provozovatel Karpacz Ski Arena, lanovka bývá uváděna jako „Zbyszek"). Letní provoz dle sekundárního zdroje ne–čt 9:00–16:30, pá–so 9:00–17:30.
+  Sedačková lanovka na Kopu (provozovatel Karpacz Ski Arena, lanovka bývá
+  uváděna jako „Zbyszek"). Letní provoz dle sekundárního zdroje ne–čt
+  9:00–16:30, pá–so 9:00–17:30.
 overeniLanovka:
   source: >-
-    kpn.gov.pl/wyciagi (seznam KPN) + krainawycieczek.pl „kolej linowa na Kopę w Karpaczu" (obojí načteno 28. 7. 2026; druhý zdroj je sekundární)
+    kpn.gov.pl/wyciagi (seznam KPN) + krainawycieczek.pl „kolej linowa na Kopę w
+    Karpaczu" (obojí načteno 28. 7. 2026; druhý zdroj je sekundární)
   verified: false
   checked: '2026-07-28'
 
@@ -53,28 +61,27 @@ overeniLanovka:
 doprava:
   auto: >-
     Město provozuje čtrnáct placených nehlídaných parkovišť (platí se
-    nepřetržitě, sedm dní v týdnu); jako záchytné u železniční stanice
-    slouží parkoviště č. 14 v ulici Wielkopolské.
+    nepřetržitě, sedm dní v týdnu); jako záchytné u železniční stanice slouží
+    parkoviště č. 14 v ulici Wielkopolské.
 overeniDoprava:
   source: >-
-    Oficiální web města Karpacz, stránka Parkingi miejskie (karpacz.pl,
-    načteno 2. 8. 2026): 14 městských placených nehlídaných parkovišť
-    („Parkingi są płatne 7 dni w tygodniu przez 24 godziny“), od č. 1
-    ul. Parkowa u Muzea sportu a turistiky po č. 14 ul. Wielkopolska —
-    záchytné parkoviště u nádraží; č. 8 ul. Polskich Olimpijczyków i pro
-    busy a autobusy. Ceny se do profilu nepíšou.
+    Oficiální web města Karpacz, stránka Parkingi miejskie (karpacz.pl, načteno
+    2. 8. 2026): 14 městských placených nehlídaných parkovišť („Parkingi są
+    płatne 7 dni w tygodniu przez 24 godziny“), od č. 1 ul. Parkowa u Muzea
+    sportu a turistiky po č. 14 ul. Wielkopolska — záchytné parkoviště u
+    nádraží; č. 8 ul. Polskich Olimpijczyków i pro busy a autobusy. Ceny se do
+    profilu nepíšou.
   verified: false
   checked: '2026-08-02'
 
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex
-  (oficiální web střediska/obce), doprava (vlak/bus/auto) a lanovka;
-  u polských středisek zatím žádná čísla (rozhodnutí handoffu: „PL bez
-  čísel" do doby doložení).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a), perex (oficiální
+  web střediska/obce), doprava (vlak/bus/auto) a lanovka; u polských středisek
+  zatím žádná čísla (rozhodnutí handoffu: „PL bez čísel" do doby doložení).
 
   Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu města.
 
-  Perex doplněn 4. 8. 2026 z turistického portálu Dolnoslezského
-  vojvodství (oficiální web města výšku neuvádí). Rozpětí 500–1375 m
-  se do `vyskaObce` nezapisuje — jedno číslo dodá DATA-35 z referenčního
-  bodu (Michal 4. 8. 2026 potvrdil, že PL střediska se do běhu zahrnují).
+  Perex doplněn 4. 8. 2026 z turistického portálu Dolnoslezského vojvodství
+  (oficiální web města výšku neuvádí). Rozpětí 500–1375 m se do `vyskaObce`
+  nezapisuje — jedno číslo dodá DATA-35 z referenčního bodu (Michal 4. 8. 2026
+  potvrdil, že PL střediska se do běhu zahrnují).

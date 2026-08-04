@@ -10,51 +10,59 @@ oblast: krkonose
 
 lat: 50.635115
 lng: 15.7096227
+vyskaObce: 589
 overeniLokace:
   source: >-
-    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). Výška
+    obce: nadmořská výška referenčního bodu střediska (uzel OSM place, týž bod
+    jako GPS výš, 50.635115, 15.709623) z výškového modelu Mapy.com Elevation
+    API (načteno 2026-08-04): 589 m — model s různou přesností, nemusí odpovídat
+    realitě, proto verified:false. Referenční bod místo rozpětí dle zadání
+    Michala 4. 8. 2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí
+    / náměstí"). Ověření proti ČÚZK zůstává otevřené.
   verified: false
-  checked: '2026-07-28'
+  checked: '2026-08-04'
 
 vychoziBody:
   - nazev: Černý Důl
 
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
-  nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
-  pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce nebo
+  střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává pipeline
+  DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
-  Doprava 2. 8. 2026 NEDOLOŽENA: web městyse má článek „Parkování a veřejný prostor“ (12. 11. 2025), ale konkrétní pravidla jsou až v PDF zpravodaje, které se nepodařilo přečíst — dočíst v ručním běhu.
+  Doprava 2. 8. 2026 NEDOLOŽENA: web městyse má článek „Parkování a veřejný
+  prostor“ (12. 11. 2025), ale konkrétní pravidla jsou až v PDF zpravodaje,
+  které se nepodařilo přečíst — dočíst v ručním běhu.
 
-  Pokus 3. 8. 2026 (hlavní session): cernydul.cz/mestys/ dopravu vůbec
-  neuvádí (jen kontakty a odkazy); krkonose.eu odsud nedostupné (timeout).
-  Nadějný cíl pro ruční běh: region-krkonose.cz/cerny-dul/ — týž oficiální
-  portál svazku, který dopravu doložil Hornímu Maršovu a Dolnímu Dvoru
-  (odsud nešel načíst kvůli omezení sandboxu, ne kvůli webu).
+  Pokus 3. 8. 2026 (hlavní session): cernydul.cz/mestys/ dopravu vůbec neuvádí
+  (jen kontakty a odkazy); krkonose.eu odsud nedostupné (timeout). Nadějný cíl
+  pro ruční běh: region-krkonose.cz/cerny-dul/ — týž oficiální portál svazku,
+  který dopravu doložil Hornímu Maršovu a Dolnímu Dvoru (odsud nešel načíst
+  kvůli omezení sandboxu, ne kvůli webu).
 
-  Pokus 4. 8. 2026 (denní session) — OPRAVA ADRESY A DVA NÁLEZY:
-  (1) správný tvar odkazu na portálu svazku je
-  region-krkonose.cz/obce/<slug>/, ne /<slug>/ (přehled na
-  region-krkonose.cz/obce/). Tímhle tvarem se dnes načetlo sedm obcí, ale
-  Černý Důl mezi nimi NENÍ: v přehledu obcí portálu chybí (portál vypisuje
-  dvanáct obcí a městys mezi nimi není) a přímé načtení /obce/cerny-dul/
-  sandbox nepustil. Neznamená to, že stránka neexistuje — jen ji odsud
-  nemáme čím doložit.
-  (2) Náhradní pramen hkregion.cz (krajský přehled obcí, načteno 4. 8.
-  2026) dopravu neuvádí vůbec a u VÝŠKY OBCE SÁM SOBĚ ODPORUJE: v textu
-  „Městys leží v údolí potoka Čisté na úpatí Krkonoš ve výšce 684 m. n. m.",
-  v kontaktní tabulce téže stránky 585 m. Rozpor uvnitř jednoho pramene =
-  `vyskaObce` se NEZAPISUJE ani jedním číslem; rozhodne ČÚZK.
-  Použitelný odtud je jen popis („Městys Černý Důl patří mezi původní
-  horské obce Krkonoš.", tři katastrální území Černý Důl / Čistá
-  v Krkonoších / Fořt, první zmínka 1489, městečkem 1564, městysem 2008) —
-  perex z něj ale nepíšu, dokud se nezkusí primární portál svazku; jinak by
-  středisko mělo perex z jiného pramene než sousedi.
+  Pokus 4. 8. 2026 (denní session) — OPRAVA ADRESY A DVA NÁLEZY: (1) správný
+  tvar odkazu na portálu svazku je region-krkonose.cz/obce/<slug>/, ne /<slug>/
+  (přehled na region-krkonose.cz/obce/). Tímhle tvarem se dnes načetlo sedm
+  obcí, ale Černý Důl mezi nimi NENÍ: v přehledu obcí portálu chybí (portál
+  vypisuje dvanáct obcí a městys mezi nimi není) a přímé načtení
+  /obce/cerny-dul/ sandbox nepustil. Neznamená to, že stránka neexistuje — jen
+  ji odsud nemáme čím doložit. (2) Náhradní pramen hkregion.cz (krajský přehled
+  obcí, načteno 4. 8. 2026) dopravu neuvádí vůbec a u VÝŠKY OBCE SÁM SOBĚ
+  ODPORUJE: v textu „Městys leží v údolí potoka Čisté na úpatí Krkonoš ve výšce
+  684 m. n. m.", v kontaktní tabulce téže stránky 585 m. Rozpor uvnitř jednoho
+  pramene = `vyskaObce` se NEZAPISUJE ani jedním číslem; rozhodne ČÚZK.
+  Použitelný odtud je jen popis („Městys Černý Důl patří mezi původní horské
+  obce Krkonoš.", tři katastrální území Černý Důl / Čistá v Krkonoších / Fořt,
+  první zmínka 1489, městečkem 1564, městysem 2008) — perex z něj ale nepíšu,
+  dokud se nezkusí primární portál svazku; jinak by středisko mělo perex z
+  jiného pramene než sousedi.
 
-  UZAVŘENO 4. 8. 2026: portál svazku Černý Důl mezi obcemi NEMÁ. Projity
-  všechny tři stránky přehledu (region-krkonose.cz/obce/, …/strana-2/,
-  …/strana-3/ — dohromady 30 obcí, městys mezi nimi není; …/strana-4/
-  vrací 404) a doménové hledání najde jen jeho stránky lyžování a ubytování,
-  žádnou stránku obce. Přestat to u tohoto pramene zkoušet; perex, doprava
-  i výška musí přijít odjinud — kandidáti: vlastní web městyse (dopravu
-  neuvádí), ČÚZK pro výšku, nebo Michalova návštěva.
+  UZAVŘENO 4. 8. 2026: portál svazku Černý Důl mezi obcemi NEMÁ. Projity všechny
+  tři stránky přehledu (region-krkonose.cz/obce/, …/strana-2/, …/strana-3/ —
+  dohromady 30 obcí, městys mezi nimi není; …/strana-4/ vrací 404) a doménové
+  hledání najde jen jeho stránky lyžování a ubytování, žádnou stránku obce.
+  Přestat to u tohoto pramene zkoušet; perex, doprava i výška musí přijít
+  odjinud — kandidáti: vlastní web městyse (dopravu neuvádí), ČÚZK pro výšku,
+  nebo Michalova návštěva.

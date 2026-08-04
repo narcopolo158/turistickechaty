@@ -15,30 +15,37 @@ perex: >-
 overeniPerex:
   source: >-
     Oficiální turistický portál Svazku měst a obcí Krkonoše
-    region-krkonose.cz/obce/spindleruv-mlyn/ (načteno 4. 8. 2026):
-    „Špindlerův Mlýn najdete v nadmořské výšce 575 – 1555 m v oblasti
-    Krkonoše. Název původní obce vznikl podle rodiny Spindlerových, která
-    zde vlastnila mlýn."
+    region-krkonose.cz/obce/spindleruv-mlyn/ (načteno 4. 8. 2026): „Špindlerův
+    Mlýn najdete v nadmořské výšce 575 – 1555 m v oblasti Krkonoše. Název
+    původní obce vznikl podle rodiny Spindlerových, která zde vlastnila mlýn."
   verified: false
   checked: '2026-08-04'
 
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7256448
 lng: 15.6067567
+vyskaObce: 715
 overeniLokace:
   source: >-
-    OpenStreetMap https://www.openstreetmap.org/node/1587265838 (bod obce z katalogu výchozích bodů DATA-06,
-    data © přispěvatelé OpenStreetMap, ODbL 1.0); výška obce zatím
-    nedoložena — doplnit ze ČÚZK
+    OpenStreetMap https://www.openstreetmap.org/node/1587265838 (bod obce z
+    katalogu výchozích bodů DATA-06, data © přispěvatelé OpenStreetMap, ODbL
+    1.0); výška obce zatím nedoložena — doplnit ze ČÚZK. Výška obce: nadmořská
+    výška referenčního bodu střediska (uzel OSM place, týž bod jako GPS výš,
+    50.725645, 15.606757) z výškového modelu Mapy.com Elevation API (načteno
+    2026-08-04): 715 m — model s různou přesností, nemusí odpovídat realitě,
+    proto verified:false. Referenční bod místo rozpětí dle zadání Michala 4. 8.
+    2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí / náměstí").
+    Ověření proti ČÚZK zůstává otevřené.
   verified: false
-  checked: '2026-05-06'
+  checked: '2026-08-04'
 
 # Vazba na katalog výchozích bodů (data/oblasti/krkonose/vychozi-body-kandidati.json)
 vychoziBody:
   - nazev: Špindlerův Mlýn
 
 lanovka: >-
-  Lanové dráhy Svatý Petr – Pláň a Špindlerův Mlýn – Medvědín (katalog lanových drah Krkonoš); letní provoz nedoložen — ověřit u provozovatele.
+  Lanové dráhy Svatý Petr – Pláň a Špindlerův Mlýn – Medvědín (katalog lanových
+  drah Krkonoš); letní provoz nedoložen — ověřit u provozovatele.
 overeniLanovka:
   source: >-
     region-krkonose.cz/lanove-drahy/ (načteno 28. 7. 2026)
@@ -50,29 +57,28 @@ overeniLanovka:
 # na jízdní řády). Ceny parkování se nepíšou, mění se každou sezónu.
 doprava:
   auto: >-
-    Hlavní záchytná parkoviště jsou P2 Hromovka (0,3 km od
-    centra) a P3 Medvědín (1 km od centra), obě v nepřetržitém provozu
-    s automatickou platbou; menší placené plochy jsou přímo v centru
-    (u Domu služeb, u samoobsluh a u bobové dráhy).
+    Hlavní záchytná parkoviště jsou P2 Hromovka (0,3 km od centra) a P3 Medvědín
+    (1 km od centra), obě v nepřetržitém provozu s automatickou platbou; menší
+    placené plochy jsou přímo v centru (u Domu služeb, u samoobsluh a u bobové
+    dráhy).
 overeniDoprava:
   source: >-
     Oficiální stránky města Špindlerův Mlýn, „Parkování na území města"
     (spindleruvmlyn.org, načteno 2. 8. 2026): P2 Hromovka „0,3 km od centra
-    města (5 min.)", P3 Medvědín „1 km od centra města (15 min.)", obě
-    non-stop s automatickou platbou; menší plochy v centru (Dům služeb,
-    u samoobsluh, u bobové dráhy). Omezení vjezdu do centra stránka
-    neuvádí — proto se o něm nepíše. Vlak a bus strukturně nepopisuje,
-    řádky proto zůstávají z katalogu DATA-06. Ceny se do profilu nepíšou —
-    mění se každou sezónu.
+    města (5 min.)", P3 Medvědín „1 km od centra města (15 min.)", obě non-stop
+    s automatickou platbou; menší plochy v centru (Dům služeb, u samoobsluh, u
+    bobové dráhy). Omezení vjezdu do centra stránka neuvádí — proto se o něm
+    nepíše. Vlak a bus strukturně nepopisuje, řádky proto zůstávají z katalogu
+    DATA-06. Ceny se do profilu nepíšou — mění se každou sezónu.
   verified: false
   checked: '2026-08-02'
 
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex
-  (oficiální web střediska/obce); u polských středisek zatím žádná čísla
-  (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
-  doplněna 2. 8. 2026 z oficiálních stránek města.
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex (oficiální
+  web střediska/obce); u polských středisek zatím žádná čísla (rozhodnutí
+  handoffu: „PL bez čísel" do doby doložení). Doprava (auto) doplněna 2. 8. 2026
+  z oficiálních stránek města.
 
-  Perex doplněn 4. 8. 2026 z portálu svazku. `vyskaObce` ZŮSTÁVÁ prázdné:
-  portál uvádí ROZPĚTÍ 575–1555 m (od údolí po hřeben), ne jednu výšku obce.
-  Vybrat z rozpětí jedno číslo = domýšlení; čeká se na ČÚZK.
+  Perex doplněn 4. 8. 2026 z portálu svazku. `vyskaObce` ZŮSTÁVÁ prázdné: portál
+  uvádí ROZPĚTÍ 575–1555 m (od údolí po hřeben), ne jednu výšku obce. Vybrat z
+  rozpětí jedno číslo = domýšlení; čeká se na ČÚZK.

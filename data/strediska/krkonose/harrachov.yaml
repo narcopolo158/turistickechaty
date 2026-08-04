@@ -10,36 +10,44 @@ oblast: krkonose
 
 # Perex jen z doložené formulace oficiálního portálu svazku.
 perex: >-
-  Turistické město „zastrčené" u hranic v západních Krkonoších, vyhlášené
-  svými skokanskými můstky.
+  Turistické město „zastrčené" u hranic v západních Krkonoších, vyhlášené svými
+  skokanskými můstky.
 overeniPerex:
   source: >-
     Oficiální turistický portál Svazku měst a obcí Krkonoše
     region-krkonose.cz/obce/harrachov/ (načteno 4. 8. 2026): „Harrachov se
     nachází „zastrčený" u hranic v západních Krkonoších. Je velmi bohatým
-    turistickým městem a vyhlášený svými skokanskými můstky." Hodnotící
-    „velmi bohaté" se do perexu nepřevzalo (kolekce Strediska: žádné
-    hodnocení); výšku obce pramen neuvádí.
+    turistickým městem a vyhlášený svými skokanskými můstky." Hodnotící „velmi
+    bohaté" se do perexu nepřevzalo (kolekce Strediska: žádné hodnocení); výšku
+    obce pramen neuvádí.
   verified: false
   checked: '2026-08-04'
 
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7720087
 lng: 15.4315431
+vyskaObce: 687
 overeniLokace:
   source: >-
-    OpenStreetMap https://www.openstreetmap.org/node/1587333378 (bod obce z katalogu výchozích bodů DATA-06,
-    data © přispěvatelé OpenStreetMap, ODbL 1.0); výška obce zatím
-    nedoložena — doplnit ze ČÚZK
+    OpenStreetMap https://www.openstreetmap.org/node/1587333378 (bod obce z
+    katalogu výchozích bodů DATA-06, data © přispěvatelé OpenStreetMap, ODbL
+    1.0); výška obce zatím nedoložena — doplnit ze ČÚZK. Výška obce: nadmořská
+    výška referenčního bodu střediska (uzel OSM place, týž bod jako GPS výš,
+    50.772009, 15.431543) z výškového modelu Mapy.com Elevation API (načteno
+    2026-08-04): 687 m — model s různou přesností, nemusí odpovídat realitě,
+    proto verified:false. Referenční bod místo rozpětí dle zadání Michala 4. 8.
+    2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí / náměstí").
+    Ověření proti ČÚZK zůstává otevřené.
   verified: false
-  checked: '2026-05-06'
+  checked: '2026-08-04'
 
 # Vazba na katalog výchozích bodů (data/oblasti/krkonose/vychozi-body-kandidati.json)
 vychoziBody:
   - nazev: Harrachov
 
 lanovka: >-
-  Lanová dráha Harrachov – Čertova hora (katalog lanových drah Krkonoš); letní provoz nedoložen.
+  Lanová dráha Harrachov – Čertova hora (katalog lanových drah Krkonoš); letní
+  provoz nedoložen.
 overeniLanovka:
   source: >-
     region-krkonose.cz/lanove-drahy/ (načteno 28. 7. 2026)
@@ -51,23 +59,21 @@ overeniLanovka:
 # popisuje jen parkování). Ceny se nepíšou, mění se každou sezónu.
 doprava:
   auto: >-
-    Město provozuje centrální parkoviště s veřejným ukazatelem obsazenosti;
-    z něj jezdí bezplatný Free BUS k lanovce Delta
-    a zpět.
+    Město provozuje centrální parkoviště s veřejným ukazatelem obsazenosti; z
+    něj jezdí bezplatný Free BUS k lanovce Delta a zpět.
 overeniDoprava:
   source: >-
-    Oficiální stránky města Harrachov, sekce Parkování (harrachov.cz,
-    načteno 2. 8. 2026): centrální parkoviště, odkaz „Aktuální stav —
-    obsazenost", doslova „Free BUS - z centrálního parkoviště k lanovce
-    draze delta a zpět". Omezení vjezdu stránka neuvádí — proto se o něm
-    nepíše. Vlak a bus z katalogu DATA-06 (železniční stanici Harrachov
-    katalog nese; město o vlaku strukturně nic neříká). Ceny se do profilu
-    nepíšou — mění se každou sezónu.
+    Oficiální stránky města Harrachov, sekce Parkování (harrachov.cz, načteno 2.
+    8. 2026): centrální parkoviště, odkaz „Aktuální stav — obsazenost", doslova
+    „Free BUS - z centrálního parkoviště k lanovce draze delta a zpět". Omezení
+    vjezdu stránka neuvádí — proto se o něm nepíše. Vlak a bus z katalogu
+    DATA-06 (železniční stanici Harrachov katalog nese; město o vlaku strukturně
+    nic neříká). Ceny se do profilu nepíšou — mění se každou sezónu.
   verified: false
   checked: '2026-08-02'
 
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex
-  (oficiální web střediska/obce); u polských středisek zatím žádná čísla
-  (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
-  doplněna 2. 8. 2026 z oficiálního webu.
+  Doplnit z doložených zdrojů: výška obce (ČÚZK — zadání F1a) a perex (oficiální
+  web střediska/obce); u polských středisek zatím žádná čísla (rozhodnutí
+  handoffu: „PL bez čísel" do doby doložení). Doprava (auto) doplněna 2. 8. 2026
+  z oficiálního webu.

@@ -14,25 +14,34 @@ perex: >-
 overeniPerex:
   source: >-
     Oficiální turistický portál Svazku měst a obcí Krkonoše
-    region-krkonose.cz/obce/vrchlabi/ (načteno 4. 8. 2026): „Vrchlabí se
-    nachází v nadmořské výšce 400 – 1036 m. Město bohaté na sportoviště,
-    památky i kulturu."
+    region-krkonose.cz/obce/vrchlabi/ (načteno 4. 8. 2026): „Vrchlabí se nachází
+    v nadmořské výšce 400 – 1036 m. Město bohaté na sportoviště, památky i
+    kulturu."
   verified: false
   checked: '2026-08-04'
 
 lat: 50.6271452
 lng: 15.6095779
+vyskaObce: 480
 overeniLokace:
   source: >-
-    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). Výška
+    obce: nadmořská výška referenčního bodu střediska (uzel OSM place, týž bod
+    jako GPS výš, 50.627145, 15.609578) z výškového modelu Mapy.com Elevation
+    API (načteno 2026-08-04): 480 m — model s různou přesností, nemusí odpovídat
+    realitě, proto verified:false. Referenční bod místo rozpětí dle zadání
+    Michala 4. 8. 2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí
+    / náměstí"). Ověření proti ČÚZK zůstává otevřené.
   verified: false
-  checked: '2026-07-28'
+  checked: '2026-08-04'
 
 vychoziBody:
   - nazev: Vrchlabí
 
 lanovka: >-
-  Lanová dráha Herlíkovice – Žalý (část Vrchlabí): „v zimě přepravuje lyžaře, v létě turisty" — doslova dle katalogu lanových drah Krkonoš.
+  Lanová dráha Herlíkovice – Žalý (část Vrchlabí): „v zimě přepravuje lyžaře, v
+  létě turisty" — doslova dle katalogu lanových drah Krkonoš.
 overeniLanovka:
   source: region-krkonose.cz/lanove-drahy/ (načteno 28. 7. 2026)
   verified: false
@@ -41,38 +50,39 @@ overeniLanovka:
 # Ruční próza má přednost před řádky z katalogu DATA-06. Ceny se nepíšou.
 doprava:
   vlak: >-
-    Nádraží leží asi 1,5 km od centra, na neelektrizované jednokolejce
-    z Kunčic nad Labem; regionální spoje navazují na Trutnov, Starou Paku
-    a Chlumec nad Cidlinou.
+    Nádraží leží asi 1,5 km od centra, na neelektrizované jednokolejce z Kunčic
+    nad Labem; regionální spoje navazují na Trutnov, Starou Paku a Chlumec nad
+    Cidlinou.
   bus: >-
-    Autobusové nádraží je asi 1,3 km od centra a v létě slouží jako hlavní
-    uzel krkonošských cyklobusů.
+    Autobusové nádraží je asi 1,3 km od centra a v létě slouží jako hlavní uzel
+    krkonošských cyklobusů.
   auto: >-
     V centru se parkuje placeně (automaty, aplikace; parkovací kotouče pro
-    krátké stání prodává infocentrum), okrajová parkoviště — třeba
-    Vejsplachy nebo u kulturního domu Střelnice — jsou zdarma.
+    krátké stání prodává infocentrum), okrajová parkoviště — třeba Vejsplachy
+    nebo u kulturního domu Střelnice — jsou zdarma.
 overeniDoprava:
   source: >-
     Oficiální turistický web města Vrchlabí, stránka Doprava a parkování
     (mestovrchlabi.cz, načteno 2. 8. 2026): nádraží 1,5 km od centra na
-    jednokolejce z Kunčic nad Labem, spoje na Trutnov / Starou Paku /
-    Chlumec nad Cidlinou; autobusové nádraží asi 1300 m od centra, v létě
-    hlavní uzel krkonošských cyklobusů; centrum placené (automaty,
-    aplikace EasyPark, kotouče z infocentra), Vejsplachy a u Střelnice
-    velká a zdarma. Ceny se do profilu nepíšou — mění se každou sezónu.
+    jednokolejce z Kunčic nad Labem, spoje na Trutnov / Starou Paku / Chlumec
+    nad Cidlinou; autobusové nádraží asi 1300 m od centra, v létě hlavní uzel
+    krkonošských cyklobusů; centrum placené (automaty, aplikace EasyPark,
+    kotouče z infocentra), Vejsplachy a u Střelnice velká a zdarma. Ceny se do
+    profilu nepíšou — mění se každou sezónu.
   verified: false
   checked: '2026-08-02'
 
 interniPoznamky: >-
-  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
-  nebo střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává
-  pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
+  Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce nebo
+  střediska) a doprava (vlak/bus/auto). Fotka střediska se dohledává pipeline
+  DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
-  Doprava (vlak+bus+auto) doplněna 2. 8. 2026 z oficiálního turistického webu města.
+  Doprava (vlak+bus+auto) doplněna 2. 8. 2026 z oficiálního turistického webu
+  města.
 
-  Perex doplněn 4. 8. 2026 z portálu svazku. `vyskaObce` ZŮSTÁVÁ prázdné:
-  portál uvádí ROZPĚTÍ 400–1036 m, ne jednu výšku obce; čeká se na ČÚZK.
-  Druhá věta pramene („Město bohaté na sportoviště, památky i kulturu.") se do
-  perexu ZÁMĚRNĚ nepřevzala: je to hodnocení, ne fakt (kolekce Strediska:
-  „žádné ceníky ani hodnocení"), a jmenovat pramen přímo ve větě zakazuje
-  pravidlo o vsuvkách pramene. Perex proto zůstává jednovětý.
+  Perex doplněn 4. 8. 2026 z portálu svazku. `vyskaObce` ZŮSTÁVÁ prázdné: portál
+  uvádí ROZPĚTÍ 400–1036 m, ne jednu výšku obce; čeká se na ČÚZK. Druhá věta
+  pramene („Město bohaté na sportoviště, památky i kulturu.") se do perexu
+  ZÁMĚRNĚ nepřevzala: je to hodnocení, ne fakt (kolekce Strediska: „žádné ceníky
+  ani hodnocení"), a jmenovat pramen přímo ve větě zakazuje pravidlo o vsuvkách
+  pramene. Perex proto zůstává jednovětý.
