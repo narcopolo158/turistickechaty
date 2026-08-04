@@ -29,6 +29,56 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 12) — Šumava má data: 337 kandidátů, 25 lanovek, triážní podklad a 10 rozhodnutých jmenovců
+
+**Oba běhy doběhly** (DATA-01 commit 62049ae, DATA-28 commit 52e7645)
+a první pohled na skutečný fond je venku:
+
+**337 kandidátů (96 CZ + 241 DE)** — zdaleka největší export korpusu.
+Německá čtyřnásobka není bohatství chat, ale důsledek velkého okna
+a hustého bavorského osídlení: dotaz jménem chytá i penziony, apartmány
+a pekárny (doslova `Bäckerei Hutterer`). Triáž bude poprvé víc
+o vyřazování než o povyšování.
+
+**Triážní podklad zapsán — docs/SUMAVA-TRIAZ.md.** Hlavní čísla:
+
+- **Tier 1: 21 z 27 katalogových objektů má kandidáta** — z toho šest pod
+  jiným jménem, než vede katalog (Chata Rovina × Horský hotel Rovina,
+  Falkenstein-Schutzhaus × Falkensteinschutzhaus, Berghotel × Berggasthof
+  Mooshütte…). To je fronta na povyšování.
+- **6 katalogových bez kandidáta:** Zlatá Studna, Bučina, Antýgl (nejspíš
+  tagovaný jako kemp), Gibacht (u samé hrany okna — prověřit i hranu),
+  a dvojice Pancíř / Chata na Špičáku, kde export přinesl jen ROZHLEDNY
+  téhož jména — vztah k chatám prověřit, netvrdit.
+- **25 lanovek pro pěší** ze 184 prvků `aerialway` (159 vleků mimo) —
+  dopočteno rovnou ze sandboxu z vrstvy DATA-28. Nejdelší Krasetín–Kleť
+  (1770 m) je ovšem Blanský les, ne Šumava — do okna spadla logicky,
+  vypsání rozhodne katalog lanovek (vzor Obří sud na Ještědu).
+
+**Deset nových kolizí jmen, všechny rozhodnuté ze souřadnic** a zapsané
+do data/_jmenovci.yaml (kontrola zpátky zelená, 15 známých jmenovců):
+
+- pravé jmenovce přes vzdálenost: Lovecká chata (Krkonoše × Šumava),
+  Barborka (Pec × Hartmanice), Hájenka (nově TŘI objekty), Šumavská
+  chalupa ×2 (75 km od sebe), Ferienhaus Natur ×2, Landshuter Hof ×2
+  (pozor: ani jeden není katalogový Landshuter Haus!), Stadtturm ×2,
+  Klostermannova chata × rozhledna (30 km — Modrava × Javorník);
+- **dva pravděpodobné areály (precedens Žalý):** Koráb (chata a rozhledna
+  35 m od sebe) a Svatobor (tytéž souřadnice) — jeden nebo dva profily
+  rozhodne křížové ověření, ne registr.
+
+**Kontroly:** `tsc` čistý, kontrola zelená (kolize 0, jmenovců 15).
+
+**Příště (pořadí z triážního podkladu):** ① křížové ověření a povyšování
+Tier 1 — 21 kandidátů s oporou v katalogu, bavorské s německým jménem
+primárním; ② dohledat 6 chybějících katalogových; ③ Actions: DATA-06
+výchozí body pro `sumava` (pak trasy → přístupy → výšky); ④ plošná triáž
+zbylých ~310 až nakonec.
+
+**Otázky pro Michala:** ① nic nového ke Šumavě — další kroky jsou
+samostatné; klik DATA-06 (výchozí body, oblast `sumava`) se hodí, až budeš
+u toho, ale neblokuje. ② Starší otevřené: razítkové páry (11 ke kontrole),
+Odrodzenie 1230 × 1236 m, Benecko, certifikát dev.
 ## 2026-08-04 (blok 11) — hero Šumavy z Michalových pěti balíčků; nový licenční případ „bez autora"
 
 **Michal poslal pět balíčků z mediabanky CzechTourism a jde spouštět

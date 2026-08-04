@@ -112,3 +112,121 @@ jmenovci:
       u jizerských není doložená → R6, doplní se z pramene (JIZ-01 / DATA-03).
     rozhodl: Claude (návrh z 30. 7. 2026) — čeká na potvrzení Michalem
     checked: 2026-07-30
+  # ── Vlna z exportu Šumavy (DATA-01, 4. 8. 2026, 337 kandidátů) ──────────
+  # U dvojic „chata × rozhledna na týchž souřadnicích" je precedens Žalý:
+  # dvě entity OSM mohou být jeden areál — nerozhoduje se tady, rozhodne
+  # křížové ověření při triáži. U ostatních rozhodly vzdálenosti.
+  - jadro: ferienhaus natur
+    objekty:
+      - sumava/ferienhaus-natur
+      - sumava/ferienhaus-natur-98649329
+    duvod: >-
+      Dva různé objekty ~55 km od sebe: Röhrnbach (48,768 / 13,530)
+      a Lohberg (49,167 / 13,092), obojí dle OSM. Oba jsou rekreační domy
+      k pronájmu — při triáži nejspíš oba vypadnou podle klíče zařazení;
+      registr je tu proto, aby do té doby kontrola nekřičela.
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+  - jadro: landshuter hof
+    objekty:
+      - sumava/landshuter-hof
+      - sumava/landshuter-hof-158417739
+    duvod: >-
+      Dva různé městské hotely ~20 km od sebe (Straubing 48,874 / 12,573;
+      Pilsting 48,702 / 12,651) — a POZOR, žádný z nich není Landshuter
+      Haus z katalogu (to je horský dům u Bischofsmais, kandidát
+      landshuter-haus). Oba městské při triáži nejspíš vypadnou.
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+  - jadro: lovecka
+    objekty:
+      - krkonose/lovecka-chata
+      - sumava/lovecka-chata
+    duvod: >-
+      Dva různé objekty přes 200 km od sebe: publikovaná Lovecká chata
+      ve Velké Úpě (Krkonoše) a šumavský kandidát u Horské Kvildy
+      (49,052 / 13,570, OSM). Rozlišovačem má být obec (DATA-17 R2);
+      šumavská ji doloženou nemá → R6, doplní se z pramene při triáži.
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+  - jadro: stadtturm
+    objekty:
+      - sumava/stadtturm
+      - sumava/stadtturm-202211550
+    duvod: >-
+      Dvě různé městské věže ~55 km od sebe (Furth im Wald 49,308 / 12,845;
+      Straubing 48,882 / 12,570), obě z rozhlednového běhu. Městské věže
+      uvnitř měst nejspíš neprojdou klíčem zařazení (vzor Mirsk — otázka
+      rozsahu) — do triáže vedené jako dva objekty.
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+  - jadro: barborka
+    objekty:
+      - krkonose/barborka
+      - sumava/chata-barborka
+    duvod: >-
+      Dva různé objekty: publikovaná Barborka v Peci pod Sněžkou (Krkonoše)
+      a šumavská Chata Barborka u Hartmanic (49,172 / 13,457, OSM).
+      Krkonošská má obec doloženou, šumavská z OSM tagu — při triáži
+      překontrolovat pramenem (R2/R6).
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+  - jadro: hajenka
+    objekty:
+      - jizerske-hory/hajenka
+      - sumava/hajenka
+      - sumava/penzion-hajenka
+    duvod: >-
+      Tři různé objekty: jizerský kandidát (bez doložené obce, R6),
+      šumavská Hájenka u Kašperských Hor (49,031 / 13,520) a Penzion
+      Hájenka u Borových Lad (48,957 / 13,626) — šumavské dvě jsou ~11 km
+      od sebe, všechno OSM. „Hájenka" je druhové jméno, dalších jmenovců
+      časem přibude; rozlišovač obec dle DATA-17.
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+  - jadro: klostermannova
+    objekty:
+      - sumava/klostermannova-chata
+      - sumava/klostermannova-rozhledna
+    duvod: >-
+      Dva různé objekty ~30 km od sebe, oba pojmenované po Karlu
+      Klostermannovi: chata na Modravě (49,025 / 13,501 — katalogový objekt
+      Tier 1) a rozhledna na Javorníku (49,138 / 13,654). Není to areál —
+      vzdálenost to vylučuje; na webu je rozliší typ v názvu a obec, až
+      bude doložená.
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+  - jadro: korab
+    objekty:
+      - sumava/horska-chata-korab
+      - sumava/rozhledna-korab
+    duvod: >-
+      NEJSPÍŠ JEDEN AREÁL, ne jmenovci: chata (49,3957 / 13,0751)
+      a rozhledna (49,3954 / 13,0753) na vrcholu Koráb u Kdyně stojí
+      ~35 metrů od sebe — precedens Žalý (dvě entity OSM, jeden provoz).
+      NEROZHODNUTO tady: jestli povýšit jako jeden profil, nebo dva,
+      určí křížové ověření při triáži; do té doby dvě kandidátní entity.
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+  - jadro: sumavska
+    objekty:
+      - sumava/chata-sumavska-chalupa
+      - sumava/sumavska-chalupa
+    duvod: >-
+      Dva různé objekty ~75 km od sebe: „Chata Šumavská Chalupa" u Lipna
+      (48,765 / 14,174) a „Šumavská chalupa" na Sušicku (49,210 / 13,511),
+      obojí OSM. Obec nemá doloženou ani jeden → R6, doplní triáž.
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+  - jadro: svatobor
+    objekty:
+      - sumava/svatobor-chata
+      - sumava/svatobor-rozhledna
+    duvod: >-
+      NEJSPÍŠ JEDEN AREÁL: chata i rozhledna na Svatoboru u Sušice mají
+      v OSM TYTÉŽ souřadnice (49,2355 / 13,4875) — precedens Žalý.
+      Jestli jeden profil, nebo dva, určí křížové ověření při triáži;
+      do té doby dvě kandidátní entity.
+    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
+    checked: 2026-08-04
+

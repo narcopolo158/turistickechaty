@@ -1,0 +1,512 @@
+{
+  "oblast": "sumava",
+  "zdroj": "OpenStreetMap (tag aerialway) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); přebráno z exportu pipeline DATA-28",
+  "stavOsm": "2026-08-04",
+  "zdrojVysek": "Mapy.com Elevation API (výškový model)",
+  "poznamka": "Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). Vleky a dětské pásy (159 v témž exportu) přehled nevede. Převýšení je z výškového modelu, ne z měření — zaokrouhleno na desítky metrů; délka je půdorysná z geometrie OSM. Vzdálenost k chatám je vzdušná čára.",
+  "vygenerovano": "scripts/data32-lanovky.ts",
+  "pocet": 25,
+  "vleku": 159,
+  "lanovky": [
+    {
+      "id": "ld-krasetin-klet",
+      "nazev": "LD Krasetín - Kleť",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1770,
+      "prevyseniM": 290,
+      "dolni": {
+        "lat": 48.8778,
+        "lng": 14.29931,
+        "vyska": 704
+      },
+      "horni": {
+        "lat": 48.86575,
+        "lng": 14.28349,
+        "vyska": 996
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "hochfichtbahn",
+      "nazev": "Hochfichtbahn",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1544,
+      "prevyseniM": 340,
+      "dolni": {
+        "lat": 48.73633,
+        "lng": 13.89943,
+        "vyska": 962
+      },
+      "horni": {
+        "lat": 48.73684,
+        "lng": 13.91798,
+        "vyska": 1300
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "spicak-hofmanky",
+      "nazev": "Špičák - Hofmanky",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1473,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 49.15946,
+        "lng": 13.22819,
+        "vyska": 869
+      },
+      "horni": {
+        "lat": 49.16837,
+        "lng": 13.24318,
+        "vyska": 1084
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "sternstein-express",
+      "nazev": "Sternstein Express",
+      "typ": "mixed_lift",
+      "typNazev": "kombinovaná (kabinky i sedačky)",
+      "delkaM": 1298,
+      "prevyseniM": 200,
+      "dolni": {
+        "lat": 48.55352,
+        "lng": 14.28475,
+        "vyska": 847
+      },
+      "horni": {
+        "lat": 48.55926,
+        "lng": 14.2694,
+        "vyska": 1050
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "hohenbogen-sesselbahn",
+      "nazev": "Hohenbogen-Sesselbahn",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1273,
+      "prevyseniM": 300,
+      "dolni": {
+        "lat": 49.24372,
+        "lng": 12.95496,
+        "vyska": 673
+      },
+      "horni": {
+        "lat": 49.23506,
+        "lng": 12.94404,
+        "vyska": 970
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "pancir",
+      "nazev": "Pancíř",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1262,
+      "prevyseniM": 50,
+      "dolni": {
+        "lat": 49.16844,
+        "lng": 13.24305,
+        "vyska": 1085
+      },
+      "horni": {
+        "lat": 49.17243,
+        "lng": 13.2476,
+        "vyska": 1130
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "lanova-draha-spicak",
+      "nazev": "Lanová dráha Špičák",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1222,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 49.16521,
+        "lng": 13.2215,
+        "vyska": 894
+      },
+      "horni": {
+        "lat": 49.1726,
+        "lng": 13.20906,
+        "vyska": 1109
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "almberg-sesselbahn",
+      "nazev": "Almberg-Sesselbahn",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1207,
+      "prevyseniM": 190,
+      "dolni": {
+        "lat": 48.88442,
+        "lng": 13.62818,
+        "vyska": 873
+      },
+      "horni": {
+        "lat": 48.88918,
+        "lng": 13.64302,
+        "vyska": 1065
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "jezerni",
+      "nazev": "Jezerní",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1196,
+      "prevyseniM": 110,
+      "dolni": {
+        "lat": 48.64435,
+        "lng": 14.22193,
+        "vyska": 760
+      },
+      "horni": {
+        "lat": 48.65248,
+        "lng": 14.23229,
+        "vyska": 867
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "gei-kopfbahn-sommer-winter",
+      "nazev": "Geißkopfbahn (Sommer + Winter)",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1118,
+      "prevyseniM": 210,
+      "dolni": {
+        "lat": 48.93296,
+        "lng": 13.04492,
+        "vyska": 841
+      },
+      "horni": {
+        "lat": 48.92393,
+        "lng": 13.0382,
+        "vyska": 1051
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "zwieselbergbahn",
+      "nazev": "Zwieselbergbahn",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1114,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 48.73843,
+        "lng": 13.88585,
+        "vyska": 914
+      },
+      "horni": {
+        "lat": 48.73702,
+        "lng": 13.87299,
+        "vyska": 1129
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "schwarzenbergbahn",
+      "nazev": "Schwarzenbergbahn",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1085,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 48.73394,
+        "lng": 13.85554,
+        "vyska": 887
+      },
+      "horni": {
+        "lat": 48.73662,
+        "lng": 13.86976,
+        "vyska": 1106
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "reischlbergbahn-ii",
+      "nazev": "Reischlbergbahn II",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1003,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 48.74188,
+        "lng": 13.89704,
+        "vyska": 1010
+      },
+      "horni": {
+        "lat": 48.7484,
+        "lng": 13.9042,
+        "vyska": 1226
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "lanova-draha-churanov",
+      "nazev": "Lanová dráha Churáňov",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 918,
+      "prevyseniM": 160,
+      "dolni": {
+        "lat": 49.07313,
+        "lng": 13.6327,
+        "vyska": 900
+      },
+      "horni": {
+        "lat": 49.07046,
+        "lng": 13.62078,
+        "vyska": 1056
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "6er-sessellift-nordhang-winter",
+      "nazev": "6er Sessellift Nordhang (Winter)",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 894,
+      "prevyseniM": 240,
+      "dolni": {
+        "lat": 49.12103,
+        "lng": 13.14093,
+        "vyska": 1079
+      },
+      "horni": {
+        "lat": 49.11542,
+        "lng": 13.1343,
+        "vyska": 1321
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "6er-gondelbahn",
+      "nazev": "6er-Gondelbahn",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 854,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 49.12063,
+        "lng": 13.14185,
+        "vyska": 1074
+      },
+      "horni": {
+        "lat": 49.11326,
+        "lng": 13.13853,
+        "vyska": 1295
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "promenadni",
+      "nazev": "Promenádní",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 852,
+      "prevyseniM": 100,
+      "dolni": {
+        "lat": 48.65543,
+        "lng": 14.24282,
+        "vyska": 742
+      },
+      "horni": {
+        "lat": 48.64873,
+        "lng": 14.2372,
+        "vyska": 838
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "strecha",
+      "nazev": "Střecha",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 840,
+      "prevyseniM": 140,
+      "dolni": {
+        "lat": 48.65688,
+        "lng": 14.24263,
+        "vyska": 727
+      },
+      "horni": {
+        "lat": 48.65309,
+        "lng": 14.23274,
+        "vyska": 863
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "silberberg-sesselbahn",
+      "nazev": "Silberberg-Sesselbahn",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 712,
+      "prevyseniM": 60,
+      "dolni": {
+        "lat": 49.06171,
+        "lng": 13.11843,
+        "vyska": 781
+      },
+      "horni": {
+        "lat": 49.05752,
+        "lng": 13.12582,
+        "vyska": 840
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "lanova-draha-kobyla",
+      "nazev": "Lanová dráha Kobyla",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 705,
+      "prevyseniM": 120,
+      "dolni": {
+        "lat": 49.06633,
+        "lng": 13.63158,
+        "vyska": 953
+      },
+      "horni": {
+        "lat": 49.06033,
+        "lng": 13.62845,
+        "vyska": 1069
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "standseilbahn-wieli",
+      "nazev": "Standseilbahn \"WieLi\"",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 582,
+      "prevyseniM": 40,
+      "dolni": {
+        "lat": 48.97565,
+        "lng": 12.77602,
+        "vyska": 462
+      },
+      "horni": {
+        "lat": 48.97652,
+        "lng": 12.7785,
+        "vyska": 501
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kleiner-almberglift",
+      "nazev": "kleiner Almberglift",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 518,
+      "prevyseniM": 30,
+      "dolni": {
+        "lat": 48.89259,
+        "lng": 13.6477,
+        "vyska": 1037
+      },
+      "horni": {
+        "lat": 48.88924,
+        "lng": 13.64279,
+        "vyska": 1065
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "6er-sessellift-sonnenhang-winter",
+      "nazev": "6er Sessellift Sonnenhang (Winter)",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 487,
+      "prevyseniM": 120,
+      "dolni": {
+        "lat": 49.12176,
+        "lng": 13.14076,
+        "vyska": 1069
+      },
+      "horni": {
+        "lat": 49.12093,
+        "lng": 13.13452,
+        "vyska": 1194
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "reischlbergbahn-i",
+      "nazev": "Reischlbergbahn I",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 445,
+      "prevyseniM": 30,
+      "dolni": {
+        "lat": 48.73808,
+        "lng": 13.89894,
+        "vyska": 979
+      },
+      "horni": {
+        "lat": 48.74188,
+        "lng": 13.89704,
+        "vyska": 1010
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "lipenska",
+      "nazev": "Lipenská",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 398,
+      "prevyseniM": 10,
+      "dolni": {
+        "lat": 48.64436,
+        "lng": 14.23559,
+        "vyska": 831
+      },
+      "horni": {
+        "lat": 48.64657,
+        "lng": 14.2384,
+        "vyska": 838
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    }
+  ]
+}
