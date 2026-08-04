@@ -8,6 +8,20 @@ slug: benecko
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace oficiálního portálu svazku.
+perex: >-
+  Malebná obec, která patří mezi oblíbené destinace v Krkonoších. Leží
+  v okrese Semily, v nadmořské výšce v rozmezí od 682 do 1010 metrů.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/benecko/ (načteno 4. 8. 2026): „Malebná obec
+    Benecko patří mezi oblíbené destinace v Krkonoších.", „Obec Benecko
+    najdete v okrese Semily, v nadmořské výšce v rozmezí od 682 – 1010
+    metrů."
+  verified: false
+  checked: '2026-08-04'
+
 lat: 50.6663343
 lng: 15.5481647
 overeniLokace:
@@ -51,3 +65,8 @@ interniPoznamky: >-
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
   Doprava (auto) doplněna 2. 8. 2026 z informačního webu střediska (benecko.info).
+
+  Perex doplněn 4. 8. 2026 z portálu svazku. Pole `vyskaObce` ZŮSTÁVÁ prázdné
+  schválně: portál uvádí ROZPĚTÍ 682–1010 m (obec se táhne po svahu), ne jednu
+  výšku obce — jedno číslo by z rozpětí musel někdo vybrat, což je domýšlení.
+  Až bude ČÚZK, zapsat odtud.

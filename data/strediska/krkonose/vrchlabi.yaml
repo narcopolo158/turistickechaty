@@ -8,6 +8,18 @@ slug: vrchlabi
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace oficiálního portálu svazku.
+perex: >-
+  Město na úpatí Krkonoš, v nadmořské výšce v rozmezí od 400 do 1036 metrů.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/vrchlabi/ (načteno 4. 8. 2026): „Vrchlabí se
+    nachází v nadmořské výšce 400 – 1036 m. Město bohaté na sportoviště,
+    památky i kulturu."
+  verified: false
+  checked: '2026-08-04'
+
 lat: 50.6271452
 lng: 15.6095779
 overeniLokace:
@@ -57,3 +69,10 @@ interniPoznamky: >-
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
   Doprava (vlak+bus+auto) doplněna 2. 8. 2026 z oficiálního turistického webu města.
+
+  Perex doplněn 4. 8. 2026 z portálu svazku. `vyskaObce` ZŮSTÁVÁ prázdné:
+  portál uvádí ROZPĚTÍ 400–1036 m, ne jednu výšku obce; čeká se na ČÚZK.
+  Druhá věta pramene („Město bohaté na sportoviště, památky i kulturu.") se do
+  perexu ZÁMĚRNĚ nepřevzala: je to hodnocení, ne fakt (kolekce Strediska:
+  „žádné ceníky ani hodnocení"), a jmenovat pramen přímo ve větě zakazuje
+  pravidlo o vsuvkách pramene. Perex proto zůstává jednovětý.

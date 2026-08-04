@@ -23,6 +23,8 @@ type StrediskoYaml = {
   lat?: number
   lng?: number
   vyskaObce?: number
+  perex?: string
+  overeniPerex?: { source?: string; verified?: boolean; checked?: string }
   overeniLokace?: { source?: string; verified?: boolean; checked?: string }
   vychoziBody?: { nazev: string }[]
 }
@@ -83,6 +85,34 @@ describe('střediska Krkonoš (data/strediska/krkonose)', () => {
         expect(data.overeniLokace?.source, `${soubor}: výška obce bez dokladu ve zdroji lokace`).toMatch(/[Vv]ýšk/)
         expect(data.overeniLokace?.source, `${soubor}: u výšky chybí poznámka o otevřeném ověření ČÚZK`).toMatch(/ČÚZK/)
       }
+    }
+  })
+
+  // Perex je veřejná próza — platí pro něj totéž co pro každou věcnou
+  // skupinu: bez doloženého pramene se nepíše. Blok `overeniPerex` vznikl
+  // 3. 8. 2026, první perexy jsou z 3.–4. 8. 2026 (oficiální portál svazku
+  // region-krkonose.cz). Test hlídá pár perex ↔ ověření, ne to, kolik
+  // středisek perex má — dopisují se postupně, jak se najdou prameny.
+  it('perex existuje jen s blokem ověření (source + verified:false + checked)', () => {
+    for (const { soubor, data } of strediska) {
+      if (data.perex == null) {
+        expect(data.overeniPerex, `${soubor}: ověření perexu bez perexu`).toBeUndefined()
+        continue
+      }
+      expect(data.perex.trim().length, soubor).toBeGreaterThan(0)
+      expect(data.overeniPerex?.source, `${soubor}: perex bez doloženého pramene`).toBeTruthy()
+      // Konvence B (Michal 21. 7. 2026): převzato z webu → verified zůstává false.
+      expect(data.overeniPerex?.verified, soubor).toBe(false)
+      expect(data.overeniPerex?.checked, soubor).toMatch(/^\d{4}-\d{2}-\d{2}$/)
+    }
+  })
+
+  it('perex nejmenuje pramen ve větě (pravidlo z 2. 8. 2026 — prameny až pod článkem)', () => {
+    // Týž vzor jako ban-scan „vsuvka pramene": „podle …", „dle portálu …".
+    const VSUVKA = /\b(podle|dle)\s+(webu|portálu|serveru|stránky|stránek|oficiáln|informačního|katalogu|Kudy)/i
+    for (const { soubor, data } of strediska) {
+      if (!data.perex) continue
+      expect(VSUVKA.test(data.perex), `${soubor}: perex jmenuje pramen ve větě — patří do overeniPerex`).toBe(false)
     }
   })
 

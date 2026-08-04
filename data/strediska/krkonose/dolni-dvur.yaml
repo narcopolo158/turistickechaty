@@ -8,6 +8,18 @@ slug: dolni-dvur
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace oficiálního portálu svazku (týž pramen,
+# ze kterého je i výška obce níž — doplněno 4. 8. 2026).
+perex: >-
+  Horská obec, která se rozkládá v nadmořské výšce 641 metrů.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/dolni-dvur/ (načteno 3. 8. 2026, znovu 4. 8.
+    2026): „Horská obec Dolní Dvůr se rozkládá v nadmořské výšce 641 m."
+  verified: false
+  checked: '2026-08-04'
+
 lat: 50.6520957
 lng: 15.6558321
 # Výška obce z oficiálního portálu svazku (ověření proti ČÚZK dle zadání

@@ -8,6 +8,22 @@ slug: janske-lazne
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace oficiálního portálu svazku.
+perex: >-
+  Lázeňské městečko a horské středisko ve východních Krkonoších. Leží
+  západně od Trutnova pod dominantní Černou horou, kterou nepřehlédne žádný
+  návštěvník Krkonoš.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/janske-lazne/ (načteno 4. 8. 2026): „Slavné
+    Janské lázně leží západně od Trutnova pod dominatní [sic] Černou horou,
+    kterou nepřehlédne žádný návštěvník Krkonoš."; popisek stránky:
+    „Lazeňské [sic] městečko a horské středisko Janské lázně naleznete ve
+    východních Krkonoších." Překlepy pramene se do veřejné prózy nepřenášejí.
+  verified: false
+  checked: '2026-08-04'
+
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.6305685
 lng: 15.7806938
@@ -60,3 +76,6 @@ interniPoznamky: >-
   (oficiální web střediska/obce); u polských středisek zatím žádná čísla
   (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
   doplněna 2. 8. 2026 z oficiálního webu města.
+
+  Perex doplněn 4. 8. 2026 z portálu svazku (region-krkonose.cz/obce/janske-lazne/).
+  Výšku obce tentýž pramen neuvádí vůbec — `vyskaObce` dál čeká na ČÚZK.

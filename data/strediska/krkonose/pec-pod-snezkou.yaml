@@ -8,16 +8,37 @@ slug: pec-pod-snezkou
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace oficiálního portálu svazku.
+perex: >-
+  Horské město na řece Úpě a Zeleném potoku, v nadmořské výšce 750 metrů.
+  Stalo se významným střediskem pro turisty v zimním i letním období.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/pec-pod-snezkou/ (načteno 4. 8. 2026): „Na řece
+    Úpě a Zeleném potoku v Krkonoších najdete Pec pod Sněžkou, která se
+    stala významným střediskem pro turisty v zimním i letním období.",
+    „Pec pod Sněžkou najdete v nadmořské výšce 750 m".
+  verified: false
+  checked: '2026-08-04'
+
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.6935744
 lng: 15.7335607
+# Výška obce z oficiálního portálu svazku (vzor Dolního Dvora 3. 8. 2026);
+# ověření proti ČÚZK dle zadání F1a zůstává otevřené.
+vyskaObce: 750
 overeniLokace:
   source: >-
-    OpenStreetMap https://www.openstreetmap.org/node/1587266118 (bod obce z katalogu výchozích bodů DATA-06,
-    data © přispěvatelé OpenStreetMap, ODbL 1.0); výška obce zatím
-    nedoložena — doplnit ze ČÚZK
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/1587266118 (bod
+    obce z katalogu výchozích bodů DATA-06, data © přispěvatelé
+    OpenStreetMap, ODbL 1.0). Výška obce: oficiální turistický portál Svazku
+    měst a obcí Krkonoše region-krkonose.cz/obce/pec-pod-snezkou/ (načteno
+    4. 8. 2026): „Pec pod Sněžkou najdete v nadmořské výšce 750 m" — jedno
+    číslo, ne rozpětí jako u sousedních obcí; ověření proti ČÚZK (zadání
+    F1a) zůstává otevřené.
   verified: false
-  checked: '2026-05-06'
+  checked: '2026-08-04'
 
 # Vazba na katalog výchozích bodů (data/oblasti/krkonose/vychozi-body-kandidati.json)
 vychoziBody:

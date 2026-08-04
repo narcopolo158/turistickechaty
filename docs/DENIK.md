@@ -29,6 +29,73 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (denní bezobslužná session) — perexy středisek odemčeny; chybná adresa portálu svazku byla ta pravá překážka
+
+**Proč zrovna tohle.** Backlog shora: DATA-04, DATA-05, DATA-20, DATA-22,
+DATA-25, DATA-28 — všech šest visí na tobě (telefonáty, klik na workflow,
+rozhodnutí o sémantice pole `obec`), okomentovány jsou v backlogu a beze
+změny. První položka, do které bezobslužný běh opravdu dosáhne, je zbytek
+**F1-IMPL / F1e**, a v něm konkrétně perexy středisek — blok `overeniPerex`
+vznikl 3. 8., ale vyplněné ho mělo jediné středisko z šestnácti.
+
+**Hotovo:**
+
+1. **Osm krkonošských středisek dostalo doložený perex** (Benecko, Dolní
+   Dvůr, Harrachov, Janské Lázně, Pec pod Sněžkou, Rokytnice nad Jizerou,
+   Špindlerův Mlýn, Vrchlabí) — všechny z jednoho pramene, oficiálního
+   portálu svazku, každý s doslovnou citací v `overeniPerex` a
+   `verified: false` (konvence B). S Horním Maršovem z 3. 8. je to **9 z 16**.
+2. **Vedlejší nález, který to celé odemkl:** správná adresa portálu je
+   `region-krkonose.cz/obce/<slug>/`, ne `region-krkonose.cz/<slug>/`, jak
+   si to nesly poznámky z 3. 8. Pod chybným tvarem to vypadalo, že portál
+   většinu obcí prostě nemá — přitom má rozcestník `…/obce/`. Zapsáno
+   i k Černému Dolu, aby na to příští běh nenarazil znovu.
+3. **Druhá doložená výška obce: Pec pod Sněžkou 750 m** (pramen uvádí jedno
+   číslo, ne rozpětí; vzor Dolního Dvora z 3. 8., ověření proti ČÚZK dál
+   otevřené). U Benecka (682–1010 m), Špindlerova Mlýna (575–1555 m)
+   a Vrchlabí (400–1036 m) `vyskaObce` **schválně zůstává prázdné** — pramen
+   dává rozpětí a vybrat z něj jedno číslo by bylo domýšlení; důvod je
+   zapsaný v každém souboru.
+4. **Dvě střediska vědomě bez perexu, s důvodem v datech.** *Malá Úpa*: obě
+   věty se načetly ve strojově přeložené podobě („ve eastern část oblasti
+   Krkonoše"), takže české znění pramene neznáme a citovat ho nelze.
+   *Černý Důl*: v přehledu obcí portálu svazku vůbec není a náhradní krajský
+   pramen si u výšky **sám odporuje** (684 m v textu × 585 m v tabulce téže
+   stránky) a o dopravě mlčí — proto ani výška, ani doprava, ani perex.
+5. **Dva nové hlídací testy** (`tests/int/strediska-data.int.spec.ts`):
+   perex smí existovat jen s blokem ověření (source + `verified: false` +
+   `checked`), a perex nesmí jmenovat pramen ve větě — týž vzor, jaký
+   ban-scan hlídá u chat („podle webu…", „dle portálu…"). Druhý test rovnou
+   zachytil vlastní chybu: první verze perexu Vrchlabí obsahovala „podle
+   portálu svazku…"; věta byla hodnotící a vypadla celá.
+
+**Kontroly:** `tsc --noEmit` čistý, `npm run kontrola` celé zelené,
+ban-scan **beze změny 262 zásahů** (ověřeno proti stavu před zásahem).
+Vitest: 720 prošlo (o 2 víc = nové testy), **8 padá stejně jako před
+zásahem** — jsou to čtyři soubory vyžadující databázi (`missing secret key`
+/ Payload), v sandboxu bez Postgresu padají dlouhodobě. Regrese to není,
+změřeno oběma směry přes `git stash`.
+
+**Příště:** ① dotáhnout perexy zbylých CZ středisek — Malá Úpa (znovu, až
+se stránka načte v pořádku) a Černý Důl (zkusit `…/obce/cerny-dul/` ručně);
+② polská střediska (Karpacz, Przesieka, Szklarska Poręba) — jiný pramen,
+handoff u nich zatím drží „PL bez čísel"; ③ jizerská střediska nemají perex
+ani dopravu vůbec (Bílý Potok, Hejnice, Janov nad Nisou, Lázně Libverda) —
+stejný postup, jiný portál.
+
+**Otázky pro Michala:**
+
+1. **Certifikát pro `dev.turistickechaty.cz` pořád visí** (blok z 3. 8.):
+   Forge → Domains → SSL → Let's Encrypt. Do té doby fotí vizuální kontrola
+   po http a web jede nešifrovaně.
+2. **Výška obce u měst rozložených po svahu** — Benecko, Špindl a Vrchlabí
+   mají v prameni rozpětí, ne jedno číslo. Necháme pole prázdné do ČÚZK
+   (tak to teď je), nebo chceš stat-tile zobrazovat rozpětí? To by chtělo
+   změnu schématu, takže se ptám dřív, než se to nasčítá.
+3. **Perex polských středisek** — má se hledat na polských portálech
+   a psát česky z polského pramene, nebo je nechat bez perexu, dokud
+   nebude český zdroj?
+
 ## 2026-08-03 (blok 7, hlavní session — 2h mandát) — zbytky F1 z dosahu sandboxu: CI kontrola stagingu + doprava/výška/perex středisek
 
 **Kontext:** mandát zněl DATA-25 → F1-IMPL, jenže obě položky jsou

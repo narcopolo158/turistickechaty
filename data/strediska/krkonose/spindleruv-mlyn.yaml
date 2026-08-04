@@ -8,6 +8,20 @@ slug: spindleruv-mlyn
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace oficiálního portálu svazku.
+perex: >-
+  Horské středisko v nadmořské výšce v rozmezí od 575 do 1555 metrů. Název
+  původní obce vznikl podle rodiny Spindlerových, která zde vlastnila mlýn.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/spindleruv-mlyn/ (načteno 4. 8. 2026):
+    „Špindlerův Mlýn najdete v nadmořské výšce 575 – 1555 m v oblasti
+    Krkonoše. Název původní obce vznikl podle rodiny Spindlerových, která
+    zde vlastnila mlýn."
+  verified: false
+  checked: '2026-08-04'
+
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7256448
 lng: 15.6067567
@@ -58,3 +72,7 @@ interniPoznamky: >-
   (oficiální web střediska/obce); u polských středisek zatím žádná čísla
   (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
   doplněna 2. 8. 2026 z oficiálních stránek města.
+
+  Perex doplněn 4. 8. 2026 z portálu svazku. `vyskaObce` ZŮSTÁVÁ prázdné:
+  portál uvádí ROZPĚTÍ 575–1555 m (od údolí po hřeben), ne jednu výšku obce.
+  Vybrat z rozpětí jedno číslo = domýšlení; čeká se na ČÚZK.

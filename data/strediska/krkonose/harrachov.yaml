@@ -8,6 +8,21 @@ slug: harrachov
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace oficiálního portálu svazku.
+perex: >-
+  Turistické město „zastrčené" u hranic v západních Krkonoších, vyhlášené
+  svými skokanskými můstky.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/harrachov/ (načteno 4. 8. 2026): „Harrachov se
+    nachází „zastrčený" u hranic v západních Krkonoších. Je velmi bohatým
+    turistickým městem a vyhlášený svými skokanskými můstky." Hodnotící
+    „velmi bohaté" se do perexu nepřevzalo (kolekce Strediska: žádné
+    hodnocení); výšku obce pramen neuvádí.
+  verified: false
+  checked: '2026-08-04'
+
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7720087
 lng: 15.4315431

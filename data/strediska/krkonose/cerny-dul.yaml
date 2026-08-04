@@ -31,3 +31,22 @@ interniPoznamky: >-
   Nadějný cíl pro ruční běh: region-krkonose.cz/cerny-dul/ — týž oficiální
   portál svazku, který dopravu doložil Hornímu Maršovu a Dolnímu Dvoru
   (odsud nešel načíst kvůli omezení sandboxu, ne kvůli webu).
+
+  Pokus 4. 8. 2026 (denní session) — OPRAVA ADRESY A DVA NÁLEZY:
+  (1) správný tvar odkazu na portálu svazku je
+  region-krkonose.cz/obce/<slug>/, ne /<slug>/ (přehled na
+  region-krkonose.cz/obce/). Tímhle tvarem se dnes načetlo sedm obcí, ale
+  Černý Důl mezi nimi NENÍ: v přehledu obcí portálu chybí (portál vypisuje
+  dvanáct obcí a městys mezi nimi není) a přímé načtení /obce/cerny-dul/
+  sandbox nepustil. Neznamená to, že stránka neexistuje — jen ji odsud
+  nemáme čím doložit.
+  (2) Náhradní pramen hkregion.cz (krajský přehled obcí, načteno 4. 8.
+  2026) dopravu neuvádí vůbec a u VÝŠKY OBCE SÁM SOBĚ ODPORUJE: v textu
+  „Městys leží v údolí potoka Čisté na úpatí Krkonoš ve výšce 684 m. n. m.",
+  v kontaktní tabulce téže stránky 585 m. Rozpor uvnitř jednoho pramene =
+  `vyskaObce` se NEZAPISUJE ani jedním číslem; rozhodne ČÚZK.
+  Použitelný odtud je jen popis („Městys Černý Důl patří mezi původní
+  horské obce Krkonoš.", tři katastrální území Černý Důl / Čistá
+  v Krkonoších / Fořt, první zmínka 1489, městečkem 1564, městysem 2008) —
+  perex z něj ale nepíšu, dokud se nezkusí primární portál svazku; jinak by
+  středisko mělo perex z jiného pramene než sousedi.
