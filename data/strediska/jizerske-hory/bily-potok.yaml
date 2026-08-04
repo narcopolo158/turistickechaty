@@ -36,8 +36,13 @@ overeniLokace:
 # Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
 # čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
 doprava:
+  vlak: >-
+    V obci končí regionální trať 038 z Raspenavy a Hejnic; stanice se
+    jmenuje Bílý Potok pod Smrkem.
   bus: >-
     Do obce jezdí autobusová linka 650 (Hejnice – Bílý Potok – Smědava).
+  auto: >-
+    Obcí prochází silnice č. 290 z Frýdlantu na Smědavu a dále na Desnou.
 overeniDoprava:
   source: >-
     Oficiální web obce Lázně Libverda, článek „DO JIZEREK VEŘEJNOU
@@ -47,6 +52,13 @@ overeniDoprava:
     jmenuje LINKY, ne jízdní řády ani zastávky — profil proto netvrdí, kdy
     a odkud spoje jedou. Je to web sousední obce, ne dopravce; do prvního
     ověření u dopravce zůstává verified:false.
+
+    Vlak a silnice z oficiálního webu obce Bílý Potok (bily-potok.cz,
+    načteno 4. 8. 2026): „V obci končí regionální železniční trať 038
+    z Raspenavy a Hejnic a nachází se zde železniční stanice Bílý Potok
+    pod Smrkem.", „Obcí prochází silnice 290 z Frýdlantu na Smědavu a dále
+    do obce Desná." O PARKOVÁNÍ tentýž web mlčí: v menu položku „Parkování"
+    má, ale bez obsahu — proto se o něm nepíše nic.
   verified: false
   checked: '2026-08-04'
 

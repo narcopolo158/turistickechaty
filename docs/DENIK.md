@@ -94,11 +94,21 @@ nevypisuje" platí dál. Test si tím zachoval smysl a nemusel se změkčovat.
 ban-scan **beze změny 262 zásahů**. Vitest **731 prošlo** (o 11 víc než
 ráno), padá stejných 8 jako před blokem — testy vyžadující databázi.
 
-**Zbývá u středisek:** ① Černý Důl — jediné bez perexu i dopravy (na portálu
-svazku v přehledu obcí není, náhradní krajský pramen si u výšky sám odporuje
-684 × 585 m); ② `doprava.auto` pro Bílý Potok, Hejnice, Janov nad Nisou
-a Lázně Libverda (obecní weby o parkování mlčí — zkusit portál kraje);
-③ Przesieka pořád bez dopravy.
+**Dovětek na konci bloku — dvě slepé uličky doložené, ať se nezkoušejí
+znovu:** (a) **Černý Důl na portálu svazku není.** Projity všechny tři
+stránky přehledu obcí (dohromady 30 obcí, městys mezi nimi ne; strana-4
+vrací 404) a doménové hledání najde jen jeho stránky lyžování a ubytování.
+U tohohle pramene je hotovo — perex, doprava i výška musí přijít odjinud.
+(b) **Hejnice mají stránku „Parkování", ale nejde přečíst:** zacyklila se
+v přesměrování https→http→https. Není to mlčení webu, je to jeho porucha —
+zkusit ručně nebo z jiné sítě. Obojí zapsáno v `interniPoznamky`.
+**Bílý Potok naopak přibral vlak i auto** z vlastního webu obce: koncová
+stanice trati 038 a silnice č. 290 z Frýdlantu na Smědavu; o parkování týž
+web mlčí (položka v menu je prázdná), takže se o něm nepíše nic.
+
+**Zbývá u středisek:** ① Černý Důl — jediné úplně bez perexu i dopravy;
+② `doprava.auto` pro Hejnice, Janov nad Nisou a Lázně Libverda (obecní weby
+o parkování mlčí nebo jsou rozbité); ③ Przesieka pořád bez dopravy.
 
 **Otázky pro Michala:** nic nového nad rámec už zapsaných — pořád visí
 certifikát pro dev.turistickechaty.cz a klik na DATA-35. Jeden nález
