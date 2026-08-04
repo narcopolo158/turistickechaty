@@ -29,6 +29,63 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 4) — DATA-35 doběhlo: 18 středisek má výšku, model rozsoudil Černý Důl
+
+**Michal pustil workflow, commit 8d08be1 dorazil.** Dopočet proběhl pro
+13 krkonošských středisek; s pěti hodnotami z lidských pramenů má výšku
+**18 z 22**. Rozsah 420 m (Lázně Libverda) až 978 m (Malá Úpa).
+
+**Křížová kontrola proti skutečnosti — model obstál.** Vrchlabí 480 m,
+Špindlerův Mlýn 715 m, Horní Maršov 569 m, Strážné 793 m: všechno sedí
+s tím, co se o těch místech běžně uvádí. **A hlavně: Černý Důl 589 m.**
+To je odpověď na včerejší rozpor krajského pramene, který v textu psal
+684 m a v kontaktní tabulce téže stránky 585 m — model se od tabulky liší
+o 4 metry a od textu o 95. Nedokazuje to, že tabulka má pravdu (model je
+pořád model), ale ukazuje, které číslo je pravděpodobnější; 684 m se proto
+do dat nepíše ani jako alternativa. Černý Důl tím má aspoň jeden vyplněný
+údaj, i když perex a dopravu dál nemá odkud vzít.
+
+**Zároveň je vidět, proč Michalovo „nebo lépe" bylo správné.** U tří měst
+lze porovnat obě metody: Špindl — bod 715 m, střed rozpětí by dal 1065 m
+(o 350 m víc než skutečný střed města); Vrchlabí — bod 480 m proti středu
+718 m; Benecko — bod 790 m proti středu 846 m. Půlení rozpětí by u údolních
+měst dávalo systematicky moc vysoká čísla, protože horní mez je hřeben.
+Naopak u Przesieky, což je malá ves v jednom údolí, sedí obojí na 8 metrů.
+
+**Uklizeno po skriptu — a opraveno, ať se to neopakuje.** Dopočet hodnotu
+doplnil, ale starou větu „výška obce zatím nedoložena — doplnit ze ČÚZK"
+po sobě nesmazal: u šesti středisek stálo číslo hned vedle tvrzení, že
+číslo chybí. Vyčištěno ručně a skript dostal `bezVetyOChybejiciVysce()`
+(+ tři testy), takže příští běh nad Jizerkami to už neudělá. Stejně tak
+přepsáno sedm interních poznámek, které pořád tvrdily „`vyskaObce` ZŮSTÁVÁ
+prázdné" — u každé je teď i porovnání bodu se středem rozpětí.
+
+**Dlaždice „výška obce" konečně existuje.** Byla v handoffu F1e, ale nikdy
+se nenapsala, protože ji nemělo čím naplnit ani jedno středisko — takže
+18 čerstvě doložených čísel by na webu nebylo vidět. Mikro-zdroj pod ní
+říká, ČÍM to číslo je: „výškový model v referenčním bodě obce" vs.
+„z doloženého pramene, neověřeno proti ČÚZK". To rozlišení je podstatné —
+480 m u Vrchlabí je vzorek modelu ve středu města, ne údaj z registru.
+
+**Nové hlídací testy:** výšky musí padnout do rozumného rozsahu (200–1650 m,
+celá čísla) — rozbitý dopočet nebo špatný bod by jinak zapsal nesmysl
+a nikdo by si nevšiml, protože vyplněné pole vypadá vyplněně; zdroj lokace
+si nesmí protiřečit; a mikro-zdroj dlaždice musí model odlišit od pramene.
+
+**Kontroly:** `tsc` čistý, `eslint` čistý, `npm run kontrola` zelené.
+Vitest **737 prošlo** (+6), padá stejných 8 jako předtím (testy s databází).
+
+**Příště:** ① perex a doprava pro Černý Důl (na portálu svazku není —
+zkusit vlastní web městyse jinou cestou); ② `doprava.auto` pro Hejnice
+(stránka o parkování se zacyklila v přesměrování), Janov nad Nisou
+a Lázně Libverda; ③ Przesieka bez dopravy; ④ po běhu DATA-06 pro Jizerky
+pustit DATA-35 znovu — čtyři jizerská střediska pak dostanou výšku.
+
+**Otázky pro Michala:** ① **Benecko stojí za přeměření** — model dává 790 m,
+ale běžně se u Benecka uvádí kolem 880 m; obec se táhne po svahu, takže
+záleží, kde uzel OSM leží. Kdybys tam byl, hodí se pohled na rozcestník.
+② Certifikát pro dev.turistickechaty.cz pořád visí.
+
 ## 2026-08-04 (blok 3, 2h v kuse) — perex má všech 22 středisek; jizerské autobusy poprvé doložené
 
 **Zadání Michala:** „PL zahrnout, pokračuj samostatně dál, můžeš pracovat

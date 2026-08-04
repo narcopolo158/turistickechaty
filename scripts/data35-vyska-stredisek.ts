@@ -82,6 +82,20 @@ export const vetaOVysce = (
 export const stredRozpeti = (min: number, max: number): number => Math.round((min + max) / 2)
 
 /**
+ * Odstraní ze zdroje lokace větu o tom, že výška teprve chybí. Bez toho by si
+ * soubor po dopočtu protiřečil — první běh 4. 8. 2026 nechal u šesti středisek
+ * „výška obce zatím nedoložena — doplnit ze ČÚZK" hned vedle vyplněné hodnoty
+ * a muselo se to uklízet ručně. Věta o OTEVŘENÉM ověření ČÚZK se tím nemaže:
+ * tu doplňuje `vetaOVysce()` a hlídací test ji vyžaduje.
+ */
+export const bezVetyOChybejiciVysce = (source: string): string =>
+  source
+    .replace(/;?\s*výšk[au]\s+obce\s+zatím\s+nedoložena\s*—\s*doplnit\s+ze\s+ČÚZK\.?/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+\./g, '.')
+    .trim()
+
+/**
  * Vloží `vyskaObce` HNED ZA `lng`, ne na konec mapy. `setIn` na neexistující
  * klíč připojuje na konec — výška by pak seděla až pod interními poznámkami,
  * daleko od GPS a od bloku ověření, ke kterému patří (a vzor Dolního Dvora
@@ -182,7 +196,7 @@ const main = async (): Promise<void> => {
     const vyska = Math.round(vysky[i])
     const doc = s.doc
     vlozVyskuZaLng(doc, vyska)
-    const puvodni = String(doc.getIn(['overeniLokace', 'source']) ?? '').trim()
+    const puvodni = bezVetyOChybejiciVysce(String(doc.getIn(['overeniLokace', 'source']) ?? ''))
     doc.setIn(
       ['overeniLokace', 'source'],
       `${puvodni}${puvodni.endsWith('.') || puvodni === '' ? '' : '.'} ${vetaOVysce(bod, vyska, datum, 'uzel OSM place, týž bod jako GPS výš')}`.trim(),

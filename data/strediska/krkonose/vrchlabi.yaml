@@ -80,8 +80,10 @@ interniPoznamky: >-
   Doprava (vlak+bus+auto) doplněna 2. 8. 2026 z oficiálního turistického webu
   města.
 
-  Perex doplněn 4. 8. 2026 z portálu svazku. `vyskaObce` ZŮSTÁVÁ prázdné: portál
-  uvádí ROZPĚTÍ 400–1036 m, ne jednu výšku obce; čeká se na ČÚZK. Druhá věta
+  Perex doplněn 4. 8. 2026 z portálu svazku, který u výšky uvádí jen ROZPĚTÍ
+  400–1036 m. → `vyskaObce` VYPLNĚNO týž den během DATA-35: 480 m, výška
+  referenčního bodu (uzel OSM place = střed města). Střed rozpětí by dal 718 m,
+  tedy o 238 m víc. Ověření proti ČÚZK zůstává otevřené. Druhá věta
   pramene („Město bohaté na sportoviště, památky i kulturu.") se do perexu
   ZÁMĚRNĚ nepřevzala: je to hodnocení, ne fakt (kolekce Strediska: „žádné ceníky
   ani hodnocení"), a jmenovat pramen přímo ve větě zakazuje pravidlo o vsuvkách

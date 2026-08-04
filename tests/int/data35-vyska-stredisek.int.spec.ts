@@ -11,7 +11,13 @@
 import { describe, expect, it } from 'vitest'
 import { parseDocument } from 'yaml'
 
-import { rozhodni, stredRozpeti, vetaOVysce, vlozVyskuZaLng } from '../../scripts/data35-vyska-stredisek'
+import {
+  bezVetyOChybejiciVysce,
+  rozhodni,
+  stredRozpeti,
+  vetaOVysce,
+  vlozVyskuZaLng,
+} from '../../scripts/data35-vyska-stredisek'
 
 describe('DATA-35 — koho dopočítat', () => {
   it('středisko s výškou z lidského pramene se NEPŘEPISUJE (vzor Dolní Dvůr 641 m)', () => {
@@ -87,5 +93,41 @@ describe('DATA-35 — věta o výšce projde hlídacím pravidlem středisek', (
     expect(veta).toMatch(/50\.666334/)
     expect(veta).toMatch(/15\.548165/)
     expect(veta).toContain('812 m')
+  })
+})
+
+describe('DATA-35 — zdroj lokace si po dopočtu neprotiřečí', () => {
+  // Regrese z prvního ostrého běhu (4. 8. 2026): skript výšku doplnil, ale
+  // starou větu „výška obce zatím nedoložena" po sobě nesmazal, takže u šesti
+  // středisek stálo vedle sebe číslo i tvrzení, že číslo chybí.
+  const PUVODNI =
+    'OpenStreetMap https://www.openstreetmap.org/node/1587265838 (bod obce z katalogu ' +
+    'výchozích bodů DATA-06, data © přispěvatelé OpenStreetMap, ODbL 1.0); ' +
+    'výška obce zatím nedoložena — doplnit ze ČÚZK'
+
+  it('smaže větu o chybějící výšce, zbytek zdroje nechá být', () => {
+    const vycisteno = bezVetyOChybejiciVysce(PUVODNI)
+    expect(vycisteno).not.toMatch(/zatím nedoložena/)
+    expect(vycisteno).toMatch(/OpenStreetMap/)
+    expect(vycisteno).toMatch(/ODbL/)
+  })
+
+  it('zdroj bez té věty se nemění', () => {
+    const cisty = 'OpenStreetMap (bod obce) — ODbL 1.0.'
+    expect(bezVetyOChybejiciVysce(cisty)).toBe(cisty)
+  })
+
+  it('výsledný zdroj projde hlídacím pravidlem středisek (výška + ČÚZK)', () => {
+    const vysledek = `${bezVetyOChybejiciVysce(PUVODNI)}. ${vetaOVysce(
+      { lat: 50.725645, lon: 15.606757 },
+      715,
+      '2026-08-04',
+      'uzel OSM place',
+    )}`
+    expect(vysledek).toMatch(/[Vv]ýšk/)
+    expect(vysledek).toMatch(/ČÚZK/)
+    // …ale právě jednou, a ve významu „ověření teprve proběhne".
+    expect(vysledek).not.toMatch(/zatím nedoložena/)
+    expect(vysledek).toMatch(/ČÚZK zůstává otevřené/)
   })
 })

@@ -13,6 +13,8 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { parse } from 'yaml'
 
+import { popisPuvoduVysky } from '@/lib/katalog'
+
 const KOREN = process.cwd()
 
 type StrediskoYaml = {
@@ -164,6 +166,50 @@ describe('střediska všech oblastí — veřejná próza a doložená výška',
       expect(typeof data.vyskaObce, soubor).toBe('number')
       expect(data.overeniLokace?.source, `${soubor}: výška obce bez dokladu ve zdroji lokace`).toMatch(/[Vv]ýšk/)
       expect(data.overeniLokace?.source, `${soubor}: u výšky chybí poznámka o otevřeném ověření ČÚZK`).toMatch(/ČÚZK/)
+    }
+  })
+
+  // Po prvním ostrém běhu DATA-35 (4. 8. 2026) nese výšku 18 z 22 středisek
+  // a většina hodnot pochází z výškového modelu. Špatně zadaný bod nebo
+  // rozbitá odpověď API by se projevily nesmyslným číslem — 0 m, 5 000 m —
+  // a nikdo by si toho nevšiml, protože pole samo o sobě vypadá vyplněně.
+  it('výšky jsou v rozsahu, který dává v našich pohořích smysl', () => {
+    const sVyskou = strediska.filter(({ data }) => data.vyskaObce != null)
+    expect(sVyskou.length).toBeGreaterThanOrEqual(15)
+    for (const { soubor, data } of sVyskou) {
+      // Nejníž položené středisko korpusu jsou Lázně Libverda (420 m),
+      // nejvýš Malá Úpa (978 m). Meze jsou schválně široké — hlídají překlep
+      // a rozbitý dopočet, ne přesnost modelu.
+      expect(data.vyskaObce, `${soubor}: výška mimo rozumný rozsah`).toBeGreaterThan(200)
+      expect(data.vyskaObce, `${soubor}: výška mimo rozumný rozsah`).toBeLessThan(1650)
+      expect(Number.isInteger(data.vyskaObce), `${soubor}: výška není celé číslo`).toBe(true)
+    }
+  })
+
+  it('zdroj lokace si po dopočtu neprotiřečí (regrese z běhu 4. 8. 2026)', () => {
+    // Skript výšku doplnil, ale větu „výška obce zatím nedoložena" po sobě
+    // nesmazal — u šesti středisek pak stálo číslo vedle tvrzení, že chybí.
+    for (const { soubor, data } of strediska) {
+      if (data.vyskaObce == null) continue
+      expect(data.overeniLokace?.source, `${soubor}: zdroj tvrdí, že výška chybí, ale v datech je`).not.toMatch(
+        /zatím nedoložena/,
+      )
+    }
+  })
+
+  it('mikro-zdroj dlaždice rozliší model od lidského pramene', () => {
+    // Dlaždice „výška obce" na mini-stránce musí říct, ČÍM to číslo je.
+    const dleModelu = strediska.filter(({ data }) => data.overeniLokace?.source?.includes('Mapy.com Elevation'))
+    const dlePramene = strediska.filter(
+      ({ data }) => data.vyskaObce != null && !data.overeniLokace?.source?.includes('Mapy.com Elevation'),
+    )
+    expect(dleModelu.length).toBeGreaterThan(0)
+    expect(dlePramene.length).toBeGreaterThan(0)
+    for (const { soubor, data } of dleModelu) {
+      expect(popisPuvoduVysky(data.overeniLokace?.source), soubor).toMatch(/výškový model/)
+    }
+    for (const { soubor, data } of dlePramene) {
+      expect(popisPuvoduVysky(data.overeniLokace?.source), soubor).toMatch(/doloženého pramene/)
     }
   })
 

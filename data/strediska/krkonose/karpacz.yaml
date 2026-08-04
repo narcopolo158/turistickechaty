@@ -31,7 +31,7 @@ overeniLokace:
   source: >-
     OpenStreetMap https://www.openstreetmap.org/node/385563068 (bod obce z
     katalogu výchozích bodů DATA-06, data © přispěvatelé OpenStreetMap, ODbL
-    1.0); výška obce zatím nedoložena — doplnit ze ČÚZK. Výška obce: nadmořská
+    1.0). Výška obce: nadmořská
     výška referenčního bodu střediska (uzel OSM place, týž bod jako GPS výš,
     50.774749, 15.754203) z výškového modelu Mapy.com Elevation API (načteno
     2026-08-04): 619 m — model s různou přesností, nemusí odpovídat realitě,
@@ -82,6 +82,7 @@ interniPoznamky: >-
   Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu města.
 
   Perex doplněn 4. 8. 2026 z turistického portálu Dolnoslezského vojvodství
-  (oficiální web města výšku neuvádí). Rozpětí 500–1375 m se do `vyskaObce`
-  nezapisuje — jedno číslo dodá DATA-35 z referenčního bodu (Michal 4. 8. 2026
-  potvrdil, že PL střediska se do běhu zahrnují).
+  (oficiální web města výšku neuvádí), který u výšky uvádí jen ROZPĚTÍ
+  500–1375 m. → `vyskaObce` VYPLNĚNO týž den během DATA-35: 619 m, výška
+  referenčního bodu. Michal 4. 8. 2026 potvrdil, že PL střediska se do běhu
+  zahrnují.

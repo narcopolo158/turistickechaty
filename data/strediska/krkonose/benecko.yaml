@@ -74,7 +74,11 @@ interniPoznamky: >-
   Doprava (auto) doplněna 2. 8. 2026 z informačního webu střediska
   (benecko.info).
 
-  Perex doplněn 4. 8. 2026 z portálu svazku. Pole `vyskaObce` ZŮSTÁVÁ prázdné
-  schválně: portál uvádí ROZPĚTÍ 682–1010 m (obec se táhne po svahu), ne jednu
-  výšku obce — jedno číslo by z rozpětí musel někdo vybrat, což je domýšlení. Až
-  bude ČÚZK, zapsat odtud.
+  Perex doplněn 4. 8. 2026 z portálu svazku, který u výšky uvádí jen ROZPĚTÍ
+  682–1010 m (obec se táhne po svahu). Pole `vyskaObce` proto zůstávalo prázdné
+  — jedno číslo by z rozpětí musel někdo vybrat. → VYPLNĚNO týž den během
+  DATA-35: 790 m, výška referenčního bodu (uzel OSM place = střed obce)
+  z výškového modelu. K POROVNÁNÍ, až přijde ČÚZK: model dává 790 m, střed
+  rozpětí by byl 846 m — rozdíl 56 m ukazuje, že střed rozpětí je slabší odhad
+  než bod. Benecko je zároveň případ, kde model stojí za přeměření: obec se
+  táhne po svahu a leckde se uvádí i 880 m.

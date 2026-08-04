@@ -31,7 +31,7 @@ overeniLokace:
   source: >-
     OpenStreetMap https://www.openstreetmap.org/node/31916864 (bod obce z
     katalogu výchozích bodů DATA-06, data © přispěvatelé OpenStreetMap, ODbL
-    1.0); výška obce zatím nedoložena — doplnit ze ČÚZK. Výška obce: nadmořská
+    1.0). Výška obce: nadmořská
     výška referenčního bodu střediska (uzel OSM place, týž bod jako GPS výš,
     50.826801, 15.522126) z výškového modelu Mapy.com Elevation API (načteno
     2026-08-04): 632 m — model s různou přesností, nemusí odpovídat realitě,
@@ -84,6 +84,8 @@ interniPoznamky: >-
 
   Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu města.
 
-  Perex doplněn 4. 8. 2026 z oficiálního turistického webu města. Rozpětí
-  440–1471 m se do `vyskaObce` nezapisuje — jedno číslo dodá DATA-35 z
-  referenčního bodu (PL zahrnuty dle rozhodnutí Michala 4. 8. 2026).
+  Perex doplněn 4. 8. 2026 z oficiálního turistického webu města, který u výšky
+  uvádí jen ROZPĚTÍ 440–1471 m. → `vyskaObce` VYPLNĚNO týž den během DATA-35:
+  632 m, výška referenčního bodu (uzel OSM place = střed města). PL zahrnuty dle
+  rozhodnutí Michala 4. 8. 2026. Ověření zůstává otevřené — u polských středisek
+  spíš proti polskému registru než proti ČÚZK.

@@ -63,6 +63,13 @@ interniPoznamky: >-
   tři stránky přehledu (region-krkonose.cz/obce/, …/strana-2/, …/strana-3/ —
   dohromady 30 obcí, městys mezi nimi není; …/strana-4/ vrací 404) a doménové
   hledání najde jen jeho stránky lyžování a ubytování, žádnou stránku obce.
-  Přestat to u tohoto pramene zkoušet; perex, doprava i výška musí přijít
-  odjinud — kandidáti: vlastní web městyse (dopravu neuvádí), ČÚZK pro výšku,
-  nebo Michalova návštěva.
+  Přestat to u tohoto pramene zkoušet; perex a doprava musí přijít odjinud —
+  kandidáti: vlastní web městyse (dopravu neuvádí) nebo Michalova návštěva.
+
+  VÝŠKA VYŘEŠENA JINAK, 4. 8. 2026 během DATA-35: `vyskaObce: 589` m z výškového
+  modelu v referenčním bodě. Je to zároveň KŘÍŽOVÁ KONTROLA včerejšího rozporu
+  krajského pramene (684 m v textu × 585 m v kontaktní tabulce téže stránky):
+  model sedí na 4 metry s tabulkovou hodnotou 585 m, kdežto od 684 m se liší
+  o 95 m. Nedokazuje to, že tabulka má pravdu — model je pořád jen model —
+  ale ukazuje, které z obou čísel je pravděpodobnější; 684 m se proto do dat
+  nepíše ani jako alternativa. Rozhodne ČÚZK.

@@ -19,7 +19,7 @@ import { fotkaStrediska } from '@/lib/fotky-stredisek'
 import { redakcniFotkyStredisek } from '@/lib/fotky-redakcni'
 import { bodyKatalogu, jakSeSemDostat } from '@/lib/jak-se-sem-dostat'
 import { jsonLdStrediska } from '@/lib/jsonld-stredisko'
-import { formatVyskaM } from '@/lib/katalog'
+import { formatVyskaM, popisPuvoduVysky } from '@/lib/katalog'
 import { lanovkySeSlugy } from '@/lib/lanovky'
 import { cileOdtud, dalsiList, sousedniVychodiste } from '@/lib/odtud-dal'
 import { pristupyStrediska, zdrojPristupu, type Usek } from '@/lib/pristupy'
@@ -245,6 +245,17 @@ export default async function StrediskoPage({ params }: { params: Promise<Params
           <span>{lanovky.length === 1 ? 'lanovka v místě' : 'lanovek v místě'}</span>
           <i>dráhy s dolní stanicí do 2,5 km</i>
         </div>
+        {/* Výška obce — dlaždice z handoffu F1e, která do 5. 8. 2026 neexistovala,
+            protože ji nemělo čím naplnit ani jedno středisko. Po DATA-35 ji má
+            18 z 22, a mikro-zdroj musí říct ČÍM je: hodnota z výškového modelu
+            v referenčním bodě není totéž co číslo publikované obcí. */}
+        {s.vyskaObce != null && (
+          <div className="pohori-tile">
+            <b>{formatVyskaM(s.vyskaObce)}</b>
+            <span>výška obce</span>
+            <i>{popisPuvoduVysky(s.overeniLokace?.source)}</i>
+          </div>
+        )}
       </div>
 
       {s.lanovka && (

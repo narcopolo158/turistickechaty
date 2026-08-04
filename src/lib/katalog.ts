@@ -130,6 +130,18 @@ export const filtrujKatalog = (index: IndexChata[], stav: KatalogStav): IndexCha
 export const formatVyskaM = (vyska: number | null): string =>
   vyska == null ? '—' : `${new Intl.NumberFormat('cs-CZ').format(vyska).replace(/\s/g, ' ')} m`
 
+/**
+ * Mikro-zdroj pod dlaždicí „výška obce": čím to číslo je. Rozlišuje se podle
+ * zdroje lokace — dopočet DATA-35 se v něm hlásí jménem Elevation API. Čtenář
+ * má právo vědět, že 480 m u Vrchlabí je vzorek výškového modelu ve středu
+ * města, ne údaj z registru; u obcí rozložených po svahu totiž prameny uvádějí
+ * rozpětí a jedno číslo je vždycky něčí volba bodu.
+ */
+export const popisPuvoduVysky = (zdrojLokace?: string | null): string =>
+  zdrojLokace?.includes('Mapy.com Elevation')
+    ? 'výškový model v referenčním bodě obce'
+    : 'z doloženého pramene, neověřeno proti ČÚZK'
+
 /** ISO „2026-07-19" → „19. 7. 2026"; bez data „—". */
 export const formatCheckedDatum = (iso: string | null): string => {
   const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso ?? '')
