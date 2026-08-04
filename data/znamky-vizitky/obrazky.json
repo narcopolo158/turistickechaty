@@ -1,8 +1,8 @@
 {
   "zdroj": "Turistické známky s.r.o. (turisticke-znamky.cz, znaczki-turystyczne.pl)",
   "svolil": "Turistické známky s.r.o. (Mgr. David Holub) — souhlas e-mail + telefonicky 22. 7. 2026; týká se obou domén vydavatele (turisticke-znamky.cz i znaczki-turystyczne.pl)",
-  "poznamka": "Obrázky známek se svolením vydavatele. Jen system=znamka a domény Turistické známky s.r.o. České známky doplněny ručně (Michal) z oficiálních zdrojů — Action na turisticke-znamky.cz nedosáhne (blokace datacentrové IP).",
-  "stazeno": "2026-07-22",
+  "poznamka": "Obrázky známek se svolením vydavatele. Jen system=znamka a jen domény Turistické známky s.r.o. (turisticke-znamky.cz i polská znaczki-turystyczne.pl); vizitky (Wander Book) se nestahují (bez svolení).",
+  "stazeno": "2026-08-04",
   "obrazky": [
     {
       "slug": "bouda-bile-labe",
@@ -66,6 +66,14 @@
       "soubor": "/znamky/chata-rozhled.png",
       "mime": "image/png",
       "poznamka": "číslo ověřeno z fyzické známky; kotouč nese 1207 m, shodně s webem chaty i katalogem České hory (profil rozpor nemá). URL detailu viděna ve výsledcích vyhledávání 26. 7. 2026 (ověřit klikem)"
+    },
+    {
+      "slug": "dom-slaski",
+      "cislo": "94",
+      "detailUrl": "https://www.znaczki-turystyczne.pl/znaczkowe-miejsca-turystyczne/schronisko-gorskie-dom-slaski-karkonosze-c94",
+      "obrazekUrl": "https://d2.znaczki-turystyczne.pl/images/icons/ic_menu_black.png",
+      "soubor": "/znamky/dom-slaski.png",
+      "mime": "image/png"
     },
     {
       "slug": "friesovy-boudy",
