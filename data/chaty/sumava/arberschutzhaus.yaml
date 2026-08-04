@@ -1,0 +1,138 @@
+# Arberschutzhaus — PRVNÍ NĚMECKÝ PROFIL průvodce; povýšen z kandidáta
+# DATA-01 triáží Tier 1 (4. 8. 2026, vzor DATA-03: katalog × OSM × vlastní
+# web). Německé jméno je primární (rozhodnutí Michala 20. 7. 2026 u polských
+# schronisek, rozšířené 4. 8. na bavorské objekty). Vše verified: false.
+
+nazev: Arberschutzhaus
+slug: arberschutzhaus
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Chata pod Velkým Javorem
+    poznamka: >-
+      český opisný ekvivalent (Arber = Velký Javor) — pomocné jméno pro
+      hledání, žádný pramen ho jako název nevede
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1134294
+lng: 13.1390849
+vyska: 1358
+obec: Bayerisch Eisenstein
+overeniLokace:
+  source: >-
+    GPS a výška: OpenStreetMap https://www.openstreetmap.org/way/32639765
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); týchž 1358 m vede externí katalog
+    (HUT-0278) i vlastní web („1.358 Meter über dem Meeresspiegel").
+    Obec Bayerisch Eisenstein: katalog; adresa provozovatele na webu zní
+    „Talstation Arber 1, D–94252 Bayerisch Eisenstein" — to je ale dolní
+    stanice lanovky, ne chata sama, proto se z ní poloha nedokládá.
+    Poloha „pod vrcholem Velkého Javoru" plyne z webu („direkt unterhalb
+    der Arber-Gondelbahn") a souřadnic. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita: katalog vede 41 lůžek, web 12 pokojů — čísla se NEVYLUČUJÍ
+# (12 pokojů může nést 41 lůžek), ale součet lůžek web neuvádí, takže
+# do pole jde katalogových 41 a pokoje zvlášť.
+nocleh: ano
+kapacita: 41
+pokoje:
+  - typ: 12 pokojů, každý s vlastní koupelnou (sprcha a WC)
+overeniNocleh:
+  source: >-
+    Vlastní web arberschutzhaus.de (načteno 4. 8. 2026): „12 moderních
+    pokojů", každý „eigenes Badezimmer mit Dusche und WC", ručníky, fén,
+    povlečení. Kapacita 41 lůžek: externí katalog (HUT-0278, ověřeno
+    k 2026-07-21) — web součet lůžek neuvádí, čísla se nevylučují.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (načteno 4. 8. 2026): dům má „Wirtshaus" (hospodu),
+    pořádá středeční „Tourenskigeher-Stammtisch" s thajskou kuchyní —
+    akce pro skialpinisty, tedy příchozí, ne jen hotelové hosty; výslovná
+    věta o veřejnosti ale na webu není. Katalog (HUT-0278): stravování
+    ano. Otvírací dobu web neuvádí — nezapisuje se.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+49 9925 9414 37'
+  email: arberschutzhaus@hohenzollern.com
+  web: https://www.arberschutzhaus.de/
+overeniProvoz:
+  source: >-
+    Vlastní web (načteno 4. 8. 2026): telefon +49 (0) 9925 9414-37,
+    e-mail arberschutzhaus@hohenzollern.com; provozovatel „Fürstl.
+    Hohenzollernsche ARBER-BERGBAHN e.K." (vede Thomas Eckl) — tedy táž
+    firma, která provozuje lanovku na Arber. OSM nese otvírací dobu
+    „10:00-16:00; Nov,Apr off" (surový tag, neověřeno — nezapisuje se,
+    ale sedí s obrazem zimního i letního provozu s přestávkami mimo
+    sezónu). Katalog: provoz celoročně — proti OSM tagu s listopadovou
+    a dubnovou přestávkou; rozpor nerozhodnut, nezapisuje se ani jedno.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Vlastní web historii neuvádí; katalogový zdroj bayerischer-wald-verein.de
+# se nenačítal. Historie zůstává prázdná — nic se nedomýšlí.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský dům těsně pod vrcholem Velkého Javoru (Großer Arber), nejvyšší
+  hory Šumavy a Bavorského lesa — 1358 metrů, hospoda a dvanáct pokojů
+  s vlastní koupelnou. Provozuje ho tatáž hohenzollernská firma, která
+  jezdí s kabinovou lanovkou na vrchol.
+text:
+  - >-
+    Arberschutzhaus stojí v 1358 metrech přímo pod horní stanicí kabinové
+    lanovky na Velký Javor — nejvyšší horu celé Šumavy s Bavorským lesem,
+    a jediný vrchol masivu, který se zvedá nad hranici lesa do skal.
+    Z chaty je to na vrchol posledních pár desítek výškových metrů.
+  - >-
+    Dům patří k lanovce i majetkově: provozuje ho knížecí hohenzollernská
+    společnost Arber-Bergbahn, která vlastní celý areál. Uvnitř je
+    hospoda a dvanáct moderních pokojů, každý s vlastní sprchou a WC —
+    na poměry horských domů nadstandard; katalog vede jedenačtyřicet
+    lůžek. V zimě se tu ve středu večer schází štamtiš skialpinistů,
+    kuriózně s thajskou kuchyní.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu domu a z externího
+    katalogu; polohu nese OpenStreetMap. Historii domu prameny, které
+    jsme četli, neuvádějí — proto tu žádná není. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web — výška 1358 m, 12 pokojů s koupelnou, Wirtshaus,
+      skialpinistický štamtiš, kontakty, provozovatel Fürstl.
+      Hohenzollernsche Arber-Bergbahn (načteno 4. 8. 2026)
+    url: https://www.arberschutzhaus.de/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0278
+      (41 lůžek, stravování, Bayerisch Eisenstein, 1358 m)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, výška, tagy vč. provozovatele; ODbL)
+    url: https://www.openstreetmap.org/way/32639765
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/arberschutzhaus.yaml triáží Tier 1
+  (4. 8. 2026) — PRVNÍ NĚMECKÝ PROFIL KORPUSU. Klíč zařazení: horský dům
+  s hospodou pod vrcholem nejvyšší hory pohoří, role na trase zjevná.
+  Německé jméno primární (vzor polských schronisek).
+
+  POZOR na rozpor provozních režimů: katalog „celoročně" × OSM tag
+  „10:00-16:00; Nov,Apr off" — nezapsáno ani jedno, rozhodne DATA-04
+  nebo web. Kapacita 41 (katalog) a 12 pokojů (web) se nevylučují.
+  Historie neuvedena nikde, kde jsme četli — katalogový zdroj
+  bayerischer-wald-verein.de zkusit příště (OSM vede provozovatele
+  „Bayerischer Wald Verein", což je proti webu — na webu Hohenzollern;
+  možná starší stav OSM). Fotku dodá příští běh DATA-02.

@@ -1,0 +1,149 @@
+# Chata KČT Prášily — povýšen z kandidáta DATA-01 triáží Tier 1
+# (4. 8. 2026, vzor DATA-03: katalog × OSM × oficiální stránka KČT).
+# Vlastní weby chaty se ze sandboxu nenačetly (timeout) — profil stojí na
+# oficiální stránce vlastníka (kct.cz); próza to přiznává. Vše verified: false.
+
+nazev: Chata KČT Prášily
+slug: chata-kct-prasily
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1042718
+lng: 13.3791261
+vyska: 880
+obec: Prášily
+overeniLokace:
+  source: >-
+    GPS a obec: OpenStreetMap https://www.openstreetmap.org/way/104186519
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); obec potvrzuje adresa na kct.cz
+    („Prášily 100, 342 01 Sušice") i katalog. Výška 880 m: externí
+    katalog (HUT-0098, ověřeno k 2026-07-21) — jediný pramen s číslem,
+    stránka KČT výšku neuvádí; ověření ČÚZK otevřené (DATA-04).
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 84
+pokoje:
+  - typ: 20 pokojů (včetně bezbariérového s vlastním sociálním zařízením)
+overeniNocleh:
+  source: >-
+    Oficiální stránka Klubu českých turistů kct.cz/chaty/chata-kct-prasily
+    (načteno 4. 8. 2026): „Kapacita ubytování: 84 lůžek", 20 pokojů,
+    bezbariérový pokoj s vlastním sociálním zařízením, lednice a nové
+    vybavení na pokojích. Katalog (HUT-0098): ubytování ano, celoročně.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# POZOR, poctivě: chata vlastní restauraci NEMÁ. Hosté mají vybavenou
+# kuchyň a možnost polopenze; restaurace U Michala je cizí podnik 200 m
+# vedle. Typ občerstvení se proto nezapisuje.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    Oficiální stránka KČT (načteno 4. 8. 2026): restauraci chata nemá,
+    „vzdálenost k restauraci U Michala je cca 200 metrů"; hosté mohou
+    používat vybavenou kuchyň nebo si připlatit polopenzi, snídaně od
+    brzkých ranních hodin. Katalogové „stravování ano" (HUT-0098) čteme
+    právě takhle — polopenze pro ubytované, ne veřejná restaurace.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 604 174 074'
+  email: kctprasily@seznam.cz
+  web: https://www.chataprasily.eu/
+overeniProvoz:
+  source: >-
+    Oficiální stránka KČT (načteno 4. 8. 2026): telefon 604 174 074,
+    e-mail kctprasily@seznam.cz, web chataprasily.eu; od roku 2018 chatu
+    spravuje pan Batelka (vítěz výběrového řízení KČT). POZOR na domény:
+    katalog vede chataprasily.cz, OSM ubytovnaprasily.cz, KČT
+    chataprasily.eu — do kontaktů se bere doména od vlastníka; vztah
+    zbylých dvou neprověřen (žádná se ze sandboxu nenačetla).
+    Katalog: provoz celoročně.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1928
+    udalost: >-
+      Původní chata vznikla přestavbou bývalého schwarzenberského pivovaru
+  - rok: 1997
+    udalost: >-
+      Po ztrátě původního objektu vybudována dnešní nová chata
+      (stavěla se v letech 1995–1997)
+  - rok: 2018
+    udalost: Správu převzal nájemce z výběrového řízení KČT
+overeniHistorie:
+  source: >-
+    Oficiální stránka KČT (načteno 4. 8. 2026): „Původní chata byla
+    založena v roce 1928 jako přestavěný pivovar od Schwarzenbergů";
+    nová chata vybudována 1995–1997; od 2018 správce z výběrového
+    řízení. rokVzniku se nevyplňuje — kontinuita služby od 1928 proti
+    dnešní budově z 1997 je týž případ jako Chata Proseč (rozhodne
+    Michal, který letopočet má pole nést).
+  verified: false
+  checked: '2026-08-04'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Turistická chata Klubu českých turistů v Prášilech uprostřed Národního
+  parku Šumava — 84 lůžek ve dvaceti pokojích, vybavená kuchyň
+  a polopenze pro hosty. Tradice sahá k roku 1928, kdy první chata
+  vznikla z bývalého schwarzenberského pivovaru; dnešní dům je z roku
+  1997.
+text:
+  - >-
+    Prášily jsou jedna z nejodlehlejších šumavských obcí a chata Klubu
+    českých turistů je tu základnou pro výpravy na Poledník, k Prášilskému
+    jezeru i na bývalou Královskou cestu. Klubová historie sahá do roku
+    1928, kdy turisté přestavěli bývalý schwarzenberský pivovar; dnešní
+    budova vyrostla v letech 1995 až 1997.
+  - >-
+    Uvnitř je 84 lůžek ve dvaceti pokojích včetně bezbariérového
+    s vlastním sociálním zařízením. Vlastní restauraci chata nemá —
+    hosté mají k dispozici vybavenou kuchyň, případně polopenzi se
+    snídaněmi od brzkého rána; nejbližší restaurace U Michala stojí asi
+    dvě stě metrů od chaty. Od roku 2018 dům spravuje nájemce vzešlý
+    z výběrového řízení klubu.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiální stránky Klubu českých
+    turistů a z externího katalogu; weby chaty se nám zatím nepodařilo
+    načíst, takže z nich necitujeme. Polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      KČT — oficiální stránka chaty: 84 lůžek / 20 pokojů, kuchyň
+      a polopenze, restaurace U Michala 200 m, kontakty, historie 1928
+      a 1995–97, správce od 2018 (načteno 4. 8. 2026)
+    url: https://kct.cz/chaty/chata-kct-prasily/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0098
+      (výška 880 m, ubytování, stravování, celoroční provoz)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Web chaty dle KČT (4. 8. 2026 nedostupný ze sandboxu)
+    url: https://www.chataprasily.eu/
+  - popis: OpenStreetMap (GPS a tagy; ODbL)
+    url: https://www.openstreetmap.org/way/104186519
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/chata-kct-prasily.yaml triáží Tier 1
+  (4. 8. 2026). Klíč zařazení: chata ve vlastnictví KČT s doloženou
+  turistickou rolí od 1928 — učebnicový případ; bez vlastní veřejné
+  restaurace (přiznáno v próze i overeni), NENÍ to důvod k vyřazení dle
+  rozhodnutí Michala z 26. 7. 2026 o turistické minulosti.
+
+  NEDOLOŽENO (nezapsáno): rokVzniku (1928 × 1997 — vzor Proseč, rozhodne
+  Michal), otvírací doba/sezónnost detailně. TROJICE DOMÉN k rozřešení:
+  chataprasily.eu (KČT) × chataprasily.cz (katalog) × ubytovnaprasily.cz
+  (OSM) — až budou weby dosažitelné, prověřit, jestli všechny patří téže
+  chatě. Fotku dodá příští běh DATA-02.

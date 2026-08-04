@@ -29,6 +29,56 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 13) — první tři šumavské profily: Klostermannova, Prášily a první německý
+
+**Povyšování Tier 1 začalo** (zadání Michala: „pokračuj na povyšování Tier 1
+vzorem DATA-03, spustím zatím 06"). Tři profily, každý s křížovým ověřením
+katalog × OSM × nejsilnější dostupný pramen:
+
+1. **Klostermannova chata (Modrava)** — první šumavský profil. Stojí na
+   článku KČT ke stému výročí (1924, Bohuslav Fuchs, osudy po roce 1948,
+   dnes soukromá, kulturní památka) a webu obce Modrava (náklad 1 041 500
+   Kč, historická kapacita 1938). Vlastní web se nenačetl (timeout) —
+   přiznáno. **Výška vědomě nezapsána:** katalog vede 1065 m, ale Kudy
+   z nudy uvádí u Modravy 990 m n. m. a chata stojí v obci — rozpor se
+   nerozhoduje odhadem. Dnešní kapacita nedoložena (jen „čtyři typy
+   pokojů"), veřejnost restaurace otázka DATA-04.
+2. **Chata KČT Prášily** — učebnicový případ klíče zařazení: chata ve
+   vlastnictví KČT, tradice od 1928 (přestavěný schwarzenberský pivovar),
+   dnešní budova 1995–97, 84 lůžek / 20 pokojů dle oficiální stránky KČT.
+   **Poctivě: vlastní restauraci NEMÁ** — kuchyňka + polopenze, restaurace
+   U Michala je cizí podnik 200 m vedle; katalogové „stravování ano" se
+   čte právě takhle. TROJICE DOMÉN k rozřešení: chataprasily.eu (KČT)
+   × chataprasily.cz (katalog) × ubytovnaprasily.cz (OSM). rokVzniku
+   nevyplněn (1928 × 1997 — vzor Proseč, rozhodne Michal).
+3. **Arberschutzhaus — PRVNÍ NĚMECKÝ PROFIL KORPUSU.** Horský dům v 1358 m
+   pod vrcholem Velkého Javoru, tedy nejvyšší hory celé oblasti; hospoda
+   a 12 pokojů s vlastní koupelnou, provozuje ho táž hohenzollernská firma
+   co lanovku. Německé jméno primární, český opis „Chata pod Velkým
+   Javorem" jen v aliasech jako pomocné. Rozpory přiznané, nezapsané:
+   provoz celoročně (katalog) × „Nov,Apr off" (OSM tag); kapacita 41
+   (katalog) a 12 pokojů (web) se nevylučují — obojí se zdrojem.
+   Zajímavost: OSM vede provozovatele „Bayerischer Wald Verein", web
+   Hohenzollern — nejspíš starší stav OSM, poznamenáno.
+
+**Ban-scan: 262 → 266, všechny čtyři nové zásahy posouzeny a ponechány** —
+tři jsou standardní závěrečný odstavec profilu (jmenuje OpenStreetMap kvůli
+ODbL, týž vzor nese celý korpus) a čtvrtý je historický náklad stavby
+(„milion korun" z roku 1924) — fakt historie, ne ceník.
+
+**Kontroly:** `tsc` čistý, kontrola zelená, vitest 752 / stejných 8 s DB.
+Fronta: 98 povýšeno (+3), korpus má 110 profilů.
+
+**Příště:** ① pokračovat v Tier 1 — nejbližší v pořadí Lusenschutzhaus,
+Waldschmidthaus, Berggasthof Dreisessel (velké schutzhausy NP Bavorský
+les), z českých Turnerova chata a Alpská vyhlídka; ② až doběhne DATA-06
+(Michal spustil výchozí body), navázat značené trasy → přístupy → výšky;
+③ DATA-02 přinese fotky novým profilům při příštím běhu.
+
+**Otázky pro Michala:** ① rokVzniku Prášil (1928 kontinuita × 1997 budova)
+— týž případ jako Proseč, rozhodni klidně oba najednou; ② starší otevřené
+(razítkové páry, Odrodzenie, Benecko, certifikát) beze změny.
+
 ## 2026-08-04 (blok 12) — Šumava má data: 337 kandidátů, 25 lanovek, triážní podklad a 10 rozhodnutých jmenovců
 
 **Oba běhy doběhly** (DATA-01 commit 62049ae, DATA-28 commit 52e7645)

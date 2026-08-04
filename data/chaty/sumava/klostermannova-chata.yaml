@@ -1,0 +1,167 @@
+# Klostermannova chata — PRVNÍ ŠUMAVSKÝ PROFIL; povýšen z kandidáta DATA-01
+# triáží Tier 1 (4. 8. 2026, vzor DATA-03: katalog × OSM × KČT × obecní web).
+# Vlastní web klostermannovachata.cz se ze sandboxu nenačetl (robots timeout) —
+# profil stojí na článku KČT ke stému výročí, webu obce Modrava (sumavanet.cz)
+# a Kudy z nudy; próza to přiznává. Vše verified: false.
+
+nazev: Klostermannova chata
+slug: klostermannova-chata
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Výška se NEVYPLŇUJE: katalog vede 1065 m, ale Kudy z nudy uvádí u obce
+# Modrava 990 m n. m. — a chata stojí v obci. Rozpor 1065 × ~990 se
+# nerozhoduje odhadem; rozřeší vlastní web chaty nebo ČÚZK (DATA-04).
+lat: 49.0245496
+lng: 13.5009102
+obec: Modrava
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/1094818900 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Obec: externí katalog (HUT-0101) i článek KČT („na Modravě") a adresa
+    na Kudy z nudy („Modrava, 341 92 Modrava"). Výška vědomě nezapsána —
+    katalog uvádí 1065 m, Kudy z nudy u obce 990 m n. m.; rozpor
+    nerozhodnut. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Dnešní kapacita NEDOLOŽENA — Kudy z nudy mluví jen o „čtyřech typech
+# pokojů" bez čísel; historická kapacita z roku 1938 (57 + 22 lůžek) je
+# údaj o minulosti a do pole nepatří.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Externí katalog (HUT-0101, ověřeno k 2026-07-21): ubytování ano,
+    provoz celoročně. Kudy z nudy (načteno 4. 8. 2026): „čtyři typy
+    pokojů, jež jsou vybaveny vlastním soc. zařízením, TV a telefonem" —
+    kapacita neuvedena, proto se nezapisuje.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Restaurace je doložená jen nepřímo (katalog „stravování ano"; Kudy z nudy
+# zmiňuje restauraci mimochodem) — typ se proto nezapisuje a próza netvrdí
+# veřejnou otvíračku.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    Externí katalog (HUT-0101): stravování ano. Kudy z nudy (načteno
+    4. 8. 2026) zmiňuje restauraci jen mimochodem (dětské židličky) —
+    jestli obslouží i neubytované, žádný pramen neříká, proto se netvrdí
+    (otázka do DATA-04).
+  verified: false
+  checked: '2026-08-04'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 376 324 256'
+  email: info@klostermannovachata.cz
+  web: https://www.klostermannovachata.cz/
+overeniProvoz:
+  source: >-
+    Kudy z nudy (načteno 4. 8. 2026): telefony +420 376 324 256
+    a +420 604 259 090, e-mail info@klostermannovachata.cz, web
+    klostermannovachata.cz. Vlastní web se ze sandboxu nenačetl (timeout)
+    — obsah necitován. OSM nese otvírací dobu „Mo-Su 11:00-22:00"
+    (surový tag, neověřeno — nezapisuje se). Katalog: provoz celoročně.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1924
+milniky:
+  - rok: 1921
+    udalost: >-
+      Stavbu navrhl architekt Bohuslav Fuchs, žák Jana Kotěry
+  - rok: 1924
+    udalost: >-
+      Klub československých turistů chatu postavil nákladem 1 041 500 Kč;
+      slavnostní otevření v neděli 22. června
+  - rok: 2024
+    udalost: >-
+      Sté výročí — 21. září oslavy s pochody a výstavou o Karlu
+      Klostermannovi a historii chaty
+overeniHistorie:
+  source: >-
+    Článek KČT ke stému výročí (kct.cz, načteno 4. 8. 2026): otevření
+    „na přelomu jara a léta 1924", slavnostně 22. června 1924; návrh
+    „architekta Bohuslava Fuchse, žáka architekta Jana Kotěry" z roku
+    1921; po zrušení klubu „skončila chata v majetku Závodů Vladimíra
+    Iljiče Lenina Plzeň", po revoluci nevrácena, „dnes je chata
+    v soukromém vlastnictví"; kulturní památka. Náklad stavby a otevření
+    potvrzuje web obce Modrava (sumavanet.cz): „postavena roku 1924
+    nákladem 1 041 500 Kč", investor KČST; tamtéž historická kapacita
+    z roku 1938 (28 pokojů / 57 lůžek + 22 v noclehárnách) — vedena jen
+    tady jako údaj o minulosti.
+  verified: false
+  checked: '2026-08-04'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata Klubu československých turistů z roku 1924 na Modravě, postavená
+  podle návrhu Bohuslava Fuchse — dnes kulturní památka a jeden
+  z nejznámějších domů Šumavy. V roce 2024 oslavila sto let; ubytovává
+  dál, dnes v soukromých rukou.
+text:
+  - >-
+    Klostermannova chata stojí na Modravě, v srdci šumavských plání,
+    a nese jméno spisovatele, který Šumavu vepsal do české literatury.
+    Postavil ji Klub československých turistů a otevřela se v neděli
+    22. června 1924; návrh vypracoval už roku 1921 architekt Bohuslav
+    Fuchs, žák Jana Kotěry a pozdější hvězda brněnského funkcionalismu.
+  - >-
+    Na svou dobu to byl velkorysý podnik: stavba přišla na víc než milion
+    korun a dům nabídl osmadvacet pokojů, noclehárny, elektrické světlo
+    i vodovod do všech místností. Po zrušení klubu komunistickým režimem
+    chata skončila v majetku plzeňských Leninových závodů a klubu se po
+    revoluci nevrátila — dnes je v soukromém vlastnictví, po rekonstrukci
+    a s památkovou ochranou.
+  - >-
+    V září 2024 se u chaty slavilo sté výročí, s pochody a výstavou
+    o Karlu Klostermannovi. Ubytování nabízí chata dál — čtyři typy
+    pokojů s vlastním sociálním zařízením; kolik lůžek dům dnes má
+    a jestli kuchyně obslouží i kolemjdoucího, prameny neříkají, takže
+    to netvrdíme.
+  - >-
+    Údaje na téhle stránce pocházejí z článku Klubu českých turistů ke
+    stému výročí, z webu obce Modrava a z Kudy z nudy; vlastní web chaty
+    se nám zatím nepodařilo načíst, takže z něj necitujeme. Polohu nese
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      KČT — článek ke 100 letům chaty: 1924, Fuchs, osudy po roce 1948,
+      soukromé vlastnictví, památka, oslavy 2024 (načteno 4. 8. 2026)
+    url: https://kct.cz/klub-ceskych-turistu-oslavuje-100-let-klostermannovy-chaty-na-modrave/
+  - popis: >-
+      Web obce Modrava (sumavanet.cz) — náklad stavby, investor KČST,
+      historická kapacita a ceny 1938, nový vlastník od 2000 (načteno
+      4. 8. 2026)
+    url: https://www.sumavanet.cz/modrava/fr.asp?tab=snet&id=120&burl=&pt=TUHS
+  - popis: >-
+      Kudy z nudy — kontakty, čtyři typy pokojů, adresa (načteno 4. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/klostermannova-chata-modrava
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0101
+      (ubytování, stravování, celoroční provoz, Modrava)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web chaty (4. 8. 2026 nedostupný ze sandboxu — timeout)
+    url: https://www.klostermannovachata.cz/
+  - popis: OpenStreetMap (GPS; ODbL)
+    url: https://www.openstreetmap.org/way/1094818900
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/klostermannova-chata.yaml triáží Tier 1
+  (4. 8. 2026, zadání Michala „pokračuj na povyšování vzorem DATA-03").
+  Klíč zařazení: turistická minulost doložená par excellence (chata KČST
+  1924) — dle rozhodnutí Michala z 26. 7. 2026 se povyšuje i bez doložené
+  veřejné otvíračky restaurace, ta zůstává otázkou DATA-04.
+
+  NEDOLOŽENO (nezapsáno): výška (rozpor katalog 1065 × obec 990 — viz
+  lokace), dnešní kapacita lůžek, veřejnost restaurace, otvírací doba
+  (OSM tag Mo-Su 11-22 neověřen), provozovatel. Vlastní web přečíst, až
+  bude dosažitelný. JMENOVEC: Klostermannova rozhledna na Javorníku
+  (30 km) — registr data/_jmenovci.yaml. Fotku dodá příští běh DATA-02.
