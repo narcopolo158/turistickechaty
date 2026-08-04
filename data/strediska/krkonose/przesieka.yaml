@@ -8,6 +8,21 @@ slug: przesieka
 zeme: pl
 oblast: krkonose
 
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Vesnice rozložená v údolích potoků Czerwień, Myja a Podgórna,
+  v nadmořské výšce v rozmezí od 480 do 650 metrů.
+overeniPerex:
+  source: >-
+    Oficiální web gminy Podgórzyn, pod kterou Przesieka spadá,
+    podgorzyn.pl/gmina-podgorzyn/nasze-miejscowosci.html (načteno 4. 8. 2026):
+    vesnice „rozciąga się w dolinie Czerwienia, Myi i Podgórnej" a leží
+    „na wysokości 480-650 m n.p.m." Přezdívku „królowa karkonoskich widoków"
+    nepřebírám — je to reklamní obrat gminy, ne fakt. Překlad do češtiny je náš.
+  verified: false
+  checked: '2026-08-04'
+
+
 lat: 50.8087495
 lng: 15.6653035
 overeniLokace:
@@ -31,3 +46,10 @@ interniPoznamky: >-
   návody k vodopádu Podgórnej — nepřebíráme, nejsou oficiální pramen).
   PL střediska jsou dle handoffu „bez čísel", priorita nízká; zkusit
   příště podgorzyn.pl v ručním běhu.
+
+  Perex doplněn 4. 8. 2026 z oficiálního webu gminy Podgórzyn. Rozpětí
+  480–650 m se do `vyskaObce` nezapisuje — jedno číslo dodá DATA-35
+  z referenčního bodu (PL zahrnuty dle rozhodnutí Michala 4. 8. 2026).
+  VEDLEJŠÍ NÁLEZ k prověření: gmina píše, že administrativně k Przesiece
+  patří i „schronisko Odrodzenie na Przełęczy Karkonoskiej, usytuowane na
+  1236 m n.p.m." — porovnat s naším profilem Odrodzenie (obec i výška).

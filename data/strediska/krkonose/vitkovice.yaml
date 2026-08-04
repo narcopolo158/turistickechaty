@@ -8,13 +8,36 @@ slug: vitkovice
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Obec v údolí říčky Jizerky, v nadmořské výšce 683 metrů.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/vitkovice-v-krkonosich/ (načteno 4. 8. 2026):
+    „Leží v nadmořské výšce 683 metrů, podél údolí řeky Jizerky a je umístěna
+    v atraktivním prostředí regionu Krkonoše." Úvodní větu pramene („Malebnou
+    obec Vítkovice naleznete na Benecku") nepřebírám — Benecko je sousední
+    obec, ne poloha Vítkovic, a věta je zjevně chybná.
+  verified: false
+  checked: '2026-08-04'
+
+
 lat: 50.6790154
 lng: 15.5312007
+# Výška obce z oficiálního portálu svazku — jedno číslo, ne rozpětí
+# (vzor Dolního Dvora 3. 8. a Pece 4. 8. 2026). DATA-35 ji proto nepřepíše.
+vyskaObce: 683
 overeniLokace:
   source: >-
-    OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+    GPS: OpenStreetMap (bod obce z katalogu výchozích bodů DATA-06) — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška obce: oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/vitkovice-v-krkonosich/ (načteno 4. 8. 2026):
+    „Leží v nadmořské výšce 683 metrů, podél údolí řeky Jizerky" — ověření
+    proti ČÚZK (zadání F1a) zůstává otevřené.
   verified: false
-  checked: '2026-07-28'
+  checked: '2026-08-04'
 
 vychoziBody:
   - nazev: Vítkovice
@@ -47,3 +70,7 @@ interniPoznamky: >-
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
   Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu obce.
+
+  Perex i výška obce (683 m) doplněny 4. 8. 2026 z oficiálního portálu
+  svazku. Pozor: tentýž pramen má v úvodní větě chybu („naleznete na
+  Benecku") — do prózy se nepřevzala.

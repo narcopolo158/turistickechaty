@@ -8,6 +8,23 @@ slug: karpacz
 zeme: pl
 oblast: krkonose
 
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Město nad říčkou Łomnicou pod Sněžkou, v nadmořské výšce
+  v rozmezí od 500 do 1375 metrů.
+overeniPerex:
+  source: >-
+    Turistický portál Dolnoslezského vojvodství
+    umwd.dolnyslask.pl (sekce Karkonosze → Karpacz, načteno 4. 8. 2026),
+    doslova: „Karpacz leży nad Łomnicą, u stóp Śnieżki, na wysokości
+    500-1375 m n.p.m." Oficiální web města karpacz.pl (načteno téhož dne)
+    výšku neuvádí a jeho úvodní věta je hodnotící („jedno z najpiękniejszych
+    karkonoskich miast"), proto se nepřebírá. Překlad do češtiny je náš;
+    polské znění je uvedeno výše, ať je co porovnat.
+  verified: false
+  checked: '2026-08-04'
+
+
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7747485
 lng: 15.7542035
@@ -56,3 +73,8 @@ interniPoznamky: >-
   čísel" do doby doložení).
 
   Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu města.
+
+  Perex doplněn 4. 8. 2026 z turistického portálu Dolnoslezského
+  vojvodství (oficiální web města výšku neuvádí). Rozpětí 500–1375 m
+  se do `vyskaObce` nezapisuje — jedno číslo dodá DATA-35 z referenčního
+  bodu (Michal 4. 8. 2026 potvrdil, že PL střediska se do běhu zahrnují).

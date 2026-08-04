@@ -8,6 +8,22 @@ slug: szklarska-poreba
 zeme: pl
 oblast: krkonose
 
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Město rozložené mezi dvěma horskými pásmy a rozdělené údolím
+  horské řeky, v nadmořské výšce v rozmezí od 440 do 1471 metrů.
+overeniPerex:
+  source: >-
+    Oficiální turistický web města Szklarska Poręba
+    turystyczna.szklarskaporeba.pl/artykul/10/polozenie (načteno 4. 8. 2026),
+    doslova: „Szklarska Poręba jest położona malowniczo! Między dwoma pięknymi
+    pasmami górskimi, przedzielona doliną górskiej rzeki"; tamtéž výška
+    440–1471 m n.p.m. Hodnotící „malowniczo" a „pięknymi" se do perexu
+    nepřenášejí. Překlad do češtiny je náš.
+  verified: false
+  checked: '2026-08-04'
+
+
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.8268011
 lng: 15.5221261
@@ -59,3 +75,7 @@ interniPoznamky: >-
   čísel" do doby doložení).
 
   Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu města.
+
+  Perex doplněn 4. 8. 2026 z oficiálního turistického webu města. Rozpětí
+  440–1471 m se do `vyskaObce` nezapisuje — jedno číslo dodá DATA-35
+  z referenčního bodu (PL zahrnuty dle rozhodnutí Michala 4. 8. 2026).

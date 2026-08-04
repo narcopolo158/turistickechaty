@@ -8,6 +8,23 @@ slug: mala-upa
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Horská obec ve východní části Krkonoš, nedaleko Velké Úpy a Pece
+  pod Sněžkou.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/mala-upa/ (načteno 4. 8. 2026, tentokrát v české
+    podobě — 4. 8. dopoledne se stránka načetla strojově přeložená a perex se
+    proto vědomě odložil): „Horskou obec Malou Úpu nedaleko Velké Úpy a Pece
+    pod Sněžkou, ve východní části oblasti Krkonoše." Druhou větu pramene
+    („oblíbeným centrem pro turistiku a báječné strávenou dovolenou")
+    nepřebírám — je hodnotící a mluvnicky vadná. Výšku obce pramen neuvádí.
+  verified: false
+  checked: '2026-08-04'
+
+
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7240834
 lng: 15.8137272
@@ -57,12 +74,10 @@ interniPoznamky: >-
   (rozhodnutí handoffu: „PL bez čísel" do doby doložení). Doprava (auto)
   doplněna 2. 8. 2026 z oficiálního webu.
 
-  Perex 4. 8. 2026 VĚDOMĚ NEDOPLNĚN, ačkoli sedmi sousedním střediskům ho
-  téhož dne dal portál svazku. Důvod: stránka
-  region-krkonose.cz/obce/mala-upa/ se načetla ve zjevně strojově přeložené
-  podobě („Horskou obec Malou Úpu … ve eastern část oblasti Krkonoše"),
-  takže české znění vět NEZNÁME a citovat je nelze. Čitelný je jen popisek
-  stránky („Malebná obec na polské hranici Malá Úpa patří mezi typické
-  krkonošské vesnice a především horská střediska.") — jedna věta
-  z metadat, kterou raději necituji, dokud se stránka nenačte v pořádku.
-  Zkusit znovu v příští session nebo ručně.
+  Perex: 4. 8. 2026 dopoledne VĚDOMĚ ODLOŽEN — stránka
+  region-krkonose.cz/obce/mala-upa/ se načetla strojově přeložená
+  („… ve eastern část oblasti Krkonoše"), takže české znění vět nebylo
+  známé a citovat je nešlo. → DOPLNĚN týž den odpoledne, kdy se táž adresa
+  načetla česky; citace v overeniPerex. PONAUČENÍ pro příští běhy: strojově
+  přeložená odpověď téhož webu je dočasný stav, ne vlastnost pramene —
+  vyplatí se zopakovat, ne pramen odepsat.

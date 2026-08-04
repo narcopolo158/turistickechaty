@@ -8,6 +8,22 @@ slug: strazne
 zeme: cz
 oblast: krkonose
 
+# Perex jen z doložené formulace pramene.
+perex: >-
+  Horská obec asi šest kilometrů od Vrchlabí, ve směru na
+  Špindlerův Mlýn.
+overeniPerex:
+  source: >-
+    Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/strazne/ (načteno 4. 8. 2026): „Horská obec
+    Strážné je vyhlášeným rekreačním střediskem Krkonoš. Leží asi šest
+    kilometrů od Vrchlabí ve směru na Špindlerův Mlýn." První věta je
+    hodnotící, proto se do perexu nepřevzala. Výšku Strážného pramen
+    neuvádí (zmiňuje 700 m u Kněžické chalupy, což je jiné místo).
+  verified: false
+  checked: '2026-08-04'
+
+
 lat: 50.6646011
 lng: 15.6139289
 overeniLokace:
@@ -22,17 +38,24 @@ vychoziBody:
 # Ruční próza má přednost před řádky z katalogu DATA-06. Ceny se nepíšou.
 doprava:
   auto: >-
-    Obec provozuje dvě parkoviště — na náměstí a v lomu; obě jsou v zimní
-    sezóně placená podle obecního nařízení o placeném stání.
+    Autem přes Turnov na Vrchlabí, kde se odbočuje na Špindlerův Mlýn. Obec
+    provozuje dvě parkoviště — na náměstí a v lomu; obě jsou v zimní sezóně
+    placená podle obecního nařízení o placeném stání, v létě nehlídaná
+    a zdarma.
 overeniDoprava:
   source: >-
     Oficiální web obce Strážné (strazne.eu, sekce skiareál → parkoviště,
     načteno 2. 8. 2026): parkoviště „Náměstí“ a „Lom“, obě v zimě placená,
     nehlídaná, dle „Nařízení č. 2/2018 o placeném stání na místních
     komunikacích v obci Strážné“; na náměstí automat i obsluha, v lomu jen
-    platba kartou. Ceny se do profilu nepíšou — mění se každou sezónu.
+    platba kartou. Příjezd a letní režim doplněny 4. 8. 2026 z oficiálního
+    portálu svazku region-krkonose.cz/obce/strazne/: „Autem přes Turnov na
+    Vrchlabí, kde odbočíte na Špindlerův Mlýn.", „K dispozici jsou dvě
+    velkokapacitní parkoviště.", „V létě nejsou hlídána, avšak oproti zimě
+    nabízí v tomto období parkování zdarma." Ceny se do profilu nepíšou —
+    mění se každou sezónu.
   verified: false
-  checked: '2026-08-02'
+  checked: '2026-08-04'
 
 interniPoznamky: >-
   Doplnit z doložených zdrojů: výška obce (ČÚZK), perex (oficiální web obce
@@ -40,3 +63,7 @@ interniPoznamky: >-
   pipeline DATA-33 (Wikimedia Commons, jen licenčně čisté snímky).
 
   Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu obce.
+
+  Perex a doplnění dopravy (příjezd, letní režim parkování) 4. 8. 2026
+  z oficiálního portálu svazku. Výšku obce portál neuvádí — doplní ji
+  DATA-35 z referenčního bodu, případně později ČÚZK.
