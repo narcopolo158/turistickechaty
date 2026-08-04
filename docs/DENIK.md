@@ -29,6 +29,76 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 10) — Šumava založena (CZ + Bavorský les); Ještědský hřbet má i fotky středisek
+
+**Nejdřív dobrá zpráva z tvého kliku: DATA-33 pro Ještědský hřbet doběhlo
+a všechna tři střediska mají fotku** (Beranova cesta v Horním Hanychově,
+pohled na Šimonovice, celkový pohled na Světlou od modré značky). Tím je
+Ještědský hřbet vizuálně kompletní — z původního seznamu zbývají jen
+razítkové páry (potvrzení na tobě), licence fotek očima a telefonáty.
+
+**Šumava založena — vše, co šlo bez ptaní:**
+
+1. **Německo v typech pipeline** (`ZemeIso` + 'DE'). Frontend byl připravený
+   už dřív (ZEME_SLUG zná `de → nemecko`, kolekce mají Německo v číselníku),
+   takže se zapojoval jen dotaz.
+2. **Konfigurace oblasti** (scripts/oblasti.ts, slug `sumava`): zeme CZ+DE,
+   katalogPohori „Šumava" + „Bayerischer Wald". Okno je NEJVĚTŠÍ v korpusu
+   (~0,9° × 1,9°) — od Gibachtu u Waldmünchenu (49,36/12,66,
+   nejseverozápadnější objekt katalogu) po Vítkův kámen (48,60/14,28).
+   3D okno téměř celé okno dotazu (poučení z Kochanówky), s přiznanou cenou:
+   mřížka 240×144 bude nad takhle velkým oknem hrubší (~600 m na buňku).
+3. **Metadata oblasti** (data/oblasti/sumava.yaml) s doloženými fakty:
+   charakteristika z cumbres.cz (120 km, hranice s Bavorskem);
+   **nejvyšší hora pohoří vcelku = Großer Arber (Velký Javor) 1456 m** —
+   týž princip jako Wysoka Kopa u Jizerek, nejvyšší česká Plechý 1378 m
+   patří do vět webu. **Rozpor pramenů přiznán ve zdroji:** sumava.cz
+   a vrcholovka.cz vedou 1456 m, cumbres.cz 1457 — bereme 1456 (dva prameny,
+   z toho regionální) a rozpor hlídá test.
+4. **Rakouská strana (Böhmerwald) vědomě MIMO** — tvoje zadání jmenuje jen
+   bavorskou část. Katalog vede jediný rakouský objekt (Helfenberger Hütte);
+   čeká na případné rozhodnutí o AT, poznámka v YAML i v konfigu, a test
+   hlídá, že se Böhmerwald do katalogPohori nepřidá omylem.
+5. **Německá slova do dotazu DATA-01:** dosavadní `hut[ae]?` na „Hütte"
+   nedosáhne (ü ≠ u) — SLOVA_BOUDY rozšířena o hütte / schutzhaus /
+   berggasthof / berghaus, ať jménem filtrované vrstvy (restaurace,
+   ubytování) nechytají jen česká pojmenování. Tagová vrstva (alpine_hut…)
+   chytala bavorské objekty i dřív.
+6. **Workflow připraveny:** všech osm workflow s výběrem oblasti má
+   v popisu i `sumava`; DATA-02 běží nad celým korpusem bez výběru. Seed
+   bere `data/oblasti/*.yaml` globem, takže oblast se založí sama příštím
+   deployem.
+7. **10 nových testů** (oblasti-sumava.int.spec.ts): Německo zapojené celou
+   cestou (zemeDotazu i ZEME_SLUG), katalogPohori sedí na skutečná jména
+   v katalogu (překlep by tiše vypnul dohledávku), okno obsahuje čtyři
+   krajní body, 3D okno uvnitř okna dotazu, rozpor 1456×1457 přiznaný.
+
+**Podklad z katalogu:** 12 českých objektů (Prášily, Pancíř, Rovina,
+Klostermannova, Churáňov, Zlatá Studna, Alpská vyhlídka, Belveder, Špičák,
+Turnerova, Antýgl, Bučina) + 15 bavorských (Arberschutzhaus, Eisensteiner,
+Falkenstein, Lusen, Osser, Kötztinger, Chamer, Schareben, Landshuter,
+Dreisessel, Waldschmidthaus, Mooshütte, Sonnenfels, Eck, Gibacht). Katalog
+podhodnocuje — u Krkonoš vedl 30 proti našim 76.
+
+**Jazykové pravidlo pro budoucí profily** (zapsáno v YAML): bavorské objekty
+nesou německá jména jako primární, české ekvivalenty do aliasů — týž princip
+jako u polských schronisek (tvoje rozhodnutí z 20. 7.).
+
+**Kontroly:** `tsc` čistý, `eslint` čistý, `npm run kontrola` zelené
+(validátor workflow 17/0). Vitest 751 prošlo (+10), padá stejných 8 (DB).
+
+**PRO MICHALA — ACTIONS PŘIPRAVENY KE SPUŠTĚNÍ, v tomhle pořadí:**
+
+1. **DATA-01: OSM export** → Run workflow → oblast **`sumava`**
+   (kandidáti z CZ i DE — první pohled na skutečný fond).
+2. **DATA-28: 3D terén** → oblast **`sumava`** (výškopis + trasy + vrcholy;
+   z jeho vrstvy pak rovnou dopočtu lanovky, jako u Ještědu).
+3. Po doběhu DATA-01: **DATA-06: výchozí body** → oblast **`sumava`**
+   (a pak už standardní řetěz trasy → přístupy → výšky).
+
+Až doběhnou, další session udělá triáž kandidátů vzorem DATA-03/Jizerky.
+Mimo Actions: hero fotka oblasti z mediabanky CzechTourism (vzor Ještěd).
+
 ## 2026-08-04 (blok 9) — výšky Ještědu doběhly čistě; razítka: 11 nových párů ke kontrole
 
 **Re-run DATA-35 prošel** (commit 7e6e8dc): Liberec – Horní Hanychov 582 m,

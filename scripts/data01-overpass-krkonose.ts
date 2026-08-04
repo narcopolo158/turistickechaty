@@ -198,7 +198,13 @@ const HUTOVE_TAGY = '^(alpine_hut|wilderness_hut|hut|chalet)$'
  * tím dotaz konečně dohání — dosud platil jen při ruční triáži nad tím, co
  * dotaz náhodou přinesl.
  */
-const SLOVA_BOUDY = 'chata|chatka|chalupa|bouda|boudy|schronisko|hut[ae]?|útuln|utuln|hájenka|hajenka|horská|horska|baude'
+// Německá slova přibyla 4. 8. 2026 se Šumavou (zeme CZ+DE): bavorské objekty
+// se jmenují Hütte / Schutzhaus / Berggasthof / Berghaus a dosavadní vzor
+// `hut[ae]?` na „Hütte" nedosáhne (ü ≠ u). Čistě tagová vrstva (alpine_hut…)
+// je chytala i dřív — tohle rozšiřuje jen jménem filtrované vrstvy
+// (restaurace a ubytování se slovem v názvu).
+const SLOVA_BOUDY =
+  'chata|chatka|chalupa|bouda|boudy|schronisko|hut[ae]?|útuln|utuln|hájenka|hajenka|horská|horska|baude|hütte|hutte|schutzhaus|berggasthof|berghaus'
 const OBCERSTVENI_TAGY = '^(restaurant|cafe|fast_food|bar|pub|biergarten)$'
 const UBYTOVANI_TAGY = '^(hotel|guest_house|hostel|motel|apartment)$'
 /** Hutové i ubytovací tagy v jednom regexu — pro dohledávku podle jmen. */

@@ -1,0 +1,91 @@
+# Oblast Šumava — čtvrtá oblast průvodce (rozhodnutí Michala 4. 8. 2026:
+# „pustíme se do šumavy + bavorskou část, budeme muset založit německo").
+#
+# PRINCIP POHOŘÍ VCELKU: česká strana + Bavorský les (Bayerischer Wald).
+# Externí katalog vede 12 českých objektů (Prášily až Kvilda) a 15 bavorských
+# (od Berggasthof Gibacht u Waldmünchenu po Berggasthof Dreisessel) — a pozor,
+# katalog podhodnocuje: u Krkonoš vedl 30 objektů proti našim finálním 76.
+#
+# RAKOUSKÁ STRANA (Böhmerwald) JE ZATÍM VĚDOMĚ MIMO: Michalovo zadání jmenuje
+# jen bavorskou část. Katalog vede jediný rakouský objekt — Helfenberger Hütte
+# (Helfenberg / Oberafiesl) — který na případné rozšíření o AT čeká; do té
+# doby se nezakládá ani jako kandidát.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat, žebříčky)
+# se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Šumava
+slug: sumava
+typ: pohori
+zeme: cz
+
+# Skloňované tvary názvu do vět na webu (viz pole `sklonovani` v kolekci
+# Oblasti). Čeština je algoritmem neskloní — tvar patří k oblasti.
+sklonovani:
+  druhy: Šumavy
+  sesty: Šumavě
+
+
+charakteristika: >-
+  Rozsáhlé pohraniční pohoří, které se táhne v délce zhruba 120 kilometrů
+  od severozápadu k jihovýchodu a za hranicí pokračuje jako Bavorský les —
+  průvodce ho proto vede vcelku, z obou stran. Proti severním pohořím
+  průvodce je to jiný svět: místo hřebene nad městy náhorní pláně,
+  slatě a ledovcová jezera daleko od civilizace.
+overeniCharakteristika:
+  source: >-
+    Délka a poloha: cumbres.cz (České hory / Šumava, čteno 2026-08-04) —
+    „rozsáhlé pohoří na hranicích Česka, Rakouska a německého Bavorska"
+    protažené „ve směru severozápad - jihovýchod v délce 120 km"; německou
+    stranu týž pramen vede jako Bavorský les (Bayerischer Wald). Popis
+    charakteru (pláně, slatě, jezera) je redakční shrnutí, ne převzaté
+    tvrzení; ověřit v terénu (DATA-04).
+  verified: false
+  checked: '2026-08-04'
+
+# NEJVYŠŠÍ HORA POHOŘÍ VCELKU je na bavorské straně — týž princip jako
+# u Jizerek (Wysoka Kopa na polské straně, Smrk jako nejvyšší česká).
+# Nejvyšší hora ČESKÉ části je Plechý (1378 m) — do vět webu, ne sem.
+# ROZPOR VÝŠKY, přiznaný: 1456 m vede oficiální regionální portál sumava.cz
+# i vrcholovka.cz; cumbres.cz uvádí 1457 m. Bereme 1456 (dva prameny proti
+# jednomu, z toho jeden regionální), rozpor zůstává v source.
+nejvyssiHora:
+  nazev: Großer Arber (Velký Javor)
+  vyska: 1456
+  source: >-
+    Regionální portál sumava.cz (rozcestník Vrcholy, čteno 2026-08-04):
+    „1456 m n. m.", „Nejvyšší a nenavštěvovanější [sic] vrchol Bavorského
+    lesa", GPS 49°6'45.276"N, 13°8'8.748"E; týž údaj 1456 m nese
+    vrcholovka.cz („Großer Arber / Velký Javor (1456 m n.m.)"). Že jde
+    o nejvyšší vrchol ŠUMAVY VCELKU: cumbres.cz (čteno 2026-08-04) —
+    „Grosser Arber (Velký Javor, 1457m)" mezi „nejvyšší vrcholy Šumavy
+    vůbec"; POZOR, cumbres uvádí 1457 m — rozpor 1456 × 1457 nerozřešen,
+    bereme 1456 (sumava.cz + vrcholovka). Nejvyšším vrcholem ČESKÉ
+    a rakouské části je dle cumbres.cz Plechý (1378 m).
+
+# Střediska a top cíle se doplní, až budou vazby na doložené profily
+# (po exportu kandidátů DATA-01 a povyšování) — prázdné pole je poctivější
+# než odhad.
+topCile: []
+
+interniPoznamky: >-
+  Založeno 4. 8. 2026 na pokyn Michala („pustíme se do šumavy + bavorskou
+  část, budeme muset založit německo") — Německo přidáno do typů pipeline
+  (ZemeIso), konfigurace okna v scripts/oblasti.ts (slug sumava, zeme CZ+DE,
+  katalogPohori Šumava + Bayerischer Wald).
+
+  Co čeká na běhy v Actions: DATA-01 (kandidáti z OSM — CZ i DE dotaz),
+  DATA-28 (3D terén; mřížka bude nad velkým oknem hrubší, viz konfigurace),
+  pak DATA-06 (výchozí body → značené trasy → přístupy → výšky), DATA-02
+  (fotky), DATA-33/35 (střediska, až vzniknou).
+
+  Co čeká na Michala mimo Actions: hero fotka z mediabanky CzechTourism
+  (vzor Ještědský hřbet) a časem rozhodnutí o rakouské straně (Böhmerwald) —
+  katalog vede jediný rakouský objekt, Helfenberger Hütte.
+
+  Jazyková poznámka pro budoucí profily: bavorské objekty nesou německá
+  jména (Schutzhaus, Berggasthof, Hütte) — vedeme je s originálním názvem
+  jako primárním, české ekvivalenty případně do aliasů (týž princip jako
+  u polských schronisek, rozhodnutí Michala 20. 7. 2026). Dotaz DATA-01 má
+  od 4. 8. 2026 v SLOVA_BOUDY i německá slova (hütte, schutzhaus,
+  berggasthof, berghaus), ať jménem filtrované vrstvy nechytají jen
+  česká pojmenování.

@@ -17,9 +17,11 @@ import { join } from 'node:path'
  * překlep („SL" místo „SK") by se tiše rozlezl do dat. Rozšiřuje se vědomě —
  * až přibude pohoří, které tu zemi opravdu má. Slovensko sem přibylo
  * 30. 7. 2026 dopředu na Michalův pokyn („beskydy budou mít část na
- * Slovensku"), ať se pak přidává jen záznam oblasti, ne typ.
+ * Slovensku"), ať se pak přidává jen záznam oblasti, ne typ. Německo
+ * přibylo 4. 8. 2026 se Šumavou (Michal: „pustíme se do šumavy + bavorskou
+ * část, budeme muset založit německo").
  */
-export type ZemeIso = 'CZ' | 'PL' | 'SK'
+export type ZemeIso = 'CZ' | 'PL' | 'SK' | 'DE'
 
 export type OblastKonfig = {
   slug: string
@@ -117,6 +119,40 @@ export const OBLASTI: OblastKonfig[] = [
     bbox3d: { latMin: 50.64, lngMin: 14.85, latMax: 50.82, lngMax: 15.08 },
     poznamka: 'třetí oblast (rozhodnutí Michala 30. 7. 2026) — Ještěd nepatří do Jizerek, je to jiná geomorfologická jednotka',
     katalogPohori: ['Ještědský hřbet'],
+  },
+  {
+    slug: 'sumava',
+    nazev: 'Šumava',
+    // Čtvrtá oblast (rozhodnutí Michala 4. 8. 2026: „pustíme se do šumavy
+    // + bavorskou část, budeme muset založit německo"). Princip „pohoří
+    // vcelku": česká strana + Bavorský les. RAKOUSKÁ strana (Böhmerwald)
+    // je zatím VĚDOMĚ MIMO — Michalovo zadání jmenuje jen bavorskou část;
+    // katalog vede jediný rakouský objekt (Helfenberger Hütte), který na
+    // tohle rozhodnutí čeká — poznámka v data/oblasti/sumava.yaml.
+    zeme: ['CZ', 'DE'],
+    /**
+     * Okno je NEJVĚTŠÍ v korpusu (~0,9° × 1,9°): Šumava se táhne 120 km od
+     * Všerubského průsmyku po Vyšebrodsko a bavorská strana přidává pás od
+     * Waldmünchenu (Berggasthof Gibacht, 49,36 / 12,66 — nejseverozápadnější
+     * objekt katalogu) po Dreisessel (48,78 / 13,80). Jihovýchod drží českou
+     * stranu k Vítkovu kameni (~48,60 / 14,28). Velikost okna není problém
+     * dotazu — Overpass jede přes průnik area státu × okno s tagovými
+     * filtry; kdyby běh přesto padal na timeout, dělí se po zemích už teď
+     * (každá země = vlastní dotaz).
+     */
+    bbox: { latMin: 48.5, lngMin: 12.55, latMax: 49.4, lngMax: 14.45 },
+    // 3D okno téměř celé okno dotazu — poučení z Krkonoš (Kochanówka):
+    // užší model by tiše vyřízl budoucí profily na okrajích. Cena: mřížka
+    // 240×144 je nad takhle velkým oknem hrubší než u menších pohoří
+    // (~600 m na buňku proti ~200 m u Krkonoš) — pro poster to stačí,
+    // ladění hustoty až nad ostrými daty.
+    bbox3d: { latMin: 48.52, lngMin: 12.6, latMax: 49.38, lngMax: 14.4 },
+    poznamka:
+      'čtvrtá oblast (rozhodnutí Michala 4. 8. 2026) — přeshraniční s Bavorským lesem; rakouská strana zatím mimo',
+    // Böhmerwald (jediný rakouský řádek katalogu) sem VĚDOMĚ nepatří:
+    // dohledávka podle jmen by hledala objekt v zemi, na kterou se dotaz
+    // neptá, a mimo okno — doložený miss bez užitku.
+    katalogPohori: ['Šumava', 'Bayerischer Wald'],
   },
 ]
 

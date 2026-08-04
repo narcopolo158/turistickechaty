@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       oblast:
-        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet'
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet | sumava'
         required: false
         default: 'krkonose'
   # Auto-běh při změně generátoru nebo šablony: nová vrstva/vzhled se do
