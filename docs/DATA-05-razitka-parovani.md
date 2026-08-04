@@ -1,6 +1,6 @@
 # DATA-05 — párování razítek razitkuj.cz s katalogem chat
 
-Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se svolením R. Šindlera / KiBob). Checklist má 354 razítek; katalog 76 chat. Odkaz = „razítko existuje s tímto názvem", NE přiřazení: checklist je celostátní a jmenovci existují i uvnitř Krkonoš (docs/DATA-17-jmenovci.md), takže pár potvrzuje redakce v `data/razitka/_parovani-potvrzene.yaml` — otisky se stahují jen u potvrzených.
+Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se svolením R. Šindlera / KiBob). Checklist má 354 razítek; katalog 107 chat. Odkaz = „razítko existuje s tímto názvem", NE přiřazení: checklist je celostátní a jmenovci existují i uvnitř Krkonoš (docs/DATA-17-jmenovci.md), takže pár potvrzuje redakce v `data/razitka/_parovani-potvrzene.yaml` — otisky se stahují jen u potvrzených.
 
 ## Potvrzené páry — otisky se stahují (47 shod, 46 chat)
 - **Barborka** → [„Barborka"](http://www.razitkuj.cz/misto-barborka/1)
@@ -51,16 +51,46 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - **Vrbatova bouda** → [„Vrbatova bouda"](http://www.razitkuj.cz/misto-vrbatova-bouda/1)
 - **Výrovka** → [„Výrovka"](http://www.razitkuj.cz/misto-vyrovka/1)
 
-## Nové shody KE KONTROLE — nestahují se, dokud je redakce nepotvrdí (0 shod)
+## Nové shody KE KONTROLE — nestahují se, dokud je redakce nepotvrdí (11 shod)
 
 Částečná shoda znamená, že se názvy liší (jeden obsahuje druhý) — tam bývají cizí objekty: „Portáš" není „Portášky", „Chatka AKT na Pietraszonce" nese cizí místní jméno. Kontrola = otevřít detail razítka a posoudit otisk/kontext.
 
+- **Bouda Tetřeví sedlo** → [„Tetřev"](http://www.razitkuj.cz/misto-tetrev/1) · *částečná shoda (název se liší!)*
+- **Horská chata Ještědka** → [„Chata Ještědka"](http://www.razitkuj.cz/3799_chata-jestedka) · *částečná shoda (název se liší!)*
+- **Horská chata Smědava** → [„Smědava"](http://www.razitkuj.cz/misto-smedava/1) · *částečná shoda (název se liší!)*
+- **Hubertka** → [„Hubertka"](http://www.razitkuj.cz/misto-hubertka/1)
+- **Chata Jizerka** → [„Chata Jizerka"](http://www.razitkuj.cz/5428_chata-jizerka)
+- **Chata Pláně pod Ještědem** → [„Pláně pod Ještědem"](http://www.razitkuj.cz/misto-plane-pod-jestedem/1) · *částečná shoda (název se liší!)*
+- **Chatka Górzystów** → [„Chatka Górzystów - Hala Izerska"](http://www.razitkuj.cz/10232_chatka-gorzystow-hala-izerska) · *částečná shoda (název se liší!)*
+- **Na Stogu Izerskim** → [„Schronisko PTTK na Stogu Izerskim"](http://www.razitkuj.cz/10234_schronisko-pttk-na-stogu-izerskim) · *částečná shoda (název se liší!)*
+- **Pešákovna** → [„Pešákovna"](http://www.razitkuj.cz/misto-pesakovna/1)
+- **Prezidentská chata** → [„Prezidentská chata"](http://www.razitkuj.cz/misto-prezidentska-chata/1)
+- **Šámalova chata** → [„Šámalova chata"](http://www.razitkuj.cz/misto-samalova-chata/1)
 
 ## Vyřazené páry — redakce prokázala cizí objekt (2)
 - Chatka AKT Towarzystwa Bażynowego × [„Chatka AKT na Pietraszonce"](http://www.razitkuj.cz/misto-chatka-akt-na-pietraszonce/1)
 - Portášky × [„Portáš"](http://www.razitkuj.cz/misto-portas/1)
 
-## Naše chaty BEZ nalezeného razítka (30)
+## Naše chaty BEZ nalezeného razítka (50)
+- Hotel Ještěd (`horsky-hotel-jested`)
+- Rozhledna Rašovka (`rasovka`)
+- Bártlova bouda (`bartlova-bouda`)
+- Rozhledna Černá studnice (`cerna-studnice`)
+- Chata Proseč (`chata-prosec`)
+- Frýdlantská výšina (`frydlantska-vysina`)
+- Hřebínek (`hrebinek`)
+- Kiosek Knajpa (`knajpa`)
+- Lesní bar Krömerova bouda (`lesni-bar-kromerova-bouda`)
+- Horská chata Lučanka (`lucanka`)
+- Nad Prosečí (`nad-proseci`)
+- Rozhledna Královka (`rozhledna-kralovka`)
+- Liberecká výšina (`rozhledna-liberecka-vysina`)
+- Maják Járy Cimrmana (`rozhledna-majak-j-cimrmana`)
+- Rozhledna Slovanka (`rozhledna-slovanka`)
+- Sky Walk (`sky-walk`)
+- Stacja Turystyczna Orle (`stacja-turystyczna-orle`)
+- Rozhledna Štěpánka (`stepanka`)
+- Rozhledna Tanvaldský Špičák (`tanvaldsky-spicak`)
 - Chata Amor (`amor`)
 - Chata Betyna (`betyna`)
 - Černá bouda (`cerna-bouda`)
@@ -91,6 +121,7 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - U Kotle (`u-kotle`)
 - Vebrovy boudy (`vebrovy-boudy`)
 - Chata Zákoutí (`zakouti`)
+- Žalý (`zaly`)
 
 ## Kandidáti na zpětné dohledání chat — „vypadá krkonošsky", bez shody (2) — K OVĚŘENÍ
 - [„Lesní Zátiší Harrachov"](http://www.razitkuj.cz/6097_lesni-zatisi-harrachov)

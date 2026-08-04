@@ -29,6 +29,65 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-04 (blok 9) — výšky Ještědu doběhly čistě; razítka: 11 nových párů ke kontrole
+
+**Re-run DATA-35 prošel** (commit 7e6e8dc): Liberec – Horní Hanychov 582 m,
+Šimonovice 512 m, Světlá pod Ještědem 541 m. Tentokrát bez protiřečení ve
+zdrojích — `bezVetyOChybejiciVysce` z bloku 7 odvedla svou práci — a všechny
+tři hodnoty jsou věrohodné (Světlá 541 m leží uvnitř doloženého rozpětí
+400–1012 m a není jeho mezí ani středem, což hlídá test). Dvě poznámky psané
+před dopočtem („výšku dodá DATA-35") přepsány do minulého času, ať soubory
+netvrdí budoucnost, která už nastala. **Výšku má teď 21 z 25 středisek** —
+bez ní jsou jen čtyři jizerská bez GPS (čekají na DATA-06 pro Jizerky).
+
+**K DATA-33 upřesnění:** běh, který doběhl, byl s oblastí `jizerske-hory`
+(commit 6cb74d5) — přinesl fotku lanovky Stóg Izerski; jizerská střediska
+nic nedostala, protože bez GPS není kolem čeho hledat. **Ještědská
+střediska fotky pořád nemají** — buď běh s oblastí `jestedsky-hrbet`
+neproběhl, nebo nenašel nic ke commitu; odsud to nejde rozlišit. Jeden klik
+s touhle oblastí to rozhodne (GPS už střediska mají, takže hledání má
+kolem čeho).
+
+**Razítka: přepočet párování nad vyrostlým korpusem** (checklist razitkuj.cz
+dnes přibyl commitem 8715612, ale párování naposledy běželo nad 76 chatami —
+teď jich je 107). Výsledek: 57 chat se jmennou shodou, **11 nových párů KE
+KONTROLE** — z toho tři ještědské (**Chata Ještědka**, **Pláně pod
+Ještědem**, a „Tetřev" proti Boudě Tetřeví sedlo — ten je podezřelý, může to
+být krkonošský Tetřev) a osm jizerských (Smědava, Hubertka, Chata Jizerka,
+Górzystów, Stóg Izerski, Pešákovna, Prezidentská, Šámalova). Detaily razítek
+se ze sandboxu nenačtou (zkoušeno dnes, permission gate) — kontrola párů
+zůstává na tobě nebo na ručním běhu, přesně dle mechanismu z 28. 7.
+Nic se nestahuje, dokud páry nepotvrdíš.
+
+**Vedlejší oprava, kterou vytáhl tvůj jizerský běh DATA-33:** test
+manifestu fotek četl napevno jen `_fotky-krkonose.json`, ale `public/`
+porovnával celý — první jizerský snímek (stog-izerski.jpg) pak vypadal jako
+osiřelý soubor a test hlásil rozchod, který neexistoval. Teď čte všechny
+manifesty `_fotky-*.json` v adresáři.
+
+**Kontroly:** `tsc` čistý, kontrola zelená, testy středisek 16/16,
+DATA-33 testy 30/30 (po opravě), plný vitest 741 prošlo / stejných 8 s DB.
+
+**Ještědský hřbet — stav „kompletně dotáhni":** hotovo je vše, na co sandbox
+a tvé kliky dosáhly: 5 profilů (2 s fotkou, 3 s doloženým důvodem proč bez),
+3 střediska s perexem, dopravou i výškou, top cíle, 6 lanovek, 3D terén,
+opravená lanovková próza, razítkové páry nachystané ke kontrole. **Zbývá
+mimo dosah sandboxu:** ① DATA-33 klik s oblastí `jestedsky-hrbet` (fotky
+středisek); ② potvrzení 2–3 razítkových párů; ③ licence dvou hero fotek
+očima v adminu; ④ otvíračky a kontakty profilů = telefonáty (DATA-04).
+
+**K „můžeme začít sbírat další pohoří" — podklad pro tvou volbu, ať zítřejší
+session může rovnou začít.** Tvoje vlastní měření z 28. 7. řadí kandidáty
+takhle: **Beskydy 35 objektů v externím katalogu (přeshraničně), 10
+známkových míst, 7 razítek** — a Slovensko už je v typech pipeline
+(`ZemeIso`, přidáno 30. 7. na tvůj pokyn „beskydy budou mít část na
+Slovensku"), takže technicky jsou připravené. **Šumava + Bayerischer Wald
+27 objektů** — ale chtěla by přidat DE do typů a rozhodnout, jak s bavorskou
+částí (princip „pohoří vcelku"). Pozor, katalog podhodnocuje: u Krkonoš vedl
+30 objektů proti našim finálním 76. Napiš jen slug a jméno — založení
+oblasti (konfig okna, YAML oblasti, kliky DATA-01/28) je pak rutina podle
+vzoru Jizerek a Ještědu.
+
 ## 2026-08-04 (blok 8) — DATA-02 doběhlo taky: dvě ještědské fotky přiřazeny, tři odmítnuty
 
 **DATA-02 mezitím doběhlo** (commit 6f49068) a Ještědský hřbet nabídky

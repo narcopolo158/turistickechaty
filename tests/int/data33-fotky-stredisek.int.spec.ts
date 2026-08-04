@@ -320,18 +320,25 @@ describe('kdo je na snímku', () => {
  * z každé dvojice to nutně byl snímek cizí dráhy.
  */
 describe('manifest v repu', () => {
-  const manifest = (cesta: string, klic: string) => {
-    const p = join(process.cwd(), 'data', cesta)
-    if (!existsSync(p)) return []
-    return (JSON.parse(readFileSync(p, 'utf8'))[klic] ?? []) as {
-      slug: string
-      soubor: string
-      popis?: string
-      vybrano: { soubor: string }
-    }[]
+  type Zaznam = {
+    slug: string
+    soubor: string
+    popis?: string
+    vybrano: { soubor: string }
   }
-  const lanovky = manifest(join('lanovky', '_fotky-krkonose.json'), 'lanovky')
-  const strediska = manifest(join('strediska', '_fotky-krkonose.json'), 'strediska')
+  // VŠECHNY manifesty adresáře, ne jen krkonošský. Do 4. 8. 2026 se četl
+  // napevno `_fotky-krkonose.json`, jenže public/ se porovnává celý — první
+  // jizerský běh DATA-33 (stog-izerski.jpg + _fotky-jizerske-hory.json) pak
+  // vypadal jako osiřelý soubor a test lhal o rozchodu manifestu s diskem.
+  const manifesty = (adresar: string, klic: string): Zaznam[] => {
+    const kor = join(process.cwd(), 'data', adresar)
+    if (!existsSync(kor)) return []
+    return readdirSync(kor)
+      .filter((f) => f.startsWith('_fotky-') && f.endsWith('.json'))
+      .flatMap((f) => (JSON.parse(readFileSync(join(kor, f), 'utf8'))[klic] ?? []) as Zaznam[])
+  }
+  const lanovky = manifesty('lanovky', 'lanovky')
+  const strediska = manifesty('strediska', 'strediska')
 
   it('jeden soubor z Commons slouží nejvýš jednomu objektu', () => {
     for (const [kde, zaznamy] of [
