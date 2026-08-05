@@ -1,0 +1,128 @@
+# Hotel Belveder — povýšen z kandidáta DATA-01 triáží Tier 1 (5. 8. 2026,
+# vzor DATA-03: katalog × OSM × VLASTNÍ WEB — druhý šumavský profil
+# s načteným vlastním webem). Kapacitu lůžek žádný pramen nevede.
+# Vše verified: false.
+
+nazev: Hotel Belveder
+slug: belveder
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Belveder
+    poznamka: >-
+      podoba jména v OpenStreetMap (bez druhového „Hotel"); jméno nese
+      i kopec, na kterém hotel stojí
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1431486
+lng: 13.2395839
+vyska: 805
+obec: Železná Ruda
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/4011963592 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 805 m: externí katalog
+    (HUT-0105, ověřeno k 2026-07-21) — jediný pramen s číslem; ověření
+    ČÚZK otevřené (DATA-04). Obec Železná Ruda: katalog i vlastní web
+    (načteno 5. 8. 2026): „na louce u lesa na kopci Belveder asi 900
+    metrů od Železné Rudy". V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita se nezapisuje: vlastní web mluví o pohodlných pokojích
+# s dřevěným nábytkem, číslo lůžek ale nevede žádný načtený pramen.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web hotelbelveder.cz (načteno 5. 8. 2026): pohodlné pokoje
+    vybavené dřevěným nábytkem; třípodlažní dům otevřený po celý rok.
+    Katalog (HUT-0105): ubytování ano. Počet lůžek žádný načtený pramen
+    nevede — před cestou ověřit u hotelu.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web hotelbelveder.cz (načteno 5. 8. 2026): hotelová
+    restaurace a vlastní pivovar, „Provozní doba: 11-22 hod každý den";
+    letní terasa a zastřešené ohniště s grilem. Katalog (HUT-0105):
+    stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Hotel celoročně; restaurace s pivovarem denně 11–22.
+kontakty:
+  telefon: '+420 725 737 732'
+  email: info@hotelbelveder.cz
+  web: https://www.hotelbelveder.cz/
+overeniProvoz:
+  source: >-
+    Vlastní web hotelbelveder.cz (načteno 5. 8. 2026): „otevřený po celý
+    rok"; restaurace denně 11–22; mobily +420 725 737 732
+    a +420 607 111 993, e-mail info@hotelbelveder.cz. OSM vede pevnou
+    linku +420 376 397 016 (v ověření, do kontaktů se bere mobil
+    z vlastního webu). Katalog: celoročně — sedí.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Žádný z načtených pramenů historii neuvádí — zůstává prázdná.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Třípodlažní horský hotel na kopci Belveder kousek nad Železnou Rudou —
+  pokoje s dřevěným nábytkem, restaurace s vlastním pivovarem otevřená
+  denně a wellness s vyhřívaným slaným bazénem. Celoroční základna pro
+  železnorudskou stranu Šumavy.
+text:
+  - >-
+    Belveder stojí na louce u lesa na stejnojmenném kopci, necelý
+    kilometr od centra Železné Rudy — dost blízko na nákupy a vlak,
+    dost daleko na klid. Pro výstupy na Ostrý, k Černému a Čertovu
+    jezeru nebo přes hranici na Velký Javor je to celoroční základna
+    na české straně.
+  - >-
+    Dům má tři podlaží a pokoje vybavené dřevěným nábytkem; kolik lůžek
+    přesně nabízí, naše podklady nevedou, takže nocleh je před cestou
+    lepší domluvit telefonicky. Zato o žízeň je postaráno doložitelně:
+    k hotelu patří restaurace s vlastním pivovarem, otevřená denně od
+    jedenácti do desíti večer. K tomu venkovní krytý vyhřívaný bazén se
+    slanou vodou, solná jeskyně, sauny, dětské hřiště a zastřešené
+    ohniště s grilem.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu hotelu
+    a z externího katalogu. Polohu nese OpenStreetMap. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hotelu — poloha na kopci Belveder, tři podlaží,
+      celoroční provoz, restaurace s pivovarem 11–22, wellness, kontakty
+      (načteno 5. 8. 2026)
+    url: https://www.hotelbelveder.cz/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0105
+      (805 m, Železná Ruda, celoročně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, pevná linka, tagy; ODbL)
+    url: https://www.openstreetmap.org/node/4011963592
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/belveder.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: celoroční nocleh s restaurací na
+  železnorudském nástupu do hor, katalogový objekt (jistota A). Druhý
+  šumavský profil s načteným vlastním webem.
+
+  K OVĚŘENÍ: kapacita lůžek (žádný pramen); historie (žádný pramen);
+  vzdálenost od města (web na jedné stránce „asi 800 metrů", na jiné
+  „asi 900 metrů" — v próze „necelý kilometr"). Druhý mobil
+  +420 607 111 993 a pevná linka z OSM vedeny jen v ověření. Fotku dodá
+  příští běh DATA-02.

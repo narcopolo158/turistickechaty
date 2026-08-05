@@ -29,6 +29,44 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-05 (blok 6) — Tier 1: první dva profily s vlastním webem (18 z 21)
+
+**Průlom u českých hotelů: vlastní weby alpskavyhlidka.cz
+a hotelbelveder.cz se ze sandboxu NAČETLY** — první šumavské profily
+stojící na vlastním webu objektu (rovina a churáňov zůstávají za gatem).
+Korpus 125.
+
+1. **Hotel Alpská vyhlídka** — stojí v ZANIKLÉ OBCI BUČINA nad Kvildou
+   u hranice; 32 lůžek (pokoje + apartmány), restaurace, wellness.
+   Výška 1070 jen z katalogu (ČÚZK otevřené). Poctivost prózy: výhled
+   na Alpy se NETVRDÍ (jen jméno domu), příčina zániku Bučiny se
+   NETVRDÍ (web říká jen „zaniklá obec"). PROVĚŘIT vztah k chybějícímu
+   katalogovému objektu „Bučina" ze SUMAVA-TRIAZ — je to týž dům?
+2. **Hotel Belveder** — třípodlažní dům na stejnojmenném kopci ~900 m
+   od Železné Rudy; restaurace s VLASTNÍM PIVOVAREM denně 11–22, slaný
+   vyhřívaný bazén, solná jeskyně. Kapacita lůžek: ŽÁDNÝ pramen —
+   nezapsána, próza posílá na telefon. Kontakty: mobily z webu, pevná
+   z OSM jen v ověření. Drobnost: web sám kolísá 800 × 900 m od města
+   — v próze „necelý kilometr".
+
+**Routing přepočten: 18/18 chat, 34 přístupů** (Belveder 1,01 km od
+nádraží Železná Ruda; Alpská vyhlídka 9,47 km z Kvildy).
+
+**Ban-scan 280 → 282:** dva standardní závěrečné odstavce — posouzeno.
+V bloku i jedna oprava vlastní prózy před commitem: z Alpské vyhlídky
+vyhozeny dvě nedoložené věty (výhled na Alpy, „nejvýš položená ves").
+
+**Kontroly:** tsc čistý, kontrola vse zelená, cílené testy zelené.
+Fronta: 114 povýšeno (+2).
+
+**Stav Tier 1: 18 z 21.** Zbývají 3: Horský hotel Rovina a Horský
+hotel Churáňov (vlastní weby za gatem — zkusit příště, u Churáňova
+rozlišit chatu od hotelu dle OSM jmen) a Berggasthof Eck (843 m,
+Arrach — katalog bez webu i bez kandidáta v exportu, dohledat ručně).
+
+**PRO MICHALA:** platí klik **DATA-06 výšky pro `sumava`** (z bloku 5;
+teď pokryje všech 18 chat najednou).
+
 ## 2026-08-05 (blok 5) — Tier 1: pět bavorských najednou (16 z 21); výšky doběhly u všech tří oblastí
 
 **Výšky z Actions doběhly** (sumava + krkonose + jizerske-hory, 100 %

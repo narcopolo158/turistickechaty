@@ -1,0 +1,124 @@
+# Hotel Alpská vyhlídka — povýšen z kandidáta DATA-01 triáží Tier 1
+# (5. 8. 2026, vzor DATA-03: katalog × OSM × VLASTNÍ WEB — první šumavský
+# profil, kde se vlastní web podařilo načíst). Stojí v zaniklé obci Bučina —
+# vztah k chybějícímu katalogovému objektu „Bučina" prověřit (SUMAVA-TRIAZ).
+# Vše verified: false.
+
+nazev: Hotel Alpská vyhlídka
+slug: alpska-vyhlidka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Alpská vyhlídka
+    poznamka: podoba jména v OpenStreetMap (bez druhového „Hotel")
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9673523
+lng: 13.5924912
+vyska: 1070
+obec: Kvilda
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/12801782102 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 1070 m: externí katalog
+    (HUT-0104, ověřeno k 2026-07-21) — jediný pramen s číslem, vlastní
+    web výšku nevede; ověření ČÚZK otevřené (DATA-04). Obec Kvilda:
+    katalog i adresa na vlastním webu („Bučina 149, 384 93 Kvilda");
+    hotel stojí v zaniklé obci Bučina u česko-bavorské hranice (vlastní
+    web, načteno 5. 8. 2026). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 32
+pokoje:
+  - typ: dvoulůžkové a třílůžkové pokoje, apartmány
+overeniNocleh:
+  source: >-
+    Vlastní web alpskavyhlidka.cz (načteno 5. 8. 2026): „celkem 32 lůžek
+    ve dvou a třílůžkových pokojích a apartmánech". Katalog (HUT-0104):
+    ubytování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web alpskavyhlidka.cz (načteno 5. 8. 2026): hotelová
+    restaurace. Katalog (HUT-0104): stravování ano. OSM tag otvíračky
+    (Mo-Su 10:00-18:00, surový formát, neověřeno) se nejspíš váže
+    k restauraci — nezapisuje se.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 380 428 888'
+  email: hotel@alpskavyhlidka.cz
+  web: https://www.alpskavyhlidka.cz/
+overeniProvoz:
+  source: >-
+    Vlastní web alpskavyhlidka.cz (načteno 5. 8. 2026): telefony
+    +420 380 428 888 a +420 730 166 838, e-mail hotel@alpskavyhlidka.cz,
+    adresa Bučina 149, Kvilda; k službám patří i wellness a masáže.
+    Katalog: provoz celoročně.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Žádný z načtených pramenů historii s letopočty neuvádí — zůstává
+# prázdná. Vlastní web říká jen „v zaniklé obci Bučina".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hotel v zaniklé obci Bučina nad Kvildou, přímo u česko-bavorské
+  hranice — dvaatřicet lůžek v pokojích a apartmánech, restaurace
+  a wellness, otevřeno po celý rok.
+text:
+  - >-
+    Alpská vyhlídka stojí na místě, které samo vypráví: v zaniklé obci
+    Bučina nad Kvildou, pár kroků od bavorské hranice. Ves zanikla
+    a hotel je dnes tím, co na jejím místě stojí — a jak napovídá
+    samotné jméno domu, výhledem se tu chlubí.
+  - >-
+    Uvnitř je dvaatřicet lůžek ve dvoulůžkových a třílůžkových pokojích
+    a apartmánech, hotelová restaurace a wellness s masážemi. Otevřeno
+    má být po celý rok. Pro přechody hraničním hřebenem mezi Kvildou,
+    Modravou a bavorskou stranou pod Luzným je to přirozený nocleh na
+    české straně.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu hotelu
+    a z externího katalogu. Polohu nese OpenStreetMap. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hotelu — zaniklá obec Bučina, 32 lůžek (pokoje
+      a apartmány), restaurace, wellness, kontakty (načteno 5. 8. 2026)
+    url: https://www.alpskavyhlidka.cz/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0104
+      (1070 m, Kvilda, celoročně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS a tagy; ODbL)
+    url: https://www.openstreetmap.org/node/12801782102
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/alpska-vyhlidka.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: nocleh s restaurací na hraničním hřebeni
+  v místě zaniklé vsi, katalogový objekt (jistota A). PRVNÍ šumavský
+  profil s načteným vlastním webem.
+
+  PROVĚŘIT: vztah k chybějícímu katalogovému objektu „Bučina"
+  (SUMAVA-TRIAZ vede Bučinu mezi šesti katalogovými bez kandidáta —
+  je katalogová „Bučina" tenhle hotel, nebo jiný dům?). Výhled na Alpy se
+  NETVRDÍ — próza odkazuje jen na jméno domu (pramen s výslovnou větou
+  o výhledu chybí). Historie
+  Bučiny (zánik po vysídlení) doložena jen rámcově vlastním webem
+  („v zaniklé obci"). Druhý telefon +420 730 166 838 veden jen
+  v ověření. Fotku dodá příští běh DATA-02.
