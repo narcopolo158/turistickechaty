@@ -29,6 +29,44 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-05 (blok 7) — Berggasthof Eck: bavorská část Tier 1 HOTOVÁ (19 z 21)
+
+**Výšky pro sumavu doběhly** (34/34 přístupů, všech 18 chat) — řetěz
+DATA-06 je zase kompletní.
+
+**Berggasthof Eck** (korpus 126) — bývalý horský statek v sedle Eck,
+od roku 1871 v rukou jedné rodiny (doloženo je vlastnictví, NE rok
+stavby — rokVzniku nevyplněn). Pokoje jedno- až třílůžkové včetně
+pokojů pro turisty se psem; kapacita nedoložena. Bavorská kuchyně,
+Biergarten, nabíjení elektrokol zdarma. Trasová vazba doložitelná
+z vlastních dat: v sedle startuje etapa Goldsteigu N13 „Eck - Großer
+Arber" (OSM relace 6482721) a opačným směrem vede hřeben Kaitersbergu
+ke Kötztinger Hütte. Routing: přístup od zastávky Eck 0,10 km.
+
+**OPRAVA VLASTNÍ EVIDENCE:** zápisy z bloků 5 a 6 tvrdily, že Eck
+nemá kandidáta — MÁ (berggasthof-eck.yaml, OSM way/169358398; triážní
+tabulka v SUMAVA-TRIAZ ho vedla správně, chyba vznikla až v deníku).
+Bez kandidáta z katalogových zbývá jen Gibacht.
+
+**Zbylé dva české hotely — stav pramenů:**
+- **Horský hotel Rovina**: katalogový web hotelrovina.cz NEJDE
+  PŘELOŽIT PŘES DNS („Name or service not known") — doména možná
+  neexistuje; poznamenat jako potenciální signál o stavu objektu,
+  NETVRDÍME nic, jen zaznamenáno. Zkusit jindy + jiné prameny.
+- **Horský hotel Churáňov**: vlastní web churanov.cz za permission
+  gatem; agregátory (ceskehory.cz apod.) nechceme jako jediný pramen.
+  Navíc zbývá rozlišit chatu od hotelu (OSM jména se liší od katalogu).
+
+**Ban-scan 282 → 283** (standardní ODbL odstavec — posouzeno).
+**Kontroly:** tsc čistý, kontrola vse zelená, cílené testy zelené.
+Fronta: 115 povýšeno (+1). Routing 19/19 chat, 35 přístupů.
+
+**Stav Tier 1: 19 z 21 — bavorská část (15 objektů DE) KOMPLETNÍ.**
+
+**PRO MICHALA — klik v Actions:** ještě jednou **DATA-06 výšky pro
+`sumava`** (přibyl Eck). Případně: zvládneš z domácí sítě načíst
+hotelrovina.cz a churanov.cz? Stačí vhodit obsah do chatu.
+
 ## 2026-08-05 (blok 6) — Tier 1: první dva profily s vlastním webem (18 z 21)
 
 **Průlom u českých hotelů: vlastní weby alpskavyhlidka.cz

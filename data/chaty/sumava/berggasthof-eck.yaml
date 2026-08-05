@@ -1,0 +1,146 @@
+# Berggasthof Eck — povýšen z kandidáta DATA-01 triáží Tier 1 (5. 8. 2026,
+# vzor DATA-03: katalog × OSM × oficiální turistický portál Bavorského lesa).
+# Poslední bavorský objekt katalogu. Kapacita lůžek nedoložena; výška jen
+# z katalogu. Vše verified: false.
+
+nazev: Berggasthof Eck
+slug: berggasthof-eck
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1632865
+lng: 12.990472
+vyska: 843
+obec: Arrach
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/169358398 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 843 m: externí katalog (HUT-0291, ověřeno k 2026-07-21) —
+    jediný pramen s číslem, portál výšku nevede. Obec Arrach: katalog
+    i adresa na portálu („Eck 1, 93474 Arrach"); dům stojí v sedle Eck
+    v Naturparku Oberer Bayerischer Wald, kde podle OSM začíná etapa
+    Goldsteigu N13 „Eck - Großer Arber" (relace 6482721). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita se nezapisuje: portál vede typy pokojů, číslo lůžek žádný
+# načtený pramen nevede.
+nocleh: ano
+pokoje:
+  - typ: jednolůžkové, dvoulůžkové a třílůžkové pokoje
+  - typ: pokoje pro turisty se psem
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „Einzel-, Doppel- und Dreibettzimmern; Zimmer für Wanderer mit Hund";
+    dům veden v kategorii „Übernachtungsmöglichkeit". Katalog (HUT-0291):
+    ubytování ano. Počet lůžek žádný načtený pramen nevede — před cestou
+    ověřit u domu.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „gutbürgerliche bayerische Küche", útulná pivní zahrada („gemütlicher
+    Biergarten"). Katalog (HUT-0291): stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Otvírací doba se nezapisuje: portál časy nevede, katalog vede jen
+# „celoročně".
+kontakty:
+  telefon: '+49 9945 1351'
+  email: info@berggasthof-eck.de
+  web: https://www.berggasthof-eck.de/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    telefon +49 9945 1351 (potvrzuje OSM), e-mail
+    info@berggasthof-eck.de, web berggasthof-eck.de. Katalog: celoročně;
+    konkrétní časy žádný pramen nevede. U domu je nabíjecí stanice pro
+    elektrokola s osmi zásuvkami zdarma (portál).
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku se nevyplňuje: 1871 je doložený počátek rodinného vlastnictví
+# („seit 1871 im Familienbesitz"), ne rok postavení — bývalý horský statek
+# je starší, letopočet stavby žádný pramen nevede.
+milniky:
+  - rok: 1871
+    udalost: >-
+      Bývalý horský statek (Bergbauernhof) je od tohoto roku v majetku
+      téže rodiny
+overeniHistorie:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „ehemaliger Bergbauernhof", „seit 1871 im Familienbesitz". Rok
+    postavení žádný načtený pramen nevede — rokVzniku se nevyplňuje
+    (1871 je počátek rodinného vlastnictví, ne stavby).
+  verified: false
+  checked: '2026-08-05'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec v sedle Eck mezi Kaitersbergem a javorským masivem —
+  bývalý horský statek, který je od roku 1871 v rukou jedné rodiny.
+  Bavorská kuchyně, pivní zahrada, pokoje i pro turisty se psem; přímo
+  odtud startuje etapa Goldsteigu na Velký Javor.
+text:
+  - >-
+    Berggasthof Eck stojí v sedle Eck, kudy prochází silnička mezi
+    Arrachem a Zellertalem — a hlavně kudy vede Goldsteig: přímo odtud
+    startuje jeho etapa přes hřeben na Velký Javor a opačným směrem se
+    po hřebeni Kaitersbergu dojde ke Kötztinger Hütte. Pro přechody
+    západní části hor je to přirozené místo, kde začít nebo skončit den.
+  - >-
+    Dům je bývalý horský statek a od roku 1871 ho drží jedna rodina.
+    Přespat se dá v jednolůžkových, dvoulůžkových a třílůžkových
+    pokojích — jsou tu i pokoje pro turisty se psem; kolik lůžek dům má
+    celkem, naše podklady nevedou, nocleh proto domluvte předem. Kuchyně
+    vede poctivá bavorská jídla a v létě se sedí v pivní zahradě.
+    Elektrokolo si u domu nabijete zdarma.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní web domu jsme zatím
+    nenačetli, takže z něj necitujeme. Polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — pokoje (vč.
+      pokojů se psem), bavorská kuchyně a Biergarten, „seit 1871 im
+      Familienbesitz", nabíjení elektrokol, kontakty (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/berggasthof-eck-uebernachtungsmoeglichkeit-57fa82be97
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0291
+      (843 m, Arrach, celoročně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web domu (zatím nenačten — necitujeme z něj)
+    url: https://www.berggasthof-eck.de/
+  - popis: >-
+      OpenStreetMap — GPS a tagy domu; sedlo Eck jako start etapy
+      Goldsteigu N13 „Eck - Großer Arber" (relace 6482721; ODbL)
+    url: https://www.openstreetmap.org/way/169358398
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berggasthof-eck.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: nocleh s restaurací v sedle na Goldsteigu
+  (start etapy N13 na Javor dle OSM), katalogový objekt (jistota A).
+  POSLEDNÍ bavorský objekt katalogu — DE část Tier 1 hotova.
+
+  OPRAVA VLASTNÍ EVIDENCE: deníkové zápisy bloků 5–6 vedly Eck mylně
+  mezi objekty bez kandidáta (triážní tabulka SUMAVA-TRIAZ ho měla
+  správně); bez kandidáta z katalogových zůstává jen Gibacht. K OVĚŘENÍ: kapacita lůžek, otvírací doba, rok stavby
+  statku; wanderverband-bayern.de vede dům jako „Wanderheim" — jen
+  titulek z vyhledávání, NETVRDÍME. Vlastní web načíst, až to půjde.
+  Fotku dodá příští běh DATA-02.
