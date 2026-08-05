@@ -1,0 +1,419 @@
+{
+  "zdroj": "OpenStreetMap Overpass (route=hiking) — data © přispěvatelé OpenStreetMap, ODbL 1.0. Planární routing po značených trasách, verified:false.",
+  "pozn": "Sousední chaty = nejbližší jiné chaty po značených trasách. Výšky a casMin (DIN 33466) dopočítá krok s Mapy.com Elevation API (Actions).",
+  "pocetChat": 8,
+  "chaty": [
+    {
+      "slug": "arberschutzhaus",
+      "nazev": "Arberschutzhaus",
+      "prechody": [
+        {
+          "cilSlug": "chamer-hutte",
+          "cilNazev": "Chamer Hütte",
+          "cilUrl": "/nemecko/sumava/chamer-hutte",
+          "delkaKm": 2.64,
+          "useky": [
+            {
+              "znaceni": "cerna",
+              "delkaKm": 0.06
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 2.58
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "osserschutzhaus",
+          "cilNazev": "Osserschutzhaus",
+          "cilUrl": "/nemecko/sumava/osserschutzhaus",
+          "delkaKm": 16.07,
+          "useky": [
+            {
+              "znaceni": "cerna",
+              "delkaKm": 0.06
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 2.55
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 2.94
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 3.51
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.27
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.2
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.07
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 4.47
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "chamer-hutte",
+      "nazev": "Chamer Hütte",
+      "prechody": [
+        {
+          "cilSlug": "arberschutzhaus",
+          "cilNazev": "Arberschutzhaus",
+          "cilUrl": "/nemecko/sumava/arberschutzhaus",
+          "delkaKm": 2.64,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 2.58
+            },
+            {
+              "znaceni": "cerna",
+              "delkaKm": 0.06
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "osserschutzhaus",
+          "cilNazev": "Osserschutzhaus",
+          "cilUrl": "/nemecko/sumava/osserschutzhaus",
+          "delkaKm": 13.5,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.03
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 2.94
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 3.51
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.27
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.2
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.07
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 4.47
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "chata-kct-prasily",
+      "nazev": "Chata KČT Prášily",
+      "prechody": [
+        {
+          "cilSlug": "turnerova-chata",
+          "cilNazev": "Turnerova chata",
+          "cilUrl": "/cesko/sumava/turnerova-chata",
+          "delkaKm": 15.27,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 15.27
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "klostermannova-chata",
+          "cilNazev": "Klostermannova chata",
+          "cilUrl": "/cesko/sumava/klostermannova-chata",
+          "delkaKm": 17,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 5.57
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 5.51
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 5.23
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.69
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "klostermannova-chata",
+      "nazev": "Klostermannova chata",
+      "prechody": [
+        {
+          "cilSlug": "turnerova-chata",
+          "cilNazev": "Turnerova chata",
+          "cilUrl": "/cesko/sumava/turnerova-chata",
+          "delkaKm": 8.9,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 1.76
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 4.31
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.44
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 1.4
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "chata-kct-prasily",
+          "cilNazev": "Chata KČT Prášily",
+          "cilUrl": "/cesko/sumava/chata-kct-prasily",
+          "delkaKm": 17,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.69
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 5.23
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 5.51
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 5.57
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "lusenschutzhaus",
+      "nazev": "Lusenschutzhaus",
+      "prechody": [
+        {
+          "cilSlug": "waldschmidthaus",
+          "cilNazev": "Waldschmidthaus",
+          "cilUrl": "/nemecko/sumava/waldschmidthaus",
+          "delkaKm": 14.07,
+          "useky": [
+            {
+              "znaceni": "cerna",
+              "delkaKm": 0.18
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 13.89
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "osserschutzhaus",
+      "nazev": "Osserschutzhaus",
+      "prechody": [
+        {
+          "cilSlug": "chamer-hutte",
+          "cilNazev": "Chamer Hütte",
+          "cilUrl": "/nemecko/sumava/chamer-hutte",
+          "delkaKm": 13.5,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 4.47
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.07
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.2
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.27
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 3.51
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 2.94
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 0.03
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "arberschutzhaus",
+          "cilNazev": "Arberschutzhaus",
+          "cilUrl": "/nemecko/sumava/arberschutzhaus",
+          "delkaKm": 16.07,
+          "useky": [
+            {
+              "znaceni": "cervena",
+              "delkaKm": 4.47
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.07
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 2.2
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 0.27
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 3.51
+            },
+            {
+              "znaceni": "modra",
+              "delkaKm": 2.94
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 2.55
+            },
+            {
+              "znaceni": "cerna",
+              "delkaKm": 0.06
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "turnerova-chata",
+      "nazev": "Turnerova chata",
+      "prechody": [
+        {
+          "cilSlug": "klostermannova-chata",
+          "cilNazev": "Klostermannova chata",
+          "cilUrl": "/cesko/sumava/klostermannova-chata",
+          "delkaKm": 8.9,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 1.4
+            },
+            {
+              "znaceni": "cervena",
+              "delkaKm": 1.44
+            },
+            {
+              "znaceni": "zluta",
+              "delkaKm": 4.31
+            },
+            {
+              "znaceni": "zelena",
+              "delkaKm": 1.76
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        },
+        {
+          "cilSlug": "chata-kct-prasily",
+          "cilNazev": "Chata KČT Prášily",
+          "cilUrl": "/cesko/sumava/chata-kct-prasily",
+          "delkaKm": 15.27,
+          "useky": [
+            {
+              "znaceni": "zluta",
+              "delkaKm": 15.27
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    },
+    {
+      "slug": "waldschmidthaus",
+      "nazev": "Waldschmidthaus",
+      "prechody": [
+        {
+          "cilSlug": "lusenschutzhaus",
+          "cilNazev": "Lusenschutzhaus",
+          "cilUrl": "/nemecko/sumava/lusenschutzhaus",
+          "delkaKm": 14.07,
+          "useky": [
+            {
+              "znaceni": "zelena",
+              "delkaKm": 13.89
+            },
+            {
+              "znaceni": "cerna",
+              "delkaKm": 0.18
+            }
+          ],
+          "podilNeznacenychProc": 0,
+          "kRucniKontrole": false
+        }
+      ]
+    }
+  ]
+}

@@ -29,6 +29,37 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-05 (blok 2) — patch ranní session na mainu; routing Šumavy odblokoval výšky
+
+**Patch od ranní session přiložen na main** (git am -3, čistě): tři bavorské
+profily — Osserschutzhaus, Berggasthof Dreisessel, Chamer Hütte. Konflikty
+v deníku a backlogu vyřešila trojcestná synchronizace; jediný ruční zásah
+byla zastaralá věta v SUM-01, která ty tři ještě jmenovala jako „nejbližší
+další" — srovnáno, **Tier 1 je na 9 z 21**, korpus 116 profilů.
+
+**A hned k tvému screenshotu: běh „DATA-06 výšky" #10 spadl SPRÁVNĚ.**
+Hlídač řetězu ohlásil, že Šumavě chybí krok 3b (routing přístupových tras)
+— výšky nemají co měřit, dokud nejsou trasy. Routing je ale čistě planární
+a jde v sandboxu, takže jsem ho rovnou pustil:
+
+- **Přístupové trasy: 9 z 9 chat, 18 přístupů, 0 k ruční kontrole.**
+  Prášily 0,04 km od zastávky v obci, Klostermannova 0,41 km z Modravy,
+  Lusenschutzhaus 5,2 km z Lusenparkplatzu, Dreisessel 9,9 km
+  z Neureichenau… Nejdelší je Arberschutzhaus ze zastávky Bayerisch
+  Eisenstein (17,5 km po značených) — katalogový doporučený nástup je
+  vzdálená obec, kratší nástupy od lanovky doplní střediska, až vzniknou.
+- **Přechody mezi chatami:** Turnerova ↔ Klostermannova 8,9 km,
+  Lusenschutzhaus ↔ Waldschmidthaus 14,1 km, Osser ↔ Chamer 13,5 km —
+  první hřebenové vazby oblasti.
+
+**Kontroly:** tsc čistý, kontrola zelená, testy DATA-06 nad novými daty
+48/48, plný vitest 752 / stejných 8 s DB.
+
+**PRO MICHALA: stačí RE-RUN běhu „DATA-06: výšky přístupových tras"
+(oblast `sumava`)** — řetěz je kompletní (trasy ✓ body ✓ přístupy ✓
+přechody ✓), tentokrát projde a 18 přístupů dostane převýšení a časy
+dle DIN 33466.
+
 ## 2026-08-05 — denní session: Tier 1 Šumavy o tři dál (Osser, Dreisessel, Chamer)
 
 **Hotovo**
