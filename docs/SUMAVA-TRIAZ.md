@@ -42,6 +42,18 @@ Jmenná shoda exportu s katalogem (u šesti se OSM jméno liší — v závorce)
 
 ## Katalogové objekty BEZ kandidáta (6 z 27)
 
+> **Dohledávka 5. 8. 2026 (blok 8):** České weby jsou ze sandboxu plošně
+> nedosažitelné — pancir.cz (permission gate), antygl.cz (robots 500),
+> zadov.cz (timeout), hotelrovina.cz (mrtvá doména — ověřil Michal).
+> Dohledávka šestice proto stojí na katalogu a čeká na lidský krok nebo
+> Actions. **Nová otázka k Bučině:** katalog vede „Horská chata Bučina"
+> (HUT-0109, 1170 m) VEDLE „Hotel Alpská vyhlídka" (HUT-0104, 1070 m,
+> adresa Bučina 149) — dvě různé výšky naznačují DVA objekty v zaniklé
+> Bučině, ne jeden; neztotožňovat bez pramene. Oprava: Berggasthof Eck
+> kandidáta MÁ (povýšen v bloku 7) — bez kandidáta zbývá z DE jen
+> Gibacht (HUT-0292, bez webu v katalogu).
+
+
 Export je nenašel ani dohledávkou podle jmen — dohledat ručně nebo DATA-31:
 
 - **Horská chata Pancíř** (CZ) — export má `rozhledna-pancir`; na Pancíři

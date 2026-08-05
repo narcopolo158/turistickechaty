@@ -29,6 +29,32 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-05 (blok 8) — poslední dva hotely a šestice chybějících: nálezy zapsány, čeká se na lidský krok
+
+**Od Michala:** hotelrovina.cz NEFUNGUJE (ověřeno z domácí sítě — ze
+sandboxu selhává už DNS); churanov.cz PŘESMĚROVÁVÁ na
+zadov.cz/lanovka/ (doména hotelu vede na stránku lanovky areálu Zadov).
+Zadov.cz je ze sandboxu nedostupný (timeout) — vztah hotelu k areálu
+neprověřen, NETVRDÍME.
+
+**Dohledávka šestice bez kandidáta:** české weby jsou ze sandboxu
+plošně nedosažitelné (pancir.cz gate, antygl.cz robots 500, zadov.cz
+timeout). Vše zapsáno do kandidátů (chata-rovina, chata-churanov)
+a do SUMAVA-TRIAZ. **Nová otázka:** katalog vede „Horskou chatu
+Bučina" (1170 m) VEDLE „Hotelu Alpská vyhlídka" (1070 m, adresa
+Bučina 149) — dvě výšky naznačují DVA objekty v zaniklé Bučině;
+neztotožňovat bez pramene.
+
+**Závěr Tier 1: 19 z 21 hotovo; Rovina a Churáňov čekají na DATA-04
+(telefonát) nebo živý pramen.** Mrtvý web Roviny je signál k prověření
+samotného provozu.
+
+**Otázky pro Michala:** rokVzniku čtveřice (Proseč / Prášily /
+Turnerova / Mooshütte); razítkové páry; Odrodzenie; Benecko;
+certifikát; domény Dreisessel a Prášily; NOVĚ: až budeš u telefonu,
+Rovina (jede vůbec?) a Churáňov (hotel × areál Zadov) — případně
+vhodit obsah pancir.cz / antygl.cz / zadov.cz do chatu.
+
 ## 2026-08-05 (blok 7) — Berggasthof Eck: bavorská část Tier 1 HOTOVÁ (19 z 21)
 
 **Výšky pro sumavu doběhly** (34/34 přístupů, všech 18 chat) — řetěz
