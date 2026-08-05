@@ -1,0 +1,158 @@
+# Eisensteiner Hütte — povýšen z kandidáta DATA-01 triáží Tier 1 (5. 8. 2026,
+# vzor DATA-03: katalog × OSM × oficiální turistický portál Bavorského lesa).
+# Vlastní stránka na arber.de se ze sandboxu nenačetla — profil stojí na
+# bayerischer-wald.de; próza to přiznává. POZOR: portál výslovně říká „bez
+# noclehu" a vede zavírací měsíce — oba rozpory s katalogem přiznány.
+# Vše verified: false.
+
+nazev: Eisensteiner Hütte
+slug: eisensteiner-hutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Eisensteiner Hüttn
+    poznamka: >-
+      bavorská podoba jména, pod kterou chatu vede oficiální turistický
+      portál Bavorského lesa
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1134315
+lng: 13.1394901
+vyska: 1340
+obec: Bayerisch Eisenstein
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/32639764 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1340 m: oficiální turistický portál bayerischer-wald.de (načteno
+    5. 8. 2026): „1.340 m ü.NN"; totéž číslo nese externí katalog
+    (HUT-0279). Obec Bayerisch Eisenstein: katalog i adresa na portálu
+    („Großer Arber, 94252 Bayerisch Eisenstein"). Chata stojí u vrcholu
+    Velkého Javoru pár desítek metrů od Arberschutzhausu a horní stanice
+    lanovky. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# ROZPOR PRAMENŮ: katalog vede „ubytování ano" (bez kapacity), portál
+# výslovně „keine Übernachtungsmöglichkeit". Bereme konkrétnější pramen —
+# slibovat nocleh, který výslovně popřel podrobnější zdroj, by bylo horší
+# než ho nevypsat. Rozpor přiznán tady i v próze.
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „keine Übernachtungsmöglichkeit" — bez noclehu. Externí katalog
+    (HUT-0279, ověřeno k 2026-07-21) přitom vede „ubytování ano" bez
+    kapacity — ROZPOR; bereme výslovnou větu podrobnějšího pramene,
+    rozpor nerozhodnut.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „durchgehend gut bürgerliche und bayerische warme Küche" — průběžně
+    teplá bavorská kuchyně. Katalog (HUT-0279): stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Otvíračka se odvíjí od provozu lanovky; katalogové „celoročně" je
+# v rozporu se zavíracími měsíci z portálu — přiznáno, nerozhodnuto.
+otviraciDoba: >-
+  Otevřeno podle provozu lanovky ARBER-BERGBAHN; v listopadu a od poloviny
+  dubna do začátku května zavřeno.
+kontakty:
+  telefon: '+49 9925 94140'
+  email: arber@hohenzollern.com
+  web: https://www.arber.de/gastronomie/eisensteiner-huette.html
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    provoz „gemäß den Öffnungszeiten der ARBER-BERGBAHN", „im November und
+    von Mitte April - Anfang Mai geschlossen"; provozovatel ARBER-BERGBAHN;
+    telefon +49 9925 94140 (potvrzuje OSM), e-mail arber@hohenzollern.com,
+    stránka na arber.de. Katalog vede „celoročně" — ROZPOR se zavíracími
+    měsíci, nerozhodnut. OSM tag otvíračky (10:00–17:00, surový formát)
+    se s vazbou na lanovku snese, neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1962
+milniky:
+  - rok: 1962
+    udalost: Chata postavena u vrcholu Velkého Javoru
+  - rok: 2006
+    udalost: Generální sanace budovy
+overeniHistorie:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    postavena 1962, „2006 Generalsanierung". Jiný načtený pramen historii
+    nevede.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Restaurace v 1340 metrech přímo u vrcholu Velkého Javoru, pár kroků od
+  horní stanice lanovky — teplá bavorská kuchyně po celý den provozu,
+  nocleh ale nečekejte. V listopadu a na přelomu dubna a května bývá
+  zavřeno spolu s lanovkou.
+text:
+  - >-
+    Eisensteiner Hütte stojí v sedle těsně pod vrcholem Velkého Javoru
+    (Großer Arber), nejvyšší hory celé Šumavy s Bavorským lesem — pár
+    desítek metrů od Arberschutzhausu a od horní stanice kabinové lanovky.
+    Kdo vyjede lanovkou nebo vystoupá po značených cestách, má tu po ruce
+    průběžně teplou bavorskou kuchyni.
+  - >-
+    Na rozdíl od sousedního Arberschutzhausu tu ale nepřespíte: podle
+    podrobnějšího z našich pramenů chata nocleh nenabízí, ačkoli katalog,
+    ze kterého vycházíme, ubytování uvádí — rozpor nezastíráme. Provoz se
+    odvíjí od jízd lanovky; v listopadu a od poloviny dubna do začátku
+    května je zavřeno. Chatu provozuje společnost provozující i lanovku
+    a kuriozita na závěr: je tu svatební síň pro civilní obřady.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní stránka chaty se nám
+    zatím nepodařilo načíst, takže z ní necitujeme. Polohu nese
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — výška 1340 m, bez
+      noclehu, bavorská kuchyně, provoz dle lanovky + zavírací měsíce,
+      provozovatel ARBER-BERGBAHN, historie 1962/2006, svatební síň,
+      kontakty (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/eisensteiner-huettn-bewirtschaftet-a621ac1163
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0279
+      (1340 m, Bayerisch Eisenstein, stravování; „ubytování ano" a
+      „celoročně" v rozporu s portálem — přiznáno)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní stránka chaty na arber.de (5. 8. 2026 nedostupná ze sandboxu)
+    url: https://www.arber.de/gastronomie/eisensteiner-huette.html
+  - popis: OpenStreetMap (GPS, telefon, tagy; ODbL)
+    url: https://www.openstreetmap.org/way/32639764
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/eisensteiner-hutte.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: obsluhovaná restaurace u vrcholového uzlu
+  nejvyšší hory pohoří, katalogový objekt (jistota A). Bez noclehu — dle
+  rozhodnutí Michala z 26. 7. 2026 není důvod k vyřazení (turistická role
+  na hřebeni zjevná).
+
+  ROZPORY (přiznány, nerozhodnuty): nocleh (katalog ano × portál výslovně
+  ne — zapsáno ne dle konkrétnější věty); provoz (katalog celoročně ×
+  portál zavírací měsíce — týž vzorec jako Arberschutzhaus, nejspíš oba
+  vedou režim lanovky). Provozovatel ARBER-BERGBAHN = týž jako
+  Arberschutzhaus (e-mail hohenzollern.com sedí k Fürstl.
+  Hohenzollernsche z profilu souseda — NETVRDÍME nad rámec pramenů).
+  Až bude arber.de dosažitelný, doplnit odtud. Fotku dodá příští běh
+  DATA-02.

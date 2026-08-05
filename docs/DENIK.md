@@ -29,6 +29,40 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-05 (blok 4) — Tier 1: Eisensteiner Hütte a Falkensteinschutzhaus (11 z 21)
+
+**Dva další bavorské profily** (vzor DATA-03, opět katalog × OSM ×
+bayerischer-wald.de — jediný spolehlivě dosažitelný portál; korpus 118).
+
+1. **Eisensteiner Hütte** — restaurace v 1340 m přímo u vrcholového uzlu
+   Velkého Javoru, pár desítek metrů od Arberschutzhausu (dnešní trasová
+   práce se hodila hned dvakrát). DVA ROZPORY přiznány: katalog vede
+   „ubytování ano", portál výslovně „keine Übernachtungsmöglichkeit" —
+   zapsáno `nocleh: ne` dle konkrétnější věty; katalog „celoročně" ×
+   portál zavírací měsíce (listopad, půlka dubna–začátek května) — týž
+   vzorec jako u Arberschutzhausu, oba domy jedou v režimu lanovky
+   (provozovatel ARBER-BERGBAHN, historie 1962 + sanace 2006). Kuriozita:
+   svatební síň pro civilní obřady.
+2. **Falkensteinschutzhaus** — dům Bavorského lesního spolku z roku 1932
+   pod Großer Falkensteinem, 1315 m; vzácná shoda katalogu s portálem na
+   40 lůžek (10 čtyřlůžkových pokojů). Nocleh JEN na telefonickou
+   rezervaci den předem do 17:00 — pro plánování přechodu zásadní, je to
+   v perexu i próze. rokVzniku 1932 vyplněn s poznámkou: přestavba 2019
+   je Umbau téhož domu, ne novostavba po zániku — LIŠÍ se od trojice
+   Proseč/Prášily/Turnerova, takže nečeká na rozhodnutí. Otvíračka
+   nezapsána (tři prameny, žádný závazný — „Bergtelefon").
+
+**Ban-scan 273 → 275:** dva nové zásahy, oba standardní závěrečný
+odstavec s ODbL atribucí — posouzeno, ponecháno.
+
+**Kontroly:** tsc čistý, kontrola vse zelená, cílené testy (sumava,
+fronta, povyšování) zelené. Fronta: 107 povýšeno (+2).
+
+**Stav Tier 1: 11 z 21.** Zbývá 10 — DE: Kötztinger Hütte, Berghütte
+Schareben, Landshuter Haus, Berghaus Sonnenfels, Berggasthof Mooshütte
+(+ Eck z katalogu bez kandidáta?); CZ: Alpská vyhlídka, Belveder,
+Rovina, Churáňov (rozlišit chatu od hotelu).
+
 ## 2026-08-05 (blok 3) — Arberschutzhaus: proč 17,5 km z Bayerisch Eisenstein, tři opravy geokódu a nový příznak okliky
 
 **Zadání Michala:** *„podívej se na trasu na arberschutzhaus, není z B. Eisenstein

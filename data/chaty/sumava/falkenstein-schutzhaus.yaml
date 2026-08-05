@@ -1,0 +1,156 @@
+# Falkensteinschutzhaus — povýšen z kandidáta DATA-01 triáží Tier 1
+# (5. 8. 2026, vzor DATA-03: katalog × OSM × oficiální turistický portál
+# Bavorského lesa). Vzácná shoda pramenů na kapacitě (40 lůžek). Vlastní web
+# schutzhaus-falkenstein.de se ze sandboxu nezkoušel načíst přes gate —
+# necitujeme z něj. Vše verified: false.
+
+nazev: Falkensteinschutzhaus
+slug: falkenstein-schutzhaus
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Falkenstein Schutzhaus
+    poznamka: podoba jména dle OpenStreetMap a turistického portálu
+  - nazev: Schutzhaus Falkenstein
+    poznamka: podoba jména na vlastním webu chaty
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.08466
+lng: 13.2806244
+vyska: 1315
+obec: Lindberg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/173868483 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1315 m: oficiální turistický portál bayerischer-wald.de (načteno
+    5. 8. 2026) i externí katalog (HUT-0280) — shoda. Obec Lindberg:
+    jediný pramen s obcí je katalog; portál vede korespondenční adresu ve
+    Spiegelau (vztah neprověřen, NETVRDÍME). Dům stojí pod vrcholem
+    Großer Falkenstein v rozšířeném území Národního parku Bavorský les.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 40
+pokoje:
+  - typ: 10 čtyřlůžkových pokojů
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    40 lůžek, „10 Vierbett-Zimmer"; nocleh jen s telefonickou rezervací
+    nejpozději den před příjezdem do 17 hodin. Týchž 40 lůžek vede externí
+    katalog (HUT-0280, ověřeno k 2026-07-21) — vzácná shoda dvou pramenů.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    lokál (Gaststube) pro zhruba sto hostů, „traditionell-bayerische
+    Gerichte", domácí koláče a zmrzlina. Katalog (HUT-0280): stravování
+    ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Otvírací doba se nezapisuje: portál konkrétní časy nevede (odkazuje na
+# „Bergtelefon"), katalog vede jen „květen až říjen, částečně zima" a OSM
+# nese surový tag May 01-Nov 04 10:00-17:00 — tři prameny, žádný závazný.
+kontakty:
+  telefon: '+49 9925 903366'
+  email: info@1315m.de
+  web: https://www.schutzhaus-falkenstein.de/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    telefon +49 9925 903366 (potvrzuje OSM), e-mail info@1315m.de, web
+    schutzhaus-falkenstein.de; nájemce Michael Garhammer; konkrétní časy
+    portál nevede (informace přes „Bergtelefon"). Katalog: „květen až
+    říjen, částečně zima". OSM tag otvíračky (May 01-Nov 04: Mo-Su
+    10:00-17:00, surový formát, neověřeno) s katalogem zhruba sedí.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku 1932: dům postavil Bavorský lesní spolek a stojí dodnes —
+# přestavba 2019 kontinuitu budovy nepřerušila (Umbau, ne novostavba).
+rokVzniku: 1932
+milniky:
+  - rok: 1932
+    udalost: Dům postavil Bavorský lesní spolek (Bayerischer Wald-Verein)
+  - rok: 1987
+    udalost: Vysvěcena kaple svatého Františka u domu
+  - rok: 2019
+    udalost: Kompletní přestavba, znovuotevřeno v září
+overeniHistorie:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    postaveno 1932 Bavorským lesním spolkem, 1987 kaple sv. Františka,
+    2019 kompletní přestavba s otevřením v září. rokVzniku 1932 — jde
+    o přestavbu téhož domu, ne o novostavbu po zániku (liší se od vzoru
+    Proseč/Prášily).
+  verified: false
+  checked: '2026-08-05'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský dům z roku 1932 v 1315 metrech pod vrcholem Großer Falkenstein —
+  čtyřicet lůžek ve čtyřlůžkových pokojích (jen na telefonickou rezervaci
+  den předem), bavorská kuchyně a výhledy na Javor, Ostrý i Roklan. Po
+  kompletní přestavbě otevřeno od září 2019.
+text:
+  - >-
+    Falkensteinschutzhaus stojí těsně pod vrcholem Großer Falkenstein
+    v rozšířeném území Národního parku Bavorský les, na trase hřebenových
+    přechodů mezi Železnorudskem a Roklanem. Dům postavil v roce 1932
+    Bavorský lesní spolek; v roce 1987 k němu přibyla kaple svatého
+    Františka a v roce 2019 prošel kompletní přestavbou — otevřeno bylo
+    znovu v září.
+  - >-
+    Uvnitř je čtyřicet lůžek v deseti čtyřlůžkových pokojích — přespat se
+    tu ale dá jen po telefonické rezervaci nejpozději den předem do pěti
+    odpoledne, s čímž je při plánování přechodu potřeba počítat. Lokál
+    pro zhruba sto hostů vede tradiční bavorská jídla, domácí koláče
+    a zmrzlinu. Z okolí domu se otevírají výhledy na Velký Javor, Ostrý,
+    Roklan i na Zwiesel v údolí.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; z vlastního webu domu zatím
+    necitujeme. Polohu nese OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — výška 1315 m,
+      40 lůžek / 10 čtyřlůžkových pokojů, rezervace den předem, lokál
+      ~100 míst, nájemce Garhammer, historie 1932/1987/2019, kontakty
+      (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/falkenstein-schutzhaus-uebernachtungsmoeglichkeit-d31ebd5208
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0280
+      (1315 m, Lindberg, 40 lůžek, květen–říjen + částečně zima)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web domu (zatím nenačten — necitujeme z něj)
+    url: https://www.schutzhaus-falkenstein.de/
+  - popis: OpenStreetMap (GPS, telefon, tagy; ODbL)
+    url: https://www.openstreetmap.org/node/173868483
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/falkenstein-schutzhaus.yaml triáží
+  Tier 1 (5. 8. 2026). Klíč zařazení: obsluhovaný horský dům s noclehem
+  pod hřebenovým vrcholem, katalogový objekt (jistota A), historie od
+  1932 doložena.
+
+  K OVĚŘENÍ: otvírací doba (tři prameny, žádný závazný — „Bergtelefon");
+  vlastní web načíst, až to půjde (adresa portálu ve Spiegelau je nejspíš
+  korespondenční — neprověřeno, NETVRDÍME); vztah k Bavorskému lesnímu
+  spolku dnes (postavil ho 1932, současného vlastníka žádný načtený
+  pramen nevede — nájemce Garhammer dle portálu). Fotku dodá příští běh
+  DATA-02.
