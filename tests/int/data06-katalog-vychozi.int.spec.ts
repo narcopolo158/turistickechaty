@@ -89,6 +89,64 @@ describe('DATA-06 katalog · geokodujBod (shoda po celých slovech)', () => {
   })
 })
 
+describe('DATA-06 katalog · geokodujBod (německé ekvivalenty + obec ve fallbacku)', () => {
+  // Nález 5. 8. 2026 (Arberschutzhaus) — obě regresní pojistky.
+  const osmDe: OsmBod[] = [
+    { nazev: 'Gipfelstation Großer Arber', typ: 'lanovka', lat: 49.1131, lng: 13.1385 },
+    { nazev: 'Horní stanice lanovky', typ: 'lanovka', lat: 48.8658, lng: 14.2835 }, // generický bod na Hochfichtu, 60 km vedle
+    { nazev: 'Bayerisch Eisenstein', typ: 'obec', lat: 49.1223, lng: 13.2032 },
+    { nazev: 'Bayerisch Eisenstein', typ: 'zeleznice', lat: 49.1214, lng: 13.2089 },
+    { nazev: 'Bayerisch Eisenstein, Bahnhof', typ: 'zastavka', lat: 49.1213, lng: 13.2079 },
+  ]
+
+  it('„horní stanice lanovky" sedne na německou Gipfelstation, ne na generický bod 60 km vedle', () => {
+    const g = geokodujBod('Großer Arber, horní stanice lanovky', 'Bayerisch Eisenstein', osmDe)
+    expect(g?.bod.nazev).toBe('Gipfelstation Großer Arber')
+    expect(g?.podle).toBe('bod')
+  })
+
+  it('„železniční stanice" sedne přes ekvivalent Bahnhof na konkrétní zastávku', () => {
+    const g = geokodujBod('Bayerisch Eisenstein, železniční stanice', 'Bayerisch Eisenstein', osmDe)
+    expect(g?.bod.nazev).toBe('Bayerisch Eisenstein, Bahnhof')
+    expect(g?.podle).toBe('bod')
+  })
+
+  it('fallback na uzel preferuje OBEC před stejnojmennou stanicí', () => {
+    // Trasa pak startuje od středu obce — od nádraží vedla v grafu 17,5km oklikou.
+    const g = geokodujBod('Brennes, parkoviště / autobusová zastávka', 'Bayerisch Eisenstein', osmDe)
+    expect(g?.podle).toBe('uzel')
+    expect(g?.bod.typ).toBe('obec')
+  })
+
+  it('shoda bodu jen na jméno uzlu NENÍ trefa — spadne na řádný fallback s preferencí obce', () => {
+    // Nález 5. 8. 2026 (Stóg Izerski): „Świeradów-Zdrój, dolní stanice gondoly"
+    // sedlo po celých slovech na holé „Świeradów-Zdrój" (nádraží) a profil by
+    // tvrdil start u gondoly, ačkoli trasa startuje na nádraží 1,4 km od ní.
+    const osmPl: OsmBod[] = [
+      { nazev: 'Świeradów-Zdrój', typ: 'obec', lat: 50.9093, lng: 15.3332 },
+      { nazev: 'Świeradów-Zdrój', typ: 'zeleznice', lat: 50.9114, lng: 15.3435 },
+    ]
+    const g = geokodujBod('Świeradów-Zdrój, dolní stanice gondoly', 'Świeradów-Zdrój', osmPl)
+    expect(g?.podle).toBe('uzel') // jméno pak nese to, co se našlo, ne text z katalogu
+    expect(g?.bod.typ).toBe('obec')
+  })
+
+  it('shoda bodu jen na jméno uzlu se hlásí jako uzel i bez obce v datech', () => {
+    // „Brennes, parkoviště" najde jen zastávku „Brennes" — to je nález uzlu
+    // (jména), ne konkrétního parkoviště; podle=uzel → UI ukáže nástup jako
+    // katalogovou poznámku, ne jako doložený start trasy.
+    const osmMini: OsmBod[] = [{ nazev: 'Brennes', typ: 'zastavka', lat: 49.134, lng: 13.144 }]
+    const g = geokodujBod('Brennes, parkoviště', 'Brennes', osmMini)
+    expect(g?.bod.nazev).toBe('Brennes')
+    expect(g?.podle).toBe('uzel')
+  })
+
+  it('dotaz na BOD pořád preferuje konkrétní bod před obcí (obec-first platí jen pro uzel)', () => {
+    const g = geokodujBod('Rokytnice nad Jizerou, Lysá hora – lanovka', '', osm)
+    expect(g?.bod.typ).toBe('lanovka')
+  })
+})
+
 const CSV_HLAVICKA =
   'ID chaty,Chata,Země,Pohoří,Nejbližší obec / uzel,Pořadí,Výchozí bod,Typ výchozího bodu,Doprava / návaznost,Sezóna / omezení,Jistota,Zdrojové URL,Poznámka,Ověřeno k'
 

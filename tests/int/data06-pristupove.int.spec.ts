@@ -6,7 +6,7 @@
 import { describe, expect, it } from 'vitest'
 
 import { postavGraf, uzelKlic } from '../../scripts/data06-graf'
-import { vyberPristupy, vyberPristupyZKatalogu, type VychoziSnap } from '../../scripts/data06-pristupove-trasy'
+import { podezrelaOklika, vyberPristupy, vyberPristupyZKatalogu, type VychoziSnap } from '../../scripts/data06-pristupove-trasy'
 import type { DoporucenyBod } from '../../scripts/data06-katalog-vychozi'
 import type { TrasaRelace } from '../../scripts/data06-trasy'
 
@@ -127,5 +127,56 @@ describe('DATA-06 · přístupy z katalogu (pořadí + metadata + sanity)', () =
     ]
     const p = vyberPristupyZKatalogu(graf, A, 50.0, 15.0, doporucene, 3)
     expect(p.map((x) => x.vychoziBod)).toEqual(['Blízko A'])
+  })
+})
+
+describe('DATA-06 · podezřelá oklika (nález 5. 8. 2026, Arberschutzhaus)', () => {
+  it('trasa přes trojnásobek vzdušné vzdálenosti = k ruční kontrole', () => {
+    // Arberschutzhaus: 17,52 km trasy při 5,15 km vzdušně (chybějící propojka
+    // sítě u nádraží Bayerisch Eisenstein) — přesně tohle má příznak chytit.
+    expect(podezrelaOklika(17.52, 5.15)).toBe(true)
+  })
+
+  it('poctivé horské trasy neflaguje', () => {
+    expect(podezrelaOklika(8.51, 5.16)).toBe(false) // B. Eisenstein (obec) → Arberschutzhaus
+    expect(podezrelaOklika(12.0, 6.0)).toBe(false) // 2× vzdušné = běžné údolní vedení
+  })
+
+  it('krátké serpentiny pod vrcholem chrání přirážka (násobek by je flagoval křivě)', () => {
+    expect(podezrelaOklika(1.5, 0.3)).toBe(false) // 5× vzdušné, ale jen +1,2 km
+    expect(podezrelaOklika(2.5, 0.3)).toBe(true) // přes vzdušnou + 2 km už ano
+  })
+
+  it('příznak se propíše do přístupu z katalogu', () => {
+    // Syntetická oklika: značená trasa vede z chaty dlouhým hákem na východ
+    // a zpět k bodu 111 m od chaty → délka ≫ vzdušná.
+    const hak: TrasaRelace = {
+      type: 'relation',
+      id: 3,
+      tags: { 'osmc:symbol': 'red:white:red_bar' },
+      members: [
+        {
+          type: 'way',
+          ref: 0,
+          role: '',
+          geometry: [
+            { lat: 50.0, lon: 15.0 }, // chata
+            { lat: 50.0, lon: 15.05 }, // 3,6 km na východ
+            { lat: 50.001, lon: 15.05 },
+            { lat: 50.001, lon: 15.0 }, // zpět na západ — cíl 111 m od chaty
+          ],
+        },
+      ],
+    }
+    const graf2 = postavGraf([hak])
+    const start = uzelKlic(50.0, 15.0)
+    const doporucene: DoporucenyBod[] = [
+      { poradi: 1, vychoziBod: 'Za rohem', typ: 'obec', doprava: '', sezona: '', poznamka: '', zdroje: [], lat: 50.001, lng: 15.0 },
+    ]
+    const p = vyberPristupyZKatalogu(graf2, start, 50.0, 15.0, doporucene, 3)
+    expect(p).toHaveLength(1)
+    expect(p[0].delkaKm).toBeGreaterThan(7)
+    expect(p[0].podilNeznacenychProc).toBe(0) // oklika je celá po značené — flag je z poměru délek
+    expect(p[0].kRucniKontrole).toBe(true)
   })
 })

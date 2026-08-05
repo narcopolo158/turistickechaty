@@ -7,7 +7,8 @@
  * kandidátům jen složí trasa.
  *
  * Poctivost (CLAUDE.md): vše `verified: false` se zdrojem (OSM/ODbL). Trasa s
- * >15 % délky mimo značené cesty → příznak k ruční kontrole. Body i chaty dál
+ * >15 % délky mimo značené cesty nebo trasa nápadně delší než vzdušná
+ * vzdálenost (chybějící propojka v grafu) → příznak k ruční kontrole. Body i chaty dál
  * než `MAX_SNAP_M` od sítě tras se nepřipojují (nedomýšlet neexistující cestu).
  * Výšky a `casMin` (DIN 33466) sem NEpatří — dopočítá je krok s Mapy.com
  * Elevation API (Actions); tady je čistě planární routing (jde v sandboxu).
@@ -70,6 +71,22 @@ const POCET_PRISTUPU_KATALOG = 3
 const PRAH_NEZNACENE_PROC = 15
 /** Geokódovaný nástup dál než tolik km (vzdušně) od chaty = špatný geokód → zahodit. */
 const MAX_VZDUSNE_KM = 12
+/**
+ * Trasa delší než tolikanásobek vzdušné vzdálenosti = podezřelá oklika →
+ * k ruční kontrole. Graf se staví jen z relací značených tras; kde se dvě
+ * trasy fyzicky kříží bez sdíleného OSM uzlu (typicky ve městě), graf spojení
+ * nevidí a Dijkstra vede oklikou. Nález 5. 8. 2026 (Arberschutzhaus): od
+ * nádraží Bayerisch Eisenstein vyšlo 17,52 km při 5,15 km vzdušně — síť
+ * u nádraží se s Goldsteigem 530 m vedle v grafu nepotkává. Serpentiny pod
+ * vrcholem násobek u krátkých tras snadno přesáhnou poctivě, proto se bere
+ * max(násobek, vzdušná + přirážka).
+ */
+const MAX_NASOBEK_VZDUSNE = 3
+const PRIRAZKA_KRATKE_KM = 2
+
+/** Podezřelá oklika? (délka trasy vs. vzdušná vzdálenost start–cíl) */
+export const podezrelaOklika = (delkaKm: number, vzdusnaKm: number): boolean =>
+  delkaKm > Math.max(MAX_NASOBEK_VZDUSNE * vzdusnaKm, vzdusnaKm + PRIRAZKA_KRATKE_KM)
 
 /** Vzdušná vzdálenost dvou GPS bodů (km, haversine) — sanity check geokódu. */
 const vzdusneKm = (aLat: number, aLng: number, bLat: number, bLng: number): number => {
@@ -116,19 +133,22 @@ export const vyberPristupy = (graf: Graf, hutUzel: UzelKlic, vychoziSnap: Vychoz
 
   const pristupy: Pristup[] = []
   const pouzityUzel = new Set<UzelKlic>()
+  const hut = graf.uzly.get(hutUzel)
   for (const { v } of dosazitelne) {
     if (pristupy.length >= pocet) break
     if (pouzityUzel.has(v.uzel)) continue
     const t = slozTrasu(graf, predchudce, hutUzel, v.uzel)
     if (!t || t.delkaKm <= 0) continue
     pouzityUzel.add(v.uzel)
+    const bod = graf.uzly.get(v.uzel)
+    const oklika = !!hut && !!bod && podezrelaOklika(t.delkaKm, vzdusneKm(hut.lat, hut.lng, bod.lat, bod.lng))
     pristupy.push({
       vychoziBod: v.nazev,
       typ: v.typ,
       delkaKm: t.delkaKm,
       useky: t.useky,
       podilNeznacenychProc: t.podilNeznacenychProc,
-      kRucniKontrole: t.podilNeznacenychProc > PRAH_NEZNACENE_PROC,
+      kRucniKontrole: t.podilNeznacenychProc > PRAH_NEZNACENE_PROC || oklika,
       geometrie: t.geometrie,
       zdrojBodu: 'stredisko',
     })
@@ -172,7 +192,8 @@ export const vyberPristupyZKatalogu = (
       delkaKm: t.delkaKm,
       useky: t.useky,
       podilNeznacenychProc: t.podilNeznacenychProc,
-      kRucniKontrole: t.podilNeznacenychProc > PRAH_NEZNACENE_PROC,
+      kRucniKontrole:
+        t.podilNeznacenychProc > PRAH_NEZNACENE_PROC || podezrelaOklika(t.delkaKm, vzdusneKm(hutLat, hutLng, d.lat, d.lng)),
       geometrie: t.geometrie,
       zdrojBodu: 'katalog',
       poradi: d.poradi,
@@ -312,7 +333,7 @@ const main = () => {
 
   const kKontrole = vystup.flatMap((c) => c.pristupy).filter((p) => p.kRucniKontrole).length
   console.log(`\n## DATA-06 report — přístupové trasy`)
-  console.log(`Chat s trasou: ${vystup.length} / ${chaty.length} · z katalogu: ${zKatalogu}, ze středisek: ${vystup.length - zKatalogu} · přístupů celkem: ${vystup.reduce((s, c) => s + c.pristupy.length, 0)} · k ruční kontrole (>${PRAH_NEZNACENE_PROC} % neznačené): ${kKontrole}`)
+  console.log(`Chat s trasou: ${vystup.length} / ${chaty.length} · z katalogu: ${zKatalogu}, ze středisek: ${vystup.length - zKatalogu} · přístupů celkem: ${vystup.reduce((s, c) => s + c.pristupy.length, 0)} · k ruční kontrole (>${PRAH_NEZNACENE_PROC} % neznačené nebo podezřelá oklika): ${kKontrole}`)
   for (const c of vystup.slice(0, 8)) {
     const p = c.pristupy[0]
     console.log(`- ${c.nazev} [${c.zdroj}]: ${p.vychoziBod} (${p.typ}) ${p.delkaKm} km${p.kRucniKontrole ? ` ⚠︎ ${p.podilNeznacenychProc}% neznačené` : ''}`)

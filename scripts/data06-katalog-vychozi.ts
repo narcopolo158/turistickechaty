@@ -53,6 +53,32 @@ export type OsmBod = { nazev: string; typ: string; lat: number; lng: number }
 const tokeny = (s: string): string[] => normalizuj(s).split(' ').filter(Boolean)
 
 /**
+ * České generické popisy z katalogu → německé ekvivalenty v OSM názvech.
+ * Katalog píše česky („horní stanice lanovky"), OSM v Bavorsku německy
+ * („Gipfelstation Großer Arber") — bez překladu se shoda po celých slovech
+ * nikdy netrefí. Nález 5. 8. 2026 (Arberschutzhaus): „Großer Arber, horní
+ * stanice lanovky" sedlo na generický bod „Horní stanice lanovky" na
+ * Hochfichtu 60 km daleko (zahodil ho až MAX_VZDUSNE_KM) a nejlepší nástup
+ * od Gipfelstation 300 m od chaty v profilu chyběl. Překlad je doložená
+ * obecná znalost, ne domýšlení — mapuje se jen popis DRUHU místa.
+ */
+const NEMECKE_EKVIVALENTY: [fraze: string, synonyma: string[]][] = [
+  ['horni stanice', ['gipfelstation', 'bergstation']],
+  ['dolni stanice', ['talstation']],
+  ['zeleznicni stanice', ['bahnhof']],
+]
+
+/** Tokeny dotazu rozšířené o německé ekvivalenty českých generických popisů. */
+const tokenyDotazu = (s: string): Set<string> => {
+  const n = normalizuj(s)
+  const t = new Set(tokeny(s))
+  for (const [fraze, synonyma] of NEMECKE_EKVIVALENTY) {
+    if (n.includes(fraze)) for (const syn of synonyma) t.add(syn)
+  }
+  return t
+}
+
+/**
  * Geokóduje textový výchozí bod přes OSM: hledá OSM místo, jehož název je v
  * popisu bodu obsažen PO CELÝCH SLOVECH (např. „Szklarská Poręba, Ski Arena" →
  * Szklarska Poręba). Shoda po celých tokenech (ne podřetězci) schválně — jinak
@@ -70,8 +96,8 @@ const tokeny = (s: string): string[] => normalizuj(s).split(' ').filter(Boolean)
 export type Geokod = { bod: OsmBod; podle: 'bod' | 'uzel' }
 
 export const geokodujBod = (bod: string, uzel: string, osm: OsmBod[]): Geokod | null => {
-  const kandidati = (q: string): OsmBod[] => {
-    const qt = new Set(tokeny(q))
+  const kandidati = (q: string, preferujObec: boolean): OsmBod[] => {
+    const qt = tokenyDotazu(q)
     if (!qt.size) return []
     const obsazene = osm.filter((b) => {
       const bt = tokeny(b.nazev)
@@ -82,16 +108,41 @@ export const geokodujBod = (bod: string, uzel: string, osm: OsmBod[]): Geokod | 
     return [...obsazene].sort((a, b) => {
       const sa = a.typ === 'obec' ? 0 : 1
       const sb = b.typ === 'obec' ? 0 : 1
-      if (sa !== sb) return sb - sa // konkrétní bod (ne obec) první
+      // Dotaz na BOD hledá konkrétní místo (ne obec) — obec až poslední.
+      // Fallback na UZEL hledá „nejbližší obec/uzel" — tam je obec naopak
+      // ta poctivá odpověď: trasa pak startuje od středu obce, ne od
+      // náhodné zastávky téhož jména. Nález 5. 8. 2026 (Arberschutzhaus):
+      // uzel „Bayerisch Eisenstein" sedl na železniční stanici, jejíž uzel
+      // v grafu tras vede k chatě 17,5km oklikou — od středu obce to po
+      // značených je 8,5 km.
+      if (sa !== sb) return preferujObec ? sa - sb : sb - sa
       return normalizuj(b.nazev).length - normalizuj(a.nazev).length // delší (specifičtější) název první
     })
   }
+  let degradovana: Geokod | null = null
   for (const [q, podle] of [[bod, 'bod'], [uzel, 'uzel']] as const) {
     if (!q) continue
-    const c = kandidati(q)
-    if (c.length) return { bod: c[0], podle }
+    const c = kandidati(q, podle === 'uzel')
+    if (!c.length) continue
+    // Shoda na dotaz BODU se smí hlásit jako trefa („trasa vede odtud") jen
+    // když nalezený název nese aspoň jeden významný token NAD RÁMEC uzlu.
+    // Nález 5. 8. 2026 (Stóg Izerski): „Świeradów-Zdrój, dolní stanice
+    // gondoly" sedlo po celých slovech na holé „Świeradów-Zdrój" (nádraží)
+    // a profil by tvrdil, že trasa startuje u dolní stanice gondoly, ačkoli
+    // startuje na nádraží 1,4 km od ní. Taková shoda je ve skutečnosti jen
+    // nález uzlu → přednost dostane řádný fallback na uzel (s preferencí
+    // obce); degradovaná shoda se použije, jen když uzel nic nedá.
+    if (podle === 'bod' && uzel) {
+      const uzelTokeny = new Set(tokeny(uzel))
+      const nadRamec = tokeny(c[0].nazev).some((t) => t.length >= 3 && !uzelTokeny.has(t))
+      if (!nadRamec) {
+        degradovana = { bod: c[0], podle: 'uzel' }
+        continue
+      }
+    }
+    return { bod: c[0], podle }
   }
-  return null
+  return degradovana
 }
 
 export type DoporucenyBod = {
