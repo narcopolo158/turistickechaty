@@ -29,6 +29,60 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-05 (blok 3) — Arberschutzhaus: proč 17,5 km z Bayerisch Eisenstein, tři opravy geokódu a nový příznak okliky
+
+**Zadání Michala:** *„podívej se na trasu na arberschutzhaus, není z B. Eisenstein
+tak daleko, přišlo mi to kolem 6 km."* Měl pravdu — vzdušně je to 5,15 km,
+po značených cestách v grafu 8,5 km. Vyšlo 17,52 km. Rozbor našel TŘI
+nezávislé chyby, které se sečetly:
+
+1. **Nástup pořadí 1 („Großer Arber, horní stanice lanovky") v profilu
+   úplně chyběl.** Geokód ho trefil na generický bod „Horní stanice
+   lanovky" — na Hochfichtu, 60 km daleko; zahodila ho až pojistka
+   MAX_VZDUSNE_KM, ale mlčky. Katalog píše česky, bavorská OSM německy
+   („Gipfelstation Großer Arber") — shoda po celých slovech neměla šanci.
+   → Generické české popisy dostaly německé ekvivalenty (horní stanice →
+   Gipfelstation/Bergstation, dolní → Talstation, železniční → Bahnhof).
+   Teď: **Gipfelstation 0,11 km, pořadí 1.**
+2. **„Brennes, parkoviště" spadlo fallbackem na ŽELEZNIČNÍ STANICI**
+   Bayerisch Eisenstein (fallback preferoval ne-obec) — a uzel u nádraží
+   vede v grafu k chatě 17,5km oklikou, protože síť relací u nádraží se
+   s Goldsteigem 530 m vedle nepotkává (žádný sdílený OSM uzel). Od
+   STŘEDU OBCE je to přitom po značených 8,5 km. → Fallback na uzel teď
+   preferuje obec; dotaz na konkrétní bod dál preferuje ne-obec.
+   Teď: **Bayerisch Eisenstein 8,51 km** (nástup Brennes jako poznámka).
+3. **Žádná pojistka na absurdní okliky.** → Nový příznak: trasa delší
+   než 3× vzdušná vzdálenost (u krátkých vzdušná + 2 km) = k ruční
+   kontrole. Trasa od nádraží (pořadí 3, 17,52 km) je teď poctivě
+   označená — je to skutečná délka po značené síti v datech, jen jí
+   chybí propojka přes město.
+
+**Bonusový nález při kontrole dopadů na ostatní oblasti** (přeroutoval
+jsem všechny čtyři a diffoval): „Świeradów-Zdrój, dolní stanice gondoly"
+sedlo po celých slovech na holé „Świeradów-Zdrój" — nádraží — a profil
+Stógu by tvrdil start u gondoly 1,4 km vedle. Týž mechanismus jako nález
+z 31. 7., jen o patro výš. → Shoda bodu, která nenese žádný token nad
+rámec uzlu, se hlásí jako nález uzlu: jméno nese to, co se opravdu našlo,
+katalogový nástup jde do poznámky. V Krkonoších a Jizerkách se tím
+narovnalo ~30 tras, které se tvářily, že startují z konkrétního
+parkoviště/zastávky, ačkoli startovaly z bodu obce (např. „Pec pod
+Sněžkou, autobusové nádraží" → poctivě „Pec pod Sněžkou" + poznámka).
+Zákoutí (Benecko 7,29 km při 2,2 km vzdušně) nově s příznakem okliky.
+
+**Přeroutováno:** sumava, krkonose, jizerske-hory (Ještědský hřbet beze
+změny — ponechán i s výškami). Mezistav bez výšek je legitimní a hlídá
+ho stavRetezu; test jizerské trasy ho nově toleruje.
+
+**Kontroly:** tsc, eslint, kontrola vse zelené; ban-scan 273 (beze
+změny); vitest 769 passed / 8 DB baseline. +9 regresních testů.
+
+**PRO MICHALA — kliky v Actions:** znovu spustit **DATA-06 výšky** pro
+`sumava`, `krkonose` a `jizerske-hory` (tři běhy; routing je čerstvý,
+řetěz je pustí). Ještěd netřeba.
+
+**Otázky pro Michala:** beze změny (rokVzniku trojice; razítkové páry;
+Odrodzenie; Benecko; certifikát; domény Dreisessel a Prášily).
+
 ## 2026-08-05 (blok 2) — patch ranní session na mainu; routing Šumavy odblokoval výšky
 
 **Patch od ranní session přiložen na main** (git am -3, čistě): tři bavorské
