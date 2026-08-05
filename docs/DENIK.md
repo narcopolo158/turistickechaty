@@ -29,6 +29,32 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-05 (blok 9) — Horská chata Pancíř (20. profil) + dvě další opravy geokódu
+
+**Michal dodal obsah chatapancir.cz + odkazy** → profil Horské chaty
+Pancíř: chata s rozhlednou JEDEN objekt (vlastní web; precedens Žalý,
+zapsáno v _jmenovci), 1214 m (shoda web × katalog), rokVzniku 1923
+(web města Železná Ruda: otevřeno 28. 9. 1923, stavba za 5 měsíců),
+kapacita nedoložena, provozní doba jen na sítích. Kandidát z DATA-01
+chyběl („Pancíř" nemá boudové slovo) — povýšeno bez něj. POZOR domény:
+katalog pancir.cz × vlastní chatapancir.cz. Ze šestice bez kandidáta
+VYŘEŠEN Pancíř; zbývá 5 (Zlatá Studna, Bučina, Antýgl, Gibacht, Špičák).
+
+**Dvě opravy geokódu při kontrole tras:** (1) generický bod „Talstation"
+u Arberu ukradl nástup „…dolní stanice lanovky Pancíř" (22,45 km
+k jiné hoře, neflagováno — vzdušná moc velká) → shoda nově vyžaduje
+aspoň jeden NEgenerický token (GENERICKE_TOKENY); (2) tvarová dvojice
+„lanovky × lanovka" — bez ní vyhrával bod „Pancíř" (horní stanice)
+i pro řádek dolní stanice. Pancíř má teď: dolní stanice 3,58 / horní
+0,06 / Železná Ruda 5,48 km. +4 testy. Krkonoše/Jizerky se nepřepočítávaly
+(výšky by se zahodily kvůli málu) — pravidla se projeví při příštím běhu.
+
+**Kontroly:** tsc, kontrola vse zelené; ban-scan 284 (+1 standardní
+ODbL odstavec). Fronta: 116. Routing sumava 20/20, 38 přístupů.
+
+**PRO MICHALA:** výšky spuštěné před tímhle pushem jely nad starým
+routingem — po doběhu prosím JEŠTĚ JEDNOU DATA-06 výšky pro `sumava`.
+
 ## 2026-08-05 (blok 8) — poslední dva hotely a šestice chybějících: nálezy zapsány, čeká se na lidský krok
 
 **Od Michala:** hotelrovina.cz NEFUNGUJE (ověřeno z domácí sítě — ze

@@ -66,7 +66,24 @@ const NEMECKE_EKVIVALENTY: [fraze: string, synonyma: string[]][] = [
   ['horni stanice', ['gipfelstation', 'bergstation']],
   ['dolni stanice', ['talstation']],
   ['zeleznicni stanice', ['bahnhof']],
+  // Tvarové dvojice (pád): OSM „Lanovka Špičák" musí sednout na katalogové
+  // „…dolní stanice lanovky Pancíř" — nález 5. 8. 2026 (Pancíř): bez toho
+  // vyhrál bod „Pancíř" (horní stanice) a trasa od dolní stanice se
+  // tvářila, že startuje nahoře.
+  ['lanovky', ['lanovka']],
+  ['lanovka', ['lanovky']],
+  ['gondoly', ['gondola']],
 ]
+
+/**
+ * Generické popisy druhu místa (vč. překladů) — shoda POUZE na nich není
+ * identifikace místa: bod se musí trefit aspoň jedním vlastním jménem.
+ */
+const GENERICKE_TOKENY = new Set([
+  'horni', 'dolni', 'stanice', 'lanovky', 'lanovka', 'gondoly', 'gondola',
+  'zeleznicni', 'nadrazi', 'zastavka', 'parkoviste', 'rozcesti', 'centrum',
+  'bahnhof', 'talstation', 'gipfelstation', 'bergstation', 'haltestelle',
+])
 
 /** Tokeny dotazu rozšířené o německé ekvivalenty českých generických popisů. */
 const tokenyDotazu = (s: string): Set<string> => {
@@ -102,8 +119,17 @@ export const geokodujBod = (bod: string, uzel: string, osm: OsmBod[]): Geokod | 
     const obsazene = osm.filter((b) => {
       const bt = tokeny(b.nazev)
       const vyznamne = bt.filter((t) => t.length >= 3)
-      // aspoň jeden významný token a všechny významné tokeny jsou v popisu bodu
-      return vyznamne.length > 0 && vyznamne.every((t) => qt.has(t))
+      // Aspoň jeden významný token, všechny významné tokeny v popisu bodu
+      // A aspoň jeden z nich NENÍ generický popis druhu místa. Nález
+      // 5. 8. 2026 (Pancíř): bod pojmenovaný jen „Talstation" (u Arberu)
+      // sedl na „…dolní stanice lanovky Pancíř" přes samotný překladový
+      // token a trasa vedla 22 km k jiné hoře; generická „Horní stanice
+      // lanovky" (Hochficht) obdobně kradla nástupy už dřív.
+      return (
+        vyznamne.length > 0 &&
+        vyznamne.every((t) => qt.has(t)) &&
+        vyznamne.some((t) => !GENERICKE_TOKENY.has(t))
+      )
     })
     return [...obsazene].sort((a, b) => {
       const sa = a.typ === 'obec' ? 0 : 1

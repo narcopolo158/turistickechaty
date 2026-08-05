@@ -1,0 +1,158 @@
+# Horská chata Pancíř — povýšen triáží Tier 1 (5. 8. 2026) BEZ kandidáta
+# z DATA-01: jméno „Pancíř" neobsahuje žádné boudové slovo, export chatu
+# nezachytil (přišla jen rozhledna). Obsah vlastního webu chatapancir.cz
+# dodal Michal z domácí sítě (ze sandboxu je za gatem). Chata a rozhledna
+# jsou JEDEN objekt (areál — precedens Žalý). Vše verified: false.
+
+nazev: Horská chata Pancíř
+slug: chata-pancir
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Chata Pancíř
+    poznamka: běžná kratší podoba jména
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS z rozhledny, která je dle vlastního webu SOUČÁSTÍ chaty (jeden
+# objekt); OSM vede 5 m vedle Restauraci Pancíř (node 12067797781).
+lat: 49.1779211
+lng: 13.2538499
+vyska: 1214
+obec: Železná Ruda
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/13957678714
+    (rozhledna — dle vlastního webu chaty je součástí téhož objektu;
+    Restaurace Pancíř je v OSM 5 m vedle) — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright). Výška 1214 m:
+    vlastní web chaty (obsah dodal Michal 5. 8. 2026: „ve výšce 1214 m
+    nad mořem") i externí katalog (HUT-0099) — shoda. Obec Železná Ruda:
+    katalog i adresa chaty („Špičák 2, 340 04 Železná Ruda"). Vrchol
+    Pancíře je dle vlastního webu součástí Pancířského hřbetu naproti
+    Špičáku. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita se nezapisuje: vlastní web vede jen „ubytování a stravování",
+# číslo lůžek žádný načtený pramen nevede.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web chatapancir.cz (obsah dodal Michal 5. 8. 2026): „Horská
+    chata Pancíř nabízí ubytování a stravování." Katalog (HUT-0099):
+    ubytování ano. Počet lůžek žádný načtený pramen nevede — před cestou
+    ověřit u chaty.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chatapancir.cz (obsah dodal Michal 5. 8. 2026):
+    stravování; OSM vede u chaty Restauraci Pancíř
+    (https://www.openstreetmap.org/node/12067797781,
+    amenity=restaurant). Katalog (HUT-0099): stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Otvírací doba se nezapisuje: vlastní web odkazuje na aktuality na
+# sociálních sítích („Zůstaňte v obraze s aktualizacemi provozní doby").
+kontakty:
+  telefon: '+420 602 289 705'
+  email: klasterkova.v@seznam.cz
+  web: https://www.chatapancir.cz/
+overeniProvoz:
+  source: >-
+    Vlastní web chatapancir.cz (obsah dodal Michal 5. 8. 2026): telefon
+    +420 602 289 705, e-mail klasterkova.v@seznam.cz, adresa Špičák 2,
+    340 04 Železná Ruda; provozní dobu web nevede (odkazuje na sociální
+    sítě). POZOR na domény: katalog vede pancir.cz, vlastní web je
+    chatapancir.cz — vztah domén neprověřen. Katalog: provoz celoročně.
+    Na vrchol vede jednosedačková lanovka ze Špičáku od centrálního
+    parkoviště (délka 2740 m, převýšení 348 m, mezistanice Hofmanky;
+    přepravuje lyžaře, pěší i kola) a u chaty je turistické rozcestí
+    (vlastní web).
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1923
+milniky:
+  - rok: 1923
+    udalost: >-
+      28. září otevřena turistická chata s rozhlednou — postavena byla
+      za pět měsíců
+overeniHistorie:
+  source: >-
+    Oficiální web města Železná Ruda (zelezna-ruda.cz, načteno
+    5. 8. 2026): „Dne 28. září 1923 pak zde byla otevřena turistická
+    chata s rozhlednou. Postavena byla za 5 měsíců!"
+  verified: false
+  checked: '2026-08-05'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata s rozhlednou přímo na vrcholu Pancíře (1214 m) nad
+  Železnou Rudou — ubytování, restaurace a jednosedačková lanovka ze
+  Špičáku až k chatě. Turisté sem jezdí od roku 1923, kdy chata
+  s rozhlednou vyrostla za pouhých pět měsíců.
+text:
+  - >-
+    Horská chata Pancíř stojí přímo na vrcholu Pancíře v Pancířském
+    hřbetu, naproti Špičáku u Železné Rudy — a rozhledna je součástí
+    samotné chaty, takže výhled má hned za dveřmi. Vrchol je zároveň
+    evropským rozvodím: pramení tu Úhlava a Křemelná, jejichž voda teče
+    do Severního moře, i Řezná, kterou Dunaj odvádí do Černého moře.
+  - >-
+    Nahoru to jde i bez námahy: ze Špičáku od centrálního parkoviště
+    vede jednosedačková lanovka dlouhá 2740 metrů s převýšením 348
+    metrů, přes mezistanici Hofmanky — vozí lyžaře, pěší turisty i kola.
+    U chaty je turistické rozcestí. Přespat se tu dá, kolik lůžek chata
+    má, ale naše podklady nevedou — nocleh i aktuální provozní dobu
+    ověřte předem, chata je zveřejňuje na sociálních sítích.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu chaty, z webu
+    města Železná Ruda a z externího katalogu. Polohu nese OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — výška 1214 m, ubytování a stravování, rozhledna
+      součástí chaty, lanovka ze Špičáku (2740 m / 348 m převýšení),
+      rozvodí, kontakty (obsah dodal Michal 5. 8. 2026)
+    url: https://www.chatapancir.cz/
+  - popis: >-
+      Oficiální web města Železná Ruda — otevření chaty s rozhlednou
+      28. 9. 1923, stavba za pět měsíců (načteno 5. 8. 2026)
+    url: https://www.zelezna-ruda.cz/zeleznaruda/fr.asp?tab=snet&id=370&burl=&pt=TURE
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0099
+      (1214 m, Železná Ruda, ubytování, stravování, celoročně; vede
+      doménu pancir.cz — vztah k chatapancir.cz neprověřen)
+    url: https://nocleh.kct.cz/chaty
+  - popis: >-
+      OpenStreetMap — GPS rozhledny (součást chaty) a Restaurace Pancíř
+      5 m vedle (ODbL)
+    url: https://www.openstreetmap.org/node/13957678714
+interniPoznamky: >-
+  Povýšeno triáží Tier 1 (5. 8. 2026) BEZ kandidáta z DATA-01 — jméno
+  „Pancíř" neobsahuje boudové slovo, export chatu nezachytil; přišla jen
+  rozhledna (data/kandidati/sumava/rozhledna-pancir.yaml), která je dle
+  vlastního webu SOUČÁSTÍ chaty → jeden objekt, precedens Žalý
+  (zapsáno v data/_jmenovci.yaml). Obsah chatapancir.cz dodal Michal
+  z domácí sítě (doména je ze sandboxu za gatem); kudyznudy.cz
+  o rozhledně dodal Michal jako odkaz — nenačteno, necituje se.
+
+  K OVĚŘENÍ: kapacita lůžek a provozní doba (sociální sítě chaty);
+  TROJICE k doméně: katalog pancir.cz × vlastní chatapancir.cz —
+  prověřit vztah; jméno provozovatele se NETVRDÍ (e-mail
+  klasterkova.v@seznam.cz je jen kontakt, ne doklad). Řešení dvojice
+  Pancíř/Špičák ze SUMAVA-TRIAZ: Pancíř VYŘEŠEN (chata existuje,
+  rozhledna je její součástí); Chata na Špičáku (HUT-0106) zbývá.
+  Fotku dodá příští běh DATA-02.

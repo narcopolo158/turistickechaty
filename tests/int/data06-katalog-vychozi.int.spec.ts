@@ -202,3 +202,23 @@ describe('DATA-06 katalog · nactiDoporucene', () => {
     expect(nactiDoporucene(CSV_HLAVICKA, osm).size).toBe(0)
   })
 })
+
+describe('DATA-06 katalog · generické názvy nesmí krást nástupy (nález 5. 8. 2026, Pancíř)', () => {
+  it('bod pojmenovaný jen „Talstation" nesedne na cizí dolní stanici', () => {
+    const osmG: OsmBod[] = [
+      { nazev: 'Talstation', typ: 'lanovka', lat: 49.121, lng: 13.1409 }, // u Arberu, 8 km vedle
+      { nazev: 'Lanovka Špičák - dolní stanice', typ: 'lanovka', lat: 49.1652, lng: 13.2215 },
+    ]
+    const g = geokodujBod('Špičák, železniční stanice / dolní stanice lanovky Pancíř', 'Železná Ruda', osmG)
+    expect(g?.bod.nazev).toBe('Lanovka Špičák - dolní stanice')
+  })
+
+  it('generická „Horní stanice lanovky" prohrává s vlastním jménem lanovky', () => {
+    const osmG: OsmBod[] = [
+      { nazev: 'Horní stanice lanovky', typ: 'lanovka', lat: 48.8658, lng: 14.2835 }, // Hochficht, 60 km vedle
+      { nazev: 'Pancíř', typ: 'lanovka', lat: 49.1775, lng: 13.2534 },
+    ]
+    const g = geokodujBod('Pancíř, horní stanice lanovky', 'Železná Ruda', osmG)
+    expect(g?.bod.nazev).toBe('Pancíř')
+  })
+})
