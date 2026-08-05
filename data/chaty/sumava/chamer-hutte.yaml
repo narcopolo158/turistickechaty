@@ -1,0 +1,163 @@
+# Chamer Hütte — povýšena z kandidáta DATA-01 triáží Tier 1 (5. 8. 2026,
+# vzor DATA-03: katalog × OSM × oficiální turistický portál Bavorského lesa).
+# Vlastní stránka provozovatele (sc-bodenmais.de) se ze sandboxu nenačetla —
+# profil stojí na bayerischer-wald.de; próza to přiznává. Vše verified: false.
+
+nazev: Chamer Hütte
+slug: chamer-hutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Schutzhaus Kleiner Arber
+    poznamka: >-
+      druhé jméno domu, které vedou bavorské turistické portály vedle jména
+      Chamer Hütte
+  - nazev: Chata pod Malým Javorem
+    poznamka: >-
+      český opisný ekvivalent (Kleiner Arber = Malý Javor) — pomocné jméno
+      pro hledání, žádný pramen ho jako název domu nevede
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1133286
+lng: 13.1148794
+vyska: 1289
+obec: Bodenmais
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/2409111904 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1289 m: oficiální turistický portál bayerischer-wald.de (načteno
+    5. 8. 2026); totéž číslo nese externí katalog (HUT-0284, ověřeno
+    k 2026-07-21) — shoda dvou pramenů na metr. Poloha na jižním svahu
+    Malého Javoru (Kleiner Arber) v přírodním parku Bavorský les dle
+    portálu, obec Bodenmais dle katalogu i OSM.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 58
+pokoje:
+  - typ: vícelůžkové pokoje (nutný vlastní spacák)
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „58 Betten in Mehrbettzimmern", host potřebuje vlastní spacák. Externí
+    katalog (HUT-0284) vede ubytování ano, ale kapacitu nemá — čísla si
+    tedy neodporují.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    dům podává „warme Gerichte und Brotzeiten", tedy teplá jídla a svačiny.
+    Táž stránka zároveň uvádí, že vlastní vaření tu není — formulace
+    pramene nerozlišuje jednoznačně, zda jde o chybějící kuchyňku pro
+    samozásobitele, nebo o něco jiného; nedomýšlíme a vedeme jen to, co
+    stránka tvrdí přímo: jídlo se tu podává. Katalog (HUT-0284):
+    stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Dvě sezóny s mezerou mezi nimi — na jaře a na podzim je dům zavřený.
+otviraciDoba: >-
+  Léto od 15. června do 31. října a zima od 20. prosince do 31. března,
+  vždy denně 11–17; bez zavíracího dne. Mimo tyto termíny je zavřeno.
+kontakty:
+  telefon: '+49 9924 7700717'
+  email: service@sc-bodenmais.de
+  web: https://www.sc-bodenmais.de/chamer-huette/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    léto 15. 6.–31. 10. denně 11–17, zima 20. 12.–31. 3. denně 11–17, bez
+    zavíracího dne; správu domu, který je majetkem Svobodného státu
+    Bavorsko, vede Skiclub Bodenmais. Katalog (HUT-0284) vede „sezónně" —
+    sedí. Telefon a e-mail z portálu; OSM nese u téhož domu jiný e-mail
+    (info@SC-Bodenmais.de) — obojí je doména provozovatele, který z nich
+    platí, jsme neověřili. OSM tag otvíračky (Mo-Su 10:00-17:00) se
+    v začátku liší od portálu — bereme portál, rozpor poznamenán.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1951
+overeniHistorie:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    dům postaven v roce 1951. Nic dalšího o jeho dějinách načtené prameny
+    neuvádějí — víc se netvrdí.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Budova patří Svobodnému státu Bavorsko, provozuje ji lyžařský klub
+      z Bodenmais — mezi domy pohoří neobvyklé uspořádání.
+    kategorie: jine
+    zdroj: >-
+      bayerischer-wald.de (načteno 5. 8. 2026): Skiclub Bodenmais spravuje
+      dům jako majetek Svobodného státu Bavorsko. Že je uspořádání v pohoří
+      neobvyklé, je naše srovnání s ostatními profily, ne tvrzení pramene.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata z roku 1951 na jižním svahu Malého Javoru, v 1289 metrech —
+  osmapadesát lůžek na vlastní spacák, teplá jídla a dvě sezóny v roce,
+  léto a zima. Na jaře a na podzim je zavřeno.
+text:
+  - >-
+    Chamer Hütte, kterou bavorské portály vedou i pod jménem Schutzhaus
+    Kleiner Arber, stojí na jižním svahu Malého Javoru uprostřed přírodního
+    parku Bavorský les. Vede k ní víc cest a všechny počítají s hodinou
+    a půl až dvěma a půl hodinami chůze — autem se sem nedostanete.
+  - >-
+    Přespat se dá v pokojích pro víc osob, dohromady jich je osmapadesát;
+    spacák si host přiváží vlastní. Kuchyň vydává teplá jídla a svačiny,
+    takže i kdo jde jen kolem, se nají — na oběd je ale potřeba trefit se
+    do otvírací doby, která je jen od jedenácti do pěti.
+  - >-
+    Rok má pro chatu dvě sezóny: od poloviny června do konce října a pak
+    od Vánoc do konce března, pokaždé denně a bez zavíracího dne. Mezi nimi
+    je zavřeno, takže na jarní ani podzimní túru se s ní počítat nedá.
+    Dům je majetkem Svobodného státu Bavorsko a stará se o něj lyžařský
+    klub z Bodenmais.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; stránku provozovatele se nám
+    zatím nepodařilo načíst, takže z ní necitujeme. Polohu nese
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — výška 1289 m,
+      58 lůžek, jídlo, otvírací doba obou sezón, provozovatel a vlastník,
+      rok stavby 1951, kontakty, doby chůze (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/chamer-huette-uebernachtungsmoeglichkeit-aa1bbc5673
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0284
+      (1289 m, Bodenmais, ubytování i stravování, sezónní provoz)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Stránka provozovatele (5. 8. 2026 nedostupná ze sandboxu)
+    url: https://www.sc-bodenmais.de/chamer-huette/
+  - popis: OpenStreetMap (GPS, e-mail, web, tagy; ODbL)
+    url: https://www.openstreetmap.org/node/2409111904
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/chamer-hutte.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: obsluhovaný dům s ubytováním na
+  hřebenové trase pod vrcholem, občerstvení pro příchozí doloženo.
+  Pátý německý profil korpusu. OSM u objektu typ nenese (tourism tag
+  chybí) — typ obsluhovana určila redakce dle doloženého občerstvení.
+
+  K OVĚŘENÍ: platný e-mail (portál service@, OSM info@ — obojí doména
+  provozovatele); formulace pramene o „vlastním vaření" (viz
+  overeniObcerstveni) — rozřešit ze stránky provozovatele, až půjde
+  načíst; dějiny domu po roce 1951. Fotku dodá příští běh DATA-02.

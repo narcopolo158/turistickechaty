@@ -29,6 +29,76 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-05 — denní session: Tier 1 Šumavy o tři dál (Osser, Dreisessel, Chamer)
+
+**Hotovo**
+
+Backlog shora: DATA-04, DATA-05, DATA-20, DATA-22, DATA-25 i DATA-28 jsou
+beze změny blokované na Michalovi (telefonáty, kliky na workflow, rozhodnutí
+o sémantice pole `obec`) — okomentováno u položek. Pracovní položkou byla
+tedy SUM-01, povyšování Tier 1 tam, kde bylo přerušeno.
+
+**Tři nové profily, Tier 1 je na 9 z 21** (korpus 116 souborů):
+
+1. **Osserschutzhaus** — dům z roku 1897 pod Velkým Ostrým, 1293 m.
+   Vzácnost: výška sedí na metr mezi katalogem a bavorským portálem.
+   Kapacita se ale rozchází (katalog 31 × portál „40 Matratzenlager") —
+   zapsáno nižší číslo dle konvence z 26. 7. a rozpor přiznán v próze
+   i v ověření. Konkrétní otvírací hodiny neuvádí ani jeden pramen; místo
+   nich se poctivě publikuje varování, že dům může kvůli počasí zavřít
+   ze dne na den. Zajímavost do budoucích žebříčků: státní hranice vede
+   metr od zdi domu.
+2. **Berggasthof Dreisessel** — hospoda s 16 lůžky pod Třístoličníkem,
+   1312 m. Podstatný praktický údaj: **v pondělí a v úterý zavřeno**.
+   **Nález k rozřešení: rozpor domén** — katalog vede `dreisessel.com`,
+   kdežto OSM i turistický portál shodně `berggasthof-dreisessel.com`
+   (a týž telefon). Zapsána doména dvou shodných pramenů, o té třetí se
+   netvrdí nic. Výšku má jen katalog, portál ji neuvádí — přiznáno.
+3. **Chamer Hütte (Schutzhaus Kleiner Arber)** — 58 lůžek na vlastní
+   spacák pod Malým Javorem, od roku 1951. Dvě sezóny s mezerou: léto
+   15. 6.–31. 10. a zima 20. 12.–31. 3., mezi tím zavřeno — pro plánování
+   jarní nebo podzimní túry zásadní. Budova je majetkem Svobodného státu
+   Bavorsko, provozuje ji lyžařský klub z Bodenmais. OSM u objektu typ
+   vůbec nenese, `obsluhovana` proto určila redakce podle doloženého
+   občerstvení, ne podle tagu.
+
+**Metoda a její meze:** WebFetch bezobslužně prošel na `bayerischer-wald.de`
+(doména už byla použitá 4. 8.), na ostatní domény ne — vlastní weby všech
+tří domů se nenačetly a próza to u každého říká. Fakta tedy stojí na
+oficiálním turistickém portálu Bavorského lesa, externím katalogu a OSM;
+nic se nedomýšlelo, rozpory se zapsaly jako rozpory.
+
+**Kontroly:** `npm run kontrola` zelené (0 chyb), `tsc` čistý, vitest
+752 prošlo / stejných 8 padá na chybějící DB jako včera. Ban-scan 270 → 273:
+tři nové zásahy, všechny standardní závěrečný odstavec s ODbL atribucí —
+posouzeno, ponecháno. Jeden vlastní nález opraven ještě před commitem:
+v próze Dreisesselu se objevil superlativ „nejmarkantnější" převzatý
+z portálu — vyhozen z textu, tvrzení o výhledu k Alpám zůstalo v poli
+`zajimavosti` se zdrojem.
+
+**Příště**
+
+① pokračovat v Tier 1 — zbývá dvanáct, nejblíž německé Kötztinger Hütte,
+Berghütte Schareben, Landshuter Haus, Berghaus Sonnenfels, Berggasthof
+Mooshütte, Eisensteiner Hütte a Falkensteinschutzhaus (katalog jim všem
+dává jistotu A), pak české Alpská vyhlídka, Belveder, Rovina a Churáňov
+(u posledních dvou rozlišit chatu od hotelu — OSM jména se liší od
+katalogu); ② dohledat 6 katalogových objektů bez kandidáta (Pancíř,
+Zlatá Studna, Špičák, Antýgl, Bučina, Gibacht); ③ po doběhu DATA-06 pro
+Šumavu navázat trasy a přístupy.
+
+**Otázky pro Michala**
+
+① **Dreisessel — která doména platí?** `dreisessel.com` z katalogu, nebo
+`berggasthof-dreisessel.com` z OSM i portálu? Jestli je to táž hospoda
+pod dvěma doménami, nebo dva různé domy na Třístoličníku, z našich pramenů
+nepoznáme. Jeden telefonát to zavře (+49 8556 350).
+② **Osserschutzhaus — kolik má lůžek?** 31 (katalog) × 40 na matracích
+(portál). Zatím vedeme 31 dle konvence.
+③ Starší otevřené beze změny: rokVzniku trojice Proseč / Prášily /
+Turnerova (kontinuita × budova), razítkové páry ke kontrole, Odrodzenie,
+Benecko, certifikát.
+
 ## 2026-08-04 (blok 14) — Tier 1 pokračuje: Lusenschutzhaus, Turnerova chata a první profil mimo provoz
 
 **Další tři profily** (zadání: „data06 spuštěno, pokračuj samostatně dál");

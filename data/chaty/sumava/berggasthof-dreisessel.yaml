@@ -1,0 +1,153 @@
+# Berggasthof Dreisessel — povýšen z kandidáta DATA-01 triáží Tier 1
+# (5. 8. 2026, vzor DATA-03: katalog × OSM × oficiální turistický portál
+# Bavorského lesa). Vlastní web se ze sandboxu nenačetl — profil stojí na
+# bayerischer-wald.de; próza to přiznává. Vše verified: false.
+
+nazev: Berggasthof Dreisessel
+slug: berggasthof-dreisessel
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Chata na Třístoličníku
+    poznamka: >-
+      český opisný ekvivalent (Dreisessel(berg) = Třístoličník) — pomocné
+      jméno pro hledání, žádný pramen ho jako název domu nevede
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.7810493
+lng: 13.8031895
+vyska: 1312
+obec: Neureichenau
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/26312947 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1312 m a obec Neureichenau: externí katalog (HUT-0287, ověřeno
+    k 2026-07-21) — jediný pramen s číslem, oficiální turistický portál
+    bayerischer-wald.de výšku neuvádí. Portál (načteno 5. 8. 2026) řadí
+    dům „in den Hochlagen im Dreiländereck Bayerischer Wald". V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 16
+pokoje:
+  - typ: jedno- až čtyřlůžkové pokoje
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „Ein- bis Vier-Bettzimmer", celkem 16 lůžek. Externí katalog (HUT-0287)
+    vede ubytování ano, ale kapacitu nemá — čísla si tedy neodporují.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    kuchyně vede „altbayerische Rezepte und Hüttenklassiker", teplá jídla
+    se podávají do 16 hodin; na terase jídlo i nápoje, v pivní zahradě jen
+    nápoje (vlastní jídlo si tam host smí přinést). Katalog (HUT-0287):
+    stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Pondělí a úterý zavřeno — u domu na tak navštěvovaném vrcholu je to údaj,
+# který se vyplatí přečíst dřív než jízdní řád.
+otviraciDoba: >-
+  Středa a čtvrtek 9–18, pátek a sobota 9–20, neděle 9–18; v pondělí
+  a úterý zavřeno. Teplá kuchyně do 16 hodin.
+kontakty:
+  telefon: '+49 8556 350'
+  email: info@berggasthof-dreisessel.com
+  web: https://www.berggasthof-dreisessel.com/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „Mi–Do 9–18 Uhr, Fr–Sa 9–20 Uhr, So 9–18 Uhr, Mo und Di Ruhetag, warme
+    Küche bis 16 Uhr". Telefon i e-mail tamtéž, telefon potvrzuje
+    i OpenStreetMap. Katalog (HUT-0287) vede „celoročně" — s dvěma dny
+    zavíracími si to neodporuje. OSM tag otvíračky (We 09:00-18:00;
+    Th 09:00-22:00; Fr-Su 09:00-18:00) se od portálu liší ve čtvrtku
+    a v sobotě — bereme portál, rozpor poznamenán.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Žádný z načtených pramenů historii domu neuvádí — zůstává prázdná.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Za dobré viditelnosti je prý z Třístoličníku vidět až do Alp.
+    kategorie: jine
+    zdroj: >-
+      bayerischer-wald.de (načteno 5. 8. 2026) řadí Dreisessel mezi
+      nejmarkantnější hory Bavorského lesa s výhledem „bis zu den Alpen";
+      tvrzení pramene, redakce neověřovala.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská hospoda s ubytováním v 1312 metrech pod skalním hřebenem
+  Třístoličníku, v koutě, kde se schází Bavorsko, Čechy a Rakousko —
+  šestnáct lůžek, starobavorská kuchyně a dva dny v týdnu zavřeno.
+text:
+  - >-
+    Berggasthof Dreisessel stojí ve vysokých polohách u trojmezí, pod
+    skalním hřebenem Třístoličníku — hory, kterou z české strany zná každý,
+    kdo šel na Plechý nebo k Plešnému jezeru. Za dobré viditelnosti prý
+    z hřebene dohlédnete až k Alpám; to je tvrzení, které jsme neověřovali.
+  - >-
+    Dům nabízí šestnáct lůžek v pokojích pro jednoho až čtyři hosty.
+    V kuchyni se drží starobavorských receptů a chatařské klasiky, teplá
+    jídla se vydávají do čtyř odpoledne; na terase dostanete jídlo i pití,
+    v pivní zahradě jen nápoje — vlastní svačinu si tam ale host přinést
+    smí.
+  - >-
+    Otevřeno je od středy do neděle, v pondělí a v úterý má dům zavírací
+    den. To je na tak navštěvovaném vrcholu podstatná informace: kdo přijde
+    v pondělí, najde zavřeno a nejbližší občerstvení má daleko.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní web domu se nám zatím
+    nepodařilo načíst, takže z něj necitujeme, a katalog navíc vede jinou
+    doménu než mapa — která z nich je ta platná, jsme neověřili. Polohu
+    nese OpenStreetMap. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — 16 lůžek a typy
+      pokojů, kuchyně, otvírací doba, kontakty, poloha v trojmezí
+      (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/berggasthof-dreisessel-25a1cafdd9
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0287
+      (1312 m, Neureichenau, ubytování i stravování, celoroční provoz)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, telefon, web, tagy; ODbL)
+    url: https://www.openstreetmap.org/way/26312947
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berggasthof-dreisessel.yaml triáží
+  Tier 1 (5. 8. 2026). Klíč zařazení: obsluhovaný dům s ubytováním na
+  vrcholové trase, občerstvení pro příchozí doloženo. Čtvrtý německý
+  profil korpusu.
+
+  ROZPOR DOMÉN K ROZŘEŠENÍ: katalog (HUT-0287) vede web dreisessel.com,
+  kdežto OSM i turistický portál shodně berggasthof-dreisessel.com (a týž
+  telefon +49 8556 350). Zapsána doména dvou shodných pramenů; jestli je
+  dreisessel.com starší doména téhož domu, nebo web jiného objektu na
+  Třístoličníku, NEVÍME a netvrdíme — kandidát na jeden dotaz DATA-04.
+
+  NEDOLOŽENO (nezapsáno): historie domu (žádný načtený pramen); přesná
+  výška z druhého pramene (portál ji neuvádí, katalog má 1312 m); poloha
+  vůči vlastnímu trojmezí — portál mluví o „Dreiländereck" jako o oblasti,
+  netvrdíme, že dům stojí na trojmezním bodě. Fotku dodá příští běh
+  DATA-02.

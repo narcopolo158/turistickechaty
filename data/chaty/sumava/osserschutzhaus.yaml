@@ -1,0 +1,165 @@
+# Osserschutzhaus — povýšen z kandidáta DATA-01 triáží Tier 1 (5. 8. 2026,
+# vzor DATA-03: katalog × OSM × oficiální turistický portál Bavorského lesa).
+# Vlastní web osser-schutzhaus.de se ze sandboxu nenačetl — profil stojí na
+# bayerischer-wald.de; próza to přiznává. Vše verified: false.
+
+nazev: Osserschutzhaus
+slug: osserschutzhaus
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Chata na Velkém Ostrém
+    poznamka: >-
+      český opisný ekvivalent (Großer Osser = Velký Ostrý) — pomocné jméno
+      pro hledání, žádný pramen ho jako název domu nevede
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.2034214
+lng: 13.109739
+vyska: 1293
+obec: Lam
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/9991613217 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1293 m: oficiální turistický portál bayerischer-wald.de (načteno
+    5. 8. 2026): „1.293 m ü.NN"; totéž číslo nese externí katalog
+    (HUT-0282, ověřeno k 2026-07-21) — shoda dvou nezávislých pramenů na
+    metr. Adresa Osser 1, 93462 Lam (portál), obec Lam i dle katalogu.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Prameny se v počtu lůžek liší (katalog 31 × portál 40 na matracích) —
+# dle konvence z 26. 7. 2026 se do pole zapisuje NIŽŠÍ číslo a rozpor se
+# přiznává v próze i v ověření.
+nocleh: ano
+kapacita: 31
+pokoje:
+  - typ: společná noclehárna na matracích (Matratzenlager)
+overeniNocleh:
+  source: >-
+    Externí katalog (HUT-0282, ověřeno k 2026-07-21): 31 lůžek. Oficiální
+    turistický portál bayerischer-wald.de (načteno 5. 8. 2026): „40
+    Matratzenlager" a výslovně žádné ubytování v zimě. Rozpor 31 × 40 se
+    nerozhoduje odhadem — zapsáno nižší číslo dle konvence, obojí přiznáno.
+    Že jde o noclehárnu na matracích, uvádí portál.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „durchgehend warme Küche" — teplá kuchyně po celou otevírací dobu, tedy
+    i pro příchozí. Katalog (HUT-0282): stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Konkrétní hodiny neuvádí žádný z načtených pramenů — portál místo nich
+# varuje před zavíráním kvůli počasí a doporučuje zavolat předem.
+otviraciDoba: >-
+  Sezónní provoz; přesné hodiny prameny neuvádějí. Kvůli počasí může dům
+  kdykoli zavřít — před cestou je doporučeno zavolat. V zimě se nenocuje.
+kontakty:
+  telefon: '+49 160 5561528'
+  web: https://www.osser-schutzhaus.de/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „Wetterabhängige Schließungen sind kurzfristig jederzeit möglich"
+    s doporučením zavolat předem; v zimě bez noclehu. Konkrétní otvírací
+    hodiny portál neuvádí a katalog (HUT-0282) vede jen „sezónně" — nic
+    přesnějšího se proto netvrdí. Provozovatelem je Bayerischer Waldverein,
+    sekce Lam, správu domu vede rodina Hatzingerova (portál). Telefon
+    portálu; web potvrzuje i OpenStreetMap.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1897
+overeniHistorie:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    dům postaven v roce 1897. Nic dalšího o jeho dějinách načtené prameny
+    neuvádějí — víc se netvrdí.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Česko-německá státní hranice vede zhruba metr od stěny domu — dům
+      stojí na bavorské straně Velkého Ostrého doslova na hraně.
+    kategorie: jine
+    zdroj: >-
+      bayerischer-wald.de (načteno 5. 8. 2026): „Die deutsch-tschechische
+      Staatsgrenze verläuft in 1 m Entfernung am Haus entlang."
+  - text: >-
+      Jeden z nejstarších horských domů bavorské strany pohoří — stojí od
+      roku 1897.
+    kategorie: stari
+    zdroj: >-
+      bayerischer-wald.de (načteno 5. 8. 2026), rok stavby 1897; pořadí mezi
+      ostatními domy je naše srovnání dat, ne tvrzení pramene.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský dům z roku 1897 kousek pod dvojvrcholem Velkého Ostrého, v 1293
+  metrech — teplá kuchyně po celou otevírací dobu, noclehárna na matracích
+  a státní hranice, která vede metr od zdi.
+text:
+  - >-
+    Osserschutzhaus stojí těsně pod Velkým Ostrým, tedy pod horou, kterou
+    Češi znají z druhé strany hřebene nad Nýrskem. Dům je bavorský, ale
+    hranice běží kolem něj tak těsně, že mezi zdí a čárou na mapě zbývá
+    zhruba metr — pro hřebenovou túru je to nejbližší obsluhované místo,
+    kam se z české strany dá dojít.
+  - >-
+    Uvnitř se dá přespat ve společné noclehárně na matracích; v zimě dům
+    nocleh nenabízí. Kolik lůžek přesně má, se prameny neshodnou — katalog
+    vede jednatřicet, bavorský turistický portál čtyřicet, a my zapisujeme
+    nižší číslo. Kuchyně vaří teplá jídla po celou otevírací dobu, takže
+    i kdo jde jen kolem, se nají.
+  - >-
+    Otvírací hodiny žádný z pramenů neuvádí a dům může kvůli počasí zavřít
+    ze dne na den — před cestou je rozumné zavolat. Provoz drží spolek
+    Bayerischer Waldverein, sekci Lam, s hospodářskou rodinou na místě.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní web domu se nám zatím
+    nepodařilo načíst, takže z něj necitujeme. Polohu nese OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — výška 1293 m,
+      40 lůžek na matracích, teplá kuchyně, provozovatel a správci, rok
+      stavby 1897, poloha u hranice, telefon (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/osserschutzhaus-uebernachtungsmoeglichkeit-26b970c6a3
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0282
+      (1293 m, 31 lůžek, stravování, sezónní provoz, Lam)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web domu (5. 8. 2026 nedostupný ze sandboxu)
+    url: https://www.osser-schutzhaus.de/
+  - popis: OpenStreetMap (GPS, web, tagy; ODbL)
+    url: https://www.openstreetmap.org/node/9991613217
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/osserschutzhaus.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: obsluhovaný horský dům pod vrcholem na
+  hřebenové trase, občerstvení pro příchozí i nocleh doloženy. Třetí
+  německý profil korpusu.
+
+  NEDOLOŽENO (nezapsáno): konkrétní otvírací hodiny a sezónní termíny
+  (portál je neuvádí, katalog jen „sezónně") — kandidát na dotaz DATA-04;
+  e-mail; dějiny domu po roce 1897; kapacita rozporná 31 × 40 (nižší
+  zapsáno dle konvence — rozhodne až primární pramen nebo telefonát).
+  Vlastní web osser-schutzhaus.de načíst, až to půjde. Fotku dodá příští
+  běh DATA-02.
