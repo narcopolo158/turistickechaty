@@ -1,0 +1,130 @@
+# Landshuter Haus — povýšen z kandidáta DATA-01 triáží Tier 1 (5. 8. 2026,
+# vzor DATA-03: katalog × OSM × oficiální turistický portál Bavorského lesa).
+# Výška se NEZAPISUJE: portál 1018 × katalog 1050 — rozpor (vzor
+# Klostermannova chata). Vše verified: false.
+
+nazev: Landshuter Haus
+slug: landshuter-haus
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# vyska vědomě nevyplněna: portál „1.018 m ü.NN" × katalog 1050 m — rozpor
+# nerozhodnut (vzor Klostermannova chata, kde se katalog rozešel s obcí).
+lat: 48.9157095
+lng: 13.0346222
+obec: Bischofsmais
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/307763242 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Obec Bischofsmais: katalog (HUT-0286) i adresa na portálu
+    („Oberbreitenau 1, 94253 Bischofsmais"). Dům stojí na náhorní planině
+    Oberbreitenau, 20 minut pěšky od horní stanice lanovky Geißkopfbahn
+    (portál, načteno 5. 8. 2026). VÝŠKA SE NEZAPISUJE: portál „1.018 m
+    ü.NN" × katalog 1050 m — rozpor nerozhodnut. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh doložen jen rámcově: portál dům vede v kategorii
+# „Übernachtungsmöglichkeit", kapacitu ani pokoje žádný pramen nevede.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026)
+    vede dům v kategorii „Übernachtungsmöglichkeit" (možnost noclehu);
+    externí katalog (HUT-0286): ubytování ano. Kapacitu ani typy pokojů
+    žádný načtený pramen nevede — před cestou ověřit u domu.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „Bergwirtshaus", oblíbený cíl občerstvení („beliebtes Einkehrziel")
+    pro pěší i běžkaře. Katalog (HUT-0286): stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Otvírací doba se nezapisuje: portál časy nevede, katalog vede sezónu
+# „květen až říjen" — samo o sobě málo. Telefon: portál +49 9922 9265 ×
+# OSM +49 9920 255 — bereme portál (načten nyní), rozpor poznamenán.
+kontakty:
+  telefon: '+49 9922 9265'
+  email: landshuter-haus@bayerischer-wald-verein.de
+  web: https://www.landshuter.haus/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    telefon +49 9922 9265, e-mail
+    landshuter-haus@bayerischer-wald-verein.de (doména Bavorského lesního
+    spolku), web landshuter.haus; dům je „frisch saniert" (čerstvě
+    sanovaný — bez letopočtu). OSM vede jiný telefon (+49 9920 255) —
+    ROZPOR, bereme portál. Katalog: provoz květen až říjen; portál sezónu
+    nevede — konkrétní časy se nezapisují.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Žádný z načtených pramenů historii s letopočty neuvádí — zůstává prázdná.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec s noclehem na náhorní planině Oberbreitenau, dvacet
+  minut pěšky od horní stanice lanovky na Geißkopf — oblíbená zastávka
+  pěších i běžkařů v jižní části Bavorského lesa. Otevřeno bývá od
+  května do října.
+text:
+  - >-
+    Landshuter Haus stojí na Oberbreitenau, otevřené náhorní planině
+    v jižním křídle Bavorského lesa mezi Geißkopfem a Breitenauriegelem.
+    Nejpohodlnější přístup vede od horní stanice lanovky Geißkopfbahn,
+    odkud je to k domu dvacet minut chůze — v zimě je planina oblíbeným
+    běžkařským terénem a dům slouží jako zastávka na trati.
+  - >-
+    Přespat se tu dá, víc ale naše podklady neprozradí: kapacitu ani
+    podobu pokojů žádný z nich nevede, takže nocleh je před cestou nutné
+    domluvit telefonicky. Hostinec prošel nedávno sanací; kontaktní
+    e-mail vede na doménu Bavorského lesního spolku. V kolika metrech dům
+    přesně stojí, se naše prameny neshodnou — proto výšku neuvádíme.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní web domu jsme zatím
+    nenačetli, takže z něj necitujeme. Polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — Oberbreitenau,
+      20 min od Geißkopfbahn, kategorie Übernachtungsmöglichkeit,
+      Bergwirtshaus, „frisch saniert", kontakty; výška 1018 m v rozporu
+      s katalogem (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/landshuter-haus-uebernachtungsmoeglichkeit-317c4898de
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0286
+      (Bischofsmais, ubytování, květen až říjen; výška 1050 m v rozporu
+      s portálem)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web domu (zatím nenačten — necitujeme z něj)
+    url: https://www.landshuter.haus/
+  - popis: OpenStreetMap (GPS, tagy; telefon v rozporu s portálem; ODbL)
+    url: https://www.openstreetmap.org/node/307763242
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/landshuter-haus.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: obsluhovaný horský dům s noclehem na
+  běžkařské/pěší planině, katalogový objekt (jistota A).
+
+  ROZPORY (přiznány, nerozhodnuty): výška (portál 1018 × katalog 1050 —
+  nezapsána, vzor Klostermannova); telefon (portál +49 9922 9265 × OSM
+  +49 9920 255 — zapsán portál). K OVĚŘENÍ: kapacita a pokoje (žádný
+  pramen), sezóna (katalog květen–říjen sám), rok sanace, vlastnictví
+  (e-mail na doméně bayerischer-wald-verein.de a titulek vlastního webu
+  „Bayerischer Wald-Verein" z vyhledávání spolkové vlastnictví silně
+  naznačují — NETVRDÍME, dokud nepůjde načíst spolková stránka
+  berghaeuser). Fotku dodá příští běh DATA-02.

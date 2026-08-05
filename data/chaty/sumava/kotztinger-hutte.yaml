@@ -1,0 +1,135 @@
+# Kötztinger Hütte — povýšen z kandidáta DATA-01 triáží Tier 1 (5. 8. 2026,
+# vzor DATA-03: katalog × OSM × oficiální turistický portál Bavorského lesa).
+# BEZ NOCLEHU: portál výslovně (protipožární předpisy) i OSM („keine
+# Unterkunft mehr") — katalogové „ubytování ano" je rozpor, přiznán.
+# Vše verified: false.
+
+nazev: Kötztinger Hütte
+slug: kotztinger-hutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1739921
+lng: 12.9431417
+vyska: 1034
+obec: Hohenwarth
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/156065324 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1034 m: oficiální turistický portál bayerischer-wald.de (načteno
+    5. 8. 2026): „am Mittagstein (1.034 m) im Kaitersberg-Bergkamm" —
+    číslo se váže k vrcholu Mittagstein, u kterého chata stojí; totéž
+    vede externí katalog (HUT-0283). Obec Hohenwarth: katalog i adresa na
+    portálu („Kötztinger Hütte 1, 93480 Hohenwarth"). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# ROZPOR PRAMENŮ: katalog „ubytování ano" × portál „Keine, wegen Auflagen
+# zum vorbeugenden Brandschutz" × OSM poznámka „keine Unterkunft mehr".
+# Dva nezávislé prameny říkají ne (a OSM naznačuje, že dřív nocleh býval)
+# — zapsáno ne, rozpor nerozhodnut.
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    ubytování „Keine, wegen Auflagen zum vorbeugenden Brandschutz" (žádné,
+    kvůli protipožárním předpisům); OpenStreetMap nese poznámku „keine
+    Unterkunft mehr" (už žádný nocleh — naznačuje, že dřív býval,
+    NETVRDÍME víc). Externí katalog (HUT-0283) přitom vede „ubytování
+    ano" bez kapacity — ROZPOR, bereme dva shodné prameny.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    restaurační provoz s vyhlídkovou terasou („herrliche
+    Aussichtsterrasse"). Katalog (HUT-0283): stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Otvírací doba se nezapisuje: portál vede „ganzjährig", OSM tag Apr-Oct
+# 10:00-18:00 a k tomu letitou poznámku s režimem pro rok 2017 — tři
+# nesourodé údaje, žádný závazný.
+kontakty:
+  telefon: '+49 9946 290'
+  email: info@Koetztinger-Huette.de
+  web: https://www.koetztinger-huette.de/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    celoročně („ganzjährig"), provozovatel Michael Silberbauer, telefon
+    +49 9946 290, e-mail info@Koetztinger-Huette.de, web
+    koetztinger-huette.de — kontakty i provozovatele potvrzuje OSM.
+    Katalog: celoročně. OSM tag otvíračky (Apr-Oct: Mo-Su 10:00-18:00,
+    surový formát) je s „celoročně" v rozporu a poznámka v OSM popisuje
+    režim roku 2017 — nerozhodnuto, konkrétní časy se nezapisují.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Žádný z načtených pramenů historii neuvádí — zůstává prázdná.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Hřebenová chata u vrcholu Mittagstein (1034 m) na Kaitersbergu, přímo na
+  trase dálkové E6 i Goldsteigu — restaurace s vyhlídkovou terasou otevřená
+  po celý rok. Nocleh tu nehledejte: kvůli protipožárním předpisům se
+  v chatě nespí.
+text:
+  - >-
+    Kötztinger Hütte stojí na hřebeni Kaitersbergu u vrcholu Mittagstein,
+    v nejzápadnějším výběžku oblasti, kterou pokrýváme — a kdo jde po
+    evropské dálkové trase E6 nebo po Goldsteigu, projde přímo kolem ní.
+    Z vyhlídkové terasy se otevírá výhled do kraje kolem Bad Kötztingu,
+    po kterém chata nese jméno.
+  - >-
+    Je to zastávka na jídlo, ne na spaní: nocleh chata nenabízí kvůli
+    protipožárním předpisům — a mapová poznámka naznačuje, že dřív tomu
+    bývalo jinak. Katalog, ze kterého vycházíme, přitom ubytování stále
+    uvádí; rozpor nezastíráme a spolehnout se dá na to přísnější čtení.
+    Otevřeno má být po celý rok, konkrétní hodiny se ale naše prameny
+    neshodnou — před cestou mimo hlavní sezónu je lepší zavolat.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní web chaty jsme zatím
+    nenačetli, takže z něj necitujeme. Polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — Mittagstein 1034 m,
+      bez noclehu (protipožární předpisy), terasa, celoročně, provozovatel
+      Silberbauer, E6 + Goldsteig, kontakty (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/koetztinger-huette-bewirtschaftet-4a7ab57acc
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0283
+      (1034 m, Hohenwarth, celoročně; „ubytování ano" v rozporu s portálem
+      i OSM — přiznáno)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web chaty (zatím nenačten — necitujeme z něj)
+    url: https://www.koetztinger-huette.de/
+  - popis: >-
+      OpenStreetMap — GPS, kontakty, poznámka „keine Unterkunft mehr"
+      (ODbL)
+    url: https://www.openstreetmap.org/way/156065324
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/kotztinger-hutte.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: hřebenová chata na E6/Goldsteigu,
+  katalogový objekt (jistota A). Bez noclehu — dle rozhodnutí Michala
+  z 26. 7. 2026 není důvod k vyřazení.
+
+  K OVĚŘENÍ: otvírací doba (portál celoročně × OSM Apr–Oct + poznámka
+  z roku 2017); historie (žádný načtený pramen; wanderverband-bayern.de
+  vede chatu jako „Wanderheim" — jen titulek z vyhledávání, NETVRDÍME
+  spolkové vlastnictví); zaniklý nocleh (OSM „keine Unterkunft mehr" —
+  od kdy a proč, nedoloženo). Vlastní web načíst, až to půjde. Fotku dodá
+  příští běh DATA-02.

@@ -1,0 +1,134 @@
+# Berghütte Schareben — povýšen z kandidáta DATA-01 triáží Tier 1
+# (5. 8. 2026, vzor DATA-03: katalog × OSM × oficiální turistický portál
+# Bavorského lesa). Vzácná TROJITÁ shoda na kapacitě (26 lůžek: katalog,
+# portál i OSM poznámka). Vše verified: false.
+
+nazev: Berghütte Schareben
+slug: berghutte-schareben
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Scharebenhütte
+    poznamka: podoba jména v titulku oficiálního turistického portálu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1296005
+lng: 13.0522998
+vyska: 1019
+obec: Drachselsried
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/34972298 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1019 m: oficiální turistický portál bayerischer-wald.de (načteno
+    5. 8. 2026) i externí katalog (HUT-0285) — shoda. Obec Drachselsried:
+    katalog i adresa na portálu („Schareben 2, 94256 Drachselsried").
+    Chata stojí v sedle Schareben na hřebeni mezi Zellertalem a údolím
+    Bílého Regenu. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 26
+pokoje:
+  - typ: čtyřlůžkové a šestilůžkové pokoje
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „Übernachtungsmöglichkeit für 26 Personen (4 bzw. 6 Bettzimmer)".
+    Týchž 26 lůžek vede externí katalog (HUT-0285, ověřeno k 2026-07-21)
+    i poznámka v OpenStreetMap („max. 26 Personen, Reservierungen
+    telefonisch von 10:00-16:00 Uhr") — vzácná shoda tří pramenů.
+    Rezervace telefonicky mezi 10. a 16. hodinou (OSM).
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+# Typ občerstvení se nezapisuje: portál vede jen obecnou možnost
+# občerstvení bez podrobností o kuchyni.
+kuchyne: ano
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    obsluhovaná horská chata s občerstvením; podrobnosti o kuchyni portál
+    nevede. Katalog (HUT-0285): stravování ano. K dispozici jsou tři
+    místnosti až pro 70 osob (portál).
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Otvírací doba se nezapisuje: portál vede „denně od 10", OSM tag Út–Ne
+# a svátky 10–18 (pondělí zavřeno) — rozpor v zavíracím dni, nerozhodnut.
+kontakty:
+  telefon: '+49 9945 1037'
+  email: info@berghuette-schareben.de
+  web: https://www.berghuette-schareben.de/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „täglich ab 10:00 Uhr"; telefon +49 9945 1037, e-mail
+    info@berghuette-schareben.de, web berghuette-schareben.de — kontakty
+    potvrzuje OSM. Katalog: celoročně. OSM tag otvíračky (Tu-Su,PH
+    10:00-18:00, surový formát) je s „denně" v rozporu o pondělí —
+    nerozhodnuto, konkrétní dny se nezapisují. Na kryté terase jsou dvě
+    zásuvky pro nabíjení elektrokol (portál).
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Žádný z načtených pramenů historii neuvádí — zůstává prázdná.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata v sedle Schareben (1019 m) na hřebeni nad Zellertalem —
+  šestadvacet lůžek ve čtyř- a šestilůžkových pokojích, občerstvení
+  a nabíjení elektrokol na terase. Na kapacitě se vzácně shodují všechny
+  tři naše prameny.
+text:
+  - >-
+    Berghütte Schareben stojí v zalesněném sedle mezi Zellertalem
+    a údolím Bílého Regenu, na půl cesty hřebenem mezi Kaitersbergem
+    a javorským masivem — pro přechody západní části Bavorského lesa je
+    to přirozená etapová zastávka.
+  - >-
+    Přespat tu může šestadvacet lidí ve čtyřlůžkových a šestilůžkových
+    pokojích; rezervace se přijímají telefonicky mezi desátou a čtvrtou
+    odpoledne. Pro skupiny jsou k dispozici tři místnosti až pro sedmdesát
+    hostů. Otevřeno bývá od desíti dopoledne — jestli se zavírá v pondělí,
+    se naše prameny neshodnou, před cestou je lepší zavolat. Kdo jede na
+    elektrokole, najde na kryté terase zásuvky na nabíjení.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní web chaty jsme zatím
+    nenačetli, takže z něj necitujeme. Polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — 1019 m, 26 lůžek
+      (4- a 6lůžkové pokoje), tři místnosti pro 70 osob, denně od 10,
+      nabíjení elektrokol, kontakty (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/scharebenhuette-uebernachtungsmoeglichkeit-5f209c5ea3
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0285
+      (1019 m, Drachselsried, 26 lůžek, celoročně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web chaty (zatím nenačten — necitujeme z něj)
+    url: https://www.berghuette-schareben.de/
+  - popis: >-
+      OpenStreetMap — GPS, kontakty, poznámka o kapacitě a rezervacích
+      (ODbL)
+    url: https://www.openstreetmap.org/node/34972298
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berghutte-schareben.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: obsluhovaná hřebenová chata s noclehem,
+  katalogový objekt (jistota A), trojitá shoda na kapacitě.
+
+  K OVĚŘENÍ: zavírací den (portál denně × OSM pondělí zavřeno); historie
+  (žádný načtený pramen; wanderverband-bayern.de vede chatu jako
+  „Wanderheim" — jen titulek z vyhledávání, NETVRDÍME spolkové
+  vlastnictví); typ kuchyně. Vlastní web načíst, až to půjde. Fotku dodá
+  příští běh DATA-02.

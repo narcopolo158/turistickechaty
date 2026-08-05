@@ -1,0 +1,151 @@
+# Berggasthof Mooshütte — povýšen z kandidáta DATA-01 triáží Tier 1
+# (5. 8. 2026, vzor DATA-03: katalog × OSM × oficiální turistický portál
+# Bavorského lesa). Výška se NEZAPISUJE (portál 941 × katalog 950) a
+# rokVzniku ČEKÁ NA ROZHODNUTÍ o kontinuitě × budově (1870 × 2012, po
+# požáru 2011 — čtvrtý případ k trojici Proseč/Prášily/Turnerova).
+# Vše verified: false.
+
+nazev: Berggasthof Mooshütte
+slug: berghotel-mooshutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Berghotel Mooshütte
+    poznamka: >-
+      podoba jména na vlastní doméně (berghotel-mooshuette.de)
+      a v regionálních přehledech; katalog vede Berggasthof
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# vyska vědomě nevyplněna: portál „941 m ü.NN" × katalog 950 m — rozpor
+# nerozhodnut (vzor Klostermannova chata).
+lat: 49.1378076
+lng: 13.1303548
+obec: Lohberg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/127668817 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Obec Lohberg: katalog (HUT-0289) i adresa na portálu („Mooshütte 3,
+    93470 Lohberg"). Dům stojí pod severním úpatím javorského masivu,
+    asi 1,5 km od sedla Brennes (portál, načteno 5. 8. 2026). VÝŠKA SE
+    NEZAPISUJE: portál „941 m ü.NN" × katalog 950 m — rozpor nerozhodnut.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    komfortní pokoje, celý dům bezbariérový („barrierefrei im ganzen
+    Haus"); dům veden v kategorii „Übernachtungsmöglichkeit". Katalog
+    (HUT-0289): ubytování ano. Počet lůžek žádný načtený pramen nevede —
+    před cestou ověřit u domu.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „gut bürgerliche Küche". Katalog (HUT-0289): stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Otvírací doba se nezapisuje: portál časy nevede, katalog vede jen
+# „celoročně".
+kontakty:
+  telefon: '+49 9943 905030'
+  email: berggasthof-mooshuette@t-online.de
+  web: https://www.berghotel-mooshuette.de/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    telefon +49 9943 9050 30, e-mail berggasthof-mooshuette@t-online.de,
+    web berghotel-mooshuette.de; provozuje rodina Kirchbergerova. Telefon
+    i web potvrzuje OSM. Katalog: celoročně; konkrétní časy žádný pramen
+    nevede.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku se nevyplňuje: hostinec od 1870 (dějiny statku až do
+# 17. století), po požáru 2011 dnešní budova z 2011/2012 — týž případ
+# jako Proseč, Prášily a Turnerova chata (rozhodne Michal).
+milniky:
+  - rok: 1870
+    udalost: >-
+      Postaven horský hostinec (dějiny místa jako statku sahají až do
+      17. století)
+  - rok: 2011
+    udalost: Dům zničil požár
+  - rok: 2012
+    udalost: Znovu postaven a otevřen
+overeniHistorie:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „Die Geschichte des Berggasthofes (ehemaliger Bauernhof) geht bis ins
+    17. Jahrhundert zurück"; postaven 1870, zničen požárem 2011, znovu
+    postaven a otevřen 2011/2012 (milník nese 2012 jako rok otevření).
+    rokVzniku se nevyplňuje — kontinuita od 1870 proti budově z 2012 je
+    týž případ jako Chata Proseč (rozhodne Michal).
+  verified: false
+  checked: '2026-08-05'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec s pokoji pod severním úpatím Velkého Javoru, kousek pod
+  sedlem Brennes — poctivá kuchyně, celý dům bezbariérový. Hostinec tu
+  stojí od roku 1870; po požáru v roce 2011 byl do roka postaven znovu.
+text:
+  - >-
+    Mooshütte stojí v lesích pod severním úpatím javorského masivu, asi
+    kilometr a půl pod sedlem Brennes — z Lohbergu je to poslední dům na
+    cestě k Malému Javorskému jezeru a na Velký Javor od severu. Místo má
+    hlubokou minulost: dějiny bývalého statku tu sahají až do
+    sedmnáctého století a horský hostinec na něm vyrostl roku 1870.
+  - >-
+    Dnešní budova je ale mladá — původní dům v roce 2011 zničil požár
+    a rodina, která hostinec vede, ho do roka postavila znovu. Uvnitř
+    jsou komfortní pokoje a celý dům je bezbariérový; počet lůžek naše
+    podklady nevedou, nocleh je proto potřeba domluvit telefonicky.
+    Kuchyně vede poctivá bavorská jídla.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní web domu jsme zatím
+    nenačetli, takže z něj necitujeme. Polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — poloha u Brennes,
+      pokoje a bezbariérovost, kuchyně, historie 17. stol. / 1870 / požár
+      2011 / znovupostavení, rodina Kirchbergerova, kontakty; výška 941 m
+      v rozporu s katalogem (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/berggasthof-mooshuette-uebernachtungsmoeglichkeit-f06f3ca120
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0289
+      (Lohberg, ubytování, stravování, celoročně; výška 950 m v rozporu
+      s portálem)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web domu (zatím nenačten — necitujeme z něj)
+    url: https://www.berghotel-mooshuette.de/
+  - popis: OpenStreetMap (GPS, telefon, tagy; ODbL)
+    url: https://www.openstreetmap.org/way/127668817
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berghotel-mooshutte.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: obsluhovaný dům s noclehem na výstupové
+  trase na Javor od severu, katalogový objekt (jistota A). Jméno:
+  katalogový „Berggasthof" primární, „Berghotel" (vlastní doména)
+  v aliasech; slug zůstává berghotel-mooshutte dle kandidáta (fronta).
+
+  ČEKÁ NA MICHALA: rokVzniku 1870 × 2012 — ČTVRTÝ případ k trojici
+  Proseč/Prášily/Turnerova. ROZPOR: výška (portál 941 × katalog 950 —
+  nezapsána). K OVĚŘENÍ: kapacita lůžek (žádný pramen), otvírací doba.
+  Vlastní web načíst, až to půjde. Fotku dodá příští běh DATA-02.

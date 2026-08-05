@@ -1,0 +1,131 @@
+# Berghaus Sonnenfels — povýšen z kandidáta DATA-01 triáží Tier 1
+# (5. 8. 2026, vzor DATA-03: katalog × OSM × oficiální turistický portál
+# Bavorského lesa). NOCLEH SE NEZAPISUJE: katalog „ano" bez kapacity,
+# portál dům vede jen jako „bewirtschaftet" a o noclehu mlčí — u
+# Eisensteiner Hütte se přesně tahle konstelace ukázala jako „bez
+# noclehu", tady výslovná věta chybí → nerozhodujeme. Vše verified: false.
+
+nazev: Berghaus Sonnenfels
+slug: berghaus-sonnenfels
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.126764
+lng: 13.134289
+vyska: 1150
+obec: Lohberg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/177320402 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1150 m: oficiální turistický portál bayerischer-wald.de (načteno
+    5. 8. 2026): „1.150 m ü.NN"; totéž externí katalog (HUT-0290). Obec
+    Lohberg: katalog; adresa na portálu ale zní „Sonnenfelsen 1, 94252
+    Bayerisch Eisenstein" — ROZPOR obcí nerozhodnut (dům stojí na
+    lohberské straně javorského masivu, PSČ může nést sousední obec,
+    NETVRDÍME). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh se NEZAPISUJE (pole chybí schválně): katalog vede „ubytování ano"
+# bez kapacity, portál dům řadí jen mezi „bewirtschaftet" a o noclehu
+# mlčí. U Eisensteiner Hütte katalogové „ano" v téže konstelaci vyvrátila
+# výslovná věta portálu — tady výslovná věta není, takže nerozhodujeme
+# a próza posílá tazatele na telefon.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    „gutbürgerliche bayerische Küche", pivní zahrada se sluneční terasou.
+    Katalog (HUT-0290): stravování ano.
+  verified: false
+  checked: '2026-08-05'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Sezónně: od července do 1. listopadu a od 20. prosince do 31. března
+  (v zimě dle lyžařského provozu), denně 10–17:30.
+kontakty:
+  telefon: '+49 9925 1379'
+  email: info@berghaus-sonnenfels.de
+  web: https://www.berghaus-sonnenfels.de/
+overeniProvoz:
+  source: >-
+    Oficiální turistický portál bayerischer-wald.de (načteno 5. 8. 2026):
+    otevřeno červenec až 1. listopadu a 20. prosince až 31. března (během
+    lyžařského provozu), denně 10:00–17:30; telefon +49 9925 1379, e-mail
+    info@berghaus-sonnenfels.de, web berghaus-sonnenfels.de. Katalog vede
+    „celoročně" — ROZPOR se sezónními okny portálu, nerozhodnut (bereme
+    podrobnější pramen do textu, rozpor přiznán). U domu je veřejná
+    nabíjecí stanice pro elektrokola (portál).
+  verified: false
+  checked: '2026-08-05'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Historie se nezapisuje: portál nese nejednoznačnou formulaci („Seit 149
+# am großen Arber eines der ersten Wirtshäuser") — může jít o „149 Jahren"
+# i o letopočet s výpadkem číslice. Nedomýšlíme.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec v 1150 metrech na lohberské straně Velkého Javoru —
+  bavorská kuchyně, pivní zahrada se sluneční terasou a sezónní provoz
+  v létě i během zimního lyžování. Jeden z nejstarších hostinců na
+  javorském masivu; přesný letopočet ale naše prameny nedávají.
+text:
+  - >-
+    Berghaus Sonnenfels stojí vysoko nad Lohbergem na cestě k Velkému
+    Javoru (Großer Arber) — kdo stoupá na nejvyšší horu Šumavy
+    a Bavorského lesa od jihozápadu, má tu poslední hostinec před
+    vrcholovou partií. Podle našich podkladů jde o jeden z prvních
+    hostinců na javorském masivu vůbec; formulace pramene ale nedovoluje
+    říct, od kterého roku přesně.
+  - >-
+    Kuchyně vede poctivá bavorská jídla a v létě láká pivní zahrada se
+    sluneční terasou. Otevřeno je sezónně: od července do začátku
+    listopadu a přes zimu od 20. prosince do konce března, kdy jede
+    lyžařský provoz, denně od desíti do půl šesté. Jestli se tu dá
+    přespat, naše prameny spolehlivě neříkají — katalog ubytování uvádí,
+    podrobnější podklad ho nezmiňuje; před cestou za noclehem proto
+    zavolejte. Elektrokolo si u domu nabijete na veřejné stanici.
+  - >-
+    Údaje na téhle stránce pocházejí z oficiálního turistického portálu
+    Bavorského lesa a z externího katalogu; vlastní web domu jsme zatím
+    nenačetli, takže z něj necitujeme. Polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Oficiální turistický portál bayerischer-wald.de — 1150 m, bavorská
+      kuchyně a pivní zahrada, sezónní otvíračka, nabíjení elektrokol,
+      kontakty; o noclehu mlčí (načteno 5. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/berghaus-sonnenfels-bewirtschaftet-9b5c737791
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0290
+      (1150 m, Lohberg; „ubytování ano" bez kapacity a „celoročně"
+      v rozporu s portálem — přiznáno)
+    url: https://nocleh.kct.cz/chaty
+  - popis: Vlastní web domu (zatím nenačten — necitujeme z něj)
+    url: https://www.berghaus-sonnenfels.de/
+  - popis: OpenStreetMap (GPS, tagy; ODbL)
+    url: https://www.openstreetmap.org/way/177320402
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berghaus-sonnenfels.yaml triáží Tier 1
+  (5. 8. 2026). Klíč zařazení: hostinec na výstupové trase na Javor,
+  katalogový objekt (jistota A).
+
+  NEROZHODNUTO (vědomě nezapsáno): nocleh (katalog ano × portál mlčí —
+  konstelace jako u Eisensteiner Hütte, kde se „ano" ukázalo mylné;
+  tady bez výslovné věty nerozhodujeme); historie (portálová formulace
+  „Seit 149 am großen Arber…" — nejspíš „149 Jahren" NEBO letopočet
+  s chybou, nedomýšlíme); obec (katalog Lohberg × adresa s PSČ Bayerisch
+  Eisenstein). Provozní subjekt dle portálu „c/o BiWo
+  Beteiligungsgesellschaft mbH" — korporátní detail, na profil nepatří
+  bez kontextu. Vlastní web načíst, až to půjde. Fotku dodá příští běh
+  DATA-02.

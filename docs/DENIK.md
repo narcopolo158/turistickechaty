@@ -29,6 +29,60 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-05 (blok 5) — Tier 1: pět bavorských najednou (16 z 21); výšky doběhly u všech tří oblastí
+
+**Výšky z Actions doběhly** (sumava + krkonose + jizerske-hory, 100 %
+přístupů) — Arberschutzhaus má finálně: Gipfelstation 0,11 km / B.
+Eisenstein 8,51 km, 731 m↑, 218 min / nádraží 17,52 km s příznakem.
+
+**Pět profilů z bayerischer-wald.de** (jediný spolehlivě dosažitelný
+portál; korpus 123):
+
+1. **Kötztinger Hütte** — hřebenovka na Kaitersbergu přímo na E6
+   i Goldsteigu. BEZ NOCLEHU: portál (protipožární předpisy) + OSM
+   („keine Unterkunft mehr") × katalogové „ano" — rozpor přiznán,
+   zapsáno ne. Otvíračka rozporná (celoročně × Apr–Oct) — nezapsána.
+2. **Berghütte Schareben** — TROJITÁ shoda na 26 lůžkách (katalog +
+   portál + OSM poznámka; 4- a 6lůžkové pokoje, rezervace 10–16).
+   Zavírací den rozporný (denně × pondělí zavřeno) — nezapsán.
+3. **Landshuter Haus** — Oberbreitenau, 20 min od lanovky Geißkopf.
+   VÝŠKA NEZAPSÁNA (portál 1018 × katalog 1050 — vzor Klostermannova);
+   telefon rozporný (portál × OSM) — zapsán portál. Nocleh ano bez
+   kapacity. E-mail na doméně spolku — vlastnictví NETVRDÍME.
+4. **Berghaus Sonnenfels** — hostinec na výstupu na Javor od Lohbergu.
+   NOCLEH VĚDOMĚ NEZAPSÁN: katalog „ano" bez kapacity × portál mlčí —
+   konstelace, která se u Eisensteiner Hütte ukázala jako mylné „ano";
+   bez výslovné věty nerozhodujeme, próza posílá na telefon. Historie
+   nezapsána (portál: „Seit 149 am großen Arber…" — nejednoznačné,
+   nedomýšlíme). Sezónní otvíračka × katalogové „celoročně" přiznáno.
+5. **Berggasthof Mooshütte** — dům pod Brennes; dějiny statku od
+   17. století, hostinec 1870, POŽÁR 2011, znovu postaven 2012 —
+   rokVzniku ČEKÁ: ČTVRTÝ případ k trojici Proseč/Prášily/Turnerova.
+   Výška nezapsána (941 × 950). Jméno: Berggasthof (katalog) primární,
+   Berghotel (vlastní doména) v aliasech.
+
+**Ban-scan 275 → 280:** pět standardních závěrečných odstavců s ODbL —
+posouzeno, ponecháno; jedna skutečná vsuvka pramene v perexu Landshuter
+(„Podle katalogu jede…") přepsána na „Otevřeno bývá…".
+
+**Routing přepočten: 16/16 chat, 31 přístupů** (nové: Kötztinger z Ecku
+5,06 i Hohenwarthu 4,49; Schareben od parkoviště 0,11; Landshuter
+z Bischofsmaisu 4,3; Sonnenfels 7,91 a Mooshütte 5,72 z Lohbergu).
+
+**Kontroly:** tsc čistý, kontrola vse zelená, cílené testy zelené.
+Fronta: 112 povýšeno (+5).
+
+**Stav Tier 1: 16 z 21.** Zbývá 5 — Berggasthof Eck (bez kandidáta
+v exportu — dohledat) a čtveřice českých hotelů: Alpská vyhlídka,
+Belveder, Rovina, Churáňov (u posledních dvou rozlišit chatu od hotelu,
+OSM jména se liší od katalogu).
+
+**PRO MICHALA — klik v Actions:** znovu **DATA-06 výšky pro `sumava`**
+(pět nových chat; krkonose a jizerky netřeba).
+
+**Otázky pro Michala:** rokVzniku nově ČTVEŘICE (přibyl Mooshütte
+1870 × 2012); zbytek beze změny.
+
 ## 2026-08-05 (blok 4) — Tier 1: Eisensteiner Hütte a Falkensteinschutzhaus (11 z 21)
 
 **Dva další bavorské profily** (vzor DATA-03, opět katalog × OSM ×
