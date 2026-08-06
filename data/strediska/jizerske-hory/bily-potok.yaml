@@ -27,14 +27,18 @@ vychoziBody:
   typ: autobusová zastávka + parkoviště
 - nazev: Smědava, autobusová zastávka / parkoviště
   typ: horská autobusová zastávka + parkoviště
+# GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
+lat: 50.8736749
+lng: 15.221633
 overeniLokace:
   source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21);
     zdrojová URL katalogu: https://www.bartlovabouda.cz/, https://www.jizerky.cz/aktuality/jizerky-v-lete-sezonni-linky-vas-vyvezou-za-zazitky-i-s-kolem,
-    https://www.jizerky.cz/doprava'
+    https://www.jizerky.cz/doprava. GPS doplněna 6. 8. 2026 z bodu obce v katalogu výchozích bodů DATA-06 (OpenStreetMap node/1587363596, place=village, source csu:uir-zsj; data © přispěvatelé OpenStreetMap, ODbL 1.0). Výška obce zatím nedoložena.'
   verified: false
-  checked: '2026-07-30'
-# Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
-# čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
+  checked: '2026-08-06'
+# Ruční próza má přednost před řádky z katalogu DATA-06
+# (jak-se-sem-dostat.ts) — ty se od 6. 8. 2026 počítají i tady, protože
+# středisko má GPS. Ceny se nepíšou.
 doprava:
   vlak: >-
     V obci končí regionální trať 038 z Raspenavy a Hejnic; stanice se
@@ -68,4 +72,4 @@ interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky
   ZÁMĚRNĚ CHYBÍ: krkonošská střediska je mají z bodu obce v katalogu výchozích bodů DATA-06, a
   ten pro Jizerské hory ještě neběžel (Overpass ze sandboxu nedosáhneme). Nevymýšlejí se — doplní
   je běh DATA-06 --oblast jizerske-hory, a teprve pak se vykreslí mapa zasazení a dohledá fotka
-  střediska (DATA-33). Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu.'
+  střediska (DATA-33). Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu. GPS DOPLNĚNA 6. 8. 2026 (denní session): katalog výchozích bodů DATA-06 pro jizerske-hory už v repu je, souřadnice se proto vzaly z bodu obce v něm (OSM place, ODbL) — nevymýšlely se. Tím se středisku vykreslí mapa zasazení, spočítají se řádky „Jak se sem dostat“ z mapových dat a odemkne se DATA-33 (fotka střediska) i DATA-35 (výška obce z výškového modelu v referenčním bodě — jeden klik v Actions).'

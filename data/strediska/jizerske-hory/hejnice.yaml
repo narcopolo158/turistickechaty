@@ -23,13 +23,17 @@ vychoziBody:
   typ: hlavní turistická autobusová zastávka + parkoviště
 - nazev: Smědava, autobusová zastávka / parkoviště
   typ: horská autobusová zastávka + parkoviště
+# GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
+lat: 50.8772146
+lng: 15.1816799
 overeniLokace:
   source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21);
-    zdrojová URL katalogu: https://www.jizerky.cz/doprava'
+    zdrojová URL katalogu: https://www.jizerky.cz/doprava. GPS doplněna 6. 8. 2026 z bodu obce v katalogu výchozích bodů DATA-06 (OpenStreetMap node/1587363522, place=village, source csu:uir-zsj; data © přispěvatelé OpenStreetMap, ODbL 1.0). Pozor, OSM vede Hejnice DVĚMA uzly 90 m od sebe — vedle tohohle ještě node/2380333902 s place=town; vzat uzel ze stejného pramene jako u ostatních středisek korpusu (csu:uir-zsj). Výška obce zatím nedoložena.'
   verified: false
-  checked: '2026-07-30'
-# Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
-# čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
+  checked: '2026-08-06'
+# Ruční próza má přednost před řádky z katalogu DATA-06
+# (jak-se-sem-dostat.ts) — ty se od 6. 8. 2026 počítají i tady, protože
+# středisko má GPS. Ceny se nepíšou.
 doprava:
   bus: >-
     Do města jezdí autobusová linka 650, která pokračuje přes Bílý Potok na Smědavu.
@@ -47,8 +51,8 @@ overeniDoprava:
 
 interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
   pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
-  bodů vede Hejnice jako nejbližší obec/uzel pro Kiosek Knajpa. SOUŘADNICE ZÁMĚRNĚ CHYBÍ: krkonošská
+  bodů vede Hejnice jako nejbližší obec/uzel pro Kiosek Knajpa. SOUŘADNICE CHYBĚLY DO 6. 8. 2026 (viz dodatek na konci): krkonošská
   střediska je mají z bodu obce v katalogu výchozích bodů DATA-06, a ten pro Jizerské hory ještě
   neběžel (Overpass ze sandboxu nedosáhneme). Nevymýšlejí se — doplní je běh DATA-06 --oblast
   jizerske-hory, a teprve pak se vykreslí mapa zasazení a dohledá fotka střediska (DATA-33). Doplnit
-  z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu. Doprava 2. 8. 2026 NEDOLOŽENA: web města (mestohejnice.cz) nese k parkování jen informace ke slavnostem, žádná celoroční strukturní fakta. Parkování 4. 8. 2026 NEDOLOŽENO znovu — a tentokrát ne proto, že by web mlčel: město stránku „Parkování" má (mestohejnice.cz, redakce/tisk.php), jenže se zacyklila v přesměrování https→http→https a nejde přečíst. Zkusit z jiné sítě nebo ručně; obsah tam podle názvu je. Perex a autobusová linka 650 doplněny 4. 8. 2026. Parkování 4. 8. 2026 (blok 5): pokus zopakován, výsledek stejný — stránka „Parkování" na mestohejnice.cz se dál cyklí v přesměrování https→http→https a nejde přečíst. Je to porucha webu, ne mlčení pramene; obsah tam podle názvu stránky je. Zkusit ručně z prohlížeče.'
+  z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu. Doprava 2. 8. 2026 NEDOLOŽENA: web města (mestohejnice.cz) nese k parkování jen informace ke slavnostem, žádná celoroční strukturní fakta. Parkování 4. 8. 2026 NEDOLOŽENO znovu — a tentokrát ne proto, že by web mlčel: město stránku „Parkování" má (mestohejnice.cz, redakce/tisk.php), jenže se zacyklila v přesměrování https→http→https a nejde přečíst. Zkusit z jiné sítě nebo ručně; obsah tam podle názvu je. Perex a autobusová linka 650 doplněny 4. 8. 2026. Parkování 4. 8. 2026 (blok 5): pokus zopakován, výsledek stejný — stránka „Parkování" na mestohejnice.cz se dál cyklí v přesměrování https→http→https a nejde přečíst. Je to porucha webu, ne mlčení pramene; obsah tam podle názvu stránky je. Zkusit ručně z prohlížeče. GPS DOPLNĚNA 6. 8. 2026 (denní session): katalog výchozích bodů DATA-06 pro jizerske-hory už v repu je, souřadnice se proto vzaly z bodu obce v něm (OSM place, ODbL) — nevymýšlely se. Tím se středisku vykreslí mapa zasazení, spočítají se řádky „Jak se sem dostat“ z mapových dat a odemkne se DATA-33 (fotka střediska) i DATA-35 (výška obce z výškového modelu v referenčním bodě — jeden klik v Actions).'

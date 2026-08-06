@@ -31,21 +31,25 @@ vychoziBody:
   typ: autobusová zastávka + parkoviště
 - nazev: Bedřichov, stadion
   typ: hlavní turistická autobusová zastávka + parkoviště
+# GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
+lat: 50.791017
+lng: 15.1426403
 overeniLokace:
   source: >-
     Výchozí body: katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026,
     ověřeno k 2026-07-21); zdrojová URL katalogu:
     https://www.jizerky.cz/doprava, https://www.prezidentska.cz/,
-    https://www.samalova-chata.cz/. GPS zatím chybí — doplní je běh DATA-06
-    pro Jizerské hory. Výška obce: 707 m shodně v oficiálním webu obce
+    https://www.samalova-chata.cz/. Výška obce: 707 m shodně v oficiálním webu obce
     (bedrichov-ou.cz/cs/obec/o-obci/zakladni-udaje.html: „leží v nadmořské
     výšce 707 m n. m.") a na turistickém portálu Libereckého kraje
     (liberecky-kraj.cz/dr-cs/2092-bedrichov.html), obojí načteno 4. 8. 2026 —
     ověření proti ČÚZK (zadání F1a) zůstává otevřené.
+    GPS doplněna 6. 8. 2026 z bodu obce v katalogu výchozích bodů DATA-06 (OpenStreetMap node/1587389891, place=village, source csu:uir-zsj; data © přispěvatelé OpenStreetMap, ODbL 1.0).
   verified: false
-  checked: '2026-08-04'
-# Ruční próza; katalogové řádky tu zatím nejsou (jizerská střediska
-# čekají na katalog výchozích bodů DATA-06). Ceny se nepíšou.
+  checked: '2026-08-06'
+# Ruční próza má přednost před řádky z katalogu DATA-06
+# (jak-se-sem-dostat.ts) — ty se od 6. 8. 2026 počítají i tady, protože
+# středisko má GPS. Ceny se nepíšou.
 doprava:
   bus: >-
     Do obce jezdí autobusová linka 145 (Bedřichov – Janov nad Nisou).
@@ -79,8 +83,8 @@ overeniDoprava:
 interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
   pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
   bodů vede Bedřichov jako nejbližší obec/uzel pro Hřebínek, Prezidentská chata, Šámalova chata.
-  SOUŘADNICE ZÁMĚRNĚ CHYBÍ: krkonošská střediska je mají z bodu obce v katalogu výchozích bodů
+  SOUŘADNICE CHYBĚLY DO 6. 8. 2026 (viz dodatek na konci): krkonošská střediska je mají z bodu obce v katalogu výchozích bodů
   DATA-06, a ten pro Jizerské hory ještě neběžel (Overpass ze sandboxu nedosáhneme). Nevymýšlejí
   se — doplní je běh DATA-06 --oblast jizerske-hory, a teprve pak se vykreslí mapa zasazení a
   dohledá fotka střediska (DATA-33). Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex
-  a dopravu. Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu obce.'
+  a dopravu. Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu obce. GPS DOPLNĚNA 6. 8. 2026 (denní session): katalog výchozích bodů DATA-06 pro jizerske-hory už v repu je, souřadnice se proto vzaly z bodu obce v něm (OSM place, ODbL) — nevymýšlely se. Tím se středisku vykreslí mapa zasazení, spočítají se řádky „Jak se sem dostat“ z mapových dat a odemkne se DATA-33 (fotka střediska) i DATA-35 (výška obce z výškového modelu v referenčním bodě — jeden klik v Actions).'
