@@ -89,7 +89,7 @@ i pro identifikátory.
 ban-scan 285 → 288 (tři standardní závěrečné odstavce; superlativ
 u Poledníku přepsán do zajímavosti se zdrojem ještě před commitem).
 
-**Příště:** ① doběh DATA-35 pro Jizerky zpracovat (běží); ② tagovaná
+**Příště:** ① doběh DATA-35 pro Jizerky zpracovat — POZOR: do konce bloku (~2 h od Michalova kliku) na main nedorazil ŽÁDNÝ commit z DATA-35. Buď běh selhal, nebo jel nad checkoutem BEZ ranního commitu s GPS středisek (5b8f65b), nebo s výchozí oblastí `krkonose` (tam už je vše dopočítané → žádná změna → žádný commit, tichý no-op). Logy Actions ze sandboxu nepřečtu (token na ně nemá scope) — Michal mrkne na výsledek běhu a případně pustí znovu s oblastí `jizerske-hory`; ② tagovaná
 fronta pokračuje — nejblíž hansl-huette.de a loderhart.de (dnes za
 gatem), pak rozhledny s doloženým občerstvením; POZOR na otázky rozsahu
 (Kleť, Čerchov, Koráb, Libín — viz SUMAVA-TRIAZ); ③ po potvrzení
