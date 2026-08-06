@@ -497,3 +497,49 @@ vyrazeno:
       Claude (3. 8. 2026, denní bezobslužná session — klíč CLAUDE.md
       + pravidlo o penzionech z 27. 7. 2026)
     checked: 2026-08-03
+
+  - osm: https://www.openstreetmap.org/way/32619135
+    slug: sumava/zwieseler-hutte
+    duvod: >-
+      Chata k pronájmu skupinám, ne turistická chata na trase (precedens
+      Kynast z 3. 8. 2026). Vlastní web zwieseler-huette.de (načteno
+      6. 8. 2026): „na 1.443 Metern 2001 neu erbaute Selbstversorgerhütte"
+      pro 30–35 osob, výslovně pro skupiny, ne jednotlivce; jídlo si vaří
+      nájemci sami (samoobslužná kuchyň), k dispozici jen chlazené nápoje
+      — občerstvení pro kolemjdoucí veřejnost doloženo NENÍ a nocleh je
+      vázán na pronájem. Provozovatel dle OSM i webu tělovýchovný spolek
+      (TV Zwiesel). Turistická minulost (klíč DATA-25) nedoložena: web
+      vede jen novostavbu 2001 a o starším provozu mlčí — formulace „neu
+      erbaute" MŮŽE znamenat předchůdce, ale žádný pramen ho nedokládá.
+      V externím katalogu turistických chat ČR/SK 2026 objekt není.
+      Poloha 1443 m na Velkém Javoru je nápadná — kdyby se turistická
+      minulost někdy doložila, vrátit do fronty.
+    rozhodl: >-
+      Claude (6. 8. 2026, denní bezobslužná session — klíč CLAUDE.md:
+      rozhoduje role na trase a občerstvení pro veřejnost; precedens
+      Kynast pro objekty k pronájmu)
+    checked: 2026-08-06
+
+  - osm: https://www.openstreetmap.org/way/209324038
+    slug: sumava/waldvereinshutte
+    duvod: >-
+      Chata k pronájmu (Selbstversorger s rezervací), ne útulna pro
+      kolemjdoucí — OSM tag tourism=wilderness_hut je tu zavádějící.
+      Vlastní web spolku waldverein-waldmuenchen.de (načteno 6. 8. 2026):
+      Waldvereinshütte „Waldhäusl" v Herzogau u Waldmünchen je
+      „Selbstversorgerhütte" s vybavenou kuchyní, sprchami a lůžky pro
+      ~13 osob, web má sekci BUCHUNGEN (rezervace) — užívá se po
+      objednání, otevřená noclehárna pro procházející to není. Web sám
+      říká, že stojí „an interessanten Wanderrouten wie dem Goldsteig
+      oder dem Pandurensteig" — role na trase by tedy byla, ale bez
+      služby pro veřejnost a bez volného přístřeší nestačí (precedens
+      Kynast). Občerstvení pro veřejnost nedoloženo (jen samoobslužné
+      chlazené nápoje pro nájemce), historie a rok vzniku nedoloženy,
+      v externím katalogu objekt není. Poznámka: NEplést s Berggasthofem
+      Gibacht téhož města (publikovaný profil) — Waldvereinshütte je jiný
+      objekt jiného spolku (Waldverein Waldmünchen e.V.) o ~3 km dál.
+    rozhodl: >-
+      Claude (6. 8. 2026, denní bezobslužná session — klíč CLAUDE.md
+      + precedens Kynast; útulna = volně přístupné přístřeší, což tenhle
+      objekt dle vlastního webu není)
+    checked: 2026-08-06

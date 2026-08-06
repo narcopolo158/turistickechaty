@@ -102,6 +102,43 @@ středisek/lanovek na web, rozhodnout, jestli ji vypsat, nebo odfiltrovat
 
 1. Křížové ověření a povyšování Tier 1 (21 kandidátů) — vzor DATA-03;
    bavorské objekty s německým jménem primárním (rozhodnutí 20. 7.).
-2. Dohledat 6 chybějících katalogových (výš).
+   *(6. 8. 2026: HOTOVO, co šlo — 21 profilů; z katalogových zbývají jen
+   Rovina a Churáňov na živý pramen/telefonát a čtveřice bez kandidáta.)*
+2. Dohledat 6 chybějících katalogových (výš). *(6. 8.: zbývají 4, vše CZ.)*
 3. DATA-06 řetěz (výchozí body → trasy → přístupy → výšky) — Actions.
-4. Teprve pak plošná triáž zbylých ~310 kandidátů (hlavně vyřazování).
+   *(Běží; výšky doběhly 5.–6. 8.)*
+4. Plošná triáž zbylých kandidátů — **začíná se tagovanou frontou (níž)**,
+   teprve pak ~300 kandidátů bez typu (hlavně vyřazování).
+
+## Tagovaná fronta (krok 4a) — kandidáti s typem z OSM tagů
+
+Sestaveno 6. 8. 2026: kandidáti s `typ` rozhledna/obsluhovana/utulna,
+kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po prvním průchodu
+zbývá 28.** Rozhodnuto 6. 8.:
+
+- **`hochwald-hutte` POVÝŠEN** (korpus 129) — chata sekce DAV Deggendorf
+  u rozcestí Hölzerne Hand, 910 m; víkendové občerstvení pro veřejnost
+  od dobrovolníků (káva/koláč/nápoje), nocleh jen při pronájmu celé
+  chaty (přiznáno). Dva shodné prameny (vlastní stránka sekce + OSM).
+  **První šumavský profil mimo externí katalog.**
+- **`zwieseler-hutte` VYŘAZEN** — Selbstversorger k pronájmu skupinám
+  (30–35 osob), bez služby pro kolemjdoucí; precedens Kynast. Poloha
+  1443 m na Javoru je nápadná — kdyby se doložila turistická minulost,
+  vrátit.
+- **`waldvereinshutte` VYŘAZEN** — týž vzor: „Waldhäusl" spolku Waldverein
+  Waldmünchen v Herzogau je Selbstversorger s rezervací (sekce BUCHUNGEN),
+  ne volně přístupná útulna; OSM tag wilderness_hut je tu zavádějící.
+- **`rozhledna-pancir` je vyřešená jinak** — rozhledna je dle vlastního
+  webu součástí publikované Horské chaty Pancíř (jeden objekt, precedens
+  Žalý); kandidát se samostatně nepovyšuje a do fronty se nepočítá.
+
+**Weby, které se 6. 8. nenačetly:** hansl-huette.de (permission gate),
+loderhart.de (robots 500) — oba zkusit jindy, jsou to obsluhované objekty
+s vlastním webem, tedy nadějné. **Zbytek fronty (28):** 7 obsluhovaných
+(barwurz-resl-huttn, berghaus-loderhart, burglengenfelder-hutte-scb-hutte,
+chata-pod-kleti, chata-zivec, hansl-hutte, kreuzhaus, skihutte-kohlau,
+zakladna-bileho-orla, zelena-chyse — pozn.: Kleť je Blanský les, Živec
+u Písku je mimo Šumavu → u obou nejdřív rozhodnout rozsah, vzor Kleti
+u lanovek), 16 rozhleden (u každé nutno doložit občerstvení — klíč
+DATA-23; rozhledna-spicak souvisí s katalogovou „Chatou na Špičáku",
+prověřit spolu) a 2 útulny (forsthaus-odwies, hollbachschwellhutte).

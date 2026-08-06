@@ -1,0 +1,140 @@
+# Hochwaldhütte — povýšen z kandidáta DATA-01 triáží tagované fronty
+# (6. 8. 2026, vzor DATA-03: OSM × vlastní stránka sekce Alpenvereinu).
+# První šumavský profil MIMO externí katalog (v něm objekt není — korpus
+# tím poprvé přerůstá katalogovou frontu, jako v Krkonoších).
+# Vše verified: false.
+
+nazev: Hochwaldhütte
+slug: hochwald-hutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Hochwald - Hütte
+    poznamka: podoba jména v OpenStreetMap
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.8912936
+lng: 13.0415918
+vyska: 910
+obec: Deggendorf
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/183964702 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 910 m a poloha: vlastní stránka sekce DAV Deggendorf
+    (alpenverein-deggendorf.de/huetten, načteno 6. 8. 2026) — chata stojí
+    „idyllisch gelegen an einer sonnigen Lichtung nahe der ‚Hölzernen
+    Hand'" v lese Greisinger Hochwald u Deggendorfu. Obec Deggendorf:
+    OSM adresa i formulace sekce „nähe Deggendorf". V terénu neověřeno.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh JEN PŘI PRONÁJMU CELÉ CHATY — kolemjdoucí tu nepřespí; próza to
+# říká. Kapacita se nezapisuje: sekce vede počty „14+" a „8+" osob, což
+# nejsou čísla k sečtení.
+nocleh: ano
+pokoje:
+  - typ: vytápěná společná ložnice (sekce uvádí „pro 14 a více osob")
+  - typ: nevytápěná ložnice (sekce uvádí „pro 8 a více osob")
+overeniNocleh:
+  source: >-
+    Vlastní stránka sekce DAV Deggendorf (alpenverein-deggendorf.de/huetten,
+    načteno 6. 8. 2026): dvě ložnice (vytápěná pro 14+ osob, nevytápěná pro
+    8+ osob), přespání VÝHRADNĚ pro nájemce celé chaty — pronajatá chata se
+    užívá bez přítomnosti správce. Přesná čísla lůžek pramen nevede
+    (formulace „a více"), kapacita se proto nezapisuje.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Vlastní stránka sekce DAV Deggendorf (alpenverein-deggendorf.de/huetten,
+    načteno 6. 8. 2026): dobrovolnický tým sekce o víkendech „verköstigt
+    seine Gäste mit Kaltgetränken, Kaffee und Kuchen" — studené nápoje,
+    káva a koláč pro příchozí, žádná teplá kuchyně. typObcerstveni: bufet
+    jako nejbližší hodnota číselníku.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Víkendový provoz dobrovolníky; duben ani jeden pramen nejmenuje —
+# nedomýšlí se.
+otviraciDoba: >-
+  Sobota a neděle 12–17, v lednu až březnu a v květnu až říjnu.
+  V listopadu a prosinci je chata mimo provoz; duben prameny nejmenují.
+kontakty:
+  telefon: '+49 991 98294203'
+  web: https://www.alpenverein-deggendorf.de/huetten
+overeniProvoz:
+  source: >-
+    Vlastní stránka sekce DAV Deggendorf (alpenverein-deggendorf.de/huetten,
+    načteno 6. 8. 2026): provoz o víkendech 12–17 v lednu–březnu
+    a květnu–říjnu, listopad a prosinec mimo provoz; obecný telefon
+    +49 991 98294203, pronájmy +49 171 7579717. Otvíračka se shoduje
+    s OSM tagem (Jan-Mar,May-Oct Sa-Su 12:00-17:00). ROZPOR TELEFONU:
+    OSM vede +49 9920 180997, sekce dvě jiná čísla — zapsáno obecné číslo
+    z vlastní stránky sekce, rozpor poznamenán. Provozovatel dle OSM
+    i vlastní stránky: sekce Deggendorf Německého alpského spolku (DAV).
+  verified: false
+  checked: '2026-08-06'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Žádný načtený pramen historii ani rok vzniku neuvádí — zůstává prázdná.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata deggendorfské sekce alpského spolku na slunečné pasece v lese
+  Greisinger Hochwald, v 910 metrech u rozcestí Hölzerne Hand. O víkendech
+  ji otevírají dobrovolníci s kávou, koláčem a studenými nápoji; přespat
+  tu lze jen při pronájmu celé chaty.
+text:
+  - >-
+    Hochwaldhütte patří deggendorfské sekci Německého alpského spolku
+    a stojí na pasece v lese Greisinger Hochwald nad Deggendorfem, poblíž
+    rozcestí, kterému se říká Hölzerne Hand — dřevěná ruka. Není to dům
+    s celotýdenním provozem: otevřeno bývá o sobotách a nedělích od
+    dvanácti do pěti, kdy službu drží dobrovolníci ze spolku a příchozím
+    nabídnou studené nápoje, kávu a koláč.
+  - >-
+    Víkendový režim platí od ledna do března a od května do října;
+    v listopadu a prosinci je chata mimo provoz a o dubnu naše prameny
+    mlčí, takže na jarní přechod je jistější počítat se zavřeno. Přespat
+    se tu dá, ale jen když si skupina pronajme celou chatu — jsou v ní
+    dvě společné ložnice, vytápěná a nevytápěná, a pronajatý dům funguje
+    bez přítomnosti správce. Kdo jde kolem, nocleh tu nesežene.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastní stránky sekce alpského
+    spolku a z OpenStreetMap, odkud je i poloha; telefonní číslo se mezi
+    těmito prameny liší a vedeme to z vlastní stránky sekce. Historie
+    chaty doložená není. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní stránka sekce DAV Deggendorf — poloha u Hölzerne Hand,
+      910 m, víkendový provoz s časy, občerstvení dobrovolníky, ložnice
+      a pravidlo pronájmu celé chaty, kontakty (načteno 6. 8. 2026)
+    url: https://www.alpenverein-deggendorf.de/huetten
+  - popis: OpenStreetMap (GPS, provozovatel, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/way/183964702
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/hochwald-hutte.yaml triáží tagované
+  fronty (6. 8. 2026). Klíč zařazení: obsluhovaná spolková chata
+  s doloženým víkendovým občerstvením pro veřejnost (káva/koláč/nápoje
+  od dobrovolníků), na pasece u rozcestí Hölzerne Hand. PRVNÍ šumavský
+  profil mimo externí katalog.
+
+  Dva nezávislé prameny (vlastní stránka sekce + OSM) se shodují na
+  provozovateli i otvíračce — konstelace bezpečnější než katalogové
+  „ano" bez druhého pramene.
+
+  K OVĚŘENÍ: historie a rok vzniku (žádný pramen); telefon (OSM
+  +49 9920 180997 × sekce +49 991 98294203); duben v otvíračce; přesné
+  počty lůžek. Trasovou vazbu („Hölzerne Hand") doloží příští běh
+  DATA-06 — GPS objekt má. Fotku dodá příští běh DATA-02.
