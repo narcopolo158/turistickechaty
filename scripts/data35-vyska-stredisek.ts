@@ -87,10 +87,15 @@ export const stredRozpeti = (min: number, max: number): number => Math.round((mi
  * „výška obce zatím nedoložena — doplnit ze ČÚZK" hned vedle vyplněné hodnoty
  * a muselo se to uklízet ručně. Věta o OTEVŘENÉM ověření ČÚZK se tím nemaže:
  * tu doplňuje `vetaOVysce()` a hlídací test ji vyžaduje.
+ *
+ * Dovětek „— doplnit ze ČÚZK" je VOLITELNÝ: běh pro Jizerky 6. 8. 2026
+ * spadl na hlídacím testu, protože ranní GPS commit psal větu bez dovětku
+ * („Výška obce zatím nedoložena.") a přesný vzor ji nechal stát vedle
+ * dopočtené hodnoty — rozpor správně zachytil test a commit neprošel.
  */
 export const bezVetyOChybejiciVysce = (source: string): string =>
   source
-    .replace(/;?\s*výšk[au]\s+obce\s+zatím\s+nedoložena\s*—\s*doplnit\s+ze\s+ČÚZK\.?/gi, '')
+    .replace(/;?\s*výšk[au]\s+obce\s+zatím\s+nedoložena(\s*—\s*doplnit\s+ze\s+ČÚZK)?\.?/gi, '')
     .replace(/\s{2,}/g, ' ')
     .replace(/\s+\./g, '.')
     .trim()

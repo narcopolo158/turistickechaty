@@ -117,6 +117,21 @@ describe('DATA-35 — zdroj lokace si po dopočtu neprotiřečí', () => {
     expect(bezVetyOChybejiciVysce(cisty)).toBe(cisty)
   })
 
+  // Regrese z běhu pro Jizerky (6. 8. 2026): ranní GPS commit psal větu BEZ
+  // dovětku „— doplnit ze ČÚZK" a přesný vzor ji nechal stát vedle dopočtené
+  // hodnoty; hlídací test středisek pak správně shodil celý běh v Actions.
+  it('smaže i kratší variantu věty bez dovětku o ČÚZK (regrese z 6. 8. 2026)', () => {
+    const jizerska =
+      'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21). ' +
+      'GPS doplněna 6. 8. 2026 z bodu obce v katalogu výchozích bodů DATA-06 ' +
+      '(OpenStreetMap node/1587363596, place=village, source csu:uir-zsj; data ' +
+      '© přispěvatelé OpenStreetMap, ODbL 1.0). Výška obce zatím nedoložena.'
+    const vycisteno = bezVetyOChybejiciVysce(jizerska)
+    expect(vycisteno).not.toMatch(/zatím nedoložena/)
+    expect(vycisteno).toMatch(/GPS doplněna 6\. 8\. 2026/)
+    expect(vycisteno).toMatch(/ODbL/)
+  })
+
   it('výsledný zdroj projde hlídacím pravidlem středisek (výška + ČÚZK)', () => {
     const vysledek = `${bezVetyOChybejiciVysce(PUVODNI)}. ${vetaOVysce(
       { lat: 50.725645, lon: 15.606757 },
