@@ -6,30 +6,40 @@ oblast: jizerske-hory
 
 # Perex jen z doložené formulace pramene.
 perex: >-
-  Obec při Bílé Nise, 4,5 kilometru severně od Jablonce nad Nisou,
-  rozložená ve výškách od 520 do 859 metrů.
+  Obec při Bílé Nise, 4,5 kilometru severně od Jablonce nad Nisou, rozložená ve
+  výškách od 520 do 859 metrů.
 overeniPerex:
   source: >-
     Turistický portál Libereckého kraje
     liberecky-kraj.cz/dr-cs/2330-janov-nad-nisou.html (načteno 4. 8. 2026):
-    „Janov nad Nisou leží 4,5 km severně od Jablonce nad Nisou. Rozkládá se
-    při Bílé Nise, ve značném výškovém převýšení od 520 m do 859 m." Rozpětí
-    se do `vyskaObce` nezapisuje — jedno číslo dodá DATA-35, až budou
-    souřadnice z běhu DATA-06 pro Jizerské hory.
+    „Janov nad Nisou leží 4,5 km severně od Jablonce nad Nisou. Rozkládá se při
+    Bílé Nise, ve značném výškovém převýšení od 520 m do 859 m." Rozpětí se do
+    `vyskaObce` nezapisuje — jedno číslo dodá DATA-35, až budou souřadnice z
+    běhu DATA-06 pro Jizerské hory.
   verified: false
   checked: '2026-08-04'
 
 vychoziBody:
-- nazev: Bedřichov, stadion
-  typ: hlavní turistická autobusová zastávka + parkoviště
-- nazev: Janov nad Nisou, Hrabětice / Královka
-  typ: horská autobusová zastávka + parkoviště
+  - nazev: Bedřichov, stadion
+    typ: hlavní turistická autobusová zastávka + parkoviště
+  - nazev: Janov nad Nisou, Hrabětice / Královka
+    typ: horská autobusová zastávka + parkoviště
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7732185
 lng: 15.1680111
+vyskaObce: 559
 overeniLokace:
-  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21);
-    zdrojová URL katalogu: https://www.jizerky.cz/doprava, https://www.kralovka.cz/. GPS doplněna 6. 8. 2026 z bodu obce v katalogu výchozích bodů DATA-06 (OpenStreetMap node/1587389784, place=village, source csu:uir-zsj; data © přispěvatelé OpenStreetMap, ODbL 1.0). Výška obce zatím nedoložena.'
+  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k
+    2026-07-21); zdrojová URL katalogu: https://www.jizerky.cz/doprava,
+    https://www.kralovka.cz/. GPS doplněna 6. 8. 2026 z bodu obce v katalogu
+    výchozích bodů DATA-06 (OpenStreetMap node/1587389784, place=village, source
+    csu:uir-zsj; data © přispěvatelé OpenStreetMap, ODbL 1.0). Výška obce:
+    nadmořská výška referenčního bodu střediska (uzel OSM place, týž bod jako
+    GPS výš, 50.773218, 15.168011) z výškového modelu Mapy.com Elevation API
+    (načteno 2026-08-06): 559 m — model s různou přesností, nemusí odpovídat
+    realitě, proto verified:false. Referenční bod místo rozpětí dle zadání
+    Michala 4. 8. 2026 („vycházel z nadmořské výšky turistického uzlu / rozcestí
+    / náměstí"). Ověření proti ČÚZK zůstává otevřené.'
   verified: false
   checked: '2026-08-06'
 # Ruční próza má přednost před řádky z katalogu DATA-06
@@ -40,20 +50,36 @@ doprava:
     Do obce jezdí autobusová linka 145 (Bedřichov – Janov nad Nisou).
 overeniDoprava:
   source: >-
-    Oficiální web obce Lázně Libverda, článek „DO JIZEREK VEŘEJNOU
-    DOPRAVOU" (laznelibverda.cz/cs/aktuality-clanky/do-jizerek-verejnou-dopravou.html,
+    Oficiální web obce Lázně Libverda, článek „DO JIZEREK VEŘEJNOU DOPRAVOU"
+    (laznelibverda.cz/cs/aktuality-clanky/do-jizerek-verejnou-dopravou.html,
     načteno 4. 8. 2026): linka 145 „směrem na Bedřichov a Janov nad Nisou",
     linka 650 „na Hejnice u Liberce, Bílý Potok a dále na Smědavu". Pramen
-    jmenuje LINKY, ne jízdní řády ani zastávky — profil proto netvrdí, kdy
-    a odkud spoje jedou. Je to web sousední obce, ne dopravce; do prvního
-    ověření u dopravce zůstává verified:false.
+    jmenuje LINKY, ne jízdní řády ani zastávky — profil proto netvrdí, kdy a
+    odkud spoje jedou. Je to web sousední obce, ne dopravce; do prvního ověření
+    u dopravce zůstává verified:false.
   verified: false
   checked: '2026-08-04'
 
-interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
-  pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
-  bodů vede Janov nad Nisou jako nejbližší obec/uzel pro Královka. SOUŘADNICE CHYBĚLY DO 6. 8. 2026 (viz dodatek na konci): krkonošská
-  střediska je mají z bodu obce v katalogu výchozích bodů DATA-06, a ten pro Jizerské hory ještě
-  neběžel (Overpass ze sandboxu nedosáhneme). Nevymýšlejí se — doplní je běh DATA-06 --oblast
-  jizerske-hory, a teprve pak se vykreslí mapa zasazení a dohledá fotka střediska (DATA-33). Doplnit
-  z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu. Doprava 2. 8. 2026 NEDOLOŽENA: na oficiálním webu obce (janov-n-n.cz) se nepodařilo najít nic strukturního o parkování. Parkování 4. 8. 2026 (blok 5) NEDOLOŽENO potřetí. Oficiální web obce (janov-n-n.cz) má sekci Turistika, ale o parkování v ní stojí jediná věta, a ta se týká běžeckého lyžování („parkoviště u kapličky" v Hraběticích jako nástup na Jizerskou magistrálu) — celoroční pravidla ani seznam ploch web nenese. Vyhledávání nabídlo janovskaops.net s parkovištěm Kaplička Hrabětice, to je ale provozovatelský web, ne obec; nepřebírám. Řádek Autobusem (linka 145) doložený je. GPS DOPLNĚNA 6. 8. 2026 (denní session): katalog výchozích bodů DATA-06 pro jizerske-hory už v repu je, souřadnice se proto vzaly z bodu obce v něm (OSM place, ODbL) — nevymýšlely se. Tím se středisku vykreslí mapa zasazení, spočítají se řádky „Jak se sem dostat“ z mapových dat a odemkne se DATA-33 (fotka střediska) i DATA-35 (výška obce z výškového modelu v referenčním bodě — jeden klik v Actions).'
+interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a
+  střediska a dotáhni pohoří Jizerské hory na stejnou úroveň jako mají teď
+  Krkonoše"). Důvod zařazení: katalog výchozích bodů vede Janov nad Nisou jako
+  nejbližší obec/uzel pro Královka. SOUŘADNICE CHYBĚLY DO 6. 8. 2026 (viz
+  dodatek na konci): krkonošská střediska je mají z bodu obce v katalogu
+  výchozích bodů DATA-06, a ten pro Jizerské hory ještě neběžel (Overpass ze
+  sandboxu nedosáhneme). Nevymýšlejí se — doplní je běh DATA-06 --oblast
+  jizerske-hory, a teprve pak se vykreslí mapa zasazení a dohledá fotka
+  střediska (DATA-33). Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex
+  a dopravu. Doprava 2. 8. 2026 NEDOLOŽENA: na oficiálním webu obce
+  (janov-n-n.cz) se nepodařilo najít nic strukturního o parkování. Parkování 4.
+  8. 2026 (blok 5) NEDOLOŽENO potřetí. Oficiální web obce (janov-n-n.cz) má
+  sekci Turistika, ale o parkování v ní stojí jediná věta, a ta se týká
+  běžeckého lyžování („parkoviště u kapličky" v Hraběticích jako nástup na
+  Jizerskou magistrálu) — celoroční pravidla ani seznam ploch web nenese.
+  Vyhledávání nabídlo janovskaops.net s parkovištěm Kaplička Hrabětice, to je
+  ale provozovatelský web, ne obec; nepřebírám. Řádek Autobusem (linka 145)
+  doložený je. GPS DOPLNĚNA 6. 8. 2026 (denní session): katalog výchozích bodů
+  DATA-06 pro jizerske-hory už v repu je, souřadnice se proto vzaly z bodu obce
+  v něm (OSM place, ODbL) — nevymýšlely se. Tím se středisku vykreslí mapa
+  zasazení, spočítají se řádky „Jak se sem dostat“ z mapových dat a odemkne se
+  DATA-33 (fotka střediska) i DATA-35 (výška obce z výškového modelu v
+  referenčním bodě — jeden klik v Actions).'

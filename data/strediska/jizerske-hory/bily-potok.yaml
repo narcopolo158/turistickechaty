@@ -6,34 +6,45 @@ oblast: jizerske-hory
 
 # Perex jen z doložené formulace pramene.
 perex: >-
-  Obec ve Frýdlantském výběžku nedaleko Hejnic, první frýdlantská osada
-  na horním toku Smědé.
+  Obec ve Frýdlantském výběžku nedaleko Hejnic, první frýdlantská osada na
+  horním toku Smědé.
 overeniPerex:
   source: >-
     Turistický portál Libereckého kraje
     liberecky-kraj.cz/dr-cs/2232-bily-potok.html (načteno 4. 8. 2026): „Obec
     Bílý potok se nachází ve Frýdlantském výběžku, nedaleko města Hejnice.",
-    „Obec je první frýdlantskou osadou na horním toku Smědé a jednou
-    z nejvýše položených v této části Jizerských hor." Superlativ o výšce se
-    do perexu nepřevzal — je to tvrzení pramene bez čísla. Nadmořskou výšku
-    stránka neuvádí.
+    „Obec je první frýdlantskou osadou na horním toku Smědé a jednou z nejvýše
+    položených v této části Jizerských hor." Superlativ o výšce se do perexu
+    nepřevzal — je to tvrzení pramene bez čísla. Nadmořskou výšku stránka
+    neuvádí.
   verified: false
   checked: '2026-08-04'
 
 vychoziBody:
-- nazev: Bílý Potok pod Smrkem, železniční stanice
-  typ: vlak
-- nazev: Bílý Potok, Bártlova bouda – autobusová zastávka / parkoviště
-  typ: autobusová zastávka + parkoviště
-- nazev: Smědava, autobusová zastávka / parkoviště
-  typ: horská autobusová zastávka + parkoviště
+  - nazev: Bílý Potok pod Smrkem, železniční stanice
+    typ: vlak
+  - nazev: Bílý Potok, Bártlova bouda – autobusová zastávka / parkoviště
+    typ: autobusová zastávka + parkoviště
+  - nazev: Smědava, autobusová zastávka / parkoviště
+    typ: horská autobusová zastávka + parkoviště
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.8736749
 lng: 15.221633
+vyskaObce: 434
 overeniLokace:
-  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21);
-    zdrojová URL katalogu: https://www.bartlovabouda.cz/, https://www.jizerky.cz/aktuality/jizerky-v-lete-sezonni-linky-vas-vyvezou-za-zazitky-i-s-kolem,
-    https://www.jizerky.cz/doprava. GPS doplněna 6. 8. 2026 z bodu obce v katalogu výchozích bodů DATA-06 (OpenStreetMap node/1587363596, place=village, source csu:uir-zsj; data © přispěvatelé OpenStreetMap, ODbL 1.0). Výška obce zatím nedoložena.'
+  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k
+    2026-07-21); zdrojová URL katalogu: https://www.bartlovabouda.cz/,
+    https://www.jizerky.cz/aktuality/jizerky-v-lete-sezonni-linky-vas-vyvezou-za-zazitky-i-s-kolem,
+    https://www.jizerky.cz/doprava. GPS doplněna 6. 8. 2026 z bodu obce v
+    katalogu výchozích bodů DATA-06 (OpenStreetMap node/1587363596,
+    place=village, source csu:uir-zsj; data © přispěvatelé OpenStreetMap, ODbL
+    1.0). Výška obce: nadmořská výška referenčního bodu střediska (uzel OSM
+    place, týž bod jako GPS výš, 50.873675, 15.221633) z výškového modelu
+    Mapy.com Elevation API (načteno 2026-08-06): 434 m — model s různou
+    přesností, nemusí odpovídat realitě, proto verified:false. Referenční bod
+    místo rozpětí dle zadání Michala 4. 8. 2026 („vycházel z nadmořské výšky
+    turistického uzlu / rozcestí / náměstí"). Ověření proti ČÚZK zůstává
+    otevřené.'
   verified: false
   checked: '2026-08-06'
 # Ruční próza má přednost před řádky z katalogu DATA-06
@@ -41,35 +52,43 @@ overeniLokace:
 # středisko má GPS. Ceny se nepíšou.
 doprava:
   vlak: >-
-    V obci končí regionální trať 038 z Raspenavy a Hejnic; stanice se
-    jmenuje Bílý Potok pod Smrkem.
+    V obci končí regionální trať 038 z Raspenavy a Hejnic; stanice se jmenuje
+    Bílý Potok pod Smrkem.
   bus: >-
     Do obce jezdí autobusová linka 650 (Hejnice – Bílý Potok – Smědava).
   auto: >-
     Obcí prochází silnice č. 290 z Frýdlantu na Smědavu a dále na Desnou.
 overeniDoprava:
   source: >-
-    Oficiální web obce Lázně Libverda, článek „DO JIZEREK VEŘEJNOU
-    DOPRAVOU" (laznelibverda.cz/cs/aktuality-clanky/do-jizerek-verejnou-dopravou.html,
+    Oficiální web obce Lázně Libverda, článek „DO JIZEREK VEŘEJNOU DOPRAVOU"
+    (laznelibverda.cz/cs/aktuality-clanky/do-jizerek-verejnou-dopravou.html,
     načteno 4. 8. 2026): linka 145 „směrem na Bedřichov a Janov nad Nisou",
     linka 650 „na Hejnice u Liberce, Bílý Potok a dále na Smědavu". Pramen
-    jmenuje LINKY, ne jízdní řády ani zastávky — profil proto netvrdí, kdy
-    a odkud spoje jedou. Je to web sousední obce, ne dopravce; do prvního
-    ověření u dopravce zůstává verified:false.
+    jmenuje LINKY, ne jízdní řády ani zastávky — profil proto netvrdí, kdy a
+    odkud spoje jedou. Je to web sousední obce, ne dopravce; do prvního ověření
+    u dopravce zůstává verified:false.
 
-    Vlak a silnice z oficiálního webu obce Bílý Potok (bily-potok.cz,
-    načteno 4. 8. 2026): „V obci končí regionální železniční trať 038
-    z Raspenavy a Hejnic a nachází se zde železniční stanice Bílý Potok
-    pod Smrkem.", „Obcí prochází silnice 290 z Frýdlantu na Smědavu a dále
-    do obce Desná." O PARKOVÁNÍ tentýž web mlčí: v menu položku „Parkování"
-    má, ale bez obsahu — proto se o něm nepíše nic.
+    Vlak a silnice z oficiálního webu obce Bílý Potok (bily-potok.cz, načteno 4.
+    8. 2026): „V obci končí regionální železniční trať 038 z Raspenavy a Hejnic
+    a nachází se zde železniční stanice Bílý Potok pod Smrkem.", „Obcí prochází
+    silnice 290 z Frýdlantu na Smědavu a dále do obce Desná." O PARKOVÁNÍ tentýž
+    web mlčí: v menu položku „Parkování" má, ale bez obsahu — proto se o něm
+    nepíše nic.
   verified: false
   checked: '2026-08-04'
 
-interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
-  pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
-  bodů vede Bílý Potok jako nejbližší obec/uzel pro Bártlova bouda, Horská chata Smědava. SOUŘADNICE
-  ZÁMĚRNĚ CHYBÍ: krkonošská střediska je mají z bodu obce v katalogu výchozích bodů DATA-06, a
-  ten pro Jizerské hory ještě neběžel (Overpass ze sandboxu nedosáhneme). Nevymýšlejí se — doplní
-  je běh DATA-06 --oblast jizerske-hory, a teprve pak se vykreslí mapa zasazení a dohledá fotka
-  střediska (DATA-33). Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu. GPS DOPLNĚNA 6. 8. 2026 (denní session): katalog výchozích bodů DATA-06 pro jizerske-hory už v repu je, souřadnice se proto vzaly z bodu obce v něm (OSM place, ODbL) — nevymýšlely se. Tím se středisku vykreslí mapa zasazení, spočítají se řádky „Jak se sem dostat“ z mapových dat a odemkne se DATA-33 (fotka střediska) i DATA-35 (výška obce z výškového modelu v referenčním bodě — jeden klik v Actions).'
+interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a
+  střediska a dotáhni pohoří Jizerské hory na stejnou úroveň jako mají teď
+  Krkonoše"). Důvod zařazení: katalog výchozích bodů vede Bílý Potok jako
+  nejbližší obec/uzel pro Bártlova bouda, Horská chata Smědava. SOUŘADNICE
+  ZÁMĚRNĚ CHYBÍ: krkonošská střediska je mají z bodu obce v katalogu výchozích
+  bodů DATA-06, a ten pro Jizerské hory ještě neběžel (Overpass ze sandboxu
+  nedosáhneme). Nevymýšlejí se — doplní je běh DATA-06 --oblast jizerske-hory, a
+  teprve pak se vykreslí mapa zasazení a dohledá fotka střediska (DATA-33).
+  Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu. GPS
+  DOPLNĚNA 6. 8. 2026 (denní session): katalog výchozích bodů DATA-06 pro
+  jizerske-hory už v repu je, souřadnice se proto vzaly z bodu obce v něm (OSM
+  place, ODbL) — nevymýšlely se. Tím se středisku vykreslí mapa zasazení,
+  spočítají se řádky „Jak se sem dostat“ z mapových dat a odemkne se DATA-33
+  (fotka střediska) i DATA-35 (výška obce z výškového modelu v referenčním bodě
+  — jeden klik v Actions).'

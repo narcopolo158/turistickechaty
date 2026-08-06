@@ -6,35 +6,46 @@ oblast: jizerske-hory
 
 # Perex jen z doložené formulace pramene.
 perex: >-
-  Obec na pomezí Jizerských hor a Krkonoš, mezi Tanvaldem a Harrachovem;
-  její území zasahuje až do Krkonošského národního parku.
+  Obec na pomezí Jizerských hor a Krkonoš, mezi Tanvaldem a Harrachovem; její
+  území zasahuje až do Krkonošského národního parku.
 overeniPerex:
   source: >-
     Dva prameny, načteno 4. 8. 2026. Turistický portál Libereckého kraje
     liberecky-kraj.cz/dr-cs/2188-korenov.html: „Obec Kořenov leží na pomezí
-    Jizerských hor a Krkonoš, mezi městy Tanvald a Harrachov.", výška „od 570
-    do 1025 m.n.m." Oficiální turistický portál Svazku měst a obcí Krkonoše
-    region-krkonose.cz/obce/korenov/: „Obec Kořenov se nachází ve východní
-    části Jizerských hor a její území zasahuje až do oblasti Krkonošského
-    národního parku." Tvrzení téhož portálu, že Kořenov „patří mezi největší
-    horské obce České republiky", je superlativ bez čísla — do perexu se
-    nepřevzal. Rozpětí 570–1025 m se do `vyskaObce` nezapisuje.
+    Jizerských hor a Krkonoš, mezi městy Tanvald a Harrachov.", výška „od 570 do
+    1025 m.n.m." Oficiální turistický portál Svazku měst a obcí Krkonoše
+    region-krkonose.cz/obce/korenov/: „Obec Kořenov se nachází ve východní části
+    Jizerských hor a její území zasahuje až do oblasti Krkonošského národního
+    parku." Tvrzení téhož portálu, že Kořenov „patří mezi největší horské obce
+    České republiky", je superlativ bez čísla — do perexu se nepřevzal. Rozpětí
+    570–1025 m se do `vyskaObce` nezapisuje.
   verified: false
   checked: '2026-08-04'
 
 vychoziBody:
-- nazev: Jakuszyce, Polana Jakuszycka
-  typ: vlak + přeshraniční turistický uzel
-- nazev: Jizerka, Mořina – autobusová zastávka / parkoviště
-  typ: horská osada + sezónní autobus + parkoviště
-- nazev: Kořenov, železniční stanice
-  typ: vlak + obec
+  - nazev: Jakuszyce, Polana Jakuszycka
+    typ: vlak + přeshraniční turistický uzel
+  - nazev: Jizerka, Mořina – autobusová zastávka / parkoviště
+    typ: horská osada + sezónní autobus + parkoviště
+  - nazev: Kořenov, železniční stanice
+    typ: vlak + obec
 # GPS bodu obce z OSM (place) — katalog výchozích bodů DATA-06
 lat: 50.7596171
 lng: 15.3658974
+vyskaObce: 740
 overeniLokace:
-  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k 2026-07-21);
-    zdrojová URL katalogu: https://www.jizerky.cz/doprava, https://www.pesakovna.cz/, https://www.pyramida-jizerka.cz/. GPS doplněna 6. 8. 2026 z bodu obce v katalogu výchozích bodů DATA-06 (OpenStreetMap node/1587389640, place=village, source csu:uir-zsj; data © přispěvatelé OpenStreetMap, ODbL 1.0). Výška obce zatím nedoložena.'
+  source: 'Katalog výchozích bodů (data/externi/vychozi-body-cr-sk-2026, ověřeno k
+    2026-07-21); zdrojová URL katalogu: https://www.jizerky.cz/doprava,
+    https://www.pesakovna.cz/, https://www.pyramida-jizerka.cz/. GPS doplněna 6.
+    8. 2026 z bodu obce v katalogu výchozích bodů DATA-06 (OpenStreetMap
+    node/1587389640, place=village, source csu:uir-zsj; data © přispěvatelé
+    OpenStreetMap, ODbL 1.0). Výška obce: nadmořská výška referenčního bodu
+    střediska (uzel OSM place, týž bod jako GPS výš, 50.759617, 15.365897) z
+    výškového modelu Mapy.com Elevation API (načteno 2026-08-06): 740 m — model
+    s různou přesností, nemusí odpovídat realitě, proto verified:false.
+    Referenční bod místo rozpětí dle zadání Michala 4. 8. 2026 („vycházel z
+    nadmořské výšky turistického uzlu / rozcestí / náměstí"). Ověření proti ČÚZK
+    zůstává otevřené.'
   verified: false
   checked: '2026-08-06'
 # Ruční próza má přednost před řádky z katalogu DATA-06
@@ -42,28 +53,36 @@ overeniLokace:
 # středisko má GPS. Ceny se nepíšou.
 doprava:
   auto: >-
-    V obci je zakázáno parkovat mimo vyznačená parkoviště (na zelených
-    plochách vůbec). Parkuje se v centru Kořenova — u nádraží zdarma —
-    a dál v Polubném, Rejdicích i Příchovicích. Do osady Jizerka smí autem
-    jen ubytovaní hosté; návštěvníci parkují na parkovišti Mořina,
-    karavany a obytná auta tam nesmí vůbec.
+    V obci je zakázáno parkovat mimo vyznačená parkoviště (na zelených plochách
+    vůbec). Parkuje se v centru Kořenova — u nádraží zdarma — a dál v Polubném,
+    Rejdicích i Příchovicích. Do osady Jizerka smí autem jen ubytovaní hosté;
+    návštěvníci parkují na parkovišti Mořina, karavany a obytná auta tam nesmí
+    vůbec.
 overeniDoprava:
   source: >-
-    Oficiální web obce Kořenov (korenov.cz, stránka Parkování, načteno
-    2. 8. 2026): „V obci je zakázáno parkovat mimo vyznačená parkoviště.
-    Parkování na zelených plochách je přísně zakázáno“; centrum ~50 míst
-    + zdarma u nádraží; Polubný (U kostela, Slávie, zdarma U trafa ~60
-    míst), Rejdice (Nad lanovkou ~70 míst), Příchovice (U kravína
-    + u vleků); Jizerka: „Vjezd do osady je povolen pouze ubytovaným
-    hostům“, parkoviště Mořina, „Zákaz parkování pro karavany a obytná
-    auta!“. Ceny se do profilu nepíšou.
+    Oficiální web obce Kořenov (korenov.cz, stránka Parkování, načteno 2. 8.
+    2026): „V obci je zakázáno parkovat mimo vyznačená parkoviště. Parkování na
+    zelených plochách je přísně zakázáno“; centrum ~50 míst + zdarma u nádraží;
+    Polubný (U kostela, Slávie, zdarma U trafa ~60 míst), Rejdice (Nad lanovkou
+    ~70 míst), Příchovice (U kravína + u vleků); Jizerka: „Vjezd do osady je
+    povolen pouze ubytovaným hostům“, parkoviště Mořina, „Zákaz parkování pro
+    karavany a obytná auta!“. Ceny se do profilu nepíšou.
   verified: false
   checked: '2026-08-02'
 
-interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a střediska a dotáhni
-  pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše"). Důvod zařazení: katalog výchozích
-  bodů vede Kořenov jako nejbližší obec/uzel pro Chata Jizerka, Pešákovna, Pyramida Jizerka. SOUŘADNICE
-  ZÁMĚRNĚ CHYBÍ: krkonošská střediska je mají z bodu obce v katalogu výchozích bodů DATA-06, a
-  ten pro Jizerské hory ještě neběžel (Overpass ze sandboxu nedosáhneme). Nevymýšlejí se — doplní
-  je běh DATA-06 --oblast jizerske-hory, a teprve pak se vykreslí mapa zasazení a dohledá fotka
-  střediska (DATA-33). Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu. Doprava (auto) doplněna 2. 8. 2026 z oficiálního webu obce. GPS DOPLNĚNA 6. 8. 2026 (denní session): katalog výchozích bodů DATA-06 pro jizerske-hory už v repu je, souřadnice se proto vzaly z bodu obce v něm (OSM place, ODbL) — nevymýšlely se. Tím se středisku vykreslí mapa zasazení, spočítají se řádky „Jak se sem dostat“ z mapových dat a odemkne se DATA-33 (fotka střediska) i DATA-35 (výška obce z výškového modelu v referenčním bodě — jeden klik v Actions).'
+interniPoznamky: 'Založeno 30. 7. 2026 na zadání Michala („vyhledej lanovky a
+  střediska a dotáhni pohoří Jizerské hory na stejnou úroveň jako mají teď
+  Krkonoše"). Důvod zařazení: katalog výchozích bodů vede Kořenov jako nejbližší
+  obec/uzel pro Chata Jizerka, Pešákovna, Pyramida Jizerka. SOUŘADNICE ZÁMĚRNĚ
+  CHYBÍ: krkonošská střediska je mají z bodu obce v katalogu výchozích bodů
+  DATA-06, a ten pro Jizerské hory ještě neběžel (Overpass ze sandboxu
+  nedosáhneme). Nevymýšlejí se — doplní je běh DATA-06 --oblast jizerske-hory, a
+  teprve pak se vykreslí mapa zasazení a dohledá fotka střediska (DATA-33).
+  Doplnit z doložených zdrojů také výšku obce (ČÚZK), perex a dopravu. Doprava
+  (auto) doplněna 2. 8. 2026 z oficiálního webu obce. GPS DOPLNĚNA 6. 8. 2026
+  (denní session): katalog výchozích bodů DATA-06 pro jizerske-hory už v repu
+  je, souřadnice se proto vzaly z bodu obce v něm (OSM place, ODbL) —
+  nevymýšlely se. Tím se středisku vykreslí mapa zasazení, spočítají se řádky
+  „Jak se sem dostat“ z mapových dat a odemkne se DATA-33 (fotka střediska) i
+  DATA-35 (výška obce z výškového modelu v referenčním bodě — jeden klik v
+  Actions).'
