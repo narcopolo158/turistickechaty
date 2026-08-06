@@ -29,6 +29,79 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-06 (blok 2, s Michalem online) — doběhy tří workflow zpracovány; Šumava vstoupila do tagované fronty (+3 profily, 2 vyřazení)
+
+**Michal spustil DATA-06 (jizerske-hory), DATA-05 otisky a DATA-28** —
+všechny tři doběhly; k tomu DATA-33 pro Jizerky a běží DATA-35.
+
+**Doběhy zpracovány:**
+
+- **DATA-06 trasy Jizerky:** přeroutování ověřeno — výsledek totožný
+  (25/25 chat, 51 přístupů, jediný rozdíl jeden vertex u Slovanky);
+  commitnutý soubor s výškami PONECHÁN, ať se výšky nezahazují kvůli
+  ničemu. Vedlejší potvrzení: opravy geokódu z 5. 8. Jizerky neposunuly.
+- **DATA-05 otisky:** správně nestáhly nic nového (jen datum manifestu)
+  — stahují výhradně potvrzené páry. Párování přepočteno nad 128
+  chatami: **16 párů ke kontrole** (přibylo 5 šumavských). Michal dostal
+  interaktivní kontrolní stránku seřazenou podle rizika; nejrizikovější
+  je „Tetřev" (checklist vede zvlášť „Tetřeví boudy" — nejspíš třetí
+  objekt) a „Hubertka" (v korpusu máme DVĚ Hubertky).
+- **DATA-33 Jizerky:** všech 6 středisek dostalo fotku (CC0/CC BY-SA
+  s autorem) — přímý důsledek ranního doplnění GPS středisek.
+- **GPS šesti jizerských středisek** doplněna z bodů obcí katalogu
+  DATA-06 (commit 5b8f65b) — interní poznámky tvrdily, že se čeká na
+  běh, který už proběhl. Hejnice: OSM vede obec dvěma uzly 90 m od
+  sebe, vzat uzel z csu:uir-zsj (shodný pramen s korpusem).
+
+**Šumava — tagovaná fronta (krok 4a triáže), 3 povýšení a 2 vyřazení:**
+
+1. **Hochwaldhütte** (DAV Deggendorf, 910 m, u rozcestí Hölzerne Hand)
+   — víkendové občerstvení pro veřejnost od dobrovolníků; nocleh jen
+   při pronájmu celé chaty (přiznáno). **První šumavský profil mimo
+   externí katalog.**
+2. **Rozhledna Poledník** (1315 m, věž 37 m) — bývalý armádní objekt,
+   rozhledna od 1998, kiosek doložen dvěma prameny. rokVzniku prázdný
+   (stavba z 60. let bez roku — vzorec kontinuity jako Proseč). Rozpor
+   sezóny (V–X × V–IX) přiznán.
+3. **Rozhledna Svatobor** (845 m nad Sušicí) — rozhledna S CHATOU:
+   22 lůžek, restaurace, věž 1934. **Kolize `svatobor` rozhodnuta**
+   (jeden areál, jeden provoz — shodný telefon a doména; vzor
+   Žalý/Královka), `_jmenovci.yaml` aktualizován. Otvíračky nezapsány
+   (prameny si odporují — vzor Kötztinger). Rozsah: Šumavské podhůří,
+   precedens Frýdlantské výšiny.
+- **Vyřazeny Zwieseler Hütte a Waldvereinshütte** — obě Selbstversorger
+  k pronájmu bez služby pro kolemjdoucí (precedens Kynast); u Zwieseler
+  poznámka „kdyby se doložila turistická minulost, vrátit".
+
+**Routing nových profilů MERGEM** do commitnutého katalogu — 38
+stávajících přístupů drží výšky, 5 nových na ně čeká (skript je
+idempotentní, doplní je příští klik). Poledník: z Prášil 7,87 km (sedí
+s 8 km pramene); duplicitní přístupy z téhož pojmenovaného bodu (dvě
+OSM zastávky u sebe) deduplikovány — kandidát na úpravu ve skriptu.
+
+**Vlastní chyba chycená před commitem:** do profilu Svatoboru jsem
+napsal vymyšlené OSM way ID a GPS „z hlavy" místo převzetí z kandidáta
+— odhaleno křížovou kontrolou proti kandidátovi, opraveno; Poledník
+a Hochwald zkontrolovány, sedí. Připomínka, proč `nedomýšlet` platí
+i pro identifikátory.
+
+**Kontroly:** kontrola zelená, tsc čistý, cílené testy zelené (35+16),
+ban-scan 285 → 288 (tři standardní závěrečné odstavce; superlativ
+u Poledníku přepsán do zajímavosti se zdrojem ještě před commitem).
+
+**Příště:** ① doběh DATA-35 pro Jizerky zpracovat (běží); ② tagovaná
+fronta pokračuje — nejblíž hansl-huette.de a loderhart.de (dnes za
+gatem), pak rozhledny s doloženým občerstvením; POZOR na otázky rozsahu
+(Kleť, Čerchov, Koráb, Libín — viz SUMAVA-TRIAZ); ③ po potvrzení
+razítkových párů klik na otisky-workflow.
+
+**Otázky pro Michala:** ① razítkové páry — kontrolní stránka v chatu
+(16 párů, stačí čísla); ② rozsah: patří do „Šumavy" i podhůří a sousední
+hřbety (Svatobor ANO dle precedentu Frýdlantské výšiny — potvrď;
+Kleť/Blanský les, Čerchov/Český les, Koráb, Libín čekají na tvé slovo);
+③ starší otevřené beze změny (Gibacht domény+nocleh, Dreisessel doména,
+Osser lůžka, rokVzniku čtveřice, DATA-20 `obec`).
+
 ## 2026-08-06 — denní session: Berggasthof Gibacht (21. šumavský profil) a nález, že katalog umí zapsat výšku hory místo domu
 
 **Hotovo**

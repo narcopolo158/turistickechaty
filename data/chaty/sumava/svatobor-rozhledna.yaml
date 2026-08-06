@@ -1,0 +1,188 @@
+# Rozhledna Svatobor — povýšen z kandidáta DATA-01 triáží tagované fronty
+# (6. 8. 2026, vzor DATA-03: OSM × Kudy z nudy × web města Sušice).
+# Vzor Královky: rozhledna a chata v jednom areálu → jeden profil s typem
+# rozhledna a doloženým noclehem i restaurací. Vlastní web areálu
+# (chatasvatobor.cz) se ze sandboxu nenačetl — próza to přiznává.
+# Vše verified: false.
+
+nazev: Rozhledna Svatobor
+slug: svatobor-rozhledna
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Chata na Svatoboru
+    poznamka: >-
+      jméno chaty v areálu dle webu města Sušice; vlastní doména areálu
+      je chatasvatobor.cz
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.2355359
+lng: 13.4875462
+vyska: 845
+obec: Sušice
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/1086253212 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška vrcholu 845 m: web města Sušice (mestosusice.cz, načteno
+    6. 8. 2026) — jediný pramen s číslem, Kudy z nudy výšku vrcholu
+    nevede. Obec Sušice: vrchol Svatobor se zvedá přímo nad městem, web
+    města vede rozhlednu i chatu ve svém přehledu; z města je to k věži
+    dle Kudy z nudy zhruba hodina pěšky. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 22
+pokoje:
+  - typ: 10 pokojů, některé s balkonem; společné WC a koupelny na patře
+overeniNocleh:
+  source: >-
+    Kudy z nudy (načteno 6. 8. 2026): chata v areálu rozhledny nabízí
+    22 lůžek v 10 pokojích a až 4 přistýlky; některé pokoje s balkonem,
+    společné WC a koupelny na každém patře, vstup se zvířaty zakázán.
+    Web města Sušice (načteno 6. 8. 2026) potvrzuje ubytování slovy
+    „restauraci a několik pokojů", počet vede jen Kudy z nudy.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy (načteno 6. 8. 2026): restaurace s 35 místy, letní
+    terasou a českou kuchyní. Web města Sušice (načteno 6. 8. 2026):
+    chata s restaurací. Nezávisle OSM: restaurace „Svatobor" 10 m od
+    věže, https://www.openstreetmap.org/node/9952587892.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Otvírací doba se VĚDOMĚ NEZAPISUJE (vzor Kötztinger Hütte): prameny si
+# odporují — Kudy z nudy vede rozhlednu denně 10–16 a restauraci čt–so
+# 11–21, ne 11–17, web města (pro červenec–srpen) rozhlednu 10–18 a chatu
+# po–čt 11–18, pá–so 11–20, ne 11–17. Vlastní web areálu se nenačetl —
+# rozhodl by; do té doby próza posílá na telefon.
+kontakty:
+  telefon: '+420 605 418 433'
+  email: svatobor@horest.cz
+  web: https://www.chatasvatobor.cz/
+overeniProvoz:
+  source: >-
+    Telefon +420 605 418 433 a e-mail svatobor@horest.cz shodně Kudy
+    z nudy i web města Sušice (obojí načteno 6. 8. 2026); web areálu
+    chatasvatobor.cz vedou také oba (nenačten — necitujeme z něj).
+    Otvírací doby si prameny odporují (rozhledna denně 10–16 dle Kudy
+    z nudy × 10–18 v červenci–srpnu dle města; restaurace čt–ne dle Kudy
+    z nudy × celý týden dle města) — nezapisují se, před cestou ověřit.
+    Na rozhlednu se vstupuje samoobslužným turniketem (platba kartou
+    nebo mincemi, hosté chaty zdarma) dle Kudy z nudy; výše vstupného
+    se nezapisuje. Rozhledna i chata jsou dle webu města od roku 1998
+    majetkem města Sušice.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku 1934 = dnešní věž i chata (shoda obou pramenů). Letopočty
+# PRVNÍ věže si prameny odporují (1898–1900 × „stála v letech
+# 1895–1898") — do milníků se proto první věž nepíše rokem, jen próza
+# přiznává konec 19. století s rozporem.
+rokVzniku: 1934
+milniky:
+  - rok: 1905
+    udalost: Útulna u první věže zničena požárem
+  - rok: 1934
+    udalost: >-
+      Nakloněná první věž se zřítila; na jejím místě během tří měsíců
+      vyrostla dnešní rozhledna spolu s novou horskou chatou
+overeniHistorie:
+  source: >-
+    Kudy z nudy (načteno 6. 8. 2026): první věž postavena „v letech 1898
+    a 1900", přilehlá útulna 1905 zničena požárem, věž se nakláněla
+    (1926 odchylka 102 cm) a roku 1934 se zřítila; nová věž s horskou
+    chatou postavena 1934 za tři měsíce. Web města Sušice (načteno
+    6. 8. 2026): „Původní kamenná věž stála v letech 1895–1898", nová
+    věž postavena 1934 po zbourání poškozené — LETOPOČTY PRVNÍ VĚŽE SI
+    PRAMENY ODPORUJÍ, shodují se na roku 1934 pro dnešní stavbu; do
+    milníků jde jen shoda.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Krytá vyhlídková plošina věže je ve 28 metrech a vede na ni 182
+      dřevěných schodů; věž měří 31,6 m.
+    kategorie: jine
+    zdroj: Kudy z nudy (načteno 6. 8. 2026); výšku věže potvrzuje i web města Sušice
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Rozhledna s horskou chatou na vrcholu Svatoboru (845 m) přímo nad
+  Sušicí — dnešní věž i chata vyrostly za tři měsíce roku 1934, když se
+  první věž z konce 19. století zřítila. V chatě se dá najíst i přespat
+  (22 lůžek), na věž se vstupuje samoobslužným turniketem.
+text:
+  - >-
+    Svatobor se zvedá přímo nad Sušicí a od města je to na vrchol zhruba
+    hodina pěšky. Nahoře stojí vedle sebe rozhledna a horská chata —
+    obojí patří od roku 1998 městu a obojí má společnou historii: první
+    věž z konce devatenáctého století se postupně nakláněla, až se roku
+    1934 zřítila, a ještě týž rok na jejím místě během tří měsíců
+    vyrostla dnešní věž i s novou chatou. V letopočtech té první věže se
+    naše prameny rozcházejí, a tak je neuvádíme; útulnu, která u ní
+    stávala, zničil roku 1905 požár.
+  - >-
+    Věž měří 31,6 metru a na krytou vyhlídkovou plošinu ve 28 metrech
+    vede 182 dřevěných schodů. Vstupuje se samoobslužným turniketem —
+    platí se kartou nebo mincemi a hosté chaty mají vstup zdarma.
+    V chatě je restaurace s pětatřiceti místy, letní terasou a českou
+    kuchyní a k přespání 22 lůžek v deseti pokojích, některé s balkonem;
+    koupelny jsou společné na patře a se zvířaty sem hosté nesmějí.
+  - >-
+    Otvírací hodiny věže i restaurace si naše prameny protiřečí, proto
+    je neuvádíme — kdo sem plánuje cestu mimo letní víkend, ať si
+    provoz ověří telefonicky předem.
+  - >-
+    Údaje na téhle stránce pocházejí z turistického portálu a z webu
+    města Sušice; vlastní web areálu se nám zatím nepodařilo načíst,
+    takže z něj necitujeme. Polohu nese OpenStreetMap. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Kudy z nudy — věž 31,6 m / 182 schodů / plošina 28 m, historie
+      obou věží, chata (22 lůžek, 10 pokojů, restaurace 35 míst),
+      turniket, kontakty (načteno 6. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/rozhledna-svatobor-u-susice-posvatne-misto-slova
+  - popis: >-
+      Web města Sušice — výška vrcholu 845 m, historie s odlišnými
+      letopočty první věže, majetek města od 1998, kontakty a provozní
+      doby (načteno 6. 8. 2026)
+    url: https://www.mestosusice.cz/susice/fr.asp?tab=icsusice&id=56&burl=&pt=TUREAM
+  - popis: Vlastní web areálu (zatím nenačten — necitujeme z něj)
+    url: https://www.chatasvatobor.cz/
+  - popis: OpenStreetMap (GPS věže, restaurace Svatobor 10 m; ODbL)
+    url: https://www.openstreetmap.org/way/1086253212
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/svatobor-rozhledna.yaml triáží
+  tagované fronty (6. 8. 2026). Klíč zařazení: rozhledna s chatou —
+  nocleh, restaurace i občerstvení pro příchozí doloženy dvěma prameny
+  + OSM (vzor Královka: typ rozhledna, nocleh v areálu). POZOR ROZSAH:
+  Svatobor je Šumavské podhůří nad Sušicí, ne Šumava sama — precedens
+  Frýdlantské výšiny v Jizerkách (rozhledna nad městem v okně oblasti);
+  kdyby Michal rozhodl jinak, přesunout do přesahové oblasti (DATA-29).
+
+  ROZPORY přiznané: letopočty první věže (1898–1900 × 1895–1898);
+  otvírací doby věže i restaurace (nezapsány). Kapacita 22 lůžek je
+  z jediného pramene (Kudy z nudy), město vede jen „několik pokojů".
+
+  K OVĚŘENÍ: vlastní web chatasvatobor.cz (ze sandboxu nenačten;
+  kandidátova doména rozhlednasvatobor.cz vrací 403 — vztah obou domén
+  neznáme, netvrdíme); provozovatel HOREST (e-mailová doména horest.cz
+  — jen indicie, netvrdíme); GPS z OSM way rozhledny — ID převzato
+  z kandidáta. Fotku dodá příští běh DATA-02.

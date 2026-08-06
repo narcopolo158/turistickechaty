@@ -113,8 +113,7 @@ středisek/lanovek na web, rozhodnout, jestli ji vypsat, nebo odfiltrovat
 ## Tagovaná fronta (krok 4a) — kandidáti s typem z OSM tagů
 
 Sestaveno 6. 8. 2026: kandidáti s `typ` rozhledna/obsluhovana/utulna,
-kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po prvním průchodu
-zbývá 27.** Rozhodnuto 6. 8.:
+kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po dvou průchodech 6. 8. zbývá 25.** Rozhodnuto 6. 8.:
 
 - **`hochwald-hutte` POVÝŠEN** (korpus 129) — chata sekce DAV Deggendorf
   u rozcestí Hölzerne Hand, 910 m; víkendové občerstvení pro veřejnost
@@ -133,6 +132,16 @@ zbývá 27.** Rozhodnuto 6. 8.:
   kiosek u paty věže doložen dvěma prameny (regionální průvodce + OSM).
   Sezóna V–X s přiznaným rozporem (jeden pramen vede jen V–IX). Routing:
   z Prášil (Velký Bor) 7,87 km — sedí s 8 km, které vede Šumava Net.
+- **`svatobor-rozhledna` POVÝŠEN** (korpus 131) — rozhledna S CHATOU nad
+  Sušicí (845 m): nocleh 22 lůžek, restaurace, věž 31,6 m z roku 1934.
+  Kolize `svatobor` ROZHODNUTA (vzor Žalý/Královka): chata i rozhledna
+  jsou jeden areál s jedním provozem (shodný telefon a doména, od 1998
+  majetek města) → jeden profil; kandidát `svatobor-chata` se nepovyšuje,
+  záznam v `data/_jmenovci.yaml` aktualizován. Rozpory přiznány
+  (letopočty první věže, otvírací doby — nezapsány). POZOR ROZSAH:
+  Šumavské podhůří (precedens Frýdlantské výšiny v Jizerkách) — kdyby
+  Michal rozhodl jinak, přesun do DATA-29. Routing: Svojšice 3,54 km
+  po červené.
 - **`rozhledna-pancir` je vyřešená jinak** — rozhledna je dle vlastního
   webu součástí publikované Horské chaty Pancíř (jeden objekt, precedens
   Žalý); kandidát se samostatně nepovyšuje a do fronty se nepočítá.
@@ -144,6 +153,6 @@ s vlastním webem, tedy nadějné. **Zbytek fronty (28):** 7 obsluhovaných
 chata-pod-kleti, chata-zivec, hansl-hutte, kreuzhaus, skihutte-kohlau,
 zakladna-bileho-orla, zelena-chyse — pozn.: Kleť je Blanský les, Živec
 u Písku je mimo Šumavu → u obou nejdřív rozhodnout rozsah, vzor Kleti
-u lanovek), 15 rozhleden (u každé nutno doložit občerstvení — klíč
+u lanovek), 14 rozhleden (u každé nutno doložit občerstvení — klíč
 DATA-23; rozhledna-spicak souvisí s katalogovou „Chatou na Špičáku",
 prověřit spolu) a 2 útulny (forsthaus-odwies, hollbachschwellhutte).

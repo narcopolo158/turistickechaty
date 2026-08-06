@@ -223,12 +223,18 @@ jmenovci:
       - sumava/svatobor-chata
       - sumava/svatobor-rozhledna
     duvod: >-
-      NEJSPÍŠ JEDEN AREÁL: chata i rozhledna na Svatoboru u Sušice mají
-      v OSM TYTÉŽ souřadnice (49,2355 / 13,4875) — precedens Žalý.
-      Jestli jeden profil, nebo dva, určí křížové ověření při triáži;
-      do té doby dvě kandidátní entity.
-    rozhodl: Claude (návrh z 4. 8. 2026) — čeká na potvrzení Michalem
-    checked: 2026-08-04
+      JEDEN AREÁL, JEDEN PROFIL (rozhodnuto křížovým ověřením 6. 8. 2026,
+      vzor Žalý): chata i rozhledna na Svatoboru u Sušice mají v OSM
+      tytéž souřadnice a JEDEN provoz dokládá shodný telefon
+      +420 605 418 433 (u chaty v OSM, u areálu na Kudy z nudy i webu
+      města Sušice) a společná doména chatasvatobor.cz; web města navíc
+      vede obojí od roku 1998 jako majetek města. Publikován profil
+      sumava/svatobor-rozhledna (typ rozhledna, nocleh a restaurace
+      chaty v něm — vzor Královka); kandidát svatobor-chata se
+      samostatně nepovyšuje. Kdyby Michal chtěl profily dva (rozhodnutí
+      o Sněžce), rozdělení je připravené — názvy pak rozlišit.
+    rozhodl: Claude (6. 8. 2026, denní bezobslužná session — křížové ověření triáží)
+    checked: 2026-08-06
 
   - jadro: pancir
     objekty:
