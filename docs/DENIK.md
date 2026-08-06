@@ -29,6 +29,90 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-06 — denní session: Berggasthof Gibacht (21. šumavský profil) a nález, že katalog umí zapsat výšku hory místo domu
+
+**Hotovo**
+
+Backlog shora: **DATA-04, DATA-05, DATA-20, DATA-22, DATA-25, DATA-28,
+F1-IMPL, JIZ-01, FOTO-01, DATA-35 i JEST-01 jsou beze změny blokované
+na Michalovi** (telefonáty, kliky na workflow, výběr fotek v adminu,
+rozhodnutí o sémantice pole `obec`, redakční potvrzení razítkových
+párů) — u každé položky je to okomentované. Pracovní položkou byla
+tedy **SUM-01**.
+
+**Berggasthof Gibacht povýšen** (korpus 128) — poslední katalogový
+objekt Tier 1, který šel uzavřít bez lidského kroku. Povýšeno **bez
+kandidáta z DATA-01** (vzor Pancíře z 5. 8.): v OSM exportu objekt
+není, leží u samé severozápadní hrany okna oblasti a živý dotaz na
+Overpass ze sandboxu neodpoví (HTTP 000, stejně jako api.mapy.com
+a nominatim). Prameny: seznam turistických domů Bavorského turistického
+svazu, **vlastní web domu berghofgibacht.de (ze sandboxu se načetl)**
+a turistický popis okruhu přes Gibacht.
+
+**Hlavní nález, přenositelný na další profily: externí katalog u tohohle
+objektu nese výšku HORY, ne domu.** Katalog vede 934 m; popis okruhu
+u téhož kopce uvádí vrchol Gibacht 934 m, skalní Kreuzfelsen 932 m
+a parkoviště u hostince 850 m, kdežto svaz i vlastní web mají u domu
+845 m. Není to tedy spor o týž bod, ale záměna vrcholu za stavbu —
+zapsáno 845 m a v ověření vysvětleno. **Stojí za prověření u profilů,
+kde je katalog jediným pramenem výšky:** Dreisessel (1312 m), Eck
+(843 m); u Landshuter Hausu výška zapsaná není, tam problém nehrozí.
+
+**Co se vědomě NEzapsalo:** nocleh (katalog „ano" bez kapacity ×
+svaz i vlastní web o přespání mlčí — táž konstelace jako u Berghausu
+Sonnenfels a Eisensteiner Hütte, kde se katalogové „ano" ukázalo jako
+mylné; próza posílá na telefon); rok postavení (žádný pramen; převzetí
+provozu v srpnu 2022 je začátek provozu, ne vznik domu, a jako milník
+se nezapisuje, aby se z toho v žebříčcích nestalo „nejstarší rok");
+**GPS** (bez pramene se nedomýšlí — profil se nezobrazí na mapě
+a nedostane přístupovou trasu z DATA-06). Otvírací doba z vlastního
+webu (pondělí zavírací den, 1.–15. 6. zavřeno) přebila katalogové
+„celoročně"; telefon je rozporný (pevná linka dle svazu × mobil dle
+vlastního webu) — zapsán mobil, rozpor poznamenán.
+
+**Kontroly:** `npm run kontrola` zelené (0 vad, fronta 0), `tsc` čistý,
+vitest 764 prošlo / stejných 8 padá na chybějící DB jako v předchozích
+bězích. Ban-scan 284 → 285: jediný nový zásah je standardní věta
+„Souřadnice domu zatím nemáme doloženy…" (týž vzor jako u Chaty
+Rozhled a dalších desítek profilů) — posouzeno, ponecháno. Jeden vlastní
+nález opraven ještě před commitem: v próze se objevily interní pojmy
+(„mapový export", „nedomýšlíme") — přepsáno na zavedenou veřejnou
+formulaci.
+
+**Příště**
+
+① **Rovina a Churáňov** — poslední dva šumavské objekty Tier 1;
+oba čekají na živý pramen (hotelrovina.cz je dle Michala mrtvá doména,
+churanov.cz přesměrovává na zadov.cz/lanovka/) nebo na telefonát;
+② **čtyři katalogové objekty bez kandidáta**, všechny CZ (Zlatá Studna,
+Špičák, Antýgl, Bučina) — jejich weby jsou ze sandboxu za gatem, zkusit
+jiné doložené prameny; ③ **plošná triáž zbylých ~317 šumavských
+kandidátů** (krok 4 ze SUMAVA-TRIAZ — hlavně vyřazování); ④ doplnit
+GPS Gibachtu, až půjde dotaz z Actions, a zařadit ho do dalšího běhu
+tras.
+
+**Otázky pro Michala**
+
+① **Gibacht — tři domény.** Vlastní web se načetl jako
+`berghofgibacht.de` (bez spojovníku), svaz uvádí `berghof-gibacht.de`
+(se spojovníkem, shodně s e-mailovou doménou) a vyhledávání nabízí
+ještě `glasschmiede-gibacht.de` s titulkem „Berghof Gibacht — Wirtshaus
+und Kunstgalerie im Oberpfälzer Wald" (obsah se nenačetl). Popis okruhu
+mluví o jednom domě, kde je hostinec i sklářská galerie, novější vlastní
+web o galerii nic neříká. Jde o týž provoz, o dvě etapy téhož domu,
+nebo o dva sousední domy? Jeden telefonát to zavře (+49 176 46662302
+dle vlastního webu, nebo pevná 09972/903355 dle svazu — a rovnou se
+potvrdí, které z těch čísel platí).
+② **Gibacht — dá se tam přespat a kolik má lůžek?** Katalog vede
+ubytování „ano" bez kapacity, ostatní dva prameny mlčí — nezapsali jsme
+nic.
+③ **Klik v Actions, když bude čas:** DATA-06 pro `jizerske-hory` (drží
+JIZ-01 i doběh DATA-35), otisky-workflow DATA-05, DATA-28 3D terén.
+④ Starší otevřené beze změny: rokVzniku čtveřice Proseč / Prášily /
+Turnerova / Mooshütte; razítkové páry (32 krkonošských + 11 z 4. 8.);
+Odrodzenie; Benecko; certifikát; domény Dreisessel a Prášily; výběr
+fotek v adminu (31 profilů čeká).
+
 ## 2026-08-05 (blok 9) — Horská chata Pancíř (20. profil) + dvě další opravy geokódu
 
 **Michal dodal obsah chatapancir.cz + odkazy** → profil Horské chaty

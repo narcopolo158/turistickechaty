@@ -40,7 +40,7 @@ Jmenná shoda exportu s katalogem (u šesti se OSM jméno liší — v závorce)
 | Berggasthof Eck | `berggasthof-eck` |
 | Berggasthof Mooshütte | `berghotel-mooshutte` *(OSM: „Berghotel Mooshütte" — rozdíl gasthof/hotel PROVĚŘIT, může to být přejmenování i jiný dům)* |
 
-## Katalogové objekty BEZ kandidáta (6 z 27)
+## Katalogové objekty BEZ kandidáta (6 z 27 — k 6. 8. 2026 zbývají 4)
 
 > **Dohledávka 5. 8. 2026 (blok 8):** České weby jsou ze sandboxu plošně
 > nedosažitelné — pancir.cz (permission gate), antygl.cz (robots 500),
@@ -53,20 +53,35 @@ Jmenná shoda exportu s katalogem (u šesti se OSM jméno liší — v závorce)
 > kandidáta MÁ (povýšen v bloku 7) — bez kandidáta zbývá z DE jen
 > Gibacht (HUT-0292, bez webu v katalogu).
 
+> **Dohledávka 6. 8. 2026 (denní session): GIBACHT VYŘEŠEN a povýšen**
+> (`data/chaty/sumava/berggasthof-gibacht.yaml`) — bez kandidáta, vzor
+> Pancíře. Prameny: seznam turistických domů Bavorského turistického
+> svazu (wanderverband-bayern.de) + vlastní web domu (berghofgibacht.de,
+> ze sandboxu se načetl) + turistický popis okruhu. **Katalogových
+> 934 m je výška HORY, ne domu** — popis okruhu vede Gibacht 934 m,
+> Kreuzfelsen 932 m a parkoviště u hostince 850 m, svaz i vlastní web
+> mají u domu 845 m; zapsáno 845 m. **GPS chybí** (v exportu není, živý
+> dotaz na Overpass ze sandboxu neprojde — HTTP 000) → profil se
+> nezobrazí na mapě a nedostane přístupové trasy. **Otevřená otázka:
+> tři domény** (berghofgibacht.de × berghof-gibacht.de dle svazu ×
+> glasschmiede-gibacht.de „Wirtshaus und Kunstgalerie") — vzor
+> Dreisesselu, na jeden telefonát. Bez kandidáta zbývají **čtyři, všechny
+> CZ**: Zlatá Studna, Špičák, Antýgl, Bučina.
+
 
 Export je nenašel ani dohledávkou podle jmen — dohledat ručně nebo DATA-31:
 
-- **Horská chata Pancíř** (CZ) — export má `rozhledna-pancir`; na Pancíři
-  je chata s rozhlednou v jednom areálu, PROVĚŘIT, zda OSM objekt „Rozhledna
-  Pancíř" je táž budova (netvrdit, dokud se neověří).
+- ~~**Horská chata Pancíř** (CZ)~~ — VYŘEŠENO 5. 8. 2026 (povýšena
+  s obsahem vlastního webu od Michala; chata a rozhledna jeden objekt).
 - **Chata Zlatá Studna** (CZ, Horská Kvilda) — v exportu není vůbec.
 - **Chata na Špičáku** (CZ) — export má jen `rozhledna-spicak`; vztah
   PROVĚŘIT (jiná stavba na témže vrchu?).
 - **Antýgl** (CZ, Srní) — bývalý královácký dvorec, dnes kemp s bufetem;
   v exportu není (OSM ho zřejmě tahuje jako kemp — mimo naše tagy).
 - **Horská chata Bučina** (CZ, Kvilda) — v exportu není.
-- **Berggasthof Gibacht** (DE, Waldmünchen) — v exportu není; leží u samé
-  severozápadní hrany okna (49,36/12,66), PROVĚŘIT i hranu.
+- ~~**Berggasthof Gibacht** (DE, Waldmünchen)~~ — VYŘEŠENO 6. 8. 2026
+  (povýšeno bez kandidáta; GPS dál chybí, doplnit z Actions nebo ručně
+  z OSM — pak zařadit do dalšího běhu tras DATA-06).
 
 ## Lanovky (hotovo, data/lanovky/sumava.json)
 

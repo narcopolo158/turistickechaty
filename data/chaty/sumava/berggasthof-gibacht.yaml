@@ -1,0 +1,205 @@
+# Berggasthof Gibacht — povýšen triáží Tier 1 (6. 8. 2026) BEZ kandidáta
+# z DATA-01: objekt v OSM exportu není a dotaz na Overpass ze sandboxu
+# neprojde (HTTP 000), GPS proto zůstává nevyplněná. Profil stojí na
+# katalogu, na seznamu turistických domů Bavorského turistického svazu
+# a na vlastním webu domu. Vše verified: false.
+#
+# HLAVNÍ NÁLEZ: katalogových 934 m je výška HORY Gibacht, ne domu —
+# doloženo třetím pramenem, který u téhož kopce vede vrchol 934 m
+# a parkoviště u hostince 850 m. Zapsáno 845 m (dům), rozpor vysvětlen.
+
+nazev: Berggasthof Gibacht
+slug: berggasthof-gibacht
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Berghof Gibacht
+    poznamka: >-
+      podoba jména z vlastního webu i z alternativního názvu v seznamu
+      turistických domů Bavorského turistického svazu; katalogové
+      „Berggasthof Gibacht" zůstává primární (vzor Berggasthof ×
+      Berghotel u Mooshütte)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# GPS ZÁMĚRNĚ NEVYPLNĚNA: v OSM exportu DATA-01 objekt není a živý dotaz
+# na Overpass ze sandboxu neprojde — nedomýšlet od stolu, doplnit
+# s pramenem (kandidát na DATA-31 nebo na běh z Actions).
+vyska: 845
+obec: Waldmünchen
+overeniLokace:
+  source: >-
+    Výška 845 m: seznam turistických domů Bavorského turistického svazu
+    (wanderverband-bayern.de, načteno 6. 8. 2026) vede u domu 845 m;
+    vlastní web (berghofgibacht.de, načteno 6. 8. 2026) uvádí 845 m
+    u parkoviště přímo u hostince. Externí katalog (HUT-0292, ověřeno
+    k 2026-07-21) vede 934 m — to je ale výška HORY Gibacht: turistický
+    popis okruhu (sehenswerter-bayerischer-wald.de, načteno 6. 8. 2026)
+    uvádí Gibacht 934 m, skalní vrchol Kreuzfelsen 932 m a parkoviště
+    u hostince 850 m. Rozdíl je tedy vrchol proti domu, ne spor o týž
+    bod; do pole jde údaj o domu. Adresa „Gibacht 31, 93449 Waldmünchen"
+    dle svazu, obec Waldmünchen i dle katalogu. GPS nedoložena. V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# NOCLEH SE VĚDOMĚ NEZAPISUJE: katalog (HUT-0292) vede „ubytování ano"
+# bez kapacity, kdežto seznam svazu ani vlastní web o přespání neříkají
+# nic. Táž konstelace jako u Berghausu Sonnenfels a Eisensteiner Hütte,
+# kde se katalogové „ano" ukázalo jako mylné — bez výslovné věty
+# nerozhodujeme a próza posílá na telefon.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web domu (berghofgibacht.de, načteno 6. 8. 2026): restaurace
+    s prostorem pro rodinné a firemní oslavy. Externí katalog (HUT-0292):
+    stravování ano. Konkrétní podobu kuchyně (jídelní lístek, teplá jídla
+    do kolika hodin) žádný načtený pramen nevede.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Pondělí zavřeno a dvoutýdenní přestávka na začátku června — u domu,
+# ke kterému se chodí pěšky, je to údaj k přečtení předem.
+otviraciDoba: >-
+  Úterý až pátek 10–18, sobota 10–20, neděle 10–18; v pondělí zavírací
+  den. Od 1. do 15. června zavřeno. (Rozvrh vlastní web vyhlašuje
+  s platností od 16. 6. 2026.)
+kontakty:
+  telefon: '+49 176 46662302'
+  email: info@berghof-gibacht.de
+  web: https://berghofgibacht.de/
+overeniProvoz:
+  source: >-
+    Otvírací doba a mobil +49 176 46662302: vlastní web domu
+    (berghofgibacht.de, načteno 6. 8. 2026; rozvrh vyhlášen s platností
+    od 16. 6. 2026, přestávka 1.–15. 6.). E-mail info@berghof-gibacht.de
+    shodně vlastní web i seznam turistických domů Bavorského turistického
+    svazu (wanderverband-bayern.de, načteno 6. 8. 2026). ROZPOR TELEFONU:
+    svaz vede pevnou linku 09972/903355 (a fax 09972/903356), vlastní web
+    jen mobil — zapsán mobil z vlastního webu jako novější a bližší
+    pramen, pevná linka poznamenána. Katalog (HUT-0292) vede „celoročně",
+    což se se zavíracím dnem i s červnovou přestávkou rozchází — bereme
+    konkrétnější pramen.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku SE NEVYPLŇUJE: rok postavení nevede žádný načtený pramen.
+# Vlastní web uvádí jen to, že současní provozovatelé dům převzali
+# v srpnu 2022 — to je začátek provozu, ne vznik domu; jako milník se
+# to nezapisuje, aby se z toho v žebříčcích nestalo „nejstarší rok".
+overeniHistorie:
+  source: >-
+    Rok postavení ani starší dějiny domu žádný načtený pramen neuvádí.
+    Vlastní web (berghofgibacht.de, načteno 6. 8. 2026) mluví o převzetí
+    provozu v srpnu 2022 a o „tradičním domě", letopočet ale neuvádí.
+    Seznam turistických domů Bavorského turistického svazu
+    (wanderverband-bayern.de, načteno 6. 8. 2026) vede jako spravující
+    spolek Bayerischer Wald-Verein e.V.; co přesně ta správa dnes
+    znamená a jak souvisí s provozovateli od roku 2022, z pramenů
+    neplyne — netvrdíme.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec pod vrcholem Gibachtu nad Waldmünchenem, na
+  severozápadním okraji přeshraničního celku Šumava – Bavorský les.
+  Restaurace na okružní trase kolem skal Drei-Wappen a Kreuzfelsen;
+  v pondělí zavřeno a začátkem června dvoutýdenní přestávka.
+text:
+  - >-
+    Berggasthof Gibacht stojí zhruba v 845 metrech na svahu Gibachtu,
+    kopce, který se zvedá západně od Waldmünchenu při české hranici.
+    Bavorský turistický svaz vede dům mezi turistickými domy a jako
+    přístupy jmenuje cesty od Reisecku, od Kreuzfelsenu a okruh ke
+    Gläsernes Kreuz; okolní skalní útvary Drei-Wappen-Felsen, Kreuzfelsen
+    a Pfennigfelsen jsou to hlavní, kvůli čemu se sem chodí.
+  - >-
+    Dům je hostinec s restaurací, kde se dá pořádat i rodinná nebo
+    firemní oslava. Otevřeno je od úterý do neděle, v pondělí má dům
+    zavírací den a od prvního do patnáctého června zavírá úplně — kdo
+    sem míří mimo tyhle časy, najde zavřeno a nejbližší občerstvení má
+    dole ve městě. Jestli se tu dá i přespat, naše podklady spolehlivě
+    neříkají: jeden z nich ubytování vede, ostatní o něm mlčí a počet
+    lůžek nemá nikdo. Kdo by tu chtěl zůstat přes noc, ať zavolá předem.
+  - >-
+    Kolem výšky domu bylo potřeba srovnat dva různé údaje: 934 metrů,
+    které se u objektu občas uvádějí, patří vrcholu Gibachtu, kdežto
+    hostinec i parkoviště u něj leží zhruba o devadesát metrů níž.
+    Na téhle stránce proto vedeme výšku domu, ne kopce.
+  - >-
+    Souřadnice domu zatím nemáme doloženy z žádného pramene, proto ho
+    na mapě neukazujeme — raději prázdné místo než odhad. Historie domu
+    doložená není vůbec: rok postavení neuvádí žádný z našich pramenů.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Seznam turistických domů Bavorského turistického svazu — 845 m,
+      adresa Gibacht 31, pevná linka a fax, e-mail, spravující spolek
+      Bayerischer Wald-Verein e.V., přístupy od Reisecku a Kreuzfelsenu
+      (načteno 6. 8. 2026)
+    url: https://wanderverband-bayern.de/wanderheim/berggasthof-gibacht/
+  - popis: >-
+      Vlastní web domu — otvírací doba s platností od 16. 6. 2026,
+      červnová přestávka, mobil, e-mail, restaurace a oslavy, převzetí
+      provozu v srpnu 2022, 845 m u parkoviště (načteno 6. 8. 2026)
+    url: https://berghofgibacht.de/
+  - popis: >-
+      Turistický popis okruhu přes Gibacht — vrchol Gibacht 934 m,
+      Kreuzfelsen 932 m, parkoviště u hostince 850 m, skály
+      Drei-Wappen-Felsen a Pfennigfelsen, Gläsernes Kreuz na Reisecku
+      (načteno 6. 8. 2026)
+    url: https://www.sehenswerter-bayerischer-wald.de/wanderung-gibacht-berghof-glaschmiede.html
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0292
+      (Waldmünchen, Bayerischer Wald, ubytování i stravování, celoročně,
+      934 m; jistota B)
+    url: https://nocleh.kct.cz/chaty
+interniPoznamky: >-
+  Povýšeno BEZ kandidáta z DATA-01 (vzor Horské chaty Pancíř z 5. 8.):
+  objekt v OSM exportu není — leží u samé severozápadní hrany okna
+  oblasti a živý dotaz na Overpass ze sandboxu neprojde (HTTP 000,
+  stejně jako api.mapy.com a nominatim). Klíč zařazení: obsluhovaný
+  hostinec s restaurací pro příchozí na okružní trase, vedený navíc
+  v seznamu turistických domů Bavorského turistického svazu. Tím je
+  ze šestice katalogových objektů bez kandidáta vyřešen druhý (po
+  Pancíři); zbývají čtyři: Zlatá Studna, Bučina, Antýgl, Špičák.
+
+  CHYBÍ GPS — profil se nezobrazí na mapě a nedostane přístupové trasy
+  z DATA-06. Doplnit, až půjde dotaz na Overpass z Actions (nebo ručně
+  z OSM), pak profil zařadit do dalšího běhu tras.
+
+  ROZPOR VÝŠEK VYSVĚTLEN, ne jen přiznán: katalogových 934 m je vrchol
+  hory (doloženo popisem okruhu, který u téhož kopce vede vrchol 934 m
+  a parkoviště u hostince 850 m), svaz i vlastní web mají u domu 845 m.
+  Zapsáno 845 m. Stojí za pozornost jako VZOR: katalog může u objektu
+  nést výšku kopce místo výšky domu — prověřit u dalších profilů, kde
+  je katalog jediným pramenem výšky (Dreisessel, Eck, Landshuter Haus).
+
+  OTÁZKA PRO MICHALA — TŘI DOMÉNY: vlastní web se načetl jako
+  berghofgibacht.de (bez spojovníku), svaz uvádí www.berghof-gibacht.de
+  (se spojovníkem, shodně s e-mailovou doménou) a vyhledávání nabízí
+  ještě glasschmiede-gibacht.de s titulkem „Berghof Gibacht — Wirtshaus
+  und Kunstgalerie im Oberpfälzer Wald" (obsah se nenačetl, stránka
+  vrátila nečitelný text). Popis okruhu mluví o jednom domě, kde je
+  hostinec i sklářská galerie, ale novější vlastní web o galerii nic
+  neříká — jestli jde o týž provoz, o dvě etapy téhož domu, nebo o dva
+  sousední domy, NEVÍME a netvrdíme. Jeden telefonát to zavře (vzor
+  Dreisesselu).
+
+  DALŠÍ K OVĚŘENÍ: nocleh a kapacita (viz blok Nocleh); telefon —
+  pevná 09972/903355 dle svazu × mobil dle vlastního webu; rok
+  postavení domu; co dnes znamená správa Bayerischer Wald-Vereinu.
+  Geografická poznámka bez dopadu na zařazení: svaz umisťuje dům
+  „mezi Bavorský a Hornofalcký les" v Naturparku Oberer Bayerischer
+  Wald (týž naturpark jako Berggasthof Eck), katalog ho vede pod
+  pohořím Bayerischer Wald a přeshraničním celkem Šumava / Bayerischer
+  Wald / Böhmerwald. Fotku dodá příští běh DATA-02.
