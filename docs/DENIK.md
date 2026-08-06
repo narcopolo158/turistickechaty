@@ -89,7 +89,7 @@ i pro identifikátory.
 ban-scan 285 → 288 (tři standardní závěrečné odstavce; superlativ
 u Poledníku přepsán do zajímavosti se zdrojem ještě před commitem).
 
-**Příště:** ① doběh DATA-35 pro Jizerky zpracovat — POZOR: do konce bloku (~2 h od Michalova kliku) na main nedorazil ŽÁDNÝ commit z DATA-35. Buď běh selhal, nebo jel nad checkoutem BEZ ranního commitu s GPS středisek (5b8f65b), nebo s výchozí oblastí `krkonose` (tam už je vše dopočítané → žádná změna → žádný commit, tichý no-op). Logy Actions ze sandboxu nepřečtu (token na ně nemá scope) — Michal mrkne na výsledek běhu a případně pustí znovu s oblastí `jizerske-hory`; ② tagovaná
+**Příště:** ① doběh DATA-35 pro Jizerky — PŘÍČINA PÁDU NALEZENA A OPRAVENA (637cbb4): Michal poslal screenshot z Actions — běh spadl na hlídacím testu, protože ranní GPS commit psal větu o zatím nedoložené výšce BEZ dovětku o ČÚZK a úklidová pojistka ze 4. 8. mazala jen přesnou frázi s dovětkem. Pojistky zafungovaly (rozpor se nedostal na main), úklid byl jen moc úzký — dovětek je v regexu nově volitelný, přibyl regresní test s doslovnou jizerskou větou a simulace průchodu nad reálným YAML. Z logu je i první dopočtená hodnota: Bílý Potok 434 m. **Michal: pustit DATA-35 pro `jizerske-hory` ještě jednou** — teď projde; ② tagovaná
 fronta pokračuje — nejblíž hansl-huette.de a loderhart.de (dnes za
 gatem), pak rozhledny s doloženým občerstvením; POZOR na otázky rozsahu
 (Kleť, Čerchov, Koráb, Libín — viz SUMAVA-TRIAZ); ③ po potvrzení
