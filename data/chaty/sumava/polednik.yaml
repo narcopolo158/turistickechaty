@@ -1,0 +1,195 @@
+# Rozhledna Poledník — povýšen z kandidáta DATA-01 triáží tagované fronty
+# (6. 8. 2026, vzor DATA-03: OSM × Kudy z nudy × Šumava Net × regionální
+# průvodce). Klíč zařazení dle rozhodnutí Michala z 28. 7. 2026: rozhledna
+# s občerstvením (kiosek u paty věže doložen dvěma prameny).
+# Vše verified: false.
+
+nazev: Rozhledna Poledník
+slug: polednik
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Poledník
+    poznamka: jméno vrcholu i běžná krátká podoba (OSM vede věž jen jako „Poledník")
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.0641091
+lng: 13.3951167
+vyska: 1315
+obec: Prášily
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/244504465 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška vrcholu 1315 m shodně tři prameny: Kudy z nudy (načteno
+    6. 8. 2026, „15. nejvyšší vrchol české části Šumavy"), Šumava Net
+    (sumavanet.cz, načteno 6. 8. 2026, „Se svými 1315 m nad mořem je
+    přirozenou dominantou") i regionální průvodce penzionu Helena
+    (pensionhelenahones.cz, načteno 6. 8. 2026). Obec Prášily: adresa
+    „342 01 Prášily" dle Kudy z nudy; Šumava Net klade vrchol „7 km jižně
+    od Prášil". V terénu neověřeno.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Žádný pramen nocleh nezmiňuje — pole se nevyplňuje (nedomýšlet ani „ne").
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: kiosek
+overeniObcerstveni:
+  source: >-
+    Regionální průvodce penzionu Helena (pensionhelenahones.cz, načteno
+    6. 8. 2026): u paty věže funguje „Občerstvení Poledník — malý bufet,
+    který v sezóně bývá v provozu" (klobásy, hermelín, nápoje). Nezávisle
+    OSM: Kiosek Poledník (fast_food) 6 m od věže,
+    https://www.openstreetmap.org/node/4434144973. Otvírací doba kiosku
+    doložená není — „v sezóně bývá v provozu" je vše, co prameny vedou.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# Sezónní věž na hřebeni NP — mimo sezónu je zavřeno kvůli extrémnímu
+# počasí; kdo jde v listopadu, vyhlídku nedostane.
+otviraciDoba: >-
+  Sezónně od května do října: v červenci a srpnu denně, v květnu, červnu,
+  září a říjnu jen o víkendech. V zimě zavřeno. Ve věži se platí vstupné.
+overeniProvoz:
+  source: >-
+    Kudy z nudy (načteno 6. 8. 2026): přístupná „od května do října"
+    kvůli „extrémním klimatickým podmínkám" — květen–červen
+    a září–říjen jen víkendy, červenec–srpen denně; uvnitř nejvýš 50
+    osob, na vyhlídce 10. Regionální průvodce (pensionhelenahones.cz,
+    načteno 6. 8. 2026) sezónu květen–říjen potvrzuje. Šumava Net vede
+    v tabulce provoz od května do září — jestli je říjnový provoz
+    novinka, nebo se prameny jen liší, nevíme; zapsán souhlas dvou
+    pramenů, rozpor poznamenán. Výše vstupného se nezapisuje (mění se
+    po sezónách; oba prameny ji k datu načtení vedou). Provozovatel
+    dle Kudy z nudy: Informační středisko NP Šumava Poledník.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku SE NEVYPLŇUJE: věž vyrostla v 60. letech 20. století jako
+# armádní objekt (přesný rok žádný pramen nevede) a rozhledna z ní je od
+# roku 1998 — zapsat 1998 jako rok vzniku by zamlčelo starší stavbu (týž
+# vzorec kontinuity jako u čtveřice Proseč/Prášily/Turnerova/Mooshütte).
+milniky:
+  - rok: 1998
+    udalost: >-
+      Dokončena přestavba opuštěné vojenské věže na vyhlídkovou věž
+      s rozhlednou
+  - rok: 2021
+    udalost: >-
+      Po rekonstrukci přibylo ve věži malé infocentrum Národního parku
+      Šumava
+overeniHistorie:
+  source: >-
+    Kudy z nudy (načteno 6. 8. 2026): areál vznikl v 60. letech
+    20. století jako armádní základna, sloužil „ke sledování leteckého
+    a pozemního provozu v sousedním Německu" a jako „odposlechová stanice
+    a rušička signálu"; do roku 1989 ležel v přísně střežené pohraniční
+    zóně, po roce 1990 armáda odešla, rozhledna otevřena 1998,
+    rekonstrukce s infocentrem NP 2021. Šumava Net (načteno 6. 8. 2026)
+    vede týž rok 1998, vojenský účel ale popisuje jako „základnu
+    protivzdušné obrany ČSSR" — popisy účelu se mezi prameny liší,
+    přesný rok stavby nevede žádný.
+  verified: false
+  checked: '2026-08-06'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Vrchol Poledníku je s 1315 metry patnáctý nejvyšší v české části
+      Šumavy.
+    kategorie: vyska
+    zdroj: Kudy z nudy (načteno 6. 8. 2026) — tvrzení pramene, neověřeno
+  - text: >-
+      Vojenský objekt, z něhož rozhledna vznikla, měl podle regionálního
+      průvodce krycí označení TOPAS.
+    kategorie: jine
+    zdroj: >-
+      pensionhelenahones.cz (načteno 6. 8. 2026) — jediný pramen,
+      tvrzení neověřeno
+  - text: >-
+      Ve věži jsou tři vyhlídková patra s expozicí o historii vojenské
+      stanice a železné opony a o vývoji šumavského lesa; na vyhlídku
+      vede 227 schodů.
+    kategorie: jine
+    zdroj: Kudy z nudy (načteno 6. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Sedmatřicetimetrová věž na vrcholu Poledníku (1315 m) — za studené
+  války přísně střežený armádní objekt namířený k hranici, od roku 1998
+  rozhledna s expozicí o železné oponě. V sezóně u paty věže funguje
+  kiosek; v zimě je zavřeno.
+text:
+  - >-
+    Poledník je jedno z mála míst, kde se dá vystoupat nad šumavské
+    hřebeny: věž měří 37 metrů a stojí na vrcholu vysokém 1315 metrů.
+    Výhled si ale žádá sezónu — věž je kvůli extrémnímu počasí otevřená
+    jen od května do října, v létě denně, na krajích sezóny o víkendech.
+    Ve věži se platí vstupné.
+  - >-
+    Historie je tu hmatatelnější než u většiny rozhleden. Věž vyrostla
+    v šedesátých letech dvacátého století jako armádní objekt v přísně
+    střeženém pohraničním pásmu; popisy jejího přesného účelu se mezi
+    prameny liší — mluví se o sledování provozu za hranicí,
+    o odposlechu i o protivzdušné obraně. Po roce 1990 armáda odešla
+    a z opuštěné věže se v roce 1998 stala rozhledna; od rekonstrukce
+    v roce 2021 je v ní i malé infocentrum národního parku a expozice
+    o železné oponě a o šumavském lese.
+  - >-
+    U paty věže stojí kiosek s občerstvením — klobásy, hermelín, nápoje;
+    v provozu bývá v sezóně a jeho otvírací hodiny doložené nemáme.
+    Nocleh tu žádný pramen nezmiňuje. Nejčastěji se sem chodí od Prášil
+    nebo od Modravy; přesné trasy s délkami najdete u přístupů níže.
+  - >-
+    Údaje na téhle stránce pocházejí z turistických portálů
+    a regionálního průvodce; polohu nese OpenStreetMap. Přesný rok
+    stavby vojenské věže žádný z našich pramenů nevede a rok 1998 proto
+    uvádíme jako otevření rozhledny, ne jako vznik stavby. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Kudy z nudy — výška vrcholu i věže, 227 schodů, sezóna a limity
+      návštěvníků, historie armádního areálu, otevření 1998,
+      rekonstrukce 2021 s infocentrem NP, provozovatel (načteno
+      6. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/sumava-shora-z-rozhledny-polednik
+  - popis: >-
+      Šumava Net — 1315 m, věž 37 m, přestavba dokončena 1998, sezónní
+      tabulka provozu, poloha 7 km jižně od Prášil, trasy z Prášil
+      a Modravy (načteno 6. 8. 2026)
+    url: https://www.sumavanet.cz/rozhledna-polednik.s-1362-REPRRE
+  - popis: >-
+      Regionální průvodce penzionu Helena — kiosek u paty věže, sezóna
+      květen–říjen, krycí označení TOPAS (načteno 6. 8. 2026)
+    url: https://www.pensionhelenahones.cz/vylety-na-sumave/rozhledna-polednik/
+  - popis: OpenStreetMap (GPS věže, Kiosek Poledník 6 m od věže; ODbL)
+    url: https://www.openstreetmap.org/way/244504465
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/polednik.yaml triáží tagované fronty
+  (6. 8. 2026). Klíč zařazení: rozhledna s doloženým občerstvením
+  (rozhodnutí Michala 28. 7. 2026) — kiosek doložen dvěma nezávislými
+  prameny (regionální průvodce + OSM). První šumavská rozhledna korpusu.
+
+  ROZPOR SEZÓNY: Kudy z nudy a regionální průvodce vedou květen–říjen,
+  Šumava Net tabulku květen–září. Zapsán souhlas dvou pramenů; ověřit
+  u Správy NP (kandidát na DATA-04 — infocentrum NP Šumava Poledník).
+
+  ROZPOR ÚČELU VOJENSKÉHO OBJEKTU: sledování/odposlech/rušička (Kudy
+  z nudy) × základna protivzdušné obrany ČSSR (Šumava Net). Próza vede
+  obě verze jako rozcházející se popisy, nerozhoduje.
+
+  NEDOLOŽENO (nezapsáno): přesný rok stavby věže (60. léta bez roku —
+  rokVzniku prázdný, vzorec kontinuity jako Proseč); vstupné číslem
+  (mění se po sezónách; k 6. 8. 2026 vedla Kudy z nudy 60/30 Kč, věž
+  s expozicemi 120/60 Kč — jen tady v poznámce); otvírací hodiny kiosku;
+  kontakt (kandidátova URL npsumava.cz je homepage Správy NP, ne stránka
+  věže — do kontaktů se nepsala). Vstupní čipový systém (turnikety,
+  vratná záloha) vede jen Kudy z nudy. Fotku dodá příští běh DATA-02.

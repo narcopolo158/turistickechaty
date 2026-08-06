@@ -114,7 +114,7 @@ středisek/lanovek na web, rozhodnout, jestli ji vypsat, nebo odfiltrovat
 
 Sestaveno 6. 8. 2026: kandidáti s `typ` rozhledna/obsluhovana/utulna,
 kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po prvním průchodu
-zbývá 28.** Rozhodnuto 6. 8.:
+zbývá 27.** Rozhodnuto 6. 8.:
 
 - **`hochwald-hutte` POVÝŠEN** (korpus 129) — chata sekce DAV Deggendorf
   u rozcestí Hölzerne Hand, 910 m; víkendové občerstvení pro veřejnost
@@ -128,6 +128,11 @@ zbývá 28.** Rozhodnuto 6. 8.:
 - **`waldvereinshutte` VYŘAZEN** — týž vzor: „Waldhäusl" spolku Waldverein
   Waldmünchen v Herzogau je Selbstversorger s rezervací (sekce BUCHUNGEN),
   ne volně přístupná útulna; OSM tag wilderness_hut je tu zavádějící.
+- **`polednik` POVÝŠEN** (korpus 130) — první šumavská rozhledna korpusu:
+  věž 37 m na vrcholu 1315 m, bývalý armádní objekt, rozhledna od 1998,
+  kiosek u paty věže doložen dvěma prameny (regionální průvodce + OSM).
+  Sezóna V–X s přiznaným rozporem (jeden pramen vede jen V–IX). Routing:
+  z Prášil (Velký Bor) 7,87 km — sedí s 8 km, které vede Šumava Net.
 - **`rozhledna-pancir` je vyřešená jinak** — rozhledna je dle vlastního
   webu součástí publikované Horské chaty Pancíř (jeden objekt, precedens
   Žalý); kandidát se samostatně nepovyšuje a do fronty se nepočítá.
@@ -139,6 +144,6 @@ s vlastním webem, tedy nadějné. **Zbytek fronty (28):** 7 obsluhovaných
 chata-pod-kleti, chata-zivec, hansl-hutte, kreuzhaus, skihutte-kohlau,
 zakladna-bileho-orla, zelena-chyse — pozn.: Kleť je Blanský les, Živec
 u Písku je mimo Šumavu → u obou nejdřív rozhodnout rozsah, vzor Kleti
-u lanovek), 16 rozhleden (u každé nutno doložit občerstvení — klíč
+u lanovek), 15 rozhleden (u každé nutno doložit občerstvení — klíč
 DATA-23; rozhledna-spicak souvisí s katalogovou „Chatou na Špičáku",
 prověřit spolu) a 2 útulny (forsthaus-odwies, hollbachschwellhutte).
