@@ -2,9 +2,31 @@
   "zdroj": "razitkuj.cz",
   "svolil": "Robert Šindler (KiBob), razitkuj.cz — 21. 7. 2026",
   "stazeno": "2026-08-06",
-  "pocetChat": 46,
-  "pocetOtisku": 111,
+  "pocetChat": 61,
+  "pocetOtisku": 151,
   "chaty": [
+    {
+      "slug": "arberschutzhaus",
+      "nazev": "Arberschutzhaus",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-arberschutzhaus-grosser-arber/1",
+      "otisky": [
+        {
+          "id": 5909,
+          "soubor": "arberschutzhaus/5909.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5909_grosser-arber.gif"
+        },
+        {
+          "id": 5910,
+          "soubor": "arberschutzhaus/5910.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5910_grosser-arber.gif"
+        },
+        {
+          "id": 5911,
+          "soubor": "arberschutzhaus/5911.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5911_grosser-arber.gif"
+        }
+      ]
+    },
     {
       "slug": "barborka",
       "nazev": "Barborka",
@@ -144,6 +166,72 @@
       ]
     },
     {
+      "slug": "horska-chata-jestedka",
+      "nazev": "Horská chata Ještědka",
+      "zdrojUrl": "http://www.razitkuj.cz/3799_chata-jestedka",
+      "otisky": [
+        {
+          "id": 3799,
+          "soubor": "horska-chata-jestedka/3799.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3799_chata-jestedka.gif"
+        }
+      ]
+    },
+    {
+      "slug": "chata-pancir",
+      "nazev": "Horská chata Pancíř",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-pancir/1",
+      "otisky": [
+        {
+          "id": 6267,
+          "soubor": "chata-pancir/6267.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/6267_horska-chata-a-rozhledna-pancir.gif"
+        },
+        {
+          "id": 7908,
+          "soubor": "chata-pancir/7908.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/7908_pancir.gif"
+        },
+        {
+          "id": 8867,
+          "soubor": "chata-pancir/8867.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/8867_pancir.gif"
+        }
+      ]
+    },
+    {
+      "slug": "horska-chata-smedava",
+      "nazev": "Horská chata Smědava",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-smedava/1",
+      "otisky": [
+        {
+          "id": 1261,
+          "soubor": "horska-chata-smedava/1261.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1261_smedava.gif"
+        },
+        {
+          "id": 3812,
+          "soubor": "horska-chata-smedava/3812.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3812_smedava.gif"
+        },
+        {
+          "id": 4899,
+          "soubor": "horska-chata-smedava/4899.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/4899_smedava.gif"
+        },
+        {
+          "id": 4910,
+          "soubor": "horska-chata-smedava/4910.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/4910_smedava.gif"
+        },
+        {
+          "id": 9230,
+          "soubor": "horska-chata-smedava/9230.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9230_smedava.gif"
+        }
+      ]
+    },
+    {
       "slug": "hotel-spindlerova-bouda",
       "nazev": "Hotel Špindlerova bouda",
       "zdrojUrl": "http://www.razitkuj.cz/misto-spindlerova-bouda/1",
@@ -162,6 +250,23 @@
           "id": 10361,
           "soubor": "hotel-spindlerova-bouda/10361.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/10361_spindlerova-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "hubertka",
+      "nazev": "Hubertka",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-hubertka/1",
+      "otisky": [
+        {
+          "id": 3804,
+          "soubor": "hubertka/3804.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3804_hubertka.gif"
+        },
+        {
+          "id": 8531,
+          "soubor": "hubertka/8531.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/8531_hubertka.gif"
         }
       ]
     },
@@ -244,6 +349,62 @@
       ]
     },
     {
+      "slug": "chata-jizerka",
+      "nazev": "Chata Jizerka",
+      "zdrojUrl": "http://www.razitkuj.cz/5428_chata-jizerka",
+      "otisky": [
+        {
+          "id": 5428,
+          "soubor": "chata-jizerka/5428.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5428_chata-jizerka.gif"
+        }
+      ]
+    },
+    {
+      "slug": "chata-kct-prasily",
+      "nazev": "Chata KČT Prášily",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-turisticka-chata-kct-prasily/1",
+      "otisky": [
+        {
+          "id": 5497,
+          "soubor": "chata-kct-prasily/5497.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5497_turisticka-chata-kct-prasily.gif"
+        },
+        {
+          "id": 10619,
+          "soubor": "chata-kct-prasily/10619.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10619_turisticka-chata-kct-prasily.gif"
+        },
+        {
+          "id": 10620,
+          "soubor": "chata-kct-prasily/10620.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10620_prasilske-jezero.gif"
+        }
+      ]
+    },
+    {
+      "slug": "plane-pod-jestedem",
+      "nazev": "Chata Pláně pod Ještědem",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-plane-pod-jestedem/1",
+      "otisky": [
+        {
+          "id": 1257,
+          "soubor": "plane-pod-jestedem/1257.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1257_plane-pod-jestedem.gif"
+        },
+        {
+          "id": 1813,
+          "soubor": "plane-pod-jestedem/1813.jpg",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1813_plane-pod-jestedem.jpg"
+        },
+        {
+          "id": 5345,
+          "soubor": "plane-pod-jestedem/5345.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5345_plane-pod-jestedem.gif"
+        }
+      ]
+    },
+    {
       "slug": "chata-pod-studnicnou",
       "nazev": "Chata Pod Studničnou",
       "zdrojUrl": "http://www.razitkuj.cz/9792_chata-pod-studnicnou",
@@ -280,6 +441,18 @@
       ]
     },
     {
+      "slug": "chatka-gorzystow",
+      "nazev": "Chatka Górzystów",
+      "zdrojUrl": "http://www.razitkuj.cz/10232_chatka-gorzystow-hala-izerska",
+      "otisky": [
+        {
+          "id": 10232,
+          "soubor": "chatka-gorzystow/10232.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10232_chatka-gorzystow.gif"
+        }
+      ]
+    },
+    {
       "slug": "jelenka",
       "nazev": "Jelenka",
       "zdrojUrl": "http://www.razitkuj.cz/misto-horska-bouda-jelenka/1",
@@ -298,6 +471,28 @@
           "id": 4638,
           "soubor": "jelenka/4638.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/4638_horska-bouda-jelenka.gif"
+        }
+      ]
+    },
+    {
+      "slug": "klostermannova-chata",
+      "nazev": "Klostermannova chata",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-klostermannova-chata-modrava/1",
+      "otisky": [
+        {
+          "id": 8051,
+          "soubor": "klostermannova-chata/8051.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/8051_klostermannova-chata-modrava.gif"
+        },
+        {
+          "id": 8052,
+          "soubor": "klostermannova-chata/8052.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/8052_klostermannova-chata-modrava.gif"
+        },
+        {
+          "id": 10462,
+          "soubor": "klostermannova-chata/10462.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10462_klostermannova-chata-modrava.gif"
         }
       ]
     },
@@ -495,6 +690,35 @@
       ]
     },
     {
+      "slug": "schronisko-na-stogu-izerskim",
+      "nazev": "Na Stogu Izerskim",
+      "zdrojUrl": "http://www.razitkuj.cz/10234_schronisko-pttk-na-stogu-izerskim",
+      "otisky": [
+        {
+          "id": 10234,
+          "soubor": "schronisko-na-stogu-izerskim/10234.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10234_schronisko-pttk-na-stogu-izerskim-.gif"
+        }
+      ]
+    },
+    {
+      "slug": "pesakovna",
+      "nazev": "Pešákovna",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-pesakovna/1",
+      "otisky": [
+        {
+          "id": 9231,
+          "soubor": "pesakovna/9231.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9231_pesakovna.gif"
+        },
+        {
+          "id": 10490,
+          "soubor": "pesakovna/10490.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/10490_pesakovna.gif"
+        }
+      ]
+    },
+    {
       "slug": "petrova-bouda",
       "nazev": "Petrova bouda",
       "zdrojUrl": "http://www.razitkuj.cz/9743_petrova-bouda",
@@ -564,6 +788,23 @@
           "id": 10006,
           "soubor": "prazska-bouda/10006.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/10006_prazska-bouda.gif"
+        }
+      ]
+    },
+    {
+      "slug": "prezidentska-chata",
+      "nazev": "Prezidentská chata",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-prezidentska-chata/1",
+      "otisky": [
+        {
+          "id": 3757,
+          "soubor": "prezidentska-chata/3757.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/3757_prezidentska-chata.gif"
+        },
+        {
+          "id": 5490,
+          "soubor": "prezidentska-chata/5490.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5490_prezidentska-chata.gif"
         }
       ]
     },
@@ -780,6 +1021,33 @@
       ]
     },
     {
+      "slug": "samalova-chata",
+      "nazev": "Šámalova chata",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-samalova-chata/1",
+      "otisky": [
+        {
+          "id": 4773,
+          "soubor": "samalova-chata/4773.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/4773_samalova-chata.gif"
+        },
+        {
+          "id": 4774,
+          "soubor": "samalova-chata/4774.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/4774_samalova-chata.gif"
+        },
+        {
+          "id": 4919,
+          "soubor": "samalova-chata/4919.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/4919_samalova-chata.gif"
+        },
+        {
+          "id": 9229,
+          "soubor": "samalova-chata/9229.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/9229_samalova-chata.gif"
+        }
+      ]
+    },
+    {
       "slug": "tetrevi-boudy",
       "nazev": "Tetřeví Boudy",
       "zdrojUrl": "http://www.razitkuj.cz/misto-tetrev/1",
@@ -803,6 +1071,43 @@
           "id": 9403,
           "soubor": "tetrevi-boudy/9403.gif",
           "obrazekUrl": "https://www.razitkuj.cz/razitka/9403_tetrev.gif"
+        }
+      ]
+    },
+    {
+      "slug": "turnerova-chata",
+      "nazev": "Turnerova chata",
+      "zdrojUrl": "http://www.razitkuj.cz/misto-turnerova-chata/1",
+      "otisky": [
+        {
+          "id": 1484,
+          "soubor": "turnerova-chata/1484.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1484_turnerova-chata.gif"
+        },
+        {
+          "id": 1485,
+          "soubor": "turnerova-chata/1485.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1485_turnerova-chata.gif"
+        },
+        {
+          "id": 1486,
+          "soubor": "turnerova-chata/1486.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1486_turnerova-chata.gif"
+        },
+        {
+          "id": 1487,
+          "soubor": "turnerova-chata/1487.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/1487_turnerova-chata.gif"
+        },
+        {
+          "id": 5021,
+          "soubor": "turnerova-chata/5021.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5021_turnerova-chata.gif"
+        },
+        {
+          "id": 5543,
+          "soubor": "turnerova-chata/5543.gif",
+          "obrazekUrl": "https://www.razitkuj.cz/razitka/5543_turnerova-chata.gif"
         }
       ]
     },
