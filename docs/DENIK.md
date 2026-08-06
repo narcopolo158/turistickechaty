@@ -104,9 +104,19 @@ pramen, verified: false). Potvrzeno je 62 párů, fronta ke kontrole
 PRÁZDNÁ. Čeká: klik na otisky-workflow (stáhne skeny nové vlny), pak
 data05-razitkuj-zaloz.
 
-**Otázky pro Michala:** ① klik na otisky-workflow DATA-05 (páry jsou
-potvrzené, stáhne novou vlnu skenů); po něm klik na DATA-35
-`jizerske-hory` (oprava 637cbb4 je na main); ② rozsah: patří do „Šumavy" i podhůří a sousední
+**DOPLNĚNO VEČER — otisková vlna KOMPLETNÍ:** otisky-workflow napodruhé
+doběhl (napoprvé jel souběžně s pushem potvrzení — tichý no-op, popsáno
+v chatu) a stáhl 40 skenů pro všech 15 nových chat (1543a16); razítkové
+YAML založeny skriptem data05-razitkuj-zaloz — korpus razítek má nyní
+151 otisků u 61 chat napříč Krkonošemi, Jizerkami, Ještědem i Šumavou
+(nejvíc nová Turnerova chata: 6 variant). Skript při regeneraci přerazil
+`checked` u 110 starých otisků, které dnes nikdo nečetl — datumové změny
+vráceny (nezasloužené zvednutí by nafouklo feed „naposledy ověřeno“;
+kandidát na malý fix skriptu: nepřepisovat checked beze změny obsahu).
+Razítka nahraje na web příští seed.
+
+**Otázky pro Michala:** ① klik na DATA-35 `jizerske-hory` (oprava
+637cbb4 je na main, teď projde); ② rozsah: patří do „Šumavy" i podhůří a sousední
 hřbety (Svatobor ANO dle precedentu Frýdlantské výšiny — potvrď;
 Kleť/Blanský les, Čerchov/Český les, Koráb, Libín čekají na tvé slovo);
 ③ starší otevřené beze změny (Gibacht domény+nocleh, Dreisessel doména,
