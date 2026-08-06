@@ -44,14 +44,27 @@ overeniProvoz:
     řádek „Hubertka", jistota B, ověřeno k 2026-07-21; pramen katalogu: https://nocleh.kct.cz/chaty).'
   verified: false
   checked: '2026-07-30'
-perex: Chata na Tišině u Lázní Libverda v 621 m n. m., se sezonním provozem,
-  ubytováním i stravováním. Je také známkovým místem č. 1935.
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1906
+overeniHistorie:
+  source: >-
+    Detail razítka Hubertky na razitkuj.cz (citaci přečetl a dodal Michal
+    6. 8. 2026 při potvrzování razítkového páru DATA-05): „Hubertka je
+    turistická chata nacházející se ve výšce 621 m n. m. v lesích
+    východně od Lázní Libverdy. Postavena byla v roce 1906…" — výška
+    i poloha se shodují s katalogem, rok stavby vede jen tento pramen.
+  verified: false
+  checked: '2026-08-06'
+perex: Chata na Tišině u Lázní Libverda v 621 m n. m., postavená roku 1906,
+  se sezonním provozem, ubytováním i stravováním. Je také známkovým místem
+  č. 1935.
 text:
 - Hubertku vede katalog jako turistickou / horskou chatu se sezonním provozem; nejbližší obcí
   jsou Lázně Libverda, část pohoří Tišina. Vydavatelův výpis známkových míst ji zná jako č.
   1935 „Chata Hubertka, Jizerské hory“ a uvádí u ní adresu Bílý Potok 370.
 - OpenStreetMap objekt vede zároveň jako horskou chatu a restauraci — obojí souhlasí s katalogem,
-  který u ní má stravování „ano“.
+  který u ní má stravování „ano“. Postavena byla roku 1906; rok stavby vedeme z jediného
+  pramene a ověřený není.
 - 'Prameny se rozcházejí v obci: katalog uvádí Lázně Libverda, výpis známkových míst Bílý
   Potok. Zapsali jsme údaj z katalogu a rozpor přiznáváme; rozhodne ověření u provozovatele.'
 # Vybráno redakčně 3. 8. 2026 z data/kandidati/fotky/jizerske-hory/hubertka.yaml
@@ -82,6 +95,9 @@ zdroje:
   url: https://www.openstreetmap.org/way/51573239
 - popis: Vydavatelův výpis známkových míst z 30. 7. 2026 (data/externi/znamkova-mista-2026)
   url: https://www.turisticke-znamky.cz/
+- popis: Detail razítka Hubertky na razitkuj.cz — rok stavby 1906, poloha východně od Lázní
+    Libverdy (citaci dodal Michal 6. 8. 2026)
+  url: http://www.razitkuj.cz/misto-hubertka/1
 interniPoznamky: 'Povýšeno z data/kandidati/jizerske-hory/hubertka.yaml (DATA-01, stav OSM
   dat 2026-07-30) triáží 30. 7. 2026.
 

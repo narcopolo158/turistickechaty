@@ -95,8 +95,18 @@ gatem), pak rozhledny s doloženým občerstvením; POZOR na otázky rozsahu
 (Kleť, Čerchov, Koráb, Libín — viz SUMAVA-TRIAZ); ③ po potvrzení
 razítkových párů klik na otisky-workflow.
 
-**Otázky pro Michala:** ① razítkové páry — kontrolní stránka v chatu
-(16 párů, stačí čísla); ② rozsah: patří do „Šumavy" i podhůří a sousední
+**DOPLNĚNO ODPOLEDNE — razítkové páry VYŘÍZENY:** Michal prošel všech
+16 párů z kontrolní stránky: 15 potvrzeno, „Tetřev“ NESOUVISÍ (zaniklá
+chata v Beskydech mezi Velkým Polomem a Kostelkami — až vznikne oblast
+Beskydy, kandidát pro Atlas zaniklých). Bonus z kontroly: detail razítka
+Hubertky nese rok stavby 1906 → zapsán do profilu (rokVzniku, jediný
+pramen, verified: false). Potvrzeno je 62 párů, fronta ke kontrole
+PRÁZDNÁ. Čeká: klik na otisky-workflow (stáhne skeny nové vlny), pak
+data05-razitkuj-zaloz.
+
+**Otázky pro Michala:** ① klik na otisky-workflow DATA-05 (páry jsou
+potvrzené, stáhne novou vlnu skenů); po něm klik na DATA-35
+`jizerske-hory` (oprava 637cbb4 je na main); ② rozsah: patří do „Šumavy" i podhůří a sousední
 hřbety (Svatobor ANO dle precedentu Frýdlantské výšiny — potvrď;
 Kleť/Blanský les, Čerchov/Český les, Koráb, Libín čekají na tvé slovo);
 ③ starší otevřené beze změny (Gibacht domény+nocleh, Dreisessel doména,

@@ -252,6 +252,88 @@ potvrzene:
       vede místo jako „Schronisko na Hali Szrenickiej" bez „PTTK". Týž objekt
       dokládá i náš alias „Hala Szrenicka" v profilu.
 
+  - slug: hubertka
+    url: http://www.razitkuj.cz/misto-hubertka/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 po přečtení detailu na razitkuj.cz:
+      „Hubertka je turistická chata nacházející se ve výšce 621 m n. m. v
+      lesích východně od Lázní Libverdy. Postavena byla v roce 1906…“ —
+      výška i poloha sedí s naším profilem (621 m, Lázně Libverda);
+      jmenovci (krkonošský kandidát Chata Hubertka, Bouda Hubertus)
+      vyloučeni polohou. Rok 1906 z téhož textu převzat do profilu jako
+      rokVzniku (source razitkuj.cz, verified: false).
+  - slug: plane-pod-jestedem
+    url: http://www.razitkuj.cz/misto-plane-pod-jestedem/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 — riziko záměny s osadou téhož jména
+      posouzeno a vyloučeno.
+  - slug: horska-chata-jestedka
+    url: http://www.razitkuj.cz/3799_chata-jestedka
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 — riziko rozcestníku téhož jména (vzor z
+      výběru fotek) posouzeno a vyloučeno.
+  - slug: chata-pancir
+    url: http://www.razitkuj.cz/misto-pancir/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 („pancir take shoda“) — chata a rozhledna
+      jsou dle vlastního webu jeden objekt, razítko „Pancíř“ tedy patří
+      areálu našeho profilu.
+  - slug: horska-chata-smedava
+    url: http://www.razitkuj.cz/misto-smedava/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 — riziko záměny s místním jménem
+      (sedlo/rozcestí Smědava) posouzeno a vyloučeno.
+  - slug: arberschutzhaus
+    url: http://www.razitkuj.cz/misto-arberschutzhaus-grosser-arber/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+  - slug: chata-jizerka
+    url: http://www.razitkuj.cz/5428_chata-jizerka
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+  - slug: chata-kct-prasily
+    url: http://www.razitkuj.cz/misto-turisticka-chata-kct-prasily/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+  - slug: chatka-gorzystow
+    url: http://www.razitkuj.cz/10232_chatka-gorzystow-hala-izerska
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+  - slug: klostermannova-chata
+    url: http://www.razitkuj.cz/misto-klostermannova-chata-modrava/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+  - slug: schronisko-na-stogu-izerskim
+    url: http://www.razitkuj.cz/10234_schronisko-pttk-na-stogu-izerskim
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+  - slug: pesakovna
+    url: http://www.razitkuj.cz/misto-pesakovna/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+  - slug: prezidentska-chata
+    url: http://www.razitkuj.cz/misto-prezidentska-chata/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+  - slug: turnerova-chata
+    url: http://www.razitkuj.cz/misto-turnerova-chata/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+  - slug: samalova-chata
+    url: http://www.razitkuj.cz/misto-samalova-chata/1
+    poznamka: >-
+      potvrdil Michal 6. 8. 2026 (kontrolní stránka DATA-05 v chatu;
+      přesná nebo jednoznačně delší podoba téhož jména, bez nálezu)
+
 nesouvisi:
   - slug: portasky
     url: http://www.razitkuj.cz/misto-portas/1
@@ -265,3 +347,15 @@ nesouvisi:
       Gliwice) — shodně titulky akt.gliwice.pl, pl.wikipedia a slaskie.travel,
       checked 2026-07-28; naše chatka AKT Towarzystwa Bażynowego je krkonošská
       (GPS z OSM) — cizí objekt, shoda vznikla přes alias „Chatka AKT"
+  - slug: bouda-tetrevi-sedlo
+    url: http://www.razitkuj.cz/misto-tetrev/1
+    poznamka: >-
+      NESOUVISÍ — rozhodl Michal 6. 8. 2026 po přečtení detailu na
+      razitkuj.cz: „Horskou chatu Tetřev už bohužel nenajdeme v prostoru
+      mezi vrcholem Velký Polom (1067 m n. m.) a vrcholem Kostelky
+      (953 m n. m.)…“ — razítko patří zaniklé horské chatě Tetřev
+      v BESKYDECH, ne naší Boudě Tetřeví sedlo na Ještědském hřbetu.
+      Checklist vede zvlášť i „Tetřeví boudy“ (krkonošské) — tři různé
+      objekty, žádný pár. Až se založí oblast Beskydy, razítko se může
+      hodit tam (chata je dle textu zaniklá — kandidát pro Atlas
+      zaniklých).
