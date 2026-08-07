@@ -122,7 +122,54 @@ jako Šumavské podhůří (Svatobor, Javorník). **Koráb a Libín zůstávají
 frontě a nepovyšují se**, dokud Michal neodpoví. Oba objekty odemčené
 tímto rozhodnutím byly povýšeny týž den (níž).
 
-Rozhodnuto 7. 8.:
+Rozhodnuto 7. 8. (blok 3, samostatná práce):
+
+- **`rozhledna-spicak` POVÝŠENA** (korpus 135) — ocelová věž s dřevěným
+  obložením z roku 2014 na vrcholu šumavského Špičáku (1202 m), 26,5 m,
+  135 schodů, 50 m od horní stanice lanovky; kiosek pod věží doložen
+  třemi prameny. **VYŘEŠENA OTÁZKA TRIÁŽE: s katalogovou „Chatou na
+  Špičáku" NESOUVISÍ** — katalog ji vede v 865 m u Železné Rudy, tedy na
+  úrovni střediska, věž stojí v 1202 m. Katalogová chata zůstává mezi
+  čtyřmi bez kandidáta. Vstupné se nezapsalo (Kudy z nudy 90/60 Kč ×
+  Regiontourist „zdarma"). **Nový nález pro dohledávku:** na vrcholu jsou
+  dle Regiontouristu chaty **Hanička** (kandidát `chata-hanicka` ve
+  frontě je) a **Blaženka** (v exportu chybí úplně).
+- **`geisskopfhutte` POVÝŠENA** (korpus 136) — horský hostinec v 1097 m
+  u horní stanice sedačkové lanovky na Geißkopfu. Do fronty se objekt
+  dostal přes kandidáta `geisskopfturm`, jehož dokladem občerstvení byl
+  právě tenhle dům — povyšuje se tedy nositel služby, ne věž.
+  **`geisskopfturm` se NEPOVYŠUJE:** kdo věž provozuje, nevede žádný
+  pramen (na rozdíl od Kleti, kde to pramen výslovně říká). Nocleh
+  zapsán ZÁPORNĚ — portál regionu ho vylučuje výslovnou větou („Keine
+  Übernachtungsmöglichkeit!"), ne mlčením. Na téže hoře čeká ještě
+  kandidát `berggasthof-geiss`.
+- **`sektor-f-hauptturm` POVÝŠENA** (korpus 137) — bývalá armádní
+  odposlechová věž na Schwarzrieglu (1079 m) na hřbetu Hohen Bogen:
+  75 m, památkově chráněná, vnější schodiště a vyhlídková plošina v 50 m
+  od roku 2014. **Zrcadlo Poledníku z druhé strany hranice.** rokVzniku
+  prázdný (rok stavby věží nevede žádný pramen — vzorec kontinuity),
+  otviraciDoba prázdná (celoročně 9–18 h × březen–listopad od východu do
+  západu slunce). V areálu tři podniky; `berghaus-hohenbogen`
+  a `forstdiensthutte-hohen-bogen` jsou kandidáti ve frontě,
+  „Berggasthof Schönblick" v exportu chybí.
+- **`kadernberg-aussichtsturm` ODLOŽEN** (do `_odlozeno.yaml`) —
+  dřevěná věž 30 m na Kadernbergu (700 m) u Schönbergu s občerstvením
+  přímo u paty, tedy klíč splňuje. Jenže prameny si odporují o AKTUÁLNÍM
+  STAVU: jeden vede věž jako zavřenou z požárních důvodů a hospodu
+  přejmenovanou (Turmstüberl → Kadernberger Hütt'n) vedle *bývalého*
+  lanového parku, druhý (web provozovatele gastronomie) ji popisuje jako
+  fungující s výhledem na *činný* park. Stav objektu je pro plánování
+  túry zásadní údaj a datum u zprávy o uzavření nikdo neuvádí —
+  nepovyšovat, dokud to nedoloží pramen s datem.
+- **Městské věže: `stadtturm-202211550` (Straubing) VYŘAZEN,
+  `stadtturm` (Furth im Wald) ODLOŽEN.** Straubing leží v dunajské
+  nížině desítky kilometrů od hor — do okna spadl jen geometrií a klíč
+  nesplňuje v žádné čtené podobě. Furth im Wald je pohraniční město pod
+  Českým lesem, a to je **táž otázka rozsahu jako věž v Mirsku**
+  (`_odlozeno.yaml`, 3. 8.): jestli „role na trase" pokrývá i městskou
+  věž pod horami. Dokud Michal nerozhodne, drží se obojí stejně.
+
+Rozhodnuto 7. 8. (blok 2, s Michalem online):
 
 - **`horska-chata-klet` + `josefova-vez` POVÝŠENY JAKO JEDEN PROFIL**
   (korpus 134) — vzor Žalý / Královka / Svatobor: provozovatelem

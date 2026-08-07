@@ -1,0 +1,203 @@
+# Rozhledna Špičák — povýšen z kandidáta DATA-01 triáží tagované fronty
+# (7. 8. 2026). Klíč zařazení dle rozhodnutí Michala z 28. 7. 2026:
+# rozhledna s občerstvením — kiosek pod věží doložen třemi prameny.
+# VYŘEŠENA OTÁZKA Z TRIÁŽE: katalogová „Chata na Špičáku" (865 m,
+# Železná Ruda) je JINÝ objekt než tahle věž na vrcholu (1202 m).
+# Vše verified: false.
+
+nazev: Rozhledna Špičák
+slug: rozhledna-spicak
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Šumavský Špičák
+    poznamka: >-
+      rozlišující podoba jména na turistických portálech — Špičáků je
+      v Česku víc
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1729752
+lng: 13.2084404
+vyska: 1202
+obec: Železná Ruda
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/3151679847 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška vrcholu Špičák 1202 m: Treking.cz (načteno 7. 8. 2026) —
+    jediný z načtených pramenů, který výšku vrcholu uvádí číslem; Kudy
+    z nudy ani Regiontourist ji nevedou. Obec Železná Ruda: shodně
+    externí katalog (řadí Špičák pod Železnou Rudu) i turistické
+    portály. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Ve věži se nespí a žádný pramen u ní nocleh nezmiňuje — pole se
+# nevyplňuje. Chaty s ubytováním na vrcholu jsou samostatné objekty.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: kiosek
+overeniObcerstveni:
+  source: >-
+    Treking.cz (načteno 7. 8. 2026): „pod rozhlednou se nachází pojízdný
+    kiosek s občerstvením". Kudy z nudy (načteno 7. 8. 2026) klade
+    kiosek asi dvacet metrů od věže. Nezávisle OSM: Občerstvení
+    (fast_food) 19 m od věže,
+    https://www.openstreetmap.org/node/6612705640. Regiontourist
+    (načteno 7. 8. 2026) vede na vrcholu navíc jídelnu v chatě Hanička
+    a restauraci s barem v chatě Blaženka — to jsou ale samostatné
+    objekty, ne součást věže.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  V letní sezóně ve všední dny 9:00–17:00 a o víkendech 9:00–18:00.
+  Kdy sezóna začíná a končí, se prameny rozcházejí — jeden ji uzavírá
+  polovinou září, druhý ji o víkendech protahuje do října.
+overeniProvoz:
+  source: >-
+    Kudy z nudy (načteno 7. 8. 2026): červen–září po–pá 9:00–17:00,
+    víkend 9:00–18:00, v září a říjnu už jen o víkendech 9:00–17:00.
+    Treking.cz (načteno 7. 8. 2026): volně přístupná od 15. června do
+    15. září, ve všedních dnech 9:00–17:00, o víkendech 9:00–18:00.
+    Denní hodiny se shodují, rozsah sezóny ne — zapsán souhlas hodin
+    a rozpor o sezóně přiznán. Provozovatel: TJ Sportovní areál Špičák
+    dle Treking.cz, „areál Ski&Bike Špičák" dle Kudy z nudy — nejspíš
+    týž subjekt pod dvěma jmény, jistotu nemáme. VSTUPNÉ SE NEZAPISUJE
+    a prameny si v něm přímo odporují: Kudy z nudy vede 90 Kč základní
+    a 60 Kč snížené, Regiontourist (načteno 7. 8. 2026) výslovně
+    „zdarma".
+  verified: false
+  checked: '2026-08-07'
+
+kontakty:
+  telefon: '+420376397167'
+  email: info@spicak.cz
+  web: https://www.spicak.cz/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 2014
+milniky:
+  - rok: 2014
+    udalost: >-
+      Rozhledna slavnostně otevřena 26. července; ocelová konstrukce
+      s dřevěným obložením nahradila původně zamýšlenou dřevěnou stavbu
+overeniHistorie:
+  source: >-
+    Treking.cz (načteno 7. 8. 2026): rozhledna postavena v roce 2014
+    a slavnostně otevřena 26. července 2014. Kudy z nudy (načteno
+    7. 8. 2026) rok 2014 potvrzuje a dodává, že o stavbě se uvažovalo
+    zhruba padesát let a že se od dřevěné konstrukce nakonec ustoupilo
+    k oceli s dřevěným obložením. Zda na Špičáku stála nějaká starší
+    rozhledna, nevede ani jeden pramen — nedomýšlíme.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Věž měří 26,5 metru a na vyhlídkovou plošinu vede 135 schodů;
+      najednou na ni smí až šedesát lidí.
+    kategorie: jine
+    zdroj: >-
+      výška a schody: Treking.cz, Kudy z nudy i Regiontourist (načteno
+      7. 8. 2026, tři shodné prameny); kapacita plošiny: Regiontourist
+  - text: >-
+      Od horní stanice sedačkové lanovky je to k věži padesát metrů —
+      na vrchol se tedy dá i vyjet.
+    kategorie: jine
+    zdroj: >-
+      Treking.cz a Regiontourist (načteno 7. 8. 2026) — dva shodné
+      prameny
+  - text: >-
+      Stavět se o rozhledně na Špičáku uvažovalo zhruba půl století,
+      než v roce 2014 skutečně vyrostla.
+    kategorie: jine
+    zdroj: Kudy z nudy (načteno 7. 8. 2026) — jediný pramen, neověřeno
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Ocelová věž s dřevěným obložením z roku 2014 na vrcholu šumavského
+  Špičáku (1202 m), padesát metrů od horní stanice lanovky. Pod ní stojí
+  kiosek s občerstvením, o kus dál dvě chaty s kuchyní.
+text:
+  - >-
+    Rozhledna na Špičáku je mladá — otevřeli ji 26. července 2014, i když
+    se o ní podle jednoho z pramenů mluvilo zhruba půl století předtím.
+    Nakonec z ní není dřevěná stavba, jak se původně zamýšlelo, ale
+    ocelová konstrukce s dřevěným obložením. Měří 26,5 metru, nahoru vede
+    135 schodů a na plošinu smí najednou až šedesát lidí.
+  - >-
+    Vrchol je dobře dostupný: od horní stanice čtyřsedačkové lanovky je
+    to k věži padesát metrů, takže sem dojdou i ti, kdo výstup nechtějí.
+    Otevřeno bývá v letní sezóně, ve všední dny od devíti do pěti
+    a o víkendech do šesti; kdy přesně sezóna končí, se prameny
+    rozcházejí. Provoz vede sportovní areál Špičák.
+  - >-
+    Přímo pod rozhlednou stojí pojízdný kiosek s občerstvením. Na vrcholu
+    jsou navíc dvě chaty s vlastní kuchyní, Hanička a Blaženka — vedeme
+    je zvlášť, protože s věží nemají nic společného. Ve věži se nespí.
+    Trasy s délkami a převýšením najdete u přístupů níže.
+  - >-
+    Údaje na téhle stránce jsou z turistických portálů; polohu nese
+    OpenStreetMap. Vstupné neuvádíme záměrně — jeden pramen ho vede
+    v korunách, druhý tvrdí, že se neplatí, a rozhodnout to bez dotazu
+    na místě nejde. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Treking.cz — výška vrcholu 1202 m, věž 26,5 m, 135 schodů,
+      otevření 26. 7. 2014, provozní doba 15. 6.–15. 9., pojízdný kiosek
+      pod rozhlednou, provozovatel TJ Sportovní areál Špičák, 50 m od
+      lanovky (načteno 7. 8. 2026)
+    url: https://www.treking.cz/regiony/spicak-rozhledna.htm
+  - popis: >-
+      Kudy z nudy — věž 26,5 m, 135 schodů, rok 2014 a padesát let
+      úvah, ocel s dřevěným obložením, sezónní otvírací doba, vstupné,
+      kiosek 20 m od věže, kontakt na areál (načteno 7. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/rozhledna-sumavsky-spicak
+  - popis: >-
+      Regiontourist — věž 26,5 m, 135 schodů, kapacita plošiny 60 osob,
+      vstup zdarma, chaty Hanička a Blaženka na vrcholu, 50 m od horní
+      stanice lanovky (načteno 7. 8. 2026)
+    url: https://www.regiontourist.cz/co-podniknout/rozhledna-a-hora-spicak/
+  - popis: OpenStreetMap (GPS věže, Občerstvení 19 m od paty; ODbL)
+    url: https://www.openstreetmap.org/node/3151679847
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/rozhledna-spicak.yaml triáží tagované
+  fronty (7. 8. 2026). Klíč zařazení: rozhledna s doloženým občerstvením
+  (rozhodnutí Michala 28. 7. 2026) — kiosek doložen třemi prameny.
+
+  VYŘEŠENA OTÁZKA Z TRIÁŽE („rozhledna-spicak souvisí s katalogovou
+  Chatou na Špičáku, prověřit spolu"): NESOUVISÍ. Katalog vede „Chatu na
+  Špičáku" (HUT-0106) ve výšce 865 m u Železné Rudy, tedy na úrovni
+  střediska, kdežto věž stojí na vrcholu v 1202 m. Jsou to dva různé
+  objekty; katalogová chata zůstává mezi čtyřmi katalogovými bez
+  kandidáta.
+
+  NOVÝ NÁLEZ PRO TRIÁŽ: na vrcholu jsou dle Regiontouristu ještě chaty
+  Hanička (jídelna) a Blaženka (restaurace s barem). `chata-hanicka` mezi
+  kandidáty je — prověřit v tagované frontě; „Blaženka" v exportu chybí
+  úplně, patří k dohledávce jako Zlatá Studna a spol.
+
+  ROZPOR VSTUPNÉHO (proto nezapsáno ani do poznámky prózy jako číslo):
+  Kudy z nudy 90/60 Kč × Regiontourist výslovně „zdarma". Možné
+  vysvětlení je, že v ceně je jízda lanovkou, ale to je domněnka —
+  kandidát na DATA-04 (+420 376 397 167).
+
+  ROZPOR SEZÓNY: červen–září s víkendovým prodloužením do října (Kudy
+  z nudy) × 15. 6.–15. 9. (Treking.cz). Denní hodiny se shodují,
+  zapsány; rozsah sezóny přiznán slovy.
+
+  ROZPOR JMÉNA PROVOZOVATELE: TJ Sportovní areál Špičák × areál
+  Ski&Bike Špičák — nejspíš týž subjekt, netvrdíme to.
+
+  NEDOLOŽENO (nezapsáno): starší rozhledna na Špičáku (žádný pramen
+  o ní nemluví), sortiment a provozní doba kiosku, nocleh. Fotku dodá
+  příští běh DATA-02.

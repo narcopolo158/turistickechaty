@@ -221,10 +221,24 @@ const SUPERLATIV = new RegExp(`${WB0}nej[a-záčďéěíňóřšťúůýž]{3,}`
  * „nad obcí Špindlerův Mlýn a je v provozu" mělo spustit větev `stav`, ale
  * nespouštělo). Na dnešním korpusu je rozdíl nulový — utažení tedy nic
  * neodkrylo, jen zavírá díru do budoucna.
+ *
+ * DRUHÉ UTAŽENÍ 7. 8. 2026: samotné `nese` jako slovo je pořád příliš
+ * hrubé — „nést" je běžné sloveso a věta „hora, jejíž jméno NESE celý
+ * hřbet" umlčela superlativ ve větě sousední. Tak se v profilu Horského
+ * hotelu Ještěd přes kontrolu D propašovalo redakční tvrzení
+ * „nejslavnější česká horská stavba dvacátého století", které nedokládá
+ * žádný z pramenů profilu (ty mají Perretovu cenu 1969 a Stavbu století
+ * 2000 — a to je něco jiného). Nově musí u `nese` stát buď pramen jako
+ * podmět („katalog nese", „OpenStreetMap nese"), nebo předmět typický
+ * pro citaci údaje („nese jméno / číslo / rok / údaj"). Měřeno na
+ * korpusu: +1 zásah, a je pravý; žádný falešný nepřibyl.
  */
+const NESE_JAKO_PRIPSANI =
+  `(?:pramen|prameny|portál|katalog|web|profil|mapa|OpenStreetMap|OSM)` +
+  `[^.]{0,24}${WB0}nese|${WB0}nese (?:jméno|název|číslo|rok|údaj|výšku|hodnotu)`
 const PRIPSANI = new RegExp(
   `podle|${WB0}dle|uvádí|uvádějí|provozovatel|tvrd|označuj|hlásí|titulek|` +
-    `katalog|pramen|prý|má být|se odvolává|píše|popisuje|${WB0}nese|zdroj`,
+    `katalog|pramen|prý|má být|se odvolává|píše|popisuje|${NESE_JAKO_PRIPSANI}|zdroj`,
   'iu',
 )
 /**

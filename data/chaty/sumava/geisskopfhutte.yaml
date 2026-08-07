@@ -1,0 +1,174 @@
+# Geißkopfhütte — povýšen z kandidáta DATA-01 triáží tagované fronty
+# (7. 8. 2026). Do fronty se objekt dostal přes kandidáta `geisskopfturm`
+# (rozhledna s občerstvením); křížové ověření ukázalo, že nositelem
+# služby je horský hostinec, ne věž — povyšuje se proto chata.
+# Vše verified: false.
+
+nazev: Geißkopfhütte
+slug: geisskopfhutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Berggasthaus Geißkopfhütte
+    poznamka: úplná podoba jména na turistických portálech regionu
+  - nazev: Geisskopfhütte
+    poznamka: zápis bez přehlásky, běžný na webu areálu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9243195
+lng: 13.038132
+vyska: 1097
+obec: Bischofsmais
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/223583859 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 1097 m shodně portál Bayerischer Wald
+    (bayerischer-wald.de, načteno 7. 8. 2026) a web areálu
+    (geisskopf.de, načteno 7. 8. 2026). Adresa dle portálu:
+    Unterbreitenau 5, 94253 Bischofsmais. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Portál Bayerischer Wald (načteno 7. 8. 2026) vede u objektu
+    výslovné „Keine Übernachtungsmöglichkeit!" — tedy že se tu
+    nepřespává. Je to jeden z mála případů, kdy je nocleh doložen
+    záporně přímo pramenem, ne mlčením; proto se pole vyplňuje.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Portál Bayerischer Wald (načteno 7. 8. 2026) vede objekt jako
+    obhospodařovaný horský hostinec s možností občerstvení; web areálu
+    (geisskopf.de, načteno 7. 8. 2026) ho zve „zur Stärkung und zum
+    süffigen Bier". Nezávisle OSM: amenity=restaurant,
+    https://www.openstreetmap.org/way/223583859. Nabídku ani otvírací
+    dobu nevede ani jeden pramen.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: žádný z načtených pramenů ji neuvádí —
+# portál i web areálu u hostince hodiny mlčí a vlastní web (mimo
+# Facebook) objekt nemá.
+overeniProvoz:
+  source: >-
+    Provozovatel dle OSM: Roland Holdenrieder — jiný pramen jméno
+    nepotvrzuje, do prózy proto nejde. Web areálu (geisskopf.de,
+    načteno 7. 8. 2026) vede hostinec mezi svými podniky a uvádí, že se
+    k němu dá vyjet sedačkovou lanovkou, dojít pěšky nebo v zimě přijet
+    na běžkách; hodiny neuvádí. Telefon je z OSM.
+  verified: false
+  checked: '2026-08-07'
+
+kontakty:
+  telefon: '+499920336'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ani milníky SE NEVYPLŇUJÍ: žádný z načtených pramenů rok
+# stavby ani dějiny domu nevede.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Pár desítek metrů od hostince stojí na vrcholu vyhlídková věž;
+      za dobré viditelnosti je z ní vidět na Javor, Osser, Luzný,
+      Roklan i Třístoličník.
+    kategorie: jine
+    zdroj: >-
+      výhled: web obce Bischofsmais (načteno 7. 8. 2026); vzdálenost
+      věže od hostince 79 m dle OpenStreetMap
+  - text: >-
+      Geißkopf je domácí horou Bischofsmais a vedle turistiky slouží
+      i jako bikepark a lyžařský areál — hostinec je tak v provozu pro
+      obě sezóny.
+    kategorie: jine
+    zdroj: >-
+      web obce Bischofsmais a geisskopf.de (načteno 7. 8. 2026) — dva
+      prameny, redakcí neověřeno
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec v 1097 metrech u horní stanice sedačkové lanovky na
+  Geißkopfu, pár kroků od vyhlídkové věže. Občerstvení pro pěší
+  i cyklisty; přespat se tu nedá.
+text:
+  - >-
+    Geißkopf je domácí hora Bischofsmais mezi Bavorským lesem
+    a Deggendorfem: v zimě lyžařský areál, v létě bikepark a výchozí
+    bod pěších tras. Nahoře, ve výšce 1097 metrů, stojí Geißkopfhütte —
+    obhospodařovaný horský hostinec u horní stanice šestimístné
+    sedačkové lanovky. Dá se sem tedy dojít po svých, vyjet lanovkou
+    a v zimě přijet na běžkách.
+  - >-
+    Hostinec nabízí občerstvení a pivo; nabídku ani otvírací hodiny
+    žádný z pramenů neuvádí, a proto je tu neuvádíme ani my. Zato je
+    doložené, co tu nenajdete: přespat se v hostinci nedá, portál
+    regionu to říká výslovně. Kdo hledá nocleh, musí dolů do údolí.
+  - >-
+    Pár desítek metrů od domu stojí na vrcholu vyhlídková věž a za dobré
+    viditelnosti je z ní vidět na hraniční hřebeny — Javor, Osser, Luzný,
+    Roklan i Třístoličník. Trasy s délkami a převýšením najdete
+    u přístupů níže.
+  - >-
+    Údaje na téhle stránce jsou z regionálního turistického portálu,
+    z webu obce a z webu areálu; polohu a telefon nese OpenStreetMap.
+    Vlastní stránky mimo profil na sociální síti dům nemá, takže
+    otvírací dobu ani dějiny domu doložit neumíme. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Portál Bayerischer Wald — výška 1097 m, obhospodařovaný horský
+      hostinec s občerstvením, výslovně bez možnosti přenocování,
+      adresa Unterbreitenau 5 (načteno 7. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/berggasthaus-geisskopfhuette-bewirtschaftet-f8603226ca
+  - popis: >-
+      geisskopf.de — hostinec ve výšce 1097 m mezi podniky areálu,
+      dostupný lanovkou, vlekem i na běžkách (načteno 7. 8. 2026)
+    url: https://geisskopf.de/sommer/gastronomie-sommer/
+  - popis: >-
+      Web obce Bischofsmais — poloha hory mezi Bischofsmais
+      a Habischried, šestimístná sedačková lanovka, vyhlídková věž
+      u horní stanice a výhled na hraniční hory (načteno 7. 8. 2026)
+    url: https://www.bischofsmais.de/geisskopf-bischofsmais/
+  - popis: >-
+      OpenStreetMap (GPS, amenity=restaurant, telefon, vyhlídková věž
+      79 m od domu; ODbL)
+    url: https://www.openstreetmap.org/way/223583859
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/geisskopfhutte.yaml (7. 8. 2026).
+  DO FRONTY SE OBJEKT DOSTAL PŘES JINÉHO KANDIDÁTA: `geisskopfturm`
+  (rozhledna, 79 m odsud) měl jako doklad občerstvení právě tenhle
+  hostinec. Křížové ověření ukázalo, že nositelem služby i jména je
+  hostinec — povyšuje se tedy on, s typem `obsluhovana`. **Kandidát
+  `geisskopfturm` se zatím NEPOVYŠUJE:** kdo věž provozuje a jestli
+  patří k témuž provozu jako hostinec, žádný pramen neříká (na rozdíl
+  od Kleti, kde to pramen výslovně vede). Věž je zmíněná v próze
+  i v zajímavostech; kdyby se doložil společný provoz, sloučí se vzorem
+  Kleti.
+
+  DALŠÍ KANDIDÁT NA TÉŽE HOŘE: `berggasthof-geiss` — neprověřen, patří
+  do fronty; geisskopf.de vede v areálu ještě Forstgasthof a Eispavillon
+  (ten je zmrzlinárna, klíč zařazení nesplňuje).
+
+  NOCLEH ZAPSÁN ZÁPORNĚ, což děláme jen výjimečně — portál regionu ho
+  vylučuje výslovnou větou („Keine Übernachtungsmöglichkeit!"), ne
+  mlčením. Vzor opačného postupu: Gibacht a Sonnenfels, kde se
+  katalogové „ano" bez potvrzení nezapsalo vůbec.
+
+  NEDOLOŽENO (nezapsáno): otvírací doba (nevede ji žádný pramen), rok
+  vzniku a dějiny domu, jméno provozovatele mimo OSM (Roland
+  Holdenrieder), sortiment kuchyně. Vlastní web dům nemá (jen profil na
+  sociální síti) — kandidát na DATA-04, telefon +49 9920 336. Fotku
+  dodá příští běh DATA-02.

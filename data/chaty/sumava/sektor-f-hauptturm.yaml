@@ -1,0 +1,201 @@
+# sektor.f Hauptturm — povýšen z kandidáta DATA-01 triáží tagované fronty
+# (7. 8. 2026). Klíč zařazení dle rozhodnutí Michala z 28. 7. 2026:
+# rozhledna s občerstvením — v areálu jsou tři doložené podniky.
+# Německé jméno primární (rozhodnutí 20. 7. 2026). Vše verified: false.
+
+nazev: sektor.f Hauptturm
+slug: sektor-f-hauptturm
+zeme: de
+typ: rozhledna
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Aussichtsplattform Hoher Bogen
+    poznamka: >-
+      jméno, pod kterým vyhlídkovou plošinu vedou regionální turistické
+      portály
+  - nazev: Vyhlídková věž na Hohen Bogen
+    poznamka: český popisný ekvivalent
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.2347315
+lng: 12.933107
+vyska: 1079
+obec: Rimbach
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/294745566 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška vrcholu Schwarzriegel 1079 m: Sehenswerter Bayerischer Wald
+    (načteno 7. 8. 2026) — jediný z načtených pramenů s číslem; portál
+    Bayerischer Wald mluví jen o „vysokohorské plošině Hohenbogen".
+    Obec Rimbach dle OSM i dle adresy provozovatele (Am Schwarzriegel
+    1–6, 93485 Rimbach). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Ve věži se nespí a žádný pramen u ní nocleh nezmiňuje — pole se
+# nevyplňuje. Podniky v areálu jsou samostatné objekty a leží ve frontě.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Sehenswerter Bayerischer Wald (načteno 7. 8. 2026) vede v areálu tři
+    podniky: Berggasthof Schönblick s pivní zahradou, Berghaus
+    Hohenbogen u horní stanice lanovky a Forstdiensthütte u parkoviště.
+    Nezávisle OSM: pivní zahrada (biergarten) 48 m od věže,
+    https://www.openstreetmap.org/way/1278279477. Žádný z podniků
+    není součástí věže — jsou to sousedé v areálu a vedeme je zvlášť;
+    klíč zařazení („rozhledna s občerstvením") je tím ale naplněn.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: prameny vedou dva neslučitelné režimy —
+# celoročně 9:00–18:00 proti sezóně březen–listopad od východu do
+# západu slunce. Vzor Kötztinger Hütte a Klostermannovy rozhledny.
+overeniProvoz:
+  source: >-
+    Portál Bayerischer Wald (načteno 7. 8. 2026): plošina otevřená
+    celoročně 9:00–18:00, za nepříznivého počasí zavřeno; vstupné 6 €,
+    skupiny od pěti osob 4 €, děti zdarma; provozovatel Hoher Bogen
+    Mountain Resort GmbH, Am Schwarzriegel 1–6, 93485 Rimbach.
+    Sehenswerter Bayerischer Wald (načteno 7. 8. 2026) proti tomu vede
+    přístup od března do listopadu od východu do západu slunce
+    s automatizovaným výběrem vstupného. Oba prameny se shodují jen na
+    tom, že za velmi špatného počasí bývá zavřeno. Vstupné se
+    nezapisuje (mění se).
+  verified: false
+  checked: '2026-08-07'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku SE NEVYPLŇUJE: věž postavila armáda jako odposlechové
+# zařízení a rok stavby nevede žádný z načtených pramenů; rok 2014 je
+# zpřístupnění veřejnosti, ne vznik stavby (týž vzorec kontinuity jako
+# Poledník, kde je z armádní věže rozhledna od roku 1998).
+milniky:
+  - rok: 2014
+    udalost: >-
+      Hlavní věž dostala vnější schodiště a vyhlídková plošina se
+      otevřela veřejnosti
+overeniHistorie:
+  source: >-
+    Sehenswerter Bayerischer Wald (načteno 7. 8. 2026): hlavní věž byla
+    v roce 2014 vybavena vnějším schodištěm pro veřejný přístup; dataci
+    samotných věží pramen neuvádí. Portál Bayerischer Wald (načteno
+    7. 8. 2026) mluví o „bývalých zařízeních NATO", z nichž projekt
+    sektor.f udělal místo přístupné veřejnosti, a hlavní věž vede jako
+    75 metrů vysokou a památkově chráněnou. Rok stavby ani přesný účel
+    zařízení nevede ani jeden — nedomýšlíme.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Hlavní věž měří pětasedmdesát metrů, je památkově chráněná
+      a vyhlídková plošina o rozloze 400 m² je v padesáti metrech.
+    kategorie: jine
+    zdroj: >-
+      portál Bayerischer Wald (načteno 7. 8. 2026) — jediný pramen
+      s čísly, redakcí neověřeno
+  - text: >-
+      Hřbet Hohen Bogen je osm kilometrů dlouhý a má pět vrcholů;
+      nejvyšší z nich, Schwarzriegel, měří 1079 metrů.
+    kategorie: vyska
+    zdroj: >-
+      Sehenswerter Bayerischer Wald (načteno 7. 8. 2026) — tvrzení
+      pramene, neověřeno
+  - text: >-
+      Vedle Poledníku je to druhá věž v našem průvodci, z níž se za
+      studené války naslouchalo přes hranici a dnes se z ní kouká.
+    kategorie: jine
+    zdroj: >-
+      plyne z našich vlastních profilů (Poledník, sektor.f) — vojenský
+      původ obou dokládají jejich prameny
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bývalá armádní odposlechová věž na Schwarzrieglu (1079 m), na hřbetu
+  Hohen Bogen nad Rimbachem. Od roku 2014 na ni vede vnější schodiště
+  a v padesáti metrech je vyhlídková plošina; v areálu jsou tři místa,
+  kde se dá najíst.
+text:
+  - >-
+    Hohen Bogen je osmikilometrový hřbet nad Rimbachem s pěti vrcholy;
+    na tom hlavním, Schwarzrieglu ve výšce 1079 metrů, stojí
+    pětasedmdesát metrů vysoká věž. Ta tu nestojí kvůli výhledu — je to bývalé
+    vojenské zařízení namířené přes blízkou hranici, dnes památkově
+    chráněné. V roce 2014 dostala vnější schodiště a od té doby se po
+    něm dá vyjít na vyhlídkovou plošinu v padesáti metrech, kterou
+    prameny popisují jako čtyřsetmetrovou plochu s výhledem do všech
+    stran.
+  - >-
+    Kdy věže vyrostly a co přesně odposlouchávaly, žádný z našich
+    pramenů neříká, a tak to neuvádíme ani my. Kdo zná Poledník na
+    šumavském hřebeni, uvidí tu ale zrcadlový obraz z druhé strany
+    hranice: armádní stavba, kterou po konci studené války otevřeli
+    turistům.
+  - >-
+    Nahoru se dá dojít pěšky — od parkoviště u služební chaty je to asi
+    pět kilometrů, od horní stanice sedačkové lanovky sotva kilometr.
+    V areálu fungují tři místa k zastavení: horský hostinec s pivní
+    zahradou, hostinec u horní stanice lanovky a chata u parkoviště;
+    vedeme je zvlášť, protože s věží nemají společný provoz. Ve věži se
+    nespí a vstup na plošinu je placený. Trasy s délkami a převýšením
+    najdete u přístupů níže.
+  - >-
+    Údaje na téhle stránce jsou z regionálních turistických portálů;
+    polohu nese OpenStreetMap. Otvírací dobu záměrně neuvádíme —
+    prameny popisují dva neslučitelné režimy, celoroční provoz s pevnými
+    hodinami proti sezóně od jara do podzimu s přístupem od východu do
+    západu slunce. Také počet schodů se mezi nimi liší. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Portál Bayerischer Wald — hlavní věž 75 m a památková ochrana,
+      plošina v 50 m o rozloze 400 m², celoroční otvírací doba 9–18 h,
+      vstupné, provozovatel Hoher Bogen Mountain Resort GmbH, přístup
+      od parkoviště i od lanovky, původ v zařízeních NATO (načteno
+      7. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/aussichtsplattform-gipfelsteig-3505922415
+  - popis: >-
+      Sehenswerter Bayerischer Wald — Schwarzriegel 1079 m, hřbet
+      s pěti vrcholy, vnější schodiště z roku 2014, sezóna
+      březen–listopad od východu do západu slunce, tři podniky v areálu
+      (načteno 7. 8. 2026)
+    url: https://www.sehenswerter-bayerischer-wald.de/aussichtsturm-hoher-bogen-berg-wanderkarte.html
+  - popis: >-
+      OpenStreetMap (GPS věže, pivní zahrada 48 m od paty; ODbL)
+    url: https://www.openstreetmap.org/way/294745566
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/sektor-f-hauptturm.yaml triáží
+  tagované fronty (7. 8. 2026). Klíč zařazení: rozhledna s doloženým
+  občerstvením (rozhodnutí Michala 28. 7. 2026) — v areálu tři podniky
+  dle regionálního portálu plus pivní zahrada 48 m dle OSM.
+
+  JMÉNO: ponecháno v podobě z OSM („sektor.f Hauptturm"), protože tak
+  se jmenuje projekt provozovatele; české popisné jméno je v aliasech.
+  Kdyby Michal chtěl jinou primární podobu, je to jednořádková změna.
+
+  SOUSEDÉ VE FRONTĚ: kandidáti `berghaus-hohenbogen`
+  a `forstdiensthutte-hohen-bogen` v korpusu jsou a čekají na triáž;
+  „Berggasthof Schönblick" z portálu mezi kandidáty NENÍ — patří
+  k dohledávce.
+
+  ROZPOR PROVOZU (proto otviraciDoba prázdná): celoročně 9–18 h
+  s obsluhovaným vstupným (portál Bayerischer Wald) × březen–listopad
+  od východu do západu slunce s automatem (Sehenswerter). Vypadá to na
+  starší a novější stav, doložit to neumíme. ROZPOR POČTU SCHODŮ: 290
+  (portál) × 239 (Sehenswerter) — do prózy ani zajímavostí se číslo
+  nezapsalo.
+
+  NEDOLOŽENO (nezapsáno): rok stavby věží a jejich přesný účel (žádný
+  pramen; „NATO" je jediné, co se o původu říká), nocleh, kontakt na
+  provozovatele mimo adresu. Vlastní web projektu (sektor-f.de) se
+  načetl jen v části „Anfahrt" — čísla ani hodiny na ní nejsou. Fotku
+  dodá příští běh DATA-02.
