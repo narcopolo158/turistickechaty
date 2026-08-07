@@ -37,7 +37,7 @@ overeniLokace:
 
 # ── Nocleh ────────────────────────────────────────────────────────────────
 # Ve věži se nespí a žádný pramen u ní nocleh nezmiňuje — pole se
-# nevyplňuje. Chaty s ubytováním na vrcholu jsou samostatné objekty.
+# nevyplňuje. Chaty s ubytováním leží dole v areálu, 1,2 km odsud.
 
 # ── Občerstvení ───────────────────────────────────────────────────────────
 kuchyne: ano
@@ -49,9 +49,11 @@ overeniObcerstveni:
     kiosek asi dvacet metrů od věže. Nezávisle OSM: Občerstvení
     (fast_food) 19 m od věže,
     https://www.openstreetmap.org/node/6612705640. Regiontourist
-    (načteno 7. 8. 2026) vede na vrcholu navíc jídelnu v chatě Hanička
-    a restauraci s barem v chatě Blaženka — to jsou ale samostatné
-    objekty, ne součást věže.
+    (načteno 7. 8. 2026) vede „na vrcholu" navíc jídelnu v chatě
+    Hanička a restauraci s barem v chatě Blaženka; PŘEMĚŘENO PROTI
+    SOUŘADNICÍM: obě stojí dole v areálu, 1,2 km od věže — tvrzení
+    pramene o poloze tedy nepřebíráme a doklad občerstvení u věže na
+    nich nestojí.
   verified: false
   checked: '2026-08-07'
 
@@ -125,7 +127,7 @@ zajimavosti:
 perex: >-
   Ocelová věž s dřevěným obložením z roku 2014 na vrcholu šumavského
   Špičáku (1202 m), padesát metrů od horní stanice lanovky. Pod ní stojí
-  kiosek s občerstvením, o kus dál dvě chaty s kuchyní.
+  kiosek s občerstvením; spí se až dole v areálu.
 text:
   - >-
     Rozhledna na Špičáku je mladá — otevřeli ji 26. července 2014, i když
@@ -140,10 +142,10 @@ text:
     a o víkendech do šesti; kdy přesně sezóna končí, se prameny
     rozcházejí. Provoz vede sportovní areál Špičák.
   - >-
-    Přímo pod rozhlednou stojí pojízdný kiosek s občerstvením. Na vrcholu
-    jsou navíc dvě chaty s vlastní kuchyní, Hanička a Blaženka — vedeme
-    je zvlášť, protože s věží nemají nic společného. Ve věži se nespí.
-    Trasy s délkami a převýšením najdete u přístupů níže.
+    Přímo pod rozhlednou stojí pojízdný kiosek s občerstvením; ve věži
+    se nespí. Chaty Hanička a Blaženka, které jeden z pramenů klade na
+    vrchol, ve skutečnosti stojí dole v areálu — od věže je to k nim víc
+    než kilometr. Trasy s délkami a převýšením najdete u přístupů níže.
   - >-
     Údaje na téhle stránce jsou z turistických portálů; polohu nese
     OpenStreetMap. Vstupné neuvádíme záměrně — jeden pramen ho vede
@@ -164,8 +166,9 @@ zdroje:
     url: https://www.kudyznudy.cz/aktivity/rozhledna-sumavsky-spicak
   - popis: >-
       Regiontourist — věž 26,5 m, 135 schodů, kapacita plošiny 60 osob,
-      vstup zdarma, chaty Hanička a Blaženka na vrcholu, 50 m od horní
-      stanice lanovky (načteno 7. 8. 2026)
+      vstup zdarma, chaty Hanička a Blaženka (pramen je klade na
+      vrchol — přeměřeno, stojí dole v areálu), 50 m od horní stanice
+      lanovky (načteno 7. 8. 2026)
     url: https://www.regiontourist.cz/co-podniknout/rozhledna-a-hora-spicak/
   - popis: OpenStreetMap (GPS věže, Občerstvení 19 m od paty; ODbL)
     url: https://www.openstreetmap.org/node/3151679847
@@ -181,10 +184,13 @@ interniPoznamky: >-
   objekty; katalogová chata zůstává mezi čtyřmi katalogovými bez
   kandidáta.
 
-  NOVÝ NÁLEZ PRO TRIÁŽ: na vrcholu jsou dle Regiontouristu ještě chaty
-  Hanička (jídelna) a Blaženka (restaurace s barem). `chata-hanicka` mezi
-  kandidáty je — prověřit v tagované frontě; „Blaženka" v exportu chybí
-  úplně, patří k dohledávce jako Zlatá Studna a spol.
+  NÁLEZ PRO TRIÁŽ A OPRAVA VLASTNÍ PRÓZY: Regiontourist klade chaty
+  Hanička (jídelna) a Blaženka (restaurace s barem) „na vrchol"
+  a v prvním znění téhle stránky to po něm bylo převzato. Přeměření
+  proti souřadnicím kandidáta `chata-hanicka` (49,1657 / 13,2208) to
+  vyvrátilo: od věže je to 1,2 km a chaty stojí dole v areálu (adresa
+  Špičák na Šumavě 182). Próza opravena týž den. `chata-hanicka` je
+  odložena (viz `_odlozeno.yaml`), „Blaženka" v exportu chybí úplně.
 
   ROZPOR VSTUPNÉHO (proto nezapsáno ani do poznámky prózy jako číslo):
   Kudy z nudy 90/60 Kč × Regiontourist výslovně „zdarma". Možné

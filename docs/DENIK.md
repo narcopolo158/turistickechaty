@@ -29,6 +29,143 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-07 (blok 3, samostatná práce dvě hodiny) — tagovaná fronta o pět dál, plošná triáž dostala nástroj, dvě opravy
+
+Michalovo pověření: *„pokracuj dve hodiny samostatne systematicky dal,
+veci ktere mam udelat rucne preskoc"*. Přeskočeno bylo tedy všechno, co
+čeká na člověka: kliky v Actions, telefonáty DATA-04, výběr fotek
+v adminu, Koráb a Libín (Michal je prověří), Rovina a Churáňov.
+
+**Tagovaná fronta — tři povýšení, tři odložení, jedno vyřazení**
+
+- **Rozhledna Špičák** (korpus 135) — ocelová věž z roku 2014 na vrcholu
+  (1202 m), 26,5 m, 135 schodů, kiosek pod věží doložen třemi prameny.
+  **Vyřešena stará otázka triáže:** s katalogovou „Chatou na Špičáku"
+  NESOUVISÍ — katalog ji vede v 865 m na úrovni střediska, věž stojí
+  o 340 m výš. Katalogová chata zůstává mezi čtyřmi bez kandidáta.
+- **Geisskopfhütte** (korpus 136) — horský hostinec v 1097 m u horní
+  stanice lanovky. Do fronty se objekt dostal přes kandidáta
+  `geisskopfturm`, jehož dokladem občerstvení byl právě tenhle dům;
+  povýšil se tedy nositel služby, ne věž. Věž se nepovyšuje — kdo ji
+  provozuje, nevede žádný pramen (na Kleti to pramen výslovně říká,
+  proto tam sloučení šlo). **Nocleh zapsán ZÁPORNĚ**, což děláme
+  výjimečně: portál regionu ho vylučuje výslovnou větou („Keine
+  Übernachtungsmöglichkeit!"), ne mlčením.
+- **sektor.f Hauptturm** (korpus 137) — bývalá armádní odposlechová věž
+  na Schwarzrieglu (1079 m) na hřbetu Hohen Bogen, 75 m, památkově
+  chráněná, od roku 2014 s vnějším schodištěm a vyhlídkovou plošinou
+  v 50 m. **Zrcadlo Poledníku z druhé strany hranice** — a stejný vzorec
+  kontinuity: rokVzniku prázdný, protože 2014 je zpřístupnění, ne vznik.
+- **Odloženo:** `kadernberg-aussichtsturm` (klíč splňuje, ale prameny si
+  odporují o aktuálním stavu — jeden vede věž jako zavřenou z požárních
+  důvodů a hospodu přejmenovanou, druhý ji popisuje jako fungující;
+  žádný svou zprávu nedatuje, a stav je pro plánování túry zásadní),
+  `stadtturm` ve Furth im Wald (táž otázka rozsahu jako věž v Mirsku —
+  městská věž pod horami) a `chata-hanicka` (viz níž).
+- **Vyřazeno:** `stadtturm` ve Straubingu — dunajská nížina desítky
+  kilometrů od hor, do okna spadl jen geometrií.
+- **Weby za gatem i napodruhé:** hansl-huette.de a loderhart.de. Po
+  druhém neúspěchu je vedu jako kandidáty na jiný pramen (bavorský
+  turistický svaz, u Loderhartu NaturFreunde) nebo na pokus z prohlížeče.
+
+**Vlastní chyba chycená měřením — a proto stojí za zápis**
+
+Do profilu Rozhledny Špičák jsem podle Regiontouristu napsal, že „na
+vrcholu jsou navíc dvě chaty s vlastní kuchyní, Hanička a Blaženka".
+Při triáži kandidáta `chata-hanicka` jsem si spočítal vzdálenost jeho
+souřadnic od věže: **1,2 km**, a adresa je Špičák na Šumavě 182, tedy
+dole v areálu. Pramen se ve své formulaci prostě spletl a já to po něm
+převzal. Próza opravena týž den a rozpor je teď v profilu přiznaný.
+Poučení je konkrétní: **tvrzení pramene o poloze se dá přeměřit proti
+souřadnicím, které stejně máme** — u dvojice „objekt X je u objektu Y"
+to stojí dva řádky výpočtu.
+
+Hanička sama pak šla do odložených: vlastní web areálu ji vede jako
+ubytování (s Blaženkou 68 lůžek) a restauraci uvádí jako samostatnou
+službu areálu. Klíč stojí na občerstvení PRO VEŘEJNOST a jídelna pro
+ubytované ho nenaplňuje; jeden dotaz na areál to rozhodne. Souvisí
+s otázkou, jestli katalogová „Chata na Špičáku" (865 m, ubytování
+i stravování) není právě tenhle areál — neztotožňovat bez pramene.
+
+**Plošná triáž dostala nástroj: `scripts/triaz-kandidatu.ts`**
+
+Zbývá přes tři sta kandidátů a číst je jeden po druhém je práce na dny,
+kterou z devíti desetin dělá jméno objektu. Skript je proto předtřídí do
+tří košů podle jmenných a tagových signálů a ke každému napíše, který
+signál rozhodl. **Nic nemaže, nikam nezapisuje, nic nepovyšuje** — jen
+říká pořadí práce. Výstup je `docs/SUMAVA-TRIAZ-KOSE.md`.
+
+Výsledek pro Šumavu: **305 kandidátů → NADĚJNÉ 110, K POSOUZENÍ 35,
+MIMO KLÍČ 160.** Největší skupina je `tourism=chalet` — 154 kandidátů;
+v OSM to znamená pronajímaný domek k samostatnému vaření, ne
+obsluhovanou chatu. Když u něj jméno přesto nese boudové slovo, jde
+kandidát do koše „k posouzení" jako rozpor tagu a jména; takový byl
+Zwieseler Hütte i Waldvereinshütte.
+
+**Dvě pasti, do kterých skript sám spadl** (obojí opraveno a popsáno
+v komentáři, ať to příště nikdo neopakuje): (1) hledat v interních
+poznámkách kandidáta slovo `alpine_hut` znamená označit za nadějné
+úplně všechno — každý kandidát nese v poznámkách LEGENDU „alpine_hut =
+obsluhovaná, wilderness_hut = útulna"; vytahuje se proto hodnota za
+`tourism=`. (2) „Hütte" bez pravé hranice slova sebere „Hutterer",
+takže „Bäckerei Hutterer" spadla mezi nadějné. První běh dal 305 z 305
+nadějných, což koš úplně znehodnotilo — obojí je teď zachycené
+v komentáři skriptu.
+
+Ověřeno i na druhé oblasti: nad Jizerkami dá 33 kandidátů → 30/2/1.
+
+**Druhá díra v kontrole D — a redakční tvrzení, které jí prošlo**
+
+Při psaní profilu sektor.f mi audit-mech nejdřív vytkl superlativ,
+a když jsem větu přeformuloval, prošla — jenže ne proto, že by byla
+v pořádku, ale protože vedle stálo sloveso „nese". To je v seznamu
+připsání (`PRIPSANI`) a „nést" je běžné sloveso. Když se hledá, koho
+ještě to umlčelo, najde se **profil Horského hotelu Ještěd**: věta „hora,
+jejíž jméno NESE celý hřbet" umlčela v sousední větě tvrzení
+„nejslavnější česká horská stavba dvacátého století", které nedokládá
+žádný pramen profilu (má Perretovu cenu 1969 a Stavbu století 2000, a to
+je něco jiného). Věta přepsána na doloženou Stavbu století, vzor utažen
+(u „nese" musí stát pramen jako podmět, nebo předmět typu jméno/číslo),
+fixturová zábrana přidána. Měřeno: +1 zásah a je pravý, žádný falešný
+nepřibyl.
+
+Je to druhá vada téže kontroly za jeden den (ráno kontrola A obviňovala
+Raisovu chatu). Obě mají společné, že se ukázaly, až když do korpusu
+přibyl nový profil — kontroly stárnou s daty, ne samy od sebe.
+
+**Kontroly:** `npm run kontrola` zelené (0 vad, fronta 0, kolize 0),
+`tsc` čistý, fixtura 25 souborů / 0 spadlo. Ban-scan 291 → 296 (pět
+nových zásahů, všechny standardní závěrečná věta „polohu nese
+OpenStreetMap"). Audit-mech 25 zásahů k posouzení (A 6 · D 19), stejně
+jako po ranní opravě.
+
+**Příště**
+
+① plošná triáž podle košů — začít NADĚJNÝMI (110), pak rozpory
+tag × jméno (35); ② z tagované fronty zbývají obsluhované, u nichž je
+podezření na Selbstversorger (`zakladna-bileho-orla` — Junák,
+`burglengenfelder-hutte-scb-hutte` — lyžařský klub): vzor Kynastu, ale
+každé vyřazení chce pramen; ③ dvě útulny (`forsthaus-odwies`,
+`hollbachschwellhutte`) — u druhé se prameny o obhospodařování
+nevyjadřují, hledat dál.
+
+**Otázky pro Michala**
+
+① **Koráb a Libín** — až prověříš, oba čekají ve frontě s doloženým
+občerstvením.
+② **Městské věže pod horami** (Furth im Wald, Mirsk) — patří „role na
+trase" i na ně? Dvě věže v `_odlozeno.yaml` čekají na jedno slovo.
+③ **Tři telefonáty, které zavřou tři profily:** Kurzova věž
+(+420 722 166 875 — je hospůdka u věže a Chata Čerchov jeden provoz?),
+Kleť (+420 724 700 300 — kapacita, mimosezónní provoz, Tereziina chata),
+Špičák (+420 376 397 167 — vstupné zdarma × 90 Kč, a jestli je areál
+totožný s katalogovou „Chatou na Špičáku").
+④ **Klik v Actions:** DATA-35 `jizerske-hory`, DATA-06 výšky `sumava`
+(čeká šest nových šumavských profilů), DATA-28 3D terén.
+⑤ Starší otevřené beze změny: Gibacht (tři domény, nocleh, GPS),
+Klostermannova rozhledna (otvíračka), Dreisessel doména, Osser lůžka,
+rokVzniku čtveřice, DATA-20 `obec`, výběr fotek v adminu.
+
 ## 2026-08-07 (blok 2, s Michalem online) — Kleť a Čerchov zařazeny; kontrola A obviňovala nevinný profil
 
 **Michalovo rozhodnutí, doslova:** *„kleť i čerchov určitě zařaď, koráb

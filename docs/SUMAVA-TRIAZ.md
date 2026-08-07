@@ -109,11 +109,18 @@ středisek/lanovek na web, rozhodnout, jestli ji vypsat, nebo odfiltrovat
    *(Běží; výšky doběhly 5.–6. 8.)*
 4. Plošná triáž zbylých kandidátů — **začíná se tagovanou frontou (níž)**,
    teprve pak ~300 kandidátů bez typu (hlavně vyřazování).
+   *(7. 8. 2026: postaven `scripts/triaz-kandidatu.ts`, který kandidáty
+   předtřídí do košů podle jmenných a tagových signálů; výstup je
+   `docs/SUMAVA-TRIAZ-KOSE.md`. Ze 305 kandidátů: **NADĚJNÉ 110,
+   K POSOUZENÍ 35, MIMO KLÍČ 160**. Největší skupina je `tourism=chalet`
+   — 154 kandidátů, v OSM pronajímaný domek, ne obsluhovaná chata.
+   Skript nic nemaže a nic nepovyšuje, jen říká pořadí práce; koš NENÍ
+   vyřazení, protože turistickou minulost z názvu nepozná nikdo.)*
 
 ## Tagovaná fronta (krok 4a) — kandidáti s typem z OSM tagů
 
 Sestaveno 6. 8. 2026: kandidáti s `typ` rozhledna/obsluhovana/utulna,
-kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po průchodech 6. a 7. 8. zbývá 22.**
+kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po průchodech 6. a 7. 8. zbývá 17.**
 
 **ROZSAH ROZHODNUT (Michal 7. 8. 2026, doslova: „kleť i čerchov určitě
 zařaď, koráb a libín prověřím"):** Kleť (Blanský les) i Čerchov (Český
@@ -247,12 +254,12 @@ Rozhodnuto 6. 8.:
 gate), loderhart.de — oba zkusit jindy, jsou to obsluhované objekty
 s vlastním webem, tedy nadějné; po druhém neúspěchu jsou to kandidáti
 na jiný pramen (bavorský turistický svaz, NaturFreunde) nebo na
-Michalův pokus z prohlížeče. **Zbytek fronty (22):** 7 obsluhovaných
+Michalův pokus z prohlížeče. **Zbytek fronty (17):** 7 obsluhovaných
 (barwurz-resl-huttn, berghaus-loderhart, burglengenfelder-hutte-scb-hutte,
 chata-pod-kleti, chata-zivec, hansl-hutte, kreuzhaus, skihutte-kohlau,
 zakladna-bileho-orla, zelena-chyse — pozn.: Kleť je Blanský les, Živec
 u Písku je mimo Šumavu → u obou nejdřív rozhodnout rozsah, vzor Kleti
-u lanovek), 11 rozhleden (u každé nutno doložit občerstvení — klíč
-DATA-23; rozhledna-spicak souvisí s katalogovou „Chatou na Špičáku",
-prověřit spolu; POZOR ROZSAH u rozhledna-korab a rozhledna-libin —
-Michal je 7. 8. výslovně odložil, NEPOVYŠOVAT bez jeho slova) a 2 útulny (forsthaus-odwies, hollbachschwellhutte).
+u lanovek), 6 rozhleden (u každé nutno doložit občerstvení —
+klíč DATA-23; POZOR ROZSAH u rozhledna-korab a rozhledna-libin —
+Michal je 7. 8. výslovně odložil, NEPOVYŠOVAT bez jeho slova;
+`geisskopfturm` čeká na doklad, kdo ho provozuje) a 2 útulny (forsthaus-odwies, hollbachschwellhutte).
