@@ -113,7 +113,25 @@ středisek/lanovek na web, rozhodnout, jestli ji vypsat, nebo odfiltrovat
 ## Tagovaná fronta (krok 4a) — kandidáti s typem z OSM tagů
 
 Sestaveno 6. 8. 2026: kandidáti s `typ` rozhledna/obsluhovana/utulna,
-kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po dvou průchodech 6. 8. zbývá 25.** Rozhodnuto 6. 8.:
+kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po průchodech 6. a 7. 8. zbývá 24.** Rozhodnuto 7. 8.:
+
+- **`klostermannova-rozhledna` POVÝŠEN** (korpus 132) — druhá šumavská
+  rozhledna korpusu: kamenná věž z roku 1938 na Javorníku u Vacova
+  (1066 m), po nástavbě z roku 2003 necelých 40 m, 197 schodů. Bufet
+  pod věží doložen třemi nezávislými prameny (Regiontourist, InfoČesko,
+  OSM `fast_food` 6 m) → klíč zařazení splněn. **Otvírací doba vědomě
+  nezapsána** — prameny popisují dva neslučitelné režimy (sezónní
+  rozvrh s obsluhou dle vacov.cz a InfoČeska × denní přístup
+  5–19 / 7–17 h s bezhotovostním vstupným dle javorniksumava.cz);
+  vzor Kötztinger Hütte. Výška vrcholu 1066 m dle čtyř shodných
+  pramenů proti osamocenému 1089 m u InfoČeska. **Rozsah:** Šumavské
+  podhůří, precedens Svatoboru — kdyby Michal rozhodl jinak, do
+  DATA-29. Kolize jmen s Klostermannovou chatou na Modravě byla
+  rozhodnuta už dřív (dva objekty 30 km od sebe), `_jmenovci.yaml`
+  beze změny. **Weby za gatem znovu:** hansl-huette.de (permission
+  gate) a loderhart.de — druhý pokus 7. 8. dopadl stejně jako první.
+
+Rozhodnuto 6. 8.:
 
 - **`hochwald-hutte` POVÝŠEN** (korpus 129) — chata sekce DAV Deggendorf
   u rozcestí Hölzerne Hand, 910 m; víkendové občerstvení pro veřejnost
@@ -146,13 +164,17 @@ kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po dvou průchodec
   webu součástí publikované Horské chaty Pancíř (jeden objekt, precedens
   Žalý); kandidát se samostatně nepovyšuje a do fronty se nepočítá.
 
-**Weby, které se 6. 8. nenačetly:** hansl-huette.de (permission gate),
-loderhart.de (robots 500) — oba zkusit jindy, jsou to obsluhované objekty
-s vlastním webem, tedy nadějné. **Zbytek fronty (28):** 7 obsluhovaných
+**Weby, které se 6. ani 7. 8. nenačetly:** hansl-huette.de (permission
+gate), loderhart.de — oba zkusit jindy, jsou to obsluhované objekty
+s vlastním webem, tedy nadějné; po druhém neúspěchu jsou to kandidáti
+na jiný pramen (bavorský turistický svaz, NaturFreunde) nebo na
+Michalův pokus z prohlížeče. **Zbytek fronty (24):** 7 obsluhovaných
 (barwurz-resl-huttn, berghaus-loderhart, burglengenfelder-hutte-scb-hutte,
 chata-pod-kleti, chata-zivec, hansl-hutte, kreuzhaus, skihutte-kohlau,
 zakladna-bileho-orla, zelena-chyse — pozn.: Kleť je Blanský les, Živec
 u Písku je mimo Šumavu → u obou nejdřív rozhodnout rozsah, vzor Kleti
-u lanovek), 14 rozhleden (u každé nutno doložit občerstvení — klíč
+u lanovek), 13 rozhleden (u každé nutno doložit občerstvení — klíč
 DATA-23; rozhledna-spicak souvisí s katalogovou „Chatou na Špičáku",
-prověřit spolu) a 2 útulny (forsthaus-odwies, hollbachschwellhutte).
+prověřit spolu; POZOR ROZSAH u kurzova-vez = Čerchov/Český les
+a josefova-vez = Kleť/Blanský les — obě čekají na Michalovo slovo,
+i když u obou je občerstvení doložené) a 2 útulny (forsthaus-odwies, hollbachschwellhutte).

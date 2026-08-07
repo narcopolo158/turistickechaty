@@ -29,6 +29,92 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-07 — denní session: Klostermannova rozhledna na Javorníku (korpus 132)
+
+**Hotovo**
+
+Backlog shora: **DATA-04, DATA-05, DATA-20, DATA-22, DATA-25, DATA-28,
+F1-IMPL, JIZ-01, FOTO-01, DATA-35 i JEST-01 jsou beze změny blokované
+na Michalovi** (telefonáty, kliky v Actions, výběr fotek v adminu,
+sémantika pole `obec`) — u každé je to okomentované přímo v backlogu.
+Pracovní položkou byla tedy **SUM-01**, konkrétně tagovaná fronta
+(krok 4a triáže).
+
+**Nejdřív dva pokusy, které nevyšly:** hansl-huette.de a loderhart.de,
+tedy oba objekty, na které mířilo „příště" z bloku 2, jsou ze sandboxu
+za gatem i napodruhé (permission gate). Po druhém neúspěchu je vedu
+jako kandidáty na jiný pramen — bavorský turistický svaz, u Loderhartu
+NaturFreunde Deutschland (provozovatel dle OSM) — nebo na Michalův
+pokus z prohlížeče. Fronta proto pokračovala rozhlednami.
+
+**Klostermannova rozhledna povýšena** (korpus 132, druhá šumavská
+rozhledna po Poledníku). Kamenná věž na Javorníku u Vacova (1066 m),
+postavená v roce 1938 podle projektu sušického architekta Karla Houry
+a slavnostně zpřístupněná 28. srpna po osmašedesáti dnech stavby;
+myšlenka je z roku 1914, kdy schůzi Klostermannových přátel ukončila
+mobilizace. Financovala ji sbírka spolu se sušickým odborem KČT
+a kašperskohorskou skupinou Národní jednoty pošumavské. Po záboru
+pohraničí vedla hranice pár metrů od věže a za války z ní Němci
+hlídkovali proti letadlům; když ji přerostl les, zavřela se, a po
+nástavbě nové plošiny se 5. 7. 2003 otevřela znovu. Klíč zařazení:
+bufet pod věží doložen **třemi nezávislými prameny** (Regiontourist,
+InfoČesko, OSM `fast_food` 6 m od paty).
+
+**Co se vědomě NEzapsalo — a proč:**
+
+- **Otvírací doba.** Prameny nepopisují rozporné hodiny téhož režimu,
+  ale **dva neslučitelné režimy provozu**: vacov.cz a InfoČesko vedou
+  sezónní rozvrh s obsluhou (polední přestávka ve všední dny, kontakt
+  na správkyni, vstupné 30/10 Kč), javorniksumava.cz denní přístup
+  5–19 h v dubnu až září a 7–17 h v říjnu až březnu s bezhotovostním
+  vstupným 50 Kč kartou / 60 Kč SMS. Vypadá to na starší a novější
+  stav (obsluha × turniket), doložit to ale neumíme — pole zůstalo
+  prázdné a próza to říká nahlas. Vzor Kötztinger Hütte a Svatoboru.
+- **Výška vrcholu 1089 m** (InfoČesko) — osamocené číslo proti čtyřem
+  shodným pramenům s 1066 m. Týž vzorec jako u Gibachtu z 6. 8., jen
+  obráceně: tam byl osamocený katalog, tady osamocený portál.
+- **Výška věže číslem** — model pro ni pole nemá a prameny se stejně
+  rozcházejí (39,6 m × „téměř 40" × 39 m dle OSM, původní 24 × 25 m);
+  próza mluví o „necelých čtyřiceti metrech".
+- **Rok uzavření** kvůli vzrostlému lesu (konec 70. let dle hrady.cz ×
+  1997 dle vacov.cz) a **nocleh** (žádný pramen; Regiontourist vypisuje
+  jen ubytování v okolí obce, což není nocleh na místě).
+
+**Kontroly:** `npm run kontrola` zelené (0 vad, fronta 0, kolize 0 —
+jmenovec Klostermannovy chaty na Modravě byl rozhodnut už dřív, soubor
+`_jmenovci.yaml` se neměnil), `tsc` čistý. Ban-scan 289 zásahů proti
+288: jediný nový je standardní závěrečná věta „polohu nese
+OpenStreetMap" (týž vzor jako u desítek profilů) — posouzeno, ponecháno.
+
+**Příště**
+
+① tagovaná fronta dál — z rozhleden jsou nejblíž `geisskopfturm`
+(Geisskopfhütte 79 m od věže, DE, rozsah bez otazníku) a dvojice
+`rozhledna-spicak` + katalogová „Chata na Špičáku", které se mají
+prověřit spolu; ② `kurzova-vez` (Čerchov) a `josefova-vez` (Kleť) mají
+občerstvení doložené, ale **čekají na rozhodnutí o rozsahu** — nebrat
+je, dokud Michal neodpoví; ③ Rovina a Churáňov dál čekají na živý
+pramen nebo telefonát.
+
+**Otázky pro Michala**
+
+① **Rozsah — pořád tatáž otázka, ale už brzdí konkrétní práci.**
+Klostermannova rozhledna leží v Šumavském podhůří (precedens Svatoboru
+a Frýdlantských výšin), a povýšil jsem ji podle toho. Ve frontě ale
+čekají čtyři objekty, kde je odpověď nutná předem: **Kleť/Blanský les**
+(Josefova věž + Horská chata Kleť), **Čerchov/Český les** (Kurzova věž
++ Chata Čerchov), **Koráb** a **Libín**. Jedno slovo odemkne čtyři
+profily naráz.
+② **Klostermannova rozhledna — jeden telefonát na +420 733 666 495**
+zavře otvíračku (obsluha × turniket) a rovnou i to, jestli bufet pod
+věží funguje celou sezónu, nebo jen o víkendech.
+③ **Klik v Actions, když bude čas:** DATA-35 pro `jizerske-hory`
+(oprava 637cbb4 je na main, teď projde), DATA-06 výšky `sumava`
+(čekají nové šumavské přístupy), DATA-28 3D terén.
+④ Starší otevřené beze změny: Gibacht (tři domény, nocleh, GPS),
+Dreisessel doména, Osser lůžka, rokVzniku čtveřice, DATA-20 `obec`,
+výběr fotek v adminu (31 profilů čeká).
+
 ## 2026-08-06 (blok 2, s Michalem online) — doběhy tří workflow zpracovány; Šumava vstoupila do tagované fronty (+3 profily, 2 vyřazení)
 
 **Michal spustil DATA-06 (jizerske-hory), DATA-05 otisky a DATA-28** —

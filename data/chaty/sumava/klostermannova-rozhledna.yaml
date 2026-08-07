@@ -1,0 +1,246 @@
+# Klostermannova rozhledna — povýšen z kandidáta DATA-01 triáží tagované
+# fronty (7. 8. 2026, vzor Poledníku: OSM × obec Vacov × hrady.cz ×
+# regionální průvodci). Klíč zařazení dle rozhodnutí Michala z 28. 7. 2026:
+# rozhledna s občerstvením (bufet pod věží doložen třemi prameny).
+# Vše verified: false.
+
+nazev: Klostermannova rozhledna
+slug: klostermannova-rozhledna
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Rozhledna na Javorníku
+    poznamka: >-
+      běžné místní pojmenování podle vrcholu; obec Vacov ji vede jako
+      „rozhlednu Karla Klostermanna"
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1382182
+lng: 13.6534636
+vyska: 1066
+obec: Vacov
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/1323174438 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška vrcholu Javorník 1066 m shodně
+    čtyři prameny: web obce Vacov (vacov.cz, načteno 7. 8. 2026),
+    hrady.cz (načteno 7. 8. 2026), obecní web osady Javorník
+    (javorniksumava.cz, načteno 7. 8. 2026) i Regiontourist (načteno
+    7. 8. 2026). Pátý pramen, InfoČesko (načteno 7. 8. 2026), vede
+    1089 m — osamocené číslo proti čtyřem shodným, nezapsáno. Obec
+    Vacov, osada Javorník; adresa u kontaktu na rozhlednu zní
+    „Javorník 15, Vacov". V terénu neověřeno.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh přímo u věže nezmiňuje žádný pramen — pole se nevyplňuje
+# (nedomýšlet ani „ne"). Regiontourist vypisuje ubytování až v okolí
+# (penziony a chaty v obci), to ale není nocleh na místě.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: kiosek
+overeniObcerstveni:
+  source: >-
+    Regiontourist (načteno 7. 8. 2026): „Pod věží je občerstvení, můžete
+    posedět na lavicích." InfoČesko (načteno 7. 8. 2026) vede
+    u rozhledny občerstvení rovněž. Nezávisle OSM: stánek s občerstvením
+    (fast_food) 6 m od věže,
+    https://www.openstreetmap.org/node/1323174711. Sortiment ani
+    otvírací dobu bufetu nevede žádný z pramenů.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: prameny popisují dva neslučitelné režimy
+# (obsluha se sezónním rozvrhem × denní přístup s bezhotovostním
+# odbavením) — viz overeniProvoz a interní poznámky. Vzor Kötztinger
+# Hütte a Svatoboru: raději nic než jeden ze dvou rozporných rozvrhů.
+overeniProvoz:
+  source: >-
+    Web obce Vacov, stránka provozní doby (vacov.cz, načteno
+    7. 8. 2026): celoroční sezónní rozvrh s obsluhou — od dubna do
+    října denně či o víkendech s polední přestávkou ve všední dny,
+    od listopadu do března jen o víkendech a svátcích; u rozvrhu je
+    telefonní kontakt na správkyni. InfoČesko (načteno 7. 8. 2026)
+    vede užší rozvrh jen pro červen až září a dodává, že za
+    nepříznivého počasí bývá zavřeno. Obecní web osady Javorník
+    (javorniksumava.cz, načteno 7. 8. 2026) proti tomu popisuje denní
+    přístup od 5 do 19 hodin v dubnu až září a od 7 do 17 hodin
+    v říjnu až březnu, se vstupným placeným výhradně bezhotovostně —
+    to je jiný provozní režim než rozvrh s obsluhou. Rozvrhy se
+    neslučují a který platí dnes, z pramenů nepoznáme; do
+    `otviraciDoba` se proto nezapsal žádný. Vstupné se nezapisuje
+    (mění se a prameny se v něm rovněž rozcházejí). Provozovatel:
+    obec Vacov dle OSM i hrady.cz, na správě se podílí Nadační fond
+    Karla Klostermanna dle vacov.cz i javorniksumava.cz.
+  verified: false
+  checked: '2026-08-07'
+
+kontakty:
+  telefon: '+420733666495'
+  web: https://www.javorniksumava.cz/vylety-a-sluzby/2-priroda-pamatky/rozhledna-na-javorniku.html
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1938
+milniky:
+  - rok: 1914
+    udalost: >-
+      Schůze přátel spisovatele Karla Klostermanna, na níž měl padnout
+      návrh na stavbu rozhledny, skončila předčasně kvůli vyhlášení
+      mobilizace
+  - rok: 1938
+    udalost: >-
+      Kamenná věž postavena podle projektu sušického architekta Karla
+      Houry a 28. srpna slavnostně zpřístupněna
+  - rok: 2003
+    udalost: >-
+      Po nástavbě nové vyhlídkové plošiny znovuotevřena 5. července
+overeniHistorie:
+  source: >-
+    hrady.cz (načteno 7. 8. 2026): stavba zahájena 21. června 1938,
+    slavnostně zpřístupněna 28. srpna 1938; projekt architekta Karla
+    Houry ze Sušice; stavbu zaplatila veřejná sbírka spolu se sušickým
+    odborem Klubu českých turistů a kašperskohorskou skupinou Národní
+    jednoty pošumavské; zárodkem myšlenky byla schůze Klostermannových
+    přátel v roce 1914, přerušená mobilizací; za okupace sloužila věž
+    jako protiletadlová pozorovatelna; nadační fond vznikl 2001, práce
+    začaly v září 2002 a znovuotevřeno bylo 5. července 2003. Web obce
+    Vacov (načteno 7. 8. 2026) vede tytéž letopočty 1938 / 2001 / 5. 7.
+    2003 a dodává, že po záboru pohraničí v říjnu 1938 vedla hranice
+    pár metrů od věže. Obecní web osady Javorník (načteno 7. 8. 2026)
+    uvádí, že stavba trvala 68 dní. Kdy věž kvůli vzrostlému lesu
+    přestala sloužit, si prameny odporují (konec 70. let dle hrady.cz
+    × rok 1997 dle vacov.cz) — do milníků se proto rok uzavření
+    nezapisuje.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Po záboru pohraničí na podzim 1938 vedla státní hranice jen pár
+      metrů od věže a Javorník se stal na dobu okupace nejvyšší horou
+      okleštěných Čech.
+    kategorie: jine
+    zdroj: >-
+      vacov.cz a InfoČesko (načteno 7. 8. 2026) — shodné tvrzení dvou
+      pramenů, redakcí neověřeno
+  - text: >-
+      Kamennou věž postavili za osmašedesát dní: základní kámen padl
+      21. června 1938 a 28. srpna už se z ní dívali první návštěvníci.
+    kategorie: jine
+    zdroj: >-
+      hrady.cz (data stavby) a javorniksumava.cz (počet dní), načteno
+      7. 8. 2026
+  - text: >-
+      Na vyhlídkovou plošinu vede 197 schodů.
+    kategorie: jine
+    zdroj: >-
+      hrady.cz, InfoČesko i javorniksumava.cz (načteno 7. 8. 2026) —
+      tři shodné prameny
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná věž z roku 1938 na vrcholu Javorníku (1066 m), pojmenovaná po
+  spisovateli Karlu Klostermannovi. Když ji přerostl les, dostala
+  nástavbu a od roku 2003 se z ní zase kouká; pod věží stojí stánek
+  s občerstvením a lavice k posezení.
+text:
+  - >-
+    Javorník je nejvyšší kopec širokého okolí a rozhledna na něm stojí
+    už od roku 1938. Postavili ji podle projektu sušického architekta
+    Karla Houry a slavnostně zpřístupnili 28. srpna toho roku — od
+    položení základního kamene uplynulo osmašedesát dní. Nápad je ale
+    starší: sešli se kvůli němu přátelé spisovatele Karla Klostermanna
+    už v roce 1914 a jejich schůzi tehdy ukončila mobilizace.
+  - >-
+    Dějiny se pak k věži chovaly nevlídně. Po záboru pohraničí na
+    podzim 1938 vedla hranice jen pár metrů od ní a za války z ní
+    německá armáda hlídkovala proti letadlům. Později rozhlednu
+    přerostl les a výhled zmizel — kdy přesně se zavřela, si prameny
+    protiřečí, jeden mluví o konci sedmdesátých let, druhý o roce
+    1997. Znovu se otevřela 5. července 2003, kdy nad původní střechu
+    přibyla nová vyhlídková plošina; věž tím povyrostla ze zhruba
+    pětadvaceti metrů na dnešních necelých čtyřicet. Nahoru vede 197
+    schodů.
+  - >-
+    Pod věží je stánek s občerstvením a lavice, kde se dá posedět;
+    nocleh přímo na místě nikdo nenabízí. Rozhlednu spravuje obec Vacov
+    spolu s Nadačním fondem Karla Klostermanna a vstupné se platí.
+    Trasy s délkami a převýšením najdete u přístupů níže.
+  - >-
+    Údaje na téhle stránce jsme převzali z obecních stránek a portálů
+    o rozhlednách; polohu nese OpenStreetMap. Otvírací dobu záměrně
+    neuvádíme — prameny popisují dva neslučitelné režimy provozu
+    (sezónní rozvrh s obsluhou proti dennímu přístupu s bezhotovostním
+    odbavením) a který z nich platí, nevíme. Před cestou se vyplatí
+    zavolat. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Web obce Vacov — výška vrcholu, letopočty 1938 / 2001 / 2003,
+      hranice protektorátu pár metrů od věže, sezónní rozvrh provozní
+      doby a kontakt na správkyni (načteno 7. 8. 2026)
+    url: https://www.vacov.cz/vacov/fr.asp?tab=snet&id=3648
+  - popis: >-
+      hrady.cz — data stavby 1938, architekt Karel Houra, financování
+      sbírkou a spolky, schůze z roku 1914, 197 schodů, rekonstrukce
+      2002–2003 (načteno 7. 8. 2026)
+    url: https://www.hrady.cz/rozhledna-klostermannova-rozhledna
+  - popis: >-
+      Obecní web osady Javorník — výška věže 39,6 m, plošina ve 30 m,
+      197 schodů, stavba za 68 dní, denní režim přístupu
+      s bezhotovostním vstupným (načteno 7. 8. 2026)
+    url: https://www.javorniksumava.cz/vylety-a-sluzby/2-priroda-pamatky/rozhledna-na-javorniku.html
+  - popis: >-
+      Regiontourist — občerstvení a lavice pod věží, výška vrcholu,
+      adresa a telefon (načteno 7. 8. 2026)
+    url: https://www.regiontourist.cz/co-podniknout/klostermannova-rozhledna-na-javorniku/
+  - popis: >-
+      InfoČesko — občerstvení u rozhledny, 197 schodů, užší sezónní
+      rozvrh, hranice protektorátu (načteno 7. 8. 2026)
+    url: https://www.infocesko.cz/content/sumava-technicke-zajimavosti-klostermannova-rozhledna-javornik.aspx
+  - popis: >-
+      OpenStreetMap (GPS věže, stánek s občerstvením 6 m od paty; ODbL)
+    url: https://www.openstreetmap.org/node/1323174438
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/klostermannova-rozhledna.yaml triáží
+  tagované fronty (7. 8. 2026). Klíč zařazení: rozhledna s doloženým
+  občerstvením (rozhodnutí Michala 28. 7. 2026) — bufet pod věží doložen
+  třemi nezávislými prameny (Regiontourist, InfoČesko, OSM).
+
+  ROZSAH: Javorník u Vacova leží v Šumavském podhůří, ne na hlavním
+  hřebeni — týž precedens jako Svatobor (6. 8.) a Frýdlantské výšiny
+  v Jizerkách. Kdyby Michal rozhodl jinak, přesun do DATA-29.
+
+  ROZPOR PROVOZNÍ DOBY (proto otviraciDoba prázdná): vacov.cz vede
+  celoroční sezónní rozvrh s obsluhou a vstupným 30/10 Kč,
+  javorniksumava.cz denní přístup 5–19 h (IV–IX) / 7–17 h (X–III)
+  s bezhotovostním vstupným 50 Kč kartou nebo 60 Kč SMS, InfoČesko
+  rozvrh jen pro VI–IX se vstupem přes správkyni. Vypadá to na starší
+  a novější stav (obsluha × turniket), ale doložit to neumíme.
+  KANDIDÁT NA DATA-04: jeden telefonát na +420 733 666 495 zavře
+  otvíračku i to, zda bufet pod věží funguje sezónně, nebo jen o
+  víkendech.
+
+  ROZPOR VÝŠKY VRCHOLU: 1066 m (vacov.cz, hrady.cz, javorniksumava.cz,
+  Regiontourist) × 1089 m (InfoČesko) — zapsáno 1066 dle čtyř shodných.
+
+  ROZPOR PŮVODNÍ VÝŠKY VĚŽE: 24 m (vacov.cz) × 25 m (hrady.cz); dnešní
+  39,6 m (javorniksumava.cz, InfoČesko) × „téměř 40 m" (Regiontourist)
+  × 39 m dle OSM — próza proto mluví o „necelých čtyřiceti metrech"
+  a číslo se do pole nezapisuje (pole pro výšku věže model nemá).
+
+  ROK UZAVŘENÍ kvůli vzrostlému lesu: konec 70. let (hrady.cz) × 1997
+  (vacov.cz) — do milníků nezapsán.
+
+  NEDOLOŽENO (nezapsáno): nocleh na místě (žádný pramen; Regiontourist
+  vypisuje jen ubytování v okolí), sortiment a otvírací doba bufetu,
+  vstupné číslem. Vlastní doména javornik.cz se ze sandboxu nenačetla
+  (404 na všech nalezených cestách) — proto je v kontaktech obecní web
+  osady. Fotku dodá příští běh DATA-02.
