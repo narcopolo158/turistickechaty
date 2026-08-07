@@ -113,7 +113,39 @@ středisek/lanovek na web, rozhodnout, jestli ji vypsat, nebo odfiltrovat
 ## Tagovaná fronta (krok 4a) — kandidáti s typem z OSM tagů
 
 Sestaveno 6. 8. 2026: kandidáti s `typ` rozhledna/obsluhovana/utulna,
-kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po průchodech 6. a 7. 8. zbývá 24.** Rozhodnuto 7. 8.:
+kteří nejsou publikovaní ani vyřazení. **Výchozích 32; po průchodech 6. a 7. 8. zbývá 22.**
+
+**ROZSAH ROZHODNUT (Michal 7. 8. 2026, doslova: „kleť i čerchov určitě
+zařaď, koráb a libín prověřím"):** Kleť (Blanský les) i Čerchov (Český
+les) do průvodce PATŘÍ — zařazují se do oblasti `sumava` stejnou cestou
+jako Šumavské podhůří (Svatobor, Javorník). **Koráb a Libín zůstávají ve
+frontě a nepovyšují se**, dokud Michal neodpoví. Oba objekty odemčené
+tímto rozhodnutím byly povýšeny týž den (níž).
+
+Rozhodnuto 7. 8.:
+
+- **`horska-chata-klet` + `josefova-vez` POVÝŠENY JAKO JEDEN PROFIL**
+  (korpus 134) — vzor Žalý / Královka / Svatobor: provozovatelem
+  rozhledny je dle Kudy z nudy Horská chata Kleť a vlastní doména se
+  sama představuje jako „horská chata, rozhledna, penzion a hostel".
+  Josefova věž z roku 1825 je nejstarší kamenná rozhledna v Česku (dva
+  prameny to nesou v názvu), chata má restauraci i nocleh ve dvou
+  úrovních. **rokVzniku prázdný** — areál má dvě stavby a dvě data (věž
+  1825, Tereziina chata 1925) a že je dnešní chata touž budovou, netvrdí
+  žádný pramen. **otviraciDoba prázdná** — prameny vedou zvlášť letní
+  provoz restaurace a zvlášť provoz věže, mimosezónní hodiny nikdo.
+  Kandidát `chata-pod-kleti` je JINÝ objekt 2,3 km severně, zůstává ve
+  frontě.
+- **`kurzova-vez` POVÝŠENA** (korpus 133) — kamenná věž z roku 1905 na
+  Čerchově (1042 m), spravuje ji domažlický odbor KČT; hospůdka
+  s chodskou kuchyní u paty doložena třemi prameny. Historie unese
+  celou epochu: zábor 1938, pohraniční stráž od 1950, otevření po roce
+  1989, návrat KČT 1999 a rekonstrukce 2000. Známkové místo č. 341.
+  **`chata-cerchov` se NEPOVYŠUJE a zůstává zvlášť** — jestli je
+  hospůdka u věže a Chata Čerchov (64 m) jeden provoz, nebo dva
+  sousedi, prameny nerozhodují; kandidát na DATA-04.
+
+Rozhodnuto 7. 8. (dřív téhož dne):
 
 - **`klostermannova-rozhledna` POVÝŠEN** (korpus 132) — druhá šumavská
   rozhledna korpusu: kamenná věž z roku 1938 na Javorníku u Vacova
@@ -168,13 +200,12 @@ Rozhodnuto 6. 8.:
 gate), loderhart.de — oba zkusit jindy, jsou to obsluhované objekty
 s vlastním webem, tedy nadějné; po druhém neúspěchu jsou to kandidáti
 na jiný pramen (bavorský turistický svaz, NaturFreunde) nebo na
-Michalův pokus z prohlížeče. **Zbytek fronty (24):** 7 obsluhovaných
+Michalův pokus z prohlížeče. **Zbytek fronty (22):** 7 obsluhovaných
 (barwurz-resl-huttn, berghaus-loderhart, burglengenfelder-hutte-scb-hutte,
 chata-pod-kleti, chata-zivec, hansl-hutte, kreuzhaus, skihutte-kohlau,
 zakladna-bileho-orla, zelena-chyse — pozn.: Kleť je Blanský les, Živec
 u Písku je mimo Šumavu → u obou nejdřív rozhodnout rozsah, vzor Kleti
-u lanovek), 13 rozhleden (u každé nutno doložit občerstvení — klíč
+u lanovek), 11 rozhleden (u každé nutno doložit občerstvení — klíč
 DATA-23; rozhledna-spicak souvisí s katalogovou „Chatou na Špičáku",
-prověřit spolu; POZOR ROZSAH u kurzova-vez = Čerchov/Český les
-a josefova-vez = Kleť/Blanský les — obě čekají na Michalovo slovo,
-i když u obou je občerstvení doložené) a 2 útulny (forsthaus-odwies, hollbachschwellhutte).
+prověřit spolu; POZOR ROZSAH u rozhledna-korab a rozhledna-libin —
+Michal je 7. 8. výslovně odložil, NEPOVYŠOVAT bez jeho slova) a 2 útulny (forsthaus-odwies, hollbachschwellhutte).

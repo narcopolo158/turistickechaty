@@ -1,0 +1,242 @@
+# Kurzova věž — povýšen z kandidáta DATA-01 triáží tagované fronty
+# (7. 8. 2026). ROZSAH: Český les, zařazen na základě rozhodnutí Michala
+# ze 7. 8. 2026 („Kleť i Čerchov určitě zařaď"). Klíč zařazení dle
+# rozhodnutí z 28. 7. 2026: rozhledna s občerstvením — hospůdka u věže
+# doložena třemi prameny. Vše verified: false.
+
+nazev: Kurzova věž
+slug: kurzova-vez
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Kurzova rozhledna
+    poznamka: běžnější podoba jména na turistických portálech (OSM alt_name)
+  - nazev: Čerchovská rozhledna
+    poznamka: alternativní jméno dle OSM
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.3832364
+lng: 12.7840502
+vyska: 1042
+obec: Česká Kubice
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/107223786 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška vrcholu Čerchov 1042 m shodně
+    vlastní web věže (kurzovavez.cz, načteno 7. 8. 2026 — číslo nese
+    i v titulku) a Kudy z nudy (načteno 7. 8. 2026); Rozhlednový svět
+    (načteno 7. 8. 2026) vede 1036 m — osamocené číslo proti dvěma
+    shodným, nezapsáno. Adresa dle vlastního webu zní „Český les — hora
+    Čerchov, 344 01 Pec"; obec zapsána podle katastru vrcholu, který
+    OSM vede v České Kubici — v terénu neověřeno a Pec z adresy se s ní
+    neshoduje, viz interní poznámky.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh ve věži ani u ní nezmiňuje žádný pramen — pole se nevyplňuje.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: kiosek
+overeniObcerstveni:
+  source: >-
+    Vlastní web věže (kurzovavez.cz, načteno 7. 8. 2026) vede
+    u rozhledny občerstvení s chodskou kuchyní — koláče, bramboráky,
+    halušky, grilované klobásy a čepované pivo. Rozhlednový svět
+    (načteno 7. 8. 2026): „od roku 2004 funguje nedaleko rozhledny malé
+    občerstvení". Nezávisle OSM: Hospůdka (fast_food) 6 m od věže,
+    https://www.openstreetmap.org/node/13970695352. Jestli hospůdku
+    vede týž provozovatel jako věž, prameny nerozhodují — vlastní web
+    ji uvádí mezi svými službami, Rozhlednový svět ji popisuje jako
+    samostatnou. Nezapisujeme ani jedno.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  V červenci a srpnu denně 10:00–17:00, v květnu, červnu, září a říjnu
+  jen o víkendech 10:00–17:00. Mimo sezónu zavřeno. Ve věži se platí
+  vstupné.
+overeniProvoz:
+  source: >-
+    Vlastní web věže (kurzovavez.cz, načteno 7. 8. 2026) a Kudy z nudy
+    (načteno 7. 8. 2026) vedou shodný rozvrh: červenec–srpen denně
+    10–17 h, květen, červen, září a říjen jen o víkendech 10–17 h.
+    Provozovatel dle obou pramenů: domažlický odbor Klubu českých
+    turistů, správu na místě vede paní Martina Jenčová (kontakt níže).
+    Výše vstupného se nezapisuje (mění se; k datu načtení vedl vlastní
+    web 40 Kč a 20 Kč sníženého).
+  verified: false
+  checked: '2026-08-07'
+
+kontakty:
+  telefon: '+420722166875'
+  email: marfie@seznam.cz
+  web: https://www.kurzovavez.cz/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1905
+milniky:
+  - rok: 1894
+    udalost: >-
+      Na vrcholu Čerchova stanula první, dřevěná rozhledna — postavena
+      za třiatřicet dní
+  - rok: 1905
+    udalost: >-
+      Dnešní kamennou věž slavnostně otevřeli 16. července
+  - rok: 1938
+    udalost: Vrchol i s věží zabralo německé vojsko
+  - rok: 1950
+    udalost: >-
+      Čerchov obsadila pohraniční stráž a na desítky let se stal pro
+      veřejnost nepřístupným
+  - rok: 1999
+    udalost: >-
+      Věž se vrátila domažlickému odboru Klubu českých turistů
+  - rok: 2000
+    udalost: Dokončena rekonstrukce a věž se 1. července znovu otevřela
+overeniHistorie:
+  source: >-
+    Vlastní web věže (kurzovavez.cz, načteno 7. 8. 2026): dřevěná věž
+    z roku 1894 vysoká 17 m postavená za 33 dní, kamenná věž stavěna
+    1904–1905 a slavnostně otevřena 16. července 1905, v letech
+    1999–2000 vrácena domažlickému odboru KČT a zrekonstruována.
+    Rozhlednový svět (načteno 7. 8. 2026) doplňuje základní kámen
+    23. května 1904, přestavbu podle návrhu Karla Schöpfera v roce
+    1936, předání KČT v roce 1999 a dokončení rekonstrukce
+    1. července 2000. Kudy z nudy (načteno 7. 8. 2026) vede zábor
+    německým vojskem v roce 1938, obsazení pohraniční stráží v roce
+    1950 a zpřístupnění veřejnosti po roce 1989; od roku 2021 podle
+    něj na vrcholu probíhá revitalizace.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Čerchov je se svými 1042 metry nejvyšší horou Českého lesa.
+    kategorie: vyska
+    zdroj: >-
+      kurzovavez.cz a Kudy z nudy (načteno 7. 8. 2026) — shodné tvrzení
+      dvou pramenů, redakcí neověřeno
+  - text: >-
+      Na vyhlídkovou plošinu vede 129 schodů.
+    kategorie: jine
+    zdroj: >-
+      kurzovavez.cz a Rozhlednový svět (načteno 7. 8. 2026) — dva
+      shodné prameny
+  - text: >-
+      Kurzova věž je známkové místo číslo 341 vydavatele turistických
+      známek.
+    kategorie: jine
+    zdroj: >-
+      turisticke-znamky.cz (nalezeno 7. 8. 2026) — číslo z katalogu
+      vydavatele, redakcí neověřeno
+  - text: >-
+      První, dřevěnou rozhlednu postavili na Čerchově v roce 1894 za
+      pouhých třiatřicet dní.
+    kategorie: jine
+    zdroj: kurzovavez.cz (načteno 7. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná věž z roku 1905 na vrcholu Čerchova (1042 m) v Českém lese.
+  Půl století stála v zakázaném pohraničním pásmu a veřejnost se k ní
+  dostala až po roce 1989; dnes ji spravují domažličtí turisté a u paty
+  se dá dát bramborák nebo halušky.
+text:
+  - >-
+    Na Čerchov se chodí pro výhled a rozhlednu tu postavili dvakrát.
+    První, dřevěnou, zvládli v roce 1894 za třiatřicet dní; dnešní
+    kamennou věž stavěli o deset let později a slavnostně ji otevřeli
+    16. července 1905. Nahoru vede 129 schodů.
+  - >-
+    Dvacáté století bylo k vrcholu tvrdé. V roce 1938 ho zabralo
+    německé vojsko, od roku 1950 tu seděla pohraniční stráž a Čerchov
+    se pro turisty na desítky let zavřel — dnešní návštěvník míjí
+    cestou k věži i mnohem vyšší betonovou vojenskou věž z té doby.
+    Otevřelo se to až po roce 1989 a v roce 1999 dostal věž zpátky
+    domažlický odbor Klubu českých turistů, který ji následující rok
+    zrekonstruoval a 1. července 2000 znovu otevřel. Provoz vede
+    dodnes.
+  - >-
+    Věž je otevřená v sezóně: v červenci a srpnu denně, v květnu,
+    červnu, září a říjnu jen o víkendech, vždy od deseti do pěti;
+    platí se vstupné. U paty stojí občerstvení s chodskou kuchyní —
+    koláče, bramboráky, halušky, klobásy a čepované pivo. Přespat se
+    tu nedá, žádný pramen nocleh nezmiňuje. Trasy s délkami
+    a převýšením najdete u přístupů níže.
+  - >-
+    Údaje na téhle stránce jsou z vlastního webu věže, z turistických
+    portálů a z rozhlednového katalogu; polohu nese OpenStreetMap.
+    Výšku věže neuvádíme číslem — prameny se rozcházejí mezi
+    devatenácti metry a čtyřiadvaceti, které vede mapový podklad.
+    Nedaleko věže stojí ještě Chata Čerchov; jestli je to týž provoz,
+    nebo soused, jsme z pramenů nezjistili, a proto ji vedeme zvlášť.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web Kurzovy věže — výška vrcholu, sezónní otvírací doba,
+      vstupné, chodské občerstvení, 129 schodů, historie 1894 / 1905 /
+      1999–2000, kontakt a provozovatel (načteno 7. 8. 2026)
+    url: https://www.kurzovavez.cz/
+  - popis: >-
+      Kudy z nudy — výška 1042 m, otvírací doba, správa domažlického
+      odboru KČT, zábor 1938, pohraniční stráž 1950, otevření po roce
+      1989, revitalizace od 2021, vojenská betonová věž (načteno
+      7. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/kurzova-rozhledna-na-cerchove
+  - popis: >-
+      Rozhlednový svět — výška věže 19,2 m, 129 schodů, základní kámen
+      23. 5. 1904, přestavba 1936, předání KČT 1999, dokončení
+      rekonstrukce 1. 7. 2000, občerstvení od roku 2004 (načteno
+      7. 8. 2026)
+    url: https://www.rozhlednovysvet.cz/rozhledna/cerchov
+  - popis: >-
+      Turistické známky — známkové místo č. 341 „Kurzova věž Čerchov"
+      (nalezeno 7. 8. 2026)
+    url: https://www.turisticke-znamky.cz/znamky/kurzova-vez-cerchov-c341
+  - popis: OpenStreetMap (GPS věže, Hospůdka 6 m od paty; ODbL)
+    url: https://www.openstreetmap.org/way/107223786
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/kurzova-vez.yaml triáží tagované
+  fronty (7. 8. 2026). Klíč zařazení: rozhledna s doloženým občerstvením
+  (rozhodnutí Michala 28. 7. 2026) — hospůdka doložena třemi prameny
+  (vlastní web, Rozhlednový svět, OSM).
+
+  ROZSAH ROZHODNUT: Michal 7. 8. 2026 — „Kleť i Čerchov určitě zařaď".
+  Čerchov je Český les, ne Šumava v užším smyslu; do oblasti `sumava`
+  patří stejným způsobem jako Šumavské podhůří (Svatobor, Javorník).
+  Koráb a Libín Michal týmž dechem odložil („prověřím") — ty ve frontě
+  dál čekají.
+
+  CHATA ČERCHOV JE ZATÍM ZVLÁŠŤ: kandidát `chata-cerchov` (OSM
+  restaurant, 64 m od věže) se nepovyšuje. Vlastní web věže hospůdku
+  uvádí mezi svými službami, Rozhlednový svět mluví o samostatném
+  občerstvení „nedaleko rozhledny" a Kudy z nudy o „Horské chatě
+  Čerchov" v okolí — jestli jde o jeden provoz (vzor Žalý/Svatobor),
+  nebo o dva sousedy, prameny nerozhodují. NEROZHODOVAT bez pramene;
+  kandidát na DATA-04, jeden telefonát na +420 722 166 875 to zavře.
+
+  ROZPOR VÝŠKY VĚŽE (proto nikde číslem): 19 m dle vlastního webu,
+  19,2 m dle Rozhlednového světa, 24 m dle OSM. Próza mluví o rozporu
+  nahlas. Model pro výšku věže pole nemá.
+
+  ROZPOR VÝŠKY VRCHOLU: 1042 m (vlastní web + Kudy z nudy) × 1036 m
+  (Rozhlednový svět) — zapsáno 1042 dle dvou shodných.
+
+  OBEC NEJISTÁ: vlastní web vede poštovní adresu „344 01 Pec", katastr
+  vrcholu ale spadá pod Českou Kubici. Zapsána Česká Kubice, rozpor
+  poznamenán — souvisí s otevřenou otázkou DATA-20 (co pole `obec`
+  vlastně znamená: katastr, poštovní adresa, nebo nejbližší sídlo).
+
+  NEDOLOŽENO (nezapsáno): nocleh (žádný pramen), sortiment a otvírací
+  doba hospůdky, vstupné číslem, rok postavení vojenské betonové věže,
+  co přesně obnáší revitalizace od roku 2021. Známka č. 341 je zatím
+  jen zajímavost — do sběratelské vrstvy ji zařadí DATA-22. Fotku dodá
+  příští běh DATA-02.

@@ -69,6 +69,34 @@ const PRIZNANI = new RegExp(
   'iu',
 )
 
+/**
+ * Jmenuje próza obec? Původní podoba brala prvních PĚT ZNAKŮ jména obce
+ * a hledala je v próze jako holý podřetězec — dvojí díra, kterou odhalilo
+ * povýšení Kurzovy věže 7. 8. 2026: jakmile se do korpusu dostala obec
+ * „Česká Kubice", základ „česká" se trefil doprostřed slova „severočeská"
+ * a kontrola obvinila Raisovu chatu na Zvičině, že jmenuje obec o dvě stě
+ * kilometrů dál. Falešné obvinění publikovaného profilu je horší než
+ * propuštěný nález, proto se hledá takto:
+ *   - jen slova jména delší než dva znaky (předložky „nad", „pod", „u"
+ *     by trefily cokoli),
+ *   - dlouhé slovo musí v próze stát jako PRVNÍCH PĚT ZNAKŮ SLOVA (kvůli
+ *     skloňování: „Špindlerova Mlýna" k obci „Špindlerův Mlýn"), krátké
+ *     slovo se musí shodovat CELÉ (aby bavorská obec „Lam" nesebrala
+ *     „Lamberk" — a aby se přitom vůbec dala najít; kdyby se krátká slova
+ *     zahazovala, jednoslovné jméno jako Lam by nešlo chytit nikdy),
+ *   - a musí sedět VŠECHNA — víceslovné jméno se tak nedá potvrdit jedním
+ *     obecným slovem („Česká Kubice" chce vedle „česká" i „kubic").
+ */
+function jmenujeObec(proza: string, obec: string): boolean {
+  const slova = obec.split(/[^\p{L}\p{N}]+/u).filter((s) => s.length > 2)
+  if (!slova.length) return false
+  return slova.every((slovo) => {
+    const zaklad = slovo.slice(0, 5).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    const konec = slovo.length <= 4 ? WB1 : ''
+    return new RegExp(`${WB0}${zaklad}${konec}`, 'iu').test(proza)
+  })
+}
+
 const CISLO_LUZEK = new RegExp(`${WB0}(\\d{1,3})\\s*lůž`, 'iu')
 const VYSKA_M = new RegExp(`${WB0}(\\d\\s?\\d{3}|\\d{3,4})\\s*m(?:\\s*n\\.\\s*m\\.|etr)`, 'iu')
 const V_PROVOZU = new RegExp(
@@ -84,8 +112,7 @@ function kontrolaA(cesta: string, d: Record<string, unknown>, obceVsech: Set<str
 
   if (!d.obec) {
     for (const obec of [...obceVsech].sort()) {
-      const zaklad = obec.slice(0, 5).toLowerCase()
-      if (zaklad && cely.toLowerCase().includes(zaklad) && !priznano) {
+      if (jmenujeObec(cely, obec) && !priznano) {
         n.push(`${cesta} | pole \`obec\` prazdne, proza jmenuje <<${obec}>> a rozpor nikde nepriznava`)
         break
       }

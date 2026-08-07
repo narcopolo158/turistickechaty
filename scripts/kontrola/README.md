@@ -320,4 +320,17 @@ mezeru ve formátování výstupu `zdroje.ts`.
 
 Když test spadne, jsou dvě možnosti: buď je v portu chyba, nebo se kontrola
 **záměrně zpřísnila** — pak se snímek přegeneruje a rozdíl se popíše v commitu.
+
+**Přegenerováno 7. 8. 2026** (soubory `22-obec-dvouslovna.yaml`
+a `23-kontrola-a-obec-podretezec.yaml`, snímek jen o dva vyšší počet
+souborů): kontrola A hledala obec jako prvních PĚT ZNAKŮ jejího jména
+v holém podřetězci prózy. Jakmile do korpusu přibyla obec „Česká
+Kubice“ (povýšení Kurzovy věže), základ „česká“ se trefil doprostřed
+slova „severočeská“ a kontrola obvinila Raisovu chatu na Zvičině
+z jmenování obce o dvě stě kilometrů dál. Nově musí sedět **všechna
+slova** jména, každé na začátku slova v próze (krátká slova celá) —
+na korpusu to srazilo A z 10 zásahů na 6 a všechny čtyři ztracené byly
+ověřeně falešné (próza je neobsahovala ani jako slovo). Falešné
+obvinění publikovaného profilu je horší než propuštěný nález: kontrola,
+které se nedá věřit, se přestane číst.
 Fixtura leží mimo `data/`, takže ji žádná ostrá kontrola ani seed nevidí.

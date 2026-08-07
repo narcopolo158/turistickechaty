@@ -29,6 +29,105 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-07 (blok 2, s Michalem online) — Kleť a Čerchov zařazeny; kontrola A obviňovala nevinný profil
+
+**Michalovo rozhodnutí, doslova:** *„kleť i čerchov určitě zařaď, koráb
+a libín prověřím"*. Rozsah je tím pro dva objekty z tagované fronty
+uzavřen — Kleť (Blanský les) i Čerchov (Český les) patří do oblasti
+`sumava` stejnou cestou jako Šumavské podhůří (Svatobor, Javorník).
+Koráb a Libín zůstávají ve frontě a **nepovyšují se**, dokud Michal
+neodpoví; zapsáno i do SUMAVA-TRIAZ, ať to příští session nepřehlédne.
+
+**Hotovo — dva profily, korpus 134**
+
+- **Kurzova věž** (korpus 133), kamenná věž z roku 1905 na Čerchově
+  (1042 m). Spravuje ji domažlický odbor KČT, u paty je hospůdka
+  s chodskou kuchyní — doložena třemi prameny (vlastní web,
+  Rozhlednový svět, OSM). Historie unese celé století: dřevěná věž
+  z roku 1894 postavená za 33 dní, kamenná otevřená 16. 7. 1905, zábor
+  německým vojskem 1938, pohraniční stráž od 1950 a půlstoletí za
+  závorou, otevření po roce 1989, návrat KČT 1999 a rekonstrukce
+  dokončená 1. 7. 2000. Známkové místo č. 341.
+- **Horská chata Kleť s Josefovou věží — JEDEN PROFIL** (korpus 134),
+  vzor Žalý / Královka / Svatobor: provozovatelem rozhledny je podle
+  Kudy z nudy táž Horská chata Kleť a vlastní doména se sama
+  představuje jako „horská chata, rozhledna, penzion a hostel". Věž
+  z roku 1825 je nejstarší kamenná rozhledna v Česku, chata má
+  restauraci i nocleh ve dvou úrovních. Kandidát `josefova-vez` se
+  samostatně nepovyšuje; `chata-pod-kleti` je JINÝ objekt 2,3 km
+  severně a zůstává ve frontě.
+
+**Co se vědomě NEzapsalo:** u Kleti `rokVzniku` (areál má dvě stavby
+a dvě data — věž 1825, Tereziina chata 1925 — a že je dnešní chata touž
+budovou, netvrdí žádný pramen) a `otviraciDoba` (tři různé rozvrhy pro
+tři různé věci: letní provoz restaurace, provoz věže, mimosezónní
+hodiny, které nevede nikdo). U Čerchova výška věže číslem (19 × 19,2 ×
+24 m dle OSM) a vztah hospůdky k Chatě Čerchov 64 m dál — kandidát
+`chata-cerchov` proto zůstává nepovýšený, je to otázka na jeden
+telefonát. Dál: jméno stavitele Josefovy věže (Jan Nepomuk × Josef ze
+Schwarzenbergu — prameny si odporují, próza mluví o knížecí rodině),
+rok observatoře (1937 × 1957–58), kapacita lůžek na Kleti.
+
+**VEDLEJŠÍ NÁLEZ — kontrola A obviňovala nevinný publikovaný profil**
+
+Po povýšení Kurzovy věže vyskočil v `audit-mech` zásah: *„Raisova chata
+na Zvičině | pole `obec` prazdne, proza jmenuje «Česká Kubice»"*. Raisova
+chata stojí v Podkrkonoší a slovo „Kubice" v ní není. Příčina:
+kontrola A brala **prvních pět znaků** jména obce a hledala je jako
+**holý podřetězec** — jakmile do korpusu přibyla „Česká Kubice",
+základ „česká" se trefil doprostřed slova „severočeská" ve větě
+o Národní jednotě severočeské. Dvě díry naráz: chybějící hranice slova
+a pětiznakový základ, který u dvouslovného jména stačil potvrdit
+jedním obecným přídavným jménem.
+
+Opraveno na shodu po slovech: **všechna** slova jména musí v próze stát
+**na začátku slova** (kvůli skloňování se dál porovnává pět znaků),
+krátká slova celá — jinak by bavorská obec Lam sebrala „Lamberk", a bez
+krátkých slov by naopak nešla najít nikdy. Měřeno proti korpusu:
+**A klesla z 10 zásahů na 6** a všechny čtyři ztracené jsou doloženě
+falešné (ověřeno jedním po druhém — próza dané jméno neobsahuje ani
+jako slovo; „Lam" v Lesním baru není vůbec, „Dolní Dvůr" a „Horní
+Maršov" u chatek mají v próze jen první slovo). Dva zásahy navíc
+zpřesnily, koho vlastně jmenují (chatka Puchatka: Horní Maršov →
+Karpacz; Smogorniak: Horní Maršov → Strážné). Přibyly dvě fixturové
+zábrany (`22-obec-dvouslovna.yaml`, `23-kontrola-a-obec-podretezec.yaml`)
+— nad starou podobou kontroly padají, nad novou procházejí; snímek
+fixtury přegenerován a rozdíl popsán v README kontrol.
+
+Poznámka k principu: falešné obvinění publikovaného profilu je horší
+než propuštěný nález. Kontrola, které se nedá věřit, se přestane číst.
+
+**Kontroly:** `npm run kontrola` zelené (0 vad, fronta 0, kolize 0),
+`tsc` čistý, fixtura 24 souborů / 0 spadlo. Ban-scan 289 → 291 (dva nové
+zásahy, oba standardní závěrečná věta „polohu nese OpenStreetMap").
+Vlastní nález opravený před commitem: obě prózy nesly superlativy bez
+připsání („nejvyšší hora Českého lesa", „nejstarší kamenná rozhledna")
+— audit-mech je chytil, superlativy přepsány do `zajimavosti` se zdrojem
+(vzor Poledníku ze 6. 8.).
+
+**Příště**
+
+① tagovaná fronta dál — `geisskopfturm` (DE, rozsah bez otazníku)
+a dvojice `rozhledna-spicak` + katalogová „Chata na Špičáku"; ② Koráb
+a Libín teprve po Michalově slovu; ③ Rovina a Churáňov dál na živý
+pramen nebo telefonát.
+
+**Otázky pro Michala**
+
+① **Koráb a Libín** — až prověříš, stačí jedno slovo; oba kandidáti
+i s doloženým občerstvením čekají.
+② **Chata Čerchov × hospůdka u Kurzovy věže** — jeden provoz, nebo dva
+sousedi? Telefon na věž je +420 722 166 875. Podle odpovědi se
+`chata-cerchov` buď sloučí, nebo povýší zvlášť.
+③ **Kleť — jeden telefonát na +420 724 700 300** zavře kapacitu lůžek,
+mimosezónní provoz i to, jestli je dnešní chata touž budovou jako
+Tereziina chata z roku 1925.
+④ **Klik v Actions:** DATA-35 `jizerske-hory`, DATA-06 výšky `sumava`
+(čekají tři nové šumavské profily), DATA-28 3D terén.
+⑤ Starší otevřené beze změny: Gibacht (tři domény, nocleh, GPS),
+Klostermannova rozhledna (otvíračka), Dreisessel doména, Osser lůžka,
+rokVzniku čtveřice, DATA-20 `obec`, výběr fotek v adminu.
+
 ## 2026-08-07 — denní session: Klostermannova rozhledna na Javorníku (korpus 132)
 
 **Hotovo**

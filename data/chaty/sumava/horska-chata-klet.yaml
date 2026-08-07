@@ -1,0 +1,255 @@
+# Horská chata Kleť — povýšen z kandidátů DATA-01 triáží tagované fronty
+# (7. 8. 2026). ROZSAH: Blanský les, zařazen na základě rozhodnutí
+# Michala ze 7. 8. 2026 („Kleť i Čerchov určitě zařaď"). JEDEN PROFIL
+# pro chatu i Josefovu věž (vzor Žalý / Královka / Svatobor): provoz
+# věže vede podle dvou pramenů táž Horská chata Kleť. Sloučeni kandidáti
+# `horska-chata-klet` a `josefova-vez`. Vše verified: false.
+
+nazev: Horská chata Kleť
+slug: horska-chata-klet
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Josefova věž
+    poznamka: >-
+      jméno rozhledny v areálu — nejstarší kamenná rozhledna v Česku;
+      provozuje ji dle Kudy z nudy táž horská chata
+  - nazev: Rozhledna Kleť
+    poznamka: běžná podoba jména věže na turistických portálech
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.8653871
+lng: 14.2834302
+vyska: 1084
+obec: Křemže
+overeniLokace:
+  source: >-
+    GPS chaty: OpenStreetMap
+    https://www.openstreetmap.org/node/360005769 — data © přispěvatelé
+    OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); věž stojí
+    17 m od ní (https://www.openstreetmap.org/way/83686493). Výška
+    vrcholu Kleť 1084 m shodně vlastní web areálu (klet.com, načteno
+    7. 8. 2026) a Regiontourist (načteno 7. 8. 2026); Kudy z nudy
+    (načteno 7. 8. 2026) vede 1083 m — rozdíl jednoho metru, zapsáno
+    číslo dvou shodných pramenů. Obec Křemže dle poštovní adresy
+    z vlastního webu („Chlum 1043, 382 03 Křemže"). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+pokoje:
+  - typ: dvoulůžkové pokoje s vlastním sociálním zařízením
+  - typ: hostel se společným sociálním zařízením
+overeniNocleh:
+  source: >-
+    Vlastní web areálu (klet.com, načteno 7. 8. 2026) se sám označuje
+    za „horskou chatu, penzion a hostel". Kudy z nudy (načteno
+    7. 8. 2026) upřesňuje dvě úrovně ubytování: dvoulůžkové pokoje
+    s vlastním sociálním vybavením, nebo hostel. Počet lůžek nevede
+    ani jeden pramen — `kapacita` proto zůstává prázdná.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web areálu (klet.com, načteno 7. 8. 2026): restaurace
+    s jihočeskými specialitami, v létě otevřená po–pá 9:30–17:00
+    a o víkendech 9:00–17:00. Regiontourist (načteno 7. 8. 2026) vede
+    na vrcholu vedle restaurace ještě stánek s rychlým občerstvením.
+    Nezávisle OSM: restaurace u chaty
+    (https://www.openstreetmap.org/node/360005769) a stánek
+    (fast_food) 18 m od věže,
+    https://www.openstreetmap.org/node/9792105325.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: prameny vedou tři různé rozvrhy pro tři
+# různé věci (restaurace v hlavní sezóně × věž celoročně × mimosezónní
+# provoz, který vlastní web jen naznačuje slovy „v ostatním období se
+# doba mění"). Jedno pole je neunese a vybrat jeden z nich by lhalo.
+overeniProvoz:
+  source: >-
+    Vlastní web areálu (klet.com, načteno 7. 8. 2026) vede letní
+    otvírací dobu restaurace (po–pá 9:30–17:00, so–ne 9:00–17:00,
+    platnou od konce června do konce srpna) a dodává, že v ostatním
+    období se doba mění; k rozhledně uvádí zvlášť provoz o státních
+    svátcích a noční otevření před nimi. Kudy z nudy (načteno
+    7. 8. 2026) vede u věže celoroční 9:00–17:00 se vstupným 50 Kč
+    a jako provozovatele rozhledny jmenuje Horskou chatu Kleť — což je
+    důvod, proč je chata i věž jeden profil. Rozvrhy se týkají různých
+    provozů a mimosezónní hodiny doložené nemáme, do `otviraciDoba` se
+    proto nezapsal žádný.
+  verified: false
+  checked: '2026-08-07'
+
+kontakty:
+  telefon: '+420724700300'
+  email: info@klet.com
+  web: https://www.klet.com/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku SE NEVYPLŇUJE: areál má dvě stavby a dvě data — věž z roku
+# 1825 a horskou chatu, kterou prameny kladou do roku 1925 pod jménem
+# Tereziina chata. Že je dnešní Horská chata Kleť touž budovou, žádný
+# pramen neříká; vybrat jeden rok by z toho v žebříčcích udělalo tvrzení,
+# které doložené není (vzorec kontinuity jako Poledník nebo Mooshütte).
+milniky:
+  - rok: 1825
+    udalost: >-
+      Na vrcholu dokončena Josefova věž — nejstarší kamenná rozhledna
+      v Česku; zprvu sloužila jen knížecí rodině a jejím hostům
+  - rok: 1925
+    udalost: >-
+      Na vrcholu postavena roubená horská restaurace s ubytováním,
+      Tereziina chata
+overeniHistorie:
+  source: >-
+    Národní památkový ústav (zamek-ceskykrumlov.cz, načteno
+    7. 8. 2026): věž stavěna v letech 1822–1825, v neogotickém slohu,
+    roku 1925 k ní přibyla roubená horská restaurace Tereziina chata
+    s ubytovacím zařízením. Regiontourist (načteno 7. 8. 2026) vede rok
+    1825 i Terezinu chatu z roku 1925 shodně. Vlastní web areálu
+    (klet.com, načteno 7. 8. 2026): stavbu inicioval kníže ze
+    Schwarzenbergu už roku 1825, veřejnosti se věž otevřela až
+    v sedmdesátých letech 19. století; Kudy z nudy (načteno
+    7. 8. 2026) klade zpřístupnění do druhé poloviny téhož století.
+    JMÉNO STAVITELE SI PRAMENY ODPORUJÍ — kníže Jan Nepomuk ze
+    Schwarzenbergu (Regiontourist) × Josef ze Schwarzenbergu (NPÚ
+    i Kudy z nudy); do milníku se proto zapsalo jen „knížecí rodina"
+    a jméno se nedomýšlí. Že je dnešní Horská chata Kleť touž budovou
+    jako Tereziina chata z roku 1925, netvrdí žádný pramen.
+  verified: false
+  checked: '2026-08-07'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Josefova věž z roku 1825 je nejstarší kamenná rozhledna v Česku.
+    kategorie: stari
+    zdroj: >-
+      Kudy z nudy a Národní památkový ústav (načteno 7. 8. 2026) — obě
+      stránky to nesou přímo v názvu; redakcí neověřeno
+  - text: >-
+      Kleť je se svými 1084 metry nejvyšší horou Blanského lesa.
+    kategorie: vyska
+    zdroj: >-
+      Regiontourist (načteno 7. 8. 2026); Kudy z nudy vede o metr méně
+  - text: >-
+      Na vyhlídkovou plošinu věže vede 110 schodů.
+    kategorie: jine
+    zdroj: >-
+      Národní památkový ústav a Regiontourist (načteno 7. 8. 2026) —
+      dva shodné prameny
+  - text: >-
+      Na vrchol jezdí od roku 1961 sedačková lanovka z Krasetína —
+      s délkou kolem 1,8 kilometru je to nejdelší lanová dráha pro pěší
+      v celém přehledu oblasti.
+    kategorie: jine
+    zdroj: >-
+      rok a existence: Kudy z nudy i Regiontourist (načteno
+      7. 8. 2026), délku vedou rozdílně (1732 × 1792 m); prvenství
+      v délce plyne z našeho přehledu lanovek (data/lanovky/sumava.json)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Na vrcholu Kleti (1084 m) stojí hned tři stavby: kamenná rozhledna
+  z roku 1825, horská chata s restaurací a noclehem a astronomická
+  observatoř. Nahoru se dá vyjet i sedačkovou lanovkou z Krasetína.
+text:
+  - >-
+    Vrchol Kleti je nezvykle obydlený. Stojí tu Josefova věž, kterou
+    nechala knížecí rodina Schwarzenbergů dokončit v roce 1825 —
+    kamenná rozhledna, na niž zprvu směli jen knížecí hosté;
+    veřejnosti se otevřela až v druhé polovině devatenáctého století.
+    Nahoru vede 110 schodů. O sto let později, v roce 1925, k ní
+    přibyla roubená horská restaurace s ubytováním, Tereziina chata.
+  - >-
+    Dnešní Horská chata Kleť nabízí restauraci s jihočeskou kuchyní
+    i nocleh ve dvou úrovních — pokoje s vlastním sociálním zařízením,
+    nebo hostel; kolik má lůžek, žádný pramen neuvádí. Provozuje také
+    samotnou rozhlednu, takže chata i věž jsou pro nás jedno místo.
+    Vedle stojí ještě astronomická observatoř, známá objevy planetek
+    a komet.
+  - >-
+    Vyjít se sem dá po značených cestách, nebo vyjet sedačkovou
+    lanovkou z Krasetína, která tu jezdí od roku 1961 a je nejdelší
+    lanovkou pro pěší v celém našem přehledu oblasti. Trasy s délkami
+    a převýšením najdete u přístupů níže.
+  - >-
+    Údaje na téhle stránce jsou z vlastního webu areálu, z turistických
+    portálů a ze stránek památkářů; polohu nese OpenStreetMap. Otvírací
+    dobu neuvádíme jedním údajem — prameny popisují zvlášť letní provoz
+    restaurace a zvlášť provoz věže, a co platí mimo sezónu, doložené
+    nemáme; před cestou se vyplatí zavolat. Rok vzniku také ne: areál
+    má dvě stavby a dvě data a že je dnešní chata touž budovou jako
+    Tereziina chata z roku 1925, žádný pramen netvrdí. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web areálu Kleť — výška vrcholu, restaurace s letní
+      otvírací dobou, ubytování penzion i hostel, počátek stavby věže
+      1825 a její zpřístupnění, kontakt a adresa (načteno 7. 8. 2026)
+    url: https://www.klet.com/
+  - popis: >-
+      Kudy z nudy — nejstarší kamenná rozhledna v Česku, rok 1825,
+      provozovatel věže Horská chata Kleť, celoroční otvírací doba
+      a vstupné věže, ubytování ve dvou úrovních, lanovka z roku 1961
+      (načteno 7. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/rozhledna-klet-v-blanskem-lese-nejstarsi-kamenna
+  - popis: >-
+      Národní památkový ústav — stavba věže 1822–1825, neogotický sloh,
+      110 schodů, Tereziina chata z roku 1925, observatoř (načteno
+      7. 8. 2026)
+    url: https://www.zamek-ceskykrumlov.cz/cs/tipy-na-vylet/10547-nejstarsi-kamenna-rozhledna-v-cechach-josefova-vez-na-hore-kleti
+  - popis: >-
+      Regiontourist — výška 1084 m, rok 1825, 110 schodů, Terezina
+      chata 1925 s ubytováním a stánkem, observatoř, lanovka
+      z Krasetína (načteno 7. 8. 2026)
+    url: https://www.regiontourist.cz/co-podniknout/rozhledna-a-hora-klet-v-blanskem-lese/
+  - popis: >-
+      OpenStreetMap (GPS chaty i věže, restaurace a stánek na vrcholu;
+      ODbL)
+    url: https://www.openstreetmap.org/node/360005769
+interniPoznamky: >-
+  Povýšeno sloučením kandidátů `horska-chata-klet` a `josefova-vez`
+  (7. 8. 2026). JEDEN PROFIL, vzor Žalý / Královka / Svatobor / Pancíř:
+  Kudy z nudy jmenuje jako provozovatele rozhledny Horskou chatu Kleť
+  a vlastní doména se sama představuje jako „horská chata, rozhledna,
+  penzion a hostel Kleť". Kandidát `josefova-vez` se samostatně
+  nepovyšuje.
+
+  ROZSAH ROZHODNUT: Michal 7. 8. 2026 — „Kleť i Čerchov určitě zařaď".
+  Kleť je Blanský les. Souvisí s poznámkou u lanovek v SUMAVA-TRIAZ
+  (LD Krasetín–Kleť se do přehledu vypisuje právem). Koráb a Libín
+  Michal odložil („prověřím") — ve frontě dál čekají.
+
+  KANDIDÁT `chata-pod-kleti` NENÍ TATO CHATA: leží 2,3 km severně
+  (48,884 / 14,295), je to samostatný objekt a zůstává ve frontě.
+
+  ROZPORY (proto nezapsáno číslem): výška věže 18 m (Kudy z nudy) ×
+  19 m (Regiontourist) × 20 m (NPÚ) × „12;18" dle OSM — model pro
+  výšku věže pole nemá, próza ji neuvádí. Jméno stavitele: Jan Nepomuk
+  (Regiontourist) × Josef (NPÚ i Kudy z nudy) ze Schwarzenbergu — věž
+  se jmenuje Josefova, ale to není doklad; próza mluví o knížecí
+  rodině. Rok observatoře: 1937 (Regiontourist) × 1957–1958 (NPÚ) —
+  do prózy šla observatoř bez roku a do milníků vůbec. Délka lanovky:
+  1732 m (Kudy z nudy) × 1792 m (Regiontourist), převýšení 346 × 383 m
+  — v zajímavosti je proto „kolem 1,8 kilometru". Výška vrcholu 1084 m
+  (klet.com + Regiontourist) × 1083 m (Kudy z nudy).
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek (žádný pramen), mimosezónní
+  otvírací doba restaurace i celého areálu, vztah dnešní chaty
+  k Tereziině chatě z roku 1925, provozovatel jako právní subjekt (OSM
+  vede „Horská chata Kleť s.r.o.", jiný pramen to nepotvrzuje).
+  KANDIDÁT NA DATA-04: jeden telefonát na +420 724 700 300 zavře
+  kapacitu, mimosezónní provoz i otázku Tereziiny chaty. Fotku dodá
+  příští běh DATA-02.
