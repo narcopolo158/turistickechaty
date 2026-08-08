@@ -352,7 +352,7 @@ jmenovci:
   - jadro: hajenka
     objekty:
       - beskydy/hajenka
-      - beskydy/horsky-hotel-hajenka
+      - javorniky-vsetinske-vrchy/horsky-hotel-hajenka
       - jizerske-hory/hajenka
       - sumava/hajenka
       - sumava/penzion-hajenka
@@ -417,5 +417,21 @@ jmenovci:
       oblasti přišla 8. 8. 2026 přesunem z beskydského exportu. Shoda jména
       je náhodná — javor roste všude. Rozlišovač `obec` nemá doložený ani
       jeden (R6).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
+    checked: 2026-08-08
+  - jadro: kohutka
+    objekty:
+      - beskydy/kohutka
+      - javorniky-vsetinske-vrchy/horsky-hotel-kohutka
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, ne duplicita — a je to dobrý příklad toho, proč se
+      spor o totožnost přeměřuje: naměřeno z GPS 42 716 m a různá OSM id.
+      „Horský hotel Kohútka" (49,295 / 18,230) je známý hotel na sedle
+      česko-slovenské hranice v Javorníkách, který vede i externí katalog
+      (913 m dle mistopisy.cz × 960 m dle turistika.cz). „Kohutka" bez
+      diakritiky (49,643 / 18,481) je JINÝ objekt hluboko v Moravskoslezských
+      Beskydech, o kterém zatím nevíme nic než souřadnice z OSM. Kolize
+      vznikla 8. 8. 2026, kdy Michalův klik přinesl kandidáty obou oblastí.
+      Rozlišovačem bude `obec` (DATA-17 R2); doloženou ji nemá ani jeden (R6).
     rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
     checked: 2026-08-08
