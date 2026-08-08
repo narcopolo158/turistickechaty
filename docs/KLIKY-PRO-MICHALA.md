@@ -47,6 +47,27 @@ Políčko `api` nech prázdné — skript sám zkouší `overpass-api.de` a při
 selhání zrcadlo `kumi.systems` (fallback přibyl 20. 7. 2026 kvůli rate
 limitu na IP runnerů).
 
+### A prosím ještě jednou `beskydy` — tvůj běh z 8. 8. byl NEÚPLNÝ
+
+| workflow | políčko `oblast` |
+|---|---|
+| **DATA-01: OSM export chat (dle oblasti)** | `beskydy` |
+
+Není to tvoje chyba, ale moje. Dohledávka podle jmen z katalogu — druhá
+záchranná síť, která hledá objekty, co hlavní dotaz podle tagů minul — vrátila
+pro Česko `runtime error: Query timed out … after 183 seconds` a nula objektů.
+Overpass takovou chybu hlásí jako **HTTP 200**, takže ji pipeline přijala jako
+výsledek („0 objektů dohledáno podle jména"), běh dopadl zeleně a v reportu
+nebylo nic vidět. **Důsledek: v beskydských kandidátech chybí Libušín a Chata
+na Radhošti** — dva nejznámější objekty celého pohoří a přesně ten typ, kvůli
+kterému ta síť vznikla (jsou v OSM tagované civilně, hlavní dotaz je nevidí).
+
+Opraveno 8. 8. 2026 dvakrát: běhová chyba v `remark` je teď tvrdá chyba, takže
+se zapojí zrcadlo, a nová kontrola `npx tsx scripts/kontrola/exporty.ts` hlídá,
+aby vadný export nezůstal v repu ležet jako doklad. Vadný soubor je smazaný,
+takže tvůj nový běh napíše platný. Opakované spuštění je idempotentní — nic se
+nerozbije, jen se doplní, co chybí.
+
 Běh commitne do repa surový JSON export jako doklad i hotové YAML kandidátů
 do `data/kandidati/<oblast>/`. **Kandidáti NEJSOU na webu** — seed čte jen
 `data/chaty/**`; na web se povyšují ručně po křížovém ověření. Opakované

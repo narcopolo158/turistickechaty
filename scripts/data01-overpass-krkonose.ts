@@ -159,7 +159,14 @@ export const verdiktBehu = (
     : neuplny
       ? `NEÚPLNÝ BĚH: staženo ${hotove.join(', ')}, NEPOVEDLO SE ${selhale.join(', ')}. Zapisuje se, co je — kandidáti z chybějících zemí v tomhle běhu NEJSOU. Až Overpass pustí, spusť workflow znovu; běh je idempotentní (nic se nepřepisuje, jen doplní).`
       : `Staženy všechny země oblasti (${hotove.join(', ')}).`
-  return { zapsat, neuplny, hotove, selhale, zprava, sentinel: neuplny ? `NEUPLNY_BEH: ${selhale.join(',')}` : null }
+  return {
+    zapsat,
+    neuplny,
+    hotove,
+    selhale,
+    zprava,
+    sentinel: neuplny ? `NEUPLNY_BEH: ${selhale.join(',')}` : null,
+  }
 }
 
 /**
@@ -208,9 +215,13 @@ const SLOVA_BOUDY =
 const OBCERSTVENI_TAGY = '^(restaurant|cafe|fast_food|bar|pub|biergarten)$'
 const UBYTOVANI_TAGY = '^(hotel|guest_house|hostel|motel|apartment)$'
 /** Hutové i ubytovací tagy v jednom regexu — pro dohledávku podle jmen. */
-const HUTOVE_TAGY_A_UBYTOVANI = '^(alpine_hut|wilderness_hut|hut|chalet|hotel|guest_house|hostel|motel|apartment)$'
+const HUTOVE_TAGY_A_UBYTOVANI =
+  '^(alpine_hut|wilderness_hut|hut|chalet|hotel|guest_house|hostel|motel|apartment)$'
 
-export const overpassDotaz = (iso: string, okno: string = BBOX_KRKONOSE): string => `[out:json][timeout:180];
+export const overpassDotaz = (
+  iso: string,
+  okno: string = BBOX_KRKONOSE,
+): string => `[out:json][timeout:180];
 area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
 (
   nwr["tourism"~"${HUTOVE_TAGY}"](area.stat)(${okno});
@@ -233,12 +244,14 @@ out center;`
  * NEVYMÝŠLÍ — zůstane v reportu jako „katalog vede, OSM nemá" a je to
  * úkol pro ruční dohledání souřadnic (DATA-31).
  */
-export const overpassDotazDleJmen = (iso: string, jmena: string[], okno: string = BBOX_KRKONOSE): string => {
+export const overpassDotazDleJmen = (
+  iso: string,
+  jmena: string[],
+  okno: string = BBOX_KRKONOSE,
+): string => {
   // Regex s alternativami je jeden dotaz místo N — Overpass sdílené instance
   // rate-limitují a padesát dotazů po jednom by běh protáhlo o minuty.
-  const alternativy = jmena
-    .map((j) => j.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&'))
-    .join('|')
+  const alternativy = jmena.map((j) => j.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&')).join('|')
   /**
    * SÍTO DRUHU JE POVINNÉ. První běh s dohledávkou (30. 7. 2026) se ptal jen
    * na jméno — a přinesl 25 objektů, které chatou nejsou: deset informačních
@@ -273,7 +286,10 @@ out center;`
  */
 export const OKOLI_OBCERSTVENI_M = 100
 
-export const overpassDotazRozhledny = (iso: string, okno: string = BBOX_KRKONOSE): string => `[out:json][timeout:180];
+export const overpassDotazRozhledny = (
+  iso: string,
+  okno: string = BBOX_KRKONOSE,
+): string => `[out:json][timeout:180];
 area["ISO3166-1"="${iso}"][admin_level="2"]->.stat;
 nwr["tower:type"="observation"](area.stat)(${okno})->.rozhledny;
 (
@@ -290,7 +306,10 @@ out center;`
  */
 export const jmenaZKatalogu = (katalogCesta: string, pohori: string[] | undefined): string[] => {
   if (!pohori?.length || !existsSync(katalogCesta)) return []
-  const katalog = JSON.parse(readFileSync(katalogCesta, 'utf8')) as { Pohoří?: string; Název?: string }[]
+  const katalog = JSON.parse(readFileSync(katalogCesta, 'utf8')) as {
+    Pohoří?: string
+    Název?: string
+  }[]
   const jmena = new Set<string>()
   for (const z of katalog) {
     if (!z.Pohoří || !pohori.includes(z.Pohoří) || !z.Název) continue
@@ -298,7 +317,10 @@ export const jmenaZKatalogu = (katalogCesta: string, pohori: string[] | undefine
     // Katalog píše plné názvy („Horská chata Smědava"), OSM často jen jádro
     // („Smědava"). Bez zkrácené varianty by dohledávka minula právě to, kvůli
     // čemu vznikla.
-    const jadro = z.Název.replace(/^(Horská chata|Chata|Kiosek|Bouda|Penzion|Hotel|Schronisko( PTTK)?)\s+/iu, '').trim()
+    const jadro = z.Název.replace(
+      /^(Horská chata|Chata|Kiosek|Bouda|Penzion|Hotel|Schronisko( PTTK)?)\s+/iu,
+      '',
+    ).trim()
     if (jadro && jadro !== z.Název.trim()) jmena.add(jadro)
   }
   return [...jmena].sort((a, b) => a.localeCompare(b, 'cs'))
@@ -316,7 +338,11 @@ export type OsmElement = {
 // ── Stažení a načtení exportu ───────────────────────────────────────────────
 
 /** Stáhne surovou odpověď z jedné instance a ověří, že je to validní export. */
-const stahniZInstance = async (api: string, dotaz: string, povolitPrazdno = false): Promise<string> => {
+const stahniZInstance = async (
+  api: string,
+  dotaz: string,
+  povolitPrazdno = false,
+): Promise<string> => {
   const odpoved = await fetch(api, {
     method: 'POST',
     headers: {
@@ -327,7 +353,12 @@ const stahniZInstance = async (api: string, dotaz: string, povolitPrazdno = fals
     body: `data=${encodeURIComponent(dotaz)}`,
   })
   if (!odpoved.ok) {
-    const napoveda = odpoved.status === 429 ? ' (rate limit)' : odpoved.status === 504 ? ' (přetížená instance)' : ''
+    const napoveda =
+      odpoved.status === 429
+        ? ' (rate limit)'
+        : odpoved.status === 504
+          ? ' (přetížená instance)'
+          : ''
     throw new Error(`HTTP ${odpoved.status}${napoveda}`)
   }
   const text = await odpoved.text()
@@ -336,7 +367,9 @@ const stahniZInstance = async (api: string, dotaz: string, povolitPrazdno = fals
   // na dotaz mimo svůj výřez HTTP 200 a `elements: []`. Bez téhle pojistky by
   // se takový export uložil a běh by hlásil „0 nových kandidátů" jako úspěch.
   if (!elementy.length && !povolitPrazdno) {
-    throw new Error('0 objektů — instance nejspíš nemá celosvětová data (nebo dotaz minul); prázdno vynutíš přepínačem --povolit-prazdno')
+    throw new Error(
+      '0 objektů — instance nejspíš nemá celosvětová data (nebo dotaz minul); prázdno vynutíš přepínačem --povolit-prazdno',
+    )
   }
   return text
 }
@@ -386,7 +419,9 @@ export const stahniOverpass = async (
     }
     if (kolo < kola) {
       const pauza = pauzy[Math.min(kolo - 1, pauzy.length - 1)] ?? 0
-      console.error(`Všechny instance v kole ${kolo} selhaly — čekám ${Math.round(pauza / 1000)} s a zkusím znovu.`)
+      console.error(
+        `Všechny instance v kole ${kolo} selhaly — čekám ${Math.round(pauza / 1000)} s a zkusím znovu.`,
+      )
       await spanek(pauza)
     }
   }
@@ -398,13 +433,33 @@ export const stahniOverpass = async (
  * (osm3s.timestamp_osm_base); bez něj datum dneška (transformace).
  */
 export const nactiExport = (rawJson: string): { elementy: OsmElement[]; checked: string } => {
-  let telo: { elements?: OsmElement[]; osm3s?: { timestamp_osm_base?: string } }
+  let telo: {
+    elements?: OsmElement[]
+    osm3s?: { timestamp_osm_base?: string }
+    remark?: string
+  }
   try {
     telo = JSON.parse(rawJson)
   } catch {
     throw new Error('Export není validní JSON — Overpass zřejmě vrátil chybovou stránku.')
   }
-  if (!Array.isArray(telo.elements)) throw new Error('Export bez pole `elements` — neplatný výstup Overpass.')
+  if (!Array.isArray(telo.elements))
+    throw new Error('Export bez pole `elements` — neplatný výstup Overpass.')
+  // Overpass hlásí BĚHOVOU chybu jako HTTP 200 s prázdným `elements` a textem
+  // v `remark`. Bez téhle pojistky se z „dotaz mi vypršel po 183 sekundách"
+  // stane „nenašlo se nic" — a to je nejtišší možná porucha: běh se dokončí,
+  // report ukáže nulu a nikdo neví, že se neptal.
+  // NALEZENO 8. 8. 2026 zpětně nad beskydským exportem: dohledávka podle jmen
+  // z katalogu (druhá záchranná síť) vrátila pro Česko
+  // `remark: runtime error: Query timed out in "query" at line 5 after 183
+  // seconds` a nula elementů. Pipeline to přijala jako výsledek, takže
+  // v kandidátech chybí LIBUŠÍN a CHATA NA RADHOŠTI — dva nejznámější objekty
+  // celých Beskyd, kvůli kterým ta síť vznikla. Chyba se vyhazuje proto, aby
+  // se zapojil retry na zrcadlo; když selžou všechna, volající to zahlásí
+  // jako `::warning::`, a to je vidět.
+  if (typeof telo.remark === 'string' && /error|timed out|out of memory/i.test(telo.remark)) {
+    throw new Error(`Overpass vrátil běhovou chybu v \`remark\` — ${telo.remark.trim()}`)
+  }
   const timestamp = telo.osm3s?.timestamp_osm_base
   const checked =
     typeof timestamp === 'string' && /^\d{4}-\d{2}-\d{2}/.test(timestamp)
@@ -415,7 +470,8 @@ export const nactiExport = (rawJson: string): { elementy: OsmElement[]; checked:
 
 // ── Mapování OSM elementu na data chaty ─────────────────────────────────────
 
-export const osmUrl = (el: OsmElement): string => `https://www.openstreetmap.org/${el.type}/${el.id}`
+export const osmUrl = (el: OsmElement): string =>
+  `https://www.openstreetmap.org/${el.type}/${el.id}`
 
 export const ATRIBUCE = 'data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)'
 
@@ -474,8 +530,14 @@ export const chataZElementu = (
   if (jeRozhledna(el)) data.typ = 'rozhledna'
 
   const aliasy = [
-    ...hodnoty(tagy.alt_name).map((nazev) => ({ nazev, poznamka: 'alternativní název (OSM alt_name)' })),
-    ...hodnoty(tagy.old_name).map((nazev) => ({ nazev, poznamka: 'historický název (OSM old_name)' })),
+    ...hodnoty(tagy.alt_name).map((nazev) => ({
+      nazev,
+      poznamka: 'alternativní název (OSM alt_name)',
+    })),
+    ...hodnoty(tagy.old_name).map((nazev) => ({
+      nazev,
+      poznamka: 'historický název (OSM old_name)',
+    })),
   ]
   if (aliasy.length > 0) data.aliasy = aliasy
 
@@ -524,7 +586,9 @@ export const chataZElementu = (
       : []),
     ...(tagy.height ? [`Výška věže dle OSM: ${tagy.height} m`] : []),
     ...(tagy.operator ? [`Provozovatel dle OSM: ${tagy.operator}`] : []),
-    ...(tagy.opening_hours ? [`Otvírací doba dle OSM (surový formát, neověřeno): ${tagy.opening_hours}`] : []),
+    ...(tagy.opening_hours
+      ? [`Otvírací doba dle OSM (surový formát, neověřeno): ${tagy.opening_hours}`]
+      : []),
     ...(tagy.note ? [`Poznámka z OSM: ${tagy.note}`] : []),
   ]
   data.interniPoznamky = poznamky.join('\n')
@@ -575,8 +639,10 @@ export const jePrilisNizka = (el: OsmElement): boolean => {
 /** Doklad občerstvení z tagů objektu — `null`, když objekt občerstvení nenese. */
 export const znackaObcerstveni = (el: OsmElement): { znacka: string; jeChata: boolean } | null => {
   const t = el.tags ?? {}
-  if (t.amenity && OBCERSTVENI_AMENITY.has(t.amenity)) return { znacka: `amenity=${t.amenity}`, jeChata: false }
-  if (t.tourism && CHATA_TOURISM.has(t.tourism)) return { znacka: `tourism=${t.tourism}`, jeChata: true }
+  if (t.amenity && OBCERSTVENI_AMENITY.has(t.amenity))
+    return { znacka: `amenity=${t.amenity}`, jeChata: false }
+  if (t.tourism && CHATA_TOURISM.has(t.tourism))
+    return { znacka: `tourism=${t.tourism}`, jeChata: true }
   return null
 }
 
@@ -587,7 +653,10 @@ export const znackaObcerstveni = (el: OsmElement): { znacka: string; jeChata: bo
  * rozhodnutí Michala NEBEREME — ale zůstane v reportu, ať je vidět, co se
  * zahodilo a proč.
  */
-export const parujRozhledny = (elementy: OsmElement[], limitM: number = OKOLI_OBCERSTVENI_M): Rozhledna[] => {
+export const parujRozhledny = (
+  elementy: OsmElement[],
+  limitM: number = OKOLI_OBCERSTVENI_M,
+): Rozhledna[] => {
   const rozhledny = elementy.filter(jeRozhledna)
   const zdroje = elementy.filter((el) => !jeRozhledna(el) && znackaObcerstveni(el))
   return rozhledny.map((el) => {
@@ -595,7 +664,13 @@ export const parujRozhledny = (elementy: OsmElement[], limitM: number = OKOLI_OB
     const obcerstveni: ObcerstveniUObjektu[] = []
     const vlastni = znackaObcerstveni(el)
     if (vlastni) {
-      obcerstveni.push({ url: osmUrl(el), nazev: el.tags?.name ?? null, znacka: vlastni.znacka, vzdalenostM: 0, jeChata: vlastni.jeChata })
+      obcerstveni.push({
+        url: osmUrl(el),
+        nazev: el.tags?.name ?? null,
+        znacka: vlastni.znacka,
+        vzdalenostM: 0,
+        jeChata: vlastni.jeChata,
+      })
     }
     if (gps) {
       for (const z of zdroje) {
@@ -604,7 +679,13 @@ export const parujRozhledny = (elementy: OsmElement[], limitM: number = OKOLI_OB
         const d = vzdalenostM(gps.lat, gps.lng, zGps.lat, zGps.lng)
         if (d > limitM) continue
         const zn = znackaObcerstveni(z)!
-        obcerstveni.push({ url: osmUrl(z), nazev: z.tags?.name ?? null, znacka: zn.znacka, vzdalenostM: d, jeChata: zn.jeChata })
+        obcerstveni.push({
+          url: osmUrl(z),
+          nazev: z.tags?.name ?? null,
+          znacka: zn.znacka,
+          vzdalenostM: d,
+          jeChata: zn.jeChata,
+        })
       }
     }
     obcerstveni.sort((a, b) => a.vzdalenostM - b.vzdalenostM || a.url.localeCompare(b.url))
@@ -618,7 +699,8 @@ export const vzdalenostM = (aLat: number, aLng: number, bLat: number, bLng: numb
   const rad = (d: number) => (d * Math.PI) / 180
   const dLat = rad(bLat - aLat)
   const dLng = rad(bLng - aLng)
-  const s = Math.sin(dLat / 2) ** 2 + Math.cos(rad(aLat)) * Math.cos(rad(bLat)) * Math.sin(dLng / 2) ** 2
+  const s =
+    Math.sin(dLat / 2) ** 2 + Math.cos(rad(aLat)) * Math.cos(rad(bLat)) * Math.sin(dLng / 2) ** 2
   return Math.round(2 * R * Math.asin(Math.sqrt(s)))
 }
 
@@ -635,7 +717,12 @@ export type Porovnani = {
 
 /** OSM objekt vs. ruční YAML — nic nepřepisuje, jen doloží rozdíly do reportu. */
 export const porovnejSRucnim = (el: OsmElement, rucniYaml: string, slug: string): Porovnani => {
-  const rucni = parse(rucniYaml) as { nazev?: string; lat?: number; lng?: number; vyska?: number } | null
+  const rucni = parse(rucniYaml) as {
+    nazev?: string
+    lat?: number
+    lng?: number
+    vyska?: number
+  } | null
   const gps = souradnice(el)
   const maRucniGps = typeof rucni?.lat === 'number' && typeof rucni?.lng === 'number'
   return {
@@ -643,7 +730,10 @@ export const porovnejSRucnim = (el: OsmElement, rucniYaml: string, slug: string)
     url: osmUrl(el),
     nazevOsm: el.tags?.name ?? '',
     nazevRucni: rucni?.nazev ?? null,
-    gpsRozdilM: gps && maRucniGps ? vzdalenostM(gps.lat, gps.lng, rucni.lat as number, rucni.lng as number) : null,
+    gpsRozdilM:
+      gps && maRucniGps
+        ? vzdalenostM(gps.lat, gps.lng, rucni.lat as number, rucni.lng as number)
+        : null,
     vyskaOsm: vyskaZTagu(el.tags?.ele),
     vyskaRucni: typeof rucni?.vyska === 'number' ? rucni.vyska : null,
   }
@@ -677,7 +767,12 @@ export type Report = {
 }
 
 /** Element s metadaty svého exportu (země dle area v dotazu, checked dle stavu dat). */
-export type ExportPolozka = { el: OsmElement; zeme: Zeme; checked: string; obcerstveni?: ObcerstveniUObjektu[] }
+export type ExportPolozka = {
+  el: OsmElement
+  zeme: Zeme
+  checked: string
+  obcerstveni?: ObcerstveniUObjektu[]
+}
 
 /**
  * DATA-36 — INDEX OBJEKTŮ, KTERÉ UŽ VEDE JINÁ OBLAST.
@@ -758,7 +853,8 @@ export const zapisKandidaty = (
 
   // Deterministické pořadí výstupu nezávislé na pořadí z API.
   const serazene = [...polozky].sort(
-    (a, b) => (a.el.tags?.name ?? '').localeCompare(b.el.tags?.name ?? '', 'cs') || a.el.id - b.el.id,
+    (a, b) =>
+      (a.el.tags?.name ?? '').localeCompare(b.el.tags?.name ?? '', 'cs') || a.el.id - b.el.id,
   )
 
   for (const { el, zeme, checked, obcerstveni } of serazene) {
@@ -834,13 +930,19 @@ const jadroNazvu = (s: string | undefined): string =>
     .replace(/[\u0300-\u036f]/gu, '')
     .toLowerCase()
     .replace(/[^a-z0-9]+/gu, ' ')
-    .replace(/(^| )(chata|chatka|bouda|boudy|schronisko|horska|horsky|hotel|penzion|rozhledna|turystyczne|turisticka)( |$)/gu, ' ')
+    .replace(
+      /(^| )(chata|chatka|bouda|boudy|schronisko|horska|horsky|hotel|penzion|rozhledna|turystyczne|turisticka)( |$)/gu,
+      ' ',
+    )
     .replace(/\s+/gu, ' ')
     .trim()
 
 export const slucDuplicity = <T extends { el: OsmElement }>(
   polozky: T[],
-): { polozky: T[]; slouceno: { zustava: string; slouceno: string; nazev: string; vzdalenostM: number }[] } => {
+): {
+  polozky: T[]
+  slouceno: { zustava: string; slouceno: string; nazev: string; vzdalenostM: number }[]
+} => {
   const bod = (el: OsmElement) => ({ lat: el.center?.lat ?? el.lat, lng: el.center?.lon ?? el.lon })
   const pocetTagu = (el: OsmElement) => Object.keys(el.tags ?? {}).length
   const vysledek: T[] = []
@@ -908,15 +1010,21 @@ const main = async () => {
     let raw: string
     if (zJsonu) {
       if (!existsSync(soubor)) {
-        console.log(`--z-jsonu: export ${soubor} neexistuje — země ${zeme} se přeskakuje (stáhne ji běh bez --z-jsonu).`)
+        console.log(
+          `--z-jsonu: export ${soubor} neexistuje — země ${zeme} se přeskakuje (stáhne ji běh bez --z-jsonu).`,
+        )
         continue
       }
       console.log(`Offline transformace commitnutého exportu ${soubor}…`)
       raw = readFileSync(soubor, 'utf8')
     } else {
-      console.log(`Overpass dotaz ${iso} (hutové tagy + civilně tagované boudy podle názvu, ${iso} ∩ okno ${oblast.nazev}); instance: ${instance.join(', ')}…`)
+      console.log(
+        `Overpass dotaz ${iso} (hutové tagy + civilně tagované boudy podle názvu, ${iso} ∩ okno ${oblast.nazev}); instance: ${instance.join(', ')}…`,
+      )
       try {
-        const vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno), { povolitPrazdno })
+        const vysledek = await stahniOverpass(instance, overpassDotaz(iso, okno), {
+          povolitPrazdno,
+        })
         raw = vysledek.raw
         console.log(`Staženo z ${vysledek.api}.`)
         mkdirSync(kandAdr, { recursive: true })
@@ -924,7 +1032,9 @@ const main = async () => {
         console.log(`Surový export uložen: ${soubor} (commituje se jako doklad).`)
       } catch (chyba) {
         const zprava = chyba instanceof Error ? chyba.message : String(chyba)
-        console.error(`\n::warning::Dotaz ${iso} se nepovedl — pokračuji bez něj. ${zprava.split('\n')[0]}`)
+        console.error(
+          `\n::warning::Dotaz ${iso} se nepovedl — pokračuji bez něj. ${zprava.split('\n')[0]}`,
+        )
         stavyZemi.push({ iso, ok: false, chyba: zprava })
         continue
       }
@@ -936,7 +1046,9 @@ const main = async () => {
     polozky.push(...elementy.map((el) => ({ el, zeme, checked })))
   }
   if (polozky.length === 0 && zJsonu) {
-    throw new Error('--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.')
+    throw new Error(
+      '--z-jsonu: žádný commitnutý export nenalezen — nejdřív ho stáhne workflow/běh bez --z-jsonu.',
+    )
   }
   const verdikt = verdiktBehu(stavyZemi)
   if (!zJsonu && !verdikt.zapsat) throw new Error(verdikt.zprava)
@@ -945,10 +1057,15 @@ const main = async () => {
   // Druhá záchranná síť po nálezu 30. 7. 2026 (chyběly Smědava, Knajpa,
   // chaty na Jizerce). Co katalog vede a dotaz nenajde, se NEVYMÝŠLÍ —
   // vypíše se na konci jako úkol pro ruční dohledání (DATA-31).
-  const jmena = jmenaZKatalogu(join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json'), oblast.katalogPohori)
+  const jmena = jmenaZKatalogu(
+    join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json'),
+    oblast.katalogPohori,
+  )
   const nalezenaJmena = new Set<string>()
   if (jmena.length) {
-    console.log(`\nDohledávka podle ${jmena.length} jmen z externího katalogu (${oblast.katalogPohori?.join(', ')})…`)
+    console.log(
+      `\nDohledávka podle ${jmena.length} jmen z externího katalogu (${oblast.katalogPohori?.join(', ')})…`,
+    )
     for (const { zeme, iso } of zeme_dotazu) {
       const soubor = join(kandAdr, `_overpass-dle-jmen-${zeme}.json`)
       let raw: string
@@ -958,14 +1075,18 @@ const main = async () => {
       } else {
         try {
           // Prázdno je tu legitimní: v druhé zemi nemusí být z katalogu nic.
-          const vysledek = await stahniOverpass(instance, overpassDotazDleJmen(iso, jmena, okno), { povolitPrazdno: true })
+          const vysledek = await stahniOverpass(instance, overpassDotazDleJmen(iso, jmena, okno), {
+            povolitPrazdno: true,
+          })
           raw = vysledek.raw
           mkdirSync(kandAdr, { recursive: true })
           writeFileSync(soubor, raw, 'utf8')
         } catch (chyba) {
           // Dohledávka je záchranná síť, ne podmínka: bez ní se jen nedoplní
           // civilně tagované boudy z katalogu — a to se vypíše.
-          console.error(`::warning::Dohledávka podle jmen (${iso}) se nepovedla — pokračuji bez ní. ${(chyba instanceof Error ? chyba.message : String(chyba)).split('\n')[0]}`)
+          console.error(
+            `::warning::Dohledávka podle jmen (${iso}) se nepovedla — pokračuji bez ní. ${(chyba instanceof Error ? chyba.message : String(chyba)).split('\n')[0]}`,
+          )
           continue
         }
       }
@@ -989,8 +1110,13 @@ const main = async () => {
     polozky.length = 0
     polozky.push(...bezDuplicit)
     if (slouceno.length) {
-      console.log(`\nSloučeno ${pred - polozky.length} duplicit (týž objekt z víc vrstev dotazu, do ${SLOUCIT_DO_M} m):`)
-      for (const d of slouceno) console.log(`- ${d.nazev}: zůstává ${d.zustava}, sloučeno ${d.slouceno} (${d.vzdalenostM} m)`)
+      console.log(
+        `\nSloučeno ${pred - polozky.length} duplicit (týž objekt z víc vrstev dotazu, do ${SLOUCIT_DO_M} m):`,
+      )
+      for (const d of slouceno)
+        console.log(
+          `- ${d.nazev}: zůstává ${d.zustava}, sloučeno ${d.slouceno} (${d.vzdalenostM} m)`,
+        )
     }
   }
 
@@ -1009,18 +1135,26 @@ const main = async () => {
     let raw: string
     if (zJsonu) {
       if (!existsSync(soubor)) {
-        console.log(`--z-jsonu: export rozhleden ${soubor} neexistuje — země ${zeme} se přeskakuje.`)
+        console.log(
+          `--z-jsonu: export rozhleden ${soubor} neexistuje — země ${zeme} se přeskakuje.`,
+        )
         continue
       }
       raw = readFileSync(soubor, 'utf8')
     } else {
-      console.log(`Overpass dotaz ${iso} (rozhledny tower:type=observation + občerstvení do ${OKOLI_OBCERSTVENI_M} m)…`)
+      console.log(
+        `Overpass dotaz ${iso} (rozhledny tower:type=observation + občerstvení do ${OKOLI_OBCERSTVENI_M} m)…`,
+      )
       let vysledek: Awaited<ReturnType<typeof stahniOverpass>>
       try {
         // Oblast bez jediné rozhledny je legitimní stav, prázdno tu neplaší.
-        vysledek = await stahniOverpass(instance, overpassDotazRozhledny(iso, okno), { povolitPrazdno: true })
+        vysledek = await stahniOverpass(instance, overpassDotazRozhledny(iso, okno), {
+          povolitPrazdno: true,
+        })
       } catch (chyba) {
-        console.error(`::warning::Dotaz na rozhledny (${iso}) se nepovedl — pokračuji bez nich. ${(chyba instanceof Error ? chyba.message : String(chyba)).split('\n')[0]}`)
+        console.error(
+          `::warning::Dotaz na rozhledny (${iso}) se nepovedl — pokračuji bez nich. ${(chyba instanceof Error ? chyba.message : String(chyba)).split('\n')[0]}`,
+        )
         continue
       }
       raw = vysledek.raw
@@ -1042,14 +1176,20 @@ const main = async () => {
       }
       const chataVedle = r.obcerstveni.find((o) => o.jeChata && urlChat.has(o.url))
       if (chataVedle) {
-        rozhlednyUChaty.push({ nazev, url: osmUrl(r.el), chata: `${chataVedle.nazev ?? '(bez názvu)'} (${chataVedle.vzdalenostM} m, ${chataVedle.url})` })
+        rozhlednyUChaty.push({
+          nazev,
+          url: osmUrl(r.el),
+          chata: `${chataVedle.nazev ?? '(bez názvu)'} (${chataVedle.vzdalenostM} m, ${chataVedle.url})`,
+        })
         continue
       }
       polozky.push({ el: r.el, zeme, checked, obcerstveni: r.obcerstveni })
       rozhlednyVzate.push({
         nazev,
         url: osmUrl(r.el),
-        doklad: r.obcerstveni.map((o) => `${o.nazev ?? '(bez názvu)'} — ${o.znacka}, ${o.vzdalenostM} m`).join(' · '),
+        doklad: r.obcerstveni
+          .map((o) => `${o.nazev ?? '(bez názvu)'} — ${o.znacka}, ${o.vzdalenostM} m`)
+          .join(' · '),
       })
     }
   }
@@ -1059,14 +1199,7 @@ const main = async () => {
     [join(process.cwd(), 'data', 'kandidati'), join(process.cwd(), 'data', 'chaty')],
     oblast.slug,
   )
-  const report = zapisKandidaty(
-    polozky,
-    kandAdr,
-    rucAdr,
-    nactiVyrazene(),
-    oblast.slug,
-    jinaOblast,
-  )
+  const report = zapisKandidaty(polozky, kandAdr, rucAdr, nactiVyrazene(), oblast.slug, jinaOblast)
 
   console.log(`\n## DATA-01 report (stav OSM dat: ${stavy.join(', ')})`)
   // Verdikt se týká STAHOVÁNÍ, offline transformace ho nemá co hlásit.
@@ -1080,37 +1213,55 @@ const main = async () => {
   for (const ch of report.zapsano) console.log(`- ${ch.nazev} (\`${ch.slug}.yaml\`) — ${ch.url}`)
   console.log(`\nUž kandidátem z dřívějška (nepřepsáno): ${report.jizKandidat.length}`)
   for (const ch of report.jizKandidat) console.log(`- ${ch.slug} — ${ch.url}`)
-  console.log(`\nRučně kurátorované profily (nedotčeny — jen porovnání s OSM): ${report.rucni.length}`)
+  console.log(
+    `\nRučně kurátorované profily (nedotčeny — jen porovnání s OSM): ${report.rucni.length}`,
+  )
   for (const p of report.rucni) {
     const gps = p.gpsRozdilM != null ? `GPS rozdíl ${p.gpsRozdilM} m` : 'GPS v ručním profilu chybí'
     const vyska =
       p.vyskaOsm != null && p.vyskaRucni != null
         ? `výška OSM ${p.vyskaOsm} m vs. ruční ${p.vyskaRucni} m`
         : `výška OSM ${p.vyskaOsm ?? '—'} / ruční ${p.vyskaRucni ?? '—'}`
-    console.log(`- ${p.slug}: ${gps}; ${vyska}${p.nazevOsm !== p.nazevRucni ? `; název OSM „${p.nazevOsm}" vs. „${p.nazevRucni}"` : ''} — ${p.url}`)
+    console.log(
+      `- ${p.slug}: ${gps}; ${vyska}${p.nazevOsm !== p.nazevRucni ? `; název OSM „${p.nazevOsm}" vs. „${p.nazevRucni}"` : ''} — ${p.url}`,
+    )
   }
   console.log(`\nUž vede jiná oblast (DATA-36, překryv oken): ${report.jinaOblast.length}`)
   for (const j of report.jinaOblast) console.log(`- ${j.url} → ${j.kde}`)
 
   console.log(`\nPřeskočeno — neúplné v OSM (k ruční kontrole): ${report.preskoceno.length}`)
-  for (const p of report.preskoceno) console.log(`- ${p.url} (${p.duvod === 'bez-nazvu' ? 'chybí name' : 'chybí souřadnice'})`)
-  console.log(`\nVyřazeno redakcí (data/kandidati/_vyrazeno.yaml — nezakládá se): ${report.vyrazeno.length}`)
+  for (const p of report.preskoceno)
+    console.log(`- ${p.url} (${p.duvod === 'bez-nazvu' ? 'chybí name' : 'chybí souřadnice'})`)
+  console.log(
+    `\nVyřazeno redakcí (data/kandidati/_vyrazeno.yaml — nezakládá se): ${report.vyrazeno.length}`,
+  )
   for (const v of report.vyrazeno) console.log(`- ${v.url} — ${v.duvod}`)
 
-  console.log(`\n### Rozhledny (bereme jen s doloženým občerstvením — rozhodnutí Michala 28. 7. 2026)`)
+  console.log(
+    `\n### Rozhledny (bereme jen s doloženým občerstvením — rozhodnutí Michala 28. 7. 2026)`,
+  )
   console.log(`\nVzaté jako kandidáti: ${rozhlednyVzate.length}`)
   for (const r of rozhlednyVzate) console.log(`- ${r.nazev} — doklad: ${r.doklad} — ${r.url}`)
-  console.log(`\nU chaty, která už kandidátem je (dvojici posoudí redakce, zvlášť se nezakládá): ${rozhlednyUChaty.length}`)
+  console.log(
+    `\nU chaty, která už kandidátem je (dvojici posoudí redakce, zvlášť se nezakládá): ${rozhlednyUChaty.length}`,
+  )
   for (const r of rozhlednyUChaty) console.log(`- ${r.nazev} × ${r.chata} — ${r.url}`)
   console.log(`\nBez doloženého občerstvení (NEBEREME): ${rozhlednyBezObcerstveni.length}`)
   for (const r of rozhlednyBezObcerstveni) console.log(`- ${r.nazev} — ${r.url}`)
-  console.log(`\nPod prahem výšky ${MIN_VYSKA_ROZHLEDNY_M} m — vyhlídková plošina, ne rozhledna (NEBEREME): ${rozhlednyNizke.length}`)
+  console.log(
+    `\nPod prahem výšky ${MIN_VYSKA_ROZHLEDNY_M} m — vyhlídková plošina, ne rozhledna (NEBEREME): ${rozhlednyNizke.length}`,
+  )
   for (const r of rozhlednyNizke) console.log(`- ${r.nazev} (${r.vyska} m) — ${r.url}`)
 
   // Co katalog vede a OSM nemá: úkol pro ruční dohledání, ne důvod k výmyslu.
   if (jmena.length) {
-    const nenalezene = jmena.filter((j) => ![...nalezenaJmena].some((n) => n.localeCompare(j, 'cs', { sensitivity: 'accent' }) === 0))
-    console.log(`\nKatalog vede, OSM podle jména nenašlo (${nenalezene.length} z ${jmena.length}) — souřadnice doplní ruční dohledávka DATA-31:`)
+    const nenalezene = jmena.filter(
+      (j) =>
+        ![...nalezenaJmena].some((n) => n.localeCompare(j, 'cs', { sensitivity: 'accent' }) === 0),
+    )
+    console.log(
+      `\nKatalog vede, OSM podle jména nenašlo (${nenalezene.length} z ${jmena.length}) — souřadnice doplní ruční dohledávka DATA-31:`,
+    )
     for (const j of nenalezene) console.log(`- ${j}`)
   }
 }

@@ -27,6 +27,11 @@ const KROKY = [
   // Nezpracovany kandidat je prace, ne chyba; report ho ukaze a tim vlastne
   // plni zadani „at nic nezustane nezpracovane".
   ['fronta', 'rozpracovanost redakce (kandidati, fotky) + vady rozhodnuti', true],
+  // ROZHODUJE: cisty stav je presne nula. Overpass hlasi behovou chybu jako
+  // HTTP 200 s prazdnym `elements`, takze vadny export se do repa dostane jako
+  // platny doklad — a to je nejtissi porucha, jakou pipeline umi (8. 8. 2026
+  // kvuli ni chybeli v beskydskych kandidatech Libusin a Chata na Radhosti).
+  ['exporty', 'surove Overpass exporty v repu (behova chyba v `remark`)', true],
   // jedina kontrola mimo datovou vrstvu: definice GitHub Actions. Rozhoduje,
   // protoze vadny workflow se jinak pozna az na webu Actions (padly beh).
   ['workflows', 'definice GitHub Actions (.github/workflows)', true],

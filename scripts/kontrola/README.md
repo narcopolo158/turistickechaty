@@ -3,12 +3,13 @@
 Pět skriptů, které hlídají to, co dělá tenhle web webem: **že se údaje dají
 ověřit a že se nic nedomýšlí**. Nejsou to unit testy aplikace — čtou YAML
 profily v `data/chaty/**` a hlásí, kde próza tvrdí víc, než co je doložené.
-Šestý, `workflows.ts`, do datové vrstvy nepatří vůbec: hlídá definice GitHub
+Dva z nich do datové vrstvy nepatří vůbec: `workflows.ts` hlídá definice GitHub
 Actions, protože tudy do repa vede jediná cesta, kterou nekontroluje ani lint,
-ani build (viz níže).
+ani build, a `exporty.ts` hlídá surové Overpass exporty uložené v repu — doklad
+s chybou uvnitř je horší než žádný (viz níže).
 
 ```
-npm run kontrola        # spustí všech šest + regresní test
+npm run kontrola        # spustí všechny + regresní test
 npm run kontrola:test   # jen regresní test proti fixtuře
 ```
 
@@ -21,6 +22,7 @@ npx tsx scripts/kontrola/ban-scan.ts     [soubor.yaml …]
 npx tsx scripts/kontrola/audit-mech.ts   [soubor.yaml …]
 npx tsx scripts/kontrola/kolize-jmen.ts  [soubor.yaml …]
 npx tsx scripts/kontrola/workflows.ts    [soubor.yml …]
+npx tsx scripts/kontrola/exporty.ts
 ```
 
 `kolize-jmen.ts` je jediný, který sám od sebe čte i `data/kandidati/**` —
@@ -348,3 +350,27 @@ ověřeně falešné (próza je neobsahovala ani jako slovo). Falešné
 obvinění publikovaného profilu je horší než propuštěný nález: kontrola,
 které se nedá věřit, se přestane číst.
 Fixtura leží mimo `data/`, takže ji žádná ostrá kontrola ani seed nevidí.
+
+**`exporty.ts` — verdikt.** Čte všechny `data/kandidati/*/_overpass-*.json`
+a hlásí ty, které nesou **běhovou chybu Overpassu**. Vznikla z konkrétní škody
+8. 8. 2026: beskydský `_overpass-dle-jmen-cz.json` obsahoval
+`remark: runtime error: Query timed out in "query" at line 5 after 183 seconds.`
+a nula elementů. Overpass hlásí běhovou chybu jako **HTTP 200**, takže
+`nactiExport` ji tehdy přijal jako platný prázdný výsledek — pipeline vypsala
+„0 objektů dohledáno podle jména" a běh dopadl zeleně. Jenže právě ta
+dohledávka podle jmen z externího katalogu je **druhá záchranná síť**: hledá,
+co hlavní dotaz podle tagů minul. Když tiše neudělá nic, chybí přesně to
+nejcennější — u Beskyd Libušín a Chata na Radhošti, dva nejznámější objekty
+pohoří (Maměnka o třicet metrů dál v exportu byla, takže to nebyla chyba okna,
+ale tagů, kterou měla dohledávka pokrýt).
+
+Příčina je opravená v `nactiExport` (chyba v `remark` je tvrdá chyba, takže se
+zapojí retry na zrcadlo). Tahle kontrola řeší druhou polovinu: **vadný export
+už v repu leží**. Commitnutý export je doklad, na který se odkazují profily,
+a doklad, který vypadá jako doklad a není jím, je nejhorší varianta. Kontrola
+proto ROZHODUJE — čistý stav je přesně nula. Rozlišuje chybový `remark`
+(`error`, `timed out`, `out of memory`) od nechybového („Query returned an empty
+result set"): prázdný výsledek je u dohledávky legitimní, protože v druhé zemi
+nemusí být z katalogu nic. A hlásí chybu i tehdy, když nějaké elementy přišly —
+částečný export vypadá jako úspěch a rozdíl proti minulému běhu se pak projeví
+jako „objekty zmizely".

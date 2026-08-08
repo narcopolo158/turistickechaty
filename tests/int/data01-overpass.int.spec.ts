@@ -4,7 +4,15 @@
  * dotazu (API se mockuje, sandbox na Overpass nedosáhne; ostrý běh dělá
  * Actions workflow).
  */
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
+import {
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  readdirSync,
+  rmSync,
+  writeFileSync,
+} from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 
@@ -53,7 +61,8 @@ describe('overpassDotaz', () => {
     // druhá vrstva na civilně tagované boudy — podrobnosti hlídá
     // `data01-siroky-dotaz`. Tady jde o kostru dotazu.
     const dotaz = overpassDotaz('CZ')
-    for (const tag of ['alpine_hut', 'wilderness_hut', 'hut', 'chalet']) expect(dotaz).toContain(tag)
+    for (const tag of ['alpine_hut', 'wilderness_hut', 'hut', 'chalet'])
+      expect(dotaz).toContain(tag)
     expect(dotaz).toContain('"tourism"~')
     expect(dotaz).toContain('area["ISO3166-1"="CZ"]')
     expect(dotaz).toContain('50.55,15.30,50.87,16.05')
@@ -106,8 +115,14 @@ describe('rozhledny s občerstvením', () => {
   it('pozná rozhlednu a doklad občerstvení z tagů', () => {
     expect(jeRozhledna(vez(1))).toBe(true)
     expect(jeRozhledna(node(2, { tourism: 'alpine_hut', name: 'Bouda' }))).toBe(false)
-    expect(znackaObcerstveni(node(3, { amenity: 'fast_food' }))).toEqual({ znacka: 'amenity=fast_food', jeChata: false })
-    expect(znackaObcerstveni(node(4, { tourism: 'alpine_hut' }))).toEqual({ znacka: 'tourism=alpine_hut', jeChata: true })
+    expect(znackaObcerstveni(node(3, { amenity: 'fast_food' }))).toEqual({
+      znacka: 'amenity=fast_food',
+      jeChata: false,
+    })
+    expect(znackaObcerstveni(node(4, { tourism: 'alpine_hut' }))).toEqual({
+      znacka: 'tourism=alpine_hut',
+      jeChata: true,
+    })
     // atrakce u rozhledny občerstvení nedokládá — nesmí ji propašovat dovnitř
     expect(znackaObcerstveni(node(5, { tourism: 'attraction' }))).toBeNull()
     expect(znackaObcerstveni(node(6, { amenity: 'toilets' }))).toBeNull()
@@ -128,7 +143,13 @@ describe('rozhledny s občerstvením', () => {
   it('občerstvení zatagované přímo na věži je doklad se vzdáleností 0', () => {
     const [r] = parujRozhledny([vez(20, { amenity: 'cafe' })])
     expect(r.obcerstveni).toEqual([
-      { url: osmUrl(vez(20)), nazev: 'Rozhledna 20', znacka: 'amenity=cafe', vzdalenostM: 0, jeChata: false },
+      {
+        url: osmUrl(vez(20)),
+        nazev: 'Rozhledna 20',
+        znacka: 'amenity=cafe',
+        vzdalenostM: 0,
+        jeChata: false,
+      },
     ])
   })
 
@@ -145,19 +166,33 @@ describe('rozhledny s občerstvením', () => {
   })
 
   it('rozhledna bez občerstvení má prázdný doklad — tu podle rozhodnutí nebereme', () => {
-    const [r] = parujRozhledny([vez(30), node(31, { amenity: 'restaurant', name: 'Restaurace daleko' }, DALEKO)])
+    const [r] = parujRozhledny([
+      vez(30),
+      node(31, { amenity: 'restaurant', name: 'Restaurace daleko' }, DALEKO),
+    ])
     expect(r.obcerstveni).toEqual([])
   })
 
   it('chata u rozhledny se pozná (dvojici pak posoudí redakce, ať nevznikne dvojí objekt)', () => {
-    const [r] = parujRozhledny([vez(40), node(41, { tourism: 'alpine_hut', name: 'Bouda pod rozhlednou' }, BLIZKO)])
+    const [r] = parujRozhledny([
+      vez(40),
+      node(41, { tourism: 'alpine_hut', name: 'Bouda pod rozhlednou' }, BLIZKO),
+    ])
     expect(r.obcerstveni[0]).toMatchObject({ nazev: 'Bouda pod rozhlednou', jeChata: true })
   })
 
   it('kandidát z rozhledny nese doklad občerstvení a typ `rozhledna`', () => {
     const vysledek = chataZElementu(vez(50, { height: '24' }), CHECKED, 'cz', {
       oblast: 'jizerske-hory',
-      obcerstveni: [{ url: 'https://www.openstreetmap.org/node/51', nazev: 'Bufet', znacka: 'amenity=fast_food', vzdalenostM: 12, jeChata: false }],
+      obcerstveni: [
+        {
+          url: 'https://www.openstreetmap.org/node/51',
+          nazev: 'Bufet',
+          znacka: 'amenity=fast_food',
+          vzdalenostM: 12,
+          jeChata: false,
+        },
+      ],
     })
     expect('duvod' in vysledek).toBe(false)
     const { data } = vysledek as { data: Record<string, unknown> }
@@ -172,13 +207,58 @@ describe('rozhledny s občerstvením', () => {
 
 describe('nactiExport', () => {
   it('checked bere z osm3s.timestamp_osm_base (datum stavu OSM dat)', () => {
-    const raw = JSON.stringify({ osm3s: { timestamp_osm_base: '2026-07-18T09:00:00Z' }, elements: [] })
+    const raw = JSON.stringify({
+      osm3s: { timestamp_osm_base: '2026-07-18T09:00:00Z' },
+      elements: [],
+    })
     expect(nactiExport(raw)).toEqual({ elementy: [], checked: '2026-07-18' })
   })
 
   it('nevalidní JSON i chybějící elements jsou tvrdá chyba', () => {
     expect(() => nactiExport('<html>error</html>')).toThrow(/validní JSON/)
     expect(() => nactiExport('{}')).toThrow(/elements/)
+  })
+
+  /**
+   * Skutečná odpověď z beskydského běhu 8. 8. 2026 — HTTP 200, nula elementů
+   * a chyba jen v `remark`. Do 8. 8. 2026 to pipeline brala jako výsledek,
+   * takže dohledávka podle jmen z katalogu tiše neudělala nic a v kandidátech
+   * chybí Libušín i Chata na Radhošti. Test drží ten konkrétní tvar odpovědi,
+   * ne obecnou myšlenku.
+   */
+  it('běhová chyba v `remark` je tvrdá chyba, ne prázdný výsledek', () => {
+    const raw = JSON.stringify({
+      version: 0.6,
+      generator: 'Overpass API 0.7.62.11 87bfad18',
+      osm3s: { timestamp_osm_base: '2026-05-31T22:37:44Z' },
+      elements: [],
+      remark: 'runtime error: Query timed out in "query" at line 5 after 183 seconds.',
+    })
+    expect(() => nactiExport(raw)).toThrow(/běhovou chybu/)
+    expect(() => nactiExport(raw)).toThrow(/timed out/)
+  })
+
+  it('chyba v `remark` platí i tehdy, když nějaké elementy přišly', () => {
+    // Overpass umí vrátit ČÁST výsledku a pak vypršet. Částečný export je
+    // horší než žádný: vypadá jako úspěch a rozdíl proti minulému běhu se
+    // projeví jako „objekty zmizely".
+    const raw = JSON.stringify({
+      osm3s: { timestamp_osm_base: '2026-08-08T00:00:00Z' },
+      elements: [{ type: 'node', id: 1, lat: 49.5, lon: 18.4, tags: { name: 'Chata' } }],
+      remark: 'runtime error: Query run out of memory in "recurse" at line 7.',
+    })
+    expect(() => nactiExport(raw)).toThrow(/běhovou chybu/)
+  })
+
+  it('neškodný `remark` bez chyby export neshodí', () => {
+    // Overpass posílá `remark` i pro nechybová hlášení. Kdyby kontrola
+    // reagovala na jeho pouhou přítomnost, začala by shazovat platné běhy.
+    const raw = JSON.stringify({
+      osm3s: { timestamp_osm_base: '2026-08-08T00:00:00Z' },
+      elements: [],
+      remark: 'Query returned an empty result set.',
+    })
+    expect(nactiExport(raw)).toEqual({ elementy: [], checked: '2026-08-08' })
   })
 })
 
@@ -207,8 +287,14 @@ describe('chataZElementu', () => {
     expect(d.lng).toBe(15.7)
     expect(d.vyska).toBe(1234)
     expect(d.obec).toBe('Pec pod Sněžkou')
-    expect(d.kontakty).toEqual({ telefon: '+420 123 456 789', email: 'info@example.cz', web: 'https://example.cz/' })
-    expect(d.aliasy).toEqual([{ nazev: 'Baudenschänke', poznamka: 'historický název (OSM old_name)' }])
+    expect(d.kontakty).toEqual({
+      telefon: '+420 123 456 789',
+      email: 'info@example.cz',
+      web: 'https://example.cz/',
+    })
+    expect(d.aliasy).toEqual([
+      { nazev: 'Baudenschänke', poznamka: 'historický název (OSM old_name)' },
+    ])
     expect(d.stav).toBeUndefined() // stav se nedomýšlí — OSM ho nenese
   })
 
@@ -235,17 +321,34 @@ describe('chataZElementu', () => {
   })
 
   it('polské ł se přepisuje na l — slug neztrácí písmena (nález z průchodu PL kandidátů)', () => {
-    const el = node(110, { tourism: 'alpine_hut', name: 'Schronisko pod Łabskim Szczytem' }, 50.775, 15.55)
+    const el = node(
+      110,
+      { tourism: 'alpine_hut', name: 'Schronisko pod Łabskim Szczytem' },
+      50.775,
+      15.55,
+    )
     const vysledek = chataZElementu(el, CHECKED, 'pl')
     if (!('data' in vysledek)) throw new Error('čekal jsem data')
     expect(vysledek.data.slug).toBe('schronisko-pod-labskim-szczytem')
-    const okraj = chataZElementu(node(111, { tourism: 'alpine_hut', name: 'Schronisko PTTK na Przełęczy Okraj' }, 50.78, 15.86), CHECKED, 'pl')
+    const okraj = chataZElementu(
+      node(
+        111,
+        { tourism: 'alpine_hut', name: 'Schronisko PTTK na Przełęczy Okraj' },
+        50.78,
+        15.86,
+      ),
+      CHECKED,
+      'pl',
+    )
     if (!('data' in okraj)) throw new Error('čekal jsem data')
     expect(okraj.data.slug).toBe('schronisko-pttk-na-przeleczy-okraj')
   })
 
   it('wilderness_hut → útulna; nestandardní hut typ nedostane (určí redakce)', () => {
-    const utulna = chataZElementu(node(103, { tourism: 'wilderness_hut', name: 'Útulna Pod Lesem', ele: 'cca 900?' }), CHECKED)
+    const utulna = chataZElementu(
+      node(103, { tourism: 'wilderness_hut', name: 'Útulna Pod Lesem', ele: 'cca 900?' }),
+      CHECKED,
+    )
     if (!('data' in utulna)) throw new Error('čekal jsem data')
     expect(utulna.data.typ).toBe('utulna')
     expect(utulna.data.vyska).toBeUndefined() // nevalidní ele se nezapisuje
@@ -261,8 +364,14 @@ describe('chataZElementu', () => {
   it('way bez center a objekt beze jména se přeskakují s důvodem do reportu', () => {
     const bezJmena = chataZElementu(node(104, { tourism: 'alpine_hut' }), CHECKED)
     expect(bezJmena).toEqual({ duvod: 'bez-nazvu', url: 'https://www.openstreetmap.org/node/104' })
-    const bezSouradnic = chataZElementu({ type: 'way', id: 105, tags: { tourism: 'alpine_hut', name: 'Bouda' } }, CHECKED)
-    expect(bezSouradnic).toEqual({ duvod: 'bez-souradnic', url: 'https://www.openstreetmap.org/way/105' })
+    const bezSouradnic = chataZElementu(
+      { type: 'way', id: 105, tags: { tourism: 'alpine_hut', name: 'Bouda' } },
+      CHECKED,
+    )
+    expect(bezSouradnic).toEqual({
+      duvod: 'bez-souradnic',
+      url: 'https://www.openstreetmap.org/way/105',
+    })
   })
 
   it('way s center bere souřadnice středu', () => {
@@ -288,8 +397,14 @@ describe('porovnání s ručním profilem', () => {
   })
 
   it('porovnejSRucnim doloží GPS rozdíl, výšky a odlišný název — nic nemění', () => {
-    const el = node(1, { tourism: 'alpine_hut', name: 'Luční Bouda', ele: '1413' }, 50.7346, 15.6967)
-    const rucni = 'nazev: Luční bouda\nslug: lucni-bouda\nlat: 50.734525\nlng: 15.696628\nvyska: 1410\n'
+    const el = node(
+      1,
+      { tourism: 'alpine_hut', name: 'Luční Bouda', ele: '1413' },
+      50.7346,
+      15.6967,
+    )
+    const rucni =
+      'nazev: Luční bouda\nslug: lucni-bouda\nlat: 50.734525\nlng: 15.696628\nvyska: 1410\n'
     const p = porovnejSRucnim(el, rucni, 'lucni-bouda')
     expect(p.gpsRozdilM).not.toBeNull()
     expect(p.gpsRozdilM as number).toBeLessThan(50) // stejné místo
@@ -323,7 +438,8 @@ describe('zapisKandidaty', () => {
   afterEach(() => rmSync(tmp, { recursive: true, force: true }))
 
   it('zapisuje kandidáty obou zemí, ruční profil jen porovná, kandidáta nepřepisuje, kolize slugů řeší', () => {
-    const rucniYaml = '# ruční profil — nesahat\nnazev: Luční bouda\nslug: lucni-bouda\nlat: 50.7345\nlng: 15.6966\nvyska: 1410\n'
+    const rucniYaml =
+      '# ruční profil — nesahat\nnazev: Luční bouda\nslug: lucni-bouda\nlat: 50.7345\nlng: 15.6966\nvyska: 1410\n'
     mkdirSync(rucni, { recursive: true })
     writeFileSync(join(rucni, 'lucni-bouda.yaml'), rucniYaml, 'utf8')
 
@@ -333,7 +449,11 @@ describe('zapisKandidaty', () => {
       cz(node(2, { tourism: 'alpine_hut', name: 'Nová bouda' })),
       cz(node(3, { tourism: 'alpine_hut', name: 'Nová bouda' })), // kolize jména
       cz(node(4, { tourism: 'alpine_hut' })), // beze jména
-      { el: node(5, { tourism: 'alpine_hut', name: 'Schronisko Odrodzenie' }, 50.753, 15.685), zeme: 'pl', checked: '2026-07-19' } as ExportPolozka,
+      {
+        el: node(5, { tourism: 'alpine_hut', name: 'Schronisko Odrodzenie' }, 50.753, 15.685),
+        zeme: 'pl',
+        checked: '2026-07-19',
+      } as ExportPolozka,
     ]
     const report = zapisKandidaty(polozky, kandidati, rucni)
 
@@ -341,10 +461,20 @@ describe('zapisKandidaty', () => {
     expect(report.rucni[0].slug).toBe('lucni-bouda')
     expect(report.rucni[0].gpsRozdilM as number).toBeLessThan(50)
     expect(readFileSync(join(rucni, 'lucni-bouda.yaml'), 'utf8')).toBe(rucniYaml) // nedotčeno
-    expect(readdirSync(kandidati).sort()).toEqual(['nova-bouda-3.yaml', 'nova-bouda.yaml', 'schronisko-odrodzenie.yaml'])
-    expect(report.zapsano.map((z) => z.slug)).toEqual(['nova-bouda', 'nova-bouda-3', 'schronisko-odrodzenie'])
+    expect(readdirSync(kandidati).sort()).toEqual([
+      'nova-bouda-3.yaml',
+      'nova-bouda.yaml',
+      'schronisko-odrodzenie.yaml',
+    ])
+    expect(report.zapsano.map((z) => z.slug)).toEqual([
+      'nova-bouda',
+      'nova-bouda-3',
+      'schronisko-odrodzenie',
+    ])
     expect(report.preskoceno).toHaveLength(1)
-    expect(parse(readFileSync(join(kandidati, 'nova-bouda-3.yaml'), 'utf8')).slug).toBe('nova-bouda-3')
+    expect(parse(readFileSync(join(kandidati, 'nova-bouda-3.yaml'), 'utf8')).slug).toBe(
+      'nova-bouda-3',
+    )
     const pl = parse(readFileSync(join(kandidati, 'schronisko-odrodzenie.yaml'), 'utf8'))
     expect(pl.zeme).toBe('pl')
     expect(pl.overeniLokace.checked).toBe('2026-07-19') // checked per export dané země
@@ -353,7 +483,11 @@ describe('zapisKandidaty', () => {
     const obsahPred = readFileSync(join(kandidati, 'nova-bouda.yaml'), 'utf8')
     const znovu = zapisKandidaty(polozky, kandidati, rucni)
     expect(znovu.zapsano).toHaveLength(0)
-    expect(znovu.jizKandidat.map((k) => k.slug)).toEqual(['nova-bouda', 'nova-bouda-3', 'schronisko-odrodzenie'])
+    expect(znovu.jizKandidat.map((k) => k.slug)).toEqual([
+      'nova-bouda',
+      'nova-bouda-3',
+      'schronisko-odrodzenie',
+    ])
     expect(readFileSync(join(kandidati, 'nova-bouda.yaml'), 'utf8')).toBe(obsahPred)
   })
 
@@ -367,7 +501,9 @@ describe('zapisKandidaty', () => {
 
     const report = zapisKandidaty(polozky, kandidati, rucni, vyrazene)
     expect(report.zapsano.map((z) => z.slug)).toEqual(['poctiva-bouda'])
-    expect(report.vyrazeno).toEqual([{ url: 'https://www.openstreetmap.org/node/11', duvod: 'duplicita — sloučeno' }])
+    expect(report.vyrazeno).toEqual([
+      { url: 'https://www.openstreetmap.org/node/11', duvod: 'duplicita — sloučeno' },
+    ])
     expect(readdirSync(kandidati).sort()).toEqual(['poctiva-bouda.yaml']) // duplicitní se nezaložila
   })
 
@@ -375,7 +511,13 @@ describe('zapisKandidaty', () => {
   // takže první běh pro Jizerské hory založil sedm kandidátů s cizí oblastí
   // (a hlavičkou, která posílala povyšovat do data/chaty/krkonose/).
   it('oblast se propisuje do YAML i do hlavičky — nová oblast nedědí Krkonoše', () => {
-    const polozky: ExportPolozka[] = [{ el: node(60, { tourism: 'alpine_hut', name: 'Jizerská bouda' }), zeme: 'cz', checked: CHECKED }]
+    const polozky: ExportPolozka[] = [
+      {
+        el: node(60, { tourism: 'alpine_hut', name: 'Jizerská bouda' }),
+        zeme: 'cz',
+        checked: CHECKED,
+      },
+    ]
     zapisKandidaty(polozky, kandidati, rucni, new Map(), 'jizerske-hory')
     const soubor = readFileSync(join(kandidati, 'jizerska-bouda.yaml'), 'utf8')
     expect(parse(soubor).oblast).toBe('jizerske-hory')
@@ -414,9 +556,20 @@ describe('stahniOverpass (mock API)', () => {
   /** Nejmenší platný export — jeden objekt, ať prázdno zůstane vyhrazené pojistce níž. */
   const RAW = JSON.stringify({
     osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' },
-    elements: [{ type: 'node', id: 1, lat: 50.7, lon: 15.4, tags: { tourism: 'alpine_hut', name: 'Zkušební bouda' } }],
+    elements: [
+      {
+        type: 'node',
+        id: 1,
+        lat: 50.7,
+        lon: 15.4,
+        tags: { tourism: 'alpine_hut', name: 'Zkušební bouda' },
+      },
+    ],
   })
-  const PRAZDNY = JSON.stringify({ osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' }, elements: [] })
+  const PRAZDNY = JSON.stringify({
+    osm3s: { timestamp_osm_base: '2026-07-20T05:00:00Z' },
+    elements: [],
+  })
   /** Spánek se v testech jen zaznamenává — čekat 30 s doopravdy nechceme. */
   const spanekSpy = () => {
     const cekani: number[] = []
@@ -426,7 +579,9 @@ describe('stahniOverpass (mock API)', () => {
   it('POSTuje dotaz jako data= a vrací surový text exportu i použitou instanci', async () => {
     const fetchMock = vi.fn().mockResolvedValue(new Response(RAW, { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
-    await expect(stahniOverpass(['https://overpass.example/api/interpreter'], overpassDotaz('CZ'))).resolves.toEqual({
+    await expect(
+      stahniOverpass(['https://overpass.example/api/interpreter'], overpassDotaz('CZ')),
+    ).resolves.toEqual({
       raw: RAW,
       api: 'https://overpass.example/api/interpreter',
     })
@@ -442,7 +597,9 @@ describe('stahniOverpass (mock API)', () => {
       .mockResolvedValueOnce(new Response('busy', { status: 429 }))
       .mockResolvedValueOnce(new Response(RAW, { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
-    await expect(stahniOverpass(['https://hlavni.example', 'https://zrcadlo.example'], overpassDotaz('CZ'))).resolves.toEqual({
+    await expect(
+      stahniOverpass(['https://hlavni.example', 'https://zrcadlo.example'], overpassDotaz('CZ')),
+    ).resolves.toEqual({
       raw: RAW,
       api: 'https://zrcadlo.example',
     })
@@ -457,7 +614,11 @@ describe('stahniOverpass (mock API)', () => {
       .mockResolvedValueOnce(new Response('<html>rate limited</html>', { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
     await expect(
-      stahniOverpass(['https://a.example', 'https://b.example', 'https://c.example'], overpassDotaz('CZ'), { kola: 1 }),
+      stahniOverpass(
+        ['https://a.example', 'https://b.example', 'https://c.example'],
+        overpassDotaz('CZ'),
+        { kola: 1 },
+      ),
     ).rejects.toThrow(
       /Všechny Overpass instance selhaly:[\s\S]*a\.example \(kolo 1\/1\): HTTP 429[\s\S]*b\.example \(kolo 1\/1\): fetch failed[\s\S]*c\.example.*validní JSON/,
     )
@@ -475,7 +636,10 @@ describe('stahniOverpass (mock API)', () => {
       .mockResolvedValueOnce(new Response(RAW, { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
     await expect(
-      stahniOverpass(['https://a.example', 'https://b.example'], overpassDotaz('CZ'), { pauzy: [30_000, 90_000], spanek }),
+      stahniOverpass(['https://a.example', 'https://b.example'], overpassDotaz('CZ'), {
+        pauzy: [30_000, 90_000],
+        spanek,
+      }),
     ).resolves.toEqual({ raw: RAW, api: 'https://a.example' })
     expect(fetchMock).toHaveBeenCalledTimes(3)
     expect(cekani).toEqual([30_000]) // jedna pauza: po prvním neúspěšném kole
@@ -485,7 +649,11 @@ describe('stahniOverpass (mock API)', () => {
     const { cekani, spanek } = spanekSpy()
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('too busy', { status: 504 })))
     await expect(
-      stahniOverpass(['https://a.example'], overpassDotaz('CZ'), { kola: 3, pauzy: [30_000, 90_000], spanek }),
+      stahniOverpass(['https://a.example'], overpassDotaz('CZ'), {
+        kola: 3,
+        pauzy: [30_000, 90_000],
+        spanek,
+      }),
     ).rejects.toThrow(/kolo 3\/3\): HTTP 504 \(přetížená instance\)/)
     expect(cekani).toEqual([30_000, 90_000])
   })
@@ -496,12 +664,19 @@ describe('stahniOverpass (mock API)', () => {
   it('prázdná odpověď je selhání instance — a `povolitPrazdno` ji přijme', async () => {
     const { spanek } = spanekSpy()
     // Tělo Response se dá přečíst jen jednou — každý pokus dostane vlastní.
-    vi.stubGlobal('fetch', vi.fn().mockImplementation(async () => new Response(PRAZDNY, { status: 200 })))
-    await expect(stahniOverpass(['https://regionalni.example'], overpassDotaz('CZ'), { kola: 1, spanek })).rejects.toThrow(
-      /0 objektů — instance nejspíš nemá celosvětová data/,
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockImplementation(async () => new Response(PRAZDNY, { status: 200 })),
     )
     await expect(
-      stahniOverpass(['https://regionalni.example'], overpassDotaz('CZ'), { kola: 1, spanek, povolitPrazdno: true }),
+      stahniOverpass(['https://regionalni.example'], overpassDotaz('CZ'), { kola: 1, spanek }),
+    ).rejects.toThrow(/0 objektů — instance nejspíš nemá celosvětová data/)
+    await expect(
+      stahniOverpass(['https://regionalni.example'], overpassDotaz('CZ'), {
+        kola: 1,
+        spanek,
+        povolitPrazdno: true,
+      }),
     ).resolves.toEqual({ raw: PRAZDNY, api: 'https://regionalni.example' })
   })
 })
@@ -634,7 +809,9 @@ describe('DATA-36: objekt vedený jinou oblastí se nezakládá znovu', () => {
     mkdirSync(jina, { recursive: true })
     writeFileSync(
       join(jina, 'uplne-jiny-slug.yaml'),
-      ['nazev: Chata', 'overeniLokace:', `  source: OpenStreetMap ${URL_OBJEKTU} — ODbL`].join('\n'),
+      ['nazev: Chata', 'overeniLokace:', `  source: OpenStreetMap ${URL_OBJEKTU} — ODbL`].join(
+        '\n',
+      ),
       'utf8',
     )
     const index = indexJinychOblasti([join(koren, 'kandidati')], 'beskydy')
