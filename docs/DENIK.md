@@ -100,7 +100,16 @@ nestačí. Tři objekty do 1,3 km od rozvodí jsem označil k posouzení místo
 toho, abych je vydával za rozhodnuté.
 
 **Ruční rozhodnutí ale nestačí, protože se při dalším běhu vrátí** — proto
-je z toho nová položka backlogu **DATA-36**: DATA-01 má před založením
+z toho vznikla položka **DATA-36 a její první bod je hotový týž den.**
+`data01-overpass-krkonose.ts` má novou funkci `indexJinychOblasti`, která
+postaví mapu „URL objektu v OSM → oblast/slug" nad všemi kandidáty
+i publikovanými profily, a `zapisKandidaty` objekt už vedený jinou oblastí
+NEZALOŽÍ — jen ho vypíše do reportu. Identita je URL objektu, ne slug ani
+jméno: slug může nést suffix `-<id>` a jména jako „Chata", „Hájenka" nebo
+„Skalka" se v korpusu opakují. Čtyři nové testy včetně kontrolního běhu bez
+indexu (jinak by test nehlídal nic). Smoke nad reálným repem: pro Beskydy
+index vidí 598 objektů vedených jinde, pro Javorníky 815. Zbývá druhý bod —
+kontrola, která duplicity hlásí jako rozpracovanost. Původní zadání znělo: DATA-01 má před založením
 kandidáta ověřit, jestli objekt téhož OSM id už neleží v kandidátech jiné
 oblasti, a přeskočit ho („první export vyhrává", což je deterministické
 a idempotentní). K tomu kontrola, která duplicity mezi oblastmi hlásí jako

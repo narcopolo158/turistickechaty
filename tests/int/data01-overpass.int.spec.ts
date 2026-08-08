@@ -4,7 +4,7 @@
  * dotazu (API se mockuje, sandbox na Overpass nedosáhne; ostrý běh dělá
  * Actions workflow).
  */
-import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 
@@ -14,6 +14,7 @@ import { parse } from 'yaml'
 import {
   OKOLI_OBCERSTVENI_M,
   chataZElementu,
+  indexJinychOblasti,
   MIN_VYSKA_ROZHLEDNY_M,
   jePrilisNizka,
   jeRozhledna,
@@ -558,5 +559,95 @@ describe('DATA-01 · verdikt neúplného běhu', () => {
       { iso: 'SK', ok: false },
     ])
     expect(v.sentinel).toBe('NEUPLNY_BEH: PL,SK')
+  })
+})
+
+/**
+ * DATA-36 — pojistka proti dvojímu založení kandidáta v překrývajících se
+ * oknech. Vznikla 8. 8. 2026 z doloženého následku: dva kliky na DATA-01 pro
+ * sousední oblasti (beskydy, javorniky-vsetinske-vrchy) vyrobily 29 kandidátů
+ * se shodným jménem i souřadnicemi ve dvou adresářích, protože export
+ * o kandidátech jiných oblastí nic nevěděl. Ruční rozhodnutí takových
+ * duplicit nestačí — při dalším běhu se vrátí.
+ *
+ * Pravidlo je „PRVNÍ EXPORT VYHRÁVÁ": objekt už vedený jinou oblastí se
+ * znovu nezakládá, jen se vypíše do reportu. Překryv oken zůstává záměrný,
+ * protože ostrý řez na hranici dvou pohoří tiše vyřízne objekty na sedle
+ * mezi nimi.
+ */
+describe('DATA-36: objekt vedený jinou oblastí se nezakládá znovu', () => {
+  const OBJEKT: OsmElement = {
+    type: 'node',
+    id: 4242424242,
+    lat: 49.4,
+    lon: 18.3,
+    tags: { name: 'Chata Na Rozvodí', tourism: 'alpine_hut' },
+  }
+  const URL_OBJEKTU = 'https://www.openstreetmap.org/node/4242424242'
+
+  const priprav = () => {
+    const koren = mkdtempSync(join(tmpdir(), 'data36-'))
+    const kand = join(koren, 'kandidati', 'beskydy')
+    const rucni = join(koren, 'chaty', 'beskydy')
+    mkdirSync(kand, { recursive: true })
+    mkdirSync(rucni, { recursive: true })
+    return { koren, kand, rucni }
+  }
+
+  it('bez indexu se kandidát založí (kontrolní běh — jinak test nic nehlídá)', () => {
+    const { kand, rucni } = priprav()
+    const report = zapisKandidaty(
+      [{ el: OBJEKT, zeme: 'cz', checked: '2026-08-08' }],
+      kand,
+      rucni,
+      new Map(),
+      'beskydy',
+    )
+    expect(report.zapsano.map((z) => z.slug)).toEqual(['chata-na-rozvodi'])
+    expect(report.jinaOblast).toEqual([])
+    expect(existsSync(join(kand, 'chata-na-rozvodi.yaml'))).toBe(true)
+  })
+
+  it('s indexem se NEzaloží a objekt se vypíše do reportu s cílem', () => {
+    const { kand, rucni } = priprav()
+    const report = zapisKandidaty(
+      [{ el: OBJEKT, zeme: 'cz', checked: '2026-08-08' }],
+      kand,
+      rucni,
+      new Map(),
+      'beskydy',
+      new Map([[URL_OBJEKTU, 'javorniky-vsetinske-vrchy/chata-na-rozvodi']]),
+    )
+    expect(report.zapsano).toEqual([])
+    expect(report.jinaOblast).toEqual([
+      { url: URL_OBJEKTU, kde: 'javorniky-vsetinske-vrchy/chata-na-rozvodi' },
+    ])
+    // Klíčové: soubor NEVZNIKL, takže se duplicita při dalším běhu nevrátí.
+    expect(existsSync(join(kand, 'chata-na-rozvodi.yaml'))).toBe(false)
+  })
+
+  it('index čte identitu z OSM URL, ne ze slugu ani ze jména', () => {
+    // Jména jako „Chata", „Hájenka" nebo „Skalka" se v korpusu opakují a slug
+    // může nést suffix `-<id>`; jediný stabilní rozlišovač je URL objektu.
+    const koren = mkdtempSync(join(tmpdir(), 'data36-index-'))
+    const jina = join(koren, 'kandidati', 'javorniky-vsetinske-vrchy')
+    mkdirSync(jina, { recursive: true })
+    writeFileSync(
+      join(jina, 'uplne-jiny-slug.yaml'),
+      ['nazev: Chata', 'overeniLokace:', `  source: OpenStreetMap ${URL_OBJEKTU} — ODbL`].join('\n'),
+      'utf8',
+    )
+    const index = indexJinychOblasti([join(koren, 'kandidati')], 'beskydy')
+    expect(index.get(URL_OBJEKTU)).toBe('javorniky-vsetinske-vrchy/uplne-jiny-slug')
+    // Vlastní oblast se do indexu nepočítá — jinak by si běh zablokoval sám sebe.
+    expect(indexJinychOblasti([join(koren, 'kandidati')], 'javorniky-vsetinske-vrchy').size).toBe(0)
+  })
+
+  it('soubory začínající podtržítkem index ignoruje (exporty a registry)', () => {
+    const koren = mkdtempSync(join(tmpdir(), 'data36-podtrzitko-'))
+    const jina = join(koren, 'kandidati', 'sumava')
+    mkdirSync(jina, { recursive: true })
+    writeFileSync(join(jina, '_overpass-export-cz.yaml'), `x: ${URL_OBJEKTU}`, 'utf8')
+    expect(indexJinychOblasti([join(koren, 'kandidati')], 'beskydy').size).toBe(0)
   })
 })

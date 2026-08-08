@@ -47,7 +47,7 @@
  * Atribuce: data © přispěvatelé OpenStreetMap, licence ODbL 1.0
  * (https://www.openstreetmap.org/copyright) — v source každého bloku ověření.
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 import { parse, stringify } from 'yaml'
@@ -672,10 +672,58 @@ export type Report = {
   rucni: Porovnani[]
   preskoceno: Preskoceni[]
   vyrazeno: { url: string; duvod: string }[]
+  /** Objekt už vede jiná oblast — DATA-36, viz `indexJinychOblasti`. */
+  jinaOblast: { url: string; kde: string }[]
 }
 
 /** Element s metadaty svého exportu (země dle area v dotazu, checked dle stavu dat). */
 export type ExportPolozka = { el: OsmElement; zeme: Zeme; checked: string; obcerstveni?: ObcerstveniUObjektu[] }
+
+/**
+ * DATA-36 — INDEX OBJEKTŮ, KTERÉ UŽ VEDE JINÁ OBLAST.
+ *
+ * Okna oblastí se ZÁMĚRNĚ překrývají, aby ostrý řez na hranici dvou pohoří
+ * tiše nevyřízl objekty na sedle mezi nimi (Krkonoše × Jizerky u Jizerky
+ * a Harrachova, Beskydy × Javorníky u Rožnovské Bečvy). Cena toho rozhodnutí
+ * se předvedla 8. 8. 2026: dva kliky na DATA-01 pro dvě sousední oblasti
+ * vyrobily 29 kandidátů se shodným jménem i souřadnicemi ve dvou adresářích,
+ * protože export o kandidátech jiných oblastí nic neví. Ruční rozhodnutí
+ * takových duplicit navíc nestačí — při dalším běhu se vrátí.
+ *
+ * Pravidlo je proto „PRVNÍ EXPORT VYHRÁVÁ": objekt, který už leží
+ * v kandidátech nebo profilech JINÉ oblasti, se znovu nezakládá, jen se
+ * vypíše do reportu. Je to deterministické a idempotentní; když objekt
+ * v jiné oblasti být nemá, přesune ho triáž (a přesun se pak propíše i do
+ * registru jmenovců, protože jeho klíčem je množina objektů).
+ *
+ * Identita objektu je URL v OSM, ne slug ani jméno — slug se může lišit
+ * suffixem `-<id>` a jméno bývá obecné („Chata", „Hájenka", „Skalka").
+ */
+export const indexJinychOblasti = (
+  koreny: string[],
+  vlastniOblast: string,
+): Map<string, string> => {
+  const index = new Map<string, string>()
+  for (const koren of koreny) {
+    if (!existsSync(koren)) continue
+    for (const oblast of readdirSync(koren, { withFileTypes: true })) {
+      if (!oblast.isDirectory() || oblast.name === vlastniOblast) continue
+      const adresar = join(koren, oblast.name)
+      for (const soubor of readdirSync(adresar)) {
+        if (!soubor.endsWith('.yaml') || soubor.startsWith('_')) continue
+        const url = /openstreetmap\.org\/(?:node|way|relation)\/\d+/.exec(
+          readFileSync(join(adresar, soubor), 'utf8'),
+        )?.[0]
+        if (!url) continue
+        const plne = `https://www.${url}`
+        // První nález vyhrává i tady — pořadí adresářů je abecední, takže
+        // výsledek nezávisí na pořadí souborů z filesystému.
+        if (!index.has(plne)) index.set(plne, `${oblast.name}/${soubor.replace(/\.yaml$/, '')}`)
+      }
+    }
+  }
+  return index
+}
 
 /**
  * Zapíše YAML kandidátů (obě země do téhož adresáře pohoří — Krkonoše jsou
@@ -694,8 +742,17 @@ export const zapisKandidaty = (
   // kompatibilitu; běh pro jinou oblast ji předává z konfigurace (28. 7. 2026
   // právě tenhle hardcode poslal sedm jizerskohorských kandidátů do Krkonoš).
   oblast: string = 'krkonose',
+  /** DATA-36: URL objektu → „oblast/slug", kde už je veden. */
+  jinaOblast: Map<string, string> = new Map(),
 ): Report => {
-  const report: Report = { zapsano: [], jizKandidat: [], rucni: [], preskoceno: [], vyrazeno: [] }
+  const report: Report = {
+    zapsano: [],
+    jizKandidat: [],
+    rucni: [],
+    preskoceno: [],
+    vyrazeno: [],
+    jinaOblast: [],
+  }
   const slugyBehu = new Set<string>()
   mkdirSync(kandidatiAdresar, { recursive: true })
 
@@ -709,6 +766,12 @@ export const zapisKandidaty = (
     const duvodVyrazeni = vyrazene.get(osmUrl(el))
     if (duvodVyrazeni !== undefined) {
       report.vyrazeno.push({ url: osmUrl(el), duvod: duvodVyrazeni })
+      continue
+    }
+    // DATA-36: objekt už vede jiná oblast (překryv oken) — nezakládat znovu.
+    const uzVede = jinaOblast.get(osmUrl(el))
+    if (uzVede !== undefined) {
+      report.jinaOblast.push({ url: osmUrl(el), kde: uzVede })
       continue
     }
     const vysledek = chataZElementu(el, checked, zeme, { oblast, obcerstveni })
@@ -991,7 +1054,19 @@ const main = async () => {
     }
   }
 
-  const report = zapisKandidaty(polozky, kandAdr, rucAdr, nactiVyrazene(), oblast.slug)
+  // DATA-36: index objektů, které už vede jiná oblast (překryv oken).
+  const jinaOblast = indexJinychOblasti(
+    [join(process.cwd(), 'data', 'kandidati'), join(process.cwd(), 'data', 'chaty')],
+    oblast.slug,
+  )
+  const report = zapisKandidaty(
+    polozky,
+    kandAdr,
+    rucAdr,
+    nactiVyrazene(),
+    oblast.slug,
+    jinaOblast,
+  )
 
   console.log(`\n## DATA-01 report (stav OSM dat: ${stavy.join(', ')})`)
   // Verdikt se týká STAHOVÁNÍ, offline transformace ho nemá co hlásit.
@@ -1014,6 +1089,9 @@ const main = async () => {
         : `výška OSM ${p.vyskaOsm ?? '—'} / ruční ${p.vyskaRucni ?? '—'}`
     console.log(`- ${p.slug}: ${gps}; ${vyska}${p.nazevOsm !== p.nazevRucni ? `; název OSM „${p.nazevOsm}" vs. „${p.nazevRucni}"` : ''} — ${p.url}`)
   }
+  console.log(`\nUž vede jiná oblast (DATA-36, překryv oken): ${report.jinaOblast.length}`)
+  for (const j of report.jinaOblast) console.log(`- ${j.url} → ${j.kde}`)
+
   console.log(`\nPřeskočeno — neúplné v OSM (k ruční kontrole): ${report.preskoceno.length}`)
   for (const p of report.preskoceno) console.log(`- ${p.url} (${p.duvod === 'bez-nazvu' ? 'chybí name' : 'chybí souřadnice'})`)
   console.log(`\nVyřazeno redakcí (data/kandidati/_vyrazeno.yaml — nezakládá se): ${report.vyrazeno.length}`)
