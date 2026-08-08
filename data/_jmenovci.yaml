@@ -435,3 +435,115 @@ jmenovci:
       Rozlišovačem bude `obec` (DATA-17 R2); doloženou ji nemá ani jeden (R6).
     rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
     checked: 2026-08-08
+
+  # ── Jesenický export DATA-01 (8. 8. 2026 večer) — osm dalších kolizí ──
+  # Michalův třetí klik téhož dne přinesl 122 kandidátů Jeseníků. U každé
+  # kolize je NAMĚŘENÁ vzdálenost z GPS; pravá duplicita OSM není ani jedna.
+  - jadro: praded
+    objekty:
+      - jeseniky/hotel-praded
+      - jeseniky/hotel-praded-2429394872
+      - jeseniky/praded
+      - jeseniky/praded-351923785
+    duvod: >-
+      ČTYŘI RŮZNÉ OBJEKTY, a hlavně: ANI JEDEN NENÍ TEN NA VRCHOLU. Naměřeno
+      z GPS je mezi nimi 9 763 až 33 232 m (hotel-praded 50,019 / 17,288;
+      hotel-praded-2429394872 50,228 / 17,203; praded 50,032 / 17,040;
+      praded-351923785 49,932 / 17,269) a všechna čtyři OSM id jsou různá.
+      Vrchol Praděd leží podle turistika.cz okolo 50,083 / 17,233, tedy
+      nejméně pět kilometrů od každého z nich — „Praděd" je v Jeseníkách
+      obvyklé jméno penzionů a chat po celém pohoří.
+      DŮSLEDEK PRO PRÁCI: katalogový **Hotel Praděd (1491 m)** na vrcholu
+      zatím NEMÁ kandidáta. Tagový dotaz DATA-01 ho minul — buď je v OSM
+      tagovaný civilně, nebo vystupuje pod jménem vysílače. Patří to do
+      dohledávky podle jmen (DATA-31) a je to přesně ten druh miss, na který
+      má dohledávka být: objekt, o kterém katalog ví a hutový dotaz o něm
+      neví.
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na dohledávku a triáž Jeseníků
+    checked: 2026-08-08
+  - jadro: barborka
+    objekty:
+      - beskydy/chata-barborka
+      - jeseniky/barborka
+      - krkonose/barborka
+      - sumava/chata-barborka
+    duvod: >-
+      ČTVRTÁ BARBORKA PŘIBYLA, jak předpověděl záznam z ranního bloku:
+      tehdy tu byly tři (publikovaná krkonošská v Peci pod Sněžkou, šumavská
+      u Hartmanic, beskydská) a bylo u nich napsáno, že katalog vede Chatu
+      Barborka i v Hrubém Jeseníku a že se kolize po kliku rozroste. Rozrostla
+      se týž den. Jesenická Barborka je katalogový objekt na 1320 m
+      v pradědské oblasti. Čtyři různé objekty ve čtyřech pohořích;
+      rozlišovač `obec` má doložený jen krkonošská a šumavská (R6 u dvou).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
+    checked: 2026-08-08
+  - jadro: puchatka
+    objekty:
+      - jeseniky/chatka-puchatka
+      - krkonose/chatka-puchatka
+    duvod: >-
+      Dva různé objekty na dvou stranách Sudet: publikovaný krkonošský profil
+      Chatka Puchatka (u Karpacze — obec doložena při opravě kontroly A
+      2. 8. 2026) a nová jesenická Chatka Puchatka v Międzygórzu pod
+      Śnieżnikem. „Chatka Puchatka" je v polských horách jméno tak obvyklé,
+      že shoda nic neznamená (PTTK ho nese i v Bieszczadech). Rozlišuje je
+      obec — doložená u obou, což je v tomhle registru vzácnost.
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na potvrzení při triáži
+    checked: 2026-08-08
+  - jadro: snezna
+    objekty:
+      - javorniky-vsetinske-vrchy/chata-snezna
+      - jeseniky/chata-snezna
+    duvod: >-
+      Dva různé objekty přes 150 km od sebe — jeden na Bumbálce v Javorníkách,
+      druhý v Jeseníkách. Shodné jméno bez diakritického rozdílu; rozlišovač
+      `obec` nemá doložený ani jeden (R6).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
+    checked: 2026-08-08
+  - jadro: terezka
+    objekty:
+      - jeseniky/chata-terezka
+      - sumava/chata-terezka
+    duvod: >-
+      Dva různé objekty: šumavská Chata Terezka na Kvildě (obec doložena)
+      a jesenická bez doložené obce. Křestní jméno v názvu chaty je
+      u pronájmů běžné a oba kandidáti nesou v OSM tag pronájmu — triáž je
+      nejspíš pošle mimo klíč, takže kolize zanikne vyřazením.
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na triáž
+    checked: 2026-08-08
+  - jadro: na rozcesti
+    objekty:
+      - jeseniky/chata-na-rozcesti
+      - krkonose/chalupa-na-rozcesti
+    duvod: >-
+      Dva různé objekty: publikovaná krkonošská Chalupa Na Rozcestí v Peci
+      pod Sněžkou a nová jesenická Chata Na Rozcestí. „Na rozcestí" je
+      pomístní označení, ne vlastní jméno — shoda je čekaná. Rozlišuje je
+      typové slovo, oblast a u krkonošské i obec (R5).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obce při triáži
+    checked: 2026-08-08
+  - jadro: panorama
+    objekty:
+      - beskydy/chata-panorama
+      - jeseniky/panorama
+      - jizerske-hory/chata-panorama
+    duvod: >-
+      TŘETÍ PANORAMA PŘIBYLA (ráno tu byly dvě — beskydská v Námestove
+      a jizerská). „Panorama" je u horských podniků jméno tak obvyklé, že
+      shoda nic neznamená. Rozlišovač `obec` má doložený jen beskydská (R6
+      u dvou).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
+    checked: 2026-08-08
+  - jadro: '1'
+    objekty:
+      - jeseniky/chata-1
+      - sumava/1
+    duvod: >-
+      Dva objekty, jejichž jméno je číslice — v OSM to bývá zbytek po
+      hromadném importu nebo číslo domu omylem v poli `name`. Do průvodce
+      nepatří ani jeden; triáž je pošle do koše K POSOUZENÍ (šumavská „1"
+      tam už od 7. 8. je) a nejspíš pak mimo klíč. Zapsáno sem jen proto, aby
+      kontrola kolizí nehlásila neznámý nález — je to falešný pozitiv daný
+      tím, že jádro názvu je jediný znak.
+    rozhodl: Claude (návrh z 8. 8. 2026) — oba objekty mimo klíč zařazení
+    checked: 2026-08-08
