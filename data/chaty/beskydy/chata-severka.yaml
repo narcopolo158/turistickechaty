@@ -1,0 +1,265 @@
+# Turistická chata Severka — povýšena z kandidáta DATA-01 (8. 8. 2026).
+# Jediná z dnešní beskydské čtveřice, u které se NEPODAŘILO doložit, kdo ji
+# postavil a kdy — a je to v profilu napsané, ne zamlčené.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Turistická chata Severka
+slug: chata-severka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: beskydy
+
+aliasy:
+  - nazev: Chata Severka
+    poznamka: podoba jména v OpenStreetMap i v externím katalogu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.5144368
+lng: 18.7094049
+vyska: 965
+obec: Dolní Lomná
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/278747071 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 965 m se shoduje napříč třemi prameny (načteno 8. 8. 2026):
+    obec Dolní Lomná („965 m n. m."), beskydy.cz u chaty („965 m n.m.
+    (vrch Kostelky)") i beskydy.cz u ski areálu. Adresa: „Dolní Lomná 277,
+    739 82 Dolní Lomná" (obec i beskydy.cz).
+    KATALOGOVÝCH 957 m SE NENAŠLO V ŽÁDNÉM PRAMENI. Konvence „nižší číslo
+    při rozporu" se sem nevztahuje: externí katalog je AI kompilace vedená
+    jako VODICÍ, ne verifikační pramen (data/externi/katalog-cr-sk-2026/
+    PUVOD.md), takže proti třem shodným pramenům nestojí jako čtvrtý názor.
+    CHATA STOJÍ NA SEVERNÍM SVAHU vrchu Kostelka, ne na jeho vrcholu (obec
+    Dolní Lomná i beskydy.cz); kótu vrcholu žádný pramen neuvádí, takže
+    o kolik je chata pod ním, nevíme.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 50
+overeniNocleh:
+  source: >-
+    ROZPOR PRAMENŮ, nesrovnaný (načteno 8. 8. 2026): beskydy.cz u chaty
+    uvádí „20 pokojů s více než 50 lůžky" a 53 lůžek s přistýlkami,
+    beskydy.cz u ski areálu 52 lůžek, vlastní web chaty jen počet pokojů
+    (20). Zapsáno 50 dle konvence z 27. 7. 2026 (při rozporu nižší číslo,
+    rozpor přiznat) — a je to zároveň to nejopatrnější čtení pramene, který
+    píše „více než 50": tvrdíme, co je jisté, ne co je pravděpodobné.
+    Počet pokojů (20) se shoduje ve dvou pramenech.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    ocimaturisty.cz (načteno 8. 8. 2026): „restaurace pro pětapadesát
+    osob". Nezávisle beskydy.cz uvádí u chaty letní terasu s výhledem
+    a beskydy.cz u ski areálu „Turistická chata Severka" s restaurací
+    u horní stanice. OpenStreetMap vede objekt jako tourism=alpine_hut
+    (https://www.openstreetmap.org/node/278747071 — ODbL). Klíč zařazení je
+    splněn dvakrát: veřejné občerstvení i role na trase — přes Severku vede
+    červená hřebenová trasa mezi Skalkou a Kamennou chatou.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: dva prameny dávají dva neslučitelné rozvrhy
+# a jeden z nich navíc platí jen pro zimní sezónu. Viz overeniProvoz.
+overeniProvoz:
+  source: >-
+    ROZPOR PRAMENŮ, nesrovnaný (načteno 8. 8. 2026). beskydy.cz: zimní
+    sezóna po–ne 10:00–17:00, mimo sezónu po–čt zavřeno a pá, so, ne
+    10:00–16:00, recepce denně 9:00–19:00. Vlastní web chaty uvádí provozní
+    dobu „8 do 18:30". Ta čísla nejde srovnat: jeden pramen rozlišuje
+    sezónu a druhý ne. Rozvrh proto nezapisujeme — u chaty na hřebenové
+    trase čtyři kilometry od Mostů u Jablunkova je špatný rozvrh horší než
+    žádný. Rozhodne jeden telefonát (DATA-04).
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+420558330051'
+  email: chata@severka.eu
+  web: https://www.severka.eu/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku SE NEVYPLŇUJE — nikdo z pramenů rok stavby chaty neuvádí. Viz
+# overeniHistorie. Je to jediný objekt z beskydské čtveřice 8. 8. 2026, u
+# kterého se to nepodařilo, a nedomýšlí se.
+overeniHistorie:
+  source: >-
+    ROK STAVBY ANI STAVEBNÍK SE NEPODAŘILI DOLOŽIT (rešerše 8. 8. 2026).
+    Nejblíž je ocimaturisty.cz: „Ski areál Severka na severním svahu
+    Kostelka začal psát svou historii roku 1962", areál měl
+    „jednosedačkovou lanovku, která návštěvníkům sloužila do přelomu
+    70.-80. let minulého století", a k chatě týž pramen uvádí: „Ve stejné
+    době byla v místech horní stanice zrušené lanovky postavena chata,
+    která turistům i lyžařům poskytovala neocenitelné služby." Z toho vyplývá
+    zařazení na přelom sedmdesátých a osmdesátých let, ale KONKRÉTNÍ ROK ANI
+    STAVEBNÍK (spolek? podnik? soukromník?) v žádném prameni nestojí, a tak
+    se nezapisují. Doložen je jen pozdější přechod: „Po revoluci roku 1989
+    přešla chata do soukromého vlastnictví, kde zůstala dodnes." Jméno
+    dnešního vlastníka ani provozovatele neuvádí vlastní web, obec Dolní
+    Lomná ani beskydy.cz. ANI JEDEN ZE DVOU BESKYDSKÝCH SPOLKŮ tu nemůže být
+    doložen už časově — Beskidenverein i Pohorská jednota Radhošť stavěly
+    o osmdesát let dřív — ale je to náš úsudek z dat, ne tvrzení pramene.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Chata stojí v místech horní stanice zrušené jednosedačkové lanovky
+      z roku 1962; tu později nahradil vlek Tatrapoma s převýšením
+      dvou set metrů.
+    kategorie: jine
+    zdroj: >-
+      ocimaturisty.cz (načteno 8. 8. 2026): „Ski areál Severka na severním
+      svahu Kostelka začal psát svou historii roku 1962"; „jednosedačková
+      lanovka, která návštěvníkům sloužila do přelomu 70.-80. let minulého
+      století"; „nahradil ji vlek Tatrapoma, který funguje dodnes
+      a překonává převýšení 200 metrů"; „Ve stejné době byla v místech
+      horní stanice zrušené lanovky postavena chata"
+  - text: >-
+      Lanovka, která v areálu jezdí od roku 2018, je použitá — dovezli ji
+      z Itálie.
+    kategorie: jine
+    zdroj: >-
+      ocimaturisty.cz (načteno 8. 8. 2026): „V roce 2018 byla do provozu
+      dána lanovka, přivezená jako použitá z Itálie"
+  - text: >-
+      Z letní terasy je vidět na Malou Fatru.
+    kategorie: jine
+    zdroj: >-
+      beskydy.cz (načteno 8. 8. 2026) — „letní terasa s výhledem na Malou
+      Fatru"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata na severním svahu Kostelky v Dolní Lomné, na hřebenové trase mezi
+  Skalkou a Kamennou chatou. Stojí v místech horní stanice jednosedačkové
+  lanovky z roku 1962 — kdo ji ale postavil a kdy, se nám doložit nepodařilo.
+text:
+  - >-
+    Severka leží v 965 metrech na severním svahu vrchu Kostelka, v katastru
+    Dolní Lomné, čtyři kilometry od Mostů u Jablunkova. Na výšce se shodují
+    tři prameny; katalogových 957 metrů jsme nenašli nikde. Není to chata na
+    vrcholu — kótu Kostelky ovšem žádný pramen neuvádí, takže o kolik je
+    chata pod ním, nevíme.
+  - >-
+    U téhle chaty musíme přiznat mezeru, která u ostatních beskydských
+    profilů není: nevíme, kdo ji postavil ani kdy. Ski areál na Kostelce
+    začal podle jednoho pramene roku 1962 a měl jednosedačkovou lanovku,
+    která dojezdila na přelomu sedmdesátých a osmdesátých let; chata podle
+    téhož pramene vznikla „ve stejné době" a stojí právě v místech horní
+    stanice té zrušené lanovky. Konkrétní rok ani stavebníka ale neuvádí
+    žádný pramen, který jsme našli, a tak je tu neuvádíme ani my. Doložené
+    je jen to, co přišlo potom: po roce 1989 přešla chata do soukromého
+    vlastnictví a v něm zůstala.
+  - >-
+    Kdo je dnešní vlastník nebo provozovatel, se z pramenů taky nedozvíme —
+    vlastní web chaty ani stránky obce jméno neuvádějí. Vlek Tatrapoma, který
+    tehdejší lanovku nahradil, funguje dodnes a překonává dvě stě metrů
+    převýšení; od roku 2018 v areálu jezdí druhá lanovka, kterou dovezli
+    použitou z Itálie.
+  - >-
+    Chata má dvacet pokojů, přes padesát lůžek a restauraci pro pětapadesát
+    hostů; z letní terasy je vidět na Malou Fatru. Kdy je otevřeno,
+    neuvádíme: jeden pramen rozlišuje zimní a mimosezónní režim, druhý dává
+    jediný čas od osmi do půl sedmé, a to se srovnat nedá.
+  - >-
+    Pro pěší je Severka bod na hřebenové trase. Červená značka od Mostů
+    u Jablunkova jde přes Skalku a Severku ke Kamenné chatě a dál po hranici
+    na Muřinkový vrch, Velký a Malý Polom, Bílý Kříž a Bumbálku — hlavní
+    beskydský hřeben tedy jde přímo tady. Kdo přichází zdola, mine cestou
+    rozcestí Kostelky a vyjde z lesa přímo do lyžařského areálu.
+  - >-
+    Údaje na téhle stránce nesou vlastní web chaty, stránky obce Dolní
+    Lomná, beskydy.cz, ocimaturisty.cz a horydoly.cz; polohu nese
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Obec Dolní Lomná, stránka chaty — výška 965 m, poloha na severním
+      svahu vrchu Kostelka, adresa Dolní Lomná 277, telefony, e-mail
+      (načteno 8. 8. 2026)
+    url: >-
+      https://www.dolnilomna.cz/turista/ubytovani-a-restaurace/turisticka-chata-severka-116cs.html
+  - popis: >-
+      beskydy.cz, Turistická chata Severka — 20 pokojů s více než 50 lůžky
+      (53 s přistýlkami), letní terasa s výhledem na Malou Fatru, otvírací
+      doba zimní i mimosezónní, přístup po červené od Mostů u Jablunkova
+      (načteno 8. 8. 2026)
+    url: https://www.beskydy.cz/content/beskydy-dolni-lomna-chaty-turisticka-chata-severka.aspx
+  - popis: >-
+      beskydy.cz, Ski areál Severka – Velký Polom — chata s 52 lůžky
+      u horní stanice, vleky a sjezdovky (načteno 8. 8. 2026)
+    url: https://www.beskydy.cz/content/beskydy-ski-areal-severka-velky-polom-v-dolni-lomne.aspx
+  - popis: >-
+      ocimaturisty.cz — areál od roku 1962, jednosedačková lanovka do
+      přelomu 70. a 80. let a chata postavená „ve stejné době" v místech
+      její horní stanice, vlek Tatrapoma, přechod do soukromého
+      vlastnictví po roce 1989, restaurace pro 55 osob, lanovka z Itálie
+      z roku 2018 (načteno 8. 8. 2026)
+    url: >-
+      https://www.ocimaturisty.cz/clanky/vyletni-a-horske-chaty/chaty-v-beskydech/severka---horska-chata-v-beskydech.html
+  - popis: >-
+      Vlastní web chaty — 20 pokojů, provozní doba, kontakty
+      (načteno 8. 8. 2026)
+    url: https://www.severka.eu/ubytovani
+  - popis: >-
+      horydoly.cz, Hlavní beskydský hřeben — průběh trasy Mosty
+      u Jablunkova, Skalka, Kamenná chata, Muřinkový vrch, Velký a Malý
+      Polom, Bílý Kříž, Bumbálka (načteno 8. 8. 2026)
+    url: https://www.horydoly.cz/turiste/hlavni-beskydsky-hreben.html
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/node/278747071
+interniPoznamky: >-
+  Povýšeno z data/kandidati/beskydy/chata-severka.yaml (8. 8. 2026), šestý
+  publikovaný profil oblasti Beskydy.
+
+  PROFIL S PŘIZNANOU DÍROU, a to je tu ta nejpodstatnější věc. `rokVzniku`
+  je prázdný, protože rok stavby neuvádí žádný pramen — jediné vodítko je
+  věta „Ve stejné době byla v místech horní stanice zrušené lanovky
+  postavena chata" (ocimaturisty.cz), tedy přelom 70. a 80. let. Bylo by
+  snadné z ní udělat „asi 1980" a nikdo by si nevšiml; to je přesně ten
+  druh domyšleného čísla, který průvodce nesmí mít. V próze je to napsané
+  jako mezera, ne přeskočené.
+
+  KATALOGOVÁ VÝŠKA 957 m SE NENAŠLA NIKDE a je to výjimka z konvence
+  „nižší číslo při rozporu" — vědomá. Katalog je AI kompilace vedená jako
+  VODICÍ, ne verifikační pramen (PUVOD.md), takže proti třem shodným
+  pramenům na 965 m nestojí jako čtvrtý názor, který by konvenci spustil.
+  Zapisovat 957 jen proto, že je nižší, by znamenalo dát AI kompilaci
+  přednost před obcí, ve které chata stojí. Tohle rozlišení stojí za
+  zapamatování: konvence platí mezi PRAMENY, ne mezi pramenem a vodičem.
+
+  OBEC: katalog vede „Dolní Lomná" a prameny to potvrzují (Dolní Lomná 277,
+  katastr Dolní Lomná). U Gírové to bylo naopak — tam katalog vedl Písek
+  u Jablunkova, prameny Bukovec.
+
+  HŘEBENOVKA TADY DOLOŽENĚ JE, na rozdíl od Kozubové, Gírové a Javorového.
+  horydoly.cz vede hlavní beskydský hřeben přes Mosty u Jablunkova, Skalku
+  a Kamennou chatu a beskydy.cz uvádí přístup „po červené značce směr
+  Skalka, Severka, Kamenná chata". U Severky tedy klíč zařazení stojí na
+  roli na trase silněji než u zbytku čtveřice.
+
+  ROZPOR V POČTU VLEKŮ SE NEZAPSAL: ocimaturisty.cz „čtyři lyžařské vleky
+  a celková délka sjezdovek je přes dva kilometry", beskydy.cz „3 vleky"
+  plus dvousedačková lanová dráha. Do zajímavostí šel proto jen vlek
+  Tatrapoma a lanovka z roku 2018, u kterých se prameny neperou.
+
+  TURISTICKÁ ZNÁMKA č. 2047 se objevila jen v titulku cizí stránky, ne
+  v katalogu vydavatele — do dat se nezapsala. Kdo bude párovat známky
+  (DATA-05), má tu stopu.
+
+  NEDOLOŽENO (nezapsáno): rok stavby a stavebník, jméno dnešního vlastníka
+  a provozovatele, kapacita s jistotou (50+ / 52 / 53), otvírací doba,
+  kóta vrcholu Kostelka, datace „rozsáhlé rekonstrukce", kterou vlastní web
+  zmiňuje bez roků, počet vleků a délka sjezdovek, požáry a přestavby.
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

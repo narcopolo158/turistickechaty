@@ -471,11 +471,18 @@ describe('Tatry — jedenáctá a dvanáctá oblast (pokyn Michala „vezmi rovn
     expect(p).toMatch(/TŘI RŮZNÉ ZÁPISY|tři různé zápisy/)
   })
 
-  it('Nízké Tatry: jméno je česky, ale slovenský tvar je v poznámce vysvětlený', () => {
+  it('Nízké Tatry: jméno drží Michalovo rozhodnutí a slovenský tvar je přiznaný', () => {
+    // Otázku na nekonzistenci (Nízké česky × Západné slovensky) zavřel Michal
+    // 8. 8. 2026 slovy „nizke tatry je slovensky stejne jako cesky". Test drží
+    // dvě věci zároveň: jméno podle jeho rozhodnutí, a zapsaný pravopisný
+    // detail, že slovenský tvar je „Nízke Tatry" bez „é" — aby se rozhodnutí
+    // neopíralo o mlčení o pramenu, ale stálo vedle něj.
     const y = nactiYaml('nizke-tatry')
     expect(y.nazev).toBe('Nízké Tatry')
     expect(y.sklonovani?.sesty).toBe('Nízkých Tatrách')
-    expect(String(y.interniPoznamky)).toMatch(/Nízke Tatry/)
+    const p = String(y.interniPoznamky)
+    expect(p).toMatch(/Nízke Tatry/)
+    expect(p).toMatch(/nizke tatry je slovensky stejne jako cesky/)
   })
 
   it('obě tatranské oblasti mají Slovensko zapojené celou cestou (dotaz i URL)', () => {

@@ -1,0 +1,338 @@
+# Horský hotel Kozubová — povýšen z kandidáta DATA-01 (8. 8. 2026). Postavil
+# ho POLSKÝ turistický spolek Beskid Śląski se sídlem v Orlové (1929) — třetí
+# spolek v beskydském korpusu vedle německého Beskidenvereinu a české Pohorské
+# jednoty Radhošť. Kaple s rozhlednou vedle hotelu je JINÝ objekt jiného
+# vlastníka a do tohohle profilu se vědomě neslučuje — viz interniPoznamky.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Horský hotel Kozubová
+slug: chata-kozubova
+zeme: cz
+typ: horsky-hotel
+stav: v-provozu
+oblast: beskydy
+
+aliasy:
+  - nazev: Chata Kozubová
+    poznamka: >-
+      podoba jména, kterou vede externí katalog i OpenStreetMap; provozovatel
+      se dnes představuje jako horský hotel
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.5702871
+lng: 18.674641
+vyska: 981
+obec: Milíkov
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/254649686 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Adresa: „Milíkov 28, 739 81 Milíkov" (vlastní web hotelu i firemní
+    registr, načteno 8. 8. 2026).
+    VÝŠKA — ROZPOR PRAMENŮ, nesrovnaný: 982 m uvádí vlastní web hotelu
+    („982 metrů nad mořem"), Kudy z nudy („Rozhledna na Kozubové
+    (982 m n. m.)") a regiontourist.cz; 981 m uvádí turistika.cz
+    („981 metrů nad mořem") a soupis vrcholů na vrcholovka.cz („Kozubová
+    – 981 m n.m."). Zapsáno 981 dle konvence z 27. 7. 2026 (při rozporu
+    nižší číslo, rozpor přiznat). POZOR: žádný pramen tu nerozlišuje výšku
+    VRCHOLU a výšku OBJEKTU — číslo 982 se uvádí zároveň u hotelu i u kaple
+    s rozhlednou. Kóta samotné budovy tedy doložená není a zapsaná hodnota
+    je výška místa, ne stavby.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 60
+overeniNocleh:
+  source: >-
+    ROZPOR O JEDNO LŮŽKO, přiznaný (načteno 8. 8. 2026): firemní registr
+    zivefirmy.cz vede „Provoz horské chaty s ubytováním (kapacita 61
+    lůžek)", Deník píše „Pro návštěvníky se v chatě nabízí 60 lůžek
+    a restaurace s celoročním provozem." Zapsáno 60 dle konvence
+    z 27. 7. 2026 (při rozporu nižší číslo). Rozdíl jednoho lůžka na věci
+    nic nemění, ale konvence se drží i tam, kde o nic nejde.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web hotelu (načteno 8. 8. 2026) uvádí restauraci pro 75 osob
+    a bar pro 30; jako specialitu vede „Placki na blasze". Nezávisle Deník:
+    „nabízí 60 lůžek a restaurace s celoročním provozem". OpenStreetMap
+    vede objekt jako tourism=alpine_hut
+    (https://www.openstreetmap.org/way/254649686 — ODbL). Klíč zařazení je
+    splněn dvakrát: veřejné občerstvení i role na trase (vrchol je cílem
+    tří značených tras a cyklostezky).
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Restaurace po–čt 9.00–17.00, pá–so 9.00–18.00, ne 9.00–17.00; od 15.00
+  vaří kuchyně jen polévky
+overeniProvoz:
+  source: >-
+    Vlastní web hotelu (načteno 8. 8. 2026). Nezávisle OpenStreetMap vede
+    „Mo,Su 09:00-15:00; Fr,Sa 09:00-17:00" — kratší časy o hodinu až dvě,
+    tedy rozpor v hodinách, ne v tom, které dny se otvírá. Zapsán rozvrh
+    provozovatele jako pramen nejblíž objektu; rozpor je v interniPoznamky.
+    Celoroční provoz uvádí Deník doslova.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+420558330050'
+  web: https://www.hotel-kozubova.cz/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1929
+overeniHistorie:
+  source: >-
+    Vlastní web hotelu, stránka historie (načteno 8. 8. 2026): „Krása místa
+    vrcholu Kozubové již v roce 1925 zaujala polský turistický spolek
+    „Beskid Śląski" se sídlem v Orlové, který odkoupil pozemek pod vrcholem
+    Kozubové od rodiny Sikorů." a „Výstavba turistické chaty podle návrhu
+    Edvarda Davida z Českého Těšína byla dokončena v září 1929
+    a slavnostního otevření se zúčastnilo několik tisíc lidí." Rok
+    a stavebníka potvrzuje nezávisle turistika.cz i Kudy z nudy
+    („Nedaleká turistická chata byla vystavěna v roce 1929 a svému účelu
+    sloužila až do roku 1973, kdy vyhořela."). ZABAVENÍ 1951 na základě
+    zákona 68/51, majetek přešel na státní podnik Restaurace a jídelny
+    (vlastní web). POŽÁR 9. února 1973 — vlastní web („9. února 1973 se
+    však událo neštěstí, které navždy uzavřelo jednu z kapitol Kozubové.",
+    příčinou byla „chybná konstrukce komínu, od kterého začal doutnat trám
+    konstrukce střechy") i Deník („Původní chata vydržela do roku 1973, kdy
+    ji 9. února zachvátil mohutný požár."). ROK NOVÉ CHATY — ROZPOR TŘÍ
+    ČÍSEL, nesrovnaný: vlastní web „V roce 1989 na jejím místě vybudoval
+    státní podnik Kovona zděnou chatu", Deník i Kudy z nudy rok 1982
+    („Nová chata byla otevřená v roce 1982 zásluhou karvinské Kovony.",
+    „V roce 1982 byla na jejím místě zprovozněna současná chata Kozubová."),
+    turistika.cz u obce Milíkov dokonce „nově postavena v roce 1973".
+    Rok 1929 se zapisuje jako rokVzniku (vznik turistické služby na místě);
+    rok dnešní budovy zůstává nerozhodnutý a je přiznaný v próze.
+    DNEŠNÍ PROVOZOVATEL: Horský hotel Kozubová s.r.o., Milíkov 28
+    (zivefirmy.cz). NENÍ TO CHATA KČT — v přehledu chat Klubu českých
+    turistů (kct.cz) Kozubová není.
+  verified: false
+  checked: '2026-08-08'
+
+milniky:
+  - rok: 1925
+    udalost: >-
+      Polský turistický spolek Beskid Śląski se sídlem v Orlové odkupuje
+      pozemek pod vrcholem Kozubové od rodiny Sikorů.
+    zdroj: >-
+      vlastní web hotelu, stránka historie (načteno 8. 8. 2026): „již
+      v roce 1925 zaujala polský turistický spolek „Beskid Śląski" se
+      sídlem v Orlové, který odkoupil pozemek pod vrcholem Kozubové od
+      rodiny Sikorů"
+  - rok: 1929
+    udalost: >-
+      V září dokončena turistická chata podle návrhu Edvarda Davida
+      z Českého Těšína; slavnostního otevření se zúčastnilo několik tisíc
+      lidí.
+    zdroj: >-
+      vlastní web hotelu (načteno 8. 8. 2026): „Výstavba turistické chaty
+      podle návrhu Edvarda Davida z Českého Těšína byla dokončena v září
+      1929 a slavnostního otevření se zúčastnilo několik tisíc lidí."
+  - rok: 1951
+    udalost: >-
+      Majetek zabaven na základě zákona 68/51 a chata přešla pod státní
+      podnik Restaurace a jídelny.
+    zdroj: >-
+      vlastní web hotelu, stránka historie (načteno 8. 8. 2026) — na
+      základě zákona 68/51 byl majetek zabaven a chata přešla pod státní
+      podnik Restaurace a jídelny
+  - rok: 1973
+    udalost: >-
+      9. února chata z větší části vyhořela; příčinou byla podle
+      provozovatele chybná konstrukce komínu.
+    zdroj: >-
+      vlastní web hotelu (načteno 8. 8. 2026): „9. února 1973 se však
+      událo neštěstí, které navždy uzavřelo jednu z kapitol Kozubové.";
+      Deník: „Původní chata vydržela do roku 1973, kdy ji 9. února
+      zachvátil mohutný požár."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Vedle hotelu stojí kamenná kaple svaté Anny s vyhlídkovou věží.
+      Patří církvi, ne hotelu, a každý rok se u ní konají poutě.
+    kategorie: jine
+    zdroj: >-
+      Kudy z nudy (načteno 8. 8. 2026): „Rozhledna na Kozubové (982 m n. m.)
+      v Moravskoslezských Beskydech je součástí kaple sv. Anny" a „Kaple
+      s 18 metrů vysokou rozhlednou je dnes v majetku církve."; Deník:
+      „Svatostánek je zasvěcený patronce sv. Anně a každoročně se zde
+      konají slavné poutě."
+  - text: >-
+      Výhled z vyhlídkové věže je jen na severní a východní stranu, na
+      česko-slovensko-polské pohraničí; do ostatních směrů ho kryjí stromy.
+    kategorie: jine
+    zdroj: >-
+      Kudy z nudy (načteno 8. 8. 2026): „Z věže se nabízí pohled pouze
+      severním a východním směrem na česko-slovensko-polské pohraničí,
+      v ostatních směrech je výhled kryt okolními stromy."
+  - text: >-
+      Roku 1937 se tu jel lyžařský závod Zjazd Gwiaździsty, na který se
+      sjelo víc než šedesát polských družstev.
+    kategorie: stari
+    zdroj: >-
+      vlastní web hotelu, stránka historie (načteno 8. 8. 2026) — lyžařský
+      závod „Zjazd Gwiaździsty" roku 1937 s více než 60 polskými družstvy
+  - text: >-
+      Na svahu pod hotelem je lyžařský vlek.
+    kategorie: jine
+    zdroj: >-
+      vlastní web hotelu (načteno 8. 8. 2026) — ski park Kozubová;
+      zivefirmy.cz vede u firmy „lyžařského areálu s vlekem"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hotel na Kozubové nad Milíkovem, na místě turistické chaty, kterou
+  tu roku 1929 postavil polský spolek Beskid Śląski z Orlové. Původní chata
+  vyhořela 9. února 1973; vedle dnešní budovy stojí kamenná kaple svaté Anny
+  s vyhlídkovou věží.
+text:
+  - >-
+    Kozubová je v beskydském korpusu zajímavá tím, kdo ji postavil. Ne
+    německý Beskidenverein, ne česká Pohorská jednota Radhošť, ale POLSKÝ
+    turistický spolek Beskid Śląski se sídlem v Orlové — pozemek pod
+    vrcholem odkoupil od rodiny Sikorů roku 1925 a v září 1929 tu stála
+    chata podle návrhu Edvarda Davida z Českého Těšína. Na slavnostní
+    otevření podle provozovatele přišlo několik tisíc lidí a roku 1937 se
+    tu jel lyžařský závod Zjazd Gwiaździsty s víc než šedesáti polskými
+    družstvy. Na Těšínsku té doby to o poměrech vypovídá dost.
+  - >-
+    Roku 1951 byl majetek na základě zákona zabaven a chata přešla pod
+    státní podnik Restaurace a jídelny. Skončila 9. února 1973, kdy z větší
+    části vyhořela — podle provozovatele začal od chybně postaveného komínu
+    doutnat trám ve střeše.
+  - >-
+    Kdy vznikla dnešní budova, se z pramenů říct nedá. Provozovatel uvádí
+    rok 1989 a jako stavebníka státní podnik Kovona, Deník i Kudy z nudy rok
+    1982 a tutéž karvinskou Kovonu, a jeden pramen dokonce rok 1973. Tři
+    různá čísla, tak žádné neuvádíme jako fakt; rokem vzniku zůstává 1929,
+    tedy rok, kdy na Kozubové začala turistická služba.
+  - >-
+    Vedle hotelu stojí kamenná kaple svaté Anny s vyhlídkovou věží
+    a každoročními poutěmi. Do profilu hotelu ji ale nespojujeme, protože
+    patří církvi — je to jiný objekt jiného vlastníka, na rozdíl od
+    Prašivé, kde je rozhledna zabudovaná do střechy chaty. Rok kaple se
+    v pramenech rozchází mezi lety 1928 a 1937 a výška věže mezi osmnácti
+    a dvaceti metry, takže ani jedno tady neuvádíme. Výhled z ní je
+    doložitelně jen na severní a východní stranu — do ostatních směrů ho
+    kryjí stromy.
+  - >-
+    Dnes je to horský hotel se šedesáti lůžky, restaurací pro pětasedmdesát
+    hostů a barem; provozovatel z jídel vypichuje placki na blasze. Na
+    svahu pod hotelem je lyžařský vlek. Není to chata Klubu českých
+    turistů — v jeho přehledu chat Kozubová není.
+  - >-
+    Na vrchol vede žlutá značka z Návsí přímo přes vrchol, zelená
+    z Bocanovic a modrá z Košařisek; prochází tu i značená cyklostezka.
+    Hlavní beskydská hřebenovka Kozubovou neprochází.
+  - >-
+    Údaje na téhle stránce nesou vlastní web hotelu, Deník, Kudy z nudy,
+    turistika.cz, regiontourist.cz, vrcholovka.cz a firemní registr
+    zivefirmy.cz; polohu nese OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hotelu — výška 982 m, restaurace pro 75 a bar pro 30,
+      otvírací doba, telefon, ski park (načteno 8. 8. 2026)
+    url: https://www.hotel-kozubova.cz/
+  - popis: >-
+      Vlastní web hotelu, stránka historie — pozemek 1925 od rodiny
+      Sikorů, polský spolek Beskid Śląski z Orlové, dokončení v září 1929
+      podle návrhu Edvarda Davida, zabavení 1951, požár 9. 2. 1973,
+      nová chata 1989 podnikem Kovona, závod Zjazd Gwiaździsty 1937
+      (načteno 8. 8. 2026)
+    url: https://www.hotel-kozubova.cz/clanky-beskydy/clanek-historie-kozubove
+  - popis: >-
+      Deník, Osudy horských chat v Beskydech — Kozubová — 60 lůžek
+      a celoroční provoz, požár 9. 2. 1973, nová chata 1982 zásluhou
+      karvinské Kovony, kaple z roku 1937 se dvacetimetrovou věží
+      a poutě ke svaté Anně (načteno 8. 8. 2026)
+    url: >-
+      https://fm.denik.cz/zpravy_region/osudy-horskych-chat-v-beskydech-kozubova20080905.html
+  - popis: >-
+      Kudy z nudy — rozhledna jako součást kaple sv. Anny, kaple
+      v majetku církve, výška věže 18 m, chata 1929 a požár 1973, nová
+      chata 1982, omezený výhled z věže (načteno 8. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/kozubova-v-beskydech-kaple-s-vyhlidkovou-vezi
+  - popis: >-
+      turistika.cz — výška 981 m, značené trasy z Návsí, Bocanovic
+      a Košařisek, cyklostezka (načteno 8. 8. 2026)
+    url: https://www.turistika.cz/mista/kozubova/detail
+  - popis: >-
+      regiontourist.cz — kaple s rozhlednou v majetku církve, výška
+      rozhledny 18 m (načteno 8. 8. 2026)
+    url: https://www.regiontourist.cz/co-podniknout/rozhledna-kozubova/
+  - popis: >-
+      vrcholovka.cz — Kozubová v soupisu vrcholů Moravskoslezských Beskyd
+      s výškou 981 m (načteno 8. 8. 2026)
+    url: https://www.vrcholovka.cz/pohori/1-moravskoslezske-beskydy/
+  - popis: >-
+      zivefirmy.cz — provozovatel Horský hotel Kozubová s.r.o., adresa
+      Milíkov 28, kapacita 61 lůžek, lyžařský areál s vlekem
+      (načteno 8. 8. 2026)
+    url: https://www.zivefirmy.cz/horsky-hotel-kozubova_f1621272
+  - popis: >-
+      Klub českých turistů, přehled chat — Kozubová v něm není
+      (načteno 8. 8. 2026)
+    url: https://kct.cz/chaty/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut, otvírací doba; ODbL)
+    url: https://www.openstreetmap.org/way/254649686
+interniPoznamky: >-
+  Povýšeno z data/kandidati/beskydy/chata-kozubova.yaml (8. 8. 2026), pátý
+  publikovaný profil oblasti Beskydy.
+
+  KAPLE S ROZHLEDNOU SE VĚDOMĚ NESLOUČILA, a je to protipól Prašivé. Na
+  Prašivé je rozhledna nástavbou střechy chaty, takže jeden objekt; tady je
+  kaple svaté Anny samostatná kamenná stavba v MAJETKU CÍRKVE (Kudy z nudy:
+  „Kaple s 18 metrů vysokou rozhlednou je dnes v majetku církve",
+  regiontourist.cz totéž), spravuje ji farnost, a hotel s ní nemá provozní
+  vztah. Dvě různá vlastnictví a dvě různé stavby = dva objekty. Kaple sama
+  do průvodce nepatří, protože nemá občerstvení; do profilu hotelu jde jako
+  zajímavost. Tři případy vedle sebe (Prašivá slučuje, Kleť slučuje,
+  Kozubová neslučuje) dávají použitelné pravidlo: rozhoduje jedna stavba
+  NEBO jeden provoz, ne blízkost.
+
+  TYP `horsky-hotel`, ne `obsluhovana`: provozovatel se představuje jako
+  horský hotel, má šedesát lůžek, bar a lyžařský areál. Katalog i
+  OpenStreetMap vedou „Chata Kozubová" — proto je to alias, ne název. Vzor
+  Berggasthofu Grobauer na Šumavě.
+
+  ROK DNEŠNÍ BUDOVY SE NEZAPSAL: tři neslučitelné hodnoty (1989 dle
+  vlastního webu, 1982 dle Deníku a Kudy z nudy, 1973 dle turistika.cz
+  u obce Milíkov). Zvláštní na tom je, že provozovatel — pramen nejblíž
+  objektu — stojí proti dvěma ostatním. Zapsán rokVzniku 1929 jako vznik
+  turistické služby na místě, vzor Berghausu Loderhart, kde je rokVzniku
+  rok koupě.
+
+  ROK KAPLE SE NEZAPSAL ANI DO ZAJÍMAVOSTI: čtyři hodnoty (1928 dle
+  turistika.cz, „po otevření chaty 1929" dle vlastního webu, 1936–37 dle
+  Kudy z nudy s farářem Ploszekem z Hnojníka, 1937 dle Deníku se stavitelem
+  Kiszou a architektem Dawidem) a k tomu dvě výšky věže (18 × 20 m).
+  Zajímavost proto mluví o kapli bez data.
+
+  KATALOGOVÁ VÝŠKA 982 m JE VYŠŠÍ NEŽ NAŠE 981 m a je to jediný z dnešní
+  čtveřice objektů, kde se katalog s prameny skoro sešel (u Gírové,
+  Javorového i Severky se rozešel výrazně — viz deník).
+
+  ANI KČT: kandidát nebyl v seznamu chat Klubu českých turistů, ověřeno
+  proti kct.cz. V témže seznamu naopak JSOU beskydské chaty Skalka a Ostrý,
+  což je pro jejich budoucí profily užitečná stopa.
+
+  NEDOLOŽENO (nezapsáno): rok dnešní budovy, rok a výška kaple, kóta
+  samotné budovy odlišená od kóty vrcholu (žádný pramen ji nerozlišuje),
+  voda a zásobování, doslovný doklad rekonstrukce 2019–2021 (mám jen
+  parafrázi z vlastního webu), jestli kolem prochází hřebenovka (horydoly.cz
+  Kozubovou v popisu hlavního hřebene nejmenuje — to je nepřítomnost údaje,
+  ne doklad opaku). Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

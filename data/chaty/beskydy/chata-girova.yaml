@@ -1,0 +1,288 @@
+# Horská chata Gírová — povýšena z kandidáta DATA-01 (8. 8. 2026). Postavil ji
+# Klub českých turistů, odbor Karviná, a otevřela se 9. července 1932 jako
+# Dorazilova chata. Je jedním ze čtyř bodů Přechodu Beskyd.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Horská chata Gírová
+slug: chata-girova
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: beskydy
+
+aliasy:
+  - nazev: Dorazilova chata
+    poznamka: >-
+      původní jméno po JUDr. Leopoldu Dorazilovi, který vedl karvinský
+      odbor KČT stavějící chatu
+  - nazev: Chata Gírová
+    poznamka: zkrácená podoba, kterou vede externí katalog
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.5296188
+lng: 18.8004064
+vyska: 770
+obec: Bukovec
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/2423194887 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Adresa: gotic.cz „Bukovec č.p. 134, 73985" (načteno 8. 8. 2026); týž
+    obecní údaj nese i zápis firmy „Horská chata Gírová (Bukovec)".
+    OBEC PODLE KATALOGU NESEDÍ: externí katalog vede u objektu „Písek
+    u Jablunkova", prameny shodně Bukovec. Zapsán Bukovec.
+    VÝŠKA — ROZPOR PRAMENŮ, nesrovnaný: turistika.cz „770 metrů nad
+    mořem", Deník „v nadmořské výšce 775 metrů", OpenStreetMap ele=775.
+    Zapsáno 770 dle konvence z 27. 7. 2026 (při rozporu nižší číslo, rozpor
+    přiznat). Katalogových 800 m se v žádném prameni nenašlo.
+    CHATA NESTOJÍ NA VRCHOLU: treking.cz — „K chatě Gírová (na vrchol
+    Gírová, 840 m ještě asi 500 do svahu)"; tentýž pramen uvádí na jiném
+    místě 839 m, takže i výška vrcholu je rozporná. Rozdíl mezi chatou
+    a vrcholem tedy není rozpor pramenů, ale jiné místo.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+# kapacita SE NEVYPLŇUJE: prameny nepočítají totéž — jeden sčítá dvě budovy,
+# druhý jednu. Viz overeniNocleh.
+overeniNocleh:
+  source: >-
+    ROZPOR, který není o číslech, ale o tom, co se počítá (načteno
+    8. 8. 2026). treking.cz: „Ubytovací kapacita v hlavní chatě Gírová je
+    28 lůžek a v chatě vedlejší, která je vzdálena 150 m, 33 lůžek" — tedy
+    dvě budovy, 61 lůžek dohromady. Kudy z nudy: „Nabízí ubytování
+    s celkovou kapacitou 30 lůžek" — číslo blízké těm 28 v hlavní budově.
+    Zapsat 30 by znamenalo tvrdit, že vedlejší chata neexistuje; zapsat 61,
+    že do profilu patří obě. Ani jedno není doložené, takže pole zůstává
+    prázdné, dokud to nepotvrdí provozovatel (DATA-04). Zároveň je to
+    otázka rozsahu profilu: patří vedlejší chata 150 m odtud do tohohle
+    objektu, nebo je to druhý objekt? To rozhodne redakce.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy (načteno 8. 8. 2026): „dále je možné využívat restauraci.
+    Prostor je možné využít i na hudební a společenské akce."; Deník mluví
+    o „hospůdce v chatě" a uvádí její otvírací dobu. OpenStreetMap vede
+    objekt jako tourism=alpine_hut
+    (https://www.openstreetmap.org/node/2423194887 — ODbL). Klíč zařazení
+    je splněn dvakrát: veřejné občerstvení i role na trase — chata je
+    jedním ze čtyř kontrolních bodů projektu Přechod Beskyd.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: dva prameny dávají dva neslučitelné rozvrhy,
+# včetně toho, které dny je zavřeno. Viz overeniProvoz.
+overeniProvoz:
+  source: >-
+    ROZPOR PRAMENŮ, nesrovnaný (načteno 8. 8. 2026). Deník: „otevírací dobu
+    hospůdky v chatě v úterý, středu i čtvrtek od 10 do 16, v pátek
+    a v sobotu od 9:30 do 19 a v neděli od 9:30 do 18 hodin". gotic.cz:
+    „St + Čt - 10:00 - 16:00, Pá - 10:00 - 17:00, So - 9:30 - 17:00,
+    Ne - 9:30 - 16:00" (pondělí a úterý zavřeno). Neshodují se ani na tom,
+    jestli je v úterý otevřeno. Celoroční provoz uvádí treking.cz:
+    „Otevřeno celoročně. Mimo sezónu pondělí zavírací den." OpenStreetMap
+    vede jen „Mo off". Rozvrh proto nezapisujeme — u chaty, kam se jde
+    šest kilometrů, je špatný rozvrh horší než žádný.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  # ROZPOR: gotic.cz uvádí +420 732 823 176, Kudy z nudy +420 730 539 037,
+  # OpenStreetMap dvě další čísla. Zapsáno číslo z OSM jako to, které nese
+  # doklad s licencí; ostatní jsou v interniPoznamky.
+  telefon: '+420558367724'
+  email: chatagirova@centrum.cz
+  web: https://www.chatagirova.cz/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1932
+overeniHistorie:
+  source: >-
+    poznejdomy.cz (načteno 8. 8. 2026): „Horská chata Gírová byla poprvé
+    otevřena 9. července 1932 Klubem českých…" — věta je na stránce
+    zkrácená, ale tentýž pramen dodává, že se na výstavbě podílel odbor KČT
+    v Karviné vedený JUDr. Leopoldem Dorazilem a že chata původně nesla
+    jméno Dorazilova chata. Deník k tomu uvádí, že chatu „postavili
+    z místních surovin: modřínového dřeva", a že „vznikla před devadesáti
+    lety" — datum vydání článku se ze stránky nezískalo, takže z toho
+    absolutní rok nepočítáme; s rokem 1932 to není v rozporu.
+    ŘETĚZ DRŽITELŮ dle poznejdomy.cz: 1938–1967 pronajato Franciszku
+    Schulhauserovi, poté Beskydské hotely a restaurace, 1996–2012 manželé
+    Sikorovi. DNEŠNÍ MAJITELÉ — ROZPOR, nesrovnaný: poznejdomy.cz píše
+    „manželé Malyjurek", Deník „sourozence Marii a Petra Malyjurkovy".
+    Jméno se shoduje, vztah ne, a proto se do dat nezapisuje ani jedno.
+    ANI BESKIDENVEREIN, ANI POHORSKÁ JEDNOTA RADHOŠŤ: u Gírové není doložen
+    žádný z obou spolků, které v Beskydech stavěly nejvíc — je to chata
+    Klubu českých turistů, a to se stojí za zapsání, protože u beskydských
+    chat se právě tohle domýšlí snadno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Chata je jedním ze čtyř kontrolních bodů projektu Přechod Beskyd —
+      spolu s Prašivou, Kamenitým a Skalkou. Přechod je průchodný
+      od 1. dubna do 31. října.
+    kategorie: jine
+    zdroj: >-
+      prechodbeskyd.cz (načteno 8. 8. 2026) — čtyři chaty projektu:
+      Prašivá, Kamenitý, Skalka, Gírová; „bez wifi, signálu, lanovek
+      a zástupu turistů"
+  - text: >-
+      Chatu postavili z modřínového dřeva z místních zdrojů.
+    kategorie: jine
+    zdroj: >-
+      Deník (načteno 8. 8. 2026): „postavili ji z místních surovin:
+      modřínového dřeva"
+  - text: >-
+      V březnu 2012 dostala chata pamětní desku svého zakladatele; darovalo
+      ji město Karviná, odkud pocházel odbor Klubu českých turistů, který
+      chatu stavěl.
+    kategorie: stari
+    zdroj: >-
+      poznejdomy.cz (načteno 8. 8. 2026) — pamětní deska zakladatele,
+      březen 2012, dar města Karviné
+  - text: >-
+      V zimě jezdí asi čtyři sta metrů od chaty vlek Tatrapoma dlouhý
+      350 metrů.
+    kategorie: jine
+    zdroj: >-
+      treking.cz (načteno 8. 8. 2026): „V zimě je v provozu lyžařský vlek
+      Tatrapoma v délce 350 m, který je od chaty vzdálen asi 400 m"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Modřínová chata na česko-slovensko-polském pomezí, kterou 9. července 1932
+  otevřel karvinský odbor Klubu českých turistů jako Dorazilovu chatu. Dnes
+  je jedním ze čtyř kontrolních bodů Přechodu Beskyd.
+text:
+  - >-
+    Gírová stojí v Jablunkovském mezihoří na dohled od místa, kde se
+    stýkají tři země. Chata není na vrcholu — ten má podle treking.cz
+    840 metrů a je od ní ještě asi pět set metrů do svahu. Výšku samotné
+    chaty prameny uvádějí dvojmo, 770 a 775 metrů, a my zapisujeme nižší
+    číslo a rozpor přiznáváme; katalogových osm set metrů jsme nenašli
+    nikde.
+  - >-
+    Postavil ji Klub českých turistů, konkrétně odbor v Karviné vedený
+    JUDr. Leopoldem Dorazilem, a otevřela se 9. července 1932 jako
+    Dorazilova chata. To je u beskydské chaty z té doby méně obvyklé, než
+    se zdá: většinu zdejších chat stavěl buď německý Beskidenverein, nebo
+    česká Pohorská jednota Radhošť, a ani jeden z nich tu doložený není.
+    Postavili ji z modřínového dřeva z místních zdrojů a v březnu 2012
+    dostala pamětní desku zakladatele, kterou darovalo město Karviná.
+  - >-
+    Držitelé se po ní protočili: mezi roky 1938 a 1967 byla pronajatá,
+    pak patřila Beskydským hotelům a restauracím, od roku 1996 do 2012
+    manželům Sikorovým a dnes ji vedou Malyjurkovi. V jakém vztahu spolu
+    jsou, tu neuvádíme — jeden pramen píše manželé, druhý sourozenci.
+  - >-
+    Kolik se tu vyspí lidí, taky neuvádíme, a je to zajímavější než to
+    vypadá. Jeden pramen počítá 28 lůžek v hlavní chatě a 33 v chatě
+    vedlejší sto padesát metrů odtud, druhý mluví o celkové kapacitě
+    třiceti lůžek. To nejsou dvě různá čísla téhož, ale dvě různé
+    představy o tom, co je vlastně tenhle objekt. Než se rozhodne, jestli
+    vedlejší chata patří k téhle nebo je samostatná, zůstává pole prázdné.
+  - >-
+    K chatě vede červená z Mostů u Jablunkova a z Bukovce, zelená
+    z Jablunkova a od Hrčavy žlutá; jako nejkratší přístup uvádí
+    jablunkovsko.cz dva kilometry od zastávky Markov. Hlavní beskydská hřebenovka Gírovou neprochází. Zato
+    je chata jedním ze čtyř kontrolních bodů Přechodu Beskyd — vedle
+    Prašivé, Kamenitého a Skalky — a ten se dá jít od dubna do konce října.
+    V zimě jezdí čtyři sta metrů odtud vlek Tatrapoma.
+  - >-
+    Kdy je otevřeno, poctivě nevíme. Dva prameny dávají dva rozvrhy, které
+    se neshodnou ani na tom, jestli je v úterý otevřeno; jistý je jen
+    celoroční provoz a pondělní zavíračka mimo sezónu. Než to potvrdí
+    telefonát, rozvrh neuvádíme.
+  - >-
+    Údaje na téhle stránce nesou poznejdomy.cz, Deník, treking.cz, Kudy
+    z nudy, gotic.cz, jablunkovsko.cz a prechodbeskyd.cz; polohu nese
+    OpenStreetMap. Vlastní web chaty se nám ze sandboxu nepodařilo otevřít.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      poznejdomy.cz — otevření 9. 7. 1932 Klubem českých turistů, odbor
+      Karviná a JUDr. Leopold Dorazil, původní jméno Dorazilova chata,
+      řetěz nájemců a majitelů, pamětní deska 2012 (načteno 8. 8. 2026)
+    url: https://poznejdomy.cz/domy/detail/531-chata-girova
+  - popis: >-
+      Deník — výška 775 m, modřínové dřevo z místních surovin, noví
+      majitelé Malyjurkovi, otvírací doba hospůdky (načteno 8. 8. 2026)
+    url: >-
+      https://www.denik.cz/podnikani/beskydy-girova-chata-chaty-beskydy-hory-turistika-tipy-na-vikend/
+  - popis: >-
+      treking.cz — 28 lůžek v hlavní a 33 ve vedlejší chatě, vrchol
+      Gírová 840 m asi 500 m nad chatou, celoroční provoz, vlek Tatrapoma
+      350 m (načteno 8. 8. 2026)
+    url: https://www.treking.cz/chaty/girova.htm
+  - popis: >-
+      Kudy z nudy — celková kapacita 30 lůžek, restaurace, telefon
+      (načteno 8. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/horska-chata-girova
+  - popis: >-
+      gotic.cz — adresa Bukovec č.p. 134, otvírací doba, venkovní bazén
+      a dětská hřiště, telefon (načteno 8. 8. 2026)
+    url: https://www.gotic.cz/cs/ubytovani/turisticka-chata/231-chata-girova
+  - popis: >-
+      jablunkovsko.cz — čtyři značené přístupy s délkami a nejkratší
+      varianta od zastávky Markov (načteno 8. 8. 2026)
+    url: https://www.jablunkovsko.cz/turistika/ze-ctyr-stran-na-girovou/
+  - popis: >-
+      prechodbeskyd.cz — Gírová jako jeden ze čtyř bodů Přechodu Beskyd,
+      sezóna 1. 4. – 31. 10. (načteno 8. 8. 2026)
+    url: https://www.prechodbeskyd.cz/?page_id=203
+  - popis: >-
+      turistika.cz — výška 770 m, GPS (načteno 8. 8. 2026)
+    url: https://www.turistika.cz/mista/chata-girova/detail
+  - popis: >-
+      OpenStreetMap (GPS, ele=775, tourism=alpine_hut, telefony, e-mail,
+      web; ODbL)
+    url: https://www.openstreetmap.org/node/2423194887
+interniPoznamky: >-
+  Povýšeno z data/kandidati/beskydy/chata-girova.yaml (8. 8. 2026), čtvrtý
+  publikovaný profil oblasti Beskydy.
+
+  OTEVŘENÁ OTÁZKA ROZSAHU PROFILU, kterou tenhle objekt přináší jako první
+  svého druhu: sto padesát metrů od chaty stojí VEDLEJŠÍ CHATA s 33 lůžky
+  (treking.cz). Je to část tohohle objektu, nebo samostatný objekt? Prameny
+  to neříkají a čísla lůžek se podle toho, jak se to vezme, liší dvojnásobně
+  (30 × 61). Proto zůstalo pole `kapacita` prázdné. Není to týž případ jako
+  Prašivá (jedna budova, dvě jména) ani jako Kleť (dvě věci, jeden
+  provozovatel) — tady jsou dvě budovy a o provozovateli vedlejší nic nevíme.
+  Rozhodne to redakce, ne odhad.
+
+  OBEC: katalog vede „Písek u Jablunkova", prameny shodně BUKOVEC (adresa
+  Bukovec 134, i zápis firmy „Horská chata Gírová (Bukovec)"). Zapsán
+  Bukovec. Je to druhá katalogová odchylka u tohohle objektu — první je
+  výška 800 m, kterou taky nedrží žádný pramen.
+
+  KATALOGOVÉ VÝŠKY SE DNES NESEŠLY S PRAMENY UŽ POČTVRTÉ (Gírová 800 ×
+  770/775, Javorový 946 × 960/964/968, Severka 957 × 965, Kozubová 982 ×
+  981). Katalog je AI kompilace vedená jako VODICÍ pramen, ne verifikační,
+  takže to není porušení konvence — ale je to vzorec a patří do deníku.
+
+  TELEFON: čtyři různá čísla ve třech pramenech (gotic.cz 732 823 176,
+  Kudy z nudy 730 539 037, OpenStreetMap 558 367 724 a 606 604 896).
+  Zapsáno první z OSM, protože ten pramen nese licenci a datum stavu dat;
+  ostatní zůstávají tady. Jeden telefonát to rozhodne (DATA-04).
+
+  „PŘED DEVADESÁTI LETY" SE NEPŘEPOČÍTÁVALO. Deník to píše, ale datum
+  vydání článku se ze stránky nezískalo, takže z relativního údaje se
+  absolutní rok nedělá. S doloženým rokem 1932 to není v rozporu, a tím to
+  končí.
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek, otvírací doba, požáry a přestavby
+  (žádný pramen je nezmiňuje), architekt, voda a zásobování, výška vrcholu
+  s jistotou (839 × 840 m v jednom prameni), vztah dnešních majitelů.
+  Vlastní web chatagirova.cz i .com byly ze sandboxu nedostupné — kandidát
+  na pokus z Michalova prohlížeče. Fotku dodá běh DATA-02, výškový profil
+  přístupů DATA-06.

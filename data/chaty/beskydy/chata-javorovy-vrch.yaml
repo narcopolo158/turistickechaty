@@ -1,0 +1,293 @@
+# Turistická chata Javorový vrch — povýšena z kandidáta DATA-01 (8. 8. 2026).
+# Nejstarší objekt beskydského korpusu: postavena roku 1895 německým spolkem
+# Beskidenverein jako Erzherzog Friedrich-Schutzhaus.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Turistická chata Javorový vrch
+slug: chata-javorovy-vrch
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: beskydy
+
+aliasy:
+  - nazev: Chata na Javorovém
+    poznamka: běžná podoba jména v turistických pramenech
+  - nazev: Erzherzog Friedrich-Schutzhaus
+    poznamka: >-
+      původní německé jméno z roku 1895, česky Útulna arcivévody Bedřicha
+  - nazev: Chata Javorový
+    poznamka: zkrácená podoba, kterou vede externí katalog
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.6275672
+lng: 18.6275588
+vyska: 960
+obec: Třinec
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/48459246 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Adresa dle Firmy.cz „Třinec, Tyra 58, 739 61" (načteno 8. 8. 2026).
+    VÝŠKA — ROZPOR TŘÍ PRAMENŮ, nesrovnaný: ceskehory.cz „Chata Javorový
+    vrch v nadmořské výšce 960 m", Deník „Turistická horská chata Javorový
+    vrch stojí ve výšce 964 metry nad mořem", Český rozhlas Ostrava „chata
+    v nadmořské výšce 968 m n. m." (vše načteno 8. 8. 2026). Zapsáno 960
+    dle konvence z 27. 7. 2026 (při rozporu nižší číslo, rozpor přiznat).
+    CHATA NESTOJÍ NA VRCHOLU: Javorový vrch má 1031 m (ceskehory.cz,
+    beskydy.cz), PeakVisorový soupis vrcholovka.cz uvádí 1032 m — to je
+    další rozpor, ale výšky HORY, ne chaty. POZOR NA TŘETÍ ČÍSLO: Malý
+    Javorový (947 m dle Kudy z nudy) je jiný vrchol s televizní
+    retranslační stanicí; výška 946 m, kterou u tohohle objektu vede
+    externí katalog, se v žádném z pramenů nenašla a je jí podezřele blízko.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 43
+overeniNocleh:
+  source: >-
+    Firmy.cz, zápis provozovatele (načteno 8. 8. 2026): „Nabízíme ubytování
+    v horské chatě s kapacitou 43 lůžek."; totéž číslo uvádí Deník
+    („Nabízí také 43 lůžek pro ubytování."). ROZPOR, přiznaný: polar.cz
+    píše „Ubytovací kapacita je 44 lůžek a stravovací kapacita zhruba kolem
+    stovky osob" a ceskehory.cz uvádí „Celková ubytovací kapacita Javorového
+    vrchu je kolem 80 lůžek" — to poslední číslo je ale o celém vrcholu, ne
+    o chatě, a proto se s 43 nesměšuje. Zapsáno 43 dle konvence z 27. 7. 2026
+    (při rozporu nižší číslo).
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    polar.cz (načteno 8. 8. 2026): „stravovací kapacita zhruba kolem stovky
+    osob". OpenStreetMap vede objekt jako tourism=alpine_hut s otvírací
+    dobou (https://www.openstreetmap.org/way/48459246 — ODbL). Klíč zařazení
+    je splněn dvakrát: veřejné občerstvení i role na trase (chata je cílem
+    tří značených tras a horní stanice lanovky).
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Po–Pá 9.00–20.00, so 8.00–20.00, ne 8.00–19.00
+overeniProvoz:
+  source: >-
+    Firmy.cz, zápis provozovatele (načteno 8. 8. 2026). Nezávisle
+    OpenStreetMap vede téměř totéž (Mo-Th 09:00-19:00; Fr,Sa 08:00-20:00;
+    Su 08:00-19:00) — liší se o hodinu v pátek a ve všední zavírací čas,
+    což je rozdíl uvnitř jednoho rozvrhu, ne dva neslučitelné rozvrhy.
+    Zapsán rozvrh provozovatele. LANOVKA MÁ VLASTNÍ ČASY a ty se rozcházejí:
+    lanovkajavorovy.cz uvádí denně 09:10–17:00 (letní sezóna 1. 4. – 31. 10.,
+    zimní 1. 11. – 31. 3.), kdežto ceskehory.cz „každou celou hodinu od 8:00
+    do 16:00 v zimních měsících jinak do 17:00hod". Do profilu chaty se čas
+    lanovky nezapisuje, protože je to jiný provoz jiného provozovatele.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+420739927698'
+  email: info@javorovy-vrch.eu
+  web: https://www.javorovy-vrch.eu/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1895
+overeniHistorie:
+  source: >-
+    Rok 1895 uvádí pět nezávislých pramenů (vše načteno 8. 8. 2026): Český
+    rozhlas Ostrava („turistická chata z roku 1895"), Deník („ve své
+    nezměněné podobě, až na drobné rekonstrukce, stojí od roku 1895"), Kudy
+    z nudy, beskydy.cz a Blesk („Stojí od roku 1895"). Původní jméno
+    a měsíc otevření: polar.cz — „V květnu 1895 byla otevřena chata, která
+    se tehdy jmenovala Erzherzog Friedrich-Schutzhaus", česky Útulna
+    arcivévody Bedřicha. STAVEBNÍK — doloženo dvěma sekundárními prameny
+    a je to slabší doklad než rok: stránka historie KČT Třinec vede chatu
+    mezi objekty spolku Beskidenverein („Javorové r.1895") a anglická
+    Wikipedie v seznamu chat téhož spolku „Jaworowy – April 1895". ROZPOR
+    V MĚSÍCI: duben (Wikipedie) × květen (polar.cz). Žádný z českých
+    zpravodajských pramenů (ČRo, Deník, Blesk, polar.cz) stavebníka
+    nejmenuje, takže atribuce stojí na těch dvou — nepřímou oporou je
+    německé jméno analogické Erzherzog Albrecht-Schutzhaus na Lysé hoře,
+    kterou Beskidenverein doloženě postavil, ale to je souvislost, ne důkaz.
+    Dnešní vlastník: statutární město Třinec (Deník „Ovšem majitelem je
+    město Třinec", Blesk „Patří městu", ČRo Ostrava „patří městu Třinci");
+    provozovatelem je nájemce Jiří Valenta.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      K chatě vede jednosedačková lanovka z Oldřichovic, v provozu od roku
+      1957. Měří 1310 metrů, překonává 424 metrů převýšení a veze 364 osob
+      za hodinu.
+    kategorie: jine
+    zdroj: >-
+      lanovkajavorovy.cz (načteno 8. 8. 2026): „v provozu od roku: 1957";
+      „šikmá délka: 1310 m"; „převýšení: 424 m"; „přepravní kapacita:
+      364 osob/hod."; „osobní visutá jednolanová dráha oběžného systému
+      s pevným uchycením jednomístných sedaček"
+  - text: >-
+      Chatu podle Českého rozhlasu dvakrát navštívil Tomáš Garrigue
+      Masaryk.
+    kategorie: stari
+    zdroj: >-
+      Český rozhlas Ostrava (načteno 8. 8. 2026): „dvakrát ji navštívil
+      například T. G. Masaryk"
+  - text: >-
+      U chaty je stanice Horské služby.
+    kategorie: jine
+    zdroj: >-
+      ceskehory.cz (načteno 8. 8. 2026): lanová dráha vede „k turistické
+      chatě, která je stanicí Horské služby"; Kudy z nudy: „U turistické
+      chaty je stanice Horské služby"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěná turistická chata z roku 1895 pod vrcholem Javorového nad Třincem,
+  kterou podle stránky KČT Třinec postavil německý spolek Beskidenverein jako
+  Útulnu arcivévody Bedřicha. Patří městu Třinec a jezdí k ní jednosedačková
+  lanovka z roku 1957.
+text:
+  - >-
+    Chata na Javorovém je z celého beskydského korpusu ta nejstarší: rok
+    1895 uvádí pět nezávislých pramenů a Deník k tomu dodává, že stavba
+    stojí „ve své nezměněné podobě, až na drobné rekonstrukce". Otevřela se
+    pod německým jménem Erzherzog Friedrich-Schutzhaus, tedy jako Útulna
+    arcivévody Bedřicha — v tom jméně je vidět, komu tehdy patřila iniciativa.
+  - >-
+    Kdo ji postavil, je doložené slaběji než kdy. Stránka historie KČT Třinec
+    ji vede mezi chatami německého spolku Beskidenverein a anglická Wikipedie
+    v seznamu téhož spolku uvádí „Jaworowy – April 1895"; české zpravodajské
+    prameny stavebníka nejmenují vůbec a v měsíci otevření se rozcházejí
+    (duben proti květnu). Uvádíme to tedy jako to, co tvrdí ty dva prameny,
+    ne jako hotovou věc.
+  - >-
+    Chata nestojí na vrcholu. Javorový vrch má podle pramenů 1031 metrů,
+    chata leží asi sedmdesát metrů pod ním a její výšku uvádějí prameny
+    třemi čísly — 960, 964 a 968 metrů. Zapisujeme nejnižší z nich a rozpor
+    přiznáváme. Pozor na jednu snadnou záměnu: Malý Javorový (947 m) je jiný
+    vrchol, na kterém stojí televizní retranslační stanice.
+  - >-
+    Zvláštností Javorového je lanovka. Vede z Oldřichovic od roku 1957,
+    měří 1310 metrů, překonává 424 metrů převýšení a je to pořád ta původní
+    jednosedačka s pevným uchycením sedaček. Provozuje ji jiná firma než
+    chatu, takže otvírací hodiny lanovky a chaty jsou dvě různé věci —
+    a v pramenech se navíc samy rozcházejí, proto tu čas lanovky neuvádíme.
+  - >-
+    Na vrcholu se sešlo víc provozů a je dobré je nepomíchat: chatu vlastní
+    město Třinec a provozuje ji nájemce, lanovku provozuje společnost
+    Bytoslan, na Malém Javorovém stojí televizní stanice a u chaty je
+    stanice Horské služby. Druhý samostatný pohostinský provoz na vrcholu
+    se nám doložit nepodařilo. Po svazích je lyžařské středisko a z vrcholu
+    se startuje na paraglidu.
+  - >-
+    Turistické trasy vedou na Javorový ze tří stran — zelená z Oldřichovic,
+    žlutá z Tyry a modrá z Guty — a od chaty pokračují na jih na Šindelnou
+    a Ropici. Hlavní beskydská hřebenovka Javorovým neprochází; leží na
+    bočním hřebeni, který se k ní napojuje.
+  - >-
+    Údaje na téhle stránce nesou Český rozhlas Ostrava, Deník, Blesk,
+    polar.cz, ceskehory.cz, beskydy.cz, Kudy z nudy, lanovkajavorovy.cz,
+    Firmy.cz a stránka historie KČT Třinec; polohu nese OpenStreetMap.
+    Vlastní web chaty se nám ze sandboxu nepodařilo otevřít. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Český rozhlas Ostrava — chata z roku 1895, návštěvy T. G. Masaryka,
+      jedna z nejstarších jednosedačkových lanovek, výška chaty 968 m
+      (načteno 8. 8. 2026)
+    url: >-
+      https://ostrava.rozhlas.cz/javorovy-vrch-na-trinecku-jedna-z-nejstarsich-lanovek-vas-vyveze-k-jedne-z-7932189
+  - popis: >-
+      Deník — stavba v nezměněné podobě od roku 1895, výška chaty 964 m,
+      43 lůžek, majitelem město Třinec, nájemce Jiří Valenta
+      (načteno 8. 8. 2026)
+    url: >-
+      https://www.denik.cz/cestujeme-doma/javorovy-chata-patri-k-nejstarsim-v-cesku-turiste-i-paraglidiste-misto-miluji-20.html
+  - popis: >-
+      polar.cz — 130 let existence, původní jméno Erzherzog
+      Friedrich-Schutzhaus a otevření v květnu 1895, kapacita 44 lůžek
+      a stravování pro asi sto osob (načteno 8. 8. 2026)
+    url: >-
+      https://polar.cz/zpravy/moravskoslezsky-kraj/cely-ms-kraj/11000048705/horska-chata-na-javorovem-oslavila-130-let-sve-existence
+  - popis: >-
+      Historie KČT Třinec — chata vedená mezi objekty spolku
+      Beskidenverein („Javorové r.1895") (načteno 8. 8. 2026)
+    url: https://apl.trz.cz/web/kct-trinec.nsf/viewLink/historie
+  - popis: >-
+      Anglická Wikipedie, Beskidenverein — seznam chat spolku včetně
+      „Jaworowy – April 1895" (načteno 8. 8. 2026)
+    url: https://en.wikipedia.org/wiki/Beskidenverein
+  - popis: >-
+      ceskehory.cz — vrchol 1031 m, výška chaty 960 m, stanice Horské
+      služby, lyžařské středisko (načteno 8. 8. 2026)
+    url: https://www.ceskehory.cz/horske-chaty/javorovy-vrch.htm
+  - popis: >-
+      beskydy.cz — vrchol 1031 m, značené trasy z Oldřichovic, Tyry
+      a Guty (načteno 8. 8. 2026)
+    url: https://www.beskydy.cz/content/beskydy-turistika-hory-vrcholy-javorovy-vrch.aspx
+  - popis: >-
+      Kudy z nudy — Malý Javorový 947 m s retranslační stanicí,
+      pokračování značek na Šindelnou a Ropici (načteno 8. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/vrchol-javorovy-v-beskydech
+  - popis: >-
+      lanovkajavorovy.cz — lanovka v provozu od roku 1957, délka 1310 m,
+      převýšení 424 m, kapacita 364 osob/hod, provozovatel Bytoslan
+      (načteno 8. 8. 2026)
+    url: https://www.lanovkajavorovy.cz/lanovka
+  - popis: >-
+      Firmy.cz, zápis provozovatele — 43 lůžek, otvírací doba, telefon,
+      e-mail, adresa Tyra 58 (načteno 8. 8. 2026)
+    url: https://www.firmy.cz/detail/12905062-turisticka-chata-javorovy-vrch-trinec-tyra.html
+  - popis: >-
+      Blesk — chata patří městu, plánovaná rekonstrukce střechy, čističky
+      odpadních vod a elektřiny (načteno 8. 8. 2026)
+    url: https://www.blesk.cz/clanek/regiony-ostrava/739434/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut, otvírací doba, telefon; ODbL)
+    url: https://www.openstreetmap.org/way/48459246
+interniPoznamky: >-
+  Povýšeno z data/kandidati/beskydy/chata-javorovy-vrch.yaml (8. 8. 2026),
+  třetí publikovaný profil oblasti Beskydy.
+
+  SUPERLATIVY, KTERÉ SE NEZAPSALY, ač je prameny mají doslova: Deník píše
+  „Chata je vůbec nejstarší v Beskydech", ČRo „Patří mezi první chaty, které
+  vůbec byly postaveny turisty v této části Beskyd" a titulek ČRo „Jedna
+  z nejstarších lanovek vás vyveze k jedné z nejstarších chat". Do prózy šlo
+  jen ověřitelné tvrzení „z celého beskydského korpusu ta nejstarší" — to je
+  výrok o NAŠICH datech, který si čtenář může přepočítat, ne o Beskydech
+  jako celku. Rozdíl je podstatný: chata na Lysé hoře byla otevřena taky
+  1895 (21. 7.), takže „nejstarší v Beskydech" by se muselo dokazovat dnem,
+  a duben/květen u Javorového není rozhodnutý.
+
+  VÝŠKA KATALOGU 946 m SE V ŽÁDNÉM PRAMENI NENAŠLA. Prameny dávají 960, 964
+  a 968 m. Číslo 946 je podezřele blízké výšce MALÉHO Javorového (947 m,
+  Kudy z nudy) — může to být záměna dvou vrcholů v katalogu, ale tvrdit to
+  nemůžeme. Je to čtvrtý objekt v řadě, u kterého se katalogová výška
+  s prameny nesešla (viz deník 8. 8. 2026), a stojí to za pozornost, protože
+  katalog je AI kompilace vedená jako VODICÍ, ne verifikační pramen.
+
+  ATRIBUCE BESKIDENVEREINU JE SLABŠÍ DOKLAD NEŽ ROK a v próze se to říká.
+  Rok drží pět nezávislých pramenů, stavebníka dva sekundární. Nepřímou
+  oporou je německé jméno analogické Erzherzog Albrecht-Schutzhaus na Lysé
+  hoře — souvislost, ne důkaz, a jako důkaz se nepoužila.
+
+  DVA PROVOZY NA JEDNOM MÍSTĚ SE NESLOUČILY, a je to opačný případ než
+  Prašivá. Lanovka má jiného provozovatele (Bytoslan) než chatu (nájemce
+  města Třince), takže to nejsou dvě jména jednoho provozu — lanovka je
+  v profilu jako zajímavost a přístup, ne jako součást objektu. Rozlišovací
+  otázka zůstává táž: jedna budova a jeden provoz, nebo dva?
+
+  NEDOLOŽENO (nezapsáno): jak dlouho je Jiří Valenta nájemcem (Deník píše
+  jedenáctý rok, polar.cz třináct let — nedatované články), případná
+  památková ochrana, druhý gastroprovoz na vrcholu, přesná výška horní
+  stanice lanovky (886 m dle lanovkajavorovy.cz × 890 m dle Kudy z nudy
+  i beskydy.cz), požáry (žádný pramen je nezmiňuje a Deník naopak mluví
+  o nezměněné podobě). Vlastní web javorovy-vrch.eu i javorovy.cz byly ze
+  sandboxu nedostupné (robots/TLS) — kandidáti na pokus z Michalova
+  prohlížeče. Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.
