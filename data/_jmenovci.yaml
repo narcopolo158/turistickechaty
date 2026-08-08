@@ -527,11 +527,17 @@ jmenovci:
       - beskydy/chata-panorama
       - jeseniky/panorama
       - jizerske-hory/chata-panorama
+      - mala-fatra/chata-panorama
     duvod: >-
-      TŘETÍ PANORAMA PŘIBYLA (ráno tu byly dvě — beskydská v Námestove
-      a jizerská). „Panorama" je u horských podniků jméno tak obvyklé, že
-      shoda nic neznamená. Rozlišovač `obec` má doložený jen beskydská (R6
-      u dvou).
+      ČTVRTÁ PANORAMA PŘIBYLA S EXPORTEM MALÉ FATRY (8. 8. 2026 večer; ráno
+      tu byly dvě, odpoledne tři). „Panorama" je u horských podniků jméno
+      tak obvyklé, že shoda nic neznamená — a čtyři objekty ve čtyřech
+      pohořích to dokládají lépe než jakákoli úvaha. MĚŘENÉ vzdálenosti:
+      jizerská × jesenická 132 357 m, jizerská × malofatranská 308 330 m,
+      beskydská × malofatranská 60 409 m, beskydská × jesenická 204 777 m —
+      žádná dvojice není blíž než šedesát kilometrů, takže o duplicitu nejde
+      ani u té nejbližší. Rozlišovač `obec` má doložený jen beskydská
+      (Námestovo); u ostatních tří chybí (DATA-17 R6).
     rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
     checked: 2026-08-08
   - jadro: '1'
@@ -666,4 +672,47 @@ jmenovci:
     rozhodl: >-
       Claude (8. 8. 2026, samostatný blok — kolize přišla s Michalovým
       exportem Vysokých Tater)
+    checked: 2026-08-08
+
+  # ── Nálezy z Michalova exportu Malé Fatry (8. 8. 2026, +43 kandidátů).
+  # Malá Fatra sousedí s Kysuckými Beskydami, takže se tu potkávají jména
+  # z obou stran hranice oblastí — u obou dvojic naměřeno okolo čtyřiceti
+  # kilometrů, tedy jasní jmenovci, ne duplicity z překryvu oken.
+  - jadro: horec
+    objekty:
+      - beskydy/chata-horec
+      - mala-fatra/chata-horec
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 39 039 m: beskydská Chata Horec leží
+      v kysuckém pásu okolo Oščadnice, malofatranská u Martina (obec
+      doložená). „Horec" je slovenské jméno hořce, tedy jméno z rodu
+      „Kosodrevina" nebo „Limba" — u slovenských chat obvyklé.
+    rozhodl: Claude (8. 8. 2026, samostatný blok) — čeká na doložení obce u beskydské
+    checked: 2026-08-08
+  - jadro: lucka
+    objekty:
+      - beskydy/chata-lucka
+      - mala-fatra/chata-lucka
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 40 081 m: „Chata Lucka" v Oščadnici (obec
+      doložená) a „Chata Lúčka" v Malé Fatře. POZOR NA PRAVOPIS — Lucka je
+      ženské jméno, Lúčka je zdrobnělina lučiny, takže to nejsou dva zápisy
+      téhož slova, ale dvě různá slova. Kontrola kolizí je spárovala proto,
+      že normalizace odstraňuje diakritiku; kdyby se jméno používalo jako
+      rozlišovač, byla by to past.
+    rozhodl: Claude (8. 8. 2026, samostatný blok)
+    checked: 2026-08-08
+  - jadro: bozka
+    objekty:
+      - mala-fatra/bozka
+      - mala-fatra/chalupa-bozka
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY V JEDNÉ OBLASTI, naměřeno 8 586 m — „Božka" a
+      „Chalupa Božka" v Malé Fatře. Osm kilometrů vylučuje duplicitu, ale
+      obec není doložená ani u jednoho, takže rozlišovač zatím chybí
+      (DATA-17 R6). Chalupa Božka je jedna z 59 kandidátů, kteří do Malé
+      Fatry přišli omylem s beskydským exportem 8. 8. 2026 ráno; „Božka"
+      přišla teprve vlastním během oblasti týž den večer. Že se potkaly až
+      takhle, je dobrá ukázka toho, proč se registr jmenovců plní průběžně.
+    rozhodl: Claude (8. 8. 2026, samostatný blok) — čeká na doložení obcí při triáži
     checked: 2026-08-08

@@ -29,6 +29,122 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-08 (pátý blok, čtyři hodiny) — Michal začal klikat a hned se ukázalo, že každý jeho export shodí main
+
+Michalův pokyn: *„nizke tatry je slovensky stejne jako cesky, pokracuj
+samoststatne dal dalsi 4 hodiny"*. První věta zavírá otázku z minulého bloku,
+druhá je zadání.
+
+**Hotovo:**
+
+**JMÉNO NÍZKÝCH TATER — otázka zavřená.** Michal rozhodl, že se u téhle oblasti
+nemá co řešit, takže název zůstává „Nízké Tatry". Zapsal jsem k tomu i doložený
+pravopisný detail, ať to není tiše zamlčené: slovenská Wikipedie vede pohoří jako
+„Nízke Tatry", bez „é". Rozdíl je jedna litera a na rozhodnutí nic nemění, ale
+kdyby se někdy zakládaly aliasy oblastí, patří tam ten tvar. Test drží obojí —
+jméno podle Michalova rozhodnutí i zapsaný pramen, aby rozhodnutí nestálo na
+mlčení.
+
+**ČTYŘI BESKYDSKÉ PROFILY** (Javorový, Kozubová, Gírová, Severka), korpus 152.
+Nejcennější je **Chata Javorový vrch**: rok 1895 drží pět nezávislých pramenů
+a původní jméno bylo Erzherzog Friedrich-Schutzhaus. Stavebníka (Beskidenverein)
+dokládají jen dva sekundární prameny, a próza to tak i říká — rok je doložený
+silněji než kdo. Superlativ „nejstarší chata v Beskydech", který prameny mají
+doslova, se do prózy nedostal: chata na Lysé hoře byla otevřena taky 1895
+(21. 7.) a u Javorového není rozhodnuté ani to, jestli duben, nebo květen.
+
+**Kozubová přinesla TŘETÍ beskydský spolek** — postavil ji polský Beskid Śląski
+z Orlové (pozemek 1925, chata září 1929, návrh Edvarda Davida z Českého Těšína).
+Na Těšínsku té doby to o poměrech vypovídá dost, stejně jako lyžařský závod
+Zjazd Gwiaździsty s šedesáti polskými družstvy v roce 1937. A kaple sv. Anny
+s vyhlídkovou věží vedle hotelu se **vědomě nesloučila**: je to samostatná
+stavba v majetku církve. Tři případy vedle sebe teď dávají použitelné pravidlo:
+Prašivá slučuje (věž je nástavba střechy), Kleť slučuje (jeden provozovatel),
+Kozubová neslučuje (dvě stavby, dva vlastníci). **Rozhoduje jedna stavba NEBO
+jeden provoz, ne blízkost.**
+
+**Gírová a Severka jsou profily s přiznanou dírou, každý jinou.** U Gírové
+zůstala prázdná kapacita, a není to o čísle: sto padesát metrů od chaty stojí
+vedlejší chata s 33 lůžky, takže prameny buď počítají 30 lůžek (jedna budova),
+nebo 61 (dvě). To není rozpor, to je otevřená otázka rozsahu profilu. U Severky
+zůstal prázdný `rokVzniku` — rok stavby neuvádí žádný pramen, jediné vodítko je
+věta „ve stejné době byla v místech horní stanice zrušené lanovky postavena
+chata". Udělat z toho „asi 1980" by nikdo nepoznal, a právě proto se to nesmí.
+
+**MICHAL ZAČAL KLIKAT — a to je hlavní věc dnešního bloku.** Během čtyř hodin
+doběhly tři jeho exporty: beskydy znovu (+2), vysoke-tatry (+102) a mala-fatra
+(+43). Každý z nich shodil `npm run kontrola`, protože `kolize-jmen` ROZHODUJE
+a čistý stav je přesně nula. Main byl červený dvakrát a dvakrát jsem ho spravil
+rozhodnutím jmenných kolizí — registr jmenovců povyrostl z 31 na 41 sad, všechny
+vzdálenosti **měřené z GPS**, ne odhadnuté. Nejdál je dvojice jesenické
+a tatranské Veroniky: 227 641 m, nejvzdálenější jmenovci registru. U tří
+Zbojnických je zapsané, která je ta katalogová vysokohorská (1960 m, postavena
+1907, vyhořela 1998) — tam by záměna byla nejdražší.
+
+**A jedna kolize byla nález, ne práce (DATA-38).** `beskydy/horsky-hotel-cartak`
+a `javorniky-vsetinske-vrchy/horsky-hotel-cartak` jsou **dvě OSM entity jednoho
+objektu**: naměřeno devět metrů, shodné jméno. DATA-36, kterou jsem ráno psal
+právě proti dvojímu založení, to nezachytila — a správně, protože porovnává
+identitu ENTITY podle URL v OSM. Dvě entity jednoho objektu jsou jiný případ.
+Beskydská kopie šla do `_vyrazeno.yaml`, objekt zůstal v Javorníkách (Soláň,
+Hutisko-Solanec).
+
+**REŠERŠE DEVÍTI KATALOGOVÝCH MEZER — a odpověď byla jiná, než jsem čekal.**
+Myslel jsem, že hledám objekty chybějící v OpenStreetMap. Ve skutečnosti je
+hlavní důvod nespárování **zastaralé jméno v katalogu**: „Chata na Radhošti"
+dnes neexistuje, je to Horský hotel Radegast; „Chata na Veľkej Rači" je Horská
+chata Veľká Rača, v OSM vedená jako Chata AVC; „Schronisko na Równicy" od roku
+2016 není schronisko PTTK, ale Gościniec Równica. **Tři z devíti mezer se
+překladem jmen vyřešily okamžitě — ti kandidáti v repu celou dobu ležely.**
+Beskydy: 9 mezer → 3.
+
+**Dva katalogové objekty do průvodce nepatří** a je to rozhodnuto s pramenem:
+Hviezdoslavova hájovňa je literární muzeum Oravského muzea (stránka muzea sama
+píše „Najbližšie občerstvenie sa nachádza v Oravskej Polhore"), Wellness hotel
+Bahenec je „otevřen pouze pro ubytované hosty a klienty SPA § Wellness se
+samoobslužným salónkem" — týž případ jako šumavské Selbstversorger chaty
+vyřazené 6. 8. Do `_vyrazeno.yaml` nepatří, protože ten se klíčuje URL v OSM
+a je zámek proti DATA-01; mají vlastní tabulku s důvodem, aby je další session
+nedohledávala znovu.
+
+**DRUHÁ POLOVINA TÉHOŽ VZORCE (DATA-39) a je nepříjemná.** Katalog uvádí
+u části objektů výšku VRCHOLU, ne chaty: Radhošť 1129 = vrchol × hotel 1121,
+Ropička 918 = vrchol × chata 900, Stożek 978 = Stożek Wielki × schronisko 957.
+To vysvětluje, proč se katalogová výška dnes rozešla s prameny u všech čtyř
+povýšených profilů, a podporuje domněnku, že katalog vznikl kompilací
+z vrcholových seznamů. Praktický důsledek jsem zapsal do profilu Severky:
+**katalogová výška není jeden ze „dvou pramenů" při rozporu.** Konvence „nižší
+číslo při rozporu" platí mezi PRAMENY, ne mezi pramenem a vodičem — jinak by
+AI kompilace dostala přednost před obcí, ve které chata stojí.
+
+Kontroly, tsc, eslint i prettier čistě; `tests/int/oblasti-nove` 103 případů,
+`kontrola-katalog-pokryti` 11.
+
+**Příště:** čeká **42 nadějných kandidátů Vysokých Tater** z Michalova exportu —
+je to nejbohatší chatařská síť korpusu a začít se má katalogovými objekty
+s doloženou historií (Rainerova 1863, Téryho 1899, Zbojnícka 1907, Chata pod
+Rysmi 1933 na 2250 m). Beskydská triáž má dál 172 nadějných a tři skutečné
+mezery (Ropička, Marguška, Równica), u kterých se ví, jak se objekty dnes
+jmenují. Rozdělaná zůstává otázka DATA-39 (b): má se překlad jmen použít i
+v dohledávce podle jmen v DATA-01? Dnes se ptá katalogovými jmény, takže
+Radegasta v OSM nenajde — a mezera by se zmenšila u zdroje, ne až v reportu.
+
+**Otázky pro Michala:**
+
+1. **Každý tvůj export shodí `npm run kontrola`**, protože `kolize-jmen`
+   rozhoduje a nová jména vždycky přinesou nové kolize. Dnes to bylo dvakrát za
+   čtyři hodiny. Mám to nechat tak (kolize se rozhodují ručně a je to poctivé),
+   nebo má kontrola u kandidátů jen VYPISOVAT a rozhodovat výhradně u
+   publikovaných profilů? První varianta drží kvalitu, druhá nezablokuje CI kvůli
+   tomu, žes zapnul pipeline.
+2. **Gírová: patří vedlejší chata 150 m od hlavní do téhož profilu?** Na tom
+   visí kapacita (30 nebo 61 lůžek). Není to týž případ jako Prašivá ani Kleť —
+   tady jsou dvě budovy a o provozovateli té vedlejší nevíme nic.
+3. **Chceš u sloučení mít poslední slovo?** Dnes jsem rozhodl tři případy sám
+   (Prašivá sloučit, Kozubová nesloučit, Čarták jako duplicitu) a pravidlo
+   „jedna stavba nebo jeden provoz" mi drží. Tři zápisy na Čertovici v Nízkých
+   Tatrách přijdou na řadu příště a rád bych věděl, jestli rozhodovat dál sám.
+
 ## 2026-08-08 (čtvrtý blok, čtyři hodiny) — Tatry: dvanáctá oblast, čtyři doložené útulny a kontrola, která si drift našla sama
 
 Michalův pokyn: *„kdyz uz jsme na slovensku, vezmi rovnou i vysoke a nizke
