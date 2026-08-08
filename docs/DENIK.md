@@ -29,6 +29,181 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-08 (samostatný blok, čtyři hodiny) — bavorský koš dopracován, dvě nové oblasti, tři chyby chycené na sobě
+
+Michalovo pověření: *„preskoc vse co musim udelat rucne nebo kde cekas na
+mou odpoved a pracuj systematicky a autonomne 4 hodiny v kuse, pokud nemas
+co jineho delat, muzes se pustit do beskyd a jeseniku."* Přeskočeno bylo
+tedy všechno, co čeká na člověka: telefonáty DATA-04, kliky v Actions,
+sémantika pole `obec`, výběr fotek v adminu, potvrzení razítkových párů,
+jizerská fronta, Koráb a Libín.
+
+**PROSTŘEDÍ SE ZMĚNILO — WebFetch na německé weby dnes FUNGUJE.** Minulé
+sessions ho vedly jako nefunkční (PROVENANCE_REQUIRED); dnes se
+regionální turistické portály načítají spolehlivě a část vlastních webů
+chat taky. Overpass zůstává nedosažitelný (HTTP 000 přes proxy, ověřeno
+znovu). Tohle jediné zjištění otevřelo celý dnešní blok — bez druhého
+pramene by se nedalo povýšit nic.
+
+### ① Bavorský koš „Berggasthof / Berghaus" — celých čtrnáct kandidátů
+
+Byla to největší homogenní skupina koše NADĚJNÝCH a klíč u ní vyšel
+devětkrát z desíti kladně. **Povýšeno 9** (korpus 137 → 146): Berghaus
+Loderhart, Berggasthof Lusen, Hochpröller, Menauer/Grandsberg, Berghaus
+Hohenbogen, Hinterwies, Hinhart, Waldmann, Grobauer. **Vyřazen 1:**
+Berggasthof Geiß. **Odloženi 3:** Fritz, Markbuchen, Hochstein.
+
+Tři věci z té dávky stojí za zapamatování.
+
+**Loderhart vyvrátil vlastní podezření.** Deník 7. 8. ho vedl mezi
+kandidáty na Selbstversorgera (spolkový dům, vzor Kynastu). Stránka
+spolku NaturFreunde ale vede „öffentliche Gaststätte, Gastwirtschaft,
+Biergarten" VEDLE „Selbstkocherküche" — tedy kuchyň pro nocující vedle
+veřejné hospody. Přesně ten rozdíl u Zwieseler Hütte chyběl, a proto tam
+padlo vyřazení a tady povýšení. Je to nejlepší profil dnešní dávky:
+jediná stavba celé osady, třicet lůžek, kaple, a autem se tam nedojede.
+
+**Dva hraniční profily, oba zařazené s poctivým označením.** Hinhart je
+dům z roku 1700 (nejstarší doložený rok stavby bavorské části fondu), ale
+roli na trase mu nedokládá žádný pramen — podržela ho doložená historie
+a poloha na samotě, kterou městský seznam místních částí ani nevede.
+Grobauer je hotel v obci s rodinnou historií od doby okolo roku 1910;
+zařazen s typem `horsky-hotel` dle rozhodnutí o hraničních hotelech
+z 20. 7. Doklad občerstvení je u Grobauera nejslabší z celé dávky — zápis
+v gastronomickém katalogu, ne doslovná věta — a je to tak napsané
+i v próze, ne jen v poznámce.
+
+**„Žádná otvírací doba" je u téhle skupiny běžný a správný výsledek.**
+U čtyř z devíti profilů zůstalo pole prázdné, protože prameny dávaly dva
+až tři neslučitelné rozvrhy. U Hohenbogenu je to zvlášť poučné: nejvíc
+pravdivý pramen je nejméně konkrétní („otevřeno po dobu provozu
+lanovky"), takže pevné hodiny by profil zestárly hned se sezónou.
+
+### ② Beskydy a Jeseníky založeny — chybí jen Michalův klik
+
+Obě oblasti mají konfiguraci okna (`scripts/oblasti.ts`), YAML
+s charakteristikou a ověřením, zápis v backlogu (BES-01, JES-01) a nový
+test o 24 případech. Okna nejsou odhad: jsou kotvená na doložené
+souřadnice krajních bodů, u Beskyd Vsacký Cáb – Hala Krupowa –
+Szyndzielnia – Kohútka, u Jeseníků Praděd – Šerák – Skřítek – Králický
+Sněžník – Biskupská kupa – Paprsek. Beskydy jsou první oblast se
+Slovenskem v dotazu; typ `ZemeIso` ho nesl od 30. 7. dopředu právě na ně.
+
+Katalog dává obraz i bez Overpassu: v beskydském okně 48 objektů
+s doloženým stravováním (nejvíc PTTK schronisek mimo Krkonoše), v
+jesenickém 22, z nichž devět z desíti v Hrubém Jeseníku stojí nad 1000 m
+a šest nad 1300 m — výškově nejvýš položená skupina katalogu mimo Tatry.
+**Upozornění pro budoucí triáž Jeseníků:** chaty pradědské oblasti
+(Praděd, Kurzovní, Barborka, Švýcárna, Ovčárna, Figura, Sabinka) stojí
+tak blízko, že hrozí, že některé jsou částmi jednoho areálu — vzor Kleti
+a Svatoboru, kde se dva objekty sloučily do jednoho profilu.
+
+Michalovo číslo 35 objektů z měření 28. 7. se v katalogu skládá přesně
+z Moravskoslezských Beskyd, Beskidu Śląskiego a Żywieckiego — je to tedy
+jeho vlastní definice rozsahu, ne moje, a tak je i zapsaná.
+
+### ③ Skupina podezřelých na Selbstversorger dořešena
+
+Tři vyřazení s pramenem (Bärwurz-Resl-Hüttn, Berghütte Zum Pröller,
+Základna Bílého orla), tři odložení. Dvě z odložených jsou otázky pro
+Michala, protože zakládají pravidlo, ne případ — viz níž.
+
+**Potřetí za tři dny totéž poučení: tag `wilderness_hut` v OSM není
+doklad útulny.** Vyvrátil ho pramen u Waldvereinshütte (6. 8.),
+u Forsthausu Ödwies i u Höllbachschwellhütte. Útulnu dokládá až věta
+o volném přístupu, ne tag.
+
+### TŘI CHYBY, KTERÉ JSEM CHYTIL NA SOBĚ — a proč to sem patří
+
+Všechny tři jsou téhož druhu: **chyba v zadání nebo v próze, kterou
+odhalil až požadavek na pramen u každého údaje.**
+
+1. **Falešný rozpor z mé přepsané souřadnice.** Do rešerše Menauerů jsem
+   místo délky 12.85 napsal 13.05. Rešerše pak poctivě ohlásila „rozpor
+   souřadnic" proti dvěma portálům a označila je za chybu jejich
+   databáze. Skutečnost byla opačná — portály s OSM sedí na dvacet metrů
+   a chyba byla moje. Poučení je v profilu: souřadnice do rešerše
+   KOPÍROVAT, ne přepisovat.
+2. **Vymyšlený superlativ v próze.** Do profilu Hinterwiesu jsem napsal,
+   že Sankt Englmar je „jedna z nejnavštěvovanějších turistických obcí
+   předního Bavorského lesa". Netvrdí to žádný pramen. Chytila to
+   kontrola D (audit-mech) před commitem. Věta přepsána.
+3. **Chyba v zadání rešerše o Jeseníkách.** Zadal jsem, že Králický
+   Sněžník a Śnieżnik jsou dva různé vrcholy, a nechal je rozlišit.
+   Prameny shodně říkají, že je to JEDEN vrchol s českým a polským
+   jménem. Kdyby rešeršista poslušně „našel" dva, měli bychom to dnes
+   v datech oblasti. Zapsáno v `data/oblasti/jeseniky.yaml`.
+
+K tomu dvě vady, které našly kontroly na starších i nových datech:
+kontrola A u Waldmanna prázdné pole `vyska` proti číslu 675 m v próze
+(číslo bylo poctivě označené jako výška OBCE, ale vedle prázdného pole je
+to i tak past na čtenáře — přesunuto do poznámky) a **test nových
+oblastí, který při prvním běhu odhalil, že jsem obě otevřená rozhodnutí
+o rozsahu napsal jen do komentáře hlavičky YAMLu, ne do čitelného pole.**
+To druhé je přesně to, na co má test být: rozhodnutí v komentáři nevidí
+stroj ani nikdo, kdo soubor čte přes API.
+
+**Opravena taky jedna starší vlastní chyba v publikovaném profilu:**
+interní poznámka Geisskopfhütte vedla Berggasthof Geiß jako kandidáta „na
+téže hoře". Přeměřeno z GPS je to 5 955 m a jiný kopec (Greising
+u Deggendorfu × Geißkopf u Bischofsmais). Týž druh omylu jako u Haničky
+na Špičáku ze 7. 8. — jméno svádělo, souřadnice to vyvrátily.
+
+**Kontroly:** `npm run kontrola` zelené (validator 0 chyb, fronta 0 vad,
+kolize rozhodnuté), `tsc` i eslint čisté, fixtura 25 souborů / 0 spadlo,
+nové testy 24/24 a 9/9. Audit-mech zpět na výchozích 25 zásazích (A 6 ·
+D 19) — nic nového nepřibylo. Devět selhání integrační sady je předchozích
+(api, pohori, sitemap-llms, razitka-moderace, oblasti-jestedsky-hrbet),
+ověřeno `git stash`, že padají i bez dnešních změn: potřebují běžící
+Payload/DB. Pět commitů pushnuto do main.
+
+**Příště**
+
+① koš NADĚJNÝCH má ještě 71 položek — další homogenní skupina jsou
+německé „…hütte" a české chaty s doloženým jménem (Chata Boubín,
+Churanov, Rovina, Zelená chýše, Horská chata Kamzík); ② rozpory tag ×
+jméno (35); ③ Beskydy a Jeseníky se rozjedou hned po Michalově kliku na
+DATA-01 — pak triáž podle košů, u Jeseníků s pozorností na sloučené
+areály.
+
+**Otázky pro Michala**
+
+① **Klik v Actions, teď už na pět věcí:** DATA-01 pro `beskydy`, DATA-01
+pro `jeseniky` (obojí je připravené, oblast založená), DATA-35
+`jizerske-hory`, DATA-06 výšky `sumava` (čeká čtrnáct nových šumavských
+profilů), DATA-28 3D terén.
+② **Rozsah Beskyd:** patří tam jako Beskydy i Javorníky a Vsetínské vrchy
+(Kohútka, Portáš, Čarták, Vsacký Cáb, Kusalíno, Kmínek, Čerenka — sedm
+objektů s doloženým stravováním)? Geomorfologicky to nejsou
+Moravskoslezské Beskydy, ale souřadné celky Západních Beskyd. Okno je
+zahrnuje, aby se nenašly až později, ale nepovyšuju je bez tvého slova —
+vzor Ještědského hřbetu, který dostal vlastní oblast.
+③ **Rozsah Jeseníků:** polské Góry Bystrzyckie (Schronisko Jagodna, Pod
+Muflonem) jsem nechal MIMO okno, protože do jesenické oblasti je
+nepřiřazuje žádný nalezený pramen. Souhlasíš, nebo je přibrat?
+④ **Nové pravidlo, ne případ — Höllbachschwellhütte:** patří do průvodce
+spolková chata, kterou smí použít KDOKOLI po ohlášení u hospodáře a za
+drobný poplatek, ale hospodu nemá? Není to pronájem pro uzavřenou skupinu
+(ty vyřazuju), ale volně přístupná útulna taky ne. Takových objektů bude
+v Bavorském lese i v Alpách víc, takže tvá odpověď založí třídu.
+⑤ **Rozšířený klíč a objekt bez dnešní služby — Forsthaus Ödwies:** dnes
+neslouží nikomu (hledá nájemce), ale turistickou minulost má doloženou
+(v 19. století hospoda pro turisty a lesní dělníky). Bere ho rozšířený
+klíč z 26. 7., nebo patří do atlasu zaniklých?
+⑥ **Dva hraniční profily z dnešní dávky ke schválení nebo zamítnutí:**
+Berggasthof Hinhart (dům z 1700, ale bez doložené role na trase)
+a Berggasthof Grobauer (hotel v obci, doklad občerstvení nejslabší
+z dávky). Oba jsou publikované s poctivým označením — kdybys je tam
+nechtěl, stačí slovo a stáhnu je.
+⑦ **Konvence, kterou jsem ráno nesjednotil sám:** vyřazené slugy se
+v `_vyrazeno.yaml` zapisují nejednotně (`kynast` × `sumava/waldvereinshutte`).
+Skript si s obojím poradí od dneška ráno, ale sjednotit to jedním
+průchodem můžu — je to kosmetika dat, tak to nedělám bez tebe.
+⑧ Starší otevřené beze změny: Koráb a Libín, městské věže pod horami
+(Furth im Wald, Mirsk), tři telefonáty (Kurzova věž, Kleť, Špičák),
+Gibacht, Klostermannova rozhledna, Dreisessel doména, Osser lůžka,
+rokVzniku čtveřice, DATA-20 `obec`, výběr fotek v adminu, razítkové páry.
+
 ## 2026-08-08 — denní bezobslužná session: koš NADĚJNÝCH lhal dvakrát, obojí opraveno
 
 Backlog shora: DATA-04, DATA-05, DATA-20, DATA-22, DATA-25, DATA-28, F1-IMPL,
