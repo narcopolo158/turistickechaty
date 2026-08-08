@@ -1,0 +1,170 @@
+# Oblast Bieszczady — osmnáctá oblast průvodce (pokyn Michala 8. 8. 2026:
+# „klidne dopln krusne hory, orlicke a vse dalsi co najdes").
+#
+# ROZSAH. Okno dotazu (scripts/oblasti.ts) kryje Bieszczady Zachodnie na
+# polské straně a jejich slovenské pokračování, které Slováci vedou jako
+# Bukovské vrchy. Je to nejvýchodnější oblast korpusu.
+# VĚDOMĚ MIMO OKNO: Solina (přehrada v podhůří), Komańcza (prameny ji řadí
+# do Beskidu Niského, ač tudy vede Główny Szlak Beskidzki — okno se řídí
+# pohořím, ne trasou) a ukrajinská část za Užockým průsmykem.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Bieszczady
+slug: bieszczady
+typ: pohori
+zeme: pl
+
+# Jméno se drží v polské podobě. Čeština tu ustálený vlastní tvar nemá
+# a „Bieščady" se nepíše — stejné pravidlo jako u Západných Tater.
+sklonovani:
+  druhy: Bieszczad
+  sesty: Bieszczadech
+
+charakteristika: >-
+  Nejvýchodnější kout polských Karpat, kde nad hranicí lesa leží połoniny —
+  široké bezlesé hřebeny, po kterých se jde hodiny bez stromu. Není to
+  divočina odjakživa: pastva tu horní hranici lesa snížila a po vysídlení
+  v letech 1944 až 1947 zůstaly z desítek vesnic jen hřbitovy, kříže
+  a podezdívky. Tady taky končí Główny Szlak Beskidzki, dálková trasa přes
+  celé polské Karpaty. A platí tu režim, jaký jinde v průvodci není:
+  do hor se platí vstupné, chodí se jen mezi východem a západem slunce
+  a nocovat se smí na třech vyhrazených místech.
+overeniCharakteristika:
+  source: >-
+    Vymezení: polská Wikipedie, Bieszczady (čteno 8. 8. 2026) — „Pasma
+    Bieszczadów znajdują się między Przełęczą Łupkowską (640 m n.p.m.)
+    a Przełęczą Wyszkowską (933 m n.p.m.)". Połoniny: Bieszczadzki Park
+    Narodowy, stránka o rostlinstvu połonin (čteno 8. 8. 2026) — jde
+    o „malownicze subalpejskie piętro" nad hranicí lesa na svazích
+    „przekraczających na ogół 1200 m n.p.m."; patro „ukształtowane zostało
+    przez czynniki naturalne", ale pastva („wypas, koszarowanie bydła
+    i owiec") „obniżyło granicę lasu oraz zmieniły skład i strukturę
+    zbiorowisk roślinnych". POZOR NA VÝKLAD: pramen říká, že połoniny mají
+    přírodní základ A pastva je rozšířila — ne že jsou bezlesé jen kvůli
+    pastvě; text to tak i formuluje. Vysídlení: wbieszczady.pl (čteno
+    8. 8. 2026) — 1944–46 první masová vysídlení, „28 kwietnia 1947 r.
+    o godz. 4 nad ranem rozpoczęło się masowe wysiedlanie ludności
+    ukraińskiej", akce z roku 1951 přesídlila 14 151 osob; ze zaniklých vsí
+    zbyly „cmentarze, krzyże przydrożne, podmurówki zabudowań i ruiny".
+    Główny Szlak Beskidzki: mapa-turystyczna.pl (čteno 8. 8. 2026) uvádí
+    délku 503,6 km z Ustronia do Wołosatého; anglická Wikipedie
+    u Wołosatého — obec „marks either the start (if one travels westward)
+    or finish (if one travels eastward) of the Main Beskid Trail". Režim:
+    twojebieszczady.net, regulamin (čteno 8. 8. 2026) — „Poruszanie się po
+    szlakach na obszarze Parku dozwolone jest wyłącznie od wschodu do
+    zachodu słońca." a nocování „wyłącznie w trzech wyznaczonych miejscach:
+    polu namiotowym w Bereżkach, polu biwakowym w Tarnawie Niżnej oraz polu
+    biwakowym na Górnej Wetlince".
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Tarnica
+  vyska: 1346
+  source: >-
+    Polská Wikipedie, Bieszczady (čteno 8. 8. 2026): „na terytorium Polski
+    – Tarnica (1346 m n.p.m.)"; totéž číslo uvádějí anglická Wikipedie,
+    PeakVisor i mapa-turystyczna.pl. ROZPOR, přiznaný: treking.cz uvádí
+    „Tarnica 1 348 metrů" — zapsáno 1346 dle konvence z 27. 7. 2026 (nižší
+    číslo při rozporu; tady navíc stojí čtyři prameny proti jednomu).
+    Souřadnice 49.074554 / 22.726162 (PeakVisor), potvrzené
+    mapa-turystyczna.pl na deset metrů; anglická Wikipedie ale uvádí
+    49.06944 / 22.73806, tedy o zhruba kilometr jinde — ROZPOR V POLOZE,
+    který se před prvním profilem musí ověřit v polském geoportálu.
+    TARNICA JE NEJVYŠŠÍ JEN NA POLSKÉ STRANĚ. Nejvyšší vrchol celých
+    Bieszczad je podle téhož pramene „Pikuj (1405 m n.p.m., na Ukrainie)",
+    tedy mimo naše okno i mimo země, po kterých se ptáme. Do dat oblasti se
+    proto zapisuje Tarnica a rozdíl je tady popsaný — bez něj by profil
+    tvrdil superlativ, který neplatí.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala („vse dalsi co najdes"). Konfigurace
+  okna je v scripts/oblasti.ts (slug bieszczady, zeme PL+SK, katalogové
+  názvy Bieszczady a Bukovské vrchy), kotvy okna a prameny v komentáři
+  tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `bieszczady`.
+
+  SLOVENSKÁ STRANA JE UVNITŘ A OBĚ ČLENĚNÍ SE NESHODNOU. Polské vede
+  Bukovské vrchy jako slovenskou ČÁST Bieszczad Zachodnich — doslova
+  „Słowacka część Bieszczadów Zachodnich nazywana jest przez Słowaków
+  Górami Bukowskimi (Bukovské vrchy)" —, kdežto české a slovenské prameny
+  je vedou jako vlastní celek s vlastními podcelky (Bukovce, Nastaz;
+  treking.cz, čteno 8. 8. 2026, nejvyšší Kremenec 1221 m). Není to rozpor
+  o poloze, ale o úrovni jednotky. Průvodce jde podle principu
+  „přeshraniční pohoří vcelku" (rozhodnutí Michala 20. 7. 2026) a bere
+  obojí jako jednu oblast; katalogové jméno „Bukovské vrchy" je proto
+  v `katalogPohori` vedle „Bieszczady". Kdyby to Michal chtěl otočit, jsou
+  to dva řádky konfigurace.
+
+  REŽIM, KTERÝ JINDE V PRŮVODCI NENÍ — a je to už čtvrtý typ „otevřeno
+  neznamená dostupné" (po tatranské sezónní uzávěře, vůdcovské povinnosti
+  a jednosměrných roklinách Slovenského ráje):
+  – VSTUPNÉ do národního parku je povinné pro vstup na značené trasy.
+    Cena se v pramenech liší podle data: 9 zł (článek z 10/2024), 10 zł
+    a 5 zł zlevněné (7/2025), 11 zł a 5,50 zł (ceník 2026). Ceny se do
+    profilů nepíšou (konvence z 25. 7. 2026), ale EXISTENCE poplatku ano.
+  – DENNÍ REŽIM: „Poruszanie się po szlakach… dozwolone jest wyłącznie od
+    wschodu do zachodu słońca." U chaty na hřebeni to znamená, že se k ní
+    po setmění nesmí — a to je pro plánování túry zásadnější než otvírací
+    doba.
+  – NOCOVÁNÍ jen na třech vyhrazených místech (Bereżki, Tarnawa Niżna,
+    Górna Wetlinka).
+  – PSI mají na trasy zákaz vstupu mimo úseky podél veřejných silnic.
+  – V ZIMĚ platí úplný zákaz sjezdů na lyžích, snowboardu i sáňkách.
+  Plošné sezónní uzavření połonin se doložit NEPODAŘILO — existuje jen
+  archivní rubrika „Czasowe zamknięcie szlaków" na webu parku.
+
+  CO UŽ VÍME BEZ OVERPASSU — katalog drží v okně 8 objektů pod „Bieszczady"
+  a 2 pod „Bukovské vrchy". Doložené:
+  CHATKA PUCHATKA na Połonině Wetlińské — a hned se SUPERLATIVEM, KTERÝ
+  NEPLATÍ TAK, JAK SE OBVYKLE ŘÍKÁ. Doložený citát zní „najwyżej położonym
+  schroniskiem W BIESZCZADACH" (gorybezgranic.pttk.pl), ne v Polsku;
+  nejvýše položené v polských Tatrách se tituluje schronisko nad Pięcioma
+  Stawami. Formulace „nejvýš v Polsku" se v žádném prameni nenašla, a tak
+  se nesmí použít. DŮLEŽITĚJŠÍ PRO KLÍČ ZAŘAZENÍ: dnes to NENÍ schronisko.
+  Od roku 2017 je to „schron turystyczny bez stałej funkcji noclegowej",
+  po přestavbě dokončené v září 2022 tam nelze nocovat a jsou k dispozici
+  „gorące napoje, ale nie posiłki"; vlastníkem je od 2015 národní park,
+  celoročně tam slouží GOPR a je 20 nouzových míst. Rozpory: výška 1228 m
+  (tři prameny) × 1219 m (mapa-turystyczna.pl, souřadnice 49.158041 /
+  22.551037) a původ budovy — „strażnica wojskowa", kterou roku 1965
+  upravili na schronisko (schroniskaturystyczne.pl) × „punkt obserwacyjny",
+  který roku 1956 převzal řešovský PTTK a turistům sloužil od 1967
+  (gorybezgranic.pttk.pl).
+  SCHRONISKO PTTK KREMENAROS v Ustrzykach Górnych — kořeny v 70. letech
+  jako bar a útulna „Pulpit", rekonstrukce 2015, 35 lůžek, samostatná
+  restaurace se snídaněmi, stanové pole; formálně nekategorizované.
+  BACÓWKA PTTK POD MAŁĄ RAWKĄ — otevřena 29. listopadu 1979, 930 m,
+  30 lůžek, celoročně; podle vlastního webu „druga bacówka, która powstała
+  według tej idei w Bieszczadach i ósma w Polsce". Bufet je popsaný
+  primárně pro ubytované, veřejné občerstvení doložené NENÍ — u téhle se
+  klíč zařazení bude muset rozhodovat.
+  BACÓWKA PTTK POD HONEM v Cisné — rozpory hned tři: rok 1986
+  (korona-gor-polski.pl) × „drewniany budynek z lat 70." (schroniskaturystyczne.pl),
+  výška 663 × 668 × 657 m, kapacita 46 × 60 lůžek.
+  BACÓWKY JAKO TYP jsou pro průvodce nový pojem: koncepci navrhl roku 1974
+  Edward Moskała jako „najmniejsze, w pełni zagospodarowane schroniska
+  górskie, przeznaczone do obsługi turystyki kwalifikowanej"; v polských
+  Karpatech jich vzniklo deset. Až se budou psát profily, tohle je jejich
+  společný rámec — a tři z těch deseti jsou v beskydském okně (Rycerzowa,
+  Krawcowy Wierch), takže se pojem bude hodit i tam.
+
+  NÁRODNÍ PARK: Bieszczadzki Park Narodowy vznikl 4. 8. 1973, původně
+  5 955,35 ha, po rozšířeních 1989, 1991, 1996 a 1999 dnes 29 201,06 ha
+  (bdpn.gov.pl) — anglická Wikipedie to potvrzuje jako „292.02 square
+  kilometres" a „the third-largest national park in Poland". Mezinárodní
+  biosférická rezervace Východní Karpaty (PL/SK/UA) má TŘI RŮZNÁ DATA
+  vzniku: 1991 (anglická Wikipedie), 1992 (bdpn.gov.pl), 1998 (UNESCO MAB)
+  — do dat se rok nepíše.
+
+  POJEM „BIESZCZADY WYSOKIE" SE NEPODAŘILO DOLOŽIT vůbec, ač se v běžné
+  řeči používá. Nezapisuje se.
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.

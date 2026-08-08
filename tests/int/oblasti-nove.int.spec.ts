@@ -208,7 +208,11 @@ const KOTVY: Record<string, { nazev: string; lat: number; lng: number }[]> = {
     { nazev: 'Ružomberok (severovýchodní kotva)', lat: 49.0816, lng: 19.3034 },
   ],
   'slovensky-raj': [
-    { nazev: 'Ondrejisko / Borovniak (nejvyšší vrchol, západní kotva)', lat: 48.85987, lng: 20.25858 },
+    {
+      nazev: 'Ondrejisko / Borovniak (nejvyšší vrchol, západní kotva)',
+      lat: 48.85987,
+      lng: 20.25858,
+    },
     { nazev: 'Veľká Knola', lat: 48.8639, lng: 20.4728 },
     { nazev: 'Kláštorisko', lat: 48.94189, lng: 20.426242 },
     { nazev: 'Podlesok', lat: 48.9643, lng: 20.3841 },
@@ -220,6 +224,37 @@ const KOTVY: Record<string, { nazev: string; lat: number; lng: number }[]> = {
     { nazev: 'Dedinky', lat: 48.8672, lng: 20.3795 },
     { nazev: 'Mlynky (jižní kotva)', lat: 48.8519, lng: 20.43 },
     { nazev: 'Spišská Nová Ves (východní kotva)', lat: 48.9446, lng: 20.5615 },
+  ],
+  'luzicke-hory': [
+    { nazev: 'Luž / Lausche (nejvyšší, přímo na hranici)', lat: 50.84907, lng: 14.64675 },
+    { nazev: 'Hvozd / Hochwald', lat: 50.82243, lng: 14.72632 },
+    { nazev: 'Klíč', lat: 50.78855, lng: 14.57282 },
+    { nazev: 'Jedlová', lat: 50.85689, lng: 14.56075 },
+    { nazev: 'Studenec (západní kotva)', lat: 50.83213, lng: 14.45434 },
+    { nazev: 'Jiřetín pod Jedlovou', lat: 50.874449, lng: 14.575078 },
+    { nazev: 'Krompach', lat: 50.828072, lng: 14.701509 },
+    { nazev: 'Mařenice', lat: 50.807406, lng: 14.678548 },
+    { nazev: 'Cvikov', lat: 50.777193, lng: 14.632919 },
+    { nazev: 'Nový Bor (jižní kotva)', lat: 50.757612, lng: 14.555553 },
+    { nazev: 'Kytlice', lat: 50.812643, lng: 14.535358 },
+    { nazev: 'Zittau (severovýchodní kotva, DE)', lat: 50.8999681, lng: 14.8029971 },
+    { nazev: 'Kurort Jonsdorf (DE)', lat: 50.85409, lng: 14.69642 },
+    { nazev: 'Waltersdorf (DE)', lat: 50.86664, lng: 14.64985 },
+  ],
+  bieszczady: [
+    { nazev: 'Tarnica (nejvyšší polský vrchol)', lat: 49.074554, lng: 22.726162 },
+    { nazev: 'Halicz (východní kotva)', lat: 49.071951, lng: 22.768487 },
+    { nazev: 'Wielka Rawka', lat: 49.09941, lng: 22.576154 },
+    { nazev: 'Mała Rawka', lat: 49.10917, lng: 22.57444 },
+    { nazev: 'Połonina Wetlińska', lat: 49.165739, lng: 22.525294 },
+    { nazev: 'Chatka Puchatka', lat: 49.158041, lng: 22.551037 },
+    { nazev: 'Połonina Caryńska', lat: 49.135368, lng: 22.607913 },
+    { nazev: 'Ustrzyki Górne', lat: 49.10478, lng: 22.647552 },
+    { nazev: 'Wetlina', lat: 49.1575, lng: 22.4669 },
+    { nazev: 'Cisna (západní kotva)', lat: 49.21139, lng: 22.32889 },
+    { nazev: 'Bacówka PTTK pod Honem', lat: 49.214372, lng: 22.313609 },
+    { nazev: 'Wołosate (jižní kotva, konec GSB)', lat: 49.05472, lng: 22.69528 },
+    { nazev: 'Lutowiska (severní kotva)', lat: 49.25111, lng: 22.69583 },
   ],
   // Nízké Tatry: hřeben je z celého korpusu nejdelší (~80 km), takže kotvy
   // musejí držet oba konce — Prašivá na západě a Vernár s Telgártem za
@@ -250,6 +285,8 @@ describe.each([
   ['orlicke-hory', 'Orlické hory'],
   ['velka-fatra', 'Veľká Fatra'],
   ['slovensky-raj', 'Slovenský raj'],
+  ['luzicke-hory', 'Lužické hory'],
+  ['bieszczady', 'Bieszczady'],
 ])('oblast %s', (slug, nazev) => {
   const konfig = oblastDleSlugu(slug)
   const yaml = nactiYaml(slug)
@@ -743,7 +780,10 @@ describe('Veľká Fatra a Slovenský raj — patnáctá a šestnáctá oblast', 
     const vf = oblastDleSlugu('velka-fatra').bbox
     const mf = oblastDleSlugu('mala-fatra').bbox
     const protina =
-      vf.latMin < mf.latMax && vf.latMax > mf.latMin && vf.lngMin < mf.lngMax && vf.lngMax > mf.lngMin
+      vf.latMin < mf.latMax &&
+      vf.latMax > mf.latMin &&
+      vf.lngMin < mf.lngMax &&
+      vf.lngMax > mf.lngMin
     expect(protina).toBe(true)
     expect(String(nactiYaml('velka-fatra').interniPoznamky)).toMatch(/ZÁMĚRNĚ PŘEKRÝVÁ|překrývá/)
   })
@@ -757,8 +797,76 @@ describe('Veľká Fatra a Slovenský raj — patnáctá a šestnáctá oblast', 
     for (const o of OBLASTI) {
       expect(o.bbox.latMax, `${o.slug}: prázdné okno`).toBeGreaterThan(o.bbox.latMin)
       expect(o.bbox.lngMax, `${o.slug}: prázdné okno`).toBeGreaterThan(o.bbox.lngMin)
-      expect(o.bbox3d.latMin, `${o.slug}: 3D okno mimo hlavní`).toBeGreaterThanOrEqual(o.bbox.latMin)
+      expect(o.bbox3d.latMin, `${o.slug}: 3D okno mimo hlavní`).toBeGreaterThanOrEqual(
+        o.bbox.latMin,
+      )
       expect(o.bbox3d.latMax, `${o.slug}: 3D okno mimo hlavní`).toBeLessThanOrEqual(o.bbox.latMax)
+    }
+  })
+})
+
+describe('Lužické hory a Bieszczady — sedmnáctá a osmnáctá oblast', () => {
+  it('Bieszczady: Tarnica je nejvyšší JEN na polské straně a je to zapsané', () => {
+    // Nejvyšší vrchol celých Bieszczad je Pikuj (1405 m) na Ukrajině, tedy
+    // mimo naše okno i mimo země, po kterých se ptáme. Bez téhle věty by
+    // první profil tvrdil superlativ, který neplatí.
+    const s = String(nactiYaml('bieszczady').nejvyssiHora?.source)
+    expect(s).toMatch(/Pikuj/)
+    expect(s).toMatch(/1405/)
+    expect(s).toMatch(/Ukrainie|Ukrajin/)
+  })
+
+  it('Bieszczady: čtvrtý typ režimu „otevřeno ≠ dostupné" je zapsaný', () => {
+    // Po tatranské uzávěře, vůdcovské povinnosti a jednosměrných roklinách
+    // teď vstupné, pohyb jen mezi východem a západem slunce a nocování na
+    // třech místech. U chaty na hřebeni je to pro plánování túry důležitější
+    // než otvírací doba.
+    const y = nactiYaml('bieszczady')
+    const p = String(y.interniPoznamky)
+    expect(p).toMatch(/VSTUPNÉ/)
+    expect(p).toMatch(/NOCOVÁNÍ/)
+    expect(p).toMatch(/DENNÍ REŽIM/)
+    // Doslovný citát regulaminu stojí u ověření charakteristiky, ne
+    // v interních poznámkách — tam patří doklad, sem provozní vzkaz.
+    expect(String(y.overeniCharakteristika?.source)).toMatch(/od wschodu do zachodu słońca/)
+    expect(String(y.charakteristika)).toMatch(/vstupné|nocovat/)
+  })
+
+  it('Bieszczady: rozpor obou národních členění o Bukovských vrších je zapsaný', () => {
+    // Polské je vede jako slovenskou část Bieszczad, slovenské jako vlastní
+    // celek. Oblast bere obojí — a musí být vidět, že to je rozhodnutí, ne
+    // shoda pramenů.
+    const p = String(nactiYaml('bieszczady').interniPoznamky)
+    expect(p).toMatch(/Bukovské vrchy/)
+    expect(p).toMatch(/NESHODNOU|neshodnou/)
+    expect(oblastDleSlugu('bieszczady').katalogPohori).toEqual(['Bieszczady', 'Bukovské vrchy'])
+  })
+
+  it('Lužické hory: spojení obou stran stojí na německém prameni a je to přiznané', () => {
+    const p = String(nactiYaml('luzicke-hory').interniPoznamky)
+    expect(p).toMatch(/NĚMECKÉM PRAMENI/)
+    expect(p).toMatch(/deutsche Teil/)
+  })
+
+  it('Lužické hory: Luž nemá občerstvení, takže do průvodce nepatří jako objekt', () => {
+    // Stará bouda na hranici vyhořela 8. 1. 1946 a dnes je na vrcholu jen
+    // vyhlídková věž. Kdyby to poznámka neříkala, triáž by nejvyšší horu
+    // oblasti hledala mezi chatami.
+    const p = String(nactiYaml('luzicke-hory').interniPoznamky)
+    expect(p).toMatch(/LUŽ DNES OBČERSTVENÍ NEMÁ/)
+    expect(p).toMatch(/1946/)
+  })
+
+  it('nová oblast nikdy nemá katalogové jméno, které už bere jiná oblast', () => {
+    // Souhrnná pojistka po dni, kdy přibylo osm oblastí: kdyby se jedno
+    // katalogové pohoří objevilo ve dvou oblastech, dohledávka podle jmen by
+    // tytéž objekty tahala dvakrát a triáž by je řešila jako duplicity.
+    const videno = new Map<string, string>()
+    for (const o of OBLASTI) {
+      for (const p of o.katalogPohori ?? []) {
+        expect(videno.has(p), `${p} vede ${videno.get(p)} i ${o.slug}`).toBe(false)
+        videno.set(p, o.slug)
+      }
     }
   })
 })

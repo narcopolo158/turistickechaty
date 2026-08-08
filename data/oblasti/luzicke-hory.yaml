@@ -1,0 +1,139 @@
+# Oblast Lužické hory — sedmnáctá oblast průvodce (pokyn Michala 8. 8. 2026:
+# „klidne dopln krusne hory, orlicke a vse dalsi co najdes").
+#
+# ROZSAH. Okno dotazu (scripts/oblasti.ts) kryje pohoří vcelku přes
+# česko-saskou hranici: české podcelky Lužický hřbet a Kytlická hornatina
+# a saské Zittauer Gebirge (Žitavské hory).
+# VĚDOMĚ MIMO OKNO: Doksy a Máchův kraj na jihu (žádný pramen je do Lužických
+# hor nezařazuje), Šluknovská pahorkatina na severu a Děčínská vrchovina se
+# Českým Švýcarskem na západě.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Lužické hory
+slug: luzicke-hory
+typ: pohori
+zeme: cz
+
+sklonovani:
+  druhy: Lužických hor
+  sesty: Lužických horách
+
+charakteristika: >-
+  Pískovcová plošina prostřílená sopečnými kužely: magma tu ve třetihorách
+  prorazilo deskou usazenin a ztuhlo v čedič a znělec, takže z rovných lesů
+  vystupují osamělé homole s rozhlednami. Hranice mezi Českem a Saskem tu
+  vede rovnou přes vrcholy — přes Luž i přes Hvozd, kde stojí chata a věž
+  na německé straně a cesta k nim vede z české. Rozhledny sem stavěl od
+  osmdesátých let devatenáctého století Gebirgsverein für das nördlichste
+  Böhmen a jeho stavby na Jedlové stojí dodnes.
+overeniCharakteristika:
+  source: >-
+    Geologie: německá Wikipedie, Lausitzer Gebirge (čteno 8. 8. 2026) —
+    „jüngeren Sandsteinschichten" na „präkambrischen kristallinen Sockel"
+    a „Vulkanische Magmen durchbrachen im Tertiär diese Sandsteinplatte und
+    erstarrten zu Basalt und Phonolith."; časopis Ochrana přírody (čteno
+    8. 8. 2026) — „Magma utuhlo v tělesech s deskovitou (znělec), nebo
+    u čedičů s typickou šestibokou strukturou". Hranice přes vrcholy:
+    vrcholovka.cz u Hvozdu — „hranice prochází přímo přes vrchol";
+    Liberecký kraj (čteno 8. 8. 2026) — „na jednom ze dvou vrcholů Hvozdu
+    turistická chata německého majitele a na druhém 25 m vysoká rozhledna",
+    „Chata i rozhledna leží na německém území". Spolek: Austria-Forum, heslo
+    Gebirgsverein für das nördlichste Böhmen (čteno 8. 8. 2026) — spolek
+    „am 13. September 1885 in Schönlinde" a jeho stavby „1888 Schutzhütte
+    und 1891 Aussichtsturm auf dem Tannenberg" (Jedlová), „1887 Schutzhütte
+    und 1888 Aussichtsturm auf dem Wolfsberg", „1886 Aussichtsturm auf dem
+    Tanzplan".
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Luž
+  vyska: 792
+  source: >-
+    Německá Wikipedie, Lausche (čteno 8. 8. 2026) uvádí „792,6 m ü. NHN"
+    a doslovný superlativ: Luž je „der höchste Berg im Zittauer Gebirge und
+    im gesamten Lausitzer Gebirge sowie die höchste Erhebung in Deutschland
+    östlich der Elbe". ROZPOR, přiznaný: 793 m uvádí vrcholovka.cz, německá
+    Wikipedie v článku o pohoří i zittauer-gebirge.com („mit 793m höchster
+    Gipfel Deutschlands östlich der Elbe"). Zapsáno 792 dle konvence
+    z 27. 7. 2026 (při rozporu nižší číslo). Souřadnice 50.84907 / 14.64675
+    (vrcholovka.cz); vrchol leží PŘÍMO NA HRANICI, takže je zároveň nejvyšší
+    horou české i saské části. Druhý nejvyšší je Pěnkavčí vrch (792 m) —
+    číslo je tak blízko, že se při psaní profilů musí hlídat, o který kopec
+    jde.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala („vse dalsi co najdes"). Konfigurace
+  okna je v scripts/oblasti.ts (slug luzicke-hory, zeme CZ+DE, katalogové
+  názvy Lužické hory a Zittauer Gebirge), kotvy okna a prameny v komentáři
+  tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `luzicke-hory`.
+
+  SPOJENÍ OBOU STRAN STOJÍ NA NĚMECKÉM PRAMENI, ne na českém, a je poctivé
+  to říct. Německá Wikipedie vede Zittauer Gebirge doslova jako „der
+  deutsche Teil des sich an der sächsisch-böhmischen Grenze erstreckenden
+  Lausitzer Gebirges" a Naturpark Zittauer Gebirge sám sebe popisuje jako
+  „gemeinsamen Landschaftsraum" s Lužickými horami a Ještědským hřbetem.
+  České geomorfologické členění popisuje jen území ČR — nepopírá spojení,
+  jen o druhé straně nemluví. Princip „přeshraniční pohoří vcelku"
+  (rozhodnutí Michala 20. 7. 2026) tedy platí, ale doklad je jednostranný.
+
+  PŘEKRYV S JEŠTĚDSKÝM HŘBETEM JE ZÁMĚRNÝ — okna se potkávají v pásu
+  14.80–14.88. Prameny vedou Ještědsko-kozákovský hřbet jako východního
+  souseda Lužických hor, ale konkrétní hraniční linii (údolí, sedlo, obce)
+  doslovně neuvádějí, a ostrý řez naslepo by vyřízl objekty mezi oběma
+  pohořími. Vzor překryvu Krkonoš a Jizerek u Jizerky. Píše se to sem, ne
+  jen do komentáře hlavičky, aby to viděl i test.
+
+  HVOZD JE PRO PRŮVODCE ZVLÁŠTNÍ PŘÍPAD A BUDE CHTÍT ROZHODNUTÍ. Na hoře
+  jsou DVA objekty a oba na německé straně, ač se k nim chodí i z Česka:
+  HOCHWALDBAUDE na jižním vrcholu (první bouda 1854; dnešní saská budova
+  vysvěcena 14. 6. 1938; znovuotevřena 1991, dnes rodina Grundmannových;
+  sama se označuje za „die höchst gelegene Gaststätte der Region") a
+  HOCHWALD-TURMBAUDE na severním vrcholu s kamennou věží, kterou postavil
+  spolek „Globus Zittau" — základní kámen 7. 5. 1892, otevřeno 14. 9. 1892.
+  Česká bouda z roku 1853 na této hoře vyhořela roku 1877, hrázděná náhrada
+  z 1878 byla po druhé světové válce zbořena do roku 1951. Jsou to tedy dva
+  provozy dvou vlastníků na dvou vrcholech jedné hory — podle pravidla
+  z Kozubové (dvě stavby, dva vlastníci = dva objekty) to budou dva profily,
+  ale rozhodne se to až s doklady o provozu.
+
+  LUŽ DNES OBČERSTVENÍ NEMÁ, a je to důležité pro klíč zařazení. Stará bouda
+  na hranici (dřevěná 1823, výčepní koncese 31. 7. 1824, uvnitř oddělený
+  „Sächsisches Gastzimmer" a „Böhmische Stüberl" — což je samo o sobě
+  hezký doklad hraničního života) VYHOŘELA 8. ledna 1946; česky se uvádí,
+  že „byla pravděpodobně úmyslně zapálena". Dnes na vrcholu stojí jen
+  vyhlídková věž z léta 2020 (projekt Ralfa Reimanna z Budyšína, stavba
+  Kratzer Metallbau, náklad 950 000 eur) a vrcholovka.cz výslovně uvádí, že
+  tam žádná chata není. Luž tedy do průvodce nepatří jako objekt, jen jako
+  nejvyšší hora oblasti.
+
+  DALŠÍ DOLOŽENÉ OBJEKTY K TRIÁŽI: JEDLOVÁ — první útulnu tu postavil roku
+  1888 Gebirgsverein für das nördlichste Böhmen, kamennou rozhlednu 1891
+  a Bergbaude nechal téhož roku postavit Ferdinand von Kinsky; znovu
+  otevřeno 25. 8. 1995 a podle vrcholovka.cz je na vrcholu „chata
+  s restaurací". KLÍČ — chata z roku 1872 sloužila do druhé světové války
+  a pak byla zničena; dnešní občerstvení pramen neuvádí. STUDENEC — dřevěnou
+  vyhlídkovou věž nechal 1854 postavit kníže Ferdinand Kinský, dnešní
+  železnou postavil 1888 Horský spolek pro České Švýcarsko (POZOR: jiný
+  spolek než Gebirgsverein für das nördlichste Böhmen) a je „celoročně volně
+  přístupná" — tedy bez občerstvení, mimo klíč. BERGGASTHOF OYBIN podle
+  rejstříků stojí na Hauptstraße v obci, ne na hoře, a je „currently
+  undergoing renovation" — před triáží ověřit, jestli je to horský objekt.
+  Na saské straně je dál Töpferbaude (580 m).
+
+  ROZPORY V OCHRANĚ, NESROVNANÉ. CHKO Lužické hory: AOPK uvádí vyhlášení
+  12. 4. 1976 a rozlohu 271 km², časopis Ochrana přírody výnos z 19. 3. 1976
+  a rozlohu 264 km². Nové vyhlášení 23. 7. 1999 (AOPK). Naturpark Zittauer
+  Gebirge byl založen nařízením ze 4. 12. 2007 jako „hundertster Naturpark
+  in Deutschland", rozloha „etwa 13.337 Hektar". Do dat oblasti se rozloha
+  ani datum nepíšou, dokud se nesrovnají.
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.

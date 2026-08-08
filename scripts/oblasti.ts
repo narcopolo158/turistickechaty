@@ -681,6 +681,82 @@ export const OBLASTI: OblastKonfig[] = [
       'šestnáctá oblast (pokyn Michala 8. 8. 2026) — krasová plošina s roklinami; první oblast korpusu s jednosměrnými trasami a vstupným',
     katalogPohori: ['Slovenský ráj'],
   },
+  {
+    slug: 'luzicke-hory',
+    nazev: 'Lužické hory',
+    /**
+     * Sedmnáctá oblast — týž pokyn Michala. Přeshraniční pohoří vcelku:
+     * německá strana se jmenuje Zittauer Gebirge (Žitavské hory) a německá
+     * Wikipedie ji vede doslova jako „der deutsche Teil des sich an der
+     * sächsisch-böhmischen Grenze erstreckenden Lausitzer Gebirges". České
+     * členění popisuje jen území ČR, takže spojení stojí na německém prameni
+     * a na tom, že Naturpark Zittauer Gebirge sám sebe popisuje jako
+     * „gemeinsamen Landschaftsraum" s Lužickými horami.
+     */
+    zeme: ['CZ', 'DE'],
+    /**
+     * Kotvy okna jsou doložené souřadnice (prameny
+     * v data/oblasti/luzicke-hory.yaml):
+     *   sever  50.95 — Zittau (50.900 / 14.803)
+     *   jih    50.72 — Nový Bor (50.758 / 14.556) a Cvikov (50.777 / 14.633)
+     *   západ  14.38 — Studenec (50.832 / 14.454)
+     *   východ 14.88 — Zittau (14.803) a Krompach (50.828 / 14.702)
+     * Uvnitř dál Luž (50.849 / 14.647), Hvozd (50.822 / 14.726), Klíč,
+     * Jedlová, Jiřetín pod Jedlovou, Mařenice, Kytlice, Oybin, Jonsdorf
+     * a Waltersdorf.
+     *
+     * PŘEKRYV S JEŠTĚDSKÝM HŘBETEM (14.80–14.88) JE ZÁMĚRNÝ. Prameny vedou
+     * Ještědsko-kozákovský hřbet jako východního souseda, ale konkrétní
+     * hraniční linii (údolí, sedlo, obce) doslovně neuvádějí — ostrý řez
+     * naslepo by vyřízl objekty mezi oběma pohořími.
+     * DOKSY JSOU VĚDOMĚ VENKU (50.566 / 14.654): leží výrazně jižně
+     * a žádný pramen je do Lužických hor nezařazuje.
+     */
+    bbox: { latMin: 50.72, lngMin: 14.38, latMax: 50.95, lngMax: 14.88 },
+    bbox3d: { latMin: 50.75, lngMin: 14.42, latMax: 50.92, lngMax: 14.84 },
+    poznamka:
+      'sedmnáctá oblast (pokyn Michala 8. 8. 2026) — Lužické hory se saskými Žitavskými horami; okno se u Ještědu záměrně překrývá',
+    katalogPohori: ['Lužické hory', 'Zittauer Gebirge'],
+  },
+  {
+    slug: 'bieszczady',
+    nazev: 'Bieszczady',
+    /**
+     * Osmnáctá oblast a NEJVZDÁLENĚJŠÍ, jakou průvodce vzal — jihovýchodní
+     * cíp Polska u ukrajinské hranice. Bere se vcelku i se slovenskou
+     * stranou, a to je rozhodnutí, které stojí za vysvětlení, protože obě
+     * národní členění se neshodnou: polské vede Bukovské vrchy jako
+     * SLOVENSKOU ČÁST Bieszczad Zachodnich („Słowacka część Bieszczadów
+     * Zachodnich nazywana jest przez Słowaków Górami Bukowskimi"), kdežto
+     * slovenské je vede jako vlastní celek s vlastními podcelky (Bukovce,
+     * Nastaz). Průvodce jde podle principu „přeshraniční pohoří vcelku"
+     * (rozhodnutí Michala 20. 7. 2026) a bere obojí jako jednu oblast —
+     * rozpor členění je zapsaný v data/oblasti/bieszczady.yaml, ne zamlčený.
+     */
+    zeme: ['PL', 'SK'],
+    /**
+     * Kotvy okna jsou doložené souřadnice (prameny
+     * v data/oblasti/bieszczady.yaml):
+     *   jih    48.95 — Wołosate (49.055 / 22.695), konec Głównego Szlaku
+     *                  Beskidzkiego, a slovenská strana pod Kremencom
+     *   sever  49.30 — Lutowiska (49.251 / 22.696) a Cisna (49.211 / 22.329)
+     *   západ  22.10 — Cisna a bacówka pod Honem (49.214 / 22.314)
+     *   východ 22.85 — Halicz (49.072 / 22.768) a Tarnica (49.075 / 22.726)
+     * Uvnitř dál Wielka i Mała Rawka, Połonina Wetlińska s Chatkou
+     * Puchatkou (49.158 / 22.551), Połonina Caryńska, Ustrzyki Górne
+     * a Wetlina.
+     *
+     * DVĚ VĚCI JSOU VĚDOMĚ VENKU. SOLINA (49.399 / 22.450) je přehrada
+     * v podhůří, ne hory. KOMAŃCZA (49.338 / 22.072) leží podle pramenů
+     * v Beskidu Niskim, ne v Bieszczadech — a to i přesto, že tudy vede
+     * Główny Szlak Beskidzki; okno se řídí pohořím, ne trasou.
+     */
+    bbox: { latMin: 48.95, lngMin: 22.1, latMax: 49.3, lngMax: 22.85 },
+    bbox3d: { latMin: 49.0, lngMin: 22.3, latMax: 49.25, lngMax: 22.8 },
+    poznamka:
+      'osmnáctá oblast (pokyn Michala 8. 8. 2026) — nejvýchodnější oblast korpusu; polská i slovenská strana (Bukovské vrchy) vcelku',
+    katalogPohori: ['Bieszczady', 'Bukovské vrchy'],
+  },
 ]
 
 export const oblastDleSlugu = (slug: string): OblastKonfig => {
