@@ -142,3 +142,82 @@ odlozeno:
       Claude (8. 8. 2026, denní bezobslužná session s pověřením „pracuj
       systematicky a autonomně")
     checked: 2026-08-08
+  - slug: burglengenfelder-hutte-scb-hutte
+    oblast: sumava
+    duvod: >-
+      Chata lyžařského klubu Ski-Club Burglengenfeld e. V., kterou klub
+      podle vlastní kroniky užívá od roku 1970 („Einzug in die
+      Burglengenfelder Hütte (Grafhütte) bei Bayerisch Eisenstein am
+      Arber"). Podezření z deníku 7. 8. 2026, že jde o chatu k pronájmu
+      členům, se ale NEPODAŘILO ANI POTVRDIT, ANI VYVRÁTIT: web klubu
+      chatu zmiňuje jen okrajově a o provozu nemluví, kronika klubu se
+      ze sandboxu nenačetla (chyba serveru). Žádný pramen neříká ani
+      „Selbstversorger", ani „bewirtschaftet". Odloženo, ne vyřazeno —
+      vyřadit objekt bez pramene by bylo domýšlení stejně jako ho
+      povýšit. Vedlejší zjištění: objekt stojí v lokalitě Grafhütte
+      u Bayerisch Eisenstein pod Velkým Javorem, ne v okolí Prölleru,
+      jak jsem při zadávání rešerše předpokládal.
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný blok s pověřením „pracuj systematicky
+      a autonomně")
+    checked: 2026-08-08
+  - slug: forsthaus-odwies
+    oblast: sumava
+    duvod: >-
+      OSM ho vede jako útulnu (`wilderness_hut`), ale pramen říká něco
+      jiného: portál obce Achslach (načteno 8. 8. 2026) popisuje objekt
+      jako lesní chatu pro asi 40 osob, která „wird auch an Privatpersonen
+      vermietet" a u které „Derzeit ist nach wie vor leider keine
+      Vermietung möglich, da weiterhin ein neuer Pächter gesucht wird."
+      Dnes tedy neposkytuje ŽÁDNOU službu — ani hospodu pro veřejnost,
+      ani volné přístřeší; správu má bavorská státní lesní správa.
+      PROČ SE PŘESTO NEVYŘAZUJE: má DOLOŽENOU TURISTICKOU MINULOST, a to
+      je druhá polovina klíče (rozšíření Michala 26. 7. 2026). Portál
+      okresu Regen (načteno 8. 8. 2026) uvádí, že bývalé státní myslivecké
+      stavení „später auch eine kleine Gastwirtschaft für Wanderer und
+      Waldarbeiter unterhielt" a že „Nach dem zweiten Weltkrieg wurde die
+      Ödwies verlassen." Hospoda pro turisty a lesní dělníky v polovině
+      devatenáctého století je přesně ta role na trase, na kterou se
+      rozšířený klíč ptá. Objekt stojí na horské louce mezi Kälberbuckel
+      a Hirschensteinem okolo 1030–1065 m (dva prameny se mírně liší).
+      OTÁZKA PRO MICHALA: bere rozšířený klíč i objekt, který dnes
+      neslouží nikomu, ale jehož turistická minulost je doložená? Podle
+      odpovědi se buď povýší s poctivým označením stavu, nebo půjde do
+      atlasu zaniklých (P4 / položka „Atlas zaniklých chat").
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný blok s pověřením „pracuj systematicky
+      a autonomně")
+    checked: 2026-08-08
+  - slug: hollbachschwellhutte
+    oblast: sumava
+    duvod: >-
+      NOVÝ TYP PŘÍPADU, na který průvodce ještě nemá pravidlo — proto
+      odloženo, ne rozhodnuto. Je to malá Selbstversorgerhütte spolku
+      Bayerischer Wald-Verein, sekce Zwiesel, na východním svahu Velkého
+      Falkensteinu okolo 1000 m; kapacita deset osob (osm v podkroví, dva
+      v přízemí) a budova je PAMÁTKOVĚ CHRÁNĚNÁ z konce 19. století —
+      doloženo tiskovou zprávou správy Národního parku Bavorský les
+      (č. 38/2024 z 13. 6. 2024): „Das denkmalgeschützte Gebäude aus dem
+      späten 19. Jahrhundert wird seit Jahrzehnten von der Zwieseler
+      Sektion des Bayerischen Wald-Vereins als einfache
+      Selbstversorgerhütte genutzt."
+      ROZDÍL PROTI VYŘAZENÝM SELBSTVERSORGERŮM: tahle chata není pro
+      uzavřenou skupinu ani jen pro členy spolku. Web sekce (načteno
+      8. 8. 2026) říká: „Wer die kleine Selbstversorgerhütte gegen
+      Entrichtung eines geringen Obulus für Übernachtungszwecke nutzen
+      möchte, sollte sich stets rechtzeitig beim Hüttenwart anmelden."
+      Tedy KDOKOLI, kdo se předem ohlásí a zaplatí drobný poplatek —
+      to je blíž útulně než pronájmu. Zároveň to není volně přístupné
+      přístřeší, jak naše definice útulny žádá: bez ohlášení se tam
+      nejde, doslovné „unverschlossen" ani „jederzeit zugänglich" žádný
+      pramen neuvádí.
+      OTÁZKA PRO MICHALA: patří do průvodce spolková chata otevřená
+      komukoli PO OHLÁŠENÍ, bez hospody? Je to třída objektů, ne jeden
+      případ — v Bavorském lese i v Alpách jich bude víc, takže odpověď
+      založí pravidlo. Vedlejší doložený fakt do budoucího profilu:
+      provoz byl v roce 2024 dočasně pozastaven kvůli požární bezpečnosti
+      a po zásahu správy národního parku obnoven.
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný blok s pověřením „pracuj systematicky
+      a autonomně")
+    checked: 2026-08-08

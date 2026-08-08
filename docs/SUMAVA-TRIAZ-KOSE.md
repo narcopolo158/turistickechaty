@@ -1,8 +1,8 @@
 # Šumava — koše plošné triáže (krok 4b)
 
 Vygeneroval `npx tsx scripts/triaz-kandidatu.ts sumava --md` dne 8. 8. 2026
-(třetí běh téhož dne, po dokončení celého bavorského koše
-Berggasthof/Berghaus).
+(čtvrtý běh téhož dne, po dokončení bavorského koše Berggasthof/Berghaus
+a skupiny podezřelých na Selbstversorger).
 **Přegenerovat po každém povýšení nebo vyřazení** — publikované, odložené
 i vyřazené kandidáty skript sám vynechává.
 
@@ -18,7 +18,7 @@ jméno přesto nese boudové slovo, jde kandidát do koše „k posouzení" jako
 rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshütte
 (oba Selbstversorger, vyřazeni 6. 8. s pramenem).
 
-## Postup triáže: koše 8. 8. 2026 ráno 110 · 35 · 160 → 76 · 36 · 173
+## Postup triáže: koše 8. 8. 2026 ráno 110 · 35 · 160 → 71 · 35 · 173
 
 **Ráno — dvě opravy skriptu a čtyři dopsaná rozhodnutí** (kandidátů
 305 → 298): `tourism=apartment` se začal číst jako tag pronájmu; české
@@ -71,13 +71,35 @@ kladně:
    rozvrhy se rozcházejí tak často, že u čtyř z devíti profilů zůstalo
    pole prázdné.
 
-### NADĚJNÉ — vzít v triáži nejdřív (76)
+**Večer — skupina podezřelých na Selbstversorger, šest objektů** (kandidátů
+285 → 279, nadějných 76 → 71). Deník 7. 8. u dvou z nich vedl podezření, že
+jde o chaty k pronájmu; pramen ho potvrdil u obou a přidal třetí.
+
+- **VYŘAZENO 3:** Bärwurz-Resl-Hüttn (regionální portál sám: „Selbstversorger
+  Hütte im Bayerischen Wald nur für ganze WE buchbar"), Berghütte Zum Pröller
+  (táž firma 46 m odsud, „Selbstverpflegung", pronájem pro skupiny),
+  Základna Bílého orla (Junák: „Základna otevírá pro výpravy a akce
+  s minimálním počtem 20 plně platících účastníků").
+- **ODLOŽENO 3:** Burglengenfelder-Hütte (podezření se nepodařilo ani
+  potvrdit, ani vyvrátit — vyřadit bez pramene by bylo domýšlení stejně jako
+  povýšit), Forsthaus Ödwies (dnes bez provozu a hledá nájemce, ALE má
+  doloženou turistickou minulost — v 19. století „eine kleine Gastwirtschaft
+  für Wanderer und Waldarbeiter"; otázka na rozšířený klíč),
+  Höllbachschwellhütte (**nový typ případu:** spolková chata otevřená
+  KOMUKOLI po ohlášení u hospodáře, bez hospody — blíž útulně než pronájmu,
+  ale volně přístupná není; odpověď založí pravidlo pro celou třídu objektů).
+
+Poučení: **tag `wilderness_hut` v OSM není doklad útulny.** U Forsthausu
+Ödwies i u Höllbachschwellhütte ho pramen vyvrátil, u Waldvereinshütte
+6. 8. taky. Útulnu dokládá až věta o volném přístupu, ne tag.
+
+
+### NADĚJNÉ — vzít v triáži nejdřív (71)
 
 | kandidát | země | signál |
 |---|---|---|
 | `abseits-hutte` — Abseits Hütte | de | jméno nese „Hütte" |
 | `aussichtsturm` — Aussichtsturm | de | typ z OSM: rozhledna |
-| `barwurz-resl-huttn` — Bärwurz-Resl-Hüttn | de | typ z OSM: obsluhovana |
 | `berggasthof-zottling` — Berggasthof Zottling | de | jméno nese „Berggasthof" |
 | `bistro-bouda` — Bistro Bouda | cz | jméno nese „Bouda" |
 | `blockhutte` — Blockhütte | de | OSM tourism=hut |
@@ -85,7 +107,6 @@ kladně:
 | `bouda-burgers` — Bouda Burgers | cz | jméno nese „Bouda" |
 | `brandl-hutte-neunussberg` — Brandl Hütte Neunußberg | de | jméno nese „Hütte" |
 | `brotzeithutte-zum-turm` — Brotzeithütte Zum Turm | de | jméno nese „Turm" |
-| `burglengenfelder-hutte-scb-hutte` — Burglengenfelder-Hütte (SCB-Hütte) | de | typ z OSM: obsluhovana |
 | `chalupa-malcice` — Chalupa Malčice | cz | jméno nese „Chalupa" |
 | `chalupa-na-sumave` — Chalupa na Šumavě | cz | jméno nese „Chalupa" |
 | `chalupa-pod-farou` — Chalupa pod farou | cz | jméno nese „Chalupa" |
@@ -120,14 +141,12 @@ kladně:
 | `chata-zivec` — Chata Živec | cz | typ z OSM: obsluhovana |
 | `dobra-chata` — Dobrá chata | cz | jméno nese „chata" |
 | `falter-hutte` — Falter Hütte | de | jméno nese „Hütte" |
-| `forsthaus-odwies` — Forsthaus Ödwies | de | typ z OSM: utulna |
 | `haidsteiner-hutte` — Haidsteiner Hütte | de | jméno nese „Hütte" |
 | `hajenka-na-brezniku` — Hájenka na Březníku | cz | jméno nese „Hájenka" |
 | `hajenka-nebe` — Hájenka Nebe | cz | jméno nese „Hájenka" |
 | `hajenka` — Hájenka | cz | jméno nese „Hájenka" |
 | `hansl-hutte` — Hansl-Hütte | de | typ z OSM: obsluhovana |
 | `haus-wolfsteiner-hutte` — Haus Wolfsteiner Hütte | de | jméno nese „Hütte" |
-| `hollbachschwellhutte` — Höllbachschwellhütte | de | typ z OSM: utulna |
 | `horska-chata-kamzik` — Horská chata Kamzík | cz | jméno nese „Horsk" |
 | `horska-chata-korab` — Horská chata Koráb | cz | jméno nese „Horsk" |
 | `hotel-certova-chata` — Hotel Certova Chata | cz | jméno nese „Chata" |
@@ -149,10 +168,9 @@ kladně:
 | `ubytovna-lovecka-chata` — Ubytovna Lovecká chata | cz | jméno nese „chata" |
 | `wellness-chalupa-na-samote-u-lesa` — Wellness chalupa Na samotě u lesa | cz | jméno nese „chalupa" |
 | `wolfi-s-hutte` — Wolfi's Hütte | de | jméno nese „Hütte" |
-| `zakladna-bileho-orla` — Základna Bílého orla | cz | typ z OSM: obsluhovana |
 | `zelena-chyse` — Zelená chýše | cz | typ z OSM: obsluhovana |
 
-### K POSOUZENÍ — musí přečíst člověk (36)
+### K POSOUZENÍ — musí přečíst člověk (35)
 
 | kandidát | země | signál |
 |---|---|---|
@@ -160,7 +178,6 @@ kladně:
 | `almberghutte` — Almberghütte | de | žádný signál ve jméně ani v tazích |
 | `berghaus-durnau` — Berghaus Dürnau | de | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Berghaus" |
 | `berghaus-julia` — Berghaus Julia | de | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Berghaus" |
-| `berghutte-zum-proller` — Berghütte "Zum Pröller" | de | žádný signál ve jméně ani v tazích |
 | `bergstadl-althutte` — Bergstadl Althütte | de | žádný signál ve jméně ani v tazích |
 | `bergstuberl-althutte` — Bergstüberl Althütte | de | žádný signál ve jméně ani v tazích |
 | `buchberg-hutte` — Buchberg Hütte | de | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Hütte" |
@@ -371,5 +388,5 @@ kladně:
 | `zoihausl` — Zoihäusl | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `zum-alten-wirt` — Zum Alten Wirt | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 
-oblast sumava | kandidatu k triazi: 285 | NADEJNE 76 · POSOUDIT 36 · MIMO 173
-preskoceno (publikovane/odlozene/vyrazene): 51
+oblast sumava | kandidatu k triazi: 279 | NADEJNE 71 · POSOUDIT 35 · MIMO 173
+preskoceno (publikovane/odlozene/vyrazene): 57

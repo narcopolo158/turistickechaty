@@ -636,3 +636,74 @@ vyrazeno:
       a občerstvení pro veřejnost; pramen o ukončení je vlastní web
       provozovatele)
     checked: 2026-08-08
+
+  # SELBSTVERSORGER — TŘI OBJEKTY VYŘAZENÉ TÝMŽ PRAVIDLEM (8. 8. 2026).
+  # Klíč zařazení stojí na občerstvení PRO VEŘEJNOST; chata, kterou si
+  # pronajme uzavřená skupina a vaří si v ní sama, ho nenaplňuje. Precedens:
+  # Kynast (3. 8.), Zwieseler Hütte a Waldvereinshütte (6. 8.). Deník 7. 8.
+  # u dvou z nich podezření vedl — tímhle se potvrdilo pramenem.
+  - osm: https://www.openstreetmap.org/way/259323909
+    slug: sumava/barwurz-resl-huttn
+    duvod: >-
+      Selbstversorgerhütte k pronájmu na celý víkend, ne hospoda pro
+      kolemjdoucí. Doloženo REGIONÁLNÍM TURISTICKÝM PORTÁLEM, tedy
+      pramenem, který objekt sám nabízí: bayerischer-wald.de (načteno
+      8. 8. 2026) ho vede větou „Selbstversorger Hütte im Bayerischen Wald
+      nur für ganze WE buchbar". Katalog skupinových pobytů
+      (gruppenfreizeiten.de) ho řadí mezi „Berghütte, Schullandheim,
+      Selbstversorgerhaus" a vlastní web provozovatele ho nabízí pro
+      spolkové výlety, oslavy narozenin a rozlučky se svobodou.
+      Provozovatelem je Bärwurz Resl Berghütten OHG, Hinterviechtach 3,
+      Kollnburg (obchodní rejstřík, HRA 3405, Amtsgericht Deggendorf) —
+      táž firma vede tři chaty v okolí. OSM ho vede jako obsluhovanou
+      chatu; tag je tu zavádějící stejně jako u Waldvereinshütte.
+      Co stojí proti: řád chaty zmiňuje vedle vlastního vaření i placenou
+      stravu od hospodářů. Nic z toho ale není otvírací doba pro
+      kolemjdoucího a žádný pramen nedokládá vstup bez rezervace.
+      Pozor na záměnu: publikovaný profil Berggasthof Hochpröller je JINÝ
+      objekt jiného provozovatele 1130 m odsud (Klaus Altmann,
+      Hinterviechtach 11).
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný blok s pověřením „pracuj systematicky
+      a autonomně" — klíč CLAUDE.md, precedens Kynast a Zwieseler Hütte)
+    checked: 2026-08-08
+
+  - osm: https://www.openstreetmap.org/way/97467597
+    slug: sumava/berghutte-zum-proller
+    duvod: >-
+      Táž firma a týž model jako Bärwurz-Resl-Hüttn 46 m odsud (Bärwurz
+      Resl Berghütten OHG, společný web i kontakt). Katalog skupinových
+      domů gruppenhaus.de (načteno 8. 8. 2026) vede u objektu
+      „Selbstverpflegung" a jako určení „Freizeit, Seminare, Klassen,
+      Musik, Familien, private Feiern"; kapacita 30 lůžek ve třech
+      skupinových místnostech. Žádný nalezený pramen nezmiňuje veřejnou
+      hospodu ani otvírací dobu — proti vyřazení nestojí nic.
+      Tenhle kandidát byl v koši K POSOUZENÍ jako rozpor tagu a jména;
+      rozpor je tím rozhodnut ve prospěch tagu pronájmu.
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný blok — klíč CLAUDE.md, precedens
+      Kynast a Zwieseler Hütte)
+    checked: 2026-08-08
+
+  - osm: https://www.openstreetmap.org/way/266125932
+    slug: sumava/zakladna-bileho-orla
+    duvod: >-
+      Skautská základna, která se pro veřejnost neotevírá. Doloženo
+      vlastním webem majitele (bilyorel.skauting.cz, načteno 8. 8. 2026):
+      „Základna otevírá pro výpravy a akce s minimálním počtem 20 plně
+      platících účastníků (20 osob starších 6 let)." Vlastníkem je od
+      1. 1. 2018 Junák – český skaut, Plzeňský kraj, z. s. Objekt stojí
+      v osadě Šukačka v CHKO Šumava, 1,5 km od silnice mezi Čachrovem
+      a Javornou, okolo 900 m n. m.; 31 lůžek v jedenácti pokojích, plně
+      vybavená kuchyň, jídelna. Je to tedy dům pro uzavřené skupiny
+      s vlastním hospodařením — klíč zařazení („občerstvení pro
+      veřejnost") nenaplňuje a žádný pramen neuvádí ani volný přístup,
+      ani občerstvení pro kolemjdoucí. OSM ho vede jako obsluhovanou
+      chatu; tag je zavádějící.
+      Kdyby se objevil doklad turistické minulosti stavby (klíč DATA-25),
+      posoudí se znovu — dnes žádný pramen o jeho starší roli na trase
+      nemluví.
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný blok — klíč CLAUDE.md; podezření
+      z deníku 7. 8. 2026 potvrzeno vlastním webem majitele)
+    checked: 2026-08-08
