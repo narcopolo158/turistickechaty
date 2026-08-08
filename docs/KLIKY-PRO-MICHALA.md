@@ -22,51 +22,37 @@ pravdu — dlouhý seznam s odškrtnutými řádky se přestane čtít.
 
 ## 1. DATA-01 pro nové oblasti
 
-Beskydy i Jeseníky máš odklikané (8. 8. 2026, 385 a 122 kandidátů) — díky.
-Zbývá šest oblastí. U obou tatranských to znamená „nemají zatím ani jednoho
-kandidáta"; u zbylých čtyř už kandidáti JSOU (přišli omylem s beskydským
-exportem, protože běžel podle širokého okna), ale jen ti z podhůří — vlastní
-běh s vlastním oknem přinese hřebeny, které beskydské okno vůbec nepokrývalo.
+Odklikané máš Beskydy, Jeseníky, Vysoké Tatry a Malou Fatru (8. 8. 2026;
+dohromady přes 650 kandidátů) — díky, a hlavně díky za ten opakovaný běh
+Beskyd, protože ten dorovnal chybějícího Libušína.
+
+Zbývá šest oblastí. Čtyři nové (obě tatranské minus odklikaná, Krušné
+a Orlické hory) nemají zatím ani jednoho kandidáta; u zbylých už kandidáti
+JSOU, ale jen ti z podhůří, protože přišli omylem s beskydským exportem —
+vlastní běh s vlastním oknem přinese hřebeny, které beskydské okno vůbec
+nepokrývalo.
 
 | workflow | políčko `oblast` | co to udělá |
 |---|---|---|
-| **DATA-01: OSM export chat (dle oblasti)** | `vysoke-tatry` | Vysoké a Belianske Tatry (SK, PL) — **nejcennější klik ze všech**: katalog tu vede 14 slovenských vysokohorských chat a 4 polská schroniska PTTK, u většiny s doloženým rokem vzniku i stavitelem. Kandidáta tam zatím nemáme ani jednoho |
 | **DATA-01: OSM export chat (dle oblasti)** | `nizke-tatry` | Nízké Tatry (SK) — 80 km hřebene od Donovalů po Kráľovu hoľu; katalog v okně vede 14 objektů a mezi nimi **čtyři turistické útulny**, což je pro průvodce skupina, jaká se dosud nikde neopakovala |
 | **DATA-01: OSM export chat (dle oblasti)** | `javorniky-vsetinske-vrchy` | stáhne kandidáty Javorníků a Vsetínských vrchů (CZ, SK) — oblast vznikla 8. 8. 2026 tvým rozhodnutím, že nepatří pod Beskydy; 36 kandidátů už tam je z beskydského exportu |
-| **DATA-01: OSM export chat (dle oblasti)** | `mala-fatra` | Malá Fatra (SK) — 59 kandidátů z beskydského exportu už v repu je, ale všichni z okolí Terchové; běh přinese Lúčanskou část, Martinské hole a hřeben pod Veľkým Kriváňom |
 | **DATA-01: OSM export chat (dle oblasti)** | `oravska-magura` | Oravská Magura (SK) — 6 kandidátů v repu; běh přinese podcelky Paráč a Budín |
 | **DATA-01: OSM export chat (dle oblasti)** | `zapadne-tatry` | Západné Tatry / Roháče (SK, PL) — 13 kandidátů v repu, všichni z podhůří u Zuberce; běh přinese hřebenové chaty a polská schroniska |
+| **DATA-01: OSM export chat (dle oblasti)** | `krusne-hory` | Krušné hory / Erzgebirge (CZ, DE) — **nová oblast z 8. 8. 2026**, zatím bez kandidátů. Třetí největší okno korpusu (7 358 km²), takže běh potrvá déle a přinese i městský šum; katalog v okně drží 10 objektů |
+| **DATA-01: OSM export chat (dle oblasti)** | `orlicke-hory` | Orlické hory vč. polské strany a Gór Bystrzyckich (CZ, PL) — **nová oblast z 8. 8. 2026**, zatím bez kandidátů; katalog drží 8 objektů |
 
-Kdybys chtěl klikat jen část, **začni Vysokými Tatrami**: je to nejbohatší
-chatařská síť, jakou průvodce dosud bral, a zbytek slovenských oblastí na ní
-nijak nezávisí. Kandidáti se ze sousedních oken navzájem nezaloží dvakrát —
-od 8. 8. 2026 to drží DATA-36 (objekt vedený jinou oblastí se v překryvu oken
-přeskočí a napíše se to do reportu).
+Kdybys chtěl klikat jen část, **začni Krušnými horami**: je to jediná oblast
+korpusu se saskou stranou vedle Šumavy a katalog ji podle všeho pokrývá
+špatně, takže od exportu čekáme nejvíc nového. Kandidáti se ze sousedních oken
+navzájem nezaloží dvakrát — drží to DATA-36. Pozor ale na jednu věc, kterou
+tvoje dnešní běhy odhalily: **každý export přinese nová jména, a tím i nové
+jmenné kolize, které shodí `npm run kontrola`** (kontrola kolizí rozhoduje
+a čistý stav je přesně nula). Není to porucha běhu, je to práce pro další
+session — a v deníku je otázka, jestli to tak má zůstat.
 
 Políčko `api` nech prázdné — skript sám zkouší `overpass-api.de` a při
 selhání zrcadlo `kumi.systems` (fallback přibyl 20. 7. 2026 kvůli rate
 limitu na IP runnerů).
-
-### A prosím ještě jednou `beskydy` — tvůj běh z 8. 8. byl NEÚPLNÝ
-
-| workflow | políčko `oblast` |
-|---|---|
-| **DATA-01: OSM export chat (dle oblasti)** | `beskydy` |
-
-Není to tvoje chyba, ale moje. Dohledávka podle jmen z katalogu — druhá
-záchranná síť, která hledá objekty, co hlavní dotaz podle tagů minul — vrátila
-pro Česko `runtime error: Query timed out … after 183 seconds` a nula objektů.
-Overpass takovou chybu hlásí jako **HTTP 200**, takže ji pipeline přijala jako
-výsledek („0 objektů dohledáno podle jména"), běh dopadl zeleně a v reportu
-nebylo nic vidět. **Důsledek: v beskydských kandidátech chybí Libušín a Chata
-na Radhošti** — dva nejznámější objekty celého pohoří a přesně ten typ, kvůli
-kterému ta síť vznikla (jsou v OSM tagované civilně, hlavní dotaz je nevidí).
-
-Opraveno 8. 8. 2026 dvakrát: běhová chyba v `remark` je teď tvrdá chyba, takže
-se zapojí zrcadlo, a nová kontrola `npx tsx scripts/kontrola/exporty.ts` hlídá,
-aby vadný export nezůstal v repu ležet jako doklad. Vadný soubor je smazaný,
-takže tvůj nový běh napíše platný. Opakované spuštění je idempotentní — nic se
-nerozbije, jen se doplní, co chybí.
 
 Běh commitne do repa surový JSON export jako doklad i hotové YAML kandidátů
 do `data/kandidati/<oblast>/`. **Kandidáti NEJSOU na webu** — seed čte jen

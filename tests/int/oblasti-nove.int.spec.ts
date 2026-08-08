@@ -30,7 +30,7 @@ import { describe, expect, it } from 'vitest'
 import { parse } from 'yaml'
 
 import { ZEME_SLUG } from '@/lib/chaty'
-import { bboxStr, oblastDleSlugu, zemeDotazu } from '../../scripts/oblasti'
+import { bboxStr, OBLASTI, oblastDleSlugu, zemeDotazu } from '../../scripts/oblasti'
 
 type OblastYaml = {
   nazev?: string
@@ -153,6 +153,44 @@ const KOTVY: Record<string, { nazev: string; lat: number; lng: number }[]> = {
     { nazev: 'Kežmarské Žľaby (východní kotva)', lat: 49.195, lng: 20.299 },
     { nazev: 'Štrbské Pleso (jižní kotva)', lat: 49.117, lng: 20.067 },
   ],
+  // Krušné hory: kotvy jsou obce a vrcholy na obou stranách hranice. Západní
+  // hrana je nejistá (doložený začátek pohoří nemá souřadnice), takže
+  // nejzápadnější kotvou je Klingenthal a okno jde ještě o kus dál.
+  'krusne-hory': [
+    { nazev: 'Klínovec (nejvyšší hora pohoří)', lat: 50.39611, lng: 12.96778 },
+    { nazev: 'Fichtelberg (nejvyšší hora Saska)', lat: 50.42861, lng: 12.95472 },
+    { nazev: 'Boží Dar', lat: 50.4097, lng: 12.9244 },
+    { nazev: 'Jáchymov (jižní kotva)', lat: 50.3583, lng: 12.9344 },
+    { nazev: 'Klingenthal (západní kotva, DE)', lat: 50.3594, lng: 12.4644 },
+    { nazev: 'Bublava', lat: 50.3742, lng: 12.505 },
+    { nazev: 'Auersberg (DE)', lat: 50.4561, lng: 12.6467 },
+    { nazev: 'Vejprty', lat: 50.4922, lng: 13.0319 },
+    { nazev: 'Litvínov', lat: 50.6042, lng: 13.6181 },
+    { nazev: 'Altenberg (severní kotva, DE)', lat: 50.7656, lng: 13.7533 },
+    { nazev: 'Kahleberg (DE)', lat: 50.7514, lng: 13.7333 },
+    { nazev: 'Komáří vížka', lat: 50.7067, lng: 13.8564 },
+    { nazev: 'Telnice (východní kotva)', lat: 50.7278, lng: 13.9631 },
+  ],
+  // Orlické hory: kotvy zahrnují i Góry Bystrzyckie, protože o jejich
+  // zařazení do oblasti se 8. 8. 2026 rozhodlo — kdyby se to otočilo,
+  // spadnou právě tyhle dvě kotvy jako první.
+  'orlicke-hory': [
+    { nazev: 'Velká Deštná (nejvyšší hora)', lat: 50.30425, lng: 16.40001 },
+    { nazev: 'Masarykova chata na Šerlichu', lat: 50.32564, lng: 16.38636 },
+    { nazev: 'Deštné v Orlických horách (západní kotva)', lat: 50.304582, lng: 16.35006 },
+    { nazev: 'Olešnice v Orlických horách (severní konec osy CHKO)', lat: 50.37261, lng: 16.31004 },
+    { nazev: 'Duszniki-Zdrój (severní kotva, PL)', lat: 50.403266, lng: 16.390915 },
+    { nazev: 'Orlica / Vrchmezí (nejvyšší vrchol polské části)', lat: 50.353401, lng: 16.361303 },
+    { nazev: 'Zieleniec (PL)', lat: 50.335929, lng: 16.387911 },
+    { nazev: 'Orlické Záhoří', lat: 50.278425, lng: 16.4746 },
+    { nazev: 'Říčky v Orlických horách', lat: 50.2105814, lng: 16.4588928 },
+    { nazev: 'Bartošovice v Orlických horách', lat: 50.19422, lng: 16.53775 },
+    { nazev: 'Klášterec nad Orlicí', lat: 50.111604, lng: 16.554488 },
+    { nazev: 'Suchý vrch (východní kotva)', lat: 50.050878, lng: 16.693247 },
+    { nazev: 'Jamné nad Orlicí (jižní kotva)', lat: 50.039588, lng: 16.6329 },
+    { nazev: 'Jagodna (Góry Bystrzyckie, PL)', lat: 50.252464, lng: 16.564683 },
+    { nazev: 'Schronisko Jagodna (Góry Bystrzyckie, PL)', lat: 50.276944, lng: 16.537342 },
+  ],
   // Nízké Tatry: hřeben je z celého korpusu nejdelší (~80 km), takže kotvy
   // musejí držet oba konce — Prašivá na západě a Vernár s Telgártem za
   // Kráľovou hoľou na východě — i oba svahy, liptovský a hronský.
@@ -178,6 +216,8 @@ describe.each([
   ['zapadne-tatry', 'Západné Tatry'],
   ['vysoke-tatry', 'Vysoké Tatry'],
   ['nizke-tatry', 'Nízké Tatry'],
+  ['krusne-hory', 'Krušné hory'],
+  ['orlicke-hory', 'Orlické hory'],
 ])('oblast %s', (slug, nazev) => {
   const konfig = oblastDleSlugu(slug)
   const yaml = nactiYaml(slug)
@@ -339,10 +379,31 @@ describe('tři oblasti založené s daty (pokyn Michala „kandidáty budoucích
     'zapadne-tatry': 13,
   }
 
-  it.each(Object.keys(POCTY))('%s má přesunuté kandidáty a všichni míří do své oblasti', (slug) => {
+  /**
+   * Přesunutý kandidát se pozná podle toho, že jeho poznámka vysvětluje, proč
+   * není v `_vyrazeno.yaml` — tuhle větu do něj napsal přesun a vlastní běh
+   * DATA-01 ji nepíše. Rozlišení je nutné od 8. 8. 2026 večer, kdy Michalův
+   * export Malé Fatry přinesl 43 NOVÝCH kandidátů vedle 59 přesunutých:
+   * do té doby stačilo počítat soubory v adresáři.
+   */
+  const jePresunuty = (dir: string, f: string): boolean => {
+    const d = parse(readFileSync(join(dir, f), 'utf8')) as { interniPoznamky?: string }
+    return /_vyrazeno\.yaml/.test(String(d.interniPoznamky))
+  }
+  const souboryOblasti = (slug: string) => {
     const dir = join(process.cwd(), 'data', 'kandidati', slug)
-    const soubory = readdirSync(dir).filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
-    expect(soubory.length).toBe(POCTY[slug])
+    return {
+      dir,
+      soubory: readdirSync(dir).filter((f) => f.endsWith('.yaml') && !f.startsWith('_')),
+    }
+  }
+
+  it.each(Object.keys(POCTY))('%s má přesunuté kandidáty a všichni míří do své oblasti', (slug) => {
+    const { dir, soubory } = souboryOblasti(slug)
+    // Počet PŘESUNUTÝCH je pevný (přesun proběhl jednou a je hotový);
+    // celkový počet roste s každým během DATA-01 a hlídat ho nemá smysl.
+    expect(soubory.filter((f) => jePresunuty(dir, f)).length).toBe(POCTY[slug])
+    expect(soubory.length).toBeGreaterThanOrEqual(POCTY[slug])
     for (const f of soubory) {
       const d = parse(readFileSync(join(dir, f), 'utf8')) as { oblast?: string }
       expect(d.oblast, `${slug}/${f} nese cizí oblast`).toBe(slug)
@@ -377,12 +438,14 @@ describe('tři oblasti založené s daty (pokyn Michala „kandidáty budoucích
     // Je to jediný netriviální krok celého přesunu: záznam „beskydy/<slug>"
     // by objekt od ranní opravy porovnávání umlčel i v nové oblasti. Kdyby
     // to poznámka neříkala, příští session to udělá špatně.
+    // Platí to o PŘESUNUTÝCH kandidátech; ti z vlastního běhu oblasti se
+    // nikde nepřesouvali, takže vysvětlovat nemají co. Test proto počítá,
+    // kolik jich větu má, a porovná to s očekávaným počtem přesunů — kdyby
+    // ta věta z některého vypadla, číslo klesne a test spadne.
     for (const slug of Object.keys(POCTY)) {
-      const dir = join(process.cwd(), 'data', 'kandidati', slug)
-      for (const f of readdirSync(dir).filter((x) => x.endsWith('.yaml') && !x.startsWith('_'))) {
-        const d = parse(readFileSync(join(dir, f), 'utf8')) as { interniPoznamky?: string }
-        expect(String(d.interniPoznamky), `${slug}/${f}`).toMatch(/_vyrazeno\.yaml/)
-      }
+      const { dir, soubory } = souboryOblasti(slug)
+      const vysvetleno = soubory.filter((f) => jePresunuty(dir, f))
+      expect(vysvetleno.length, `${slug}: přesunutých s vysvětlením`).toBe(POCTY[slug])
     }
   })
 
@@ -503,5 +566,99 @@ describe('Tatry — jedenáctá a dvanáctá oblast (pokyn Michala „vezmi rovn
     // Nízké Tatry jsou naopak jednozemní a je to správně: hřeben celý leží
     // na Slovensku, takže by tu žádná druhá země být neměla.
     expect(zemeDotazu(oblastDleSlugu('nizke-tatry')).map((z) => z.iso)).toEqual(['SK'])
+  })
+})
+
+describe('Krušné hory a Orlické hory — třináctá a čtrnáctá oblast', () => {
+  /**
+   * Obě oblasti přinášejí něco, co v korpusu nebylo, a obojí se dá tiše
+   * ztratit: Krušné hory jsou první oblast, která není hřeben, ale náhorní
+   * deska přes česko-saskou hranici, a Orlické hory nesou ROZHODNUTÍ
+   * o Górach Bystrzyckich, které bylo od rána otevřené.
+   */
+  it('Orlické hory berou Góry Bystrzyckie a poznámka říká, PROTI čemu se rozhodovalo', () => {
+    // Kdyby poznámka jen tvrdila „patří sem", příští session by nevěděla, že
+    // geomorfologie mluví opačně, a rozhodnutí by se dalo zvrátit omylem.
+    const konfig = oblastDleSlugu('orlicke-hory')
+    expect(konfig.katalogPohori).toContain('Góry Bystrzyckie')
+    const p = String(nactiYaml('orlicke-hory').interniPoznamky)
+    expect(p).toMatch(/GEOMORFOLOGIE PRO SPOJENÍ NEMLUVÍ/)
+    // Doklad, o který se rozhodnutí opírá, musí být v poznámce jmenovitě.
+    expect(p).toMatch(/Obszar Chronionego Krajobrazu Góry Bystrzyckie i Orlickie/)
+    // A precedens, podle kterého se rozhodovalo (Michalovy Javorníky).
+    expect(p).toMatch(/Javorníky/)
+  })
+
+  it('jesenická poznámka už netvrdí, že Góry Bystrzyckie leží mimo okno', () => {
+    // Otevřená otázka se zavřela jinde; kdyby v Jeseníkách zůstala stará
+    // věta, dvě místa v datech by si odporovala a obojí by vypadalo doloženě.
+    const j = oblastDleSlugu('jeseniky')
+    expect(j.katalogPohori).not.toContain('Góry Bystrzyckie')
+    expect(j.poznamka).toMatch(/orlicke-hory/)
+  })
+
+  it('Góry Bystrzyckie leží v okně Orlických hor a NE v okně Jeseníků', () => {
+    // Tvrdý doklad rozhodnutí: schronisko Jagodna se musí trefit do jednoho
+    // okna a minout druhé, jinak by objekt přišel dvakrát nebo vůbec.
+    const jagodna = { lat: 50.276944, lng: 16.537342 }
+    const o = oblastDleSlugu('orlicke-hory').bbox
+    const j = oblastDleSlugu('jeseniky').bbox
+    const uvnitr = (b: typeof o) =>
+      jagodna.lat >= b.latMin &&
+      jagodna.lat <= b.latMax &&
+      jagodna.lng >= b.lngMin &&
+      jagodna.lng <= b.lngMax
+    expect(uvnitr(o)).toBe(true)
+    expect(uvnitr(j)).toBe(false)
+  })
+
+  it('Krušné hory jsou zapojené i pro Německo a mají obě katalogová jména', () => {
+    const konfig = oblastDleSlugu('krusne-hory')
+    expect(zemeDotazu(konfig).map((z) => z.iso)).toEqual(['CZ', 'DE'])
+    // Dvě jména téhož pohoří: bez německého by vypadlo pět katalogových
+    // objektů saské strany.
+    expect(konfig.katalogPohori).toEqual(['Krušné hory', 'Erzgebirge'])
+    for (const p of konfig.katalogPohori ?? []) expect(POHORI_V_KATALOGU.has(p)).toBe(true)
+  })
+
+  it('Krušné hory mají třetí největší okno korpusu — a tvrzení sedí na výpočet', () => {
+    // Tenhle test vznikl tím, že mě chytil při lži. Do YAMLu jsem napsal
+    // „nejrozlehlejší okno korpusu"; spočítané plochy říkají, že větší mají
+    // Šumava i Beskydy. Superlativ o VLASTNÍCH datech se dá ověřit výpočtem,
+    // tak ať se ověřuje — je to totéž pravidlo jako připsání u superlativů
+    // v próze, jen s kalkulačkou místo pramene.
+    const plochaKm2 = (slug: string) => {
+      const b = oblastDleSlugu(slug).bbox
+      const dLat = (b.latMax - b.latMin) * 111.32
+      const dLng =
+        (b.lngMax - b.lngMin) * 111.32 * Math.cos((((b.latMin + b.latMax) / 2) * Math.PI) / 180)
+      return dLat * dLng
+    }
+    const poradi = OBLASTI.map((o) => ({ slug: o.slug, p: plochaKm2(o.slug) })).sort(
+      (a, b) => b.p - a.p,
+    )
+    expect(poradi.slice(0, 3).map((o) => o.slug)).toEqual(['sumava', 'beskydy', 'krusne-hory'])
+    expect(String(nactiYaml('krusne-hory').interniPoznamky)).toMatch(
+      /TŘETÍ NEJROZLEHLEJŠÍ OKNO KORPUSU/,
+    )
+  })
+
+  it('Krušné hory: rozpor o Erzgebirgsvereinu je zapsaný, ne zamlčený', () => {
+    // Dva různé roky a dvě různá města pro spolek téhož jména. Kdyby se
+    // v poznámce vybral jeden, první profil by nesl nedoložené tvrzení
+    // o stavebníkovi — přesně to, co se dnes stalo u Prašivé a Bezručovy chaty.
+    const p = String(nactiYaml('krusne-hory').interniPoznamky)
+    expect(p).toMatch(/1878/)
+    expect(p).toMatch(/1880/)
+    expect(p).toMatch(/DVA různé spolky|dva různé spolky/i)
+  })
+
+  it('nejvyšší hora Krušných hor je Klínovec, ne Fichtelberg — a rozdíl je vysvětlený', () => {
+    // Fichtelberg je nejvyšší hora SASKA a leží tři kilometry od Klínovce.
+    // Je to nejsnadnější záměna celé oblasti.
+    const h = nactiYaml('krusne-hory').nejvyssiHora
+    expect(h?.nazev).toBe('Klínovec')
+    expect(String(h?.source)).toMatch(/Fichtelberg/)
+    expect(String(h?.source)).toMatch(/highest mountain in Saxony/)
   })
 })

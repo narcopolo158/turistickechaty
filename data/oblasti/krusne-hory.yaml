@@ -1,0 +1,177 @@
+# Oblast Krušné hory — třináctá oblast průvodce (pokyn Michala 8. 8. 2026:
+# „klidne dopln krusne hory, orlicke a vse dalsi co najdes").
+#
+# ROZSAH. Okno dotazu (scripts/oblasti.ts) kryje pohoří vcelku přes
+# česko-saskou hranici: český celek Krušné hory (podcelky Klínovecká
+# a Loučenská hornatina) a saské Erzgebirge se všemi třemi částmi
+# (West-, Mittel-, Osterzgebirge). Princip „přeshraniční pohoří vcelku"
+# (rozhodnutí Michala 20. 7. 2026) tu platí obzvlášť silně — katalog vede
+# pět objektů pod „Krušné hory" a pět pod „Erzgebirge".
+# VĚDOMĚ MIMO OKNO: Smrčiny s Ašskou vrchovinou (jiný celek téže oblasti),
+# Sokolovská a Mostecká pánev a Doupovské hory (Podkrušnohorská oblast, jiná
+# geomorfologická oblast) a Děčínská vrchovina za Nakléřovským průsmykem —
+# tedy i Děčínský Sněžník. Na saské straně okno nejde až k Freibergu
+# a Tharandtu, ač tam pohoří podle členění sahá: průvodce bere hřeben a jeho
+# úpatí, ne celou jednotku i s podhůřím.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Krušné hory
+slug: krusne-hory
+typ: pohori
+zeme: cz
+
+# Skloňované tvary názvu do vět na webu. Pomnožné ženské jako Beskydy.
+sklonovani:
+  druhy: Krušných hor
+  sesty: Krušných horách
+
+charakteristika: >-
+  Sto padesát kilometrů dlouhá kerná deska mezi Chebskem a Labem, nakloněná
+  k severu do Saska a na jihu useknutá prudkým svahem nad Podkrušnohořím.
+  Právě ta asymetrie dělá zdejší turistiku jinou než v Krkonoších nebo
+  Beskydech: od Mostu nebo Litvínova se stoupá pět set metrů naráz, kdežto
+  nahoře začíná náhorní plošina s rašeliništi, po které se dá jít i jet na
+  běžkách celé dny. Osm set let hornictví tu nechalo tolik stop, že je
+  Hornický region Erzgebirge/Krušnohoří od roku 2019 na seznamu UNESCO.
+overeniCharakteristika:
+  source: >-
+    Délka a šířka: německá Wikipedie, Erzgebirge (čteno 8. 8. 2026) —
+    „etwa 150 km lang und durchschnittlich 40 km breit"; ROZPOR
+    s prirodnikrasycr.estranky.cz, které o českém pásmu píší „Tvoří souvislé
+    horské pásmo o délce 130 km" — obě čísla se patrně týkají různého
+    předmětu měření, ale žádný pramen to neříká, takže se v textu uvádí
+    „sto padesát" s vědomím rozporu. Kerný charakter a asymetrie:
+    prirodnikrasycr.estranky.cz (čteno 8. 8. 2026) — pohoří je „kerné"
+    a tvoří „nakloněné desky, jejíž jižní okraj byl vyzdvihnut podél
+    zemského zlomu. Proto směrem k severu klesají pozvolně, zatímco na jihu
+    jsou omezené 500-700 m vysokým příkrým svahem." Rašeliniště: týž pramen
+    jmenuje Božídarské a Novodomské rašeliniště. UNESCO: whc.unesco.org,
+    položka 1478 (čteno 8. 8. 2026) — „Erzgebirge/Krušnohoří Mining Region",
+    zápis 2019, 22 součástí, kritéria (ii)(iii)(iv), „800 years of almost
+    continuous mining"; montanregion.cz — „Sedmnáct z těchto součástí je na
+    saské straně a pět na české straně"; bozidar.cz uvádí datum zápisu
+    6. července 2019 na 43. zasedání Výboru světového dědictví v Baku.
+    SROVNÁNÍ S KRKONOŠEMI A BESKYDAMI je NAŠE, plyne z vlastního korpusu.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Klínovec
+  vyska: 1243
+  source: >-
+    Anglická Wikipedie (čteno 8. 8. 2026) vede Klínovec jako „the highest
+    peak of the Ore Mountains" a uvádí „1,244 metres (4,081 ft)"; německá
+    Wikipedie u téhož vrcholu i v článku o pohoří uvádí „1243,7 m ü.d.M.".
+    Zapsáno 1243 dle konvence z 27. 7. 2026 (při rozporu nižší číslo, rozpor
+    přiznat). Souřadnice 50.39611 / 12.96778 (anglická Wikipedie).
+    POZOR NA ROZLIŠENÍ DVOU VRCHOLŮ, které leží tři kilometry od sebe přes
+    hranici: FICHTELBERG (50.42861 / 12.95472) je NEJVYŠŠÍ HORA SASKA —
+    anglická Wikipedie doslova „At 1,214.6 m (3,985 ft) above sea level, the
+    Fichtelberg is the highest mountain in Saxony" —, ale ne nejvyšší hora
+    pohoří. Jeho výšku uvádějí prameny trojmo: 1214,88 m (německá Wikipedie
+    o Fichtelbergu), 1214,79 m (německá Wikipedie o pohoří) a 1214,6 m
+    (anglická Wikipedie). Do dat oblasti se zapisuje jen Klínovec; Fichtelberg
+    dostane vlastní údaje, až se bude povyšovat Fichtelberghaus.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala („klidne dopln krusne hory, orlicke
+  a vse dalsi co najdes"). Konfigurace okna je v scripts/oblasti.ts (slug
+  krusne-hory, zeme CZ+DE, katalogové názvy Krušné hory a Erzgebirge), kotvy
+  okna a jejich prameny v komentáři tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `krusne-hory`. Ze sandboxu na Overpass
+  nedosáhneme (HTTP 000 přes proxy). Seznam všech čekajících kliků drží
+  docs/KLIKY-PRO-MICHALA.md.
+
+  TŘETÍ NEJROZLEHLEJŠÍ OKNO KORPUSU — a to číslo je opravené, ne původní.
+  Okno měří 50.30–50.85 / 12.35–14.05, tedy zhruba 120 × 61 km a 7 358 km².
+  Do YAMLu jsem nejdřív napsal, že je to okno NEJROZLEHLEJŠÍ; test to hned
+  vyvrátil, protože Šumava má 13 916 km² a Beskydy 7 513 km². Je to učebnicová
+  ukázka superlativu napsaného od oka — a chytilo ho tentokrát ne audit prózy,
+  ale test nad vlastními daty. Zapisuje se to sem schválně: příště se má
+  spočítat dřív, než se napíše.
+  ROZLEHLOST JE PŘESTO VLASTNOST POHOŘÍ, ne nedbalost: Krušné hory nemají
+  jeden hřeben, je to náhorní plošina, po které jsou objekty rozeseté. Při
+  triáži to bude znamenat víc městského šumu než jinde (Litvínov, Krupka,
+  Klingenthal a Oberwiesenthal jsou uvnitř), a s tím se počítá.
+
+  ZÁPADNÍ HRANA JE NEJISTÁ A OKNO JE RADĚJI ŠIRŠÍ. Doložený začátek pohoří
+  je textový: wfe-erzgebirge.de (čteno 8. 8. 2026) — „Im Westen beginnt es
+  am Ostrand von Markneukirchen, Schöneck und Auerbach". Souřadnice těch tří
+  míst rešerše nedodala, takže nejzápadnější doložená kotva je Klingenthal
+  (12.464) a okno jde na 12.35. Malé okno je nejtišší chyba ze všech: Overpass
+  prostě vrátí míň a nikdo neví, že něco chybí.
+  A JEŠTĚ JEDNA NEJISTOTA TAMTÉŽ: u Klingenthalu se prameny neshodnou, jestli
+  patří do Erzgebirge, nebo do Vogtlandu — německá Wikipedie ho vede v soupisu
+  obcí Westerzgebirge, ale s poznámkou, že vogtlandská místa jsou označena
+  hvězdičkou, a jestli ji Klingenthal má, se ověřit nepodařilo.
+
+  CO UŽ VÍME BEZ OVERPASSU — externí katalog drží v okně 10 objektů, pět pod
+  jménem „Krušné hory" a pět pod „Erzgebirge". Je to zatím nejmenší poměr
+  katalogových objektů na plochu ze všech oblastí, a nemusí to znamenat, že
+  jich tu je málo: spíš to znamená, že katalog Krušné hory nepokrývá dobře.
+  Doložené objekty z rešerše, které v katalogu být mohou i nemusí:
+  vrcholový hotel s rozhlednou na KLÍNOVCI, FICHTELBERGHAUS s vyhlídkovou
+  věží na saské straně, Horský hotel KOMÁŘÍ VÍŽKA a dál rozhledny bez
+  doloženého občerstvení (Blatenský vrch 1913, Plešivec 1895, Pajndl na
+  Tisovském vrchu 1897, Cibulka 1896, Drsný vrch 1903, Olověný vrch 1933,
+  Vlčí hora u Oseku 2005).
+
+  CHATAŘSKÁ HISTORIE — a hned s ROZPOREM, který se musí vyřešit dřív, než se
+  bude psát první profil. Německá Wikipedie vede ERZGEBIRGSVEREIN založený
+  „am 5. Mai 1878" v Aue-Zelle, který za prvních padesát let postavil „etwa
+  25 Aussichtstürme und Berggasthäuser" a měl vlastní ubytovny na Fichtelbergu
+  a na Schwartenbergu. TÁŽ Wikipedie ale v článku o Klínovci uvádí
+  Erzgebirgsverein „Gegründet am 30. Mai 1880 in St. Joachimsthal". Jiný rok,
+  jiné místo. Nejpravděpodobněji jde o DVA různé spolky — saský a
+  český/rakouský jáchymovský —, ale žádný pramen to výslovně nerozlišuje,
+  takže se to nedomýšlí a před prvním profilem se to musí dohledat. Je to
+  přesně ta situace, kterou u Beskyd vyřešil doložený rozdíl mezi
+  Beskidenvereinem a Pohorskou jednotou Radhošť; tady rozlišení zatím chybí.
+  ČESKÉ SPOLKY (KČT) V KRUŠNÝCH HORÁCH se rešerší 8. 8. 2026 nenašly vůbec —
+  nezapisuje se tvrzení, že tu žádné nebyly, jen že je neznáme.
+
+  KLÍNOVEC MÁ DOLOŽENOU ŘADU STAVEB, u které se prameny místy rozcházejí:
+  vyhlídková pyramida 1817, „Gloriette" 1838, která roku 1868 vyhořela,
+  kamenná osmiboká Kaiser Franz-Josef-Aussichtsturm vysvěcená 3. srpna 1884
+  (německá Wikipedie uvádí výšku 17 m, anglická stavbu „between the years
+  1883 and 1884" a výšku 24 m — ROZPOR), hotel (anglická Wikipedie 1893,
+  německá „ab 1900 durch successive Ausbauten" — ROZPOR) a věrná obnova věže
+  zpřístupněná 28. října 2013. Německá Wikipedie k dnešnímu stavu uvádí, že
+  „Seit Februar 2016 steht das Gipfelhotel zum Verkauf" — údaj je nedatovaný
+  vůči dnešku a před publikací se musí ověřit.
+
+  KOMÁŘÍ VÍŽKA — TŘI SUPERLATIVY, VŠECHNY S CITÁTEM. Kudy z nudy (čteno
+  8. 8. 2026) o lanovce z Bohosudova (v provozu od 1952, délka 2 348 m,
+  převýšení 482 m): „druhá nejstarší provozovaná visutá lanová dráha
+  v Česku", „nejdelší sedačková lanovka bez mezistanice v České republice"
+  a patří „mezi nejdelší jednoúsekové lanové dráhy ve střední Evropě".
+  Rozhledna tamtéž „pochází z roku 1857" — jediný pramen, před profilem
+  dohledat druhý.
+
+  KRUŠNOHORSKÁ MAGISTRÁLA JE PAST NA JMÉNO. Týž název nesou dvě různé věci
+  a prameny se liší i v délce: krusnehory.cz vede „250 km" a výslovně píše,
+  že jde o cyklotrasu, „nikoliv běžkařskou trasu"; Kudy z nudy „242 km" po
+  silnicích, „vhodná zejména pro cykloturistiku", v zimě „vyhrazená pro
+  běžecké lyžování". Do textu oblasti se proto délka nepíše vůbec a slovo
+  „magistrála" se používá jen s rozlišením, o kterou jde. Doložená je zato
+  saská hřebenovka: Kammweg Erzgebirge-Vogtland, „285 kilometres from
+  Altenberg to Blankenstein in Thuringia" (erzgebirge-tourismus.de).
+
+  OCHRANA PŘÍRODY JE NA KAŽDÉ STRANĚ JINÁ. Saská: Naturpark
+  Erzgebirge/Vogtland, nařízení z 9. května 1996, „etwa 149 500 ha"
+  (revosax.sachsen.de). Česká: CHKO Krušné hory K DNEŠKU NENÍ VYHLÁŠENA —
+  AOPK ji vede mezi „územími připravovanými k vyhlášení"; návrh obsahuje
+  „2 ptačí oblasti, 15 evropsky významných lokalit a 44 maloplošných zvláště
+  chráněných území". Nejnovější datovaná položka na stránce je 15. 8. 2024,
+  takže STAV JE NUTNÉ PŘED PUBLIKACÍ OVĚŘIT ZNOVU — mezi tím datem a dneškem
+  jsou dva roky. Do charakteristiky se proto o chráněné krajinné oblasti nic
+  nepíše.
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.

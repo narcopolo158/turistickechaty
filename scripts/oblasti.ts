@@ -117,7 +117,8 @@ export const OBLASTI: OblastKonfig[] = [
     // 3D okno o kus užší: severozápadní i jihovýchodní konec hřbetu už
     // klesá do podhůří a model by z něj měl hlavně roviny.
     bbox3d: { latMin: 50.64, lngMin: 14.85, latMax: 50.82, lngMax: 15.08 },
-    poznamka: 'třetí oblast (rozhodnutí Michala 30. 7. 2026) — Ještěd nepatří do Jizerek, je to jiná geomorfologická jednotka',
+    poznamka:
+      'třetí oblast (rozhodnutí Michala 30. 7. 2026) — Ještěd nepatří do Jizerek, je to jiná geomorfologická jednotka',
     katalogPohori: ['Ještědský hřbet'],
   },
   {
@@ -488,7 +489,7 @@ export const OBLASTI: OblastKonfig[] = [
     // klesá do slezské nížiny.
     bbox3d: { latMin: 49.96, lngMin: 16.8, latMax: 50.34, lngMax: 17.5 },
     poznamka:
-      'šestá oblast (pověření Michala 8. 8. 2026) — jesenická oblast vcelku vč. polské strany; Góry Bystrzyckie vědomě mimo okno',
+      'šestá oblast (pověření Michala 8. 8. 2026) — jesenická oblast vcelku vč. polské strany; Góry Bystrzyckie od 8. 8. 2026 večer patří oblasti orlicke-hory',
     katalogPohori: [
       'Hrubý Jeseník',
       'Zlatohorská vrchovina',
@@ -499,11 +500,111 @@ export const OBLASTI: OblastKonfig[] = [
       'Góry Opawskie',
     ],
   },
+  {
+    slug: 'krusne-hory',
+    nazev: 'Krušné hory',
+    /**
+     * Třináctá oblast — POKYN MICHALA 8. 8. 2026: „klidne dopln krusne hory,
+     * orlicke a vse dalsi co najdes". Přeshraniční pohoří vcelku podle
+     * rozhodnutí z 20. 7. 2026: katalog drží pět objektů pod jménem „Krušné
+     * hory" a dalších pět pod „Erzgebirge", což je totéž pohoří ze dvou
+     * stran hranice.
+     *
+     * NOVÝ TYP OBLASTI PRO PRŮVODCE. Dosud byla každá oblast jeden hřeben
+     * nebo jedna hornatina; Krušné hory jsou sto padesát kilometrů dlouhá
+     * KERNÁ DESKA nakloněná do Saska, takže okno je nutně široké — 7 358 km²,
+     * třetí největší po Šumavě a Beskydech. Do profilů se to promítne i jinak:
+     * zdejší objekty nestojí na hřebeni nad údolím, ale rozeseté po náhorní
+     * plošině.
+     */
+    zeme: ['CZ', 'DE'],
+    /**
+     * Kotvy okna jsou doložené souřadnice (prameny
+     * v data/oblasti/krusne-hory.yaml):
+     *   západ  12.35 — Klingenthal (50.359 / 12.464) a Bublava (50.374 /
+     *                  12.505); okraj je posunutý o kus dál na západ, protože
+     *                  doložený začátek pohoří (Markneukirchen, Schöneck,
+     *                  Auerbach) souřadnice v pramenech nemá — u nejistoty
+     *                  se okno raději rozšíří, malé okno je tišší chyba
+     *   východ 14.05 — Telnice (50.728 / 13.963) a Nakléřovský průsmyk,
+     *                  kterým podle pramene končí české Krušné hory
+     *                  a začíná Děčínská vrchovina
+     *   sever  50.85 — Altenberg (50.766 / 13.753) a Kahleberg (50.751 /
+     *                  13.733)
+     *   jih    50.30 — Jáchymov (50.358 / 12.934) a jáchymovské podhůří
+     * Uvnitř dál Klínovec (50.396 / 12.968), Fichtelberg (50.429 / 12.955),
+     * Boží Dar (50.410 / 12.924), Auersberg (50.456 / 12.647), Vejprty
+     * (50.492 / 13.032), Komáří vížka (50.707 / 13.856), Krupka, Litvínov
+     * a Meziboří.
+     *
+     * SEVERNÍ HRANA JE VĚDOMĚ UŽŠÍ, NEŽ JE POHOŘÍ. Saská strana sahá podle
+     * členění až k Freibergu a Tharandtu (okolo 50.98), tedy hluboko do
+     * podhůří. Okno tam nejde schválně: průvodce bere hřeben a jeho úpatí,
+     * ne celou geomorfologickou jednotku — je to totéž pravidlo, kterým je
+     * na české straně mimo okno Mostecká pánev a Sokolovská pánev.
+     */
+    bbox: { latMin: 50.3, lngMin: 12.35, latMax: 50.85, lngMax: 14.05 },
+    // 3D okno kryje hlavní hřeben s Klínovcem a Fichtelbergem; východní
+    // část oblasti je pro model nezajímavá (nízká a rozlehlá).
+    bbox3d: { latMin: 50.33, lngMin: 12.6, latMax: 50.55, lngMax: 13.3 },
+    poznamka:
+      'třináctá oblast (pokyn Michala 8. 8. 2026) — kerná deska přes česko-saskou hranici, třetí největší okno korpusu',
+    katalogPohori: ['Krušné hory', 'Erzgebirge'],
+  },
+  {
+    slug: 'orlicke-hory',
+    nazev: 'Orlické hory',
+    /**
+     * Čtrnáctá oblast — týž pokyn Michala. Zakládá se s ROZHODNUTÍM, které
+     * bylo od 8. 8. 2026 ráno otevřené: Góry Bystrzyckie patří sem, ne do
+     * Jeseníků a ne mimo průvodce.
+     *
+     * PROČ: geomorfologicky jsou Góry Bystrzyckie samostatný mezoregion
+     * (332.53) vedle Gór Orlickich (332.52) a dělí je údolí Divoké Orlice
+     * a Bystrzycy Dusznické — geomorfologie tedy pro spojení NEMLUVÍ. Mluví
+     * pro něj ochranářský a turistický celek: oba hřbety kryje jeden
+     * „Obszar Chronionego Krajobrazu Góry Bystrzyckie i Orlickie" (1981),
+     * který je v prameni popsaný jako „dwa równolegle do siebie biegnące
+     * pasma górskie Sudetów Środkowych, rozdzielone dolinami rzeki Orlicy".
+     * Je to týž typ rozhodnutí, jaký udělal Michal 8. 8. 2026 u Javorníků
+     * a Vsetínských vrchů: dvě geomorfologické jednotky, jedna oblast,
+     * protože se tak chodí. Rozhodnutí je celé i s prameny
+     * v data/oblasti/orlicke-hory.yaml.
+     */
+    zeme: ['CZ', 'PL'],
+    /**
+     * Kotvy okna jsou doložené souřadnice (prameny
+     * v data/oblasti/orlicke-hory.yaml):
+     *   sever  50.45 — Duszniki-Zdrój (50.403 / 16.391) a Olešnice
+     *                  v Orlických horách (50.373 / 16.310), severní konec
+     *                  osy CHKO
+     *   jih    50.00 — Jamné nad Orlicí (50.040 / 16.633) a Suchý vrch
+     *                  (50.051 / 16.693) v Bukovohorské hornatině
+     *   západ  16.25 — Olešnice a Deštné v Orlických horách (50.305 /
+     *                  16.350)
+     *   východ 16.75 — Suchý vrch (16.693) a Góry Bystrzyckie s vrchem
+     *                  Jagodna (50.252 / 16.565) a schroniskem téhož jména
+     *                  (50.277 / 16.537)
+     * Uvnitř dál Velká Deštná (50.304 / 16.400), Masarykova chata na
+     * Šerlichu (50.326 / 16.386), Orlické Záhoří, Zdobnice, Říčky,
+     * Bartošovice, Klášterec nad Orlicí, tvrz Hanička a polský Zieleniec.
+     *
+     * KUDOWA-ZDRÓJ JE VĚDOMĚ VENKU (50.443 / 16.244): leží až za sedlem
+     * Polskie Wrota v Kudowské kotlině a žádný pramen ji jako severní konec
+     * Orlických hor neuvádí. Vzor Popradu u Vysokých Tater.
+     */
+    bbox: { latMin: 50.0, lngMin: 16.25, latMax: 50.45, lngMax: 16.75 },
+    bbox3d: { latMin: 50.15, lngMin: 16.3, latMax: 50.4, lngMax: 16.62 },
+    poznamka:
+      'čtrnáctá oblast (pokyn Michala 8. 8. 2026) — Orlické hory s polskou stranou vč. Gór Bystrzyckich; tím se zavírá otázka rozsahu otevřená u Jeseníků',
+    katalogPohori: ['Orlické hory', 'Góry Orlickie', 'Góry Bystrzyckie'],
+  },
 ]
 
 export const oblastDleSlugu = (slug: string): OblastKonfig => {
   const o = OBLASTI.find((x) => x.slug === slug)
-  if (!o) throw new Error(`Neznámá oblast „${slug}". Známé: ${OBLASTI.map((x) => x.slug).join(', ')}`)
+  if (!o)
+    throw new Error(`Neznámá oblast „${slug}". Známé: ${OBLASTI.map((x) => x.slug).join(', ')}`)
   return o
 }
 

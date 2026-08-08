@@ -271,6 +271,35 @@ export function pokrytiOblasti(
   return { oblast: slug, vKatalogu: vOblasti.length, silne, slabe, mimoKlic, mezery }
 }
 
+/**
+ * POHOŘÍ, KTERÁ KATALOG VEDE A PRŮVODCE NEMÁ V ŽÁDNÉ OBLASTI.
+ *
+ * Kontrola výš hlídá, jestli v už založené oblasti něco nechybí. Tohle hlídá
+ * o patro výš: jestli nechybí CELÉ POHOŘÍ. Je to jiný druh mezery a je horší,
+ * protože se neprojeví vůbec ničím — žádná oblast ho nehlásí, protože žádná
+ * oblast neexistuje.
+ *
+ * Vzniklo 8. 8. 2026, když Michal napsal „klidne dopln krusne hory, orlicke
+ * a vse dalsi co najdes". Odpověď na „co dalšího" se dala spočítat: sto
+ * katalogových objektů ve 45 pohořích, o kterých průvodce nevěděl. Tenhle
+ * výpis tu otázku umí zodpovědět kdykoli znovu, místo aby se počítala ručně.
+ */
+export function pohoriBezOblasti(
+  katalog: KatalogZaznam[],
+  oblasti: { katalogPohori?: string[] }[],
+): { pohori: string; objektu: number }[] {
+  const kryte = new Set(oblasti.flatMap((o) => o.katalogPohori ?? []))
+  const pocty = new Map<string, number>()
+  for (const r of katalog) {
+    const p = String(r['Pohoří'] ?? '').trim()
+    if (!p || kryte.has(p)) continue
+    pocty.set(p, (pocty.get(p) ?? 0) + 1)
+  }
+  return [...pocty.entries()]
+    .map(([pohori, objektu]) => ({ pohori, objektu }))
+    .sort((a, b) => b.objektu - a.objektu || a.pohori.localeCompare(b.pohori, 'cs'))
+}
+
 const spustenoPrimo = process.argv[1]?.includes('katalog-pokryti')
 if (spustenoPrimo) {
   const vybrane = process.argv.slice(2)
@@ -309,6 +338,30 @@ if (spustenoPrimo) {
     for (const m of v.mezery.sort((a, b) => (b.vyska ?? 0) - (a.vyska ?? 0))) {
       console.log(
         `    • ${m.nazev} — ${m.vyska ? `${m.vyska} m` : 'výška neuvedena'}, ${m.uzel} (${m.pohori})`,
+      )
+    }
+  }
+
+  // Bez filtru na oblasti (tedy při běhu nad celým katalogem) se vypíše
+  // i patro výš: co průvodce nemá vůbec.
+  if (!vybrane.length) {
+    const bez = pohoriBezOblasti(katalog, OBLASTI)
+    const objektuBez = bez.reduce((s, b) => s + b.objektu, 0)
+    console.log(`\n${'─'.repeat(78)}`)
+    console.log(
+      `POHOŘÍ, KTERÁ PRŮVODCE NEMÁ V ŽÁDNÉ OBLASTI: ${bez.length} (dohromady ${objektuBez} katalogových objektů)`,
+    )
+    console.log('Je to jiný druh mezery než výš: tam chybí objekt, tady celé pohoří.')
+    for (const b of bez.filter((x) => x.objektu >= 3)) {
+      console.log(`    ${String(b.objektu).padStart(3)}  ${b.pohori}`)
+    }
+    const drobne = bez.filter((x) => x.objektu < 3)
+    if (drobne.length) {
+      console.log(
+        `    (a dalších ${drobne.length} pohoří po jednom nebo dvou objektech — ${drobne
+          .slice(0, 6)
+          .map((d) => d.pohori)
+          .join(', ')}…)`,
       )
     }
   }

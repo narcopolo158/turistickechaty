@@ -1,0 +1,184 @@
+# Oblast Orlické hory — čtrnáctá oblast průvodce (pokyn Michala 8. 8. 2026:
+# „klidne dopln krusne hory, orlicke a vse dalsi co najdes").
+#
+# ROZSAH — A ZAVÍRÁ SE JÍM OTÁZKA, KTERÁ BYLA OD RÁNA OTEVŘENÁ. Okno kryje
+# Orlické hory na obou stranách hranice (Deštenská hornatina, Mladkovská
+# vrchovina, Bukovohorská hornatina, polské Góry Orlickie) A NAVÍC GÓRY
+# BYSTRZYCKIE, které až dosud ležely „vědomě mimo okno" u Jeseníků. Důvod
+# není geomorfologický — je ochranářský a turistický, celý s prameny
+# v interniPoznamky.
+# VĚDOMĚ MIMO OKNO: Králický Sněžník / Masyw Śnieżnika (jiná podsoustava
+# i jiný makroregion, patří oblasti Jeseníky), Góry Stołowe a Broumovská
+# vrchovina na severu, Kudowa-Zdrój za sedlem Polskie Wrota.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Orlické hory
+slug: orlicke-hory
+typ: pohori
+zeme: cz
+
+# Skloňované tvary názvu do vět na webu. Pomnožné ženské, přídavné jméno se
+# skloňuje s podstatným.
+sklonovani:
+  druhy: Orlických hor
+  sesty: Orlických horách
+
+charakteristika: >-
+  Zalesněný val na česko-polské hranici, dlouhý zhruba pětapadesát kilometrů
+  a nepříliš vysoký — a přesto tu jsou hory k chození celý den. Hřebenem
+  vede Jiráskova cesta, vyznačená už roku 1921, a v zimě sem patří jedna
+  z nejrozsáhlejších a přitom nejprázdnějších běžkařských sítí v Česku.
+  Podél hranice stojí pás předválečného opevnění z let 1935 až 1938;
+  tvrz Hanička je od roku 1995 přístupná jako muzeum.
+overeniCharakteristika:
+  source: >-
+    Délka a ráz: treking.cz (čteno 8. 8. 2026) — „Nevysoké a zalesněné
+    hřebeny Orlických hor se jako zalesněný val táhnou v délce téměř
+    55 kilometrů." Jiráskova cesta: region-orlickehory.cz (čteno 8. 8. 2026)
+    — „Jiráskova hřebenová cesta", délka 170 km z Broumova do Litomyšle,
+    „Vyznačena byla v roce 1921"; Kudy z nudy potvrzuje rok 1921. POZOR:
+    týž název nese i zimní hřebenový úsek „o délce téměř 30 km" (Kudy
+    z nudy), takže délka 170 km se do textu nepíše bez rozlišení, co se
+    měří. Běžkování: Kudy z nudy (čteno 8. 8. 2026) — „přibližně
+    250 kilometrů strojově upravovaných tras", „Orlická magistrála měří přes
+    80 km" a „Na málokterých horách však najdete tak málo běžkařů a současně
+    tak rozsáhlou síť běžeckých tratí"; slovo „nejprázdnějších" je opřené
+    o tenhle citát, ne o žebříček. Opevnění: region-orlickehory.cz —
+    „systém předválečného hraničního opevnění, které bylo budováno v letech
+    1935 – 1938", tvrz Hanička stavěna 1936–1938 a „byla zpřístupněna
+    veřejnosti v roce 1995". TVRZENÍ O „DLOUHÉ TRADICI BĚŽKOVÁNÍ" SE
+    VĚDOMĚ NEPÍŠE — rešerše 8. 8. 2026 ho doslovným pramenem nedoložila;
+    doložené jsou jen dnešní parametry sítě a existence Muzea zimních sportů
+    v Deštném (otevřeno 1990).
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Velká Deštná
+  vyska: 1115
+  source: >-
+    Shodně tři prameny (čteno 8. 8. 2026): treking.cz — „Nejvyšším vrcholem
+    Orlických hor je Velká Deštná (1 115 m)"; kct-tabor.cz — „nadmořská výška
+    vrcholu 1115 m"; polská ziemia-klodzka.pl — „Wielka Desztna (Velká
+    Deštná, 1115 m n.p.m.)". ROZPOR, přiznaný: dva prameny mají v titulku
+    1116 m (odkladskychhranic.wordpress.com, který ovšem v textu píše
+    1115 m, a tisicovky.cz, jejichž stránka se nenačetla). Zapsáno 1115 dle
+    konvence z 27. 7. 2026. Souřadnice okolo 50.304 / 16.400 (GeoNames);
+    kct-tabor.cz uvádí 50°18′5,66″ / 16°23′51,55″, tedy o zhruba 350 metrů
+    jinde — druhý rozpor, tentokrát v poloze.
+    NEJVYŠŠÍ VRCHOL POLSKÉ ČÁSTI je hraniční Orlica, česky VRCHMEZÍ
+    (1084 m, 50.353 / 16.361) — jeden vrchol se dvěma jmény, ne dva kopce.
+    NEJVYŠŠÍ VRCHOL GÓR BYSTRZYCKICH je Jagodna a její výška je rozporná:
+    977 m (portalgorski.pl, kgp.info.pl) × 985 m (zrcadlo polské Wikipedie).
+    Ani jedna z nich nemění to, že nejvyšší horou celé oblasti je Velká
+    Deštná.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala („klidne dopln krusne hory, orlicke
+  a vse dalsi co najdes"). Konfigurace okna je v scripts/oblasti.ts (slug
+  orlicke-hory, zeme CZ+PL, katalogové názvy Orlické hory, Góry Orlickie
+  a Góry Bystrzyckie), kotvy okna a jejich prameny v komentáři tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `orlicke-hory`. Seznam všech čekajících
+  kliků drží docs/KLIKY-PRO-MICHALA.md.
+
+  GÓRY BYSTRZYCKIE — ROZHODNUTO, a stojí za to zapsat, PROTI čemu se
+  rozhodovalo. Otázka byla otevřená od rána 8. 8. 2026, kdy se zakládaly
+  Jeseníky: katalog drží v Górach Bystrzyckich dvě schroniska (Jagodna
+  a Pod Muflonem) a tehdy se zapsalo, že leží „vědomě mimo okno", protože je
+  do jesenické oblasti nepřiřazuje žádný pramen. To platí dál — jenže patří
+  sem.
+  GEOMORFOLOGIE PRO SPOJENÍ NEMLUVÍ a je poctivé to říct: Góry Bystrzyckie
+  jsou samostatný mezoregion 332.53 vedle Gór Orlickich 332.52 a dělí je
+  údolí Divoké Orlice a Bystrzycy Dusznické (portalgorski.pl, čteno
+  8. 8. 2026: „Oddzielone są od siebie doliną Dzikiej Orlicy oraz doliną
+  Bystrzycy Dusznickiej."). Kdyby rozhodovala jen geomorfologie, oblast by
+  je nebrala.
+  MLUVÍ PRO NĚJ OCHRANÁŘSKÝ A TURISTICKÝ CELEK: oba hřbety kryje jeden
+  „Obszar Chronionego Krajobrazu Góry Bystrzyckie i Orlickie" (usnesení
+  z 28. října 1981, dnešní úprava nařízením vojvody z 20. února 2008),
+  popsaný v prameni jako „dwa równolegle do siebie biegnące pasma górskie
+  Sudetów Środkowych, rozdzielone dolinami rzeki Orlicy"
+  (bystrzyca.wroclaw.lasy.gov.pl). Ziemia-klodzka.pl navíc o Górach
+  Orlickich píše, že se „od północnego-wschodu łączą się z równoległymi do
+  nich Górami Bystrzyckimi".
+  PRECEDENS JE MICHALŮV VLASTNÍ: 8. 8. 2026 rozhodl, že Javorníky
+  a Vsetínské vrchy budou JEDNA oblast, ač jsou to dvě geomorfologické
+  jednotky — „protože se tak chodí". Tady je to totéž rozhodnutí o stupeň
+  lépe doložené, protože tu ten společný celek má i vlastní jméno v předpisu.
+  Kdyby to Michal chtěl otočit, stačí odebrat 'Góry Bystrzyckie'
+  z katalogPohori a zúžit východní hranu okna z 16.75 na zhruba 16.55.
+
+  KRÁLICKÝ SNĚŽNÍK SEM NEPATŘÍ a rešerše to potvrdila z obou stran hranice:
+  na české je to samostatný celek IVC-4 v JESENICKÉ podsoustavě (kdežto
+  Orlické hory jsou IVB-2 v Orlické), na polské leží Masyw Śnieżnika
+  v Sudetech VÝCHODNÍCH, ne Středních, a od Gór Bystrzyckich ho dělí Rów
+  Górnej Nysy. Naše zařazení Sněžníku do Jeseníků je tedy v souladu
+  s členěním — dobré vědět, protože u přeshraničních pohoří se to snadno
+  splete.
+
+  DVA NÁRODNÍ SYSTÉMY, JEDEN HŘEBEN. Český systém vede Orlické hory
+  v Krkonošsko-jesenické soustavě, polský Góry Orlickie jako mezoregion
+  Sudetów Środkowych. Není to rozpor pramenů, jsou to dvě regionalizace téhož
+  — a v datech oblasti se nesjednocují.
+
+  CO UŽ VÍME BEZ OVERPASSU — externí katalog drží v okně 8 objektů: Orlické
+  hory 5, Góry Orlickie 1, Góry Bystrzyckie 2 (Jagodna, Pod Muflonem).
+  Doložené objekty z rešerše, seřazené podle toho, jak dobře je známe:
+  MASARYKOVA CHATA NA ŠERLICHU — postavena 1924–1925 Klubem
+  československých turistů podle projektu BOHUSLAVA FUCHSE, tedy stavba
+  architekta zvučného jména; základní kámen 14. září 1924, otevření pro
+  veřejnost za účasti Aloise Jiráska. ROZPOR V DATU OTEVŘENÍ, nesrovnaný:
+  14. 9. 1925 (treking.cz, hkregion.cz) × 27. 9. 1925 (kct.cz,
+  kcthradeckralove.estranky.cz). Iniciativa vzešla z celonárodní sbírky, ke
+  které vyzval hradecký odbor v únoru 1919. Chata patřila 1938–1945 německé
+  armádě, do 1949 KČT, pak ČSTV a od 1990 zase hradeckému odboru; původní
+  jméno se vrátilo roku 1990. Výška chaty je rozporná: 1019 m (treking.cz)
+  × 1010 m (hkregion.cz).
+  ŠERLIŠSKÝ MLÝN — mlýn doložený už na I. vojenském mapování (1764–1768),
+  roku 1902 přestavěný na výletní restauraci, 7. listopadu 1931 KOMPLETNĚ
+  VYHOŘEL a hned následující rok se stavělo znovu.
+  KRAMÁŘOVA CHATA NA SUCHÉM VRCHU — ROZPOR V ROCE: 1924 (turistika.cz)
+  × „mezi lety 1926-1928" (Seznam Zprávy); rozhledna vedle ní 1931–1932
+  podle návrhu Antonína Parkmana.
+  CHATA PANORAMA v Deštném — koupena v lednu 1915 JUDr. Jindřichem ze
+  Štemberku, tedy týmž člověkem, který prosazoval Masarykovu chatu.
+  CHATA NA ČIHÁKU — koupena KČT Hradec Králové 1930, penzion Hradeček 1932.
+  POLSKÁ SCHRONISKA: Jagodna — dřevěná stavba „powstał w 1896 roku", 811 m,
+  historickým jménem Brandbaude; Pod Muflonem — vzniklo „w połowie XIX
+  wieku" jako hospodářství na kozí mléko, 690 m; Orlica v Zieleńci —
+  pramen sám píše, že „Należy przypuszczać, że istnieje od 1878 roku",
+  tedy domněnka, ne datum.
+
+  RAMPUŠE, ZDOBNICE, SOUVLASTNÍ, PĚTICESTÍ A HORSKÁ CHATA KUNŠTÁT: rok ani
+  stavebníka nedoložil žádný nalezený pramen. Nezapisuje se nic — ani odhad
+  z okolních let.
+
+  NĚMECKÝ SPOLEK TU BYL, ALE ZNÁME HO ŠPATNĚ. Doložen je „Kladský horský
+  spolek", který roku 1880 postavil na Vrchmezí šestnáctimetrovou dřevěnou
+  rozhlednu a v letech 1882–1883 výletní hostinec. Německé znění jména
+  (Glatzer Gebirgsverein?) se doslovně doložit nepodařilo a seznam jeho
+  dalších staveb taky ne. Na Šerlichu stála konkurenční německá chata
+  HINDENBURGBAUDE, která podle treking.cz vyhořela — rok stavby, stavebník
+  ani rok požáru doloženi nejsou. Je to slabší stav než u Beskyd, kde jsou
+  Beskidenverein i Pohorská jednota Radhošť doloženi jmenovitě.
+
+  ORLICKÉ ZÁHOŘÍ — SUPERLATIV SE NEZAPSAL. Nabízí se napsat „nejchladnější
+  místo Česka", ale doložené jsou jen jednotlivé denní rekordy a označení
+  „mrazová kotlina" (iROZHLAS, čteno 8. 8. 2026: doplňková stanice tu
+  7. ledna 2017 naměřila −33,2 °C). Trvalý superlativ žádný pramen netvrdí,
+  takže se do textu nedostal.
+
+  OCHRANA: CHKO Orlické hory vyhlášena výnosem ministerstva kultury
+  z 28. 12. 1969, rozloha 204 km², výškové rozpětí 406–1115 m; osu tvoří
+  hřbet „od Olešnice v Orlických horách na severu po Zemskou bránu na jihu"
+  (časopis Ochrana přírody, čteno 8. 8. 2026). Polská strana NEMÁ park
+  krajobrazowy, ale zmíněný obszar chronionego krajobrazu.
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.
