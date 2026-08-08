@@ -1,6 +1,6 @@
 # Šumava — koše plošné triáže (krok 4b)
 
-Vygeneroval `npx tsx scripts/triaz-kandidatu.ts sumava --md` dne 7. 8. 2026.
+Vygeneroval `npx tsx scripts/triaz-kandidatu.ts sumava --md` dne 8. 8. 2026.
 **Přegenerovat po každém povýšení nebo vyřazení** — publikované, odložené
 i vyřazené kandidáty skript sám vynechává.
 
@@ -16,7 +16,34 @@ jméno přesto nese boudové slovo, jde kandidát do koše „k posouzení" jako
 rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshütte
 (oba Selbstversorger, vyřazeni 6. 8. s pramenem).
 
-### NADĚJNÉ — vzít v triáži nejdřív (110)
+## Co se změnilo 8. 8. 2026 (110 · 35 · 160 → 89 · 36 · 173)
+
+Dvě opravy skriptu a čtyři dopsaná rozhodnutí. Celkový počet kandidátů
+k triáži klesl z 305 na 298, koš NADĚJNÝCH ze 110 na 89.
+
+1. **`tourism=apartment` se začal číst jako tag pronájmu.** Čtrnáct
+   kandidátů (Lipno nad Vltavou, Kvilda) sedělo mezi nadějnými jen proto,
+   že se jmenují „Chata …" nebo „Chalupa …". V OSM je `apartment`
+   pronajímaná bytová jednotka; tag je tu konkrétnější než jméno.
+2. **České „chata / chalupa" je proti tagu pronájmu SLABÝ signál** — na
+   rozdíl od „bouda", „Hütte", „Berggasthof", „schronisko". U `apartment`
+   ho tag přebíjí, u `chalet` ne: tam máme doložený protipříklad,
+   **Turnerovu chatu** (`tourism=chalet`, jméno jen „chata" — a přitom
+   publikovaný profil). Rozdíl mezi oběma tagy tedy rozhodlo měření nad
+   korpusem, ne úvaha, a drží ho test `tests/int/triaz-kandidatu.int.spec.ts`.
+3. **Vyřazení zapsaná s předponou oblasti byla skriptu neviditelná.**
+   `_vyrazeno.yaml` vede slugy ve dvou tvarech (`kynast`
+   i `sumava/waldvereinshutte` — 33 ze 49 záznamů) a skript porovnával celý
+   řetězec. Mezi NADĚJNÝMI proto pořád seděly **Zwieseler Hütte
+   a Waldvereinshütte**, obě vyřazené už 6. 8. s pramenem. Nyní se
+   porovnává poslední úsek cesty.
+4. **Čtyři rozhodnutí, která existovala jen v deníku nebo v poznámce
+   kandidáta, jsou v rozhodovacích seznamech.** Sloučené do publikovaných
+   profilů: `josefova-vez` → Horská chata Kleť, `rozhledna-pancir` → Chata
+   Pancíř, `svatobor-chata` → Svatobor. Odložený: `geisskopfturm` (nositelem
+   služby je hostinec, o provozovateli věže mlčí prameny).
+
+### NADĚJNÉ — vzít v triáži nejdřív (89)
 
 | kandidát | země | signál |
 |---|---|---|
@@ -45,8 +72,6 @@ rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshüt
 | `brotzeithutte-zum-turm` — Brotzeithütte Zum Turm | de | jméno nese „Turm" |
 | `burglengenfelder-hutte-scb-hutte` — Burglengenfelder-Hütte (SCB-Hütte) | de | typ z OSM: obsluhovana |
 | `chalupa-malcice` — Chalupa Malčice | cz | jméno nese „Chalupa" |
-| `chalupa-na-lipne-1` — Chalupa na Lipně 1 | cz | jméno nese „Chalupa" |
-| `chalupa-na-lipne-2` — Chalupa na Lipně 2 | cz | jméno nese „Chalupa" |
 | `chalupa-na-sumave` — Chalupa na Šumavě | cz | jméno nese „Chalupa" |
 | `chalupa-pod-farou` — Chalupa pod farou | cz | jméno nese „Chalupa" |
 | `chalupa-pod-jasanem` — Chalupa pod jasanem | cz | jméno nese „Chalupa" |
@@ -57,44 +82,30 @@ rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshüt
 | `chalupa-ubytovani-horice` — chalupa  Ubytování Hořice | cz | jméno nese „chalupa" |
 | `chalupa-vaclav-lipno` — Chalupa Václav Lipno | cz | jméno nese „Chalupa" |
 | `chalupa-ve-strani` — Chalupa Ve Stráni | cz | jméno nese „Chalupa" |
-| `chata-barborka` — Chata Barborka | cz | jméno nese „Chata" |
 | `chata-betty` — Chata Betty | cz | jméno nese „Chata" |
 | `chata-boubin` — Chata Boubín | cz | jméno nese „Chata" |
 | `chata-cenkovka` — Chata Čeňkovka | cz | jméno nese „Chata" |
 | `chata-cerchov` — Chata Čerchov | cz | jméno nese „Chata" |
 | `chata-churanov` — Chata Churanov | cz | jméno nese „Chata" |
-| `chata-jistec` — Chata Jistec | cz | jméno nese „Chata" |
 | `chata-kaltenbach` — Chata Kaltenbach | cz | jméno nese „Chata" |
-| `chata-kobylnice-lipno` — Chata Kobylnice Lipno | cz | jméno nese „Chata" |
 | `chata-kvilda` — Chata Kvilda | cz | jméno nese „Chata" |
 | `chata-lipno-u-hajenky` — Chata Lipno U Hájenky | cz | jméno nese „Chata" |
 | `chata-mladi` — Chata Mládí | cz | jméno nese „Chata" |
-| `chata-mrazkovi` — Chata Mrazkovi | cz | jméno nese „Chata" |
-| `chata-mytinka` — Chata Mytinka | de | jméno nese „Chata" |
-| `chata-na-kobylnici` — Chata na Kobylnici | cz | jméno nese „Chata" |
 | `chata-na-losenici` — Chata Na Losenici | cz | jméno nese „Chata" |
 | `chata-orovsky` — Chata Ořovský | cz | jméno nese „Chata" |
-| `chata-pisanka` — Chata Pišanka | cz | jméno nese „Chata" |
 | `chata-pod-kleti` — Chata pod Kletí | cz | typ z OSM: obsluhovana |
 | `chata-pod-obrim-hradem` — Chata pod Obřím hradem | cz | jméno nese „Chata" |
 | `chata-povydri` — Chata Povydří | cz | jméno nese „Chata" |
 | `chata-rovina` — Chata Rovina | cz | jméno nese „Chata" |
-| `chata-rozhlas` — Chata Rozhlas | cz | jméno nese „Chata" |
-| `chata-sandra` — Chata Sandra | cz | jméno nese „Chata" |
-| `chata-sara` — Chata Sára | cz | jméno nese „Chata" |
 | `chata-sumavska-chalupa` — Chata Šumavská Chalupa | cz | jméno nese „Chata" |
-| `chata-terezka` — Chata Terezka | cz | jméno nese „Chata" |
 | `chata-thurmberg` — Chata Thurmberg | cz | jméno nese „Chata" |
 | `chata-u-jakuba` — Chata U Jakuba | cz | jméno nese „Chata" |
 | `chata-u-krtka` — Chata U krtka | cz | jméno nese „Chata" |
-| `chata-u-lipna` — Chata u Lipna | cz | jméno nese „Chata" |
 | `chata-valkovi-lipno-nad-vltavou` — Chata Valkovi - Lipno nad Vltavou | cz | jméno nese „Chata" |
-| `chata-vraz` — Chata Vráž | cz | jméno nese „Chata" |
 | `chata-zivec` — Chata Živec | cz | typ z OSM: obsluhovana |
 | `dobra-chata` — Dobrá chata | cz | jméno nese „chata" |
 | `falter-hutte` — Falter Hütte | de | jméno nese „Hütte" |
 | `forsthaus-odwies` — Forsthaus Ödwies | de | typ z OSM: utulna |
-| `geisskopfturm` — Geißkopfturm | de | typ z OSM: rozhledna |
 | `haidsteiner-hutte` — Haidsteiner Hütte | de | jméno nese „Hütte" |
 | `hajenka-na-brezniku` — Hájenka na Březníku | cz | jméno nese „Hájenka" |
 | `hajenka-nebe` — Hájenka Nebe | cz | jméno nese „Hájenka" |
@@ -107,7 +118,6 @@ rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshüt
 | `hotel-certova-chata` — Hotel Certova Chata | cz | jméno nese „Chata" |
 | `hotel-chata` — Hotel Chata | cz | jméno nese „Chata" |
 | `jagdhutte` — Jagdhütte | de | OSM tourism=hut |
-| `josefova-vez` — Josefova věž | cz | typ z OSM: rozhledna |
 | `kreuzhaus` — Kreuzhaus | de | typ z OSM: obsluhovana |
 | `kronberg-hutte` — Kronberg-Hütte | de | jméno nese „Hütte" |
 | `lovecka-chata` — Lovecká chata | cz | jméno nese „chata" |
@@ -115,23 +125,19 @@ rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshüt
 | `pumpwerk` — Pumpwerk | de | OSM tourism=hut |
 | `rozhledna-korab` — rozhledna Koráb | cz | typ z OSM: rozhledna |
 | `rozhledna-libin` — Rozhledna Libín | cz | typ z OSM: rozhledna |
-| `rozhledna-pancir` — Rozhledna Pancíř | cz | typ z OSM: rozhledna |
 | `schachtenhaus` — Schachtenhaus | de | OSM tourism=hut |
 | `schwarzbachklause-diensthutte` — Schwarzbachklause (Diensthütte) | de | OSM tourism=hut |
 | `skihutte-kohlau` — Skihütte-Kohlau | de | typ z OSM: obsluhovana |
 | `stezka-korunami-stromu-lipno` — Stezka korunami stromů Lipno | cz | typ z OSM: rozhledna |
 | `strazni-vez-zelezne-opony` — Strážní věž Železné opony | cz | typ z OSM: rozhledna |
 | `sumavska-chalupa` — Šumavská chalupa | cz | jméno nese „chalupa" |
-| `svatobor-chata` — Svatobor chata | cz | jméno nese „chata" |
 | `ubytovna-lovecka-chata` — Ubytovna Lovecká chata | cz | jméno nese „chata" |
-| `waldvereinshutte` — Waldvereinshütte | de | typ z OSM: utulna |
 | `wellness-chalupa-na-samote-u-lesa` — Wellness chalupa Na samotě u lesa | cz | jméno nese „chalupa" |
 | `wolfi-s-hutte` — Wolfi's Hütte | de | jméno nese „Hütte" |
 | `zakladna-bileho-orla` — Základna Bílého orla | cz | typ z OSM: obsluhovana |
 | `zelena-chyse` — Zelená chýše | cz | typ z OSM: obsluhovana |
-| `zwieseler-hutte` — Zwieseler Hütte | de | typ z OSM: utulna |
 
-### K POSOUZENÍ — musí přečíst člověk (35)
+### K POSOUZENÍ — musí přečíst člověk (36)
 
 | kandidát | země | signál |
 |---|---|---|
@@ -152,6 +158,7 @@ rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshüt
 | `chata-svata-magdalena` — Chata svatá Magdalena | cz | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata" |
 | `christl-s-schmankerlhutte` — Christl's Schmankerlhütte | de | žádný signál ve jméně ani v tazích |
 | `ferienhaus-schonbacher-hutte` — Ferienhaus Schönbacher Hütte | de | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Hütte" |
+| `ferienwohnung-pfenniggeiger-hutte` — Ferienwohnung Pfenniggeiger-Hütte | de | rozpor: OSM tourism=apartment (pronájem) × jméno nese „Hütte" |
 | `forstdiensthutte-hohen-bogen` — Forstdiensthütte Hohen Bogen | de | žádný signál ve jméně ani v tazích |
 | `gasthaus-zur-poschingerhutte` — Gasthaus zur Poschingerhütte | de | žádný signál ve jméně ani v tazích |
 | `grenzglashutte` — Grenzglashütte | de | žádný signál ve jméně ani v tazích |
@@ -171,7 +178,7 @@ rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshüt
 | `tahutea` — Tahutea | de | žádný signál ve jméně ani v tazích |
 | `wander-wellness-hotel-huttenhof` — Wander- & Wellness Hotel Hüttenhof | de | žádný signál ve jméně ani v tazích |
 
-### MIMO KLÍČ dle jména — probrat hromadně, NENÍ to vyřazení (160)
+### MIMO KLÍČ dle jména — probrat hromadně, NENÍ to vyřazení (173)
 
 | kandidát | země | signál |
 |---|---|---|
@@ -191,6 +198,20 @@ rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshüt
 | `beach-bar-el-bouda` — Beach Bar El Bouda | cz | městský podnik — „Beach Bar" |
 | `bio-ferienhaus` — Bio-Ferienhaus | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `cerny-kriz-73` — Černý Kříž 73 | cz | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
+| `chalupa-na-lipne-1` — Chalupa na Lipně 1 | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chalupa-na-lipne-2` — Chalupa na Lipně 2 | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-jistec` — Chata Jistec | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-kobylnice-lipno` — Chata Kobylnice Lipno | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-mrazkovi` — Chata Mrazkovi | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-mytinka` — Chata Mytinka | de | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-na-kobylnici` — Chata na Kobylnici | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-pisanka` — Chata Pišanka | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-rozhlas` — Chata Rozhlas | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-sandra` — Chata Sandra | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-sara` — Chata Sára | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-terezka` — Chata Terezka | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-u-lipna` — Chata u Lipna | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `chata-vraz` — Chata Vráž | cz | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
 | `dimpfl-stadl` — Dimpfl-Stadl | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `dullhof-austragshausl` — Düllhof-Austragshäusl | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `edlgutl-erdhaus` — Edlgütl, Erdhaus | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
@@ -237,7 +258,6 @@ rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshüt
 | `ferienland-sonnenwald` — Ferienland Sonnenwald | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `ferienpark-arber` — Ferienpark Arber | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `ferienpark-jagerwiesen` — Ferienpark Jägerwiesen | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
-| `ferienwohnung-pfenniggeiger-hutte` — Ferienwohnung Pfenniggeiger-Hütte | de | ubytování bez veřejné služby — „Ferienwohnung" |
 | `ferienwohnungen-weitblick` — Ferienwohnungen Weitblick | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `feuer` — Feuer | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `fh-1` — FH 1 | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
@@ -336,8 +356,5 @@ rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshüt
 | `zoihausl` — Zoihäusl | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `zum-alten-wirt` — Zum Alten Wirt | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 
----
-
-Souhrn běhu ze 7. 8. 2026: 305 kandidátů k triáži — NADĚJNÉ 110,
-K POSOUZENÍ 35, MIMO KLÍČ 160; přeskočeno 31 publikovaných, odložených
-nebo vyřazených.
+oblast sumava | kandidatu k triazi: 298 | NADEJNE 89 · POSOUDIT 36 · MIMO 173
+preskoceno (publikovane/odlozene/vyrazene): 38

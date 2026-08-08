@@ -557,3 +557,51 @@ vyrazeno:
     rozhodl: samostatná práce 7. 8. 2026 (pověření „pokračuj dvě hodiny samostatně")
     checked: 2026-08-07
 
+
+  # SLOUČENÍ DO PUBLIKOVANÉHO PROFILU (8. 8. 2026). Není to zamítnutí objektu
+  # — objekt na webu STOJÍ, jen ne pod vlastním slugem. Sem patří proto, že
+  # `_vyrazeno.yaml` je zároveň zámek proti dalšímu běhu DATA-01: bez záznamu
+  # by export tyhle kandidáty zakládal donekonečna a triážní koš by je pořád
+  # ukazoval jako nezpracované. Vzor: duplicity Chaty Mamut a Lyžařské boudy
+  # (20. 7.), kde je důvod „sloučeno do …" použit stejně.
+  - osm: https://www.openstreetmap.org/way/83686493
+    slug: sumava/josefova-vez
+    duvod: >-
+      Sloučeno do publikovaného profilu data/chaty/sumava/horska-chata-klet.yaml
+      (rozhodnuto 7. 8. 2026, vzor Žalý / Královka / Svatobor): provozovatelem
+      rozhledny na Kleti je dle Kudy z nudy táž Horská chata Kleť a vlastní
+      doména se představuje jako „horská chata, rozhledna, penzion a hostel"
+      — jeden provoz, jeden profil. Věž z roku 1825 nese profil chaty včetně
+      historie a údaje „nejstarší kamenná rozhledna v Česku". Samostatný
+      profil by tentýž objekt vedl dvakrát. Pozor na záměnu: kandidát
+      `chata-pod-kleti` je JINÝ objekt 2,3 km severně a ve frontě zůstává.
+    rozhodl: >-
+      Claude (8. 8. 2026, denní bezobslužná session — dopsáno rozhodnutí
+      ze 7. 8., které v datech chybělo, ač profil sloučení už nesl)
+    checked: 2026-08-08
+
+  - osm: https://www.openstreetmap.org/node/13957678714
+    slug: sumava/rozhledna-pancir
+    duvod: >-
+      Sloučeno do publikovaného profilu data/chaty/sumava/chata-pancir.yaml
+      (rozhodnuto 5. 8. 2026): rozhledna je dle vlastního webu chatapancir.cz
+      SOUČÁSTÍ Horské chaty Pancíř, tedy jeden objekt (precedens Žalý, záznam
+      v data/_jmenovci.yaml). Profil chaty stojí právě na GPS téhle věže.
+    rozhodl: >-
+      Claude (8. 8. 2026, denní bezobslužná session — rozhodnutí z 5. 8. bylo
+      zapsané jen v poznámce kandidáta, ne v rozhodovacím seznamu)
+    checked: 2026-08-08
+
+  - osm: https://www.openstreetmap.org/way/72595484
+    slug: sumava/svatobor-chata
+    duvod: >-
+      Sloučeno do publikovaného profilu
+      data/chaty/sumava/svatobor-rozhledna.yaml (rozhodnuto 6. 8. 2026, vzor
+      Královka): chata a rozhledna na Svatoboru jsou jeden areál s jedním
+      provozem — shodný telefon +420 605 418 433 i doména chatasvatobor.cz,
+      obojí od roku 1998 majetek města Sušice (Kudy z nudy + web města).
+      Profil nese typ rozhledna, nocleh i restauraci.
+    rozhodl: >-
+      Claude (8. 8. 2026, denní bezobslužná session — rozhodnutí z 6. 8. bylo
+      zapsané jen v poznámce kandidáta, ne v rozhodovacím seznamu)
+    checked: 2026-08-08

@@ -29,6 +29,92 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-08 — denní bezobslužná session: koš NADĚJNÝCH lhal dvakrát, obojí opraveno
+
+Backlog shora: DATA-04, DATA-05, DATA-20, DATA-22, DATA-25, DATA-28, F1-IMPL,
+JIZ-01, FOTO-01 i JEST-01 stojí beze změny na Michalovi (telefonáty, kliky
+v Actions, rozhodnutí o sémantice `obec`, výběr fotek v adminu, potvrzení
+razítkových párů). První položka, se kterou se ze sandboxu hnout dá, je
+**SUM-01** a její další krok podle včerejšího zápisu: *plošná triáž podle košů,
+začít NADĚJNÝMI (110)*.
+
+**Než se ale začne číst, musí být čemu věřit — a koš ze 7. 8. lhal dvakrát.**
+
+**① `tourism=apartment` se nečetl jako tag pronájmu.** Čtrnáct kandidátů
+z Lipna nad Vltavou a Kvildy sedělo mezi NADĚJNÝMI jen proto, že se jmenují
+„Chata Sandra“, „Chata Terezka“, „Chalupa na Lipně 1“. V OSM je `apartment`
+pronajímaná bytová jednotka — tag je tu konkrétnější než jméno.
+
+Z toho plyne obecnější věc, kterou skript dosud neuměl říct: **české „chata“
+a „chalupa“ je proti tagu pronájmu SLABÝ signál.** „Bouda“, „Hütte“,
+„Berggasthof“, „schronisko“, „Schutzhaus“ pojmenovávají rovnou objekt služby;
+„chata“ je v Česku běžné slovo pro víkendové stavení. Signál se proto dělí na
+silný a slabý a slabý proti tagu pronájmu neváží nic.
+
+**A hned k tomu protipříklad, který tu hranici drží na uzdě.** Než jsem to
+pravidlo pustil na `chalet`, přeměřil jsem ho proti vlastnímu korpusu: existuje
+povýšený profil, který měl v OSM tag pronájmu a jmenuje se jen „chata“?
+Existuje — **Turnerova chata** (`tourism=chalet`). Kdyby ji slabé jméno
+neuchránilo, koš by ji byl poslal mezi hromadné. `chalet` proto slabé jméno
+NEPŘEBÍJÍ, `apartment` ano (mezi všemi povýšenými profily všech oblastí z něj
+nevzešel ani jeden). **Rozdíl mezi dvěma tagy tedy rozhodlo měření, ne úvaha** —
+a přesně tohle je v komentáři skriptu i v testu napsané, ať to za měsíc nikdo
+nesjednotí „pro pořádek“.
+
+**② Vyřazení zapsaná s předponou oblasti byla skriptu neviditelná.**
+`_vyrazeno.yaml` vede slugy ve dvou tvarech — holý `kynast` i s předponou
+`sumava/waldvereinshutte` (33 ze 49 záznamů) — a skript porovnával celý
+řetězec. Mezi NADĚJNÝMI proto pořád seděly **Zwieseler Hütte
+a Waldvereinshütte**, obě vyřazené už 6. 8. s doloženým pramenem. U jizerských
+záznamů se to neprojevilo jen náhodou: tam se soubory kandidátů po vyřazení
+mazaly, takže nebylo co zobrazovat. Porovnává se nově poslední úsek cesty.
+
+**③ Čtyři rozhodnutí žila jen v deníku nebo v poznámce kandidáta.** Do
+rozhodovacích seznamů dopsány: `josefova-vez` → sloučeno do Horské chaty Kleť,
+`rozhledna-pancir` → do Chaty Pancíř, `svatobor-chata` → do Svatoboru (všechny
+tři do `_vyrazeno.yaml` — není to zamítnutí objektu, objekt na webu stojí, jen
+ne pod vlastním slugem; seznam je zároveň zámek proti dalšímu běhu DATA-01,
+vzor duplicit z 20. 7.). `geisskopfturm` do `_odlozeno.yaml`: nositelem služby
+je hostinec, který se 7. 8. povýšil, a kdo provozuje samotnou věž, neříká žádný
+pramen — sloučit jako na Kleti tedy nejde.
+
+**Měřeno:** Šumava 305 → 298 kandidátů, koše **110 · 35 · 160 → 89 · 36 · 173**.
+Jizerky 33 → 32 (29 · 2 · 1) — kontrolní běh nad druhou oblastí, ať se neladí
+jen na jedna data. Korpus chat beze změny (137). Jediný kandidát, který si
+polepšil, je `ferienwohnung-pfenniggeiger-hutte`: dřív ho odbylo jméno
+(„Ferienwohnung“), teď je z něj rozpor tagu a jména a přečte ho člověk.
+
+**Kontroly:** `npm run kontrola` zelené (0 vad, fronta 0 vad, kolize
+rozhodnuté), `tsc` čistý, eslint čistý, fixtura 25 souborů / 0 spadlo, nový
+test 9/9. Integrační sada: 9 selhání v 5 souborech (api, pohori, sitemap-llms,
+razitka-moderace, oblasti-jestedsky-hrbet) — **ověřeno `git stash`, že padají
+i bez dnešní změny**, potřebují běžící Payload/DB, na kterou sandbox nedosáhne.
+
+**Příště**
+
+① číst samotné NADĚJNÉ (89) — největší homogenní skupina je **dvanáct
+bavorských „Berggasthof“**, u nich je klíč zpravidla bez otazníku a dají se
+brát v řadě; ② pak rozpory tag × jméno (36); ③ z tagované fronty pořád zbývají
+`zakladna-bileho-orla` a `burglengenfelder-hutte-scb-hutte` (podezření na
+Selbstversorger, vzor Kynastu — každé vyřazení chce pramen) a dvě útulny
+`forsthaus-odwies` a `hollbachschwellhutte`.
+
+**Otázky pro Michala**
+
+① Beze změny od 7. 8.: **Koráb a Libín** (oba s doloženým občerstvením čekají
+na tvé slovo), **městské věže pod horami** (Furth im Wald, Mirsk — patří „role
+na trase“ i na ně?), **tři telefonáty** (Kurzova věž +420 722 166 875, Kleť
++420 724 700 300, Špičák +420 376 397 167).
+② **Klik v Actions:** DATA-35 `jizerske-hory`, DATA-06 výšky `sumava` (čeká
+šest šumavských profilů), DATA-28 3D terén.
+③ **Konvence, na kterou jsem dnes narazil a nesjednotil ji sám:** vyřazené
+slugy se zapisují nejednotně — `kynast` × `sumava/waldvereinshutte`. Skript
+si s obojím poradí, ale jestli chceš, sjednotím to jedním průchodem na tvar
+s oblastí (je jednoznačnější napříč pohořími) — je to čistě kosmetika dat,
+tak to nedělám bez tebe.
+④ Starší otevřené beze změny: Gibacht, Klostermannova rozhledna, Dreisessel
+doména, Osser lůžka, rokVzniku čtveřice, DATA-20 `obec`, výběr fotek v adminu.
+
 ## 2026-08-07 (blok 3, samostatná práce dvě hodiny) — tagovaná fronta o pět dál, plošná triáž dostala nástroj, dvě opravy
 
 Michalovo pověření: *„pokracuj dve hodiny samostatne systematicky dal,

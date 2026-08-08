@@ -66,3 +66,19 @@ odlozeno:
     rozhodl: samostatná práce 7. 8. 2026 (pověření „pokračuj dvě hodiny samostatně")
     checked: 2026-08-07
 
+  - slug: geisskopfturm
+    oblast: sumava
+    duvod: >-
+      Vyhlídková věž na Geißkopfu (1097 m). Do fronty se dostala s dokladem
+      občerstvení „Geisskopfhütte 79 m" — jenže tím dokladem je SAMOSTATNÝ
+      dům, a ten byl 7. 8. 2026 povýšen na vlastní profil
+      (data/chaty/sumava/geisskopfhutte.yaml). Povýšil se tedy nositel
+      služby, ne věž. Sloučit obojí do jednoho profilu jako na Kleti nejde:
+      tam pramen výslovně říká, že rozhlednu provozuje táž chata, kdežto
+      u Geißkopfu neříká o provozovateli věže žádný pramen nic. Odloženo,
+      ne vyřazeno: až se doloží, kdo věž provozuje, buď se sloučí do profilu
+      hostince, nebo se povýší zvlášť.
+    rozhodl: >-
+      Claude (8. 8. 2026, denní bezobslužná session — dopsáno rozhodnutí
+      ze 7. 8., které bylo jen v deníku)
+    checked: 2026-08-08
