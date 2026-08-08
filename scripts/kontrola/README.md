@@ -405,3 +405,27 @@ Opačný směr chyby zůstává a report ho ukazuje: falešná silná shoda meze
 ručním hledání token „radhošť" opravdu spároval rybník s chatou. Proto se
 u slabých shod vypisuje, ČÍM se objekt spároval: report je pomůcka pro čtení,
 ne rozhodnutí.
+
+**Dvě ruční tabulky u `katalog-pokryti.ts` (8. 8. 2026).** Report sám by byl
+poloviční pravda, dokud v něm chyběly. Rešerše nad devíti beskydskými mezerami
+totiž ukázala, že hlavní důvod nespárování NENÍ nepřítomnost objektu v OSM, ale
+**zastaralé jméno v katalogu** — „Chata na Radhošti" je dnes Horský hotel
+Radegast, „Chata na Veľkej Rači" je Horská chata Veľká Rača (v OSM jako Chata
+AVC), „Schronisko na Równicy" od roku 2016 není schronisko PTTK, ale Gościniec
+Równica. `KATALOG_PREJMENOVANI` proto překládá katalogové jméno na dnešní; tři
+z devíti mezer se tím vyřešily okamžitě, protože ti kandidáti v repu celou dobu
+ležely. Tabulka je RUČNÍ a každý řádek nese v komentáři pramen — není to
+normalizace jmen, ale zápis rešerše.
+
+`KATALOG_MIMO_KLIC` řeší druhý případ: objekt, který do průvodce **nepatří**.
+Hviezdoslavova hájovňa je literární muzeum Oravského muzea a stránka muzea
+doslova píše „Najbližšie občerstvenie sa nachádza v Oravskej Polhore";
+Wellness hotel Bahenec je podle vlastního webu „otevřen pouze pro ubytované
+hosty a klienty SPA § Wellness se samoobslužným salónkem", tedy týž případ jako
+šumavské Selbstversorger chaty vyřazené 6. 8. 2026. Takový objekt není mezera,
+kterou by šlo zaplnit — je to rozhodnutí, a bez zápisu by ho každá další
+session dohledávala znovu. Do `_vyrazeno.yaml` tyhle záznamy nepatří: ten
+seznam se klíčuje URL objektu v OSM a je zámkem proti dalšímu běhu DATA-01,
+kdežto tady jde o objekty, které kandidáta nikdy neměly. Test hlídá, že důvod
+u každého řádku má aspoň osmdesát znaků — krátký důvod by znamenal rozhodnutí
+bez dokladu, a u vyřazení objektu z průvodce je doklad to jediné, co ho drží.

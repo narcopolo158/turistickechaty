@@ -10,7 +10,11 @@
  */
 import { describe, expect, it } from 'vitest'
 
-import { pokrytiOblasti } from '../../scripts/kontrola/katalog-pokryti'
+import {
+  KATALOG_MIMO_KLIC,
+  KATALOG_PREJMENOVANI,
+  pokrytiOblasti,
+} from '../../scripts/kontrola/katalog-pokryti'
 
 const zaznam = (nazev: string, pohori: string, vyska: number | null = null) => ({
   Název: nazev,
@@ -119,5 +123,68 @@ describe('pokrytiOblasti', () => {
       [objekt('chata-prasiva', 'Chata Prašivá', 'profil')],
     )
     expect(v.silne[0].kde).toBe('profil')
+  })
+})
+
+/**
+ * Dvě ruční tabulky, které z reportu udělaly použitelnou věc. Bez nich
+ * hlásil report 9 beskydských mezer; s nimi 3 — a ten rozdíl nejsou tři
+ * chybějící objekty, ale tři objekty, které v repu celou dobu ležely pod
+ * jiným jménem, a dva, které do průvodce vůbec nepatří.
+ */
+describe('ruční tabulky z rešerše 8. 8. 2026', () => {
+  it('překlad zastaralého katalogového jména spáruje objekt, který v repu je', () => {
+    // „Chata na Radhošti" dnes neexistuje — je to Horský hotel Radegast.
+    // Bez překladu spadne do mezer, ačkoli kandidát v repu leží.
+    const v = pokrytiOblasti(
+      'beskydy',
+      ['Moravskoslezské Beskydy'],
+      [zaznam('Chata na Radhošti', 'Moravskoslezské Beskydy', 1129)],
+      [objekt('horsky-hotel-radegast', 'Horský hotel Radegast')],
+    )
+    expect(v.mezery).toEqual([])
+    expect(v.silne.map((s) => s.s)).toEqual(['horsky-hotel-radegast'])
+  })
+
+  it('objekt mimo klíč zařazení není mezera, ale zavřená otázka s důvodem', () => {
+    // Hviezdoslavova hájovňa je literární muzeum bez občerstvení. Kdyby ji
+    // report vedl jako mezeru, každá další session ji bude dohledávat znovu.
+    const v = pokrytiOblasti(
+      'beskydy',
+      ['Oravské Beskydy'],
+      [zaznam('Hviezdoslavova hájovňa', 'Oravské Beskydy', 900)],
+      [],
+    )
+    expect(v.mezery).toEqual([])
+    expect(v.mimoKlic).toHaveLength(1)
+    expect(v.mimoKlic[0].nazev).toBe('Hviezdoslavova hájovňa')
+    // Důvod musí být věcný, ne prázdný — jinak je tabulka jen umlčení.
+    expect(v.mimoKlic[0].duvod).toMatch(/občerstvení/)
+    expect(v.mimoKlic[0].duvod.length).toBeGreaterThan(60)
+  })
+
+  it('rozhodnutí „mimo klíč" má přednost před párováním jmen', () => {
+    // I kdyby někdo Bahenec jako kandidáta založil, rozhodnutí platí dál —
+    // objekt se nemá tvářit jako pokryté místo, ale jako vyřízená otázka.
+    const v = pokrytiOblasti(
+      'beskydy',
+      ['Slezské Beskydy'],
+      [zaznam('Horský hotel Bahenec', 'Slezské Beskydy', 886)],
+      [objekt('wellness-hotel-bahenec', 'Wellness hotel Bahenec')],
+    )
+    expect(v.mimoKlic.map((m) => m.nazev)).toEqual(['Horský hotel Bahenec'])
+    expect(v.silne).toEqual([])
+  })
+
+  it('každý řádek obou tabulek nese neprázdný obsah', () => {
+    for (const [k, v] of Object.entries(KATALOG_PREJMENOVANI)) {
+      expect(v.length, `${k} bez dnešního jména`).toBeGreaterThan(0)
+      for (const jmeno of v) expect(jmeno.trim().length).toBeGreaterThan(3)
+    }
+    for (const [k, d] of Object.entries(KATALOG_MIMO_KLIC)) {
+      // Krátký důvod by znamenal rozhodnutí bez dokladu; u vyřazení objektu
+      // z průvodce je doklad to jediné, co ho drží.
+      expect(d.length, `${k} má příliš krátký důvod`).toBeGreaterThan(80)
+    }
   })
 })

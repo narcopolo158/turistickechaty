@@ -547,3 +547,123 @@ jmenovci:
       tím, že jádro názvu je jediný znak.
     rozhodl: Claude (návrh z 8. 8. 2026) — oba objekty mimo klíč zařazení
     checked: 2026-08-08
+  - jadro: bezrucova-chata
+    objekty:
+      - beskydy/bezrucova-chata
+      - beskydy/chata-ropicka
+    duvod: >-
+      DVĚ BEZRUČOVY CHATY V TÝCHŽ BESKYDECH, a druhá se tak dnes nejmenuje —
+      právě proto to sem patří. Publikovaný profil `beskydy/bezrucova-chata`
+      je chata Klubu českých turistů na vrcholu Lysé hory (jméno od roku
+      1948 po znárodnění). Chata na Ropičce ale nesla podle vlastního webu
+      (ropicka.cz/historie, čteno 8. 8. 2026) OFICIÁLNÍ jméno „Bezručova
+      chata, jak se oficiálně nazývala" — postavil ji roku 1924 Klub českých
+      turistů, odbor Slezská Ostrava, tedy týž spolek. Dnes se objekt
+      představuje jako Residence Ropička, takže v datech ke kolizi nedojde;
+      dojde k ní ve STARÝCH PRAMENECH a mapách, a to je horší, protože se to
+      pozná až po přiřazení špatného faktu. Vzdálenost obou objektů se
+      neměřila — Lysá hora 49.5454539 / 18.4477332 (profil), Ropička dle
+      turistika.cz okolo 49.614 / 18.559, tedy řádově osm kilometrů;
+      měření GPS proběhne, až bude Ropička v datech.
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný blok — nález z rešerše devíti
+      katalogových mezer; Ropička v datech ještě není, záznam je preventivní)
+    checked: 2026-08-08
+
+  # ── Nálezy z Michalova exportu Vysokých Tater (8. 8. 2026, +102 kandidátů).
+  # Osm kolizí naráz, protože Tatry přinesly do korpusu polskou i slovenskou
+  # vrstvu jmen, která se s beskydskou a jesenickou potkává. Všechny
+  # vzdálenosti jsou MĚŘENÉ z GPS kandidátů, ne odhadnuté.
+  - jadro: chata
+    objekty:
+      - javorniky-vsetinske-vrchy/chata
+      - vysoke-tatry/chata
+    duvod: >-
+      Dva objekty, jejichž celé jméno je slovo „Chata" — naměřeno 145 483 m,
+      tedy Javorníky proti Spišské Maguře. Není to jmenovec ani duplicita, je
+      to prázdné jméno: v OSM bývá „Chata" zbytek po hromadném importu nebo
+      obecné označení bez vlastního názvu. Do průvodce nepatří ani jeden;
+      triáž je pošle do koše K POSOUZENÍ a nejspíš pak mimo klíč. Vzor
+      dvojice objektů jménem „1".
+    rozhodl: Claude (8. 8. 2026, samostatný blok) — oba objekty mimo klíč zařazení
+    checked: 2026-08-08
+  - jadro: goralska
+    objekty:
+      - beskydy/goralska-chata
+      - vysoke-tatry/goralska-chata
+    duvod: >-
+      DVĚ RŮZNÉ „Góralské chaty", naměřeno 96 881 m: jedna v okolí
+      Bielska-Białej, druhá v Zakopaném. „Góralska chata" je v polském
+      podhůří jméno tak obvyklé jako české „Koliba" — shoda nic neznamená
+      a rozlišovačem je obec (doloženou má jen zakopanská). Vzor dvojice
+      „Bacówka".
+    rozhodl: Claude (8. 8. 2026, samostatný blok) — čeká na doložení obce při triáži
+    checked: 2026-08-08
+  - jadro: alpina
+    objekty:
+      - javorniky-vsetinske-vrchy/chata-alpina
+      - vysoke-tatry/alpina
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 153 320 m: Chata Alpina v Lazech pod
+      Makytou na slovenské straně Javorníků a Alpina ve Vysokých Tatrách.
+      Obě obce jsou doložené, takže rozlišovač je k dispozici hned (DATA-17
+      R6). Jméno „Alpina" nese v Karpatech řada penzionů.
+    rozhodl: Claude (8. 8. 2026, samostatný blok)
+    checked: 2026-08-08
+  - jadro: goral
+    objekty:
+      - vysoke-tatry/chalupa-goral
+      - vysoke-tatry/chata-goral
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY V JEDNÉ OBLASTI, naměřeno 4 118 m: Chalupa Goral
+      v Jezersku a Chata Goral ve Veľké Frankové, obě na Zamagurí. Tohle je
+      typ kolize, který nejvíc svádí ke sloučení — týž kraj, týž jazyk,
+      podobné jméno —, ale čtyři kilometry a dvě různé obce mluví jasně.
+      Rozlišovač: obec, doložená u obou.
+    rozhodl: Claude (8. 8. 2026, samostatný blok)
+    checked: 2026-08-08
+  - jadro: polana
+    objekty:
+      - vysoke-tatry/penzion-chata-polana
+      - vysoke-tatry/polana
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY V JEDNÉ OBLASTI, naměřeno 10 264 m. „Poľana" je
+      slovenské obecné slovo pro horskou lučinu, takže jméno je stejně
+      obecné jako „Na Rozcestí" nebo „Panorama" — shoda je čekaná. Obec není
+      doložená ani u jednoho, rozlišovač zatím chybí (DATA-17 R6).
+    rozhodl: Claude (8. 8. 2026, samostatný blok) — čeká na doložení obcí při triáži
+    checked: 2026-08-08
+  - jadro: veronika
+    objekty:
+      - jeseniky/veronika
+      - vysoke-tatry/chata-veronika
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 227 641 m — je to nejvzdálenější dvojice
+      jmenovců v celém registru a dobrá ukázka toho, proč se kolize řeší
+      měřením, ne úvahou: mezi Jeseníky a Vysokými Tatrami je přes dvě stě
+      kilometrů a přesto shoda jména vyskočí. Jesenická „Veronika" má z OSM
+      typ `obsluhovana`, tatranská nic; obec ani jedna.
+    rozhodl: Claude (8. 8. 2026, samostatný blok) — čeká na doložení obcí při triáži
+    checked: 2026-08-08
+  - jadro: zbojnicka
+    objekty:
+      - beskydy/zbojnicka-chata
+      - vysoke-tatry/chata-zbojnicka
+      - vysoke-tatry/zbojnicka-chata
+    duvod: >-
+      TŘI RŮZNÉ OBJEKTY, a jeden z nich je katalogová vysokohorská chata,
+      takže záměna by tady byla nejdražší z celého registru. Naměřené
+      vzdálenosti: `vysoke-tatry/zbojnicka-chata` (49.1766085 / 20.1673952,
+      obec Vysoké Tatry) je ta PRAVÁ Zbojnícka chata z katalogu — 1960 m,
+      postavena 1907, vyhořela 1998; od `vysoke-tatry/chata-zbojnicka`
+      u Zakopaného je vzdálená 19 859 m a od `beskydy/zbojnicka-chata`
+      v Ustroni 112 410 m. Zakopanská a ustroňská jsou od sebe 92 857 m.
+      „Zbójnicka chata" je v polských horách jméno pro hospodu ve
+      zbojnickém stylu; slovenská Zbojnícka chata je naopak konkrétní
+      vysokohorská chata Klubu slovenských turistov. Rozlišovač: obec
+      a nadmořská výška — u tatranské pravé bude 1960 m, u obou ostatních
+      pod tisícem.
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný blok — kolize přišla s Michalovým
+      exportem Vysokých Tater)
+    checked: 2026-08-08

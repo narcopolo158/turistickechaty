@@ -729,3 +729,27 @@ vyrazeno:
       Claude (8. 8. 2026, samostatný čtyřhodinový blok — otázka byla v deníku
       vedená jako otevřená a je rozhodnutá doklady o stavbě, ne odhadem)
     checked: 2026-08-08
+
+  # DUPLICITA V OSM PŘES HRANICI DVOU OBLASTÍ (8. 8. 2026). Ukázala mez
+  # DATA-36: ta pojistka porovnává IDENTITU objektu podle URL v OSM, a když
+  # týž hotel má v OSM DVĚ entity, každá projde v jiné oblasti jako nový
+  # objekt. Devět metrů a shodné jméno rozhodly jednoznačně.
+  - osm: https://www.openstreetmap.org/node/291203956
+    slug: beskydy/horsky-hotel-cartak
+    duvod: >-
+      Duplicita v OpenStreetMap — týž objekt jako kandidát
+      javorniky-vsetinske-vrchy/horsky-hotel-cartak
+      (https://www.openstreetmap.org/node/3814562072): shodné jméno „Horský
+      hotel Čarták" a naměřeno 9 m. Objekt patří do oblasti Javorníky
+      a Vsetínské vrchy — Čarták stojí na Soláni v obci Hutisko-Solanec
+      a katalog ho vede mezi sedmi objekty Vsetínských vrchů, ne Beskyd
+      (rozhodnutí Michala 8. 8. 2026 o rozdělení oblastí). Beskydská kopie
+      navíc nemá doloženou obec, javornická ji má. Ponechána javornická.
+      DATA-36 tuhle dvojici nezachytila a je to jeho známá mez: pojistka
+      porovnává URL objektu v OSM, tedy identitu ENTITY, kdežto tady jde
+      o dvě entity jednoho objektu (vzor Chaty Mamut a Lyžařské boudy
+      z 20. 7. 2026, jen přes hranici dvou oblastí).
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný blok — duplicita přišla s Michalovým
+      opakovaným exportem Beskyd, rozhodnuto měřením z GPS)
+    checked: 2026-08-08
