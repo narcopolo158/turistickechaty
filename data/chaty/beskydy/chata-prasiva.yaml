@@ -1,0 +1,347 @@
+# Chata Prašivá — PRVNÍ PUBLIKOVANÝ PROFIL OBLASTI BESKYDY (8. 8. 2026),
+# povýšen z kandidáta DATA-01. Zároveň nese ROZHODNUTÍ, které bylo v deníku
+# vedeno jako otevřené: chata a rozhledna na Malé Prašivé jsou JEDEN objekt,
+# ne dva. Rozhledna je věžová nástavba budovy chaty, vstup vede přes chatu
+# a provozuje ji týž nájemce — podrobně v interniPoznamky.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Chata Prašivá
+slug: chata-prasiva
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: beskydy
+
+aliasy:
+  - nazev: Turistická chata na Prašivé
+    poznamka: podoba jména, kterou používá obec Vyšní Lhoty
+  - nazev: Rozhledna na chatě Prašivá
+    poznamka: >-
+      jméno, pod kterým rozhlednu vedou turistické portály; je to táž
+      budova, ne druhý objekt
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.6365933
+lng: 18.4840782
+vyska: 706
+obec: Vyšní Lhoty
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/4731169176 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 706 m se shoduje napříč pěti prameny (načteno 8. 8. 2026): obec
+    Vyšní Lhoty — „Historická dřevěná horská chata Prašivá z roku 1921 se
+    nachází v nadmořské výšce 706 m", dále Kudy z nudy, treking.cz,
+    atlasceska.cz („v nadmořské výšce 706 metrů") a beskydyportal.cz.
+    POZOR NA ZÁMĚNU DVOU KOPCŮ, ne na rozpor pramenů: chata stojí na
+    severozápadním výběžku zvaném MALÁ PRAŠIVÁ (706 m), ne na vrcholu
+    PRAŠIVÁ (843 m), který je asi kilometr dál. ceskehory.cz to říká
+    doslova: „Zalesněný vrch Prašivá (843 m) leží v severovýchodní části
+    Moravskoslezských Beskyd. Na severozápadním výběžku nazývaném Malá
+    Prašivá se nachází turistická dřevěná chata s rozhlednou z roku 1921."
+    Když tedy turistika.cz uvádí u rozhledny „843 metrů nad mořem", není
+    to jiné měření téhož místa, ale výška vrcholu připsaná chatě.
+    Adresa: kct.cz — „Vyšní Lhoty 200, Vyšní Lhoty 739 51"; treking.cz
+    uvádí PSČ 739 06, což je rozpor v PSČ a do dat se proto nepíše.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+# kapacita SE NEVYPLŇUJE: viz overeniNocleh — celkový počet lůžek vede jediný
+# sekundární pramen a rozdělení po pokojích si tři prameny odporují.
+overeniNocleh:
+  source: >-
+    ROZPOR PRAMENŮ, nesrovnaný (načteno 8. 8. 2026). Celkový počet lůžek
+    uvádí jediný pramen: treking.cz „25 lůžek" ve „2-5lůžkových pokojích".
+    Rozdělení po pokojích ale tři prameny uvádějí každý jinak — KČT jako
+    vlastník i natreku.cz píší „2-9 lůžkové pokojíky", obec Vyšní Lhoty
+    „2-8 lůžkových pokojích". Čtyři různá horní čísla (5, 8, 9) na týchž
+    pokojích znamenají, že se prameny buď netýkají téhož stavu po obnově,
+    nebo opisují. Dokud to nepotvrdí provozovatel (DATA-04), kapacita
+    zůstává prázdná: u chaty, kam se jde pěšky, je špatné číslo lůžek
+    horší než žádné.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    OpenStreetMap vede na budově uzel s amenity=restaurant
+    (https://www.openstreetmap.org/node/4731169176 — ODbL). Nezávisle
+    KČT jako vlastník uvádí chatu ve svém seznamu turistických chat
+    s ubytováním i pohostinstvím a natreku.cz ji vede jako „open all year
+    round" (obojí načteno 8. 8. 2026). Klíč zařazení je tedy splněn
+    dvakrát: veřejné občerstvení i role na turistické trase.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: dva prameny dávají dva neslučitelné rozvrhy
+# a jeden z nich je datovaný rokem 2019 — viz overeniProvoz.
+overeniProvoz:
+  source: >-
+    ROZPOR PRAMENŮ, nesrovnaný (načteno 8. 8. 2026). KČT v článku
+    datovaném 31. 10. 2019 uvádí „Pondělí, úterý – zavřeno. Středa – pátek:
+    10 – 17 hod. Sobota, neděle, svátky: 9 – 17 hod."; Kudy z nudy uvádí
+    Po–Pá 10:00–18:00 a So–Ne 09:00–19:00; OpenStreetMap vede třetí rozvrh
+    se zimním a letním režimem (Oct-May Mo,Tu 10:00-16:00 … Jun-Sep Sa,Su
+    09:00-19:00). Shodují se jen na tom, že provoz je celoroční a že
+    o víkendu se otvírá dřív. Konkrétní hodiny proto nezapisujeme —
+    rozhodne jeden telefonát (DATA-04).
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  # ROZPOR: KČT i natreku.cz uvádějí +420 555 112 277, treking.cz
+  # +420 604 618 400. Zapisuje se číslo vlastníka objektu (KČT), rozpor je
+  # přiznaný v interniPoznamky.
+  telefon: '+420555112277'
+  email: chatari@chataprasiva.cz
+  web: https://chataprasiva.cz/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1921
+overeniHistorie:
+  source: >-
+    atlasceska.cz (načteno 8. 8. 2026): „Slavnostní otevření dřevěné chaty
+    s rozhlednou proběhlo za velkého zájmu veřejnosti 2. října 1921."
+    Rok potvrzuje i vlastní web chaty, který se představuje „Chata Prašivá
+    od r. 1921", a turistika.cz („Turistická chata Klubu českých turistů
+    s rozhlednou z roku 1921"). Pozemek pod chatou byl získán už roku 1899
+    (atlasceska.cz). ROZPOR O STAVEBNÍKA, nesrovnaný: propamatky.cz vedou
+    v jednom článku „partu nadšenců a dobrovolníků z Pobeskydské jednoty
+    slezské", v druhém článku TÝŽ portál píše o objektu „postaveném díky
+    úsilí Klubu československých turistů"; atlasceska.cz drží Pobeskydskou
+    jednotu slezskou. Do dat se proto stavebník nezapisuje jako fakt
+    a v próze se přiznává, že se prameny neshodly. Architektem byl dle
+    atlasceska.cz „místecký architekt Čermák", iniciátorem stavby dle Kudy
+    z nudy Jan Valečka, po němž je pojmenován Valečkův sál.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Rozhledna není samostatná stavba u chaty, ale věžová nástavba její
+      střechy s krytým vyhlídkovým ochozem. Vstup na ni vede přes chatu.
+    kategorie: jine
+    zdroj: >-
+      obec Vyšní Lhoty (načteno 8. 8. 2026): „Raritou je historická
+      rozhledna, která je přímo součástí chaty."; propamatky.cz:
+      „Velkým lákadlem je bezesporu věžovitá nástavba chaty, která funguje
+      jako rozhledna."; atlasceska.cz popisuje chatu „vysokou střešní
+      nástavbou s krytým vyhlídkovým ochozem"; turistika.cz: „Vstup na
+      rozhlednu je přes ubytovací zařízení chaty."
+  - text: >-
+      Na stavbu chaty přispěl ze svých soukromých peněz první
+      československý prezident Tomáš Garrigue Masaryk.
+    kategorie: stari
+    zdroj: >-
+      propamatky.cz, rozhovor s nájemcem Martinem Stillerem (načteno
+      8. 8. 2026): „Na její výstavbu přispěl ze svých soukromých peněz
+      i první prezident T. G. Masaryk."
+  - text: >-
+      Obnova chaty mezi roky 2015 a 2020 stála podle nájemce víc než tři
+      miliony korun a patnáct tisíc hodin dobrovolnické práce.
+    kategorie: stari
+    zdroj: >-
+      propamatky.cz (načteno 8. 8. 2026): „více než tři miliony korun plus
+      15 tisíc hodin dobrovolnických prací"
+  - text: >-
+      Na louce u chaty stojí dřevěný kostel z roku 1640. Původně byl
+      zasvěcen svatému Ignáci z Loyoly a roku 1673 přesvěcen na svatého
+      Antonína Paduánského.
+    kategorie: jine
+    zdroj: >-
+      paragliding-prasiva.cz (načteno 8. 8. 2026): „Kostel sv.Antonína
+      Paduánského na Prašivé (706 m) byl zbudován v roce 1640 Jiřím,
+      hrabětem z Oppersdorfu."; ceskehory.cz: „Na blízké louce poblíž
+      chaty stojí dřevěný kostel sv. Antonína z roku 1640, který je pod
+      ochranou státního památkového úřadu."
+  - text: >-
+      Chata je jedním ze čtyř kontrolních bodů projektu Přechod Beskyd —
+      spolu s Kamenitým, Skalkou a Gírovou.
+    kategorie: jine
+    zdroj: >-
+      prechodbeskyd.cz (načteno 8. 8. 2026): „čtyři horské chaty na
+      hřebenech Moravskoslezských Beskyd – chata Prašivá, Kamenitý, Skalka
+      a Gírová"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěná chata z roku 1921 na Malé Prašivé, s rozhlednou zabudovanou do
+  vlastní střechy a dřevěným kostelem z roku 1640 na louce před ní. Patří
+  Klubu českých turistů a po pěti letech dobrovolnické obnovy je znovu
+  celoročně otevřená.
+text:
+  - >-
+    Chata Prašivá stojí ve 706 metrech na severozápadním výběžku Prašivé,
+    kterému se říká Malá Prašivá. Vlastní vrchol Prašivá (843 m) je asi
+    kilometr dál a vede k němu od chaty červená značka — na tuhle záměnu
+    je dobré si dát pozor, protože některé turistické portály připisují
+    chatě výšku vrcholu.
+  - >-
+    Rozhledna je tu udělaná neobvykle. Není to samostatná věž u domu, ale
+    věžová nástavba jeho střechy s krytým
+    vyhlídkovým ochozem, a nahoru se chodí zevnitř chaty. Obec Vyšní Lhoty
+    to říká krátce: rozhledna je přímo součástí chaty. V databázích
+    turistických cílů proto bývá vedená dvakrát — jako chata a jako
+    rozhledna — ačkoli je to jedna budova z jednoho roku.
+  - >-
+    Otevřela se 2. října 1921. Kdo přesně ji postavil, se z pramenů nedá
+    říct s klidným svědomím: jeden článek mluví o dobrovolnících
+    z Pobeskydské jednoty slezské, druhý článek téhož serveru o Klubu
+    československých turistů. Shodné jsou naopak dvě jiné věci — pozemek
+    byl získán už roku 1899 a iniciátorem stavby byl Jan Valečka, po němž
+    se dnes jmenuje sál v chatě. A jedna doložená drobnost, která o té
+    době vypovídá dost: na stavbu přispěl ze svých soukromých peněz
+    prezident Masaryk.
+  - >-
+    Dnes chata patří Klubu českých turistů, odboru Beskydy, a provozují ji
+    nájemci Martin a Renáta Stillerovi. Mezi roky 2015 a 2020 prošla
+    obnovou, do které se podle nájemce vešlo víc než tři miliony korun
+    a patnáct tisíc hodin dobrovolnické práce — vyměnila se okna
+    a střecha, opravila kuchyň a obnovila právě ta věžička s rozhlednou.
+  - >-
+    Na louce před chatou stojí dřevěný kostel z roku 1640, chráněná
+    památka. Postavil ho Jiří, hrabě z Oppersdorfu, původně jako kostel
+    svatého Ignáce z Loyoly; na svatého Antonína Paduánského byl
+    přesvěcen roku 1673. K svátku svatého Antonína se sem váže lidová
+    tradice o dívkách, které k němu na třináctého června dojdou bosé.
+  - >-
+    Chodí se sem od Vyšních Lhot po žluté nebo od Pražma po modré, jsou tu
+    i další nástupy — Raškovice, Dobratice, Komorní Lhotka, Morávka —
+    a naučná stezka. Délky přístupů se v pramenech rozcházejí (z Pražma
+    šest kilometrů podle jednoho, deset podle druhého), takže je tu
+    neuvádíme; přesné trasy doplní pipeline z výškových profilů. Chata je
+    jedním ze čtyř kontrolních bodů projektu Přechod Beskyd vedle
+    Kamenitého, Skalky a Gírové.
+  - >-
+    Kdy je otevřeno a jestli je rozhledna právě přístupná, poctivě nevíme.
+    Provoz je celoroční, ale rozvrhy tří pramenů se neshodují a u přístupu
+    na rozhlednu jde rozpor ještě dál: jeden portál ji vede jako
+    veřejnosti uzavřenou, druhý jako přístupnou s průvodcem, třetí jako
+    otevřenou v pátek a o víkendech, čtvrtý jen na rezervaci. Vlastní web
+    chaty se nám nepodařilo otevřít dál než na úvodní stránku. Než to
+    potvrdí telefonát, radši žádný rozvrh než špatný.
+  - >-
+    Údaje na téhle stránce nesou stránky Klubu českých turistů, obce Vyšní
+    Lhoty, portály propamatky.cz, atlasceska.cz, Kudy z nudy, treking.cz
+    a ceskehory.cz; polohu nese OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Klub českých turistů, stránka chaty — vlastník objektu, nájemce
+      Martin Stiller, adresa Vyšní Lhoty 200, telefon, e-mail, pokoje
+      (načteno 8. 8. 2026)
+    url: https://kct.cz/chaty/chata-prasiva/
+  - popis: >-
+      Obec Vyšní Lhoty, Turistická chata na Prašivé — výška 706 m,
+      rozhledna „přímo součástí chaty", vlastník KČT (načteno 8. 8. 2026)
+    url: https://www.vysnilhoty.cz/historie/turisticka-chata-na-prasive
+  - popis: >-
+      atlasceska.cz — otevření 2. října 1921, pozemek získán 1899,
+      architekt Čermák z Místku, střešní nástavba s krytým vyhlídkovým
+      ochozem (načteno 8. 8. 2026)
+    url: https://www.atlasceska.cz/pamatky/rozhledna-prasiva-19679
+  - popis: >-
+      propamatky.cz, rozhovor s nájemcem Martinem Stillerem — věžovitá
+      nástavba jako rozhledna, příspěvek T. G. Masaryka, rozsah obnovy
+      (načteno 8. 8. 2026)
+    url: >-
+      https://www.propamatky.cz/zpravodajstvi/41775-rozhovor-s-martinem-stillerem-o-obnove-chaty-prasiva-v-beskydech
+  - popis: >-
+      ceskehory.cz — vrchol Prašivá 843 m a chata na výběžku Malá
+      Prašivá, přístupy od Vyšních Lhot a Pražma, kostel z roku 1640
+      (načteno 8. 8. 2026)
+    url: https://prasiva.ceskehory.cz/
+  - popis: >-
+      turistika.cz — vstup na rozhlednu vede přes chatu, prohlídky
+      s průvodcem od 11. 6. 2016 (načteno 8. 8. 2026)
+    url: https://www.turistika.cz/mista/rozhledna-na-chate-prasiva/detail
+  - popis: >-
+      Kudy z nudy — iniciátor stavby Jan Valečka a Valečkův sál,
+      otvírací doba, tradice svatoantonínské poutě (načteno 8. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/chata-prasiva
+  - popis: >-
+      paragliding-prasiva.cz — kostel z roku 1640, zakladatel Jiří
+      z Oppersdorfu, přesvěcení 1673 (načteno 8. 8. 2026)
+    url: https://paragliding-prasiva.cz/chata-a-kostel/
+  - popis: >-
+      prechodbeskyd.cz — chata jako jeden ze čtyř bodů Přechodu Beskyd
+      (načteno 8. 8. 2026)
+    url: https://prechodbeskyd.cz/?page_id=21
+  - popis: >-
+      treking.cz — 25 lůžek ve 2–5lůžkových pokojích, nájemci Stillerovi
+      od roku 2015, druhé telefonní číslo (načteno 8. 8. 2026)
+    url: https://www.treking.cz/chaty/prasiva.htm
+  - popis: >-
+      OpenStreetMap (GPS, amenity=restaurant, telefon, web; ODbL)
+    url: https://www.openstreetmap.org/node/4731169176
+interniPoznamky: >-
+  Povýšeno z data/kandidati/beskydy/chata-prasiva.yaml (8. 8. 2026). PRVNÍ
+  publikovaný profil oblasti Beskydy.
+
+  ROZHODNUTÍ, KTERÉ TENHLE PROFIL NESE: chata a rozhledna jsou JEDEN objekt,
+  jeden profil. Otázka byla v deníku vedená jako otevřená („chata pět metrů
+  od rozhledny — precedens pro celé Beskydy") a rozhodla se doklady, ne
+  odhadem. Rozhledna je věžová NÁSTAVBA STŘECHY téže budovy (obec Vyšní
+  Lhoty: „přímo součástí chaty"; propamatky.cz: „věžovitá nástavba chaty";
+  atlasceska.cz: „vysokou střešní nástavbou s krytým vyhlídkovým ochozem"),
+  vstup vede přes chatu (turistika.cz) a vznikly společně roku 1921. Těch
+  pět metrů v OpenStreetMap je odstup dvou POI uzlů na jedné budově, ne dvou
+  staveb — a je to dobré si zapamatovat, protože metrická vzdálenost sama
+  o sloučení nerozhoduje. Kandidát `prasiva` (typ rozhledna, OSM node
+  3064424393) je proto zapsaný v `_vyrazeno.yaml` s důvodem „sloučeno do
+  tohoto profilu" — vzor Kleti a Pancíře na Šumavě.
+
+  ROZDÍL PROTI PŘÍPADU, KTERÝ SE SLOUČIT NEMÁ: tady je věž ČÁSTÍ budovy.
+  Kdyby stála samostatně a jen ji provozoval týž člověk, byla by to jiná
+  úvaha — u Kleti rozhodl společný provozovatel, tady rozhoduje sama
+  stavba. Až přijde na řadu Žalý nebo tři zápisy na Čertovici, tohle je
+  ta rozlišovací otázka: jedna budova, nebo dvě?
+
+  MALÁ PRAŠIVÁ (706 m) × PRAŠIVÁ (843 m) — DVA KOPCE, NE ROZPOR PRAMENŮ.
+  Chata je na výběžku, ne na vrcholu. Pět pramenů se na 706 m shoduje;
+  turistika.cz uvádí u rozhledny 843 m, což je výška VRCHOLU připsaná
+  chatě. Konvence „nižší číslo při rozporu" se sem nevztahuje, protože to
+  není rozpor — je to jiné místo (vzor Vsackého Cábu v Javorníkách).
+  Označení „Velká Prašivá" se nepodařilo doložit; prameny píší jen
+  „Prašivá", a tak se tu tak píše taky.
+
+  MOJE CHYBA V ZADÁNÍ REŠERŠE, chycená rešeršistou: ptal jsem se, jestli
+  chatu postavila Pohorská jednota Radhošť. Nepostavila — v žádném prameni
+  o Prašivé nevystupuje. Je to týž druh omylu jako přepsaná délka
+  u Menauerů: domněnka v zadání se propíše do dat, když ji nikdo nechytí.
+  Doložení stavebníka je navíc samo rozporné (Pobeskydská jednota slezská ×
+  Klub československých turistů, oba u propamatky.cz), takže se do dat
+  nezapisuje vůbec.
+
+  SUPERLATIV ZAPSÁN NEBYL, ač se nabízel. turistika.cz i startovac.cz píší
+  „nejstarší česká horská chata v Beskydech" — pozor na to slovo „česká":
+  není to tvrzení o nejstarší chatě v Beskydech vůbec (Beskidenverein
+  postavil chaty na Javorovém a Lysé hoře už 1895). Do prózy se to proto
+  nedostalo ani v podobě s přívlastkem; kdyby se doplňovalo, musí být
+  citované celé včetně „česká", jinak je to nepravda.
+
+  VSTUPNÉ NA ROZHLEDNU (30/20 Kč) SE NEZAPISUJE — jediný pramen je
+  uživatelský příspěvek z doby okolo 2016 a ceny se do profilů nepíšou.
+  Stejně tak není jasný dnešní režim přístupu na věž: čtyři prameny dávají
+  čtyři odpovědi (uzavřená / s průvodcem / pátek a víkend / na rezervaci).
+  Do prózy to šlo jako přiznaná nejistota, do dat ne.
+
+  ROZPOR V TELEFONU: KČT a natreku.cz uvádějí +420 555 112 277, treking.cz
+  +420 604 618 400. Zapsáno číslo od vlastníka objektu. E-mail
+  chatari@chataprasiva.cz uvádí KČT i treking.cz shodně.
+
+  NEDOLOŽENO (nezapsáno): kapacita lůžek (jediný sekundární pramen, rozpory
+  v pokojích), otvírací doba (tři rozvrhy), přesný dnešní režim rozhledny,
+  výška rozhledny (16 m se 57 schody dle ceskehory.cz × 15 m dle
+  navylet.cz — do dat nepatří, dokud se to nesrovná), žádný požár chaty
+  (žádný pramen ho nezmiňuje — nalezené požáry patří Libušínu). Vlastní web
+  chataprasiva.cz vrací na všech podstránkách 404, takže vlastní vyprávění
+  chaty o sobě tu chybí; kandidát na pokus z Michalova prohlížeče. Fotku
+  dodá běh DATA-02, výškový profil přístupů DATA-06.

@@ -1,0 +1,479 @@
+# Bezručova chata na Lysé hoře — povýšena z kandidáta DATA-01 (8. 8. 2026),
+# druhý publikovaný profil oblasti Beskydy a nejvýše položený objekt oblasti.
+# Nese s sebou i rozhodnutí o tom, kolik profilů má vrchol Lysé hory mít —
+# viz interniPoznamky.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Bezručova chata
+slug: bezrucova-chata
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: beskydy
+
+aliasy:
+  - nazev: Bezručova chata na Lysé hoře
+    poznamka: úplná podoba jména, kterou používá Klub českých turistů
+  - nazev: Chata Klubu československých turistů na Lysé hoře
+    poznamka: >-
+      původní jméno první chaty (1934/35); na Bezručovu byla přejmenována
+      po znárodnění roku 1948
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.5454539
+lng: 18.4477332
+# vyska SE NEVYPLŇUJE: viz overeniLokace — výšku CHATY vedou jen dva
+# sekundární prameny a každý jinak, a výška HORY je sama rozporná.
+obec: Ostravice
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/1120544766 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Klub českých turistů jako vlastník uvádí souřadnice 49.5454814N,
+    18.4477831E (načteno 8. 8. 2026) — souhlasí na čtyři desetinná místa.
+    Adresa: „Ostravice 856, 739 14 Ostravice" shodně na vlastním webu
+    chaty, u KČT i na nocleh.kct.cz.
+    VÝŠKA SE NEZAPISUJE ANI U CHATY, ANI U HORY, a je to dvojí rozpor.
+    (1) Výšku chaty vedou jen dva sekundární prameny a rozcházejí se:
+    treking.cz „1 304 m", vrcholovka.cz „Bezručova chata (1310 m n.m.)";
+    vlastní web ani KČT samostatnou výšku chaty neuvádějí vůbec, jen výšku
+    hory. (2) Výška Lysé hory sama je rozporná: 1323 m uvádí vlastní web
+    chaty („nejvyšší hory Moravskoslezských Beskyd, kterou je Lysá hora
+    s výškou 1323 metrů nad mořem"), lysahora.cz, beskydyportal.cz
+    i nocleh.kct.cz; 1324 m uvádí Kudy z nudy, hrady.cz, turistika.cz
+    i vrcholovka.cz — a číslo 1324 je v místě natolik zažité, že se podle
+    něj jmenuje firma provozující sousední chaty (AK 1324, s. r. o.).
+    Rešerše 8. 8. 2026 hodnotu 1328 m, kterou vede PeakVisor, v žádném
+    místním prameni nenašla. Dokud se to nesrovná, zůstává pole prázdné
+    a v próze se říká „nad třinácti sty metry".
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 10
+overeniNocleh:
+  source: >-
+    Vlastní web chaty (načteno 8. 8. 2026): ubytování „pěti komfortně
+    zařízených dvoulůžkových pokojů s vlastním sociálním zařízením" —
+    tedy deset lůžek; totéž rozdělení uvádí Klub českých turistů,
+    nocleh.kct.cz (kde stojí i číslo 10) a lysahora.cz („nabízí ubytování
+    v pěti dvoulůžkových pokojích se sociálním zařízením"). ROZPOR,
+    přiznaný: lysahora.cz na jiné své stránce o novostavbě píše „12 lůžek
+    plus byt pro chataře". Rozdíl dvou lůžek se dá vysvětlit tím, že se
+    druhý pramen týká projektu a první provozu, ale doloženo to tak
+    nemáme. Zapsáno 10 dle konvence z 27. 7. 2026 (při rozporu nižší
+    číslo, rozpor přiznat) — a shodují se na něm čtyři prameny včetně
+    provozovatele.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    lysahora.cz (načteno 8. 8. 2026) popisuje restaurační část chaty
+    „se stodvaceti místy u stolu"; beskydyportal.cz vede restauraci
+    s „kvalitními pokrmy s maximálním využitím ingrediencí z místních
+    lesů, polí a chlívků" a terasou s výhledem; Kudy z nudy uvádí, že
+    „kuchyň vaří do 19:30". Klíč zařazení je splněn dvakrát: veřejné
+    občerstvení i role na turistické trase (vrchol je cílem osmi
+    značených výstupů).
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: dva prameny se rozcházejí v pondělí i v nedělním
+# zavíracím čase a provoz je zřejmě proměnný — viz overeniProvoz.
+overeniProvoz:
+  source: >-
+    ROZPOR PRAMENŮ, nesrovnaný (načteno 8. 8. 2026). Vlastní web chaty
+    uvádí Po–Pá 8:00–16:45 a 8:00–19:45, So 7:00–19:45, Ne 7:00–17:30;
+    treking.cz Po 8:00–16:45, Út–Pá 8:00–19:45, So 7:00–19:45,
+    Ne 7:00–17:45. Rozdíl je v pondělí a v nedělním zavíracím čase
+    o čtvrt hodiny. Kudy z nudy k tomu dodává, že „kuchyň vaří do 19:30"
+    a noční klid je „od 22:00 do 6:00". Celoroční provoz uvádí obecně
+    o chatách na Lysé hoře hrady.cz („Chaty poskytují občerstvení
+    i ubytování a jsou v celoročním provozu"), pro Bezručovu chatu zvlášť
+    ho žádný pramen výslovně nepotvrzuje. Rozvrh proto nezapisujeme.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+420605163756'
+  email: bezrucovachata@gmail.com
+  web: https://www.bezrucova-chata.cz/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1934
+overeniHistorie:
+  source: >-
+    lysahora.cz, historie chaty (načteno 8. 8. 2026): základní kámen
+    položen 1. října 1933 („1.října velkolepá slavnost položení
+    základního kamene"), stavbu provedla firma Nekvasil Ostrava za
+    602 000 Kč podle projektu inženýra Františka Knoblocha, a „v prosinci
+    1934, tedy za 6 měsíců, byla chata otevřena". ROZPOR O DATU OTEVŘENÍ,
+    nesrovnaný: týž pramen dodává, že „otevření chaty pro veřejnost
+    uskutečněno 16.června 1935", což potvrzuje i KČT („veřejnosti otevřena
+    16. června 1935"), kdežto treking.cz uvádí 6. 6. 1935. Rok 1934 se
+    tedy zapisuje jako rok DOKONČENÍ a otevření budovy; otevření pro
+    veřejnost je o půl roku později a den se v pramenech liší.
+    Architekta projektu potvrzuje i KČT („podle projektu architekta
+    Františka Knoblocha"). STAVEBNÍKEM byla dle lysahora.cz „Pobeskydská
+    župa Klubu českých turistů" — NE Pohorská jednota Radhošť, která se
+    v žádném prameni o Lysé hoře nevyskytuje (viz interniPoznamky).
+    Přejmenování: lysa-hora.cz i chronologie na galaxy.asu.cas.cz vedou
+    původní jméno „Chata Klubu československých turistů na Lysé hoře"
+    a přejmenování na Bezručovu chatu po znárodnění roku 1948.
+  verified: false
+  checked: '2026-08-08'
+
+milniky:
+  - rok: 1933
+    udalost: >-
+      1. října položen základní kámen chaty Pobeskydské župy Klubu
+      českých turistů podle projektu inženýra Františka Knoblocha.
+    zdroj: >-
+      lysahora.cz (načteno 8. 8. 2026): „1.října velkolepá slavnost
+      položení základního kamene"; „Chatu postavila Pobeskydská župa
+      Klubu českých turistů."
+  - rok: 1934
+    udalost: >-
+      V prosinci chata otevřena; stavbu provedla firma Nekvasil Ostrava
+      za 602 000 Kč, dům měl dvanáct pokojů, dvě noclehárny, ústřední
+      topení a elektrickou kuchyň.
+    zdroj: >-
+      lysahora.cz (načteno 8. 8. 2026): „stavba provedena fy. Nekvasil
+      Ostrava za 602 000,-Kč"; „v prosinci 1934, tedy za 6 měsíců, byla
+      chata otevřena"
+  - rok: 1948
+    udalost: >-
+      Po znárodnění přejmenována z „Chaty Klubu československých turistů
+      na Lysé hoře" na Bezručovu chatu.
+    zdroj: >-
+      lysa-hora.cz (načteno 8. 8. 2026) — „přejmenována na Bezručovu
+      chatu"; chronologie objektů na Lysé hoře, galaxy.asu.cas.cz:
+      „1948: Nationalization; Czech shelter renamed 'Bezručova chata'"
+  - rok: 1978
+    udalost: >-
+      11. března v 16.10 hodin chata vyhořela. Příčina nebyla
+      jednoznačně objasněna, spekulovalo se o elektroinstalaci;
+      v chatě zahynul tříletý chlapec.
+    zdroj: >-
+      lysahora.cz (načteno 8. 8. 2026): „Chata bohužel vyhořela
+      11.3.1978, požár vypukl v 16.10 hodin."; totéž datum uvádí vlastní
+      web chaty („Původní chata vyhořela 11.3.1978.") i treking.cz
+  - rok: 2015
+    udalost: >-
+      Po sedmatřiceti letech otevřena nová Bezručova chata — replika
+      vyhořelé funkcionalistické stavby, postavená Klubem českých turistů
+      za pomoci dobrovolníků a veřejné podpory.
+    zdroj: >-
+      Vlastní web chaty (načteno 8. 8. 2026): „Nová Bezručova chata,
+      otevřena 25.11.2015"; lysahora.cz: „Obnovená chata je vlastně
+      replikou vyhořelé Bezručovy chaty"; beskydyportal.cz: „byla
+      postavena Klubem českých turistů za pomocí dobrovolníků a finanční
+      podpory". ROZPOR VE DNI: tyden.cz i stavbaweb.cz popisují
+      slavnostní otevření 5. září 2015, vlastní web a beskydyportal.cz
+      uvádějí 25. listopadu 2015; treking.cz píše, že restaurace byla
+      otevřena „v listopadu 2015".
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Nová chata je záměrnou replikou té vyhořelé z roku 1934 — venku
+      funkcionalismus třicátých let, vevnitř nízkoenergetický dům
+      s rekuperací, solárem a fotovoltaikou.
+    kategorie: jine
+    zdroj: >-
+      lysahora.cz (načteno 8. 8. 2026): „Obnovená chata je vlastně
+      replikou vyhořelé Bezručovy chaty"; „moderním, ekologickým zdrojem
+      vytápění, s rekuperací, s použitím solár. a fotovolt. zařízení,
+      s důrazem na úspory energie a tepla"; stavbaweb.cz: „co nejvíce
+      původní funkcionalistickou podobu"
+  - text: >-
+      Na východní štítové zdi chaty je lezecká stěna; v domě je trvalá
+      výstava karpatské flóry a fauny a projekční místnost.
+    kategorie: jine
+    zdroj: >-
+      lysahora.cz (načteno 8. 8. 2026) — „lezecká stěna" na východní
+      štítové zdi, trvalá výstava karpatské flory a fauny, projekční
+      místnost pro filmy o ochraně přírody a historii Beskyd, dalekohled
+  - text: >-
+      Chata má k dispozici jen prameniště, které dává vodu při jarním
+      tání nebo po dlouhých deštích. V květnu 2026 musel vodovodní podnik
+      vozit pitnou vodu na vrchol cisternou třikrát za jediný týden.
+    kategorie: jine
+    zdroj: >-
+      Vlastní web chaty (načteno 8. 8. 2026): „má Bezručova chata
+      k dispozici pouze prameniště, které dává vodu jen při jarním tání
+      či dlouhotrvajících deštích"; Klub českých turistů, článek
+      ze 14. 5. 2026 — voda se z Krásné vyvážela na vrchol „hned
+      třikrát" během jednoho týdne
+  - text: >-
+      Jeden vodní zdroj na Zimném se dělí mezi všechny objekty na vrcholu
+      — radiokomunikace, meteorologickou stanici a dvě turistické chaty.
+    kategorie: jine
+    zdroj: >-
+      Klub českých turistů (načteno 8. 8. 2026), správce chaty Robin
+      Kukuczka: „Máme jeden zdroj pro celý kopec, je to vlastně na Zimném
+      a ten se musí přerozdělit mezi všechny subjekty na Lysé hoře"
+  - text: >-
+      Autem se na vrchol nedostanete: povolení k individuálnímu výjezdu
+      nelze získat a výjimky mají jen zásobování obou chat a obsluha
+      vysílače.
+    kategorie: jine
+    zdroj: >-
+      lysahora.cz (načteno 8. 8. 2026): „Získat povolení k individuálnímu
+      výjezdu motorovým vozidlem na Lysou horu NENÍ V SOUČASNÉ DOBĚ
+      MOŽNÉ!"; Dům přírody Beskydy / AOPK (13. 5. 2016): „Na účelové
+      komunikace v chráněných krajinných oblastech je navíc vjezd zákonem
+      zakázán.", výjimky jen pro zásobování Bezručovy chaty a chaty
+      Maraton a pro obsluhu vysílače
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata Klubu českých turistů na vrcholu Lysé hory, kterou prameny shodně
+  uvádějí jako nejvyšší horu Moravskoslezských Beskyd. Původní funkcionalistická stavba z roku 1934
+  vyhořela v březnu 1978; dnešní chata je její replika, otevřená po
+  sedmatřiceti letech roku 2015 — venku třicátá léta, vevnitř
+  nízkoenergetický dům. Autem se sem nedojede.
+text:
+  - >-
+    Vrchol Lysé hory má dlouhou chatařskou historii a Bezručova chata je
+    v ní ta česká linie. Německý Beskidenverein tu měl od roku 1895
+    Erzherzog Albrecht-Schutzhaus, ještě dřív, od roku 1880, stála na
+    vrcholu turistická útulna Slezský dům. Česká chata přišla až ve
+    třicátých letech: základní kámen položila Pobeskydská župa Klubu
+    českých turistů 1. října 1933, stavěla ji ostravská firma Nekvasil
+    podle projektu inženýra Františka Knoblocha za 602 tisíc korun a v
+    prosinci 1934 byla hotová. Veřejnosti se otevřela následující rok —
+    16. června 1935 podle Klubu českých turistek i podle serveru
+    lysahora.cz, 6. června podle serveru treking.cz. Jméno Bezručova
+    chata dostala až po znárodnění roku 1948; do té doby se jmenovala
+    Chata Klubu československých turistů na Lysé hoře.
+  - >-
+    Skončila 11. března 1978 v 16.10 hodin, kdy vyhořela. Příčinu se
+    nepodařilo jednoznačně objasnit, spekulovalo se o elektroinstalaci.
+    Požár měl i lidskou oběť — v chatě zahynul tříletý chlapec, syn
+    pomocnice z kuchyně. Vrchol pak byl na sedmatřicet let bez chaty;
+    stál tu jen provizorní bufet, kterému se říkalo Šantán.
+  - >-
+    Nová Bezručova chata se otevřela roku 2015 a je to úmyslná replika té
+    vyhořelé: zvenčí funkcionalismus třicátých let, uvnitř
+    nízkoenergetický dům s rekuperací, solárem a fotovoltaikou a s moderním
+    řešením odpadních vod. Stavěl ji Klub českých turistů s pomocí
+    dobrovolníků a veřejných darů, na místě v první zóně ochrany přírody,
+    kde byla stavební omezení značná. Ve dni otevření se prameny neshodují:
+    5. září 2015 se na vrcholu sešlo přes tisíc lidí na slavnostním
+    otevření, provoz se ale podle vlastního webu chaty datuje od
+    25. listopadu 2015.
+  - >-
+    Ubytuje se tu deset lidí v pěti dvoulůžkových pokojích s vlastním
+    sociálním zařízením, restaurace má sto dvacet míst u stolu. K tomu
+    věci, které jinde na chatě nenajdete: trvalá výstava karpatské flóry
+    a fauny, projekční místnost na filmy o Beskydech a lezecká stěna na
+    východní štítové zdi. Chata patří Klubu českých turistů a nájemní
+    smlouva současného nájemce je uzavřená do 30. června 2029.
+  - >-
+    Nejtvrdší věc na životě téhle chaty je voda. Vlastní prameniště dává
+    vodu jen při jarním tání nebo po dlouhých deštích, jeden zdroj na
+    Zimném se dělí mezi všechny objekty na vrcholu — radiokomunikace,
+    meteorologickou stanici a dvě chaty — a v květnu 2026 vozil vodovodní
+    podnik pitnou vodu z Krásné cisternou třikrát za jediný týden. Klub
+    českých turistů proto řeší nový vrt na Větrech a sbírá na něj peníze;
+    kdyby se to nevyřešilo, hrozí omezení provozu chat. Slovy správce
+    chaty: „To sucho je prostě šílené a musíme bojovat."
+  - >-
+    Na vrchol se chodí pěšky a jinak to nejde: povolení k individuálnímu
+    výjezdu autem nelze získat, vjezd na účelové komunikace v chráněné
+    krajinné oblasti je zakázaný zákonem a výjimky mají jen zásobování obou
+    chat a obsluha vysílače. Značených výstupů je osm a nejčastěji se jde
+    z Ostravice po červené (Bezručův výplaz), z Malenovic přes Ivančenu,
+    z Krásné po žluté nebo z Visalají po červené. Délky se v pramenech
+    rozcházejí o kilometr až dva, takže je tu neuvádíme; přesné profily
+    doplní pipeline.
+  - >-
+    Vrchol není jen chata. Vedle Bezručovy chaty tu stojí Chata Emil
+    Zátopek – Maraton, což je samostatný provoz jiného vlastníka, a k ní
+    patřící ubytovna Desítka (Kameňák), která vlastní kuchyň nemá.
+    Dál televizní vysílač Českých radiokomunikací, meteorologická stanice
+    Českého hydrometeorologického ústavu s denním pozorováním od července
+    1897, stanice horské služby a kaplička — u jejího zasvěcení se ovšem
+    prameny rozcházejí natolik, že ho tu neuvádíme.
+  - >-
+    Údaje na téhle stránce nesou vlastní web chaty, stránky Klubu českých
+    turistů, servery lysahora.cz a lysa-hora.cz, beskydyportal.cz, Kudy
+    z nudy, treking.cz, hrady.cz, stavbaweb.cz, tyden.cz a Dům přírody
+    Beskydy; polohu nese OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — otevření nové chaty 25. 11. 2015, požár
+      11. 3. 1978, pět dvoulůžkových pokojů, otvírací doba, prameniště
+      a nedostatek vody, adresa Ostravice 856 (načteno 8. 8. 2026)
+    url: https://www.bezrucova-chata.cz/
+  - popis: >-
+      Klub českých turistů, stránka chaty — vlastník a provozovatel,
+      projekt architekta Františka Knoblocha, otevření veřejnosti
+      16. 6. 1935, nájemní smlouva do 30. 6. 2029, souřadnice, kontakty
+      (načteno 8. 8. 2026)
+    url: https://kct.cz/chaty/bezrucova-chata-na-lyse-hore/
+  - popis: >-
+      Klub českých turistů, článek ze 14. 5. 2026 — jeden vodní zdroj na
+      Zimném dělený mezi subjekty na vrcholu, cisterny z Krásné třikrát
+      za týden, nový vrt na Větrech, citace správce Robina Kukuczky
+      (načteno 8. 8. 2026)
+    url: https://kct.cz/na-lyse-hore-neni-dost-pitne-vody-zasoby-doplnuji-cisterny/
+  - popis: >-
+      lysahora.cz, historie chaty — základní kámen 1. 10. 1933, firma
+      Nekvasil za 602 000 Kč, otevření prosinec 1934, požár 11. 3. 1978
+      v 16.10 h, stavebník Pobeskydská župa KČT (načteno 8. 8. 2026)
+    url: https://www.lysahora.cz/tema/tema.phtml?id=8855
+  - popis: >-
+      lysahora.cz, jak nová chata vypadá — replika vyhořelé stavby,
+      nízkoenergetický dům, restaurace se 120 místy, lezecká stěna,
+      výstava karpatské flóry a fauny, I. zóna ochrany přírody
+      (načteno 8. 8. 2026)
+    url: https://www.lysahora.cz/tema/tema.phtml?id=8856
+  - popis: >-
+      lysahora.cz, autem na Lysou horu — povolení k individuálnímu
+      výjezdu nelze získat (načteno 8. 8. 2026)
+    url: https://www.lysahora.cz/encyklopedie/objekty1.phtml?id=126645
+  - popis: >-
+      lysa-hora.cz, historie Lysé hory a chat — Erzherzog Albrecht
+      Schutzhaus otevřen 21. 7. 1895, Slezská chata vyhořela
+      28. 12. 1972, přejmenování na Bezručovu chatu (načteno 8. 8. 2026)
+    url: https://lysa-hora.cz/turistika-a-ostatni/historie-lyse-hory-a-chaty/
+  - popis: >-
+      beskydyportal.cz — chata postavena KČT s dobrovolníky, restaurace
+      s místními ingrediencemi, výška hory 1323 m (načteno 8. 8. 2026)
+    url: https://www.beskydyportal.cz/cz/zarizeni/bezrucova-chata
+  - popis: >-
+      Kudy z nudy, Po celý rok na Lysou horu — výchozí body výstupů,
+      kuchyň vaří do 19:30, noční klid (načteno 8. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/po-cely-rok-na-lysou-horu
+  - popis: >-
+      treking.cz — výška chaty 1 304 m, otvírací doba, restaurace
+      otevřena v listopadu 2015, otevření veřejnosti 6. 6. 1935
+      (načteno 8. 8. 2026)
+    url: https://www.treking.cz/chaty/bezrucova-chata.htm
+  - popis: >-
+      stavbaweb.cz — architekt Josef Havlíček z ateliéru ARKOS,
+      slavnostní otevření 5. 9. 2015, snaha o původní funkcionalistickou
+      podobu (načteno 8. 8. 2026)
+    url: https://www.stavbaweb.cz/clanek/bezruova-chata-na-lyse-hoe-opt-otevena-12840/
+  - popis: >-
+      tyden.cz — otevření 5. 9. 2015, přes tisíc lidí, náklady
+      nepřekročily 32 milionů, příčina požáru patrně elektroinstalace
+      (načteno 8. 8. 2026)
+    url: >-
+      https://www.tyden.cz/rubriky/relax/cestovani/po-ctyriceti-letech-na-lyse-hore-se-otevrela-bezrucova-chata_354721.html
+  - popis: >-
+      Dům přírody Beskydy / AOPK (13. 5. 2016) — vjezd na účelové
+      komunikace v CHKO zakázán zákonem, výjimky jen pro zásobování obou
+      chat a obsluhu vysílače (načteno 8. 8. 2026)
+    url: >-
+      https://www.dumprirody.cz/de/informationszentrum-des-lsg-beskydy/de/novinky/na-lysou-horu-se-chodi-pesky/
+  - popis: >-
+      hrady.cz, stavby na Lysé hoře — přehled objektů na vrcholu
+      a celoroční provoz chat (načteno 8. 8. 2026)
+    url: https://www.hrady.cz/palac-dum-stavby-na-lyse-hore
+  - popis: >-
+      Chronologie vzniku a zániku objektů na Lysé hoře — útulna 1880,
+      noclehárna Kamenný dům 1933, znárodnění a přejmenování 1948,
+      provizorní bufet Šantán (načteno 8. 8. 2026)
+    url: http://galaxy.asu.cas.cz/~milos/blok/lysa_hora.html
+  - popis: >-
+      lysahora.cz, meteorologická stanice — denní pozorování od
+      15. 7. 1897, profesionální stanice ČHMÚ od 6. 10. 1954
+      (načteno 8. 8. 2026)
+    url: https://www.lysahora.cz/encyklopedie/objekty1.phtml?id=107685
+  - popis: >-
+      Kudy z nudy, Chata Emil Zátopek – Maraton — samostatný provoz
+      s kuchyní, bowlingem a kapacitou 44 osob (načteno 8. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/chata-emil-zatopek-maraton-na-lyse-hore
+  - popis: >-
+      Kudy z nudy, Chata Desítka (Kameňák) — „Stravování je možné ve
+      vedlejší chatě Emil Zátopek – Maraton", tedy bez vlastní kuchyně
+      (načteno 8. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/chata-desitka-kamenak-na-lyse-hore
+  - popis: >-
+      nocleh.kct.cz — deset lůžek v pěti dvoulůžkových pokojích, výška
+      hory 1323 m (načteno 8. 8. 2026)
+    url: https://nocleh.kct.cz/ubytovani/bezrucova-chata
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut, telefon, e-mail, web; ODbL)
+    url: https://www.openstreetmap.org/node/1120544766
+interniPoznamky: >-
+  Povýšeno z data/kandidati/beskydy/bezrucova-chata.yaml (8. 8. 2026), druhý
+  publikovaný profil oblasti Beskydy.
+
+  KOLIK PROFILŮ MÁ MÍT VRCHOL LYSÉ HORY — rozhodnuto na dvě, a je to
+  doložené. Katalog vede na vrcholu dva objekty (Bezručova chata, Chata Emil
+  Zátopek – Maraton) a rešerše 8. 8. 2026 to potvrdila z nečekaného pramene:
+  článek KČT o nedostatku vody cituje správce, podle kterého se jeden zdroj
+  dělí mezi „radiokomunikace, meteorologickou stanici a dvě turistické
+  chaty". Dvě, ne tři. Chata Emil Zátopek – Desítka (Kameňák) je
+  ubytovna BEZ vlastní kuchyně — Kudy z nudy doslova: „Stravování je možné
+  ve vedlejší chatě Emil Zátopek – Maraton" — takže podle klíče zařazení
+  nemá vlastní profil, ale patří pod Maraton. Televizní vysílač
+  (České radiokomunikace), meteorologická stanice (ČHMÚ, veřejnosti
+  nepřístupná) a kaplička jsou položky „co je na vrcholu", ne profily
+  provozů. Vysílač jako „věž s vyhlídkou pro turisty" doložit NEJDE: jediná
+  zmínka o ochozech mluví o správcích, ne o veřejnosti.
+
+  MOJE CHYBA V ZADÁNÍ REŠERŠE, chycená rešeršistou — a je to tentýž omyl
+  jako u Prašivé o hodinu dřív. Ptal jsem se, jestli chatu postavila
+  Pohorská jednota Radhošť. Nepostavila; v žádném prameni o Lysé hoře se
+  nevyskytuje. Doložený stavebník je POBESKYDSKÁ ŽUPA KLUBU ČESKÝCH TURISTŮ.
+  Dvakrát za jeden blok jsem tedy do zadání propašoval spolek, který se mi
+  zdál pravděpodobný, protože ho průvodce zná z beskydské charakteristiky.
+  Poučení je konkrétní: do zadání rešerše se nepíše domněnka jako otázka
+  „bylo to X?", ale otevřená otázka „kdo?".
+
+  VÝŠKA SE NEZAPSALA ANI JEDNA a je to dvojí rozpor, ne opomenutí. Výška
+  chaty: 1304 m (treking.cz) × 1310 m (vrcholovka.cz), oba sekundární,
+  provozovatel žádnou neuvádí. Výška hory: 1323 m (vlastní web, lysahora.cz,
+  beskydyportal.cz, nocleh.kct.cz) × 1324 m (Kudy z nudy, hrady.cz,
+  turistika.cz, vrcholovka.cz). Konvence „nižší číslo při rozporu" by dala
+  1323, ale to je výška HORY, ne chaty — a plést je dohromady je přesně ta
+  chyba, kterou jsme u Prašivé pojmenovali. Pole `vyska` proto zůstává
+  prázdné a v próze stojí „nad třinácti sty metry". Hodnotu 1328 m, kterou
+  vede PeakVisor a kterou nese poznámka v data/oblasti/beskydy.yaml, rešerše
+  v žádném MÍSTNÍM prameni nenašla — stojí za to to vědět, až se výška Lysé
+  hory bude srovnávat.
+
+  ROK 1934 JE ROK DOKONČENÍ, ne otevření pro veřejnost. Chata byla hotová
+  a otevřená v prosinci 1934, veřejnosti se otevřela 16. června 1935 (KČT
+  i lysahora.cz) nebo 6. června 1935 (treking.cz). Zapsán 1934 jako
+  rokVzniku, oba údaje jsou v overeniHistorie i v próze. Podobně u nové
+  chaty: 5. září 2015 slavnostní otevření budovy (tyden.cz, stavbaweb.cz),
+  25. listopadu 2015 provoz (vlastní web, beskydyportal.cz). Prameny to samy
+  nespojují, takže se to nespojuje ani tady.
+
+  VODA JE CHARAKTERISTIKA, NE DETAIL. U vrcholové chaty, která nemá vodu
+  a řeší ji cisternami, to není provozní drobnost — je to hlavní věc, která
+  o tom místě něco říká, a proto je i v próze. Nákladní lanovku pro
+  zásobování žádný pramen nezmiňuje; doložené je jen silniční zásobování na
+  výjimku plus cisterny.
+
+  KAPLIČKA — ZASVĚCENÍ SE NEZAPSALO. Tři neslučitelné údaje: lysahora.cz
+  mluví jen o „malé kapličce", hrady.cz o kapli sv. Kříže, turistika.cz
+  o výklenkové kapličce sv. Floriána. Kaple sv. Cyrila a Metoděje je na
+  RADHOŠTI, ne tady — to je snadná záměna a je dobré ji mít zapsanou.
+
+  DÁLKOVÁ TRASA VRCHOLEM SE NEDOLOŽILA, spíš naopak: treking.cz vede
+  evropskou dálkovou trasu E3 v Beskydech přes Velký Javorník, Radhošť,
+  Pustevny, Martiňák a Třeštík — Lysou horu nejmenuje. Doložená je jen
+  červená hřebenová spojnice. Do prózy se proto o dálkové trase nic
+  nepíše.
+
+  NEDOLOŽENO (nezapsáno): sezónnost Bezručovy chaty výslovně, výška chaty,
+  zasvěcení kapličky, autobus na vrchol (lysahora.cz ho zmiňuje bez
+  jediného detailu a při zákazu vjezdu to působí protichůdně — kandidát na
+  telefonát), rok otevření Chaty Emil Zátopek – Maraton (jaro 2016 ×
+  plán 2012/2013), existence Chaty Emil Zátopek – Pětka (zmiňuje ji jediný
+  pramen, hrady.cz). Fotku dodá běh DATA-02, výškový profil přístupů
+  DATA-06.

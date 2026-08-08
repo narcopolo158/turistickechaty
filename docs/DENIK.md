@@ -112,6 +112,77 @@ Kontroly: `npx tsx scripts/kontrola/vse.ts` zeleně (self-test workflows 15/15),
 `npx tsc --noEmit` čistě, eslint i prettier čistě, `tests/int/oblasti-nove` 103
 případů a `data01-overpass` 43 případů zeleně.
 
+**DÁL V TÉMŽE BLOKU — nález, který stál za víc než plánovaná práce.**
+
+Chtěl jsem začít beskydskou triáž a nejdřív jsem si zkusil zjistit, kolik
+katalogových objektů Beskyd už má kandidáta. Odpověď: 32 ze 41. A mezi těmi
+devíti bez kandidáta byly **Libušín a Chata na Radhošti** — dva nejznámější
+objekty celého pohoří. Maměnka, která stojí třicet metrů od Libušína, v exportu
+JE, takže to nemohla být chyba okna.
+
+Byla to chyba, kterou jsem si udělal sám a nevěděl o ní. Soubor
+`_overpass-dle-jmen-cz.json` z Michalova běhu nesl `remark: runtime error:
+Query timed out in "query" at line 5 after 183 seconds.` a nula elementů.
+**Overpass hlásí běhovou chybu jako HTTP 200**, takže ji `nactiExport` přijal
+jako platný prázdný výsledek, pipeline vypsala „0 objektů dohledáno podle
+jména" a běh dopadl zeleně. A přitom právě dohledávka podle jmen z katalogu je
+DRUHÁ záchranná síť — vznikla 30. 7. 2026 přesně proto, že hlavní dotaz podle
+tagů minul Smědavu, Knajpu a chaty na Jizerce.
+
+Opraveno ve dvou vrstvách (DATA-37): `nactiExport` teď na chybu v `remark`
+vyhodí chybu (zapojí se zrcadlo), a to i u částečného výsledku, kde nějaké
+elementy přišly — částečný export vypadá jako úspěch a rozdíl proti minulému
+běhu se projeví jako „objekty zmizely"; nechybový `remark` („Query returned an
+empty result set") export neshodí, protože prázdno je u dohledávky legitimní.
+Druhá vrstva je nová kontrola `scripts/kontrola/exporty.ts` v `npm run
+kontrola`: vadný export **už v repu leží**, a commitnutý export je doklad, na
+který se odkazují profily. Doklad, který vypadá jako doklad a není jím, je
+nejhorší varianta. Zpětný audit všech 42 surových exportů našel právě tenhle
+jeden; smazal jsem ho, aby nový běh napsal platný. Deset nových testů.
+
+Poučení, které si nechci nechat ujít: kontrolu jsem napsal proto, že jsem
+**třikrát za jeden den ručně doplňoval výčet oblastí** do osmi workflow
+(KONTROLA-08). Obě dnešní kontroly — H i `exporty.ts` — vznikly z opakované
+ruční práce, ne z úvahy. To je asi to nejlepší, co se dá o pořadí poznat: co
+dělám opakovaně rukama, má hlídat stroj.
+
+**DVA PRVNÍ PUBLIKOVANÉ PROFILY BESKYD** — a oba nesou rozhodnutí, ne jen data.
+
+*Chata Prašivá* (706 m) rozhodla otázku, kterou deník vedl jako otevřenou:
+chata a rozhledna jsou JEDEN objekt. Ne kvůli pěti metrům v OSM, ale protože
+rozhledna je **věžová nástavba střechy** téže budovy (obec Vyšní Lhoty: „přímo
+součástí chaty"; propamatky.cz: „věžovitá nástavba chaty"), vstup vede přes
+chatu a vznikly společně roku 1921. Kandidát rozhledny je v `_vyrazeno.yaml`
+jako sloučený, vzor Kleti a Pancíře. Rozlišovací otázka pro příště — a bude
+potřeba u tří zápisů na Čertovici — **není** vzdálenost, ale: jedna budova,
+nebo dvě?
+
+*Bezručova chata* na Lysé hoře rozhodla, kolik profilů má mít vrchol: **dva**.
+Doložil to nečekaný pramen — článek KČT o nedostatku vody cituje správce, podle
+kterého se jeden zdroj dělí mezi „radiokomunikace, meteorologickou stanici
+a dvě turistické chaty". Chata Desítka (Kameňák) vlastní kuchyň nemá („Stravování
+je možné ve vedlejší chatě Emil Zátopek – Maraton"), takže podle klíče zařazení
+patří pod Maraton, ne na vlastní profil. U téhle chaty je nejcennější věcí
+**voda**: vlastní prameniště dává vodu jen při tání, jeden zdroj na Zimném se
+dělí mezi všechny na vrcholu a v květnu 2026 vozily cisterny vodu z Krásné
+třikrát za týden. To není provozní detail, to je charakteristika místa, a je
+i v próze.
+
+U obou profilů zůstala prázdná pole, u kterých by bylo snazší něco napsat:
+kapacita Prašivé (čtyři různá čísla pokojů), výška Bezručovy chaty (1304 ×
+1310 m, oba sekundární) i výška Lysé hory (1323 × 1324 m, a hodnotu 1328 m
+z PeakVisoru, kterou nese naše vlastní poznámka o Beskydech, rešerše v žádném
+místním prameni nenašla).
+
+**A dvakrát za jeden blok jsem udělal tutéž chybu v zadání rešerše:** u Prašivé
+i u Bezručovy chaty jsem se ptal, jestli chatu postavila Pohorská jednota
+Radhošť. Ani jednou ne — Prašivou stavěla Pobeskydská jednota slezská (nebo
+Klub československých turistů, prameny se neshodly), Bezručovu Pobeskydská župa
+KČT. Spolek jsem znal z beskydské charakteristiky a připsal mu, co k němu
+nepatří. Rešeršista to chytil oba dva krát, protože každý údaj musel doložit.
+Poučení konkrétní: do zadání se nepíše domněnka jako otázka („bylo to X?"),
+ale otevřená otázka („kdo?").
+
 **Příště:** obě tatranské oblasti čekají jen na klik (runbook
 `docs/KLIKY-PRO-MICHALA.md`, doporučeno začít Vysokými Tatrami). Do té doby je
 na řadě **beskydská triáž** — 172 nadějných kandidátů, začít katalogovými

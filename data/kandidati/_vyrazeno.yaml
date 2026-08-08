@@ -707,3 +707,25 @@ vyrazeno:
       Claude (8. 8. 2026, samostatný blok — klíč CLAUDE.md; podezření
       z deníku 7. 8. 2026 potvrzeno vlastním webem majitele)
     checked: 2026-08-08
+
+  # SLOUČENÍ DO PUBLIKOVANÉHO PROFILU (8. 8. 2026, Beskydy). Rozhodnutí, které
+  # bylo v deníku vedené jako otevřené: „chata pět metrů od rozhledny —
+  # precedens pro celé Beskydy". Rozhodlo se doklady, ne metrickou vzdáleností.
+  - osm: https://www.openstreetmap.org/node/3064424393
+    slug: beskydy/prasiva
+    duvod: >-
+      Sloučeno do publikovaného profilu data/chaty/beskydy/chata-prasiva.yaml
+      (8. 8. 2026, vzor Kleti a Pancíře na Šumavě). Rozhledna na Prašivé NENÍ
+      samostatná stavba, ale VĚŽOVÁ NÁSTAVBA STŘECHY téže budovy: obec Vyšní
+      Lhoty — „Raritou je historická rozhledna, která je přímo součástí
+      chaty."; propamatky.cz — „věžovitá nástavba chaty, která funguje jako
+      rozhledna"; atlasceska.cz — chata „s vysokou střešní nástavbou s krytým
+      vyhlídkovým ochozem", otevřená spolu s chatou 2. října 1921;
+      turistika.cz — „Vstup na rozhlednu je přes ubytovací zařízení chaty."
+      Odstup pěti metrů v OSM je vzdálenost dvou POI uzlů na jedné budově, ne
+      dvou staveb — sama metrická vzdálenost o sloučení nerozhoduje. Objekt
+      na webu STOJÍ, jen ne pod vlastním slugem.
+    rozhodl: >-
+      Claude (8. 8. 2026, samostatný čtyřhodinový blok — otázka byla v deníku
+      vedená jako otevřená a je rozhodnutá doklady o stavbě, ne odhadem)
+    checked: 2026-08-08
