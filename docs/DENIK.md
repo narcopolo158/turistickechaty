@@ -183,6 +183,19 @@ nepatří. Rešeršista to chytil oba dva krát, protože každý údaj musel do
 Poučení konkrétní: do zadání se nepíše domněnka jako otázka („bylo to X?"),
 ale otevřená otázka („kdo?").
 
+**A ještě jedna kontrola z téže rodiny (KONTROLA-09).** Když jsem hledal, které
+beskydské katalogové objekty už mají kandidáta, dělal jsem to ručně — a ruka mi
+u toho lhala: token „radhošť" spároval Radhošťský rybník s Chatou na Radhošti,
+takže mezera málem zmizela. `scripts/kontrola/katalog-pokryti.ts` to teď počítá
+pro všech dvanáct oblastí (207 katalogových objektů, 68 bez záznamu v repu —
+z toho 32 v Tatrách a Malé Fatře, které čekají na první běh). Nerozhoduje:
+mezera je práce, ne vada. Nejvíc práce mi dala prostřední kategorie, SLABÁ
+SHODA. Bez ní report tvrdil, že v Beskydech chybí většina polských schronisek,
+což je nepravda — „Schronisko Hala Miziowa" z katalogu a „Schronisko na Hali
+Miziowej" z OSM je týž objekt, ale žádné jméno neobsahuje druhé. Deklinace se
+srovná zkrácením rozlišujícího slova na pět znaků; obecná slova („schronisko",
+„chata", „hotel") se zahazují, jinak by se spárovalo kdeco s kdečím.
+
 **Příště:** obě tatranské oblasti čekají jen na klik (runbook
 `docs/KLIKY-PRO-MICHALA.md`, doporučeno začít Vysokými Tatrami). Do té doby je
 na řadě **beskydská triáž** — 172 nadějných kandidátů, začít katalogovými
