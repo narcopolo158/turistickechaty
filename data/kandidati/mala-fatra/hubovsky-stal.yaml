@@ -1,0 +1,33 @@
+# Hubovský štál — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-13)
+# Zdroj: https://www.openstreetmap.org/way/491970525 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/mala-fatra/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Hubovský štál
+slug: hubovsky-stal
+zeme: sk
+oblast: mala-fatra
+typ: utulna
+lat: 49.0960455
+lng: 19.1802178
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/491970525 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-13
+kontakty:
+  web: https://hiking.dennikn.sk/ar/4914/senniky_nad_hlbokou_pod_kutnikovym_kopcom.html
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/491970525 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-13
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-13) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=wilderness_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Poznámka z OSM: starý senník po rekonštrukcii

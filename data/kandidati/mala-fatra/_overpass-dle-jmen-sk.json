@@ -1,0 +1,231 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T19:25:36Z",
+    "timestamp_areas_base": "2026-08-08T01:53:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 13412767852,
+  "lat": 49.0947927,
+  "lon": 18.8345334,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Chata Martinské hole",
+    "source": "Ortofotomozaika SR 2021-2023;survey",
+    "source:name": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 175324755,
+  "center": {
+    "lat": 49.1764276,
+    "lon": 18.9352917
+  },
+  "nodes": [
+    4357558347,
+    1859317161,
+    1859317157,
+    1859317168,
+    2906161689,
+    4357558347
+  ],
+  "tags": {
+    "building": "yes",
+    "description": "Rezervácie cez web alebo telefonicky. Ubytovanie a domáca kuchyňa každý deň 7:00 - 22:00",
+    "ele": "1075",
+    "image": "https://sonnige-pfade.de/wp-content/uploads/2019/10/MalaFatra_ChatapSuchym.jpg",
+    "internet_access": "wlan",
+    "name": "Chata pod Suchým",
+    "phone": "+421 918 662 535",
+    "source": "kapor2",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/12/chata_pod_suchym.html",
+    "website": "https://www.chatapodsuchym.eu/rezervacia/",
+    "wikidata": "Q9189240",
+    "wikipedia": "sk:Chata pod Suchým"
+  }
+},
+{
+  "type": "way",
+  "id": 285941497,
+  "center": {
+    "lat": 49.0948595,
+    "lon": 18.8344644
+  },
+  "nodes": [
+    4856448316,
+    2895832262,
+    2895832266,
+    2895832265,
+    2895832269,
+    2895832268,
+    2895832264,
+    2895832263,
+    4856448316
+  ],
+  "tags": {
+    "addr:city": "Martin",
+    "addr:conscriptionnumber": "11858",
+    "addr:country": "SK",
+    "addr:housenumber": "11858",
+    "addr:place": "Podháj",
+    "addr:postcode": "03601",
+    "building": "yes",
+    "ele": "1250",
+    "email": "ondrasky@chatamartinskehole.sk",
+    "facebook": "https://www.facebook.com/Chata-Martinské-Hole-321160027897716/",
+    "name": "chata Martinské hole",
+    "phone": "+421 905 661 441",
+    "ref:minvskaddress": "7102991423",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "alpine_hut",
+    "website": "http://www.chatamartinskehole.sk/",
+    "wikidata": "Q12763953",
+    "wikipedia": "sk:Chata na Martinských holiach"
+  }
+},
+{
+  "type": "way",
+  "id": 401977441,
+  "center": {
+    "lat": 49.2195111,
+    "lon": 19.0542414
+  },
+  "nodes": [
+    4043921813,
+    4043921815,
+    4043921820,
+    4043921816,
+    4043921819,
+    4043921814,
+    4043921813
+  ],
+  "tags": {
+    "addr:city": "Terchová",
+    "addr:conscriptionnumber": "512",
+    "addr:country": "SK",
+    "addr:housenumber": "512",
+    "addr:place": "Terchová",
+    "addr:postcode": "01306",
+    "building": "yes",
+    "ele": "970",
+    "email": "chatanagruni@gmail.com",
+    "facebook": "https://www.facebook.com/chatanagruni/",
+    "image": "https://img.hiking.dennikn.sk/article/_older/big_chnagruni.jpg",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata na Grúni",
+    "phone": "+421 903 524 200;+421 904 367 434",
+    "ref:minvskaddress": "3861022",
+    "smoking": "outside",
+    "source:addr": "minvskaddress 2023-09",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/78/chata_na_gruni.html",
+    "website": "https://chatanagruni.sk/",
+    "wikidata": "Q7061957",
+    "wikipedia": "sk:Chata na Grúni"
+  }
+},
+{
+  "type": "way",
+  "id": 426002943,
+  "center": {
+    "lat": 49.2084059,
+    "lon": 19.0424396
+  },
+  "nodes": [
+    4253278774,
+    4253278779,
+    4253278768,
+    4253278766,
+    4253278767,
+    4253278777,
+    4253278778,
+    10707423765,
+    4253278782,
+    4253278784,
+    4253278785,
+    10707524929,
+    4253278990,
+    10707524928,
+    4253278783,
+    4253278774
+  ],
+  "tags": {
+    "addr:city": "Terchová",
+    "addr:conscriptionnumber": "508",
+    "addr:country": "SK",
+    "addr:housenumber": "508",
+    "addr:place": "Terchová",
+    "addr:postcode": "01306",
+    "building": "yes",
+    "ele": "740",
+    "email": "chatavratna@vratna.sk",
+    "facebook": "https://www.facebook.com/www.chatavratna.eu/",
+    "name": "Chata Vrátna",
+    "operational_status": "closed",
+    "ref:minvskaddress": "3860384",
+    "source:addr": "minvskaddress 2023-09",
+    "source:geometry": "ZBGIS",
+    "tourism": "alpine_hut",
+    "website": "http://www.chatavratna.eu/",
+    "wikidata": "Q7076559",
+    "wikipedia": "sk:Chata Vrátna"
+  }
+},
+{
+  "type": "way",
+  "id": 702306868,
+  "center": {
+    "lat": 49.1811636,
+    "lon": 19.0492814
+  },
+  "nodes": [
+    6595200204,
+    6595200203,
+    6595200202,
+    9901576838,
+    9901576839,
+    11107444421,
+    9901576837,
+    9901576836,
+    6595200201,
+    6595200204
+  ],
+  "tags": {
+    "addr:city": "Šútovo",
+    "addr:conscriptionnumber": "198",
+    "addr:country": "SK",
+    "addr:housenumber": "198",
+    "addr:place": "Šútovo",
+    "addr:postcode": "03854",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/groups/54401923850/",
+    "contact:instagram": "https://www.instagram.com/chatapodchlebom/",
+    "description": "Rezervácie len mailom! Teplé nápoje a jedlo 7:00 - 22:00 hod.",
+    "ele": "1423",
+    "email": "chatapodchlebom@gmail.com",
+    "image": "https://img.hiking.dennikn.sk/article/_older/ch_chleb_1.jpg",
+    "name": "Chata pod Chlebom",
+    "phone": "+421 905 861 042",
+    "ref:minvskaddress": "37191693",
+    "source": "Ortofotomozaika SR",
+    "source:addr": "minvskaddress 2022-11",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/11/chata_pod_chlebom.html",
+    "website": "https://chatapodchlebom.sk/",
+    "wikidata": "Q7076548",
+    "wikipedia": "sk:Chata pod Chlebom"
+  }
+}
+
+  ]
+}
