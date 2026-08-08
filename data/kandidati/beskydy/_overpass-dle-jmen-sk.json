@@ -1,0 +1,62 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T13:25:06Z",
+    "timestamp_areas_base": "2026-08-07T17:44:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 971014559,
+  "lat": 49.5261767,
+  "lon": 19.4733540,
+  "tags": {
+    "name": "Chata Slaná voda",
+    "tourism": "alpine_hut",
+    "wikidata": "Q16978386"
+  }
+},
+{
+  "type": "node",
+  "id": 1059225112,
+  "lat": 49.2881062,
+  "lon": 18.7804325,
+  "tags": {
+    "amenity": "restaurant",
+    "email": "info@motelskalka.sk",
+    "fax": "+421915766766",
+    "internet_access": "wlan",
+    "name": "Skalka",
+    "opening_hours:restaurant": "Mo-Su 07:00-22:00",
+    "phone": "+421 41 421 21 56; +421 915 766 766",
+    "tourism": "motel",
+    "website": "https://www.motelskalka.sk"
+  }
+},
+{
+  "type": "node",
+  "id": 1884089736,
+  "lat": 49.3595897,
+  "lon": 19.6087284,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Skalka"
+  }
+},
+{
+  "type": "node",
+  "id": 2482096254,
+  "lat": 49.3597355,
+  "lon": 19.6087324,
+  "tags": {
+    "name": "Skalka",
+    "tourism": "hotel"
+  }
+}
+
+  ]
+}

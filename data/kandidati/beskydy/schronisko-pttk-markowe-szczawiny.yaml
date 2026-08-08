@@ -1,0 +1,36 @@
+# Schronisko PTTK Markowe Szczawiny — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/8403293391 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Schronisko PTTK Markowe Szczawiny
+slug: schronisko-pttk-markowe-szczawiny
+zeme: pl
+oblast: beskydy
+typ: obsluhovana
+lat: 49.5877878
+lng: 19.5167586
+vyska: 1180
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/8403293391 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +48 33 8775 105;+48 604 527 417
+  email: markowe.szczawiny@op.pl
+  web: https://markoweszczawiny.pttk.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/8403293391 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: PTTK

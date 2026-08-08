@@ -1,0 +1,35 @@
+# Wegechatka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/5253703046 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Wegechatka
+slug: wegechatka
+zeme: pl
+oblast: beskydy
+lat: 49.7506311
+lng: 18.6287139
+obec: Cieszyn
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/5253703046 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +48 505 664 710
+  web: http://www.wegechatka.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/5253703046 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Th 09:00-16:00; Fr
+  09:00-15:00

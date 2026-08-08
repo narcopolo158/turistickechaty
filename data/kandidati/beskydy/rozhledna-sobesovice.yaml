@@ -1,0 +1,28 @@
+# Rozhledna Soběšovice — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-02)
+# Zdroj: https://www.openstreetmap.org/node/6207213306 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Rozhledna Soběšovice
+slug: rozhledna-sobesovice
+zeme: cz
+oblast: beskydy
+typ: rozhledna
+lat: 49.728572
+lng: 18.4625432
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/6207213306 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-02
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-02) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Nová Husarůvka — amenity=restaurant, 15
+  m, https://www.openstreetmap.org/node/9103645656 · Hostinec Stará Husarůvka —
+  amenity=pub, 95 m, https://www.openstreetmap.org/node/9103645657

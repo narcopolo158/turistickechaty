@@ -1,0 +1,36 @@
+# Útulňa pod Magurkou — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/59242043 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Útulňa pod Magurkou
+slug: utulna-pod-magurkou
+zeme: sk
+oblast: beskydy
+typ: utulna
+lat: 49.3672208
+lng: 19.488838
+vyska: 1084
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/59242043 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: "+421908525123"
+  email: utulnapodmagurkou@gmail.com
+  web: https://utulnapodmagurkou.sk/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/59242043 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=wilderness_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Beskydy bez hraníc, o.z.

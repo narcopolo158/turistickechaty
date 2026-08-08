@@ -1,0 +1,407 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T13:28:11Z",
+    "timestamp_areas_base": "2026-08-07T17:44:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 771428916,
+  "lat": 49.6115474,
+  "lon": 19.0105022,
+  "tags": {
+    "access": "yes",
+    "ele": "1240",
+    "height": "10",
+    "man_made": "tower",
+    "name": "Wieża widokowa na Baraniej Górze",
+    "opening_hours": "24/7",
+    "source": "GPS",
+    "start_date": "1991",
+    "tourism": "viewpoint",
+    "tower:construction": "lattice",
+    "tower:type": "observation",
+    "url": "https://wisla.pl/mieszkaniec/news/wieza-widokowa-na-baraniej-gorze-znow-zaprasza-turystow",
+    "wikidata": "Q131698952",
+    "wikipedia": "pl:Wieża widokowa na Baraniej Górze"
+  }
+},
+{
+  "type": "node",
+  "id": 1302741363,
+  "lat": 49.7936313,
+  "lon": 19.0488293,
+  "tags": {
+    "access": "no",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1302741456,
+  "lat": 49.7940423,
+  "lon": 19.0474668,
+  "tags": {
+    "access": "no",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1888205280,
+  "lat": 49.6855668,
+  "lon": 19.0312978,
+  "tags": {
+    "man_made": "tower",
+    "name": "Wieża Startowa Centralnego Ośrodka Sportu na górze Skrzyczne",
+    "opening_hours": "May-Oct",
+    "step_count": "29",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2366807414,
+  "lat": 49.4131018,
+  "lon": 18.9690378,
+  "tags": {
+    "height": "5",
+    "man_made": "tower",
+    "name": "wieża widokowa na Wielkiej Raczy",
+    "source": "Survey, GPS",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3666484278,
+  "lat": 49.8012866,
+  "lon": 19.3756355,
+  "tags": {
+    "man_made": "tower",
+    "note": "Wieża myśliwska\nHunting Stand Tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3809667665,
+  "lat": 49.7603260,
+  "lon": 19.0018839,
+  "tags": {
+    "colour": "silver",
+    "fee": "yes",
+    "height": "18",
+    "lit": "no",
+    "man_made": "tower",
+    "material": "steel",
+    "name": "Wieża widokowa przy Kolei Linowej Szyndzielnia",
+    "operator": "Kolej Linowa Szyndzielnia",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4217066387,
+  "lat": 49.7602051,
+  "lon": 19.0015084,
+  "tags": {
+    "addr:city": "Bielsko-Biała",
+    "addr:housenumber": "466",
+    "addr:postcode": "43-309",
+    "addr:street": "Aleja Armii Krajowej",
+    "amenity": "restaurant",
+    "bar": "yes",
+    "cuisine": "pizza;regional;coffee_shop;tea;austrian",
+    "name": "Stara Stacja",
+    "opening_hours": "Mo 10:00-17:30; Tu-Su 09:00-17:30",
+    "outdoor_seating": "yes",
+    "phone": "+48 515 552 130",
+    "website": "https://www.starastacja.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 5169059521,
+  "lat": 49.4127729,
+  "lon": 18.9698037,
+  "tags": {
+    "amenity": "restaurant",
+    "opening_hours": "Mo-Su 08:00-20:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6656006395,
+  "lat": 49.6127895,
+  "lon": 19.4253805,
+  "tags": {
+    "amenity": "shelter",
+    "man_made": "tower",
+    "shelter_type": "picnic_shelter",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7545608998,
+  "lat": 49.8379111,
+  "lon": 19.5016273,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "freestanding",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 9850905460,
+  "lat": 49.7481480,
+  "lon": 19.2993254,
+  "tags": {
+    "old_name": "Taras widokowy",
+    "removed:man_made": "tower",
+    "removed:tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 9893909609,
+  "lat": 49.4682138,
+  "lon": 19.5766658,
+  "tags": {
+    "man_made": "tower",
+    "operator": "Gmina Lipnica Wielka",
+    "source": "survey;Ortofotomozaika SR",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13593467253,
+  "lat": 49.8128931,
+  "lon": 19.5881091,
+  "tags": {
+    "access": "yes",
+    "fee": "yes",
+    "height": "18",
+    "man_made": "tower",
+    "material": "steel",
+    "name": "Wieża widokowa w Dąbrówce",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 180998137,
+  "center": {
+    "lat": 49.6226837,
+    "lon": 19.5631841
+  },
+  "nodes": [
+    10674439477,
+    10674439476,
+    10674439475,
+    10674439474,
+    10674439473,
+    1914378535,
+    1914378523,
+    10674439472,
+    10674439471,
+    10674439470,
+    1914378529,
+    10674439469,
+    10674439468,
+    10674439467,
+    1914378541,
+    10674439466,
+    10674439465,
+    10674439464,
+    10674439463,
+    10674439477
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "building:levels": "3",
+    "name": "Karczma Mosorny Groń",
+    "opening_hours": "09:00-18:00",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "source": "www.geoportal.gov.pl",
+    "website": "https://restauracjepkl.pl/zawoja/karczma-mosorny-gron/"
+  }
+},
+{
+  "type": "way",
+  "id": 378468126,
+  "center": {
+    "lat": 49.4127407,
+    "lon": 18.9696919
+  },
+  "nodes": [
+    3837480660,
+    3837480462,
+    3837480764,
+    3837479966,
+    12946517815,
+    3837479967,
+    3837480765,
+    3837480660
+  ],
+  "tags": {
+    "building": "yes",
+    "ele": "1236",
+    "name": "Schronisko PTTK na Wielkiej Raczy",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "source": "GPS",
+    "tourism": "alpine_hut",
+    "wheelchair": "no",
+    "wikidata": "Q9334420",
+    "wikipedia": "pl:Schronisko PTTK Wielka Racza"
+  }
+},
+{
+  "type": "way",
+  "id": 473975628,
+  "center": {
+    "lat": 49.6919983,
+    "lon": 18.9257707
+  },
+  "nodes": [
+    4680041290,
+    4680041289,
+    6209749020,
+    4680040888,
+    4680040887,
+    4680041290
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "name": "Wieża widokowa",
+    "operator": "ZPKWŚ Żywiec",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 643433311,
+  "center": {
+    "lat": 49.6015712,
+    "lon": 18.9202339
+  },
+  "nodes": [
+    6055107353,
+    6055107354,
+    6055107355,
+    6055107356,
+    6055107353
+  ],
+  "tags": {
+    "man_made": "tower",
+    "name": "Punkt Widokowy Szarcula",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 807196522,
+  "center": {
+    "lat": 49.6993445,
+    "lon": 19.5605664
+  },
+  "nodes": [
+    7548498253,
+    7548498254,
+    7548498255,
+    7548498256,
+    7548498253
+  ],
+  "tags": {
+    "addr:housenumber": "667",
+    "addr:place": "Stryszawa",
+    "addr:postcode": "34-205",
+    "building": "commercial",
+    "building:levels": "7",
+    "description": "*88 stopni na taras widokowy. Wstęp płatny 5 zł, tylko monety.",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Wieża widokowa Beskidzki Raj",
+    "payment:coins": "only",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 912009699,
+  "center": {
+    "lat": 49.6922392,
+    "lon": 18.9255172
+  },
+  "nodes": [
+    8469765235,
+    8469765236,
+    8469765237,
+    8469765238,
+    8469765235
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "changing_table": "no",
+    "description": "Zakaz rozpalania ognia w budynku bacówki",
+    "fee": "no",
+    "fireplace": "yes",
+    "internet_access": "no",
+    "name": "Bacówka",
+    "shower": "no",
+    "toilets:wheelchair": "no",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1160403227,
+  "center": {
+    "lat": 49.6224362,
+    "lon": 19.5642111
+  },
+  "nodes": [
+    10792474924,
+    10792474925,
+    10792474926,
+    10792474927,
+    10792474924
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "height": "24.5",
+    "man_made": "tower",
+    "name": "Wieża widokowa na Mosornym Groniu",
+    "start_date": "2022",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

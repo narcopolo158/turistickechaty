@@ -1,0 +1,37 @@
+# Chata Emil Zátopek - Maraton — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/169832917 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Emil Zátopek - Maraton
+slug: chata-emil-zatopek-maraton
+zeme: cz
+oblast: beskydy
+typ: obsluhovana
+lat: 49.5458523
+lng: 18.4483379
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/169832917 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +420 60 2291 324
+  email: rezervace@lysa-hora.cz
+  web: https://www.lysa-hora.cz
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/169832917 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Apr-Oct: Mo-Th 08:00-20:00;
+  Fr 08:00-22:00; Sa 07:00-22:00; Su 07:00-20:00; Nov-Mar: Mo-Th 08:00-19:00; Fr
+  08:00-22:00; Sa 07:00-22:00; Su 07:00-19:00

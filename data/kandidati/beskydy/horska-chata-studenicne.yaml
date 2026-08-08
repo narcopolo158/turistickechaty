@@ -1,0 +1,34 @@
+# Horská chata Studeničné — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/2423194881 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Horská chata Studeničné
+slug: horska-chata-studenicne
+zeme: cz
+oblast: beskydy
+typ: obsluhovana
+lat: 49.5262181
+lng: 18.7813546
+vyska: 712
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2423194881 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +420 558 367 600;+420 721 704 410
+  email: chatastudenicne@seznam.cz
+  web: https://www.chatastudenicne.com/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2423194881 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

@@ -1,0 +1,31 @@
+# Szkolne Schronisko Młodzieżowe w Zawoi Wełczy — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/5346652850 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Szkolne Schronisko Młodzieżowe w Zawoi Wełczy
+slug: szkolne-schronisko-mlodziezowe-w-zawoi-welczy
+zeme: pl
+oblast: beskydy
+lat: 49.6518755
+lng: 19.5125273
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/5346652850 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  email: ssmzawoja@vip.interia.pl
+  web: https://ssmzawoja.szkolnastrona.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/5346652850 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=hostel (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

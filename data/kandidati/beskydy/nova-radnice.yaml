@@ -1,0 +1,33 @@
+# Nová Radnice — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-02)
+# Zdroj: https://www.openstreetmap.org/node/10314515115 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Nová Radnice
+slug: nova-radnice
+zeme: cz
+oblast: beskydy
+typ: rozhledna
+lat: 49.8417294
+lng: 18.2916928
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/10314515115 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-02
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-02) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Radniční restaurace —
+  amenity=restaurant, 21 m, https://www.openstreetmap.org/node/1851998176 · Dáma
+  pyková — amenity=restaurant, 48 m,
+  https://www.openstreetmap.org/node/13970697018
+
+  Výška věže dle OSM: 85 m
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 09:00-17:00

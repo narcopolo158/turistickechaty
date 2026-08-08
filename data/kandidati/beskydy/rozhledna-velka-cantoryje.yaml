@@ -1,0 +1,32 @@
+# Rozhledna Velká Čantoryje — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-02)
+# Zdroj: https://www.openstreetmap.org/node/2534682493 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Rozhledna Velká Čantoryje
+slug: rozhledna-velka-cantoryje
+zeme: cz
+oblast: beskydy
+typ: rozhledna
+lat: 49.6787052
+lng: 18.804559
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2534682493 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-02
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-02) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Občerstvení Čantoryja —
+  amenity=fast_food, 14 m, https://www.openstreetmap.org/node/4349737490 · (bez
+  názvu) — amenity=fast_food, 55 m,
+  https://www.openstreetmap.org/node/1260535295 · (bez názvu) — amenity=bar, 57
+  m, https://www.openstreetmap.org/node/13105674157
+
+  Výška věže dle OSM: 30 m

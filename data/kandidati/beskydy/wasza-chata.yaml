@@ -1,0 +1,36 @@
+# WASZA CHATA — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/12442051647 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: WASZA CHATA
+slug: wasza-chata
+zeme: pl
+oblast: beskydy
+lat: 49.6293746
+lng: 18.8407696
+vyska: 600
+obec: Wisła
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/12442051647 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: "+48729793322"
+  email: wisla@waszachata.eu
+  web: https://waszachata.eu/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/12442051647 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): 24/7

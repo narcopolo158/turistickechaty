@@ -1,0 +1,39 @@
+# Štramberská trúba — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-07-02)
+# Zdroj: https://www.openstreetmap.org/way/411790513 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Štramberská trúba
+slug: stramberska-truba
+zeme: cz
+oblast: beskydy
+typ: rozhledna
+lat: 49.5923561
+lng: 18.1162475
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/411790513 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-02
+kontakty:
+  web: http://www.stramberskatruba.cz/cs/stramberska-truba/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/411790513 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-07-02
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-07-02) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): (bez názvu) — amenity=fast_food, 38 m,
+  https://www.openstreetmap.org/node/12668450021 · Chata doktora Hrstky —
+  amenity=restaurant, 57 m, https://www.openstreetmap.org/way/37887208 · Hrstka
+  kafé — amenity=cafe, 67 m, https://www.openstreetmap.org/node/12668450024
+
+  Otvírací doba dle OSM (surový formát, neověřeno): May-Sep Mo 09:00-19:00;
+  Apr,Oct Mo 09:00-17:00; Nov-Mar 10:00-16:00

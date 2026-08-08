@@ -1,0 +1,6818 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T13:16:06Z",
+    "timestamp_areas_base": "2026-08-07T17:44:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 404491185,
+  "lat": 49.6392781,
+  "lon": 18.8137407,
+  "tags": {
+    "addr:housenumber": "10",
+    "addr:postcode": "43-460",
+    "addr:street": "Soszowska",
+    "ele": "792",
+    "email": "soszow@wisla.pl",
+    "name": "Schronisko „Soszów”",
+    "phone": "+48 33 855 85 16",
+    "tourism": "alpine_hut",
+    "website": "http://soszow.1000lecie.pl/",
+    "wikidata": "Q9334460",
+    "wikipedia": "pl:Schronisko turystyczne na Soszowie Wielkim"
+  }
+},
+{
+  "type": "node",
+  "id": 772174084,
+  "lat": 49.7686024,
+  "lon": 19.3762574,
+  "tags": {
+    "contact:facebook": "http://www.facebook.com/Chatka.pod.Potrojna",
+    "contact:mobile": "+48 501 694 158; +48602433412",
+    "name": "Chatka pod Potrójną",
+    "tourism": "alpine_hut",
+    "website": "https://www.potrojna.com.pl/",
+    "wikidata": "Q9189262",
+    "wikipedia": "pl:Chatka pod Potrójną"
+  }
+},
+{
+  "type": "node",
+  "id": 2159898316,
+  "lat": 49.7199901,
+  "lon": 19.3756124,
+  "tags": {
+    "addr:city": "Ślemień",
+    "addr:housenumber": "3",
+    "addr:postcode": "34-323",
+    "addr:street": "Spacerowa",
+    "internet_access": "wlan",
+    "mobile": "+48 534 630 104",
+    "name": "Schronisko w Ślemieniu - Szkolne Schronisko Młodzieżowe",
+    "operator": "Schronisko w Ślemieniu - Szkolne Schronisko Młodzieżowe",
+    "phone": "+48 33 865 43 51",
+    "tourism": "hostel",
+    "website": "http://www.ssm-slemien.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 2406675471,
+  "lat": 49.4374089,
+  "lon": 19.1471202,
+  "tags": {
+    "addr:housenumber": "197",
+    "addr:place": "Soblówka",
+    "addr:postcode": "34-371",
+    "email": "rezerwacje@chatkapodlaskiem.pl",
+    "guest_house": "agritourism",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chatka Pod Laskiem",
+    "phone": "+48692467523; +48661374212",
+    "source": "www.chatkapodlaskiem.pl",
+    "tourism": "guest_house",
+    "website": "https://www.domywgorach.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2496170178,
+  "lat": 49.6650648,
+  "lon": 18.9075315,
+  "tags": {
+    "email": "telesforowka@gmail.com",
+    "name": "Przytulisko \"Telesforówka\"",
+    "phone": "+48 601 282 026",
+    "tourism": "chalet",
+    "website": "http://telesforowka.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 3545848553,
+  "lat": 49.6480717,
+  "lon": 19.3770494,
+  "tags": {
+    "addr:city:simc": "0055774",
+    "addr:housenumber": "4",
+    "addr:place": "Pewel Wielka",
+    "addr:postcode": "34-340",
+    "alt_name": "Chatka Elektryków",
+    "contact:website": "https://lasek.lol/",
+    "currency:XBT": "yes",
+    "email": "rezerwacje@lasek.lol",
+    "fireplace": "yes",
+    "mobile": "+48732777864",
+    "name": "Studenckie Schronisko Turystyczne \"Chatka Lasek\"",
+    "payment:onchain": "yes",
+    "source:addr": "jelesnia.e-mapa.net",
+    "survey:date": "2022-10-23",
+    "tourism": "alpine_hut",
+    "url": "https://lasek.lol/",
+    "website": "https://lasek.lol/",
+    "wikidata": "Q9332311",
+    "wikipedia": "pl:SST Lasek"
+  }
+},
+{
+  "type": "node",
+  "id": 4267676392,
+  "lat": 49.7885693,
+  "lon": 18.8271110,
+  "tags": {
+    "addr:housenumber": "33",
+    "addr:postcode": "43-430",
+    "addr:street": "Wierzbowa",
+    "email": "domwpogorzu@gmail.com",
+    "internet_access": "wlan",
+    "name": "Dom w Pogórzu",
+    "opening_hours": "24/7",
+    "operator": "Piotr Raszka",
+    "phone": "+48 608 088 371",
+    "tourism": "chalet",
+    "website": "http://www.facebook.pl/domwpogorzu"
+  }
+},
+{
+  "type": "node",
+  "id": 4471389689,
+  "lat": 49.6780300,
+  "lon": 18.9465329,
+  "tags": {
+    "addr:housenumber": "52",
+    "addr:postcode": "43-438",
+    "addr:street": "Grabowa",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Grabowa Chata",
+    "name:pl": "Grabowa Chata",
+    "phone": "+48 510 101 222",
+    "website": "https://www.facebook.com/pg/grabowachata/"
+  }
+},
+{
+  "type": "node",
+  "id": 5253703046,
+  "lat": 49.7506311,
+  "lon": 18.6287139,
+  "tags": {
+    "addr:city": "Cieszyn",
+    "addr:housenumber": "10",
+    "addr:postcode": "43-400",
+    "addr:street": "Stroma",
+    "amenity": "restaurant",
+    "contact:phone": "+48 505 664 710",
+    "contact:website": "http://www.wegechatka.pl/",
+    "cuisine": "polish",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Wegechatka",
+    "opening_hours": "Mo-Th 09:00-16:00; Fr 09:00-15:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5346652850,
+  "lat": 49.6518755,
+  "lon": 19.5125273,
+  "tags": {
+    "addr:housenumber": "991",
+    "addr:place": "Zawoja",
+    "addr:postcode": "34-222",
+    "email": "ssmzawoja@vip.interia.pl",
+    "internet_access": "wlan",
+    "internet_access:password": "SSMZawoja",
+    "internet_access:ssid": "SSM",
+    "mobile": "+48694904039",
+    "name": "Szkolne Schronisko Młodzieżowe w Zawoi Wełczy",
+    "tourism": "hostel",
+    "website": "https://ssmzawoja.szkolnastrona.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 5484998624,
+  "lat": 49.7872943,
+  "lon": 19.1994772,
+  "tags": {
+    "addr:city": "Międzybrodzie Bialskie",
+    "addr:housenumber": "22",
+    "addr:postcode": "34-312",
+    "addr:street": "Księdza Prałata Jana Banasia",
+    "name": "Miami Tropic",
+    "phone": "+48 784 894 763",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 5484998637,
+  "lat": 49.7862163,
+  "lon": 19.1905797,
+  "tags": {
+    "addr:city": "Międzybrodzie Bialskie",
+    "addr:housenumber": "14",
+    "addr:street": "Kublinów",
+    "name": "Ośrodek Wypoczynkowy „Beskid”",
+    "phone": "+48 660 15 35 78",
+    "tourism": "chalet",
+    "website": "https://www.domki-beskid.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 5484998654,
+  "lat": 49.7861012,
+  "lon": 19.1891370,
+  "tags": {
+    "email": "biuro@cichadolina.net",
+    "name": "Domki Cicha Dolina",
+    "phone": "+48 501 511 129",
+    "tourism": "chalet",
+    "website": "https://www.cichadolina.net/"
+  }
+},
+{
+  "type": "node",
+  "id": 5600385821,
+  "lat": 49.6644952,
+  "lon": 19.5684898,
+  "tags": {
+    "name": "Zawoja",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 5837094668,
+  "lat": 49.7137816,
+  "lon": 19.1801452,
+  "tags": {
+    "name": "Dom Wypoczynkowy Agat",
+    "tourism": "chalet",
+    "website": "http://www.agat-zarzecze.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 6594637172,
+  "lat": 49.6645361,
+  "lon": 19.3165240,
+  "tags": {
+    "contact:phone": "+48 604 885 975",
+    "name": "Górska Chata",
+    "tourism": "guest_house",
+    "website": "https://maken.pl/gorska-chata"
+  }
+},
+{
+  "type": "node",
+  "id": 7164618160,
+  "lat": 49.5233569,
+  "lon": 19.1446243,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "name": "Chatka na Suchej Górze",
+    "reservation": "no",
+    "tourism": "wilderness_hut",
+    "url": "https://wiating.pl/chatka-na-suchej-gorze/"
+  }
+},
+{
+  "type": "node",
+  "id": 7221071832,
+  "lat": 49.6367907,
+  "lon": 18.8719351,
+  "tags": {
+    "addr:city": "Wisła",
+    "addr:city:simc": "0927091",
+    "addr:housenumber": "3H",
+    "addr:postcode": "43-460",
+    "addr:street": "Władysława Reymonta",
+    "addr:street:sym_ul": "18648",
+    "email": "domeczkianeczki@gmail.com",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Domeczki Aneczki - Domek Jadzia",
+    "phone": "+48 602410839",
+    "ref:addr": "14197baa-e07a-4ccf-bcd2-6d54215119ed",
+    "reservation": "required",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 7221072218,
+  "lat": 49.6368845,
+  "lon": 18.8718585,
+  "tags": {
+    "addr:city": "Wisła",
+    "addr:city:simc": "0927091",
+    "addr:housenumber": "3I",
+    "addr:postcode": "43-460",
+    "addr:street": "Władysława Reymonta",
+    "addr:street:sym_ul": "18648",
+    "email": "domeczkianeczki@gmail.com",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Domki Wisła - Domek Gabrysia",
+    "phone": "+48 602410839",
+    "ref:addr": "693c6ced-3c06-4642-801a-2464e37f6006",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 7599936908,
+  "lat": 49.7393692,
+  "lon": 19.4299572,
+  "tags": {
+    "email": "filif@ssm-slemien.pl",
+    "name": "Szkolne Schronisko Młodzieżowe w Ślemieniu - Filia w Lesie",
+    "phone": "+48 534 630 104",
+    "tourism": "hostel",
+    "website": "https://ssm.slemien.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 7760608010,
+  "lat": 49.7421160,
+  "lon": 19.0643100,
+  "tags": {
+    "name": "Rychterówka",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 8403293391,
+  "lat": 49.5877878,
+  "lon": 19.5167586,
+  "tags": {
+    "contact:email": "markowe.szczawiny@op.pl",
+    "contact:facebook": "Schronisko-Górskie-PTTK-Markowe-Szczawiny-223432244393822",
+    "contact:phone": "+48 33 8775 105;+48 604 527 417",
+    "ele": "1180",
+    "food": "Mo-Su,PH 08:00-20:00;May-Oct Fr 08:00-21:00;May-Oct Sa 07:00-21:00;May-Oct Su 07:00-20:00",
+    "internet_access": "wlan",
+    "name": "Schronisko PTTK Markowe Szczawiny",
+    "official_name": "Schronisko PTTK Markowe Szczawiny imienia Hugona Zapałowicza",
+    "operator": "PTTK",
+    "operator:type": "ngo",
+    "operator:wikidata": "Q4994123",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "start_date": "1906",
+    "tourism": "alpine_hut",
+    "website": "https://markoweszczawiny.pttk.pl/",
+    "wikidata": "Q9334409",
+    "wikipedia": "pl:Schronisko PTTK Markowe Szczawiny"
+  }
+},
+{
+  "type": "node",
+  "id": 9010662391,
+  "lat": 49.5682769,
+  "lon": 18.9263336,
+  "tags": {
+    "addr:city": "Istebna",
+    "addr:postcode": "43-470",
+    "email": "rezerwacje@woodboxistebna.pl",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Woodbox Istebna",
+    "phone": "+48 535 226 123",
+    "tourism": "chalet",
+    "website": "https://woodboxistebna.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 9766453464,
+  "lat": 49.6116217,
+  "lon": 18.9395226,
+  "tags": {
+    "contact:email": "domek.u.zrodel.wisly@wp.pl",
+    "contact:phone": "+48 692 299 539",
+    "name": "Domek u źródeł Wisły",
+    "tourism": "chalet",
+    "website": "https://domekuzrodelwisly.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 9985907681,
+  "lat": 49.4847452,
+  "lon": 18.9633464,
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 10146787117,
+  "lat": 49.7129187,
+  "lon": 19.0188154,
+  "tags": {
+    "addr:city": "Szczyrk",
+    "addr:housenumber": "10b",
+    "addr:postcode": "43-370",
+    "addr:street": "Lipowa",
+    "email": "maro.laszczak@gmail.com",
+    "internet_access": "wlan",
+    "name": "Highlander House Szczyrk",
+    "opening_hours": "24/7",
+    "phone": "+48501558530",
+    "tourism": "chalet",
+    "website": "https://szczyrkdom.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 10308075026,
+  "lat": 49.5714135,
+  "lon": 19.3450098,
+  "tags": {
+    "addr:city": "Krzyżowa",
+    "addr:housenumber": "110",
+    "addr:postcode": "34-335",
+    "addr:street": "Beskidzka",
+    "email": "info@chatabacow.pl",
+    "image": "https://1drv.ms/u/s!Aiku5frSUxyakJt0OOh5EGhaRRyAzg?e=c2iAVy",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata Baców",
+    "operator": "Oddział PTTK w Żywcu",
+    "phone": "+48 788 742 066",
+    "start_date": "1967",
+    "tourism": "alpine_hut",
+    "website": "https://chatabacow.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 10758239253,
+  "lat": 49.7725821,
+  "lon": 19.2244562,
+  "tags": {
+    "name": "Domki Całoroczne Daglezja",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 10758239297,
+  "lat": 49.7728548,
+  "lon": 19.2151641,
+  "tags": {
+    "name": "Domki Piecykowo",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 11097427728,
+  "lat": 49.7234915,
+  "lon": 19.0294863,
+  "tags": {
+    "addr:city": "Szczyrk",
+    "addr:housenumber": "22A",
+    "addr:postcode": "43-370",
+    "addr:street": "Kolorowa",
+    "beds": "6",
+    "email": "kontakt@chatanaskarpie.pl",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata na Skarpie",
+    "operator": "Chata na Skarpie",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:notes": "yes",
+    "payment:visa": "yes",
+    "phone": "+48607995885",
+    "reservation": "required",
+    "rooms": "4",
+    "smoking": "outside",
+    "tourism": "chalet",
+    "website": "https://chatanaskarpie.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 11177596100,
+  "lat": 49.7495994,
+  "lon": 19.0544441,
+  "tags": {
+    "name": "Zakątek Jakuba",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 11208901612,
+  "lat": 49.8381796,
+  "lon": 19.5322599,
+  "tags": {
+    "addr:city": "Jaroszowice",
+    "addr:housenumber": "3",
+    "addr:postcode": "34-100",
+    "addr:street": "Gołębiówka",
+    "email": "nagolebiowce@onet.eu",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Noclegi na Gołębiówce",
+    "old_addr:housenumber": "172",
+    "old_addr:place": "Jaroszowice",
+    "phone": "+48 888 677 016",
+    "tourism": "chalet",
+    "website": "https://www.nagolebiowce.pl/about.html"
+  }
+},
+{
+  "type": "node",
+  "id": 11302844216,
+  "lat": 49.7671929,
+  "lon": 18.8704091,
+  "tags": {
+    "email": "katarzyna.panufnik@wp.pl",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "mobile": "+48 506 001 711",
+    "name": "Góralska Chata",
+    "rooms": "4",
+    "smoking": "no",
+    "tourism": "chalet",
+    "website": "http://goralskachata.net.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 11346194098,
+  "lat": 49.6197377,
+  "lon": 19.5198627,
+  "tags": {
+    "addr:housenumber": "231",
+    "addr:place": "Zawoja",
+    "addr:postcode": "34-223",
+    "name": "Chata pod Kwiatkiem",
+    "phone": "+48 33 877 51 66",
+    "tourism": "guest_house",
+    "website": "chatapodkwiatkiem.prv.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 11412127826,
+  "lat": 49.6557885,
+  "lon": 18.8585973,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Fajno Chatka",
+    "opening_hours": "Su-Th 11:00-22:00; Fr,Sa 11:00-23:00"
+  }
+},
+{
+  "type": "node",
+  "id": 11534986624,
+  "lat": 49.7158879,
+  "lon": 19.1779220,
+  "tags": {
+    "name": "Igor",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 11711853460,
+  "lat": 49.6604862,
+  "lon": 18.8923756,
+  "tags": {
+    "access": "no",
+    "name": "Chatka Oddziału PTTK \"Beskid Śląski\" w Cieszynie",
+    "reservation": "members_only",
+    "tourism": "wilderness_hut",
+    "website": "https://cieszyn.pttk.pl/kontakt-2/"
+  }
+},
+{
+  "type": "node",
+  "id": 11878648612,
+  "lat": 49.8030403,
+  "lon": 19.0500456,
+  "tags": {
+    "addr:city": "Bielsko-Biała",
+    "addr:housenumber": "20",
+    "addr:postcode": "43-300",
+    "addr:street": "Leszczyńska",
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "cuisine": "pizza",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 11911802864,
+  "lat": 49.7872297,
+  "lon": 19.1719407,
+  "tags": {
+    "addr:city": "Międzybrodzie Bialskie",
+    "addr:housenumber": "15",
+    "addr:postcode": "34-312",
+    "addr:street": "Wierzbowa",
+    "email": "marcin.majdak@gmail.com",
+    "name": "Letniok",
+    "phone": "+48 607 210 719",
+    "tourism": "chalet",
+    "website": "https://letniok.wordpress.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11946253285,
+  "lat": 49.7721094,
+  "lon": 18.9731275,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:email": "krzywachata@onet.pl",
+    "contact:phone": "+48 33 822 82 30;+48 503 462 301",
+    "cuisine": "polish;meat;baguette",
+    "name": "Krzywa Chata nad Zaporą",
+    "opening_hours": "Mo 12:00-19:00; Tu-Su 10:00-19:00",
+    "outdoor_seating": "yes",
+    "toilets": "yes",
+    "toilets:charge": "2 PLN",
+    "toilets:fee": "yes",
+    "website": "https://krzywachata.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 11965948988,
+  "lat": 49.6973559,
+  "lon": 19.5826818,
+  "tags": {
+    "name": "Kefasówka",
+    "tourism": "chalet",
+    "website": "https://www.airbnb.de/rooms/651153707792314676"
+  }
+},
+{
+  "type": "node",
+  "id": 11990968118,
+  "lat": 49.5809767,
+  "lon": 18.9319291,
+  "tags": {
+    "addr:housenumber": "1324",
+    "addr:place": "Istebna",
+    "addr:postcode": "43-470",
+    "email": "kontakt@swierkowaoaza.pl",
+    "mobile": "+48 786 247 066",
+    "name": "Świerkowa Oaza",
+    "tourism": "chalet",
+    "website": "https://swierkowaoaza.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 12026383117,
+  "lat": 49.8448578,
+  "lon": 19.7130493,
+  "tags": {
+    "name": "Szkolne Schronisko Młodzieżowe w Lanckoronie",
+    "phone": "+48 784 410 014",
+    "tourism": "hostel",
+    "website": "https://m.facebook.com/dworlanckorona/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12179903733,
+  "lat": 49.6976135,
+  "lon": 19.2473907,
+  "tags": {
+    "email": "jeziom@gmail.com",
+    "guest_house": "house",
+    "name": "Chatka Studniówka",
+    "phone": "+48607131151",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 12442051647,
+  "lat": 49.6293746,
+  "lon": 18.8407696,
+  "tags": {
+    "addr:city": "Wisła",
+    "addr:housenumber": "13",
+    "addr:postcode": "43-460",
+    "addr:street": "Jurzyków",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=61564447345529",
+    "description": "Dom na wyłączność w Wiśle. 6 pokoi z łazienkami, salon z kominkiem połączony z kuchnią. Taras z pięknym widokiem. Miejsce na grill i ognisko. Gwarantowany spokój i komfort w sąsiedztwie lasu. Miejsce na udany wypoczynek w gronie rodziny i przyjaciół.",
+    "ele": "600",
+    "email": "wisla@waszachata.eu",
+    "image": "https://waszachata.eu/img/galeria/WASZACHATAKiedys.min.jpg",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "WASZA CHATA",
+    "opening_hours": "24/7",
+    "phone": "+48729793322",
+    "reservation": "required",
+    "smoking": "no",
+    "tourism": "chalet",
+    "website": "https://waszachata.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 12518699775,
+  "lat": 49.5691237,
+  "lon": 19.3308420,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Czarny Groń",
+    "email": "basikowewzgorze@gmail.com",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Basikowe Wzgórze",
+    "operator": "Jolanta Basik",
+    "phone": "+48 698 385 061",
+    "tourism": "chalet",
+    "website": "https://www.booking.com/hotel/pl/basikowe-wzgorze.pl.html?aid=356980&label=gog235jc-1FCAsotgFCEGJhc2lrb3dlLXd6Z29yemVII1gDaLYBiAEBmAEeuAEYyAEM2AEB6AEB-AEMiAIBqAIEuALVhbq8BsACAdICJGM3OTQzNmRjLTkxMDgtNDE0ZS05Y2NjLWNlZGEyNDY5NjEwMNgCBuACAQ&sid=3ffe7e22dbf46d"
+  }
+},
+{
+  "type": "node",
+  "id": 13227745851,
+  "lat": 49.4059574,
+  "lon": 18.9768070,
+  "tags": {
+    "capacity": "4",
+    "drinking_water": "no",
+    "fee": "no",
+    "fireplace": "no",
+    "kitchen": "no",
+    "mattress": "no",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 13451391954,
+  "lat": 49.6136902,
+  "lon": 19.5564874,
+  "tags": {
+    "addr:city": "Zawoja",
+    "addr:housenumber": "1932",
+    "addr:postcode": "34-222",
+    "addr:street": "Zawoja",
+    "check_date": "2026-01-12",
+    "check_date:currency:XBT": "2026-01-12",
+    "contact:facebook": "domnamosornymgroniu",
+    "contact:instagram": "domnamosornymgroniu",
+    "currency:XBT": "yes",
+    "email": "kontakt@domnamosornymgroniu.pl",
+    "name": "Dom na Mosornym Groniu",
+    "payment:lightning": "no",
+    "payment:lightning_contactless": "no",
+    "payment:onchain": "yes",
+    "phone": "+48 884 796 007",
+    "tourism": "chalet",
+    "website": "https://domnamosornymgroniu.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 13789336020,
+  "lat": 49.7904751,
+  "lon": 19.0561249,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Koliba Chata Grillowa",
+    "website": "https://www.hotelediament.pl/hotele/park-hotel-diament-bielsko-biala/chata-grillowa-koliba/"
+  }
+},
+{
+  "type": "node",
+  "id": 13806138401,
+  "lat": 49.7570796,
+  "lon": 19.1887788,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 13919934939,
+  "lat": 49.5447518,
+  "lon": 19.5438627,
+  "tags": {
+    "addr:place": "Lipnica Wielka",
+    "email": "info@polana-stancowa.pl",
+    "facebook": "https://www.facebook.com/piusxxstrefarozrywki",
+    "name": "Chata Polana Stańcowa",
+    "phone": "+48 601 804 878",
+    "tourism": "alpine_hut",
+    "website": "https://polana-stancowa.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 13922850526,
+  "lat": 49.7226993,
+  "lon": 19.0111029,
+  "tags": {
+    "addr:city": "Szczyrk",
+    "addr:country": "PL",
+    "addr:housenumber": "27",
+    "addr:postcode": "43-370",
+    "addr:street": "Stroma",
+    "capacity:persons": "10",
+    "check_date": "2026-06-07",
+    "check_in": "15:00",
+    "check_out": "10:00",
+    "currency:EUR": "yes",
+    "currency:PLN": "yes",
+    "fee": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "kitchen": "yes",
+    "name": "Beskid Apartament",
+    "parking": "yes",
+    "parking:capacity": "4",
+    "parking:fee": "no",
+    "payment:cash": "yes",
+    "pets": "yes",
+    "phone": "+48 500 551 960;+48 510 233 713",
+    "reservation:website": "https://www.nocowanie.pl/noclegi/szczyrk/domki/162254/",
+    "rooms": "3",
+    "tourism": "chalet",
+    "website": "https://www.nocowanie.pl/noclegi/szczyrk/domki/162254/"
+  }
+},
+{
+  "type": "node",
+  "id": 13958510108,
+  "lat": 49.8272813,
+  "lon": 19.0490009,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "cuisine": "pizza",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 14061890438,
+  "lat": 49.6450930,
+  "lon": 19.6408752,
+  "tags": {
+    "name": "Osada Poli Zawoja",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 78364163,
+  "center": {
+    "lat": 49.8308015,
+    "lon": 19.0362213
+  },
+  "nodes": [
+    919835451,
+    919835561,
+    919835436,
+    1072715023,
+    1072715194,
+    919835451
+  ],
+  "tags": {
+    "addr:city": "Bielsko-Biała",
+    "addr:housenumber": "10",
+    "addr:postcode": "43-300",
+    "addr:street": "Starobielska",
+    "building": "yes",
+    "building:levels": "5",
+    "email": "ssmbielsko@poczta.onet.pl",
+    "facebook": "https://www.facebook.com/Szkolne-Schronisko-Młodzieżowe-im-Bolka-i-Lolka-w-Bielsku-Białej-565775873593531/",
+    "internet_access": "wlan",
+    "name": "Szkolne Schronisko Młodzieżowe im. Bolka i Lolka",
+    "operator": "PTSM",
+    "phone": "+48338167466",
+    "tourism": "hostel",
+    "website": "https://ssm.bielsko.pl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 91704525,
+  "center": {
+    "lat": 49.7215133,
+    "lon": 19.1817250
+  },
+  "nodes": [
+    1065710506,
+    1065710463,
+    12136115111,
+    1065710640,
+    1065710568,
+    1065710651,
+    1065710441,
+    1065710538,
+    1065652910,
+    1065652999,
+    1065652960,
+    1065653050,
+    1065652847,
+    1065653094,
+    1065652889,
+    1065652979,
+    1065710644,
+    1065710438,
+    1065710535,
+    1065710620,
+    1065710574,
+    1065710683,
+    1065710469,
+    1065710551,
+    10819922243,
+    1065710491,
+    1065710571,
+    1065710677,
+    1065710462,
+    1065710428,
+    10696897559,
+    1065710507,
+    1065710506
+  ],
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 96930447,
+  "center": {
+    "lat": 49.7765531,
+    "lon": 19.1301943
+  },
+  "nodes": [
+    1123292090,
+    9609648595,
+    9609648594,
+    9609648593,
+    9609648592,
+    9609648591,
+    9609648590,
+    1831448537,
+    1831448540,
+    11835486039,
+    1831448532,
+    1831448499,
+    9609648589,
+    9609648588,
+    1123291713,
+    9609648587,
+    1123291941,
+    5966949600,
+    1123292125,
+    1123292252,
+    1123292100,
+    1123292228,
+    1123292090
+  ],
+  "tags": {
+    "addr:city": "Wilkowice",
+    "addr:housenumber": "7",
+    "addr:postcode": "43-365",
+    "addr:street": "Magurka Wilkowicka",
+    "beds": "24",
+    "building": "residential",
+    "building:levels": "3",
+    "contact:email": "infomagurka@onet.eu",
+    "contact:facebook": "https://www.facebook.com/schronisko.magurka/",
+    "contact:phone": "+48 33 817 04 21;+48 502 366 707;+48 500 268 216",
+    "name": "Schronisko PTTK na Magurce",
+    "opening_hours": "08:00-19:00",
+    "opening_hours:kitchen": "08:00-18:30",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "tourism": "alpine_hut",
+    "website": "https://www.magurka.beskidy.pl/",
+    "wheelchair": "no",
+    "wikidata": "Q9334406",
+    "wikipedia": "pl:Schronisko PTTK na Magurce Wilkowickiej"
+  }
+},
+{
+  "type": "way",
+  "id": 107695583,
+  "center": {
+    "lat": 49.6904168,
+    "lon": 19.4706115
+  },
+  "nodes": [
+    3929710017,
+    3929709049,
+    3929709272,
+    3929709274,
+    3929710017
+  ],
+  "tags": {
+    "addr:city:simc": "0069144",
+    "addr:housenumber": "262",
+    "addr:place": "Lachowice",
+    "addr:postcode": "34-232",
+    "building": "detached",
+    "building:levels": "1",
+    "name": "Nasza Chata na Adamach",
+    "roof:levels": "1",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "guest_house",
+    "website": "https://www.facebook.com/people/Nasza-Chata-na-Adamach/100066601265239/"
+  }
+},
+{
+  "type": "way",
+  "id": 107695584,
+  "center": {
+    "lat": 49.6904853,
+    "lon": 19.4701371
+  },
+  "nodes": [
+    1237259948,
+    1237259955,
+    2895391688,
+    2895391687,
+    2895391684,
+    2895391683,
+    2895391686,
+    1237259943,
+    1237259962,
+    1237259948
+  ],
+  "tags": {
+    "addr:city": "Lachowice",
+    "addr:country": "PL",
+    "addr:district": "suski",
+    "addr:hamlet": "Adamy",
+    "addr:housenumber": "263",
+    "addr:place": "Adamy",
+    "addr:postcode": "34-232",
+    "addr:province": "małopolska",
+    "addr:subdistrict": "Stryszawa",
+    "beds": "40",
+    "building": "yes",
+    "building:levels": "2",
+    "drinking_water": "yes",
+    "email": "kontakt@adamy.pl",
+    "facebook": "https://www.facebook.com/chatkaadamy/",
+    "height": "8",
+    "internet_access": "no",
+    "name": "Chatka Adamy",
+    "official_name": "Studencki Schron Turystyczny \"Pod Solniskiem\"",
+    "opening_hours": "Fr 22:00-24:00; Sa 00:00-24:00; Su 00:00-14:00",
+    "operator": "Klub Chatkowy \"Adamy”",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:cryptocurrencies": "no",
+    "payment:debit_cards": "no",
+    "payment:electronic_purses": "no",
+    "payment:girocard": "no",
+    "phone": "+48 577 780 040",
+    "power_supply": "yes",
+    "rooms": "3",
+    "short_name": "SST \"Pod Solniskiem\"",
+    "smoking": "no",
+    "tourism": "guest_house",
+    "website": "https://adamy.ou.pttk.pl/",
+    "wheelchair": "no",
+    "wikidata": "Q9332312",
+    "wikipedia": "pl:SST Pod Solniskiem"
+  }
+},
+{
+  "type": "way",
+  "id": 107699649,
+  "center": {
+    "lat": 49.5828158,
+    "lon": 18.9752760
+  },
+  "nodes": [
+    1237273591,
+    13536662477,
+    1237273592,
+    1237273590,
+    1237273593,
+    1237273591
+  ],
+  "tags": {
+    "addr:housenumber": "244",
+    "addr:place": "Istebna",
+    "addr:postcode": "43-470",
+    "air_conditioning": "no",
+    "building": "yes",
+    "building:levels": "2",
+    "contact:facebook": "http://www.facebook.com/ChatkaAKT",
+    "email": "watra.chatka@gmail.com",
+    "fixme": "zastanawiam się czy najlepszym zakwalifikowaniem tego schroniska studenckiego jest jako Domek na wynajmę. Z tego co rozumiem to osoby wynajmujące domek efektywnie prowadzą schronisko studenckie, które oferuje nocleg i oczywiście dobrą zabawę",
+    "image": "https://www.akt.gliwice.pl/wp/wp-content/uploads/2014/03/chatka_male_lato-768x576.jpg",
+    "name": "Chatka AKT na Pietraszonce",
+    "operator": "Stowarzyszenie Akademicki Klub Turystyczny ”WATRA”",
+    "payment:cash": "yes",
+    "phone": "+48 793 078 887",
+    "reservation": "yes",
+    "smoking": "no",
+    "source": "emuia UG Milówka",
+    "tourism": "chalet",
+    "website": "http://www.akt.gliwice.pl/wp/chatka-akt/"
+  }
+},
+{
+  "type": "way",
+  "id": 110012053,
+  "center": {
+    "lat": 49.7418136,
+    "lon": 19.0407341
+  },
+  "nodes": [
+    1257881683,
+    1257881285,
+    1257881713,
+    1257881592,
+    1257881165,
+    13027477989,
+    1257881105,
+    1257881370,
+    1257881223,
+    1257881683
+  ],
+  "tags": {
+    "addr:city": "Bystra",
+    "addr:housenumber": "8",
+    "addr:postcode": "43-360",
+    "addr:street": "Nadmeszna",
+    "amenity": "restaurant",
+    "building": "yes",
+    "contact:mobile": "+48 505 105 042",
+    "cuisine": "regional;polish;coffee_shop;chicken;juice",
+    "delivery": "yes",
+    "email": "biuro@chatanagroniu.pl",
+    "fixme": "add proper tag: electric bike charge = guest_house;  electric bike charger = guest_house",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Zajazd Regionalny \"Chata Na Groniu\"",
+    "outdoor_seating": "yes",
+    "source:addr": "EMUiA (emuia.gugik.gov.pl)",
+    "takeaway": "yes",
+    "tourism": "guest_house",
+    "website": "https://www.chatanagroniu.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 110012058,
+  "center": {
+    "lat": 49.7418617,
+    "lon": 19.0409430
+  },
+  "nodes": [
+    1257881622,
+    1257881101,
+    1257881468,
+    1257881308,
+    1257881727,
+    1257881607,
+    1257881173,
+    1257881113,
+    1257881396,
+    1257881233,
+    1257881671,
+    1257881622
+  ],
+  "tags": {
+    "amenity": "biergarten",
+    "brewery": "yes",
+    "name": "chata na Groniu"
+  }
+},
+{
+  "type": "way",
+  "id": 129017834,
+  "center": {
+    "lat": 49.8093509,
+    "lon": 19.0173036
+  },
+  "nodes": [
+    1424320025,
+    1424320015,
+    1424320008,
+    1424320003,
+    1424319999,
+    3959480432,
+    3959480433,
+    1424320004,
+    1681867281,
+    1681867282,
+    1681867284,
+    1681867283,
+    1424320025
+  ],
+  "tags": {
+    "addr:city": "Bielsko-Biała",
+    "addr:housenumber": "3",
+    "addr:postcode": "43-300",
+    "addr:street": "Lotnicza",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "name": "Wrzosowa Chata"
+  }
+},
+{
+  "type": "way",
+  "id": 139265360,
+  "center": {
+    "lat": 49.8219477,
+    "lon": 19.1659572
+  },
+  "nodes": [
+    1526688304,
+    1773356835,
+    1773356834,
+    1773356836,
+    1773356837,
+    1526688322,
+    1526688324,
+    1526688309,
+    1780443411,
+    1780443395,
+    1526688304
+  ],
+  "tags": {
+    "addr:housenumber": "190/II",
+    "addr:place": "Żarnówka Mała",
+    "building": "yes",
+    "email": "hrobacza828@gmail.com",
+    "name": "Dom Turystyczno-Rekolekcyjny Hrobacza Łąka",
+    "old_name": "Schronisko na Chrobaczej Łące",
+    "phone": "+48 60 462 8643",
+    "tourism": "alpine_hut",
+    "wikidata": "Q9334451",
+    "wikipedia": "pl:Schronisko turystyczne na Chrobaczej Łące"
+  }
+},
+{
+  "type": "way",
+  "id": 154303181,
+  "center": {
+    "lat": 49.7552184,
+    "lon": 19.0025487
+  },
+  "nodes": [
+    1668546800,
+    10841451950,
+    10841451949,
+    1668546807,
+    1668546803,
+    1668546811,
+    1668546813,
+    10841451948,
+    10841451947,
+    1668546835,
+    4217066356,
+    4217066355,
+    1668546839,
+    1668546831,
+    1668546822,
+    6173533639,
+    4217066345,
+    4217066344,
+    1668546805,
+    10841451946,
+    4217066343,
+    6173533640,
+    10841451945,
+    10841451944,
+    1668546800
+  ],
+  "tags": {
+    "addr:city": "Szyndzielnia",
+    "addr:housenumber": "8",
+    "addr:postcode": "43-309",
+    "addr:street": "Schronisko Szyndzielnia",
+    "alt_name": "Schronisko PTTK na Szyndzielni",
+    "beds": "49",
+    "building": "yes",
+    "building:levels": "3",
+    "ele": "1001",
+    "email": "schronisko@szyndzielnia.com.pl",
+    "internet_access": "wlan",
+    "name": "Schronisko PTTK Szyndzielnia",
+    "name:de": "Schindelbaude",
+    "name:pl": "Schronisko PTTK Szyndzielnia",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+4833 470 64 68",
+    "source": "www.geoportal.gov.pl",
+    "source:addr": "EMUiA (emuia.gugik.gov.pl)",
+    "tourism": "alpine_hut",
+    "website": "https://www.szyndzielnia.com.pl/",
+    "wikidata": "Q9334418",
+    "wikipedia": "pl:Schronisko PTTK Szyndzielnia"
+  }
+},
+{
+  "type": "way",
+  "id": 162373686,
+  "center": {
+    "lat": 49.7762384,
+    "lon": 19.1055846
+  },
+  "nodes": [
+    1742802060,
+    1742802058,
+    1742802055,
+    1742802051,
+    1742802041,
+    1742802048,
+    1742802042,
+    1742802053,
+    1742802060
+  ],
+  "tags": {
+    "building": "yes",
+    "contact:phone": "+48 693 070 531",
+    "facebook": "https://www.facebook.com/ChatkaNaRogaczu/",
+    "name": "Chatka na Rogaczu",
+    "tourism": "alpine_hut",
+    "website": "https://www.sstrogacz.pl/",
+    "wikidata": "Q9334349",
+    "wikipedia": "pl:Chatka na Rogaczu"
+  }
+},
+{
+  "type": "way",
+  "id": 164520416,
+  "center": {
+    "lat": 49.5009579,
+    "lon": 19.1540717
+  },
+  "nodes": [
+    1761488206,
+    1761488209,
+    1761487989,
+    1761487992,
+    1761487996,
+    1761488006,
+    13745853401,
+    1761488206
+  ],
+  "tags": {
+    "addr:city": "Ujsoły",
+    "addr:city:simc": "0073499",
+    "addr:housename": "Chata na Zagroniu",
+    "addr:housenumber": "58",
+    "addr:place": "Ujsoły",
+    "addr:postcode": "34-371",
+    "building": "hut",
+    "name": "Chata na Zagroniu",
+    "operator": "Studenckie Koło Przewodników Beskidzkich w Katowicach",
+    "phone": "+48 603 772 589",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "chalet",
+    "website": "http://chatanazagroniu.pl/",
+    "wikidata": "Q9189239",
+    "wikimedia_commons": "File:Chata na Zagroniu.jpg",
+    "wikipedia": "pl:Chata na Zagroniu"
+  }
+},
+{
+  "type": "way",
+  "id": 176851726,
+  "center": {
+    "lat": 49.5362838,
+    "lon": 19.2341872
+  },
+  "nodes": [
+    3837317313,
+    3837317699,
+    3837315654,
+    3837317879,
+    3837317313
+  ],
+  "tags": {
+    "addr:city:simc": "0056153",
+    "addr:housenumber": "607",
+    "addr:place": "Sopotnia Wielka",
+    "addr:postcode": "34-340",
+    "alt_name": "Schronisko PTTK Rysianka",
+    "building": "yes",
+    "building:levels": "4",
+    "ele": "1290",
+    "name": "Schronisko PTTK na Rysiance",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "source": "www.geoportal.gov.pl",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "http://rysianka.com.pl/",
+    "wikidata": "Q9334398",
+    "wikipedia": "pl:Schronisko PTTK na Hali Rysianka"
+  }
+},
+{
+  "type": "way",
+  "id": 176988854,
+  "center": {
+    "lat": 49.5422120,
+    "lon": 19.1697066
+  },
+  "nodes": [
+    1874602545,
+    1874602547,
+    3248655325,
+    3248655326,
+    3249932795,
+    3248655323,
+    3248655322,
+    1874602543,
+    1874602541,
+    1874602545
+  ],
+  "tags": {
+    "addr:city": "Żabnica",
+    "addr:city:simc": "0075274",
+    "addr:housenumber": "22",
+    "addr:postcode": "34-350",
+    "addr:street": "Boracza",
+    "addr:street:sym_ul": "39804",
+    "building": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "ele": "854",
+    "email": "halaboracza@vp.pl",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Schronisko PTTK na Hali Boraczej",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 33 862 67 32",
+    "power_supply": "yes",
+    "smoking": "no",
+    "source": "OSM Tracker, Knowledge",
+    "source:addr": "wegierskagorka.e-mapa.net",
+    "tourism": "alpine_hut",
+    "website": "https://boracza.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 177075730,
+  "center": {
+    "lat": 49.5320146,
+    "lon": 19.2261662
+  },
+  "nodes": [
+    3837317876,
+    3837317697,
+    3837314807,
+    3837314164,
+    3837317875,
+    3837317876
+  ],
+  "tags": {
+    "addr:city:simc": "3021883",
+    "addr:housenumber": "301",
+    "addr:place": "Złatna",
+    "addr:postcode": "34-371",
+    "alt_name": "Schronisko PTTK Hala Lipowska",
+    "building": "yes",
+    "building:levels": "3",
+    "ele": "1290",
+    "email": "lipowska@onet.eu",
+    "internet_access": "no",
+    "name": "Schronisko PTTK na Hali Lipowskiej",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "power_supply": "yes",
+    "shower": "yes",
+    "source": "www.geoportal.gov.pl",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "http://www.lipowska.com.pl",
+    "wikidata": "Q9334396",
+    "wikipedia": "pl:Schronisko PTTK na Hali Lipowskiej"
+  }
+},
+{
+  "type": "way",
+  "id": 182234242,
+  "center": {
+    "lat": 49.4713846,
+    "lon": 18.9859016
+  },
+  "nodes": [
+    1925727910,
+    1925727912,
+    1925727907,
+    13194448399,
+    13194448398,
+    1925727891,
+    1925727910
+  ],
+  "tags": {
+    "addr:housenumber": "355",
+    "addr:place": "Sól Oźna",
+    "addr:postcode": "34-370",
+    "building": "yes",
+    "email": "agnieszka.polak@awpolak.pl",
+    "facebook": "https://www.facebook.com/schronisko.ozna/",
+    "guest_house": "no",
+    "name": "Schronisko Oźna",
+    "operator": "Polskie Towarzystwo Schronisk Młodzieżowych",
+    "phone": "+48601464411",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 228033598,
+  "center": {
+    "lat": 49.4364185,
+    "lon": 19.1427782
+  },
+  "nodes": [
+    3835439763,
+    3835441068,
+    3835441069,
+    3835439764,
+    3835439763
+  ],
+  "tags": {
+    "addr:housenumber": "193",
+    "addr:place": "Soblówka",
+    "addr:postcode": "34-371",
+    "building": "yes",
+    "email": "recepcja@schroniska-ptsm.pl",
+    "name": "Schronisko SSM Soblówka",
+    "operator": "Polskie Towarzystwo Schronisk Młodzieżowych",
+    "phone": "+48 33 862 22 24",
+    "tourism": "hostel",
+    "website": "http://www.schroniska-ptsm.pl/indx/Soblowka.html"
+  }
+},
+{
+  "type": "way",
+  "id": 233780597,
+  "center": {
+    "lat": 49.5718933,
+    "lon": 19.3391858
+  },
+  "nodes": [
+    3836582499,
+    3836583647,
+    3836582498,
+    3836585777,
+    3836582499
+  ],
+  "tags": {
+    "building": "yes",
+    "internet_access": "no",
+    "name": "Agro Chatka",
+    "smoking": "no",
+    "tourism": "guest_house",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 239906650,
+  "center": {
+    "lat": 49.7826456,
+    "lon": 18.8240674
+  },
+  "nodes": [
+    2476780545,
+    2476780538,
+    2476780534,
+    2476780530,
+    2476780529,
+    2476780532,
+    2476780531,
+    2476780535,
+    2476780541,
+    2476780544,
+    2476780542,
+    2476780545
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Pękata Chata",
+    "opening_hours": "Tu-Su 12:00-18:30",
+    "source": "geoportal.gov.pl:ortofoto",
+    "website": "http://www.karczmagorkiwielkie.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 240836461,
+  "center": {
+    "lat": 49.5820185,
+    "lon": 18.8396878
+  },
+  "nodes": [
+    2485278843,
+    2485278838,
+    2485278841,
+    2485278847,
+    2485278843
+  ],
+  "tags": {
+    "addr:housenumber": "365",
+    "addr:place": "Istebna",
+    "addr:postcode": "43-470",
+    "building": "yes",
+    "email": "b_boldys@op.pl",
+    "name": "Chata Bystre",
+    "phone": "+48338556189",
+    "tourism": "guest_house",
+    "website": "http://chatabystre.beskidy24.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 241630913,
+  "center": {
+    "lat": 49.7472616,
+    "lon": 18.9426530
+  },
+  "nodes": [
+    2492273271,
+    7622315859,
+    7622315862,
+    11946253280,
+    7622315861,
+    7622315860,
+    2492273269,
+    2492273265,
+    7622315851,
+    2492273266,
+    2492273271
+  ],
+  "tags": {
+    "addr:city": "Brenna",
+    "addr:housenumber": "20",
+    "addr:postcode": "43-438",
+    "addr:street": "Błatnia",
+    "beds": "49",
+    "building": "civic",
+    "building:levels": "3",
+    "contact:email": "schronisko@blatnia.pl",
+    "contact:phone": "+48 33 853 64 84",
+    "name": "Schronisko PTTK na Błatniej",
+    "operator": "PTTK",
+    "operator:wikidata": "Q4994123",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "power_supply": "yes",
+    "roof:levels": "1",
+    "start_date": "1926",
+    "tourism": "alpine_hut",
+    "website": "https://www.blatnia.pl/",
+    "wikidata": "Q9334390",
+    "wikipedia": "pl:Schronisko PTTK na Błatniej"
+  }
+},
+{
+  "type": "way",
+  "id": 244676204,
+  "center": {
+    "lat": 49.5499859,
+    "lon": 19.3076812
+  },
+  "nodes": [
+    2519687817,
+    6255649959,
+    2519687818,
+    2519687819,
+    2519687820,
+    2519687817
+  ],
+  "tags": {
+    "building": "yes",
+    "ele": "1172",
+    "name": "Szałas na Polanie Górowej",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 264316467,
+  "center": {
+    "lat": 49.6254081,
+    "lon": 19.5289184
+  },
+  "nodes": [
+    2700140434,
+    2700140435,
+    12880602325,
+    12880602322,
+    2700140442,
+    2700140431,
+    2700140434
+  ],
+  "tags": {
+    "addr:city:simc": "0077356",
+    "addr:hamlet": "Podryżowana",
+    "addr:housenumber": "2035",
+    "addr:place": "Zawoja",
+    "addr:postcode": "34-222",
+    "amenity": "restaurant",
+    "building": "detached",
+    "building:levels": "1",
+    "cuisine": "regional",
+    "name": "Karczma „Dzika Chata”",
+    "old_name": "Karczma Styrnol",
+    "opening_hours": "Mo-Su,PH 11:00-21:00",
+    "operator": "F.H.U. Styrnol Witold Budzowski",
+    "roof:levels": "1",
+    "roof:shape": "hipped",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "http://dzikachata.com",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 264734434,
+  "center": {
+    "lat": 49.5030567,
+    "lon": 19.1381383
+  },
+  "nodes": [
+    2703862897,
+    2703862898,
+    2703862896,
+    2703862890,
+    2703862880,
+    2703862876,
+    2703862867,
+    2703862863,
+    2703862861,
+    2703862865,
+    2703862869,
+    2703862872,
+    2703862843,
+    2703862841,
+    2703862818,
+    2703862807,
+    2703862815,
+    2703862813,
+    2703862804,
+    2703862820,
+    2703862831,
+    2703862899,
+    2703862900,
+    2703862892,
+    2703862894,
+    2703862897
+  ],
+  "tags": {
+    "addr:housenumber": "374",
+    "addr:place": "Rajcza",
+    "addr:postcode": "34-370",
+    "barrier": "fence",
+    "email": "recepcja@schroniska-ptsm.pl",
+    "fence_type": "chain_link",
+    "internet_access": "terminal",
+    "internet_access:fee": "no",
+    "name": "Szkolne Schronisko Młodzieżowe w Rajczy-Nickulinie",
+    "name:pl": "Szkolne Schronisko Młodzieżowe w Rajczy-Nickulinie",
+    "official_name": "Szkolne Schronisko Młodzieżowe – Ośrodek Edukacji Ekologicznej w Rajczy-Nickulinie",
+    "operator": "Polskie Towarzystwo Schronisk Młodzieżowych",
+    "phone": "+48 33 864 33 55",
+    "smoking": "no",
+    "source": "ortofotomapa",
+    "tourism": "hostel",
+    "website": "http://www.schroniska-ptsm.pl/indx/Rajcza.html",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 273788330,
+  "center": {
+    "lat": 49.7410245,
+    "lon": 18.6345388
+  },
+  "nodes": [
+    2786061405,
+    2786061425,
+    2786061422,
+    2786061427,
+    2786061432,
+    2786061434,
+    2786061437,
+    2786061440,
+    2786061417,
+    2786061405
+  ],
+  "tags": {
+    "addr:city": "Cieszyn",
+    "addr:housenumber": "24",
+    "addr:postcode": "43-400",
+    "addr:street": "Błogocka",
+    "amenity": "dormitory",
+    "building": "dormitory",
+    "emuia:id": "PKT_284",
+    "name": "Szkolne Schronisko Młodzieżowe",
+    "source": "UM Cieszyn",
+    "tourism": "hostel",
+    "website": "https://ssm.cieszyn.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 273828229,
+  "center": {
+    "lat": 49.7183079,
+    "lon": 19.0358308
+  },
+  "nodes": [
+    2786387721,
+    2786387679,
+    2786387666,
+    2786387653,
+    2786387658,
+    2786387624,
+    2786387615,
+    2786387639,
+    2786387660,
+    2786387630,
+    2786387682,
+    2786387690,
+    2786387718,
+    2786387758,
+    2786387721
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Szkolne Schronisko Młodzieżowe „Hondrasik”",
+    "tourism": "hostel",
+    "website": "https://hondrasik.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 273921919,
+  "center": {
+    "lat": 49.7217604,
+    "lon": 19.0013997
+  },
+  "nodes": [
+    2787233705,
+    2787233701,
+    2787233695,
+    2787233702,
+    2787233705
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 273921978,
+  "center": {
+    "lat": 49.7219246,
+    "lon": 19.0017819
+  },
+  "nodes": [
+    2787233734,
+    2787233724,
+    2787233718,
+    2787233723,
+    2787233734
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 273992482,
+  "center": {
+    "lat": 49.7261686,
+    "lon": 19.0209383
+  },
+  "nodes": [
+    2787767760,
+    2787767759,
+    2787767761,
+    2787767748,
+    2787767744,
+    2787767747,
+    2787767741,
+    2787767757,
+    2787767760
+  ],
+  "tags": {
+    "addr:city": "Szczyrk",
+    "addr:housenumber": "1a",
+    "addr:postcode": "43-370",
+    "addr:street": "Podmagura",
+    "building": "yes",
+    "description": "Agroturystyka",
+    "name": "Chata w Decche",
+    "tourism": "guest_house",
+    "website": "https://www.chatawdeche.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 284253102,
+  "center": {
+    "lat": 49.5783067,
+    "lon": 19.2138999
+  },
+  "nodes": [
+    1873417707,
+    3921111277,
+    3921111276,
+    3921111281,
+    1873417707
+  ],
+  "tags": {
+    "addr:housenumber": "326",
+    "addr:place": "Żabnica",
+    "addr:postcode": "34-350",
+    "building": "yes",
+    "building:levels": "2",
+    "contact:email": "gstslowianka@wp.pl",
+    "contact:facebook": "https://www.facebook.com/stslowianka/",
+    "contact:phone": "+48 606 320 217",
+    "name": "Stacja Turystyczna Słowianka",
+    "source": "Knowledge, Bing",
+    "tourism": "alpine_hut",
+    "wikidata": "Q9334352",
+    "wikipedia": "pl:Górska stacja turystyczna „Słowianka”"
+  }
+},
+{
+  "type": "way",
+  "id": 287675090,
+  "center": {
+    "lat": 49.7211904,
+    "lon": 18.8572875
+  },
+  "nodes": [
+    2912452907,
+    2912452906,
+    2912452399,
+    2912452901,
+    2912452397,
+    2912452393,
+    2912452394,
+    2912452398,
+    2912452400,
+    2912452908,
+    2912452907
+  ],
+  "tags": {
+    "addr:city": "Ustroń",
+    "addr:housenumber": "34",
+    "addr:postcode": "43-450",
+    "addr:street": "Równica",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "name": "Zbójnicka Chata",
+    "source:geometry": "geoportal.gov.pl",
+    "website": "http://www.zbojnicka-chata.com.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 289398503,
+  "center": {
+    "lat": 49.7071385,
+    "lon": 18.8496041
+  },
+  "nodes": [
+    2929470935,
+    2929470950,
+    2929470944,
+    3085868451,
+    3085868442,
+    2929470920,
+    2929470935
+  ],
+  "tags": {
+    "addr:city": "Ustroń",
+    "addr:housename": "Wiecha",
+    "addr:housenumber": "5",
+    "addr:postcode": "43-450",
+    "addr:street": "Stroma",
+    "building": "yes",
+    "name": "Schronisko Młodzieżowe Wiecha",
+    "source": "geoportal.gov.pl:ortofoto",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "way",
+  "id": 295633987,
+  "center": {
+    "lat": 49.7952542,
+    "lon": 19.4474148
+  },
+  "nodes": [
+    3929619986,
+    13966108688,
+    3929620358,
+    13966108697,
+    13966108695,
+    13966108692,
+    13966108698,
+    3929619868,
+    13966108689,
+    13966108693,
+    3929619988,
+    13966108694,
+    13966108696,
+    3929619986
+  ],
+  "tags": {
+    "alt_name:pl": "Schronisko na Leskowcu",
+    "building": "civic",
+    "building:levels": "2",
+    "contact:facebook": "https://www.facebook.com/leskowiec/",
+    "contact:mobile": "+48 606743880",
+    "contact:phone": "+48 338721694",
+    "ele": "890",
+    "name": "Schronisko PTTK Leskowiec",
+    "operator": "PTTK",
+    "operator:wikidata": "Q4994123",
+    "tourism": "alpine_hut",
+    "website": "https://leskowiec.pttk.pl/",
+    "wikidata": "Q9334391",
+    "wikipedia": "pl:Schronisko PTTK Leskowiec"
+  }
+},
+{
+  "type": "way",
+  "id": 299476702,
+  "center": {
+    "lat": 49.6844425,
+    "lon": 19.0320186
+  },
+  "nodes": [
+    3921254163,
+    3921254160,
+    5679324103,
+    3921254457,
+    5679324106,
+    5679324107,
+    5679324109,
+    5679324108,
+    3921254081,
+    3921254163
+  ],
+  "tags": {
+    "building": "yes",
+    "ele": "1250",
+    "fireplace": "yes",
+    "name": "Schronisko PTTK Skrzyczne",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "toilets": "yes",
+    "toilets:hands_drying": "yes",
+    "toilets:handwashing": "yes",
+    "tourism": "alpine_hut",
+    "website": "http://www.skrzyczne.szczyrk.pl",
+    "wikidata": "Q9334413",
+    "wikipedia": "pl:Schronisko PTTK Skrzyczne"
+  }
+},
+{
+  "type": "way",
+  "id": 300511241,
+  "center": {
+    "lat": 49.7173224,
+    "lon": 19.0722022
+  },
+  "nodes": [
+    3045841466,
+    3045841457,
+    3045841462,
+    3045841470,
+    3045841466
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 300511243,
+  "center": {
+    "lat": 49.7173200,
+    "lon": 19.0720494
+  },
+  "nodes": [
+    3045841465,
+    3045841456,
+    3045841461,
+    3045841469,
+    3045841465
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 300511244,
+  "center": {
+    "lat": 49.7173141,
+    "lon": 19.0718975
+  },
+  "nodes": [
+    3045841464,
+    3045841455,
+    3045841460,
+    3045841468,
+    3045841464
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 300511245,
+  "center": {
+    "lat": 49.7173364,
+    "lon": 19.0716981
+  },
+  "nodes": [
+    3045841472,
+    3045841454,
+    3045841458,
+    3045841473,
+    3045841472
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 300511246,
+  "center": {
+    "lat": 49.7173260,
+    "lon": 19.0723527
+  },
+  "nodes": [
+    3045841467,
+    3045841459,
+    3045841463,
+    3045841471,
+    3045841467
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 319399574,
+  "center": {
+    "lat": 49.4897906,
+    "lon": 18.9684927
+  },
+  "nodes": [
+    3258112961,
+    3258112962,
+    3258112963,
+    8016199244,
+    3258112964,
+    3258112965,
+    3258112966,
+    3258112967,
+    3258112968,
+    11247736643,
+    11247736642,
+    3258112969,
+    3258112970,
+    3258112961
+  ],
+  "tags": {
+    "addr:city:simc": "0067010",
+    "addr:housenumber": "251",
+    "addr:place": "Zwardoń",
+    "addr:postcode": "34-373",
+    "building": "hut",
+    "description": "Dawna chatka studencka.",
+    "email": "rezerwacja@chatkaskalanka.pl",
+    "internet_access": "no",
+    "name": "Chatka Skalanka",
+    "note": "Czynne od piątku od 20:00 do niedzieli do 12:00, oraz ferie, święta i wakacje, chyba że podano inaczej, patrz strona www.",
+    "opening_hours": "Fr 21:00-00:00; Sa 00:00-00:00; Su 00:00-12:00; SH 00:00-00:00",
+    "operator": "Stowarzyszenie \"Klub Miłośników Turystyki GRZMOT - ODRODZENIE\"",
+    "phone": "+48 733 598 983",
+    "smoking": "outside",
+    "tourism": "hostel",
+    "website": "http://chatkaskalankazwardon.blogspot.com/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 319402349,
+  "center": {
+    "lat": 49.5963639,
+    "lon": 18.9837903
+  },
+  "nodes": [
+    6145847721,
+    3258135946,
+    10112509294,
+    3258135947,
+    12057286077,
+    3258135948,
+    10112509295,
+    6145847720,
+    4728970980,
+    6145847721
+  ],
+  "tags": {
+    "addr:city": "Wisła",
+    "addr:housenumber": "8",
+    "addr:postcode": "43-460",
+    "addr:street": "Czarna Wisełka",
+    "alt_name": "Schronisko PTTK na Przysłopiu",
+    "building": "yes",
+    "building:levels": "5",
+    "contact:facebook": "https://www.facebook.com/przyslop/",
+    "contact:instagram": "https://www.instagram.com/schronisko_przyslop/",
+    "ele": "951",
+    "email": "schronisko@przyslop.pl",
+    "name": "Schronisko PTTK Przysłop pod Baranią Górą",
+    "note": "Błędna wysokość na tablicy schroniska",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 33 855 37 15",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "https://przyslop.pl/",
+    "wikidata": "Q19401374",
+    "wikipedia": "pl:Schronisko PTTK Przysłop pod Baranią Górą"
+  }
+},
+{
+  "type": "way",
+  "id": 320518445,
+  "center": {
+    "lat": 49.6618175,
+    "lon": 18.8563581
+  },
+  "nodes": [
+    3270501656,
+    3270501761,
+    3270501658,
+    6405935025,
+    6405935024,
+    9710132807,
+    6405935023,
+    3270501766,
+    9710132806,
+    3270501770,
+    3270501780,
+    6405935028,
+    6405935027,
+    6405935026,
+    3270501768,
+    3270501765,
+    3270501764,
+    3270501763,
+    3270501657,
+    3270501656
+  ],
+  "tags": {
+    "addr:city": "Wisła",
+    "addr:housenumber": "33",
+    "addr:postcode": "43-460",
+    "addr:street": "Aleja Księdza Biskupa Juliusza Bursche",
+    "amenity": "restaurant",
+    "building": "public",
+    "name": "Chata Olimpijczyka Jasia i Helenki"
+  }
+},
+{
+  "type": "way",
+  "id": 321828857,
+  "center": {
+    "lat": 49.6199657,
+    "lon": 18.8818220
+  },
+  "nodes": [
+    3285978809,
+    3285978805,
+    3285978806,
+    3285978804,
+    3285978807,
+    3285978811,
+    3285978814,
+    3285978828,
+    3285978809
+  ],
+  "tags": {
+    "addr:city": "Wisła",
+    "addr:housenumber": "26a",
+    "addr:postcode": "43-460",
+    "addr:street": "Głębce",
+    "building": "yes",
+    "email": "info@aggeusz.pl",
+    "name": "Chata Góralska Aggeusz",
+    "phone": "+48338513304",
+    "tourism": "guest_house",
+    "website": "https://www.aggeusz.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 327573687,
+  "center": {
+    "lat": 49.6184918,
+    "lon": 18.9812424
+  },
+  "nodes": [
+    3343833703,
+    3343833705,
+    3343833702,
+    3343833701,
+    3343833703
+  ],
+  "tags": {
+    "access": "customers",
+    "addr:housenumber": "1",
+    "addr:street": "Wątrobne",
+    "building": "yes",
+    "fee": "yes",
+    "name": "Chata Rodło",
+    "phone": "+48 790 507 457",
+    "source": "UM Wisła",
+    "tourism": "chalet",
+    "website": "https://www.facebook.com/pg/Chata-Rodło-541883249155438"
+  }
+},
+{
+  "type": "way",
+  "id": 332054557,
+  "center": {
+    "lat": 49.5706299,
+    "lon": 19.2945997
+  },
+  "nodes": [
+    3391608791,
+    3391608792,
+    3391620493,
+    3391620494,
+    3391608791
+  ],
+  "tags": {
+    "addr:housenumber": "244",
+    "addr:place": "Sopotnia Wielka",
+    "addr:postcode": "34-340",
+    "building": "yes",
+    "name": "Chatka AKT Dobrodziej",
+    "phone": "+48 509 479 552",
+    "tourism": "alpine_hut",
+    "wikidata": "Q9189256",
+    "wikipedia": "pl:Chatka AKT „Dobrodziej” na Witasówce"
+  }
+},
+{
+  "type": "way",
+  "id": 343357570,
+  "center": {
+    "lat": 49.6513553,
+    "lon": 19.5114021
+  },
+  "nodes": [
+    3502149021,
+    10571009017,
+    10571009018,
+    3502149303,
+    3502149015,
+    3502149022,
+    3502149021
+  ],
+  "tags": {
+    "addr:housenumber": "2097",
+    "addr:place": "Zawoja",
+    "addr:postcode": "34-222",
+    "building": "yes",
+    "email": "poczta@tabakowachata.pl",
+    "mobile": "+48 602 443 291",
+    "name": "Tabakowa Chata",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "guest_house",
+    "website": "http://www.tabakowachata.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 343836414,
+  "center": {
+    "lat": 49.6263043,
+    "lon": 19.6446347
+  },
+  "nodes": [
+    3511281110,
+    5692341695,
+    5692341694,
+    832404091,
+    5692341693,
+    5692341692,
+    5692341691,
+    5692341690,
+    3511279222,
+    3511272238,
+    5692341689,
+    3511281110
+  ],
+  "tags": {
+    "addr:city": "Sidzina",
+    "addr:country": "PL",
+    "addr:housename": "Schronisko PTTK na Hali Krupowej",
+    "addr:postcode": "34-236",
+    "beds": "38",
+    "building": "house",
+    "building:levels": "1",
+    "building:levels:underground": "1",
+    "ele": "1152",
+    "email": "krupowa@o2.pl",
+    "facebook": "https://www.facebook.com/krupowa/",
+    "name": "Schronisko PTTK na Hali Krupowej",
+    "official_name": "Schronisko PTTK na Hali Krupowej im. Kazimierza Sosnowskiego",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 18 4475005",
+    "roof:levels": "1",
+    "shower": "yes",
+    "tourism": "alpine_hut",
+    "website": "https://www.krupowa.pttk.pl/",
+    "wheelchair": "no",
+    "wikidata": "Q9334394",
+    "wikipedia": "pl:Schronisko PTTK na Hali Krupowej"
+  }
+},
+{
+  "type": "way",
+  "id": 350220958,
+  "center": {
+    "lat": 49.5405791,
+    "lon": 19.3187308
+  },
+  "nodes": [
+    3836475268,
+    3836474668,
+    3836447181,
+    3836447178,
+    3836475267,
+    3836475265,
+    3836474667,
+    3836472067,
+    3836453078,
+    3836453077,
+    3836520371,
+    3836447177,
+    3836526059,
+    3836530862,
+    3836472068,
+    3836447180,
+    3836453080,
+    3836463969,
+    3836474669,
+    3836475269,
+    3836475270,
+    3836475268
+  ],
+  "tags": {
+    "building": "yes",
+    "ele": "1274",
+    "email": "schronisko@halamizowa.pl",
+    "name": "Schronisko na Hali Miziowej",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 33 475 00 00",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/1844/schronisko_pilsko_na_hali_miziowej.html",
+    "website": "https://halamiziowa.pl/",
+    "wikidata": "Q9334395",
+    "wikipedia": "pl:Schronisko PTTK na Hali Miziowej"
+  }
+},
+{
+  "type": "way",
+  "id": 350226336,
+  "center": {
+    "lat": 49.4761187,
+    "lon": 19.2185692
+  },
+  "nodes": [
+    2477750003,
+    3837314455,
+    5894948537,
+    3837314454,
+    3837358357,
+    2477750003
+  ],
+  "tags": {
+    "building": "yes",
+    "capacity": "35",
+    "contact:facebook": "https://www.facebook.com/pg/krawcowy/",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "ele": "1038",
+    "email": "bacowka@krawcow.pttk.pl",
+    "internet_access": "yes",
+    "material": "wood",
+    "name": "Bacówka PTTK na Krawcowym Wierchu",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 504 684 027",
+    "power_supply": "yes",
+    "roof:shape": "gabled",
+    "shower": "yes",
+    "smoking": "outside",
+    "tourism": "alpine_hut",
+    "website": "https://krawcow.pttk.pl/",
+    "wheelchair": "no",
+    "wikidata": "Q9163957",
+    "wikipedia": "pl:Bacówka PTTK na Krawcowym Wierchu"
+  }
+},
+{
+  "type": "way",
+  "id": 350455432,
+  "center": {
+    "lat": 49.7687630,
+    "lon": 19.2193707
+  },
+  "nodes": [
+    5133745614,
+    5133745613,
+    5133745612,
+    5133745611,
+    5133745614
+  ],
+  "tags": {
+    "addr:city": "Międzybrodzie Żywieckie",
+    "addr:city:simc": "0051374",
+    "addr:housenumber": "61A",
+    "addr:postcode": "34-312",
+    "addr:street": "Beskidzka",
+    "amenity": "cafe",
+    "building": "yes",
+    "name": "Chatka pod Żarem",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 350457854,
+  "center": {
+    "lat": 49.7518321,
+    "lon": 19.3743433
+  },
+  "nodes": [
+    3562030132,
+    3562030135,
+    3562030137,
+    3562030133,
+    3562030132
+  ],
+  "tags": {
+    "addr:city": "Ślemień",
+    "addr:city:simc": "0071840",
+    "addr:housenumber": "1",
+    "addr:postcode": "34-323",
+    "addr:street": "Osiedle Groń",
+    "addr:street:sym_ul": "42458",
+    "building": "yes",
+    "name": "Chatka Gibasówka (u Stacha)",
+    "operator": "Staszek",
+    "phone": "+48 692284011",
+    "source:addr": "slemien.e-mapa.net",
+    "tourism": "alpine_hut",
+    "website": "http://www.gibasy.prv.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 350457855,
+  "center": {
+    "lat": 49.7518785,
+    "lon": 19.3760274
+  },
+  "nodes": [
+    3562030134,
+    3562030138,
+    3562030139,
+    3562030136,
+    3562030134
+  ],
+  "tags": {
+    "addr:city": "Ślemień",
+    "addr:city:simc": "0071840",
+    "addr:housenumber": "3",
+    "addr:postcode": "34-323",
+    "addr:street": "Osiedle Groń",
+    "beds": "17",
+    "building": "yes",
+    "internet_access": "yes",
+    "mobile": "+48 601 838 492",
+    "name": "Chata Gibasówka (Lutecja)",
+    "operator": "Kasia i Rufin",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "https://gibasy.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 357033103,
+  "center": {
+    "lat": 49.4911579,
+    "lon": 18.9671329
+  },
+  "nodes": [
+    3624282393,
+    3624282394,
+    3624282395,
+    3624282396,
+    3624282397,
+    3624282398,
+    3624282399,
+    3624282400,
+    12698132202,
+    11760255206,
+    3624282393
+  ],
+  "tags": {
+    "addr:city:simc": "0067010",
+    "addr:housenumber": "211a",
+    "addr:place": "Zwardoń",
+    "addr:postcode": "34-373",
+    "building": "commercial",
+    "building:levels": "2",
+    "ele": "772",
+    "name": "Schron Górski Chata Pod Skalanką",
+    "phone": "+48 501 307 248",
+    "roof:shape": "gabled",
+    "source:addr": "rajcza.e-mapa.net",
+    "tourism": "alpine_hut",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 357115940,
+  "center": {
+    "lat": 49.6059817,
+    "lon": 19.5476066
+  },
+  "nodes": [
+    3624764297,
+    3624764298,
+    3624764299,
+    3624764300,
+    3624764297
+  ],
+  "tags": {
+    "addr:housenumber": "734",
+    "addr:place": "Zawoja",
+    "addr:postcode": "34-222",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/Chatka-Stracona-Polana-247177516237707/",
+    "email": "straconapolana@gmail.com",
+    "fee": "yes",
+    "name": "Chatka Stracona Polana",
+    "phone": "+48 502 720 625",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 362473555,
+  "center": {
+    "lat": 49.7665358,
+    "lon": 19.2132584
+  },
+  "nodes": [
+    5152472552,
+    5152472551,
+    5152472550,
+    5152472549,
+    5152472548,
+    5152472547,
+    5152472552
+  ],
+  "tags": {
+    "addr:city": "Międzybrodzie Żywieckie",
+    "addr:city:simc": "0051374",
+    "addr:housenumber": "12",
+    "addr:postcode": "34-312",
+    "addr:street": "Beskidzka",
+    "addr:street:sym_ul": "01103",
+    "building": "yes",
+    "name": "Domek Jano",
+    "source:addr": "czernichowzywiecki.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 363192474,
+  "center": {
+    "lat": 49.7660155,
+    "lon": 19.2134824
+  },
+  "nodes": [
+    5133745144,
+    5133745143,
+    5133745142,
+    5133745141,
+    5133745144
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Domek Pod Latarnią",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 364636689,
+  "center": {
+    "lat": 49.5505760,
+    "lon": 18.9474892
+  },
+  "nodes": [
+    3686766526,
+    3686766517,
+    3686766510,
+    3686766522,
+    3686766526
+  ],
+  "tags": {
+    "addr:housenumber": "899",
+    "addr:place": "Koniaków",
+    "addr:postcode": "43-474",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "name": "Chata Na Szańcach",
+    "source": "emuia UG Milówka"
+  }
+},
+{
+  "type": "way",
+  "id": 365847495,
+  "center": {
+    "lat": 49.6897055,
+    "lon": 19.5111833
+  },
+  "nodes": [
+    3698503134,
+    3698503135,
+    3698503131,
+    3698503132,
+    3698503129,
+    3698503128,
+    3698503125,
+    3698503022,
+    3698503126,
+    3698503024,
+    3698503127,
+    3698503130,
+    3698503133,
+    3698503136,
+    3698503134
+  ],
+  "tags": {
+    "addr:city:simc": "0069575",
+    "addr:housenumber": "496",
+    "addr:place": "Stryszawa",
+    "addr:postcode": "34-205",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=100057427271038",
+    "name": "Szkolne Schronisko Młodzieżowe Pod Jałowcem",
+    "phone": "+48 33 874 71 87; +48 692 139 619",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "hostel",
+    "website": "https://www.ssmstryszawa.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 370338090,
+  "center": {
+    "lat": 49.4398122,
+    "lon": 19.0161828
+  },
+  "nodes": [
+    3740468054,
+    3740468040,
+    3740468037,
+    3740468052,
+    3740468054
+  ],
+  "tags": {
+    "addr:city": "Rycerka Górna Kolonia",
+    "addr:city:simc": "0066430",
+    "addr:housenumber": "500",
+    "addr:place": "Rycerka Górna",
+    "addr:postcode": "34-370",
+    "building": "yes",
+    "email": "recepcja@schroniska-ptsm.pl",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Schronisko SSM Rycerka Kolonia",
+    "operator": "Polskie Towarzystwo Schronisk Młodzieżowych",
+    "phone": "+48 33 864 38 98",
+    "source:addr": "rajcza.e-mapa.net",
+    "tourism": "hostel",
+    "website": "http://www.schroniska-ptsm.pl/indx/Rycerka.html"
+  }
+},
+{
+  "type": "way",
+  "id": 370338116,
+  "center": {
+    "lat": 49.4217280,
+    "lon": 19.0476610
+  },
+  "nodes": [
+    12977043188,
+    12977043187,
+    3740467150,
+    12977043186,
+    12977043185,
+    3740467148,
+    2370688650,
+    12977043184,
+    12977043183,
+    2370688612,
+    12977043188
+  ],
+  "tags": {
+    "addr:city:simc": "0066430",
+    "addr:housenumber": "401",
+    "addr:place": "Rycerka Górna",
+    "addr:postcode": "34-370",
+    "building": "yes",
+    "building:levels": "2",
+    "ele": "1000",
+    "email": "schroniskoprzegibek@onet.eu",
+    "name": "Schronisko PTTK na Przegibku",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "source:addr": "rajcza.e-mapa.net",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "tourism": "alpine_hut",
+    "website": "https://przegibek.pttk.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 375059364,
+  "center": {
+    "lat": 49.7406844,
+    "lon": 19.5880332
+  },
+  "nodes": [
+    3784451346,
+    8957222481,
+    8957222482,
+    3784451347,
+    8957222483,
+    8957222484,
+    8957222487,
+    8957222486,
+    8957222485,
+    3784451348,
+    3784451349,
+    3784451346
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Restauracja Pełna Chata"
+  }
+},
+{
+  "type": "way",
+  "id": 378468126,
+  "center": {
+    "lat": 49.4127407,
+    "lon": 18.9696919
+  },
+  "nodes": [
+    3837480660,
+    3837480462,
+    3837480764,
+    3837479966,
+    12946517815,
+    3837479967,
+    3837480765,
+    3837480660
+  ],
+  "tags": {
+    "building": "yes",
+    "ele": "1236",
+    "name": "Schronisko PTTK na Wielkiej Raczy",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "source": "GPS",
+    "tourism": "alpine_hut",
+    "wheelchair": "no",
+    "wikidata": "Q9334420",
+    "wikipedia": "pl:Schronisko PTTK Wielka Racza"
+  }
+},
+{
+  "type": "way",
+  "id": 378906002,
+  "center": {
+    "lat": 49.6650879,
+    "lon": 18.9614349
+  },
+  "nodes": [
+    3822684763,
+    3822668673,
+    3822668674,
+    3822668676,
+    3822668677,
+    3822668682,
+    3822684662,
+    3822684663,
+    3822684471,
+    3822684470,
+    3822684469,
+    3822684775,
+    3822684467,
+    3822684466,
+    3822684774,
+    3822684773,
+    3822668683,
+    3822684772,
+    3822684465,
+    3822684769,
+    3822684770,
+    3822684767,
+    3822684766,
+    3822684765,
+    3822668675,
+    3822684763
+  ],
+  "tags": {
+    "building": "yes",
+    "email": "gazdowka@bialykrzyz.pl",
+    "name": "Gazdówka Biały Krzyż",
+    "phone": "+4833 817 81 91",
+    "tourism": "chalet",
+    "website": "https://pokoje.bialykrzyz.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 380167045,
+  "center": {
+    "lat": 49.5152670,
+    "lon": 19.0005570
+  },
+  "nodes": [
+    3835037675,
+    3835037577,
+    3835083974,
+    3835084663,
+    3835037675
+  ],
+  "tags": {
+    "addr:city:simc": "0067010",
+    "addr:housenumber": "145",
+    "addr:place": "Zwardoń",
+    "addr:postcode": "34-373",
+    "building": "house",
+    "facebook": "https://www.facebook.com/DomekGierka/",
+    "name": "Gierkówka",
+    "source:addr": "rajcza.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 380214914,
+  "center": {
+    "lat": 49.5024694,
+    "lon": 18.9731685
+  },
+  "nodes": [
+    3835549179,
+    3835549678,
+    3835549178,
+    3835549606,
+    3835550264,
+    3835549607,
+    3835549179
+  ],
+  "tags": {
+    "addr:city:simc": "0067010",
+    "addr:housenumber": "36",
+    "addr:place": "Zwardoń",
+    "addr:postcode": "34-373",
+    "building": "yes",
+    "name": "Chata u Żaby",
+    "source:addr": "rajcza.e-mapa.net",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 380319183,
+  "center": {
+    "lat": 49.5823646,
+    "lon": 19.3436990
+  },
+  "nodes": [
+    3836590560,
+    3836591262,
+    3836587050,
+    3836590562,
+    3836528690,
+    3836592257,
+    3836588605,
+    3836525940,
+    3836590560
+  ],
+  "tags": {
+    "addr:city": "Korbielów",
+    "addr:city:simc": "0055521",
+    "addr:housenumber": "42",
+    "addr:postcode": "34-335",
+    "addr:street": "Beskidzka",
+    "addr:street:sym_ul": "01103",
+    "building": "yes",
+    "capacity": "40",
+    "name": "Schronisko SSM Korbielów",
+    "phone": "+48 33 861 26 49",
+    "source:addr": "jelesnia.e-mapa.net",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "way",
+  "id": 380360879,
+  "center": {
+    "lat": 49.6042688,
+    "lon": 18.8234372
+  },
+  "nodes": [
+    3836978195,
+    5571893554,
+    3836978196,
+    3836978198,
+    7221073729,
+    8201673540,
+    3836978195
+  ],
+  "tags": {
+    "addr:city": "Wisła",
+    "addr:housenumber": "19",
+    "addr:postcode": "43-460",
+    "addr:street": "Turystyczna",
+    "building": "yes",
+    "contact:phone": "+48 33 855 2710",
+    "contact:website": "http://stozek.com.pl/",
+    "ele": "979",
+    "name": "Schronisko PTTK Stożek",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "tourism": "alpine_hut",
+    "wikidata": "Q9334417",
+    "wikipedia": "pl:Schronisko PTTK Stożek"
+  }
+},
+{
+  "type": "way",
+  "id": 380386746,
+  "center": {
+    "lat": 49.4549265,
+    "lon": 19.1089818
+  },
+  "nodes": [
+    3837239748,
+    3837244158,
+    3837238816,
+    3837238817,
+    3837239748
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "fee": "no",
+    "name": "Bacówka na Muńcole",
+    "reservation": "no",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 380413747,
+  "center": {
+    "lat": 49.4188613,
+    "lon": 19.0974893
+  },
+  "nodes": [
+    541008468,
+    3837480171,
+    3837479980,
+    3837480173,
+    541008468
+  ],
+  "tags": {
+    "addr:city:simc": "0073358",
+    "addr:housenumber": "450",
+    "addr:place": "Soblówka",
+    "addr:postcode": "34-371",
+    "building": "yes",
+    "ele": "1120",
+    "email": "rycerzowa1@gmail.com",
+    "facebook": "https://www.facebook.com/rycerzowa/",
+    "mobile": "+48606436036",
+    "name": "Bacówka PTTK na Rycerzowej",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "tourism": "alpine_hut",
+    "website": "https://www.rycerzowa.pl/",
+    "wikidata": "Q9163961",
+    "wikipedia": "pl:Bacówka PTTK na Rycerzowej"
+  }
+},
+{
+  "type": "way",
+  "id": 384199364,
+  "center": {
+    "lat": 49.8143037,
+    "lon": 19.2800138
+  },
+  "nodes": [
+    3917686807,
+    3917686806,
+    3917686613,
+    3917686808,
+    3917667284,
+    3917686701,
+    3917667285,
+    3917686703,
+    3917686807
+  ],
+  "tags": {
+    "addr:city": "Porąbka",
+    "addr:city:simc": "0064773",
+    "addr:housenumber": "41",
+    "addr:postcode": "43-353",
+    "addr:street": "Palenica",
+    "addr:street:sym_ul": "15570",
+    "building": "yes",
+    "email": "pttk.limba@gmail.com",
+    "fax": "+48 33 875 65 40",
+    "name": "Chatka Klubu Turystyki Górskiej \"Limba\"",
+    "phone": "+48609663975",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "https://pttkandrychow.fanimani.org.pl/",
+    "wikidata": "Q9189260",
+    "wikipedia": "pl:Chatka na Trzonce"
+  }
+},
+{
+  "type": "way",
+  "id": 389890223,
+  "center": {
+    "lat": 49.8024694,
+    "lon": 19.6208671
+  },
+  "nodes": [
+    3930491193,
+    3930491191,
+    3930491192,
+    3930491194,
+    3930491193
+  ],
+  "tags": {
+    "building": "hotel",
+    "email": "wadowice@zhp.pl",
+    "name": "Beskidzka Baza Obozowa ZHP w Zalesiu",
+    "operator": "Związek Harcerstwa Polskiego\nChorągiew Krakowska\n\nHufiec Ziemi Wadowickiej",
+    "phone": "+48 509 111 662;+48 606 663 353",
+    "reservation": "required",
+    "tourism": "alpine_hut",
+    "website": "https://wadowice.zhp.pl/zalesie-2/"
+  }
+},
+{
+  "type": "way",
+  "id": 389890973,
+  "center": {
+    "lat": 49.7760158,
+    "lon": 19.6051584
+  },
+  "nodes": [
+    3930456434,
+    3930456428,
+    3930454390,
+    3930456427,
+    3930455784,
+    3930455786,
+    3930456434
+  ],
+  "tags": {
+    "addr:housenumber": "558",
+    "addr:place": "Zembrzyce",
+    "addr:postcode": "34-210",
+    "building": "yes",
+    "email": "schroniskozembrzyce@gmail.com",
+    "guest_house": "hostel",
+    "internet_access": "yes",
+    "internet_access:fee": "customers",
+    "name": "Schronisko w Zembrzycach",
+    "phone": "+48600131289",
+    "rooms": "7",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "way",
+  "id": 390453587,
+  "center": {
+    "lat": 49.8411028,
+    "lon": 19.4924071
+  },
+  "nodes": [
+    3936044676,
+    3936038024,
+    3936044681,
+    3936044667,
+    3936044666,
+    3936044468,
+    3936044659,
+    3936040689,
+    3936038020,
+    3936044472,
+    3936044673,
+    3936038022,
+    3936044676
+  ],
+  "tags": {
+    "addr:city": "Ponikiew",
+    "addr:city:simc": "0074547",
+    "addr:housenumber": "72",
+    "addr:postcode": "34-100",
+    "addr:street": "Wadowicka",
+    "building": "yes",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454461,
+  "center": {
+    "lat": 49.8408802,
+    "lon": 19.4925723
+  },
+  "nodes": [
+    3936043608,
+    3936042139,
+    3936043597,
+    3936043600,
+    3936043595,
+    3936042145,
+    3936042147,
+    3936042144,
+    3936043608
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454465,
+  "center": {
+    "lat": 49.8406555,
+    "lon": 19.4919893
+  },
+  "nodes": [
+    3936043579,
+    3936042093,
+    3936042220,
+    3936042092,
+    3936043574,
+    3936043577,
+    3936042226,
+    3936042101,
+    3936043579
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454482,
+  "center": {
+    "lat": 49.8407905,
+    "lon": 19.4922846
+  },
+  "nodes": [
+    3936042131,
+    3936040682,
+    3936042233,
+    3936042124,
+    3936042231,
+    3936043592,
+    3936042128,
+    3936043593,
+    3936042131
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454488,
+  "center": {
+    "lat": 49.8409693,
+    "lon": 19.4928908
+  },
+  "nodes": [
+    3936044463,
+    3936042156,
+    3936043610,
+    3936042155,
+    3936043609,
+    3936042249,
+    3936042251,
+    3936044462,
+    3936044463
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454494,
+  "center": {
+    "lat": 49.8410798,
+    "lon": 19.4918152
+  },
+  "nodes": [
+    3936044672,
+    3936044662,
+    3936044466,
+    3936044661,
+    3936043617,
+    3936044668,
+    3936044669,
+    3936044469,
+    3936044672
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454496,
+  "center": {
+    "lat": 49.8406973,
+    "lon": 19.4925620
+  },
+  "nodes": [
+    3936043583,
+    3936042100,
+    3936042098,
+    3936042224,
+    3936042096,
+    3936043581,
+    3936042119,
+    3936042114,
+    3936043583
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454514,
+  "center": {
+    "lat": 49.8411531,
+    "lon": 19.4928222
+  },
+  "nodes": [
+    3936044478,
+    3936044675,
+    3936044671,
+    3936040690,
+    3936044670,
+    3936044684,
+    3936044477,
+    3936044685,
+    3936044478
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454520,
+  "center": {
+    "lat": 49.8408603,
+    "lon": 19.4918315
+  },
+  "nodes": [
+    3936043606,
+    3936042133,
+    3936038014,
+    3936042132,
+    3936042127,
+    3936040686,
+    3936043605,
+    3936042141,
+    3936043606
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454539,
+  "center": {
+    "lat": 49.8408162,
+    "lon": 19.4929371
+  },
+  "nodes": [
+    3936042238,
+    3936038013,
+    3936042125,
+    3936039779,
+    3936043588,
+    3936042136,
+    3936042138,
+    3936042134,
+    3936042238
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390454546,
+  "center": {
+    "lat": 49.8410092,
+    "lon": 19.4921169
+  },
+  "nodes": [
+    3936044657,
+    3936042245,
+    3936043614,
+    3936044461,
+    3936038016,
+    3936038019,
+    3936044465,
+    3936042253,
+    3936044657
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390580581,
+  "center": {
+    "lat": 49.7861549,
+    "lon": 19.3750394
+  },
+  "nodes": [
+    3937348022,
+    3937402407,
+    3937402500,
+    3937402501,
+    3937348022
+  ],
+  "tags": {
+    "addr:city": "Rzyki",
+    "addr:city:simc": "0045333",
+    "addr:housenumber": "2A",
+    "addr:place": "Potrójna",
+    "addr:postcode": "34-125",
+    "building": "yes",
+    "name": "Chata Gołębiówka",
+    "source:addr": "andrychow.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 390580858,
+  "center": {
+    "lat": 49.7783126,
+    "lon": 19.3687458
+  },
+  "nodes": [
+    3937402370,
+    3937347692,
+    3937348071,
+    3937348070,
+    3937348069,
+    3937347689,
+    3937320582,
+    3937402958,
+    3937402370
+  ],
+  "tags": {
+    "addr:city": "Rzyki",
+    "addr:housenumber": "4",
+    "addr:place": "Potrójna",
+    "addr:postcode": "34-125",
+    "building": "yes",
+    "mobile": "+48 889 697 250",
+    "name": "Chatka na Potrójnej",
+    "tourism": "guest_house",
+    "website": "http://chatka-potrojna.manifo.com"
+  }
+},
+{
+  "type": "way",
+  "id": 421749579,
+  "center": {
+    "lat": 49.7253611,
+    "lon": 18.9933987
+  },
+  "nodes": [
+    4214976270,
+    4214976272,
+    4214976274,
+    4214976275,
+    7704275147,
+    4214976277,
+    4214976276,
+    4214976279,
+    4214976278,
+    4214976271,
+    4214976273,
+    4214976270
+  ],
+  "tags": {
+    "addr:city": "Szczyrk",
+    "addr:housenumber": "9",
+    "addr:postcode": "43-370",
+    "addr:street": "Pasterska",
+    "building": "residential",
+    "ele": "702",
+    "hiking": "yes",
+    "name": "Chata Wuja Toma",
+    "operator": "Grupa THF",
+    "phone": "+4833 827 41 45",
+    "tourism": "alpine_hut",
+    "website": "http://www.grupathf.pl/",
+    "wikidata": "Q9334429",
+    "wikipedia": "pl:Schronisko turystyczne „Chata Wuja Toma”"
+  }
+},
+{
+  "type": "way",
+  "id": 421956343,
+  "center": {
+    "lat": 49.7385727,
+    "lon": 19.0049966
+  },
+  "nodes": [
+    4216899635,
+    4216899634,
+    4216899632,
+    12103789141,
+    4216899630,
+    4216899619,
+    4216899620,
+    4216899635
+  ],
+  "tags": {
+    "building": "residential",
+    "description": "Rezerwacja tylko drogą telefoniczną.",
+    "ele": "1052",
+    "email": "biuro@schroniskoklimczok.com.pl",
+    "name": "Schronisko PTTK Klimczok",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+4833 814 52 88",
+    "tourism": "alpine_hut",
+    "website": "http://www.schroniskoklimczok.com.pl/",
+    "wikidata": "Q9334402",
+    "wikipedia": "pl:Schronisko PTTK Klimczok"
+  }
+},
+{
+  "type": "way",
+  "id": 442741064,
+  "center": {
+    "lat": 49.7349749,
+    "lon": 18.7721000
+  },
+  "nodes": [
+    4404027834,
+    4404027830,
+    4404027829,
+    4404027831,
+    4404027832,
+    4404027836,
+    4404027835,
+    4404027839,
+    4404027840,
+    4404027838,
+    4404027837,
+    4404027833,
+    4404027834
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Etno Chata Topolej",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 488678385,
+  "center": {
+    "lat": 49.5467982,
+    "lon": 18.9630973
+  },
+  "nodes": [
+    4809722844,
+    4809722845,
+    4809722846,
+    4809722847,
+    4809722844
+  ],
+  "tags": {
+    "addr:housenumber": "1093",
+    "addr:place": "Koniaków",
+    "addr:postcode": "43-474",
+    "building": "yes",
+    "building:levels": "2",
+    "email": "ulkasuszka@wp.pl",
+    "internet_access": "no",
+    "name": "Domki Górskie Zacisze",
+    "phone": "+48 505190398",
+    "smoking": "no",
+    "tourism": "chalet",
+    "website": "http://domekgorskiezacisze.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 528213116,
+  "center": {
+    "lat": 49.7664621,
+    "lon": 19.2161274
+  },
+  "nodes": [
+    5133745483,
+    5133745482,
+    5133745481,
+    5133745480,
+    5133745483
+  ],
+  "tags": {
+    "addr:city": "Międzybrodzie Żywieckie",
+    "addr:city:simc": "0051374",
+    "addr:housenumber": "20",
+    "addr:postcode": "34-312",
+    "addr:street": "Strażacka",
+    "addr:street:sym_ul": "21271",
+    "building": "yes",
+    "name": "Domek Maja",
+    "source:addr": "czernichowzywiecki.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 528214754,
+  "center": {
+    "lat": 49.7714238,
+    "lon": 19.2139821
+  },
+  "nodes": [
+    5133758267,
+    5133758266,
+    5133758265,
+    5133758264,
+    5133758263,
+    5133758262,
+    5133758267
+  ],
+  "tags": {
+    "addr:city": "Międzybrodzie Żywieckie",
+    "addr:city:simc": "0051374",
+    "addr:housenumber": "7",
+    "addr:postcode": "34-312",
+    "addr:street": "Zielona",
+    "addr:street:sym_ul": "26081",
+    "building": "yes",
+    "name": "Góra Żar",
+    "source:addr": "czernichowzywiecki.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 528217161,
+  "center": {
+    "lat": 49.7776598,
+    "lon": 19.2132260
+  },
+  "nodes": [
+    5133775351,
+    5133775350,
+    5133775349,
+    5133775348,
+    5133775351
+  ],
+  "tags": {
+    "addr:city": "Międzybrodzie Bialskie",
+    "addr:city:simc": "0051090",
+    "addr:housenumber": "5",
+    "addr:postcode": "34-312",
+    "addr:street": "Energetyków",
+    "addr:street:sym_ul": "04805",
+    "building": "yes",
+    "name": "Glampspace",
+    "source:addr": "czernichowzywiecki.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 528887296,
+  "center": {
+    "lat": 49.7155583,
+    "lon": 19.2071626
+  },
+  "nodes": [
+    5138568815,
+    5138568814,
+    5138568813,
+    5138568812,
+    5138568815
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 528887297,
+  "center": {
+    "lat": 49.7155320,
+    "lon": 19.2073178
+  },
+  "nodes": [
+    5138568819,
+    5138568818,
+    5138568817,
+    5138568816,
+    5138568819
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 528887298,
+  "center": {
+    "lat": 49.7155062,
+    "lon": 19.2074752
+  },
+  "nodes": [
+    5138568923,
+    5138568922,
+    5138568921,
+    5138568820,
+    5138568923
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 528887299,
+  "center": {
+    "lat": 49.7154761,
+    "lon": 19.2076395
+  },
+  "nodes": [
+    5138568927,
+    5138568926,
+    5138568925,
+    5138568924,
+    5138568927
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 530652893,
+  "center": {
+    "lat": 49.7658080,
+    "lon": 19.2131090
+  },
+  "nodes": [
+    5152472538,
+    5152472537,
+    5152472536,
+    5152472535,
+    5152472538
+  ],
+  "tags": {
+    "addr:city": "Międzybrodzie Żywieckie",
+    "addr:city:simc": "0051374",
+    "addr:housenumber": "1",
+    "addr:postcode": "34-312",
+    "addr:street": "Isepnicka",
+    "addr:street:sym_ul": "36100",
+    "building": "yes",
+    "name": "Domek Letniskowy w Górach",
+    "source:addr": "czernichowzywiecki.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 586021834,
+  "center": {
+    "lat": 49.5042728,
+    "lon": 18.9906506
+  },
+  "nodes": [
+    10885294463,
+    10885294462,
+    5599736567,
+    5599736568,
+    10885294461,
+    10885294460,
+    5599736565,
+    5599736566,
+    10885294459,
+    10885294458,
+    10885294463
+  ],
+  "tags": {
+    "addr:city:simc": "0067010",
+    "addr:housenumber": "180",
+    "addr:place": "Zwardoń",
+    "addr:postcode": "34-370",
+    "building": "house",
+    "building:levels": "2",
+    "name": "Chata Zwierzówka",
+    "source": "www.geoportal.gov.pl",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 586023686,
+  "center": {
+    "lat": 49.5011460,
+    "lon": 18.9822338
+  },
+  "nodes": [
+    5599753686,
+    6016408860,
+    6016408859,
+    5599753687,
+    5599753688,
+    5599753689,
+    5599753686
+  ],
+  "tags": {
+    "addr:city:simc": "0067010",
+    "addr:housenumber": "50A",
+    "addr:place": "Zwardoń",
+    "addr:postcode": "34-373",
+    "building": "yes",
+    "email": "marek.nocon@interia.pl",
+    "name": "Noconiówka",
+    "phone": "+48601893396",
+    "source:addr": "rajcza.e-mapa.net",
+    "tourism": "chalet",
+    "website": "http://noconiowka.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 586042143,
+  "center": {
+    "lat": 49.6815579,
+    "lon": 19.2014713
+  },
+  "nodes": [
+    9367602167,
+    9367602166,
+    9367602168,
+    9367602169,
+    5599912305,
+    5599912306,
+    5599912307,
+    9367602167
+  ],
+  "tags": {
+    "addr:postcode": "34-300",
+    "addr:street": "Wincentego Witosa",
+    "amenity": "biergarten",
+    "name": "Ogródek u Witka",
+    "name:pl": "Ogródek u Witka",
+    "phone": "+48 500725685",
+    "tourism": "chalet",
+    "website": "https://ogrodek-u-witka.business.site/"
+  }
+},
+{
+  "type": "way",
+  "id": 594633131,
+  "center": {
+    "lat": 49.6549905,
+    "lon": 19.4425282
+  },
+  "nodes": [
+    5669717927,
+    5669717926,
+    5669717925,
+    5669717924,
+    5669717927
+  ],
+  "tags": {
+    "building": "hut",
+    "shelter_type": "basic_hut",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 594633135,
+  "center": {
+    "lat": 49.6137991,
+    "lon": 19.4625090
+  },
+  "nodes": [
+    5669717931,
+    5669717930,
+    5669717929,
+    5669717928,
+    5669717931
+  ],
+  "tags": {
+    "building": "yes",
+    "fee": "no",
+    "fireplace": "yes",
+    "name": "Szałas",
+    "reservation": "no",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/1617/zrub_na_modralovej_medralowa.html"
+  }
+},
+{
+  "type": "way",
+  "id": 695489799,
+  "center": {
+    "lat": 49.5790616,
+    "lon": 19.1944861
+  },
+  "nodes": [
+    1873417686,
+    6530356966,
+    6530356967,
+    6530356968,
+    6530356969,
+    6530356970,
+    6530356971,
+    6530356972,
+    6530356973,
+    6530356974,
+    1873417686
+  ],
+  "tags": {
+    "addr:housenumber": "180",
+    "addr:place": "Żabnica",
+    "building": "yes",
+    "description": "40 miejsc noclegowych, bar, sklepik",
+    "name": "Stacja Turystyczna Abrahamów",
+    "operator": "Wanda Radecka",
+    "phone": "+48 502 268 808",
+    "phone_1": "+48 33 8626408",
+    "source": "Knowledge, Bing",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 712458114,
+  "center": {
+    "lat": 49.7153458,
+    "lon": 19.2086767
+  },
+  "nodes": [
+    6698630976,
+    6698630916,
+    6698630915,
+    6698630975,
+    6698630974,
+    6698630973,
+    6698630976
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 712458115,
+  "center": {
+    "lat": 49.7152897,
+    "lon": 19.2089381
+  },
+  "nodes": [
+    6698630980,
+    6698630908,
+    6698630907,
+    6698630979,
+    6698630978,
+    6698630977,
+    6698630980
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 712458116,
+  "center": {
+    "lat": 49.7155271,
+    "lon": 19.2087200
+  },
+  "nodes": [
+    6698630984,
+    6698630902,
+    6698630925,
+    6698630983,
+    6698630982,
+    6698630981,
+    6698630984
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 715912167,
+  "center": {
+    "lat": 49.7157815,
+    "lon": 19.2086110
+  },
+  "nodes": [
+    6727796456,
+    6727796455,
+    6727796454,
+    6727796453,
+    6727796456
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 715912168,
+  "center": {
+    "lat": 49.7158162,
+    "lon": 19.2084781
+  },
+  "nodes": [
+    6727796460,
+    6727796459,
+    6727796458,
+    6727796457,
+    6727796460
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 715912169,
+  "center": {
+    "lat": 49.7158223,
+    "lon": 19.2083609
+  },
+  "nodes": [
+    6727796464,
+    6727796463,
+    6727796462,
+    6727796461,
+    6727796464
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 715912170,
+  "center": {
+    "lat": 49.7158838,
+    "lon": 19.2081699
+  },
+  "nodes": [
+    6727796468,
+    6727796467,
+    6727796466,
+    6727796465,
+    6727796468
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 715912172,
+  "center": {
+    "lat": 49.7159438,
+    "lon": 19.2080979
+  },
+  "nodes": [
+    6727796476,
+    6727796475,
+    6727796416,
+    6727796474,
+    6727796473,
+    6727796476
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 749900333,
+  "center": {
+    "lat": 49.6207642,
+    "lon": 19.0191212
+  },
+  "nodes": [
+    7012300004,
+    7012300001,
+    7012300002,
+    7012300003,
+    7012300004
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "fee": "no",
+    "fireplace": "yes",
+    "name": "Bacówka",
+    "tourism": "wilderness_hut",
+    "url": "https://wiating.pl/chatka-pod-barania/"
+  }
+},
+{
+  "type": "way",
+  "id": 749919560,
+  "center": {
+    "lat": 49.5810910,
+    "lon": 19.2011163
+  },
+  "nodes": [
+    7012457906,
+    7012457905,
+    7012457904,
+    7012457903,
+    7012457906
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "3",
+    "name": "Górska stacja turystyczna \"Matlakówka\" im Bolka Gotowta",
+    "operator": "PTTK Oddział \"Skarpa\" w Toruniu",
+    "phone": "+48 692 442 889",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 757067119,
+  "center": {
+    "lat": 49.5109387,
+    "lon": 18.9650112
+  },
+  "nodes": [
+    7070422936,
+    7070422935,
+    7070422934,
+    7070422933,
+    7070422932,
+    7070422931,
+    7070422930,
+    7070422929,
+    7070422928,
+    7070422927,
+    7070422936
+  ],
+  "tags": {
+    "addr:city:simc": "0067010",
+    "addr:housenumber": "101A",
+    "addr:place": "Zwardoń",
+    "addr:postcode": "34-373",
+    "building": "yes",
+    "name": "Drewutnia",
+    "source": "www.geoportal.gov.pl",
+    "source:addr": "rajcza.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 773613664,
+  "center": {
+    "lat": 49.6306985,
+    "lon": 18.9159180
+  },
+  "nodes": [
+    7221073286,
+    7221073285,
+    7221073284,
+    7221073283,
+    7221073282,
+    7221073286
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Chatka Malinka",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 775132127,
+  "center": {
+    "lat": 49.6518603,
+    "lon": 19.4274615
+  },
+  "nodes": [
+    7231547798,
+    7231547797,
+    7231547796,
+    7231547795,
+    7231547798
+  ],
+  "tags": {
+    "access": "permissive",
+    "building": "yes",
+    "disused:building": "house",
+    "drinking_water": "yes",
+    "fee": "no",
+    "name": "Chatka pod szczytem Lachów Groń",
+    "reservation": "no",
+    "tourism": "wilderness_hut",
+    "url": "https://wiating.pl/chatka-pod-szczytem-lachow-gron/"
+  }
+},
+{
+  "type": "way",
+  "id": 871976527,
+  "center": {
+    "lat": 49.5943738,
+    "lon": 19.4156768
+  },
+  "nodes": [
+    8121627071,
+    8121627072,
+    8121627073,
+    8121627074,
+    8121627071
+  ],
+  "tags": {
+    "access": "private",
+    "building": "yes",
+    "fee": "yes",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 889909388,
+  "center": {
+    "lat": 49.5521911,
+    "lon": 18.9214069
+  },
+  "nodes": [
+    2919879909,
+    2919879908,
+    8272073580,
+    2919879888,
+    2919879901,
+    2919879887,
+    2919879897,
+    2919879904,
+    2919879906,
+    2919879909
+  ],
+  "tags": {
+    "addr:housenumber": "1876",
+    "addr:place": "Istebna",
+    "addr:postcode": "43-470",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Domki inNatura",
+    "tourism": "chalet",
+    "website": "https://www.facebook.com/pages/category/Hotel---Lodging/Domki-innatura-103315427762202/"
+  }
+},
+{
+  "type": "way",
+  "id": 893811784,
+  "center": {
+    "lat": 49.5125363,
+    "lon": 19.1724731
+  },
+  "nodes": [
+    8307330987,
+    8307330988,
+    8307330989,
+    8307330990,
+    8307330987
+  ],
+  "tags": {
+    "building": "house",
+    "name": "Chata Zapolanka",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 912009699,
+  "center": {
+    "lat": 49.6922392,
+    "lon": 18.9255172
+  },
+  "nodes": [
+    8469765235,
+    8469765236,
+    8469765237,
+    8469765238,
+    8469765235
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "changing_table": "no",
+    "description": "Zakaz rozpalania ognia w budynku bacówki",
+    "fee": "no",
+    "fireplace": "yes",
+    "internet_access": "no",
+    "name": "Bacówka",
+    "shower": "no",
+    "toilets:wheelchair": "no",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 930856149,
+  "center": {
+    "lat": 49.6079985,
+    "lon": 19.1212525
+  },
+  "nodes": [
+    8630796693,
+    8630796694,
+    8630796695,
+    8630796696,
+    8630796693
+  ],
+  "tags": {
+    "addr:city": "Węgierska Górka",
+    "addr:housenumber": "1a",
+    "addr:postcode": "34-350",
+    "addr:street": "Nad Sołą",
+    "building": "house",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Tadziówka",
+    "reservation": "required",
+    "tourism": "chalet",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 973167500,
+  "center": {
+    "lat": 49.4947442,
+    "lon": 18.9820687
+  },
+  "nodes": [
+    9007222618,
+    9007222617,
+    9007207116,
+    9007207115,
+    9007222618
+  ],
+  "tags": {
+    "addr:city:simc": "0067010",
+    "addr:housenumber": "196C",
+    "addr:place": "Zwardoń",
+    "addr:postcode": "34-370",
+    "building": "residential",
+    "email": "agnieszka.polak@awpolak.pl",
+    "name": "Dom przy starym szlaku",
+    "phone": "+48 601 464 411",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "chalet",
+    "website": "https://www.facebook.com/Dom-przy-starym-szlaku-333117037539826"
+  }
+},
+{
+  "type": "way",
+  "id": 975558534,
+  "center": {
+    "lat": 49.7944685,
+    "lon": 19.0927018
+  },
+  "nodes": [
+    9027776868,
+    9027776869,
+    9027776870,
+    9027776871,
+    9027776872,
+    9027776873,
+    9027776874,
+    9027776875,
+    9027776876,
+    9027776877,
+    9027776868
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 975558890,
+  "center": {
+    "lat": 49.7945640,
+    "lon": 19.0930327
+  },
+  "nodes": [
+    9027767246,
+    9027767247,
+    9027767248,
+    9027767249,
+    9027767246
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 977668521,
+  "center": {
+    "lat": 49.7251155,
+    "lon": 18.9929936
+  },
+  "nodes": [
+    9046479686,
+    9046479687,
+    9046479688,
+    9046479689,
+    9046479686
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1000858964,
+  "center": {
+    "lat": 49.7138169,
+    "lon": 19.2082983
+  },
+  "nodes": [
+    9238551930,
+    9238551929,
+    9238551928,
+    9764753190,
+    9764779427,
+    9238551931,
+    9238551930
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1000858965,
+  "center": {
+    "lat": 49.7139286,
+    "lon": 19.2084512
+  },
+  "nodes": [
+    9238551934,
+    9238551933,
+    9238551932,
+    9764753184,
+    9238551935,
+    9238551934
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1000858966,
+  "center": {
+    "lat": 49.7138096,
+    "lon": 19.2086618
+  },
+  "nodes": [
+    9238551938,
+    9238551937,
+    9764753208,
+    9238551936,
+    9764753177,
+    9764753207,
+    9238551939,
+    9238551938
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1000858967,
+  "center": {
+    "lat": 49.7136972,
+    "lon": 19.2085098
+  },
+  "nodes": [
+    9238551942,
+    9238551941,
+    9764753215,
+    9238551940,
+    9764753185,
+    9238551943,
+    9764779457,
+    9238551942
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:levels": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1000858981,
+  "center": {
+    "lat": 49.7161578,
+    "lon": 19.2073775
+  },
+  "nodes": [
+    9238552019,
+    9238552020,
+    9238552021,
+    9238552022,
+    9238552019
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1000858982,
+  "center": {
+    "lat": 49.7161564,
+    "lon": 19.2072430
+  },
+  "nodes": [
+    9238552023,
+    9238552024,
+    9238552025,
+    9238552026,
+    9238552023
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1000858983,
+  "center": {
+    "lat": 49.7161141,
+    "lon": 19.2071069
+  },
+  "nodes": [
+    9238552027,
+    9238552028,
+    9238552029,
+    9238552030,
+    9238552027
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1055200435,
+  "center": {
+    "lat": 49.5782904,
+    "lon": 19.6263246
+  },
+  "nodes": [
+    9696146642,
+    9696146641,
+    9696146640,
+    9696146639,
+    9696146642
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1055200436,
+  "center": {
+    "lat": 49.5792811,
+    "lon": 19.6268910
+  },
+  "nodes": [
+    9696146646,
+    9696146645,
+    9696146644,
+    9696146643,
+    9696146646
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1055200441,
+  "center": {
+    "lat": 49.5783728,
+    "lon": 19.6262415
+  },
+  "nodes": [
+    9696146666,
+    9696146665,
+    9696146664,
+    9696146663,
+    9696146666
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1055200442,
+  "center": {
+    "lat": 49.5784493,
+    "lon": 19.6261533
+  },
+  "nodes": [
+    9696146670,
+    9696146669,
+    9696146668,
+    9696146667,
+    9696146670
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1055200443,
+  "center": {
+    "lat": 49.5785059,
+    "lon": 19.6262832
+  },
+  "nodes": [
+    9696146674,
+    9696146673,
+    9696146672,
+    9696146671,
+    9696146674
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1055200444,
+  "center": {
+    "lat": 49.5783404,
+    "lon": 19.6264463
+  },
+  "nodes": [
+    9696146678,
+    9696146677,
+    9696146676,
+    9696146675,
+    9696146678
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1055200445,
+  "center": {
+    "lat": 49.5784228,
+    "lon": 19.6263673
+  },
+  "nodes": [
+    9696146682,
+    9696146681,
+    9696146680,
+    9696146679,
+    9696146682
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1062979093,
+  "center": {
+    "lat": 49.7161561,
+    "lon": 19.2075025
+  },
+  "nodes": [
+    9764794899,
+    9764794898,
+    9764794897,
+    9764794896,
+    9764794899
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1090185465,
+  "center": {
+    "lat": 49.6196852,
+    "lon": 18.9509394
+  },
+  "nodes": [
+    9985749328,
+    9985749329,
+    9985749330,
+    9985749331,
+    9985749328
+  ],
+  "tags": {
+    "building": "yes",
+    "check_date": "2025-04-20",
+    "name": "Michalikówka",
+    "phone": "+48 502 519 624",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1090200092,
+  "center": {
+    "lat": 49.6308297,
+    "lon": 18.9839102
+  },
+  "nodes": [
+    9985851055,
+    9985851056,
+    9985851057,
+    13813248298,
+    9985851055
+  ],
+  "tags": {
+    "addr:city": "Wisła",
+    "addr:postcode": "43-460",
+    "addr:street": "Chłopska",
+    "amenity": "fast_food",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=100071949363423",
+    "cuisine": "regional",
+    "diet:non-vegetarian": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "name": "Chatka na Wyśnim",
+    "opening_hours": "Sa,Su 10:00-18:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+48 884 985 884"
+  }
+},
+{
+  "type": "way",
+  "id": 1090212110,
+  "center": {
+    "lat": 49.4649489,
+    "lon": 19.1552724
+  },
+  "nodes": [
+    9985952633,
+    9985952643,
+    9985952634,
+    9985952642,
+    9985952635,
+    9985952636,
+    9985952633
+  ],
+  "tags": {
+    "addr:housenumber": "3E",
+    "addr:place": "Glinka",
+    "addr:postcode": "34-371",
+    "building": "yes",
+    "email": "chromcowka@gmail.com",
+    "name": "Chromcówka",
+    "phone": "+48 516 090 480",
+    "tourism": "chalet",
+    "website": "https://www.chromcowka.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 1090212111,
+  "center": {
+    "lat": 49.4647962,
+    "lon": 19.1551378
+  },
+  "nodes": [
+    9985952637,
+    9985952638,
+    9985952639,
+    9985952640,
+    9985952637
+  ],
+  "tags": {
+    "addr:housenumber": "3D",
+    "addr:place": "Glinka",
+    "addr:postcode": "34-371",
+    "building": "yes",
+    "email": "chromcowka@gmail.com",
+    "name": "Chromcówka",
+    "phone": "+48 516 090 480",
+    "tourism": "chalet",
+    "website": "https://www.chromcowka.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 1105593372,
+  "center": {
+    "lat": 49.7873876,
+    "lon": 19.2003416
+  },
+  "nodes": [
+    10117109838,
+    10117109837,
+    10117109836,
+    10117109835,
+    10117109838
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1105593373,
+  "center": {
+    "lat": 49.7874104,
+    "lon": 19.2001882
+  },
+  "nodes": [
+    10117109842,
+    10117109841,
+    10117109840,
+    10117109839,
+    10117109842
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1105593374,
+  "center": {
+    "lat": 49.7874671,
+    "lon": 19.1994769
+  },
+  "nodes": [
+    10117109846,
+    10117109845,
+    10117109844,
+    10117109843,
+    10117109846
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1105593400,
+  "center": {
+    "lat": 49.7873130,
+    "lon": 19.1990212
+  },
+  "nodes": [
+    10117109950,
+    10117109949,
+    10117109948,
+    10117109947,
+    10117109950
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1106562466,
+  "center": {
+    "lat": 49.6367925,
+    "lon": 18.8719352
+  },
+  "nodes": [
+    10125915302,
+    10125915301,
+    10125915300,
+    10125915299,
+    10125915302
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1119981260,
+  "center": {
+    "lat": 49.7853571,
+    "lon": 19.1990596
+  },
+  "nodes": [
+    2047884653,
+    10243465254,
+    2047884450,
+    10243465255,
+    10243465256,
+    10243465257,
+    10243465258,
+    10243465259,
+    10243465260,
+    10243465261,
+    10243465262,
+    10243465263,
+    2123878139,
+    2123878138,
+    2123878137,
+    2123878136,
+    10243465264,
+    2047884653
+  ],
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1119988372,
+  "center": {
+    "lat": 49.7872815,
+    "lon": 19.1992626
+  },
+  "nodes": [
+    10243529932,
+    10241266494,
+    10243529933,
+    10243529934,
+    10243529935,
+    10243529936,
+    10243529937,
+    10243529938,
+    10243529939,
+    10243529940,
+    10243529941,
+    10243529942,
+    10243529943,
+    10243529944,
+    10243529945,
+    10243529932
+  ],
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1119988373,
+  "center": {
+    "lat": 49.7859057,
+    "lon": 19.1899258
+  },
+  "nodes": [
+    10243529947,
+    10243529948,
+    10243529949,
+    10243529950,
+    10243529951,
+    10243529952,
+    10243529953,
+    10243529954,
+    10243529955,
+    10243529956,
+    10243529957,
+    10243529958,
+    10243529959,
+    10243529960,
+    10237948147,
+    10237948148,
+    10237948149,
+    10243529961,
+    10243529962,
+    10243529963,
+    10237948158,
+    10243529964,
+    10243529965,
+    10243529966,
+    10243529967,
+    10243529968,
+    10243529969,
+    10243529947
+  ],
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1119990443,
+  "center": {
+    "lat": 49.7883502,
+    "lon": 19.2004784
+  },
+  "nodes": [
+    10243529645,
+    10243529646,
+    10243529647,
+    10243529648,
+    10243529645
+  ],
+  "tags": {
+    "area": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138105230,
+  "center": {
+    "lat": 49.6383962,
+    "lon": 19.3975013
+  },
+  "nodes": [
+    10608686055,
+    10608686054,
+    10608686053,
+    10608686052,
+    10608686055
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138113868,
+  "center": {
+    "lat": 49.8429676,
+    "lon": 19.5092157
+  },
+  "nodes": [
+    10608731609,
+    10608731608,
+    10608731607,
+    10608731606,
+    10608731609
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138113869,
+  "center": {
+    "lat": 49.8430920,
+    "lon": 19.5093982
+  },
+  "nodes": [
+    10608731613,
+    10608731612,
+    10608731611,
+    10608731610,
+    10608731613
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138113870,
+  "center": {
+    "lat": 49.8431826,
+    "lon": 19.5093791
+  },
+  "nodes": [
+    10608731617,
+    10608731616,
+    10608731615,
+    10608731614,
+    10608731617
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138113871,
+  "center": {
+    "lat": 49.8431784,
+    "lon": 19.5092337
+  },
+  "nodes": [
+    10608731621,
+    10608731620,
+    10608731619,
+    10608731618,
+    10608731621
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138113873,
+  "center": {
+    "lat": 49.8429130,
+    "lon": 19.5094361
+  },
+  "nodes": [
+    10608731629,
+    10608731628,
+    10608731627,
+    10608731626,
+    10608731629
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138113874,
+  "center": {
+    "lat": 49.8430024,
+    "lon": 19.5094173
+  },
+  "nodes": [
+    10608731633,
+    10608731632,
+    10608731631,
+    10608731630,
+    10608731633
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138113875,
+  "center": {
+    "lat": 49.8427868,
+    "lon": 19.5092643
+  },
+  "nodes": [
+    10608731637,
+    10608731636,
+    10608731635,
+    10608731634,
+    10608731637
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138113876,
+  "center": {
+    "lat": 49.8428787,
+    "lon": 19.5092377
+  },
+  "nodes": [
+    10608731641,
+    10608731640,
+    10608731639,
+    10608731638,
+    10608731641
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138149628,
+  "center": {
+    "lat": 49.8475500,
+    "lon": 19.3272125
+  },
+  "nodes": [
+    10609041491,
+    10609041492,
+    10609041493,
+    10609041490,
+    10609041491
+  ],
+  "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138149629,
+  "center": {
+    "lat": 49.8475165,
+    "lon": 19.3275720
+  },
+  "nodes": [
+    10609041495,
+    10609041496,
+    10609041497,
+    10609041494,
+    10609041495
+  ],
+  "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1138149630,
+  "center": {
+    "lat": 49.8474930,
+    "lon": 19.3279120
+  },
+  "nodes": [
+    10609041499,
+    10609041500,
+    10609041501,
+    10609041498,
+    10609041499
+  ],
+  "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1149456847,
+  "center": {
+    "lat": 49.5273794,
+    "lon": 19.5904738
+  },
+  "nodes": [
+    10693358032,
+    10693358033,
+    10693358034,
+    10693358035,
+    10693358032
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1149465618,
+  "center": {
+    "lat": 49.5337141,
+    "lon": 19.5958944
+  },
+  "nodes": [
+    10693431904,
+    10693431905,
+    10693431906,
+    10693431907,
+    10693431904
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1158663068,
+  "center": {
+    "lat": 49.8160648,
+    "lon": 19.5482075
+  },
+  "nodes": [
+    9108330455,
+    9906436725,
+    9910459030,
+    10775216330,
+    10775216329,
+    9108330455
+  ],
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1162061072,
+  "center": {
+    "lat": 49.5752637,
+    "lon": 18.8841774
+  },
+  "nodes": [
+    10807467788,
+    10807467787,
+    10807467786,
+    10807467785,
+    10807467788
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1162061073,
+  "center": {
+    "lat": 49.5751949,
+    "lon": 18.8838127
+  },
+  "nodes": [
+    10807467792,
+    10807467791,
+    10807467790,
+    10807467789,
+    10807467792
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1162061074,
+  "center": {
+    "lat": 49.5748787,
+    "lon": 18.8840050
+  },
+  "nodes": [
+    10807467796,
+    10807467795,
+    10807467794,
+    10807467793,
+    10807467796
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1162061076,
+  "center": {
+    "lat": 49.5751248,
+    "lon": 18.8840422
+  },
+  "nodes": [
+    10807467807,
+    10807467806,
+    10807467805,
+    10807467804,
+    10807467807
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1162061078,
+  "center": {
+    "lat": 49.5749034,
+    "lon": 18.8838477
+  },
+  "nodes": [
+    10807467815,
+    10807467814,
+    10807467813,
+    10807467812,
+    10807467815
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1162061079,
+  "center": {
+    "lat": 49.5752432,
+    "lon": 18.8840612
+  },
+  "nodes": [
+    10807467819,
+    10807467818,
+    10807467817,
+    10807467816,
+    10807467819
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1162061080,
+  "center": {
+    "lat": 49.5749687,
+    "lon": 18.8840880
+  },
+  "nodes": [
+    10807467823,
+    10807467822,
+    10807467821,
+    10807467820,
+    10807467823
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1162061082,
+  "center": {
+    "lat": 49.5751394,
+    "lon": 18.8841679
+  },
+  "nodes": [
+    10807467831,
+    10807467830,
+    10807467829,
+    10807467828,
+    10807467831
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1162061084,
+  "center": {
+    "lat": 49.5752209,
+    "lon": 18.8839403
+  },
+  "nodes": [
+    10807467839,
+    10807467838,
+    10807467837,
+    10807467836,
+    10807467839
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1168360336,
+  "center": {
+    "lat": 49.5543902,
+    "lon": 18.9353201
+  },
+  "nodes": [
+    10865997815,
+    10865997818,
+    12532906537,
+    12532906536,
+    10865997816,
+    10865997817,
+    10865997815
+  ],
+  "tags": {
+    "addr:city:simc": "0054007",
+    "addr:housenumber": "1207",
+    "addr:place": "Koniaków",
+    "addr:postcode": "43-474",
+    "building": "residential",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1168360337,
+  "center": {
+    "lat": 49.5543742,
+    "lon": 18.9355244
+  },
+  "nodes": [
+    10865997819,
+    10865997822,
+    12532906539,
+    12532906538,
+    10865997820,
+    10865997821,
+    10865997819
+  ],
+  "tags": {
+    "addr:city:simc": "0054007",
+    "addr:housenumber": "1208",
+    "addr:place": "Koniaków",
+    "addr:postcode": "43-474",
+    "building": "residential",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1168360338,
+  "center": {
+    "lat": 49.5543579,
+    "lon": 18.9357319
+  },
+  "nodes": [
+    10865997826,
+    12532906535,
+    12532906534,
+    10865997825,
+    10865997824,
+    10865997823,
+    10865997826
+  ],
+  "tags": {
+    "addr:city:simc": "0054007",
+    "addr:housenumber": "1209",
+    "addr:place": "Koniaków",
+    "addr:postcode": "43-474",
+    "building": "residential",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1175833100,
+  "center": {
+    "lat": 49.6017324,
+    "lon": 19.6585719
+  },
+  "nodes": [
+    10925758293,
+    10925758294,
+    10925758295,
+    10925758296,
+    10925758293
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1175833101,
+  "center": {
+    "lat": 49.6015218,
+    "lon": 19.6582906
+  },
+  "nodes": [
+    10925758297,
+    10925758298,
+    10925758299,
+    10925758300,
+    10925758297
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1175833103,
+  "center": {
+    "lat": 49.6013316,
+    "lon": 19.6571969
+  },
+  "nodes": [
+    10925762005,
+    10925762006,
+    10925762007,
+    10925762008,
+    10925762005
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1175865894,
+  "center": {
+    "lat": 49.6012552,
+    "lon": 19.6579365
+  },
+  "nodes": [
+    10926003937,
+    10926003938,
+    10926003939,
+    10926003940,
+    10926003937
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1176653841,
+  "center": {
+    "lat": 49.7252059,
+    "lon": 18.9929955
+  },
+  "nodes": [
+    10932137143,
+    10932137144,
+    10932137145,
+    10932137146,
+    10932137143
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1190653808,
+  "center": {
+    "lat": 49.4714455,
+    "lon": 18.9985108
+  },
+  "nodes": [
+    11055274028,
+    11055274029,
+    11055274030,
+    11055274031,
+    11055274028
+  ],
+  "tags": {
+    "addr:city:simc": "0066714",
+    "addr:housenumber": "329",
+    "addr:place": "Sól",
+    "addr:postcode": "34-370",
+    "beds": "0",
+    "building": "yes",
+    "email": "agnieszka.polak@awpolak.pl",
+    "mobile": "+48601464411",
+    "rooms": "0",
+    "source:addr": "rajcza.e-mapa.net",
+    "tourism": "alpine_hut",
+    "website": "https://www.facebook.com/schronisko.ozna"
+  }
+},
+{
+  "type": "way",
+  "id": 1190982516,
+  "center": {
+    "lat": 49.7201292,
+    "lon": 19.2114447
+  },
+  "nodes": [
+    11058181382,
+    11058181383,
+    11058181384,
+    11058181385,
+    11058181382
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1209673222,
+  "center": {
+    "lat": 49.8408266,
+    "lon": 19.4929313
+  },
+  "nodes": [
+    11207145942,
+    11207145943,
+    11207145944,
+    11207145945,
+    11207145946,
+    11207145955,
+    11207145942
+  ],
+  "tags": {
+    "addr:city": "Ponikiew",
+    "addr:housenumber": "57",
+    "addr:postcode": "34-100",
+    "addr:street": "Wadowicka",
+    "email": "biuro@calorocznedomki.pl",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Ośrodek Szkoleniowo-Wypoczynkowy „PONIKIEW”",
+    "phone": "+48 532 692 245",
+    "tourism": "chalet",
+    "website": "https://calorocznedomki.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 1225034043,
+  "center": {
+    "lat": 49.6343409,
+    "lon": 19.5298456
+  },
+  "nodes": [
+    11360450034,
+    11360450033,
+    11360450032,
+    11360450031,
+    11360450034
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1225034044,
+  "center": {
+    "lat": 49.6345321,
+    "lon": 19.5303792
+  },
+  "nodes": [
+    11360450038,
+    11360450037,
+    11360450036,
+    11360450035,
+    11360450038
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1225034045,
+  "center": {
+    "lat": 49.6344726,
+    "lon": 19.5302895
+  },
+  "nodes": [
+    11360450042,
+    11360450041,
+    11360450040,
+    11360450039,
+    11360450042
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1225034046,
+  "center": {
+    "lat": 49.6343938,
+    "lon": 19.5301688
+  },
+  "nodes": [
+    11360450046,
+    11360450045,
+    11360450044,
+    11360450043,
+    11360450046
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1225034047,
+  "center": {
+    "lat": 49.6343159,
+    "lon": 19.5300339
+  },
+  "nodes": [
+    11360450050,
+    11360450049,
+    11360450048,
+    11360450047,
+    11360450050
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1232423598,
+  "center": {
+    "lat": 49.5477458,
+    "lon": 19.5699710
+  },
+  "nodes": [
+    11432027055,
+    11432027056,
+    11432027057,
+    11432027058,
+    11432027055
+  ],
+  "tags": {
+    "addr:city:simc": "0440762",
+    "addr:housenumber": "141A",
+    "addr:place": "Kiczory",
+    "addr:postcode": "34-483",
+    "building": "yes",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1232423599,
+  "center": {
+    "lat": 49.5476861,
+    "lon": 19.5697012
+  },
+  "nodes": [
+    11432027059,
+    11432027060,
+    11432027061,
+    11432027062,
+    11432027059
+  ],
+  "tags": {
+    "addr:city:simc": "0440762",
+    "addr:housenumber": "141B",
+    "addr:place": "Kiczory",
+    "addr:postcode": "34-483",
+    "building": "yes",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1232423600,
+  "center": {
+    "lat": 49.5476069,
+    "lon": 19.5694304
+  },
+  "nodes": [
+    11432027063,
+    11432027064,
+    11432027065,
+    11432027066,
+    11432027063
+  ],
+  "tags": {
+    "addr:city:simc": "0440762",
+    "addr:housenumber": "141C",
+    "addr:place": "Kiczory",
+    "addr:postcode": "34-483",
+    "building": "yes",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1237386479,
+  "center": {
+    "lat": 49.7203296,
+    "lon": 19.2109418
+  },
+  "nodes": [
+    11492769621,
+    11492769620,
+    11492769619,
+    11492769618,
+    11492769621
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1237386481,
+  "center": {
+    "lat": 49.6614224,
+    "lon": 19.2974749
+  },
+  "nodes": [
+    11492769649,
+    11492769648,
+    11492769647,
+    11492769646,
+    11492769645,
+    11492769644,
+    11492769649
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1239694060,
+  "center": {
+    "lat": 49.6744028,
+    "lon": 19.4612377
+  },
+  "nodes": [
+    11517089222,
+    11517089223,
+    11517089224,
+    11517089225,
+    11517089222
+  ],
+  "tags": {
+    "access": "permit",
+    "building": "cabin",
+    "note": "Obiekt jest prywatny, monitorowany i zamykany pod nieobecność właściciela.",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1246191244,
+  "center": {
+    "lat": 49.7135249,
+    "lon": 19.0242055
+  },
+  "nodes": [
+    11585693975,
+    11585693976,
+    11585693977,
+    11585693981,
+    11585693978,
+    11585693975
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1246191245,
+  "center": {
+    "lat": 49.7134929,
+    "lon": 19.0241211
+  },
+  "nodes": [
+    11585693978,
+    11585693979,
+    11585693980,
+    11585693981,
+    11585693978
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1246191246,
+  "center": {
+    "lat": 49.7133446,
+    "lon": 19.0238952
+  },
+  "nodes": [
+    11585693982,
+    11585693983,
+    11585693984,
+    11585693985,
+    11585693982
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1246191247,
+  "center": {
+    "lat": 49.7134320,
+    "lon": 19.0239257
+  },
+  "nodes": [
+    11585693986,
+    11585693987,
+    11585693988,
+    11585693989,
+    11585693986
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1253864619,
+  "center": {
+    "lat": 49.8017634,
+    "lon": 19.1982252
+  },
+  "nodes": [
+    11655538460,
+    11655538461,
+    11655538462,
+    11655538463,
+    11655538460
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1265746785,
+  "center": {
+    "lat": 49.6211953,
+    "lon": 19.6141680
+  },
+  "nodes": [
+    11757448892,
+    11757448893,
+    11757448894,
+    11757448895,
+    11757448892
+  ],
+  "tags": {
+    "access": "permissive",
+    "building": "yes",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1275520672,
+  "center": {
+    "lat": 49.7696852,
+    "lon": 19.3887026
+  },
+  "nodes": [
+    11843356359,
+    11843356358,
+    11843356357,
+    11843356356,
+    11843356359
+  ],
+  "tags": {
+    "addr:city": "Rzyki",
+    "addr:housenumber": "42B",
+    "addr:place": "Potrójna",
+    "addr:postcode": "34-125",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional;polish;coffee_shop;ice_cream",
+    "name": "Chatka pod Łamaną Skałą",
+    "opening_hours": "Sa-Su 10:00-18:00; PH 10:00-18:00",
+    "operator": "Czarny Groń",
+    "phone": "+48 335065100",
+    "start_date": "2024.01.01",
+    "toilets": "yes",
+    "website": "https://www.czarnygron.pl/chatka-pod-lamana-skala"
+  }
+},
+{
+  "type": "way",
+  "id": 1280108344,
+  "center": {
+    "lat": 49.5464997,
+    "lon": 19.3677293
+  },
+  "nodes": [
+    11883136734,
+    11883136735,
+    11883136736,
+    11883136738,
+    11883136740,
+    11883136741,
+    13094832756,
+    11883136734
+  ],
+  "tags": {
+    "addr:city": "Korbielów",
+    "addr:housenumber": "45",
+    "addr:postcode": "34-335",
+    "addr:street": "Graniczna",
+    "mobile": "+48 504 146 311; +48 793 631 313",
+    "name": "Bunny Glamp",
+    "note": "Obiekt z namiotami",
+    "source": "survey",
+    "tourism": "chalet",
+    "website": "https://www.bunnyglamp.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 1307206771,
+  "center": {
+    "lat": 49.5939483,
+    "lon": 18.8821708
+  },
+  "nodes": [
+    12105868509,
+    12105868508,
+    12105868507,
+    12105868506,
+    12105868509
+  ],
+  "tags": {
+    "addr:city:simc": "0052899",
+    "addr:housenumber": "1998",
+    "addr:place": "Istebna",
+    "addr:postcode": "43-470",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1309028975,
+  "center": {
+    "lat": 49.6501771,
+    "lon": 18.9554599
+  },
+  "nodes": [
+    12122130463,
+    12122130466,
+    12122130465,
+    12122130464,
+    12122130463
+  ],
+  "tags": {
+    "building": "residential",
+    "source:building": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1309028976,
+  "center": {
+    "lat": 49.6500267,
+    "lon": 18.9554430
+  },
+  "nodes": [
+    12122130467,
+    12122130470,
+    12122130469,
+    12122130468,
+    12122130467
+  ],
+  "tags": {
+    "building": "residential",
+    "source:building": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1315315646,
+  "center": {
+    "lat": 49.6505810,
+    "lon": 18.9558770
+  },
+  "nodes": [
+    12174749194,
+    12174749193,
+    12174749192,
+    12174749191,
+    12174749194
+  ],
+  "tags": {
+    "building": "residential",
+    "source:building": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1315315647,
+  "center": {
+    "lat": 49.6504566,
+    "lon": 18.9558022
+  },
+  "nodes": [
+    12174749198,
+    12174749197,
+    12174749196,
+    12174749195,
+    12174749198
+  ],
+  "tags": {
+    "building": "residential",
+    "source:building": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1340359327,
+  "center": {
+    "lat": 49.8266266,
+    "lon": 19.5492680
+  },
+  "nodes": [
+    12398498008,
+    12398498009,
+    12398498010,
+    12398498011,
+    12398498008
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1340359328,
+  "center": {
+    "lat": 49.8265868,
+    "lon": 19.5494895
+  },
+  "nodes": [
+    12398498012,
+    12398498013,
+    12398498014,
+    12398498015,
+    12398498012
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1340359329,
+  "center": {
+    "lat": 49.8265656,
+    "lon": 19.5496483
+  },
+  "nodes": [
+    12398498016,
+    12398498017,
+    12398498018,
+    12398498019,
+    12398498016
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1340359330,
+  "center": {
+    "lat": 49.8265476,
+    "lon": 19.5497884
+  },
+  "nodes": [
+    12398498020,
+    12398498021,
+    12398498022,
+    12398498023,
+    12398498020
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1340359331,
+  "center": {
+    "lat": 49.8267720,
+    "lon": 19.5492840
+  },
+  "nodes": [
+    12398498024,
+    12398498025,
+    12398498026,
+    12398498027,
+    12398498024
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1340359332,
+  "center": {
+    "lat": 49.8267464,
+    "lon": 19.5494452
+  },
+  "nodes": [
+    12398498028,
+    12398498029,
+    12398498030,
+    12398498031,
+    12398498028
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1340359333,
+  "center": {
+    "lat": 49.8267178,
+    "lon": 19.5495922
+  },
+  "nodes": [
+    12398498032,
+    12398498033,
+    12398498034,
+    12398498035,
+    12398498032
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1340359334,
+  "center": {
+    "lat": 49.8267012,
+    "lon": 19.5497300
+  },
+  "nodes": [
+    12398498036,
+    12398498037,
+    12398498038,
+    12398498039,
+    12398498036
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1379238254,
+  "center": {
+    "lat": 49.6013144,
+    "lon": 19.6569783
+  },
+  "nodes": [
+    12771482964,
+    12771482965,
+    12771482966,
+    12771482967,
+    12771482964
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1383031928,
+  "center": {
+    "lat": 49.8176868,
+    "lon": 19.5462727
+  },
+  "nodes": [
+    12804545880,
+    12804545881,
+    12804545882,
+    10896023857,
+    12804545883,
+    12804545880
+  ],
+  "tags": {
+    "leisure": "resort",
+    "name": "Czill Beczki",
+    "resort": "recreation_center",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1424642629,
+  "center": {
+    "lat": 49.5463752,
+    "lon": 19.3679945
+  },
+  "nodes": [
+    13094832740,
+    13094832741,
+    13094832742,
+    13094832743,
+    13094832740
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1424642630,
+  "center": {
+    "lat": 49.5465940,
+    "lon": 19.3678649
+  },
+  "nodes": [
+    13094832744,
+    13094832745,
+    13094832746,
+    13094832747,
+    13094832744
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1424642631,
+  "center": {
+    "lat": 49.5464871,
+    "lon": 19.3674828
+  },
+  "nodes": [
+    13094832748,
+    13094832749,
+    13094832750,
+    13094832751,
+    13094832748
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1424642632,
+  "center": {
+    "lat": 49.5467007,
+    "lon": 19.3675360
+  },
+  "nodes": [
+    13094832752,
+    13094832753,
+    13094832754,
+    13094832755,
+    13094832752
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1517819426,
+  "center": {
+    "lat": 49.8120058,
+    "lon": 19.5360573
+  },
+  "nodes": [
+    13854389834,
+    13854389835,
+    13854389836,
+    13854389837,
+    13854389838,
+    13854389839,
+    13854389840,
+    13854389834
+  ],
+  "tags": {
+    "addr:housenumber": "163",
+    "addr:place": "Jaszczurowa",
+    "internet_access": "no",
+    "name": "Aqua Glamp",
+    "tourism": "chalet"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,732 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-02T16:51:45Z",
+    "timestamp_areas_base": "2026-07-02T16:51:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1198997352,
+  "lat": 49.3150647,
+  "lon": 18.3349988,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa Stratenec",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1798156585,
+  "lat": 49.3763752,
+  "lon": 18.7321169,
+  "tags": {
+    "height": "11",
+    "man_made": "tower",
+    "name": "Rozhľadňa Zákopčie",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1943050213,
+  "lat": 49.3918247,
+  "lon": 19.1281606,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhladňa Sedlo Beskyd",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2357376725,
+  "lat": 49.3643968,
+  "lon": 18.6362478,
+  "tags": {
+    "man_made": "tower",
+    "name": "Mikovčákova rozhľadňa",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2417756953,
+  "lat": 49.3404956,
+  "lon": 18.9475498,
+  "tags": {
+    "height": "17",
+    "man_made": "tower",
+    "name": "Rozhľadňa na Bobovci",
+    "opening_hours": "24/7",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q118907089"
+  }
+},
+{
+  "type": "node",
+  "id": 3893887360,
+  "lat": 49.4037200,
+  "lon": 19.4846876,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "freestanding",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4453775950,
+  "lat": 49.5608787,
+  "lon": 19.5030388,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa Šťaviny",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4707819319,
+  "lat": 49.5415267,
+  "lon": 19.5015291,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa pri Hviezdoslavovej horárni",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 5039837119,
+  "lat": 49.3250458,
+  "lon": 19.6593976,
+  "tags": {
+    "height": "5",
+    "man_made": "tower",
+    "name": "Rozhľadňa Ostrý vrch",
+    "source": "survey",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 5063473415,
+  "lat": 49.2569914,
+  "lon": 18.6959490,
+  "tags": {
+    "building:material": "wood",
+    "height": "19.2",
+    "man_made": "tower",
+    "name": "Divinka",
+    "start_date": "2019-02",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 5258006050,
+  "lat": 49.2977552,
+  "lon": 19.6919769,
+  "tags": {
+    "height": "13",
+    "man_made": "tower",
+    "name": "Rozhľadňa Skorušina",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 5747651021,
+  "lat": 49.3547246,
+  "lon": 19.5663760,
+  "tags": {
+    "demolished:man_made": "tower",
+    "height": "15",
+    "name": "Rozhladňa na Borovej",
+    "source": "survey, GPS",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 5791877486,
+  "lat": 49.3991608,
+  "lon": 19.2797439,
+  "tags": {
+    "height": "15",
+    "man_made": "tower",
+    "name": "Výhliadková veža Zákamené",
+    "source": "survey, GPS",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 5791920656,
+  "lat": 49.4369704,
+  "lon": 19.2631075,
+  "tags": {
+    "height": "20",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Výhliadková veža Novoť",
+    "operator": "Projekt EU - Interreg",
+    "source": "survey, GPS",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 6216189400,
+  "lat": 49.2751315,
+  "lon": 18.6556890,
+  "tags": {
+    "height": "10",
+    "man_made": "tower",
+    "name": "Rozhľadňa Svedernícky vrch",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 6466822946,
+  "lat": 49.5122328,
+  "lon": 19.4701137,
+  "tags": {
+    "direction": "0-360",
+    "man_made": "tower",
+    "name": "Rozhľadňa Trchovnica",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q123252152"
+  }
+},
+{
+  "type": "node",
+  "id": 6698607803,
+  "lat": 49.4064768,
+  "lon": 19.4071807,
+  "tags": {
+    "access": "yes",
+    "architect": "Stanislav Mikovčák",
+    "ele": "945",
+    "height": "14",
+    "man_made": "tower",
+    "name": "Rozhľadňa Brabírka",
+    "opening_hours": "24/7",
+    "operator": "Beskydy bez hraníc o.z.",
+    "start_date": "2018",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation",
+    "url": "https://beskydy-oz.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 7238973514,
+  "lat": 49.3221273,
+  "lon": 18.4062704,
+  "tags": {
+    "man_made": "tower",
+    "material": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7247651976,
+  "lat": 49.3227068,
+  "lon": 18.7710468,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa Tábor",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7248116471,
+  "lat": 49.3307997,
+  "lon": 18.5891542,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa Zarúbaná Kýčera",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7696007538,
+  "lat": 49.4632261,
+  "lon": 19.5247626,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa Kmeťovka",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7705349857,
+  "lat": 49.3656282,
+  "lon": 18.8715248,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa na Hladkom vrchu",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7705349858,
+  "lat": 49.4300670,
+  "lon": 19.4997910,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa Klin",
+    "tower:construction": "wood",
+    "tower:type": "observation",
+    "wikidata": "Q123246761",
+    "year_of_construction": "2018"
+  }
+},
+{
+  "type": "node",
+  "id": 7960066547,
+  "lat": 49.3851394,
+  "lon": 19.3408501,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 9288679650,
+  "lat": 49.2545314,
+  "lon": 19.5761958,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 9332626463,
+  "lat": 49.4201625,
+  "lon": 18.8890347,
+  "tags": {
+    "architect": "Stanislav Mikovčák",
+    "direction": "0-360",
+    "fee": "no",
+    "height": "10",
+    "image": "https://www.mojekysuce.sk/images/stories/turistika/aktuality-turistika/2021/oscadnica_rozhladna/oscadnica-rozhladna_002.jpg",
+    "man_made": "tower",
+    "name": "Rozhľadňa Surovina",
+    "opening_hours": "24/7",
+    "start_date": "2021-10-30",
+    "tourism": "viewpoint",
+    "tower:construction": "tower",
+    "tower:type": "observation",
+    "wikidata": "Q118822664",
+    "wikipedia": "cs:Rozhledna Surovina"
+  }
+},
+{
+  "type": "node",
+  "id": 10231065604,
+  "lat": 49.3893728,
+  "lon": 19.0857282,
+  "tags": {
+    "direction": "0-360",
+    "man_made": "tower",
+    "material": "metal",
+    "name": "Rozhladňa",
+    "tourism": "viewpoint",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 10579490207,
+  "lat": 49.4081176,
+  "lon": 18.9325631,
+  "tags": {
+    "fee": "no",
+    "man_made": "tower",
+    "name": "Rozhľadňa Dedovka",
+    "opening_hours": "24/7",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 10915932034,
+  "lat": 49.3567705,
+  "lon": 19.1848560,
+  "tags": {
+    "height": "2",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 10975145714,
+  "lat": 49.2560413,
+  "lon": 19.6185176,
+  "tags": {
+    "ele": "20",
+    "fee": "yes",
+    "man_made": "tower",
+    "material": "metal",
+    "name": "Tonka",
+    "operator": "JOSU s.r.o.",
+    "payment:coins": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:notes": "no",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11865539450,
+  "lat": 49.3944481,
+  "lon": 18.6394612,
+  "tags": {
+    "height": "10",
+    "man_made": "tower",
+    "name": "Rozhľadňa pod Bukovinou",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11898968219,
+  "lat": 49.4102248,
+  "lon": 18.4987314,
+  "tags": {
+    "height": "10",
+    "man_made": "tower",
+    "name": "Rozhľadňa nad Zlámanou",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11945108802,
+  "lat": 49.3976685,
+  "lon": 18.5701661,
+  "tags": {
+    "access": "yes",
+    "man_made": "tower",
+    "name": "Vyhliadková veža",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 12025763305,
+  "lat": 49.3511802,
+  "lon": 18.5295043,
+  "tags": {
+    "man_made": "tower",
+    "ruins": "yes",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 12064615212,
+  "lat": 49.5196584,
+  "lon": 19.4300881,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 12659496829,
+  "lat": 49.2919594,
+  "lon": 18.6621554,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 12723051931,
+  "lat": 49.2559306,
+  "lon": 19.6184606,
+  "tags": {
+    "amenity": "pub"
+  }
+},
+{
+  "type": "node",
+  "id": 13195770623,
+  "lat": 49.2712080,
+  "lon": 19.0121273,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 331391376,
+  "center": {
+    "lat": 49.2614255,
+    "lon": 19.0277960
+  },
+  "nodes": [
+    3384535515,
+    3384535516,
+    3384535512,
+    3384535511,
+    3384535515
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "30",
+    "man_made": "tower",
+    "name": "Terchovské srdce",
+    "source": "survey",
+    "start_date": "2015-10-28",
+    "tourism": "viewpoint",
+    "tower:construction": "lattice",
+    "tower:type": "observation",
+    "wikidata": "Q111371076"
+  }
+},
+{
+  "type": "way",
+  "id": 621763271,
+  "center": {
+    "lat": 49.2914760,
+    "lon": 19.7437056
+  },
+  "nodes": [
+    5873622149,
+    5873622148,
+    5873622147,
+    5873622146,
+    5873622149
+  ],
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "man_made": "tower",
+    "name": "Rozhľadňa",
+    "source": "survey",
+    "step_count": "11",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 802274443,
+  "center": {
+    "lat": 49.3538845,
+    "lon": 19.1317298
+  },
+  "nodes": [
+    7504448994,
+    7504448993,
+    7504448992,
+    7504448991,
+    7504448990,
+    7504448989,
+    7504448994
+  ],
+  "tags": {
+    "fixme": "upresniť polohu a veľkosť",
+    "man_made": "tower",
+    "name": "Protipožiarna monitorovacia veža",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 908848916,
+  "center": {
+    "lat": 49.3867833,
+    "lon": 18.8260072
+  },
+  "nodes": [
+    8438786548,
+    8438786547,
+    8438786546,
+    8438786545,
+    8438786548
+  ],
+  "tags": {
+    "architect": "Stanislav Mikovčák",
+    "building": "yes",
+    "direction": "0-360",
+    "height": "15",
+    "image": "https://www.mestokrasno.sk/img/galleries/893/big/1558128308.jpg",
+    "man_made": "tower",
+    "name": "Rozhľadňa u Jantov",
+    "start_date": "2020-08-30",
+    "tourism": "viewpoint",
+    "tower:construction": "tower",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q117286110"
+  }
+},
+{
+  "type": "way",
+  "id": 1050255244,
+  "center": {
+    "lat": 49.2761888,
+    "lon": 18.5492915
+  },
+  "nodes": [
+    9651567078,
+    9651567079,
+    9651567080,
+    9651567081,
+    9651567078
+  ],
+  "tags": {
+    "amenity": "shelter",
+    "building": "yes",
+    "man_made": "tower",
+    "name": "Tri studničky",
+    "shelter_type": "picnic_shelter",
+    "tourism": "attraction",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1314411472,
+  "center": {
+    "lat": 49.2982773,
+    "lon": 19.6925601
+  },
+  "nodes": [
+    12165874381,
+    12165874380,
+    12165874379,
+    12165874378,
+    12165874381
+  ],
+  "tags": {
+    "building": "cabin",
+    "fee": "no",
+    "operator": "LEPŠIA dedinka o.z.",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut",
+    "url": "https://www.lepsiadedinka.sk/projekty/komunitna-utulna-na-orave/",
+    "website": "https://utulna.lepsiadedinka.sk/reservation"
+  }
+},
+{
+  "type": "way",
+  "id": 1361163735,
+  "center": {
+    "lat": 49.2515965,
+    "lon": 18.3471637
+  },
+  "nodes": [
+    12600780556,
+    12600780553,
+    12600780554,
+    12600780555,
+    12600780556
+  ],
+  "tags": {
+    "ele": "961",
+    "man_made": "tower",
+    "name": "Rozhľadňa na Orgoňovej Kyčere",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1410040466,
+  "center": {
+    "lat": 49.4142036,
+    "lon": 18.7737196
+  },
+  "nodes": [
+    12956331751,
+    12956331748,
+    12956331749,
+    12956331750,
+    12956331751
+  ],
+  "tags": {
+    "access": "yes",
+    "alt_name": "Husárik",
+    "building": "tower",
+    "loc_name": "Rozhľadňa Čadca",
+    "man_made": "tower",
+    "name": "Rozhľadňa Briava",
+    "source": "ZBGIS",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "url": "https://www.mojekysuce.sk/spravodajstvo/na-kysuciach-rastie-nova-dominanta-rozhladna-na-vrchu-briava-s-vyhladom-na-tri-krajiny"
+  }
+},
+{
+  "type": "way",
+  "id": 1447680148,
+  "center": {
+    "lat": 49.2837146,
+    "lon": 18.6734573
+  },
+  "nodes": [
+    13282861622,
+    13282861619,
+    13282861620,
+    13282861621,
+    13282861622
+  ],
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

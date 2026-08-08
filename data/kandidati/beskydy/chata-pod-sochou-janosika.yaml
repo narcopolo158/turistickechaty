@@ -1,0 +1,32 @@
+# Chata Pod sochou Jánošíka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/1193640735 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Pod sochou Jánošíka
+slug: chata-pod-sochou-janosika
+zeme: sk
+oblast: beskydy
+lat: 49.254519
+lng: 19.0360149
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/1193640735 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: "+421904303262"
+  email: hanuliak.jan@centrum.sk
+  web: https://privat-pod-sochou-janosika.webnode.sk/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/1193640735 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=apartment (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

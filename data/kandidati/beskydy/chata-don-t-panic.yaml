@@ -1,0 +1,35 @@
+# Chata Don´t Panic — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/12582255175 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Don´t Panic
+slug: chata-don-t-panic
+zeme: sk
+oblast: beskydy
+lat: 49.4287213
+lng: 18.9373744
+obec: Oščadnica
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/12582255175 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +421 915 772 317
+  email: dan.koreny@gmail.com
+  web: https://www.chatadontpanic.sk/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/12582255175 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Koryko s.r.o

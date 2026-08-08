@@ -1,0 +1,33 @@
+# Bacówka PTTK na Rycerzowej — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/380413747 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Bacówka PTTK na Rycerzowej
+slug: bacowka-pttk-na-rycerzowej
+zeme: pl
+oblast: beskydy
+typ: obsluhovana
+lat: 49.4188613
+lng: 19.0974893
+vyska: 1120
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/380413747 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  email: rycerzowa1@gmail.com
+  web: https://www.rycerzowa.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/380413747 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

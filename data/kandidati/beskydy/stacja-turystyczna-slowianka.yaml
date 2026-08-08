@@ -1,0 +1,32 @@
+# Stacja Turystyczna Słowianka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/284253102 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Stacja Turystyczna Słowianka
+slug: stacja-turystyczna-slowianka
+zeme: pl
+oblast: beskydy
+typ: obsluhovana
+lat: 49.5783067
+lng: 19.2138999
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/284253102 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +48 606 320 217
+  email: gstslowianka@wp.pl
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/284253102 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

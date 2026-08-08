@@ -1,0 +1,36 @@
+# Chata Wuja Toma — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/421749579 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Wuja Toma
+slug: chata-wuja-toma
+zeme: pl
+oblast: beskydy
+typ: obsluhovana
+lat: 49.7253611
+lng: 18.9933987
+vyska: 702
+obec: Szczyrk
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/421749579 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +4833 827 41 45
+  web: http://www.grupathf.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/421749579 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Grupa THF

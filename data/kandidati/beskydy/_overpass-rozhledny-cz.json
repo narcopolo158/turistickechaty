@@ -1,0 +1,840 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-02T16:51:45Z",
+    "timestamp_areas_base": "2026-07-02T16:51:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 692903996,
+  "lat": 49.3987524,
+  "lon": 18.3960397,
+  "tags": {
+    "height": "27",
+    "man_made": "tower",
+    "name": "Rozhledna Súkenická",
+    "tower:type": "observation",
+    "wikidata": "Q12058078",
+    "wikipedia": "cs:Súkenická"
+  }
+},
+{
+  "type": "node",
+  "id": 1258043700,
+  "lat": 49.5385450,
+  "lon": 18.3041909,
+  "tags": {
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1260535295,
+  "lat": 49.6788698,
+  "lon": 18.8052830,
+  "tags": {
+    "amenity": "fast_food"
+  }
+},
+{
+  "type": "node",
+  "id": 1576596862,
+  "lat": 49.5388936,
+  "lon": 18.3040582,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "email": "info@brc.cz",
+    "indoor_seating": "yes",
+    "name": "U Sestřiček",
+    "outdoor_seating": "yes",
+    "phone": "+420 558 616 224",
+    "website": "https://www.restauraceusestricek.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1759927786,
+  "lat": 49.4099694,
+  "lon": 18.0980149,
+  "tags": {
+    "height": "5",
+    "man_made": "tower",
+    "source": "survey;gps",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1851998176,
+  "lat": 49.8415425,
+  "lon": 18.2917086,
+  "tags": {
+    "addr:city": "Ostrava",
+    "addr:housenumber": "1803/8",
+    "addr:postcode": "70200",
+    "addr:street": "Prokešovo náměstí",
+    "amenity": "restaurant",
+    "check_date": "2023-07-12",
+    "check_date:currency:XBT": "2025-05-14",
+    "cuisine": "regional",
+    "email": "restaurace@golis.cz",
+    "name": "Radniční restaurace",
+    "opening_hours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 11:00-21:00",
+    "payment:onchain": "no",
+    "payment:qerko": "yes",
+    "phone": "+420728532151",
+    "website": "https://www.radnicni-restaurace.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2401839235,
+  "lat": 49.4623930,
+  "lon": 18.1587177,
+  "tags": {
+    "contact:website": "http://www.visitroznov.cz/jurkovicova-rozhledna",
+    "height": "31.09",
+    "man_made": "tower",
+    "name": "Jurkovičova rozhledna",
+    "start_date": "2012-04-28",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q12027263",
+    "wikimedia_commons": "Category:Jurkovičova rozhledna",
+    "wikipedia": "cs:Jurkovičova rozhledna"
+  }
+},
+{
+  "type": "node",
+  "id": 2501681640,
+  "lat": 49.5273396,
+  "lon": 18.1615920,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "regional",
+    "opening_hours": "Tu-Su, PH 09:00-17:00",
+    "payment:cards": "no",
+    "payment:cash": "yes",
+    "payment:qr_code": "no",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 2534682493,
+  "lat": 49.6787052,
+  "lon": 18.8045590,
+  "tags": {
+    "colour": "silver",
+    "fee": "yes",
+    "height": "30",
+    "lit": "yes",
+    "man_made": "tower",
+    "name": "Rozhledna Velká Čantoryje",
+    "name:cs": "Rozhledna Velká Čantoryje",
+    "name:pl": "Wieża widokowa Czantoria Wielka",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "step_count": "120",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "url": "http://www.cantoryje.cz/",
+    "year_of_construction": "2002"
+  }
+},
+{
+  "type": "node",
+  "id": 2904930607,
+  "lat": 49.8444154,
+  "lon": 18.2113067,
+  "tags": {
+    "man_made": "tower",
+    "name": "Vyhlídková věž Hošťálkovice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3064424393,
+  "lat": 49.6365690,
+  "lon": 18.4841333,
+  "tags": {
+    "height": "15",
+    "man_made": "tower",
+    "name": "Prašivá",
+    "opening_hours": "Fr,Su 17:00-17:30; Sa 10:00-10:30",
+    "source": "wikipedia",
+    "tower:type": "observation",
+    "website": "http://www.chataprasiva.cz/chata/rozhledna/",
+    "wikidata": "Q12053509",
+    "wikipedia": "cs:Seznam rozhleden v Moravskoslezském kraji"
+  }
+},
+{
+  "type": "node",
+  "id": 3312948861,
+  "lat": 49.5899566,
+  "lon": 18.1588974,
+  "tags": {
+    "access": "no",
+    "height": "13",
+    "man_made": "tower",
+    "name": "Bezručova vyhlídka",
+    "note": "Uzavřeno v červenci 2024 kvůli špatnému technickému stavu.",
+    "tourism": "viewpoint",
+    "tower:construction": "freestanding",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3441462531,
+  "lat": 49.5713220,
+  "lon": 18.6738339,
+  "tags": {
+    "access": "private",
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3493673677,
+  "lat": 49.6491044,
+  "lon": 18.2709452,
+  "tags": {
+    "alt_name": "rozhledna Kabátice",
+    "fee": "no",
+    "height": "22.1",
+    "man_made": "tower",
+    "name": "Rozhledna Panorama",
+    "opening_hours": "24/7",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "https://www.beskydyportal.cz/cz/objekt/panorama",
+    "wikidata": "Q20057938"
+  }
+},
+{
+  "type": "node",
+  "id": 4349737490,
+  "lat": 49.6786515,
+  "lon": 18.8043761,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Občerstvení Čantoryja"
+  }
+},
+{
+  "type": "node",
+  "id": 4731169176,
+  "lat": 49.6365933,
+  "lon": 18.4840782,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata Prašivá",
+    "opening_hours": "Oct-May Mo,Tu 10:00-16:00; Oct-May We-Fr 10:00-18:00; Oct-May Sa 09:00-19:00; Oct-May Su 09:00-18:00; Jun-Sep Mo-Fr 10:00-19:00; Jun-Sep Sa,Su 09:00-19:00",
+    "phone": "+420 558 438 084",
+    "website": "http://www.chataprasiva.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 4731169177,
+  "lat": 49.6366242,
+  "lon": 18.4841392,
+  "tags": {
+    "name": "Chata Prašivá",
+    "phone": "+420 558 438 084",
+    "toilets": "yes",
+    "tourism": "alpine_hut",
+    "website": "http://www.chataprasiva.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 5064675402,
+  "lat": 49.3807083,
+  "lon": 18.3379626,
+  "tags": {
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Rozhledna Miloňová",
+    "name:cs": "Rozhledna Miloňová",
+    "start_date": "2012",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 5125317323,
+  "lat": 49.8108765,
+  "lon": 18.0931876,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "man_made": "tower",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5223722766,
+  "lat": 49.5386744,
+  "lon": 18.3047891,
+  "tags": {
+    "amenity": "cafe",
+    "indoor_seating": "yes",
+    "name": "Lara",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5223723125,
+  "lat": 49.5385926,
+  "lon": 18.3046925,
+  "tags": {
+    "amenity": "fast_food"
+  }
+},
+{
+  "type": "node",
+  "id": 6207213306,
+  "lat": 49.7285720,
+  "lon": 18.4625432,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhledna Soběšovice",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q122871593",
+    "wikipedia": "cs:Rozhledna Soběšovice"
+  }
+},
+{
+  "type": "node",
+  "id": 6375662553,
+  "lat": 49.8480448,
+  "lon": 18.5174172,
+  "tags": {
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 6579788523,
+  "lat": 49.4933817,
+  "lon": 18.2679214,
+  "tags": {
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Stezka Valaška",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7073387280,
+  "lat": 49.7055603,
+  "lon": 18.5317207,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 8402360463,
+  "lat": 49.4767067,
+  "lon": 18.0394030,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 9103645656,
+  "lat": 49.7287081,
+  "lon": 18.4625526,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Nová Husarůvka"
+  }
+},
+{
+  "type": "node",
+  "id": 9103645657,
+  "lat": 49.7291073,
+  "lon": 18.4615141,
+  "tags": {
+    "amenity": "pub",
+    "name": "Hostinec Stará Husarůvka"
+  }
+},
+{
+  "type": "node",
+  "id": 9275689032,
+  "lat": 49.8202391,
+  "lon": 18.1384277,
+  "tags": {
+    "man_made": "tower",
+    "name": "Stříbrná věž",
+    "source": "survey",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 10314515115,
+  "lat": 49.8417294,
+  "lon": 18.2916928,
+  "tags": {
+    "access": "yes",
+    "height": "85",
+    "man_made": "tower",
+    "name": "Nová Radnice",
+    "opening_hours": "Mo-Su 09:00-17:00",
+    "tourism": "viewpoint",
+    "tower:construction": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11279820972,
+  "lat": 49.6361725,
+  "lon": 18.4835637,
+  "tags": {
+    "amenity": "fast_food"
+  }
+},
+{
+  "type": "node",
+  "id": 12668450021,
+  "lat": 49.5920553,
+  "lon": 18.1160051,
+  "tags": {
+    "amenity": "fast_food",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12668450024,
+  "lat": 49.5918462,
+  "lon": 18.1157607,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Hrstka kafé",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13105674157,
+  "lat": 49.6790487,
+  "lon": 18.8051422,
+  "tags": {
+    "amenity": "bar"
+  }
+},
+{
+  "type": "node",
+  "id": 13503717989,
+  "lat": 49.7690968,
+  "lon": 18.5689745,
+  "tags": {
+    "access": "yes",
+    "height": "10",
+    "man_made": "tower",
+    "tower:type": "observation",
+    "website": "https://www.chotebuz.cz/dominanty-obce/hlaska-u-zamku"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694647,
+  "lat": 49.8482425,
+  "lon": 18.5173580,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Golf Resort Lipiny",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13970697018,
+  "lat": 49.8421498,
+  "lon": 18.2918338,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Dáma pyková"
+  }
+},
+{
+  "type": "way",
+  "id": 37887208,
+  "center": {
+    "lat": 49.5919224,
+    "lon": 18.1158361
+  },
+  "nodes": [
+    5005240049,
+    450666835,
+    450666842,
+    450666841,
+    450666840,
+    450666839,
+    450666838,
+    450666837,
+    12668450024,
+    5005240049
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:levels": "2",
+    "building:ruian:type": "15",
+    "cuisine": "regional",
+    "heritage": "3",
+    "heritage:operator": "npu",
+    "name": "Chata doktora Hrstky",
+    "ref:npu": "13244/8-3465",
+    "ref:ruian:building": "8269297",
+    "roof:levels": "1",
+    "roof:orientation": "along",
+    "roof:shape": "gabled",
+    "source": "cuzk:ruian",
+    "source:position": "cuzk:km",
+    "wikidata": "Q62009819",
+    "wikipedia": "cs:Hrstkova chata"
+  }
+},
+{
+  "type": "way",
+  "id": 122261042,
+  "center": {
+    "lat": 49.5272901,
+    "lon": 18.1616896
+  },
+  "nodes": [
+    1366738259,
+    3450373452,
+    1366738252,
+    1366738346,
+    3450373445,
+    1366738237,
+    3450373447,
+    1366738208,
+    1366738259
+  ],
+  "tags": {
+    "building": "residential",
+    "building:ruian:type": "7",
+    "internet_access": "no",
+    "internet_access:fee": "no",
+    "name": "Horská chata Velký Javorník",
+    "ref:ruian:building": "8293473",
+    "smoking": "yes",
+    "source": "cuzk:ruian",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 164483180,
+  "center": {
+    "lat": 49.5272913,
+    "lon": 18.1608770
+  },
+  "nodes": [
+    1761215177,
+    1761215175,
+    1761215174,
+    2501681632,
+    1761215176,
+    1761215177
+  ],
+  "tags": {
+    "building": "tower",
+    "fee": "no",
+    "height": "26",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Velký Javorník",
+    "operator": "Lesy ČR, s. p.",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 196689974,
+  "center": {
+    "lat": 49.4623926,
+    "lon": 18.1587169
+  },
+  "nodes": [
+    2069881954,
+    5198747433,
+    5198747431,
+    5198747430,
+    5198747432,
+    2069881961,
+    5198747444,
+    5198747443,
+    5198747442,
+    5198747445,
+    2069881894,
+    5198747441,
+    5198747438,
+    5198747439,
+    5198747440,
+    2069881985,
+    5198747437,
+    5198747434,
+    5198747435,
+    5198747436,
+    2069881954
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "31.09",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 246516429,
+  "center": {
+    "lat": 49.5104803,
+    "lon": 18.6963556
+  },
+  "nodes": [
+    6874305063,
+    4867919883,
+    2535520080,
+    2535520077,
+    2535520082,
+    2535520083,
+    6874305063
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "bar": "yes",
+    "beds": "17",
+    "breakfast": "yes",
+    "brewery": "Střítež",
+    "building": "residential",
+    "building:ruian:type": "3",
+    "catering": "yes",
+    "check_date": "2025-04-18",
+    "contact:facebook": "KamennaChata",
+    "contact:instagram": "kamennachata",
+    "contact:phone": "+420 602 613 026",
+    "cuisine": "regional",
+    "currency:CZK": "yes",
+    "currency:EUR": "yes",
+    "dinner": "yes",
+    "email": "kamennachata@seznam.cz",
+    "fee": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "microbrewery": "yes",
+    "name": "Kamenná chata",
+    "opening_hours": "We-Th 10:00-16:00; Fr-Sa 10:00-22:00; Su 10:00-16:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "pets": "yes",
+    "ref:ruian:building": "14003082",
+    "rooms": "8",
+    "source": "cuzk:ruian",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "toilets:access": "permissive",
+    "tourism": "alpine_hut",
+    "website": "http://kamennachata.cz/",
+    "wikidata": "Q86668519",
+    "wikipedia": "cs:Kamenná chata"
+  }
+},
+{
+  "type": "way",
+  "id": 246516454,
+  "center": {
+    "lat": 49.5107231,
+    "lon": 18.6964222
+  },
+  "nodes": [
+    2535520074,
+    2535520087,
+    2535520088,
+    2535520091,
+    4864467422,
+    2535520096,
+    2535520093,
+    2535520094,
+    2535520090,
+    2535520074
+  ],
+  "tags": {
+    "building": "tower",
+    "ele": "944",
+    "fee": "no",
+    "height": "10",
+    "man_made": "tower",
+    "name": "Rozhledna Tetřev",
+    "opening_hours": "Nov-Apr 10:00-15:30; May-Oct 08:00-21:00",
+    "source": "cuzk:km",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q10856846",
+    "wikipedia": "cs:Tetřev (rozhledna)"
+  }
+},
+{
+  "type": "way",
+  "id": 391775423,
+  "center": {
+    "lat": 49.8370697,
+    "lon": 18.1440061
+  },
+  "nodes": [
+    3950257093,
+    3950257097,
+    3950257098,
+    3950257095,
+    3950257092,
+    3950257091,
+    3950257093
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "19",
+    "man_made": "tower",
+    "ref:ruian:building": "38155796",
+    "source": "cuzk:ruian",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 411790513,
+  "center": {
+    "lat": 49.5923561,
+    "lon": 18.1162475
+  },
+  "nodes": [
+    4133968086,
+    4133968084,
+    4133968082,
+    4133968079,
+    4133968076,
+    4133968074,
+    4133968073,
+    4133968075,
+    3394557548,
+    4139270009,
+    4133968077,
+    4139270010,
+    4139270011,
+    4133968081,
+    4133968083,
+    4133968085,
+    4133968087,
+    4133968989,
+    4133968991,
+    4133968993,
+    4133968995,
+    4133968997,
+    4133968998,
+    4133968996,
+    4133968994,
+    4133968992,
+    4133968990,
+    4133968088,
+    4133968086
+  ],
+  "tags": {
+    "building": "yes",
+    "historic": "yes",
+    "man_made": "tower",
+    "name": "Štramberská trúba",
+    "opening_hours": "May-Sep Mo 09:00-19:00; Apr,Oct Mo 09:00-17:00; Nov-Mar 10:00-16:00",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "http://www.stramberskatruba.cz/cs/stramberska-truba/",
+    "wikidata": "Q10421786",
+    "wikipedia": "cs:Štramberská Trúba"
+  }
+},
+{
+  "type": "way",
+  "id": 519385579,
+  "center": {
+    "lat": 49.3807098,
+    "lon": 18.3379618
+  },
+  "nodes": [
+    5064675726,
+    5064675725,
+    5064675722,
+    5064675724,
+    5064675723,
+    5064675721,
+    5064675417,
+    5064675726
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "24",
+    "man_made": "tower",
+    "name": "Miloňová",
+    "source": "cuzk:km;bing",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1093178931,
+  "center": {
+    "lat": 49.3699077,
+    "lon": 18.3114469
+  },
+  "nodes": [
+    10011665282,
+    10011665283,
+    10011665284,
+    10011665285,
+    10011665282
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,32 @@
+# Drevenica pri kostole — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/1920399480 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Drevenica pri kostole
+slug: drevenica-pri-kostole
+zeme: sk
+oblast: beskydy
+lat: 49.258848
+lng: 19.6123724
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/1920399480 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +421 948 399 065
+  email: zlatica.zanini@gmail.com
+  web: https://www.zuberec.sk/navstevnik/ubytovanie/samostatny-dom/drevenica-pri-kostole-47sk.html
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/1920399480 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
