@@ -249,3 +249,169 @@ jmenovci:
       jen jako evidenční stopa exportu.
     rozhodl: Claude (5. 8. 2026, na základě vlastního webu chaty)
     checked: 2026-08-05
+
+  # ── Beskydský export DATA-01 (8. 8. 2026) přinesl dvanáct nových kolizí ──
+  # Michal klikl na workflow a 385 kandidátů zvedlo počet kolizí z jedné na
+  # dvanáct. Všechny jsou mezi KANDIDÁTY, na webu nestojí ani jeden objekt,
+  # takže čtenáře dnes zaměnit nemůžou. U každé kolize je NAMĚŘENÁ vzdálenost
+  # z GPS obou objektů — to je metoda, kterou u nás rozhoduje spor o totožnost
+  # (vzor Haničky na Špičáku ze 7. 8. a duplicit Chaty Mamut z 20. 7.).
+  # Výsledek měření: PRAVÁ DUPLICITA OSM NENÍ ANI JEDNA. Jedna kolize je ale
+  # nález — Prašivá, viz níž.
+  - jadro: prasiva
+    objekty:
+      - beskydy/chata-prasiva
+      - beskydy/prasiva
+    duvod: >-
+      NEJDŮLEŽITĚJŠÍ Z DÁVKY — nejspíš JEDEN AREÁL, ne dva objekty.
+      Naměřeno z GPS obou kandidátů: 5 metrů. „Prašivá" má z OSM typ
+      `rozhledna`, „Chata Prašivá" typ nemá — je to tedy věž a dům u její
+      paty, přesně vzor Žalý / Královka / Svatobor / Kleť. Chata Prašivá je
+      navíc v externím katalogu (706 m, stravování ano), takže objekt do
+      průvodce téměř jistě patří. Rozhodnutí, jestli jeden profil nebo dva,
+      padne při triáži Beskyd proti druhému prameni — musí se doložit, KDO
+      rozhlednu provozuje (u Kleti to pramen výslovně říkal, u Geisskopfu
+      naopak mlčel a věž se proto nepovýšila).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na potvrzení při triáži Beskyd
+    checked: 2026-08-08
+  - jadro: bacowka
+    objekty:
+      - beskydy/bacowka
+      - beskydy/bacowka-912009699
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, ne duplicita: naměřeno 10 419 m. Oba mají z OSM typ
+      `utulna`. „Bacówka" je v polských Beskydech obecné jméno pastevecké
+      boudy (PTTK jich pod tím jménem vede celou řadu), takže shoda názvu je
+      tu čekaná a rozlišovačem bude `obec` nebo bližší jméno z druhého
+      pramene — ani jeden ho zatím doložený nemá (DATA-17 R6).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na potvrzení při triáži Beskyd
+    checked: 2026-08-08
+  - jadro: skalka
+    objekty:
+      - beskydy/skalka
+      - beskydy/skalka-1884089736
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, ne duplicita: naměřeno 60 554 m, tedy šedesát
+      kilometrů. Shodné jméno „Skalka" je v Karpatech běžné. Jeden z nich
+      (49,288 / 18,780) navíc leží mimo nové beskydské okno a je to hraniční
+      případ mezi slovenskými Javorníky a Súľovskými vrchy — viz poznámka
+      o osmdesáti kandidátech mimo okno v docs/BESKYDY-TRIAZ-KOSE.md.
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na potvrzení při triáži Beskyd
+    checked: 2026-08-08
+  - jadro: pizza hut
+    objekty:
+      - beskydy/pizza-hut
+      - beskydy/pizza-hut-13958510108
+    duvod: >-
+      Dvě provozovny pizzerie v Bielsku-Białej, naměřeno 2 697 m. Do
+      průvodce nepatří ani jedna — do exportu spadly proto, že řetězec má
+      v názvu slovo „Hut", a okno oblasti vědomě zahrnuje okraj města
+      (vzor okraje Liberce u Ještědu). Triáž je pošle do koše MIMO KLÍČ.
+      Zapsáno sem jen proto, aby kontrola kolizí nehlásila neznámý nález —
+      je to učebnicový falešný pozitiv jmenného filtru.
+    rozhodl: Claude (návrh z 8. 8. 2026) — oba objekty mimo klíč zařazení
+    checked: 2026-08-08
+  - jadro: visalaje
+    objekty:
+      - beskydy/chalupa-visalaje
+      - beskydy/chata-visalaje
+    duvod: >-
+      Dva různé domy v téže lokalitě Visalaje pod Lysou horou, naměřeno
+      124 m. Není to duplicita (různá OSM id, různá jména — Chalupa ×
+      Chata), ale sousedi natolik blízcí, že se při triáži musí ověřit, jestli
+      nejde o jeden provoz o dvou budovách. Rozlišovač `obec` nemá doložený
+      ani jeden (R6).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na potvrzení při triáži Beskyd
+    checked: 2026-08-08
+  - jadro: maria
+    objekty:
+      - beskydy/chalupa-maria
+      - beskydy/chata-maria
+    duvod: >-
+      Dva různé objekty, naměřeno 1 360 m. Obě jména jsou křestní („Mária"),
+      což je u slovenských pronájmů běžné — oba kandidáti nesou v OSM tag
+      pronájmu a triáž je nejspíš pošle mimo klíč.
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na potvrzení při triáži Beskyd
+    checked: 2026-08-08
+  - jadro: na mosornym groniu
+    objekty:
+      - beskydy/dom-na-mosornym-groniu
+      - beskydy/wieza-widokowa-na-mosornym-groniu
+    duvod: >-
+      Rozhledna a dům na Mosornym Groniu nad Zawoją, naměřeno 1 120 m —
+      tedy NA ROZDÍL OD PRAŠIVÉ to jeden areál není. Věž má z OSM typ
+      `rozhledna`, dům je samostatný objekt o kilometr dál. Vede se to zvlášť;
+      u věže bude klíč zařazení stát na tom, jestli je u ní občerstvení
+      (rozhodnutí Michala 28. 7. 2026), což zatím nedokládá nic.
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na potvrzení při triáži Beskyd
+    checked: 2026-08-08
+  - jadro: hajenka
+    objekty:
+      - beskydy/hajenka
+      - beskydy/horsky-hotel-hajenka
+      - jizerske-hory/hajenka
+      - sumava/hajenka
+      - sumava/penzion-hajenka
+    duvod: >-
+      PĚT OBJEKTŮ ve čtyřech oblastech a žádná duplicita: „hájenka" je
+      obecné české slovo pro lesníkovo stavení, takže shoda jména nic
+      neznamená. Naměřeno mezi beskydskou dvojicí 47 051 m; jizerská
+      a šumavské leží stovky kilometrů od nich. Rozlišovačem bude `obec`
+      (DATA-17 R2) — doloženou ji mají jen tři z pěti (Makov, Kašperské
+      Hory, Borová Lada), u dvou se dle R6 nevymýšlí. Poznámka pro triáž:
+      jméno „Hájenka" je zároveň jmenné slovo, které náš triážní skript
+      bere jako nadějný signál — u lesníkových stavení bez občerstvení to
+      bude často falešný pozitiv.
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
+    checked: 2026-08-08
+  - jadro: barborka
+    objekty:
+      - beskydy/chata-barborka
+      - krkonose/barborka
+      - sumava/chata-barborka
+    duvod: >-
+      Tři různé objekty ve třech pohořích: publikovaná Barborka v Peci pod
+      Sněžkou (Krkonoše), šumavská Chata Barborka u Hartmanic a nová
+      beskydská chata Barborka. Rozlišovač `obec` má doložený krkonošská
+      a šumavská, beskydská ne (R6). POZOR NA ČTVRTOU: externí katalog vede
+      Chatu Barborka i v Hrubém Jeseníku (1320 m, pradědská oblast) — až
+      Michal klikne na DATA-01 pro Jeseníky, kolize se rozroste a kontrola
+      se ozve znovu, protože klíčem je MNOŽINA objektů. Je to tedy záznam,
+      který se bude muset přepsat, a je to správně.
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
+    checked: 2026-08-08
+  - jadro: panorama
+    objekty:
+      - beskydy/chata-panorama
+      - jizerske-hory/chata-panorama
+    duvod: >-
+      Dva různé objekty: beskydská Chata Panoráma v Námestove (SK)
+      a jizerská Chata Panorama. „Panorama" je u horských podniků jméno tak
+      obvyklé, že shoda nic neznamená. Rozlišovač `obec` má doložený jen
+      beskydská (R6 u druhé).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obce při triáži
+    checked: 2026-08-08
+  - jadro: moravska
+    objekty:
+      - beskydy/moravska-chalupa
+      - krkonose/moravska-bouda
+    duvod: >-
+      Dva různé objekty: publikovaná Moravská bouda ve Špindlerově Mlýně
+      (Krkonoše) a nová beskydská Moravská chalupa. Jádro názvu je u obou
+      „moravska", ale typové slovo se liší (bouda × chalupa) a vzdálenost je
+      přes dvě stě kilometrů. Rozlišuje je název i oblast (DATA-17 R5).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na potvrzení při triáži Beskyd
+    checked: 2026-08-08
+  - jadro: javorka
+    objekty:
+      - javorniky-vsetinske-vrchy/chata-javorka
+      - krkonose/javorka
+    duvod: >-
+      Dva různé objekty: krkonošská Javorka (kandidát s podmíněnou revizí
+      z triáže 20. 7. 2026 — čeká na ruční kontrolu Michala, web Archa
+      Krkonoš nedostupný) a Chata Javorka v Javorníkách, která do nové
+      oblasti přišla 8. 8. 2026 přesunem z beskydského exportu. Shoda jména
+      je náhodná — javor roste všude. Rozlišovač `obec` nemá doložený ani
+      jeden (R6).
+    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
+    checked: 2026-08-08

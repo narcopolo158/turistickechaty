@@ -1,13 +1,13 @@
 # Chata Čertov — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
 # Zdroj: https://www.openstreetmap.org/way/73054308 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
 # Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
-# (data/chaty/beskydy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# (data/chaty/javorniky-vsetinske-vrchy/) povyšovat až po křížovém ověření (DATA-03). Stav
 # provozu OSM nenese, proto tu není. Nic nedomýšlet!
 
 nazev: Chata Čertov
 slug: chata-certov
 zeme: sk
-oblast: beskydy
+oblast: javorniky-vsetinske-vrchy
 lat: 49.2800589
 lng: 18.2140015
 obec: Lazy pod Makytou
@@ -22,3 +22,12 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  PŘESUNUT Z data/kandidati/beskydy/ dne 8. 8. 2026. Objekt leží v Javorníkách,
+  a ty jsou od téhož dne samostatnou oblastí (rozhodnutí Michala: „javorniky
+  a vsetinske vrchy bych udelal jako jednu samostatnou oblast"). Export DATA-01
+  pro Beskydy ho stáhl ještě před zúžením beskydského okna, proto se sem
+  přesouvá ručně, ne novým během. Do `_vyrazeno.yaml` se ZÁMĚRNĚ nezapisuje:
+  ten seznam se od 8. 8. 2026 porovnává podle posledního úseku cesty, takže
+  záznam „beskydy/<slug>" by objekt umlčel i v téhle oblasti. Nové beskydské
+  okno ho už nezachytí, takže se tam sám nevrátí.

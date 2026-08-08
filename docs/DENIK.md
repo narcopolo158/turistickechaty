@@ -29,6 +29,127 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-08 (druhý blok, dvě hodiny) — Michal odpověděl a rovnou klikl; sedmá oblast a 385 beskydských kandidátů
+
+Michalovy dvě věci: *„javorniky a vsetinske vrchy bych udelal jako jednu
+samostatnou oblast (jestedsky hrbet jsme taky nepripojili k jizerkam)"*
+a otázka *„pišes Beskydy a Jeseníky se rozjedou hned po tvém kliku — co mam
+spustit?"*. Během bloku pak sám klikl na DATA-01 pro Beskydy, takže
+z připravené oblasti byla najednou oblast s daty.
+
+### ① „Co mám spustit" byla oprávněná výtka — kliky teď mají vlastní soubor
+
+Dosud byly rozesety po deníku a po backlogu a nikde nebyl jeden seznam.
+Vznikl `docs/KLIKY-PRO-MICHALA.md`: čtyři kliky s přesnou cestou (Actions →
+který workflow → co napsat do políčka), co každý udělá a proč to vůbec musí
+klikat člověk. **Pravidlo údržby: hotový klik se odsud MAŽE, ne odškrtává** —
+dlouhý seznam s odškrtnutými řádky se přestane čtít.
+
+### ② Sedmá oblast: Javorníky a Vsetínské vrchy
+
+Michalova analogie s Ještědem je přesná a prameny ji nesou: Javorníky patří
+do geomorfologické oblasti Slovensko-moravské Karpaty, a AOPK sama v popisu
+CHKO Beskydy odlišuje „na jihu nižší a krajinářsky pestřejší část
+Vsetínských vrchů a Javorníků, etnograficky zvanou Valašsko".
+
+Okno 49.15–49.47 / 17.95–18.50 je kotvené na jedenáct doložených bodů;
+Vsetín je vevnitř schválně, protože hřeben se zvedá přímo nad městem a chodí
+se odtud na Vsacký Cáb i Kusalíno. Nejcennější věc oblasti je doložená
+historie: **chatu Vsacký Cáb otevřel jako útulnu 29. června 1928 vsetínský
+lékárník Karel Puszkailer**, hotel Portáš je z roku 1932. Spolek, který by tu
+stavěl chaty jako Pohorská jednota Radhošť v Beskydech, se nenašel — a to se
+zapisuje jako „neznáme ho", ne jako „žádný nebyl".
+
+**Tři záměny, které tu hrozí, jsou zapsané a hlídané testem:** dva Velké
+Javorníky (1071 m na hranici × 918 m u Frenštátu), nejvyšší horou ČESKÉ části
+je Malý Javorník (1019 m), a nejvyšší vrchol Vsetínských vrchů je **Vysoká**
+(1024 m), ne Ptáčnice. K tomu past na výšku Vsackého Cábu: prameny dávají
+čtyři čísla (790, 820, 841, 842 m) pro tři různé body — rozcestí, budovu
+a vrchol. **Není to rozpor pramenů, ale měření různých míst, takže konvence
+„nižší číslo při rozporu" se sem NEVZTAHUJE**; do profilu půjde výška budovy
+s pramenem, který ji jako budovu označuje. Stálo za to si to napsat dopředu.
+
+### ③ Zúžení beskydského okna se ukázalo jako oprava skutečné vady
+
+Rozdělením se beskydské okno zúžilo na jihu z 49.25 na 49.30 a na západě
+z 18.00 na 18.05. A protože Michalův export běžel ještě podle starého okna,
+šlo to změřit: **osmdesát kandidátů z toho běhu leží mimo nové okno, a když
+se jejich souřadnice roztřídí podle pohoří, ukáže se proč** — 59 z nich je
+z **Malé Fatry** (Terchová, Biely Potok), 13 ze **Západních Tater / Roháčů**
+(Zuberec, Oravice), 6 z **Oravské Magury**. Staré okno tedy sahalo přes celou
+Malou Fatru až k Roháčům, do pohoří, o kterých průvodce nerozhodl vůbec nic.
+Zúžení nebylo kosmetika.
+
+Ty soubory se ale **nemazaly**: až se Malá Fatra nebo Roháče někdy stanou
+oblastí, bude to hotová práce. Otázka pro Michala níž.
+
+**Osm kandidátů odešlo do nové oblasti** ručním přesunem, protože je export
+stáhl ještě jako beskydské — mezi nimi **Hotel Portáš**, který je i v externím
+katalogu. Do `_vyrazeno.yaml` se ZÁMĚRNĚ nezapsaly: ten seznam se od dnešního
+rána porovnává podle posledního úseku cesty, takže záznam „beskydy/<slug>"
+by objekt umlčel i v nové oblasti. Je to první důsledek ranní opravy, na který
+jsme narazili — dobře, že se ukázal takhle brzy.
+
+### ④ Dvanáct nových kolizí jmen — a jeden nález mezi nimi
+
+Export zvedl počet kolizí z jedné na dvanáct. U každé jsem přeměřil
+vzdálenost z GPS obou objektů, protože tak se u nás spor o totožnost
+rozhoduje. **Pravá duplicita OSM není ani jedna** — ale jedna kolize je nález:
+
+**Prašivá.** „Chata Prašivá" a „Prašivá" stojí **pět metrů od sebe** a druhý
+z nich má z OSM typ `rozhledna`. Je to tedy věž a dům u její paty, přesně vzor
+Žalý / Královka / Svatobor / Kleť — a Chata Prašivá je navíc v katalogu
+(706 m, stravování ano). Jestli z toho bude jeden profil nebo dva, rozhodne
+triáž podle toho, KDO věž provozuje: u Kleti to pramen výslovně říkal a sloučilo
+se, u Geisskopfu mlčel a věž se nepovýšila.
+
+Naopak **Dom na Mosornym Groniu a věž tamtéž jsou 1 120 m od sebe**, takže to
+jeden areál není — dvě podobné situace, dva různé výsledky, a rozhodlo o tom
+měření, ne dojem. Ostatní kolize jsou obecná jména: pět „Hájenek" ve čtyřech
+oblastech (hájenka je lesníkovo stavení, shoda nic neznamená), dvě „Bacówky"
+10 km od sebe, dvě „Skalky" šedesát kilometrů od sebe a dvě provozovny Pizza
+Hut v Bielsku-Białej, které do exportu spadly kvůli slovu „Hut" v názvu —
+učebnicový falešný pozitiv jmenného filtru.
+
+U Barborky je záznam, který se bude muset přepsat, a je to správně: katalog
+vede Chatu Barborka i v Hrubém Jeseníku, takže až Michal klikne na DATA-01
+pro Jeseníky, kolize se rozroste a kontrola se ozve znovu — klíčem registru je
+množina objektů.
+
+**Kontroly:** `npm run kontrola` zelené (validator 0 chyb, fronta 0 vad,
+kolize 12 → 0 nerozhodnutých), `tsc` i eslint čisté, testy oblastí 37/37,
+fixtura 25/0. Koše Beskyd po přesunu: **376 kandidátů — 202 nadějných,
+73 k posouzení, 101 mimo klíč**; nová oblast 8 kandidátů (7 nadějných).
+
+**Příště**
+
+① triáž Beskyd — je to zdaleka největší koš, jaký jsme kdy měli (202
+nadějných), a začne se u objektů z externího katalogu, protože ty mají druhý
+pramen předem: Bezručova chata na Lysé hoře, Chata na Radhošti, Libušín
+a Maměnka, osm schronisek Beskidu Śląskiego, devět Żywieckiego; ② **Prašivá
+jako první případ** — je to zároveň rozhodnutí o vzoru pro celé Beskydy;
+③ osm kandidátů nové oblasti (Portáš, Kohútka, Čertov, Celnice…); ④ Šumava
+má pořád 71 nadějných.
+
+**Otázky pro Michala**
+
+① **Zbývající kliky** (seznam je teď v `docs/KLIKY-PRO-MICHALA.md`): DATA-01
+pro `jeseniky` a pro `javorniky-vsetinske-vrchy`, DATA-06 výšky `sumava`,
+DATA-35 `jizerske-hory`, DATA-28 3D terén. Beskydy máš odklikané, díky.
+② **Osmdesát kandidátů z Malé Fatry, Roháčů a Oravské Magury**, které přinesl
+beskydský export, než se okno zúžilo — parkovat je v `data/kandidati/beskydy/`
+pro budoucí oblasti, nebo smazat a stáhnout znovu, až na ta pohoří přijde
+řada? Já bych je nechal: je to hotová práce a katalog v těch pohořích drží
+další objekty (Malá Fatra 5, Velká Fatra 7, Západní Tatry 6).
+③ **Prašivá — jeden profil, nebo dva?** Rozhodne se to při triáži podle
+pramene o provozovateli věže, ale jestli máš na vzor Žalý/Kleť jiný názor,
+teď je nejlepší čas ho říct — v Beskydech se ten vzor uplatní víckrát.
+④ Beze změny z ranního bloku: rozsah Jeseníků vůči Górám Bystrzyckim,
+pravidlo pro spolkové chaty přístupné po ohlášení (Höllbachschwellhütte),
+rozšířený klíč u objektu bez dnešní služby (Forsthaus Ödwies), dva hraniční
+profily Hinhart a Grobauer, konvence zápisu vyřazených slugů, telefonáty
+DATA-04, výběr fotek v adminu, razítkové páry.
+
 ## 2026-08-08 (samostatný blok, čtyři hodiny) — bavorský koš dopracován, dvě nové oblasti, tři chyby chycené na sobě
 
 Michalovo pověření: *„preskoc vse co musim udelat rucne nebo kde cekas na
