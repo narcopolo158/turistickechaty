@@ -29,6 +29,113 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-08 (čtvrtý blok, čtyři hodiny) — Tatry: dvanáctá oblast, čtyři doložené útulny a kontrola, která si drift našla sama
+
+Michalův pokyn: *„kdyz uz jsme na slovensku, vezmi rovnou i vysoke a nizke
+tatry, pracuj jeste 4 hodiny v kuse autonomne"*. Bylo to logické pokračování
+předchozího bloku — Malá Fatra, Oravská Magura a Západné Tatry vznikly kvůli
+kandidátům, kteří už v repu ležely, a Tatry zbývaly jako jediná velká
+slovenská mezera.
+
+**Hotovo:**
+
+**Jedenáctá a dvanáctá oblast — Vysoké a Nízké Tatry** (TAT-01). Obě jsou
+založené celé: konfigurace okna v `scripts/oblasti.ts` s kotvami z pramenů,
+YAML oblasti s charakteristikou, ověřením a nejvyšší horou, testy, výčty
+v osmi workflow, řádek v runbooku kliků. Vysoké Tatry (SK+PL, okno
+49.09–49.35 / 19.93–20.40) berou Východné Tatry vcelku, tedy i Belianske,
+protože TANAP je vede jako dva podcelky jednoho celku a katalog s tím zachází
+stejně. Nízké Tatry (SK, okno 48.78–49.12 / 19.18–20.35) jsou **nejdelší
+hřeben korpusu** — osmdesát kilometrů od Donovalů po Kráľovu hoľu.
+
+**Vysoké Tatry jsou zdaleka nejcennější chatařská síť, jakou průvodce dosud
+bral.** Katalog v okně vede 14 slovenských vysokohorských chat a 4 polská
+schroniska PTTK a u většiny je doložený rok vzniku i stavitel: Rainerova 1863,
+Téryho 1899 (Uhorský karpatský spolok, Majunke), Zbojnícka 1907, Bilíkova 1934
+(Karpathenverein), Chata pod Rysmi 1933 na 2250 m, Zamkovského 1943, polské
+Morskie Oko 1874 a Murowaniec 1925. Nejhezčí nález bloku: **Chatu Encián
+(1936–37) postavil Dušan Jurkovič — týž architekt, který postavil Libušín na
+Pustevnách**, tedy objekt, který průvodce vede v Beskydech. Takové vazby mezi
+oblastmi jsou přesně to, co jednotlivé profily samy o sobě neukážou.
+
+**Nová věc, kterou tahle oblast přináší do celého průvodce:** ve Vysokých
+Tatrách „otevřeno" NEZNAMENÁ „dostupné". Hřebenové cesty mají sezónní uzávěru
+1. 11. – 31. 5. (starší prameny uvádějí do 15. 6. — rozpor přiznán), je tu
+horská služba a na Gerlachovský štít se bez vůdce nesmí. U bavorského
+Berggasthofu stačilo napsat provozní dobu; tady by to bylo zavádějící. Zapsáno
+do YAMLu a **hlídá to test**, aby to profily nepřehlédly.
+
+**Nejcennější věc Nízkých Tater jsou ČTYŘI DOLOŽENÉ ÚTULNY** — a hlavně to, že
+u každé je stav přístupu jiný: Ďurková 1623 m volně bez rezervace ale za
+poplatek, Andrejcová 1410 m **jen na rezervaci**, Ramža 1260 m volně
+a bezplatně bez správce, Hiadeľské sedlo volně (postavil Ekopolis, předána
+27. 8. 2008). Typ `utulna` má číselník od začátku, ale doložených útulen měl
+korpus jen pár a u většiny se nedařilo doložit právě to podstatné — jestli je
+přístup skutečně volný. Rozdíl mezi těmi třemi režimy **nesmí se zprůměrovat
+do slova „útulna"** a je to zapsané dřív, než se začne povyšovat.
+
+**Dva superlativy, které se samy nabízely, a ani jeden se nezapsal.** (1)
+Kamenná chata pod Chopkom NENÍ nejvýš položená chata Slovenska — je třetí, nad
+ní jsou Chata pod Rysmi (2250 m) i Téryho (2015 m). Test to neověřuje
+z pramene, ale **z vlastního katalogu**, takže to drží samo. (2) U Nízkých
+Tater se nabízelo napsat „nejrozsáhlejší pohoří Slovenska" nebo „nejdelší
+hřeben"; doslovný pramen pro to rešerše nedodala (doložený superlativ se týká
+NAPANTu jako národního parku, ne pohoří), takže charakteristika je bez
+superlativu a je to v ověření vysvětlené. Po včerejším zásahu audit-mech
+u Sankt Englmaru je to podruhé, co se tenhle typ věty zachytil — jen dřív.
+
+**Zapsaná past na sloučení:** katalog drží na Čertovici **tři různé zápisy**
+(1230, 1238 a 1232 m, všechny s obcí Vyšná Boca). Tři výšky v rozmezí osmi
+metrů na jednom sedle jsou situace, kde se dá chybovat oběma směry — slít tři
+provozy do jednoho profilu, nebo rozdělit jeden na tři. Rozhodne se to proti
+druhému prameni a podle GPS, ne odhadem (vzor sloučené Kleti a Svatoboru ×
+nesloučené beskydské Prašivé). Test hlídá, že katalog opravdu drží tři zápisy
+i že poznámka před sloučením varuje.
+
+**Třetí Kriváň.** Od dneška jsou v korpusu tři různé kopce téhož jména:
+tatranský Kriváň 2494,7 m, Veľký Kriváň v Malé Fatře 1708 m a Kriváň
+v Nízkých Tatrách 1233 m. Zapsáno do obou tatranských souborů s odkazem na
+registr jmenovců — proti stejnému jménu nechrání nic jiného než oblast.
+
+**KONTROLA-08 — a je to poučení o vlastní práci, ne feature.** Popis vstupu
+`oblast` ve formuláři „Run workflow" vyjmenovává dovolené slugy, protože
+GitHub výběr z konfigurace neumí. Ten výčet se píše ručně v osmi souborech
+a **dnes jsem ho ručně doplňoval potřetí za jediný den**. Napsal jsem proto do
+`scripts/kontrola/workflows.ts` novou třídu **H**, která výčet porovná se
+skutečným `OBLASTI` a hlásí oba směry: chybějící slug (nová oblast se nedá
+z formuláře spustit) i přebývající (nabízí se oblast, která už neexistuje).
+Kontrola si drift **našla sama hned při prvním běhu** — osm souborů, které
+neznaly `vysoke-tatry` ani `nizke-tatry`. Kdybych je byl doplnil ručně jako
+předtím, dnes by to bylo v pořádku a při třinácté oblasti zase ne.
+
+Kontroly: `npx tsx scripts/kontrola/vse.ts` zeleně (self-test workflows 15/15),
+`npx tsc --noEmit` čistě, eslint i prettier čistě, `tests/int/oblasti-nove` 103
+případů a `data01-overpass` 43 případů zeleně.
+
+**Příště:** obě tatranské oblasti čekají jen na klik (runbook
+`docs/KLIKY-PRO-MICHALA.md`, doporučeno začít Vysokými Tatrami). Do té doby je
+na řadě **beskydská triáž** — 172 nadějných kandidátů, začít katalogovými
+objekty, které už mají druhý pramen, a rozhodnout **Prašivou** (chata pět metrů
+od rozhledny; to rozhodnutí je precedens pro celé Beskydy a teď navíc i pro tři
+zápisy na Čertovici). Otevřený nález z jesenického exportu zůstává: katalogový
+Hotel Praděd 1491 m nemá v datech kandidáta ani jednoho — potřebuje dohledávku
+DATA-31.
+
+**Otázky pro Michala:**
+
+1. **Nízké Tatry jsem zapsal česky** („Nízké Tatry", ne „Nízke Tatry"), protože
+   název je v češtině zdomácnělý a věty na webu mají znít přirozeně
+   („v Nízkých Tatrách"). U Západných Tater jsem to rozhodl **naopak** —
+   slovenský tvar, protože tam čeština ustálený vlastní tvar nemá. Je to
+   nekonzistence, kterou obhajuji jazykem, ne systémem; kdyby ti to vadilo,
+   je to jedno slovo na dvou místech.
+2. **Zakopané je v okně Vysokých Tater, ale mimo okno Západných** — je to
+   výchozí bod k Morskiemu Oku i na Halu Gąsienicową, tedy k vysokotatranským
+   schroniskům. Sedí to tak?
+3. **Tři čertovické zápisy** a **beskydská Prašivá** jsou týž typ rozhodnutí
+   (jeden areál × dva objekty). Chceš u nich mít poslední slovo, nebo mám
+   rozhodovat sám podle GPS a druhého pramene a jen to viditelně zapisovat?
+
 ## 2026-08-08 (třetí blok, tři hodiny) — pět nových oblastí za jeden den, dva Michalovy kliky a 29 duplicit z mého vlastního překryvu
 
 Michalův pokyn: *„kandidaty budoucich oblasti nech a rovnou je zaloz,

@@ -1,0 +1,185 @@
+# Oblast Vysoké Tatry — jedenáctá oblast průvodce a zdaleka nejcennější
+# chatařská síť, jakou dosud bral.
+#
+# POKYN MICHALA 8. 8. 2026: „kdyz uz jsme na slovensku, vezmi rovnou i vysoke
+# a nizke tatry."
+#
+# ROZSAH: Východné Tatry vcelku, tedy Vysoké Tatry i Belianske Tatry, které
+# od sebe dělí Kopské sedlo. TANAP je vede jako dva podcelky jednoho celku
+# a externí katalog s tím zachází stejně — Chatu Plesnivec, která stojí
+# v Belianskych Tatrách, řadí pod Vysoké Tatry. Polská strana (Tatry
+# Wysokie) je součástí dle principu „pohoří vcelku" (rozhodnutí Michala
+# 20. 7. 2026).
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla se sem nepíšou.
+nazev: Vysoké Tatry
+slug: vysoke-tatry
+typ: pohori
+zeme: sk
+
+sklonovani:
+  druhy: Vysokých Tater
+  sesty: Vysokých Tatrách
+
+charakteristika: >-
+  Nejvyšší pohoří Karpat a podle pramenů jediné, které má vedle Jižních
+  Karpat alpský charakter — devětadvacet vrcholů přes dva a půl tisíce metrů
+  na hřebeni dlouhém pár desítek kilometrů. Pro průvodce je to zlom: dosud
+  popisoval středohory, kde se dá vyjít a sejít týž den, tady jsou
+  vysokohorské chaty, k nimž se stoupá hodiny, plesa v karech a od listopadu
+  do konce května zavřené značené chodníky. A chataření tu má nejhlubší
+  doloženou historii z celého korpusu — nejstarší chata na slovenské straně
+  stojí od roku 1863 a většina ostatních vznikla za Uhorského karpatského
+  spolku, Karpathenvereinu nebo Klubu československých turistov.
+overeniCharakteristika:
+  source: >-
+    Členění: TANAP (tanap.sk / tanap.sopsr.sk, geomorfologické členění
+    Tatier, čteno 8. 8. 2026) — „Geomorfologický celok Tatry sa člení na dva
+    podcelky: Východné Tatry a Západné Tatry.", „Východné a Západné Tatry
+    oddeľuje Ľaliové sedlo." a „Vysoké Tatry a Belianske Tatry. Oddeľuje ich
+    Kopské sedlo." Alpský charakter a počet vrcholů: anglická Wikipedie,
+    High Tatras (čteno 8. 8. 2026) — „The High Tatras, having 29 peaks over
+    2,500 metres (8,200 ft) AMSL are, with the Southern Carpathians, the
+    only mountain ranges with an alpine character and habitats in the entire
+    1,200 kilometres (750 mi) length of the Carpathian Mountains system."
+    Sezónní uzávěra chodníků: tatry.sk (čteno 8. 8. 2026) — „Seasonal
+    closure of selected hiking trails in the High Tatras lasts from November
+    1st to May 31st"; POZOR, termín se změnil — dřív končila 15. 6.,
+    blog.gopass.travel to výslovně uvádí („the seasonal closure now ends on
+    May 31, instead of the previous June 15"), takže starší prameny mají
+    jiné datum a profily to musejí hlídat. SROVNÁNÍ SE STŘEDOHORAMI je NAŠE,
+    plyne z vlastního korpusu. Historie chat: prameny u jednotlivých chat
+    v interniPoznamky.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Gerlachovský štít
+  vyska: 2654
+  source: >-
+    Anglická Wikipedie (čteno 8. 8. 2026): „Its elevation is usually listed
+    at 2654.4 m above sea level." Souřadnice 49.164079 / 20.134042 dle
+    PeakVisoru. ZAPSÁNO 2654 (celé metry, zaokrouhleno dolů z 2654,4 dle
+    konvence z 27. 7. 2026 — při rozporu nižší číslo); běžně se uvádí
+    2655 m a je to tedy rozpor, který profil přiznává. Je to zároveň
+    nejvyšší hora celých Karpat. POZOR NA TŘI ZÁMĚNY: tatranský Kriváň
+    (2494,7 m) není Veľký Kriváň v Malé Fatře (1708 m) ani Kriváň
+    v Nízkých Tatrách (1233 m) — všechny tři jsou v korpusu; Rysy mají
+    2501 m dle Wikipedie a 2503 m dle PeakVisoru; Havran (2152 m) je
+    nejvyšší vrchol BELIANSKYCH Tater, ne Vysokých.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala. Konfigurace okna je
+  v scripts/oblasti.ts (slug vysoke-tatry, zeme SK+PL, katalogové názvy
+  Vysoké Tatry a Tatry Wysokie), kotvy okna a jejich prameny v komentáři
+  tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → oblast `vysoke-tatry`. Seznam kliků drží
+  docs/KLIKY-PRO-MICHALA.md.
+
+  KATALOG VEDE V OKNĚ 18 OBJEKTŮ, všechny s doloženým stravováním —
+  slovenská strana 14, polská 4. Slovensko: Chata pod Rysmi 2250 m, Téryho
+  chata 2015 m, Zbojnícka chata 1960 m, Chata pod Soliskom 1840 m, Chata
+  Encián 1751 m, Skalnatá chata 1725 m, Sliezsky dom 1670 m, Chata pri
+  Zelenom plese 1551 m, Majláthova chata a Horský hotel Popradské pleso
+  1494 m, Zamkovského chata 1475 m, Rainerova chata 1301 m, Chata Plesnivec
+  1290 m, Bilíkova chata 1255 m. Polsko: Dolina Pięciu Stawów Polskich
+  1671 m, Murowaniec 1500 m, Morskie Oko 1410 m, Dolina Roztoki 1031 m.
+
+  DOLOŽENÁ HISTORIE JEDNOTLIVÝCH CHAT — nejcennější podklad, jaký kdy pro
+  jednu oblast byl. Prameny jsou vlastní weby chat a slovenské a polské
+  turistické portály, vše čteno 8. 8. 2026.
+  **Rainerova chata / útulňa** (1301 m): postavil ji roku 1863 Ján Juraj
+  Rainer a teraz.sk ji vede jako „najstaršia chata postavenej na slovenskej
+  strane Vysokých Tatier" (rok a stavitel jsou v prameni výtahem, ne
+  doslovným citátem).
+  **Téryho chata** (2015 m): postavil Uhorský karpatský spolok roku 1899,
+  architekt Gedeon Majunke ze Spišské Soboty, otevřena 21. 8. 1899; jméno
+  nese po Edmundovi Térym (1856–1917). Rekonstrukce 1983–1984 zachovala
+  Majunkeho podobu (vlastní web teryhochata.sk).
+  **Sliezsky dom** (1670 m): první útulňa 1871, zničena lavinou 1873;
+  Uhorský karpatský spolok postavil dům 1895, přístavby 1908 a 1943;
+  **shořel 29. 11. 1962 ve 22:30** a dnešní hotel je z roku 1968
+  (kamnavylety.sk, horydoly.cz).
+  **Chata pod Rysmi** (2250 m): postavena 1933 za 93 dní, financovalo
+  ústředí Klubu československých turistov; vlastní web ji vede jako
+  „najvyššie položenou (2250 m) a najmladšou tatranskou chatou"; poškozena
+  lavinami 2000, 2001 a 2003, rekonstruována 2010–2013, znovuotevřena
+  25. 9. 2013.
+  **Zbojnícka chata** (1960 m): postavil ji roku 1907 uhorský lesný erár
+  (státní lesní správa z Liptovského Hrádku) jako loveckou chatu,
+  veřejnosti odevzdána 1910; **zničena požárem 1998** a obnovena okolo
+  roku 2000. POZOR: prameny se v roce požáru rozcházejí (objevují se 1918,
+  1998 i 1999); dva nezávislé se shodují na 1998, ale jistota to není —
+  do profilu půjde s přiznaným rozporem.
+  **Chata pri Zelenom plese** (1551 m, též Brnčalova): první Egidova chata
+  1876, přenesena 1887, **shořela 1890**; nová Fridrichova 1897, přístavba
+  1924. Jméno nese po Albertu Brnčalovi (1919–1950), učiteli tělocviku
+  a členu JAMES, který zahynul 1. 8. 1950 pod Jastrabím sedlom.
+  **Zamkovského chata** (1475 m): postavili ji roku 1943 Štefan Zamkovský
+  s manželkou Ľudmilou podle projektu architekta Ladislava Foltýna; po
+  znárodnění 1948 přejmenována na „Chata kpt. Nálepku" a k původnímu jménu
+  se vrátila později — je to TÁŽ BUDOVA pod dvěma jmény, ne dva objekty.
+  **Bilíkova chata** (1255 m): postavil ji roku 1934 Turistický spolok
+  Karpathenverein; jméno nese po kapitánu Pavlu Bilíkovi, účastníku SNP
+  popraveném u Horného Smokovca 1944.
+  **Skalnatá chata** (1725 m): první úkryt 1841 (čtyři slezští turisté
+  s vodci Jakubem Luxem a Michalem Stüberem), 1915 upravena na útulňu
+  z podnětu Uhorského karpatského spolku, od 1932 celoroční provoz KČST;
+  1972 vyhlášena za nezpůsobilou provozu, rekonstrukce 1993–1995
+  a 2020–2021.
+  **Chata Encián** (1751 m): 1936–1937, architekt Dušan Jurkovič — tedy týž
+  architekt jako u Libušína na Pustevnách v Beskydech, což je vazba napříč
+  dvěma oblastmi průvodce. Obnova dokončena v srpnu 2021.
+  **Majláthova chata a Horský hotel Popradské pleso**: první útulňa 1879,
+  pojmenovaná po Vojtechovi Majláthovi, prvním podpředsedovi Liptovské
+  sekce Uhorského karpatského spolku; **shořela 18. 7. 1880** — a to je
+  týž den, kdy podle jiného pramene shořelo i původní zařízení u Popradského
+  plesa, takže jde nejspíš o jednu událost popsanou dvakrát a profily to
+  musejí rozlišit. Dnešní replika Majláthovy chaty kolaudována 30. 12. 2010,
+  provoz od přelomu února a března 2011; hotel má základní kámen
+  12. 10. 1957 a otevřen byl o Vánocích 1961, přístavba shořela
+  25. 10. 1964.
+  **Chata pod Soliskom** (1835 m dle hiking.dennikn.sk, katalog uvádí
+  1840 m — rozpor): odevzdána 6. 2. 1944, dokončena 1946, zřídila ji správa
+  kúpeľov na Štrbskom Plese; generální oprava 2002–2003.
+  **Chata Plesnivec** (1290 m): první zmínka konec 18. století (zlatokop
+  Dreschler), 1892 nový srub, roku 1932 přebudována na turistickou chatu
+  Tiborem Greschem z Karpathenvereinu, 1936 přístavba patra, otevřena
+  26. 6. 1938.
+  POLSKÁ STRANA: **Morskie Oko** (1410 m) — první útulňa 1827 (Edmund
+  Homolacs), shořela 1865; budovu otevřelo Towarzystwo Tatrzańskie
+  3. 8. 1874 se jménem po Stanisławu Staszicovi, hlavní budova shořela
+  v noci 1.–2. 10. 1898, „Nowe Schronisko" 1908. **Dolina Pięciu Stawów
+  Polskich** (1670 m) — dle webu Zakopaného „najwyżej położone schronisko
+  w Polsce"; čtvrtá budova z roku 1932 „w maju 1945 r. z niewiadomych
+  przyczyn całkowicie spłonęło", dnešní je z let 1954–1956.
+  **Murowaniec na Hali Gąsienicowej** (1500 m) — základní kámen
+  13. 8. 1921, otevřeno 12. 7. 1925 z iniciativy Stanisława Osieckého,
+  architekti Zdzisław Kalinowski a Karol Siciński; 1963 požár nejvyššího
+  patra. **Dolina Roztoki** (1031 m) — první útulňa 1876, dnešní budova
+  1913.
+
+  DVA SPOLKY, KTERÉ SE NESMÍ PLÉST: Uhorský karpatský spolok (MKE) postavil
+  Téryho chatu, Sliezsky dom a Majláthovu chatu; Karpathenverein (kežmarský,
+  německý) Bilíkovu chatu a přes Tibora Gresche i Plesnivec. Klub
+  československých turistov pak Chatu pod Rysmi a celoroční provoz Skalnaté.
+
+  CO SE VĚDOMĚ NEZAPSALO DO POLÍ: výška Gerlachovského štítu jako 2655 m
+  (prameny dávají 2654,4 i 2655 — zapsáno nižší), přesné datum požáru
+  Zbojníckej chaty (rozpor tří letopočtů) a vztah požárů z 18. 7. 1880
+  u Majláthovy chaty a Popradského plesa (nejspíš jedna událost, ale žádný
+  pramen to neříká).
+
+  REŽIM, KTERÝ TAHLE OBLAST PŘINÁŠÍ POPRVÉ a datový model na něj musí
+  odpovědět: sezónní uzávěra značených chodníků (dnes 1. 11. – 31. 5., dřív
+  do 15. 6.), horská služba, a u Gerlachovského štítu povinnost horského
+  vodce nebo doklad o horolezeckém kurzu (tnlive.sk — na vrchol nevede
+  značená cesta). U tatranské chaty tedy „otevřeno" neznamená „dostupné".
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.

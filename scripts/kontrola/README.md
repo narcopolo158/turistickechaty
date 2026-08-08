@@ -195,13 +195,27 @@ workflow zmizí ze seznamu pod svým jménem a zůstane tam holá cesta
 `.github/workflows/data01-overpass.yml`, push rovnou založí padlý běh
 („Invalid workflow file") a tlačítko **Run workflow** nabízí staré vstupy.
 Ani lint, ani typecheck, ani build o tom nevědí — ten soubor není součástí
-aplikace. Kontrolovaných tříd je šest: **A** nevalidní YAML (sem spadl i ten
+aplikace. Kontrolovaných tříd je osm: **A** nevalidní YAML (sem spadl i ten
 duplicitní klíč) · **B** chybí `name:` · **C** chybí `on:`/`jobs:`, job bez
 `runs-on` nebo bez `steps` · **D** `inputs.X`, které není deklarované ve
 `workflow_dispatch.inputs` (GitHub takový výraz nezhavaruje, jen tiše dosadí
 prázdno) · **E** `inputs.X` bez zálohy `|| 'výchozí'` ve workflow, které má
 i jiný spouštěč než `workflow_dispatch` (při pushi je kontext `inputs` prázdný)
-· **F** vyplnitelná hodnota interpolovaná rovnou do `run:` místo přes `env:`.
+· **F** vyplnitelná hodnota interpolovaná rovnou do `run:` místo přes `env:`
+· **G** skript umí `--oblast`, ale workflow mu ji nepředá (běh pak tiše spočítá
+výchozí oblast pod jménem té vybrané) · **H** výčet slugů v popisu vstupu
+`oblast` nesedí na `scripts/oblasti.ts`.
+
+Třída **H** přibyla 8. 8. 2026 z opakované škody, ne z úvahy. Políčko `oblast`
+ve formuláři „Run workflow" je volný text — GitHub výběr z konfigurace neumí —
+takže dovolené slugy vyjmenovává jeho `description`. Ten výčet se ale psal
+ručně v osmi souborech a při zakládání oblasti zůstával pozadu: 8. 8. 2026 se
+to stalo třikrát za jediný den, jak oblasti přibývaly. Chybějící slug znamená,
+že nově založená oblast se z formuláře nedá spustit, dokud ji člověk neuhodne;
+přebývající slug nabízí oblast, která už neexistuje, a běh spadne až na
+`oblastDleSlugu`. Kontrola porovnává výčet se skutečným `OBLASTI` a hlásí oba
+směry. Popis, který slugy vůbec nevyjmenovává, se nekontroluje — jinak by
+kontrola nutila držet výčet i tam, kde nemá smysl.
 
 Třída **F** vědomě mlčí o `secrets.*`. Secret nevyplňuje ten, kdo běh spouští,
 ale majitel repa v nastavení, a GitHub ho v logu maskuje — hlásit ho by
@@ -211,8 +225,8 @@ jen kontexty, jejichž obsah píše odesilatel běhu: `inputs.*`, `github.event.
 nedopatřením, má self-test i **tichou ukázku**: secret v `run:` se hlásit nesmí.
 
 Regresní pojistkou téhle kontroly není fixtura na disku, ale **self-test
-v samotném skriptu** — osm ukázek v paměti (šest vadných, jedna čistá, jedna
-tichá), které proběhnou před každým během. Vadné ukázky nejsou opsané ze
+v samotném skriptu** — patnáct ukázek v paměti (devět vadných, jedna čistá, pět
+tichých), které proběhnou před každým během. Vadné ukázky nejsou opsané ze
 zadání: každá vznikla úpravou té čisté, takže se nedá „projít" tím, že by
 kontrola přestala fungovat úplně. Že chytí i skutečnou škodu, se ověřilo
 měřením na původním souboru: `git show eb7fd57:.github/workflows/data01-overpass.yml`

@@ -364,6 +364,99 @@ export const OBLASTI: OblastKonfig[] = [
     katalogPohori: ['Západní Tatry', 'Tatry Zachodnie'],
   },
   {
+    slug: 'vysoke-tatry',
+    nazev: 'Vysoké Tatry',
+    /**
+     * Jedenáctá oblast — POKYN MICHALA 8. 8. 2026: „kdyz uz jsme na
+     * slovensku, vezmi rovnou i vysoke a nizke tatry". Je to zdaleka
+     * nejcennější chatařská síť, jakou průvodce dosud bral: externí katalog
+     * vede na slovenské straně 14 vysokohorských chat a na polské 4
+     * schroniska PTTK, a u většiny je doložený rok vzniku i to, kdo je
+     * postavil (Uhorský karpatský spolok, Karpathenverein, Klub
+     * československých turistov, Towarzystwo Tatrzańskie).
+     *
+     * ROZSAH: Východné Tatry vcelku, tedy Vysoké Tatry i Belianske Tatry,
+     * které od sebe dělí Kopské sedlo — TANAP je vede jako dva podcelky
+     * jednoho celku a katalog s tím zachází stejně (Chatu Plesnivec
+     * v Belianskych Tatrách řadí pod Vysoké Tatry). Polská strana je
+     * součástí dle principu „pohoří vcelku".
+     */
+    zeme: ['SK', 'PL'],
+    /**
+     * Kotvy okna jsou doložené souřadnice (prameny
+     * v data/oblasti/vysoke-tatry.yaml):
+     *   západ  19.93 — Ľaliové (Liliowe) sedlo (49.225 / 19.992), které je
+     *                  dle TANAPu hranicí Východných a Západných Tater,
+     *                  a Kasprowy Wierch (49.232 / 19.982)
+     *   východ 20.40 — Kežmarské Žľaby (49.195 / 20.299) a východní úpatí
+     *                  Belianskych Tater
+     *   sever  49.35 — Zakopané (49.300 / 19.950) a Ždiar (49.271 / 20.261)
+     *   jih    49.09 — pás tatranských osad: Štrbské Pleso (49.117 /
+     *                  20.067), Starý Smokovec (49.142), Tatranská Lomnica
+     *                  (49.167)
+     *
+     * TŘI VĚDOMÁ ROZHODNUTÍ. (1) ZAKOPANÉ JE VEVNITŘ — a je to tatáž úvaha,
+     * kvůli které je u Západných Tater venku: je to město pod VYSOKÝMI
+     * Tatrami, výchozí bod k Morskiemu Oku i na Halu Gąsienicową. (2)
+     * POPRAD JE VENKU (49.059 / 20.298): leží v Popradské kotlině deset
+     * kilometrů od úpatí, kdežto pás tatranských osad okno kryje — stejné
+     * pravidlo jako u Liptovského Mikuláše. (3) PŘEKRYV SE ZÁPADNÝMI
+     * TATRAMI v pásu 19.93–19.95 je záměrný: hranice obou pohoří vede
+     * Ľaliovým sedlem a ostrý řez by v sedle vyřízl objekty.
+     */
+    bbox: { latMin: 49.09, lngMin: 19.93, latMax: 49.35, lngMax: 20.4 },
+    // 3D okno bez podhorského pásu a bez okraje Zakopaného — model má být
+    // o hřebeni, a ten je tady nejdramatičtější z celého korpusu.
+    bbox3d: { latMin: 49.11, lngMin: 19.96, latMax: 49.32, lngMax: 20.35 },
+    poznamka:
+      'jedenáctá oblast (pokyn Michala 8. 8. 2026) — Východné Tatry vcelku (Vysoké i Belianske) přes dvě země; nejbohatší chatařská síť korpusu',
+    katalogPohori: ['Vysoké Tatry', 'Tatry Wysokie'],
+  },
+  {
+    slug: 'nizke-tatry',
+    nazev: 'Nízké Tatry',
+    /**
+     * Dvanáctá oblast, týž pokyn Michala 8. 8. 2026. Katalog v ní vede
+     * 14 objektů, a z nich ČTYŘI ÚTULNY — Ďurková, Andrejcová, Ramža
+     * a Hiadeľské sedlo. To je pro průvodce zvlášť cenné, protože typ
+     * `utulna` má v číselníku od začátku, ale doložených útulen měl dosud
+     * jen pár; tady jich přichází celá skupina a u dvou je doložený VOLNÝ
+     * přístup bez rezervace, což je přesně to, na čem klíč zařazení
+     * u útulny stojí.
+     *
+     * JMÉNO: nominativ je zapsaný česky („Nízké Tatry"), ne slovensky
+     * („Nízke Tatry"). Důvod je jazykový, ne nedbalost — název je v češtině
+     * plně zdomácnělý a průvodce je psaný česky, takže věty jako „v Nízkých
+     * Tatrách" musejí znít přirozeně. Slovenský tvar patří do aliasů.
+     * U Západných Tater se to rozhodlo naopak (slovenský tvar), protože
+     * tam čeština ustálený vlastní tvar nemá.
+     */
+    zeme: ['SK'],
+    /**
+     * Okno kryje celý osmdesát kilometrů dlouhý hřeben od Donovalů po
+     * Kráľovu hoľu, tedy oba podcelky — Ďumbierske i Kráľovohoľské Tatry,
+     * které dělí sedlo Čertovica. Kotvy (prameny
+     * v data/oblasti/nizke-tatry.yaml):
+     *   západ  19.18 — Donovaly (48.883 / 19.233) a Prašivá (48.876 /
+     *                  19.318) na západním konci hřebene
+     *   východ 20.35 — Vernár (48.92 / 20.27) a Telgárt (48.852 / 20.188)
+     *                  za Kráľovou hoľou (48.883 / 20.133)
+     *   sever  49.12 — liptovské úpatí, Chata Opalisko (49.045 / 19.642)
+     *                  a Demänovská dolina (48.97 / 19.58)
+     *   jih    48.78 — Brezno (48.804 / 19.636) pod Ďumbierom
+     *
+     * DVĚ MĚSTA JSOU VENKU a je to totéž pravidlo jako u Popradu:
+     * Banská Bystrica (48.739 / 19.149) leží dvacet kilometrů od úpatí
+     * a Liptovský Mikuláš (49.081 / 19.622) v Liptovské kotlině — okno
+     * kryje podhorské obce, ne kotlinová města.
+     */
+    bbox: { latMin: 48.78, lngMin: 19.18, latMax: 49.12, lngMax: 20.35 },
+    bbox3d: { latMin: 48.81, lngMin: 19.22, latMax: 49.08, lngMax: 20.3 },
+    poznamka:
+      'dvanáctá oblast (pokyn Michala 8. 8. 2026) — osmdesátikilometrový hřeben od Donovalů po Kráľovu hoľu; katalog v ní vede čtyři útulny',
+    katalogPohori: ['Nízké Tatry'],
+  },
+  {
     slug: 'jeseniky',
     nazev: 'Jeseníky',
     // Šestá oblast (pověření Michala 8. 8. 2026, tentýž pokyn jako

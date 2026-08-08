@@ -21,7 +21,7 @@ on:
   workflow_dispatch:
     inputs:
       oblast:
-        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet | sumava | beskydy | jeseniky | javorniky-vsetinske-vrchy | mala-fatra | oravska-magura | zapadne-tatry'
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet | sumava | beskydy | jeseniky | javorniky-vsetinske-vrchy | mala-fatra | oravska-magura | zapadne-tatry | vysoke-tatry | nizke-tatry'
         required: false
         default: 'krkonose'
       api:

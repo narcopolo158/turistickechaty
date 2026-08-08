@@ -21,7 +21,25 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { LineCounter, parseDocument } from 'yaml'
 
+import { OBLASTI } from '../oblasti'
+
 const ADRESAR = '.github/workflows'
+
+/**
+ * Slugy oblastí, které dnes existují. Používá je kontrola H — viz níž, proč
+ * vůbec vznikla.
+ */
+const SLUGY = new Set(OBLASTI.map((o) => o.slug))
+
+/**
+ * Popis vstupu `oblast` u nás vyjmenovává dovolené slugy, aby Michal ve
+ * formuláři „Run workflow" viděl, co smí napsat (políčko je volný text,
+ * GitHub výběr z konfigurace neumí). Ten výčet se ale píše ručně v osmi
+ * souborech, takže při zakládání oblasti zůstává pozadu — 8. 8. 2026 se to
+ * stalo třikrát za den, jak oblasti přibývaly. Poznat se to nedá ničím jiným
+ * než tím, že Michal napíše slug, který v popisu není, a rozmyslí si to.
+ */
+const VYCET_OBLASTI = /slug dle scripts\/oblasti\.ts\s*\)?\s*:\s*(.+)$/
 
 /**
  * Umí ten skript vybrat oblast? Pozná se podle `oblastZArgv` — tak si ji
@@ -40,8 +58,7 @@ const je = (v: unknown): v is Record<string, unknown> =>
   !!v && typeof v === 'object' && !Array.isArray(v)
 
 /** Výrazy `${{ … }}` v řetězci. */
-const vyrazy = (s: string): string[] =>
-  [...s.matchAll(/\$\{\{(.+?)\}\}/gs)].map((m) => m[1].trim())
+const vyrazy = (s: string): string[] => [...s.matchAll(/\$\{\{(.+?)\}\}/gs)].map((m) => m[1].trim())
 
 /**
  * Kontexty, jejichž obsah píše ten, kdo běh spouští (formulář „Run workflow",
@@ -73,7 +90,11 @@ export function zkontrolujWorkflow(
   // parser sice něco vrátí, ale GitHub soubor odmítne celý.
   if (doc.errors.length) {
     for (const e of doc.errors) {
-      vady.push({ kod: 'A', radek: e.linePos?.[0]?.line ?? null, zprava: `nevalidní YAML — ${e.message.split('\n')[0]}` })
+      vady.push({
+        kod: 'A',
+        radek: e.linePos?.[0]?.line ?? null,
+        zprava: `nevalidní YAML — ${e.message.split('\n')[0]}`,
+      })
     }
     return vady
   }
@@ -85,12 +106,17 @@ export function zkontrolujWorkflow(
   // YAML, ale v seznamu workflow je pak k nerozeznání od ostatních a odkaz
   // v deníku („spusť DATA-01") ztrácí smysl.
   if (typeof w.name !== 'string' || !w.name.trim()) {
-    vady.push({ kod: 'B', radek: null, zprava: 'chybí `name:` — v Actions se workflow ukáže jako holá cesta k souboru' })
+    vady.push({
+      kod: 'B',
+      radek: null,
+      zprava: 'chybí `name:` — v Actions se workflow ukáže jako holá cesta k souboru',
+    })
   }
 
   // C — kostra.
   const on = w.on
-  if (on === undefined) vady.push({ kod: 'C', radek: null, zprava: 'chybí `on:` — workflow nemá spouštěč' })
+  if (on === undefined)
+    vady.push({ kod: 'C', radek: null, zprava: 'chybí `on:` — workflow nemá spouštěč' })
   const jobs = w.jobs
   if (!je(jobs) || !Object.keys(jobs).length) {
     vady.push({ kod: 'C', radek: null, zprava: 'chybí `jobs:` nebo je prázdné' })
@@ -101,14 +127,51 @@ export function zkontrolujWorkflow(
   const deklarovane = new Set(dispatch && je(dispatch.inputs) ? Object.keys(dispatch.inputs) : [])
   const jineSpoustece = spoustece(on).filter((s) => s !== 'workflow_dispatch')
 
+  // H — výčet oblastí v popisu vstupu `oblast` zaostal za scripts/oblasti.ts.
+  // Chybějící slug znamená, že nově založená oblast se z formuláře nedá
+  // spustit, aniž by ji člověk uhodl; přebývající slug znamená, že se nabízí
+  // oblast, která už neexistuje, a běh spadne až na `oblastDleSlugu`.
+  const vstupOblast = dispatch && je(dispatch.inputs) ? dispatch.inputs.oblast : null
+  const popis =
+    je(vstupOblast) && typeof vstupOblast.description === 'string' ? vstupOblast.description : ''
+  const vycet = popis.match(VYCET_OBLASTI)
+  if (vycet) {
+    const uvedene = vycet[1]
+      .split('|')
+      .map((s) => s.trim().replace(/^['"`]|['"`]$/g, ''))
+      .filter(Boolean)
+    const chybi = [...SLUGY].filter((s) => !uvedene.includes(s))
+    const prebyva = uvedene.filter((s) => !SLUGY.has(s))
+    const r = radek(nodeOffset(doc, ['on', 'workflow_dispatch', 'inputs', 'oblast', 'description']))
+    if (chybi.length) {
+      vady.push({
+        kod: 'H',
+        radek: r,
+        zprava: `popis vstupu \`oblast\` neuvádí existující oblasti: ${chybi.join(', ')} — z formuláře se nedají vybrat`,
+      })
+    }
+    if (prebyva.length) {
+      vady.push({
+        kod: 'H',
+        radek: r,
+        zprava: `popis vstupu \`oblast\` nabízí neexistující oblasti: ${prebyva.join(', ')} — běh by spadl na neznámém slugu`,
+      })
+    }
+  }
+
   // Projdi kroky: každý `run:` a každou hodnotu v `env:`.
   for (const [jmenoJobu, job] of Object.entries(jobs)) {
     if (!je(job)) continue
-    if (typeof job['runs-on'] !== 'string' && !Array.isArray(job['runs-on']) && !je(job['runs-on'])) {
+    if (
+      typeof job['runs-on'] !== 'string' &&
+      !Array.isArray(job['runs-on']) &&
+      !je(job['runs-on'])
+    ) {
       vady.push({ kod: 'C', radek: null, zprava: `job \`${jmenoJobu}\` nemá \`runs-on\`` })
     }
     const kroky = Array.isArray(job.steps) ? job.steps : []
-    if (!kroky.length) vady.push({ kod: 'C', radek: null, zprava: `job \`${jmenoJobu}\` nemá žádné \`steps\`` })
+    if (!kroky.length)
+      vady.push({ kod: 'C', radek: null, zprava: `job \`${jmenoJobu}\` nemá žádné \`steps\`` })
 
     for (const [i, krok] of kroky.entries()) {
       if (!je(krok)) continue
@@ -126,7 +189,11 @@ export function zkontrolujWorkflow(
       if (typeof krok.run === 'string') {
         for (const v of vyrazy(krok.run)) {
           if (!VYPLNITELNE.test(v)) continue
-          vady.push({ kod: 'F', radek: r, zprava: `${kde}: výraz \`\${{ ${v} }}\` je přímo v \`run:\` — předej ho přes \`env:\` a čti jako "$PROMENNA"` })
+          vady.push({
+            kod: 'F',
+            radek: r,
+            zprava: `${kde}: výraz \`\${{ ${v} }}\` je přímo v \`run:\` — předej ho přes \`env:\` a čti jako "$PROMENNA"`,
+          })
         }
       }
 
@@ -139,7 +206,11 @@ export function zkontrolujWorkflow(
         for (const skript of volaneSkripty(krok.run)) {
           if (!bereOblast(skript)) continue
           if (/--oblast/.test(krok.run)) continue
-          vady.push({ kod: 'G', radek: r, zprava: `${kde}: \`${skript}\` umí \`--oblast\`, ale workflow mu ji nepředá — běh spočítá výchozí oblast` })
+          vady.push({
+            kod: 'G',
+            radek: r,
+            zprava: `${kde}: \`${skript}\` umí \`--oblast\`, ale workflow mu ji nepředá — běh spočítá výchozí oblast`,
+          })
         }
       }
 
@@ -153,14 +224,22 @@ export function zkontrolujWorkflow(
             // jen dosadí prázdno — skript pak běží s výchozí hodnotou a nikdo
             // se nediví, proč se přepínač „neprojevil".
             if (!deklarovane.has(m[1])) {
-              vady.push({ kod: 'D', radek: r, zprava: `${kde}: \`inputs.${m[1]}\` není deklarovaný ve \`workflow_dispatch.inputs\` (deklarované: ${[...deklarovane].join(', ') || '—'})` })
+              vady.push({
+                kod: 'D',
+                radek: r,
+                zprava: `${kde}: \`inputs.${m[1]}\` není deklarovaný ve \`workflow_dispatch.inputs\` (deklarované: ${[...deklarovane].join(', ') || '—'})`,
+              })
             }
           }
           // E — při jiném spouštěči než workflow_dispatch je kontext `inputs`
           // prázdný. Bez `|| 'výchozí'` by se do skriptu poslal prázdný
           // řetězec (u nás třeba `--oblast ""`).
           if (jineSpoustece.length && /(?:github\.event\.)?inputs\./.test(v) && !v.includes('||')) {
-            vady.push({ kod: 'E', radek: r, zprava: `${kde}: \`${v}\` bez zálohy \`|| 'výchozí'\` — spouštěč ${jineSpoustece.join('/')} kontext \`inputs\` nemá` })
+            vady.push({
+              kod: 'E',
+              radek: r,
+              zprava: `${kde}: \`${v}\` bez zálohy \`|| 'výchozí'\` — spouštěč ${jineSpoustece.join('/')} kontext \`inputs\` nemá`,
+            })
           }
         }
       }
@@ -170,7 +249,10 @@ export function zkontrolujWorkflow(
 }
 
 /** Offset uzlu v dokumentu (pro číslo řádku); null, když cesta neexistuje. */
-function nodeOffset(doc: ReturnType<typeof parseDocument>, cesta: Array<string | number>): number | undefined {
+function nodeOffset(
+  doc: ReturnType<typeof parseDocument>,
+  cesta: Array<string | number>,
+): number | undefined {
   const uzel = doc.getIn(cesta, true) as { range?: [number, number, number] } | undefined
   return uzel?.range?.[0]
 }
@@ -192,20 +274,81 @@ jobs:
         run: echo "$OBLAST"
 `
 const VZORKY: Array<[string, string, string]> = [
-  ['A', 'dva klíče `inputs:` pod sebou', DOBRY.replace("      oblast:\n        default: 'krkonose'", "      oblast:\n        default: 'krkonose'\n    inputs:\n      api:\n        default: ''")],
+  [
+    'A',
+    'dva klíče `inputs:` pod sebou',
+    DOBRY.replace(
+      "      oblast:\n        default: 'krkonose'",
+      "      oblast:\n        default: 'krkonose'\n    inputs:\n      api:\n        default: ''",
+    ),
+  ],
   ['B', 'chybí name', DOBRY.replace("name: 'Ukázka'\n", '')],
   ['C', 'job bez runs-on', DOBRY.replace('    runs-on: ubuntu-latest\n', '')],
   ['D', 'překlep ve jménu vstupu', DOBRY.replace('inputs.oblast }}', 'inputs.oblastt }}')],
-  ['E', 'inputs bez zálohy u push spouštěče', DOBRY.replace('on:\n', 'on:\n  push:\n    branches: [main]\n')],
-  ['F', 'výraz přímo v run:', DOBRY.replace('run: echo "$OBLAST"', "run: echo \"\\${{ inputs.oblast }}\"")],
-  ['G', 'skript umí --oblast, workflow ji nepředá', DOBRY.replace('run: echo "$OBLAST"', 'run: npx tsx scripts/data06-trasy.ts')],
+  [
+    'E',
+    'inputs bez zálohy u push spouštěče',
+    DOBRY.replace('on:\n', 'on:\n  push:\n    branches: [main]\n'),
+  ],
+  [
+    'F',
+    'výraz přímo v run:',
+    DOBRY.replace('run: echo "$OBLAST"', 'run: echo "\\${{ inputs.oblast }}"'),
+  ],
+  [
+    'G',
+    'skript umí --oblast, workflow ji nepředá',
+    DOBRY.replace('run: echo "$OBLAST"', 'run: npx tsx scripts/data06-trasy.ts'),
+  ],
+  // H se testuje proti SKUTEČNÉMU seznamu oblastí, ne proti vzorku: ukázka
+  // uvádí jednu jedinou oblast, takže všechny ostatní musí kontrola najít
+  // jako chybějící. Kdyby se seznam někdy zredukoval na jednu oblast, tenhle
+  // self-test spadne a upozorní na to — což je správně.
+  [
+    'H',
+    'výčet oblastí v popisu zaostal',
+    DOBRY.replace(
+      '      oblast:\n',
+      "      oblast:\n        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose'\n",
+    ),
+  ],
+  [
+    'H',
+    'výčet nabízí neexistující oblast',
+    DOBRY.replace(
+      '      oblast:\n',
+      `      oblast:\n        description: 'Oblast (slug dle scripts/oblasti.ts): ${[...SLUGY].join(' | ')} | krkonose-stare'\n`,
+    ),
+  ],
 ]
 
 /** Ukázky, které se hlásit NESMÍ (aby kontrola nezačala plašit). */
 const TICHE: Array<[string, string]> = [
-  ['secret přímo v run: (nevyplňuje ho odesilatel běhu)', DOBRY.replace('run: echo "$OBLAST"', 'run: echo "\\${{ secrets.MAPY_API_KEY }}" > klic')],
-  ['skript s --oblast v run: (předává se)', DOBRY.replace('run: echo "$OBLAST"', 'run: npx tsx scripts/data06-trasy.ts --oblast "$OBLAST"')],
-  ['skript, který oblast neumí', DOBRY.replace('run: echo "$OBLAST"', 'run: npx tsx scripts/seed-chaty.ts')],
+  [
+    'secret přímo v run: (nevyplňuje ho odesilatel běhu)',
+    DOBRY.replace('run: echo "$OBLAST"', 'run: echo "\\${{ secrets.MAPY_API_KEY }}" > klic'),
+  ],
+  [
+    'skript s --oblast v run: (předává se)',
+    DOBRY.replace('run: echo "$OBLAST"', 'run: npx tsx scripts/data06-trasy.ts --oblast "$OBLAST"'),
+  ],
+  [
+    'skript, který oblast neumí',
+    DOBRY.replace('run: echo "$OBLAST"', 'run: npx tsx scripts/seed-chaty.ts'),
+  ],
+  [
+    'úplný výčet oblastí v popisu',
+    DOBRY.replace(
+      '      oblast:\n',
+      `      oblast:\n        description: 'Oblast (slug dle scripts/oblasti.ts): ${[...SLUGY].join(' | ')}'\n`,
+    ),
+  ],
+  // Popis, který slugy vůbec nevyjmenovává, se nekontroluje — jinak by
+  // kontrola nutila každý workflow držet výčet, i kde nemá smysl.
+  [
+    'popis bez výčtu slugů',
+    DOBRY.replace('      oblast:\n', "      oblast:\n        description: 'Oblast'\n"),
+  ],
 ]
 
 function selfTest(): boolean {
@@ -214,20 +357,26 @@ function selfTest(): boolean {
   const cisty = zkontrolujWorkflow('<dobrý>', DOBRY)
   if (cisty.length) {
     spadlo++
-    console.log(`  ✗ dobrá ukázka hlásí vady: ${cisty.map((v) => v.kod + ' ' + v.zprava).join('; ')}`)
+    console.log(
+      `  ✗ dobrá ukázka hlásí vady: ${cisty.map((v) => v.kod + ' ' + v.zprava).join('; ')}`,
+    )
   }
   for (const [kod, popis, yaml] of VZORKY) {
     const vady = zkontrolujWorkflow(`<${kod}>`, yaml)
     if (!vady.some((v) => v.kod === kod)) {
       spadlo++
-      console.log(`  ✗ ${kod} (${popis}) — kontrola nezabrala, vrátila: ${vady.map((v) => v.kod).join(',') || 'nic'}`)
+      console.log(
+        `  ✗ ${kod} (${popis}) — kontrola nezabrala, vrátila: ${vady.map((v) => v.kod).join(',') || 'nic'}`,
+      )
     }
   }
   for (const [popis, yaml] of TICHE) {
     const vady = zkontrolujWorkflow('<tiché>', yaml)
     if (vady.length) {
       spadlo++
-      console.log(`  ✗ tichá ukázka (${popis}) se hlásí: ${vady.map((v) => v.kod + ' ' + v.zprava).join('; ')}`)
+      console.log(
+        `  ✗ tichá ukázka (${popis}) se hlásí: ${vady.map((v) => v.kod + ' ' + v.zprava).join('; ')}`,
+      )
     }
   }
   console.log(`self-test: ${pripadu - spadlo}/${pripadu} ${spadlo ? '— SPADL' : 'ok'}`)

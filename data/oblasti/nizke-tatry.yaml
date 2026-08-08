@@ -1,0 +1,170 @@
+# Oblast Nízké Tatry — dvanáctá oblast průvodce (pokyn Michala 8. 8. 2026:
+# „kdyz uz jsme na slovensku, vezmi rovnou i vysoke a nizke tatry").
+#
+# ROZSAH. Okno dotazu (scripts/oblasti.ts) kryje celý hřeben od Donovalů po
+# Kráľovu hoľu, tedy oba podcelky — Ďumbierske i Kráľovohoľské Tatry, které
+# dělí sedlo Čertovica. Kotvy okna a jejich prameny jsou v komentáři tamtéž.
+# VĚDOMĚ MIMO OKNO jsou Banská Bystrica a Liptovský Mikuláš: kotlinová města
+# dvacet kilometrů od úpatí, ne podhorské obce (totéž pravidlo jako Poprad
+# u Vysokých Tater a Liptovský Mikuláš u Západných Tater).
+# NÍZKÉ TATRY NEJSOU SOUČÁSTÍ TATER V UŽŠÍM SMYSLU — jsou samostatné pohoří
+# a mají proto vlastní oblast, ne pododdíl vysokotatranské. Katalog je tak
+# vede taky (pohoří „Nízké Tatry" zvlášť od „Vysoké Tatry").
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Nízké Tatry
+slug: nizke-tatry
+typ: pohori
+zeme: sk
+
+# Skloňované tvary názvu do vět na webu. Pomnožné ženské jako Beskydy;
+# pozor, že nominativ je česky „Nízké Tatry" (viz interní poznámky).
+sklonovani:
+  druhy: Nízkých Tater
+  sesty: Nízkých Tatrách
+
+charakteristika: >-
+  Osmdesát kilometrů dlouhý hřeben přes střední Slovensko, který sedlo
+  Čertovica dělí na západní Ďumbierske a východní Kráľovohoľské Tatry.
+  Proti Vysokým Tatrám na severu jsou to hory jiného rázu — ne skalní
+  stěny a plesa, ale dlouhé zaoblené hřbety nad hranicí lesa, po kterých
+  se dá jít celé dny. Právě tudy vede hřebenem Cesta hrdinov SNP a Chopok
+  je jejím nejvyšším bodem. Pro průvodce je oblast cenná ještě něčím
+  jiným: vedle klasických chat tu stojí skupina turistických útulen, jaká
+  se jinde v korpusu neopakuje.
+overeniCharakteristika:
+  source: >-
+    Členění a délka hřebene: rešerše 8. 8. 2026 — hřeben dlouhý asi 80 km,
+    dělený sedlem Čertovica na podcelky Ďumbierske Tatry a Kráľovohoľské
+    Tatry. Cesta hrdinov SNP: dálková trasa 769 km, jejímž nejvyšším bodem
+    je Chopok (2024 m). Národný park Nízke Tatry vyhlášen 1978 nariadením č.
+    119/1978, rozloha upravena 1997 na 72 842 ha. ŽÁDNÝ SUPERLATIV SE ZDE
+    VĚDOMĚ NETVRDÍ: nabízelo se napsat, že jde o nejrozsáhlejší pohoří
+    Slovenska nebo o nejdelší hřeben, ale doslovný pramen pro to rešerše
+    nedodala (doložený superlativ se týká NAPANTu jako národního parku, ne
+    pohoří), takže se to nepíše. SROVNÁNÍ S VYSOKÝMI TATRAMI („ne skalní
+    stěny a plesa, ale zaoblené hřbety") je NAŠE shrnutí, ne citát pramene.
+    Skupina útulen je doložená katalogem (čtyři objekty typu „turistická
+    útulna") a stav přístupu u každé z nich rešerší — podrobně v interních
+    poznámkách.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Ďumbier
+  vyska: 2043
+  source: >-
+    Rešerše 8. 8. 2026: Ďumbier je nejvyšší hora Nízkých Tater, souřadnice
+    okolo 48.936 / 19.640. ROZPOR PRAMENŮ, nesrovnaný: výška se uvádí 2043
+    i 2046 m. Zapsáno 2043 dle konvence z 27. 7. 2026 (při rozporu nižší
+    číslo, rozpor přiznat). DRUHÝ NEJVYŠŠÍ je Chopok (2024 m), nejvyšší bod
+    Cesty hrdinov SNP, a nejvyšší hora východní Kráľovohoľské části je
+    Kráľova hoľa (1946 m). Pozor na záměnu: turisticky nejznámější je
+    Chopok kvůli lanovce, ne Ďumbier.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala („kdyz uz jsme na slovensku, vezmi
+  rovnou i vysoke a nizke tatry"). Konfigurace okna je v
+  scripts/oblasti.ts (slug nizke-tatry, zeme SK, katalogový název „Nízké
+  Tatry"), kotvy okna a jejich prameny v komentáři tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `nizke-tatry`. Ze sandboxu na Overpass
+  nedosáhneme (HTTP 000 přes proxy, ověřeno 8. 8. 2026). Seznam všech
+  čekajících kliků drží docs/KLIKY-PRO-MICHALA.md.
+
+  PROČ JE TATO OBLAST PRO PRŮVODCE JINÁ NEŽ VŠECHNY PŘEDCHOZÍ — ČTYŘI
+  DOLOŽENÉ ÚTULNY. Typ `utulna` má číselník od začátku, ale doložených
+  útulen měl korpus dosud jen několik a u většiny se nedařilo doložit to
+  podstatné: jestli je přístup skutečně volný. Tady přichází celá skupina
+  čtyř a u každé je stav přístupu jiný, což je přesně to rozlišení, na
+  kterém klíč zařazení u útulny stojí:
+  – Útulňa Ďurková pod Chabencom (1623 m, katalog; obec Jasenie) — volně
+  přístupná BEZ rezervace, ale za poplatek. Nejvýše položená z celé
+  čtveřice.
+  – Útulňa Andrejcová (1410 m, katalog; obec Pohorelá) — REZERVACE
+  POVINNÁ. Ta jediná ze čtveřice tedy nesplňuje „volně přístupná".
+  – Útulňa Ramža (1260 m, katalog; obec Liptovská Teplička) — volně a
+  bezplatně, bez správce.
+  – Útulňa Hiadeľské sedlo (1099 m dle katalogu, 1085 m dle prameně
+  rešerše — rozpor, zapisuje se nižší dle konvence z 27. 7. 2026, ale u
+  profilu se musí dohledat, co který pramen měří: sedlo, nebo budovu) —
+  volně přístupná, postavil ji Ekopolis a předána byla 27. 8. 2008.
+  Rozdíl „volně bez rezervace za poplatek" versus „na rezervaci" versus
+  „bezplatně bez správce" NENÍ kosmetický a nesmí se v profilech
+  zprůměrovat do slova „útulna". Poznamenává se to sem dřív, než se
+  povyšuje, aby se to při triáži nesetřelo.
+
+  TŘI OBJEKTY NA ČERTOVICI JSOU V KATALOGU TŘI RŮZNÉ ZÁPISY, NE JEDEN —
+  Chata na Čertovici (1230 m), Chata pod Čertovicou (1238 m) a Horská
+  chata STIV Čertovica (1232 m), všechny s obcí Vyšná Boca. Tři výšky v
+  rozmezí osmi metrů na jednom sedle jsou klasická situace, kdy se dá
+  snadno chybovat oběma směry: buď se tři samostatné provozy slijí do
+  jednoho profilu, nebo se jeden provoz rozdělí na tři. ROZHODNE SE TO AŽ
+  PROTI DRUHÉMU PRAMENI A PODLE GPS, ne odhadem — vzor Kleti a Svatoboru
+  (sloučeno po doložení, že jde o jeden areál) a naopak Prašivé v
+  Beskydech (chata pět metrů od rozhledny, a přesto dva objekty). Do
+  triáže to jde jako výslovná otázka, ne jako hotová věc.
+
+  CO UŽ VÍME BEZ OVERPASSU — externí katalog drží v okně 14 objektů,
+  všechny s doloženým stravováním a všechny s provozem „celoročně":
+  Kamenná chata pod Chopkom (2000 m dle katalogu), Chata M. R. Štefánika
+  (1740 m), Útulňa Ďurková pod Chabencom (1623 m), Hotel Kosodrevina (1500
+  m), Útulňa Andrejcová (1410 m), Chata pod Čertovicou (1238 m), Horská
+  chata STIV Čertovica (1232 m), Chata na Čertovici (1230 m), Útulňa Ramža
+  (1260 m), Chata Trangoška (1121 m), Chata Opalisko (1100 m), Útulňa
+  Hiadeľské sedlo (1099 m), Chata Magurka (1050 m) a Chata Liptov (1010
+  m).
+  DVA Z NICH NEJSOU HŘEBENOVÉ CHATY a je dobré to vědět dopředu: Chata
+  Opalisko (Závažná Poruba) i Chata Liptov (Demänovská Dolina) stojí podle
+  rešerše 8. 8. 2026 v lyžařských areálech na liptovském úpatí, ne na
+  hřebeni. Do průvodce se tím nediskvalifikují — klíč zařazení rozhoduje
+  podle role na trase a občerstvení pro veřejnost, ne podle výšky — ale ta
+  role u nich bude jiná než u Štefánikovy chaty a musí se doložit, ne
+  předpokládat.
+
+  KAMENNÁ CHATA POD CHOPKOM — SUPERLATIV, KTERÝ SE NABÍZÍ A JE NEPRAVDIVÝ.
+  Katalog jí dává 2000 m, rešerše 8. 8. 2026 uvádí 1985 m (rozpor,
+  zapisuje se nižší). Láká napsat, že je to nejvýše položená chata na
+  Slovensku; podle rešerše je TŘETÍ nejvyšší. Ve Vysokých Tatrách jsou nad
+  ní Chata pod Rysmi (2250 m) i Téryho chata (2015 m) — obě má katalog
+  také, takže si to korpus dokáže ověřit sám. Zapisuje se to sem jako
+  varování, protože takový superlativ by prošel audit-mech jen tehdy,
+  kdyby měl pramen — a pramen by ho nedoložil, protože není pravdivý.
+
+  CHATA M. R. ŠTEFÁNIKA — DOLOŽENÁ HISTORIE, NEJCENNĚJŠÍ V OBLASTI.
+  Základní kámen položen 20. 7. 1924, otevřena 9. 9. 1928; v letech
+  1945–1990 se jmenovala „Chata hrdinov SNP" (rešerše 8. 8. 2026).
+  Přejmenování a vrácení jména je přesně ten typ údaje, který průvodce
+  chce mít v profilu i v poznámkách o jmenovcích, protože historické jméno
+  se objevuje ve starých mapách a průvodcích.
+
+  CHARAKTER OBLASTI A DÁLKOVÁ TRASA. Hřeben měří asi 80 km a sedlo
+  Čertovica ho dělí na dva podcelky — Ďumbierske Tatry na západě a
+  Kráľovohoľské Tatry na východě. Cesta hrdinov SNP (769 km) vede hřebenem
+  a Chopok je jejím nejvyšším bodem (rešerše 8. 8. 2026). NAPANT (Národný
+  park Nízke Tatry) byl vyhlášen roku 1978 nariadením 119/1978 a roku 1997
+  byla jeho rozloha upravena na 72 842 ha.
+
+  VÝŠKA ĎUMBIERU JE ROZPORNÁ: prameny uvádějí 2043 i 2046 m. Zapsáno 2043
+  dle konvence z 27. 7. 2026 (při rozporu nižší číslo, rozpor přiznat).
+  Souřadnice okolo 48.936 / 19.640.
+
+  TŘETÍ KRIVÁŇ JE ZDE. V korpusu jsou od 8. 8. 2026 tři různé kopce téhož
+  jména: tatranský Kriváň (2494,7 m), Veľký Kriváň v Malé Fatře (1708 m)
+  a Kriváň v Nízkých Tatrách (1233 m). Ten poslední patří do téhle oblasti.
+  Kdyby se objekt pojmenovaný podle něj někdy zakládal, musí se rozlišit
+  oblastí, ne jménem — to je přesně situace, na kterou je registr jmenovců
+  (data/_jmenovci.yaml) a proti které samo jméno nechrání.
+
+  JMÉNO OBLASTI je zapsané česky („Nízké Tatry"), ne slovensky („Nízke
+  Tatry") — zdomácnělý název v česky psaném průvodci. Slovenský tvar patří
+  do aliasů, až budou aliasy oblastí existovat. U Západných Tater se to
+  rozhodlo naopak a důvod je v jejich vlastním souboru.
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.

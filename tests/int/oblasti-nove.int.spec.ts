@@ -1,8 +1,11 @@
 /**
- * Beskydy, Jeseníky a Javorníky s Vsetínskými vrchy — pátá, šestá a sedmá
- * oblast (pověření Michala 8. 8. 2026: „můžeš se pustit do beskyd
- * a jeseníku"; sedmá pak jeho rozhodnutí téhož dne: „javorniky a vsetinske
- * vrchy bych udelal jako jednu samostatnou oblast").
+ * OSM oblasti založené 8. 8. 2026 — od páté (Beskydy) po dvanáctou (Nízké
+ * Tatry). Vznikly ve třech vlnách podle tří Michalových pokynů téhož dne:
+ * „můžeš se pustit do beskyd a jeseníku" (Beskydy, Jeseníky), „javorniky
+ * a vsetinske vrchy bych udelal jako jednu samostatnou oblast" a „kandidaty
+ * budoucich oblasti nech a rovnou je zaloz" (Malá Fatra, Oravská Magura,
+ * Západné Tatry), nakonec „kdyz uz jsme na slovensku, vezmi rovnou i vysoke
+ * a nizke tatry".
  *
  * Testy hlídají čtyři věci, které se u založení oblasti dají tiše zkazit —
  * tiše proto, že se neprojeví chybou, ale MENŠÍM VÝSLEDKEM:
@@ -77,7 +80,11 @@ const KOTVY: Record<string, { nazev: string; lat: number; lng: number }[]> = {
     { nazev: 'Velký Javorník (SK strana hřebene)', lat: 49.319, lng: 18.373 },
     { nazev: 'Kohútka', lat: 49.295, lng: 18.23 },
     { nazev: 'Portáš', lat: 49.2945, lng: 18.2328 },
-    { nazev: 'Vysoká (severní kotva, nejvyšší vrchol Vsetínských vrchů)', lat: 49.404, lng: 18.362 },
+    {
+      nazev: 'Vysoká (severní kotva, nejvyšší vrchol Vsetínských vrchů)',
+      lat: 49.404,
+      lng: 18.362,
+    },
     { nazev: 'Soláň', lat: 49.394, lng: 18.25 },
     { nazev: 'Vsacký Cáb', lat: 49.375, lng: 18.096 },
     { nazev: 'Chata Kusalíno', lat: 49.3332, lng: 18.061 },
@@ -131,6 +138,35 @@ const KOTVY: Record<string, { nazev: string; lat: number; lng: number }[]> = {
     { nazev: 'Biskupská kupa (východní kotva)', lat: 50.256, lng: 17.43 },
     { nazev: 'chata Paprsek', lat: 50.21, lng: 16.991 },
   ],
+  // Vysoké Tatry: kotvy jsou jednak hranice pohoří (Ľaliové sedlo dle
+  // TANAPu), jednak samotné chaty — ty jsou tu spolehlivější kotva než
+  // vrcholy, protože právě chaty jsou předmětem dotazu.
+  'vysoke-tatry': [
+    {
+      nazev: 'Ľaliové / Liliowe sedlo (západní hranice pohoří dle TANAPu)',
+      lat: 49.225,
+      lng: 19.992,
+    },
+    { nazev: 'Kasprowy Wierch (PL)', lat: 49.232, lng: 19.982 },
+    { nazev: 'Zakopané (severozápadní kotva, PL)', lat: 49.3, lng: 19.95 },
+    { nazev: 'Ždiar (severovýchodní kotva)', lat: 49.271, lng: 20.261 },
+    { nazev: 'Kežmarské Žľaby (východní kotva)', lat: 49.195, lng: 20.299 },
+    { nazev: 'Štrbské Pleso (jižní kotva)', lat: 49.117, lng: 20.067 },
+  ],
+  // Nízké Tatry: hřeben je z celého korpusu nejdelší (~80 km), takže kotvy
+  // musejí držet oba konce — Prašivá na západě a Vernár s Telgártem za
+  // Kráľovou hoľou na východě — i oba svahy, liptovský a hronský.
+  'nizke-tatry': [
+    { nazev: 'Ďumbier (nejvyšší vrchol)', lat: 48.936, lng: 19.64 },
+    { nazev: 'Kráľova hoľa (východní část hřebene)', lat: 48.883, lng: 20.133 },
+    { nazev: 'Donovaly (západní kotva)', lat: 48.883, lng: 19.233 },
+    { nazev: 'Prašivá (západní konec hřebene)', lat: 48.876, lng: 19.318 },
+    { nazev: 'Telgárt (východní kotva)', lat: 48.852, lng: 20.188 },
+    { nazev: 'Vernár (východní kotva)', lat: 48.92, lng: 20.27 },
+    { nazev: 'Brezno (jižní kotva)', lat: 48.804, lng: 19.636 },
+    { nazev: 'Demänovská dolina (severní svah)', lat: 48.97, lng: 19.58 },
+    { nazev: 'Chata Opalisko (severní kotva)', lat: 49.045, lng: 19.642 },
+  ],
 }
 
 describe.each([
@@ -140,6 +176,8 @@ describe.each([
   ['mala-fatra', 'Malá Fatra'],
   ['oravska-magura', 'Oravská Magura'],
   ['zapadne-tatry', 'Západné Tatry'],
+  ['vysoke-tatry', 'Vysoké Tatry'],
+  ['nizke-tatry', 'Nízké Tatry'],
 ])('oblast %s', (slug, nazev) => {
   const konfig = oblastDleSlugu(slug)
   const yaml = nactiYaml(slug)
@@ -195,10 +233,7 @@ describe.each([
 
   it('každý katalogový název pohoří v katalogu opravdu existuje', () => {
     const chybne = (konfig.katalogPohori ?? []).filter((p) => !POHORI_V_KATALOGU.has(p))
-    expect(
-      chybne,
-      'název nesedí na katalog — dohledávka podle jmen by se tiše vypnula',
-    ).toEqual([])
+    expect(chybne, 'název nesedí na katalog — dohledávka podle jmen by se tiše vypnula').toEqual([])
   })
 
   it('každá země dotazu má slug pro URL', () => {
@@ -321,7 +356,10 @@ describe('tři oblasti založené s daty (pokyn Michala „kandidáty budoucích
     const dir = join(process.cwd(), 'data', 'kandidati', slug)
     const uvnitr = readdirSync(dir)
       .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
-      .map((f) => ({ f, d: parse(readFileSync(join(dir, f), 'utf8')) as { lat?: number; lng?: number } }))
+      .map((f) => ({
+        f,
+        d: parse(readFileSync(join(dir, f), 'utf8')) as { lat?: number; lng?: number },
+      }))
       .filter(
         ({ d }) =>
           typeof d.lat === 'number' &&
@@ -360,3 +398,103 @@ describe('tři oblasti založené s daty (pokyn Michala „kandidáty budoucích
   })
 })
 
+describe('Tatry — jedenáctá a dvanáctá oblast (pokyn Michala „vezmi rovnou i vysoke a nizke tatry")', () => {
+  /**
+   * Tady testy nehlídají jen tvar dat. Tatry přinášejí do korpusu dvě věci,
+   * které se v žádné dosavadní oblasti nevyskytly, a obě se dají tiše
+   * zkazit tím, že se na ně zapomene:
+   *   – VE VYSOKÝCH TATRÁCH neznamená „otevřeno" totéž jako „dostupné":
+   *     hřebenové trasy mají sezónní uzávěru a na Gerlachovský štít se bez
+   *     vůdce nesmí. Kdyby to poznámka nedržela, profily by u chaty napsaly
+   *     celoroční provoz a mlčely by o tom, že se k ní půl roku nedojde.
+   *   – V NÍZKÝCH TATRÁCH je čtveřice útulen, u kterých se stav přístupu
+   *     liší (volně / za poplatek / na rezervaci). To je přesně rozlišení,
+   *     na kterém stojí klíč zařazení u typu `utulna`, a nesmí se
+   *     zprůměrovat do jednoho slova.
+   */
+  const katalogPocet = (pohori: string) => KATALOG.filter((r) => r['Pohoří'] === pohori).length
+
+  it('katalog opravdu drží ta množství, o kterých poznámky mluví', () => {
+    // Kdyby se katalog vyměnil za jinou verzi, čísla v poznámkách by přestala
+    // být pravda — a nikdo by si toho nevšiml, protože jsou to jen věty.
+    expect(katalogPocet('Vysoké Tatry')).toBe(14)
+    expect(katalogPocet('Tatry Wysokie')).toBe(4)
+    expect(katalogPocet('Nízké Tatry')).toBe(14)
+  })
+
+  it('Vysoké Tatry: poznámka drží sezónní uzávěru — „otevřeno" ≠ „dostupné"', () => {
+    const p = String(nactiYaml('vysoke-tatry').interniPoznamky)
+    expect(p).toMatch(/uzávěr|uzavř/i)
+    expect(p).toMatch(/1\.\s*11\./)
+  })
+
+  it('Vysoké Tatry: past na tři různé Kriváně je zapsaná u nejvyšší hory', () => {
+    // Tatranský Kriváň, Veľký Kriváň v Malé Fatře a Kriváň v Nízkých Tatrách
+    // jsou tři různé kopce a všechny tři jsou od 8. 8. 2026 v korpusu. Bez
+    // téhle věty se při povyšování spojí objekty ve třech různých pohořích —
+    // chyba, kterou nezachytí nic jiného, protože jméno je stejné a data
+    // vypadají v pořádku. Poznámka patří k nejvyšší hoře, ne do interních:
+    // je to údaj o publikovaném čísle, ne provozní vzkaz.
+    const s = String(nactiYaml('vysoke-tatry').nejvyssiHora?.source)
+    expect(s).toMatch(/Kriváň/)
+    expect(s).toMatch(/Malé Fatře/)
+    expect(s).toMatch(/Nízkých Tatrách/)
+  })
+
+  it('Nízké Tatry: poznámka rozlišuje stav přístupu u všech čtyř útulen', () => {
+    const p = String(nactiYaml('nizke-tatry').interniPoznamky)
+    for (const u of ['Ďurková', 'Andrejcová', 'Ramža', 'Hiadeľské']) {
+      expect(p, `útulna ${u} v poznámce chybí`).toContain(u)
+    }
+    // Andrejcová je ze čtveřice jediná na rezervaci — kdyby se to setřelo,
+    // dostala by v profilu volný přístup, který nemá.
+    expect(p).toMatch(/REZERVACE POVINNÁ/)
+  })
+
+  it('Nízké Tatry: Kamenná chata pod Chopkom NENÍ nejvýše položená — drží to katalog i poznámka', () => {
+    // Superlativ, který se sám nabízí a je nepravdivý. Test ho neověřuje
+    // z pramene, ale z vlastního korpusu: v katalogu jsou nad ní dva objekty.
+    const vyssi = KATALOG.filter(
+      (r) => Number((r as Record<string, unknown>)['Nadmořská výška (m)']) > 2000,
+    )
+    expect(vyssi.length).toBeGreaterThanOrEqual(2)
+    const p = String(nactiYaml('nizke-tatry').interniPoznamky)
+    expect(p).toMatch(/TŘETÍ/)
+  })
+
+  it('Nízké Tatry: tři čertovické zápisy katalogu se nesmějí tiše slít', () => {
+    const certovica = KATALOG.filter((r) =>
+      String((r as Record<string, unknown>)['Název'] ?? '').match(/Čertovic/i),
+    )
+    expect(certovica.length).toBe(3)
+    const p = String(nactiYaml('nizke-tatry').interniPoznamky)
+    expect(p).toMatch(/TŘI RŮZNÉ ZÁPISY|tři různé zápisy/)
+  })
+
+  it('Nízké Tatry: jméno je česky, ale slovenský tvar je v poznámce vysvětlený', () => {
+    const y = nactiYaml('nizke-tatry')
+    expect(y.nazev).toBe('Nízké Tatry')
+    expect(y.sklonovani?.sesty).toBe('Nízkých Tatrách')
+    expect(String(y.interniPoznamky)).toMatch(/Nízke Tatry/)
+  })
+
+  it('obě tatranské oblasti mají Slovensko zapojené celou cestou (dotaz i URL)', () => {
+    for (const slug of ['vysoke-tatry', 'nizke-tatry']) {
+      const konfig = oblastDleSlugu(slug)
+      const zeme = zemeDotazu(konfig)
+      expect(zeme.length).toBeGreaterThan(0)
+      for (const { zeme: z } of zeme) {
+        expect(ZEME_SLUG[z], `${slug}: země ${z} nemá URL slug`).toBeTruthy()
+      }
+      expect(
+        zeme.map((z) => z.iso),
+        `${slug} bez Slovenska`,
+      ).toContain('SK')
+    }
+    // Vysoké Tatry navíc Polsko — bez něj by vypadla čtyři schroniska PTTK.
+    expect(zemeDotazu(oblastDleSlugu('vysoke-tatry')).map((z) => z.iso)).toContain('PL')
+    // Nízké Tatry jsou naopak jednozemní a je to správně: hřeben celý leží
+    // na Slovensku, takže by tu žádná druhá země být neměla.
+    expect(zemeDotazu(oblastDleSlugu('nizke-tatry')).map((z) => z.iso)).toEqual(['SK'])
+  })
+})
