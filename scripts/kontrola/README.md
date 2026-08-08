@@ -23,6 +23,7 @@ npx tsx scripts/kontrola/audit-mech.ts   [soubor.yaml …]
 npx tsx scripts/kontrola/kolize-jmen.ts  [soubor.yaml …]
 npx tsx scripts/kontrola/workflows.ts    [soubor.yml …]
 npx tsx scripts/kontrola/exporty.ts
+npx tsx scripts/kontrola/katalog-pokryti.ts   [slug oblasti …]
 ```
 
 `kolize-jmen.ts` je jediný, který sám od sebe čte i `data/kandidati/**` —
@@ -374,3 +375,33 @@ result set"): prázdný výsledek je u dohledávky legitimní, protože v druhé
 nemusí být z katalogu nic. A hlásí chybu i tehdy, když nějaké elementy přišly —
 částečný export vypadá jako úspěch a rozdíl proti minulému běhu se pak projeví
 jako „objekty zmizely".
+
+**`katalog-pokryti.ts` — seznam k posouzení.** Pro každou oblast s vyplněným
+`katalogPohori` řekne, které katalogové objekty nemají v repu ani profil, ani
+kandidáta. Je to jediná mezera z celé pipeline, kterou nezachytí nic jiného:
+DATA-01 stahuje z OSM, takže objekt, který v OSM není nebo je tam tagovaný
+civilně, prostě nepřijde — a report běhu ukáže úspěch, protože z jeho pohledu
+se nic nestalo. 8. 8. 2026 se dvě takové mezery našly ručně (jesenický Hotel
+Praděd, beskydský Libušín a Chata na Radhošti) a ruční hledání není ani
+spolehlivé, ani pravidelné.
+
+**NEROZHODUJE, a je to úmysl:** mezera je práce, ne vada. Objekt může být
+zaniklý, pod jiným jménem nebo mimo klíč zařazení. Kontrola, která blokuje CI
+kvůli rozdělané práci, se stejně vypne.
+
+Report má **tři** kategorie, ne dvě, a ta prostřední je to podstatné. SILNÁ
+shoda je `typShodyNazvu` z DATA-05 (rovnost po normalizaci nebo obsažení
+jednoho jména v druhém) a do výpisu nejde. SLABÁ shoda znamená, že jména mají
+společné rozlišující slovo po odstranění obecných částí („schronisko",
+„chata", „hotel"); vypisuje se **k přečtení**, protože právě tady se pozná
+polská deklinace — „Schronisko Hala Miziowa" z katalogu a „Schronisko na Hali
+Miziowej" z OSM je zjevně týž objekt, ale žádné jméno neobsahuje druhé. Bez
+téhle kategorie by report tvrdil, že v Beskydech chybí většina polských
+schronisek. Zbytek je BEZ ZÁZNAMU.
+
+Opačný směr chyby zůstává a report ho ukazuje: falešná silná shoda mezeru
+**zamlčí**. Beskydská „Chata na Radhošti" se slabě páruje s kandidátem
+`radhostsky-rybnik` — na tenhle pár se dá 8. 8. 2026 naletět, protože při
+ručním hledání token „radhošť" opravdu spároval rybník s chatou. Proto se
+u slabých shod vypisuje, ČÍM se objekt spároval: report je pomůcka pro čtení,
+ne rozhodnutí.

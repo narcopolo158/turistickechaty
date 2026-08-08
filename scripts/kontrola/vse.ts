@@ -32,6 +32,11 @@ const KROKY = [
   // platny doklad — a to je nejtissi porucha, jakou pipeline umi (8. 8. 2026
   // kvuli ni chybeli v beskydskych kandidatech Libusin a Chata na Radhosti).
   ['exporty', 'surove Overpass exporty v repu (behova chyba v `remark`)', true],
+  // NEROZHODUJE: mezera v pokryti katalogu je PRACE, ne vada. Objekt muze
+  // v OSM chybet, byt pod jinym jmenem, byt zanikly nebo mimo klic zarazeni.
+  // Report ma rict, kde hledat; rozhodnout musi redakce s pramenem. Kontrola,
+  // ktera blokuje CI kvuli rozdelane praci, se stejne vypne.
+  ['katalog-pokryti', 'katalogove objekty bez zaznamu v repu (seznam k posouzeni)', false],
   // jedina kontrola mimo datovou vrstvu: definice GitHub Actions. Rozhoduje,
   // protoze vadny workflow se jinak pozna az na webu Actions (padly beh).
   ['workflows', 'definice GitHub Actions (.github/workflows)', true],
