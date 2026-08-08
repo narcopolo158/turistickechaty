@@ -166,43 +166,49 @@ export const OBLASTI: OblastKonfig[] = [
     // budou mít část na Slovensku").
     zeme: ['CZ', 'PL', 'SK'],
     /**
-     * Okno kryje celé ZÁPADNÍ BESKYDY, ne jen geomorfologický celek
-     * „Moravskoslezské Beskydy". Kotvy okna jsou doložené souřadnice
-     * krajních objektů a vrcholů (prameny v data/oblasti/beskydy.yaml):
-     *   západ  18.00 — Vsacký Cáb (49.386 / 18.088), nejzápadnější objekt
-     *                  katalogu v celku
+     * Okno kryje BESKYDY V UŽŠÍM SMYSLU — hřebenový celek od Vsetínska
+     * (Moravskoslezské Beskydy) přes polský Beskid Śląski a Żywiecki až po
+     * Babí horu, s kysuckou a oravskou stranou. Kotvy jsou doložené
+     * souřadnice krajních objektů a vrcholů (prameny
+     * v data/oblasti/beskydy.yaml):
+     *   západ  18.05 — Veřovické vrchy nad Frenštátem, západní výběžek
+     *                  Moravskoslezských Beskyd
      *   východ 19.75 — Hala Krupowa (49.625 / 19.653) a Polica
      *                  (49.623 / 19.619) na východním konci Żywieckiego
      *   sever  49.85 — Szyndzielnia (49.753 / 18.999) nad Bielskem-Białou
-     *   jih    49.25 — Kohútka (49.293 / 18.229) v Javorníkách
+     *   jih    49.30 — Wielka Racza / Veľká Rača (49.413 / 18.968)
+     *                  s dvanáctikilometrovou rezervou
      *
-     * Vědomé rozhodnutí o ROZSAHU OKNA (ne o publikaci!): dovnitř se berou
-     * i Javorníky a Vsetínské vrchy, které podle geomorfologického členění
-     * NEJSOU součástí celku Moravskoslezské Beskydy — jsou to souřadné
-     * celky v rámci nadřazené podsoustavy Západní Beskydy. Katalog v nich
-     * drží sedm objektů s doloženým stravováním (Kohútka, Portáš, Čarták,
-     * Vsacký Cáb, Kusalíno, Kmínek, Čerenka) a užší okno by je tiše
-     * vyřízlo. Bbox je jen vyhledávací okno; jestli ty objekty do
-     * PRŮVODCE patří jako Beskydy, nebo mají mít vlastní oblast po vzoru
-     * Ještědského hřbetu, je rozhodnutí o rozsahu → Michal (otázka
-     * v deníku 8. 8. 2026). Do té doby platí pravidlo z Ještědu naruby:
-     * radši je najít a nechat ve frontě než je nenajít vůbec.
+     * JAVORNÍKY A VSETÍNSKÉ VRCHY SEM UŽ NEPATŘÍ — rozhodnutí Michala
+     * 8. 8. 2026: *„javorniky a vsetinske vrchy bych udelal jako jednu
+     * samostatnou oblast (jestedsky hrbet jsme taky nepripojili
+     * k jizerkam)"*. Mají vlastní oblast `javorniky-vsetinske-vrchy` níž
+     * a jejich dva katalogové názvy se odsud přesunuly tam. Jižní hrana
+     * okna se proto zvedla z 49.25 na 49.30 a západní z 18.00 na 18.05.
+     *
+     * PŘEKRYV OBOU OKEN JE ZÁMĚRNÝ, ne nedbalost: pás 49.30–49.47 /
+     * 18.05–18.50 kryjí obě oblasti, protože právě tam se obě pohoří
+     * potkávají (Rožnovská Bečva, Soláň) a ostrý řez by na hranici tiše
+     * vyřízl objekty. Duplicity řeší kandidátní triáž, ne ořez okna —
+     * stejně jako u překryvu Krkonoš a Jizerek v okolí Jizerky
+     * a Harrachova.
      *
      * Okno zahrne i okraje Bielska-Białej a Żywce. Že dotaz přinese
      * i městské hospody, vyřeší triáž — vzor okraje Liberce v okně
      * Ještědského hřbetu.
      */
-    bbox: { latMin: 49.25, lngMin: 18.0, latMax: 49.85, lngMax: 19.75 },
-    // 3D okno o kus užší z obou stran: západní konec (Vsetínské vrchy)
-    // a východní (Orawa pod Policí) už klesají do podhůří a kotlin.
-    bbox3d: { latMin: 49.3, lngMin: 18.1, latMax: 49.78, lngMax: 19.65 },
+    bbox: { latMin: 49.3, lngMin: 18.05, latMax: 49.85, lngMax: 19.75 },
+    // 3D okno o kus užší z obou stran: východní konec (Orawa pod Policí)
+    // už klesá do kotlin.
+    bbox3d: { latMin: 49.34, lngMin: 18.1, latMax: 49.78, lngMax: 19.65 },
     poznamka:
-      'pátá oblast (pověření Michala 8. 8. 2026) — Západní Beskydy vcelku přes tři země; rozsah vůči Javorníkům a Vsetínským vrchům čeká na rozhodnutí',
+      'pátá oblast (pověření Michala 8. 8. 2026) — Beskydy v užším smyslu přes tři země; Javorníky a Vsetínské vrchy mají od 8. 8. 2026 vlastní oblast',
     /**
-     * Katalogové názvy jednotek, které okno kryje. Je jich devět, protože
+     * Katalogové názvy jednotek, které okno kryje. Je jich sedm, protože
      * „Beskydy" nejsou v katalogu jedno pohoří, ale skupina celků — a bez
-     * všech devíti by dohledávka podle jmen (DATA-01, druhý dotaz) minula
-     * právě ty objekty, které OSM tagovalo civilně.
+     * všech sedmi by dohledávka podle jmen (DATA-01, druhý dotaz) minula
+     * právě ty objekty, které OSM tagovalo civilně. Javorníky a Vsetínské
+     * vrchy tu vědomě NEJSOU, viz rozhodnutí výš.
      */
     katalogPohori: [
       'Moravskoslezské Beskydy',
@@ -212,9 +218,48 @@ export const OBLASTI: OblastKonfig[] = [
       'Jablunkovské mezihoří',
       'Kysucké Beskydy',
       'Oravské Beskydy',
-      'Javorníky',
-      'Vsetínské vrchy',
     ],
+  },
+  {
+    slug: 'javorniky-vsetinske-vrchy',
+    nazev: 'Javorníky a Vsetínské vrchy',
+    // Sedmá oblast — ROZHODNUTÍ MICHALA 8. 8. 2026, doslova: „javorniky
+    // a vsetinske vrchy bych udelal jako jednu samostatnou oblast
+    // (jestedsky hrbet jsme taky nepripojili k jizerkam)". Otázka na to
+    // padla v deníku téhož dne: Javorníky patří geomorfologicky do
+    // Slovensko-moravských Karpat, ne do Moravskoslezských Beskyd, a to je
+    // týž důvod, proč Ještěd nespadl pod Jizerky.
+    zeme: ['CZ', 'SK'],
+    /**
+     * Okno kryje hraniční hřeben Javorníků i Vsetínské vrchy, tedy pás
+     * mezi Vsetínem a Makovem. Kotvy jsou doložené souřadnice (prameny
+     * v data/oblasti/javorniky-vsetinske-vrchy.yaml):
+     *   západ  17.95 — Vsetín (49.339 / 17.996) pod hřebenem Vsetínských
+     *                  vrchů; město je vevnitř schválně, viz níž
+     *   východ 18.50 — Kmínek (49.385 / 18.448) a Makov (49.356 / 18.434)
+     *                  na slovenské straně Javorníků
+     *   sever  49.47 — Vysoká (49.404 / 18.362), nejvyšší vrchol
+     *                  Vsetínských vrchů, a Soláň (49.394 / 18.250);
+     *                  hrana leží v dolině Rožnovské Bečvy
+     *   jih    49.15 — Střelná (49.177 / 18.098) na jihozápadním konci
+     *                  javornického hřebene
+     *
+     * DVĚ VĚDOMÁ ROZHODNUTÍ. (1) VSETÍN JE VEVNITŘ. Hřeben Vsetínských
+     * vrchů se zvedá přímo nad městem a chata Vsacký Cáb i Kusalíno se
+     * z něj chodí; bez městského okraje by okno minulo výchozí body.
+     * Že dotaz přinese i městské hospody, vyřeší triáž — vzor okraje
+     * Liberce v okně Ještědského hřbetu. (2) OKNO SE PŘEKRÝVÁ
+     * S BESKYDSKÝM v pásu 49.30–49.47 / 18.05–18.50, kde obě pohoří
+     * hraničí. Je to úmysl: ostrý řez na hranici dvou pohoří tiše vyřízne
+     * objekty, které leží na sedle mezi nimi. Duplicity řeší triáž.
+     */
+    bbox: { latMin: 49.15, lngMin: 17.95, latMax: 49.47, lngMax: 18.5 },
+    // 3D okno bez městského okraje Vsetína a bez jihozápadního konce
+    // hřebene u Střelné, kde už terén klesá k Vlárskému průsmyku.
+    bbox3d: { latMin: 49.18, lngMin: 18.0, latMax: 49.45, lngMax: 18.46 },
+    poznamka:
+      'sedmá oblast (rozhodnutí Michala 8. 8. 2026) — Javorníky a Vsetínské vrchy jako jedna samostatná oblast, ne pod Beskydy; vzor Ještědského hřbetu vůči Jizerkám',
+    katalogPohori: ['Javorníky', 'Vsetínské vrchy'],
   },
   {
     slug: 'jeseniky',

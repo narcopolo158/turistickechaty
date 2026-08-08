@@ -1,0 +1,140 @@
+# Oblast Javorníky a Vsetínské vrchy — sedmá oblast průvodce.
+#
+# ROZHODNUTÍ MICHALA 8. 8. 2026, doslova: „javorniky a vsetinske vrchy bych
+# udelal jako jednu samostatnou oblast (jestedsky hrbet jsme taky
+# nepripojili k jizerkam)." Otázka na to padla v deníku téhož dne, když se
+# zakládaly Beskydy: katalog drží v obou jednotkách sedm objektů
+# s doloženým stravováním, ale geomorfologicky to nejsou Moravskoslezské
+# Beskydy. Michalova analogie je přesná — Ještědský hřbet dostal 30. 7. 2026
+# vlastní oblast ze stejného důvodu, ne aby se přilepil k Jizerkám.
+#
+# ČÍM SE ODLIŠUJÍ OD BESKYD: Javorníky patří do geomorfologické oblasti
+# Slovensko-moravské Karpaty (Kudy z nudy), tedy do jiné nadřazené jednotky
+# než Moravskoslezské Beskydy. A rozdíl je vidět i v krajině: AOPK sama
+# v popisu CHKO Beskydy odlišuje „na jihu nižší a krajinářsky pestřejší část
+# Vsetínských vrchů a Javorníků, etnograficky zvanou Valašsko" od severní
+# beskydské části. Nižší, lučnatější, pasekářské — a s vlastní chatařskou
+# historií.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Javorníky a Vsetínské vrchy
+slug: javorniky-vsetinske-vrchy
+typ: pohori
+zeme: cz
+
+# Skloňované tvary názvu do vět na webu. Dvojité jméno se skloňuje celé —
+# oba členy zvlášť; algoritmus by to neudělal.
+sklonovani:
+  druhy: Javorníků a Vsetínských vrchů
+  sesty: Javorníkách a Vsetínských vrších
+
+charakteristika: >-
+  Dvě sousední pohoří valašského pomezí, která průvodce vede jako jednu
+  oblast: hraniční hřeben Javorníků na česko-slovenské hranici a Vsetínské
+  vrchy nad Vsetínem. Proti Moravskoslezským Beskydám na severu jsou nižší
+  a otevřenější — hřebeny tu nejsou zalesněné, ale lučnaté, protože je
+  odlesnili valašští pastevci, a po stráních jsou rozeseté paseky a samoty,
+  které šplhají až do nejvyšších poloh. Chatařská historie tu má vlastní
+  jméno: chatu na Vsackém Cábu nechal roku 1928 postavit vsetínský lékárník
+  Karel Puszkailer, a Soláni se pro malíře, kteří tu žili, říká Vrch umělců.
+overeniCharakteristika:
+  source: >-
+    Zařazení Javorníků: Kudy z nudy (čteno 8. 8. 2026) — „geomorfologické
+    oblasti Slovensko-moravské Karpaty"; týž pramen vede hřeben jako „asi
+    30 km dlouhý, málo členitý" s krajinou „roztroušenými samotami
+    a osadami, které šplhají až do nejvyšších poloh". Odlišení od
+    beskydské části: AOPK, stránka k 50 letům CHKO Beskydy (čteno
+    8. 8. 2026) — „na jihu nižší a krajinářsky pestřejší část Vsetínských
+    vrchů a Javorníků, etnograficky zvanou Valašsko". Lučnaté hřebeny:
+    vyletnik.cz (čteno 8. 8. 2026) — „S postupující kolonizací horských
+    pastevců – Valachů – došlo k mýcení lesů na hřebenech hor, čímž
+    vznikaly často rozsáhlé bezlesé enklávy, na kterých se vytvořily louky
+    sloužící k pastvě tzv. paseky." Vsacký Cáb: Valašský deník (čteno
+    8. 8. 2026) — „Chatu Vsacký Cáb nechal postavit a jako útulnu ji
+    otevřel 29. června 1928 Karel Puszkailer." Soláň: Český rozhlas (čteno
+    8. 8. 2026) — „Vrch umělců se mu říká proto, že zde žili významní
+    tvůrci - malíři Alois Schneiderka, Karel Hofman, Jan Kobzáň a František
+    Podešva." SLOVO „NIŽŠÍ" je doložené citací AOPK; srovnání „otevřenější"
+    je NAŠE shrnutí popisu lučnatých hřebenů, ne citát.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Velký Javorník
+  vyska: 1071
+  source: >-
+    javorniky.cz (čteno 8. 8. 2026): „Velký Javorník s nadmořskou výškou
+    1 071 m. n. m. je nejvyšším vrcholem Javorníků". ROZPOR O METR:
+    PeakVisor uvádí 1072 m se souřadnicemi 49.318864 / 18.37337. Zapsáno
+    1071 dle konvence z 27. 7. 2026 (při rozporu nižší číslo, rozpor
+    přiznat). POZOR NA TŘI ZÁMĚNY, které tu hrozí: (1) vrchol Velkého
+    Javorníku leží na SLOVENSKÉ straně hranice — nejvyšší horou moravské
+    části Javorníků je dle Kudy z nudy Malý Javorník (1019 m); (2)
+    v Moravskoslezských Beskydech u Frenštátu je JINÝ Velký Javorník
+    (918 m, nejvyšší bod Veřovických vrchů dle beskydyportal.cz) — ten do
+    téhle oblasti nepatří vůbec; (3) nejvyšší vrchol Vsetínských vrchů je
+    Vysoká (1024 m dle turistika.cz i treking.cz), NE Ptáčnice, jak by se
+    dalo čekat.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na rozhodnutí Michala („javorniky a vsetinske vrchy
+  bych udelal jako jednu samostatnou oblast"). Konfigurace okna je
+  v scripts/oblasti.ts (slug javorniky-vsetinske-vrchy, zeme CZ+SK,
+  katalogové názvy Javorníky a Vsetínské vrchy), kotvy okna a jejich
+  prameny v komentáři tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `javorniky-vsetinske-vrchy`. Ze
+  sandboxu na Overpass nedosáhneme (HTTP 000 přes proxy, ověřeno
+  8. 8. 2026). Seznam všech čekajících kliků drží
+  docs/KLIKY-PRO-MICHALA.md.
+
+  DVA KATALOGOVÉ NÁZVY SE PŘESUNULY Z BESKYD sem, protože oblast vznikla
+  rozdělením. Beskydské okno se tím zúžilo na jihu z 49.25 na 49.30 a na
+  západě z 18.00 na 18.05; PŘEKRYV OBOU OKEN v pásu 49.30–49.47 /
+  18.05–18.50 ale zůstal úmyslně, protože právě tam se obě pohoří
+  potkávají (dolina Rožnovské Bečvy, Soláň). Ostrý řez na hranici dvou
+  pohoří tiše vyřízne objekty na sedle mezi nimi — vzor překryvu Krkonoš
+  a Jizerek v okolí Jizerky a Harrachova. Duplicity řeší triáž, ne okno.
+
+  CO UŽ VÍME BEZ OVERPASSU — externí katalog drží v obou jednotkách sedm
+  objektů s doloženým stravováním: **Javorníky 4** — Horský hotel Kohútka
+  (913 m dle mistopisy.cz, 960 m dle turistika.cz — rozpor, na sedle
+  česko-slovenské hranice), Horský hotel Portáš (930 m dle katalogu,
+  960 m dle treking.cz; postaven 1932 pod vrcholem Stolečný), Horská
+  chata Kmínek (SK, 872 m) a Chata Čerenka (SK, 948 m). **Vsetínské
+  vrchy 3** — Chata Vsacký Cáb (824 m dle katalogu; prameny dávají čtyři
+  různá čísla, viz níž), Horský hotel Čarták na Soláni (860 m) a Chata
+  Kusalíno (650 m, souřadnice 49.3332 / 18.0610 dle kct.cz).
+
+  VSACKÝ CÁB — PAST NA VÝŠKU I NA SOUŘADNICE, vyřešit až při povyšování.
+  Prameny dávají čtyři různé hodnoty pro tři různé body: rozcestí u chaty
+  790 m (49.372 / 18.095), budova chaty 842 m (49.375 / 18.096), treking.cz
+  820 m bez souřadnic a vrchol Cábu 841 m jako bod odlišný od chaty. Do
+  profilu půjde výška BUDOVY s pramenem, který ji jako budovu označuje —
+  ne nejnižší číslo mechanicky, protože tady rozdíl nevzniká rozporem
+  pramenů, ale tím, že měří různá místa. Konvence „nižší číslo při rozporu"
+  se na tenhle případ nevztahuje a je dobré to vědět dopředu.
+
+  HISTORIE, KTERÁ TU JE A JE DOLOŽENÁ — nejcennější věc oblasti. Chatu
+  Vsacký Cáb otevřel jako útulnu 29. června 1928 Karel Puszkailer,
+  vsetínský lékárník; základní kámen byl položen roku 1927 (Valašský deník
+  a zlin.cz, čteno 8. 8. 2026 — druhý pramen mluví o devíti měsících mezi
+  kamenem a otevřením, první o roce; rozpor přiznat, ne srovnávat).
+  Hotel Portáš byl postaven roku 1932 a jeho pozdější majitel Bittner v něm
+  zřídil poštovnu. Spolek, který by tu stavěl chaty jako Pohorská jednota
+  Radhošť v Beskydech, se rešerší 8. 8. 2026 NENAŠEL — nezapisuje se
+  tvrzení, že žádný nebyl, jen že ho neznáme.
+
+  OCHRANA: česká část obou pohoří patří do CHKO Beskydy (výnos
+  ministerstva kultury z 5. 3. 1973, účinný 30. 3. 1973), slovenská část
+  Javorníků do CHKO Kysuce (Kudy z nudy, čteno 8. 8. 2026). Hřebenová
+  trasa Javorníků měří dle turistika.cz asi 27 km a vede přes Portáš, Malý
+  Javorník (1019 m) a Stratenec (1055 m) na Velký Javorník.
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.

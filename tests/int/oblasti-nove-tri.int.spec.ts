@@ -1,6 +1,8 @@
 /**
- * Beskydy a Jeseníky — pátá a šestá oblast (pověření Michala 8. 8. 2026:
- * „můžeš se pustit do beskyd a jeseníku").
+ * Beskydy, Jeseníky a Javorníky s Vsetínskými vrchy — pátá, šestá a sedmá
+ * oblast (pověření Michala 8. 8. 2026: „můžeš se pustit do beskyd
+ * a jeseníku"; sedmá pak jeho rozhodnutí téhož dne: „javorniky a vsetinske
+ * vrchy bych udelal jako jednu samostatnou oblast").
  *
  * Testy hlídají čtyři věci, které se u založení oblasti dají tiše zkazit —
  * tiše proto, že se neprojeví chybou, ale MENŠÍM VÝSLEDKEM:
@@ -10,13 +12,13 @@
  *   2. `katalogPohori` sedí na SKUTEČNÁ jména v externím katalogu. Překlep
  *      by vypnul dohledávku podle jmen, tedy druhou záchrannou síť DATA-01,
  *      a to úplně beze slova.
- *   3. Slovensko je u Beskyd zapojené celou cestou — od dotazu
- *      (`zemeDotazu`) po URL (`ZEME_SLUG`). Kdyby chybělo v jednom článku,
- *      slovenská část oblasti by z pipeline vypadla bez hlášky. Totéž
- *      Polsko u Jeseníků.
- *   4. Rozhodnutí o rozsahu, která ještě čekají na Michala, zůstávají
- *      v poznámkách zapsaná. Kdyby při úpravě vypadla, vypadal by rozsah
- *      hotově — a to je horší než otevřená otázka.
+ *   3. Slovensko je zapojené celou cestou — od dotazu (`zemeDotazu`) po URL
+ *      (`ZEME_SLUG`). Kdyby chybělo v jednom článku, slovenská část oblasti
+ *      by z pipeline vypadla bez hlášky. Totéž Polsko u Jeseníků.
+ *   4. Rozhodnutí o rozsahu zůstávají v datech zapsaná — jak ta hotová
+ *      (rozdělení Beskyd a Javorníků), tak ta otevřená (Góry Bystrzyckie).
+ *      Hotové proto, aby je nikdo nevrátil naslepo; otevřené proto, že
+ *      rozsah, který vypadá hotově, je horší než přiznaná otázka.
  */
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -67,8 +69,22 @@ const KOTVY: Record<string, { nazev: string; lat: number; lng: number }[]> = {
     { nazev: 'Wielka Racza / Veľká Rača', lat: 49.413, lng: 18.968 },
     { nazev: 'Gírová', lat: 49.532, lng: 18.8 },
     { nazev: 'Hala Krupowa (východní kotva)', lat: 49.625, lng: 19.653 },
-    { nazev: 'Vsacký Cáb (západní kotva)', lat: 49.386, lng: 18.088 },
-    { nazev: 'Kohútka (jižní kotva)', lat: 49.293, lng: 18.229 },
+  ],
+  // Vsacký Cáb a Kohútka z tohohle seznamu 8. 8. 2026 ODEŠLY do vlastní
+  // oblasti — Michalovo rozhodnutí. Kdyby se sem někdy vrátily, vrátí se
+  // s nimi i jižní a západní hrana beskydského okna.
+  'javorniky-vsetinske-vrchy': [
+    { nazev: 'Velký Javorník (SK strana hřebene)', lat: 49.319, lng: 18.373 },
+    { nazev: 'Kohútka', lat: 49.295, lng: 18.23 },
+    { nazev: 'Portáš', lat: 49.2945, lng: 18.2328 },
+    { nazev: 'Vysoká (severní kotva, nejvyšší vrchol Vsetínských vrchů)', lat: 49.404, lng: 18.362 },
+    { nazev: 'Soláň', lat: 49.394, lng: 18.25 },
+    { nazev: 'Vsacký Cáb', lat: 49.375, lng: 18.096 },
+    { nazev: 'Chata Kusalíno', lat: 49.3332, lng: 18.061 },
+    { nazev: 'Vsetín (západní kotva)', lat: 49.3386, lng: 17.9961 },
+    { nazev: 'Kmínek (východní kotva, SK)', lat: 49.385, lng: 18.448 },
+    { nazev: 'Makov (SK)', lat: 49.3564, lng: 18.4336 },
+    { nazev: 'Střelná (jižní kotva)', lat: 49.1772, lng: 18.0978 },
   ],
   jeseniky: [
     { nazev: 'Praděd', lat: 50.083, lng: 17.233 },
@@ -84,6 +100,7 @@ const KOTVY: Record<string, { nazev: string; lat: number; lng: number }[]> = {
 describe.each([
   ['beskydy', 'Beskydy'],
   ['jeseniky', 'Jeseníky'],
+  ['javorniky-vsetinske-vrchy', 'Javorníky a Vsetínské vrchy'],
 ])('oblast %s', (slug, nazev) => {
   const konfig = oblastDleSlugu(slug)
   const yaml = nactiYaml(slug)
@@ -158,16 +175,55 @@ describe.each([
   })
 })
 
-describe('rozhodnutí o rozsahu, která ještě čekají na Michala', () => {
-  it('Beskydy: okno bere Javorníky a Vsetínské vrchy, ale poznámka to vede jako otevřenou otázku', () => {
-    const konfig = oblastDleSlugu('beskydy')
-    // Objekty s doloženým stravováním v obou jednotkách by užší okno tiše
-    // vyřízlo — proto jsou v katalogPohori.
-    expect(konfig.katalogPohori).toContain('Javorníky')
-    expect(konfig.katalogPohori).toContain('Vsetínské vrchy')
-    const p = String(nactiYaml('beskydy').interniPoznamky)
-    expect(p).toMatch(/Javorníky/)
-    expect(p).toMatch(/NEROZHODNUTO|rozhodnutí o rozsahu|nerozhodne/i)
+describe('rozhodnutí o rozsahu — hotová i otevřená', () => {
+  /**
+   * ROZHODNUTO 8. 8. 2026 (Michal: „javorniky a vsetinske vrchy bych udelal
+   * jako jednu samostatnou oblast"). Ráno téhož dne to byla otevřená otázka
+   * a Javorníky se Vsetínskými vrchy byly v beskydském okně; test to tehdy
+   * hlídal opačně. Dnes hlídá, že se rozdělení nevrátí zpátky omylem.
+   */
+  it('Javorníky a Vsetínské vrchy se z Beskyd přesunuly do vlastní oblasti', () => {
+    const beskydy = oblastDleSlugu('beskydy')
+    expect(beskydy.katalogPohori).not.toContain('Javorníky')
+    expect(beskydy.katalogPohori).not.toContain('Vsetínské vrchy')
+    const nova = oblastDleSlugu('javorniky-vsetinske-vrchy')
+    expect(nova.katalogPohori).toEqual(['Javorníky', 'Vsetínské vrchy'])
+    // Poznámka Beskyd musí rozhodnutí držet, aby ho nikdo nevrátil naslepo.
+    expect(String(nactiYaml('beskydy').interniPoznamky)).toMatch(/samostatnou oblast/)
+  })
+
+  it('okna Beskyd a nové oblasti se v hraničním pásu ZÁMĚRNĚ překrývají', () => {
+    // Ostrý řez na hranici dvou pohoří tiše vyřízne objekty na sedle mezi
+    // nimi — vzor překryvu Krkonoš a Jizerek u Jizerky a Harrachova. Kdyby
+    // někdo okna „uklidil" tak, aby na sebe jen navazovala, tenhle test
+    // spadne a vysvětlí proč.
+    const b = oblastDleSlugu('beskydy').bbox
+    const j = oblastDleSlugu('javorniky-vsetinske-vrchy').bbox
+    const prekryvLat = Math.min(b.latMax, j.latMax) - Math.max(b.latMin, j.latMin)
+    const prekryvLng = Math.min(b.lngMax, j.lngMax) - Math.max(b.lngMin, j.lngMin)
+    expect(prekryvLat, 'okna se v šířce nepřekrývají').toBeGreaterThan(0)
+    expect(prekryvLng, 'okna se v délce nepřekrývají').toBeGreaterThan(0)
+  })
+
+  it('nová oblast je přeshraniční se Slovenskem a Vsetín je vevnitř okna', () => {
+    const konfig = oblastDleSlugu('javorniky-vsetinske-vrchy')
+    expect(zemeDotazu(konfig).map((z) => z.iso)).toEqual(expect.arrayContaining(['CZ', 'SK']))
+    // Město je v okně schválně: hřeben se zvedá přímo nad ním a chodí se
+    // odtud na Vsacký Cáb i Kusalíno (vzor okraje Liberce u Ještědu).
+    const b = konfig.bbox
+    expect(49.3386 >= b.latMin && 49.3386 <= b.latMax).toBe(true)
+    expect(17.9961 >= b.lngMin && 17.9961 <= b.lngMax).toBe(true)
+  })
+
+  it('nová oblast varuje před třemi záměnami, které u ní hrozí', () => {
+    // Dva Velké Javorníky (1071 m na hranici × 918 m u Frenštátu), Malý
+    // Javorník jako nejvyšší bod ČESKÉ části a Vysoká místo Ptáčnice jako
+    // nejvyšší vrchol Vsetínských vrchů. Všechno jsou to pasti, do kterých
+    // se dá spadnout při povyšování — musí zůstat zapsané.
+    const src = String(nactiYaml('javorniky-vsetinske-vrchy').nejvyssiHora?.source)
+    expect(src).toMatch(/Frenštát/)
+    expect(src).toMatch(/Malý Javorník/)
+    expect(src).toMatch(/Vysoká/)
   })
 
   it('Beskydy jsou přeshraniční přes tři země — Slovensko musí být v dotazu', () => {
