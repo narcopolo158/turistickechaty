@@ -1,0 +1,489 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-15T15:33:45Z",
+    "timestamp_areas_base": "2026-06-15T05:10:14Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 3637367871,
+  "lat": 49.3674664,
+  "lon": 18.4575934,
+  "tags": {
+    "name": "Chata Makovica",
+    "tourism": "apartment",
+    "website": "https://www.chatamakovica.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 8299548574,
+  "lat": 49.2328877,
+  "lon": 18.2804882,
+  "tags": {
+    "fee": "no",
+    "image": "https://img.hiking.dennikn.sk/article/201906/large_x/chata_zigovka.jpg",
+    "name": "Zigovka",
+    "operator": "PZ Poľana Dolná Mariková",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/5685/chatka_zigovka.html"
+  }
+},
+{
+  "type": "node",
+  "id": 9188600013,
+  "lat": 49.3282459,
+  "lon": 18.3780818,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Horský hotel Hájenka",
+    "opening_hours": "Mo-Th 10:00-22:00; Fr,Sa 10:00-23:00; Su 10:00-20:00",
+    "operator": "HÁJENKA, spol. s r.o.",
+    "outdoor_seating": "yes",
+    "source": "survey",
+    "website": "https://hajenkahotel.sk/sk/sluzby/restauracia/"
+  }
+},
+{
+  "type": "node",
+  "id": 9188635251,
+  "lat": 49.3278041,
+  "lon": 18.3747096,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "pizza;regional",
+    "name": "Chata Bačkárka",
+    "outdoor_seating": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12622955923,
+  "lat": 49.1563687,
+  "lon": 18.4307731,
+  "tags": {
+    "name": "Chata pod Klape",
+    "tourism": "chalet",
+    "url": "https://www.megaubytovanie.sk/chata-pod-klape"
+  }
+},
+{
+  "type": "node",
+  "id": 12630532950,
+  "lat": 49.1860394,
+  "lon": 18.2530674,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 13800354217,
+  "lat": 49.2952626,
+  "lon": 18.2231535,
+  "tags": {
+    "name": "KOHUTKA-CHATA U KRÍŽA",
+    "tourism": "guest_house",
+    "website": "https://www.e-chalupy.cz/chata-novy-hrozenkov-kohutka-pronajmuti-o6710"
+  }
+},
+{
+  "type": "way",
+  "id": 73054308,
+  "center": {
+    "lat": 49.2800589,
+    "lon": 18.2140015
+  },
+  "nodes": [
+    867087669,
+    867087656,
+    12361989508,
+    12361989507,
+    867087661,
+    867087667,
+    12361989515,
+    12361989516,
+    867087669
+  ],
+  "tags": {
+    "addr:city": "Lazy pod Makytou",
+    "addr:conscriptionnumber": "666",
+    "addr:country": "SK",
+    "addr:housenumber": "666",
+    "addr:place": "Lazy pod Makytou",
+    "addr:postcode": "02055",
+    "building": "yes",
+    "name": "Chata Čertov",
+    "ref:minvskaddress": "23146112",
+    "source": "ÚGKK SR AKO",
+    "source:addr": "minvskaddress 2024-11",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 73055138,
+  "center": {
+    "lat": 49.2793285,
+    "lon": 18.2228349
+  },
+  "nodes": [
+    867095331,
+    867095333,
+    867095335,
+    867095337,
+    867095339,
+    867095342,
+    867095331
+  ],
+  "tags": {
+    "addr:city": "Lazy pod Makytou",
+    "addr:conscriptionnumber": "846",
+    "addr:country": "SK",
+    "addr:housenumber": "846",
+    "addr:place": "Lazy pod Makytou",
+    "addr:postcode": "02055",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Chata Alpina",
+    "ref:minvskaddress": "7100729493",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-11",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 73218589,
+  "center": {
+    "lat": 49.2173690,
+    "lon": 18.1638613
+  },
+  "nodes": [
+    868536599,
+    868536603,
+    868536605,
+    868536607,
+    868536599
+  ],
+  "tags": {
+    "addr:city": "Lysá pod Makytou",
+    "addr:conscriptionnumber": "909",
+    "addr:country": "SK",
+    "addr:housenumber": "909",
+    "addr:place": "Dešná",
+    "addr:postcode": "02054",
+    "building": "yes",
+    "name": "Chata Bartek - Dolná chata",
+    "ref:minvskaddress": "10760299",
+    "source:addr": "minvskaddress 2024-11",
+    "tourism": "hostel",
+    "website": "https://www.chatabartek.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 73219905,
+  "center": {
+    "lat": 49.2149275,
+    "lon": 18.1770510
+  },
+  "nodes": [
+    868542522,
+    868542525,
+    868542527,
+    868542530,
+    868542522
+  ],
+  "tags": {
+    "addr:city": "Lysá pod Makytou",
+    "addr:conscriptionnumber": "779",
+    "addr:country": "SK",
+    "addr:housenumber": "779",
+    "addr:place": "Dešná",
+    "addr:postcode": "02054",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Chata Bartek - Horná chata",
+    "ref:minvskaddress": "23018743",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-11",
+    "tourism": "hostel",
+    "website": "https://www.chatabartek.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 79917663,
+  "center": {
+    "lat": 49.3118864,
+    "lon": 18.3956721
+  },
+  "nodes": [
+    932937048,
+    932937051,
+    932937053,
+    932937056,
+    932937048
+  ],
+  "tags": {
+    "addr:city": "Štiavnik",
+    "addr:conscriptionnumber": "1376",
+    "addr:country": "SK",
+    "addr:housenumber": "1376",
+    "addr:place": "Štiavnik",
+    "addr:postcode": "01355",
+    "building": "yes",
+    "building:colour": "brown",
+    "building:levels": "1",
+    "building:material": "wood",
+    "import": "budovy201004drev",
+    "name": "Chata Bariny",
+    "operator": "Lesné spoločenstvo Štiavnik",
+    "ref:minvskaddress": "10715650",
+    "roof:colour": "teal",
+    "roof:levels": "1",
+    "roof:material": "metal",
+    "roof:shape": "gabled",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "website": "https://www.lesspol.sk/chata-bariny"
+  }
+},
+{
+  "type": "way",
+  "id": 180630450,
+  "center": {
+    "lat": 49.3950895,
+    "lon": 18.4501261
+  },
+  "nodes": [
+    1910699510,
+    3646703351,
+    1910699512,
+    1910699518,
+    1910699511,
+    3646704283,
+    1910699510
+  ],
+  "tags": {
+    "beds": "36",
+    "building": "yes",
+    "ele": "872",
+    "email": "info@chata-kminek.sk",
+    "image": "https://img.hiking.dennikn.sk/article/201612/large_x/chata_kminek.jpg",
+    "name": "Chata Kmínek",
+    "phone": "+421 905 815 190;+420 606 568 201",
+    "source": "kapor2",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/4493/kminek.html",
+    "website": "https://www.chata-kminek.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 217520586,
+  "center": {
+    "lat": 49.3277937,
+    "lon": 18.3745294
+  },
+  "nodes": [
+    2268025232,
+    2268025234,
+    2268025231,
+    2268025230,
+    2268025224,
+    2268025222,
+    2268025219,
+    2268025218,
+    2268025223,
+    2268025235,
+    2268025239,
+    2268025232
+  ],
+  "tags": {
+    "addr:city": "Makov",
+    "addr:conscriptionnumber": "10294",
+    "addr:country": "SK",
+    "addr:housenumber": "10294",
+    "addr:place": "Kopanice",
+    "building": "yes",
+    "name": "Chata Bačkárka",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "hotel",
+    "website": "https://www.backarka.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 217520677,
+  "center": {
+    "lat": 49.3292604,
+    "lon": 18.3792544
+  },
+  "nodes": [
+    2268025387,
+    2268025418,
+    2268025427,
+    2268025429,
+    2268025438,
+    2268025420,
+    2268025387
+  ],
+  "tags": {
+    "addr:city": "Makov",
+    "addr:conscriptionnumber": "283",
+    "addr:country": "SK",
+    "addr:housenumber": "283",
+    "addr:place": "Kopanice",
+    "building": "yes",
+    "building:levels": "2",
+    "building:material": "wood",
+    "contact:email": "info@kasarna.com",
+    "contact:phone": "+420 724 206 854",
+    "contact:website": "http://www.kasarna.com",
+    "name": "Turistická chata LKJ Zlín",
+    "operator": "Lyžiarsky klub Javorník, s.r.o.",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "source": "kapor2",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 512865214,
+  "center": {
+    "lat": 49.2177880,
+    "lon": 18.1637923
+  },
+  "nodes": [
+    5014372510,
+    5014372509,
+    5014372508,
+    5014372507,
+    5014372510
+  ],
+  "tags": {
+    "addr:city": "Lysá pod Makytou",
+    "addr:conscriptionnumber": "950",
+    "addr:country": "SK",
+    "addr:housenumber": "950",
+    "addr:place": "Dešná",
+    "addr:postcode": "02054",
+    "building": "yes",
+    "name": "Chata Luna",
+    "ref:minvskaddress": "10762048",
+    "source:addr": "minvskaddress 2024-11",
+    "tourism": "hostel",
+    "website": "https://www.chataluna.info/"
+  }
+},
+{
+  "type": "way",
+  "id": 858988753,
+  "center": {
+    "lat": 49.2075958,
+    "lon": 18.2068395
+  },
+  "nodes": [
+    8007268498,
+    8007268497,
+    8007268496,
+    8007268495,
+    8007268498
+  ],
+  "tags": {
+    "addr:city": "Lazy pod Makytou",
+    "addr:conscriptionnumber": "185",
+    "addr:country": "SK",
+    "addr:housenumber": "185",
+    "addr:place": "Dubková",
+    "addr:postcode": "02055",
+    "name": "Chata Nikola",
+    "ref:minvskaddress": "23042822",
+    "source": "#ogd2020",
+    "source:addr": "minvskaddress 2024-11",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "way",
+  "id": 897951223,
+  "center": {
+    "lat": 49.3283237,
+    "lon": 18.3783065
+  },
+  "nodes": [
+    2268025251,
+    2268025255,
+    2268025256,
+    2268025269,
+    7028700255,
+    7028700256,
+    2268025271,
+    2268025263,
+    2268025261,
+    2268025262,
+    2268025252,
+    2268025251
+  ],
+  "tags": {
+    "addr:city": "Makov",
+    "addr:conscriptionnumber": "1040",
+    "addr:country": "SK",
+    "addr:housenumber": "1040",
+    "addr:place": "Kopanice",
+    "beds": "58",
+    "building": "yes",
+    "email": "info@hajenkahotel.sk",
+    "name": "Horský hotel Hájenka",
+    "operator": "HÁJENKA, spol. s r.o.",
+    "phone": "+421 41 43 64 161",
+    "rooms": "14",
+    "source": "ZBGIS",
+    "source:conscriptionnumber": "kapor2",
+    "stars": "fence",
+    "tourism": "hotel",
+    "website": "https://hajenkahotel.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 962604055,
+  "center": {
+    "lat": 49.2941483,
+    "lon": 18.2228176
+  },
+  "nodes": [
+    8904342798,
+    8904342799,
+    8904342800,
+    8904342801,
+    8904342798
+  ],
+  "tags": {
+    "addr:city": "Lazy pod Makytou",
+    "addr:conscriptionnumber": "1131",
+    "addr:country": "SK",
+    "addr:housenumber": "1131",
+    "addr:place": "Lazy pod Makytou",
+    "addr:postcode": "02055",
+    "building": "yes",
+    "ref:minvskaddress": "7100857346",
+    "source:addr": "minvskaddress 2024-11",
+    "tourism": "chalet"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,31 @@
+# Chalupa Pod nebem — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-15)
+# Zdroj: https://www.openstreetmap.org/way/260761607 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/javorniky-vsetinske-vrchy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chalupa Pod nebem
+slug: chalupa-pod-nebem
+zeme: cz
+oblast: javorniky-vsetinske-vrchy
+lat: 49.4623109
+lng: 18.398116
+obec: Staré Hamry
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/260761607 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-15
+kontakty:
+  web: http://www.podnebem.8u.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/260761607 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-15
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-15) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
+  = útulna).

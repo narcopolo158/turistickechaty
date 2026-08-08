@@ -1,0 +1,184 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T14:40:21Z",
+    "timestamp_areas_base": "2026-08-07T03:28:41Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 692903996,
+  "lat": 49.3987524,
+  "lon": 18.3960397,
+  "tags": {
+    "height": "27",
+    "man_made": "tower",
+    "name": "Rozhledna Súkenická",
+    "tower:type": "observation",
+    "wikidata": "Q12058078",
+    "wikipedia": "cs:Súkenická"
+  }
+},
+{
+  "type": "node",
+  "id": 1759927786,
+  "lat": 49.4099694,
+  "lon": 18.0980149,
+  "tags": {
+    "height": "5",
+    "man_made": "tower",
+    "source": "survey;gps",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2863342536,
+  "lat": 49.1947884,
+  "lon": 18.1324127,
+  "tags": {
+    "fee": "no",
+    "height": "16",
+    "man_made": "tower",
+    "name": "Čubův kopec",
+    "opening_hours": "24/7",
+    "tower:type": "observation",
+    "wikidata": "Q11385387",
+    "wikipedia": "cs:Čubův kopec (rozhledna)"
+  }
+},
+{
+  "type": "node",
+  "id": 5064675402,
+  "lat": 49.3807083,
+  "lon": 18.3379626,
+  "tags": {
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Rozhledna Miloňová",
+    "name:cs": "Rozhledna Miloňová",
+    "start_date": "2012",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 8820610341,
+  "lat": 49.1827547,
+  "lon": 17.9604067,
+  "tags": {
+    "man_made": "tower",
+    "name": "ptačí pozorovatelna",
+    "source": "bing;survey",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 12905876797,
+  "lat": 49.1898550,
+  "lon": 17.9606273,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 196689974,
+  "center": {
+    "lat": 49.4623938,
+    "lon": 18.1587223
+  },
+  "nodes": [
+    2069881954,
+    5198747433,
+    5198747431,
+    5198747430,
+    5198747432,
+    2069881961,
+    5198747444,
+    5198747443,
+    5198747442,
+    5198747445,
+    2069881894,
+    5198747441,
+    5198747438,
+    5198747439,
+    5198747440,
+    2069881985,
+    5198747437,
+    5198747434,
+    5198747435,
+    5198747436,
+    2069881954
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "contact:website": "http://www.visitroznov.cz/jurkovicova-rozhledna",
+    "fee": "yes",
+    "height": "31.09",
+    "man_made": "tower",
+    "name": "Jurkovičova rozhledna",
+    "start_date": "2012-04-28",
+    "tower:type": "observation",
+    "wikidata": "Q12027263",
+    "wikimedia_commons": "Category:Jurkovičova rozhledna",
+    "wikipedia": "cs:Jurkovičova rozhledna"
+  }
+},
+{
+  "type": "way",
+  "id": 519385579,
+  "center": {
+    "lat": 49.3807098,
+    "lon": 18.3379618
+  },
+  "nodes": [
+    5064675726,
+    5064675725,
+    5064675722,
+    5064675724,
+    5064675723,
+    5064675721,
+    5064675417,
+    5064675726
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "24",
+    "man_made": "tower",
+    "name": "Miloňová",
+    "source": "cuzk:km;bing",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1093178931,
+  "center": {
+    "lat": 49.3699077,
+    "lon": 18.3114469
+  },
+  "nodes": [
+    10011665282,
+    10011665283,
+    10011665284,
+    10011665285,
+    10011665282
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

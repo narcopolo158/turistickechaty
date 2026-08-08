@@ -1,0 +1,32 @@
+# Horský hotel Kohútka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-13)
+# Zdroj: https://www.openstreetmap.org/node/9805551805 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/javorniky-vsetinske-vrchy/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Horský hotel Kohútka
+slug: horsky-hotel-kohutka
+zeme: cz
+oblast: javorniky-vsetinske-vrchy
+lat: 49.2951548
+lng: 18.2298647
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/9805551805 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-13
+kontakty:
+  telefon: +420 571 451 790
+  email: info@kohutka.cz
+  web: https://www.kohutka.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/9805551805 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-13
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-13) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
+  = útulna).

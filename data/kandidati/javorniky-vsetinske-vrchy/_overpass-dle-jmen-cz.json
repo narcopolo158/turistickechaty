@@ -1,0 +1,81 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-13T09:29:14Z",
+    "timestamp_areas_base": "2026-06-12T12:14:17Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 291203956,
+  "lat": 49.3895606,
+  "lon": 18.2428735,
+  "tags": {
+    "beds": "55",
+    "ele": "810",
+    "email": "recepce@solansedlo.cz",
+    "internet_access": "yes",
+    "name": "Horský hotel Čarták",
+    "phone": "+420 604 207 208",
+    "rooms": "20",
+    "tourism": "alpine_hut",
+    "website": "https://www.hotelcartak.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 3814562072,
+  "lat": 49.3894989,
+  "lon": 18.2429503,
+  "tags": {
+    "addr:city": "Hutisko-Solanec",
+    "addr:housenumber": "186",
+    "addr:postcode": "756 62",
+    "addr:street": "Solanec pod Soláňem",
+    "amenity": "restaurant",
+    "internet_access": "wlan",
+    "name": "Horský hotel Čarták",
+    "opening_hours": "09:00-20:00",
+    "outdoor_seating": "yes",
+    "phone": "+420 571 644 265",
+    "smoking": "no",
+    "website": "https://www.hotelcartak.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 9805551805,
+  "lat": 49.2951548,
+  "lon": 18.2298647,
+  "tags": {
+    "capacity": "63",
+    "email": "info@kohutka.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Horský hotel Kohútka",
+    "phone": "+420 571 451 790",
+    "ref:nap": "15253",
+    "rooms": "14",
+    "smoking": "outside",
+    "tourism": "hotel",
+    "website": "https://www.kohutka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 13701952401,
+  "lat": 49.3331885,
+  "lon": 18.0610048,
+  "tags": {
+    "check_date": "2026-04-02",
+    "name": "Kusalíno",
+    "tourism": "wilderness_hut",
+    "website": "https://chalupy.a-tom.cz/chalupa/30-kusalino"
+  }
+}
+
+  ]
+}
