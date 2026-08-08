@@ -1,7 +1,8 @@
 # Šumava — koše plošné triáže (krok 4b)
 
 Vygeneroval `npx tsx scripts/triaz-kandidatu.ts sumava --md` dne 8. 8. 2026
-(druhý běh téhož dne, po odpracování bavorského koše Berggasthof/Berghaus).
+(třetí běh téhož dne, po dokončení celého bavorského koše
+Berggasthof/Berghaus).
 **Přegenerovat po každém povýšení nebo vyřazení** — publikované, odložené
 i vyřazené kandidáty skript sám vynechává.
 
@@ -17,28 +18,30 @@ jméno přesto nese boudové slovo, jde kandidát do koše „k posouzení" jako
 rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshütte
 (oba Selbstversorger, vyřazeni 6. 8. s pramenem).
 
-## Postup triáže: koše 8. 8. 2026 ráno 110 · 35 · 160 → večer 80 · 36 · 173
+## Postup triáže: koše 8. 8. 2026 ráno 110 · 35 · 160 → 76 · 36 · 173
 
-**Ráno — dvě opravy skriptu a čtyři dopsaná rozhodnutí** (110 · 35 · 160 →
-89 · 36 · 173, kandidátů 305 → 298): `tourism=apartment` se začal číst jako
-tag pronájmu; české „chata / chalupa" je proti tagu pronájmu SLABÝ signál,
-u `apartment` ho tag přebíjí, u `chalet` ne (protipříklad Turnerova chata);
-vyřazení zapsaná s předponou oblasti byla skriptu neviditelná; čtyři
-rozhodnutí, která žila jen v deníku, jsou v rozhodovacích seznamech.
+**Ráno — dvě opravy skriptu a čtyři dopsaná rozhodnutí** (kandidátů
+305 → 298): `tourism=apartment` se začal číst jako tag pronájmu; české
+„chata / chalupa" je proti tagu pronájmu SLABÝ signál, u `apartment` ho tag
+přebíjí, u `chalet` ne (protipříklad Turnerova chata); vyřazení zapsaná
+s předponou oblasti byla skriptu neviditelná; čtyři rozhodnutí, která žila
+jen v deníku, jsou v rozhodovacích seznamech.
 
-**Odpoledne — odpracován celý bavorský koš „Berggasthof / Berghaus", čtrnáct
-kandidátů** (89 → 80 nadějných, kandidátů 298 → 289). Byla to největší
-homogenní skupina koše a klíč u ní vyšel devětkrát z deseti kladně:
+**Odpoledne — ODPRACOVÁN CELÝ BAVORSKÝ KOŠ „Berggasthof / Berghaus",
+čtrnáct kandidátů** (kandidátů 298 → 285, nadějných 89 → 76). Byla to
+největší homogenní skupina koše a klíč u ní vyšel devětkrát z desíti
+kladně:
 
-- **POVÝŠENO 9:** Berghaus Loderhart (spolková chata NaturFreunde,
-  „öffentliche Gaststätte" doslova), Berggasthof Lusen (Goldsteig, etapa 5),
-  Berggasthof Hochpröller (960 m pod Prölleren, Goldsteig přes vrchol),
-  Berggasthof Menauer / Grandsberg (Goldsteig + evropská E8),
-  Berghaus Hohenbogen (u horní stanice lanovky, 150 míst),
+- **POVÝŠENO 9** (korpus 137 → 146): Berghaus Loderhart (spolková chata
+  NaturFreunde, „öffentliche Gaststätte" doslova), Berggasthof Lusen
+  (Goldsteig, 5. etapa), Berggasthof Hochpröller (960 m pod vrcholem,
+  Goldsteig přes vrchol), Berggasthof Menauer / Grandsberg (Goldsteig
+  + evropská E8), Berghaus Hohenbogen (u horní stanice lanovky, 150 míst),
   Berggasthof Hinterwies (portál ho vede jako „Bewirtschaftet"),
-  Berggasthof Waldmann (pivní zahrada s Brotzeit), Berggasthof Hinhart
-  (dům z roku 1700), Berggasthof Grobauer (rodina od 1910, hraniční hotel
-  se zařazuje s poctivým označením — vzor Špindlerovky).
+  Berggasthof Hinhart (dům z roku 1700 — nejstarší doložený rok stavby
+  bavorské části fondu), Berggasthof Waldmann (pivní zahrada s Brotzeit),
+  Berggasthof Grobauer (rodina od doby okolo 1910; hraniční hotel, typ
+  `horsky-hotel` — vzor Špindlerovky).
 - **VYŘAZENO 1:** Berggasthof Geiß — vlastní web provozovatele dokládá, že
   hostinský provoz ukončil („den Gasthofbetrieb … eingestellt"), zůstal
   penzion pro ubytované.
@@ -48,25 +51,33 @@ homogenní skupina koše a klíč u ní vyšel devětkrát z deseti kladně:
   Berggasthof Hochstein (občerstvení pro veřejnost nedoloženo, kapacita
   6 × 28 pokojů).
 
-**Poučení pro zbytek koše:** u bavorských hostinců je nejspolehlivější druhý
-pramen regionální turistický portál (bayerischer-wald.de,
-ostbayern-tourismus.de, arberland-bayerischer-wald.de, goldsteig-wandern.de,
-weby obcí) — vlastní weby domů jsou ze sandboxu často za schvalovacím gatem.
-Výšku DOMU portály uvádějí zřídka; skoro vždy jde o výšku hory nebo obce
-a nesmí se dovozovat. Rozvrhy se rozcházejí tak často, že „žádná otvírací
-doba" je u téhle skupiny běžný a správný výsledek.
+### Co se z té dávky naučit pro zbytek koše
 
-### NADĚJNÉ — vzít v triáži nejdřív (80)
+1. **Druhý pramen u bavorských domů = regionální turistický portál.**
+   bayerischer-wald.de, ostbayern-tourismus.de, arberland-bayerischer-wald.de,
+   goldsteig-wandern.de, weby obcí. Vlastní weby domů jsou ze sandboxu
+   často za schvalovacím gatem (loderhart.de, hochstein, hotelderbaeume).
+2. **Klíčová německá slova, která rozhodují klíč zařazení:**
+   `bewirtschaftet`, `öffentliche Gaststätte`, `einkehren`, `Brotzeit`,
+   `Ruhetag` → občerstvení pro veřejnost. Naopak `Selbstversorger`,
+   `nur nach Buchung`, `Betrieb eingestellt`, `nur für Hausgäste` → klíč
+   nesplňuje.
+3. **Rozvrh se zavíracím dnem je sám dokladem veřejné hospody** — jídelna
+   pro nocující zavírací dny nemá. Použito u Hochpröllera a Hinhartu.
+4. **Výšku DOMU portály uvádějí zřídka.** Skoro vždy jde o výšku hory nebo
+   obce; nesmí se dovozovat. Z devíti povýšených ji má pět, čtyři mají
+   pole prázdné.
+5. **„Žádná otvírací doba" je u téhle skupiny běžný a správný výsledek** —
+   rozvrhy se rozcházejí tak často, že u čtyř z devíti profilů zůstalo
+   pole prázdné.
+
+### NADĚJNÉ — vzít v triáži nejdřív (76)
 
 | kandidát | země | signál |
 |---|---|---|
 | `abseits-hutte` — Abseits Hütte | de | jméno nese „Hütte" |
 | `aussichtsturm` — Aussichtsturm | de | typ z OSM: rozhledna |
 | `barwurz-resl-huttn` — Bärwurz-Resl-Hüttn | de | typ z OSM: obsluhovana |
-| `berggasthof-grobauer` — Berggasthof Grobauer | de | jméno nese „Berggasthof" |
-| `berggasthof-hinhart` — Berggasthof Hinhart | de | jméno nese „Berggasthof" |
-| `berggasthof-hinterwies` — Berggasthof Hinterwies | de | jméno nese „Berggasthof" |
-| `berggasthof-waldmann` — Berggasthof Waldmann | de | jméno nese „Berggasthof" |
 | `berggasthof-zottling` — Berggasthof Zottling | de | jméno nese „Berggasthof" |
 | `bistro-bouda` — Bistro Bouda | cz | jméno nese „Bouda" |
 | `blockhutte` — Blockhütte | de | OSM tourism=hut |
@@ -360,5 +371,5 @@ doba" je u téhle skupiny běžný a správný výsledek.
 | `zoihausl` — Zoihäusl | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `zum-alten-wirt` — Zum Alten Wirt | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 
-oblast sumava | kandidatu k triazi: 289 | NADEJNE 80 · POSOUDIT 36 · MIMO 173
-preskoceno (publikovane/odlozene/vyrazene): 47
+oblast sumava | kandidatu k triazi: 285 | NADEJNE 76 · POSOUDIT 36 · MIMO 173
+preskoceno (publikovane/odlozene/vyrazene): 51

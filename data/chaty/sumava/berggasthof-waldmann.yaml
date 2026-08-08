@@ -1,0 +1,188 @@
+# Berggasthof Waldmann — povýšen z kandidáta DATA-01 plošnou triáží koše
+# NADĚJNÝCH (8. 8. 2026). Vše verified: false.
+
+nazev: Berggasthof Waldmann
+slug: berggasthof-waldmann
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.0310952
+lng: 13.1205197
+# vyska SE NEVYPLŇUJE: výšku domu nevede žádný pramen. Doložená je jen
+# výška OBCE Langdorf (675 m, z popisu Pandurensteigu) — a dům stojí výš na
+# svahu mezi Langdorfem a Bodenmais, takže by to bylo číslo cizí stavby.
+obec: Langdorf
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/435104821 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Adresa Waldmann 3, 94264 Langdorf dle
+    turistického portálu Arberland (načteno 8. 8. 2026), poloha týmž
+    pramenem „zwischen Langdorf und Bodenmais gelegen". V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Portál obce Langdorf (načteno 8. 8. 2026) vede u domu typy pokojů
+    (rodinný, dvoulůžkový) a ceny: „Doppelzimmer mit Frühstück 75.-€,
+    Einzelzimmer mit Frühstück 45.-€". Počet pokojů ani lůžek neuvádí
+    žádný pramen, pole kapacity proto zůstává prázdné.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Turistický portál Arberland (načteno 8. 8. 2026) popisuje pivní
+    zahradu s občerstvením a výhledem: „Im Biergarten mit einmaligen
+    Aussicht über Brandtner Riegel, Hennenkobel und Brandten gibt's
+    Waldmann-Brotzeit und Erfrischendes!!" Slovo „Brotzeit" je bavorské
+    označení pro studenou svačinu podávanou v hospodě — nabídka pro
+    kolemjdoucí, ne strava pro nocující. Portál obce Langdorf k tomu
+    uvádí denní provoz „täglich von 12:00 - 20:00 Uhr und nach
+    Vereinbarung".
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: denně 12:00–20:00, mimo tyto hodiny po dohodě
+overeniProvoz:
+  source: >-
+    Portál obce Langdorf, branžový rejstřík (načteno 8. 8. 2026):
+    „täglich von 12:00 - 20:00 Uhr und nach Vereinbarung". ROZPOR:
+    Gelbeseiten vede u objektu vágní „Auf Anfrage" bez hodin. Zapsán
+    rozvrh obce jako konkrétnější a od pramene blíž objektu; rozpor je
+    tu přiznaný. Poznámka pro hosty: portál obce zároveň upozorňuje
+    „Derzeit nur Barzahlung möglich" — platí se hotově.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+4999249433321'
+  web: http://www.berggasthof-waldmann.com/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku SE NEVYPLŇUJE: rok stavby DOMU nevede žádný pramen. Doložený je
+# jen rok vzniku OSADY Waldmann (1802) — a to je jiná věc, viz zajímavosti
+# a interniPoznamky. Vzor Kolínské boudy a Loderhartu: cizí datum se do
+# rokVzniku nedává.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Osadu Waldmann založil podle obecní kroniky roku 1802 sedlák ze
+      Schöneck, který si na východním svahu svého lesního pozemku
+      postavil domek; přezdívka toho místa, „Woidmo", dala osadě jméno.
+      Kdy byl postaven dnešní hostinec, se z toho ale nedovozuje.
+    kategorie: stari
+    zdroj: >-
+      portál obce Langdorf, stránka o dějinách obce (načteno 8. 8. 2026)
+      — rešerše to podala jako parafrázi, ne doslovný citát; tvrzení je
+      o OSADĚ, ne o hostinci
+  - text: >-
+      Z pivní zahrady je výhled na tři vrchy — Brandtner Riegel,
+      Hennenkobel a Brandten.
+    kategorie: jine
+    zdroj: >-
+      turistický portál Arberland (načteno 8. 8. 2026): „Im Biergarten
+      mit einmaligen Aussicht über Brandtner Riegel, Hennenkobel und
+      Brandten"
+  - text: >-
+      Podle portálu obce se v domě platí jen hotově.
+    kategorie: jine
+    zdroj: >-
+      portál obce Langdorf (načteno 8. 8. 2026): „Derzeit nur Barzahlung
+      möglich"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec v osadě Waldmann na svahu mezi Langdorfem a Bodenmais.
+  Pivní zahrada s bavorskou svačinou a výhledem na tři vrchy, otevřeno
+  denně od dvanácti do osmi — a platí se hotově.
+text:
+  - >-
+    Waldmann je osada na svahu mezi Langdorfem a Bodenmais, v srdci
+    arberské části Bavorského lesa. Podle obecní kroniky ji roku 1802
+    založil sedlák ze Schöneck, který si na východním svahu svého
+    lesního pozemku postavil domek; místu se přezdívalo „Woidmo", a to
+    jméno osadě zůstalo. Kdy byl postaven dnešní Berggasthof Waldmann,
+    se z toho ale odvodit nedá a žádný pramen to neříká — rok 1802 patří
+    osadě, ne domu.
+  - >-
+    Pro pěší je nejzajímavější pivní zahrada: podává se v ní bavorská
+    svačina „Waldmann-Brotzeit" a je z ní výhled na tři vrchy —
+    Brandtner Riegel, Hennenkobel a Brandten. Otevřeno je podle
+    branžového rejstříku obce denně od dvanácti do osmi a mimo ty hodiny
+    po dohodě; jeden katalog uvádí místo rozvrhu jen „na dotaz", a tak
+    berte hodiny jako to konkrétnější ze dvou tvrzení, ne jako záruku.
+    Užitečná drobnost, kterou portál obce zdůrazňuje: platí se hotově.
+  - >-
+    Nocuje se v pokojích s polopenzí, ceny obec uvádí, počet pokojů ani
+    lůžek ale nikdo. Neznáme ani výšku domu: doložená je jen výška obce
+    Langdorf dole v údolí, a dům stojí výš na svahu, takže by to bylo
+    číslo cizí stavby.
+  - >-
+    Přes samotný Langdorf Pandurensteig vede, ale že by dálková trasa
+    vedla i k hostinci, žádný pramen neříká; jaké značené cesty sem
+    doopravdy vedou, ukáže sekce s přístupy níž. Údaje na téhle stránce
+    nesou turistický portál Arberland a portál obce Langdorf, polohu
+    nese OpenStreetMap. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Turistický portál Arberland — adresa Waldmann 3, poloha mezi
+      Langdorfem a Bodenmais, pivní zahrada s „Waldmann-Brotzeit"
+      a výhledem na Brandtner Riegel, Hennenkobel a Brandten, kontakt
+      (načteno 8. 8. 2026)
+    url: https://www.arberland-bayerischer-wald.de/point-of-interest/berggasthof-waldmann/
+  - popis: >-
+      Portál obce Langdorf, branžový rejstřík — otvírací doba denně
+      12:00–20:00 a po dohodě (načteno 8. 8. 2026)
+    url: https://www.langdorf.de/branchenbuch/gastronomie/88
+  - popis: >-
+      Portál obce Langdorf, stránka hostince — typy pokojů, ceny
+      s polopenzí, upozornění na platbu jen hotově (načteno 8. 8. 2026)
+    url: https://www.langdorf.de/gastgeber/Berggasthof_Waldmann/2817
+  - popis: >-
+      Portál obce Langdorf, dějiny obce — vznik osady Waldmann roku 1802
+      a původ jména „Woidmo" (načteno 8. 8. 2026)
+    url: https://www.langdorf.de/dorfleben/geschichte
+  - popis: >-
+      Naturpark Bayerischer Wald, popis Pandurensteigu — obec Langdorf
+      na trase ve výšce 675 m (načteno 8. 8. 2026)
+    url: https://www.naturpark-bayer-wald.de/pandurensteig.html
+  - popis: 'OpenStreetMap (GPS, web; ODbL)'
+    url: https://www.openstreetmap.org/node/435104821
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berggasthof-waldmann.yaml (8. 8. 2026,
+  plošná triáž koše NADĚJNÝCH). Klíč zařazení: občerstvení pro veřejnost
+  doloženo pivní zahradou s „Brotzeit" a denním rozvrhem.
+
+  ROK 1802 PATŘÍ OSADĚ, NE DOMU, a je tak zapsaný — v zajímavostech
+  s výslovnou větou, že se z něj rok hostince nedovozuje, a rokVzniku
+  zůstává prázdné. Je to týž druh pasti jako výška obce místo výšky domu:
+  číslo je doložené, ale je o něčem jiném. Vzor zamítnutí roku koupě 1927
+  u Kolínské boudy (26. 7. 2026).
+
+  ROZPOR V PROVOZOVATELI, NEZAPSÁN: Gelbeseiten vede „Waldmann
+  Berggasthof Inh. Doris Reisinger Schwarz", kdežto ubytovací portál
+  ostbayern-tourismus.de podle rešerše zmiňuje „Seit 2016 neue Besitzer".
+  Obojí může platit zároveň, ale ani jedno není doložené natolik, aby to
+  šlo do prózy — jméno hospodáře do profilu nedáváme ani jinde.
+
+  NEDOLOŽENO (nezapsáno): výška domu (doložená je jen výška obce Langdorf
+  675 m z popisu Pandurensteigu — dům stojí výš na svahu), počet pokojů
+  a lůžek, rok stavby domu, napojení hostince na Pandurensteig (trasa
+  vede přes OBEC, ne doloženě přes dům), sortiment kuchyně. Vlastní web
+  berggasthof-waldmann.com se ze sandboxu samostatně nenačetl, data jsou
+  ze zrcadlících portálů. Kandidát na DATA-04: telefon +49 9924 9433321,
+  mobil +49 177 8889622. Fotku dodá příští běh DATA-02.

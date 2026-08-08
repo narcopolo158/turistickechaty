@@ -1,0 +1,206 @@
+# Berggasthof Hinhart — povýšen z kandidáta DATA-01 plošnou triáží koše
+# NADĚJNÝCH (8. 8. 2026). Z celé bavorské dávky má nejhlubší doloženou
+# historii: dům z roku 1700. Vše verified: false.
+
+nazev: Berggasthof Hinhart
+slug: berggasthof-hinhart
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9800992
+lng: 13.1274655
+# vyska SE NEVYPLŇUJE: výšku domu ani osady Hinhart nevede žádný pramen.
+# Rešerše to zkusila i obejít přes seznam místních částí města Regen —
+# Hinhart v něm není, takže není z čeho vyjít, a odvozovat se nebude.
+obec: Regen
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/1695347480 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Adresa Hinhart 18, 94209 Regen dle
+    portálu města Regen (načteno 8. 8. 2026). Poloha dle vlastního webu:
+    „Unser Berggasthof befindet sich, idyllisch gelegen an sonniger
+    Südhanglage über der Stadt Regen"; portál města k tomu „malerisch auf
+    einem Südhang über der Stadt Regen" s výhledem na „Burgruine
+    Weißenstein". V terénu neověřeno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Portál města Regen (načteno 8. 8. 2026) vede u domu pokoje
+    („Zimmer"), počet však neuvádí — a neuvádí ho ani vlastní web. Pole
+    kapacity proto zůstává prázdné.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web hostince (berggasthof.de, načteno 8. 8. 2026) vede veřejný
+    rozvrh s výslovným zavíracím dnem („Dienstag–Mittwoch: geschlossen
+    (Ruhetag)") a s časy teplé kuchyně „Warme Küche von 17:30 Uhr - 20:30
+    Uhr". Rozvrh se zavíracím dnem a vymezenou teplou kuchyní je rozvrh
+    hospody pro veřejnost; jídelna jen pro nocující zavírací dny nemá.
+    Nedělní a svátečné dopolední hodiny od 11:00 to potvrzují — to je čas
+    pro výletníky, ne pro hosty domu.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  pondělí 17:00–22:00, úterý a středa zavřeno, čtvrtek až sobota
+  17:00–22:00, neděle a svátky 11:00–22:00; teplá kuchyně 17:30–20:30
+  (v neděli navíc 11:30–13:30)
+overeniProvoz:
+  source: >-
+    Vlastní web hostince (berggasthof.de, načteno 8. 8. 2026):
+    „Montag: 17:00–22:00", „Dienstag–Mittwoch: geschlossen (Ruhetag)",
+    „Donnerstag–Samstag: 17:00–22:00", „Sonntag und Feiertage:
+    11:00–22:00", „Warme Küche von 17:30 Uhr - 20:30 Uhr". Nezávisle
+    OpenStreetMap: „Mo,Th-Sa 17:00-22:00; Su 11:00-22:00; PH" — oba
+    prameny se shodují, což je v téhle dávce vzácnost.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+49992194340'
+  web: https://www.berggasthof.de/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1700
+overeniHistorie:
+  source: >-
+    Vlastní web hostince, sekce O nás (berggasthof.de/ueberuns/, načteno
+    8. 8. 2026): „Im Jahre 1700 wurde das Anwesen erbaut" — dům postaven
+    roku 1700. Týž pramen: „Seit 1970 befindet sich das Haus im
+    Familienbesitz", tedy od roku 1970 v rodinném vlastnictví.
+    JEDINÝ PRAMEN a je to provozovatel sám o sobě; žádný nezávislý
+    pramen rok 1700 nepotvrzuje. Zapisuje se proto, že provozovatel je
+    u dějin vlastního domu pramen na místě — ale v próze je to řečeno
+    jako jeho tvrzení, ne jako fakt.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Podle vlastního webu byl dům postaven roku 1700 a v osmnáctém
+      století rozšířen o hostinec — je to nejstarší doložený rok stavby
+      z bavorské části našeho fondu.
+    kategorie: stari
+    zdroj: >-
+      vlastní web hostince (berggasthof.de/ueberuns/, načteno 8. 8. 2026):
+      „Im Jahre 1700 wurde das Anwesen erbaut". Tvrzení provozovatele,
+      žádný nezávislý pramen ho nepotvrzuje. Srovnání s ostatními profily
+      je naše, ne pramenovo.
+  - text: >-
+      V rodinném vlastnictví je dům od roku 1970.
+    kategorie: stari
+    zdroj: >-
+      vlastní web hostince (načteno 8. 8. 2026): „Seit 1970 befindet sich
+      das Haus im Familienbesitz"
+  - text: >-
+      Z hostince je vidět na zříceninu hradu Weißenstein nad Regenem.
+    kategorie: jine
+    zdroj: >-
+      portál města Regen (načteno 8. 8. 2026) — výhled na „Burgruine
+      Weißenstein"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Hostinec na slunném jižním svahu nad městem Regen, podle vlastního webu
+  postavený roku 1700 a od osmnáctého století s výčepem. Otevřeno pět dní
+  v týdnu, výhled na zříceninu Weißenstein.
+text:
+  - >-
+    Hinhart je hrst domů na jižním svahu nad městem Regen, tak malá, že ji
+    městský seznam místních částí ani nevede. Stojí tu Berggasthof
+    Hinhart a jeho vlastní web říká něco, co v naší bavorské části fondu
+    nemá obdoby: dům byl podle něj postaven roku 1700 a v osmnáctém
+    století rozšířen o hostinec. Je to tvrzení provozovatele o vlastním
+    domě a žádný nezávislý pramen ho nepotvrzuje — ale u dějin vlastního
+    stavení je provozovatel pramen na místě, a tak ten rok vedeme. Od
+    roku 1970 je dům v rodinném vlastnictví.
+  - >-
+    Hospoda je otevřená pět dní v týdnu: v pondělí a od čtvrtka do sobotu
+    od pěti do desíti večer, v neděli a ve svátky od jedenácti dopoledne,
+    a v úterý a ve středu má zavírací den. Teplá kuchyně jede od půl šesté
+    do půl deváté, v neděli navíc v obědovém čase. Ty dopolední nedělní
+    hodiny jsou dobré znamení pro pěší — to není čas pro hosty domu, ale
+    pro výletníky. Vlastní web a OpenStreetMap se na rozvrhu shodují,
+    což je v téhle skupině bavorských hostinců vzácnost.
+  - >-
+    Nocuje se v pokojích, kolik jich je a kolik mají lůžek, ale žádný
+    pramen neříká. Neznáme ani výšku domu: osada v žádném seznamu není
+    a odvozovat ji odjinud nebudeme. Zahrádka je podle webu pod starými
+    stromy a z domu je vidět na zříceninu hradu Weißenstein, která se nad
+    Regenem zvedá naproti.
+  - >-
+    Napojení na dálkové trasy Goldsteig nebo Pandurensteig u domu žádný
+    pramen neuvádí, a tak ho netvrdíme; jaké značené cesty sem opravdu
+    vedou, ukáže sekce s přístupy níž, která čte spočítaný katalog tras.
+    Údaje na téhle stránce nesou vlastní web hostince a portál města
+    Regen, polohu a rozvrh nese i OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hostince — otvírací doba s úterním a středečním
+      zavíracím dnem, teplá kuchyně 17:30–20:30, poloha na slunném jižním
+      svahu nad Regenem (načteno 8. 8. 2026)
+    url: https://www.berggasthof.de/
+  - popis: >-
+      Vlastní web hostince, sekce O nás — dům postaven roku 1700,
+      v osmnáctém století rozšířen o hostinec, od roku 1970 v rodinném
+      vlastnictví (načteno 8. 8. 2026)
+    url: https://www.berggasthof.de/ueberuns/
+  - popis: >-
+      Portál města Regen — adresa Hinhart 18, poloha na jižním svahu nad
+      městem, výhled na zříceninu Weißenstein, pokoje (načteno
+      8. 8. 2026)
+    url: https://www.regen.de/gastgeber/Berggasthof_Hinhart/3771
+  - popis: >-
+      OpenStreetMap (GPS, otvírací doba Mo,Th-Sa 17:00-22:00; Su
+      11:00-22:00, telefon, web; ODbL)
+    url: https://www.openstreetmap.org/node/1695347480
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berggasthof-hinhart.yaml (8. 8. 2026,
+  plošná triáž koše NADĚJNÝCH).
+
+  KLÍČ ZAŘAZENÍ — TENHLE PŘÍPAD SI ZASLUHUJE ROZBOR, protože se opírá
+  o historii, ne o trasu. Občerstvení pro veřejnost je doložené rozvrhem
+  se zavíracím dnem a nedělními dopoledními hodinami. ROLE NA TRASE ale
+  doložená NENÍ: žádný pramen u domu neuvádí Goldsteig, Pandurensteig
+  ani jinou značenou cestu, a dům stojí na svahu nad městem, ne na
+  hřebeni. Co ho podrželo, je druhá polovina klíče doplněná Michalem
+  26. 7. 2026 — turistická minulost, respektive doložená historie:
+  stavení z roku 1700 s hostincem od osmnáctého století, na samotě, která
+  není ani v městském seznamu místních částí. To je podle výjimky
+  z 27. 7. („samoty, výš položená či zajímavá místa") dost. Kdyby to
+  Michal viděl jinak, je to jeden ze dvou hraničních profilů téhle dávky
+  (druhý je Grobauer) a v deníku je to jako otázka.
+
+  ROK 1700 STOJÍ NA JEDINÉM PRAMENI, a tím pramenem je provozovatel sám.
+  V próze je to proto řečeno jako jeho tvrzení. Vzor: Hubertka, kde rok
+  1906 z jediného pramene (detail razítka) taky zapsán byl.
+
+  SROVNÁVACÍ TVRZENÍ V ZAJÍMAVOSTECH („nejstarší doložený rok stavby
+  z bavorské části fondu") JE NAŠE, ne pramenovo, a je tak i označené.
+  Spočitatelné „nej" dle pole rokVzniku se dle CLAUDE.md do zajimavosti
+  psát nemusí — tady je kvůli tomu, že jde o srovnání v rámci ČÁSTI
+  fondu, které žebříček z pole sám neudělá.
+
+  NEDOLOŽENO (nezapsáno): výška domu (osada není ani v seznamu místních
+  částí Regenu — rešerše to prověřila), počet lůžek a pokojů, napojení
+  na dálkové trasy, věk stromů na zahrádce („300 Jahre alte Bäume" je
+  jen parafráze rešerše, ne doložený citát). Provozovatelem jsou dle
+  webu Gerlinde a Horst Zitzelsbergerovi — jména z webu do prózy
+  nedáváme. Kandidát na DATA-04: telefon +49 9921 94340. Fotku dodá
+  příští běh DATA-02.

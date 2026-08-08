@@ -1,0 +1,162 @@
+# Berggasthof Hinterwies — povýšen z kandidáta DATA-01 plošnou triáží koše
+# NADĚJNÝCH (8. 8. 2026). Vše verified: false.
+
+nazev: Berggasthof Hinterwies
+slug: berggasthof-hinterwies
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.0291751
+lng: 12.8206607
+vyska: 924
+obec: Sankt Englmar
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/3824606554 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Adresa Hinterwies 3, 94379 Sankt
+    Englmar dle turistického portálu Bayerischer Wald (načteno
+    8. 8. 2026). VÝŠKA: prameny se rozcházejí o metr — Alpenvereinaktiv
+    vede u domu „924 m", titulek webkamery na Bergfexu „925 m" (samotnou
+    stránku Bergfexu se načíst nepodařilo, číslo je jen z titulku).
+    Zapsáno 924 dle konvence z 27. 7. 2026 (při rozporu nižší číslo,
+    rozpor přiznat) — a taky proto, že je to jediné číslo doložené
+    z těla stránky, ne z titulku. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Turistické portály regionu (ostbayern-tourismus.de a jeho zrcadlo
+    bayerischer-wald.de, načteno 8. 8. 2026) vedou objekt v kategorii
+    hostinců s ubytováním a zmiňují nocleh v horském prostředí; počet
+    lůžek ani pokojů NEUVÁDÍ ani jeden pramen, proto zůstává prázdný.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Ostbayern Tourismus (načteno 8. 8. 2026) vede objekt pod nadpisem
+    „Berggasthof Hinterwies - Bewirtschaftet". Slovo „bewirtschaftet" je
+    v bavorském turistickém slovníku přímo ta vlastnost, na které stojí
+    náš klíč zařazení: obhospodařovaný dům, tedy s obsluhou pro
+    kolemjdoucí. Je to týž doklad, na kterém stojí publikovaný profil
+    Geisskopfhütte.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  denně 09:00–18:00; mimo lyžařskou sezónu zavřeno v pondělí, na přelomu
+  listopadu a prosince zavřeno úplně
+overeniProvoz:
+  source: >-
+    Turistické portály regionu (ostbayern-tourismus.de
+    a bayerischer-wald.de, načteno 8. 8. 2026) — rešerše přiznala, že
+    znění „täglich von 09:00–18:00 Uhr" i podmínky mimo lyžařskou sezónu
+    získala výtahem nástroje, ne doslovným citátem z HTML. Zapisuje se
+    proto, že oba zrcadlící portály dávají shodný rozvrh a žádný jiný
+    pramen mu neodporuje — na rozdíl od Menauerů a Loderhartu, kde si
+    prameny protiřečily a pole zůstalo prázdné.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+499965408'
+  web: https://berggasthof-hinterwies.de/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ani milníky SE NEVYPLŇUJÍ: rok stavby ani dějiny domu nevede
+# žádný načtený pramen.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Dům stojí severně od Prölleru, v turistickém a lyžařském areálu,
+      který se podle jeho tří vrcholů jmenuje Pröller-Skidreieck.
+    kategorie: jine
+    zdroj: >-
+      Alpenvereinaktiv (načteno 8. 8. 2026) — výtah nástroje, ne doslovný
+      citát; poloha severně od Prölleru (1048 m) a příslušnost k areálu
+      Pröller-Skidreieck
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Obhospodařovaný horský hostinec ve 924 metrech nad Sankt Englmar, na
+  severní straně Prölleru. Otevřeno denně od devíti do šesti, mimo
+  lyžařskou sezónu s pondělním zavíracím dnem.
+text:
+  - >-
+    Pröller nad Sankt Englmar je podle portálu regionu nejznámější hora
+    okolí. Na její severní straně, ve výšce okolo 924 metrů, stojí
+    Berggasthof Hinterwies. Turistický portál regionu ho vede jednoduše
+    jako „bewirtschaftet" — obhospodařovaný, tedy s obsluhou pro
+    kolemjdoucí. Právě tohle jediné německé slovo je u bavorských domů
+    to, na čem náš klíč zařazení stojí, a stejně jsme ho použili
+    u Geisskopfhütte.
+  - >-
+    Otevřeno je denně od devíti do šesti. Mimo lyžařskou sezónu se
+    v pondělí zavírá a na přelomu listopadu a prosince, tedy v mezidobí
+    mezi podzimní a zimní sezónou, zavírá dům úplně. Kolik je tu lůžek,
+    neuvádíme: že se tu spí, prameny říkají, ale počet lůžek ani pokojů
+    nevede ani jeden.
+  - >-
+    Dům patří do areálu, který se podle svých tří vrcholů jmenuje
+    Pröller-Skidreieck, a v okolí je horských hostinců hned několik —
+    Berggasthof Hochpröller pod samotným vrcholem vedeme zvlášť. Kdo
+    jde po vrcholové cestě, jde po Goldsteigu; přístupové trasy s délkou
+    a převýšením najdete níže.
+  - >-
+    Rok stavby ani dějiny domu neznáme, žádný pramen je nevede. Údaje na
+    téhle stránce nesou turistické portály regionu, polohu nese
+    OpenStreetMap; výšku uvádí dva prameny o metr různě a zapsali jsme
+    nižší z nich. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Ostbayern Tourismus — objekt veden jako „Berggasthof Hinterwies -
+      Bewirtschaftet", otvírací doba denně 09:00–18:00, pondělní zavírací
+      den mimo lyžařskou sezónu (načteno 8. 8. 2026)
+    url: https://www.ostbayern-tourismus.de/attraktionen/berggasthof-hinterwies-bewirtschaftet-4264381b14
+  - popis: >-
+      Turistický portál Bayerischer Wald — adresa Hinterwies 3, 94379
+      Sankt Englmar, telefon a e-mail (načteno 8. 8. 2026)
+    url: https://www.bayerischer-wald.de/BayWald/ukv/house/Sankt-Englmar-Gasthof-Berggasthof-Hinterwies-GER00020060365485208
+  - popis: >-
+      Alpenvereinaktiv — výška domu 924 m, poloha severně od Prölleru
+      v areálu Pröller-Skidreieck (načteno 8. 8. 2026)
+    url: https://www.alpenvereinaktiv.com/de/gastro/bayerischer-wald-mittelgebirge-/berggasthof-hinterwies/804211154/
+  - popis: 'OpenStreetMap (GPS, telefon; ODbL)'
+    url: https://www.openstreetmap.org/node/3824606554
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berggasthof-hinterwies.yaml (8. 8. 2026,
+  plošná triáž koše NADĚJNÝCH). Klíč zařazení splněn nejúsporněji
+  z celé dávky: portál regionu vede objekt přímo jako „Bewirtschaftet".
+
+  OTVÍRACÍ DOBA ZAPSÁNA, ač rešerše u ní přiznala výtah místo doslovného
+  citátu. Důvod je v tom, že dva zrcadlící portály dávají shodný rozvrh
+  a žádný třetí pramen mu neodporuje. Tam, kde si prameny protiřečily
+  (Menauer, Loderhart, Hohenbogen), zůstalo pole téhož dne prázdné — je
+  to rozdíl mezi „jeden pramen bez doslovného citátu" a „tři prameny
+  proti sobě".
+
+  VÝŠKA: rozpor 924 (Alpenvereinaktiv, z těla stránky) × 925 (titulek
+  webkamery na Bergfexu, tělo stránky se nenačetlo). Zapsáno 924 —
+  konvence z 27. 7. i lepší doklad mluví pro totéž číslo.
+
+  SOUSEDNÍ OBJEKTY: Berggasthof Hochpröller je publikovaný profil od
+  téhož dne. Rešerše zmínila v okolí ještě „Prellerhaus" — v našem
+  fondu kandidát toho jména není, patří do dohledávky (DATA-31).
+
+  NEDOLOŽENO (nezapsáno): počet lůžek a pokojů, rok stavby a dějiny domu,
+  sortiment kuchyně. Provozovatelem je nejspíš rodina Kreutz (dle
+  e-mailu Kreutz7@freenet.de a profilu na sociální síti) — jméno nikde
+  nestojí jako věta pramene, do prózy proto nejde. Kandidát na DATA-04:
+  telefon +49 9965 408. Fotku dodá příští běh DATA-02.

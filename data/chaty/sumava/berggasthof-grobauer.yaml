@@ -1,0 +1,235 @@
+# Berggasthof Grobauer — povýšen z kandidáta DATA-01 plošnou triáží koše
+# NADĚJNÝCH (8. 8. 2026). HRANIČNÍ PŘÍPAD zařazený s poctivým označením
+# typu (rozhodnutí Michala 20. 7. 2026 o hraničních hotelech — vzor
+# Špindlerovky, Tetřevek a Vebrových boud). Vše verified: false.
+
+nazev: Berggasthof Grobauer
+slug: berggasthof-grobauer
+zeme: de
+typ: horsky-hotel
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Panoramahotel Grobauer
+    poznamka: >-
+      jméno, kterým se dům představuje na vlastním webu a v ubytovacích
+      katalozích
+  - nazev: Hotel Grobauer
+    poznamka: zkrácená podoba, doména hotel-grobauer.de
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.8953045
+lng: 13.3444483
+vyska: 780
+obec: Spiegelau
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/1949589068 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). VÝŠKA 780 m: katalog turistických
+    hotelů wander-hotels.info vede u domu „Seehöhe: 780 hm"; totéž číslo
+    uvádí Wikipedie pro ves Oberkreuzberg, ve které dům stojí („The
+    parish village (Pfarrdorf) lies at a height of 780 metres") — druhé
+    je výška VSI, shoda čísla s prvním pramenem, který ho vede u domu,
+    je důvod, proč se zapisuje. Adresa Kreuzbergstr. 7–9, 94518
+    Spiegelau, místní část Oberkreuzberg; číslo domu se napříč prameny
+    kolísá (7/8 × 7-9 × 8). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Katalog turistických hotelů wander-hotels.info (načteno 8. 8. 2026)
+    vede u domu okolo čtyřiceti pokojů a osmdesáti lůžek; rešerše ale
+    přiznala, že německé znění nezískala doslovně, jen výtahem, a jiný
+    pramen ta čísla nepotvrzuje. Pole kapacity proto zůstává PRÁZDNÉ —
+    u hraničního hotelu je velikost zásadní údaj a nese ho jedna
+    nedoslovná zmínka. Doložené je, že se tu spí: vlastní web uvádí
+    ubytovací provoz s příjmem hostů od 14:00 do 22:00 a snídaní denně
+    od 7:00 do 10:00.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Gastronomický katalog speisekarte.de (načteno 8. 8. 2026) vede
+    „Berggasthof Grobauer" ve Spiegelau jako veřejnou restauraci
+    s možností rezervace stolu; vlastní web domu (sekce Kulinarik) k tomu
+    popisuje restauraci jako součást hotelu. Rešerše přiznala, že věta,
+    která by výslovně zvala i nehosty, se doslovně vytáhnout nepodařila —
+    doklad je tedy v tom, že dům je veden ve gastronomickém katalogu
+    jako restaurace k rezervaci, ne v citátu. U hraničního hotelu je to
+    slabší doklad než u ostatních domů dávky a je tak i pojmenovaný
+    v próze.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: hodiny RESTAURACE nevede žádný pramen.
+# Doložený je jen hotelový provoz (příjem hostů 14:00–22:00, snídaně
+# 7:00–10:00), což je rozvrh recepce, ne hospody, a do pole nepatří.
+overeniProvoz:
+  source: >-
+    Vlastní web domu (načteno 8. 8. 2026) uvádí příjem hostů „von
+    14:00-22:00 Uhr" a snídani „Täglich von 7:00 bis 10:00 Uhr" — to je
+    hotelový, ne hospodský rozvrh. ROZPOR V TELEFONU: vlastní web vede
+    „+49 (0) 85 53 / 9 11 09", kdežto Gelbeseiten u „Grobauer
+    Panoramahotel" na téže adrese „08553 97 88 88-0". Zapsáno číslo
+    z vlastního webu, které se shoduje i s OpenStreetMap; druhé je tu
+    přiznané.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+49855391109'
+  web: https://www.hotel-grobauer.de/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku SE NEVYPLŇUJE: vlastní web uvádí, že kmenový dům koupil
+# pradědeček „um 1910" — tedy PŘIBLIŽNĚ a je to rok koupě, ne stavby.
+# Přibližné datum se do číselného pole nedává (vzor Kleti, kde se rokVzniku
+# nevyplnil kvůli dvěma stavbám a dvěma datům); rok je v zajímavostech
+# i v próze.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Podle vlastního webu koupil kmenový dům pradědeček dnešních
+      hospodářů okolo roku 1910 a byla v něm tehdy řeznictví s hospodou;
+      katalog turistických hotelů mluví o víc než stoleté rodinné
+      tradici.
+    kategorie: stari
+    zdroj: >-
+      vlastní web domu (načteno 8. 8. 2026): „Das Stammhaus wurde um 1910
+      vom Urgroßvater erworben"; wander-hotels.info: „über
+      hundertjährige Familientradition". Tvrzení provozovatele
+      a katalogu, redakcí neověřená; rok je přibližný („um 1910")
+      a je to rok koupě, ne stavby.
+  - text: >-
+      Dům leží podle ubytovacího portálu přímo v turistické oblasti
+      Roklan–Luzný Národního parku Bavorský les.
+    kategorie: jine
+    zdroj: >-
+      hotel-ami.com (načteno 8. 8. 2026) — rešerše to podala jako
+      parafrázi, ne doslovný citát
+  - text: >-
+      Obec Spiegelau je zastávkou šesté etapy dálkové trasy
+      Pandurensteig; že by trasa vedla přímo k domu, ale žádný pramen
+      neříká.
+    kategorie: jine
+    zdroj: >-
+      Naturpark Bayerischer Wald a derentspannen.de (obojí načteno
+      8. 8. 2026) — Spiegelau jako výchozí či koncový bod šesté etapy
+      Pandurensteigu
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hotel ve 780 metrech v Oberkreuzbergu u Spiegelau, na okraji
+  turistické oblasti Roklan–Luzný. Rodinný dům s víc než stoletou tradicí
+  a veřejnou restaurací — hraniční případ, který zařazujeme s poctivým
+  označením.
+text:
+  - >-
+    Oberkreuzberg je ves ve výšce 780 metrů, dnes místní část Spiegelau,
+    na okraji turistické oblasti Roklan–Luzný v Národním parku Bavorský
+    les. Stojí v ní dům, který OpenStreetMap vede jako Berggasthof
+    Grobauer, kdežto sám se představuje jako Panoramahotel Grobauer —
+    a to napětí mezi oběma jmény je pro naše zařazení podstatné: je to
+    horský hotel, ne bouda. Vedeme ho proto s typem horský hotel, stejně
+    jako Špindlerovku nebo Tetřevky na krkonošské straně.
+  - >-
+    Dějiny domu jsou rodinné. Podle vlastního webu koupil kmenové stavení
+    pradědeček dnešních hospodářů okolo roku 1910 a bylo v něm tehdy
+    řeznictví s hospodou; katalog turistických hotelů mluví o víc než
+    stoleté rodinné tradici. Rok je ale přibližný a je to rok koupě, ne
+    stavby, a tak ho nevedeme v poli s rokem vzniku, jen tady v textu.
+  - >-
+    Restaurace je podle gastronomického katalogu veřejná a dá se v ní
+    rezervovat stůl. Přiznejme rovnou, že je to u téhle položky doklad
+    slabší než u ostatních domů dávky: věta, která by výslovně zvala
+    i kolemjdoucího nehosta, se v pramenech nenašla, a hodiny restaurace
+    nevede vůbec nikdo. Doložený je jen hotelový rozvrh — příjem hostů
+    od dvou do desíti a snídaně od sedmi do desíti — což je rozvrh
+    recepce, ne hospody, a proto tu žádnou otvírací dobu nenajdete.
+  - >-
+    Kolik je v domě pokojů a lůžek, taky neuvádíme. Jeden katalog mluví
+    o čtyřiceti pokojích a osmdesáti lůžkách, ale to číslo nese jediná
+    nedoslovná zmínka a u hraničního hotelu je právě velikost tím
+    údajem, na kterém záleží nejvíc — tak radši nic než dohad. Telefonní
+    čísla se rozcházejí: vedeme to z vlastního webu, které se shoduje
+    s OpenStreetMap, zatímco jeden firemní rejstřík uvádí u téže adresy
+    jiné.
+  - >-
+    Obec Spiegelau je zastávkou šesté etapy dálkové trasy Pandurensteig,
+    ale že by trasa vedla přímo k domu, žádný pramen neříká; jaké
+    značené cesty sem doopravdy vedou, ukáže sekce s přístupy níž. Údaje
+    na téhle stránce nesou vlastní web domu, gastronomický katalog,
+    katalog turistických hotelů a ubytovací portály, polohu nese
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web domu — kmenový dům koupen pradědečkem okolo roku 1910
+      jako řeznictví s hospodou, restaurace jako součást hotelu, příjem
+      hostů 14:00–22:00, snídaně 7:00–10:00, telefon (načteno 8. 8. 2026)
+    url: https://www.hotel-grobauer.de/
+  - popis: >-
+      wander-hotels.info — výška 780 m, víc než stoletá rodinná tradice,
+      kapacita okolo 40 pokojů a 80 lůžek (načteno 8. 8. 2026)
+    url: https://wander-hotels.info/wanderhotel/panoramahotel-grobauer
+  - popis: >-
+      speisekarte.de — „Berggasthof Grobauer" ve Spiegelau jako veřejná
+      restaurace s rezervací stolu (načteno 8. 8. 2026)
+    url: https://www.speisekarte.de/spiegelau/restaurant/berggasthof_grobauer
+  - popis: >-
+      Anglická Wikipedie, Oberkreuzberg — ves ve výšce 780 m (načteno
+      8. 8. 2026)
+    url: https://en.wikipedia.org/wiki/Oberkreuzberg
+  - popis: >-
+      Naturpark Bayerischer Wald, popis Pandurensteigu — Spiegelau na
+      šesté etapě (načteno 8. 8. 2026)
+    url: https://www.naturpark-bayer-wald.de/pandurensteig.html
+  - popis: 'OpenStreetMap (GPS, tourism=hotel, telefon, web; ODbL)'
+    url: https://www.openstreetmap.org/node/1949589068
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berggasthof-grobauer.yaml (8. 8. 2026,
+  plošná triáž koše NADĚJNÝCH).
+
+  HRANIČNÍ PŘÍPAD — DRUHÝ Z TÉHLE DÁVKY (první je Hinhart). Objekt je
+  hotel v obci, ne bouda na hřebeni, a klíč doplněný Michalem 27. 7.
+  vylučuje „penzion VE STŘEDISKU bez doložené historie a bez veřejného
+  občerstvení". Grobauer obojí má: rodinnou historii od doby okolo roku
+  1910 a veřejnou restauraci dle gastronomického katalogu. Zařazuje se
+  proto dle rozhodnutí Michala z 20. 7. 2026 o hraničních hotelech
+  („všechny zařadit s poctivým označením") s typem `horsky-hotel`, vzor
+  Špindlerovka / Tetřevky / Vebrovy boudy. Kdyby to Michal viděl jinak,
+  je to v deníku jako otázka.
+
+  DOKLAD OBČERSTVENÍ JE ZDE SLABŠÍ NEŽ U OSTATNÍCH DOMŮ DÁVKY a je to
+  tak napsané i v próze. Ostatní stály na doslovné větě („öffentliche
+  Gaststätte", „einkehren", „bewirtschaftet", „Brotzeit") nebo na
+  rozvrhu se zavíracím dnem; tady je to zápis v gastronomickém katalogu
+  jako restaurace k rezervaci. Kdyby se ukázalo, že restaurace slouží jen
+  hostům hotelu, klíč padá — jeden telefonát to rozhodne.
+
+  TŘI ÚDAJE VĚDOMĚ PRÁZDNÉ. (1) Kapacita: 40 pokojů / 80 lůžek nese
+  jediná nedoslovná zmínka katalogu; u hraničního hotelu je velikost
+  zásadní, tak radši nic. (2) rokVzniku: „um 1910" je přibližné A je to
+  rok koupě, ne stavby — dvojí důvod (vzor Kleti a Kolínské boudy).
+  (3) otviraciDoba: doložený rozvrh je hotelový (recepce, snídaně), ne
+  hospodský.
+
+  DVA ROZPORY PŘIZNANÉ, NESROVNANÉ: telefon (vlastní web + OSM
+  +49 8553 91109 × Gelbeseiten 08553 97 88 88-0 u téže adresy) a číslo
+  domu v adrese (7/8 × 7-9 × 8).
+
+  NEDOLOŽENO (nezapsáno): kapacita, rok stavby, hodiny restaurace,
+  napojení domu na Pandurensteig (trasa vede přes OBEC Spiegelau),
+  sortiment kuchyně. Kandidát na DATA-04: telefon +49 8553 91109 zavře
+  kapacitu, hodiny restaurace i to, jestli je restaurace opravdu veřejná.
+  Fotku dodá příští běh DATA-02.
