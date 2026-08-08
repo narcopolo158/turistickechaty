@@ -29,6 +29,103 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-08 (šestý blok, osm hodin) — šest nových oblastí a odpověď na „vse dalsi co najdes"
+
+Michalův pokyn: *„pokracuj samostatne dal 8 hodin v kuse, klidne dopln krusne
+hory, orlicke a vse dalsi co najdes"*. To „co najdes" bylo možné vzít jako
+výzvu k hádání, nebo jako otázku, která se dá spočítat. Šla spočítat.
+
+**Hotovo:**
+
+**NEJDŘÍV JSEM SI ZJISTIL, CO VLASTNĚ CHYBÍ.** Porovnání externího katalogu
+proti `katalogPohori` všech oblastí dalo tvrdé číslo: **sto katalogových
+objektů ve 45 pohořích, o kterých průvodce nevěděl vůbec**. Není to totéž
+jako mezera uvnitř oblasti — chybějící objekt aspoň někam patří, kdežto
+chybějící pohoří nehlásí nikdo, protože oblast, která by ho hlásila,
+neexistuje. Udělal jsem z toho oddíl reportu (KONTROLA-10, funkce
+`pohoriBezOblasti`), aby se ta otázka dala kdykoli položit znovu.
+
+**ŠEST NOVÝCH OBLASTÍ, dvanáct → osmnáct.** Krušné hory, Orlické hory, Veľká
+Fatra, Slovenský raj, Lužické hory a Bieszczady. Pohoří bez oblasti kleslo
+ze 45 na 35 a objektů v nich ze 100 na 54.
+
+**KRUŠNÉ HORY** jsou nový typ oblasti. Dosud byla každá oblast hřeben nebo
+hornatina; tohle je kerná deska nakloněná do Saska, 7 358 km². Objekty tu
+nestojí na hřebeni nad údolím, ale jsou rozeseté po náhorní plošině — triáž
+bude mít víc městského šumu. A hned první past: **Fichtelberg (1214 m) tři
+kilometry od Klínovce je nejvyšší hora SASKA, ne pohoří.**
+
+**ORLICKÉ HORY zavřely otázku, která byla od rána otevřená.** Góry
+Bystrzyckie patří k nim — a rozhodlo se to **proti geomorfologii**, což je
+v datech napsané: jsou to samostatné mezoregiony 332.52 a 332.53 oddělené
+údolím Divoké Orlice. Pro spojení mluví ochranářský a turistický celek, jeden
+„Obszar Chronionego Krajobrazu Góry Bystrzyckie i Orlickie". Precedens je
+Michalův vlastní: Javorníky a Vsetínské vrchy jako jedna oblast, protože se
+tak chodí. Test hlídá, že jesenická poznámka už netvrdí opak a že schronisko
+Jagodna padne do okna Orlických hor a mine okno Jeseníků.
+
+**SLOVENSKÝ RAJ a BIESZCZADY přinesly třetí a čtvrtý typ režimu, u kterého
+„otevřeno" neznamená „dostupné".** Po tatranské sezónní uzávěře a vůdcovské
+povinnosti teď jednosměrné rokliny se vstupným (v Ráji se smí jen zdola
+nahoru, proti proudu potoka) a bieszczadský režim: povinné vstupné, pohyb po
+trasách jen mezi východem a západem slunce, nocování na třech vyhrazených
+místech. **U chaty na hřebeni je tohle pro plánování túry důležitější než
+otvírací doba** a profily to budou muset umět říct.
+
+**LUŽICKÉ HORY** mají doklad jen z jedné strany a je to přiznané: německá
+Wikipedie vede Zittauer Gebirge jako německou část Lužických hor, české
+členění o druhé straně mlčí. Nejhezčí nález bloku je ale stará bouda na Luži,
+která měla uvnitř oddělený „Sächsisches Gastzimmer" a „Böhmische Stüberl" —
+hraniční život v jedné budově. Vyhořela 8. ledna 1946.
+
+**TŘI SUPERLATIVY, KTERÉ SE NEZAPSALY, PROTOŽE NEPLATÍ TAK, JAK SE ŘÍKAJÍ.**
+Tarnica je nejvyšší jen na polské straně Bieszczad (nejvyšší je Pikuj 1405 m
+na Ukrajině). Chatka Puchatka je nejvýše položené schronisko **v
+Bieszczadech**, ne v Polsku — doslovný citát to říká takhle a jinak se to
+psát nesmí. A Predná hoľa (1545 m) je nejvyšší bod **národního parku**
+Slovenský raj, ne pohoří; prameny ji řadí k Nízkym Tatrám, takže okno je
+řezané podle pohoří, ne podle parku.
+
+**A JEDEN SUPERLATIV JSEM NAPSAL SÁM A BYL ŠPATNĚ.** Do YAMLu Krušných hor
+jsem napsal „nejrozlehlejší okno korpusu". Spočítané plochy říkají, že větší
+mají Šumava (13 916 km²) i Beskydy (7 513 km²); Krušné hory jsou třetí.
+Chytil to test, který jsem psal o dvě minuty později — a poučení je konkrétní:
+**superlativ o VLASTNÍCH datech se dá ověřit výpočtem, tak ať se ověřuje.**
+Je to totéž pravidlo jako připsání u superlativů v próze, jen s kalkulačkou
+místo pramene. Ten test v repu zůstal.
+
+**ČTYŘI CHYBY V MÝCH ZADÁNÍCH REŠERŠE, všechny chycené rešeršisty.** „Chata na
+Ostrom" ve Veľkej Fatre neexistuje; „Útulňa Kľačianska Magura" je v Malé
+Fatře, ne ve Veľkej; „Čertova hlava" ve Slovenském ráji je sedlo, ne vrchol;
+a ráno dvakrát Pohorská jednota Radhošť tam, kde nebyla. Pětkrát za den jsem
+do zadání propašoval domněnku formulovanou jako otázku. Poučení je pořád
+totéž a začíná být trapné: **do zadání se píše „kdo?", ne „byl to X?".**
+
+Kontrola H (výčty slugů ve workflow) si drift našla sama třikrát za blok —
+přesně proto vznikla. Kontroly, tsc, eslint i prettier čistě; test oblastí
+má 182 případů.
+
+**Příště:** deset oblastí čeká na klik a osm z nich nemá jediného kandidáta.
+Práce s daty se přesunula do Vysokých Tater (42 nadějných kandidátů) a do
+beskydské triáže (172). Ze zbývajících pohoří bez oblasti jsou největší Malé
+Karpaty (5 objektů), pak už jen trojice a dvojice — Muránska planina,
+Veporské a Volovské vrchy, Fichtelgebirge.
+
+**Otázky pro Michala:**
+
+1. **Osmnáct oblastí je hodně a devět z nich nemá ani kandidáta.** Mám dál
+   zakládat (zbývá 35 pohoří, ale většina po jednom dvou objektech), nebo se
+   vrátit k povyšování profilů? Můj názor: zakládání má klesající výnos,
+   kdežto Vysoké Tatry s 42 nadějnými kandidáty a doloženou historií od roku
+   1863 jsou ta nejcennější rozdělaná práce.
+2. **Bieszczady jsou daleko** — jihovýchodní Polsko u ukrajinské hranice.
+   Dává to pro průvodce s českým čtenářem smysl, nebo je to už za hranicí
+   toho, co má web pokrývat? Založil jsem je, protože katalog v nich drží
+   deset objektů, ale rozsah je tvoje rozhodnutí.
+3. **Bukovské vrchy jsem vzal jako slovenskou část Bieszczad**, protože to tak
+   vede polské členění — slovenské je vede jako vlastní celek. Vzal jsem
+   polské čtení kvůli principu „pohoří vcelku". Sedí to?
+
 ## 2026-08-08 (pátý blok, čtyři hodiny) — Michal začal klikat a hned se ukázalo, že každý jeho export shodí main
 
 Michalův pokyn: *„nizke tatry je slovensky stejne jako cesky, pokracuj
