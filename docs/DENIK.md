@@ -29,6 +29,128 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-08 (třetí blok, tři hodiny) — pět nových oblastí za jeden den, dva Michalovy kliky a 29 duplicit z mého vlastního překryvu
+
+Michalův pokyn: *„kandidaty budoucich oblasti nech a rovnou je zaloz,
+pokracuj dal 3 hodiny."* Během bloku klikl ještě na DATA-01 pro Javorníky,
+takže se pracovalo na živých datech, ne na přípravě.
+
+### ① Tři slovenské oblasti — a jsou to první, které vznikly S DATY
+
+Osmdesát kandidátů, které beskydský export stáhl podle širokého okna, se
+rozpadá na tři jasné celky, a Michal rozhodl je nemazat. Vznikly z nich
+**Malá Fatra** (59 kandidátů), **Oravská Magura** (6) a **Západné Tatry**
+(13). Dosud každá oblast vznikla prázdná a data přišla až po kliku; tady to
+bylo naopak.
+
+**Malá Fatra má nejcennější doloženou historii, jakou jsme dosud našli.**
+Chata pod Chlebom: Klub československých turistů rozhodl o stavbě
+7. 5. 1929, otevřena 21. 12. 1930, po rozšíření v roce 1937 podle vlastního
+webu „najväčšia chata vybudovaná na Slovensku po roku 1918", 3. 11. 1944
+vypálena německými vojáky, obnovena, 12. 4. 1982 vyhořela znovu,
+rekonstruována 2021. Chata pod Rozsutcom má osud tak podobný, že se to
+snadno poplete — postavena 1932–33, vypálena 1944, obnovena, 17. 1. 1985
+vyhořela a **už nikdy obnovena nebyla**. To je ten rozdíl, který se musí
+držet.
+
+**Západné Tatry jsou první vysokohorská oblast průvodce** a je poctivé
+říct, že to bude znamenat jiná data: hlavní hřeben má podle pramene 31
+dvoutisícovek, takže poprvé přijdou sezónní uzávěry cest, horská služba
+a vysokohorské útulny. U tatranské chaty znamená „otevřeno" jinou věc než
+u bavorského hostince a profily to musí unést.
+
+**Oravská Magura je nejmenší oblast korpusu a je to v jejím YAMLu
+přiznané** — šest kandidátů a dva katalogové objekty jsou na oblast málo.
+Zakládá se přesto, protože je to samostatná jednotka a přilepit ji k Malé
+Fatře by byla táž chyba, jakou Michal ráno odmítl u Javorníků. Kdyby to
+viděl jinak, sloučení je levné; je to otázka níž.
+
+Dva nálezy z rešerše, které opravily čekaná tvrzení: nejvyšší vrchol
+Oravské Magury **není Kubínska hoľa, ale Minčol (1394 m)** — a „Minčol" je
+jméno několika karpatských vrcholů, takže PeakVisor pod tím dotazem vrací
+horu o 35 km jižněji ve Velké Fatře. A **TANAP vznikl roku 1949, ale
+Západné Tatry k němu byly připojeny až 1987**, takže se nesmí psát, že jsou
+jím chráněné od začátku.
+
+### ② „Co mám spustit" má vlastní soubor a Michal ho hned použil
+
+`docs/KLIKY-PRO-MICHALA.md` vznikl na jeho otázku a týž den se ukázalo, že
+to byla oprávněná výtka: klikl dvakrát a obojí se hned zpracovalo. Seznam
+je teď na pěti kliknutích a Beskydy jsou odškrtnuté.
+
+### ③ 29 DUPLICIT — následek mého vlastního rozhodnutí, ne cizí chyby
+
+Okna oblastí se **záměrně** překrývají, aby ostrý řez na hranici dvou
+pohoří tiše nevyřízl objekty na sedle mezi nimi. Napsal jsem to ráno do
+konfigurace jako přednost a mělo to logiku. Michalův druhý klik ale
+předvedl cenu: **DATA-01 o kandidátech jiných oblastí nic neví, takže
+objekt v překryvu založí dvakrát.** Vzniklo 29 párů se shodným jménem
+a shodnými souřadnicemi ve dvou adresářích.
+
+Rozhodl jsem je **rozvodím, ne odhadem**: dělící linie je dolina Rožnovské
+Bečvy od Rožnova k Velkým Karlovicím, za nimi hraniční hřeben k Bumbálce.
+Devět objektů zůstalo Beskydám (Bílá, Staré Hamry, Horní Bečva), dvacet
+patří Javorníkům a Vsetínským vrchům (Soláň, Čarták, Kusalíno, Hutisko,
+Makov, Kmínek). **Pravidlo jsem ověřil na objektech, u kterých katalog
+příslušnost zná** — Kusalíno a Čarták vede jako Vsetínské vrchy, Kmínek
+jako Javorníky, Bílá se Starými Hamry jsou Moravskoslezské Beskydy. První
+verze pravidla, dělení podle zeměpisné šířky, přitom Bílou i Hutisko
+rozřezala špatně: dolina Bečvy jde diagonálně, takže jedna vodorovná hrana
+nestačí. Tři objekty do 1,3 km od rozvodí jsem označil k posouzení místo
+toho, abych je vydával za rozhodnuté.
+
+**Ruční rozhodnutí ale nestačí, protože se při dalším běhu vrátí** — proto
+je z toho nová položka backlogu **DATA-36**: DATA-01 má před založením
+kandidáta ověřit, jestli objekt téhož OSM id už neleží v kandidátech jiné
+oblasti, a přeskočit ho („první export vyhrává", což je deterministické
+a idempotentní). K tomu kontrola, která duplicity mezi oblastmi hlásí jako
+rozpracovanost, ne jako vadu — v překryvu je to čekaný stav, dokud triáž
+nerozhodne.
+
+### ④ Registr jmenovců se ozval třikrát a každý ozev byl správný
+
+Klíčem registru je MNOŽINA objektů, takže se ozve nejen když přibude nový
+jmenovec, ale i **když se objekt přesune mezi oblastmi**. Stalo se to
+u dvojice Mária (přesun do Malé Fatry) a u pětice Hájenek (Horský hotel
+Hájenka do Javorníků). Nová kolize **Kohútka** je pak učebnicový důvod,
+proč se totožnost přeměřuje: Horský hotel Kohútka na javornickém sedle
+(49,295 / 18,230, vede ho i katalog) a „Kohutka" bez diakritiky hluboko
+v Moravskoslezských Beskydech (49,643 / 18,481) jsou **42 716 m od sebe**
+a mají různá OSM id. Dva objekty, ne duplicita.
+
+**Kontroly:** `npm run kontrola` zelené (validator 0 chyb, fronta 0 vad,
+kolize 30 → 0 nerozhodnutých), `tsc` i eslint čisté, testy oblastí 75/75,
+fixtura 25/0. Korpus chat beze změny (146 profilů). Oblastí je nově **deset**.
+Koše: Beskydy 278 (172 nadějných), Javorníky a Vsetínské vrchy 36,
+Malá Fatra 59, Západné Tatry 13, Oravská Magura 6, Šumava 71.
+
+**Příště**
+
+① triáž Beskyd — 172 nadějných, začít objekty z externího katalogu, které
+mají druhý pramen předem (Bezručova chata na Lysé hoře, Chata na Radhošti,
+Libušín a Maměnka, osm schronisek Beskidu Śląskiego, devět Żywieckiego);
+② **Prašivá jako první případ** — chata a rozhledna pět metrů od sebe,
+rozhodne vzor pro celé Beskydy; ③ osm katalogových objektů Javorníků
+a Vsetínských vrchů (Portáš, Kohútka, Čarták, Vsacký Cáb, Kusalíno);
+④ DATA-36, ať se duplicity nevracejí.
+
+**Otázky pro Michala**
+
+① **Tři nové kliky** na DATA-01 (`mala-fatra`, `oravska-magura`,
+`zapadne-tatry`) — vlastní běh s vlastním oknem přinese hřebeny, které
+beskydské okno nepokrývalo. Seznam všech kliků drží
+`docs/KLIKY-PRO-MICHALA.md`.
+② **Má Oravská Magura zůstat samostatnou oblastí?** Šest kandidátů a dva
+katalogové objekty jsou málo. Já bych ji nechal — je to samostatná
+jednotka a slučování by se pak muselo rozdělávat —, ale je to tvoje páka.
+③ **Prašivá — jeden profil, nebo dva?** Chata a rozhledna pět metrů od
+sebe; vzor Žalý/Kleť. V Beskydech se to uplatní víckrát.
+④ Beze změny z předchozích bloků: rozsah Jeseníků vůči Górám Bystrzyckim,
+pravidlo pro spolkové chaty přístupné po ohlášení (Höllbachschwellhütte),
+rozšířený klíč u objektu bez dnešní služby (Forsthaus Ödwies), dva hraniční
+profily Hinhart a Grobauer, konvence zápisu vyřazených slugů, telefonáty
+DATA-04, výběr fotek v adminu, razítkové páry.
+
 ## 2026-08-08 (druhý blok, dvě hodiny) — Michal odpověděl a rovnou klikl; sedmá oblast a 385 beskydských kandidátů
 
 Michalovy dvě věci: *„javorniky a vsetinske vrchy bych udelal jako jednu
