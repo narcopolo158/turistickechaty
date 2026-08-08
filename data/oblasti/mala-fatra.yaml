@@ -1,0 +1,131 @@
+# Oblast Malá Fatra — osmá oblast průvodce.
+#
+# POKYN MICHALA 8. 8. 2026: „kandidaty budoucich oblasti nech a rovnou je
+# zaloz." Beskydský export DATA-01 běžel ještě podle širokého okna a přinesl
+# 59 kandidátů z Malé Fatry — Terchová, Biely Potok, Zázrivá. Michal
+# rozhodl je nemazat a oblast rovnou založit, takže tahle oblast na rozdíl
+# od všech ostatních vzniká S DATY, ne kvůli nim.
+#
+# ROZSAH: obě části pohoří, které od sebe u Strečna odděluje Váh —
+# Krivánska Malá Fatra na severu (Veľký Kriváň, Rozsutce, Vrátna dolina)
+# a Lúčanská na jihu (Veľká lúka, Krížava, Martinské hole). Katalog v nich
+# vede dohromady sedm objektů.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Malá Fatra
+slug: mala-fatra
+typ: pohori
+zeme: sk
+
+sklonovani:
+  druhy: Malé Fatry
+  sesty: Malé Fatře
+
+charakteristika: >-
+  Vápencové pohoří nad Žilinou a Martinem, které Váh u Strečna prořízl na
+  dvě části — Krivánskou na severu a Lúčanskou na jihu. Proti mírným
+  hřbetům Beskyd je to jiný svět: skalní vrcholy Rozsutců, tiesňavy
+  Jánošíkových děr a Vrátna dolina pod hřebenem, který drží kolem
+  sedmnácti set metrů. Chatařská historie je tu dramatická — dvě velké
+  chaty postavené na přelomu dvacátých a třicátých let vypálili v listopadu
+  1944 němečtí vojáci a obě pak v osmdesátých letech vyhořely ještě podruhé.
+overeniCharakteristika:
+  source: >-
+    Členění a charakter: anglická Wikipedie, Malá Fatra (čteno 8. 8. 2026)
+    — „In the geomorphological system, it is a part of the Fatra-Tatra
+    Area", části „Lúčanská Malá Fatra and Krivánska Malá Fatra"
+    a „Malá Fatra is basically one large karst feature". Hranice u Strečna:
+    mineraly.sk (čteno 8. 8. 2026) — Váh se „s celou svojou silou zahryzla
+    do chrbta Malej Fatry" a „rozrezala ju na dve časti". Vypálení chat
+    v listopadu 1944 a druhé požáry v osmdesátých letech: viz
+    interniPoznamky, prameny chatapodchlebom.sk a Žilinský večerník
+    (čteno 8. 8. 2026). SROVNÁNÍ S BESKYDAMI je NAŠE, plyne z vlastního
+    korpusu. Jánošíkove diery: slovakia.travel (čteno 8. 8. 2026) uvádí
+    tiesňavy na úpätí Veľkého Rozsutca u osady Štefanová — spojitost jména
+    s Jánošíkem tentýž pramen NEDOKLÁDÁ, próza ji proto netvrdí.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Veľký Kriváň
+  vyska: 1708
+  source: >-
+    Anglická Wikipedie, stránka vrcholu Veľký Kriváň (čteno 8. 8. 2026):
+    „Elevation: 1,708 m (5,604 ft)", souřadnice 49.18778 / 19.03111. ROZPOR O METR: souhrnná stránka Malá Fatra téže Wikipedie
+    uvádí „The highest peak is Veľký Kriváň at 1,709 m AMSL in Krivánska
+    Malá Fatra." Zapsáno 1708 dle konvence z 27. 7. 2026 (nižší číslo,
+    rozpor přiznat) a proto, že stránka vrcholu je konkrétnější pramen než
+    souhrn pohoří. POZOR NA ZÁMĚNU: tatranský Kriváň (2494 m) je úplně
+    jiná a slavnější hora; a nejvyšší vrchol LÚČANSKÉ části je Veľká lúka
+    (1476 m dle PeakVisoru).
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala („kandidaty budoucich oblasti nech
+  a rovnou je zaloz"). Konfigurace okna je v scripts/oblasti.ts (slug
+  mala-fatra, zeme SK, katalogové názvy Malá Fatra a Lúčanská Malá Fatra),
+  kotvy okna a jejich prameny v komentáři tamtéž.
+
+  TAHLE OBLAST VZNIKLA S DATY. 59 kandidátů přišlo z beskydského exportu
+  DATA-01 (Michalův klik 8. 8. 2026), který běžel ještě podle širokého okna
+  sahajícího na jih k 49.25 — tedy přes celou Malou Fatru. Kandidáti byli
+  přesunuti z data/kandidati/beskydy/ týž den; do `_vyrazeno.yaml` se
+  ZÁMĚRNĚ nezapsali, protože ten seznam se od 8. 8. porovnává podle
+  posledního úseku cesty a záznam „beskydy/<slug>" by objekt umlčel
+  i tady. Nové beskydské okno je už nezachytí, takže se tam sami nevrátí.
+
+  CO PŘESUNUTÍ KANDIDÁTI JSOU: převážně terchovské pronájmy — chalupy,
+  drevenice a priváty (Chalupa Božka, Chata Tiesňavy, Chata pod sochou
+  Jánošíka, Drevenica Jakub…). Klíč zařazení jich splní málo; triáž je
+  z většiny pošle do koše MIMO KLÍČ. **Dvě výjimky, které si zaslouží
+  pozornost hned:** `lubova-utulna-na-chotari` (jméno nese „útulňa", což
+  je typ objektu, který průvodce vede) a `chata-samota` se
+  `family-resort-zazriva` v Zázrivé, tedy na hranici s Oravskou Magurou.
+
+  PRAVIDLO, PODLE KTERÉHO SE KANDIDÁTI DĚLILI MEZI TŘI NOVÉ OBLASTI:
+  hranice na 19.14 východní délky (Malá Fatra × Oravská Magura) a na 19.48
+  (Oravská Magura × Západné Tatry). Je to PROVIZORNÍ dělení podle
+  souřadnic, ne podle pramene o příslušnosti objektu — u Zázrivé, která
+  leží přesně mezi Malou Fatrou a Oravskou Magurou, to rozhodne až triáž.
+  Okna obou oblastí se v pásu 19.10–19.22 záměrně překrývají.
+
+  CHATAŘSKÁ HISTORIE — NEJCENNĚJŠÍ VĚC OBLASTI, doložená a připravená pro
+  budoucí profily. **Chata pod Chlebom** (1414 m): postavil ji Klub
+  československých turistů, usnesení o stavbě 7. 5. 1929, otevřena
+  21. 12. 1930 podle projektu architekta Waltera Mayera, po rozšíření
+  v roce 1937 podle vlastního webu „najväčšia chata vybudovaná na Slovensku
+  po roku 1918"; 3. 11. 1944 ji při protipartyzánském tažení vypálili
+  němečtí vojáci, obnovena 1945–1948, 12. 4. 1982 (Velikonoční pondělí)
+  vyhořela znovu, rekonstruována 1. 5.–30. 11. 2021 (chatapodchlebom.sk).
+  **Chata pod Rozsutcom:** postavil ji soukromník Jozef Weider z Budatína,
+  dokončena 1932–1933 s 30 lůžky, 1937 rozšířena na 80; 1944 vypálena,
+  do 1946 obnovena (86 lůžek), 17. 1. 1985 vyhořela po technické poruše
+  naftového agregátu vleku a UŽ NIKDY NEBYLA OBNOVENA (Žilinský večerník,
+  zilinak.sk). **Chata pod Suchým** (1075 m): stavba 1938–1943, otevřena
+  1. 7. 1943, vypálena 31. 10. 1944, obnovena a znovuotevřena 1. 9. 1949.
+  **Chata na Kľačianskej Magure** (1153 m): dnešní budova z roku 1949,
+  nahradila starší útulnu „Lamošová" zničenou za války; dnes ji provozuje
+  KST Vrútky. **Chata na Grúni** (973 m): rok vzniku nedoložen.
+  POZOR NA POPLETENÍ: Chata pod Chlebom a Chata pod Rozsutcom mají nápadně
+  paralelní osudy (stavba na přelomu 20. a 30. let, vypálení v listopadu
+  1944, druhý požár v 80. letech) — klíčový rozdíl je, že Chlebom byla
+  obnovena a Rozsutcom ne.
+
+  OCHRANA: CHKO Malá Fatra vyhlášena opatřením č. 22/1967, roku 1988
+  nařízením vlády SSR č. 24 z 18. 1. 1988 překategorizována na národní
+  park o rozloze 22 630 ha s ochranným pásmem 23 262 ha (npmalafatra.sk,
+  čteno 8. 8. 2026). Lanovka Vrátna (740 m) – Chleb (1490 m) jezdí od roku
+  2006 (anglická Wikipedie). Terchová je rodištěm Juraje Jánošíka a její
+  hudba je od roku 2013 na seznamu nehmotného dědictví UNESCO (tamtéž).
+
+  DALŠÍ KROK: triáž kandidátů (`npx tsx scripts/triaz-kandidatu.ts
+  mala-fatra`) a pak Michalův klik na DATA-01 pro `mala-fatra` — teprve
+  vlastní běh s vlastním oknem přinese objekty z Lúčanské části a od
+  Martina, které beskydské okno vůbec nepokrývalo. Seznam kliků drží
+  docs/KLIKY-PRO-MICHALA.md.
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.

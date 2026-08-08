@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       oblast:
-        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet | sumava | beskydy | jeseniky | javorniky-vsetinske-vrchy'
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet | sumava | beskydy | jeseniky | javorniky-vsetinske-vrchy | mala-fatra | oravska-magura | zapadne-tatry'
         required: false
         default: 'krkonose'
   # Auto-běh při změně generátoru nebo šablony: nová vrstva/vzhled se do

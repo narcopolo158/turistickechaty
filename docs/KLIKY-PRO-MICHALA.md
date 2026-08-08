@@ -20,16 +20,22 @@ pravdu — dlouhý seznam s odškrtnutými řádky se přestane čtít.
 
 ---
 
-## 1. DATA-01 pro tři nové oblasti — nejvyšší priorita
+## 1. DATA-01 pro nové oblasti
 
-Bez tohohle kroku nové oblasti nemají ani jednoho kandidáta, takže se na
-nich nedá pracovat vůbec. Tři samostatné běhy, po jednom pro každou oblast:
+Beskydy máš odklikané (8. 8. 2026, 385 kandidátů) — díky. Zbývá pět oblastí.
+U prvních dvou to znamená „nemají zatím ani jednoho kandidáta"; u tří
+slovenských už kandidáti JSOU (přišli omylem s beskydským exportem, protože
+běžel podle širokého okna), ale jen ti z podhůří — vlastní běh s vlastním
+oknem přinese hřebeny, které beskydské okno vůbec nepokrývalo.
 
 | workflow | políčko `oblast` | co to udělá |
 |---|---|---|
 | **DATA-01: OSM export chat (dle oblasti)** | `beskydy` | stáhne kandidáty Beskyd ze tří zemí (CZ, PL, SK) |
 | **DATA-01: OSM export chat (dle oblasti)** | `jeseniky` | stáhne kandidáty Jeseníků (CZ, PL) |
-| **DATA-01: OSM export chat (dle oblasti)** | `javorniky-vsetinske-vrchy` | stáhne kandidáty Javorníků a Vsetínských vrchů (CZ, SK) — oblast vznikla 8. 8. 2026 tvým rozhodnutím, že nepatří pod Beskydy |
+| **DATA-01: OSM export chat (dle oblasti)** | `javorniky-vsetinske-vrchy` | stáhne kandidáty Javorníků a Vsetínských vrchů (CZ, SK) — oblast vznikla 8. 8. 2026 tvým rozhodnutím, že nepatří pod Beskydy; osm kandidátů už tam je z beskydského exportu |
+| **DATA-01: OSM export chat (dle oblasti)** | `mala-fatra` | Malá Fatra (SK) — 59 kandidátů z beskydského exportu už v repu je, ale všichni z okolí Terchové; běh přinese Lúčanskou část, Martinské hole a hřeben pod Veľkým Kriváňom |
+| **DATA-01: OSM export chat (dle oblasti)** | `oravska-magura` | Oravská Magura (SK) — 6 kandidátů v repu; běh přinese podcelky Paráč a Budín |
+| **DATA-01: OSM export chat (dle oblasti)** | `zapadne-tatry` | Západné Tatry / Roháče (SK, PL) — 13 kandidátů v repu, všichni z podhůří u Zuberce; běh přinese hřebenové chaty a polská schroniska. **První vysokohorská oblast průvodce** |
 
 Políčko `api` nech prázdné — skript sám zkouší `overpass-api.de` a při
 selhání zrcadlo `kumi.systems` (fallback přibyl 20. 7. 2026 kvůli rate

@@ -1,0 +1,43 @@
+# Chata Uhorčík — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/4966913963 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/mala-fatra/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Uhorčík
+slug: chata-uhorcik
+zeme: sk
+oblast: mala-fatra
+lat: 49.2825758
+lng: 19.0540053
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/4966913963 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +421 905 861 385
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/4966913963 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  PŘESUNUT Z data/kandidati/beskydy/ dne 8. 8. 2026 na pokyn Michala
+  („kandidaty budoucich oblasti nech a rovnou je zaloz"). Beskydský export
+  DATA-01 běžel ještě podle širokého okna, které sahalo na jih k 49.25 a na
+  západ k 18.00, a stáhl proto i objekty ze sousedních pohoří. Zúžením okna
+  po rozdělení Beskyd a Javorníků objekt z beskydského okna vypadl; oblast
+  `mala-fatra` byla týž den založena právě pro tyhle kandidáty. Do
+  `_vyrazeno.yaml` se ZÁMĚRNĚ nezapisuje: ten seznam se od 8. 8. 2026
+  porovnává podle posledního úseku cesty, takže záznam „beskydy/<slug>" by
+  objekt umlčel i tady. Nové beskydské okno ho už nezachytí.
+  ROZDĚLENÍ MEZI TŘI NOVÉ OBLASTI je provizorní a podle zeměpisné délky
+  (hranice 19.14 a 19.48), ne podle pramene o příslušnosti objektu —
+  potvrdí ho až triáž.

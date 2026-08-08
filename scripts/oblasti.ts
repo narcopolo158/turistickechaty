@@ -262,6 +262,108 @@ export const OBLASTI: OblastKonfig[] = [
     katalogPohori: ['Javorníky', 'Vsetínské vrchy'],
   },
   {
+    slug: 'mala-fatra',
+    nazev: 'Malá Fatra',
+    /**
+     * Osmá oblast — POKYN MICHALA 8. 8. 2026: „kandidaty budoucich oblasti
+     * nech a rovnou je zaloz". Beskydský export DATA-01 totiž běžel podle
+     * ještě širokého okna a přinesl 59 kandidátů z Malé Fatry (Terchová,
+     * Biely Potok, Zázrivá). Michal rozhodl je nemazat a oblast rovnou
+     * založit — takže na rozdíl od ostatních oblastí tahle vzniká S DATY,
+     * ne kvůli nim.
+     */
+    zeme: ['SK'],
+    /**
+     * Okno kryje OBĚ ČÁSTI Malé Fatry, které od sebe u Strečna odděluje
+     * Váh — Krivánskou na severu a Lúčanskou na jihu. Kotvy jsou doložené
+     * souřadnice (prameny v data/oblasti/mala-fatra.yaml):
+     *   západ  18.70 — Žilina (49.22 / 18.73) na severozápadním úpatí
+     *   východ 19.22 — Zázrivá (49.27 / 19.15) na východním okraji
+     *   sever  49.35 — nejsevernější kandidáti nad Terchovou (49.296)
+     *   jih    49.02 — Martin (49.065 / 18.922) pod Lúčanskou částí
+     *
+     * OBĚ MĚSTA JSOU VEVNITŘ SCHVÁLNĚ (Žilina, Martin): Malá Fatra se
+     * zvedá přímo nad nimi a jsou to výchozí body na hřeben — vzor okraje
+     * Liberce u Ještědu a Vsetína u Vsetínských vrchů. Městské podniky
+     * vyřeší triáž.
+     *
+     * PŘEKRYV S ORAVSKOU MAGUROU v pásu 19.10–19.22 je záměrný: obec
+     * Zázrivá leží přesně na hranici obou pohoří (nad ní Veľký Rozsutec,
+     * za ní Paráč a Minčol), takže ostrý řez by objekty v dolině vyřízl.
+     */
+    bbox: { latMin: 49.02, lngMin: 18.7, latMax: 49.35, lngMax: 19.22 },
+    // 3D okno bez městských okrajů Žiliny a Martina, kde už terén klesá
+    // do Turčianské a Žilinské kotliny.
+    bbox3d: { latMin: 49.05, lngMin: 18.75, latMax: 49.32, lngMax: 19.18 },
+    poznamka:
+      'osmá oblast (pokyn Michala 8. 8. 2026 „kandidáty budoucích oblastí nech a rovnou je založ") — vznikla s 59 kandidáty z beskydského exportu',
+    katalogPohori: ['Malá Fatra', 'Lúčanská Malá Fatra'],
+  },
+  {
+    slug: 'oravska-magura',
+    nazev: 'Oravská Magura',
+    // Devátá oblast, týž pokyn Michala 8. 8. 2026 — přišla s ní šestice
+    // kandidátů z beskydského exportu (Zázrivá, Kubínska hoľa, Sedliacka
+    // Dubová). Je to nejmenší oblast korpusu; kdyby ji Michal chtěl radši
+    // sloučit s Malou Fatrou nebo s Beskydami, je to otázka v deníku.
+    zeme: ['SK'],
+    /**
+     * Okno kryje všechny tři podcelky Oravské Magury — Paráč, Kubínsku
+     * hoľu a Budín — mezi Malou Fatrou na západě a Oravskými Beskydami
+     * na severu. Kotvy (prameny v data/oblasti/oravska-magura.yaml):
+     *   západ  19.10 — Zázrivá (49.27 / 19.15) na západním okraji,
+     *                  s rezervou do doliny
+     *   východ 19.50 — Sedliacka Dubová (49.271 / 19.422) a Oravský
+     *                  Podzámok (49.27 / 19.37)
+     *   sever  49.42 — podcelek Paráč a Hruštínska hoľa nad Zákamenným
+     *   jih    49.18 — Dolný Kubín (49.21 / 19.30) pod Kubínskou hoľou
+     */
+    bbox: { latMin: 49.18, lngMin: 19.1, latMax: 49.42, lngMax: 19.5 },
+    bbox3d: { latMin: 49.2, lngMin: 19.14, latMax: 49.4, lngMax: 19.46 },
+    poznamka:
+      'devátá oblast (pokyn Michala 8. 8. 2026) — nejmenší oblast korpusu, vznikla se šesticí kandidátů z beskydského exportu',
+    katalogPohori: ['Oravská Magura'],
+  },
+  {
+    slug: 'zapadne-tatry',
+    nazev: 'Západné Tatry',
+    // Desátá oblast, týž pokyn Michala 8. 8. 2026 — přišla s ní třináctka
+    // kandidátů z beskydského exportu (Zuberec, Oravský Biely Potok,
+    // Oravice). PRVNÍ VYSOKOHORSKÁ OBLAST PRŮVODCE: hlavní hřeben má
+    // podle pramene 31 dvoutisícovek, což je jiná liga než dosavadní
+    // středohory — a bude to znamenat i jiná data (útulny, sedla,
+    // sezónní uzávěry, horská služba).
+    zeme: ['SK', 'PL'],
+    /**
+     * Okno kryje slovenské Západné Tatry (Roháče, Liptovské hole, Sivý
+     * vrch, Osobitá, Červené vrchy) i polské Tatry Zachodnie s dolinami
+     * Chochołowskou a Kościeliskou. Kotvy (prameny
+     * v data/oblasti/zapadne-tatry.yaml):
+     *   západ  19.48 — Oravský Biely Potok (49.273 / 19.561) a nejzápadnější
+     *                  kandidát (19.525), s rezervou na Sivý vrch
+     *   východ 19.95 — polská hranice Západních Tater u Liliového sedla;
+     *                  schroniska na Hali Ornak (19.859) a Polanie
+     *                  Chochołowskiej (19.789) jsou vevnitř
+     *   sever  49.36 — Oravice (49.295 / 19.757) a Rów Podtatrzański
+     *   jih    49.10 — podhorské obce Liptova, Pribylina (49.152 / 19.843)
+     *
+     * DVĚ VĚDOMÁ ROZHODNUTÍ. (1) ZAKOPANÉ JE VENKU. Leží na 49.300 /
+     * 19.950, tedy přesně na hraně, a je to město pod VYSOKÝMI Tatrami,
+     * ne pod Západními; jeho pensiony by okno zaplavily. U Žiliny
+     * a Vsetína se město dovnitř bralo, protože se hory zvedají přímo nad
+     * nimi — tady to tak není. (2) LIPTOVSKÝ MIKULÁŠ JE TAKY VENKU
+     * (49.073 / 19.625): leží v Liptovské kotlině deset kilometrů od
+     * úpatí, kdežto podhorské obce (Pribylina, Žiar) okno kryje.
+     */
+    bbox: { latMin: 49.1, lngMin: 19.48, latMax: 49.36, lngMax: 19.95 },
+    // 3D okno bez severního podhůří (Rów Podtatrzański) a bez liptovského
+    // úpatí — model má být o hřebeni.
+    bbox3d: { latMin: 49.13, lngMin: 19.52, latMax: 49.33, lngMax: 19.92 },
+    poznamka:
+      'desátá oblast (pokyn Michala 8. 8. 2026) — první vysokohorská oblast průvodce, přeshraniční s polskými Tatry Zachodnie',
+    katalogPohori: ['Západní Tatry', 'Tatry Zachodnie'],
+  },
+  {
     slug: 'jeseniky',
     nazev: 'Jeseníky',
     // Šestá oblast (pověření Michala 8. 8. 2026, tentýž pokyn jako

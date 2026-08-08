@@ -325,14 +325,18 @@ jmenovci:
     checked: 2026-08-08
   - jadro: maria
     objekty:
-      - beskydy/chalupa-maria
-      - beskydy/chata-maria
+      - mala-fatra/chalupa-maria
+      - mala-fatra/chata-maria
     duvod: >-
       Dva různé objekty, naměřeno 1 360 m. Obě jména jsou křestní („Mária"),
       což je u slovenských pronájmů běžné — oba kandidáti nesou v OSM tag
       pronájmu a triáž je nejspíš pošle mimo klíč.
-    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na potvrzení při triáži Beskyd
-    checked: 2026-08-08
+      OBLAST ZMĚNĚNA TÝŽ DEN: kandidáti byli 8. 8. 2026 přesunuti
+      z `beskydy` do `mala-fatra` (leží u Terchové, beskydský export je
+      stáhl podle širokého okna). Kontrola kolizí se kvůli tomu ozvala
+      znovu, protože klíčem registru je MNOŽINA objektů — přesun oblasti
+      množinu změní stejně jako přírůstek nového jmenovce. Je to správně
+      a je to důvod, proč se sem přesuny musí propisovat.
   - jadro: na mosornym groniu
     objekty:
       - beskydy/dom-na-mosornym-groniu

@@ -1,0 +1,104 @@
+# Oblast Oravská Magura — devátá oblast průvodce a zatím nejmenší.
+#
+# POKYN MICHALA 8. 8. 2026: „kandidaty budoucich oblasti nech a rovnou je
+# zaloz." Z beskydského exportu DATA-01 přišla šestice kandidátů z okolí
+# Kubínské hole, Zázrivé a Sedliacké Dubové.
+#
+# OTÁZKA, KTEROU JE POCTIVÉ POLOŽIT: šest kandidátů a dva katalogové
+# objekty jsou na samostatnou oblast málo. Zakládá se přesto, protože
+# Oravská Magura je samostatná geomorfologická jednotka mezi Malou Fatrou
+# a Oravskými Beskydami a přilepit ji k jedné z nich by byla táž chyba,
+# jakou Michal 8. 8. 2026 odmítl u Javorníků („jestedsky hrbet jsme taky
+# nepripojili k jizerkam"). Kdyby to Michal viděl jinak, sloučení je
+# levné — je to otázka v deníku.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla se sem nepíšou.
+nazev: Oravská Magura
+slug: oravska-magura
+typ: pohori
+zeme: sk
+
+sklonovani:
+  druhy: Oravské Magury
+  sesty: Oravské Maguře
+
+charakteristika: >-
+  Zalesněný hřbet nad Oravou mezi Malou Fatrou na západě a Oravskými
+  Beskydami na severu, se třemi podcelky — Paráčem, Kubínskou hoľou
+  a Budínem. Vrcholy jsou zaoblené hole nad hustými smrkovými a bukovými
+  lesy a nejnavštěvovanějším místem je Kubínska hoľa nad Dolným Kubínem,
+  kde jsou lyžařské sjezdovky. Turisticky je to tišší kout než sousední
+  pohoří, což je pro průvodce spíš přednost než vada.
+overeniCharakteristika:
+  source: >-
+    Zařazení a sousedství: treking.cz, stránka Oravské Magury (čteno
+    8. 8. 2026) — pohoří hraničí s Beskydskou vrchovinou na severu,
+    Skorušinskými vrchy na východě, Malou Fatrou na západě a Chočskými
+    vrchy na jihu (načtený text měl poškozenou diakritiku, proto výtah, ne
+    doslovný citát). Podcelky: týž pramen, doslova — „Oravská Magura se
+    dělí na tři samostatné geomorfologické podcelky. Jsou to Paráč,
+    Kubínska hoľa a Budán." (pramen píše „Budán", jinde se uvádí „Budín" —
+    rozpor přiznán, do prózy jde tvar Budín jako běžnější; kdo doloží
+    jinak, opraví to). Lesy: zamilujsadoslovenska.sk (čteno 8. 8. 2026) —
+    „Povrch pohoria je prevažne pokrytý hustými lesmi, kde dominujú smreky
+    a buky." Lyžařský areál: treking.cz a kubinska.sk (čteno 8. 8. 2026).
+    VĚTA O TIŠŠÍM KOUTU je NAŠE hodnocení, ne pramen.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Minčol
+  vyska: 1394
+  source: >-
+    treking.cz (čteno 8. 8. 2026): „Minčol (1 394 m) je nejvyšší hora
+    Oravské Magury." Potvrzeno druhým pramenem téhož dne — kamnavylet.sk:
+    „Minčol Mountain (1394 m n.m.; 49.271777, 19.248503)".
+    POZOR, TŘI PASTI. (1) NEJVYŠŠÍ NENÍ KUBÍNSKA HOĽA, jak by se čekalo:
+    ta má 1347 m dle PeakVisoru, je ale turisticky i institucionálně
+    známější (lyžařský areál), a proto se za nejvyšší běžně vydává.
+    (2) „Minčol" je jméno několika karpatských vrcholů — PeakVisor pod
+    dotazem „Minčol" vrací bod 48.950 / 19.157 o výšce 1398 m, který sám
+    řadí do Velké Fatry, tedy horu asi 35 km jižněji. Souřadnice se proto
+    berou z kamnavylet.sk, ne z PeakVisoru. (3) Kubínska hoľa má tři různá
+    čísla: 1347 m (PeakVisor), 1346 m (běžně uváděné) a 1375 m na webu
+    lyžařského areálu, což je jiný referenční bod — nekombinovat.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala. Konfigurace okna je
+  v scripts/oblasti.ts (slug oravska-magura, zeme SK, katalogový název
+  Oravská Magura), kotvy v komentáři tamtéž.
+
+  ŠEST KANDIDÁTŮ PŘESUNUTO z data/kandidati/beskydy/ (beskydský export
+  DATA-01 běžel podle širokého okna): Chalupa Fatra, Chata Potôčik
+  Zázrivá, Chata TRAFO, Chata na Kubínskej holi, Chata Natalie
+  a Drevenica Sedliacka Dubová. Do `_vyrazeno.yaml` se ZÁMĚRNĚ nezapsali —
+  ten seznam se od 8. 8. porovnává podle posledního úseku cesty, takže
+  záznam „beskydy/<slug>" by je umlčel i tady.
+
+  NEJZAJÍMAVĚJŠÍ Z NICH je `chata-na-kubinskej-holi`: treking.cz zmiňuje
+  na hřebeni „Chata na Kúbanskej holi" [sic] a „Bouda na Minčole", ale
+  žádnou jejich historii — kdo je postavil a kdy, se nepodařilo doložit.
+  Katalog vede v Oravské Maguře dva objekty.
+
+  DĚLENÍ KANDIDÁTŮ mezi tři nové oblasti je provizorní a podle souřadnic:
+  hranice na 19.14 (Malá Fatra × Oravská Magura) a 19.48 (Oravská Magura ×
+  Západné Tatry). U Zázrivé, která leží přesně na hranici dvou pohoří, to
+  rozhodne až triáž — proto se okna obou oblastí v pásu 19.10–19.22
+  záměrně překrývají.
+
+  OCHRANA: celoplošná CHKO ani národní park se pro Oravskou Maguru
+  nepodařily doložit; zamilujsadoslovenska.sk jmenuje jen dílčí lokality
+  Natura 2000 (Lomnianska hoľa, Hruštínska hoľa, Kubínska hoľa). Sousední
+  CHKO Horná Orava je JINÉ, samostatné území — neplést. Nezapisuje se
+  tvrzení, že chráněná není; jen že celoplošnou ochranu neznáme.
+
+  DALŠÍ KROK: Michalův klik na DATA-01 pro `oravska-magura` — vlastní běh
+  s vlastním oknem přinese objekty z podcelků Paráč a Budín, které
+  beskydské okno vůbec nepokrývalo. Seznam kliků drží
+  docs/KLIKY-PRO-MICHALA.md.
+
+  HERO FOTKA CHYBÍ.

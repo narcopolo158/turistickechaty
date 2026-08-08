@@ -1,0 +1,130 @@
+# Oblast Západné Tatry — desátá oblast průvodce a PRVNÍ VYSOKOHORSKÁ.
+#
+# POKYN MICHALA 8. 8. 2026: „kandidaty budoucich oblasti nech a rovnou je
+# zaloz." Z beskydského exportu DATA-01 přišla třináctka kandidátů z okolí
+# Zuberce, Oravského Bieleho Potoka a Oravic — tedy ze severního podhůří
+# Roháčů.
+#
+# ČÍM JE TAHLE OBLAST JINÁ NEŽ VŠECHNY DOSAVADNÍ: hlavní hřeben Západních
+# Tater má podle pramene 31 dvoutisícovek. Dosud průvodce popisoval
+# středohory, kde je nejvyšší bod 1725 m (Babia Góra) a kde se dá skoro
+# všude vyjít a sejít týž den. Tady se poprvé objeví data, která jsme
+# nepotřebovali: sezónní uzávěry turistických cest, horská služba,
+# vysokohorské útulny, přechody sedel. Datový model to unese, ale profily
+# budou muset být opatrnější — u tatranské chaty je „otevřeno" jiná
+# informace než u bavorského hostince.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla se sem nepíšou.
+nazev: Západné Tatry
+slug: zapadne-tatry
+typ: pohori
+zeme: sk
+
+sklonovani:
+  druhy: Západních Tater
+  sesty: Západních Tatrách
+
+charakteristika: >-
+  Západní křídlo Tater od Sivého vrchu po Červené vrchy, na severu s polskými
+  Tatry Zachodnie a dolinami Chochołowskou a Kościeliskou. Hlavní hřeben nese
+  podle pramenů jedenatřicet dvoutisícovek a nejvyšší je Bystrá s 2248 metry —
+  proti Vysokým Tatrám je ale reliéf mírnější a hřebeny jsou travnaté hole,
+  ne skalní jehly. Nejznámější kout jsou Roháče se svými plesy, kam se chodí
+  ze Zverovky nad Zubercem. Chaty tu mají stejnou jizvu jako v Malé Fatře:
+  Ťatliakovu chatu i Zverovku vypálili v prosinci 1944 němečtí vojáci.
+overeniCharakteristika:
+  source: >-
+    Nejvyšší vrchol a hranice: anglická Wikipedie, Western Tatras (čteno
+    8. 8. 2026) — „its highest peak is Bystrá at 2,248 meters" a „The
+    mountains border the High Tatras in the east, Podtatranská kotlina in
+    the south, Choč Mountains in the west and Rów Podtatrzański in the
+    north." Podcelky Roháče (nejvyšší Baníkov 2178 m) a Sivý vrch (1805 m)
+    vede táž stránka jako jednotky Západních Tater, ne samostatná pohoří.
+    Jedenatřicet dvoutisícovek na hřebeni dlouhém 37 km: táž Wikipedie,
+    ale rešerše to podala jako výtah, ne doslovný citát — proto je v próze
+    „podle pramenů", ne jako holé číslo. Travnaté hole a mírnější reliéf:
+    horydoly.cz (čteno 8. 8. 2026) — Liptovské hole jako travnatá oblast
+    s nejvyšší Bystrou, Roháče jako „ostrý a výrazný skalnatý hřeben",
+    Sivý vrch jako „západní vápencový masiv"; výtah, ne doslovný citát.
+    Vypálení chat v prosinci 1944: viz interniPoznamky.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Bystrá
+  vyska: 2248
+  source: >-
+    Anglická Wikipedie, stránka vrcholu (čteno 8. 8. 2026): „Elevation:
+    2,248 m (7,375 ft)", souřadnice 49.18861 / 19.84278. Potvrzeno
+    PeakVisorem téhož dne („Bystrá (2,248 m) – Tatra Mountains,
+    Slovakia", 49.188372 / 19.842583) — dva prameny, shodná výška, rozdíl
+    jen v zaokrouhlení souřadnic. POZOR NA ZÁMĚNU: „Bystrá" se jmenují
+    i obce a chaty v Nízkých Tatrách a v Osturni; rešerše 8. 8. 2026
+    ověřila, že „Chata Bystrá" v Západních Tatrách neexistuje — nalezené
+    objekty toho jména leží jinde na Slovensku.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala. Konfigurace okna je
+  v scripts/oblasti.ts (slug zapadne-tatry, zeme SK+PL, katalogové názvy
+  Západní Tatry a Tatry Zachodnie), kotvy v komentáři tamtéž.
+
+  TŘINÁCT KANDIDÁTŮ PŘESUNUTO z data/kandidati/beskydy/: Chata Roháče,
+  Chata Sekaniská, Chata pod Roháčmi – Mores, Chata Hldočín, Chata Oravice,
+  Chata Bôrik, Drevenice Zuberec, Drevenica pri kostole, Dom na vyhliadke,
+  Chalupa Elen, Rima, Tonka, U nás. Do `_vyrazeno.yaml` se ZÁMĚRNĚ
+  nezapsali (seznam se od 8. 8. porovnává podle posledního úseku cesty).
+  Všech třináct leží v podhůří u Zuberce a Oravic, ne na hřebeni —
+  vlastní horské chaty a schroniska přinese až běh s vlastním oknem.
+
+  CHATAŘSKÁ HISTORIE — DOLOŽENÁ A PŘIPRAVENÁ pro budoucí profily.
+  **Ťatliakova chata** (1374 m u Ťatliakova jezera): první útulnu tu
+  postavil lesník Alexius Demianz roku 1883, z iniciativy Jána Ťatliaka
+  začala roku 1937 stavba nové chaty dokončená 1941; 9. 12. 1944 ji za
+  Slovenského národního povstání vypálili Němci, 1946 vznikla nová
+  dvoupatrová budova, 28. 5. 1963 vyhořela po zkratu a znovu otevřela
+  teprve v červenci 2017, po 54 letech (salkakavy.sk, planetslovakia.sk;
+  oba prameny se rozcházejí v tom, jestli rok 1937 byl začátek stavby nebo
+  přestavba na zrub — rozpor přiznat, ne srovnávat). **Chata Zverovka:**
+  roku 1920 útulna u ústí Látanej doliny, 1926 shořela, 1928 postavena
+  Maťašákova chata, 8. 12. 1944 vypálena do základů, 1946 provizorní srub,
+  1951 nová trvalá chata (turistika.cz, svetoutdooru.cz — POZOR, prameny
+  si odporují v příčině požáru 1944: cílené vypálení Němci × boje
+  partyzánů; výška se taky rozchází, 1024,8 × 1041 × 1010 m pro původní
+  stavbu). **Žiarska chata** (1285 m): postavena 1939, otevřena
+  1. 7. 1939, postavil ji Klub slovenských turistov a lyžiarov
+  z Liptovského Mikuláša, iniciátorem byl Oldřich Nuska (treking.cz).
+  **Chata pod Náružím** = **Chata Červenec** (jeden objekt, dvě jména):
+  předchůdkyně z roku 1970; výška 1380 m dle GPS autora × 1420 m dle
+  chaty. **Schronisko PTTK na Polanie Chochołowskiej** (1146–1148 m):
+  první schronisko 1930–1932 z iniciativy Warszawského Klubu
+  Narciarskiego, Němci je vypálili v lednu 1945, nové otevřeno 1953, od
+  1958 má vlastní malou vodní elektrárnu (historykon.pl). **Schronisko
+  PTTK na Hali Ornak** (1108–1110 m): postaveno 1947–48 na místě objektu
+  vypáleného Němci, dnes patří polskému národnímu parku.
+
+  OCHRANA — POZOR NA ČASTOU CHYBU: TANAP byl založen 1. 1. 1949 jako
+  nejstarší slovenský národní park, ALE Západné Tatry k němu byly
+  připojeny až v roce 1987 (anglická Wikipedie, čteno 8. 8. 2026). Nesmí
+  se proto psát, že jsou chráněné TANAPem od roku 1949. Polská část je
+  součástí Tatrzańského Parku Narodowego od jeho vzniku v roce 1954.
+
+  DVĚ VĚCI, KTERÉ SE NEZAPSALY. (1) Přesné sedlo, kde Západné Tatry
+  přecházejí do Vysokých — pramen hranici jmenuje jen obecně („border the
+  High Tatras in the east"). (2) Rok objevu geotermální vody v Oravicích;
+  doložená je jen teplota bazénů 34–38 °C a že je to „jediná lokalita na
+  Orave s prírodnou geotermálnou vodou" (tvrdosin.sk).
+
+  OPRAVENÁ CHYBA V MÉM ZADÁNÍ REŠERŠE: napsal jsem, že v Zuberci je
+  Múzeum liptovskej dediny. Není — to je v Pribyline. V Zuberci stojí
+  Múzeum oravskej dediny (domalenka.sk, skanzenpribylina.sk). Je to týž
+  druh chyby jako ráno u Králického Sněžníku: v zadání, ne v datech, a
+  chytil ji požadavek na pramen.
+
+  DALŠÍ KROK: Michalův klik na DATA-01 pro `zapadne-tatry`. Seznam kliků
+  drží docs/KLIKY-PRO-MICHALA.md.
+
+  HERO FOTKA CHYBÍ.
