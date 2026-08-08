@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-02T16:51:45Z",
-    "timestamp_areas_base": "2026-07-02T16:51:45Z",
+    "timestamp_osm_base": "2026-06-13T13:12:25Z",
+    "timestamp_areas_base": "2026-06-12T12:14:17Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -64,10 +64,11 @@
   "lat": 49.3404956,
   "lon": 18.9475498,
   "tags": {
+    "access": "no",
     "height": "17",
     "man_made": "tower",
     "name": "Rozhľadňa na Bobovci",
-    "opening_hours": "24/7",
+    "opening_hours": "closed",
     "tourism": "viewpoint",
     "tower:type": "observation",
     "wikidata": "Q118907089"
@@ -126,33 +127,6 @@
 },
 {
   "type": "node",
-  "id": 5063473415,
-  "lat": 49.2569914,
-  "lon": 18.6959490,
-  "tags": {
-    "building:material": "wood",
-    "height": "19.2",
-    "man_made": "tower",
-    "name": "Divinka",
-    "start_date": "2019-02",
-    "tower:type": "observation"
-  }
-},
-{
-  "type": "node",
-  "id": 5258006050,
-  "lat": 49.2977552,
-  "lon": 19.6919769,
-  "tags": {
-    "height": "13",
-    "man_made": "tower",
-    "name": "Rozhľadňa Skorušina",
-    "tourism": "viewpoint",
-    "tower:type": "observation"
-  }
-},
-{
-  "type": "node",
   "id": 5747651021,
   "lat": 49.3547246,
   "lon": 19.5663760,
@@ -190,19 +164,6 @@
     "name": "Výhliadková veža Novoť",
     "operator": "Projekt EU - Interreg",
     "source": "survey, GPS",
-    "tower:type": "observation"
-  }
-},
-{
-  "type": "node",
-  "id": 6216189400,
-  "lat": 49.2751315,
-  "lon": 18.6556890,
-  "tags": {
-    "height": "10",
-    "man_made": "tower",
-    "name": "Rozhľadňa Svedernícky vrch",
-    "tourism": "viewpoint",
     "tower:type": "observation"
   }
 },
@@ -326,17 +287,6 @@
 },
 {
   "type": "node",
-  "id": 9288679650,
-  "lat": 49.2545314,
-  "lon": 19.5761958,
-  "tags": {
-    "man_made": "tower",
-    "tower:construction": "wood",
-    "tower:type": "observation"
-  }
-},
-{
-  "type": "node",
   "id": 9332626463,
   "lat": 49.4201625,
   "lon": 18.8890347,
@@ -393,26 +343,6 @@
   "tags": {
     "height": "2",
     "man_made": "tower",
-    "tower:type": "observation"
-  }
-},
-{
-  "type": "node",
-  "id": 10975145714,
-  "lat": 49.2560413,
-  "lon": 19.6185176,
-  "tags": {
-    "ele": "20",
-    "fee": "yes",
-    "man_made": "tower",
-    "material": "metal",
-    "name": "Tonka",
-    "operator": "JOSU s.r.o.",
-    "payment:coins": "yes",
-    "payment:credit_cards": "yes",
-    "payment:debit_cards": "yes",
-    "payment:notes": "no",
-    "tower:construction": "lattice",
     "tower:type": "observation"
   }
 },
@@ -477,88 +407,6 @@
   }
 },
 {
-  "type": "node",
-  "id": 12659496829,
-  "lat": 49.2919594,
-  "lon": 18.6621554,
-  "tags": {
-    "man_made": "tower",
-    "tower:type": "observation"
-  }
-},
-{
-  "type": "node",
-  "id": 12723051931,
-  "lat": 49.2559306,
-  "lon": 19.6184606,
-  "tags": {
-    "amenity": "pub"
-  }
-},
-{
-  "type": "node",
-  "id": 13195770623,
-  "lat": 49.2712080,
-  "lon": 19.0121273,
-  "tags": {
-    "man_made": "tower",
-    "tower:type": "observation"
-  }
-},
-{
-  "type": "way",
-  "id": 331391376,
-  "center": {
-    "lat": 49.2614255,
-    "lon": 19.0277960
-  },
-  "nodes": [
-    3384535515,
-    3384535516,
-    3384535512,
-    3384535511,
-    3384535515
-  ],
-  "tags": {
-    "building": "yes",
-    "height": "30",
-    "man_made": "tower",
-    "name": "Terchovské srdce",
-    "source": "survey",
-    "start_date": "2015-10-28",
-    "tourism": "viewpoint",
-    "tower:construction": "lattice",
-    "tower:type": "observation",
-    "wikidata": "Q111371076"
-  }
-},
-{
-  "type": "way",
-  "id": 621763271,
-  "center": {
-    "lat": 49.2914760,
-    "lon": 19.7437056
-  },
-  "nodes": [
-    5873622149,
-    5873622148,
-    5873622147,
-    5873622146,
-    5873622149
-  ],
-  "tags": {
-    "access": "yes",
-    "fee": "no",
-    "man_made": "tower",
-    "name": "Rozhľadňa",
-    "source": "survey",
-    "step_count": "11",
-    "tourism": "viewpoint",
-    "tower:type": "observation",
-    "wheelchair": "no"
-  }
-},
-{
   "type": "way",
   "id": 802274443,
   "center": {
@@ -613,76 +461,6 @@
 },
 {
   "type": "way",
-  "id": 1050255244,
-  "center": {
-    "lat": 49.2761888,
-    "lon": 18.5492915
-  },
-  "nodes": [
-    9651567078,
-    9651567079,
-    9651567080,
-    9651567081,
-    9651567078
-  ],
-  "tags": {
-    "amenity": "shelter",
-    "building": "yes",
-    "man_made": "tower",
-    "name": "Tri studničky",
-    "shelter_type": "picnic_shelter",
-    "tourism": "attraction",
-    "tower:construction": "wood",
-    "tower:type": "observation"
-  }
-},
-{
-  "type": "way",
-  "id": 1314411472,
-  "center": {
-    "lat": 49.2982773,
-    "lon": 19.6925601
-  },
-  "nodes": [
-    12165874381,
-    12165874380,
-    12165874379,
-    12165874378,
-    12165874381
-  ],
-  "tags": {
-    "building": "cabin",
-    "fee": "no",
-    "operator": "LEPŠIA dedinka o.z.",
-    "source": "survey, GPS",
-    "tourism": "wilderness_hut",
-    "url": "https://www.lepsiadedinka.sk/projekty/komunitna-utulna-na-orave/",
-    "website": "https://utulna.lepsiadedinka.sk/reservation"
-  }
-},
-{
-  "type": "way",
-  "id": 1361163735,
-  "center": {
-    "lat": 49.2515965,
-    "lon": 18.3471637
-  },
-  "nodes": [
-    12600780556,
-    12600780553,
-    12600780554,
-    12600780555,
-    12600780556
-  ],
-  "tags": {
-    "ele": "961",
-    "man_made": "tower",
-    "name": "Rozhľadňa na Orgoňovej Kyčere",
-    "tower:type": "observation"
-  }
-},
-{
-  "type": "way",
   "id": 1410040466,
   "center": {
     "lat": 49.4142036,
@@ -706,25 +484,6 @@
     "tower:construction": "freestanding",
     "tower:type": "observation",
     "url": "https://www.mojekysuce.sk/spravodajstvo/na-kysuciach-rastie-nova-dominanta-rozhladna-na-vrchu-briava-s-vyhladom-na-tri-krajiny"
-  }
-},
-{
-  "type": "way",
-  "id": 1447680148,
-  "center": {
-    "lat": 49.2837146,
-    "lon": 18.6734573
-  },
-  "nodes": [
-    13282861622,
-    13282861619,
-    13282861620,
-    13282861621,
-    13282861622
-  ],
-  "tags": {
-    "man_made": "tower",
-    "tower:type": "observation"
   }
 }
 

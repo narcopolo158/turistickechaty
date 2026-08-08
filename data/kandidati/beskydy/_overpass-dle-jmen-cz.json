@@ -1,0 +1,338 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-16T06:37:49Z",
+    "timestamp_areas_base": "2026-06-15T17:30:30Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1576596861,
+  "lat": 49.5380331,
+  "lon": 18.3026265,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Skalka",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "phone": "+420 603 150 486",
+    "website": "https://www.skalkakuncice.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 4731169176,
+  "lat": 49.6365933,
+  "lon": 18.4840782,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata Prašivá",
+    "opening_hours": "Oct-May Mo,Tu 10:00-16:00; Oct-May We-Fr 10:00-18:00; Oct-May Sa 09:00-19:00; Oct-May Su 09:00-18:00; Jun-Sep Mo-Fr 10:00-19:00; Jun-Sep Sa,Su 09:00-19:00",
+    "phone": "+420 558 438 084",
+    "website": "http://www.chataprasiva.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 4731169177,
+  "lat": 49.6366242,
+  "lon": 18.4841392,
+  "tags": {
+    "name": "Chata Prašivá",
+    "phone": "+420 558 438 084",
+    "toilets": "yes",
+    "tourism": "alpine_hut",
+    "website": "http://www.chataprasiva.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 34598716,
+  "center": {
+    "lat": 49.4896456,
+    "lon": 18.2654111
+  },
+  "nodes": [
+    401654898,
+    401654896,
+    2786254693,
+    401654894,
+    401654892,
+    401654890,
+    401654888,
+    2786254689,
+    2786254685,
+    2786254687,
+    2786254691,
+    2898724827,
+    2898724828,
+    401654886,
+    401654885,
+    401654883,
+    401654881,
+    401654880,
+    401654879,
+    2898724839,
+    2898724840,
+    2898724838,
+    2898724837,
+    401654911,
+    401654909,
+    401654907,
+    401654905,
+    401654903,
+    401654901,
+    2898724834,
+    2898724835,
+    401654899,
+    401654898
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:ruian:type": "5",
+    "cuisine": "regional",
+    "historic": "yes",
+    "name": "Libušín",
+    "opening_hours": "off, Su-Th 09:00-19:00, Fr,Sa 09:00-20:00",
+    "phone": "+420556836207",
+    "ref:ruian:building": "16992091",
+    "ruin": "yes",
+    "source": "cuzk:ruian",
+    "tourism": "yes",
+    "website": "http://www.libusin-mamenka.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 34600259,
+  "center": {
+    "lat": 49.4895236,
+    "lon": 18.2659174
+  },
+  "nodes": [
+    401742514,
+    2898724833,
+    2898724831,
+    2898724830,
+    2898724829,
+    401742513,
+    401742510,
+    401742507,
+    401742505,
+    401742503,
+    401742500,
+    401742496,
+    401742493,
+    401742517,
+    401742514
+  ],
+  "tags": {
+    "building": "residential",
+    "building:ruian:type": "3",
+    "historic": "yes",
+    "internet_access": "wlan",
+    "name": "Maměnka",
+    "phone": "+420556836207",
+    "ref:ruian:building": "16992148",
+    "source": "cuzk:ruian",
+    "tourism": "alpine_hut",
+    "website": "www.libusin-mamenka.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 121542942,
+  "center": {
+    "lat": 49.4897622,
+    "lon": 18.2669984
+  },
+  "nodes": [
+    1360389634,
+    1360388089,
+    1360387413,
+    1360389308,
+    1360388899,
+    1360390119,
+    1360389675,
+    1360388129,
+    1360387457,
+    1360389107,
+    1360388677,
+    1360389850,
+    1360389485,
+    1360387815,
+    1360387261,
+    1360388879,
+    1360390055,
+    1360388611,
+    1360388068,
+    1360389425,
+    1360389043,
+    1360387436,
+    1360390099,
+    1360388656,
+    1360388109,
+    1360389467,
+    1360389087,
+    1360387244,
+    1360389831,
+    1360388363,
+    1360387783,
+    1360389267,
+    1360388858,
+    1360390075,
+    1360389634
+  ],
+  "tags": {
+    "building": "civic",
+    "building:ruian:type": "5",
+    "name": "Tanečnica",
+    "ref:ruian:building": "16991478",
+    "source": "cuzk:ruian",
+    "stars": "3",
+    "tourism": "alpine_hut",
+    "website": "www.hoteltanecnica.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 169832917,
+  "center": {
+    "lat": 49.5458523,
+    "lon": 18.4483379
+  },
+  "nodes": [
+    1809915519,
+    1809915524,
+    1809915523,
+    4954327554,
+    1809915518,
+    4954327555,
+    1809915519
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "282",
+    "addr:housenumber": "282",
+    "addr:place": "Krásná",
+    "addr:postcode": "73904",
+    "building": "hotel",
+    "building:levels": "4",
+    "building:ruian:type": "11",
+    "contact:facebook": "https://www.facebook.com/chataemilzatopek",
+    "contact:instagram": "https://www.instagram.com/chataemilzatopek/",
+    "email": "rezervace@lysa-hora.cz",
+    "internet_access": "wlan",
+    "name": "Chata Emil Zátopek - Maraton",
+    "opening_hours": "Apr-Oct: Mo-Th 08:00-20:00; Fr 08:00-22:00; Sa 07:00-22:00; Su 07:00-20:00; Nov-Mar: Mo-Th 08:00-19:00; Fr 08:00-22:00; Sa 07:00-22:00; Su 07:00-19:00",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+420 60 2291 324",
+    "ref:ruian:addr": "14141426",
+    "ref:ruian:building": "95100059",
+    "source": "cuzk:ruian",
+    "start_date": "2015-09-30",
+    "tourism": "alpine_hut",
+    "website": "https://www.lysa-hora.cz",
+    "wikidata": "Q122686207"
+  }
+},
+{
+  "type": "way",
+  "id": 254645712,
+  "center": {
+    "lat": 49.5931874,
+    "lon": 18.6462777
+  },
+  "nodes": [
+    2604534489,
+    2604534490,
+    2604534491,
+    2604534492,
+    2604534488,
+    2604534487,
+    2604534486,
+    2604534483,
+    7080416347,
+    2604534485,
+    2604534484,
+    2604534489
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "bar": "yes",
+    "beds": "20",
+    "building": "yes",
+    "cuisine": "regional",
+    "ele": "946",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Horská chata Ostrý",
+    "opening_hours": "Tu-Th 10:00-17:00; Fr 10:00-19:00; Sa 09:00-19:00; Su 09:00-17:00",
+    "operator": "cz:KČT",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "source": "cuzk:km",
+    "toilets": "yes",
+    "tourism": "alpine_hut",
+    "website": "https://www.chataostry.cz/",
+    "wheelchair": "no",
+    "wikidata": "Q9189232"
+  }
+},
+{
+  "type": "way",
+  "id": 254649686,
+  "center": {
+    "lat": 49.5702871,
+    "lon": 18.6746410
+  },
+  "nodes": [
+    2604559588,
+    2604559590,
+    2604559597,
+    2604559599,
+    2604559594,
+    2604559607,
+    13482398173,
+    13482398175,
+    13482398176,
+    13482398172,
+    13482398174,
+    2604559576,
+    2604559572,
+    2604559588
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "bar": "yes",
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "cuisine": "regional",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata Kozubová",
+    "opening_hours": "Mo,Su 09:00-15:00; Fr,Sa 09:00-17:00; Su 09:00-15:00",
+    "opening_hours:kitchen": "Mo,Su 09:00-14:00; Fr,Sa 09:00-16:00; Su 09:00-14:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "ref:ruian:building": "20259972",
+    "source": "cuzk:ruian",
+    "toilets": "yes",
+    "tourism": "alpine_hut",
+    "wheelchair": "no"
+  }
+}
+
+  ]
+}

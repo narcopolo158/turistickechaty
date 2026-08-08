@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-08T13:13:02Z",
-    "timestamp_areas_base": "2026-08-07T03:28:41Z",
+    "timestamp_osm_base": "2026-08-08T18:25:50Z",
+    "timestamp_areas_base": "2026-08-07T17:44:51Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -16,23 +16,6 @@
   "tags": {
     "name": "Chata Severka",
     "tourism": "alpine_hut"
-  }
-},
-{
-  "type": "node",
-  "id": 291202942,
-  "lat": 49.2948275,
-  "lon": 18.2454423,
-  "tags": {
-    "beds": "50",
-    "dog": "no",
-    "ele": "930",
-    "internet_access": "wlan",
-    "internet_access:fee": "no",
-    "name": "Hotel Portáš",
-    "tourism": "alpine_hut",
-    "url": "https://hiking.dennikn.sk/ar/877/horsky_hotel_portas.html",
-    "website": "https://www.hotelportas.cz/"
   }
 },
 {
@@ -396,16 +379,6 @@
     "amenity": "restaurant",
     "name": "chata Barborka",
     "ref:ruian:addr": "17040612"
-  }
-},
-{
-  "type": "node",
-  "id": 3025772836,
-  "lat": 49.5873495,
-  "lon": 18.0224605,
-  "tags": {
-    "name": "Relaxační centrum U-rybničku",
-    "tourism": "chalet"
   }
 },
 {
@@ -915,18 +888,6 @@
 },
 {
   "type": "node",
-  "id": 6296359741,
-  "lat": 49.2943594,
-  "lon": 18.2325210,
-  "tags": {
-    "name": "Chata Javorka",
-    "opening_hours": "Mo-Th 11:00-19:00; Fr-Sa 10:00-22:00; Oct 01-Dec 24: off",
-    "tourism": "alpine_hut",
-    "website": "http://javorka.cz/"
-  }
-},
-{
-  "type": "node",
   "id": 6391744833,
   "lat": 49.5706319,
   "lon": 18.4049226,
@@ -1063,39 +1024,6 @@
     "phone": "+420 777 288 999",
     "tourism": "chalet",
     "website": "https://retrochaty.cz/"
-  }
-},
-{
-  "type": "node",
-  "id": 10829828639,
-  "lat": 49.2615374,
-  "lon": 18.0620988,
-  "tags": {
-    "phone": "+420 731 930 960",
-    "tourism": "chalet",
-    "website": "https://www.e-chalupy.cz/beskydy/ubytovani-zdechov-chata-pronajem-2011.php"
-  }
-},
-{
-  "type": "node",
-  "id": 10829828640,
-  "lat": 49.2617089,
-  "lon": 18.0620746,
-  "tags": {
-    "tourism": "chalet",
-    "website": "https://www.e-chalupy.cz/beskydy/zdechov-ubytovani-chata-pronajmuti-0626.php"
-  }
-},
-{
-  "type": "node",
-  "id": 10829828641,
-  "lat": 49.2714326,
-  "lon": 18.1060453,
-  "tags": {
-    "name": "Chata u Hrbáčků",
-    "phone": "736 677 192",
-    "tourism": "chalet",
-    "website": "https://www.e-chalupy.cz/beskydy/ubytovani-zdechov-chata-u-hrbacku-pronajem-4779.php"
   }
 },
 {
@@ -2441,34 +2369,6 @@
 },
 {
   "type": "way",
-  "id": 242294571,
-  "center": {
-    "lat": 49.2765427,
-    "lon": 18.1493949
-  },
-  "nodes": [
-    2497974187,
-    2497974186,
-    2497974191,
-    4411477879,
-    4411477880,
-    2497974190,
-    2497974189,
-    2497974188,
-    2497974187
-  ],
-  "tags": {
-    "building": "yes",
-    "building:ruian:type": "3",
-    "name": "Turistická chata Celnice",
-    "phone": "+420702917332",
-    "ref:ruian:building": "21383014",
-    "source": "cuzk:ruian",
-    "tourism": "alpine_hut"
-  }
-},
-{
-  "type": "way",
   "id": 246420459,
   "center": {
     "lat": 49.6789507,
@@ -2717,34 +2617,6 @@
     "toilets": "yes",
     "tourism": "alpine_hut",
     "wheelchair": "no"
-  }
-},
-{
-  "type": "way",
-  "id": 254877972,
-  "center": {
-    "lat": 49.2963007,
-    "lon": 18.2382679
-  },
-  "nodes": [
-    2606652411,
-    2606652387,
-    2606652383,
-    2606652377,
-    2606652375,
-    2606652381,
-    2606652379,
-    2677103228,
-    2606652411
-  ],
-  "tags": {
-    "building": "residential",
-    "building:levels": "1",
-    "building:ruian:type": "3",
-    "name": "Spartak",
-    "ref:ruian:building": "21412669",
-    "source": "cuzk:ruian",
-    "tourism": "alpine_hut"
   }
 },
 {
