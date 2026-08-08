@@ -191,6 +191,36 @@ const KOTVY: Record<string, { nazev: string; lat: number; lng: number }[]> = {
     { nazev: 'Jagodna (Góry Bystrzyckie, PL)', lat: 50.252464, lng: 16.564683 },
     { nazev: 'Schronisko Jagodna (Góry Bystrzyckie, PL)', lat: 50.276944, lng: 16.537342 },
   ],
+  'velka-fatra': [
+    { nazev: 'Ostredok (nejvyšší vrchol)', lat: 48.899444, lng: 19.081389 },
+    { nazev: 'Krížna', lat: 48.876735, lng: 19.078404 },
+    { nazev: 'Ploská', lat: 48.933642, lng: 19.116914 },
+    { nazev: 'Borišov', lat: 48.94099, lng: 19.089259 },
+    { nazev: 'Rakytov', lat: 48.960507, lng: 19.17908 },
+    { nazev: 'Chata pod Borišovom', lat: 48.9404, lng: 19.0975 },
+    { nazev: 'Horský hotel Kráľova studňa', lat: 48.87605, lng: 19.04083 },
+    { nazev: 'Blatnica (Gaderská dolina)', lat: 48.93853, lng: 18.92605 },
+    { nazev: 'Belá-Dulice', lat: 49.00262, lng: 18.97826 },
+    { nazev: 'Turčianske Teplice (západní kotva)', lat: 48.8622, lng: 18.8603 },
+    { nazev: 'Harmanec (jižní kotva)', lat: 48.7951, lng: 19.0783 },
+    { nazev: 'Donovaly', lat: 48.87809, lng: 19.22421 },
+    { nazev: 'Liptovská Osada', lat: 48.9517, lng: 19.2616 },
+    { nazev: 'Ružomberok (severovýchodní kotva)', lat: 49.0816, lng: 19.3034 },
+  ],
+  'slovensky-raj': [
+    { nazev: 'Ondrejisko / Borovniak (nejvyšší vrchol, západní kotva)', lat: 48.85987, lng: 20.25858 },
+    { nazev: 'Veľká Knola', lat: 48.8639, lng: 20.4728 },
+    { nazev: 'Kláštorisko', lat: 48.94189, lng: 20.426242 },
+    { nazev: 'Podlesok', lat: 48.9643, lng: 20.3841 },
+    { nazev: 'Píla', lat: 48.945, lng: 20.3469 },
+    { nazev: 'Prielom Hornádu', lat: 48.962117, lng: 20.402636 },
+    { nazev: 'Hrabušice (severní kotva)', lat: 48.9756, lng: 20.4086 },
+    { nazev: 'Stratená', lat: 48.8711, lng: 20.3384 },
+    { nazev: 'Dobšinská ľadová jaskyňa', lat: 48.8759, lng: 20.2967 },
+    { nazev: 'Dedinky', lat: 48.8672, lng: 20.3795 },
+    { nazev: 'Mlynky (jižní kotva)', lat: 48.8519, lng: 20.43 },
+    { nazev: 'Spišská Nová Ves (východní kotva)', lat: 48.9446, lng: 20.5615 },
+  ],
   // Nízké Tatry: hřeben je z celého korpusu nejdelší (~80 km), takže kotvy
   // musejí držet oba konce — Prašivá na západě a Vernár s Telgártem za
   // Kráľovou hoľou na východě — i oba svahy, liptovský a hronský.
@@ -218,6 +248,8 @@ describe.each([
   ['nizke-tatry', 'Nízké Tatry'],
   ['krusne-hory', 'Krušné hory'],
   ['orlicke-hory', 'Orlické hory'],
+  ['velka-fatra', 'Veľká Fatra'],
+  ['slovensky-raj', 'Slovenský raj'],
 ])('oblast %s', (slug, nazev) => {
   const konfig = oblastDleSlugu(slug)
   const yaml = nactiYaml(slug)
@@ -660,5 +692,73 @@ describe('Krušné hory a Orlické hory — třináctá a čtrnáctá oblast', (
     expect(h?.nazev).toBe('Klínovec')
     expect(String(h?.source)).toMatch(/Fichtelberg/)
     expect(String(h?.source)).toMatch(/highest mountain in Saxony/)
+  })
+})
+
+describe('Veľká Fatra a Slovenský raj — patnáctá a šestnáctá oblast', () => {
+  it('katalog vede obě pohoří JINAK, než se jmenuje oblast — a v konfiguraci je katalogová podoba', () => {
+    // „Velká Fatra" česky × „Veľká Fatra" slovensky; „Slovenský ráj" s dlouhým
+    // á × „Slovenský raj". Kdyby se to sjednotilo podle našeho jména, vypnula
+    // by se dohledávka podle jmen a třináct katalogových objektů by se tiše
+    // ztratilo — přesně ta tichá chyba, kvůli které tenhle soubor vznikl.
+    expect(oblastDleSlugu('velka-fatra').katalogPohori).toEqual(['Velká Fatra'])
+    expect(oblastDleSlugu('slovensky-raj').katalogPohori).toEqual(['Slovenský ráj'])
+    expect(nactiYaml('velka-fatra').nazev).toBe('Veľká Fatra')
+    expect(nactiYaml('slovensky-raj').nazev).toBe('Slovenský raj')
+  })
+
+  it('Slovenský raj: okno je řezané podle pohoří, ne podle národního parku', () => {
+    // Predná hoľa (1545 m) je nejvyšší bod PARKU, ale prameny ji řadí
+    // k Nízkym Tatrám, které mají vlastní oblast. Kdyby okno šlo podle parku,
+    // zasahovalo by do cizího pohoří.
+    const p = String(nactiYaml('slovensky-raj').nejvyssiHora?.source)
+    expect(p).toMatch(/Predná hoľa/)
+    expect(p).toMatch(/1545/)
+    expect(p).toMatch(/Nízkych Tatier|Nízkym Tatrám/)
+    // A ta hora vážně nesmí být v okně.
+    const b = oblastDleSlugu('slovensky-raj').bbox
+    const prednaHola = { lat: 48.8, lng: 20.05 } // přibližná poloha ze zadání rešerše
+    expect(prednaHola.lng >= b.lngMin && prednaHola.lat >= b.latMin).toBe(false)
+  })
+
+  it('Slovenský raj: režim roklin je zapsaný, protože „otevřeno" tu neznamená „průchozí"', () => {
+    const p = String(nactiYaml('slovensky-raj').interniPoznamky)
+    expect(p).toMatch(/JEDNOSMĚRNÝ PROVOZ ROKLIN/)
+    expect(p).toMatch(/VSTUPNÉ/)
+    // Charakteristika to má říct i čtenáři, ne jen redakci.
+    expect(String(nactiYaml('slovensky-raj').charakteristika)).toMatch(/proti proudu potoka|zdola/)
+  })
+
+  it('Veľká Fatra: dva jmenovci Ostredku jsou zapsaní (druhý je v Nízkých Tatrách)', () => {
+    // GeoNames vede Ostredok 2049 m v okrese Liptovský Mikuláš. Bez téhle
+    // poznámky by dotaz nebo triáž spojily dva vrcholy vzdálené pohoří.
+    const s = String(nactiYaml('velka-fatra').nejvyssiHora?.source)
+    expect(s).toMatch(/2049/)
+    expect(s).toMatch(/NÍZKÝCH TATRÁCH|Nízkých Tatrách/)
+  })
+
+  it('Veľká Fatra: překryv s Malou Fatrou je záměrný a obě okna se opravdu protínají', () => {
+    // Poznámka to tvrdí; test to ověřuje na číslech, ať tvrzení nezůstane
+    // jen slovem po případné úpravě hran.
+    const vf = oblastDleSlugu('velka-fatra').bbox
+    const mf = oblastDleSlugu('mala-fatra').bbox
+    const protina =
+      vf.latMin < mf.latMax && vf.latMax > mf.latMin && vf.lngMin < mf.lngMax && vf.lngMax > mf.lngMin
+    expect(protina).toBe(true)
+    expect(String(nactiYaml('velka-fatra').interniPoznamky)).toMatch(/ZÁMĚRNĚ PŘEKRÝVÁ|překrývá/)
+  })
+
+  it('všech šestnáct oblastí má unikátní slug i jméno a žádné okno není prázdné', () => {
+    // Souhrnná pojistka po dni, ve kterém přibylo šest oblastí naráz.
+    const slugy = OBLASTI.map((o) => o.slug)
+    expect(new Set(slugy).size).toBe(slugy.length)
+    const jmena = OBLASTI.map((o) => o.nazev)
+    expect(new Set(jmena).size).toBe(jmena.length)
+    for (const o of OBLASTI) {
+      expect(o.bbox.latMax, `${o.slug}: prázdné okno`).toBeGreaterThan(o.bbox.latMin)
+      expect(o.bbox.lngMax, `${o.slug}: prázdné okno`).toBeGreaterThan(o.bbox.lngMin)
+      expect(o.bbox3d.latMin, `${o.slug}: 3D okno mimo hlavní`).toBeGreaterThanOrEqual(o.bbox.latMin)
+      expect(o.bbox3d.latMax, `${o.slug}: 3D okno mimo hlavní`).toBeLessThanOrEqual(o.bbox.latMax)
+    }
   })
 })

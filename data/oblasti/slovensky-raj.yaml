@@ -1,0 +1,147 @@
+# Oblast Slovenský raj — šestnáctá oblast průvodce (pokyn Michala 8. 8. 2026:
+# „klidne dopln krusne hory, orlicke a vse dalsi co najdes").
+#
+# ROZSAH. Okno dotazu (scripts/oblasti.ts) kryje krasovou plošinu od Mlynek
+# a Dediniek na jihu po Hrabušice a Prielom Hornádu na severu, od Ondrejiska
+# nad Telgártom na západě po Spišskou Novou Ves na východě.
+# OKNO JE ŘEZANÉ PODLE POHOŘÍ, NE PODLE NÁRODNÍHO PARKU — hranice parku sahá
+# na jihozápad až k Prednej holi (1545 m), kterou prameny řadí k Nízkym
+# Tatrám, a ty mají vlastní oblast.
+# MURÁNSKA PLANINA SEM NEPATŘÍ: obě jsou SOUŘADNÉ podcelky Spišsko-gemerského
+# krasu, ne celek a jeho část. Katalog ji vede zvlášť správně.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Slovenský raj
+slug: slovensky-raj
+typ: pohori
+zeme: sk
+
+sklonovani:
+  druhy: Slovenského ráje
+  sesty: Slovenském ráji
+
+charakteristika: >-
+  Krasová plošina rozřezaná roklinami, kterými se stoupá po žebřících,
+  stupačkách a řetězech. Není to pohoří k přechodu po hřebeni: chodí se tu
+  soutěskami vzhůru proti proudu potoka, a jen tím směrem — sestup roklinou
+  je z bezpečnostních důvodů zakázaný. Uprostřed parku leží Kláštorisko
+  s ruinami kartuziánského kláštera a jediným turistickým střediskem uvnitř
+  chráněného území; na jihu je Dobšinská ľadová jaskyňa, zapsaná roku 2000
+  na seznam světového dědictví UNESCO.
+overeniCharakteristika:
+  source: >-
+    Jednosměrný provoz a technické pomůcky: npslovenskyraj.sk, stránka
+    aktivit (čteno 8. 8. 2026) — „Prechod roklinami Slovenského raja
+    z dôvodu bezpečnosti je na rozdiel od ostatných trás povolený v smere
+    zdola nahor - proti prúdu potoka."; tamtéž „rebríky - drevené, kovové,
+    kovové stúpačky, stupy", „kovovými mostíkmi", „reťazami". Kláštorisko
+    jako jediné středisko: slovenskyraj.sk (čteno 8. 8. 2026) — je to jediné
+    turistické středisko na území národního parku; POZOR NA VÝKLAD, pramen
+    říká „jediné stredisko", ne „jediný objekt", a tak je to i v textu.
+    Kartuziáni: maget.sk (čteno 8. 8. 2026) — území darováno roku 1299
+    a klášter postaven „začiatkom 14. storočia". UNESCO: ssj.sk (čteno
+    8. 8. 2026) — na 24. zasedání Výboru pro světové dědictví v Cairns
+    v listopadu 2000 byla lokalita „Jaskyne Slovenského a Aggtelekského
+    krasu" (zapsaná 1995 v Berlíně) rozšířena o Dobšinskou ľadovou jaskyňu.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Ondrejisko
+  vyska: 1268
+  source: >-
+    ROZPOR, KTERÝ SE NEPODAŘILO SROVNAT, a je pro tuhle oblast typický:
+    prameny neuvádějí tři různá čísla pro jeden vrchol, ale TŘI RŮZNÉ
+    VRCHOLY. (1) najmiesta.sk (čteno 8. 8. 2026) vede Ondrejisko/Borovniak
+    jako „najvyšší vrch v pohorí Slovenský raj" a rozlišuje rozhledový
+    Borovniak 1268 m od zalesněného Ondrejiska 1270 m; leží „východne od
+    obce Telgárt". (2) turistika.vetroplachmagazin.sk uvádí „Ondrejisko/
+    Borovniak 1272m", ale týž článek nese autorovu opravu, že oficiálně
+    nejvyšší je Predná hoľa 1545 m. (3) cezkopec.webnode.sk vede jako
+    nejvyšší bod Veľkú Knolu (1266 m). Zapsáno 1268 m dle konvence
+    z 27. 7. 2026 (při rozporu nižší číslo z těch, které se týkají téhož
+    vrcholu; Veľká Knola je jiný kopec, ne nižší měření Ondrejiska).
+    PREDNÁ HOĽA (1545 m) DO TÉHLE OBLASTI NEPATŘÍ, ač je nejvyšším bodem
+    národního parku — a je to past, na kterou se dá naletět, protože oficiální
+    stránka parku ji jako nejvyšší bod uvádí. Rešerše 8. 8. 2026 našla článek
+    s titulkem „Predná hoľa - najvýchodnejší vrch Nízkych Tatier" (obsah
+    nedostupný, 403), což ukazuje směr, ale nedokazuje ho. Rozdíl mezi
+    „nejvyšší bod PARKU" a „nejvyšší vrchol POHOŘÍ" je tu 277 metrů a jiné
+    pohoří.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala („vse dalsi co najdes"). Konfigurace
+  okna je v scripts/oblasti.ts (slug slovensky-raj, zeme SK, katalogový název
+  „Slovenský ráj"), kotvy okna a jejich prameny v komentáři tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `slovensky-raj`.
+
+  POZOR NA KATALOGOVÝ NÁZEV: katalog vede pohoří jako „Slovenský ráj"
+  s DLOUHÝM Á, my oblast jako „Slovenský raj" (slovensky, krátce). V poli
+  `katalogPohori` musí zůstat katalogová podoba, jinak se vypne dohledávka
+  podle jmen. Je to týž případ jako „Velká Fatra" × „Veľká Fatra".
+
+  NEJNETYPIČTĚJŠÍ OBLAST KORPUSU a přináší nový typ údaje do profilů.
+  Dosud korpus znal dva režimy, u kterých „otevřeno" neznamená „dostupné":
+  sezónní uzávěru tatranských hřebenových cest a vůdcovskou povinnost.
+  Slovenský raj přidává třetí, a jiný: JEDNOSMĚRNÝ PROVOZ ROKLIN a VSTUPNÉ
+  za použití technických zařízení. Profil chaty v roklině tedy musí umět
+  říct nejen kdy má otevřeno, ale i kterým směrem se k ní jde.
+  VSTUPNÉ — ROZPOR, nesrovnaný: slovenskyraj.eu uvádí s platností od
+  1. 4. 2024 čtyři eura za Suchou Belou a tři za ostatní rokliny (děti
+  a senioři o euro méně, do šesti let zdarma), kdežto npslovenskyraj.sk
+  „dospelí: 1,50 EUR" za jednodenní lístek. Buď jde o dva různé poplatky,
+  nebo je jeden z údajů starý. DO PROFILŮ SE CENY STEJNĚ NEPÍŠOU (konvence
+  z 25. 7. 2026), ale existence poplatku ano — a ta je doložená oběma.
+
+  SEZÓNNÍ UZÁVĚRY SE NEPODAŘILO DOLOŽIT OBECNĚ. Doložené je jen to, že
+  ledolezectví je povolené 1. 12. – 15. 3. a že Dobšinská ľadová jaskyňa je
+  přístupná 15. 5. – 30. 9. Stránka o uzavírkách chodníků na oficiálním webu
+  parku je datovaná 7. 5. 2020, tedy šest let stará, a vede uzavřený Veľký
+  Sokol a Biely potok po povodni z listopadu 2019 — jako údaj o dnešku
+  bezcenné. Před prvním profilem se musí dohledat aktuální stav; dva zdroje,
+  které by ho měly mít (slovenskyraj.eu/rokliny, slovenskyraj.kcorp.sk), byly
+  ze sandboxu nedostupné.
+
+  CO UŽ VÍME BEZ OVERPASSU — externí katalog drží v okně 6 objektů. Dobře
+  doložená je jediná chata, zato nejdůležitější:
+  CHATA KLÁŠTORISKO (744 m) — na místě stála turistická útulna, kterou podle
+  popisky dobové fotografie postavil KARPATHENVEREIN („Útulňa Karpathenvereinu
+  po dobudovaní prístreška v roku 1924"), a základní kámen vlastní chaty
+  položil KLUB ČESKOSLOVENSKÝCH TURISTŮ 16. května 1926; chatu se podařilo
+  dokončit roku 1929 (maget.sk). ROZPORY: rok první útulny 1922 (maget.sk)
+  × 1923 (slovenskyraj.sk); a krasy-slovenska.sk v článku z roku 2010
+  připomínají „80 rokov od chvíle, keď na Kláštorisku slávnostne otvorili
+  turistickú chatu KČST", což ukazuje na otevření okolo roku 1930, ne 1929.
+  Dnes je tu chatová osada, restaurace a stanice horské služby; bufet měl
+  v roce 2026 sezónu 18. 4. – 30. 9.
+  DVA SPOLKY NA JEDNOM MÍSTĚ jsou pro průvodce cenné: Karpathenverein
+  a KČST tu stavěli po sobě, podobně jako Beskidenverein a Pohorská jednota
+  Radhošť v Beskydech. Až se bude psát profil, tohle je jeho jádro.
+
+  U OSTATNÍCH OBJEKTŮ NENÍ DOLOŽENO NIC POUŽITELNÉHO. Chata Píla, objekty na
+  Čingově, Podlesok, Dedinky a Mlynky mají v pramenech jen komerční
+  ubytovací inzeráty — žádný rok, stavebníka ani výšku. „Horský hotel Čingov"
+  pod tím jménem rešerše nenašla vůbec (existují Hotel Čingov, Wellnesshotel
+  Čingov a Parkhotel Čingov, tedy tři různé objekty). Při triáži se s tím
+  musí počítat: tady bude povyšování stát na primárních pramenech, ne na
+  přehledech.
+
+  MOJE CHYBA V ZADÁNÍ REŠERŠE, počtvrté za den: ptal jsem se na „Čertovu
+  hlavu" jako na jeden z nejvyšších vrcholů. Prameny (slovenskyraj.sk, trasy
+  CY01 a CY03) ji vedou jako SEDLO mezi Novoveskou Hutou a Mlynkami, ne jako
+  vrchol. Zapisuje se to sem, protože je to přesně ten typ domněnky, který se
+  bez rešeršisty propíše do dat.
+
+  NÁRODNÍ PARK: vyhlášen nařízením vlády SSR č. 23/1988 z 18. 1. 1988,
+  přehlášen nařízením vlády SR č. 69/2016. Rozlohu oficiální stránka neuvádí
+  a nepíše se sem. Návštěvní řád: vyhláška Okresního úřadu Košice č. 2/2018
+  z 10. října 2018.
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.

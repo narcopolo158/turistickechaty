@@ -599,6 +599,88 @@ export const OBLASTI: OblastKonfig[] = [
       'čtrnáctá oblast (pokyn Michala 8. 8. 2026) — Orlické hory s polskou stranou vč. Gór Bystrzyckich; tím se zavírá otázka rozsahu otevřená u Jeseníků',
     katalogPohori: ['Orlické hory', 'Góry Orlickie', 'Góry Bystrzyckie'],
   },
+  {
+    slug: 'velka-fatra',
+    nazev: 'Veľká Fatra',
+    /**
+     * Patnáctá oblast — týž pokyn Michala („vse dalsi co najdes"). Sedm
+     * katalogových objektů a přirozený soused Malé Fatry, se kterou má
+     * společnou i chatařskou historii: Klub československých turistů tu
+     * postavil Kráľovu studňu (1927) stejně jako chaty pod Chlebom
+     * a na Kľačianskej Magure.
+     *
+     * JMÉNO JE SLOVENSKY („Veľká Fatra"), ne česky („Velká Fatra") — stejně
+     * jako u Malé Fatry a Západných Tater. Čeština tu ustálený vlastní tvar
+     * nemá; u Nízkých Tater se to 8. 8. 2026 rozhodlo opačně a důvod je
+     * v jejich souboru.
+     */
+    zeme: ['SK'],
+    /**
+     * Kotvy okna jsou doložené souřadnice (prameny
+     * v data/oblasti/velka-fatra.yaml):
+     *   jih    48.75 — Harmanec (48.795 / 19.078) s Harmaneckou tisinou
+     *   sever  49.15 — Ružomberok (49.082 / 19.303) nad Váhem
+     *   západ  18.80 — Turčianske Teplice (48.862 / 18.860) v Turčianské
+     *                  kotlině
+     *   východ 19.40 — Ružomberok (19.303) a Liptovská Osada (48.952 /
+     *                  19.262) v Revúcké dolině
+     * Uvnitř dál Ostredok (48.899 / 19.081), Krížna, Ploská, Borišov,
+     * Rakytov, Blatnica s Gaderskou dolinou, Necpaly, Belá-Dulice, Donovaly
+     * a obě chaty: pod Borišovom (48.940 / 19.098) a Kráľova studňa
+     * (48.876 / 19.041).
+     *
+     * PŘEKRYV S MALOU FATROU JE ZÁMĚRNÝ. Okna se potkávají v pásu
+     * 49.02–49.15 / 18.80–19.22, tedy v Turčianské kotlině mezi oběma
+     * pohořími. Hranici tvoří podle pramenů Váh a zlomová linie, ale
+     * doslovnou definici (Kraľovanský průlom?) rešerše nedodala — ostrý řez
+     * naslepo by vyřízl objekty v kotlině. Duplicity řeší DATA-36 a triáž.
+     */
+    bbox: { latMin: 48.75, lngMin: 18.8, latMax: 49.15, lngMax: 19.4 },
+    bbox3d: { latMin: 48.8, lngMin: 18.9, latMax: 49.08, lngMax: 19.3 },
+    poznamka:
+      'patnáctá oblast (pokyn Michala 8. 8. 2026) — Veľká Fatra; okno se v Turčianské kotlině záměrně překrývá s Malou Fatrou',
+    katalogPohori: ['Velká Fatra'],
+  },
+  {
+    slug: 'slovensky-raj',
+    nazev: 'Slovenský raj',
+    /**
+     * Šestnáctá oblast — týž pokyn. A je to NEJNETYPIČTĚJŠÍ oblast, jakou
+     * průvodce dosud vzal: není to hřeben ani hornatina, ale KRASOVÁ NÁHORNÍ
+     * PLOŠINA ROZŘEZANÁ ROKLINAMI. Turisticky to znamená režim, který jinde
+     * v korpusu není — roklinami se smí jen zdola nahoru, chodí se po
+     * žebřících a řetězech a za jejich použití se platí. Do profilů se to
+     * musí promítnout stejně jako tatranská sezónní uzávěra: „otevřeno"
+     * neznamená „průchozí".
+     *
+     * MURÁNSKA PLANINA SEM NEPATŘÍ a katalog ji vede správně zvlášť: obě
+     * jsou SOUŘADNÉ podcelky Spišsko-gemerského krasu, ne celek a jeho část.
+     */
+    zeme: ['SK'],
+    /**
+     * Kotvy okna jsou doložené souřadnice (prameny
+     * v data/oblasti/slovensky-raj.yaml):
+     *   jih    48.82 — Mlynky (48.852 / 20.430) a Dedinky (48.867 / 20.380)
+     *   sever  49.00 — Hrabušice (48.976 / 20.409) a Prielom Hornádu
+     *                  (48.962 / 20.403)
+     *   západ  20.20 — Ondrejisko / Borovniak (48.860 / 20.259) nad
+     *                  Telgártom a Dobšinská ľadová jaskyňa (48.876 /
+     *                  20.297)
+     *   východ 20.60 — Spišská Nová Ves (48.945 / 20.562), výchozí město
+     * Uvnitř dál Kláštorisko (48.942 / 20.426), Podlesok, Píla, Stratená
+     * a Veľká Knola.
+     *
+     * OKNO JE ŘEZANÉ PODLE POHOŘÍ, NE PODLE NÁRODNÍHO PARKU, a je to vědomé
+     * rozhodnutí: hranice NP sahá na jihozápad až k Prednej holi (1545 m),
+     * kterou prameny řadí k Nízkym Tatrám. Kdyby okno šlo podle parku,
+     * zasahovalo by do jiného pohoří — a Nízke Tatry mají vlastní oblast.
+     */
+    bbox: { latMin: 48.82, lngMin: 20.2, latMax: 49.0, lngMax: 20.6 },
+    bbox3d: { latMin: 48.84, lngMin: 20.25, latMax: 48.99, lngMax: 20.52 },
+    poznamka:
+      'šestnáctá oblast (pokyn Michala 8. 8. 2026) — krasová plošina s roklinami; první oblast korpusu s jednosměrnými trasami a vstupným',
+    katalogPohori: ['Slovenský ráj'],
+  },
 ]
 
 export const oblastDleSlugu = (slug: string): OblastKonfig => {

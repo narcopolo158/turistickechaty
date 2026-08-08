@@ -26,11 +26,11 @@ Odklikané máš Beskydy, Jeseníky, Vysoké Tatry a Malou Fatru (8. 8. 2026;
 dohromady přes 650 kandidátů) — díky, a hlavně díky za ten opakovaný běh
 Beskyd, protože ten dorovnal chybějícího Libušína.
 
-Zbývá šest oblastí. Čtyři nové (obě tatranské minus odklikaná, Krušné
-a Orlické hory) nemají zatím ani jednoho kandidáta; u zbylých už kandidáti
-JSOU, ale jen ti z podhůří, protože přišli omylem s beskydským exportem —
-vlastní běh s vlastním oknem přinese hřebeny, které beskydské okno vůbec
-nepokrývalo.
+Zbývá osm oblastí a šest z nich nemá zatím ani jednoho kandidáta (Nízké
+Tatry, Krušné hory, Orlické hory, Veľká Fatra, Slovenský raj — a k tomu
+Javorníky, Oravská Magura a Západné Tatry, kde kandidáti JSOU, ale jen
+ti z podhůří, protože přišli omylem s beskydským exportem; vlastní běh
+s vlastním oknem přinese hřebeny, které beskydské okno vůbec nepokrývalo).
 
 | workflow | políčko `oblast` | co to udělá |
 |---|---|---|
@@ -40,6 +40,8 @@ nepokrývalo.
 | **DATA-01: OSM export chat (dle oblasti)** | `zapadne-tatry` | Západné Tatry / Roháče (SK, PL) — 13 kandidátů v repu, všichni z podhůří u Zuberce; běh přinese hřebenové chaty a polská schroniska |
 | **DATA-01: OSM export chat (dle oblasti)** | `krusne-hory` | Krušné hory / Erzgebirge (CZ, DE) — **nová oblast z 8. 8. 2026**, zatím bez kandidátů. Třetí největší okno korpusu (7 358 km²), takže běh potrvá déle a přinese i městský šum; katalog v okně drží 10 objektů |
 | **DATA-01: OSM export chat (dle oblasti)** | `orlicke-hory` | Orlické hory vč. polské strany a Gór Bystrzyckich (CZ, PL) — **nová oblast z 8. 8. 2026**, zatím bez kandidátů; katalog drží 8 objektů |
+| **DATA-01: OSM export chat (dle oblasti)** | `velka-fatra` | Veľká Fatra (SK) — **nová oblast z 8. 8. 2026**; katalog drží 7 objektů, mezi nimi Chatu pod Borišovom (stavěna 1937–1942, zásobuje se nosiči) a Kráľovu studňu, kterou postavil KČST roku 1927 |
+| **DATA-01: OSM export chat (dle oblasti)** | `slovensky-raj` | Slovenský raj (SK) — **nová oblast z 8. 8. 2026**; krasová plošina s roklinami, 6 katalogových objektů. Je to první oblast korpusu s jednosměrnými trasami a vstupným |
 
 Kdybys chtěl klikat jen část, **začni Krušnými horami**: je to jediná oblast
 korpusu se saskou stranou vedle Šumavy a katalog ji podle všeho pokrývá

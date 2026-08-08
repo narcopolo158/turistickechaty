@@ -1,0 +1,161 @@
+# Oblast Veľká Fatra — patnáctá oblast průvodce (pokyn Michala 8. 8. 2026:
+# „klidne dopln krusne hory, orlicke a vse dalsi co najdes").
+#
+# ROZSAH. Okno dotazu (scripts/oblasti.ts) kryje pohoří od Harmance na jihu
+# po Ružomberok na severu a od Turčianské kotliny na západě po Revúcku dolinu
+# na východě, tedy všech sedm podcelků (Bralná Fatra, Hôľna Fatra, Lysec,
+# Revúcke podolie, Šiprúň, Šípska Fatra, Zvolen).
+# S MALOU FATROU SE OKNO ZÁMĚRNĚ PŘEKRÝVÁ v Turčianské kotlině — doslovnou
+# definici hranice mezi oběma pohořími rešerše nedodala a ostrý řez naslepo
+# by vyřízl objekty v kotlině mezi nimi.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Veľká Fatra
+slug: velka-fatra
+typ: pohori
+zeme: sk
+
+# Skloňované tvary názvu do vět na webu. Jméno se drží ve slovenské podobě
+# (viz interní poznámky), takže i tvary jsou slovenské.
+sklonovani:
+  druhy: Veľkej Fatry
+  sesty: Veľkej Fatre
+
+charakteristika: >-
+  Vápencové pohoří mezi Turcem a Liptovem, které má obojí: hluboké krasové
+  doliny se skalními branami dole a široké travnaté hole nahoře. Gaderská
+  a Blatnická dolina patří k nejnavštěvovanějším místům středního Slovenska,
+  hřebenem přes Krížnu a Kráľovu studňu vede Cesta hrdinov SNP a v Harmanecké
+  tisině roste tis červený v takovém množství, že se o něm píše jako
+  o největším nalezišti v Evropě. Chataření tu má stejné kořeny jako v Malé
+  Fatře: první chatu na Kráľovej studni postavil roku 1927 Klub
+  československých turistů.
+overeniCharakteristika:
+  source: >-
+    Podcelky a doliny: anglická Wikipedie, Veľká Fatra (čteno 8. 8. 2026) —
+    „Šípska Fatra, Šiprúň, Lysec, Hôľna Fatra, Revúcke podolie, Zvolen and
+    Bralná Fatra"; „Gader Valley (Gaderská dolina) and Blatnica Valley
+    (Blatnická dolina)"; „The longest valley is the Ľubochňa Valley
+    (Ľubochnianska dolina) at 25 km." Hole a kras: slovakia.travel (čteno
+    8. 8. 2026) — území s „rozsiahlym a typickým hôľnym pásmom" a „bohatým
+    výskytom krasových javov". TIS — SUPERLATIV JE CITOVANÝ, NE NÁŠ, a je
+    u něj vidět, jak se prameny liší v jistotě: anglická Wikipedie
+    o pohoří tvrdí natvrdo „The area of Harmanec is the richest yew-tree
+    site in Europe", kdežto stránka o národním parku opatrněji „the richest
+    Irish yew tree location in Central and probably all Europe" — to slovo
+    „probably" je důvod, proč se v textu píše „píše se o něm jako", a ne
+    „je". Cesta hrdinov SNP: kpt.sk (čteno 8. 8. 2026) — magistrála „v dĺžke
+    približne 750km" vede mimo jiné hřebeny „Nízke Tatry, Veľká Fatra, Žiar";
+    ve Veľkej Fatre se jmenují Donovaly, Kráľova studňa a Krížna, přesné
+    trasování úseku doloženo není. Kráľova studňa 1927: kralovastudna.com,
+    stránka historie (čteno 8. 8. 2026) — chata z iniciativy Klubu
+    československých turistů v Banské Bystrici. TVRZENÍ O NÁVŠTĚVNOSTI
+    („nejnavštěvovanějším místům") NENÍ DOLOŽENÉ ŽEBŘÍČKEM — opírá se
+    o popis obou dolin jako „spectacular karst" u Blatnice a je to slabší
+    formulace, kterou při povyšování buď doložíme, nebo přepíšeme.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Ostredok
+  vyska: 1592
+  source: >-
+    Anglická Wikipedie (čteno 8. 8. 2026) vede Ostredok jako „the highest
+    hill of the Great Fatra". ROZPOR TŘÍ PRAMENŮ, nesrovnaný: 1596 m uvádí
+    anglická Wikipedie, PeakVisor i zamilujsadoslovenska.sk („Ostredok, ktorý
+    sa týči do výšky 1 596 metrov nad morom"); česká Wikipedie 1595,58 m;
+    GeoNames 1592 m. Zapsáno 1592 dle konvence z 27. 7. 2026 (při rozporu
+    nižší číslo, rozpor přiznat). Souřadnice se taky rozcházejí, a to o zhruba
+    300 metrů: 48.899444 / 19.081389 (PeakVisor) × 48°53′57″ / 19°04′54″
+    (anglická Wikipedie) × 48°54′11″ / 19°04′44″ (GeoNames). Anglická
+    Wikipedie navíc rozlišuje dva vrcholy — jižní 1596 m a severní „a few
+    meters lower" 1593 m —, což část rozporu vysvětluje, ale nepotvrzuje.
+    POZOR NA JMENOVCE: GeoNames vede druhý Ostredok o výšce 2049 m v katastru
+    Jamník, okres Liptovský Mikuláš, tedy v NÍZKÝCH TATRÁCH. Při dotazu do
+    OSM i při triáži se musí rozlišovat výškou nebo oblastí.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pokyn Michala („vse dalsi co najdes"). Konfigurace
+  okna je v scripts/oblasti.ts (slug velka-fatra, zeme SK, katalogový název
+  „Velká Fatra"), kotvy okna a jejich prameny v komentáři tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `velka-fatra`. Seznam všech čekajících
+  kliků drží docs/KLIKY-PRO-MICHALA.md.
+
+  KATALOG VEDE POHOŘÍ ČESKY („Velká Fatra"), MY SLOVENSKY („Veľká Fatra").
+  V `katalogPohori` proto musí zůstat česká podoba — je to jméno pole
+  v cizích datech, ne naše jméno oblasti. Kdyby se to sjednotilo, vypnula by
+  se dohledávka podle jmen a sedm katalogových objektů by se tiše ztratilo.
+  Vlastní jméno oblasti je slovensky ze stejného důvodu jako u Malé Fatry
+  a Západných Tater: čeština tu ustálený vlastní tvar nemá.
+
+  CO UŽ VÍME BEZ OVERPASSU — externí katalog drží v okně 7 objektů. Dvě
+  chaty jsou z rešerše 8. 8. 2026 doložené dobře:
+  CHATA POD BORIŠOVOM — stavěna 1937–1942 (treking.cz i krasy-slovenska.sk;
+  za stavby se jí prý říkalo „chata na Močidle"), celoroční provoz
+  s obsluhou, veřejné občerstvení včetně čepovaného piva, GPS
+  48.94040 / 19.09750. Rozpory: výška 1312 m (kstturiec.sk, vlastní web)
+  × 1300 m (treking.cz, hiking.sk) a kapacita 20 lůžek (KST) × 18 (treking.cz).
+  STAVEBNÍKA SE NEPODAŘILO DOLOŽIT. Že chatu spravuje KST Turiec, je jen
+  indicie z jeho webu (vede ji v sekci „chaty-kst"), ne doslovný doklad
+  vlastnictví — a rozdíl mezi tím dvojím se u profilu musí udržet.
+  ZÁSOBOVÁNÍ JE CHARAKTERISTIKA: „Všechny náklady se na chatu vynášejí pomocí
+  horských nosičů" (treking.cz) — týž typ údaje jako voda na Lysé hoře.
+  HORSKÝ HOTEL KRÁĽOVA STUDŇA — nejlépe doložená historie oblasti a rovnou
+  s požárem: první chatu postavil roku 1927 Klub československých turistů
+  v Banské Bystrici, ale SHOŘELA DESET DNÍ PŘED PLÁNOVANÝM OTEVŘENÍM;
+  náhradní chata se otevřela 4. 11. 1928. Dnešní hotel se stavěl 1948–1951
+  a „was commissioned on August 29, 1951". Výška 1277 m, GPS
+  48.87605 / 19.04083, kapacita 47 + 29 míst, turistický bufet i restaurace.
+
+  DVĚ MOJE CHYBY V ZADÁNÍ REŠERŠE, obě chycené rešeršistou — a je to už
+  potřetí za den, co jsem do zadání propašoval domněnku. (1) Ptal jsem se na
+  „Chatu na Ostrom" ve Veľkej Fatre; taková chata se nenašla. Existuje vrch
+  Ostrá (1247 m) nad Blatnicou, ale chata u něj doložená není; objekt téhož
+  jména stojí u Košarisek, tedy jinde. (2) Ptal jsem se na „Útulňu Kľačianska
+  Magura" jako na objekt Veľkej Fatry — leží v MALÉ FATŘE (klacianskamagura.sk
+  doslova „Located in Malá Fatra") a náš korpus ji tam správně vede: chata na
+  Kľačianskej Magure z roku 1949 je v poznámkách oblasti mala-fatra. Poučení
+  je pořád totéž: do zadání se nepíše domněnka jako otázka.
+
+  DALŠÍ OBJEKTY, KTERÉ BUDE TŘEBA ROZLIŠIT PŘI TRIÁŽI: na Smrekovici jsou
+  podle pramenů DVA objekty s podobným jménem a různou výškou — Turistická
+  ubytovňa Smrekovica (1348 m, GPS 48.99861 / 19.2038, stravování v přilehlém
+  hotelu Granit) a Horská chata Smrekovica (1339 m, podle drivemagazine.sk
+  původně vojenská zotavovna). Dál rejstřík hiking.sk pro oblast „Veľká Fatra
+  a Choč" jmenuje útulny Koliba Prietržná pod Eliášom, Senník pod Radičinou
+  a Koliba pod Vyšným Šiprúnskym sedlom — POZOR, ten rejstřík zahrnuje
+  i Chočské vrchy, takže část těch objektů může ležet mimo naši oblast.
+
+  NÁRODNÍ PARK — ROZPOR VE VÝMĚŘE, NESROVNANÝ. NP Veľká Fatra byl vyhlášen
+  1. dubna 2002 (anglická Wikipedie), předtím to byla CHKO z roku 1973
+  (slovakia.travel). Rozlohu prameny uvádějí trojmo: 404 km² s ochranným
+  pásmem 261 km² (slovakia.travel), 40 371 ha tedy asi 404 km² (oficiální
+  npvelkafatra.sk) a 784 km² (česká Wikipedie). Navíc existuje novější
+  nařízení vlády č. 427/2023 Z. z., kterým se národní park vyhlašuje znovu
+  i se zónami — jeho text se ze sandboxu nenačetl, takže dnešní výměra může
+  být jiná než všechna tři čísla. Do dat oblasti se proto rozloha nepíše
+  vůbec.
+
+  OKNO SE ZÁMĚRNĚ PŘEKRÝVÁ S MALOU FATROU v pásu 49.02–49.15 / 18.80–19.22,
+  tedy v Turčianské kotlině mezi oběma pohořími. Píše se to sem, ne jen do
+  komentáře hlavičky — rozhodnutí o rozsahu musí vidět i stroj (test
+  tests/int/oblasti-nove.int.spec.ts), jinak je to tichá věta pro člověka,
+  který soubor náhodou otevře. Vzor překryvu Beskyd a Javorníků u Rožnovské
+  Bečvy: duplicity řeší DATA-36 a triáž, ne ostrý řez oknem.
+
+  HRANICE POHOŘÍ NEJSOU DOLOŽENÉ DOSLOVA a okno je proto raději širší.
+  Prameny říkají, že sousedy jsou Malá Fatra, Turčianska kotlina, Kremnické
+  a Starohorské vrchy, Nízke Tatry a Liptovská kotlina, a že severní hranici
+  tvoří Váh — ale doslovnou větu o tom, že hranicí je sedlo Donovaly nebo
+  Revúcka dolina, rešerše nenašla. U Donovalů je jen nepřímá indicie, že obec
+  leží „in an important mountain pass between Veľká Fatra and Starohorské
+  vrchy".
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.
