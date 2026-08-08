@@ -1,6 +1,7 @@
 # Šumava — koše plošné triáže (krok 4b)
 
-Vygeneroval `npx tsx scripts/triaz-kandidatu.ts sumava --md` dne 8. 8. 2026.
+Vygeneroval `npx tsx scripts/triaz-kandidatu.ts sumava --md` dne 8. 8. 2026
+(druhý běh téhož dne, po odpracování bavorského koše Berggasthof/Berghaus).
 **Přegenerovat po každém povýšení nebo vyřazení** — publikované, odložené
 i vyřazené kandidáty skript sám vynechává.
 
@@ -16,54 +17,57 @@ jméno přesto nese boudové slovo, jde kandidát do koše „k posouzení" jako
 rozpor tagu a jména — přesně takový byl Zwieseler Hütte i Waldvereinshütte
 (oba Selbstversorger, vyřazeni 6. 8. s pramenem).
 
-## Co se změnilo 8. 8. 2026 (110 · 35 · 160 → 89 · 36 · 173)
+## Postup triáže: koše 8. 8. 2026 ráno 110 · 35 · 160 → večer 80 · 36 · 173
 
-Dvě opravy skriptu a čtyři dopsaná rozhodnutí. Celkový počet kandidátů
-k triáži klesl z 305 na 298, koš NADĚJNÝCH ze 110 na 89.
+**Ráno — dvě opravy skriptu a čtyři dopsaná rozhodnutí** (110 · 35 · 160 →
+89 · 36 · 173, kandidátů 305 → 298): `tourism=apartment` se začal číst jako
+tag pronájmu; české „chata / chalupa" je proti tagu pronájmu SLABÝ signál,
+u `apartment` ho tag přebíjí, u `chalet` ne (protipříklad Turnerova chata);
+vyřazení zapsaná s předponou oblasti byla skriptu neviditelná; čtyři
+rozhodnutí, která žila jen v deníku, jsou v rozhodovacích seznamech.
 
-1. **`tourism=apartment` se začal číst jako tag pronájmu.** Čtrnáct
-   kandidátů (Lipno nad Vltavou, Kvilda) sedělo mezi nadějnými jen proto,
-   že se jmenují „Chata …" nebo „Chalupa …". V OSM je `apartment`
-   pronajímaná bytová jednotka; tag je tu konkrétnější než jméno.
-2. **České „chata / chalupa" je proti tagu pronájmu SLABÝ signál** — na
-   rozdíl od „bouda", „Hütte", „Berggasthof", „schronisko". U `apartment`
-   ho tag přebíjí, u `chalet` ne: tam máme doložený protipříklad,
-   **Turnerovu chatu** (`tourism=chalet`, jméno jen „chata" — a přitom
-   publikovaný profil). Rozdíl mezi oběma tagy tedy rozhodlo měření nad
-   korpusem, ne úvaha, a drží ho test `tests/int/triaz-kandidatu.int.spec.ts`.
-3. **Vyřazení zapsaná s předponou oblasti byla skriptu neviditelná.**
-   `_vyrazeno.yaml` vede slugy ve dvou tvarech (`kynast`
-   i `sumava/waldvereinshutte` — 33 ze 49 záznamů) a skript porovnával celý
-   řetězec. Mezi NADĚJNÝMI proto pořád seděly **Zwieseler Hütte
-   a Waldvereinshütte**, obě vyřazené už 6. 8. s pramenem. Nyní se
-   porovnává poslední úsek cesty.
-4. **Čtyři rozhodnutí, která existovala jen v deníku nebo v poznámce
-   kandidáta, jsou v rozhodovacích seznamech.** Sloučené do publikovaných
-   profilů: `josefova-vez` → Horská chata Kleť, `rozhledna-pancir` → Chata
-   Pancíř, `svatobor-chata` → Svatobor. Odložený: `geisskopfturm` (nositelem
-   služby je hostinec, o provozovateli věže mlčí prameny).
+**Odpoledne — odpracován celý bavorský koš „Berggasthof / Berghaus", čtrnáct
+kandidátů** (89 → 80 nadějných, kandidátů 298 → 289). Byla to největší
+homogenní skupina koše a klíč u ní vyšel devětkrát z deseti kladně:
 
-### NADĚJNÉ — vzít v triáži nejdřív (89)
+- **POVÝŠENO 9:** Berghaus Loderhart (spolková chata NaturFreunde,
+  „öffentliche Gaststätte" doslova), Berggasthof Lusen (Goldsteig, etapa 5),
+  Berggasthof Hochpröller (960 m pod Prölleren, Goldsteig přes vrchol),
+  Berggasthof Menauer / Grandsberg (Goldsteig + evropská E8),
+  Berghaus Hohenbogen (u horní stanice lanovky, 150 míst),
+  Berggasthof Hinterwies (portál ho vede jako „Bewirtschaftet"),
+  Berggasthof Waldmann (pivní zahrada s Brotzeit), Berggasthof Hinhart
+  (dům z roku 1700), Berggasthof Grobauer (rodina od 1910, hraniční hotel
+  se zařazuje s poctivým označením — vzor Špindlerovky).
+- **VYŘAZENO 1:** Berggasthof Geiß — vlastní web provozovatele dokládá, že
+  hostinský provoz ukončil („den Gasthofbetrieb … eingestellt"), zůstal
+  penzion pro ubytované.
+- **ODLOŽENO 3:** Berggasthof Fritz (přejmenován na Hotel der Bäume,
+  prameny si odporují o hospodě a nedatují to), Berggasthof Markbuchen
+  (nejistá identita — dva podniky téhož jména, portály je mají zamotané),
+  Berggasthof Hochstein (občerstvení pro veřejnost nedoloženo, kapacita
+  6 × 28 pokojů).
+
+**Poučení pro zbytek koše:** u bavorských hostinců je nejspolehlivější druhý
+pramen regionální turistický portál (bayerischer-wald.de,
+ostbayern-tourismus.de, arberland-bayerischer-wald.de, goldsteig-wandern.de,
+weby obcí) — vlastní weby domů jsou ze sandboxu často za schvalovacím gatem.
+Výšku DOMU portály uvádějí zřídka; skoro vždy jde o výšku hory nebo obce
+a nesmí se dovozovat. Rozvrhy se rozcházejí tak často, že „žádná otvírací
+doba" je u téhle skupiny běžný a správný výsledek.
+
+### NADĚJNÉ — vzít v triáži nejdřív (80)
 
 | kandidát | země | signál |
 |---|---|---|
 | `abseits-hutte` — Abseits Hütte | de | jméno nese „Hütte" |
 | `aussichtsturm` — Aussichtsturm | de | typ z OSM: rozhledna |
 | `barwurz-resl-huttn` — Bärwurz-Resl-Hüttn | de | typ z OSM: obsluhovana |
-| `berggasthof-fritz` — Berggasthof Fritz | de | jméno nese „Berggasthof" |
-| `berggasthof-geiss` — Berggasthof Geiß | de | jméno nese „Berggasthof" |
 | `berggasthof-grobauer` — Berggasthof Grobauer | de | jméno nese „Berggasthof" |
 | `berggasthof-hinhart` — Berggasthof Hinhart | de | jméno nese „Berggasthof" |
 | `berggasthof-hinterwies` — Berggasthof Hinterwies | de | jméno nese „Berggasthof" |
-| `berggasthof-hochproller` — Berggasthof Hochpröller | de | jméno nese „Berggasthof" |
-| `berggasthof-hochstein` — Berggasthof Hochstein | de | jméno nese „Berggasthof" |
-| `berggasthof-lusen` — Berggasthof Lusen | de | jméno nese „Berggasthof" |
-| `berggasthof-markbuchen` — Berggasthof Markbuchen | de | jméno nese „Berggasthof" |
-| `berggasthof-menauer` — Berggasthof Menauer | de | jméno nese „Berggasthof" |
 | `berggasthof-waldmann` — Berggasthof Waldmann | de | jméno nese „Berggasthof" |
 | `berggasthof-zottling` — Berggasthof Zottling | de | jméno nese „Berggasthof" |
-| `berghaus-hohenbogen` — Berghaus Hohenbogen | de | jméno nese „Berghaus" |
-| `berghaus-loderhart` — Berghaus Loderhart | de | typ z OSM: obsluhovana |
 | `bistro-bouda` — Bistro Bouda | cz | jméno nese „Bouda" |
 | `blockhutte` — Blockhütte | de | OSM tourism=hut |
 | `bokova-chata` — Bokova chata | cz | jméno nese „chata" |
@@ -356,5 +360,5 @@ k triáži klesl z 305 na 298, koš NADĚJNÝCH ze 110 na 89.
 | `zoihausl` — Zoihäusl | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 | `zum-alten-wirt` — Zum Alten Wirt | de | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata |
 
-oblast sumava | kandidatu k triazi: 298 | NADEJNE 89 · POSOUDIT 36 · MIMO 173
-preskoceno (publikovane/odlozene/vyrazene): 38
+oblast sumava | kandidatu k triazi: 289 | NADEJNE 80 · POSOUDIT 36 · MIMO 173
+preskoceno (publikovane/odlozene/vyrazene): 47

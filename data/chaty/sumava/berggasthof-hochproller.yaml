@@ -1,0 +1,182 @@
+# Berggasthof Hochpröller — povýšen z kandidáta DATA-01 plošnou triáží
+# koše NADĚJNÝCH (8. 8. 2026). Vše verified: false.
+
+nazev: Berggasthof Hochpröller
+slug: berggasthof-hochproller
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.0248895
+lng: 12.8242491
+vyska: 960
+obec: Kollnburg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/223723866 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška a poloha: turistický portál Arberland (načteno 8. 8. 2026) —
+    „Der Berggasthof Hochpröller liegt auf 960 m Höhe, direkt unter dem
+    Pröllergipfel". Je to jeden z mála bavorských hostinců, u kterých
+    pramen uvádí výšku DOMU, ne hory. Adresa Hinterviechtach 11, 94262
+    Kollnburg dle vlastního webu. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Turistický portál Arberland (načteno 8. 8. 2026) vede u domu dvanáct
+    pokojů a kapacitu okolo 56 lůžek. POČET LŮŽEK SE DO POLE NEZAPISUJE:
+    rešerše přiznala, že se to číslo nepodařilo vytáhnout jako doslovný
+    citát pramene, jen jako výtah — a údaj bez doslovného dokladu
+    nezapisujeme (vzor kapacity Kleti). Že se tu spí, doložené je.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web hostince (hochproeller.com, načteno 8. 8. 2026) vede
+    veřejný rozvrh s pevnými hodinami a třemi zavíracími dny („Dienstag
+    geschlossen", „Mittwoch geschlossen", „Donnerstag geschlossen"),
+    což je rozvrh hospody pro veřejnost, ne jídelny pro nocující —
+    jídelna pro hosty domu zavírací dny nemá. Věta, která by
+    kolemjdoucího zvala výslovně, na webu není; doklad je tedy
+    v rozvrhu, ne v citátu, a takhle to tu stojí i v próze.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  pondělí 17:00–22:00, úterý až čtvrtek zavřeno, pátek od 17:00, sobota od
+  11:00, neděle 11:00–18:00 (v prázdninách bývá otevřeno i v úterý
+  a ve čtvrtek, zavírací den se pak přesouvá na středu)
+overeniProvoz:
+  source: >-
+    Vlastní web hostince (hochproeller.com, načteno 8. 8. 2026):
+    „Montag 17.00 – 22.00 Uhr", „Dienstag geschlossen", „Mittwoch
+    geschlossen", „Donnerstag geschlossen", „Freitag ab 17.00 Uhr",
+    „Samstag ab 11.00 Uhr", „Sonntag 11.00 – 18.00 Uhr". Prázdninová
+    výjimka je na témž webu, ale rešerše ji nedoložila doslovným
+    citátem — proto je v poli formulovaná jako „bývá", ne jako rozvrh.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+499965471'
+  web: https://hochproeller.com/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ani milníky SE NEVYPLŇUJÍ: rok stavby ani dějiny domu nevede
+# žádný načtený pramen, ani vlastní web.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Hostinec stojí přímo pod vrcholem Prölleru, který je podle
+      turistického portálu nejznámější horou okolí Sankt Englmar
+      a Kollnburgu — 1048 metrů.
+    kategorie: jine
+    zdroj: >-
+      Ostbayern Tourismus (načteno 8. 8. 2026): „Mit 1.048 m ist der
+      Pröller der bekannteste Berg im Gebiet um St. Englmar und
+      Kollnburg im Bayerischen Wald." Superlativ je tvrzení portálu.
+  - text: >-
+      Vrcholová cesta na Pröller je zároveň úsekem dálkové trasy
+      Goldsteig.
+    kategorie: jine
+    zdroj: >-
+      Ostbayern Tourismus (načteno 8. 8. 2026): „Wandertechnisch ist der
+      Pröller über Rundwanderwege und einen Gipfelweg = Goldsteig
+      erschlossen."
+  - text: >-
+      Severní svah Prölleru vede portál regionu jako jeden
+      z nejkrásnějších a nejdelších sjezdů Bavorského lesa.
+    kategorie: jine
+    zdroj: >-
+      Ostbayern Tourismus (načteno 8. 8. 2026): „der Nordhang bietet eine
+      der schönsten und längsten Abfahrten des Bayerischen Waldes".
+      Tvrzení portálu, redakcí neověřené.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec ve 960 metrech přímo pod vrcholem Prölleru, na
+  vrcholové cestě, která je zároveň úsekem Goldsteigu. Restaurace se
+  třemi zavíracími dny v týdnu a nocleh ve dvanácti pokojích.
+text:
+  - >-
+    Pröller je podle turistického portálu nejznámější hora okolí Sankt
+    Englmar a Kollnburgu: 1048 metrů, vrcholová cesta, která je zároveň
+    úsekem dálkové trasy Goldsteig, a v zimě lyžařský areál se čtyřmi
+    vleky, jehož severní svah vede tentýž portál jako jeden
+    z nejkrásnějších a nejdelších sjezdů Bavorského lesa. Necelých sto
+    metrů pod vrcholem, ve výšce 960 metrů, stojí Berggasthof
+    Hochpröller — a je to jeden z mála bavorských hostinců našeho
+    fondu, u kterého pramen uvádí výšku domu, ne jen hory nad ním.
+  - >-
+    Hospoda má rozvrh, jaký si jídelna pro nocující nezavádí: pondělí
+    večer, tři zavírací dny v řadě od úterý do čtvrtka, pak pátek od
+    pěti, sobota od jedenácti a neděle do šesti. Právě ty tři zavírací
+    dny jsou doklad, že jde o hospodu pro kolemjdoucí — věta, která by
+    hosty zvala výslovně, na webu není, a tak to říkáme takhle, ne
+    silněji. V prázdninách bývá otevřeno i v úterý a ve čtvrtek
+    a zavírací den se přesouvá na středu.
+  - >-
+    Nocuje se ve dvanácti pokojích. Kolik je to lůžek, do profilu
+    nezapisujeme — číslo se v pramenech objevuje, ale nepodařilo se ho
+    doložit doslovnou citací, a tak zůstává jen tady v poznámce.
+  - >-
+    Pozor na jmenovce v sousedství: asi 1,1 kilometru odsud stojí
+    Berghütte Zum Pröller, což je JINÝ objekt jiného provozovatele.
+    Rok stavby ani dějiny domu neznáme, žádný pramen je nevede. Údaje
+    na téhle stránce nesou vlastní web hostince a turistické portály
+    regionu, polohu nese OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Turistický portál Arberland — výška domu 960 m, poloha přímo pod
+      vrcholem Prölleru, dvanáct pokojů (načteno 8. 8. 2026)
+    url: https://www.arberland-bayerischer-wald.de/berggasthof-hochproeller/1637/5298/4852
+  - popis: >-
+      Vlastní web hostince — otvírací doba se třemi zavíracími dny,
+      adresa Hinterviechtach 11, telefon, provozovatel Klaus Altmann
+      (načteno 8. 8. 2026)
+    url: https://hochproeller.com/
+  - popis: >-
+      Ostbayern Tourismus, stránka Prölleru — 1048 m, nejznámější hora
+      okolí, vrcholová cesta jako úsek Goldsteigu, lyžařský areál se
+      čtyřmi vleky (načteno 8. 8. 2026)
+    url: https://www.ostbayern-tourismus.de/attraktionen/proeller-84d2fd9187
+  - popis: 'OpenStreetMap (GPS; ODbL)'
+    url: https://www.openstreetmap.org/way/223723866
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berggasthof-hochproller.yaml
+  (8. 8. 2026, plošná triáž koše NADĚJNÝCH). Klíč zařazení splněn: role
+  na trase doložena Goldsteigem přes vrchol, občerstvení pro veřejnost
+  rozvrhem se zavíracími dny.
+
+  JMENOVEC V SOUSEDSTVÍ — DŮLEŽITÉ PRO PŘÍŠTÍ TRIÁŽ. Kandidát
+  `berghutte-zum-proller` (koš K POSOUZENÍ) je JINÝ OBJEKT: provozuje ho
+  dle rešerše Bärwurz Resl Service eG se sídlem Hinterviechtach 3,
+  kdežto tenhle hostinec Klaus Altmann na Hinterviechtach 11. Vzdálenost
+  obou objektů je 1130 m, spočítáno z GPS kandidátů. Táž firma
+  vede podle svého webu tři chaty (Berghütte Pröller, Bärwurz-Resl-Hüttn
+  a Wilderer Erdhütte) v rustikálním stylu s kapacitou okolo 26 osob —
+  což vypadá na pronájem, ne na veřejnou hospodu. Souvisí to i s dalším
+  kandidátem v koši NADĚJNÝCH, `barwurz-resl-huttn`. Všechny tři se mají
+  posoudit společně a s pramenem.
+
+  POČET LŮŽEK VĚDOMĚ PRÁZDNÝ: rešerše u čísla 56 sama přiznala, že jde
+  o výtah nástroje, ne o doslovný citát pramene. Dvanáct pokojů
+  doložených je, lůžka ne.
+
+  NEDOLOŽENO (nezapsáno): rok stavby a dějiny domu, počet lůžek,
+  doslovná podoba prázdninové výjimky v rozvrhu, sortiment kuchyně.
+  Kandidát na DATA-04: telefon +49 9965 471. Fotku dodá příští běh
+  DATA-02.

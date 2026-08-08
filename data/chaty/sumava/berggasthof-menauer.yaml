@@ -1,0 +1,203 @@
+# Berggasthof Menauer — povýšen z kandidáta DATA-01 plošnou triáží koše
+# NADĚJNÝCH (8. 8. 2026). Vše verified: false.
+
+nazev: Berggasthof Menauer
+slug: berggasthof-menauer
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Berggasthof Grandsberg
+    poznamka: >-
+      jméno podle osady, běžné na turistických portálech i ve vlastní
+      doméně grandsberg.de
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9483274
+lng: 12.8517219
+vyska: 850
+obec: Schwarzach
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/127886696 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Výška 850 m dvěma nezávislými prameny: Ostbayern Tourismus („850 m
+    ü.NN") a Outdooractive („Nahe dem Erholungsort Schwarzach im Vorderen
+    Bayerischen Wald liegt Grandsberg (850 m.ü.N.N.)") — pozor, druhý
+    pramen mluví o OSADĚ Grandsberg; shoda čísla s prvním, který ho vede
+    u domu, je důvod, proč se zapisuje. Adresa Grandsberg 6, 94374
+    Schwarzach dle vlastního impresa. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 26
+overeniNocleh:
+  source: >-
+    Ostbayern Tourismus (načteno 8. 8. 2026) vede u domu 26 lůžek
+    v hostinských pokojích s vlastní sprchou, WC, televizí a balkonem.
+    Rešerše přiznala, že německé znění věty nezískala doslovně, jen
+    výtahem — číslo se ale objevuje shodně na dvou zrcadlících portálech
+    (ostbayern-tourismus.de a bayerischer-wald.de) a je to jediné číslo,
+    které se u domu vyskytuje, proto se zapisuje.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Ostbayern Tourismus (načteno 8. 8. 2026) vede u domu „Gaststube,
+    bayerische Küche und hausgemachte Kuchen" — výčep, bavorská kuchyně
+    a domácí koláče. Rozvrh téhož pramene (čtvrtek až neděle 10.30–19.00,
+    kuchyně 11.00–18.00) je rozvrh podniku pro veřejnost, ne jídelny pro
+    nocující.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: tři prameny dávají tři různé rozvrhy a ani
+# jeden svou zprávu nedatuje — viz overeniProvoz. Radši žádný rozvrh než
+# špatný (vzor Kleti a Loderhartu).
+overeniProvoz:
+  source: >-
+    ROZPOR TŘÍ PRAMENŮ, nesrovnaný. Turistické portály regionu
+    (ostbayern-tourismus.de a jeho zrcadlo bayerischer-wald.de) vedou
+    „Donnerstag bis Sonntag: von 10.30 Uhr bis 19.00 Uhr geöffnet.
+    Küche von 11.00 Uhr bis 18.00 Uhr". OpenStreetMap má „We-Su
+    10:30-19:00", tedy o den delší týden. Gastroguide uvádí úplně jinak:
+    otevřeno v pondělí a od středy do neděle 09:00–20:00 s úterním
+    zavíracím dnem. Shodují se na tom, že se zavírá v pondělí nebo
+    v úterý a že jádro provozu je od dopoledne do večera; nic přesnějšího
+    se zapsat nedá. Jeden telefonát to rozhodne (DATA-04).
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+499962632'
+  web: https://www.grandsberg.de/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ani milníky SE NEVYPLŇUJÍ: dějiny domu nevede žádný načtený
+# pramen.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Dům leží na dvou dálkových trasách zároveň — na kvalitativně
+      značeném Goldsteigu a na evropské dálkové trase E8.
+    kategorie: jine
+    zdroj: >-
+      Ostbayern Tourismus (načteno 8. 8. 2026) vede u domu „Qualitätsweg
+      Goldsteig" a „Europäischer Fernwanderweg E8"; rešerše přiznala, že
+      jde o výtah nástroje, ne o doslovný citát z HTML.
+  - text: >-
+      Od hostince se vychází na Hirschenstein: v 1095 metrech tam stojí
+      zděná vyhlídková věž s výhledem na jihozápad přes Podunají.
+    kategorie: jine
+    zdroj: >-
+      trasa od domu: sehenswerter-bayerischer-wald.de — „Wanderparkplatz
+      beim Berggasthof Menauer"; věž: bayerischer-wald.me — „Auf einer
+      Höhe von 1.095 m erhebt sich ein gemauerter Turm und bietet
+      faszinierende Fernblicke nach Südwesten über die Donauebene"
+      (obojí načteno 8. 8. 2026). Věž stojí samostatně několik kilometrů
+      od hostince, není jeho součástí.
+  - text: >-
+      U domu je bezplatná nabíjecí stanice pro elektrokola.
+    kategorie: jine
+    zdroj: >-
+      Ostbayern Tourismus (načteno 8. 8. 2026) — výtah nástroje, ne
+      doslovný citát
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec v osadě Grandsberg nad Schwarzachem, ve 850 metrech na
+  Goldsteigu a evropské trase E8. Výčep s bavorskou kuchyní a domácími
+  koláči, dvacet šest lůžek a výchozí bod na věž na Hirschensteinu.
+text:
+  - >-
+    Grandsberg je osada nad lázeňským Schwarzachem v předním Bavorském
+    lese, ve výšce 850 metrů. Stojí v ní Berggasthof Menauer — dům, který
+    se podle osady sám často jmenuje Berggasthof Grandsberg a i jeho
+    doména nese to jméno. Pro pěší je zajímavý především tím, kde leží:
+    přes Grandsberg vede kvalitativně značený Goldsteig a zároveň
+    evropská dálková trasa E8, takže dům je zastávkou na dvou dálkových
+    trasách zároveň.
+  - >-
+    Uvnitř je výčep s bavorskou kuchyní a domácími koláči, nocuje se ve
+    dvaceti šesti lůžkách v pokojích se sprchou, WC, televizí a balkonem.
+    U domu je bezplatná nabíjecí stanice pro elektrokola. Kdy přesně je
+    otevřeno, ale poctivě nevíme: turistické portály vedou čtvrtek až
+    neděle od půl jedenácté do sedmi s kuchyní do šesti, OpenStreetMap
+    začíná týden už ve středu a gastronomický katalog uvádí docela jiný
+    rozvrh od devíti do osmi s úterním zavíracím dnem. Shoda je jen
+    v tom, že se zavírá v pondělí nebo v úterý. Otvírací dobu proto
+    neuvádíme vůbec.
+  - >-
+    Od hostince se vychází na Hirschenstein, kde v 1095 metrech stojí
+    zděná vyhlídková věž s výhledem na jihozápad přes Podunají —
+    parkoviště pro pěší k té trase je právě u Menauerů. Věž je
+    samostatný cíl několik kilometrů odsud, ne součást hostince; kolik
+    přesně kilometrů, žádný náš pramen neříká číslem, které bychom mohli
+    doložit, a tak ho tu neuvádíme. Délky a převýšení najdete
+    u přístupů níže.
+  - >-
+    Dějiny domu neznáme; rok stavby ani vyprávění o minulosti nevede
+    žádný pramen. Údaje na téhle stránce nesou turistické portály
+    regionu a vlastní impresum domu, polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Ostbayern Tourismus — výška 850 m, výčep s bavorskou kuchyní
+      a domácími koláči, 26 lůžek, poloha na Goldsteigu a E8, nabíjecí
+      stanice pro elektrokola, rozvrh čtvrtek–neděle (načteno
+      8. 8. 2026)
+    url: https://www.ostbayern-tourismus.de/attraktionen/berggasthof-menauer-uebernachtungsmoeglichkeit-333f19fbff
+  - popis: >-
+      Vlastní impresum domu — Johann Menauer, Grandsberg 6, 94374
+      Schwarzach (načteno 8. 8. 2026)
+    url: https://www.grandsberg.de/impressum.html
+  - popis: >-
+      Outdooractive — Grandsberg ve 850 m u lázeňského Schwarzachu
+      v předním Bavorském lese (načteno 8. 8. 2026)
+    url: https://www.outdooractive.com/de/accommodation/bayerischer-wald/berggasthof-grandsberg/23737682/
+  - popis: >-
+      sehenswerter-bayerischer-wald.de — trasa na Hirschenstein
+      s výchozím parkovištěm u hostince (načteno 8. 8. 2026)
+    url: https://www.sehenswerter-bayerischer-wald.de/wandern-schuhfleck-hirschenstein-schwarzach/
+  - popis: >-
+      bayerischer-wald.me — zděná vyhlídková věž na Hirschensteinu
+      v 1095 m s výhledem přes Podunají (načteno 8. 8. 2026)
+    url: https://www.bayerischer-wald.me/detail/id=5fa2732b075883400befa790
+  - popis: 'OpenStreetMap (GPS, otvírací doba We-Su 10:30-19:00; ODbL)'
+    url: https://www.openstreetmap.org/way/127886696
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berggasthof-menauer.yaml (8. 8. 2026,
+  plošná triáž koše NADĚJNÝCH). Klíč zařazení splněn dvakrát: role na
+  trase je doložená dvěma dálkovými trasami (Goldsteig, E8), občerstvení
+  pro veřejnost výčepem s kuchyní a koláči.
+
+  FALEŠNÝ ROZPOR, KTERÝ SI VYROBILA MOJE VLASTNÍ ZADÁVACÍ CHYBA — stojí
+  za zápis, ať se to nepřepíše do dat příště. Rešerši jsem omylem zadal
+  délku 13.0517219 místo skutečné 12.8517219 z kandidáta. Rešerše pak
+  poctivě ohlásila „rozpor souřadnic" proti portálům Outdooractive
+  a alpenvereinaktiv (48.948379 / 12.851729) a označila je za chybu
+  jejich databáze. Skutečnost je opačná: oba portály se s OSM shodují na
+  dvacet metrů a chyba byla v mém zadání. Poučení: souřadnice do rešerše
+  kopírovat, ne přepisovat.
+
+  KAPACITA 26 ZAPSÁNA, ač rešerše přiznala, že číslo nezískala doslovným
+  citátem. Důvod: objevuje se shodně na dvou zrcadlících portálech a je
+  to jediné číslo, které se u domu vyskytuje, takže tu není co srovnávat.
+  Kdyby se objevilo druhé, platí konvence z 27. 7. (zapsat nižší, rozpor
+  přiznat).
+
+  NEDOLOŽENO (nezapsáno): otvírací doba (tři rozporné prameny), dějiny
+  domu a rok stavby, vzdálenost k věži na Hirschensteinu číslem.
+  Provozovatel dle impresa Johann Menauer — jméno z impresa do prózy
+  nedáváme. Kandidát na DATA-04: telefon +49 9962 632. Fotku dodá
+  příští běh DATA-02.

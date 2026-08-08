@@ -1,0 +1,234 @@
+# Berghaus Loderhart — povýšen z kandidáta DATA-01 plošnou triáží koše
+# NADĚJNÝCH (8. 8. 2026). Vlastní web loderhart.de je ze sandboxu za
+# schvalovacím gatem (třetí neúspěch, viz deník 7. 8.); fakta proto nesou
+# stránka spolku NaturFreunde Deutschlands a německá Wikipedie.
+# Vše verified: false.
+
+nazev: Berghaus Loderhart
+slug: berghaus-loderhart
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Naturfreundehaus Berghaus Loderhart
+    poznamka: úplná podoba jména v seznamu domů spolku NaturFreunde
+  - nazev: Loderhart
+    poznamka: jméno osady, kterou dům tvoří celou sám
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9154859
+lng: 12.9996458
+vyska: 924
+obec: Grafling
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/184077472 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Obec: německá Wikipedie (načteno 8. 8. 2026) — „Die Loderhart ist ein
+    Gemeindeteil der Gemeinde Grafling im Landkreis Deggendorf in
+    Niederbayern." VÝŠKA: prameny si odporují o tři metry — spolek
+    NaturFreunde uvádí 927 m („Das NFH liegt in ruhiger Lage inmitten
+    ausgedehnter Wälder des Naturparks Bayerischer Wald, 927 müNN."),
+    regionální turistický web 924 m („Das Berghaus Loderhart (924m)…").
+    Dle konvence kapacit z 27. 7. 2026 se při rozporu zapisuje NIŽŠÍ
+    číslo a rozpor se přiznává — proto 924. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 30
+overeniNocleh:
+  source: >-
+    Stránka domu v seznamu spolku NaturFreunde Deutschlands (načteno
+    8. 8. 2026) uvádí „30 Betten". Rozdělení po pokojích tamtéž (čtyři
+    dvoulůžkové, jeden třílůžkový, jeden pětilůžkový, dva sedmilůžkové)
+    dává týž součet. Jiný pramen počet lůžek nevede.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Stránka spolku NaturFreunde Deutschlands (načteno 8. 8. 2026) vede
+    u domu ve výbavě současně „öffentliche Gaststätte, Gastwirtschaft,
+    Biergarten" a „Selbstkocherküche" — tedy veřejnou hospodu i kuchyň
+    k samostatnému vaření pro nocující. Nezávisle německá Wikipedie:
+    „Einzige Bebauung ist das Berghaus Loderhart der Naturfreunde
+    Deutschlands, Ortsgruppe Deggendorf, mit Biergarten und Kapelle."
+    Slovo „öffentliche" je tu rozhodující: klíč zařazení stojí na
+    občerstvení PRO VEŘEJNOST, a tady ho pramen říká výslovně —
+    na rozdíl od Zwieseler Hütte a Waldvereinshütte, které jsou
+    Selbstversorger a byly 6. 8. 2026 vyřazeny.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: tři prameny dávají tři neslučitelné rozvrhy
+# a ani jeden svou zprávu nedatuje — viz overeniProvoz. Pro plánování túry
+# je to zásadní údaj, a tak radši žádný než špatný.
+overeniProvoz:
+  source: >-
+    ROZPOR TŘÍ PRAMENŮ, nesrovnaný: spolek NaturFreunde uvádí
+    „Geöffnet: Mai–Okt.: SA, SO und feiertags" (tedy jen letní pololetí),
+    OpenStreetMap vede „Sa-Su,PH 10:00-17:00" v zimě do 16:00 (tedy
+    celoročně) a regionální web Sehenswerter Bayerischer Wald píše, že
+    dům je „im Winter während der Weihnachtsferien täglich geöffnet und
+    sonst an den Wochenenden bis Mitte März". Shodují se jen na tom, že
+    jádrem provozu jsou víkendy a svátky; konkrétní hodiny ani sezónu
+    proto nezapisujeme. Jeden telefonát to rozhodne (DATA-04).
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+4999291064'
+  web: https://loderhart.de/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1950
+overeniHistorie:
+  source: >-
+    Německá Wikipedie (načteno 8. 8. 2026): „1950 erwarb der
+    Naturfreunde-Landesverband Bayern das Gebäude (damalige Adresse
+    Grafling Hausnummer 36) für eine Nutzung als Touristenheim."
+    POZOR NA VÝKLAD: 1950 je rok, kdy dům KOUPIL spolek a začal ho užívat
+    jako turistickou ubytovnu — ne rok, kdy byl postaven. Rok stavby
+    nevede žádný pramen; kdo ho doloží, opraví to (vzor Kolínské boudy,
+    u níž se rok koupě 1927 jako rokVzniku 26. 7. 2026 zamítl). Zapisuje
+    se tu proto, že u spolkových domů je vznik TURISTICKÉ SLUŽBY tím, co
+    průvodce popisuje — a ta je datovaná přesně.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Berghaus je jedinou stavbou celé osady Loderhart — dům a osada jsou
+      totéž místo i totéž jméno.
+    kategorie: jine
+    zdroj: >-
+      německá Wikipedie (načteno 8. 8. 2026): „Einzige Bebauung ist das
+      Berghaus Loderhart der Naturfreunde Deutschlands, Ortsgruppe
+      Deggendorf, mit Biergarten und Kapelle."
+  - text: >-
+      Autem se k domu nedojede: přístup vede lesní cestou od
+      Engelburgsried, uzavřenou pro běžný motorový provoz.
+    kategorie: jine
+    zdroj: >-
+      německá Wikipedie (načteno 8. 8. 2026): „Erreichbar sie über einen
+      Forstweg von Engelburgsried aus, der für allgemeinen motorisierten
+      Verkehr jedoch gesperrt ist."
+  - text: >-
+      U domu stojí kaple.
+    kategorie: jine
+    zdroj: >-
+      německá Wikipedie (načteno 8. 8. 2026) — „mit Biergarten und
+      Kapelle"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Spolková horská chata NaturFreunde ve 924 metrech nad Graflingem, jediný
+  dům celé osady Loderhart. Veřejná hospoda s pivní zahradou, třicet lůžek
+  a kaple — a autem se sem nedojede.
+text:
+  - >-
+    Loderhart je zvláštní adresa: osada, kterou tvoří jediný dům. Ten dům
+    je Berghaus Loderhart, spolková chata německých NaturFreunde,
+    a stojí ve výšce okolo 924 metrů v rozsáhlých lesích přírodního parku
+    Bavorský les, na katastru obce Grafling v okrese Deggendorf. Autem se
+    k němu nedojede — přístup vede lesní cestou od Engelburgsried, která
+    je pro běžný motorový provoz uzavřená. Kdo sem chce, jde po svých.
+  - >-
+    Dům patří místní organizaci NaturFreunde v Deggendorfu a jeho dějiny
+    jako turistické chaty začínají rokem 1950: tehdy budovu koupil
+    bavorský krajský svaz spolku, aby v ní zřídil turistickou ubytovnu.
+    Kdy byla postavena, nevíme — žádný pramen rok stavby nevede, a tak
+    ho tu neuvádíme. U spolkových domů je ostatně datum, kdy začala
+    služba turistům, tím zajímavějším z obou.
+  - >-
+    Hospoda je výslovně veřejná: kdo přijde, může se najíst, i když tu
+    nespí. Vedle výčepu je pivní zahrada a u domu kaple. Nocuje se ve
+    třiceti lůžkách rozdělených do osmi pokojů od dvoulůžkových po
+    sedmilůžkové, a kdo si chce vařit sám, má k dispozici kuchyň pro
+    samostatné hospodaření. Právě to slovo „veřejná" dům odlišuje od
+    Zwieseler Hütte a Waldvereinshütte pár desítek kilometrů odsud,
+    které jsou k pronájmu pro samostatné hospodaření a do průvodce
+    proto nepatří.
+  - >-
+    Kdy je otevřeno, poctivě nevíme. Tři prameny dávají tři neslučitelné
+    odpovědi — jeden vede provoz jen od května do října o sobotách,
+    nedělích a svátcích, druhý celoroční víkendy s hodinami od deseti do
+    pěti, třetí denní provoz o vánočních prázdninách a jinak víkendy do
+    poloviny března. Shodují se jedině na tom, že jádrem provozu jsou
+    víkendy a svátky. Než to potvrdí telefonát, otvírací dobu neuvádíme
+    vůbec: u chaty, kam se jde hodinu lesem, je špatný rozvrh horší než
+    žádný.
+  - >-
+    Údaje na téhle stránce nesou stránka domu v seznamu spolku
+    NaturFreunde Deutschlands, německá Wikipedie a regionální turistický
+    web; polohu nese OpenStreetMap. Vlastní stránky domu se nám opakovaně
+    nepodařilo otevřít, takže vlastní vyprávění domu o sobě tu chybí.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      NaturFreunde Deutschlands, stránka domu — 927 m n. m., 30 lůžek
+      v osmi pokojích, veřejná hospoda s pivní zahradou i kuchyň pro
+      samostatné hospodaření, provoz květen–říjen o sobotách, nedělích
+      a svátcích, telefon a e-mail (načteno 8. 8. 2026)
+    url: https://www.naturfreunde.de/haus/naturfreundehaus-berghaus-loderhart
+  - popis: >-
+      Německá Wikipedie, Loderhart — osada obce Grafling, jedinou
+      stavbou je Berghaus NaturFreunde OG Deggendorf s pivní zahradou
+      a kaplí, koupeno 1950 krajským svazem jako turistická ubytovna,
+      přístup lesní cestou od Engelburgsried uzavřenou autům, do
+      reformy 1976 součást zaniklé obce Bergern (načteno 8. 8. 2026)
+    url: https://de.wikipedia.org/wiki/Loderhart
+  - popis: >-
+      Sehenswerter Bayerischer Wald — výška 924 m a zimní provoz: denně
+      o vánočních prázdninách, jinak víkendy do poloviny března
+      (načteno 8. 8. 2026)
+    url: https://www.sehenswerter-bayerischer-wald.de/deggendorf-wandern-kreuzfelsen-naturfreunde-huette/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut, otvírací doba Sa-Su,PH
+      10:00-17:00; ODbL)
+    url: https://www.openstreetmap.org/way/184077472
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berghaus-loderhart.yaml (8. 8. 2026,
+  plošná triáž koše NADĚJNÝCH). Klíč zařazení splněn nejsilnějším možným
+  způsobem: pramen říká „öffentliche Gaststätte" doslova, takže se
+  nemusí nic dovozovat.
+
+  PODEZŘENÍ NA SELBSTVERSORGER VYVRÁCENO. Kandidát byl v deníku 7. 8.
+  veden mezi objekty, u nichž je podezření, že jde o chatu k pronájmu
+  (spolkový dům, vzor Kynastu a Zwieseler Hütte). Stránka spolku ale
+  vede OBOJE zvlášť: „öffentliche Gaststätte, Gastwirtschaft, Biergarten"
+  vedle „Selbstkocherküche". Kuchyň pro samostatné hospodaření je tu tedy
+  služba PRO NOCUJÍCÍ, ne náhrada veřejné hospody — a to je přesně ten
+  rozdíl, který u Zwieseler Hütte chyběl.
+
+  VÝŠKA: rozpor 927 (spolek) × 924 (regionální web). Zapsáno 924 dle
+  konvence z 27. 7. 2026 (při rozporu nižší číslo, rozpor přiznat).
+  Rozdíl tří metrů na věci nic nemění, ale konvence se drží i tam, kde
+  o nic nejde — jinak se přestane držet tam, kde jde o hodně.
+
+  ROK 1950 JE ROK KOUPĚ, NE STAVBY, a je tak i popsaný v overeniHistorie
+  i v próze. Vědomě se to zapisuje jako rokVzniku, protože u spolkového
+  domu je vznikem toho, co průvodce popisuje, začátek turistické služby.
+  Kdyby Michal chtěl držet rokVzniku striktně jako rok stavby (vzor
+  zamítnutí roku koupě 1927 u Kolínské boudy), pole se vyprázdní a datum
+  zůstane v próze — je to otázka konvence, ne faktu, a je v deníku.
+
+  ADRESA: spolek uvádí korespondenčně „94469 Deggendorf", Wikipedie ale
+  doloženě vede osadu pod obcí Grafling. Do pole `obec` jde Grafling
+  (správní příslušnost dle pramene o katastru), rozpor je tu zapsaný.
+
+  NEDOLOŽENO (nezapsáno): rok stavby domu, otvírací doba (tři rozporné
+  prameny), jméno hospodáře, sortiment kuchyně, kapacita pivní zahrady,
+  napojení na Goldsteig nebo Pandurensteig (žádný pramen ho neuvádí —
+  přístupové trasy doplní pipeline DATA-06). Vlastní web loderhart.de je
+  ze sandboxu za gatem už napotřetí; kandidát na pokus z Michalova
+  prohlížeče. Fotku dodá příští běh DATA-02.

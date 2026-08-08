@@ -605,3 +605,34 @@ vyrazeno:
       Claude (8. 8. 2026, denní bezobslužná session — rozhodnutí z 6. 8. bylo
       zapsané jen v poznámce kandidáta, ne v rozhodovacím seznamu)
     checked: 2026-08-08
+
+  - osm: https://www.openstreetmap.org/node/9695343524
+    slug: sumava/berggasthof-geiss
+    duvod: >-
+      Hostinský provoz UKONČEN — doloženo vlastním webem provozovatele
+      (berggasthof-geiss.de, načteno 8. 8. 2026): „Aus gesundheitlichen
+      Gründen haben wir den Gasthofbetrieb schweren Herzens eingestellt.
+      Unsere gemütliche Pension bleibt jedoch weiterhin für unsere Gäste
+      geöffnet." Zůstává tedy penzion pro ubytované, a klíč zařazení
+      stojí na občerstvení PRO VEŘEJNOST — to dům dnes nemá. Otvírací
+      doba „nach Vereinbarung", kterou u objektu vede OpenStreetMap
+      i katalogy, je tím překonaná; je to učebnicový příklad toho, proč
+      se stav provozu z OSM nebere (OSM ho nenese spolehlivě, viz
+      hlavička kandidátů DATA-01). Turistickou minulost, která by objekt
+      podržela i bez dnešní služby, nedokládá nic: dům se sám na webu
+      představuje slovy „GEMÜTLICHE ATMOSPHÄRE SEIT 1989", tedy provoz od
+      roku 1989, a výš položená samota to není — stojí v Greisingu
+      (místní část Deggendorfu) ve 800 m dle vlastního webu, resp. 778 m
+      pro celou obec dle portálu Bayerischer Wald. Kdyby se hospoda
+      někdy otevřela znovu, objekt se do fronty vrátí.
+      POZOR NA ZÁMĚNU, opravená chyba: interní poznámka publikovaného
+      profilu Geisskopfhütte tenhle dům dosud vedla jako „další kandidát
+      NA TÉŽE HOŘE". Není to pravda — přeměřeno z GPS obou objektů je to
+      5 955 m a jde o jiný kopec (Greising u Deggendorfu × Geißkopf
+      u Bischofsmais). Poznámka v profilu je týmž dnem opravena.
+    rozhodl: >-
+      Claude (8. 8. 2026, denní bezobslužná session s pověřením „pracuj
+      systematicky a autonomně" — klíč CLAUDE.md: rozhoduje role na trase
+      a občerstvení pro veřejnost; pramen o ukončení je vlastní web
+      provozovatele)
+    checked: 2026-08-08

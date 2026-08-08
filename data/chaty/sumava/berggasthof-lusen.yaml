@@ -1,0 +1,195 @@
+# Berggasthof Lusen — povýšen z kandidáta DATA-01 plošnou triáží koše
+# NADĚJNÝCH (8. 8. 2026). Vše verified: false.
+
+nazev: Berggasthof Lusen
+slug: berggasthof-lusen
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9276189
+lng: 13.4616579
+# vyska SE NEVYPLŇUJE: výšku DOMU nevede žádný načtený pramen. Doložená je
+# jen výška horské vsi Waldhäuser (1000 m) a hory Luzný (1373 m) — ani jedno
+# není výška hostince a odvozovat se to nebude (vzor Kleti a Špičáku).
+obec: Neuschönau
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/1459769317 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Adresa Lusenstr. 17, 94556 Neuschönau
+    (místní část Waldhäuser) dle turistického portálu Bayerischer Wald,
+    načteno 8. 8. 2026. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web hostince (berggasthof-lusen.de, sekce Zimmer, načteno
+    8. 8. 2026) vede „6 Doppelzimmer, 3 Einzelzimmer, 3 Dreibettzimmer"
+    a k tomu „Mehrbettzimmer auf Anfrage", tedy třináct pokojů. POČET
+    LŮŽEK SE NEVYPLŇUJE: sečíst pokoje na lůžka by znamenalo počítat za
+    pramen (a u pokojů „na dotaz" by ten součet ani nešel), a to
+    nedělám — z pokojů se lůžka nedovozují.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Turistický portál Ferienregion Nationalpark (načteno 8. 8. 2026) zve
+    do domu výslovně kolemjdoucí: „Im Berggasthof Lusen kannst du deinen
+    Tag morgens direkt an unserem reichhaltigen Frühstücksbuffet
+    beginnen oder gemütlich nach deiner Wanderung oder einer Skitour
+    einkehren." Slovo „einkehren" po túře je doklad občerstvení pro
+    veřejnost, ne jen pro nocující. Vlastní web k tomu uvádí kuchyni:
+    „deftigen bayerischen Schmankerln auch Wildgerichte, böhmische
+    Mehlspeisen und herzhafte Brotzeiten" — mezi bavorskými
+    specialitami tedy i české moučníky.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  11:00–22:00, teplá kuchyně 11:00–19:30; mimo sezónu bývá zavřeno
+  v pondělí až středu
+overeniProvoz:
+  source: >-
+    Turistický portál Ferienregion Nationalpark (načteno 8. 8. 2026):
+    „11:00 - 22:00 Uhr | warme Küche von 11 - 19:30 Uhr". Týž pramen
+    vede v zářijových a říjnových týdnech opakovaně „Geschlossen"
+    u pondělí, úterý a středy — proto ta druhá polovina věty, formulovaná
+    jako „bývá", ne jako pravidlo: pramen zavírací dny neuvádí jako
+    trvalý rozvrh, jen je má v konkrétních týdnech. Kdo jede mimo
+    hlavní sezónu, ať zavolá.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+4985532665'
+  web: https://www.berggasthof-lusen.de/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ani milníky SE NEVYPLŇUJÍ: rok stavby ani dějiny domu nevede
+# žádný načtený pramen — ani vlastní web, ani regionální portály.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Waldhäuser, ves, ve které hostinec stojí, je podle turistického
+      portálu regionu nejvýše položená horská ves Bavorského lesa —
+      tisíc metrů nad mořem.
+    kategorie: vyska
+    zdroj: >-
+      turistický portál Bayerischer Wald, stránka Bergdorf Waldhäuser
+      (načteno 8. 8. 2026): „höchstgelegene Bergdorf im Bayerischen Wald
+      (1.000 m)". Tvrzení je o VSI, ne o domě — výšku hostince nevede
+      žádný pramen.
+  - text: >-
+      Dům je uveden jako nocleh na konci pátého dne severní varianty
+      dálkové trasy Goldsteig.
+    kategorie: jine
+    zdroj: >-
+      etappen-wandern.de, popis pětidenní trasy Goldsteigu Bavorským
+      lesem (načteno 8. 8. 2026): „Waldhäuser: Berggasthof Lusen"
+  - text: >-
+      Kuchyně vedle bavorských specialit a zvěřiny nabízí i české
+      moučníky — hraniční poloha se propisuje do jídelníčku.
+    kategorie: gastro
+    zdroj: >-
+      vlastní web hostince (načteno 8. 8. 2026): „böhmische Mehlspeisen"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec ve Waldhäuser pod Luzným, v horské vsi, kterou portál
+  regionu uvádí jako nejvýše položenou v Bavorském lese. Restaurace pro
+  kolemjdoucí i pro nocující, třináct pokojů a nocleh na páté etapě
+  Goldsteigu.
+text:
+  - >-
+    Waldhäuser je horská ves na okraji Neuschönau; turistický portál
+    regionu ji uvádí jako nejvýše položenou v celém Bavorském lese —
+    tisíc metrů nad mořem. Stojí tu Berggasthof Lusen, pojmenovaný po
+    domácí hoře: Luzný se zvedá k 1373 metrům přímo nad ním. Výšku
+    samotného domu žádný pramen neuvádí, a tak ji tady nenajdete —
+    odvozovat ji z výšky vsi nebo hory by znamenalo tvrdit víc, než
+    čím jsme si jistí.
+  - >-
+    Restaurace je otevřená kolemjdoucím, ne jen hostům domu: turistický
+    portál zve výslovně k zastavení „po túře nebo po skialpové cestě".
+    Kuchyně jede od jedenácti do půl osmé, hostinec do desíti večer,
+    a na jídelníčku stojí vedle bavorských specialit a zvěřiny také
+    české moučníky — hraniční poloha se propisuje i do talíře. Mimo
+    hlavní sezónu bývá zavřeno v pondělí až středu; pramen to nevede
+    jako trvalé pravidlo, jen to tak má v konkrétních týdnech, takže
+    kdo jede na podzim, ať radši zavolá.
+  - >-
+    Nocuje se ve třinácti pokojích — šest dvoulůžkových, tři
+    jednolůžkové, tři třílůžkové a další na dotaz. Kolik je to lůžek
+    dohromady, neuvádíme: sečíst to za pramen by byl počet, ne údaj.
+    Dům se objevuje i v popisech dálkové trasy Goldsteig jako nocleh na
+    konci pátého dne její severní varianty, a od Baumwipfelpfadu,
+    stezky ve výšce korun stromů nad Neuschönau, je to sem blízko.
+  - >-
+    Rok stavby ani dějiny domu nevíme; nevede je ani vlastní web, ani
+    regionální portály, a tak tu žádná historie není. Údaje na téhle
+    stránce nesou turistické portály regionu a vlastní stránky hostince,
+    polohu nese OpenStreetMap. Redakce nic neověřila vlastním dotazem
+    ani návštěvou.
+zdroje:
+  - popis: >-
+      Ferienregion Nationalpark — otvírací doba 11:00–22:00 s teplou
+      kuchyní do 19:30, zavírací dny v mimosezónních týdnech a výzva
+      k zastavení po túře („einkehren") (načteno 8. 8. 2026)
+    url: https://www.ferienregion-nationalpark.de/poi/berggasthof-lusen.html
+  - popis: >-
+      Turistický portál Bayerischer Wald — adresa Lusenstr. 17, 94556
+      Neuschönau, poloha „am Fuße unseres Hausberges Lusen" (načteno
+      8. 8. 2026)
+    url: https://www.bayerischer-wald.de/BayWald/ukv/house/Neuschoenau-Gasthof-Berggasthof-Lusen-GER00020060241468149
+  - popis: >-
+      Turistický portál Bayerischer Wald, stránka vsi Waldhäuser —
+      nejvýše položená horská ves Bavorského lesa, 1000 m (načteno
+      8. 8. 2026)
+    url: https://www.bayerischer-wald.de/attraktion/bergdorf-waldhaeuser-8a4d9d4318
+  - popis: >-
+      Vlastní web hostince — třináct pokojů, kuchyně s bavorskými
+      specialitami, zvěřinou a českými moučníky, rodina Zarham
+      (načteno 8. 8. 2026)
+    url: https://www.berggasthof-lusen.de/
+  - popis: >-
+      etappen-wandern.de — dům jako nocleh na konci pátého dne severní
+      varianty Goldsteigu (načteno 8. 8. 2026)
+    url: https://www.etappen-wandern.de/fernwanderweg/goldsteig-5-tage-durch-den-bayerischen-wald/
+  - popis: 'OpenStreetMap (GPS, telefon, web; ODbL)'
+    url: https://www.openstreetmap.org/node/1459769317
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berggasthof-lusen.yaml (8. 8. 2026,
+  plošná triáž koše NADĚJNÝCH). Klíč zařazení splněn: občerstvení pro
+  veřejnost doloženo slovem „einkehren" po túře, role na trase doložena
+  Goldsteigem.
+
+  VÝŠKA DOMU VĚDOMĚ PRÁZDNÁ. Rešerše našla jediné číslo — „915m"
+  v titulku stránky gipfelbuch.online — ale tělo té stránky se
+  opakovaně nenačetlo (HTTP 500), takže údaj nemá doklad v textu
+  pramene a nezapisuje se. Doložené jsou jen výška VSI Waldhäuser
+  (1000 m) a HORY Luzný (1373 m); ani jedno není výška hostince.
+  Vzor: Kleť a Rozhledna Špičák, kde se výška stavby taky nedovozovala
+  z okolí.
+
+  POČET LŮŽEK VĚDOMĚ PRÁZDNÝ, ač jsou doložené pokoje. Součet lůžek
+  z typů pokojů je výpočet, ne pramen, a u „Mehrbettzimmer auf Anfrage"
+  by ani nevyšel. Kdyby ho někdo doložil, doplní se.
+
+  NEDOLOŽENO (nezapsáno): rok stavby a dějiny domu, výška, počet lůžek,
+  vzdálenost k Baumwipfelpfadu číslem (prameny říkají jen „poblíž").
+  Provozovatelem je dle vlastního webu rodina Zarham — jméno je jen na
+  vlastním webu, do prózy proto nejde. Kandidát na DATA-04: telefon
+  +49 8553 2665 zavře výšku domu, počet lůžek i mimosezónní rozvrh.
+  Fotku dodá příští běh DATA-02.

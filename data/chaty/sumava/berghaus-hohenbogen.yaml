@@ -1,0 +1,222 @@
+# Berghaus Hohenbogen — povýšen z kandidáta DATA-01 plošnou triáží koše
+# NADĚJNÝCH (8. 8. 2026). Dům už je jmenovaný v profilu sektor.f
+# Hauptturm jako jeden ze tří podniků areálu, které „vedeme zvlášť" —
+# tohle je ono zvlášť. Vše verified: false.
+
+nazev: Berghaus Hohenbogen
+slug: berghaus-hohenbogen
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: sumava
+
+aliasy:
+  - nazev: Berghaus Hohen Bogen
+    poznamka: zápis se dvěma slovy, běžný na portálech regionu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.2346629
+lng: 12.9444863
+# vyska SE NEVYPLŇUJE: výšku DOMU nevede žádný pramen. Doložená je jen
+# výška hřbetu a jeho vrcholů (Schwarzriegel 1079 m) — a dům stojí
+# u horní stanice lanovky, ne na vrcholu.
+obec: Neukirchen beim Heiligen Blut
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/222813537 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Adresa Hohenbogen 2, 93453 Neukirchen b. Hl. Blut dle portálu obce
+    (načteno 8. 8. 2026). Poloha u horní stanice sedačkové lanovky dle
+    webu areálu: „unmittelbar an der Bergstation der Sesselbahn
+    gelegen." Vzdálenost k bývalé odposlechové věži sektor.f
+    (publikovaný profil) je 826 m — spočítáno z GPS obou objektů, ne
+    přebráno z pramene. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    ROZPOR DVOU PRAMENŮ o tom, KDO tu smí spát. Portál obce Neukirchen
+    b. Hl. Blut (načteno 8. 8. 2026) uvádí „Übernachtungsmöglichkeiten
+    im Mehrbettzimmern für bis zu 50 Personen", tedy nocleh ve
+    společných pokojích až pro padesát osob. Portál Goldsteigu podle
+    rešerše naopak uvádí, že se rezervuje jen pro skupiny od patnácti
+    osob a jednotlivci se neubytovávají (rešerše to nedoložila doslovným
+    citátem). Zapisuje se proto jen `nocleh: ano` bez kapacity: že se tu
+    spí, tvrdí oba prameny, ale jestli se sem vejde jednotlivec, si
+    odporují — a pro plánování túry je to podstatný rozdíl.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Portál dálkové trasy Goldsteig (načteno 8. 8. 2026): „Direkt am
+    Skilift gelegen mit einer wunderbaren Aussicht · täglich während des
+    Liftbetriebes geöffnet · ideal für Firmen, Vereine oder
+    Schulausflüge." Web areálu (hohenbogen.de) k tomu uvádí kapacitu
+    hospody: „150 Plätze im Lokal, herrliche Terrasse!" Sto padesát míst
+    a denní provoz po dobu provozu lanovky je hospoda pro veřejnost.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: tři prameny dávají tři různé odpovědi
+# a jedna z nich (a nejspíš ta nejpravdivější) není rozvrh, ale odkaz na
+# provoz lanovky — viz overeniProvoz.
+overeniProvoz:
+  source: >-
+    ROZPOR TŘÍ PRAMENŮ, nesrovnaný. Portál obce Neukirchen b. Hl. Blut
+    (načteno 8. 8. 2026) vede „Sommerbetrieb: 10–17 Uhr, Winterbetrieb:
+    9–16 Uhr (ab ca. Mitte Dezember)". OpenStreetMap má „Mo-Su
+    09:30-17:00". Portál Goldsteigu neuvádí hodiny vůbec a říká „täglich
+    während des Liftbetriebes geöffnet" — otevřeno po dobu provozu
+    lanovky. Ta třetí odpověď je nejspíš ta pravdivá, ale právě proto se
+    hodiny zapsat nedají: rozvrh domu je pak rozvrhem lanovky, a ten se
+    mění se sezónou. Provozovatelem je dle impresa Hohenbogenbahn GmbH
+    und Co. KG, tedy sama lanovka. Dvě různá telefonní čísla: +49 9947
+    464 (volnočasový areál dle impresa) a +49 9947 904270 (přímo Berghaus
+    dle bayerischer-wald.org) — zapsáno to druhé.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+499947904270'
+  web: https://hohenbogen.de/gaststaetten/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku ani milníky SE NEVYPLŇUJÍ: dějiny domu nevede žádný pramen.
+# POZOR NA ZÁMĚNU: rok 1952 se v pramenech objevuje u VYSÍLAČE na hřbetu
+# („Der Sender Hohenbogen besteht seit 1952"), ne u téhle hospody. Do
+# profilu domu proto nepatří.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Hospoda má sto padesát míst uvnitř a terasu — na horský dům
+      nezvykle velká kapacita, daná tím, že stojí u horní stanice
+      lanovky.
+    kategorie: velikost
+    zdroj: >-
+      web areálu hohenbogen.de (načteno 8. 8. 2026): „150 Plätze im
+      Lokal, herrliche Terrasse!"
+  - text: >-
+      Hohen Bogen je asi osm kilometrů dlouhý hřbet s pěti vrcholy; podle
+      portálu regionu je nejvyšší z nich Schwarzriegel s 1079 metry
+      a bývalým spojovacím stožárem Luftwaffe.
+    kategorie: jine
+    zdroj: >-
+      bayerischer-wald.org (načteno 8. 8. 2026): „Der Hohen Bogen ist ein
+      ca. 8 km langgezogener Höhenzug mit 5 Gipfeln" a „Schwarzriegel
+      (1.079 m): die höchste Erhebung mit einem ehemaligen
+      Fernmeldeturm der Luftwaffe."
+  - text: >-
+      Portál obce dům označuje za nejkrásnější horský dům Bavorského
+      lesa.
+    kategorie: jine
+    zdroj: >-
+      portál obce Neukirchen b. Hl. Blut (načteno 8. 8. 2026) —
+      „das schönste Berghaus des Bayerischen Waldes". Je to tvrzení
+      obecního portálu o vlastním objektu, žádný nezávislý pramen ho
+      nepotvrzuje.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská hospoda u horní stanice sedačkové lanovky na hřbetu Hohen Bogen,
+  sto padesát míst a terasa. Nocleh ve společných pokojích, ale prameny si
+  odporují, jestli i pro jednotlivce.
+text:
+  - >-
+    Hohen Bogen je asi osm kilometrů dlouhý hřbet s pěti vrcholy nad
+    Neukirchenem u Svaté Krve, na české straně dobře viditelný z Českého
+    lesa. Vrchol Schwarzriegel, který portál regionu uvádí jako nejvyšší
+    z nich, měří 1079 metrů a nese bývalý spojovací stožár Luftwaffe;
+    o pár set metrů dál stojí bývalá armádní odposlechová věž, kterou v našem průvodci vedeme zvlášť pod
+    jménem sektor.f Hauptturm. Berghaus Hohenbogen stojí od té věže osm
+    set dvacet šest metrů, přímo u horní stanice sedačkové lanovky —
+    a je to on, kdo na tom hřbetu drží občerstvení.
+  - >-
+    Hospoda má sto padesát míst uvnitř a terasu, což je na horský dům
+    kapacita nezvyklá; vysvětluje ji právě lanovka. Otevřeno je „po dobu
+    provozu lanovky", jak to formuluje portál dálkové trasy Goldsteig —
+    a to je zároveň důvod, proč tady žádné hodiny nenajdete. Portál obce
+    uvádí letní provoz od deseti do pěti a zimní od devíti do čtyř,
+    OpenStreetMap zase od půl desáté do pěti denně, ale pokud se dům
+    opravdu řídí lanovkou, mění se rozvrh se sezónou a žádné z těch
+    čísel neplatí trvale. Provozovatelem je podle impresa sama
+    Hohenbogenbahn.
+  - >-
+    Spí se ve společných pokojích. Kolik lidí se sem vejde, si prameny
+    protiřečí: portál obce mluví o noclehu až pro padesát osob, portál
+    Goldsteigu podle naší rešerše naopak o rezervaci jen pro skupiny od
+    patnácti lidí, tedy že jednotlivce dům neubytuje. Rozdíl je pro
+    plánování túry podstatný, a tak zapisujeme jen to, na čem se
+    shodnou — že se tu spí. Kdo jde sám a chce tu zůstat, ať zavolá
+    dopředu.
+  - >-
+    Portál obce dům označuje za nejkrásnější horský dům Bavorského lesa;
+    je to jeho vlastní tvrzení o vlastním objektu a žádný nezávislý
+    pramen ho nepotvrzuje. Dějiny domu neznáme — rok 1952, který se
+    v pramenech okolo objevuje, patří vysílači na hřbetu, ne téhle
+    hospodě, a proto ho tu neuvádíme. Údaje na téhle stránce nesou web
+    areálu, portál obce a portál Goldsteigu, polohu nese OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Web areálu hohenbogen.de — hospoda „unmittelbar an der Bergstation
+      der Sesselbahn", 150 míst a terasa (načteno 8. 8. 2026)
+    url: https://hohenbogen.de/gaststaetten/
+  - popis: >-
+      Portál obce Neukirchen b. Hl. Blut — adresa Hohenbogen 2, letní
+      a zimní provoz, nocleh ve společných pokojích až pro 50 osob,
+      označení „nejkrásnější horský dům Bavorského lesa" (načteno
+      8. 8. 2026)
+    url: https://pages.neukirchen.bayern/de/neukirchen-bhl-blut/wlan/detail/Gastro/g_5270/berghaus-hohenbogen
+  - popis: >-
+      Portál dálkové trasy Goldsteig — „täglich während des
+      Liftbetriebes geöffnet", poloha u vleku, vhodné pro firmy, spolky
+      a školní výlety (načteno 8. 8. 2026)
+    url: https://www.goldsteig-wandern.de/Goldsteig/ukv/house/Berghaus-Hohenbogen-GER00020060437430199?lang=de
+  - popis: >-
+      bayerischer-wald.org — hřbet Hohen Bogen dlouhý asi 8 km s pěti
+      vrcholy, Schwarzriegel 1079 m s bývalým spojovacím stožárem
+      Luftwaffe, telefon Berghausu (načteno 8. 8. 2026)
+    url: https://www.bayerischer-wald.org/regionen/lamer-winkel/freizeit/wandern/unsere-bergwelt/hohen-bogen
+  - popis: 'OpenStreetMap (GPS, otvírací doba Mo-Su 09:30-17:00; ODbL)'
+    url: https://www.openstreetmap.org/way/222813537
+interniPoznamky: >-
+  Povýšeno z data/kandidati/sumava/berghaus-hohenbogen.yaml (8. 8. 2026,
+  plošná triáž koše NADĚJNÝCH). Klíč zařazení splněn: sto padesát míst
+  a denní provoz po dobu provozu lanovky.
+
+  VAZBA NA PUBLIKOVANÝ PROFIL sektor.f Hauptturm. Ten profil vede tenhle
+  dům jako jeden ze tří podniků areálu („Berggasthof Schönblick s pivní
+  zahradou, Berghaus Hohenbogen u horní stanice lanovky a Forstdiensthütte
+  u parkoviště") s poznámkou, že je „vedeme zvlášť". Tímhle profilem se
+  ta poznámka plní. Vzdálenost 826 m je SPOČÍTANÁ z GPS obou objektů, ne
+  přebraná z pramene — a je to počítání, které se u nás dělá (vzor
+  přeměření Haničky proti Špičáku ze 7. 8.). Zbývající dva podniky areálu
+  (`berggasthof-schonblick` a `forstdiensthutte-hohen-bogen`) patří do
+  fronty; druhý je v koši K POSOUZENÍ.
+
+  DVA NEZAPSANÉ ÚDAJE, U KTERÝCH SE VÁŽILO. (1) Kapacita noclehu: portál
+  obce dává 50 osob, portál Goldsteigu podle rešerše říká, že se
+  rezervuje jen pro skupiny od 15 osob. To si neodporuje jen v čísle, ale
+  v tom, KDO tu smí spát — a to se sečíst nedá, proto je pole prázdné.
+  (2) Otvírací doba: nejpravdivější pramen je nejméně konkrétní („po dobu
+  provozu lanovky"), takže pevné hodiny by profil zestárly hned se
+  sezónou.
+
+  DVĚ TELEFONNÍ ČÍSLA: +49 9947 464 (celý volnočasový areál dle impresa)
+  a +49 9947 904270 (přímo Berghaus dle bayerischer-wald.org). Zapsáno
+  druhé, jako přímější.
+
+  NEDOLOŽENO (nezapsáno): výška domu, kapacita noclehu, otvírací doba,
+  rok stavby a dějiny domu, sortiment kuchyně. Rok 1952 patří VYSÍLAČI na
+  hřbetu, ne domu — v próze je to výslovně rozlišené. Kandidát na
+  DATA-04: telefon +49 9947 904270 zavře nocleh pro jednotlivce, výšku
+  i rozvrh. Fotku dodá příští běh DATA-02.
