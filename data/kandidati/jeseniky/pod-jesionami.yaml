@@ -1,0 +1,24 @@
+# Pod Jesionami — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/136459096 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/jeseniky/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Pod Jesionami
+slug: pod-jesionami
+zeme: pl
+oblast: jeseniky
+lat: 50.2907376
+lng: 16.8684003
+obec: Stronie Śląskie
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/136459096 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

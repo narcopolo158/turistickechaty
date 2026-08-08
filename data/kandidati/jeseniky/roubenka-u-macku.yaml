@@ -1,0 +1,33 @@
+# Roubenka u Macků — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/10878198686 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/jeseniky/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Roubenka u Macků
+slug: roubenka-u-macku
+zeme: cz
+oblast: jeseniky
+lat: 50.0291473
+lng: 16.8726992
+obec: Ruda nad Moravou
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/10878198686 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: "+420732180011"
+  email: chalupa.hory@centrum.cz
+  web: http://www.roubenka-pronajem.unas.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/10878198686 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

@@ -1,0 +1,249 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-05-31T22:37:44Z",
+    "timestamp_areas_base": "2026-05-31T22:37:44Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 2254694007,
+  "lat": 50.2795197,
+  "lon": 17.5115994,
+  "tags": {
+    "addr:city": "Dębowiec",
+    "addr:housenumber": "3",
+    "addr:place": "Wieszczyna",
+    "addr:postcode": "48-200",
+    "amenity": "restaurant",
+    "cuisine": "polish",
+    "email": "kornelia.kulik@prudentia.biz",
+    "facebook": "https://www.facebook.com/p/Dworek-Szumilas-61556691567078/",
+    "name": "Dworek Szumilas",
+    "phone": "+48791168102"
+  }
+},
+{
+  "type": "node",
+  "id": 2470002949,
+  "lat": 50.1574483,
+  "lon": 16.7907795,
+  "tags": {
+    "height": "25",
+    "image": "File:Rozhledna Klepáč.jpg",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Wieża widokowa na Trójmorskim Wierchu",
+    "name:cs": "Rozhledna Klepáč",
+    "name:pl": "Wieża widokowa na Trójmorskim Wierchu",
+    "start_date": "2010-05-08",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q19401537",
+    "wikipedia": "pl:Wieża widokowa na Trójmorskim Wierchu"
+  }
+},
+{
+  "type": "node",
+  "id": 3406860725,
+  "lat": 50.2722512,
+  "lon": 16.9651899,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "height": "20",
+    "man_made": "tower",
+    "tower:type": "observation",
+    "wikidata": "Q19400544",
+    "wikipedia": "pl:Wieża widokowa na Czernicy"
+  }
+},
+{
+  "type": "way",
+  "id": 197451638,
+  "center": {
+    "lat": 50.4072751,
+    "lon": 16.8509154
+  },
+  "nodes": [
+    2076929509,
+    2076929506,
+    2076929502,
+    2076929505,
+    2076929509
+  ],
+  "tags": {
+    "building": "yes",
+    "direction": "0-90",
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q18817209",
+    "wikipedia": "pl:Wieża widokowa na Jaworniku Wielkim"
+  }
+},
+{
+  "type": "way",
+  "id": 341632290,
+  "center": {
+    "lat": 50.2745367,
+    "lon": 16.8811563
+  },
+  "nodes": [
+    3487665398,
+    3487665397,
+    3487665395,
+    3487665396,
+    3487665398
+  ],
+  "tags": {
+    "abandoned:building": "yes",
+    "abandoned:man_made": "tower",
+    "abandoned:tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 475430829,
+  "center": {
+    "lat": 50.2802334,
+    "lon": 17.5113889
+  },
+  "nodes": [
+    4691760530,
+    4691760531,
+    4691760532,
+    4691760533,
+    4691760530
+  ],
+  "tags": {
+    "access": "no",
+    "building": "yes",
+    "disused:man_made": "tower",
+    "name": "Wieża widokowa Wieszczyna",
+    "tower:type": "observation",
+    "wikidata": "Q86668645",
+    "wikipedia": "pl:Wieża widokowa w Wieszczynie"
+  }
+},
+{
+  "type": "way",
+  "id": 1100902575,
+  "center": {
+    "lat": 50.3024379,
+    "lon": 17.3839372
+  },
+  "nodes": [
+    5843371128,
+    10075528107,
+    11110200310,
+    10075528106,
+    5843371128
+  ],
+  "tags": {
+    "building": "yes",
+    "fee": "yes",
+    "height": "15.8",
+    "man_made": "graduation_tower",
+    "name:cs": "Solanková věž",
+    "name:pl": "Tężnia solankowa w Głuchołazach",
+    "opening_hours": "10:00-18:00",
+    "start_date": "2018",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1126529701,
+  "center": {
+    "lat": 50.2900054,
+    "lon": 16.8798930
+  },
+  "nodes": [
+    10301000604,
+    10301002121,
+    10301002113,
+    10301000607,
+    10301000604
+  ],
+  "tags": {
+    "access": "no",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1361154002,
+  "center": {
+    "lat": 50.2074939,
+    "lon": 16.8469252
+  },
+  "nodes": [
+    9467864366,
+    12600719426,
+    12600719427,
+    12600719428,
+    12600719429,
+    12600719430,
+    12600719431,
+    12600719432,
+    12600719414,
+    12600719417,
+    12600719418,
+    12600719419,
+    12600719420,
+    12600719421,
+    12600719422,
+    12600719423,
+    12600719424,
+    12600719415,
+    12600719416,
+    9467864366
+  ],
+  "tags": {
+    "building": "yes",
+    "fee": "no",
+    "height": "34",
+    "loc_name": "Blender",
+    "man_made": "tower",
+    "material": "steel;glass;stone",
+    "observation": "landscape",
+    "opening_hours": "24/7",
+    "tourism": "viewpoint",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "wikidata": "Q114244565",
+    "wikimedia_commons": "File:Wieża widokowa na Śnieżniku (2022).jpg",
+    "wikipedia": "pl:Wieża widokowa na Śnieżniku (2022)"
+  }
+},
+{
+  "type": "way",
+  "id": 1379386744,
+  "center": {
+    "lat": 50.2722526,
+    "lon": 16.9651911
+  },
+  "nodes": [
+    12772797619,
+    12772797620,
+    12772797621,
+    12772797622,
+    12772797619
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,36 @@
+# Dalimilova rozhledna — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/1162033011 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/jeseniky/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Dalimilova rozhledna
+slug: dalimilova-rozhledna
+zeme: cz
+oblast: jeseniky
+typ: rozhledna
+lat: 50.1951877
+lng: 16.9806228
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/1162033011 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  web: https://dalimilovarozhledna.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/1162033011 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): (bez názvu) — amenity=cafe, 7 m,
+  https://www.openstreetmap.org/node/10807240171
+
+  Výška věže dle OSM: 33 m

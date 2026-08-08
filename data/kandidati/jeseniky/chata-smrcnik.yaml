@@ -1,0 +1,36 @@
+# Chata Smrčník — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/229487906 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/jeseniky/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Smrčník
+slug: chata-smrcnik
+zeme: cz
+oblast: jeseniky
+aliasy:
+  - nazev: Fichtensteinbaude
+    poznamka: historický název (OSM old_name)
+lat: 50.2397274
+lng: 17.132107
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/229487906 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +420 724 448 884
+  web: http://www.smrcnik.rychleby.cz/index.html
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/229487906 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Hnutí Brontosaurus

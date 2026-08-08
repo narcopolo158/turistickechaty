@@ -1,0 +1,368 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T16:07:36Z",
+    "timestamp_areas_base": "2026-08-07T03:28:41Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 256310820,
+  "lat": 50.0768122,
+  "lon": 17.2315842,
+  "tags": {
+    "check_date": "2025-07-30",
+    "name": "Barborka",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 321885443,
+  "lat": 50.1874601,
+  "lon": 17.1086174,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date:currency:XBT": "2025-05-10",
+    "name": "Chata Jiřího na Šeráku",
+    "payment:qerko": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 351923785,
+  "lat": 49.9322591,
+  "lon": 17.2694539,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Praděd",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 1165482562,
+  "lat": 50.1853128,
+  "lon": 16.8832158,
+  "tags": {
+    "name": "Návrší",
+    "source": "survey",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 1430530285,
+  "lat": 50.0706602,
+  "lon": 17.2411816,
+  "tags": {
+    "amenity": "pub",
+    "food": "yes",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Sabinka",
+    "outdoor_seating": "yes",
+    "toilets": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1520413960,
+  "lat": 50.2257054,
+  "lon": 16.9218927,
+  "tags": {
+    "email": "chata@kladske-sedlo.cz",
+    "name": "Chata Kladské sedlo",
+    "note": "Ubytování a občerstvení",
+    "phone": "+420 777 957 400",
+    "tourism": "guest_house",
+    "website": "https://kladske-sedlo.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1620241716,
+  "lat": 50.1508830,
+  "lon": 16.8325691,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Slaměnka"
+  }
+},
+{
+  "type": "node",
+  "id": 2429394872,
+  "lat": 50.2281012,
+  "lon": 17.2033989,
+  "tags": {
+    "contact:email": "hotelpraded@seznam.cz",
+    "contact:phone": "+420 732 221 304",
+    "internet_access": "wlan",
+    "name": "Hotel Praděd",
+    "phone": "+420 584 411 513",
+    "tourism": "hotel",
+    "website": "https://www.hotelpraded.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3501579353,
+  "lat": 50.1874170,
+  "lon": 17.1086401,
+  "tags": {
+    "contact:email": "ubytovani@bonera.cz;serak@bonera.cz",
+    "ele": "1325",
+    "name": "Chata Jiřího na Šeráku",
+    "operator": "BONERA s.r.o",
+    "phone": "+420 605 260 310",
+    "tourism": "alpine_hut",
+    "website": "http://www.bonera.cz/ubytovani-chata-serak.php"
+  }
+},
+{
+  "type": "node",
+  "id": 3931988044,
+  "lat": 49.9323305,
+  "lon": 17.2692876,
+  "tags": {
+    "name": "Hotel Praděd",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 4230477956,
+  "lat": 50.2278427,
+  "lon": 17.3196875,
+  "tags": {
+    "name": "Férovka",
+    "phone": "+420 737222471",
+    "tourism": "guest_house",
+    "website": "http://www.ferovka-rejviz.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 8044466,
+  "center": {
+    "lat": 50.0709345,
+    "lon": 17.2387247
+  },
+  "nodes": [
+    60148582,
+    13471398207,
+    13471398202,
+    60148578,
+    614916856,
+    614916875,
+    60148589,
+    4858919364,
+    614916873,
+    614916858,
+    4858919362,
+    4858919363,
+    4858919361,
+    614916861,
+    614916877,
+    13468804823,
+    614916862,
+    614916921,
+    614916917,
+    13468804834,
+    614916919,
+    4858919360,
+    4858919359,
+    60148582
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:levels": "3",
+    "building:ruian:type": "11",
+    "name": "Ovčárna",
+    "phone": "+420554779007",
+    "power_supply": "yes",
+    "ref:ruian:building": "13896768",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "shower": "yes",
+    "source": "cuzk:ruian",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 48414256,
+  "center": {
+    "lat": 50.1017125,
+    "lon": 17.2140777
+  },
+  "nodes": [
+    614915392,
+    614915400,
+    5598786064,
+    5598786063,
+    5598786062,
+    5598786061,
+    5598786060,
+    5598786059,
+    614915405,
+    5598786058,
+    5598786057,
+    5598786056,
+    5598786055,
+    5598786054,
+    614915412,
+    614915407,
+    614915392
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:ruian:type": "15",
+    "check_date": "2024-08-15",
+    "checkpoint": "hiking",
+    "checkpoint:name": "Švýcárna",
+    "checkpoint:type": "needler",
+    "description": "Chata byla původně salaší, kterou nechal postavit roku 1829 kníže Alois Josef II. z Lichtensteina (1796-1858). Salaš užíval švýcarský bača (odtud pojmenování chaty). V r. 1887 je nahrazena novou srubovou chatou, určenou pro turisty.",
+    "indoor_seating": "yes",
+    "name": "Švýcárna",
+    "note": "Kontrollpunkt Bergwanderweg Eisenach–Budapest (EB)",
+    "opening_hours": "Mo-Su 07:30-18:00",
+    "outdoor_seating": "yes",
+    "phone": "+420 737 249 573",
+    "ref:ruian:building": "7977328",
+    "reservation": "yes",
+    "roof:shape": "gabled",
+    "smoking": "no",
+    "source": "cuzk:ruian",
+    "tourism": "alpine_hut",
+    "website": "https://www.figura.cz/ubytovani/turisticka-chata-svycarna/",
+    "wikidata": "Q9397010",
+    "wikipedia": "cs:Švýcárna (Kouty nad Desnou)"
+  }
+},
+{
+  "type": "way",
+  "id": 71827408,
+  "center": {
+    "lat": 50.0318761,
+    "lon": 17.0403432
+  },
+  "nodes": [
+    3127105720,
+    3140407674,
+    3140407685,
+    3140407690,
+    3140407705,
+    3140407713,
+    3140407722,
+    3140407723,
+    3140407727,
+    3140407725,
+    3140407941,
+    3140407695,
+    3127105720
+  ],
+  "tags": {
+    "building": "civic",
+    "building:levels": "1",
+    "building:ruian:type": "15",
+    "name": "Praděd",
+    "ref:ruian:building": "8049831",
+    "source": "cuzk:ruian",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 253778947,
+  "center": {
+    "lat": 50.0192070,
+    "lon": 17.2884096
+  },
+  "nodes": [
+    2596599345,
+    2596599346,
+    2596599353,
+    2596599354,
+    2596599417,
+    2596599419,
+    2596599357,
+    2596599326,
+    2596599365,
+    4905142832,
+    4905142838,
+    4905142837,
+    4905142830,
+    4905142835,
+    4905142834,
+    4905142833,
+    4905142831,
+    4905142829,
+    4905142828,
+    4905144129,
+    4905144128,
+    4905144127,
+    4905144126,
+    4905144125,
+    4905144124,
+    4905144123,
+    4905144122,
+    2596599322,
+    2596599329,
+    2596599328,
+    2596599345
+  ],
+  "tags": {
+    "building": "house",
+    "building:levels": "2",
+    "building:ruian:type": "7",
+    "check_date": "2026-01-01",
+    "name": "Hotel Praděd",
+    "ref:ruian:building": "13892681",
+    "roof:levels": "0",
+    "roof:shape": "hipped",
+    "source": "cuzk:ruian",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 324943760,
+  "center": {
+    "lat": 50.1509303,
+    "lon": 16.8326078
+  },
+  "nodes": [
+    3316143141,
+    3316143146,
+    11101986800,
+    3316143149,
+    11101986799,
+    3316143145,
+    3316143141
+  ],
+  "tags": {
+    "building": "civic",
+    "building:levels": "3",
+    "building:ruian:type": "15",
+    "capacity": "20",
+    "email": "rezervace@dolnimorava.cz",
+    "name": "Chata Slaměnka",
+    "phone": "+420 469 771 177",
+    "ref:nap": "15982",
+    "ref:ruian:building": "79517927",
+    "source": "cuzk:ruian",
+    "source:geometry": "Czeskie RUIANI budovy",
+    "start_date": "2013-12-20",
+    "tourism": "hostel",
+    "website": "https://www.dolnimorava.cz/chata-slamenka/"
+  }
+}
+
+  ]
+}

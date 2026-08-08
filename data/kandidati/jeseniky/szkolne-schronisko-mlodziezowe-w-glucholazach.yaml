@@ -1,0 +1,33 @@
+# Szkolne Schronisko Młodzieżowe w Głuchołazach — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/2022095165 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/jeseniky/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Szkolne Schronisko Młodzieżowe w Głuchołazach
+slug: szkolne-schronisko-mlodziezowe-w-glucholazach
+zeme: pl
+oblast: jeseniky
+lat: 50.2826737
+lng: 17.473237
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2022095165 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +48 77 439 7779
+  web: http://schronisko.pokrzywna.prv.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2022095165 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=hostel (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Zespół Szkół w Głuchołazach

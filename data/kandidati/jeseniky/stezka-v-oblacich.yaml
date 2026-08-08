@@ -1,0 +1,39 @@
+# Stezka v oblacích — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/397121341 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/jeseniky/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Stezka v oblacích
+slug: stezka-v-oblacich
+zeme: cz
+oblast: jeseniky
+typ: rozhledna
+lat: 50.1494894
+lng: 16.8289724
+vyska: 1116
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/397121341 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  web: https://www.dolnimorava.cz/stezka-v-oblacich
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/397121341 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Skalka — amenity=restaurant, 57 m,
+  https://www.openstreetmap.org/node/13970692849
+
+  Výška věže dle OSM: 55 m
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Jul-Aug 09:00-18:00

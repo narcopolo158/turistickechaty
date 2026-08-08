@@ -1,0 +1,76 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T16:11:36Z",
+    "timestamp_areas_base": "2026-08-07T17:44:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 91931980,
+  "center": {
+    "lat": 50.2079618,
+    "lon": 16.8322700
+  },
+  "nodes": [
+    983645375,
+    2943466906,
+    2943466902,
+    2943466903,
+    2943466900,
+    2943466901,
+    2943466904,
+    2943466905,
+    2943466907,
+    983645385,
+    1068177791,
+    1068177785,
+    1068177751,
+    1068177800,
+    2943466911,
+    7577709457,
+    2943466910,
+    2943466913,
+    983645389,
+    2943466915,
+    2943466914,
+    2943466912,
+    2943466909,
+    2943466908,
+    983645399,
+    983645375
+  ],
+  "tags": {
+    "addr:city": "Międzygórze",
+    "addr:city:simc": "0851420",
+    "addr:housenumber": "37",
+    "addr:postcode": "57-514",
+    "addr:street": "Śnieżna",
+    "addr:street:sym_ul": "22400",
+    "building": "yes",
+    "ele": "1218",
+    "email": "snieznik.schronisko@gmail.com",
+    "name": "Na Śnieżniku",
+    "name:cs": "Polská chata",
+    "name:de": "Schweizerei",
+    "official_name": "Schronisko „Na Śnieżniku” im. Zbigniewa Fastnachta",
+    "old_name:cs": "Švýcárna",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48501 631 134",
+    "reservation": "yes",
+    "source:addr": "emuia.gugik.gov.pl",
+    "start_date": "1869",
+    "tourism": "alpine_hut",
+    "validate:ants:yellow": "ignore",
+    "validate:ants:yellow:note": "OK, Śnieżna jest na zachód",
+    "website": "http://www.schroniskonasniezniku.eu",
+    "wikidata": "Q3916621",
+    "wikipedia": "pl:Schronisko PTTK „Na Śnieżniku”"
+  }
+}
+
+  ]
+}

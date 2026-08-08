@@ -1,0 +1,668 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T16:11:36Z",
+    "timestamp_areas_base": "2026-08-07T03:28:41Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 256782305,
+  "lat": 49.9961242,
+  "lon": 17.2644144,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Na Vyhlidce",
+    "opening_hours": "Sep-Jun Mo,Tu,We,Th,PH off, Fr-Sa 10:30-22:00, Su 10:30-15:30; Jul-Aug \"V sezóně upravováno dle obsazenosti chaty.\"",
+    "website": "https://www.vyhlidka.net/"
+  }
+},
+{
+  "type": "node",
+  "id": 287209469,
+  "lat": 49.9706557,
+  "lon": 16.9338439,
+  "tags": {
+    "man_made": "tower",
+    "name": "Háj u Šumperka",
+    "name:de": "Heukoppe",
+    "natural": "peak",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 471019941,
+  "lat": 50.0712701,
+  "lon": 16.7916795,
+  "tags": {
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 765350306,
+  "lat": 50.3905571,
+  "lon": 16.9022980,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "regional"
+  }
+},
+{
+  "type": "node",
+  "id": 913568656,
+  "lat": 49.9774315,
+  "lon": 16.9526322,
+  "tags": {
+    "amenity": "pub",
+    "name": "Pod Hájem"
+  }
+},
+{
+  "type": "node",
+  "id": 2370793591,
+  "lat": 50.0743026,
+  "lon": 16.7685748,
+  "tags": {
+    "building": "tower",
+    "name": "rozhledna",
+    "note": "doplnit název",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2651592789,
+  "lat": 50.0379743,
+  "lon": 16.7573128,
+  "tags": {
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "rozhledna Křížová hora",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2687964499,
+  "lat": 50.2911798,
+  "lon": 17.2304098,
+  "tags": {
+    "man_made": "tower",
+    "name": "Hemberk",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2976105843,
+  "lat": 50.1519545,
+  "lon": 17.0110154,
+  "tags": {
+    "amenity": "cafe",
+    "contact:email": "cukrarnabranna@seznam.cz",
+    "name": "Cukrárna U zámku",
+    "phone": "+420 739 695 270",
+    "website": "https://www.facebook.com/pages/Cukr%C3%A1rna-Brann%C3%A1/213271448740773?sk=timeline"
+  }
+},
+{
+  "type": "node",
+  "id": 3203452655,
+  "lat": 50.0864909,
+  "lon": 17.1394282,
+  "tags": {
+    "access": "yes",
+    "man_made": "tower",
+    "name": "Rozhledna na Medvědí hoře",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3524142802,
+  "lat": 50.1442699,
+  "lon": 17.4508882,
+  "tags": {
+    "ele": "760",
+    "man_made": "tower",
+    "name": "Rozhledna Na Skalce",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4016649059,
+  "lat": 50.0831635,
+  "lon": 17.2311565,
+  "tags": {
+    "amenity": "restaurant",
+    "bar": "yes",
+    "contact:phone": "+420 776 001 492",
+    "cuisine": "czech;regional",
+    "description": "Highest altitude year-round restaurant in the Czech Republic, serving traditional Czech cuisine.",
+    "diet:vegetarian": "yes",
+    "dog": "no",
+    "name": "Restaurace Vysílač Praděd",
+    "opening_hours": "Mo-Th 09:00-20:00; Fr-Sa 09:00-22:00; Su 09:00-20:00",
+    "outdoor_seating": "no",
+    "seats": "95",
+    "takeaway": "no",
+    "website": "https://hotelpradedvysilac.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 4303334108,
+  "lat": 50.1513819,
+  "lon": 17.0107516,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4531832499,
+  "lat": 50.0141355,
+  "lon": 17.0131002,
+  "tags": {
+    "ele": "624",
+    "height": "21.7",
+    "man_made": "tower",
+    "name": "Rozhledna Bukovka",
+    "opening_date": "2016-11-26",
+    "tower:type": "observation",
+    "year_of_construction": "2016"
+  }
+},
+{
+  "type": "node",
+  "id": 5109547651,
+  "lat": 50.1222402,
+  "lon": 17.3442297,
+  "tags": {
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 5338705562,
+  "lat": 49.9377715,
+  "lon": 16.8361714,
+  "tags": {
+    "ele": "603",
+    "man_made": "tower",
+    "name": "Nadhledna Háječek",
+    "natural": "peak",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 6423902410,
+  "lat": 50.1704321,
+  "lon": 16.8989642,
+  "tags": {
+    "alt_name": "Stříbrná Twiggy",
+    "height": "31.124",
+    "man_made": "tower",
+    "name": "Štvanice",
+    "opening_hours": "24/7",
+    "operator": "SKI & BIKE BOX Centrum",
+    "tower:type": "observation",
+    "website": "https://rozhlednanakralicaku.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 6757767170,
+  "lat": 50.2441111,
+  "lon": 17.1896237,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "man_made": "tower",
+    "name": "Obří Výhledna",
+    "tourism": "attraction",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10807240171,
+  "lat": 50.1951659,
+  "lon": 16.9807151,
+  "tags": {
+    "amenity": "cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 11546485442,
+  "lat": 49.9317239,
+  "lon": 16.9344792,
+  "tags": {
+    "architect": "Ing. Jiří Valert",
+    "height": "6",
+    "image": "https://rozhledny.webzdarma.cz/brusna.htm",
+    "man_made": "tower",
+    "name": "Brusná",
+    "start_date": "13.9.2015",
+    "tower:construction": "dřevěná,_ukotvená",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13096108631,
+  "lat": 49.9637198,
+  "lon": 17.1000432,
+  "tags": {
+    "man_made": "tower",
+    "name": "Mirkova věž",
+    "start_date": "2016",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13146593945,
+  "lat": 50.0830724,
+  "lon": 17.2309613,
+  "tags": {
+    "access": "yes",
+    "fee": "yes",
+    "height": "73",
+    "man_made": "tower",
+    "opening_hours": "Apr-Oct 08:00-18:00; Nov-Mar 08:00-16:00",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13970692849,
+  "lat": 50.1499541,
+  "lon": 16.8293008,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Skalka",
+    "opening_hours": "Mo-Su 10:00-18:00",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 13970692866,
+  "lat": 50.2566377,
+  "lon": 17.4288285,
+  "tags": {
+    "amenity": "fast_food"
+  }
+},
+{
+  "type": "node",
+  "id": 13970693015,
+  "lat": 50.0868419,
+  "lon": 17.1394010,
+  "tags": {
+    "amenity": "fast_food"
+  }
+},
+{
+  "type": "node",
+  "id": 13970695687,
+  "lat": 50.2379393,
+  "lon": 17.2374345,
+  "tags": {
+    "amenity": "pub",
+    "name": "Rozhledna Zlatý Chlum",
+    "opening_hours": "Apr-May,Sep-Oct_Sa,Su_10:00-18:00; Jun-Aug_10:00-18:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 90581405,
+  "center": {
+    "lat": 50.2380521,
+    "lon": 17.2374782
+  },
+  "nodes": [
+    3697082271,
+    1051190568,
+    3697082272,
+    1051190526,
+    1051190673,
+    3697082269,
+    1051190802,
+    1051190554,
+    3697082267,
+    1051190699,
+    3697082266,
+    1051190905,
+    3697082268,
+    1051190652,
+    3697082270,
+    1051190825,
+    3697082271
+  ],
+  "tags": {
+    "building": "civic",
+    "building:ruian:type": "15",
+    "ele": "875",
+    "fee": "yes",
+    "height": "26",
+    "man_made": "tower",
+    "name": "Zlatý Chlum",
+    "name:de": "Goldkoppe",
+    "old_name": "Goldkoppe",
+    "opening_hours": "Apr-May,Sep-Oct Sa,Su 10:00-18:00; Jun-Aug 10:00-18:00",
+    "ref:ruian:building": "48212521",
+    "roof:shape": "flat",
+    "source": "cuzk:ruian",
+    "start_date": "1899-09-03",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "http://www.jeseniky.net/rozhledna-zlaty-chlum",
+    "wikidata": "Q207225",
+    "wikipedia": "cs:Zlatý chlum"
+  }
+},
+{
+  "type": "way",
+  "id": 160724390,
+  "center": {
+    "lat": 50.3906478,
+    "lon": 16.9026627
+  },
+  "nodes": [
+    1727656229,
+    1897292627,
+    1897292609,
+    1727656220,
+    1897292617,
+    1727656212,
+    1897292629,
+    1897292610,
+    1727656208,
+    1897292614,
+    1727656215,
+    1897292631,
+    1727656224,
+    1897292625,
+    1727656228,
+    1897292615,
+    1897292612,
+    1727656229
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "source": "cuzk:km",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 249734256,
+  "center": {
+    "lat": 50.2567459,
+    "lon": 17.4285871
+  },
+  "nodes": [
+    5113582765,
+    5113582764,
+    5113582763,
+    2563013594,
+    5113582762,
+    5113582761,
+    5113582759,
+    2563013592,
+    5113582758,
+    5113582757,
+    5113582756,
+    5113582755,
+    2563013591,
+    5113582754,
+    5113582760,
+    5113582753,
+    5113582752,
+    5113582751,
+    2563013593,
+    5113582750,
+    5113582749,
+    5113582748,
+    5113582747,
+    2563013595,
+    5113582746,
+    5113582745,
+    5113582744,
+    5113582743,
+    5113582738,
+    2563013597,
+    5113582742,
+    5113582741,
+    5113582740,
+    5113582739,
+    2563013598,
+    5113582737,
+    5113582736,
+    5113582735,
+    5113582734,
+    2563013596,
+    5113582733,
+    5113582765
+  ],
+  "tags": {
+    "access": "yes",
+    "addr:conscriptionnumber": "1",
+    "addr:country": "CZ",
+    "addr:housenumber": "1",
+    "addr:place": "Rožmitál",
+    "addr:postcode": "79376",
+    "building": "yes",
+    "building:ruian:type": "19",
+    "description": "Na Biskupské kupě stála od roku 1890 nejprve dřevěná vyhlídková stavba. V tomtéž roce v ní byla zřízena první poštovna na území Moravy, o šest let později však neodolala silnému větru. V roce 1898 pak místo ní vyrostla kamenná rozhledna.",
+    "ele": "889",
+    "fee": "yes",
+    "height": "18",
+    "man_made": "tower",
+    "name": "Biskupská kupa (rozhledna)",
+    "name:cs": "Biskupská kupa (rozhledna)",
+    "name:de": "Kaiser Franz Josef Warte",
+    "name:pl": "Wieża widokowa na Biskupiej Kopie",
+    "old_name": "Kaiser Franz Josef Warte",
+    "opening_hours": "Jan-Apr Sa,Su,SH 10:00-16:00; May-Sep 09:00-18:00; Nov-Dec Sa,Su 11:00-15:00",
+    "ref:ruian:addr": "40160866",
+    "ref:ruian:building": "24796999",
+    "source": "cuzk:ruian",
+    "start_date": "2000-09-06",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q15734955",
+    "wikipedia": "cs:Biskupská kupa (rozhledna)"
+  }
+},
+{
+  "type": "way",
+  "id": 288424683,
+  "center": {
+    "lat": 49.9775118,
+    "lon": 16.9513246
+  },
+  "nodes": [
+    2919846503,
+    2919846513,
+    2919846498,
+    2919846491,
+    2919846503
+  ],
+  "tags": {
+    "building": "civic",
+    "man_made": "tower",
+    "ref:ruian:building": "44966989",
+    "source": "cuzk:ruian",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 327073708,
+  "center": {
+    "lat": 49.9961472,
+    "lon": 17.2657102
+  },
+  "nodes": [
+    3337863821,
+    3337863823,
+    3337863825,
+    3337863824,
+    3337863822,
+    3337863818,
+    3337863816,
+    3337863817,
+    3337863821
+  ],
+  "tags": {
+    "building": "civic",
+    "building:levels": "6",
+    "building:ruian:type": "15",
+    "man_made": "tower",
+    "name": "Rozhledna Nová Ves",
+    "note": "Skupinové návštěvy, mimo otevírací dobu, oznamte min. 3 dny předem na tel. 604 712 992 - PhDr. Jitka Vaculová.",
+    "opening_hours": "Jan 01-Oct 31 Su,Sa 11:00-18:00; Nov 01-Dec 31 Su,Sa 11:00-16:00; Jul 01-Aug 31 11:00-18:00; PH 11:00-18:00",
+    "ref:ruian:building": "105378089",
+    "source": "cuzk:ruian",
+    "start_date": "2014-04-30",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 397121341,
+  "center": {
+    "lat": 50.1494894,
+    "lon": 16.8289724
+  },
+  "nodes": [
+    3999412849,
+    3999412851,
+    3999412850,
+    3999412848,
+    3999412841,
+    3999412839,
+    3999412846,
+    3999412849
+  ],
+  "tags": {
+    "alt_name:pl": "Ścieżka w chmurach",
+    "building": "yes",
+    "ele": "1116",
+    "fee": "yes",
+    "height": "55",
+    "man_made": "tower",
+    "name": "Stezka v oblacích",
+    "name:en": "Sky Walk",
+    "name:pl": "Ścieżka w Obłokach",
+    "opening_hours": "Jul-Aug 09:00-18:00",
+    "tourism": "attraction",
+    "tower:type": "observation",
+    "website": "https://www.dolnimorava.cz/stezka-v-oblacich",
+    "wikidata": "Q24282940",
+    "wikipedia": "cs:Stezka v oblacích (Dolní Morava)"
+  }
+},
+{
+  "type": "way",
+  "id": 1086503092,
+  "center": {
+    "lat": 50.2566343,
+    "lon": 17.4287510
+  },
+  "nodes": [
+    9955414541,
+    9955414540,
+    9955414539,
+    9955414542,
+    9955414541
+  ],
+  "tags": {
+    "amenity": "biergarten"
+  }
+},
+{
+  "type": "way",
+  "id": 1162033011,
+  "center": {
+    "lat": 50.1951877,
+    "lon": 16.9806228
+  },
+  "nodes": [
+    10807240138,
+    10807240139,
+    10807240140,
+    10807240141,
+    10807240142,
+    10807240143,
+    10807240144,
+    10807240145,
+    10807240146,
+    10807240147,
+    10807240148,
+    10807240149,
+    10807240150,
+    10807240151,
+    10807240152,
+    10807240153,
+    10807240154,
+    10807240155,
+    10807240156,
+    10807240157,
+    10807240158,
+    10807240159,
+    10807240160,
+    10807240161,
+    10807240162,
+    10807240163,
+    10807240164,
+    10807240165,
+    10807240166,
+    10807240167,
+    10807240168,
+    10807240169,
+    10807240170,
+    10807240138
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "33",
+    "man_made": "tower",
+    "name": "Dalimilova rozhledna",
+    "name:de": "Kaiser-Wilhelm-Turm",
+    "tower:construction": "stone",
+    "tower:type": "observation",
+    "website": "https://dalimilovarozhledna.cz/"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,752 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T16:05:35Z",
+    "timestamp_areas_base": "2026-08-07T03:28:41Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 2022095165,
+  "lat": 50.2826737,
+  "lon": 17.4732370,
+  "tags": {
+    "addr:place": "Pokrzywna",
+    "addr:postcode": "48-267",
+    "beds": "49",
+    "facebook": "https://www.facebook.com/SchroniskoPokrzywna/",
+    "name": "Szkolne Schronisko Młodzieżowe w Głuchołazach",
+    "network": "PTSM",
+    "operator": "Zespół Szkół w Głuchołazach",
+    "phone": "+48 77 439 7779",
+    "ref:regon": "531188314",
+    "ref:rspo": "107590",
+    "smoking": "no",
+    "tourism": "hostel",
+    "website": "http://schronisko.pokrzywna.prv.pl/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2519653632,
+  "lat": 50.2369520,
+  "lon": 16.7710231,
+  "tags": {
+    "contact:facebook": "https://www.facebook.com/schroniskostodola",
+    "contact:phone": "+48 77 500 05 10",
+    "name": "Schronisko Stodoła",
+    "tourism": "hostel",
+    "website": "https://stodola.konsjerz.biz.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 3359576767,
+  "lat": 50.2761973,
+  "lon": 17.0073648,
+  "tags": {
+    "email": "biuro@chatacyborga.pl",
+    "name": "Chata Cyborga",
+    "phone": "+48 748 141 422",
+    "tourism": "guest_house",
+    "website": "https://chatacyborga.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 4607864171,
+  "lat": 50.3014043,
+  "lon": 16.9690137,
+  "tags": {
+    "name": "CHATA IBISA",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 6120143305,
+  "lat": 50.3466989,
+  "lon": 16.8820240,
+  "tags": {
+    "name": "Orzechówka",
+    "tourism": "chalet",
+    "website": "https://domgory.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 7513400685,
+  "lat": 50.2640507,
+  "lon": 16.9969213,
+  "tags": {
+    "addr:housenumber": "11",
+    "addr:place": "Bielice",
+    "addr:postcode": "57-550",
+    "email": "a.mlynarczyk4@wp.pl",
+    "internet_access": "wlan",
+    "name": "Chata na końcu świata",
+    "phone": "+48 74 814 32 31",
+    "tourism": "guest_house",
+    "website": "https://www.facebook.com/Bielice11/"
+  }
+},
+{
+  "type": "node",
+  "id": 11080607344,
+  "lat": 50.2415752,
+  "lon": 16.8861377,
+  "tags": {
+    "addr:city:simc": "0855575",
+    "addr:housenumber": "9A",
+    "addr:place": "Kamienica",
+    "addr:postcode": "57-550",
+    "air_conditioning": "yes",
+    "contact:facebook": "osadazagoramizalasami",
+    "email": "kontakt@zagoramizalasami.com",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Osada Za górami za lasami",
+    "operator": "Future Project",
+    "phone": "+48 517 600 741",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "chalet",
+    "website": "https://zagoramizalasami.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11165519268,
+  "lat": 50.2371997,
+  "lon": 16.7724330,
+  "tags": {
+    "name": "Śnieżna Chatka",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "node",
+  "id": 11954019684,
+  "lat": 50.3428218,
+  "lon": 16.8841479,
+  "tags": {
+    "addr:city": "Lądek-Zdrój",
+    "addr:housenumber": "5",
+    "addr:postcode": "57-540",
+    "addr:street": "Tadeusza Kościuszki",
+    "amenity": "restaurant",
+    "name": "Polska Chata",
+    "opening_hours": "Mo-Su 13:00-20:00"
+  }
+},
+{
+  "type": "way",
+  "id": 82093835,
+  "center": {
+    "lat": 50.2605928,
+    "lon": 17.4309904
+  },
+  "nodes": [
+    956073997,
+    956073870,
+    2474536856,
+    2474536858,
+    8823256926,
+    956073906,
+    956073678,
+    956073997
+  ],
+  "tags": {
+    "addr:city:simc": "0494692",
+    "addr:housenumber": "211",
+    "addr:place": "Jarnołtówek",
+    "addr:postcode": "48-267",
+    "building": "yes",
+    "check_date": "2024-08-07",
+    "checkpoint:type": "stamp",
+    "ele": "770",
+    "name": "Górski Dom Turysty „Pod Biskupią Kopą”",
+    "operator": "PTTK",
+    "phone": "+48774397584",
+    "source": "http://sdi.opolskie.pl/mapa_bazowa/request.aspx",
+    "source:addr": "glucholazy.e-mapa.net",
+    "tourism": "alpine_hut",
+    "website": "https://biskupiakopa.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 91931980,
+  "center": {
+    "lat": 50.2079618,
+    "lon": 16.8322700
+  },
+  "nodes": [
+    983645375,
+    2943466906,
+    2943466902,
+    2943466903,
+    2943466900,
+    2943466901,
+    2943466904,
+    2943466905,
+    2943466907,
+    983645385,
+    1068177791,
+    1068177785,
+    1068177751,
+    1068177800,
+    2943466911,
+    7577709457,
+    2943466910,
+    2943466913,
+    983645389,
+    2943466915,
+    2943466914,
+    2943466912,
+    2943466909,
+    2943466908,
+    983645399,
+    983645375
+  ],
+  "tags": {
+    "addr:city": "Międzygórze",
+    "addr:city:simc": "0851420",
+    "addr:housenumber": "37",
+    "addr:postcode": "57-514",
+    "addr:street": "Śnieżna",
+    "addr:street:sym_ul": "22400",
+    "building": "yes",
+    "ele": "1218",
+    "email": "snieznik.schronisko@gmail.com",
+    "name": "Na Śnieżniku",
+    "name:cs": "Polská chata",
+    "name:de": "Schweizerei",
+    "official_name": "Schronisko „Na Śnieżniku” im. Zbigniewa Fastnachta",
+    "old_name:cs": "Švýcárna",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48501 631 134",
+    "reservation": "yes",
+    "source:addr": "emuia.gugik.gov.pl",
+    "start_date": "1869",
+    "tourism": "alpine_hut",
+    "validate:ants:yellow": "ignore",
+    "validate:ants:yellow:note": "OK, Śnieżna jest na zachód",
+    "website": "http://www.schroniskonasniezniku.eu",
+    "wikidata": "Q3916621",
+    "wikipedia": "pl:Schronisko PTTK „Na Śnieżniku”"
+  }
+},
+{
+  "type": "way",
+  "id": 136459096,
+  "center": {
+    "lat": 50.2907376,
+    "lon": 16.8684003
+  },
+  "nodes": [
+    1496776627,
+    1496776614,
+    1496776612,
+    3539829488,
+    1496776606,
+    3539829487,
+    1496776608,
+    1496776613,
+    1496776620,
+    1496776638,
+    1496776627
+  ],
+  "tags": {
+    "addr:city": "Stronie Śląskie",
+    "addr:housenumber": "18a",
+    "addr:postcode": "57-550",
+    "addr:street": "Turystyczna",
+    "building": "house",
+    "name": "Pod Jesionami",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 276603462,
+  "center": {
+    "lat": 50.2404133,
+    "lon": 16.8510178
+  },
+  "nodes": [
+    2811972690,
+    2811972687,
+    2811972684,
+    2811972686,
+    2811972690
+  ],
+  "tags": {
+    "addr:city:simc": "0855581",
+    "addr:housenumber": "17",
+    "addr:place": "Kletno",
+    "addr:postcode": "57-550",
+    "building": "yes",
+    "guest_house": "agritourism",
+    "name": "Janowa Chata",
+    "source:geometry": "Krajowa Integracja Ewidencji Gruntow: Budynki",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 328681489,
+  "center": {
+    "lat": 50.2233420,
+    "lon": 16.7525181
+  },
+  "nodes": [
+    3355087403,
+    3355087398,
+    3355080890,
+    3355080891,
+    3355087403
+  ],
+  "tags": {
+    "addr:city": "Międzygórze",
+    "addr:city:simc": "0851420",
+    "addr:housenumber": "27",
+    "addr:postcode": "57-514",
+    "addr:street": "Wojska Polskiego",
+    "building": "yes",
+    "email": "chata@chatalidia.pl",
+    "name": "Chata Lidia",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "guest_house",
+    "website": "www.chatalidia.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 329135419,
+  "center": {
+    "lat": 50.2741456,
+    "lon": 17.0092109
+  },
+  "nodes": [
+    3359547143,
+    3359547148,
+    3359547146,
+    3359547138,
+    3359547141,
+    3359547143
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Chatka Trapera",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 330285245,
+  "center": {
+    "lat": 50.3047922,
+    "lon": 16.9437212
+  },
+  "nodes": [
+    3372461726,
+    3372461728,
+    3372461724,
+    3372461721,
+    3372461726
+  ],
+  "tags": {
+    "addr:city": "Stronie Śląskie",
+    "addr:city:simc": "0855658",
+    "addr:housenumber": "37",
+    "addr:place": "Stary Gierałtów",
+    "addr:postcode": "57-550",
+    "building": "yes",
+    "building:levels": "1",
+    "building:material": "traditional",
+    "description": "Odrestaurowana chata sudecka z 1890 roku",
+    "email": "chataeskapada@gmail.com",
+    "guest_house": "agritourism",
+    "height": "10",
+    "house": "bungalow",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "loc_name": "ESKAPADA",
+    "name": "ESKAPADA Chata Sudecka",
+    "phone": "+48 609 757 284",
+    "rooms": "5",
+    "source:addr": "emuia.gugik.gov.pl",
+    "start_date": "1890",
+    "tourism": "guest_house",
+    "website": "https://www.eskapada.com.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 330550962,
+  "center": {
+    "lat": 50.3067557,
+    "lon": 16.9049458
+  },
+  "nodes": [
+    3375160964,
+    3375160960,
+    3375160962,
+    3375160965,
+    3375160963,
+    3375160968,
+    3375160967,
+    3375160966,
+    3375160964
+  ],
+  "tags": {
+    "addr:housenumber": "80",
+    "addr:place": "Stary Gierałtów",
+    "addr:postcode": "57-550",
+    "building": "yes",
+    "email": "swojskachata@gmail.com",
+    "name": "Swojska Chata",
+    "phone": "+48 723533836",
+    "tourism": "guest_house",
+    "website": "http://www.swojskachata.net"
+  }
+},
+{
+  "type": "way",
+  "id": 330997968,
+  "center": {
+    "lat": 50.2945677,
+    "lon": 16.8844346
+  },
+  "nodes": [
+    3380480223,
+    3380480215,
+    3380480214,
+    3380480220,
+    3380480223
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Chatka Julki - noclegi",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 363349465,
+  "center": {
+    "lat": 50.2289871,
+    "lon": 16.7564088
+  },
+  "nodes": [
+    3675215648,
+    3675215640,
+    3675215639,
+    3675215641,
+    3675215642,
+    3675215644,
+    3675215646,
+    3675215647,
+    3675215648
+  ],
+  "tags": {
+    "addr:city": "Międzygórze",
+    "addr:city:simc": "0851420",
+    "addr:housenumber": "16",
+    "addr:postcode": "57-514",
+    "addr:street": "Wojska Polskiego",
+    "addr:street:sym_ul": "24628",
+    "building": "yes",
+    "email": "esmlynarczyk@neostrada.pl",
+    "name": "Chatka Puchatka",
+    "phone": "+48 748135288",
+    "source:addr": "emuia.gugik.gov.pl",
+    "source:geometry": "geoportal.gov.pl:BDOT",
+    "tourism": "guest_house",
+    "website": "http://www.miedzygorze.agro.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 367339465,
+  "center": {
+    "lat": 50.3114365,
+    "lon": 17.3917269
+  },
+  "nodes": [
+    3712751905,
+    12209040286,
+    3712751922,
+    12209040289,
+    3712751934,
+    3712751943,
+    5062830474,
+    5062830443,
+    3712751949,
+    3712751933,
+    3712751928,
+    3712751924,
+    3712751901,
+    3712751908,
+    3712751893,
+    5062830470,
+    3712751894,
+    5062830466,
+    5062830465,
+    3712751887,
+    5062824612,
+    3712751869,
+    3712751862,
+    3712751871,
+    3712751878,
+    3712751885,
+    5079481063,
+    4131259641,
+    3712751905
+  ],
+  "tags": {
+    "beds": "470",
+    "name": "Banderoza",
+    "operator": "Kompleks Turystyczny „Sudety”",
+    "tourism": "chalet",
+    "website": "https://banderoza.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 374975943,
+  "center": {
+    "lat": 50.3125623,
+    "lon": 17.3667064
+  },
+  "nodes": [
+    3783580555,
+    3783580584,
+    3783580582,
+    3783580565,
+    3783580554,
+    3783580555
+  ],
+  "tags": {
+    "addr:city": "Głuchołazy",
+    "addr:postcode": "48-340",
+    "addr:street": "Generała Władysława Andersa",
+    "beds": "44",
+    "name": "Ośrodek Wczasowo-Wypoczynkowy „Ruch”",
+    "operator": "Ruch S.A.",
+    "source": "http://www.glucholazy.pl/old/um/in1.php?k1=108&k2=060315102059&nr=060315123926",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 391666954,
+  "center": {
+    "lat": 50.2582580,
+    "lon": 16.8253805
+  },
+  "nodes": [
+    3948935515,
+    3948935513,
+    3948935514,
+    3948935516,
+    3948935515
+  ],
+  "tags": {
+    "addr:city:simc": "0855629",
+    "addr:housenumber": "7g",
+    "addr:place": "Sienna",
+    "addr:postcode": "57-550",
+    "building": "yes",
+    "name": "Chata Sudecka I",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "guest_house",
+    "website": "https://chatasudecka.com.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 411126520,
+  "center": {
+    "lat": 50.3058791,
+    "lon": 16.7994808
+  },
+  "nodes": [
+    4128575549,
+    4128575550,
+    4128575551,
+    4128575552,
+    4128575549
+  ],
+  "tags": {
+    "addr:city:simc": "0853145",
+    "addr:housenumber": "63",
+    "addr:place": "Konradów",
+    "addr:postcode": "57-541",
+    "building": "yes",
+    "internet_access": "yes",
+    "name": "Jurta sudecka u leśniczki",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 472237058,
+  "center": {
+    "lat": 50.2584691,
+    "lon": 16.8252775
+  },
+  "nodes": [
+    4664509424,
+    4664509425,
+    4664509426,
+    4664509427,
+    4664509424
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Chata Sudecka II",
+    "tourism": "guest_house",
+    "website": "https://chatasudecka.com.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 1026214903,
+  "center": {
+    "lat": 50.2122697,
+    "lon": 16.8596011
+  },
+  "nodes": [
+    9461535104,
+    9461535105,
+    9461535106,
+    9461535107,
+    9461535108,
+    9461535109,
+    9461535112,
+    9461535110,
+    9461535111,
+    9461535104
+  ],
+  "tags": {
+    "access": "permissive",
+    "alt_name": "Domek myśliwski na Czarcim Gonie",
+    "building": "hut",
+    "building:levels": "2",
+    "fee": "no",
+    "fireplace": "yes",
+    "material": "wood",
+    "name": "Chatka pod Śnieżnikiem",
+    "roof:colour": "black",
+    "roof:material": "tar_paper",
+    "roof:shape": "gabled",
+    "tourism": "wilderness_hut",
+    "url": "https://polska-org.pl/559131,Chatka_pod_Snieznikiem_Domek_Mysliwski.html",
+    "wikidata": "Q28674989",
+    "wikipedia": "pl:Chatka pod Śnieżnikiem"
+  }
+},
+{
+  "type": "way",
+  "id": 1040619659,
+  "center": {
+    "lat": 50.2690346,
+    "lon": 16.9635938
+  },
+  "nodes": [
+    9581361983,
+    9581361984,
+    9581361985,
+    9581361986,
+    9581361983
+  ],
+  "tags": {
+    "building": "hut",
+    "name": "Chatka pod Czernicą",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1265777128,
+  "center": {
+    "lat": 50.2736606,
+    "lon": 16.7694137
+  },
+  "nodes": [
+    11757857796,
+    11757857797,
+    11757857798,
+    11757857799,
+    11757857796
+  ],
+  "tags": {
+    "alt_name": "Zielony Domek pod Suchoniem",
+    "building": "yes",
+    "internet_access:fee": "no",
+    "name": "Stanica u Stacha",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1375208635,
+  "center": {
+    "lat": 50.1586951,
+    "lon": 16.7543325
+  },
+  "nodes": [
+    12732893166,
+    12732893167,
+    12732893168,
+    12732893169,
+    12732893170,
+    12732893141,
+    12732893142,
+    12732893143,
+    12732893144,
+    12732893145,
+    12732893146,
+    12732893171,
+    12732893166
+  ],
+  "tags": {
+    "addr:housenumber": "6A",
+    "addr:place": "Jodłów",
+    "addr:postcode": "57-530",
+    "email": "hello@blogostan-domki.pl",
+    "internet_access": "wlan",
+    "name": "Błogostan",
+    "phone": "+48 692 241 603",
+    "tourism": "chalet",
+    "website": "https://blogostan-domki.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 1379388021,
+  "center": {
+    "lat": 50.2459061,
+    "lon": 16.9942745
+  },
+  "nodes": [
+    12772781369,
+    12772781370,
+    12772781371,
+    12772781372,
+    12772781369
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "wilderness_hut"
+  }
+}
+
+  ]
+}

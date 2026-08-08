@@ -1,0 +1,27 @@
+# Rozhledna na Medvědí hoře — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/node/3203452655 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/jeseniky/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Rozhledna na Medvědí hoře
+slug: rozhledna-na-medvedi-hore
+zeme: cz
+oblast: jeseniky
+typ: rozhledna
+lat: 50.0864909
+lng: 17.1394282
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/3203452655 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): (bez názvu) — amenity=fast_food, 39 m,
+  https://www.openstreetmap.org/node/13970693015

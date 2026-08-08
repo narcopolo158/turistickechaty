@@ -1,0 +1,33 @@
+# Hotel Figura — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/8044465 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/jeseniky/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Hotel Figura
+slug: hotel-figura
+zeme: cz
+oblast: jeseniky
+typ: obsluhovana
+lat: 50.0698759
+lng: 17.2419212
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/8044465 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +420 733 533 180;+420 724 708 083
+  email: recepce@resortpraded.cz
+  web: https://www.resortpraded.cz/?lang=cs
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/8044465 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
