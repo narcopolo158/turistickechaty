@@ -1,0 +1,32 @@
+# Betlejemka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-01)
+# Zdroj: https://www.openstreetmap.org/way/184072780 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/vysoke-tatry/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Betlejemka
+slug: betlejemka
+zeme: pl
+oblast: vysoke-tatry
+lat: 49.2452085
+lng: 20.006123
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/184072780 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-01
+kontakty:
+  telefon: "+48603424101"
+  email: betlejemka@pza.org.pl
+  web: http://betlejemka.org.pl/betlejemka/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/184072780 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-01
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-01) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

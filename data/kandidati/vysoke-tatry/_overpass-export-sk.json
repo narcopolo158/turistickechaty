@@ -1,0 +1,2806 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T18:02:26Z",
+    "timestamp_areas_base": "2026-08-07T17:44:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 961421521,
+  "lat": 49.1452468,
+  "lon": 20.2888045,
+  "tags": {
+    "beds": "32",
+    "email": "chata.felicia@gmail.com",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata Felícia",
+    "phone": "+421 907 946 739",
+    "rooms": "14",
+    "smoking": "no",
+    "stars": "1",
+    "tourism": "guest_house",
+    "website": "https://www.lomnica.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 1510043578,
+  "lat": 49.1452456,
+  "lon": 20.2898736,
+  "tags": {
+    "name": "Chata Stanislava",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 1829058906,
+  "lat": 49.1443362,
+  "lon": 20.0405735,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:email": "chatasolisko@pekyho.sk",
+    "contact:phone": "+421 917 655 446",
+    "internet_access": "wlan",
+    "name": "Chata pod Soliskom",
+    "name:en": "Chalet under Solisko Mt.",
+    "opening_hours": "Mo-Su 06:00-22:00",
+    "url": "https://chatasolisko.pekyho.sk/restauracia/"
+  }
+},
+{
+  "type": "node",
+  "id": 2976292382,
+  "lat": 49.2706331,
+  "lon": 20.2923219,
+  "tags": {
+    "name": "Chata na Antošáku",
+    "source": "survey",
+    "tourism": "guest_house",
+    "website": "https://www.vilapanorama.sk/chata-na-antosaku"
+  }
+},
+{
+  "type": "node",
+  "id": 3428796330,
+  "lat": 49.1443331,
+  "lon": 20.2403485,
+  "tags": {
+    "email": "info@panoramic.sk",
+    "name": "panoraMic Mountain Residence",
+    "phone": "+421 904 114 322",
+    "tourism": "chalet",
+    "website": "https://www.panoramic.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 3829955569,
+  "lat": 49.3036231,
+  "lon": 20.3510359,
+  "tags": {
+    "building": "yes",
+    "email": "penzionchatapolana@gmail.com",
+    "name": "Penzion Chata Polana",
+    "phone": "+421903942359",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 4286115400,
+  "lat": 49.0911786,
+  "lon": 20.0589051,
+  "tags": {
+    "name": "Chata Pleso",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 4318542856,
+  "lat": 49.1321241,
+  "lon": 20.2103297,
+  "tags": {
+    "contact:email": "vysoketatry@privativa.sk",
+    "name": "Privat Iva",
+    "phone": "+421 911 905 399",
+    "tourism": "chalet",
+    "website": "https://privativa.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 4763914232,
+  "lat": 49.2333711,
+  "lon": 20.3494400,
+  "tags": {
+    "name": "Chata",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 5825111384,
+  "lat": 49.2714350,
+  "lon": 20.2580685,
+  "tags": {
+    "description": "Samostatná chata pre 5 osôb",
+    "email": "daniela@zdiar.eu",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Holiday House Daniela",
+    "phone": "+421 692 057 174",
+    "tourism": "chalet",
+    "website": "https://zdiar.eu/sk/ubytovanie/chaty/holiday-house-daniela.html"
+  }
+},
+{
+  "type": "node",
+  "id": 5869196185,
+  "lat": 49.1545014,
+  "lon": 20.0786415,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-07-07",
+    "check_date:opening_hours": "2024-04-20",
+    "cuisine": "regional",
+    "name": "Majláthova chata",
+    "opening_hours": "Mo-Su 06:00-22:00",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+421 917 655446",
+    "website": "https://www.majlatka.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 7029697141,
+  "lat": 49.2681253,
+  "lon": 20.2448048,
+  "tags": {
+    "email": "chataliptak@gmail.com",
+    "name": "Chata Lipták",
+    "phone": "+421 944 717 895",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "node",
+  "id": 7641158140,
+  "lat": 49.1862853,
+  "lon": 20.2335709,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2024-08-04",
+    "name": "Skalnatá chata",
+    "opening_hours": "Mo-Su 08:00-20:00",
+    "outdoor_seating": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 7660980888,
+  "lat": 49.1739413,
+  "lon": 20.2195180,
+  "tags": {
+    "air_conditioning": "no",
+    "amenity": "fast_food",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegetarian": "no",
+    "name": "Zamkovského chata",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 8266072650,
+  "lat": 49.1306240,
+  "lon": 20.2455002,
+  "tags": {
+    "contact:website": "http://www.penzionvalaska.sk/",
+    "name": "Chata Valaška",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 8817311949,
+  "lat": 49.2664583,
+  "lon": 20.2929259,
+  "tags": {
+    "description": "Chatka U Jany je samostatný kompletne vybavený objekt vo dvore rodinného domu na začiatku obce Ždiar. Prenajíma sa celoročne.",
+    "guest_house": "guest_house",
+    "image": "https://www.1-2-3-ubytovanie.sk/images/photo/chata-u-jany/chata-u-jany-Zdiar-0.jpg",
+    "name": "Chata U Jany",
+    "tourism": "guest_house",
+    "website": "https://chata-ujany.123u.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 8872078027,
+  "lat": 49.2448446,
+  "lon": 20.2558115,
+  "tags": {
+    "building": "cabin",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 8872840826,
+  "lat": 49.2602264,
+  "lon": 20.2049424,
+  "tags": {
+    "building": "cabin",
+    "name": "Tristárska",
+    "source": "survey, gps",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 8873491386,
+  "lat": 49.2622987,
+  "lon": 20.1985554,
+  "tags": {
+    "building": "cabin",
+    "name": "Terénna stanica TANAP Staré",
+    "source": "survey, gps",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 8972275520,
+  "lat": 49.0924192,
+  "lon": 20.1399406,
+  "tags": {
+    "email": "valek@valek.sk",
+    "name": "Valek",
+    "phone": "+421 905 962 152",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 9094179653,
+  "lat": 49.2341464,
+  "lon": 20.1438235,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 9958581836,
+  "lat": 49.1304333,
+  "lon": 20.3574398,
+  "tags": {
+    "contact:email": "chatavysoketatry@gmail.com",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=100063993221534",
+    "contact:phone": "+421 918 465 740",
+    "name": "Chata Tatry",
+    "tourism": "chalet",
+    "website": "https://chatatatrylomnica.sk/chata-tatry/"
+  }
+},
+{
+  "type": "node",
+  "id": 10698163027,
+  "lat": 49.1599396,
+  "lon": 20.2243967,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Bilíkova chata",
+    "opening_hours": "Mo-Su 07:00-20:00",
+    "operator": "ROJAX GASTRO, s.r.o.",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:debit_cards": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10700349952,
+  "lat": 49.1668980,
+  "lon": 20.2186777,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2026-07-18",
+    "name": "Rainerova chata",
+    "opening_hours": "Mo-Su 09:00-16:00"
+  }
+},
+{
+  "type": "node",
+  "id": 10726676205,
+  "lat": 49.2703284,
+  "lon": 20.2893162,
+  "tags": {
+    "name": "Belianska Chata",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 12144202982,
+  "lat": 49.0975905,
+  "lon": 20.0605492,
+  "tags": {
+    "contact:email": "info@psotkovachata.sk",
+    "contact:phone": "+421 944 92 88 19",
+    "name": "Psotkova chata",
+    "tourism": "chalet",
+    "web": "https://www.psotkovachata.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 12186226851,
+  "lat": 49.2681038,
+  "lon": 20.2442339,
+  "tags": {
+    "contact:email": "info@monkovadolina.sk",
+    "contact:phone": "+421 905 493 274",
+    "name": "Privat Monka",
+    "tourism": "chalet",
+    "website": "https://www.monkovadolina.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 12196821343,
+  "lat": 49.1319414,
+  "lon": 20.3172165,
+  "tags": {
+    "contact:email": "info@vilazgraja.sk",
+    "contact:phone": "+421 918 171 150",
+    "name": "Vila Zgraja",
+    "tourism": "chalet",
+    "website": "https://www.vilazgraja.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 12830814859,
+  "lat": 49.0964665,
+  "lon": 20.0192413,
+  "tags": {
+    "name": "Chata Veronika",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 13116973601,
+  "lat": 49.0962943,
+  "lon": 20.0566818,
+  "tags": {
+    "name": "Chata u Hagrida",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 27865088,
+  "center": {
+    "lat": 49.1668742,
+    "lon": 20.2186435
+  },
+  "nodes": [
+    305933987,
+    305933988,
+    10700349958,
+    10700349956,
+    10919538137,
+    10700349955,
+    10700349957,
+    305933990,
+    305933993,
+    305933987
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14580",
+    "addr:country": "SK",
+    "addr:housenumber": "14580",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "06201",
+    "building": "hut",
+    "ele": "1304",
+    "name": "Rainerova chata",
+    "name:hu": "Rainer-kunyhó",
+    "opening_hours": "Mo-Fr 09:00-15:30; Sa,Su 09:00-16:00",
+    "ref:minvskaddress": "7000028068",
+    "shower": "no",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "alpine_hut",
+    "website": "https://hiking.dennikn.sk/ar/425/rainerova_chata.html",
+    "wikidata": "Q827301",
+    "wikipedia": "sk:Rainerova chata"
+  }
+},
+{
+  "type": "way",
+  "id": 27865090,
+  "center": {
+    "lat": 49.1589571,
+    "lon": 20.2241387
+  },
+  "nodes": [
+    1411377733,
+    1411377732,
+    7660980978,
+    7660980977,
+    7660980959,
+    7660980976,
+    7660980975,
+    1411377731,
+    1411377730,
+    1411377727,
+    12146942498,
+    1411377717,
+    1411377722,
+    1411377720,
+    1411377716,
+    305934242,
+    7660980974,
+    1411377718,
+    1411377725,
+    1411377728,
+    7660980973,
+    1411377734,
+    1411377736,
+    1411377737,
+    7660980972,
+    1411377739,
+    1411377741,
+    1411377740,
+    1411377743,
+    1411377748,
+    1411377749,
+    1411377751,
+    1411377750,
+    7660980971,
+    7660980964,
+    7660980970,
+    305934227,
+    305934222,
+    305934201,
+    7660980969,
+    7660980968,
+    7660980967,
+    7660980966,
+    1411377735,
+    1411377733
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "18048",
+    "addr:country": "SK",
+    "addr:housenumber": "18048",
+    "addr:place": "Starý Smokovec",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "building:levels": "3",
+    "name": "Horská ubytovňa Hrebienok",
+    "name:hu": "Tarajka",
+    "operator": "Tatry mountain resorts",
+    "phone": "+421 44 290 1351",
+    "ref:minvskaddress": "22917411",
+    "roof:levels": "2",
+    "roof:shape": "gambrel",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "hotel",
+    "website": "https://hotelhrebienok.sk/",
+    "wikidata": "Q23426236",
+    "wikipedia": "sk:Horský hotel Hrebienok"
+  }
+},
+{
+  "type": "way",
+  "id": 27918182,
+  "center": {
+    "lat": 49.1443424,
+    "lon": 20.0405434
+  },
+  "nodes": [
+    6935364087,
+    6935364085,
+    6935350084,
+    306468039,
+    306468045,
+    306468048,
+    6935364087
+  ],
+  "tags": {
+    "addr:city": "Štrba",
+    "addr:conscriptionnumber": "4097",
+    "addr:country": "SK",
+    "addr:housenumber": "4097/45",
+    "addr:postcode": "05985",
+    "addr:street": "K vodopádom",
+    "addr:streetnumber": "45",
+    "addr:suburb": "Štrbské Pleso",
+    "building": "yes",
+    "building:levels": "1",
+    "name": "Chata pod Soliskom",
+    "name:hu": "Szoliszkó-menedékház",
+    "official_name": "Solisko",
+    "ref:minvskaddress": "6707050372",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-10",
+    "source:official_name": "skgeodesy.sk",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/757/chata_pod_soliskom.html",
+    "website": "https://www.chatasolisko.sk/",
+    "wikidata": "Q112017366",
+    "wikipedia": "hu:Szoliszkó menedékház"
+  }
+},
+{
+  "type": "way",
+  "id": 33859958,
+  "center": {
+    "lat": 49.1900473,
+    "lon": 20.1989466
+  },
+  "nodes": [
+    7820047686,
+    387946337,
+    387946338,
+    387946339,
+    387946340,
+    387946341,
+    387946342,
+    387946343,
+    7820047686
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14447",
+    "addr:country": "SK",
+    "addr:housenumber": "14447",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "ele": "2015",
+    "name": "Téryho chata",
+    "name:cs": "Téryho chata",
+    "name:de": "Tery-Hütte",
+    "name:en": "Téry Hut",
+    "name:hu": "Téry-menedékház",
+    "name:pl": "Schronisko Téryego",
+    "ref:minvskaddress": "6707054013",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/334/teryho_chata.html",
+    "website": "https://www.teryhochata.sk/",
+    "wikidata": "Q843100",
+    "wikipedia": "sk:Téryho chata"
+  }
+},
+{
+  "type": "way",
+  "id": 33859960,
+  "center": {
+    "lat": 49.2101352,
+    "lon": 20.2210763
+  },
+  "nodes": [
+    387946348,
+    9025368411,
+    9025368412,
+    387946349,
+    387946350,
+    387946351,
+    9025368394,
+    387946352,
+    387946353,
+    7788045765,
+    7788045767,
+    7788045768,
+    7788045766,
+    387946348
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14445",
+    "addr:country": "SK",
+    "addr:housenumber": "14445",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "yes",
+    "building:levels": "1",
+    "ele": "1548",
+    "name": "Chata pri Zelenom plese",
+    "name:de": "Grünseehütte",
+    "name:hu": "Zöld-tavi menedékház",
+    "name:pl": "Schronisko nad Zielonym Stawem",
+    "official_name": "Brnčalova chata",
+    "operator": "KST",
+    "phone": "+421 901767420",
+    "ref:minvskaddress": "6707053991",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "source:official_name": "skgeodesy.sk",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/207/chata_pri_zelenom_plese_brncalka.html",
+    "website": "https://chataprizelenomplese.sk/",
+    "wikidata": "Q584037",
+    "wikipedia": "sk:Chata pri Zelenom plese"
+  }
+},
+{
+  "type": "way",
+  "id": 33863872,
+  "center": {
+    "lat": 49.1550130,
+    "lon": 20.0799081
+  },
+  "nodes": [
+    387990242,
+    4642113031,
+    8307587607,
+    5305194366,
+    4642113044,
+    4642113043,
+    4642113042,
+    387990245,
+    12249167850,
+    12187675360,
+    12187675367,
+    387990243,
+    12187675361,
+    12187675362,
+    12187675376,
+    12187675363,
+    12187675373,
+    387990242
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "24069",
+    "addr:country": "SK",
+    "addr:housenumber": "24069",
+    "addr:place": "Štrbské Pleso",
+    "addr:postcode": "05985",
+    "alt_name": "Chata pri Popradskom plese",
+    "alt_name:pl": "Chatą kpt. Moravku",
+    "building": "hotel",
+    "building:levels": "2",
+    "building:material": "wood",
+    "ele": "1494",
+    "email": "recepcia@popradskepleso.sk",
+    "internet_access": "wlan",
+    "name": "Horský hotel Popradské pleso",
+    "name:hu": "Poprádi-tavi Hegyi Szálló",
+    "name:pl": "Schronisko nad Popradzkim Stawem",
+    "old_name": "Chata kpt. Morávku",
+    "phone": "+421 908 761 403",
+    "ref:minvskaddress": "22767921",
+    "roof:levels": "3",
+    "roof:material": "wood",
+    "roof:shape": "gabled",
+    "source:addr": "minvskaddress 2024-09",
+    "stars": "1",
+    "tourism": "alpine_hut",
+    "website": "https://www.popradskepleso.sk/",
+    "wikidata": "Q836641",
+    "wikipedia": "sk:Chata pri Popradskom plese"
+  }
+},
+{
+  "type": "way",
+  "id": 33869432,
+  "center": {
+    "lat": 49.1739923,
+    "lon": 20.2197165
+  },
+  "nodes": [
+    388008307,
+    388008309,
+    388008310,
+    388008308,
+    388008307
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14448",
+    "addr:country": "SK",
+    "addr:housenumber": "14448",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "ele": "1475",
+    "internet_access": "wlan",
+    "name": "Zamkovského chata",
+    "name:hu": "Zamkovszky menedékház",
+    "official_name": "Nálepkova chata",
+    "opening_hours": "Mo-Su 07:00-23:00",
+    "operator": "KST",
+    "ref:minvskaddress": "6707054024",
+    "rooms": "11",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "source:official_name": "skgeodesy.sk",
+    "stars": "1",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/507/zamkovskeho_chata.html",
+    "website": "https://www.zamka.sk/",
+    "wheelchair": "no",
+    "wikidata": "Q1414193",
+    "wikipedia": "sk:Zamkovského chata"
+  }
+},
+{
+  "type": "way",
+  "id": 50492926,
+  "center": {
+    "lat": 49.1862357,
+    "lon": 20.2335511
+  },
+  "nodes": [
+    642266295,
+    642266302,
+    642266301,
+    642266299,
+    642266295
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14577",
+    "addr:country": "SK",
+    "addr:housenumber": "14577",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postbox": "P.O. BOX 42",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "building:levels": "1",
+    "building:material": "stone",
+    "ele": "1725",
+    "email": "info@skalnatachata.sk",
+    "internet_access": "wlan",
+    "name": "Skalnatá chata",
+    "name:de": "Steinbachseehütte",
+    "name:hu": "Köpatakitavi mendékház",
+    "name:pl": "Łomnickie Schronisko",
+    "phone": "+421904890298",
+    "ref:minvskaddress": "7000024449",
+    "roof:shape": "flat",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/442/skalnata_chata.html",
+    "website": "https://www.skalnatachata.sk/",
+    "wheelchair": "no",
+    "wikidata": "Q751617",
+    "wikipedia": "sk:Skalnatá chata"
+  }
+},
+{
+  "type": "way",
+  "id": 58738736,
+  "center": {
+    "lat": 49.2724218,
+    "lon": 20.2556845
+  },
+  "nodes": [
+    727818380,
+    727816447,
+    727817747,
+    13448802444,
+    13448802442,
+    13448802443,
+    13448802445,
+    13448802447,
+    13448802446,
+    727827692,
+    727818380
+  ],
+  "tags": {
+    "addr:city": "Ždiar",
+    "addr:conscriptionnumber": "335",
+    "addr:country": "SK",
+    "addr:housenumber": "335",
+    "addr:place": "Ždiar",
+    "addr:postcode": "05955",
+    "building": "yes",
+    "name": "Chalupa U starej mamy",
+    "ref:minvskaddress": "22775280",
+    "source": "kapor2;local knowledge",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet",
+    "website": "https://zdiar.123u.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 59595277,
+  "center": {
+    "lat": 49.1482774,
+    "lon": 20.2861185
+  },
+  "nodes": [
+    739335778,
+    739332540,
+    739333870,
+    739329781,
+    739332074,
+    739327686,
+    739329265,
+    739335226,
+    739335778
+  ],
+  "tags": {
+    "addr:city": "Stará Lesná",
+    "addr:conscriptionnumber": "414",
+    "addr:country": "SK",
+    "addr:housenumber": "414",
+    "addr:place": "Stará Lesná",
+    "addr:postcode": "05952",
+    "building": "yes",
+    "building:levels": "1",
+    "building:material": "wood",
+    "import": "budovy201004",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Green Park Chalet",
+    "ref:minvskaddress": "6704012535",
+    "roof:colour": "green",
+    "roof:levels": "1",
+    "roof:material": "metal",
+    "roof:shape": "gabled",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-09",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 59595292,
+  "center": {
+    "lat": 49.1486859,
+    "lon": 20.2866809
+  },
+  "nodes": [
+    739336594,
+    739328466,
+    739334568,
+    739336062,
+    739334107,
+    739329990,
+    739332288,
+    739327907,
+    739335141,
+    739336594
+  ],
+  "tags": {
+    "addr:city": "Stará Lesná",
+    "addr:conscriptionnumber": "471",
+    "addr:country": "SK",
+    "addr:housenumber": "471",
+    "addr:place": "Stará Lesná",
+    "addr:postcode": "05952",
+    "building": "yes",
+    "building:levels": "1",
+    "import": "budovy201004",
+    "internet_access": "no",
+    "name": "Alpina 2",
+    "ref:minvskaddress": "22916696",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-09",
+    "tourism": "chalet",
+    "website": "http://www.pension-orion.sk/alpina-2"
+  }
+},
+{
+  "type": "way",
+  "id": 59595335,
+  "center": {
+    "lat": 49.1487949,
+    "lon": 20.2872645
+  },
+  "nodes": [
+    739336745,
+    739333429,
+    739334779,
+    739331656,
+    739332933,
+    739328814,
+    739330138,
+    739336245,
+    739336745
+  ],
+  "tags": {
+    "addr:city": "Stará Lesná",
+    "addr:conscriptionnumber": "416",
+    "addr:country": "SK",
+    "addr:housenumber": "416",
+    "addr:place": "Stará Lesná",
+    "addr:postcode": "05952",
+    "building": "yes",
+    "building:levels": "1",
+    "import": "budovy201004",
+    "name": "Alpina 1",
+    "ref:minvskaddress": "6704012568",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-09",
+    "tourism": "chalet",
+    "website": "http://www.pension-orion.sk/alpina-1"
+  }
+},
+{
+  "type": "way",
+  "id": 64794769,
+  "center": {
+    "lat": 49.1234255,
+    "lon": 20.2470822
+  },
+  "nodes": [
+    794690122,
+    794696062,
+    794694338,
+    794694433,
+    794690122
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "16004",
+    "addr:country": "SK",
+    "addr:housenumber": "16004",
+    "addr:place": "Dolný Smokovec",
+    "addr:postcode": "05981",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Chata Dolný Smokove - Správa TANAP-u",
+    "operator": "Správa Tatranského národného parku",
+    "phone": "+421 903 987 421",
+    "ref:minvskaddress": "22782144",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet",
+    "website": "https://www.tanap.sk/ubytovanie/"
+  }
+},
+{
+  "type": "way",
+  "id": 64794778,
+  "center": {
+    "lat": 49.1389073,
+    "lon": 20.2172805
+  },
+  "nodes": [
+    794694923,
+    794693311,
+    794692815,
+    794690370,
+    794690518,
+    794695009,
+    794694591,
+    794692901,
+    794690766,
+    794693007,
+    794693718,
+    794692028,
+    794691338,
+    794694679,
+    794689949,
+    794695413,
+    794694923
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "19237",
+    "addr:country": "SK",
+    "addr:housenumber": "19237",
+    "addr:place": "Nový Smokovec",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Horské Vilky Poľana",
+    "ref:minvskaddress": "7000613092",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 64795135,
+  "center": {
+    "lat": 49.1192693,
+    "lon": 20.1685949
+  },
+  "nodes": [
+    794693097,
+    794692623,
+    794690031,
+    794695459,
+    794693761,
+    794693352,
+    794691404,
+    794694727,
+    794693097
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "21026",
+    "addr:country": "SK",
+    "addr:housenumber": "21026",
+    "addr:place": "Tatranská Polianka",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Villa Danielov dom",
+    "ref:minvskaddress": "22937233",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet",
+    "website": "https://www.danielovdom.sk/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 64795148,
+  "center": {
+    "lat": 49.1394327,
+    "lon": 20.2177947
+  },
+  "nodes": [
+    794695381,
+    794694890,
+    794693278,
+    794696214,
+    794694451,
+    794694560,
+    794692868,
+    794692453,
+    794689705,
+    794695812,
+    794694112,
+    794693686,
+    794691997,
+    794694148,
+    794695381
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "19238",
+    "addr:country": "SK",
+    "addr:housenumber": "19238",
+    "addr:place": "Nový Smokovec",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "building:levels": "2",
+    "import": "budovy201004",
+    "name": "Vilka Poľana",
+    "ref:minvskaddress": "7000613103",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 64795182,
+  "center": {
+    "lat": 49.1412963,
+    "lon": 20.2228443
+  },
+  "nodes": [
+    794694392,
+    794693951,
+    794692274,
+    794696152,
+    794694392
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "18007",
+    "addr:country": "SK",
+    "addr:housenumber": "18007",
+    "addr:place": "Starý Smokovec",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Švajčiarsky dom",
+    "ref:minvskaddress": "22917576",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 64795268,
+  "center": {
+    "lat": 49.1391161,
+    "lon": 20.2171399
+  },
+  "nodes": [
+    794693991,
+    794693572,
+    794691849,
+    794694235,
+    794692577,
+    794692116,
+    794695932,
+    794695505,
+    794693805,
+    794693397,
+    794691511,
+    794691704,
+    794695594,
+    794695099,
+    794693485,
+    794693991
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "19240",
+    "addr:country": "SK",
+    "addr:housenumber": "19240",
+    "addr:place": "Nový Smokovec",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "building:levels": "2",
+    "import": "budovy201004",
+    "name": "Vilka Poľana",
+    "ref:minvskaddress": "7001007211",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 64795320,
+  "center": {
+    "lat": 49.1392971,
+    "lon": 20.2175114
+  },
+  "nodes": [
+    794695325,
+    794693630,
+    794692635,
+    794694292,
+    794693861,
+    794692175,
+    794691640,
+    794695560,
+    794695654,
+    794693953,
+    794693540,
+    794691795,
+    794690875,
+    794695200,
+    794695325
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "19239",
+    "addr:country": "SK",
+    "addr:housenumber": "19239",
+    "addr:place": "Nový Smokovec",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "building:levels": "2",
+    "import": "budovy201004",
+    "name": "Vilka Poľana",
+    "ref:minvskaddress": "7000613114",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 64888292,
+  "center": {
+    "lat": 49.1766085,
+    "lon": 20.1673952
+  },
+  "nodes": [
+    795322399,
+    795322401,
+    795322400,
+    795322393,
+    795322395,
+    795322396,
+    795322397,
+    795322398,
+    795322399
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14446",
+    "addr:country": "SK",
+    "addr:housenumber": "14446",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "ele": "1960",
+    "email": "rezervacie@zbojnickachata.sk",
+    "name": "Zbojnícka chata",
+    "name:cs": "Zbojnícká chata",
+    "name:hu": "Hosszú-tavi menedékház",
+    "name:pl": "Schronisko Zbójnickie",
+    "opening_hours": "24/7",
+    "phone": "+421 903 638 000",
+    "ref:minvskaddress": "6707054002",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/265/zbojnicka_chata.html",
+    "website": "https://zbojnickachata.sk",
+    "wikidata": "Q72767",
+    "wikipedia": "sk:Zbojnícka chata"
+  }
+},
+{
+  "type": "way",
+  "id": 105597464,
+  "center": {
+    "lat": 49.1545519,
+    "lon": 20.0786261
+  },
+  "nodes": [
+    7658572394,
+    7658572405,
+    7658572404,
+    7658572403,
+    1215989005,
+    7658572402,
+    7658572401,
+    7658572400,
+    7658572399,
+    7658572398,
+    7658572397,
+    1215989007,
+    4642113030,
+    4642113032,
+    1215989006,
+    7658572394
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "24139",
+    "addr:country": "SK",
+    "addr:housenumber": "24139",
+    "addr:place": "Štrbské Pleso",
+    "addr:postcode": "05985",
+    "building": "yes",
+    "building:levels": "1",
+    "building:material": "wood",
+    "internet_access": "no",
+    "name": "Majláthova chata",
+    "name:hu": "Majláth-menedékház",
+    "payment:cards": "no",
+    "payment:cash": "yes",
+    "ref:minvskaddress": "710118375A",
+    "roof:levels": "2",
+    "roof:material": "wood",
+    "roof:shape": "gabled",
+    "rooms": "4",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-09",
+    "start_date": "2011",
+    "tourism": "guest_house",
+    "url": "https://hiking.dennikn.sk/ar/2752/majlathova_chata_pri_popradskom_plese.html",
+    "website": "https://www.majlatka.sk/",
+    "wikidata": "Q1163605",
+    "wikipedia": "sk:Majláthova chata"
+  }
+},
+{
+  "type": "way",
+  "id": 151515391,
+  "center": {
+    "lat": 49.1198914,
+    "lon": 20.0680605
+  },
+  "nodes": [
+    1643285866,
+    1643285847,
+    1643285839,
+    1643285957,
+    1643285970,
+    1643285960,
+    1643285968,
+    1643285973,
+    1643285977,
+    1643285971,
+    1643285974,
+    1643285980,
+    1643285979,
+    1643285985,
+    1643285984,
+    1643285989,
+    1643285990,
+    1643285995,
+    1643286018,
+    1643285890,
+    1643285874,
+    1643285889,
+    1643285881,
+    1643285868,
+    1643285849,
+    1643285873,
+    1643285866
+  ],
+  "tags": {
+    "addr:city": "Štrba",
+    "addr:conscriptionnumber": "4010",
+    "addr:country": "SK",
+    "addr:housenumber": "4010/2",
+    "addr:postcode": "05985",
+    "addr:street": "Limbová",
+    "addr:streetnumber": "2",
+    "addr:suburb": "Štrbské Pleso",
+    "building": "yes",
+    "name": "Vila Kosodrevina",
+    "ref:minvskaddress": "22767657",
+    "source:addr": "minvskaddress 2021-10",
+    "tourism": "chalet",
+    "website": "https://www.vila-kosodrevina.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 186050191,
+  "center": {
+    "lat": 49.1768250,
+    "lon": 20.2861831
+  },
+  "nodes": [
+    1967471304,
+    1967471308,
+    1967471330,
+    1967471306,
+    1967471326,
+    1967471328,
+    1967471324,
+    1967471349,
+    1967471347,
+    1967471362,
+    1967471360,
+    1967471358,
+    1967471357,
+    1967471322,
+    1967471345,
+    8313291003,
+    1967471289,
+    1967471292,
+    8313291002,
+    1967471343,
+    1967471355,
+    1967471353,
+    8313291005,
+    1967471366,
+    1967471400,
+    1967471375,
+    1967471388,
+    1967471402,
+    1967471390,
+    1967471392,
+    1967471378,
+    1967471368,
+    1967471380,
+    1967471398,
+    1967471396,
+    1967471406,
+    1967471408,
+    1967471410,
+    8309312302,
+    8309312305,
+    1967471421,
+    1967471419,
+    1967471374,
+    8313291006,
+    1967471364,
+    1967471339,
+    8309312241,
+    1967471351,
+    1967471337,
+    1967471317,
+    1967471332,
+    1967471315,
+    1967471312,
+    1967471304
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "13033",
+    "addr:country": "SK",
+    "addr:housenumber": "13033",
+    "addr:place": "Tatranské Matliare",
+    "addr:postcode": "05960",
+    "building": "hotel",
+    "building:levels": "7",
+    "email": "hutnik@sorea.sk",
+    "fax": "+421524467544",
+    "name": "Hotel SOREA Hutník",
+    "old_name:-1991": "Hotel Hutník",
+    "old_name:1991-2024": "Hotel SOREA Hutník I.",
+    "operator": "SOREA, spol. s r.o.",
+    "phone": "+421524467446",
+    "ref:minvskaddress": "36215553",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "https://www.sorea.sk/vysoke-tatry/hotel-sorea-hutnik-i/"
+  }
+},
+{
+  "type": "way",
+  "id": 191554225,
+  "center": {
+    "lat": 49.2750644,
+    "lon": 20.2421474
+  },
+  "nodes": [
+    2021385758,
+    2021385759,
+    2021385754,
+    2021385753,
+    2021385758
+  ],
+  "tags": {
+    "addr:city": "Ždiar",
+    "addr:conscriptionnumber": "420",
+    "addr:country": "SK",
+    "addr:housenumber": "420",
+    "addr:place": "Ždiar",
+    "addr:postcode": "05955",
+    "building": "yes",
+    "name": "Chalúpka 420",
+    "ref:minvskaddress": "2277549A",
+    "source": "kapor2;local knowledge",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet",
+    "website": "https://chalupka.123u.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 191624045,
+  "center": {
+    "lat": 49.3037056,
+    "lon": 20.3526220
+  },
+  "nodes": [
+    2022070129,
+    2022070142,
+    2022070144,
+    2022070132,
+    2022070129
+  ],
+  "tags": {
+    "addr:city": "Jezersko",
+    "addr:conscriptionnumber": "113",
+    "addr:country": "SK",
+    "addr:housenumber": "113",
+    "addr:place": "Jezersko",
+    "addr:postcode": "05904",
+    "building": "yes",
+    "email": "chalupagoral@zoznam.sk",
+    "name": "Chalupa Goral",
+    "phone": "+421 911 905 166",
+    "ref:minvskaddress": "1009029A",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "guest_house",
+    "website": "http://www.chalupagoral.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 191624134,
+  "center": {
+    "lat": 49.3036163,
+    "lon": 20.3518061
+  },
+  "nodes": [
+    2022070130,
+    2022070119,
+    2022070114,
+    2022070125,
+    2022070130
+  ],
+  "tags": {
+    "addr:city": "Jezersko",
+    "addr:conscriptionnumber": "74",
+    "addr:country": "SK",
+    "addr:housenumber": "74",
+    "addr:place": "Jezersko",
+    "addr:postcode": "05904",
+    "building": "yes",
+    "name": "Chata Eva",
+    "phone": "+421 903 174 865",
+    "ref:minvskaddress": "10089783",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 191624156,
+  "center": {
+    "lat": 49.2956561,
+    "lon": 20.3286700
+  },
+  "nodes": [
+    2022069683,
+    2022069681,
+    2022069689,
+    2022069693,
+    2022069688,
+    2022069684,
+    2022069683
+  ],
+  "tags": {
+    "addr:city": "Jezersko",
+    "addr:conscriptionnumber": "51",
+    "addr:country": "SK",
+    "addr:housenumber": "51",
+    "addr:place": "Jezersko",
+    "addr:postcode": "05904",
+    "building": "yes",
+    "name": "Chata Dana",
+    "phone": "+421905177522",
+    "ref:minvskaddress": "22800041",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 224456897,
+  "center": {
+    "lat": 49.1624685,
+    "lon": 20.2716342
+  },
+  "nodes": [
+    3358061561,
+    2332790222,
+    2332790223,
+    3358061564,
+    3358061561
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14026",
+    "addr:country": "SK",
+    "addr:housenumber": "14026",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "house",
+    "name": "Vila Bellis",
+    "ref:minvskaddress": "22934945",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet",
+    "website": "https://vilabellis.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 255636216,
+  "center": {
+    "lat": 49.2179370,
+    "lon": 19.9775268
+  },
+  "nodes": [
+    2613107192,
+    2613107193,
+    2613107191,
+    2613107190,
+    2613107192
+  ],
+  "tags": {
+    "access": "no",
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "25032",
+    "addr:country": "SK",
+    "addr:housenumber": "25032",
+    "addr:place": "Podbanské",
+    "addr:postcode": "03242",
+    "building": "cabin",
+    "name": "Chata Zadná Tichá",
+    "operator": "Štátne lesy TANAPu",
+    "phone": "+421903987561",
+    "ref:minvskaddress": "7000614159",
+    "source": "Ortofotomozaika SR",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 291198595,
+  "center": {
+    "lat": 49.2964749,
+    "lon": 20.3859781
+  },
+  "nodes": [
+    2946133776,
+    2946133759,
+    2946133748,
+    2946133756,
+    2946133776
+  ],
+  "tags": {
+    "addr:city": "Reľov",
+    "addr:conscriptionnumber": "3",
+    "addr:country": "SK",
+    "addr:housenumber": "3",
+    "addr:place": "Reľov",
+    "addr:postcode": "05904",
+    "building": "house",
+    "building:levels": "1",
+    "description": "Chata Domek na okraji obce Reľov. Objekt sa prenajíma ako celok. Vhodné pre rodiny s deťmi. Má dve izby, kuchyňu, jedálenský kút, kúpeľňu so sprchovacím kútom a WC.",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chata Domek",
+    "phone": "+421 903 863 214",
+    "ref:minvskaddress": "22878834",
+    "source": "kapor2;local knowledge",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet",
+    "website": "https://domek.123u.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 301993072,
+  "center": {
+    "lat": 49.1600485,
+    "lon": 20.2243597
+  },
+  "nodes": [
+    3061976077,
+    3061976071,
+    3061976072,
+    3061976069,
+    3061976068,
+    3061976067,
+    10698163025,
+    3061976066,
+    10698163026,
+    3061976074,
+    3061976077
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14014",
+    "addr:country": "SK",
+    "addr:housenumber": "14014",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "06201",
+    "building": "commercial",
+    "building:levels": "2",
+    "building:material": "wood",
+    "ele": "1255",
+    "email": "info@bilikovachata.sk",
+    "name": "Bilíkova chata",
+    "name:hu": "Bilík-menedékház",
+    "opening_hours": "Mo-Su 07:00-20:00",
+    "operator": "ROJAX GASTRO, s.r.o.",
+    "phone": "+421 949 579 777",
+    "ref:ico": "54335655",
+    "ref:minvskaddress": "22934813",
+    "ref:vatin": "SK2121654095",
+    "roof:levels": "1",
+    "roof:material": "metal",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "alpine_hut",
+    "website": "https://bilikovachata.sk/",
+    "wikidata": "Q803794",
+    "wikipedia": "sk:Bilíkova chata"
+  }
+},
+{
+  "type": "way",
+  "id": 328987326,
+  "center": {
+    "lat": 49.1472515,
+    "lon": 20.3239488
+  },
+  "nodes": [
+    3358060819,
+    3358060814,
+    7747599777,
+    7747599776,
+    7747599775,
+    7747599774,
+    3358060812,
+    3358060815,
+    3358060819
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14614",
+    "addr:country": "SK",
+    "addr:housenumber": "14614",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "yes",
+    "name": "Alpina",
+    "ref:minvskaddress": "7000431053",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987334,
+  "center": {
+    "lat": 49.1470679,
+    "lon": 20.3241419
+  },
+  "nodes": [
+    3358060805,
+    3358060806,
+    3358060809,
+    3358060808,
+    3358060813,
+    3358060810,
+    3358060803,
+    3358060804,
+    3358060805
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14530",
+    "addr:country": "SK",
+    "addr:housenumber": "14530",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "yes",
+    "name": "Kamila",
+    "ref:minvskaddress": "6707054849",
+    "source": "ZBGIS",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987398,
+  "center": {
+    "lat": 49.1489250,
+    "lon": 20.3218882
+  },
+  "nodes": [
+    3358060908,
+    7747599803,
+    3358060907,
+    7747599802,
+    7747599801,
+    7747599800,
+    7747599799,
+    7747599798,
+    7747599797,
+    3358060913,
+    3358060916,
+    7747599796,
+    7747599795,
+    7747599794,
+    3358060908
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14575",
+    "addr:country": "SK",
+    "addr:housenumber": "14575",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "yes",
+    "ref:minvskaddress": "7000024416",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987400,
+  "center": {
+    "lat": 49.1489368,
+    "lon": 20.3215758
+  },
+  "nodes": [
+    7747599793,
+    7747599792,
+    3358060917,
+    7747599791,
+    7747599790,
+    3358060915,
+    3358060912,
+    3358060909,
+    7747599789,
+    7747599788,
+    3358060911,
+    7747599787,
+    7747599786,
+    3358060914,
+    7747599785,
+    7747599793
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14623",
+    "addr:country": "SK",
+    "addr:housenumber": "14623",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "yes",
+    "ref:minvskaddress": "7000933918",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987452,
+  "center": {
+    "lat": 49.1592792,
+    "lon": 20.3087916
+  },
+  "nodes": [
+    3358061355,
+    3358061361,
+    3358061365,
+    3358061360,
+    3358061355
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14537",
+    "addr:country": "SK",
+    "addr:housenumber": "14537",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707054915",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987453,
+  "center": {
+    "lat": 49.1594528,
+    "lon": 20.3085940
+  },
+  "nodes": [
+    3358061374,
+    3358061381,
+    3358061383,
+    3358061376,
+    3358061374
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14538",
+    "addr:country": "SK",
+    "addr:housenumber": "14538",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707054926",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987454,
+  "center": {
+    "lat": 49.1593212,
+    "lon": 20.3086108
+  },
+  "nodes": [
+    3358061364,
+    3358061367,
+    3358061368,
+    3358061366,
+    3358061364
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14539",
+    "addr:country": "SK",
+    "addr:housenumber": "14539",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707054937",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987455,
+  "center": {
+    "lat": 49.1594005,
+    "lon": 20.3084471
+  },
+  "nodes": [
+    3358061370,
+    3358061372,
+    3358061379,
+    3358061373,
+    3358061370
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14540",
+    "addr:country": "SK",
+    "addr:housenumber": "14540",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707054948",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987456,
+  "center": {
+    "lat": 49.1594344,
+    "lon": 20.3083364
+  },
+  "nodes": [
+    3358061371,
+    3358061375,
+    3358061382,
+    3358061378,
+    3358061371
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14541",
+    "addr:country": "SK",
+    "addr:housenumber": "14541",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707054959",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987457,
+  "center": {
+    "lat": 49.1592773,
+    "lon": 20.3081899
+  },
+  "nodes": [
+    3358061352,
+    3358061359,
+    3358061357,
+    3358061351,
+    3358061352
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14542",
+    "addr:country": "SK",
+    "addr:housenumber": "14542",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "670705496A",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987459,
+  "center": {
+    "lat": 49.1590839,
+    "lon": 20.3082275
+  },
+  "nodes": [
+    3358061331,
+    3358061339,
+    3358061340,
+    3358061332,
+    3358061331
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14544",
+    "addr:country": "SK",
+    "addr:housenumber": "14544",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707065871",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987460,
+  "center": {
+    "lat": 49.1589836,
+    "lon": 20.3081945
+  },
+  "nodes": [
+    3358061323,
+    3358061327,
+    3358061328,
+    3358061324,
+    3358061323
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14545",
+    "addr:country": "SK",
+    "addr:housenumber": "14545",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707065882",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987461,
+  "center": {
+    "lat": 49.1588989,
+    "lon": 20.3081008
+  },
+  "nodes": [
+    3358061306,
+    3358061316,
+    3358061317,
+    3358061308,
+    3358061306
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14546",
+    "addr:country": "SK",
+    "addr:housenumber": "14546",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707065893",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987462,
+  "center": {
+    "lat": 49.1588078,
+    "lon": 20.3079735
+  },
+  "nodes": [
+    3358061282,
+    3358061292,
+    3358061294,
+    3358061283,
+    3358061282
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14547",
+    "addr:country": "SK",
+    "addr:housenumber": "14547",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707065904",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987463,
+  "center": {
+    "lat": 49.1586896,
+    "lon": 20.3078414
+  },
+  "nodes": [
+    3358061270,
+    3358061277,
+    3358061279,
+    3358061272,
+    3358061270
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14548",
+    "addr:country": "SK",
+    "addr:housenumber": "14548",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707065915",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987464,
+  "center": {
+    "lat": 49.1585464,
+    "lon": 20.3086240
+  },
+  "nodes": [
+    3358061258,
+    3358061264,
+    3358061265,
+    3358061261,
+    3358061258
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14549",
+    "addr:country": "SK",
+    "addr:housenumber": "14549",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707065926",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987465,
+  "center": {
+    "lat": 49.1580348,
+    "lon": 20.3083808
+  },
+  "nodes": [
+    3358061244,
+    3358061248,
+    3358061249,
+    3358061245,
+    3358061244
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14550",
+    "addr:country": "SK",
+    "addr:housenumber": "14550",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707065937",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 328987466,
+  "center": {
+    "lat": 49.1580031,
+    "lon": 20.3086388
+  },
+  "nodes": [
+    3358061242,
+    3358061246,
+    3358061247,
+    3358061243,
+    3358061242
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14551",
+    "addr:country": "SK",
+    "addr:housenumber": "14551",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707065948",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 360934553,
+  "center": {
+    "lat": 49.1746037,
+    "lon": 20.0870276
+  },
+  "nodes": [
+    3654741579,
+    3654741578,
+    3654741581,
+    12249167849,
+    3654741579
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "24096",
+    "addr:country": "SK",
+    "addr:housenumber": "24096",
+    "addr:place": "Štrbské Pleso",
+    "addr:postcode": "05985",
+    "alt_name:hu": "Hunfalvy-hágó alatti menedékház",
+    "building": "hotel",
+    "ele": "2250",
+    "internet_access": "no",
+    "name": "Chata pod Rysmi",
+    "name:de": "Hütte unter der Meeraugspitze",
+    "name:en": "Chalet under Rysy",
+    "name:hu": "Hunfalvy-völgyi menedékház",
+    "name:pl": "Schronisko pod Wagą",
+    "operator": "KST a IAMES",
+    "ref:minvskaddress": "6707050361",
+    "smoking": "no",
+    "source:addr": "minvskaddress 2024-09",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/2371/chata_pod_rysmi_zrekonstruovana.html",
+    "website": "https://www.chatapodrysmi.com/",
+    "wikidata": "Q747142",
+    "wikipedia": "sk:Chata pod Rysmi"
+  }
+},
+{
+  "type": "way",
+  "id": 366341785,
+  "center": {
+    "lat": 49.1585464,
+    "lon": 19.9434929
+  },
+  "nodes": [
+    3703201062,
+    3703201056,
+    3703201053,
+    3703201057,
+    3703201062
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "25060",
+    "addr:country": "SK",
+    "addr:housenumber": "25060",
+    "addr:place": "Podbanské",
+    "addr:postcode": "03242",
+    "building": "cabin",
+    "name": "Chata Krížna",
+    "operator": "Štátne lesy TANAPu",
+    "phone": "+421903987561",
+    "ref:minvskaddress": "7000615721",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 494434957,
+  "center": {
+    "lat": 49.2584864,
+    "lon": 20.2159116
+  },
+  "nodes": [
+    4861943500,
+    4861943499,
+    4861943498,
+    4861943497,
+    4861943500
+  ],
+  "tags": {
+    "building": "cabin",
+    "man_made": "forester's_lodge",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 527475114,
+  "center": {
+    "lat": 49.2546295,
+    "lon": 20.2744107
+  },
+  "nodes": [
+    5127964369,
+    5127964368,
+    5127964367,
+    5127964366,
+    5127964369
+  ],
+  "tags": {
+    "building": "cabin",
+    "name": "Tokáreň",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 538195677,
+  "center": {
+    "lat": 49.2217195,
+    "lon": 19.9424002
+  },
+  "nodes": [
+    5209919434,
+    5209919433,
+    5209919432,
+    5209919431,
+    5209919434
+  ],
+  "tags": {
+    "access": "no",
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "25046",
+    "addr:country": "SK",
+    "addr:housenumber": "25046",
+    "addr:place": "Podbanské",
+    "addr:postcode": "03242",
+    "building": "cabin",
+    "name": "Chata Tomanová",
+    "operator": "Štátne lesy TANAPu",
+    "phone": "+421903987561",
+    "ref:minvskaddress": "7000614324",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 562321415,
+  "center": {
+    "lat": 49.2245710,
+    "lon": 20.2761098
+  },
+  "nodes": [
+    5421144380,
+    5421144379,
+    5421144378,
+    5421144377,
+    5421144376,
+    9880678073,
+    5421144375,
+    5421144380
+  ],
+  "tags": {
+    "building": "yes",
+    "building:colour": "brown",
+    "building:levels": "2",
+    "building:material": "wood",
+    "ele": "1290",
+    "name": "Plesnivec",
+    "name:de": "Edelweis Hütte",
+    "name:hu": "Gyopár-menedékház",
+    "name:pl": "Schronisko pod Szarotką",
+    "roof:levels": "1",
+    "shower": "yes",
+    "source": "Bing",
+    "source:name": "skgeodesy.sk",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/198/chata_plesnivec.html",
+    "website": "https://www.chataplesnivec.sk/",
+    "wikidata": "Q9334479",
+    "wikipedia": "sk:Chata Plesnivec"
+  }
+},
+{
+  "type": "way",
+  "id": 631857141,
+  "center": {
+    "lat": 49.1887175,
+    "lon": 19.9876992
+  },
+  "nodes": [
+    5966362695,
+    5966362694,
+    5966362693,
+    5966362692,
+    5966362695
+  ],
+  "tags": {
+    "access": "no",
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "25066",
+    "addr:country": "SK",
+    "addr:housenumber": "25066",
+    "addr:place": "Podbanské",
+    "addr:postcode": "03242",
+    "building": "yes",
+    "name": "Grarajova chata",
+    "operator": "TANAP",
+    "ref:minvskaddress": "710118518A",
+    "source": "survey,Ortofotomozaika SR, GPS",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 729456247,
+  "center": {
+    "lat": 49.1841989,
+    "lon": 19.9348492
+  },
+  "nodes": [
+    6833855631,
+    6833855630,
+    6833855629,
+    6833855628,
+    6833855631
+  ],
+  "tags": {
+    "access": "no",
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "25067",
+    "addr:country": "SK",
+    "addr:housenumber": "25067",
+    "addr:place": "Podbanské",
+    "addr:postcode": "03242",
+    "building": "cabin",
+    "name": "Kôprovnica",
+    "operator": "Štátne lesy TANAPu",
+    "phone": "+421903987561",
+    "ref:minvskaddress": "7101185190",
+    "source": "survey, gps",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 743457114,
+  "center": {
+    "lat": 49.1299613,
+    "lon": 20.0602990
+  },
+  "nodes": [
+    6958916395,
+    6958916394,
+    6958916392,
+    6958916391,
+    6958916390,
+    6958916389,
+    6958916388,
+    6958916387,
+    6958916385,
+    6958916384,
+    6958916382,
+    6958916381,
+    6958916380,
+    6958916395
+  ],
+  "tags": {
+    "addr:city": "Štrba",
+    "addr:conscriptionnumber": "4064",
+    "addr:country": "SK",
+    "addr:housenumber": "4064/74",
+    "addr:postcode": "05985",
+    "addr:street": "K vodopádom",
+    "addr:streetnumber": "74",
+    "addr:suburb": "Štrbské Pleso",
+    "building": "yes",
+    "building:levels": "2",
+    "building:material": "wood",
+    "name": "High Tatras Chalet",
+    "ref:minvskaddress": "7101368571",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-02",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 788899509,
+  "center": {
+    "lat": 49.1147266,
+    "lon": 19.9304580
+  },
+  "nodes": [
+    7375619384,
+    7375658285,
+    7375658286,
+    7375658287,
+    7375619384
+  ],
+  "tags": {
+    "addr:city": "Východná",
+    "addr:housenumber": "1095",
+    "addr:place": "Východná",
+    "addr:postcode": "03232",
+    "building": "yes",
+    "building:levels": "1",
+    "building:roof": "1",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata Medovka",
+    "phone": "+420 734 275 923",
+    "reservation": "required",
+    "smoking": "no",
+    "tourism": "chalet",
+    "website": "https://medovka.com/chata/chata-medovka/"
+  }
+},
+{
+  "type": "way",
+  "id": 830139544,
+  "center": {
+    "lat": 49.1591722,
+    "lon": 20.3081964
+  },
+  "nodes": [
+    7747599903,
+    7747599902,
+    7747599901,
+    7747599900,
+    7747599903
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "14543",
+    "addr:country": "SK",
+    "addr:housenumber": "14543",
+    "addr:place": "Tatranská Lomnica",
+    "addr:postcode": "05960",
+    "building": "hut",
+    "operator": "Tatranec",
+    "ref:minvskaddress": "6707065860",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "stars": "2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 837551097,
+  "center": {
+    "lat": 49.1561093,
+    "lon": 19.9601929
+  },
+  "nodes": [
+    7817066051,
+    7817066050,
+    7817066049,
+    7817066048,
+    13087640364,
+    7817066051
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "25040",
+    "addr:country": "SK",
+    "addr:housenumber": "25040",
+    "addr:place": "Podbanské",
+    "addr:postcode": "03242",
+    "building": "cabin",
+    "name": "Zverienec",
+    "operator": "TANAP",
+    "ref:minvskaddress": "7000614225",
+    "source": "Ortofotomozaika SR;local knowledge",
+    "source:addr": "minvskaddress 2021-12",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 896022719,
+  "center": {
+    "lat": 49.1200783,
+    "lon": 19.9403314
+  },
+  "nodes": [
+    8329082025,
+    8329082024,
+    8329082023,
+    8329082022,
+    8329082025
+  ],
+  "tags": {
+    "addr:city": "Východná",
+    "addr:housenumber": "1095",
+    "addr:place": "Východná",
+    "addr:postcode": "03232",
+    "building": "yes",
+    "building:levels": "1",
+    "building:roof": "1",
+    "contact:facebook": "https://www.facebook.com/UsadlostpodKrivanom/",
+    "contact:instagram": "https://www.instagram.com/usadlostpodkrivanom/",
+    "email": "booking@usadlostpodkrivanom.sk",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata Dúška",
+    "source": "Ortofotomozaika SR,kapor2",
+    "tourism": "chalet",
+    "website": "https://usadlostpodkrivanom.sk/chata/chata-duska/"
+  }
+},
+{
+  "type": "way",
+  "id": 959107087,
+  "center": {
+    "lat": 49.1540023,
+    "lon": 19.9543070
+  },
+  "nodes": [
+    8874886940,
+    8874886939,
+    8874886938,
+    8874886937,
+    8874886940
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "25041",
+    "addr:country": "SK",
+    "addr:housenumber": "25041",
+    "addr:place": "Podbanské",
+    "addr:postcode": "03242",
+    "building": "cabin",
+    "name": "Koniarka",
+    "operator": "TANAP",
+    "ref:minvskaddress": "7000614236",
+    "source": "survey, gps",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 982053911,
+  "center": {
+    "lat": 49.2124719,
+    "lon": 20.3287714
+  },
+  "nodes": [
+    9082560126,
+    9082560123,
+    9082560124,
+    9082560125,
+    9082560126
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Poľana",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1459131619,
+  "center": {
+    "lat": 49.2340562,
+    "lon": 20.2917693
+  },
+  "nodes": [
+    13382068299,
+    13382068298,
+    13382068297,
+    13382068296,
+    13382068299
+  ],
+  "tags": {
+    "building": "cabin",
+    "man_made": "forester's_lodge",
+    "name": "TANAP",
+    "source": "LIDAR:ÚGKK SR DMR 5.0",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1470867084,
+  "center": {
+    "lat": 49.3244351,
+    "lon": 20.3055511
+  },
+  "nodes": [
+    13495546207,
+    13495546208,
+    13495546209,
+    13495546210,
+    13495546211,
+    13495546212,
+    13495546213,
+    13495546214,
+    13495546207
+  ],
+  "tags": {
+    "addr:city": "Veľká Franková",
+    "addr:housenumber": "133",
+    "addr:postcode": "059 78",
+    "building": "yes",
+    "name": "Chata Goral",
+    "tourism": "chalet",
+    "website": "https://www.hauzi.sk/chata-goral#"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T18:08:30Z",
+    "timestamp_areas_base": "2026-08-07T17:44:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 13518939791,
+  "lat": 49.3072835,
+  "lon": 20.0884789,
+  "tags": {
+    "email": "info@skywalk-poronin.pl",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "SkyWalk Serce Poronina",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "https://skywalk-poronin.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 237044797,
+  "center": {
+    "lat": 49.2787299,
+    "lon": 19.9632910
+  },
+  "nodes": [
+    3546545812,
+    3546545920,
+    3546545737,
+    3546545918,
+    3546545808,
+    3546545914,
+    3546545811,
+    3546545813,
+    3546545735,
+    3546545812
+  ],
+  "tags": {
+    "access": "private",
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1221714465,
+  "center": {
+    "lat": 49.2790467,
+    "lon": 19.9677377
+  },
+  "nodes": [
+    11330749912,
+    11330749911,
+    11330749910,
+    11330749909,
+    11330749912
+  ],
+  "tags": {
+    "access": "private",
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

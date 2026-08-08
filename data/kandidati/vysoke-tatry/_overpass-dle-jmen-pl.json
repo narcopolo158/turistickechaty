@@ -1,0 +1,60 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T18:07:31Z",
+    "timestamp_areas_base": "2026-08-07T03:28:41Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 358407058,
+  "center": {
+    "lat": 49.2434181,
+    "lon": 20.0071598
+  },
+  "nodes": [
+    3633305009,
+    3633305010,
+    3633305011,
+    5810136954,
+    3633305012,
+    3633305013,
+    3633305014,
+    3633305017,
+    3633305018,
+    3633305019,
+    3633305020,
+    3633305021,
+    3633305022,
+    3633305009
+  ],
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:city:simc": "0963773",
+    "addr:housenumber": "1",
+    "addr:postcode": "34-500",
+    "addr:street": "Hala Gąsienicowa",
+    "addr:street:sym_ul": "29040",
+    "building": "yes",
+    "capacity": "110",
+    "contact:website": "https://murowaniec.com",
+    "ele": "1500",
+    "internet_access": "wlan",
+    "name": "Murowaniec",
+    "name:hu": "Murowaniec menedékház",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "payment:cash": "yes",
+    "shower": "yes",
+    "source": "survey",
+    "source:addr": "mzakopane.e-mapa.net",
+    "tourism": "alpine_hut",
+    "wikidata": "Q9334426",
+    "wikipedia": "pl:Schronisko PTTK „Murowaniec”"
+  }
+}
+
+  ]
+}

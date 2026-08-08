@@ -1,0 +1,304 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-08T18:07:31Z",
+    "timestamp_areas_base": "2026-08-07T03:28:41Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 3358062156,
+  "lat": 49.1875677,
+  "lon": 20.2324566,
+  "tags": {
+    "amenity": "fast_food",
+    "level": "0",
+    "name": "Terasa",
+    "outdoor_seating": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 6923446275,
+  "lat": 49.1875640,
+  "lon": 20.2327776,
+  "tags": {
+    "amenity": "restaurant",
+    "level": "1",
+    "name": "Panorama",
+    "opening_hours": "Mo-Su 10:00-18:00"
+  }
+},
+{
+  "type": "node",
+  "id": 6923446276,
+  "lat": 49.1875185,
+  "lon": 20.2328261,
+  "tags": {
+    "amenity": "cafe",
+    "level": "0",
+    "name": "Café Panorama",
+    "opening_hours": "Mo-Su 08:30-16:30",
+    "operator": "Tatry mountain resorts",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7613251256,
+  "lat": 49.2855668,
+  "lon": 20.3144865,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Panorama",
+    "opening_hours": "May-Jun Mo-Su 09:00-17:00; Jul-Aug Mo-Su 09:00-19:00; Sep Mo-Su 09:00-17:00; Oct-Apr Mo-Su 09:00-16:00",
+    "operator": "Hniezdo SK",
+    "outdoor_seating": "yes",
+    "source": "survey",
+    "website": "https://bachledka.sk/restauracia-panorama"
+  }
+},
+{
+  "type": "node",
+  "id": 7613254203,
+  "lat": 49.2854592,
+  "lon": 20.3146031,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "regional",
+    "opening_hours": "May-Jun Mo-Su 09:00-17:00; Jul-Aug Mo-Su 09:00-18:00; Sep Mo-Su 09:00-17:00; Oct-Apr Mo-Su 09:00-16:00",
+    "operator": "Hniezdo SK",
+    "outdoor_seating": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 9196113257,
+  "lat": 49.1273161,
+  "lon": 20.0593492,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Tower cafe",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 10761199407,
+  "lat": 49.1449993,
+  "lon": 20.3852016,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:facebook": "https://www.facebook.com/ClubhouseRestaurantTatry",
+    "contact:instagram": "https://www.instagram.com/clubhouserestaurant_sk/",
+    "email": "info@clubhouserestaurant.sk",
+    "mobile": "+421 905 417 130",
+    "phone": "+421 905 328 829",
+    "reservation": "required",
+    "website": "https://clubhouserestaurant.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 13167388041,
+  "lat": 49.1447848,
+  "lon": 20.3851292,
+  "tags": {
+    "man_made": "tower",
+    "name": "Golf Tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 709359845,
+  "center": {
+    "lat": 49.2861295,
+    "lon": 20.3144086
+  },
+  "nodes": [
+    5174247324,
+    5174247332,
+    5174247331,
+    5174247330,
+    5174247329,
+    5174247328,
+    6668088422,
+    5174247327,
+    6668026876,
+    5174247325,
+    5174247324
+  ],
+  "tags": {
+    "ele": "1175",
+    "height": "32",
+    "man_made": "tower",
+    "name": "Vyhliadková veža - chodník v korunách stromov",
+    "operator": "Chodník korunami stromov s.r.o.",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation",
+    "website": "https://chodnikkorunamistromov.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 743625260,
+  "center": {
+    "lat": 49.1274082,
+    "lon": 20.0592229
+  },
+  "nodes": [
+    6959946374,
+    6959946345,
+    6966157045,
+    6959946346,
+    6959946347,
+    6966157054,
+    6959946348,
+    6959946349,
+    6959946350,
+    6966157053,
+    6959946351,
+    6959946352,
+    6959946353,
+    6966157052,
+    6959946354,
+    6959946355,
+    6959946356,
+    6959946357,
+    6966157051,
+    6959946358,
+    6959946359,
+    6959946376,
+    6959946360,
+    6966157050,
+    6959946361,
+    6959946362,
+    6959946363,
+    6966157049,
+    6959946364,
+    6959946375,
+    6959946365,
+    6959946366,
+    6966157048,
+    6959946367,
+    6959946368,
+    6959946369,
+    6966157047,
+    6959946370,
+    6959946371,
+    6959946372,
+    6966157046,
+    6959946373,
+    6959946374
+  ],
+  "tags": {
+    "addr:city": "Štrba",
+    "addr:conscriptionnumber": "4122",
+    "addr:country": "SK",
+    "addr:housenumber": "4122/80",
+    "addr:postcode": "05985",
+    "addr:street": "K vodopádom",
+    "addr:streetnumber": "80",
+    "addr:suburb": "Štrbské Pleso",
+    "building": "tower",
+    "capacity": "492",
+    "charge": "13 EUR/hour",
+    "contact:facebook": "https://www.facebook.com/vezasnov/",
+    "contact:instagram": "https://www.instagram.com/tatrastower/",
+    "email": "info@vezasnov.sk",
+    "fee": "yes",
+    "height": "53",
+    "man_made": "tower",
+    "material": "steel;wood",
+    "name": "Tatras Tower",
+    "opening_hours": "May-Jun: 09:00-18:00; Jul-Aug: 09:00-19:00; Sep: 09:00-18:00; Oct-Apr: 09:00-17:00",
+    "operator": "High Tatras Tower;MALBOCO LTD Cyprus",
+    "phone": "+421 903 602 006",
+    "ref:minvskaddress": "710265544A",
+    "source": "Ortofotomozaika SR",
+    "source:addr": "minvskaddress 2024-02",
+    "tower:construction": "lattice_steel",
+    "tower:type": "observation",
+    "url": "https://www.startitup.sk/foto-vystup-na-novu-dominantu-strbskeho-plesa-bude-stat-rodinu-desiatky-eur-slubene-muzeum-je-v-nedohladne/",
+    "website": "https://vezasnov.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 815056707,
+  "center": {
+    "lat": 49.2838886,
+    "lon": 20.3193026
+  },
+  "nodes": [
+    3315015387,
+    7613254322,
+    7613254321,
+    7613254320,
+    3315015387
+  ],
+  "tags": {
+    "alt_name": "Rozhľadňa Bachledka",
+    "building": "yes",
+    "building:levels": "5",
+    "building:material": "wood",
+    "man_made": "tower",
+    "name": "Rozhľadňa Bachledova dolina",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 818167479,
+  "center": {
+    "lat": 49.1875857,
+    "lon": 20.2331313
+  },
+  "nodes": [
+    7641158195,
+    7641158194,
+    7641158193,
+    7641158192,
+    7641158195
+  ],
+  "tags": {
+    "man_made": "tower",
+    "source": "survey",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1421725499,
+  "center": {
+    "lat": 49.1036776,
+    "lon": 20.2036572
+  },
+  "nodes": [
+    13065126944,
+    13065126945,
+    13065126946,
+    13065126947,
+    13065126944
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

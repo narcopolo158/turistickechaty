@@ -1,0 +1,33 @@
+# Chalupa Goral — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-08)
+# Zdroj: https://www.openstreetmap.org/way/191624045 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/vysoke-tatry/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chalupa Goral
+slug: chalupa-goral
+zeme: sk
+oblast: vysoke-tatry
+lat: 49.3037056
+lng: 20.352622
+obec: Jezersko
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/191624045 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+kontakty:
+  telefon: +421 911 905 166
+  email: chalupagoral@zoznam.sk
+  web: http://www.chalupagoral.sk
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/191624045 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-08
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-08) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

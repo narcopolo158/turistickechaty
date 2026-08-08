@@ -1,0 +1,985 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-01T08:52:28Z",
+    "timestamp_areas_base": "2026-06-01T08:52:28Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 2111100814,
+  "lat": 49.2964530,
+  "lon": 19.9646021,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Chata Zbójnicka"
+  }
+},
+{
+  "type": "node",
+  "id": 4365938906,
+  "lat": 49.2804854,
+  "lon": 19.9369011,
+  "tags": {
+    "check_date": "2025-10-30",
+    "internet_access": "wlan",
+    "name": "Tater-chata",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 5227736848,
+  "lat": 49.2969200,
+  "lon": 19.9840600,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:city:simc": "0963773",
+    "addr:housenumber": "8D",
+    "addr:postcode": "34-500",
+    "addr:street": "Zofii i Witolda Paryskich",
+    "addr:street:sym_ul": "39405",
+    "name": "Rozetka Resort",
+    "source:addr": "mzakopane.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 5227736849,
+  "lat": 49.2967800,
+  "lon": 19.9840700,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:city:simc": "0963773",
+    "addr:housenumber": "8E",
+    "addr:postcode": "34-500",
+    "addr:street": "Zofii i Witolda Paryskich",
+    "addr:street:sym_ul": "39405",
+    "name": "Rozetka Resort",
+    "source:addr": "mzakopane.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 5832847490,
+  "lat": 49.2891971,
+  "lon": 19.9609532,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:housenumber": "8",
+    "addr:postcode": "34-500",
+    "addr:street": "Kornela Makuszyńskiego",
+    "name": "Góralska Kryjówka",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 7274556402,
+  "lat": 49.2907731,
+  "lon": 20.0147619,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:housenumber": "30b",
+    "addr:street": "Cyrhla",
+    "name": "Srebrny Świerk",
+    "tourism": "chalet",
+    "website": "https://www.booking.com/hotel/pl/srebrny-swierk.pl.html"
+  }
+},
+{
+  "type": "node",
+  "id": 7664092658,
+  "lat": 49.3041157,
+  "lon": 20.0086056,
+  "tags": {
+    "name": "Domek Wierchowa",
+    "phone": "+48 66 186 32 32",
+    "tourism": "chalet",
+    "website": "https://wierchowa.pl/kontakt/"
+  }
+},
+{
+  "type": "node",
+  "id": 8829634503,
+  "lat": 49.2976538,
+  "lon": 19.9887548,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:housenumber": "8a",
+    "addr:postcode": "34-500",
+    "addr:street": "Oberconiówka",
+    "contact:facebook": "www.facebook.com/RozetkaResort",
+    "contact:instagram": "www.instagram.com/rozetkaresort",
+    "description": "Kwaterodawca 66/10 - UM Zakopane",
+    "email": "rozetkadomki@interia.pl",
+    "mobile": "+48 606 688 507",
+    "name": "Domek Regionalny Rozetka",
+    "phone": "+48 182 011 481",
+    "tourism": "chalet",
+    "website": "https://www.domki-rozetka.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 8829634511,
+  "lat": 49.2980349,
+  "lon": 19.9833899,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:postcode": "34-500",
+    "addr:street": "Zofii i Witolda Paryskich",
+    "description": "Kwaterodawca 362/21 - UM Zakopane",
+    "name": "Stylowa Chata",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 9001148920,
+  "lat": 49.2927318,
+  "lon": 20.0087590,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:housenumber": "52g",
+    "addr:postcode": "34-500",
+    "addr:street": "Cyrhla",
+    "name": "Domek Polny Kwiat",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 9442799979,
+  "lat": 49.3208624,
+  "lon": 19.9517949,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:housenumber": "196b",
+    "addr:postcode": "34-511",
+    "addr:street": "Gubałówka",
+    "name": "Domki na Gubałówce",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 10559709139,
+  "lat": 49.3302106,
+  "lon": 20.0436719,
+  "tags": {
+    "name": "Willa Pawlikowskich",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 11073263193,
+  "lat": 49.3395440,
+  "lon": 20.1013686,
+  "tags": {
+    "addr:city": "Bukowina Tatrzańska",
+    "addr:housenumber": "94",
+    "addr:postcode": "34-530",
+    "addr:street": "Tadeusza Kościuszki",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "email": "manager@schroniskobukowina.pl",
+    "name": "Schronisko Bukowina",
+    "opening_hours": "Mo-Su 12:00-22:00",
+    "panoramax": "590c3f48-0235-4cad-8318-2a372995d7f0",
+    "panoramax:0": "1830b428-60a5-46d1-9818-40b109d472ff",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:qr_code": "no",
+    "phone": "+48 732 124 111",
+    "reservation": "no",
+    "strapline": "Tak, to my",
+    "website": "https://restauracja.schroniskobukowina.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 11146302705,
+  "lat": 49.2916576,
+  "lon": 19.9606879,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Harnasiowa chata"
+  }
+},
+{
+  "type": "node",
+  "id": 11207092629,
+  "lat": 49.3358826,
+  "lon": 20.0061569,
+  "tags": {
+    "contact:phone": "+48 18 207 42 22",
+    "name": "CHAŁUPA - Pokoje Gościnne",
+    "tourism": "chalet",
+    "website": "https://chalupa-pokoje-goscinne.business.site/"
+  }
+},
+{
+  "type": "node",
+  "id": 12083067006,
+  "lat": 49.2898451,
+  "lon": 19.9794159,
+  "tags": {
+    "operator": "Willa Anda",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 12083067007,
+  "lat": 49.2899194,
+  "lon": 19.9793516,
+  "tags": {
+    "operator": "Willa Anda",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 12083067008,
+  "lat": 49.2899894,
+  "lon": 19.9792782,
+  "tags": {
+    "operator": "Willa Anda",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 12985903992,
+  "lat": 49.2930601,
+  "lon": 19.9549741,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:housenumber": "34a",
+    "addr:postcode": "34-500",
+    "addr:street": "Krupówki",
+    "amenity": "restaurant",
+    "name": "Bistro Schronisko Krupówki",
+    "opening_hours": "Mo-Su 12:00-20:00",
+    "phone": "+48 727 456 545",
+    "website": "https://schroniskokrupowki.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 13616064849,
+  "lat": 49.3238978,
+  "lon": 20.0181719,
+  "tags": {
+    "addr:city": "Poronin",
+    "addr:housenumber": "17",
+    "addr:postcode": "34-520",
+    "addr:street": "Jesionkówka",
+    "mobile": "+48 880 736 084",
+    "name": "Smrekowa Ostoja",
+    "reservation": "recommended",
+    "tourism": "chalet",
+    "website": "https://smrekowaostoja.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 13777646244,
+  "lat": 49.2846784,
+  "lon": 19.9866606,
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:housenumber": "21",
+    "addr:postcode": "34-500",
+    "addr:street": "Oswalda Balzera",
+    "amenity": "restaurant",
+    "name": "Eko Chatka",
+    "opening_hours": "Mo-Fr 10:00-15:00,Sa-Su 10:00-17:00"
+  }
+},
+{
+  "type": "way",
+  "id": 130940212,
+  "center": {
+    "lat": 49.3303593,
+    "lon": 20.0428171
+  },
+  "nodes": [
+    6200871956,
+    1441543032,
+    1441543066,
+    1441543055,
+    1441543051,
+    6200871955,
+    6200871956
+  ],
+  "tags": {
+    "addr:city": "Poronin",
+    "addr:city:simc": "0468810",
+    "addr:housenumber": "4C",
+    "addr:postcode": "34-520",
+    "addr:street": "Kośne Hamry",
+    "addr:street:sym_ul": "09593",
+    "building": "yes",
+    "name": "Górska Osada",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 130940226,
+  "center": {
+    "lat": 49.3302018,
+    "lon": 20.0427692
+  },
+  "nodes": [
+    6200871954,
+    1441543063,
+    1441543040,
+    1441543036,
+    1441543038,
+    6200871953,
+    6200871952,
+    6200871951,
+    6200871954
+  ],
+  "tags": {
+    "addr:city": "Poronin",
+    "addr:city:simc": "0468810",
+    "addr:housenumber": "4D",
+    "addr:postcode": "34-520",
+    "addr:street": "Kośne Hamry",
+    "addr:street:sym_ul": "09593",
+    "building": "yes",
+    "name": "Górska Osada",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 184072780,
+  "center": {
+    "lat": 49.2452085,
+    "lon": 20.0061230
+  },
+  "nodes": [
+    3537915815,
+    3537915816,
+    3537915814,
+    3537915929,
+    3537915928,
+    3537915927,
+    3537915926,
+    3537915811,
+    3537915813,
+    3537915812,
+    3537915815
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "email": "betlejemka@pza.org.pl",
+    "fee": "yes",
+    "name": "Betlejemka",
+    "phone": "+48603424101",
+    "reservation": "yes",
+    "shower": "yes",
+    "source:building": "BDOT",
+    "stove": "yes",
+    "tourism": "chalet",
+    "website": "http://betlejemka.org.pl/betlejemka/"
+  }
+},
+{
+  "type": "way",
+  "id": 184188834,
+  "center": {
+    "lat": 49.2498820,
+    "lon": 19.9516824
+  },
+  "nodes": [
+    3537914191,
+    5896379267,
+    3537916493,
+    13018951641,
+    3537914190,
+    9514597545,
+    3537914189,
+    13018854677,
+    3537914192,
+    3537914191
+  ],
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:city:simc": "0963773",
+    "addr:housenumber": "4",
+    "addr:postcode": "34-500",
+    "addr:street": "Droga Brata Alberta",
+    "building": "yes",
+    "building:levels": "1",
+    "building:levels:underground": "1",
+    "fee": "yes",
+    "name": "Schronisko PTTK Hala Kondratowa",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "https://www.halakondratowa.pl/",
+    "wikidata": "Q9334393",
+    "wikipedia": "pl:Schronisko PTTK na Hali Kondratowej"
+  }
+},
+{
+  "type": "way",
+  "id": 250515533,
+  "center": {
+    "lat": 49.2851285,
+    "lon": 19.9885459
+  },
+  "nodes": [
+    3548702953,
+    3548700574,
+    3548706528,
+    3548700585,
+    3548700587,
+    3548706547,
+    3548702953
+  ],
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:city:simc": "0963773",
+    "addr:housenumber": "25A",
+    "addr:street": "Oswalda Balzera",
+    "addr:street:sym_ul": "33421",
+    "building": "yes",
+    "name": "Góralska Chata",
+    "source:addr": "mzakopane.e-mapa.net",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 250746663,
+  "center": {
+    "lat": 49.2136410,
+    "lon": 20.0487403
+  },
+  "nodes": [
+    3537914618,
+    3537911634,
+    3537914767,
+    10007501935,
+    3537914766,
+    3537914765,
+    3537911632,
+    3537914612,
+    3537911633,
+    3537914613,
+    3537914768,
+    3537914616,
+    3537914615,
+    3537911636,
+    11224699057,
+    3537911635,
+    3537914769,
+    3537914614,
+    3537911637,
+    3537914617,
+    3537914619,
+    3537911638,
+    3537911639,
+    3537914771,
+    3537914770,
+    3537914620,
+    3537914618
+  ],
+  "tags": {
+    "beds": "67",
+    "building": "yes",
+    "ele": "1670",
+    "material": "stone",
+    "name": "Schronisko PTTK w Dolinie Pięciu Stawów Polskich",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "power_supply": "yes",
+    "reservation": "recommended",
+    "roof:material": "wood",
+    "rooms": "13",
+    "start_date": "1954",
+    "tourism": "alpine_hut",
+    "website": "https://www.piecstawow.pl/",
+    "wikidata": "Q9334421",
+    "wikipedia": "pl:Schronisko PTTK w Dolinie Pięciu Stawów Polskich"
+  }
+},
+{
+  "type": "way",
+  "id": 253824570,
+  "center": {
+    "lat": 49.2337198,
+    "lon": 20.0956768
+  },
+  "nodes": [
+    3537914677,
+    3537914676,
+    4324784672,
+    4324784673,
+    2597128716,
+    4324784674,
+    4324784675,
+    3537911678,
+    3537911679,
+    4324784666,
+    4324784667,
+    4324784668,
+    4324784669,
+    4324784670,
+    4324784671,
+    3537914677
+  ],
+  "tags": {
+    "alt_name": "Schronisko w Starej Roztoce",
+    "building": "yes",
+    "loc_name": "Schronisko Roztockie",
+    "name": "Schronisko PTTK w Dolinie Roztoki",
+    "name:de": "Roztokahütte",
+    "name:hu": "Roztoka-menedékház",
+    "name:pl": "Schronisko PTTK w Dolinie Roztoki",
+    "name:sk": "Roztocká chalupa",
+    "official_name": "Schronisko PTTK im. Wincentego Pola w Dolinie Roztoki",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "short_name": "Schronisko Roztoka",
+    "source:geometry": "geoportal.gov.pl:ortofoto",
+    "source:name": "wikipedia",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/2845/schronisko_w_dolinie_roztoki.html",
+    "website": "https://www.schroniskoroztoka.com.pl/",
+    "wikidata": "Q9334423",
+    "wikipedia": "pl:Schronisko PTTK w Dolinie Roztoki"
+  }
+},
+{
+  "type": "way",
+  "id": 300719423,
+  "center": {
+    "lat": 49.2014275,
+    "lon": 20.0712602
+  },
+  "nodes": [
+    3537911191,
+    3537911190,
+    3537911624,
+    3537911192,
+    3537911625,
+    3537914694,
+    5545942433,
+    5545942434,
+    3537911191
+  ],
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:postcode": "34-500",
+    "alt_name": "Morskie Oko",
+    "building": "yes",
+    "elevation": "1410",
+    "heritage": "2",
+    "heritage:operator": "nid",
+    "historic": "building",
+    "image": "https://commons.wikimedia.org/wiki/File:Schronisko_morskie_oko.jpg",
+    "name": "Schronisko PTTK Morskie Oko",
+    "name:de": "Meeraughütte",
+    "name:hu": "Halas-tavi menedékház",
+    "name:lt": "Kalnų namelis",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 18 207 76 09",
+    "ref:nid": "210/76",
+    "start_date": "1908",
+    "teryt:simc": "0418432",
+    "tourism": "alpine_hut",
+    "website": "https://schroniskomorskieoko.pl/",
+    "wikidata": "Q3475532",
+    "wikipedia": "pl:Schronisko PTTK nad Morskim Okiem"
+  }
+},
+{
+  "type": "way",
+  "id": 300719425,
+  "center": {
+    "lat": 49.2020454,
+    "lon": 20.0707967
+  },
+  "nodes": [
+    3537914607,
+    3537914605,
+    3537914606,
+    3537914608,
+    3537914607
+  ],
+  "tags": {
+    "building": "yes",
+    "heritage": "2",
+    "heritage:operator": "nid",
+    "historic": "building",
+    "name": "Stare Schronisko PTTK Morskie Oko",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "ref:nid": "211/76",
+    "tourism": "alpine_hut",
+    "website": "https://schroniskomorskieoko.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 304279128,
+  "center": {
+    "lat": 49.2937573,
+    "lon": 19.9360029
+  },
+  "nodes": [
+    3088109986,
+    3088109976,
+    3088109972,
+    3088109981,
+    3088109982,
+    3088109986
+  ],
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:housenumber": "1",
+    "addr:street": "Ubocz",
+    "building": "yes",
+    "name": "Willa Schodnica",
+    "source": "emuia.gugik.gov.pl",
+    "tourism": "chalet",
+    "website": "https://www.willaschodnica.nocujmy.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 330749701,
+  "center": {
+    "lat": 49.2863770,
+    "lon": 19.9433670
+  },
+  "nodes": [
+    3377472866,
+    3377472863,
+    3377472864,
+    3377472865,
+    3377472866
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 330749702,
+  "center": {
+    "lat": 49.2862585,
+    "lon": 19.9433345
+  },
+  "nodes": [
+    3377472869,
+    3377472870,
+    3377472867,
+    3377472868,
+    3377472869
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 331939692,
+  "center": {
+    "lat": 49.2872107,
+    "lon": 19.9481771
+  },
+  "nodes": [
+    3390377062,
+    3390377026,
+    3390377025,
+    3390377005,
+    3390377004,
+    3390377008,
+    11317579354,
+    3390377007,
+    3390377034,
+    3390377035,
+    3390377066,
+    3390377067,
+    3390377060,
+    11317579353,
+    3390377062
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 331939771,
+  "center": {
+    "lat": 49.2873436,
+    "lon": 19.9481895
+  },
+  "nodes": [
+    11317579352,
+    3390377081,
+    3390377086,
+    3390377107,
+    3390377106,
+    11317579351,
+    3390377115,
+    3390377111,
+    11317579352
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 331939820,
+  "center": {
+    "lat": 49.2870105,
+    "lon": 19.9481297
+  },
+  "nodes": [
+    3390376961,
+    3390376911,
+    3390376914,
+    3390376906,
+    3390376912,
+    3390376965,
+    3390376960,
+    3390376969,
+    3390376961
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "source:building": "BDOT",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 347519068,
+  "center": {
+    "lat": 49.3020524,
+    "lon": 20.1167627
+  },
+  "nodes": [
+    3537922998,
+    9408201124,
+    9408201125,
+    3537922994,
+    13006289789,
+    3537921744,
+    3537922998
+  ],
+  "tags": {
+    "addr:city": "Brzegi",
+    "addr:city:simc": "0418366",
+    "addr:housenumber": "20",
+    "addr:postcode": "34-532",
+    "addr:street": "Głodówka",
+    "bbq": "yes",
+    "beds": "98",
+    "building": "hotel",
+    "ele": "1120",
+    "email": "biuro@glodowka.com.pl",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Schronisko Głodówka",
+    "operator": "ZHP",
+    "phone": "+48 18 2077188",
+    "power_supply": "yes",
+    "reservation": "recommended",
+    "roof:shape": "pyramidal",
+    "rooms": "20",
+    "shower": "yes",
+    "smoking": "outside",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "https://glodowka.com.pl/",
+    "wikidata": "Q9334360",
+    "wikipedia": "pl:Schronisko Górskie ZHP „Głodówka”"
+  }
+},
+{
+  "type": "way",
+  "id": 358407058,
+  "center": {
+    "lat": 49.2434181,
+    "lon": 20.0071598
+  },
+  "nodes": [
+    3633305009,
+    3633305010,
+    3633305011,
+    5810136954,
+    3633305012,
+    3633305013,
+    3633305014,
+    3633305017,
+    3633305018,
+    3633305019,
+    3633305020,
+    3633305021,
+    3633305022,
+    3633305009
+  ],
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:city:simc": "0963773",
+    "addr:housenumber": "1",
+    "addr:postcode": "34-500",
+    "addr:street": "Hala Gąsienicowa",
+    "addr:street:sym_ul": "29040",
+    "building": "yes",
+    "capacity": "110",
+    "ele": "1500",
+    "internet_access": "wlan",
+    "name": "Murowaniec",
+    "name:hu": "Murowaniec menedékház",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "shower": "yes",
+    "source": "survey",
+    "source:addr": "mzakopane.e-mapa.net",
+    "tourism": "alpine_hut",
+    "website": "https://murowaniec.com",
+    "wikidata": "Q9334426",
+    "wikipedia": "pl:Schronisko PTTK „Murowaniec”"
+  }
+},
+{
+  "type": "way",
+  "id": 550250799,
+  "center": {
+    "lat": 49.2864905,
+    "lon": 19.9434155
+  },
+  "nodes": [
+    5314795692,
+    5314795691,
+    12891838742,
+    12891838741,
+    12891838740,
+    12891838739,
+    5314795690,
+    5314795693,
+    5314795692
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 765223869,
+  "center": {
+    "lat": 49.3017701,
+    "lon": 19.9491331
+  },
+  "nodes": [
+    7147166490,
+    7147166489,
+    7147166488,
+    7147166487,
+    7147166490
+  ],
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:street": "Bilinówka",
+    "building": "yes",
+    "capacity": "4",
+    "email": "misiachata@gmail.com",
+    "internet_access": "wlan",
+    "name": "Misia Chata",
+    "phone": "+48 664 698 765",
+    "shower": "yes",
+    "tourism": "chalet",
+    "view": "mountain",
+    "website": "https://www.booking.com/hotel/pl/misia-chata"
+  }
+},
+{
+  "type": "way",
+  "id": 1135088433,
+  "center": {
+    "lat": 49.2835192,
+    "lon": 19.9674767
+  },
+  "nodes": [
+    10581203374,
+    10581203373,
+    10581203372,
+    10581203371,
+    10581203374
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1135088438,
+  "center": {
+    "lat": 49.2832382,
+    "lon": 19.9680157
+  },
+  "nodes": [
+    10581203409,
+    10581203408,
+    10581203407,
+    10581203406,
+    10581203409
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+}
+
+  ]
+}
