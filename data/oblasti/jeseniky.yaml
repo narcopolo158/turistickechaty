@@ -1,0 +1,131 @@
+# Oblast Jeseníky — šestá oblast průvodce (pověření Michala 8. 8. 2026:
+# „můžeš se pustit do beskyd a jeseníku").
+#
+# ROZSAH. Okno dotazu (scripts/oblasti.ts) kryje jesenickou oblast vcelku:
+# Hrubý Jeseník, Zlatohorskou vrchovinu, Hraběšickou hornatinu, Rychlebské
+# hory a Králický Sněžník na české straně, na polské Góry Opawskie a Masyw
+# Śnieżnika — tedy přeshraniční pokračování týchž jednotek (princip „pohoří
+# vcelku", rozhodnutí Michala 20. 7. 2026).
+# VĚDOMĚ MIMO OKNO jsou polské GÓRY BYSTRZYCKIE, kde katalog drží dvě
+# schroniska (Jagodna, Pod Muflonem). Leží západně od Śnieżniku ve Středních
+# Sudetech a do jesenické oblasti je nepřiřazuje žádný pramen, který jsme
+# našli — je to rozhodnutí o rozsahu → Michal. Zapisuje se to výslovně, aby
+# to nebyl tichý miss (vzor rakouské strany Šumavy).
+# NÍZKÝ JESENÍK na východě do oblasti nepatří vůbec: je to jiný celek
+# a hory v našem smyslu to nejsou.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Jeseníky
+slug: jeseniky
+typ: pohori
+zeme: cz
+
+sklonovani:
+  druhy: Jeseníků
+  sesty: Jeseníkách
+
+charakteristika: >-
+  Druhé nejvyšší pohoří České vysočiny a jediné vedle Krkonoš, kde se
+  hřebeny zvedají nad hranici lesa. Nad zhruba třinácti sty metry přechází
+  les pozvolna v horské bezlesí, které se drží na Pradědu, Keprníku
+  a Šeráku — a právě do těch výšek si sem turistické spolky postavily řadu
+  chat, které stojí dodnes. Turistika tu má nezvykle starou tradici:
+  Moravskoslezský sudetský horský spolek vydal mapu Jeseníků už roku 1881
+  a postavil desítky cest, chat a rozhleden.
+overeniCharakteristika:
+  source: >-
+    Členění a výška: ejeseniky.com (Geomorfologie, čteno 8. 8. 2026) vede
+    Hrubý Jeseník jako „druhé nejvyšší pohoří v České vysočině" a jako další
+    celky oblasti Králický Sněžník („stejnojmenný nejvyšší vrchol dosahuje
+    výšky 1 423 m.n.m.") a Rychlebské hory („třetím velkým, byť již
+    podstatně nižším pohořím Jesenické oblasti"). Horní hranice lesa: AOPK,
+    charakteristika CHKO Jeseníky (čteno 8. 8. 2026) — „Přechod k alpínskému
+    bezlesí zpravidla probíhá pozvolna přes tzv. difúzní (parkovou) horní
+    hranici lesa v polohách mezi 1 300–1 400 m n. m." a „Nejcennější místa
+    v CHKO Jeseníky jsou chráněna v národních přírodních rezervacích Praděd,
+    Rejvíz, Šerák-Keprník a Rašeliniště Skřítek". Spolek: Radio Prague
+    International (čteno 8. 8. 2026) — „Turistickou mapu Johana Rippera
+    vydal Moravskoslezský sudetský horský spolek" a spolek „se zasloužil
+    i o vybudování desítek chodníků, chat a rozhleden". SROVNÁNÍ
+    S KRKONOŠEMI („jediné vedle Krkonoš, kde…") je NAŠE, plyne z vlastního
+    korpusu, ne z pramene. POJEM „ARKTOALPÍNSKÁ TUNDRA" ZDE VĚDOMĚ NENÍ:
+    rešerše 8. 8. 2026 ho v žádném prameni o Jeseníkách nenašla, doložený je
+    jen pro Krkonoše (krnap.cz, ziva.avcr.cz) — píšeme proto „horské
+    bezlesí", jak to má AOPK.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Praděd
+  vyska: 1491
+  source: >-
+    turistika.cz (čteno 8. 8. 2026): „Nadmořská výška: 1491 metrů nad
+    mořem." ROZPOR PRAMENŮ, nesrovnaný: ejeseniky.com uvádí „Praděd
+    (1 492 m.n.m.)" a PeakVisor 1499 m. Zapsáno 1491 dle konvence
+    z 27. 7. 2026 (při rozporu nižší číslo, rozpor přiznat). Souřadnice
+    okolo 50.083 / 17.233 (turistika.cz, výtah ze sekce GPS).
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pověření Michala („můžeš se pustit do beskyd
+  a jeseníku") v rámci čtyřhodinového samostatného bloku. Konfigurace okna
+  je v scripts/oblasti.ts (slug jeseniky, zeme CZ+PL, sedm katalogových
+  názvů pohoří), kotvy okna a jejich prameny v komentáři tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `jeseniky`. Ze sandboxu na Overpass
+  nedosáhneme (ověřeno znovu 8. 8. 2026 — HTTP 000 přes proxy).
+
+  CO UŽ VÍME BEZ OVERPASSU — externí katalog drží v okně 22 objektů, všechny
+  s doloženým stravováním. Hrubý Jeseník 10: Hotel Praděd 1491 m, Kurzovní
+  chata 1335 m, Chata Jiřího na Šeráku 1325 m, Chata Barborka 1320 m,
+  Švýcárna 1304 m, Ovčárna 1300 m, Horský hotel Figura 1300 m, Chata
+  Sabinka 1300 m, Červenohorské sedlo 1013 m, Chata Ramzová 760 m.
+  Zlatohorská vrchovina 2 (Chata Rejvíz, Horská chata Férovka), Hraběšická
+  hornatina 1 (Motorest Skřítek), Rychlebské hory 3 (Paprsek 1022 m,
+  Smrčník, Kaste), Králický Sněžník 4 (Slaměnka 1116 m, Návrší, Kladské
+  sedlo, Horská chata Sněžník), Masyw Śnieżnika 2 (Schronisko Na Śnieżniku
+  1218 m, Na Iglicznej), Góry Opawskie 1 (Pod Kopą Biskupią).
+  POZORUHODNÉ: devět z deseti objektů Hrubého Jeseníku stojí nad 1000 m
+  a šest z nich nad 1300 m — je to výškově nejvýš položená skupina celého
+  katalogu mimo Tatry. Ta hustota chat v pradědské oblasti (Praděd,
+  Kurzovní, Barborka, Švýcárna, Ovčárna, Figura, Sabinka do sebe vidí)
+  bude chtít při triáži pozornost: hrozí, že některé jsou části jednoho
+  areálu — vzor Kleti a Svatoboru, kde se dva objekty sloučily do jednoho
+  profilu.
+
+  ROZHODNUTÍ O ROZSAHU, KTERÉ ČEKÁ NA MICHALA: polské GÓRY BYSTRZYCKIE
+  jsou VĚDOMĚ MIMO OKNO. Katalog v nich drží dvě schroniska — Schronisko
+  Jagodna (kotva 50.252 / 16.565) a Schronisko Pod Muflonem. Leží západně
+  od Śnieżniku ve Středních Sudetech a do jesenické oblasti je nepřiřazuje
+  žádný pramen, který jsme našli. Zapisuje se to sem, ne jen do komentáře
+  hlavičky, aby to nebyl tichý miss a aby to viděl i stroj (drží to test
+  tests/int/oblasti-beskydy-jeseniky.int.spec.ts). Vzor rakouské strany
+  Šumavy, která je taky mimo okno a s poznámkou. Nízký Jeseník na východě
+  do oblasti nepatří vůbec — jiný celek a hory v našem smyslu to nejsou.
+
+  CHYBA V MÉM VLASTNÍM ZADÁNÍ REŠERŠE, chycená rešeršistou — stojí za zápis.
+  Zadal jsem, že „Králický Sněžník 1424 m a Śnieżnik 1425 m jsou DVA různé
+  vrcholy" a nechal je rozlišit. Prameny (PeakVisor, sneznik.cz,
+  ejeseniky.com) shodně říkají, že je to JEDEN vrchol na česko-polské
+  hranici s českým a polským jménem, jehož výšku prameny uvádějí trojmo
+  (1423 / 1424 / 1425 m). V katalogu jsou „Králický Sněžník" a „Masyw
+  Śnieżnika" dvě jednotky, protože je to masiv ze dvou stran hranice, ne
+  dva kopce. Je to týž druh omylu jako moje přepsaná délka u Menauerů
+  o hodinu dřív: chyba v zadání se propíše do dat, když ji nikdo nechytí —
+  a chytit ji dokáže právě požadavek na pramen u každého údaje.
+
+  CHKO JESENÍKY vyhlášena 19. 6. 1969 (AOPK i časopis Ochrana přírody,
+  čteno 8. 8. 2026); rozlohu dva prameny téhož správce uvádějí různě —
+  744 km² (AOPK) a 740 km² (Ochrana přírody). Śnieżnicki Park Krajobrazowy
+  na polské straně vyhlášen 1981 na 28 800 ha (dzpk.pl, čteno 8. 8. 2026).
+
+  DÉLKA JESENICKÉ HŘEBENOVKY SE NEPODAŘILA DOLOŽIT: turistika.cz vede jeden
+  úsek do sedla Skřítek jako 33,3 km, což není délka celé magistrály.
+  Nezapisuje se.
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka.

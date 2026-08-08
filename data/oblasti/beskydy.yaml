@@ -1,0 +1,144 @@
+# Oblast Beskydy — pátá oblast průvodce (pověření Michala 8. 8. 2026:
+# „můžeš se pustit do beskyd a jeseníku").
+#
+# PROČ PRÁVĚ BESKYDY: podle Michalova měření nad externím katalogem
+# z 28. 7. 2026 vedly ze všech nezapočatých pohoří (35 objektů, 10 známek,
+# 7 razítek). To číslo 35 se v katalogu skládá přesně z Moravskoslezských
+# Beskyd (18), Beskidu Śląskiego (8) a Beskidu Żywieckiego (9) — a je to
+# tedy Michalova vlastní definice rozsahu, ne naše.
+#
+# ROZSAH — CO JE ROZHODNUTO A CO NE. Okno dotazu (scripts/oblasti.ts) kryje
+# celé Západní Beskydy přes tři země, tedy vedle Michalových tří jednotek
+# i Slezské Beskydy, Jablunkovské mezihoří, Kysucké a Oravské Beskydy —
+# to jsou části téhož hřebenového celku a princip „přeshraniční pohoří
+# vcelku" (rozhodnutí Michala 20. 7. 2026) na ně platí stejně.
+# NEROZHODNUTO zůstává, jestli do průvodce jako Beskydy patří i JAVORNÍKY
+# a VSETÍNSKÉ VRCHY: geomorfologicky to nejsou části Moravskoslezských
+# Beskyd, ale souřadné celky v rámci nadřazené podsoustavy Západní Beskydy
+# (moravske-karpaty.cz). Katalog v nich drží sedm objektů s doloženým
+# stravováním (Kohútka, Portáš, Čarták, Vsacký Cáb, Kusalíno, Kmínek,
+# Čerenka). Okno je proto zahrnuje — najít je a nechat ve frontě je lepší
+# než je nenajít vůbec — ale povyšovat se nebudou, dokud Michal
+# nerozhodne, jestli jsou Beskydy, nebo vlastní oblast po vzoru
+# Ještědského hřbetu.
+#
+# Poctivost: superlativy jen s dokladem; odvozená čísla (počty chat,
+# žebříčky) se sem NIKDY nepíšou — počítají se při buildu z profilů.
+nazev: Beskydy
+slug: beskydy
+typ: pohori
+zeme: cz
+
+# Skloňované tvary názvu do vět na webu. Pozor: Beskydy jsou pomnožné
+# ženské, tvary se neshodují s ostatními oblastmi.
+sklonovani:
+  druhy: Beskyd
+  sesty: Beskydech
+
+charakteristika: >-
+  Nejzápadnější díl Karpat, hřebeny a kopce rozložené přes česko-polsko-
+  slovenské pomezí od Vsetínska po Babí horu. Proti pohořím na severu Česka
+  je to jiný typ hor: ne jeden hřeben nad městem, ale rozsáhlá pastevecká
+  krajina s dlouhými zaoblenými hřbety, salašemi a osídlením, které sem
+  přinesla valašská kolonizace v šestnáctém a sedmnáctém století. Chataření
+  tu má vlastní zakladatelskou historii — Pohorská jednota Radhošť z roku
+  1884 a německý Beskidenverein z roku 1893 si o hory doslova soupeřily
+  a jejich stavby stojí na hřebenech dodnes.
+overeniCharakteristika:
+  source: >-
+    Členění: moravske-karpaty.cz (Geomorfologie, čteno 8. 8. 2026) vede
+    Moravskoslezské Beskydy, Javorníky a Hostýnsko-vsetínskou hornatinu
+    jako souřadné celky v rámci podsoustavy Západní Beskydy — načtený text
+    měl poškozenou diakritiku, proto je to výtah, ne doslovný citát.
+    Valašská kolonizace: Encyklopedie Muzea regionu Valašsko (čteno
+    8. 8. 2026) — „Příchod valašských pastevců s jejich stády ovcí a koz
+    v 16. století" a „rozšíření salašnického chovu koz a ovcí na místních
+    horách". Spolky: Deník (čteno 8. 8. 2026) k Pohorské jednotě Radhošť
+    — „vznikl… na podzim roku 1884" a „první český turistický a sportovní
+    spolek v tehdejších zemích Rakousko-Uherska"; anglická Wikipedie
+    k Beskidenvereinu (čteno 8. 8. 2026) — spolek založen 28. února 1893
+    ve Frýdku a postavil chaty na Javorovém (1895), Lysé hoře (1895),
+    Szyndzielni (1897) a Babí hoře (1905). Slovo „soupeřily" je NAŠE
+    shrnutí obou pramenů (český spolek vznikl podle Deníku z obavy před
+    německou turistickou expanzí na Radhošť), ne citát. Nejzápadnější díl
+    Karpat: nedoloženo doslovným citátem, plyne z geomorfologického
+    zařazení do Západních Beskyd / Karpat.
+  verified: false
+  checked: '2026-08-08'
+
+nejvyssiHora:
+  nazev: Babia Góra
+  vyska: 1725
+  source: >-
+    PeakVisor (čteno 8. 8. 2026): Babia Góra, „highest peak of this part of
+    the Carpathian Mountains", „situated on the border between Poland and
+    Slovakia in the Western Beskid Mountains", souřadnice 49.573 / 19.530,
+    výška 1725 m. POZOR NA VÝKLAD: je to nejvyšší hora celé oblasti, jak ji
+    vede naše okno, tedy včetně polského Beskidu Żywieckiego. Nejvyšší hora
+    ČESKÉ části je Lysá hora — a její výšku prameny uvádějí tři různě
+    (1323 m beskydyportal.cz, 1324 m tisicovky.cz, 1328 m PeakVisor), takže
+    ji do dat nezapisujeme, dokud se nesrovná.
+  verified: false
+  checked: '2026-08-08'
+
+topCile: []
+
+interniPoznamky: >-
+  Založeno 8. 8. 2026 na pověření Michala („můžeš se pustit do beskyd
+  a jeseníku") v rámci čtyřhodinového samostatného bloku. Konfigurace okna
+  je v scripts/oblasti.ts (slug beskydy, zeme CZ+PL+SK, devět katalogových
+  názvů pohoří), kotvy okna a jejich prameny jsou v komentáři tamtéž.
+
+  DALŠÍ KROK JE MICHALŮV KLIK: Actions → „DATA-01: OSM export chat (dle
+  oblasti)" → Run workflow → oblast `beskydy`. Ze sandboxu na Overpass
+  nedosáhneme (ověřeno znovu 8. 8. 2026 — HTTP 000 přes proxy), takže
+  kandidáty nemáme jak stáhnout; všechno ostatní je připravené. Po běhu
+  následuje triáž kandidátů (`npx tsx scripts/triaz-kandidatu.ts beskydy`)
+  a povyšování proti druhému prameni.
+
+  CO UŽ VÍME BEZ OVERPASSU — externí katalog drží v okně 48 objektů, všechny
+  s doloženým stravováním: Moravskoslezské Beskydy 18 (Bezručova chata na
+  Lysé hoře 1323 m, Chata Emil Zátopek – Maraton 1320 m, Chata na Radhošti
+  1129 m, Libušín a Maměnka na Pustevnách 1018 m, Chata Prašivá, Kotař,
+  Ropička, Slavíč, Kamenitý, Kozubová, Ostrý, Skalka, Severka, Javorový,
+  Martiňák, Mír, Hotel Tanečnica), Beskid Śląski 8 (schroniska na Stożku,
+  Soszowie, Równicy, Przysłop pod Baranią Górą, Skrzyczne, Klimczok,
+  Błatnia, Szyndzielnia), Beskid Żywiecki 9 (Wielka Racza, Przegibek,
+  bacówki Rycerzowa a Krawcowy Wierch, Rysianka, Lipowska, Hala Miziowa,
+  Markowe Szczawiny, Hala Krupowa), Javorníky 3, Vsetínské vrchy 3,
+  Kysucké Beskydy 2, Oravské Beskydy 2, Slezské Beskydy 1 (Bahenec),
+  Jablunkovské mezihoří 1 (Gírová). Je to hustota srovnatelná s Krkonošemi
+  a nejvíc PTTK schronisek mimo Krkonoše — polská strana je tu silná.
+
+  ROZHODNUTÍ O ROZSAHU, KTERÉ ČEKÁ NA MICHALA: patří do průvodce jako
+  Beskydy i JAVORNÍKY a VSETÍNSKÉ VRCHY? Geomorfologicky to nejsou části
+  celku Moravskoslezské Beskydy, ale souřadné celky v rámci nadřazené
+  podsoustavy Západní Beskydy (moravske-karpaty.cz, čteno 8. 8. 2026).
+  Katalog v nich drží sedm objektů s doloženým stravováním — Kohútka,
+  Portáš, Čarták, Vsacký Cáb, Kusalíno, Kmínek, Čerenka. Okno je proto
+  ZAHRNUJE (najít je a nechat ve frontě je lepší než je nenajít vůbec),
+  ale POVYŠOVAT SE NEBUDOU, dokud Michal nerozhodne, jestli jsou Beskydy,
+  nebo vlastní oblast po vzoru Ještědského hřbetu. Zapisuje se to sem,
+  ne jen do komentáře hlavičky, aby to viděl i stroj (drží to test
+  tests/int/oblasti-beskydy-jeseniky.int.spec.ts).
+
+  DVA DOLOŽENÉ PŘÍBĚHY DO PROFILŮ, AŽ NA NĚ PŘIJDE ŘADA. (1) Libušín na
+  Pustevnách, Jurkovičova stavba, vyhořel v noci z 2. na 3. března 2014
+  a po obnově byl znovu otevřen 30. července 2020 v pravé poledne (Deník,
+  čteno 8. 8. 2026) — patří to k profilu Libušína i do atlasu zaniklých
+  a obnovených. (2) Chata na Babí hoře z roku 1905 byla podle anglické
+  Wikipedie „the highest hut in the Carpathians until the 1930s"; jestli je
+  dnešní Markowe Szczawiny touž budovou, se musí doložit, ne dovodit.
+
+  DÁLKOVÁ TRASA: Główny Szlak Beskidzki měří 519 km z Ustronia do
+  Wołosatého a je dle PTTK nejdelší značená pěší trasa v Polsku (cotg.pttk.pl,
+  čteno 8. 8. 2026); polskou částí oblasti prochází. Česká hlavní beskydská
+  hřebenová trasa se v pramenech, které se ze sandboxu načetly, číslem
+  nepodařilo doložit — nezapisuje se.
+
+  CHKO BESKYDY vyhlášena výnosem ministerstva kultury z 5. března 1973
+  s účinností k 30. 3. 1973, rozloha 1200 km² (AOPK, čteno 8. 8. 2026).
+
+  HERO FOTKA CHYBÍ — doplní ji redakční výběr (FOTO-01) nebo mediabanka,
+  vzor Šumavy. Skloňování je ověřené ručně (pomnožné ženské: „Beskyd",
+  „Beskydech").

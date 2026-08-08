@@ -154,6 +154,111 @@ export const OBLASTI: OblastKonfig[] = [
     // neptá, a mimo okno — doložený miss bez užitku.
     katalogPohori: ['Šumava', 'Bayerischer Wald'],
   },
+  {
+    slug: 'beskydy',
+    nazev: 'Beskydy',
+    // Pátá oblast (pověření Michala 8. 8. 2026: „můžeš se pustit do beskyd
+    // a jeseníku"). Podklad pro volbu je Michalovo měření z 28. 7. 2026,
+    // podle kterého Beskydy vedou — a jeho číslo 35 objektů se v externím
+    // katalogu skládá přesně z Moravskoslezských Beskyd (18), Beskidu
+    // Śląskiego (8) a Beskidu Żywieckiego (9). Tři země: Slovensko bylo do
+    // typu ZemeIso přidáno 30. 7. 2026 dopředu právě na Beskydy („beskydy
+    // budou mít část na Slovensku").
+    zeme: ['CZ', 'PL', 'SK'],
+    /**
+     * Okno kryje celé ZÁPADNÍ BESKYDY, ne jen geomorfologický celek
+     * „Moravskoslezské Beskydy". Kotvy okna jsou doložené souřadnice
+     * krajních objektů a vrcholů (prameny v data/oblasti/beskydy.yaml):
+     *   západ  18.00 — Vsacký Cáb (49.386 / 18.088), nejzápadnější objekt
+     *                  katalogu v celku
+     *   východ 19.75 — Hala Krupowa (49.625 / 19.653) a Polica
+     *                  (49.623 / 19.619) na východním konci Żywieckiego
+     *   sever  49.85 — Szyndzielnia (49.753 / 18.999) nad Bielskem-Białou
+     *   jih    49.25 — Kohútka (49.293 / 18.229) v Javorníkách
+     *
+     * Vědomé rozhodnutí o ROZSAHU OKNA (ne o publikaci!): dovnitř se berou
+     * i Javorníky a Vsetínské vrchy, které podle geomorfologického členění
+     * NEJSOU součástí celku Moravskoslezské Beskydy — jsou to souřadné
+     * celky v rámci nadřazené podsoustavy Západní Beskydy. Katalog v nich
+     * drží sedm objektů s doloženým stravováním (Kohútka, Portáš, Čarták,
+     * Vsacký Cáb, Kusalíno, Kmínek, Čerenka) a užší okno by je tiše
+     * vyřízlo. Bbox je jen vyhledávací okno; jestli ty objekty do
+     * PRŮVODCE patří jako Beskydy, nebo mají mít vlastní oblast po vzoru
+     * Ještědského hřbetu, je rozhodnutí o rozsahu → Michal (otázka
+     * v deníku 8. 8. 2026). Do té doby platí pravidlo z Ještědu naruby:
+     * radši je najít a nechat ve frontě než je nenajít vůbec.
+     *
+     * Okno zahrne i okraje Bielska-Białej a Żywce. Že dotaz přinese
+     * i městské hospody, vyřeší triáž — vzor okraje Liberce v okně
+     * Ještědského hřbetu.
+     */
+    bbox: { latMin: 49.25, lngMin: 18.0, latMax: 49.85, lngMax: 19.75 },
+    // 3D okno o kus užší z obou stran: západní konec (Vsetínské vrchy)
+    // a východní (Orawa pod Policí) už klesají do podhůří a kotlin.
+    bbox3d: { latMin: 49.3, lngMin: 18.1, latMax: 49.78, lngMax: 19.65 },
+    poznamka:
+      'pátá oblast (pověření Michala 8. 8. 2026) — Západní Beskydy vcelku přes tři země; rozsah vůči Javorníkům a Vsetínským vrchům čeká na rozhodnutí',
+    /**
+     * Katalogové názvy jednotek, které okno kryje. Je jich devět, protože
+     * „Beskydy" nejsou v katalogu jedno pohoří, ale skupina celků — a bez
+     * všech devíti by dohledávka podle jmen (DATA-01, druhý dotaz) minula
+     * právě ty objekty, které OSM tagovalo civilně.
+     */
+    katalogPohori: [
+      'Moravskoslezské Beskydy',
+      'Beskid Śląski',
+      'Beskid Żywiecki',
+      'Slezské Beskydy',
+      'Jablunkovské mezihoří',
+      'Kysucké Beskydy',
+      'Oravské Beskydy',
+      'Javorníky',
+      'Vsetínské vrchy',
+    ],
+  },
+  {
+    slug: 'jeseniky',
+    nazev: 'Jeseníky',
+    // Šestá oblast (pověření Michala 8. 8. 2026, tentýž pokyn jako
+    // u Beskyd). Přeshraniční s polskou stranou Sudet.
+    zeme: ['CZ', 'PL'],
+    /**
+     * Okno kryje jesenickou oblast od Králického Sněžníku po Zlatohorskou
+     * vrchovinu. Kotvy (prameny v data/oblasti/jeseniky.yaml):
+     *   západ  16.75 — Králický Sněžník / Śnieżnik (50.207 / 16.847);
+     *                  rezerva na západní úbočí masivu
+     *   východ 17.55 — Zlatohorská vrchovina za Biskupskou kupou
+     *                  (50.256 / 17.430)
+     *   sever  50.42 — severní konec Rychlebských hor u Javorníku a polské
+     *                  Góry Opawskie nad Biskupskou kupou
+     *   jih    49.93 — sedlo Skřítek (49.990 / 17.163) a Hraběšická
+     *                  hornatina pod ním
+     *
+     * CO JE VĚDOMĚ MIMO OKNO: polské Góry Bystrzyckie (katalog tam vede
+     * Schronisko Jagodna 50.252 / 16.565 a Schronisko Pod Muflonem). Leží
+     * ZÁPADNĚ od Śnieżnika ve Středních Sudetech a do jesenické oblasti je
+     * nepřiřazuje žádný pramen, který jsme našli — je to rozhodnutí
+     * o rozsahu → Michal. Zapisuje se to sem výslovně, aby to nebyl tichý
+     * miss: vzor rakouské strany Šumavy, která je taky mimo okno
+     * a s poznámkou. Nízký Jeseník na východě sem nepatří vůbec (jiný
+     * celek, ne hory v našem smyslu).
+     */
+    bbox: { latMin: 49.93, lngMin: 16.75, latMax: 50.42, lngMax: 17.55 },
+    // 3D okno mírně užší — severní konec Rychlebských hor u Javorníku už
+    // klesá do slezské nížiny.
+    bbox3d: { latMin: 49.96, lngMin: 16.8, latMax: 50.34, lngMax: 17.5 },
+    poznamka:
+      'šestá oblast (pověření Michala 8. 8. 2026) — jesenická oblast vcelku vč. polské strany; Góry Bystrzyckie vědomě mimo okno',
+    katalogPohori: [
+      'Hrubý Jeseník',
+      'Zlatohorská vrchovina',
+      'Hraběšická hornatina',
+      'Rychlebské hory',
+      'Králický Sněžník',
+      'Masyw Śnieżnika',
+      'Góry Opawskie',
+    ],
+  },
 ]
 
 export const oblastDleSlugu = (slug: string): OblastKonfig => {

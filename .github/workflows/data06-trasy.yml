@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
     inputs:
       oblast:
-        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet | sumava'
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet | sumava | beskydy | jeseniky'
         required: false
         default: 'krkonose'
       api:
