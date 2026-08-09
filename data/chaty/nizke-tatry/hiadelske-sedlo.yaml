@@ -1,0 +1,231 @@
+# Prístrešok v Hiadeľskom sedle — publikovaný profil Nízkých Tater
+# (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne;
+# katalogový objekt HUT-0155 („Útulňa Hiadeľské sedlo"). PRVNÍ POUŽITÍ
+# TYPU bivak V KORPUSU: otevřený přístřešek bez kamen na jednorázové
+# přenocování — není to útulňa v pravém smyslu a profil to říká.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani
+# návštěvou.
+
+nazev: Prístrešok v Hiadeľskom sedle
+slug: hiadelske-sedlo
+zeme: sk
+typ: bivak
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Hiadeľské sedlo
+    poznamka: jméno sedla, kterým se objekt běžně označuje (OSM name)
+  - nazev: Útulňa Hiadeľské sedlo
+    poznamka: >-
+      katalogové jméno; hiking.sk i cestasnp.sk ale objekt vedou jako
+      prístrešok, ne útulňu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.8620861
+lng: 19.3048967
+vyska: 1099
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/13290488954 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). VÝŠKA 1099 m: hiking.sk („Nadmorská
+    výška 1099 m n. m."), turistika.cz i domalenka.sk (vše čteno
+    9. 8. 2026); MENŠÍ ROZPOR, přiznaný: vrcholovka.cz nese v titulku
+    1105 m (stránka se nepodařila načíst, jen titulek). Poloha: travnaté
+    sedlo v západní části hlavního hřebene, křižovatka červené
+    hřebenovky E8 a modré značky.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    hiking.sk, profil tábořiště (čteno 9. 8. 2026): „Po obvode objektu je
+    široké sedenie, ktoré slúži ako pričňa pre štyroch ľudí."; „Podkrovie
+    prístrešku tvorí uzavretá nocľaháreň … s kapacitou cca 5 nocľažníkov."
+    Hřebenový přehled hiking.sk (léto 2021) shrnuje: „Poschodový prístrešok
+    chránený zo štyroch strán, nocľah 10 osôb na zemi a v podkroví."
+    KAPACITA SE NEZAPISUJE: 4 + „cca 5" proti souhrnným 10 — součet by byl
+    aritmetika redakce a údaje si mírně odporují; próza říká „asi
+    desítka míst". Cena: „bezplatné verejné horské táborisko" (hiking.sk).
+    Režim: „Sedlo je určené na jednorázové prenocovanie vo vlastnom stane,
+    nie ako kemp na dlhší pobyt." Louka sedla je Správou NAPANT vyhlášeným
+    tábořištěm pro stanování, bivakování a otevřený oheň; NAPANT: na území
+    národního parku „je zakázané táboriť, stanovať a bivakovať mimo
+    vyhradených miest".
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+overeniObcerstveni:
+  source: >-
+    Občerstvení žádné — bezobslužný otevřený přístřešek; pole se
+    nevyplňují. VODA: „3 upravené studničky (pod sedlom /1 minúta/,
+    v dolinke Dolné vodné /10 minút/, nad Grantami /20 minút/)" —
+    s výslovným varováním: „prameň v Hiadeľskom sedle je málo výdatný
+    a technický stav studničky umožňuje len pomalé naberanie vody"
+    (hiking.sk, čteno 9. 8. 2026); shodně cestasnp.sk („zdroje vody,
+    ktoré nie sú výdatné").
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    Trvale přístupný otevřený přístřešek — „je totiž otvorený a bez
+    piecky" (jesikazakova.com, čteno 9. 8. 2026); hiking.sk ho vede jako
+    „drevený prístrešok na jednorázové prenocovanie". Výslovnou větu
+    o celoročním provozu žádný pramen nenese, a tak se pole sezona
+    nevyplňuje. Správa: „Správa NAPANT-u Banská Bystrica" (hiking.sk);
+    NAPANT sedlo uvádí mezi vyhrazenými místy pro jednorázové přenocování
+    (červená TZT 0801). Nejčerstvější stavové údaje jsou z léta 2021;
+    novější zprávy o změnách se nenašly.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  web: https://www.napant.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 2008
+overeniHistorie:
+  source: >-
+    hiking.sk, profil tábořiště (čteno 9. 8. 2026): „Od augusta 2008 slúži
+    pre hrebeňovkárov nový drevený prístrešok na jednorázové prenocovanie.";
+    „Počas augusta 2008 vybudovala Základná organizácia Slovenského zväzu
+    ochrancov prírody a krajiny Nízke Tatry drevený prístrešok."
+    Financování: „v rámci grantového programu Nadácie Ekopolis – Živé
+    chodníky, dotovaného spoločnosťou Toyota" (hiking.sk); shodně
+    cestasnp.sk. Louku sedla zároveň Správa NAPANT vyhlásila oficiálním
+    tábořištěm. Starší stavby v sedle před rokem 2008 se v pramenech
+    nenašly.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 2008
+    udalost: >-
+      Ochránci přírody ze ZO SZOPK Nízke Tatry postavili v srpnu dřevěný
+      patrový přístřešek z grantového programu Živé chodníky Nadácie
+      Ekopolis; louku sedla vyhlásila Správa NAPANT oficiálním tábořištěm
+      s povoleným ohněm.
+    zdroj: >-
+      hiking.sk, profil tábořiště (čteno 9. 8. 2026) — stavba, stavebník,
+      financování i vyhlášení tábořiště; shodně cestasnp.sk.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Hiadeľské sedlo je jedno z mála míst národního parku Nízke Tatry,
+      kde je oficiálně povolené tábořit a rozdělat otevřený oheň.
+    kategorie: jine
+    zdroj: >-
+      cestasnp.sk (čteno 9. 8. 2026) — „jedno z miest v národnom parku
+      Nízke Tatry, kde je oficiálne povolené táborenie"; vyhlášení
+      tábořiště hiking.sk.
+  - text: >-
+      V sedle je kromě přístřešku i ohniště, kontejner, rozcestník,
+      informační tabule a kříž; u přístřešku suchá latrína.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk, profil tábořiště a hřebenový přehled léto 2021
+      (čteno 9. 8. 2026).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Otevřený patrový přístřešek z roku 2008 v travnatém sedle na západní
+  hřebenovce — bez kamen, zdarma a na jednu noc. Louka kolem je jedno
+  z mála míst národního parku, kde se smí oficiálně stanovat a rozdělat
+  oheň; voda je tu ale málo vydatná.
+text:
+  - >-
+    Hiadeľské sedlo je travnatá křižovatka červené hřebenovky a modré
+    značky v 1099 metrech, mezi Kozím chrbátem a Veľkou Chochuľou. Od
+    srpna 2008 tu stojí dřevěný patrový přístřešek, který postavila
+    Základná organizácia Slovenského zväzu ochrancov prírody a krajiny
+    Nízke Tatry z grantového programu Živé chodníky Nadácie Ekopolis;
+    louku sedla zároveň Správa národního parku vyhlásila oficiálním
+    tábořištěm pro stanování, bivakování a otevřený oheň — což je
+    v národním parku, kde jinde platí zákaz, vzácnost.
+  - >-
+    Katalogy objekt někdy vedou jako útulňu, ale to slovo slibuje víc,
+    než místo dává: je to otevřený přístřešek bez kamen, určený podle
+    hiking.sk „na jednorázové prenocovanie", ne jako kemp na delší pobyt.
+    Po obvodu je široké sezení, které poslouží jako pryčna pro čtyři
+    lidi, v podkroví je uzavřená noclehárna zhruba pro pět — hřebenový
+    přehled z léta 2021 mluví souhrnně o deseti místech na zemi
+    a v podkroví. Nocleh je zdarma.
+  - >-
+    Největší slabina sedla je voda. Studničky jsou tři — pod sedlem
+    minutu cesty, v dolince Dolné vodné deset minut a nad Grantami
+    dvacet —, ale hiking.sk výslovně varuje, že pramen v sedle „je málo
+    výdatný a technický stav studničky umožňuje len pomalé naberanie
+    vody". Kdo tu plánuje nocovat, ať nese vodu s sebou nebo počítá
+    s čekáním u pramene.
+  - >-
+    Přístupy podle hiking.sk: z Donovalů po červené hřebenovce přes Kečku
+    a Kozí chrbát za tři hodiny, od Veľkej Chochule po červené za hodinu
+    a čtyřicet minut, z Korytnice po modré za hodinu a čtyřicet minut,
+    z Hiadľa po modré za dvě hodiny a z Moštenice po žluté za tři a půl.
+  - >-
+    Údaje nesou hiking.sk, cestasnp.sk, napant.sk, domalenka.sk
+    a turistika.cz; polohu OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      hiking.sk, profil tábořiště — stavba 8/2008 (ZO SZOPK Nízke Tatry,
+      grant Ekopolis/Toyota), kapacita 4 + cca 5, zdarma, tři studničky
+      s varováním o vydatnosti, přístupové časy, vybavení sedla
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/1037/taborisko_v_hiadelskom_sedle.html
+  - popis: >-
+      hiking.sk, přehled hřebene léto 2021 — patrový přístřešek chráněný
+      ze čtyř stran, nocleh 10 osob, studnička 100 m, suché WC
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/6712/aktualne_z_hrebena_nizkych_tatier_leto2021.html
+  - popis: >-
+      cestasnp.sk — přístřešek z 2008 s krytou půdou, oficiálně povolené
+      táboření, málo vydatné zdroje vody (načteno 9. 8. 2026)
+    url: https://cestasnp.sk/pred/articles/article/184
+  - popis: >-
+      napant.sk — Hiadeľské sedlo mezi vyhrazenými místy pro jednorázové
+      přenocování (červená TZT 0801); zákaz táboření mimo vyhrazená místa
+      (načteno 9. 8. 2026)
+    url: https://www.napant.sk/pre-navstevnikov/turisticke-trasy/
+  - popis: >-
+      domalenka.sk — trasa z Donovalů 19 km / 3 h / +350 m, 1099 m
+      (načteno 9. 8. 2026)
+    url: https://domalenka.sk/atrakcie/tura-na-hiadelske-sedlo-z-donoval
+  - popis: >-
+      turistika.cz — sedlo 1099 m, křižovatka červené a modré
+      (načteno 9. 8. 2026)
+    url: https://www.turistika.cz/mista/hiadelske-sedlo--1/detail
+  - popis: >-
+      OpenStreetMap (GPS, tourism=wilderness_hut; ODbL)
+    url: https://www.openstreetmap.org/node/13290488954
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/hiadelske-sedlo.yaml (9. 8. 2026);
+  katalogový objekt HUT-0155.
+
+  TYP bivak — PRVNÍ POUŽITÍ V KORPUSU a zakládá pravidlo: otevřený
+  přístřešek bez kamen na jednorázové přenocování není útulňa (Ramža
+  s kamny a pryčnami útulňa je). Katalog objekt vede jako „Útulňa
+  Hiadeľské sedlo" — alias to nese, próza vysvětluje rozdíl. Název
+  profilu „Prístrešok v Hiadeľskom sedle" dle terminologie hiking.sk
+  a cestasnp.sk; OSM name „Hiadeľské sedlo" je v aliasech.
+
+  KAPACITA vědomě nevyplněna: 4 (pryčna po obvodu) + „cca 5" (podkroví)
+  × souhrnných 10 z přehledu 2021 — součet 4+cca5 by byl aritmetika
+  redakce (vzor Kolářova chata Slavíč), próza říká „asi desítka míst".
+
+  SEZONA vědomě nevyplněna: výslovné „celoročne" žádný pramen nenese;
+  fakticky jde o trvale otevřený přístřešek a próza to říká.
+
+  ROZPOR výšky 1099 × 1105 (vrcholovka.cz, jen titulek) — přiznán
+  v overeniLokace. OBEC nevyplněna — katalog vede Hiadeľ, prameny obec
+  neuvádějí (DATA-17 R6). Stavové údaje jsou z léta 2021 — při další
+  rešerši ověřit stav přístřešku.
+
+  Fotku dodá druhý běh DATA-02, výškový profil DATA-06.

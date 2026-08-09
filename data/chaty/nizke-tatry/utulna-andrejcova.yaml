@@ -1,0 +1,337 @@
+# Útulňa Andrejcová — publikovaný profil Nízkých Tater (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne; katalogový objekt
+# HUT-0153. Vše verified: false — redakce nic neověřila vlastním dotazem
+# ani návštěvou.
+
+nazev: Útulňa Andrejcová
+slug: utulna-andrejcova
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9015714
+lng: 20.0232832
+vyska: 1410
+obec: Liptovská Teplička
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/502011544 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA — ROZPOR, přiznaný: 1410 m uvádí hiking.sk, turisticky.sk,
+    nizketatry.sk, vernar.net i Denník N v rozhovoru s provozovatelem
+    (12/2025: „v nadmorskej výške 1410 metrov"); treking.cz a horydoly.cz
+    uvádějí 1420 m. Zapsáno 1410 — převažující hodnota slovenských pramenů
+    včetně textu o provozovateli. Poloha: východní hřeben
+    (Kráľovohoľské Tatry), asi 80–100 m od rozcestí v sedle pod vrchem
+    Andrejcová, na červené hřebenovce Cesty hrdinov SNP. Obec: adresa
+    provozu Liptovská Teplička 673 (vlastní web); katalog vede Pohorelou —
+    obojí jsou nástupní obce z opačných stran hřebene.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 25
+overeniNocleh:
+  source: >-
+    Vlastní web útulně (andrejcova.sk, čteno 9. 8. 2026): 25 lůžek ve dvou
+    společných místnostech, „Ubytovanie 10 € / osoba / noc"; cestasnp.sk
+    (aktualizace 29. 8. 2024): „25 osôb na matraci vo vlastnom spacáku
+    (10 osôb povala, 15 osôb spoločenská miestnosť)" + 5 na zemi v nouzi.
+    REZERVACE POVINNÁ — potvrzení do 48 h, platba hotově na místě, skupiny
+    nad 10 osob se 100% zálohou, noční klid od 22:00 (vlastní web);
+    provozovatel v květnu 2025: „Nocľah si vo vlastnom záujme zarezervujte
+    dostatočne dopredu." Stan u útulně: 7 € za osobu při dvou a více
+    osobách, oficiální stanové místo národního parku (hiking.sk 5/2025,
+    vlastní web). V zimě bez chatáře: „turisti si môžu v chate zakúriť
+    a prenocovať vo vlastnom spacáku", platí se do pokladničky nebo
+    převodem (hiking.sk 11/2024). ROZPOR STARŠÍCH PRAMENŮ, přiznaný:
+    hiking.sk 2004 a nizketatry.sk uvádějí přibližně 30 míst — zapsán
+    aktuální údaj provozovatele (vzor Zamkovského chaty: zastaralost
+    pramene není rozpor). Horydoly.cz (2021): přespat lze nejvýše dvě noci.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Vlastní web útulně (čteno 9. 8. 2026): „Čapované pivo a nealko",
+    snídaně a večeře — teplá jídla včetně veganské volby, nabíjení přes
+    USB. Točí se tu vlastní řemeslné pivo Tetrov (stihacka.hiking.sk,
+    turisticky.sk: „špecializované pivo varené výhradne pre útulňu").
+    VODA — ROZPOR, přiznaný: pramen Zimná voda leží podle hiking.sk 20 m
+    před útulňou, podle nizketatry.sk 10 m, podle vernar.net 80 m;
+    treking.cz dodává, že pramen „nezklame ani v parném létě".
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    turisticky.sk (čteno 9. 8. 2026): „Od mája do októbra je na chate
+    chatár denne", „od novembra iba počas víkendov a sviatkov",
+    „Ubytovacia časť je celoročne otvorená."; shodně nizketatry.sk
+    (sezóna 1. 5. – 3. 11. nepřetržitě s chatárom). Aktuálně: zima 2024/25
+    s chatárem jen pátek–neděle a svátky (hiking.sk 6. 11. 2024), léto
+    2025 od 1. května nonstop s personálem (hiking.sk 6. 5. 2025).
+    Provozuje OZ Horské spoločenstvo, Brezno (IČO 42394694, vlastní web);
+    předsedou sdružení a tváří útulně je Marek Šurina (hiking.sk).
+    Totéž sdružení provozuje i Domček HS na Čertovici.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421904596443'
+  email: rezervacie@andrejcova.sk
+  web: https://andrejcova.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1968
+overeniHistorie:
+  source: >-
+    treking.cz (čteno 9. 8. 2026): „Srubová stavba pochází z roku 1968";
+    shodně vernar.net (11/2024): „Postavená v roku 1968", původně sloužila
+    jako „ochrana turistov aj salaš pre miestnych pastierov". MÍRNÝ
+    ROZPOR, přiznaný: hiking.sk v článku z prosince 2005 psal, že útulňa
+    do té doby „existovala približne 40 rokov" (což by ukazovalo spíš
+    k roku ~1965) — zapsán letopočet, který nesou dva prameny výslovně.
+    REKONSTRUKCE 2004/2005: provedli SZOPK Nízke Tatry ve spolupráci se
+    správou národního parku, financováno z SMS sbírky společnosti Orange
+    po vichřici v listopadu 2004 přes Nadáciu Ekopolis (program Obnovme
+    Tatry) — nová šindelová střecha, vstupní místnost s dřevárnou,
+    rozšíření z jednoho na tři obytné prostory, dvojlatrína, nová okna
+    a dveře (hiking.sk 12/2005). Od roku 2014 má útulňa stálého hospodáře
+    (hiking.sk 7/2014). Stavba nové útulně byla v prosinci 2020 tématem
+    podcastu hiking.sk („ako sa plánuje stavba novej útulne") — doklad
+    o realizaci novostavby se ale nenašel; prameny z let 2024–2025
+    popisují stále původní přestavěný srub.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1968
+    udalost: >-
+      Na východním hřebeni vyrostl srub, který sloužil turistům i jako
+      salaš místních pastýřů.
+    zdroj: >-
+      treking.cz (čteno 9. 8. 2026) — „Srubová stavba pochází z roku
+      1968"; vernar.net (11/2024) — původní účel „ochrana turistov aj
+      salaš pre miestnych pastierov". hiking.sk (2005) datuje vznik jen
+      přibližně („existovala približne 40 rokov").
+  - rok: 2005
+    udalost: >-
+      Útulňa prošla obnovou — nová šindelová střecha, vstupní místnost
+      s dřevárnou a rozšíření na tři obytné prostory; opravu provedli
+      ochránci přírody SZOPK Nízke Tatry za peníze z SMS sbírky po
+      vichřici z listopadu 2004.
+    zdroj: >-
+      hiking.sk, článek „Útulňa Andrejcová zrekonštruovaná" (12/2005,
+      čteno 9. 8. 2026) — obnova SZOPK Nízke Tatry ve spolupráci s NAPANT,
+      financování přes Nadáciu Ekopolis z programu Obnovme Tatry.
+  - rok: 2014
+    udalost: >-
+      Útulňa dostala stálého hospodáře a menší nabídku občerstvení; na
+      jaře se opravoval komín, kamna, střecha i okna.
+    zdroj: >-
+      hiking.sk, článek „Útulňa Andrejcová s hospodárom" (7/2014, čteno
+      9. 8. 2026) — „Na prelome apríla a mája 2014 sa začalo so
+      zveľaďovaním".
+  - rok: 2020
+    udalost: >-
+      Provoz převzalo občanské sdružení Horské spoločenstvo z Brezna
+      v čele s Markem Šurinou; útulňa dostala fotovoltaiku a vlastní
+      řemeslné pivo. Ve stejném roce se mluvilo o plánu stavby nové
+      útulně — o realizaci prameny mlčí.
+    zdroj: >-
+      stihacka.hiking.sk (7/2020, čteno 9. 8. 2026) — „Vdýchli nový život
+      Útulni Andrejcová…"; podcast hiking.sk (12/2020) — „ako sa plánuje
+      stavba novej útulne"; provozovatel a IČO z vlastního webu. Kdy
+      přesně sdružení provoz převzalo, prameny neuvádějí — rok 2020 je
+      rokem doložených zmínek.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Točí se tu pivo Tetrov, vařené podle turisticky.sk výhradně pro tuhle
+      útulňu — v 1410 metrech na hřebeni, kam se všechno nosí nebo vozí
+      terénem.
+    kategorie: gastro
+    zdroj: >-
+      turisticky.sk (čteno 9. 8. 2026) — „špecializované pivo varené
+      výhradne pre útulňu"; jméno Tetrov stihacka.hiking.sk (2020).
+  - text: >-
+      Z Pohorelé se k útulně běhá závod Andrejcová Vertikal — 5,1 kilometru
+      do kopce.
+    kategorie: jine
+    zdroj: >-
+      vernar.net (11/2024, čteno 9. 8. 2026).
+  - text: >-
+      V zimě funguje jako klasická otevřená útulňa: kdo přijde, může si
+      zatopit a přespat ve vlastním spacáku, platí se do pokladničky nebo
+      převodem.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk, zpráva k zimní sezóně (6. 11. 2024, čteno 9. 8. 2026) —
+      „turisti si môžu v chate zakúriť a prenocovať vo vlastnom spacáku".
+  - text: >-
+      Pramen u útulně se jmenuje Zimná voda a podle treking.cz „nezklame
+      ani v parném létě".
+    kategorie: jine
+    zdroj: >-
+      treking.cz (čteno 9. 8. 2026); jméno pramene shodně hiking.sk (2014).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Srub z roku 1968 na červené hřebenovce Kráľovohoľských Tater, ze kterého
+  parta kolem OZ Horské spoločenstvo udělala obsluhovanou útulňu s 25
+  lůžky, veganskou večeří a vlastním pivem Tetrov. V létě chatár denně,
+  v zimě otevřená útulňa s pokladničkou — rezervace noclehu je povinná.
+text:
+  - >-
+    Andrejcová stojí kousek od rozcestí v sedle pod stejnojmenným vrchem,
+    asi osmdesát až sto metrů od červené hřebenovky Cesty hrdinov SNP,
+    v úseku mezi Čertovicou a Kráľovou hoľou. Slovenské prameny včetně
+    rozhovoru s provozovatelem se shodují na 1410 metrech; dva české weby
+    uvádějí 1420 — i tenhle drobný rozdíl tu stojí přiznaný. Výhled odsud
+    sahá na Vysoké Tatry.
+  - >-
+    Srub tu vyrostl roku 1968 a sloužil dvojímu pánu: turistům jako
+    ochrana před nepohodou a místním pastýřům jako salaš. Zásadní obnovu
+    přinesl rok 2005 — provedli ji ochránci přírody ze SZOPK Nízke Tatry
+    spolu se správou národního parku a zaplatila se z SMS sbírky, kterou
+    po ničivé vichřici z listopadu 2004 uspořádala společnost Orange:
+    nová šindelová střecha, vstupní místnost s dřevárnou a rozšíření
+    z jednoho na tři obytné prostory. Roku 2014 útulňa dostala stálého
+    hospodáře a od roku 2020 ji vede občanské sdružení Horské spoločenstvo
+    z Brezna v čele s Markem Šurinou — parta, která přidala fotovoltaiku,
+    veganské večeře i vlastní řemeslné pivo Tetrov a provozuje také Domček
+    HS na Čertovici.
+  - >-
+    Nocleh je na útulňu nezvykle organizovaný: rezervace je povinná
+    (potvrzení do 48 hodin, platí se hotově na místě), spí se ve vlastním
+    spacáku na matracích — deset míst na půdě, patnáct ve společenské
+    místnosti, dohromady pětadvacet lůžek za 10 eur na osobu a noc. Kdo
+    přijde se stanem, zaplatí 7 eur při dvou a více osobách; louka u útulně
+    je oficiálním stanovým místem národního parku. A podle horydoly.cz tu
+    platí nepsané hřebenové pravidlo: přespat nejvýše dvě noci a jít dál.
+  - >-
+    Léto a zima jsou tu dva různé režimy. Od května do října je chatár na
+    místě denně, vaří snídaně a večeře a čepuje; od listopadu bývá provoz
+    s obsluhou jen o víkendech a svátcích. Ubytovací část ale zůstává
+    otevřená pořád — v zimě si příchozí může zatopit, přespat ve spacáku
+    a zaplatit do pokladničky nebo převodem. Voda je z pramene Zimná voda
+    pár desítek metrů od útulně; prameny se přou, jestli deset, dvacet
+    nebo osmdesát metrů, shodují se ale, že teče spolehlivě.
+  - >-
+    Přístupy: po červené hřebenovce od sedla Priehybka za hodinu a deset
+    minut (turisticky.sk uvádí od Priehyby dvě a půl hodiny — časy se tu
+    liší podle toho, odkud přesně se měří), od Ždiarskeho sedla za tři
+    čtvrtě hodiny, z Kráľovy hole za tři hodiny. Z obcí: z Pohorelé po
+    modré za dvě a půl až tři hodiny, z Liptovské Tepličky po modré za tři
+    a půl. Kdo pokračuje po hřebeni na západ, má to k útulně Ramža 20,5
+    kilometru — necelých sedm hodin.
+  - >-
+    Údaje nesou vlastní web útulně, hiking.sk a jeho magazín Stíhačka,
+    turisticky.sk, nizketatry.sk, treking.cz, cestasnp.sk, vernar.net
+    a horydoly.cz; polohu OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web útulně — 25 lůžek, 10 € za osobu a noc, povinná
+      rezervace, čepované pivo, snídaně a večeře, provozovatel OZ Horské
+      spoločenstvo Brezno, kontakty (načteno 9. 8. 2026)
+    url: https://andrejcova.sk/
+  - popis: >-
+      hiking.sk, profil útulně — 1410 m, poloha u rozcestí, přístupové
+      časy, rekonstrukce 2004, hospodár od 2014 (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/66/utulna_andrejcova.html
+  - popis: >-
+      hiking.sk — „Útulňa Andrejcová zrekonštruovaná" (12/2005): obnova
+      SZOPK + NAPANT, SMS sbírka Orange přes Nadáciu Ekopolis, rozsah
+      prací (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/187/utulna_andrejcova_zrekonstruovana.html
+  - popis: >-
+      hiking.sk — „Útulňa Andrejcová s hospodárom" (7/2014): opravy jaro
+      2014, stálý hospodář, pramen Zimná voda (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/3246/utulna_andrejcova_s_hospodarom.html
+  - popis: >-
+      hiking.sk — zimní sezóna 2024/25 (6. 11. 2024): chatár pátek–neděle
+      a svátky, otevřená útulňa s pokladničkou (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/news/9874/zimna_sezona_na_utulni_andrejcova.html
+  - popis: >-
+      hiking.sk — letní sezóna 2025 (6. 5. 2025): od 1. května nonstop
+      provoz, stan 7 €, výzva k včasné rezervaci (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/8456/letna_sezona_na_utulni_andrejcova_a_v_domceku_hs_na_certovici.html
+  - popis: >-
+      stihacka.hiking.sk (7/2020) — OZ Horské spoločenstvo, pivo Tetrov,
+      fotovoltaika, Domček HS na Čertovici (načteno 9. 8. 2026)
+    url: https://stihacka.hiking.sk/6788/oz-horske-spolocenstvo-andrejcova-domcek-hs-certovica/
+  - popis: >-
+      hiking.sk, podcast s Markem Šurinou (12/2020) — plán stavby nové
+      útulně (načteno 9. 8. 2026; o realizaci prameny mlčí)
+    url: https://hiking.dennikn.sk/ar/6469/s_marekom_surinom_o_andrejcovej_a_dalsich_aktivitach.html
+  - popis: >-
+      turisticky.sk — sezónní režim, přístupové časy, pivo vařené výhradně
+      pro útulňu (načteno 9. 8. 2026)
+    url: https://turisticky.sk/turistika/utulna-andrejcova/
+  - popis: >-
+      nizketatry.sk — 1410 m, zrubová stavba se šindelovou střechou,
+      sezóna 1. 5. – 3. 11., správce Marek Šurina (načteno 9. 8. 2026)
+    url: https://www.nizketatry.sk/chaty/uandrejcova/uandrejcova.html
+  - popis: >-
+      cestasnp.sk, POI (aktualizace 29. 8. 2024) — 25 osob na matracích
+      ve vlastním spacáku, rozdělení povala/místnost (načteno 9. 8. 2026)
+    url: https://cestasnp.sk/pred/pois/6055e2184e684300041172b2
+  - popis: >-
+      treking.cz — rok stavby 1968, 1420 m, pramen Zimná voda
+      (načteno 9. 8. 2026)
+    url: https://www.treking.cz/chaty/andrejcova.htm
+  - popis: >-
+      vernar.net (11/2024) — stavba 1968, původní účel, závod Andrejcová
+      Vertikal, pramen 80 m (načteno 9. 8. 2026)
+    url: https://vernar.net/utulna-andrejcova/
+  - popis: >-
+      horydoly.cz (2021) — 1420 m, nejvýše dvě noci, 30 osob (starší údaj)
+      (načteno 9. 8. 2026)
+    url: https://www.horydoly.cz/lyzari/andrejcova-na-hrebeni-nizkych-tater.html
+  - popis: >-
+      Denník N, rozhovor s Markem Šurinou (4. 12. 2025) — provoz potvrzen,
+      1410 m; čteno jen v rozsahu perexu, článek je za paywallem
+      (načteno 9. 8. 2026)
+    url: https://dennikn.sk/5002801/surina-z-utulne-andrejcova-hrebenovka-v-zime-neprecente-schopnosti-a-nepodcente-prirodu-na-pozemnu-pomoc-mozete-cakat-hodiny/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/502011544
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/utulna-andrejcova.yaml
+  (9. 8. 2026); katalogový objekt HUT-0153 (katalog vede obec Pohorelá,
+  profil zapisuje Liptovskou Tepličku dle adresy provozu na vlastním webu).
+
+  TYP: obsluhovana navzdory jménu Útulňa — v sezóně denní chatár, kuchyně,
+  ceník a povinná rezervace (táž volba jako u Ďurkové; v zimě funguje
+  režimem otevřené útulně a próza to říká).
+
+  KAPACITA 25 = aktuální údaj provozovatele; starší prameny ~30 (2004,
+  nizketatry, horydoly 2021) — zastaralost pramene, ne rozpor (vzor
+  Zamkovského chaty). VÝŠKA 1410 × 1420 — zapsána převažující hodnota
+  slovenských pramenů.
+
+  ROK VZNIKU 1968 (treking, vernar výslovně) × „približne 40 rokov" před
+  2005 (hiking) — přiznáno. Rok převzetí provozu OZ Horské spoločenstvo
+  není doložen přesně; 2020 je rok doložených zmínek (Stíhačka, podcast)
+  a milník to říká.
+
+  NOVOSTAVBA: plán stavby nové útulně doložen jen anotací podcastu
+  (12/2020); realizace NENALEZENA — prameny 2024–25 popisují pořád
+  původní srub. Hlídat; kdyby novostavba stála, změní se kapacita
+  i podoba. E-mail ahoj@andrejcova.sk (informace) vědomě nezapsán —
+  do kontaktů šel rezervační. Rozhovor v Denníku N je za paywallem,
+  čerpáno jen z perexu.
+
+  Fotku dodá druhý běh DATA-02, výškový profil DATA-06, lanovky oblasti
+  DATA-32 (kliky v KLIKY-PRO-MICHALA).

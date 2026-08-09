@@ -1,0 +1,315 @@
+# Útulňa Ďurková pod Chabencom — třetí publikovaný profil Nízkých Tater
+# (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne; katalogový
+# objekt HUT-0152. Vše verified: false — redakce nic neověřila vlastním
+# dotazem ani návštěvou.
+
+nazev: Útulňa Ďurková pod Chabencom
+slug: utulna-durkova-pod-chabencom
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Ďurková
+    poznamka: běžně užívaná krátká podoba (hiking.sk, KST)
+  - nazev: Chata KČST pod Chabencom
+    poznamka: předchůdkyně z let 1932–1940 na témž místě (treking.cz)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9310665
+lng: 19.4667983
+vyska: 1623
+obec: Jasenie
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/184031012 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1623 m BEZ ROZPORU: hiking.sk („Nadmorská výška 1623 m n. m."),
+    treking.cz, natreku.cz i lacneubytovanie.net (vše čteno 9. 8. 2026).
+    Poloha: jižní stráň hlavního hřebene Ďumbierskych Tater, jihovýchodně
+    pod sedlom Ďurkovej (1709 m), na místě bývalého salaše — ve starých
+    mapách „salaš pod Chabencom" (hiking.sk).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 33
+overeniNocleh:
+  source: >-
+    hiking.sk, profil útulně (aktualizace 2022, čteno 9. 8. 2026): „Spí sa
+    vo vlastných spacích vakoch na matracoch v jednej spoločnej nocľahárni
+    v podkroví pre 33 ľudí, na núdzové ubytovanie slúži jedáleň pre ďalších
+    20 ľudí"; shodně visitliptov.sk. ROZPOR, přiznaný: hřebenový přehled
+    hiking.sk z léta 2021 uváděl 36 osob v podkroví — dle konvence platí
+    nižší číslo 33; núdzových 20 míst v jedálně se do kapacity nepočítá.
+    Ceny dle profilu hiking.sk: 10 € za osobu a noc ve vlastním spacáku,
+    7 € členové KST, núdzový nocleh v jedálně a děti do 10 let, 2 € osoba
+    ve stanu; lacneubytovanie.net (aktualizace
+    1. 11. 2024) potvrzuje 10 €. Bez rezervací — chatár podle hiking.sk
+    „ubytúva vždy všetkých návštevníkov". Před chatou místo pro stany
+    (zlavadna.sk); NAPANT vede Ďurkovou jako vyhrazené místo pro
+    přenocování při naplnění kapacity útulně.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    hiking.sk, profil útulně (čteno 9. 8. 2026), o příchodu hosta doslova:
+    „Opýta sa čo si dáte. Pivo, čaj, polievku zo strukoviny, guláš
+    s kolienkami alebo niečo tvrdšie?"; lacneubytovanie.net (2024): „Teplé
+    občerstvení", snídaně nebo večeře podle aktuální nabídky. Hřebenový
+    přehled hiking.sk (léto 2021): „Otvorená nonstop, poskytuje stravu
+    a ubytovanie vo vlastnom spacáku." VODA — ROZPOR, přiznaný: upravená
+    studnička 150 m od chaty (profil hiking.sk, shodně treking.cz „asi 150
+    metrů západně"), hřebenový přehled 2021 a lacneubytovanie.net uvádějí
+    200 m.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    hiking.sk, profil útulně (čteno 9. 8. 2026): „Prevádzka celoročná so
+    správcom a pomocným personálom"; shodně treking.cz a zlavadna.sk.
+    lacneubytovanie.net (aktualizace 1. 11. 2024) upřesňuje: „Celoroční
+    provoz (ne vždy je chatař na chatě, otevřeno však bývá)." Majetek
+    a správa: „Turistická útulňa je v majetku KST B. Bystrica, spravuje ji
+    KST Jasenie" (treking.cz); správcem je Tomáš Lupták (hiking.sk,
+    lacneubytovanie.net). KST útulňu vede mezi objekty se slevou pro členy
+    (kst.sk, stránka z 22. 1. 2025).
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421944165853'
+  web: https://www.durkova.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 2002
+overeniHistorie:
+  source: >-
+    Dnešní útulňa byla slavnostně otevřena 28. 9. 2002 (treking.cz:
+    „současná útulna se dočkala svého slavnostního otevření až 28.9.2002";
+    historia.cestasnp.sk: „V sedle Pod červenou hrebeňovkou sa od roku 2002
+    nachádza útulňa Ďurková"). Postavila ji Regionálna rada Klubu
+    slovenských turistov Banská Bystrica (hiking.sk). MENŠÍ ROZPOR,
+    přiznaný: cestasnp.sk v profilu útulně píše „stojí tu síce len asi od
+    roku 2000" — platí doložené datum otevření. PŘEDCHŮDKYNĚ: chata KČST
+    pod Chabencom, otevřená 14. 8. 1932 (prvním chatárem Kornel Samko —
+    treking.cz), rozšířená 1933, roku 1937 přibyla samostatná zrubová
+    budova (historia.cestasnp.sk). ZÁNIK — ROZPOR, přiznaný: treking.cz
+    i historia.cestasnp.sk uvádějí požár 9. 9. 1940 („9.9.1940
+    v pozdnodopoledních hodinách chatu zachvátil požár"), kdežto profil na
+    cestasnp.sk tvrdí, že „jej existenciu definitívne ukončili fašisti
+    počas 2. svetovej vojny". Požár z roku 1940 je doložen dvěma prameny
+    a předchází SNP; verze s fašisty zůstává jako osamocené tvrzení.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1932
+    udalost: >-
+      Na místě salaše pod Chabencom byla 14. srpna otevřena chata KČST;
+      prvním chatárem byl Kornel Samko. Hned další rok byla rozšířena
+      a roku 1937 k ní přibyla samostatná zrubová budova.
+    zdroj: >-
+      treking.cz (čteno 9. 8. 2026) — „Slavnostního otevření se dočkala
+      14.8.1932, prvním chatařem byl Kornel Samko"; rozšíření a zrubová
+      budova historia.cestasnp.sk.
+  - rok: 1940
+    udalost: >-
+      Chatu 9. září zachvátil požár a vyhořela; jeden pramen klade zánik
+      až do války a připisuje ho fašistům.
+    zdroj: >-
+      treking.cz (čteno 9. 8. 2026) — „9.9.1940 v pozdnodopoledních
+      hodinách chatu zachvátil požár a chata vyhořela"; shodně
+      historia.cestasnp.sk („Všetko však zničil požiar v roku 1940.");
+      odlišně cestasnp.sk — „existenciu definitívne ukončili fašisti počas
+      2. svetovej vojny".
+  - rok: 1944
+    udalost: >-
+      Přes Chabenec nad místem bývalé chaty ustupovali v zimě po potlačení
+      SNP partyzáni; ve sněhu a mrazu na svahu Chabence zahynulo 84
+      povstalců.
+    zdroj: >-
+      historia.cestasnp.sk (čteno 9. 8. 2026) — „v snehu a mraze na svahu
+      Chabenca zahynulo 84 povstalcov". Že by povstalci využili právě
+      chatu, prameny neuvádějí.
+  - rok: 2002
+    udalost: >-
+      Po více než šedesáti letech se na místo vrátila střecha nad hlavou:
+      28. září byla otevřena dnešní útulňa, kterou postavila Regionálna
+      rada KST Banská Bystrica.
+    zdroj: >-
+      treking.cz (čteno 9. 8. 2026); stavebník hiking.sk — „Postavila ju
+      Regionálna rada Klubu slovenských turistov Banská Bystrica.";
+      historia.cestasnp.sk — „Trvalo ďalších viac ako 60 rokov, kým sa do
+      rovnakých miest vrátila útulňa."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Nejbližší chaty jsou odsud po hřebeni na hodiny daleko: podle
+      hiking.sk je to sem 10 hodin chůze z Donovalů, 8 hodin od Štefáničky
+      pod Ďumbierom a 6 hodin od Kamenné chaty na Chopku.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk, profil útulně (čteno 9. 8. 2026) — „10 hodín chôdze
+      z Donovalov, 8 hodín zo Štefánikovej chaty pod Ďumbierom a 6 hodín
+      z Kamennej chaty na Chopku".
+  - text: >-
+      Hřebenovka tudy původně nevedla přes vrchol Chabence: chodilo se
+      jižním úbočím, čímž turisté ušetřili 170 výškových metrů; trasa přes
+      vrchol se v mapách uvádí až od konce padesátých let.
+    kategorie: jine
+    zdroj: >-
+      historia.cestasnp.sk (čteno 9. 8. 2026) — „Chodilo sa južným úbočím,
+      čím turisti ušetrili celkovo 170 výškových metrov stúpania
+      a klesania."
+  - text: >-
+      V zimě je útulňa oblíbeným cílem skialpinistů; u chaty je suchá
+      latrína a překvapivě dobrý mobilní signál.
+    kategorie: jine
+    zdroj: >-
+      jesikazakova.com a hiking.sk, profil útulně (čteno 9. 8. 2026) —
+      „suchý záchod (latrína), dobrý mobilný signál".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Obsluhovaná útulňa z roku 2002 na místě salaše a vyhořelé prvorepublikové
+  chaty KČST, v 1623 metrech pod sedlom Ďurkovej na hlavním hřebeni.
+  Třiatřicet míst v podkrovní noclehárně, guláš s kolínky — a nejbližší
+  chata podle hiking.sk šest hodin chůze.
+text:
+  - >-
+    Ďurková stojí na jižní stráni hlavního hřebene, kousek pod sedlom
+    Ďurkovej mezi Chabencom a Skalkou — v místech, kterým staré mapy říkaly
+    salaš pod Chabencom. Na výšce 1623 metrů se prameny shodují bez
+    odchylky. Právě poloha je její hlavní deviza i břemeno: podle hiking.sk
+    je to sem deset hodin chůze z Donovalů, osm od Štefáničky a šest od
+    Kamenné chaty na Chopku.
+  - >-
+    Historie místa začala mnohem dřív. Chata KČST pod Chabencom se
+    slavnostně otevírala 14. srpna 1932 — prvním chatárem byl Kornel
+    Samko —, hned další rok se rozšiřovala a roku 1937 k ní přibyla
+    samostatná zrubová budova. Konec přišel rychle: 9. září 1940 chatu
+    zachvátil požár a vyhořela; jeden pramen klade její definitivní zánik
+    až do války a připisuje ho fašistům, dva prameny se ale shodují na
+    požáru. O čtyři roky později se právě přes Chabenec probíjeli v mrazu
+    a sněhu ustupující povstalci — na svahu jich čtyřiaosmdesát zahynulo.
+  - >-
+    Na střechu nad hlavou pak místo čekalo přes šedesát let. Dnešní útulňu
+    postavila Regionálna rada KST Banská Bystrica a otevřela se 28. září
+    2002; majetkem je KST Banská Bystrica, spravuje ji KST Jasenie
+    a správcem je Tomáš Lupták.
+  - >-
+    Ač se jmenuje útulňa, funguje jako malá obsluhovaná chata: provoz je
+    celoroční se správcem, byť — jak poctivě píše jeden z pramenů — „ne
+    vždy je chatař na chatě, otevřeno však bývá". Spí se ve vlastním
+    spacáku na matracích ve společné podkrovní noclehárně pro 33 lidí, za
+    10 eur na noc (členové KST 7 eur, stan u chaty 2 eura); v nouzi pojme
+    jedálna dalších dvacet nocležníků a rezervace se nedělají — chatár
+    podle hiking.sk „ubytúva vždy všetkých návštevníkov". K jídlu bývá
+    pivo, čaj, luštěninová polévka nebo guláš s kolínky. Voda je z upravené
+    studničky 150 až 200 metrů západně od chaty, záchod je suchá latrína
+    a mobilní signál tu prý funguje dobře.
+  - >-
+    Nahoru se jde z Jasenia po modré Jasenianskou dolinou za necelých pět
+    hodin, nebo po zelené Lomnistou dolinou za čtyři; z horské osady
+    Magurka po zelené za dvě a čtvrt hodiny. Z červené hřebenovky E8 se
+    k útulně sestupuje z rozcestí Malý Chabenec, hrebeň Chabenca nebo sedlo
+    Ďurkovej po modré a zelené za čtvrt hodiny. V zimě sem míří
+    skialpinisté — a zimní přechod hřebene nad útulňou ať zvažují jen ti,
+    kdo vědí, co dělají.
+  - >-
+    Údaje nesou hiking.sk, treking.cz, cestasnp.sk a jeho historický
+    projekt, natreku.cz, lacneubytovanie.net, zlavadna.sk, visitliptov.sk,
+    kst.sk a napant.sk; polohu OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      hiking.sk, profil útulně (aktualizace 2022) — 1623 m, kapacita 33
+      + 20 núdzově, ceník, celoroční provoz se správcem, stavebník RR KST
+      BB, přístupy s časy, studnička 150 m, guláš s kolínky
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/111/utulna_durkova_pod_chabencom.html
+  - popis: >-
+      treking.cz — chata KČST od 1932 (otevření 14. 8. 1932, chatár Kornel
+      Samko), požár 9. 9. 1940, otevření útulně 28. 9. 2002, majetek KST
+      B. Bystrica / správa KST Jasenie (načteno 9. 8. 2026)
+    url: https://www.treking.cz/chaty/durkova.htm
+  - popis: >-
+      historia.cestasnp.sk, úsek Donovaly–Chabenec — rozšíření 1933,
+      zrubová budova 1937, požár 1940, 84 povstalců na Chabenci, trasování
+      hřebenovky jižním úbočím (načteno 9. 8. 2026)
+    url: https://historia.cestasnp.sk/zmeny-usekov-magistraly/donovaly-chabenec/
+  - popis: >-
+      cestasnp.sk, profil útulně — verze zániku staré chaty za války
+      („existenciu definitívne ukončili fašisti"), útulňa „asi od roku
+      2000" na místě bývalého salaše (načteno 9. 8. 2026)
+    url: https://cestasnp.sk/pred/articles/article/182
+  - popis: >-
+      lacneubytovanie.net (aktualizace 1. 11. 2024) — 10 € za osobu a noc,
+      správce Tomáš Lupták, telefony, teplé občerstvení, studánka 200 m,
+      „ne vždy je chatař na chatě, otevřeno však bývá"
+      (načteno 9. 8. 2026)
+    url: https://www.lacneubytovanie.net/ubytovanie/chata-durkova/
+  - popis: >-
+      hiking.sk, přehled hřebene léto 2021 — 36 osob v podkroví (starší
+      údaj), studnička 200 m, suché WC, „otvorená nonstop"
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/6712/aktualne_z_hrebena_nizkych_tatier_leto2021.html
+  - popis: >-
+      napant.sk — Ďurková jako vyhrazené místo pro přenocování v národním
+      parku při naplnění kapacity útulně (načteno 9. 8. 2026)
+    url: https://www.napant.sk/pre-navstevnikov/turisticke-trasy/
+  - popis: >-
+      natreku.cz — 1623 m, místo bývalých salaší, zmínka webu durkova.sk
+      (načteno 9. 8. 2026)
+    url: https://www.natreku.cz/turisticka-utulna-durkova-pod-chabencom/
+  - popis: >-
+      kst.sk — útulňa mezi objekty se slevou pro členy KST (stránka
+      z 22. 1. 2025, načteno 9. 8. 2026)
+    url: https://www.kst.sk/zlava/utulna-durkova-pod-chabencom/
+  - popis: >-
+      zlavadna.sk — celoroční provoz, místo pro stany před chatou
+      (načteno 9. 8. 2026)
+    url: https://www.zlavadna.sk/tipy-na-vylety/durkova-utulna
+  - popis: >-
+      visitliptov.sk — 33 míst + 20 núdzově, skialpinismus v okolí
+      (načteno 9. 8. 2026)
+    url: https://www.visitliptov.sk/en/interests/tourist-shelter-durkova/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/184031012
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/utulna-durkova-pod-chabencom.yaml
+  (9. 8. 2026); katalogový objekt HUT-0152.
+
+  TYP: obsluhovana navzdory jménu Útulňa — celoroční provoz se správcem,
+  teplé jídlo a ceník je funkčně malá obsluhovaná chata (OSM ji vede jako
+  alpine_hut). Stejná volba čeká u Andrejcové.
+
+  WEB durkova.sk: jmenuje ho natreku.cz, ale ze sandboxu se načíst
+  nepodařilo (fetch blokován, ne mrtvá doména) — na rozdíl od sherpacaffe.sk
+  není doklad, že by doména nesla cizí obsah, proto v kontaktech zůstává.
+  Telefon správce +421 949 792 997 (Tomáš Lupták) vědomě nezapisuji do
+  kontaktů — primární číslo je útulňa sama; e-mail NENALEZEN.
+
+  ROZPORY OTEVŘENÉ: kapacita 33 × 36 (zapsáno nižší); studnička 150 × 200 m
+  (obojí v próze); zánik staré chaty požár 1940 × „fašisti za války"
+  (požár má dva prameny, druhá verze přiznána); rok vzniku dnešní útulně
+  2002 (otevření) × „asi 2000" (cestasnp). Změna správce na Luptáka —
+  hiking.sk ji vede u zprávy datované 21. 6. 2011, ale datace ve fetchi
+  byla nejistá; do milníků proto nejde, v provozu je doložená k 11/2024.
+
+  NENALEZENO: e-mail; přesná kapacita jedálně jako řádného noclehu;
+  „postupně přestavovaná na klasickou horskou chatu" (natreku.cz) je
+  osamocené tvrzení a do dat nejde. Fotku dodá druhý běh DATA-02, výškový
+  profil DATA-06, lanovky oblasti DATA-32 (kliky v KLIKY-PRO-MICHALA).

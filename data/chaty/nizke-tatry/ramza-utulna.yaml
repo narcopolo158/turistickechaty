@@ -1,0 +1,251 @@
+# Útulňa Ramža — publikovaný profil Nízkých Tater (9. 8. 2026), povýšen
+# z kandidáta DATA-01 po rešerši téhož dne; katalogový objekt HUT-0154
+# (slabá shoda kandidáta „Ramža (útulňa)" s katalogovou „Útulňa Ramža"
+# přečtena: týž objekt). Vše verified: false — redakce nic neověřila
+# vlastním dotazem ani návštěvou.
+
+nazev: Útulňa Ramža
+slug: ramza-utulna
+zeme: sk
+typ: utulna
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Ramža
+    poznamka: běžně užívaná krátká podoba (OSM name „Ramža (útulňa)")
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9133072
+lng: 19.7971677
+vyska: 1260
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/881461286 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1260 m BEZ ROZPORU: hiking.sk, nizketatry.sk („Útulňa Ramža
+    (1260 m) je v lesnom poraste severne od chodníka"), treking.cz
+    i visitliptov.sk (vše čteno 9. 8. 2026). Poloha: hlavní hřeben
+    Kráľovohoľských Tater, necelých 7 km východně od Čertovice, v lese
+    pár metrů severně od červené hřebenovky E8 — bez výhledů
+    (visitliptov.sk). Obec katalog vede Liptovskou Tepličku; žádný
+    z pramenů obec neuvádí, pole proto zůstává prázdné.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 15
+overeniNocleh:
+  source: >-
+    Otevřená neobsluhovaná útulňa zdarma — nizketatry.sk: „PREVÁDZKA:
+    celoročná bez hospodára"; treking.cz: „Otevřená útulna bez obsluhy";
+    žádný pramen neuvádí poplatek ani rezervace. KAPACITA — ROZPOR,
+    přiznaný: nizketatry.sk uvádí 15, treking.cz „zhruba 10 – 15 míst,
+    při troše nepohodlí se sem vejde snad až 20 lidí", visitliptov.sk
+    „about 20 people" — dle konvence platí nižší doložené číslo 15.
+    Uvnitř jedna místnost se dvěma patrovými pryčnami, policemi na
+    batohy a funkčními kamny (hiking.sk, nizketatry.sk: „poschodové
+    prične a funkčná pec"). Že útulňa bývá plná, dokládá zápis z fóra
+    hiking.sk z 27. 9. 2024: „Útulňa bola plná, tak som musel prespať
+    pod stromom."
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+overeniObcerstveni:
+  source: >-
+    Občerstvení žádné — neobsluhovaná útulňa; pole se nevyplňují.
+    VODA — ROZPOR ve vzdálenosti, přiznaný: pramen západně od útulně
+    uvádí hiking.sk a visitliptov.sk asi 100 m, treking.cz asi 200 m,
+    nizketatry.sk 300 m. Pramen udržují dobrovolníci — hiking.sk (2024):
+    „Čistíme pramenisko od nánosov…" U útulně je venkovní ohniště, suchá
+    latrína a malý kontejner na odpad (hiking.sk).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    hiking.sk, profil útulně (čteno 9. 8. 2026): „Režim: celoročný";
+    nizketatry.sk: „PREVÁDZKA: celoročná bez hospodára"; visitliptov.sk:
+    „open year-round". Oficiální správce (KST, obec) se nenašel — útulňu
+    desítky let dobrovolnicky udržují žilinští skauti: „Ramža doslova
+    stojí na chrbte žilinských skautov … žilinská skautská skupina po
+    všetky tie roky verne udržiavala útulňu. … Vďaka, Olosova banda!"
+    (hiking.sk, reportáž 31. 1. 2024).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+overeniHistorie:
+  source: >-
+    hiking.sk, reportáž „Útulňa Ramža a tajomstvo jej existencie"
+    (31. 1. 2024, čteno 9. 8. 2026): útulňa vznikla přestavbou starého
+    seníku žilinskými skauty v 70. letech 20. století — pamětník Peter
+    „Beudín" Hrabovský „bol pri tom, keď starý senník prerobili v 70.
+    rokoch 20. storočia na dnešnú útulňu". Technický detail: „Keďže
+    základové brvná boli zhnité, tie po rozobraní konštrukcie odstránili,
+    stavbu postavili nanovo a steny sa tak znížili." Facebooková stránka
+    útulně nese název „Útulňa Ramža - est. Olosova Banda 1979" — rok 1979
+    tedy uvádí sama skupina správců, hiking.sk říká obecně 70. léta;
+    pole rokVzniku proto zůstává prázdné a přesnější dataci může doplnit
+    až pramen. Táž reportáž vyvrací rozšířený mýtus, že útulňu postavili
+    dělníci při pokládce plynovodu mezi Horehroním a Liptovem. Výše na
+    stráni stával druhý zrub, tzv. Malá Ramža, který sloužil bačovi —
+    okolo roku 2000 vyhořel.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1979
+    udalost: >-
+      Žilinští skauti — „Olosova banda" — přestavěli starý seník na
+      útulňu; kvůli shnilým základovým trámům stavbu rozebrali a postavili
+      znovu s nižšími stěnami. Přesný rok je nejistý: hiking.sk mluví
+      o 70. letech, rok 1979 uvádí sama skupina v názvu své stránky.
+    zdroj: >-
+      hiking.sk, reportáž z 31. 1. 2024 (čteno 9. 8. 2026) — svědectví
+      pamětníka Petera „Beudína" Hrabovského; „est. Olosova Banda 1979"
+      z názvu facebookové stránky útulně.
+  - rok: 2000
+    udalost: >-
+      Vyhořel horní zrub zvaný Malá Ramža, který sloužíval bačovi; datace
+      je přibližná.
+    zdroj: >-
+      hiking.sk, reportáž z 31. 1. 2024 (čteno 9. 8. 2026) — „táto stavba
+      okolo roku 2000 vyhorela".
+  - rok: 2023
+    udalost: >-
+      Podzimní brigáda skautů položila dubovou podlahu pod zastřešeným
+      průčelím, opravila studánku a postavila novou latrínu.
+    zdroj: >-
+      fórum hiking.sk, zápis z 5. 11. 2023 (čteno 9. 8. 2026) — „urobili
+      dubovú podlahu pod zastrešeným priečelím, opravili studničku,
+      vykopali hlbokánsku jamu a postavili úplne novú latrínu."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Kdo Ramžu postavil, bylo desítky let záhadou — všeobecně se
+      tradovalo, že dělníci při pokládce plynovodu mezi Horehroním
+      a Liptovem. Reportáž hiking.sk z roku 2024 mýtus vyvrátila:
+      byl to starý seník, který v 70. letech přestavěli žilinští skauti,
+      a ti se o ni potichu starají dodnes.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk, reportáž „Útulňa Ramža a tajomstvo jej existencie"
+      (31. 1. 2024, čteno 9. 8. 2026).
+  - text: >-
+      Architektonicky si útulňa iluze nedělá — hiking.sk ji popsal jako
+      „ten všetkým dobre známy komunistický horský štýl".
+    kategorie: jine
+    zdroj: >-
+      hiking.sk, profil útulně (článek z 18. 8. 2002, čteno 9. 8. 2026) —
+      „Z architektonického pohľadu nie je žiadnym skvostom".
+zajimavostiPoznamka: >-
+  Citáty jsou z hiking.sk; redakce hodnocení nepřebírá jako vlastní.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Otevřená útulňa zdarma v lese u červené hřebenovky, sedm kilometrů
+  východně od Čertovice. Vznikla v 70. letech přestavbou seníku — kdo ji
+  postavil, bylo dlouho záhadou opředenou mýtem o plynovodu, než se
+  ukázalo, že za ní od začátku stojí žilinští skauti z Olosovy bandy.
+text:
+  - >-
+    Ramža se krčí v lesním porostu pár metrů severně od červené
+    hřebenovky, necelých sedm kilometrů východně od sedla Čertovica,
+    ve 1260 metrech. Výhled odsud není žádný — je to střecha na přespání,
+    ne vyhlídka. Uvnitř jedna místnost se dvěma patrovými pryčnami,
+    policemi na batohy a funkčními kamny; prameny se přou, jestli se sem
+    vejde patnáct, nebo při troše nepohodlí dvacet lidí, a zápis z fóra
+    z konce září 2024 dokládá, že bývá i plno: „Útulňa bola plná, tak som
+    musel prespať pod stromom."
+  - >-
+    Její původ byl desítky let záhadou. Všeobecně se tradovalo, že Ramžu
+    postavili dělníci při pokládce plynovodu spojujícího Horehroní
+    s Liptovem — až reportáž hiking.sk z ledna 2024 našla pamětníka
+    a jinou pravdu: byl to starý seník, který v 70. letech přestavěli
+    žilinští skauti. Základové trámy byly shnilé, stavbu proto rozebrali,
+    postavili znovu a stěny se tím snížily. Skupina si říká Olosova banda
+    a v názvu své stránky uvádí rok 1979; a právě ona se o útulňu potichu
+    stará dodnes — naposledy doloženě na podzim 2023, kdy položila novou
+    dubovou podlahu pod průčelím, opravila studánku a postavila latrínu.
+    Výš na stráni stával ještě druhý zrub, Malá Ramža, který sloužil
+    bačovi; okolo roku 2000 vyhořel.
+  - >-
+    Režim je celoroční a prostý: otevřeno pořád, bez hospodáře, bez
+    poplatku, bez rezervací. Voda je z upravovaného pramene západně od
+    útulně — prameny uvádějí sto, dvě stě i tři sta metrů —, venku je
+    ohniště, suchá latrína a malý kontejner. Dřevo v předsíni podle
+    zápisů z fóra občas dochází; kdo může, ať nechá po sobě víc, než
+    našel.
+  - >-
+    Přístup: z Čertovice po červené přes sedlo Za Lenivou za necelé dvě
+    hodiny (nizketatry.sk uvádí 1:45, treking.cz asi dvě hodiny
+    s krátkou odbočkou), z Vyšné Boce po červené a modré za necelé dvě
+    hodiny, z Bacúchu po červené a modré za dvě a čtvrt. Kdo jde hřeben
+    dál na východ, má to k Andrejcové 20,5 kilometru, necelých sedm
+    hodin.
+  - >-
+    Údaje nesou hiking.sk (stránka útulně, reportáž z roku 2024 i fórum),
+    nizketatry.sk, treking.cz a visitliptov.sk; polohu OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      hiking.sk, profil útulně — 1260 m, poloha u hřebenovky, jedna
+      místnost se dvěma pryčnami, celoroční režim, pramen 100 m
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/6/ramza_turisticka_utulna.html
+  - popis: >-
+      hiking.sk — reportáž „Útulňa Ramža a tajomstvo jej existencie"
+      (31. 1. 2024): seník přestavěný skauty v 70. letech, vyvrácený
+      mýtus o plynovodu, požár Malé Ramže ~2000, údržba Olosovy bandy
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/7833/utulna_ramza_a_tajomstvo_jej_existencie.html
+  - popis: >-
+      fórum hiking.sk k útulně — brigáda 11/2023 (podlaha, studánka,
+      latrína), plná útulňa 21.–22. 9. 2024, funkční kamna
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/fo/5/ramza_turisticka_utulna.html
+  - popis: >-
+      nizketatry.sk — 1260 m, kapacita 15, celoročně bez hospodáře,
+      přístupové časy, pramen 300 m (načteno 9. 8. 2026)
+    url: https://www.nizketatry.sk/chaty/uramza/uramza.html
+  - popis: >-
+      treking.cz — otevřená útulna bez obsluhy, 10–15 míst, pramen 200 m,
+      rekonstrukce před 2007, přístup z Čertovice (načteno 9. 8. 2026)
+    url: https://www.treking.cz/chaty/ramza.htm
+  - popis: >-
+      visitliptov.sk — 1260 m, ~20 osob, kamna, celoročně, poloha v lese
+      bez výhledů (načteno 9. 8. 2026)
+    url: https://www.visitliptov.sk/en/interests/utulna-tourist-shelter-ramza/
+  - popis: >-
+      Facebook útulně „Útulňa Ramža - est. Olosova Banda 1979" — rok
+      v názvu stránky; obsah nedostupný (načteno 9. 8. 2026)
+    url: https://www.facebook.com/shelter.ramza/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=wilderness_hut; ODbL)
+    url: https://www.openstreetmap.org/way/881461286
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/ramza-utulna.yaml (9. 8. 2026);
+  katalogový objekt HUT-0154 — slabá shoda jmen (kandidát „Ramža
+  (útulňa)" × katalog „Útulňa Ramža") přečtena a rozhodnuta: týž objekt
+  (1260 m sedí, poloha sedí).
+
+  ROK VZNIKU vědomě nevyplněn: hiking.sk říká „70. léta", rok 1979 nese
+  jen název facebookové stránky správcovské skupiny — do pole by šel
+  jeden z nich jen s domýšlením. Milník 1979 to přiznává.
+
+  OBEC vědomě nevyplněna: katalog vede Liptovskou Tepličku, ale žádný
+  pramen obec neuvádí a katalog sám je pramen bez URL — kdyby ji doložil
+  jiný pramen, doplnit (DATA-17 R6).
+
+  KAPACITA 15 × ~20 (visitliptov, hiking) × 10–15 (treking) — nižší
+  doložené číslo. SPRÁVCE: formálně NENALEZEN; fakticky Olosova banda
+  (žilinští skauti) — próza i provoz to říkají, kontakty proto prázdné
+  (jen FB bez dostupného obsahu).
+
+  Fotku dodá druhý běh DATA-02, výškový profil DATA-06.
