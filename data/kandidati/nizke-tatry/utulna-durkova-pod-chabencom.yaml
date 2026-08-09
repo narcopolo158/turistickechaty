@@ -1,0 +1,35 @@
+# Útulňa Ďurková pod Chabencom — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-09)
+# Zdroj: https://www.openstreetmap.org/way/184031012 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/nizke-tatry/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Útulňa Ďurková pod Chabencom
+slug: utulna-durkova-pod-chabencom
+zeme: sk
+oblast: nizke-tatry
+typ: obsluhovana
+lat: 48.9310665
+lng: 19.4667983
+vyska: 1623
+obec: Jasenie
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/184031012 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+kontakty:
+  web: https://hiking.dennikn.sk/ar/111/utulna_durkova_pod_chabencom.html
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/184031012 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Jan 1-Dec 31 sunrise-sunset+

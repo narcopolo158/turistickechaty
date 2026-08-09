@@ -1,0 +1,407 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T12:22:20Z",
+    "timestamp_areas_base": "2026-08-08T01:53:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 3244486361,
+  "lat": 49.0650427,
+  "lon": 19.4351021,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Cukráreň Tatiana"
+  }
+},
+{
+  "type": "node",
+  "id": 3914895163,
+  "lat": 49.1164645,
+  "lon": 19.3034890,
+  "tags": {
+    "access": "private",
+    "disused:man_made": "tower",
+    "height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3914895185,
+  "lat": 49.1171829,
+  "lon": 19.3048750,
+  "tags": {
+    "access": "private",
+    "disused:man_made": "tower",
+    "height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3914895200,
+  "lat": 49.1173888,
+  "lon": 19.3042185,
+  "tags": {
+    "access": "private",
+    "disused:man_made": "tower",
+    "height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4143821146,
+  "lat": 48.9468647,
+  "lon": 19.7603943,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhladňa Krajčov vrch",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 5040060576,
+  "lat": 49.0648922,
+  "lon": 19.4347237,
+  "tags": {
+    "amenity": "bar",
+    "name": "Bistro"
+  }
+},
+{
+  "type": "node",
+  "id": 5792396154,
+  "lat": 48.8343657,
+  "lon": 19.8657211,
+  "tags": {
+    "height": "30",
+    "man_made": "tower",
+    "name": "Polomské očko",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7242095654,
+  "lat": 49.0606723,
+  "lon": 19.8995505,
+  "tags": {
+    "height": "28",
+    "man_made": "tower",
+    "name": "Rozhľadňa Májka",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7242550863,
+  "lat": 48.9753428,
+  "lon": 19.5851796,
+  "tags": {
+    "height": "10",
+    "man_made": "tower",
+    "name": "Bencúrova veža",
+    "source": "survey",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7249672840,
+  "lat": 49.0684204,
+  "lon": 19.7611445,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa Vavrišovo",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 8998142784,
+  "lat": 48.8186184,
+  "lon": 19.6047365,
+  "tags": {
+    "height": "40",
+    "man_made": "tower",
+    "name": "Vyhliadková veža Horné Lazy",
+    "opening_hours": "24/7",
+    "start_date": "2021",
+    "tower:construction": "lattice",
+    "tower:type": "observation",
+    "website": "https://www.pomalevylety.sk/trips/ntatry_brezno_rozhladna"
+  }
+},
+{
+  "type": "node",
+  "id": 9199458486,
+  "lat": 48.9412932,
+  "lon": 19.3603637,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 10836901459,
+  "lat": 49.0906897,
+  "lon": 19.4029632,
+  "tags": {
+    "man_made": "tower",
+    "name": "Farma Likavčan",
+    "source": "Ortofotomozaika SR, survey",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11016318523,
+  "lat": 48.9433169,
+  "lon": 19.5884940,
+  "tags": {
+    "man_made": "mast",
+    "tower:construction": "ukotvená",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 12998765956,
+  "lat": 49.0679525,
+  "lon": 19.7622149,
+  "tags": {
+    "amenity": "pub",
+    "name": "Šport bar"
+  }
+},
+{
+  "type": "node",
+  "id": 13313826160,
+  "lat": 49.0136212,
+  "lon": 20.1698817,
+  "tags": {
+    "man_made": "tower",
+    "name": "Kravianska vyhliadka",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 190982542,
+  "center": {
+    "lat": 49.0249704,
+    "lon": 19.5574817
+  },
+  "nodes": [
+    2015683614,
+    2015683611,
+    2015683618,
+    2015683622,
+    2015683614
+  ],
+  "tags": {
+    "addr:city": "Pavčina Lehota",
+    "addr:conscriptionnumber": "396",
+    "addr:country": "SK",
+    "addr:housenumber": "396",
+    "addr:place": "Pavčina Lehota",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "height": "9",
+    "man_made": "tower",
+    "name": "Rozhľadňa Pavčina Lehota",
+    "ref:minvskaddress": "7001282849",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-07",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 520415916,
+  "center": {
+    "lat": 49.1030969,
+    "lon": 19.4793450
+  },
+  "nodes": [
+    5072371843,
+    5072371842,
+    5072371841,
+    5072371840,
+    5072371843
+  ],
+  "tags": {
+    "man_made": "tower",
+    "source": "Ortofotomozaika SR",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 868403222,
+  "center": {
+    "lat": 48.9467889,
+    "lon": 19.7605274
+  },
+  "nodes": [
+    8094456114,
+    8094456115,
+    8094456116,
+    8094458117,
+    8094456114
+  ],
+  "tags": {
+    "building": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large_x/dom_penzion_ci_v.jpg",
+    "tourism": "chalet",
+    "website": "https://hiking.dennikn.sk/ar/3768/rozhladna_a_bufet_krajcov_vrch.html"
+  }
+},
+{
+  "type": "way",
+  "id": 1116256391,
+  "center": {
+    "lat": 49.1102118,
+    "lon": 19.8010101
+  },
+  "nodes": [
+    10209489739,
+    10209489738,
+    10209489737,
+    10209489736,
+    10209489739
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1304450567,
+  "center": {
+    "lat": 49.0429395,
+    "lon": 19.6808048
+  },
+  "nodes": [
+    12080154442,
+    12080154443,
+    12080154444,
+    12080154445,
+    12080154442
+  ],
+  "tags": {
+    "area": "yes",
+    "building": "tower",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Svätojánska rozhľadňa",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1421725499,
+  "center": {
+    "lat": 49.1036776,
+    "lon": 20.2036572
+  },
+  "nodes": [
+    13065126944,
+    13065126945,
+    13065126946,
+    13065126947,
+    13065126944
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1426785475,
+  "center": {
+    "lat": 48.8434679,
+    "lon": 20.2212273
+  },
+  "nodes": [
+    13115828548,
+    13115828547,
+    13115828546,
+    13115828545,
+    13115828548
+  ],
+  "tags": {
+    "man_made": "tower",
+    "source:geometry": "ZBGIS",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1430362659,
+  "center": {
+    "lat": 49.0652475,
+    "lon": 19.4357454
+  },
+  "nodes": [
+    2425816136,
+    2425816043,
+    2425816040,
+    13148015367,
+    2425816135,
+    2425816136
+  ],
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation",
+    "url": "https://www.facebook.com/partizanskalupca/posts/pfbid0wqB8VLN48LApXD45pqXAbYwBwpSV2ALA9nYbsUE8jEGb5SoypoSwHPmzA16rMvGbl"
+  }
+},
+{
+  "type": "way",
+  "id": 1430947821,
+  "center": {
+    "lat": 48.9662982,
+    "lon": 20.0889635
+  },
+  "nodes": [
+    833716297,
+    833713579,
+    833712856,
+    13153364264,
+    13153364263,
+    833712577,
+    833716297
+  ],
+  "tags": {
+    "contact:phone": "+421917856234",
+    "man_made": "tower",
+    "opening_hours": "Jul-Aug Mo-Fr 10:00-12:00,12:30-16:00; Jul-Aug Su 15:00-17:00; off \"Na požiadanie najmenej 24 hodín pred plánovanou prehliadkou\"",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

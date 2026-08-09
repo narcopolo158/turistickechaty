@@ -1,0 +1,376 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-05-31T22:37:44Z",
+    "timestamp_areas_base": "2026-05-31T22:37:44Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 457955018,
+  "lat": 48.9054611,
+  "lon": 19.7365699,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2025-07-17",
+    "cuisine": "regional",
+    "name": "STIV Čertovica",
+    "opening_hours": "Mo-Su 10:00-17:30",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4385064864,
+  "lat": 48.9062378,
+  "lon": 19.7444214,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata pod Čertovicou",
+    "tourism": "hotel",
+    "website": "http://www.chatapodcertovicou.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 6033672713,
+  "lat": 48.9324639,
+  "lon": 19.5974529,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Kosodrevina",
+    "opening_hours": "Mo-Su 08:30-17:00",
+    "outdoor_seating": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 80031681,
+  "center": {
+    "lat": 48.9232429,
+    "lon": 19.6076453
+  },
+  "nodes": [
+    933744269,
+    933744270,
+    933744271,
+    933744272,
+    933744273,
+    933744274,
+    933744269
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "688",
+    "addr:housenumber": "688",
+    "addr:place": "Horná Lehota",
+    "building": "hotel",
+    "building:material": "wood",
+    "import": "budovy201004drev",
+    "name": "Trangoška",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "hostel",
+    "website": "https://trangoska.sk/",
+    "wikidata": "Q12777672",
+    "wikipedia": "sk:Trangoška"
+  }
+},
+{
+  "type": "way",
+  "id": 184031012,
+  "center": {
+    "lat": 48.9310665,
+    "lon": 19.4667983
+  },
+  "nodes": [
+    1944686624,
+    1944686629,
+    1944686626,
+    1944686621,
+    1944686624
+  ],
+  "tags": {
+    "addr:city": "Jasenie",
+    "addr:conscriptionnumber": "539",
+    "addr:housenumber": "539",
+    "addr:place": "Jasenie",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/utulna.durkova/",
+    "ele": "1623",
+    "electricity": "no",
+    "fee": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/utulna_durkova_pod_c_13.jpg",
+    "internet_access": "no",
+    "name": "Útulňa Ďurková pod Chabencom",
+    "opening_hours": "Jan 1-Dec 31 sunrise-sunset+",
+    "payment:cash": "yes",
+    "reservation": "no",
+    "shower": "no",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "alpine_hut",
+    "website": "https://hiking.dennikn.sk/ar/111/utulna_durkova_pod_chabencom.html",
+    "wikidata": "Q20051156",
+    "wikipedia": "sk:Útulňa Ďurková pod Chabencom"
+  }
+},
+{
+  "type": "way",
+  "id": 211675620,
+  "center": {
+    "lat": 49.0448624,
+    "lon": 19.6417471
+  },
+  "nodes": [
+    2216475661,
+    2216475667,
+    2216475666,
+    2216475662,
+    2216475659,
+    2216475665,
+    2216475663,
+    2216475670,
+    2216475673,
+    2216475676,
+    2216475675,
+    2216475677,
+    2216475678,
+    2216475671,
+    2216475672,
+    2216475669,
+    2216475668,
+    2216475664,
+    2216475661
+  ],
+  "tags": {
+    "addr:city": "Závažná Poruba",
+    "addr:conscriptionnumber": "721",
+    "addr:country": "SK",
+    "addr:housenumber": "721",
+    "addr:place": "Závažná Poruba",
+    "addr:postcode": "03202",
+    "amenity": "restaurant",
+    "building": "yes",
+    "email": "chata@chataopalisko.sk",
+    "mobile": "+421 903 806 204",
+    "name": "Chata Opalisko",
+    "opening_hours": "Mo-Su 09:00-19:00",
+    "phone": "+421 44 554 71 78",
+    "ref:minvskaddress": "10915344",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "guest_house",
+    "website": "https://www.chataopalisko.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 234323491,
+  "center": {
+    "lat": 48.9439875,
+    "lon": 19.4323681
+  },
+  "nodes": [
+    2425809865,
+    2425809867,
+    2425809891,
+    2425809895,
+    2425810000,
+    2425809995,
+    2425810006,
+    2425810002,
+    2425809989,
+    2425809979,
+    2425809920,
+    2425809924,
+    2425809881,
+    2425809885,
+    2425809865
+  ],
+  "tags": {
+    "addr:city": "Partizánska Ľupča",
+    "addr:conscriptionnumber": "21",
+    "addr:country": "SK",
+    "addr:housenumber": "21",
+    "addr:place": "Magurka",
+    "addr:postcode": "03215",
+    "amenity": "restaurant",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/magurkaliptov",
+    "email": "info@magurka-liptov.sk",
+    "fee": "no",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_obnovena_chata_magu.jpg",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Magurka",
+    "opening_hours": "Mo-Th 09:00-20:00; Fr,Sa 08:00-22:00; Su 08:00-20:00",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "phone": "+421 903 704 444",
+    "ref:minvskaddress": "15801016",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-11",
+    "tourism": "chalet",
+    "url": "https://hiking.dennikn.sk/ar/1269/chata_magurka_zrekonstruovana.html",
+    "website": "https://magurka-liptov.sk/",
+    "wikidata": "Q56340551"
+  }
+},
+{
+  "type": "way",
+  "id": 304515879,
+  "center": {
+    "lat": 48.9678804,
+    "lon": 19.5765182
+  },
+  "nodes": [
+    3090639793,
+    3090639796,
+    3090639799,
+    3090639797,
+    3090639801,
+    3090639806,
+    3090639803,
+    3090639805,
+    3090639804,
+    3090639800,
+    7248743725,
+    3090639790,
+    3090639795,
+    3090639776,
+    3090639772,
+    3090639781,
+    3090639780,
+    3090639770,
+    3090639767,
+    3090639779,
+    3090639783,
+    3090639775,
+    3090639793
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "76",
+    "addr:country": "SK",
+    "addr:housenumber": "76",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "building:levels": "1",
+    "email": "hotel.liptov@gmail.com",
+    "name": "Liptov",
+    "phone": "+421445599999",
+    "ref:minvskaddress": "15636500",
+    "roof:levels": "3",
+    "roof:shape": "skillion",
+    "rooms": "45",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-04",
+    "source:conscriptionnumber": "kapor2",
+    "stars": "2",
+    "tourism": "hotel",
+    "website": "https://www.hotel-liptov.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 435913009,
+  "center": {
+    "lat": 48.9429983,
+    "lon": 19.5914110
+  },
+  "nodes": [
+    4338072365,
+    4338072369,
+    4338072367,
+    4338072366,
+    7240646209,
+    7240646208,
+    4338072371,
+    7240646207,
+    7240646206,
+    7240646205,
+    4338072374,
+    4338072373,
+    4338072372,
+    4338072370,
+    4338072365
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "697",
+    "addr:housenumber": "697",
+    "addr:place": "Horná Lehota",
+    "building": "retail",
+    "contact:email": "kamienka@kamennachata.sk",
+    "contact:phone": "+421 48 6170039",
+    "ele": "2000",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large_x/kamenna_chata_na_ch.jpg",
+    "name": "Kamenná chata pod Chopkom",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "power_supply": "yes",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/476/kamenna_chata_zrekonstruovana.html",
+    "website": "https://www.kamennachata.sk",
+    "wikidata": "Q11733957",
+    "wikipedia": "sk:Kamenná chata pod Chopkom"
+  }
+},
+{
+  "type": "way",
+  "id": 502011544,
+  "center": {
+    "lat": 48.9015714,
+    "lon": 20.0232832
+  },
+  "nodes": [
+    4926166806,
+    4926166807,
+    4926166808,
+    4926166809,
+    4926166806
+  ],
+  "tags": {
+    "addr:city": "Liptovská Teplička",
+    "addr:conscriptionnumber": "673",
+    "addr:country": "SK",
+    "addr:housenumber": "673",
+    "addr:place": "Liptovská Teplička",
+    "addr:postcode": "05940",
+    "building": "yes",
+    "capacity": "30",
+    "contact:facebook": "https://www.facebook.com/andrejcova/",
+    "drinking_water": "yes",
+    "ele": "1410",
+    "electricity": "no",
+    "email": "ahoj@andrejcova.sk",
+    "fee": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_utulna_andrejcova_zrek.jpg",
+    "internet_access": "no",
+    "name": "Útulňa Andrejcová",
+    "opening_hours": "May 15-Nov 5 sunrise-sunset+",
+    "payment:cash": "yes",
+    "phone": "+421904596443",
+    "ref:minvskaddress": "7000700718",
+    "reservation": "yes",
+    "shower": "no",
+    "source:addr": "minvskaddress 2023-03",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/187/utulna_andrejcova_zrekonstruovana.html",
+    "website": "https://andrejcova.sk/",
+    "wikidata": "Q9151080",
+    "wikipedia": "sk:Útulňa Andrejcová"
+  }
+}
+
+  ]
+}

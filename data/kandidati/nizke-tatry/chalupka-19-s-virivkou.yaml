@@ -1,0 +1,35 @@
+# Chalúpka 19 s vírivkou — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-09)
+# Zdroj: https://www.openstreetmap.org/way/79991827 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/nizke-tatry/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chalúpka 19 s vírivkou
+slug: chalupka-19-s-virivkou
+zeme: sk
+oblast: nizke-tatry
+lat: 49.0481939
+lng: 19.3536905
+obec: Liptovská Štiavnica
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/79991827 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+kontakty:
+  telefon: "+421915494600"
+  email: info@chalupky.sk
+  web: https://www.chalupky.sk/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/79991827 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Chalúpky u babky

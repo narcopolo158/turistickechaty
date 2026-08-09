@@ -1,0 +1,7276 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T12:21:21Z",
+    "timestamp_areas_base": "2026-08-08T11:35:21Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 661212289,
+  "lat": 49.0716289,
+  "lon": 19.2679329,
+  "tags": {
+    "contact:facebook": "https://www.facebook.com/pages/Chata-Pod-Brdom-Ru%C5%BEomberok/145305332198307",
+    "name": "Chata pod Brdom",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 968189195,
+  "lat": 48.8524142,
+  "lon": 20.1875463,
+  "tags": {
+    "name": "Chalupa Kováč",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 1265840001,
+  "lat": 49.0475916,
+  "lon": 19.6787258,
+  "tags": {
+    "name": "Chata Trenčan",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 1268059681,
+  "lat": 49.0259609,
+  "lon": 19.6720957,
+  "tags": {
+    "name": "Chata Majka",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 1268060107,
+  "lat": 49.0306034,
+  "lon": 19.6739097,
+  "tags": {
+    "name": "Hotel Liptovský dvor",
+    "stars": "4",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 1293963813,
+  "lat": 48.8426225,
+  "lon": 20.2547140,
+  "tags": {
+    "name": "Rita",
+    "tourism": "chalet",
+    "website": "https://hiking.dennikn.sk/ar/401/chata_rita_cuntava.html"
+  }
+},
+{
+  "type": "node",
+  "id": 1304867806,
+  "lat": 49.0711930,
+  "lon": 19.2750198,
+  "tags": {
+    "email": "chatasunday@hrabovo.com",
+    "name": "Chata Sunday",
+    "tourism": "chalet",
+    "website": "https://www.hrabovo.com/chatasunday"
+  }
+},
+{
+  "type": "node",
+  "id": 1304867846,
+  "lat": 49.0717338,
+  "lon": 19.2756796,
+  "tags": {
+    "email": "chatamalina@hrabovo.com",
+    "name": "Chata Malina",
+    "phone": "+421 918 750 589",
+    "tourism": "chalet",
+    "website": "https://www.hrabovo.com/chatamalina"
+  }
+},
+{
+  "type": "node",
+  "id": 1372113500,
+  "lat": 49.0414538,
+  "lon": 19.8279351,
+  "tags": {
+    "name": "Chata Lucka",
+    "tourism": "guest_house",
+    "website": "http://www.chatalucka.szm.com"
+  }
+},
+{
+  "type": "node",
+  "id": 1540740672,
+  "lat": 48.9497700,
+  "lon": 19.7666221,
+  "tags": {
+    "addr:housename": "Šafrán",
+    "addr:housenumber": "211",
+    "addr:street": "Nižná Boca",
+    "designation": "Ubytovanie na súkromí",
+    "name": "Šafrán - ubytovanie",
+    "tourism": "chalet",
+    "website": "https://www.boca-ubytovanie.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 1979143596,
+  "lat": 48.8723764,
+  "lon": 19.7345129,
+  "tags": {
+    "drinking_water": "no",
+    "name": "Liška",
+    "power_supply": "no",
+    "shower": "no",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 1979162655,
+  "lat": 48.8570497,
+  "lon": 19.8076570,
+  "tags": {
+    "name": "Chata pod Lipou",
+    "phone": "+421 902 799 986",
+    "tourism": "guest_house",
+    "website": "www.chatapodlipou.sk"
+  }
+},
+{
+  "type": "node",
+  "id": 1979162721,
+  "lat": 48.8833971,
+  "lon": 19.7981806,
+  "tags": {
+    "access": "private",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 2294296907,
+  "lat": 48.9777575,
+  "lon": 19.7734484,
+  "tags": {
+    "name": "Chata Luna",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 2425940714,
+  "lat": 48.9608599,
+  "lon": 19.8106427,
+  "tags": {
+    "building": "yes",
+    "name": "Predné",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 2427593002,
+  "lat": 48.9288206,
+  "lon": 19.8643253,
+  "tags": {
+    "addr:conscriptionnumber": "152",
+    "addr:housenumber": "152",
+    "name": "Hodruša",
+    "operator": "LesySR",
+    "tourism": "chalet",
+    "website": "https://ubytovanie.lesy.sk/chata.html/312/hodrusa"
+  }
+},
+{
+  "type": "node",
+  "id": 2499524474,
+  "lat": 48.9798680,
+  "lon": 19.5973391,
+  "tags": {
+    "email": "jhurtaj@stonline.sk",
+    "internet_access": "wlan",
+    "name": "Bungalovy Jasná Lúčky",
+    "operator": "Bungalovy Jasná, s. r. o.",
+    "phone": "+421903800124",
+    "tourism": "chalet",
+    "website": "https://www.bungalovyjasnalucky.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 2500366791,
+  "lat": 49.0333932,
+  "lon": 19.6728168,
+  "tags": {
+    "name": "Chaty pod Bielym",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 2741603704,
+  "lat": 48.8362596,
+  "lon": 20.3370635,
+  "tags": {
+    "name": "Stará horáreň",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 2741752002,
+  "lat": 48.8688800,
+  "lon": 20.3481920,
+  "tags": {
+    "name": "Lesanka",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 2836845980,
+  "lat": 48.9910764,
+  "lon": 19.2005979,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "ele": "1339",
+    "email": "info@smrekovica.sk",
+    "name": "Horská chata Smrekovica",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "phone": "+421 910 779 756",
+    "ref:vatin": "2121843911",
+    "website": "https://smrekovica.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 2836845981,
+  "lat": 48.9911025,
+  "lon": 19.2006156,
+  "tags": {
+    "email": "info@smrekovica.sk",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_hsmrekovica.jpg",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Horská chata Smrekovica",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "phone": "+421 910 779 756",
+    "ref:vatin": "2121843911",
+    "tourism": "hotel",
+    "url": "https://hiking.dennikn.sk/ar/74/horsky_hotel_smrekovica.html",
+    "website": "https://smrekovica.sk/",
+    "wikidata": "Q123245926",
+    "wikipedia": "sk:Horská chata Smrekovica"
+  }
+},
+{
+  "type": "node",
+  "id": 3054401999,
+  "lat": 48.9968521,
+  "lon": 19.3113203,
+  "tags": {
+    "amenity": "shelter",
+    "fireplace": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_brankovsky_salas.jpg",
+    "name": "na Brankove",
+    "shelter_type": "basic_hut",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/667/brankovsky_salas.html"
+  }
+},
+{
+  "type": "node",
+  "id": 3345449135,
+  "lat": 48.9241989,
+  "lon": 19.6088347,
+  "tags": {
+    "name": "Ďumbier",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 3529010563,
+  "lat": 49.0715785,
+  "lon": 19.2679183,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Chata pod Brdom"
+  }
+},
+{
+  "type": "node",
+  "id": 3535121624,
+  "lat": 49.0478728,
+  "lon": 19.3547553,
+  "tags": {
+    "contact:website": "http://www.chalupky.sk/chalupky",
+    "internet_access": "yes",
+    "name": "Chalúpka 23",
+    "operator": "Chalúpky u babky",
+    "stars": "3",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 3677458557,
+  "lat": 48.9156872,
+  "lon": 20.1828578,
+  "tags": {
+    "ele": "1440",
+    "name": "Smrečiny",
+    "operator": "klub turistov Spišské Bystré",
+    "tourism": "chalet",
+    "website": "https://ktsb.dobrodruh.net/hlavne-menu/turisticka-chata/turisticka-chata"
+  }
+},
+{
+  "type": "node",
+  "id": 3924352120,
+  "lat": 48.9104345,
+  "lon": 20.0249131,
+  "tags": {
+    "capacity": "10",
+    "drinking_water": "no",
+    "fee": "no",
+    "fireplace": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_utulna_budnarka.jpg",
+    "name": "Búda nárekov Budnárka",
+    "reservation": "no",
+    "shower": "no",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/2060/utulna_budnarka.html"
+  }
+},
+{
+  "type": "node",
+  "id": 4251283689,
+  "lat": 48.8107555,
+  "lon": 19.3427074,
+  "tags": {
+    "email": "rf@twd.sk",
+    "name": "Lopata",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4252953255,
+  "lat": 48.8781263,
+  "lon": 19.2364892,
+  "tags": {
+    "name": "Chata pod Magurou",
+    "tourism": "hostel",
+    "website": "http://www.maguradonovaly.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 4286115400,
+  "lat": 49.0911786,
+  "lon": 20.0589051,
+  "tags": {
+    "name": "Chata Pleso",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 4357409073,
+  "lat": 48.9724610,
+  "lon": 19.5983809,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata Záhradky"
+  }
+},
+{
+  "type": "node",
+  "id": 4372570126,
+  "lat": 49.0563518,
+  "lon": 19.9712644,
+  "tags": {
+    "name": "Važecká chata",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4380977276,
+  "lat": 48.9580857,
+  "lon": 19.5005086,
+  "tags": {
+    "access": "yes",
+    "capacity": "6",
+    "description": "v zime zavretá - len na povolenie vlastníka",
+    "name": "Kolibka",
+    "shower": "no",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 4385064864,
+  "lat": 48.9062378,
+  "lon": 19.7444214,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata pod Čertovicou",
+    "tourism": "hotel",
+    "website": "http://www.chatapodcertovicou.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 4395506627,
+  "lat": 49.0476959,
+  "lon": 19.3528054,
+  "tags": {
+    "email": "http://www.chalupky.sk",
+    "guest_house": "house",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 07 s vírivkou a so saunou",
+    "operator": "Chalúpky u babky",
+    "rooms": "2",
+    "tourism": "chalet",
+    "website": "https://www.chalupky.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 4395506629,
+  "lat": 49.0478010,
+  "lon": 19.3538498,
+  "tags": {
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 03 s vírivkou, saunou",
+    "operator": "Chalúpky u babky",
+    "tourism": "chalet",
+    "website": "https://www.chalupky.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 4395506630,
+  "lat": 49.0478800,
+  "lon": 19.3536845,
+  "tags": {
+    "name": "Chalúpka 04 s vírivkou",
+    "operator": "Chalúpky u babky",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4395506631,
+  "lat": 49.0478942,
+  "lon": 19.3527847,
+  "tags": {
+    "guest_house": "house",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 08 s bazénom, vírivkou a saunou",
+    "operator": "Chalupky u babky",
+    "rooms": "4",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4395506632,
+  "lat": 49.0483060,
+  "lon": 19.3534710,
+  "tags": {
+    "email": "info@chalupky.sk",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 18",
+    "operator": "Chalúpky u babky",
+    "phone": "+421 915494600",
+    "tourism": "chalet",
+    "website": "https://www.chalupky.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 4395506633,
+  "lat": 49.0481333,
+  "lon": 19.3539657,
+  "tags": {
+    "name": "Chalúpka 20 s vírivkou",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4395506634,
+  "lat": 49.0479492,
+  "lon": 19.3544989,
+  "tags": {
+    "guest_house": "house",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 22",
+    "operator": "Chalúpky u babky",
+    "rooms": "3",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4423041089,
+  "lat": 48.8702173,
+  "lon": 19.5684720,
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:housenumber": "770",
+    "addr:postcode": "97681",
+    "addr:street": "Krpáčovo",
+    "ele": "760",
+    "name": "Chata Krpáčovo",
+    "name:cs": "Chata Krpáčovo",
+    "name:de": "Die Hütte Krpacovo",
+    "name:en": "Cottage Krpacovo",
+    "name:sk": "Chata Krpáčovo",
+    "source": "survey",
+    "tourism": "chalet",
+    "website": "https://www.chata-krpacovo.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 4436915233,
+  "lat": 48.9001107,
+  "lon": 19.2547186,
+  "tags": {
+    "access": "yes",
+    "name": "Salaš v Žarnovke",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 4449401261,
+  "lat": 48.9897565,
+  "lon": 19.3995045,
+  "tags": {
+    "access": "yes",
+    "name": "Na Jackovej",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 4680954103,
+  "lat": 48.9996540,
+  "lon": 19.5062135,
+  "tags": {
+    "name": "Horáreň DÚBRAVKA",
+    "operator": "http://www.horarendubravka.szm.com/",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4740561559,
+  "lat": 49.0556425,
+  "lon": 19.2624131,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Majekova chata"
+  }
+},
+{
+  "type": "node",
+  "id": 4743562082,
+  "lat": 49.0701407,
+  "lon": 19.2711815,
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:country": "SK",
+    "addr:street": "Hrabovská dolina",
+    "name": "Halinka",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4743562083,
+  "lat": 49.0701288,
+  "lon": 19.2713854,
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:country": "SK",
+    "addr:street": "Hrabovská dolina",
+    "name": "Halina",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4751203280,
+  "lat": 49.0208954,
+  "lon": 19.5277558,
+  "tags": {
+    "name": "Horáreň Dobák",
+    "operator": "Adecor s.r.o.",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4799881635,
+  "lat": 49.0556039,
+  "lon": 19.2626113,
+  "tags": {
+    "name": "Majekova chata",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 4902528659,
+  "lat": 49.0470773,
+  "lon": 19.2503053,
+  "tags": {
+    "name": "Mederlyho chata",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "node",
+  "id": 5038492086,
+  "lat": 49.0710335,
+  "lon": 19.2653025,
+  "tags": {
+    "name": "Chata Malino",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 5148467100,
+  "lat": 49.0123478,
+  "lon": 19.2260045,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 5182420948,
+  "lat": 48.9438606,
+  "lon": 19.4276154,
+  "tags": {
+    "name": "Chata pod Javormi",
+    "number_of_apartments": "1",
+    "operator": "Ľubica Kubánová 0948 285 585",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 5200736621,
+  "lat": 48.8416122,
+  "lon": 19.6009270,
+  "tags": {
+    "contact:facebook": "https://www.facebook.com/chalupa.u.havranov/",
+    "email": "marianhavran213@gmail.com",
+    "guest_house": "house",
+    "name": "Chalupa u Havranov",
+    "phone": "+421 903 272 555",
+    "tourism": "guest_house",
+    "website": "https://chalupauhavranov.weebly.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 5546185220,
+  "lat": 49.0390909,
+  "lon": 19.2787434,
+  "tags": {
+    "name": "Chata 9005",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "node",
+  "id": 5560026557,
+  "lat": 49.0402266,
+  "lon": 19.2784381,
+  "tags": {
+    "name": "Chata Evka",
+    "operator": "Eva Lauková",
+    "tourism": "apartment",
+    "website": "https://www.chataevka.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 5560034388,
+  "lat": 49.0398849,
+  "lon": 19.2782922,
+  "tags": {
+    "name": "Chata Margita",
+    "operator": "Ondrík",
+    "tourism": "apartment",
+    "website": "http://www.vypadni.sk/sk/chalupa-margita"
+  }
+},
+{
+  "type": "node",
+  "id": 5602787410,
+  "lat": 49.0566506,
+  "lon": 19.2341651,
+  "tags": {
+    "name": "Chata pod Kozím",
+    "operator": "TJ Máj Černová",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "node",
+  "id": 5650151570,
+  "lat": 48.9924307,
+  "lon": 19.2361710,
+  "tags": {
+    "name": "Bunka v Prostrednom grúni",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 5721130208,
+  "lat": 49.0478788,
+  "lon": 19.3533608,
+  "tags": {
+    "name": "Chalúpka 05 s vírivkou",
+    "operator": "Chalúpky u babky",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 5833405935,
+  "lat": 49.0221722,
+  "lon": 19.3057519,
+  "tags": {
+    "name": "Polianky",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 6030763814,
+  "lat": 48.9466052,
+  "lon": 19.7695997,
+  "tags": {
+    "name": "Chata Diamír",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "node",
+  "id": 6291833099,
+  "lat": 48.8781149,
+  "lon": 19.2364427,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata pod Magurou",
+    "opening_hours": "Mo-Su 10:00-18:00"
+  }
+},
+{
+  "type": "node",
+  "id": 6489116839,
+  "lat": 49.0870554,
+  "lon": 19.2014953,
+  "tags": {
+    "name": "Mlynová koliba",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 6652748441,
+  "lat": 49.0598284,
+  "lon": 19.9004298,
+  "tags": {
+    "access": "private",
+    "name": "Chatky Východná",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 6712570759,
+  "lat": 49.0485833,
+  "lon": 19.4121389,
+  "tags": {
+    "beds": "5",
+    "contact:facebook": "https://www.facebook.com/nastrome.sk/",
+    "contact:instagram": "https://www.instagram.com/nastrome.sk/",
+    "email": "info@nastrome.sk",
+    "name": "Dom na strome",
+    "operator": "SaLiD s.r.o.",
+    "phone": "+421 944 266 078",
+    "rooms": "1",
+    "tourism": "chalet",
+    "website": "https://nastrome.sk"
+  }
+},
+{
+  "type": "node",
+  "id": 7243692680,
+  "lat": 48.9631911,
+  "lon": 19.5859583,
+  "tags": {
+    "amenity": "restaurant",
+    "capacity": "60",
+    "cuisine": "regional",
+    "name": "Chata Koliesko",
+    "website": "https://www.jasna-koliesko.sk/#section-restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 7248743761,
+  "lat": 48.9692776,
+  "lon": 19.5752603,
+  "tags": {
+    "amenity": "restaurant",
+    "capacity": "65",
+    "cuisine": "regional;international",
+    "name": "Mikulášska chata",
+    "opening_hours": "Mo-Su 12:00-20:00",
+    "source": "survey",
+    "website": "https://www.mikulasskachata.sk/hotel/gastronomia/"
+  }
+},
+{
+  "type": "node",
+  "id": 7398878071,
+  "lat": 48.9889803,
+  "lon": 19.3205416,
+  "tags": {
+    "access": "yes",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 7501867621,
+  "lat": 49.0745143,
+  "lon": 19.2316264,
+  "tags": {
+    "note": "stará chata",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 7501867622,
+  "lat": 49.0767821,
+  "lon": 19.2320006,
+  "tags": {
+    "name": "Škorák Šulík",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 7628706994,
+  "lat": 48.8505224,
+  "lon": 19.9076910,
+  "tags": {
+    "contact:website": "https://chataukaroliny.webnode.sk/",
+    "name": "Chata u Karolíny",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "node",
+  "id": 7701414820,
+  "lat": 48.9461727,
+  "lon": 19.3564376,
+  "tags": {
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 7701414843,
+  "lat": 48.9426939,
+  "lon": 19.3487471,
+  "tags": {
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 7889002310,
+  "lat": 49.0006157,
+  "lon": 19.4201589,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 8151830201,
+  "lat": 48.9132078,
+  "lon": 19.3322307,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 8261997458,
+  "lat": 48.8648697,
+  "lon": 19.2196749,
+  "tags": {
+    "email": "rezervacie@chatamistrik.sk",
+    "name": "Chata Mistrík",
+    "tourism": "chalet",
+    "website": "https://www.chatamistrik.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 8439340892,
+  "lat": 48.8719771,
+  "lon": 19.6037154,
+  "tags": {
+    "addr:city": "Bystrá",
+    "addr:housenumber": "710",
+    "addr:postcode": "97701",
+    "addr:street": "Tale",
+    "bar": "yes",
+    "brand": "Partymaker Group",
+    "email": "info@chatatale.eu",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "CHATA TALE - Dom Horskej služby",
+    "reservation": "recommended",
+    "rooms": "20",
+    "smoking": "outside",
+    "stars": "3",
+    "start_date": "2021",
+    "tourism": "hotel",
+    "website": "https://www.chatatale.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 8726365815,
+  "lat": 48.9063537,
+  "lon": 19.3268394,
+  "tags": {
+    "name": "Banášov bok",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 8817449096,
+  "lat": 49.0199368,
+  "lon": 19.5756991,
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:housenumber": "70",
+    "addr:postcode": "03101",
+    "addr:street": "Demänovská Dolina",
+    "description": "Chata Chopok v Demänovskej Doline - Jasnej. Ubytovanie v izbách alebo apartmánoch. 500m od Demänovskej ľadovej jaskyne a 6km od centra Liptovského Mikuláša.",
+    "guest_house": "guest_house",
+    "image": "https://www.1-2-3-ubytovanie.sk/images/photo/chata-chopok/chata-chopok-nizke-tatry-demanovska-dolina-jasna-17.jpg",
+    "name": "Chata CHOPOK",
+    "tourism": "guest_house",
+    "website": "https://chatachopok.123u.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 8824487921,
+  "lat": 49.0530643,
+  "lon": 20.0817593,
+  "tags": {
+    "description": "Chalupa v obci Štrba - Vysoké Tatry. Chalupa Šípka má 3 izby, kuchyňu, 2 kúpeľne. K dispozícii je záhrada, altánok, gril. Veľké detské ihrisko oproti.",
+    "guest_house": "guest_house",
+    "image": "https://www.1-2-3-ubytovanie.sk/images/photo/chalupa-sipka/chalupa-sipka-Strba-19.jpg",
+    "name": "Chalupa Šípka",
+    "tourism": "guest_house",
+    "website": "https://sipka.123u.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 8831676718,
+  "lat": 49.0740717,
+  "lon": 19.2781409,
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:postcode": "034 01",
+    "addr:street": "Hrabovská dolina",
+    "description": "Chata Helena v Skiparku Ružomberok, Hrabovo - Malinô Brdo. V chate je sauna, vináreň, krb, kachľová pec. Pri chate je krb a ohnisko.",
+    "guest_house": "guest_house",
+    "image": "https://www.1-2-3-ubytovanie.sk/images/photo/chata-helena/chata-helena-Ruzomberok-14.jpg",
+    "name": "Chata Helena",
+    "tourism": "guest_house",
+    "website": "https://chatahelena.123u.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 8831683912,
+  "lat": 49.0549728,
+  "lon": 20.0759842,
+  "tags": {
+    "description": "Štýlová chalupa Vanda sa nachádza v dedinke Štrba. Päť izieb, tri kúpeľne, spoločenská miestnosť, kuchyňa, pivnička s krbom a sedením, altánok.",
+    "guest_house": "guest_house",
+    "image": "https://www.1-2-3-ubytovanie.sk/images/photo/chalupa-vanda/chalupa-vanda-Strba-1.jpg",
+    "name": "Chalupa Vanda",
+    "tourism": "guest_house",
+    "website": "https://chalupavanda.123u.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 8912361369,
+  "lat": 49.0563672,
+  "lon": 19.9713475,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Važecká chata - bistro",
+    "opening_hours": "Mo-Su 14:00-21:00",
+    "outdoor_seating": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 8972275520,
+  "lat": 49.0924192,
+  "lon": 20.1399406,
+  "tags": {
+    "email": "valek@valek.sk",
+    "name": "Valek",
+    "phone": "+421 905 962 152",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 9044149283,
+  "lat": 48.8436122,
+  "lon": 19.6064459,
+  "tags": {
+    "email": "info@chatapodchopkom.sk",
+    "guest_house": "apartment",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chata pod Chopkom",
+    "phone": "+421 907 745 483",
+    "tourism": "guest_house",
+    "website": "https://www.chatapodchopkom.sk/chata-pod-chopkom.html"
+  }
+},
+{
+  "type": "node",
+  "id": 9044782724,
+  "lat": 48.8416500,
+  "lon": 19.6011535,
+  "tags": {
+    "guest_house": "house",
+    "name": "Chalupa Bystrá",
+    "tourism": "guest_house",
+    "website": "https://www.ubytko.sk/chalupa-bystra/"
+  }
+},
+{
+  "type": "node",
+  "id": 9044782726,
+  "lat": 48.8415279,
+  "lon": 19.6003612,
+  "tags": {
+    "guest_house": "house",
+    "name": "Chata pod Bielou skalou",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 9044988706,
+  "lat": 48.8465658,
+  "lon": 19.6056551,
+  "tags": {
+    "addr:city": "Bystrá",
+    "addr:housenumber": "99",
+    "addr:place": "Bystrá",
+    "addr:postcode": "97701",
+    "contact:facebook": "https://www.facebook.com/ZrubyBystra",
+    "email": "rezervacie@zrubybystra.sk",
+    "guest_house": "pension",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Zruby Bystrá",
+    "operator": "Natural Slovakia s.r.o.",
+    "phone": "+421 910 922 218",
+    "tourism": "chalet",
+    "website": "http://www.zrubybystra.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 9045292054,
+  "lat": 48.8481908,
+  "lon": 19.6055599,
+  "tags": {
+    "email": "info@chatapodchopkom.sk",
+    "guest_house": "house",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chata Chopok",
+    "phone": "+421 907 745 483",
+    "tourism": "guest_house",
+    "website": "https://www.chatapodchopkom.sk/chata-chopok.html"
+  }
+},
+{
+  "type": "node",
+  "id": 9045292059,
+  "lat": 48.8434945,
+  "lon": 19.6061919,
+  "tags": {
+    "email": "info@chatapodchopkom.sk",
+    "guest_house": "house",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chata Ďumbier",
+    "phone": "+421 907 745 483",
+    "tourism": "guest_house",
+    "website": "https://www.chatapodchopkom.sk/chata-dumbier.html"
+  }
+},
+{
+  "type": "node",
+  "id": 9115405550,
+  "lat": 49.0741005,
+  "lon": 19.2789768,
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:postcode": "034 01",
+    "addr:street": "Hrabovská dolina",
+    "guest_house": "guest_house",
+    "name": "Chata Volko",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 9190479347,
+  "lat": 49.0249637,
+  "lon": 19.6729949,
+  "tags": {
+    "internet_access": "wlan",
+    "name": "Chata Smrekovica",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 9296483090,
+  "lat": 48.8933285,
+  "lon": 19.7841964,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 9341148009,
+  "lat": 49.0683106,
+  "lon": 19.7642554,
+  "tags": {
+    "email": "chataalpine@gmail.com",
+    "name": "chata Alpine",
+    "phone": "+421 908 920 617",
+    "tourism": "chalet",
+    "website": "https://www.chataalpine.sk"
+  }
+},
+{
+  "type": "node",
+  "id": 9876002598,
+  "lat": 48.8544294,
+  "lon": 20.0136814,
+  "tags": {
+    "description": "Chalupa Bialikova usadlosť v obci Pohorelá. 4 izby s kúpeľňami, spoločenská miestnosť, záhrada. ohnisko, gril, parkovisko, hojdačky.",
+    "name": "Chalupa Bialikova usadlosť",
+    "source": "local knowledge",
+    "tourism": "apartment",
+    "website": "https://bialikova.123u.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 9970893850,
+  "lat": 49.0232936,
+  "lon": 19.5736990,
+  "tags": {
+    "check_date": "2025-10-24",
+    "contact:facebook": "https://www.facebook.com/dragonslairjasna/",
+    "contact:website": "https://dragonslairjasna.sk/",
+    "name": "Dragon's Lair Ski Chalet",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 11192539582,
+  "lat": 49.0543333,
+  "lon": 19.5345724,
+  "tags": {
+    "email": "spefatha@gmail.com",
+    "internet_access": "wlan",
+    "name": "Chata Efatha",
+    "operator": "Samuel Pálenčík",
+    "phone": "+421949121390",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 11221846196,
+  "lat": 49.0707244,
+  "lon": 19.2694400,
+  "tags": {
+    "email": "stefan.forgac@liptovnet.sk",
+    "internet_access": "no",
+    "name": "Chata Relax",
+    "operator": "Štefan Forgáč",
+    "phone": "+421 908 162 712",
+    "tourism": "chalet",
+    "website": "https://www.chatarelaxhrabovo.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 11765775967,
+  "lat": 48.9373402,
+  "lon": 19.8081914,
+  "tags": {
+    "name": "Chorupné",
+    "operator": "LesySR",
+    "tourism": "chalet",
+    "website": "https://ubytovanie.lesy.sk/chata.html/311/chorupne"
+  }
+},
+{
+  "type": "node",
+  "id": 11765775968,
+  "lat": 48.9248538,
+  "lon": 19.8375294,
+  "tags": {
+    "name": "Tajch",
+    "operator": "LesySR",
+    "tourism": "chalet",
+    "website": "https://ubytovanie.lesy.sk/chata.html/310/tajch"
+  }
+},
+{
+  "type": "node",
+  "id": 11765778534,
+  "lat": 49.0488125,
+  "lon": 19.9188352,
+  "tags": {
+    "name": "Gregová",
+    "operator": "Lesy SR",
+    "tourism": "chalet",
+    "website": "https://ubytovanie.lesy.sk/chata.html/317/gregova"
+  }
+},
+{
+  "type": "node",
+  "id": 12055061270,
+  "lat": 48.8695077,
+  "lon": 19.7416913,
+  "tags": {
+    "image": "https://img.hiking.dennikn.sk/article/202301/objavena_mala_utu.jpg",
+    "name": "Útulňa Bukovinka",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/7413/bukovinka.html"
+  }
+},
+{
+  "type": "node",
+  "id": 12082506656,
+  "lat": 48.8453410,
+  "lon": 20.0432189,
+  "tags": {
+    "contact:email": "info@chatapodorlovou.sk",
+    "contact:phone": "+421 905 748 056",
+    "name": "Chata pod Orlovou",
+    "tourism": "chalet",
+    "website": "https://chatapodorlovou.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 12134484107,
+  "lat": 49.0132063,
+  "lon": 20.2047573,
+  "tags": {
+    "access": "private",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 12144202982,
+  "lat": 49.0975905,
+  "lon": 20.0605492,
+  "tags": {
+    "contact:email": "info@psotkovachata.sk",
+    "contact:phone": "+421 944 92 88 19",
+    "name": "Psotkova chata",
+    "tourism": "chalet",
+    "web": "https://www.psotkovachata.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 12234951275,
+  "lat": 48.8955356,
+  "lon": 19.7222564,
+  "tags": {
+    "check_date": "2024-10-08",
+    "currency:XBT": "yes",
+    "name": "Jariabka Challet Zrub Nizke Tatry",
+    "payment:lightning": "yes",
+    "payment:lightning_contactless": "no",
+    "payment:onchain": "yes",
+    "tourism": "chalet",
+    "website": "https://www.fiemso.com/sk/jariabka-chalet-zrub-nizke-tatry"
+  }
+},
+{
+  "type": "node",
+  "id": 12285856171,
+  "lat": 49.0567234,
+  "lon": 19.8837571,
+  "tags": {
+    "name": "Chalupa pod lipou",
+    "tourism": "guest_house",
+    "url": "https://www.megaubytovanie.sk/chalupa-pod-lipou-vychodna"
+  }
+},
+{
+  "type": "node",
+  "id": 12381968801,
+  "lat": 48.8376494,
+  "lon": 19.6393923,
+  "tags": {
+    "material": "wood",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 12484428710,
+  "lat": 48.8330546,
+  "lon": 19.4611851,
+  "tags": {
+    "name": "Chata pod Nízkymi Tatrami",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 12486509962,
+  "lat": 48.8467197,
+  "lon": 19.6536284,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 12486614614,
+  "lat": 48.8661747,
+  "lon": 19.6269562,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 12622882519,
+  "lat": 48.8470212,
+  "lon": 19.6121117,
+  "tags": {
+    "name": "Chata Lenka",
+    "tourism": "chalet",
+    "url": "https://www.megaubytovanie.sk/chata-lenka-myto-pod-dumbierom"
+  }
+},
+{
+  "type": "node",
+  "id": 12830814859,
+  "lat": 49.0964665,
+  "lon": 20.0192413,
+  "tags": {
+    "name": "Chata Veronika",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 12923321323,
+  "lat": 48.8439268,
+  "lon": 20.3092656,
+  "tags": {
+    "building": "yes",
+    "name": "Chata Mláka",
+    "operator": "Mestské lesy Dobšiná",
+    "tourism": "chalet",
+    "website": "https://www.mldobsina.sk/40/chata-mlaky/"
+  }
+},
+{
+  "type": "node",
+  "id": 13018942055,
+  "lat": 48.8457257,
+  "lon": 20.1320956,
+  "tags": {
+    "amenity": "restaurant;bicycle_rental",
+    "email": "info@kralovka.sk",
+    "fee": "yes",
+    "name": "Kráľovohoľská chata",
+    "tourism": "guest_house",
+    "website": "https://kralovka.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 13064204734,
+  "lat": 48.9253746,
+  "lon": 19.6125490,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata Zázvor",
+    "opening_hours": "Mo-Fr 08:00-21:00; Sa,Su 07:00-00:00; PH 07:00-00:00",
+    "website": "https://www.chatazazvor.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 13074134057,
+  "lat": 48.9451038,
+  "lon": 20.3476267,
+  "tags": {
+    "contact:email": "info@chatapiecky.sk",
+    "contact:facebook": "https://www.facebook.com/chatapieckyslovenskyraj/",
+    "contact:instagram": "https://www.instagram.com/pieckychata",
+    "contact:phone": "+421 907 853 784",
+    "name": "Horský penzión Chata Piecky",
+    "tourism": "apartment",
+    "website": "https://chatapiecky.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 13116973601,
+  "lat": 49.0962943,
+  "lon": 20.0566818,
+  "tags": {
+    "name": "Chata u Hagrida",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 13185422566,
+  "lat": 48.8765523,
+  "lon": 19.5832601,
+  "tags": {
+    "name": "Medvedia Chata",
+    "phone": "+421 904 609 686",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 13290488954,
+  "lat": 48.8620861,
+  "lon": 19.3048967,
+  "tags": {
+    "amenity": "shelter",
+    "image": "https://img.hiking.dennikn.sk/article/_older/utulna_v_hiadelsk_9.jpg",
+    "name": "Hiadeľské sedlo",
+    "operator": "NAPANT",
+    "shelter_type": "lean_to",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/1037/taborisko_v_hiadelskom_sedle.html"
+  }
+},
+{
+  "type": "node",
+  "id": 13584411240,
+  "lat": 48.9056538,
+  "lon": 19.7344561,
+  "tags": {
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chata Božena",
+    "tourism": "chalet",
+    "website": "https://chatabozena.123u.sk"
+  }
+},
+{
+  "type": "node",
+  "id": 13658632454,
+  "lat": 49.0490626,
+  "lon": 19.3511780,
+  "tags": {
+    "addr:city": "Liptovská Štiavnica",
+    "addr:housenumber": "528",
+    "addr:postcode": "03401",
+    "addr:street": "Drevenice",
+    "email": "info@chalupky.sk",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 28 s vírivkou, saunou",
+    "operator": "Chalúpky u babky",
+    "phone": "+421915494600",
+    "tourism": "chalet",
+    "website": "https://www.chalupky.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 13658648964,
+  "lat": 49.0482154,
+  "lon": 19.3536897,
+  "tags": {
+    "addr:city": "Liptovská Štiavnica",
+    "addr:housenumber": "519/10",
+    "addr:postcode": "03401",
+    "addr:street": "Drevenice",
+    "email": "info@chalupky.sk",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 19 s vírivkou",
+    "operator": "Chalúpky u babky",
+    "phone": "+421915494600",
+    "tourism": "chalet",
+    "website": "https://www.chalupky.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 13752237547,
+  "lat": 48.9796536,
+  "lon": 19.5981134,
+  "tags": {
+    "addr:street": "Demänovská Dolina",
+    "email": "info@chatyjasna.sk",
+    "internet_access": "yes",
+    "name": "Chaty Jasná",
+    "phone": "+421915832414",
+    "tourism": "chalet",
+    "website": "https://www.chatyjasna.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 13752256554,
+  "lat": 49.0359343,
+  "lon": 19.5764898,
+  "tags": {
+    "addr:housenumber": "199",
+    "addr:postcode": "03101",
+    "addr:street": "Demänovská Dolina",
+    "email": "sofia@chatyjasna.sk",
+    "internet_access": "yes",
+    "name": "Chata Sofia",
+    "phone": "+421915832414",
+    "tourism": "chalet",
+    "website": "https://www.chatyjasna.sk/sofia-fotogaleria/"
+  }
+},
+{
+  "type": "node",
+  "id": 14061431350,
+  "lat": 49.0243705,
+  "lon": 19.6698284,
+  "tags": {
+    "name": "Chata Bielo",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 14061431358,
+  "lat": 49.0264825,
+  "lon": 19.6726522,
+  "tags": {
+    "name": "Chata Plus",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 14075379550,
+  "lat": 48.9250814,
+  "lon": 20.3232923,
+  "tags": {
+    "contact:phone": "+421 918 435 046",
+    "internet_access": "no",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 14075380405,
+  "lat": 48.9327168,
+  "lon": 20.3336630,
+  "tags": {
+    "contact:email": "joj@pobox.sk",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=100069807780603",
+    "contact:phone": "+421 904 519 368",
+    "email": "milan308@pobox.sk",
+    "name": "Hájenka Sokol",
+    "phone": "+421 940 366 020",
+    "tourism": "chalet",
+    "website": "https://www.facebook.com/profile.php?id=100069807780603"
+  }
+},
+{
+  "type": "way",
+  "id": 30955562,
+  "center": {
+    "lat": 48.8555995,
+    "lon": 19.2486458
+  },
+  "nodes": [
+    344202990,
+    3684190833,
+    344202993,
+    9029115940,
+    9029115939,
+    344202994,
+    344202990
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/utulnapodkeckou",
+    "drink:beer": "yes",
+    "drink:coffee": "yes",
+    "drink:tea": "yes",
+    "drinking_water": "yes",
+    "email": "viktoria.kosanova@gmail.com",
+    "fee": "yes",
+    "fireplace": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/201909/large_x/utulna_pod_keckou_aa.jpg",
+    "kitchen": "yes",
+    "mattress": "yes",
+    "name": "Útulňa pod Kečkou",
+    "opening_hours": "24/7",
+    "reservation": "recommended",
+    "toilets": "no",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/5810/utulna_zorka_pod_keckou.html"
+  }
+},
+{
+  "type": "way",
+  "id": 58485175,
+  "center": {
+    "lat": 48.7988257,
+    "lon": 20.0820687
+  },
+  "nodes": [
+    725000400,
+    725005285,
+    725003627,
+    725000849,
+    725004575,
+    725002797,
+    724999488,
+    725003862,
+    725000400
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "436",
+    "addr:housenumber": "436",
+    "building": "residential",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 58537506,
+  "center": {
+    "lat": 49.0711110,
+    "lon": 19.2744601
+  },
+  "nodes": [
+    725480188,
+    725470990,
+    725456466,
+    725441836,
+    725486338,
+    725480188
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "3225",
+    "addr:country": "SK",
+    "addr:housenumber": "3225",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "yes",
+    "email": "janovec.global@gmail.com",
+    "import": "budovy201004",
+    "name": "CHATA MÁRIA Hrabovo",
+    "phone": "+421 905 796 725",
+    "ref:minvskaddress": "7102152475",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "chalet",
+    "website": "https://www.megaubytovanie.sk/chata-maria-ruzomberok-hrabovo"
+  }
+},
+{
+  "type": "way",
+  "id": 58539712,
+  "center": {
+    "lat": 49.0706399,
+    "lon": 19.2741146
+  },
+  "nodes": [
+    725445034,
+    725439979,
+    725500407,
+    725466491,
+    725470260,
+    725454884,
+    725451852,
+    725524396,
+    725445034
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "3221",
+    "addr:country": "SK",
+    "addr:housenumber": "3221",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "yes",
+    "import": "budovy201004",
+    "ref:minvskaddress": "7101274125",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2022-03",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 58539923,
+  "center": {
+    "lat": 49.0718445,
+    "lon": 19.2765867
+  },
+  "nodes": [
+    725510908,
+    725472095,
+    725459517,
+    725499857,
+    725476633,
+    725454619,
+    725439492,
+    725523406,
+    725494391,
+    725462926,
+    725451583,
+    725447661,
+    725512496,
+    725472968,
+    725460187,
+    725456044,
+    725510908
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "3683",
+    "addr:country": "SK",
+    "addr:housenumber": "3683",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "apartments",
+    "description": "2x 3 bedroom chalets",
+    "ele": "574",
+    "email": "info.malinobrdo@gmail.com",
+    "import": "budovy201004",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Chata Zebra",
+    "operator": "Rekreas s.r.o.",
+    "phone": "+421904388883",
+    "ref:minvskaddress": "7101273806",
+    "smoking": "outside",
+    "source": "kapor2;local knowledge;gps",
+    "source:addr": "minvskaddress 2023-02",
+    "tourism": "chalet",
+    "website": "http://www.malinobrdo.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 58540034,
+  "center": {
+    "lat": 49.0470729,
+    "lon": 19.2502795
+  },
+  "nodes": [
+    725451084,
+    725447509,
+    725440719,
+    725520901,
+    725469374,
+    725475230,
+    725462501,
+    725453419,
+    725451084
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "2235",
+    "addr:country": "SK",
+    "addr:housenumber": "2235",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Mederlyho chata",
+    "ref:minvskaddress": "7101290988",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-02",
+    "tourism": "chalet",
+    "website": "https://www.megaubytovanie.sk/bab/mederlyho-chata"
+  }
+},
+{
+  "type": "way",
+  "id": 58541923,
+  "center": {
+    "lat": 49.0707568,
+    "lon": 19.2654170
+  },
+  "nodes": [
+    725460567,
+    725489233,
+    725453251,
+    725453508,
+    725460567
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "5193",
+    "addr:country": "SK",
+    "addr:housenumber": "5193",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Liptovo (horské chaty)",
+    "ref:minvskaddress": "7101274587",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "chalet",
+    "website": "http://liptovo.sk/ubytovanie/"
+  }
+},
+{
+  "type": "way",
+  "id": 58542310,
+  "center": {
+    "lat": 49.0556077,
+    "lon": 19.2625413
+  },
+  "nodes": [
+    725443117,
+    725473541,
+    725438812,
+    725452550,
+    725479800,
+    725453241,
+    725522441,
+    4740561558,
+    725443117
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "3800",
+    "addr:country": "SK",
+    "addr:housenumber": "3800",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "yes",
+    "contact:email": "info@majekovachata.eu",
+    "contact:facebook": "https://www.facebook.com/MajekovaChataMalinoBrdo",
+    "contact:phone": "+421 910908857",
+    "contact:website": "http://www.majekovachata.sk/",
+    "import": "budovy201004",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Májekova chata",
+    "ref:minvskaddress": "7101289987",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-02",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 58543961,
+  "center": {
+    "lat": 49.0710862,
+    "lon": 19.2660103
+  },
+  "nodes": [
+    725469517,
+    725513468,
+    725438583,
+    725518479,
+    725469517
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "5191",
+    "addr:country": "SK",
+    "addr:housenumber": "5191",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Liptovo (horské chaty)",
+    "ref:minvskaddress": "7101274521",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-02",
+    "tourism": "chalet",
+    "website": "http://liptovo.sk/ubytovanie/"
+  }
+},
+{
+  "type": "way",
+  "id": 58545282,
+  "center": {
+    "lat": 49.0709395,
+    "lon": 19.2658955
+  },
+  "nodes": [
+    725522763,
+    725528653,
+    725527972,
+    725493977,
+    725522763
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "5192",
+    "addr:country": "SK",
+    "addr:housenumber": "5192",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Liptovo (horské chaty)",
+    "ref:minvskaddress": "7101274532",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-02",
+    "tourism": "chalet",
+    "website": "http://liptovo.sk/ubytovanie/"
+  }
+},
+{
+  "type": "way",
+  "id": 58546279,
+  "center": {
+    "lat": 49.0709148,
+    "lon": 19.2656445
+  },
+  "nodes": [
+    725474896,
+    725477332,
+    725441422,
+    725495795,
+    725445645,
+    725500123,
+    725474896
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "3303",
+    "addr:country": "SK",
+    "addr:housenumber": "3303",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Liptovo (horské chaty)",
+    "ref:minvskaddress": "7101274037",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "chalet",
+    "website": "http://liptovo.sk/ubytovanie/"
+  }
+},
+{
+  "type": "way",
+  "id": 58546532,
+  "center": {
+    "lat": 49.0722689,
+    "lon": 19.2765835
+  },
+  "nodes": [
+    725524770,
+    725474607,
+    725470931,
+    725458018,
+    725518339,
+    725491635,
+    725453467,
+    725439027,
+    725524770
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "3305",
+    "addr:country": "SK",
+    "addr:housenumber": "3305",
+    "addr:place": "Ružomberok",
+    "addr:postcode": "03401",
+    "building": "yes",
+    "description": "5 bedrooms, livingroom, 16 poeple",
+    "ele": "568",
+    "email": "info.malinobrdo@gmail.com",
+    "import": "budovy201004",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Chata Kamenar",
+    "operator": "Rekreas s.r.o.",
+    "phone": "+421904388883",
+    "ref:minvskaddress": "7101274048",
+    "smoking": "outside",
+    "source": "kapor2;local knowledge;gps",
+    "source:addr": "minvskaddress 2023-02",
+    "tourism": "chalet",
+    "website": "http://malinobrdo.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 58960472,
+  "center": {
+    "lat": 49.0607856,
+    "lon": 19.5832516
+  },
+  "nodes": [
+    730677667,
+    730677578,
+    730676805,
+    730675820,
+    730677667
+  ],
+  "tags": {
+    "addr:city": "Liptovský Mikuláš",
+    "addr:conscriptionnumber": "234",
+    "addr:housenumber": "234/14",
+    "addr:postcode": "03101",
+    "addr:street": "Obchodná",
+    "addr:streetnumber": "14",
+    "addr:suburb": "Demänová",
+    "building": "yes",
+    "email": "penzionveverica@gmail.com",
+    "import": "budovy201004",
+    "name": "Privát Veverica",
+    "operator": "Martina Piatková",
+    "phone": "+421907250122",
+    "ref:minvskaddress": "15634069",
+    "source": "kapor2",
+    "source:streetnumber": "minvskaddress 2020-11",
+    "tourism": "chalet",
+    "website": "https://www.ubytovanieveverica.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 58960595,
+  "center": {
+    "lat": 49.0611396,
+    "lon": 19.5828306
+  },
+  "nodes": [
+    730678738,
+    730677826,
+    730677069,
+    730679127,
+    730678349,
+    730677507,
+    730676699,
+    730676606,
+    730675637,
+    730678635,
+    730678738
+  ],
+  "tags": {
+    "addr:city": "Liptovský Mikuláš",
+    "addr:conscriptionnumber": "298",
+    "addr:country": "SK",
+    "addr:housenumber": "298/11",
+    "addr:postcode": "03101",
+    "addr:street": "Obchodná",
+    "addr:streetnumber": "11",
+    "addr:suburb": "Demänová",
+    "building": "yes",
+    "email": "laco3@pobox.sk",
+    "import": "budovy201004",
+    "name": "Privát Paula",
+    "operator": "Ladislav Brziak",
+    "phone": "+421445549416",
+    "ref:minvskaddress": "6506005099",
+    "source:addr": "minvskaddress 2024-02",
+    "tourism": "chalet",
+    "website": "http://www.privatpaula.wbl.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 58960755,
+  "center": {
+    "lat": 49.0609075,
+    "lon": 19.5837534
+  },
+  "nodes": [
+    730676620,
+    730675652,
+    730677839,
+    730677084,
+    730676620
+  ],
+  "tags": {
+    "addr:city": "Liptovský Mikuláš",
+    "addr:conscriptionnumber": "299",
+    "addr:housenumber": "299/17",
+    "addr:postcode": "03101",
+    "addr:street": "Obchodná",
+    "addr:streetnumber": "17",
+    "addr:suburb": "Demänová",
+    "building": "yes",
+    "email": "info@relaxjasna.sk",
+    "import": "budovy201004",
+    "name": "Privát Relax",
+    "phone": "+421948091111",
+    "ref:minvskaddress": "6506014592",
+    "source": "kapor2",
+    "source:streetnumber": "minvskaddress 2020-11",
+    "tourism": "chalet",
+    "website": "http://www.relaxjasna.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 58960860,
+  "center": {
+    "lat": 49.0606205,
+    "lon": 19.5832723
+  },
+  "nodes": [
+    730677959,
+    730677203,
+    730676411,
+    730675435,
+    730677959
+  ],
+  "tags": {
+    "addr:city": "Liptovský Mikuláš",
+    "addr:conscriptionnumber": "235",
+    "addr:housenumber": "235/16",
+    "addr:postcode": "03101",
+    "addr:street": "Obchodná",
+    "addr:streetnumber": "16",
+    "addr:suburb": "Demänová",
+    "building": "yes",
+    "email": "vilaviktoria@gmail.com",
+    "import": "budovy201004",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Vila Viktória",
+    "operator": "Ing. Erika Devečková",
+    "phone": "+421910585432",
+    "ref:minvskaddress": "1563407A",
+    "source": "kapor2",
+    "source:streetnumber": "minvskaddress 2020-11",
+    "tourism": "chalet",
+    "website": "http://www.privat-viktoria.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 61359961,
+  "center": {
+    "lat": 48.8749113,
+    "lon": 19.2185881
+  },
+  "nodes": [
+    766276300,
+    766275773,
+    766277042,
+    766275818,
+    766277080,
+    766276546,
+    766277825,
+    766277279,
+    766276300
+  ],
+  "tags": {
+    "addr:city": "Donovaly",
+    "addr:conscriptionnumber": "101",
+    "addr:country": "SK",
+    "addr:housenumber": "101",
+    "addr:place": "Donovaly",
+    "building": "yes",
+    "building:levels": "3",
+    "email": "jan.andras@lesy.sk",
+    "import": "budovy201004",
+    "internet_access": "wlan",
+    "name": "Chata Lesy",
+    "phone": "+421 918 334 562",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "guest_house",
+    "website": "https://www.ubytovanie.lesy.sk/chata.html/94/chata-lesy-donovaly"
+  }
+},
+{
+  "type": "way",
+  "id": 64795135,
+  "center": {
+    "lat": 49.1192693,
+    "lon": 20.1685949
+  },
+  "nodes": [
+    794693097,
+    794692623,
+    794690031,
+    794695459,
+    794693761,
+    794693352,
+    794691404,
+    794694727,
+    794693097
+  ],
+  "tags": {
+    "addr:city": "Vysoké Tatry",
+    "addr:conscriptionnumber": "21026",
+    "addr:country": "SK",
+    "addr:housenumber": "21026",
+    "addr:place": "Tatranská Polianka",
+    "addr:postcode": "06201",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Villa Danielov dom",
+    "ref:minvskaddress": "22937233",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet",
+    "website": "https://www.danielovdom.sk/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 69071006,
+  "center": {
+    "lat": 49.0476923,
+    "lon": 19.3542892
+  },
+  "nodes": [
+    828739086,
+    828747036,
+    828751372,
+    828740819,
+    828739086
+  ],
+  "tags": {
+    "addr:city": "Liptovská Štiavnica",
+    "addr:conscriptionnumber": "501",
+    "addr:country": "SK",
+    "addr:housenumber": "501/3",
+    "addr:postcode": "03401",
+    "addr:street": "Drevenice",
+    "addr:streetnumber": "3",
+    "building": "yes",
+    "email": "info@chalupky.sk",
+    "guest_house": "guest_house",
+    "import": "budovy201004",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 01 s kaďou",
+    "operator": "Chalúpky u babky",
+    "phone": "+421915494600",
+    "ref:minvskaddress": "7000639811",
+    "rooms": "2",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "chalet",
+    "website": "https://www.chalupky.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 71730110,
+  "center": {
+    "lat": 49.1077746,
+    "lon": 19.7263458
+  },
+  "nodes": [
+    852651589,
+    852651591,
+    852651592,
+    852651593,
+    852651589
+  ],
+  "tags": {
+    "addr:city": "Jakubovany",
+    "addr:conscriptionnumber": "211",
+    "addr:country": "SK",
+    "addr:housenumber": "211",
+    "addr:place": "Jakubovany",
+    "building": "yes",
+    "import": "budovy201004",
+    "internet_access": "wlan",
+    "name": "Tatry Liptov",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 71811194,
+  "center": {
+    "lat": 49.1180709,
+    "lon": 19.7163661
+  },
+  "nodes": [
+    853427071,
+    853427073,
+    853427076,
+    853427078,
+    853427084,
+    853427086,
+    853427071
+  ],
+  "tags": {
+    "addr:city": "Konská",
+    "addr:conscriptionnumber": "240",
+    "addr:country": "SK",
+    "addr:housenumber": "240",
+    "addr:place": "Konská",
+    "addr:postcode": "03204",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Chata Konská",
+    "ref:minvskaddress": "1567719A",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 73172898,
+  "center": {
+    "lat": 49.0188271,
+    "lon": 19.6732303
+  },
+  "nodes": [
+    868183226,
+    14042157543,
+    14042157544,
+    868183229,
+    868183233,
+    14042157542,
+    14042157541,
+    868183235,
+    868183238,
+    868183241,
+    868183265,
+    868183268,
+    868183270,
+    868183272,
+    868183226
+  ],
+  "tags": {
+    "addr:city": "Liptovský Ján",
+    "addr:conscriptionnumber": "2212",
+    "addr:country": "SK",
+    "addr:housenumber": "2212",
+    "addr:place": "Liptovský Ján",
+    "addr:postcode": "03203",
+    "alt_name": "Divadelná chata",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "chata SND",
+    "ref:minvskaddress": "7001379594",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 73172947,
+  "center": {
+    "lat": 49.0243966,
+    "lon": 19.6730963
+  },
+  "nodes": [
+    868183694,
+    868183696,
+    868183697,
+    868183699,
+    868183718,
+    13515471021,
+    14061459288,
+    868183720,
+    868183694
+  ],
+  "tags": {
+    "addr:city": "Liptovský Ján",
+    "addr:conscriptionnumber": "2184",
+    "addr:country": "SK",
+    "addr:housenumber": "2184",
+    "addr:place": "Liptovský Ján",
+    "addr:postcode": "03203",
+    "building": "yes",
+    "email": "rezervacie@chatapartizan.sk",
+    "import": "budovy201004",
+    "name": "chata Partizán",
+    "phone": "+421 905 516 243",
+    "ref:minvskaddress": "7001376525",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "chalet",
+    "website": "https://www.chatapartizan.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 73173098,
+  "center": {
+    "lat": 48.9736683,
+    "lon": 19.6817001
+  },
+  "nodes": [
+    868185850,
+    10246967680,
+    868185853,
+    868185855,
+    868185859,
+    10246967679,
+    10246967678,
+    10246967677,
+    868185850
+  ],
+  "tags": {
+    "addr:city": "Liptovský Ján",
+    "addr:conscriptionnumber": "2246",
+    "addr:country": "SK",
+    "addr:housenumber": "2246",
+    "addr:place": "Liptovský Ján",
+    "addr:postcode": "03203",
+    "alt_name": "Pred Bystrou",
+    "building": "yes",
+    "building:levels": "2",
+    "import": "budovy201004",
+    "man_made": "forester's_lodge",
+    "name": "Chata Bystré",
+    "operator": "Urbárske pozemkové spoločenstvo - Obec Hybe",
+    "ref:minvskaddress": "7001373445",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "source:name": "skgeodesy.sk",
+    "tourism": "chalet",
+    "website": "https://urbarhybe.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 73173105,
+  "center": {
+    "lat": 49.0311464,
+    "lon": 19.6763513
+  },
+  "nodes": [
+    868185962,
+    868185963,
+    868185965,
+    868185977,
+    868185979,
+    868185982,
+    868185985,
+    868185988,
+    868185962
+  ],
+  "tags": {
+    "addr:city": "Liptovský Ján",
+    "addr:conscriptionnumber": "2055",
+    "addr:country": "SK",
+    "addr:housenumber": "2055",
+    "addr:place": "Liptovský Ján",
+    "addr:postcode": "03203",
+    "building": "yes",
+    "name": "Chata Havran",
+    "ref:minvskaddress": "7001142456",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "guest_house",
+    "website": "http://www.chatahavran.eu/"
+  }
+},
+{
+  "type": "way",
+  "id": 73340937,
+  "center": {
+    "lat": 48.8428720,
+    "lon": 19.2765011
+  },
+  "nodes": [
+    869922824,
+    869922825,
+    869922826,
+    869922827,
+    869922828,
+    869922837,
+    869922838,
+    869922839,
+    869922840,
+    869922842,
+    869922844,
+    869922846,
+    869922854,
+    869922856,
+    869922857,
+    869922859,
+    869922824
+  ],
+  "tags": {
+    "addr:city": "Moštenica",
+    "addr:conscriptionnumber": "159",
+    "addr:country": "SK",
+    "addr:housenumber": "159",
+    "addr:place": "Moštenica",
+    "addr:postcode": "97613",
+    "amenity": "restaurant",
+    "building": "yes",
+    "import": "budovy201004",
+    "name": "Chata SLOVENKA",
+    "ref:minvskaddress": "7100078249",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-08"
+  }
+},
+{
+  "type": "way",
+  "id": 73708936,
+  "center": {
+    "lat": 48.8644577,
+    "lon": 20.1339371
+  },
+  "nodes": [
+    6059448880,
+    872857045,
+    872857047,
+    872857048,
+    8972757472,
+    9095277596,
+    11029534242,
+    8972757476,
+    6059448880
+  ],
+  "tags": {
+    "addr:city": "Šumiac",
+    "addr:housenumber": "768",
+    "addr:postcode": "97671",
+    "addr:street": "Kráľovohoľská cesta",
+    "beds": "8",
+    "brewery": "Predná hora",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/horskachatapodkralovouholou/",
+    "ele": "1451",
+    "import": "budovy201004",
+    "name": "Chata pod Kráľovou Hoľou",
+    "operator": "Peter Kalman",
+    "outdoor_seating": "yes",
+    "rooms": "1",
+    "source": "kapor2",
+    "tourism": "alpine_hut",
+    "website": "https://hiking.dennikn.sk/ar/5360/horska_chata_pod_kralovou_holou.html",
+    "wikidata": "Q67470983",
+    "wikimedia_commons": "File:Horská chata pod Kraľovou hoľou.jpg"
+  }
+},
+{
+  "type": "way",
+  "id": 79977935,
+  "center": {
+    "lat": 48.9565295,
+    "lon": 19.1902313
+  },
+  "nodes": [
+    933403730,
+    933403732,
+    933403738,
+    933403746,
+    989062586,
+    933403754,
+    933403774,
+    933403776,
+    933403730
+  ],
+  "tags": {
+    "addr:city": "Liptovské Revúce",
+    "addr:conscriptionnumber": "274",
+    "addr:country": "SK",
+    "addr:housenumber": "274",
+    "addr:place": "Liptovské Revúce",
+    "building": "yes",
+    "building:material": "wood",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_limba.jpg",
+    "import": "budovy201004drev",
+    "internet_access": "no",
+    "name": "Horská útulňa Limba pod Rakytovom",
+    "phone": "+421 918 659 688",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/2822/limba_pod_rakytovom.html",
+    "website": "https://utulnalimba.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 79979263,
+  "center": {
+    "lat": 49.0566590,
+    "lon": 19.2341763
+  },
+  "nodes": [
+    933426015,
+    933426019,
+    933426024,
+    933426029,
+    933426015
+  ],
+  "tags": {
+    "building": "yes",
+    "building:material": "wood",
+    "ele": "629",
+    "import": "budovy201004drev",
+    "internet_access": "no",
+    "name": "Chata pod Kozím",
+    "operator": "Meské lesy",
+    "source": "kapor2",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 79979449,
+  "center": {
+    "lat": 48.9515526,
+    "lon": 19.2582653
+  },
+  "nodes": [
+    933427086,
+    933427088,
+    933427091,
+    933427114,
+    933427086
+  ],
+  "tags": {
+    "addr:city": "Liptovská Osada",
+    "addr:conscriptionnumber": "605",
+    "addr:country": "SK",
+    "addr:housenumber": "605",
+    "addr:place": "Liptovská Osada",
+    "addr:postcode": "034 73",
+    "addr:street": "Poľná",
+    "building": "yes",
+    "building:material": "wood",
+    "import": "budovy201004drev",
+    "name": "Chata U Kmotra",
+    "source": "kapor2;local knowledge",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "website": "https://chataukmotra.123u.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 79991827,
+  "center": {
+    "lat": 49.0481939,
+    "lon": 19.3536905
+  },
+  "nodes": [
+    933512572,
+    933512575,
+    933512578,
+    933512581,
+    933512584,
+    933512586,
+    933512587,
+    933512589,
+    933512572
+  ],
+  "tags": {
+    "addr:city": "Liptovská Štiavnica",
+    "addr:conscriptionnumber": "519",
+    "addr:country": "SK",
+    "addr:housenumber": "519/10",
+    "addr:postcode": "03401",
+    "addr:street": "Drevenice",
+    "addr:streetnumber": "10",
+    "building": "wooden_house",
+    "building:material": "wood",
+    "email": "info@chalupky.sk",
+    "import": "budovy201004drev",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 19 s vírivkou",
+    "operator": "Chalúpky u babky",
+    "phone": "+421915494600",
+    "ref:minvskaddress": "7000640317",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "chalet",
+    "website": "https://www.chalupky.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 80016264,
+  "center": {
+    "lat": 48.8717295,
+    "lon": 19.2340100
+  },
+  "nodes": [
+    933680297,
+    5893926711,
+    933680290,
+    933680287,
+    933680305,
+    933680297
+  ],
+  "tags": {
+    "addr:city": "Donovaly",
+    "addr:conscriptionnumber": "433",
+    "addr:country": "SK",
+    "addr:housenumber": "433",
+    "addr:place": "Donovaly",
+    "building": "yes",
+    "building:material": "wood",
+    "import": "budovy201004drev",
+    "name": "Chata Mistríky",
+    "operator": "Finančná správa",
+    "source": "kapor2;survey, GPS",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 80031383,
+  "center": {
+    "lat": 48.8375663,
+    "lon": 19.6121171
+  },
+  "nodes": [
+    933743079,
+    933743080,
+    933743081,
+    933743082,
+    933743079
+  ],
+  "tags": {
+    "addr:city": "Brezno",
+    "addr:conscriptionnumber": "5584",
+    "addr:country": "SK",
+    "addr:housenumber": "5584",
+    "addr:place": "Brezno",
+    "addr:postcode": "97701",
+    "amenity": "restaurant",
+    "building": "yes",
+    "building:material": "wood",
+    "image": "https://img.hiking.dennikn.sk/article/201611/large_x/dedeckova_chata.jpg",
+    "import": "budovy201004drev",
+    "name": "Dedečkova chata",
+    "ref:minvskaddress": "7100499384",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-05",
+    "tourism": "guest_house",
+    "url": "https://hiking.dennikn.sk/ar/4470/dedeckova_chata.html",
+    "website": "https://www.dedeckovachata.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 80031770,
+  "center": {
+    "lat": 48.9253468,
+    "lon": 19.6120146
+  },
+  "nodes": [
+    933744631,
+    933744632,
+    933744633,
+    933744634,
+    933744631
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "725",
+    "addr:housenumber": "725",
+    "addr:place": "Horná Lehota",
+    "building": "yes",
+    "building:material": "wood",
+    "import": "budovy201004drev",
+    "name": "Chata HZS",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 80035140,
+  "center": {
+    "lat": 48.8929105,
+    "lon": 19.7015620
+  },
+  "nodes": [
+    933764931,
+    933764933,
+    933764936,
+    933764941,
+    933764945,
+    933764931
+  ],
+  "tags": {
+    "addr:city": "Jarabá",
+    "addr:conscriptionnumber": "39",
+    "addr:housenumber": "39",
+    "addr:place": "Jarabá",
+    "amenity": "restaurant",
+    "building": "yes",
+    "building:material": "wood",
+    "import": "budovy201004drev",
+    "name": "Chata Jarabatá",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 80039811,
+  "center": {
+    "lat": 48.8117387,
+    "lon": 20.0159385
+  },
+  "nodes": [
+    933797744,
+    933797748,
+    933797752,
+    933797754,
+    933797744
+  ],
+  "tags": {
+    "addr:city": "Vaľkovňa",
+    "addr:conscriptionnumber": "151",
+    "addr:housenumber": "151",
+    "addr:place": "Vaľkovňa",
+    "building": "yes",
+    "building:material": "wood",
+    "import": "budovy201004drev",
+    "name": "Horáreň Lapinka",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 80040534,
+  "center": {
+    "lat": 48.8163741,
+    "lon": 20.0366987
+  },
+  "nodes": [
+    933802716,
+    933802717,
+    933802718,
+    933802719,
+    933802716
+  ],
+  "tags": {
+    "building": "yes",
+    "building:material": "wood",
+    "import": "budovy201004drev",
+    "source": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 115658284,
+  "center": {
+    "lat": 48.8135903,
+    "lon": 19.2479202
+  },
+  "nodes": [
+    1306070869,
+    1306070948,
+    1306070867,
+    1306070944,
+    1306070928,
+    1306071034,
+    1306070958,
+    1306070873,
+    1306071081,
+    1306070850,
+    1306070869
+  ],
+  "tags": {
+    "addr:city": "Podkonice",
+    "addr:conscriptionnumber": "394",
+    "addr:country": "SK",
+    "addr:housenumber": "394",
+    "addr:place": "Podkonice",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=100066715232040",
+    "contact:phone": "+421 903 535 792",
+    "name": "Chata Pleše",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "url": "https://www.nasepodkonice.sk/podkonice/sluzby/chata-plese/"
+  }
+},
+{
+  "type": "way",
+  "id": 118295843,
+  "center": {
+    "lat": 49.0987884,
+    "lon": 19.8014926
+  },
+  "nodes": [
+    1330649928,
+    1330649890,
+    1330649846,
+    1330649887,
+    1330649928
+  ],
+  "tags": {
+    "addr:city": "Pribylina",
+    "addr:conscriptionnumber": "405",
+    "addr:country": "SK",
+    "addr:housenumber": "405/7",
+    "addr:postcode": "03242",
+    "addr:street": "Mateja Šuňavca",
+    "addr:streetnumber": "7",
+    "addr:suburb": "Pribylina",
+    "building": "yes",
+    "name": "Chalupa Brezinka",
+    "ref:minvskaddress": "1584791A",
+    "source": "kapor2;local knowledge",
+    "source:addr": "minvskaddress 2023-08",
+    "tourism": "chalet",
+    "website": "https://brezinka.123u.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 151515391,
+  "center": {
+    "lat": 49.1198914,
+    "lon": 20.0680605
+  },
+  "nodes": [
+    1643285866,
+    1643285847,
+    1643285839,
+    1643285957,
+    1643285970,
+    1643285960,
+    1643285968,
+    1643285973,
+    1643285977,
+    1643285971,
+    1643285974,
+    1643285980,
+    1643285979,
+    1643285985,
+    1643285984,
+    1643285989,
+    1643285990,
+    1643285995,
+    1643286018,
+    1643285890,
+    1643285874,
+    1643285889,
+    1643285881,
+    1643285868,
+    1643285849,
+    1643285873,
+    1643285866
+  ],
+  "tags": {
+    "addr:city": "Štrba",
+    "addr:conscriptionnumber": "4010",
+    "addr:country": "SK",
+    "addr:housenumber": "4010/2",
+    "addr:postcode": "05985",
+    "addr:street": "Limbová",
+    "addr:streetnumber": "2",
+    "addr:suburb": "Štrbské Pleso",
+    "building": "yes",
+    "name": "Vila Kosodrevina",
+    "ref:minvskaddress": "22767657",
+    "source:addr": "minvskaddress 2021-10",
+    "tourism": "chalet",
+    "website": "https://www.vila-kosodrevina.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 151858985,
+  "center": {
+    "lat": 49.0557370,
+    "lon": 19.9764739
+  },
+  "nodes": [
+    1646940138,
+    1646940237,
+    1646940083,
+    1646940059,
+    1646940088,
+    1646940026,
+    1646940138
+  ],
+  "tags": {
+    "addr:city": "Važec",
+    "addr:conscriptionnumber": "920",
+    "addr:country": "SK",
+    "addr:housenumber": "920",
+    "addr:place": "Važec",
+    "addr:postcode": "032 61",
+    "addr:street": "Pod vŕškami",
+    "building": "yes",
+    "name": "Chalupa Važec",
+    "source": "kapor2;local knowledge",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "website": "https://vazec.123u.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 161484839,
+  "center": {
+    "lat": 49.0627601,
+    "lon": 19.5782978
+  },
+  "nodes": [
+    1734543024,
+    1734543070,
+    1734543040,
+    1734543020,
+    1734543024
+  ],
+  "tags": {
+    "addr:city": "Liptovský Mikuláš",
+    "addr:conscriptionnumber": "99",
+    "addr:country": "SK",
+    "addr:housenumber": "99/39",
+    "addr:postcode": "03101",
+    "addr:street": "Lazná",
+    "addr:streetnumber": "39",
+    "addr:suburb": "Bodice",
+    "building": "yes",
+    "name": "Dom Adria",
+    "ref:minvskaddress": "10109220",
+    "source:addr": "minvskaddress 2024-02",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 161484905,
+  "center": {
+    "lat": 49.0620963,
+    "lon": 19.5777700
+  },
+  "nodes": [
+    1734542811,
+    1734542813,
+    1734542828,
+    1734542825,
+    1734542811
+  ],
+  "tags": {
+    "addr:city": "Liptovský Mikuláš",
+    "addr:conscriptionnumber": "91",
+    "addr:country": "SK",
+    "addr:housenumber": "91/24",
+    "addr:postcode": "03101",
+    "addr:street": "Lazná",
+    "addr:streetnumber": "24",
+    "addr:suburb": "Bodice",
+    "beds": "7",
+    "building": "yes",
+    "email": "a.duchon@bodice.sk",
+    "name": "Privat Duchoň",
+    "phone": "+421915033902",
+    "ref:minvskaddress": "10102609",
+    "source": "Ortofotomozaika SR",
+    "source:addr": "minvskaddress 2024-02",
+    "tourism": "chalet",
+    "website": "http://www.privatduchon.unas.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 184031012,
+  "center": {
+    "lat": 48.9310665,
+    "lon": 19.4667983
+  },
+  "nodes": [
+    1944686624,
+    1944686629,
+    1944686626,
+    1944686621,
+    1944686624
+  ],
+  "tags": {
+    "addr:city": "Jasenie",
+    "addr:conscriptionnumber": "539",
+    "addr:housenumber": "539",
+    "addr:place": "Jasenie",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/utulna.durkova/",
+    "ele": "1623",
+    "electricity": "no",
+    "fee": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/utulna_durkova_pod_c_13.jpg",
+    "internet_access": "no",
+    "name": "Útulňa Ďurková pod Chabencom",
+    "opening_hours": "Jan 1-Dec 31 sunrise-sunset+",
+    "payment:cash": "yes",
+    "reservation": "no",
+    "shower": "no",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "alpine_hut",
+    "website": "https://hiking.dennikn.sk/ar/111/utulna_durkova_pod_chabencom.html",
+    "wikidata": "Q20051156",
+    "wikipedia": "sk:Útulňa Ďurková pod Chabencom"
+  }
+},
+{
+  "type": "way",
+  "id": 194692273,
+  "center": {
+    "lat": 48.9228059,
+    "lon": 19.7449781
+  },
+  "nodes": [
+    2051983888,
+    2051983878,
+    2051983862,
+    2051983850,
+    2051983830,
+    2051983881,
+    2051983888
+  ],
+  "tags": {
+    "addr:city": "Vyšná Boca",
+    "addr:conscriptionnumber": "115",
+    "addr:country": "SK",
+    "addr:housenumber": "115",
+    "addr:place": "Vyšná Boca",
+    "building": "yes",
+    "name": "Hrádocká chata",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 196911393,
+  "center": {
+    "lat": 48.8759149,
+    "lon": 19.5875355
+  },
+  "nodes": [
+    2072002196,
+    2072002229,
+    2072002258,
+    2072002205,
+    2072002202,
+    2072002208,
+    2072002196
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "519",
+    "addr:housenumber": "519",
+    "addr:place": "Horná Lehota",
+    "building": "yes",
+    "name": "Chata Hydrometal",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "url": "http://www.chatahydrometal.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 202740573,
+  "center": {
+    "lat": 48.9723980,
+    "lon": 19.5984879
+  },
+  "nodes": [
+    2126845217,
+    2126845207,
+    2126845206,
+    3090640176,
+    3090640175,
+    3090640178,
+    3090640177,
+    3090640179,
+    3090640180,
+    3090640181,
+    3090640182,
+    2126845212,
+    2126845217
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "57",
+    "addr:country": "SK",
+    "addr:housenumber": "57",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "building:levels": "1",
+    "email": "chatazahradky@chatazahradky.sk",
+    "name": "Chata Záhradky",
+    "ref:minvskaddress": "15635477",
+    "rooms": "14",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-04",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "website": "https://www.chatazahradky.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 211675620,
+  "center": {
+    "lat": 49.0448624,
+    "lon": 19.6417471
+  },
+  "nodes": [
+    2216475661,
+    2216475667,
+    2216475666,
+    2216475662,
+    2216475659,
+    2216475665,
+    2216475663,
+    2216475670,
+    2216475673,
+    2216475676,
+    2216475675,
+    2216475677,
+    2216475678,
+    2216475671,
+    2216475672,
+    2216475669,
+    2216475668,
+    2216475664,
+    2216475661
+  ],
+  "tags": {
+    "addr:city": "Závažná Poruba",
+    "addr:conscriptionnumber": "721",
+    "addr:country": "SK",
+    "addr:housenumber": "721",
+    "addr:place": "Závažná Poruba",
+    "addr:postcode": "03202",
+    "amenity": "restaurant",
+    "building": "yes",
+    "email": "chata@chataopalisko.sk",
+    "mobile": "+421 903 806 204",
+    "name": "Chata Opalisko",
+    "opening_hours": "Mo-Su 09:00-19:00",
+    "phone": "+421 44 554 71 78",
+    "ref:minvskaddress": "10915344",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "guest_house",
+    "website": "https://www.chataopalisko.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 211745270,
+  "center": {
+    "lat": 49.1192870,
+    "lon": 19.6536159
+  },
+  "nodes": [
+    2217102502,
+    2217102471,
+    2217102505,
+    2217102520,
+    2217102502
+  ],
+  "tags": {
+    "addr:city": "Smrečany",
+    "addr:conscriptionnumber": "1143",
+    "addr:country": "SK",
+    "addr:housenumber": "1143",
+    "addr:place": "Smrečany",
+    "building": "yes",
+    "name": "Privát Chlievy",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 211745342,
+  "center": {
+    "lat": 49.1109545,
+    "lon": 19.6499586
+  },
+  "nodes": [
+    2217100670,
+    2217100667,
+    2217100668,
+    2217100671,
+    2217100670
+  ],
+  "tags": {
+    "addr:city": "Smrečany",
+    "addr:conscriptionnumber": "219",
+    "addr:country": "SK",
+    "addr:housenumber": "219",
+    "addr:place": "Smrečany",
+    "addr:postcode": "03205",
+    "building": "yes",
+    "name": "Štýlová drevenica RUDY",
+    "ref:minvskaddress": "1588718A",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 211745354,
+  "center": {
+    "lat": 49.1179719,
+    "lon": 19.6513457
+  },
+  "nodes": [
+    2217102075,
+    2217102088,
+    2217102085,
+    2217102067,
+    2217102075
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Ubytovanie u Líšky",
+    "source": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 211745376,
+  "center": {
+    "lat": 49.1166705,
+    "lon": 19.6500610
+  },
+  "nodes": [
+    2217101822,
+    2217101830,
+    2217101850,
+    2217101840,
+    2217101822
+  ],
+  "tags": {
+    "addr:city": "Smrečany",
+    "addr:conscriptionnumber": "171",
+    "addr:country": "SK",
+    "addr:housenumber": "171",
+    "addr:place": "Smrečany",
+    "addr:postcode": "03205",
+    "building": "yes",
+    "name": "Homestay U Hajčov",
+    "ref:minvskaddress": "15886475",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 211745581,
+  "center": {
+    "lat": 49.1136371,
+    "lon": 19.6494774
+  },
+  "nodes": [
+    2217101249,
+    2217101250,
+    2217101247,
+    2217101248,
+    2217101251,
+    2217101252,
+    2217101258,
+    2217101257,
+    2217101249
+  ],
+  "tags": {
+    "addr:city": "Smrečany",
+    "addr:conscriptionnumber": "197",
+    "addr:country": "SK",
+    "addr:housenumber": "197",
+    "addr:place": "Smrečany",
+    "addr:postcode": "03205",
+    "building": "yes",
+    "name": "Shalom",
+    "ref:minvskaddress": "15887003",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 229219570,
+  "center": {
+    "lat": 48.9923861,
+    "lon": 19.3275727
+  },
+  "nodes": [
+    2378398011,
+    2378398003,
+    2378398001,
+    2378398002,
+    2378398004,
+    2378398010,
+    11805941811,
+    2378398011
+  ],
+  "tags": {
+    "addr:city": "Liptovská Štiavnica",
+    "addr:conscriptionnumber": "343",
+    "addr:country": "SK",
+    "addr:housenumber": "343/50",
+    "addr:postcode": "03401",
+    "addr:street": "Stará",
+    "addr:streetnumber": "50",
+    "building": "yes",
+    "man_made": "forester's_lodge",
+    "name": "Skalnô",
+    "ref:minvskaddress": "1569622A",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-02",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 234323491,
+  "center": {
+    "lat": 48.9439875,
+    "lon": 19.4323681
+  },
+  "nodes": [
+    2425809865,
+    2425809867,
+    2425809891,
+    2425809895,
+    2425810000,
+    2425809995,
+    2425810006,
+    2425810002,
+    2425809989,
+    2425809979,
+    2425809920,
+    2425809924,
+    2425809881,
+    2425809885,
+    2425809865
+  ],
+  "tags": {
+    "addr:city": "Partizánska Ľupča",
+    "addr:conscriptionnumber": "21",
+    "addr:country": "SK",
+    "addr:housenumber": "21",
+    "addr:place": "Magurka",
+    "addr:postcode": "03215",
+    "amenity": "restaurant",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/magurkaliptov",
+    "email": "info@magurka-liptov.sk",
+    "fee": "no",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_obnovena_chata_magu.jpg",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Magurka",
+    "opening_hours": "Mo-Th 09:00-20:00; Fr,Sa 08:00-22:00; Su 08:00-20:00",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "phone": "+421 903 704 444",
+    "ref:minvskaddress": "15801016",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-11",
+    "tourism": "chalet",
+    "url": "https://hiking.dennikn.sk/ar/1269/chata_magurka_zrekonstruovana.html",
+    "website": "https://magurka-liptov.sk/",
+    "wikidata": "Q56340551"
+  }
+},
+{
+  "type": "way",
+  "id": 242277495,
+  "center": {
+    "lat": 49.0315178,
+    "lon": 19.6764778
+  },
+  "nodes": [
+    2497835451,
+    2497835452,
+    2497835453,
+    2497835455,
+    2497835454,
+    2497835457,
+    2497835456,
+    2497835450,
+    2497835451
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Chata Šafran",
+    "tourism": "guest_house",
+    "website": "http://www.chatasafran.eu/"
+  }
+},
+{
+  "type": "way",
+  "id": 259754501,
+  "center": {
+    "lat": 48.7865783,
+    "lon": 20.1745757
+  },
+  "nodes": [
+    2652087386,
+    2652087389,
+    2652087388,
+    2652087390,
+    2652087392,
+    2652087391,
+    2652087386
+  ],
+  "tags": {
+    "addr:city": "Muránska Zdychava",
+    "addr:conscriptionnumber": "178",
+    "addr:country": "SK",
+    "addr:housenumber": "178",
+    "addr:place": "Muránska Zdychava",
+    "addr:postcode": "05001",
+    "building": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_zrub_janka_pod_kypro.jpg",
+    "name": "Janka",
+    "ref:minvskaddress": "7001129971",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2024-02",
+    "tourism": "chalet",
+    "website": "https://hiking.dennikn.sk/ar/938/zrub_janka_pod_kyprovom.html"
+  }
+},
+{
+  "type": "way",
+  "id": 303856612,
+  "center": {
+    "lat": 48.9318061,
+    "lon": 19.2073476
+  },
+  "nodes": [
+    3083204359,
+    3083204393,
+    3083204384,
+    3083204355,
+    3083204359
+  ],
+  "tags": {
+    "addr:city": "Liptovské Revúce",
+    "addr:conscriptionnumber": "151",
+    "addr:country": "SK",
+    "addr:housenumber": "151",
+    "addr:place": "Liptovské Revúce",
+    "building": "yes",
+    "name": "Enjoy Wellness & Fun",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 303856667,
+  "center": {
+    "lat": 48.9316178,
+    "lon": 19.2058156
+  },
+  "nodes": [
+    3083204343,
+    3083204345,
+    3083204342,
+    3083204336,
+    3083204338,
+    3083204344,
+    3083204343
+  ],
+  "tags": {
+    "addr:city": "Liptovské Revúce",
+    "addr:conscriptionnumber": "161",
+    "addr:country": "SK",
+    "addr:housenumber": "161",
+    "addr:place": "Liptovské Revúce",
+    "addr:postcode": "034 74",
+    "addr:street": "Nižná Revúca",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Chata Relax",
+    "source": "kapor2;local knowledge",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "website": "https://relax-chata.123u.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 304515870,
+  "center": {
+    "lat": 48.9632768,
+    "lon": 19.5860168
+  },
+  "nodes": [
+    3090634724,
+    3090634719,
+    3090634718,
+    3090634712,
+    3090634713,
+    3090634708,
+    3090634710,
+    3090634716,
+    3090634717,
+    3090634721,
+    3090634720,
+    3090634723,
+    3090634722,
+    3090634725,
+    3090634724
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "90",
+    "addr:country": "SK",
+    "addr:housenumber": "90",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "email": "koliesko@lm.psg.sk",
+    "name": "Chata Koliesko",
+    "phone": "+421445624150",
+    "ref:minvskaddress": "15636753",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-04",
+    "tourism": "guest_house",
+    "website": "https://www.jasna-koliesko.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 317465373,
+  "center": {
+    "lat": 49.1198571,
+    "lon": 19.8500712
+  },
+  "nodes": [
+    3237368384,
+    3237368388,
+    3237368389,
+    3237368385,
+    3237368384
+  ],
+  "tags": {
+    "addr:city": "Pribylina",
+    "addr:conscriptionnumber": "1540",
+    "addr:country": "SK",
+    "addr:housenumber": "1540",
+    "addr:place": "Pribylina",
+    "addr:postcode": "03242",
+    "building": "yes",
+    "name": "Chata Limba pod Kriváňom",
+    "ref:minvskaddress": "10691230",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-08",
+    "tourism": "chalet",
+    "website": "https://www.hauzi.sk/chata-limba-pod-krivanom"
+  }
+},
+{
+  "type": "way",
+  "id": 317465475,
+  "center": {
+    "lat": 49.1156879,
+    "lon": 19.8490556
+  },
+  "nodes": [
+    3237368261,
+    3237368257,
+    3237368258,
+    3237368259,
+    3237368260,
+    3237368262,
+    3237368261
+  ],
+  "tags": {
+    "addr:city": "Pribylina",
+    "addr:conscriptionnumber": "1002",
+    "addr:country": "SK",
+    "addr:housenumber": "1002",
+    "addr:place": "Pribylina",
+    "addr:postcode": "03242",
+    "building": "yes",
+    "name": "Chata Bystrinka",
+    "ref:minvskaddress": "10648121",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2023-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 318180023,
+  "center": {
+    "lat": 48.9180160,
+    "lon": 19.3336689
+  },
+  "nodes": [
+    3245741142,
+    3245741141,
+    3245741138,
+    3245741140,
+    3245741142
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 318464222,
+  "center": {
+    "lat": 49.0311332,
+    "lon": 19.2259427
+  },
+  "nodes": [
+    3248690469,
+    3248690467,
+    3248690466,
+    3248690468,
+    3248690469
+  ],
+  "tags": {
+    "building": "barn",
+    "description:en": "Open use wooden hut. Reconstructed during the 2023 fall and 2024 spring.",
+    "image": "https://img.hiking.dennikn.sk/article/202311/obnovena_koliba_pod.jpg",
+    "name": "Koliba pod Vyšným Šiprúnskym sedlom",
+    "note": "Starý salaš po obnove",
+    "source": "survey, GPS",
+    "survey:date": "2024-03-29",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/7785/koliba_pod_vysnym_siprunskym_sedlom.html"
+  }
+},
+{
+  "type": "way",
+  "id": 374574049,
+  "center": {
+    "lat": 48.9509025,
+    "lon": 19.8874972
+  },
+  "nodes": [
+    3779654186,
+    3779654183,
+    3779654182,
+    3779654185,
+    3779654186
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "forester's_lodge",
+    "name": "Kosienky",
+    "source": "Mbox",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 374574050,
+  "center": {
+    "lat": 48.9510872,
+    "lon": 19.8842513
+  },
+  "nodes": [
+    3779654194,
+    3779654192,
+    3779654193,
+    3779654195,
+    3779654194
+  ],
+  "tags": {
+    "addr:city": "Východná",
+    "addr:conscriptionnumber": "1133",
+    "addr:housenumber": "1133",
+    "addr:place": "Východná",
+    "building": "yes",
+    "man_made": "forester's_lodge",
+    "name": "Chata Tinka",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 377352202,
+  "center": {
+    "lat": 49.0647920,
+    "lon": 19.2239588
+  },
+  "nodes": [
+    4286700709,
+    12518834318,
+    3807268166,
+    3807268164,
+    3807268165,
+    4286700709
+  ],
+  "tags": {
+    "beds": "10",
+    "building": "cabin",
+    "fee": "no",
+    "fireplace": "yes",
+    "name": "Útulňa pod Vtáčnikom",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 385735349,
+  "center": {
+    "lat": 49.0330350,
+    "lon": 20.3229877
+  },
+  "nodes": [
+    8818473304,
+    3890724738,
+    3890724737,
+    3890724741,
+    3890724742,
+    8818473307,
+    8818473306,
+    8818473305,
+    8818473304
+  ],
+  "tags": {
+    "addr:city": "Gánovce",
+    "addr:conscriptionnumber": "534",
+    "addr:country": "SK",
+    "addr:housenumber": "534/6",
+    "addr:postcode": "05801",
+    "addr:street": "Slnečná",
+    "addr:streetnumber": "6",
+    "addr:suburb": "Gánovce",
+    "beds": "6",
+    "building": "residential",
+    "email": "bedok@centrum.sk",
+    "mobile": "+421 910 600 076",
+    "name": "Privat DENI",
+    "phone": "+421 904 408 713",
+    "ref:minvskaddress": "7001338773",
+    "rooms": "1",
+    "source:addr": "minvskaddress 2022-10",
+    "tourism": "chalet",
+    "website": "https://www.uby.sk/privat-deni-ganovce"
+  }
+},
+{
+  "type": "way",
+  "id": 399551529,
+  "center": {
+    "lat": 49.0261144,
+    "lon": 19.2250225
+  },
+  "nodes": [
+    4460734223,
+    4022828572,
+    4022828571,
+    4022828575,
+    4460734223
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "cabin",
+    "image": "https://img.hiking.dennikn.sk/article/202006/large_x/salas_pod_siprun.jpg",
+    "name": "pod Šiprúňom",
+    "toilets": "yes",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/6236/zrub_pod_siprunom.html"
+  }
+},
+{
+  "type": "way",
+  "id": 423696744,
+  "center": {
+    "lat": 49.0867375,
+    "lon": 19.2368236
+  },
+  "nodes": [
+    4232483301,
+    4232483299,
+    4232483300,
+    4232483303,
+    4232483301
+  ],
+  "tags": {
+    "name": "Lovisko",
+    "source": "GPS, survey, Ortofotomozaika SR;survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 429423544,
+  "center": {
+    "lat": 49.0340523,
+    "lon": 19.7463891
+  },
+  "nodes": [
+    4285675110,
+    4285675111,
+    4285675112,
+    4285675113,
+    11406166108,
+    11406166104,
+    11406166101,
+    11406166106,
+    11406166105,
+    11406166102,
+    11406166103,
+    11406166107,
+    4285675110
+  ],
+  "tags": {
+    "addr:city": "Liptovský Hrádok",
+    "addr:conscriptionnumber": "1769",
+    "addr:country": "SK",
+    "addr:housenumber": "1769/2",
+    "addr:postcode": "03301",
+    "addr:street": "Lúžnica",
+    "addr:streetnumber": "2",
+    "addr:suburb": "Liptovský Hrádok",
+    "building": "yes",
+    "building:levels": "2",
+    "name": "Chata Baška",
+    "ref:minvskaddress": "7100706448",
+    "source": "survey",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "hostel",
+    "website": "https://chatabaska.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 429516902,
+  "center": {
+    "lat": 49.0652403,
+    "lon": 19.2288298
+  },
+  "nodes": [
+    11394997657,
+    4286700761,
+    4286700762,
+    4286700766,
+    11394997657
+  ],
+  "tags": {
+    "building": "barn",
+    "fireplace": "no",
+    "name": "Útulňa Blchová",
+    "source": "GPS, survey, Ortofotomozaika SR",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 435368015,
+  "center": {
+    "lat": 48.9420274,
+    "lon": 19.1915473
+  },
+  "nodes": [
+    4332855406,
+    4332855404,
+    4332855398,
+    4332855403,
+    4332855406
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "cabin",
+    "description": "bez vybavenia - dezolátny stav",
+    "name": "koliba v Rakytovskej",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 435842779,
+  "center": {
+    "lat": 49.0720938,
+    "lon": 19.2763218
+  },
+  "nodes": [
+    4337356399,
+    4337356400,
+    4337356401,
+    11518783045,
+    11518783046,
+    4337356402,
+    4337356403,
+    4337356404,
+    4337356399
+  ],
+  "tags": {
+    "addr:city": "Ružomberok",
+    "addr:conscriptionnumber": "5470",
+    "addr:country": "SK",
+    "addr:housenumber": "5470/27",
+    "addr:postcode": "03401",
+    "addr:street": "Hrabovská dolina",
+    "addr:streetnumber": "27",
+    "addr:suburb": "Ružomberok",
+    "building": "apartments",
+    "description": "2x 3 bedrooms apartments 1x 2bedrooms apartment 1x a bedroom apartment",
+    "ele": "574",
+    "email": "info.malinobrdo@gmail.com",
+    "name": "Chata Alpina",
+    "operator": "Rekreas s.r.o.",
+    "phone": "+421904388883",
+    "ref:minvskaddress": "7102153509",
+    "rooms": "9",
+    "source": "gps;local knowledge",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "chalet",
+    "website": "http://malinobrdo.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 435913007,
+  "center": {
+    "lat": 48.9327804,
+    "lon": 19.5994650
+  },
+  "nodes": [
+    4338072342,
+    4338072347,
+    7240646151,
+    7240646150,
+    7240646149,
+    7240646148,
+    7240646147,
+    4338072357,
+    7240646146,
+    7240646145,
+    7240646144,
+    4338072364,
+    4338072344,
+    4338072329,
+    4338072328,
+    7240646143,
+    7240646142,
+    7240646141,
+    7240646140,
+    7240646139,
+    7240646138,
+    7240646137,
+    7240646136,
+    7240646135,
+    7240646134,
+    7240646133,
+    4338072327,
+    7240646132,
+    4338072331,
+    7240646131,
+    7240646130,
+    4338072342
+  ],
+  "tags": {
+    "addr:city": "Bystrá",
+    "addr:conscriptionnumber": "113",
+    "addr:country": "SK",
+    "addr:housenumber": "113",
+    "addr:place": "Bystrá",
+    "addr:postcode": "97701",
+    "building": "hotel",
+    "name": "Chata Kosodrevina",
+    "ref:minvskaddress": "4286282",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2022-08",
+    "tourism": "hotel",
+    "website": "https://chatakosodrevina.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 435913009,
+  "center": {
+    "lat": 48.9429983,
+    "lon": 19.5914110
+  },
+  "nodes": [
+    4338072365,
+    4338072369,
+    4338072367,
+    4338072366,
+    7240646209,
+    7240646208,
+    4338072371,
+    7240646207,
+    7240646206,
+    7240646205,
+    4338072374,
+    4338072373,
+    4338072372,
+    4338072370,
+    4338072365
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "697",
+    "addr:housenumber": "697",
+    "addr:place": "Horná Lehota",
+    "building": "retail",
+    "contact:email": "kamienka@kamennachata.sk",
+    "contact:phone": "+421 48 6170039",
+    "ele": "2000",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large_x/kamenna_chata_na_ch.jpg",
+    "name": "Kamenná chata pod Chopkom",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "power_supply": "yes",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/476/kamenna_chata_zrekonstruovana.html",
+    "website": "https://www.kamennachata.sk",
+    "wikidata": "Q11733957",
+    "wikipedia": "sk:Kamenná chata pod Chopkom"
+  }
+},
+{
+  "type": "way",
+  "id": 435913021,
+  "center": {
+    "lat": 48.9229972,
+    "lon": 19.6082276
+  },
+  "nodes": [
+    4338071793,
+    4338071795,
+    4338071794,
+    4338071792,
+    4338071793
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Zrub E",
+    "source": "kapor2",
+    "tourism": "chalet",
+    "website": "https://www.zrubypodchopkom.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 435913022,
+  "center": {
+    "lat": 48.9231148,
+    "lon": 19.6084107
+  },
+  "nodes": [
+    4338071796,
+    4338071798,
+    4338071802,
+    4338071799,
+    4338071796
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "833",
+    "addr:housenumber": "833",
+    "addr:place": "Horná Lehota",
+    "building": "yes",
+    "name": "Zrub D",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "website": "https://www.zrubypodchopkom.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 435913026,
+  "center": {
+    "lat": 48.9231422,
+    "lon": 19.6081008
+  },
+  "nodes": [
+    4338071797,
+    4338071800,
+    4338071803,
+    4338071801,
+    4338071797
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "832",
+    "addr:housenumber": "832",
+    "addr:place": "Horná Lehota",
+    "building": "yes",
+    "name": "Zrub C",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "website": "https://www.zrubypodchopkom.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 435913031,
+  "center": {
+    "lat": 48.9253789,
+    "lon": 19.6125330
+  },
+  "nodes": [
+    4338071867,
+    4338071868,
+    12698794875,
+    12698794873,
+    12698794872,
+    12698794874,
+    4338071866,
+    4338071864,
+    12922010260,
+    4338071865,
+    4338071867
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "785",
+    "addr:housenumber": "785",
+    "addr:place": "Horná Lehota",
+    "building": "yes",
+    "name": "Chata Zázvor",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "hostel",
+    "website": "https://www.chatazazvor.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 435913032,
+  "center": {
+    "lat": 48.9233989,
+    "lon": 19.6086211
+  },
+  "nodes": [
+    4338071818,
+    4338071812,
+    4338071813,
+    4338071811,
+    4338071815,
+    4338071816,
+    4338071817,
+    4338071819,
+    4338071818
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "835",
+    "addr:housenumber": "835",
+    "addr:place": "Horná Lehota",
+    "building": "yes",
+    "name": "Zrub A",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "website": "https://www.zrubypodchopkom.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 435913033,
+  "center": {
+    "lat": 48.9232991,
+    "lon": 19.6083302
+  },
+  "nodes": [
+    4338071814,
+    4338071809,
+    4338071805,
+    4338071806,
+    4338071804,
+    4338071807,
+    4338071808,
+    4338071810,
+    4338071814
+  ],
+  "tags": {
+    "addr:city": "Horná Lehota",
+    "addr:conscriptionnumber": "834",
+    "addr:housenumber": "834",
+    "addr:place": "Horná Lehota",
+    "building": "yes",
+    "name": "Zrub B",
+    "source": "kapor2",
+    "source:conscriptionnumber": "kapor2",
+    "tourism": "chalet",
+    "website": "https://www.zrubypodchopkom.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 437964107,
+  "center": {
+    "lat": 49.0259799,
+    "lon": 19.5731727
+  },
+  "nodes": [
+    4357409081,
+    4357409078,
+    8680810486,
+    4357409079,
+    8680810485,
+    4357409080,
+    4357409081
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "12",
+    "addr:country": "SK",
+    "addr:housenumber": "12",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "beds": "12",
+    "building": "yes",
+    "check_date": "2025-10-24",
+    "email": "penzion@penzionjasna.sk",
+    "name": "Chata Katarína",
+    "phone": "+421903340139",
+    "ref:minvskaddress": "10519795",
+    "rooms": "3",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-04",
+    "tourism": "chalet",
+    "website": "http://www.chatakatarina.sk/katarina.html"
+  }
+},
+{
+  "type": "way",
+  "id": 444830574,
+  "center": {
+    "lat": 49.1066491,
+    "lon": 19.2697736
+  },
+  "nodes": [
+    11394967866,
+    4422902364,
+    4422902365,
+    4422902367,
+    11394967866
+  ],
+  "tags": {
+    "building": "hayloft",
+    "name": "Dubovské lúky",
+    "note": "štál",
+    "operator": "Sloboda pohybu",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 454967409,
+  "center": {
+    "lat": 49.0021790,
+    "lon": 19.2079239
+  },
+  "nodes": [
+    4514452801,
+    4514452800,
+    4514452799,
+    4514452798,
+    4514452801
+  ],
+  "tags": {
+    "building": "cabin",
+    "ele": "1440",
+    "email": "kstl@kstl.sk",
+    "internet_access": "no",
+    "mobile": "+421915863264",
+    "name": "Jánošíčka",
+    "operator": "KSTaL Ružomberok",
+    "phone": "+421908274275",
+    "reservation": "yes",
+    "rooms": "1",
+    "source": "source, GPS",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 491970525,
+  "center": {
+    "lat": 49.0960455,
+    "lon": 19.1802178
+  },
+  "nodes": [
+    4840539285,
+    4840539284,
+    4840539283,
+    4840539282,
+    4840539285
+  ],
+  "tags": {
+    "building": "cabin",
+    "image": "https://img.hiking.dennikn.sk/article/201711/large_x/koliby_pod_kutnikov.jpg",
+    "name": "Hubovský štál",
+    "note": "starý senník po rekonštrukcii",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/4914/senniky_nad_hlbokou_pod_kutnikovym_kopcom.html"
+  }
+},
+{
+  "type": "way",
+  "id": 493325053,
+  "center": {
+    "lat": 48.8821715,
+    "lon": 19.3423589
+  },
+  "nodes": [
+    4852492540,
+    4852492537,
+    4852492538,
+    4852492539,
+    4852492540
+  ],
+  "tags": {
+    "building": "cabin",
+    "fee": "no",
+    "fireplace": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large_x/polovnicka_chata_t.jpg",
+    "name": "Poľovnícka chata Tajch",
+    "shelter_type": "basic_hut",
+    "tourism": "wilderness_hut",
+    "url": "https://hiking.dennikn.sk/ar/3129/polovnicky_zrub_tajch_pod_vel_chochulou.html"
+  }
+},
+{
+  "type": "way",
+  "id": 500083740,
+  "center": {
+    "lat": 48.8257141,
+    "lon": 19.9720022
+  },
+  "nodes": [
+    4912314521,
+    4912314020,
+    4912314019,
+    11144578616,
+    11144578615,
+    4912314018,
+    4912314521
+  ],
+  "tags": {
+    "access": "private",
+    "addr:city": "Heľpa",
+    "addr:conscriptionnumber": "1154",
+    "addr:country": "SK",
+    "addr:housenumber": "1154",
+    "addr:place": "Heľpa",
+    "addr:postcode": "97668",
+    "building": "yes",
+    "name": "Jankošová chata",
+    "ref:minvskaddress": "7101416597",
+    "source:addr": "minvskaddress 2023-08",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 502011544,
+  "center": {
+    "lat": 48.9015714,
+    "lon": 20.0232832
+  },
+  "nodes": [
+    4926166806,
+    4926166807,
+    4926166808,
+    4926166809,
+    4926166806
+  ],
+  "tags": {
+    "addr:city": "Liptovská Teplička",
+    "addr:conscriptionnumber": "673",
+    "addr:country": "SK",
+    "addr:housenumber": "673",
+    "addr:place": "Liptovská Teplička",
+    "addr:postcode": "05940",
+    "building": "yes",
+    "capacity": "30",
+    "contact:facebook": "https://www.facebook.com/andrejcova/",
+    "drinking_water": "yes",
+    "ele": "1410",
+    "electricity": "no",
+    "email": "ahoj@andrejcova.sk",
+    "fee": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_utulna_andrejcova_zrek.jpg",
+    "internet_access": "no",
+    "name": "Útulňa Andrejcová",
+    "opening_hours": "May 15-Nov 5 sunrise-sunset+",
+    "payment:cash": "yes",
+    "phone": "+421904596443",
+    "ref:minvskaddress": "7000700718",
+    "reservation": "yes",
+    "shower": "no",
+    "source:addr": "minvskaddress 2023-03",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/187/utulna_andrejcova_zrekonstruovana.html",
+    "website": "https://andrejcova.sk/",
+    "wikidata": "Q9151080",
+    "wikipedia": "sk:Útulňa Andrejcová"
+  }
+},
+{
+  "type": "way",
+  "id": 502110335,
+  "center": {
+    "lat": 49.0133394,
+    "lon": 19.9409871
+  },
+  "nodes": [
+    4926907613,
+    4926907612,
+    4926907611,
+    4926907610,
+    4926907613
+  ],
+  "tags": {
+    "building": "yes",
+    "email": "miroslav.priechodsky@lesy.sk",
+    "name": "Chata pod kostolom",
+    "phone": "+421 918 335 275",
+    "tourism": "chalet",
+    "website": "https://ubytovanie.lesy.sk/chata.html/314/pod-kostolom"
+  }
+},
+{
+  "type": "way",
+  "id": 508029936,
+  "center": {
+    "lat": 49.0795369,
+    "lon": 19.8830011
+  },
+  "nodes": [
+    4974234879,
+    4974234878,
+    4974234877,
+    4974234876,
+    4974234879
+  ],
+  "tags": {
+    "building": "farm_auxiliary",
+    "name": "Kolibka Pod Gliaňom",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 525161523,
+  "center": {
+    "lat": 48.8189299,
+    "lon": 19.9572089
+  },
+  "nodes": [
+    5109380110,
+    5109380109,
+    5109380108,
+    5109380107,
+    5109380110
+  ],
+  "tags": {
+    "access": "private",
+    "building": "yes",
+    "name": "Sidorová chata",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 539725604,
+  "center": {
+    "lat": 48.9824898,
+    "lon": 19.5988477
+  },
+  "nodes": [
+    5222189292,
+    5222189291,
+    5222189290,
+    5222189289,
+    5222189292
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "281",
+    "addr:country": "SK",
+    "addr:housenumber": "281",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "building:levels": "2",
+    "height": "10",
+    "name": "Chata Mrož",
+    "ref:minvskaddress": "15635246",
+    "source": "Ortofotomozaika SR",
+    "source:addr": "minvskaddress 2021-04",
+    "tourism": "chalet",
+    "website": "http://www.skidubojasna.sk/sk/chata-mroz"
+  }
+},
+{
+  "type": "way",
+  "id": 550451168,
+  "center": {
+    "lat": 48.9278338,
+    "lon": 19.6808131
+  },
+  "nodes": [
+    5316608952,
+    5316608951,
+    5316608950,
+    6709418469,
+    5316608952
+  ],
+  "tags": {
+    "building": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/big_koliba_brenkus.jpg",
+    "name": "Útulňa Brenkus",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/101/koliba_brenkus.html"
+  }
+},
+{
+  "type": "way",
+  "id": 566288389,
+  "center": {
+    "lat": 49.1159871,
+    "lon": 19.6514406
+  },
+  "nodes": [
+    5453479509,
+    5453479480,
+    5453479483,
+    5453479476,
+    5453479477,
+    5453479471,
+    5453479509
+  ],
+  "tags": {
+    "addr:city": "Smrečany",
+    "addr:conscriptionnumber": "423",
+    "addr:country": "SK",
+    "addr:housenumber": "423",
+    "addr:place": "Smrečany",
+    "addr:postcode": "03205",
+    "building": "yes",
+    "name": "Drevenica Simona",
+    "ref:minvskaddress": "7101373719",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 566288412,
+  "center": {
+    "lat": 49.1170235,
+    "lon": 19.6540483
+  },
+  "nodes": [
+    5453479753,
+    5453479752,
+    5453479750,
+    5453479751,
+    5453479748,
+    5453479749,
+    5453479746,
+    5453479747,
+    5453479753
+  ],
+  "tags": {
+    "addr:city": "Smrečany",
+    "addr:conscriptionnumber": "450",
+    "addr:country": "SK",
+    "addr:housenumber": "450",
+    "addr:place": "Smrečany",
+    "addr:postcode": "03205",
+    "building": "yes",
+    "name": "Chata Lipa Smrečany",
+    "ref:minvskaddress": "7101526190",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 590686471,
+  "center": {
+    "lat": 48.9763387,
+    "lon": 19.6305855
+  },
+  "nodes": [
+    5639072975,
+    5639072974,
+    5639072973,
+    5639072972,
+    5639072975
+  ],
+  "tags": {
+    "building": "yes",
+    "description": "Chata v dezolatnom a zanedbanom stave!",
+    "fee": "no",
+    "fireplace": "no",
+    "name": "Útulňa Lakôtka (dezolátny stav)",
+    "note": "Stará jaskyniarska základňa",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 608421245,
+  "center": {
+    "lat": 49.0320024,
+    "lon": 19.9205911
+  },
+  "nodes": [
+    5764267828,
+    5764267829,
+    5764267830,
+    5764267831,
+    5764267828
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Chata Luxová",
+    "operator": "LESY Slovenskej republiky, š.p.",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 611940310,
+  "center": {
+    "lat": 49.0483588,
+    "lon": 19.3498688
+  },
+  "nodes": [
+    5793285987,
+    5793285986,
+    5793285985,
+    5793285984,
+    5793285987
+  ],
+  "tags": {
+    "addr:city": "Liptovská Štiavnica",
+    "addr:conscriptionnumber": "548",
+    "addr:country": "SK",
+    "addr:housenumber": "548/58",
+    "addr:postcode": "03401",
+    "addr:street": "Drevenice",
+    "addr:streetnumber": "58",
+    "building": "yes",
+    "email": "info@chalupky.sk",
+    "guest_house": "guest_house",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 48 s vírivkou a so saunou",
+    "operator": "Chalúpky u babky",
+    "phone": "+421 915 494 600",
+    "ref:minvskaddress": "7102615520",
+    "rooms": "3",
+    "source": "ZBgis, survey",
+    "source:addr": "minvskaddress 2024-01",
+    "tourism": "chalet",
+    "website": "https://www.chalupky.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 612722794,
+  "center": {
+    "lat": 48.9795697,
+    "lon": 19.5962161
+  },
+  "nodes": [
+    5799418142,
+    5799418143,
+    7217386451,
+    7217386450,
+    5799418140,
+    7217386449,
+    5799418142
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "187",
+    "addr:country": "SK",
+    "addr:housenumber": "187",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Chata Iľanovka",
+    "ref:minvskaddress": "10331728",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-04",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 722882371,
+  "center": {
+    "lat": 49.0311022,
+    "lon": 19.7925715
+  },
+  "nodes": [
+    6780679714,
+    6780679713,
+    6780679712,
+    6780679711,
+    6780679714
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Zariadenie ÚPS Hybe",
+    "source": "Ortofotomozaika SR",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 733477567,
+  "center": {
+    "lat": 49.0550165,
+    "lon": 19.9232937
+  },
+  "nodes": [
+    6869002553,
+    6869002552,
+    6869002551,
+    6869002550,
+    6869002553
+  ],
+  "tags": {
+    "building": "yes",
+    "layer": "1",
+    "name": "Chata u Jastraba",
+    "rooms": "4",
+    "source": "Ortofotomozaika SR",
+    "tourism": "guest_house",
+    "website": "https://www.ujastraba.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 788679396,
+  "center": {
+    "lat": 48.9428037,
+    "lon": 19.2802552
+  },
+  "nodes": [
+    7373543827,
+    7373543826,
+    7373543825,
+    7373543824,
+    7373543827
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "cabin",
+    "name": "Zuzana",
+    "source": "GPS, survey",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 788899509,
+  "center": {
+    "lat": 49.1147266,
+    "lon": 19.9304580
+  },
+  "nodes": [
+    7375619384,
+    7375658285,
+    7375658286,
+    7375658287,
+    7375619384
+  ],
+  "tags": {
+    "addr:city": "Východná",
+    "addr:housenumber": "1095",
+    "addr:place": "Východná",
+    "addr:postcode": "03232",
+    "building": "yes",
+    "building:levels": "1",
+    "building:roof": "1",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata Medovka",
+    "phone": "+420 734 275 923",
+    "reservation": "required",
+    "smoking": "no",
+    "tourism": "chalet",
+    "website": "https://medovka.com/chata/chata-medovka/"
+  }
+},
+{
+  "type": "way",
+  "id": 791861740,
+  "center": {
+    "lat": 49.0903076,
+    "lon": 19.2009614
+  },
+  "nodes": [
+    7402788171,
+    7402788174,
+    7402788173,
+    7402788172,
+    7402788171
+  ],
+  "tags": {
+    "building": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large_x/koliba_mlynova_pod.jpg",
+    "name": "Koliba Mlynová pod Kýčerov",
+    "source": "Ortofotomozaika SR;survey, GPS, Ortofotomozaika SR",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/3668/koliba_mlynova_pod_kycerou.html"
+  }
+},
+{
+  "type": "way",
+  "id": 798094483,
+  "center": {
+    "lat": 48.9266260,
+    "lon": 19.6496950
+  },
+  "nodes": [
+    7464445004,
+    7464445002,
+    7464445003,
+    7464445000,
+    7464445001,
+    7464444998,
+    7464444999,
+    7464444996,
+    7464444997,
+    7464444994,
+    7464444995,
+    7464444992,
+    7464444993,
+    7464444990,
+    7464444991,
+    7464444988,
+    7464444989,
+    7464444987,
+    12922010025,
+    7464445004
+  ],
+  "tags": {
+    "alt_name": "Štefánička;Štefánikova chata;Chata M. R. Štefánika",
+    "building": "yes",
+    "contact:phone": "+421944935467",
+    "ele": "1740",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_stefanikova_chata_po.jpg",
+    "import": "budovy201004",
+    "internet_access": "no",
+    "name": "Chata generála Milana Rastislava Štefánika",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "operator": "Klub Slovenských Turistov",
+    "reservation": "yes",
+    "shower": "yes",
+    "source": "kapor2",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/241/chata_m_r_stefanika_pod_dumbierom.html",
+    "website": "https://www.chatamrs.sk/",
+    "wikidata": "Q9334490",
+    "wikipedia": "sk:Chata generála Milana Rastislava Štefánika"
+  }
+},
+{
+  "type": "way",
+  "id": 802012212,
+  "center": {
+    "lat": 49.0798278,
+    "lon": 19.2398672
+  },
+  "nodes": [
+    7501799149,
+    7501799152,
+    7501799151,
+    7501799150,
+    7501799149
+  ],
+  "tags": {
+    "building": "barn",
+    "source": "GPS, survey, Ortofotomozaika SR",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 806561376,
+  "center": {
+    "lat": 48.9763238,
+    "lon": 19.2583057
+  },
+  "nodes": [
+    7542471748,
+    7542471747,
+    7542471746,
+    7542471745,
+    7542471748
+  ],
+  "tags": {
+    "building": "service",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 857125540,
+  "center": {
+    "lat": 48.9452822,
+    "lon": 19.4315918
+  },
+  "nodes": [
+    7991422677,
+    7991422676,
+    7991422675,
+    7991422674,
+    7991422677
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Chata pod hrebenom",
+    "source": "ZBGIS",
+    "tourism": "apartment",
+    "website": "https://www.chatapodhrebenom.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 858653522,
+  "center": {
+    "lat": 48.8492463,
+    "lon": 20.3403130
+  },
+  "nodes": [
+    8004348743,
+    8004348740,
+    8004348739,
+    8004348738,
+    8004348741,
+    8004348742,
+    8004348743
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "chata Gápel",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 868048075,
+  "center": {
+    "lat": 49.1023426,
+    "lon": 19.7451650
+  },
+  "nodes": [
+    8091102584,
+    8091102585,
+    8091102586,
+    8091102587,
+    8091102588,
+    8091102589,
+    8091102590,
+    8091102591,
+    8091102584
+  ],
+  "tags": {
+    "beds": "3",
+    "building": "house",
+    "name": "Chata urbár Jamník",
+    "operator": "urbár Jamník",
+    "phone": "+421903840378",
+    "rooms": "2",
+    "tourism": "chalet",
+    "website": "https://www.jamnik.sk/obec-2/chata-urbarskeho-pozemkoveho-spolocenstva/"
+  }
+},
+{
+  "type": "way",
+  "id": 868403222,
+  "center": {
+    "lat": 48.9467889,
+    "lon": 19.7605274
+  },
+  "nodes": [
+    8094456114,
+    8094456115,
+    8094456116,
+    8094458117,
+    8094456114
+  ],
+  "tags": {
+    "building": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large_x/dom_penzion_ci_v.jpg",
+    "tourism": "chalet",
+    "website": "https://hiking.dennikn.sk/ar/3768/rozhladna_a_bufet_krajcov_vrch.html"
+  }
+},
+{
+  "type": "way",
+  "id": 881461286,
+  "center": {
+    "lat": 48.9133072,
+    "lon": 19.7971677
+  },
+  "nodes": [
+    8197763946,
+    8197763947,
+    8197763948,
+    8197763949,
+    8197763946
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "capacity": "15",
+    "ele": "1260",
+    "electricity": "no",
+    "fee": "no",
+    "fireplace": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_utulna_ramza_turi.jpg",
+    "name": "Ramža (útulňa)",
+    "reservation": "no",
+    "shower": "no",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/6/ramza_turisticka_utulna.html",
+    "wikidata": "Q9303945",
+    "wikipedia": "pl:Ramža"
+  }
+},
+{
+  "type": "way",
+  "id": 896021815,
+  "center": {
+    "lat": 49.1190644,
+    "lon": 19.8503062
+  },
+  "nodes": [
+    8329071922,
+    8329071921,
+    8329071920,
+    8329071919,
+    8329071922
+  ],
+  "tags": {
+    "addr:city": "Pribylina",
+    "addr:conscriptionnumber": "1558",
+    "addr:country": "SK",
+    "addr:housenumber": "1558",
+    "addr:place": "Podbanské",
+    "addr:postcode": "03242",
+    "building": "yes",
+    "name": "u Boba",
+    "ref:minvskaddress": "7102224965",
+    "source": "Ortofotomozaika SR,kapor2",
+    "source:addr": "minvskaddress 2023-08",
+    "tourism": "chalet",
+    "website": "https://www.hauzi.sk/chata-u-boba"
+  }
+},
+{
+  "type": "way",
+  "id": 932323914,
+  "center": {
+    "lat": 48.9228321,
+    "lon": 19.6080901
+  },
+  "nodes": [
+    8642675898,
+    8642675899,
+    8642675900,
+    8642675901,
+    8642675898
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Zrub F",
+    "tourism": "chalet",
+    "website": "https://www.zrubypodchopkom.sk"
+  }
+},
+{
+  "type": "way",
+  "id": 998179916,
+  "center": {
+    "lat": 49.0490670,
+    "lon": 19.3511898
+  },
+  "nodes": [
+    9216477973,
+    9216477974,
+    9216477975,
+    9216477976,
+    9216477973
+  ],
+  "tags": {
+    "addr:city": "Liptovská Štiavnica",
+    "addr:conscriptionnumber": "528",
+    "addr:housenumber": "528",
+    "addr:postcode": "03401",
+    "addr:street": "Drevenice",
+    "building": "yes",
+    "email": "info@chalupky.sk",
+    "guest_house": "guest_house",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chalúpka 28 s vírivkou a so saunou",
+    "operator": "Chalúpky u babky",
+    "phone": "+421915494600",
+    "rooms": "3",
+    "tourism": "chalet",
+    "website": "https://www.chalupky.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 1013350366,
+  "center": {
+    "lat": 48.9780130,
+    "lon": 19.5972983
+  },
+  "nodes": [
+    9349049916,
+    9349049915,
+    9349049914,
+    9349049913,
+    9349049916
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "389",
+    "addr:country": "SK",
+    "addr:housenumber": "389",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Chalúpka na Lúke",
+    "ref:minvskaddress": "7102408731",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-04",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1013350367,
+  "center": {
+    "lat": 48.9782434,
+    "lon": 19.5966162
+  },
+  "nodes": [
+    9349076920,
+    9349076919,
+    9349076918,
+    9349076917,
+    9349076920
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "387",
+    "addr:country": "SK",
+    "addr:housenumber": "387",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Chata BlueBerry",
+    "ref:minvskaddress": "7102408720",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-04",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1013350368,
+  "center": {
+    "lat": 48.9784804,
+    "lon": 19.5965069
+  },
+  "nodes": [
+    9349076924,
+    9349076923,
+    9349076922,
+    9349076921,
+    9349076924
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "386",
+    "addr:country": "SK",
+    "addr:housenumber": "386",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Chalet Pølarka",
+    "ref:minvskaddress": "7102397885",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-04",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1134450760,
+  "center": {
+    "lat": 48.8653826,
+    "lon": 20.1485617
+  },
+  "nodes": [
+    10576168380,
+    10576168381,
+    10576168382,
+    10576168383,
+    10576168380
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Chata Štrafy",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1136836720,
+  "center": {
+    "lat": 48.8004417,
+    "lon": 20.2944978
+  },
+  "nodes": [
+    10597320237,
+    10597320234,
+    10597320231,
+    10597320235,
+    10597320230,
+    10597320236,
+    10597320237
+  ],
+  "tags": {
+    "amenity": "shelter",
+    "building": "yes",
+    "shelter_type": "weather_shelter",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1165012059,
+  "center": {
+    "lat": 49.1113433,
+    "lon": 19.7981481
+  },
+  "nodes": [
+    10836455800,
+    10836455797,
+    10836455798,
+    10836455799,
+    10836455800
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Wellness Villa Bobrik",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1165012069,
+  "center": {
+    "lat": 49.1051904,
+    "lon": 19.8004917
+  },
+  "nodes": [
+    10836455844,
+    10836455841,
+    10836455842,
+    10836455843,
+    10836455844
+  ],
+  "tags": {
+    "beds": "7",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Chaty relax",
+    "rooms": "2",
+    "tourism": "chalet",
+    "website": "https://chatyrelax.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 1173582571,
+  "center": {
+    "lat": 49.1068988,
+    "lon": 19.8786608
+  },
+  "nodes": [
+    10904467114,
+    10904467113,
+    10904467112,
+    10904467111,
+    10904467114
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Salaš PD Kokava",
+    "source": "survey,Ortofotomozaika SR, GPS",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1178593469,
+  "center": {
+    "lat": 48.8155543,
+    "lon": 20.2350172
+  },
+  "nodes": [
+    10949089021,
+    10949089020,
+    10949089019,
+    10949089018,
+    10949089021
+  ],
+  "tags": {
+    "amenity": "shelter",
+    "building": "yes",
+    "name": "KOMA",
+    "shelter_type": "weather_shelter",
+    "source": "Ortofotomozaika SR",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1216944175,
+  "center": {
+    "lat": 49.0959160,
+    "lon": 19.1807925
+  },
+  "nodes": [
+    11276138336,
+    11276138335,
+    11276138334,
+    11276138333,
+    11276138336
+  ],
+  "tags": {
+    "building": "cabin",
+    "image": "https://img.hiking.dennikn.sk/article/201711/large_x/koliby_pod_kutnikov.jpg",
+    "note": "starý senník po rekonštrukcii",
+    "source": "survey, GPS",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/4914/senniky_nad_hlbokou_pod_kutnikovym_kopcom.html"
+  }
+},
+{
+  "type": "way",
+  "id": 1229979415,
+  "center": {
+    "lat": 49.0028996,
+    "lon": 19.7134029
+  },
+  "nodes": [
+    11406132038,
+    11406132035,
+    11406132036,
+    11406132037,
+    11406132038
+  ],
+  "tags": {
+    "access": "private",
+    "addr:city": "Liptovská Porúbka",
+    "addr:conscriptionnumber": "624",
+    "addr:country": "SK",
+    "addr:housenumber": "624",
+    "addr:place": "Liptovská Porúbka",
+    "addr:postcode": "03301",
+    "building": "yes",
+    "ref:minvskaddress": "7100568497",
+    "source": "Ortofotomozaika SR",
+    "source:addr": "minvskaddress 2023-12",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1229980050,
+  "center": {
+    "lat": 48.9983947,
+    "lon": 19.7230105
+  },
+  "nodes": [
+    11406138265,
+    11406138264,
+    11406138263,
+    11406138262,
+    11406138265
+  ],
+  "tags": {
+    "addr:city": "Liptovská Porúbka",
+    "addr:conscriptionnumber": "637",
+    "addr:country": "SK",
+    "addr:housenumber": "637",
+    "addr:place": "Liptovská Porúbka",
+    "addr:postcode": "03301",
+    "building": "yes",
+    "ref:minvskaddress": "7100570081",
+    "source": "Ortofotomozaika SR",
+    "source:addr": "minvskaddress 2023-12",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1249044175,
+  "center": {
+    "lat": 48.9410897,
+    "lon": 20.0569224
+  },
+  "nodes": [
+    11610033473,
+    1521776515,
+    11610033471,
+    11610033472,
+    11610033473
+  ],
+  "tags": {
+    "building": "yes",
+    "fee": "no",
+    "fireplace": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/_older/large/big_salas_pod_panskou_h.jpg",
+    "note": "asi salaš, dá sa prespať (bivak)",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/1093/salas_pod_panskou_holou.html"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077305,
+  "center": {
+    "lat": 49.1116768,
+    "lon": 19.5377010
+  },
+  "nodes": [
+    11865580967,
+    11865580968,
+    11865649269,
+    11865649270,
+    11865580967
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "714",
+    "addr:country": "SK",
+    "addr:housenumber": "714",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103052242",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077306,
+  "center": {
+    "lat": 49.1116472,
+    "lon": 19.5372975
+  },
+  "nodes": [
+    11865649271,
+    11865649272,
+    11865649273,
+    11865649274,
+    11865649271
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "713",
+    "addr:country": "SK",
+    "addr:housenumber": "713",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103184803",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077307,
+  "center": {
+    "lat": 49.1114979,
+    "lon": 19.5380933
+  },
+  "nodes": [
+    11865649275,
+    11865649276,
+    11865649277,
+    11865649278,
+    11865649275
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077308,
+  "center": {
+    "lat": 49.1117100,
+    "lon": 19.5379158
+  },
+  "nodes": [
+    11865649279,
+    11865649280,
+    11865649281,
+    11865649282,
+    11865649283,
+    11865649284,
+    11865649279
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "715",
+    "addr:country": "SK",
+    "addr:housenumber": "715",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103184792",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077309,
+  "center": {
+    "lat": 49.1115053,
+    "lon": 19.5385570
+  },
+  "nodes": [
+    11865649285,
+    11865649286,
+    11865649287,
+    11865649288,
+    11865649285
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "722",
+    "addr:country": "SK",
+    "addr:housenumber": "722",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103078312",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077310,
+  "center": {
+    "lat": 49.1112811,
+    "lon": 19.5383240
+  },
+  "nodes": [
+    11865649289,
+    11865649290,
+    11865649291,
+    11865649292,
+    11865649289
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077311,
+  "center": {
+    "lat": 49.1111035,
+    "lon": 19.5390289
+  },
+  "nodes": [
+    11865649293,
+    11865649294,
+    11865649295,
+    11865649296,
+    11865649293
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "670",
+    "addr:country": "SK",
+    "addr:housenumber": "670",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103184814",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077312,
+  "center": {
+    "lat": 49.1111630,
+    "lon": 19.5386368
+  },
+  "nodes": [
+    11865649297,
+    11865649298,
+    11865649299,
+    11865649300,
+    11865649297
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077313,
+  "center": {
+    "lat": 49.1113993,
+    "lon": 19.5388413
+  },
+  "nodes": [
+    11865649301,
+    11865649302,
+    11865649303,
+    11865649304,
+    11865649301
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "723",
+    "addr:country": "SK",
+    "addr:housenumber": "723",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103052231",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077314,
+  "center": {
+    "lat": 49.1111541,
+    "lon": 19.5370356
+  },
+  "nodes": [
+    11865649305,
+    11865649306,
+    11865649307,
+    11865649308,
+    11865649305
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "674",
+    "addr:country": "SK",
+    "addr:housenumber": "674",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103052264",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077315,
+  "center": {
+    "lat": 49.1119718,
+    "lon": 19.5379673
+  },
+  "nodes": [
+    11865649309,
+    11865649310,
+    11865649311,
+    11865649312,
+    11865649309
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "706",
+    "addr:country": "SK",
+    "addr:housenumber": "706",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103078334",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077316,
+  "center": {
+    "lat": 49.1119058,
+    "lon": 19.5373672
+  },
+  "nodes": [
+    11865649313,
+    11865649314,
+    11865649315,
+    11865649316,
+    11865649313
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077317,
+  "center": {
+    "lat": 49.1120016,
+    "lon": 19.5377023
+  },
+  "nodes": [
+    11865649317,
+    11865649318,
+    11865649319,
+    11865649320,
+    11865649317
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077318,
+  "center": {
+    "lat": 49.1120696,
+    "lon": 19.5388374
+  },
+  "nodes": [
+    11865649321,
+    11865649322,
+    11865649323,
+    11865649324,
+    11865649321
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077319,
+  "center": {
+    "lat": 49.1124593,
+    "lon": 19.5387380
+  },
+  "nodes": [
+    11865649325,
+    11865649326,
+    11865649327,
+    11865649328,
+    11865649325
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077320,
+  "center": {
+    "lat": 49.1123339,
+    "lon": 19.5380891
+  },
+  "nodes": [
+    11865649329,
+    11865649330,
+    11865649331,
+    11865649332,
+    11865649329
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "704",
+    "addr:country": "SK",
+    "addr:housenumber": "704",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103218375",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077321,
+  "center": {
+    "lat": 49.1124713,
+    "lon": 19.5376974
+  },
+  "nodes": [
+    11865649333,
+    11865649334,
+    11865649335,
+    11865649336,
+    11865649333
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "711",
+    "addr:country": "SK",
+    "addr:housenumber": "711",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103175299",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077322,
+  "center": {
+    "lat": 49.1125670,
+    "lon": 19.5381711
+  },
+  "nodes": [
+    11865649337,
+    11865649338,
+    11865649339,
+    11865649340,
+    11865649337
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "703",
+    "addr:country": "SK",
+    "addr:housenumber": "703",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103032497",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077323,
+  "center": {
+    "lat": 49.1126994,
+    "lon": 19.5394989
+  },
+  "nodes": [
+    11865649341,
+    11865649342,
+    11865649343,
+    11865649344,
+    11865649345,
+    11865649346,
+    11865649341
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "693",
+    "addr:country": "SK",
+    "addr:housenumber": "693",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103241607",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077324,
+  "center": {
+    "lat": 49.1130774,
+    "lon": 19.5377868
+  },
+  "nodes": [
+    11865649347,
+    11865649348,
+    11865649349,
+    11865649350,
+    11865649347
+  ],
+  "tags": {
+    "addr:city": "Liptovský Trnovec",
+    "addr:conscriptionnumber": "683",
+    "addr:country": "SK",
+    "addr:housenumber": "683",
+    "addr:place": "Liptovský Trnovec",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "ref:minvskaddress": "7103052220",
+    "source:addr": "minvskaddress 2024-08",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077325,
+  "center": {
+    "lat": 49.1124355,
+    "lon": 19.5367879
+  },
+  "nodes": [
+    11865649351,
+    11865649352,
+    11865649353,
+    11865649354,
+    11865649351
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1278077327,
+  "center": {
+    "lat": 49.1122580,
+    "lon": 19.5395250
+  },
+  "nodes": [
+    11865649364,
+    11865649365,
+    11865649366,
+    11865649367,
+    11865649364
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1301502869,
+  "center": {
+    "lat": 48.9783496,
+    "lon": 19.5976437
+  },
+  "nodes": [
+    12055096813,
+    12055096814,
+    12055096815,
+    12055096816,
+    12055096817,
+    12055096818,
+    12055096813
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "391",
+    "addr:country": "SK",
+    "addr:housenumber": "391",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "contact:email": "chatapramen@gmail.com",
+    "contact:phone": "+421 905 212 930",
+    "name": "Chata Prameň",
+    "ref:minvskaddress": "7102795227",
+    "source": "kapor2",
+    "tourism": "chalet",
+    "website": "https://www.chatapramen.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 1301575915,
+  "center": {
+    "lat": 48.8864519,
+    "lon": 19.7368508
+  },
+  "nodes": [
+    12055676177,
+    12055676176,
+    12055676175,
+    12055676174,
+    12055676177
+  ],
+  "tags": {
+    "building": "yes",
+    "building:material": "wood",
+    "fee": "no",
+    "fireplace": "yes",
+    "image": "https://img.hiking.dennikn.sk/article/202003/large_x/barborka_na_lenivej.jpg",
+    "locked": "yes",
+    "name": "Útulňa Barborka",
+    "tourism": "wilderness_hut",
+    "website": "https://hiking.dennikn.sk/ar/6078/barborka_na_lenivej.html"
+  }
+},
+{
+  "type": "way",
+  "id": 1303849638,
+  "center": {
+    "lat": 48.9780014,
+    "lon": 19.5976842
+  },
+  "nodes": [
+    12074912871,
+    12074912872,
+    12074912873,
+    12074912874,
+    12074912871
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "390",
+    "addr:country": "SK",
+    "addr:housenumber": "390",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "contact:email": "papayovam@imafex.sk",
+    "contact:phone": "+421 905 418 374",
+    "name": "Villa pod hviezdami Jasná",
+    "ref:minvskaddress": "7102853252",
+    "source": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1350754413,
+  "center": {
+    "lat": 48.9791573,
+    "lon": 19.5962563
+  },
+  "nodes": [
+    12496735700,
+    12496799101,
+    12496799102,
+    12496799103,
+    12496735700
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "396",
+    "addr:country": "SK",
+    "addr:housenumber": "396",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Chalet Oshi Jasna",
+    "source": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1350754414,
+  "center": {
+    "lat": 48.9788996,
+    "lon": 19.5965841
+  },
+  "nodes": [
+    12496799104,
+    12496799105,
+    12496799106,
+    12496799107,
+    12496799104
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "395",
+    "addr:country": "SK",
+    "addr:housenumber": "395",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "apartments",
+    "name": "Apartmány Kellov Dom",
+    "source": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1350754415,
+  "center": {
+    "lat": 48.9787274,
+    "lon": 19.5967648
+  },
+  "nodes": [
+    12496799108,
+    12496799109,
+    12496799110,
+    12496799111,
+    12496799108
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "394",
+    "addr:country": "SK",
+    "addr:housenumber": "394",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Chata Líška Jasna",
+    "source": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1350754416,
+  "center": {
+    "lat": 48.9783493,
+    "lon": 19.5971622
+  },
+  "nodes": [
+    12496799112,
+    12496799113,
+    12496799114,
+    12496799115,
+    12496799112
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "392",
+    "addr:country": "SK",
+    "addr:housenumber": "392",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Chata Jazorna",
+    "source": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1350754417,
+  "center": {
+    "lat": 48.9780747,
+    "lon": 19.5969398
+  },
+  "nodes": [
+    12496799116,
+    12496799117,
+    12496799118,
+    12496799119,
+    12496799116
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "388",
+    "addr:country": "SK",
+    "addr:housenumber": "388",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Hillview Jasná Chalet",
+    "source": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1350754419,
+  "center": {
+    "lat": 48.9794667,
+    "lon": 19.5952444
+  },
+  "nodes": [
+    12496799124,
+    12496799125,
+    12496799126,
+    12496799127,
+    12496799124
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "381",
+    "addr:country": "SK",
+    "addr:housenumber": "381",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Cottage Rumea",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1350754420,
+  "center": {
+    "lat": 48.9792753,
+    "lon": 19.5953186
+  },
+  "nodes": [
+    12496799128,
+    12496799129,
+    12496799130,
+    12496799131,
+    12496799128
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "382",
+    "addr:country": "SK",
+    "addr:housenumber": "382",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Chata Balux B",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1350754421,
+  "center": {
+    "lat": 48.9793497,
+    "lon": 19.5958293
+  },
+  "nodes": [
+    12496799132,
+    12496799133,
+    12496799134,
+    12496799135,
+    12496799132
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:conscriptionnumber": "398",
+    "addr:country": "SK",
+    "addr:housenumber": "398",
+    "addr:place": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "building": "yes",
+    "name": "Fajná Chata",
+    "source": "kapor2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1385711862,
+  "center": {
+    "lat": 49.0050428,
+    "lon": 19.7124127
+  },
+  "nodes": [
+    12829689915,
+    12829689916,
+    12829689917,
+    12829689918,
+    12829689915
+  ],
+  "tags": {
+    "access": "private",
+    "building": "yes",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1390022598,
+  "center": {
+    "lat": 48.8189109,
+    "lon": 19.4163127
+  },
+  "nodes": [
+    12866407802,
+    12866407803,
+    12866407804,
+    12866407805,
+    12866407802
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814078,
+  "center": {
+    "lat": 49.0367718,
+    "lon": 19.5811772
+  },
+  "nodes": [
+    13679798263,
+    13679798264,
+    13679798265,
+    13679798266,
+    13679798267,
+    13679798268,
+    13679798269,
+    13679798270,
+    13679798263
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814079,
+  "center": {
+    "lat": 49.0368936,
+    "lon": 19.5808063
+  },
+  "nodes": [
+    13679798271,
+    13679798272,
+    13679798273,
+    13679798274,
+    13679798271
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814080,
+  "center": {
+    "lat": 49.0366809,
+    "lon": 19.5803529
+  },
+  "nodes": [
+    13679798275,
+    13679798276,
+    13679798277,
+    13679798278,
+    13679798275
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814081,
+  "center": {
+    "lat": 49.0364808,
+    "lon": 19.5810324
+  },
+  "nodes": [
+    13679798279,
+    13679798280,
+    13679798281,
+    13679798282,
+    13679798283,
+    13679798284,
+    13679798285,
+    13679798286,
+    13679798279
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814082,
+  "center": {
+    "lat": 49.0363201,
+    "lon": 19.5816118
+  },
+  "nodes": [
+    13679798287,
+    13679798288,
+    13679798289,
+    13679798290,
+    13679798287
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814083,
+  "center": {
+    "lat": 49.0359193,
+    "lon": 19.5819314
+  },
+  "nodes": [
+    13679798291,
+    13679798292,
+    13679798293,
+    13679798294,
+    13679798295,
+    13679798296,
+    13679798297,
+    13679798298,
+    13679798291
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814084,
+  "center": {
+    "lat": 49.0355043,
+    "lon": 19.5817603
+  },
+  "nodes": [
+    13679798299,
+    13679798300,
+    13679798301,
+    13679798302,
+    13679798299
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814085,
+  "center": {
+    "lat": 49.0364407,
+    "lon": 19.5800641
+  },
+  "nodes": [
+    13679798303,
+    13679798304,
+    13679798305,
+    13679798306,
+    13679798307,
+    13679798308,
+    13679798309,
+    13679798310,
+    13679798303
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814086,
+  "center": {
+    "lat": 49.0362109,
+    "lon": 19.5806120
+  },
+  "nodes": [
+    13679798311,
+    13679798312,
+    13679798313,
+    13679798314,
+    13679798315,
+    13679798316,
+    13679798317,
+    13679798318,
+    13679798311
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814087,
+  "center": {
+    "lat": 49.0357668,
+    "lon": 19.5807197
+  },
+  "nodes": [
+    13679798319,
+    13679798320,
+    13679798321,
+    13679798322,
+    13679798319
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814088,
+  "center": {
+    "lat": 49.0359651,
+    "lon": 19.5814605
+  },
+  "nodes": [
+    13679798323,
+    13679798324,
+    13679798325,
+    13679798326,
+    13679798323
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814089,
+  "center": {
+    "lat": 49.0361347,
+    "lon": 19.5798780
+  },
+  "nodes": [
+    13679798327,
+    13679798328,
+    13679798329,
+    13679798330,
+    13679798331,
+    13679798332,
+    13679798333,
+    13679798334,
+    13679798327
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814090,
+  "center": {
+    "lat": 49.0358545,
+    "lon": 19.5796384
+  },
+  "nodes": [
+    13679798335,
+    13679798336,
+    13679798337,
+    13679798338,
+    13679798335
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814091,
+  "center": {
+    "lat": 49.0355950,
+    "lon": 19.5795976
+  },
+  "nodes": [
+    13679798339,
+    13679798340,
+    13679798341,
+    13679798342,
+    13679798339
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814092,
+  "center": {
+    "lat": 49.0357267,
+    "lon": 19.5801898
+  },
+  "nodes": [
+    13679798343,
+    13679798344,
+    13679798345,
+    13679798346,
+    13679798343
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814093,
+  "center": {
+    "lat": 49.0353333,
+    "lon": 19.5802408
+  },
+  "nodes": [
+    13679798347,
+    13679798348,
+    13679798349,
+    13679798350,
+    13679798351,
+    13679798352,
+    13679798353,
+    13679798354,
+    13679798347
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814094,
+  "center": {
+    "lat": 49.0345924,
+    "lon": 19.5797028
+  },
+  "nodes": [
+    13679798355,
+    13679798356,
+    13679798357,
+    13679798358,
+    13679798355
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814095,
+  "center": {
+    "lat": 49.0349978,
+    "lon": 19.5794497
+  },
+  "nodes": [
+    13679798359,
+    13679798360,
+    13679798361,
+    13679798362,
+    13679798363,
+    13679798364,
+    13679798365,
+    13679798366,
+    13679798359
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "U Brata",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814096,
+  "center": {
+    "lat": 49.0350330,
+    "lon": 19.5800638
+  },
+  "nodes": [
+    13679798367,
+    13679798368,
+    13679798369,
+    13679798370,
+    13679798367
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814097,
+  "center": {
+    "lat": 49.0351657,
+    "lon": 19.5788962
+  },
+  "nodes": [
+    13679798371,
+    13679798372,
+    13679798373,
+    13679798374,
+    13679798375,
+    13679798376,
+    13679798377,
+    13679798378,
+    13679798371
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814098,
+  "center": {
+    "lat": 49.0352516,
+    "lon": 19.5783738
+  },
+  "nodes": [
+    13679798379,
+    13679798380,
+    13679798381,
+    13679798382,
+    13679798383,
+    13679798384,
+    13679798385,
+    13679798386,
+    13679798379
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1492814099,
+  "center": {
+    "lat": 49.0355287,
+    "lon": 19.5787587
+  },
+  "nodes": [
+    13679798387,
+    13679798388,
+    13679798389,
+    13679798390,
+    13679798387
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1537418981,
+  "center": {
+    "lat": 49.1084493,
+    "lon": 19.4680545
+  },
+  "nodes": [
+    14004237836,
+    14004237835,
+    14004237834,
+    14004237833,
+    14004237836
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1537418982,
+  "center": {
+    "lat": 49.1083491,
+    "lon": 19.4681431
+  },
+  "nodes": [
+    14004237840,
+    14004237839,
+    14004237838,
+    14004237837,
+    14004237840
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1537418983,
+  "center": {
+    "lat": 49.1082676,
+    "lon": 19.4682707
+  },
+  "nodes": [
+    14004237844,
+    14004237843,
+    14004237842,
+    14004237841,
+    14004237844
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1537418984,
+  "center": {
+    "lat": 49.1081930,
+    "lon": 19.4683833
+  },
+  "nodes": [
+    14004237848,
+    14004237847,
+    14004237846,
+    14004237845,
+    14004237848
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1537418985,
+  "center": {
+    "lat": 49.1081303,
+    "lon": 19.4681605
+  },
+  "nodes": [
+    14004237852,
+    14004237851,
+    14004237850,
+    14004237849,
+    14004237852
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1537418986,
+  "center": {
+    "lat": 49.1082057,
+    "lon": 19.4680084
+  },
+  "nodes": [
+    14004237856,
+    14004237855,
+    14004237854,
+    14004237853,
+    14004237856
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1537418987,
+  "center": {
+    "lat": 49.1082920,
+    "lon": 19.4678922
+  },
+  "nodes": [
+    14004237860,
+    14004237859,
+    14004237858,
+    14004237857,
+    14004237860
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1537418988,
+  "center": {
+    "lat": 49.1083776,
+    "lon": 19.4677705
+  },
+  "nodes": [
+    14004237864,
+    14004237863,
+    14004237862,
+    14004237861,
+    14004237864
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1537418990,
+  "center": {
+    "lat": 49.1084405,
+    "lon": 19.4676215
+  },
+  "nodes": [
+    14004237869,
+    14004237868,
+    14004237867,
+    14004237866,
+    14004237869
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "Ortofotomozaika SR, survey",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "relation",
+  "id": 14483412,
+  "center": {
+    "lat": 48.9693827,
+    "lon": 19.5751517
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 304515877,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 304515872,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 304515921,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1122693973,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 374363866,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1122693970,
+      "role": "outer"
+    }
+  ],
+  "tags": {
+    "beds": "80",
+    "email": "recepcia@mikulasskachata.sk",
+    "name": "Hotel Mikulášska chata*** Jasná",
+    "operator": "Mikulášska chata, s.r.o.",
+    "phone": "+421445591676",
+    "rooms": "39",
+    "source": "knowledge",
+    "stars": "3",
+    "tourism": "hotel",
+    "type": "multipolygon",
+    "website": "https://www.mikulasskachata.sk/"
+  }
+},
+{
+  "type": "relation",
+  "id": 14483460,
+  "center": {
+    "lat": 49.0231229,
+    "lon": 19.5741022
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 936856480,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 936856481,
+      "role": "outer"
+    }
+  ],
+  "tags": {
+    "addr:city": "Demänovská Dolina",
+    "addr:postcode": "03101",
+    "description": "Dve chaty v Demänovskej Doline, v tichom prostredí pod lesom, pri potoku. Kapacita každej chaty je 8 osôb.",
+    "guest_house": "guest_house",
+    "image": "https://www.1-2-3-ubytovanie.sk/images/photo/riverstone-chalets/riverstone-chalets-Demaenovska-Dolina-24.jpg",
+    "name": "Riverstone Chalets",
+    "tourism": "chalet",
+    "type": "multipolygon",
+    "website": "https://riverstone.123u.sk/"
+  }
+}
+
+  ]
+}
