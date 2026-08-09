@@ -1,0 +1,413 @@
+# Chata pod Soliskom — osmnáctý publikovaný profil oblasti Vysoké Tatry
+# (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Chata pod Soliskom
+slug: chata-pod-soliskom
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1443424
+lng: 20.0405434
+vyska: 1840
+obec: Štrba
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/27918182 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1840 m nese vlastní web chaty („vo výške 1 840 m"),
+    pamiatkyslovenska.wordpress.com, portaltatra.sk, sdetmi.com,
+    strbskepleso.sk, krasaslovenska.sk i zlavomat.sk (vše čteno 9. 8. 2026).
+    DVĚ ODCHYLKY, přiznané a nezapsané: hiking.sk uvádí 1835 m,
+    tatryportal.sk 1830 m. Konvence z 27. 7. 2026 o nižším čísle se tu
+    nepoužila, protože obě odchylky jsou osamocené a NESHODUJÍ SE ANI SPOLU
+    — nejde tedy o konkurenční tvrzení dvou pramenů o téže věci, ale
+    o dvě různé odlišnosti proti šesti shodným. Viz KONTROLA-11.
+    POZOR NA ZÁMĚNU: horní stanice sedačkové lanovky Solisko Express je níž
+    než chata — 1814 m podle vt.sk i slovenske.cz. Dobový pramen o zimní
+    útulně z roku 1944 uvádí 1860 m (zvazslovenskeholyzovania.sk), tedy
+    o dvacet metrů výš než dnešní údaj.
+    Poloha: jihovýchodní svah Předného Soliska nad Štrbským Plesom. GPS
+    podle vlastního webu 49.1444606, 20.040619228, podle vysoketatry.com
+    N 49.144317° E 20.040538°.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 36
+overeniNocleh:
+  source: >-
+    ZAPSÁNO JE SOUČASNÉ ČÍSLO, NE NEJNIŽŠÍ — a je to rozdíl mezi rozporem
+    pramenů a zastaralostí pramene (viz KONTROLA-11). skkongres.sk
+    a ubytujtesanaslovensku.sk shodně uvádějí „19 pevných lôžok, 17
+    turistických lôžok", tedy 36. Starší prameny nesou 45 (vysoketatry.com),
+    11 (hiking.sk), 9 (turisticky.sk, tatry.sk) a 8 (tatryportal.sk) — to
+    ale popisují stav před přestavbou z roku 2003 a před vznikem ubytovacího
+    objektu BIVAC.
+    Skladba podle vlastního webu (čteno 9. 8. 2026): v chatě „izba Solisko"
+    a noclehárna s devíti lůžky, pár kroků od chaty pak objekt BIVAC s pěti
+    typy pokojů. PŘESNÉ ROZDĚLENÍ MEZI CHATU A BIVAC ŽÁDNÝ PRAMEN NEUVÁDÍ,
+    zapsané číslo je součet obou — je to jeden provoz s jednou recepcí
+    a jedním ceníkem.
+    Ceny: postel v noclehárně 25 €, turistické lůžko v BIVACu s koupelnou
+    35 €, izba Solisko 120 €, pokoje BIVAC 155 až 251 € za pokoj a noc.
+    Check-in od 16.00, check-out do 10.00.
+    ROZPOR O ZVÍŘATECH, nezapsaný: vlastní web má stránku „labkove-pravidla"
+    a označuje se za pet friendly, zlavomat.sk naopak uvádí, že mazlíčci
+    povoleni nejsou.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    skkongres.sk a ubytujtesanaslovensku.sk (čteno 9. 8. 2026): „Počas celého
+    dňa je pre vás otvorená reštaurácia Chaty pod Soliskom, kde si všetci
+    vychutnáte á la carte stravovanie". Slovo „všetci" je nejblíž výslovné
+    větě o neubytovaných, ale jednoznačná formulace to není.
+    Dál: vysoketatry.com „MOŽNOSŤ STRAVOVANIA: ÁNO - reštaurácia"
+    a „KAPACITA STRAVOVANIA: 70"; sdetmi.com „celoročne aj poskytuje domácu
+    stravu, nápoje, informácie a ubytovanie. V ponuke nájdete vždy čerstvé
+    domáce polievky, jedlá a dokonca aj koláče."; portaltatra.sk k roku
+    1970 „slúži ako bufet i v letnej sezóne". Snídaně podle vlastního webu
+    6.00–10.00. Platba kartou je podle turisticky.sk možná.
+    Sedmdesát míst u stolu proti šestatřiceti lůžkům u horní stanice
+    sedačkové lanovky mluví samo, ale odvozovat se to nemá. Telefonát to
+    rozhodne (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: denně 6.00–22.00; snídaně 6.00–10.00
+overeniProvoz:
+  source: >-
+    Celoroční provoz uvádějí shodně pamiatkyslovenska.wordpress.com („Chata
+    je v prevádzke počas celého roka"), sdetmi.com a hiking.sk; provozní
+    dobu 6.00–22.00 nese vlastní web chaty (čteno 9. 8. 2026).
+    ROZPOR, přiznaný: tatry.sk uvádí „open all year round, 24 hours a day" —
+    zjevně starší verze textu, protože vlastní web dnes uvádí konkrétní
+    hodiny.
+    „OTEVŘENO ≠ DOSTUPNÉ" JE TU DOLOŽENÉ ÚŘEDNĚ, a to jmenovitě. Oficiální
+    seznam sezónně uzavřených chodníků TANAP (Vestník vlády SR, příloha
+    č. 3) uvádí „modro značený turistický chodník č. 2836a od Škutnastnej
+    poľany cez Chatu pod Soliskom (NPR Furkotská dolina) až po rázcestie pri
+    čerpacej stanici v lokalite Štrbského plesa" s režimem „Sezónna uzávera
+    od 1. novembra do 31. mája nasledujúceho kalendárneho roka". Chata je
+    tedy sedm měsíců v roce otevřená, ale pěšky po značce se k ní nesmí —
+    zbývá sedačková lanovka a v zimě sjezdovka.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421917655446'
+  email: chatasolisko@pekyho.sk
+  web: https://chatasolisko.pekyho.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1944
+overeniHistorie:
+  source: >-
+    CHATA VZNIKLA JAKO PŘÍSLUŠENSTVÍ LYŽAŘSKÉHO VLEKU, ne jako turistická
+    chata — a to je v tomhle korpusu ojedinělé. Zväz slovenského lyžovania
+    (čteno 9. 8. 2026): „Pred osemdesiatimi rokmi, v lete 1943, dali Štátne
+    kúpele na svahu predného Soliska nad Štrbským Plesom vybudovať prvý
+    elektricky poháňaný lyžiarsky vlek" a „Začiatkom roku 1944 otvorili
+    potom na Prednom Solisku vo výške 1 860 metrov nad morom aj zimnú
+    lyžiarsku útulňu, ktorej prvým chatárom bol už spomínaný František
+    Bujak."
+    KDO: podnět dal „vtedajší riaditeľ Štátnych kúpeľov Ján Zalčík", stavbu
+    zajistily „hlavne Štátne kúpele na Štrbskom Plese" a vedl ji „zamestnanec
+    kúpeľov, popri tom sám aktívny lyžiar, cvičiteľ a pretekár František
+    Bujak" (tentýž pramen).
+    DATA: hiking.sk uvádí „Chatu odovzdali do užívania 6. februára 1944, no
+    úplne bola dokončená až v roku 1946."; vysoketatry.com totéž rozpětí.
+    PROJEKTANT NENALEZEN — ani u původní chaty, ani u nové z roku 2003.
+    DNEŠNÍ BUDOVA JE Z ROKU 2003 a není to přestavba: pamiatkyslovenska.
+    wordpress.com „V roku 2003 bola chata rozmontovaná do základov a na jej
+    mieste vybudovaná nová, rozšírená chata s terasou."; hiking.sk datuje
+    generální opravu 2002–2003 a slavnostní otevření 21. prosince 2003.
+    Do `rokVzniku` šel rok 1944, protože kontinuita jména, místa i provozu
+    je doložená a rok 2003 stojí v milnících.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1943
+    udalost: >-
+      Na svahu Předného Soliska postavily Štátne kúpele první elektricky
+      poháněný lyžařský vlek na Slovensku; podle pramene to byl nejdelší vlek
+      v Československu.
+    zdroj: >-
+      zvazslovenskeholyzovania.sk (čteno 9. 8. 2026) — „v lete 1943, dali
+      Štátne kúpele… vybudovať prvý elektricky poháňaný lyžiarsky vlek";
+      zapomenute-vleky.cz — technologie Von Roll na dřevěných podpěrách
+      vlastní výroby; pamiatkyslovenska.wordpress.com — „pri najdlhšom
+      lyžiarskom vleku v Československu".
+  - rok: 1944
+    udalost: >-
+      Zimní lyžařská útulna byla 6. února předána do užívání; prvním chatařem
+      se stal František Bujak, který stavbu vedl. Úplně dokončená byla až
+      roku 1946.
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „Chatu odovzdali do užívania 6. februára
+      1944, no úplne bola dokončená až v roku 1946.";
+      zvazslovenskeholyzovania.sk k osobě Františka Bujaka.
+  - rok: 1945
+    udalost: >-
+      Chatu začali používat partyzáni.
+    zdroj: >-
+      pamiatkyslovenska.wordpress.com (čteno 9. 8. 2026) — „O rok neskôr
+      začali chatu používať partizáni."
+  - rok: 1970
+    udalost: >-
+      Vlek nahradila kvůli mistrovství světa v klasických disciplínách
+      sedačková lanovka; od té doby chata slouží i v letní sezóně.
+    zdroj: >-
+      zvazslovenskeholyzovania.sk (čteno 9. 8. 2026) — vlek sloužil „až do
+      roku 1969, kedy bol v súvislosti s nadchádzajúcimi Majstrovstvami
+      sveta… nahradený modernou dvojsedačkou"; portaltatra.sk — „od MS
+      v lyžovaní v roku 1970… slúži ako bufet i v letnej sezóne."
+  - rok: 1973
+    udalost: >-
+      Chatu převzala Tatranská správa účelových zariadení SO ČSZTV; následující
+      roky přinesly zásadní úpravy a opravy.
+    zdroj: >-
+      pamiatkyslovenska.wordpress.com (čteno 9. 8. 2026) — „V rokoch
+      1970–1973 chatu prevzala Tatranská správa účelových zariadení SO
+      ČSZTV".
+  - rok: 2003
+    udalost: >-
+      Chatu rozebrali do základů a na jejím místě postavili novou, větší,
+      s terasou, jídelnou a vyšší ubytovací kapacitou; slavnostní otevření
+      21. prosince.
+    zdroj: >-
+      pamiatkyslovenska.wordpress.com (čteno 9. 8. 2026) — „V roku 2003 bola
+      chata rozmontovaná do základov a na jej mieste vybudovaná nová,
+      rozšírená chata s terasou."; hiking.sk k datu otevření.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Tři prameny chatu shodně označují za nejmladší vysokohorskou chatu
+      Vysokých Tater.
+    kategorie: stari
+    zdroj: >-
+      pamiatkyslovenska.wordpress.com (čteno 9. 8. 2026) — „je najmladšou
+      vysokohorskou chatou vo Vysokých Tatrách"; shodně vysoketatry.com
+      a tatry.sk.
+  - text: >-
+      Voda se sem musí dovážet, protože hřebenová poloha ji neudrží;
+      v hlavní sezóně je to podle pramene kolem dvou tisíc litrů denně.
+    kategorie: jine
+    zdroj: >-
+      tatry.sk (čteno 9. 8. 2026) — „Water must be imported since the ridge
+      location cannot retain it naturally. During peak season, daily water
+      needs reach approximately 2,000 liters."
+  - text: >-
+      Stavební materiál se v letech 1943 a 1944 dopravoval nahoru na saních
+      tažených vlekem.
+    kategorie: jine
+    zdroj: >-
+      hotelpanorama.sk (čteno 9. 8. 2026) — „pomocou saní ťahaných vlekom".
+  - text: >-
+      Kousek od chaty stojí ubytovací objekt BIVAC, který provozovatel
+      označuje za nejvýše položené ubytování na sjezdovce v Tatrách.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Len pár krokov od chaty je
+      BIVAC, najvyššie položené ubytovanie na zjazdovke v Tatrách."
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Vysokohorská chata nad Štrbským Plesom, která roku 1944 vznikla jako zimní
+  útulna u prvního elektrického lyžařského vleku na Slovensku. Dnešní budovu
+  postavili roku 2003 na místě rozebrané původní. Tři prameny ji označují za
+  nejmladší vysokohorskou chatu Vysokých Tater.
+text:
+  - >-
+    Chata pod Soliskom stojí ve 1840 metrech na jihovýchodním svahu Předného
+    Soliska nad Štrbským Plesom. Je výš než horní stanice sedačkové lanovky,
+    která má 1814 metrů — což je detail, kvůli kterému se údaje o obou
+    objektech často pletou.
+  - >-
+    Vznikla jinak než ostatní tatranské chaty tohohle průvodce: ne jako
+    turistická chata, ale jako příslušenství lyžařského vleku. V létě 1943
+    daly Štátne kúpele na svahu Soliska postavit první elektricky poháněný
+    lyžařský vlek na Slovensku — podle jednoho pramene nejdelší
+    v Československu — a hned nato i zimní lyžařskou útulnu. Myšlenka byla
+    tehdejšího ředitele Státních lázní Jána Zalčíka, stavbu vedl zaměstnanec
+    lázní, aktivní lyžař a závodník František Bujak, který se pak stal prvním
+    chatařem. Chatu předali do užívání 6. února 1944, hotová byla až roku
+    1946. O rok po otevření ji začali používat partyzáni.
+  - >-
+    Vlek sloužil do roku 1969, kdy ho kvůli mistrovství světa v klasických
+    disciplínách nahradila sedačková lanovka. Od té doby má chata smysl i
+    v létě a funguje jako bufet celoročně. Roku 1973 ji převzala Tatranská
+    správa účelových zariadení a v roce 2003 přišel zásah, po kterém
+    z původní stavby nezbylo nic: chatu rozebrali do základů a na jejím
+    místě postavili novou, větší, s terasou a jídelnou. Otevřeli ji 21. prosince 2003.
+  - >-
+    Spí se tu v izbě Solisko a v devítilůžkové noclehárně; pár kroků od chaty
+    stojí ubytovací objekt BIVAC s pěti typy pokojů, který provozovatel
+    označuje za nejvýše položené ubytování na sjezdovce v Tatrách. Dohromady
+    prameny uvádějí devatenáct pevných a sedmnáct turistických lůžek.
+    Restaurace vaří à la carte celý den a má sedmdesát míst — dvojnásobek
+    lůžek. Výslovnou větu o obsluze neubytovaných jsme nenašli; pramen
+    říká jen „kde si všetci vychutnáte á la carte stravovanie".
+  - >-
+    Voda je tu zvláštní kapitola: hřebenová poloha ji neudrží, takže se musí
+    dovážet — v hlavní sezóně kolem dvou tisíc litrů denně. Zásobování jezdí
+    sedačkovou lanovkou. Když se chata roku 1943 stavěla, vozil se materiál
+    nahoru na saních tažených vlekem.
+  - >-
+    A tady je „otevřeno ≠ dostupné" doložené úředně a jmenovitě. Chata má
+    otevřeno celoročně od šesti ráno do desíti večer, ale modře značený
+    chodník číslo 2836a, který k ní vede od Štrbského Plesa, je podle
+    oficiálního seznamu TANAP sezónně uzavřený od 1. listopadu do 31. května.
+    Sedm měsíců v roce se sem tedy pěšky po značce nesmí a zbývá lanovka
+    Solisko Express — necelých sedm minut a 431 metrů převýšení — nebo v zimě
+    sjezdovka. V létě se jde po modré ze Štrbského Plesa, prameny udávají asi
+    hodinu a půl a 480 metrů stoupání.
+  - >-
+    Údaje nese vlastní web chaty, Zväz slovenského lyžovania,
+    pamiatkyslovenska.wordpress.com, hiking.sk, portaltatra.sk,
+    vysoketatry.com, sdetmi.com, turisticky.sk, tatry.sk, tatryportal.sk,
+    skkongres.sk, zapomenute-vleky.cz, hotelpanorama.sk a seznam uzavřených
+    chodníků TANAP; polohu OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — výška 1840 m, typy pokojů a ceny, provozní doba
+      6.00–22.00, snídaně, check-in/out, objekt BIVAC, kontakty
+      (načteno 9. 8. 2026)
+    url: https://chatasolisko.pekyho.sk/
+  - popis: >-
+      Zväz slovenského lyžovania — nejcennější historický pramen: Ján Zalčík
+      jako iniciátor, Štátne kúpele jako stavebník, František Bujak jako
+      vedoucí stavby a první chatař, vlek 1943, útulna 1944, náhrada
+      dvojsedačkou 1969 (načteno 9. 8. 2026)
+    url: https://www.zvazslovenskeholyzovania.sk/prvy-elektricky-pohanany-lyziarsky-vlek/
+  - popis: >-
+      pamiatkyslovenska.wordpress.com — 1840 m, „najmladšia vysokohorská
+      chata", partyzáni 1945, TSÚZ SO ČSZTV 1970–73, rozebrání do základů
+      2003 (načteno 9. 8. 2026)
+    url: https://pamiatkyslovenska.wordpress.com/2013/10/28/chata-pod-soliskom/
+  - popis: >-
+      hiking.sk — výška 1835 m (odchylka), předání 6. 2. 1944 a dokončení
+      1946, generální oprava 2002–2003 a otevření 21. 12. 2003
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/757/chata_pod_soliskom.html
+  - popis: >-
+      portaltatra.sk — „zrubová chata" u vleku, provoz nejprve jen v zimě,
+      od MS 1970 bufet i v létě, modrá 1:30 (načteno 9. 8. 2026)
+    url: https://portaltatra.sk/chata-pod-soliskom/
+  - popis: >-
+      vysoketatry.com — starší kapacita 45 lůžek a stravování 70 míst, GPS,
+      chatař Milan Štefánik (načteno 9. 8. 2026)
+    url: https://www.vysoketatry.com/chaty/chpsoliskom/chpsoliskom.html
+  - popis: >-
+      skkongres.sk — současná kapacita 19 pevných a 17 turistických lůžek,
+      „reštaurácia… kde si všetci vychutnáte á la carte stravovanie", síť
+      PEKYHO (načteno 9. 8. 2026)
+    url: https://skkongres.sk/zariadenie/chata-pod-soliskom-strbske-pleso/
+  - popis: >-
+      ubytujtesanaslovensku.sk — tatáž kapacita, popis pokojů (izba Solisko,
+      noclehárna s 9 lůžky, pět typů BIVAC) (načteno 9. 8. 2026)
+    url: https://www.ubytujtesanaslovensku.sk/zariadenie/chata-pod-soliskom/
+  - popis: >-
+      TANAP, seznam sezónně uzavřených turistických chodníků (Vestník vlády
+      SR) — chodník č. 2836a přes Chatu pod Soliskom, uzávěra 1. 11. – 31. 5.
+      (načteno 9. 8. 2026)
+    url: https://www.tanap.sk/wp-content/uploads/TZCH_uzavera_zoznam.pdf
+  - popis: >-
+      turisticky.sk — modrá 1,5 h / 480 m / 3,5 km, lanovka 7 minut od Hotelu
+      FIS, platba kartou (načteno 9. 8. 2026)
+    url: https://turisticky.sk/turistika/chata-pod-soliskom/
+  - popis: >-
+      tatry.sk — starší kapacita, zásobování lanovkou, dovoz asi 2000 litrů
+      vody denně, rozšíření terasy v létě 2004 (načteno 9. 8. 2026)
+    url: https://www.tatry.sk/en/chata-pod-soliskom-2/
+  - popis: >-
+      sdetmi.com — 1840 m, stavba od 1943, celoroční provoz, domácí strava
+      a polévky (načteno 9. 8. 2026)
+    url: https://www.sdetmi.com/podujatia/detail/66589/chata-pod-soliskom/
+  - popis: >-
+      tatryportal.sk — výška 1830 m (odchylka), 8 lůžek, chatař Milan
+      Štefánik (načteno 9. 8. 2026)
+    url: https://www.tatryportal.sk/tura/chata-pod-soliskom/
+  - popis: >-
+      vt.sk — Solisko Express, horní stanice 1814 m, převýšení 431 m, jízda
+      pod sedm minut (načteno 9. 8. 2026)
+    url: https://www.vt.sk/en/resort/resort-info/cableway-trips/solisko
+  - popis: >-
+      zapomenute-vleky.cz — vlek 1943 s technologií Von Roll, demontáž 1969
+      a náhrada dvojsedačkou Transporty Chrudim (načteno 9. 8. 2026)
+    url: https://zapomenute-vleky.cz/lifts/o_vtatry
+  - popis: >-
+      hotelpanorama.sk — doprava materiálu na saních tažených vlekem,
+      privatizace 1995 (marketingová stránka hotelu, slabší pramen)
+      (načteno 9. 8. 2026)
+    url: https://www.hotelpanorama.sk/aktivity/chata-pod-soliskom-utulne-miesto-v-srdci-vysokych-tatier
+  - popis: >-
+      zlavomat.sk — 1840 m, vlastní restaurace a lyžárna, odchylné tvrzení
+      o zákazu domácích zvířat (načteno 9. 8. 2026)
+    url: https://www.zlavomat.sk/podnik/15853-chata-pod-soliskom
+  - popis: >-
+      strbskepleso.sk — okružní trasa 7,8 km / 738 m / 2:35 h po modré
+      (načteno 9. 8. 2026)
+    url: https://www.strbskepleso.sk/co-tu-zazijete/turistika/zo-strbskeho-plesa-na-chatu-pod-soliskom-a-spat
+  - popis: >-
+      krasaslovenska.sk — 1840 m, trasy včetně orientačního bodu Liečebný
+      dom Solisko (načteno 9. 8. 2026)
+    url: https://krasaslovenska.sk/2021/01/chata-pod-soliskom-1840m/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/27918182
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/chata-pod-soliskom.yaml (9. 8. 2026).
+
+  PÁTÝ PŘÍPAD KE KONTROLE-11, A NOVÝ DRUH. Výška má tři hodnoty: 1840 m
+  (šest pramenů včetně provozovatele), 1835 m (hiking.sk) a 1830 m
+  (tatryportal.sk). Konvence o nižším čísle by mechanicky vedla na 1830.
+  Nepoužil jsem ji, a důvod je jiný než u předchozích čtyř případů: obě
+  odchylky jsou osamocené a NESHODUJÍ SE ANI SPOLU. Kdyby dva prameny shodně
+  tvrdily 1830, byl by to spor dvou verzí a nižší by vyhrálo. Když se
+  odchylky rozcházejí i mezi sebou, je to šum, ne konkurenční tvrzení.
+  Navrhuji to jako doplněk konvence: rozpor předpokládá DVĚ VERZE, ne tři
+  různá čísla.
+
+  BIVAC JE V PROFILU ZAPOČÍTANÝ, A JE TO POUŽITÍ PRAVIDLA Z KOZUBOVÉ.
+  Ubytovací objekt BIVAC stojí podle vlastního webu „len pár krokov od
+  chaty", je to tedy druhá stavba — ale jeden provoz: jedna recepce, jeden
+  ceník, jeden web, a firma BIVAC s. r. o. je zároveň provozovatelem chaty.
+  Jeden profil, stejně jako u Morského Oka a Wozowni. Přesné rozdělení lůžek
+  mezi chatu a BIVAC ale žádný pramen neuvádí, takže kapacita 36 je součet
+  a nedá se z ní vyčíst, kolik lidí spí v samotné chatě.
+
+  ZMĚNA PROVOZOVATELE NENÍ DOLOŽENÁ. Starší prameny shodně uvádějí chataře
+  Milana Štefánika (vysoketatry.com, tatry.sk, tatryportal.sk, hiking.sk),
+  patička vlastního webu nese „2025 © BIVAC s.r.o." a chata patří do sítě
+  PEKYHO. Kdy a jak přechod proběhl, neuvádí nikdo, a proto v profilu není.
+  POZORUHODNÁ SHODA JMEN: „Milan Štefánik" figuruje i u chaty Encián na
+  Skalnatém plese jako záznam SHS JAMES. Buď je to týž člověk, nebo jeden
+  z těch záznamů je chybný — do dat nešlo ani jedno.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: výška (1840 × 1835 × 1830); kapacita
+  napříč obdobími (8 × 9 × 11 × 36 × 45); doba obnovy chaty horolezci
+  (60. léta × 70. léta); délka a převýšení vleku (2702 m / 506 m ×
+  2570 m / 490 m); domácí zvířata (povolena × ne); jízdní doba lanovky
+  (necelých 7 min × 15 min).
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: projektant původní chaty ani
+  budovy z roku 2003; jakýkoli požár nebo lavina (cíleně hledáno, nic);
+  vlastník nemovitosti odlišený od provozovatele. Slovenskou Wikipedii ani
+  podstránky vlastního webu (/restauracia/, /ubytovanie/, /menu/) se rešerši
+  nepodařilo načíst.
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.

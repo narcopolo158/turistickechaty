@@ -1,0 +1,422 @@
+# Schronisko Górskie ZHP Głodówka — devatenáctý publikovaný profil oblasti
+# Vysoké Tatry (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši.
+# POZOR NA ROZSAH: objekt stojí na Pogórzu Spisko-Gubałowském, tedy MIMO
+# Tatry i mimo Tatrzański park narodowy. Zdůvodnění zařazení je
+# v interniPoznamky a je to otázka pro Michala.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Schronisko Górskie ZHP Głodówka
+slug: schronisko-glodowka
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Głodówka
+    poznamka: běžně užívaná zkrácená podoba
+  - nazev: Dom Artystów im. Karola Stryjeńskiego
+    poznamka: původní jméno prvorepublikové budovy z roku 1934
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.3020524
+lng: 20.1167627
+vyska: 1130
+obec: Bukowina Tatrzańska
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/347519068 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA — ŽÁDNÁ HODNOTA NEMÁ VĚTŠINU A VLASTNÍ WEB VÝŠKU NEUVÁDÍ VŮBEC.
+    Doloženo je 1138 m („Budynek schroniska stoi na wysokości 1138 m.n.p.m.",
+    krajoznawcy.info.pl) a 1130 m (německá Wikipedie); tag ele v OSM nese
+    1120 m. O polaně samotné píše mynaszlaku.pl „na około 1100-1150 m
+    n.p.m." a motopodhale.info „na wysokości około 1000 m n.p.m.".
+    Zapsáno 1130 m, tedy nižší ze dvou textových pramenů o BUDOVĚ (konvence
+    27. 7. 2026); tag `ele` v OSM se stejně jako u Chaty pri Zelenom plese
+    nebere jako konkurenční tvrzení, protože bývá odvozený automaticky.
+    Poloha: Polana Głodówka na jižním svahu Cyrhle nad Białkou, u silnice
+    DW 960 mezi Bukowinou Tatrzańskou a Łysou Polanou. Adresa podle vlastního
+    webu „ul. Głodówka 20, 34-532 Brzegi gmina Bukowina Tatrzańska".
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 90
+overeniNocleh:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): „Do dyspozycji naszych gości jest
+    90 miejsc noclegowych w dwóch budynkach (Murowaniec i Drewniak)";
+    shodně portaltatrzanski.pl.
+    ROZPOR, přiznaný: web provozující nadace uvádí „Do dyspozycji naszych
+    gości jest 100 miejsc noclegowych w dwóch budynkach (Murowaniec
+    i Drewniak)."; campingmapa.pl rozepisuje 48 lůžek v Murowańci a 50
+    v Drewniaku, tedy 98. Zapsáno je číslo z vlastního webu chaty, které je
+    zároveň nejnižší — konvence i pravidlo „provozovatel má přednost" tu
+    vedou na totéž.
+    Dvě budovy podle vlastního webu: Murowaniec „nocleg v pokoju o standardzie
+    schroniska" se společnými koupelnami a Drewniak „w pokoju o podwyższonym
+    standardzie" s koupelnou v pokoji nebo na chodbě; nabízí se i „Nocleg
+    w Camperze". Místní poplatek 2 zł: „Opłata pobierana jest od osób
+    fizycznych od drugiej doby pobytu". V létě se dá vedle objektu stanovat
+    (portaltatrzanski.pl); campingmapa.pl uvádí tábořiště pro asi sto osob.
+    Historicky měla první budova z roku 1934 jedenáct ložnic až pro sto hostů
+    (polska-org.pl).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    TŘETÍ POLSKÝ OBJEKT KORPUSU S TÉMĚŘ PŘÍMÝM DOKLADEM: web provozující
+    nadace (čteno 9. 8. 2026) — „Na co dzień funkcjonuje u nas także
+    restauracja. Polecamy m.in. kawę z pysznym ciachem na tarasie widokowym,
+    herbatę oraz dania regionalne." Formulace „na co dzień" a doporučení kávy
+    a zákusku na vyhlídkové terase popisuje běžný veřejný provoz, ne
+    stravování ubytovaných.
+    Vlastní web vede „Karczma góralska w schronisku" s nabídkou „lokalne
+    specjały, takie jak kwaśnica, oscypek czy placki ziemniaczane"; menu má
+    snídaně, żurek, barszcz, „placek po zbójnicku", pirohy, oscypek, palačinky
+    a tvarohový koláč. portaltatrzanski.pl uvádí „bufet, kuchnię z jadalnią".
+    Restaurace má vlastní veřejnou prezentaci s otevírací dobou 8.00–21.00
+    a bufetovým servisem „a large selection of dishes without long waiting
+    times" (schronisko-glodowka.eatbu.com).
+    VÝSLOVNÁ VĚTA typu „obsługujemy także turystów nienocujących" ale
+    NENALEZENA — jako u všech ostatních objektů korpusu v Tatrách.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: restaurace denně 8.00–21.00
+overeniProvoz:
+  source: >-
+    Celoroční provoz uvádí z-ne.pl (čteno 9. 8. 2026) — objekt funguje
+    celoročně, s restaurací, vyhlídkovými terasami, wi-fi a parkovištěm;
+    otevírací dobu restaurace 8.00–21.00 nese schronisko-glodowka.eatbu.com.
+    TENHLE OBJEKT NEMÁ REŽIM „OTEVŘENO ≠ DOSTUPNÉ", a je to jeho hlavní
+    odlišnost od ostatních polských objektů korpusu: leží MIMO Tatrzański
+    park narodowy, na Pogórzu Spisko-Gubałowském (portaltatrzanski.pl:
+    objekt „znajduje się pod szczytem o nazwie Cyrla nad Białką na Pogórzu
+    Spisko-Gubałowskim"), takže se ho netýká vstupné do parku, zákaz
+    nocování mimo schroniska ani zákaz pobytu od soumraku do svítání.
+    mynaszlaku.pl popisuje polanu jako místo, které s parkem jen sousedí.
+    Přijede se sem autem po silnici DW 960 a u objektu je parkoviště.
+    SEZÓNNÍ ROZPIS OTEVÍRACÍ DOBY SAMOTNÉHO SCHRONISKA NENALEZEN — zapsaná
+    doba se týká restaurace.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+48182077188'
+  email: biuro@glodowka.com.pl
+  web: https://glodowka.com.pl/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1934
+overeniHistorie:
+  source: >-
+    OBJEKT NEVZNIKL JAKO HORSKÁ CHATA, ALE JAKO DŮM PRO UMĚLCE — a nese
+    dodnes i druhé jméno Dom Artystów im. Karola Stryjeńskiego.
+    polska-org.pl (čteno 9. 8. 2026): Karol Stryjeński navrhl ve dvacátých
+    letech vznik domu pro studenty varšavské Akademie výtvarných umění; po
+    jeho smrti roku 1932 záměr uskutečnili přátelé z varšavského Towarzystwa
+    Przyjaciół Akademii Sztuk Pięknych, vznikl stavební výbor s finanční
+    podporou Państwowego Urzędu Wychowania Fizycznego. „Uroczyste oddanie
+    budynku do użytku nastąpiło 25 lutego 1934r." Šlo o „3-piętrowy budynek
+    z belek świerkowych i kamiennym parterem" s jedenácti ložnicemi až pro
+    sto hostů. Shodně portaltatrzanski.pl.
+    PROJEKTANT PRVNÍ, DŘEVĚNÉ BUDOVY NENALEZEN. Projektant druhé, kamenné,
+    doložen je: „inż. Jerzy Żukowski" (polska-org.pl).
+    ROZPOR V DATACI KAMENNÉ BUDOVY, nesrovnaný: polska-org.pl i německá
+    Wikipedie ji kladou do let 1938–1939 jako obnovu po požáru, campingmapa.pl
+    uvádí u budovy Murowaniec rok 1936. Německá Wikipedie navíc zná ještě
+    starší vrstvu — první chatu roku 1930 a přestavbu roku 1936 otevřenou
+    15. října za účasti prezidenta Ignacyho Moścického.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1934
+    udalost: >-
+      Slavnostní otevření 25. února. Třípodlažní budovu ze smrkových trámů
+      s kamenným přízemím postavil stavební výbor Towarzystwa Przyjaciół
+      Akademii Sztuk Pięknych podle záměru Karola Stryjeńského, který
+      dva roky předtím zemřel.
+    zdroj: >-
+      polska-org.pl (čteno 9. 8. 2026) — „Uroczyste oddanie budynku do użytku
+      nastąpiło 25 lutego 1934r."; shodně portaltatrzanski.pl.
+  - rok: 1935
+    udalost: >-
+      Správa objektu přešla na Urząd Wychowania Fizycznego a poté na Związek
+      Harcerstwa Polskiego; od sezóny 1935/1936 se tu konaly skautské
+      výcvikové tábory a lyžařské kurzy.
+    zdroj: >-
+      polska-org.pl (čteno 9. 8. 2026); německá Wikipedie k roku předání ZHP.
+  - rok: 1938
+    udalost: >-
+      28. února kolem první hodiny v noci vypukl požár od přehřátých kamen
+      a celou budovu zničil.
+    zdroj: >-
+      polska-org.pl (čteno 9. 8. 2026) — „28 lutego 1938r. około pierwszej
+      w nocy wybuchł pożar, który strawił cały budynek."
+  - rok: 1939
+    udalost: >-
+      Novou kamennou budovu podle projektu ing. Jerzyho Żukowského postavili
+      z pojistky a veřejných sbírek asi za rok a půl; slavnostní otevření
+      plánované na 1. září překazil začátek války. Za okupace tu Němci
+      zřídili stanoviště pohraniční stráže.
+    zdroj: >-
+      polska-org.pl (čteno 9. 8. 2026) — „Uroczyste otwarcie zaplanowane na
+      1 września 1939r. przerwał wybuch wojny."; portaltatrzanski.pl
+      k funkci „posterunku straży granicznej".
+  - rok: 1957
+    udalost: >-
+      Po sloučení se Związkiem Młodzieży Polskiej roku 1950 získal Związek
+      Harcerstwa Polskiego objekt zpět.
+    zdroj: >-
+      polska-org.pl (čteno 9. 8. 2026).
+  - rok: 2021
+    udalost: >-
+      Od 1. prosince objekt provozuje Fundacja Kształcenia, Wypoczynku
+      i Rekreacji w Krakowie, která si ho pronajala od ZHP.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Schronisko Głodówka jest
+      własnością Związku Harcerstwa Polskiego. Od 1 grudnia 2021 roku jest
+      zarządzane przez Fundację Kształcenia, Wypoczynku i Rekreacji
+      w Krakowie"; web nadace — „od 1 grudnia 2021 roku dzierżawionym przez
+      naszą Fundację od ZHP."
+  - rok: 2022
+    udalost: >-
+      Rozhodnutím maršálka Malopolského vojvodství č. 90/2022 z 9. listopadu
+      byla Głodówka jako ubytovací zařízení úředně zařazena mezi schroniska.
+    zdroj: >-
+      web provozující nadace (čteno 9. 8. 2026) — „Na mocy decyzji Marszałka
+      Województwa Małopolskiego nr 90/2022 z dnia 9 listopada 2022 roku,
+      Głodówka – jako obiekt hotelarski – została zaszeregowana jako
+      schronisko."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Prameny se rozcházejí v tom, jak široké panorama Tater odsud je vidět —
+      vlastní web a nadace uvádějí 45 kilometrů, tři jiné prameny 76.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „45-cio kilometrową panoramę
+      Tatr"; z-ne.pl — „przepiękny widok na 76-cio kilometrową panoramę
+      Tatr"; shodně krajoznawcy.info.pl a willamajerczyk.com.
+  - text: >-
+      O zdejším pohledu na Tatry napsal Walery Eljasz-Radzikowski už roku
+      1874, že „znikąd się one wspanialej nie przedstawiają".
+    kategorie: jine
+    zdroj: >-
+      motopodhale.info (čteno 9. 8. 2026).
+  - text: >-
+      Jméno polany pochází podle pramene od jednoho z jejích dřívějších
+      majitelů, který se jmenoval Głód; záznamy o polaně sahají k roku 1676.
+    kategorie: stari
+    zdroj: >-
+      mynaszlaku.pl (čteno 9. 8. 2026) — „Jej nazwa – Głodówka, pochodzi od
+      jednego z dawnych właścicieli, który miał nazwisko Głód".
+  - text: >-
+      U objektu stojí kaple svatých Petra a Pavla, kde se v neděli a o svátcích
+      slouží mše.
+    kategorie: jine
+    zdroj: >-
+      motopodhale.info (čteno 9. 8. 2026) — „kaplica św. Piotra i Pawła, gdzie
+      w każdą niedzielę i święta odprawiana jest Msza św."; potvrzuje vlastní
+      web chaty.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Schronisko Związku Harcerstwa Polskiego na Polaně Głodówka nad Bukowinou
+  Tatrzańskou. Vzniklo roku 1934 jako dům pro studenty varšavské akademie
+  výtvarných umění podle záměru Karola Stryjeńského, roku 1938 vyhořelo
+  a kamennou náhradu otevřela až válka. Slavné je panoramatem Tater.
+text:
+  - >-
+    Schronisko Głodówka stojí zhruba ve 1130 metrech na Polaně Głodówka, na
+    jižním svahu Cyrhle nad Białkou. Přesnou výšku vlastní web neuvádí
+    a prameny se liší — 1138, 1130, nebo 1120 metrů podle toho, koho se
+    zeptáte.
+  - >-
+    Objekt nevznikl jako horská chata. Karol Stryjeński, ředitel zakopanské
+    Školy dřevozpracujícího průmyslu a autor projektu třetí chaty v Dolině
+    Pięciu Stawów, navrhl ve dvacátých letech postavit tu dům pro studenty
+    varšavské Akademie výtvarných umění. Sám se toho nedožil — zemřel roku
+    1932 — a záměr uskutečnili jeho přátelé z Towarzystwa Przyjaciół Akademii
+    Sztuk Pięknych. Třípodlažní budovu ze smrkových trámů s kamenným přízemím
+    a jedenácti ložnicemi otevřeli 25. února 1934 a dodnes nese druhé jméno
+    Dom Artystów im. Karola Stryjeńskiego.
+  - >-
+    Umělecký provoz dlouho nevydržel: po roce návštěvnost klesla a v polovině
+    roku 1935 přešla správa na Urząd Wychowania Fizycznego a odtud na Związek
+    Harcerstwa Polskiego, který tu od zimní sezóny pořádal skautské výcvikové
+    tábory a lyžařské kurzy. Roku 1936 byla podle německé Wikipedie budova
+    přestavěna a 15. října znovu otevřena za účasti prezidenta Ignacyho
+    Moścického.
+  - >-
+    28. února 1938 kolem první hodiny v noci vypukl od přehřátých kamen požár
+    a celou budovu zničil. Novou, kamennou, podle projektu inženýra Jerzyho
+    Żukowského postavili z pojistky a veřejných sbírek asi za rok a půl —
+    a slavnostní otevření plánované na 1. září 1939 překazil začátek války.
+    Za okupace tu Němci měli stanoviště pohraniční stráže. Skautům se objekt
+    vrátil roku 1957. V osmdesátých letech k němu přibyla druhá, dřevěná
+    budova zvaná Drewniak.
+  - >-
+    Dnes je Głodówka majetkem Związku Harcerstwa Polskiego a od 1. prosince
+    2021 ji provozuje Fundacja Kształcenia, Wypoczynku i Rekreacji z Krakova.
+    Rozhodnutím maršálka Malopolského vojvodství z 9. listopadu 2022 byla
+    úředně zařazena mezi schroniska — což je u tohohle průvodce vzácný případ,
+    kdy status objektu potvrzuje správní akt, ne jen zvyk.
+  - >-
+    Spí se tu podle vlastního webu v devadesáti místech ve dvou budovách:
+    Murowaniec má standard schroniska se společnými koupelnami, Drewniak
+    vyšší standard. V létě se dá vedle objektu stanovat. Karczma góralska
+    vaří kwaśnici, oscypek, bramboráky a „placek po zbójnicku" a má otevřeno
+    od osmi ráno do devíti večer. Provozující nadace píše, že „na co dzień
+    funkcjonuje u nas także restauracja" a doporučuje kávu se zákuskem na
+    vyhlídkové terase — což je popis běžného veřejného provozu, i když
+    výslovnou větu o neubytovaných ani tady nikdo nenapsal.
+  - >-
+    Hlavní důvod, proč sem lidé jezdí, je výhled. Kolik kilometrů tatranského
+    hřebene odsud je vidět, se prameny neshodnou: vlastní web i provozující
+    nadace mluví o pětačtyřiceti, tři jiné prameny o šestasedmdesáti.
+    Jmenují se Kieżmarski, Lodowy, Gerlach, Ganek, Wysoka, Rysy
+    a Mięguszowiecki. Že to místo mělo pověst dávno, dokládá Walery
+    Eljasz-Radzikowski, který už roku 1874 napsal, že „znikąd się one
+    wspanialej nie przedstawiają".
+  - >-
+    Přijede se sem autem po silnici DW 960 z Bukowiny Tatrzańské směrem na
+    Łysou Polanu, asi dvacet kilometrů od Zakopaného, a u objektu je
+    parkoviště. Značené turistické trasy, které by sem vedly, žádný z pramenů
+    neuvádí. Objekt zároveň leží mimo Tatrzański park narodowy — na Pogórzu
+    Spisko-Gubałowském, které s parkem jen sousedí —, takže se tu neplatí
+    vstupné a neplatí ani zákaz nocování mimo schroniska.
+  - >-
+    Údaje nese vlastní web chaty, web provozující nadace, portaltatrzanski.pl,
+    polska-org.pl, krajoznawcy.info.pl, německá Wikipedie, campingmapa.pl,
+    mynaszlaku.pl, motopodhale.info, z-ne.pl, willamajerczyk.com,
+    znaczki-turystyczne.pl a veřejná stránka restaurace; polohu
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty, stránka o schronisku — vlastník ZHP, provozovatel od
+      1. 12. 2021, 90 lůžek ve dvou budovách, 45km panorama, viditelné
+      vrcholy, kaple, vybavení (načteno 9. 8. 2026)
+    url: https://glodowka.com.pl/schronisko
+  - popis: >-
+      Vlastní web chaty — adresa, telefon, e-mail, karczma góralska, typy
+      noclehů, dětské hřiště, ohniště (načteno 9. 8. 2026)
+    url: https://glodowka.com.pl/
+  - popis: >-
+      Vlastní web chaty, noclehy — typy pokojů, místní poplatek od druhé noci
+      (načteno 9. 8. 2026)
+    url: https://glodowka.com.pl/noclegi
+  - popis: >-
+      Fundacja Kształcenia, Wypoczynku i Rekreacji — pronájem od ZHP od
+      1. 12. 2021, 100 lůžek (odchylka), „Na co dzień funkcjonuje u nas także
+      restauracja", úřední zařazení rozhodnutím maršálka 90/2022
+      (načteno 9. 8. 2026)
+    url: https://fundacja.malopolska.pl/podstrona.php?id=103
+  - popis: >-
+      polska-org.pl — Karol Stryjeński a Towarzystwo Przyjaciół ASP, otevření
+      25. 2. 1934, požár 28. 2. 1938, kamenná budova podle projektu ing.
+      Jerzyho Żukowského, Grenzschutz, návrat ZHP 1957 (načteno 9. 8. 2026)
+    url: https://polska-org.pl/9688650,Bukowina_Tatrzanska,Schronisko_Gorskie_ZHP_Glodowka.html
+  - popis: >-
+      portaltatrzanski.pl — poloha na Pogórzu Spisko-Gubałowském pod Cyrlou
+      nad Białkou, 90 lůžek, bufet s kuchyní a jídelnou, stanování v létě,
+      silnice DW 960 (načteno 9. 8. 2026)
+    url: https://portaltatrzanski.pl/przewodnik/schroniska/schronisko-gorskie-zhp-glodowka,6572
+  - popis: >-
+      krajoznawcy.info.pl — výška budovy 1138 m, dům pro studenty varšavské
+      ASP, podpora PUWF, 76km panorama, dnešní funkce (načteno 9. 8. 2026)
+    url: https://www.krajoznawcy.info.pl/dzieje-harcerskiego-schroniska-11160
+  - popis: >-
+      Německá Wikipedie, heslo Głodówka-Hütte — výška 1130 m, chronologie
+      1930, 1935, 1936 (otevření za účasti prezidenta Moścického), 1938,
+      1939, 80. léta, 2005–2006 (načteno 9. 8. 2026)
+    url: https://de.wikipedia.org/wiki/G%C5%82od%C3%B3wka-H%C3%BCtte
+  - popis: >-
+      campingmapa.pl — 48 lůžek v Murowańci a 50 v Drewniaku, datace budov
+      1936 a 80. léta, tábořiště pro asi 100 osob (načteno 9. 8. 2026)
+    url: https://campingmapa.pl/en/schronisko-gorskie-glodowka,427,podglad.html
+  - popis: >-
+      mynaszlaku.pl — výška polany 1100–1150 m, původ jména po majiteli
+      jménem Głód, záznamy od roku 1676, sousedství s TPN, dojezd
+      (načteno 9. 8. 2026)
+    url: https://mynaszlaku.pl/polana-glodowka/
+  - popis: >-
+      motopodhale.info — citát Waleryho Eljasze-Radzikowského z roku 1874,
+      kaple sv. Petra a Pavla s nedělními mšemi (načteno 9. 8. 2026)
+    url: https://motopodhale.info/glodowka-tatry-na-wyciagniecie-reki/
+  - popis: >-
+      z-ne.pl — celoroční provoz, 76km panorama, vyhlídkové terasy, wi-fi
+      a parkoviště (načteno 9. 8. 2026)
+    url: https://z-ne.pl/s,doc,22342,1,1432,polana_glodowka.html
+  - popis: >-
+      schronisko-glodowka.eatbu.com — otevírací doba restaurace 8.00–21.00,
+      bufetový servis, dětský koutek (načteno 9. 8. 2026)
+    url: https://schronisko-glodowka.eatbu.com/?lang=en
+  - popis: >-
+      willamajerczyk.com — „ponad 76-kilometrowy odcinek Tatr", předání ZHP
+      roku 1935 (načteno 9. 8. 2026)
+    url: https://willamajerczyk.com/schronisko-glodowka/
+  - popis: >-
+      znaczki-turystyczne.pl — polohopis na jižním svahu Cyrhle, ubytování asi
+      pro sto hostů, Drewniak z 80. let (načteno 9. 8. 2026)
+    url: https://www.znaczki-turystyczne.pl/znaczkowe-miejsca-turystyczne/glodowka-bukowina-tatrzanska-c5
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut, operator=ZHP; ODbL)
+    url: https://www.openstreetmap.org/way/347519068
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/schronisko-glodowka.yaml
+  (9. 8. 2026).
+
+  DVĚ VĚCI, KTERÉ TENHLE PROFIL DĚLAJÍ SPORNÝM, A OBĚ PATŘÍ MICHALOVI.
+
+  (1) ROZSAH OBLASTI. Objekt neleží v Tatrách. portaltatrzanski.pl ho klade
+  „pod szczytem o nazwie Cyrla nad Białką na Pogórzu Spisko-Gubałowskim",
+  tedy do jiné geomorfologické jednotky, a leží i mimo Tatrzański park
+  narodowy — mynaszlaku.pl píše, že polana s parkem jen sousedí. Do okna
+  oblasti `vysoke-tatry` padl proto, že okno je obdélník. Pro zařazení mluví,
+  že objekt je úředně schronisko górskie, že se celý jeho smysl točí kolem
+  výhledu NA Tatry a že precedens pro rozhodování „podle toho, jak se chodí"
+  místo podle geomorfologie je Michalův vlastní (Javorníky, Góry
+  Bystrzyckie). Proti mluví, že Pogórze je samostatná jednotka a že takhle
+  by okno mohlo nabrat i další podhorské objekty.
+
+  (2) ROLE NA TRASE. Žádný pramen neuvádí značenou turistickou trasu, která
+  by sem vedla — popisují výhradně příjezd po silnici DW 960 a parkoviště.
+  Klíč zařazení má dvě části, role na trase a občerstvení pro veřejnost;
+  druhá je splněná dobře, první slabě. Nejbližší srovnatelný případ
+  v korpusu je odložená wieża widokowa v Mirsku, u které se stejná otázka
+  nechala Michalovi. Tady jsem se rozhodl objekt povýšit, protože je to
+  úředně zařazené horské schronisko s devadesáti lůžky a veřejnou karczmou,
+  ne městská věž — ale rozhodnutí je moje a dá se zvrátit bez ztráty
+  (stačí soubor přesunout zpět mezi kandidáty).
+
+  VÝŠKA — ŠESTÝ PŘÍPAD KE KONTROLE-11. Vlastní web výšku neuvádí vůbec,
+  takže „provozovatel má přednost" nemá na co sáhnout. Zůstávají 1138 m
+  (krajoznawcy.info.pl, výslovně o budově) a 1130 m (německá Wikipedie);
+  tag `ele` v OSM nese 1120 m. Zapsáno 1130 jako nižší ze dvou textových
+  pramenů. Tag v OSM jsem znovu nebral jako konkurenční tvrzení, stejně
+  jako u Chaty pri Zelenom plese — ale je to podruhé, co tohle pravidlo
+  používám, aniž bych ho měl potvrzené.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: výška (1120 × 1130 × 1138, u polany
+  1000 × 1100–1150); kapacita (90 × 98 × 100); datace kamenné budovy
+  (1936 × 1938–1939); šířka panoramatu (45 × 76 km — rozdíl je natolik
+  velký, že jedno z čísel bude nejspíš měřené jinak, ale doloženo to není);
+  provozovatel před rokem 2021 (Fundacja Harcerstwa Polskiego od 2005 podle
+  campingmapa.pl, od ledna 2006 podle polska-org.pl).
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: projektant první, dřevěné budovy;
+  značené trasy k objektu; sezónní rozpis otevírací doby schroniska (zapsaná
+  doba je restaurační). Polskou Wikipedii se rešerši nepodařilo načíst; údaj
+  o výšce 1120 m z tagu OSM nepotvrdil žádný webový pramen.
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.
