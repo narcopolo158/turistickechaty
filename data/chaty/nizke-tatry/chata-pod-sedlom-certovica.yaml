@@ -1,0 +1,210 @@
+# Chata pod Sedlom Čertovica — publikovaný profil Nízkých Tater
+# (9. 8. 2026). VZNIKL PŘÍMO Z REŠERŠE bez OSM kandidáta (vzor
+# katalogových mezer Beskyd): objekt exportem DATA-01 nepřišel, ale
+# katalogová položka HUT-0158 „Chata na Čertovici" (1230 m, Vyšná Boca)
+# je téměř jistě on — žádný živý provoz jménem „Chata na Čertovici"
+# rešerše nenašla. Vše verified: false — redakce nic neověřila vlastním
+# dotazem ani návštěvou.
+
+nazev: Chata pod Sedlom Čertovica
+slug: chata-pod-sedlom-certovica
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Chata na Čertovici
+    poznamka: katalogové jméno (HUT-0158); žádný živý provoz ho nenese
+      a katalogová položka téměř jistě míří sem
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9057429
+lng: 19.7384452
+vyska: 1234
+obec: Vyšná Boca
+overeniLokace:
+  source: >-
+    GPS z vlastního webu chaty (chatacertovica.sk, čteno 9. 8. 2026):
+    48.9057429, 19.7384452; adresa Vyšná Boca 262. Objekt nemá podklad
+    v exportu OSM (DATA-01 ho nepřinesl) — GPS je z webu provozovatele,
+    ne z OpenStreetMap. VÝŠKA — ROZPOR, přiznaný: vlastní web 1234 m,
+    hiking.sk (2013) 1210 m, starší web chaty 1238 m, katalog 1230 m.
+    Zapsáno číslo provozovatele. Poloha: liptovská strana asi 100 m pod
+    sedlem Čertovica, v areálu lyžařského střediska Ski Čertovica,
+    ski-in/ski-out, 1,5 km od Vyšné Boce; hiking.sk: „pod penziónom
+    STIV a chatkou HZS".
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 34
+overeniNocleh:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): 34 lůžek + 2 přistýlky — tři
+    rodinné apartmány (4–6 lůžek), dvě mezonetové izby (5 lůžek), tři
+    turistické izby (4 lůžka); možnost pronájmu celé chaty; rezervace
+    online (chatacertovica.sk/booking). ROZPOR, přiznaný:
+    sedlocertovica.sk uvádí 36 lůžek, travelguide.sk „36+2 beds across
+    8 rooms" a dvoulůžkový za 54–64 € + místní poplatek 1 € — zapsán
+    údaj provozovatele. hiking.sk (2013, 35 míst, od 8 €) dokládá
+    tradici zvýhodněného noclehu pro hřebenovkáře: „ubytovanie na jednu
+    noc vo vlastnom spacom vaku za zvýhodnenú cenu".
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    travelguide.sk (čteno 9. 8. 2026): „The cottage also offers the
+    possibility of all-day dining in the dining room" — jídelna
+    s kapacitou 20 osob, snídaně v ceně, polopenze i plná penze možná;
+    vlastní web chválí bohaté bufetové snídaně. Výslovný doklad obsluhy
+    neubytovaných se nenašel (jídelna je malá) — telefonát rozhodne
+    (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    hiking.sk (2013, čteno 9. 8. 2026): „Celoročná s obslužným
+    personálom"; travelguide.sk: „Open year-round; minimum 2-night
+    stay". V PROVOZU: přehled sedlocertovica.sk (©2025) chatu vede
+    s hodnocením „Booking 9,3 | Google 4,9" — nejvyšším ze čtyř provozů
+    sedla; aktivní profily na Zlavomatu a Facebooku. Vlastní web
+    jmenuje majitele Petera a manažera Andreje (křestní jména, jak je
+    uvádí web); firma se nenašla.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421903466402'
+  email: chatar@chatacertovica.sk
+  web: https://chatacertovica.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+overeniHistorie:
+  source: >-
+    Rok výstavby se nenašel; URL staršího webu chaty končí „/1982", což
+    rok jen naznačuje a text ho nepotvrzuje — pole rokVzniku proto
+    zůstává prázdné. hiking.sk psal roku 2013, že chata funguje jako
+    „praktická alternativa vzhledem k uzavřené staré ‚Čertovici'" —
+    tedy k historické Chatě Čertovica (1935–36, první soukromé
+    ubytovací zařízení Nízkých Tater dle abandonedhotels.eu), která je
+    dnes ruinou západně pod sedlem a s tímhle objektem nesouvisí.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Hřebenovkáři tu mívali zvláštní sazbu: nocleh na jednu noc ve
+      vlastním spacáku za zvýhodněnou cenu — Cesta hrdinov SNP prochází
+      dvě stě metrů od chaty.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk (2013, čteno 9. 8. 2026) — „ubytovanie na jednu noc vo
+      vlastnom spacom vaku za zvýhodnenú cenu"; vzdálenost od
+      hřebenovky vlastní web.
+  - text: >-
+      Chata je ski-in/ski-out: sjezdovka střediska Ski Čertovica začíná
+      deset metrů od dveří.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „10 m SKI ČERTOVICA/Ski
+      In – Ski Out".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata sto metrů pod sedlem Čertovica, přímo u sjezdovky — ski-in,
+  ski-out, sauna, kulečník a čtyřiatřicet lůžek v apartmánech
+  a turistických izbách. Katalogy ji vedou i jako „Chatu na Čertovici";
+  hřebenovkáři z Cesty hrdinov SNP to sem mají dvě stě metrů.
+text:
+  - >-
+    Chata stojí na liptovské straně zhruba sto metrů pod sedlem
+    Čertovica, uprostřed lyžařského střediska Ski Čertovica — sjezdovka
+    začíná deset metrů od dveří. Na výšce se prameny neshodnou do metru
+    (1210 až 1238) a profil zapisuje číslo provozovatele, 1234 metrů.
+    Ze čtyř ubytovacích provozů sedla má tahle chata nejvyšší hodnocení
+    hostů; a jedno upozornění hned úvodem — není to Chata pod
+    Čertovicou (ta stojí u jezírka východně od sedla) ani Penzión STIV
+    (ten je přímo u silnice).
+  - >-
+    Spí se ve třech rodinných apartmánech, dvou mezonetových a třech
+    turistických izbách — dohromady čtyřiatřicet lůžek a dvě přistýlky,
+    s bufetovou snídaní v ceně; rezervuje se online a dá se pronajmout
+    i celá chata. Jídelna pro dvacet lidí vaří po celý den, polopenze
+    i plná penze jsou možné. K vybavení patří sauna, krb, kulečník
+    a terasa nad sjezdovkou.
+  - >-
+    Pro pěší je podstatná poloha: červená hřebenovka Cesty hrdinov SNP
+    prochází dvě stě metrů od chaty a hiking.sk už před lety popsal
+    místní vstřícnost k hřebenovkářům — nocleh na jednu noc ve vlastním
+    spacáku za zvýhodněnou cenu. Z sedla je to na západ k Ďumbieru
+    kolem čtyř a čtvrt hodiny, na východ se přes Beňušku pokračuje
+    k útulně Ramža; autobus z Liptovského Mikuláše do Brezna staví
+    v sedle.
+  - >-
+    Údaje nesou vlastní web chaty, sedlocertovica.sk, travelguide.sk
+    a hiking.sk. Objekt nemá podklad v OpenStreetMap — souřadnice jsou
+    z webu provozovatele. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — GPS a adresa Vyšná Boca 262, 1234 m, 34 lůžek
+      + 2 přistýlky ve třech typech pokojů, online rezervace, ski-in/
+      ski-out, sauna, majitel Peter a manažer Andrej
+      (načteno 9. 8. 2026)
+    url: https://chatacertovica.sk
+  - popis: >-
+      sedlocertovica.sk, přehled ubytování v sedle (©2025) — 36 lůžek,
+      300 m od centrálního parkoviště, hodnocení Booking 9,3 / Google
+      4,9 (načteno 9. 8. 2026)
+    url: https://www.sedlocertovica.sk/ubytovanie/
+  - popis: >-
+      travelguide.sk — 36+2 lůžek v 8 pokojích, celodenní stravování
+      v jídelně pro 20 osob, dvoulůžkový 54–64 €, celoročně, minimum
+      2 noci (načteno 9. 8. 2026)
+    url: https://www.travelguide.sk/eng/accommodation/chata-pod-sedlom_51417_0_1.html
+  - popis: >-
+      hiking.sk (2013) — 1210 m, 35 míst, od 8 €, zvýhodněný nocleh pro
+      hřebenovkáře ve spacáku, „praktická alternativa" k zavřené staré
+      Čertovici, poloha pod penziónem STIV (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/2694/chata_pod_sedlom_certovica.html
+  - popis: >-
+      Starší web chaty (wixsite „…/1982") — 1238 m, 1,5 km od Vyšné
+      Boce; rok v URL text nepotvrzuje (načteno 9. 8. 2026)
+    url: https://chatapodsedlomcert.wixsite.com/1982
+  - popis: >-
+      abandonedhotels.eu — historická Chata Čertovica (1935–36), dnes
+      ruina; kontext, jiný objekt (načteno 9. 8. 2026)
+    url: https://abandonedhotels.eu/chata-certovica-certovica/
+interniPoznamky: >-
+  ZALOŽENO PŘÍMO Z REŠERŠE 9. 8. 2026 — bez OSM kandidáta (DATA-01
+  objekt nepřinesl; čtvrtý profil korpusu vzniklý touhle cestou po
+  třech beskydských). Až objekt přibude v OSM, doplnit way/node do
+  overeniLokace (DATA-31/DATA-36 ho nesmí založit jako duplicitního
+  kandidáta — jméno i GPS už web vede).
+
+  KATALOG: HUT-0158 „Chata na Čertovici" (1230 m, Vyšná Boca) přiřazena
+  SEM — žádný živý provoz toho jména rešerše nenašla a jediná další
+  možnost je historická Chata Čertovica (1935/36), dnes ruina;
+  kdyby Michal rozhodl, že katalogová položka míří na ruinu, patřilo by
+  jí heslo se stavem zanikla a tenhle profil by zůstal mimo katalog.
+  Otázka položena v deníku (čtrnáctý blok).
+
+  POZOR NA DOMÉNY: starý web téhle chaty byl certovica.eu — zatímco
+  certovica.sk patří Penziónu STIV. Pravděpodobný zdroj záměn
+  v katalozích a agregátorech.
+
+  VÝŠKA 1234 × 1210 × 1238 × 1230 — zapsán údaj provozovatele.
+  KAPACITA 34+2 (provozovatel) × 36 × 36+2 — údaj provozovatele.
+  ROK VZNIKU nevyplněn (URL „/1982" není doklad). Firma NENALEZENA.
+  Fotku dodá druhý běh DATA-02 (až bude objekt v OSM — do té doby ne,
+  DATA-02 jede po OSM objektech), výškový profil DATA-06.

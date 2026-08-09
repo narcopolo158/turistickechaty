@@ -81,10 +81,24 @@ a Domček HS (OZ jako Andrejcová, kandidáta taky nemá). Plus tři ruiny
 západně pod sedlem (stará Chata Čertovica 1935/36, Športhotel, TOTEM).
 Příští blok z toho udělá profily.
 
-**Příště:** Čertovica (4 profily z hotové rešerše, HUT-0158 přiřadit),
-pak zbývající katalog NT: Liptov, Opalisko; triáž NT pass 2 (thin
-records); Beskydy jádro. Kliky DATA-32 (lanovky) pořád čekají —
-Kosodrevina i Kamienka na ně odkazují.
+**DOVĚTEK TÉHOŽ BLOKU — ČERTOVICA HOTOVÁ ZE TŘÍ ČTVRTIN, korpus 190
+a NT na 13 profilech:** povýšeny **Chata pod Čertovicou** (HUT-0150,
+u jezírka Kyselka, pstruzi z vlastního jezírka, LBS INVEST s.r.o.)
+a **Penzión STIV Čertovica** (HUT-0151; bod OSM je restaurace areálu,
+penzion 15 m vedle — jeden profil; vlastní lyžařský areál, restaurace
+denně 10–17:30 i pro veřejnost). **Chata pod Sedlom Čertovica založena
+PŘÍMO Z REŠERŠE bez OSM kandidáta** (čtvrtý takový profil korpusu;
+GPS z webu provozovatele) a katalogová **HUT-0158 „Chata na Čertovici"
+přiřazena jí** — s poznámkou, že kdyby položka mířila na ruinu staré
+Chaty Čertovica (1935/36), bylo by to heslo se stavem zanikla. Čtvrtý
+provoz sedla, **Domček HS (OZ Horské spoločenstvo, otevřen 17. 6.
+2018, 20 lůžek)**, zůstává na příště — nemá kandidáta ani doloženou
+přesnou GPS; data jsou v rešerši (hiking 5104, domceknacertovici.sk).
+
+**Příště:** Domček HS na Čertovici (profil bez GPS po vzoru Rovnice,
+nebo počkat na DATA-31); zbývající katalog NT: Liptov, Opalisko; triáž
+NT pass 2 (thin records); Beskydy jádro. Kliky DATA-32 (lanovky) pořád
+čekají — Kosodrevina i Kamienka na ně odkazují.
 
 **Otázky pro Michala:** beze změny; nová drobnost k rozhodnutí —
 **HUT-0158 „Chata na Čertovici"**: rešerše říká, že žádný živý provoz
