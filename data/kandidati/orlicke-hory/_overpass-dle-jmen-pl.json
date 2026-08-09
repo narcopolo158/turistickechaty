@@ -1,0 +1,110 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T20:32:36Z",
+    "timestamp_areas_base": "2026-08-09T04:45:57Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 266275214,
+  "center": {
+    "lat": 50.4131086,
+    "lon": 16.5104011
+  },
+  "nodes": [
+    2718566230,
+    2718566229,
+    2718566171,
+    2718566172,
+    2718566173,
+    2718566185,
+    2718566174,
+    2718566187,
+    2718566244,
+    2718566241,
+    2718566243,
+    2718566230
+  ],
+  "tags": {
+    "addr:city": "Polanica-Zdrój",
+    "addr:housenumber": "2",
+    "addr:postcode": "57-320",
+    "addr:street": "Leśna",
+    "building": "yes",
+    "building:levels": "2",
+    "description": "Pensjonat w Polanicy-Zdroju.",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:ssid": "Jagodna",
+    "name": "Jagodna",
+    "smoking": "outside",
+    "source:addr": "EMUiA (mpolanicazdroj.e-mapa.net)",
+    "source:geometry": "geoportal.gov.pl, GPS",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 357229163,
+  "center": {
+    "lat": 50.3915626,
+    "lon": 16.3979492
+  },
+  "nodes": [
+    3625535274,
+    3625535275,
+    7124796091,
+    9801192537,
+    7124796092,
+    7124796093,
+    7124796094,
+    7124796095,
+    7124796096,
+    7124796097,
+    3625535276,
+    3625535277,
+    7124796090,
+    7124796087,
+    7124796088,
+    7124796089,
+    7124796086,
+    7124796085,
+    7124767283,
+    7124767284,
+    3625535274
+  ],
+  "tags": {
+    "addr:city": "Duszniki-Zdrój",
+    "addr:city:simc": "0983913",
+    "addr:housenumber": "14",
+    "addr:postcode": "57-340",
+    "addr:street": "Górska",
+    "addr:street:sym_ul": "05989",
+    "building": "hotel",
+    "building:levels": "1",
+    "check_date:internet_access": "2022-05-28",
+    "email": "schroniskopodmuflonem@gmail.com",
+    "facebook": "https://www.facebook.com/podmuflonem/",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Schronisko Pod Muflonem",
+    "name:de": "Stille Liebe",
+    "name:pl": "Schronisko Pod Muflonem",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 74 667 56 08;+48 530 872 143",
+    "roof:levels": "3",
+    "roof:shape": "gabled",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "https://muflon.com.pl/",
+    "wikidata": "Q9334382",
+    "wikipedia": "pl:Schronisko PTTK „Pod Muflonem”"
+  }
+}
+
+  ]
+}

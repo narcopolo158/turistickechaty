@@ -1,0 +1,24 @@
+# Perníková chaloupka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-20)
+# Zdroj: https://www.openstreetmap.org/node/9752572414 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/orlicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Perníková chaloupka
+slug: pernikova-chaloupka
+zeme: cz
+oblast: orlicke-hory
+typ: utulna
+lat: 50.1728827
+lng: 16.3139005
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/9752572414 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-20) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=wilderness_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

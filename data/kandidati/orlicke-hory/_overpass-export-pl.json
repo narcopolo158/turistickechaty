@@ -1,0 +1,870 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T20:31:36Z",
+    "timestamp_areas_base": "2026-08-08T22:59:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 322666627,
+  "lat": 50.2249516,
+  "lon": 16.5721019,
+  "tags": {
+    "name": "Chata na przełęczy",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "node",
+  "id": 4660626254,
+  "lat": 50.3441038,
+  "lon": 16.3928044,
+  "tags": {
+    "addr:city": "Duszniki-Zdrój",
+    "addr:housenumber": "113",
+    "addr:postcode": "57-340",
+    "addr:street": "Zieleniec",
+    "name": "Zbójnicka Chata",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "node",
+  "id": 6665594389,
+  "lat": 50.3839313,
+  "lon": 16.3742616,
+  "tags": {
+    "email": "maciek.firlit@gmail.com",
+    "internet_access": "wlan",
+    "name": "Modrzewiowa Chata",
+    "name:en": "The Larch Cottage",
+    "name:fr": "Chalet de mélèze",
+    "opening_hours": "24/7",
+    "operator": "Prywatna kwatera",
+    "phone": "+48 534 677 328",
+    "tourism": "chalet",
+    "website": "https://www.booking.com/hotel/pl/modrzewiowa-chata-duszniki-zdroj.pl.html"
+  }
+},
+{
+  "type": "node",
+  "id": 6714875773,
+  "lat": 50.2636127,
+  "lon": 16.5222933,
+  "tags": {
+    "access": "yes",
+    "building": "hut",
+    "building:levels": "2",
+    "changing_table": "no",
+    "fee": "no",
+    "fireplace": "no",
+    "fixme": "Do weryfikacji w terenie, która lokalizacja jest poprawna, na mapie OSM wskazano dwie lokalizacje oddalone od siebie o około 200 m.",
+    "name": "Chatka Sylwestrowa",
+    "reservation": "no",
+    "shower": "no",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 10608236074,
+  "lat": 50.4174283,
+  "lon": 16.6665283,
+  "tags": {
+    "email": "domyslonca@gmail.com",
+    "name": "Domy Słońca",
+    "phone": "+48606740427",
+    "reservation": "yes",
+    "tourism": "chalet",
+    "website": "https://domyslonca.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 11108564332,
+  "lat": 50.3904030,
+  "lon": 16.5254838,
+  "tags": {
+    "beds": "32",
+    "name": "Domki Michałki",
+    "rooms": "4",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 11690214104,
+  "lat": 50.3364073,
+  "lon": 16.4342176,
+  "tags": {
+    "name": "Chatka Przewodnicka SKPS",
+    "operator": "Studenckie Koło Przewodników Sudeckich",
+    "tourism": "wilderness_hut",
+    "website": "https://skps.wroclaw.pl/chatka-skps/"
+  }
+},
+{
+  "type": "node",
+  "id": 13025491529,
+  "lat": 50.3546750,
+  "lon": 16.4702203,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 13745647140,
+  "lat": 50.1432008,
+  "lon": 16.6616119,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "polish",
+    "name": "Bar Nasza Chata",
+    "opening_hours": "Mo-Su 11:30-17:00"
+  }
+},
+{
+  "type": "way",
+  "id": 84360037,
+  "center": {
+    "lat": 50.3389992,
+    "lon": 16.3844565
+  },
+  "nodes": [
+    980883932,
+    980884305,
+    980883626,
+    980883660,
+    980884066,
+    980883873,
+    980884343,
+    980884143,
+    980884644,
+    980884414,
+    980883732,
+    980883771,
+    8868764105,
+    980883932
+  ],
+  "tags": {
+    "addr:city": "Duszniki-Zdrój",
+    "addr:city:simc": "0983913",
+    "addr:housenumber": "78",
+    "addr:postcode": "57-340",
+    "addr:street": "Zieleniec",
+    "addr:street:sym_ul": "26053",
+    "building": "yes",
+    "contact:facebook": "pttkorlica",
+    "email": "biuro@orlica.info",
+    "name": "Schronisko PTTK \"Orlica\"",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 609 000 088",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "https://www.orlica.info/",
+    "wikidata": "Q9334379",
+    "wikipedia": "pl:Schronisko PTTK „Orlica” (Góry Orlickie)"
+  }
+},
+{
+  "type": "way",
+  "id": 175157917,
+  "center": {
+    "lat": 50.3381733,
+    "lon": 16.3887125
+  },
+  "nodes": [
+    3761975480,
+    3761975476,
+    3761975475,
+    3761975467,
+    3761975466,
+    3761975474,
+    3761975473,
+    3761975477,
+    3761975478,
+    3761975479,
+    3761975480
+  ],
+  "tags": {
+    "addr:city": "Duszniki-Zdrój",
+    "addr:city:simc": "0983913",
+    "addr:housenumber": "6a",
+    "addr:postcode": "57-340",
+    "addr:street": "Zieleniec",
+    "addr:street:sym_ul": "26053",
+    "building": "yes",
+    "name": "Chata Zieleniecka",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "way",
+  "id": 175157998,
+  "center": {
+    "lat": 50.3382036,
+    "lon": 16.3896565
+  },
+  "nodes": [
+    3761975481,
+    3761975469,
+    3761975472,
+    3761975482,
+    3761975481
+  ],
+  "tags": {
+    "addr:housenumber": "10A",
+    "addr:place": "Zieleniec",
+    "addr:postcode": "57-340",
+    "building": "yes",
+    "email": "rezerwacja.chatagoralska@gmail.com",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata Góralska",
+    "phone": "+48 602 643 530",
+    "tourism": "guest_house",
+    "website": "https://chatazieleniec.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 276650482,
+  "center": {
+    "lat": 50.2413467,
+    "lon": 16.7488170
+  },
+  "nodes": [
+    2812373380,
+    6749185291,
+    6749185292,
+    6749185298,
+    6749185297,
+    6749185296,
+    6749185293,
+    2812373384,
+    2812373383,
+    6749185295,
+    6749185294,
+    6749129976,
+    2812373378,
+    2812373380
+  ],
+  "tags": {
+    "addr:city:simc": "0991226",
+    "addr:housenumber": "3",
+    "addr:place": "Góra Igliczna",
+    "addr:postcode": "57-513",
+    "building": "hotel",
+    "name": "Schronisko \"Na Iglicznej\"",
+    "source:addr": "survey",
+    "source:geometry": "Krajowa Integracja Ewidencji Gruntow: Budynki",
+    "tourism": "alpine_hut",
+    "wikidata": "Q9334341",
+    "wikipedia": "pl:Schronisko „Na Iglicznej”"
+  }
+},
+{
+  "type": "way",
+  "id": 289220380,
+  "center": {
+    "lat": 50.2771086,
+    "lon": 16.5372827
+  },
+  "nodes": [
+    2927683583,
+    2927683584,
+    3407627306,
+    3407627305,
+    3407627311,
+    3407627312,
+    2927683586,
+    9667841581,
+    2927683585,
+    3407627309,
+    3407627310,
+    3407627308,
+    3407627307,
+    3407627304,
+    3407627303,
+    2927683583
+  ],
+  "tags": {
+    "addr:city:simc": "0851577",
+    "addr:housenumber": "6",
+    "addr:place": "Spalona",
+    "building": "yes",
+    "contact:mobile": "+48 695 777 635",
+    "ele": "811",
+    "email": "schronisko@jagodna.com",
+    "internet_access": "wlan",
+    "name": "Schronisko PTTK Jagodna",
+    "name:de": "Brandbaude",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 74 811 98 16",
+    "source": "survey",
+    "tourism": "alpine_hut",
+    "website": "https://www.jagodna.com/",
+    "wikidata": "Q9334371",
+    "wikipedia": "pl:Schronisko PTTK „Jagodna”"
+  }
+},
+{
+  "type": "way",
+  "id": 330449282,
+  "center": {
+    "lat": 50.2993932,
+    "lon": 16.4586989
+  },
+  "nodes": [
+    3374122821,
+    3964625812,
+    3964625805,
+    3964625804,
+    3374122819,
+    3964625798,
+    3374122818,
+    5983694293,
+    3374122820,
+    3374122821
+  ],
+  "tags": {
+    "addr:city:simc": "0851382",
+    "addr:housenumber": "8",
+    "addr:place": "Lasówka",
+    "addr:postcode": "57-517",
+    "building": "yes",
+    "name": "Sudecka Chata",
+    "phone": "+48746421272",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 357229163,
+  "center": {
+    "lat": 50.3915626,
+    "lon": 16.3979492
+  },
+  "nodes": [
+    3625535274,
+    3625535275,
+    7124796091,
+    9801192537,
+    7124796092,
+    7124796093,
+    7124796094,
+    7124796095,
+    7124796096,
+    7124796097,
+    3625535276,
+    3625535277,
+    7124796090,
+    7124796087,
+    7124796088,
+    7124796089,
+    7124796086,
+    7124796085,
+    7124767283,
+    7124767284,
+    3625535274
+  ],
+  "tags": {
+    "addr:city": "Duszniki-Zdrój",
+    "addr:city:simc": "0983913",
+    "addr:housenumber": "14",
+    "addr:postcode": "57-340",
+    "addr:street": "Górska",
+    "addr:street:sym_ul": "05989",
+    "building": "hotel",
+    "building:levels": "1",
+    "check_date:internet_access": "2022-05-28",
+    "email": "schroniskopodmuflonem@gmail.com",
+    "facebook": "https://www.facebook.com/podmuflonem/",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Schronisko Pod Muflonem",
+    "name:de": "Stille Liebe",
+    "name:pl": "Schronisko Pod Muflonem",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "phone": "+48 74 667 56 08;+48 530 872 143",
+    "roof:levels": "3",
+    "roof:shape": "gabled",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "alpine_hut",
+    "website": "https://muflon.com.pl/",
+    "wikidata": "Q9334382",
+    "wikipedia": "pl:Schronisko PTTK „Pod Muflonem”"
+  }
+},
+{
+  "type": "way",
+  "id": 417848056,
+  "center": {
+    "lat": 50.3092755,
+    "lon": 16.4493262
+  },
+  "nodes": [
+    4183198310,
+    4183198321,
+    4183198311,
+    4183198312,
+    4183198313,
+    4183198314,
+    4183198315,
+    4183198316,
+    4183198317,
+    4183198318,
+    4183198319,
+    4183198320,
+    4183198310
+  ],
+  "tags": {
+    "addr:city:simc": "0851382",
+    "addr:housenumber": "5",
+    "addr:place": "Lasówka",
+    "addr:postcode": "57-517",
+    "building": "yes",
+    "guest_house": "agritourism",
+    "name": "Orlicka Chata",
+    "source:addr": "emuia.gugik.gov.pl",
+    "tourism": "guest_house",
+    "website": "http://www.orlickachata.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 614450592,
+  "center": {
+    "lat": 50.3364041,
+    "lon": 16.5706666
+  },
+  "nodes": [
+    5812219823,
+    5812219824,
+    5812219825,
+    5812219826,
+    5812219823
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 614450593,
+  "center": {
+    "lat": 50.3363247,
+    "lon": 16.5707916
+  },
+  "nodes": [
+    5812219827,
+    5812219828,
+    5812219829,
+    5812219830,
+    5812219827
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 614450594,
+  "center": {
+    "lat": 50.3362484,
+    "lon": 16.5709132
+  },
+  "nodes": [
+    5812219831,
+    5812219832,
+    5812219833,
+    5812219834,
+    5812219831
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 614450595,
+  "center": {
+    "lat": 50.3361727,
+    "lon": 16.5706783
+  },
+  "nodes": [
+    5812219835,
+    5812219836,
+    5812219837,
+    5812219838,
+    5812219835
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 614450596,
+  "center": {
+    "lat": 50.3362504,
+    "lon": 16.5705520
+  },
+  "nodes": [
+    5812219839,
+    5812219840,
+    5812219841,
+    5812219842,
+    5812219839
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 614450597,
+  "center": {
+    "lat": 50.3360983,
+    "lon": 16.5704439
+  },
+  "nodes": [
+    5812219843,
+    5812219844,
+    5812219845,
+    5812219846,
+    5812219843
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 614450598,
+  "center": {
+    "lat": 50.3361767,
+    "lon": 16.5703162
+  },
+  "nodes": [
+    5812219847,
+    5812219848,
+    5812219849,
+    5812219850,
+    5812219847
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 614450599,
+  "center": {
+    "lat": 50.3360203,
+    "lon": 16.5705674
+  },
+  "nodes": [
+    5812219851,
+    5812219852,
+    5812220253,
+    5812220254,
+    5812219851
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 614450600,
+  "center": {
+    "lat": 50.3359441,
+    "lon": 16.5703294
+  },
+  "nodes": [
+    5812220255,
+    5812220256,
+    5812220257,
+    5812220258,
+    5812220255
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 614450601,
+  "center": {
+    "lat": 50.3360228,
+    "lon": 16.5702054
+  },
+  "nodes": [
+    5812220259,
+    5812220260,
+    5812220261,
+    5812220262,
+    5812220259
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 907161534,
+  "center": {
+    "lat": 50.4021936,
+    "lon": 16.2699006
+  },
+  "nodes": [
+    7107552147,
+    8423777323,
+    8423777319,
+    3281852127,
+    8423777339,
+    3306689408,
+    7107552147
+  ],
+  "tags": {
+    "landuse": "residential",
+    "name": "Domki pod Jabłonką",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1112486206,
+  "center": {
+    "lat": 50.4243496,
+    "lon": 16.4692980
+  },
+  "nodes": [
+    10178207171,
+    10178207170,
+    10178207169,
+    10178207168,
+    10178207171
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1112486207,
+  "center": {
+    "lat": 50.4243462,
+    "lon": 16.4691091
+  },
+  "nodes": [
+    10178207175,
+    10178207174,
+    10178207173,
+    10178207172,
+    10178207175
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1112486208,
+  "center": {
+    "lat": 50.4243460,
+    "lon": 16.4689518
+  },
+  "nodes": [
+    10178207179,
+    10178207178,
+    10178207177,
+    10178207176,
+    10178207179
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1112486209,
+  "center": {
+    "lat": 50.4243430,
+    "lon": 16.4688022
+  },
+  "nodes": [
+    10178207183,
+    10178207182,
+    10178207181,
+    10178207180,
+    10178207183
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1112486210,
+  "center": {
+    "lat": 50.4243295,
+    "lon": 16.4685260
+  },
+  "nodes": [
+    10178207189,
+    10178207188,
+    10178207187,
+    10178207186,
+    10178207185,
+    10178207184,
+    10178207189
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1112486211,
+  "center": {
+    "lat": 50.4243255,
+    "lon": 16.4683455
+  },
+  "nodes": [
+    10178207195,
+    10178207194,
+    10178207193,
+    10178207192,
+    10178207191,
+    10178207190,
+    10178207195
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1535638778,
+  "center": {
+    "lat": 50.3429123,
+    "lon": 16.5679675
+  },
+  "nodes": [
+    13990746397,
+    13990746398,
+    13990746399,
+    13990746400,
+    13990746397
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1535638779,
+  "center": {
+    "lat": 50.3427956,
+    "lon": 16.5680551
+  },
+  "nodes": [
+    13990755001,
+    13990755002,
+    13990755003,
+    13990755004,
+    13990755001
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1535638780,
+  "center": {
+    "lat": 50.3426760,
+    "lon": 16.5681340
+  },
+  "nodes": [
+    13990755005,
+    13990755006,
+    13990755007,
+    13990755008,
+    13990755005
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1540846791,
+  "center": {
+    "lat": 50.3656481,
+    "lon": 16.5202652
+  },
+  "nodes": [
+    14027477757,
+    14027477758,
+    14027477759,
+    14027477760,
+    14027477761,
+    14027477767,
+    14027477768,
+    14027477762,
+    14027477763,
+    14027477764,
+    14027477765,
+    14027477766,
+    14027477757
+  ],
+  "tags": {
+    "building": "tent",
+    "glamping": "yes",
+    "tourism": "chalet"
+  }
+}
+
+  ]
+}

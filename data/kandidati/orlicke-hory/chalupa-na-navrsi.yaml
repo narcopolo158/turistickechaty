@@ -1,0 +1,35 @@
+# Chalupa Na Návrší — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-20)
+# Zdroj: https://www.openstreetmap.org/node/12124830042 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/orlicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chalupa Na Návrší
+slug: chalupa-na-navrsi
+zeme: cz
+oblast: orlicke-hory
+lat: 50.208472
+lng: 16.4074129
+obec: Zdobnice
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/12124830042 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+kontakty:
+  telefon: +420 603 47 86 96
+  email: horska@ubytovanivhorach.cz
+  web: https://www.ubytovanivhorach.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/12124830042 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-20) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Yvona a Roman Horští

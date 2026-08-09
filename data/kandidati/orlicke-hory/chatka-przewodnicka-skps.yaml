@@ -1,0 +1,33 @@
+# Chatka Przewodnicka SKPS — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-09)
+# Zdroj: https://www.openstreetmap.org/node/11690214104 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/orlicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chatka Przewodnicka SKPS
+slug: chatka-przewodnicka-skps
+zeme: pl
+oblast: orlicke-hory
+typ: utulna
+lat: 50.3364073
+lng: 16.4342176
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/11690214104 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+kontakty:
+  web: https://skps.wroclaw.pl/chatka-skps/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/11690214104 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=wilderness_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Studenckie Koło Przewodników Sudeckich

@@ -1,0 +1,26 @@
+# Myslivecká chata Zadolec — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-20)
+# Zdroj: https://www.openstreetmap.org/node/673598950 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/orlicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Myslivecká chata Zadolec
+slug: myslivecka-chata-zadolec
+zeme: cz
+oblast: orlicke-hory
+lat: 50.170275
+lng: 16.3583863
+obec: Javornice
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/673598950 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-20) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Myslivecké sdružení

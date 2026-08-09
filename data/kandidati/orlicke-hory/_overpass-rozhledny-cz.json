@@ -1,0 +1,353 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-03T02:33:03Z",
+    "timestamp_areas_base": "2026-07-02T16:51:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1292002888,
+  "lat": 50.2161566,
+  "lon": 16.5126642,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "man_made": "tower",
+    "name": "Rozhledna Annenský vrch",
+    "source": "survey",
+    "tourism": "viewpoint",
+    "tower:construction": "wood",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5953148383,
+  "lat": 50.2273007,
+  "lon": 16.2886594,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "height": "10",
+    "man_made": "tower",
+    "name": "Skuhrov",
+    "source": "cuzk:zabaged",
+    "source:height": "other",
+    "step_count": "38",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6025465310,
+  "lat": 50.0520477,
+  "lon": 16.6897626,
+  "tags": {
+    "addr:housenumber": "186",
+    "addr:place": "Orličky",
+    "addr:postcode": "56155",
+    "amenity": "restaurant",
+    "email": "recepce@suchak.cz",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Kramářova chata na Suchém vrchu",
+    "name:cs": "Kramářova chata na Suchém vrchu",
+    "opening_hours": "Su-Th 11:00-22:00; Fr-Sa 09:00-23:00",
+    "outdoor_seating": "no",
+    "phone": "702 028 154",
+    "website": "http://www.suchak.cz",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6025465311,
+  "lat": 50.0519112,
+  "lon": 16.6899551,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Bufet"
+  }
+},
+{
+  "type": "node",
+  "id": 7599874199,
+  "lat": 50.3784776,
+  "lon": 16.3174321,
+  "tags": {
+    "description": "Rozhledna na Feistově kopci. Celková její výška je 26 metrů, nadzemní část má čtvercový půdorys s osmiúhelníkovou otevřenou vyhlídkovou plošinou, nacházející se v sedmém patře.",
+    "height": "26",
+    "man_made": "tower",
+    "name": "Rozhledna Feistův kopec",
+    "tower:construction": "steel",
+    "tower:type": "observation",
+    "website": "https://www.olesnice.net/volny-cas/rozhledna/"
+  }
+},
+{
+  "type": "node",
+  "id": 7945783413,
+  "lat": 50.1150946,
+  "lon": 16.6028210,
+  "tags": {
+    "addr:conscriptionnumber": "120",
+    "addr:housenumber": "120",
+    "addr:place": "České Petrovice",
+    "addr:postcode": "56401",
+    "height": "5",
+    "man_made": "tower",
+    "name": "Rozhledna Amálka",
+    "ref:ruian:addr": "81121504",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 8040877124,
+  "lat": 50.0425605,
+  "lon": 16.6518897,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 12166467105,
+  "lat": 50.1482679,
+  "lon": 16.4313587,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13111820233,
+  "lat": 50.2301908,
+  "lon": 16.2896290,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "man_made": "tower",
+    "step_count": "12",
+    "tower:construction": "wood",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 60910423,
+  "center": {
+    "lat": 50.0849798,
+    "lon": 16.4570664
+  },
+  "nodes": [
+    762408023,
+    762409956,
+    762411713,
+    762408328,
+    762410144,
+    762406505,
+    762408023
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "19",
+    "loc_name": "Rozálka",
+    "man_made": "tower",
+    "name": "Tyršova rozhledna",
+    "ref:ruian:building": "39457338",
+    "source": "cuzk:ruian",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 150394194,
+  "center": {
+    "lat": 50.0521930,
+    "lon": 16.6895967
+  },
+  "nodes": [
+    6025465382,
+    1633114334,
+    4288373501,
+    1633114335,
+    4288373500,
+    4288373502,
+    4288373503,
+    4288373504,
+    1633114337,
+    4288373506,
+    1633114346,
+    1633114354,
+    4288373510,
+    1633114356,
+    4288373509,
+    1633114349,
+    4288373508,
+    4288373507,
+    4288373505,
+    1633114339,
+    6025465381,
+    4288355032,
+    4288355033,
+    6025465382
+  ],
+  "tags": {
+    "building": "civic",
+    "building:levels": "1",
+    "building:ruian:type": "5",
+    "man_made": "tower",
+    "name": "Rozhledna Suchý vrch",
+    "name:cs": "Rozhledna Suchý vrch",
+    "name:en": "Lookout tower Suchy vrch",
+    "ref:ruian:building": "17906938",
+    "source": "cuzk:ruian",
+    "start_date": "2012-11-29",
+    "tourism": "attraction",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 150394219,
+  "center": {
+    "lat": 50.0520566,
+    "lon": 16.6898468
+  },
+  "nodes": [
+    4288355041,
+    4288355040,
+    4288355042,
+    4288355039,
+    4288355038,
+    4288355037,
+    4288355034,
+    1633114333,
+    1633114330,
+    1633114312,
+    1633114311,
+    6025465312,
+    1633114318,
+    1633114314,
+    6025465313,
+    1633114320,
+    1633114332,
+    6025465382,
+    4288355033,
+    4288355032,
+    6025465381,
+    4288355035,
+    1633114338,
+    4288355036,
+    4288355041
+  ],
+  "tags": {
+    "building": "house",
+    "building:ruian:type": "7",
+    "ele": "995",
+    "email": "recepce@suchak.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Kramářova chata",
+    "operator": "CVS Žamberk, s.r.o.",
+    "ref:ruian:building": "25889648",
+    "smoking": "no",
+    "source": "cuzk:ruian",
+    "start_date": "2004-03-01",
+    "tourism": "alpine_hut",
+    "website": "http://www.suchak.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 878852143,
+  "center": {
+    "lat": 50.3629232,
+    "lon": 16.2546254
+  },
+  "nodes": [
+    8176000618,
+    8176000619,
+    8176000620,
+    8176000621,
+    8176000622,
+    8176000623,
+    8176000624,
+    8176000625,
+    8176000626,
+    8176000627,
+    8175980110,
+    8175980113,
+    8175980114,
+    8175980115,
+    8176000629,
+    8175980116,
+    8176000617,
+    8175980111,
+    8175980112,
+    8176000618
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "fee": "no",
+    "height": "33",
+    "man_made": "tower",
+    "name": "Rozhledna na Šibeníku",
+    "opening_hours": "24/7",
+    "tower:construction": "tube",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1023790032,
+  "center": {
+    "lat": 50.3014242,
+    "lon": 16.3977274
+  },
+  "nodes": [
+    9440968672,
+    9440968673,
+    9440968674,
+    11878706472,
+    9440968675,
+    9440968676,
+    9440968672
+  ],
+  "tags": {
+    "area": "yes",
+    "check_date": "2024-07-08",
+    "height": "18",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Rozhledna",
+    "name:cs": "Rozhledna Velká Deštná",
+    "name:de": "Aussichtsturm Velka Deschtna",
+    "name:en": "Tower Velka Deshtna",
+    "name:pl": "Wieża widokowa na szczycie Wielkiej Desztnej",
+    "start_date": "2019",
+    "step_count": "96",
+    "tower:construction": "metal_and_wood",
+    "tower:type": "observation",
+    "wikidata": "Q124336045",
+    "wikimedia_commons": "Category:Velká Deštná observation tower"
+  }
+}
+
+  ]
+}

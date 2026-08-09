@@ -1,0 +1,32 @@
+# Orlická chata U Rampušáka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-20)
+# Zdroj: https://www.openstreetmap.org/node/1772931631 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/orlicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Orlická chata U Rampušáka
+slug: orlicka-chata-u-rampusaka
+zeme: cz
+oblast: orlicke-hory
+typ: obsluhovana
+lat: 50.1441534
+lng: 16.5772883
+obec: Bartošovice v Orlických horách
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/1772931631 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+kontakty:
+  web: https://www.orlickachata.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/1772931631 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-20) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

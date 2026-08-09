@@ -1,0 +1,1700 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-20T00:37:19Z",
+    "timestamp_areas_base": "2026-06-19T15:00:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 313962904,
+  "lat": 50.1054508,
+  "lon": 16.6231324,
+  "tags": {
+    "name": "Chalupa pod Adamem",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 673598950,
+  "lat": 50.1702750,
+  "lon": 16.3583863,
+  "tags": {
+    "addr:city": "Javornice",
+    "addr:country": "CZ",
+    "addr:housenumber": "ev.25",
+    "addr:place": "Javornice",
+    "addr:postcode": "51711",
+    "addr:provisionalnumber": "25",
+    "amenity": "restaurant",
+    "name": "Myslivecká chata Zadolec",
+    "operator": "Myslivecké sdružení",
+    "outdoor_seating": "yes",
+    "ref:ruian:addr": "25781014"
+  }
+},
+{
+  "type": "node",
+  "id": 1288763228,
+  "lat": 50.3751754,
+  "lon": 16.3535940,
+  "tags": {
+    "addr:housenumber": "223",
+    "addr:place": "Olešnice v Orlických horách",
+    "email": "rezervace@cihalka.cz",
+    "name": "Čihalka",
+    "name:cs": "Čihalka",
+    "name:de": "Schnappe",
+    "phone": "+420494660138",
+    "source": "uhul:ortofoto;cuzk:km;survey",
+    "tourism": "alpine_hut",
+    "website": "https://www.cihalka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1339613253,
+  "lat": 50.3399715,
+  "lon": 16.2826467,
+  "tags": {
+    "name": "Chata Horalka",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 1772931631,
+  "lat": 50.1441534,
+  "lon": 16.5772883,
+  "tags": {
+    "addr:city": "Bartošovice v Orlických horách",
+    "addr:country": "CZ",
+    "addr:housenumber": "1",
+    "amenity": "restaurant",
+    "electricity": "yes",
+    "internet_access": "no",
+    "mobile": "+420 603 919 288",
+    "name": "Orlická chata U Rampušáka",
+    "shower": "yes",
+    "source": "eTrex 30",
+    "tourism": "alpine_hut",
+    "website": "https://www.orlickachata.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1772961001,
+  "lat": 50.1401973,
+  "lon": 16.5935893,
+  "tags": {
+    "name": "Chata na Čiháku",
+    "source": "eTrex 30",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 1994237779,
+  "lat": 50.1188341,
+  "lon": 16.3222427,
+  "tags": {
+    "name": "Chata na Vyhlídce",
+    "tourism": "hotel",
+    "website": "http://www.vyhlidkavamberk.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2036039108,
+  "lat": 50.2891216,
+  "lon": 16.3443097,
+  "tags": {
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Mlýn u skály",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 2324569938,
+  "lat": 50.2940154,
+  "lon": 16.3113477,
+  "tags": {
+    "name": "Prázova bouda",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 2338919752,
+  "lat": 50.3146597,
+  "lon": 16.3177200,
+  "tags": {
+    "capacity": "120",
+    "email": "chata.radost@seznam.cz",
+    "name": "Horská chata Radost",
+    "phone": "+420 774 624 679",
+    "ref:nap": "22628",
+    "tourism": "chalet",
+    "website": "https://www.chataradost.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 4353493191,
+  "lat": 50.0755784,
+  "lon": 16.5683014,
+  "tags": {
+    "name": "Chata",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4695144880,
+  "lat": 50.2065644,
+  "lon": 16.4462801,
+  "tags": {
+    "internet_access": "wlan",
+    "name": "Chalupa u Skibaby",
+    "phone": "+420607106702",
+    "tourism": "chalet",
+    "website": "http://www.chalupauskibaby.cz/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6025465310,
+  "lat": 50.0520477,
+  "lon": 16.6897626,
+  "tags": {
+    "addr:housenumber": "186",
+    "addr:place": "Orličky",
+    "addr:postcode": "56155",
+    "amenity": "restaurant",
+    "email": "recepce@suchak.cz",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Kramářova chata na Suchém vrchu",
+    "name:cs": "Kramářova chata na Suchém vrchu",
+    "opening_hours": "Su-Th 11:00-22:00; Fr-Sa 09:00-23:00",
+    "outdoor_seating": "no",
+    "phone": "702 028 154",
+    "website": "http://www.suchak.cz",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7695834439,
+  "lat": 50.2417888,
+  "lon": 16.5110967,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2026-05-08",
+    "loc_name": "Rampušák",
+    "name": "Chata Hadimrška",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8429105671,
+  "lat": 50.0145574,
+  "lon": 16.6961689,
+  "tags": {
+    "name": "Bovida",
+    "tourism": "chalet",
+    "website": "https://www.bovida.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 9752572414,
+  "lat": 50.1728827,
+  "lon": 16.3139005,
+  "tags": {
+    "name": "Perníková chaloupka",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 9878884006,
+  "lat": 50.0105766,
+  "lon": 16.6972895,
+  "tags": {
+    "addr:housenumber": "ev.184",
+    "addr:place": "Čenkovice",
+    "addr:postcode": "56164",
+    "addr:provisionalnumber": "184",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=61560718291249",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chata Vidorka",
+    "ref:ruian:addr": "83085661",
+    "tourism": "chalet",
+    "website": "https://www.e-chalupy.cz/ubytovani-cenkovice-chata-na-pohode-pronajem-o17279"
+  }
+},
+{
+  "type": "node",
+  "id": 12124830042,
+  "lat": 50.2084720,
+  "lon": 16.4074129,
+  "tags": {
+    "addr:city": "Zdobnice",
+    "addr:housenumber": "41",
+    "addr:postcode": "51601",
+    "addr:street": "Souvlastní",
+    "email": "horska@ubytovanivhorach.cz",
+    "internet_access": "yes",
+    "internet_access:fee": "customers",
+    "name": "Chalupa Na Návrší",
+    "operator": "Yvona a Roman Horští",
+    "phone": "+420 603 47 86 96",
+    "tourism": "chalet",
+    "website": "https://www.ubytovanivhorach.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 12124834066,
+  "lat": 50.0119587,
+  "lon": 16.6849297,
+  "tags": {
+    "addr:city": "Čenkovice",
+    "addr:housenumber": "93",
+    "addr:postcode": "56164",
+    "addr:street": "Čenkovice",
+    "email": "chalupabukovka@seznam.cz",
+    "internet_access": "yes",
+    "internet_access:fee": "customers",
+    "name": "Chalupa Bukovka",
+    "operator": "Michal Válka",
+    "phone": "+420 603 180 041",
+    "tourism": "chalet",
+    "website": "https://www.chalupabukovka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 12466910517,
+  "lat": 50.2995698,
+  "lon": 16.4421253,
+  "tags": {
+    "internet_access": "wlan",
+    "name": "Chata Bedřichovka",
+    "name:en": "Cottage Bedřichovka",
+    "tourism": "alpine_hut",
+    "website": "https://www.bedrichovka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 12466968218,
+  "lat": 50.3026282,
+  "lon": 16.4461810,
+  "tags": {
+    "name": "Chata Perla",
+    "name:en": "Cottage Perla",
+    "tourism": "alpine_hut",
+    "website": "https://www.bedrichovka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 12541092656,
+  "lat": 50.2939735,
+  "lon": 16.3118795,
+  "tags": {
+    "name": "Chata Markétka",
+    "phone": "+420 736 484 678",
+    "tourism": "guest_house",
+    "website": "https://chatamarketka.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 39341312,
+  "center": {
+    "lat": 50.1167185,
+    "lon": 16.6257424
+  },
+  "nodes": [
+    471312828,
+    471312827,
+    471312830,
+    471312829,
+    4914981387,
+    4914981386,
+    4914981385,
+    4914981384,
+    471312828
+  ],
+  "tags": {
+    "addr:city": "Mladkov",
+    "addr:housenumber": "54",
+    "addr:postcode": "56167",
+    "addr:street": "Petrovičky",
+    "building": "yes",
+    "building:ruian:type": "8",
+    "cuisine": "regional",
+    "ele": "760",
+    "email": "fogl.p@seznam.cz",
+    "fee": "yes",
+    "name": "Kasparova chata",
+    "phone": "+420 465 635 288",
+    "phone_1": "+420 777 584 048",
+    "ref:ruian:building": "17894280",
+    "reservation": "recommended",
+    "restaurant": "yes",
+    "source": "cuzk:ruian",
+    "tourism": "alpine_hut",
+    "website": "https://chatanaadamu.hys.cz/",
+    "wikidata": "Q11738596",
+    "wikipedia": "pl:Kašparowa Chata"
+  }
+},
+{
+  "type": "way",
+  "id": 99202947,
+  "center": {
+    "lat": 50.3259637,
+    "lon": 16.3861498
+  },
+  "nodes": [
+    673479366,
+    9440968681,
+    9440968682,
+    9440968683,
+    9440968684,
+    1147521832,
+    9440968685,
+    9440968686,
+    9440968687,
+    9440968688,
+    9440968689,
+    9440968690,
+    9440968691,
+    9440968692,
+    1147521716,
+    1147521734,
+    1147521687,
+    1147521477,
+    1147521636,
+    1147521794,
+    9440968679,
+    9440968680,
+    673479366
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "322",
+    "addr:country": "CZ",
+    "addr:housenumber": "322",
+    "addr:place": "Deštné v Orlických horách",
+    "addr:postcode": "51791",
+    "building": "yes",
+    "email": "chatamasarykova@gmail.com",
+    "facebook": "https://www.facebook.com/masarykovachata.serlich/",
+    "name": "Masarykova chata",
+    "name:de": "Masarykbaude",
+    "opening_hours": "Mo-Su 08:00-20:00",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "phone": "+420 737 078 555",
+    "phone_1": "+420 728 650 811",
+    "power_supply": "yes",
+    "ref:ruian:addr": "21561842",
+    "source": "cuzk:km;uhul:ortofoto",
+    "tourism": "alpine_hut",
+    "website": "https://www.ubytovani-serlich.cz",
+    "wikidata": "Q11771094",
+    "wikipedia": "cs:Masarykova chata"
+  }
+},
+{
+  "type": "way",
+  "id": 99202950,
+  "center": {
+    "lat": 50.3027060,
+    "lon": 16.4002848
+  },
+  "nodes": [
+    1147521677,
+    1147521596,
+    1147521822,
+    1147521750,
+    1147521677
+  ],
+  "tags": {
+    "building": "yes",
+    "highway": "emergency_access_point",
+    "source": "cuzk:km;uhul:ortofoto",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 128442378,
+  "center": {
+    "lat": 50.0811067,
+    "lon": 16.5642452
+  },
+  "nodes": [
+    1419464274,
+    1419464254,
+    1419464219,
+    1419464231,
+    1419464274
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49584880",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442380,
+  "center": {
+    "lat": 50.0807478,
+    "lon": 16.5650143
+  },
+  "nodes": [
+    1419463934,
+    1419463922,
+    1419463873,
+    1419463876,
+    1419463934
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "8",
+    "ref:ruian:building": "17908787",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442381,
+  "center": {
+    "lat": 50.0809264,
+    "lon": 16.5648606
+  },
+  "nodes": [
+    1419464077,
+    1419464086,
+    1419464132,
+    1419464120,
+    1419464077
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "43162401",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442384,
+  "center": {
+    "lat": 50.0810623,
+    "lon": 16.5645233
+  },
+  "nodes": [
+    1419464235,
+    1419464232,
+    1419464186,
+    1419464194,
+    1419464235
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "43162371",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442387,
+  "center": {
+    "lat": 50.0811583,
+    "lon": 16.5639218
+  },
+  "nodes": [
+    1419464306,
+    1419464303,
+    1419464253,
+    1419464272,
+    1419464306
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49584898",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442391,
+  "center": {
+    "lat": 50.0810844,
+    "lon": 16.5643839
+  },
+  "nodes": [
+    1419464251,
+    1419464249,
+    1419464201,
+    1419464215,
+    1419464251
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49584944",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442393,
+  "center": {
+    "lat": 50.0805301,
+    "lon": 16.5647814
+  },
+  "nodes": [
+    1419463772,
+    1419463770,
+    1419463748,
+    1419463752,
+    1419463772
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "43162380",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442395,
+  "center": {
+    "lat": 50.0808348,
+    "lon": 16.5648423
+  },
+  "nodes": [
+    1419464007,
+    1419463992,
+    1419463965,
+    1419463971,
+    1419464007
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49584901",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442403,
+  "center": {
+    "lat": 50.0809304,
+    "lon": 16.5638054
+  },
+  "nodes": [
+    1419464146,
+    1419464116,
+    1419464078,
+    1419464088,
+    1419464146
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49584936",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442416,
+  "center": {
+    "lat": 50.0810402,
+    "lon": 16.5646620
+  },
+  "nodes": [
+    1419464216,
+    1419464165,
+    1419464173,
+    1419464218,
+    1419464216
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49584961",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442419,
+  "center": {
+    "lat": 50.0808422,
+    "lon": 16.5637693
+  },
+  "nodes": [
+    1419463981,
+    1419464035,
+    1419463997,
+    1419463969,
+    1419463981
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49589679",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442421,
+  "center": {
+    "lat": 50.0807123,
+    "lon": 16.5648179
+  },
+  "nodes": [
+    1419463890,
+    1419463861,
+    1419463866,
+    1419463893,
+    1419463890
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "43162363",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442423,
+  "center": {
+    "lat": 50.0810103,
+    "lon": 16.5648480
+  },
+  "nodes": [
+    1419464189,
+    1419464152,
+    1419464153,
+    1419464196,
+    1419464189
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "43162428",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442433,
+  "center": {
+    "lat": 50.0811364,
+    "lon": 16.5640589
+  },
+  "nodes": [
+    1419464247,
+    1419464250,
+    1419464280,
+    1419464277,
+    1419464247
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49584952",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442438,
+  "center": {
+    "lat": 50.0806214,
+    "lon": 16.5647996
+  },
+  "nodes": [
+    1419463829,
+    1419463820,
+    1419463807,
+    1419463809,
+    1419463829
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49584910",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442444,
+  "center": {
+    "lat": 50.0810119,
+    "lon": 16.5638877
+  },
+  "nodes": [
+    1419464191,
+    1419464176,
+    1419464158,
+    1419464162,
+    1419464191
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "43162410",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 128442452,
+  "center": {
+    "lat": 50.0805273,
+    "lon": 16.5649821
+  },
+  "nodes": [
+    1419463789,
+    1419463784,
+    1419463738,
+    1419463740,
+    1419463789
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "3",
+    "ref:ruian:building": "45474028",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 140277725,
+  "center": {
+    "lat": 50.2992141,
+    "lon": 16.3510371
+  },
+  "nodes": [
+    1537034602,
+    1537034646,
+    1537034528,
+    1537034475,
+    1537034464,
+    1537034453,
+    1537034470,
+    1537034433,
+    1537034483,
+    1537034497,
+    1537034507,
+    9137188743,
+    9137188742,
+    1537034635,
+    1537034602
+  ],
+  "tags": {
+    "building": "house",
+    "building:flats": "1",
+    "building:levels": "3",
+    "building:ruian:type": "3",
+    "check_date": "2025-02-02",
+    "name": "Chata Prim",
+    "ref:ruian:building": "21317607",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 140277836,
+  "center": {
+    "lat": 50.3036295,
+    "lon": 16.3468215
+  },
+  "nodes": [
+    1537036696,
+    1537036697,
+    1537036836,
+    1537036834,
+    1537036865,
+    1537036873,
+    1537036632,
+    1537036630,
+    1537036369,
+    1537036364,
+    1537036610,
+    1537036608,
+    1537036503,
+    1537036502,
+    1537036858,
+    1537036860,
+    1537036976,
+    1537036982,
+    1537036696
+  ],
+  "tags": {
+    "name": "chata Deštná",
+    "source": "cuzk:km",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 140277842,
+  "center": {
+    "lat": 50.2925302,
+    "lon": 16.3470607
+  },
+  "nodes": [
+    1537033502,
+    1537033495,
+    1537033500,
+    1537033497,
+    1537033489,
+    1537033492,
+    1537033427,
+    1537033422,
+    1537033417,
+    1537033398,
+    1537033415,
+    1537033380,
+    1537033477,
+    1537033470,
+    1537033464,
+    1537033462,
+    1537033494,
+    9137188719,
+    9137188718,
+    1537033504,
+    1537033502
+  ],
+  "tags": {
+    "building": "civic",
+    "building:ruian:type": "5",
+    "name": "Chata Jedlová",
+    "ref:ruian:building": "38476347",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 150394219,
+  "center": {
+    "lat": 50.0520566,
+    "lon": 16.6898468
+  },
+  "nodes": [
+    4288355041,
+    4288355040,
+    4288355042,
+    4288355039,
+    4288355038,
+    4288355037,
+    4288355034,
+    1633114333,
+    1633114330,
+    1633114312,
+    1633114311,
+    6025465312,
+    1633114318,
+    1633114314,
+    6025465313,
+    1633114320,
+    1633114332,
+    6025465382,
+    4288355033,
+    4288355032,
+    6025465381,
+    4288355035,
+    1633114338,
+    4288355036,
+    4288355041
+  ],
+  "tags": {
+    "building": "house",
+    "building:ruian:type": "7",
+    "ele": "995",
+    "email": "recepce@suchak.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Kramářova chata",
+    "operator": "CVS Žamberk, s.r.o.",
+    "ref:ruian:building": "25889648",
+    "smoking": "no",
+    "source": "cuzk:ruian",
+    "start_date": "2004-03-01",
+    "tourism": "alpine_hut",
+    "website": "http://www.suchak.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 193081615,
+  "center": {
+    "lat": 50.2994219,
+    "lon": 16.3681541
+  },
+  "nodes": [
+    2036061001,
+    2036061002,
+    2036060999,
+    2036061000,
+    2036060996,
+    2036060998,
+    2036060992,
+    2036060993,
+    2036060988,
+    2036060990,
+    2036060981,
+    2036060978,
+    2036060985,
+    2036060983,
+    2036060989,
+    2036060987,
+    2036060994,
+    2036060991,
+    2036060997,
+    2036060995,
+    2036061001
+  ],
+  "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "panoramax": "381ee162-bbe5-44a0-ba5e-2d37f1577101",
+    "roof:levels": "0",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 199985783,
+  "center": {
+    "lat": 50.0663435,
+    "lon": 16.6398030
+  },
+  "nodes": [
+    2099660071,
+    2099660074,
+    2099660073,
+    2099660072,
+    2099660071
+  ],
+  "tags": {
+    "building": "residential",
+    "building:flats": "2",
+    "building:levels": "3",
+    "building:ruian:type": "3",
+    "name": "Lesovna",
+    "ref:ruian:building": "17942721",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 224276775,
+  "center": {
+    "lat": 50.0807299,
+    "lon": 16.5631035
+  },
+  "nodes": [
+    2330950870,
+    3891258562,
+    3891258563,
+    2330950871,
+    2330950874,
+    2330950873,
+    2330950870
+  ],
+  "tags": {
+    "building": "bungalow",
+    "building:ruian:type": "19",
+    "name": "Babeta",
+    "ref:ruian:building": "45482730",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 440663744,
+  "center": {
+    "lat": 50.0805573,
+    "lon": 16.5631692
+  },
+  "nodes": [
+    4384435358,
+    4384435359,
+    4384435364,
+    4384435363,
+    4384435358
+  ],
+  "tags": {
+    "building": "bungalow",
+    "name": "Bobík",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 846440132,
+  "center": {
+    "lat": 50.0780570,
+    "lon": 16.5610115
+  },
+  "nodes": [
+    7897072780,
+    7897072779,
+    7897072778,
+    7897072777,
+    7897072780
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "ref:ruian:building": "17899044",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 846440133,
+  "center": {
+    "lat": 50.0781120,
+    "lon": 16.5610175
+  },
+  "nodes": [
+    7897072784,
+    7897072783,
+    7897072782,
+    7897072781,
+    7897072784
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "ref:ruian:building": "17899052",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 846440134,
+  "center": {
+    "lat": 50.0781675,
+    "lon": 16.5610235
+  },
+  "nodes": [
+    7897072788,
+    7897072787,
+    7897072786,
+    7897072785,
+    7897072788
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "ref:ruian:building": "17899061",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 846440135,
+  "center": {
+    "lat": 50.0782231,
+    "lon": 16.5610301
+  },
+  "nodes": [
+    7897072792,
+    7897072791,
+    7897072790,
+    7897072789,
+    7897072792
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "ref:ruian:building": "30241251",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 846440136,
+  "center": {
+    "lat": 50.0782782,
+    "lon": 16.5610366
+  },
+  "nodes": [
+    7897072796,
+    7897072795,
+    7897072794,
+    7897072793,
+    7897072796
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "ref:ruian:building": "30241260",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 846440137,
+  "center": {
+    "lat": 50.0783330,
+    "lon": 16.5610422
+  },
+  "nodes": [
+    7897072800,
+    7897072799,
+    7897072798,
+    7897072797,
+    7897072800
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "ref:ruian:building": "30241278",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 846440138,
+  "center": {
+    "lat": 50.0785925,
+    "lon": 16.5609011
+  },
+  "nodes": [
+    7897072803,
+    7897072802,
+    7897072801,
+    7897072804,
+    7897072803
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "19",
+    "ref:ruian:building": "45472599",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1058183973,
+  "center": {
+    "lat": 50.1988800,
+    "lon": 16.3218286
+  },
+  "nodes": [
+    9723480774,
+    9723480775,
+    9723480776,
+    9723480777,
+    9723480774
+  ],
+  "tags": {
+    "building": "hut",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1058433441,
+  "center": {
+    "lat": 50.2050285,
+    "lon": 16.3266956
+  },
+  "nodes": [
+    9725859717,
+    9725859718,
+    9725859719,
+    9725859720,
+    9725859717
+  ],
+  "tags": {
+    "building": "hut",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1058433442,
+  "center": {
+    "lat": 50.2059128,
+    "lon": 16.3277005
+  },
+  "nodes": [
+    9725859721,
+    9725859722,
+    9725859723,
+    9725859724,
+    9725859721
+  ],
+  "tags": {
+    "building": "hut",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1058439505,
+  "center": {
+    "lat": 50.2143283,
+    "lon": 16.3269174
+  },
+  "nodes": [
+    9725894677,
+    9725894678,
+    9725894679,
+    9725894680,
+    9725894677
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1058439506,
+  "center": {
+    "lat": 50.2111666,
+    "lon": 16.3281913
+  },
+  "nodes": [
+    9725913669,
+    9725913670,
+    9725913671,
+    9725913672,
+    9725913669
+  ],
+  "tags": {
+    "building": "hut",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1058439507,
+  "center": {
+    "lat": 50.2109665,
+    "lon": 16.3283099
+  },
+  "nodes": [
+    9725913673,
+    9725913674,
+    9725913675,
+    9725913676,
+    9725913673
+  ],
+  "tags": {
+    "building": "hut",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1058439508,
+  "center": {
+    "lat": 50.2110400,
+    "lon": 16.3284650
+  },
+  "nodes": [
+    9725913677,
+    9725913678,
+    9725913679,
+    9725913680,
+    9725913677
+  ],
+  "tags": {
+    "building": "hut",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1058439509,
+  "center": {
+    "lat": 50.2109239,
+    "lon": 16.3284644
+  },
+  "nodes": [
+    9725913681,
+    9725913682,
+    9725913683,
+    9725913684,
+    9725913681
+  ],
+  "tags": {
+    "building": "hut",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1058439510,
+  "center": {
+    "lat": 50.2108564,
+    "lon": 16.3284881
+  },
+  "nodes": [
+    9725913685,
+    9725913686,
+    9725913687,
+    9725913688,
+    9725913685
+  ],
+  "tags": {
+    "building": "hut",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1058861755,
+  "center": {
+    "lat": 50.2245051,
+    "lon": 16.3355470
+  },
+  "nodes": [
+    9729525866,
+    9729525867,
+    9729525868,
+    9729525869,
+    9729525866
+  ],
+  "tags": {
+    "building": "hut",
+    "drinking_water": "no",
+    "fee": "no",
+    "name:signed": "no",
+    "power_supply": "no",
+    "shower": "no",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641659,
+  "center": {
+    "lat": 50.1262925,
+    "lon": 16.7487947
+  },
+  "nodes": [
+    13426135771,
+    13426135770,
+    13426135769,
+    13426135768,
+    13426135771
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641660,
+  "center": {
+    "lat": 50.1263347,
+    "lon": 16.7487598
+  },
+  "nodes": [
+    13426135775,
+    13426135774,
+    13426135773,
+    13426135772,
+    13426135775
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641661,
+  "center": {
+    "lat": 50.1264137,
+    "lon": 16.7486841
+  },
+  "nodes": [
+    13426135779,
+    13426135778,
+    13426135777,
+    13426135776,
+    13426135779
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641662,
+  "center": {
+    "lat": 50.1263746,
+    "lon": 16.7487223
+  },
+  "nodes": [
+    13426135783,
+    13426135782,
+    13426135781,
+    13426135780,
+    13426135783
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641663,
+  "center": {
+    "lat": 50.1265251,
+    "lon": 16.7485855
+  },
+  "nodes": [
+    13426135787,
+    13426135786,
+    13426135785,
+    13426135784,
+    13426135787
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641664,
+  "center": {
+    "lat": 50.1265664,
+    "lon": 16.7485479
+  },
+  "nodes": [
+    13426135791,
+    13426135790,
+    13426135789,
+    13426135788,
+    13426135791
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641665,
+  "center": {
+    "lat": 50.1266055,
+    "lon": 16.7485110
+  },
+  "nodes": [
+    13426135795,
+    13426135794,
+    13426135793,
+    13426135792,
+    13426135795
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641666,
+  "center": {
+    "lat": 50.1266468,
+    "lon": 16.7484735
+  },
+  "nodes": [
+    13426135799,
+    13426135798,
+    13426135797,
+    13426135796,
+    13426135799
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641667,
+  "center": {
+    "lat": 50.1264559,
+    "lon": 16.7486472
+  },
+  "nodes": [
+    13426135803,
+    13426135802,
+    13426135801,
+    13426135800,
+    13426135803
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641668,
+  "center": {
+    "lat": 50.1266876,
+    "lon": 16.7484379
+  },
+  "nodes": [
+    13426135807,
+    13426135806,
+    13426135805,
+    13426135804,
+    13426135807
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641669,
+  "center": {
+    "lat": 50.1267289,
+    "lon": 16.7484051
+  },
+  "nodes": [
+    13426135811,
+    13426135810,
+    13426135809,
+    13426135808,
+    13426135811
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1463641670,
+  "center": {
+    "lat": 50.1262524,
+    "lon": 16.7488336
+  },
+  "nodes": [
+    13426135815,
+    13426135814,
+    13426135813,
+    13426135812,
+    13426135815
+  ],
+  "tags": {
+    "operator": "Penzion Heřmanice",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "relation",
+  "id": 14981646,
+  "center": {
+    "lat": 50.3745281,
+    "lon": 16.3230241
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 544076115,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 544076116,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 544076117,
+      "role": "outer"
+    }
+  ],
+  "tags": {
+    "email": "info@chatkyupotoka.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chatky u potoka",
+    "operator": "Luxusní móda s.r.o.",
+    "phone": "774 058 280",
+    "tourism": "chalet",
+    "type": "multipolygon",
+    "website": "https://www.chatkyupotoka.cz/"
+  }
+}
+
+  ]
+}
