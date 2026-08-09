@@ -1,0 +1,294 @@
+# Rainerova chata — povýšena z kandidáta DATA-01 (8. 8. 2026).
+# Nejstarší chata Vysokých Tater a jediný objekt korpusu, který NEUBYTOVÁVÁ
+# a nevaří: je to malé občerstvení s expozicí o horských nosičích.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Rainerova chata
+slug: rainerova-chata
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+aliasy:
+  - nazev: Rainerka
+    poznamka: běžná zkrácená podoba jména v slovenských pramenech
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1668742
+lng: 20.2186435
+vyska: 1301
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/27865088 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1301 m: Pravda.sk (čteno 8. 8. 2026) „nadmorskej výške 1 301
+    metrov"; kamnahory.sk vede chatu v titulku jako „Rainerova chata
+    (1301m)". Externí katalog uvádí 1301 m taky. ROZPOR, přiznaný:
+    OpenStreetMap má u objektu ele=1304. Zapsáno 1301 — shodují se na něm
+    dva nezávislé prameny i katalog. Chata stojí nedaleko Hrebienku nad
+    Starým Smokovcem, u Studeného potoka.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    tatry.sk (čteno 8. 8. 2026) doslova: „The chalet offers refreshment
+    without serving meals or accommodation."; interez.sk: „Nie je určená na
+    prenocovanie." Není to mezera v dokladu, ale doložená vlastnost objektu.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ne
+typObcerstveni: kiosek
+overeniObcerstveni:
+  source: >-
+    vysoketatry.com (čteno 8. 8. 2026): chata „slúži verejnosti ako chata
+    s malým občerstvením bez podávania jedál"; tatranskybedeker.sk uvádí
+    doslova totéž. tatry.sk: „The chalet offers refreshment without serving
+    meals or accommodation." Do číselníku proto jde `kiosek` a `kuchyne:
+    ne` — teplá kuchyně tu doložená není a tvrdit ji by bylo víc, než co
+    prameny říkají. Klíč zařazení je splněn: občerstvení pro veřejnost
+    i role na trase (chata je mezizastávkou z Hrebienku do Veľké Studené
+    doliny).
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# otviraciDoba SE NEVYPLŇUJE: dva prameny si odporují v tom, jestli je
+# otevřeno každý den, nebo mimo sezónu jen o víkendech. Viz overeniProvoz.
+overeniProvoz:
+  source: >-
+    ROZPOR PRAMENŮ, nesrovnaný (čteno 8. 8. 2026): tatranskybedeker.sk
+    „Chata je otvorená celoročne" a „otvorená každý deň od 9:00 do 16:00
+    hod", kdežto interez.sk „otvorená počas letnej aj zimnej turistickej
+    sezóny každý deň v týždni. Mimo sezóny je v prevádzke len cez víkendy
+    a sviatky." tatry.sk uvádí jen „One can access the chalet year-round".
+    Rozdíl mezi „každý den celoročně" a „mimo sezónu jen víkendy" je pro
+    plánování zásadní, a proto se rozvrh nezapisuje vůbec.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+421907910559'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1863
+overeniHistorie:
+  source: >-
+    ROZPOR, KTERÝ NENÍ O ROCE, ALE O TOM, CO SE V TOM ROCE STALO (čteno
+    8. 8. 2026). vysoketatry.com „Bola postavená v roku 1863" Jánom Jurajom
+    Rainerom; tatranskybedeker.sk „V roku 1863 dal nájomca Starého Smokovca
+    Ján Juraj Rainer postaviť kamennú jednopriestorovú chatku"; tatry.sk
+    „It was built in 1863 by Ján Juraj Rainer". Proti tomu Pravda.sk:
+    Rainer „v roku 1863 vypracoval projekt samotnej chaty. O dva roky
+    neskôr už stála na svojom mieste" — tedy 1865; interez.sk totéž.
+    Zapsáno 1863 dle konvence z 27. 7. 2026 (nižší číslo, rozpor přiznat);
+    tři prameny je navíc uvádějí jako rok stavby.
+    STAVEBNÍKEM BYL JEDNOTLIVEC, ne spolek, a to je pro Vysoké Tatry
+    důležité: Ján Juraj Rainer byl nájemce Starého Smokovce a chatu postavil
+    jako bezplatnou noclehárnu pro turisty. Uhorský karpatský spolok, který
+    tu později postavil většinu chat, vznikl až 10. srpna 1873 — o deset let
+    později —, takže mu tenhle objekt PŘIPSAT NELZE. Odborná publikace
+    olympic.sk to potvrzuje: „Prvou chatou na slovenskej strane Tatier bola
+    Rainerova chata (útulňa), ktorú roku 1863 postavil Johann Rainer."
+    ZÁNIK A OBNOVA: po postavení chaty Kamzík roku 1884 chata zanikla
+    (vysoketatry.com) a sloužila jako „sklad paliva, garáž, ba dokonca
+    chlievik" (Pravda.sk). Roku 1983 ji dala Správa TANAPu jako památkový
+    objekt zrestaurovat. Provoz obnovil Peter Petras — 1997 dle tří pramenů,
+    1998 dle vysoketatry.com (ROZPOR); dnes ji vede Peter Petras mladší.
+  verified: false
+  checked: '2026-08-08'
+
+milniky:
+  - rok: 1863
+    udalost: >-
+      Ján Juraj Rainer, nájemce Starého Smokovce, dal postavit kamennou
+      jednoprostorovou chatku jako bezplatnou noclehárnu pro turisty.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 8. 8. 2026): „V roku 1863 dal nájomca
+      Starého Smokovca Ján Juraj Rainer postaviť kamennú jednopriestorovú
+      chatku"; olympic.sk: „Prvou chatou na slovenskej strane Tatier bola
+      Rainerova chata (útulňa), ktorú roku 1863 postavil Johann Rainer."
+  - rok: 1884
+    udalost: >-
+      Po postavení chaty Kamzík Rainerova chata zanikla; později sloužila
+      jako sklad paliva, garáž i chlívek.
+    zdroj: >-
+      vysoketatry.com (čteno 8. 8. 2026): „Po postavení chaty Kamzík v roku
+      1884 zanikla."; Pravda.sk — sloužila jako „sklad paliva, garáž, ba
+      dokonca chlievik"
+  - rok: 1983
+    udalost: >-
+      Správa TANAPu dala chatku jako památkový objekt zrestaurovat.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 8. 8. 2026): „V roku 1983 dala Správa
+      TANAP-u chatku ako pamiatkový objekt zreštaurovať."
+  - rok: 1997
+    udalost: >-
+      Peter Petras chatu renovoval a znovu ji uvedl do provozu; prameny se
+      liší, jestli šlo o rok 1997, nebo 1998.
+    zdroj: >-
+      Pravda.sk (čteno 8. 8. 2026): „V roku 1997 ju renováciou opäť priviedol
+      do života Peter Petras starší."; vysoketatry.com: „Obnovená bola
+      v roku 1998."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      V chatě je malá expozice o historii a současnosti horských nosičů
+      a sbírka starého horolezeckého náčiní a lyží.
+    kategorie: jine
+    zdroj: >-
+      vysoketatry.com (čteno 8. 8. 2026) — „malú expozíciu histórie
+      a súčasnosti horských nosičov, zbierka starého horolezeckého
+      náradia"; tatry.sk: „a small exhibition of the history and present of
+      mountain sherpas" a „a collection of old climbing tools and old skis."
+  - text: >-
+      Půdorys chaty měří pět krát pět a půl metru; podle pramene je to
+      nejmenší horská chata ve Vysokých Tatrách.
+    kategorie: velikost
+    zdroj: >-
+      interez.sk (čteno 8. 8. 2026): „najmenšou horskou chatou vo Vysokých
+      Tatrách" s rozměry „5 x 5,5 metra"
+  - text: >-
+      Chata se dvakrát ocitla mimo provoz: nejdřív ji roku 1884 předstihla
+      nová chata Kamzík, pak z ní byl sklad, garáž a chlívek.
+    kategorie: stari
+    zdroj: >-
+      vysoketatry.com (čteno 8. 8. 2026): „Po postavení chaty Kamzík v roku
+      1884 zanikla."; Pravda.sk — „sklad paliva, garáž, ba dokonca chlievik"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná jednoprostorová stavba z roku 1863 kousek od Hrebienku, kterou
+  prameny uvádějí jako nejstarší chatu Vysokých Tater. Nespí se tu ani nevaří — je to malé občerstvení
+  s expozicí o horských nosičích v domku o půdorysu pět krát pět a půl metru.
+text:
+  - >-
+    Rainerova chata stojí ve 1301 metrech nedaleko Hrebienku nad Starým
+    Smokovcem a prameny ji shodně uvádějí jako nejstarší chatu Vysokých
+    Tater. Postavil ji roku 1863
+    Ján Juraj Rainer, nájemce Starého Smokovce, jako bezplatnou noclehárnu
+    pro turisty — tedy jednotlivec, ne spolek. To je na tom to podstatné:
+    Uhorský karpatský spolok, který ve Vysokých Tatrách postavil většinu
+    ostatních chat, vznikl až roku 1873, deset let po Rainerovi.
+  - >-
+    Rok se v pramenech rozchází a rozdíl není v číslici, ale ve významu:
+    tři prameny mluví o roce 1863 jako o roce stavby, dva o roce, kdy Rainer
+    vypracoval projekt, s tím, že chata stála až o dva roky později.
+    Zapisujeme nižší číslo a rozpor přiznáváme.
+  - >-
+    Dvakrát skončila. Poprvé roku 1884, kdy ji předstihla nová chata Kamzík;
+    pak z ní byl sklad paliva, garáž a nakonec chlívek. Roku 1983 ji Správa
+    TANAPu nechala jako památkový objekt zrestaurovat a provoz obnovil Peter
+    Petras — podle většiny pramenů roku 1997, podle jednoho 1998. Dnes ji
+    vede Peter Petras mladší.
+  - >-
+    Dnešní Rainerka je v korpusu výjimka: nespí se tu a nevaří se tu. Prameny
+    to říkají shodně a doslova — „malé občerstvení bez podávání jídel".
+    K tomu je uvnitř expozice o historii a současnosti horských nosičů
+    a sbírka starého horolezeckého náčiní, takže je to zároveň bufet
+    i miniaturní muzeum. Půdorys má pět krát pět a půl metru a podle pramene
+    je to nejmenší horská chata Vysokých Tater.
+  - >-
+    Chodí se sem z Hrebienku po červené za dvacet pět až pětatřicet minut
+    podle toho, který pramen počítá; dál vede cesta k Vodopádům Studeného
+    potoka a na Bilíkovu chatu. Pro toho, kdo míří do Veľké Studené doliny
+    na Zbojníckou chatu, je Rainerka první zastávkou.
+  - >-
+    Kdy je otevřeno, neuvádíme. Jeden pramen píše, že celoročně každý den
+    od devíti do čtyř, druhý že mimo sezónu jen o víkendech a svátcích —
+    a to je rozdíl, který se u chaty na půl hodiny cesty pozná.
+  - >-
+    Údaje na téhle stránce nesou vysoketatry.com, tatranskybedeker.sk,
+    tatry.sk, Pravda.sk, interez.sk a publikace Slovenského olympijského
+    výboru o historii turistických chat; polohu nese OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      vysoketatry.com — stavba 1863 Jánem Jurajem Rainerem, zánik po roce
+      1884, obnova 1998, malé občerstvení bez podávání jídel, expozice
+      nosičů, časy tras z Hrebienku (načteno 8. 8. 2026)
+    url: http://www.vysoketatry.com/chaty/rchata/rchata.html
+  - popis: >-
+      tatranskybedeker.sk — nájemce Starého Smokovce jako stavebník,
+      restaurování Správou TANAPu 1983, chataři Petrasovi, celoroční
+      otvírací doba 9:00–16:00 (načteno 8. 8. 2026)
+    url: https://www.tatranskybedeker.sk/rainerova-chata/
+  - popis: >-
+      tatry.sk — „the oldest chalet in the High Tatras", občerstvení bez
+      jídel a bez ubytování, expozice nosičů a sbírka náčiní, telefony
+      (načteno 8. 8. 2026)
+    url: https://www.tatry.sk/en/rainerova-chata-en/
+  - popis: >-
+      Pravda.sk — výška 1301 m, projekt 1863 a stavba o dva roky později,
+      degradace na sklad a chlívek, obnova Petrem Petrasem 1997
+      (načteno 8. 8. 2026)
+    url: >-
+      https://www.pravda.sk/cestovanie/zahranicie/clanok/415892-najslavnejsia-tatranska-chata-rainerka-si-prezila-mnoho-peripetii
+  - popis: >-
+      interez.sk — nejmenší horská chata Vysokých Tater, rozměry 5 × 5,5 m,
+      není určena k přenocování, provoz mimo sezónu jen o víkendech
+      (načteno 8. 8. 2026)
+    url: >-
+      https://www.interez.sk/rainerova-chata-najstarsia-a-najmensia-horska-chata-vo-vysokych-tatrach/
+  - popis: >-
+      Slovenský olympijský výbor, publikace o historii turistických chat
+      a útulen na Slovensku do roku 1949 — „Prvou chatou na slovenskej
+      strane Tatier bola Rainerova chata" (načteno 8. 8. 2026)
+    url: >-
+      https://www.olympic.sk/sites/default/files/2019-06/S-batohom-cez-hory-Z-histórie-turistických-chát-a-útulní-na-Slovensku-do-roku-1949.pdf
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut, ele=1304; ODbL)
+    url: https://www.openstreetmap.org/way/27865088
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/rainerova-chata.yaml (8. 8. 2026),
+  čtvrtý publikovaný profil oblasti Vysoké Tatry.
+
+  PRVNÍ OBJEKT KORPUSU S `nocleh: ne` A `kuchyne: ne`. Není to mezera
+  v datech, ale doložená vlastnost: „refreshment without serving meals or
+  accommodation" (tatry.sk) a „malé občerstvenie bez podávania jedál"
+  (vysoketatry.com i tatranskybedeker.sk). Typ občerstvení je proto
+  `kiosek`. Klíč zařazení je splněn — občerstvení pro veřejnost i role na
+  trase —, ale profil ukazuje, že „chata" v našem číselníku neznamená
+  automaticky nocleh.
+
+  SUPERLATIV MÁ TŘI RŮZNĚ ŠIROKÉ PODOBY a do prózy šla ta nejopatrnější,
+  která je zároveň doložená: tatry.sk „the oldest chalet in the High
+  Tatras", interez.sk „najstaršou horskou chatou na slovenskej strane
+  Vysokých Tatier", Pravda.sk „najstaršia a najmenšia ZACHOVANÁ chata".
+  Rozdíl mezi „nejstarší" a „nejstarší zachovaná" je podstatný a při
+  případném rozšíření textu se musí udržet.
+
+  MOJE ŠESTÁ CHYBA V ZADÁNÍ REŠERŠE ZA DEN, a tentokrát systémová: ptal
+  jsem se, co ve Vysokých Tatrách postavil KARPATHENVEREIN. Rešerše
+  nenašla ANI JEDNU tatranskou chatu tohohle spolku — Karpathenverein
+  vznikl roku 1920 přejmenováním Uhorského karpatského spolku a doložené
+  vlastní stavby (Ďumbier 1902, Panské dielko 1906) leží v Nízkých Tatrách
+  a předcházejí roku 1920. TÝKÁ SE TO NAŠICH DAT: poznámka v
+  data/oblasti/vysoke-tatry.yaml připisuje Karpathenvereinu Bilíkovu chatu
+  (1934). Ten údaj je od teď PODEZŘELÝ a před povýšením Bilíkovy chaty se
+  musí ověřit znovu.
+
+  CO REŠERŠE NAOPAK UPEVNILA — pořadí stavitelů ve Vysokých Tatrách:
+  jednotlivec Rainer (1863), pak Uhorský karpatský spolok od roku 1873
+  (Majláthova chata u Popradského plesa 1879, kamenná náhrada 1881, třetí
+  chata 1892, Sliezsky dom 1895, Chata pri Zelenom plese 1897, Téryho chata
+  1899), a nakonec KČST od roku 1918, který ale vlastní stavbu má
+  doloženou JEDINOU — Chatu pod Rysmi; ostatní chaty jen převzal. Tohle je
+  kostra, o kterou se opřou další profily oblasti.
+
+  ROZPOR VE VÝŠCE: OSM má ele=1304, dva prameny a katalog 1301. Zapsáno
+  1301 — je to případ, kdy OSM není nejbližší pramen objektu, jen
+  nejsnáze dostupný.
+
+  NEDOLOŽENO (nezapsáno): rok vzniku s jistotou (1863 × 1865), otvírací
+  doba (dva neslučitelné režimy), rok obnovy provozu (1997 × 1998),
+  vlastník objektu (restaurování zajistila Správa TANAPu, ale vlastnický
+  titul pramen neuvádí), vlastní web chaty (nemá), zda chata leží přímo na
+  Tatranské magistrále. Fotku dodá běh DATA-02, výškový profil DATA-06.

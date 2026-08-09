@@ -1,0 +1,268 @@
+# Zbojnícka chata — povýšena z kandidáta DATA-01 (8. 8. 2026).
+# Vyhořela 14. června 1998 a otevřela se znovu až 20. října 2001.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Zbojnícka chata
+slug: zbojnicka-chata
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+aliasy:
+  - nazev: Zbojnícka útulňa
+    poznamka: >-
+      jméno, pod kterým ji od dubna 1933 vedl Klub československých turistů;
+      název navrhl 9. dubna 1933 Štefan Zamkovský
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1766085
+lng: 20.1673952
+vyska: 1960
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/64888292 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1960 m bez rozporu ve třech pramenech (čteno 8. 8. 2026):
+    vysoketatry.com „Zbojnícka chata (1960 m)", hiking.sk „Nadmorská výška
+    1960 m n. m." a tatryportal.sk „Najvyššia dosiahnutá nadmorská výška:
+    1 960 m n.m." Poloha: horní část Veľké Studené doliny.
+    POZOR NA JMENOVCE — v korpusu jsou tři objekty jménem Zbojnícka:
+    tenhle, „Chata Zbójnicka" u Zakopaného (19 859 m odtud) a „Zbójnicka
+    Chata" v Ustroni (112 410 m). Rozlišuje je registr data/_jmenovci.yaml.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 16
+overeniNocleh:
+  source: >-
+    Shodně tři prameny (čteno 8. 8. 2026): vysoketatry.com „KAPACITA
+    UBYTOVANIA: 16", hiking.sk „16 lôžok", tatryportal.sk „Počet lôžok: 16".
+    Bez rozporu.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chaty (čteno 8. 8. 2026) uvádí ubytování i stravování;
+    hiking.sk k tomu vede ceny za snídani a večeři. TÁŽ MEZERA JAKO
+    U TÉRYHO CHATY: že se obslouží i NEUBYTOVANÍ, neříká výslovně žádný
+    pramen. Klíč zařazení je splněn rolí na trase — chata je uzlem mezi
+    Veľkou a Malou Studenou dolinou —, ale obsluhu neubytovaných tu
+    netvrdíme.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    tatryportal.sk (čteno 8. 8. 2026): „Prevádzka: celoročná"; vlastní web
+    chaty „Celoročná prevádzka". Konkrétní hodiny žádný pramen neuvádí.
+    Stejně jako u ostatních tatranských chat platí, že celoroční provoz
+    neznamená celoroční dostupnost: sezónní uzávěra tatranských cest je
+    popsaná v data/oblasti/vysoke-tatry.yaml a spojka na Téryho chatu vede
+    přes Priečne sedlo.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+421903638000'
+  email: rezervacie@zbojnickachata.sk
+  web: https://www.zbojnickachata.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1907
+overeniHistorie:
+  source: >-
+    Rok 1907 uvádějí oba prameny shodně, ale ROZCHÁZEJÍ SE V TOM, KDO
+    STAVĚL (čteno 8. 8. 2026): vysoketatry.com — „Uhorský lesný erár
+    postavil tu r. 1907 poľovnícku chatku a po menších úpravách ju r. 1910
+    odovzdal turistickej verejnosti."; nostalgicketatry.sk — „Útulňa vo
+    Veľkej Studenej doline vznikla v roku 1907 z iniciatívy UKS" (Uhorský
+    karpatský spolok), s tím, že největší podíl na realizaci měl lesní rada
+    Imrich Csik. Je možné, že jde o dvě různé role (vlastník pozemku ×
+    iniciátor), ale žádný pramen to tak neříká, a proto se stavebník do dat
+    nezapisuje. Zpřístupnění veřejnosti 1910 (oba prameny), přístavba 1924,
+    kterou vznikla dnešní obhospodařovaná chata (vysoketatry.com).
+    JMÉNO: název „Zbojnícka" navrhl 9. dubna 1933 Štefan Zamkovský a od
+    dubnového dvojčísla téhož roku je objekt veden jako „Zbojnícka útulňa
+    KČST" (nostalgicketatry.sk). Celoroční provoz od 1932–33 (hiking.sk)
+    nebo od léta 1933 (nostalgicketatry.sk) — ROZPOR. Rekonstrukce
+    1984–1986 (vysoketatry.com) × 1986 (hiking.sk).
+    Vlastnictví: horydoly.cz vede chatu mezi pěti „pod správou KST";
+    doslovný doklad vlastnického titulu chybí.
+  verified: false
+  checked: '2026-08-08'
+
+milniky:
+  - rok: 1907
+    udalost: >-
+      Ve Veľké Studené dolině vznikla lovecká chatka; kdo přesně ji
+      postavil, se prameny rozcházejí.
+    zdroj: >-
+      vysoketatry.com (čteno 8. 8. 2026) — „Uhorský lesný erár postavil tu
+      r. 1907 poľovnícku chatku"; nostalgicketatry.sk — „vznikla v roku 1907
+      z iniciatívy UKS"
+  - rok: 1910
+    udalost: >-
+      Po menších úpravách byla chatka předána turistické veřejnosti.
+    zdroj: >-
+      vysoketatry.com (čteno 8. 8. 2026): „po menších úpravách ju r. 1910
+      odovzdal turistickej verejnosti."
+  - rok: 1933
+    udalost: >-
+      Štefan Zamkovský navrhl 9. dubna jméno „Zbojnícka"; od konce dubna je
+      objekt veden jako Zbojnícka útulňa KČST.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 8. 8. 2026): „Od dvojčísla 3-4, ktoré
+      vyšlo koncom apríla je už uvedená ako Zbojnícka útulňa KČST."
+  - rok: 1998
+    udalost: >-
+      V noci ze 14. na 15. června chata celá vyhořela; podle pramene se od
+      přehřátého komína chytila střecha.
+    zdroj: >-
+      dennikn.sk (čteno 8. 8. 2026): „v noci zo 14. na 15. júna 1998,
+      zhorela Zbojnícka chata vo Veľkej studenej doline";
+      nostalgicketatry.sk: „14. júna 1998, kedy sa od prehriateho komína
+      chytila strecha...celá zhorela."
+  - rok: 2001
+    udalost: >-
+      Obnovená chata byla slavnostně otevřena 20. října, tedy víc než tři
+      roky po požáru; obnovu vedl chatař Ľudovít „Edo" Záhor.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 8. 8. 2026): „Slávnostne ju otvorili
+      20.10.2001."; dennikn.sk: „Pod vedením chatára Ľudovíta „Eda" Záhoru
+      … chata vstala z popola"
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Po obnově má chata vzduchové kolektory na vytápění.
+    kategorie: jine
+    zdroj: >-
+      tatryportal.sk (čteno 8. 8. 2026): chata má po rekonstrukci „modern
+      amenities including air collectors for heating"
+  - text: >-
+      Chata je uzlem mezi Veľkou a Malou Studenou dolinou: přes Priečne
+      sedlo vede spojka k Téryho chatě.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk (čteno 8. 8. 2026) — žlutá značka z Malé Studené doliny
+      přes Priečne sedlo, dnes obousměrná
+  - text: >-
+      Chatařem byl dvaačtyřicet let Ľudovít „Edo" Záhor; v roce 2015 ho
+      vystřídala Dominika Dejczöová.
+    kategorie: jine
+    zdroj: >-
+      dennikn.sk (čteno 8. 8. 2026) — „na Zbojníčke chatárčil 42 rokov";
+      hiking.sk — „Edo Záhor bol chatárom do roku 2015, kedy ho vystriedala
+      Dominika Dejczöová"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Vysokohorská chata v horní části Veľké Studené doliny, na místě lovecké
+  chatky z roku 1907. V noci ze 14. na 15. června 1998 celá vyhořela
+  a znovu se otevřela až 20. října 2001.
+text:
+  - >-
+    Zbojnícka chata stojí v 1960 metrech v horní části Veľké Studené
+    doliny. Na výšce se prameny shodují, na začátku už ne: rok 1907 uvádějí
+    oba, ale jeden píše, že chatku postavil uherský lesní erár jako
+    loveckou, druhý že vznikla z iniciativy Uhorského karpatského spolku.
+    Mohou to být dvě role téže stavby, ale žádný pramen to tak neříká, a tak
+    tu stavebníka neuvádíme. Turistům se chata otevřela roku 1910
+    a dnešní obhospodařovaná podoba vznikla přístavbou v roce 1924.
+  - >-
+    Jméno je mladší než chata. Navrhl ho 9. dubna 1933 Štefan Zamkovský
+    a od konce téhož měsíce se objekt vede jako Zbojnícka útulňa Klubu
+    československých turistů.
+  - >-
+    Nejtěžší datum chaty je 14. červen 1998: v noci na patnáctého celá
+    vyhořela, podle pramene se od přehřátého komína chytila střecha. Znovu
+    otevřená byla 20. října 2001, tedy víc než tři roky nato, a obnovu vedl
+    chatař Ľudovít „Edo" Záhor, který na Zbojníčce hospodařil dvaačtyřicet
+    let. V roce 2015 ho vystřídala Dominika Dejczöová.
+  - >-
+    Chodí se sem z Hrebienku Veľkou Studenou dolinou; prameny udávají dvě
+    až tři hodiny podle toho, jak počítají, a proto tu žádný čas
+    neuvádíme. Cestou se míjí Rainerova chata. Odsud vede přes Priečne
+    sedlo spojka k Téryho chatě — dnes obousměrná, ale exponovaná, takže
+    „celoročně otevřeno" tu opět neznamená „celoročně dostupné".
+  - >-
+    Spí se v šestnácti lůžkách a chata je otevřená celý rok; po obnově má
+    vzduchové kolektory na vytápění. Jestli se tu obslouží i ten, kdo tu
+    nespí, prameny neříkají.
+  - >-
+    Údaje na téhle stránce nesou vlastní web chaty, vysoketatry.com,
+    hiking.sk, tatryportal.sk, nostalgicketatry.sk a Deník N; polohu nese
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — celoroční provoz, ubytování a stravování, přístup
+      z Hrebienku za 2–2,5 hodiny (načteno 8. 8. 2026)
+    url: https://www.zbojnickachata.sk/
+  - popis: >-
+      vysoketatry.com — výška 1960 m, lovecká chatka uherského lesního
+      eráru 1907, předání veřejnosti 1910, přístavba 1924, kapacita 16,
+      kontakty (načteno 8. 8. 2026)
+    url: http://www.vysoketatry.com/chaty/zbchata/zbchata.html
+  - popis: >-
+      nostalgicketatry.sk — vznik 1907 z iniciativy UKS, jméno navržené
+      Štefanem Zamkovským 9. 4. 1933, požár 14. 6. 1998 od přehřátého
+      komína, otevření po obnově 20. 10. 2001 (načteno 8. 8. 2026)
+    url: >-
+      http://www.nostalgicketatry.sk/historia/zbojnicka-chata/140-historia-zbojnickej-chaty
+  - popis: >-
+      Deník N, blog — požár v noci ze 14. na 15. 6. 1998, obnova pod
+      vedením chatáře Eda Záhora (načteno 8. 8. 2026)
+    url: https://dennikn.sk/blog/1152485/ked-zbojnicka-vstala-z-popola
+  - popis: >-
+      hiking.sk — 16 lůžek, celoroční provoz od 1932–33, ceny noclehu
+      a stravy, střídání chatařů 2015, spojka přes Priečne sedlo
+      (načteno 8. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/265/zbojnicka_chata.html
+  - popis: >-
+      tatryportal.sk — výška, 16 lůžek, celoroční provoz, vzduchové
+      kolektory, etapové časy z Hrebienku (načteno 8. 8. 2026)
+    url: https://www.tatryportal.sk/tura/zbojnicka-chata/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut, telefon, e-mail, web; ODbL)
+    url: https://www.openstreetmap.org/way/64888292
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/zbojnicka-chata.yaml (8. 8. 2026),
+  druhý publikovaný profil oblasti Vysoké Tatry.
+
+  ROK POŽÁRU: 1998 drží čtyři prameny (dennikn.sk, nostalgicketatry.sk,
+  tatryportal.sk, hiking.sk), rok 1999 jediný (vysoketatry.com). Zapsáno
+  1998; rozpor je přiznaný v milníku i tady. Není to případ pro konvenci
+  „nižší číslo", ale pro poměr pramenů — čtyři proti jednomu.
+
+  A JEDEN ROZPOR, KTERÝ SE NEDAL OVĚŘIT: titulek článku SME zní „Zbojnícka
+  chata zhorela pred 15 rokmi, IHNEĎ ju obnovili", což je v napětí
+  s doloženým otevřením 20. 10. 2001, tedy víc než tři roky po požáru.
+  Obsah článku je za paywallem (HTTP 402), takže se rozpor nedal rozhodnout.
+  Do dat šlo datum z nostalgicketatry.sk; slovo „ihneď" se nepoužilo.
+
+  STAVEBNÍK SE NEZAPSAL. Uhorský lesný erár × iniciativa Uhorského
+  karpatského spolku — dvě různá tvrzení o téže stavbě z roku 1907.
+  Je to týž typ opatrnosti jako u Prašivé v Beskydech, kde se prameny
+  neshodly na spolku, a stavebník proto v datech není.
+
+  TŘI ZBOJNÍCKÉ V KORPUSU. Tenhle objekt je ten katalogový vysokohorský;
+  další dva (u Zakopaného a v Ustroni) jsou od něj 19,9 a 112,4 km
+  a rozlišuje je registr jmenovců zapsaný 8. 8. 2026. U profilu je to
+  důležité, protože jméno „Zbójnicka chata" nese v polských horách řada
+  hospod ve zbojnickém stylu.
+
+  NEDOLOŽENO (nezapsáno): otvírací hodiny, obsluha neubytovaných,
+  zásobování (o nosičích ani vrtulníku u téhle chaty pramen nemluví,
+  ač u Téryho ano), zdroj vody a elektřiny, právní forma vlastnictví,
+  čas z Hrebienku (tři různé hodnoty), rok přechodu na celoroční provoz
+  (1932–33 × 1933). Fotku dodá běh DATA-02, výškový profil DATA-06.

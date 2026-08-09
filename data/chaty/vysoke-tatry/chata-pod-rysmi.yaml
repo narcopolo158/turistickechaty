@@ -1,0 +1,269 @@
+# Chata pod Rysmi — povýšena z kandidáta DATA-01 (8. 8. 2026).
+# Nejvýše položená horská chata na Slovensku (2250 m) a jediný objekt
+# korpusu, který je celý postavený tak, aby vydržel lavinu.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Chata pod Rysmi
+slug: chata-pod-rysmi
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1746037
+lng: 20.0870276
+vyska: 2250
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/360934553 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 2250 m bez rozporu ve třech pramenech (čteno 8. 8. 2026):
+    Klub slovenských turistov, vlastní web chaty a tatryportal.sk
+    („Najvyššia dosiahnutá nadmorská výška: 2 250 m n.m."). Chata leží pod
+    vrcholem Rysů (2503 m), který je zároveň hraničním přechodem do Polska.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 14
+overeniNocleh:
+  source: >-
+    tatryportal.sk (čteno 8. 8. 2026): „Počet lôžok: 14"; hiking.sk
+    k rekonstrukci: „po kolaudácii bude poskytovať ubytovanie na 14 lôžkach
+    s dekami v spoločnej nocľahárni." ROZPOR, přiznaný: vlastní web chaty
+    uvádí neurčitě „Desiatky lôžok – Jednoduché horské ubytovanie". Zapsáno
+    14 — je to konkrétní číslo doložené dvěma prameny, kdežto „desítky"
+    je marketingová formulace bez čísla.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chaty (čteno 8. 8. 2026): chata poskytuje „nielen
+    stravovanie, ale aj ubytovanie v nocľahárni." Že se obslouží
+    i NEUBYTOVANÍ, výslovně nestojí nikde — ale u téhle chaty je klíč
+    zařazení splněn rolí na trase nejsilněji z celého korpusu: je to
+    poslední zázemí pod vrcholem Rysů a prakticky každý, kdo jde nahoru,
+    tudy prochází.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: >-
+  jen v letní sezóně, zhruba od začátku června do konce října
+overeniProvoz:
+  source: >-
+    ROZPOR V ZAČÁTKU SEZÓNY, nesrovnaný (čteno 8. 8. 2026): Klub
+    slovenských turistov uvádí „Je otvorená len v letnej sezóne (od 1.6. do
+    31.10.)" a vlastní web chaty „Každý rok 1.6 - 31.10", kdežto
+    tatryportal.sk „Prevádzka: 15.6. – 31.10." Konec sezóny 31. října je
+    shodný. Do pole `sezona` jde proto slovní vymezení bez přesného dne;
+    přesné datum rozhodne telefonát (DATA-04). SEZÓNNOST TU NENÍ
+    PROVOZNÍ DROBNOST, ale hlavní údaj: mimo ni je chata zavřená a nejde
+    o „otevřeno, ale hůř dostupné" jako u celoročních tatranských chat.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  # ROZPOR: KST i vlastní web uvádějí +421 911 765 069, tatryportal.sk
+  # dvě jiná čísla (+421 52 442 23 14 a +421 903 181 051). Zapsáno číslo
+  # od vlastníka a provozovatele.
+  telefon: '+421911765069'
+  web: https://chatapodrysmi.kst.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1932
+overeniHistorie:
+  source: >-
+    ROZPOR V ROCE VZNIKU, nesrovnaný (čteno 8. 8. 2026): hiking.sk uvádí
+    „Verejnosti bola do užívania odovzdaná po dvoch rokoch výstavby,
+    15. júla 1932."; Klub slovenských turistov, vlastní web chaty i stránka
+    KST o historii shodně „postavená v roku 1933" a „Chatu dokončilo
+    ústredie KČST v roku 1933". Třetí pramen (asb.sk) obojí spojuje:
+    chata „sa začala stavať v roku 1932 a v roku 1933 bola skolaudovaná" —
+    to ale samo odporuje datu předání veřejnosti 15. 7. 1932. Zapsáno 1932
+    dle konvence z 27. 7. 2026 (při rozporu nižší číslo, rozpor přiznat).
+    STAVEBNÍK JE DOLOŽENÝ: Klub československých turistů — kst.sk
+    „Chatu dokončilo ústredie KČST"; hiking.sk uvádí KČST z Popradu. Je to
+    jediná doložená vlastní stavba KČST ve Vysokých Tatrách; ostatní chaty,
+    které klub vlastnil (Téryho, pri Zelenom plese), postavil Uhorský
+    karpatský spolok a KČST je jen převzal.
+    LAVINY: 1955 chatu poškodila lavina (asb.sk); v roce 2000 spadla další
+    a prameny se liší v rozsahu škody — asb.sk „zbúrala polovicu chaty",
+    hiking.sk „zničila sklad, prístavok pre chatárov a strhla strechu –
+    z chaty sa zachovala len jedáleň". Generální rekonstrukce začala
+    v březnu 2010, „z pôvodnej chaty ostali len základy" (hiking.sk),
+    a slavnostní otevření bylo plánováno na 25. 9. 2013 — že se konalo,
+    pramen nepotvrzuje, uvádí jen plán.
+    Vlastníci: „Klub slovenských turistov a SHS James" (kst.sk).
+  verified: false
+  checked: '2026-08-08'
+
+milniky:
+  - rok: 1932
+    udalost: >-
+      Chatu postavil Klub československých turistů; podle jednoho pramene
+      byla veřejnosti předána 15. července 1932 po dvou letech stavby,
+      podle jiných byla dokončena až roku 1933.
+    zdroj: >-
+      hiking.sk (čteno 8. 8. 2026): „Verejnosti bola do užívania odovzdaná
+      po dvoch rokoch výstavby, 15. júla 1932."; kst.sk: „Chatu dokončilo
+      ústredie KČST v roku 1933."
+  - rok: 1955
+    udalost: >-
+      Chatu poškodila lavina.
+    zdroj: >-
+      asb.sk (čteno 8. 8. 2026): „V roku 1955 padla lavína, ktorá chatu
+      poškodila."
+  - rok: 2000
+    udalost: >-
+      Další velká lavina chatu z velké části zničila; prameny se liší
+      v tom, kolik z ní zbylo.
+    zdroj: >-
+      asb.sk (čteno 8. 8. 2026): „V roku 2000 spadla ďalšia veľká lavína,
+      ktorá zbúrala polovicu chaty."; hiking.sk: lavína „zničila sklad,
+      prístavok pre chatárov a strhla strechu – z chaty sa zachovala len
+      jedáleň."
+  - rok: 2010
+    udalost: >-
+      V březnu začala generální rekonstrukce; z původní chaty zůstaly jen
+      základy. Nová stavba má šikmou stěnu, aby lavina nenarazila na kolmo.
+    zdroj: >-
+      hiking.sk (čteno 8. 8. 2026): „Od marca 2010 prebieha generálna
+      rekonštrukcia chaty, pričom z pôvodnej chaty ostali len základy.";
+      asb.sk: stěna „je zošikmená, takže lavína nenarazí na kolmú stenu."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Chata se zásobuje výhradně nosiči.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk (čteno 8. 8. 2026): chata je „zásobovaná výlučne nosičmi"
+  - text: >-
+      Vodu má chata ze záchytných nádrží nad sebou a elektřinu z agregátů,
+      přestože má namontované fotovoltické články.
+    kategorie: jine
+    zdroj: >-
+      asb.sk (čteno 8. 8. 2026): „Zásobovanie chaty vodou je riešené
+      prostredníctvom záchytných nádrží umiestnených nad chatou."; chata
+      využívá „agregáty" navzdory „namontovaným fotovoltickým článkom"
+  - text: >-
+      Nová budova má záměrně šikmou stěnu, aby na ni lavina nenarazila
+      kolmo.
+    kategorie: jine
+    zdroj: >-
+      asb.sk (čteno 8. 8. 2026): stěna „je zošikmená, takže lavína nenarazí
+      na kolmú stenu."
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata, kterou vlastní web i Klub slovenských turistov uvádějí jako
+  nejvýše položenou na Slovensku — 2250 metrů pod vrcholem Rysů.
+  Postavil ji Klub československých turistů na začátku třicátých let,
+  dvakrát ji vzala lavina a dnešní budova má proto šikmou stěnu. Otevřeno
+  je jen v létě a zásobuje se výhradně nosiči.
+text:
+  - >-
+    Chata pod Rysmi stojí ve 2250 metrech, tedy výš než kterákoli jiná
+    horská chata na Slovensku — a je to superlativ, který má doslovný
+    pramen, ne odhad. Leží pod vrcholem Rysů (2503 m), kudy vede hraniční
+    přechod do Polska, a je posledním zázemím před výstupem.
+  - >-
+    Postavil ji Klub československých turistů a je to jediná jeho doložená
+    vlastní stavba ve Vysokých Tatrách; ostatní chaty, které klub vlastnil,
+    postavil Uhorský karpatský spolok a KČST je po roce 1918 jen převzal.
+    Rok se v pramenech liší: jeden mluví o předání veřejnosti 15. července
+    1932 po dvou letech stavby, ostatní o dokončení roku 1933. Zapisujeme
+    nižší číslo a rozpor přiznáváme.
+  - >-
+    Dvakrát ji vzala lavina — poprvé roku 1955, podruhé roku 2000, kdy
+    z ní podle pramenů zbyla buď polovina, nebo jen jídelna. Generální
+    rekonstrukce začala v březnu 2010 a z původní stavby zůstaly jen
+    základy. Nová budova je postavená proti lavině: stěna je záměrně
+    šikmá, aby na ni sníh nenarazil kolmo. Je to jediný objekt korpusu,
+    u kterého je tvar stavby odpovědí na hrozbu.
+  - >-
+    Zásobuje se výhradně nosiči, vodu má ze záchytných nádrží nad chatou
+    a elektřinu z agregátů, i když má namontované fotovoltické články.
+    Spí se ve čtrnácti lůžkách s dekami ve společné noclehárně.
+  - >-
+    Otevřeno je jen v letní sezóně, zhruba od začátku června do konce
+    října — a tady to není provozní drobnost, ale hlavní údaj: mimo sezónu
+    je chata zavřená, ne jen hůř dostupná. V začátku sezóny se prameny
+    rozcházejí mezi prvním a patnáctým červnem, tak uvádíme jen měsíc.
+  - >-
+    Chodí se sem od Popradského plesa: z chaty u plesa je to podle pramene
+    dvě hodiny dvacet minut nahoru, ze Štrbského Plesa tři hodiny
+    pětatřicet.
+  - >-
+    Údaje na téhle stránce nesou Klub slovenských turistov, vlastní web
+    chaty, hiking.sk, tatryportal.sk a odborný časopis ASB; polohu nese
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Klub slovenských turistov, stránka chaty — výška 2250 m, vlastníci
+      KST a SHS James, letní sezóna 1. 6. – 31. 10., chatař, telefon
+      (načteno 8. 8. 2026)
+    url: https://www.kst.sk/kst/chaty/chata-pod-rysmi/
+  - popis: >-
+      Vlastní web chaty — doslovný superlativ „najvyššie položená horská
+      chata na Slovensku" a „najmladšia tatranská chata", sezóna, stravování
+      i ubytování (načteno 8. 8. 2026)
+    url: https://chatapodrysmi.kst.sk/
+  - popis: >-
+      hiking.sk — předání veřejnosti 15. 7. 1932 po dvou letech stavby,
+      stavitel KČST z Popradu, lavina 2000, generální rekonstrukce od
+      března 2010, 14 lůžek, zásobování výlučně nosiči (načteno 8. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/2371/chata_pod_rysmi_zrekonstruovana.html
+  - popis: >-
+      ASB — laviny 1955 a 2000, šikmá stěna proti lavině, voda ze
+      záchytných nádrží, agregáty (načteno 8. 8. 2026)
+    url: https://www.asb.sk/architektura/chata-pod-rysmi-od-minulosti-po-modernu-sucasnost
+  - popis: >-
+      tatryportal.sk — 14 lůžek, sezóna od 15. 6., etapové časy od
+      Popradského plesa a ze Štrbského Plesa (načteno 8. 8. 2026)
+    url: https://www.tatryportal.sk/tura/chata-pod-rysmi/
+  - popis: >-
+      Klub slovenských turistov, historie — „Chatu dokončilo ústredie KČST
+      v roku 1933" (načteno 8. 8. 2026)
+    url: https://www.kst.sk/kst/o-nas/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut, web; ODbL)
+    url: https://www.openstreetmap.org/way/360934553
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/chata-pod-rysmi.yaml (8. 8. 2026),
+  třetí publikovaný profil oblasti Vysoké Tatry a nejvýše položený objekt
+  celého korpusu.
+
+  SUPERLATIV JE TU DOLOŽENÝ DOSLOVA, na rozdíl od Téryho chaty: vlastní web
+  „2250 m n. m – najvyššie položená horská chata na Slovensku". Právě proto
+  se u Téryho chaty muselo psát jen „ve Vysokých Tatrách" — výš stojí tahle,
+  jen je sezónní.
+
+  SEZÓNNOST JE HLAVNÍ ÚDAJ, ne provozní poznámka. U celoročních tatranských
+  chat platí, že „otevřeno" neznamená „dostupné" (uzávěry cest); tady je to
+  opačně jednoznačné — mimo červen až říjen je zavřeno. Rozpor v začátku
+  (1. 6. dle vlastníka × 15. 6. dle tatryportal.sk) je důvod, proč je
+  v poli `sezona` slovní vymezení bez přesného dne.
+
+  KAPACITU JSEM NEZAPSAL PODLE VLASTNÍHO WEBU, a je to vědomé. Vlastní web
+  píše „Desiatky lôžok", což je marketingová formulace bez čísla; dva jiné
+  prameny shodně uvádějí 14. Pravidlo „pramen nejblíž objektu má přednost"
+  se tu neuplatnilo, protože ten pramen žádné číslo nedává.
+
+  OTEVŘENÁ OTÁZKA U REKONSTRUKCE: hiking.sk uvádí, že slavnostní otevření
+  bylo PLÁNOVÁNO na 25. 9. 2013. Že se konalo, nepotvrzuje žádný pramen —
+  do milníků proto šel jen začátek rekonstrukce, ne její konec.
+
+  NEDOLOŽENO (nezapsáno): rok vzniku s jistotou (1932 × 1933), přesný
+  začátek sezóny, obsluha neubytovaných, dnešní chatař (kst.sk uvádí Jána
+  Ševčíka, starší článek Viktora Beránka — nejspíš různá období, ale
+  doloženo to není), náklady stavby (kst.sk uvádí „s nákladom Kč" bez
+  částky). Fotku dodá běh DATA-02, výškový profil DATA-06.

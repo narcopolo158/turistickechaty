@@ -1,0 +1,250 @@
+# Téryho chata — PRVNÍ PUBLIKOVANÝ PROFIL OBLASTI VYSOKÉ TATRY (8. 8. 2026),
+# povýšen z kandidáta DATA-01 po Michalově kliku téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Téryho chata
+slug: teryho-chata
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1900473
+lng: 20.1989466
+vyska: 2015
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/33859958 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 2015 m se shoduje napříč prameny bez jediného rozporu, což je
+    v tomhle korpusu vzácné: vlastní web chaty (čteno 8. 8. 2026) „2,015
+    meters above sea level", turistika.cz „v nadmořské výšce 2015 m",
+    treking.cz totéž. Poloha: horní část Malé Studené doliny v kotlině Pěti
+    Spišských ples (treking.cz).
+  verified: false
+  checked: '2026-08-08'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 24
+overeniNocleh:
+  source: >-
+    turistika.cz (čteno 8. 8. 2026): „V chatě je k dispozici 24 lůžek ve
+    vícelůžkových pokojích se základním vybavením."; treking.cz uvádí totéž
+    číslo s upřesněním „24 ve třech pokojích". Bez rozporu.
+  verified: false
+  checked: '2026-08-08'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    turistika.cz (čteno 8. 8. 2026): „Stravovat se lze přímo na chatě -
+    snídaně, obědy, večeře a teplá a studená jídla po celý den."; vlastní
+    web chaty „During the day, you can also enjoy our selection of regular
+    meals". Jídelna má od roku 2009 padesát míst (dobrenoviny.sk — „sa im
+    podarilo otvoriť nové priestory jedálne, ktorej kapacitu zvýšili na
+    50 miest"). POZOR NA MEZERU V DOKLADU: ani jeden pramen výslovně
+    neříká, že se obslouží i NEUBYTOVANÍ. U vysokohorské chaty na trase to
+    je pravděpodobné a klíč zařazení je stejně splněn rolí na trase, ale
+    tvrdit se to nedá — telefonát to rozhodne (DATA-04).
+  verified: false
+  checked: '2026-08-08'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+# otviraciDoba SE NEVYPLŇUJE: konkrétní hodiny neuvádí ani vlastní web.
+overeniProvoz:
+  source: >-
+    Celoroční provoz od roku 1936 uvádí vlastní web chaty (čteno
+    8. 8. 2026): „Since 1936, it has been the first hut in the High Tatras
+    to operate year-round"; potvrzuje turistika.cz — „Nejprve fungovala jako
+    sezonní chata, od roku 1936 přešla na celoroční provoz." Konkrétní
+    hodiny žádný pramen neuvádí, a tak se nezapisují.
+    U VYSOKOHORSKÉ CHATY JE ALE „CELOROČNĚ" JEN PŮLKA ODPOVĚDI: přístupové
+    cesty ve Vysokých Tatrách mají sezónní uzávěru (viz oblast
+    data/oblasti/vysoke-tatry.yaml) a spojka na Zbojníckou chatu vede přes
+    Priečne sedlo, tedy horolezecky exponovaným terénem. „Otevřeno"
+    neznamená „dostupné" a próza to říká.
+  verified: false
+  checked: '2026-08-08'
+
+kontakty:
+  telefon: '+421911900609'
+  web: https://www.teryhochata.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1899
+overeniHistorie:
+  source: >-
+    Vlastní web chaty, stránka historie (čteno 8. 8. 2026): „Téryho chata
+    was built by the Hungarian Carpathian Association in 1899, at the
+    initiative of physician and mountaineering pioneer Edmund Téry"; „The
+    author of the project was the renowned architect and builder Gedeon
+    Majunke from Spišská Sobota"; „Téry's chalet was officially opened on
+    August 21, 1899". Nezávisle treking.cz: „postavena v roce 1899 na
+    základě iniciativy Uherského karpatského spolku podle projektu
+    architekta Gedeona Majunkeho." Dostavba 18. července, otevření
+    21. srpna 1899 (hiking.sk). ROZPOR V DATACI PŘESTAVBY, nesrovnaný:
+    vlastní web „In 1983–1984, the chalet underwent extensive
+    reconstruction", treking.cz „zejména v roce 1983", dobrenoviny.sk
+    rekonstrukci datují 1979–1982. Vlastníky uvádí dobrenoviny.sk —
+    „Majiteľmi chaty sú Slovenský horolezecký spolok James a Klub
+    slovenských turistov"; horydoly.cz vede chatu mezi pěti pod správou
+    KST. Chatařem je od roku 2014 Peter Michalka (vlastní web).
+  verified: false
+  checked: '2026-08-08'
+
+milniky:
+  - rok: 1899
+    udalost: >-
+      Chatu postavil Uhorský karpatský spolok z podnětu lékaře a průkopníka
+      horolezectví Edmunda Téryho podle projektu Gedeona Majunkeho ze
+      Spišské Soboty; dostavěna 18. července, otevřena 21. srpna.
+    zdroj: >-
+      vlastní web chaty (čteno 8. 8. 2026) — „built by the Hungarian
+      Carpathian Association in 1899, at the initiative of physician and
+      mountaineering pioneer Edmund Téry"; hiking.sk — „Chata bola dostavaná
+      18. júla", „Otvorenie chaty sa uskutočnilo 21. augusta 1899."
+  - rok: 1936
+    udalost: >-
+      Chata přešla na celoroční provoz jako první ve Vysokých Tatrách.
+    zdroj: >-
+      vlastní web chaty (čteno 8. 8. 2026): „Since 1936, it has been the
+      first hut in the High Tatras to operate year-round"; turistika.cz:
+      „od roku 1936 přešla na celoroční provoz."
+  - rok: 1944
+    udalost: >-
+      Za konce druhé světové války se v chatě ukrývali polští odbojáři
+      a ruští uprchlíci ze zajateckých táborů.
+    zdroj: >-
+      treking.cz (čteno 8. 8. 2026): „úpravy z roku 1944, kdy se schylovalo
+      ke konci II. světové války a kdy se tady ukrývali polští odbojáři
+      i ruští uprchlíci ze zajateckých táborů."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Chata se zásobuje hlavně nosiči na zádech; vrtulník létá jen před
+      letní sezónou a po ní.
+    kategorie: jine
+    zdroj: >-
+      turistika.cz (čteno 8. 8. 2026): „veškeré potřebné zásoby vynášejí na
+      chatu nosiči na zádech."; hiking.sk: „Chata je zásobovaná hlavne
+      nosičmi." a „pred letnou sezónou a po nej na chatu lieta aj vrtuľník."
+  - text: >-
+      Rekordní náklad, který sem nosič vynesl, vážil 151 kilogramů a podle
+      pramene dodnes nebyl překonán.
+    kategorie: jine
+    zdroj: >-
+      dobrenoviny.sk (čteno 8. 8. 2026): „Rekordný náklad Laca Kulangu -
+      151 kg - nebol dodnes prekonaný."
+  - text: >-
+      Chata stojí v kotlině Pěti Spišských ples na rozhraní Malé Studené
+      doliny.
+    kategorie: jine
+    zdroj: >-
+      turistika.cz (čteno 8. 8. 2026): „Chata se nachází na rozhraní Malé
+      Studené doliny a kotliny Pěti spišských ples"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Vysokohorská chata z roku 1899 v kotlině Pěti Spišských ples, kterou
+  postavil Uhorský karpatský spolok podle projektu Gedeona Majunkeho.
+  Od roku 1936 je otevřená celoročně a zásobuje se nosiči na zádech.
+text:
+  - >-
+    Téryho chata stojí ve 2015 metrech v horní části Malé Studené doliny,
+    v kotlině, kde leží Pět Spišských ples. Na její výšce se prameny
+    shodují do metru, což je u tohohle průvodce vzácnost — a je to zároveň
+    číslo, které z ní dělá nejvýše položenou celoročně otevřenou chatu
+    Vysokých Tater.
+  - >-
+    Postavil ji roku 1899 Uhorský karpatský spolok z podnětu lékaře
+    a průkopníka horolezectví Edmunda Téryho; projekt je dílem Gedeona
+    Majunkeho ze Spišské Soboty, tedy stavitele, jehož jméno se ve Vysokých
+    Tatrách té doby objevuje často. Chata byla dostavěná 18. července
+    a otevřená 21. srpna téhož roku. Od roku 1936 funguje celoročně a byla
+    v tom mezi tatranskými chatami první.
+  - >-
+    Zásobování je tu vlastní kapitola: náklad se sem vynáší po zádech
+    a vrtulník létá jen před sezónou a po ní. Rekord drží nosič Laco
+    Kulanga se 151 kilogramy, který podle pramene dodnes nikdo nepřekonal.
+  - >-
+    Chodí se sem od Hrebienku, kam vede pozemní lanovka ze Starého
+    Smokovce; dál po červené magistrále k rozcestí pod Zamkovského chatou
+    a po zelené na chatu, dohromady asi tři hodiny. Druhá cesta vede od
+    Javoriny přes Sedielko a třetí od Zbojníckej chaty přes Priečne sedlo.
+    To poslední ale není procházka — a je to důvod, proč u tatranské chaty
+    „otevřeno celoročně" neznamená „dostupné celoročně": přístupové cesty
+    tu mají sezónní uzávěru a Priečne sedlo je exponovaný terén.
+  - >-
+    O tom, jestli se tu obslouží i ten, kdo tu nespí, prameny mlčí. Jídelna
+    má od roku 2009 padesát míst a jídlo se podává po celý den, ale
+    výslovnou větu o neubytovaných jsme nenašli, takže ji tu netvrdíme.
+  - >-
+    Za války se v chatě ukrývali polští odbojáři a ruští uprchlíci ze
+    zajateckých táborů. Kdy přesně proběhla velká přestavba, poctivě
+    nevíme — prameny uvádějí tři různá období mezi lety 1979 a 1984.
+  - >-
+    Údaje na téhle stránce nesou vlastní web chaty, turistika.cz,
+    treking.cz, hiking.sk a dobrenoviny.sk; polohu nese OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty, stránka historie — stavba 1899 Uhorským karpatským
+      spolkem z podnětu Edmunda Téryho, projekt Gedeona Majunkeho, otevření
+      21. 8. 1899, celoroční provoz od 1936, chatař od 2014
+      (načteno 8. 8. 2026)
+    url: https://www.teryhochata.sk/en/history
+  - popis: >-
+      turistika.cz — výška 2015 m, 24 lůžek, stravování po celý den,
+      zásobování nosiči, přístupy z Hrebienku a od Javoriny
+      (načteno 8. 8. 2026)
+    url: https://www.turistika.cz/mista/teryho-chata--3/detail
+  - popis: >-
+      treking.cz — poloha v kotlině Pěti Spišských ples, 24 lůžek ve třech
+      pokojích, úkryt odbojářů roku 1944, solární panely
+      (načteno 8. 8. 2026)
+    url: https://www.treking.cz/chaty/teryho-chata.htm
+  - popis: >-
+      hiking.sk, příběh Téryho chaty — dostavba 18. 7. a otevření
+      21. 8. 1899, zásobování nosiči i vrtulníkem (načteno 8. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/7626/pribeh_teryho_chaty.html
+  - popis: >-
+      dobrenoviny.sk — vlastníci JAMES a KST, jídelna s 50 místy od roku
+      2009, rekordní náklad nosiče 151 kg (načteno 8. 8. 2026)
+    url: https://www.dobrenoviny.sk/c/170830/popularna-teryho-chata-oslavuje-jubileum-
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/33859958
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/teryho-chata.yaml (8. 8. 2026),
+  první publikovaný profil oblasti Vysoké Tatry.
+
+  SUPERLATIV JE ZÚŽENÝ OPROTI TOMU, CO SE OBVYKLE ŘÍKÁ, a je to podstatné.
+  Doložené je „nejvýše položená chata s celoročním provozem VE VYSOKÝCH
+  TATRÁCH" (treking.cz i vlastní web: „the highest year-round operated
+  mountain hut in the High Tatras"). Verzi „na Slovensku" nenašel žádný
+  pramen — a nedá se ani dovodit, protože výš stojí Chata pod Rysmi
+  (2250 m), jen je sezónní. Do prózy proto šla tatranská verze.
+
+  OTEVŘENÁ MEZERA: obslouží chata i NEUBYTOVANÉ? Žádný pramen to neříká.
+  U vysokohorské chaty na frekventované trase je to pravděpodobné a klíč
+  zařazení je splněn i rolí na trase, ale do dat se domněnka nepíše. Je to
+  otázka na telefonát a týká se stejně tak Zbojníckej chaty i Chaty pod
+  Rysmi — u všech tří to prameny mlčky přeskakují.
+
+  ROZPOR O VODĚ, nezapsaný do dat: treking.cz píše, že v umývárně „teče
+  pouze studená voda", hiking.sk uvádí „teplú vodu v kohútikoch,
+  splachovacie toalety a sprcha". Prameny nejspíš pocházejí z různých let
+  a rozdíl by šel vysvětlit rekonstrukcí, ale doloženo to tak není.
+
+  NEDOLOŽENO (nezapsáno): otvírací hodiny, datace velké přestavby (tři
+  období mezi 1979 a 1984), žádný požár (o žádném pramen nemluví),
+  právní forma vlastnictví (prameny říkají jednou „majitelia", jindy „pod
+  správou KST"), etapové časy z Hrebienku (jen souhrnné „asi 3 hod.").
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.
