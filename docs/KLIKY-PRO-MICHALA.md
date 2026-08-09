@@ -65,23 +65,7 @@ Co dělat po běhu: nic, další session si výstup přebere, projede triáží
 a začne povyšovat. V summary běhu je report — kdyby tam bylo nula objektů
 nebo pád, stačí to zmínit.
 
-## 2. FOTO-04 hero Nízkých Tater z Wikimedia Commons — NOVÉ (9. 8. 2026)
-
-| workflow | políčka |
-|---|---|
-| **FOTO-04: hero kandidáti z Commons** | obě nech na výchozích hodnotách |
-
-Náhrada za fotku ze slovakia.travel, kterou právní podmínky portálu
-nedovolují použít (doklad v `docs/FOTKY-ZDROJE-A-LICENCE.md`, odd. 4d).
-Šest titulů z Commons (hřebenovka s Chopkom a Ďumbierom, zimní Chopok,
-Jasná…) je předvyplněných ve výchozí hodnotě políčka `soubory` — vybral
-jsem je 9. 8. 2026 přes WebSearch, ze sandboxu se na ně nejde podívat.
-Běh je protáhne licenčním sítem DATA-02, stáhne náhledy do
-`data/kandidati/hero-foto/nizke-tatry/` a commitne. Další session si je
-prohlédne lokálně, vybere hero, ořízne a zapíše do
-`data/oblasti/nizke-tatry.yaml` — pak se kandidátní adresář smaže.
-
-## 3. DATA-02 fotky chat — druhý běh pro nové oblasti (9. 8. 2026)
+## 2. DATA-02 fotky chat — druhý běh pro nové oblasti (9. 8. 2026)
 
 | workflow | políčko |
 |---|---|

@@ -18,6 +18,27 @@ slug: nizke-tatry
 typ: pohori
 zeme: sk
 
+# Hero z Wikimedia Commons — vybráno z kandidátů FOTO-04 (běh 9. 8. 2026,
+# Michalův klik; z šesti titulů prošly licenčním sítem dva, tři padly na
+# HTTP 429 a jeden na chybějícím autorovi u CC BY-SA). Vybrán záběr
+# hlavní hřebenovky: kamenné moře, chodník a OBA nejvyšší vrcholy —
+# Chopok vlevo (s rozeznatelnou stanicí lanovky), Ďumbier vpravo. Druhý
+# kandidát (Michal Klajban, CC BY-SA 3.0) zachycuje Kamennou chatu pod
+# Chopkom — poznámka o něm je v backlogu NT-01, hodí se až pro profil
+# chaty. Ořez 4:3 → 3:2 ubral oblohu; atribuci nese _meta.yaml běhu
+# a odsud pole autor + zdrojUrl.
+heroFoto:
+  soubor: /foto/pohori/nizke-tatry-hero-hreben-maczopikczu.jpg
+  nahled: /foto/pohori/nizke-tatry-hero-hreben-maczopikczu-nahled.jpg
+  alt: >-
+    Hlavní hřebenovka Nízkých Tater — kamenné moře s chodníkem, vlevo
+    Chopok se stanicí lanovky, vpravo Ďumbier
+  popisMista: hlavní hřeben mezi Chopkom a Ďumbierom, Nízké Tatry
+  autor: maczopikczu
+  licence: cc-by
+  zdrojUrl: https://commons.wikimedia.org/wiki/File:Nizke_Tatry,_hiking_the_main_ridge_-_Chopok_(left)_%5E_%C4%8Eumbier_(right)_-_panoramio.jpg
+  prevzatoDne: '2026-08-09'
+
 # Skloňované tvary názvu do vět na webu. Pomnožné ženské jako Beskydy;
 # pozor, že nominativ je česky „Nízké Tatry" (viz interní poznámky).
 sklonovani:
