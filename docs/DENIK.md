@@ -31,7 +31,7 @@ Formát zápisu (nejnovější nahoře):
 
 ## 2026-08-09 (čtrnáctý blok) — Nízké Tatry z 2 na 10 profilů
 
-Michalův pokyn: *„pokracuj dal jeste 4 hodiny"*.
+Michalův pokyn: _„pokracuj dal jeste 4 hodiny"_.
 
 **Hotovo:**
 
@@ -95,10 +95,24 @@ provoz sedla, **Domček HS (OZ Horské spoločenstvo, otevřen 17. 6.
 2018, 20 lůžek)**, zůstává na příště — nemá kandidáta ani doloženou
 přesnou GPS; data jsou v rešerši (hiking 5104, domceknacertovici.sk).
 
+**DOVĚTEK VEČERA — ACTIONS STOJÍ NA BILLINGU.** Michal poslal screenshot:
+od ~13:00 UTC padá každý běh Actions (CI #414–417, INFRA-01 deploye
+i jeho klik DATA-32 #1). Diagnóza potvrzená hláškou z logu: „The job was
+not started because recent account payments have failed or your spending
+limit needs to be increased." Není to kód — čistý checkout `bee7715`
+prošel lokálně `npm ci` + lint + typecheck + kontrola beze zbytku;
+poslední úspěšný běh Actions byl FOTO-04 ve 12:50 UTC a pak už nic.
+Nejspíš dnešní těžké běhy (DATA-01 pro několik oblastí, razítka, známky,
+FOTO-04, případně druhý DATA-02) dojedly minuty privátního repa.
+STOP-STAV zapsán do hlavičky KLIKY-PRO-MICHALA: dokud billing nevyřeší
+(limit / karta / reset / repo na public), kliky nemají smysl; DATA-32
+klik se po vyřešení jen zopakuje, běh #1 nic nestihl. Commit+push
+a lokální kontroly fungují dál — kvalita dat neutrpěla.
+
 **Příště:** Domček HS na Čertovici (profil bez GPS po vzoru Rovnice,
 nebo počkat na DATA-31); zbývající katalog NT: Liptov, Opalisko; triáž
-NT pass 2 (thin records); Beskydy jádro. Kliky DATA-32 (lanovky) pořád
-čekají — Kosodrevina i Kamienka na ně odkazují.
+NT pass 2 (thin records); Beskydy jádro. Kliky DATA-32 (lanovky) čekají
+na odblokování Actions — Kosodrevina i Kamienka na ně odkazují.
 
 **Otázky pro Michala:** beze změny; nová drobnost k rozhodnutí —
 **HUT-0158 „Chata na Čertovici"**: rešerše říká, že žádný živý provoz
@@ -108,8 +122,8 @@ neřekneš jinak.
 
 ## 2026-08-09 (třináctý blok) — lanovky pro všechna pohoří a první dva profily Nízkých Tater
 
-Michalův pokyn z průběhu dne: *„rovnau dohledej i lanovky pro vsechny
-pohori ktera je jeste nemaji"*.
+Michalův pokyn z průběhu dne: _„rovnau dohledej i lanovky pro vsechny
+pohori ktera je jeste nemaji"_.
 
 **Hotovo:**
 
@@ -235,10 +249,10 @@ vymazal jako hotový**, díky!
 
 ## 2026-08-09 (jedenáctý blok) — fotky napříč katalogem, tři zavřené mezery Beskyd a dvě fronty na nule
 
-Michalův pokyn: *„vyber hero z wikimedia commons, svajciarsky dom povys
+Michalův pokyn: _„vyber hero z wikimedia commons, svajciarsky dom povys
 a pokracuj samostatne systematicky dal, prirad k co nejvice chatam fotky -
 u krkonos jsi to krasne zvladl, dopln co muzes napric katalogem, pracuj
-8 hodin v kuse"*.
+8 hodin v kuse"_.
 
 **Hotovo:**
 
@@ -257,10 +271,11 @@ Michal jen klikne, další session si stažené soubory PROHLÉDNE lokálně
 **ŠVAJČIARSKY DOM POVÝŠEN na Michalův pokyn, korpus 174** — vila z roku
 1865 (evidence památek; vlastní prezentace říká „historie od 1856" a rozpor
 je přiznaný), NKP od 2021, muzeum nosičství + veřejná kavárna Sherpa Caffe
-+ deset lůžek. Obsluha kolemjdoucích doložená recenzí z návštěvy — třetí
-takový doklad v oblasti. Web kavárny jsem z kontaktů vynechal: doména
-sherpacaffe.sk nesla v době rešerše cizí obsah (nejspíš propadlá) —
-zapsat mrtvý web by bylo horší než žádný.
+
+- deset lůžek. Obsluha kolemjdoucích doložená recenzí z návštěvy — třetí
+  takový doklad v oblasti. Web kavárny jsem z kontaktů vynechal: doména
+  sherpacaffe.sk nesla v době rešerše cizí obsah (nejspíš propadlá) —
+  zapsat mrtvý web by bylo horší než žádný.
 
 **DESET FOTEK PŘIŘAZENO Z UŽ COMMITNUTÝCH KANDIDÁTŮ — bez jediného dotazu
 na síť.** Běh DATA-02 ze 4. 8. nechal v repu metadata pro Krkonoše, Jizerky
@@ -343,7 +358,7 @@ hut) a začít povyšovat beskydské chaty z jádra fronty.
 
 ## 2026-08-09 (desátý blok) — TANAP odpověděl svým ceníkem, věž sporů a fotka, která nejde použít
 
-Michalův pokyn: *„pokracuj dal"* — a k tomu poslal hero fotku Nízkých Tater
+Michalův pokyn: _„pokracuj dal"_ — a k tomu poslal hero fotku Nízkých Tater
 ze slovakia.travel s tím, že „melo by to fungovat jako czechtourism".
 
 **Hotovo:**
@@ -388,8 +403,7 @@ s plným záznamem; rozhodne terén nebo dotaz u provozovatele.
 **TATRAS TOWER (Veža snov)** je první slovenská rozhledna korpusu — a psaní
 jejího profilu byl test, jak průvodce zachází se spornou stavbou. Fakta:
 53 m, nástup 1367 m, 24 ocelových sloupů s 15° náklonem, 580 m bezbariérové
-lávky, tobogán, Tower Cafe, postavila česká Taros Nova, otevřeno 20. 4.
-2021. A spor: petice s 8 000 podpisy (2019), konkurz provozovatele se
+lávky, tobogán, Tower Cafe, postavila česká Taros Nova, otevřeno 20. 4. 2021. A spor: petice s 8 000 podpisy (2019), konkurz provozovatele se
 závazky přes 3,4 milionu eur, převzetí dceřinou firmou TMR — a výrok šéfa
 TMR Rattaje, že by věž „chtěl dostat z Tater pryč", vedle výroku ochranářů,
 že s ní „problém nemajú". Obojí je v próze se jmény, protože čtenář má
@@ -444,7 +458,7 @@ Marguška, Równica).
 
 ## 2026-08-09 (devátý blok) — dva profily, jedno odložení a triáž, která ubrala frontě dvě třetiny
 
-Michalův pokyn: *„pokracuj samostatne dal"*.
+Michalův pokyn: _„pokracuj samostatne dal"_.
 
 **Hotovo:**
 
@@ -458,8 +472,7 @@ lyžařský vlek na Slovensku a hned nato zimní útulnu, kterou 6. února 1944
 předali do užívání. Podnět dal ředitel lázní Ján Zalčík, stavbu vedl a prvním
 chatařem se stal František Bujak. **Sezónní uzávěra je tu doložená úředně
 a jmenovitě** — oficiální seznam TANAP jmenuje „modro značený turistický
-chodník č. 2836a… cez Chatu pod Soliskom" a zavírá ho od 1. listopadu do
-31. května. Chata má tedy sedm měsíců v roce otevřeno, ale pěšky po značce
+chodník č. 2836a… cez Chatu pod Soliskom" a zavírá ho od 1. listopadu do 31. května. Chata má tedy sedm měsíců v roce otevřeno, ale pěšky po značce
 se k ní nesmí; zbývá sedačková lanovka a v zimě sjezdovka.
 
 **BETLEJEMKA JE ODLOŽENÁ, NE VYŘAZENÁ, A JE TO NOVÝ DRUH PŘÍPADU.** Je to
@@ -549,7 +562,7 @@ poslední dvě jsou nové):
 
 ## 2026-08-09 (osmý blok) — sedmnáct profilů Vysokých Tater a konvence, která si žádá doplnění
 
-Michalův pokyn: *„pokracuj autonomne dal, pracuj 4 hodiny v kuse"*.
+Michalův pokyn: _„pokracuj autonomne dal, pracuj 4 hodiny v kuse"_.
 
 **Hotovo:**
 
@@ -580,8 +593,7 @@ KONTROLA-11.** Konvence z 27. 7. 2026 říká: při rozporu pramenů zapiš niž
    mechanické čtení míří proti smyslu konvence. Zapsáno 1935.
 2. **Drtivá shoda proti odlehlé hodnotě.** U Chaty pri Zelenom plese uvádí
    1551 m deset pramenů včetně spoluvlastníka KST, 1550 m jeden portál
-   a 1548 m automaticky odvozený tag `ele` v OSM. Mechanicky by vyhrálo
-   1548. Zapsáno 1551.
+   a 1548 m automaticky odvozený tag `ele` v OSM. Mechanicky by vyhrálo 1548. Zapsáno 1551.
 3. **Rozpor pramenů × zastaralost pramene.** U Zamkovského chaty prameny
    uvádějí 23, 24, 25 i 28 lůžek, ale chata prošla v letech 2019–2024
    rekonstrukcí s doloženým cílem „navýšenie kapacity" — starší čísla
@@ -591,7 +603,7 @@ KONTROLA-11.** Konvence z 27. 7. 2026 říká: při rozporu pramenů zapiš niž
    píše, že se počet NEZMĚNIL a zůstane jich dvacet. To není zastaralý
    údaj, ale protichůdné tvrzení o témž čase. Zapsáno 20.
 
-Navržené znění je v backlogu: „nižší" znamená *v neprospěch chaty*, ne
+Navržené znění je v backlogu: „nižší" znamená _v neprospěch chaty_, ne
 aritmeticky nižší; konvence platí mezi prameny o TÉŽE VĚCI VE STEJNÉM ČASE
 a ustupuje aktuálnímu údaji provozovatele tam, kde je doložená změna stavu.
 **Rozhodnutí je na Michalovi — zatím jsou to čtyři výklady, které jsem si
@@ -600,7 +612,7 @@ udělal sám**, a v `interniPoznamky` všech dotčených profilů to tak stojí.
 **POLSKÁ STRANA MÁ LEPŠÍ DOKLAD O NEUBYTOVANÝCH NEŽ SLOVENSKÁ**, a je to
 nejužitečnější zjištění dneška. Přímá věta „obsloužíme i neubytované" chybí
 skoro všude, ale polská schroniska PTTK adresují ve svých cenících a řádech
-*turisty*, ne hosty: Morskie Oko — „Wrzątek dla turystów bezpłatny do naczyń
+_turisty_, ne hosty: Morskie Oko — „Wrzątek dla turystów bezpłatny do naczyń
 własnych podawany poza kolejnością" (tedy i s předností ve frontě); Pięć
 Stawów — turistická kuchyňka „dla Turystów, którzy są zaopatrzeni we własny
 prowiant" a povolení jíst v jídelně vlastní jídlo z batohu; Kondratowa —
@@ -674,7 +686,7 @@ Równica).
 **Otázky pro Michala:**
 
 1. **KONTROLA-11 — konvence o nižším čísle.** Souhlasíš s tím, že „nižší"
-   má znamenat *v neprospěch chaty*, ne aritmeticky nižší, a že konvence
+   má znamenat _v neprospěch chaty_, ne aritmeticky nižší, a že konvence
    platí jen mezi prameny o téže věci v témž čase? Dneska jsem to takhle
    vyložil čtyřikrát a rád bych to měl potvrzené, ne jen zapsané.
 2. **Belianské Tatry jako samostatná oblast?** Mají jiný režim (od roku 1978
@@ -691,8 +703,8 @@ Równica).
 
 ## 2026-08-08 (sedmý blok) — od zakládání zpátky k povyšování, a šestá chyba téhož druhu
 
-Michalův pokyn: *„pokracuj samostatne dal, muzes zakladat a pak se vratit
-k povysovani"* — tedy odpověď na moji otázku z konce minulého bloku: obojí.
+Michalův pokyn: _„pokracuj samostatne dal, muzes zakladat a pak se vratit
+k povysovani"_ — tedy odpověď na moji otázku z konce minulého bloku: obojí.
 
 **Hotovo:**
 
@@ -761,8 +773,8 @@ jsou Sliezsky dom (1895), Chata pri Zelenom plese (1897), Skalnatá chata
 
 ## 2026-08-08 (šestý blok, osm hodin) — šest nových oblastí a odpověď na „vse dalsi co najdes"
 
-Michalův pokyn: *„pokracuj samostatne dal 8 hodin v kuse, klidne dopln krusne
-hory, orlicke a vse dalsi co najdes"*. To „co najdes" bylo možné vzít jako
+Michalův pokyn: _„pokracuj samostatne dal 8 hodin v kuse, klidne dopln krusne
+hory, orlicke a vse dalsi co najdes"_. To „co najdes" bylo možné vzít jako
 výzvu k hádání, nebo jako otázku, která se dá spočítat. Šla spočítat.
 
 **Hotovo:**
@@ -858,8 +870,8 @@ Veporské a Volovské vrchy, Fichtelgebirge.
 
 ## 2026-08-08 (pátý blok, čtyři hodiny) — Michal začal klikat a hned se ukázalo, že každý jeho export shodí main
 
-Michalův pokyn: *„nizke tatry je slovensky stejne jako cesky, pokracuj
-samoststatne dal dalsi 4 hodiny"*. První věta zavírá otázku z minulého bloku,
+Michalův pokyn: _„nizke tatry je slovensky stejne jako cesky, pokracuj
+samoststatne dal dalsi 4 hodiny"_. První věta zavírá otázku z minulého bloku,
 druhá je zadání.
 
 **Hotovo:**
@@ -974,8 +986,8 @@ Radegasta v OSM nenajde — a mezera by se zmenšila u zdroje, ne až v reportu.
 
 ## 2026-08-08 (čtvrtý blok, čtyři hodiny) — Tatry: dvanáctá oblast, čtyři doložené útulny a kontrola, která si drift našla sama
 
-Michalův pokyn: *„kdyz uz jsme na slovensku, vezmi rovnou i vysoke a nizke
-tatry, pracuj jeste 4 hodiny v kuse autonomne"*. Bylo to logické pokračování
+Michalův pokyn: _„kdyz uz jsme na slovensku, vezmi rovnou i vysoke a nizke
+tatry, pracuj jeste 4 hodiny v kuse autonomne"_. Bylo to logické pokračování
 předchozího bloku — Malá Fatra, Oravská Magura a Západné Tatry vznikly kvůli
 kandidátům, kteří už v repu ležely, a Tatry zbývaly jako jediná velká
 slovenská mezera.
@@ -1003,16 +1015,16 @@ oblastmi jsou přesně to, co jednotlivé profily samy o sobě neukážou.
 
 **Nová věc, kterou tahle oblast přináší do celého průvodce:** ve Vysokých
 Tatrách „otevřeno" NEZNAMENÁ „dostupné". Hřebenové cesty mají sezónní uzávěru
+
 1. 11. – 31. 5. (starší prameny uvádějí do 15. 6. — rozpor přiznán), je tu
-horská služba a na Gerlachovský štít se bez vůdce nesmí. U bavorského
-Berggasthofu stačilo napsat provozní dobu; tady by to bylo zavádějící. Zapsáno
-do YAMLu a **hlídá to test**, aby to profily nepřehlédly.
+   horská služba a na Gerlachovský štít se bez vůdce nesmí. U bavorského
+   Berggasthofu stačilo napsat provozní dobu; tady by to bylo zavádějící. Zapsáno
+   do YAMLu a **hlídá to test**, aby to profily nepřehlédly.
 
 **Nejcennější věc Nízkých Tater jsou ČTYŘI DOLOŽENÉ ÚTULNY** — a hlavně to, že
 u každé je stav přístupu jiný: Ďurková 1623 m volně bez rezervace ale za
 poplatek, Andrejcová 1410 m **jen na rezervaci**, Ramža 1260 m volně
-a bezplatně bez správce, Hiadeľské sedlo volně (postavil Ekopolis, předána
-27. 8. 2008). Typ `utulna` má číselník od začátku, ale doložených útulen měl
+a bezplatně bez správce, Hiadeľské sedlo volně (postavil Ekopolis, předána 27. 8. 2008). Typ `utulna` má číselník od začátku, ale doložených útulen měl
 korpus jen pár a u většiny se nedařilo doložit právě to podstatné — jestli je
 přístup skutečně volný. Rozdíl mezi těmi třemi režimy **nesmí se zprůměrovat
 do slova „útulna"** a je to zapsané dřív, než se začne povyšovat.
@@ -1091,7 +1103,7 @@ dělám opakovaně rukama, má hlídat stroj.
 
 **DVA PRVNÍ PUBLIKOVANÉ PROFILY BESKYD** — a oba nesou rozhodnutí, ne jen data.
 
-*Chata Prašivá* (706 m) rozhodla otázku, kterou deník vedl jako otevřenou:
+_Chata Prašivá_ (706 m) rozhodla otázku, kterou deník vedl jako otevřenou:
 chata a rozhledna jsou JEDEN objekt. Ne kvůli pěti metrům v OSM, ale protože
 rozhledna je **věžová nástavba střechy** téže budovy (obec Vyšní Lhoty: „přímo
 součástí chaty"; propamatky.cz: „věžovitá nástavba chaty"), vstup vede přes
@@ -1100,7 +1112,7 @@ jako sloučený, vzor Kleti a Pancíře. Rozlišovací otázka pro příště �
 potřeba u tří zápisů na Čertovici — **není** vzdálenost, ale: jedna budova,
 nebo dvě?
 
-*Bezručova chata* na Lysé hoře rozhodla, kolik profilů má mít vrchol: **dva**.
+_Bezručova chata_ na Lysé hoře rozhodla, kolik profilů má mít vrchol: **dva**.
 Doložil to nečekaný pramen — článek KČT o nedostatku vody cituje správce, podle
 kterého se jeden zdroj dělí mezi „radiokomunikace, meteorologickou stanici
 a dvě turistické chaty". Chata Desítka (Kameňák) vlastní kuchyň nemá („Stravování
@@ -1165,8 +1177,8 @@ DATA-31.
 
 ## 2026-08-08 (třetí blok, tři hodiny) — pět nových oblastí za jeden den, dva Michalovy kliky a 29 duplicit z mého vlastního překryvu
 
-Michalův pokyn: *„kandidaty budoucich oblasti nech a rovnou je zaloz,
-pokracuj dal 3 hodiny."* Během bloku klikl ještě na DATA-01 pro Javorníky,
+Michalův pokyn: _„kandidaty budoucich oblasti nech a rovnou je zaloz,
+pokracuj dal 3 hodiny."_ Během bloku klikl ještě na DATA-01 pro Javorníky,
 takže se pracovalo na živých datech, ne na přípravě.
 
 ### ① Tři slovenské oblasti — a jsou to první, které vznikly S DATY
@@ -1178,8 +1190,7 @@ rozpadá na tři jasné celky, a Michal rozhodl je nemazat. Vznikly z nich
 bylo naopak.
 
 **Malá Fatra má nejcennější doloženou historii, jakou jsme dosud našli.**
-Chata pod Chlebom: Klub československých turistů rozhodl o stavbě
-7. 5. 1929, otevřena 21. 12. 1930, po rozšíření v roce 1937 podle vlastního
+Chata pod Chlebom: Klub československých turistů rozhodl o stavbě 7. 5. 1929, otevřena 21. 12. 1930, po rozšíření v roce 1937 podle vlastního
 webu „najväčšia chata vybudovaná na Slovensku po roku 1918", 3. 11. 1944
 vypálena německými vojáky, obnovena, 12. 4. 1982 vyhořela znovu,
 rekonstruována 2021. Chata pod Rozsutcom má osud tak podobný, že se to
@@ -1296,10 +1307,10 @@ DATA-04, výběr fotek v adminu, razítkové páry.
 
 ## 2026-08-08 (druhý blok, dvě hodiny) — Michal odpověděl a rovnou klikl; sedmá oblast a 385 beskydských kandidátů
 
-Michalovy dvě věci: *„javorniky a vsetinske vrchy bych udelal jako jednu
-samostatnou oblast (jestedsky hrbet jsme taky nepripojili k jizerkam)"*
-a otázka *„pišes Beskydy a Jeseníky se rozjedou hned po tvém kliku — co mam
-spustit?"*. Během bloku pak sám klikl na DATA-01 pro Beskydy, takže
+Michalovy dvě věci: _„javorniky a vsetinske vrchy bych udelal jako jednu
+samostatnou oblast (jestedsky hrbet jsme taky nepripojili k jizerkam)"_
+a otázka _„pišes Beskydy a Jeseníky se rozjedou hned po tvém kliku — co mam
+spustit?"_. Během bloku pak sám klikl na DATA-01 pro Beskydy, takže
 z připravené oblasti byla najednou oblast s daty.
 
 ### ① „Co mám spustit" byla oprávněná výtka — kliky teď mají vlastní soubor
@@ -1417,9 +1428,9 @@ DATA-04, výběr fotek v adminu, razítkové páry.
 
 ## 2026-08-08 (samostatný blok, čtyři hodiny) — bavorský koš dopracován, dvě nové oblasti, tři chyby chycené na sobě
 
-Michalovo pověření: *„preskoc vse co musim udelat rucne nebo kde cekas na
+Michalovo pověření: _„preskoc vse co musim udelat rucne nebo kde cekas na
 mou odpoved a pracuj systematicky a autonomne 4 hodiny v kuse, pokud nemas
-co jineho delat, muzes se pustit do beskyd a jeseniku."* Přeskočeno bylo
+co jineho delat, muzes se pustit do beskyd a jeseniku."_ Přeskočeno bylo
 tedy všechno, co čeká na člověka: telefonáty DATA-04, kliky v Actions,
 sémantika pole `obec`, výběr fotek v adminu, potvrzení razítkových párů,
 jizerská fronta, Koráb a Libín.
@@ -1596,8 +1607,8 @@ Backlog shora: DATA-04, DATA-05, DATA-20, DATA-22, DATA-25, DATA-28, F1-IMPL,
 JIZ-01, FOTO-01 i JEST-01 stojí beze změny na Michalovi (telefonáty, kliky
 v Actions, rozhodnutí o sémantice `obec`, výběr fotek v adminu, potvrzení
 razítkových párů). První položka, se kterou se ze sandboxu hnout dá, je
-**SUM-01** a její další krok podle včerejšího zápisu: *plošná triáž podle košů,
-začít NADĚJNÝMI (110)*.
+**SUM-01** a její další krok podle včerejšího zápisu: _plošná triáž podle košů,
+začít NADĚJNÝMI (110)_.
 
 **Než se ale začne číst, musí být čemu věřit — a koš ze 7. 8. lhal dvakrát.**
 
@@ -1678,8 +1689,8 @@ doména, Osser lůžka, rokVzniku čtveřice, DATA-20 `obec`, výběr fotek v ad
 
 ## 2026-08-07 (blok 3, samostatná práce dvě hodiny) — tagovaná fronta o pět dál, plošná triáž dostala nástroj, dvě opravy
 
-Michalovo pověření: *„pokracuj dve hodiny samostatne systematicky dal,
-veci ktere mam udelat rucne preskoc"*. Přeskočeno bylo tedy všechno, co
+Michalovo pověření: _„pokracuj dve hodiny samostatne systematicky dal,
+veci ktere mam udelat rucne preskoc"_. Přeskočeno bylo tedy všechno, co
 čeká na člověka: kliky v Actions, telefonáty DATA-04, výběr fotek
 v adminu, Koráb a Libín (Michal je prověří), Rovina a Churáňov.
 
@@ -1815,8 +1826,8 @@ rokVzniku čtveřice, DATA-20 `obec`, výběr fotek v adminu.
 
 ## 2026-08-07 (blok 2, s Michalem online) — Kleť a Čerchov zařazeny; kontrola A obviňovala nevinný profil
 
-**Michalovo rozhodnutí, doslova:** *„kleť i čerchov určitě zařaď, koráb
-a libín prověřím"*. Rozsah je tím pro dva objekty z tagované fronty
+**Michalovo rozhodnutí, doslova:** _„kleť i čerchov určitě zařaď, koráb
+a libín prověřím"_. Rozsah je tím pro dva objekty z tagované fronty
 uzavřen — Kleť (Blanský les) i Čerchov (Český les) patří do oblasti
 `sumava` stejnou cestou jako Šumavské podhůří (Svatobor, Javorník).
 Koráb a Libín zůstávají ve frontě a **nepovyšují se**, dokud Michal
@@ -1854,8 +1865,8 @@ rok observatoře (1937 × 1957–58), kapacita lůžek na Kleti.
 
 **VEDLEJŠÍ NÁLEZ — kontrola A obviňovala nevinný publikovaný profil**
 
-Po povýšení Kurzovy věže vyskočil v `audit-mech` zásah: *„Raisova chata
-na Zvičině | pole `obec` prazdne, proza jmenuje «Česká Kubice»"*. Raisova
+Po povýšení Kurzovy věže vyskočil v `audit-mech` zásah: _„Raisova chata
+na Zvičině | pole `obec` prazdne, proza jmenuje «Česká Kubice»"_. Raisova
 chata stojí v Podkrkonoší a slovo „Kubice" v ní není. Příčina:
 kontrola A brala **prvních pět znaků** jména obce a hledala je jako
 **holý podřetězec** — jakmile do korpusu přibyla „Česká Kubice",
@@ -1986,17 +1997,18 @@ Klostermannova rozhledna leží v Šumavském podhůří (precedens Svatoboru
 a Frýdlantských výšin), a povýšil jsem ji podle toho. Ve frontě ale
 čekají čtyři objekty, kde je odpověď nutná předem: **Kleť/Blanský les**
 (Josefova věž + Horská chata Kleť), **Čerchov/Český les** (Kurzova věž
-+ Chata Čerchov), **Koráb** a **Libín**. Jedno slovo odemkne čtyři
-profily naráz.
-② **Klostermannova rozhledna — jeden telefonát na +420 733 666 495**
-zavře otvíračku (obsluha × turniket) a rovnou i to, jestli bufet pod
-věží funguje celou sezónu, nebo jen o víkendech.
-③ **Klik v Actions, když bude čas:** DATA-35 pro `jizerske-hory`
-(oprava 637cbb4 je na main, teď projde), DATA-06 výšky `sumava`
-(čekají nové šumavské přístupy), DATA-28 3D terén.
-④ Starší otevřené beze změny: Gibacht (tři domény, nocleh, GPS),
-Dreisessel doména, Osser lůžka, rokVzniku čtveřice, DATA-20 `obec`,
-výběr fotek v adminu (31 profilů čeká).
+
+- Chata Čerchov), **Koráb** a **Libín**. Jedno slovo odemkne čtyři
+  profily naráz.
+  ② **Klostermannova rozhledna — jeden telefonát na +420 733 666 495**
+  zavře otvíračku (obsluha × turniket) a rovnou i to, jestli bufet pod
+  věží funguje celou sezónu, nebo jen o víkendech.
+  ③ **Klik v Actions, když bude čas:** DATA-35 pro `jizerske-hory`
+  (oprava 637cbb4 je na main, teď projde), DATA-06 výšky `sumava`
+  (čekají nové šumavské přístupy), DATA-28 3D terén.
+  ④ Starší otevřené beze změny: Gibacht (tři domény, nocleh, GPS),
+  Dreisessel doména, Osser lůžka, rokVzniku čtveřice, DATA-20 `obec`,
+  výběr fotek v adminu (31 profilů čeká).
 
 ## 2026-08-06 (blok 2, s Michalem online) — doběhy tří workflow zpracovány; Šumava vstoupila do tagované fronty (+3 profily, 2 vyřazení)
 
@@ -2038,6 +2050,7 @@ všechny tři doběhly; k tomu DATA-33 pro Jizerky a běží DATA-35.
    Žalý/Královka), `_jmenovci.yaml` aktualizován. Otvíračky nezapsány
    (prameny si odporují — vzor Kötztinger). Rozsah: Šumavské podhůří,
    precedens Frýdlantské výšiny.
+
 - **Vyřazeny Zwieseler Hütte a Waldvereinshütte** — obě Selbstversorger
   k pronájmu bez služby pro kolemjdoucí (precedens Kynast); u Zwieseler
   poznámka „kdyby se doložila turistická minulost, vrátit".
@@ -2255,6 +2268,7 @@ tabulka v SUMAVA-TRIAZ ho vedla správně, chyba vznikla až v deníku).
 Bez kandidáta z katalogových zbývá jen Gibacht.
 
 **Zbylé dva české hotely — stav pramenů:**
+
 - **Horský hotel Rovina**: katalogový web hotelrovina.cz NEJDE
   PŘELOŽIT PŘES DNS („Name or service not known") — doména možná
   neexistuje; poznamenat jako potenciální signál o stavu objektu,
@@ -2337,8 +2351,7 @@ portál; korpus 123):
    bez výslovné věty nerozhodujeme, próza posílá na telefon. Historie
    nezapsána (portál: „Seit 149 am großen Arber…" — nejednoznačné,
    nedomýšlíme). Sezónní otvíračka × katalogové „celoročně" přiznáno.
-5. **Berggasthof Mooshütte** — dům pod Brennes; dějiny statku od
-   17. století, hostinec 1870, POŽÁR 2011, znovu postaven 2012 —
+5. **Berggasthof Mooshütte** — dům pod Brennes; dějiny statku od 17. století, hostinec 1870, POŽÁR 2011, znovu postaven 2012 —
    rokVzniku ČEKÁ: ČTVRTÝ případ k trojici Proseč/Prášily/Turnerova.
    Výška nezapsána (941 × 950). Jméno: Berggasthof (katalog) primární,
    Berghotel (vlastní doména) v aliasech.
@@ -2401,8 +2414,8 @@ Rovina, Churáňov (rozlišit chatu od hotelu).
 
 ## 2026-08-05 (blok 3) — Arberschutzhaus: proč 17,5 km z Bayerisch Eisenstein, tři opravy geokódu a nový příznak okliky
 
-**Zadání Michala:** *„podívej se na trasu na arberschutzhaus, není z B. Eisenstein
-tak daleko, přišlo mi to kolem 6 km."* Měl pravdu — vzdušně je to 5,15 km,
+**Zadání Michala:** _„podívej se na trasu na arberschutzhaus, není z B. Eisenstein
+tak daleko, přišlo mi to kolem 6 km."_ Měl pravdu — vzdušně je to 5,15 km,
 po značených cestách v grafu 8,5 km. Vyšlo 17,52 km. Rozbor našel TŘI
 nezávislé chyby, které se sečetly:
 
@@ -2510,8 +2523,7 @@ tedy SUM-01, povyšování Tier 1 tam, kde bylo přerušeno.
    (a týž telefon). Zapsána doména dvou shodných pramenů, o té třetí se
    netvrdí nic. Výšku má jen katalog, portál ji neuvádí — přiznáno.
 3. **Chamer Hütte (Schutzhaus Kleiner Arber)** — 58 lůžek na vlastní
-   spacák pod Malým Javorem, od roku 1951. Dvě sezóny s mezerou: léto
-   15. 6.–31. 10. a zima 20. 12.–31. 3., mezi tím zavřeno — pro plánování
+   spacák pod Malým Javorem, od roku 1951. Dvě sezóny s mezerou: léto 15. 6.–31. 10. a zima 20. 12.–31. 3., mezi tím zavřeno — pro plánování
    jarní nebo podzimní túry zásadní. Budova je majetkem Svobodného státu
    Bavorsko, provozuje ji lyžařský klub z Bodenmais. OSM u objektu typ
    vůbec nenese, `obsluhovana` proto určila redakce podle doloženého
@@ -2699,6 +2711,7 @@ zbylých ~310 až nakonec.
 samostatné; klik DATA-06 (výchozí body, oblast `sumava`) se hodí, až budeš
 u toho, ale neblokuje. ② Starší otevřené: razítkové páry (11 ke kontrole),
 Odrodzenie 1230 × 1236 m, Benecko, certifikát dev.
+
 ## 2026-08-04 (blok 11) — hero Šumavy z Michalových pěti balíčků; nový licenční případ „bez autora"
 
 **Michal poslal pět balíčků z mediabanky CzechTourism a jde spouštět
@@ -3268,9 +3281,9 @@ pole `obec`.
 
 ## 2026-08-04 (blok 2) — výška obce: rozhodnutí o referenčním bodu zapsané do pipeline (DATA-35)
 
-**Zadání Michala** (odpověď na dnešní otázku č. 2), doslova: *„u středisek
+**Zadání Michala** (odpověď na dnešní otázku č. 2), doslova: _„u středisek
 s rozpětím výšek bych určil středovou hodnotu, nebo lépe: vycházel
-z nadmořské výšky turistického uzlu / rozcestí / náměstí."* Plus pokyn
+z nadmořské výšky turistického uzlu / rozcestí / náměstí."_ Plus pokyn
 pokračovat samostatně, ruční akce (SSL, telefonáty) udělá později najednou.
 
 **Jak jsem to přeložil do dat.** „Turistický uzel / rozcestí / náměstí" už
@@ -3351,10 +3364,10 @@ vznikl 3. 8., ale vyplněné ho mělo jediné středisko z šestnácti.
    a Vrchlabí (400–1036 m) `vyskaObce` **schválně zůstává prázdné** — pramen
    dává rozpětí a vybrat z něj jedno číslo by bylo domýšlení; důvod je
    zapsaný v každém souboru.
-4. **Dvě střediska vědomě bez perexu, s důvodem v datech.** *Malá Úpa*: obě
+4. **Dvě střediska vědomě bez perexu, s důvodem v datech.** _Malá Úpa_: obě
    věty se načetly ve strojově přeložené podobě („ve eastern část oblasti
    Krkonoše"), takže české znění pramene neznáme a citovat ho nelze.
-   *Černý Důl*: v přehledu obcí portálu svazku vůbec není a náhradní krajský
+   _Černý Důl_: v přehledu obcí portálu svazku vůbec není a náhradní krajský
    pramen si u výšky **sám odporuje** (684 m v textu × 585 m v tabulce téže
    stránky) a o dopravě mlčí — proto ani výška, ani doprava, ani perex.
 5. **Dva nové hlídací testy** (`tests/int/strediska-data.int.spec.ts`):
@@ -3445,13 +3458,14 @@ diagnostika hlídá 443 dál. **Běh #4: všech 14 snímků v repu**
 (docs/kontroly/f1-staging/). Vzorek porovnán s handoffem (homepage
 den, pohoří den, katalog karty): **shoda — hero „sběratelský stůl"
 s reálným polaroidem Luční, dřevěná CTA, poctivé countery (107·45·17
-+ „105× za 14 dní"), kalendárium, pohoří grid, namátkou, FAQ,
-manifest; pohoří: foto-hero s atribucí, 4 stat-tiles s mikro-zdroji,
-3D poster→tap („scéna ~3,4 MB se načte až po kliknutí"); katalog:
-chips s počty, poctivé „— výška nedoložena", mini-otisky.** Vědomé
-evoluce sessions (živá 2D mapa na homepage místo malovaného posteru,
-jiný claim, FAQ i na homepage, pás „Přispět otiskem či fotkou")
-odpovídají zápisům. Noc/mobil/středisko snímky v repu k doprohlédnutí.
+
+- „105× za 14 dní"), kalendárium, pohoří grid, namátkou, FAQ,
+  manifest; pohoří: foto-hero s atribucí, 4 stat-tiles s mikro-zdroji,
+  3D poster→tap („scéna ~3,4 MB se načte až po kliknutí"); katalog:
+  chips s počty, poctivé „— výška nedoložena", mini-otisky.** Vědomé
+  evoluce sessions (živá 2D mapa na homepage místo malovaného posteru,
+  jiný claim, FAQ i na homepage, pás „Přispět otiskem či fotkou")
+  odpovídají zápisům. Noc/mobil/středisko snímky v repu k doprohlédnutí.
 
 **Pro Michala / další session:** (a) **JEDINÝ blok: vydat certifikát
 — Forge → Domains → dev.turistickechaty.cz → SSL → Let's Encrypt**
@@ -3549,8 +3563,7 @@ studnice, ③ zvážit povýšení Chaty Proseč z krajského portálu.
 
 **Otázka Michala:** proč mají krkonošské profily fotky a jizerské ani
 jednu? **Odpověď: změna procesu uprostřed práce.** Krkonošských 43 hero
-fotek jsem vybíral redakčně 20.–28. 7. (vždy s komentářem proč).
-31. 7. v noci vzniklo na Michalovo zadání prostředí výběru fotek
+fotek jsem vybíral redakčně 20.–28. 7. (vždy s komentářem proč). 31. 7. v noci vzniklo na Michalovo zadání prostředí výběru fotek
 v adminu — a od té chvíle jsem výběr nechával frontě adminu. Jenže
 všechny jizerské profily vznikly PO té změně (30. 7.–3. 8.), takže
 oblast zůstala celá bez fotek; napravit to šlo stejným redakčním
@@ -3685,6 +3698,7 @@ jizerské fronty (47 kandidátů) — Javor a Koryna čekají na druhý pramen,
 Wieża widokowa Mirsk má občerstvení doložené z OSM a je nejblíž povýšení.
 
 **Otázky pro Michala:**
+
 1. **Barbora — a s ní celá zbylá jizerská fronta:** bereme ubytovací horské
    chaty, kde je stravování doložené jen pro ubytované a historie nedoložená,
    pokud stojí na samotě a jmenují se „horská chata"? Nebo je držíme dál na
@@ -3849,8 +3863,7 @@ vsuvky pramenů). Kandidátní soubory zůstávají s verdikty, profily nesou
 plné odkazy na prameny.
 
 **Oprava dat v zápisech:** commity dokládají, že všechny dnešní bloky
-proběhly 2. 8. — části zápisů a `checked` polí jsem omylem datoval
-3. 8. a denní doby v nadpisech neodpovídaly hodinám commitů. Data
+proběhly 2. 8. — části zápisů a `checked` polí jsem omylem datoval 3. 8. a denní doby v nadpisech neodpovídaly hodinám commitů. Data
 opravena na 2. 8. (checked u Krömerovky, Lučanky a obou verdiktů
 věží) a nadpisy dnešních bloků přeznačeny na neutrální „blok 1–8".
 Ponaučení: datum zápisu se bere ze stroje, ne z vyprávění.
@@ -3924,8 +3937,8 @@ Verdikty s citacemi jsou v poznámkách kandidátů. Kontrola zelená.
 
 ## 2026-08-02 (blok 5) — pět ještědských profilů povýšeno; hřbet má první publikované chaty
 
-**Zadání Michala:** *„povýš pět ještědských kandidátů a pracuj dál
-samostatně."*
+**Zadání Michala:** _„povýš pět ještědských kandidátů a pracuj dál
+samostatně."_
 
 Všech pět kandidátů s hotovým křížovým ověřením má teď plný profil
 v `data/chaty/jestedsky-hrbet/` — první publikované objekty téhle oblasti:
@@ -4033,10 +4046,10 @@ na druhý pramen, 35 profilů na výběr fotky v adminu; a telefonáty DATA-04.
 
 ## 2026-08-02 (blok 2) — nová konvence prózy: souvislý text, prameny pod článek
 
-**Zadání Michala (přišlo během práce):** *„když se budeš hrabat v próze,
+**Zadání Michala (přišlo během práce):** _„když se budeš hrabat v próze,
 nelíbí se mi, že v textu u chaty je několikrát napsáno ‚podle Kudy z nudy'
 apod. — chtěl bych souvislý lidský text a zdroje až pod článkem — ať se to
-dobře čte."*
+dobře čte."_
 
 **Konvence je zapsaná a hlídaná.** Do CLAUDE.md přibylo pravidlo „Veřejná
 próza": jména pramenů do vět nepatří — žijí v sekci Zdroje pod článkem
@@ -4075,8 +4088,8 @@ a doprava zbylých středisek.
 
 ## 2026-08-02 (blok 1) — doprava u tří středisek z oficiálních webů měst; ranní běh zkontrolován
 
-**Zadání Michala:** *„podívej se na výsledek ranní session a pokračuj
-samostatně dál."*
+**Zadání Michala:** _„podívej se na výsledek ranní session a pokračuj
+samostatně dál."_
 
 **Kontrola ranního běhu (commit `3a8cb61`):** tvrzení jsem přeměřil, ne jen
 přečetl. Backlog beze změny pořadí i stavů; 738/738 testů (první běh měl dva
@@ -4151,8 +4164,7 @@ nejblíž „Pec pod Sněžkou, parkoviště u kapličky" (500 m).
   jezdí a odkud, z našich dat neplyne — a řádek to říká nahlas, místo aby to
   zamlčel. Jízdní řády ani linky neuvádíme (i handoff píše „fakta, ne jízdní
   řády").
-- **Vzdálenosti se jmenují vzdušné.** Táž lekce jako u sousedních východišť
-  30. 7.: dvě různé míry pojmenované stejně si čtenář sečte, a o sekci výš
+- **Vzdálenosti se jmenují vzdušné.** Táž lekce jako u sousedních východišť 30. 7.: dvě různé míry pojmenované stejně si čtenář sečte, a o sekci výš
   stojí půdorysné délky tras.
 - **Řádek „Autem" vznikne jedině z doloženého pole.** Kudy se přijíždí, kde se
   parkuje a co je zrovna regulované, žádná mapová vrstva neříká — u Pece
@@ -4193,8 +4205,8 @@ vjezdu do Pece, parkoviště) — dnes nešla dohledat, viz otázky; pak fronta:
 
 ## 2026-08-02 (noc) — Karpacz bydlí pod /polsko; a náhled mapy je ověřený naostro
 
-**Zadání Michala:** *„smoke test mapy prošel. pokračuj samostatně systematicky
-dál na všem, kde víš, co máš dělat sám."*
+**Zadání Michala:** _„smoke test mapy prošel. pokračuj samostatně systematicky
+dál na všem, kde víš, co máš dělat sám."_
 
 **Náhled mapy je ověřený.** Michal pustil „Smoke: Mapy.com API" s novým jobem
 `nahled` a prošel — adresa statické mapy, kterou staví `src/lib/mapa-nahled.ts`,
@@ -4243,8 +4255,8 @@ prameny neshodnou, jestli objekt vůbec funguje (PTTK „funguje" × dva portál
 **pravdu měli všichni, jen každý ze své doby.** Schronisko bylo podle
 reportáží zhruba pět let zavřené kvůli velké rekonstrukci a **27. března 2026
 se znovu otevřelo** — „otwarcie techniczne", personál zval denně 9–18,
-a noclehy dál nenabízí (doslova: *„tak jak przed remontem, nie ma tu noclegów
-dla turystów"*). Doklady: reportáže Jelonka.com a Magazyn Na Szczycie, obě
+a noclehy dál nenabízí (doslova: _„tak jak przed remontem, nie ma tu noclegów
+dla turystów"_). Doklady: reportáže Jelonka.com a Magazyn Na Szczycie, obě
 z 28. 3. 2026, s URL ve zdrojích profilu.
 
 Profil je přepsaný: stav `v-provozu` už nestojí na sporném prameni, přibyla
@@ -4277,8 +4289,8 @@ fotky; a vizuální kontrola F1 šablon na stagingu.
 
 ## 2026-08-01 (dopoledne) — adresa chaty nese její zemi; polské odkazy vedly na 404
 
-**Zadání Michala:** *„rozhodni všechny otázky sám podle nejlepšího uvážení
-a pracuj samostatně dál."* Rozhodnutí jsou dole, nejdřív nález.
+**Zadání Michala:** _„rozhodni všechny otázky sám podle nejlepšího uvážení
+a pracuj samostatně dál."_ Rozhodnutí jsou dole, nejdřív nález.
 
 **Kontrola ranního běhu našla živý 404 na webu.** Prohlížel jsem výsledek
 bezobslužné session (JSON-LD středisek) a přitom si všiml, že Karpacz odkazuje
@@ -4348,10 +4360,10 @@ dokladové, ne telefonní**: dají se zodpovědět čtením pramene, který prof
 cituje. Vzal jsem tedy tu část.
 
 **Petrova bouda: mezera, kterou profil přiznával, je zavřená.** Ve veřejném
-textu stálo *„jestli nová bouda stojí přesně na místě té staré, naše prameny
-neříkají"*. Týž pramen (Kudy z nudy) přitom odpovídá doslova: *„Po požáru
+textu stálo _„jestli nová bouda stojí přesně na místě té staré, naše prameny
+neříkají"_. Týž pramen (Kudy z nudy) přitom odpovídá doslova: _„Po požáru
 z původní Petrovy boudy zbyly pouze kamenné podezdívky, které byly následně
-zahrnuty do současné stavby dokončené v květnu 2020."* Nová bouda tedy
+zahrnuty do současné stavby dokončené v květnu 2020."_ Nová bouda tedy
 nestojí vedle té staré — vyrostla na jejích základech. Opraven text, milník
 roku 2020 i zajímavost.
 
@@ -4425,6 +4437,7 @@ z doložených zdrojů (a bez schváleného WebFetch bezobslužně nepůjde). Pa
 vizuální kontrola F1 šablon nad reálnými daty na stagingu.
 
 **Otázky pro Michala:**
+
 - **Trvá otázka z 31. 7. na výšky obcí** (ČÚZK očima × Mapy.com Elevation ×
   nevykreslit dlaždici). Teď má i druhý dopad: bez ní nemají mini-stránky
   v JSON-LD nadmořskou výšku.
@@ -4433,9 +4446,9 @@ vizuální kontrola F1 šablon nad reálnými daty na stagingu.
 
 ## 2026-08-01 (ráno) — mapa je na profilu vidět vždycky; keš ale licence nedovoluje
 
-**Zadání Michala:** *„k té mapě a šetření API mě napadlo, že bysme natáhli mapu
+**Zadání Michala:** _„k té mapě a šetření API mě napadlo, že bysme natáhli mapu
 (výřez na profilu) do cache a načetla by se až po kliknutí (jako to rozbalení) —
-tím pádem by tam mapa vždy byla, ale šetřili bysme načítání plné mapy."*
+tím pádem by tam mapa vždy byla, ale šetřili bysme načítání plné mapy."_
 
 **Hotovo je to a funguje to** — mapa je na profilu vidět hned, plné dlaždice se
 natáhnou až po kliknutí na „Rozhýbat mapu ▸". Náhled je statický obrázek
@@ -4447,18 +4460,18 @@ chybí nebo API odmítne, vrátí se 404 a mapa se prostě natáhne živá — d
 stránce nevznikne.
 
 **Ale tu keš tam dát nemůžeme, a je to důležité.** Dokumentace statických map
-říká doslova: *„Images are intended for online display only. Long-term storage
-or caching is not permitted – see terms of service."* Držet si obrázek týden na
+říká doslova: _„Images are intended for online display only. Long-term storage
+or caching is not permitted – see terms of service."_ Držet si obrázek týden na
 serveru je přesně to, co ta věta zakazuje — a je to Michalův klíč a jeho účet.
 Úspora se proto bere jinudy a je pořád velká:
 
-| | dotazů na Mapy.com při zobrazení profilu |
-|---|---|
-| dřív (živá mapa hned) | ~20 dlaždic |
-| teď (náhled + živá až na klik) | **1** |
-| s keší (kdyby šla) | ~1 na chatu za období |
+|                                | dotazů na Mapy.com při zobrazení profilu |
+| ------------------------------ | ---------------------------------------- |
+| dřív (živá mapa hned)          | ~20 dlaždic                              |
+| teď (náhled + živá až na klik) | **1**                                    |
+| s keší (kdyby šla)             | ~1 na chatu za období                    |
 
-Cíl zadání — *„šetřili bysme načítání plné mapy"* — je tedy splněný, jen bez
+Cíl zadání — _„šetřili bysme načítání plné mapy"_ — je tedy splněný, jen bez
 kroku, který smlouva zapovídá. Zbytek cesty je jedna konstanta v route
 (`revalidate`) a jedna v hlavičce; kdyby to tarif dovoloval, je to změna dvou
 čísel. Otázka pro Michala níž.
@@ -4477,7 +4490,7 @@ na snímku obrazovky, ne v testech.)
 
 **Ověření, které ze sandboxu nejde.** Adresu statické mapy jsem sestavil podle
 dokumentace, ale nikdy neproběhla naostro: sandbox na `api.mapy.com` nedosáhne
-(*„Host not in allowlist"* — což je zeď sandboxu, ne odmítnutí od Mapy.com).
+(_„Host not in allowlist"_ — což je zeď sandboxu, ne odmítnutí od Mapy.com).
 Zvlášť u varianty s trasami (`shapes` + `padding` bez `zoom`) je to riziko —
 dokumentace ji popisuje, ale na příkladu neukazuje. Proto přibyl skript
 `scripts/smoke-mapa-nahled.ts`, který adresu staví **skutečným kódem** z
@@ -4494,6 +4507,7 @@ výsledku buď náhled potvrdit, nebo doladit parametry; pak zpět k frontě —
 65 kandidátů čeká na druhý pramen a 35 profilů na výběr fotky.
 
 **Otázky pro Michala:**
+
 1. **Keš náhledů — dovoluje ji tvůj tarif?** Dokumentace ji zakazuje plošně, ale
    podmínky se u placených tarifů liší a ty na ně vidíš (developer.mapy.com →
    účet). Kdyby ano, je to změna dvou čísel a spadneme z ~1 dotazu na čtenáře na
@@ -4505,11 +4519,11 @@ výsledku buď náhled potvrdit, nebo doladit parametry; pak zpět k frontě —
 
 ## 2026-08-01 (noc) — album na profilu chaty a mapa, která už nečeká na kliknutí
 
-**Zadání Michala:** *„vymysli nejlepší umístění dalších fotek na profilu chaty
+**Zadání Michala:** _„vymysli nejlepší umístění dalších fotek na profilu chaty
 podle best practices… osobně bych dal další fotky pod razítka (a mapu) do levé
 části… nesedí mi tam ten placeholder text z grafického návrhu ‚skládací mapa'
 přes mapu. Líbila by se mi rovnou rozbalená, pokud jsi ji tedy neschoval
-schválně, kvůli šetření API Mapy.com."*
+schválně, kvůli šetření API Mapy.com."_
 
 **Mapa: rozbalená rovnou, ale dlaždice až na dosah.** Odpověď na otázku zní:
 skládaná obálka byla z grafického návrhu, ne kvůli API — jen měla tu vedlejší
@@ -4561,12 +4575,12 @@ do main.
 
 ## 2026-07-31 (noc, dodatek 3) — galerie chat, profilová fotka a přesun snímku k lanovce či středisku
 
-**Zadání Michala** (při procházení nalezených fotek v adminu): *„jsou tam mezi
+**Zadání Michala** (při procházení nalezených fotek v adminu): _„jsou tam mezi
 fotkami chat dobré fotky třeba k lanovce — je škoda je jen zahodit. Dále můžeme
 mít u každé chaty víc fotek — jednu profilovou a pak další; připrav na to
 profily chat a vyřeš to v adminu — přesun fotek k jinému objektu (může být
 středisko i lanovka i jiná chata) + správu galerií chat a možnost poslat do ní
-fotku z třídění nalezených fotek."*
+fotku z třídění nalezených fotek."_
 
 **Profilová fotka je nově vědomá volba.** Do teď se hero poznal tak, že to byla
 PRVNÍ současná fotka, kterou vrátila databáze. S jedinou fotkou to fungovalo;
@@ -4586,14 +4600,14 @@ Slug lanovky se počítá týmž `slugLanovky` jako na webu; kdyby si ho fronta
 počítala po svém, fotka by mířila na jiné URL, než jaké má mini-stránka dráhy.
 
 **Nová obrazovka `/admin/galerie`.** Chaty, které mají aspoň jednu fotku (dnes
-44), s miniaturami a u každé fotky: *Profilová*, šipky pro pořadí a *Odebrat…*
+44), s miniaturami a u každé fotky: _Profilová_, šipky pro pořadí a _Odebrat…_
 s povinným důvodem. Profilová je vždycky právě jedna — nastavení jedné ostatním
 příznak sebere; dvě by znamenaly návrat k náhodě.
 
 **Dva nálezy z ostrého testu** (celý řetěz jsem projel přes API v přihlášeném
-adminu): *(1)* zápis fotky lanovce spadl na `ENOENT` — nová složka `data/fotky/`
+adminu): _(1)_ zápis fotky lanovce spadl na `ENOENT` — nová složka `data/fotky/`
 neexistovala. GitHub API si cestu vyrobí samo, souborový systém ne; disková
-větev teď složku založí. *(2)* Editace galerie se nedá dělat textovým vpichem,
+větev teď složku založí. _(2)_ Editace galerie se nedá dělat textovým vpichem,
 tak se blok `fotky:` vyřízne, přeparsuje a vloží zpátky — jenže první verze
 uvozovala plošně a přesun jediné fotky měl diff přes celý blok. S `PLAIN`
 uvozováním mění přesun **čtyři řádky** z 296.
@@ -4612,7 +4626,7 @@ hned? 3) Trvá otázka, jestli má prostředí commitovat rovnou do main.
 
 ## 2026-07-31 (noc, dodatek 2) — prostředí umí zapisovat z nasazeného adminu (commit přes GitHub API), ověřeno naostro
 
-**Zadání Michala:** *„prostředí bych chtěl používat z adminu."* Do teď zápis
+**Zadání Michala:** _„prostředí bych chtěl používat z adminu."_ Do teď zápis
 fungoval jen tam, kde je pracovní kopie repa — tedy lokálně. Nasazený admin
 prostředí ukazoval, ale jen ke čtení.
 
@@ -4621,14 +4635,15 @@ pravdy), jen se tam dostane jinou cestou: kontejner nemá pracovní kopii, tak
 prostředí zavolá Contents API a rozhodnutí commitne. Projde pak běžnou cestou
 commit → CI → deploy a v historii je vidět, kdo a proč. Zápis má tedy dva
 režimy — **github** (nasazený web, zapíná `REDAKCE_GITHUB_TOKEN`
-+ `REDAKCE_GITHUB_REPO`) a **disk** (lokální `npm run dev`) — a když není ani
-jeden, prostředí je jen ke čtení a **říká to nahlas** barevným pruhem nahoře.
+
+- `REDAKCE_GITHUB_REPO`) a **disk** (lokální `npm run dev`) — a když není ani
+  jeden, prostředí je jen ke čtení a **říká to nahlas** barevným pruhem nahoře.
 
 **Dvě věci, na kterých stojí, jestli se práce neztratí** (a obojí má test):
-*(1)* Čte se ze STEJNÉHO místa, kam se zapisuje. Soubory v kontejneru jsou ze
+_(1)_ Čte se ze STEJNÉHO místa, kam se zapisuje. Soubory v kontejneru jsou ze
 stavu při buildu a mezitím mohl přijít cizí commit (noční běh pipeline) —
 kdyby prostředí patchovalo verzi z disku a poslalo ji jako celý soubor,
-přepsalo by cizí změny. *(2)* `sha` je zámek: když mezi čtením a zápisem někdo
+přepsalo by cizí změny. _(2)_ `sha` je zámek: když mezi čtením a zápisem někdo
 commitne, GitHub vrátí 409 a prostředí zopakuje **celý** postup nad čerstvým
 obsahem. Slepé opakování zápisu by cizí práci smazalo. Token se nikdy nedostane
 do odpovědi ani do chybové hlášky — testuju i to.
@@ -4667,8 +4682,7 @@ už má výchozí hodnotu v `.env.example`. Nic víc token potřebovat nemá.
 
 **Otázky pro Michala:** 1) Souhlasíš s tím, že prostředí commituje **rovnou do
 `main`**? Alternativa je zvláštní větev (`REDAKCE_GITHUB_BRANCH`) a pull
-requesty — bezpečnější, ale rozhodnutí by se na web dostávala až po merge.
-2) Odložení Královky výš je moje rozhodnutí z ostrého testu; když ji chceš
+requesty — bezpečnější, ale rozhodnutí by se na web dostávala až po merge. 2) Odložení Královky výš je moje rozhodnutí z ostrého testu; když ji chceš
 rovnou povýšit nebo vyřadit, řekni a přepíšu to. 3) Trvá otázka, jestli má
 fronta hlídat kadenci ověřování po jednotlivých polích.
 
@@ -4715,11 +4729,11 @@ polích, ne jednou hranicí pro všechno).
 
 ## 2026-07-31 (pozdě v noci) — redakční prostředí v adminu: výběr fotek, fronta práce a záruka, že nic nezůstane ležet
 
-**Zadání Michala:** *„udělej mi prostředí v adminu na výběr fotek a pořádně to
+**Zadání Michala:** _„udělej mi prostředí v adminu na výběr fotek a pořádně to
 promysli — budeme ho asi používat dost, zamysli se i nad povyšováním
 kandidátních chat celkově a systematicky a ujisti se, že k tomu budu mít
 všechny potřebné nástroje a nic nám neproklouzne a nic nezůstane
-nezpracované."* Plus dřívější věta o patičce, která je hotová: brand řádek
+nezpracované."_ Plus dřívější věta o patičce, která je hotová: brand řádek
 říká finální stav („od českých hor po Alpy"), ne roadmapu.
 
 **Nejdřív rozhodnutí, na kterém všechno stojí: stav se ODVOZUJE z dat.**
@@ -4796,8 +4810,8 @@ i **úplnost profilů** (chybí GPS, otvíračka, kontakty, trasy) a **stárnut�
 
 ## 2026-07-31 (noc) — patička říká finální stav; výsledky Actions prohlédnuty a z 2 994 fotek je kontaktní arch
 
-**Patička.** Michal: *„v patičce bych nedával roadmapu, rovnou to stav pro
-finální stav, ať to nemusíme měnit při každé aktualizaci."* Brand řádek zněl
+**Patička.** Michal: _„v patičce bych nedával roadmapu, rovnou to stav pro
+finální stav, ať to nemusíme měnit při každé aktualizaci."_ Brand řádek zněl
 „Krkonoše → Česko → Slovensko → Alpy" — poslední místo na webu, kde pilotní
 pohoří stálo napevno. Nově tam stojí totéž co v nadpisu homepage: **„průvodce
 turistickými chatami od českých hor po Alpy"**. Test to hlídá z obou stran —
@@ -4813,7 +4827,7 @@ Krkonoše 1 530, Jizerky 1 262, Ještědský hřbet 185, Rudawy 17; Český ráj
 a Podkrkonoší nula (tam ještě nemáme objekty s GPS).
 
 **Prohlídka toho, co přišlo — a nález, kvůli kterému se to celé přeskládalo.**
-Napoprvé jsem bral jako silný signál geotag *i* kategorii. Arch to vyvrátil
+Napoprvé jsem bral jako silný signál geotag _i_ kategorii. Arch to vyvrátil
 během minuty: chata **Barborka** měla 51 „silných" nálezů, z toho 50 z polské
 kategorie **Barbórka** — hornického svátku v Bytomi. Kategorie se totiž
 přiřazuje podle shody JMÉNA, ne podle objektu; stejně dopadla **Barbora**
@@ -4856,13 +4870,13 @@ a otázka web-checku zbylých kandidátů Jizerek (potřebuje schválení WebFet
 ## 2026-07-31 (večer) — textace homepage přepsána: nadpis nese celý plán, technické poznámky pryč, web má strukturovaná data
 
 **Hotovo:** Zadání Michala mělo dvě části a druhá přišla až během práce.
-Nejdřív: *„nelíbí se mi slogan Chaty, kterým můžeš věřit — projdi textaci
+Nejdřív: _„nelíbí se mi slogan Chaty, kterým můžeš věřit — projdi textaci
 homepage a předělej ji kompletně, aby odpovídala best practices v SEO a GEO,
 aby byl web ready pro AI agenty a bral se jako relevantní zdroj, a zároveň aby
 to působilo redakčně… redukuj vše, co zní technicky, na nejnutnější minimum
 (zdroje nemusí být na každém řádku textu, ale pohromadě v patičce nebo pod
-textem)."* Pak, když už nadpis jmenoval obě živé oblasti: *„neomezuj headline
-na 2 pohoří, rovnou ber celkový plán."*
+textem)."_ Pak, když už nadpis jmenoval obě živé oblasti: _„neomezuj headline
+na 2 pohoří, rovnou ber celkový plán."_
 
 **Nadpis.** Slogan o důvěře je pryč — důvěru si má čtenář udělat z toho, co pod
 nadpisem uvidí, ne z toho, že si o ni web řekne. První náhrada zněla
@@ -4870,7 +4884,7 @@ nadpisem uvidí, ne z toho, že si o ni web řekne. První náhrada zněla
 tím by se průvodce natrvalo představoval jako krkonošsko-jizerský, ačkoli plán
 míří přes Česko a Slovensko do Alp. Teď stojí v heru **„Turistické chaty od
 českých hor po Alpy"** — oblouk záměru — a hned pod ním perex drží realitu:
-*„Stavíme ho postupně: zatím 89 profilů v Krkonoších a Jizerských horách…"*.
+_„Stavíme ho postupně: zatím 89 profilů v Krkonoších a Jizerských horách…"_.
 Slovo „zatím" je tam schválně; bez něj by dvojice nadpis + perex slibovala
 Alpy. Titulek stránky (`<title>`) drží týž oblouk, protože na dotaz „chaty
 Krkonoše" má odpovídat stránka Krkonoš, ne homepage — konkrétní jména oblastí
@@ -4947,8 +4961,9 @@ poslední místo, kde stojí Krkonoše napevno — nechat, nebo zkrátit na „�
 Slovensko → Alpy"? 3) V koláži hera visí prázdný polaroid („fotku sem teprve
 hledáme"), protože Luční bouda nemá titulní fotku — až doběhne prohlídka fotek
 z DATA-02, doplní se sám. 4) Trvá otázka Královky (jeden objekt vs. rozhledna
-+ restaurace 26 m vedle) a otázka, jestli mám web-checkem prověřit zbylé
-kandidáty Jizerek (potřebuje schválení WebFetch).
+
+- restaurace 26 m vedle) a otázka, jestli mám web-checkem prověřit zbylé
+  kandidáty Jizerek (potřebuje schválení WebFetch).
 
 ## 2026-07-31 (podvečer) — dřevěná cedule je nově rozcestník, ne odkaz na Krkonoše
 
@@ -4958,6 +4973,7 @@ začátku na Krkonoše; s druhou živou oblastí to čtenáři tvrdilo, že prů
 pořád jen krkonošský.
 
 **Zvážené možnosti:**
+
 1. **Nechat pilot napevno** — nejmenší práce, ale Jizerky by z hlavní CTA
    vypadly úplně a s třetí oblastí by to bylo čím dál nepravdivější.
 2. **Prkno za každou oblast** — sedí to metafoře rozcestníku, jenže neškáluje:
@@ -4999,6 +5015,7 @@ to je ve filtru. Nová oblast se objeví tím, že vznikne — nikdo na to nemus
 sáhnout.
 
 **Jak se to chová:**
+
 - výběr pohoří je **OR** (jako stavové chips), kombinace s ostatními filtry
   **AND** — „Jizerské hory + občerstvení" dá jizerské chaty s doloženým
   občerstvením;
@@ -5046,7 +5063,7 @@ chatách je to přes deset minut práce — a když Commons u sto padesáté cha
 vrátí 429 (limituje sdílené IP runnerů), výjimka propadla z `main()` ven
 a zahodila i všech 149 hotových. Nově se každá chata ošetří zvlášť, export se
 ukládá **průběžně** a na konci se řekne, co se nepovedlo. Je to táž dohoda,
-kterou Michal zvolil 30. 7. u DATA-01: *zacommituj, co najdeš* — včetně
+kterou Michal zvolil 30. 7. u DATA-01: _zacommituj, co najdeš_ — včetně
 sentinelu `NEUPLNY_BEH: N chat`, který workflow přilepí do commit message.
 Pád nastane jen tehdy, když neprojde ANI JEDNA chata.
 
@@ -5069,6 +5086,7 @@ poster oblasti, a když není, obecný `/3d/poster.jpg`. Jenže ten obecný post
 JE snímek Krkonoš, takže každá nová oblast zdědila cizí hory.
 
 **Opraveno trojím způsobem:**
+
 - `poster.jpg` se přejmenoval na `poster-krkonose.jpg` — obecné jméno svádělo
   k tomu považovat krkonošský snímek za neutrální výplň;
 - **fallback je pryč**: oblast bez posteru dostane neutrální plochu
@@ -5152,6 +5170,7 @@ z celého fondu) test shodila.
 Jizerky (3D model je z doby před triáží).
 
 **Otázka pro Michala:**
+
 - **Dřevěná cedule v heru** pořád vede „PROZKOUMAT KRKONOŠE". Nechat pilot
   napevno, přidat druhé prkno pro Jizerky, nebo z ní udělat neutrální
   rozcestník na oblasti? Layout počítá se dvěma prkny (velké + katalog), takže
@@ -5198,6 +5217,7 @@ starým jménem. Nikoho to neshodí, jen se nikdy nepřečte a vedle něj přibu
 nový.
 
 Naložilo se s nimi podle toho, co v nich je, ne hromadně:
+
 - **Tři se přesunuly** pod nový slug — Pešákovna (14 fotek), Chatka Górzystów
   (23) a Orle (38). Byly to povýšené chaty a smazat je by znamenalo zahodit
   hotový sběr, který by DATA-02 musela dohledat znovu.
@@ -5325,8 +5345,7 @@ ze střediska, takže bych musel vymyslet, kde přechod začíná.
 **Sousední východiště jsou vzdušnou čarou — a stránka to říká.** Počítají se
 haversinem z bodů obcí, protože pěší vzdálenost mezi středisky spočítanou
 nemáme. O dvě sekce výš přitom stojí délky přístupových tras, tedy jiná míra;
-kdyby se obě jmenovaly „km", čtenář je sečte. Je to totéž poučení jako
-30. 7. u „pěšky nesmí vyjít kratší než vzdušnou čarou", jen z druhé strany.
+kdyby se obě jmenovaly „km", čtenář je sečte. Je to totéž poučení jako 30. 7. u „pěšky nesmí vyjít kratší než vzdušnou čarou", jen z druhé strany.
 
 **Jedna oprava po cestě.** Čísla sekcí se odvozovala od jediné podmínky
 (`s.lanovka ? '02' : '01'`). Se čtvrtou sekcí by to u středisek bez lanovky
@@ -5353,6 +5372,7 @@ zůstává nedoplněný; ani obchvat přes výškopis DATA-28 nedává poctivé 
 kontrola F1 šablon nad reálnými daty.
 
 **Otázky pro Michala:**
+
 - **Výška obce u středisek (zbytek F1a).** Handoff chce ČÚZK, ale bezobslužná
   session se na web nedostane. Varianty: (a) doplníš čísla očima ze ČÚZK,
   (b) pustím to jako krok v Actions přes Mapy.com Elevation API — pak ale ve
@@ -5430,6 +5450,7 @@ mít důvod i datum.
 fotky. Pak triáž dalších jizerských kandidátů proti druhému prameni.
 
 **Otázky pro Michala:**
+
 - **Královka**: katalog ji vede jako chatu (859 m, web kralovka.cz), OSM zná
   jen věž a restauraci „Sluneční terasa" 26 m od ní. Mám je vést jako jeden
   objekt (jako Žalý), nebo počkat na ověření u provozovatele?
@@ -5439,8 +5460,8 @@ fotky. Pak triáž dalších jizerských kandidátů proti druhému prameni.
 ## 2026-07-30 (noc) — „ještě není na řadě" není chyba běhu
 
 **Hotovo:** Michal pustil pro Jizerky poslední krok DATA-06 (výšky
-přístupových tras) a workflow zčervenalo: *„Chybí
-data/trasy/jizerske-hory/pristupove-trasy.json — nejdřív DATA-06 3b."*
+přístupových tras) a workflow zčervenalo: _„Chybí
+data/trasy/jizerske-hory/pristupove-trasy.json — nejdřív DATA-06 3b."_
 Hláška byla pravdivá a k ničemu — **3b pro Jizerky spustit nejde**: oblast
 nemá jediný publikovaný profil chaty (75 kandidátů čeká na triáž), takže není
 ke které chatě trasu počítat. Poslal jsem ho tím do slepé uličky.
@@ -5490,10 +5511,10 @@ NEradí „spusť 3b" (což je právě to, co udělat nejde).
 
 ## 2026-07-30 (večer, potřetí) — neúplný běh zapíše, co našel
 
-**Hotovo:** Michal rozhodl otázku z minulého zápisu: *„uprav to tak, že
+**Hotovo:** Michal rozhodl otázku z minulého zápisu: _„uprav to tak, že
 zacommituje co najde — asi bysme si pak při dalších pohořích mohli říct, které
 země to má chytat; beskydy budou mít část na Slovensku, žádné Polsko ani
-Německo."*
+Německo."_
 
 **Pád jedné země už neruší celý běh.** Dřív platilo všechno, nebo nic — a stálo
 to dnes ráno 17 minut i s hotovým českým exportem. Nově se každá země stahuje
@@ -5547,7 +5568,7 @@ Z logu je to čitelné celé:
 - **Český dotaz prošel** — `Export cz: 7 objektů, stav OSM dat 2026-06-01`.
 - Pak přišel polský dotaz a **selhal třikrát u tří instancí**: dvakrát HTTP 504
   („přetížená instance"), ale jinde `0 objektů — instance nejspíš nemá
-  celosvětová data`. Po třech kolech s pauzami 30 a 90 s běh spadl na exit 1.
+celosvětová data`. Po třech kolech s pauzami 30 a 90 s běh spadl na exit 1.
 - Tím pádem se **nezacommitoval ani hotový český export**: commit krok se po
   nenulovém návratovém kódu přeskočí. Sedm nalezených objektů šlo do koše.
 
@@ -5582,6 +5603,7 @@ být kolem sedmi + dohledávka podle jmen a rozhledny) a založit triáž. Pak
 jizerských 75 kandidátů.
 
 **Otázka pro Michala:**
+
 - **Má neúplný běh commitnout, co stihl?** Dnešní stav je „všechno, nebo nic":
   když spadne druhá země, přijde vniveč i hotová první (dnes 17 minut). Šlo by
   zapsat, co se povedlo, a v souhrnu i commitu jasně napsat, která země chybí —
@@ -5640,6 +5662,7 @@ dotazů a „země dotazu si určuje oblast, ne skript". `npm run kontrola` zele
 Michal jmenoval (Smědava, Knajpa, chaty na Jizerce). Tím se otevře i routing.
 
 **Otázky pro Michala:**
+
 - DATA-01 pro Ještěd běží (spustil 30. 7.) — až doběhne, mrknu na výsledek.
 - Pro Jizerky teď stačí kliknout „DATA-06: export značených tras (dle oblasti)"
   a „DATA-06: výchozí body oblasti" a vybrat `jizerske-hory`.
@@ -5716,6 +5739,7 @@ si s jeho polohou odporuje. Až přepočet přijde, začít u něj tímhle odsta
 které Michal jmenoval (Smědava, Knajpa, chaty na Jizerce).
 
 **Otázky pro Michala:**
+
 - Pořád čeká: běh DATA-06 pro `jizerske-hory` (dal by střediskům GPS, mapy
   i fotky), potvrzení jizerského hera (Paličník × bučiny), určení dvou
   nepřiřazených snímků „lanovka" a DATA-01 pro `jestedsky-hrbet`.
@@ -5728,6 +5752,7 @@ dobrá fotka lanovky v Rokytnici, na Lysou horu"). Rozbaleno, prohlédnuto,
 zařazeno.
 
 **Použité hned tři:**
+
 - **hero Jizerských hor** ← „Paličník, Jizerské hory" (Marek Šaroch): zasněžený
   skalní vrchol s křížem v ranním světle. Oblast tím má konečně tvář.
 - **hero Ještědského hřbetu** ← „Výhled z Ještědu" (Martin Rak): zimní panorama
@@ -5777,6 +5802,7 @@ snímků včetně toho, že dva jsou vedené jako nepřiřazené.
 **Příště:** triáž jizerských kandidátů (DATA-03) po dávkách.
 
 **Otázky pro Michala:**
+
 1. **Hero Jizerek: Paličník, nebo bučiny?** Vzal jsem Paličník (dramatický,
    a jméno souboru výslovně říká Jizerské hory). Letní „Jizerskohorské bučiny"
    od Libora Sváčka leží v repu jako záloha — přehození je jeden řádek.
@@ -5788,9 +5814,9 @@ snímků včetně toho, že dva jsou vedené jako nepřiřazené.
 
 ## 2026-07-30 (odpoledne) — Jizerky dotaženy: lanovky, střediska, panorama a cíle; Bramberk rozhodnut; Český ráj založen
 
-**Hotovo:** Michal: *„ohledně oblastí dám na tebe, bramberk nechám na tobě,
+**Hotovo:** Michal: _„ohledně oblastí dám na tebe, bramberk nechám na tobě,
 jdu pustit data-01 pro ještědský hřbet, ty zatím vyhledej lanovky a střediska
-a dotáhni pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše."*
+a dotáhni pohoří Jizerské hory na stejnou úroveň jako mají teď Krkonoše."_
 
 **Lanovky Jizerských hor — a zjištění, že na ně nebyl potřeba další běh.**
 DATA-32 nečte Overpass, ale **3D export z DATA-28**, a ten pro Jizerky už
@@ -5856,6 +5882,7 @@ kterou Michal jmenoval. A až doběhne jeho DATA-01 pro Ještědský hřbet, tot
 tam.
 
 **Otázky pro Michala:**
+
 1. **DATA-06 pro `jizerske-hory`** by dal střediskům GPS (a tím mapy i fotky
    z DATA-33) — pustíš? Je to týž workflow jako u Krkonoš, jen s jinou oblastí.
 2. Hero fotka Jizerek: mediabanka CzechTourism je na to ověřená a licence
@@ -5917,6 +5944,7 @@ jednu session moc, půjde to po dávkách; začnu tou osmičkou, kterou Michal
 jmenoval, protože u ní víme, že do průvodce patří.
 
 **Otázky pro Michala:**
+
 1. **Bramberk: jeden profil, nebo dva?** (rozhledna + chata u paty, 28 m).
    U Žalého jsme to nechali jako jeden profil s poznámkou; potvrdíš stejný
    postup, nebo chceš „profil každého objektu zvlášť" jako u Sněžky?
@@ -5928,7 +5956,7 @@ jmenoval, protože u ní víme, že do průvodce patří.
 ## 2026-07-30 (dopoledne, dodatek) — rozsah průvodce: „turistické chaty", řečeno nahlas
 
 **Hotovo:** Michal rozhodl otázku, kterou otevřel návrh oblastí (oddíl 6):
-*„řekněme nahlas turistické chaty."* Do dneška se web představoval jako
+_„řekněme nahlas turistické chaty."_ Do dneška se web představoval jako
 průvodce **horskými** chatami, ale do korpusu už mířily objekty, které horské
 chaty nejsou — turistická chata v Prachovských skalách a Riegrova chata na
 Kozákově. Buď je vyřadit, nebo rozsah rozšířit a nepředstírat, že jsou to
@@ -5971,6 +5999,7 @@ samostatně (dnes nula profilů, tedy levné na změnu) a Kozákov s Prachovem d
 Českého ráje jako `turisticka-oblast`. Pak dva běhy DATA-01.
 
 **Otázky pro Michala:**
+
 1. Rozsah je hotový. **Potvrdíš i oddíl 5 návrhu** (tři objekty a tři
    oblasti), nebo to chceš jinak? Až to potvrdíš, založím Český ráj a přesunu
    do něj Kozákov s Prachovem — dnes jsou to kandidáti bez oblasti.
@@ -6028,8 +6057,8 @@ ráje** — s tím, že Český ráj bude oblast typu `turisticka-oblast`, ne `p
 protože pohoří opravdu není a průvodce by to neměl předstírat.
 
 **Otevřel jsem u toho otázku, kterou to samo neřeší:** průvodce se představuje
-jako průvodce *horskými* chatami, ale Prachov ani Kozákov horské chaty nejsou.
-Buď se rozsah drží a oba se vyřadí, nebo se rozšíří na *turistické* chaty
+jako průvodce _horskými_ chatami, ale Prachov ani Kozákov horské chaty nejsou.
+Buď se rozsah drží a oba se vyřadí, nebo se rozšíří na _turistické_ chaty
 a průvodce to řekne. Doporučuju druhé (oba už v repu leží jako kandidáti a mají
 turistickou známku), ale je to rozhodnutí o povaze průvodce — Michalovo.
 
@@ -6057,6 +6086,7 @@ pohoří, totéž číslo nese mapotic i vydavatelův výpis známek), okno v
 `scripts/oblasti.ts`, naseedováno, čtyři workflow znají nový slug, 14 testů.
 
 **Dvě vědomá rozhodnutí o okně**, obě zapsaná v kódu i v YAML:
+
 - **okraj Liberce je uvnitř** — hřbet se zvedá přímo nad městem a bez
   městského okraje by okno minulo dolní stanici lanovky i parkoviště, odkud
   se na Ještěd chodí. Že dotaz přinese pár městských hospod s „chatou"
@@ -6092,6 +6122,7 @@ souřadnice ani tagy z OSM a vymýšlet je nebudeme.
 a nově pro `jestedsky-hrbet`.
 
 **Otázky pro Michala:**
+
 1. **Pusť DATA-01 dvakrát:** `jizerske-hory` (rozšířený dotaz najde, doufám,
    Smědavu a spol.) a `jestedsky-hrbet` (zatím tam nemáme ani jednoho
    kandidáta).
@@ -6157,6 +6188,7 @@ což je návrh FOTKY bez souřadnic — cesta teď musí končit `<oblast>/<slug
 s rozšířeným dotazem.
 
 **Otázky pro Michala:**
+
 1. **Ještědský hřbet — bereme, nebo ne?** Vydavatel tam vede tři známková
    místa (Chata Pláně, Horský hotel Ještěd, Rozhledna Rašovka) a všechna leží
    mimo okno Jizerských hor. Jsou to kandidáti buď na samostatnou oblast,
@@ -6225,6 +6257,7 @@ ukáže, kolik z těch osmi rozšířený dotaz opravdu najde. Pak triáž vzore
 DATA-03.
 
 **Otázky pro Michala:**
+
 1. Zbylých pět chybějících (Prezidentská chata, Hřebínek, Bártlova bouda,
    Pyramida Jizerka, Wysoki Kamień) jsem nedohledával ručně — počkal bych na
    běh, ať vidíme, co dotaz zvládne sám. Souhlas?
@@ -6300,11 +6333,9 @@ zacházet:
 
 Platí i tady rozlišení z rešerše: **hero pohoří ano, profily chat ne** —
 fotka chaty musí doložit, že je na ní ten objekt, a snímek z turistické
-banky to bez geotagu neudělá. Podmínky mají poslední aktualizaci
-31. 7. 2025; zápis je v `docs/FOTKY-ZDROJE-A-LICENCE.md`, oddíl 4c, i s
+banky to bez geotagu neudělá. Podmínky mají poslední aktualizaci 31. 7. 2025; zápis je v `docs/FOTKY-ZDROJE-A-LICENCE.md`, oddíl 4c, i s
 tabulkou a citacemi. Pozor do budoucna: kdyby web nesl reklamu vedle takové
 fotky, podmínka „bez komerční nabídky" padá.
-
 
 **JIZ-01 nezačato, a proč:** položka pořád visí na **dvou klicích do
 Actions** (DATA-01 export kandidátů pro `jizerske-hory`, DATA-28 terén).
@@ -6321,6 +6352,7 @@ DATA-03. Jinak F1b — vizuální kontrola katalogu proti
 `design/handoff-f1/screenshots/01-katalog.png`.
 
 **Otázky pro Michala:**
+
 1. **Fotky, které máš vlastní** — pošli je přes `/prispet` (tlačítka „Fotka
    střediska" a „Fotka lanovky"), nebo je nahraj rovnou v adminu do kolekce
    Fotky a vyplň vazbu (Středisko, nebo Lanovka = oblast + slug). Přes web
@@ -6472,6 +6504,7 @@ noci nad reálnými daty na stagingu (harness dokládá CSS, ne aplikaci).
 Pak dál dle backlogu.
 
 **Otázky pro Michala:**
+
 1. **Noční mapa** — souhlasíš s odchylkou výš (živé dlaždice necháváme
    v noci tak, jak jsou)? Kdybys chtěl noční mapu doopravdy, znamená to
    vlastní mapset u Mapy.com, ne CSS trik — je to samostatný úkol.
@@ -6610,6 +6643,7 @@ oblast `krkonose`) — doplní tři lanovky a přebere lepší fotky středisek;
 pak zkontrolovat výsledek stejně jako dnes. Potom zpět na backlog.
 
 **Otázky pro Michala:**
+
 1. **Čtyři lanovky zůstanou bez fotky** (Karkonosz Express, Zahrádky
    Express, Family Express, Biały Jar) — na Commons pro ně doložený
    snímek není. Nechat prázdné místo, nebo je pro tebe přijatelné vzít
@@ -6640,8 +6674,7 @@ množiny, spárováno přes OSM URL s profily i kandidáty) našel devět
 publikovaných profilů, čtyři kandidáty a čtrnáct objektů mimo korpus —
 a z těch čtyř kandidátů je krkonošský jen Žalý; zbylí tři jsou
 jizerskohorští, tedy JIZ-01. Žalý má `amenity=restaurant` s celoroční
-otvírací dobou, telefonem i e-mailem restaurace, a důvod, kvůli kterému
-20. 7. zůstal ležet, zněl doslova „Žalý je známý především rozhlednou —
+otvírací dobou, telefonem i e-mailem restaurace, a důvod, kvůli kterému 20. 7. zůstal ležet, zněl doslova „Žalý je známý především rozhlednou —
 zda objekt u rozhledny patří do průvodce chat, rozhodne redakce". Přesně
 tenhle důvod rozšířený klíč ruší. **Nepovyšuji ho** (povyšování Krkonoš je
 od 21. 7. uzavřené na 76 profilech a hraniční objekty se nepřidávají bez
@@ -6671,7 +6704,7 @@ jsou". Skript i workflow jsou připravené (oblast je parametr), takže je to
 jeden klik — viz otázky níž.
 
 **Vedlejší nález, opravený týž den: kontrola jmenovců rozhledny neviděla.**
-Typ `rozhledna` přinesl do korpusu jména, která typovým slovem *začínají*
+Typ `rozhledna` přinesl do korpusu jména, která typovým slovem _začínají_
 („rozhledna Slovanka"), jenže `kolize-jmen.ts` „rozhlednu" mezi typovými
 slovy neměl — jádra `rozhledna slovanka` a `slovanka` proto padla do dvou
 hromádek a jeden skutečný jmenovec zůstal nenahlášený: **Bouda Slovanka**
@@ -6693,6 +6726,7 @@ zpracovat rozhlednové kandidáty pilotu a teprve pak odškrtnout DATA-23;
 „turistická minulost"), nebo pokračování F1-IMPL (čtyřblok 3/4).
 
 **Otázky pro Michala:**
+
 1. **Klik:** Actions → „DATA-01: OSM export chat (dle oblasti)" → Run
    workflow → oblast `krkonose`. Je to první rozhlednový dotaz nad pilotem;
    bez něj je průchod DATA-23 nutně neúplný.
@@ -6876,21 +6910,15 @@ kde budou nejužitečnější u chat na horních stanicích.
 Jeden cizí test jsem musel zúžit: atribuci 3D mapy hledal podle textu přes
 celou stránku a nově týž výškopis jmenuje i přehled lanovek.
 
-**Otázky pro Michala k dodatkům:**
-4. **Stezka korunami stromů Krkonoše** — bereme vyhlídkové stezky jako
-   rozhledny, nebo je klíč míněn jen na věže?
-5. **Žalý** — souhlasíš s vedením věže a restaurace jako jednoho objektu,
-   nebo je rozdělit podle pravidla o Sněžce?
-6. **Fotky** — mám připravit e-maily? Pořadí podle prověrky: fotohistorie.cz
-   (pramen galerie), staretrutnovsko.cz (pohlednice po boudách), Zaniklé
-   krajiny (kvůli 3D modelům), pak Krkonošské muzeum / Správa KRNAP.
-7. **Nákup originálů** — chceš zkusit koupit pár dobových pohlednic
-   klíčových bud (Labská, Petrova, zaniklé boudy) a naskenovat je? Je to
-   licenčně nejčistší cesta, jakou jsem našel.
-8. **Titulní fotka** — potvrzeno Michalem 29. 7. („sedí").
-9. **Lanovky** — mají v přehledu zůstat i sedačky, které nikam k chatě
-   nevozí (čistě sjezdovkové, jako Hromovka nebo Protěž), nebo je vypustit
-   a nechat jen ty, které pěšímu k něčemu jsou? Zatím jsou v seznamu dole.
+**Otázky pro Michala k dodatkům:** 4. **Stezka korunami stromů Krkonoše** — bereme vyhlídkové stezky jako
+rozhledny, nebo je klíč míněn jen na věže? 5. **Žalý** — souhlasíš s vedením věže a restaurace jako jednoho objektu,
+nebo je rozdělit podle pravidla o Sněžce? 6. **Fotky** — mám připravit e-maily? Pořadí podle prověrky: fotohistorie.cz
+(pramen galerie), staretrutnovsko.cz (pohlednice po boudách), Zaniklé
+krajiny (kvůli 3D modelům), pak Krkonošské muzeum / Správa KRNAP. 7. **Nákup originálů** — chceš zkusit koupit pár dobových pohlednic
+klíčových bud (Labská, Petrova, zaniklé boudy) a naskenovat je? Je to
+licenčně nejčistší cesta, jakou jsem našel. 8. **Titulní fotka** — potvrzeno Michalem 29. 7. („sedí"). 9. **Lanovky** — mají v přehledu zůstat i sedačky, které nikam k chatě
+nevozí (čistě sjezdovkové, jako Hromovka nebo Protěž), nebo je vypustit
+a nechat jen ty, které pěšímu k něčemu jsou? Zatím jsou v seznamu dole.
 
 **Dodatek 6 (týž den, zadání Michala „u středisek chci taky fotky… nepřidáme
 další střediska jako Rokytnice? napadají tě ještě další?" a „tady máš seznam
@@ -7035,12 +7063,12 @@ popiska skládá vlevo od boudy, jinak by přetekla přes okraj.
 **animované pozadí** (dvě lana, tři podpěry, dvě červené kabiny a dvě modré
 sedačky) a **tři barevně odlišené karty**. Dvě odchylky od návrhu, obě
 z téhož důvodu:
-*Pohyb dělají keyframes, ne SMIL* — `animateMotion` z návrhu se nedá vypnout
+_Pohyb dělají keyframes, ne SMIL_ — `animateMotion` z návrhu se nedá vypnout
 médiem `prefers-reduced-motion`, muselo by na to běžet `pauseAnimations()`.
 Pohyb po přímém laně se ale dá popsat i klíčovými snímky a ten už systémové
 nastavení respektuje bez řádku JS: kdo má animace vypnuté, vidí vozy stát
 v půli lana.
-*Trojici v kartách vybírá pravidlo, ne vkus* — návrh jmenuje Sněžku, Černou
+_Trojici v kartách vybírá pravidlo, ne vkus_ — návrh jmenuje Sněžku, Černou
 horu a Medvědín; my bereme **dráhy, které vyvezou nejvýš a nahoře u nich stojí
 chata průvodce**, přičemž **úseky téže dráhy se počítají jednou**. Bez toho
 druhého by v kartách stála Sněžka dvakrát (lanovka na ni má dva úseky
@@ -7063,8 +7091,7 @@ s doloženou licencí — v handoffu přišly tři fotky, ale bez autora a licen
 je do repa dát nemůžu. 372 testů (+6), kontrola, lint i tsc čisté.
 
 ~~**Otázky k dodatku:** 13. **Fotky z handoffu**~~ — **zodpovězeno týž den
-(„jsou z Unsplash, mají jméno autora v názvu"), viz dodatek 9.**
-14. **Pořadí dál** — mám pokračovat 3D mapou (sekce 01, návrh chce malovaný
+(„jsou z Unsplash, mají jméno autora v názvu"), viz dodatek 9.** 14. **Pořadí dál** — mám pokračovat 3D mapou (sekce 01, návrh chce malovaný
 styl s parallaxem místo dnešního posteru), nebo vitrínou a žebříčky?
 
 **Dodatek 9 (týž den, Michal: „fotky z handoffu jsou z Unsplash… dej do repa
@@ -7205,15 +7232,15 @@ a lanovky mají útržky jízdenek.**
 **(1) Řez hřebenem, druhá verze — a Michal měl pravdu.** První pokus byl graf
 s puntíky: lomená spojnice vrcholů (vypadala jako kardiogram, protože jím
 taky byla) a mračno 55 stejných teček. Co se změnilo:
-*Silueta je teď skutečný terén.* Kreslí se z **téhož výškového modelu, ze
+_Silueta je teď skutečný terén._ Kreslí se z **téhož výškového modelu, ze
 kterého žije 3D mapa** (Mapy.com Elevation, mřížka 240×144) — pro každý
 sloupec se vezme nejvyšší terén ve třech zeměpisných pásech: jižní podhůří,
 hřeben, severní strana. Bližší hřbety překrývají vzdálenější a vznikne
 hloubka; křivka je hladká (Catmull-Rom), ne lomená.
-*Tečky přestaly být mračnem.* Pět nejvyšších chat má popisku napevno (vybírá
+_Tečky přestaly být mračnem._ Pět nejvyšších chat má popisku napevno (vybírá
 se s vodorovným odstupem, aby se nepřekryly), ostatní se ukážou po najetí nebo
 tabulátorem. Každá je pořád odkaz na profil s výškou v `aria-label`.
-*Přibyla obloha, sluneční opar, výškové linky a orientace západ → východ.*
+_Přibyla obloha, sluneční opar, výškové linky a orientace západ → východ._
 V nočním režimu se celé panorama převléká do „noci na horách".
 Měřítko se **odvozuje z dat**, ne z konstant pro Krkonoše: v Jizerkách
 (nejvyšší terén 1 127 m) se řez neroztáhne pod prázdnou oblohu.
@@ -7286,13 +7313,13 @@ jedinou otázku — **co mi ta dráha nahoře otevře**: chaty u horní stanice
 z manifestu DATA-33 — mechanismus je hotový, snímky dodá běh na Actions.
 
 **Dvě věci, které řekla až data.**
-*Geometrie tras je uložená OD CHATY dolů*, takže výchozí bod je POSLEDNÍ prvek
+_Geometrie tras je uložená OD CHATY dolů_, takže výchozí bod je POSLEDNÍ prvek
 pole. Podle prvního bodu vycházelo, že všechny přístupy jedné chaty „začínají"
 na jednom místě — u horní stanice Černohorského Expressu by pak nestála ani
 jedna trasa, ačkoli jich odtud vede jedenáct. Hledá se proto podle souřadnic
 konce trasy (do 800 m od stanice), ne podle názvu výchozího bodu: jména jsou
 v datech psaná různě, souřadnice ne.
-*Velké „Ł" propadalo slugem do prázdna* — rozklad NFD ho nerozloží a náhrada
+_Velké „Ł" propadalo slugem do prázdna_ — rozklad NFD ho nerozloží a náhrada
 `ł → l` běžela před `toLowerCase()`, takže z „Łabski" zbylo „abski". Pořadí
 otočeno, test to hlídá.
 
@@ -7337,10 +7364,10 @@ síto CC0/BY/BY-SA/PD, doložený autor, pořadí výběru, `prefer` pro redakč
 volbu) — schválně, protože dvě kopie kódu by se dřív nebo později rozešly
 v tom, co pouštějí dál. **Dvě věci jsou u lanovky jinak, a obě z jednoho
 důvodu:**
-*Bod dotazu je STŘED dráhy, ne stanice*, a okruh pokrývá aspoň polovinu
+_Bod dotazu je STŘED dráhy, ne stanice_, a okruh pokrývá aspoň polovinu
 délky — fotograf stojí kdekoli podél lana, od stanice by okruh minul půlku
 trati.
-*Přibylo síto „mluví to o lanovce?"* U střediska stačí, že snímek pochází
+_Přibylo síto „mluví to o lanovce?"_ U střediska stačí, že snímek pochází
 z obce: je to fotka MÍSTA. U lanovky by ale geosearch kolem dráhy nabídl
 i kostel z téže vsi — a takový snímek by na stránce lanovky tvrdil něco, co
 na něm není. Projde proto jen soubor, jehož název nebo popis o lanovce
@@ -7395,8 +7422,7 @@ vlny → `data05-razitkuj-zaloz` + seed; (2) jinak dle pořadí backlogu —
 DATA-06 zbývá render tras na profilu + výšky/časy (Actions) a katalog tras
 je z éry 23 chat (po vyrostlém korpusu chce přepočet – klik), nebo
 pokračování čtyřbloku F1 (session 2/4: kontrola deploye 6 večerních
-commitů v Actions, vizuální kontrola katalogu/homepage na stagingu, F1c
-2. průchod — hero koláž).
+commitů v Actions, vizuální kontrola katalogu/homepage na stagingu, F1c 2. průchod — hero koláž).
 
 **Dodatek (ruční pokračování s Michalem, ráno 28. 7.):** (1) Michal
 potvrdil: **Portáš = horská chata/hotel na hřebeni Javorníků** → pár
@@ -7718,16 +7744,17 @@ zůstala stará fotka. Příčina: profil chaty se renderuje na vyžádání
 (vidí změnu hned), kdežto přehledy jsou statické s `revalidate`
 (katalog a razítkovník 10 min, homepage a pohoří hodinu) — čekaly by na
 vypršení. **Řešení: on-demand revalidace** — `src/hooks/revalidace.ts`
-+ `afterChange`/`afterDelete` na kolekcích Fotky, Razitka a Chaty:
-redakční zásah obnoví souhrnné stránky (/, /chaty, /razitkovnik,
-/zanikle, /cesko/krkonose, /prispet) i dotčený profil. Poctivost
-k prostředí: `revalidatePath` existuje jen v Next runtime, proto
-dynamický import a spolknutá chyba — seed ani CLI skripty kvůli obnově
-cache NIKDY nespadnou (test to hlídá). **Ověřeno end-to-end lokálně**
-(Postgres v sandboxu + build + `next start`): podání fotky Labské boudy
-se v katalogu PŘED schválením neobjeví, po schválení přes API (PATCH
-v Next runtime, tedy jako z adminu) je nová fotka v katalogu OKAMŽITĚ,
-bez čekání na revalidaci. Testy +3 (286 celkem), tsc/lint/kontrola čisté.
+
+- `afterChange`/`afterDelete` na kolekcích Fotky, Razitka a Chaty:
+  redakční zásah obnoví souhrnné stránky (/, /chaty, /razitkovnik,
+  /zanikle, /cesko/krkonose, /prispet) i dotčený profil. Poctivost
+  k prostředí: `revalidatePath` existuje jen v Next runtime, proto
+  dynamický import a spolknutá chyba — seed ani CLI skripty kvůli obnově
+  cache NIKDY nespadnou (test to hlídá). **Ověřeno end-to-end lokálně**
+  (Postgres v sandboxu + build + `next start`): podání fotky Labské boudy
+  se v katalogu PŘED schválením neobjeví, po schválení přes API (PATCH
+  v Next runtime, tedy jako z adminu) je nová fotka v katalogu OKAMŽITĚ,
+  bez čekání na revalidaci. Testy +3 (286 celkem), tsc/lint/kontrola čisté.
 
 **Dodatek 17 (týž den, rozhodnutí Michala: „po Krkonoších Jizerské hory,
 a zase 3D model"): ZÁZEMÍ DRUHÉ OBLASTI HOTOVÉ.** Výběr pohoří padl nad
@@ -7963,11 +7990,11 @@ v bboxu Krkonoš a nejbližší jiný profil sedí, kde má (Pomezní bouda 211 
 polského Schroniska na Przełęczy Okraj — přesně jak stojí naproti sobě
 v sedle). Seed + ověřeno na běžícím webu: osm profilů má mapovou sekci,
 Chata Rezek (dál bez souřadnic) poctivou hlášku.
-**Nezapsáno (4) — a proč:** *Chata Rezek* a *Chata Rozhled* nemají v OSM nic,
+**Nezapsáno (4) — a proč:** _Chata Rezek_ a _Chata Rozhled_ nemají v OSM nic,
 co by šlo ztotožnit (jádra „rezek"/„rozhled" chytila zastávky, rozcestníky
-a všechny rozhledny v okolí); *Petrova bouda* má jen názvy tras, které ji
+a všechny rozhledny v okolí); _Petrova bouda_ má jen názvy tras, které ji
 připomínají — nejbližší nález je 737 m od shluku 21 fotek, což na zápis nestačí;
-*Schronisko PTTK „Nad Łomniczką"* nemělo nález vůbec — a to byla **moje chyba**:
+_Schronisko PTTK „Nad Łomniczką"_ nemělo nález vůbec — a to byla **moje chyba**:
 do dotazu šlo jádro názvu **bez diakritiky**, takže Overpass hledal
 „nad łomniczka", kdežto v OSM stojí „Łomniczką". Opraveno (`jadroProDotaz`
 drží diakritiku i velikost písmen) + regresní test; příští běh ho má najít.
@@ -7998,27 +8025,28 @@ a přístupové trasy narostly z 63 na 72 chat.** Druhý běh DATA-31 (s webovou
 větví) nepřinesl ani jednu SHODU WEBU — OSM prostě u těch objektů `website`
 netagguje. Zato v surovém exportu **byl** polský objekt, který report hlásil
 jako „bez nálezu": `way/405165026` „Nad Łomniczką", building + operator=PTTK
-+ ele=1002. Nenašlo ho párování, ne dotaz — a příčina je hloupá a poučná:
-jádro našeho názvu **Schronisko PTTK „Nad Łomniczką"** si s sebou neslo
-**uvozovky**, takže se porovnávalo „„nad łomniczka"" proti „nad łomniczka".
-`normJmeno` je teď zahazuje (i „ " » «) a přepočet z už commitnutého exportu
-(`--z-jsonu`, žádný další klik) dal nález okamžitě. **Zapsáno** — a je to
-nejlíp doložená poloha z celé dvanáctky: `ele=1002` sedí na metr s výškou
-v profilu, 15 m odtud stojí měřicí bod „Stanowisko monitoringu porostów
-Schronisko Nad Łomniczką", vede k němu relace PTTK Jelenia Góra, a souřadnice
-ze sekundárního portálu, které jsme dřív vědomě odmítli, leží 32 m odtud.
-**Přepočet DATA-06 (lokálně, taky bez kliku):** přístupové trasy má nově
-**72 chat** místo 63 — všech devět nových poloh dostalo nástup, který dává
-smysl (Pomezní bouda 0,08 km od zastávky Pomezní Boudy, Erlebachova 0,76 km
-od Špindlerovy boudy, Schronisko 3,9 km z Karpacze). Přepočítány i přechody
-mezi chatami. Bez trasy zůstává jediná: Raisova chata na Zvičině, 9,8 km od
-sítě — přesahový profil mimo pohoří, čekaný stav. Ověřeno na běžícím webu:
-mapa i „Doporučené nástupy" jsou na profilech vidět (polský profil žije na
-`/polsko/krkonose/…`). 327 testů, kontrola, lint i tsc čisté.
-**Zbývají tři profily bez GPS:** Chata Rezek, Chata Rozhled a Petrova bouda —
-u všech tří má OSM jen okolní objekty (zastávky, rozcestníky, názvy tras)
-a web chaty na žádném z nich není. Tady už dohledávka narazila na strop:
-další krok je telefonát nebo návštěva (DATA-04), ne další dotaz.
+
+- ele=1002. Nenašlo ho párování, ne dotaz — a příčina je hloupá a poučná:
+  jádro našeho názvu **Schronisko PTTK „Nad Łomniczką"** si s sebou neslo
+  **uvozovky**, takže se porovnávalo „„nad łomniczka"" proti „nad łomniczka".
+  `normJmeno` je teď zahazuje (i „ " » «) a přepočet z už commitnutého exportu
+  (`--z-jsonu`, žádný další klik) dal nález okamžitě. **Zapsáno** — a je to
+  nejlíp doložená poloha z celé dvanáctky: `ele=1002` sedí na metr s výškou
+  v profilu, 15 m odtud stojí měřicí bod „Stanowisko monitoringu porostów
+  Schronisko Nad Łomniczką", vede k němu relace PTTK Jelenia Góra, a souřadnice
+  ze sekundárního portálu, které jsme dřív vědomě odmítli, leží 32 m odtud.
+  **Přepočet DATA-06 (lokálně, taky bez kliku):** přístupové trasy má nově
+  **72 chat** místo 63 — všech devět nových poloh dostalo nástup, který dává
+  smysl (Pomezní bouda 0,08 km od zastávky Pomezní Boudy, Erlebachova 0,76 km
+  od Špindlerovy boudy, Schronisko 3,9 km z Karpacze). Přepočítány i přechody
+  mezi chatami. Bez trasy zůstává jediná: Raisova chata na Zvičině, 9,8 km od
+  sítě — přesahový profil mimo pohoří, čekaný stav. Ověřeno na běžícím webu:
+  mapa i „Doporučené nástupy" jsou na profilech vidět (polský profil žije na
+  `/polsko/krkonose/…`). 327 testů, kontrola, lint i tsc čisté.
+  **Zbývají tři profily bez GPS:** Chata Rezek, Chata Rozhled a Petrova bouda —
+  u všech tří má OSM jen okolní objekty (zastávky, rozcestníky, názvy tras)
+  a web chaty na žádném z nich není. Tady už dohledávka narazila na strop:
+  další krok je telefonát nebo návštěva (DATA-04), ne další dotaz.
 
 **Dodatek 27 (týž den, poslední klik): 3D model má o devět pinů víc — a den
 tím zavírá kruh.** DATA-28 přegenerovala krkonošský model nad novými daty:
@@ -8141,9 +8169,9 @@ neuvádí, se nedomýšlí a jde k posouzení. Harrachovská vyhlídka smazána
 z kandidátů a zapsána do `_vyrazeno.yaml`, aby ji další běh nezaložil znovu.
 
 **Tři kandidáti k rozhodnutí (nechávám na Michalovi, jsou to kandidáti mimo
-web):** *Frýdlantská výšina* (50,935 / 15,077 — frýdlantské podhůří),
-*Rozhledna Liberecká výšina* (50,778 / 15,092 — nad Libercem) a *Wieża
-Widokowa Mirsk* (50,966 / 15,378 — město Mirsk v podhůří). Všechny tři leží
+web):** _Frýdlantská výšina_ (50,935 / 15,077 — frýdlantské podhůří),
+_Rozhledna Liberecká výšina_ (50,778 / 15,092 — nad Libercem) a _Wieża
+Widokowa Mirsk_ (50,966 / 15,378 — město Mirsk v podhůří). Všechny tři leží
 v okně dotazu, ale spíš na jeho okraji než v Jizerských horách; klíč zařazení
 je redakční rozhodnutí, ne měření. Zbylých pět je uvnitř pohoří bez debat.
 
@@ -8158,22 +8186,23 @@ souřadnice tedy nebylo jen o mapě: rozsvítilo to i fotky a přístupové tras
 ## 2026-07-27 — pokračování 23 (čtyřblok 1/4, druhá část po „pokracuj"): F1b UI HOTOVO + F1c 1. průchod
 
 **Hotovo (2 commity):**
+
 1. `bdf7928` — **F1b katalog /chaty KOMPLETNÍ.** `KatalogClient.tsx`
-   + `katalog.css` dle prototypu a screenshotů: filtr-bar (hledání,
-   Karty/Řádky/Mapa, řazení, chips s × a aria-pressed), kartotéční
-   lístky (červená linka, silueta thumb, mini-otisk — sken z DB či
-   stylizované RazitkoSvg, tagy „· Atlas/PL/výška nedoložena", rotace
-   ±0.7°, hover srovná+zvedne, fadeUp, reduced-motion vše vypíná),
-   tabulkové řádky, mapa s PŘEFILTROVANOU množinou (profily bez GPS
-   poctivě přiznané popiskou), prázdný stav s odkazem do Atlasu
-   a resetem. Stav v URL: chips/sort/view pushState („zpět" funguje),
-   hledání replaceState; zdroj pravdy useSearchParams. Index rozšířen
-   o lat/lng + otiskUrl/otiskAlt. E2e mapy katalogu aktualizován
-   (mapa už není vždy viditelná — deep-link ?view=mapa) + nový e2e
-   chips/URL/zpět. Odchylky od prototypu (vědomé, do zápisu):
-   breadcrumb „Průvodce /" místo „Česko /" (fond má i PL profily),
-   „Kam dál" bez kotvy na žebříčky (F1d neexistuje — mrtvé odkazy
-   neděláme), „v ukázce 12 ze 76" vynecháno (mock popiska).
+   - `katalog.css` dle prototypu a screenshotů: filtr-bar (hledání,
+     Karty/Řádky/Mapa, řazení, chips s × a aria-pressed), kartotéční
+     lístky (červená linka, silueta thumb, mini-otisk — sken z DB či
+     stylizované RazitkoSvg, tagy „· Atlas/PL/výška nedoložena", rotace
+     ±0.7°, hover srovná+zvedne, fadeUp, reduced-motion vše vypíná),
+     tabulkové řádky, mapa s PŘEFILTROVANOU množinou (profily bez GPS
+     poctivě přiznané popiskou), prázdný stav s odkazem do Atlasu
+     a resetem. Stav v URL: chips/sort/view pushState („zpět" funguje),
+     hledání replaceState; zdroj pravdy useSearchParams. Index rozšířen
+     o lat/lng + otiskUrl/otiskAlt. E2e mapy katalogu aktualizován
+     (mapa už není vždy viditelná — deep-link ?view=mapa) + nový e2e
+     chips/URL/zpět. Odchylky od prototypu (vědomé, do zápisu):
+     breadcrumb „Průvodce /" místo „Česko /" (fond má i PL profily),
+     „Kam dál" bez kotvy na žebříčky (F1d neexistuje — mrtvé odkazy
+     neděláme), „v ukázce 12 ze 76" vynecháno (mock popiska).
 2. `9603c1e` — **F1c 1. průchod: datové pásy homepage.** Countery
    (profily / s razítkem / zaniklé v Atlasu / naposledy ověřeno) +
    mikroblok („n× nově ověřeno za 14 dní", Tisk seznamu) — vše
@@ -8191,6 +8220,7 @@ Tytéž 3 padající int soubory = Payload bez DB (environmentální,
 padají i na čistém main — v CI se nespouštějí, deploy má vlastní seed).
 
 **Pro session 2/4 (aktualizovaná předávka):**
+
 1. Ověřit v Actions deploy běhy 84a17a0…9603c1e (6 commitů večera;
    sandbox na GitHub API nedosáhne). Riziko: tabulka `strediska`
    (dfd9065) na serveru; selhání zastaví nasazení bezpečně.
@@ -8215,6 +8245,7 @@ Zadání se shoduje s prioritou zapsanou v backlogu (commit 9c80d10);
 DATA-02 (výš v backlogu) zůstává blokovaná na Michalově kliku — v pořádku.
 
 **Hotovo (3 commity, průběžně pushované):**
+
 1. `84a17a0` — **F1a: SSG index chat + odvozené feedy.**
    `src/lib/index-chat.ts` (čisté funkce): nejstarší doložený rok = MIN
    přes milníky s rokem (pořadí pole nerozhoduje; bez milníku null →
@@ -8249,6 +8280,7 @@ Celkem +33 testů (8 index, 7 střediska/oblast, 11 katalog, zbytek
 z dřívějška beze změn), tsc i lint čisté u každého commitu.
 
 **POZOR pro session 2/4 — začni tímhle:**
+
 1. **Zkontroluj v Actions poslední 3 běhy „INFRA-01: deploy staging"**
    (commity 84a17a0, dfd9065, a31134d). Sandbox na GitHub API nedosáhne
    (HTTP 403 — git protokol jede, REST ne), takže deploy NEMÁM ověřený.
@@ -8571,8 +8603,7 @@ v hlavičce dokumentu otázek a v masteru):
 - **Povýšeno 8 + 1:** Mísečky zvlášť (odp. 2; spot-fetch rozdělil 56 × 12),
   Aurora + Konopindova jako PRVNÍ DVA STAVY `zanikla` (odp. 3, 4 —
   definice: zaniklá turistická služba, dům žije), polská čtveřice
-  (odp. 5 „nechám na tobě" → zařazena pod DATA-25; agentní rešerše
-  27. 7.: AKT 1908 s Chatarem a čajem, Smogorniak s wiatrołapem,
+  (odp. 5 „nechám na tobě" → zařazena pod DATA-25; agentní rešerše 27. 7.: AKT 1908 s Chatarem a čajem, Smogorniak s wiatrołapem,
   Wielkanocna 1966/1967 na klíče — rozpor správce přiznán, Puchatka KPN
   zamčená; čtveřice pokrývá celé spektrum režimů) a přesahová Raisova
   (odp. 8 → SYSTÉM DATA-29, GPS z KČT, bbox filtr v data28).
@@ -8587,7 +8618,7 @@ v hlavičce dokumentu otázek a v masteru):
   (odp. 8) — první obyvatel nové složky data/kandidati/cesky-raj/.
 - **docs/TELEFONATY-KRKONOSE.md** (odp. 17 „všechny mi dej rovnou"):
   76 objektů, skupina A (25 s klíčovou otázkou „komu slouží kuchyně")
-  + skupina B (51), generováno z „K dotažení" poznámek profilů.
+  - skupina B (51), generováno z „K dotažení" poznámek profilů.
 - Uzavřeno: DATA-20 (obec = poštovní pramen, „ano"), rotace tokenů
   odložena na konec vývoje (odp. 18), vizitky se sbírají — publikace
   čísel + odkazu + placeholderu, obrázky až se souhlasem (odp. 19).
@@ -8693,8 +8724,7 @@ silných z triáže DATA-27 je na webu.
 
 - **U Kotle** — klíčová věta doslova: bar „otevřen i pro veřejnost, pouze
   v době podávání večeří pro ubytované hosty se věnujeme přednostně jim"
-  (hornimisecky.eu; web je nově v redirect-smyčce ze sandboxu — triáž ho
-  26. 7. četla, stavěno z triáže). Kapacita 22 pokojů × 19/60 nezapsána;
+  (hornimisecky.eu; web je nově v redirect-smyčce ze sandboxu — triáž ho 26. 7. četla, stavěno z triáže). Kapacita 22 pokojů × 19/60 nezapsána;
   1050 m (penzion) vs. 1000 m (středisko) rozlišeno jako dvě veličiny;
   obec Vítkovice (katalogy), lyžařsky řazen i pod Špindl — próza nese
   obojí. MICHAL POTVRDÍ NAD PROFILEM (v seznamu otázek).
@@ -8730,8 +8760,7 @@ klíčové věty doslova), KzN + region-krkonose pro Smetánku.
 
 - **Chata Sedmidolí** — 1100 m nad Špindlem na rozhraní II. a III. zóny,
   48 lůžek / 10 pokojů (České hory), „vlastní prostorná restaurace"
-  (hkregion) — komu, prameny neříkají; jediný letopočet: rekonstrukce
-  2009. Název kolísá (web „Chata" × Facebook a katalogy „bouda") — zapsán
+  (hkregion) — komu, prameny neříkají; jediný letopočet: rekonstrukce 2009. Název kolísá (web „Chata" × Facebook a katalogy „bouda") — zapsán
   tvar vlastního webu.
 - **Jindřichův dům** — „Rodinný horský penzion", 1030 m, vleky Eso
   a Mulda před domem; „bar/výčep pro ubytované hosty" — próza to říká
@@ -9181,11 +9210,11 @@ pak už jen zbytky a uzavřít Krkonoše.
 
 ## 2026-07-26 — pokračování 5: klíč zařazení rozšířen o turistickou minulost → povýšena celá držená čtveřice (46 publikovaných profilů)
 
-**Zadání Michala:** *„všechny boudy, které sloužily turistům i v minulosti (a teď tomu
+**Zadání Michala:** _„všechny boudy, které sloužily turistům i v minulosti (a teď tomu
 tak není), bych uvedl, jen u nich bude poznámka, že neslouží veřejnosti. ale třeba na
 Medvědí jsme si minulé léto dávali borůvkové knedlíky a nebydleli jsme tam. zbytek si
 ověřím, ty pracuj samostatně dál podle plánu, otázky mi dej až na konci — až uzavřeš
-Krkonoše."*
+Krkonoše."_
 
 **Hotovo:**
 
@@ -9622,6 +9651,7 @@ nový zásah, přestože jí přibyly tři odstavce.
 kontrolou), protože ta už na nic nečeká. DATA-20 se dozavře, až rozhodneš sémantiku.
 
 **Otázky pro Michala:**
+
 1. **Co má pole `obec` znamenat?** Tohle je teď nejdražší nerozhodnutá věc — visí na ní
    27 hodnot. Tři možnosti: (1) zůstane „nejbližší obec" a správní příslušnost dostane
    vlastní pole, (2) překlopí se na správní příslušnost a opraví se popisek, (3) obojí
@@ -9711,6 +9741,7 @@ ne názvy, do kolizí tedy nespadají.
 a po ní **DATA-21** (osm profilů čekajících na katalogová data).
 
 **Otázky pro Michala:**
+
 1. **Kolínská bouda: 1927, nebo 1719?** Ty jsi uváděl 1719, katalogový podklad dává 1927.
    Může to být starší bouda proti dnešní stavbě — víš, odkud tvůj letopočet je?
 2. **Co má pole `obec` znamenat** — nejbližší obec (jak říká popisek), nebo administrativní
@@ -9805,7 +9836,7 @@ kolik dalších profilů má `obec` jen z poštovní adresy?
   zásah je regrese. Pět nových souborů fixtury (`14-`…`18-kolize-*.yaml`) drží obě pasti.
 - `docs/DATA-17-jmenovci.md` — redakční pravidlo R1–R7 i s tím, co měření převrátilo.
 - `martinova-bouda.yaml` — **veřejná** rozlišovací věta v posledním odstavci `text`
-  + záznam ve `zdroje` (web obce Benecko). Slug se nemění, benecká bouda v korpusu není.
+  - záznam ve `zdroje` (web obce Benecko). Slug se nemění, benecká bouda v korpusu není.
 - `lesni-bouda.yaml` — tvrzení o jmenovci sneseno na „hledali jsme a nenašli"
   i s jeho původem; veřejně se nepublikuje nic, protože pramen není.
 - `lysecinska-bouda.yaml` — glosa opravena na přiznanou neznalost, pramen na rejstřík.
@@ -9846,11 +9877,11 @@ prózy se tak dalo bez povšimnutí napsat 4× „Profil" na začátku věty a 5
 
 **Rozvaha ustáleného počtu 138 → 135**, změřená souborovým diffem proti HEAD:
 
-| směr | kolik | co to je |
-| --- | --- | --- |
-| −15 | 13 + 2 | skutečné opravy: 13× „profil" ve významu *naší* stránky, 2× u Vrbatovy boudy (číslo známky a doména v jedné větě) |
-| +9 | 9 | nově viditelné věty připisující licenci ODbL — `souřadnic` chytá i velké „S" |
-| +3 | 3 | nově viditelné odkazy na *cizí* katalogový profil — `profil` chytá i skloňované tvary |
+| směr | kolik  | co to je                                                                                                          |
+| ---- | ------ | ----------------------------------------------------------------------------------------------------------------- |
+| −15  | 13 + 2 | skutečné opravy: 13× „profil" ve významu _naší_ stránky, 2× u Vrbatovy boudy (číslo známky a doména v jedné větě) |
+| +9   | 9      | nově viditelné věty připisující licenci ODbL — `souřadnic` chytá i velké „S"                                      |
+| +3   | 3      | nově viditelné odkazy na _cizí_ katalogový profil — `profil` chytá i skloňované tvary                             |
 
 Nic z toho, co přibylo, není vada; obojí je připsání pramene, tedy přesně to, co má próza
 dělat. **Šest oprav se v čísle neprojeví vůbec** — čtyři „Profil" a dva „profilu", které
@@ -9895,6 +9926,7 @@ na čtenáře, DATA-19 přinese do korpusu chybějící data — pořadí ať ur
 beru DATA-17 jako první shora.
 
 **Otázky pro Michala** (obě přenesené z minulé session, zatím bez odpovědi):
+
 1. PAT a klíč Mapy.com v otevřeném textu promptu naplánované úlohy — otočit a prompt
    přepsat, nebo nechat být?
 2. Nemá `kontakty` dostat druhé pole na rezervační linku? Schéma má dnes jediný
@@ -9905,7 +9937,7 @@ beru DATA-17 jako první shora.
 ## 2026-07-26 — denní session (Opus, inline): DATA-16 hotovo — sken vidí i mimo tělo článku a hned našel dva telefony
 
 **Zadání Michala:** „spusť naplánovanou session, do dneška byla zastavena." Naplánovaná
-úloha *turistickechaty — denní session 6:30* naposledy proběhla **21. 7.** a od té doby
+úloha _turistickechaty — denní session 6:30_ naposledy proběhla **21. 7.** a od té doby
 byla pozastavená; **znovu zapnuta** (další běh 27. 7. ráno). Práce se udělala rovnou
 v běžící session, protože v pracovním stromu leželo rozdělané DATA-16 — kdyby se úloha
 spustila zvlášť, naklonovala by si čisté repo a dělala totéž podruhé.
@@ -9954,6 +9986,7 @@ stránka" (23 výskytů ve 20 souborech, asi 13 z nich je ten náš) a case-sens
 na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s měřením.
 
 **Otázky pro Michala:**
+
 1. Ten PAT a klíč Mapy.com v promptu naplánované úlohy — chceš je otočit a prompt
    přepsat, nebo to necháváme být?
 2. U Luční boudy i Tetřevích bud teď próza říká „rezervace telefonicky na jiné lince, než
@@ -9969,9 +10002,9 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 
 **Hotovo:** 45 oprav napříč jedenácti profily. Nejzajímavější číslo je ale poměr přijetí: **43 ze 43 nálezů agentů přijato, žádný zamítnutý** — proti třetí dávce, kde jich z padesáti padlo dvanáct. Nezlepšili se agenti, zpřesnilo se zadání: do briefu se z minule přidal seznam **„CO NENÍ NÁLEZ"** (vazba „nad <obec>", položka `zajimavosti` s vlastním `zdroj`em, schválené domácí tvary) a povinná sekce **„Co jsem zvažoval a zamítl"**, která agenta nutí zamítnutí sepsat místo toho, aby je poslal jako nálezy. Dva nálezy jsem navíc našel sám při čtení.
 
-**Dominantní vada dávky je jedna a jmenuje se „katalog vydávaný za přečtenou stránku".** Próza psala „web schroniska uvádí" tam, kde jsme web nikdy neotevřeli a údaj přišel přes **externí katalogový podklad**, který se na ten web jen odvolává. Nesly to všechny tři poslední polské profily, každý na několika místech. Opravný tvar je ten, který se ustálil už u Domu Śląského: *„máme z druhé ruky s odkazem na …; samotné stránky jsme zatím neotevřeli, takže to číslo bereme jako nepotvrzené"* — plus **záznam v `zdroje` bez `url`**, který katalog jmenuje jako skutečného prostředníka. Že `zdroje.url` je nepovinné (`popis` je povinný, `url` ne), je pro tuhle třídu klíčové: pramen bez veřejně citovatelné adresy se dá přiznat, místo aby se zamlčel.
+**Dominantní vada dávky je jedna a jmenuje se „katalog vydávaný za přečtenou stránku".** Próza psala „web schroniska uvádí" tam, kde jsme web nikdy neotevřeli a údaj přišel přes **externí katalogový podklad**, který se na ten web jen odvolává. Nesly to všechny tři poslední polské profily, každý na několika místech. Opravný tvar je ten, který se ustálil už u Domu Śląského: _„máme z druhé ruky s odkazem na …; samotné stránky jsme zatím neotevřeli, takže to číslo bereme jako nepotvrzené"_ — plus **záznam v `zdroje` bez `url`**, který katalog jmenuje jako skutečného prostředníka. Že `zdroje.url` je nepovinné (`popis` je povinný, `url` ne), je pro tuhle třídu klíčové: pramen bez veřejně citovatelné adresy se dá přiznat, místo aby se zamlčel.
 
-**Nejnepříjemnější nález dávky jsem vyrobil já sám, v téže session.** U Hali Szrenickiej jsem dřív napsal, že „mapová data ho kladou těsně pod vrchol Szrenice, kdežto jeho vlastní web píše, že je přímo na vrcholu". Audit Szrenice o pár hodin později ukázal, že ta věta je **vyrobený rozpor**: OSM nese 1 361 m jako výšku *budovy*, katalog 1 362 m jako výšku *hory*. To nejsou dva prameny, které si odporují — to jsou dvě různé veličiny, mezi nimiž je jeden metr, a redakční odečtení jsem připsal OpenStreetMap. K tomu „jeho vlastní web píše" u tvrzení, které přišlo přes katalog. Opraveno v obou profilech v témže běhu, aby si dvě stránky o téže budově neodporovaly. **Pravidlo, které z toho plyne:** když oprava odhalí třídu vady, prohledat korpus **včetně vlastních úprav z téže session** — ne jen soubory, které dávka ještě nevzala.
+**Nejnepříjemnější nález dávky jsem vyrobil já sám, v téže session.** U Hali Szrenickiej jsem dřív napsal, že „mapová data ho kladou těsně pod vrchol Szrenice, kdežto jeho vlastní web píše, že je přímo na vrcholu". Audit Szrenice o pár hodin později ukázal, že ta věta je **vyrobený rozpor**: OSM nese 1 361 m jako výšku _budovy_, katalog 1 362 m jako výšku _hory_. To nejsou dva prameny, které si odporují — to jsou dvě různé veličiny, mezi nimiž je jeden metr, a redakční odečtení jsem připsal OpenStreetMap. K tomu „jeho vlastní web píše" u tvrzení, které přišlo přes katalog. Opraveno v obou profilech v témže běhu, aby si dvě stránky o téže budově neodporovaly. **Pravidlo, které z toho plyne:** když oprava odhalí třídu vady, prohledat korpus **včetně vlastních úprav z téže session** — ne jen soubory, které dávka ještě nevzala.
 
 **Vlastní nález u Przełęczy Okraj: próza popírala data, která repozitář má.** Věta „Podobu občerstvení ani otvírací dobu doloženou nemáme" stála v profilu, k němuž externí katalog vede HUT-0227 se stravováním a celoročním provozem, jistota A. Podle pravidla zavedeného ve druhé dávce se v takovém případě **data zavedou dovnitř**, ne že se věta zúží: doplněno `kuchyne: ano` (bez `typObcerstveni` — pramen neříká, jestli restaurace, bufet, nebo kiosek, a domýšlet se nebude), `sezona: celoročně` a nový odstavec. `otviraciDoba` **zůstala schválně prázdná**, protože druhý podklad z téhož běhu ji vede jako „neuvedeno" — a próza teď říká proč. Přiznaný rozpor mezi dvěma prameny je poctivější než tichý výběr toho vstřícnějšího.
 
@@ -10079,13 +10112,14 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 
 **Dodatek — kontroly zapojeny do CI a běh ověřen nasucho.** Do `.github/workflows/ci.yml` přibyl druhý job „Kontroly datové vrstvy" (`npm run kontrola`), commit `746034d`. Na skutečném runneru GitHubu to zatím **nikdo neviděl běžet** — `gh` v sandboxu není a přístup k API GitHubu je z téhle session zavřený. Místo abych to odbyl větou „lokálně to jde", **nasimuloval jsem podmínky CI**: čerstvý `git clone` HEADu do dočasného adresáře, tedy jen to, co je opravdu zacommitované, a `npm run kontrola` nad ním. Prošlo **exit 0** — všech pět kroků zeleně, včetně fixtury (10 souborů) a jejích snímků. Tím padá **nejpravděpodobnější příčina pádu CI**, totiž soubor, který existuje lokálně, ale do repa se nedostal (fixtura i očekávané výstupy leží pod `scripts/`, žádné pravidlo `.gitignore` je nebere). Zbývá jediná neověřená proměnná: jestli po `npm ci` na runneru vyjde `npx tsx`, na které se `vse.ts` a `test-fixtura.ts` odkazují přes `spawnSync`. Riziko je malé a doložitelně malé — `tsx 4.22.4` je **devDependency**, `npm ci` devDependencies instaluje a `node_modules/.bin/tsx` z ní vzniká, takže `npx` sáhne po lokální binárce; navíc týmž `npm ci` prochází i job `lint`, který běhá odjakživa. **Michale, stačí se jednou koutkem oka podívat do záložky Actions** — když by to přece jen padlo, bude to na tomhle jediném místě.
 
-**Příště:** čeká pořád jen **krok (b) DATA-15** — jazykový audit zbylých ~~38~~ profilů po dávkách, na potvrzení Michalem (otázka níže). Jinak Tier 3/4, GPS přes DATA-01, fotky z DATA-02. *(Oprava z 25. 7. 2026, zápis nahoře: správně jich bylo **35**, ne 38 — číslo počítalo 42 minus čtyři ze vzorku a zapomnělo na tři profily auditované už při publikaci. Krok (b) mezitím **začal**, první dávka osmi je hotová, zbývá 27.)*
+**Příště:** čeká pořád jen **krok (b) DATA-15** — jazykový audit zbylých ~~38~~ profilů po dávkách, na potvrzení Michalem (otázka níže). Jinak Tier 3/4, GPS přes DATA-01, fotky z DATA-02. _(Oprava z 25. 7. 2026, zápis nahoře: správně jich bylo **35**, ne 38 — číslo počítalo 42 minus čtyři ze vzorku a zapomnělo na tři profily auditované už při publikaci. Krok (b) mezitím **začal**, první dávka osmi je hotová, zbývá 27.)_
 
 **Otázky pro Michala:** beze změny oproti zápisu níže — pořád visí ta jedna o kroku (b) a telefonáty z DATA-04.
 
 ---
 
 ## 2026-07-25 — navazující session (Opus, inline): tři nové profily (Vrbatova bouda, Černá bouda, Kochanówka) → 42 publikovaných
+
 **Zadání Michala:** „můžeš pokračovat dál" / „pokračuj samostatně dál" — průchod backlogem bez doptávání. Vzata fronta z `docs/DATA-03-master-krkonose.md`: zbytek Tier 2 a začátek Tier 3.
 **Hotovo:** publikovány **tři nové profily** — 🇨🇿 **Vrbatova bouda** (Zlaté návrší, známka č. 393, obrázek nasazen do `public/znamky/`), 🇨🇿 **Černá bouda** (horský hotel kousek pod vrcholem Černé hory nad Janskými Lázněmi) a 🇵🇱 **Kochanówka** (schronisko PTTK v rokli pod vodopádem Szklarki, nezvykle nízko — asi 510 m). Publikovaných **39 → 42**, kandidátů ve frontě **45 → 42** (Tier 2 3 → 2, Tier 3 7 → 5). Podle konvence z DATA-14 se **článek psal rovnou při povýšení**, ne dodatečně. Aktualizován `docs/DATA-03-master-krkonose.md`: souhrnná čísla, tabulka klíčového zjištění (u známky č. 393 „kandidát" → **„publikováno 25. 7. 2026"**), tři nové řádky v tabulce publikovaných, vyřazené řádky z Tier 2 i Tier 3 — a **přepočtena věta, která se sama tiše rozbila**: „navíc **6** našich publikovaných chat v katalogu není" → **7** (Vrbatova bouda v ChatGPT katalogu chybí). Všechna odvozená čísla v dokumentu pak **znovu odvozena awkem přímo z tabulek**, ne převzata z prózy — publikovaná tabulka 42 řádků, Tier 1–4 dohromady 42.
 **Audit před publikací a jeho verdikt:** tři nové články prošly **třemi nezávislými auditními průchody** (jeden na profil, každý proti YAML datům téhož profilu). Všechny tři vrátily **„NENÍ připraven k publikaci"** a dohromady **37 nálezů**. Opraveno **20 odstavců a všechny 3 perexy**. Vzorec nálezů se opakuje z DATA-14 a stojí za zapamatování: (1) **údaj z pramene o něčem jiném** — u Černé boudy podáno „1 260 m" jako výška objektu, ačkoli jde o výšku hory; (2) **falešná plynulost času** — z prvního sezónního hostince roku 1888 se stala nepřerušená tradice, ačkoli stará bouda roku 1984 padla a dnešní budovu dostavěli až roku 1993; (3) **nedoložený superlativ** — Kochanówka „nejníže položené schronisko v našem katalogu" (nikdo to nespočítal); (4) **„zde" u události, která se stala jinde nebo jindy** — Vrbatova bouda z roku 1964 nemohla být místem úmrtí Václava Vrbaty roku 1913; (5) **vlastnost odvozená ze seznamu materiálů** — z „pohledového betonu" v projektové stránce se v perexu stala „betonová bouda"; (6) **tichý výběr jedné hodnoty tam, kde profil vede rozpor** — u Vrbatovy boudy hned trojí (výška 1 390 vs. 1 400 m, rok stavby, infocentrum). Vše přepsáno tak, aby rozpor byl vidět ve veřejném textu, ne jen v `interniPoznamky`.
@@ -10098,10 +10132,10 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Dořešeno bez čekání na tebe — sporná doména u Kochanówky:** `interniPoznamky` publikovaného profilu tvrdily, že „ze sandboxu byla kochanowka.com.pl nedostupná", ačkoli doména z OSM zní `kochanowka.wszklarskiej.net`. Držel jsem to jako úkol na DATA-04, protože načtení té stránky si žádá tvoje svolení — jenže **ověřovat nebylo co**: `kochanowka.com.pl` se v celém fondu nevyskytuje nikde jinde, byl to překlep, ne druhý pramen. A hlavně ta věta tvrdila **výsledek pokusu, o kterém nemáme doklad, že vůbec proběhl** — což je přesně ten druh tiché nepravdy, kvůli kterému konvenci B držíme. Poznámka přepsána na prostý stav: doména z OSM **ověřená není** a proč se nenačetla, nevíme; pokus zopakovat to 25. 7. skončil na vyžádaném svolení a jinými nástroji se neobcházel. K DATA-04 tedy zůstává jen skutečný úkol — ověřit tu doménu a telefon. **Poučení:** do poznámek psát, co víme, ne co si pamatujeme, že jsme zkoušeli — a než něco odložím jako „zablokované", ověřit, jestli tam vůbec je co odblokovávat.
 **Dodatek 2 — změřená chybovost staršího korpusu (tohle je odpověď na otázku 2 níže, ne další otázka):** místo abych se ptal, jestli pouštět přísný audit zpětně, **změřil jsem to**. Vzal jsem **vzorek 4 starších profilů**, a to schválně **stratifikovaně, ne náhodně**: vlajková loď (**Luční bouda** — nejdelší článek korpusu, 555 slov), polský profil s tenkými prameny (**Schronisko Samotnia**), profil s vůbec nejchudšími daty (**Horská chata Krakonoš**) a obyčejný průměr (**Petrova bouda**). Na každý jsem pustil samostatný auditní průchod s **toutéž taxonomií 11 typů vad**, jaká našla 37 nálezů ve třech nových článcích. **Výsledek: všechny čtyři vrátily „NENÍ připraven k publikaci", dohromady 15 nálezů** — Luční 5, Samotnia 6, Krakonoš 1, Petrova 3. To je **3,75 nálezu na profil proti 12,3 u tří nových článků**: starší korpus je tedy zhruba **třikrát čistší**, ale čistý není ani jeden ze čtyř profilů. Prostá extrapolace na zbylých 38 neauditovaných profilů dává kolem **140 nálezů** — ber to jako **řádový odhad, ne předpověď**, vzorek je stratifikovaný právě proto, aby zachytil krajní případy, ne aby dal reprezentativní průměr.
 **Všech 15 nálezů jsem rovnou opravil** (v této dávce, čtyři soubory). Nejzávažnější: (1) **Samotnia** tvrdila „kapacitu 49 lůžek uvádí web schroniska", ačkoli číslo pochází z ChatGPT katalogu a stránku jsme nikdy neotevřeli — a **o dvacet řádků výš v témže souboru stál komentář „kapacita nedoložena"**, takže si soubor protiřečil sám se sebou; opraveno na obou místech. (2) **Luční bouda** připisovala článku ČeskéNoviny.cz větu o tom, že restaurace vaří i pro neubytované po rezervaci — jenže ten článek je podle vlastního titulku o bufetu a toaletách; **pramen toho údaje tedy neznáme**, což teď říká i veřejný text. (3) **Petrova bouda** psala, že nová budova nahradila vyhořelou „na témže místě" — to nenese žádný pramen a přitom **právě ta spojka svařovala historickou linku 1790–1811–1887 s přestavbou po roce 2011**. (4) **Krakonoš** v perexu umisťoval chatu „u Pece pod Sněžkou" jako fakt, ačkoli pole `obec` je kvůli doloženému rozporu **záměrně prázdné** a text[0] ten rozpor o dvě věty dál přiznává. Dál: „na Bílé louce" u Luční boudy stálo **jen na redakčně psaném altu u fotky** (alt není pramen — upraven taky), Samotnia měla u milníku 1934 v `overeniHistorie` napsáno „před publikací ověřit primárním pramenem" a **přesto byl publikován**, a u Petrovy boudy próza mlčky vynechávala rozpor v doméně (`petrovyboudy.cz` × `petrovabouda.cz`), ačkoli jedna z variant je publikovaná v kontaktech. Vedle toho jsem doplnil `zdroje` u Samotnie o dvě položky, které profil dosud používal, ale čtenáři neukazoval (`schroniskosamotnia.com`, `kpn.gov.pl`) — obě výslovně označené jako **NEOTEVŘENO**.
-**Doporučení (a je jiné, než jak byla otázka položená):** audit **pustit — a pustit ho PŘED DATA-04, ne po něm**, protože DATA-04 tyhle vady neopraví. Telefonát doplní chybějící fakta; **misatribuci ani zamlčený rozpor ale žádný telefonát nesmaže**, ty zůstanou ve větách, dokud je někdo nepřečte. Naopak to funguje obráceně: **audit sám vyrábí otázky pro DATA-04**, a to konkrétní, telefonicky položitelné — dnešní čtveřice jich vydala hned několik (odkud je rezervační režim restaurace u Luční boudy? platí u Petrovy boudy `petrovyboudy.cz`, nebo `petrovabouda.cz`? stojí nová Petrova bouda na místě té vyhořelé?), na které by se bez něj nikdo nezeptal. Pořadí navrhuju takové: **(a) nejdřív mechanické kontroly přes všech 42 profilů naráz** — část taxonomie je totiž strojově chytatelná a je to prakticky zadarmo: „profil tvrdí v próze hodnotu pole, které je záměrně prázdné" (tak se chytil Krakonoš), „v `overeni` stojí *před publikací ověřit primárním pramenem*, a profil je přesto publikovaný" (tak se chytila Samotnia), „skloňovaná doména", „doména jmenovaná v próze chybí v `zdroje`" (tahle už běží). **(b) teprve pak jazykový audit zbylých 38 profilů po dávkách**, protože zbytek taxonomie — falešná plynulost času, nedoložený superlativ, „zde" u události jinde — se strojově chytit nedá, musí se to číst. Odhad: **2–3 session**, přičemž větší půlka práce nejsou nálezy, ale jejich opravy.
+**Doporučení (a je jiné, než jak byla otázka položená):** audit **pustit — a pustit ho PŘED DATA-04, ne po něm**, protože DATA-04 tyhle vady neopraví. Telefonát doplní chybějící fakta; **misatribuci ani zamlčený rozpor ale žádný telefonát nesmaže**, ty zůstanou ve větách, dokud je někdo nepřečte. Naopak to funguje obráceně: **audit sám vyrábí otázky pro DATA-04**, a to konkrétní, telefonicky položitelné — dnešní čtveřice jich vydala hned několik (odkud je rezervační režim restaurace u Luční boudy? platí u Petrovy boudy `petrovyboudy.cz`, nebo `petrovabouda.cz`? stojí nová Petrova bouda na místě té vyhořelé?), na které by se bez něj nikdo nezeptal. Pořadí navrhuju takové: **(a) nejdřív mechanické kontroly přes všech 42 profilů naráz** — část taxonomie je totiž strojově chytatelná a je to prakticky zadarmo: „profil tvrdí v próze hodnotu pole, které je záměrně prázdné" (tak se chytil Krakonoš), „v `overeni` stojí _před publikací ověřit primárním pramenem_, a profil je přesto publikovaný" (tak se chytila Samotnia), „skloňovaná doména", „doména jmenovaná v próze chybí v `zdroje`" (tahle už běží). **(b) teprve pak jazykový audit zbylých 38 profilů po dávkách**, protože zbytek taxonomie — falešná plynulost času, nedoložený superlativ, „zde" u události jinde — se strojově chytit nedá, musí se to číst. Odhad: **2–3 session**, přičemž větší půlka práce nejsou nálezy, ale jejich opravy.
 **Co mi z toho vyšlo jako obecnější poučení:** **čím delší a ambicióznější článek, tím vyšší chybovost** — 12,3 nálezu na nový (dlouhý, bohatě podložený) článek proti 3,75 na starší. Není to tím, že bych psal hůř než dřív; je to tím, že **plynulá próza potřebuje spojky, a spojky se vyrábějí, ne dokládají**. U tenkých profilů jako Krakonoš (1 nález) není z čeho splétat, takže se ani nesplétá. Praktický důsledek: audit při publikaci nového článku (což už je konvence z DATA-14) je důležitější než zpětný průchod, a zpětný průchod má smysl brát jako **jednorázový úklid**, ne jako opakovaný proces.
-**Dodatek 3 — krok (a) doporučení je HOTOVÝ: mechanické kontroly proběhly přes všech 42 profilů.** Nečekal jsem na potvrzení, protože tahle část je prakticky zadarmo (napsat kontrolu a pustit ji stojí zlomek toho, co jazykový audit) a **nezavazuje tě k tomu drahému kroku (b)**. Napsal jsem kontrolní skript s pěti pravidly, která odpovídají té části auditní taxonomie, co je strojově chytatelná: **A** próza tvrdí hodnotu pole, které je záměrně prázdné (tak se chytil Krakonoš) · **B** v bloku `overeni` stojí *před publikací ověřit primárním pramenem*, a profil je přesto publikovaný (tak se chytila Samotnia) · **C** skloňovaná doména · **D** superlativ bez připsání (kdo to tvrdí?) · **E** letopočet v próze, který nikde jinde v souboru není. První běh vrátil **18 zásahů k posouzení** (A 2 · B 5 · C 0 · D 11 · E 0); každý jsem přečetl v profilu.
-**Výsledek triáže: 8 skutečných vad, 10 falešných poplachů — a všech 8 je opraveno.** **B dalo 5 z 5 zásahů, všechny skutečné** a všechny stejného druhu jako Samotnia: **Dvoračky, Špindlerovka, Labská, Luční a Vosecká** měly v `overeniHistorie.source` napsáno *před publikací ověřit primárním pramenem* — a přitom byly publikované. Důležité je, **co jsem u nich našel ve veřejném textu**: všech pět tu slabinu čtenáři **poctivě přiznává** („Primárním pramenem nic z toho zatím ověřené nemáme.", „jde o sekundární médium, jehož údaje zatím nemáme potvrzené primárním pramenem" atd.). Vada tedy nebyla v tom, co čteme na webu, ale v tom, že si **interní poznámka vedla nesplněnou podmínku, kterou jsme vědomě obešli** — z takového záznamu se za měsíc nedá poznat, jestli se na to zapomnělo, nebo se to rozhodlo. Přepsal jsem je proto na záznam skutečnosti (publikováno bez potvrzení, slabina přiznaná veřejně, ověření zůstává úkolem pro DATA-04) a `checked` jsem **nezvedal** — pramen se znovu nekontroloval, opravil se náš vlastní zápis.
+**Dodatek 3 — krok (a) doporučení je HOTOVÝ: mechanické kontroly proběhly přes všech 42 profilů.** Nečekal jsem na potvrzení, protože tahle část je prakticky zadarmo (napsat kontrolu a pustit ji stojí zlomek toho, co jazykový audit) a **nezavazuje tě k tomu drahému kroku (b)**. Napsal jsem kontrolní skript s pěti pravidly, která odpovídají té části auditní taxonomie, co je strojově chytatelná: **A** próza tvrdí hodnotu pole, které je záměrně prázdné (tak se chytil Krakonoš) · **B** v bloku `overeni` stojí _před publikací ověřit primárním pramenem_, a profil je přesto publikovaný (tak se chytila Samotnia) · **C** skloňovaná doména · **D** superlativ bez připsání (kdo to tvrdí?) · **E** letopočet v próze, který nikde jinde v souboru není. První běh vrátil **18 zásahů k posouzení** (A 2 · B 5 · C 0 · D 11 · E 0); každý jsem přečetl v profilu.
+**Výsledek triáže: 8 skutečných vad, 10 falešných poplachů — a všech 8 je opraveno.** **B dalo 5 z 5 zásahů, všechny skutečné** a všechny stejného druhu jako Samotnia: **Dvoračky, Špindlerovka, Labská, Luční a Vosecká** měly v `overeniHistorie.source` napsáno _před publikací ověřit primárním pramenem_ — a přitom byly publikované. Důležité je, **co jsem u nich našel ve veřejném textu**: všech pět tu slabinu čtenáři **poctivě přiznává** („Primárním pramenem nic z toho zatím ověřené nemáme.", „jde o sekundární médium, jehož údaje zatím nemáme potvrzené primárním pramenem" atd.). Vada tedy nebyla v tom, co čteme na webu, ale v tom, že si **interní poznámka vedla nesplněnou podmínku, kterou jsme vědomě obešli** — z takového záznamu se za měsíc nedá poznat, jestli se na to zapomnělo, nebo se to rozhodlo. Přepsal jsem je proto na záznam skutečnosti (publikováno bez potvrzení, slabina přiznaná veřejně, ověření zůstává úkolem pro DATA-04) a `checked` jsem **nezvedal** — pramen se znovu nekontroloval, opravil se náš vlastní zápis.
 **Z D (superlativ bez připsání) bylo 11 zásahů, z toho 5 skutečných.** Nejzajímavější je **Luční bouda**: text[0] říká opatrně „podle provozovatele je největší a nejstarší boudou Krkonoš… obojí jsou tvrzení provozovatele", ale o dva odstavce dál stálo plnou vahou „Přestavba z roku 1914 udělala z Luční boudy největší boudu Krkonoš" — **týž údaj na dvou různých stupních jistoty uvnitř jednoho článku**. Dál: **Pod Łabskim Szczytem** měl v perexu „jedno z **nejstarších a nejpůvabnějších**" a „je **výborným** východiskem" — estetický soud v našem hlase, který nenese žádný blok `overeni` (ty dokládají budovu z roku 1938 a PTTK od 1945), a „nejstarší" navíc **odporovalo vlastnímu text[1]**, který pečlivě rozlišuje kontinuitu místa od stáří stavby; **Kamieńczyk** tvrdil v perexu „jeden z nejvyšších vodopádů polských Sudet", což nedokládá žádný pramen profilu; **Pomezní** a **Rýchorská** měly v perexu holý superlativ, který jejich vlastní text správně připisoval Kudy z nudy — perex tedy tvrdil víc než článek pod ním. Falešné poplachy byly poučné jinak: „nejistota", „nejpozději", „v nejvyšším patře" (patro toho domu, ne rekord) a případ, kdy **připsání stálo v sousední větě**, ne v té se superlativem.
 **Vedlejší nález, který za to stál nejvíc: křížový rozpor mezi dvěma profily.** Když jsem z perexu Pod Łabskim Szczytem odstranil „nejstarších", všiml jsem si, že profil **Strzechy Akademické** nese tvrzení jejího provozovatele, že **Strzecha spolu s chatou Pod Łabskim Szczytem jsou nejstarší chaty v Krkonoších** — kdežto u Pod Łabskim vedeme budovu z roku **1938**. Formálně si to neodporuje (tvrzení provozovatele proti datované stavbě), ale čtenář, který si obě stránky otevře vedle sebe, to uvidí. Podle konvence B se takové věci **nemají tiše srovnat**, takže je teď rozpor **přiznaný na obou stranách** v samotném textu, u Pod Łabskim přibyl zdroj `strzechaakademicka.pl/historia` (s poznámkou, že jsme ho neotevřeli) a do DATA-04 přibyla konkrétní otázka na PTTK Jelenia Góra: **co se tím „nejstarší" myslí — stavba, nepřetržitá služba, nebo kontinuita místa?**
 **Skript jsem podle triáže utáhl** (kontrola A hradluje výšku a stav na přiznání i připsání, kontrola D umí sousední větu a zná seznam „superlativů", které nejsou rekordy) a **napsal k němu regresní test** — umělý profil s přesně těmi vadami, které jsme opravili, aby bylo vidět, že kontroly po utažení pořád zabírají. Po opravách vrací korpus **0 zásahů ve všech pěti kontrolách**, a ověřil jsem si, že to není slepota: 12 superlativů typu rekord v korpusu pořád je, jen mají všechny doložené připsání. **Tohle je celý krok (a). Zbývá jen krok (b), tj. jazykový audit zbylých 38 profilů — a ten pořád čeká na tvoje slovo.**
@@ -10110,6 +10144,7 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Otázky pro Michala:** 1) Těch pět kandidátů výše — mám je zkusit doložit dál (dotazem na provozovatele, tj. přesunout do DATA-04), nebo je zatím odložit? 2) ~~Stojí ti za to, abych stejný auditní průchod pustil zpětně i na starší profily?~~ **ODPOVĚZENO MĚŘENÍM, viz Dodatek 2 výše** — místo ptaní jsem vzal stratifikovaný vzorek 4 starších profilů, všechny čtyři neprošly (15 nálezů, 3,75 na profil proti 12,3 u nových článků) a všech 15 jsem opravil. Doporučení mělo dva kroky a **krok (a) — mechanické kontroly přes všech 42 profilů naráz — je mezitím taky hotový** (viz Dodatek 3 výše: 18 zásahů → 8 skutečných vad, všechny opravené, korpus vrací 0). Pustil jsem ho bez ptaní, protože je prakticky zadarmo a **nezavazuje tě k ničemu dalšímu**. Otevřený tedy zůstává **jen krok (b): jazykový audit zbylých 38 profilů po dávkách** — ta drahá část, kterou stroj neumí a musí se číst. Pořád platí, že má smysl **před DATA-04** (telefonát misatribuci nesmaže, zato audit vyrábí konkrétní otázky pro telefonát). Odhad **2–3 session**, větší půlka práce nejsou nálezy, ale jejich opravy. Když řekneš „ne", nechám to ležet a půjdu dál na Tier 3/4 — krok (a) tím nepadá, ten je odvedený tak jako tak.
 
 ## 2026-07-25 — hlavní session (Opus, inline): článek jako v knižním průvodci u všech 39 profilů (DATA-14)
+
 **Zadání Michala:** „pošli + rovnou u všech chat vytvoř textový popis se vším, co o chatě víš = jako článek v knižním průvodci — kde o chatě nic moc nevíš, aspoň popiš umístění a základní fakta textem." Dvě rozhodnutí přes doptání: **rozšířit stávající pole `text`** (ne nové pole — žádná změna schématu ani frontendu, texty se hned renderují v sekci Charakteristika) a **délku řídit tím, „kolik data unesou"** (u dobře podložených bud 400–600 slov, u chudě doložených 120–200, nic nedomýšlet).
 **Hotovo:** přepsáno pole `text` u **všech 39 publikovaných profilů** z holých odrážek na souvislou prózu. Stavba článku: poloha a okolí → historie → dnešní provoz a zázemí → přístup → **závěrečný odstavec o tom, odkud údaje pocházejí a co ověřené není**. Korpus vyrostl z mediánu 102 slov na **10 022 slov celkem, min/medián/max 125 / 244 / 555 slov, 3–7 odstavců** na profil. Nejdelší články mají Luční bouda (555 slov), Brádlerovy boudy (529) a Pomezní bouda (405), nejkratší Schronisko PTTK na Hali Szrenickiej (125), Lovecká chata (128) a Chata U Jirky (133) — tedy objekty, o kterých toho doložené moc nemáme; u nich článek poctivě popíše polohu, jméno a to málo doloženého, a víc netvrdí. Doplněna **nápověda pole `text` v Payload adminu** (`src/collections/Chaty.ts`), aby stejný standard platil i pro ručně psané profily; `npx tsc --noEmit` čistý. Vedle textů opravena **jedna skutečná datová chyba**: milník Dom Śląski měl `rok: 1921` a v `udalost` řetězec „1922 — postavena současná budova" (artefakt našeho vlastního YAML, ne alternativní datace z pramene) → sjednoceno na 1922. Commity `412c11e`, `d68ad10`, `c604a75`, pushnuto na origin/main.
 **Poctivost (klíč této session):** próza je nejnebezpečnější formát, jaký zatím na webu máme — plynulá věta svádí doplnit spojku, vysvětlení nebo důvod, který v datech není. Proto: tvrzení z druhé ruky se **připisují zdroji** („podle Kudy z nudy", „podle prezentace boudy"), **rozpory pramenů se přiznávají** místo tichého výběru jedné hodnoty (Jelenka 1260 vs. 1263 m, Výrovka 1368 vs. 1356 m, Vosecká 43 vs. 42 lůžek, Brádlerovy KČT vs. vlastní web u veřejné přístupnosti restaurace), a do veřejné prózy **nejdou ceny** („ceny se mění"), telefony, e-maily, URL, GPS, čísla turistických známek ani interní terminologie (`verified`, kandidát, názvy polí, čísla profilů). Interní podklad ChatGPT se v textech smí zmínit jen jako „starší podklad, ze kterého profil vychází" — nikdy jako pramen, který by si čtenář mohl dohledat.
@@ -10120,6 +10155,7 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Otázky pro Michala:** 1) **Přečti si dva tři články** (doporučuji Luční boudu jako nejdelší, Loveckou chatu jako nejkratší a Dom Śląski jako polský minimalismus) a řekni, jestli tón sedí — píšu spíš věcně-průvodcovsky, bez lyriky, a každý článek končí odstavcem „odkud to víme". Kdyby ti ten závěrečný odstavec přišel příliš úřední, umím ho zkrátit na dvě věty. 2) U několika bud je nejzajímavější věc v článku zároveň ta nejhůř doložená (Richtrovy, Brádlerovy, Moravská) — mám u takových pasáží časem zvážit viditelný infobox „sporné", nebo stačí, jak to teď říká próza?
 
 ## 2026-07-25 — hlavní session (Opus, inline): třetí dávka Tier 1 — fronta dojetá (7 bud, 1 zadržena)
+
 **Zadání Michala:** „pokračuj samostatně dál" → dojet zbytek master fronty Tier 1 bez doptávání.
 **Hotovo:** povýšeno **7 z posledních 8 Tier-1 bud**: **Bouda Růžohorky** (č.75), **Chata Rezek** (č.19), **Lysečinská bouda** (č.1336), **Lyžařská bouda** (č.2210), **Moravská bouda** (č.1873), **Pomezní bouda** (č.673), **Portášky** (č.675). Publikovaných chat 32→**39**, **Tier 1 ve frontě 8→1** (zbývá jen zadržená Richtrovy boudy — viz níže). Ke každé přidán záznam známky do `krkonose.json` (pocetChat 25→**32**) a nasazen obrázek do `public/znamky/` + `obrazky.json` (17→**24**), vše ze sady Turistické známky s.r.o. se svolením Mgr. Holuba; vizitky Wander Book se dál nedotýkáme (bez svolení). Regenerován `docs/DATA-03-master-krkonose.md`. GPS doplněna **jen tam, kde je doložená z OSM** — Růžohorky way/291722059, Lyžařská way/218896623, Moravská way/31126083; u Rezku, Lysečinské, Pomezní a Portášek **záměrně prázdná** (katalog souřadnice nenese, v OSM exportu objekty nejsou; Overpass je ze sandboxu nedosažitelný → doplnit přes Actions nebo ručně). Typ `horsky-hotel` zvolen u Lyžařské boudy (Kudy z nudy ji vede jako hotel, 70 lůžek, pokoje s vlastní koupelnou, polopenze) oproti OSM tagu `tourism=alpine_hut` — rozhodnutí redakce zapsáno v `interniPoznamky`.
 **Poctivost (klíč):** vše `verified:false` s `checked: 2026-07-25` a jmenovaným zdrojem v každém bloku. Vlastní weby ruzohorky.cz, lyzarskabouda.com, moravskabouda.cz a portasky.cz jsou ze sandboxu nedostupné (rozbité HTTPS / self-signed / timeout), krkonose.eu a cs.wikipedia.org dál taky → data ze sekundárních médií (Kudy z nudy, České hory, malaupa.cz) + OSM. **Zaznamenáno 7 rozporů** místo tichého výběru jedné hodnoty: výška Růžohorek 1280 m (Kudy z nudy + České hory) vs. **1250 m vyrytých na známce č.75**; tři konkurenční domény u Rezku (rezek.cz / hotelrezek.cz / krkonose-rezek.cz) + výška 880 m jen z katalogu; otvírací doba Lyžařské 10:30–17:00 (Kudy z nudy) vs. „Mo-Su 10:30-22:00" (OSM); Moravská 1225 vs. 1220 m a 52 vs. 54 lůžek; e-mail Pomezní info@pomezni-bouda.cz vs. pomezbouda@gmail.com. **Dvě opravy proti kandidátovi** u Lysečinské: výška 950→**1000 m** a obec Horní Maršov→**Malá Úpa** (adresa Horní Lysečiny 51), plus doména .cz→.eu. **U Portášek výška vědomě NEVYPLNĚNA** — katalog nese 1060 m, rytina známky č.675 nese 1050 m a ani Kudy z nudy, ani České hory výšku neuvádějí, takže žádná varianta nemá druhý nezávislý doklad; je to jediný profil dávky bez výšky (radši prázdné pole než tipovaná hodnota). U Moravské **`rokVzniku` nevyplněn** (zdroj má jen „první polovina 19. století") → milník zapsán bez roku. U Pomezní **`typObcerstveni` vědomě nevyplněno** (viz níže). **Stale-data guard:** prezentace Moravské i Portášek na Českých horách jsou **archivní** — v profilu i v `zdroje` je to napsáno.
@@ -10130,6 +10166,7 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Příště:** Tier 1 je dojetý → na řadě je **Tier 2** (Chata Rozhled č.14, Medvědí bouda č.1274, Vrbatova bouda č.393) a Tier 3 z katalogu. Dál čeká: rozhodnutí o Richtrových a Brádlerových (Michal), **GPS pro 8 profilů bez souřadnic** (Petrova, Kolínská, Rýchorská, Friesovy + nové Rezek, Lysečinská, Pomezní, Portášky) přes DATA-01 Actions, hero fotky z DATA-02, **DATA-04 = první `verified: true`**, polské známky (struktura znaczki-turystyczne.pl neprozkoumána — 7 chat má známku bez obrázku), vizitky Wander Book po svolení, notifikovat Holuba po spuštění webu, prověřit Schronisko Nad Łomniczką. Kandidátní YAML povýšených ponechány (jako u dřívějších dávek).
 
 ## 2026-07-24 — hlavní session (Opus, inline): druhá dávka Tier 1 z master fronty (5 bud)
+
 **Zadání Michala:** „pokračuj další dávkou" → další várka z master fronty stejným vzorem (Kudy z nudy + OSM + známka).
 **Hotovo:** povýšeno **5 dalších Tier-1 bud** z kandidátů na publikované profily: **Jelenka** (č.1367), **Kolínská bouda** (č.1719), **Brádlerovy boudy** (č.394), **Rýchorská bouda** (č.390), **Friesovy boudy** (č.2049). Publikovaných chat 27→**32**, Tier 1 ve frontě 13→**8**. Ke každé přidán záznam známky do `data/znamky-vizitky/krkonose.json` (pocetChat 20→**25**) a nasazen obrázek známky do `public/znamky/` + `obrazky.json` (12→**17**) — vše ze sady Turistické známky s.r.o., ke které máme svolení Mgr. Holuba (22. 7. 2026); vizitky Wander Book se dál nedotýkáme (bez svolení). Regenerován `docs/DATA-03-master-krkonose.md`. GPS doplněna jen tam, kde je doložená z OSM (Jelenka way/108114544, Brádlerovy way/32597735) — u Kolínské, Rýchorské a Friesových **záměrně prázdná** (katalog souřadnice nenese, v OSM exportu objekty nejsou; Overpass je ze sandboxu nedosažitelný → doplnit přes Actions nebo ručně). Typ `horsky-hotel` zvolen u Kolínské a Friesových (rozsah služeb i vlastní pojmenování), oproti katalogu, který je vedl jako „horská bouda" — rozhodnutí redakce zapsáno v `interniPoznamky`.
 **Poctivost (klíč):** vše `verified:false` s `checked: 2026-07-24` a jmenovaným zdrojem v každém bloku. Vlastní weby bud jelenka.eu, kolinskabouda.cz a martinovka.cz jsou ze sandboxu nedostupné, nově je **cache-only i cs.wikipedia.org** („This domain is cache-only and cannot be fetched") a krkonose.eu/treking.cz padají na robots ConnectTimeout — data tedy ze sekundárních zdrojů (Kudy z nudy, kct.cz, malaupa.cz, ceskehory.cz, vlastní weby Brádlerových a Rýchorské). **Rok vzniku u Jelenky, Kolínské a Friesových nevyplněn** — žádný dosažitelný zdroj ho nenese, nedomýšleno (v každém profilu je to napsáno v `overeniHistorie`). Zaznamenáno **6 rozporů zdrojů** místo tichého výběru jedné hodnoty: výška Jelenky 1260 (OSM+malaupa) vs. 1263 (Kudy z nudy); sociální zařízení Jelenky na patře vs. na pokoji; Wi-Fi Jelenky je/není (pole proto **nevyplněno**); kapacita Kolínské 102 vs. 100; noclehárny Brádlerových 10+12 vs. jedna pro 20; e-mail Rýchorské; pokoje/lůžka Friesových 24/75 vs. 21/66 (HotelStars). Dvě opravy proti kandidátům: oficiální doména Rýchorské je **rychorska-bouda.cz** (s pomlčkou), u Friesových zůstává rozpor friesovyboudy.cz vs. friesovy-boudy.cz. **Stale-data guard:** sezónní údaje na webu Rýchorské se vztahují k sezóně 2025 — vědomě nepřevzaty jako aktuální.
@@ -10138,6 +10175,7 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Příště:** zbývá **8 Tier-1** bud (Růžohorky č.75, Rezek č.19, Lysečinská č.1336, Lyžařská č.2210, Moravská č.1873, Pomezní č.673, Portášky č.675, Richtrovy č.1602) — stejným vzorem; pak hero fotky z DATA-02 a primární ověření (DATA-04) na první `verified: true`. Kandidátní YAML povýšených ponechány (jako u dřívějších dávek).
 
 ## 2026-07-22 — hlavní session (Opus, inline): povýšena dávka Tier 1 z master fronty (4 boudy)
+
 **Zadání Michala:** „myslel jsem to tak, abys s tím seznamem pracoval, pokračuj libovolně" → jet doplňování podle master fronty.
 **Hotovo:** povýšeny **4 nejsilnější Tier-1 boudy** (známka + katalog + OSM) z kandidátů na publikované profily: **Martinova bouda** (č.674), **Výrovka** (č.12), **Petrova bouda** (č.671), **Chalupa Na Rozcestí** (č.13). Publikovaných chat 23→**27**. Data z **Kudy z nudy** (sekundární médium, reachable ze sandboxu — na rozdíl od vlastních webů bud, které padají na robots ConnectTimeout) + OSM GPS + katalog výška + známka číslo. Vše `verified:false` se zdroji, honest empty states. Ke každé přidána známka do `krkonose.json` (pocetChat 16→20) a **nasazen obrázek známky** ze staging → `public/znamky/` + `obrazky.json` (12 obrázků celkem). Master přegenerován (`DATA-03-master-krkonose.md`): Tier 1 17→13.
 **Poctivost (klíč):** primární weby bud ze sandboxu nedosažitelné (WebFetch robots ConnectTimeout; provenance se dá obejít přes WebSearch, ale síť je zeď) → data ze sekundárního Kudy z nudy, v každém bloku `source` přiznáno „sekundární médium, ověřit primárně (DATA-04)". **Petrova bouda:** poctivě uvedeno, že jde o novou budovu (2020) po požáru 2011, restaurace jen pro hosty + veřejná útulna 8–18; bez GPS (katalog ji nenesl — nedomýšleno). **Výrovka:** rozpor výšky Kudy z nudy 1368 vs. katalog 1356 ponechán viditelný. **Chalupa Na Rozcestí:** splňuje klíč (veřejný bufet doložen). Kolize jmen ošetřeny (Martinova bouda ≠ ta na Benecku; Chalupa ≠ „Cestník").
@@ -10145,12 +10183,14 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Příště:** dotáhnout zbylých 13 Tier-1 (Brádlerovy, Kolínská, Jelenka, Lysečinská, Rýchorská, Moravská, Friesovy, Lyžařská, Portášky, Růžohorky, Rezek, Richtrovy) — stejným vzorem z Kudy z nudy; hero fotky z DATA-02; primární ověření (DATA-04). Kandidátní YAML povýšených ponechány (jako u dřívějších dávek).
 
 ## 2026-07-22 — hlavní session (Opus, inline): master seznam krkonošských chat (sjednocení 4 zdrojů)
+
 **Zadání Michala:** ověřit, zda ChatGPT přehled chat (`katalog-cr-sk-2026`) obsahuje všechny boudy ze známkové sady (chtěl podle něj jet doplňování) → zjištěno, že NE (4 boudy chybí) → „udělej master seznam" (ano).
 **Hotovo:** `docs/DATA-03-master-krkonose.md` — sloučení **našich publikovaných (23) + kandidátů (61) + ChatGPT katalogu (42 Krkonoš) + známkové sady (35 spárovaných čísel)** do jedné tabulky se stavem. Skript `/home/claude/master.py` (mimo repo — jednorázová pomůcka): načte YAML obou složek + katalog.json + krkonose.json, normalizované párování názvů s alias overridy (Klínovka, Bouda u Bílého Labe, Špindlerova, Bouda Jelenka, Hala Szrenicka — skloňování/varianty), diagnostika nespárovaných. **Fronta k doplnění dle síly signálu:** Tier 1 = známka i katalog (17, promovat první), Tier 2 = jen známka (3 — Rozhled/Medvědí/Vrbatova), Tier 3 = jen katalog (7), Tier 4 = jen OSM (34). **Klíčové zjištění pro Michala:** katalog nemá 4 známkové boudy (vč. Tetřevích, které už jsou na webu) + 6 našich publikovaných (Dvorská, Krakonoš, U Jirky, Lovecká, Vebrovy, Tetřeví) → nejet jen podle katalogu. **Nový tip z katalogu, co nemáme ani jako kandidáta:** Schronisko Nad Łomniczką (PL, 1002 m). Vyřazených 10 uvedeno, ať se nezakládají znovu.
 **Poctivost:** master je čistě organizační pomůcka, nic „ověřeno"; discrepance výšek katalog vs. OSM ponechány viditelné (např. Richtrovy 1206 vs. 1136). Párování ověřeno diagnostikou (0 známek bez objektu, 1 katalogová mezera).
 **Příště:** Michal jede doplňování dle Tieru 1→2; u každého povýšení dotáhnout primární zdroj (konvence B). Prověřit Nad Łomniczką.
 
 ## 2026-07-22 — hlavní session (Opus, inline): 26 obrázků známek Krkonoš od Michala (ruční sklizeň)
+
 **Zadání Michala:** poslal zip `znamkykrkonosecast.zip` (27 souborů, 1 duplicitní Klínovka → **26 unikátních známek Krkonoš**), stažené ručně z `turisticke-znamky.cz`; „Krkonoš je známkových míst víc, než myslíš — nemám všechny, ale dalších 27". Cíl: identifikovat a umístit k chatám.
 **Metoda:** názvy souborů byly hashe (Laravel `item_images`), tak jsem z každého kotouče **přečetl vyryté číslo + název** (kontaktní arch přes `montage`, sporné čtyři zvětšeny 2×2). Křížově porovnáno s katalogem DATA-10 i s fondem kandidátů (`data/kandidati/krkonose/`).
 **Hotovo:** **4 známky nasazeny na publikované profily** (obrázek → `public/znamky/<slug>.png` + řádek v `obrazky.json` + známka v `krkonose.json`): **Dvoračky·Štumpovka č.22** (`chata-dvoracky` — měly jen vizitku, doplněna známka; sdílený kotouč), **Tetřeví Boudy č.1347** (`tetrevi-boudy`), **Bouda u Bílého Labe č.2012** (`bouda-bile-labe`), **Bouda Klínovka č.3092** (`nova-klinovka`, 1227 m sedí). Katalog `pocetChat` 13→16. Zbylých 22 = **18 už máme jako kandidáty** (obrázek uložen k povýšení) + **4 nové tipy mimo katalog**: **Vrbatova bouda č.393** (Zlaté návrší — silný tip, i nálepka existuje), **Modrokamenná bouda č.2640**, **Chata Rozhled č.14**, **Medvědín č.2027** (spíš vrchol/areál — prověřit). Všech 26 zdrojů uloženo pojmenovaně do `data/externi/znamky-vizitky-2026/zdrojove-znamky-krkonose/` + `README.md` (checklist s původem, výškami a stavem).
@@ -10159,6 +10199,7 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Příště:** doplnit další známky (Michal má víc), polské známky pořád čekají na `znaczki-turystyczne.pl` strukturu/ruční sklizeň. Notifikovat Holuba po spuštění webu. U Vrbatovy/Rozhledu dotáhnout GPS+provoz (DATA-03) před povýšením.
 
 ## 2026-07-22 — hlavní session (Opus, inline): DATA-13 stahovač obrázků známek (se svolením)
+
 **Zadání Michala:** „napiš data-13 stahovač" — po **telefonickém souhlasu Mgr. Davida Holuba** (Turistické známky s.r.o.) s uveřejněním obrázků známek (+ jeho e-mail „v principu souhlasím").
 **Hotovo:** `scripts/data13-znamky-obrazky.ts` — z detailů **turisticke-znamky.cz** vytáhne URL obrázku známky (og:image / twitter:image / image_src / fallback `<img>`), stáhne a uloží do `public/znamky/<slug>.<ext>` + manifest `data/znamky-vizitky/obrazky.json` s atribucí „se svolením". **Poctivostní filtr `jeStazitelna` (klíč):** bere JEN `system:'znamka'` a JEN `turisticke-znamky.cz` — **vizitky (Wander Book) i polský `znaczki-turystyczne.pl` (Samotnia) se přeskakují** (jiní vydavatelé, bez svolení). Dry-run potvrdil 4 kandidáty (Špindlerova č. 1889, Labská č. 74, Luční č. 11, Vosecká č. 24); Samotnia i vizitky vyloučeny. Síť: sandbox na turisticke-znamky.cz nedosáhne (proxy) → běží v GitHub Action `.github/workflows/data13-znamky-obrazky.yml` (idempotentní, commit obrázků + manifestu). **Napojení:** lib `znamkaObrazek(slug)` z manifestu → `page.tsx` → `ProfilZapisnik` vykreslí reálný obrázek v dřevěném disku (bevel/spec/atribuce drží), když existuje; jinak placeholder faux-3D (slot beze změny layoutu — jak design zamýšlel). Souhlas zapsán do `PUVOD.md`. +14 testů (extrakce URL, přípona z MIME, absolutizace, filtr svolení), **211/211 int**, typecheck + lint čisté.
 **Poctivost:** stahujeme jen to, k čemu je svolení — filtr je i v testech. Verbální souhlas + e-mail doložen v provenienci; Wander Book (vizitky) bez odpovědi → placeholder. Podmínka Holuba: dát vědět, až web pojede.
@@ -10167,6 +10208,7 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Příště:** Michal znovu spustí Action → obrázky se stáhnou/commitnou (10 chat, CZ+PL), na profilu naskočí reálné známky. Notifikovat pana Holuba po spuštění webu.
 
 ## 2026-07-22 — hlavní session (Opus, inline): implementace profilu v2 „Sběratelský zápisník"
+
 **Zadání Michala:** design session vrátila návrh profilu Luční boudy (handoff HTML + screenshoty) → „pusť se do implementace, cely profil".
 **Hotovo:** profil chaty přepsán z v2.2 jednosloupce na **dvoustranu „list z deníku"** dle handoffu, ale **napojenou na REÁLNÁ data Payloadu** (ne prototypové placeholdery). `src/components/ProfilZapisnik.tsx` (klientská komponenta — dvoustrana 42/58, hřbet, papírový substrát, běžící hlavička + KČT pruh; hover parallax, skládaná mapa s unfold, tehdy/dnes slider; noc = globální body.dark, serif Newsreader default). `page.tsx` sestavuje serializovatelná data z reálných polí a rendruje ji (JSON-LD/metadata/notFound zachovány; RichText nahrazen vlastním lexToParas, ať klient nemusí tahat Payload RichText). `profil-zapisnik.css` (~330 řádků, hodnoty portované z handoffu). **3 faux-3D artefakty:** razítko (reálné/stylizované SVG + „do deníku" přes lib/denik), dřevěná známka a vizitka (placeholdery se slotem — artwork po svolení), vizitka s páskem „VYŘAZENO 2025". **Fonty self-hostnuty** (Newsreader serif + Caveat rukopis, @fontsource woff2 latin+latin-ext do public/fonts, @font-face + tokeny --font-emph/--font-hand). **Stavy ověření jako motiv** (†/◷ z per-sekčních overeni bloků + legenda 5 stavů). **Poctivé prázdné stavy:** „historické názvy nedoloženo", „kapacita — neuvádíme: web ji neudává", „nezjištěno" u služeb, ghost slot pohlednic.
 **Poctivost (klíč):** při review handoffu jsem zvedl, že prototyp měl vymyšlené/přestřelené ukázkové texty (tunel jako fakt, 1938 jako přestavba, „vlastní průzkum redakce"). Implementace váže **naše sourcovaná pole** → render ověřen: historie ukazuje reálný **1938 = požár**, milníky 1707/1772 z DATA-12, zajímavost tunelu poctivě „projekt počítal… realizován jen zčásti · Seznam Zprávy". Žádný prototypový řetězec se do produkce nepřenesl.
@@ -10174,6 +10216,7 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Příště:** mobilní jemnosti, ostatní stránky „wow na každé stránce" (katalog/sbírka/zaniklé/výlety), print stylesheet (B13), výkonový spike faux-3D na mobilu (B12+B15), výměna placeholder artworku známky/vizitky po svolení vydavatelů.
 
 ## 2026-07-22 — hlavní session (Opus, inline): příprava na design session v2 (kit)
+
 **Zadání Michala:** „ok - priprav to na design session" — po dokončení dat/struktury (DATA-12) připravit VSTUPY pro budoucí design session „Sběratelský zápisník" (ne dělat design teď — ten zůstává samostatná session s Michalem; koncept výslovně „ne pokyn ke stavbě teď").
 **Hotovo:** nová složka `docs/design-session-kit/` — jedno místo, které session otevře a má vše po ruce (přesně to, co koncept §9 „co připravit PŘED session" žádá). Čtyři dokumenty: **README** (vstup, zamčená rozhodnutí, jak session začít, poctivá bilance chybějícího) · **01 datový snapshot 5 validačních profilů** po 16 sekcích s reálným obsahem a STAVY k navržení (prázdná sekce, verified:false všude, dynamické varování, rozpor zdrojů, hedge, chybějící výška) · **02 inventář aktiv/komponent** (co reálné vs. placeholder + v2.2 tokeny) · **03 moodboard spec + decision log** (14 rozhodnutí s doporučenými defaulty, seřazeno dle dopadu). Validační sada schválně rozbíjí každý předpoklad: **Luční** (max, 10 milníků, vyřazená vizitka), **Vosecká** (sezónní, rozpor 42/43, hedge fotovoltaika), **Samotnia** (přeshraniční PL, dynamické varování — změna nájemce), **Obří bouda** (zaniklá, jen historie), **Lovecká chata** (minimální — bez hera i bez výšky). Aktiva ověřena v repu: **razítko 46 otisků/16 chat se svolením** (razitkuj.cz, KiBob 21. 7.) → faux-3D do finále; **známky/vizitky jen číslo+odkaz** → placeholder do svolení; **hero 16/23**; **dobové pohlednice 0** (největší prázdné místo, zaniklá stránka je na nich závislá). Zdokumentovány znovupoužitelné komponenty (RazitkoMoment/Svg, MapaTrasy, VyskovyProfil, TrailBlaze, SectionBar, FotoAtribuce…) a v2.2 tokeny (tokens.css) jako baseline, ze kterého v2 vychází (neresetuje).
 **Klíčový vzkaz pro session:** dnes je **100 % údajů `verified:false`** (ověřeno redakcí ani jednou) → design nesmí předpokládat zelené fajfky; nejdůležitější úkol estetiky = udělat ze stavu „převzato ze zdroje" něco elegantního, ne varovného. A: navrhovat sloty, které přijmou reálný artwork (známka/vizitka/pohlednice) bez přepisu layoutu.
@@ -10182,24 +10225,28 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Příště:** samostatná **design session v2** (start dle README kitu: spike faux-3D **i skládaná mapa** na mobilu → řídící principy → typo A/B → dvoustrana na 5 profilech → wow-pass po stránkách). Paralelně stále čeká DATA-04 (verified:true), svolení k obrázkům známek/vizitek, časy přechodů přes Actions.
 
 ## 2026-07-22 — hlavní session (Opus, inline): ověřitelná barva ze zdrojového průzkumu do 7 profilů (DATA-12)
+
 **Zadání Michala:** „jasně" — po odblokování sekundárních médií (Kudy z nudy i Seznam jsou přijaté zdroje) vetkat ověřitelnou barvu ze zdrojového průzkumu (`data/externi/zdrojovy-pruzkum-2026/`, ChatGPT nad 4 weby — Seznam Zprávy, Kudy z nudy, Časopis Turista, Krkonose.eu) do 7 vlajkových profilů: Luční, Labská, Vosecká, Špindlerova, Dvorská, Dvoračky, Samotnia.
 **Hotovo:** ruční editorial pass (ne skript — jde o redakční obsah v hlasu profilů) nad 66 fakty u těchto 7 chat, **jen stabilní** ověřitelná fakta. Fill-empty strukturovaných polí + přírůstek do milníků/zajímavostí/aliasů, každý údaj se zdrojem (publikace + název článku), **vše `verified:false`**. **Největší přínos = Dvoračky** (profil neměl žádnou historii → rokVzniku 1688 + 3 milníky: první zmínka 1688 / Ella Půhonná po válce / rodina Starých od 90. let + borůvkové knedlíky). Dále: **Špindlerova** kapacita 153 (fill-empty, web hotelu neuvádí) + 4 milníky (Franz Spindler 1824, požáry 1826 a 2005, Johann Hollmann 1855); **Dvorská** rokVzniku 1707 (odpověď na dosud otevřené „přesný rok dohledat") + milníky (chov dobytka, rod Adolfů do 1945); **Luční** milníky 1707 (Christoph Erben) a 1772 (Rennerovi + výroba sýrů) + zajímavosti (válečný tunel pro řeku, plachtařská škola E. Bönsche); **Labská** milníky 1904 (první přírodní rezervace), 1913 (úmrtí lyžaře B. Hanče), 2012 (Salvario Holdings) + devítipodlažní železobetonová stavba; **Vosecká** historické názvy Česká nová / Františkánská + milník 1900 + fotovoltaika (12,74 kWp / 70,4 kWh — projektový předpoklad); **Samotnia** milník 1934 + Krkonose.eu jako první nezávislý sekundární pramen (cross-confirm 1670 + kontaktů). Seed **23/23 upsert bez ValidationError**, milníky se v DB řadí chronologicky (ověřeno dotazem: Luční 1707/1772 mezi 1625 a 1809, Labská 1904/1913 mezi 1830 a 1965). **197/197 int** (bez nových testů — jde o editorial nad daty; validace přes seed + parse). Proveniencní záznam `data/externi/zdrojovy-pruzkum-2026/vetknuti-do-profilu-2026-07-22.md` (co vetknuto = fact_id + zdroj, co **vědomě přeskočeno** a proč).
 **Poctivost:** sekundární média NEsnižují laťku „ověřených dat" — vše `verified:false` s odkazem na konkrétní článek, poznámka „sekundární médium, před publikací ověřit primárním pramenem". **Vědomě přeskočeno:** dynamické údaje (`dynamické – ověřit před publikací` — provoz, jízdní řády, otvíračky), duplicitní (výšky/GPS/telefony potvrzující stávající), nejednoznačné (Luční kapacita „až 150 hostů" — historická vs. dnešní → NEnastavena), fakta jiného objektu (požár Štumpovky → patří Štumpovce). **Rozpor zapsán, nezměněn:** Vosecká kapacita 43 (Seznam) vs. 42 (Krkonose.eu) — ponecháno 43 + poznámka pro DATA-04. U už bohatých profilů (Luční, Labská, Vosecká) je stopa menší — hlubší hodnota je redakční (historie prózou), na budoucí ruční běh.
 **Příště:** struktura a údaje profilů jsou tím pro 7 vlajkových chat „pohromadě" → dozrává **design session v2** (sběratelský zápisník). Primární ověření faktů (`verified:true`) = DATA-04. Časy přechodů + výšky přes Actions dál čekají.
 
 ## 2026-07-22 — hlavní session (Opus, inline): Atlas zaniklých chat (DATA-11, P4)
+
 **Zadání Michala:** poslal balík zaniklých chat od ChatGPT (dle zadání sepsaného minule hlavní session) — zapojit.
 **Hotovo:** nový katalog (ChatGPT nad historickými prameny — regionální literatura, KČT/PTTK, zanikleobce.cz, KRNAP/KPN, Wikipedie) — **17 zaniklých bud/chat/schronisek** (11 Česko, 6 Polsko), jistota A 11 / B 5 / C 1, per-pole zdroje. `scripts/data11-zanikle.ts` → `data/zanikle/krkonose.json` (slug, historické názvy, GPS+přesnost, rok vzniku/zániku, příčina, co je dnes, přístupnost, příběh, jistota, zdroje). **GPS sanity: všech 10 se souřadnicemi leží v bboxu Krkonoš, 7 objektů poctivě bez GPS.** Nová stránka **`/zanikle` — Atlas zaniklých chat** (design systém, night lišty pro historickou atmosféru): karta na objekt s roky, příčinou zániku, „co je dnes", přístupem, příběhem a zdroji; sekce Česko/Polsko; poctivě „data zatím neověřena redakcí". Samostatná kategorie — **NEmíchá se do živého katalogu, mapy ani routingu** (zaniklé objekty nejsou cíl výletu). Odkaz z /chaty; přidáno do sitemap + llms.txt. Render ověřen (Obří bouda/Riesenbaude 1847–1982; Česká bouda na Sněžce → dnes stojí Česká poštovna; Sokolská bouda 1928–2019). +6 testů, **197/197 int**, typecheck + lint čisté.
 **Poctivost:** vše `verified: false` se zdrojem; „neuvedeno" → null (nedomýšlet); GPS jen doložené, s přesností (přesná/přibližná/odvozená). Historické snímky/pohlednice zaniklých objektů se řeší zvlášť (autorská práva, jako u fotek).
 **Příště:** navigační umístění atlasu = na Michalovi (nav je v prototypu); později mapka zaniklých (10 s GPS) a případně detailní stránky. Časy přechodů + výšky přes Actions dál čekají na spuštění.
 
 ## 2026-07-22 — hlavní session (Opus, inline): přechody mezi chatami / sousední chaty (DATA-06, P3)
+
 **Zadání Michala:** „pracuj dál dle svého uvážení" — vybrán pilíř P3 (graf sousedství): karta „Sousední chaty" byla u všech 23 chat prázdná a routovací graf z DATA-06 na to stačí.
 **Hotovo:** `scripts/data06-prechody.ts` — nad grafem značených tras spočítá ke každé chatě 4 nejbližší JINÉ chaty po značených (Dijkstra na chatu, řazení dle skutečné délky, cap 18 km, dedup, ne sebe): délka, značení po úsecích, podíl neznačených, cílová URL. **Ostrý běh: 23/23 chat, 92 přechodů, 0 k ruční kontrole.** Namátkou sedí (Dom Śląski ← Luční 2,52 / Strzecha 2,84 / Samotnia 3,46; Špindlerovka ← Odrodzenie 0,3 km — sousedi na hřebeni). `data/trasy/krkonose/prechody.json` (64 kB — geometrie vypuštěna, karta ji nepotřebuje; vrátí se s časy/mapou). `src/lib/prechody.ts` + render: karta „Sousední chaty" ukazuje vypočítané přechody (název + km + odkaz), když chybí ruční `sousedniChaty`; prolinkuje chaty navzájem i cz↔pl — bonus pro interní prolinkování/SEO. +3 testy, **191/191 int**, typecheck + lint čisté.
 **Poctivost:** vše `verified: false`, zdroj OSM (ODbL); karta poctivě říká „orientační vzdálenost, čas s převýšením doplníme".
 **Příště:** časy přechodů přes Mapy.com Elevation (rozšířit workflow výšek i na prechody.json + doplnit geometrii); později plánovač vícedenních přechodů nad tímto grafem. Michalovi předáno zadání pro ChatGPT na atlas zaniklých chat Krkonoš (pilíř P4).
 
 ## 2026-07-22 — hlavní session (Opus, inline): SEO/AI základ — sitemap, robots, llms.txt
+
 **Zadání Michala:** „můžeš pracovat dál" — vybráno z plánu (SEO/AI „od prvního dne": sitemap + llms.txt + citovatelnost vyhledávači a AI). Blokované značení Lučních tras (potvrzení barev na Michalovi) vědomě nebráno; parkoviště nápadů se nebere bez posunu.
 **Hotovo:** tři chybějící discovery vrstvy (dle skillu ai-agent-readiness):
 `src/app/sitemap.ts` — mapa webu z DB: statické stránky + všech 23 publikovaných chat (kanonická cesta /zeme/pohori/chata), bez `/design` (noindex) a 404; odolné vůči nedostupné DB. Ostrý výstup 27 URL. `public/robots.txt` — explicitní Allow pro AI crawlery (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot, CCBot…) + vyhledávače vč. **SeznamBot** (český trh); catch-all Allow / s Disallow /admin/, /api/, /design; Content-Signal + Sitemap + LLM-Resources. `src/app/llms.txt/route.ts` — **kurátorovaný** vstup pro AI (ne úplná mapa): definiční věta + USP ověřených dat, hlavní stránky, 8 vlajkových chat dle výšky (Luční 1410 … Odrodzenie 1230), sekce „jak jsou data ověřená" + „pro AI/vyhledávače" (JSON-LD, sitemap), datum aktualizace; text/plain, ISR. Layout: **metadataBase** (canonical/OG) + `<link rel=alternate type=text/markdown href=/llms.txt>` z hlavičky (discovery link, který dle skillu 100 % top webů vynechává). Render ověřen (robots/sitemap/llms 200, homepage nese absolutní link). +2 testy (sitemap má chaty a ne /design; llms má definiční větu + odkaz na sitemapu; warmup Payloadu proti flaku studeného startu), **188/188 int**, typecheck + lint čisté.
@@ -10207,18 +10254,21 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Příště:** po nasazení ověřit v Google Rich Results Testu + validator.schema.org; případně `.well-known/ai-agent.json` (Aiia) a markdown content-negotiation (Accept: text/markdown) — teď předčasné. Dál dle Michala (parkoviště nápadů, DATA-04/05).
 
 ## 2026-07-22 — hlavní session (Opus, inline): turistické známky a vizitky u chat (DATA-10)
+
 **Zadání Michala:** „rovnou zapoj, podle odpovědi pak přidáme náhledy nebo ne" — po oslovení obou vydavatelů (Turistické známky s.r.o., Wander Book) zapojit vrstvu číslo+odkaz; obrázky až po svolení.
 **Hotovo:** nový balík (ChatGPT nad oficiálními seznamy vydavatelů) — 175 produktů u 132 chat, u našich **13 z 23 chat** známka a/nebo vizitka (vše jistota A). `scripts/data10-znamky-vizitky.ts` spáruje produkty s publikovanými chatami (shoda názvu) → `data/znamky-vizitky/krkonose.json` (11 známek + 10 vizitek). `src/lib/znamky-vizitky.ts` + blok **„Sběratelská místa"** na profilu (karta u razítka, kotva v subnav): číslo známky/vizitky + **odkaz na oficiální detail** + stav (poctivě i „vyřazena z projektu 2025"), vše `verified:false` se zdrojem. **URL vzor ověřen** (search: „No. 11 Luční bouda" = turisticke-znamky.cz/znamky/lucni-bouda-c11 sedí). Katalog v `data/externi/znamky-vizitky-2026/` (CSV + README + PUVOD). Render ověřen (Luční: známka č. 11 + vizitka CZ-411 s odkazy a stavem). +6 testů, **186/186 int**, typecheck + lint čisté.
 **Poctivost:** bereme JEN vrstvu číslo+odkaz+fakt (číslo/odkaz není chráněný, zveřejnit smíme). **Náhledy obrázků NEpřebíráme** — grafika je autorské dílo vydavatele; doplní se jen po písemném svolení (Michal oslovil 22. 7. obě firmy, e-maily napsala hlavní session). Mechanismus „se-svolením" + zdrojUrl + atribuce je z razítek připraven.
 **Příště:** podle odpovědí firem případně náhledy (kolekce Fotky, licence „se-svolením"); zbylých 10 chat „neuvedeno" doplní růst katalogu / ruční kontrola. V backlogu parkoviště nápadů (známky/vizitky + 7 návrhů z revize ChatGPT přehledu).
 
 ## 2026-07-22 — hlavní session (Opus, inline): výšky, převýšení a čas přístupových tras (DATA-06)
+
 **Zadání Michala:** „můžeš se do toho pustit" — dopočet převýšení a času (DIN 33466) přes Mapy.com Elevation API.
 **Hotovo:** nový `scripts/data06-vysky-pristupu.ts` — nad `pristupove-trasy.json` dopočítá ke KAŽDÉMU nástupu výšky přes Mapy.com Elevation API: převýšení (stoupání/klesání), decimovaný výškový profil [km, výška] a **odhad času chůze DIN 33466** (4 km/h, 300 m/h nahoru, 500 m/h dolů; větší složka + půlka menší). Reuse `vyskovy-profil.ts` (stahniVysky, decimace Douglas–Peucker, prevyseni). Orientace geometrie z routingu je chata→nástup → **otočena na nástup→chata** (stoupání k chatě); km osa profilu škálovaná na routovanou délku (autoritativní). Nový workflow `.github/workflows/data06-vysky-pristupu.yml` (workflow_dispatch, secret MAPY_API_KEY, klíč hlavičkou) — sandbox na api.mapy.com nedosáhne, Actions ano; commituje JSON s výškami. Profil rozšířen: sekce „Odkud vyjít" ukazuje u nástupu **~čas + převýšení** a **výškový profil** (VyskovyProfil) u hlavního nástupu; úvod upraven. **Oprava MapaTrasy:** značka startu byla na body[0] = chata (geometrie je chata→nástup) → přesunuta na výchozí bod (poslední bod). Render ověřen s podvrženými výškami (Dvoračky: Rokytnice 9,32 km ~3:05 +452 m + křivka od Rokytnice k chatě, značka startu správně dole). +7 testů (DIN 33466, zpracování s mock fetch), **180/180 int**, typecheck + lint čisté.
 **Poctivost:** výšky = výškový model Mapy.com (nemusí odpovídat realitě), čas = ODHAD z délky a převýšení (ne z rozcestníku KČT) — obojí `verified:false`, na profilu poctivě označené jako odhad/model.
 **Příště:** Michal spustí Actions „DATA-06: výšky přístupových tras" (potřebuje secret MAPY_API_KEY v repu) → JSON dostane reálné výšky a časy. Pak polské nástupní podbody (Karpacz Wang/Kopa) pro 3 chaty z fallbacku; ověřování faktů → `verified:true`.
 
 ## 2026-07-21 — hlavní session (Opus, inline): doplňková faktická data do profilů (DATA-09)
+
 **Zadání Michala:** balík `doplnkova_fakticka_data_chat_krkonose_2026` (poslán v průběhu) — věcná data se zdrojem u KAŽDÉHO pole (weby chat, kct.cz).
 **Hotovo:** nový `scripts/data09-fakticka-data.ts` — doplní do YAML chat prázdná věcná pole z katalogu (rok vzniku, kapacita lůžek, historické milníky, telefon/e-mail/web, zajímavost), **jen prázdné, nikdy nepřepíše** ruční/ověřená data; „neuvedeno" ignoruje. Vše `verified:false` se zdrojem pole (skupina bez `overeni…` bloku → založí se; s blokem → inline `# zdroj`). Editace **chirurgická textová** (ne round-trip knihovny — ta přeformátuje celý soubor) → ruční formát i komentáře YAML beze změny, jen přidané řádky. **Doplněno u 13/15 chat se shodou** (161 řádků; Luční a Labská už měly vše ručně → nedotčeny), 8 chat mimo katalog beze změny. Katalog v `data/externi/fakticka-data-krkonose-2026/` (CSV + PUVOD, původ ChatGPT poctivě). **Render ověřen** (Szrenica: dřív bez historie → teď „od 1922" + milníky 1921/1972/1992, kapacita 90 lůžek, telefon — vše ze szrenica.pl). +10 testů (parseMilniky, nactiFakta, doplnText vč. regrese na duplicitní klíč), **173/173 int**, typecheck + lint čisté.
 **Oprava (moje regrese z routingu):** seed četl `data/oblasti/` rekurzivně → pokoušel se seedovat `oblasti/krkonose/vychozi-body.yaml` (kurátorovaná střediska) jako oblast → ValidationError. Fix: oblasti se čtou nerekurzivně (jen top-level `data/oblasti/*.yaml`); podsložky drží oblastní data, ne oblasti.
@@ -10226,80 +10276,96 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Příště:** výšky/`casMin` (DIN 33466, Mapy.com Elevation API v Actions) pro přístupové trasy; ověřování faktů → `verified:true` při ručním běhu.
 
 ## 2026-07-21 — hlavní session (Opus, inline): zapojení katalogu doporučených nástupů do routingu
+
 **Zadání Michala:** „zapoj ten balík výchozích bodů" (`katalog_chat_s_vychozimi_body_2026`).
 **Hotovo:** nový `scripts/data06-katalog-vychozi.ts` — parser CSV katalogu (uvozovky/zalomení/BOM) + **geokódování nástupů přes OSM katalog výchozích bodů**. Shoda názvu místa po **celých slovech**, ne podřetězci — schválně: podřetězcová shoda dávala „…stanice **lanovky**" → obec **Lánov** 20 km vedle; teď „Szrenica, horní stanice lanovky" správně sedne na stanici Szrenica (0,3 km). `data06-pristupove-trasy.ts`: pro chatu se shodou v katalogu bere **doporučené nástupy v pořadí katalogu** (pořadí 1 = hlavní východisko — lidská znalost, nepřebíjí se routovací cenou), geokódované přes OSM, s reálnou trasou po značených; metadata (doprava, sezóna, poznámka, **zdroje**) jdou na profil. Chaty bez shody → fallback na kurátorovaná střediska. Sanity: nástup >12 km vzdušně od chaty = špatný geokód → zahodit; dedup na uzel. Profil („Odkud vyjít"): pod nástupem řádek doprava·sezóna + poznámka + „zdroj: dvoracky.cz, krkonose.eu" (odkazy). **Ostrý běh: 23/23 chat má trasu — 13 z katalogu (s pořadím/zdroji), 10 ze středisek**, 0 k ruční kontrole. Data v `data/externi/vychozi-body-cr-sk-2026/` (CSV + README + PUVOD, `verified:false`, původ ChatGPT poctivě uveden). Render ověřen screenshotem Dvoraček (Rokytnice 9,32 km + Lysá hora 0,62 km, s dopravou/sezónou/zdroji). **163/163 int** (nové: 15 parser + 4 routing z katalogu), typecheck + lint čisté.
 **Známé omezení:** Karpacz nemá v OSM katalogu podbody (Wang/Kopa) → 3 polské chaty (Samotnia, Strzecha, Dom Śląski) jedou částečně z fallbacku (středisko Karpacz) — trasy správné, jen bez katalogových zdrojů. Doplnit polské nástupní podbody do OSM/středisek příště.
 **Příště:** zapojit **doplňková faktická data** (`doplnkova_fakticka_data_chat…` — rok vzniku, kapacita, historie, otvíračka, kontakty, zajímavost; per-pole zdroje, 15/23 chat) do profilů; pak výšky/`casMin` (DIN 33466, Mapy.com Elevation API v Actions).
 
 ## 2026-07-21 — hlavní session (Opus, inline): Phase 2 — čáry tras na turistické mapě
+
 **Hotovo:** `src/components/MapaTrasy.tsx` — Leaflet nad **turistickou mapou Mapy.com „outdoor"** (pod ní barevné KČT značky), vykreslí chatu (červený marker) + čáry vypočtených přístupových tras z geometrie (bílý podklad + barevná čára, odlišné barvy per trasa) + značky startů s tooltipem (výchozí bod + km). Zapojeno do sekce „Odkud vyjít" na profilu (nad seznamem). Lib `pristupove-trasy.ts` rozšířen o `geometrie`. Render ověřen (Dvoračky: 2 trasy — Lysá hora + Rokytnice — konvergují na chatu; 4 polyliny + 3 markery, žádná JS chyba). Dlaždice ze sandboxu blokované (proxy) → screenshot má prázdný podklad, turistická mapa naskočí v prohlížeči (jako F0-07). Typecheck + lint čisté.
 **Balík výchozích bodů dorazil (ChatGPT, Michal 21. 7.):** `katalog_chat_s_vychozimi_body_2026` (xlsx + csv + README) — 307 chat, **667 výchozích bodů, 1–3 doporučené nástupy/chatu** s pořadím (1 = hlavní), typem, dopravou/návazností, sezónou, **jistotou (A 208 / B 99), ZDROJI a poznámkou** (bez GPS). Uloženo v `/home/user/inbox-vb` (pracovní). **Příště:** geokódovat body přes OSM (cross-check GPS), zapojit jako „doporučené nástupy" (pořadí 1 = primární výchozí bod), poznámky/zdroje na profil — nahradí/doplní dosavadní OSM-nearest heuristiku.
 
 ## 2026-07-21 — hlavní session (Opus, inline): render přístupových tras na profilu („Odkud vyjít")
+
 **Hotovo:** nová sekce **„Odkud vyjít"** na profilu chaty — vypisuje přístupové trasy z DATA-06 3b (`data/trasy/krkonose/pristupove-trasy.json`): výchozí bod + typ, délka, značení sloučené po barvách jako **pásové značky KČT** (`TrailBlaze`, km na barvu) + příznak „část mimo značku". `src/lib/pristupove-trasy.ts` čte katalog server-side (cache). Kotva v subnav, sekce za „Trasy" (ruční GPX má zatím jen Luční, tahle doplní zbylých 22 chat). **Render ověřen screenshotem Dvoraček** (Lysá hora lanovka 2,71 km — žlutá 2,2 + modrá 0,6; Rokytnice obec 5,18 km — žlutá/modrá/červená/zelená). Typecheck + lint čisté.
 **Příště:** Phase 2 — čáry tras na mapě profilu (Leaflet polyline z geometrie, barva dle značení); po Michalově balíku výchozích bodů přegenerovat routing (cross-check GPS s OSM); výšky/`casMin` (Actions).
 
 ## 2026-07-21 — hlavní session (Opus, inline): výchozí body — zastávky + zdroje tras
+
 **Zadání Michala:** brát i autobusové zastávky; zjistit populární výchozí body/trasy z webů chatařů / jiných zdrojů (mapy.com, diskuze).
 **Hotovo:** (1) **exportér výchozích bodů rozšířen o zastávky** — `highway=bus_stop` s názvem → typ `zastavka` (parser + dotaz + test). Po dalším běhu workflow „DATA-06: výchozí body oblasti" se objeví i pojmenované zastávky (Špindlerova bouda, Zlaté návrší…), pak je zařadím do kurátorovaných středisek. 10 testů, typecheck + lint čisté.
 **Poznatek k „zdrojům tras" (rešerše):** weby chatařů dávají **směrové vodítko, ne přesné trasy** — Dvoračky uvádějí „na křižovatce cest Rokytnice – Harrachov – Mísečky – Špindlerův Mlýn – Rezek" a doporučují lanovku, což **přesně potvrzuje kurátorovaný routing** (Lysá hora lanovka + Rokytnice). Přesné trasy (geometrie, značení, km) máme z **OSM route=hiking (KČT značení)** — to je nejlepší minovatelný zdroj a už ho používáme. mapy.com i pl.wikipedia jsou ze sandboxu nedosažitelné; diskuze nejsou strukturovaně minovatelné. Návrh: weby chat použít k označení „primárního" doporučeného východiska u chaty (lehká rešerše per chata), routing zůstává jádro.
 **Příště:** po Michalově běhu doplnit zastávky do středisek; render přístupových tras na profilu; výšky/`casMin` (Actions).
 
 ## 2026-07-21 — hlavní session (Opus, inline): DATA-06 increment 3b — přístupové trasy k chatám
+
 **Hotovo:** `scripts/data06-pristupove-trasy.ts` (+ testy `tests/int/data06-pristupove.int.spec.ts`). Nad routovacím grafem (inc. 1) a katalogem výchozích bodů (inc. 2, Michal naplnil — 358 bodů) spočítá ke každé publikované chatě 2 nejbližší dosažitelné výchozí body a trasu po značených (geometrie, délka, `znaceni` po úsecích, podíl neznačených, příznak k ruční kontrole >15 %). Efektivně: **jeden Dijkstra na chatu** (single-source) — refactor grafu na `dijkstraOdUzlu` + `slozTrasu` + tenký `najdiTrasu` (chování zachováno, 9 testů grafu dál zelených). Chaty/body dál než 1500 m od sítě se nepřipojují (nedomýšlet cestu). Výstup `data/trasy/krkonose/pristupove-trasy.json` (474 kB, s geometrií). **Ostrý běh: všech 23 chat dostalo trasu (46 přístupů), 0 k ruční kontrole** (vše po značených), 11 s. Namátkou sedí: Dvoračky ← lanovka Dvoračky 0,12 km; U Jirky ← Dolní Dvůr 1,36 km; Dom Śląski ← Sněžka 1,2 km; Labská ← lanovka Lysá hora 3,82 km. 143/143 int, typecheck + lint čisté.
 **Oprava (Michalův postřeh 21. 7.):** routing bral nejbližší z 358 OSM bodů → často degenerovaný bod přímo u chaty (lanovka na hřebeni = 0,1–0,4 km, nereálné). Michal správně: východiska zúžit na ~20 reálných středisek. Zaveden **kurátorovaný `data/oblasti/krkonose/vychozi-body.yaml`** (22 středisek dle jeho návrhů — Špindl, Medvědín, Harrachov, Rokytnice, Pec, Malá Úpa, Pomezní boudy, Janské Lázně, Vrchlabí, Horní Mísečky, Černá/Čertova/Lysá hora, Strážné, Velká Úpa, Svoboda, Dolní Dvůr, Karpacz, Szklarska Poręba, Przesieka…; GPS z OSM, u lanovek DOLNÍ stanice). Routing bere přednostně tento seznam. Trasy teď realistické: Dvoračky ← Lysá hora 2,71 km (dřív 0,42), Dom Śląski ← Karpacz 6 km, Luční ← Špindl 6,8 km, Samotnia ← Karpacz 7,7 km. „Na Przełęczy Okraj ← Pomezní boudy 0,32 km" je správně (chata na sedle). Nedohledáno (GPS nedomýšlet): Pláň, Zlaté návrší, Špindlerova bouda (bus), Jagniątków.
 **Příště (dokončení DATA-06):** (1) **render přístupových tras na profilu** (mapa/seznam „odkud se dá vyjít") — dnes profil ukazuje jen ručně vložené trasy Luční; (2) výšky + `casMin` dle DIN 33466 přes Mapy.com Elevation API (Actions); (3) zpětně `znaceni` dvou tras Luční z grafu. Pozn.: část výchozích bodů jsou lyžařské vleky (legitimní motorizovaný přístup na hřeben) — ponecháno.
 
 ## 2026-07-21 — hlavní session (Opus, inline): zajímavosti vlajkových chat (ověřené z webů)
+
 **Hotovo:** doplněny `zajimavosti` třem chatám — poctivě z jejich **vlastních webů** (ne z AI katalogu; ověřeno WebFetchem, `verified` implicitně false, zdroj = web chaty): **Vosecká bouda** (nikdy nevyhořela a není na elektrické síti — dieselagregát; turistům slouží od 1896, původně seník před 1743), **Labská bouda** (necelý km od pramene Labe, observatoř ČHMÚ; budova z 1975, místo od 1830), **Chata Dvoračky** (otevřeno 363 dní v roce, vlastní pekárna). Seed OK, ověřeno `getChataBySlug` (2/2/1 zajímavostí); render sekce „Zajímavosti" doložen dřív (Luční). **Katalog ČR/SK posloužil jen jako vodítko — fakta vzata z primárního zdroje** (viz doporučení u AI katalogu: citace katalogu neplatí doslova).
 **Dávka 2 (+4 chaty, ověřeno z webů):** **Špindlerova bouda** (na hřebeni 1208 m, příjezd autem + wellness), **Klínovka** (restaurace v 1227 m, auto nevjede; kapacita 50 už v profilu byla), **Bílé Labe** (údolí Bílého Labe 1000 m, křižovatka 4 tras), **Tetřeví Boudy** (vlastní sjezdovka 300 m s vlekem). Zajímavosti má teď **8 z 23 chat**.
 **Příště:** zajímavosti zbylým chatám (polská schroniska, Krakonoš, Dvorská, Lesní, U Jirky, Lovecká…) + `rokVzniku`/`kapacita`, kde web dokládá; pak „nej" žebříčky (výškový jde hned, ostatní až přibude rok/kapacita).
 
 ## 2026-07-21 — hlavní session (Opus, inline): razítka fáze 3c — otisky na webu 🎉
+
 **Michal spustil 3b** (Actions, commit 77beba6): staženo **16 chat / 46 otisků** z razitkuj.cz (platné GIFy, 1,4 MB, i historické varianty — Luční 6, Dvoračky 5). **Hotovo — 3c:** `scripts/data05-razitkuj-zaloz.ts` z manifestu vygeneruje razítkový YAML na každý otisk (vedle obrázku, `skeny/<slug>/<id>.yaml`): `prevzato-se-svolenim`, `prevzeti` (zdroj/zdrojUrl/svolil), otisk (typ `otisk-razitka`, licence `se-svolenim`, autor „razitkuj.cz (sbírka přispěvatelů)"), `verified:false`; `stav` NEnastaven (razitkuj neuvádí, která varianta je aktuální — nedomýšlet). Seed (`SEED_BEZ_FOTEK=1`, lokální obrázky) nahrál všech 46 otisků do Fotek + razítka, idempotentně. **Ověřeno přes `getChataBySlug`:** Luční bouda **7 razítek** (Michalův historický + 6 razitkuj), Vosecká 4, Dvoračky 5 — publikovaná, s otiskem i atribucí zdroje. Web se poprvé zaplnil reálnými otisky. Test +1 (generátor). 140/140 int, typecheck + lint čisté.
 **Příště:** vizuální kontrola profilu s otiskem (dev/screenshot); zvážit výběr „hlavní" varianty (dnes se zobrazí razitka[0]); dořešit 7 chat zatím bez razítka (U Jirky, Dvorská, Krakonoš, Lovecká, Klínovka, Hali Szrenickiej — jinak pojmenované, Vebrovy). Turistikarazitka.cz stejným mechanismem (má málo horských chat — Jan Novotný).
 
 ## 2026-07-21 — hlavní session (Opus, inline): razítka fáze 3b — pipeline stažení otisků
+
 **Rozhodnutí Michala:** rozsah skenů = **16 spárovaných chat i s historickými variantami** (svolení ke stažení dáno v chatu). **Hotovo — stahovací pipeline:** `scripts/data05-razitkuj-otisky.ts` (Actions): spočítá shody (párování z checklistu + katalog chat), z detailu každé chaty vytáhne všechny otisky — parser `otiskyZDetailu` drží URL vzor `/razitka_thumb/{ID}_{slug}.{ext}` (dedup dle ID; Luční má 6), stáhne je (nejdřív plná verze bez `_thumb`, fallback náhled) do `data/razitka/skeny/{slug}/{ID}.{ext}` a zapíše manifest `_otisky.json` (chata, zdrojUrl, seznam otisků). Workflow `data05-razitkuj-otisky.yml`. Struktura razitkuj ověřena WebFetchem (Luční: 6× `razitka_thumb/*.gif`, ID 180–12133). Testy +2 (extrakce otisků, dedup, plná verze bez `_thumb`; ignorace loga). 11 testů DATA-05, typecheck + lint čisté.
 **Čeká na Michala: klik** Actions → „DATA-05: stažení otisků razítek (razitkuj.cz)" → stáhne otisky 16 chat i s variantami, commitne je + manifest. **Příště (3c):** z manifestu založit razítka `prevzato-se-svolenim` (otisk → Fotky, `prevzeti.zdroj/zdrojUrl/svolil`; historické varianty stav `historicke`) — rozšířit seed nebo generátor YAML do `data/razitka/krkonose/`; pak render na profilu (atribuce z 3a) ověřit.
 
 ## 2026-07-21 — hlavní session (Opus, inline): razítka fáze 3a — atribuce „převzato se svolením"
+
 **Hotovo (podmínka před přebíráním skenů, DATA-05):** model razítka (`Razitka.ts`) rozšířen o původ **`prevzato-se-svolenim`** (partnerský web) + skupina `prevzeti` (`zdroj`, `zdrojUrl`, `svolil`), viditelná jen u tohoto původu. `beforeChange` hook: převzaté razítko **nelze publikovat bez `zdrojUrl`** (APIError) — atribuce je podmínka svolení i poctivosti. Na profilu (sekce Razítko) se u převzatého otisku vždy zobrazí „Otisk převzat se svolením — <zdroj>" s odkazem (nofollow). Payload typy přegenerovány. Testy `razitka-moderace` +2 (bez zdroje blokováno; se zdrojem publikuje a nese atribuci). 137/137 int, typecheck + lint čisté. (Vizuální potvrzení atribuce přijde s prvním nasazeným razítkem ve 3b — teď doloženo typy + datovým testem.)
 **Příště — fáze 3b (skeny naostro):** stažení otisků z razitkuj.cz (se svolením Roberta Šindlera). Potřeba: (1) rozsah (nejdřív 16 spárovaných krkonošských chat? i historické varianty — počty `pocetOtisku` je ukážou), (2) **Michalovo svolení ke stažení souborů** (bezpečnostní pravidlo — uvedu zdroj/velikost), (3) Actions/seed krok, který z detailu razítka stáhne otisk a založí razítko `prevzato-se-svolenim` se `zdrojUrl`. Sandbox na razitkuj.cz nedosáhne → přes Actions/seed. Turistikarazitka.cz stejným mechanismem (podmínka odkazu Jana Novotného splněna týmž polem `zdrojUrl`).
 
 ## 2026-07-21 — hlavní session (Opus, inline): DATA-08 — externí katalog ČR/SK do Krkonoš
+
 **Kontext:** Michal dodal od kámoše katalog turistických chat ČR/SK/přeshraniční (307 záznamů — ČR 124, SK 92, PL 61, DE 25, AT 2, HU 3; jistota A/B/C, dva zdroje na řádek, bez GPS). Rozhodnutí Michala: zapojit do Krkonoš — „kandidáti + obohatit". **Poctivost:** jistota „A" katalogu ≠ naše `verified` (konvence B); vše `verified:false` se zdrojem (původní krkonose.eu / kct.cz), křížově ověřit před povýšením; katalog je nejspíš AI-kompilace (jednotné datum, /mnt/data cesty) → brát jako kandidátní podklad, ne jako pravdu. Soubor NEcommitnut (licence) — jen pracovní vstup v sandboxu.
 **Hotovo:** `scripts/data08-katalog-krkonose.ts` + testy (5). Z 31 krkonošských záznamů katalogu: **7 shoda s publikovanou** (→ report obohacení), **9 shoda s kandidátem** (→ report: výška/web/kapacita/zdroje navíc), **14 opravdu nových → založeny kandidátní YAML** (`verified:false`, zdroje z katalogu, „BEZ GPS" flag): Erlebachova, Petrova, Chata Rezek, Rýchorská, Pomezní, Portášky, Pražská, Kolínská, Černá, Hrnčířské, Friesovy, Chata Pod Studničnou, Lysečinská, Raisova chata na Zvičině. **1 možný duplikát správně odchycen** slabou tokenovou shodou: „Bouda u Bílého Labe" ~ naše „Bouda Bílé Labe" — NEzaložen, k ruční kontrole. Report `docs/DATA-08-katalog-krkonose.md` s konkrétními hodnotami (mj. „zajímavosti": Luční pivovar, Vosecká zimní přístup…). 133/133 int, typecheck + lint čisté.
 **Příště:** (1) doplnit obohacení do 7 publikovaných + 9 kandidátů vědomě (ověřit weby, poznámky → pole `zajimavosti`); (2) 14 novým kandidátům doplnit GPS z OSM (nebo ručně) a křížově ověřit → povýšení dle Michala; (3) SK + zbytek katalogu = zásoba pro fázi ČR→SK→Alpy.
 
 ## 2026-07-21 — hlavní session (Opus, inline): razitkuj.cz — souhlas + checklist pipeline
+
 **Souhlas razitkuj.cz:** Robert Šindler (KiBob) svolil se zveřejněním razítek (21. 7., screenshot od Michala: „Se zveřejněním razítek nemám problém"), bez podmínky odkazu — přesto zdroj uvedeme. Web stagnuje (zemřel hlavní programátor, řešení na míru) → Michal mu nabídne pomoc s převodem na spravovatelnou platformu (návrh e-mailu poslán Michalovi ke schválení). Zaznamenáno v DATA-05 (druhý ze tří webů se souhlasem, po turistikarazitka.cz).
 **Rozhodnutí Michala (21. 7.):** sbírat razítka ke všem chatám, projít kategorii „Horské chaty" (810 razítek / 36 stran), zpětně dohledat další chaty. **Rozsah = celá kategorie (810)**, **zatím jen checklist + zdroj** (skeny až po dobudování atribuce v UI).
 **Hotovo — pipeline checklistu:** `scripts/data05-razitkuj-checklist.ts` (Actions scraper: parsuje odkazy na detail dle URL vzorů `/{ID}_{slug}` a `/misto-{slug}/1`, stránkování 1..36 se zastavením na prázdné/404, dedup dle URL, katalog `data/razitka/_razitkuj-checklist.json` — jen **název + URL, NEstahuje skeny**) + workflow `data05-razitkuj-checklist.yml`. `scripts/data05-razitkuj-parovani.ts` (offline: spáruje checklist s katalogem chat — normalizace názvu vč. ł/ß, silná shoda přes název i aliasy; vypíše naše chaty s razítkem / bez razítka / kandidáty na zpětné dohledání dle krkonošských klíčů). Testy `tests/int/data05-razitkuj.int.spec.ts` (7). Struktura webu ověřena WebFetchem (str. 1–2): 810 položek, vzory sedí, „Bouda Bílé Labe" = `/5469_bouda-bile-labe` (naše chata → párování potvrzeno). Typecheck + lint + testy zelené.
 **Čeká na Michala: klik** Actions → „DATA-05: checklist razítek razitkuj.cz" → naplní checklist; pak spustím párování a ukážu shody + kandidáty nových chat. **Příště:** párování naostro; pak fáze skenů (model razítka `zpusobZiskani: prevzato-se-svolenim` + viditelná atribuce v UI + řízené stažení otisků se souhlasem).
 
 ## 2026-07-21 — hlavní session (Opus, inline): DATA-06 increment 3 — routovací jádro
+
 **Hotovo:** `scripts/data06-graf.ts` — z commitnutého exportu značených tras staví neorientovaný routovací graf (uzel = bod geometrie; sdílené křižovatky OSM mají identické souřadnice → po kvantizaci na 6 des. míst splynou a spojí trasy), hrana nese barvu KČT a délku (haversine). `najdiNejblizsiUzel` (prostorový index mřížkou 0,01° → rychlé přichycení chaty/výchozího bodu), `najdiTrasu` (Dijkstra binární haldou, **preference značených** — neznačená hrana ×4 dráž, ale průchozí jako spojka), rozklad cesty na úseky po značení + podíl neznačené délky (>15 % = k ruční kontrole). Testy `tests/int/data06-graf.int.spec.ts` (9): sdílený uzel spojí trasy, snapping, nejkratší cesta, preference značené i když delší, rozklad úseků, nedosažitelný cíl → null, start=cíl. **Smoke nad reálným exportem (310 tras):** graf 148 660 uzlů / 149 150 hran za 750 ms; Luční↔Labská bouda přichyceny 37/35 m, trasa 14,17 km celá po značených (modrá/zelená, 0 % neznačené). **121/121 int** (14 souborů), typecheck + lint čisté.
 **Pozn. k prostředí:** kontejner se během session obnovil ze staršího snapshotu (HEAD spadl na starý commit, necommitnuté soubory zmizely) — vyřešeno `git fetch` + `reset --hard origin/main`; pushnutá práce i obě Michalovy Actions data (výchozí body 73861cb, značené trasy df9094f) v pořádku. Ponaučení: rozdělanou práci hned commitovat.
 **Příště — increment 3b (Actions):** nad grafem spočítat přístupové trasy z výchozích bodů (katalog inc. 2 už naplněný Michalovým během) ke každé chatě → YAML do profilů; výšky přes Mapy.com Elevation API, `casMin` DIN 33466; zpětně `znaceni` dvou tras Luční boudy. Poctivost: trasy s >15 % délky mimo značené k ruční kontrole.
 
 ## 2026-07-21 — hlavní session (Opus, inline): DATA-06 increment 2 (výchozí body oblasti)
+
 **Hotovo — DATA-06 increment 2 (odkud se vychází):** `scripts/data06-vychozi-body.ts` sesbírá z OSM Overpass výchozí body startu túry v Krkonoších (CZ i PL, průnik area státu + bbox — stejně jako DATA-01): **obce** `place=town/village`, **lanovky** `aerialway=station`, **železnice** `railway=station/halt`. Parser `typBoduZTagu` (typ z jednoznačného tagu, jinak null — nedomýšlet), souřadnice (node přímo / way-relation `out center`), výška z `ele`; `zpracujBody` roztřídí na body (typ+název+GPS → katalog) vs. vynechané (k ruční kontrole) a **dedupuje fyzicky týž bod** (stanice jako node i way, sídlo dvakrát — klíč typ+název+GPS na ~100 m; dvě různá stejnojmenná sídla daleko od sebe klíč nesloučí). Výstup: surový `_vychozi-body-export-<zeme>.json` (doklad) + katalog `data/oblasti/krkonose/vychozi-body-kandidati.json` (osmId, název, typ, GPS, výška, zeme). Reuse pomocníků z DATA-01 (`BBOX_KRKONOSE`, `ZEME_DOTAZU`, `stahniOverpass`, `nactiExport`, `osmUrl`). Workflow `.github/workflows/data06-vychozi-body.yml` (`workflow_dispatch`, commit `data/oblasti`). Testy `tests/int/data06-vychozi-body.int.spec.ts` (9: typ pro obec/lanovku/železnici + null; roztřídění; výška; dedup i nesloučení; tvar dotazu). Offline `--z-jsonu` ověřen smoke nad mockem (7 objektů → 4 body: 2 obce, 1 lanovka, 1 železnice; 2 vynechány — obchod = neznámý typ, lanovka bez názvu; Sněžka node+way sloučena). **112/112 int** (nová 9 + stávající 103 — celková sada projede, 13 souborů), typecheck + lint čisté.
 **Návrh k pozdějšímu zvážení:** katalog výchozích bodů drží zvlášť v `data/oblasti/krkonose/` (auto z Actions, přepisuje se), oddělený od ručně psaného `data/oblasti/krkonose.yaml` (metadata oblasti) — ať běh workflow neklobrne ruční data. Kurátorské zúžení „primárních" bodů je až volitelná vrstva; pipeline poběží i bez ní (cíl DATA-06: trasy bez ruční práce).
 **Příště — DATA-06 increment 3 (jádro pipeline):** routing z výchozích bodů po značených trasách (katalog inc. 1) ke každé chatě → geometrie, `znaceni` po úsecích, délka, výšky přes Mapy.com Elevation API, `casMin` dle DIN 33466 (funkce už ve `vyskovy-profil.ts`); běží jako Actions, commit YAML tras do profilů; zpětně doplní `znaceni` dvou tras Luční boudy (dnes „—"). Graf lze stavět offline nad commitnutým `_overpass-trasy.json`, takže kód i testy jdou v sandboxu; ostrý běh (Elevation API + plný export) přes Actions. Poctivost: trasy s >15 % délky mimo značené cesty označit k ruční kontrole.
 **Čeká na Michala: dva kliky Actions** — „DATA-06: výchozí body oblasti" (naplní katalog výchozích bodů) a už dřív „DATA-06: export značených tras" (poslední běh s černou, pokrytí ~100 %). Bez nich má inc. 3 prázdné vstupy.
 
 ## 2026-07-21 — hlavní session (Opus, inline): zajímavosti/rekordy + highlight na profilu
+
 **Hotovo:** (a) **Pole `zajimavosti` na chatě** (nápad Michala — sbírat pozoruhodnosti/rekordy rovnou při zjišťování dat): `text`, volitelně `kategorie` (stari/vyska/velikost/gastro/jine) a `zdroj`; pravidlo v CLAUDE.md (superlativ = tvrzení se zdrojem, nedomýšlet; spočitatelná „nej" z rokVzniku/výšky/kapacity); backlog položka „Rekordy / žebříčky nej"; příklad naplněn u Luční boudy (3 fakty: největší+nejstarší bouda, nejvýše položené restaurační zařízení v ČR, pivovar Paroháč — vše claim provozovatele se zdrojem). (b) **Highlight na profilu** — nová sekce „Zajímavosti" (číslovaná, v subnav) nad trasami; render ověřen z HTML Luční boudy (sekce 01 + všechny 3 fakty se zdrojem). 103/103 int, typy, lint, tsc čisté. **Data pro plné žebříčky zatím nevyvážená** (výška 21/23, ale rok vzniku jen 5, kapacita 6) — plné „nej" žebříčky až po DATA-04 doplní víc; výškový žebříček by šel hned.
 **Příště:** DATA-06 increment 2 (kurátorské výchozí body oblasti — GPS se zdrojem), pak increment 3 (routing tras k chatám). Případně stránka „Rekordy / nej" (nejdřív výškový žebříček + zajímavosti), až přibude rok vzniku/kapacita.
 
 ## 2026-07-21 — hlavní session (Opus, inline): DATA-06 increment 1 (značené trasy)
+
 **Hotovo — DATA-06 increment 1 (routovatelný podklad):** `scripts/data06-trasy.ts` stáhne z OSM Overpass relace `route=hiking` v Krkonoších i s geometrií (`out geom`) a z tagů určí barvu značení KČT: parser `znaceniZTagu` bere `osmc:symbol` (první pole = barva cesty, „red:white:red_bar" → červená), fallback `kct_red/blue/green/yellow`, pak `colour` (název i vybrané hexy); nerozpoznané = null (nedomýšlet → do reportu, ne do katalogu). Výstup: surový `_overpass-trasy.json` (doklad) + katalog `data/trasy/krkonose/znacene-trasy.json` (osmId, název, ref, znaceni, délka haversine, počet úseků). Reuse pomocníků z DATA-01 (`stahniOverpass`, `nactiExport`, `BBOX_KRKONOSE`, `vzdalenostM`). Workflow `.github/workflows/data06-trasy.yml` (`workflow_dispatch`, commit exportu+katalogu). Testy `tests/int/data06-trasy.int.spec.ts` (8: parser všech barev + fallbacky + přednost osmc:symbol + null; délka; roztřídění; tvar dotazu). Offline `--z-jsonu` ověřen smoke nad mockem (červená z osmc:symbol, modrá z colour, 1 bez barvy do reportu). Typecheck + lint + celá sada zelené.
 **Příště — DATA-06 increment 2–3:** (2) kurátorovaný seznam výchozích bodů oblasti `data/oblasti/krkonose.yaml` (obce, terminály, zastávky — jednorázově rukou / z OSM); (3) routing po značených trasách z výchozích bodů ke každé chatě → geometrie, `znaceni` po úsecích, délka, výšky přes Mapy.com Elevation API, `casMin` dle DIN 33466 (funkce už je ve `vyskovy-profil.ts`); běží jako Actions, commit YAML tras do profilů; zpětně doplní `znaceni` dvou tras Luční boudy (dnes „—"). Poctivost: trasy s >15 % délky mimo značené cesty označit k ruční kontrole.
 **Ostrý běh (Michal spustil 21. 7., commit c048ad6):** 310 relací `route=hiking` v Krkonoších, **280 (90 %) dostalo barvu KČT** — červená 46, modrá 70, zelená 78, žlutá 86 (278× z `osmc:symbol`, 2× z `colour`). 30 „bez značení" jsou vesměs **černé** trasy (`black:white:black_bar`, hlavně polská `rwn`) + jeden bezbarvý tematický okruh — parser je správně nevynutil do špatné barvy. **Chyba nalezena a opravena (commit 190124c):** délky vyšly 0 km — dotaz `out geom tags;` vrací tagy bez geometrie; opraveno na `out geom;` (výpočet i parser byly správné). **Katalog s délkami se dorovná při dalším běhu workflow.**
 **Vyřešeno (21. 7. odpoledne):** (1) **délky dorovnány** — Michalův re-run s `out geom;` (commit d502991): 280 tras, součet 4 711 km, nejdelší 443 km, jen 3 nulové (degenerované relace bez cest). Fix `out geom;` potvrzen na reálných datech. (2) **Černá přidána** (rozhodnutí Michala; commit 5f2606f): 5. značení `cerna` napříč — parser (`black`/`kct_black`/hex), model `ZNACENI_OPTIONS`, `ZNACENI_BARVA/NAZEV`, `TRAIL_COLORS`, token `--tr-black:#1a1a1a` (app i design/tokens.css). **Zbývá jeden poslední běh workflow** — main teď umí černou, takže ~30 dnes vyřazených černých tras se příště zahrne (pokrytí → skoro 100 %). Pak increment 1 hotový nadobro; dál increment 2 (výchozí body oblastí).
 
 ## 2026-07-21 — hlavní session (Opus, inline): konvence „ověřeno" B + DATA-03 (3 chaty)
+
 **Rozhodnutí Michala — význam `verified: true` = konvence B:** `true` jen po **vlastní kontrole Michala** (telefon/návštěva/přímá znalost); data z webu/OSM/katalogů zůstávají `verified: false` se `source`. Zapsáno do CLAUDE.md. Zpětně srovnáno: 20 web-citovaných `verified: true` ze session 30 přepnuto → `false` ve 4 profilech (Špindlerovka, Lovecká, U Jirky, Tetřevky), zdroje zachovány (commit ec4702b). V DB už 0 chat s `verified` na datech.
 **DATA-03 — povýšeny 3 chaty (katalog 20 → 23):** **Vebrovy boudy** (horský penzion 1 100 m nad Velkou Úpou, 75 lůžek; zdroj info-cechy.cz — oficiální web vebrovyboudy.com se ze sandboxu nenačte: robots ConnectTimeout; commit 3518f59); **Schronisko Kamieńczyk** (830 m u vodopádu, 19 lůžek, bufet, soukromé od 1995; zdroj schroniskaturystyczne.pl; 717b441); **Schronisko PTTK „Pod Łabskim Szczytem"** (1 168 m, PTTK od 1945, 38 lůžek, bufet 8–20, budova 1938; f8688da). Hero fotky z DATA-02 kandidátů (CC BY-SA), vše `verified: false`. Poznatek k WebFetch v hlavním chatu: projdou katalogy/portály přes provenienci z WebSearch; **oficiální malé weby (vebrovyboudy.com) a pl.wikipedia se nenačtou** (robots timeout / cache-only) — dotáhnout v DATA-04.
 **Rozhodnutí Michala (21. 7.): zbývající 3 (U Kotle, Kochanówka, Srebrny Potok) NECHAT jako kandidáty — nepovyšovat** (případně později smazat). Povyšování DATA-03 je tím **uzavřeno na 23 chatách**; hraniční podhorské/hotelové objekty už dál nepřidáváme bez výslovného pokynu.
@@ -10307,94 +10373,113 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Otázky pro Michala:** žádné otevřené — fronta DATA-03 uzavřena dle jeho rozhodnutí.
 
 ## 2026-07-21 — hlavní session (Opus, inline): zázemí komunitních razítek
+
 **Kontext modelu:** Michal má přes prázdniny vyčerpaný limit na Fable, pokračuje na Opusu (do 26. 7.). Model spouštěných/naplánovaných sessions přepnout nejde (API vrací „model update disabled", konfigurace úlohy je napevno na `claude-fable-5`), takže **noční 6:30 úloha je dočasně pozastavená** a tuhle práci dělám přímo v chatu na Opusu (repo + Postgres + testy v tomto prostředí). Od 26. 7. se noční úloha zase zapne (Fable).
 **Hotovo:** **Komunitní sběr razítek — datové a moderační zázemí** (rozhodnutí Michala 21. 7.: host i účet, zázemí teď, veřejný formulář až s nasazením). Kolekce Razitka: zapnuta moderace přes koncept/publikaci (`versions.drafts`); nová pole — `zpusobZiskani` (redakce | komunitni-podani, default redakce), skupina `podani` (relace `ucet` na users pro přihlášené + `hostJmeno`/`hostEmail` pro hosty, `licencniSouhlas`, `souhlasZneni`, `souhlasDatum`), kredit `dolozil`. `beforeChange` hook: **komunitní razítko nelze publikovat bez licenčního souhlasu** (APIError). Veřejné čtení (`lib/chaty.ts`): join Payloadu vrací i koncepty (ověřeno — prosakovaly), proto přidán filtr `jenPublikovanaRazitka` do `getChataBySlug` i `getChatyProRazitkovnik` → na webu jen publikovaná. Seed: redakční razítka se publikují (`_status: published`), jinak by po zapnutí drafts zmizel historický otisk Luční boudy. Ověřeno naostro nad DB: koncept skrytý → po publikaci viditelný; publikace bez souhlasu odmítnuta. Test `tests/int/razitka-moderace.int.spec.ts` (2 případy), README sekce „Komunitní razítka", BACKLOG položka aktualizována. Sada **95/95 int**, typecheck + lint čisté. Render komponent nezměněn (jen model + filtr čtení); render nechán ověřený datovým testem (dev server v sandboxu vrtošivý).
 **Příště:** veřejný nahrávací formulář „nahrát razítko" — až s nasazením webu (Fáze 1): stránka + `create` access kolekce Razitka pro veřejná podání jako koncept + ochrana proti spamu; napojit kredit `dolozil` z podání. Do té doby moderace funguje přes admin (koncept → publikovat).
 **Otázky pro Michala:** znění licenčního souhlasu u formuláře doladíme, až ho budeme stavět (návrh: „Potvrzuji, že otisk jsem sám naskenoval / vlastním a uděluji turistickechaty.cz souhlas s jeho zveřejněním s uvedením mého kreditu.").
 
 ## 2026-07-21 — denní session 33 (bezobslužný běh — trojice „přednostně")
-*(Poznámka k číslování: původně zapsáno jako s32, ale souběžný ruční běh — dotažení ověření z webů — si číslo 32 vzal a pushnul dřív; při rebase vyřešeno zachováním obojího a přečíslováním na 33.)*
+
+_(Poznámka k číslování: původně zapsáno jako s32, ale souběžný ruční běh — dotažení ověření z webů — si číslo 32 vzal a pushnul dřív; při rebase vyřešeno zachováním obojího a přečíslováním na 33.)_
 **Hotovo:** **DATA-03: čtvrtá dávka — trojice z rozhodnutí Michala (21. 7. ráno) povýšena do `data/chaty/krkonose/`: Bouda Bílé Labe, Chata Dvoračky, Horská chata Krakonoš + založen ruční kandidát Hotel Štumpovka.** Bezobslužný běh — WebFetch nefunguje (vzor s29/s31), dávka stavěná výhradně z doložených zápisů DATA-03 (weby čteny 20. 7. v ručním běhu s22, `checked` poctivě drží 2026-07-20; v hlavičce každého profilu přiznáno). **Bílé Labe:** homepage byla na údaje skoupá (bez kontaktů/kapacity — zápis s28), takže kontakty + otvíračka (denně 10:30–18:00) jen z OSM tagů s výslovnou výhradou „před cestou ověřit na webu"; kapacita nevyplněna, dotažení z podstránek čeká na ruční běh. **Dvoračky:** areál „hotel Štumpovka + bouda Dvoračky" poctivě vysvětlen v textu (1140 m, Rokytnice n. J., restaurace s vlastní pekárnou denně 9–24, otevřeno 363 dní); dle rozhodnutí Michala založen kandidát `data/kandidati/krkonose/hotel-stumpovka.yaml` (typ horsky-hotel) — **bez GPS** (objekt nebyl v OSM exportu a souřadnice hotelu nedomýšlím z bodu sousední boudy; doplní ruční běh z OSM/mapy), s odkazem na fotokandidáty ve složce Dvoraček; vzájemný odkaz v UI se doplní po povýšení, text Dvoraček hotel už zmiňuje. **Krakonoš (nejchoulostivější):** jediný obsahový zdroj treking.cz naposledy aktualizovaný 11/2019 a web z OSM mrtvý (DNS) → `stav` záměrně NEvyplněn, kontakty z OSM (telefon/e-mail na mrtvé doméně) do profilu NEpřevzaty (jen interní poznámka pro DATA-04), kapacita 54 lůžek uvedena s výslovnou výhradou stáří zdroje a perex i text nesou upozornění „aktuální stav před cestou ověřte / s chatou nepočítejte najisto"; existenci budovy dokládají fotky ŠJů z 27. 5. 2023 (o provozu neříkají nic — v profilu rozlišeno). Cestou chyceny dva vlastní přešlapy: do textů jsem málem zapsal nedoložený polohopis („pod Lysou horou" u Dvoraček, „oblíbená cesta Dolem Bílého Labe") — škrtnuto, lekce „nedomýšlet" platí i pro vatu v textech. Hero fotky z kandidátů DATA-02: Bílé Labe krysi@ CC BY 3.0 (geosearch 28 m; popis = jen název boudy, redakce potvrdí záběr), Dvoračky ŠJů CC BY-SA 3.0 (23 m, popis „Dvoračky Hostel"; na výšku — alternativa File:Štumpovka a Dvoračky.jpg na šířku v poznámce), Krakonoš ŠJů CC BY 4.0 (40 m, popis „bouda Krakonoš" — jistý záběr). Kontroly: YAML 3+1 validní, seed 20 chat + druhý běh idempotentní (0 nových), render všech tří profilů + katalogu HTTP 200 (screenshot Krakonoše s poctivým upozorněním poslán do chatu), **93/93 int**, lint i tsc čisté.
 **Příště:** fronta DATA-03 — zbývá 6: (1) **Vebrovy boudy** (⚖️ zařadit, ale zatím jen WebSearch signál — doložit obsah webu, ideálně ruční běh; formulaci perexu vzít ze Špindlerovky); (2) **Kamieńczyk + Pod Łabskim Szczytem** (ruční běh — bez webu v OSM by profily byly jen „OSM + název"); (3) **Kochanówka + Srebrny Potok** (✅ s povinnou poznámkou o poloze v podhůří/na okraji); (4) **U Kotle** na konec (Michal potvrdí nad profilem). Bezobslužně jde mezitím: po Michalově kliku na DATA-02 (fulltext) vybrat hero pro Klínovku/Tetřevky/Jirku/Loveckou/Špindlerovku a zkusit Szrenicu+Okraj; nebo příprava DATA-06.
 **Otázky pro Michala:** 1) **Krakonoš — mrkni na render** (screenshot v chatu / lokálně `/cesko/krkonose/horska-chata-krakonos`): sedí ti takhle poctivý profil s upozorněním, nebo bys ho radši nechal jako kandidáta, dokud DATA-04 neověří provoz? Snadno vrátím. 2) Štumpovka: kandidát založen bez GPS — najdeš při ruční kontrole objekt v OSM (případně ho tam doplníš?), nebo mám GPS vzít z mapy.cz při ručním běhu? 3) Trvá: klik na DATA-02 workflow (fulltext, s30), ❓ ruční kontrola CZ sporných, licence hero fotek ze s28/s31.
+
 ## 2026-07-21 — session 32 (ruční běh, Michal online — dotažení ověření z webů)
-*(Poznámka k číslování: běželo souběžně s bezobslužnými sessions 30 (DATA-02 fulltext) a 31 (polská schroniska) — proto je tento ruční běh přečíslován na 32; při pushi vznikl konflikt v deníku/backlogu, vyřešen zachováním obojího.)*
+
+_(Poznámka k číslování: běželo souběžně s bezobslužnými sessions 30 (DATA-02 fulltext) a 31 (polská schroniska) — proto je tento ruční běh přečíslován na 32; při pushi vznikl konflikt v deníku/backlogu, vyřešen zachováním obojího.)_
 **Hotovo:** **Data 4 profilů z dřívější dávky s29 dotažena přímo z oficiálních webů** — Michal online odemkl WebFetch (zadání: „zkus dotáhnout ověření na webu sám, kde to nepůjde, ověřím ručně sám"). Načteno: spindlerovabouda.cz, tetreviboudy.com (+ podstránky historie.htm, restaurace.htm, ubytovani.htm), chataujirky.cz, lovecka-chata.cz (poslední dvě prošly až na 2.–3. pokus po jednom — paralelní schválení se nestíhalo odkliknout). **Nová věc v projektu: `verified: true`** — u bloků doložených přímou citací z oficiálního webu (adresa, kontakty, otvíračka, historie, ubytování/wellness). Poprvé se tím na profilech rozsvítí badge „OVĚŘENO · redakce" (logika `posledniOvereni`: verified když aspoň jeden blok true). **Poctivě `verified: false` ponecháno** u: GPS (z OSM, v terénu neověřeno — ale adresa/výška z webu potvrzeny), kapacit (weby neuvádějí), dostupnosti hotelových restaurací pro veřejnost (Špindl/Tetřevky to výslovně neříkají — netvrdím veřejnou restauraci). Přírůstky dat: **Špindlerovka** — tradice od 1784, 5 kategorií pokojů (Economy…Premium), wellness (bazén/sauny/vířivka/masáže), PSČ 543 51, 2. telefon 725 855 397 (pole telefon je jen jedno → druhé číslo ve zdroji); **Tetřeví Boudy** — kompletní historie (tři dřevěné boudy 18. stol. od německých starousedlíků → 1945 odsun → 1976 zbořena prostřední → 1980 budovy A+B → 1989 další dvě → 2014 koupě Green Garden → renovace 2014–2017), otvíračka restaurace (obědy 11–16, večeře raut 390/250 Kč), wellness výčet, hlavní tel. 602 322 399 + rezervační restaurace 602 311 301; **Chata U Jirky** — tel. 773 087 796, e-mail, „Vaříme pro všechny – bez rozdílu" (přímý doklad veřejné kuchyně → klíč splněn i po dotažení); **Lovecká** — tel. 724 038 622, e-mail, otvíračka 11–21 denně potvrzena. Poctivost historie: u milníku „18. století" jsem NEfabrikoval rok — pole `rok` vynecháno, časová osa u něj renderuje „—" (`{m.rok ?? '—'}`); web přesný letopočet neuvádí. Cestou opraven YAML bug (dvojtečka+mezera „pokojů: Economy" a „citace: …" v nezalomeném `source` rozbila parser — jako v s28; převedeno na blokový `>-`). Kontroly: YAML 4/4 validní, seed chat aktualizoval, render 4/4 HTTP 200 + screenshoty Špindlerovky a Tetřevek (badge, časová osa 18. stol.→2014, otvíračky). Po sloučení se souběžnými sessions 30/31 (rebase): **93/93 int**, lint i tsc čisté na sloučeném stromu (17 chat vč. 7 polských z s31). Commit + push.
 **Příště:** fronta DATA-03 — po souběžné session 31 (povýšila 7 polských schronisek) **zbývá ~8**: přednostně trojice **Bílé Labe, Dvoračky (+ založit kandidáta Hotel Štumpovka, vzájemný odkaz), Krakonoš** (rozhodnutí Michala 21. 7. ráno), pak **dotáhnout z webů 2 polské profily bez detailů** (Szrenica, Okraj — hero i obsah), Vebrovy (doložit web), Kamieńczyk + Pod Łabskim (ruční běh), U Kotle na konec. Metoda ověřená dnes: **s Michalem online projdou i menší CZ domény přes WebFetch** → dotáhnout obsah a u citovaných bloků dát `verified: true`. Ideálně pokračovat opět s Michalem online, ať fronta neroste jen z OSM/titulků.
 **Otázky pro Michala:** 1) **Zavedl jsem `verified: true`** u faktů citovaných přímo z oficiálních webů (profily teď hlásí „OVĚŘENO · redakce") — sedí ti to jako význam „ověřeno"? Nebo si chceš `verified: true` nechat výhradně pro svou vlastní ruční kontrolu a já mám u web-dotažených dat zůstat na `verified: false`? Řekni a hned to sjednotím napříč. 2) **Ruční doplnění** (weby neuvádějí): kapacity všech 4 objektů, otvíračka Špindlerovky, výšky Jirky a Lovecké, kapacita + vlastní e-mail Tetřevek (web má jen kontakt na správce webu). 3) Trvá: ❓ ruční kontrola sporných (Smetánka, Náchodská, Studenov, Javorka + sedmnáctka) a licence hero fotek ze s28.
 
 ## 2026-07-21 — session 31 (ruční běh se zadáním — polská schroniska)
+
 **Hotovo:** **DATA-03: třetí dávka — 7 polských schronisek povýšeno do `data/chaty/krkonose/`: Samotnia, Strzecha Akademicka, Dom Śląski, Hala Szrenicka, Szrenica, Odrodzenie, Okraj.** Zadání ručního běhu mířilo na PL devítku; ověřil jsem ho proti repu — povýšení PL schronisek i primární polské názvy jsou Michalova rozhodnutí zapsaná v kandidátech a backlogu (✅ en bloc, chat 20. 7.), takže se jelo. **Trojici Bílé Labe/Dvoračky/Krakonoš („vzít přednostně" dle zápisu hlavní session z 21. 7. ráno) jsem vědomě nechal na příští běh dle textu zadání** — pokud ji mezitím nebere hlavní session, vezme ji hned další session jako první. Metoda: WebFetch bezobslužně znovu nefunguje (PROVENANCE_REQUIRED i na pl.wikipedia — 1 kontrolní pokus), takže **fakta jen z OSM (ODbL) a z titulků WebSearch** (obsah stránek NEotevřen — v hlavičce každého profilu i v každém `source` výslovně přiznáno; checked 2026-07-21 u dnešních titulků, 2026-07-20 u OSM stavu). Poctivost: `nocleh: ano` jen s dokladem (pttk.pl/accommodations — Samotnia, Strzecha, Hala Szrenicka, Okraj; szrenica.pl/hostel titulek — Szrenica), u Dom Śląski a Odrodzenie nocleh NEvyplněn (v pttk.pl přehledu chybí — provozovatele u Dom Śląski netvrdíme vůbec); žádná lůžka/otvíračky/historie se nezapisovaly (nedoloženo), místo toho „ověřit na webu schroniska" + seznam k dotažení v interniPoznamkách; z perexu Szrenice jsem škrtl výšku vrcholu, kterou žádný otevřený zdroj nedokládal (málem domyšleno — lekce trvá). **Kamieńczyk a Pod Łabskim Szczytem NEpovýšeny** — bez webu/kontaktů (Kamieńczyk i bez výšky) by profil byl „jen OSM + název", přesně co zadání zakazuje; zůstávají kandidáty. Hero: Samotnia (Takasamarasa, CC BY-SA 4.0, 8 m, popis budovy), Strzecha (Takasamarasa, CC BY-SA 4.0, 6 m, geosearch+kategorie), Odrodzenie (Suisant7, CC BY-SA 4.0, v kategorii objektu), Dom Śląski (Zawadzki, CC BY-SA 3.0, 4 m — jen 1280×960, vyměnit až bude líp), Hala Szrenicka s výhradou (popis „Hala Szrenicka" = jméno louky; vzor Dvorská — redakce potvrdí záběr); **Szrenica a Okraj bez hero** (v kandidátech žádný popis budovy — samé krajiny/hraniční kameny; vzor Špindlerovka: bez očního potvrzení nepřebírám). Aliasy se zdrojem: PTTK tvary názvů, u Strzechy „Hamplova bouda" (z popisů fotek na Commons — doložit líp), u Dom Śląski „Śląski Dom"/„Schronisko Pod Śnieżką" (titulky). Kontroly: YAML 17/17 validní, seed 17 chat + druhý běh idempotentní (0 nových), render `/polsko/krkonose/*` HTTP 200 (breadcrumb POLSKO, badge, zdroje v patičce — screenshot Samotnie), katalog 17 markerů, **93/93 int**, lint i tsc čisté.
 **Příště:** (1) **trojice přednostně: Bouda Bílé Labe, Chata Dvoračky (+ založit kandidátní profil Hotel Štumpovka, typ horský hotel, vzájemný odkaz — rozhodnutí Michala 21. 7.), Horská chata Krakonoš** — vše z už doložených zápisů s22 (u Krakonoše poctivě přiznat mrtvý web + priorita DATA-04); (2) pak Vebrovy (jen WebSearch signál — doložit), Kamieńczyk + Pod Łabskim (ruční běh), U Kotle na konec. (3) Po Michalově kliku na DATA-02 (fulltext ze s30) zkusit hero pro Szrenicu, Okraj a spol.
 **Otázky pro Michala:** 1) **Mrkni na Samotnii** (screenshot v chatu / lokálně `/polsko/krkonose/schronisko-samotnia`) — sedí ti rozsah „titulkových" profilů, než je ruční běh dotáhne z obsahu webů? 2) U Samotnie visí změna nájemce (bryla.pl) — chceš ji řešit přednostně v DATA-04, nebo počká na dotažení celé PL devítky? 3) Hala Szrenicka: hero má popis jen „Hala Szrenicka" — potvrď prosím očima, že je to budova schroniska (jinak vyměním). 4) Trvá: klik na DATA-02 workflow (fulltext, s30) + ❓ ruční kontrola CZ sporných.
 
 ## 2026-07-21 — denní session 30 (bezobslužný běh — DATA-02 fulltext)
+
 **Hotovo:** **DATA-02: skript rozšířen o fulltextové hledání názvu chaty na Commons** (třetí dotaz vedle geosearch + kategorie; `generator=search`, namespace File, přesná fráze v uvozovkách — bez nich by CirrusSearch rozložil „Lovecká chata" na slova a vrátil lovecké chaty z celé ČR). Motivace přímo z povyšování: **Klínovka, Tetřevky, U Jirky a Lovecká mají 0 fotokandidátů a Špindlerovka jen záběry parkoviště** — geosearch 300 m z principu mine pojmenované fotky bez geotagu, a těch je na Commons hodně. Pojistky proti šumu cizích objektů: (1) nález POUZE z fulltextu s geotagem dál než 1 km od chaty se vyřazuje rovnou s metráží v reportu („pravděpodobně jiný objekt téhož jména"); (2) negeotagovaný fulltext nález zůstává kandidátem s původem `fulltext`, hlavička YAML nese varování a report počítá „z toho jen fulltext — ověřit objekt: N", takže redakce ví, kde být ostražitá; (3) kombinace původů se skládá kanonicky („geosearch + fulltext"…) a geotag filtr se na ni neuplatňuje (geosearch si radius hlídá sám, kategorie je přesná). Cestou chycen vlastní přešlap: první verze psala do hlavičky všech YAML „+ fulltext", i když transformovaný starý export žádný fulltext dotaz neobsahoval — hlavička by tvrdila víc, než se hledalo; opraveno příznakem `sFulltextem` odvozeným z obsahu exportu (starý export teď projde `--z-jsonu` beze změny souborů, doloženo testem i smoke během). Smoke `--z-jsonu` nad commitnutým exportem: jediné diffy = **9 chat povýšených v s28/s29 přepnulo `profil chaty` na data/chaty** (a Klínovka nese ruční název místo OSM „Nová Klínovka") — legitimní posun stavu, commitnuto; 4 kandidáti oblastí jizerske-hory/rudawy-janowickie hlášeni jako „bez dotazu v exportu" (přibyli po posledním stažení — pokryje je příští klik). Kontroly: **93/93 int** (+6: tvar fulltext URL, průchod negeotagovaného nálezu, vyřazení dalekého geotagu, kanonické skládání původů, zpětná kompatibilita bez fulltextu, poctivá hlavička), lint i tsc čisté; e2e sada v sandboxu neběžela (potřebuje build + dev server, int pokrytí změny je úplné). Do lokálního `.env` použit klíč Mapy.com ze zadání (jen lokálně, repo má prázdný `.env.example`).
 **Příště:** po Michalově kliku na DATA-02 workflow projít report (hlavně řádky „jen fulltext") a vybrat hero pro Klínovku, Tetřevky, U Jirky, Loveckou a lepší záběr Špindlerovky postupem ze s21; pak dál fronta DATA-03 (15 profilů — polská schroniska ideálně ruční běh, Bílé Labe podstránky, Vebrovy doložit).
 **Otázky pro Michala:** 1) **Nový klik prosím:** Actions → „DATA-02: fotky chat z Wikimedia Commons" → Run workflow — doplní fulltext dotazy všem chatám (pokryje i Jizerky/Rudawy) a s trochou štěstí najde hero pro čtveřici bez fotky. 2) Trvá ze s29: render Špindlerovky/Tetřevek (formulace perexu), tenkost hotelových profilů, ❓ ruční kontrola a licence hero fotek ze s28.
 
 ## 2026-07-21 — denní session 29 (bezobslužný běh — druhá dávka povyšování)
+
 **Hotovo:** **DATA-03: druhá dávka — 4 profily do `data/chaty/krkonose/`: Hotel Špindlerova bouda, Tetřeví Boudy, Chata U Jirky, Lovecká chata.** Bezobslužný běh: WebFetch znovu potvrzeně nefunguje (PROVENANCE_REQUIRED i na spindlerovabouda.cz — schválení nemá kdo dát), takže dávka stavěná výhradně z **už doložených zápisů DATA-03** (weby čteny 20. 7. v ručních bězích s22/s24/s27 — `checked` poctivě drží 2026-07-20, ne dnešek; v hlavičce každého profilu přiznáno, že tato session web znovu nečetla). Oba hotely nesou `typ: horsky-hotel` (rozhodnutí Michala) a perex charakter přiznává („horský hotel v roli historické hřebenové boudy/historických bud"); U Jirky a Lovecká zařazeny klíčem občerstvení — v textu poctivě „údolní chata s restaurací" / „penzion s veřejnou restaurací", žádné předstírání hřebenové boudy. Poctivost u restaurací hotelů: web dostupnost pro neubytované výslovně neuvádí → v profilu „před cestou doporučujeme ověřit" (na rozdíl od Jirky „i pro neubytované" a Lovecké „denně 11–21 pro veřejnost", kde to doloženo je). Lovecká: do profilu jen lovecka-chata.cz (doména z OSM je cizí e-shop), OSM tag útulna vyhodnocen jako chybný → obsluhovana, obojí v interniPoznamky (+ návrh ohlásit opravu do OSM). Hero fotky: Tetřevky/Jirka/Lovecká mají 0 kandidátů DATA-02; Špindlerovka 10 kandidátů, ale vesměs parkoviště/autobusy/rozcestníky (ŠJů) — jediný nadějný „File:Špindlerova bouda, z parkoviště.jpg" má v popisu jen parkoviště, bez očního potvrzení nepřebírám (poznámka v profilu). Chybějící údaje (kapacity, kontakty, historie Tetřevek ze zamčené podstránky, výšky Jirky/Lovecké) NEdomýšleny — sepsány v interniPoznamky k dotažení. Kontroly: YAML 4/4 validní, lokální Postgres nastartován (vzor s23), **seed 10 chat, druhý běh idempotentní (0 nových)**, render všech 4 profilů HTTP 200, screenshot Špindlerovky (badge HORSKÝ HOTEL · KRKONOŠE, 1208 m, statistiky, zdroje — light OK), **87/87 int**, lint i tsc čisté. Katalog má nyní **10 chat na mapě**.
 **Příště:** fronta DATA-03 — **zbývá 15**: (1) polská schroniska 9× ✅ — bezobslužně jen z OSM + PTTK signálů by byla moc tenká, ideálně ruční běh (pttk.jgora.pl + weby objektů), případně WebSearch dávka na detaily; (2) Bílé Labe (podstránky webu — ruční běh); (3) Vebrovy boudy (zatím jen WebSearch signál — doložit obsah webu); (4) U Kotle na konec fronty (Michal potvrdí nad profilem). Bezobslužně jde mezitím: razítkovník/katalog drobky, nebo příprava DATA-06.
 **Otázky pro Michala:** 1) **Špindlerovka/Tetřevky — mrkni na render** (lokálně seed + `/cesko/krkonose/hotel-spindlerova-bouda`): sedí ti formulace „horský hotel v roli historické hřebenové boudy" v perexu? Použiju ji pak i pro Vebrovy. 2) U hotelů chybí kapacita/otvíračka (weby je na homepage neuvádějí) — stačí ti to takhle tenké s odkazem „ověřit na webu", nebo je mám v ručním běhu dotáhnout z podstránek? 3) Trvá: ❓ ruční kontrola (Smetánka, Náchodská, Studenov, Javorka + sedmnáctka) a kontrola licence hero fotek ze s28 (Dvorská — záběr budovy?).
 
 ## 2026-07-20 — denní session 28 (povyšování — první dávka profilů)
+
 **Hotovo:** **Povýšeno prvních 5 profilů z fronty DATA-03 do `data/chaty/krkonose/`** (běží na claude-opus-4-8): **Labská bouda, Vosecká bouda, Dvorská bouda, Bouda Klínovka, Lesní bouda.** Postup: každou boudu jsem znovu natáhl z jejího webu WebFetchem (čerstvé `checked: 2026-07-20`, vše `verified: false`), do profilu zapsal jen doložené údaje se `source` u každé skupiny (lokace/nocleh/občerstvení/služby/provoz/historie) přesně jako vzorová Luční bouda; GPS z OSM (ODbL), výšku/adresu/kontakty/otvíračku z webu. Hero fotky vybrány z kandidátů DATA-02 (licenční síto už proběhlo): Labská — Ciacho5 CC BY-SA 4.0 (16 m, „Mountain hotel Labská bouda"), Vosecká — Balaban CC BY-SA 3.0 (2 m), Dvorská — Michal Klajban CC BY-SA 4.0 (vysoký sken; u něj poznámka, ať redakce potvrdí, že záběr je budova — popis zmiňuje Cestu č-p přátelství), Lesní — Stanislav Dusík CC BY-SA 4.0 (14 m); **Klínovka bez hero** (DATA-02 = 0 licenčně čistých kandidátů — poznámka v profilu). Poctivost: **Vosecká má `kuchyne` NEvyplněno** — web gastronomii pro veřejnost nepopisuje, nedomýšlím (na rozdíl od ostatních, kde je restaurace pro veřejnost doložena přímo). Labská zapsána jako `obsluhovana` (web „Hotel Labská bouda" — stejný přístup jako Luční, poznámka v interni). Klínovka: web `klinovka.cz` → `klinovka.com`, OSM název „Nová Klínovka" ponechán jako alias, slug drží OSM původ. Kontroly: YAML validní; **seed proti lokální DB vytvořil všech 6 chat** (Payload přijal schéma — enum/pole sedí); render ověřen dev serverem + Playwrightem: katalog `/chaty` ukazuje **6 markerů** správně shluknutých v Krkonoších, profil Labské (light) vykresluje hero placeholder, statistiky, perex + 3 odstavce, časovou osu historie (1830/1965/1975), badge „zatím neověřeno" a zdroje; **87/87 int**, lint i tsc čisté. Cestou opraven YAML bug (dvojtečka+mezera „historie: 1830" v source rozbila parser → přepsáno na pomlčku). Screenshot Labské poslán Michalovi.
 **Příště:** pokračovat ve frontě (**zbývá 19**): (1) **Bílé Labe** — data z homepage tenká (bez telefonu/e-mailu/kapacity, jen restaurace s terasou) → dotáhnout z podstránek webu, pak povýšit; (2) **polská schroniska** (9× ✅) — weby přes WebFetch/WebSearch, detaily z pttk.jgora.pl a vlastních webů; jazyk: originální názvy primárně (rozhodnutí s20); (3) **3 hotely** (Špindlerovka, Tetřevky, Vebrovy) s poctivým označením `horsky-hotel`; (4) Jirka, Lovecká (veřejná restaurace doložena), U Kotle (hraničně, potvrdit nad profilem). Po další dávce pustit seed a mrknout na web.
 **Otázky pro Michala:** 1) **Mrkni na profil Labské** (screenshot v chatu, nebo lokálně `npx payload run scripts/seed-chaty.ts` + web) — sedí ti rozsah údajů a tón textu? Podle toho doladím zbylé. 2) Až budeš u počítače, pusť seed naostro (stáhne 4 hero fotky z Commons) a zkontroluj u nich licenci na stránce souboru — pak přepnu `verified: true`. 3) U Dvorské je hero Klajbanův vysoký sken, ale popis na Commons mluví o cestě, ne o budově — potvrď prosím, že je to budova (jinak přepnu na menší File:Dvorská bouda.jpg).
 
 ## 2026-07-20 — denní session 27 (Michal upřesnil klíč pro penziony)
+
 **Hotovo:** **Nový klíč zapracován a hned aplikován:** „pokud mají občerstvení nebo restauraci pro veřejnost, pak je můžeme zařadit — u sporných objektů podle tohoto klíče" (Michal, chat 20. 7.). Prošel jsem weby sporných 🏠 objektů WebFetchem (v této session částečně průchozí): (1) **REVIDOVÁNO NA ZAŘADIT:** Chata u Jirky (restaurace s domácí kuchyní pro všechny — doklad už ze s24) a **Lovecká chata** (lovecka-chata.cz: restaurace pro veřejnost denně 11–21, „Přijeďte se k nám ubytovat, nebo skvěle najíst"; cestou odhalen matoucí OSM kontakt — doména loveckachatakrkonose.cz je nesouvisející e-shop se zahradními domky, do profilu patří jen lovecka-chata.cz); (2) **ZAŘADIT HRANIČNĚ:** U Kotle (hornimisecky.eu: bar „otevřen i pro veřejnost", jídlo jen polopenze pro ubytované — klíč formálně splněn, půjde na konec fronty a Michal potvrdí nad hotovým profilem); (3) **NEZAŘAZENY TRVALE (klíč prověřen, občerstvení žádné):** Roxana (web dál nedostupný), Konopinda (konopinda.com gastro neuvádí), Mamut (pronájem roubenky, sdílená kuchyň); (4) **SPORNÉ S KLÍČEM (weby ze sandboxu nedostupné):** Smetánka, Náchodská, Studenov, Javorka — ruční kontrola Michala teď má jasnou otázku: „má občerstvení pro veřejnost?"; (5) Aurora (❓): web otevřen, občerstvení neuvádí → zůstává k ruční kontrole. Zápisy „AKTUALIZACE ROZHODNUTÍ" v 11 kandidátech, přehled i backlog aktualizovány. Kontroly: YAML validní, 87/87 int, lint i tsc čisté. **Fronta povyšování: 24 profilů** (18 ✅ + 3 ⚖️ + Jirka + Lovecká + hraničně U Kotle).
 **Příště:** povyšování — první dávka českých bud s nejbohatšími doklady (Labská, Bílé Labe, Vosecká, Dvorská, Klínovka, Lesní) vč. hero fotek z DATA-02; postup viz zápis s26.
 **Otázky pro Michala:** žádné nové — u ruční kontroly (Smetánka, Náchodská, Studenov, Javorka + ❓ sedmnáctka) používej prosím klíč občerstvení; U Kotle potvrdíš nad hotovým profilem.
 
 ## 2026-07-20 — denní session 26 (Michal odpověděl na otázky DATA-03)
+
 **Hotovo:** **Michalova rozhodnutí zapracována do repa** (provenience „chat 20. 7. 2026" u každého zápisu): (1) **✅ povýšit en bloc + ⚖️ hotely všechny zařadit + 🏠 penziony nezařazovat** — rozhodnutí zapsáno do `interniPoznamky` všech 34 dotčených kandidátů (u Javorky a Studenova s výhradou možné revize po ruční kontrole — mapy.com/treking signály); (2) **založeny kandidátní oblasti:** `data/kandidati/jizerske-hory/` (Chatka Górzystów, Stacja Orle, Pešákovna — Michal: „nebo rovnou založ Jizerky") a `data/kandidati/rudawy-janowickie/` (Szwajcarka); pole `oblast` v YAML upraveno, seed je nečte (kandidáti), DATA-02 fotky je pokryjí automaticky; (3) **duplicity sloučeny** (Michalovo kritérium „název i GPS" splněno u obou párů): dvojčata `chata-mamut-656462770` a `lyzarska-bouda-656504528` smazána, hlavní kandidáti nesou zápis o sloučení vč. obou OSM ID; (4) **nový vyřazovací mechanismus DATA-01:** `data/kandidati/_vyrazeno.yaml` (klíč = OSM URL, důvod, kdo rozhodl, kdy) + `nactiVyrazene()` ve skriptu — bez toho by další OSM export smazané/přesunuté objekty znovu založil v krkonose/ (objekty v OSM dál existují a bbox je chytá); report běhu vyřazené vypisuje s důvody. Málem jsem do seznamu zapsal OSM ID po paměti — kontrola proti hlavičkám YAML je opravila (way/278729479, 122672323, 98214072, 30778232), lekce trvá: nikdy nedomýšlet, ani ID. (5) Přehled `docs/DATA-03-prehled.md` dostal nahoru blok „⚡ Rozhodnutí Michala". Kontroly: **87/87 int** (+3: vyřazení v zapisKandidaty, nactiVyrazene z YAML i bez souboru, ostrý seznam kryje smazané/přesunuté; jeden test napoprvé spadl na tmp adresáři smazaném afterEach — opraveno mkdirSync), lint i tsc čisté, **smoke `--z-jsonu` nad reálným exportem: 6 vyřazených přeskočeno s důvody, 0 nových kandidátů, git status po běhu čistý**. Stav kandidátů: 70 krkonose + 3 jizerske-hory + 1 rudawy-janowickie (+ _vyrazeno.yaml).
 **Příště:** **POVYŠOVÁNÍ — fronta 21 profilů** (18 ✅ + 3 ⚖️). Postup per profil: YAML do `data/chaty/krkonose/` jen s doloženými údaji (zdroje z DATA-03 zápisů: weby objektů, PTTK, KČT; verified false), `zeme` dle kandidáta, u hotelů poctivé označení charakteru; hero fotka výběrem z `data/kandidati/fotky/krkonose/<slug>.yaml` postupem ze session 21 (geotag, kategorie, rozlišení, licence ze surového exportu). Dávkovat po ~4–6 profilech na session, začít českými s nejbohatšími doklady (Labská, Bílé Labe, Vosecká, Dvorská, Klínovka, Lesní). Po povýšení pustit seed a zkontrolovat katalog/mapu/razítkovník.
 **Otázky pro Michala:** žádné nové — ❓ sedmnáctka ruční kontroly trvá (až budeš u počítače); až povýšíme první dávku, mrkni na profily na webu (lokální seed) a řekni, jestli rozsah údajů sedí.
 
 ## 2026-07-20 — denní session 25 (Michal online: „pokračuj, podívám se na otázky")
+
 **Hotovo:** **DATA-03 čtvrtá dávka — posledních 26 CZ kandidátů bez webu, POKRYTÍ KOMPLETNÍ 76/76** + **syntéza `docs/DATA-03-prehled.md`** (všech 76 v 8 kategoriích s návrhy; kontrolní součet sedí, křížová kontrola slugů proti YAML strojově). Metoda dávky: WebSearch + GPS kontroly souřadnic kandidátů proti nálezům. Hlavní objevy: (1) **Chata Pešákovna leží v osadě Jizerka** (GPS 50,825, 15,337; treking.cz/chaty/pesakovna.htm „horská chata v horské osadě Jizerka") — čtvrtý objekt mimo Krkonoše, do bboxu spadl západním přesahem; (2) **dvě OSM duplicity:** chata-mamut vs. chata-mamut-656462770 (GPS ~1 m, Dolní Malá Úpa) a lyzarska-bouda vs. lyzarska-bouda-656504528 (pár metrů, Lučiny) — návrh sloučit, tím padá otázka „dvou Lyžařských bud" ze s24; (3) **KČT signály:** kct.cz má stránky chat (kct.cz/chaty/bradlerovy-boudy/) a článek „12 nejlepších horských chat v Krkonoších" (otevřen WebFetchem) jmenuje Brádlerovky, Voseckou a Výrovku — Výrovka se tím z „rozbité SSL, k ruční kontrole" posouvá mezi kandidáty povýšení; (4) **potvrzené charaktery:** Brádlerovy boudy, Medvědí bouda (2 vlastní weby + wikipedia), Jindřichův dům, Jelení louky, Amor (chata s restaurací, weby dva), Sedmidolí, Moravská bouda („Boudy na hřebenech"), Bouda Na Pláni (pravděpodobně = OSM „Chata na Pláni" — GPS Přední Planiny sedí, jméno potvrdit); (5) **účelové chaty univerzit:** Patejdlova bouda (UK) a Na Muldě (UK FTVS, webkamera Horské služby) — povyšovat jen s poctivým popisem režimu; (6) **penzionové signály:** Náchodská bouda, U Kotle (= Penzion U Kotle, Horní Mísečky), Smetánka, Lovecká chata (pozor: OSM typ útulna je zjevně chybný), Konopinda a Mamut (pronájmy), Vebrovy boudy (hotel v boudách — do hraničních k Špindlerovce a Tetřevkám); (7) k ruční kontrole zbývají mj. Zákoutí (Vítkovice vs. Harrachov), Aurora a Lokomotiva (režim nejasný), Novomísečná+Staromísečná (společný areál). Kontroly: 26 appendů bezpečných, YAML 76/76 parsovatelné, **84/84 int**, lint i tsc čisté. Přehled poslán Michalovi i jako soubor do konverzace.
 **Příště:** podle Michalových verdiktů nad přehledem začít **povyšování do `data/chaty/`** (po dávkách, s údaji se zdroji z už doložených webů + hero fotky z kandidátů DATA-02 postupem ze session 21); bez verdiktů dál dle pořadí backlogu (DATA-04 příprava: seznam 5 nejnavštěvovanějších z povýšených, nebo DATA-06 návrh). Duplicity OSM (Mamut, Lyžařská) po potvrzení sloučit — a zvážit hlášení duplicit do OSM (dobrý soused).
 **Otázky pro Michala:** hlavní balík je v `docs/DATA-03-prehled.md` (poslán i do chatu) — stačí verdikty per kategorie: 1) ✅ 18 potvrzených povýšit en bloc? 2) ⚖️ hraniční hotely (Špindlerovka, Tetřevky, Vebrovy) — brát s poctivým označením „hotel v roli boudy", nebo nechat mimo? 3) 🏠 penziony/pronájmy — plošně nezařazovat (a nechat jako kandidáty), nebo případ od případu? 4) 🗺️ mimo-pohoří čtveřici (Szwajcarka, Górzystów, Orle, Pešákovna) přesunout do `data/kandidati/<oblast>/`? 5) 👥 duplicity sloučit (vyřadit -656… dvojčata)? 6) ❓ sedmnáctka k ruční kontrole — mrkneš na weby z domácí sítě, až budeš mít chvíli?
 
 ## 2026-07-20 — session 24 (ruční běh, zadání k DATA-03 dávce 2)
+
 **Hotovo:** **DATA-03 třetí dávka — 20 českých kandidátů, celkem ověřeno 50/76.** Zadání ručního běhu bylo psané ke stavu před session 23 (polská schroniska „čekají" — dopoledne už ověřena WebSearchem, commit d7dbc90), vzal jsem z něj platné jádro: **zbytek českých bud s webem**. Klíčové zjištění o síti: **v ručním běhu WebFetch částečně funguje** (treking.cz, dvorska-bouda.cz, tetreviboudy.com, klinovka.com, chataujirky.cz, lesnibouda.cz prošly) — vzorec ze session 22 potvrzen, bezobslužně (s23) nepadá jen část domén, ale úplně všechny; malé domény padají i teď (PROVENANCE/timeouty). Nálezy z obsahu webů (vše v `interniPoznamky`, checked 2026-07-20): (1) **POTVRZENO a navrženo povýšit:** Dvorská bouda (1313 m, Strážné, 115 lůžek, restaurace 11–16 i pro turisty, celoročně, ubytovává od 20. let), Bouda Klínovka (pozor: klinovka.cz z OSM přesměrovává na **klinovka.com**; „odlehlá horská bouda… pouze pěšky", 1227 m, 50 lůžek, restaurace s vlastní produkcí i pro neubytované, vědomě bez Wi-Fi; OSM jméno „Nová Klínovka" vs. web „Bouda Klínovka" — vyjasnit při povýšení), Lesní bouda (nad Pecí, eko farma, krkonošská kuchyně 10:30–17 i pro veřejnost, rodinný provoz od 1996); (2) **hraniční případ:** Tetřeví Boudy — web se prezentuje „Horský hotel Tetřeví Boudy" (1030 m, Dolní Dvůr, wellness) → stejná otázka jako Špindlerovka; (3) **verdikt redakci:** Chata u Jirky — chata/penzion s restaurací na adrese v údolí Dolního Dvora, horský charakter web neuvádí; (4) **checklist treking.cz** (načten v tomto běhu) dal křížový signál existence pro Martinovku (web dál timeout), Jelenku (web PROVENANCE), Lyžařskou boudu (pozor: kandidáti jsou DVA stejného jména — 656504528 bez kontaktů; při povýšení rozlišit) a Richtrovy boudy (web self-signed SSL jako Výrovka) — a nově i pro tři kandidáty úplně bez webu: Husova bouda, Barborka (navíc 51 fotokandidátů DATA-02 — nepřímý signál významu), Helena; (5) **k ruční kontrole:** Betyna (kořen webu se načte prázdný — JS; treking ji řadí do sekce „chaty a penziony", ne mezi hřebenové boudy), Žalý (rozhledna — patří objekt do průvodce chat?), Eliška (web 503), Růžohorky, Slovanka, Chalupa na rozcestí, Bouda na Lučinách, Hubertka (weby nedostupné). Poctivost: podobnosti jmen z treking výtahu („Bouda na rozcestí Cestník" vs. Chalupa na rozcesti, „Bouda Hubertus" vs. Hubertka) vědomě NEztotožněny — výtah malého modelu končí „a další", absence v něm se nikde nebere jako důkaz. Kontroly: 20 YAML appendů bezpečných, adresář zpětně parsovatelný, **84/84 int** (lokální Postgres ze s23 stále běží), lint i tsc čisté. Povyšování dle zadání NEDĚLÁNO — Michalovy odpovědi na otázky ze s22/s23 zatím nepřišly.
 **Příště:** zbývá **26 kandidátů bez zápisu** — vesměs CZ bez webu (Amor, Aurora, Bradlerovy boudy, oba Mamuti, Moravská, Medvědí, Náchodská, Patejdlova, Sedmidolí, Vebrovy, Zákoutí, U Kotle, Na Mulde…): na ně WebSearch dávka (jako PL v s23) + treking checklist; pak DATA-03 zbude jen syntéza pro Michala (tabulka povýšit/nezařadit/prověřit). Po Michalových odpovědích: povyšování profilů s fotkami z DATA-02.
 **Otázky pro Michala:** 1) Trvají otázky ze s22 (CZ šestice, Roxana, Tereza/Sasanka/Zvonička, Štumpovka) a s23 (PL devítka, mimo-pohoří trojice, ruční běhy na CZ weby). 2) Nově: **Tetřeví Boudy** — horský hotel v roli historických bud: brát jako Špindlerovku (do průvodce s poctivým označením), nebo nezařadit? 3) **Chata u Jirky** (údolní chata s restaurací v Dolním Dvoře) — patří do průvodce horských chat? 4) Až budeš u počítače: **Betyna** (web přes JS), **Žalý**, **Eliška**, Růžohorky, Slovanka, Chalupa na rozcestí, Bouda na Lučinách, Hubertka — stačí rychlý pohled do webů z domácí sítě a verdikt bouda/penzion do zadání příštího ručního běhu.
 
 ## 2026-07-20 — denní session 23 (bezobslužný běh)
+
 **Hotovo:** **DATA-03 druhá dávka — všech 18 polských kandidátů, celkem ověřeno 30/76.** Nejdřív nepříjemné zjištění: **WebFetch v bezobslužné session nefunguje vůbec** — PROVENANCE_REQUIRED padá i na doménách, které v ručním běhu (session 22) prošly (treking.cz, weby velkých bud); interaktivní schválení nemá kdo dát, takže „velké domény projdou" platilo jen s Michalem online. Náhradní metoda: **WebSearch** — funguje i bezobslužně, ale dává jen titulky a domény výsledků, žádný obsah stránek. Pro polská schroniska to naštěstí stačí na solidní křížový signál: většina jádra je vedena přímo v přehledu ubytování **pttk.pl** a u provozovatele **pttk.jgora.pl** (Sudeckie Hotele i Schroniska PTTK), k tomu korona-gor-polski.pl, mapa-turystyczna.pl, pl.wikipedia. Každý zápis v `interniPoznamky` poctivě přiznává metodu („signál z titulků, obsah NEotevřen") a checked 2026-07-20. Nálezy: (1) **POTVRZENO a navrženo povýšit — 9 schronisek jádra:** Samotnia (kotel Małego Stawu; **pozor: dle titulku bryla.pl po 60+ letech odchází rodina Siemaszków, nový nájemce → aktuální provoz prověřit, priorita DATA-04**; navíc možný novější web schroniskosamotnia.com vedle samotnia.com.pl z OSM), Strzecha Akademicka, Dom Śląski (na Równi pod Śnieżką; v pttk.pl přehledu chybí — provozovatele rozhodne web), Hala Szrenicka, Szrenica (web se prezentuje i jako „hostel" — charakter upřesnit), Odrodzenie (Przełęcz Karkonoska), Okraj (u přechodu k Pomezním boudám), Kamieńczyk (u vodopádu; bez webu v OSM), Pod Łabskim Szczytem (bez webu v OSM, zdroj = stránka PTTK); (2) **potvrzeno s poznámkou o poloze:** Kochanówka (PTTK, ale 510 m v podhůří u Wodospadu Szklarki) a Srebrny Potok (Dolina Srebrnika, Lasocki Grzbiet — východní okraj; PTTK status možná historický); (3) **mimo Krkonoše — návrh NEzařazovat (přesah bboxu):** Szwajcarka → Rudawy Janowickie/Góry Sokole, Chatka Górzystów (Hala Izerska) a Stacja Turystyczna Orle → polská strana Jizerských hor; navrhuju nemazat a nechat jako kandidáty budoucích oblastí (princip „přeshraniční pohoří vcelku" pak pokryje i Jizerky/Rudawy); (4) **studentské/turistické chatky:** AKT (Hutniczy Grzbiet), Smogorniak (nad Podgórzynem), Wielkanocna (pod Śnieżnymi Kotły, 1251 m) — charakter chatek doložen (wikipedia, přehledy chatek, odborný text K. Tęczy), ale provoz/režim nikde — povyšovat až po doložení; (5) **Chatka Puchatka K RUČNÍ KONTROLE:** jméno nesou ≥3 objekty (noclegi Karpacz, willa Michałowice, „Szklarska Poręba" dle karkonosze.pl) a GPS kandidáta u Karpacze nesedí k žádnému z nalezených webů — identita nedoložena, nepovyšovat. Kontroly: všech 18 YAML appendnuto bezpečně (interniPoznamky poslední klíč, kontrola duplicit), celý adresář zpětně parsovatelný; **84/84 int** — poprvé v sandboxu včetně api testu naostro (docker daemon tu neběží → nastartován lokální PostgreSQL 16 ručně: initdb + role user/heslo + DB turistickechaty dle docker-compose); lint i tsc čisté.
 **Příště:** zbylých **46 českých kandidátů** potřebuje obsah webů — WebSearch u malých penzionových domén charakter nerozhodne. Nejlepší cesta: **ruční běh s Michalem online** (WebFetch se schvalováním) po dávkách; bezobslužné sessions mezitím mohou: (a) po Michalově souhlasu povyšovat schválené kandidáty do `data/chaty/` (údaje z už doložených zdrojů + fotky z kandidátů DATA-02), (b) případně začít návrh DATA-06 (graf značených tras). Otisky razítek: čekáme na odpovědi razitkuj.cz a estranky.
 **Otázky pro Michala:** 1) **Povyšování:** trvá otázka ze s22 k první CZ šestici (Labská, Bílé Labe, Vosecká, Dvoračky, Krakonoš, Špindlerovka) — a nově: souhlasíš s povýšením 9 polských schronisek jádra (+ Kochanówka a Srebrny Potok s poznámkou o poloze)? Stačí palec, povýším po dávkách i s hero fotkami z DATA-02. 2) **Mimo pohoří:** Szwajcarka (Rudawy), Chatka Górzystów a Orle (Jizerky) — souhlasíš s vyřazením z Krkonoš? Návrh: soubory nemazat, jen je příští session přesune do `data/kandidati/<budouci-oblast>/` ať fronta Krkonoš zůstane čistá. 3) **Zbylých 46 CZ kandidátů:** uděláme na ně jeden až dva ruční běhy s tebou online (WebFetch schvalování)? Bez toho je bezobslužně nedokážu poctivě rozsoudit.
 
 ## 2026-07-20 — session 22 (ruční běh, poslední dnešní session)
+
 **Hotovo:** **DATA-03 zahájena — první dávka křížového ověření 12/76 kandidátů.** Zadání ručního běhu bylo psané ke stavu před sessions 20–21 (DATA-01 „čeká na klik" — už hotová a odškrtnutá; DATA-02 „čeká na klik" — klik proběhl a dopoledne přibyla hero fotka Luční boudy), vzal jsem z něj platné jádro: DATA-03 dle pořadí backlogu, metodou WebFetch. **Zjištění o síti:** WebFetch ze sandboxu skutečně projde, ale jen na část domén — krnap.cz, treking.cz, cs.wikipedia (ta jen „cache-only", obsah nedá) a weby velkých bud (labskabouda.cz, boudabilelabe.cz, voseckabouda.cz, dvoracky.cz, spindlerovabouda.cz) fungují; malé/http domény (rokytnice.com, chata-tereza.com, martinovka.cz…) končí na PROVENANCE_REQUIRED — interaktivním schválení, které v bezobslužné session nemá kdo odkliknout — nebo na timeoutu robots.txt. Dávka tedy stavěná na dosažitelném: weby objektů + přehled ubytování treking.cz jako křížový checklist. **Nálezy (v `interniPoznamky` kandidátů, checked 2026-07-20, verified false):** (1) potvrzeno a navrženo POVÝŠIT: Labská bouda (1340 m, restaurace + bufet), Bouda Bílé Labe (1000 m, restaurace s terasou), Vosecká bouda (1260 m, 1. zóna, od 1896 turistům, bez elektřiny, sezóna 1. 6.–28. 10.), Chata Dvoračky (web popisuje areál „hotel Štumpovka + bouda Dvoračky" — vztah objektů vyjasnit při povýšení), Horská chata Krakonoš (existence z treking.cz — ale stránka aktualizovaná 2019 a web z OSM je mrtvá DNS → provoz ověřit, priorita DATA-04) a hraniční Hotel Špindlerova bouda (hotel v roli historické hřebenové boudy — obdoba Luční, verdikt na Michalovi); (2) návrh NEZAŘADIT: Penzion Roxana (web nedostupný, v treking přehledu ubytování chybí, jméno běžného penzionu — definitivně rozhodne redakce); (3) K RUČNÍ KONTROLE: Tereza, Sasanka, Zvonička (žádný dosažitelný zdroj je nezná), Výrovka (web z OSM má certifikát pro jinou doménu — rozbité HTTPS), Chata Studenov (jediný z „penzionové" skupiny, který treking přehled uvádí — slabý pozitivní signál). Nic nepovýšeno, nic nevyřazeno — vše jen poznámky s URL zdrojů a návrhy pro redakci, přesně dle zadání. Kontroly: všech 12 YAML zpětně parsovatelných, `--z-jsonu` idempotentní (0 nových / 76 nepřepsáno), **84/84 int**, lint i tsc čisté.
 **Příště (ranní 6:30):** pokračovat v DATA-03 druhou dávkou — nejdřív polská schroniska (weby PTTK objektů mají vlastní domény, šance na průchod WebFetch je slušná: samotnia.com.pl, szrenica.pl, halaszrenicka.pl…), pak zbytek českých bud s webem (Betyna, Slovanka, Růžohorky, Lesní bouda, Martinovka znovu…); sporné bez zdrojů nechat Michalovi. Případně mini-krok: hero fotky pro první povýšené profily, až Michal odsouhlasí návrhy povýšení.
 **Otázky pro Michala:** 1) **Souhlasíš s povýšením první šestice?** (Labská, Bílé Labe, Vosecká, Dvoračky, Krakonoš s výhradou provozu, Špindlerovka jako hraniční) — příští session by je povýšila do `data/chaty/` s údaji doloženými z webů. 2) **Penzion Roxana vyřadit?** (návrh ano — ale ze sandboxu jsem charakter přímo nedoložil, jen nepřímé signály). 3) Tereza/Sasanka/Zvonička: mrkni prosím z domácí sítě (weby ze sandboxu nedosažitelné) — stačí verdikt bouda/penzion do zadání. 4) U Dvoraček: chceš Štumpovku jako samostatný objekt průvodce, nebo jen zmínku v profilu Dvoraček?
 
 ## 2026-07-20 — denní session 21
+
 **Hotovo:** **DATA-02: první fotka end-to-end u chaty — hero Luční boudy.** Třetí klik na workflow (po fixu tempa/backoffu) doběhl čistě: commit 707b624, **77 kandidátních YAML** (57 chat s alespoň jednou fotkou po licenčním sítu, 20 poctivě prázdných s `fotky: []`; nejbohatší Barborka 51, Labská bouda 49, Samotnia 48, Luční bouda 32). Z kandidátů Luční boudy vybrán hero snímek: **„Krkonoše, Luční bouda.jpg" — Stanislav Dusík, CC BY-SA 4.0** (jediný kandidát s popisem přímo boudy, geotag 41 m od chaty, nalezen geosearchem i v Category:Luční bouda, největší rozlišení mezi záběry budovy 4048×2024; licence, autor i popis doloženy ze surového `_commons-export.json` — extmetadata, bez Restrictions; stránku souboru očima zkontroluje redakce, do té doby `overeni.verified: false`). Zapsán do nového bloku `fotky:` v `lucni-bouda.yaml` (plná metadata kolekce Fotky + `stahnoutZ` = originál URL + blok overeni). **Seed rozšířen o sekci 2b:** fotky z YAML chat stáhne z Commons a nahraje do kolekce Fotky s vazbou na chatu — idempotentně dle `zdrojUrl` (opakovaný běh jen srovná metadata, nic nestahuje znovu); `fotky` se zároveň vyjímá z upsertu chaty (v kolekci je to join pole jen ke čtení — poslat ho v datech by byla chyba). Stahování potřebuje síť na upload.wikimedia.org (sandbox: proxy 403 — ověřeno, hláška čitelně říká „pusť lokálně/v Actions"); `SEED_BEZ_FOTEK=1` sekci vědomě přeskočí, ať budoucím sessions seed v sandboxu dál funguje pro zbytek dat. Cestou chycen skutečný bug: User-Agent hlavička s diakritikou („repozitář") shodí fetch — HTTP hlavičky jsou ASCII; opraveno s komentářem. **Atribuce u fotky:** nová komponenta `FotoAtribuce` + `.fatr` — mini tmavá kapsle vpravo nahoře hero, „Foto: Stanislav Dusík · CC BY-SA 4.0" jako odkaz na stránku souboru (rel noopener); povinnost CC BY/BY-SA („u převzatých se atribuce zobrazuje přímo u fotky", komentář kolekce Fotky od F0-04 — prototyp fotoatribuci neřeší, image-slot je placeholder, kapsle jde vědomě minimálně nad jeho rámec ve vizuálním jazyce hero). U `licence: vlastni` nebo bez autora se nezobrazuje nic. Čisté funkce seedu v novém `scripts/seed-fotky-lib.ts` (seed-chaty.ts běží celý při importu, testy importují odsud). Testy: **84/84 int** (+11: název souboru z URL Commons vč. diakritiky a %2C, MIME dle přípony s odmítnutím neznámé, konzistence bloku `fotky:` v YAML s poli kolekce a sítem DATA-02, právě jedna hero fotka; atribuce — odkaz/fallback textu licence/span bez zdrojUrl/nic u vlastní/nic bez autora), lint i tsc čisté. Vizuálně ověřeno nad lokální DB s dočasným placeholder obrázkem (do repa nic; skutečný snímek se ze sandboxu stáhnout nedá): hero zobrazuje fotku z DB, kapsle čitelná light i dark, href míří na Commons. Seed ověřen oběma cestami: bez přepínače čitelně spadne na síti, s `SEED_BEZ_FOTEK=1` doběhne celý vč. razítek.
 **Příště:** dle pořadí **DATA-03** (křížové ověření seznamu chat: weby chat, KRNAP, Treking; kandidáti ready, vč. rozhodnutí o penzionech tagovaných alpine_hut a originálních názvů polských schronisek) — povýšené profily pak rovnou dostanou fotky z kandidátů DATA-02 stejným postupem jako dnes Luční bouda. Případný mini-krok: hero fotky pro první povýšené chaty.
 **Otázky pro Michala:** 1) **Pusť prosím lokálně seed** (`npx payload run scripts/seed-chaty.ts`) — stáhne hero fotku Luční boudy z Commons a profil ožije; mrkni, že snímek i atribuce vypadají dobře. 2) Při té příležitosti **zkontroluj očima licenci na stránce souboru** (odkaz přímo v kapsli atribuce nebo v YAML `zdrojUrl`) — pak v `lucni-bouda.yaml` přepnu `overeni.verified: true` (sandbox na Commons nedosáhne, ověřovala jsem jen ze surového exportu API). 3) Vyhovuje umístění a nenápadnost atribuční kapsle (vpravo nahoře na fotce)? Je to jediné dnešní vybočení z prototypu — licenčně povinné, ale podoba je na tobě.
 
 ## 2026-07-20 — session 20 (ruční běh 2/2 „autonomní hodiny")
+
 **Hotovo:** (1) **DATA-01 dokončena a odškrtnuta.** Druhý klik na workflow mezitím doběhl (+18 polských kandidátů + 1 nový český — Chata Pešákovna, v OSM přibyla mezi běhy; celkem **76 kandidátů**), zbýval slíbený průchod PL části: GPS všech 18 v bboxu, výšky v pásmu Krkonoš (11 s výškou, 13 s kontakty, 5 s obcí), `zeme: pl` všude, typy 14 obsluhovaná / 4 útulna, Samotnia/Strzecha/Dom Śląski se správnými PTTK kontakty; `--z-jsonu` nad oběma exporty idempotentní (0 nových / 76 stávajících / Luční bouda jen porovnána / 1 přeskočený bez name trvá). **Jediný nález — a opraven: slugify ztrácel polské ł** (na rozdíl od ostatní diakritiky nemá NFD dekompozici): „Schronisko pod Łabskim Szczytem" → slug `…-abskim-…`, „Przełęczy" → `prze-eczy`. Do `slugify` doplněn přepis nedekomponovatelných písmen (ł→l, ß→ss, đ→d, ø→o, æ→ae, œ→oe — ß a spol. se budou hodit v Alpách), dva postižené kandidáty přejmenovány i se slugem uvnitř (git mv, `schronisko-pod-labskim-szczytem`, `schronisko-pttk-na-przeleczy-okraj`) a idempotence po opravě ověřena. Payload hook slug sdílí — existující DB záznamy to nemění (hook běží až při uložení). (2) **Štítek historického otisku na padu** (drobek z hlavní session): `RazitkoMoment` má nový prop `stitek` — mikro-štítek `.pad-stitek` (`.mn`, 9px, muted, šířka padu) pod padem; šablona profilu ho skládá **jen z doložených polí**: `stav === 'historicke'` → „historický otisk · {platnostOd}" — u Luční boudy tedy „historický otisk · cca konec 80. let (odhad)". Aktuální razítka žádné označení nedostávají; sloty Razítkovníku zatím také ne (viz otázka). Ověřeno komponentovým testem (štítek jen s propem) a vizuálně nad seedem: light před dopadem i po něm, dark — štítek čitelný, dopad animace nezměněn. Testy: **72/72 int** (+1 ł, +1 štítek), lint i tsc čisté.
 **Příště:** dle pořadí **DATA-02 čeká na Michalův klik** (teď už pokryje všech 76 kandidátů + Luční boudu) a pak **DATA-03** (křížové ověření — kandidáti jsou ready, vč. postřehu ze CZ průchodu o penzionech tagovaných alpine_hut); souběžně lze začít návrh **DATA-06** (graf značených tras z OSM relací).
 **Otázky pro Michala:** 1) **Klik na DATA-02** („DATA-02: fotky chat z Wikimedia Commons") — teď je ideální chvíle, kandidáti DATA-01 jsou kompletní. 2) Má štítek „historický otisk" viset i na slotech Razítkovníku (tam teď historický otisk Luční boudy leží bez označení)? Přidám stejný mikro-štítek do slotu. 3) Polská schroniska mají v kandidátech polské názvy (Schronisko Samotnia…) — nechat jako primární název (místní jméno) a české ekvivalenty řešit přes aliasy, nebo obráceně? Vyplyne z DATA-03, ale směr určíš ty.
 **Dodatek (první běh DATA-02, Michal online):** otázka 3 rozhodnuta — **originální (místní) názvy jako primární**, české ekvivalenty jen aliasy (zapsáno k DATA-03 v backlogu, commit 659fa15). První klik na DATA-02 spadl a Michal poslal log: Commons limituje sdílené IP runnerů **po dávkách ~10 dotazů** — na tempu 2 dotazy/s přišla 429 po 5 chatách, 30s pauza pomohla na dalších 5 chat, druhá 429 už vyčerpala jediný povolený retry. Pipefail z minula odvedl svou práci: krok spadl s čitelnou hláškou skriptu, žádná maskovaná chyba. Oprava: tempo dotazů 250 ms → **1200 ms** (pod 1 dotaz/s; 77 chat × 2 dotazy ≈ 3–4 min čistého času, pořád pohodlné), retry **4 pokusy s exponenciálním backoffem 30 → 60 → 120 s** (strop 150 s) a **respekt k hlavičce `Retry-After`**, kterou Wikimedia u 429 posílá (bere se delší z obou hodnot; výpočet v čisté funkci `dobaCekaniMs` s testy); 403 a jiné 4xx se dál neopakují — blokaci retry nespraví. Testy: **73/73 int** (přežití dvou 429 po sobě, 403 bez opakování, backoff/Retry-After), lint i tsc čisté. Míč: Michal klikne na DATA-02 ještě jednou.
 
 ## 2026-07-20 — session 19 (ruční běh 1/2 „autonomní hodiny", zadání k DATA-02)
+
 **Hotovo:** **DATA-02 postaveno** dle zadání — skript `scripts/data02-commons-fotky.ts` + workflow `.github/workflows/data02-commons.yml` („DATA-02: fotky chat z Wikimedia Commons", `workflow_dispatch` s volitelným radiusem, default 300 m). Návrh kopíruje ověřený vzor DATA-01: (1) **seznam chat se čte z repa za běhu** — `data/chaty/<oblast>/` i kandidáti `data/kandidati/<oblast>/` (adresář `fotky` a `_*` soubory se přeskakují; při shodě slugu má ruční profil přednost) — žádný natvrdo psaný seznam „prvních 10", po Michalově kliku na DATA-01 pokryje další běh automaticky celé Krkonoše; (2) na chatu dva dotazy Commons API (`formatversion=2`): geosearch v okruhu kolem GPS (namespace 6, limit 50) + `Category:<název>` (neexistující kategorie není chyba), s identifikačním User-Agentem a 250ms rozestupy; (3) **tvrdé licenční síto**: povoleno jen CC0 / CC BY / CC BY-SA / public domain (i přes `Copyrighted=False`), vyřazeno vše s NC/ND — včetně NC schovaného v UsageTerms pod hezkým LicenseShortName — a nerozpoznané licence (nerozpoznaná ≠ volná); CC BY(-SA) bez dohledatelného autora ven, protože atribuci by nešlo splnit, u CC0/PD poctivé „neuveden (atribuci nevyžaduje)"; (4) výstup jen **metadata** do `data/kandidati/fotky/<oblast>/<slug>.yaml` (soubor, autor po očištění HTML, licence + licenceUrl, stránka souboru, originál, náhled 640px, rozměry, vzdálenost geotagu od chaty haversinem sdíleným s DATA-01, datum, popis, kde nalezeno) — fotky se nestahují; prázdný výsledek dostane YAML s `fotky: []` jako doklad, že se hledalo; strojově generované soubory, běh je přepisuje (redakční výběr patří do YAML chaty); (5) surový export `_commons-export.json` se commituje (doklad, `checked` = datum dotazu — Commons snapshot timestamp nemá) a transformace umí offline `--z-jsonu`; (6) vyřazené fotky s důvody jdou do reportu (step summary), ne do YAML. Testy: 16 nových (síto vč. NC v UsageTerms a PD z Copyrighted, čištění HTML/entit, dedup geosearch∩kategorie s označením původu, řazení dle vzdálenosti, přednost ručního profilu, tvar dotazů, mock API vč. 429, offline export), lint i tsc čisté; e2e smoke celého CLI proti lokálnímu mock serveru prošel (report, YAML, `--z-jsonu`), testovací data smazána. **Dodatek po rebase:** hlavní session mezitím pushnula fix DATA-01 workflow (d5c7214 — pipe přes tee bez pipefail maskovala pád skriptu; první ostrý běh spadl nejspíš na rate limitu sdílených IP runnerů) — obojí zrcadlím do DATA-02 ještě před prvním během: `shell: bash` + input přes env ve workflow a v `stahniJson` jeden retry s 30s pauzou na 429/5xx (+2 testy, celkem **68/68 int**).
 **Příště (session 2/2):** dle zadání drobek z hlavní session — **štítek „otisk z konce 80. let" na padu historického razítka** (poctivost v UI); případně začít návrh **DATA-06** (graf značených tras). Ostrý běh DATA-02 čeká na Michalův klik — ideálně až po kliku na DATA-01, ať jedna dávka pokryje všechny chaty Krkonoš.
 **Otázky pro Michala:** 1) V Actions teď čekají **dva kliky**: nejdřív „DATA-01: OSM export chat Krkonoš", pak „DATA-02: fotky chat z Wikimedia Commons" (pořadí ať fotky dostanou i noví kandidáti; DATA-02 klidně opakovaně — kandidátní YAML se přepisují aktuálním stavem). 2) Radius geosearch je 300 m (fotky boudy bývají foceny zblízka; širší okruh = víc šumu z hřebenovek) — kdyby výsledků bylo málo, pustíš workflow znovu s radiusem 500–800 m, je to input.
 
 ## 2026-07-20 — denní session 18
+
 **Hotovo:** mini-krok DATA-01 dle plánu ze session 17 — **tiráž „Zdroje dat" v patičce webu**. Nová komponenta `SiteFooter.tsx` (footer vytažen z layoutu beze změny brand řádku — prototyp drží 1:1) + tichý druhý řádek `.zdroje` ve vizuálním jazyce patičky (11px, muted, běžné modré odkazy, mobil zalamuje): „každý údaj o chatě má svůj zdroj uvedený přímo na profilu" + **atribuce OpenStreetMap dle ODbL** (odkaz na openstreetmap.org/copyright i na text licence opendatacommons.org), mapové podklady **Mapy.com © Seznam.cz a.s. a další** (odkaz na api.mapy.com/copyright — stejný text i cíl jako fallback atribuce přímo na mapě v MapaChat) a zmínka správce značení **KČT** (patička ho v mini-kreditu už měla, teď má i odkaz). Formulace „databázi chat stavíme nad weby jednotlivých chat a nad daty OpenStreetMap" je vědomě mírně dopředná: OSM kandidáti z DATA-01 ještě nejsou povýšeni (čeká na tvůj klik), ale atribuce o pár dní dřív je bezpečný směr — opačné pořadí (OSM data bez atribuce) by bylo porušení licence; jestli ti formulace nesedí, klidně přepíšu. Testy: 4 nové komponentové (`site-footer.int.spec.tsx`: brand řádek beze změny, odkazy OSM/ODbL, shoda atribuce Mapy.com s mapou, věta o zdrojích na profilech) — **50/50 int** (poprvé včetně api testu naostro proti lokální DB), lint i tsc čisté; vizuálně ověřeno screenshoty light/dark/mobil nad běžícím serverem se seedem. Kandidáti DATA-01 v repu zatím nejsou — workflow klik trvá.
-**Příště:** po Michalově kliku na workflow „DATA-01: OSM export chat Krkonoš" projít kandidáty + report (GPS/výška vs. ruční Luční bouda); jinak dle pořadí začít **DATA-02** (fotky Wikimedia Commons). *Sonda pro DATA-02 (dnes):* commons.wikimedia.org i upload.wikimedia.org jsou ze sandboxu nedosažitelné (proxy, jako ostatní externí API) — plán: rešerši fotek udělá session přes WebFetch (ten skrz proxy projde), do YAML jen URL + autor + licence po ruční kontrole; hromadné stahování/ověřování případně skript + Actions jako u DATA-01.
+**Příště:** po Michalově kliku na workflow „DATA-01: OSM export chat Krkonoš" projít kandidáty + report (GPS/výška vs. ruční Luční bouda); jinak dle pořadí začít **DATA-02** (fotky Wikimedia Commons). _Sonda pro DATA-02 (dnes):_ commons.wikimedia.org i upload.wikimedia.org jsou ze sandboxu nedosažitelné (proxy, jako ostatní externí API) — plán: rešerši fotek udělá session přes WebFetch (ten skrz proxy projde), do YAML jen URL + autor + licence po ruční kontrole; hromadné stahování/ověřování případně skript + Actions jako u DATA-01.
 **Otázky pro Michala:** 1) **Trvá jeden klik:** Actions → „DATA-01: OSM export chat Krkonoš" → Run workflow (commitne kandidáty do `data/kandidati/`, na web nic nepustí). 2) Mrkni na patičku (stačí lokálně) — sedí ti znění tiráže „Zdroje dat"? Je to jediné místo, kde jsem šel drobně nad rámec prototypu (zdůvodnění: povinná ODbL atribuce; vizuálně drží jazyk patičky). 3) Trvá ze session 16: chceš do pilotu i polská schroniska? Dotaz DATA-01 je zatím vědomě jen ČR.
 
 ## 2026-07-20 — session 17 (ruční běh, zadání k DATA-01)
+
 **Hotovo:** zadání ručního běhu bylo psané ke stavu před session 16 (F0-07 „nedotýkej se snímků" — už posouzena a odškrtnuta; základ DATA-01 už stál) — vzal jsem z něj tedy to nové a DATA-01 přestavěl: (1) **Staging kandidátů:** výstup jde do `data/kandidati/krkonose/` místo přímo do `data/chaty/` — seed čte jen `data/chaty/**`, kandidáti se tedy na webu neobjeví, dokud je redakce po křížovém ověření (DATA-03) ručně nepovýší. Souhlasím se zdůvodněním ze zadání (web nezaplaví desítky polotenkých profilů): řádek faktů by neověřenost sice poctivě přiznal, ale katalog plný skoro prázdných profilů by průvodci spíš škodil; kandidáti v repu dávají redakci jasnou frontu práce a diff při povýšení je čitelný. (2) **Surový export se commituje:** `data/kandidati/krkonose/_overpass-export.json` — doklad exportu vč. copyright hlavičky Overpass; `checked` se nově bere z `osm3s.timestamp_osm_base` (datum **stavu OSM dat**, ne datum transformace) a transformace umí `--z-jsonu` (offline nad commitnutým exportem — přesně vzor „skript s testy běží offline" ze zadání). (3) **Ruční profily se porovnávají:** místo tichého skipu report vypíše GPS rozdíl v metrech (haversine), výšku OSM vs. ruční a případný odlišný název — nic se nepřepisuje (Luční bouda nedotčena, doloženo testem i smoke během: „GPS rozdíl 10 m; výška OSM 1413 m vs. ruční 1410 m" na mock datech). (4) Dotaz rozšířen o **nestandardní `tourism=hut`** dle zadání — typ u něj skript nevyplňuje (wiki tag nezná, určí redakce; poznámka přímo v YAML kandidáta). Workflow nově commituje `data/kandidati/**` a report jde do step summary. Testy přepsány: **46/46 int** (14 pro DATA-01: dotaz, mapování, hut bez typu, checked z timestampu, porovnání, idempotence, ochrana ručních profilů, mock API), lint i tsc čisté; e2e smoke proti lokálnímu mock serveru prošel (stažení → export → kandidáti → report → `--z-jsonu`), testovací data smazána — ostrý export nechávám na workflow (zadání: klidně jen skript + testy, data příště).
 **Příště:** (1) mini-krok: ODbL atribuce OpenStreetMap do tiráže/footeru webu (zadání: může počkat — navrhnu obecnou sekci „Zdroje dat", ať pokryje i Mapy.com a weby chat); (2) po Michalově kliku na workflow projít kandidáty + report (reálné GPS/výška vs. ruční Luční bouda) a začít DATA-02/DATA-03 dle pořadí.
 **Otázky pro Michala:** 1) Trvá jeden klik: Actions → „DATA-01: OSM export chat Krkonoš" → Run workflow — teď už commitne kandidáty do `data/kandidati/` (na web nic nepustí, klidně klikej bez obav). 2) Trvá ze session 16: chceš do pilotu i polská schroniska (Szrenica, Samotnia…)? Dotaz je zatím vědomě jen ČR.
@@ -10403,53 +10488,63 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Dodatek 3 (rozhodnutí: polská schroniska bereme):** Michal rozhodl otázku ze session 16 — **Krkonoše bereme celé včetně polské strany**, a jako obecný princip pro přeshraniční pohoří (až dojde na Šumavu, přibere se německá strana stejně). Implementováno hned: dotaz je parametrický po zemích (`overpassDotaz(iso)`, `ZEME_DOTAZU` = CZ + PL — každý kandidát nese doloženou `zeme` z area filtru, hranici nic nedomýšlí), exporty per země (`_overpass-export-cz.json` — dnešní běh přejmenován git mv, data platí dál — a `_overpass-export-pl.json`), bbox na severu rozšířen 50.82 → 50.87 (polské podhůří: Szklarska Poręba, Karpacz; pro ČR bez efektu — area filtr), `--z-jsonu` čte oba exporty a chybějící zemi čitelně přeskočí, kolize slugů se řeší i napříč zeměmi. Web je připraven: `ZEME_SLUG.pl → polsko` v `lib/chaty.ts` existuje od F0-05 (URL `/polsko/krkonose/<slug>`). Testy: **70/70 int** (3 nové/upravené na PL větev; číslo zahrnuje i testy DATA-02 souběžné denní session), lint i tsc čisté; `--z-jsonu` nad reálným CZ exportem idempotentní (0 nových / 57 stávajících / 1 ruční / 1 přeskočen). **Míč: Michal ještě jednou klikne na workflow** — doplní polské kandidáty (CZ se nezmění, jen se přejmenovaný export znovu uloží) — a DATA-01 tím bude hotová k odškrtnutí.
 
 ## 2026-07-20 — denní session 16
+
 **Hotovo:** **DATA-01 postaveno** dle plánu ze session 14 — skript `scripts/data01-overpass-krkonose.ts` + workflow `.github/workflows/data01-overpass.yml` („DATA-01: OSM export chat Krkonoš", `workflow_dispatch` s volitelným endpointem — default overpass-api.de, při přetížení input přepne na zrcadlo kumi.systems). Dotaz: `tourism=alpine_hut` + `wilderness_hut`, **průnik area ČR (ISO3166-1=CZ) a bboxu Krkonoš** — bbox sám by přibral polská schroniska, a ta jsou zatím otevřená otázka (viz níže); `out center` kvůli way/relacím. Mapování jen doložených tagů: name → nazev + slug (stejný `slugify` jako Payload hook — import z `src/fields/slug`), GPS (node přímo / center), ele → vyska (validace 0–4900 m, jinak se nezapisuje), addr:city → obec, phone/email/website (i contact:*) → kontakty, alt_name/old_name → aliasy s poznámkou původu; typ z významu tagu dle OSM wiki (alpine_hut = obsluhovaná, wilderness_hut = útulna) s poznámkou v YAML; **`stav` se vědomě nevyplňuje** — OSM provoz spolehlivě nenese, nedomýšlíme. Každý soubor: hlavičkový komentář se zdrojem a upozorněním redakci, `overeniLokace`/`overeniProvoz` se `source` = URL konkrétního OSM objektu + atribuce ODbL, `verified: false`, `checked` = datum běhu; operator/opening_hours/note jdou do interniPoznamky. Poctivost a bezpečí: **existující YAML se nikdy nepřepisuje** (ruční profil Luční boudy je v bezpečí — doloženo testem i smoke během), kolize jmen řeší suffix `-<osm id>`, řazení výstupu deterministické. Workflow: report do step summary + commit nových YAML do main (github-actions bot, `git pull --rebase` před pushem). Testy: 10 nových (tvar dotazu, mapování, poctivost, ochrana ručních profilů, kolize, mock API vč. 429 hlášky se zrcadlem) — **42/42 int**, lint i tsc čisté; CLI ověřeno end-to-end proti lokálnímu mock serveru (report sedí, YAML zpětně parsovatelný, `checked` je string — přesně co čeká seed). **F0-07 posouzena a odškrtnuta:** snímky z workflow session 15 dorazily do main až v průběhu dnešní session (commit 23c3533 z Actions — proto rebase před pushem); posouzení proti handoffu: reálné dlaždice outdoor (vrstevnice, stínovaný reliéf, značené trasy KČT, kóty Sněžka/Luční/Studniční hora), modrý marker přesně na Luční boudě, hover preview „Luční bouda · 1 410 m · V provozu · Profil →" light i tmavá dark pilulka 1:1 s prototypem, logo Mapy.com vlevo dole + atribuce „© Seznam.cz a.s. a další" vpravo dole — vše sedí, **F0-07 hotová a Fáze 0 je tím vývojově kompletní**.
 **Příště:** po Michalově kliku na workflow projít vygenerované YAML (report: počty, přeskočené bez jména/souřadnic, podezřelé objekty) a pustit seed — katalog, mapa i razítkovník se rázem naplní; pak dle pořadí **DATA-02** (fotky z Wikimedia Commons pro prvních 10 chat).
 **Otázky pro Michala:** 1) **Klikni prosím:** Actions → „DATA-01: OSM export chat Krkonoš" → Run workflow — commitne YAML nových chat do main a report najdeš v summary běhu. 2) Polská strana Krkonoš (schroniska — Szrenica, Samotnia…): dotaz je zatím vědomě jen ČR; chceš je do pilotu? Přidal bych větev s area PL a `zeme: pl` (URL by byly `/polsko/krkonose/...`).
 
 ## 2026-07-20 — hlavní session (první doložené razítko: Luční bouda)
+
 **Hotovo:** Michal poslal sken razítka Luční boudy ze své dětské sbírky a upřesnil stáří: **historické, nejspíš konec 80. let**. Zapsáno poctivě do `data/razitka/krkonose/lucni-bouda.yaml` (stav `historicke`, platnostOd „cca konec 80. let (odhad)", zdroj odhadu Michal; licence `vlastni`, doložil Michal (redakce)) + ořezaný otisk `lucni-bouda-1410.png` (330×330 z dodaného skenu). Seed rozšířen o sekci razítek (`data/razitka/**` → upload do Fotek s metadaty + upsert Razítka dle (chata, nazev)). Cestou nalezena a opravena skutečná chyba zobrazování: Payload join `chata.razitka` nepopuluje vnořený `otisk` ani při vyšší `depth` → reálný sken by se nikdy nezobrazil, vždy padal fallback na stylizované SVG; opraveno společným dotazem `populujOtiskyRazitek` v `src/lib/chaty.ts` (profil i razítkovník). Ověřeno lokálně naostro: otisk dopadá na profil, Razítkovník ukazuje 1/1 + odznak Krkonoš; typecheck + 32/32 int testů. Do `.gitignore` přidán adresář uploadů `/fotky`.
 **Příště:** (1) na pad přidat k historickému otisku jemný štítek „otisk z konce 80. let" (poctivost i v UI — teď dopadá bez označení); (2) pozor na seed upsert: přejmenování `nazev` razítka založí v dlouhodobé DB nový záznam (klíč (chata, nazev)) — po renamu smazat starý, časem zvážit stabilní klíč; (3) shánět **aktuální** razítko Luční boudy (dotaz na chatu / komunita / DATA-05) — vznikne druhá varianta v archivu.
 **Otázky pro Michala:** žádné nové — otázka SVG vs. šedý stav u nedoložených otisků (session 12) zůstává otevřená pro chaty bez skenu.
 
 ## 2026-07-20 — session 15 (ruční běh, bonus: F0-07 odblokována zadáním)
+
 **Hotovo:** ruční běh přinesl Michalova rozhodnutí k F0-07 (učiněná po startu sessions 11–13): kontrola dlaždic přes Actions a mapa i v katalogu. (1) **Workflow „Vizuální kontrola: mapa (F0-07)"** (`.github/workflows/vizualni-kontrola-mapy.yml`): `workflow_dispatch` + push na main, postgres:17-alpine jako service (parametry dle docker-compose), npm ci → seed → **kontrola, že secret `MAPY_API_KEY` existuje, a build s `NEXT_PUBLIC_MAPY_API_KEY` v env** (inlinuje se při buildu — proto před ním) → `npx playwright install --with-deps chromium` → start + čekání na :3000 → `scripts/ci/screenshot-mapa.mjs` → artifact `mapa-f0-07` **a** commit PNG do `docs/screenshots/f0-07/` (git pull --rebase před pushem). Proti nekonečné smyčce dvojitá pojistka: commit snímků nese `[skip ci]` a workflow má `paths-ignore: docs/screenshots/**`; navrch `concurrency` s cancel-in-progress. Skript fotí 4 stavy: homepage light, s otevřeným hover preview, dark, katalog `/chaty`; čeká nejen na dlaždice (complete + naturalWidth), ale i na **atribuci a logo Mapy.com** — přesně to se posuzuje; selhání je tvrdá chyba, nic se nedomýšlí. Lokálně ověřen s `MOCK_MAPY=1` (routy jako v e2e), CI běží bez mocku. (2) **Mapa v katalogu `/chaty`**: stejná MapaChat, všechny publikované chaty (`getChatyProMapu`), text stránky už neslibuje jen „připravujeme" — mapa žije; nový e2e test (marker, hover preview, klik → profil z katalogu). Sada **32/32 int, 16/16 e2e**, lint i tsc čisté. Rozhodnutí zapsána k F0-07 v backlogu s provenience „zadání ručního běhu 20. 7."; **F0-07 zůstává neodškrtnutá** do posouzení snímků. Bod 4 zadání (404 „MIMO ZNAČKU") už hotový ze session 14 — neduplikováno.
 **Doplněk po doběhnutí workflow (táž session):** běh z pushe a2129aa prošel a commitl 4 snímky (23c3533, github-actions[bot], `[skip ci]` fungoval — žádná smyčka). Posouzení ze snímků: reálné dlaždice outdoor (vrstevnice, stínovaný reliéf, značené trasy KČT, Sněžka/Luční/Studniční hora, Špindl), modrý marker přesně na Luční boudě, hover preview 1:1 s prototypem (light i tmavá pilulka), **logo Mapy.com vlevo dole a atribuce „© Seznam.cz a.s. a další" vpravo dole viditelné**, v dark zůstávají dlaždice světlé dle prototypu; `mapa-katalog.png` je bajtově identický s `mapa-light.png` (deterministický render téže komponenty). Kuriozita, ne chyba: na dark snímku je otevřená hover preview — kurzor po reloadu zůstal nad markerem a mouseover se vystřelil znovu; příští zásah do skriptu může před dark snímkem uhnout myší stranou, ale záběr je vlastně užitečný (dokládá dark variantu `.mpre`).
 **Příště:** hlavní session: mrknout na snímky v `docs/screenshots/f0-07/` a při souhlasu **odškrtnout F0-07** (z mého posouzení vše sedí). Pak dle pořadí DATA-01 (skript + workflow dle plánu v backlogu).
 **Otázky pro Michala:** žádné nové — snímky jsou v repu i jako artifact `mapa-f0-07`.
 
 ## 2026-07-20 — denní session 14
+
 **Hotovo:** poslední drobek F0-08 — **404 stránka „MIMO ZNAČKU"** 1:1 dle handoffu `razitko-moment.html`: `(frontend)/not-found.tsx` (šedý přerušovaný obrys razítka #8a949c s „404 / MIMO ZNAČKU", opacity .45, natočení −7°, „Tady cesta nevede — možná zanikla jako Obří bouda", akce „Zpět na rozcestí →"; noindex) + nový catch-all `(frontend)/[...rest]/page.tsx`, který na razítkovou 404 posílá i úplně neznámé URL — repo nemá společný root layout (skupiny (frontend)/(payload)), takže dřív by nenamatchovaná cesta dostala výchozí 404 Next.js bez hlavičky; konkrétnější routy vč. /admin a /api mají přednost, celá sada to dokládá. Cestou odhalen a opraven skrytý buglet: **tmavý režim se na 404 po reloadu ztrácel** — not-found boundary React kreslí na klientu a inline `darkInit` script z layoutu se tam neprovede (ověřeno i na staré default 404, nebyla to moje regrese) → pojistka `useLayoutEffect` v SiteHeaderu (na SSR stránkách no-op po darkInit, záblesk nepřibyl). S tím souvisí dev-only hláška „Encountered a script tag while rendering React component" na 404 v dev overlayi — je preexistující (React si při client renderu boundary stěžuje na script tag v layoutu), v produkci se neukazuje a funkčně je po dnešní pojistce neškodná; nechávám být. Testy: 3 nové e2e (`not-found.e2e.spec.ts`: neznámá URL → 404 + obrazovka + layout s badge + proklik na úvod; neexistující chata na kanonické cestě; dark po reloadu na 404). Sada **32/32 int, 15/15 e2e** (admin napoprvé spadl jen na známou studenou kompilaci, druhý běh čistý), lint + tsc čisté; screenshoty light/dark/mobil sedí s handoffem. **F0-08 je tím definitivně kompletní.** Navíc průzkum pro DATA-01: Overpass API (hlavní instance i zrcadla) je ze sandboxu nedosažitelný — plán přes GitHub Actions zapsán přímo k položce v backlogu.
 **Příště:** **DATA-01** — skript `scripts/data01-overpass-krkonose.ts` (Overpass dotaz `tourism=alpine_hut`/`wilderness_hut` pro Krkonoše → YAML se `source` OSM + atribucí ODbL, `verified: false`) + workflow `workflow_dispatch` dle vzoru smoke-mapy; spuštění pak jedním klikem na Michalovi.
 **Otázky pro Michala:** 1) Mrkni na `/tudy-cesta-nevede` (nebo jakýkoli překlep v URL) — 404 „MIMO ZNAČKU" žije, i v dark režimu. 2) Trvá: F0-07 čeká na tvou lokální kontrolu dlaždic + rozhodnutí o mapě v katalogu; foto otisku razítka Luční boudy při nejbližší návštěvě; volba stylizované SVG vs. šedý stav u nedoložených otisků (session 12).
 
 ## 2026-07-20 — session 13 (ruční běh, 2. z fronty)
+
 **Hotovo:** **F0-08 dokončena a odškrtnuta.** Zadání ručního běhu („vezmi F0-08 moment + deník") bylo psané ke stavu před session 12, která moment i deník právě dopushovala — neduplikoval jsem tedy hotové a dostavěl zbývající část položky: stránku **Razítkovník** (obrazovka 5 prototypu) nad reálnými daty. Server: `getChatyProRazitkovnik()` v `lib/chaty.ts` (publikované chaty řazené názvem, výběr razítka stejně jako na profilu — přednost „k dispozici", otisk poctivě null, když sken chybí). Klient `RazitkovnikClient.tsx` nad `useDenik()`: hero se skóre X/N (X = **průnik** lokálního deníku s chatami v DB — slugy v deníku bez chaty v průvodci se sem nepočítají, badge v hlavičce dál počítá celou sbírku), progress bar s „PCT % · ZBÝVÁ K · ODZNAK POHOŘÍ" (odznak v textu jen když je pohoří jediné), skupiny slotů per oblast s červenou lištou, sloty: sbírkové razítko s deterministickou rotací −8° až +8° z indexu (žádný Math.random — hydratace) a datem z deníku vs. chybějící šedý přerušovaný obrys „?"/CHYBÍ s hintem `kdeSeRazitkuje` z DB (bez něj poctivé „Zatím bez otisku" — hint „1:20 od Výrovky" z prototypu nemáme doložený, vynechán), odznak pohoří (progres po obvodu stroke-dasharray X/N·302, silueta hřebene, žádné stuhy), infobox VÝZVA s poctivým počtem chat bez doloženého otisku (formulář neslibuje — jen „připravujeme", nahrávání je v Zaparkováno). Prázdné stavy dle handoffu s akcí: prázdný deník → „Najít první razítko →" `/chaty`, prázdná DB → „Zpět na úvod". Titulek z dat: jediné pohoří → „Krkonoše — sbírka razítek", víc → obecný. Sdílené SVG razítko vytaženo z RazitkoMomentu do `RazitkoSvg.tsx` (jeden zdroj kresby pro moment i sloty). H1 stránky je nově v client části (kvůli skóre v hero řádku) — server předává jen titulek. Testy: 6 nových komponentových (skóre/progress/sloty/odznak nad 3 chatami, průnik s deníkem, přednost otisku z DB, víc oblastí, prázdné stavy) + 2 e2e nad reálným serverem (0/1 s výzvou; 1/1 s datem, plným odznakem a proklikem slotu na profil). Sada: **32/32 int, 12/12 e2e**, lint i tsc čisté; screenshoty light/dark/mobil sedí s prototypem (mobil 2sloupcový grid, tab-bar badge živý).
 **Příště:** drobek razítkové řeči: **404 stránka „MIMO ZNAČKU"** dle razitko-moment.html (Next.js not-found.tsx, šedý přerušovaný obrys, „Zpět na rozcestí →"). Pak je Fáze 0 vývojově vyčerpaná — dál čekají datové úkoly **DATA-01** (OSM Overpass export chat Krkonoš — víc chat naplní katalog, mapu i razítkovník) a na Michalovi F0-07 (vizuální kontrola + rozhodnutí o mapě v katalogu).
 **Otázky pro Michala:** 1) Razítkovník žije — mrkni na `/razitkovnik` (stačí lokálně, data nepotřebuje kromě seedu). Skóre počítá jen chaty, které v průvodci reálně jsou — až DATA-01 přidá zbytek Krkonoš, sbírka se sama rozroste. OK? 2) Trvají otázky ze session 12: stylizované SVG u nedoložených otisků vs. šedý prázdný stav; a foto otisku Luční boudy při nejbližší návštěvě (odblokuje razítkovací sekci na profilu). 3) F0-07 pořád čeká na tebe (lokální kontrola dlaždic + scope katalogu).
 
 ## 2026-07-20 — denní session 12
+
 **Hotovo:** F0-07 zůstává blokovaná na Michalovi (dnes potvrzeno, že api.mapy.com je nedosažitelné i z tohoto cloud sandboxu — vizuální kontrolu reálných dlaždic za tebe neudělám), dle pravidel tedy **začata F0-08: razítkovací moment + lokální deník**. Nová client komponenta `RazitkoMoment.tsx` — pad 150×150 s hintem „SEM DOPADNE RAZÍTKO", klik na „＋ Razítko do deníku" spustí dopad 1:1 dle handoffu `razitko-moment.html` (scale 2.1 → 0.94, mikro-odskok, konečné natočení −7°, blur 2 px → 0, 550 ms, cubic-bezier(.2,1.4,.35,1), rozpití inkoustu feTurbulence + feDisplacementMap, jednou — žádné smyčky); v okamžiku dopadu (480 ms) se otisk zapíše do deníku a tlačítko se přepne na ghost „✓ Ve sbírce · 20. 7. 2026". Do padu dopadá **skutečný otisk z DB** (sken/foto, bývalý `.p-otisk` blok tím nahrazen), a teprve když chybí, stylizované kruhové SVG složené jen z doložených údajů (název · pohoří · výška — bez výšky v DB se řádek nevykreslí; id v SVG přes useId, ať se instance na stránce nehádají). Po reloadu otisk drží bez přehrání animace (třída `.set` — prototyp animaci pouští při každém přepnutí obrazovky, což je artefakt SPA, ne záměr). **Lokální deník** `lib/denik.ts`: localStorage klíč `tc-denik`, verzovaný formát `{verze:1, zaznamy:{slug:{datum}}}` s validací při čtení (poškozený zápis = prázdný deník, nic se nedomýšlí), mini-store pro useSyncExternalStore, změny z jiných tabů přes storage event, SSR-safe (server renderuje 0). Badge Deník v hlavičce i mobilním tab-baru konečně žije — čte skutečný počet ze sbírky (statická nula z F0-02 končí). Sekce razítka na profilu má „Sbírka →" jako odkaz na `/razitkovnik`. Testy: 8 nových komponentových (idempotence a persistence deníku, poškozený localStorage, klik → `.hit` → zápis až v momentu dopadu → done stav, `.set` po reloadu, přednost otisku z DB, unikátní SVG id) + 2 nové e2e na badge (hlavička s 2 záznamy, mobilní tab-bar) — sada 26/26 int, 10/10 e2e, lint i tsc čisté. Vizuálně ověřeno na dočasném zkušebním razítku v lokální DB (po screenshotech smazáno, do repa nic): light/dark/po reloadu sedí s handoffem. Pozn.: admin e2e v čerstvé DB napoprvé spadne na timeout studené kompilace `/admin` (druhý běh 3/3) — kdyby tě to lokálně potkalo, není to regrese.
 **Příště:** dokončit F0-08 — stránka **Razítkovník** dle obrazovky 5 prototypu: hero se skóre X/N červeně, progress bar, červená lišta, grid slotů (sbírková razítka s rotací a datem z lokálního deníku vs. chybějící se šedým přerušovaným obrysem a hintem cesty), odznak pohoří s progresem po obvodu, infobox „Výzva". Pak F0-07 čeká už jen na tebe.
 **Otázky pro Michala:** 1) Razítkovací moment se ukáže jen u chat se záznamem razítka v DB — a Luční bouda zatím žádný nemá (sekce razítka je teď na webu skrytá, DATA-05 čeká na odpovědi razítkových webů). Nejčistší odblokování: až budeš u některé boudy, vyfoť vlastní otisk — je to doložený zdroj bez licenčních otazníků. 2) Když sken otisku chybí, dopadá stylizované kruhové SVG z doložených údajů (ilustrace sběratelské vrstvy dle handoffu) — vyhovuje, nebo bys u nedoložených otisků radši šedý prázdný stav „razítko nedoloženo" z razitko-moment.html? 3) Trvá dvojice k F0-07 ze session 11: lokální kontrola mapy s reálným klíčem + rozhodnutí, zda Mapa MVP zahrnuje i katalog `/chaty`.
 
 ## 2026-07-20 — denní session 11
+
 **Hotovo:** **F0-07 implementována** — mapový pás na homepage. Nová client komponenta `MapaChat.tsx`: Leaflet (import až na klientu v useEffect, žádné SSR triky), dlaždice Mapy.com „outdoor" s klíčem z `NEXT_PUBLIC_MAPY_API_KEY` (retina displeje dostávají `256@2x` — mapset outdoor to dle dokumentace podporuje), atribuce se načítá **za běhu z tiles.json** mapsetu s fallbackem na text z oficiálního příkladu („© Seznam.cz a.s. a další" — přesnější než dřív plánovaný „Mapy.com · OpenStreetMap", pochází přímo z dokumentace map-tiles, kterou jsem dnes ověřil z veřejného repa mapycom/developer; git clone ze sandboxu kupodivu projde, HTTPS fetch ne), povinné logo Mapy.com jako LogoControl vlevo dole (přesně dle dokumentace vč. URL `api.mapy.com/img/api/logo.svg`). Markery `L.divIcon` se SVG 1:1 z handoffu `karta-chaty.html` (v provozu modrý r8/stroke 2.5 · zaniklá bílá čárkovaná · vybraná červená r12 se střechou a stínem — jediná; „dočasně mimo provoz" jsem zobrazil modře jako existující chatu, stav řekne preview červeně). Hover preview `.mpre` 1:1 z prototypu (top 12 px, left dle markeru, název · výška · stav zeleně/červeně · „Profil →"), klik na marker naviguje na profil, mapa se přizpůsobí markerům (fitBounds, maxZoom 13), scrollWheelZoom vypnutý (pás nemá krást scroll stránky). Server strana: `getChatyProMapu()` v `lib/chaty.ts` (jen publikované chaty s lat+lng, žádné domýšlení), homepage pás renderuje pod hero; bez klíče nebo bez chat se pás nevykreslí vůbec. Bacha na fintu: client komponenta nesmí importovat z `lib/chaty.ts` (server-only payload config) — formátování čísel má lokálně. Testy: 4 nové e2e s **mockem Mapy.com API přes route interception** (tvar URL dlaždic s klíčem v query, marker dle handoffu + hover preview + klik, atribuce z tiles.json, fallback při nedostupném tiles.json), screenshoty light/dark sedí s prototypem (v dark se mění jen podklad pásu, dlaždice zůstávají světlé — jako prototyp). Vedlejší úklid: `playwright.config.ts` umí `PW_CHROMIUM_PATH` pro předinstalovaný Chromium sandboxu (lokálně/CI se nic nemění) a opraveny dva **zastaralé šablonové e2e testy** rozbité dávno před dneškem (H1 z F0-01 scaffoldu vs. hero z F0-02; admin list Payload přesměrovává s `?depth=&limit=` a „Users" má od F0-04 label „Uživatelé"). Sada: 18/18 int, 8/8 e2e, lint + tsc čisté.
 **Příště:** Michalova vizuální kontrola s reálnými dlaždicemi (viz otázka) → odškrtnout F0-07, případně dle rozhodnutí přidat mapu do katalogu `/chaty`. Pak dle pořadí **F0-08 razítkovací moment + lokální deník**.
 **Otázky pro Michala:** 1) **Pusť si prosím lokálně homepage s reálným klíčem** (`.env` dle `.env.example`, `npm run dev`) a mrkni, že dlaždice outdoor, logo a atribuce vypadají správně — sandbox na api.mapy.com nedosáhne, testy jedou na mocku; potvrzení = odškrtnu F0-07. 2) Má „Mapa MVP" zahrnovat i mapu v katalogu `/chaty` (README handoffu bod 4 „Katalog + mapa"), nebo katalog přijde až s více chatami po DATA-01 a F0-07 uzavřeme homepage pásem? 3) Výška pásu je 210 px dle prototypu i na mobilu — kdyby ti na telefonu přišla mapa nízká, řekni, přidám breakpoint. 4) Trvá otázka přepínání křivek profilu (session 09/10) — není blokační.
 
 ## 2026-07-20 — session 10 (ruční běh, dopoledne)
+
 **Hotovo:** **F0-06 dokončena a odškrtnuta.** Ruční běh přinesl upřesnění: `znaceni` tras se nečeká od Michala ručně — doplní ho zpětně trasová pipeline DATA-06 (což backlog u DATA-06 už sliboval, commit 93543ec; otázka č. 1 ze session 09 je tím bezpředmětná a stahuji ji). Zbývalo doložit render výškových křivek obou tras: šablona zobrazuje křivku první trasy (rozhodnutí session 07 — beze změny, otázka č. 2 z 09 na přepínání křivek trvá), proto nový komponentový test `tests/int/vyskovy-profil-komponenta.int.spec.tsx` — renderuje `VyskovyProfil` nad reálnými daty přímo z `lucni-bouda.yaml` (zdroj pravdy, žádná fixture): pro každou trasu s profilem ověří aria-label s délkou, dvě path (výplň uzavřená k základně + hladká křivka s C segmentem na každý bod), popisky paty (start s výškou, cíl s km), skrytý hover bod a krajní body křivky přesně na X0/X1. Test odhalil a zdokumentoval vlastnost Catmull-Rom interpolace: kontrolní body bezieru smí mírně přestřelit plátno (např. y 88,3 > 88), ale nikdy ven z viewBoxu — přesně tak to kreslí i prototyp, assertion to teď hlídá. Kvůli `.tsx` testům rozšířen vitest include na `{ts,tsx}`; doinstalována chybějící peer dependency `@testing-library/dom`. 18/18 testů, lint i tsc čisté. Seed + vizuální ověření (light/dark screenshoty, hover tooltip) proběhly už v session 09 dnes ráno — nedublovalo se.
 **Navíc (začátek F0-07):** prostudována design reference mapy — mapový pás `.band` s hover preview `.mpre` (název · výška · stav zeleně/červeně · „Profil →", translateX(-50%), stín, opacity .15s) v `prototyp.html` a přesné markery v `components/karta-chaty.html` (v provozu: modrý kruh r8 `#1b6e9e` stroke bílá 2.5 · zaniklá: bílá se šedým čárkovaným okrajem · vybraná: červená r12 `#e0341f` s bílou střechou, jediná se stínem · cluster s číslem · odznáček razítka). A nový workflow `.github/workflows/smoke-mapy.yml` (`workflow_dispatch`): přes Actions ověří tvar URL mapsetu outdoor — tiles.json (vypíše atribuci, zoomy, šablonu dlaždic bez apikey) + vzorovou dlaždici Luční boudy (z13 x4453 y2752, spočteno z GPS); klíč jde hlavičkou ze secretu, do logu nesmí. Spustit ho ze sandboxu nejde (proxy pouští jen git, Actions API vrací 403 „not enabled for this session") — **Michale, klikni prosím v repu na Actions → „Smoke: Mapy.com API" → Run workflow**; výstup dá příští session ověřenou šablonu dlaždic a skutečný text atribuce.
 **Příště:** **F0-07 mapa MVP** — implementace: Leaflet (dynamic import, ssr: false), dlaždice outdoor s klíčem z env, markery dle handoffu z dat Payloadu, hover preview, atribuce za běhu z tiles.json (fallback „Mapy.com · OpenStreetMap" do doby ověření); v Playwright testech mock tiles.json + dlaždic přes route interception; výstup smoke workflow převzít, až doběhne.
 **Otázky pro Michala:** 1) Spusť prosím jednou workflow „Smoke: Mapy.com API" (viz výše) — odblokuje ověřenou atribuci. 2) Trvá otázka č. 2 ze session 09 — chceš časem přepínání křivky profilu mezi trasami (chips pod tabulkou)? Není blokační.
 
 ## 2026-07-20 — denní session 09
+
 **Hotovo:** F0-06 poslední ověřovací krok — seed a render tras Luční boudy. Lokální Postgres 16 + čerstvá DB, `npx payload run scripts/seed-chaty.ts` puštěn 2× (první běh vytvořil oblast i chatu, druhý jen aktualizoval — idempotence drží, v DB 1 chata + 2 trasy). Render `/cesko/krkonose/lucni-bouda` ověřen Playwrightem: tabulka ukazuje obě trasy (Špindl 3:15 / +699 m, Pec 3:40 / +742 m; značení poctivě „—", dokud není doloženo), výškový profil Špindlu renderuje (SVG křivka, popisky paty „0 KM · ŠPINDLERŮV MLÝN 737 M" / „6,8 KM · LUČNÍ BOUDA", aria-label s trasou a délkou), hover funguje: tooltip „3,7 KM · 1 232 M" sedí s datovým bodem `[3.71, 1233]`, červený bod po odjetí myši zmizí; dark režim mění jen podklad profilu dle prototypu; řádek faktů hlásí poslední `checked` 20. 7. 2026 se sub-textem „zatím neověřeno" (žádný blok `verified` — poctivé). Do kódu aplikace se nesahalo — jen ověření a aktualizace backlogu. Pozn. k sandboxu: Playwright potřebuje `executablePath` na předinstalovaný Chromium a hover test scrollIntoView (souřadnice myši jsou viewportové, profil byl pod ohybem).
-**Příště:** dle pravidel **F0-07 mapa MVP** (Leaflet + dlaždice Mapy.com „outdoor", markery, hover preview; atribuci načíst z tiles.json mapsetu; klíč připraven v env). F0-06 čeká už jen na `znaceni` od Michala — pak jednořádkové doplnění YAML + seed a odškrtnutí. *Průzkum pro F0-07 (dnes ověřeno):* api.mapy.com je ze sandboxu blokované i pro dlaždice/tiles.json (proxy 403 na CONNECT, stejně jako v session 08) a GitHub API je tokenem omezené jen na naše repo (dokumentace mapycom se nedohledá). Plán: mapa se implementuje normálně (dlaždice tahá prohlížeč klienta, ten blokovaný není), atribuce za běhu z tiles.json; v sandboxových Playwright testech se tiles.json + dlaždice mocknou přes route interception; smoke test proti skutečnému API může běžet v GitHub Actions (na externí API dosáhnou, secret `MAPY_API_KEY` už Michal nastavil pro DATA-06) — a vizuálně mapu ověří Michal lokálně.
+**Příště:** dle pravidel **F0-07 mapa MVP** (Leaflet + dlaždice Mapy.com „outdoor", markery, hover preview; atribuci načíst z tiles.json mapsetu; klíč připraven v env). F0-06 čeká už jen na `znaceni` od Michala — pak jednořádkové doplnění YAML + seed a odškrtnutí. _Průzkum pro F0-07 (dnes ověřeno):_ api.mapy.com je ze sandboxu blokované i pro dlaždice/tiles.json (proxy 403 na CONNECT, stejně jako v session 08) a GitHub API je tokenem omezené jen na naše repo (dokumentace mapycom se nedohledá). Plán: mapa se implementuje normálně (dlaždice tahá prohlížeč klienta, ten blokovaný není), atribuce za běhu z tiles.json; v sandboxových Playwright testech se tiles.json + dlaždice mocknou přes route interception; smoke test proti skutečnému API může běžet v GitHub Actions (na externí API dosáhnou, secret `MAPY_API_KEY` už Michal nastavil pro DATA-06) — a vizuálně mapu ověří Michal lokálně.
 **Otázky pro Michala:** 1) Potvrď prosím barvy značení obou tras z plánovače (Špindl → Luční bouda, Pec → Luční bouda): cervena / modra / zelena / zluta — doplním do YAML a F0-06 uzavřu. 2) Profil se renderuje u první trasy s daty (Špindl) dle rozhodnutí ze session 07 — chceš časem přepínání křivky mezi trasami (např. chips pod tabulkou)? Zapíšu do backlogu, kam řekneš; do té doby nechávám jednu křivku.
 
 ## 2026-07-20 — denní session 08
+
 **Hotovo:** F0-06 předposlední krok — `scripts/vyskovy-profil.ts` dle rozhodnutí z 19. 7. (zdroj výšek = Mapy.com Elevation API). Vstup GPX (`trkpt`/`rtept`, libovolné pořadí atributů, více segmentů) → kumulativní km haversinem → rovnoměrný výběr ≤ 256 bodů **po vzdálenosti** (limit API na dotaz) → výšky z `GET /v1/elevation` (páry `lon,lat` — lon první, klíč hlavičkou `X-Mapy-Api-Key`, čitelné hlášky pro 401/403/422/429, chybějící výška −100000 = tvrdá chyba, nikdy odhad) → decimace Douglas–Peucker se svislou tolerancí 2 m (vrcholy a sedla zůstávají) → hotový YAML fragment trasy: `delkaKm`, `prevyseni` (stoupání, klesání v komentáři), `vyskovyProfil` zalomený po šesti dvojicích, komentáře se zdrojem + `checked` a s tím, co doplnit ručně (`vychoziBod`, `casMin` — čas skript záměrně nedokládá, `znaceni`, `obtiznost`). `--dry-run` a `--tolerance`; klíč z `.env` (dotenv). Tvar API ověřen z oficiální dokumentace (repo mapycom/developer na GitHubu — web developer.mapy.com ze sandboxu nedostupný). 13 vitest testů (parsování, haversine 1° ≈ 111,19 km, decimace, DP na vrcholu vs. šumu, mock API vč. dávkování >256 bodů a pořadí lon,lat, YAML fragment zpětně parsovatelný); CLI ověřeno dry-runem na zkušebním GPX; lint + tsc čisté. Návod „Výškové profily tras" v README. **Ostrý běh ze sandboxu nejde** — proxy blokuje api.mapy.com (403 na CONNECT), ověřeno; přesně pro tento případ je skript stavěný na jednorázové lokální spuštění.
 **Příště:** F0-06 je teď blokovaná na Michalovi (GPX + jeden příkaz lokálně, viz README) — příští session bere dle pravidel **F0-07 mapa MVP** (Leaflet + dlaždice Mapy.com „outdoor", markery, hover preview; atribuci načíst z tiles.json mapsetu). Až budou data tras v YAML, F0-06 odškrtnout.
 **Otázky pro Michala:** 1) Vyexportuj prosím GPX trasy Pec pod Sněžkou → Luční bouda (a klidně další: Špindlerovka, Výrovka…) a projeď README postup — pak je F0-06 hotová. Vlastní nahrávka je nejčistší; u exportu z plánovače nad OSM přidej do `overeniPristup.source` atribuci ODbL (skript na to v komentáři upozorní). 2) `casMin` skript nedokládá — nejlepší zdroj budou rozcestníky KČT z terénu, do té doby nechat prázdné?
@@ -10459,36 +10554,43 @@ na `ban-scan.ts:36`. Všechny tři hýbou počtem zásahů, proto najednou a s m
 **Otázky pro Michala:** 1) Trvá volba zdroje výškových dat: GPX z Mapy.com (ověřit podmínky užití), nebo OSM + DMR 5G ČÚZK (licenčně čisté, ale potřebuje běžet mimo sandbox)? Případně vlastní GPX nahrávky z výletů — nejčistší. 2) Popisek pod profilem zatím říká jen „najeď myší po křivce" — provázání s mapou doplním s F0-07, ať netvrdíme, co ještě neexistuje.
 
 ## 2026-07-19 — denní session 06
+
 **Hotovo:** F0-06 první část — doložená data Luční boudy. `data/chaty/krkonose/lucni-bouda.yaml` (+ `data/oblasti/krkonose.yaml`): lokace s GPS přepočtenou z webu boudy, výška 1 410 m, nocleh (typy pokojů, ceny „od"), občerstvení (bufet celoročně 10–17, restaurace, speciality vč. piva Paroháč), služby (WC, karty), provoz a kontakty, přístup (terminál P1 Pec + smluvní přeprava, 8,5 km / +750 m), historie 1623→2004 v milnících, perex + 3 odstavce živého textu, zdroje. Vše `verified: false`, `checked: 2026-07-19`, zdroje: lucnibouda.cz (profil, historie, doprava) a ČeskéNoviny.cz 9. 8. 2025 (návrat do běžného provozu po sporu s KRNAP). **Vědomě nezapsáno:** celková kapacita lůžek (web boudy ji neuvádí — demo „≈ 90 lůžek" z prototypu nepřevzato), pěší trasy s časy (zatím nedoloženy), URL webkamery. Nový `scripts/seed-chaty.ts`: idempotentní upsert YAML → Payload dle slugu (oblasti + chaty, odstavce textu → Lexical, publikuje) — zdroj pravdy zůstává v repu; `yaml` v devDependencies. Ověřeno: seed 2× po sobě bez duplikátů, profil `/cesko/krkonose/lucni-bouda` renderuje light i dark (screenshoty), řádek faktů poctivě říká „zatím neověřeno", JSON-LD validní (TouristAttraction + LodgingBusiness), lint + tsc čisté.
 **Příště:** dokončit F0-06 — doložit pěší trasy (časy a převýšení z rozcestníků KČT / plánovače, ideálně s GPX) a postavit interaktivní výškový profil dle handoffu (SVG křivka, hover bod, tooltip km · m n. m.). Pak F0-07 mapa (API klíč Mapy.com je k dispozici).
 **Otázky pro Michala:** 1) Typ: web se prezentuje jako „Hotel Luční bouda" — nechal jsem „obsluhovaná chata" dle prototypu; chceš přepnout na „horský hotel v roli chaty"? 2) Výšková data pro profil trasy: preferuješ GPX z plánovače Mapy.com (nutno ověřit podmínky užití), nebo výpočet z OSM cest + otevřeného DMR 5G ČÚZK? Druhé je licenčně čisté, dám mu přednost, pokud neřekneš jinak. 3) Provoz boudy se po sporu s KRNAP (6–8/2025) vrátil k běžnému režimu — kdyby ses doslechl o změně, hoď mi to do zadání, ať profil nelže.
 
 ## 2026-07-19 — denní session 05
+
 **Hotovo:** F0-05 šablona profilu chaty. Route `/[zeme]/[oblast]/[chata]` dle URL konvence plánu (`/cesko/krkonose/lucni-bouda`, mapování kódů zemí na české slugy v `src/lib/chaty.ts`); nekanonická cesta vrací 404. Šablona 1:1 dle prototypu (sekce #profil): breadcrumb s GPS, sticky subnav s dynamickými kotvami, hero s gradient overlayem (fotka z DB, jinak ilustrační silueta hor), badges, řádek faktů s hairline dělítky (Výška / Otevřeno / Nocleh / **Ověřeno** / Webkamera s pulzující tečkou — jen doložené buňky, grid se přizpůsobí), trasy s pásovými značkami, razítko (červená lišta, otisk z DB), sousedé (chips s časy, prolinkované), historie (night lišta + milníky), tlačítka + tisková patička `.pfoot`. „Ověřeno" bere nejnovější `checked` napříč bloky ověření; sub-text poctivě říká „zatím neověřeno", dokud není žádný blok `verified`. JSON-LD: TouristAttraction + LodgingBusiness/FoodEstablishment dle dat + BreadcrumbList, jen z doložených polí. **Generovaný OG obrázek** (next/og): silueta hor + červený topline + doména/oblast + název s výškou + stav — fonty pro satori jsou sloučené TTF subsety latin+latin-ext (fonttools; satori neumí woff2 ani fallback mezi subsety, `src/lib/og-fonty/`). Ověřeno na zkušebním záznamu v lokální DB (po testu smazán): screenshoty light/dark proti prototypu, OG s kompletní diakritikou, JSON-LD validní JSON, 404 na špatnou oblast; lint + tsc čisté.
 **Příště:** F0-06 vzorová Luční bouda (naplnit profil, `verified: false`, postupně ověřovat) + interaktivní výškový profil. Ze šablony zbývá na pozdější položky: počasí v heru (potřebuje zdroj dat), tehdy/dnes slider (potřebuje pohlednici — F0-06), razítkovací animace (F0-08), plánovač přechodů (F0-07+).
 **Otázky pro Michala:** 1) Tlačítko „Nahlásit změnu" z prototypu zatím nedávám — potřebuje cíl (formulář, nebo aspoň e-mail; plán ho slibuje „od prvního dne", ale nechci do repa domýšlet adresu). Jaký kontakt použít? 2) OG fonty: přibalil jsem sloučené TTF (SIL OFL, ~220 kB) do `src/lib/og-fonty/` — vyhovuje, nebo je chceš generovat při buildu? 3) Styleguide `/design` nechávám beze změny, otázka z session 03 trvá.
 
 ## 2026-07-19 — denní session 04
+
 **Hotovo:** F0-04 Payload kolekce dle plánu kap. 5. Nové kolekce: **Chaty** (taby Identifikace / Lokace / Nocleh / Občerstvení / Služby / Provoz / Přístup / Historie / Obsah a média / Vztahy / Meta; sidebar slug + země + typ + stav; drafty zapnuté), **Oblasti** (pohoří/podoblast + bbox pro mapu), **Výlety** (zastávky s vazbou na chaty, GPX, etapy, drafty), **Razítka** (samostatná entita s obdobím platnosti, stavem, kreditem dokladatele; otisk může chybět — výzva pro komunitu), **Fotky** (upload s povinným autorem a licencí, typ současná/dobová/otisk; náhledové velikosti), **Články** (drafty, vazby na chaty a oblasti). Sdílený blok `overeni` (source / verified / checked) je u každé věcné skupiny údajů — u Chaty per tab (overeniLokace, overeniNocleh…), protože taby bez name sdílejí jednu úroveň polí. Slug se generuje hookem z názvu (diakritika pryč), služby jsou tříhodnotové (ano / ne / nevyplněno = nezjištěno — checkbox by lhal). Nový access `verejneJenPublikovane`: veřejnost vidí jen publikované, koncepty jen přihlášená redakce — díru odhalil smoke test. `scripts/smoke-f004.ts` (idempotentní) prověřuje slug hook, vztahy, join razítek, access i draft režim proti lokální Postgres — prošel; lint + tsc čisté; admin editor vizuálně zkontrolován (screenshoty, taby a české labels sedí). Media přejmenována na „Soubory" (GPX apod.), fotky mají vlastní kolekci kvůli licencím.
 **Příště:** F0-05 šablona profilu chaty nad daty + JSON-LD + generovaný OG obrázek.
 **Otázky pro Michala:** 1) Granularita ověření je per tematická skupina (jeden telefonát ověří otvíračku i kontakty), ne per jednotlivé pole — per pole by byl admin nepoužitelný. Vyhovuje? 2) Sousední chaty se zapisují jednosměrně (u chaty A vazba na B); obousměrné dopočítání nechám na plánovači přechodů. OK? 3) Omezení Payloadu: join pole (razítka/fotky u chaty) se plní až po prvním publikování dokumentu — u čistých konceptů se seznam neukáže; pro web to nevadí, jen ať tě to v adminu nepřekvapí.
 
 ## 2026-07-19 — denní session 03
+
 **Hotovo:** F0-03 komponenty. `components.css` s dlaždicemi, sekčními lištami (modrá/červená/night), tlačítky (červené CTA, modré, ghost, done, link), chips + filtr chips (aktivní plná červená), stavovými pilulkami (otevřeno plná zelená · zavřeno · zaniklá — vždy s textem, nikdy jen barvou), infoboxy (blue/alpine/red, plná plocha bez rámečku), pásovými značkami 1:1 s terénem (inline `.znm` i box `.znk`), tabulkovými řádky katalogu a kartou chaty (stav pilulkou ve fotce, hover zdvih + plovoucí stín) — hodnoty 1:1 z `prototyp.html`, vč. dark mode a mobilních breakpointů. React obaly prop-driven v `src/components/ui.tsx` + `HutCard.tsx` (žádná zadrátovaná data — vše přijde z Payloadu). Interní styleguide `/design` (noindex, s upozorněním, že jde o ukázková data z prototypu). Ověřeno: lint + tsc čisté, screenshoty light/dark proti prototypu a komponentovým kartám handoffu. CI blokace z session 01 potvrzena jako vyřešená (ci.yml je v `.github/workflows/`, commit bc36aa0).
 **Příště:** F0-04 Payload kolekce dle plánu kap. 5: Chata, Oblast, Výlet, Razítko, Fotka, Článek + pole source/verified/checked všude.
 **Otázky pro Michala:** Styleguide `/design` je veřejně dostupný (jen neindexovaný) — vyhovuje, nebo ho mám schovat za env flag / smazat, až poběží reálné šablony? Mapové markery z `karta-chaty.html` jsem nechal na F0-07 (patří k mapě).
 
 ## 2026-07-19 — denní session 02
+
 **Hotovo:** F0-02 design základ. `tokens.css` přenesen 1:1 do `src/app/(frontend)/tokens.css`, self-hosted fonty (Space Grotesk + Inter, latin + latin-ext, SIL OFL) zkopírovány do `public/fonts/` včetně licence, `fonts.css` s @font-face dle handoffu. Globální layout dle `prototyp.html`: sticky header s červeným toplinem (brand SVG, nav pilulky, badge Deník, toggle ◐), vrstevnicové pozadí na krému, footer, mobilní tab-bar (<760 px, ikony dle prototypu, safe-area). Dark mode „hřebenovka po tmě" s persistencí (`localStorage tc-dark`, init skript před hydratací — žádný záblesk). Úvodní hero (kicker s mini pásovou značkou, H1 se dvěma akcenty, perex) — **bez demo čísel z prototypu** (347 chat apod. jsou nedoložená data, přijdou z DB). Placeholder stránky `/chaty`, `/vylety`, `/razitkovnik`, print CSS skrývá chrome, `:focus-visible` dle handoffu. Ověřeno: lint + tsc čisté, screenshoty (light/dark/mobil) proti prototypu — header a hero sedí, dark persistuje po reloadu.
 **Příště:** F0-03 komponenty — sekční lišty, tlačítka, chips, stavové pilulky, infoboxy, pásové značky, tabulkové řádky, karta chaty (`components/*.html` v handoffu).
 **Otázky pro Michala:** Hero zatím bez vyhledávání a statistik — obojí potřebuje reálná data (F0-04+), doplním, jakmile bude nad čím. Badge Deník ukazuje staticky 0, oživí ho F0-08.
 
 ## 2026-07-19 — denní session 01
+
 **Hotovo:** F0-01 scaffold aplikace. Next.js 16 (App Router) + TypeScript + Payload CMS 3.86 + Postgres adaptér, aplikace v kořeni repa (nejpřímější pro Forge Quick Deploy dle plánu kap. „Infrastruktura"). `docker-compose.yml` jen s Postgres 17 pro lokální DB, `.env.example` doplněn, README česky, úvodní stránka a metadata česky (`lang="cs"`). ESLint přepsán na flat config (šablonový FlatCompat padal s eslint-config-next 16) + CI workflow (lint + tsc) v `.github/workflows/ci.yml`. Smoke test proti běžící Postgres 16: frontend i `/admin` vrací 200, Payload si stáhl schéma. Kolekce zatím jen šablonové Users + Media — vlastní model přijde v F0-04.
 **Příště:** F0-02 design základ — `tokens.css` 1:1 do aplikace, self-hosted fonty z `design/handoff/fonts/`, globální layout dle `prototyp.html` (červená topline, vrstevnicové pozadí, navigace, footer, dark mode).
-**Otázky pro Michala:** V sandboxu session neběží Docker daemon — lokální DB jsem spouštěl přímo (postgres 16 z apt); `docker-compose.yml` pro tebe funguje normálně. Push CI workflow token odmítl (chybí oprávnění `workflow`) — předloha čeká v `docs/ci/ci.yml`. Přidáš tokenu oprávnění **Workflows: Read and write**, nebo soubor přesuneš do `.github/workflows/` ručně? *→ Vyřešeno 19. 7.: token má oprávnění Workflows, ci.yml přesunut do `.github/workflows/` (commit bc36aa0).*
+**Otázky pro Michala:** V sandboxu session neběží Docker daemon — lokální DB jsem spouštěl přímo (postgres 16 z apt); `docker-compose.yml` pro tebe funguje normálně. Push CI workflow token odmítl (chybí oprávnění `workflow`) — předloha čeká v `docs/ci/ci.yml`. Přidáš tokenu oprávnění **Workflows: Read and write**, nebo soubor přesuneš do `.github/workflows/` ručně? _→ Vyřešeno 19. 7.: token má oprávnění Workflows, ci.yml přesunut do `.github/workflows/` (commit bc36aa0)._
 
 ## 2026-07-19 (příprava, ještě mimo denní režim)
+
 **Hotovo:** Projekt naplánován (plán v1.7), design uzavřen — systém „Moderní průvodce" v2.2 z Claude Design (handoff v `design/`), klikací prototyp ověřen a opraven (null-guard u skeleton overlaye). Připraven tento repozitář.
 **Příště:** F0-01 scaffold aplikace.
 **Otázky pro Michala:** čas denní session · API klíč Mapy.com (až bude čas na F0-07).

@@ -18,6 +18,16 @@ nespustí. Ověřeno znovu 8. 8. 2026.
 zapíše do deníku, ne aby tu zůstal odškrtnutý. Seznam má být krátký a mít
 pravdu — dlouhý seznam s odškrtnutými řádky se přestane čtít.
 
+> **⛔ STOP-STAV (9. 8. 2026 večer): Actions nejedou — vyčerpaný billing.**
+> Od ~13:00 UTC padá každý workflow (CI, deploy i kliky) okamžitě s hláškou
+> „The job was not started because recent account payments have failed or
+> your spending limit needs to be increased." Ověřeno Michalem v logu;
+> lokální kontroly kódu i dat jsou zelené, s repem to nesouvisí. Dokud se
+> billing nevyřeší (zvýšit spending limit / opravit platbu / počkat na
+> měsíční reset / přepnout repo na public — veřejná repa mají minuty
+> zdarma), NEMÁ SMYSL nic z tohoto souboru klikat. Klik DATA-32 z dneška
+> po vyřešení prostě spusť znovu, běh #1 nic nestihl.
+
 ---
 
 ## 1. DATA-01 pro nové oblasti
