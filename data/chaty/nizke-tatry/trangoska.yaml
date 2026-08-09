@@ -1,0 +1,253 @@
+# Chata Trangoška — publikovaný profil Nízkých Tater (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne; katalogový objekt
+# HUT-0148. STAV mimo-provoz: dva nezávislé prameny hlásí chatu v roce
+# 2026 zavřenou (jeden „trvale"); vlastní web byl při rešerši nedostupný
+# a v indexu vyhledávače nese titulek „Nová Trangoška" — co to znamená,
+# se nepodařilo zjistit a profil nic nedomýšlí.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani
+# návštěvou.
+
+nazev: Chata Trangoška
+slug: trangoska
+zeme: sk
+typ: obsluhovana
+stav: mimo-provoz
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Trangoška
+    poznamka: běžně užívaná podoba (OSM name); jméno nese i celá lokalita
+      s parkovištěm a zastávkou pod jižními svahy Chopku
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9232429
+lng: 19.6076453
+vyska: 1130
+obec: Horná Lehota
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/80031681 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA — ROZPOR, přiznaný: treking.cz „v nadmorské výšce 1 130 m",
+    tatrami.sk „vo výške 1 120 m n. m.", katalog 1121 m; domalenka.sk
+    uvádí 1020 m — osamocená odlehlá hodnota, nejspíš překlep, do dat
+    nejde (KONTROLA-11: izolovaný outlier není rozpor). Zapsáno 1130 —
+    není tu údaj provozovatele, který by rozhodl, a rozdíl 1120/1121/1130
+    zůstává přiznaný. Poloha: jižní úpatí Chopku v Bystré dolině, u
+    silnice z Tále/Bystré, vedle údolních stanic areálu Chopok juh.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    nocleh: ne PODLE AKTUÁLNÍHO STAVU — chata je mimo provoz (viz
+    overeniProvoz). ZA PROVOZU: dvě budovy — hlavní budova s recepcí,
+    barem a restaurací a 54 lůžky, vedlejší chata B s 24 lůžky (8
+    dvoulůžkových pokojů a osmimístná klubovna); 4 pokoje s vlastním
+    sociálním zařízením (domalenka.sk, shodně zlavomat.sk). KAPACITA —
+    ROZPOR STARŠÍCH PRAMENŮ: 75 (treking.cz), 78 (nizketatry.sk
+    i součet budov 54+24), 97 (natreku.cz), 98 lůžek ve 20 pokojích
+    (travelguide.sk). Ceny za provozu 17–44 € podle pramene a období.
+    Do polí se zapisuje jen dnešní stav; historická čísla nese próza.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+overeniObcerstveni:
+  source: >-
+    Chata je mimo provoz — pole se nevyplňují. ZA PROVOZU: „Trangoška
+    poskytuje ubytování i stravování, k dispozici je kavárna s barem,
+    restaurace s bufetem" (treking.cz); restaurace 46 míst
+    (travelguide.sk) × 62 míst (nizketatry.sk) — rozpor zůstal
+    nerozhodnut, chata už nevaří.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    MIMO PROVOZ: domalenka.sk vede chatu jako „TRVALO ZATVORENÁ"
+    a nizketatry.sk píše „Chata je v roku 2026 zatvorená" (obojí čteno
+    9. 8. 2026). Vlastní web trangoska.sk byl při rešerši nedostupný
+    (opakovaný timeout); ve vyhledávači je indexován s titulkem „Nová
+    Trangoška" — jestli to znamená přestavbu, nového provozovatele nebo
+    něco jiného, se nepodařilo zjistit a profil nic nedomýšlí. Důvod
+    a přesné datum ukončení provozu prameny neuvádějí; poslední nalezený
+    doklad běžného provozu je pobytová nabídka s platností do
+    30. 11. 2020 (zlavomat.sk). Starší popisy „otevřeno celoročně"
+    (treking.cz, natreku.cz, travelguide.sk) jsou zastaralé. Kontaktní
+    osobou byla dle nizketatry.sk Pavol Černý (týž kontakt vede
+    i u Chaty Kosodrevina); kontakty se pro mimo-provoz nezapisují.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1983
+overeniHistorie:
+  source: >-
+    nizketatry.sk (čteno 9. 8. 2026): „Chata bola uvedená do prevádzky
+    v roku 1983"; shodně natreku.cz („postavena byla v roce 1983").
+    Jméno Trangoška je ale mnohem starší a nese ho celá lokalita: právě
+    od Trangošky stavěl KČST ve dvacátých letech Štefánikovu chatu pod
+    Ďumbierom (základní kámen 20. 7. 1924) a Trangošskou dolinou se na
+    ni dodnes nosí zásoby. Vedle chaty stojí samostatná Chata Horskej
+    služby, postavená roku 1961 jako záchranná stanice HS (chatahs.sk)
+    — jiný objekt, nezaměňovat. Prvorepubliková historie samotné chaty
+    Trangoška se v dostupných pramenech nenašla.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1983
+    udalost: >-
+      Chata byla uvedena do provozu — dvě budovy pod jižními svahy
+      Chopku, u nástupu do Trangošské doliny.
+    zdroj: >-
+      nizketatry.sk (čteno 9. 8. 2026) — „Chata bola uvedená do
+      prevádzky v roku 1983"; shodně natreku.cz.
+  - rok: 2026
+    udalost: >-
+      Chata je zavřená; jeden pramen ji vede jako trvale uzavřenou.
+      Poslední doklad běžného provozu je z konce roku 2020 a web chaty
+      nese v indexu vyhledávače titulek „Nová Trangoška" — víc se zjistit
+      nepodařilo.
+    zdroj: >-
+      domalenka.sk (čteno 9. 8. 2026) — „TRVALO ZATVORENÁ";
+      nizketatry.sk — „Chata je v roku 2026 zatvorená"; zlavomat.sk —
+      nabídka s platností do 30. 11. 2020.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Trangoška je klasické východiště na Ďumbier a k Štefáničce: od
+      chaty vede zelená značka Trangošskou dolinou, kterou se na
+      Štefáničku dodnes nosí zásoby, a u parkoviště bývalo informační
+      středisko národního parku.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — trasa „okolo bývalého informačného
+      strediska NAPANT-u"; nosičská role doliny hiking.sk, profil
+      Štefáničky; travelguide.sk — „Directly from the cottage hiking
+      trails lead you to the highest peaks".
+  - text: >-
+      Sto metrů od chaty je autobusová zastávka a velké neplacené
+      parkoviště — na horskou chatu nezvykle civilizovaný nástup.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „veľké neplatené a nestrážené
+      parkovisko (autobusová zastávka) na Trangoške"; zastávka 100 m
+      chatahs.sk.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata z roku 1983 na jižním úpatí Chopku, u parkoviště a zastávky, odkud
+  se stoupá Trangošskou dolinou k Štefáničce a na Ďumbier. V roce 2026 je
+  zavřená — jeden pramen píše trvale — a její web nese záhadný titulek
+  „Nová Trangoška".
+text:
+  - >-
+    Trangoška leží v Bystré dolině na jižním úpatí Chopku, u silnice
+    z Tále, sto metrů od autobusové zastávky a velkého neplaceného
+    parkoviště. Prameny se přou o pár metrů výšky (1120, 1121, 1130)
+    a rozdíl tu stojí přiznaný. Jméno nese celá lokalita — a je
+    starší než chata sama: právě odsud stavěl KČST ve dvacátých letech
+    Štefánikovu chatu pod Ďumbierom a Trangošskou dolinou se k ní dodnes
+    nosí zásoby.
+  - >-
+    Samotná chata je z roku 1983: dvě budovy, v hlavní recepce, bar
+    a restaurace s 54 lůžky, ve vedlejší dalších 24. Na celkovém počtu
+    se prameny neshodly — 75, 78, 97 i 98 lůžek podle toho, kdo počítal
+    a kdy. V zimě ji plnili lyžaři z jižních svahů Chopku, v létě
+    turisté mířící nahoru; spávalo se tu za 17 až 44 eur podle období.
+  - >-
+    Teď je to všechno minulý čas: v roce 2026 je chata zavřená.
+    Domalenka.sk ji vede jako „TRVALO ZATVORENÁ", nizketatry.sk píše
+    „Chata je v roku 2026 zatvorená" a poslední doklad běžného provozu,
+    který se podařilo najít, je pobytová nabídka platná do konce
+    listopadu 2020. Web chaty byl při rešerši nedostupný a ve
+    vyhledávači nese titulek „Nová Trangoška" — jestli to znamená
+    přestavbu, nového provozovatele, nebo jen starý záměr, nevíme
+    a hádat to nebudeme.
+  - >-
+    Východiště ale funguje dál a je to jedno z nejpohodlnějších v celých
+    Nízkých Tatrách z jihu: zelenou značkou Trangošskou dolinou je to
+    k Štefáničce hodina čtyřicet až dvě hodiny (prameny se liší), dál na
+    Ďumbier přes hřeben kolem tří a půl hodin; žlutá vede za tři čtvrtě
+    hodiny až hodinu deset ke Kosodrevině a dál na Chopok; zelená
+    opačným směrem dojde za hodinu deset k Jaskyni mŕtvych netopierov.
+    Kousek vedle stojí Chata Horskej služby z roku 1961, bývalá
+    záchranná stanice — dnes apartmán, jiný provoz.
+  - >-
+    Údaje nesou treking.cz, nizketatry.sk, natreku.cz, domalenka.sk,
+    travelguide.sk, tatrami.sk, zlavomat.sk, hiking.sk a chatahs.sk;
+    polohu OpenStreetMap. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      nizketatry.sk — uvedení do provozu 1983, 78 lůžek, restaurace 62
+      míst, trasy s časy, „Chata je v roku 2026 zatvorená"
+      (načteno 9. 8. 2026)
+    url: https://www.nizketatry.sk/chaty/hhtrangoska/hhtrangoska.html
+  - popis: >-
+      domalenka.sk — „TRVALO ZATVORENÁ", dvě budovy (54 + 24 lůžek),
+      1020 m (odlehlá hodnota) (načteno 9. 8. 2026)
+    url: https://domalenka.sk/atrakcie/chata-trangoska
+  - popis: >-
+      treking.cz — 1130 m, 75 míst, kavárna s barem a restaurace
+      s bufetem, ceny 17–25 €, příjezd autem z Tále/Bystré
+      (načteno 9. 8. 2026)
+    url: https://www.treking.cz/chaty/trangoska.htm
+  - popis: >-
+      natreku.cz — stavba 1983, 97 míst, celoroční provoz (zastaralé)
+      (načteno 9. 8. 2026)
+    url: https://www.natreku.cz/chata-trangoska/
+  - popis: >-
+      travelguide.sk — 98 lůžek ve 20 pokojích, restaurace 46 míst,
+      snídaně v ceně (načteno 9. 8. 2026)
+    url: https://www.travelguide.sk/eng/accommodation/chata-trangoska_51527_0_1.html
+  - popis: >-
+      zlavomat.sk — pobytová nabídka s platností do 30. 11. 2020
+      (poslední nalezený doklad běžného provozu) (načteno 9. 8. 2026)
+    url: https://www.zlavomat.sk/akcia/703596-horska-chata-trangoska-pobyt-s-ranajkami-alebo-polpenziou-aj-pocas-velkej-noci
+  - popis: >-
+      tatrami.sk — 1120 m, ubytování i občerstvení (za provozu)
+      (načteno 9. 8. 2026)
+    url: https://tatrami.sk/mapa/miesto/43/chata-trangoska
+  - popis: >-
+      hiking.sk — parkoviště a zastávka na Trangošce, bývalé infocentrum
+      NAPANT, čas k Štefáničce 1:40 (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/1055/trangoska_stefanikova_chata_dumbier.html
+  - popis: >-
+      chatahs.sk — sousední Chata Horskej služby z roku 1961, dnes
+      apartmán; zastávka 100 m (načteno 9. 8. 2026)
+    url: https://www.chatahs.sk/chata-horskej-sluzby/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=hostel; ODbL)
+    url: https://www.openstreetmap.org/way/80031681
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/trangoska.yaml (9. 8. 2026);
+  katalogový objekt HUT-0148. Druhý profil korpusu se stavem mimo-provoz
+  (po krkonošské Barborce) a první, kde jeden pramen píše „trvale".
+
+  STAV mimo-provoz, ne zanikla: budova stojí (OSM, domalenka) a titulek
+  „Nová Trangoška" na nedostupném webu může znamenat návrat — HLÍDAT,
+  při další rešerši zkusit web znovu; kdyby se otevřela, přepnout stav
+  a doplnit kontakty (nizketatry vedl tel. 0917 998 431 / domalenka
+  0917 988 431 / treking 0905 899 098 — tři varianty, i proto se teď
+  žádný nezapisuje). nocleh: ne popisuje dnešek; historická kapacita
+  75 × 78 × 97 × 98 je v próze a overeniNocleh.
+
+  VÝŠKA: 1130 (treking) × 1120 (tatrami) × 1121 (katalog) — zapsáno
+  1130 bez silného rozhodovacího pramene; 1020 (domalenka) je izolovaný
+  outlier (KONTROLA-11), do dat nejde. DATA-31/mapový podklad může
+  rozhodnout přesněji.
+
+  NENALEZENO: důvod a datum ukončení provozu; prvorepubliková historie
+  chaty (jméno lokality je starší); IČO; obsah webu „Nová Trangoška".
+  Kontaktní osobou byl dle nizketatry Pavol Černý — týž kontakt jako
+  u Kosodreviny, což může znamenat společného provozovatele obou chat;
+  je to ale jen shoda jména v jednom prameni, nic víc se nedomýšlí.
+
+  Fotku dodá druhý běh DATA-02, výškový profil DATA-06.

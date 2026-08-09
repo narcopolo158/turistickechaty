@@ -1,0 +1,305 @@
+# Chata Kosodrevina — publikovaný profil Nízkých Tater (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne; katalogový objekt
+# HUT-0147 („Hotel Kosodrevina"). ROZHODNUTÍ PÁRU 151 m (registr
+# jmenovců, jádro kosodrevina): v areálu je JEDNA ubytovací budova —
+# druhý bod OSM odpovídá komplexu stanice lanovky se samoobslužnou
+# restaurací TMR, ne druhému noclehu → jeden profil, druhý kandidát
+# vyřazen (vzor Morskie Oko: rozhoduje provoz, ne vzdálenost).
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani
+# návštěvou.
+
+nazev: Chata Kosodrevina
+slug: chata-kosodrevina
+zeme: sk
+typ: horsky-hotel
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Hotel Kosodrevina
+    poznamka: katalogové jméno; Register modernej architektúry vede objekt
+      jako Horský hotel Kosodrevina
+  - nazev: Koska
+    poznamka: hovorová přezdívka (blog.sme.sk)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9327804
+lng: 19.599465
+vyska: 1500
+obec: Bystrá
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/435913007 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    budova s číslem popisným 875. VÝŠKA — ROZPOR, přiznaný: vlastní web
+    „vo výške 1500 m n.m.", nizketatry.sk 1510 m; sousední samoobslužná
+    restaurace TMR se uvádí na 1494 m. Zapsáno číslo provozovatele.
+    Poloha: mezistanice lanovek na jižním svahu Chopku (Chopok juh),
+    u přestupu Krupová/Srdiečko → Chopok. GPS na kontaktní stránce
+    vlastního webu (48.9324757, 19.5971663) leží asi 200 m západněji než
+    budova v OSM — zapsána poloha budovy.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 236
+overeniNocleh:
+  source: >-
+    KAPACITA — ROZPOR, přiznaný: travelguide.sk „accommodation and
+    boarding for 236 people", nizketatry.sk 240; vlastní web kapacitu
+    neuvádí — dle konvence platí nižší číslo 236. Pokoje dle ceníku
+    vlastního webu (zima 2026/27, čteno 9. 8. 2026): dvoulůžkové až
+    osmilůžkové se sociálním zařízením a dvoulůžkové jen s umyvadlem;
+    ceny s polopenzí („Uvedené ceny sú s polpenziou") 37–50 € za osobu
+    a noc podle období a pokoje, děti 5–10 let 31 €, do 5 let bez lůžka
+    zdarma, přistýlka 33 €, pes 10 €, silvestrovský večer +33 €.
+    Rezervace výhradně e-mailem: „Svoje rezervácie môžete posielať len
+    emailom na chatakosodrevina@gmail.com"; příchod od 15:30, odchod
+    do 10:00.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026): denný bar, lobby bar, bar
+    a restaurace; polopenze i plná penze, bufetové snídaně; diety
+    bezlepková, bezlaktózová, vegetariánská i veganská. ROZPOR
+    v kapacitě restaurace, přiznaný: nizketatry.sk 230 míst,
+    travelguide.sk 80 — druhé číslo ale nejspíš patří sousední
+    samoobslužné restauraci TMR (80 míst + terasa 120), která stojí
+    podle jasna.sk 50 m od chaty a otevírá s lanovkami. Výslovný doklad
+    obsluhy neubytovaných přímo v chatě se nenašel — denní hosty
+    a lyžaře prokazatelně obsluhuje samoobslužná restaurace TMR vedle;
+    chata ale pořádá veřejné koncerty (vlastní web: „zoznam koncertov
+    ktoré na Vás čakajú u nás na chate").
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: >-
+  zimní sezóna — v roce 2026 zavřeno od 22. března do 3. prosince,
+  otevírá se 4. prosince (vlastní web)
+overeniProvoz:
+  source: >-
+    Vlastní web, titulní strana (čteno 9. 8. 2026): „Chata zatvorená od
+    22.3 do 3.12.2026. Opäť sa vidíme v zimnej sezóne od 4.12.2026." —
+    provoz je tedy fakticky jen zimní; zveřejněný ceník platí pro zimu
+    2026/27. ROZPOR, přiznaný: nizketatry.sk uvádí uzavírku od 1. 4. 2026
+    a starší popisy (nizketatry.sk, travelguide.sk i podstránka vlastního
+    webu) mluví o celoročním provozu — platí aktuální oznámení
+    provozovatele na titulce. Kontaktní osobou je dle nizketatry.sk
+    Pavol Černý; firma/IČO se nenašly.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421905516519'
+  email: chatakosodrevina@gmail.com
+  web: https://chatakosodrevina.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+overeniHistorie:
+  source: >-
+    Register modernej architektúry Slovenska (čteno 9. 8. 2026): Horský
+    hotel Kosodrevina, architekt Miroslav Begán, doba vzniku 1958–1968,
+    postaven „na medzistanici lanovky z južnej strany Chopku";
+    společenská část v rozšířeném přízemí a „štandardným trojtraktovým
+    lôžkovým blokom s tromi poschodiami". ROZPOR V DATACI, přiznaný:
+    blog na archinfo.sk uvádí výstavbu 1958–1960 — pole rokVzniku proto
+    zůstává prázdné a milník nese rozpětí. Kontext lanovky: jižní úseky
+    první slovenské sedačkové lanovky jezdily Srdiečko–Kosodrevina od
+    19. 9. 1954 (do 1994) a Kosodrevina–Chopok od 29. 8. 1957 (do 1998)
+    — kotp.sk; hotel stál asi 100 m od stanice von Roll (archinfo.sk).
+    Roku 2016 byla před vchodem necitlivě umístěna nová stanice kabinové
+    lanovky a odstraněna původní markýza (archinfo.sk).
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1954
+    udalost: >-
+      Na jižní svah Chopku dorazila lanovka: úsek Srdiečko–Kosodrevina
+      zahájil provoz 19. září 1954, navazující úsek na Chopok 29. srpna
+      1957.
+    zdroj: >-
+      kotp.sk, muzeum lanovky von Roll (čteno 9. 8. 2026) — „IV section
+      (Srdiečko–Kosodrevina): Operational from September 19, 1954";
+      „III section (Kosodrevina–Chopok): Operational from August 29,
+      1957".
+  - rok: 1968
+    udalost: >-
+      U mezistanice vyrostl horský hotel podle projektu architekta
+      Miroslava Begána; registr moderní architektury datuje výstavbu
+      1958–1968, jiný pramen 1958–1960.
+    zdroj: >-
+      register-architektury.sk (čteno 9. 8. 2026) — architekt Miroslav
+      Begán, vznik 1958–1968; archinfo.sk (blog) uvádí 1958–1960.
+  - rok: 2016
+    udalost: >-
+      Před vchodem vyrostla nová stanice kabinové lanovky; při úpravách
+      zmizela původní markýza vstupu, což registr moderní architektury
+      kritizuje jako necitlivé.
+    zdroj: >-
+      archinfo.sk, blog o hotelu (čteno 9. 8. 2026) — „Snahy o jeho
+      ‚vylepšovanie' sú značne necitlivé."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Budova je zapsaná v Registru moderní architektury Slovenska jako
+      příklad poválečného modernismu — třípodlažní lůžkový blok na
+      rozšířeném společenském přízemí od architekta Miroslava Begána.
+    kategorie: jine
+    zdroj: >-
+      register-architektury.sk (čteno 9. 8. 2026).
+  - text: >-
+      V bývalé dolní stanici lanovkového úseku Kosodrevina–Chopok funguje
+      muzeum lanovky von Roll s původní strojovnou, velínem a vozy —
+      památka na první slovenskou sedačkovou lanovku.
+    kategorie: jine
+    zdroj: >-
+      kotp.sk (čteno 9. 8. 2026) — osobní, nákladní a montážní vůz
+      a drobnější exponáty; jasna.sk zmiňuje „Lift Operator's Room,
+      a Mini Museum".
+  - text: >-
+      V zimní sezóně se na chatě hrají veřejné koncerty — sezóna 2026
+      běžela od 23. ledna do 21. března.
+    kategorie: jine
+    zdroj: >-
+      vlastní web, stránka koncertů (čteno 9. 8. 2026).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Begánův modernistický horský hotel z konce padesátých let na mezistanici
+  lanovek na jižním svahu Chopku. Přes dvě stě lůžek s polopenzí, bary
+  a zimní koncerty — dnes jede jen v zimní sezóně a rezervace bere
+  výhradně e-mailem.
+text:
+  - >-
+    Kosodrevina stojí v patnácti stech metrech na jižním svahu Chopku,
+    přímo u přestupní stanice lanovek z Krupové a Srdiečka nahoru na
+    hřeben. Není to chata v romantickém smyslu — je to horský hotel
+    z konce padesátých let od architekta Miroslava Begána, zapsaný
+    v Registru moderní architektury Slovenska: třípodlažní lůžkový blok
+    posazený na rozšířeném společenském přízemí „s elegantne šikmo sa
+    rozbiehajúcimi líniami", jak píše archinfo.sk. Tentýž web ale
+    dodává, že novodobé zásahy budově nesvědčí: roku 2016 vyrostla přímo
+    před vchodem nová stanice kabinové lanovky a původní markýza zmizela.
+  - >-
+    Historie místa je historií lanovky: úsek Srdiečko–Kosodrevina jezdil od
+    září 1954, navazující úsek na Chopok od srpna 1957 — a hotel vyrostl
+    u mezistanice; registr datuje stavbu 1958–1968, jiný pramen 1958–1960
+    a profil ten rozpor přiznává. V bývalé dolní stanici horního úseku
+    dnes funguje muzeum lanovky von Roll s původní strojovnou a vozy.
+  - >-
+    Kapacita je na horské poměry velkorysá: 236 lidí (starší pramen uvádí
+    240 a vlastní web číslo neuvádí, platí tedy nižší) v pokojích od
+    dvoulůžkových po osmilůžkové. Ceny jsou s polopenzí, od 37 do 50 eur
+    za osobu a noc podle období a pokoje; kuchyně zvládá bezlepkovou,
+    bezlaktózovou, vegetariánskou i veganskou dietu. Rezervace jde jedině
+    e-mailem — „Svoje rezervácie môžete posielať len emailom" — a v zimě
+    se na chatě hrají koncerty.
+  - >-
+    Podstatná věc pro plánování: chata dnes jede jen v zimě. Titulní
+    strana webu hlásí zavřeno od 22. března do 3. prosince 2026
+    a návrat v zimní sezóně od 4. prosince. Kdo jde po hřebeni v létě,
+    najde občerstvení v sousední samoobslužné restauraci TMR padesát
+    metrů vedle, která otevírá s lanovkami — z Krupové jezdí kabiny
+    denně i v létě.
+  - >-
+    Autem se sem nedá; nahoru vede lanovka z Krupové (celoročně) a v zimě
+    ze Srdiečka, pěšky je to od Srdiečka Bystrou dolinou padesát minut.
+    Značené trasy od chaty podle nizketatry.sk: na Chopok a ke Kamenné
+    chatě po žluté necelé dvě hodiny, k Štefáničce po modré hodina
+    a půl (hiking.sk od ní měří opačným směrem 1:25), na Ďumbier přes
+    hřeben dvě hodiny dvacet, dolů k Trangošce tři čtvrtě hodiny.
+  - >-
+    Údaje nesou vlastní web chaty, register-architektury.sk, archinfo.sk,
+    kotp.sk, nizketatry.sk, travelguide.sk a jasna.sk; polohu
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — výška 1500 m, služby a diety, ceník zimy
+      2026/27 s polopenzí, rezervace jen e-mailem, uzavírka 22. 3. –
+      3. 12. 2026, koncerty (načteno 9. 8. 2026)
+    url: https://chatakosodrevina.sk
+  - popis: >-
+      register-architektury.sk — Horský hotel Kosodrevina, architekt
+      Miroslav Begán, vznik 1958–1968, popis budovy (načteno 9. 8. 2026)
+    url: https://register-architektury.sk/sk/objekt/264-horsky-hotel-kosodrevina
+  - popis: >-
+      archinfo.sk, blog — výstavba 1958–1960, 100 m od stanice von Roll,
+      nová stanice a odstraněná markýza 2016, kritika úprav
+      (načteno 9. 8. 2026)
+    url: https://www.archinfo.sk/diskusia/blog/pamiatky-historia/hotel-kosodrevina-chopok-nizke-tatry.html
+  - popis: >-
+      kotp.sk — úseky lanovky Srdiečko–Kosodrevina (1954–1994)
+      a Kosodrevina–Chopok (1957–1998), muzeum von Roll
+      (načteno 9. 8. 2026)
+    url: https://kotp.sk/2015/01/31/muzeum-lanovky-von-roll-na-chopku/
+  - popis: >-
+      nizketatry.sk — 1510 m, kapacita 240, restaurace 230 míst, trasy
+      s časy, kontakt Pavol Černý, uzavírka od 1. 4. 2026
+      (načteno 9. 8. 2026)
+    url: https://www.nizketatry.sk/chaty/chkosodrevina/chkosodrevina.html
+  - popis: >-
+      travelguide.sk — 236 osob, bary a à la carte restaurace 80 míst
+      (načteno 9. 8. 2026)
+    url: https://www.travelguide.sk/eng/accommodation/chata-kosodrevina_50805_0_1.html
+  - popis: >-
+      jasna.sk — samoobslužná restaurace Kosodrevina (TMR) 50 m od chaty,
+      80 + 120 míst, otevřeno s lanovkami; letní provoz kabin z Krupové
+      (načteno 9. 8. 2026)
+    url: https://www.jasna.sk/en/resort/bars-restaurants/kosodrevina-restaurant
+  - popis: >-
+      holidayinfo.sk — dnešní lanovky Chopok juh: A5 Krupová–Kosodrevina,
+      A2 Kosodrevina–Chopok, sedačka B6 Srdiečko–Kosodrevina
+      (načteno 9. 8. 2026)
+    url: https://www.holidayinfo.sk/en/jasna-juh-2
+  - popis: >-
+      archinfo.sk — architektura ve službách první slovenské sedačkové
+      lanovky (stanice, architekti Marek a Čapka) (načteno 9. 8. 2026)
+    url: https://www.archinfo.sk/kniznica/odborne-clanky/architektura-v-sluzbach-prvej-slovenskej-sedackovej-lanovky.html
+  - popis: >-
+      blog.sme.sk (2009) — přezdívka Koska, popis interiéru; zmínka
+      o vlastnictví J&T je doslech a do dat nejde (načteno 9. 8. 2026)
+    url: https://blog.sme.sk/paulikova/cestovanie/chata-kosodrevina-alebo-komu-vlastne-patri-koska
+  - popis: >-
+      OpenStreetMap (GPS, tourism=hotel, č. p. 875; ODbL)
+    url: https://www.openstreetmap.org/way/435913007
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/chata-kosodrevina.yaml
+  (9. 8. 2026); katalogový objekt HUT-0147.
+
+  ROZHODNUTÍ PÁRU 151 m (jádro kosodrevina v registru jmenovců):
+  rešerše doložila v areálu JEDNU ubytovací budovu (trojtraktový lůžkový
+  blok, register-architektury; OSM way 435913007 s č. p. 875) a vedle ní
+  provozně samostatné objekty BEZ noclehu — samoobslužnou restauraci TMR
+  (50 m, jasna.sk), bývalou stanici von Roll s muzeem a novou stanici
+  kabinové lanovky. Bod OSM „Kosodrevina" (node/6033672713,
+  tourism=undefined) odpovídá komplexu stanice, ne druhému noclehu →
+  kandidát vyřazen, registrový záznam zaniká (vzor Morskie Oko:
+  rozhoduje provoz/budova, ne vzdálenost).
+
+  TYP horsky-hotel: katalog i registr architektury vedou objekt jako
+  hotel; 236 lůžek s polopenzí není chata v úzkém smyslu.
+
+  ROK VZNIKU vědomě nevyplněn: 1958–1968 (registr) × 1958–1960
+  (archinfo) — milník nese rozpětí i rozpor.
+
+  ROZPORY OTEVŘENÉ: výška 1500 × 1510; kapacita 236 × 240 (nižší
+  zapsáno); restaurace 230 × 80 (druhé číslo nejspíš TMR); uzavírka od
+  22. 3. (web) × od 1. 4. (nizketatry). GPS kontaktní stránky ~200 m
+  západně od budovy — zapsána budova z OSM.
+
+  NENALEZENO: IČO/firma provozovatele (nizketatry jmenuje Pavla Černého
+  — týž kontakt vede i u Trangošky); výslovná obsluha neubytovaných
+  přímo v chatě (vedle je samoobsluha TMR); rekonstrukce 2024–26.
+  Vlastnictví J&T je doslech z blogu 2009 — do dat nejde.
+
+  Fotku dodá druhý běh DATA-02, výškový profil DATA-06, lanovky oblasti
+  DATA-32 (kliky v KLIKY-PRO-MICHALA — tahle chata je přímo u nich).
