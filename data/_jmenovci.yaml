@@ -384,17 +384,6 @@ jmenovci:
       který se bude muset přepsat, a je to správně.
     rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
     checked: 2026-08-08
-  - jadro: panorama
-    objekty:
-      - beskydy/chata-panorama
-      - jizerske-hory/chata-panorama
-    duvod: >-
-      Dva různé objekty: beskydská Chata Panoráma v Námestove (SK)
-      a jizerská Chata Panorama. „Panorama" je u horských podniků jméno tak
-      obvyklé, že shoda nic neznamená. Rozlišovač `obec` má doložený jen
-      beskydská (R6 u druhé).
-    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obce při triáži
-    checked: 2026-08-08
   - jadro: moravska
     objekty:
       - beskydy/moravska-chalupa
@@ -524,7 +513,6 @@ jmenovci:
     checked: 2026-08-08
   - jadro: panorama
     objekty:
-      - beskydy/chata-panorama
       - jeseniky/panorama
       - jizerske-hory/chata-panorama
       - mala-fatra/chata-panorama
@@ -536,10 +524,16 @@ jmenovci:
       jizerská × jesenická 132 357 m, jizerská × malofatranská 308 330 m,
       beskydská × malofatranská 60 409 m, beskydská × jesenická 204 777 m —
       žádná dvojice není blíž než šedesát kilometrů, takže o duplicitu nejde
-      ani u té nejbližší. Rozlišovač `obec` má doložený jen beskydská
+      ani u té nejbližší. Rozlišovač `obec` měl doložený jen beskydská
       (Námestovo); u ostatních tří chybí (DATA-17 R6).
-    rozhodl: Claude (návrh z 8. 8. 2026) — čeká na doložení obcí při triáži
-    checked: 2026-08-08
+      AKTUALIZACE 9. 8. 2026: beskydská Chata Panorama vyřazena v prvním
+      průchodu beskydské triáže (chata k pronájmu, portál 123u.sk) —
+      registr se zúžil na trojici; zároveň byl sloučen starší dvoučlenný
+      záznam téhož jádra, který tu ležel duplicitně.
+    rozhodl: >-
+      Claude (návrh z 8. 8. 2026; zúženo a sloučeno 9. 8. 2026 při triáži
+      Beskyd)
+    checked: 2026-08-09
   - jadro: '1'
     objekty:
       - jeseniky/chata-1

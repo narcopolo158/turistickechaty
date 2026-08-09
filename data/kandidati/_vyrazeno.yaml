@@ -1674,3 +1674,233 @@ vyrazeno:
       Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
       identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
     checked: 2026-08-09
+
+  # ── TRIÁŽ BESKYD, PRVNÍ PRŮCHOD (9. 8. 2026, večerní blok, vzor VT-03) ──
+  # Beskydská fronta měla 273 kandidátů; tenhle průchod vyřazuje JEN těch
+  # 25, u kterých je doklad pronájmu přímo v tagu OSM — v názvu („Domki“,
+  # „Domek“, „Apartament“, „Noclegi“, „Ośrodek Wypoczynkowy“), v tagu
+  # tourism=apartment, nebo v odkazu na rezervační/inzertní portál
+  # (booking.com, megaubytovanie.sk, 123u.sk, hauzi.sk, airbnb).
+  # 56 kandidátů s tagem alpine_hut a 14 s wilderness_hut zůstává — to je
+  # jádro fronty pro povyšování.
+  - osm: https://www.openstreetmap.org/node/12518699775
+    slug: beskydy/basikowe-wzgorze
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, website vede přímo na rezervační
+      záznam booking.com). Bez doloženého občerstvení pro veřejnost.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13922850526
+    slug: beskydy/beskid-apartament
+    duvod: >-
+      Apartmán — název to říká sám (OSM name „Beskid Apartament“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/10574187432
+    slug: beskydy/chata-ester-oravska-priehrada
+    duvod: >-
+      Objekt k pronájmu u Oravské přehrady (OSM tourism=guest_house, website
+      megaubytovanie.sk — inzertní portál pronájmů). Mimo hory i mimo klíč.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12395546184
+    slug: beskydy/chata-ilonka
+    duvod: >-
+      Apartmán (OSM tourism=apartment — jediný kandidát oblasti s tímhle
+      tagem).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/733491361
+    slug: beskydy/chata-lucka
+    duvod: >-
+      Chata k pronájmu v Oščadnici (OSM tourism=chalet, website
+      megaubytovanie.sk — inzertní portál). Jmenovec malofatranské Chaty
+      Lúčky v registru _jmenovci.yaml — kolize zaniká vyřazením, jak záznam z
+      8. 8. 2026 předpokládal.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/440215797
+    slug: beskydy/chata-panorama
+    duvod: >-
+      Chata k pronájmu (OSM tourism=chalet, website panorama.123u.sk — portál
+      pronájmů). Čtvrtá Panorama v registru jmenovců; kolize zaniká
+      vyřazením.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4683039359
+    slug: beskydy/chata-pod-horou
+    duvod: >-
+      Chata k pronájmu v Oščadnici (OSM tourism=guest_house, website
+      megaubytovanie.sk).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/9394663063
+    slug: beskydy/chata-zuzka
+    duvod: >-
+      Chata k pronájmu v Oravské Lesné (OSM tourism=chalet, website hauzi.sk
+      — inzertní portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/7221071832
+    slug: beskydy/domeczki-aneczki-domek-jadzia
+    duvod: >-
+      Rekreační domky k pronájmu — název to říká sám (OSM name „Domeczki
+      Aneczki - Domek Jadzia“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/362473555
+    slug: beskydy/domek-jano
+    duvod: >-
+      Domek k pronájmu (OSM name „Domek Jano“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/530652893
+    slug: beskydy/domek-letniskowy-w-gorach
+    duvod: >-
+      Letní rekreační domek — název to říká sám (OSM name „Domek Letniskowy w
+      Górach“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/528213116
+    slug: beskydy/domek-maja
+    duvod: >-
+      Domek k pronájmu (OSM name „Domek Maja“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/363192474
+    slug: beskydy/domek-pod-latarnia
+    duvod: >-
+      Domek k pronájmu (OSM name „Domek Pod Latarnią“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/9766453464
+    slug: beskydy/domek-u-zrodel-wisly
+    duvod: >-
+      Domek k pronájmu (OSM name „Domek u źródeł Wisły“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/10758239253
+    slug: beskydy/domki-caloroczne-daglezja
+    duvod: >-
+      Domky k pronájmu — název v množném čísle (OSM name „Domki Całoroczne
+      Daglezja“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5484998654
+    slug: beskydy/domki-cicha-dolina
+    duvod: >-
+      Domky k pronájmu (OSM name „Domki Cicha Dolina“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/488678385
+    slug: beskydy/domki-gorskie-zacisze
+    duvod: >-
+      Domky k pronájmu (OSM name „Domki Górskie Zacisze“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/889909388
+    slug: beskydy/domki-innatura
+    duvod: >-
+      Domky k pronájmu (OSM name „Domki inNatura“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/10758239297
+    slug: beskydy/domki-piecykowo
+    duvod: >-
+      Domky k pronájmu (OSM name „Domki Piecykowo“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/7221072218
+    slug: beskydy/domki-wisla-domek-gabrysia
+    duvod: >-
+      Domky k pronájmu ve Wisłe (OSM name „Domki Wisła - Domek Gabrysia“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/79998212
+    slug: beskydy/drevenica-podbiel
+    duvod: >-
+      Drevenica k pronájmu v Podbieli (OSM tourism=chalet, website
+      drevenicapodbiel.123u.sk — portál pronájmů). Podbiel je navíc oravská
+      obec v podhůří.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/11965948988
+    slug: beskydy/kefasowka
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, website vede přímo na záznam
+      airbnb).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/11208901612
+    slug: beskydy/noclegi-na-golebiowce
+    duvod: >-
+      Soukromé noclehy — název to říká sám (OSM name „Noclegi na
+      Gołębiówce“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/1209673222
+    slug: beskydy/osrodek-szkoleniowo-wypoczynkowy-ponikiew
+    duvod: >-
+      Školicí a rekreační středisko — název to říká sám (OSM name „Ośrodek
+      Szkoleniowo-Wypoczynkowy „PONIKIEW““); třída rekreačních zařízení,
+      kterou korpus vyřazuje (vzor Rekreační středisko Bílý...).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5484998637
+    slug: beskydy/osrodek-wypoczynkowy-beskid
+    duvod: >-
+      Rekreační středisko — název to říká sám (OSM name „Ośrodek Wypoczynkowy
+      „Beskid““).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
+      dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
