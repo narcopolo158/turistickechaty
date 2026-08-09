@@ -29,6 +29,114 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-09 (jedenáctý blok) — fotky napříč katalogem, tři zavřené mezery Beskyd a dvě fronty na nule
+
+Michalův pokyn: *„vyber hero z wikimedia commons, svajciarsky dom povys
+a pokracuj samostatne systematicky dal, prirad k co nejvice chatam fotky -
+u krkonos jsi to krasne zvladl, dopln co muzes napric katalogem, pracuj
+8 hodin v kuse"*.
+
+**Hotovo:**
+
+**HERO NÍZKÝCH TATER: vybráno, připraveno, čeká na jeden klik.** Commons je
+ze sandboxu nedostupný (týž proxy limit jako u DATA-02) a GitHub API na
+spouštění workflow taky — zkusil jsem to a 403 je doložená. Postavil jsem
+proto **FOTO-04**: nový skript `scripts/foto04-hero-kandidati.ts` + workflow,
+který vezme tituly vybrané redakcí, protáhne je licenčním sítem DATA-02
+a commitne náhledy 2400 px do `data/kandidati/hero-foto/<oblast>/` i s
+_meta.yaml pro atribuci. Šest titulů pro Nízké Tatry (hřebenovka s Chopkom
+a Ďumbierom, zimní Chopok, Jasná…) je předvyplněných ve výchozí hodnotě —
+Michal jen klikne, další session si stažené soubory PROHLÉDNE lokálně
+(což u metadat nejde), vybere, ořízne na hero + náhled podle konvence
+(1600–2400 px / 640–900 px) a zapíše heroFoto.
+
+**ŠVAJČIARSKY DOM POVÝŠEN na Michalův pokyn, korpus 174** — vila z roku
+1865 (evidence památek; vlastní prezentace říká „historie od 1856" a rozpor
+je přiznaný), NKP od 2021, muzeum nosičství + veřejná kavárna Sherpa Caffe
++ deset lůžek. Obsluha kolemjdoucích doložená recenzí z návštěvy — třetí
+takový doklad v oblasti. Web kavárny jsem z kontaktů vynechal: doména
+sherpacaffe.sk nesla v době rešerše cizí obsah (nejspíš propadlá) —
+zapsat mrtvý web by bylo horší než žádný.
+
+**DESET FOTEK PŘIŘAZENO Z UŽ COMMITNUTÝCH KANDIDÁTŮ — bez jediného dotazu
+na síť.** Běh DATA-02 ze 4. 8. nechal v repu metadata pro Krkonoše, Jizerky
+a Ještědský hřbet; 42 publikovaných profilů bylo bez fotky a prošel jsem
+je všechny. Deset dostalo fotku (Betyna s čp. v popisu a geotagem 31 m,
+Raisova chata na Zvičině s CC0 a geotagem 3 m, Husova bouda z vlastní
+kategorie, Slovanka čp. 182, Studenov, Patejdlova bouda, Nad Łomniczką,
+bacówka na Przełęczy Okraj, Ještědka, Lučanka — tu nahrál sám účet chaty).
+**Dvaadvacet zůstalo bez fotky ZÁMĚRNĚ** a commit `47ba0e6` je katalogem
+pastí fulltextu: u Barborky jsou všechny nálezy hornický svátek Barbórka ve
+Slezsku, u krkonošské Chatky Puchatky výhradně jmenovkyně v Bieszczadech
+(geotag 513 km), u Hřebínku pískovcová drážka 30 km daleko, u Sky Walku
+Jokohama. A jedna licenční lekce: kandidát s popisem „Slovanka hut" měl
+v poli autora jen výzvu k notifikaci — CC BY-SA bez jména autora nejde
+atribuovat, takže vyhrál vzdálenější záběr od ŠJů.
+
+**TŘI MEZERY KATALOGU BESKYD ZAVŘENY PROFILY, korpus 177 a beskydské
+pokrytí je poprvé BEZ MEZERY (41 katalogových objektů, 0 bez záznamu).**
+Všechny tři profily vznikly poprvé v historii korpusu PŘÍMO Z KATALOGOVÉ
+MEZERY, bez OSM kandidáta:
+
+- **Residence Ropička** — PTT Beskid 1913 (polský spolek!), požár 1918,
+  Bezručova chata KČT 1924 podle návrhu architekta Čermáka. Bufet pro
+  turisty doložen VÝSLOVNĚ; ubytování je pronájem celku, takže klíč nese
+  bufet. Alias „Bezručova chata" dělá z preventivního záznamu v registru
+  jmenovců ostrý.
+- **Gościniec Równica** — 1923/PTT 1926, pozorovatelna Luftwaffe na střeše
+  1942, jméno Kaźmierczaka 1989, **vyškrtnutí ze seznamu schronisk PTTK
+  2016** (týž vzor jako Chatka Puchatka — katalogová označení „schronisko
+  PTTK" stárnou). Bez GPS — žádný pramen je nenese, doplní DATA-31.
+- **Chata Marguška** — bufet U Fera na sjezdovce Veľké Rače, „takmer 20
+  rokov". NEJSLABŠÍ KLÍČ z trojice a je to v interniPoznamky rozepsané
+  včetně cesty zpět (KATALOG_MIMO_KLIC), kdyby Michal rozhodl opačně.
+
+**TATRANSKÁ FRONTA JE NA TŘECH POLOŽKÁCH A VŠECHNY ČEKAJÍ NA MICHALA.**
+Jedenáct tenkých záznamů doidentifikovala cílená rešerše: šest doložených
+pronájmů (Alpina 1, Lipták ve Ždiaru — ne v Kotlině, Holiday House Pleso,
+Stanislava, Veronika — ve VAŽCI, ne u Štrby, Tater Chata u Zakopaného)
+a pět bez jediné dohledatelné veřejné funkce (Kamila, „Chata", u Hagrida,
+Poľana, Valek). Ranní pravidlo „tenký záznam se bez dokladu nevyřazuje"
+tím dostalo druhou půlku: po vyčerpané rešerši je nenalezení veřejné
+funkce důvod k vyřazení, protože k povýšení by stejně nebylo co doložit.
+U Veroniky se tím doložil rozlišovač obce v registru jmenovců.
+
+**TRIÁŽ BESKYD ZAČALA, fronta 273 → 248.** První průchod vzorem VT-03:
+25 vyřazení s dokladem přímo v tagu („Domki", „Ośrodek Wypoczynkowy",
+tourism=apartment, portály megaubytovanie/123u/hauzi/booking/airbnb).
+Jádro fronty zůstává — 56 kandidátů alpine_hut a 14 wilderness_hut, to
+je pro Beskydy skutečná zásoba na povyšování. Vedlejší nález: jádro
+„panorama" leželo v registru jmenovců DVAKRÁT (dvoučlenný záznam vedle
+čtyřčlenného) — sloučeno; kolize „panorama" i „lucka" se vyřazením
+beskydských pronájmů zúžily přesně tak, jak záznamy z 8. 8. předpokládaly.
+
+**Commity:** `0f1c85e`→`f40b5e1` (šest commitů: Švajčiarsky dom, fotky,
+FOTO-04 + KLIKY, Beskydy trio + tatranská identifikace, triáž Beskyd,
+deník). Všechny kontroly zelené po každém kroku, testy oblastí 182/182
+(po Beskydech i katalog-pokryti 193/193), tsc čistý.
+
+**Příště:** až Michal klikne FOTO-04 → vybrat hero Nízkých Tater z náhledů
+a zapsat heroFoto; až klikne DATA-02 → přiřadit fotky šumavským, beskydským
+a tatranským profilům (stejný postup jako dnes). Nezávisle na klicích:
+pokračovat beskydskou triáží (248 kandidátů, jádro 70 alpine/wilderness
+hut) a začít povyšovat beskydské chaty z jádra fronty.
+
+**Otázky pro Michala** (kumulativní; nová je 9):
+
+1. **KONTROLA-11** — konvence o nižším čísle (šest výkladů za dva dny).
+2. **Belianské Tatry** jako samostatná oblast?
+3. **Telefonát DATA-04** — zavírá šest slovenských profilů + Švajčiarsky
+   dom (hodiny kavárny a muzea).
+4. **Encián (VT-02)** — ruční dohledávka GPS?
+5. **Betlejemka** — ubytovna bez občerstvení: patří do průvodce?
+6. **Głodówka a Bachledka** — Spišská Magura v okně Tater: nechat, nebo
+   řezat podle pohoří? (Bachledka čeká s hotovou rešerší.)
+7. **Hero Nízkých Tater** — klik FOTO-04 je připravený (výchozí hodnoty).
+8. ~~Švajčiarsky dom~~ — rozhodnuto („povys"), hotovo.
+9. **Marguška** — nejslabší klíč z dnešní trojice: bufet jen v zimě, na
+   sjezdovce, bez doložené značky. Nechat profil, nebo přesunout do
+   KATALOG_MIMO_KLIC? Obě cesty jsou připravené.
+
 ## 2026-08-09 (desátý blok) — TANAP odpověděl svým ceníkem, věž sporů a fotka, která nejde použít
 
 Michalův pokyn: *„pokracuj dal"* — a k tomu poslal hero fotku Nízkých Tater
