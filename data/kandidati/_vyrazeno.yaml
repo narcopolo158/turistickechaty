@@ -1278,3 +1278,260 @@ vyrazeno:
       Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
       OSM, ne podle typu tagu)
     checked: 2026-08-09
+
+  # ── VT-03, DRUHÝ PRŮCHOD (9. 8. 2026, odpolední blok) ────────────────────
+  # Otázka z prvního průchodu („nabízí TANAP tyhle budovy jako ubytování?“)
+  # je zodpovězená pohledem na tanap.sk/ubytovanie: veřejná nabídka Správy
+  # TANAP má právě čtyři objekty a terénní stanice mezi nimi nejsou. K tomu
+  # čtyři vyřazení po cílené rešerši (Belianska, Psotkova, Harnasiowa,
+  # Dolný Smokovec).
+  - osm: https://www.openstreetmap.org/way/366341785
+    slug: vysoke-tatry/chata-krizna
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/538195677
+    slug: vysoke-tatry/chata-tomanova
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/255636216
+    slug: vysoke-tatry/chata-zadna-ticha
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/729456247
+    slug: vysoke-tatry/koprovnica
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/959107087
+    slug: vysoke-tatry/koniarka
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/527475114
+    slug: vysoke-tatry/tokaren
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8872840826
+    slug: vysoke-tatry/tristarska
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/837551097
+    slug: vysoke-tatry/zverienec
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/631857141
+    slug: vysoke-tatry/grarajova-chata
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8873491386
+    slug: vysoke-tatry/terenna-stanica-tanap-stare
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/1459131619
+    slug: vysoke-tatry/tanap
+    duvod: >-
+      Provozní/terénní budova Štátnych lesov TANAPu, ne veřejné ubytování.
+      Rozhodl přímý pohled na veřejnou ubytovací nabídku Správy TANAP
+      (tanap.sk/ubytovanie, čteno 9. 8. 2026): obsahuje PRÁVĚ ČTYŘI objekty —
+      Chata Spálená (Zuberec), Štúdiá Správa TANAP-u (Štrbské Pleso), Tri
+      studničky a Chata Dolný Smokovec — a tenhle mezi nimi není. K tomu tag
+      building=cabin a sdílený služební telefon +421 903 987 561 u čtyř
+      kandidátů souboru dokládají jeden administrativní celek terénních
+      stanic. Občerstvení ani nocleh pro veřejnost nedoložen; jména jako
+      „Terénna stanica“ to říkají sama.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/64794769
+    slug: vysoke-tatry/chata-dolny-smokove-sprava-tanap-u
+    duvod: >-
+      Objekt k pronájmu jako celek, ne chata na trase. Jediný z terénního
+      souboru TANAP, který JE ve veřejné nabídce (tanap.sk/ubytovanie, čteno
+      9. 8. 2026) — ale jako rekreační objekt: „Má 2 spálne, kuchyňu a je
+      vybavená TV s plochou obrazovkou“, rezervace přes Booking.com. Stojí v
+      zástavbě osady Dolný Smokovec, stravování se neposkytuje. Stejná třída
+      jako dřív vyřazené pronájmy.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/11146302705
+    slug: vysoke-tatry/harnasiowa-chata
+    duvod: >-
+      Restaurace v zástavbě Zakopaného, TŘETÍ PŘÍPAD PO ENCIÁNU A CHATĚ
+      ZBÓJNICKÉ. Uzel OSM nese jen dva tagy (amenity=restaurant, name) a leží
+      1 162 m od centra Zakopaného (naměřeno z GPS 49.2917 / 19.9607). Bez
+      ubytování, bez role na horské trase; „chata“ je tu značka podniku, ne
+      horská chata.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/10726676205
+    slug: vysoke-tatry/belianska-chata
+    duvod: >-
+      Penzion v obci Ždiar, ne horská chata — jméno klame. Rešerše 9. 8.
+      2026: tatrytravel.sk „Belianska Chata sa nachádza v obci Ždiar a ponúka
+      výhľad na Belianske Tatry.“; penzion-hotel.sk „v tichom prostredí na
+      Antošovskom vrchu v obci Ždiar“, dvou- a třílůžkové pokoje pro asi 20
+      hostů, „raňajky formou bufetu“ pro ubytované. Veřejné občerstvení
+      nedoloženo, vlastní web neexistuje (jen Facebook a agregátory), OSM tag
+      tourism=hotel odpovídá realitě líp než název. Nezaměňovat s historickou
+      Belianskou chatou nad Tatranskou Kotlinou — tenhle objekt s ní nemá
+      doloženou souvislost.
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12144202982
+    slug: vysoke-tatry/psotkova-chata
+    duvod: >-
+      Chata k pronájmu jako celek, bez obsluhy — doloženo vlastním webem
+      (psotkovachata.sk, čteno 9. 8. 2026): „Chata sa prenajíma horolezcom,
+      turistom, lyžiarom, športovcom a ostatným milovníkom hôr.“;
+      vysoketatry.virtualne.sk výslovně „Chata sa prenajíma ako jeden celok“.
+      Stojí v chatové osadě Tatranský Lieskovec u Tatranské Štrby v 1000 m, 6
+      pokojů / 20 lůžek, jídelna pro nájemce, veřejné stravování žádný pramen
+      neuvádí. HISTORIE STOJÍ ZA ZÁZNAM, kdyby se klíč někdy rozšířil:
+      postavena 1975–1978 „na počesť úspešnej expedície na Nanga Parbat“,
+      původně Nanga-Parbat, přejmenovaná po horolezci Jozefu Psotkovi.
+      Telefon v OSM (+421 944 92 88 19) nesedí s webem (Lukáš Andreides, +421
+      911 309 685).
+    rozhodl: >-
+      Claude (9. 8. 2026, druhý průchod VT-03 s pověřením „pokracuj dal“ —
+      rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
+      GPS)
+    checked: 2026-08-09

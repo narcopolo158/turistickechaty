@@ -1,0 +1,217 @@
+# Horská ubytovňa Hrebienok — dvacátý první publikovaný profil oblasti
+# Vysoké Tatry (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Horská ubytovňa Hrebienok
+slug: horska-ubytovna-hrebienok
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Športhotel
+    poznamka: historický název budovy z třicátých let
+  - nazev: Horský hotel Hrebienok
+    poznamka: název, pod kterým objekt vede vysoketatry.com
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1589571
+lng: 20.2241387
+vyska: 1285
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/27865090 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1285 m: vysoketatry.com vede objekt jako „Horský hotel Hrebienok
+    (1285 m)"; sama lokalita Hrebienok se obvykle uvádí 1272 m (horní
+    stanice pozemní lanovky). Poloha podle vlastního webu TMR (čteno
+    9. 8. 2026): „nachádza sa priamo nad hornou stanicou pozemnej lanovky
+    v Starom Smokovci". Adresa „Starý Smokovec 48, 062 01 Vysoké Tatry".
+    Od Bilíkovy chaty je to 122 m (naměřeno z GPS obou profilů).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 34
+overeniNocleh:
+  source: >-
+    ZAPSÁN JE POČET POKOJŮ PODLE PROVOZOVATELE, PROTOŽE POČET LŮŽEK
+    PROVOZOVATEL NEUVÁDÍ: tmrhotels.com (čteno 9. 8. 2026) nabízí 34 pokojů
+    ve dvou- až čtyřlůžkové skladbě; do pole kapacita jde 34 jako nejnižší
+    doložitelná mez (34 pokojů ≥ 34 lůžek). Starší pramen vysoketatry.com
+    uvádí „KAPACITA UBYTOVANIA: 118 lôžok" — popisuje ale stav před
+    přeznačením na ubytovnu TMR a nedá se ověřit, že platí dnes; rozdíl je
+    zastaralost pramene, ne rozpor (KONTROLA-11). Kategorie je „horská
+    ubytovňa", tedy jednodušší standard než hotel.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web TMR (čteno 9. 8. 2026): „po náročnej túre si u nás môžete
+    dopriať obľúbenú domácu kapustnicu či sladkú buchtu" — v objektu funguje
+    bar a Reštaurácia Hrebienok. vysoketatry.com: „Možnosť stravovania:
+    ÁNO - reštaurácia" a kapacita stravování 250 míst (starší údaj).
+    Formulace „po náročnej túre" míří na turisty scházející z hor, ne na
+    hotelové hosty — Hrebienok je nástupní uzel tras na Zamkovského,
+    Bilíkovu, Téryho a Zbojnícku chatu a ke Studenovodským vodopádům.
+    Výslovná věta o neubytovaných ale ani tady není; telefonát to rozhodne
+    (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    vysoketatry.com (čteno 9. 8. 2026): „Prevádzka: celoročná". Vlastní web
+    TMR hodiny recepce ani restaurace neuvádí, a tak se nezapisují.
+    Dostupnost je tu nejsnazší v oblasti: pozemní lanovka ze Starého
+    Smokovce končí přímo pod budovou, pěšky je to ze Starého Smokovce asi
+    45 minut. POZOR NA ZÁMĚNU WEBŮ: adresa hotelhrebienok.sk z OSM už jen
+    přesměrovává na resortní web vt.sk; aktuální stránka objektu je na
+    tmrhotels.com.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421442901351'
+  email: ubytovnahrebienok@tmrhotels.com
+  web: https://www.tmrhotels.com/Horska-ubytovna-Hrebienok/sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1928
+overeniHistorie:
+  source: >-
+    ROK 1928 JE ROKEM POŽÁRU, PO KTERÉM VZNIKLA DNEŠNÍ BUDOVA — přesný rok
+    dostavby Športhotelu žádný nalezený pramen neuvádí, a proto je
+    v milnících jen posloupnost. vysoketatry.com (čteno 9. 8. 2026):
+    „História ubytovňy siaha do konca 18. storočia a súvisí s osídľovaním
+    najstaršej tatranskej osady Starý Smokovec."; po požáru roku 1928 „dala
+    pražská Legiobanka… hotel s reštauráciou Športhotel (predchodca hotela
+    Hrebienok)". Rozsáhlá rekonstrukce proběhla roku 1988: „Značný vek
+    budovy a nepretržitá prevádzka si v roku 1988 vyžiadala rozsiahlu
+    rekonštrukciu."
+    Zapsán je rok 1928 jako doložený počátek dnešní stavební etapy; je to
+    volba OPATRNĚJŠÍ VARIANTY z rozpětí (stavba následovala po požáru), viz
+    KONTROLA-11. Dnes objekt provozuje Tatry mountain resorts pod značkou
+    TMR Hotels.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1928
+    udalost: >-
+      Starší budova na Hrebienku vyhořela; pražská Legiobanka pak na místě
+      postavila hotel s restaurací Športhotel, předchůdce dnešní ubytovny.
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — po požáru „dala pražská
+      Legiobanka… hotel s reštauráciou Športhotel (predchodca hotela
+      Hrebienok)".
+  - rok: 1988
+    udalost: >-
+      Stáří budovy a nepřetržitý provoz si vyžádaly rozsáhlou rekonstrukci.
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — „Značný vek budovy a nepretržitá
+      prevádzka si v roku 1988 vyžiadala rozsiahlu rekonštrukciu."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Historie místa sahá podle pramene do konce 18. století a souvisí
+      s osídlováním Starého Smokovce, nejstarší tatranské osady.
+    kategorie: stari
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — „História ubytovňy siaha do konca
+      18. storočia a súvisí s osídľovaním najstaršej tatranskej osady Starý
+      Smokovec."
+  - text: >-
+      Budova stojí přímo nad horní stanicí pozemní lanovky ze Starého
+      Smokovce — je to jediný nocleh přímo na nástupním uzlu Hrebienok.
+    kategorie: jine
+    zdroj: >-
+      tmrhotels.com (čteno 9. 8. 2026) — „nachádza sa priamo nad hornou
+      stanicou pozemnej lanovky v Starom Smokovci".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská ubytovna přímo nad horní stanicí pozemní lanovky na Hrebienku,
+  v budově bývalého Športhotelu, který po požáru roku 1928 postavila pražská
+  Legiobanka. Dnes ji provozuje Tatry mountain resorts; restaurace vaří
+  kapustnici a buchty pro turisty scházející z hor.
+text:
+  - >-
+    Horská ubytovňa Hrebienok stojí ve 1285 metrech přímo nad horní stanicí
+    pozemní lanovky ze Starého Smokovce. Je to jediný nocleh přímo na
+    Hrebienku — nástupním uzlu, ze kterého se rozbíhají trasy na Zamkovského,
+    Bilíkovu, Téryho a Zbojnícku chatu a ke Studenovodským vodopádům.
+  - >-
+    Historie místa sahá podle pramene do konce 18. století, k osídlování
+    Starého Smokovce, nejstarší tatranské osady. Dnešní budova vznikla po
+    požáru roku 1928, kdy tu pražská Legiobanka postavila hotel s restaurací
+    Športhotel — předchůdce pozdějšího hotelu Hrebienok. Roku 1988 si stáří
+    budovy a nepřetržitý provoz vyžádaly rozsáhlou rekonstrukci.
+  - >-
+    Dnes objekt provozuje Tatry mountain resorts jako ubytovnu jednoduššího
+    standardu: 34 pokojů pro dva až čtyři lidi. Kolik je to přesně lůžek,
+    provozovatel neuvádí; starší pramen mluvil o 118 lůžkách a 250 místech
+    v restauraci, ale popisoval jinou éru provozu. V budově funguje bar
+    a Reštaurácia Hrebienok — provozovatel ji nabízí slovy „po náročnej túre
+    si u nás môžete dopriať obľúbenú domácu kapustnicu či sladkú buchtu",
+    což míří na turisty z hor, i když výslovnou větu o neubytovaných ani
+    tady nikdo nenapsal.
+  - >-
+    Nahoru jede pozemní lanovka ze Starého Smokovce, pěšky je to asi tři
+    čtvrtě hodiny. Sto dvacet dva metrů od ubytovny stojí Bilíkova chata —
+    dva noclehy na jednom uzlu, každý s vlastním profilem, protože mají
+    různé provozovatele.
+  - >-
+    Údaje nesou vlastní stránka objektu na tmrhotels.com a vysoketatry.com;
+    polohu OpenStreetMap. Web hotelhrebienok.sk, který vede OpenStreetMap,
+    už jen přesměrovává na resortní vt.sk. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní stránka objektu (TMR Hotels) — poloha nad stanicí lanovky,
+      34 pokojů, bar a restaurace, kapustnica a buchty, adresa a kontakty
+      (načteno 9. 8. 2026)
+    url: https://www.tmrhotels.com/Horska-ubytovna-Hrebienok/sk/
+  - popis: >-
+      vysoketatry.com — historie od konce 18. století, požár 1928
+      a Športhotel Legiobanky, rekonstrukce 1988, celoroční provoz, starší
+      kapacity 118 lůžek a 250 míst (načteno 9. 8. 2026)
+    url: https://www.vysoketatry.com/chaty/hhhrebienok/hhhrebienok.html
+  - popis: >-
+      OpenStreetMap (GPS, tourism=hotel, operator Tatry mountain resorts;
+      ODbL)
+    url: https://www.openstreetmap.org/way/27865090
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/horska-ubytovna-hrebienok.yaml
+  (9. 8. 2026).
+
+  NEJTENČÍ PRAMENNÁ ZÁKLADNA MEZI PROFILY OBLASTI — dva textové prameny
+  (provozovatel + vysoketatry.com). Povýšení přesto obstojí: poloha na
+  klíčovém uzlu je nesporná, provozovatel je doložený a klíč zařazení
+  splňuje restaurace mířící na turisty. Profil je ale krátký záměrně —
+  tvrdí jen to, co dva prameny unesou, a historie (Legiobanka, Športhotel)
+  stojí na jediném prameni, což je v source přiznané.
+
+  KAPACITA 34 JE POČET POKOJŮ, NE LŮŽEK, a je to zapsané jako nejnižší
+  doložitelná mez. Provozovatel počet lůžek neuvádí; při dvou- až
+  čtyřlůžkové skladbě je skutečnost mezi 68 a 136. Starší údaj 118 lůžek
+  (vysoketatry.com) se nedá ověřit pro dnešek. Patří na seznam DATA-04.
+
+  ROK VZNIKU 1928 je rok požáru, po němž Legiobanka stavěla; přesný rok
+  dokončení Športhotelu nenalezen. Kdyby se našel, rokVzniku se posune.
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: počet lůžek dnes; hodiny
+  restaurace; architekt Športhotelu; co přesně stálo na místě před požárem
+  1928 (pramen mluví jen o kontinuitě od konce 18. století); vztah budovy
+  k lokalitě Studenopotocké kúpele, kterou popisuje profil Bilíkovy chaty —
+  jsou to sousední areály jednoho svahu a prameny je nespojují.
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.

@@ -1,0 +1,274 @@
+# Tatras Tower (Veža snov) — dvacátý publikovaný profil oblasti Vysoké Tatry
+# (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Tatras Tower
+slug: tatras-tower
+zeme: sk
+typ: rozhledna
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Veža snov
+    poznamka: slovenské jméno, které nese i vlastní web (vezasnov.sk)
+  - nazev: Tower of Dreams
+    poznamka: anglická podoba užívaná tiskem
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1274082
+lng: 20.0592229
+vyska: 1367
+obec: Štrba
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/743625260 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1367 m JE VÝŠKA NÁSTUPU NA VĚŽ, ne vrcholu stavby: vlastní web
+    (čteno 9. 8. 2026) „nástup na vežu v nadmorskej výške 1 367 m.n.m.";
+    shodně cezhory.sk („postavili ju v nadmorskej výške 1 367 metrov")
+    a strbskepleso.sk. Poloha: zastavěné území Areálu snov v Mlynické
+    dolině na Štrbském Plese, na místě bývalého škvárového hřiště pod
+    skokanskými můstky (teraz.sk, pravda.sk).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Nocleh tu není a žádný pramen ho nezmiňuje — pole se nevyplňují.
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: kiosek
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026): „príďte si posedieť do pohodlia Tower
+    Cafe, ktoré nájdete na prízemí Tatras Tower." Kavárna v přízemí věže;
+    jestli je přístupná i bez vstupenky na věž, žádný pramen neříká —
+    a próza to přiznává. Do číselníku jde `kiosek` (káva a posezení, ne
+    kuchyně s jídly).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: denně 9.00–16.30 (vlastní web); strbskepleso.sk uvádí 10.00–17.30
+# sezona SE NEVYPLŇUJE: výslovné „celoročně" neuvádí žádný pramen. Nepřímo
+# na zimní provoz ukazuje kluziště u věže (tatry.sk) a poznámka, že tobogán
+# jede jen při teplotách nad 5 °C — ale nepřímý doklad se nezapisuje.
+overeniProvoz:
+  source: >-
+    Otevírací dobu uvádí vlastní web (čteno 9. 8. 2026): „Pondelok - Piatok
+    09:00 - 16:30, Sobota - Nedeľa 09:00 - 16:30". ROZPOR, přiznaný:
+    strbskepleso.sk uvádí „denne 10:00 – 17:30, posledný vstup o 16:30".
+    Zapsané jsou hodiny provozovatele a odchylka je v poli otviraciDoba
+    přiznaná. Vstupné: dospělý 13 € na místě, 11 € online (gopass.travel),
+    junior/senior 11 €, děti 10 €; jízda tobogánem 3 € (pravda.sk).
+    Vstup i trasa na věž jsou podle vlastního webu „v celej dĺžke kompletne
+    bezbariérové".
+    PROVOZNÍ HISTORIE JE TU NEOBVYKLE DIVOKÁ: na původního provozovatele
+    (High Tatras Tower) vyhlásil prešovský soud konkurz se závazky přes
+    3,4 milionu eur dlouhodobě a ještě vyšším číslem krátkodobě
+    (startitup.sk); novým nájemcem se stala společnost Štrbské Pleso resort,
+    dcera Tatry mountain resorts, a vlastní web dnes uvádí „PREVÁDZKOVATEĽ:
+    Tatry mountain resorts, a.s." Znovuotevření po konkurzu proběhlo
+    „v sobotu 20. júla" (cezhory.sk; rok v citátu chybí, nejspíš 2024).
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421917682260'
+  email: strbske@vt.sk
+  web: https://vezasnov.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 2021
+overeniHistorie:
+  source: >-
+    Stavba dokončena v říjnu 2020 (taros-nova.cz: „Dokončení stavby:
+    10/2020"), pro veřejnost otevřena na jaře 2021 — sdetmi.com: „Veža
+    Tatras Tower otvára od 20.4.2021!"; sita.sk: „Vyhliadkovú vežu pre
+    verejnosť otvorili v roku 2021". Do rokVzniku jde rok otevření
+    veřejnosti, stejně jako u Skalnaté chaty a Majláthovy chaty
+    (KONTROLA-11: u letopočtu vzniku se volí pozdější doložená událost,
+    která znamená hotovou a přístupnou stavbu).
+    STAVĚLA ČESKÁ FIRMA: taros-nova.cz — „Stavba je od designu, přes
+    konstrukci až po realizaci naším dílem." Samostatný architekt
+    nenalezen; investorem byla společnost High Tatras Tower (pravda.sk:
+    „Vežu snov, Tower of Dreams, postavila spoločnosť High Tatras Tower.").
+    Vazba na MALBOCO LTD z tagu OSM se webově doložit nepodařila.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 2019
+    udalost: >-
+      Proti stavbě věže podepsalo petici víc než osm tisíc lidí; stavba
+      přesto proběhla, protože stála v zastavěném území areálu a ochranáři
+      s ní podle agentury problém neměli.
+    zdroj: >-
+      pravda.sk (čteno 9. 8. 2026) — „Petíciu proti jej výstavbe v roku 2019
+      podpísalo viac ako osemtisíc ľudí"; teraz.sk — „ochranári s ňou však
+      problém nemajú".
+  - rok: 2021
+    udalost: >-
+      Věž dokončená v říjnu 2020 se 20. dubna otevřela veřejnosti.
+    zdroj: >-
+      taros-nova.cz a sdetmi.com (čteno 9. 8. 2026).
+  - rok: 2024
+    udalost: >-
+      Po konkurzu původního provozovatele převzala provoz společnost Štrbské
+      Pleso resort ze skupiny Tatry mountain resorts a věž znovu otevřela.
+    zdroj: >-
+      startitup.sk (čteno 9. 8. 2026) — „Súd v Prešove vyhlásil na
+      prevádzkovateľa Veže snov konkurz"; sita.sk — „Novým nájomcom sa stala
+      spoločnosť Štrbské Pleso resort, dcérska spoločnosť Tatry mountain
+      resorts (TMR)."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Provozovatel věž uvádí jako nejvýše položenou vyhlídkovou věž svého
+      druhu v Evropě — nástup je v 1367 metrech a stavba měří 53 metrů.
+    kategorie: vyska
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „Najvyššia a najvyššie položená
+      veža…"; strbskepleso.sk — „najvyššie položenej vyhliadkovej veže
+      svojho druhu v Európe (1 367 m n. m.)".
+  - text: >-
+      Kolem věže vede 580 metrů dřevěné pochozí lávky na 24 ocelových
+      sloupech s patnáctistupňovým náklonem; dolů jede 61 metrů dlouhý suchý
+      tobogán a ve výšce takřka 50 metrů je skleněná lávka.
+    kategorie: jine
+    zdroj: >-
+      vlastní web a taros-nova.cz (čteno 9. 8. 2026) — „61 m dlhý suchý
+      tobogán so sklonom tubusu 30° a priemerom 0,95m"; strbskepleso.sk ke
+      skleněné lávce.
+  - text: >-
+      Věž od začátku provází spor o to, jestli do Tater patří: místní o ní
+      mluvili jako o „železné obludě", český exprezident Zeman ji nazval
+      „ohyzdnou rozhľadňou" a šéf TMR Igor Rattaj řekl, že by ji chtěl
+      dostat z Tater pryč, protože se na to místo nehodí.
+    kategorie: jine
+    zdroj: >-
+      pravda.sk — „Takáto železná obluda nemá čo na tomto území robiť";
+      startitup.sk k Zemanovu výroku; sita.sk — „Chcel by som ju dostať…
+      preč z Tatier. Je to atraktívny architektonický počin, ale na toto
+      miesto sa nehodí." (vše čteno 9. 8. 2026).
+  - text: >-
+      Kapacita věže je 492 osob najednou.
+    kategorie: velikost
+    zdroj: >-
+      slovago.sk (čteno 9. 8. 2026) — „jej kapacita je 492 osôb"; teraz.sk
+      při stavbě uváděl „kapacitou 500 ľudí".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Ocelová vyhlídková věž z roku 2021 na Štrbském Plese, vysoká 53 metrů,
+  s nástupem v 1367 metrech. Provozovatel ji uvádí jako nejvýše položenou
+  věž svého druhu v Evropě; část veřejnosti ji od začátku odmítá a osm tisíc
+  lidí proti ní podepsalo petici.
+text:
+  - >-
+    Tatras Tower, slovensky Veža snov, stojí v zastavěném území Areálu snov
+    v Mlynické dolině na Štrbském Plese, na místě bývalého škvárového hřiště
+    pod skokanskými můstky. Nástup na věž je v 1367 metrech, stavba měří
+    53 metrů a provozovatel ji uvádí jako nejvýše položenou vyhlídkovou věž
+    svého druhu v Evropě.
+  - >-
+    Konstrukce je z 24 ocelových sloupů s patnáctistupňovým náklonem, po
+    kterých se vine 580 metrů dřevěné pochozí lávky — celá trasa je podle
+    vlastního webu kompletně bezbariérová. Ve výšce takřka padesáti metrů je
+    skleněná lávka a dolů jede 61 metrů dlouhý suchý tobogán za tři eura.
+    Navrhla a postavila ji česká firma Taros Nova, dokončeno v říjnu 2020,
+    otevřeno 20. dubna 2021.
+  - >-
+    Kolem žádné jiné stavby tohohle průvodce se nevede tak hlasitý spor
+    a nemá smysl to zakrývat.
+    Proti stavbě podepsalo roku 2019 petici přes osm tisíc lidí, místní
+    o věži mluvili jako o „železné obludě" a šéf TMR Igor Rattaj — jehož
+    skupina věž dnes provozuje — řekl, že by ji chtěl dostat z Tater pryč,
+    protože se na to místo nehodí. Původní provozovatel skončil v konkurzu
+    se závazky přes tři a půl milionu eur a provoz převzala společnost
+    Štrbské Pleso resort ze skupiny Tatry mountain resorts.
+  - >-
+    V přízemí věže je kavárna Tower Cafe. Vstupné je 13 eur na místě
+    a 11 eur online, junior a senior 11, děti 10; otevřeno je denně od devíti
+    do půl páté, i když jeden pramen uvádí hodiny posunuté o hodinu později.
+    Jestli věž jede celoročně, žádný pramen neříká výslovně — nepřímo na to
+    ukazuje kluziště, které u ní v zimě funguje.
+  - >-
+    Přijde se sem pěšky z osady Štrbské Pleso; věž sousedí s dolní stanicí
+    sedačkové lanovky na Solisko a prodává se i kombinovaná vstupenka s ní.
+    Údaje nesou vlastní web, taros-nova.cz, pravda.sk, teraz.sk, sita.sk,
+    startitup.sk, cezhory.sk, strbskepleso.sk a slovago.sk; polohu
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web věže — výška 53 m, nástup 1367 m, konstrukce, tobogán,
+      Tower Cafe, bezbariérovost, vstupné, hodiny, provozovatel TMR
+      (načteno 9. 8. 2026)
+    url: https://vezasnov.sk/o-vezi/
+  - popis: >-
+      taros-nova.cz — zhotovitel: „Stavba je od designu, přes konstrukci až
+      po realizaci naším dílem.", dokončení 10/2020, lávka 580 m
+      (načteno 9. 8. 2026)
+    url: https://www.taros-nova.cz/tatras-tower-cs
+  - popis: >-
+      pravda.sk — investor High Tatras Tower, petice 2019 s více než osmi
+      tisíci podpisy, výrok o „železné obludě", tobogán 3 €
+      (načteno 9. 8. 2026)
+    url: https://www.pravda.sk/spravy/regiony/clanok/588008-vyhliadkova-veza-snov-na-strbskom-plese-miestni-hovoria-o-zeleznej-oblude
+  - popis: >-
+      sita.sk — nový nájemce Štrbské Pleso resort (dcera TMR), výrok Igora
+      Rattaje o přesunu věže z Tater (načteno 9. 8. 2026)
+    url: https://sita.sk/kontroverzna-vyhliadkova-veza-tatras-tower-na-strbskom-plese-ma-noveho-prevadzkovatela-planuje-vlatnictvo-aj-presun-z-tatier/
+  - popis: >-
+      startitup.sk — konkurz původního provozovatele, závazky přes 3,4
+      milionu eur, Zemanův výrok (načteno 9. 8. 2026)
+    url: https://www.startitup.sk/cesky-prezident-ju-nazval-ohyzdnou-tatranska-veza-snov-sa-zmieta-vo-financnych-problemoch/
+  - popis: >-
+      teraz.sk — umístění v zastavěném území Areálu snov, stanovisko
+      ochranářů, kapacita 500 při stavbě (načteno 9. 8. 2026)
+    url: https://www.teraz.sk/ekonomika/strbske-pleso-vyhliadkova-veza-ma/419452-clanok.html
+  - popis: >-
+      strbskepleso.sk — hodiny 10.00–17.30 (odchylka), skleněná lávka,
+      superlativ s výškou 1367 m (načteno 9. 8. 2026)
+    url: https://www.strbskepleso.sk/atrakcie/letne-atrakcie
+  - popis: >-
+      cezhory.sk — 53 m, 15° náklon, znovuotevření po konkurzu „v sobotu
+      20. júla" (načteno 9. 8. 2026)
+    url: https://www.cezhory.sk/veza-snov-na-strbskom-plese-je-otvorena-no-mozno-pojde-z-tatier-prec/
+  - popis: >-
+      sdetmi.com — otevření pro veřejnost 20. 4. 2021 (načteno 9. 8. 2026)
+    url: https://www.sdetmi.com/podujatia/detail/66657/veza-tatras-tower-na-strbskom-plese--je-otvorena/
+  - popis: >-
+      slovago.sk — kapacita 492 osob (načteno 9. 8. 2026)
+    url: https://www.slovago.sk/veza-snov-tatras-tower
+  - popis: >-
+      tatry.sk — kluziště u věže v zimě (nepřímý doklad zimního provozu)
+      (načteno 9. 8. 2026)
+    url: https://www.tatry.sk/klzisko-strbske-pleso-pri-tatras-tower/
+  - popis: >-
+      OpenStreetMap (GPS, capacity=492, opening_hours; ODbL)
+    url: https://www.openstreetmap.org/way/743625260
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/tatras-tower.yaml (9. 8. 2026).
+  Čtvrtá rozhledna korpusu mimo české oblasti a první na Slovensku.
+
+  SPOR O VĚŽ JE V PRÓZE ZÁMĚRNĚ, ne jako bulvár: petice s osmi tisíci
+  podpisy, konkurz provozovatele a výrok šéfa TMR („chtěl bych ji dostat
+  z Tater pryč") jsou doložené výroky o objektu, který průvodce popisuje,
+  a čtenář má právo je znát. Vyváženost drží citace ochranářů („problém
+  s ňou nemajú") a fakt, že stojí v zastavěném území.
+
+  SUPERLATIV „nejvýše položená věž svého druhu v Evropě" je zapsán
+  s atribucí provozovateli a s klíčovou výhradou „svého druhu" — bez ní by
+  tvrzení neplatilo (výš stojí ledacos, včetně lanovkových staveb).
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: otevírací hodiny (9.00–16.30 vlastní
+  web × 10.00–17.30 strbskepleso.sk); kapacita (492 × 500); rok
+  znovuotevření po konkurzu (cezhory.sk uvádí jen „v sobotu 20. júla" bez
+  roku — podle kontextu 2024, ale nedoloženo).
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: jméno architekta (Taros Nova si
+  nárokuje i design); výslovný celoroční provoz; vazba MALBOCO LTD z tagu
+  OSM; jestli je Tower Cafe přístupná bez vstupenky.
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.

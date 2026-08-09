@@ -282,6 +282,40 @@ nebo zkráceně:
   obvyklé „foto: X · zdroj".
 
 
+### 4d. slovakia.travel — prověřeno 9. 8. 2026, NEfunguje jako CzechTourism
+
+Zdroj od Michala (hero fotka Nízkých Tater — Chopok a Ohnište, fotogalerie
+slovakia.travel, snímek id 20241) s tím, že „melo by to fungovat jako
+czechtourism". **Nefunguje, a je to podstatný rozdíl.** Podmínky ověřeny
+9. 8. 2026 na `slovakia.travel/pravne-informacie` (slovensky)
+i `slovakia.travel/en/legal-information` (anglicky):
+
+| Co | CzechTourism mediabanka | slovakia.travel |
+|---|---|---|
+| Užití na webu | povoleno s předepsaným kreditem | **výslovně zakázáno** |
+| Doslova | „Obsah musí propagovat ČR jako destinaci" | „Akékoľvek použitie… inak ako pre osobnú nekomerčnú potrebu… je výslovne zakázané" |
+| Fotografie | stažení zdarma, bez registrace | „Bez písomného súhlasu oprávnenej osoby Slovakia travel nie je povolené kopírovať, prenášať, napodobovať, publikovať alebo šíriť ani žiadne texty, logá, grafické prvky, ochranné známky, zvuk ani obraz" |
+| Kredit | předepsané znění = licence | žádné takové ustanovení |
+
+Rozdíl je v konstrukci: mediabanka CzechTourism je fotobanka s licencí
+výměnou za kredit, kdežto fotogalerie slovakia.travel je jen galerie na
+webu, jehož právní stránka vyhrazuje všechna práva. Samostatnou fotobanku
+pro média s vlastními podmínkami se nepodařilo najít (hledáno 9. 8. 2026).
+
+**Naše rozhodnutí: snímek se do repa NEDÁVÁ.** Cesty, jak hero Nízkých
+Tater získat legálně:
+
+1. **Písemné svolení** — právní stránka ho výslovně předpokládá („bez
+   písomného súhlasu oprávnenej osoby"). Číselník licencí už hodnotu
+   `se-svolenim` má; kdyby Michal napsal na Slovakia Travel (info@
+   slovakia.travel) a svolení přišlo, snímek se zapojí stejně jako
+   mediabanka, jen s uschovaným souhlasem.
+2. **Wikimedia Commons** — Chopok a Nízké Tatry mají na Commons stovky
+   snímků s CC licencemi; pipeline DATA-33 i ruční výběr hero fotky přes
+   Commons je zavedená cesta (Krkonoše, Šumava-nahradník).
+3. Slovenská AOPK obdoba? Správa NAPANT vlastní fotografie nemá
+   v použitelném režimu (neověřováno do hloubky — TODO při dalším kole).
+
 ## 5. Co z toho navrhuju udělat v projektu
 
 1. **Rozšířit kolekci `Fotky` o právní pole**, aby se pět bodů z klíče 3.4 dalo
