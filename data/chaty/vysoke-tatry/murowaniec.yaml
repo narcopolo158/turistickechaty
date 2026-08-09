@@ -1,0 +1,353 @@
+# Schronisko PTTK Murowaniec — čtrnáctý publikovaný profil oblasti Vysoké
+# Tatry (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Schronisko PTTK Murowaniec
+slug: murowaniec
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Murowaniec
+    poznamka: běžně užívaná zkrácená podoba, kterou nese i vlastní web
+  - nazev: Schronisko na Hali Gąsienicowej
+    poznamka: podoba užívaná městem Zakopane
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.2434181
+lng: 20.0071598
+vyska: 1500
+obec: Zakopane
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/358407058 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA — ROZPOR, ZAPSÁNO NIŽŠÍ ČÍSLO (konvence 27. 7. 2026): 1500 m uvádí
+    osm pramenů včetně PTTK Małopolska, ústředí PTTK, města Zakopane
+    a tag ele v OSM; 1505 m nese vlastní web provozovatele a
+    dobreschronisko.pl (vše čteno 9. 8. 2026). Provozovatel je tu na vyšší
+    straně, takže konvence platí v plné síle.
+    Poloha: Hala Gąsienicowa v Dolině Suchej Wody. Souřadnice podle vlastního
+    webu 49°14′36.66″N, 20°0′26″E.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 110
+overeniNocleh:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026): „Oferuje 110 miejsc noclegowych
+    w pokojach 2,3,4,5,6,8 I 10-osobowych."; shodně portaltatrzanski.pl,
+    korona-gor-polski.pl a stronapodrozy.pl.
+    ROZPOR, přiznaný: PTTK Małopolska, město Zakopane, travelin.pl,
+    naszeszlaki.com.pl a regiontatry.pl uvádějí 116 lůžek (a Zakopane navíc
+    pokoje až dvanáctilůžkové), goryiludzie.pl a klubpodroznikow.com 120.
+    Zapsáno nejnižší číslo, které je zároveň provozovatelovo.
+    Doba ubytování podle řádu vlastního webu: „Doba hotelowa rozpoczyna się
+    o godzinie 14.00 i kończy o godzinie 10.00 ostatniego dnia pobytu.";
+    noční klid „od godziny 22.00 do godziny 6.00". Ceny se v pramenech
+    pohybují od 40 do 150 zł a jsou zjevně z různých let, proto se
+    nezapisují.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026) vypisuje provozy: „Schronisko oferuje:
+    noclegi restaurację bufet"; ústředí PTTK to potvrzuje formulací
+    „Gastronomia: jadalnia, bufet." Jídelní lístek na vlastním webu má oddíly
+    „ŚNIADANIA", „PIEROGI" a „PIZZA" s poznámkou „Oczekiwania na dania
+    z karty 15-20 minut."; snídaně „do godz. 11:00", večeře „od godz. 18:00".
+    natatry.pl doplňuje „jadalnia, bufet, przechowalnia nart i bagażu, kiosk,
+    stacja TOPR"; murowaniec.pl (fanouškovský web, který se sám vymezuje jako
+    neoficiální) uvádí „darmowy wrzątek dostępny jest całą dobę".
+    VÝSLOVNÁ VĚTA O NEUBYTOVANÝCH CHYBÍ. Řád na vlastním webu upravuje jen
+    ubytované. Doklad je tu slabší než u Morského Oka, kde ceník mluví
+    o „turystach" — proto tu netvrdíme nic nad rámec toho, že restaurace
+    a bufet existují.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    Ústředí PTTK (čteno 9. 8. 2026): „Schronisko górskie czynne cały rok." —
+    jediný přímý doklad celoročního provozu, ale pochází od vlastníka.
+    Telefonní kontakt je podle vlastního webu dostupný „codziennie
+    11:00-17:00"; razemnaszlaku.pl uvádí u gastra „Czynna od 9:00-21:00",
+    což je jediný pramen s hodinami a jeho stáří se ověřit nepodařilo —
+    proto se otevírací doba nezapisuje.
+    Chata leží uvnitř Tatrzańského parku narodowého, kde je vstup zpoplatněn
+    a nocování mimo schroniska zakázáno.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+48539537910'
+  email: rezerwacje@murowaniec.com
+  web: https://murowaniec.com/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1925
+overeniHistorie:
+  source: >-
+    Základní kámen položen 24. července 1921, slavnostní otevření
+    12. července 1925: korona-gor-polski.pl (čteno 9. 8. 2026) — „24 lipca
+    1921 r. położono kamień węgielny, a uroczyste otwarcie schroniska miało
+    miejsce 12 lipca 1925 r."; szlaki.net.pl doplňuje, kdo otevíral —
+    „Ceremonii otwarcia dokonał w dniu 12 lipca 1925 r. prezydent
+    Rzeczpospolitej Polskiej, Stanisław Wojciechowski".
+    ROZPOR O TOM, KTERÝ ODBOR PTT STAVĚL, nesrovnaný: PTTK Małopolska,
+    portaltatrzanski.pl a razemnaszlaku.pl uvádějí Oddział Warszawski PTT
+    („Wybudowane zostało w latach 1921–1925 dzięki staraniom Oddziału
+    Warszawskiego PTT"), město Zakopane a korona-gor-polski.pl Oddział
+    Tatrzański PTT.
+    ROZPOR O PROJEKTANTECH: krakow.eska.pl, 24tp.pl a tulismanore.pl uvádějí
+    samotného Zdzisława Kalinowského, město Zakopane, histmag.org a
+    historykon.pl dvojici Zdzisław Kalinowski a Karol Siciński,
+    regiontatry.pl a razemnaszlaku.pl přidávají do rané fáze Jana Witkiewicze
+    Koszyce. PTTK Małopolska píše „Zbigniew Kalinowski" — osamocená varianta
+    křestního jména, patrně chyba, ale zapisuje se, protože ji nemám čím
+    vyvrátit.
+    STAVĚLA ARMÁDA, doloženo dvěma prameny: krakow.eska.pl — „w budowę
+    schroniska było zaangażowane Wojsko Polskie, a dokładniej pluton kompanii
+    wysokogórskiej 3 pułku strzelców podhalańskich, kompania 5 pułk saperów
+    z Krakowa"; histmag.org — „Dzięki kontaktom w środowiskach wojskowych
+    i szczególnej przychylności gen. Sikorskiego".
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1884
+    udalost: >-
+      Na břehu Czarného Stawu Gąsienicowého postavil Józef Sieczka primitivní
+      útulnu — první stavbu pro turisty na Hali Gąsienicowej.
+    zdroj: >-
+      24tp.pl (čteno 9. 8. 2026) — „Wszystko zaczęło się w 1884 roku, kiedy
+      to Józef Sieczka postawił prymitywne schronisko na brzegu Czarnego
+      Stawu Gąsienicowego."
+  - rok: 1890
+    udalost: >-
+      Towarzystwo Tatrzańskie odkoupilo od horalů dva šalaše na Hali.
+    zdroj: >-
+      szlaki.net.pl (čteno 9. 8. 2026) — „dwa szałasy, które Towarzystwo
+      Tatrzańskie wykupiło w 1890 r. od górali".
+  - rok: 1913
+    udalost: >-
+      Na Hali Gąsienicowej začala 1. prosince měřit první horská
+      meteorologická stanice na polském území.
+    zdroj: >-
+      obserwator.imgw.pl (čteno 9. 8. 2026) — „Obserwacje na stacji
+      meteorologicznej na Hali Gąsienicowej rozpoczęto 1 grudnia 1913 roku.
+      Była to pierwsza górska stacja meteorologiczna na ziemiach polskich."
+  - rok: 1925
+    udalost: >-
+      Chatu postavenou od roku 1921 otevřel 12. července prezident Stanisław
+      Wojciechowski. Stavěla ji Polská armáda — četa vysokohorské roty
+      3. pluku podhalských střelců a rota 5. ženijního pluku z Krakova.
+    zdroj: >-
+      korona-gor-polski.pl a szlaki.net.pl (čteno 9. 8. 2026);
+      krakow.eska.pl k účasti armády.
+  - rok: 1951
+    udalost: >-
+      Přístavbou západního křídla se budova zvětšila; práce probíhaly od
+      roku 1950 a upravily i interiér.
+    zdroj: >-
+      PTTK Małopolska (čteno 9. 8. 2026) — „W latach 1950–1951 budynek
+      powiększono."; regiontatry.pl — „Zachodnie skrzydło zostało dobudowane
+      w latach 1950-1951."
+  - rok: 1963
+    udalost: >-
+      5. prosince chata částečně vyhořela; oheň zničil celé třetí patro
+      a obnova už nebyla úplná.
+    zdroj: >-
+      PTTK Małopolska (čteno 9. 8. 2026) — „5 grudnia 1963 r. uległ
+      częściowemu spaleniu, a następnie odbudowano go w nowym kształcie.";
+      krakow.eska.pl — „w schronisku wybuchł pożar i zniszczył całe trzecie
+      piętro"; portaltatrzanski.pl — obnova „niestety niekompletnej".
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Jméno Murowaniec vzniklo podle pramene z toho, že žulové zdi budovy
+      byly zevnitř obloženy dřevem — turisté si toho všimli a název se ujal.
+    kategorie: jine
+    zdroj: >-
+      naszeszlaki.com.pl (čteno 9. 8. 2026) — „Granitowe mury tego budynku,
+      obudowane wewnątrz drewnianymi ścianami natchnęły turystów do nadania
+      schronisku popularnej do dziś nazwy »Murowaniec«."
+  - text: >-
+      Žula na stavbu se sbírala pod Kościelcem a vozila úzkokolejkou;
+      transport kamene byl podle pramene největší potíž celé stavby.
+    kategorie: jine
+    zdroj: >-
+      krakow.eska.pl (čteno 9. 8. 2026) — „Najwięcej kłopotów sprawiał
+      transport materiałów, w tym głównie granitowych głazów spod ścian
+      Kościelca"; histmag.org — „Kolejka górska, którą dowozić miano kamień
+      zbierany u zbocza Małego Kościelca."
+  - text: >-
+      Na zdech chaty jsou pamětní desky Stanisława Osieckého, iniciátora
+      stavby, a básníka Adama Asnyka.
+    kategorie: jine
+    zdroj: >-
+      regiontatry.pl (čteno 9. 8. 2026) — „Mury Murowańca zdobią tablice
+      pamiątkowe – poświęcone Stanisławowi Osieckiemu oraz Adamowi
+      Asnykowi."
+  - text: >-
+      V budově sídlí služba horské záchranné služby TOPR.
+    kategorie: jine
+    zdroj: >-
+      portaltatrzanski.pl (čteno 9. 8. 2026) — „dyżurka TOPR"; natatry.pl —
+      „stacja TOPR".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Žulová chata na Hali Gąsienicowej, stavěná v letech 1921 až 1925 Polským
+  tatranským spolkem s pomocí armády a otevřená prezidentem republiky.
+  Jméno dostala podle zděných stěn. Roku 1963 vyhořela a obnova už nebyla
+  úplná.
+text:
+  - >-
+    Schronisko PTTK Murowaniec stojí ve 1500 metrech na Hali Gąsienicowej
+    v Dolině Suchej Wody. Je to jedna z největších polských tatranských chat
+    a přezdívku, která jí zůstala jako jméno, dostala podle stavebního
+    materiálu: žulové zdi jsou zevnitř obložené dřevem a turisté jí začali
+    říkat Murowaniec.
+  - >-
+    Hala měla turistickou tradici dřív než chatu. Roku 1884 tu Józef Sieczka
+    postavil primitivní útulnu na břehu Czarného Stawu, roku 1890 odkoupilo
+    Towarzystwo Tatrzańskie od horalů dva šalaše a 1. prosince 1913 tu začala
+    měřit první horská meteorologická stanice na polském území.
+  - >-
+    Vlastní chata se začala stavět roku 1921, kdy 24. července položili
+    základní kámen, a otevřena byla 12. července 1925 prezidentem Stanisławem
+    Wojciechowským. Kdo přesně stavěl, se prameny neshodnou — jedni uvádějí
+    varšavský, druzí tatranský odbor Polského tatranského spolku, a projekt
+    připisují buď Zdzisławu Kalinowskému samotnému, nebo jemu a Karolu
+    Sicińskému. Jisté je, kdo dělal těžkou práci: Polská armáda, konkrétně
+    četa vysokohorské roty 3. pluku podhalských střelců a rota 5. ženijního
+    pluku z Krakova. Nejtěžší byl podle pramene transport žulových balvanů
+    sbíraných pod Kościelcem.
+  - >-
+    Roku 1949 tu vznikla pobočka Polské geografické společnosti
+    a meteorologická stanice, v letech 1950 až 1951 přibylo západní křídlo.
+    A 5. prosince 1963 chata částečně vyhořela — oheň zničil celé třetí
+    patro a obnova, jak píše jeden z pramenů, už nebyla úplná.
+  - >-
+    Dnes tu je 110 lůžek podle provozovatele, jiné prameny uvádějí 116 nebo
+    120, v pokojích od dvou do deseti lidí. Je tu restaurace, bufet, jídelna,
+    úschovna zavazadel a lyží, směnárna, klubovna a služba horské záchranné
+    služby TOPR. Jestli se obslouží i ten, kdo tu nespí, prameny neříkají;
+    řád na vlastním webu mluví jen o ubytovaných.
+  - >-
+    Chodí se sem z Kuźnic po modré přes Boczań nebo po žluté Dolinou
+    Jaworzynky, obojí kolem dvou hodin; od Brzezin po černé přes Psią Trawkę
+    zhruba stejně; a z Kasprowého Wierchu po žluté dolů za necelou hodinu až
+    hodinu a čtvrt. Chata leží uvnitř Tatrzańského parku narodowého, kde se
+    platí vstup a nocovat se smí jen ve schroniscích.
+  - >-
+    Údaje nese vlastní web chaty, ústředí PTTK, PTTK Małopolska,
+    portaltatrzanski.pl, krakow.eska.pl, 24tp.pl, histmag.org,
+    naszeszlaki.com.pl, regiontatry.pl, szlaki.net.pl a obserwator.imgw.pl;
+    polohu OpenStreetMap. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty, nabídka — 110 lůžek v pokojích pro 2 až 10 osob,
+      provozy (noclehy, restaurace, bufet) (načteno 9. 8. 2026)
+    url: https://murowaniec.com/oferta/
+  - popis: >-
+      Vlastní web chaty, řád — doba ubytování 14.00–10.00, noční klid
+      22.00–6.00 (načteno 9. 8. 2026)
+    url: https://murowaniec.com/regulamin/
+  - popis: >-
+      Ústředí PTTK — „Schronisko górskie czynne cały rok.", gastronomie
+      (jídelna, bufet), správce Schroniska i Hotele PTTK „Karpaty" Sp. z o.o.
+      Nowy Sącz (načteno 9. 8. 2026)
+    url: https://pttk.pl/accommodations/schronisko-murowaniec/
+  - popis: >-
+      PTTK Małopolska — 1500 m, stavba 1921–1925 Oddziałem Warszawskim PTT,
+      přístavba 1950–1951, požár 5. 12. 1963, 116 lůžek (načteno 9. 8. 2026)
+    url: https://malopolska.szlaki.pttk.pl/2714-pttk-malopolska-schronisko-gorskie-pttk-murowaniec-na-hali-gasienicowej
+  - popis: >-
+      krakow.eska.pl — účast Polské armády (3. pluk podhalských střelců,
+      5. ženijní pluk), Zdzisław Kalinowski, transport žuly zpod Kościelce,
+      požár prosinec 1963 (načteno 9. 8. 2026)
+    url: https://krakow.eska.pl/schronisko-murowaniec-historia-ciekawostki-dvVm.html
+  - popis: >-
+      24tp.pl — Osiecki a Drewnowski 1919, Aleksander Schiele jako
+      stavbyvedoucí, otevření 12. 7. 1925, Sieczkova útulna 1884
+      (načteno 9. 8. 2026)
+    url: https://24tp.pl/n/125643
+  - popis: >-
+      histmag.org — podpora generála Sikorského a nasazení vojenských pluků,
+      dvojice projektantů Kalinowski a Siciński (načteno 9. 8. 2026)
+    url: https://histmag.org/Murowaniec-krol-polskich-schronisk-8165
+  - popis: >-
+      naszeszlaki.com.pl — původ jména Murowaniec, obnova po požáru za čtyři
+      měsíce, 116 lůžek (načteno 9. 8. 2026)
+    url: https://naszeszlaki.com.pl/schronisko-gorskie-pttk-tzw-murowaniec/
+  - popis: >-
+      portaltatrzanski.pl — 110 lůžek, požár 1963 a neúplná obnova, služba
+      TOPR, značky z Kuźnic (načteno 9. 8. 2026)
+    url: https://portaltatrzanski.pl/przewodnik/schroniska/schronisko-pttk-murowaniec,51
+  - popis: >-
+      regiontatry.pl — pamětní desky Osieckého a Asnyka, západní křídlo
+      1950–1951, Jan Witkiewicz Koszyc v rané fázi projektu
+      (načteno 9. 8. 2026)
+    url: https://regiontatry.pl/gory/tatry/schroniska/schronisko-pttk-murowaniec-931.html
+  - popis: >-
+      szlaki.net.pl — odkup dvou šalašů roku 1890, otevření prezidentem
+      Wojciechowským, původ jména haly (načteno 9. 8. 2026)
+    url: https://www.szlaki.net.pl/hala_gasienicowa.php
+  - popis: >-
+      obserwator.imgw.pl — meteorologická stanice na Hali od 1. 12. 1913,
+      první horská na polském území (načteno 9. 8. 2026)
+    url: https://obserwator.imgw.pl/2020/11/19/tatrzanska-stacja-gasienicowa/
+  - popis: >-
+      OpenStreetMap (GPS, ODbL)
+    url: https://www.openstreetmap.org/way/358407058
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/murowaniec.yaml (9. 8. 2026).
+
+  PATROCINIUM „IM. WANDY JERZMANOWSKIEJ" SE NEPOTVRDILO a je to poctivé
+  napsat: do zadání rešerše jsem ho dal jako otázku („jaké má oficiální
+  jméno, im. Wandy Jerzmanowskiej?") a rešerše ho cíleně hledala třemi
+  dotazy. Žádný pramen ho neuvádí — naopak vlastník (Schroniska i Hotele
+  PTTK „Karpaty"), ústředí PTTK, město Zakopane i všechny turistické portály
+  vedou chatu bez patronky. Do dat proto nešlo. Nenalezení není vyvrácení
+  (polská Wikipedie byla nedostupná), ale ani domněnka není fakt — a byla to
+  MOJE domněnka v zadání, ne pramen. Je to potřetí, co se mi vrátila lekce
+  z 8. 8. 2026: do zadání se píše „kdo?", ne „byl to X?".
+
+  KAPACITA — konvence o nižším čísle tu vyšla nastejno s pravidlem
+  „provozovatel má přednost": obojí ukazuje na 110.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: který odbor PTT stavěl (Warszawski ×
+  Tatrzański); projektanti (Kalinowski sám × Kalinowski a Siciński ×
+  s Witkiewiczem Koszycem v rané fázi); křestní jméno projektanta u PTTK
+  Małopolska („Zbigniew" místo Zdzisław); rok požáru (1963 u šesti pramenů ×
+  1964 u klubpodroznikow.com); kapacita (110 × 116 × 120).
+
+  PROVOZOVATEL A VLASTNÍK SE LIŠÍ a do dat nešlo ani jedno: vlastníkem je
+  PTTK přes dceřinou firmu Schroniska i Hotele PTTK „Karpaty" Sp. z o.o.
+  z Nowého Sącze, provozovatelem podle zásad ochrany osobních údajů na
+  vlastním webu „WYSOKA Szatkowski, Postupalski Spółka Komandytowa".
+
+  POZOR NA ZÁMĚNU WEBŮ: murowaniec.pl NENÍ oficiální web — sám o sobě píše,
+  že je „stroną miłośników schroniska górskiego Murowaniec. Nie jest
+  oficjalną stroną www". Oficiální je murowaniec.com. Ve zdrojích je proto
+  jen ten druhý.
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: výslovná věta o obsluze
+  neubytovaných; otevírací doba restaurace a bufetu (jediný pramen
+  s hodinami je razemnaszlaku.pl a jeho stáří neznáme); válečný osud
+  1939–1945 (jen vágní zmínka na eska.pl); číslo a datum zápisu do rejstříku
+  památek. Polskou Wikipedii se rešerši nepodařilo načíst.
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

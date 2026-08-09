@@ -1,0 +1,340 @@
+# Schronisko PTTK w Dolinie Roztoki — šestnáctý publikovaný profil oblasti
+# Vysoké Tatry (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Schronisko PTTK w Dolinie Roztoki
+slug: schronisko-pttk-w-dolinie-roztoki
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Schronisko w Starej Roztoce
+    poznamka: alternativní název (OSM alt_name)
+  - nazev: Schronisko PTTK im. Wincentego Pola
+    poznamka: oficiální jméno po básníkovi a geografovi Wincentym Polovi
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.2337198
+lng: 20.0956768
+vyska: 1031
+obec: Bukowina Tatrzańska
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/253824570 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1031 m BEZ JEDINÉHO ROZPORU: vlastní web chaty, natatry.pl, město
+    Zakopane, apartamenty-gorskie.pl i polská Wikipedie v mobilní verzi
+    (jediná ze všech polských chat tohohle bloku, kterou se rešerši podařilo
+    načíst) — vše čteno 9. 8. 2026.
+    Poloha: polana Stara Roztoka v Dolině Roztoki, poblíž Wodogrzmotů
+    Mickiewicza. Obec: chata leží v Dolině Białki na katastru Bukowiny
+    Tatrzańské; poštovní adresa provozovatele je „34-500 Zakopane
+    skr. poczt. 200", tedy schránka, ne sídlo.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 70
+overeniNocleh:
+  source: >-
+    ROZPOR, ZAPSÁNO NIŽŠÍ ČÍSLO (konvence 27. 7. 2026): vlastní web (čteno
+    9. 8. 2026) uvádí „ponad 70 miejscami noclegowymi w pokojach 2, 3, 4, 5,
+    6, 8 i 9–osobowych", kdežto polská Wikipedie, portaltatrzanski.pl
+    a regiontatry.pl shodně 75 lůžek. Provozovatel je tu na nižší straně
+    a mluví o „více než 70", takže se zapisuje 70 a rozpor se přiznává.
+    Nouzové spaní: skitourowezakopane.pl uvádí nocleh na podlaze „wyłącznie
+    w sytuacjach awaryjnych", mynaszlaku.pl „możliwość spania na podłodze
+    ze własnym śpiworem".
+    Ceny podle vlastního webu: pokoje pro 6 až 9 osob 95 zł za jednu noc
+    a 85 zł při delším pobytu, čtyř- a pětilůžkové 115/100 zł, dvou-
+    a třílůžkové 125/110 zł; k tomu „obowiązkowa opłata klimatyczna: 2 zł za
+    dobę/osobę". Doba ubytování 15.00 až 10.00.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026) uvádí bufet otevřený 7.00–21.00, snídaně
+    7.00–11.00 a obědy 11.00–21.00, s nabídkou žuru, hřibové, česnekové
+    a rajské polévky, kwaśnice, barszcze, řízku, pirohů, závinu a perníku.
+    Polská Wikipedie shrnuje vybavení jako „bufetem, jadłodajnią,
+    świetlicą"; město Zakopane uvádí jídelnu na šedesát míst a „Gwarantuje
+    bogate i smaczne dania kuchni domowej oraz wrzątek za darmo."
+    VÝSLOVNÁ VĚTA O NEUBYTOVANÝCH CHYBÍ i tady; nejblíž jsou formulace „Do
+    dyspozycji turystów…" a bezplatná vroucí voda. Doklad je slabší než
+    u Pięciu Stawów, kde je turistická kuchyňka popsaná adresně.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# sezona SE NEVYPLŇUJE: prameny se u téhle chaty rozcházejí a přímý doklad
+# celoročního provozu chybí. Viz overeniProvoz a interniPoznamky.
+otviraciDoba: bufet 7.00–21.00; snídaně 7.00–11.00, obědy 11.00–21.00
+overeniProvoz:
+  source: >-
+    SEZÓNNOST TU NENÍ DOLOŽENÁ A PROTO SE NEZAPISUJE. Vlastní web (čteno
+    9. 8. 2026) uvádí jen otevírací hodiny bufetu a jednu sezónní poznámku:
+    „W okresie wakacyjnym – od lipca do września – w każdą niedzielę
+    w godzinach 19:00-20:00 przerwa w funkcjonowaniu bufetu i recepcji."
+    Věta „czynne cały rok" na něm není. skitourowezakopane.pl naopak uvádí
+    sezónu „miesiące lipiec, sierpień, wrzesień" plus svátky — což by
+    znamenalo sezónní provoz. Rozpor se nedá rozhodnout a domýšlet se to
+    nebude; u sousedních chat PTTK je celoroční provoz doložený výslovně,
+    tady ne.
+    Chata leží uvnitř Tatrzańského parku narodowého: vstup je zpoplatněn
+    a nocování mimo schroniska zakázáno.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+48609001760'
+  email: schroniskoroztoka@gmail.com
+  web: https://schroniskoroztoka.pl/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1876
+overeniHistorie:
+  source: >-
+    Polská Wikipedie (mobilní verze, čteno 9. 8. 2026): „W 1876 r.
+    w Roztoce wybudowano pod kierownictwem ks. Wojciecha Roszka i Leopolda
+    Świerza drugie w Tatrach polskich schronisko (po starym schronisku nad
+    Morskim Okiem)."; vlastní web — „Budowa pod nadzorem ks. Wojciecha Roszka
+    i Leopolda Świerza ukończona została w roku 1876"; portaltatrzanski.pl —
+    „Schronisko zostało wybudowane w 1876 r. przez Towarzystwo Tatrzańskie."
+    Jméno Wincentyho Pola nese chata od začátku: „Nazwano je imieniem
+    Wincentego Pola i postawiono przy drodze do Morskiego Oka z Łysej
+    Polany." (polská Wikipedie); portaltatrzanski.pl doplňuje, že Pol byl
+    „wybitnego poety, etnografa i geografa".
+    ROZPOR V ROCE DNEŠNÍ BUDOVY, nesrovnaný a čtyřnásobný: první chatu roku
+    1911 rozebrali („Wskutek dużego zagrożenia dla turystów został rozebrany
+    w 1911 r., a obok niego wybudowano wkrótce pod nadzorem Władysława
+    Kulczyńskiego dzisiejszy budynek."), ale dnešní budovu prameny datují
+    1911–1912 (gorydlaciebie.pl), 1912 (regiontatry.pl) i 1913 (vlastní web,
+    natatry.pl, město Zakopane). Zapsán je rok vzniku chaty jako instituce,
+    ne rok budovy; rozdíl je tu popsaný.
+    PROJEKTANT NENALEZEN: prameny uvádějí jen dozor Władysława Kulczyńského,
+    nikoli autora projektu.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1876
+    udalost: >-
+      Towarzystwo Tatrzańskie postavilo pod vedením kněze Wojciecha Roszka
+      a Leopolda Świerze druhou chatu polských Tater — po staré chatě nad
+      Morskim Okiem. Dostala jméno po Wincentym Polovi.
+    zdroj: >-
+      polská Wikipedie, mobilní verze (čteno 9. 8. 2026); shodně vlastní web
+      a portaltatrzanski.pl.
+  - rok: 1911
+    udalost: >-
+      Původní budova, přes opakované opravy zchátralá, byla kvůli
+      nebezpečí pro turisty rozebrána; vedle ní vyrostla pod dozorem
+      Władysława Kulczyńského dnešní dřevěná chata. Rok jejího dokončení se
+      v pramenech liší.
+    zdroj: >-
+      polská Wikipedie, mobilní verze (čteno 9. 8. 2026) — „Wskutek dużego
+      zagrożenia dla turystów został rozebrany w 1911 r."; dnešní budovu
+      datuje vlastní web a natatry.pl do roku 1913, regiontatry.pl do 1912,
+      gorydlaciebie.pl do let 1911–1912.
+  - rok: 1940
+    udalost: >-
+      Od října 1939 do února 1940 se o opuštěnou chatu staral horolezec
+      Tadeusz Pawłowski s rodinou a chata sloužila jako přechodová stanice
+      pro Poláky prchající do Uher. Později v ní sídlila německá pohraniční
+      stráž.
+    zdroj: >-
+      polská Wikipedie, mobilní verze (čteno 9. 8. 2026) — „schronisko
+      pełniło wówczas funkcję punktu przerzutowego dla Polaków
+      przedostających się na Węgry. Później znajdowała się tu placówka
+      niemieckiej straży granicznej".
+  - rok: 2008
+    udalost: >-
+      Od podzimu chatu vedou Anna a Stefan Krupowie z Chochołowa.
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „Od listopada 2008 roku gospodarują
+      nim Anna i Stefan Krupowie z Chochołowa."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Byla to druhá chata postavená v polských Tatrách, hned po staré chatě
+      nad Morskim Okiem.
+    kategorie: stari
+    zdroj: >-
+      polská Wikipedie, mobilní verze (čteno 9. 8. 2026) — „drugie
+      w Tatrach polskich schronisko (po starym schronisku nad Morskim
+      Okiem)"; město Zakopane totéž.
+  - text: >-
+      Mezi prvními hosty byli Walery Eljasz-Radzikowski, Tytus Chałubiński
+      a Stanisław Witkiewicz.
+    kategorie: jine
+    zdroj: >-
+      polská Wikipedie, mobilní verze (čteno 9. 8. 2026) — „Pośród pierwszych
+      turystów znaleźli się m.in. Walery Eljasz-Radzikowski, Tytus
+      Chałubiński i Stanisław Witkiewicz."
+  - text: >-
+      V meziválečných letech, za hospodaření rodiny Grabowských, to byla
+      hlavní základna polských horolezců lezoucích na slovenské straně.
+    kategorie: jine
+    zdroj: >-
+      polská Wikipedie, mobilní verze (čteno 9. 8. 2026) — „była to główna
+      baza taterników polskich wspinających się na Słowacji."
+  - text: >-
+      Chata stojí v bezprostředním sousedství Wodogrzmotů Mickiewicza.
+    kategorie: jine
+    zdroj: >-
+      natatry.pl (čteno 9. 8. 2026) — „Schronisko znajduje się
+      w bezpośrednim sąsiedztwie Wodogrzmotów Mickiewicza".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěná chata na polaně Stara Roztoka, druhá postavená v polských Tatrách.
+  Towarzystwo Tatrzańskie ji zřídilo roku 1876 a pojmenovalo po Wincentym
+  Polovi; dnešní budova je z počátku druhého desetiletí 20. století. Za války
+  sloužila jako přechodová stanice pro Poláky prchající do Uher.
+text:
+  - >-
+    Schronisko PTTK w Dolinie Roztoki stojí ve 1031 metrech na polaně Stara
+    Roztoka, kousek od Wodogrzmotů Mickiewicza. Na výšce se prameny shodují
+    do metru bez jediné odchylky.
+  - >-
+    Postavilo ji roku 1876 Towarzystwo Tatrzańskie pod vedením kněze Wojciecha
+    Roszka a Leopolda Świerze — byla to druhá chata polských Tater, hned po
+    staré chatě nad Morskim Okiem. Jméno dostala po Wincentym Polovi,
+    básníkovi, etnografovi a geografovi. Mezi prvními hosty byli Walery
+    Eljasz-Radzikowski, Tytus Chałubiński a Stanisław Witkiewicz.
+  - >-
+    Původní budova postupně chátrala, a když začala být pro turisty
+    nebezpečná, roku 1911 ji rozebrali. Vedle ní vyrostla pod dozorem
+    Władysława Kulczyńského dnešní dřevěná chata; kdy přesně byla hotová,
+    prameny neříkají stejně — uvádějí 1911, 1912 i 1913. Jméno projektanta
+    nezná žádný z nich.
+  - >-
+    Za pozornost stojí válečná kapitola. Od října 1939 do února 1940 se
+    o opuštěnou
+    chatu staral horolezec Tadeusz Pawłowski s manželkou Janinou, sestrou
+    Adou Kopczyńskou a Włodzimierzem Gosławským — a chata tehdy sloužila jako
+    přechodová stanice pro Poláky prchající přes hory do Uher. Později v ní
+    sídlila německá pohraniční stráž, ale budovu válka nezničila.
+    V meziválečných letech, za hospodaření rodiny Grabowských, to byla hlavní
+    základna polských horolezců, kteří lezli na slovenské straně.
+  - >-
+    Dnes tu je podle provozovatele „ponad 70" lůžek v pokojích od dvou do
+    devíti osob, jiné prameny uvádějí pětasedmdesát. Bufet má otevřeno od
+    sedmi ráno do devíti večer, jídelna pojme šedesát lidí, vroucí voda je
+    zdarma a kuchyně vaří žur, hřibovou, česnekovou a kwaśnici; závin a perník
+    zmiňují prameny jako to, kvůli čemu sem lidé chodí. Chatu vedou od
+    listopadu 2008 Anna a Stefan Krupowie z Chochołowa.
+  - >-
+    Jestli je chata otevřená celoročně, poctivě nevíme. Vlastní web větu
+    o celoročním provozu nemá a jeden pramen naopak uvádí sezónu od července
+    do září plus svátky. U sousedních chat PTTK je celoroční provoz doložený
+    výslovně, tady ne — a domýšlet si to nebudeme.
+  - >-
+    Chodí se sem z parkoviště na Palenici Białczańské, prameny udávají mezi
+    čtyřiceti minutami a hodinou a deseti minutami: nejdřív asi tři kilometry
+    po červené k Wodogrzmotům Mickiewicza, tam se přechází na zelenou
+    a sestupuje osm set metrů po kamenech. Odtud vede červená k Morskému Oku
+    za hodinu a půl a zelená do Doliny Pięciu Stawów za dvě hodiny. Chata
+    leží uvnitř národního parku, kde se platí vstup a nocovat se smí jen ve
+    schroniscích.
+  - >-
+    Údaje nese vlastní web chaty, polská Wikipedie, portaltatrzanski.pl,
+    natatry.pl, město Zakopane, regiontatry.pl, mynaszlaku.pl
+    a apartamenty-gorskie.pl; polohu OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty, o nás — „ponad 70 miejsc", ceník, klimatický
+      poplatek, hospodáři Anna a Stefan Krupowie od listopadu 2008
+      (načteno 9. 8. 2026)
+    url: https://schroniskoroztoka.pl/o-nas/
+  - popis: >-
+      Vlastní web chaty, kuchyně — bufet 7.00–21.00, snídaně 7.00–11.00,
+      obědy 11.00–21.00, nabídka jídel (načteno 9. 8. 2026)
+    url: https://schroniskoroztoka.pl/kuchnia/
+  - popis: >-
+      Polská Wikipedie (mobilní verze) — stavba 1876 pod vedením
+      W. Roszka a L. Świerze, druhá chata polských Tater, jméno W. Pola,
+      demolice 1911, válečná přechodová stanice, posloupnost hospodářů
+      (načteno 9. 8. 2026)
+    url: https://pl.m.wikipedia.org/wiki/Schronisko_PTTK_w_Dolinie_Roztoki
+  - popis: >-
+      portaltatrzanski.pl — stavba 1876 Towarzystwem Tatrzańskim, jméno
+      W. Pola, přístavby 1923–26 a 1932–35, 75 lůžek, časy tras
+      (načteno 9. 8. 2026)
+    url: https://portaltatrzanski.pl/przewodnik/schroniska/schronisko-w-dolinie-roztoki,56
+  - popis: >-
+      natatry.pl — 1031 m, přenesení a stavba 1913, okupace bez zničení,
+      sousedství Wodogrzmotů Mickiewicza (načteno 9. 8. 2026)
+    url: https://natatry.pl/informacje/schroniska/schronisko-roztoka
+  - popis: >-
+      Město Zakopane — druhá chata polských Tater, budova z roku 1913,
+      jídelna na 60 míst a vroucí voda zdarma, mše v neděli
+      (načteno 9. 8. 2026)
+    url: https://www.zakopane.pl/strefa-turystyczna/turystyka/schroniska-gorskie/schronisko-w-dolinie-roztoki/
+  - popis: >-
+      schroniska-pttk.com.pl — vlastník a provozovatel Schroniska i Hotele
+      PTTK „Karpaty" Sp. z o.o. Nowy Sącz, poštovní adresa, časy tras
+      (načteno 9. 8. 2026)
+    url: https://schroniska-pttk.com.pl/schronisko-pttkw-dolinie-roztoki/
+  - popis: >-
+      mynaszlaku.pl — přístup z Palenice po červené a pak zelené, 1 h 10 min,
+      poplatky za parkoviště (načteno 9. 8. 2026)
+    url: https://mynaszlaku.pl/jak-dojsc-do-schroniska-roztoka-w-tatrach/
+  - popis: >-
+      regiontatry.pl — dnešní budova rok po roce 1911, 75 lůžek, jadłodajnia,
+      bufet a świetlica (načteno 9. 8. 2026)
+    url: https://regiontatry.pl/gory/tatry/schroniska/schronisko-pttk-w-roztoce-936.html
+  - popis: >-
+      apartamenty-gorskie.pl — výška 1031 m a polana Stara Roztoka, 75 lůžek,
+      doba ubytování 15.00–10.00, časy tras (načteno 9. 8. 2026)
+    url: https://apartamenty-gorskie.pl/blog/schronisko-pttk-w-dolinie-roztoki-pelny-przewodnik-po-historii-ofercie-i-szlakach/
+  - popis: >-
+      OpenStreetMap (GPS, ODbL)
+    url: https://www.openstreetmap.org/way/253824570
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/schronisko-pttk-w-dolinie-roztoki.yaml
+  (9. 8. 2026).
+
+  POLE `sezona` ZŮSTALO PRÁZDNÉ, a je to záměr. U sousedních polských chat
+  (Murowaniec, Pięć Stawów) je celoroční provoz doložený výslovně, buď
+  ústředím PTTK, nebo vlastním webem. Tady ne: vlastní web má jen otevírací
+  hodiny bufetu a poznámku o nedělní přestávce v prázdninách,
+  skitourowezakopane.pl naopak píše o sezóně červenec až září plus svátky.
+  Přenést celoroční provoz od sousedů by bylo domýšlení. Je to druhý profil
+  bloku s nevyplněnou sezónností — první je Majláthova chata.
+
+  ROK VZNIKU JE ROKEM CHATY, NE BUDOVY, a je to výjimka, kterou je potřeba
+  vidět. U Morského Oka i u Pięciu Stawów jsem zapsal rok dnešní budovy,
+  protože prameny ji datují jednoznačně. Tady se datace dnešní budovy
+  rozpadá na čtyři varianty (1911, 1911–1912, 1912, 1913) a jediné pevné
+  datum je rok 1876, kdy chata jako instituce vznikla — navíc s doloženou
+  kontinuitou jména i místa. Zapsán je proto rok 1876 a rozdíl je popsaný
+  v milníku.
+
+  VÝŠKA BEZ ROZPORU JE TU TŘETÍ PŘÍPAD V OBLASTI (po Zamkovského chatě
+  a Bilíkově chatě) a stojí za povšimnutí, že vzniká u nižších objektů. Čím
+  výš, tím se prameny rozcházejí víc — u Morského Oka jsou čtyři hodnoty.
+  Vysvětlení se nabízí (různé měřené body na svahu), ale doložené není.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: rok dnešní budovy (1911 × 1911–1912 ×
+  1912 × 1913); kapacita („ponad 70" × 75); datace meziválečných přístaveb
+  (polská Wikipedie „w latach 30.", portaltatrzanski.pl „1923-1926 oraz
+  1932-1935"); telefon a e-mail (vlastní web uvádí +48 609 001 760
+  a +48 600 443 733 a gmail, jiné portály +48 733 275 199
+  a biuro@schroniskoroztoka.pl).
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: jméno projektanta dnešní budovy
+  (doložen jen dozor Władysława Kulczyńského); jakýkoli požár; návštěva Jana
+  Pavla II., kterou zmiňuje jediný slabší pramen (gorydlaciebie.pl)
+  a nepotvrzuje ji nikdo jiný — proto v profilu není; výslovná věta o obsluze
+  neubytovaných. Vlastnictví je stejně jako u Morského Oka předmětem sporu
+  mezi PTTK a národním parkem (rp.pl) a do dat proto nešlo.
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

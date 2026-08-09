@@ -1,0 +1,416 @@
+# Schronisko PTTK w Dolinie Pięciu Stawów Polskich — patnáctý publikovaný
+# profil oblasti Vysoké Tatry (9. 8. 2026), povýšen z kandidáta DATA-01.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Schronisko PTTK w Dolinie Pięciu Stawów Polskich
+slug: schronisko-pttk-w-dolinie-pieciu-stawow-polskich
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Schronisko im. Leopolda Świerza
+    poznamka: >-
+      jméno uváděné městem Zakopane a portálem i-tatry.pl; vlastní web ho
+      nepoužívá
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.213641
+lng: 20.0487403
+vyska: 1670
+obec: Bukowina Tatrzańska
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/250746663 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA — TŘI HODNOTY, ZAPSÁNO NEJNIŽŠÍ (konvence 27. 7. 2026): 1670 m nese
+    vlastní web („najwyżej położone schronisko w Polsce (1670 m n.p.m.)"),
+    město Zakopane a tag ele v OSM; 1671 m portalgorski.pl, natatry.pl,
+    i-tatry.pl a korona-gor-polski.pl; 1672 m ústředí PTTK („Położone na
+    terenie Tatrzańskiego Parku Narodowego na wysokości 1672 m n.p.m.").
+    Vše čteno 9. 8. 2026.
+    Poloha: severní břeh Przedního Stawu v Dolině Pięciu Stawów Polskich.
+    Obec podle poštovní adresy na vlastním webu („34-530 Bukowina
+    Tatrzańska").
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 67
+overeniNocleh:
+  source: >-
+    67 lůžek uvádějí shodně vlastní web (čteno 9. 8. 2026, „W schronisku
+    jest 13 pokoi – 2, 4, 7, 8, 10 osobowych. Mieści się w nich 67 miejsc
+    noclegowych."), město Zakopane, portalgorski.pl, natatry.pl
+    i korona-gor-polski.pl. Bez rozporu v počtu.
+    ROZPOR JE JEN V ČLENĚNÍ: 13 pokojů (vlastní web, korona-gor-polski.pl)
+    × 12 pokojů (portalgorski.pl). Do dat jde jen počet lůžek.
+    Vlastní web dále: deky jsou v ceně („W cenie noclegu wypożyczamy koce."),
+    povlečení 30 zł, polštář 10 zł; společná místnost na matracích je v zimě
+    mimo provoz; ubytovací doba „od godziny 14:00 do godziny 10:00", noční
+    klid „od godziny 22:00 do godziny 6:00"; „Dla tych, którzy chcą wyjść
+    w góry z lekkim plecakiem mamy bezpłatną przechowalnię bagażu."
+    Rezervace se otevírají po sezónách až rok a půl dopředu.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026): „W schronisku znajduje się kuchnia
+    oferująca całodzienne wyżywienie oraz bufet z zimnymi napojami, piwem
+    i słodyczami." a „Jest też duża, ale bardzo przytulna sala jadalna. Tu
+    można zjeść dania oferowane przez naszą kuchnię, jak i własny,
+    przyniesiony w plecaku, prowiant."
+    TŘI FORMULACE, KTERÉ JSOU K OBSLUZE NEUBYTOVANÝCH BLÍŽ NEŽ COKOLI
+    V SLOVENSKÉ ČÁSTI KORPUSU, i když ani jedna není přímá věta: (1) „Dla
+    Turystów, którzy są zaopatrzeni we własny prowiant oraz sprzęt do
+    gotowania, mamy kuchnię turystyczną, z której mogą korzystać."; (2)
+    „Wrzątek pobierać można całą dobę, jest bezpłatny."; (3) ceník rozlišuje
+    „Bufet wewnętrzny" a „Bufet zewnętrzny" s grilovanými pokrmy — venkovní
+    bufet u chaty se šedesáti sedmi lůžky dává smysl jen s průchozími.
+    Ústředí PTTK to shrnuje jako „Gastronomia: kuchnia dla turystów,
+    jadalnia, bufet" a „kuchnia turystyczna z dostępem wrzątku 24/24".
+    Provoz kuchyně podle vlastního webu „8.00 – 21.00 przerwy: 10.00 – 10.30,
+    19.00 – 19.30"; natatry.pl uvádí přestávku 10–11.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: kuchyně 8.00–21.00 s přestávkami 10.00–10.30 a 19.00–19.30
+overeniProvoz:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026): „schronisko jest czynne przez cały rok";
+    shodně ústředí PTTK.
+    „OTEVŘENO ≠ DOSTUPNÉ" JE TU DOLOŽENÉ TVRDĚJI NEŽ JINDE, a to hned dvakrát.
+    Za prvé sem nevede silnice: vlastní web to označuje za jedinečnost —
+    chata je „jedynym w polskich Tatrach, do którego nie można dojechać
+    samochodem". Za druhé je celý Tatrzański park narodowy režimový:
+    nocování mimo schroniska je zakázané („Noclegi poza schroniskami w TPN są
+    nadal zakazane", najednejlinie.pl, s pokutami 50 až 500 zł), od dubna do
+    30. listopadu platí zákaz pobytu v parku od soumraku do svítání a vstup
+    je zpoplatněn (tpn.gov.pl: normální 11 zł, zlevněné 5,50 zł). Kdo sem
+    dojde pozdě a nemá rezervaci, nemá zákonnou možnost zůstat.
+    Rezervace se podle vlastního webu otevírají po sezónách; „Na sezon letni
+    warto rezerwować miejsca ze sporym wyprzedzeniem."
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+48781055555'
+  email: schronisko@piecstawow.pl
+  web: https://piecstawow.pl/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1954
+overeniHistorie:
+  source: >-
+    ROK 1954 JE ROKEM DOKONČENÍ DNEŠNÍ, PÁTÉ BUDOVY V DOLINĚ — celá řada je
+    v milnících. PDF W. Łoboze pro PTTK Nowy Sącz (čteno 9. 8. 2026):
+    „W 1954 roku ukończono budowę obecnego, piątego już z kolej schroniska
+    w Dolinie Pięciu Stawów."; historykon.pl doplňuje, že je to první chata
+    doliny, která nestojí u Malého Stawu.
+    ROZPOR MEZI DOKONČENÍM A OTEVŘENÍM, přiznaný: korona-gor-polski.pl
+    („Obecne schronisko zostało otwarte w 1956 roku."), portaltatrzanski.pl
+    a klubpodroznikow.com (březen 1956) kladou otevření o dva roky později;
+    město Zakopane datuje stavbu odchylně „w latach 1947–1953". Zapsán je
+    rok dokončení stavby, doložený PTTK.
+    PROJEKTANT — JMÉNO SE V PRAMENECH KOMOLÍ a do dat proto nešlo: vlastní
+    web uvádí vedoucího týmu jako „Jan Chmielowski", klubpodroznikow.com jako
+    „Jan »Olaf« Chmielski", i-tatry.pl jako „Jan Chmielewski". Spoluautoři se
+    shodují: Anna Górska, Gerard Ciołek, Jędrzej Czarniak, Jerzy Mokrzyński.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1876
+    udalost: >-
+      Towarzystwo Tatrzańskie postavilo nad Malým Stawem první chatu doliny,
+      jednoprostorový domek z žulových bloků, pojmenovaný po geologovi
+      Ludwiku Zejsznerovi.
+    zdroj: >-
+      historykon.pl (čteno 9. 8. 2026) — „Pierwsze schronisko w Dolinie
+      Pięciu Stawów powstało w 1876 roku i nosiło imię Ludwika Zejsznera,
+      polskiego geologa"; vlastní web — „niewielki, jednoizbowy budynek
+      z bloków granitowych".
+  - rok: 1898
+    udalost: >-
+      Druhou, dřevěnou chatu sem přenesli z Czerwonych Brzeżków. Jeden pramen
+      klade tuhle etapu do roku 1896.
+    zdroj: >-
+      PDF W. Łoboze pro PTTK Nowy Sącz (čteno 9. 8. 2026) — „W 1898
+      przeniesiono drugie, drewniane schronisko z Czerwonych Brzeżków.";
+      odchylku 1896 uvádí i-tatry.pl.
+  - rok: 1932
+    udalost: >-
+      Třetí chata podle projektu Karola Stryjeńského, ředitele zakopanské
+      Školy dřevozpracujícího průmyslu, byla 18. září otevřena; první turisty
+      přijímala už od roku 1928.
+    zdroj: >-
+      magazyngory.pl (čteno 9. 8. 2026) — otevření „18 września 1932 roku";
+      „W końcu konstrukcję zadaszono i od 1928 roku przyjmowano pierwszych
+      turystów i narciarzy."; historykon.pl ke Stryjeńskému.
+  - rok: 1945
+    udalost: >-
+      Třetí chata v květnu za nevyjasněných okolností vyhořela.
+    zdroj: >-
+      historykon.pl (čteno 9. 8. 2026) — „W maju 1945 roku budynek spłonął
+      w niewyjaśnionych okolicznościach"; shodně magazyngory.pl.
+  - rok: 1947
+    udalost: >-
+      Nad Malým Stawem postavili malou dřevěnou chatu — podle pramene první
+      chatu v Tatrách obnovenou po válce. Stojí dodnes a slouží jako
+      strážnice Tatrzańského parku narodowého.
+    zdroj: >-
+      PDF W. Łoboze pro PTTK Nowy Sącz (čteno 9. 8. 2026) — „Było to pierwsze
+      w Tatrach odbudowane po wojnie schronisko."; portaltatrzanski.pl —
+      „dziś służący jako strażniczówka TPN."
+  - rok: 1954
+    udalost: >-
+      Dokončena dnešní, pátá chata doliny — první, která nestojí u Malého
+      Stawu, ale na severním břehu Przedního Stawu. Prameny kladou otevření
+      až do roku 1956.
+    zdroj: >-
+      PDF W. Łoboze pro PTTK Nowy Sącz a historykon.pl (čteno 9. 8. 2026);
+      otevření 1956 uvádí korona-gor-polski.pl a klubpodroznikow.com.
+  - rok: 1968
+    udalost: >-
+      Zásobování na posledním úseku z Doliny Roztoki převzala nákladní
+      lanovka; předtím ho nosili koně na hřbetě.
+    zdroj: >-
+      rmf24.pl (čteno 9. 8. 2026) — „od 1968, na ostatnim odcinku z Doliny
+      Roztoki, towar dowożony jest specjalną kolejka linową"; „Wcześniej tę
+      trasę musiały pokonywać konie z towarem na grzbiecie".
+  - rok: 2012
+    udalost: >-
+      Skončila termomodernizace budovy zahájená roku 2009; ve stejné době
+      přibyla malá vodní elektrárna a čistírna odpadních vod.
+    zdroj: >-
+      portaltatrzanski.pl (čteno 9. 8. 2026) — „W latach 2009-2012 budynek
+      przeszedł termomodernizację."; vlastní web datuje elektrárnu
+      a čistírnu BIOVAC do let 2009–2010.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Provozovatel označuje chatu za nejvýše položené schronisko v Polsku;
+      na titulní straně přitom volí opatrnější formulaci omezenou na polské
+      Tatry.
+    kategorie: vyska
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — podstránka „Warto wiedzieć":
+      „najwyżej położone schronisko w Polsce (1670 m n.p.m.)"; titulní
+      strana: „Najwyżej położone schronisko turystyczne w Polskich Tatrach".
+  - text: >-
+      Podle vlastního webu je to jediné schronisko v polských Tatrách, ke
+      kterému nevede sjízdná silnice.
+    kategorie: jine
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „jedynym w polskich Tatrach, do
+      którego nie można dojechać samochodem"; i-tatry.pl — „jedyne w Polsce
+      schronisko, do którego nie prowadzi przejezdna dla samochodów droga".
+  - text: >-
+      Chata běží na vlastní vodní elektrárně poháněné vodou svedenou
+      z Wielkého Stawu do Doliny Roztoki; podle chatařky je veškerá energie
+      v chatě „zelená".
+    kategorie: jine
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026); rmf24.pl cituje Marychnu Krzeptowskou —
+      „Cała energia, którą mamy w schronisku jest zieloną energią, produkowaną
+      przez naszą elektrownie wodną".
+  - text: >-
+      Od roku 2019 se nápoje vydávají do vratných kelímků nebo přímo do
+      vlastních nádob hostů a odpad se lisuje a balí kvůli odvozu.
+    kategorie: jine
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „wielorazowe, kaucjonowane kubki",
+      nápoje „z dystrybutorów prosto do Waszych naczyń", „prasujemy
+      i pakujemy śmieci tak, żeby łatwo było je przetransportować do punktu
+      zbiórki odpadów."
+  - text: >-
+      Chatu drží rodina Krzeptowských: Maria a Andrzej Krzeptowští ji vedli
+      už u třetí budovy od roku 1931, dnes ji vedou jejich potomci.
+    kategorie: jine
+    zdroj: >-
+      magazyngory.pl (čteno 9. 8. 2026); vlastní web zmiňuje i dlouholetý
+      personál — pracovníka „Mietek od 1967 roku".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenno-dřevěná chata z roku 1954 na břehu Przedního Stawu, pátá v řadě
+  staveb, které v dolině stojí od roku 1876. Provozovatel ji uvádí jako
+  nejvýše položené schronisko v Polsku a jediné v polských Tatrách, ke
+  kterému nevede sjízdná silnice. Běží na vlastní vodní elektrárně.
+text:
+  - >-
+    Schronisko PTTK w Dolinie Pięciu Stawów Polskich stojí ve 1670 metrech na
+    severním břehu Przedního Stawu. Provozovatel ho na jedné stránce označuje
+    za „najwyżej położone schronisko w Polsce" a na titulní straně opatrněji
+    za nejvýše položené turistické schronisko v polských Tatrách — obě
+    formulace stojí vedle sebe na témž webu. Na výšce se prameny neshodnou:
+    1670, 1671, nebo 1672 metrů; zapsané je nejnižší číslo.
+  - >-
+    Dnešní budova je pátá v řadě. První postavilo Towarzystwo Tatrzańskie
+    roku 1876 nad Malým Stawem — jednoprostorový domek z žulových bloků
+    pojmenovaný po geologovi Ludwiku Zejsznerovi. Druhou, dřevěnou, sem roku
+    1898 přenesli z Czerwonych Brzeżków. Třetí navrhl Karol Stryjeński,
+    ředitel zakopanské Školy dřevozpracujícího průmyslu; první turisty
+    přijímala od roku 1928, slavnostně se otevřela 18. září 1932 a v květnu
+    1945 za nevyjasněných okolností vyhořela. Čtvrtá, malá dřevěná z roku
+    1947, byla podle pramene první chatou v Tatrách obnovenou po válce
+    a stojí dodnes — jako strážnice národního parku.
+  - >-
+    Pátou, dnešní, dokončili roku 1954; prameny kladou otevření až do března
+    1956. Je to první chata doliny, která nestojí u Malého Stawu. Jméno
+    hlavního projektanta se v pramenech komolí do tří podob — Chmielowski,
+    Chmielski, Chmielewski —, a proto ho tu neuvádíme; tým tvořili Anna
+    Górska, Gerard Ciołek, Jędrzej Czarniak a Jerzy Mokrzyński.
+  - >-
+    Technicky je to pozoruhodný provoz. Elektřinu dodává vlastní vodní
+    elektrárna, poháněná vodou svedenou potrubím z Wielkého Stawu do Doliny
+    Roztoki; chatařka Marychna Krzeptowska pro rozhlas říká, že veškerá
+    energie v chatě je zelená. Odpadní vodu čistí čistírna BIOVAC z let
+    2009 až 2010, od roku 2019 se nápoje vydávají do vratných kelímků nebo
+    přímo do vlastních nádob a odpad se lisuje kvůli odvozu. Zásobování
+    obstarává od roku 1968 nákladní lanovka z Doliny Roztoki — předtím ho
+    nosili koně na hřbetě.
+  - >-
+    Spí se tu v šedesáti sedmi lůžkách v pokojích od dvou do deseti lidí,
+    deky jsou v ceně a povlečení se připlácí. Kuchyně vaří od osmi ráno do
+    devíti večer se dvěma přestávkami, k tomu je tu bufet vnitřní i venkovní
+    s grilovanými pokrmy. A tady je doklad o obsluze kolemjdoucích silnější
+    než u slovenských chat, i když pořád ne přímý: chata má turistickou
+    kuchyňku „dla Turystów, którzy są zaopatrzeni we własny prowiant",
+    vroucí voda je zdarma čtyřiadvacet hodin denně a v jídelně se smí jíst
+    i vlastní jídlo z batohu.
+  - >-
+    Autem se sem nedostanete a chata to sama uvádí jako svou zvláštnost.
+    Chodí se sem z Palenice Białczańské asi tři hodiny, od chaty v Dolině
+    Roztoki dvě a půl a od Morského Oka přes Świstówku Roztockou zhruba dvě.
+    Celý Tatrzański park narodowy je přitom režimový: vstup se platí,
+    nocování mimo schroniska je zakázané pod pokutou padesáti až pěti set
+    zlotých a od dubna do konce listopadu platí zákaz pobytu v parku od
+    soumraku do svítání. „Otevřeno" tu tedy neznamená jen provozní dobu —
+    znamená, že kdo nemá rezervaci a přijde pozdě, nemá kde zůstat.
+  - >-
+    Údaje nese vlastní web chaty, ústředí PTTK, PDF W. Łoboze pro PTTK Nowy
+    Sącz, historykon.pl, magazyngory.pl, portaltatrzanski.pl,
+    portalgorski.pl, korona-gor-polski.pl, rmf24.pl, tpn.gov.pl
+    a najednejlinie.pl; polohu OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty, „Warto wiedzieć" — výška 1670 m, nejvýše položené
+      schronisko v Polsku, celoroční provoz, nedostupnost autem
+      (načteno 9. 8. 2026)
+    url: https://piecstawow.pl/schronisko/warto-wiedziec/
+  - popis: >-
+      Vlastní web chaty, historie — posloupnost pěti budov 1876, 1898, 1932,
+      1947, 1954, Stryjeński, Krzeptowští, čistírna BIOVAC 2009–2010
+      (načteno 9. 8. 2026)
+    url: https://piecstawow.pl/schronisko/historia-2/
+  - popis: >-
+      Vlastní web chaty, noclehy — 13 pokojů a 67 lůžek, deky v ceně, doba
+      ubytování, bezplatná úschovna zavazadel (načteno 9. 8. 2026)
+    url: https://piecstawow.pl/oferta/noclegi/
+  - popis: >-
+      Vlastní web chaty, stravování — kuchyně a bufet, turistická kuchyňka
+      pro vlastní proviant, vroucí voda zdarma, provoz 8.00–21.00
+      (načteno 9. 8. 2026)
+    url: https://piecstawow.pl/oferta/wyzywienie/
+  - popis: >-
+      Vlastní web chaty, ekologie — vodní elektrárna z Wielkého Stawu,
+      čistírna, vratné kelímky od 2019, lisování odpadu (načteno 9. 8. 2026)
+    url: https://piecstawow.pl/ekologia/nasze-rozwiazania/
+  - popis: >-
+      Ústředí PTTK — výška 1672 m (odchylka), správce Schroniska i Hotele
+      PTTK „Karpaty" Sp. z o.o. Nowy Sącz, gastronomie, celoroční provoz
+      (načteno 9. 8. 2026)
+    url: https://pttk.pl/accommodations/schronisko-piec-stawow-polskich/
+  - popis: >-
+      W. Łoboz pro PTTK Nowy Sącz (PDF) — kamenný útulek 1876, přenesení
+      z Czerwonych Brzeżków 1898, třetí chata 1924–1926, 1947 jako první
+      poválečná v Tatrách, dokončení 1954 (načteno 9. 8. 2026)
+    url: https://old.pttns.pl/biblioteka/schronisko5stawow.pdf
+  - popis: >-
+      historykon.pl — pět budov, Ludwik Zejszner 1876, Karol Stryjeński,
+      požár v květnu 1945, strážnice TPN (načteno 9. 8. 2026)
+    url: https://historykon.pl/krotka-historia-tatrzanskich-schronisk-1-schronisko-pttk-w-dolinie-pieciu-stawow-polskich/
+  - popis: >-
+      magazyngory.pl — otevření třetí chaty 18. 9. 1932, provoz od 1928,
+      modernizace 1935–1937, Krzeptowští od 1931 (načteno 9. 8. 2026)
+    url: https://magazyngory.pl/schronisko-ptt-w-dolinie-pieciu-stawow-polskich/
+  - popis: >-
+      portaltatrzanski.pl — otevření 1956, termomodernizace 2009–2012,
+      biologická čistírna, lavinové cvičiště (načteno 9. 8. 2026)
+    url: https://portaltatrzanski.pl/przewodnik/schroniska/schronisko-w-dolinie-pieciu-stawow,57
+  - popis: >-
+      rmf24.pl — nákladní lanovka od 1968, dříve koně, výrok chatařky
+      Marychny Krzeptowské o zelené energii, evakuace vrtulníkem TOPR při
+      lavinovém nebezpečí (načteno 9. 8. 2026)
+    url: https://www.rmf24.pl/fakty/polska/news-miejsce-do-ktorego-nie-mozna-dojechac-schronisko-w-dolinie-p,nId,3151924
+  - popis: >-
+      tpn.gov.pl — ceník vstupu do Tatrzańského parku narodowého
+      (načteno 9. 8. 2026)
+    url: https://tpn.gov.pl/wstep-do-parku
+  - popis: >-
+      najednejlinie.pl — zákaz nocování mimo schroniska v TPN, pokuty 50 až
+      500 zł, legální bivakovací mýtiny pro horolezce (načteno 9. 8. 2026)
+    url: https://najednejlinie.pl/en/poradnik/spanie-na-dziko-na-terenie-tpn/
+  - popis: >-
+      korona-gor-polski.pl — 1671 m, 13 pokojů a 67 lůžek, otevření 1956,
+      časy z Palenice, Roztoky a Morského Oka (načteno 9. 8. 2026)
+    url: https://korona-gor-polski.pl/schronisko/schronisko-pttk-w-dolinie-pieciu-stawow-polskich/
+  - popis: >-
+      portalgorski.pl — výška 1671 m, 12 pokojů (odchylka od vlastního webu),
+      datace třetí chaty 1924–1931–1933, půjčovny (načteno 9. 8. 2026)
+    url: https://www.portalgorski.pl/turystyka-gorska/schronienie-w-gorach/2311-schronisko-pttk-w-dolinie-pieciu-stawow-polskich
+  - popis: >-
+      OpenStreetMap (GPS, ODbL)
+    url: https://www.openstreetmap.org/way/250746663
+interniPoznamky: >-
+  Povýšeno z
+  data/kandidati/vysoke-tatry/schronisko-pttk-w-dolinie-pieciu-stawow-polskich.yaml
+  (9. 8. 2026).
+
+  SUPERLATIV JE ZAPSANÝ S ATRIBUCÍ A S ROZDÍLEM, KTERÝ DĚLÁ SÁM PROVOZOVATEL.
+  Na podstránce „Warto wiedzieć" stojí „najwyżej położone schronisko
+  w Polsce", na titulní straně „Najwyżej położone schronisko turystyczne
+  w Polskich Tatrach". Užší verze je bezpečnější a širší se nedá ověřit bez
+  srovnání s Karkonoszemi a Bieszczady, takže do zajímavostí šly obě a próza
+  je připisuje provozovateli.
+
+  POLSKÉ CHATY MAJÍ LEPŠÍ DOKLAD O NEUBYTOVANÝCH NEŽ SLOVENSKÉ, a tenhle
+  profil to potvrzuje potřetí. Přímá věta chybí i tady, ale turistická
+  kuchyňka „dla Turystów, którzy są zaopatrzeni we własny prowiant",
+  nepřetržitá vroucí voda zdarma, povolení jíst v jídelně vlastní proviant
+  a venkovní bufet jsou dohromady doklad jiného řádu než mlčení slovenských
+  webů. Stálo by za to při telefonátu DATA-04 zeptat se i tady — nebo naopak
+  uznat, že u polských chat PTTK je to standard, který se nepíše.
+
+  PROJEKTANT DO DAT NEŠEL, protože jeho jméno se ve třech pramenech objevuje
+  ve třech podobách: Jan Chmielowski (vlastní web), Jan „Olaf" Chmielski
+  (klubpodroznikow.com), Jan Chmielewski (i-tatry.pl). Nejpravděpodobnější je
+  varšavský urbanista Jan Olaf Chmielewski, ale opravovat vlastní web chaty
+  bez pramene by bylo domýšlení.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: výška (1670 × 1671 × 1672); počet
+  pokojů (12 × 13); rok druhé chaty (1896 × 1898); dokončení proti otevření
+  dnešní budovy (1954 × 1956, Zakopane navíc 1947–1953); patrocinium
+  „im. Leopolda Świerza", které uvádějí město Zakopane a i-tatry.pl, ale
+  vlastní web ne — možná se váže ke třetí budově z roku 1932.
+
+  LAVINA: doložená je evakuace, ne zničení. rmf24.pl popisuje, jak museli
+  záchranáři TOPR kvůli lavinovému nebezpečí evakuovat všechny turisty
+  vrtulníkem; rok se z pramene nepodařilo zafixovat a do milníků to proto
+  nešlo. Že by některá z pěti budov padla lavině, neuvádí nikdo.
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: formální rozlišení vlastníka
+  a nájemce (doložen jen správce, PTTK „Karpaty" Sp. z o.o.); konkrétní
+  jména odbojářů, o nichž portaltatrzanski.pl mluví obecně; případná
+  technická přestávka v provozu. Polskou Wikipedii se rešerši nepodařilo
+  načíst. Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

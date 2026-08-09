@@ -1,0 +1,404 @@
+# Schronisko PTTK nad Morskim Okiem — třináctý publikovaný profil oblasti
+# Vysoké Tatry a první polský (9. 8. 2026), povýšen z kandidáta DATA-01.
+# SLOUČENY DVA KANDIDÁTI: Nowe Schronisko a Stare Schronisko (Wozownia),
+# 74 m od sebe — dvě budovy, ale jeden provoz, jeden web a jeden ceník.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Schronisko PTTK nad Morskim Okiem
+slug: schronisko-pttk-morskie-oko
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Morskie Oko
+    poznamka: alternativní název (OSM alt_name)
+  - nazev: Schronisko im. Stanisława Staszica
+    poznamka: oficiální jméno po Stanisławu Staszicovi
+  - nazev: Stare Schronisko PTTK Morskie Oko
+    poznamka: >-
+      starší z obou budov, zvaná Wozownia; slouží jako noclehárna téhož
+      provozu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.2014275
+lng: 20.0712602
+vyska: 1410
+obec: Zakopane
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/300719423 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA — ČTYŘI HODNOTY V PRAMENECH, zapsaná je provozovatelova: vlastní
+    web (čteno 9. 8. 2026) „Schronisko PTTK Morskie Oko, 1410 m.n.p.m.",
+    shodně skitourowezakopane.pl a schroniskaturystyczne.pl. PTTK Małopolska
+    uvádí pro budovu z roku 1908 „na wysokości 1406 m n.p.m." a v hlavičce
+    1402 m; natatry.pl 1405 m. Tady se konvence o nižším čísle nepoužila,
+    protože rozdíl mezi 1402 a 1410 metry není spor o tutéž věc — prameny
+    měří hladinu jezera, práh budovy a různé body břehu.
+    Poloha: severní břeh jezera Morskie Oko, které tpn.gov.pl uvádí jako
+    „największego stawu w Tatrach (34,5 ha)". Obec podle poštovní adresy
+    provozovatele („skrytka pocztowa 201, 34-500 Zakopane").
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 78
+overeniNocleh:
+  source: >-
+    ZAPSANÝ JE SOUČET OBOU BUDOV, PROTOŽE JE TO JEDEN PROVOZ. Vlastní web
+    (čteno 9. 8. 2026): „Schronisko dysponuje 36 miejscami noclegowymi dla
+    turystów." pro Nowe Schronisko a „Wozownia dysponuje 43 miejscami
+    noclegowymi w standardzie turystycznym w trzech wieloosobowych salach."
+    ROZPOR, přiznaný: PTTK Małopolska i historykon.pl uvádějí u Nového
+    schroniska 35 lůžek, takže součet je 78 (natatry.pl) místo 79
+    (portaltatrzanski.pl, whitemad.pl, schroniskaturystyczne.pl). Zapsáno
+    nižší číslo (konvence 27. 7. 2026).
+    Skladba Nového schroniska podle vlastního webu: tři třílůžkové, jeden
+    čtyřlůžkový, jeden pětilůžkový a tři šestilůžkové pokoje; „Wszystkie
+    łóżka w Nowy Schronisku z pościelą." Ve Wozowni jsou tři velké sály
+    s patrovými postelemi a pryčnami. Ceny 2026: 120 až 140 zł podle sezóny,
+    Wozownia 90 zł, k tomu „opłata klimatyczna 2,50 zł za każdą dobę".
+    Rezervace: „Rezerwacji należy dokonywać nawet na rok przed planowanym
+    przyjazdem".
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026): „W budynku Nowego Schroniska kuchnia
+    czynna w sezonie (lipiec, sierpień) od godziny 7:00 do 21:00, poza
+    sezonem od 9:00 do 18:00." a „Sklepik »Bufet« w sezonie od godziny 8:00
+    do 19:00, poza sezonem od 9:00 do 18:00." V bufetu jsou „słodycze,
+    podstawowe elementy wyposażenia turystycznego, literatura, pamiątki".
+    Platí se jen hotově: „Brak możliwości płacenia kartą."
+    VÝSLOVNÁ VĚTA O NEUBYTOVANÝCH CHYBÍ, ale polské prameny nabízejí formulaci,
+    která je jinde v korpusu k nemání: „Wrzątek dla turystów bezpłatny do
+    naczyń własnych podawany poza kolejnością." Rozlišuje turisty od hostů
+    a dává jim přednost ve frontě — to u zařízení jen pro ubytované nedává
+    smysl. Sortiment bufetu (mapy, turistická literatura, suvenýry) míří na
+    kolemjdoucí taky. Za doklad to ale nevydáváme.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: >-
+  kuchyně v červenci a srpnu 7.00–21.00, mimo sezónu 9.00–18.00; bufet
+  v sezóně 8.00–19.00, mimo sezónu 9.00–18.00; recepce 9.00–21.00
+overeniProvoz:
+  source: >-
+    Celoroční provoz uvádějí schroniskaturystyczne.pl („Funkcjonuje
+    całorocznie") a skitourowezakopane.pl („Schronisko funkcjonuje przez cały
+    rok"); nepřímo ho dokládá ceník vlastního webu, který pokrývá celý rok
+    (čteno 9. 8. 2026). Hodiny nese vlastní web. „Sezon" definuje sám
+    provozovatel jako červenec a srpen. Noční klid „od 22:00 do 6:00".
+    „OTEVŘENO ≠ DOSTUPNÉ" MÁ TADY PODOBU DAVU A REŽIMU PARKU, ne uzávěry:
+    vstup do Tatrzańského parku narodowého je zpoplatněn (tpn.gov.pl, čteno
+    9. 8. 2026: normální 11 zł, zlevněné 5,50 zł), silnice od Palenice
+    Białczańské je od roku 1998 uzavřená cyklistům („Odcinek od Palenicy do
+    Morskiego Oka został zamknięty dla rowerów w 1998 roku ze względu na
+    kolizje z pieszymi") a 3. srpna 2021 sem podle gazetakrakowska.pl vyšlo
+    přes patnáct tisíc lidí za jediný den.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+48182077609'
+  web: https://schroniskomorskieoko.pl/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1908
+overeniHistorie:
+  source: >-
+    ROK 1908 JE ROKEM DNEŠNÍ HLAVNÍ BUDOVY, ne první stavby u jezera — ta je
+    v milnících a sahá až do 17. století. Vlastní web (čteno 9. 8. 2026):
+    „Prace przy kolejnym schronisku rozpoczęto w 1907 roku. […] Nowe
+    schronisko zostało oddane do użytku w 1908 roku i służy ono do dnia
+    dzisiejszego."; PTTK Małopolska: „Uroczyste otwarcie schroniska nastąpiło
+    15 sierpnia 1908 r. z udziałem wielu znamienitych gości m.in. Mieczysława
+    Karłowicza, Jana Kasprowicza, Władysława Reymonta, Leopolda Staffa."
+    PROJEKTANT: „skromny projekt Wandalina Beringera" (PTTK Małopolska).
+    OSAMOCENÉ TVRZENÍ, nezapsané: whitemad.pl uvádí, že budově „Nadano mu
+    styl zakopiański, którego twórcą jest Stanisław Witkiewicz" — to je
+    v napětí s formulací PTTK o Beringerově projektu a nikdo jiný to
+    nepotvrzuje.
+    ROZPOR VE JMÉNU ZAKLADATELE PRVNÍ CHATY (1827), nesrovnaný: PTTK
+    Małopolska i whitemad.pl uvádějí Emanuela Homolacse, historykon.pl
+    Edmunda Homolacse.
+    ROZPOR V ROCE POJMENOVÁNÍ po Stanisławu Staszicovi: historykon.pl klade
+    jméno už k otevření roku 1874 a uvádí, že ho navrhl Leopold Świerz;
+    whitemad.pl uvádí „16 września 1875 r."
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1827
+    udalost: >-
+      Majitel pozemků Homolacs postavil nad Morskim Okiem první chatu; podle
+      pramene měla „izby noclegową, kuchnię, niewielką sień i strych".
+      Prameny se rozcházejí v jeho křestním jménu.
+    zdroj: >-
+      PTTK Małopolska (čteno 9. 8. 2026) — „Pierwsze schronisko wybudował
+      Emanuel Homolacs w 1827 r."; historykon.pl uvádí Edmunda Homolacse
+      a popis vybavení. Ještě starší stavbu zmiňuje PTTK Małopolska:
+      „Pierwszy budynek przeznaczony do nocowania powstał nad […] Okiem już
+      w XVII w. Był to mały kamienny szałas".
+  - rok: 1865
+    udalost: >-
+      První chata za nevyjasněných okolností vyhořela.
+    zdroj: >-
+      PTTK Małopolska (čteno 9. 8. 2026) — „Przetrwało do 1865 r., kiedy
+      w niewyjaśnionych okolicznościach spłonęło."
+  - rok: 1874
+    udalost: >-
+      Towarzystwo Tatrzańskie otevřelo 3. srpna novou chatu, obrácenou
+      průčelím k jezeru. Dostala jméno po Stanisławu Staszicovi.
+    zdroj: >-
+      historykon.pl (čteno 9. 8. 2026) — „dopiero w 3 sierpnia 1874 roku
+      otwarto nowe schronisko nad Morskim Okiem. Inicjatorem budowy było
+      istniejące już wówczas Towarzystwo Tatrzańskie"; vlastní web —
+      „staraniem Towarzystwa Tatrzańskiego wybudowano niewielki obiekt
+      zwrócony frontem do jeziora."
+  - rok: 1891
+    udalost: >-
+      Vedle chaty postavilo Towarzystwo Tatrzańskie druhou budovu, původně
+      vozovnu. Ta stojí dodnes jako Stare Schronisko.
+    zdroj: >-
+      historykon.pl (čteno 9. 8. 2026) — „w 1891 roku dostawiono obok niego
+      drugi budynek, który wówczas miał służyć za wozownię."; PTTK Małopolska
+      datuje stavbu do let 1890–1891.
+  - rok: 1898
+    udalost: >-
+      Hlavní budova v noci z 1. na 2. října vyhořela; dalších deset let
+      sloužila jako chata vozovna.
+    zdroj: >-
+      historykon.pl (čteno 9. 8. 2026) — „w nocy z 1 na 2 października 1898
+      roku, kiedy to budynek spłonął."; vlastní web — „W międzyczasie jako
+      schronisko służyła wozownia (dzisiejsze Stare Schronisko)."
+  - rok: 1902
+    udalost: >-
+      Rozhodčí soud v Grazu 13. září ukončil spor Haliče a Uher o Morskie
+      Oko; Haliči přiřkl 351 hektarů. Polskou stranu hájil profesor Oswald
+      Balzer, po němž se jmenuje silnice k jezeru.
+    zdroj: >-
+      dzieje.pl (čteno 9. 8. 2026) — rozsudek 13. 9. 1902, předseda soudu
+      Johann Winckler; „Obrońcą ze strony polskiej był profesor Oswald
+      Balzer"; tpn.gov.pl — „»Drogę Oswalda Balzera« - trasę z Zakopanego
+      przez Jaszczurówkę do Morskiego Oka, ukończoną w 1902 roku."
+  - rok: 1908
+    udalost: >-
+      Nová hlavní budova podle projektu Wandalina Beringera byla 15. srpna
+      otevřena za účasti Mieczysława Karłowicze, Jana Kasprowicze, Władysława
+      Reymonta a Leopolda Staffa.
+    zdroj: >-
+      PTTK Małopolska (čteno 9. 8. 2026).
+  - rok: 1976
+    udalost: >-
+      Budova byla zapsána mezi památky.
+    zdroj: >-
+      whitemad.pl (čteno 9. 8. 2026) — „Budynek został w 1976 roku uznany za
+      zabytkowy".
+  - rok: 1992
+    udalost: >-
+      Skončila generální rekonstrukce zahájená roku 1988.
+    zdroj: >-
+      historykon.pl (čteno 9. 8. 2026) — „dopiero w latach 1988-1992
+      przeprowadzono w nim generalny remont".
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Provozovatel označuje Wozownii, tedy Stare Schronisko, za nejstarší
+      dochovanou chatu polských Tater.
+    kategorie: stari
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „Wozownia to obecnie najstarsze
+      istniejące schronisko w Tatrach Polskich, położone jest opodal Nowego
+      Schroniska i pełni funkcje noclegowni."
+  - text: >-
+      Chatu vede od roku 1945 jedna rodina: Wanda a Czesław Łapińští do roku
+      1980, pak jejich syn Wojciech, a po jeho předčasné smrti jeho žena
+      Maria s dcerou a synem.
+    kategorie: jine
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „W latach 1945-1980 schronisko
+      prowadzone było przez Wandę i Czesława Łapińskich."
+  - text: >-
+      3. srpna 2021 vyšlo podle deníku na trasu k Morskému Oku přes patnáct
+      tisíc turistů za jediný den; ředitel Tatrzańského parku to označil za
+      rekord.
+    kategorie: jine
+    zdroj: >-
+      gazetakrakowska.pl (čteno 9. 8. 2026) — výrok ředitele TPN Szymona
+      Ziobrowského: „To rekord. Nigdy wcześniej takich tłumów na tym szlaku
+      nie było".
+  - text: >-
+      Silnice k jezeru je od roku 1998 uzavřená cyklistům kvůli kolizím
+      s pěšími; koňské povozy končí na polaně Włosienica.
+    kategorie: jine
+    zdroj: >-
+      tpn.gov.pl (čteno 9. 8. 2026) — „Odcinek od Palenicy do Morskiego Oka
+      został zamknięty dla rowerów w 1998 roku ze względu na kolizje
+      z pieszymi."; „Postój wozów konnych znajduje się na Palenicy
+      Białczańskiej."
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěná chata z roku 1908 na břehu největšího tatranského jezera, kterou
+  po dvou požárech postavilo Towarzystwo Tatrzańskie podle projektu Wandalina
+  Beringera. Vedle ní stojí Wozownia z roku 1891, podle provozovatele
+  nejstarší dochovaná chata polských Tater. Od roku 1945 ji vede jedna rodina.
+text:
+  - >-
+    Schronisko PTTK nad Morskim Okiem stojí ve 1410 metrech na severním břehu
+    jezera, jehož rozlohu uvádí Tatrzański park narodowy jako 34,5 hektaru.
+    Je to první polský objekt tohohle průvodce.
+  - >-
+    Historie začíná v 17. století, kdy pod morénou stál malý kamenný šalaš.
+    První skutečnou chatu tu postavil roku 1827 majitel pozemků Homolacs —
+    prameny se neshodnou, jestli Emanuel, nebo Edmund. Roku 1865 shořela.
+    Towarzystwo Tatrzańskie otevřelo novou 3. srpna 1874 a dalo jí jméno po
+    Stanisławu Staszicovi; roku 1891 k ní přistavělo druhou budovu, původně
+    vozovnu. V noci z 1. na 2. října 1898 hlavní budova shořela taky a chatou
+    se na deset let stala právě vozovna.
+  - >-
+    Dnešní dřevěná budova na kamenné podezdívce je z roku 1908, projektoval
+    ji Wandalin Beringer a otevřeli ji 15. srpna za účasti Mieczysława
+    Karłowicze, Jana Kasprowicze, Władysława Reymonta a Leopolda Staffa —
+    tedy skladatele a tří literátů, z nichž dva měli Nobelovu cenu, respektive
+    na ni byli navrženi. Roku 1976 se budova stala památkou, v letech 1988 až
+    1992 prošla generální rekonstrukcí.
+  - >-
+    Vozovna stojí dodnes sedmdesát čtyři metrů od hlavní budovy a slouží jako
+    noclehárna téhož provozu; provozovatel ji označuje za nejstarší
+    dochovanou chatu polských Tater. Spí se v ní ve třech velkých sálech,
+    v hlavní budově v pokojích od tří do šesti lůžek. Dohromady prameny
+    uvádějí 78 nebo 79 míst.
+  - >-
+    Jedna věc je tu doložená líp než u tatranských chat na slovenské straně:
+    ceník výslovně říká, že „wrzątek dla turystów" je zdarma a vydává se
+    „poza kolejnością", tedy mimo pořadí. Rozlišuje turisty od ubytovaných
+    hostů a dává jim přednost — a bufet vedle sladkostí prodává mapy,
+    turistickou literaturu a suvenýry. Výslovná věta o obsluze kolemjdoucích
+    to sice není, ale blíž jsme se v Tatrách zatím nedostali. Platí se jen
+    hotově.
+  - >-
+    Chodí se sem od Palenice Białczańské po červené, prameny udávají mezi
+    7,8 a 8,6 kilometru a zhruba dvě hodiny dvacet minut. Trasa vede po
+    silnici, které se říká Droga Oswalda Balzera po právním historikovi, jenž
+    roku 1902 hájil polskou stranu ve sporu o Morskie Oko před rozhodčím
+    soudem v Grazu — a vyhrál 351 hektarů. Silnice je od roku 1998 uzavřená
+    cyklistům, koňské povozy vozí jen na polanu Włosienica a vstup do parku
+    je zpoplatněn.
+  - >-
+    Že tu bývá plno, není dojem: 3. srpna 2021 sem podle novin vyšlo přes
+    patnáct tisíc lidí za jediný den a ředitel parku to označil za rekord.
+    Chatu přitom vede od roku 1945 jedna rodina — Wanda a Czesław Łapińští,
+    pak jejich syn Wojciech a dnes jeho žena Maria s dcerou a synem.
+  - >-
+    Údaje nese vlastní web chaty, PTTK Małopolska, historykon.pl,
+    whitemad.pl, portaltatrzanski.pl, tpn.gov.pl, dzieje.pl
+    a gazetakrakowska.pl; polohu OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty, o nás — výška 1410 m, 36 lůžek v Novém schronisku
+      a 43 ve Wozowni, kuchyně a bufet, vroucí voda pro turisty, historie od
+      1874, rodina Łapińských od 1945 (načteno 9. 8. 2026)
+    url: https://schroniskomorskieoko.pl/pl/o-nas
+  - popis: >-
+      Vlastní web chaty, nabídka — ceník 2026, otevírací doba kuchyně
+      a bufetu v sezóně i mimo ni, jen hotovostní platba (načteno 9. 8. 2026)
+    url: https://schroniskomorskieoko.pl/pl/oferta
+  - popis: >-
+      PTTK Małopolska — kamenný šalaš ze 17. století, Emanuel Homolacs 1827,
+      vozovna 1890–1891, projekt Wandalina Beringera, otevření 15. 8. 1908
+      a jeho hosté, 35 lůžek po rekonstrukci (načteno 9. 8. 2026)
+    url: https://malopolska.szlaki.pttk.pl/2725-pttk-malopolska-schronisko-gorskie-pttk-nad-morskim-okiem
+  - popis: >-
+      historykon.pl — Edmund Homolacs (odchylka), požár 1865, otevření
+      3. 8. 1874, jméno po Staszicovi z podnětu Leopolda Świerze, požár
+      1/2. 10. 1898, rekonstrukce 1988–1992 (načteno 9. 8. 2026)
+    url: https://historykon.pl/krotka-historia-tatrzanskich-schronisk-schronisko-pttk-nad-morskim-okiem/
+  - popis: >-
+      whitemad.pl — pojmenování 16. 9. 1875 (odchylka), rozšíření 1891 na
+      252 m², památková ochrana 1976, návštěva Jana Pavla II. 1997
+      (načteno 9. 8. 2026)
+    url: https://www.whitemad.pl/schronisko-nad-morskim-okiem-najpiekniej-polozony-obiekt-w-tatrach-polskich/
+  - popis: >-
+      tpn.gov.pl — Droga Oswalda Balzera dokončená 1902, zákaz kol od 1998,
+      stanoviště koňských povozů, Morskie Oko 34,5 ha (načteno 9. 8. 2026)
+    url: https://tpn.gov.pl/szlaki-turystyczne/palenica-bialczanska-morskie-oko-i-spacer-wokol-morskiego-oka
+  - popis: >-
+      tpn.gov.pl — ceník vstupu do parku a osvobozené skupiny
+      (načteno 9. 8. 2026)
+    url: https://tpn.gov.pl/wstep-do-parku
+  - popis: >-
+      dzieje.pl — spor o Morskie Oko: rozsudek 13. 9. 1902 v Grazu, obhájce
+      Oswald Balzer, 351 ha Haliči (načteno 9. 8. 2026)
+    url: https://dzieje.pl/rozmaitosci-historyczne/120-lat-temu-rozstrzygnieto-spor-graniczny-o-morskie-oko
+  - popis: >-
+      gazetakrakowska.pl — rekord přes 15 tisíc turistů 3. 8. 2021, výrok
+      ředitele TPN (načteno 9. 8. 2026)
+    url: https://gazetakrakowska.pl/tatry-ponad-15-tys-turystow-weszlo-na-szlak-do-morskiego-oka-w-ciagu-jednego-dnia-to-absolutny-rekord-wszech-czasow/ar/c1-15744416
+  - popis: >-
+      portaltatrzanski.pl — 79 lůžek, bufet 7.00–21.00, vedení Marie
+      Łapińské, 8,6 km z Palenice (načteno 9. 8. 2026)
+    url: https://portaltatrzanski.pl/przewodnik/schroniska/schronisko-nad-morskim-okiem,55
+  - popis: >-
+      OpenStreetMap (GPS Nového schroniska, ODbL)
+    url: https://www.openstreetmap.org/way/300719423
+  - popis: >-
+      OpenStreetMap (GPS Starého schroniska / Wozowni, ODbL)
+    url: https://www.openstreetmap.org/way/300719425
+interniPoznamky: >-
+  Povýšeno ze DVOU kandidátů DATA-01 (9. 8. 2026):
+  vysoke-tatry/schronisko-pttk-morskie-oko a
+  vysoke-tatry/stare-schronisko-pttk-morskie-oko.
+
+  SLOUČENÍ PODLE PRAVIDLA Z KOZUBOVÉ, ale opačným směrem než u Majláthovy
+  chaty — a proto to stojí za rozvedení. Pravidlo zní: rozhoduje jedna stavba
+  NEBO jeden provoz, ne blízkost. U Popradského plesa jsou dvě budovy
+  106 metrů od sebe a DVA majitelé → dva profily. Tady jsou dvě budovy
+  74 metrů od sebe (naměřeno z GPS obou kandidátů), ale JEDEN provoz: jeden
+  provozovatel, jeden web, jeden ceník, jedna recepce, a provozovatel sám
+  popisuje Wozownii jako noclehárnu téhož schroniska. Jeden profil.
+  Vzdálenost tedy skutečně nerozhoduje: 74 m se slučuje, 106 m ne.
+
+  PRVNÍ POLSKÝ OBJEKT KORPUSU VE VYSOKÝCH TATRÁCH a hned přinesl něco, co
+  slovenská strana nemá: doklad, který rozlišuje turisty od ubytovaných.
+  Věta „Wrzątek dla turystów bezpłatny do naczyń własnych podawany poza
+  kolejnością" není přímé „obsloužíme neubytované", ale je to nejblíž, kam
+  se korpus u tatranských chat zatím dostal. Stojí za úvahu, jestli u
+  polských chat PTTK nebude doklad obecně lepší — mají ceníky a řády na webu.
+
+  VÝŠKA — MÍSTO, KDE JSEM KONVENCI VĚDOMĚ NEPOUŽIL, a je to jiný důvod než
+  u Chaty pri Zelenom plese. Tam šlo o drtivou shodu proti odlehlé hodnotě.
+  Tady jde o to, že 1402, 1405, 1406 a 1410 m nejsou čtyři názory na tutéž
+  věc: PTTK sám u budovy z roku 1908 uvádí 1406 m a v hlavičce 1402 m, což
+  vypadá jako hladina jezera proti prahu chaty. Konvence řeší spor pramenů,
+  ne rozdíl měřených bodů. Patří to k otázce KONTROLA-11.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: křestní jméno Homolacse (Emanuel ×
+  Edmund); rok pojmenování po Staszicovi (1874 × 16. 9. 1875); kapacita
+  Nového schroniska (35 × 36) a součet (78 × 79); zakopanský sloh
+  a Witkiewicz (osamocené tvrzení whitemad.pl proti „skromnému projektu"
+  Beringera u PTTK).
+
+  VLASTNICTVÍ JE PŘEDMĚTEM SPORU a do dat nešlo. rp.pl cituje obě strany:
+  „Schroniska nad Morskim Okiem i w Dolinie Roztoki znajdują się na gruncie
+  należącym do Skarbu Państwa" a „Z mocy prawa park narodowy stał się
+  użytkownikiem terenu i właścicielem znajdujących się na nim budynków"
+  proti stanovisku PTTK „Uważamy, że oba schroniska są własnością PTTK i to
+  od XIX wieku." Rozhodnutí soudu k Morskému Oku nenalezeno.
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: e-mail (portaltatrzanski.pl uvádí
+  schronisko@morskieoko.pl, vlastní web žádný); aktuální ceník koňských
+  povozů; případná krátká lednová přestávka, kterou naznačuje mezera
+  v ceníku mezi 10. 1. a 8. 1. Polskou Wikipedii se rešerši nepodařilo
+  načíst. Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.

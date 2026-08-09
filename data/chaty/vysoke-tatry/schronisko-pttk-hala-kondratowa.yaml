@@ -1,0 +1,400 @@
+# Schronisko PTTK na Hali Kondratowej — sedmnáctý publikovaný profil oblasti
+# Vysoké Tatry (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Schronisko PTTK na Hali Kondratowej
+slug: schronisko-pttk-hala-kondratowa
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Schronisko PTTK na Hali Kondratowej im. Władysława Krygowskiego
+    poznamka: plný oficiální název od roku 2009
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.249882
+lng: 19.9516824
+vyska: 1333
+obec: Zakopane
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/184188834 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1333 m BEZ JEDINÉHO ROZPORU: vlastní web chaty, mapa-turystyczna.pl,
+    město Zakopane, gorydlaciebie.pl, odtur.pl, schroniskaturystyczne.pl,
+    regiontatry.pl i planetagor.pl (vše čteno 9. 8. 2026).
+    Poloha: Hala Kondratowa pod Giewontem. Adresa podle vlastního webu „Droga
+    Brata Alberta 4, 34-500 Zakopane".
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 20
+overeniNocleh:
+  source: >-
+    ROZPOR PO REKONSTRUKCI, ZAPSÁNO NIŽŠÍ ČÍSLO (konvence 27. 7. 2026):
+    vlastní web (čteno 9. 8. 2026) uvádí po znovuotevření „24 miejsca
+    noclegowe w przytulnych, wieloosobowych pokojach urządzonych
+    w tradycyjnym, górskim stylu" a naszeszlaki.com.pl to potvrzuje („24
+    miejsca noclegowe (przed remontem 20 miejsc)"). Oproti tomu
+    portalgorski.pl v článku z 15. dubna 2025, tedy těsně před otevřením,
+    píše „Ilość miejsc noclegowych jednak nie uległa zmianie. Nadal na
+    turystów będzie czekało 20 łóżek."
+    TADY SE PRAVIDLO „PROVOZOVATEL MÁ PŘEDNOST" NEPOUŽILO, i když by u čerstvé
+    rekonstrukce dávalo smysl. Důvod: portalgorski.pl výslovně a nezávisle
+    tvrdí, že se počet NEZMĚNIL, a to je tvrzení o téže věci v témž čase, ne
+    zastaralý údaj. Rozpor pramenů → nižší číslo. Bude potřeba ověřit.
+    Před rekonstrukcí uváděly prameny shodně 20 lůžek ve dvou nebo třech
+    vícelůžkových pokojích (dva šestilůžkové a jeden osmilůžkový podle města
+    Zakopane).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web po rekonstrukci (čteno 9. 8. 2026): snídaně 7.00–10.30, teplá
+    kuchyně s jídly z lístku 11.00–20.30, jednohrncová jídla do 21.00, bar
+    od pondělí do čtvrtka 7.00–21.00 a od pátku do neděle 7.00–21.30; kuchyně
+    nabízí „proste, smaczne i sycące dania" a „tradycyjne potrawy, inspirowane
+    kuchnią podhalańską, domową".
+    NEJLEPŠÍ NEPŘÍMÝ DOKLAD O NEUBYTOVANÝCH V CELÉM BLOKU:
+    schroniskaturystyczne.pl a regiontatry.pl shodně píší „Do dyspozycji
+    turystów jest bufet, jadalnia i świetlica, przez całą dobę wydawany jest
+    bezpłatny wrzątek." — „turystom", ne hostům, a nepřetržitě. Přímá věta to
+    pořád není, ale u chaty s dvaceti lůžky a kuchyní otevřenou do půl deváté
+    večer je čtení jednoznačné.
+    Poznávacím znamením kuchyně je podle pramene perník: „Znakiem
+    rozpoznawczym tutejszej kuchni jest piernik."
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  snídaně 7.00–10.30, teplá kuchyně 11.00–20.30, jednohrncová jídla do 21.00;
+  bar pondělí až čtvrtek 7.00–21.00, pátek až neděle 7.00–21.30
+# sezona SE NEVYPLŇUJE: výslovný doklad celoročního provozu chybí a jediný
+# pramen k sezónnosti popisuje stav před rekonstrukcí. Viz interniPoznamky.
+overeniProvoz:
+  source: >-
+    VÝSLOVNÁ VĚTA O CELOROČNÍM PROVOZU NENÍ ANI NA VLASTNÍM WEBU, a proto se
+    pole `sezona` nevyplňuje. Doloženo je jen tohle: schroniskaturystyczne.pl
+    popisuje stav PŘED rekonstrukcí — noclehy nedostupné „od 15 listopada do
+    26 grudnia" kvůli údržbě, „Wtedy czynne są bufet i jadalnia." Zda tenhle
+    režim platí i po znovuotevření, neuvádí nikdo.
+    Chata byla 4. září 2023 uzavřena kvůli generální rekonstrukci
+    a znovuotevřena podle naszeszlaki.com.pl 14. června 2025. Telefonní
+    kontakt je podle vlastního webu dostupný „od poniedziałku do soboty
+    w godzinach 11:00–17:00. W niedziele kontakt telefoniczny w sprawach
+    rezerwacji jest niedostępny."
+    Chata leží uvnitř Tatrzańského parku narodowého, kde je vstup zpoplatněn,
+    nocování mimo schroniska zakázáno a podle mapa-turystyczna.pl platí
+    v parku „Zakaz wstępu z psami".
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+48575694133'
+  email: rezerwacje@schroniskokondratowa.pl
+  web: https://schroniskokondratowa.pl/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1948
+overeniHistorie:
+  source: >-
+    ROK 1948 JE ROKEM DOKONČENÍ DNEŠNÍ BUDOVY. Prameny se shodují na
+    projektantovi a rozcházejí v rocích i ve stavebníkovi.
+    PROJEKTANT — SHODA: Bogdan Laszczka, uvádějí ho portaltatrzanski.pl,
+    portalgorski.pl, polska-org.pl, město Zakopane, odtur.pl i planetagor.pl
+    (vše čteno 9. 8. 2026).
+    ROKY A STAVEBNÍK — ROZPOR, nesrovnaný: portaltatrzanski.pl „Obecny obiekt
+    projektu Bogdana Laszczki został wzniesiony przez Polskie Towarzystwo
+    Tatrzańskie (poprzednik PTTK) w latach 1946-1948."; portalgorski.pl klade
+    stavbu do týchž let, ale připisuje ji PTTK; polska-org.pl, město Zakopane
+    a odtur.pl uvádějí 1947–1948 a PTT; schroniskaturystyczne.pl píše, že ji
+    „zbudowali w latach 1947-1948 górale"; planetagor.pl uvádí prostě rok
+    1948; klubpodroznikow.com „w roku 1946 powstał szałas a dwa lata później
+    powstało schronisko jakie widzimy w obecnej formie". Zapsán je rok
+    dokončení, na kterém se shodují všechny varianty.
+    PATROCINIUM: „23 sierpnia 2009 r. odbyła się uroczystość nadania budynkowi
+    imienia wybitnego działacza turystycznego, Władysława Krygowskiego."
+    (portaltatrzanski.pl); Krygowski žil 1906–1998 a byl právník a znalec
+    Karpat.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1910
+    udalost: >-
+      Na místě stál nejspíš už před tímto rokem lyžařský přístřešek Jerzyho
+      Uznańského; roku 1913 ho zničila lavina.
+    zdroj: >-
+      polska-org.pl (čteno 9. 8. 2026) — „Pierwszy budynek powstał w tym
+      miejscu najprawdopodobniej jeszcze przed rokiem 1910. Był to schron
+      narciarski Jerzego Uznańskiego, w 1913 roku zniszczony przez lawinę.";
+      planetagor.pl uvádí odchylně pastevecký šalaš pronajatý roku 1911
+      Lyžařskou sekcí Towarzystwa Tatrzańského.
+  - rok: 1933
+    udalost: >-
+      Na Hali vznikla bacówka, tedy salašnická chatka.
+    zdroj: >-
+      polska-org.pl (čteno 9. 8. 2026) — „W roku 1933 wzniesiono tu bacówkę."
+  - rok: 1948
+    udalost: >-
+      Dokončena dnešní dřevěná chata podle projektu Bogdana Laszczky.
+      Prameny se rozcházejí, zda ji stavěl Polský tatranský spolek, PTTK,
+      nebo horalé, a zda od roku 1946, nebo 1947.
+    zdroj: >-
+      polska-org.pl, portaltatrzanski.pl, portalgorski.pl a město Zakopane
+      (čteno 9. 8. 2026).
+  - rok: 1950
+    udalost: >-
+      Budova se rozšířila o další křídlo.
+    zdroj: >-
+      polska-org.pl (čteno 9. 8. 2026) — „W roku 1950 powiększono go
+      o dodatkowe skrzydło."
+  - rok: 1953
+    udalost: >-
+      26. dubna zasáhla chatu kamenná lavina z Długiego Giewontu. Balvan
+      o hmotnosti třiceti tun se zaryl do rohu jídelny a je tam k vidění
+      dodnes; dva další se zastavily pár metrů od budovy.
+    zdroj: >-
+      polska-org.pl (čteno 9. 8. 2026) — „26 kwietnia 1953 schronisko zostało
+      zniszczone przez kamienną lawinę, która zeszła ze stoków Długiego
+      Giewontu. Głaz o masie 30 ton wbił się w narożnik jadalni, dwa inne
+      zatrzymały się kilka metrów od budynku."; klubpodroznikow.com —
+      balvan „można go oglądać do dziś". planetagor.pl datuje lavinu do roku
+      1954.
+  - rok: 2009
+    udalost: >-
+      23. srpna dostala chata jméno po Władysławu Krygowském, znalci Karpat
+      a turistickém činovníkovi.
+    zdroj: >-
+      portaltatrzanski.pl (čteno 9. 8. 2026).
+  - rok: 2022
+    udalost: >-
+      31. května zasahovali hasiči u požáru dřevěného pobití střechy;
+      podle pramene byl příčinou nejspíš netěsný komín. Budova se zachránila.
+    zdroj: >-
+      gov.pl, hlášení Komendy Powiatowej PSP Zakopane (čteno 9. 8. 2026) —
+      požár 31. 5. 2022 v 16:31, hořelo „drewnianego poszycia dachowego,
+      w budynku schroniska PTTK znajdującego się na Hali Kondratowej";
+      tatromaniak.pl — „Przyczyną pożaru był prawdopodobnie nieszczelny
+      przewód kominowy" a „budynek schroniska ocalał".
+  - rok: 2025
+    udalost: >-
+      Po generální rekonstrukci zahájené v září 2023 se chata znovu otevřela;
+      dostala elektřinu ze sítě místo agregátů, tlakovou kanalizaci a tepelná
+      čerpadla, a nová konstrukce byla obložena trámy z rozebrané staré
+      budovy.
+    zdroj: >-
+      naszeszlaki.com.pl (čteno 9. 8. 2026) — znovuotevření 14. června 2025;
+      24tp.pl — modernizace od září 2023, kanalizace za „2 102 607,02 zł";
+      zakopane.naszemiasto.pl — betonová konstrukce obložená „płazami
+      z rozbiórki starego schroniska", tepelná čerpadla, „2,4 miliona
+      złotych".
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Polské prameny chatu shodně označují za nejmenší v Tatrách; jeden
+      k tomu uvádí i objem 600 metrů krychlových.
+    kategorie: velikost
+    zdroj: >-
+      portaltatrzanski.pl (čteno 9. 8. 2026) — „Jest najmniejszym schroniskiem
+      tatrzańskim."; gorydlaciebie.pl, planetagor.pl a portalgorski.pl
+      „najmniejsze schronisko w polskich Tatrach"; odtur.pl — „najmniejsze
+      schronisko polskich Tatr (600 m³)". Opatrnější formulaci volí
+      karta.zakopane.eu — „jedno z najmniejszych".
+  - text: >-
+      Třicetitunový balvan, který se roku 1953 zaryl do rohu jídelny, je tam
+      podle pramene k vidění dodnes.
+    kategorie: jine
+    zdroj: >-
+      klubpodroznikow.com (čteno 9. 8. 2026) — „można go oglądać do dziś".
+  - text: >-
+      Na stěnách jsou citáty Władysława Krygowského, po kterém se chata
+      jmenuje.
+    kategorie: jine
+    zdroj: >-
+      planetagor.pl (čteno 9. 8. 2026) — „ściany ozdobione cytatami
+      z Władysława Krygowskiego".
+  - text: >-
+      Poznávacím znamením zdejší kuchyně je perník.
+    kategorie: gastro
+    zdroj: >-
+      schroniskaturystyczne.pl (čteno 9. 8. 2026) — „Znakiem rozpoznawczym
+      tutejszej kuchni jest piernik."
+  - text: >-
+      Rekonstrukce v letech 2023 až 2025 přinesla připojení na elektrickou
+      síť místo agregátů a tlakovou kanalizaci; novou konstrukci obložili
+      trámy z rozebrané staré chaty.
+    kategorie: jine
+    zdroj: >-
+      24tp.pl a zakopane.naszemiasto.pl (čteno 9. 8. 2026).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěná chata pod Giewontem z roku 1948, kterou polské prameny shodně
+  označují za nejmenší v Tatrách. Roku 1953 se do rohu její jídelny zaryl
+  třicetitunový balvan a je tam dodnes. V letech 2023 až 2025 prošla
+  generální rekonstrukcí.
+text:
+  - >-
+    Schronisko PTTK na Hali Kondratowej stojí ve 1333 metrech pod Giewontem.
+    Na výšce se prameny shodují bez jediné odchylky — a shodují se i na tom,
+    že je to nejmenší chata Tater; odtur.pl k tomu dodává i objem, šest set
+    krychlových metrů.
+  - >-
+    Před chatou tu bylo několik pokusů. Nejspíš už před rokem 1910 tu stál
+    lyžařský přístřešek Jerzyho Uznańského, který roku 1913 zničila lavina;
+    jiný pramen mluví o pasteveckém šalaši pronajatém roku 1911 Lyžařskou
+    sekcí Towarzystwa Tatrzańského. Roku 1933 tu vznikla bacówka.
+  - >-
+    Dnešní dřevěná chata podle projektu Bogdana Laszczky byla dokončena roku
+    1948; kdo přesně ji stavěl, se prameny neshodnou — jedni uvádějí Polský
+    tatranský spolek, druzí PTTK, třetí prostě horaly. Roku 1950 přibylo
+    křídlo.
+  - >-
+    26. dubna 1953 sešla ze svahů Długiego Giewontu kamenná lavina; balvan o hmotnosti třiceti tun se zaryl do rohu
+    jídelny a dva další se zastavily pár metrů od budovy. Balvan tam podle
+    pramene zůstal a je k vidění dodnes. Roku 2009 dostala chata jméno po
+    Władysławu Krygowském, znalci Karpat, jehož citáty jsou na stěnách.
+  - >-
+    31. května 2022 hořelo dřevěné pobití střechy — podle hasičů nejspíš od
+    netěsného komína. Budova se zachránila, ale 4. září 2023 se chata zavřela
+    kvůli generální rekonstrukci. Znovu otevřela 14. června 2025. Dostala
+    elektřinu ze sítě místo agregátů, tlakovou kanalizaci a tepelná čerpadla;
+    novou konstrukci obložili trámy z rozebrané staré chaty.
+  - >-
+    Kolik má dnes lůžek, není jisté: vlastní web uvádí čtyřiadvacet, ale
+    portalgorski.pl v dubnu 2025 psal, že se počet nezměnil a zůstane jich
+    dvacet. Na téhle stránce je zapsané nižší číslo. Kuchyně vaří od jedenácti
+    do půl deváté večer, snídaně od sedmi, bar do devíti nebo půl desáté podle
+    dne. A o tom, že se tu obslouží i kolemjdoucí, mluví prameny líp než
+    kdekoli jinde v Tatrách: „Do dyspozycji turystów jest bufet, jadalnia
+    i świetlica, przez całą dobę wydawany jest bezpłatny wrzątek." Poznávacím
+    znamením kuchyně je perník.
+  - >-
+    Chodí se sem z Kuźnic po modré přes Kalatówki, prameny udávají hodinu až
+    hodinu a dvacet minut. Odtud vede zelená na Przełęcz pod Kopą Kondracką
+    za hodinu dvacet a dál na Giewont zhruba za hodinu tři čtvrtě. Chata leží
+    v národním parku: vstup se platí, nocovat se smí jen ve schroniscích
+    a psi dovnitř nesmějí.
+  - >-
+    Jestli je chata otevřená celoročně, poctivě nevíme — výslovnou větu nemá
+    ani vlastní web. Před rekonstrukcí byly podle jednoho pramene noclehy
+    nedostupné od 15. listopadu do 26. prosince kvůli údržbě, kdy fungoval
+    jen bufet a jídelna; jestli to platí i teď, neuvádí nikdo.
+  - >-
+    Údaje nese vlastní web chaty, portaltatrzanski.pl, portalgorski.pl,
+    polska-org.pl, město Zakopane, odtur.pl, schroniskaturystyczne.pl,
+    planetagor.pl, klubpodroznikow.com, naszeszlaki.com.pl, 24tp.pl,
+    zakopane.naszemiasto.pl, tatromaniak.pl a hlášení hasičů na gov.pl;
+    polohu OpenStreetMap. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — výška 1333 m, 24 lůžek po rekonstrukci
+      (načteno 9. 8. 2026)
+    url: https://schroniskokondratowa.pl/
+  - popis: >-
+      Vlastní web chaty, kuchyně — snídaně 7.00–10.30, teplá kuchyně
+      11.00–20.30, bar podle dnů, charakter nabídky (načteno 9. 8. 2026)
+    url: https://schroniskokondratowa.pl/kuchnia/
+  - popis: >-
+      Vlastní web chaty, kontakt — telefony, e-maily, adresa Droga Brata
+      Alberta 4, dostupnost telefonu (načteno 9. 8. 2026)
+    url: https://schroniskokondratowa.pl/kontakt/
+  - popis: >-
+      portaltatrzanski.pl — „najmniejszym schroniskiem tatrzańskim", stavba
+      1946–1948 PTT podle projektu Bogdana Laszczky, patrocinium
+      23. 8. 2009 (načteno 9. 8. 2026)
+    url: https://portaltatrzanski.pl/przewodnik/schroniska/schronisko-na-hali-kondratowej,52
+  - popis: >-
+      polska-org.pl — přístřešek Jerzyho Uznańského před 1910 a lavina 1913,
+      bacówka 1933, stavba 1947–48, křídlo 1950, kamenná lavina 26. 4. 1953
+      a třicetitunový balvan (načteno 9. 8. 2026)
+    url: https://polska-org.pl/7448427,Zakopane,Schronisko_PTTK_na_Hali_Kondratowej_im_Wladyslawa_Krygowskiego.html
+  - popis: >-
+      portalgorski.pl, článek z 15. 4. 2025 — „Nadal na turystów będzie
+      czekało 20 łóżek", předchozí nájemkyně Iwona Haniaczyk do 4. 9. 2023
+      (načteno 9. 8. 2026)
+    url: https://www.portalgorski.pl/turystyka-gorska/ze-szlaku/polska/13763-wkrotce-otwarcie-schroniska-na-kondratowej
+  - popis: >-
+      schroniskaturystyczne.pl — „Do dyspozycji turystów jest bufet, jadalnia
+      i świetlica, przez całą dobę wydawany jest bezpłatny wrzątek.", perník,
+      údržbová přestávka 15. 11. – 26. 12. (načteno 9. 8. 2026)
+    url: https://www.schroniskaturystyczne.pl/schronisko-pttk-na-hali-kondratowej/
+  - popis: >-
+      naszeszlaki.com.pl — kapitální rekonstrukce 2023–2025, znovuotevření
+      14. 6. 2025, 24 lůžek proti 20 před opravou (načteno 9. 8. 2026)
+    url: https://naszeszlaki.com.pl/schronisko-gorskie-pttk-na-hali-kondratowej/
+  - popis: >-
+      24tp.pl — modernizace od září 2023, elektrifikace, tlaková kanalizace
+      za 2 102 607,02 zł (načteno 9. 8. 2026)
+    url: https://24tp.pl/n/128722
+  - popis: >-
+      zakopane.naszemiasto.pl — betonová konstrukce obložená trámy ze staré
+      chaty, tepelná čerpadla, 2,4 milionu zlotých (načteno 9. 8. 2026)
+    url: https://zakopane.naszemiasto.pl/tak-wyglada-nowe-schronisko-na-hali-kondratowej-pierwszych-turystow-przyjmie-w-czerwcu/ar/c1p2-27579633
+  - popis: >-
+      gov.pl, Komenda Powiatowa PSP Zakopane — hlášení o požáru 31. 5. 2022
+      v 16:31, hořelo dřevěné pobití střechy (načteno 9. 8. 2026)
+    url: https://www.gov.pl/web/kppsp-zakopane/pozar-schroniska-na-hali-kondratowej
+  - popis: >-
+      tatromaniak.pl — pravděpodobná příčina požáru (netěsný komín), budova
+      zachráněna (načteno 9. 8. 2026)
+    url: https://tatromaniak.pl/aktualnosci/pozar-schroniska-na-hali-kondratowej/
+  - popis: >-
+      Město Zakopane — 20 lůžek ve třech pokojích, bufet 7.30–19.30, časy
+      tras na Giewont a na Przełęcz pod Kopą Kondracką (načteno 9. 8. 2026)
+    url: https://www.zakopane.pl/strefa-turystyczna/turystyka/schroniska-gorskie/schronisko-na-polanie-kondratowej/
+  - popis: >-
+      mapa-turystyczna.pl — výška, souřadnice, zákaz vstupu se psy v TPN
+      (načteno 9. 8. 2026)
+    url: https://mapa-turystyczna.pl/node/schronisko-pttk-na-hali-kondratowej
+  - popis: >-
+      OpenStreetMap (GPS, ODbL)
+    url: https://www.openstreetmap.org/way/184188834
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/schronisko-pttk-hala-kondratowa.yaml
+  (9. 8. 2026).
+
+  KAPACITA — MÍSTO, KDE JSEM NEDAL PŘEDNOST PROVOZOVATELI, a je to opak
+  Zamkovského chaty. Tam prameny popisovaly různé časy (před rekonstrukcí
+  a po ní) a provozovatelův údaj vyhrál jako aktuální. Tady portalgorski.pl
+  v dubnu 2025, tedy dva měsíce před znovuotevřením, výslovně píše, že se
+  počet lůžek NEZMĚNIL a zůstane jich dvacet. To není zastaralý údaj, ale
+  protichůdné tvrzení o témž čase — a na to konvence z 27. 7. 2026 platí.
+  Zapsáno 20. Je to čtvrtý případ z devíti profilů dneška, kde bylo potřeba
+  rozlišit rozpor pramenů od zastaralosti pramene; patří to k KONTROLA-11.
+
+  DRUHÝ PROFIL BLOKU BEZ VYPLNĚNÉ SEZÓNNOSTI (po Roztoce a Majláthově chatě
+  třetí celkem). Chata se po dvouleté rekonstrukci otevřela teprve v červnu
+  2025 a předrekonstrukční údaj o údržbové přestávce od 15. listopadu do
+  26. prosince nemusí platit. Výslovnou větu nemá ani vlastní web.
+
+  SUPERLATIV „NEJMENŠÍ" JE DOLOŽENÝ ŠIROCE, ALE NE OD PTTK. Osm pramenů ho
+  uvádí, formulace se ale liší: „najmniejsze schronisko tatrzańskie" ×
+  „w polskich Tatrach" × „jedno z najmniejszych" (karta.zakopane.eu). Verze
+  „najmniejsze schronisko PTTK" se nikde nenašla — a to je právě ta, na
+  kterou jsem se ptal v zadání rešerše. Podruhé v jednom bloku se ukázalo,
+  že moje formulace otázky byla přesnější, než co prameny unesou (poprvé
+  u patrocinia Murowańce). Do dat proto šla verze s atribucí.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: roky stavby (1946–1948 × 1947–1948 ×
+  1948) a stavebník (PTT × PTTK × horalé); datum kamenné laviny (26. 4. 1953
+  u tří pramenů × 1954 u planetagor.pl); kapacita (20 × 24); první stavba na
+  místě (přístřešek Uznańského před 1910 × pastevecký šalaš pronajatý 1911).
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: jméno současného nájemce — PTTK
+  ho podle gazetakrakowska.pl (9. 10. 2024) nezveřejnilo, ví se jen, že
+  pochází z tatranského okresu; aktuální ceník po roce 2025; potvrzení
+  superlativu přímo od PTTK. Polskou Wikipedii se rešerši nepodařilo načíst
+  ani v mobilní verzi (u Roztoky ano, tady ne).
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.
