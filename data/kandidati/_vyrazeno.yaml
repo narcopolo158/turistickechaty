@@ -557,7 +557,6 @@ vyrazeno:
     rozhodl: samostatná práce 7. 8. 2026 (pověření „pokračuj dvě hodiny samostatně")
     checked: 2026-08-07
 
-
   # SLOUČENÍ DO PUBLIKOVANÉHO PROFILU (8. 8. 2026). Není to zamítnutí objektu
   # — objekt na webu STOJÍ, jen ne pod vlastním slugem. Sem patří proto, že
   # `_vyrazeno.yaml` je zároveň zámek proti dalšímu běhu DATA-01: bez záznamu
@@ -778,4 +777,504 @@ vyrazeno:
     rozhodl: >-
       Claude (9. 8. 2026, samostatný blok — rozhodnuto měřením z GPS proti
       poloze Skalnatého plesa a obce Tatranská Lomnica, ne úvahou o jménu)
+    checked: 2026-08-09
+
+  # ── TRIÁŽ VYSOKÝCH TATER, VT-03 (9. 8. 2026) ──────────────────────────────
+  # Po čtyřech várkách povyšování zbylo v oblasti 81 kandidátů a tabulka podle
+  # tagu `tourism` ukázala, že alpine_hut nezbyl ani jeden a převažují soukromé
+  # pronájmy. Dole je 49 vyřazení a všechna stojí na JEDNOM PRAVIDLE:
+  # vyřazuje se jen tam, kde je doklad přímo v tagu OSM — v názvu („Privat",
+  # „Willa", „Domki", „Pokoje Gościnne", „Penzion"), v popisu („prenajíma sa
+  # ako celok", „Kwaterodawca … UM Zakopane"), v adrese uvnitř obce, nebo
+  # v odkazu na rezervační či pronájmový portál. Kandidáti s tenkým záznamem
+  # (jen jméno a `tourism=chalet`, bez adresy a bez webu) ZŮSTÁVAJÍ VE FRONTĚ,
+  # protože na jejich vyřazení doklad není. Neprošly sem ani provozní budovy
+  # Štátnych lesov TANAPu — ty čekají na kontrolu, protože TANAP na
+  # tanap.sk/ubytovanie/ nějaké ubytování nabízí a mezi službou a noclehárnou
+  # se bez ověření rozhodovat nedá.
+  - osm: https://www.openstreetmap.org/way/59595335
+    slug: vysoke-tatry/alpina-1
+    duvod: >-
+      Chata penzionu (OSM tourism=chalet, addr:city Stará Lesná, website
+      http://www.pension-orion.sk/alpina-1 — objekt je jednou z ubytovacích
+      jednotek penzionu Orion). Obec Stará Lesná leží v podhůří, ne na trase;
+      občerstvení pro kolemjdoucí nedoloženo.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/59595292
+    slug: vysoke-tatry/alpina-2
+    duvod: >-
+      Druhá chata téhož penzionu (OSM tourism=chalet, addr:city Stará Lesná,
+      website http://www.pension-orion.sk/alpina-2, internet_access=no).
+      Stejný důvod jako u Alpiny 1.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/191624045
+    slug: vysoke-tatry/chalupa-goral
+    duvod: >-
+      Penzion v obci (OSM tourism=guest_house, addr:city Jezersko, website
+      http://www.chalupagoral.sk). Jezersko je zamagurská obec mimo hřeben;
+      role na trase ani občerstvení pro veřejnost nedoloženy.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/11207092629
+    slug: vysoke-tatry/chalupa-pokoje-goscinne
+    duvod: >-
+      Pokoje k pronájmu — název to říká sám (OSM name „CHAŁUPA - Pokoje
+      Gościnne", tourism=chalet, website
+      chalupa-pokoje-goscinne.business.site). „Pokoje gościnne" je polský
+      úřední termín pro soukromé ubytování v domácnosti.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/58738736
+    slug: vysoke-tatry/chalupa-u-starej-mamy
+    duvod: >-
+      Chalupa k pronájmu (OSM tourism=chalet, addr:city Ždiar, website
+      https://zdiar.123u.sk — portál pronájmů ubytování ve Ždiaru). Bez
+      doloženého občerstvení pro kolemjdoucí.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/191554225
+    slug: vysoke-tatry/chalupka-420
+    duvod: >-
+      Chalupa k pronájmu (OSM tourism=chalet, addr:city Ždiar, website
+      https://chalupka.123u.sk/ — týž portál pronájmů). Bez doloženého
+      občerstvení.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/191624156
+    slug: vysoke-tatry/chata-dana
+    duvod: >-
+      Penzion v obci (OSM tourism=guest_house, addr:city Jezersko, jen
+      telefonní kontakt). Stejná třída jako Chalupa Goral a Chata Eva v téže
+      obci.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/291198595
+    slug: vysoke-tatry/chata-domek
+    duvod: >-
+      Objekt k pronájmu jako celek — doloženo přímo popisem v OSM: „Chata
+      Domek na okraji obce Reľov. Objekt sa prenajíma ako celok. Vhodné pre
+      rodiny s deťmi. Má dve izby, kuchyňu, jedálenský kút, kúpeľňu so
+      sprchovacím kútom a WC." Website domek.123u.sk.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/896022719
+    slug: vysoke-tatry/chata-duska
+    duvod: >-
+      Chata patřící k ubytovací usedlosti (OSM tourism=chalet, addr:city
+      Východná, website https://usadlostpodkrivanom.sk/chata/chata-duska/ —
+      jedna z chat Usadlosti pod Kriváňom). Obec Východná leží v Liptovské
+      kotlině.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/191624134
+    slug: vysoke-tatry/chata-eva
+    duvod: >-
+      Penzion v obci (OSM tourism=guest_house, addr:city Jezersko, jen
+      telefonní kontakt). Viz Chalupa Goral a Chata Dana.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/961421521
+    slug: vysoke-tatry/chata-felicia
+    duvod: >-
+      Penzion (OSM tourism=guest_house, beds=32, rooms=14, website
+      https://www.lomnica.sk/ — ubytovací portál Tatranské Lomnice). Čtrnáct
+      pokojů v obci není chata na trase a občerstvení pro kolemjdoucí
+      doloženo není.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/1470867084
+    slug: vysoke-tatry/chata-goral
+    duvod: >-
+      Chata k pronájmu (OSM tourism=chalet, addr:city Veľká Franková, website
+      https://www.hauzi.sk/chata-goral — inzertní portál pronájmů). Pozor:
+      jmenovec Chalupy Goral v Jezersku, naměřeno 4 118 m, viz
+      `_jmenovci.yaml`.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/788899509
+    slug: vysoke-tatry/chata-medovka
+    duvod: >-
+      Chata k pronájmu (OSM tourism=chalet, addr:city Východná, website
+      https://medovka.com/chata/chata-medovka/ — jedna z chat téhož
+      pronajímatele). Viz Chata Dúška.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/2976292382
+    slug: vysoke-tatry/chata-na-antosaku
+    duvod: >-
+      Chata patřící k ubytovacímu objektu (OSM tourism=guest_house, website
+      https://www.vilapanorama.sk/chata-na-antosaku — jednotka Vily
+      Panorama). Bez doloženého občerstvení pro veřejnost.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/9958581836
+    slug: vysoke-tatry/chata-tatry
+    duvod: >-
+      Chata k pronájmu (OSM tourism=chalet, website
+      https://chatatatrylomnica.sk/chata-tatry/). Objekt v Tatranské Lomnici
+      bez doloženého občerstvení pro kolemjdoucí.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8817311949
+    slug: vysoke-tatry/chata-u-jany
+    duvod: >-
+      Objekt k pronájmu ve dvoře rodinného domu — doloženo popisem v OSM:
+      „Chatka U Jany je samostatný kompletne vybavený objekt vo dvore
+      rodinného domu na začiatku obce Ždiar. Prenajíma sa celoročne." Website
+      chata-ujany.123u.sk.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8266072650
+    slug: vysoke-tatry/chata-valaska
+    duvod: >-
+      Chata penzionu (OSM tourism=guest_house, contact:website
+      http://www.penzionvalaska.sk/). Bez doloženého občerstvení pro
+      kolemjdoucí.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/9001148920
+    slug: vysoke-tatry/domek-polny-kwiat
+    duvod: >-
+      Domek k pronájmu (OSM tourism=chalet, addr:city Zakopane, addr:street
+      Cyrhla). Zakopanské předměstí, ne trasa.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8829634503
+    slug: vysoke-tatry/domek-regionalny-rozetka
+    duvod: >-
+      Registrované soukromé ubytování — doloženo popisem v OSM: „Kwaterodawca
+      66/10 - UM Zakopane", tedy evidenční číslo poskytovatele u zakopanského
+      magistrátu. Website domki-rozetka.pl, addr:street Oberconiówka.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/7664092658
+    slug: vysoke-tatry/domek-wierchowa
+    duvod: >-
+      Domek k pronájmu (OSM tourism=chalet, website
+      https://wierchowa.pl/kontakt/). Bez doloženého občerstvení.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/9442799979
+    slug: vysoke-tatry/domki-na-gubalowce
+    duvod: >-
+      Domky k pronájmu — název v množném čísle (OSM name „Domki na
+      Gubałówce", tourism=chalet, addr:city Zakopane, addr:street Gubałówka).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/250515533
+    slug: vysoke-tatry/goralska-chata
+    duvod: >-
+      Ubytování v obci (OSM tourism=guest_house, addr:city Zakopane,
+      addr:street Oswalda Balzera). Ulice Oswalda Balzera je zakopanská
+      silnice k Morskému Oku, objekt stojí v zástavbě.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5832847490
+    slug: vysoke-tatry/goralska-kryjowka
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, addr:city Zakopane, addr:street
+      Kornela Makuszyńskiego). Městská zástavba.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/130940212
+    slug: vysoke-tatry/gorska-osada
+    duvod: >-
+      Areál k pronájmu (OSM tourism=chalet, addr:city Poronin, addr:street
+      Kośne Hamry). Obec Poronin leží mimo Tatry.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/59595277
+    slug: vysoke-tatry/green-park-chalet
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, addr:city Stará Lesná). Viz
+      Alpina 1 a 2 v téže obci.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/743457114
+    slug: vysoke-tatry/high-tatras-chalet
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, addr:city Štrba, addr:street K
+      vodopádom). Adresa v zástavbě Tatranské Štrby.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5825111384
+    slug: vysoke-tatry/holiday-house-daniela
+    duvod: >-
+      Samostatná chata pro pět osob — doloženo popisem v OSM: „Samostatná
+      chata pre 5 osôb". Website
+      zdiar.eu/sk/ubytovanie/chaty/holiday-house-daniela.html, tedy katalog
+      ubytování obce Ždiar.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/64794778
+    slug: vysoke-tatry/horske-vilky-polana
+    duvod: >-
+      Vily k pronájmu — název v množném čísle (OSM name „Horské Vilky
+      Poľana", tourism=chalet, addr:city Vysoké Tatry).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/186050191
+    slug: vysoke-tatry/hotel-sorea-hutnik
+    duvod: >-
+      Lázeňský hotel (OSM tourism=hotel, operator „SOREA, spol. s r.o.",
+      website sorea.sk/vysoke-tatry/hotel-sorea-hutnik-i/, addr:city Vysoké
+      Tatry). Hotel v tatranské osadě, ne chata na trase — stejná třída jako
+      dřív vyřazené lázeňské a městské hotely.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/765223869
+    slug: vysoke-tatry/misia-chata
+    duvod: >-
+      Chata k pronájmu pro čtyři osoby (OSM tourism=chalet, capacity=4,
+      addr:city Zakopane, addr:street Bilinówka, website
+      booking.com/hotel/pl/misia-chata). Rezervační portál místo vlastního
+      webu je u téhle třídy typický.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/3428796330
+    slug: vysoke-tatry/panoramic-mountain-residence
+    duvod: >-
+      Apartmánový objekt (OSM tourism=chalet, website
+      https://www.panoramic.sk/). Název „Residence" i web popisují pronájem
+      apartmánů, ne chatu s občerstvením.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/3829955569
+    slug: vysoke-tatry/penzion-chata-polana
+    duvod: >-
+      Penzion — název to říká sám (OSM name „Penzion Chata Polana",
+      tourism=guest_house).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4318542856
+    slug: vysoke-tatry/privat-iva
+    duvod: >-
+      Soukromé ubytování — název to říká sám (OSM name „Privat Iva",
+      tourism=chalet, website https://privativa.sk/).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12186226851
+    slug: vysoke-tatry/privat-monka
+    duvod: >-
+      Soukromé ubytování — název to říká sám (OSM name „Privat Monka",
+      tourism=chalet, website https://www.monkovadolina.sk/).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5227736848
+    slug: vysoke-tatry/rozetka-resort
+    duvod: >-
+      Apartmánový areál (OSM tourism=chalet, addr:city Zakopane, addr:street
+      Zofii i Witolda Paryskich). Městská zástavba; jmenovec Domku
+      Regionalnego Rozetka téhož provozovatele.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13616064849
+    slug: vysoke-tatry/smrekowa-ostoja
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, addr:city Poronin, addr:street
+      Jesionkówka, website smrekowaostoja.pl). Obec Poronin leží mimo Tatry.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/7274556402
+    slug: vysoke-tatry/srebrny-swierk
+    duvod: >-
+      Objekt k pronájmu (OSM tourism=chalet, addr:city Zakopane, addr:street
+      Cyrhla, website booking.com/hotel/pl/srebrny-swierk).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8829634511
+    slug: vysoke-tatry/stylowa-chata
+    duvod: >-
+      Registrované soukromé ubytování — doloženo popisem v OSM: „Kwaterodawca
+      362/21 - UM Zakopane". Addr:street Zofii i Witolda Paryskich, městská
+      zástavba.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/224456897
+    slug: vysoke-tatry/vila-bellis
+    duvod: >-
+      Vila k pronájmu (OSM tourism=chalet, building=house, addr:city Vysoké
+      Tatry, website https://vilabellis.sk/).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/151515391
+    slug: vysoke-tatry/vila-kosodrevina
+    duvod: >-
+      Vila k pronájmu (OSM tourism=chalet, addr:city Štrba, addr:street
+      Limbová, website https://www.vila-kosodrevina.sk/). Adresa v zástavbě
+      Tatranské Štrby.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12196821343
+    slug: vysoke-tatry/vila-zgraja
+    duvod: >-
+      Vila k pronájmu (OSM tourism=chalet, website
+      https://www.vilazgraja.sk/).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/64795148
+    slug: vysoke-tatry/vilka-polana
+    duvod: >-
+      Vila k pronájmu — název v deminutivu (OSM name „Vilka Poľana",
+      tourism=chalet, addr:city Vysoké Tatry).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/64795135
+    slug: vysoke-tatry/villa-danielov-dom
+    duvod: >-
+      Vila k pronájmu (OSM tourism=chalet, building=house, addr:city Vysoké
+      Tatry, website https://www.danielovdom.sk/, wheelchair=no).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/10559709139
+    slug: vysoke-tatry/willa-pawlikowskich
+    duvod: >-
+      Vila k pronájmu — název to říká sám (OSM name „Willa Pawlikowskich",
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/304279128
+    slug: vysoke-tatry/willa-schodnica
+    duvod: >-
+      Vila k pronájmu (OSM tourism=chalet, addr:city Zakopane, addr:street
+      Ubocz, website willaschodnica.nocujmy.pl — rezervační portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12985903992
+    slug: vysoke-tatry/bistro-schronisko-krupowki
+    duvod: >-
+      Bistro v pěší zóně Zakopaného (OSM amenity=restaurant, addr:street
+      Krupówki, opening_hours „Mo-Su 12:00-20:00", website
+      schroniskokrupowki.pl). Slovo „schronisko" je tu značka podniku, ne
+      horská chata; ubytování OSM nenese a role na trase chybí.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13777646244
+    slug: vysoke-tatry/eko-chatka
+    duvod: >-
+      Restaurace v zástavbě Zakopaného (OSM amenity=restaurant, addr:street
+      Oswalda Balzera, opening_hours „Mo-Fr 10:00-15:00,Sa-Su 10:00-17:00").
+      Bez ubytování a bez role na horské trase.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/11073263193
+    slug: vysoke-tatry/schronisko-bukowina
+    duvod: >-
+      Restaurace v obci (OSM amenity=restaurant, addr:city Bukowina
+      Tatrzańska, addr:street Tadeusza Kościuszki, opening_hours „Mo-Su
+      12:00-22:00", website restauracja.schroniskobukowina.pl — doména sama
+      nese slovo „restauracja"). Jako u Bistra Schronisko Krupówki je
+      „schronisko" značka podniku.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/2111100814
+    slug: vysoke-tatry/chata-zbojnicka
+    duvod: >-
+      ZÁMĚNA JMÉNA, DRUHÁ V TÉTO OBLASTI PO ENCIÁNU. OSM uzel nese jen dva
+      tagy — amenity=restaurant a name=„Chata Zbójnicka" — a leží 1 130 m od
+      centra Zakopaného, zato 19 859 m od publikovaného profilu Zbojníckej
+      chaty ve Veľké Studené dolině (obojí naměřeno z GPS). Je to zakopanská
+      restaurace, ne vysokohorská chata. Mimo klíč zařazení: bez ubytování,
+      bez role na trase. Registr `_jmenovci.yaml` tuhle trojici jmen zná.
+    rozhodl: >-
+      Claude (9. 8. 2026, blok VT-03 — vyřazeno na základě dokladu v tagu
+      OSM, ne podle typu tagu)
     checked: 2026-08-09

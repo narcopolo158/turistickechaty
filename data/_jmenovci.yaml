@@ -654,16 +654,20 @@ jmenovci:
   - jadro: zbojnicka
     objekty:
       - beskydy/zbojnicka-chata
-      - vysoke-tatry/chata-zbojnicka
       - vysoke-tatry/zbojnicka-chata
     duvod: >-
-      TŘI RŮZNÉ OBJEKTY, a jeden z nich je katalogová vysokohorská chata,
+      PŮVODNĚ TŘI OBJEKTY, OD 9. 8. 2026 DVA — zakopanská
+      `vysoke-tatry/chata-zbojnicka` byla v triáži VT-03 vyřazena jako
+      restaurace v zástavbě Zakopaného (naměřeno 1 130 m od centra města
+      a 19 859 m od pravé Zbojníckej chaty); záznam je v `_vyrazeno.yaml`.
+      Zbývající dvojice se vede dál, protože jméno se v polských horách
+      opakuje a záměna by tu byla nejdražší z celého registru.
       takže záměna by tady byla nejdražší z celého registru. Naměřené
       vzdálenosti: `vysoke-tatry/zbojnicka-chata` (49.1766085 / 20.1673952,
       obec Vysoké Tatry) je ta PRAVÁ Zbojnícka chata z katalogu — 1960 m,
-      postavena 1907, vyhořela 1998; od `vysoke-tatry/chata-zbojnicka`
-      u Zakopaného je vzdálená 19 859 m a od `beskydy/zbojnicka-chata`
-      v Ustroni 112 410 m. Zakopanská a ustroňská jsou od sebe 92 857 m.
+      postavena 1907, vyhořela 1998; od `beskydy/zbojnicka-chata`
+      v Ustroni je vzdálená 112 410 m. Vyřazená zakopanská ležela 19 859 m
+      od tatranské a 92 857 m od ustroňské.
       „Zbójnicka chata" je v polských horách jméno pro hospodu ve
       zbojnickém stylu; slovenská Zbojnícka chata je naopak konkrétní
       vysokohorská chata Klubu slovenských turistov. Rozlišovač: obec
@@ -671,8 +675,9 @@ jmenovci:
       pod tisícem.
     rozhodl: >-
       Claude (8. 8. 2026, samostatný blok — kolize přišla s Michalovým
-      exportem Vysokých Tater)
-    checked: 2026-08-08
+      exportem Vysokých Tater; 9. 8. 2026 zúženo na dva objekty po triáži
+      VT-03)
+    checked: 2026-08-09
 
   # ── Nálezy z Michalova exportu Malé Fatry (8. 8. 2026, +43 kandidátů).
   # Malá Fatra sousedí s Kysuckými Beskydami, takže se tu potkávají jména
