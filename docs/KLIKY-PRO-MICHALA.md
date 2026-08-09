@@ -20,9 +20,11 @@ pravdu — dlouhý seznam s odškrtnutými řádky se přestane čtít.
 
 > **Stop-stav z 9. 8. večer VYŘEŠEN týž večer:** Actions padaly na
 > vyčerpaném billingu privátního repa; Michal repo přepnul na public
-> (minuty zdarma) a kliky zase jedou — DATA-32 pro vysoke-tatry doběhl
-> hned napoprvé (commit 3b4b8c3). Poučení pro příště: velké běhy
-> (DATA-02 přes celý korpus, DATA-28) umí spálit stovky minut.
+> (minuty zdarma) a kliky zase jedou — DATA-32 doběhl týž večer pro
+> všechny tři oblasti (vysoke-tatry, nizke-tatry, beskydy; commity
+> 3b4b8c3, e1f4956, 62dc1a3) a jeho oddíl je odsud vymazán jako hotový.
+> Poučení pro příště: velké běhy (DATA-02 přes celý korpus, DATA-28)
+> umí spálit stovky minut.
 
 ---
 
@@ -83,25 +85,6 @@ Jenže od té doby přibylo přes 60 profilů v ŠUMAVĚ, BESKYDECH a VYSOKÝCH
 TATRÁCH, které kandidátní fotky nemají vůbec. Běh jede přes všechny objekty
 najednou (políčko oblasti nemá) a potrvá dlouho; kdyby summary hlásilo
 „NEUPLNY_BEH", stačí ho spustit znovu — je idempotentní.
-
-## 3. DATA-32 lanovky — oblasti, které je ještě nemají (9. 8. 2026)
-
-Tvůj pokyn z 9. 8. („rovnou dohledej i lanovky pro vsechny pohori ktera je
-jeste nemaji") je připravený: nový workflow **„DATA-32: lanovky oblasti
-(export + přehled)"** stáhne z Overpass jen vrstvu `aerialway` (lehký běh,
-žádný 3D terén), koncovým bodům drah pro pěší doměří výšky přes Mapy.com
-(secret `MAPY_API_KEY` už v Actions je) a commitne export i hotový přehled
-`data/lanovky/<oblast>.json`. Jeden klik na oblast:
-
-| workflow                                        | políčko `oblast` | proč                                                                                                       |
-| ----------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------- |
-| **DATA-32: lanovky oblasti (export + přehled)** | `beskydy`        | 11 profilů; lanovka na Pustevny je přímo u dvou z nich                                                     |
-| **DATA-32: lanovky oblasti (export + přehled)** | `nizke-tatry`    | oblast založena, profily se chystají (Chopok — největší lanovkový systém Slovenska, Kosodrevina, Srdiečko) |
-
-Ostatní založené oblasti (Jeseníky, Malá Fatra, …) můžou počkat, až budou
-mít publikované profily — přehled lanovek bez chat nemá na webu k čemu
-odkazovat. Krkonoše, Jizerky, Ještěd a Šumava už lanovky mají z DATA-28.
-Opakovaný běh soubor prostě přepíše čerstvým stavem OSM, nic nerozbije.
 
 ## 4. DATA-06 výšky přístupových tras — Šumava
 

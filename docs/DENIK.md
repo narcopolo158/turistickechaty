@@ -117,13 +117,26 @@ lanovek pro pěší s výškami z Mapy.com, vazby sedí — Solisko Expres →
 Chata pod Soliskom 133 m, Štart–Skalnaté pleso → Skalnatá chata 162 m,
 visutá lanovka na Lomnický štít v přehledu. Vedlejší zisk zveřejnění:
 sandbox nově PŘEČTE stránky Actions přes web (dřív 404) — příště můžu
-stav běhů kontrolovat sám a nežádat o screenshot. Kliky beskydy
-a nizke-tatry v KLIKY oddílu 3 trvají; řádek vysoke-tatry vymazán.
+stav běhů kontrolovat sám a nežádat o screenshot.
+
+**A MICHAL TÝŽ VEČER DOKLIKAL I ZBYLÉ DVĚ OBLASTI — DATA-32 je celý
+hotový, oddíl 3 z KLIKY vymazán.** Nízké Tatry (e1f4956): 20 lanovek
+pro pěší, 157 vleků mimo přehled; vazby přesně potvrzují dnešní
+profily — Funitel Priehyba–Chopok → Kamenná chata 140 m,
+Kosodrevina–Chopok → Kamenná chata 81 m, Krupová–Kosodrevina → Chata
+Kosodrevina 45 m a Trangoška 1232 m. Beskydy (62dc1a3): 51 lanovek pro
+pěší, 293 vleků; Severka → Turistická chata Severka 20 m, Javorový
+vrch → chata 595 m. DROBNOST K VĚDOMÍ: beskydský export nese stavOsm
+2026-05-06 — zrcadlo Overpass mělo zpožděná data; soubor to poctivě
+přiznává a případný opakovaný běh později stav srovná. Lanovky teď mají
+všechna pohoří s publikovanými profily: krkonose, jizerske-hory,
+jestedsky-hrbet, sumava (z DATA-28) + vysoke-tatry, nizke-tatry,
+beskydy (z DATA-32b).
 
 **Příště:** Domček HS na Čertovici (profil bez GPS po vzoru Rovnice,
 nebo počkat na DATA-31); zbývající katalog NT: Liptov, Opalisko; triáž
-NT pass 2 (thin records); Beskydy jádro. Kliky DATA-32 pro beskydy
-a nizke-tatry — Kosodrevina i Kamienka na ně odkazují.
+NT pass 2 (thin records); Beskydy jádro — a napojit přehledy lanovek
+na UI oblastí, až na to přijde řada v backlogu.
 
 **Otázky pro Michala:** beze změny; nová drobnost k rozhodnutí —
 **HUT-0158 „Chata na Čertovici"**: rešerše říká, že žádný živý provoz
