@@ -76,12 +76,25 @@ aktuálního ceníku provozovatele (vzor Zamkovského chaty: zastaralost
 pramene po doložené rekonstrukci není rozpor). Drobnost cestou: Radegast
 jmenoval v próze beskydy.cz, ale v pramenech ho neměl — připsán.
 
-**Příště:** triáž 230 kandidátů Nízkých Tater vzorem VT-03 (jádro 9
-alpine_hut + 36 wilderness_hut; první rozhodnutí Kosodrevina 151 m
-a příslušnost Smrekovice po kliku velka-fatra); povyšování z beskydského
-jádra fronty. Po Michalových klicích DATA-32 dostanou Tatry, Beskydy
-a Nízké Tatry přehledy lanovek — a profily Kamienky i Štefáničky na ně
-budou moct odkázat.
+**TRIÁŽ NÍZKÝCH TATER, PRVNÍ PRŮCHOD: 230 → 176 kandidátů.** Vyřazeno 54
+objektů, u kterých je doklad pronájmu přímo v tagu OSM — vzor VT-03
+a Beskyd: v názvu (devatenáct „Chalúpek" s vířivkou z areálu Chalúpky
+u babky, Priváty, Apartmány, Bungalovy, Drevenice, Vily, šest srubů
+„Zrub A"–„F" pod jedním webem), v tagu tourism=apartment (8), nebo
+v odkazu na portál pronájmů (123u.sk, megaubytovanie.sk, hauzi.sk).
+**Mederlyho chata zůstává ve frontě navzdory portálovému odkazu** — nese
+osobní jméno jako Kolářova chata a zaslouží rešerši, ne mechanické
+vyřazení. Čtyři vyřazení uzavřela jmenné kolize přesně tak, jak to jejich
+záznamy předpověděly (Chopok-penzion, Evka, Relax, Helena) — registr po
+nich uklizen na 44 živých jader; jádro fronty (7 alpine_hut + 36
+wilderness_hut) zůstalo netknuté.
+
+**Příště:** pokračovat triáží Nízkých Tater (zbývá 176; další průchod =
+thin records a guest_housy s dokladem) a povyšovat z jádra: čtyři útulny
+z katalogu (Ďurková, Barborka…), Kosodrevina 151 m jako první rozhodnutí
+merge vs. dva profily; Smrekovica po kliku velka-fatra. Po Michalových
+klicích DATA-32 dostanou Tatry, Beskydy a Nízké Tatry přehledy lanovek —
+a profily Kamienky i Štefáničky na ně budou moct odkázat.
 
 **Otázky pro Michala:** beze změny (1–7, 9 z jedenáctého bloku); k tomu
 **tři nové kliky DATA-32** (KLIKY oddíl 3) a připomínka druhého běhu

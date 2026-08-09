@@ -1904,3 +1904,516 @@ vyrazeno:
       Claude (9. 8. 2026, první průchod triáže Beskyd — vyřazeno na základě
       dokladu v tagu OSM, vzor VT-03)
     checked: 2026-08-09
+
+  # ── TRIÁŽ NÍZKÝCH TATER, PRVNÍ PRŮCHOD (9. 8. 2026, vzor VT-03 a Beskyd) ──
+  # Fronta Nízkých Tater měla po povýšení Štefáničky a Kamienky 230
+  # kandidátů; tenhle průchod vyřazuje JEN těch 54, u kterých je doklad
+  # pronájmu přímo v tagu OSM — v názvu („Chalúpka 01 s kaďou“, „Privát“,
+  # „Apartmány“, „Bungalovy“, „Drevenica“, „Vila/Villa“, „Zrub A“–„F“),
+  # v tagu tourism=apartment, nebo v odkazu na rezervační/inzertní portál
+  # (123u.sk, megaubytovanie.sk, hauzi.sk) či půjčovnu (chalupky.sk).
+  # Mederlyho chata portál má taky, ale nese osobní jméno jako Kolářova
+  # chata — zůstává ve frontě na rešerši, ne na mechanické vyřazení.
+  # Jádro fronty (7 alpine_hut + 36 wilderness_hut) zůstává celé.
+  - osm: https://www.openstreetmap.org/node/9876002598
+    slug: nizke-tatry/chalupa-bialikova-usadlost
+    duvod: >-
+      Apartmán (OSM tourism=apartment, name „Chalupa Bialikova usadlosť“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5546185220
+    slug: nizke-tatry/chata-9005
+    duvod: >-
+      Apartmán (OSM tourism=apartment, name „Chata 9005“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/6030763814
+    slug: nizke-tatry/chata-diamir
+    duvod: >-
+      Apartmán (OSM tourism=apartment, name „Chata Diamír“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5560026557
+    slug: nizke-tatry/chata-evka
+    duvod: >-
+      Apartmán (OSM tourism=apartment). Jmenovkyně oravské Chaty Evky v
+      registru _jmenovci.yaml — kolize zaniká vyřazením, jak záznam z 9. 8.
+      2026 předpokládal.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5560034388
+    slug: nizke-tatry/chata-margita
+    duvod: >-
+      Apartmán (OSM tourism=apartment, name „Chata Margita“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/857125540
+    slug: nizke-tatry/chata-pod-hrebenom
+    duvod: >-
+      Apartmán (OSM tourism=apartment, name „Chata pod hrebenom“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/7628706994
+    slug: nizke-tatry/chata-u-karoliny
+    duvod: >-
+      Apartmán (OSM tourism=apartment, name „Chata u Karolíny“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13074134057
+    slug: nizke-tatry/horsky-penzion-chata-piecky
+    duvod: >-
+      Apartmán (OSM tourism=apartment, name „Horský penzión Chata Piecky“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/118295843
+    slug: nizke-tatry/chalupa-brezinka
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „Chalupa Brezinka“,
+      tourism=chalet, website brezinka.123u.sk — rezervační/inzertní portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8824487921
+    slug: nizke-tatry/chalupa-sipka
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „Chalupa Šípka“,
+      tourism=guest_house, website sipka.123u.sk — rezervační/inzertní
+      portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8831683912
+    slug: nizke-tatry/chalupa-vanda
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „Chalupa Vanda“,
+      tourism=guest_house, website chalupavanda.123u.sk — rezervační/inzertní
+      portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/151858985
+    slug: nizke-tatry/chalupa-vazec
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „Chalupa Važec“,
+      tourism=chalet, website vazec.123u.sk — rezervační/inzertní portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/69071006
+    slug: nizke-tatry/chalupka-01-s-kadou
+    duvod: >-
+      Číslovaná chalúpka k pronájmu z areálu „Chalúpky u babky“ — název to
+      říká sám (OSM name „Chalúpka 01 s kaďou“, website chalupky.sk —
+      půjčovna chalup).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4395506629
+    slug: nizke-tatry/chalupka-03-s-virivkou-saunou
+    duvod: >-
+      Číslovaná chalúpka k pronájmu z areálu „Chalúpky u babky“ — název to
+      říká sám (OSM name „Chalúpka 03 s vírivkou, saunou“, website
+      chalupky.sk — půjčovna chalup).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4395506627
+    slug: nizke-tatry/chalupka-07-s-virivkou-a-so-saunou
+    duvod: >-
+      Číslovaná chalúpka k pronájmu z areálu „Chalúpky u babky“ — název to
+      říká sám (OSM name „Chalúpka 07 s vírivkou a so saunou“, website
+      chalupky.sk — půjčovna chalup).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4395506632
+    slug: nizke-tatry/chalupka-18
+    duvod: >-
+      Číslovaná chalúpka k pronájmu z areálu „Chalúpky u babky“ — název to
+      říká sám (OSM name „Chalúpka 18“, website chalupky.sk — půjčovna
+      chalup).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/79991827
+    slug: nizke-tatry/chalupka-19-s-virivkou
+    duvod: >-
+      Číslovaná chalúpka k pronájmu z areálu „Chalúpky u babky“ — název to
+      říká sám (OSM name „Chalúpka 19 s vírivkou“, website chalupky.sk —
+      půjčovna chalup).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/3535121624
+    slug: nizke-tatry/chalupka-23
+    duvod: >-
+      Číslovaná chalúpka k pronájmu z areálu „Chalúpky u babky“ — název to
+      říká sám (OSM name „Chalúpka 23“, website chalupky.sk — půjčovna
+      chalup).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/998179916
+    slug: nizke-tatry/chalupka-28-s-virivkou-a-so-saunou
+    duvod: >-
+      Číslovaná chalúpka k pronájmu z areálu „Chalúpky u babky“ — název to
+      říká sám (OSM name „Chalúpka 28 s vírivkou a so saunou“, website
+      chalupky.sk — půjčovna chalup).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13658632454
+    slug: nizke-tatry/chalupka-28-s-virivkou-saunou
+    duvod: >-
+      Číslovaná chalúpka k pronájmu z areálu „Chalúpky u babky“ — název to
+      říká sám (OSM name „Chalúpka 28 s vírivkou, saunou“, website
+      chalupky.sk — půjčovna chalup).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/611940310
+    slug: nizke-tatry/chalupka-48-s-virivkou-a-so-saunou
+    duvod: >-
+      Číslovaná chalúpka k pronájmu z areálu „Chalúpky u babky“ — název to
+      říká sám (OSM name „Chalúpka 48 s vírivkou a so saunou“, website
+      chalupky.sk — půjčovna chalup).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13584411240
+    slug: nizke-tatry/chata-bozena
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „Chata Božena“,
+      tourism=chalet, website chatabozena.123u.sk — rezervační/inzertní
+      portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8817449096
+    slug: nizke-tatry/chata-chopok-8817449096
+    duvod: >-
+      Penzion v Demänovské Dolině pojmenovaný po hoře, k pronájmu (OSM
+      tourism=guest_house, website chatachopok.123u.sk — portál pronájmů).
+      Registr _jmenovci.yaml u jádra „chopok" přesně tohle předpověděl;
+      kolize zaniká vyřazením.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8831676718
+    slug: nizke-tatry/chata-helena
+    duvod: >-
+      Chata k pronájmu u Ružomberku (OSM tourism=guest_house, website
+      chatahelena.123u.sk — portál pronájmů). Jmenovkyně publikované
+      krkonošské Boudy Heleny (310 km) v registru _jmenovci.yaml — kolize
+      zaniká vyřazením.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/317465373
+    slug: nizke-tatry/chata-limba-pod-krivanom
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „Chata Limba pod
+      Kriváňom“, tourism=chalet, website hauzi.sk — rezervační/inzertní
+      portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/58537506
+    slug: nizke-tatry/chata-maria-hrabovo
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „CHATA MÁRIA
+      Hrabovo“, tourism=chalet, website megaubytovanie.sk —
+      rezervační/inzertní portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/303856667
+    slug: nizke-tatry/chata-relax
+    duvod: >-
+      Chata k pronájmu (OSM tourism=chalet, website relax-chata.123u.sk —
+      portál pronájmů). „Relax" je marketingové jméno pronájmů, přesně jak
+      záznam registru z 9. 8. 2026 čekal; jádro v registru drží už jen druhá
+      Chata Relax.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/79979449
+    slug: nizke-tatry/chata-u-kmotra
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „Chata U Kmotra“,
+      tourism=chalet, website chataukmotra.123u.sk — rezervační/inzertní
+      portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/relation/14483460
+    slug: nizke-tatry/riverstone-chalets
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „Riverstone Chalets“,
+      tourism=chalet, website riverstone.123u.sk — rezervační/inzertní
+      portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/896021815
+    slug: nizke-tatry/u-boba
+    duvod: >-
+      Objekt k pronájmu — doklad přímo v tagu OSM (name „u Boba“,
+      tourism=chalet, website hauzi.sk — rezervační/inzertní portál).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/1350754414
+    slug: nizke-tatry/apartmany-kellov-dom
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Apartmány Kellov Dom“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/2499524474
+    slug: nizke-tatry/bungalovy-jasna-lucky
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Bungalovy Jasná
+      Lúčky“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4395506630
+    slug: nizke-tatry/chalupka-04-s-virivkou
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Chalúpka 04 s
+      vírivkou“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5721130208
+    slug: nizke-tatry/chalupka-05-s-virivkou
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Chalúpka 05 s
+      vírivkou“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4395506631
+    slug: nizke-tatry/chalupka-08-s-bazenom-virivkou-a-saunou
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Chalúpka 08 s bazénom,
+      vírivkou a saunou“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4395506633
+    slug: nizke-tatry/chalupka-20-s-virivkou
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Chalúpka 20 s
+      vírivkou“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4395506634
+    slug: nizke-tatry/chalupka-22
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Chalúpka 22“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/1013350366
+    slug: nizke-tatry/chalupka-na-luke
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Chalúpka na Lúke“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/566288389
+    slug: nizke-tatry/drevenica-simona
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Drevenica Simona“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/211745270
+    slug: nizke-tatry/privat-chlievy
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Privát Chlievy“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/58960595
+    slug: nizke-tatry/privat-paula
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Privát Paula“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/58960755
+    slug: nizke-tatry/privat-relax
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Privát Relax“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/58960472
+    slug: nizke-tatry/privat-veverica
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Privát Veverica“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/211745342
+    slug: nizke-tatry/stylova-drevenica-rudy
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Štýlová drevenica
+      RUDY“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/58960860
+    slug: nizke-tatry/vila-viktoria
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Vila Viktória“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/1303849638
+    slug: nizke-tatry/villa-pod-hviezdami-jasna
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Villa pod hviezdami
+      Jasná“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/1165012059
+    slug: nizke-tatry/wellness-villa-bobrik
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Wellness Villa
+      Bobrik“, tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/435913032
+    slug: nizke-tatry/zrub-a
+    duvod: >-
+      Jeden ze šesti stejnojmenných srubů k pronájmu pod jedním webem (OSM
+      name „Zrub A“, website zrubypodchopkom.sk).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/435913033
+    slug: nizke-tatry/zrub-b
+    duvod: >-
+      Jeden ze šesti stejnojmenných srubů k pronájmu pod jedním webem (OSM
+      name „Zrub B“, website zrubypodchopkom.sk).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/435913026
+    slug: nizke-tatry/zrub-c
+    duvod: >-
+      Jeden ze šesti stejnojmenných srubů k pronájmu pod jedním webem (OSM
+      name „Zrub C“, website zrubypodchopkom.sk).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/435913022
+    slug: nizke-tatry/zrub-d
+    duvod: >-
+      Jeden ze šesti stejnojmenných srubů k pronájmu pod jedním webem (OSM
+      name „Zrub D“, website zrubypodchopkom.sk).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/435913021
+    slug: nizke-tatry/zrub-e
+    duvod: >-
+      Jeden ze šesti stejnojmenných srubů k pronájmu pod jedním webem (OSM
+      name „Zrub E“, website zrubypodchopkom.sk).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/932323914
+    slug: nizke-tatry/zrub-f
+    duvod: >-
+      Jeden ze šesti stejnojmenných srubů k pronájmu pod jedním webem (OSM
+      name „Zrub F“, website zrubypodchopkom.sk).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/9044988706
+    slug: nizke-tatry/zruby-bystra
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Zruby Bystrá“,
+      tourism=chalet).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Nízkých Tater — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
