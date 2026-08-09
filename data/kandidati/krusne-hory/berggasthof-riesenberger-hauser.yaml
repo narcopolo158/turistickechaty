@@ -1,0 +1,37 @@
+# Berggasthof "Riesenberger Häuser" — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-09)
+# Zdroj: https://www.openstreetmap.org/node/726818632 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krusne-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Berggasthof "Riesenberger Häuser"
+slug: berggasthof-riesenberger-hauser
+zeme: de
+oblast: krusne-hory
+lat: 50.4646388
+lng: 12.6819383
+obec: Eibenstock
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/726818632 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+kontakty:
+  telefon: +49 3773 883080
+  email: riesenberger-haeuser@gmx.de
+  web: https://riesenberger-haeuser.de/gaststaette/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/726818632 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Gabriela Zirnstein
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo,We-Su,PH 11:00+; Tu off

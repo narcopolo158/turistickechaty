@@ -1,0 +1,53 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T20:15:19Z",
+    "timestamp_areas_base": "2026-08-08T22:59:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 410321060,
+  "lat": 50.5647168,
+  "lon": 13.4305893,
+  "tags": {
+    "amenity": "restaurant",
+    "capacity": "49",
+    "email": "info@horskyhotellesna.cz",
+    "name": "Horský hotel Lesná",
+    "name:de": "Berghotel Lesna",
+    "phone": "+420 476 113 040",
+    "ref:nap": "23582",
+    "tourism": "hotel",
+    "website": "https://www.horskyhotellesna.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2837527541,
+  "lat": 50.7066910,
+  "lon": 13.8566352,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "drink:kofola": "yes",
+    "name": "Komáří vížka",
+    "name:de": "Mückentürmchen",
+    "opening_hours": "Mo-Su,PH 10:00-22:00",
+    "operator": "Komáří vížka, s.r.o.",
+    "phone": "+420 417 861348",
+    "smoking": "separated",
+    "toilets": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://www.komarivizka.eu/",
+    "wheelchair": "no",
+    "wheelchair:description": "Schody u vchodu, přístupná terasa",
+    "wheelchair:description:de": "Stufen am Eingang, Terrasse zugänglich"
+  }
+}
+
+  ]
+}

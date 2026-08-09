@@ -1,0 +1,821 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-20T00:37:19Z",
+    "timestamp_areas_base": "2026-06-19T15:00:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 243050216,
+  "lat": 50.3558204,
+  "lon": 12.8393574,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:phone": "+420 725 948 674",
+    "contact:website": "https://hotelplesivec.cz",
+    "name": "Hotel Plešivec",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 260287197,
+  "lat": 50.4002053,
+  "lon": 12.7816720,
+  "tags": {
+    "direction": "0-360",
+    "height": "21",
+    "man_made": "tower",
+    "name": "Rozhledna Blatenský vrch",
+    "name:de": "Erzherzogin-Zita-Aussichtsturm",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q677841",
+    "wikipedia": "cs:Blatenský vrch"
+  }
+},
+{
+  "type": "node",
+  "id": 667317636,
+  "lat": 50.3672630,
+  "lon": 12.5099331,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Bleiberg"
+  }
+},
+{
+  "type": "node",
+  "id": 944400049,
+  "lat": 50.6031235,
+  "lon": 13.4425586,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "U Rozhledny",
+    "phone": "+420731801881"
+  }
+},
+{
+  "type": "node",
+  "id": 1281191574,
+  "lat": 50.5551809,
+  "lon": 13.9312463,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "german",
+    "name": "Bufet Královny českého středohoří",
+    "opening_hours": "Wochenende (Fr.Sa.So.) / Pátek-Sobota-Neděle",
+    "operator": "Milešovka o.p.s.",
+    "payment:cash": "yes",
+    "phone": "602 716 486"
+  }
+},
+{
+  "type": "node",
+  "id": 1310931494,
+  "lat": 50.4001597,
+  "lon": 12.7816754,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Imbiss Rastaman"
+  }
+},
+{
+  "type": "node",
+  "id": 1722601948,
+  "lat": 50.4615450,
+  "lon": 13.4189192,
+  "tags": {
+    "addr:housenumber": "45/7",
+    "addr:postcode": "430 01",
+    "addr:street": "Revoluční",
+    "amenity": "restaurant",
+    "designation": "pizzeria",
+    "name": "Amerika Bar",
+    "website": "https://pizzamafia.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1824816625,
+  "lat": 50.3562557,
+  "lon": 12.8405096,
+  "tags": {
+    "amenity": "fast_food"
+  }
+},
+{
+  "type": "node",
+  "id": 1989454155,
+  "lat": 50.4612726,
+  "lon": 13.4189783,
+  "tags": {
+    "addr:conscriptionnumber": "32",
+    "addr:country": "CZ",
+    "addr:housenumber": "32/8",
+    "addr:place": "Chomutov",
+    "addr:postcode": "43001",
+    "addr:street": "Revoluční",
+    "addr:streetnumber": "8",
+    "amenity": "restaurant",
+    "name": "U Dvou medvídků",
+    "ref:ruian:addr": "23492457",
+    "source": "http://www.udvoumedvidku.cz/",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 2137016680,
+  "lat": 50.4778429,
+  "lon": 13.5431701,
+  "tags": {
+    "ele": "298",
+    "fee": "no",
+    "height": "7.5",
+    "man_made": "tower",
+    "name": "Rozhledna Maják",
+    "start_date": "2012-07-24",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "wikidata": "Q15613873",
+    "wikipedia": "cs:Strupčice (rozhledna)"
+  }
+},
+{
+  "type": "node",
+  "id": 2343085015,
+  "lat": 50.4620542,
+  "lon": 13.4171578,
+  "tags": {
+    "addr:housenumber": "148",
+    "addr:postcode": "43001",
+    "addr:street": "Klostermannova",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Corado steak restaurant",
+    "website": "http://www.radora.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2357655835,
+  "lat": 50.5547822,
+  "lon": 13.9316046,
+  "tags": {
+    "amenity": "restaurant",
+    "internet_access": "wlan",
+    "internet_access:fee": "yes",
+    "name": "Chata Milešovka",
+    "opening_hours": "Fr 20:00-23:00; Sa 09:00-23:00; Su 09:00-16:00",
+    "operator": "Milešovka s.r.o.",
+    "phone": "+420 606 229 823",
+    "source:opening_hours": "2018-04-08"
+  }
+},
+{
+  "type": "node",
+  "id": 2601022030,
+  "lat": 50.3844871,
+  "lon": 13.7944049,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Ejemova chata",
+    "opening_hours": "Apr-Oct: Sa,Su,PH 10:00-18:00; Apr-Oct Tu-Fr 13:00-18:00",
+    "phone": "+420733184750",
+    "website": "https://www.cervenak-rozhledna.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2601022035,
+  "lat": 50.3844476,
+  "lon": 13.7943447,
+  "tags": {
+    "man_made": "tower",
+    "name": "Frotzelova rozhledna",
+    "phone": "+420733184750",
+    "tower:type": "observation",
+    "website": "https://www.cervenak-rozhledna.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2939250406,
+  "lat": 50.3840555,
+  "lon": 13.2577554,
+  "tags": {
+    "access": "yes",
+    "height": "16",
+    "man_made": "tower",
+    "name": "Rozhledna na Svatém kopečku",
+    "name:cs": "Rozhledna na Svatém kopečku",
+    "source": "http://www.mesto-kadan.eu/Artikel/5056/aussichtsturm-auf-dem-heiligen-berg-svaty-vrch-in-kaaden",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2988602548,
+  "lat": 50.3246169,
+  "lon": 13.5457542,
+  "tags": {
+    "addr:conscriptionnumber": "303",
+    "addr:housenumber": "303",
+    "addr:place": "Žatec",
+    "addr:postcode": "43801",
+    "addr:street": "nám. Prokopa Malého",
+    "amenity": "pub",
+    "name": "Pivovar Pioneer",
+    "ref:ruian:addr": "40193136"
+  }
+},
+{
+  "type": "node",
+  "id": 3480110421,
+  "lat": 50.6113256,
+  "lon": 13.6102448,
+  "tags": {
+    "ele": "410",
+    "man_made": "tower",
+    "name": "Vyhlídka Czedikův gloriet",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3547533486,
+  "lat": 50.3673211,
+  "lon": 12.5100234,
+  "tags": {
+    "access": "permissive",
+    "height": "16",
+    "man_made": "tower",
+    "name": "Rozhledna Bleiberg",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4914286489,
+  "lat": 50.3558608,
+  "lon": 12.8393948,
+  "tags": {
+    "contact:website": "https://hotelplesivec.cz/rozhledna",
+    "man_made": "tower",
+    "name": "Plešivec",
+    "opening_hours": "10:00-22:00",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7120226286,
+  "lat": 50.3245984,
+  "lon": 13.5457755,
+  "tags": {
+    "addr:housenumber": "303",
+    "addr:street": "nám. Prokopa Velkého",
+    "amenity": "biergarten",
+    "name": "Pioneer Beer",
+    "opening_hours": "Th 17:00-22:00; Fr-Sa 17:00-24:00"
+  }
+},
+{
+  "type": "node",
+  "id": 10011052109,
+  "lat": 50.3678283,
+  "lon": 12.8050473,
+  "tags": {
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Vyhlídka",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11800261467,
+  "lat": 50.3711134,
+  "lon": 13.4630601,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11887514298,
+  "lat": 50.5019937,
+  "lon": 13.6515792,
+  "tags": {
+    "fee": "yes",
+    "height": "26",
+    "man_made": "tower",
+    "opening_hours": "Mo-Su 10:00-19:00",
+    "operator": "SPORTOVNÍ HALA MOST, a.s.",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13159760127,
+  "lat": 50.3618440,
+  "lon": 13.1092561,
+  "tags": {
+    "man_made": "tower",
+    "name": "Pastviště",
+    "note": "Povolen vstup maximálně 3 lidí.",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 13366137986,
+  "lat": 50.5526316,
+  "lon": 13.7776708,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "height": "4",
+    "man_made": "tower",
+    "tower:construction": "steel",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 72863859,
+  "center": {
+    "lat": 50.4611630,
+    "lon": 13.4176437
+  },
+  "nodes": [
+    340557885,
+    340557887,
+    340557697,
+    340557699,
+    340557889,
+    340557885
+  ],
+  "tags": {
+    "access": "customers",
+    "building": "yes",
+    "man_made": "tower",
+    "name": "Městská věž",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 150738864,
+  "center": {
+    "lat": 50.5447264,
+    "lon": 13.6232876
+  },
+  "nodes": [
+    1636268927,
+    1636268929,
+    1636268931,
+    1636268928,
+    1636268927
+  ],
+  "tags": {
+    "height": "80",
+    "man_made": "tower",
+    "name": "ČHMI",
+    "operator": "ČHMI",
+    "tower:construction": "guyed_lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 244045071,
+  "center": {
+    "lat": 50.5551130,
+    "lon": 13.9313480
+  },
+  "nodes": [
+    2514023591,
+    2514023595,
+    2514023589,
+    2514023587,
+    2514023591
+  ],
+  "tags": {
+    "amenity": "biergarten"
+  }
+},
+{
+  "type": "way",
+  "id": 249589371,
+  "center": {
+    "lat": 50.3465079,
+    "lon": 12.7408947
+  },
+  "nodes": [
+    2561729631,
+    2561729623,
+    5182042172,
+    2561729626,
+    2561729633,
+    2561729631
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "ele": "976.6",
+    "height": "26",
+    "man_made": "tower",
+    "name": "Pajndl",
+    "name:de": "Peindl",
+    "source": "cuzk:km",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "wikidata": "Q1558671",
+    "wikipedia": "cs:Tisovský vrch"
+  }
+},
+{
+  "type": "way",
+  "id": 272217609,
+  "center": {
+    "lat": 50.6033209,
+    "lon": 13.4427079
+  },
+  "nodes": [
+    4579074094,
+    2771725583,
+    4579074093,
+    2771725585,
+    2771725584,
+    2771725574,
+    9176714392,
+    2771725575,
+    2771725577,
+    4579074094
+  ],
+  "tags": {
+    "building": "civic",
+    "building:ruian:type": "15",
+    "fee": "yes",
+    "height": "19",
+    "historic": "yes",
+    "man_made": "tower",
+    "name:de": "Jahnwarte",
+    "ref:ruian:building": "38007410",
+    "source": "cuzk:ruian",
+    "tower:type": "observation",
+    "wikimedia_commons": "File:Hora Svate Kateriny - tower.jpg"
+  }
+},
+{
+  "type": "way",
+  "id": 290578470,
+  "center": {
+    "lat": 50.3840549,
+    "lon": 13.2577507
+  },
+  "nodes": [
+    2940927773,
+    2940927772,
+    2940927775,
+    2940927774,
+    4290755632,
+    2940927773
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "19",
+    "height": "14",
+    "man_made": "tower",
+    "name": "Rozhledna na Svatém kopečku",
+    "name:de": "Aussichtsturm Heiliger Berg",
+    "ref:ruian:building": "41868889",
+    "source": "cuzk:ruian",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "https://www.mesto-kadan.eu/Artikel/5056/aussichtsturm-auf-dem-heiligen-berg-svaty-vrch-in-kaaden",
+    "wikidata": "Q92076525"
+  }
+},
+{
+  "type": "way",
+  "id": 296657892,
+  "center": {
+    "lat": 50.3245144,
+    "lon": 13.5446412
+  },
+  "nodes": [
+    3004633705,
+    3004633706,
+    3004633707,
+    3004633710,
+    3004633716,
+    3004633708,
+    3004633709,
+    3004633704,
+    3004633705
+  ],
+  "tags": {
+    "addr:city": "Žatec",
+    "addr:housenumber": "1951",
+    "addr:postcode": "43801",
+    "addr:street": "nám. Prokopa Velkého",
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:ruian:type": "5",
+    "cuisine": "regional",
+    "name": "Restaurant & pivovar \"U Orloje\" (Chrám Chmele a Piva)",
+    "ref:ruian:building": "9222286",
+    "website": "https://restaurant-u-orloje-zatec.eatbu.com/?lang=cs#reservation"
+  }
+},
+{
+  "type": "way",
+  "id": 424935355,
+  "center": {
+    "lat": 50.5548446,
+    "lon": 13.9312963
+  },
+  "nodes": [
+    3791598427,
+    1281191555,
+    4242907521,
+    4242907522,
+    3791598421,
+    3791598422,
+    3791598426,
+    3791598427
+  ],
+  "tags": {
+    "access": "yes",
+    "alt_name": "rozhledna Milešovka",
+    "building": "tower",
+    "building:levels": "6",
+    "description": "otevřeno denně po celý rok / ganzjährig täglich geöffnet (30 kc)",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Milešovka",
+    "opening_hours": "Apr-Oct: Tu-Su 11:00-18:00; Nov-Mar: Sa,Su,PH 11:00-16:00 || \"closed in bad weather\"",
+    "operator": "Ústav fyziky atmosféry AV ČR",
+    "operator:short": "ÚFA AV ČR",
+    "source": "uhul:ortofoto;survey;cuzk:km",
+    "toilets": "no",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "https://www.ufa.cas.cz/struktura-ustavu/oddeleni-meteorologie/observatore/milesovka/pro-navstevniky/",
+    "wikidata": "Q92074563"
+  }
+},
+{
+  "type": "way",
+  "id": 439489431,
+  "center": {
+    "lat": 50.3959455,
+    "lon": 12.9678679
+  },
+  "nodes": [
+    4371134785,
+    4371134786,
+    4371134787,
+    4371134788,
+    4371135189,
+    4371135190,
+    4371135191,
+    4371135192,
+    4371134785
+  ],
+  "tags": {
+    "building:colour": "#C9C9C7",
+    "building:material": "stone",
+    "building:part": "yes",
+    "height": "23",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 461326347,
+  "center": {
+    "lat": 50.4747049,
+    "lon": 13.4238645
+  },
+  "nodes": [
+    4568343916,
+    4568343915,
+    9464445795,
+    10089702008,
+    4568343913,
+    4568343912,
+    4568343911,
+    4568343916
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "19",
+    "description": "Medvědy hnědé představí na dřevěné vyhlídce naproti lanovému centru průvodce každý víkend v 15:00 hodin.",
+    "man_made": "tower",
+    "name": "Medvěd hnědý",
+    "ref:ruian:building": "39083993",
+    "source": "cuzk:ruian",
+    "surface": "survey",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 483026706,
+  "center": {
+    "lat": 50.3959453,
+    "lon": 12.9678679
+  },
+  "nodes": [
+    911883327,
+    4757828056,
+    4757828057,
+    4757828058,
+    4757828059,
+    4757828060,
+    4757828061,
+    4757828062,
+    911883327
+  ],
+  "tags": {
+    "building:colour": "#C9C9C7",
+    "building:part": "yes",
+    "charge": "50.00 CZK",
+    "direction": "0-360",
+    "fee": "yes",
+    "height": "25",
+    "man_made": "tower",
+    "min_height": "23",
+    "name": "Klínovec",
+    "note": "75 schodů",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q12029579",
+    "wikipedia": "cs:Klínovec (rozhledna)"
+  }
+},
+{
+  "type": "way",
+  "id": 486024381,
+  "center": {
+    "lat": 50.3723652,
+    "lon": 13.9713094
+  },
+  "nodes": [
+    4787714528,
+    4787714527,
+    4787714526,
+    4787714525,
+    4787714528
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "name": "Stradonka",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q14094635"
+  }
+},
+{
+  "type": "way",
+  "id": 715057768,
+  "center": {
+    "lat": 50.6127683,
+    "lon": 13.5210261
+  },
+  "nodes": [
+    6720910086,
+    6720910085,
+    6720868384,
+    11263187207,
+    6720868383,
+    6720910086
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "name": "Rozhledna Jeřabina",
+    "name:de": "Haselstein",
+    "tower:type": "observation",
+    "wikidata": "Q1688806",
+    "wikipedia": "cs:Jeřabina (rozhledna)"
+  }
+},
+{
+  "type": "way",
+  "id": 1008442790,
+  "center": {
+    "lat": 50.4053615,
+    "lon": 12.9324585
+  },
+  "nodes": [
+    9303989176,
+    9303989175,
+    9303989174,
+    9303989173,
+    9303989176
+  ],
+  "tags": {
+    "building": "civic",
+    "building:levels": "2",
+    "building:ruian:type": "15",
+    "man_made": "tower",
+    "name": "Boží vyhlídka",
+    "ref:ruian:building": "97917508",
+    "source": "cuzk:ruian",
+    "start_date": "2019-06-24",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q127333395"
+  }
+},
+{
+  "type": "way",
+  "id": 1102610547,
+  "center": {
+    "lat": 50.4747056,
+    "lon": 13.4240261
+  },
+  "nodes": [
+    4568343913,
+    10089702005,
+    10089702006,
+    10089702007,
+    10089702008,
+    4568343913
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "building": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 1311795638,
+  "center": {
+    "lat": 50.3246866,
+    "lon": 13.5454430
+  },
+  "nodes": [
+    12142256456,
+    12142256457,
+    12142256458,
+    12142256459,
+    12142256462,
+    12142256460,
+    12142256461,
+    12142256456
+  ],
+  "tags": {
+    "building": "yes",
+    "building:colour": "black",
+    "fee": "yes",
+    "height": "42",
+    "man_made": "tower",
+    "opening_hours": "Tu-Su 10:00-17:00",
+    "roof:colour": "black",
+    "start_date": "2010",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "wikimedia_commons": "Category:Chmelový maják"
+  }
+},
+{
+  "type": "way",
+  "id": 1444887199,
+  "center": {
+    "lat": 50.3840644,
+    "lon": 13.1737311
+  },
+  "nodes": [
+    13257421336,
+    13257421337,
+    13257421338,
+    13257421342,
+    13257421336
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

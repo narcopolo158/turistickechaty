@@ -1,0 +1,1709 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T20:15:19Z",
+    "timestamp_areas_base": "2026-08-08T22:59:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 251873856,
+  "lat": 50.7877881,
+  "lon": 14.0397075,
+  "tags": {
+    "addr:city": "Tisa",
+    "addr:housenumber": "257",
+    "addr:place": "Tisa",
+    "addr:postcode": "40336",
+    "amenity": "restaurant",
+    "brewery": "various;krušovice;březňák",
+    "changing_table": "yes",
+    "check_date": "2025-05-02",
+    "cuisine": "regional",
+    "email": "turischatatisa@volny.cz",
+    "name": "Turistická chata Tisá",
+    "name:de": "Touristenbaude Tisá",
+    "opening_hours": "Mo off; Tu-Th 11:00-21:00; Fr-Sa 10:00-23:00; Su,PH 10:00-19:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "phone": "+420 475 222 275",
+    "smoking": "no",
+    "toilets": "yes",
+    "website": "http://turistickachatatisa.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 330083516,
+  "lat": 50.6981241,
+  "lon": 13.7031065,
+  "tags": {
+    "amenity": "restaurant",
+    "description": "provoz jenom v zimě",
+    "name": "Bystřická Bouda",
+    "name:de": "Weisseritz Baude",
+    "phone": "+420 602 311 151"
+  }
+},
+{
+  "type": "node",
+  "id": 333668362,
+  "lat": 50.5500972,
+  "lon": 13.3529418,
+  "tags": {
+    "name": "Bernava",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 417226142,
+  "lat": 50.5686205,
+  "lon": 13.2955127,
+  "tags": {
+    "name": "Načetín",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 607125008,
+  "lat": 50.6855575,
+  "lon": 13.7074688,
+  "tags": {
+    "amenity": "pub",
+    "name": "tour.Chata"
+  }
+},
+{
+  "type": "node",
+  "id": 709051641,
+  "lat": 50.8043147,
+  "lon": 14.0179637,
+  "tags": {
+    "addr:city": "Dolní Adršpach",
+    "addr:housenumber": "121",
+    "addr:postcode": "549 51",
+    "contact:mobile": "+420 777172786",
+    "email": "lesni.zatisi@email.cz",
+    "name": "Lesní Zátiší",
+    "name:de": "Waldesruh",
+    "operator": "Věra Vrzalová",
+    "phone": "+420 491586202",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 1252116841,
+  "lat": 50.3477180,
+  "lon": 12.5077236,
+  "tags": {
+    "designation": "Kraslice",
+    "name": "Penzion Matylda",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 1364470574,
+  "lat": 50.3589970,
+  "lon": 12.8475732,
+  "tags": {
+    "abandoned": "yes",
+    "addr:city": "Abertamy",
+    "addr:conscriptionnumber": "450",
+    "addr:country": "CZ",
+    "addr:housenumber": "450",
+    "addr:postcode": "36235",
+    "addr:street": "Plešivecká",
+    "name": "Švýcarská bouda",
+    "ref:ruian:addr": "11884959",
+    "source:addr": "cuzk:ruian",
+    "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 1422420751,
+  "lat": 50.3671533,
+  "lon": 12.6189883,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Kovářská bouda"
+  }
+},
+{
+  "type": "node",
+  "id": 1437354161,
+  "lat": 50.3490682,
+  "lon": 12.9974078,
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 1512527398,
+  "lat": 50.7074802,
+  "lon": 13.5656115,
+  "tags": {
+    "addr:city": "Český Jiřetín",
+    "addr:conscriptionnumber": "61",
+    "addr:country": "CZ",
+    "addr:housenumber": "61",
+    "addr:place": "Český Jiřetín",
+    "addr:postcode": "43601",
+    "amenity": "restaurant",
+    "email": "info@chata-barbora.cz",
+    "name": "Chata Barbora",
+    "phone": "+ 420 775 418 688",
+    "ref:ruian:addr": "40012212",
+    "source:addr": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://www.chata-barbora.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1893911507,
+  "lat": 50.3543594,
+  "lon": 12.8942916,
+  "tags": {
+    "name": "chata Rybník",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 1893911510,
+  "lat": 50.3542231,
+  "lon": 12.8947154,
+  "tags": {
+    "name": "chata Spravedlnost",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 2120051545,
+  "lat": 50.3555619,
+  "lon": 12.8963377,
+  "tags": {
+    "name": "Chata-R",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 2357655835,
+  "lat": 50.5547822,
+  "lon": 13.9316046,
+  "tags": {
+    "amenity": "restaurant",
+    "bar": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "yes",
+    "name": "Chata Milešovka",
+    "opening_hours": "Fr 20:00-23:00; Sa 09:00-23:00; Su 09:00-16:00",
+    "operator": "Milešovka s.r.o.",
+    "payment:apple_pay": "no",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "no",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "payment:google_pay": "no",
+    "payment:mastercard": "no",
+    "payment:qr_code": "yes",
+    "payment:visa": "no",
+    "phone": "+420 606 229 823",
+    "source:opening_hours": "2018-04-08",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2601022030,
+  "lat": 50.3844871,
+  "lon": 13.7944049,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Ejemova chata",
+    "opening_hours": "Apr-Oct: Sa,Su,PH 10:00-18:00; Apr-Oct Tu-Fr 13:00-18:00",
+    "phone": "+420733184750",
+    "website": "https://www.cervenak-rozhledna.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2994260295,
+  "lat": 50.6589591,
+  "lon": 14.0393796,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "cuisine": "pizza",
+    "email": "CZPHUstinadLabem.Forum@amrest.eu",
+    "level": "1",
+    "name": "Pizza Hut",
+    "opening_hours": "Mo-Su 10:00-21:00",
+    "payment:gift_card": "yes",
+    "phone": "+420 702 248 350"
+  }
+},
+{
+  "type": "node",
+  "id": 4058508090,
+  "lat": 50.3553585,
+  "lon": 12.8908899,
+  "tags": {
+    "addr:housenumber": "149",
+    "addr:place": "Mariánská",
+    "name": "Horská Chata Lesanka",
+    "phone": "+420604866075",
+    "tourism": "hostel",
+    "website": "http://www.chatalesanka.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 4304822790,
+  "lat": 50.3950534,
+  "lon": 12.7655568,
+  "tags": {
+    "addr:housenumber": "102",
+    "addr:street": "Lesní",
+    "email": "meritom@icloud.com",
+    "name": "Na bílé stopě",
+    "name:en": "na bile stope",
+    "phone": "+420777587505",
+    "tourism": "alpine_hut",
+    "website": "https://www.nabilestope.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 4557048657,
+  "lat": 50.4070177,
+  "lon": 12.9836696,
+  "tags": {
+    "addr:city": "Loučná pod Klínovcem",
+    "addr:housenumber": "98",
+    "addr:place": "Loučná",
+    "addr:postcode": "43191",
+    "internet_access": "no",
+    "internet_access:fee": "no",
+    "level": "3",
+    "name": "Horská chata Lada",
+    "operator": "Ing. Josef ROZÍNEK",
+    "phone": "+420 602 932 597",
+    "smoking": "no",
+    "source": "survey;gps",
+    "tourism": "guest_house",
+    "website": "http://www.horskachata.info/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4847329922,
+  "lat": 50.3680923,
+  "lon": 12.7837023,
+  "tags": {
+    "addr:city": "Pernink",
+    "addr:housenumber": "231",
+    "addr:postcode": "36236",
+    "addr:street": "Andělská",
+    "internet_access": "wlan",
+    "name": "Chalupa Bärringen",
+    "phone": "+420 721 538 771",
+    "tourism": "apartment",
+    "website": "https://www.barringen.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 5196488202,
+  "lat": 50.4102400,
+  "lon": 12.9927843,
+  "tags": {
+    "name": "Chata Štěpánka",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 5196488205,
+  "lat": 50.4136220,
+  "lon": 12.9960386,
+  "tags": {
+    "name": "Chalupa Stolzenhain",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 5196814948,
+  "lat": 50.4180566,
+  "lon": 12.9965321,
+  "tags": {
+    "name": "Horská chata Apolena",
+    "tourism": "guest_house",
+    "website": "https://apolena.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 5196814949,
+  "lat": 50.4166005,
+  "lon": 12.9967628,
+  "tags": {
+    "name": "Chalupa Fičák",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 5196814951,
+  "lat": 50.4191538,
+  "lon": 12.9967092,
+  "tags": {
+    "name": "Horská Vila Meluzína",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 5196814952,
+  "lat": 50.4182549,
+  "lon": 12.9966019,
+  "tags": {
+    "name": "Chata Betsy",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 5196814956,
+  "lat": 50.4206235,
+  "lon": 12.9979079,
+  "tags": {
+    "name": "Horská bouda Šubišák",
+    "tourism": "guest_house",
+    "website": "http://www.subisak.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 5255102179,
+  "lat": 50.3693576,
+  "lon": 12.9026471,
+  "tags": {
+    "addr:city": "Jáchymov",
+    "addr:country": "CZ",
+    "addr:housenumber": "ev.8",
+    "addr:place": "Nové Město",
+    "addr:postcode": "36301",
+    "addr:provisionalnumber": "8",
+    "name": "Horská chata Pam",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 8865683968,
+  "lat": 50.7074250,
+  "lon": 13.5751581,
+  "tags": {
+    "name": "Roubenky Slunný vrch",
+    "tourism": "chalet",
+    "website": "https://roubenkyslunnyvrch.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 11090338087,
+  "lat": 50.4209431,
+  "lon": 13.1161388,
+  "tags": {
+    "name": "Chalupa pod Mědníkem",
+    "phone": "+420 603 465 041",
+    "tourism": "apartment",
+    "website": "https://www.e-chalupy.cz/krusne_hory/chalupa-medenec-ubytovani-pod-mednikem-6542.php"
+  }
+},
+{
+  "type": "node",
+  "id": 11090338089,
+  "lat": 50.4216331,
+  "lon": 13.1165100,
+  "tags": {
+    "name": "Chalupa Mědník",
+    "tourism": "apartment",
+    "website": "https://www.e-chalupy.cz/krusne_hory/medenec_chalupa_pronajem_mednik_0173.php"
+  }
+},
+{
+  "type": "node",
+  "id": 11114163516,
+  "lat": 50.4008200,
+  "lon": 12.7334924,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 12223029323,
+  "lat": 50.4832942,
+  "lon": 13.3506410,
+  "tags": {
+    "name": "Chalupa Domina",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 13612608125,
+  "lat": 50.7203917,
+  "lon": 13.6556692,
+  "tags": {
+    "addr:city": "Moldava",
+    "addr:housenumber": "157",
+    "addr:postcode": "41781",
+    "addr:street": "Moldava",
+    "email": "chataukoniku@gmail.com",
+    "internet_access": "yes",
+    "name": "Chata u Koníků",
+    "phone": "+420702153768",
+    "tourism": "apartment",
+    "website": "https://www.chataukoniku.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 13970692913,
+  "lat": 50.3620336,
+  "lon": 12.8425917,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Bistro Chalupa",
+    "opening_hours": "Mo-Fr 09:00-16:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694048,
+  "lat": 50.7341185,
+  "lon": 13.9054815,
+  "tags": {
+    "amenity": "pub",
+    "name": "Chata Florian"
+  }
+},
+{
+  "type": "way",
+  "id": 77472440,
+  "center": {
+    "lat": 50.4101424,
+    "lon": 12.9228085
+  },
+  "nodes": [
+    911883731,
+    8446210597,
+    8446210596,
+    8446210595,
+    8446210594,
+    911883886,
+    8446210584,
+    8446210585,
+    911883635,
+    911883788,
+    8446210593,
+    8446210592,
+    911883545,
+    911883371,
+    911883376,
+    911884284,
+    1481667784,
+    911883890,
+    911884065,
+    911883793,
+    911883960,
+    911883462,
+    911883644,
+    8446210577,
+    8446210576,
+    12120405100,
+    911884271,
+    911883731
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "building:ruian:type": "8",
+    "name": "Slovanka",
+    "ref:ruian:building": "11830085",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 122991305,
+  "center": {
+    "lat": 50.3680115,
+    "lon": 12.7790415
+  },
+  "nodes": [
+    1372715298,
+    1372715310,
+    1372715231,
+    1372715238,
+    1372715177,
+    1372715160,
+    1372715222,
+    1372715218,
+    1372715210,
+    1372715208,
+    1372715298
+  ],
+  "tags": {
+    "beds": "25",
+    "building": "house",
+    "building:flats": "2",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "email": "ubytovani-dvorakova@seznam.cz",
+    "internet_access": "yes",
+    "name": "U Jeziska",
+    "operator": "Lucie Dvorakova",
+    "phone": "+420 720 542 077",
+    "ref:ruian:building": "11904747",
+    "rooms": "12",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 122997058,
+  "center": {
+    "lat": 50.3953990,
+    "lon": 12.7746485
+  },
+  "nodes": [
+    1372806835,
+    1372806811,
+    1372806892,
+    1372806896,
+    1372806871,
+    1372806856,
+    1372806843,
+    1372806829,
+    1372806835
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "building:ruian:type": "8",
+    "name": "Chata pod Vlčí jámou",
+    "ref:ruian:building": "11847573",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 134823359,
+  "center": {
+    "lat": 50.4097353,
+    "lon": 12.9252890
+  },
+  "nodes": [
+    2787747798,
+    2787747806,
+    2787747803,
+    2787747813,
+    8446210560,
+    2787747819,
+    2787747818,
+    2787747800,
+    2787747795,
+    2787747797,
+    2787747798
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "47",
+    "addr:country": "CZ",
+    "addr:housenumber": "47",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "beds": "69",
+    "building": "civic",
+    "building:levels": "1",
+    "building:ruian:type": "5",
+    "email": "Penzion-Bozi-Dar-47@cz-hotel.eu",
+    "name": "Apartmány 47",
+    "ref:ruian:addr": "11897201",
+    "ref:ruian:building": "11829460",
+    "source": "cuzk:ruian",
+    "tourism": "chalet",
+    "website": "http://www.hotel-apartmany-47-bozi-dar.az-ubytovani.info/"
+  }
+},
+{
+  "type": "way",
+  "id": 134823361,
+  "center": {
+    "lat": 50.4091301,
+    "lon": 12.9268691
+  },
+  "nodes": [
+    1481667607,
+    2728725931,
+    2728725929,
+    1481667642,
+    1481667640,
+    1481667628,
+    1481667626,
+    1481667604,
+    2728725921,
+    2728725920,
+    8446210521,
+    1481667607
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "159",
+    "addr:country": "CZ",
+    "addr:housenumber": "159",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "beds": "20",
+    "building": "hotel",
+    "building:flats": "1",
+    "building:levels": "4",
+    "building:ruian:type": "11",
+    "email": "info@apartmanycestar.cz",
+    "fax": "+420 353 815 144",
+    "name": "Apartmány Cestář",
+    "phone": "+420 353 815 144",
+    "ref:ruian:addr": "11897538",
+    "ref:ruian:building": "11829796",
+    "rooms": "4",
+    "source": "cuzk:ruian",
+    "start_date": "2009-10-08",
+    "tourism": "chalet",
+    "website": "https://www.apartmanycestar.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 134823362,
+  "center": {
+    "lat": 50.4095877,
+    "lon": 12.9220469
+  },
+  "nodes": [
+    1481667731,
+    8446210467,
+    8446210466,
+    8446210465,
+    8446210464,
+    8446210463,
+    1481667738,
+    8446210457,
+    8446210452,
+    1481667698,
+    8446210462,
+    8446210461,
+    8446210460,
+    8446210459,
+    1481667690,
+    8446210458,
+    1481667689,
+    1481667699,
+    1481667722,
+    1481667728,
+    1481667731
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "207",
+    "addr:country": "CZ",
+    "addr:housenumber": "207",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "beds": "73",
+    "building": "hotel",
+    "building:flats": "1",
+    "building:levels": "4",
+    "building:ruian:type": "11",
+    "email": "info@apartmanyengadin.cz",
+    "name": "Apartmány Engadin",
+    "phone": "+420 774 701 505",
+    "ref:ruian:building": "26551624",
+    "rooms": "15",
+    "source": "cuzk:ruian",
+    "start_date": "2006-11-07",
+    "tourism": "chalet",
+    "website": "https://www.apartmanyengadin.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 134823365,
+  "center": {
+    "lat": 50.4110494,
+    "lon": 12.9235926
+  },
+  "nodes": [
+    2728726321,
+    2728726319,
+    1481668005,
+    1481667968,
+    2728726309,
+    2728726304,
+    2728726323,
+    2728726325,
+    1481668020,
+    2728726330,
+    2728726328,
+    1481668039,
+    2728726321
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "84",
+    "addr:country": "CZ",
+    "addr:housenumber": "84",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "building": "hotel",
+    "building:flats": "2",
+    "building:levels": "5",
+    "building:ruian:type": "11",
+    "email": "apartmany@jurica.cz",
+    "fax": "+420 353 815 136",
+    "name": "Apartmány Jurica",
+    "phone": "+420 353 815 136",
+    "ref:ruian:addr": "30690242",
+    "ref:ruian:building": "30024536",
+    "source": "cuzk:ruian",
+    "start_date": "2008-12-01",
+    "tourism": "chalet",
+    "website": "http://www.apartmany.jurica.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 134823366,
+  "center": {
+    "lat": 50.4106176,
+    "lon": 12.9243169
+  },
+  "nodes": [
+    1481667910,
+    1481667931,
+    1481667883,
+    2728726153,
+    2728726154,
+    1481667863,
+    1481667882,
+    1481667893,
+    1481667910
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "86",
+    "addr:country": "CZ",
+    "addr:housenumber": "86",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "email": "apartmany@jurica.cz",
+    "fax": "+420 353 815 136",
+    "name": "Apartmány Jurica",
+    "phone": "+420 353 815 136",
+    "ref:ruian:addr": "30690251",
+    "ref:ruian:building": "30024544",
+    "source": "cuzk:ruian",
+    "tourism": "chalet",
+    "website": "http://www.apartmany.jurica.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 134823377,
+  "center": {
+    "lat": 50.4106518,
+    "lon": 12.9247735
+  },
+  "nodes": [
+    1481667877,
+    1481667895,
+    1481667911,
+    1481667925,
+    1481667916,
+    1481667903,
+    1481667901,
+    1481667877
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:country": "CZ",
+    "addr:housenumber": "ev.26",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "addr:provisionalnumber": "26",
+    "building": "yes",
+    "building:levels": "1",
+    "building:ruian:type": "8",
+    "email": "bozichalupa@seznam.cz",
+    "name": "Boží chalupa",
+    "phone": "+420 353 449 084",
+    "ref:ruian:addr": "11897961",
+    "ref:ruian:building": "11830221",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://bozichalupa.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 134823379,
+  "center": {
+    "lat": 50.4113393,
+    "lon": 12.9222247
+  },
+  "nodes": [
+    1481668070,
+    1481668103,
+    1481668131,
+    1481668096,
+    1481668070
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "104",
+    "addr:country": "CZ",
+    "addr:housenumber": "104",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "building": "house",
+    "building:ruian:type": "7",
+    "check_date": "2025-07-13",
+    "name": "Chata Adélka",
+    "ref:ruian:addr": "11898071",
+    "ref:ruian:building": "11830336",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134823380,
+  "center": {
+    "lat": 50.4113113,
+    "lon": 12.9224045
+  },
+  "nodes": [
+    1481668100,
+    1481668081,
+    1481668050,
+    1481668070,
+    1481668096,
+    2710034246,
+    1481668116,
+    8446210434,
+    8446210433,
+    8446210432,
+    1481668100
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:country": "CZ",
+    "addr:housenumber": "ev.36",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "addr:provisionalnumber": "36",
+    "building": "residential",
+    "building:flats": "6",
+    "building:levels": "4",
+    "building:ruian:type": "6",
+    "name": "Chata Chevak",
+    "ref:ruian:building": "11830328",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134823386,
+  "center": {
+    "lat": 50.4102403,
+    "lon": 12.9254693
+  },
+  "nodes": [
+    1481667812,
+    1481667813,
+    1481667788,
+    1481667787,
+    1481667800,
+    1481667812
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "53",
+    "addr:country": "CZ",
+    "addr:housenumber": "53",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "building": "hotel",
+    "building:flats": "1",
+    "building:ruian:type": "11",
+    "email": "penzion@houdabouda.cz",
+    "fax": "+420 474 396 294",
+    "name": "Houda Bouda",
+    "phone": "+420 605 709 756",
+    "ref:ruian:addr": "30690234",
+    "ref:ruian:building": "30024528",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://www.houdabouda.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 134823403,
+  "center": {
+    "lat": 50.4120343,
+    "lon": 12.9218867
+  },
+  "nodes": [
+    2710034337,
+    2710034348,
+    1481668293,
+    2710034339,
+    1481668289,
+    1481668276,
+    1481668258,
+    1481668277,
+    2710034337
+  ],
+  "tags": {
+    "beds": "12",
+    "building": "house",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "name": "Štěpánka",
+    "ref:ruian:building": "11830425",
+    "rooms": "4",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134823468,
+  "center": {
+    "lat": 50.4108200,
+    "lon": 12.9240473
+  },
+  "nodes": [
+    1481667946,
+    9303989193,
+    2728726243,
+    1481667930,
+    1481667952,
+    9303989177,
+    9303989180,
+    9303989192,
+    1481667970,
+    9303989184,
+    9303989181,
+    9303989186,
+    9303989178,
+    1481667946
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "name": "Boží Dar",
+    "ref:ruian:building": "11830263",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134823470,
+  "center": {
+    "lat": 50.4109411,
+    "lon": 12.9210246
+  },
+  "nodes": [
+    1481667955,
+    2728726267,
+    2728726253,
+    2728726263,
+    2728726265,
+    2728726286,
+    1481667978,
+    2728726302,
+    1481668001,
+    1481667980,
+    1481667955
+  ],
+  "tags": {
+    "building": "residential",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "check_date": "2026-06-20",
+    "name": "Stein",
+    "ref:ruian:building": "11829702",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134823511,
+  "center": {
+    "lat": 50.4101645,
+    "lon": 12.9246508
+  },
+  "nodes": [
+    911883633,
+    911883446,
+    911883944,
+    911883621,
+    911883875,
+    1481667790,
+    1481667782,
+    911883353,
+    911883633
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "name": "Alpina",
+    "ref:ruian:building": "11830166",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134947676,
+  "center": {
+    "lat": 50.4115255,
+    "lon": 12.9242046
+  },
+  "nodes": [
+    1482705881,
+    1482705875,
+    1482705879,
+    2728726339,
+    2728726341,
+    2728726343,
+    2728726342,
+    1482705899,
+    1482705892,
+    1482705895,
+    1482705880,
+    1482705877,
+    2728726332,
+    2728726338,
+    1482705881
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "196",
+    "addr:country": "CZ",
+    "addr:housenumber": "196",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "building": "house",
+    "building:flats": "2",
+    "building:levels": "3",
+    "building:ruian:type": "7",
+    "name": "Apartmán Novako",
+    "ref:ruian:addr": "26843021",
+    "ref:ruian:building": "26328577",
+    "source": "cuzk:ruian",
+    "start_date": "2003-12-29",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134947680,
+  "center": {
+    "lat": 50.4100951,
+    "lon": 12.9220278
+  },
+  "nodes": [
+    1482705704,
+    1482705695,
+    1482705686,
+    1482705688,
+    1482705704
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:country": "CZ",
+    "addr:housenumber": "ev.72",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "addr:provisionalnumber": "72",
+    "building": "yes",
+    "building:ruian:type": "8",
+    "name": "Chata Korba",
+    "ref:ruian:addr": "11898429",
+    "ref:ruian:building": "11830689",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134947681,
+  "center": {
+    "lat": 50.4115465,
+    "lon": 12.9232834
+  },
+  "nodes": [
+    1482705878,
+    1482705883,
+    1482705903,
+    1482705882,
+    2728726337,
+    2728726334,
+    1482705878
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:country": "CZ",
+    "addr:postcode": "362 62",
+    "building": "house",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "name": "Chata Zelinka",
+    "ref:ruian:building": "11829923",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134947682,
+  "center": {
+    "lat": 50.4132219,
+    "lon": 12.9212493
+  },
+  "nodes": [
+    1482706181,
+    1482706170,
+    1482706179,
+    1482706167,
+    1482706161,
+    1482706164,
+    1482706159,
+    1482706168,
+    1482706181
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "215",
+    "addr:country": "CZ",
+    "addr:housenumber": "215",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "building": "house",
+    "building:flats": "1",
+    "building:levels": "2",
+    "building:ruian:type": "7",
+    "name": "Fox",
+    "ref:ruian:addr": "27715744",
+    "ref:ruian:building": "27189210",
+    "source": "cuzk:ruian",
+    "start_date": "2009-01-15",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 134947684,
+  "center": {
+    "lat": 50.4110052,
+    "lon": 12.9242578
+  },
+  "nodes": [
+    1482705830,
+    1893975734,
+    1482705814,
+    1482705828,
+    1482705831,
+    1482705846,
+    1482705847,
+    1482705841,
+    1482705844,
+    1482705830
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "31",
+    "addr:housenumber": "31",
+    "addr:place": "Boží Dar",
+    "building": "yes",
+    "name": "Anton Gunther",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 159907372,
+  "center": {
+    "lat": 50.4487593,
+    "lon": 13.0565494
+  },
+  "nodes": [
+    1719730695,
+    1081141266,
+    1719730699,
+    1719730694,
+    1719730695
+  ],
+  "tags": {
+    "addr:housenumber": "408",
+    "addr:place": "Kovářská",
+    "addr:street": "Dlouhá",
+    "building": "yes",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "8",
+    "name": "Chata Adélka",
+    "ref:ruian:addr": "18453627",
+    "ref:ruian:building": "18315224",
+    "source": "cuzk:ruian",
+    "tourism": "chalet",
+    "website": "https://chata-adelka.webnode.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 171459553,
+  "center": {
+    "lat": 50.3995732,
+    "lon": 12.8145262
+  },
+  "nodes": [
+    1824818998,
+    1824819003,
+    1824819001,
+    1824818996,
+    1824818998
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "ref:ruian:building": "11975776",
+    "source": "cuzk:ruian",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 258310072,
+  "center": {
+    "lat": 50.6276469,
+    "lon": 13.5651545
+  },
+  "nodes": [
+    2636873937,
+    2636873948,
+    2636873918,
+    5419752494,
+    5419752492,
+    5419655375,
+    5419752493,
+    2636873908,
+    2636873937
+  ],
+  "tags": {
+    "building": "civic",
+    "building:ruian:type": "5",
+    "name": "Chata Emeran II",
+    "operator": "Hotel Emeran",
+    "ref:ruian:building": "5103193",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 265338580,
+  "center": {
+    "lat": 50.4130433,
+    "lon": 12.9210062
+  },
+  "nodes": [
+    2710034527,
+    2710034535,
+    2710034551,
+    2710034544,
+    2710034548,
+    2710034541,
+    2710034537,
+    2710034532,
+    2710034527
+  ],
+  "tags": {
+    "addr:city": "Boží Dar",
+    "addr:conscriptionnumber": "214",
+    "addr:country": "CZ",
+    "addr:housenumber": "214",
+    "addr:place": "Boží Dar",
+    "addr:postcode": "36262",
+    "building": "house",
+    "building:flats": "4",
+    "building:levels": "3",
+    "building:ruian:type": "7",
+    "name": "Apartmány Zlatý Anděl",
+    "ref:ruian:addr": "27385728",
+    "ref:ruian:building": "26864908",
+    "source": "cuzk:ruian",
+    "start_date": "2008-01-30",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 265338581,
+  "center": {
+    "lat": 50.4118529,
+    "lon": 12.9195002
+  },
+  "nodes": [
+    2710034293,
+    2710034296,
+    2710034299,
+    2710034300,
+    2710034304,
+    2710034303,
+    2710034308,
+    2710034298,
+    2710034293
+  ],
+  "tags": {
+    "building": "house",
+    "building:flats": "1",
+    "building:levels": "2",
+    "building:ruian:type": "7",
+    "name": "Jitka Peřina",
+    "ref:ruian:building": "25816217",
+    "source": "cuzk:ruian",
+    "start_date": "2005-04-01",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 265338618,
+  "center": {
+    "lat": 50.4121875,
+    "lon": 12.9222002
+  },
+  "nodes": [
+    2710034363,
+    2710034378,
+    2710034375,
+    2710034359,
+    2710034344,
+    2710034363
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "name": "Chata Libela",
+    "ref:ruian:building": "11830417",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 265338629,
+  "center": {
+    "lat": 50.4122434,
+    "lon": 12.9208914
+  },
+  "nodes": [
+    2710034368,
+    2710034386,
+    2710034377,
+    2710034373,
+    2710034370,
+    2710034361,
+    2710034362,
+    2710034358,
+    2710034368
+  ],
+  "tags": {
+    "building": "house",
+    "building:flats": "1",
+    "building:levels": "2",
+    "building:ruian:type": "7",
+    "name": "Roubenka Boží Dar",
+    "ref:ruian:building": "54277922",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 301376420,
+  "center": {
+    "lat": 50.4364812,
+    "lon": 13.0411714
+  },
+  "nodes": [
+    3054303514,
+    3054304528,
+    3054304523,
+    3054304525,
+    3054304124,
+    3054303515,
+    3054305239,
+    3054304530,
+    3054303514
+  ],
+  "tags": {
+    "building": "cabin",
+    "building:flats": "1",
+    "building:ruian:type": "8",
+    "email": "info@krusnohorka.cz",
+    "name": "Chata Krušnohorka",
+    "phone": "+420 603 808 256",
+    "ref:ruian:building": "18313957",
+    "source": "cuzk:ruian",
+    "tourism": "apartment",
+    "website": "https://krusnohorka.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 923506832,
+  "center": {
+    "lat": 50.3510440,
+    "lon": 13.4016885
+  },
+  "nodes": [
+    8572695473,
+    8582492959,
+    8572695474,
+    8572695475,
+    8582521379,
+    8572695476,
+    8572695473
+  ],
+  "tags": {
+    "landuse": "recreation_ground",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 924764257,
+  "center": {
+    "lat": 50.3490222,
+    "lon": 13.4047025
+  },
+  "nodes": [
+    8582521326,
+    8572695478,
+    8572695477,
+    8582521327,
+    8582492965,
+    8582521324,
+    8582521325,
+    8582521326
+  ],
+  "tags": {
+    "landuse": "recreation_ground",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 924764258,
+  "center": {
+    "lat": 50.3480725,
+    "lon": 13.4086924
+  },
+  "nodes": [
+    8582521328,
+    8582521329,
+    8582521330,
+    8582521331,
+    8582521332,
+    8582521333,
+    8582521334,
+    8582521335,
+    8582521336,
+    8582521337,
+    8582521338,
+    8582521339,
+    8582521340,
+    8582521341,
+    8582521342,
+    8582521343,
+    8582521344,
+    8582521345,
+    8582521346,
+    8582521347,
+    8582521348,
+    8582521349,
+    8582521328
+  ],
+  "tags": {
+    "landuse": "recreation_ground",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 924764259,
+  "center": {
+    "lat": 50.3476196,
+    "lon": 13.4125878
+  },
+  "nodes": [
+    8582521350,
+    8582521351,
+    8582521352,
+    8582521353,
+    8582521354,
+    8582521355,
+    8582521356,
+    8582521357,
+    8582521358,
+    8582521359,
+    8582521360,
+    8582521361,
+    8582521362,
+    8582521363,
+    8582521364,
+    8582521350
+  ],
+  "tags": {
+    "landuse": "recreation_ground",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 928694260,
+  "center": {
+    "lat": 50.4034106,
+    "lon": 12.9880637
+  },
+  "nodes": [
+    1240663261,
+    1240663226,
+    1240663189,
+    8613629419,
+    8613629420,
+    8613629421,
+    8613629422,
+    8613629423,
+    8613629424,
+    8613629425,
+    8613629426,
+    8613629427,
+    1240663261
+  ],
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 982062940,
+  "center": {
+    "lat": 50.3441210,
+    "lon": 12.8618426
+  },
+  "nodes": [
+    9082658791,
+    9082658792,
+    9082658793,
+    9082658794,
+    9082658791
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1168030588,
+  "center": {
+    "lat": 50.4003974,
+    "lon": 12.8108572
+  },
+  "nodes": [
+    10862927817,
+    10862927818,
+    10862927819,
+    10862927820,
+    10862927817
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1527993070,
+  "center": {
+    "lat": 50.3878558,
+    "lon": 13.1875257
+  },
+  "nodes": [
+    6743997032,
+    13924420123,
+    13924420124,
+    13924420125,
+    13924420126,
+    6743997032
+  ],
+  "tags": {
+    "alcohol": "yes",
+    "amenity": "fast_food",
+    "building": "kiosk",
+    "coffee": "yes",
+    "cuisine": "sandwich;ice_cream",
+    "ice_cream": "yes",
+    "name": "Bistro Bouda",
+    "opening_hours": "Mo-Fr 11:00-22:00; Sa 12:00-22:00; Su 13:00-22:00",
+    "outdoor_seating": "yes",
+    "takeaway": "yes"
+  }
+}
+
+  ]
+}

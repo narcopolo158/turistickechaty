@@ -1,0 +1,116 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T20:15:19Z",
+    "timestamp_areas_base": "2026-08-09T04:45:57Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 11762179288,
+  "lat": 50.7514673,
+  "lon": 13.7334969,
+  "tags": {
+    "addr:city": "Altenberg",
+    "addr:housenumber": "4",
+    "addr:postcode": "01773",
+    "addr:street": "Neustadtstraße",
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2025-05-30",
+    "cuisine": "regional",
+    "diet:vegetarian": "no",
+    "drive_through": "no",
+    "email": "szulczyk@t-online.de",
+    "name": "Kahlebergbaude",
+    "opening_hours": "Sa-We 10:00-17:00; PH 10:00-17:00",
+    "opening_hours:signed": "no",
+    "operator": "Severin Szulczyk",
+    "phone": "+49 1715241080",
+    "website": "https://kahlebergbaude.de"
+  }
+},
+{
+  "type": "way",
+  "id": 133632631,
+  "center": {
+    "lat": 50.6590335,
+    "lon": 13.4658338
+  },
+  "nodes": [
+    1470845172,
+    8738936252,
+    1470845161,
+    2864647058,
+    2864647062,
+    458321494,
+    6112664010,
+    1347946613,
+    2864647066,
+    2864647067,
+    2864647068,
+    2864647069,
+    2864647070,
+    2864647073,
+    2864647074,
+    2864647072,
+    2864647071,
+    1470845172
+  ],
+  "tags": {
+    "addr:city": "Neuhausen/Erzgeb.",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "09544",
+    "addr:street": "Am Schwartenberg",
+    "amenity": "restaurant",
+    "building": "yes",
+    "heritage": "4",
+    "heritage:operator": "lfd",
+    "image": "http://wiki.openstreetmap.org/wiki/File:Schwartenberg_-_Baude_1928_-_2011.jpg",
+    "lfd:criteria": "Baudenkmal",
+    "name": "Schwartenbergbaude",
+    "opening_hours": "Mo-Fr 11:00-17:00; PH,Sa,Su 11:00-20:00",
+    "phone": "+49 37361 45686",
+    "ref:lfd": "09209937",
+    "website": "https://www.schwartenbergbaude.de/",
+    "wheelchair": "no",
+    "wikidata": "Q49587155"
+  }
+},
+{
+  "type": "way",
+  "id": 174886721,
+  "center": {
+    "lat": 50.5741040,
+    "lon": 13.0299433
+  },
+  "nodes": [
+    1855324369,
+    1855324365,
+    1855324366,
+    1855324370,
+    2782366586,
+    2782366584,
+    1855324369
+  ],
+  "tags": {
+    "addr:city": "Annaberg-Buchholz",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "09456",
+    "addr:street": "Ernst-Roch-Straße",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Berghotel Pöhlberg",
+    "opening_hours": "Mo 11:30-21:00; Tu-Fr 11:30-22:00; Sa 11:30-22:00; Su 11:30-21:00",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "wheelchair": "limited"
+  }
+}
+
+  ]
+}

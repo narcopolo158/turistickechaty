@@ -1,0 +1,35 @@
+# Kleines Haus am Wald — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-09)
+# Zdroj: https://www.openstreetmap.org/node/5060263095 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krusne-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Kleines Haus am Wald
+slug: kleines-haus-am-wald
+zeme: de
+oblast: krusne-hory
+lat: 50.5302055
+lng: 13.1324333
+obec: Jöhstadt
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/5060263095 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+kontakty:
+  telefon: +49 37342 7470
+  email: heidi.kuechler@gmx.net
+  web: http://www.kleineshausamwald.de
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/5060263095 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Heidrun Küchler

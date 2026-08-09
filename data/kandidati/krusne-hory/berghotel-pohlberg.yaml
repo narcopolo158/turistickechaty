@@ -1,0 +1,27 @@
+# Berghotel Pöhlberg — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-09)
+# Zdroj: https://www.openstreetmap.org/way/174886721 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krusne-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Berghotel Pöhlberg
+slug: berghotel-pohlberg
+zeme: de
+oblast: krusne-hory
+lat: 50.574104
+lng: 13.0299433
+obec: Annaberg-Buchholz
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/174886721 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
+  = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo 11:30-21:00; Tu-Fr
+  11:30-22:00; Sa 11:30-22:00; Su 11:30-21:00

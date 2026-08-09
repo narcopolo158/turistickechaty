@@ -1,0 +1,35 @@
+# Frotzelova rozhledna — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-20)
+# Zdroj: https://www.openstreetmap.org/node/2601022035 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krusne-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Frotzelova rozhledna
+slug: frotzelova-rozhledna
+zeme: cz
+oblast: krusne-hory
+typ: rozhledna
+lat: 50.3844476
+lng: 13.7943447
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2601022035 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+kontakty:
+  telefon: "+420733184750"
+  web: https://www.cervenak-rozhledna.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/2601022035 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-20) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Ejemova chata — amenity=fast_food, 6 m,
+  https://www.openstreetmap.org/node/2601022030

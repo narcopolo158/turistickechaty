@@ -1,0 +1,35 @@
+# Berghaus25 — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-09)
+# Zdroj: https://www.openstreetmap.org/way/287089432 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krusne-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Berghaus25
+slug: berghaus25
+zeme: de
+oblast: krusne-hory
+lat: 50.7497917
+lng: 13.6404536
+obec: Hermsdorf
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/287089432 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+kontakty:
+  telefon: +49 152 02826009
+  email: hello@berghaus25.de
+  web: https://berghaus25.de/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/287089432 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Manja Müller

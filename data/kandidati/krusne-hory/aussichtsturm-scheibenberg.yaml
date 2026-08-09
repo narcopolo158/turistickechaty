@@ -1,0 +1,33 @@
+# Aussichtsturm Scheibenberg — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-09)
+# Zdroj: https://www.openstreetmap.org/way/219672039 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krusne-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Aussichtsturm Scheibenberg
+slug: aussichtsturm-scheibenberg
+zeme: de
+oblast: krusne-hory
+typ: rozhledna
+lat: 50.5392462
+lng: 12.9251503
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/219672039 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): (bez názvu) — amenity=fast_food, 7 m,
+  https://www.openstreetmap.org/node/4960675350 · Bürger- und Berggasthaus
+  Scheibenberg — amenity=restaurant, 25 m,
+  https://www.openstreetmap.org/way/219672040
+
+  Výška věže dle OSM: 29.2 m
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 11:00-17:00

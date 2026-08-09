@@ -1,0 +1,35 @@
+# Berggasthof Haus Fürstenberg — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-09)
+# Zdroj: https://www.openstreetmap.org/way/241085647 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krusne-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Berggasthof Haus Fürstenberg
+slug: berggasthof-haus-furstenberg
+zeme: de
+oblast: krusne-hory
+lat: 50.5528228
+lng: 12.8220269
+obec: Grünhain-Beierfeld
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/241085647 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+kontakty:
+  telefon: +49 3774 26375
+  web: https://berggasthof-haus-fuerstenberg.de/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/241085647 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-09
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo,We,Th 16:30-18:00+,
+  Fr-Su,PH 11:00-18:00+

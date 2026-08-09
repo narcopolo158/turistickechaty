@@ -1,0 +1,45 @@
+# Milešovka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-06-20)
+# Zdroj: https://www.openstreetmap.org/way/424935355 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krusne-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Milešovka
+slug: milesovka
+zeme: cz
+oblast: krusne-hory
+typ: rozhledna
+aliasy:
+  - nazev: rozhledna Milešovka
+    poznamka: alternativní název (OSM alt_name)
+lat: 50.5548446
+lng: 13.9312963
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/424935355 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+kontakty:
+  web: https://www.ufa.cas.cz/struktura-ustavu/oddeleni-meteorologie/observatore/milesovka/pro-navstevniky/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/424935355 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-06-20
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-06-20) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Chata Milešovka — amenity=restaurant,
+  23 m, https://www.openstreetmap.org/node/2357655835 · (bez názvu) —
+  amenity=biergarten, 30 m, https://www.openstreetmap.org/way/244045071 · Bufet
+  Královny českého středohoří — amenity=fast_food, 38 m,
+  https://www.openstreetmap.org/node/1281191574
+
+  Provozovatel dle OSM: Ústav fyziky atmosféry AV ČR
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Apr-Oct: Tu-Su 11:00-18:00;
+  Nov-Mar: Sa,Su,PH 11:00-16:00 || "closed in bad weather"

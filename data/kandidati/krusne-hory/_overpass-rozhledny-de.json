@@ -1,0 +1,1819 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T20:19:21Z",
+    "timestamp_areas_base": "2026-08-08T22:59:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 192179581,
+  "lat": 50.6253275,
+  "lon": 12.5141722,
+  "tags": {
+    "alt_name": "König-Albert-Turm",
+    "height": "10",
+    "historic": "yes",
+    "man_made": "tower",
+    "material": "stone",
+    "name": "Borbergturm",
+    "tourism": "viewpoint",
+    "tower:construction": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 253775496,
+  "lat": 50.8116382,
+  "lon": 12.7494949,
+  "tags": {
+    "access": "yes",
+    "direction": "0-360",
+    "fee": "no",
+    "height": "20",
+    "man_made": "tower",
+    "name": "Heidelbergturm",
+    "tourism": "viewpoint",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 257416065,
+  "lat": 50.6566972,
+  "lon": 13.1245557,
+  "tags": {
+    "direction": "0-360",
+    "fee": "yes",
+    "height": "25.4",
+    "man_made": "tower",
+    "name": "Aussichtsturm Drei-Brüder-Höhe",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "https://drei-brueder-hoehe.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 263001310,
+  "lat": 50.8113233,
+  "lon": 13.0156252,
+  "tags": {
+    "addr:city": "Chemnitz",
+    "addr:housenumber": "1",
+    "addr:postcode": "09127",
+    "addr:street": "Am Adelsbergturm",
+    "amenity": "restaurant",
+    "name": "Gaststätte „Adelsbergturm“",
+    "note": "Geschlossen. Imbiss gegenüber geöffnet."
+  }
+},
+{
+  "type": "node",
+  "id": 310402031,
+  "lat": 50.6254207,
+  "lon": 12.5144042,
+  "tags": {
+    "alt_name": "Borberghaus",
+    "amenity": "restaurant",
+    "name": "Anton-Günther-Berghaus"
+  }
+},
+{
+  "type": "node",
+  "id": 360813456,
+  "lat": 50.6181613,
+  "lon": 13.0411895,
+  "tags": {
+    "alt_name": "May's Turm",
+    "building": "yes",
+    "height": "15",
+    "historic": "yes",
+    "man_made": "tower",
+    "name": "Bismarckturm Thermalbad Wiesenbad",
+    "network": "Bismarckturm",
+    "start_date": "1899",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "website": "https://www.bismarcktuerme.net/thermalbad-wiesenbad",
+    "wikidata": "Q49487154"
+  }
+},
+{
+  "type": "node",
+  "id": 434517127,
+  "lat": 50.7263141,
+  "lon": 12.6875708,
+  "tags": {
+    "access": "yes",
+    "direction": "0-360",
+    "ele": "486.81",
+    "fee": "no",
+    "height": "36",
+    "man_made": "tower",
+    "name": "Glückaufturm (Oelsnitz)",
+    "step_count": "138",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q1532759",
+    "wikimedia_commons": "File:Glückaufturm-Aussichtsturm in Oelsnitz Erzgebirge 2H1A4924WI.jpg",
+    "wikipedia": "de:Glückaufturm (Oelsnitz)"
+  }
+},
+{
+  "type": "node",
+  "id": 576261914,
+  "lat": 50.8112636,
+  "lon": 12.7496227,
+  "tags": {
+    "addr:city": "Hohenstein-Ernstthal",
+    "addr:housenumber": "18",
+    "addr:postcode": "09337",
+    "addr:street": "Am Heidelberg",
+    "addr:suburb": "Wüstenbrand",
+    "amenity": "restaurant",
+    "contact:mobile": "+49 162 9652248",
+    "cuisine": "regional",
+    "email": "info@heidelbergschänke.de",
+    "indoor_seating": "yes",
+    "name": "Heidelbergschänke Wüstenbrand",
+    "opening_hours": "Fr 17:00-22:00, Sa-Su 11:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 3723 6684366",
+    "website": "http://www.heidelbergschänke.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 899484995,
+  "lat": 50.4170509,
+  "lon": 12.6753708,
+  "tags": {
+    "direction": "0-360",
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1012066897,
+  "lat": 50.7163834,
+  "lon": 12.9766788,
+  "tags": {
+    "man_made": "tower",
+    "name": "Aussichtsturm Gelenauer Drehwurm-Turm",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1256107349,
+  "lat": 50.8322298,
+  "lon": 13.8330646,
+  "tags": {
+    "access": "no",
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1271914586,
+  "lat": 50.6055670,
+  "lon": 12.7882776,
+  "tags": {
+    "direction": "NW-ENE",
+    "ele": "644",
+    "height": "8",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Zwönitzblick",
+    "tourism": "viewpoint",
+    "tower:construction": "freestanding",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1457822874,
+  "lat": 50.4289060,
+  "lon": 12.9541775,
+  "tags": {
+    "addr:city": "Kurort Oberwiesenthal",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "09484",
+    "addr:street": "Fichtelbergstraße",
+    "amenity": "restaurant",
+    "contact:website": "https://www.hotel-fichtelberghaus.de/restaurant-das-guck.html",
+    "level": "1",
+    "name": "Das Guck",
+    "outdoor_seating": "yes",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1457822876,
+  "lat": 50.4290180,
+  "lon": 12.9545904,
+  "tags": {
+    "access": "yes",
+    "height": "31",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1568022151,
+  "lat": 50.3825725,
+  "lon": 12.4491411,
+  "tags": {
+    "access": "private",
+    "height": "30",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1691885519,
+  "lat": 50.8315561,
+  "lon": 13.6578827,
+  "tags": {
+    "description:de": "Erbaut 1909 von Otto Bierling - s. a. Otto's Eck",
+    "direction": "337-112",
+    "image": "http://commons.wikimedia.org/wiki/File:Hirschturm_bei_Schmiedeberg_Naundorf_mit_Blick_auf_Schmiedeberg.jpg",
+    "man_made": "tower",
+    "name": "Hirschturm",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1711283912,
+  "lat": 50.3900826,
+  "lon": 12.5056751,
+  "tags": {
+    "addr:city": "Klingenthal",
+    "addr:country": "DE",
+    "addr:housenumber": "23",
+    "addr:postcode": "08248",
+    "addr:street": "Grenzweg",
+    "amenity": "restaurant",
+    "biergarten": "yes",
+    "description": "Aschberg Alm Bistro, Biergarten, Imbiss",
+    "name": "Aschberg Alm",
+    "opening_hours": "Tu-Su 11:00-17:00",
+    "phone": "+4915209471253",
+    "url": "http://www.facebook.com/aschbergalm"
+  }
+},
+{
+  "type": "node",
+  "id": 1860391795,
+  "lat": 50.5434190,
+  "lon": 12.4655107,
+  "tags": {
+    "height": "17.5",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Steinbergturm",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 2820977608,
+  "lat": 50.5740912,
+  "lon": 13.0300773,
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "fee": "yes",
+    "fee:description": "1€ für Erwachsene, 0.50€ für Kinder, Gruppen ab 10 Personen 0.80€ pro Person. Den Schlüssel gibt es im Restaurant.",
+    "height": "35",
+    "man_made": "tower",
+    "name": "Aussichtsturm Pöhlberg",
+    "opening_hours": "Su,Mo 11:30-21:00; Tu-Sa 11:30-22:00",
+    "step_count": "159",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wheelchair:description": "Im Aussichtsturm befindet sich kein Aufzug"
+  }
+},
+{
+  "type": "node",
+  "id": 2821159309,
+  "lat": 50.4289637,
+  "lon": 12.9550537,
+  "tags": {
+    "addr:city": "Kurort Oberwiesenthal",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "09484",
+    "addr:street": "Fichtelbergstraße",
+    "amenity": "restaurant",
+    "contact:phone": "+49 37348 7319",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "SB Bergrestaurant Himmelsleiter",
+    "opening_hours": "10:00-16:30",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3782523187,
+  "lat": 50.5079869,
+  "lon": 12.4011196,
+  "tags": {
+    "addr:city": "Auerbach/Vogtland",
+    "addr:housenumber": "8a",
+    "addr:postcode": "08209",
+    "addr:street": "Schloßstraße",
+    "amenity": "restaurant",
+    "contact:website": "https://zumschlossturm.de/",
+    "microbrewery": "yes",
+    "name": "Zum Schlossturm",
+    "opening_hours": "Mo,Th,Fr 17:00-22:00; Sa,Su 11:00-22:00; Tu,We off",
+    "operator": "Steffen Fohlert",
+    "outdoor_seating": "yes",
+    "phone": "+49 3744 3098000",
+    "smoking": "outside",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://zumschlossturm.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4960675350,
+  "lat": 50.5392190,
+  "lon": 12.9250663,
+  "tags": {
+    "amenity": "fast_food",
+    "opening_hours": "Mo-Su 11:00-17:00",
+    "outdoor_seating": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 7144834239,
+  "lat": 50.7991324,
+  "lon": 13.4267306,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7253663896,
+  "lat": 50.4289102,
+  "lon": 12.9542830,
+  "tags": {
+    "addr:city": "Kurort Oberwiesenthal",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "09484",
+    "addr:street": "Fichtelbergstraße",
+    "amenity": "restaurant",
+    "check_date": "2026-03-22",
+    "contact:website": "https://www.hotel-fichtelberghaus.de/restaurant-erzgebirgsstuben.html",
+    "cuisine": "regional",
+    "diet:vegan": "limited",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Erzgebirgsstuben",
+    "opening_hours": "Mo-Su 10:00-20:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:girocard": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:visa": "yes",
+    "phone": "+49 3734 81230",
+    "website": "https://www.hotel-fichtelberghaus.de/restaurant-erzgebirgsstuben.html"
+  }
+},
+{
+  "type": "node",
+  "id": 8572323125,
+  "lat": 50.8053825,
+  "lon": 13.3427503,
+  "tags": {
+    "access": "no",
+    "check_date": "2023-07-20",
+    "height": "6",
+    "leisure": "wildlife_hide",
+    "man_made": "tower",
+    "note": "Kanzel dauerhaft geöffnet seit 2023",
+    "opening_hours": "24/7",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 8614463087,
+  "lat": 50.5081128,
+  "lon": 13.0196834,
+  "tags": {
+    "access": "customers",
+    "charge": "3€",
+    "direction": "0-360",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Berghotel Bärenstein",
+    "operator": "Berghotel Bärenstein",
+    "payment:cash": "yes",
+    "payment:girocard": "yes",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 8844373895,
+  "lat": 50.8384678,
+  "lon": 12.8125457,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2023-06-16",
+    "name:signed": "no",
+    "opening_hours:signed": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9270612633,
+  "lat": 50.5080781,
+  "lon": 13.0196474,
+  "tags": {
+    "addr:city": "Bärenstein",
+    "addr:country": "DE",
+    "addr:housenumber": "18",
+    "addr:postcode": "09471",
+    "addr:street": "Bergstraße",
+    "amenity": "restaurant",
+    "contact:email": "info@berghotel-baerenstein.de",
+    "contact:facebook": "https://www.facebook.com/Berghotel-B%C3%A4renstein-104396757821819",
+    "contact:fax": "+49 37347 807278",
+    "contact:instagram": "https://www.instagram.com/berghotel.baerenstein",
+    "contact:phone": "+49 37347 807277",
+    "contact:website": "https://berghotel-baerenstein.de/restaurant",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Berghotel Bärenstein",
+    "opening_hours": "Su-Th 11:00-20:00; Fr-Sa 11:00-21:00",
+    "operator": "Dennis Feist",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9387655723,
+  "lat": 50.8112881,
+  "lon": 13.0155788,
+  "tags": {
+    "access": "no",
+    "description": "In Dachstuhl integrierte Holzkonstruktion",
+    "ele": "502",
+    "height": "18",
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 10748326265,
+  "lat": 50.5253155,
+  "lon": 12.7319023,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 11086673668,
+  "lat": 50.8387549,
+  "lon": 12.8112508,
+  "tags": {
+    "amenity": "fast_food"
+  }
+},
+{
+  "type": "node",
+  "id": 11165012591,
+  "lat": 50.5079116,
+  "lon": 13.0199707,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "beverages",
+    "indoor_seating": "yes",
+    "opening_hours": "Mo-Su,PH 11:00-18:00+",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12892472565,
+  "lat": 50.8116507,
+  "lon": 13.0160934,
+  "tags": {
+    "addr:city": "Chemnitz",
+    "addr:housenumber": "2",
+    "addr:postcode": "09127",
+    "addr:street": "Am Adelsbergturm",
+    "amenity": "fast_food",
+    "brand": "Marx Chemnitzer Bier",
+    "drive_through": "no",
+    "ele": "500",
+    "name": "Adelsbergturm — Roter Imbiss",
+    "opening_hours": "Fr-Su 10:00-18:00 \"ungefähre Zeiten\"",
+    "operator": "Winkler Aktiv",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "start_date": "2025-05-01"
+  }
+},
+{
+  "type": "node",
+  "id": 13393858103,
+  "lat": 50.7754194,
+  "lon": 12.7273164,
+  "tags": {
+    "access": "yes",
+    "architect": "Rotmilan (Toni Bettermann & Dominik Mendel)",
+    "artwork_type": "sculpture",
+    "check_date": "2025-12-22",
+    "fee": "no",
+    "man_made": "tower",
+    "material": "wood",
+    "name": "Twisted Peek (Aussichtsturm)",
+    "network": "Purple Path",
+    "opening_hours": "24/7",
+    "ref": "112",
+    "tourism": "artwork",
+    "tower:construction": "lattice",
+    "tower:type": "observation",
+    "website": "https://purple-path.de/werke/rotmilan-twisted-peek/"
+  }
+},
+{
+  "type": "node",
+  "id": 13671508313,
+  "lat": 50.4288974,
+  "lon": 12.9543772,
+  "tags": {
+    "addr:floor": "0",
+    "amenity": "fast_food",
+    "check_date": "2026-03-23",
+    "level": "0",
+    "opening_hours": "Mo,We-Th,Su 11:00-19:00; Fr-Sa 11:00-21:00"
+  }
+},
+{
+  "type": "way",
+  "id": 24569080,
+  "center": {
+    "lat": 50.5253430,
+    "lon": 12.7319251
+  },
+  "nodes": [
+    267124872,
+    267124873,
+    5715587822,
+    5715587821,
+    267124874,
+    5715587823,
+    5715587824,
+    267124876,
+    267124872
+  ],
+  "tags": {
+    "addr:city": "Lauter-Bernsbach",
+    "addr:housenumber": "1",
+    "addr:postcode": "08315",
+    "addr:street": "Morgenleithe",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "german",
+    "name": "Berggaststätte Morgenleithe",
+    "website": "https://www.berggaststaette-morgenleithe.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 34137451,
+  "center": {
+    "lat": 50.5907387,
+    "lon": 12.6599456
+  },
+  "nodes": [
+    391438494,
+    391438487,
+    391438488,
+    391438489,
+    391438490,
+    506628053,
+    2376024453,
+    2376024452,
+    5890698840,
+    5890698839,
+    391438492,
+    391438493,
+    391438494
+  ],
+  "tags": {
+    "addr:city": "Schneeberg",
+    "addr:housenumber": "42",
+    "addr:postcode": "08289",
+    "addr:street": "Gleesbergstraße",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "name": "Berggaststätte Gleesberg",
+    "opening_hours": "We-Fr 12:00-22:00; Sa 11:00-24:00; Su 11:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 3772 22453"
+  }
+},
+{
+  "type": "way",
+  "id": 34146627,
+  "center": {
+    "lat": 50.6134672,
+    "lon": 12.6303328
+  },
+  "nodes": [
+    391589123,
+    391589126,
+    391589131,
+    391589128,
+    391589124,
+    391589129,
+    391589123
+  ],
+  "tags": {
+    "access": "yes",
+    "architect": "Baumeister Carl Eduard Görling",
+    "building": "yes",
+    "ele": "580",
+    "fee": "yes",
+    "height": "21",
+    "historic": "yes",
+    "man_made": "tower",
+    "name": "Fürst-Bismarck-Turm Schneeberg",
+    "network": "Bismarckturm",
+    "note": "Namens-Odyssee : Eingeweiht als Keilbergturm, 1899 umbenannt in Bismarck-Turm, nach dem 2.Weltkr. wieder Keilbergturm, nach Sanierung 1993 wieder Bismarck-Turm",
+    "old_name": "Keilbergturm",
+    "opening_hours": "Sa,Su 10:00-18:00",
+    "operator": "Berg- und Panorama Gaststätte \"Keilberg\"",
+    "start_date": "31.08.1893",
+    "tourism": "viewpoint",
+    "tower:construction": "stone",
+    "tower:type": "observation",
+    "wikipedia": "de:Keilberg (Schneeberg)#Aussichtsturm"
+  }
+},
+{
+  "type": "way",
+  "id": 41423405,
+  "center": {
+    "lat": 50.5906100,
+    "lon": 12.6598627
+  },
+  "nodes": [
+    2376024453,
+    506628053,
+    506628058,
+    506628065,
+    5890698840,
+    2376024452,
+    2376024453
+  ],
+  "tags": {
+    "architect": "R. Unger",
+    "building": "yes",
+    "height": "18",
+    "man_made": "tower",
+    "name": "Köhlerturm",
+    "note": "Schlüssel für den Turm ist bei (der) Wirt(-in) erhältlich",
+    "opening_hours": "\"Wie Gaststätte\"",
+    "start_date": "1898-10-02",
+    "tourism": "viewpoint",
+    "tower:construction": "stone",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 43225415,
+  "center": {
+    "lat": 50.5762375,
+    "lon": 12.7922871
+  },
+  "nodes": [
+    542108717,
+    542108724,
+    542108729,
+    542108736,
+    613106694,
+    613106697,
+    542108717
+  ],
+  "tags": {
+    "addr:city": "Grünhain-Beierfeld",
+    "addr:housenumber": "1",
+    "addr:postcode": "08344",
+    "addr:street": "Alte Bernsbacher Straße",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Spiegelwaldbaude",
+    "opening_hours": "Oct-Mar: 10:00-17:00; Apr-Sep: 10:00-18:00; Mo off",
+    "operator": "Tourismus- Zweckverband Spiegelwald",
+    "outdoor_seating": "yes",
+    "phone": "+49 3774 509199",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.spiegelwaldbaude.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 43225756,
+  "center": {
+    "lat": 50.5762230,
+    "lon": 12.7921775
+  },
+  "nodes": [
+    542115985,
+    542115988,
+    542115994,
+    542116001,
+    542115985
+  ],
+  "tags": {
+    "alt_name": "Spiegelwaldturm",
+    "building:part": "tower",
+    "ele": "728",
+    "height": "31.5",
+    "layer": "2",
+    "man_made": "tower",
+    "museum": "history",
+    "name": "König-Albert-Turm",
+    "opening_hours": "Oct-Mar 10:00-17:00; Apr-Sep 10:00-18:00; Mo off",
+    "operator": "Tourismus-Zweckverband Spiegelwald",
+    "roof:colour": "black",
+    "roof:height": "3",
+    "roof:shape": "helm",
+    "tower:type": "observation",
+    "website": "https://www.spiegelwald.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 48716967,
+  "center": {
+    "lat": 50.5020925,
+    "lon": 12.5989026
+  },
+  "nodes": [
+    618422943,
+    618422937,
+    618422938,
+    618422939,
+    3925277702,
+    3925277705,
+    3925277704,
+    3925277708,
+    3925277709,
+    618422944,
+    618422943
+  ],
+  "tags": {
+    "addr:city": "Eibenstock",
+    "addr:country": "DE",
+    "addr:housenumber": "14",
+    "addr:postcode": "08309",
+    "addr:street": "Bühlstraße",
+    "amenity": "restaurant",
+    "building": "hotel",
+    "building:levels": "2",
+    "check_date:opening_hours": "2022-10-27",
+    "cuisine": "regional",
+    "name": "Bühlhaus",
+    "opening_hours:signed": "no",
+    "roof:levels": "3",
+    "roof:shape": "gabled",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "https://www.hotel-buehlhaus.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 80994674,
+  "center": {
+    "lat": 50.4563009,
+    "lon": 12.6470030
+  },
+  "nodes": [
+    944272392,
+    944272058,
+    944272484,
+    7578260682,
+    944272160,
+    944272392
+  ],
+  "tags": {
+    "addr:city": "Eibenstock",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:place": "Auersbergweg",
+    "addr:postcode": "08309",
+    "addr:suburb": "Wildenthal",
+    "air_conditioning": "no",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "diet:vegetarian": "no",
+    "email": "auersberg.team@simmel.de",
+    "image": "https://commons.wikimedia.org/wiki/File:Auersberg-Haus.jpg",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Berggasthof Auersberg",
+    "opening_hours": "Mo-Fr 11:00-16:00; Sa,Su 11:00-17:00",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "yes",
+    "phone": "+4937752699258",
+    "tourism": "guest_house",
+    "website": "https://www.auersberghaus.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 80994675,
+  "center": {
+    "lat": 50.4561488,
+    "lon": 12.6467486
+  },
+  "nodes": [
+    944272229,
+    7578156241,
+    7578320349,
+    7578156237,
+    944272088,
+    944272305,
+    7578156240,
+    7578420347,
+    7578156244,
+    944272177,
+    944272229
+  ],
+  "tags": {
+    "charge": "1.00 EUR",
+    "description": "Der Zugang zu dem Turm kostet 1 €. In den Zwischenetagen sind insgesamt 12 3-sprachige Infotafeln zur Geschichte, der Geologie und der Natur zu finden. Wendeltreppe recht eng, kein Passieren des Gegenverkehrs möglich.",
+    "ele": "1018",
+    "fee": "yes",
+    "height": "18",
+    "image": "https://commons.wikimedia.org/wiki/File:Aussichtsturm_auf_dem_Auersberg.jpg",
+    "man_made": "tower",
+    "name": "Auersbergturm",
+    "note": "Bilder in Wikipedia sind einige Jahre alt und zeigen nicht den aktuellen Zustand",
+    "opening_hours": "Mo-Fr 11:00-16:00; Sa,Su,PH 11:00-17:00",
+    "start_date": "1860",
+    "tower:construction": "stone",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikipedia": "de:Auersberg#Geschichte des Aussichtsturmes auf dem Berg"
+  }
+},
+{
+  "type": "way",
+  "id": 119207209,
+  "center": {
+    "lat": 50.7438643,
+    "lon": 13.7928956
+  },
+  "nodes": [
+    1339996502,
+    1339996581,
+    1339996479,
+    1339996656,
+    1339996539,
+    1339996394,
+    1339996602,
+    1339996497,
+    1339996502
+  ],
+  "tags": {
+    "access": "yes",
+    "fee": "yes",
+    "height": "11",
+    "man_made": "tower",
+    "name": "Aussichtsturm Kohlhaukuppe",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 119207212,
+  "center": {
+    "lat": 50.7439636,
+    "lon": 13.7931158
+  },
+  "nodes": [
+    1339996416,
+    1339996664,
+    1339996527,
+    1339996370,
+    1339996590,
+    1339996615,
+    1339996412,
+    1339996416
+  ],
+  "tags": {
+    "addr:city": "Altenberg",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "01778",
+    "addr:street": "Kohlhaukuppe",
+    "addr:suburb": "Geising",
+    "amenity": "restaurant",
+    "building": "yes",
+    "contact:email": "knoblauch@knoblauchkuppe.de",
+    "contact:phone": "+49 35056 31395",
+    "cuisine": "regional",
+    "name": "Bergbaude Kohlhaukuppe",
+    "opening_hours": "We-Su,PH 11:00-17:00; Mo,Tu off",
+    "website": "http://www.knoblauchkuppe.de"
+  }
+},
+{
+  "type": "way",
+  "id": 143755403,
+  "center": {
+    "lat": 50.8246786,
+    "lon": 12.7798310
+  },
+  "nodes": [
+    1573047064,
+    1573047061,
+    1573047062,
+    1573047065,
+    1573047064
+  ],
+  "tags": {
+    "access": "yes",
+    "architect": "Neuer & Partner Falkenstein",
+    "direction": "0-360",
+    "ele": "483.1",
+    "fee": "no",
+    "height": "30",
+    "man_made": "tower",
+    "material": "steel",
+    "name": "Maria-Josepha-Turm",
+    "note": "Dem Berg zur Zierde. Dem Mensch zur Freude.",
+    "opening_hours": "24/7",
+    "start_date": "1998",
+    "steps": "80",
+    "tourism": "viewpoint",
+    "tower:construction": "lattice",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q1895553",
+    "wikipedia": "de:Maria-Josepha-Turm"
+  }
+},
+{
+  "type": "way",
+  "id": 143755409,
+  "center": {
+    "lat": 50.8248918,
+    "lon": 12.7785490
+  },
+  "nodes": [
+    11005320711,
+    1573047073,
+    7973894524,
+    11005320715,
+    11005320709,
+    11005320708,
+    11005320710,
+    12917390535,
+    11005320711
+  ],
+  "tags": {
+    "addr:city": "Chemnitz",
+    "addr:housenumber": "15",
+    "addr:postcode": "09224",
+    "addr:street": "Totensteinstraße",
+    "amenity": "restaurant",
+    "building": "hut",
+    "building:levels": "1",
+    "cash_withdrawal": "no",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=61571763123623",
+    "contact:instagram": "https://www.instagram.com/totenstein_alm",
+    "cuisine": "german;cake;regional;soup;pasta;tea;dessert;bistro",
+    "delivery": "no",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "email": "info@totenstein-alm.de",
+    "internet_access": "no",
+    "microbrewery": "no",
+    "name": "Totenstein-Alm",
+    "opening_hours": "Fr 11:00-17:00; Sa,Su 10:00-18:00",
+    "operator": "Insheva Piazza GmbH",
+    "outdoor_seating": "yes",
+    "phone": "+49 176 12814083",
+    "reservation": "yes",
+    "roof:colour": "black",
+    "roof:shape": "gabled",
+    "smoking": "outside",
+    "toilets": "yes",
+    "website": "https://www.totensteinalm.de/",
+    "website:menu": "https://totensteinalm.de/menu/",
+    "wheelchair": "limited",
+    "wheelchair:description": "steile, schmale Auffahrt, Bodenbelag Kies, Fenster des Imbiss sehr hoch"
+  }
+},
+{
+  "type": "way",
+  "id": 174886721,
+  "center": {
+    "lat": 50.5741040,
+    "lon": 13.0299433
+  },
+  "nodes": [
+    1855324369,
+    1855324365,
+    1855324366,
+    1855324370,
+    2782366586,
+    2782366584,
+    1855324369
+  ],
+  "tags": {
+    "addr:city": "Annaberg-Buchholz",
+    "addr:country": "DE",
+    "addr:housenumber": "20",
+    "addr:postcode": "09456",
+    "addr:street": "Ernst-Roch-Straße",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Berghotel Pöhlberg",
+    "opening_hours": "Mo 11:30-21:00; Tu-Fr 11:30-22:00; Sa 11:30-22:00; Su 11:30-21:00",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 219672039,
+  "center": {
+    "lat": 50.5392462,
+    "lon": 12.9251503
+  },
+  "nodes": [
+    2288127090,
+    2288127075,
+    2288127071,
+    2288127056,
+    2288127054,
+    7103351893,
+    1944460000,
+    2288127073,
+    7103351897,
+    2288127092,
+    2288127090
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "direction": "0-360",
+    "fee": "yes",
+    "height": "29.2",
+    "man_made": "tower",
+    "name": "Aussichtsturm Scheibenberg",
+    "opening_hours": "Mo-Su 11:00-17:00",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 219672040,
+  "center": {
+    "lat": 50.5392712,
+    "lon": 12.9255012
+  },
+  "nodes": [
+    2288127104,
+    9127595546,
+    2288127063,
+    9127595547,
+    2288127045,
+    7103351891,
+    2288127069,
+    2288127098,
+    2288127104
+  ],
+  "tags": {
+    "addr:city": "Scheibenberg",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "09481",
+    "addr:street": "Auf dem Berg",
+    "amenity": "restaurant",
+    "building": "yes",
+    "contact:email": "info@buerger-berggasthaus.de",
+    "contact:phone": "+49 37349 13344",
+    "contact:website": "https://www.buerger-berggasthaus.de/",
+    "cuisine": "german",
+    "name": "Bürger- und Berggasthaus Scheibenberg",
+    "opening_hours": "Fr-Tu,PH 11:00-20:00; We,Th off \"nach Vereinbarung\"",
+    "operator": "Enrico Göthel",
+    "outdoor_seating": "yes",
+    "rooms": "13",
+    "tourism": "hotel",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 221051785,
+  "center": {
+    "lat": 50.8432695,
+    "lon": 14.0426137
+  },
+  "nodes": [
+    2301060415,
+    2301060413,
+    13295019912,
+    2301060409,
+    2301060411,
+    2301060415
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "fee": "no",
+    "heritage": "4",
+    "heritage:operator": "lfd",
+    "man_made": "tower",
+    "name": "Kaiser-Wilhelm-Feste",
+    "ref:lfd": "09223460",
+    "start_date": "1880",
+    "step_count": "3",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q49516257",
+    "wikimedia_commons": "Category:Kaiser-Wilhelm-Feste (Saxon Switzerland)"
+  }
+},
+{
+  "type": "way",
+  "id": 225091221,
+  "center": {
+    "lat": 50.5252051,
+    "lon": 12.7318062
+  },
+  "nodes": [
+    2339151080,
+    2339151077,
+    2339151074,
+    2339151078,
+    2339151080
+  ],
+  "tags": {
+    "amenity": "biergarten"
+  }
+},
+{
+  "type": "way",
+  "id": 232057911,
+  "center": {
+    "lat": 50.8085216,
+    "lon": 12.5638554
+  },
+  "nodes": [
+    540004068,
+    540004067,
+    540004066,
+    540004065,
+    6421973468,
+    540004068
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "45",
+    "historic": "monument",
+    "image": "https://commons.wikimedia.org/wiki/File:Glauchau_Bismarckturm_Wasserturm.jpg",
+    "man_made": "tower",
+    "monument:genesis": "patriotism",
+    "name": "Bismarckturm Glauchau",
+    "network": "Bismarckturm",
+    "start_date": "1910-09-04",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "url": "https://youtu.be/kuep4oZ1U5s?si=_GItIv6GrhMB_JIc&t=132",
+    "wheelchair": "no",
+    "wikipedia": "de:Bismarckturm (Glauchau)"
+  }
+},
+{
+  "type": "way",
+  "id": 254108473,
+  "center": {
+    "lat": 50.7975937,
+    "lon": 13.7074874
+  },
+  "nodes": [
+    2599309445,
+    11539474912,
+    224619472,
+    2599309441,
+    11539474911,
+    2599309435,
+    2599309434,
+    2599309439,
+    2599309447,
+    11539474909,
+    2599309449,
+    2599309451,
+    2599309445
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "14",
+    "image": "http://wiki.openstreetmap.org/wiki/File:2013_Aussichtsturm_Oberb%C3%A4renburg.jpg",
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q105087645"
+  }
+},
+{
+  "type": "way",
+  "id": 277629374,
+  "center": {
+    "lat": 50.7373269,
+    "lon": 12.6223344
+  },
+  "nodes": [
+    2821152899,
+    2821153504,
+    2989559706,
+    2821153505,
+    2989559705,
+    2821153502,
+    2821152899
+  ],
+  "tags": {
+    "addr:city": "Lichtenstein/Sa.",
+    "addr:housenumber": "51",
+    "addr:postcode": "09350",
+    "addr:street": "Niclaser Straße",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "name": "Waldgasthof Alberthöhe",
+    "opening_hours": "Mo-Th 17:00-21:30; Fr 11:00-23:00; PH,Su 11:00-21:30",
+    "tourism": "hotel",
+    "website": "https://www.waldgasthof-alberthoehe.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 279647080,
+  "center": {
+    "lat": 50.3903387,
+    "lon": 12.5069806
+  },
+  "nodes": [
+    2838541465,
+    2838541467,
+    2838541468,
+    9215232240,
+    2838541466,
+    2838541465
+  ],
+  "tags": {
+    "access": "yes",
+    "charge": "1.00 EUR",
+    "description": "Plattform in 26.64 m",
+    "ele": "917",
+    "fee": "yes",
+    "height": "31.91",
+    "man_made": "tower",
+    "name": "Otto Hermann Böhm Turm",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 295252126,
+  "center": {
+    "lat": 50.7371158,
+    "lon": 12.6223085
+  },
+  "nodes": [
+    2989559699,
+    2989559700,
+    2989559697,
+    2989559696,
+    2989559699
+  ],
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "height": "29",
+    "man_made": "tower",
+    "material": "steel",
+    "name": "König-Albert-Turm",
+    "opening_hours": "24/7",
+    "start_date": "1993",
+    "tower:construction": "lattice",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 300418421,
+  "center": {
+    "lat": 50.6755857,
+    "lon": 12.4007814
+  },
+  "nodes": [
+    3045064452,
+    3119429912,
+    3045075543,
+    3045075557,
+    3045064451,
+    3045075567,
+    3045075554,
+    3045064445,
+    3045075553,
+    3045064444,
+    3045075545,
+    3045064442,
+    3045075562,
+    3045075563,
+    3045064441,
+    3045075564,
+    3119429907,
+    3119429911,
+    3119429916,
+    3119429909,
+    3045064452
+  ],
+  "tags": {
+    "building": "yes",
+    "ele": "441",
+    "height": "25",
+    "historic": "yes",
+    "man_made": "tower",
+    "name": "Bergfried",
+    "source": "wikipedia.de",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikimedia_commons": "File:Bergfried Burg Schoenfels.jpg"
+  }
+},
+{
+  "type": "way",
+  "id": 318994858,
+  "center": {
+    "lat": 50.5170409,
+    "lon": 12.3791852
+  },
+  "nodes": [
+    3254068251,
+    3254068250,
+    3254068253,
+    3254068259,
+    3254068664,
+    3254068665,
+    3254068661,
+    3254068258,
+    3254068251
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "name": "Rebesgrüner Wasserturm",
+    "tower:type": "observation",
+    "website": "http://rebesgruener-wasserturm.de/",
+    "year_of_construction": "1926"
+  }
+},
+{
+  "type": "way",
+  "id": 378307485,
+  "center": {
+    "lat": 50.4863034,
+    "lon": 12.4492164
+  },
+  "nodes": [
+    3817099778,
+    3817099776,
+    3817099779,
+    3817099775,
+    3817099774,
+    10892737806,
+    3817099777,
+    10892670104,
+    10892737805,
+    3817099778
+  ],
+  "tags": {
+    "area": "yes",
+    "building": "yes",
+    "description": "Schlüssel benötigt; Schlüsselausgabe: - Waldpark Grünheide",
+    "height": "14",
+    "man_made": "tower",
+    "name": "Carlsturm",
+    "tourism": "viewpoint",
+    "tower:construction": "brick",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 385588170,
+  "center": {
+    "lat": 50.8291892,
+    "lon": 12.9188742
+  },
+  "nodes": [
+    5161276942,
+    8707594990,
+    3889261159,
+    3889261160,
+    5161276943,
+    5161276942
+  ],
+  "tags": {
+    "area": "yes",
+    "check_date": "2025-08-01",
+    "covered": "no",
+    "dog": "yes",
+    "floating": "no",
+    "foot": "yes",
+    "lit": "no",
+    "man_made": "pier",
+    "motor_vehicle": "no",
+    "surface": "wood",
+    "tactile_paving": "no",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 438375010,
+  "center": {
+    "lat": 50.8388184,
+    "lon": 12.8117457
+  },
+  "nodes": [
+    4361208975,
+    4361208976,
+    4361208977,
+    4361208978,
+    4361208975
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "building": "yes",
+    "check_date:opening_hours": "2023-06-16",
+    "name": "Imbiss am Kletterwald Rabenstein",
+    "opening_hours:signed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 512668423,
+  "center": {
+    "lat": 50.8294979,
+    "lon": 12.9194992
+  },
+  "nodes": [
+    5012817174,
+    5012817159,
+    5012817160,
+    5012817161,
+    5012817174
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "indoor_seating": "no",
+    "name": "Uferstrand - Paula",
+    "outdoor_seating": "beach",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 512668425,
+  "center": {
+    "lat": 50.8293833,
+    "lon": 12.9194594
+  },
+  "nodes": [
+    5012817170,
+    5012817171,
+    5012817174,
+    5012817161,
+    5012817160,
+    5012817168,
+    5012817172,
+    5012817173,
+    5012817170
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "burger",
+    "name": "Superhelden Burger"
+  }
+},
+{
+  "type": "way",
+  "id": 565798691,
+  "center": {
+    "lat": 50.6287672,
+    "lon": 12.4411249
+  },
+  "nodes": [
+    3075910975,
+    3075910982,
+    3075910987,
+    3075910975
+  ],
+  "tags": {
+    "building:part": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 625405094,
+  "center": {
+    "lat": 50.6269919,
+    "lon": 12.4391899
+  },
+  "nodes": [
+    5905059949,
+    5905059868,
+    5905059936,
+    5905059921,
+    3661490918,
+    3661490919,
+    3661490920,
+    3661490921,
+    3661490922,
+    5905059949
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "german",
+    "name": "Bärenschenke",
+    "outdoor_seating": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 625405097,
+  "center": {
+    "lat": 50.6270432,
+    "lon": 12.4395422
+  },
+  "nodes": [
+    3661490918,
+    5905059970,
+    5905059942,
+    5905059868,
+    5905059936,
+    5905059921,
+    3661490918
+  ],
+  "tags": {
+    "amenity": "biergarten",
+    "leisure": "outdoor_seating",
+    "name": "Sonnenterrasse Bärenschenke",
+    "survey:date": "2021-09-18",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 625405126,
+  "center": {
+    "lat": 50.6261645,
+    "lon": 12.4405238
+  },
+  "nodes": [
+    5905059968,
+    5905059923,
+    5905059974,
+    12040808359,
+    5905059911,
+    5905059968
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 724586729,
+  "center": {
+    "lat": 50.5433166,
+    "lon": 12.4653713
+  },
+  "nodes": [
+    6795540486,
+    6795540488,
+    6795540485,
+    6795540487,
+    6795540486
+  ],
+  "tags": {
+    "addr:city": "Steinberg",
+    "addr:country": "DE",
+    "addr:housename": "Berggaststätte Steinberg",
+    "addr:housenumber": "1",
+    "addr:postcode": "08237",
+    "addr:street": "Steinbergstraße",
+    "amenity": "restaurant",
+    "building": "yes",
+    "contact:email": "info@steinberggaststaette.de",
+    "contact:fax": "+49 37462 635589",
+    "contact:phone": "+49 37462 636959",
+    "contact:website": "https://www.steinberggaststaette.de/",
+    "cuisine": "regional",
+    "name": "Berggaststätte Steinberg",
+    "opening_hours": "We-Su 11:00-21:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 726079049,
+  "center": {
+    "lat": 50.5024724,
+    "lon": 12.5985980
+  },
+  "nodes": [
+    6807445279,
+    6807445280,
+    6807445281,
+    6807445282,
+    6807445283,
+    6807445284,
+    6807445279
+  ],
+  "tags": {
+    "building": "yes",
+    "fee": "yes",
+    "height": "32",
+    "man_made": "tower",
+    "name": "GlückAuf-Turm",
+    "tower:construction": "concrete",
+    "tower:type": "observation",
+    "wikidata": "Q105094379"
+  }
+},
+{
+  "type": "way",
+  "id": 801699234,
+  "center": {
+    "lat": 50.5202523,
+    "lon": 12.4990436
+  },
+  "nodes": [
+    7498724061,
+    7498724058,
+    7498724059,
+    7969161526,
+    7498724060,
+    14070577037,
+    7498724061
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "tower",
+    "fee": "yes",
+    "height": "20",
+    "historic": "yes",
+    "man_made": "tower",
+    "name": "Kuhbergturm",
+    "old_name": "Prinz-Georg-Turm",
+    "tourism": "viewpoint",
+    "tower:construction": "freestanding",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 931685377,
+  "center": {
+    "lat": 50.5080713,
+    "lon": 12.4011713
+  },
+  "nodes": [
+    2498549748,
+    8637447044,
+    8637447043,
+    2498549759,
+    2498549768,
+    8637447035,
+    8637447042,
+    8637447041,
+    8637447040,
+    2498549772,
+    8637447039,
+    8637447038,
+    8637447034,
+    8637447033,
+    2498549755,
+    8637447037,
+    2498549748
+  ],
+  "tags": {
+    "building": "yes",
+    "direction": "0-360",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Schlossturm",
+    "toilets:wheelchair": "yes",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q2244730"
+  }
+},
+{
+  "type": "way",
+  "id": 955625079,
+  "center": {
+    "lat": 50.8383332,
+    "lon": 12.8116257
+  },
+  "nodes": [
+    8844370969,
+    8844370970,
+    8844370971,
+    8844370972,
+    8844370969
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}
