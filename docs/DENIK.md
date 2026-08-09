@@ -29,6 +29,148 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-09 (osmý blok) — sedmnáct profilů Vysokých Tater a konvence, která si žádá doplnění
+
+Michalův pokyn: *„pokracuj autonomne dal, pracuj 4 hodiny v kuse"*.
+
+**Hotovo:**
+
+**TŘINÁCT NOVÝCH PROFILŮ VE TŘECH VÁRKÁCH, korpus 156 → 169.** Oblast Vysoké
+Tatry má teď sedmnáct publikovaných profilů a poprvé i polskou stranu.
+První várka: Sliezsky dom, Chata pri Zelenom plese, Skalnatá chata,
+Zamkovského chata. Druhá: Bilíkova chata, Chata Plesnivec, Horský hotel
+Popradské pleso, Majláthova chata. Třetí, celá polská: schroniska PTTK nad
+Morskim Okiem, Murowaniec, w Dolinie Pięciu Stawów Polskich, w Dolinie
+Roztoki a na Hali Kondratowej.
+
+**KARPATHENVEREIN JE DOLOŽENÝ — a je to dovětek k ranní opatrnosti z 8. 8.**
+Tehdy druhá rešerše žádnou chatu spolku ve Vysokých Tatrách nenašla a do
+`data/oblasti/vysoke-tatry.yaml` se napsalo, že z nenalezení se nesmí stát
+vyvrácení. Bilíkovu chatu spolku teď připisuje **pět nezávislých pramenů**
+včetně německé Wikipedie a Slovenského olympijského výboru, a to i
+s upřesněním na kežmarskou sekci a se jménem předsedy Michala Guhra, který
+pozemek roku 1927 koupil a spolku daroval. Kdybych včera napsal
+„vyvráceno", musel bych to dnes brát zpátky.
+
+**KONVENCE O NIŽŠÍM ČÍSLE NARAZILA ČTYŘIKRÁT A POKAŽDÉ JINAK — je z toho
+KONTROLA-11.** Konvence z 27. 7. 2026 říká: při rozporu pramenů zapiš nižší
+číslo a přiznej to. Dnes se ukázalo, že „nižší" potřebuje směr:
+
+1. **Letopočet založení.** U Skalnaté chaty stojí proti sobě 1932 (převzetí
+   kaverny KČST) a 1935 (vznik Skalnaté chaty KČST). Aritmeticky nižší je
+   1932, ale u data založení je starší letopočet ten lichotivější, takže
+   mechanické čtení míří proti smyslu konvence. Zapsáno 1935.
+2. **Drtivá shoda proti odlehlé hodnotě.** U Chaty pri Zelenom plese uvádí
+   1551 m deset pramenů včetně spoluvlastníka KST, 1550 m jeden portál
+   a 1548 m automaticky odvozený tag `ele` v OSM. Mechanicky by vyhrálo
+   1548. Zapsáno 1551.
+3. **Rozpor pramenů × zastaralost pramene.** U Zamkovského chaty prameny
+   uvádějí 23, 24, 25 i 28 lůžek, ale chata prošla v letech 2019–2024
+   rekonstrukcí s doloženým cílem „navýšenie kapacity" — starší čísla
+   popisují jinou budovu, ne jiný názor. Zapsáno 24 (provozovatel).
+4. **A protipól téhož.** U Kondratowé vlastní web po rekonstrukci uvádí
+   24 lůžek, ale portalgorski.pl dva měsíce před znovuotevřením výslovně
+   píše, že se počet NEZMĚNIL a zůstane jich dvacet. To není zastaralý
+   údaj, ale protichůdné tvrzení o témž čase. Zapsáno 20.
+
+Navržené znění je v backlogu: „nižší" znamená *v neprospěch chaty*, ne
+aritmeticky nižší; konvence platí mezi prameny o TÉŽE VĚCI VE STEJNÉM ČASE
+a ustupuje aktuálnímu údaji provozovatele tam, kde je doložená změna stavu.
+**Rozhodnutí je na Michalovi — zatím jsou to čtyři výklady, které jsem si
+udělal sám**, a v `interniPoznamky` všech dotčených profilů to tak stojí.
+
+**POLSKÁ STRANA MÁ LEPŠÍ DOKLAD O NEUBYTOVANÝCH NEŽ SLOVENSKÁ**, a je to
+nejužitečnější zjištění dneška. Přímá věta „obsloužíme i neubytované" chybí
+skoro všude, ale polská schroniska PTTK adresují ve svých cenících a řádech
+*turisty*, ne hosty: Morskie Oko — „Wrzątek dla turystów bezpłatny do naczyń
+własnych podawany poza kolejnością" (tedy i s předností ve frontě); Pięć
+Stawów — turistická kuchyňka „dla Turystów, którzy są zaopatrzeni we własny
+prowiant" a povolení jíst v jídelně vlastní jídlo z batohu; Kondratowa —
+„Do dyspozycji turystów jest bufet, jadalnia i świetlica, przez całą dobę
+wydawany jest bezpłatny wrzątek." Možná to nikdo nepíše výslovně proto, že
+je to u chat PTTK samozřejmost. Na slovenské straně jsou zatím jen dva
+doložené případy: **Sliezsky dom** (provozovatel sám vede bufet jako
+„turistickú reštauráciu" s vlastní otevírací dobou 8.30–20.30) a **Majláthova
+chata** („Od 6:00 sú k dispozícii raňajky aj pre neubytovaných hostí.").
+Telefonát DATA-04 tedy pořád zavírá pět slovenských profilů, ne všech
+sedmnáct.
+
+**PRAVIDLO Z KOZUBOVÉ SE POUŽILO DVAKRÁT A POKAŽDÉ OPAČNĚ, což je jeho
+nejlepší test.** Morskie Oko: dvě budovy 74 metrů od sebe → JEDEN profil,
+protože je to jeden provoz, jeden web, jeden ceník a provozovatel sám
+popisuje Wozownii jako noclehárnu téhož schroniska. Popradské pleso:
+dvě budovy 106 metrů od sebe → DVA profily, protože hotel provozuje
+TatryPEM s. r. o. a repliku Majláthovy chaty vlastní horolezec Pavol Lazar.
+Vzdálenost skutečně nerozhoduje.
+
+**ZÁMĚNA JMÉNA PŘES ČTYŘI KILOMETRY — kandidát `vysoke-tatry/encian`
+vyřazen, z toho je VT-02.** Uzel OSM 7643802175 má jediné dva tagy
+`amenity=restaurant` a `name=Encián`, a protože jméno sedělo na slavnou
+Jurkovičovu stavbu na Skalnatém plese, dostal se do fronty na povýšení.
+Naměřeno ale **3 972 m od Skalnaté chaty a 216 m od centra Tatranské
+Lomnice** — je to vesnická restaurace. Důsledek je horší než samo vyřazení:
+**skutečný Encián v exportu DATA-01 vůbec není**, takže průvodci chybí
+národní kulturní památka (soubor ÚZPF 3850/1-20) s galerií, čítárnou Alfreda
+Grosze, kavárnou, kaplí a Domem hostí. Patří do ruční dohledávky DATA-31.
+Poučení: kandidát se nesmí povyšovat podle shody jména bez měření.
+
+**DVĚ MOJE DOMNĚNKY V ZADÁNÍCH REŠERŠÍ SE NEPOTVRDILY** a je to potřetí
+a počtvrté tatáž lekce z 8. 8.: do zadání se píše „kdo?", ne „byl to X?".
+Patrocinium Murowańce „im. Wandy Jerzmanowskiej" nenašel žádný pramen —
+naopak vlastník, ústředí PTTK, město Zakopane i všechny portály vedou chatu
+bez patronky. A u Kondratowé jsem se ptal na „nejmenší schronisko PTTK";
+prameny píší „najmniejsze schronisko w (polskich) Tatrach", tedy o něco
+jiného. Do dat šla v obou případech verze pramenů, ne moje.
+
+**TŘI PROFILY MAJÍ NEVYPLNĚNOU SEZÓNNOST** (Majláthova chata, Roztoka,
+Kondratowa), protože výslovný doklad chybí a přenášet celoroční provoz od
+sousední chaty s jiným majitelem by bylo domýšlení. U Kondratowé je to
+navíc čerstvé: po dvouleté rekonstrukci se otevřela teprve v červnu 2025
+a předrekonstrukční údaj o údržbové přestávce nemusí platit.
+
+**PÁTÝ TYP REŽIMU „OTEVŘENO ≠ DOSTUPNÉ": BELIANSKÉ TATRY.** Chata Plesnivec
+stojí uvnitř pohoří, kde Správa TANAP od roku 1978 uzavřela většinu území
+a všechny hřebenové značky — a je v něm jediná fungující chata. Zajímavé je,
+že na její dostupnosti se to neprojevuje: v oficiálním seznamu uzavřených
+chodníků (Vestník vlády SR) figurují chodníky na Kopské sedlo a Monkovou
+dolinou, ale Dolina siedmich prameňov ne. Chata je tedy **celoročně dostupná
+zdola a sezónně nedostupná shora**. K tomu polská strana přidala šestý typ:
+vstupné do TPN, zákaz nocování mimo schroniska pod pokutou 50–500 zł
+a od dubna do konce listopadu zákaz pobytu v parku od soumraku do svítání —
+u Pięciu Stawów, kam nevede silnice, to znamená, že kdo přijde pozdě bez
+rezervace, nemá zákonnou možnost zůstat.
+
+**Commity:** `2fb5fca` (první čtyři profily), `4181a98` (další čtyři plus
+vyřazení Enciánu), `158feea` (pět polských schronisek). Všechny kontroly
+zelené, prettier čistý, integrační testy oblastí 182/182. Devět selhávajících
+testů v `pohori.int.spec.tsx`, `api.int.spec.ts`, `razitka-moderace` a
+`sitemap-llms` je prostředí (chybí PAYLOAD_SECRET a databáze) — ověřeno
+`git stash`em, že selhávají i bez dnešních změn.
+
+**Příště:** ve Vysokých Tatrách zbývá zhruba 25 nadějných kandidátů; nejblíž
+mají Chata pod Soliskom, Belianska chata, Švajčiarsky dom, Psotkova chata,
+Betlejemka a Koniarka. Pak stojí za zvážení vrátit se do Beskyd, kde je
+172 nadějných kandidátů a tři doložené mezery katalogu (Ropička, Marguška,
+Równica).
+
+**Otázky pro Michala:**
+
+1. **KONTROLA-11 — konvence o nižším čísle.** Souhlasíš s tím, že „nižší"
+   má znamenat *v neprospěch chaty*, ne aritmeticky nižší, a že konvence
+   platí jen mezi prameny o téže věci v témž čase? Dneska jsem to takhle
+   vyložil čtyřikrát a rád bych to měl potvrzené, ne jen zapsané.
+2. **Belianské Tatry jako samostatná oblast?** Mají jiný režim (od roku 1978
+   uzavřené celé pohoří), jiné podloží (vápenec) a jediný objekt — Chatu
+   Plesnivec. Zatím jsem ji nechal ve Vysokých Tatrách.
+3. **Telefonát DATA-04.** Zavírá pět slovenských profilů najednou (Téryho,
+   Zbojnícka, Chata pod Rysmi, Chata pri Zelenom plese, Bilíkova). Chceš,
+   abych připravil seznam otázek a čísel, nebo to necháváš na později?
+4. **Encián (VT-02).** Skutečná stavba na Skalnatém plese v OSM exportu
+   není. Mám ji dohledat ručně přes DATA-31, nebo počkat?
+5. **Polské chaty a klíč zařazení.** U schronisek PTTK nikdo výslovně
+   nepíše, že obslouží neubytované — ale ceníky mluví o „turystach". Bereš
+   to jako doložené, nebo to má zůstat jako mezera stejně jako u slovenských?
+
 ## 2026-08-08 (sedmý blok) — od zakládání zpátky k povyšování, a šestá chyba téhož druhu
 
 Michalův pokyn: *„pokracuj samostatne dal, muzes zakladat a pak se vratit
