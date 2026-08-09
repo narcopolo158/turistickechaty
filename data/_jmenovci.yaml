@@ -588,38 +588,6 @@ jmenovci:
       Claude (8. 8. 2026, samostatný blok; obec tatranské doložena
       9. 8. 2026 při třetím průchodu VT-03)
     checked: 2026-08-09
-  - jadro: zbojnicka
-    objekty:
-      - beskydy/zbojnicka-chata
-      - vysoke-tatry/zbojnicka-chata
-    duvod: >-
-      PŮVODNĚ TŘI OBJEKTY, OD 9. 8. 2026 DVA — zakopanská
-      `vysoke-tatry/chata-zbojnicka` byla v triáži VT-03 vyřazena jako
-      restaurace v zástavbě Zakopaného (naměřeno 1 130 m od centra města
-      a 19 859 m od pravé Zbojníckej chaty); záznam je v `_vyrazeno.yaml`.
-      Zbývající dvojice se vede dál, protože jméno se v polských horách
-      opakuje a záměna by tu byla nejdražší z celého registru.
-      takže záměna by tady byla nejdražší z celého registru. Naměřené
-      vzdálenosti: `vysoke-tatry/zbojnicka-chata` (49.1766085 / 20.1673952,
-      obec Vysoké Tatry) je ta PRAVÁ Zbojnícka chata z katalogu — 1960 m,
-      postavena 1907, vyhořela 1998; od `beskydy/zbojnicka-chata`
-      v Ustroni je vzdálená 112 410 m. Vyřazená zakopanská ležela 19 859 m
-      od tatranské a 92 857 m od ustroňské.
-      „Zbójnicka chata" je v polských horách jméno pro hospodu ve
-      zbojnickém stylu; slovenská Zbojnícka chata je naopak konkrétní
-      vysokohorská chata Klubu slovenských turistov. Rozlišovač: obec
-      a nadmořská výška — u tatranské pravé bude 1960 m, u obou ostatních
-      pod tisícem.
-    rozhodl: >-
-      Claude (8. 8. 2026, samostatný blok — kolize přišla s Michalovým
-      exportem Vysokých Tater; 9. 8. 2026 zúženo na dva objekty po triáži
-      VT-03)
-    checked: 2026-08-09
-
-  # ── Nálezy z Michalova exportu Malé Fatry (8. 8. 2026, +43 kandidátů).
-  # Malá Fatra sousedí s Kysuckými Beskydami, takže se tu potkávají jména
-  # z obou stran hranice oblastí — u obou dvojic naměřeno okolo čtyřiceti
-  # kilometrů, tedy jasní jmenovci, ne duplicity z překryvu oken.
   - jadro: lucka
     objekty:
       - mala-fatra/chata-lucka
@@ -948,4 +916,76 @@ jmenovci:
     rozhodl: >-
       Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
       měřením z GPS)
+    checked: 2026-08-09
+  - jadro: zbojnicka
+    objekty:
+      - beskydy/zbojnicka-chata
+      - orlicke-hory/zbojnicka-chata
+      - vysoke-tatry/zbojnicka-chata
+    duvod: >-
+      TŘI RŮZNÉ OBJEKTY (a čtvrtý, zakopanský, vyřazen 9. 8. v triáži VT-03):
+      publikovaná PRAVÁ Zbojnícka chata KST ve Vysokých Tatrách (1960 m,
+      Vysoké Tatry, zbojnickachata.sk) × Zbójnicka Chata v Ustroni
+      (zbojnicka-chata.com.pl) 112 410 m × NOVÁ Zbójnicka Chata v
+      Dusznikach-Zdroju (Zieleniec, obec doložená) — 300 560 m od tatranské,
+      189 154 m od ustroňské. „Zbójnicka chata" je v polských horách jméno
+      pro hospodu ve zbojnickém stylu; slovenská je konkrétní vysokohorská
+      chata. Záměna by tu byla nejdražší z celého registru — rozlišovač: obec
+      a nadmořská výška (tatranská 1960 m, polské pod tisícem). Záznam
+      NAHRAZUJE dvojici z 9. 8. — třetí přibyla večerním exportem Orlických
+      hor.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerním exportu Orlických hor — měřením z GPS)
+    checked: 2026-08-09
+  - jadro: chata
+    objekty:
+      - javorniky-vsetinske-vrchy/chata
+      - orlicke-hory/chata
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 151 366 m, oba se v OSM jmenují jen „Chata"
+      — druhové slovo v poli name, vzor jádra „1". Javornická má web
+      (chatavelkekarlovice.webnode.cz — pronájem), orlická nic. Triáž je
+      nejspíš obě pošle mimo klíč; zapsáno, aby kontrola nehlásila neznámý
+      nález.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerním exportu Orlických hor — měřením z GPS)
+    checked: 2026-08-09
+  - jadro: masarykova
+    objekty:
+      - javorniky-vsetinske-vrchy/masarykova-chata
+      - orlicke-hory/masarykova-chata
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 179 345 m — a OBA VÝZNAMNÍ: Masarykova
+      chata na Šerlichu v Orlických horách (ubytovani-serlich.cz; katalogový
+      objekt, klasická KČT chata z 1925) a Masarykova chata v Javorníkách
+      (masarykovachata.cz). Prezidentovo jméno nesou prvorepublikové chaty
+      nezávisle; rozlišovačem bude obec — nedoložená u obou (R6), doplní
+      rešerše při povyšování, obě míří do korpusu.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerním exportu Orlických hor — měřením z GPS)
+    checked: 2026-08-09
+  - jadro: goralska
+    objekty:
+      - beskydy/goralska-chata
+      - orlicke-hory/chata-goralska
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 188 142 m: Góralska Chata v polských
+      Beskydech (goralskachata.net.pl) a Chata Góralska v Zieleńci
+      (chatazieleniec.pl, Orlické hory / Góry Bystrzyckie). „Góralska" =
+      goralská, zbojnický styl — druhové přídavné jméno, vzor Zbójnicka.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerním exportu Orlických hor — měřením z GPS)
+    checked: 2026-08-09
+  - jadro: jagodna
+    objekty:
+      - orlicke-hory/jagodna
+      - orlicke-hory/schronisko-pttk-jagodna
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY V JEDNÉ OBLASTI, naměřeno 15 242 m: „Jagodna" v
+      Polanici-Zdroju (obec doložená) a Schronisko PTTK Jagodna (jagodna.com)
+      pod stejnojmennou horou — Jagodna je nejvyšší vrchol Gór Bystrzyckich a
+      jméno se odtud přenáší. Schronisko je katalogový adept; polanická
+      Jagodna nejspíš penzion.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerním exportu Orlických hor — měřením z GPS)
     checked: 2026-08-09
