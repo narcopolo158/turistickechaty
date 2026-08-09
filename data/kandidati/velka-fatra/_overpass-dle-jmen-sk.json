@@ -1,0 +1,85 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-19T16:21:13Z",
+    "timestamp_areas_base": "2026-06-19T07:49:20Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 3437654307,
+  "lat": 49.0235620,
+  "lon": 19.2911287,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Pod Sidorovom"
+  }
+},
+{
+  "type": "way",
+  "id": 79966041,
+  "center": {
+    "lat": 48.9669998,
+    "lon": 19.0770328
+  },
+  "nodes": [
+    1788811729,
+    933294306,
+    933294309,
+    933294312,
+    1788811729
+  ],
+  "tags": {
+    "building": "yes",
+    "building:material": "wood",
+    "email": "chatahavranovo@gmail.com",
+    "facebook": "https://www.facebook.com/pg/ChataHavranovo",
+    "import": "budovy201004drev",
+    "name": "Chata Havranovo",
+    "phone": "+421905792671",
+    "source": "kapor2",
+    "tourism": "alpine_hut",
+    "website": "https://www.chatahavranovo.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 728216802,
+  "center": {
+    "lat": 48.9405532,
+    "lon": 19.0974418
+  },
+  "nodes": [
+    6824102106,
+    9937507468,
+    9937507470,
+    9937507469,
+    6824102105,
+    6824102104,
+    6824102103,
+    6824102102,
+    6824102101,
+    6824102106
+  ],
+  "tags": {
+    "building": "yes",
+    "contact:email": "chatapodborisovom@gmail.com",
+    "contact:phone": "+421 919 493 493",
+    "ele": "1300",
+    "image": "https://img.hiking.dennikn.sk/article/_older/ch_borisov_n_21.jpg",
+    "name": "Chata pod Borišovom",
+    "source": "kapor2",
+    "tourism": "alpine_hut",
+    "url": "https://hiking.dennikn.sk/ar/30/chata_pod_borisovom.html",
+    "website": "https://chatapodborisovom.eu/",
+    "wikidata": "Q12763952",
+    "wikipedia": "sk:Chata pod Borišovom"
+  }
+}
+
+  ]
+}

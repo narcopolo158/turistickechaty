@@ -1,0 +1,31 @@
+# Salaš Mandolina — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-05-06)
+# Zdroj: https://www.openstreetmap.org/way/1091372495 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/velka-fatra/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Salaš Mandolina
+slug: salas-mandolina
+zeme: sk
+oblast: velka-fatra
+typ: utulna
+lat: 48.9184066
+lng: 19.0873684
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/1091372495 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-06
+kontakty:
+  web: https://hiking.dennikn.sk/ar/75/salas_mandolina.html
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/1091372495 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-06
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-05-06) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=wilderness_hut (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

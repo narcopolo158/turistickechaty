@@ -1,0 +1,32 @@
+# Chata Sen — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-05-06)
+# Zdroj: https://www.openstreetmap.org/node/5203626022 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/velka-fatra/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Sen
+slug: chata-sen
+zeme: sk
+oblast: velka-fatra
+lat: 49.0115985
+lng: 18.8294831
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/5203626022 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-06
+kontakty:
+  telefon: +421 915 808 394
+  email: info@chatasen-valca.sk
+  web: http://www.chatasen-valca.sk/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/5203626022 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-06
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-05-06) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

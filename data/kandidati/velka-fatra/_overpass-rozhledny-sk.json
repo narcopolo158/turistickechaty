@@ -1,0 +1,205 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T18:22:21Z",
+    "timestamp_areas_base": "2026-08-08T11:35:21Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 2974011001,
+  "lat": 49.0313740,
+  "lon": 18.9819436,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa Na Tŕní",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q125360306"
+  }
+},
+{
+  "type": "node",
+  "id": 3914895163,
+  "lat": 49.1164645,
+  "lon": 19.3034890,
+  "tags": {
+    "access": "private",
+    "disused:man_made": "tower",
+    "height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3914895185,
+  "lat": 49.1171829,
+  "lon": 19.3048750,
+  "tags": {
+    "access": "private",
+    "disused:man_made": "tower",
+    "height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3914895200,
+  "lat": 49.1173888,
+  "lon": 19.3042185,
+  "tags": {
+    "access": "private",
+    "disused:man_made": "tower",
+    "height": "6",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 4946290410,
+  "lat": 48.8048964,
+  "lon": 19.1489768,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Banícka cimra",
+    "opening_hours": "Sa-Su 10:00-20:00; PH 10:00 - 20:00"
+  }
+},
+{
+  "type": "node",
+  "id": 4948300338,
+  "lat": 49.0119378,
+  "lon": 18.9904904,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa na Kalníku",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q125360867"
+  }
+},
+{
+  "type": "node",
+  "id": 5458774434,
+  "lat": 48.9799561,
+  "lon": 18.9646628,
+  "tags": {
+    "height": "10",
+    "man_made": "tower",
+    "name": "Rozhľadňa na Brotnici",
+    "source": "survey, GPS",
+    "tourism": "viewpoint",
+    "tower:type": "observation",
+    "wikidata": "Q125360961"
+  }
+},
+{
+  "type": "node",
+  "id": 7026698203,
+  "lat": 49.0403175,
+  "lon": 18.8665233,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa nad Bystričkou",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 7243044728,
+  "lat": 48.8048333,
+  "lon": 19.1485028,
+  "tags": {
+    "man_made": "tower",
+    "name": "Rozhľadňa Šachtička",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 9199458486,
+  "lat": 48.9412932,
+  "lon": 19.3603637,
+  "tags": {
+    "man_made": "tower",
+    "tower:construction": "wood",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 73722075,
+  "center": {
+    "lat": 49.0267681,
+    "lon": 18.8509935
+  },
+  "nodes": [
+    872908067,
+    872908068,
+    872908069,
+    872908070,
+    872908067
+  ],
+  "tags": {
+    "building": "yes",
+    "import": "budovy201004",
+    "man_made": "tower",
+    "name": "Rozhľadňa pod Bokšínom",
+    "source": "kapor2",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1118156342,
+  "center": {
+    "lat": 49.1090403,
+    "lon": 19.0716020
+  },
+  "nodes": [
+    10226357278,
+    10226357277,
+    10226357276,
+    10226357275,
+    10226357278
+  ],
+  "tags": {
+    "access": "yes",
+    "direction": "0-360",
+    "fee": "no",
+    "man_made": "tower",
+    "material": "wood",
+    "opening_hours": "24/7",
+    "tower:type": "observation",
+    "wikidata": "Q115425629"
+  }
+},
+{
+  "type": "way",
+  "id": 1513362880,
+  "center": {
+    "lat": 49.0061817,
+    "lon": 19.0103321
+  },
+  "nodes": [
+    13826809307,
+    13826809304,
+    13826809305,
+    13826809306,
+    13826809307
+  ],
+  "tags": {
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,33 @@
+# Chata Triangel — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-05-06)
+# Zdroj: https://www.openstreetmap.org/node/13707923286 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/velka-fatra/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Triangel
+slug: chata-triangel
+zeme: sk
+oblast: velka-fatra
+lat: 49.1477523
+lng: 19.2374365
+obec: Komjatná
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/13707923286 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-06
+kontakty:
+  telefon: +421 948 949 949
+  email: vitaj@chatatriangel.sk
+  web: https://www.chatatriangel.sk/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/13707923286 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-05-06
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-05-06) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
