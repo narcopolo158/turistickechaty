@@ -29,6 +29,111 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-09 (devátý blok) — dva profily, jedno odložení a triáž, která ubrala frontě dvě třetiny
+
+Michalův pokyn: *„pokracuj samostatne dal"*.
+
+**Hotovo:**
+
+**DVA NOVÉ PROFILY, korpus 169 → 171**, oblast Vysoké Tatry má devatenáct
+publikovaných objektů.
+
+**CHATA POD SOLISKOM je v korpusu ojedinělá tím, jak vznikla.** Ne jako
+turistická chata, ale jako příslušenství lyžařského vleku: v létě 1943 daly
+Štátne kúpele na svahu Předného Soliska postavit první elektricky poháněný
+lyžařský vlek na Slovensku a hned nato zimní útulnu, kterou 6. února 1944
+předali do užívání. Podnět dal ředitel lázní Ján Zalčík, stavbu vedl a prvním
+chatařem se stal František Bujak. **Sezónní uzávěra je tu doložená úředně
+a jmenovitě** — oficiální seznam TANAP jmenuje „modro značený turistický
+chodník č. 2836a… cez Chatu pod Soliskom" a zavírá ho od 1. listopadu do
+31. května. Chata má tedy sedm měsíců v roce otevřeno, ale pěšky po značce
+se k ní nesmí; zbývá sedačková lanovka a v zimě sjezdovka.
+
+**BETLEJEMKA JE ODLOŽENÁ, NE VYŘAZENÁ, A JE TO NOVÝ DRUH PŘÍPADU.** Je to
+Centralny Ośrodek Szkolenia Polskiego Związku Alpinizmu na Hali Gąsienicowej,
+plnohodnotná celoroční ubytovna s třiceti místy, otevřená i nečlenům za
+82 zł. Rešerše ale našla větu, která rozhoduje — portalgorski.pl: „Nie
+prowadzi żadnych usług handlowych, czy gastronomicznych." **Poprvé v korpusu
+objekt neprojde klíčem kvůli chybějícímu občerstvení, ne kvůli poloze.**
+Rainerova chata prošla s `kuchyne: ne`, ale měla doložený kiosek; Betlejemka
+nemá ani ten. Odpověď založí pravidlo pro celou třídu, a proto to nerozhoduji
+sám — doložená fakta jsou v `_odlozeno.yaml`, aby se rešerše nemusela
+opakovat.
+
+**GŁODÓWKA JE POVÝŠENÁ SE DVĚMA PŘIZNANÝMI SPORNOSTMI.** Za prvé neleží
+v Tatrách: portaltatrzanski.pl ji klade „na Pogórzu Spisko-Gubałowskim"
+a leží i mimo Tatrzański park narodowy, takže se jí netýká vstupné ani zákaz
+nocování mimo schroniska. Do okna oblasti padla proto, že okno je obdélník.
+Za druhé k ní žádný pramen neuvádí značenou trasu — popisují jen příjezd po
+silnici DW 960 a parkoviště. Povýšil jsem ji, protože je to **úředně zařazené
+schronisko** (rozhodnutí maršálka Malopolského vojvodství č. 90/2022
+z 9. listopadu 2022) s devadesáti lůžky a veřejnou karczmou, ne městská věž
+jako odložená wieża v Mirsku. Ale je to moje rozhodnutí o rozsahu a jde
+zvrátit přesunem souboru zpět mezi kandidáty.
+
+**TRIÁŽ VT-03: 49 VYŘAZENÍ, FRONTA OBLASTI 81 → 32.** Tabulka podle tagu
+`tourism` ukázala jiný obrázek, než čekal včerejší zápis o „38 nadějných
+kandidátech": **alpine_hut nezbyl ani jeden** (oba dnes povýšeny) a převažuje
+48 souborů s tagem `chalet`, tedy soukromé pronájmy. Vyřazení stojí na jednom
+pravidle, které si troufám navrhnout jako obecné: **vyřazuje se jen tam, kde
+je doklad přímo v tagu OSM** — v názvu („Privat Iva", „Willa Pawlikowskich",
+„Domki na Gubałówce", „CHAŁUPA - Pokoje Gościnne", „Penzion Chata Polana"),
+v popisu („Objekt sa prenajíma ako celok", „Kwaterodawca 66/10 - UM
+Zakopane"), v adrese uvnitř obce, nebo v odkazu na rezervační či pronájmový
+portál (123u.sk, hauzi.sk, booking.com, nocujmy.pl). **Kandidáti s tenkým
+záznamem zůstávají ve frontě** — jen jméno a `tourism=chalet` bez adresy
+a bez webu na vyřazení nestačí, a bylo by pohodlné předstírat opak.
+
+**CO SE VĚDOMĚ NEVYŘADILO:** jedenáct provozních budov Štátnych lesov TANAPu
+(Chata Krížna, Tomanová, Zadná Tichá, Kôprovnica, Koniarka, Tokáreň,
+Tristárska, Zverienec, Grarajova chata, Terénna stanica TANAP Staré, Chata
+Dolný Smokovec). Všechny mají `building=cabin` a čtyři sdílejí telefon
++421 903 987 561, což je samo o sobě doklad, že jde o jeden administrativní
+soubor — jenže TANAP na `tanap.sk/ubytovanie/` nějaké ubytování nabízí
+a mezi provozní budovou a noclehárnou se bez ověření rozhodovat nedá.
+
+**DRUHÁ ZÁMĚNA JMÉNA PO ENCIÁNU.** „Chata Zbójnicka" je uzel OSM se dvěma
+tagy — `amenity=restaurant` a jméno — a leží **1 130 m od centra Zakopaného,
+zato 19 859 m od publikované Zbojníckej chaty** ve Veľké Studené dolině.
+Registr `_jmenovci.yaml` se tím zúžil ze tří objektů na dva; důvod je tam
+zapsaný, aby se z vyřazení nestala ztráta paměti. Kontrola `kolize-jmen` to
+zachytila hned — vyřazení totiž rozbilo trojici, kterou registr popisoval,
+a běh zčervenal, dokud jsem registr nesrovnal. Je to pěkný důkaz, že ta
+kontrola dělá, co má.
+
+**Commity:** `541325e` (Solisko, Głodówka, odložení Betlejemky), `80c5c90`
+(triáž VT-03). Všechny kontroly zelené, prettier čistý, integrační testy
+oblastí 193/193, `tsc --noEmit` bez chyb.
+
+**Příště:** dotáhnout VT-03 — zbývá 32 kandidátů, z toho jedenáct budov
+TANAP (potřebují jeden pohled na `tanap.sk/ubytovanie/`), tři rozhledny
+(Tatras Tower má v OSM doloženou kapacitu 492 i otevírací dobu, takže je
+připravená k povýšení), Belianska chata, Švajčiarsky dom, Psotkova chata
+a Horská ubytovňa Hrebienok. Pak se vrátit do Beskyd, kde je 172 nadějných
+kandidátů a tři doložené mezery katalogu (Ropička, Marguška, Równica).
+
+**Otázky pro Michala** (první čtyři jsou z minulého bloku a pořád otevřené,
+poslední dvě jsou nové):
+
+1. **KONTROLA-11 — konvence o nižším čísle.** Dnes přibyly dva další výklady:
+   u Chaty pod Soliskom jsem ji nepoužil, protože obě odchylky (1835 a 1830 m)
+   jsou osamocené a **neshodují se ani spolu** — rozpor podle mě předpokládá
+   dvě verze, ne tři různá čísla. U Głodówky jsem ji naopak použil, ale znovu
+   jsem nebral tag `ele` v OSM jako konkurenční tvrzení. Šest případů za dva
+   dny, všechny vyložené mnou.
+2. **Belianské Tatry jako samostatná oblast?**
+3. **Telefonát DATA-04** — zavírá pět slovenských profilů najednou.
+4. **Encián (VT-02)** — skutečná Jurkovičova stavba v OSM exportu chybí.
+5. **BETLEJEMKA: patří do průvodce horská ubytovna bez jakéhokoli
+   občerstvení, otevřená veřejnosti za peníze?** Je to jiný případ než
+   odložená Selbstversorgerhütte z Bavorského lesa — tam jde o ohlášení
+   předem a spolkový charakter, tady je provoz normální a chybí jen kuchyně
+   pro veřejnost. Odpověď rozhodne třídu, ne jeden objekt.
+6. **GŁODÓWKA: má v průvodci zůstat?** Leží mimo Tatry i mimo národní park
+   a nevede k ní značka. Pro zařazení mluví úřední status schroniska
+   a to, že celý smysl objektu je výhled na Tatry; proti mluví, že takhle
+   by okno oblasti mohlo nabrat i další podhorské objekty.
+
 ## 2026-08-09 (osmý blok) — sedmnáct profilů Vysokých Tater a konvence, která si žádá doplnění
 
 Michalův pokyn: *„pokracuj autonomne dal, pracuj 4 hodiny v kuse"*.
