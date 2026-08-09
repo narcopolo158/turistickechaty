@@ -109,10 +109,21 @@ STOP-STAV zapsán do hlavičky KLIKY-PRO-MICHALA: dokud billing nevyřeší
 klik se po vyřešení jen zopakuje, běh #1 nic nestihl. Commit+push
 a lokální kontroly fungují dál — kvalita dat neutrpěla.
 
+**VYŘEŠENO TÝŽ VEČER: Michal repo přepnul na public** (před přepnutím
+jsem proskenoval pracovní strom i celou git historii — žádný token ani
+klíč, `.env` se nikdy necommitl) **a DATA-32 pro vysoke-tatry doběhl
+napodruhé čistě** (commit 3b4b8c3, 48 s): 128 drah aerialway → 29
+lanovek pro pěší s výškami z Mapy.com, vazby sedí — Solisko Expres →
+Chata pod Soliskom 133 m, Štart–Skalnaté pleso → Skalnatá chata 162 m,
+visutá lanovka na Lomnický štít v přehledu. Vedlejší zisk zveřejnění:
+sandbox nově PŘEČTE stránky Actions přes web (dřív 404) — příště můžu
+stav běhů kontrolovat sám a nežádat o screenshot. Kliky beskydy
+a nizke-tatry v KLIKY oddílu 3 trvají; řádek vysoke-tatry vymazán.
+
 **Příště:** Domček HS na Čertovici (profil bez GPS po vzoru Rovnice,
 nebo počkat na DATA-31); zbývající katalog NT: Liptov, Opalisko; triáž
-NT pass 2 (thin records); Beskydy jádro. Kliky DATA-32 (lanovky) čekají
-na odblokování Actions — Kosodrevina i Kamienka na ně odkazují.
+NT pass 2 (thin records); Beskydy jádro. Kliky DATA-32 pro beskydy
+a nizke-tatry — Kosodrevina i Kamienka na ně odkazují.
 
 **Otázky pro Michala:** beze změny; nová drobnost k rozhodnutí —
 **HUT-0158 „Chata na Čertovici"**: rešerše říká, že žádný živý provoz
@@ -1017,9 +1028,9 @@ oblastmi jsou přesně to, co jednotlivé profily samy o sobě neukážou.
 Tatrách „otevřeno" NEZNAMENÁ „dostupné". Hřebenové cesty mají sezónní uzávěru
 
 1. 11. – 31. 5. (starší prameny uvádějí do 15. 6. — rozpor přiznán), je tu
-   horská služba a na Gerlachovský štít se bez vůdce nesmí. U bavorského
-   Berggasthofu stačilo napsat provozní dobu; tady by to bylo zavádějící. Zapsáno
-   do YAMLu a **hlídá to test**, aby to profily nepřehlédly.
+       horská služba a na Gerlachovský štít se bez vůdce nesmí. U bavorského
+       Berggasthofu stačilo napsat provozní dobu; tady by to bylo zavádějící. Zapsáno
+       do YAMLu a **hlídá to test**, aby to profily nepřehlédly.
 
 **Nejcennější věc Nízkých Tater jsou ČTYŘI DOLOŽENÉ ÚTULNY** — a hlavně to, že
 u každé je stav přístupu jiný: Ďurková 1623 m volně bez rezervace ale za
