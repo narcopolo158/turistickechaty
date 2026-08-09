@@ -30,35 +30,33 @@ pravdu — dlouhý seznam s odškrtnutými řádky se přestane čtít.
 
 ## 1. DATA-01 pro nové oblasti
 
-Odklikané máš Beskydy, Jeseníky, Vysoké Tatry a Malou Fatru (8. 8. 2026;
-dohromady přes 650 kandidátů) — díky, a hlavně díky za ten opakovaný běh
-Beskyd, protože ten dorovnal chybějícího Libušína.
+Odklikané máš Beskydy, Jeseníky, Vysoké Tatry, Malou Fatru (8. 8.)
+a od večera 9. 8. i Krušné hory (+300), Orlické hory (+50) a Veľkou
+Fatru (+45) — díky! Kolize z nich jsou rozhodnuté a katalogové pokrytí
+je hned napoprvé skvělé (Orlické hory 8/8 objektů).
 
-Zbývá devět oblastí a sedm z nich nemá zatím ani jednoho kandidáta (Krušné hory, Orlické hory, Veľká Fatra, Slovenský raj — a k tomu
-Javorníky, Oravská Magura a Západné Tatry, kde kandidáti JSOU, ale jen
-ti z podhůří, protože přišli omylem s beskydským exportem; vlastní běh
-s vlastním oknem přinese hřebeny, které beskydské okno vůbec nepokrývalo).
+Zbývá šest oblastí: Slovenský raj, Lužické hory a Bieszczady bez
+jediného kandidáta — a Javorníky, Oravská Magura a Západné Tatry, kde
+kandidáti JSOU, ale jen ti z podhůří (přišli omylem s beskydským
+exportem; vlastní běh s vlastním oknem přinese hřebeny).
 
-| workflow                                   | políčko `oblast`            | co to udělá                                                                                                                                                                                                   |
-| ------------------------------------------ | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **DATA-01: OSM export chat (dle oblasti)** | `javorniky-vsetinske-vrchy` | stáhne kandidáty Javorníků a Vsetínských vrchů (CZ, SK) — oblast vznikla 8. 8. 2026 tvým rozhodnutím, že nepatří pod Beskydy; 36 kandidátů už tam je z beskydského exportu                                    |
-| **DATA-01: OSM export chat (dle oblasti)** | `oravska-magura`            | Oravská Magura (SK) — 6 kandidátů v repu; běh přinese podcelky Paráč a Budín                                                                                                                                  |
-| **DATA-01: OSM export chat (dle oblasti)** | `zapadne-tatry`             | Západné Tatry / Roháče (SK, PL) — 13 kandidátů v repu, všichni z podhůří u Zuberce; běh přinese hřebenové chaty a polská schroniska                                                                           |
-| **DATA-01: OSM export chat (dle oblasti)** | `krusne-hory`               | Krušné hory / Erzgebirge (CZ, DE) — **nová oblast z 8. 8. 2026**, zatím bez kandidátů. Třetí největší okno korpusu (7 358 km²), takže běh potrvá déle a přinese i městský šum; katalog v okně drží 10 objektů |
-| **DATA-01: OSM export chat (dle oblasti)** | `orlicke-hory`              | Orlické hory vč. polské strany a Gór Bystrzyckich (CZ, PL) — **nová oblast z 8. 8. 2026**, zatím bez kandidátů; katalog drží 8 objektů                                                                        |
-| **DATA-01: OSM export chat (dle oblasti)** | `velka-fatra`               | Veľká Fatra (SK) — **nová oblast z 8. 8. 2026**; katalog drží 7 objektů, mezi nimi Chatu pod Borišovom (stavěna 1937–1942, zásobuje se nosiči) a Kráľovu studňu, kterou postavil KČST roku 1927               |
-| **DATA-01: OSM export chat (dle oblasti)** | `slovensky-raj`             | Slovenský raj (SK) — **nová oblast z 8. 8. 2026**; krasová plošina s roklinami, 6 katalogových objektů. Je to první oblast korpusu s jednosměrnými trasami a vstupným                                         |
-| **DATA-01: OSM export chat (dle oblasti)** | `luzicke-hory`              | Lužické hory se saskými Žitavskými horami (CZ, DE) — **nová oblast z 8. 8. 2026**; 5 katalogových objektů. Na Hvozdu stojí chata i rozhledna na německé straně, ale chodí se k nim i z Česka                  |
-| **DATA-01: OSM export chat (dle oblasti)** | `bieszczady`                | Bieszczady vč. slovenských Bukovských vrchů (PL, SK) — **nová oblast z 8. 8. 2026** a nejvýchodnější v korpusu; 10 katalogových objektů, mezi nimi bacówky PTTK a Chatka Puchatka                             |
+| workflow                                   | políčko `oblast`            | co to udělá                                                                                                                                                                                  |
+| ------------------------------------------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **DATA-01: OSM export chat (dle oblasti)** | `javorniky-vsetinske-vrchy` | stáhne kandidáty Javorníků a Vsetínských vrchů (CZ, SK) — oblast vznikla 8. 8. 2026 tvým rozhodnutím, že nepatří pod Beskydy; 36 kandidátů už tam je z beskydského exportu                   |
+| **DATA-01: OSM export chat (dle oblasti)** | `oravska-magura`            | Oravská Magura (SK) — 6 kandidátů v repu; běh přinese podcelky Paráč a Budín                                                                                                                 |
+| **DATA-01: OSM export chat (dle oblasti)** | `zapadne-tatry`             | Západné Tatry / Roháče (SK, PL) — 13 kandidátů v repu, všichni z podhůří u Zuberce; běh přinese hřebenové chaty a polská schroniska                                                          |
+| **DATA-01: OSM export chat (dle oblasti)** | `slovensky-raj`             | Slovenský raj (SK) — **nová oblast z 8. 8. 2026**; krasová plošina s roklinami, 6 katalogových objektů. Je to první oblast korpusu s jednosměrnými trasami a vstupným                        |
+| **DATA-01: OSM export chat (dle oblasti)** | `luzicke-hory`              | Lužické hory se saskými Žitavskými horami (CZ, DE) — **nová oblast z 8. 8. 2026**; 5 katalogových objektů. Na Hvozdu stojí chata i rozhledna na německé straně, ale chodí se k nim i z Česka |
+| **DATA-01: OSM export chat (dle oblasti)** | `bieszczady`                | Bieszczady vč. slovenských Bukovských vrchů (PL, SK) — **nová oblast z 8. 8. 2026** a nejvýchodnější v korpusu; 10 katalogových objektů, mezi nimi bacówky PTTK a Chatka Puchatka            |
 
-Kdybys chtěl klikat jen část, **začni Krušnými horami**: je to jediná oblast
-korpusu se saskou stranou vedle Šumavy a katalog ji podle všeho pokrývá
-špatně, takže od exportu čekáme nejvíc nového. Kandidáti se ze sousedních oken
-navzájem nezaloží dvakrát — drží to DATA-36. Pozor ale na jednu věc, kterou
-tvoje dnešní běhy odhalily: **každý export přinese nová jména, a tím i nové
-jmenné kolize, které shodí `npm run kontrola`** (kontrola kolizí rozhoduje
-a čistý stav je přesně nula). Není to porucha běhu, je to práce pro další
-session — a v deníku je otázka, jestli to tak má zůstat.
+Kdybys chtěl klikat jen část, **začni Bieszczadami nebo Slovenským
+rájem** — obě oblasti mají katalogové objekty a zatím nula kandidátů.
+Kandidáti se ze sousedních oken navzájem nezaloží dvakrát — drží to
+DATA-36. A pořád platí: **každý export přinese nová jména, a tím i nové
+jmenné kolize, které shodí `npm run kontrola`** (kontrola kolizí
+rozhoduje a čistý stav je přesně nula). Není to porucha běhu, je to
+práce pro další session — večerní čtyřka exportů jich přinesla 22
+a všechny jsou rozhodnuté.
 
 Políčko `api` nech prázdné — skript sám zkouší `overpass-api.de` a při
 selhání zrcadlo `kumi.systems` (fallback přibyl 20. 7. 2026 kvůli rate

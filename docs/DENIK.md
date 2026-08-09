@@ -29,6 +29,52 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-09 (patnáctý blok, noc) — večerní exporty: tři nové oblasti mají kandidáty, 22 kolizí rozhodnuto
+
+Michal po odblokování Actions doklikal DATA-01 pro **Veľkou Fatru
+(+45), Krušné hory (+300), Orlické hory (+50)** a idempotentní
+opakování Beskyd (+0, správně). Fronta korpusu narostla na ~1570
+objektů.
+
+**Hotovo:**
+
+**22 JMENNÝCH KOLIZÍ ROZHODNUTO MĚŘENÍM** (commity 8efc434, 9377f16),
+registr má 54 živých jader. Výběr: **Milešovka 23 m** — observatoř ÚFA
+AV ČR a turistická chata v jednom vrcholovém areálu (rozhodne triáž
+doklady, vzor Kosodrevina; a Milešovka není Krušné hory — příslušnost
+posoudí redakce, okno ji přineslo poctivě). **Lesanka 562 km** — nová
+nejvzdálenější dvojice registru. **Dvě Masarykovy chaty** (Šerlich
+× Javorníky) — obě významné, obě míří do korpusu. **Třetí Zbójnicka**
+(Zieleniec) — jádro přepsáno na trojici, záměna s tatranskou zůstává
+nejdražší riziko registru. **Pizza Hut ×3 vyřazen** — do exportu
+prošel přes slovo „hut" v běhu dle jmen. Čtyři jádra přepsána na
+trojice (horec, alpina, slovanka, smrekovica), helena nahrazena novou
+dvojicí z Veľké Fatry.
+
+**KATALOGOVÉ POKRYTÍ NOVÝCH OBLASTÍ hned napoprvé:** Orlické hory
+**8/8** (Masarykova chata na Šerlichu, Jagodna…), Krušné hory 8/10
+(bez záznamu: Chata na Klínovci, Bouřňák — a slabé shody Barborka
+Klínovec / Auersberghaus k přečtení), Veľká Fatra 5/7. PAST OKEN
+PODRUHÉ: katalogová **Útulňa Limba pod Rakytovom (Veľká Fatra) je
+v repu jako kandidát okna Nízkých Tater** (horska-utulna-limba-pod-
+rakytovom, Liptovské Revúce) — týž případ jako Horská chata
+Smrekovica; obě příslušnosti rozhodnout spolu.
+
+**KLIKY aktualizovány:** hotové řádky vymazány, doporučení „začni
+Krušnými horami" nahrazeno Bieszczadami/Slovenským rájem (nula
+kandidátů, katalogové objekty čekají).
+
+**Příště:** triáž Krušných hor (299 kandidátů — největší fronta
+korpusu, pass 1 dle vzoru VT-03 s německými vzory názvů Ferienhaus/
+Pension/Apartment), povyšování z orlického katalogu (Masarykova chata
+na Šerlichu je vlajková loď oblasti), Domček HS, NT Liptov+Opalisko.
+
+**Otázky pro Michala:** trvá HUT-0158 (odpověď „přiřadím, pokud
+neřekneš jinak" platí) — a nově: **příslušnost dvojice z pasti oken**
+(Horská chata Smrekovica a Útulňa Limba pod Rakytovom leží geograficky
+ve Veľké Fatře, kandidáty drží okno Nízkých Tater) — přesunout do
+velka-fatra při povýšení?
+
 ## 2026-08-09 (čtrnáctý blok) — Nízké Tatry z 2 na 10 profilů
 
 Michalův pokyn: _„pokracuj dal jeste 4 hodiny"_.
