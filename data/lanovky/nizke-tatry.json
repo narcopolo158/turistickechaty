@@ -1,0 +1,484 @@
+{
+  "oblast": "nizke-tatry",
+  "zdroj": "OpenStreetMap (way[\"aerialway\"]) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); přebráno z exportu data/lanovky/_export-nizke-tatry.json (DATA-32b)",
+  "stavOsm": "2026-08-09T17:46:50Z",
+  "zdrojVysek": "Mapy.com Elevation API (výškový model, jen koncové body drah pro pěší) — verified: false",
+  "poznamka": "Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). Vleky a dětské pásy (157 v témž exportu) přehled nevede. Převýšení je z výškového modelu, ne z měření — zaokrouhleno na desítky metrů; délka je půdorysná z geometrie OSM. Vzdálenost k chatám je vzdušná čára.",
+  "vygenerovano": "scripts/data32-lanovky.ts",
+  "pocet": 20,
+  "vleku": 157,
+  "lanovky": [
+    {
+      "id": "funitel-priehyba-chopok",
+      "nazev": "Funitel Priehyba - Chopok",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 2071,
+      "prevyseniM": 660,
+      "dolni": {
+        "lat": 48.9625107,
+        "lng": 19.5893343,
+        "vyska": 1347
+      },
+      "horni": {
+        "lat": 48.9438968,
+        "lng": 19.5900743,
+        "vyska": 2004
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "kamenna-chata-pod-chopkom",
+          "nazev": "Kamenná chata pod Chopkom",
+          "vzdalenostM": 140
+        },
+        {
+          "slug": "chata-kosodrevina",
+          "nazev": "Chata Kosodrevina",
+          "vzdalenostM": 1414
+        }
+      ]
+    },
+    {
+      "id": "otupne-lukova",
+      "nazev": "Otupné - Luková",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1652,
+      "prevyseniM": 510,
+      "dolni": {
+        "lat": 48.9668457,
+        "lng": 19.580619,
+        "vyska": 1158
+      },
+      "horni": {
+        "lat": 48.952961,
+        "lng": 19.5878529,
+        "vyska": 1669
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "kamenna-chata-pod-chopkom",
+          "nazev": "Kamenná chata pod Chopkom",
+          "vzdalenostM": 1138
+        }
+      ]
+    },
+    {
+      "id": "kosodrevina-chopok",
+      "nazev": "Kosodrevina - Chopok",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1360,
+      "prevyseniM": 520,
+      "dolni": {
+        "lat": 48.932633,
+        "lng": 19.5985231,
+        "vyska": 1484
+      },
+      "horni": {
+        "lat": 48.9432956,
+        "lng": 19.5904049,
+        "vyska": 2002
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "kamenna-chata-pod-chopkom",
+          "nazev": "Kamenná chata pod Chopkom",
+          "vzdalenostM": 81
+        },
+        {
+          "slug": "chata-kosodrevina",
+          "nazev": "Chata Kosodrevina",
+          "vzdalenostM": 1344
+        }
+      ]
+    },
+    {
+      "id": "krupova-kosodrevina",
+      "nazev": "Krupová - Kosodrevina",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1181,
+      "prevyseniM": 400,
+      "dolni": {
+        "lat": 48.9221064,
+        "lng": 19.5976349,
+        "vyska": 1085
+      },
+      "horni": {
+        "lat": 48.9326995,
+        "lng": 19.5988665,
+        "vyska": 1486
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-kosodrevina",
+          "nazev": "Chata Kosodrevina",
+          "vzdalenostM": 45
+        },
+        {
+          "slug": "trangoska",
+          "nazev": "Chata Trangoška",
+          "vzdalenostM": 1232
+        },
+        {
+          "slug": "kamenna-chata-pod-chopkom",
+          "nazev": "Kamenná chata pod Chopkom",
+          "vzdalenostM": 1268
+        }
+      ]
+    },
+    {
+      "id": "koliesko-lukova",
+      "nazev": "Koliesko - Luková",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1161,
+      "prevyseniM": 450,
+      "dolni": {
+        "lat": 48.9636817,
+        "lng": 19.5852168,
+        "vyska": 1215
+      },
+      "horni": {
+        "lat": 48.9537557,
+        "lng": 19.5891306,
+        "vyska": 1661
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "kamenna-chata-pod-chopkom",
+          "nazev": "Kamenná chata pod Chopkom",
+          "vzdalenostM": 1208
+        }
+      ]
+    },
+    {
+      "id": "rovna-hola-konsky-grun",
+      "nazev": "Rovná Hoľa - Konský Grúň",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1011,
+      "prevyseniM": 350,
+      "dolni": {
+        "lat": 48.957192,
+        "lng": 19.5966272,
+        "vyska": 1492
+      },
+      "horni": {
+        "lat": 48.9489751,
+        "lng": 19.5907153,
+        "vyska": 1844
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "kamenna-chata-pod-chopkom",
+          "nazev": "Kamenná chata pod Chopkom",
+          "vzdalenostM": 667
+        }
+      ]
+    },
+    {
+      "id": "srdiecko-kosodrevina",
+      "nazev": "Srdiečko - Kosodrevina",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 982,
+      "prevyseniM": 280,
+      "dolni": {
+        "lat": 48.9242402,
+        "lng": 19.6021751,
+        "vyska": 1210
+      },
+      "horni": {
+        "lat": 48.9320471,
+        "lng": 19.5972829,
+        "vyska": 1485
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-kosodrevina",
+          "nazev": "Chata Kosodrevina",
+          "vzdalenostM": 179
+        },
+        {
+          "slug": "trangoska",
+          "nazev": "Chata Trangoška",
+          "vzdalenostM": 1238
+        },
+        {
+          "slug": "kamenna-chata-pod-chopkom",
+          "nazev": "Kamenná chata pod Chopkom",
+          "vzdalenostM": 1291
+        }
+      ]
+    },
+    {
+      "id": "grand-brhliska",
+      "nazev": "Grand - Brhliská",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1970,
+      "prevyseniM": 310,
+      "dolni": {
+        "lat": 48.9709604,
+        "lng": 19.5816618,
+        "vyska": 1114
+      },
+      "horni": {
+        "lat": 48.9547366,
+        "lng": 19.5708058,
+        "vyska": 1424
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "lucky-vyhliadka",
+      "nazev": "Lúčky - Vyhliadka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1858,
+      "prevyseniM": 340,
+      "dolni": {
+        "lat": 48.9798437,
+        "lng": 19.5938814,
+        "vyska": 944
+      },
+      "horni": {
+        "lat": 48.9647899,
+        "lng": 19.6049394,
+        "vyska": 1287
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "hrabovo-malino-brdo",
+      "nazev": "Hrabovo - Malinô Brdo",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1766,
+      "prevyseniM": 420,
+      "dolni": {
+        "lat": 49.0696846,
+        "lng": 19.2723724,
+        "vyska": 544
+      },
+      "horni": {
+        "lat": 49.0542326,
+        "lng": 19.2667824,
+        "vyska": 961
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "zahradky-rovna-hola",
+      "nazev": "Záhradky - Rovná Hoľa",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1659,
+      "prevyseniM": 460,
+      "dolni": {
+        "lat": 48.9719365,
+        "lng": 19.5980505,
+        "vyska": 1031
+      },
+      "horni": {
+        "lat": 48.9570307,
+        "lng": 19.5970589,
+        "vyska": 1493
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "zahradky-priehyba",
+      "nazev": "Záhradky - Priehyba",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1255,
+      "prevyseniM": 340,
+      "dolni": {
+        "lat": 48.9715499,
+        "lng": 19.5966078,
+        "vyska": 1039
+      },
+      "horni": {
+        "lat": 48.9612272,
+        "lng": 19.5907661,
+        "vyska": 1380
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "telemix-nova-hola",
+      "nazev": "Telemix Nová hoľa",
+      "typ": "mixed_lift",
+      "typNazev": "kombinovaná (kabinky i sedačky)",
+      "delkaM": 1228,
+      "prevyseniM": 440,
+      "dolni": {
+        "lat": 48.8781107,
+        "lng": 19.2357922,
+        "vyska": 917
+      },
+      "horni": {
+        "lat": 48.8884911,
+        "lng": 19.2312867,
+        "vyska": 1358
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "lanova-draha-poma-unifix",
+      "nazev": "Lanová dráha POMA UNIFIX",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1112,
+      "prevyseniM": 300,
+      "dolni": {
+        "lat": 48.8454132,
+        "lng": 19.6206642,
+        "vyska": 590
+      },
+      "horni": {
+        "lat": 48.8359483,
+        "lng": 19.6157528,
+        "vyska": 888
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "vrchol",
+      "nazev": "Vrchol",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1086,
+      "prevyseniM": 290,
+      "dolni": {
+        "lat": 49.0536534,
+        "lng": 19.2620404,
+        "vyska": 921
+      },
+      "horni": {
+        "lat": 49.0490808,
+        "lng": 19.2488755,
+        "vyska": 1206
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "biela-put-priehyba",
+      "nazev": "Biela Púť - Priehyba",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 933,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 48.9708435,
+        "lng": 19.584744,
+        "vyska": 1115
+      },
+      "horni": {
+        "lat": 48.9630901,
+        "lng": 19.5896222,
+        "vyska": 1348
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "biela-put-koliesko",
+      "nazev": "Biela Púť - Koliesko",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 815,
+      "prevyseniM": 100,
+      "dolni": {
+        "lat": 48.9705791,
+        "lng": 19.5836483,
+        "vyska": 1119
+      },
+      "horni": {
+        "lat": 48.9636909,
+        "lng": 19.5843484,
+        "vyska": 1222
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "ld-tatrapoma-ts-2",
+      "nazev": "LD Tatrapoma TS-2",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 737,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 49.0442679,
+        "lng": 19.639695,
+        "vyska": 682
+      },
+      "horni": {
+        "lat": 49.0380083,
+        "lng": 19.6390754,
+        "vyska": 898
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "buly-expres",
+      "nazev": "Buly Expres",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 629,
+      "prevyseniM": 120,
+      "dolni": {
+        "lat": 48.8729759,
+        "lng": 19.226356,
+        "vyska": 930
+      },
+      "horni": {
+        "lat": 48.8682074,
+        "lng": 19.2221367,
+        "vyska": 1045
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "lanovka-chvatimech",
+      "nazev": "Lanovka Chvatimech",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 500,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 48.8020387,
+        "lng": 19.5606148,
+        "vyska": 517
+      },
+      "horni": {
+        "lat": 48.7981026,
+        "lng": 19.5584846,
+        "vyska": 750
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    }
+  ]
+}
