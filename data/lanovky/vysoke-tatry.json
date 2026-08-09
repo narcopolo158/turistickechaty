@@ -1,0 +1,650 @@
+{
+  "oblast": "vysoke-tatry",
+  "zdroj": "OpenStreetMap (way[\"aerialway\"]) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); přebráno z exportu data/lanovky/_export-vysoke-tatry.json (DATA-32b)",
+  "stavOsm": "2026-08-09T17:19:21Z",
+  "zdrojVysek": "Mapy.com Elevation API (výškový model, jen koncové body drah pro pěší) — verified: false",
+  "poznamka": "Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). Vleky a dětské pásy (98 v témž exportu) přehled nevede. Převýšení je z výškového modelu, ne z měření — zaokrouhleno na desítky metrů; délka je půdorysná z geometrie OSM. Vzdálenost k chatám je vzdušná čára.",
+  "vygenerovano": "scripts/data32-lanovky.ts",
+  "pocet": 29,
+  "vleku": 98,
+  "lanovky": [
+    {
+      "id": "solisko-expres",
+      "nazev": "Solisko Expres",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 2026,
+      "prevyseniM": 430,
+      "dolni": {
+        "lat": 49.129795,
+        "lng": 20.059406,
+        "vyska": 1383
+      },
+      "horni": {
+        "lat": 49.1435115,
+        "lng": 20.0418663,
+        "vyska": 1812
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-pod-soliskom",
+          "nazev": "Chata pod Soliskom",
+          "vzdalenostM": 133
+        }
+      ]
+    },
+    {
+      "id": "start-skalnate-pleso",
+      "nazev": "Štart - Skalnaté pleso",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1951,
+      "prevyseniM": 590,
+      "dolni": {
+        "lat": 49.1793428,
+        "lng": 20.2559053,
+        "vyska": 1170
+      },
+      "horni": {
+        "lat": 49.187246,
+        "lng": 20.2319402,
+        "vyska": 1764
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "skalnata-chata",
+          "nazev": "Skalnatá chata",
+          "vzdalenostM": 162
+        }
+      ]
+    },
+    {
+      "id": "skalnate-pleso-lomnicky-stit",
+      "nazev": "Skalnaté pleso - Lomnický štít",
+      "typ": "cable_car",
+      "typNazev": "kabinková (visutá)",
+      "delkaM": 1649,
+      "prevyseniM": 850,
+      "dolni": {
+        "lat": 49.187675,
+        "lng": 20.2330656,
+        "vyska": 1763
+      },
+      "horni": {
+        "lat": 49.1951486,
+        "lng": 20.213471,
+        "vyska": 2609
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "teryho-chata",
+          "nazev": "Téryho chata",
+          "vzdalenostM": 1198
+        }
+      ]
+    },
+    {
+      "id": "furkota",
+      "nazev": "Furkota",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1092,
+      "prevyseniM": 270,
+      "dolni": {
+        "lat": 49.1349018,
+        "lng": 20.0448401,
+        "vyska": 1549
+      },
+      "horni": {
+        "lat": 49.143921,
+        "lng": 20.0402907,
+        "vyska": 1823
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-pod-soliskom",
+          "nazev": "Chata pod Soliskom",
+          "vzdalenostM": 50
+        }
+      ]
+    },
+    {
+      "id": "skalnate-pleso-lomnicke-sedlo",
+      "nazev": "Skalnaté pleso - Lomnické sedlo",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1057,
+      "prevyseniM": 400,
+      "dolni": {
+        "lat": 49.1871564,
+        "lng": 20.2308215,
+        "vyska": 1779
+      },
+      "horni": {
+        "lat": 49.1904704,
+        "lng": 20.2174453,
+        "vyska": 2182
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "skalnata-chata",
+          "nazev": "Skalnatá chata",
+          "vzdalenostM": 1262
+        },
+        {
+          "slug": "teryho-chata",
+          "nazev": "Téryho chata",
+          "vzdalenostM": 1345
+        }
+      ]
+    },
+    {
+      "id": "medvedia-kopa",
+      "nazev": "Medvedia Kopa",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1044,
+      "prevyseniM": 190,
+      "dolni": {
+        "lat": 49.1293588,
+        "lng": 20.0591182,
+        "vyska": 1378
+      },
+      "horni": {
+        "lat": 49.1343369,
+        "lng": 20.0469585,
+        "vyska": 1567
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "tatras-tower",
+          "nazev": "Tatras Tower",
+          "vzdalenostM": 1179
+        },
+        {
+          "slug": "chata-pod-soliskom",
+          "nazev": "Chata pod Soliskom",
+          "vzdalenostM": 1206
+        }
+      ]
+    },
+    {
+      "id": "start-cucoriedky",
+      "nazev": "Štart - Čučoriedky",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 887,
+      "prevyseniM": 200,
+      "dolni": {
+        "lat": 49.1784339,
+        "lng": 20.2560179,
+        "vyska": 1160
+      },
+      "horni": {
+        "lat": 49.1826906,
+        "lng": 20.2457028,
+        "vyska": 1357
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "skalnata-chata",
+          "nazev": "Skalnatá chata",
+          "vzdalenostM": 967
+        }
+      ]
+    },
+    {
+      "id": "mostiky",
+      "nazev": "Mostíky",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 347,
+      "prevyseniM": 80,
+      "dolni": {
+        "lat": 49.1290515,
+        "lng": 20.0587277,
+        "vyska": 1378
+      },
+      "horni": {
+        "lat": 49.1287946,
+        "lng": 20.0553856,
+        "vyska": 1457
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "tatras-tower",
+          "nazev": "Tatras Tower",
+          "vzdalenostM": 319
+        }
+      ]
+    },
+    {
+      "id": "tatranska-lomnica-start",
+      "nazev": "Tatranská Lomnica - Štart",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 3635,
+      "prevyseniM": 280,
+      "dolni": {
+        "lat": 49.164993,
+        "lng": 20.270326,
+        "vyska": 888
+      },
+      "horni": {
+        "lat": 49.1791112,
+        "lng": 20.2559057,
+        "vyska": 1167
+      },
+      "useku": 2,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kolej-linowa-kasprowy-wierch-odcinek-ii",
+      "nazev": "Kolej linowa Kasprowy Wierch - odcinek II",
+      "typ": "cable_car",
+      "typNazev": "kabinková (visutá)",
+      "delkaM": 2202,
+      "prevyseniM": 610,
+      "dolni": {
+        "lat": 49.2518221,
+        "lng": 19.9737025,
+        "vyska": 1350
+      },
+      "horni": {
+        "lat": 49.2329527,
+        "lng": 19.9827413,
+        "vyska": 1956
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kolej-linowa-kasprowy-wierch-odcinek-i",
+      "nazev": "Kolej linowa Kasprowy Wierch - odcinek I",
+      "typ": "cable_car",
+      "typNazev": "kabinková (visutá)",
+      "delkaM": 1959,
+      "prevyseniM": 330,
+      "dolni": {
+        "lat": 49.2692868,
+        "lng": 19.9792009,
+        "vyska": 1024
+      },
+      "horni": {
+        "lat": 49.25201,
+        "lng": 19.9738909,
+        "vyska": 1352
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kolej-krzese-kowa-goryczkowa",
+      "nazev": "Kolej krzesełkowa Goryczkowa",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1618,
+      "prevyseniM": 610,
+      "dolni": {
+        "lat": 49.2448981,
+        "lng": 19.9694097,
+        "vyska": 1354
+      },
+      "horni": {
+        "lat": 49.2324678,
+        "lng": 19.9809919,
+        "vyska": 1960
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "gondola-bachledka",
+      "nazev": "Gondola Bachledka",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1511,
+      "prevyseniM": 260,
+      "dolni": {
+        "lat": 49.2722171,
+        "lng": 20.3099203,
+        "vyska": 885
+      },
+      "horni": {
+        "lat": 49.2850416,
+        "lng": 20.314642,
+        "vyska": 1148
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "zgorzelisko-express",
+      "nazev": "Zgorzelisko Express",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1204,
+      "prevyseniM": 210,
+      "dolni": {
+        "lat": 49.3021363,
+        "lng": 20.074393,
+        "vyska": 875
+      },
+      "horni": {
+        "lat": 49.3065126,
+        "lng": 20.0895778,
+        "vyska": 1085
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kolej-krzese-kowa-gasienicowa",
+      "nazev": "Kolej krzesełkowa Gąsienicowa",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1103,
+      "prevyseniM": 340,
+      "dolni": {
+        "lat": 49.2362171,
+        "lng": 19.9970642,
+        "vyska": 1605
+      },
+      "horni": {
+        "lat": 49.2326498,
+        "lng": 19.9828874,
+        "vyska": 1947
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "6-seats-frankova",
+      "nazev": "6 seats Franková",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1038,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 49.2950953,
+        "lng": 20.3083791,
+        "vyska": 928
+      },
+      "horni": {
+        "lat": 49.2868737,
+        "lng": 20.3151488,
+        "vyska": 1147
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "tatralift-ts-4",
+      "nazev": "Tatralift TS-4",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 789,
+      "prevyseniM": 130,
+      "dolni": {
+        "lat": 49.2769982,
+        "lng": 20.2355421,
+        "vyska": 995
+      },
+      "horni": {
+        "lat": 49.282649,
+        "lng": 20.2289527,
+        "vyska": 1128
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "jezersko",
+      "nazev": "Jezersko",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 742,
+      "prevyseniM": 220,
+      "dolni": {
+        "lat": 49.2891483,
+        "lng": 20.3240801,
+        "vyska": 932
+      },
+      "horni": {
+        "lat": 49.2860211,
+        "lng": 20.31538,
+        "vyska": 1149
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "a",
+      "nazev": "A",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 735,
+      "prevyseniM": 200,
+      "dolni": {
+        "lat": 49.3151642,
+        "lng": 20.1559447,
+        "vyska": 824
+      },
+      "horni": {
+        "lat": 49.3110121,
+        "lng": 20.1631233,
+        "vyska": 1019
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "ma-e-ciche",
+      "nazev": "Małe Ciche",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 708,
+      "prevyseniM": 150,
+      "dolni": {
+        "lat": 49.3031016,
+        "lng": 20.0810738,
+        "vyska": 929
+      },
+      "horni": {
+        "lat": 49.3054598,
+        "lng": 20.089659,
+        "vyska": 1075
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "tatranska-lomnica-bukova-hora",
+      "nazev": "Tatranská Lomnica - Buková Hora",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 700,
+      "prevyseniM": 130,
+      "dolni": {
+        "lat": 49.1687008,
+        "lng": 20.2708965,
+        "vyska": 904
+      },
+      "horni": {
+        "lat": 49.1741808,
+        "lng": 20.2673936,
+        "vyska": 1036
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "b",
+      "nazev": "B",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 680,
+      "prevyseniM": 170,
+      "dolni": {
+        "lat": 49.3171358,
+        "lng": 20.1556098,
+        "vyska": 821
+      },
+      "horni": {
+        "lat": 49.3131478,
+        "lng": 20.1627236,
+        "vyska": 994
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "ski-suche",
+      "nazev": "Ski Suche",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 638,
+      "prevyseniM": 140,
+      "dolni": {
+        "lat": 49.335332,
+        "lng": 19.9819144,
+        "vyska": 785
+      },
+      "horni": {
+        "lat": 49.329611,
+        "lng": 19.9824965,
+        "vyska": 925
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "harenda",
+      "nazev": "Harenda",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 522,
+      "prevyseniM": 190,
+      "dolni": {
+        "lat": 49.3211205,
+        "lng": 19.9802862,
+        "vyska": 771
+      },
+      "horni": {
+        "lat": 49.3249078,
+        "lng": 19.9762469,
+        "vyska": 960
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "a-vtacie-turne",
+      "nazev": "A - Vtáčie turne",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 422,
+      "prevyseniM": 120,
+      "dolni": {
+        "lat": 49.2691673,
+        "lng": 20.2284397,
+        "vyska": 963
+      },
+      "horni": {
+        "lat": 49.2664176,
+        "lng": 20.2324418,
+        "vyska": 1079
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "ma-a-kolej",
+      "nazev": "Mała Kolej",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 341,
+      "prevyseniM": 50,
+      "dolni": {
+        "lat": 49.2930074,
+        "lng": 19.9302555,
+        "vyska": 859
+      },
+      "horni": {
+        "lat": 49.2951774,
+        "lng": 19.9279963,
+        "vyska": 908
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "wielka-krokiew",
+      "nazev": "Wielka Krokiew",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 318,
+      "prevyseniM": 140,
+      "dolni": {
+        "lat": 49.279968,
+        "lng": 19.962878,
+        "vyska": 904
+      },
+      "horni": {
+        "lat": 49.2774567,
+        "lng": 19.963047,
+        "vyska": 1042
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "turnia",
+      "nazev": "Turnia",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 299,
+      "prevyseniM": 70,
+      "dolni": {
+        "lat": 49.3368512,
+        "lng": 20.0948892,
+        "vyska": 883
+      },
+      "horni": {
+        "lat": 49.3367625,
+        "lng": 20.0913547,
+        "vyska": 949
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "bezejmenna-49.2782-19.9683",
+      "nazev": null,
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 207,
+      "prevyseniM": 80,
+      "dolni": {
+        "lat": 49.2794728,
+        "lng": 19.9671542,
+        "vyska": 919
+      },
+      "horni": {
+        "lat": 49.2782301,
+        "lng": 19.9683132,
+        "vyska": 1000
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    }
+  ]
+}
