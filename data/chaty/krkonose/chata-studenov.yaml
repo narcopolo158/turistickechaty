@@ -111,6 +111,28 @@ text:
 
 # Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
 
+# Vybráno redakčně 9. 8. 2026 z data/kandidati/fotky/krkonose/chata-studenov.yaml
+# (8 kandidátů): jediný kandidát z 8, jehož popis jmenuje budovu („Studenov
+# hut“); ostatní záběry z téže série zachycují kříž, rozcestník nebo výhled.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/d/db/Studenov_07.jpg
+    alt: Chata Studenov nad Rokytnicí nad Jizerou
+    typ: soucasna # hero záběr profilu
+    datovani: 2018-08-18 # DateTimeOriginal z Commons
+    autor: Jirka Dl
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Studenov_07.jpg
+    prevzatoDne: '2026-08-09'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 4.0, autor Jirka
+        Dl, popis „Studenov hut, Studenov, small village, part of city
+        Rokytnice nad Jizerou, district Sem…“), export DATA-02 ze 4. 8. 2026;
+        geotag 99 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-09'
 zdroje:
   - popis: >-
       Katalog České hory — turistická ubytovna na vrcholku Studenova

@@ -135,6 +135,27 @@ text:
 
 # Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
 
+# Vybráno redakčně 9. 8. 2026 z data/kandidati/fotky/krkonose/raisova-chata-na-zvicine.yaml
+# (37 kandidátů): popis „Raisova chata na Zvičině“, geotag 3 m od objektu,
+# licence CC0 a nejvyšší rozlišení mezi kandidáty (5184×3888).
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/3/32/Zvi%C4%8Dina_Raisova_chata1.jpg
+    alt: Raisova chata na vrcholu Zvičiny
+    typ: soucasna # hero záběr profilu
+    datovani: 2020-07-03 # DateTimeOriginal z Commons
+    autor: Jana Hajkova
+    licence: cc0
+    licencePoznamka: CC0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Zvi%C4%8Dina_Raisova_chata1.jpg
+    prevzatoDne: '2026-08-09'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC0, autor Jana Hajkova,
+        popis „Raisova chata na Zvičině“), export DATA-02 ze 4. 8. 2026;
+        geotag 3 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-09'
 zdroje:
   - popis: >-
       Web KČT — GPS, Podkrkonoší, restaurace bez noclehu, koupě 1901,

@@ -15,20 +15,20 @@ oblast: krkonose
 rokVzniku: 1975
 milniky:
   - rok: 1922
-    udalost: "postaven zděný Schlesische Grenzbaude"
+    udalost: 'postaven zděný Schlesische Grenzbaude'
   - rok: 1975
-    udalost: "vznikla turistická bacówka s 28 lůžky"
+    udalost: 'vznikla turistická bacówka s 28 lůžky'
   - rok: 2013
-    udalost: "nastoupili noví nájemci"
+    udalost: 'nastoupili noví nájemci'
 overeniHistorie:
-  source: "rok vzniku: https://schroniskookraj.pl/historia-schroniska.html (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · milníky: https://schroniskookraj.pl/historia-schroniska.html (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)"
+  source: 'rok vzniku: https://schroniskookraj.pl/historia-schroniska.html (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false) · milníky: https://schroniskookraj.pl/historia-schroniska.html (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)'
   verified: false
-  checked: "2026-07-21"
-kapacita: 40  # kapacita lůžek: https://schroniskookraj.pl/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
+  checked: '2026-07-21'
+kapacita: 40 # kapacita lůžek: https://schroniskookraj.pl/ (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
 zajimavosti:
-  - text: "Historie schroniska spojuje sedlo s první sedmikilometrovou trasou jízdy na rohatých saních do Kowar."
+  - text: 'Historie schroniska spojuje sedlo s první sedmikilometrovou trasou jízdy na rohatých saních do Kowar.'
     kategorie: jine
-    zdroj: "https://schroniskookraj.pl/historia-schroniska.html"
+    zdroj: 'https://schroniskookraj.pl/historia-schroniska.html'
 
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS a výška z OSM (ODbL); vazba na Kowary z titulků WebSearch (facebook
@@ -75,7 +75,7 @@ overeniObcerstveni:
 # HUT-0227) ji vede jako „neuvedeno" → otviraciDoba schválně prázdná.
 sezona: celoročně
 kontakty:
-  email: "schroniskookraj@gmail.com"
+  email: 'schroniskookraj@gmail.com'
   # email: https://schroniskookraj.pl/kontakt.html (doplňková fakta 2026-07-21, katalog ChatGPT, verified:false)
   telefon: +48 75 611 20 36
   web: https://schroniskookraj.pl/
@@ -139,6 +139,29 @@ text:
 # viz data/kandidati/fotky/krkonose/schronisko-pttk-na-przeleczy-okraj.yaml.
 # Vybere ruční běh po očním posouzení, nebo další sklizeň DATA-02 (fulltext).
 
+# Vybráno redakčně 9. 8. 2026 z data/kandidati/fotky/krkonose/schronisko-pttk-na-przeleczy-okraj.yaml
+# (24 kandidátů): jediný kandidát zachycující budovu areálu; popis
+# „Schronisko PTTK na Przełęczy Okraj. Bacówka, w której znajduje się część
+# sypialna.“ — je to vedlejší stavba s noclehárnou, což alt přiznává.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/3/36/Schronisko_na_Prze%C5%82%C4%99czy_Okraj_-_bac%C3%B3wka.JPG
+    alt: Bacówka schroniska Na Przełęczy Okraj — část s noclehárnou
+    typ: soucasna # hero záběr profilu
+    datovani: 2008-04 # DateTimeOriginal z Commons
+    autor: Pudelek
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 4.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Schronisko_na_Prze%C5%82%C4%99czy_Okraj_-_bac%C3%B3wka.JPG
+    prevzatoDne: '2026-08-09'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 4.0, autor
+        Pudelek, popis „Schronisko PTTK na Przełęczy Okraj. Bacówka, w której
+        znajduje się część sypialna.“), export DATA-02 ze 4. 8. 2026; geotag
+        288 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-09'
 zdroje:
   - popis: OpenStreetMap (GPS, výška, kontakty — ODbL)
     url: https://www.openstreetmap.org/way/174687998

@@ -125,6 +125,30 @@ text:
 
 # Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
 
+# Vybráno redakčně 9. 8. 2026 z data/kandidati/fotky/krkonose/husova-bouda.yaml
+# (5 kandidátů): nález z Category:Husova bouda s popisem „Husova bouda in
+# Krkonoše Mountains, Pec pod Sněžkou“; letní záběr budovy bez lidí v popředí
+# (zimní varianty téhož autora mají v popředí lyžaře).
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/4/49/Husovabouda.jpg
+    alt: Husova bouda v Peci pod Sněžkou, letní pohled
+    typ: soucasna # hero záběr profilu
+    datovani: 2008-07 # DateTimeOriginal z Commons
+    autor: Petr Vilgus
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Husovabouda.jpg
+    prevzatoDne: '2026-08-09'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor Petr
+        Vilgus, popis „Husova bouda in Krkonoše Mountains, Pec pod Sněžkou,
+        Czech Republic“), export DATA-02 ze 4. 8. 2026; bez geotagu — předmět
+        dokládá kategorie a popis. Bez geotagu — předmět dokládá kategorie a
+        popis.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-09'
 zdroje:
   - popis: >-
       Vlastní web boudy — 1065 m, centrum areálu, služba turistům přes

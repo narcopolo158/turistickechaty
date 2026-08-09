@@ -116,6 +116,28 @@ text:
 
 # Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
 
+# Vybráno redakčně 9. 8. 2026 z data/kandidati/fotky/krkonose/betyna.yaml
+# (7 kandidátů): popis jmenuje přímo chatu i číslo popisné („Pec pod
+# Sněžkou - chata Betyna (č.p. 198)“), geotag 31 m, největší rozlišení mezi
+# záběry budovy (4288×3216).
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/b/ba/Pec_198.jpg
+    alt: Chata Betyna (čp. 198) v Peci pod Sněžkou
+    typ: soucasna # hero záběr profilu
+    datovani: 2016-10-06 # DateTimeOriginal z Commons
+    autor: JiriMatejicek
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Pec_198.jpg
+    prevzatoDne: '2026-08-09'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor
+        JiriMatejicek, popis „Pec pod Sněžkou - chata Betyna (č.p. 198)“),
+        export DATA-02 ze 4. 8. 2026; geotag 31 m od objektu.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-09'
 zdroje:
   - popis: >-
       Vlastní web chaty — 47 lůžek celoročně, restaurace s dětským

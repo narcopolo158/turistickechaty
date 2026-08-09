@@ -127,6 +127,28 @@ text:
 
 # Bez hero fotky: fotokandidáti z Commons se pro objekt zatím nevybírali.
 
+# Vybráno redakčně 9. 8. 2026 z data/kandidati/fotky/krkonose/patejdlova-bouda.yaml
+# (2 kandidátů): popis i jméno souboru jmenují přímo boudu („Pohled na
+# Patejdlovu boudu“), nález z Category:Patejdlova bouda.
+# Licence z Commons API (extmetadata). Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/b/be/Patejdlova_bouda%2C_pohled_ze_svahu.jpg
+    alt: Patejdlova bouda ve Špindlerově Mlýně, pohled ze svahu
+    typ: soucasna # hero záběr profilu
+    datovani: 2015-01-13 # DateTimeOriginal z Commons
+    autor: Honza Groh
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:Patejdlova_bouda,_pohled_ze_svahu.jpg
+    prevzatoDne: '2026-08-09'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor Honza
+        Groh, popis „Pohled na Patejdlovu boudu, Špindlerův Mlýn, Krkonoše“),
+        export DATA-02 ze 4. 8. 2026; geotag 1707 m je stanoviště fotografa
+        na protějším svahu (záběr „ze svahu“), ne poloha boudy.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-09'
 zdroje:
   - popis: >-
       Rekreační zařízení Univerzity Karlovy — detail objektu: kapacita,
