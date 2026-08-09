@@ -29,6 +29,107 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-09 (desátý blok) — TANAP odpověděl svým ceníkem, věž sporů a fotka, která nejde použít
+
+Michalův pokyn: *„pokracuj dal"* — a k tomu poslal hero fotku Nízkých Tater
+ze slovakia.travel s tím, že „melo by to fungovat jako czechtourism".
+
+**Hotovo:**
+
+**FOTKA ZE SLOVAKIA.TRAVEL DO REPA NEJDE, a je to zapsané, aby se to
+nemuselo zjišťovat znovu.** Právní stránka portálu
+(slovakia.travel/pravne-informacie, ověřeno 9. 8. 2026) je pravý opak
+mediabanky CzechTourism: „Akékoľvek použitie… inak ako pre osobnú
+nekomerčnú potrebu… je výslovne zakázané" a „Bez písomného súhlasu
+oprávnenej osoby Slovakia travel nie je povolené kopírovať… ani žiadne
+texty, logá, grafické prvky, ochranné známky, zvuk ani obraz." Žádné
+předepsané znění kreditu výměnou za licenci, žádná fotobanka pro média
+(hledáno). Srovnávací tabulka obou fotobank je
+v `docs/FOTKY-ZDROJE-A-LICENCE.md`, oddíl 4d, i s cestami ven: (1) napsat
+Slovakia Travel o písemné svolení — číselník licencí už `se-svolenim` má,
+(2) Wikimedia Commons, kde má Chopok stovky CC snímků. Snímek samotný je
+krásný (Chopok a Ohnište, rotunda stanice); tím spíš stojí za jeden e-mail.
+
+**OTÁZKA O BUDOVÁCH TANAP JE ZAVŘENÁ — odpověděl sám TANAP svou nabídkou.**
+Veřejná ubytovací stránka `tanap.sk/ubytovanie` obsahuje PRÁVĚ ČTYŘI
+objekty (Chata Spálená v Zuberci, Štúdiá na Štrbském Plese, Tri studničky,
+Chata Dolný Smokovec) — všechno pronájmy přes Booking.com. Terénní stanice
+mezi nimi nejsou → **11 vyřazení** (Krížna, Tomanová, Zadná Tichá,
+Kôprovnica, Koniarka, Tokáreň, Tristárska, Zverienec, Grarajova, Terénna
+stanica Staré, TANAP). Chata Dolný Smokovec v nabídce JE, ale jako pronájem
+celku („Má 2 spálne, kuchyňu…") → vyřazena taky. K tomu Belianska Chata
+(penzion v obci Ždiar — jméno klame, s historickou Belianskou chatou nemá
+doloženou souvislost), Psotkova chata (vlastní web: „Chata sa prenajíma ako
+jeden celok"; původně Nanga-Parbat, po Jozefu Psotkovi — zaznamenáno pro
+případ rozšíření klíče) a **Harnasiowa chata jako TŘETÍ záměna jména** po
+Enciánu a Chatě Zbójnické: restaurace 1 162 m od centra Zakopaného.
+Celkem 16 vyřazení, **fronta oblasti 32 → 15**.
+
+**GOLF TOWER JE PŘÍPAD, KTERÝ JSEM JEŠTĚ NEMĚL: objekt, o kterém se nedá
+zjistit, co je.** Uzel OSM nese jediný tag (jméno) a leží v golfovém
+rezortu Black Stork ve Veľké Lomnici. Cílená rešerše třemi jazyky nenašla
+jediný pramen — web rezortu ani hotelu žádnou věž nezmiňují. Odloženo
+s plným záznamem; rozhodne terén nebo dotaz u provozovatele.
+
+**DVA NOVÉ PROFILY, korpus 173, oblast má 21 profilů.**
+
+**TATRAS TOWER (Veža snov)** je první slovenská rozhledna korpusu — a psaní
+jejího profilu byl test, jak průvodce zachází se spornou stavbou. Fakta:
+53 m, nástup 1367 m, 24 ocelových sloupů s 15° náklonem, 580 m bezbariérové
+lávky, tobogán, Tower Cafe, postavila česká Taros Nova, otevřeno 20. 4.
+2021. A spor: petice s 8 000 podpisy (2019), konkurz provozovatele se
+závazky přes 3,4 milionu eur, převzetí dceřinou firmou TMR — a výrok šéfa
+TMR Rattaje, že by věž „chtěl dostat z Tater pryč", vedle výroku ochranářů,
+že s ní „problém nemajú". Obojí je v próze se jmény, protože čtenář má
+právo znát kontext stavby, na kterou kupuje vstupenku. Superlativ je
+zapsaný s klíčovou výhradou „svého druhu", bez které by neplatil.
+
+**HORSKÁ UBYTOVŇA HREBIENOK** (bývalý Športhotel pražské Legiobanky po
+požáru 1928, dnes TMR) je jediný nocleh přímo na uzlu Hrebienok, 122 m od
+Bilíkovy chaty — dva profily, dva provozovatelé, pravidlo z Kozubové.
+Profil je záměrně krátký: dva textové prameny unesou jen tolik. Kapacita 34
+je počet POKOJŮ jako nejnižší doložitelná mez, protože lůžka provozovatel
+neuvádí.
+
+**REŠERŠE, KTERÉ SE NEPROMĚNILY V PROFIL, NEJSOU ZTRACENÉ.** Švajčiarsky
+dom (NKP 2021, muzeum nosičství + veřejná kavárna + 10 lůžek, Starý
+Smokovec 1 — tematický protějšek Rainerovy chaty) a Chodník korunami
+stromov Bachledka (32m věž Josefa Stögera, 2017, restaurace 180 míst,
+žlutá značka vede až k němu) mají plné rešerše uložené v kandidátních
+poznámkách. Bachledka čeká na Michalovu odpověď na otázku rozsahu — leží
+na hřebeni Spišské Magury, jako Głodówka; na rozdíl od ní k ní ale VEDE
+značená trasa.
+
+**Commity:** `ac1e8c6` (vše výše). Mezitím na main přistál běh z Actions
+(`3496765`, otisky razítek z razitkuj.cz — fáze 3b), rebase čistý, všechny
+kontroly zelené i po něm; prettier čistý, testy oblastí 182/182, tsc bez
+chyb.
+
+**Příště:** fronta Vysokých Tater má 15 položek — 2 připravené k povýšení
+(Švajčiarsky dom hned, Bachledka po Michalově odpovědi), 2 odložené
+(Betlejemka, Golf Tower) a 11 tenkých záznamů, které bez dokladu vyřadit
+nejdou; nabízí se ruční dohledávka DATA-31 nebo je nechat uležet. Pak
+Beskydy: 172 nadějných kandidátů a tři doložené mezery katalogu (Ropička,
+Marguška, Równica).
+
+**Otázky pro Michala** (kumulativní seznam, nové jsou 7 a 8):
+
+1. **KONTROLA-11** — konvence o nižším čísle (šest případů za dva dny).
+2. **Belianské Tatry** jako samostatná oblast?
+3. **Telefonát DATA-04** — teď zavírá šest slovenských profilů (přibyl
+   Hrebienok — počet lůžek a hodiny restaurace).
+4. **Encián (VT-02)** — ruční dohledávka GPS?
+5. **Betlejemka** — patří do průvodce ubytovna bez občerstvení?
+6. **Głodówka a Bachledka** — objekty na Spišské Maguře v okně Tater:
+   nechat, nebo řezat podle pohoří? (Bachledka na odpovědi ČEKÁ
+   s hotovou rešerší.)
+7. **Hero Nízkých Tater:** napíšeš Slovakia Travel o svolení, nebo mám
+   vybrat kandidáty z Wikimedia Commons? Fotka z fotogalerie bez svolení
+   použít nejde (doklad v FOTKY-ZDROJE-A-LICENCE.md 4d).
+8. **Švajčiarsky dom** — povýšit? Kavárna pro veřejnost je doložená,
+   ale je to vila v osadě; hlas pro: tematicky doplňuje Rainerovu chatu
+   (obě mají expozici o nosičích).
+
 ## 2026-08-09 (devátý blok) — dva profily, jedno odložení a triáž, která ubrala frontě dvě třetiny
 
 Michalův pokyn: *„pokracuj samostatne dal"*.
