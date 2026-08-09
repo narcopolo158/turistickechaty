@@ -1,0 +1,231 @@
+# Švajčiarsky dom — dvacátý druhý publikovaný profil oblasti Vysoké Tatry
+# (9. 8. 2026), povýšen z kandidáta DATA-01 na pokyn Michala („svajciarsky
+# dom povys") po rešerši z téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Švajčiarsky dom
+slug: svajciarsky-dom
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Swiss House
+    poznamka: anglická podoba užívaná v prezentaci objektu
+  - nazev: Sherpa Caffe
+    poznamka: jméno kavárny, pod kterým objekt zná část návštěvníků
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1412963
+lng: 20.2228443
+obec: Vysoké Tatry
+# vyska SE NEVYPLŇUJE: žádný pramen nadmořskou výšku budovy neuvádí; osada
+# Starý Smokovec se obvykle uvádí kolem 1010 m, ale to je údaj osady, ne domu.
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/64795182 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Poloha: zástavba osady Starý Smokovec, pod Slavkovským štítem. ROZPOR
+    V ČÍSLE POPISNÉM, nesrovnaný: prezentace objektu na tatry.sk (čteno
+    9. 8. 2026) uvádí adresu „Švajčiarsky dom, 062 01 Starý Smokovec č. 7",
+    krizom-krazom.online (podle evidence památek) „Starý Smokovec 1".
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 10
+overeniNocleh:
+  source: >-
+    Prezentace objektu na tatry.sk (čteno 9. 8. 2026): „We offer
+    accommodation in 2-, 3- and 5-bed rooms with access to the porch. In
+    total we have 10 beds and 2 extra beds." — deset lůžek a dvě přistýlky
+    ve dvou apartmánech s vlastními kuchyněmi; rezervovat lze celý apartmán
+    i jednotlivé pokoje. Zapsáno 10 pevných lůžek bez přistýlek (konvence
+    27. 7. 2026 — nejnižší doložené pevné číslo).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: kiosek
+overeniObcerstveni:
+  source: >-
+    V budově funguje veřejná kavárna Sherpa Caffe: uvádí ji prezentace
+    objektu na tatry.sk (čteno 9. 8. 2026) i zpráva o vyhlášení památkou
+    (spis.korzar.sme.sk: „Múzeum nosičstva, kaviareň, detský kútik a dva
+    apartmány."). Běžný veřejný provoz dokládá nezávisle recenze na
+    salkakavy.sk: „Káva nám bola podávaná na kovovom podnose spolu s malým
+    keksíkom…" — recenzent přišel z ulice, ne jako ubytovaný. Do číselníku
+    jde `kiosek` (kavárna bez teplé kuchyně; jídla žádný pramen neuvádí).
+    Je to po Sliezskem domu a Majláthově chatě třetí objekt oblasti, kde je
+    obsluha kolemjdoucích doložená víc než mlčením — tady recenzí
+    z návštěvy.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# sezona ani otviraciDoba SE NEVYPLŇUJÍ: žádný pramen je neuvádí. Web
+# kavárny (sherpacaffe.sk dle tatry.sk) v době rešerše nenesl obsah kavárny
+# — viz interniPoznamky.
+overeniProvoz:
+  source: >-
+    Otevírací dobu ani sezónnost neuvádí žádný nalezený pramen, a tak se
+    nezapisují. Doloženo je vybavení: bezplatná wi-fi v celé budově a dvě
+    parkovací místa před objektem (tatry.sk, čteno 9. 8. 2026). Objekt
+    stojí v centru osady Starý Smokovec — východiště pozemní lanovky na
+    Hrebienok a autobusů i elektrické železnice po celých Tatrách.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421903319591'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1865
+overeniHistorie:
+  source: >-
+    ROZPOR V DATACI, přiznaný a rozhodnutý ve prospěch evidence památek:
+    krizom-krazom.online (podle evidence národních kulturních památek,
+    čteno 9. 8. 2026) uvádí „Vila z roku 1865" a úpravu roku 1987;
+    prezentace objektu na tatry.sk píše „The Swiss House is one of the
+    oldest buildings in the High Tatras and its history dates back to
+    1856." Zapsán je rok 1865: formulace „its history dates back to" může
+    mířit na historii místa, ne budovy, evidence památek datuje stavbu
+    samu — a u letopočtu vzniku se volí opatrnější, tedy pozdější varianta
+    (KONTROLA-11).
+    STAVITEL NENALEZEN — žádný pramen jméno neuvádí.
+    PAMÁTKOVÁ OCHRANA: „Národná kultúrna pamiatka vyhlásená v roku 2021."
+    (krizom-krazom.online); spis.korzar.sme.sk k témuž — „Pamiatkový úrad
+    vyhlásil budovu za národnú kultúrnu pamiatku ešte v úvode leta."
+    Popis stavby podle evidence: „Dvojpodlažná stavba s podpivničením,
+    trojtraktovou dispozíciou a obdĺžnikovým pôdorysom."
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1865
+    udalost: >-
+      V Starém Smokovci vyrostla vila ve švýcarském stylu — podle prezentace
+      objektu jedna z nejstarších budov Vysokých Tater; ta klade počátky
+      historie už k roku 1856.
+    zdroj: >-
+      krizom-krazom.online (čteno 9. 8. 2026) — „Vila z roku 1865";
+      tatry.sk — „one of the oldest buildings in the High Tatras and its
+      history dates back to 1856."
+  - rok: 1987
+    udalost: >-
+      Budova prošla úpravou.
+    zdroj: >-
+      krizom-krazom.online (čteno 9. 8. 2026) — „Upravovaná bola v roku
+      1987."
+  - rok: 2021
+    udalost: >-
+      Památkový úřad vyhlásil budovu národní kulturní památkou; uvnitř
+      funguje muzeum nosičství, kavárna, dětský koutek a dva apartmány.
+    zdroj: >-
+      spis.korzar.sme.sk (čteno 9. 8. 2026) — „Pamiatkový úrad vyhlásil
+      budovu za národnú kultúrnu pamiatku ešte v úvode leta."; „Múzeum
+      nosičstva, kaviareň, detský kútik a dva apartmány."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      V budově sídlí muzeum nosičství — expozice o historii tatranských
+      nosičů; je to po Rainerově chatě druhé místo oblasti, které nosičům
+      věnuje stálou expozici.
+    kategorie: jine
+    zdroj: >-
+      tatry.sk (čteno 9. 8. 2026) — „the Swiss House houses a porter's
+      museum, a café, a children's corner and two apartments with their own
+      kitchens."; expozici Rainerovy chaty dokládá její profil.
+  - text: >-
+      Prezentace objektu ho řadí mezi nejstarší budovy Vysokých Tater.
+    kategorie: stari
+    zdroj: >-
+      tatry.sk (čteno 9. 8. 2026) — „one of the oldest buildings in the
+      High Tatras".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Vila ve švýcarském stylu v centru Starého Smokovce, podle evidence památek
+  z roku 1865 a od roku 2021 národní kulturní památka. Uvnitř je muzeum
+  nosičství, veřejná kavárna Sherpa Caffe a dva apartmány s deseti lůžky.
+text:
+  - >-
+    Švajčiarsky dom stojí v zástavbě Starého Smokovce — osady, kterou
+    vysoketatry.com uvádí jako nejstarší v Tatrách — pod Slavkovským štítem. Je to dvoupodlažní vila ve švýcarském
+    stylu — odtud jméno — a prezentace objektu ji řadí mezi nejstarší budovy
+    Vysokých Tater. Kdy přesně vznikla, se prameny neshodnou: evidence
+    památek uvádí rok 1865, vlastní prezentace klade počátky historie už
+    k roku 1856. Roku 2021 ji Památkový úřad vyhlásil národní kulturní
+    památkou.
+  - >-
+    Dnes budova slouží třem věcem najednou. Je tu muzeum nosičství —
+    expozice o historii tatranských nosičů, tedy tématu, které v téhle
+    oblasti nese i Rainerova chata; obě expozice se doplňují. Je tu veřejná
+    kavárna Sherpa Caffe, jejíž jméno se na nosiče odvolává taky. A jsou tu
+    dva apartmány s vlastními kuchyněmi: deset lůžek a dvě přistýlky ve
+    dvou-, tří- a pětilůžkových pokojích s přístupem na verandu, rezervovat
+    se dá celý apartmán i jednotlivé pokoje.
+  - >-
+    Poloha je městská, a právě proto praktická: Starý Smokovec je uzel, ze
+    kterého jede pozemní lanovka
+    na Hrebienok, elektrická železnice na obě strany Tater i autobusy.
+    Před domem jsou dvě parkovací místa a v celé budově bezplatná wi-fi.
+  - >-
+    Otevírací dobu kavárny ani muzea poctivě neznáme — žádný pramen je
+    neuvádí a web kavárny v době psaní nenesl obsah. Telefon ale funguje
+    a před návštěvou se vyplatí zavolat.
+  - >-
+    Údaje nesou prezentace objektu na tatry.sk, evidence památek
+    zprostředkovaná webem krizom-krazom.online, zpráva korzár SME
+    o vyhlášení památkou a recenze na salkakavy.sk; polohu OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Prezentace objektu na tatry.sk — historie od 1856, muzeum nosičství,
+      kavárna, dětský koutek, dva apartmány, 10 lůžek + 2 přistýlky, wi-fi,
+      parkování, telefon, adresa č. 7 (načteno 9. 8. 2026)
+    url: https://www.tatry.sk/en/svajciarsky-dom-swiss-house/
+  - popis: >-
+      krizom-krazom.online — vila z roku 1865, úprava 1987, národní kulturní
+      památka od 2021, popis stavby, adresa Starý Smokovec 1
+      (načteno 9. 8. 2026)
+    url: https://www.krizom-krazom.online/vila-v-starom-smokovci-svajciarsky-dom/
+  - popis: >-
+      spis.korzar.sme.sk — vyhlášení národní kulturní památkou, výčet
+      dnešních provozů (načteno 9. 8. 2026)
+    url: https://spis.korzar.sme.sk/c/22799450/svajciarsky-dom-v-starom-smokovci-sa-stal-narodnou-kulturnou-pamiatkou.html
+  - popis: >-
+      salkakavy.sk — recenze návštěvy kavárny Sherpa Caffe, doklad běžného
+      veřejného provozu (načteno 9. 8. 2026)
+    url: https://salkakavy.sk/svajciarsky-dom-v-starom-smokovci/
+  - popis: >-
+      vysoketatry.com — Starý Smokovec jako nejstarší tatranská osada
+      (kontext polohy) (načteno 9. 8. 2026)
+    url: https://www.vysoketatry.com/chaty/hhhrebienok/hhhrebienok.html
+  - popis: >-
+      OpenStreetMap (GPS, tourism=chalet; ODbL)
+    url: https://www.openstreetmap.org/way/64795182
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/svajciarsky-dom.yaml (9. 8. 2026)
+  na výslovný pokyn Michala („svajciarsky dom povys") — tím je zodpovězená
+  otázka č. 8 z deníku 9. 8.: vila v osadě s veřejnou kavárnou do průvodce
+  patří.
+
+  WEB KAVÁRNY JE V KONTAKTECH ZÁMĚRNĚ VYNECHANÝ. Prezentace na tatry.sk
+  uvádí www.sherpacaffe.sk, ale doména v době rešerše (9. 8. 2026) nesla
+  cizí obsah bez vztahu ke kavárně — vypadá to na propadlou a znovu
+  obsazenou doménu. Do kontaktů proto šel jen telefon z tatry.sk; kdyby se
+  web vrátil, doplnit.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: rok vzniku (1856 „historie" × 1865
+  evidence památek — zapsáno 1865, viz KONTROLA-11); číslo popisné
+  (č. 7 na tatry.sk × č. 1 v evidenci).
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: stavitel; otevírací doba kavárny
+  a muzea; vstupné do muzea; sezónnost; nadmořská výška budovy; kdo objekt
+  vlastní a provozuje (fyzická osoba? firma?). Vše na jeden telefonát —
+  přidáno na seznam DATA-04.
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.
