@@ -1,0 +1,265 @@
+# Horský hotel Radegast — desátý publikovaný profil Beskyd (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne. Katalog vede objekt
+# postaru jako „Chata na Radhošti" (KATALOG_PREJMENOVANI).
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Horský hotel Radegast
+slug: horsky-hotel-radegast
+zeme: cz
+typ: horsky-hotel
+stav: v-provozu
+oblast: beskydy
+aliasy:
+  - nazev: Chata na Radhošti
+    poznamka: katalogové jméno
+  - nazev: Chata Radegast
+    poznamka: běžně užívaná kratší podoba (treking.cz)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.4891481
+lng: 18.2249524
+vyska: 1121
+obec: Dolní Bečva
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/121542951 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1121 m BEZ ROZPORU: ceskehory.cz („v n.v. 1121m, těsně pod
+    vrcholem Radhoště"), beskydy.cz, treking.cz i hotelypenziony.cz, které
+    uvádějí „přesná nadmořská výška je 1121 m" (vše čteno 9. 8. 2026).
+    Vrchol Radhoště má 1129 m (astrocesty.eu) — hotel stojí těsně pod ním,
+    na hřebeni mezi Pustevnami a vrcholem. Obec podle adresy Dolní Bečva
+    287 (ceskehory.cz). POZOR NA ZÁMĚNU: u kaple sv. Cyrila a Metoděje na
+    vrcholu stojí jiný objekt, Kamenná chata, kterou Pohorská jednota
+    Radhošť koupila roku 1903 — tenhle profil popisuje dřevěný hotel
+    z třicátých let, ne ji.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 55
+overeniNocleh:
+  source: >-
+    ROZPOR 55 × 56, ZAPSÁNO NIŽŠÍ (konvence 27. 7. 2026): ceskehory.cz
+    „celkem 13 dvou i vícelůžkových pokojů o celkové kapacitě 55 lůžek"
+    a shodně kudyznudy.cz; treking.cz „Počet lůžek: 56 osob" a shodně
+    kamsi.cz. Na počtu 13 pokojů se shodují všichni. Kategorie A jsou dvou-
+    a třílůžkové pokoje s televizí, kategorie B čtyř- a vícelůžkové
+    zpravidla s patrovými postelemi (hotelypenziony.cz); sociální zařízení
+    společné na chodbě (levneubytovani.net). Ceny se v pramenech liší
+    a žádný je nedatuje, a tak se nezapisují — vlastní web se rešerši
+    nepodařilo načíst (blokuje automatizovaný přístup).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    treking.cz (čteno 9. 8. 2026): „V přízemí této horské chaty se nachází
+    příjemná restaurace s asi 50 místy."; kamsi.cz rozlišuje „restaurace
+    s kapacitou 50 míst, pro ubytované hosty jídelna" — dva oddělené
+    provozy, což samo naznačuje, že restaurace je pro příchozí;
+    ceskehory.cz sčítá „stylová restaurace a jídelna o celkové kapacitě
+    100 osob". VÝSLOVNÁ VĚTA O NEUBYTOVANÝCH CHYBÍ, nepřímo ji nesou
+    výletní průvodce: hotelovy-dum.cz — „Občerstvit se můžete např.
+    v horském hotelu Radegast, který už je jen kousek pod vrcholem
+    Radhoště."; krauzovinacestach.cz — „narazíte na horský hotel Radegast
+    s příjemnou restaurací". Hotel na hřebenové trase mezi Pustevnami
+    a vrcholem, kudy proudí davy k soše Radegasta, je občerstvením pro
+    kolemjdoucí prakticky definován — ale doslova to nikdo nenapsal
+    (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    treking.cz (čteno 9. 8. 2026): „Provoz: celoroční". Otevírací hodiny
+    restaurace neuvádí žádný nalezený pramen — vlastní web hotelu blokuje
+    automatizovaný přístup (BotStopper), takže tu chybí i aktuální ceník;
+    je to první objekt korpusu, kde rešerši zastavila ochrana webu, ne
+    absence webu.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+420556835130'
+  email: hotelradegast@hotelradegast.cz
+  web: https://www.hotelradegast.cz/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1935
+overeniHistorie:
+  source: >-
+    Stavba 1933–1935: treking.cz (čteno 9. 8. 2026) — „Její krásná dřevěná
+    stavba zdobí horu Radhošť od roku 1935 (výstavba byla zahájena v roce
+    1933)."; shodně kudyznudy.cz („celodřevěnou budovu postavenou v letech
+    1933-1935") a hotelypenziony.cz.
+    STAVITEL STOJÍ NA JEDINÉM PRAMENI a je to tu přiznané: Seznam Zprávy —
+    „Budova hotelu, postavená Františkem Holčákem v letech 1933–1935, je
+    typickým příkladem tradiční horské architektury." Architekt nenalezen;
+    dobové dokumenty Pohorské jednoty Radhošť (resortpustevny.cz) hotel
+    vůbec nezmiňují — jednota u vrcholu koupila roku 1903 útulnu u kaple,
+    tedy dnešní Kamennou chatu, což jen potvrzuje, že jde o dva různé
+    objekty. Válečné osudy, případné znárodnění a restituce nenalezeny;
+    česká Wikipedie byla pro rešerši nedostupná. Provozovatelem je podle
+    ceskehory.cz a levneubytovani.net Martin Trčka.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1935
+    udalost: >-
+      Na hřebeni těsně pod vrcholem Radhoště byla dokončena celodřevěná
+      budova hotelu, stavěná od roku 1933; jediný pramen jmenuje stavitele
+      Františka Holčáka.
+    zdroj: >-
+      treking.cz, kudyznudy.cz, hotelypenziony.cz (čteno 9. 8. 2026);
+      stavitel dle seznamzpravy.cz.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Kousek od hotelu stojí socha pohanského boha Radegasta, kterou roku
+      1929 vytvořil v americkém ateliéru frenštátský rodák Albín Polášek;
+      dnešní socha je kopie z odolnější žuly od kamenosochaře Jana Sobka.
+    kategorie: jine
+    zdroj: >-
+      kudyznudy.cz (čteno 9. 8. 2026) — „V roce 1929 ji v USA vytvořil
+      sochař Albín Polášek, rodák z Frenštátu pod Radhoštěm."; rok osazení
+      kopie prameny uvádějí rozdílně (krauzovinacestach.cz: 1998).
+  - text: >-
+      Podle pověry splní socha přání tomu, kdo se dotkne jejího pupíku.
+    kategorie: jine
+    zdroj: >-
+      novinky.cz (čteno 9. 8. 2026) — „Člověk se musel dotknout jeho pupíku
+      a v duchu si to přát."
+  - text: >-
+      Jeden pramen hotel označuje za nejvýše položenou horskou chatu
+      Moravskoslezských Beskyd.
+    kategorie: vyska
+    zdroj: >-
+      astrocesty.eu (čteno 9. 8. 2026) — „je se svou nadmořskou výškou
+      1 121 m n. m. nejvýše položenou horskou chatou Moravskoslezských
+      Beskyd."
+  - text: >-
+      Z Pusteven se k hotelu autem nedostanete — zavazadla ubytovaných po
+      domluvě sveze hotelový vůz.
+    kategorie: jine
+    zdroj: >-
+      ceskehory.cz (čteno 9. 8. 2026) — „Doprava z Pusteven je možná pouze
+      pěší chůzí. Po předem sjednané domluvě je možné odvézt zavazadla
+      hotelovým dopravním prostředkem".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Celodřevěný horský hotel z let 1933 až 1935 na hřebeni těsně pod vrcholem
+  Radhoště, u cesty od Pusteven k soše Radegasta. Katalog ho vede postaru
+  jako Chatu na Radhošti; jeden pramen ho označuje za nejvýše položenou
+  horskou chatu Moravskoslezských Beskyd.
+text:
+  - >-
+    Horský hotel Radegast stojí v 1121 metrech těsně pod vrcholem Radhoště
+    (1129 m), na hřebeni, po kterém proudí návštěvníci z Pusteven k soše
+    Radegasta a ke kapli svatého Cyrila a Metoděje. Katalog ho vede postaru
+    jako Chatu na Radhošti — a je dobré ho neplést s Kamennou chatou, která
+    stojí u kaple na samém vrcholu a patřila Pohorské jednotě Radhošť.
+  - >-
+    Celodřevěnou budovu v tradiční horské architektuře postavil v letech
+    1933 až 1935 podle jediného pramene František Holčák. Víc toho o historii
+    poctivě nevíme: architekta neuvádí nikdo, válečné osudy ani případné
+    znárodnění se dohledat nepodařilo a dobové dokumenty Pohorské jednoty
+    hotel nezmiňují — což sedí, protože nebyl její.
+  - >-
+    Dnes má hotel třináct pokojů s 55 nebo 56 lůžky podle pramene — dvou-
+    a třílůžkové s televizí, čtyř- a vícelůžkové s patrovými postelemi,
+    sociální zařízení na chodbě. V přízemí je restaurace s asi padesáti
+    místy a vedle ní jídelna pro ubytované; že restaurace slouží
+    i kolemjdoucím, píšou výletní průvodci („občerstvit se můžete v horském
+    hotelu Radegast"), ale výslovnou větu provozovatele nemáme — jeho web
+    se nám nepodařilo strojově načíst.
+  - >-
+    Chodí se sem nejčastěji z Pusteven po modré cyrilometodějské cestě —
+    nenáročné čtyři kilometry po hřebeni kolem sochy Radegasta — na Pustevny
+    jede z Ráztoky sedačková lanovka. Z Rožnova pod Radhoštěm vede červená
+    (asi 7 km s převýšením kolem 800 m), z parkoviště Pindula modrá (5 km).
+    Provoz je celoroční.
+  - >-
+    Socha Radegasta, dnes žulová kopie originálu Albína Poláška z roku 1929,
+    stojí na hřebenové cestě kousek od hotelu a podle pověry splní přání
+    tomu, kdo se dotkne jejího pupíku.
+  - >-
+    Údaje nesou treking.cz, ceskehory.cz, kudyznudy.cz, hotelypenziony.cz,
+    beskydy.cz, kamsi.cz, seznamzpravy.cz a výletní průvodce; polohu
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      treking.cz — výška 1121 m, stavba 1933–1935, 56 lůžek, restaurace
+      s 50 místy, celoroční provoz, kontakty (načteno 9. 8. 2026)
+    url: https://www.treking.cz/chaty/radegast.htm
+  - popis: >-
+      ceskehory.cz — 13 pokojů / 55 lůžek, restaurace a jídelna 100 osob,
+      adresa Dolní Bečva 287, provozovatel Martin Trčka, doprava zavazadel
+      (načteno 9. 8. 2026)
+    url: https://www.ceskehory.cz/ubytovani/horsky-hotel-radegast-dolni-becva.html
+  - popis: >-
+      kudyznudy.cz — celodřevěná budova 1933–1935, 13 pokojů / 55 osob,
+      socha Radegasta (Albín Polášek 1929, kopie Jana Sobka)
+      (načteno 9. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/hotel-radegast
+  - popis: >-
+      hotelypenziony.cz — přesná výška 1121 m a souřadnice, kategorie pokojů
+      A a B (načteno 9. 8. 2026)
+    url: https://www.hotelypenziony.cz/horsky-hotel-radegast/
+  - popis: >-
+      seznamzpravy.cz — stavitel František Holčák, 1933–1935 (jediný pramen
+      ke staviteli) (načteno 9. 8. 2026)
+    url: https://www.seznamzpravy.cz/clanek/magazin-cestovani-horske-chaty-beskydy-268613
+  - popis: >-
+      kamsi.cz — restaurace 50 míst + jídelna pro ubytované, 56 osob
+      (načteno 9. 8. 2026)
+    url: https://kamsi.cz/hotel-radegast/detail/2023
+  - popis: >-
+      astrocesty.eu — vrchol Radhoště 1129 m, superlativ nejvýše položené
+      chaty Moravskoslezských Beskyd (načteno 9. 8. 2026)
+    url: https://www.astrocesty.eu/lokality/detail/radhost.html
+  - popis: >-
+      hotelovy-dum.cz — trasy z Pusteven (NS Radegast, 4 km) a z Rožnova
+      (červená, 7 km / 800 m), občerstvení v hotelu (načteno 9. 8. 2026)
+    url: https://www.hotelovy-dum.cz/inpage/pustevny-a-radhost-cim-si-vas-pritahnou/
+  - popis: >-
+      novinky.cz — pověra o pupíku sochy Radegasta (načteno 9. 8. 2026)
+    url: https://www.novinky.cz/cestovani/tipy-na-vylety/clanek/radegast-na-radhosti-splni-prani-jen-tem-kteri-se-dotknou-jeho-pupiku-96838
+  - popis: >-
+      Pohorská jednota Radhošť, dobové dokumenty — koupě útulny u kaple
+      roku 1903 (rozlišení od Kamenné chaty) (načteno 9. 8. 2026)
+    url: https://www.resortpustevny.cz/files/001.pdf
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/121542951
+interniPoznamky: >-
+  Povýšeno z data/kandidati/beskydy/horsky-hotel-radegast.yaml (9. 8. 2026).
+  Katalogová mezera „Chata na Radhošti" tím dostává publikovaný profil —
+  mapování jmen drží KATALOG_PREJMENOVANI od 8. 8. 2026.
+
+  PRVNÍ OBJEKT KORPUSU, KDE REŠERŠI ZASTAVILA OCHRANA WEBU: hotelradegast.cz
+  vrací BotStopper „Access Denied", takže chybí aktuální ceník, hodiny
+  restaurace a výslovná věta o neubytovaných. Všechno na jeden telefonát
+  (DATA-04): +420 556 835 130.
+
+  HISTORIE JE NEJTENČÍ MÍSTO PROFILU: stavitel František Holčák stojí na
+  jediném prameni (seznamzpravy.cz), architekt nenalezen, válka
+  a znárodnění nenalezeny, česká Wikipedie byla nedostupná. Milník je proto
+  jen jeden. Profil je poctivý k tomu, co prameny unesou; historie se dá
+  prohloubit, až bude Wikipedie/literatura dostupná.
+
+  ROZPORY: kapacita (55 × 56); telefony (556 835 130 shodně, mobily se
+  liší: 775 663 616 treking × 777 648 644 beskydy.cz); e-mail
+  (hotelradegast@centrum.cz treking × hotelradegast@hotelradegast.cz
+  beskydy.cz a kamsi.cz — zapsán ten na vlastní doméně, který nese i OSM);
+  rok kopie sochy Radegasta (1998 × neuvedeno jinde).
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

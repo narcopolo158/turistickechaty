@@ -1,0 +1,303 @@
+# Kolářova chata Slavíč — jedenáctý publikovaný profil Beskyd (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# POZOR: historická chata z roku 1931 byla v září 2021 zdemolována; dnešní
+# provoz běží v novostavbách na témž místě pod týmž jménem. Profil popisuje
+# ŽIVÝ PROVOZ a demolici přiznává — vzor Chata pod Soliskom (kontinuita
+# jména, místa a provozu).
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Kolářova chata Slavíč
+slug: kolarova-chata-slavic
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: beskydy
+aliasy:
+  - nazev: Turistická chata Slavíč
+    poznamka: podoba užívaná staršími katalogy (turistika.cz)
+  - nazev: Hadaszczokova útulna
+    poznamka: předchůdkyně z roku 1899, pojmenovaná po zakladateli Beskidenvereinu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.554289
+lng: 18.6186808
+vyska: 915
+obec: Morávka
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/2399804161 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA — ROZPOR, ZAPSÁNO ČASTĚJŠÍ ČÍSLO: 915 m nesou treking.cz
+    („Kolářova chata (915 m)") a turistika.cz („915 metrů nad mořem");
+    vrcholovka.cz uvádí v titulku 908 m (vše čteno 9. 8. 2026). Konvence
+    o nižším čísle se nepoužila: 908 m je osamocená hodnota z titulku
+    stránky, kterou se nepodařilo načíst — viz KONTROLA-11 (rozpor
+    předpokládá dvě verze, ne odlehlý titulek). Poloha: odlesněné místo na
+    hlavním hřebeni mezi Slavíčem a Morávkou, na rozcestí několika značek
+    (turistika.cz). Obec dle polohy Morávka.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+# kapacita SE NEVYPLŇUJE: vlastní web žádné celkové číslo neuvádí a skladba
+# pokojů nedovoluje poctivý součet — viz overeniNocleh.
+overeniNocleh:
+  source: >-
+    CELKOVÉ ČÍSLO LŮŽEK NEEXISTUJE V ŽÁDNÉM PRAMENI, a tak se nezapisuje.
+    Vlastní web (anglická verze, čteno 9. 8. 2026) popisuje dvě budovy:
+    nová chata „seven rooms with private bathroom, terrace and TV" (pokoj:
+    „1 king size bed, 2 fixed extra beds") a druhá budova „five rooms
+    available" se společným zázemím — dvoulůžkový, čtyřlůžkový,
+    pětilůžkový, šestilůžkový a desetilůžkový pokoj „situated in two
+    rooms". Web nerozlišuje pevná lůžka od přistýlek a součet by byl
+    aritmetika redakce, ne údaj pramene — jeden telefonát to dá (DATA-04).
+    Ceny podle vlastního webu: 640 Kč dospělý / 400 Kč dítě v nové chatě,
+    410/350 Kč ve druhé budově. Starší katalogy uvádějí 43 lůžek — to je
+    kapacita ZDEMOLOVANÉ chaty z roku 1931 (treking.cz: „Kapacita 43 l ve
+    2 - 10 l pokojích"), ne dnešní stav.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Starší prameny dokládají restauraci s celoročním provozem: turistika.cz
+    (čteno 9. 8. 2026) — „Provoz restaurace i ubytování na Kolářově chatě
+    na Slavíči je celoroční." a „Chata taky zajišťuje stravování formou
+    polopenze nebo plné penze."; treking.cz popisuje jídelnu
+    s panoramatickými fotografiemi (to ovšem o zdemolované budově).
+    Podstránku restaurace na vlastním webu se nepodařilo načíst a VÝSLOVNÁ
+    VĚTA O NEUBYTOVANÝCH CHYBÍ — chata na rozcestí značek uprostřed hřebene
+    je ale občerstvením pro procházející definována historicky
+    (nejnavštěvovanější chata Beskyd dle poznejdomy.cz). Telefonát to
+    dořeší (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  středa až neděle (dle kontaktní stránky vlastního webu; hodiny se
+  nepodařilo načíst)
+# sezona SE NEVYPLŇUJE: starší katalogy uvádějí celoroční provoz, ale
+# popisují zdemolovanou budovu; dnešní režim „st–ne" naznačuje jiný rytmus
+# a bez čitelného vlastního webu se celoročnost tvrdit nedá.
+overeniProvoz:
+  source: >-
+    Kontaktní stránka vlastního webu (anglická verze, čteno 9. 8. 2026)
+    uvádí provozní dny „We - Su" (středa až neděle); přesné hodiny se
+    nepodařilo načíst. Starší údaje — turistika.cz „celoroční",
+    moravskoslezskyinfo.cz „Dle telefonické domluvy" — popisují éru
+    předchozích provozovatelů před demolicí. Rozpory se nerozhodují,
+    protože prameny popisují různé éry.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+420739023055'
+  web: https://www.kolarovachata.cz/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1931
+overeniHistorie:
+  source: >-
+    ROK 1931 JE ROKEM VZNIKU KOLÁŘOVY CHATY — předchůdkyně i dnešní
+    novostavby jsou v milnících. poznejdomy.cz (čteno 9. 8. 2026): „V roce
+    1899 došlo pod Slavíčem k otevření dřevěné Hadaszczokovy útulny",
+    „která dostala jméno po zakladateli německého turistického spolku
+    Beskidenverein Johannu Hadaszczokovi". Útulna vyhořela roku 1930
+    a Jan Kolář „nedaleko ní zřídil novou chatu. K otevření nové chaty
+    došlo už v roce 1931" (poznejdomy.cz; patriotmagazin.cz shodně:
+    „Dřevěná chata vznikla v roce 1930 na místě vyhořelé útulny z roku
+    1899.", „Veřejnosti se otevřela v roce 1931.").
+    KDY KOLÁŘ K ÚTULNĚ PŘIŠEL, SE PRAMENY ROZCHÁZEJÍ: poznejdomy.cz „Ve
+    20. letech 20. století si útulnu pronajal", patriotmagazin.cz „od 1910
+    ji provozoval", turistika.cz „Před začátkem 1. světové války koupil".
+    VNITŘNÍ ROZPOR VLASTNÍHO WEBU, nezavřený: anglická stránka příběhu
+    uvádí, že chata za války zpustla a „had to be taken to pieces in 1949"
+    — to se neslučuje s devadesátiletou kontinuitou budovy, kterou popisují
+    patriotmagazin.cz i polar.cz při demolici 2021 („Po 90 letech byla
+    stržena"). Nerozhodnuto; nejspíš se věta týká části stavby nebo je to
+    chyba překladu, ale doloženo to není.
+    Restituce: „Thanks to restitution in 1989, the descendants of Jan
+    Kolář regained the building." (vlastní web), znovuotevření 1991; od
+    1991 chatu vedli manželé Martynkovi (patriotmagazin.cz). Prodej novým
+    majitelům 2019; DEMOLICE PŮVODNÍ CHATY ZAČALA 1. ZÁŘÍ 2021 kvůli stavu
+    dřevěných konstrukcí — blesk.cz: „Původní stavbu totiž doslova sežrala
+    dřevomorka." Vedle už stála nová budova (2019) a majitel Michal Cháňa
+    stavěl repliku (blesk.cz 2023; patriotmagazin.cz kolísá mezi „Michal"
+    a „Martin" — rozpor pramene).
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1899
+    udalost: >-
+      Pod Slavíčem se otevřela dřevěná Hadaszczokova útulna, pojmenovaná po
+      zakladateli německého turistického spolku Beskidenverein Johannu
+      Hadaszczokovi.
+    zdroj: >-
+      poznejdomy.cz (čteno 9. 8. 2026).
+  - rok: 1930
+    udalost: >-
+      Útulna vyhořela; nájemce Jan Kolář nedaleko ní postavil novou chatu.
+    zdroj: >-
+      poznejdomy.cz (čteno 9. 8. 2026) — „po jejím vyhoření v roce 1930
+      nedaleko ní zřídil novou chatu"; patriotmagazin.cz.
+  - rok: 1931
+    udalost: >-
+      Kolářova chata se otevřela veřejnosti a stala se podle pramene jednou
+      z nejnavštěvovanějších v celých Beskydech; ve čtyřicátých letech sem
+      často chodil Petr Bezruč.
+    zdroj: >-
+      poznejdomy.cz (čteno 9. 8. 2026) — „se stala jednou
+      z nejnavštěvovanějších v celých Beskydách"; patriotmagazin.cz
+      k Bezručovi, turistika.cz k jeho podpisu v knize návštěv.
+  - rok: 1989
+    udalost: >-
+      Chatu v restituci získali zpět potomci Jana Koláře, opravili ji
+      a roku 1991 znovu otevřeli veřejnosti; provozu se ujali manželé
+      Martynkovi.
+    zdroj: >-
+      patriotmagazin.cz (čteno 9. 8. 2026); vlastní web — „Thanks to
+      restitution in 1989, the descendants of Jan Kolář regained the
+      building."
+  - rok: 2021
+    udalost: >-
+      Historická chata z roku 1931 byla od 1. září zdemolována — dřevěné
+      konstrukce zničila dřevomorka. Vedle už od roku 2019 stála nová
+      budova nových majitelů a na místě staré chaty vyrostla replika.
+    zdroj: >-
+      patriotmagazin.cz a polar.cz (čteno 9. 8. 2026) — „Po 90 letech byla
+      stržena, když se její technický stav vyhrotil natolik, že už ji
+      nebylo možné zachránit."; blesk.cz — „Původní stavbu totiž doslova
+      sežrala dřevomorka."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Ve čtyřicátých letech byl častým hostem chaty básník Petr Bezruč —
+      dokládal to i jeho podpis v knize návštěv.
+    kategorie: jine
+    zdroj: >-
+      patriotmagazin.cz (čteno 9. 8. 2026) — „Ve 40. letech 20. století byl
+      jejím častým návštěvníkem slezský básník Petr Bezruč."; turistika.cz
+      k podpisu.
+  - text: >-
+      Jméno nese chata po nájemci a staviteli Janu Kolářovi; předchůdkyně
+      se jmenovala po Johannu Hadaszczokovi, zakladateli Beskidenvereinu —
+      dvě éry beskydského turismu v jednom místopisu.
+    kategorie: stari
+    zdroj: >-
+      poznejdomy.cz a blesk.cz (čteno 9. 8. 2026).
+  - text: >-
+      Stavbu repliky po demolici provázel spor o dodatečné stavební
+      povolení.
+    kategorie: jine
+    zdroj: >-
+      blesk.cz, 17. 6. 2023 (čteno 9. 8. 2026) — „Pokud by nezískal
+      dodatečné stavební povolení, může být opravdu nová chata odstraněná"
+      (výrok úřadu dle článku).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata na hřebeni Slavíče s rodokmenem od Hadaszczokovy útulny z roku 1899.
+  Kolářova chata z roku 1931 patřila podle pramenů k nejnavštěvovanějším
+  v Beskydech a chodil sem Petr Bezruč; roku 2021 ji zničila dřevomorka
+  a dnes tu pod týmž jménem slouží novostavby.
+text:
+  - >-
+    Kolářova chata stojí v 915 metrech na odlesněném místě hlavního hřebene
+    Těšínských Beskyd, na rozcestí několika značek nad Morávkou. Tenhle
+    profil je potřeba začít po pravdě: historická budova z roku 1931 už
+    nestojí — v září 2021 ji majitelé nechali strhnout, protože dřevěné
+    konstrukce zničila dřevomorka. Jméno, místo i provoz ale pokračují
+    v nových budovách, a tak pokračuje i tahle stránka.
+  - >-
+    Rodokmen místa začíná roku 1899, kdy se pod Slavíčem otevřela dřevěná
+    Hadaszczokova útulna německého spolku Beskidenverein, pojmenovaná po
+    jeho zakladateli. Kdy k ní přišel Jan Kolář, se prameny neshodnou —
+    před první válkou, od roku 1910, nebo ve dvacátých letech — jisté je,
+    že po požáru útulny roku 1930 postavil nedaleko vlastní chatu
+    a roku 1931 ji otevřel. Stala se podle pramene jednou
+    z nejnavštěvovanějších v celých Beskydech a ve čtyřicátých letech sem
+    často chodil Petr Bezruč; jeho podpis nesla kniha návštěv.
+  - >-
+    V restituci roku 1989 chatu získali zpět Kolářovi potomci a od roku
+    1991 ji vedli manželé Martynkovi. Roku 2019 ji koupili noví majitelé,
+    postavili vedle novou budovu — a stará chata šla po devadesáti letech
+    k zemi. Na jejím místě vyrostla replika, jejíž stavbu provázel spor
+    o dodatečné povolení.
+  - >-
+    Dnes se spí ve dvou budovách: nová chata má sedm pokojů s vlastní
+    koupelnou, terasou a televizí, druhá budova pět pokojů od dvoulůžkového
+    po desetilůžkový se společným zázemím. Ceny jsou 640, respektive 410
+    korun za dospělého; celkový počet lůžek web neuvádí, a tak ho neuvádíme
+    ani my. Otevřeno je od středy do neděle; přesné hodiny ani režim
+    restaurace se nám z webu nepodařilo načíst — starší údaj „celoroční
+    provoz" patřil zdemolované chatě.
+  - >-
+    Chodí se sem po žluté a červené z Horní Lomné, po zelené z Hrachova
+    a po modré z Morávky. Údaje nesou vlastní web chaty, poznejdomy.cz,
+    patriotmagazin.cz, polar.cz, blesk.cz, treking.cz a turistika.cz;
+    polohu OpenStreetMap. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty (EN) — příběh chaty, restituce 1989, znovuotevření
+      1991, dnešní skladba pokojů obou budov, ceny, provozní dny st–ne,
+      telefon (načteno 9. 8. 2026)
+    url: https://www.kolarovachata.cz/en/the-story-of-the-kolarova-chata/
+  - popis: >-
+      poznejdomy.cz — Hadaszczokova útulna 1899, požár 1930, otevření 1931,
+      „jednou z nejnavštěvovanějších", prodej 2019 a demolice 2021
+      (načteno 9. 8. 2026)
+    url: https://poznejdomy.cz/domy/detail/692-kolarova-chata-slavic
+  - popis: >-
+      patriotmagazin.cz — demolice od 1. 9. 2021, Bezruč, Martynkovi od
+      1991, prodej 2019 (načteno 9. 8. 2026)
+    url: https://www.patriotmagazin.cz/mela-90-let-a-chodil-tam-i-bezruc-kolarova-chata-na-slavici-sla-k-zemi
+  - popis: >-
+      polar.cz, 6. 9. 2021 — „Po 90 letech byla stržena…", plán repliky
+      (načteno 9. 8. 2026)
+    url: https://polar.cz/zpravy/moravskoslezsky-kraj/cely-ms-kraj/11000027333/historicka-kolarova-chata-pod-slavicem-uz-neni-nahradit-ji-ma-replika
+  - popis: >-
+      blesk.cz, 17. 6. 2023 — dřevomorka, majitel Michal Cháňa, spor
+      o dodatečné povolení repliky (načteno 9. 8. 2026)
+    url: https://www.blesk.cz/clanek/regiony-ostrava/746096/kolarovu-chatu-na-slavici-sezrala-drevomorka-stavi-novou-ale-bez-povoleni.html
+  - popis: >-
+      treking.cz — výška 915 m, kapacita 43 lůžek (zdemolovaná budova),
+      přístupy z Horní Lomné, Hrachova a Morávky (načteno 9. 8. 2026)
+    url: https://www.treking.cz/chaty/kolarova-chata-slavic.htm
+  - popis: >-
+      turistika.cz — 915 m, koupě „dřevjanky" před první válkou (odchylná
+      verze), celoroční provoz éry Martynkových, Bezručův podpis
+      (načteno 9. 8. 2026)
+    url: https://www.turistika.cz/mista/turisticka-chata-slavic/detail
+  - popis: >-
+      OpenStreetMap (GPS, tourism=hotel; ODbL)
+    url: https://www.openstreetmap.org/node/2399804161
+interniPoznamky: >-
+  Povýšeno z data/kandidati/beskydy/kolarova-chata-slavic.yaml (9. 8. 2026).
+
+  KAPACITA ZŮSTALA NEVYPLNĚNÁ ZÁMĚRNĚ. První verze profilu se pokusila
+  lůžka sečíst ze skladby pokojů a součet nevycházel jednoznačně (web
+  nerozlišuje pevná lůžka od přistýlek a desetilůžkový pokoj je „ve dvou
+  místnostech") — aritmetika redakce není údaj pramene, a tak číslo
+  v datech není a čeká na telefonát DATA-04.
+
+  VNITŘNÍ ROZPOR VLASTNÍHO WEBU („taken to pieces in 1949") proti
+  devadesátileté kontinuitě (patriot, polar) je zapsaný v overeniHistorie
+  a nerozhodnutý — nejspíš chyba anglického překladu příběhu, ale doklad
+  chybí.
+
+  ROZPORY: výška (915 × 908 z titulku); kdy Kolář objekt získal (před 1914
+  × od 1910 × 20. léta); křestní jméno majitele (Michal × Martin Cháňa
+  v témže zdroji); kontakty starší éry (volny.cz, Martynková) × dnešní
+  telefon.
+
+  NEDOLOŽENO: hodiny provozu; režim restaurace pro kolemjdoucí dnes;
+  e-mail. Česká Wikipedie i archiv byly nedostupné.
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.
