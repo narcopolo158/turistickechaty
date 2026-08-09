@@ -1,0 +1,1050 @@
+{
+  "oblast": "beskydy",
+  "zdroj": "OpenStreetMap (way[\"aerialway\"]) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); přebráno z exportu data/lanovky/_export-beskydy.json (DATA-32b)",
+  "stavOsm": "2026-05-06T03:25:00Z",
+  "zdrojVysek": "Mapy.com Elevation API (výškový model, jen koncové body drah pro pěší) — verified: false",
+  "poznamka": "Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). Vleky a dětské pásy (293 v témž exportu) přehled nevede. Převýšení je z výškového modelu, ne z měření — zaokrouhleno na desítky metrů; délka je půdorysná z geometrie OSM. Vzdálenost k chatám je vzdušná čára.",
+  "vygenerovano": "scripts/data32-lanovky.ts",
+  "pocet": 51,
+  "vleku": 293,
+  "lanovky": [
+    {
+      "id": "lanovka-na-javorovy-vrch",
+      "nazev": "Lanovka na Javorový vrch",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1233,
+      "prevyseniM": 420,
+      "dolni": {
+        "lat": 49.6396446,
+        "lng": 18.6404753,
+        "vyska": 457
+      },
+      "horni": {
+        "lat": 49.6290295,
+        "lng": 18.6355036,
+        "vyska": 879
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-javorovy-vrch",
+          "nazev": "Turistická chata Javorový vrch",
+          "vzdalenostM": 595
+        }
+      ]
+    },
+    {
+      "id": "tsf-4-alpha-dedovka",
+      "nazev": "TSF 4 ALPHA Dedovka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1158,
+      "prevyseniM": 290,
+      "dolni": {
+        "lat": 49.4151301,
+        "lng": 18.9205213,
+        "vyska": 643
+      },
+      "horni": {
+        "lat": 49.4081926,
+        "lng": 18.9320963,
+        "vyska": 929
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-marguska",
+          "nazev": "Chata Marguška",
+          "vzdalenostM": 1137
+        }
+      ]
+    },
+    {
+      "id": "severka",
+      "nazev": "Severka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1009,
+      "prevyseniM": 240,
+      "dolni": {
+        "lat": 49.5236496,
+        "lng": 18.7079864,
+        "vyska": 711
+      },
+      "horni": {
+        "lat": 49.5146184,
+        "lng": 18.7093921,
+        "vyska": 954
+      },
+      "useku": 1,
+      "uHorniStanice": [
+        {
+          "slug": "chata-severka",
+          "nazev": "Turistická chata Severka",
+          "vzdalenostM": 20
+        }
+      ]
+    },
+    {
+      "id": "bezejmenna-49.7609-19.0019",
+      "nazev": null,
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1751,
+      "prevyseniM": 450,
+      "dolni": {
+        "lat": 49.7753989,
+        "lng": 19.0104658,
+        "vyska": 504
+      },
+      "horni": {
+        "lat": 49.7608674,
+        "lng": 19.0019106,
+        "vyska": 951
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "b5",
+      "nazev": "B5",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1682,
+      "prevyseniM": 210,
+      "dolni": {
+        "lat": 49.6831176,
+        "lng": 18.9976625,
+        "vyska": 1000
+      },
+      "horni": {
+        "lat": 49.6787775,
+        "lng": 19.019571,
+        "vyska": 1205
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "b1",
+      "nazev": "B1",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1594,
+      "prevyseniM": 350,
+      "dolni": {
+        "lat": 49.6834639,
+        "lng": 18.9749854,
+        "vyska": 649
+      },
+      "horni": {
+        "lat": 49.6829496,
+        "lng": 18.9964633,
+        "vyska": 1000
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "telemix-6-8-laliky",
+      "nazev": "Telemix 6/8 Lalíky",
+      "typ": "mixed_lift",
+      "typNazev": "kombinovaná (kabinky i sedačky)",
+      "delkaM": 1589,
+      "prevyseniM": 410,
+      "dolni": {
+        "lat": 49.425551,
+        "lng": 18.9410316,
+        "vyska": 637
+      },
+      "horni": {
+        "lat": 49.4119245,
+        "lng": 18.9476268,
+        "vyska": 1044
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "raztoka-pustevny",
+      "nazev": "Ráztoka - Pustevny",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1588,
+      "prevyseniM": 400,
+      "dolni": {
+        "lat": 49.5001555,
+        "lng": 18.2492068,
+        "vyska": 621
+      },
+      "horni": {
+        "lat": 49.4900863,
+        "lng": 18.2648002,
+        "vyska": 1021
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kolej-linowa-czantoria",
+      "nazev": "Kolej linowa \"Czantoria\"",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1560,
+      "prevyseniM": 460,
+      "dolni": {
+        "lat": 49.6962589,
+        "lng": 18.827328,
+        "vyska": 389
+      },
+      "horni": {
+        "lat": 49.6835091,
+        "lng": 18.8198928,
+        "vyska": 850
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "b3",
+      "nazev": "B3",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1543,
+      "prevyseniM": 410,
+      "dolni": {
+        "lat": 49.7072564,
+        "lng": 19.0133559,
+        "vyska": 537
+      },
+      "horni": {
+        "lat": 49.6952183,
+        "lng": 19.0230557,
+        "vyska": 943
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "polana-strugi-hala-szczawiny",
+      "nazev": "Polana Strugi-Hala Szczawiny",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1534,
+      "prevyseniM": 270,
+      "dolni": {
+        "lat": 49.5550695,
+        "lng": 19.3444895,
+        "vyska": 774
+      },
+      "horni": {
+        "lat": 49.5452148,
+        "lng": 19.329616,
+        "vyska": 1041
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "a1",
+      "nazev": "A1",
+      "typ": "gondola",
+      "typNazev": "kabinková",
+      "delkaM": 1461,
+      "prevyseniM": 410,
+      "dolni": {
+        "lat": 49.6961882,
+        "lng": 18.9917044,
+        "vyska": 589
+      },
+      "horni": {
+        "lat": 49.6839837,
+        "lng": 18.9973356,
+        "vyska": 1002
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "jontek-buczynka",
+      "nazev": "Jontek-Buczynka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1378,
+      "prevyseniM": 310,
+      "dolni": {
+        "lat": 49.5575121,
+        "lng": 19.3437116,
+        "vyska": 788
+      },
+      "horni": {
+        "lat": 49.5532684,
+        "lng": 19.3259604,
+        "vyska": 1094
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "b2",
+      "nazev": "B2",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1357,
+      "prevyseniM": 340,
+      "dolni": {
+        "lat": 49.6832555,
+        "lng": 18.9748281,
+        "vyska": 650
+      },
+      "horni": {
+        "lat": 49.6713041,
+        "lng": 18.9743638,
+        "vyska": 985
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "mosorny-gron",
+      "nazev": "Mosorny Groń",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1263,
+      "prevyseniM": 330,
+      "dolni": {
+        "lat": 49.6134375,
+        "lng": 19.5531972,
+        "vyska": 713
+      },
+      "horni": {
+        "lat": 49.6223594,
+        "lng": 19.5633732,
+        "vyska": 1043
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "b4",
+      "nazev": "B4",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1132,
+      "prevyseniM": 300,
+      "dolni": {
+        "lat": 49.6944555,
+        "lng": 19.0235495,
+        "vyska": 948
+      },
+      "horni": {
+        "lat": 49.6857155,
+        "lng": 19.0305888,
+        "vyska": 1243
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "b6",
+      "nazev": "B6",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 1132,
+      "prevyseniM": 360,
+      "dolni": {
+        "lat": 49.6956211,
+        "lng": 19.0274857,
+        "vyska": 886
+      },
+      "horni": {
+        "lat": 49.6857033,
+        "lng": 19.0310412,
+        "vyska": 1243
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "meander-express",
+      "nazev": "Meander Express",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 996,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 49.301012,
+        "lng": 19.7490723,
+        "vyska": 785
+      },
+      "horni": {
+        "lat": 49.3066096,
+        "lng": 19.7593919,
+        "vyska": 1013
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "bezejmenna-49.3784-19.1729",
+      "nazev": null,
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 967,
+      "prevyseniM": 140,
+      "dolni": {
+        "lat": 49.3858417,
+        "lng": 19.1797781,
+        "vyska": 791
+      },
+      "horni": {
+        "lat": 49.3783793,
+        "lng": 19.1729059,
+        "vyska": 933
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "vrchdolinky",
+      "nazev": "Vrchdolinky",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 935,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 49.3417732,
+        "lng": 19.737671,
+        "vyska": 724
+      },
+      "horni": {
+        "lat": 49.3400583,
+        "lng": 19.7250309,
+        "vyska": 951
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "wyciag-krzese-kowy-nowa-osada",
+      "nazev": "Wyciąg krzesełkowy \"Nowa Osada\"",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 868,
+      "prevyseniM": 190,
+      "dolni": {
+        "lat": 49.6367044,
+        "lng": 18.8898077,
+        "vyska": 492
+      },
+      "horni": {
+        "lat": 49.6415078,
+        "lng": 18.8993116,
+        "vyska": 678
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "wyciag-krzese-kowy-cienkow",
+      "nazev": "Wyciąg krzesełkowy \"Cieńków\"",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 866,
+      "prevyseniM": 200,
+      "dolni": {
+        "lat": 49.6318374,
+        "lng": 18.9306017,
+        "vyska": 524
+      },
+      "horni": {
+        "lat": 49.6240779,
+        "lng": 18.9315951,
+        "vyska": 719
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "palenica",
+      "nazev": "Palenica",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 853,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 49.7035052,
+        "lng": 18.8456535,
+        "vyska": 427
+      },
+      "horni": {
+        "lat": 49.7008987,
+        "lng": 18.8568112,
+        "vyska": 658
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "lanovka-zbojnik-ii",
+      "nazev": "Lanovka Zbojník II.",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 809,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 49.4422594,
+        "lng": 18.4580786,
+        "vyska": 540
+      },
+      "horni": {
+        "lat": 49.4360302,
+        "lng": 18.4638571,
+        "vyska": 767
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "karolinka",
+      "nazev": "Karolinka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 795,
+      "prevyseniM": 210,
+      "dolni": {
+        "lat": 49.3501527,
+        "lng": 18.2535885,
+        "vyska": 492
+      },
+      "horni": {
+        "lat": 49.3434626,
+        "lng": 18.2555404,
+        "vyska": 698
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kohutik",
+      "nazev": "Kohútik",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 784,
+      "prevyseniM": 150,
+      "dolni": {
+        "lat": 49.3840117,
+        "lng": 19.1858435,
+        "vyska": 792
+      },
+      "horni": {
+        "lat": 49.3789379,
+        "lng": 19.192468,
+        "vyska": 945
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "ma-y-rachowiec",
+      "nazev": "Mały Rachowiec",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 774,
+      "prevyseniM": 150,
+      "dolni": {
+        "lat": 49.5072317,
+        "lng": 18.9848329,
+        "vyska": 688
+      },
+      "horni": {
+        "lat": 49.5068143,
+        "lng": 18.9953287,
+        "vyska": 840
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "lanovka-krusetnica",
+      "nazev": "lanovka Krušetnica",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 771,
+      "prevyseniM": 160,
+      "dolni": {
+        "lat": 49.3754035,
+        "lng": 19.3445544,
+        "vyska": 661
+      },
+      "horni": {
+        "lat": 49.3694133,
+        "lng": 19.3499191,
+        "vyska": 820
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kolej-linowa-stok",
+      "nazev": "Kolej linowa \"Stok\"",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 769,
+      "prevyseniM": 190,
+      "dolni": {
+        "lat": 49.6600501,
+        "lng": 18.8245742,
+        "vyska": 477
+      },
+      "horni": {
+        "lat": 49.6643235,
+        "lng": 18.8161715,
+        "vyska": 670
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "wyciag-krzese-kowy",
+      "nazev": "wyciąg krzesełkowy",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 768,
+      "prevyseniM": 200,
+      "dolni": {
+        "lat": 49.6848291,
+        "lng": 18.9112615,
+        "vyska": 500
+      },
+      "horni": {
+        "lat": 49.6854553,
+        "lng": 18.9008869,
+        "vyska": 696
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "zagron",
+      "nazev": "Zagroń",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 757,
+      "prevyseniM": 140,
+      "dolni": {
+        "lat": 49.5740682,
+        "lng": 18.9056778,
+        "vyska": 545
+      },
+      "horni": {
+        "lat": 49.5676347,
+        "lng": 18.9047203,
+        "vyska": 689
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "bezejmenna-49.6851-18.7833",
+      "nazev": null,
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 754,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 49.6910702,
+        "lng": 18.7879875,
+        "vyska": 608
+      },
+      "horni": {
+        "lat": 49.6850666,
+        "lng": 18.7832755,
+        "vyska": 840
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "z-oty-gron",
+      "nazev": "Złoty Groń",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 725,
+      "prevyseniM": 150,
+      "dolni": {
+        "lat": 49.5721284,
+        "lng": 18.9174279,
+        "vyska": 556
+      },
+      "horni": {
+        "lat": 49.5669163,
+        "lng": 18.9113978,
+        "vyska": 708
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kolej-linowa-skolnity",
+      "nazev": "Kolej linowa Skolnity",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 718,
+      "prevyseniM": 200,
+      "dolni": {
+        "lat": 49.6529472,
+        "lng": 18.8578675,
+        "vyska": 464
+      },
+      "horni": {
+        "lat": 49.6491082,
+        "lng": 18.8502133,
+        "vyska": 663
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "tsf-4-unifix-marguska",
+      "nazev": "TSF 4 UNIFIX Marguška",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 711,
+      "prevyseniM": 250,
+      "dolni": {
+        "lat": 49.4172725,
+        "lng": 18.939355,
+        "vyska": 757
+      },
+      "horni": {
+        "lat": 49.4116621,
+        "lng": 18.9440689,
+        "vyska": 1003
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kl-beskid",
+      "nazev": "KL Beskid",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 703,
+      "prevyseniM": 240,
+      "dolni": {
+        "lat": 49.7211324,
+        "lng": 19.0033739,
+        "vyska": 595
+      },
+      "horni": {
+        "lat": 49.716519,
+        "lng": 18.9974137,
+        "vyska": 834
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kl-stozek",
+      "nazev": "KL Stożek",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 699,
+      "prevyseniM": 230,
+      "dolni": {
+        "lat": 49.6038715,
+        "lng": 18.8342558,
+        "vyska": 704
+      },
+      "horni": {
+        "lat": 49.6022067,
+        "lng": 18.824906,
+        "vyska": 932
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "kamienna-solisko",
+      "nazev": "Kamienna-Solisko",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 647,
+      "prevyseniM": 150,
+      "dolni": {
+        "lat": 49.5595099,
+        "lng": 19.3473469,
+        "vyska": 711
+      },
+      "horni": {
+        "lat": 49.5567447,
+        "lng": 19.3394516,
+        "vyska": 861
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "baba",
+      "nazev": "Baba",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 628,
+      "prevyseniM": 150,
+      "dolni": {
+        "lat": 49.5617424,
+        "lng": 19.3461452,
+        "vyska": 695
+      },
+      "horni": {
+        "lat": 49.5575417,
+        "lng": 19.3403201,
+        "vyska": 840
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "armada",
+      "nazev": "Armáda",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 616,
+      "prevyseniM": 180,
+      "dolni": {
+        "lat": 49.5446578,
+        "lng": 18.6871201,
+        "vyska": 487
+      },
+      "horni": {
+        "lat": 49.539818,
+        "lng": 18.6841746,
+        "vyska": 667
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "velka-kohutka",
+      "nazev": "Velká Kohútka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 608,
+      "prevyseniM": 200,
+      "dolni": {
+        "lat": 49.3005207,
+        "lng": 18.2322194,
+        "vyska": 704
+      },
+      "horni": {
+        "lat": 49.2951858,
+        "lng": 18.2303729,
+        "vyska": 906
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "debowiec",
+      "nazev": "Dębowiec",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 601,
+      "prevyseniM": 100,
+      "dolni": {
+        "lat": 49.7862735,
+        "lng": 19.0161999,
+        "vyska": 419
+      },
+      "horni": {
+        "lat": 49.7809132,
+        "lng": 19.0150859,
+        "vyska": 523
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "h0-kolej-krzese-kowa-soszow",
+      "nazev": "H0 Kolej krzesełkowa \"Soszów\"",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 590,
+      "prevyseniM": 190,
+      "dolni": {
+        "lat": 49.6448174,
+        "lng": 18.817804,
+        "vyska": 598
+      },
+      "horni": {
+        "lat": 49.64062,
+        "lng": 18.8137798,
+        "vyska": 784
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "czarny-gron-express",
+      "nazev": "Czarny Groń Express",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 584,
+      "prevyseniM": 110,
+      "dolni": {
+        "lat": 49.7746071,
+        "lng": 19.3916706,
+        "vyska": 693
+      },
+      "horni": {
+        "lat": 49.7697503,
+        "lng": 19.3893865,
+        "vyska": 801
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "pracica",
+      "nazev": "Pracica",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 558,
+      "prevyseniM": 150,
+      "dolni": {
+        "lat": 49.7747897,
+        "lng": 19.3960282,
+        "vyska": 592
+      },
+      "horni": {
+        "lat": 49.7718806,
+        "lng": 19.3903883,
+        "vyska": 746
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "fojtsky-grun",
+      "nazev": "Fojtský grúň",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 540,
+      "prevyseniM": 140,
+      "dolni": {
+        "lat": 49.5249486,
+        "lng": 18.7596206,
+        "vyska": 538
+      },
+      "horni": {
+        "lat": 49.5238633,
+        "lng": 18.7669151,
+        "vyska": 675
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "wyciag-krzese-kowy-klepki",
+      "nazev": "Wyciąg krzesełkowy \"Klepki\"",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 535,
+      "prevyseniM": 90,
+      "dolni": {
+        "lat": 49.6322267,
+        "lng": 18.9261274,
+        "vyska": 513
+      },
+      "horni": {
+        "lat": 49.635949,
+        "lng": 18.9220107,
+        "vyska": 600
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "bezejmenna-49.4933-18.4651",
+      "nazev": null,
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 521,
+      "prevyseniM": 140,
+      "dolni": {
+        "lat": 49.4935774,
+        "lng": 18.4717463,
+        "vyska": 700
+      },
+      "horni": {
+        "lat": 49.4933062,
+        "lng": 18.465126,
+        "vyska": 840
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "raliska",
+      "nazev": "Rališka",
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 504,
+      "prevyseniM": 120,
+      "dolni": {
+        "lat": 49.4158495,
+        "lng": 18.3120516,
+        "vyska": 608
+      },
+      "horni": {
+        "lat": 49.4117339,
+        "lng": 18.3102089,
+        "vyska": 726
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "bezejmenna-49.5395-18.1964",
+      "nazev": null,
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 254,
+      "prevyseniM": 70,
+      "dolni": {
+        "lat": 49.5401856,
+        "lng": 18.1991918,
+        "vyska": 418
+      },
+      "horni": {
+        "lat": 49.5394794,
+        "lng": 18.1964437,
+        "vyska": 492
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    },
+    {
+      "id": "bezejmenna-49.7148-19.0379",
+      "nazev": null,
+      "typ": "chair_lift",
+      "typNazev": "sedačková",
+      "delkaM": 234,
+      "prevyseniM": 110,
+      "dolni": {
+        "lat": 49.7168729,
+        "lng": 19.0372713,
+        "vyska": 494
+      },
+      "horni": {
+        "lat": 49.7148065,
+        "lng": 19.0379199,
+        "vyska": 600
+      },
+      "useku": 1,
+      "uHorniStanice": []
+    }
+  ]
+}
