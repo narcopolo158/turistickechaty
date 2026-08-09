@@ -26,15 +26,13 @@ Odklikané máš Beskydy, Jeseníky, Vysoké Tatry a Malou Fatru (8. 8. 2026;
 dohromady přes 650 kandidátů) — díky, a hlavně díky za ten opakovaný běh
 Beskyd, protože ten dorovnal chybějícího Libušína.
 
-Zbývá deset oblastí a osm z nich nemá zatím ani jednoho kandidáta (Nízké
-Tatry, Krušné hory, Orlické hory, Veľká Fatra, Slovenský raj — a k tomu
+Zbývá devět oblastí a sedm z nich nemá zatím ani jednoho kandidáta (Krušné hory, Orlické hory, Veľká Fatra, Slovenský raj — a k tomu
 Javorníky, Oravská Magura a Západné Tatry, kde kandidáti JSOU, ale jen
 ti z podhůří, protože přišli omylem s beskydským exportem; vlastní běh
 s vlastním oknem přinese hřebeny, které beskydské okno vůbec nepokrývalo).
 
 | workflow | políčko `oblast` | co to udělá |
 |---|---|---|
-| **DATA-01: OSM export chat (dle oblasti)** | `nizke-tatry` | Nízké Tatry (SK) — 80 km hřebene od Donovalů po Kráľovu hoľu; katalog v okně vede 14 objektů a mezi nimi **čtyři turistické útulny**, což je pro průvodce skupina, jaká se dosud nikde neopakovala |
 | **DATA-01: OSM export chat (dle oblasti)** | `javorniky-vsetinske-vrchy` | stáhne kandidáty Javorníků a Vsetínských vrchů (CZ, SK) — oblast vznikla 8. 8. 2026 tvým rozhodnutím, že nepatří pod Beskydy; 36 kandidátů už tam je z beskydského exportu |
 | **DATA-01: OSM export chat (dle oblasti)** | `oravska-magura` | Oravská Magura (SK) — 6 kandidátů v repu; běh přinese podcelky Paráč a Budín |
 | **DATA-01: OSM export chat (dle oblasti)** | `zapadne-tatry` | Západné Tatry / Roháče (SK, PL) — 13 kandidátů v repu, všichni z podhůří u Zuberce; běh přinese hřebenové chaty a polská schroniska |

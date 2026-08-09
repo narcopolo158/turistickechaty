@@ -29,6 +29,62 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-09 (dvanáctý blok, dovětek večera) — Radegast, Slavíč a první klik Nízkých Tater
+
+Pokračování osmihodinového pověření z jedenáctého bloku.
+
+**Hotovo:**
+
+**DVA VLAJKOVÉ PROFILY BESKYD, korpus 179.** **Horský hotel Radegast**
+(katalogově „Chata na Radhošti", 1121 m, celodřevěná stavba 1933–1935) —
+první objekt korpusu, kde rešerši zastavila ochrana webu (BotStopper),
+takže chybí ceník a hodiny; stavitel František Holčák stojí na jediném
+prameni a profil to přiznává. **Kolářova chata Slavíč** — rodokmen od
+Hadaszczokovy útulny Beskidenvereinu (1899) přes Kolářovu chatu (1931,
+Bezruč ve 40. letech, restituce 1989) po demolici 2021 (dřevomorka)
+a dnešní novostavby; próza demolici říká v první větě. Kapacita zůstala
+NEVYPLNĚNÁ záměrně: web nerozlišuje pevná lůžka od přistýlek a součet by
+byl aritmetika redakce, ne údaj pramene — první verze profilu se o součet
+pokusila, rozsypal se, a poučení zní: když číslo neunese jednu větu
+zdůvodnění, nemá v datech co dělat.
+
+**MICHAL ZAČAL KLIKAT: DATA-01 pro Nízké Tatry přistálo (+229 kandidátů)
+— a rozhodující kontrola zčervenala přesně tak, jak KLIKY-PRO-MICHALA
+slibují.** Patnáct nových jmenných kolizí rozhodnuto měřením z GPS:
+pátá Barborka (Útulňa Barborka — jediná útulňa v pětici, typ je sám
+rozlišovač), Helena na 310 km (druhá nejvzdálenější dvojice po Veronice),
+Chopok a Ďumbier jako jména hor přenesená na penziony v dolinách,
+a **Kosodrevina na 151 m** — nejspíš dvě budovy jednoho areálu
+u mezistanice lanovky na Chopok; jestli jeden provoz (vzor Morskie Oko),
+nebo dva profily (vzor Popradské pleso), rozhodne triáž doklady. Plus past
+oken: **Horská chata Smrekovica geograficky patří Veľké Fatře** (stojí nad
+Ružomberkom) a po kliku pro velka-fatra bude potřeba rozhodnout
+příslušnost.
+
+**REGISTR JMENOVCŮ DOSTAL ÚKLIDOVÉ PRAVIDLO:** jádro „barborka" v něm
+leželo ČTYŘIKRÁT (generace záznamu se vršily místo přepisování — týž
+nález jako ranní „panorama"). Konsolidováno: jeden záznam na jádro,
+starší generace se mažou, mrtvé slugy se přepisují na živé (alpina,
+lucka). Stojí za zvážení, jestli to kontrola nemá hlídat sama
+(duplicitní jádro = vada registru).
+
+**Commity:** `0b89d88`→`13721a1` (Švajčiarsky dom, fotky, FOTO-04,
+Beskydy trio + tatranská identifikace, triáž Beskyd, deník, Radegast +
+Slavíč, kolize Nízkých Tater). Mezitím na main přistály tři běhy
+z Actions (razítka, známky, DATA-01 nizke-tatry) — všechny rebase čisté
+a kontroly zelené i po nich.
+
+**Příště:** Nízké Tatry mají 229 kandidátů a katalog v okně vede 14
+objektů včetně ČTYŘ ÚTULEN (Ďurková, Štefánika?, Barborka…) — triáž
+vzorem VT-03 a první profily; Kosodrevina a Smrekovica jsou první
+rozhodnutí. Beskydy: pokračovat povyšováním z jádra fronty (54 alpine_hut
+po dnešku). A dva kliky pořád čekají: FOTO-04 (hero Nízkých Tater)
+a druhý běh DATA-02 (fotky pro Šumavu, Beskydy, Tatry).
+
+**Otázky pro Michala:** beze změny proti jedenáctému bloku (1–7, 9);
+k tomu drobnost — **klik DATA-01 `nizke-tatry` jsem z KLIKY-PRO-MICHALA
+vymazal jako hotový**, díky!
+
 ## 2026-08-09 (jedenáctý blok) — fotky napříč katalogem, tři zavřené mezery Beskyd a dvě fronty na nule
 
 Michalův pokyn: *„vyber hero z wikimedia commons, svajciarsky dom povys
