@@ -1,0 +1,389 @@
+# Zamkovského chata — osmý publikovaný profil oblasti Vysoké Tatry
+# (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Zamkovského chata
+slug: zamkovskeho-chata
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1739923
+lng: 20.2197165
+vyska: 1475
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/33869432 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1475 m JE V PRAMENECH BEZ JEDINÉHO ROZPORU, což je v tomhle korpusu
+    vzácné: vlastní web chaty (čteno 9. 8. 2026) „vo výške 1475 m n. m.",
+    vysoketatry.com „Zamkovského chata (1475 m)", summitpost.org
+    „4839 ft / 1475 m", miribord.com i tag ele v OSM. Poloha: ústí Malé
+    Studené doliny pod Lomnickým hřebenem, na mýtině zvané Lomnická
+    záhradka; chata leží na Tatranské magistrále.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 24
+overeniNocleh:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026) uvádí 24 lůžek ve třech kategoriích:
+    dvoulůžkový pokoj (patrová postel, sprcha a WC na chodbě), šestilůžkový
+    pokoj (patrové postele, balkon, vlastní WC) a turistický pokoj („väčšia
+    miestnosť s viacerými lôžkami pre núdzový nocľah"). Ceny pro období
+    1. 6. – 31. 12. 2026: 50 €, 40 €, respektive 30 € za osobu a noc,
+    polopenze 28 €, místní poplatek 3,50 €. Chata nemá wi-fi.
+    ROZPOR, přiznaný: starší prameny uvádějí 23 (tatry.sk, miribord.com),
+    25 (vysoketatry.com, tatryportal.sk) i 28 lůžek (hiking.sk).
+    Zapsané je číslo provozovatele, protože chata prošla v letech 2019–2024
+    rekonstrukcí, jejímž doloženým cílem bylo „navýšenie kapacity" (asb.sk).
+    Není to tedy rozpor pramenů o téže věci, ale rozdíl ve stáří pramene.
+    Historicky měla původní chata „6 pokojov s 26 lôžkami"
+    (nostalgicketatry.sk).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): „Zamkovského chata ponúka
+    občerstvenie celoročne, posilniť a oddýchnuť si môžete v jedálni aj na
+    terase." Nabídka: bylinkový chatařský čaj, čepované pivo, tři druhy
+    polévek, maďarský i segedínský guláš, bryndzové halušky, pirohy, pro děti
+    palačinky a parené buchty. Pro skupiny lze rezervovat stoly.
+    OBSLUHA NEUBYTOVANÝCH JE TU DOLOŽENÁ SILNĚJI NEŽ VĚTŠINOU, i když ne
+    přímou větou provozovatele. Nejpřímější je summitpost.org, podle něhož
+    denní návštěvníci jedí „in the dining room located on the basement, or on
+    the outside terrace which is very popular in the summer months".
+    Nezávisle tatrami.sk: chata „ponúka ubytovanie pre turistov, ale aj
+    občerstvenie". Nejsilnější nepřímý doklad je číselný: vysoketatry.com
+    uvádí vedle sebe „Kapacita ubytovania: 25" a „Kapacita stravovania: 40
+    (v lete 100)" — stravovací kapacita čtyřnásobně převyšuje lůžkovou, což
+    u chaty bez denních hostů nedává smysl. Odvozovat se to ale nemá,
+    telefonát to rozhodne (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    Celoroční provoz uvádí shodně vlastní web chaty („otvorená celoročne"
+    a „ponúka občerstvenie celoročne"), turisticky.sk („má celoročnú
+    prevádzku a je otvorená každý deň"), vysoketatry.com, tatryportal.sk,
+    summitpost.org i hiking.sk (vše čteno 9. 8. 2026).
+    Pěší přístup je tu kratší než u ostatních tatranských chat korpusu: web
+    píše, že se sem jde „iba pešo približne 1 hodinu turistickým chodníkom"
+    od Hrebienku, kam vede pozemní lanovka ze Starého Smokovca. Sezónní
+    uzávěry vyšších tras se jí proto netýkají tak jako Téryho nebo Zbojníckej
+    chaty. Konkrétní hodiny kuchyně neuvádí žádný pramen, a tak se
+    nezapisují.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421902266115'
+  email: zamka@zamka.sk
+  web: https://zamka.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1943
+overeniHistorie:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): „V ústí Malej Studenej doliny, pod
+    Lomnickým hrebeňom, vo výške 1475 m n. m., vyrástla v roku 1943 drevená
+    chata. Postavil ju Štefan Zamkovský s manželkou Ľudmilou."; shodně
+    tatryportal.sk a nostalgicketatry.sk.
+    ROZPOR V DATACI, přiznaný: hiking.sk, vysoketatry.com, cezhory.sk
+    a summitpost.org datují stavbu 1942–1943 — „Práce na výstavbe chaty
+    v ústí Malej Studenej doliny, na čistine zvanej Lomnická záhradka začali
+    v roku 1942" a „nová chata privítala prvých návštevníkov v roku 1943"
+    (hiking.sk). Zapsán je pozdější rok, tedy rok otevření; u letopočtu
+    založení je opatrná volba ta pozdější (viz interniPoznamky).
+    OSAMOCENÉ TVRZENÍ, nezapsané do dat: archinfo.sk (autorská zpráva
+    architekta rekonstrukce) uvádí zcela jinou verzi — „Postavená na konci
+    tridsiatych rokov podľa projektu Ladislava Foltýna, posledného architekta
+    v poslednom ročníku Bauhausu v Dessau." a technologii „two by four".
+    Žádný jiný pramen Foltýna nezmiňuje, a proto to tu není jako fakt.
+    Štefan Zamkovský: podle vlastního webu vyučený fotograf z Levoče, „v
+    rokoch 1929 až 1938 nadobudol povesť najlepšieho slovenského horolezca";
+    hiking.sk uvádí narození o Vánocích 1907 a oprávnění horského vůdce
+    I. třídy od roku 1934; nazvoslovie.tatryblog.sk datuje jeho život
+    1908–1961. Zemřel roku 1961; prameny se liší, jestli ve 53, nebo 54
+    letech.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1943
+    udalost: >-
+      Horolezec a horský vůdce Štefan Zamkovský postavil s manželkou Ľudmilou
+      na mýtině zvané Lomnická záhradka dřevěnou chatu.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „vyrástla v roku 1943 drevená
+      chata. Postavil ju Štefan Zamkovský s manželkou Ľudmilou."; hiking.sk
+      klade začátek prací do roku 1942 a otevření do roku 1943.
+  - rok: 1945
+    udalost: >-
+      Za druhé světové války poskytla chata a její okolí úkryt pronásledovaným
+      politickým uprchlíkům, partyzánům a židovským rodinám.
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — „V období 2.svetovej vojny poskytla
+      Zamkovského chata a jej okolie úkryt prenasledovaným politickým
+      utečencom, partizánom a židovským rodinám."; shodně cezhory.sk.
+  - rok: 1951
+    udalost: >-
+      Chatu znárodnili a přejmenovali na Chatu kpt. Nálepku; rodina
+      zakladatele ji musela opustit. Prameny se v roce rozcházejí — vlastní
+      web uvádí znárodnění už roku 1948.
+    zdroj: >-
+      tatryportal.sk (čteno 9. 8. 2026) — „1951 – chata bola zoštátnená
+      a premenovaná na Chatu kpt. Nálepku"; shodně nostalgicketatry.sk
+      a nazvoslovie.tatryblog.sk. Oproti tomu vlastní web chaty: „V roku 1948
+      bola chata znárodnená a manželia spolu s dcérou ju museli opustiť."
+      Podle summitpost.org bylo znárodnění 1948 a přejmenování 1951. Správu
+      převzal Slovakotour (cezhory.sk).
+  - rok: 1961
+    udalost: >-
+      Štefan Zamkovský zemřel; podle pramenů mu bylo 53 nebo 54 let.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „zomrel v roku 1961 vo veku 54
+      rokov"; hiking.sk — „v máji roku 1961 ako 54-ročný zomrel na náhlu
+      cievnu mozgovú príhodu"; cezhory.sk uvádí 53 let a místo úmrtí
+      Počúvadlo u Banské Štiavnice.
+  - rok: 1993
+    udalost: >-
+      V restituci se chata vrátila rodině Štefana Zamkovského a znovu nese
+      jeho jméno. Prameny se v roce rozcházejí — několik jich uvádí 1992
+      a návrat názvu klade až k roku 1990 nebo 1991.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Po páde komunizmu bola chata
+      v rámci reštitúcie vrátená rodine Štefana Zamkovského v roku 1993.";
+      nazvoslovie.tatryblog.sk jmenuje vnuka Stanislava Tichého. Oproti tomu
+      vysoketatry.com, nostalgicketatry.sk a summitpost.org uvádějí 1992;
+      návrat názvu klade nostalgicketatry.sk k roku 1990 a hiking.sk k roku
+      1991.
+  - rok: 2003
+    udalost: >-
+      Majitelem chaty se stala rodina Kalinčíkova; chatařkou je Jana
+      Kalinčíková, která chatu podle jiných pramenů spravuje už od roku 1996.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „V roku 2003 sa stala jej
+      majiteľom rodina Kalinčíková."; tatryportal.sk uvádí odkoupení roku
+      2004, vysoketatry.com a asb.sk správu od roku 1996.
+  - rok: 2024
+    udalost: >-
+      Chata dokončila rozsáhlou rekonstrukci s přístavbou; polovina novostavby
+      je z pórobetonu a polovina z panelů CLT, které na místo dopravil
+      vrtulník.
+    zdroj: >-
+      archinfo.sk (čteno 9. 8. 2026) — rekonstrukce 2019–2024, architekt
+      Peter Sticzay-Gromski (Grido atelier); „polovica bola postavená
+      tradičným spôsobom z pórobetónu a druhá polovica z nových CLT panelov
+      osadzovaných helikoptérou". Vlastní web datuje rekonstrukci šířeji
+      jako 2015–2025.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Chata je podle vlastního webu stoprocentně ostrovní systém bez
+      připojení k silnici i k elektrické síti: má malou vodní elektrárnu
+      o výkonu 24 kW, baterie na 60 kWh a vlastní čistírnu odpadních vod.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty, stránka o nás (čteno 9. 8. 2026) — „100% nezávislý
+      ostrovný systém"; elektrárna na Malom Studenom potoku podle tatrami.sk.
+  - text: >-
+      Zásobují ji výhradně nosiči; podle vlastního webu vynesou denně přes
+      500 kilogramů a jeden náklad váží nahoru 40 až 90 kilogramů.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Zásobovanie chát v Tatrách
+      nosičmi je svetovým unikátom."; hiking.sk — „Patrí medzi chaty, ktoré
+      zásobujú výlučne nosiči."
+  - text: >-
+      Podle hiking.sk je to jediná tatranská chata, která nese jméno svého
+      stavitele.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „Zamkovského chata je v súčasnosti
+      jediná tatranská chata, ktorá nesie meno po jej staviteľovi".
+  - text: >-
+      V zimě se u chaty tvoří ledopád, na kterém se dá trénovat lezení.
+    kategorie: jine
+    zdroj: >-
+      tatrami.sk (čteno 9. 8. 2026).
+  - text: >-
+      Štefan Zamkovský podle hiking.sk vodil turisty po horách zadarmo.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „vodil po horách ZADARMO!"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěná chata z roku 1943 v ústí Malé Studené doliny, kterou postavil
+  horolezec a horský vůdce Štefan Zamkovský s manželkou Ľudmilou. Po
+  znárodnění se čtyřicet let jmenovala Chata kpt. Nálepku, v restituci se
+  vrátila rodině a zásobují ji výhradně nosiči.
+text:
+  - >-
+    Zamkovského chata stojí v 1475 metrech v ústí Malé Studené doliny, pod
+    Lomnickým hřebenem, na mýtině zvané Lomnická záhradka. Na výšce se
+    prameny shodují do metru bez jediné odchylky — a to je v tomhle průvodci
+    vzácnost. Leží přímo na Tatranské magistrále, asi hodinu chůze od
+    Hrebienku; vlastní web to shrnuje jednou větou — dostat se sem dá „iba
+    pešo približne 1 hodinu turistickým chodníkom".
+  - >-
+    Postavil ji roku 1943 Štefan Zamkovský s manželkou Ľudmilou. Byl to
+    vyučený fotograf z Levoče, který podle vlastního webu chaty „v rokoch
+    1929 až 1938 nadobudol povesť najlepšieho slovenského horolezca"
+    a v roce 1934 získal oprávnění horského vůdce první třídy. hiking.sk
+    o něm dodává jednu větu, kterou nejde přejít: „vodil po horách ZADARMO!"
+    Podle téhož pramene je Zamkovského chata jediná tatranská chata, která
+    nese jméno svého stavitele.
+  - >-
+    Za války posloužila chata a její okolí jako úkryt pronásledovaným
+    politickým uprchlíkům, partyzánům a židovským rodinám. Pak přišlo
+    znárodnění — vlastní web ho datuje rokem 1948, tři jiné prameny rokem
+    1951 — a s ním nové jméno: Chata kpt. Nálepku, po Jánu Nálepkovi,
+    slovenském důstojníkovi a partyzánském veliteli, který padl roku 1943
+    u Ovruče. Zamkovští museli odejít; Štefan zemřel roku 1961. Návštěvníci
+    Tater ale chatě dál po svém říkali Zamok a dnešní zkratka Zamka z toho
+    zůstala.
+  - >-
+    V restituci se chata vrátila rodině — vlastní web uvádí rok 1993, jiné
+    prameny 1992 — a spolu s ní i původní jméno. Od roku 1996 ji spravuje
+    a od roku 2003, respektive 2004 vlastní rodina Kalinčíkova; chatařkou je
+    Jana Kalinčíková. V letech 2019 až 2024 prošla chata rozsáhlou
+    rekonstrukcí s přístavbou, jejíž polovinu tvoří panely CLT, které na
+    místo dopravil vrtulník.
+  - >-
+    Technicky je to pozoruhodná stavba: podle vlastního webu je to
+    stoprocentně ostrovní systém bez připojení k silnici i k elektrické síti.
+    Elektřinu dává malá vodní elektrárna na Malom Studenom potoku o výkonu
+    24 kW a baterie na 60 kWh, odpadní vodu čistí vlastní čistírna. Zásobují
+    ji výhradně nosiči — denně přes pět set kilogramů, jeden náklad váží
+    nahoru čtyřicet až devadesát kilo.
+  - >-
+    Spí se tu ve dvoulůžkových a šestilůžkových pokojích a v turistickém
+    pokoji pro nouzový nocleh, dohromady čtyřiadvacet lůžek. Wi-fi tu není.
+    Kuchyně vaří tři druhy polévek, maďarský i segedínský guláš, bryndzové
+    halušky a parené buchty a jí se v jídelně nebo na terase. Že sem může
+    přijít i ten, kdo tu nespí, prameny sice neříkají doslova, ale
+    summitpost.org to o denních návštěvnících píše výslovně a čísla to
+    podpírají: vysoketatry.com uvádí kapacitu stravování čtyřicet míst a
+    v létě sto, tedy čtyřnásobek lůžek.
+  - >-
+    Chodí se sem od Hrebienku po červené směrem na Skalnaté pleso, asi
+    hodinu; na Hrebienok jede pozemní lanovka ze Starého Smokovca nebo se dá
+    dojít pěšky za dalších čtyřicet minut. Cestou je Obrovský vodopád. Zelená
+    značka od chaty pokračuje Malou Studenou dolinou na Téryho chatu.
+  - >-
+    Údaje nese vlastní web chaty, hiking.sk, vysoketatry.com, tatryportal.sk,
+    nostalgicketatry.sk, cezhory.sk, archinfo.sk, asb.sk, summitpost.org
+    a tatrami.sk; polohu OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty, historie — stavba 1943 Štefanem a Ľudmilou
+      Zamkovskými, znárodnění 1948, Chata kpt. Nálepku, úmrtí 1961, restituce
+      1993, rodina Kalinčíkova od 2003 (načteno 9. 8. 2026)
+    url: https://zamka.sk/historia/
+  - popis: >-
+      Vlastní web chaty, ubytování — 24 lůžek, tři kategorie pokojů, ceník
+      2026, bez wi-fi, přístup pěšky asi hodinu (načteno 9. 8. 2026)
+    url: https://zamka.sk/ubytovanie/
+  - popis: >-
+      Vlastní web chaty, stravování — „ponúka občerstvenie celoročne,
+      posilniť a oddýchnuť si môžete v jedálni aj na terase", nabídka jídel
+      (načteno 9. 8. 2026)
+    url: https://zamka.sk/stravovanie/
+  - popis: >-
+      Vlastní web chaty, o nás — ostrovní systém, vodní elektrárna 24 kW,
+      baterie 60 kWh, čistírna, zásobování nosiči (načteno 9. 8. 2026)
+    url: https://zamka.sk/o-nas/
+  - popis: >-
+      hiking.sk — Štefan Zamkovský: narození 1907, horský vůdce I. třídy od
+      1934, vodil zdarma, stavba od 1942 a otevření 1943, jediná chata
+      pojmenovaná po staviteli, zásobování výhradně nosiči
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/6146/stefan_zamkovsky_a_zamkovskeho_chata_v_tatrach.html
+  - popis: >-
+      vysoketatry.com — výška 1475 m, úkryt za války, kapacita ubytování 25
+      a stravování 40 (v létě 100), časy z Hrebienku a Skalnatého plesa
+      (načteno 9. 8. 2026)
+    url: https://www.vysoketatry.com/chaty/zachata/zachata.html
+  - popis: >-
+      tatryportal.sk — znárodnění a přejmenování 1951, vodní elektrárna
+      v 70. letech, nájemce Laco Kulanga, odkoupení 2004
+      (načteno 9. 8. 2026)
+    url: https://www.tatryportal.sk/tura/zamkovskeho-chata/
+  - popis: >-
+      nostalgicketatry.sk — alpský styl, šest pokojů s 26 lůžky, kuchyně
+      chatařovy manželky, znárodnění 1951, návrat názvu 1990
+      (načteno 9. 8. 2026)
+    url: https://www.nostalgicketatry.sk/historia/zamka
+  - popis: >-
+      archinfo.sk — rekonstrukce 2019–2024, architekt Peter Sticzay-Gromski,
+      pórobeton a CLT panely dopravené vrtulníkem (načteno 9. 8. 2026)
+    url: https://www.archinfo.sk/diela/obcianska-stavba/rekonstrukcia-zamkovskeho-chaty-vysoke-tatry.html
+  - popis: >-
+      asb.sk — cílem obnovy bylo navýšení kapacity, výměna kotle na tuhé
+      palivo za peletkový, správa Jany Kalinčíkové od 1996
+      (načteno 9. 8. 2026)
+    url: https://www.asb.sk/stavebnictvo/rozsiahla-rekonstrukcia-znamej-tatranskej-chaty
+  - popis: >-
+      summitpost.org — 1475 m, znárodnění 1948 a přejmenování 1951, denní
+      návštěvníci jedí v jídelně v suterénu nebo na terase
+      (načteno 9. 8. 2026)
+    url: https://www.summitpost.org/zamkovsk-ho-chata/930993
+  - popis: >-
+      tatrami.sk — zásobování nosiči, vodní elektrárna na Malom Studenom
+      potoku, zimní ledopád pro lezení (načteno 9. 8. 2026)
+    url: https://tatrami.sk/mapa/miesto/19/zamkovskeho-chata
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/33869432
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/zamkovskeho-chata.yaml (9. 8. 2026).
+
+  KAPACITA — PROČ TU NEPLATÍ KONVENCE O NIŽŠÍM ČÍSLE. Prameny uvádějí 23, 24,
+  25 i 28 lůžek. Zapsáno je 24, tedy číslo provozovatele, ne nejnižší.
+  Důvod je věcný: chata prošla v letech 2019–2024 rekonstrukcí, jejímž
+  doloženým cílem bylo „navýšenie kapacity" (asb.sk), takže starší čísla
+  popisují jiný stav budovy. Rozlišuji tu ROZPOR PRAMENŮ (dva prameny tvrdí
+  různě o téže věci ve stejný čas → platí nižší číslo) od ZASTARALOSTI
+  PRAMENE (prameny popisují různé časy → platí ten současný, když je jím
+  provozovatel). Stejné pravidlo jsem použil u Skalnaté chaty; u Sliezskeho
+  domu naopak platila konvence o nižším čísle, protože provozovatel tam počet
+  lůžek vůbec neuvádí a není čemu dát přednost. Michalovi to předkládám jako
+  návrh na doplnění konvence.
+
+  FOLTÝN A BAUHAUS — OSAMOCENÉ TVRZENÍ, KTERÉ JSEM DO DAT NEDAL. archinfo.sk
+  (autorská zpráva architekta rekonstrukce, tedy pramen jinak dobře
+  informovaný) tvrdí, že chata byla „postavená na konci tridsiatych rokov
+  podľa projektu Ladislava Foltýna, posledného architekta v poslednom ročníku
+  Bauhausu v Dessau" a technologií „two by four". To je v rozporu se všemi
+  ostatními prameny, které mluví o roce 1942/1943 a o Zamkovském jako
+  staviteli. Kdyby to byla pravda, byla by to nejzajímavější věc na celém
+  profilu — proto to sem zapisuji, aby se na to nezapomnělo, ale do dat to
+  nejde, dokud to nepotvrdí druhý pramen.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: rok znárodnění (1948 × 1951); rok
+  restituce (1992 × 1993); rok návratu názvu (1990 × 1991 × 1993); věk
+  Zamkovského při úmrtí (53 × 54); rok, kdy chatu převzali Kalinčíkovi
+  (správa 1996 × vlastnictví 2003 × odkoupení 2004); rok narození
+  Zamkovského (1907 × 1908).
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: jakýkoli požár; konkrétní
+  otevírací hodiny kuchyně; IČO provozující firmy. asb.sk naopak výslovně
+  tvrdí, že chata do rekonstrukce 2019+ neprošla žádnou zásadní rekonstrukcí.
+  Slovenskou Wikipedii se rešerši nepodařilo načíst.
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.

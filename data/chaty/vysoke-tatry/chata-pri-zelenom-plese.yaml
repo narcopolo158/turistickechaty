@@ -1,0 +1,374 @@
+# Chata pri Zelenom plese — šestý publikovaný profil oblasti Vysoké Tatry
+# (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Chata pri Zelenom plese
+slug: chata-pri-zelenom-plese
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.2101352
+lng: 20.2210763
+vyska: 1551
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/33859960 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1551 m: shodně Klub slovenských turistov jako spoluvlastník
+    („Nadmorská výška: 1551 m n. m."), vysoketatry.com, hiking.sk,
+    planetslovakia.sk, turisticky.sk, tatrami.sk, portaltatra.sk,
+    turistika.cz, tatry.sk a krasaslovenska.sk (vše čteno 9. 8. 2026).
+    DVĚ ODCHYLKY, přiznané: domalenka.sk uvádí 1550 m a tag ele v OSM říká
+    1548 m. Zapsané je 1551 m, tedy ne nejnižší číslo — viz interniPoznamky,
+    kde je to zdůvodněné a předložené Michalovi jako otázka ke konvenci.
+    Poloha: Dolina Zeleného plesa na břehu Zeleného plesa, pod severní stěnou
+    Malého Kežmarského štítu. Vlastní GPS uvádí vysoketatry.com jako
+    N 49.209993° E 20.221340°.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 56
+overeniNocleh:
+  source: >-
+    56 lůžek uvádí shodně vlastní web chaty (čteno 9. 8. 2026) — „The cottage
+    accommodates 56 guests in multi-bed rooms." —, dále vysoketatry.com
+    („Kapacita: 56 ubytovaných osôb"), hiking.sk, smnd.sk, turisticky.sk,
+    horydoly.cz, turistika.cz i krasaslovenska.sk. Bez rozporu.
+    Nad rámec toho několik pramenů zmiňuje nouzové spaní ve vlastním spacáku
+    (hiking.sk „možné spanie aj na matracoch v prípade vyššej návštevnosti";
+    turisticky.sk „je možné spať s vlastným spacákom v neďalekej vykurovanej
+    nocľahárni"). tatryportal.sk to sčítá jako „56+27"; do kapacity je
+    zapsané jen doložené základní číslo.
+    Ubytování je turistická kategorie a rezervuje se konkrétní lůžko, ne
+    pokoj (vlastní web). Rezervace jen e-mailem, platba hotově, chata nemá
+    wi-fi. Historicky měla po přístavbách roku 1934 „11 izieb s kapacitou
+    70 lôžok" (nostalgicketatry.sk).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Teplá kuchyně je doložená bohatě: turistika.cz vede chatu v kategorii
+    „Restaurace s buffetem" se „širokým sortimentem teplých i studených jídel
+    a nápojů"; planetslovakia.sk „jedálňou s ponukou teplých jedál, nápojov";
+    hiking.sk vypisuje bar s čepovaným pivem, polévku a „varené jedlo podľa
+    dennej ponuky"; turisticky.sk zmiňuje jako specialitu parené buchty.
+    Chatař Tomáš Petrík pro modralanovka.sk: „Zo zásady robíme všetko
+    z čerstvých surovín a sami."
+    POZOR NA MEZERU V DOKLADU, stejnou jako u Téryho a Zbojníckej: výslovnou
+    větu o tom, že se obslouží i NEUBYTOVANÍ, nemá ani jeden pramen. Nejblíž
+    je tatrami.sk — „chata ponúka ubytovanie ale aj bohaté občerstvenie pre
+    turistov" — a domalenka.sk, které jídlo staví na první místo a ubytování
+    až za ně. Vlastní web otázku vůbec neřeší; popisuje jen snídaně a večeře
+    pro ubytované (léto 6.30–8.00 a 19.00, zima 7.00–8.30 a 18.00). Klíč
+    zařazení je splněn rolí na trase, ale tvrdit se to nedá — telefonát to
+    rozhodne (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    Celoroční provoz uvádí shodně vlastní web chaty („open all year round"),
+    vysoketatry.com („Prevádzka: Celoročná"), hiking.sk, planetslovakia.sk,
+    turisticky.sk, domalenka.sk, sdetmi.com i tatry.sk (vše čteno
+    9. 8. 2026). smnd.sk to datuje: „Od roku 1926 je chata otvorená
+    celoročne."
+    „OTEVŘENO" ZASE NENÍ „DOSTUPNÉ": červená spojka mezi Skalnatým plesem
+    a touhle chatou přes Veľkú Svišťovku je podle vlastního webu Skalnaté
+    chaty sezónně uzavřená od 1. 11. do 31. 5. Přístup od Bielej vody po
+    žluté zůstává, ale hřebenová varianta v zimě odpadá.
+    Otevírací hodiny jídelny pro průchozí turisty neuvádí žádný pramen,
+    a tak se nezapisují.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421901767420'
+  email: tatry@chataprizelenomplese.sk
+  web: https://chataprizelenomplese.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1897
+overeniHistorie:
+  source: >-
+    ROK 1897 JE ROKEM DNEŠNÍ KAMENNÉ BUDOVY, ne první stavby v dolině —
+    ta je v milnících. nostalgicketatry.sk (čteno 9. 8. 2026): „Uhorský
+    karpatský spolok v rokoch 1895-1897 postavil turistickú chatu"
+    a „Slávnostné otvorenie za účasti 59 turistov sa uskutočnilo 27. augusta
+    1897."; shodně vlastní web chaty („officially opened in August 27th,
+    1897"), smnd.sk („V roku 1895 sa začalo zo stavbou už tretej chaty…
+    Otvorená bola v roku 1897.") i retromania.sk.
+    ROZPOR V DATACI, přiznaný: portaltatra.sk, hiking.sk a tatryportal.sk
+    kladou stavbu k roku 1894. Zapsán je rok otevření doložený čtyřmi prameny
+    včetně provozovatele.
+    ROZPOR VE JMÉNU STAVITELE, nesrovnaný: nostalgicketatry.sk uvádí projekt
+    Henricha Hermanna a realizaci „kežmarský staviteľ Emil Schwarz",
+    retromania.sk „Staviteľ Juraj Cornél Schwarz z Kežmarku". Rozměry
+    10 × 11 m, zdi 63 cm, náklad 9700 forintů; pojmenována po arciknížeti
+    Fridrichu Habsburském, který přispěl 200 korunami; prvním nájemcem byl
+    Eduard Forberger.
+    Dnešní podobu dala chatě rekonstrukce, kterou smnd.sk datuje 1993–2001.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1876
+    udalost: >-
+      Uhorský karpatský spolok postavil na Rakúskej poľane Egidovu chatu,
+      první objekt doliny určený turistům; jméno nesla po zakladateli spolku
+      Egidovi Berzeviczym.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „The first building in the
+      valley intended to be used by tourists was Egid's cottage, standing on
+      a »Rakúska poľana«, since 1876."; retromania.sk uvádí dokončení
+      26. června 1876 a Egida Berzeviczyho (1835–1906).
+  - rok: 1887
+    udalost: >-
+      Egidovu chatu přenesli na jižní břeh plesa.
+    zdroj: >-
+      tatry.sk (čteno 9. 8. 2026) — „It relocated to the tarn's southern
+      shore in 1887"; shodně vysoketatry.com.
+  - rok: 1890
+    udalost: >-
+      Chata vyhořela; podle jednoho pramene byla zapálena úmyslně, poté co ji
+      opakovaně poškozovali pastevci z belianskeho salaša.
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — „r. 1890 vyhorela."; smnd.sk —
+      „Poškodzovali ju pastieri z belianskeho salaša." a „O tri roky zhorela,
+      údajne bola zapálená úmyselne."
+  - rok: 1897
+    udalost: >-
+      Uhorský karpatský spolok otevřel 27. srpna za účasti 59 turistů novou
+      kamennou chatu, pojmenovanou Fridrichova po arciknížeti Fridrichu
+      Habsburském, který na ni přispěl 200 korunami.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „Slávnostné otvorenie za
+      účasti 59 turistov sa uskutočnilo 27. augusta 1897."
+  - rok: 1926
+    udalost: >-
+      Chata dostala srubovou přístavbu na východní straně a přešla na
+      celoroční provoz.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — přístavba podle stavitele
+      Ing. Oskára Zubera z Kežmarku, chatařem byl Vincent Tardík; smnd.sk —
+      „Od roku 1926 je chata otvorená celoročne."
+  - rok: 1934
+    udalost: >-
+      Dřevěná přístavba ze západní strany zvýšila kapacitu na jedenáct pokojů
+      a sedmdesát lůžek.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — stavitel Gustáv Maurer
+      z Huncoviec podle Zuberových plánů; „Prístavbami vzniklo 11 izieb
+      s kapacitou 70 lôžok."
+  - rok: 1950
+    udalost: >-
+      Chatu přejmenovali na Brnčalovu po Albertu Brnčalovi, který 1. srpna
+      téhož roku zahynul pod Jastrabím sedlem.
+    zdroj: >-
+      horydoly.cz (čteno 9. 8. 2026) — „Na jeho počesť premenovali v roku
+      1950 Fridrichovu chatu na Brnčalovu chatu"; vysoketatry.com —
+      „1.8.1950 ako horolezecký inštruktor zahynul pod Jastrabím sedlom."
+  - rok: 1992
+    udalost: >-
+      Objektu vrátili polohopisný název Chata pri Zelenom plese. Prameny se
+      v roce rozcházejí — dva uvádějí 1989 a 1991.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „V roku 1992 objektu vrátili
+      polohopisný názov Chata pri Zelenom plese."; shodně vlastní web chaty,
+      horydoly.cz, tatry.sk, sdetmi.com a domalenka.sk. Oproti tomu
+      retromania.sk uvádí 1991 a portaltatra.sk rok 1989.
+  - rok: 2025
+    udalost: >-
+      Klub slovenských turistov rozdělil nájemní smlouvy tatranských chat do
+      roku 2030; Chatu pri Zelenom plese bude dál provozovat Tomáš Petrík.
+    zdroj: >-
+      ta3.com, 20. 10. 2025 (čteno 9. 8. 2026) — „Chatu pri Zelenom plese
+      bude prevádzkovať Tomáš Petrík"; „Nájomné zmluvy platia do 31. októbra
+      2030".
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Podle chataře na chatu od října do března nedopadne ani jeden sluneční
+      paprsek — leží pod severní stěnou.
+    kategorie: jine
+    zdroj: >-
+      modralanovka.sk (čteno 9. 8. 2026) — „od októbra do marca nezasvieti na
+      ňu ani jeden slnečný lúč".
+  - text: >-
+      Čaj se tu podle chataře vaří z vody Zeleného plesa.
+    kategorie: gastro
+    zdroj: >-
+      modralanovka.sk (čteno 9. 8. 2026) — rozhovor s chatařem Tomášem
+      Petríkem.
+  - text: >-
+      Chata se zásobuje po čtyřkilometrové trase terénním vozem a sněžným
+      skútrem podle toho, kde zrovna leží sněhová hranice.
+    kategorie: jine
+    zdroj: >-
+      modralanovka.sk (čteno 9. 8. 2026) — zásobování rakouským gazíkem PUCH
+      a skútrem, „4 kilometre od najbližšieho prístupu"; planetslovakia.sk —
+      „Zásobovanie chaty je riešené terénnymi automobilmi a snežnými
+      skútrami".
+  - text: >-
+      Členům KST, JAMES, ÖTK a ČHS chata dává slevu, která roste podle délky
+      členství — od dvaceti procent v prvním roce po padesát od třetího roku.
+    kategorie: jine
+    zdroj: >-
+      ceník na vlastním webu chaty (čteno 9. 8. 2026).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná chata z roku 1897 na břehu Zeleného plesa pod severní stěnou Malého
+  Kežmarského štítu. Postavil ji Uhorský karpatský spolok, čtyřicet dva let
+  se jmenovala Brnčalova a od roku 1926 je otevřená celoročně. Vlastní ji
+  Klub slovenských turistov se spolkem JAMES.
+text:
+  - >-
+    Chata pri Zelenom plese stojí v 1551 metrech v Dolině Zeleného plesa,
+    přímo na břehu jezera, které jí dalo jméno. Nad ní se zvedá severní stěna
+    Malého Kežmarského štítu — a je to i praktický údaj: podle chataře na
+    chatu od října do března nedopadne ani jeden sluneční paprsek.
+  - >-
+    Historie místa začíná roku 1876, kdy Uhorský karpatský spolok postavil na
+    Rakúskej poľane Egidovu chatu, pojmenovanou po zakladateli spolku Egidovi
+    Berzeviczym. Roku 1887 ji přenesli na jižní břeh plesa a roku 1890
+    vyhořela; jeden pramen píše, že byla zapálena úmyslně, poté co ji
+    opakovaně poškozovali pastevci z belianskeho salaša.
+  - >-
+    Dnešní kamennou chatu postavil týž spolek v letech 1895 až 1897
+    a otevřel ji 27. srpna 1897 za účasti devětapadesáti turistů. Dostala
+    jméno Fridrichova po arciknížeti Fridrichu Habsburském, který na ni
+    přispěl dvěma sty korunami. Kdo ji stavěl, se prameny neshodnou: oba
+    mluví o staviteli Schwarzovi z Kežmarku, ale jeden mu říká Emil a druhý
+    Juraj Cornél. Přístavby z let 1926 a 1934 kapacitu zvedly na jedenáct
+    pokojů a sedmdesát lůžek a od roku 1926 je chata otevřená celoročně.
+  - >-
+    Od roku 1950 se čtyřicet dva let jmenovala Brnčalova — po Albertu
+    Brnčalovi, který 1. srpna toho roku zahynul pod Jastrabím sedlem. Kým
+    přesně byl, prameny popisují různě: učitel tělocviku, horolezecký
+    instruktor, předseda Slovenského horolezeckého svazu, v jednom případě
+    i letec a partyzánský velitel. Polohopisný název se vrátil roku 1992,
+    i když dva prameny uvádějí 1989 a 1991. Přezdívka Brnčalka drží dodnes.
+  - >-
+    Chata patří Klubu slovenských turistov a Slovenskému horolezeckému spolku
+    JAMES; provozuje ji nájemce Tomáš Petrík, kterému KST v říjnu 2025
+    prodloužil smlouvu do konce října 2030. Spí se tu po turisticku —
+    rezervuje se konkrétní lůžko, ne pokoj, platí se hotově a wi-fi tu není.
+  - >-
+    Chodí se sem nejčastěji od Bielej vody po žluté, prameny udávají dvě
+    a půl až tři hodiny. Dál vedou trasy z Tatranských Matliarů, Tatranské
+    Lomnice, Tatranské Kotliny a od Chaty Plesnivec přes Veľké Biele pleso.
+    Hřebenová varianta vede po červené magistrále od Skalnatého plesa přes
+    Veľkú Svišťovku — ta je ale od 1. listopadu do 31. května uzavřená,
+    takže i u celoročně otevřené chaty platí, že „otevřeno" a „dostupné"
+    nejsou totéž.
+  - >-
+    Jestli se tu obslouží i ten, kdo tu nespí, prameny neříkají. Teplá
+    kuchyně tu je, bar s čepovaným pivem taky a specialitou jsou parené
+    buchty, ale výslovnou větu o neubytovaných jsme nenašli — a tak ji tu
+    netvrdíme. Je to stejná mezera jako u Téryho a Zbojníckej chaty.
+  - >-
+    Údaje nese vlastní web chaty, KST, nostalgicketatry.sk, retromania.sk,
+    smnd.sk, vysoketatry.com, hiking.sk, horydoly.cz, modralanovka.sk
+    a ta3.com; polohu OpenStreetMap. Redakce nic neověřila vlastním dotazem
+    ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty, stránka o nás — Egidova chata od 1876, otevření
+      27. 8. 1897, Brnčalova chata 1950–1992, 56 hostů, celoroční provoz,
+      časy snídaní a večeří (načteno 9. 8. 2026)
+    url: https://chataprizelenomplese.sk/en/o-nas/
+  - popis: >-
+      Klub slovenských turistov — výška 1551 m, spoluvlastnictví KST a SHS
+      James, nájemce Tomáš Petrík, kontakty (načteno 9. 8. 2026)
+    url: https://www.kst.sk/kst/chaty/chata-pri-zelenom-plese/
+  - popis: >-
+      nostalgicketatry.sk — stavba 1895–1897, otevření 27. 8. 1897 s 59
+      turisty, projektant Henrich Hermann a stavitel Emil Schwarz, přístavby
+      1926 a 1934, návrat názvu 1992 (načteno 9. 8. 2026)
+    url: https://www.nostalgicketatry.sk/historia/chataprizelenomplese
+  - popis: >-
+      retromania.sk — Egidova chata dokončená 26. 6. 1876, Egid Berzeviczy,
+      stavitel Juraj Cornél Schwarz, telefon od 1922, návrat názvu 1991
+      (načteno 9. 8. 2026)
+    url: https://www.retromania.sk/1940-1949/tatranske-vysokohorske-chaty-chata-pri-zelenom-plese
+  - popis: >-
+      smnd.sk — poškozování pastevci a úmyslné zapálení, celoroční provoz od
+      1926, rekonstrukce 1993–2001, 56 lůžek (načteno 9. 8. 2026)
+    url: https://smnd.sk/jbachnicek/ChataPriZelenomPlese.html
+  - popis: >-
+      vysoketatry.com — výška 1551 m, GPS, kapacita 56 a stravování pro 60,
+      přenesení chaty 1887, požár 1890, Albert Brnčal (načteno 9. 8. 2026)
+    url: http://www.vysoketatry.com/chaty/chpzplese/chpzplese.html
+  - popis: >-
+      hiking.sk — 56 lůžek a spaní na matracích, bar a denní nabídka jídel,
+      žlutá z Bielej vody 2.30 h (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/207/chata_pri_zelenom_plese_brncalka.html
+  - popis: >-
+      horydoly.cz, heslo Albert Brnčal — životopis, úmrtí v kamenné lavině
+      1. 8. 1950, přejmenování chaty 1950 (načteno 9. 8. 2026)
+    url: https://www.horydoly.cz/slovnik/albert-brncal-horolezec-a-letec.html
+  - popis: >-
+      modralanovka.sk — rozhovor s chatařem Tomášem Petríkem: zásobování
+      gazíkem a skútrem, čaj z vody plesa, bez slunce od října do března
+      (načteno 9. 8. 2026)
+    url: https://modralanovka.sk/chata-pri-zelenom-plese/
+  - popis: >-
+      ta3.com, 20. 10. 2025 — KST rozdělil nájemní smlouvy tatranských chat
+      do 31. 10. 2030 (načteno 9. 8. 2026)
+    url: https://www.ta3.com/clanok/1016763/tatranske-chaty-maju-novych-najomcov-klub-slovenskych-turistov-rozdelil-zmluvy-do-roku-2030
+  - popis: >-
+      tatrami.sk — „chata ponúka ubytovanie ale aj bohaté občerstvenie pre
+      turistov", červená ze Skalnatého plesa (načteno 9. 8. 2026)
+    url: https://tatrami.sk/mapa/miesto/29/chata-pri-zelenom-plese
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/33859960
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/chata-pri-zelenom-plese.yaml
+  (9. 8. 2026).
+
+  VÝŠKA — MÍSTO, KDE JSEM KONVENCI O NIŽŠÍM ČÍSLE NEPOUŽIL, A OTÁZKA PRO
+  MICHALA. Konvence z 27. 7. 2026 říká: při rozporu pramenů zapiš nižší číslo
+  a přiznej to. Tady jsou v poli tři hodnoty — 1551 m (deset pramenů včetně
+  spoluvlastníka KST a provozovatelova webu), 1550 m (domalenka.sk) a 1548 m
+  (tag ele v OSM). Mechanicky by vyhrálo 1548. Zapsáno je 1551, protože
+  desetinásobná shoda pramenů proti jednomu zaokrouhlení a jednomu
+  automaticky odvozenému tagu není podle mě „rozpor pramenů", pro který
+  konvence vznikla. Je to ale MŮJ výklad konvence, ne Michalovo rozhodnutí —
+  patří to na jeho stůl. Otázka je obecná: má konvence ustoupit drtivé shodě,
+  a je tag ele v OSM vůbec pramen ve stejném smyslu jako text?
+
+  OTEVŘENÁ MEZERA, TŘETÍ VE STEJNÉ OBLASTI: obslouží chata i NEUBYTOVANÉ?
+  Žádný pramen to neříká výslovně; vlastní web otázku vůbec neřeší. Stejná
+  mezera je u Téryho a Zbojníckej chaty — jeden telefonát by uzavřel tři
+  profily najednou (DATA-04).
+
+  DOLOŽENÝ PŘÍPAD OPAKU, nezapsaný do dat: ynta.sk popisuje stav z roku 2021,
+  kdy se kvůli protipandemickým opatřením v chatě nedalo najíst a jídlo se
+  vydávalo jen ven. Je to epizoda, ne trvalý stav, a do profilu proto nešla —
+  ale ukazuje, že „teplá kuchyně" a „obslouží kolemjdoucího" nejsou totéž.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: rok stavby (1894 × 1895–1897); jméno
+  stavitele (Emil × Juraj Cornél Schwarz); rok návratu názvu (1989 × 1991 ×
+  1992); kdo byl Albert Brnčal (učitel tělocviku × horolezecký instruktor ×
+  předseda SHZ × letec a partyzánský velitel); požáry (většina pramenů zná
+  jen 1890, retromania.sk navíc 1889, 1925 a 1926 — osamocené tvrzení).
+
+  NENALEZENO, a nenalezení není vyvrácení: meteostanice u chaty (observatoř
+  je na Skalnatém plese, což je jiné místo); zásobování nosiči (všechny
+  prameny popisují motorizované); jakýkoli rekord; otevírací hodiny jídelny.
+  Slovenskou ani českou Wikipedii se rešerši nepodařilo načíst.
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

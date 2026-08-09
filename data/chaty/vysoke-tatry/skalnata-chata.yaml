@@ -1,0 +1,371 @@
+# Skalnatá chata — sedmý publikovaný profil oblasti Vysoké Tatry (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Skalnatá chata
+slug: skalnata-chata
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1862357
+lng: 20.2335511
+vyska: 1725
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/50492926 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1725 m: vlastní web chaty ji nese přímo v hlavičce („1725 m n. m.")
+    i v názvu profilu na sociální síti; shodně vysoketatry.com
+    („Skalnatá chata (1725 m)"), turisticky.sk a legendarium.info (vše čteno
+    9. 8. 2026). Souhlasí i tag ele v OSM.
+    ROZPOR, který má vysvětlení: hiking.sk a tatryportal.sk uvádějí 1751 m
+    a miribord.com 1750 m. To je ale výška samotného Skalnatého plesa —
+    vysoketatry.com vede „Skalnaté pleso (1751 m)" a chata podle vlastního
+    webu leží asi pět minut chůze pod ním. Nižší číslo tedy není ústupek,
+    ale poloha jiné budovy; zapsaná je hodnota provozovatele.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 12
+overeniNocleh:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026) nabízí dva pokoje — „Izba Paráda"
+    jako čtyřlůžkovou a „Izba Horal" jako osmilůžkovou, dohromady dvanáct
+    lůžek; shodně vysoketatry.com „KAPACITA UBYTOVANIA: 12" a turisticky.sk.
+    Ceny 40 €, respektive 35 € za osobu a noc, snídaně 7 €, pobytový poplatek
+    3,50 €; check-in od 14.00, check-out do 9.00; ubytování „len bez domácich
+    miláčikov".
+    ROZPOR, přiznaný: hiking.sk vede chatu jako „bez ubytovania"
+    a tatryportal.sk uvádí „8 (núdzové)" lůžek. Zapsané je číslo
+    provozovatele, protože jeho vlastní web ubytování aktivně prodává
+    a uvádí ceny; oba odchylné prameny popisují spíš starší stav. Není to
+    rozpor pramenů o téže věci, ale rozdíl ve stáří pramene.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): „Reštaurácia je k dispozícii:
+    8.00-21.00, resp. podľa dohody." a „Raňajky: 7.00-8.00, resp. podľa
+    dohody."; vysoketatry.com „MOŽNOSŤ STRAVOVANIA: ÁNO - reštaurácia";
+    turisticky.sk „Reštaurácia je otvorená od 8:00 do 21:00".
+    O OBSLUZE NEUBYTOVANÝCH JE TU SILNĚJŠÍ DOKLAD NEŽ U OSTATNÍCH
+    TATRANSKÝCH CHAT KORPUSU, i když pořád ne přímá věta provozovatele.
+    hiking.sk, který zároveň tvrdí „bez ubytovania", píše „Na chate sa dá
+    kúpiť jedlo, čaj a iné nápoje" — tedy popisuje prodej kolemjdoucím.
+    legendarium.info: „Chata i terasa sú otvorené celoročne, v lete a jeseni
+    víta peších turistov, športovcov, horolezcov, v zimných mesiacoch sa
+    k nim pridávajú lyžiari i skialpinisti." Restaurace je vedena i jako
+    veřejný podnik na Tripadvisoru (slabý pramen, uvádí se jen pro úplnost).
+    Restaurace otevřená do 21.00 při dvanácti lůžkách dává smysl jen
+    s denními hosty, ale odvozovat se to nemá — telefonát to rozhodne
+    (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: restaurace denně 8.00–21.00, případně po dohodě
+overeniProvoz:
+  source: >-
+    Celoroční provoz uvádí shodně vysoketatry.com („PREVÁDZKA: celoročná"),
+    hiking.sk, tatryportal.sk, legendarium.info, turisticky.sk i horydoly.cz
+    (vše čteno 9. 8. 2026). Otevírací doba restaurace 8.00–21.00 pochází
+    z vlastního webu chaty.
+    Tenhle objekt je z tatranských chat korpusu dostupností nejsnazší —
+    z Tatranské Lomnice sem jede lanovka a od horní stanice je to podle
+    vlastního webu pět minut chůze. Sezónní uzávěru má ale i tady jedna
+    spojka: vlastní web upozorňuje, že „časti chodníka po červenej značke
+    medzi Skalnatým plesom a Chate pri Zelenom plese" je uzavřená od
+    1. 11. do 31. 5.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421910739172'
+  email: info@skalnatachata.sk
+  web: https://www.skalnatachata.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1935
+overeniHistorie:
+  source: >-
+    ROK 1935 JE ROKEM VZNIKU SKALNATÉ CHATY JAKO CHATY, ne prvního úkrytu na
+    místě — ten je z roku 1841 a stojí v milnících. nostalgicketatry.sk
+    (čteno 9. 8. 2026): „Týmito úpravami v roku 1935 vznikla Skalnatá chata
+    KČST".
+    ROZPOR V DATACI, přiznaný: vlastní web chaty klade zlom k roku 1932 —
+    „v roku 1932, keď Kavernu prevzal Klub československých turistov".
+    Zapsán je pozdější rok, ne dřívější. U roku vzniku totiž konvence
+    z 27. 7. 2026 („zapiš nižší číslo") míří proti svému vlastnímu smyslu:
+    starší datum je lichotivější, takže opatrná volba je ta pozdější.
+    Rozdíl je věcný, ne jen číselný — 1932 je převzetí betonové kaverny,
+    1935 vznik chaty. Viz interniPoznamky, otázka pro Michala.
+    PROJEKTANT NENALEZEN: žádný pramen neuvádí jméno architekta ani
+    projektanta Skalnaté chaty. Pozor na záměnu — Dušan Samo Jurkovič je
+    architektem sousední budovy Encián, ne téhle chaty.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1841
+    udalost: >-
+      Čtyři slezští turisté s horskými vůdci Jakubem Luxem a Michalem
+      Stüberem upravili a obezdili prostor pod převislou skalou nad Skalnatým
+      plesem; v čele výpravy byl lékárník Karol Lohmeyer, autor prvního
+      tištěného průvodce po Vysokých Tatrách.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „štyria sliezski turisti
+      s horskými vodcami Jakubom Luxom a Michalom Stüberom upravili
+      a obmurovali priestor pod previslou skalou"; nostalgicketatry.sk uvádí
+      Lohmeyera jako vedoucího výpravy.
+  - rok: 1877
+    udalost: >-
+      Majitel Skalnaté doliny Andrej Spóner z Veľkej Lomnice obezdil takzvanou
+      Kyklopovu stěnu ve výšce 1752 metrů.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „Túto »Kyklopovu stenu« vo
+      výške 1752 m obmuroval v roku 1877 majiteľ Skalnatej doliny Andrej
+      Spóner z Veľkej Lomnice".
+  - rok: 1914
+    udalost: >-
+      Úkryt zpevnila ze strategických důvodů betonovou výmurovkou
+      rakousko-uherská armáda; turisté mu od té doby říkali kaverna.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „V roku 1914 ju zo
+      strategických dôvodov spevnila betónovou výmurovkou rakúsko-uhorska
+      armáda"; „Takto upravenú útulňu turisti nazývali »kaverna«."
+  - rok: 1915
+    udalost: >-
+      Z podnětu Uhorského karpatského spolku byl provizorní prostor upraven
+      na útulnu, kde mohlo přenocovat dvacet až pětadvacet lidí.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „v roku 1915, boli provizórne
+      priestory na podnet Uhorského karpatského spolku upravené na útulňu";
+      horydoly.cz — „V ktorej mohlo prenocovať 20 - 25 osôb".
+  - rok: 1935
+    udalost: >-
+      Úpravami vznikla Skalnatá chata Klubu československých turistů. Prvním
+      chatařem byl od roku 1934 Michal Tomčík.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „Týmito úpravami v roku 1935
+      vznikla Skalnatá chata KČST"; „V roku 1934 tu nastúpil za chatára
+      Michal Tomčík (1906-1987)."
+  - rok: 1937
+    udalost: >-
+      V prosinci zahájila provoz visutá lanovka z Tatranské Lomnice na
+      Lomnický štít, v prvním úseku po Skalnaté pleso.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „V decembri l937 dali do
+      prevádzky visutú lanovku z Tatranskej Lomnice na Lomnický štít v jej
+      l. úseku po Skalnaté pleso."; blog.sme.sk uvádí přesné datum
+      22. prosince 1937.
+  - rok: 1955
+    udalost: >-
+      Chata prošla velkou přestavbou vedenou tehdejším chatařem Rudolfem
+      Preslerem, zahájenou roku 1953.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Veľkou prestavbou prešla
+      v rokoch 1953 – 1955 pod vedením Rudolfa Preslera".
+  - rok: 1972
+    udalost: >-
+      Chatu prohlásili za nezpůsobilou provozu; dál sloužila jako sklad,
+      nejprve Československým drahám, pak přešla pod správu TANAP.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „v roku 1972 vyhlásená za
+      nespôsobilú prevádzky a ďalej slúžila ako sklad"; hiking.sk —
+      „Neskôr ju Československé dráhy využívali ako sklad, potom prešla pod
+      správu TANAP-u".
+  - rok: 1996
+    udalost: >-
+      Po rekonstrukci, kterou zahájil nosič a záchranář Laco Kulanga po
+      pronájmu roku 1993, byla chata znovu uvedena do provozu.
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „ktorá ju v roku 1993 prenajala nosičovi
+      a záchranárovi Lacovi Kulangovi. Ten ju zrekonštruoval a v roku 1996
+      opäť sprevádzkoval."
+  - rok: 2020
+    udalost: >-
+      Laco Kulanga 14. září zemřel ve věku 71 let; chatařem je od té doby
+      jeho syn Pavol.
+    zdroj: >-
+      horydoly.cz (čteno 9. 8. 2026) — „Tatranský nosič a chatař Ladislav
+      Kulanga zemřel 14. září 2020."; vlastní web chaty — „Dnes som
+      pokračovateľom tejto tradície ja, syn Pavol".
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Chatař Laco Kulanga vynesl podle nekrologu na Skalnaté pleso náklad
+      176 kilogramů a odtud na mezistanici 211 kilogramů.
+    kategorie: jine
+    zdroj: >-
+      korzár SME, nekrolog (čteno 9. 8. 2026) — „176 kilogramov na chatu na
+      Skalnatom plese v roku 1993" a „211 kilogramov z tohto miesta na
+      medzistanicu".
+  - text: >-
+      Pod převislou skálou u chaty nocovali návštěvníci doliny dávno předtím,
+      než tu stála jakákoli budova; místu se říkalo Ohnisko.
+    kategorie: stari
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — „Prví návštevníci Skalnatej doliny
+      nocovali pod previsnutým balvanom, tzv. Ohniskom, poniže Skalnatého
+      plesa."
+  - text: >-
+      Chata pořádá zimní sympozium Snowman a ve spolupráci se Správou TANAP
+      program Lesná pedagogika pod skalou.
+    kategorie: jine
+    zdroj: >-
+      aktuality na vlastním webu chaty (čteno 9. 8. 2026).
+  - text: >-
+      Podle článku o vlastnictví tatranských chat z roku 2019 činilo měsíční
+      nájemné Skalnaté chaty 375 eur.
+    kategorie: jine
+    zdroj: >-
+      forbes.sk, 7. 9. 2019 (čteno 9. 8. 2026) — „Chatárom (nie priamo
+      nájomcom) Skalnatej chaty je Ladislav Kulanga, mesačný nájom chaty je
+      375 eur."
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Malá kamenná chata kousek pod Skalnatým plesem, na místě, kde si turisté
+  upravili úkryt pod převislou skálou už roku 1841. Jako chata Klubu
+  československých turistů vznikla ve třicátých letech, roku 1972 skončila
+  jako sklad a od roku 1996 zase funguje.
+text:
+  - >-
+    Skalnatá chata stojí v 1725 metrech na prahu Skalnaté doliny, na červené
+    Tatranské magistrále kousek pod Skalnatým plesem. Je nenápadná — hiking.
+    sk to říká rovnou: „Niektorí z návštevníkov si možno ani nevšimnú malú
+    kamennú chatu." Kolem ní je totiž hodně jiných budov: horní stanice
+    lanovky, astronomická i meteorologická observatoř a Encián, bývalá
+    stanice visuté lanovky od Dušana Sama Jurkoviče. Chata není žádná z nich.
+  - >-
+    Zajímavá je hlavně kontinuitou místa. Už první návštěvníci Skalnaté
+    doliny nocovali pod převislým balvanem, kterému se říkalo Ohnisko. Roku
+    1841 ho čtyři slezští turisté s horskými vůdci Jakubem Luxem a Michalem
+    Stüberem obezdili — v čele byl lékárník Karol Lohmeyer, autor prvního
+    tištěného průvodce po Vysokých Tatrách. Roku 1877 stěnu domuroval majitel
+    doliny Andrej Spóner a roku 1914 ji betonem zpevnila rakousko-uherská
+    armáda ze strategických důvodů. Od té doby se místu říkalo kaverna.
+  - >-
+    Chatu z toho udělal Uhorský karpatský spolok roku 1915 a Klub
+    československých turistů ve třicátých letech. Kdy přesně vznikla
+    „Skalnatá chata", prameny neříkají stejně: vlastní web klade zlom
+    k roku 1932, kdy KČST kavernu převzal, nostalgicketatry.sk až k roku
+    1935. V prosinci 1937 pak přijela lanovka z Tatranské Lomnice a místo
+    přestalo být odlehlé.
+  - >-
+    Roku 1972 chatu prohlásili za nezpůsobilou provozu a dál sloužila jako
+    sklad Československých drah, později pod správou TANAP. Zachránil ji
+    nosič a záchranář Laco Kulanga, kterému ji TANAP roku 1993 pronajal;
+    zrekonstruoval ji a roku 1996 znovu otevřel. Kulanga zemřel v září 2020
+    ve věku jednasedmdesáti let a chatu po něm vede syn Pavol. Nekrolog
+    připomíná jeho nosičské výkony: 176 kilogramů na Skalnaté pleso a 211
+    kilogramů odtud na mezistanici.
+  - >-
+    Spí se tu v jediných dvou pokojích — čtyřlůžkovém Paráda a osmilůžkovém
+    Horal —, takže dvanáct lidí. Restaurace má otevřeno od osmi ráno do devíti
+    večer, případně po dohodě. Jestli se tu obslouží i ten, kdo tu nespí,
+    prameny výslovně nepíšou, ale hiking.sk uvádí, že „na chate sa dá kúpiť
+    jedlo, čaj a iné nápoje", a legendarium.info popisuje chatu i terasu jako
+    celoročně otevřené pěším turistům, horolezcům a v zimě lyžařům.
+  - >-
+    Dostat se sem dá i bez chůze do kopce:
+    z Tatranské Lomnice sem jede lanovka a od horní stanice je to podle
+    vlastního webu pět minut. Pěšky se sem jde z Tatranské Lomnice po zelené
+    nebo od Hrebienku po červené, prameny udávají necelé dvě hodiny.
+    I tady ale platí, že „otevřeno" a „dostupné" nejsou totéž — červená
+    spojka na Chatu pri Zelenom plese přes Veľkú Svišťovku je od 1. listopadu
+    do 31. května uzavřená.
+  - >-
+    Údaje nese vlastní web chaty, vysoketatry.com, hiking.sk,
+    nostalgicketatry.sk, horydoly.cz, korzár SME, forbes.sk, turisticky.sk
+    a legendarium.info; polohu OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty, stránka Náš príbeh — rok 1841 a jména vůdců,
+      kaverna, 1915 UKS, 1932 KČST, 1937 lanovka, přestavba 1953–1955,
+      1972 sklad, rekonstrukce od 1993, seznam chatařů (načteno 9. 8. 2026)
+    url: https://www.skalnatachata.sk/sk/nas-pribeh
+  - popis: >-
+      Vlastní web chaty, ubytování — pokoje Paráda (4) a Horal (8), ceny,
+      restaurace 8.00–21.00, snídaně 7.00–8.00 (načteno 9. 8. 2026)
+    url: https://www.skalnatachata.sk/sk/ubytovanie
+  - popis: >-
+      vysoketatry.com — výška 1725 m, Ohnisko, kapacita 12, stravování ano,
+      celoroční provoz, časy chůze (načteno 9. 8. 2026)
+    url: http://www.vysoketatry.com/chaty/schata/schata.html
+  - popis: >-
+      hiking.sk — poloha na magistrále pod plesem, „Na chate sa dá kúpiť
+      jedlo, čaj a iné nápoje", pronájem Kulangovi 1993 a obnovení 1996
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/442/skalnata_chata.html
+  - popis: >-
+      nostalgicketatry.sk — Lohmeyer 1841, Spóner 1877, armáda 1914, vznik
+      Skalnaté chaty KČST 1935, chatař Tomčík od 1934, lanovka prosinec 1937
+      (načteno 9. 8. 2026)
+    url: https://www.nostalgicketatry.sk/historia/skalnatepleso
+  - popis: >-
+      horydoly.cz — kapacita útulny z roku 1915, úmrtí Laca Kulangy
+      14. 9. 2020, nástup syna Pavla (načteno 9. 8. 2026)
+    url: https://www.horydoly.cz/slovnik/laco-kulanga-odesel-nosit-z-tater-na-onen-svet.html
+  - popis: >-
+      korzár SME, nekrolog Laca Kulangy — rekordní náklady 176 a 211
+      kilogramů (načteno 9. 8. 2026)
+    url: https://spis.korzar.sme.sk/c/22489197/zomrel-tatransky-chatar-nosic-a-rekorder-laco-kulanga.html
+  - popis: >-
+      forbes.sk, 7. 9. 2019 — stát vlastní tři tatranské chaty, měsíční nájem
+      Skalnaté chaty 375 eur (načteno 9. 8. 2026)
+    url: https://www.forbes.sk/komu-patria-tatranske-chaty-turistom-sukromnikom-statu/
+  - popis: >-
+      legendarium.info — „Chata i terasa sú otvorené celoročne", návštěvníci
+      podle sezóny, sjezdovka z Lomnického sedla (načteno 9. 8. 2026)
+    url: https://www.legendarium.info/vylet/skalnata-chata
+  - popis: >-
+      asb.sk — Encián jako národní kulturní památka podle projektu Dušana
+      Sama Jurkoviče, odlišení od chaty (načteno 9. 8. 2026)
+    url: https://www.asb.sk/architektura/encian-na-skalnatom-plese-z-dielne-dusana-jurkovica-zrekonstruovali
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/50492926
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/skalnata-chata.yaml (9. 8. 2026).
+
+  ROK VZNIKU — DRUHÉ MÍSTO, KDE KONVENCE O NIŽŠÍM ČÍSLE NEFUNGUJE MECHANICKY,
+  A OTÁZKA PRO MICHALA. Prameny nabízejí 1932 (vlastní web: převzetí kaverny
+  KČST) a 1935 (nostalgicketatry.sk: vznik Skalnaté chaty KČST). Konvence
+  z 27. 7. 2026 říká „zapiš nižší číslo", ale u letopočtu založení míří nižší
+  číslo opačným směrem než smysl konvence: starší chata je prestižnější, takže
+  opatrná volba je ta pozdější. Zapsáno 1935. Spolu s výškou u Chaty pri
+  Zelenom plese je to podruhé, co konvenci vykládám sám — stálo by za to ji
+  doplnit o větu, kterým směrem se „nižší" myslí (proti nám, ne aritmeticky).
+
+  ROZLIŠENÍ OD SOUSEDNÍCH BUDOV JE TU PODSTATNÉ, protože kolem Skalnatého
+  plesa stojí pět různých objektů a jen jeden je tahle chata: Encián (národní
+  kulturní památka, bývalá stanice visuté lanovky podle Dušana Sama
+  Jurkoviče, 1936–1937, dnes galerie Tatranského okrášľovacieho spolku
+  v pronájmu od TMR), astronomická observatoř SAV (1786 m, od 19. 9. 1943,
+  architekti Houdek a Bednárik, iniciátor Antonín Bečvář), meteorologická
+  observatoř (1778 m, od 1941), stanice lanovek s gastroprovozy TMR a Skalnatá
+  chata. Rozdíl výšek v pramenech (1725 × 1750 × 1751) pochází právě odtud.
+
+  VLASTNICTVÍ: forbes.sk (2019) řadí chatu mezi tři tatranské chaty ve
+  vlastnictví státu, konkrétní státní organizaci ale neuvádí; hiking.sk mluví
+  o správě TANAP. Do dat nešlo nic, protože přesný vlastník není doložen.
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: projektant chaty (žádné jméno);
+  jakýkoli požár; filmová produkce. Vlastní web má vnitřní rozpor v seznamu
+  chatařů — u Kulangy uvádí 1995, jeho vlastní text i hiking.sk mluví
+  o 1993 a 1996. Slovenskou Wikipedii se rešerši nepodařilo načíst.
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

@@ -1,0 +1,376 @@
+# Sliezsky dom — pátý publikovaný profil oblasti Vysoké Tatry (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Sliezsky dom
+slug: sliezsky-dom
+zeme: sk
+typ: horsky-hotel
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1559975
+lng: 20.1565271
+vyska: 1670
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/65383743 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1670 m: vlastní web hotelu (čteno 9. 8. 2026) „v nadmorskej výške
+    1 670 m n. m."; Visit Tatry „At 1,670 metres above sea level";
+    vysoketatry.com „Sliezsky dom (1670 m)". ROZPOR, přiznaný: smnd.sk uvádí
+    „v nadmorskej výške 1680 m.n.m." — zapsáno nižší číslo (konvence
+    27. 7. 2026), které je zároveň shodné se třemi dalšími prameny a s OSM.
+    Poloha: Velická dolina u Velického plesa. Vlastní web uvádí souřadnice
+    „49.156261, 20.156886", tedy zhruba 30 m od bodu OSM.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 92
+overeniNocleh:
+  source: >-
+    KAPACITA JE V PRAMENECH ROZHÁZENÁ OD 92 DO 130 A ZAPSÁNO JE NEJNIŽŠÍ
+    ČÍSLO (konvence 27. 7. 2026). Vlastní web hotelu (čteno 9. 8. 2026) počet
+    lůžek vůbec neuvádí, mluví o pokojích a hostech: „Hotel má k dispozícii
+    44 izieb." a „dokáže ubytovať až 125 hostí". Lůžka jako číslo dává
+    zlavadna.sk — 43 pokojů, „92 pevných lôžok a 16 prísteliek";
+    tatryportal.sk „104 lôžok"; smnd.sk „má hotel 110 lôžok" (po roce 2010)
+    a 130 lůžek při otevření roku 1968; vysoketatry.com „120 miest na
+    ubytovanie a stravovanie". Protože ani provozovatel sám žádné číslo lůžek
+    neuvádí, není tu jeden pramen, kterému by patřila přednost, a rozpor se
+    řeší nejnižším doloženým počtem pevných lůžek.
+    Vedle hotelových pokojů je tu i turistická ubytovna: vlastní web —
+    „priestrannú dvanásťlôžkovú turistickú ubytovňu s vlastnou kúpeľňou",
+    40 € za lůžko a noc.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    TOHLE JE V KORPUSU VZÁCNÝ PŘÍPAD, KDY JE OBSLUHA NEUBYTOVANÝCH DOLOŽENÁ
+    PŘÍMO PROVOZOVATELEM. Vlastní web hotelu (čteno 9. 8. 2026) vede vedle
+    hotelové restaurace samostatný provoz „Sliezsky domček – bufetová
+    turistická reštaurácia" s vlastní otevírací dobou: „Sliezsky domček je
+    otvorený denne v čase 08:30 – 20:30 hod." Hotelová restaurace má
+    07:00–21:00, à la carte „od 11.00 hod do 17:00 hod." Letní terasa je
+    sezónní — „od júna až do konca septembra", až sto míst. Nezávisle:
+    tatryportal.sk „Turistická časť s občerstvením je dostupná aj
+    neubytovaným hosťom."; turisticky.sk „Turistický bufet »Sliezsky domček«
+    za hotelom… Otvorené majú celoročne." Bufet vznikl přestavbou bývalého
+    Klubu horských vodcov (menucka.sk).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: >-
+  bufet Sliezsky domček denně 8.30–20.30; hotelová restaurace 7.00–21.00,
+  jídla à la carte 11.00–17.00; letní terasa jen od června do konce září
+overeniProvoz:
+  source: >-
+    Celoroční provoz uvádí shodně kamnavylety.sk („Horský hotel je aj napriek
+    svojej polohe otvorený celoročne."), tatryportal.sk, vysoketatry.com
+    i turisticky.sk (vše čteno 9. 8. 2026). U tohohle objektu „otevřeno"
+    znamená „dostupné" víc než u ostatních tatranských chat — vede sem
+    asfaltová cesta. I ta se ale dá uzavřít: v červenci 2024 ji zavřeli kvůli
+    opravě sesuvu ve výšce asi 1300 m, kde byl svah pod cestou podmytý;
+    pěší i zásobování projeli, cyklisté se dostali jen k Velickému mostu
+    (slovensko.sp21.sk, 28. 7. 2024).
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421911882879'
+  email: recepcia@sliezskydom.sk
+  web: https://www.sliezskydom.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1895
+overeniHistorie:
+  source: >-
+    ROK 1895 JE ROKEM PRVNÍHO SLIEZSKEHO DOMU, NE PRVNÍ STAVBY NA MÍSTĚ ANI
+    DNEŠNÍ BUDOVY — obojí je popsáno v milnících. nostalgicketatry.sk (čteno
+    9. 8. 2026): „Výstavba započala v roku 1894 a slávnostné otvorenie za
+    prítomnosti viac ako 100 hostí sa uskutočnilo 2. júna 1895."; stavitelem
+    byl „Gustáv Husz (1847–1918) z Tvarožnej", pozemek a materiál daroval
+    „Pavol Weszter Z Veĺkého Slavkova", prvním nájemcem byl Ján Greisiger.
+    Stavebníkem byla Sliezska sekce Uhorského karpatského spolku se sídlem ve
+    Vratislavi.
+    ROZPOR O MATERIÁLU PRVNÍ BUDOVY, nesrovnaný: nostalgicketatry.sk
+    „Murovaná prízemná budova s plochou strechou mala kuchyňu, jedáleň a 8
+    izieb", kdežto nazvoslovie.tatryblog.sk i vysoketatry.com mluví o
+    „prízemnú drevenú budovu". Prameny se liší i v tom, odkud Husz pocházel
+    (Tvarožná × Poprad).
+    Dnešní budova je z roku 1968 — „Na jeho mieste v roku 1968 dali do
+    prevádzky terajší horský hotel" (nostalgicketatry.sk); smnd.sk datuje
+    stavbu 1965–1968 a otevření se 130 lůžky. Jméno projektanta dnešní budovy
+    neuvádí žádný nalezený pramen.
+    Vlastnictví dnes: vlastní web „člen skupiny Premium Star Hotels";
+    tatryportal.sk uvádí jako operátora „Elevation, spol. s r.o.".
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1871
+    udalost: >-
+      U Velického plesa postavil hospodář Eduard Blásy z Popradu-Veľkej
+      první chatu Velické doliny, kamennou trojprostorovou útulnu bez
+      hospodáře, placenou z darů návštěvníků Starého Smokovca.
+    zdroj: >-
+      nazvoslovie.tatryblog.sk (čteno 9. 8. 2026) — „skromnú trojpriestorovú
+      kamennú útulňu bez hospodára"; sk.unionpedia.org: „Blásyho chata bola
+      prvou chatou, ktorá stála vo Velickej doline vo Vysokých Tatrách."
+  - rok: 1873
+    udalost: >-
+      Blásyho chatu strhla sněhová lavina z Velických Granátů; zbytky zdí
+      jsou podle pramene vidět dodnes. Prameny se v roce rozcházejí — jeden
+      uvádí březen 1874 a chatu klade na druhý břeh plesa.
+    zdroj: >-
+      nazvoslovie.tatryblog.sk (čteno 9. 8. 2026) — „Už v marci 1873 ju
+      zničila snehová lavína z Velických Granátov. Pozostatky múrov vidno
+      ešte dodnes."; oproti tomu vysoketatry.com — „Prvá kamenná chatka
+      z roku 1871 stála na východnom brehu Velického plesa. V marci 1874 ju
+      zmietla snehová lavína."
+  - rok: 1878
+    udalost: >-
+      Uhorský karpatský spolok postavil na Vyšné velické poľane Hunfalvyho
+      chatu, pojmenovanou po Jánu Hunfalvym. Sloužila do roku 1895, kdy ji
+      nahradil Sliezsky dom; roku 1913 vyhořela.
+    zdroj: >-
+      nazvoslovie.tatryblog.sk (čteno 9. 8. 2026); požár 1913 uvádí
+      portaltatra.sk.
+  - rok: 1895
+    udalost: >-
+      Sliezska sekce Uhorského karpatského spolku se sídlem ve Vratislavi
+      otevřela 2. června za účasti více než sta hostů první Sliezsky dom;
+      postavil ho stavitel Gustáv Husz, pozemek a materiál daroval Pavol
+      Weszter z Veľkého Slavkova.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „slávnostné otvorenie za
+      prítomnosti viac ako 100 hostí sa uskutočnilo 2. júna 1895."
+  - rok: 1929
+    udalost: >-
+      Sliezsky dom má vlastní elektrárnu.
+    zdroj: >-
+      nazvoslovie.tatryblog.sk (čteno 9. 8. 2026) — „Po otvorení Sliezskeho
+      domu mal od roku 1929 vlastnú elektráreň."
+  - rok: 1962
+    udalost: >-
+      Chata s více než stolůžkovou kapacitou v noci z 29. na 30. listopadu
+      celá vyhořela.
+    zdroj: >-
+      nazvoslovie.tatryblog.sk (čteno 9. 8. 2026) — „Vynovená chata s vyše
+      stolôžkovou kapacitou celkom vyhorela v noci z 29. na 30. 11. 1962.";
+      shodně nostalgicketatry.sk.
+  - rok: 1968
+    udalost: >-
+      Na místě vyhořelé chaty byl uveden do provozu dnešní horský hotel.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „Na jeho mieste v roku 1968
+      dali do prevádzky terajší horský hotel"; smnd.sk datuje stavbu
+      1965–1968 a otevření se 130 lůžky.
+  - rok: 1995
+    udalost: >-
+      Na Sliezskem domě strávil při své druhé návštěvě Slovenska pět hodin
+      papež Jan Pavel II.; požehnal kříž na svahu u hotelu a členům Horské
+      služby TANAP cepín a lano.
+    zdroj: >-
+      regiontatry.sk (čteno 9. 8. 2026) — pobyt 3. 7. 1995, pět hodin,
+      požehnání kříže, vyhlídkový let vrtulníkem, podpis do kroniky;
+      tatryportal.sk — „počas pobytu posvätil horolezecký čakan a lano."
+  - rok: 2011
+    udalost: >-
+      Hotel dokončil kompletní rekonstrukci zahájenou roku 2009.
+    zdroj: >-
+      vlastní web hotelu (čteno 9. 8. 2026) — „Sliezsky dom prešiel v rokoch
+      2009 až 2011 kompletnou rekonštrukciou."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      K hotelu patřila maštal pro dvě krávy, které provoz zásobovaly čerstvým
+      mlékem.
+    kategorie: gastro
+    zdroj: >-
+      vlastní web hotelu (čteno 9. 8. 2026) — „maštaľ pre dve kravy, ktoré
+      zásobovali prevádzku čerstvým mliekom".
+  - text: >-
+      Turistický bufet Sliezsky domček vznikl přestavbou bývalého Klubu
+      horských vůdců.
+    kategorie: gastro
+    zdroj: >-
+      menucka.sk (čteno 9. 8. 2026) — „Bývalý Klub horských vodcov prerobili
+      na samoobslužnú reštauráciu s tradičnými slovenskými jedlami".
+  - text: >-
+      Roku 1998 psaly noviny o tom, že majitel hotelu vlastní budovu, ale ne
+      pozemek pod ní — ten i příjezdová cesta patřily Štátnym lesom TANAP.
+    kategorie: jine
+    zdroj: >-
+      sme.sk, 15. 8. 1998 (čteno 9. 8. 2026) — „Nový majiteľ horského hotela
+      Sliezsky dom – BSD Tatry Slovakia, spol. s r. o., vlastní iba budovu
+      hotela, ale nie pozemok, na ktorom je postavený."
+  - text: >-
+      Stavitel prvního Sliezskeho domu podle pramene trval na tom, že budova
+      musí být přízemní, aby netrpěla větry z doliny.
+    kategorie: jine
+    zdroj: >-
+      nazvoslovie.tatryblog.sk (čteno 9. 8. 2026) — „Projektant budovy,
+      popradský staviteľ Husz tvrdošijne obhajoval názor, že Sliezsky dom
+      musí byť prízemný, aby netrpel vetrami z doliny."
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hotel ve Velické dolině u Velického plesa, který navazuje na řadu
+  chat sahající k roku 1871. První Sliezsky dom tu roku 1895 postavila
+  Sliezska sekce Uhorského karpatského spolku z Vratislavi; dnešní budova je
+  z roku 1968. Turistický bufet obslouží i toho, kdo tu nespí.
+text:
+  - >-
+    Sliezsky dom stojí v 1670 metrech ve Velické dolině, na břehu Velického
+    plesa. Je to ze všech objektů tohohle průvodce ve Vysokých Tatrách ten
+    nejméně „chatový" — je to hotel se čtyřiceti čtyřmi pokoji, wellness
+    a asfaltovou cestou až ke dveřím. Provozovatel o něm píše jako
+    o „najvyššie položenom hoteli s komplexnou vybavenosťou na Slovensku"
+    a Visit Tatry jako o „the highest-altitude mountain hotel in Slovakia".
+    Neznamená to nejvýše položené ubytování v Tatrách: výš stojí Chata pod
+    Rysmi i Téryho chata, jen to nejsou hotely.
+  - >-
+    Místo má neobvykle dlouhou stavební řadu. Roku 1871 tu hospodář Eduard
+    Blásy z Popradu-Veľkej postavil kamennou útulnu bez hospodáře, placenou
+    z darů návštěvníků Starého Smokovca — první chatu celé Velické doliny.
+    Vydržela dva roky, pak ji strhla lavina z Velických Granátů; prameny se
+    přou, jestli v březnu 1873, nebo 1874, a jestli stála na západním, nebo
+    východním břehu plesa. Zbytky zdí jsou prý vidět dodnes. Roku 1878 přišla
+    Hunfalvyho chata Uhorského karpatského spolku a roku 1895 první Sliezsky
+    dom.
+  - >-
+    Ten postavila Sliezska sekce téhož spolku, sídlící ve Vratislavi — odtud
+    jméno, které objekt nese dodnes a které se v dobových jazycích psalo jako
+    Schlesierhaus, Sziléziai-ház nebo Ślaski Dom. Otevřeli ho 2. června 1895
+    za účasti více než sta hostů. Stavěl ho Gustáv Husz, pozemek a materiál
+    daroval Pavol Weszter z Veľkého Slavkova. Jestli byla první budova zděná,
+    nebo dřevěná, se prameny neshodnou; shodnou se na tom, že byla přízemní,
+    protože stavitel podle jednoho z nich tvrdošíjně hájil názor, že jinak by
+    trpěla větry z doliny.
+  - >-
+    V noci z 29. na 30. listopadu 1962 chata celá vyhořela. Dnešní hotel na
+    jejím místě funguje od roku 1968 a poslední velkou rekonstrukcí prošel
+    v letech 2009 až 2011.
+  - >-
+    Na jídlo sem může přijít i ten, kdo tu nespí — a to se v tomhle průvodci
+    u tatranských objektů nedá napsat často. Vedle hotelové restaurace
+    provozuje hotel samostatný bufet Sliezsky domček s vlastní otevírací
+    dobou 8.30 až 20.30, který vznikl přestavbou bývalého Klubu horských
+    vůdců. Od června do konce září k tomu přibude letní terasa.
+  - >-
+    Chodí se sem z Tatranské Polianky po zelené, přes Velický most
+    a Velickou poľanu; prameny udávají od dvou do necelých tří hodin
+    a převýšení kolem 680 metrů. Vede sem i asfaltová cesta, ale je vyhrazená
+    pro zásobování a hosty s registrací. Že ani ona není samozřejmost, ukázal
+    červenec 2024, kdy ji kvůli podmytému svahu ve výšce asi 1300 metrů
+    museli zavřít a zajišťovat osmačtyřiceti mikropiloty.
+  - >-
+    Zvlášť často se v pramenech připomíná 3. červenec 1995, kdy tu pět hodin
+    strávil
+    papež Jan Pavel II. Požehnal kříž na svahu nad hotelem, letěl vrtulníkem
+    nad Velickou dolinu a členům Horské služby TANAP požehnal cepín a lano.
+    Pamětní tabulka je na okružním chodníku kolem plesa.
+  - >-
+    Kolik má hotel lůžek, poctivě nevíme. Vlastní web žádné číslo neuvádí,
+    mluví o 44 pokojích a až 125 hostech; ostatní prameny se pohybují mezi 92
+    a 130. Na téhle stránce je zapsané to nejnižší doložené — 92 pevných
+    lůžek.
+  - >-
+    Údaje nese vlastní web hotelu, nostalgicketatry.sk, nazvoslovie.
+    tatryblog.sk, vysoketatry.com, tatryportal.sk, turisticky.sk,
+    regiontatry.sk, sme.sk a slovensko.sp21.sk; polohu OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hotelu — výška 1670 m, 44 pokojů a až 125 hostů,
+      dvanáctilůžková turistická ubytovna, bufet Sliezsky domček 8.30–20.30,
+      letní terasa červen–září, rekonstrukce 2009–2011, maštal pro dvě krávy
+      (načteno 9. 8. 2026)
+    url: https://www.sliezskydom.sk/sk/o-hoteli
+  - popis: >-
+      nostalgicketatry.sk — Sliezska sekce UKS z Vratislavi, otevření
+      2. 6. 1895, stavitel Gustáv Husz, dárce pozemku Pavol Weszter, požár
+      29./30. 11. 1962, dnešní hotel od 1968 (načteno 9. 8. 2026)
+    url: https://www.nostalgicketatry.sk/historia/sliezskydom
+  - popis: >-
+      nazvoslovie.tatryblog.sk, heslo Sliezsky dom — dřevěná přízemní budova,
+      argument stavitele o větrech, vlastní elektrárna od 1929, cizojazyčné
+      názvy (načteno 9. 8. 2026)
+    url: https://nazvoslovie.tatryblog.sk/h/2120-sliezsky-dom.php
+  - popis: >-
+      nazvoslovie.tatryblog.sk, heslo Blásyho chata — první chata Velické
+      doliny 1871, Eduard Blásy, lavina březen 1873, zbytky zdí
+      (načteno 9. 8. 2026)
+    url: https://nazvoslovie.tatryblog.sk/h/2118-blasyho-chata.php
+  - popis: >-
+      vysoketatry.com — výška 1670 m, odchylná datace laviny (březen 1874)
+      a východní břeh plesa, 120 míst, časy přístupů (načteno 9. 8. 2026)
+    url: https://www.vysoketatry.com/chaty/sdom/sdom.html
+  - popis: >-
+      tatryportal.sk — 104 lůžek, operátor Elevation spol. s r.o., režim
+      asfaltové cesty, občerstvení dostupné i neubytovaným
+      (načteno 9. 8. 2026)
+    url: https://www.tatryportal.sk/tura/sliezsky-dom/
+  - popis: >-
+      turisticky.sk — celoroční provoz bufetu, časy tras z Tatranské Polianky
+      a Hrebienku, parkování, pamětní tabulka (načteno 9. 8. 2026)
+    url: https://turisticky.sk/turistika/sliezsky-dom/
+  - popis: >-
+      regiontatry.sk — pobyt Jana Pavla II. 3. 7. 1995, pět hodin, požehnání
+      kříže, cepínu a lana (načteno 9. 8. 2026)
+    url: https://regiontatry.sk/jan-pavol-ii-vo-vysokych-tatrach/
+  - popis: >-
+      sme.sk, 15. 8. 1998 — majitel vlastní budovu, ale ne pozemek pod ní
+      (načteno 9. 8. 2026)
+    url: https://www.sme.sk/c/2162313/novy-majitel-sliezskeho-domu-vlastni-budovu-ale-nie-pozemok-pod-hotelom.html
+  - popis: >-
+      slovensko.sp21.sk, 28. 7. 2024 — uzavření asfaltové cesty kvůli sesuvu
+      ve výšce asi 1300 m, 48 mikropilotů (načteno 9. 8. 2026)
+    url: https://www.slovensko.sp21.sk/a/21736/cestu-na-sliezsky-dom-vo-vysokych-tatrach-uzavreli-opravuju-usek-ktory-sa-moze-odtrhnut
+  - popis: >-
+      menucka.sk — Sliezsky domček jako samoobslužná restaurace vzniklá
+      z bývalého Klubu horských vodcov (načteno 9. 8. 2026)
+    url: https://menucka.sk/denne-menu/vysoke-tatry/sliezsky-domcek-bufetova-turisticka-restauracia
+  - popis: >-
+      OpenStreetMap (GPS, tourism=hotel; ODbL)
+    url: https://www.openstreetmap.org/way/65383743
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/sliezsky-dom.yaml (9. 8. 2026).
+  Jediný objekt oblasti s typem horsky-hotel.
+
+  KLÍČ ZAŘAZENÍ JE TU SPLNĚN DOLOŽENĚ, NE JEN PRAVDĚPODOBNĚ. Na rozdíl od
+  Téryho, Zbojníckej a Chaty pod Rysmi, kde prameny o obsluze neubytovaných
+  mlčí, tady provozovatel sám vede bufet jako „turistickú reštauráciu"
+  s vlastní otevírací dobou a dva nezávislé prameny to říkají výslovně.
+  Je to zatím jediný tatranský objekt korpusu s touto úrovní dokladu.
+
+  SUPERLATIV JE ZÚŽENÝ NA KATEGORII HOTEL, a to i v próze. Provozovatel
+  formuluje nejopatrnější variantu: „najvyššie položený hotel s komplexnou
+  vybavenosťou na Slovensku". Ostatní prameny (Visit Tatry, dnes24.sk,
+  zlavadna.sk, toptrendy.sk) zkracují na „najvyššie položený hotel na
+  Slovensku". Do prózy šla verze s atribucí a s výslovným upřesněním, že
+  výš stojí Chata pod Rysmi a Téryho chata, protože ynta.sk vede Sliezsky
+  dom v žebříčku chat až na osmém místě a klasifikuje ho jako hotel.
+
+  KAPACITA — ROZPOR, KTERÝ SE NEDÁ ZAVŘÍT. 92 / 104 / 110 / 120 / 125 / 130
+  podle pramene. Zapsáno 92 (nejnižší, konvence 27. 7. 2026). Nešlo použít
+  obvyklé „provozovatel má přednost", protože vlastní web počet lůžek vůbec
+  neuvádí — mluví o 44 pokojích a 125 hostech, což je jiná veličina.
+
+  NEDOLOŽENO (nezapsáno): projektant dnešní budovy z roku 1968; jakékoli
+  události 1. a 2. světové války; přesná právní forma dnešního vlastnictví
+  (vlastní web „člen skupiny Premium Star Hotels", tatryportal.sk
+  „Elevation, spol. s r.o.", zlavadna.sk „Premium Star Hotels, a.s.").
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.
