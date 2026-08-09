@@ -29,6 +29,64 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-09 (třináctý blok) — lanovky pro všechna pohoří a první dva profily Nízkých Tater
+
+Michalův pokyn z průběhu dne: *„rovnau dohledej i lanovky pro vsechny
+pohori ktera je jeste nemaji"*.
+
+**Hotovo:**
+
+**LANOVKY: LEHKÁ PIPELINE HOTOVÁ, čeká na tři kliky.** Přehled lanovek
+(DATA-32) dosud stál na vrstvě `aerialway` z 3D terénu DATA-28 — a ten
+doběhl jen pro čtyři oblasti, protože je to těžký běh s celým výškovým
+modelem. Nový `scripts/data32-lanovky-export.ts` je lehká cesta: stáhne
+z Overpass jen `way["aerialway"]` v okně oblasti (tytéž instance a retry
+jako DATA-01, pojistka na `remark` jako DATA-37), koncovým bodům drah pro
+pěší doměří výšky přes Mapy.com Elevation API (týž helper jako DATA-06)
+a zapíše `data/lanovky/_export-<oblast>.json`. `data32-lanovky.ts` dostal
+fallback: když chybí terén DATA-28, vezme tenhle export a výšku hledá
+jako nejbližší doměřený bod do 50 m (pylony a vleky poctivě zůstávají bez
+výšky). Fallback ověřen syntetickým exportem (dráha, vlek, chata 265 m od
+horní stanice — vše dopadlo do správných polí); primární cesta ověřena
+regenerací Krkonoš. Workflow **„DATA-32: lanovky oblasti (export +
+přehled)"** spustí obojí za sebou a commitne export i přehled; kliky pro
+`vysoke-tatry`, `beskydy` a `nizke-tatry` jsou v KLIKY-PRO-MICHALA
+(oddíl 3) — ostatní založené oblasti počkají, až budou mít publikované
+profily, protože přehled lanovek bez chat nemá na webu k čemu odkazovat.
+Vedlejší nález: `data/lanovky/krkonose.json` se při ověření přegeneroval
+z čerstvějšího terénu v repu (stav OSM 2026-07-31, vleků 261 místo 254)
+— commitnuto, je to táž deterministická cesta z commitnutého vstupu.
+
+**PRVNÍ DVA PROFILY NÍZKÝCH TATER, korpus 181.** **Chata generála M. R.
+Štefánika** (1740 m dle provozovatele × 1727 hiking.sk — přiznáno;
+základní kámen 20. 7. 1924, otevření 9. 9. 1928, palír Róbert Petrla
+první chatár) s nejdůležitější otevřenou věcí hned v perexu: KST
+vypověděl po 35 letech smlouvu chatáři Fabriciusovi, nový nájemce si
+chatu 1. 7. 2026 nepřevzal a spor řeší soud (STVR 7/2026) — kdo chatu
+povede, profil poctivě neví a kontakty vede jako „dosavadní". Kapacita
+48 dle konvence nižšího čísla (ceník provozovatele vracel 401). Obsluha
+neubytovaných doložená výslovně („prízemné okno kuchyne ako bufet").
+**Kamenná chata pod Chopkom** (1985 m — shoda tří pramenů včetně
+provozovatele proti starším 2000; útulna pro dělníky stavějící lanovky
+1949–50, „partia nadšencov" od 7. 5. 1996, zákaz vlastních spacáků,
+programově bez wi-fi) — a jako PRVNÍ PROFIL KORPUSU dostala fotku
+z kandidátů FOTO-04: záběr Michala Klajbana (CC BY-SA 3.0, 2012),
+identifikovaný prohlídkou při výběru hero fotky oblasti. Kapacita 20 dle
+aktuálního ceníku provozovatele (vzor Zamkovského chaty: zastaralost
+pramene po doložené rekonstrukci není rozpor). Drobnost cestou: Radegast
+jmenoval v próze beskydy.cz, ale v pramenech ho neměl — připsán.
+
+**Příště:** triáž 230 kandidátů Nízkých Tater vzorem VT-03 (jádro 9
+alpine_hut + 36 wilderness_hut; první rozhodnutí Kosodrevina 151 m
+a příslušnost Smrekovice po kliku velka-fatra); povyšování z beskydského
+jádra fronty. Po Michalových klicích DATA-32 dostanou Tatry, Beskydy
+a Nízké Tatry přehledy lanovek — a profily Kamienky i Štefáničky na ně
+budou moct odkázat.
+
+**Otázky pro Michala:** beze změny (1–7, 9 z jedenáctého bloku); k tomu
+**tři nové kliky DATA-32** (KLIKY oddíl 3) a připomínka druhého běhu
+DATA-02 — Kamienka fotku má, Štefánička na ni čeká.
+
 ## 2026-08-09 (dvanáctý blok, dovětek večera) — Radegast, Slavíč a první klik Nízkých Tater
 
 Pokračování osmihodinového pověření z jedenáctého bloku.

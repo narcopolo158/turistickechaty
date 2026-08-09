@@ -1,0 +1,86 @@
+# DATA-32: lanovky oblasti — lehký export z Overpass (way["aerialway"])
+# + výšky koncových bodů z Mapy.com Elevation API + přehled pro web.
+# Sandbox denních sessions na Overpass ani api.mapy.com nedosáhne (proxy),
+# GitHub Actions ano. Původní cesta (vrstva aerialway z 3D terénu DATA-28)
+# zůstává primární tam, kde DATA-28 doběhl; tenhle workflow pokrývá zbylá
+# pohoří bez těžkého výškového modelu. Commitne _export-<oblast>.json
+# (surová geometrie + výšky) i <oblast>.json (přehled pro web).
+name: 'DATA-32: lanovky oblasti (export + přehled)'
+
+on:
+  workflow_dispatch:
+    inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet | sumava | beskydy | jeseniky | javorniky-vsetinske-vrchy | mala-fatra | oravska-magura | zapadne-tatry | vysoke-tatry | nizke-tatry | krusne-hory | orlicke-hory | velka-fatra | slovensky-raj | luzicke-hory | bieszczady'
+        required: true
+        default: 'vysoke-tatry'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data32-lanovky
+  cancel-in-progress: false
+
+jobs:
+  lanovky:
+    name: Overpass + Elevation → data/lanovky
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Aktualizovat main před generováním
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main
+
+      - name: Export z Overpass + výšky z Mapy.com
+        # Explicitní shell: bash zapíná pipefail — pád skriptu se nesmí
+        # ztratit v pipe přes tee (lekce z prvního běhu DATA-01).
+        shell: bash
+        env:
+          OBLAST_INPUT: ${{ inputs.oblast }}
+          MAPY_API_KEY: ${{ secrets.MAPY_API_KEY }}
+        run: |
+          npx tsx scripts/data32-lanovky-export.ts --oblast "${OBLAST_INPUT}" | tee report.txt
+          echo '## DATA-32 — export' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Přehled lanovek pro web
+        shell: bash
+        env:
+          OBLAST_INPUT: ${{ inputs.oblast }}
+        run: |
+          npx tsx scripts/data32-lanovky.ts --oblast "${OBLAST_INPUT}" | tee prehled.txt
+          echo '## DATA-32 — přehled' >> "$GITHUB_STEP_SUMMARY"
+          cat prehled.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit exportu i přehledu do main
+        shell: bash
+        env:
+          OBLAST_INPUT: ${{ inputs.oblast }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "data/lanovky/_export-${OBLAST_INPUT}.json" "data/lanovky/${OBLAST_INPUT}.json"
+          if git diff --cached --quiet; then
+            echo 'Žádná změna lanovek — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m "data: lanovky oblasti ${OBLAST_INPUT} (DATA-32, z Actions)" -m 'Export way["aerialway"] z Overpass (ODbL) + výšky koncových bodů z Mapy.com Elevation API; přehled pro web bere jen dráhy, které vyvezou pěšího.'
+          for pokus in 1 2; do
+            git pull --rebase origin main && git push origin main && exit 0
+            echo "push se nepovedl (pokus ${pokus}) — zkouším znovu za 10 s"
+            sleep 10
+          done
+          echo '::error::Nepodařilo se pushnout ani na druhý pokus — spusť workflow znovu.'
+          exit 1

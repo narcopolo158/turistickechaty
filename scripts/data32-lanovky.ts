@@ -80,7 +80,8 @@ export const vzdM = (aLat: number, aLng: number, bLat: number, bLng: number): nu
 
 const delkaTrasy = (body: [number, number][]): number => {
   let d = 0
-  for (let i = 1; i < body.length; i++) d += vzdM(body[i - 1][0], body[i - 1][1], body[i][0], body[i][1])
+  for (let i = 1; i < body.length; i++)
+    d += vzdM(body[i - 1][0], body[i - 1][1], body[i][0], body[i][1])
   return d
 }
 
@@ -113,7 +114,12 @@ export function vyskaZMrizky(
 
 /** Normalizace jména pro spojování úseků (diakritika a mezery neřeší identitu). */
 const klicJmena = (s: string | null): string =>
-  (s ?? '').normalize('NFD').replace(/[̀-ͯ]/gu, '').toLowerCase().replace(/[^a-z0-9]+/gu, ' ').trim()
+  (s ?? '')
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/gu, ' ')
+    .trim()
 
 /**
  * Spojí úseky téhož jména, jejichž konce na sebe navazují (do `prah` metrů).
@@ -168,7 +174,12 @@ const nactiProfily = (oblast: string): Profil[] => {
     if (!f.endsWith('.yaml') || f.startsWith('_')) continue
     const d = parse(readFileSync(join(adr, f), 'utf8')) as Record<string, unknown>
     if (typeof d.lat === 'number' && typeof d.lng === 'number' && typeof d.nazev === 'string')
-      out.push({ slug: String(d.slug ?? f.replace(/\.yaml$/u, '')), nazev: d.nazev, lat: d.lat, lng: d.lng })
+      out.push({
+        slug: String(d.slug ?? f.replace(/\.yaml$/u, '')),
+        nazev: d.nazev,
+        lat: d.lat,
+        lng: d.lng,
+      })
   }
   return out
 }
@@ -201,12 +212,18 @@ export function sestavLanovky(
     }
     const delka = Math.round(skupina.reduce((s, u) => s + delkaTrasy(u.body), 0))
     const uHorni = profily
-      .map((p) => ({ slug: p.slug, nazev: p.nazev, vzdalenostM: Math.round(vzdM(horni[0], horni[1], p.lat, p.lng)) }))
+      .map((p) => ({
+        slug: p.slug,
+        nazev: p.nazev,
+        vzdalenostM: Math.round(vzdM(horni[0], horni[1], p.lat, p.lng)),
+      }))
       .filter((p) => p.vzdalenostM <= 1500)
       .sort((a, b) => a.vzdalenostM - b.vzdalenostM)
     const typ = skupina[0].typ
     out.push({
-      id: (klicJmena(skupina[0].nazev) || `bezejmenna-${horni[0].toFixed(4)}-${horni[1].toFixed(4)}`).replace(/ /gu, '-'),
+      id: (
+        klicJmena(skupina[0].nazev) || `bezejmenna-${horni[0].toFixed(4)}-${horni[1].toFixed(4)}`
+      ).replace(/ /gu, '-'),
       nazev: skupina[0].nazev,
       typ,
       typNazev: TYP_NAZEV[typ] ?? typ,
@@ -220,42 +237,90 @@ export function sestavLanovky(
   }
   // Nejdřív ty, které někam k chatě vyvezou (to je smysl přehledu), pak dle délky.
   return out.sort((a, b) => {
-    if (!!a.uHorniStanice.length !== !!b.uHorniStanice.length) return a.uHorniStanice.length ? -1 : 1
+    if (!!a.uHorniStanice.length !== !!b.uHorniStanice.length)
+      return a.uHorniStanice.length ? -1 : 1
     return b.delkaM - a.delkaM
   })
 }
 
 // ── běh ─────────────────────────────────────────────────────────────────────
-if (process.argv[1] && process.argv[1].includes('data32-lanovky')) {
+if (
+  process.argv[1] &&
+  process.argv[1].includes('data32-lanovky') &&
+  !process.argv[1].includes('data32-lanovky-export')
+) {
   const oblast = oblastZArgv()
-  const jmenoJson = oblast.slug === 'krkonose' ? '3d-teren-data.json' : `3d-teren-data-${oblast.slug}.json`
+  const jmenoJson =
+    oblast.slug === 'krkonose' ? '3d-teren-data.json' : `3d-teren-data-${oblast.slug}.json`
   const cesta = join(KOREN, 'docs', 'experimenty', jmenoJson)
-  if (!existsSync(cesta)) {
-    console.error(`✗ Chybí ${jmenoJson} — nejdřív musí doběhnout DATA-28 (3D terén) pro oblast ${oblast.slug}.`)
+  const cestaExport = join(KOREN, 'data', 'lanovky', `_export-${oblast.slug}.json`)
+
+  let surove: SurovaLanovka[]
+  let vyska: (lat: number, lng: number) => number | null
+  let stavOsm: string | null
+  let zdrojVysek: string | null
+  let zdroj: string
+
+  if (existsSync(cesta)) {
+    // Primární cesta: těžký export DATA-28 s celou výškovou mřížkou.
+    const teren = JSON.parse(readFileSync(cesta, 'utf8')) as {
+      bbox: { latMin: number; lngMin: number; latMax: number; lngMax: number }
+      nx: number
+      ny: number
+      grid: number[][]
+      lanovky?: SurovaLanovka[]
+      stavOsm?: string
+      zdrojVysky?: string
+    }
+    surove = teren.lanovky ?? []
+    vyska = (lat, lng) => vyskaZMrizky(teren.grid, teren.bbox, teren.nx, teren.ny, lat, lng)
+    stavOsm = teren.stavOsm ?? null
+    zdrojVysek = teren.zdrojVysky ?? null
+    zdroj =
+      'OpenStreetMap (tag aerialway) — data © přispěvatelé OpenStreetMap, ODbL 1.0 ' +
+      '(openstreetmap.org/copyright); přebráno z exportu pipeline DATA-28'
+  } else if (existsSync(cestaExport)) {
+    // Fallback: lehký export DATA-32b (jen dráhy + výšky koncových bodů).
+    // Výška se hledá jako nejbližší doměřený bod do 50 m — koncové body drah
+    // pro pěší v exportu jsou, pylony a vleky ne, ty zůstanou bez výšky.
+    const exportni = JSON.parse(readFileSync(cestaExport, 'utf8')) as {
+      lanovky?: SurovaLanovka[]
+      vysky?: { lat: number; lng: number; vyska: number }[]
+      stavOsm?: string
+      zdrojVysky?: string
+    }
+    surove = exportni.lanovky ?? []
+    const body = exportni.vysky ?? []
+    vyska = (lat, lng) => {
+      let nej: { d: number; v: number } | null = null
+      for (const b of body) {
+        const d = vzdM(lat, lng, b.lat, b.lng)
+        if (d <= 50 && (!nej || d < nej.d)) nej = { d, v: b.vyska }
+      }
+      return nej ? nej.v : null
+    }
+    stavOsm = exportni.stavOsm ?? null
+    zdrojVysek = exportni.zdrojVysky ?? null
+    zdroj =
+      'OpenStreetMap (way["aerialway"]) — data © přispěvatelé OpenStreetMap, ODbL 1.0 ' +
+      `(openstreetmap.org/copyright); přebráno z exportu data/lanovky/_export-${oblast.slug}.json (DATA-32b)`
+  } else {
+    console.error(
+      `✗ Chybí ${jmenoJson} i data/lanovky/_export-${oblast.slug}.json — nejdřív musí ` +
+        `doběhnout DATA-28 (3D terén), nebo lehčí export data32-lanovky-export.ts pro oblast ${oblast.slug}.`,
+    )
     process.exit(1)
   }
-  const teren = JSON.parse(readFileSync(cesta, 'utf8')) as {
-    bbox: { latMin: number; lngMin: number; latMax: number; lngMax: number }
-    nx: number
-    ny: number
-    grid: number[][]
-    lanovky?: SurovaLanovka[]
-    stavOsm?: string
-    zdrojVysky?: string
-  }
-  const surove = teren.lanovky ?? []
+
   const profily = nactiProfily(oblast.slug)
-  const vyska = (lat: number, lng: number) => vyskaZMrizky(teren.grid, teren.bbox, teren.nx, teren.ny, lat, lng)
   const lanovky = sestavLanovky(surove, profily, vyska)
 
   const vleku = surove.filter((l) => !PRO_PESI.has(l.typ)).length
   const vystup = {
     oblast: oblast.slug,
-    zdroj:
-      'OpenStreetMap (tag aerialway) — data © přispěvatelé OpenStreetMap, ODbL 1.0 ' +
-      '(openstreetmap.org/copyright); přebráno z exportu pipeline DATA-28',
-    stavOsm: teren.stavOsm ?? null,
-    zdrojVysek: teren.zdrojVysky ?? null,
+    zdroj,
+    stavOsm,
+    zdrojVysek,
     poznamka:
       'Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). ' +
       `Vleky a dětské pásy (${vleku} v témž exportu) přehled nevede. Převýšení je ` +
@@ -271,9 +336,14 @@ if (process.argv[1] && process.argv[1].includes('data32-lanovky')) {
   writeFileSync(join(adr, `${oblast.slug}.json`), JSON.stringify(vystup, null, 2) + '\n')
 
   console.log(`Oblast: ${oblast.nazev} | stav OSM dat: ${vystup.stavOsm}`)
-  console.log(`Drah pro pěší: ${lanovky.length} (z ${surove.length} aerialway; vleků a pásů ${vleku} — mimo přehled)`)
+  console.log(
+    `Drah pro pěší: ${lanovky.length} (z ${surove.length} aerialway; vleků a pásů ${vleku} — mimo přehled)`,
+  )
   for (const l of lanovky) {
-    const chaty = l.uHorniStanice.slice(0, 3).map((c) => `${c.nazev} (${c.vzdalenostM} m)`).join(', ')
+    const chaty = l.uHorniStanice
+      .slice(0, 3)
+      .map((c) => `${c.nazev} (${c.vzdalenostM} m)`)
+      .join(', ')
     console.log(
       ` · ${l.nazev ?? '(bez názvu)'} — ${l.typNazev}, ${l.delkaM} m` +
         (l.prevyseniM != null ? `, +${l.prevyseniM} m` : ', převýšení neznámé') +

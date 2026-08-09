@@ -1,0 +1,333 @@
+# Chata generála M. R. Štefánika („Štefánička") — první publikovaný profil
+# oblasti Nízké Tatry (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši
+# téhož dne. Vše verified: false — redakce nic neověřila vlastním dotazem
+# ani návštěvou.
+
+nazev: Chata generála Milana Rastislava Štefánika
+slug: chata-generala-milana-rastislava-stefanika
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Štefánička
+    poznamka: vžitá přezdívka (OSM alt_name; užívá ji i STVR a hiking.sk)
+  - nazev: Štefánikova chata
+    poznamka: alternativní název (OSM alt_name)
+  - nazev: Chata M. R. Štefánika
+    poznamka: alternativní název (OSM alt_name; tak se jmenuje i vlastní web)
+  - nazev: Chata hrdinov SNP
+    poznamka: název z poválečné éry do 21. 7. 1990 (hiking.sk, peakcellent.sk)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.926626
+lng: 19.649695
+vyska: 1740
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/798094483 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    hiking.sk uvádí prakticky shodně 48.92656 N, 19.64983 E. Poloha:
+    Ďumbierske sedlo v hlavním hřebeni Nízkých Tater, na rozcestí červené
+    (hřebenovka E8), modré, zelené a žluté značky (hiking.sk). VÝŠKA —
+    ROZPOR, přiznaný: vlastní web chaty nese 1740 m přímo v názvu („Chata
+    M. R. Štefánika pod Ďumbierom - 1740 m.n.m."; shodně peakcellent.sk),
+    hiking.sk uvádí 1727 m. Zapsáno je číslo provozovatele; rozdíl 13 m
+    nejde rozhodnout od stolu a telefonát ho nerozsoudí, spíš mapový
+    podklad (DATA-31).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 48
+overeniNocleh:
+  source: >-
+    hiking.sk (čteno 9. 8. 2026): „48 lôžok v 6 izbách po 8 nocľažníkov".
+    ROZPOR, přiznaný: turisticky.sk popisuje „šesť osemposteľových izieb
+    a jednu dvojposteľovú", tedy 50 lůžek. Dle konvence platí nižší číslo —
+    aktuální ceník provozovatele, který by rozpor rozhodl, se nepodařilo
+    načíst (podstránky chatamrs.sk vracely HTTP 401). Rezervace dle
+    turisticky.sk předem na rezervaciachatamrs@gmail.com nebo
+    +421 904 978 439.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    turisticky.sk (čteno 9. 8. 2026): „V reštaurácii ponúknu teplú polievku,
+    jedlo podľa aktuálnej sezóny" a „najvyššie čapované nosičské pivo na
+    strednom Slovensku"; vlastní web chaty stručně „Domáce jedlo".
+    OBSLUHA NEUBYTOVANÝCH JE DOLOŽENÁ VÝSLOVNĚ — hiking.sk: „Počas letnej
+    sezóny funguje prízemné okno kuchyne ako bufet." Speciality dle
+    hiking.sk: nosičský čaj, svištie mlieko, kotlíkový guláš, cesnačka,
+    fazuľová či šošovicová polévka.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    hiking.sk (čteno 9. 8. 2026): „Prevádzka celoročná s chatárom
+    a obslužným personálom"; shodně turisticky.sk („otvorená celoročne").
+    POZOR — KDO CHATU PROVOZUJE, JE OD LÉTA 2026 NEROZHODNUTO: vedení Klubu
+    slovenských turistů vypovědělo nájemní smlouvu chatáři Igoru
+    Fabriciusovi, který chatu vedl 35 let; nový nájemce si ji 1. 7. 2026
+    nepřevzal a spor řeší soud (spravy.stvr.sk, červenec 2026). O hosty se
+    podle téže reportáže zatím staral dosavadní chatár. Na chatu nevede
+    žádná sjízdná komunikace (hiking.sk).
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421904978439'
+  email: rezervaciachatamrs@gmail.com
+  web: https://chatamrs.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1928
+overeniHistorie:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): „Roku 1924 bol položený základný
+    kameň chaty M. R. Štefánika pod Ďumbierom" a „9.9.1928 sa chata
+    slávnostne otvorila. Prvým chatárom sa stal paľer Róbert Petrla."
+    Přesné datum základního kamene 20. 7. 1924 uvádí hiking.sk
+    i peakcellent.sk. Zapsán je rok otevření. Náklady 562 911 korun
+    (hiking.sk). ROZPOR O INICIÁTOROVI, přiznaný: dva články téhož webu
+    peakcellent.sk uvádějí jednou Uhorský karpatský spolok Zvolenskej župy,
+    podruhé Klub československých turistov; stavbu začala společnost Josefa
+    Jiráska, která od ní týž rok ustoupila, a dokončila ji popradská firma
+    Jozefa Šašinku (peakcellent.sk, shodně hiking.sk: „Stavba pokračovala
+    firmou Šašinka z Popradu"). Architekt/projektant se v pramenech najít
+    nepodařilo. Chata měla nahradit Karlovu ochrannou chatu z roku 1902 na
+    vrcholu Ďumbiera (vlastní web); osud Karlovy chaty prameny neuvádějí.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1924
+    udalost: >-
+      Položen základní kámen; stavbu začala společnost Josefa Jiráska, která
+      od ní ještě týž rok ustoupila, a dokončila ji popradská firma Jozefa
+      Šašinku.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Roku 1924 bol položený základný
+      kameň"; datum 20. 7. 1924 hiking.sk i peakcellent.sk; firmy
+      peakcellent.sk a hiking.sk.
+  - rok: 1928
+    udalost: >-
+      Chata byla 9. září slavnostně otevřena za odhadované účasti přes 500
+      turistů; prvním chatářem se stal palír Róbert Petrla.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „9.9.1928 sa chata slávnostne
+      otvorila. Prvým chatárom sa stal paľer Róbert Petrla"; účast
+      hiking.sk.
+  - rok: 1938
+    udalost: >-
+      Majetek převzal Klub slovenských turistov a lyžiarov (KSTL).
+    zdroj: >-
+      peakcellent.sk (čteno 9. 8. 2026).
+  - rok: 1944
+    udalost: >-
+      Za Slovenského národního povstání se na chatě ukrývali partyzáni;
+      v listopadu 1944 ji fašistická vojska značně poškodila.
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „V novembri roku 1944 bola chata
+      fašistickými vojakmi značne poškodená"; úkryt partyzánů
+      peakcellent.sk.
+  - rok: 1990
+    udalost: >-
+      Chata se 21. července oficiálně vrátila k původnímu jménu — po válce
+      až do roku 1990 nesla název Chata hrdinov SNP — a na průčelí byla
+      odhalena podobizna generála Štefánika.
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „K pôvodnému označeniu sa oficiálne
+      vracia až 21. júla 1990, keď na priečelí chaty odhaľujú podobizeň
+      generála Milana Rastislava Štefánika"; éru názvu Chata hrdinov SNP
+      peakcellent.sk. Rok poválečného přejmenování prameny neuvádějí.
+  - rok: 1991
+    udalost: >-
+      Chatu si od Klubu slovenských turistů pronajal chatár Igor Fabricius.
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „Od roku 1991 má chatu v prenájme od
+      Klubu slovenských turistov súčastný chatár Igor Fabricius"; shodně
+      vlastní web chaty.
+  - rok: 2026
+    udalost: >-
+      Vedení KST vypovědělo Fabriciusovi po 35 letech nájemní smlouvu; nový
+      nájemce si chatu 1. července nepřevzal a spor řeší soud. Kdo chatu
+      provozuje dál, bylo v létě 2026 nerozhodnuto.
+    zdroj: >-
+      spravy.stvr.sk, červenec 2026 (čteno 9. 8. 2026) — „Chatárovi Igorovi
+      Fabriciusovi, ktorý vedie Štefáničku 35 rokov, vypovedalo vedenie
+      Klubu slovenských turistov nájomnú zmluvu." … „Nový nájomca si 1. júla
+      chatu prevziať neprišiel."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Veškeré zásobování jde bez lanovky a bez cesty: podle vlastního webu
+      vynesou nosiči Trangošskou dolinou ročně 40 000 kilogramů materiálu
+      a zboží; v zimě pomáhá čtyřkolka se sněžnými pásy.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „40 000 kg materiálu a tovaru
+      na prevádzku chaty vynášajú nosiči ročne".
+  - text: >-
+      Statistika za rok 2025 podle bystricak.sk: na chatu se vyneslo celkem
+      108 000 kilogramů (nosiči, turisté, čtyřkolka i vrtulník); nejlepší
+      nosič Ivo Schwarzbacher vynesl za rok 4 871 kg. Nosí i turisté —
+      „Ďakujeme všetkým turistom, ktorí nám vynášajú drevo, a vďaka ktorým
+      je v chate teplo."
+    kategorie: jine
+    zdroj: >-
+      bystricak.sk (čteno 9. 8. 2026), roční statistika nosičů 2025.
+  - text: >-
+      Na chatě je stanice Horské záchranné služby.
+    kategorie: jine
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026).
+  - text: >-
+      O chatě a jejích lidech vyšla kniha „Štefánička: Príbehy chaty
+      a ľudí".
+    kategorie: jine
+    zdroj: >-
+      hiking.sk, recenze knihy (čteno 9. 8. 2026; obsah knihy redakce
+      nečetla).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná chata z roku 1928 v Ďumbierskom sedle na hlavní hřebenovce
+  Nízkých Tater, bez cesty a bez lanovky — zásobují ji nosiči. Po válce se
+  čtyřicet let jmenovala Chata hrdinov SNP; od roku 1991 ji vedl chatár
+  Igor Fabricius a o její nájem se v roce 2026 vede soudní spor.
+text:
+  - >-
+    Štefánička stojí v Ďumbierskom sedle přímo na hlavním hřebeni Nízkých
+    Tater, na rozcestí čtyř značek včetně červené hřebenovky E8. Vlastní web
+    nese výšku 1740 metrů přímo v názvu, hiking.sk uvádí 1727 — třináct
+    metrů, které od stolu nerozhodneme, a tak tu stojí číslo provozovatele
+    i s tímhle přiznáním. Nahoru nevede žádná sjízdná cesta.
+  - >-
+    Základní kámen se pokládal 20. července 1924 a stavba nezačala šťastně:
+    společnost Josefa Jiráska od ní ještě téhož roku ustoupila a dílo
+    dokončila až popradská firma Jozefa Šašinku za 562 911 korun. Kdo stavbu
+    inicioval, se prameny neshodnou — dva články téhož webu peakcellent.sk
+    uvádějí jednou Uhorský karpatský spolok, podruhé Klub československých
+    turistov. Slavnostní otevření přišlo 9. září 1928 za odhadované účasti
+    přes pět set turistů; prvním chatářem byl palír Róbert Petrla, tedy
+    stavbyvedoucí, který na chatě zůstal i po dostavbě. Chata měla nahradit
+    Karlovu ochrannou chatu z roku 1902 na vrcholu Ďumbiera.
+  - >-
+    Za Slovenského národního povstání se na chatě ukrývali partyzáni
+    a v listopadu 1944 ji fašistická vojska značně poškodila. Poválečná éra
+    jí vtiskla i nové jméno: Chata hrdinov SNP. K původnímu názvu se
+    oficiálně vrátila až 21. července 1990, kdy byla na průčelí odhalena
+    podobizna generála Štefánika.
+  - >-
+    Od roku 1991 měl chatu v pronájmu od Klubu slovenských turistů chatár
+    Igor Fabricius. Po pětatřiceti letech mu vedení klubu vypovědělo
+    smlouvu — jenže nový nájemce si chatu 1. července 2026 nepřevzal, spor
+    řeší soud a o hosty se i v létě 2026 dál staral dosavadní chatár. Kdo
+    bude Štefáničku vést dál, nebylo v létě 2026 rozhodnuto; kontakty níže
+    jsou ty dosavadní.
+  - >-
+    Spí se v pokojích po osmi — hiking.sk počítá 48 lůžek v šesti pokojích,
+    turisticky.sk přidává ještě jeden dvoulůžkový, a protože aktuální ceník
+    se načíst nepodařilo, platí podle konvence nižší číslo. Kuchyně vaří
+    kotlíkový guláš, česnečku i fazolovou a čepuje podle turisticky.sk
+    „najvyššie čapované nosičské pivo na strednom Slovensku"; v létě
+    funguje přízemní okno kuchyně jako bufet, takže se tu zastaví i ten,
+    kdo nahoře nespí. K tomu nosičský čaj a svištie mlieko — což je,
+    pro klid svišťů, punčovaný čaj.
+  - >-
+    Zásobování je tu řehole bez techniky: ročně vynesou nosiči Trangošskou
+    dolinou 40 000 kilogramů materiálu, v zimě pomáhá čtyřkolka se sněžnými
+    pásy. Statistika za rok 2025 napočítala dokonce 108 000 vynesených
+    kilogramů — nosí totiž i turisté, aspoň polínko na oheň. Na chatě
+    sídlí stanice Horské záchranné služby.
+  - >-
+    Přístupy podle hiking.sk: z Trangošky po zelené 1:40 h, z Kosodreviny
+    po modré 1:25 h, z Čertovice po červené hřebenovce 3:30 h, z Chopku po
+    červené 2:25 h (nahoru na Chopok jezdí lanovky z obou stran), z Vyšné
+    Boce po žluté 2:55 h, z Mýta pod Ďumbierom po žluté 3:55 h,
+    z Demänovské doliny po zelené 3:25 h a z Liptovského Jána po modré
+    4:40 h.
+  - >-
+    Údaje nesou vlastní web chaty, hiking.sk, turisticky.sk, peakcellent.sk,
+    bystricak.sk a reportáž spravy.stvr.sk; polohu OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — výška 1740 m v názvu webu, základní kámen 1924,
+      otevření 9. 9. 1928, první chatár Róbert Petrla, Fabricius od 1991,
+      40 000 kg ročně nosiči, kontakty (načteno 9. 8. 2026; podstránky
+      ubytování vracely HTTP 401)
+    url: https://chatamrs.sk
+  - popis: >-
+      hiking.sk, profil chaty — 1727 m, GPS, rozcestí značek, 48 lůžek
+      v 6 pokojích, bufetové okno v létě, celoroční provoz, přístupové časy,
+      poškození 1944, návrat názvu 21. 7. 1990, stanice HZS
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/241/chata_m_r_stefanika_pod_dumbierom.html
+  - popis: >-
+      turisticky.sk — 6 osmilůžkových pokojů a jeden dvoulůžkový, rezervace,
+      restaurace, nosičské pivo, celoroční provoz (načteno 9. 8. 2026)
+    url: https://turisticky.sk/turistika/stefanikova-chata/
+  - popis: >-
+      peakcellent.sk, historie stavby — iniciátor (dva články, dvě verze),
+      firmy Jirásek a Šašinka, KSTL 1938, partyzáni, éra Chata hrdinov SNP
+      (načteno 9. 8. 2026)
+    url: https://www.peakcellent.sk/poznate-chatu-m-r-stefanika-historia-nizkotatranskej-stavby/
+  - popis: >-
+      peakcellent.sk, druhý článek k historii — Klub československých
+      turistov jako iniciátor, společnost Josefa Jiráska (načteno
+      9. 8. 2026)
+    url: https://www.peakcellent.sk/chata-milana-rastislava-stefanika-historia-nizkotatranskej-stavby/
+  - popis: >-
+      bystricak.sk — statistika nosičů 2025: celkem 108 000 kg, jmenovité
+      výkony (Schwarzbacher 4 871 kg), poděkování turistům za dřevo
+      (načteno 9. 8. 2026)
+    url: https://www.bystricak.sk/clanky/9746/na-chatu-m-r-stefanika-pod-dumbierom-vynosili-nosici-tisice-kil-pozrite-si-mena-a-vahy-rekorderov
+  - popis: >-
+      spravy.stvr.sk, červenec 2026 — výpověď nájmu Fabriciusovi, nový
+      nájemce si chatu 1. 7. nepřevzal, soudní spor, vyjádření předsedy KST
+      (načteno 9. 8. 2026)
+    url: https://spravy.stvr.sk/2026/07/znamu-chatu-spod-dumbiera-si-novy-najomca-zatial-neprebral-o-hosti-sa-staral-ten-byvaly
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/798094483
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/chata-generala-milana-rastislava-stefanika.yaml
+  (9. 8. 2026) — první publikovaný profil oblasti Nízké Tatry.
+
+  TELEFON: OSM kandidát nesl +421 944 935 467, vlastní web chaty
+  a turisticky.sk shodně +421 904 978 439 — zapsáno číslo provozovatele.
+  Vzhledem ke sporu o nájem (viz níže) se může změnit; hlídat.
+
+  SPOR O NÁJEM 2026 JE NEJDŮLEŽITĚJŠÍ OTEVŘENÁ VĚC PROFILU: STVR (7/2026)
+  píše, že KST vypověděl smlouvu Fabriciusovi, nový nájemce si chatu 1. 7.
+  nepřevzal a věc řeší soud. Profil to přiznává v overeniProvoz, milníku
+  2026 i textu. Až spor skončí, aktualizovat provozovatele i kontakty.
+
+  VÝŠKA 1740 × 1727: zapsáno číslo provozovatele (nese ho v názvu webu).
+  Není to rozpor o kapacitě, kde konvence velí nižší číslo „v neprospěch
+  chaty" — u výšky žádný neprospěch není; DATA-31/mapový podklad to může
+  rozhodnout přesněji.
+
+  KAPACITA 48 × 50: zapsáno nižší číslo dle konvence — na rozdíl od
+  Zamkovského chaty tu není doložená rekonstrukce, která by rozdíl
+  vysvětlila stářím pramenů, a ceník provozovatele se nenačetl (401).
+
+  NENALEZENO (a nenalezení není vyvrácení): architekt/projektant; rok
+  poválečného přejmenování na Chata hrdinov SNP; osud Karlovy chaty z 1902;
+  aktuální oficiální ceník; sezónní uzávěry tras; jakýkoli požár.
+  sk.wikipedia se nepodařilo načíst (cache-only doména).
+
+  Fotku dodá druhý běh DATA-02 (klik v docs/KLIKY-PRO-MICHALA.md), výškový
+  profil přístupu DATA-06, lanovky oblasti DATA-32 (klik tamtéž).

@@ -1,12 +1,12 @@
 {
   "oblast": "krkonose",
   "zdroj": "OpenStreetMap (tag aerialway) — data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright); přebráno z exportu pipeline DATA-28",
-  "stavOsm": "2026-07-28",
+  "stavOsm": "2026-07-31",
   "zdrojVysek": "Mapy.com Elevation API (výškový model)",
-  "poznamka": "Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). Vleky a dětské pásy (254 v témž exportu) přehled nevede. Převýšení je z výškového modelu, ne z měření — zaokrouhleno na desítky metrů; délka je půdorysná z geometrie OSM. Vzdálenost k chatám je vzdušná čára.",
+  "poznamka": "Jen dráhy, které vyvezou pěšího (kabinkové, kombinované, sedačkové). Vleky a dětské pásy (261 v témž exportu) přehled nevede. Převýšení je z výškového modelu, ne z měření — zaokrouhleno na desítky metrů; délka je půdorysná z geometrie OSM. Vzdálenost k chatám je vzdušná čára.",
   "vygenerovano": "scripts/data32-lanovky.ts",
   "pocet": 41,
-  "vleku": 254,
+  "vleku": 261,
   "lanovky": [
     {
       "id": "karkonosz-express",
@@ -18,12 +18,12 @@
       "dolni": {
         "lat": 50.81785,
         "lng": 15.51682,
-        "vyska": 715
+        "vyska": 714
       },
       "horni": {
         "lat": 50.79745,
         "lng": 15.50869,
-        "vyska": 1222
+        "vyska": 1223
       },
       "useku": 1,
       "uHorniStanice": [
@@ -49,12 +49,12 @@
       "dolni": {
         "lat": 50.63143,
         "lng": 15.7704,
-        "vyska": 688
+        "vyska": 687
       },
       "horni": {
         "lat": 50.64808,
         "lng": 15.75157,
-        "vyska": 1254
+        "vyska": 1253
       },
       "useku": 1,
       "uHorniStanice": [
@@ -75,7 +75,7 @@
       "dolni": {
         "lat": 50.7675,
         "lng": 15.72912,
-        "vyska": 820
+        "vyska": 821
       },
       "horni": {
         "lat": 50.74771,
@@ -109,14 +109,14 @@
       "delkaM": 2117,
       "prevyseniM": 580,
       "dolni": {
-        "lat": 50.73981,
-        "lng": 15.48805,
-        "vyska": 734
+        "lat": 50.73921,
+        "lng": 15.48728,
+        "vyska": 729
       },
       "horni": {
         "lat": 50.75388,
         "lng": 15.50645,
-        "vyska": 1311
+        "vyska": 1306
       },
       "useku": 1,
       "uHorniStanice": [
@@ -142,7 +142,7 @@
       "horni": {
         "lat": 50.73536,
         "lng": 15.74044,
-        "vyska": 1561
+        "vyska": 1562
       },
       "useku": 1,
       "uHorniStanice": [
@@ -164,28 +164,28 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 1857,
-      "prevyseniM": 480,
+      "prevyseniM": 470,
       "dolni": {
         "lat": 50.73392,
         "lng": 15.6066,
-        "vyska": 744
+        "vyska": 748
       },
       "horni": {
-        "lat": 50.74141,
-        "lng": 15.58301,
-        "vyska": 1224
+        "lat": 50.74126,
+        "lng": 15.58347,
+        "vyska": 1216
       },
       "useku": 1,
       "uHorniStanice": [
         {
           "slug": "staromisecna-bouda",
           "nazev": "Staromísečná bouda",
-          "vzdalenostM": 1009
+          "vzdalenostM": 1026
         },
         {
           "slug": "novomisecna-bouda",
           "nazev": "Novomísečná bouda",
-          "vzdalenostM": 1024
+          "vzdalenostM": 1042
         }
       ]
     },
@@ -195,11 +195,11 @@
       "typ": "gondola",
       "typNazev": "kabinková",
       "delkaM": 1685,
-      "prevyseniM": 490,
+      "prevyseniM": 480,
       "dolni": {
         "lat": 50.70517,
         "lng": 15.73278,
-        "vyska": 848
+        "vyska": 854
       },
       "horni": {
         "lat": 50.71772,
@@ -221,16 +221,16 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 1541,
-      "prevyseniM": 420,
+      "prevyseniM": 430,
       "dolni": {
         "lat": 50.72059,
         "lng": 15.61236,
-        "vyska": 755
+        "vyska": 751
       },
       "horni": {
         "lat": 50.70698,
         "lng": 15.61651,
-        "vyska": 1179
+        "vyska": 1178
       },
       "useku": 1,
       "uHorniStanice": [
@@ -273,16 +273,16 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 1383,
-      "prevyseniM": 410,
+      "prevyseniM": 400,
       "dolni": {
         "lat": 50.65858,
         "lng": 15.59495,
-        "vyska": 590
+        "vyska": 595
       },
       "horni": {
         "lat": 50.65807,
         "lng": 15.57535,
-        "vyska": 996
+        "vyska": 995
       },
       "useku": 1,
       "uHorniStanice": [
@@ -303,7 +303,7 @@
       "dolni": {
         "lat": 50.71478,
         "lng": 15.58082,
-        "vyska": 710
+        "vyska": 711
       },
       "horni": {
         "lat": 50.72453,
@@ -334,12 +334,12 @@
       "dolni": {
         "lat": 50.73318,
         "lng": 15.5689,
-        "vyska": 996
+        "vyska": 995
       },
       "horni": {
         "lat": 50.7411,
         "lng": 15.58191,
-        "vyska": 1223
+        "vyska": 1225
       },
       "useku": 1,
       "uHorniStanice": [
@@ -370,7 +370,7 @@
       "horni": {
         "lat": 50.79494,
         "lng": 15.51479,
-        "vyska": 1294
+        "vyska": 1293
       },
       "useku": 1,
       "uHorniStanice": [
@@ -401,12 +401,12 @@
       "dolni": {
         "lat": 50.63335,
         "lng": 15.75904,
-        "vyska": 787
+        "vyska": 785
       },
       "horni": {
         "lat": 50.64341,
         "lng": 15.75608,
-        "vyska": 1094
+        "vyska": 1095
       },
       "useku": 1,
       "uHorniStanice": [
@@ -427,7 +427,7 @@
       "dolni": {
         "lat": 50.68439,
         "lng": 15.72131,
-        "vyska": 903
+        "vyska": 899
       },
       "horni": {
         "lat": 50.68869,
@@ -464,7 +464,7 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 1105,
-      "prevyseniM": 220,
+      "prevyseniM": 210,
       "dolni": {
         "lat": 50.65254,
         "lng": 15.60282,
@@ -473,7 +473,7 @@
       "horni": {
         "lat": 50.65242,
         "lng": 15.58715,
-        "vyska": 766
+        "vyska": 765
       },
       "useku": 1,
       "uHorniStanice": [
@@ -490,16 +490,16 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 895,
-      "prevyseniM": 290,
+      "prevyseniM": 280,
       "dolni": {
-        "lat": 50.72011,
-        "lng": 15.61467,
-        "vyska": 752
+        "lat": 50.71917,
+        "lng": 15.61496,
+        "vyska": 764
       },
       "horni": {
         "lat": 50.71249,
         "lng": 15.61704,
-        "vyska": 1047
+        "vyska": 1048
       },
       "useku": 1,
       "uHorniStanice": [
@@ -516,16 +516,16 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 852,
-      "prevyseniM": 180,
+      "prevyseniM": 190,
       "dolni": {
         "lat": 50.68392,
         "lng": 15.72275,
-        "vyska": 902
+        "vyska": 898
       },
       "horni": {
         "lat": 50.67728,
         "lng": 15.71673,
-        "vyska": 1086
+        "vyska": 1087
       },
       "useku": 1,
       "uHorniStanice": [
@@ -606,12 +606,12 @@
       "dolni": {
         "lat": 50.65794,
         "lng": 15.54801,
-        "vyska": 672
+        "vyska": 674
       },
       "horni": {
         "lat": 50.66261,
         "lng": 15.55563,
-        "vyska": 845
+        "vyska": 843
       },
       "useku": 1,
       "uHorniStanice": [
@@ -632,7 +632,7 @@
       "dolni": {
         "lat": 50.81826,
         "lng": 15.51749,
-        "vyska": 708
+        "vyska": 707
       },
       "horni": {
         "lat": 50.80568,
@@ -652,12 +652,12 @@
       "dolni": {
         "lat": 50.72444,
         "lng": 15.60071,
-        "vyska": 704
+        "vyska": 703
       },
       "horni": {
         "lat": 50.71214,
         "lng": 15.60465,
-        "vyska": 1031
+        "vyska": 1032
       },
       "useku": 1,
       "uHorniStanice": []
@@ -672,12 +672,12 @@
       "dolni": {
         "lat": 50.7726,
         "lng": 15.42568,
-        "vyska": 665
+        "vyska": 669
       },
       "horni": {
         "lat": 50.76169,
         "lng": 15.4295,
-        "vyska": 1010
+        "vyska": 1005
       },
       "useku": 1,
       "uHorniStanice": []
@@ -688,16 +688,16 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 1241,
-      "prevyseniM": 300,
+      "prevyseniM": 290,
       "dolni": {
         "lat": 50.63347,
         "lng": 15.77906,
-        "vyska": 700
+        "vyska": 701
       },
       "horni": {
         "lat": 50.64145,
         "lng": 15.76676,
-        "vyska": 1000
+        "vyska": 996
       },
       "useku": 1,
       "uHorniStanice": []
@@ -710,14 +710,14 @@
       "delkaM": 1218,
       "prevyseniM": 240,
       "dolni": {
-        "lat": 50.7372,
-        "lng": 15.4789,
-        "vyska": 659
+        "lat": 50.73747,
+        "lng": 15.4792,
+        "vyska": 660
       },
       "horni": {
         "lat": 50.74626,
         "lng": 15.48863,
-        "vyska": 902
+        "vyska": 903
       },
       "useku": 1,
       "uHorniStanice": []
@@ -748,7 +748,7 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 1057,
-      "prevyseniM": 150,
+      "prevyseniM": 140,
       "dolni": {
         "lat": 50.63601,
         "lng": 15.60236,
@@ -777,7 +777,7 @@
       "horni": {
         "lat": 50.64572,
         "lng": 15.70139,
-        "vyska": 863
+        "vyska": 864
       },
       "useku": 1,
       "uHorniStanice": []
@@ -797,7 +797,7 @@
       "horni": {
         "lat": 50.64529,
         "lng": 15.70412,
-        "vyska": 850
+        "vyska": 848
       },
       "useku": 1,
       "uHorniStanice": []
@@ -817,7 +817,7 @@
       "horni": {
         "lat": 50.75887,
         "lng": 15.72877,
-        "vyska": 954
+        "vyska": 955
       },
       "useku": 1,
       "uHorniStanice": []
@@ -852,12 +852,12 @@
       "dolni": {
         "lat": 50.76452,
         "lng": 15.44263,
-        "vyska": 723
+        "vyska": 724
       },
       "horni": {
         "lat": 50.7614,
         "lng": 15.43184,
-        "vyska": 1006
+        "vyska": 1001
       },
       "useku": 1,
       "uHorniStanice": []
@@ -872,7 +872,7 @@
       "dolni": {
         "lat": 50.72678,
         "lng": 15.39025,
-        "vyska": 685
+        "vyska": 684
       },
       "horni": {
         "lat": 50.73069,
@@ -892,7 +892,7 @@
       "dolni": {
         "lat": 50.73456,
         "lng": 15.36118,
-        "vyska": 667
+        "vyska": 669
       },
       "horni": {
         "lat": 50.73728,
@@ -908,16 +908,16 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 618,
-      "prevyseniM": 110,
+      "prevyseniM": 120,
       "dolni": {
-        "lat": 50.68311,
-        "lng": 15.52102,
-        "vyska": 651
+        "lat": 50.68364,
+        "lng": 15.52154,
+        "vyska": 653
       },
       "horni": {
         "lat": 50.6789,
         "lng": 15.51696,
-        "vyska": 763
+        "vyska": 768
       },
       "useku": 1,
       "uHorniStanice": []
@@ -928,16 +928,16 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 566,
-      "prevyseniM": 70,
+      "prevyseniM": 60,
       "dolni": {
-        "lat": 50.77226,
-        "lng": 15.73715,
-        "vyska": 723
+        "lat": 50.77273,
+        "lng": 15.73785,
+        "vyska": 724
       },
       "horni": {
         "lat": 50.76905,
         "lng": 15.7323,
-        "vyska": 790
+        "vyska": 788
       },
       "useku": 1,
       "uHorniStanice": []
@@ -952,12 +952,12 @@
       "dolni": {
         "lat": 50.60098,
         "lng": 15.84574,
-        "vyska": 484
+        "vyska": 486
       },
       "horni": {
         "lat": 50.6005,
         "lng": 15.84602,
-        "vyska": 495
+        "vyska": 497
       },
       "useku": 1,
       "uHorniStanice": []
@@ -972,12 +972,12 @@
       "dolni": {
         "lat": 50.76926,
         "lng": 15.42699,
-        "vyska": 719
+        "vyska": 721
       },
       "horni": {
         "lat": 50.76511,
         "lng": 15.42841,
-        "vyska": 883
+        "vyska": 884
       },
       "useku": 1,
       "uHorniStanice": []
@@ -992,7 +992,7 @@
       "dolni": {
         "lat": 50.73261,
         "lng": 15.44228,
-        "vyska": 598
+        "vyska": 599
       },
       "horni": {
         "lat": 50.73504,
@@ -1008,16 +1008,16 @@
       "typ": "chair_lift",
       "typNazev": "sedačková",
       "delkaM": 316,
-      "prevyseniM": 60,
+      "prevyseniM": 50,
       "dolni": {
         "lat": 50.6426,
         "lng": 15.90646,
-        "vyska": 529
+        "vyska": 531
       },
       "horni": {
         "lat": 50.63996,
         "lng": 15.90481,
-        "vyska": 590
+        "vyska": 586
       },
       "useku": 1,
       "uHorniStanice": []
@@ -1032,7 +1032,7 @@
       "dolni": {
         "lat": 50.78029,
         "lng": 15.7302,
-        "vyska": 768
+        "vyska": 769
       },
       "horni": {
         "lat": 50.78016,
@@ -1050,14 +1050,14 @@
       "delkaM": 169,
       "prevyseniM": 20,
       "dolni": {
-        "lat": 50.65351,
-        "lng": 15.60336,
-        "vyska": 531
+        "lat": 50.65369,
+        "lng": 15.60402,
+        "vyska": 528
       },
       "horni": {
         "lat": 50.65329,
         "lng": 15.60251,
-        "vyska": 551
+        "vyska": 550
       },
       "useku": 1,
       "uHorniStanice": []

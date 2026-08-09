@@ -1,0 +1,335 @@
+# Kamenná chata pod Chopkom („Kamienka") — druhý publikovaný profil oblasti
+# Nízké Tatry (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Kamenná chata pod Chopkom
+slug: kamenna-chata-pod-chopkom
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Kamienka
+    poznamka: přezdívka, kterou používá sám provozovatel (kamennachata.sk)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9429983
+lng: 19.591411
+vyska: 1985
+obec: Horná Lehota
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/435913009 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    Poloha: jižní svah těsně pod vrcholem Chopku (2023,6 m), třetí
+    nejvyšší hory Nízkých Tater (vlastní web). VÝŠKA — ROZPOR, přiznaný:
+    1985 m uvádí vlastní web (nepřímo, jako polohu „priamo pod" Chopkom),
+    visitliptov.sk („1985 m n. m.") i krasy-slovenska.sk; starý profil
+    hiking.sk z roku 2002 a OSM tag nesou 2000 m. Zapsáno 1985 — shoda
+    tří pramenů včetně provozovatele; OSM `ele` není konkurenční textové
+    tvrzení (konvence z 9. 8. 2026, KONTROLA-11).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 20
+overeniNocleh:
+  source: >-
+    Oficiální ceník na vlastním webu (kamennachata.sk/noclaharen, čteno
+    9. 8. 2026): 20 lůžek v pěti místnostech — „kavak" 4, „švišť" 4,
+    „špic" 2, „sever" 4, „juh" 6. Cena 46 € za lůžko se snídaní (děti do
+    12 let 23 €), sprcha na žeton 2 €. „Rezerváciou sa objednáva lôžko
+    s vankúšom, prikrývkou a dekou"; „Vlastný spacák nie je dovolené
+    používať". Online rezervace s výběrem konkrétní postele na půdorysu.
+    Příchod od 16:00 (v zimě 1. 12. – 15. 4. do 17:00), odchod do 10:00.
+    ROZPORY STARŠÍCH PRAMENŮ, přiznané: krasy-slovenska.sk uvádí na jednom
+    místě 22 lůžek, na jiném 20 (nocľaháreň 12 + dvě čtyřlůžkové izbičky);
+    visitliptov.sk 12; hiking.sk roku 2002 „hromaďák pre 15 osôb". Zapsán
+    je aktuální ceník provozovatele — prameny popisují různé časy a chata
+    prošla po roce 2016 velkou rekonstrukcí (konvence ze Zamkovského
+    chaty: zastaralost pramene není rozpor pramenů).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): jídelní část a „rýchla zóna
+    s barom"; „LEPŠIE TU CHUTÍ AJ TRADIČNÁ KAMIENKOVSKÁ KAPUSTOVÁ".
+    Výslovná věta „obsluhujeme aj neubytovaných" se nenašla; nepřímo web
+    píše, že bar a rychlá zóna slouží turistům, hřebenovkářům a sportovcům
+    — a chata stojí pár minut pod horní stanicí lanovek na Chopok, takže
+    denní hosté jsou její denní chléb. Telefonát to rozhodne (DATA-04).
+    hiking.sk (2002) jmenoval specialitu „Buchta Chopok — takmer na celý
+    tanier veľká parená buchta poliata vanilkovým pudingom" a čaj
+    z horských bylin.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): celoroční provoz od roku 1996,
+    s krátkými výlukami vyhlášovanými v aktualitách (např. „27.–30. 4.
+    údržba", zavřeno 24.–26. 12. 2025). Snídaně 7:30–8:30. Zásobování:
+    sněžný skútr; u chaty není pramen, voda je tu vzácná (hiking.sk 2002:
+    „pri chate nie je prameň"). Provozuje ji od 7. 5. 1996 „partia
+    nadšencov" — chatár Marcel Melicherčík a chatárka Anka Pažitná, tým
+    kolem 25 lidí včetně brigádníků (vlastní web, stránka Ľudia na
+    Kamienke). Vlastník budovy se z veřejných pramenů zjistit nepodařilo.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421903995039'
+  email: kamienka@kamennachata.sk
+  web: https://www.kamennachata.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1950
+overeniHistorie:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): postavena v letech 1949–1950 jako
+    „útulňa pre robotníkov, čo stavali lanovky"; shodně krasy-slovenska.sk
+    („Tesne pod vrcholom Chopka postavili v rokoch 1949 – 1950",
+    v souvislosti se stavbou lanovek Luková–Chopok a Srdiečko–Kosodrevina).
+    Zapsán pozdější rok dvouletí (konvence opatrné volby). Kdo přesně
+    stavěl (firma/organizace), se najít nepodařilo. Vysokohorskou chatou
+    pro turisty se stala až v roce 1996: „sa objavujeme my, partia
+    nadšencov a vytvárame z Kamienky novú vysokohorskú chatu" (vlastní
+    web). Rekonstrukce: první velké 2003–2006 (vlastní web), hiking.sk
+    uvádí generální přestavbu 2006–2007; od roku 2016 „výrazná stavebná
+    rekonštrukcia podľa projektu Ing. arch. Emila Križa" (vlastní web),
+    visitliptov.sk shrnuje „renovated in 2017"; střechu dělala firma
+    PAMASTAV s.r.o., krytina Tata Steel Colorcoat Prisma (kjg.sk).
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1950
+    udalost: >-
+      Těsně pod vrcholem Chopku vyrostla v letech 1949–1950 kamenná útulna
+      pro dělníky stavějící lanovky Luková–Chopok a Srdiečko–Kosodrevina.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „útulňa pre robotníkov, čo
+      stavali lanovky"; roky a úseky lanovek krasy-slovenska.sk.
+  - rok: 1996
+    udalost: >-
+      Chaty se 7. května ujala „partia nadšencov" a udělala z Kamienky
+      celoročně obsluhovanou vysokohorskou chatu.
+    zdroj: >-
+      vlastní web chaty, stránka Ľudia na Kamienke (čteno 9. 8. 2026) —
+      „Sme tu partička od 7.mája 1996."
+  - rok: 2006
+    udalost: >-
+      Proběhly první velké rekonstrukce; vlastní web je datuje 2003–2006,
+      hiking.sk mluví o generální přestavbě v letech 2006 a 2007.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026); hiking.sk, dovětek k profilu
+      z roku 2002 — „V rokoch 2006 a 2007 prebehla generálna prestavba
+      chaty."
+  - rok: 2007
+    udalost: >-
+      Kamienkári 20. října poprvé uspořádali závod vysokohorských nosičů
+      Šerpa rallye; historie závodu se podle téhož pramene začala psát už
+      12. října 1985.
+    zdroj: >-
+      krasy-slovenska.sk (čteno 9. 8. 2026) — „Dňa 20. októbra 2007
+      »kamienkári« prvýkrát organizovali obľúbené preteky vysokohorských
+      nosičov Šerpa rallye".
+  - rok: 2016
+    udalost: >-
+      Začala výrazná stavební rekonstrukce podle projektu architekta Emila
+      Križa; visitliptov.sk shrnuje chatu jako renovovanou v roce 2017.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „od 2016 výrazná stavebná
+      rekonštrukcia podľa projektu Ing.arch. Emila Križa"; visitliptov.sk;
+      detail střechy kjg.sk (firma PAMASTAV s.r.o.).
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Podle vlastního webu i visitliptov.sk je to třetí nejvýše položená
+      obsluhovaná chata na Slovensku.
+    kategorie: vyska
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026); visitliptov.sk — „the third
+      highest located alpine chalet in Slovakia".
+  - text: >-
+      Wi-fi tu programově není: „WiFi tu nemáme. Na znak ľudskosti
+      a priateľstva si tu tykáme."
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026); citát převzal i kjg.sk.
+  - text: >-
+      V noclehárně je zakázáno používat vlastní spacák — rezervací se
+      objednává lůžko s polštářem, přikrývkou a dekou; postel si host
+      vybírá online na půdorysu noclehárny.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty, ceník noclehárny (čteno 9. 8. 2026) — „Vlastný
+      spacák nie je dovolené používať."
+  - text: >-
+      Místnosti noclehárny se jmenují po horách a zvířatech: kavak, švišť,
+      špic, sever a juh.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty, ceník noclehárny (čteno 9. 8. 2026).
+zajimavostiPoznamka: >-
+  „Třetí nejvyšší" je tvrzení provozovatele a visitliptov.sk, s uvedením
+  pramene — redakce pořadí nepřepočítávala.
+
+# ── Fotky ─────────────────────────────────────────────────────────────────
+# Vybráno redakčně 9. 8. 2026 z kandidátů FOTO-04 (data/kandidati/hero-foto/
+# nizke-tatry, commit b424dff): záběr č. 02 od Michala Klajbana zachycuje
+# kamennou budovu chaty pod vrcholovou stanicí lanovky na Chopku — redakce
+# snímek prohlédla při výběru hero fotky oblasti a pro hero zvolila hřebenové
+# panorama, tenhle záběr patří sem. Licence z Commons API (extmetadata).
+# Seed fotku stáhne z `stahnoutZ`.
+fotky:
+  - stahnoutZ: https://upload.wikimedia.org/wikipedia/commons/0/0b/N%C3%ADzk%C3%A9_Tatry%2C_Chopok_%287%29.JPG
+    alt: Kamenná chata pod Chopkom pod vrcholem Chopku
+    typ: soucasna # hero záběr profilu
+    datovani: 2012-07-31 # DateTimeOriginal z Commons; před rekonstrukcí 2016+
+    autor: Michal Klajban
+    licence: cc-by-sa
+    licencePoznamka: CC BY-SA 3.0
+    zdrojUrl: https://commons.wikimedia.org/wiki/File:N%C3%ADzk%C3%A9_Tatry,_Chopok_(7).JPG
+    prevzatoDne: '2026-08-09'
+    overeni:
+      source: >-
+        Wikimedia Commons API extmetadata (licence CC BY-SA 3.0, autor
+        Michal Klajban, popis „Chopok. Low Tatras, Slovakia"), běh FOTO-04
+        z 9. 8. 2026; identifikaci budovy udělala redakce prohlídkou snímku
+        při výběru hero fotky oblasti. Záběr je z roku 2012, tedy před
+        rekonstrukcí z let 2016+.
+      verified: false # licenci na stránce souboru očima zkontroluje redakce (Michal) — pak přepnout
+      checked: '2026-08-09'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná útulna z roku 1950, postavená pro dělníky stavějící lanovky na
+  Chopok, ze které „partia nadšencov" udělala v roce 1996 celoročně
+  obsluhovanou chatu — podle provozovatele třetí nejvýše položenou na
+  Slovensku. Dvacet lůžek, zákaz vlastních spacáků, kapustnica —
+  a programově žádná wi-fi.
+text:
+  - >-
+    Kamienka, jak jí říkají sami chatári, stojí v 1985 metrech na jižním
+    svahu těsně pod vrcholem Chopku, třetí nejvyšší hory Nízkých Tater.
+    Starší prameny z doby kolem roku 2002 uvádějí 2000 metrů, ale tři
+    novější včetně provozovatele se shodují na 1985 — a tak tu stojí
+    nižší, střízlivější číslo. Výš už jsou na Slovensku jen dvě
+    obsluhované chaty, píše provozovatel i visitliptov.sk.
+  - >-
+    Vznik má chata prozaický: v letech 1949–1950 ji postavili jako útulnu
+    pro dělníky, kteří stavěli lanovky Luková–Chopok a Srdiečko–Kosodrevina.
+    Turistickou chatou v pravém smyslu se stala až 7. května 1996, kdy se
+    jí ujala — vlastními slovy — „partia nadšencov" kolem chatára Marcela
+    Melicherčíka a chatárky Anky Pažitné; dnes má tým kolem pětadvaceti
+    lidí včetně brigádníků. První velké rekonstrukce proběhly v letech
+    2003–2007, od roku 2016 se chata přestavovala podle projektu architekta
+    Emila Križa.
+  - >-
+    Spí se tu v pěti místnostech se jmény kavak, švišť, špic, sever a juh,
+    dohromady dvacet lůžek za 46 eur se snídaní. Pravidla jsou nezvykle
+    přesná: rezervací se objednává lůžko s polštářem, přikrývkou a dekou,
+    vlastní spacák je zakázaný a postel si host vybírá online přímo na
+    půdorysu noclehárny. Příchod od čtvrté odpoledne, v zimě nejpozději do
+    pěti — kdo jde na Chopok za tmy, ať to ví předem.
+  - >-
+    Kuchyně stojí na tradiční kamienkovské kapustnici; vedle jídelní části
+    je „rýchla zóna s barom" pro turisty, hřebenovkáře a sportovce, kteří
+    jen procházejí. Voda je tu vzácná — u chaty není pramen, sprcha je na
+    žeton. A wi-fi tu nehledejte, je to programové: „WiFi tu nemáme.
+    Na znak ľudskosti a priateľstva si tu tykáme."
+  - >-
+    Cesta nahoru je na vysokohorskou chatu nezvykle pohodlná: na vrchol
+    Chopku jezdí lanovky z Jasné od severu i ze Srdiečka od jihu
+    a od horní stanice se k chatě schází pár minut po jižním svahu. Pěšky vede od
+    Mikulášské chaty v Jasné modrá značka — 5,8 kilometru a 875 výškových
+    metrů, necelé tři hodiny (visitliptov.sk). Po červené hřebenovce E8 je
+    to přes Chopok dál na Ďumbier a k Štefáničce.
+  - >-
+    Kamienka je i závodiště: 20. října 2007 tu kamienkári poprvé
+    uspořádali Šerpa rallye, závod vysokohorských nosičů, jehož historie
+    se podle krasy-slovenska.sk začala psát už 12. října 1985. Zásobuje se
+    sněžným skútrem a — jak jinak pod Chopkom — nosiči.
+  - >-
+    Údaje nesou vlastní web chaty, hiking.sk, krasy-slovenska.sk,
+    visitliptov.sk a kjg.sk; polohu OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — poloha pod Chopkom, útulna pro dělníky 1949–50,
+      partia od 1996, rekonstrukce, kapustnica, bez wi-fi, aktuality
+      s výlukami (načteno 9. 8. 2026)
+    url: https://www.kamennachata.sk
+  - popis: >-
+      Vlastní web chaty, ceník noclehárny — 20 lůžek v pěti místnostech,
+      46 € se snídaní, zákaz vlastních spacáků, výběr postele na půdorysu,
+      časy příchodu a odchodu (načteno 9. 8. 2026)
+    url: https://www.kamennachata.sk/noclaharen
+  - popis: >-
+      Vlastní web chaty, kontakty — telefon 0903 995 039, e-mail, adresa
+      Horná Lehota 697 (načteno 9. 8. 2026)
+    url: https://www.kamennachata.sk/kontakty
+  - popis: >-
+      Vlastní web chaty, Ľudia na Kamienke — chatár Marcel Melicherčík,
+      chatárka Anka Pažitná, „partička od 7.mája 1996", tým cca 25 lidí
+      (načteno 9. 8. 2026)
+    url: https://www.kamennachata.sk/ludia-na-kamienke
+  - popis: >-
+      krasy-slovenska.sk — stavba 1949–50 při stavbě lanovek, jména
+      provozovatelů, Šerpa rallye od 2007 (historie od 12. 10. 1985),
+      1985 m, údaje o noclehárně (načteno 9. 8. 2026)
+    url: https://krasy-slovenska.sk/na-kamienke-dobre/
+  - popis: >-
+      visitliptov.sk — 1985 m, třetí nejvyšší chata Slovenska, renovace
+      2017, modrá od Mikulášské chaty 5,8 km / +875 m / necelé 3 h
+      (načteno 9. 8. 2026)
+    url: https://www.visitliptov.sk/en/route/kamenna-cottage-1985-m-n-m/
+  - popis: >-
+      kjg.sk — rekonstrukce střechy (PAMASTAV s.r.o., krytina Tata Steel
+      Colorcoat Prisma), citát o wi-fi a tykání (načteno 9. 8. 2026)
+    url: https://www.kjg.sk/novinky/kamenna-chata-pod-chopkom-1985-m-n-m
+  - popis: >-
+      hiking.sk, profil z roku 2002 s pozdějším dovětkem — tehdejší stav
+      (hromaďák pro 15, Buchta Chopok, bez pramene vody), generální
+      přestavba 2006–2007, 2000 m (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/1/kamenna_chata_pod_chopkom.html
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/435913009
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/kamenna-chata-pod-chopkom.yaml
+  (9. 8. 2026).
+
+  TELEFON: OSM kandidát nesl starou pevnou linku +421 48 6170039 (tutéž
+  uváděl hiking.sk 2002); vlastní web má mobil 0903 995 039 — zapsán
+  v mezinárodním tvaru. VÝŠKA: kandidát nesl 2000 m z OSM `ele`; zapsáno
+  1985 m dle shody provozovatele, visitliptov a krasy-slovenska (OSM `ele`
+  není konkurenční textové tvrzení — KONTROLA-11).
+
+  KAPACITA: čtyři různé údaje (20 × 22 × 12 × 15) — zapsán aktuální ceník
+  provozovatele; stejné pravidlo jako u Zamkovského chaty (zastaralost
+  pramene po doložené rekonstrukci není rozpor pramenů o téže věci).
+
+  VLASTNÍK BUDOVY NENALEZEN — web neuvádí IČO ani firmu; „partia" je
+  provozovatel, ne nutně vlastník. Případný telefonát (DATA-04) může
+  doplnit. NENALEZENO dále: stavitel z roku 1949; jakýkoli požár; přesný
+  čas chůze od horní stanice lanovky; časy tras z jihu (Trangoška/
+  Kosodrevina); rekordy Šerpa rallye. Vztah k lanovkám: web zmiňuje, že
+  spojení s lanovkami bylo 15 let přerušené a obnovené 2012 — do textu
+  nedáno, protože přesný smysl věty (které úseky, proč) se z pramene
+  nepodařilo vyčíst spolehlivě.
+
+  FOTKA: přiřazena z kandidátů FOTO-04 (identifikace budovy prohlídkou
+  snímku redakcí, záběr 2012 — před rekonstrukcí 2016+; kdyby Michal chtěl
+  novější podobu, dodá ji druhý běh DATA-02). Výškový profil přístupu
+  DATA-06, lanovky oblasti DATA-32 (kliky v docs/KLIKY-PRO-MICHALA.md).
