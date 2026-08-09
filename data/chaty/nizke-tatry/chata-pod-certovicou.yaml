@@ -1,0 +1,215 @@
+# Chata pod Čertovicou — publikovaný profil Nízkých Tater (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne; katalogový objekt
+# HUT-0150. V sedle Čertovica jsou ČTYŘI samostatné ubytovací provozy
+# (rozpletení viz interniPoznamky) — tenhle profil patří chatě u jezírka
+# východně od sedla, Vyšná Boca 259. Vše verified: false — redakce nic
+# neověřila vlastním dotazem ani návštěvou.
+
+nazev: Chata pod Čertovicou
+slug: chata-pod-certovicou
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Hotel pod Čertovicou
+    poznamka: titulek starší domény chatapodcertovicou.eu (týž objekt)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9062378
+lng: 19.7444214
+vyska: 1232
+obec: Vyšná Boca
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/4385064864 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); adresa Vyšná Boca 259 (travelguide.sk,
+    planetofhotels). VÝŠKA 1232 m: travelguide.sk („1,232 meters above
+    sea level") i vypadni.sk; katalogových 1238 m odpovídá spíš výšce
+    sedla a archivní zápis na slovenske.sk s 1120 m je izolovaný outlier
+    (KONTROLA-11), do dat nejde. Poloha: pár set metrů východně od sedla
+    Čertovica, u minerálního jezírka Kyselka (travelguide.sk), na
+    liptovské straně silnice I/72. NEZAMĚŇOVAT s Chatou pod Sedlom
+    Čertovica (Vyšná Boca 262, chatacertovica.sk) ani s Penziónem STIV
+    (Vyšná Boca 266) — jiné provozy v témž sedle.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 33
+overeniNocleh:
+  source: >-
+    KAPACITA — ROZPOR, přiznaný: sedlocertovica.sk (přehled ubytování
+    v sedle, ©2025, čteno 9. 8. 2026) „33 lôžok + 9 prístelok
+    (12 izieb)"; travelguide.sk „40 beds across 15 rooms"; vypadni.sk
+    maximálně 38 osob ve 13 ložnicích; horehronie.sk 34 lůžek. Zapsáno
+    33 — nejčerstvější pramen a zároveň nejnižší číslo; přistýlky se do
+    kapacity nepočítají (vzor Ďurková). Ceny dle travelguide.sk:
+    dvoulůžkový pokoj 40–55 €, celý objekt 550–600 €; vypadni.sk „od
+    13 € za osobu a noc". Check-in od 14:00 (planetofhotels). Vlastní
+    weby (chatapodcertovicou.sk i .eu) byly při rešerši v přesměrovací
+    smyčce — ceník provozovatele se nepodařilo číst.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    travelguide.sk (čteno 9. 8. 2026): restaurace a bar, snídaně 5,50 €,
+    polopenze 13 €, plná penze; slovenske.sk „reštauráciu s barom
+    a krbom". Specialita dle horehronie.sk: „grilované pstruhy, které
+    dostanete na tanier priamo z nášho jazierka." Výslovný doklad
+    obsluhy neubytovaných se nenašel — hotelová restaurace s barem ji
+    naznačuje, telefonát rozhodne (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    travelguide.sk (čteno 9. 8. 2026): „Open year-round; optimal winter
+    sports December–April"; shodně horehronie.sk („Celoročně
+    otevřeno"). V provozu: přehled sedlocertovica.sk (©2025) chatu vede
+    s hodnocením „Booking 8,5 | Google 4,5" a aktuálním telefonem;
+    planetofhotels 8,8/10 z 94 recenzí. Provozovatel: LBS INVEST s.r.o.
+    (1-2-3-ubytovanie.sk). Lyžařský vlek 100 m, středisko Ski Čertovica
+    200 m (travelguide.sk, horehronie.sk).
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421911306951'
+  email: horskachatapodcertovicou@gmail.com
+  web: https://chatapodcertovicou.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+overeniHistorie:
+  source: >-
+    Rok výstavby se nenašel — prameny chatu shodně popisují jen jako
+    „historickú zrubovú chatu" (slovenske.sk, vypadni.sk;
+    planetofhotels: „Tradičná historická chata v srdci Nízkych
+    Tatier"). Pole rokVzniku i milníky proto zůstávají prázdné; doplní
+    je až pramen. Kontext sedla: první soukromé ubytovací zařízení
+    Nízkých Tater byla stará Chata Čertovica (1935–36), dnes ruina
+    západně pod sedlem (abandonedhotels.eu) — JINÝ objekt.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Pstruhy na gril si chata bere z vlastního jezírka — hosté je podle
+      horehronie.sk dostanou „na tanier priamo z nášho jazierka";
+      v zimě jezírko slouží jako přírodní kluziště.
+    kategorie: gastro
+    zdroj: >-
+      horehronie.sk (čteno 9. 8. 2026); bruslení též travelguide.sk
+      („seasonal ice skating rink").
+  - text: >-
+      Na horskou chatu má nezvyklé zázemí: wellness s vířivkou, finskou
+      a aromatickou saunou, hřiště, tenisový kurt a rybaření.
+    kategorie: jine
+    zdroj: >-
+      travelguide.sk (čteno 9. 8. 2026).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Roubená chata u minerálního jezírka Kyselka kousek pod sedlem
+  Čertovica, jediným silničním přechodem hlavního hřebene. Třiatřicet
+  lůžek, restaurace s krbem a pstruhy z vlastního jezírka, wellness —
+  a lyžařský vlek sto metrů od dveří.
+text:
+  - >-
+    Chata stojí pár set metrů východně od sedla Čertovica na liptovské
+    straně, u minerálního jezírka Kyselka, ve výšce 1232 metrů. Sedlo je
+    jediný frekventovaný silniční přechod hlavního hřebene Nízkých Tater
+    — autobus z Liptovského Mikuláše do Brezna tu staví — a červená
+    hřebenovka Cesty hrdinov SNP jím prochází na půli cesty mezi
+    Ďumbierom a Kráľovou hoľou.
+  - >-
+    V sedle se dnes dá spát hned ve čtyřech provozech a jména se
+    matou snadno: tahle Chata pod Čertovicou (číslo popisné 259) je ta
+    u jezírka; o kousek výš u sjezdovky stojí Chata pod Sedlom
+    Čertovica, přímo v sedle Penzión STIV a Domček Horskej služby.
+    Starší doména téhle chaty se navíc hlásila jako „Hotel pod
+    Čertovicou" — pořád týž objekt.
+  - >-
+    Spí se ve dvanácti pokojích s třiatřiceti lůžky a devíti
+    přistýlkami (prameny uvádějí i 34, 38 a 40 — zapsané je nejnižší
+    a nejčerstvější číslo); dvoulůžkový pokoj vyjde na 40 až 55 eur.
+    Restaurace s barem a krbem vaří snídaně za 5,50 eura a polopenzi za
+    třináct; specialitou jsou grilovaní pstruzi z vlastního jezírka,
+    které v zimě zamrzá v přírodní kluziště. K tomu wellness s vířivkou
+    a dvěma saunami, hřiště a tenisový kurt — na horskou chatu výbava
+    spíš hotelová.
+  - >-
+    Provoz je celoroční; lyžařský vlek je sto metrů od chaty
+    a středisko Ski Čertovica dvě stě. Z sedla vede červená na západ
+    k Ďumbieru (11,6 kilometru, kolem čtyř hodin a čtvrt) a na východ
+    přes Beňušku k útulně Líška a dál k Ramži.
+  - >-
+    Údaje nesou sedlocertovica.sk, travelguide.sk, horehronie.sk,
+    vypadni.sk, slovenske.sk, planetofhotels a 1-2-3-ubytovanie.sk;
+    polohu OpenStreetMap. Vlastní web chaty byl při rešerši technicky
+    nedostupný. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      sedlocertovica.sk, přehled ubytování v sedle (©2025) — 33 lůžek
+      + 9 přistýlek ve 12 pokojích, aktuální kontakty, hodnocení;
+      klíčový pramen rozpletení čtyř provozů (načteno 9. 8. 2026)
+    url: https://www.sedlocertovica.sk/ubytovanie/
+  - popis: >-
+      travelguide.sk — 1232 m, 40 lůžek/15 pokojů (starší údaj), ceny,
+      restaurace a bar, wellness, vlek 100 m, celoročně, poloha
+      u jezírka Kyselka (načteno 9. 8. 2026)
+    url: https://www.travelguide.sk/eng/accommodation/chata-pod-certovicou_50796_0_1.html
+  - popis: >-
+      horehronie.sk — grilovaní pstruzi z jezírka, 34 lůžek, 200 m od
+      Ski centra Čertovica, celoročně (načteno 9. 8. 2026)
+    url: https://horehronie.sk/chata-pod-certovicou-zariadenie
+  - popis: >-
+      vypadni.sk — 1232 m, max. 38 osob, od 13 €/os., web .eu a e-mail
+      (načteno 9. 8. 2026)
+    url: https://www.vypadni.sk//sk/chata-pod-certovicou
+  - popis: >-
+      1-2-3-ubytovanie.sk — provozovatel LBS INVEST s.r.o., adresa
+      Vyšná Boca 259, starší telefon (načteno 9. 8. 2026)
+    url: https://www.1-2-3-ubytovanie.sk/chata-pod-certovicou
+  - popis: >-
+      planetofhotels — historická chata, check-in 14:00, hodnocení
+      8,8/10 z 94 recenzí (načteno 9. 8. 2026)
+    url: https://sk.planetofhotels.com/slovensko/vysna-boca/chata-pod-certovicou
+  - popis: >-
+      slovenske.sk (archivní zápis) — zrubová chata, restaurace s barem
+      a krbem; 1120 m je odlehlá hodnota (načteno 9. 8. 2026)
+    url: https://www.slovenske.sk/ubytovani/chata-pod-certovicou-certovica.html
+  - popis: >-
+      OpenStreetMap (GPS; ODbL)
+    url: https://www.openstreetmap.org/node/4385064864
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/chata-pod-certovicou.yaml
+  (9. 8. 2026); katalogový objekt HUT-0150. ROZPLETENÍ SEDLA (rešerše
+  9. 8. 2026): čtyři samostatné ubytovací provozy — tahle chata (č. 259,
+  u jezírka), Penzión STIV (č. 266, certovica.sk), Chata pod Sedlom
+  Čertovica (č. 262, chatacertovica.sk — kandidáta nemá; katalogová
+  HUT-0158 „Chata na Čertovici" je téměř jistě ona) a Domček HS (č. 263,
+  OZ Horské spoločenstvo). Západně pod sedlem tři ruiny: stará Chata
+  Čertovica (1935/36, abandonedhotels.eu), Športhotel Čertovica
+  (zilinak.sk 1/2025) a archivní hotel TOTEM — vzájemné vazby
+  NENALEZENY.
+
+  VLASTNÍ WEB: chatapodcertovicou.sk (aktuální dle sedlocertovica.sk)
+  i starší .eu byly při rešerši v přesměrovací smyčce http↔https — do
+  kontaktů jde .sk; není to mrtvá doména, jen se nenačetla. Až se
+  načte, srovnat ceník a kapacitu (zapsané údaje jsou z agregátorů).
+
+  ROK VZNIKU NENALEZEN („historická zrubová chata" bez data). KAPACITA
+  33 × 34 × 38 × 40 (+ archivních 36–43) — nejnižší a nejčerstvější.
+  Obsluha neubytovaných nedoložena výslovně (DATA-04). Fotku dodá druhý
+  běh DATA-02, výškový profil DATA-06.

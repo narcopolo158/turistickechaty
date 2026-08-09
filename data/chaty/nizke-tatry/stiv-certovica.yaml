@@ -1,0 +1,202 @@
+# Penzión STIV Čertovica — publikovaný profil Nízkých Tater (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne; katalogový objekt
+# HUT-0151 („Horská chata STIV Čertovica"). POZOR: bod OSM kandidáta je
+# dle poi.oma.sk RESTAURACE areálu; budova penzionu stojí 15 m
+# severovýchodně — jeden areál, jeden provoz, jeden profil.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani
+# návštěvou.
+
+nazev: Penzión STIV Čertovica
+slug: stiv-certovica
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Horská chata STIV Čertovica
+    poznamka: katalogové jméno
+  - nazev: STIV Čertovica
+    poznamka: OSM name; STIV je zároveň jméno lyžařského střediska
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9054611
+lng: 19.7365699
+obec: Vyšná Boca
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/457955018 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); bod je dle poi.oma.sk tagován jako
+    restaurace areálu, samotný penzion stojí 15 m severovýchodně — týž
+    areál. Adresa Vyšná Boca 266 (certovica.sk). VÝŠKA vědomě
+    nevyplněna: přesné číslo pro budovu žádný pramen nenese — katalog
+    uvádí 1232 m (výška sedla dle sedlocertovica.sk), lyžařské
+    středisko se rozkládá v 1238–1380 m (holidayinfo.sk). Poloha: přímo
+    v sedle Čertovica na liptovské straně silnice I/72, u vleků
+    střediska STIV.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 60
+overeniNocleh:
+  source: >-
+    Vlastní web penzionu (certovica.sk, čteno 9. 8. 2026): kapacita 60
+    osob ve dvoulůžkových a trojlůžkových pokojích s vlastní koupelnou
+    a rodinných buňkách pro 5–6 hostů; ceny od 40 € za osobu a noc
+    s polopenzí. Rezervace e-mailem certovica@certovica.sk. STARŠÍ STAV,
+    přiznaný: hřebenový přehled hiking.sk z léta 2021 uváděl pokoje 1–3
+    lůžkové s přistýlkou od 20 € za lůžko — údaj provozovatele je
+    novější (vzor Zamkovského chaty).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026): „výborné domáce jedlá" z kvalitních
+    surovin, snídaně, obědy, večeře, slovenské speciality, terasa.
+    Restaurace areálu (bod OSM tohoto profilu) má dle poi.oma.sk
+    otvíračku pondělí–neděle 10:00–17:30 — obsluhuje tedy i procházející
+    veřejnost, ne jen ubytované.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    V provozu: vlastní web uvádí wellness renovované roku 2025
+    a lyžařský areál hlásil „Od soboty 10.1.2026 vlekujeme denne"
+    (holidayinfo.sk). Pole sezona se nevyplňuje: hiking.sk (léto 2021)
+    psal „Otvorený sezónne… strava aj ubytovanie možné do 20.00 h"
+    a výslovné „celoročne" žádný pramen nenese. Provozovatel: STIV
+    Čertovica, s.r.o., sídlo Vyšná Boca 266 (vlastní web) — rodinný
+    podnik s vlastním lyžařským střediskem (vlek Tatrapoma 450 m,
+    dětský vlek 120 m, dvě sjezdovky s technickým zasněžováním,
+    free-ride zóna). Vleky jedou o víkendech, svátcích a prázdninách
+    denně 9:00–15:30, jinak na objednávku.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421908551479'
+  email: certovica@certovica.sk
+  web: https://certovica.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+overeniHistorie:
+  source: >-
+    Historie objektu se nenašla — vlastní web říká jen „rodinný podnik
+    obklopený krásou Nízkych Tatier"; rok výstavby ani starší osudy
+    žádný pramen nenese. Pole rokVzniku i milníky proto zůstávají
+    prázdné. Kontext sedla (stará Chata Čertovica 1935/36, dnes ruina)
+    patří jiným objektům.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Penzion má vlastní lyžařský areál přímo v sedle: vlek Tatrapoma
+      o délce 450 metrů, dětský vlek, dvě sjezdovky s technickým
+      zasněžováním a free-ride zónu; denní skipas stojí 16 až 22 eur.
+    kategorie: jine
+    zdroj: >-
+      vlastní web penzionu, stránka lyžařského střediska (čteno
+      9. 8. 2026); parametry vleku též holidayinfo.sk.
+  - text: >-
+      Wellness s infrasaunou, finskou saunou a perličkovou vanou prošlo
+      renovací v roce 2025.
+    kategorie: jine
+    zdroj: >-
+      vlastní web penzionu (čteno 9. 8. 2026).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Rodinný penzion s vlastním lyžařským areálem přímo v sedle Čertovica,
+  na jediném silničním přechodu hlavního hřebene. Šedesát lůžek
+  s polopenzí od 40 eur, domácí kuchyně — a restaurace, která přes den
+  obsluhuje i hřebenovkáře procházející po Cestě hrdinov SNP.
+text:
+  - >-
+    STIV stojí přímo v sedle Čertovica na liptovské straně silnice
+    z Liptova na Horehroní — autobus z Liptovského Mikuláše do Brezna
+    staví před dveřmi a červená hřebenovka Cesty hrdinov SNP prochází
+    sedlem. Je to rodinný podnik: penzion, restaurace a k tomu vlastní
+    lyžařský areál s vlekem Tatrapoma, dětským vlekem, dvěma sjezdovkami
+    a free-ride zónou.
+  - >-
+    Spí se v šedesáti lůžkách — dvoulůžkové a trojlůžkové pokoje
+    s vlastní koupelnou a rodinné buňky pro pět až šest hostů — od
+    čtyřiceti eur za osobu a noc s polopenzí. Kuchyně vaří domácí jídla
+    a slovenské speciality; restaurace u silnice má otevřeno denně od
+    deseti do půl šesté, takže poslouží i tomu, kdo sedlem jen prochází.
+    Wellness s infrasaunou, finskou saunou a perličkovou vanou prošlo
+    v roce 2025 renovací.
+  - >-
+    V sedle se jména snadno pletou: STIV (číslo popisné 266) je ten
+    přímo u silnice s vleky; kousek výš u sjezdovky stojí Chata pod
+    Sedlom Čertovica, u jezírka východně Chata pod Čertovicou a přes
+    cestu Domček Horskej služby. Katalogy STIV vedou i jako „horskou
+    chatu" — vlastní web říká penzion.
+  - >-
+    Z sedla vede červená na západ přes Kumštové sedlo k Ďumbieru
+    (11,6 kilometru, kolem čtyř a čtvrt hodiny) a na východ přes
+    Beňušku směrem k útulně Ramža; na jih i sever sjíždí silnice do
+    dolin. Vleky jedou o víkendech, svátcích a prázdninách denně od
+    devíti do půl čtvrté.
+  - >-
+    Údaje nesou vlastní web penzionu, holidayinfo.sk, sedlocertovica.sk,
+    hiking.sk a poi.oma.sk; polohu OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web penzionu — kapacita 60 osob, ceny od 40 € s polopenzí,
+      domácí kuchyně, lyžařské středisko STIV (vleky, skipasy), wellness
+      renovované 2025, STIV Čertovica s.r.o., kontakty
+      (načteno 9. 8. 2026)
+    url: https://certovica.sk
+  - popis: >-
+      holidayinfo.sk — středisko STIV Čertovica 1238–1380 m, vlek
+      Tatrapoma H100 (450 m), „Od soboty 10.1.2026 vlekujeme denne",
+      parkování zdarma u penzionu (načteno 9. 8. 2026)
+    url: https://www.holidayinfo.sk/en/certovica-stiv
+  - popis: >-
+      sedlocertovica.sk, přehled ubytování v sedle (©2025) — STIV mezi
+      čtyřmi provozy sedla, výška sedla 1232 m (načteno 9. 8. 2026)
+    url: https://www.sedlocertovica.sk/ubytovanie/
+  - popis: >-
+      hiking.sk, přehled hřebene léto 2021 — tehdy sezónní provoz,
+      pokoje od 20 €/lůžko, provoz do 20:00 (starší stav)
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/6712/aktualne_z_hrebena_nizkych_tatier_leto2021.html
+  - popis: >-
+      poi.oma.sk — bod OSM je restaurace (otvíračka po–ne 10:00–17:30),
+      penzion 15 m severovýchodně (načteno 9. 8. 2026)
+    url: https://poi.oma.sk/n457955018
+  - popis: >-
+      OpenStreetMap (GPS; ODbL)
+    url: https://www.openstreetmap.org/node/457955018
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/stiv-certovica.yaml
+  (9. 8. 2026); katalogový objekt HUT-0151.
+
+  BOD OSM = restaurace areálu (poi.oma.sk), penzion 15 m SV — pod
+  prahem duplicity, jeden areál a jeden provoz (týž vzor jako
+  Kosodrevina, jen v malém). VÝŠKA vědomě nevyplněna: 1232 m je výška
+  sedla, 1238–1380 m rozsah střediska; číslo pro budovu chybí (DATA-31
+  nebo mapový odečet může doplnit).
+
+  SEZONA vědomě nevyplněna: hiking 2021 „otvorený sezónne", novější
+  prameny výslovnou větu nenesou; provoz doložen zimou 2026 (vleky)
+  i renovací wellness 2025. TELEFON — starší rozpor: hiking 2021 vedl
+  +421 915 030 351; zapsán aktuální z vlastního webu. Kapacita 60 =
+  údaj provozovatele (2021: od 20 €/lůžko — vývoj cen, ne rozpor).
+
+  ROK VZNIKU NENALEZEN. Výpis ORSR pro STIV Čertovica s.r.o. se ze
+  sandboxu nenačetl (robots). Fotku dodá druhý běh DATA-02, výškový
+  profil DATA-06.
