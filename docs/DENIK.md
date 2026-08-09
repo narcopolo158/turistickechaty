@@ -29,6 +29,76 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-08 (sedmý blok) — od zakládání zpátky k povyšování, a šestá chyba téhož druhu
+
+Michalův pokyn: *„pokracuj samostatne dal, muzes zakladat a pak se vratit
+k povysovani"* — tedy odpověď na moji otázku z konce minulého bloku: obojí.
+
+**Hotovo:**
+
+**ZAKLÁDÁNÍ SE ZASTAVILO NA OSMNÁCTI OBLASTECH** a je to rozhodnutí podle
+čísla, ne podle pocitu. Report pokrytí katalogu po založení Lužických hor
+a Bieszczad ukázal, že ze 35 zbývajících pohoří má většina jeden až dva
+objekty; největší zbývající jsou Malé Karpaty (5) a pak už jen trojice.
+Výnos z každé další oblasti klesá, kdežto Vysoké Tatry mají po Michalově
+kliku 102 kandidátů a katalogové pokrytí **18 z 18** — tedy hotovou surovinu
+bez jediné mezery. Proto jsem se vrátil k povyšování.
+
+**ČTYŘI PRVNÍ PROFILY VYSOKÝCH TATER**, korpus 156. Vybral jsem je tak, aby
+dohromady daly kostru dějin zdejšího chataření, a ta kostra teď v datech
+opravdu stojí: **jednotlivec Rainer (1863) → Uhorský karpatský spolok od
+roku 1873 → Klub československých turistů od roku 1918.** U KČST je
+zajímavé, že ve Vysokých Tatrách má doloženou jedinou vlastní stavbu —
+Chatu pod Rysmi; ostatní chaty, které vlastnil, jen převzal po UKS.
+
+**RAINEROVA CHATA je první objekt korpusu s `nocleh: ne` a `kuchyne: ne`.**
+Nespí se tam a nevaří se tam — je to malé občerstvení s expozicí o horských
+nosičích v domku pět krát pět a půl metru. Doložené to je doslova třemi
+prameny, takže to není mezera v datech, ale vlastnost objektu. Pro číselník
+je to užitečná připomínka: „chata" neznamená automaticky nocleh.
+
+**CHATA POD RYSMI je jediný objekt korpusu, u kterého je tvar stavby
+odpovědí na hrozbu.** Po lavinách v letech 1955 a 2000 má nová budova
+záměrně šikmou stěnu, aby na ni sníh nenarazil kolmo. A je to zároveň první
+profil, kde je sezónnost hlavní údaj, ne provozní poznámka: mimo červen až
+říjen je zavřeno, ne jen hůř dostupné.
+
+**SUPERLATIV TÉRYHO CHATY JSEM V PRÓZE ZÚŽIL.** Běžně se o ní píše jako
+o nejvýše položené celoročně otevřené chatě na Slovensku; doložené je ale
+jen „ve Vysokých Tatrách" — a nedá se to dovodit ani logikou, protože výš
+stojí Chata pod Rysmi, jen je sezónní. Tři superlativy dneška (Tarnica,
+Chatka Puchatka, Téryho chata) mají tentýž tvar: platí v užším rámci, než
+v jakém se říkají.
+
+**ŠESTÁ CHYBA V MÉM ZADÁNÍ REŠERŠE — a poprvé jsem u ní málem udělal
+druhou.** Ptal jsem se, co ve Vysokých Tatrách postavil Karpathenverein;
+rešeršista nenašel ani jednu chatu. První reakce byla označit náš ranní údaj
+(Bilíkova chata 1934, Plesnivec 1932) za podezřelý. Pak mi došlo, že to je
+špatně: **nenalezení není vyvrácení.** Karpathenverein vznikl roku 1920
+přejmenováním Uhorského karpatského spolku, takže roky 1932 a 1934 jsou
+chronologicky možné — druhá rešerše na ně jen nenarazila. Do dat šel rozdíl
+obou rešerší, ne verdikt. Je to jemnější verze téže disciplíny, kterou
+průvodce drží u pramenů: prázdný výsledek hledání není doklad opaku.
+
+**Příště:** ve Vysokých Tatrách zbývá 38 nadějných kandidátů a nejcennější
+jsou Sliezsky dom (1895), Chata pri Zelenom plese (1897), Skalnatá chata
+(první úkryt 1841) a čtyři polská schroniska PTTK. Beskydská triáž má dál
+172 nadějných. Deset oblastí čeká na Michalův klik.
+
+**Otázky pro Michala:**
+
+1. **Jeden telefonát vyřeší celou oblast.** U žádné ze čtyř tatranských chat
+   neříká pramen, jestli se obslouží i neubytovaní — a je to údaj, na kterém
+   u vysokohorské chaty stojí klíč zařazení. Zavolat se dá na Téryho chatu
+   (+421 911 900 609) nebo na Chatu pod Rysmi (+421 911 765 069) a odpověď
+   nejspíš platí pro všechny.
+2. **Sezónnost Chaty pod Rysmi:** začátek sezóny uvádí vlastník 1. června,
+   tatryportal 15. června. U chaty, kam se jde tři a půl hodiny, je to
+   rozdíl, který stojí za ověření týmž telefonátem.
+3. **Zakládání jsem zastavil na osmnácti oblastech** — zbývající pohoří mají
+   po jednom dvou objektech. Souhlasíš, nebo chceš pokrýt i ta drobná (Malé
+   Karpaty, Muránska planina, Veporské a Volovské vrchy, Fichtelgebirge)?
+
 ## 2026-08-08 (šestý blok, osm hodin) — šest nových oblastí a odpověď na „vse dalsi co najdes"
 
 Michalův pokyn: *„pokracuj samostatne dal 8 hodin v kuse, klidne dopln krusne
