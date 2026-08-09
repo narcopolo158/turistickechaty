@@ -29,6 +29,69 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-09 (čtrnáctý blok) — Nízké Tatry z 2 na 10 profilů
+
+Michalův pokyn: *„pokracuj dal jeste 4 hodiny"*.
+
+**Hotovo:**
+
+**OSM PROFILŮ ZA BLOK, korpus 189.** Nízké Tatry mají po dnešku
+10 publikovaných profilů a pokrytých 8 ze 14 katalogových objektů:
+
+- **Čtyři hřebenové útulny** (commit e21785e): **Ďurková** (1623 m,
+  na místě vyhořelé chaty KČST z 1932 — požár 9. 9. 1940 doložen dvěma
+  prameny proti osamocené verzi „zničili ji fašisti"; 84 povstalců
+  zahynulých na Chabenci 1944 je v milnících), **Andrejcová** (1968,
+  obnova 2005 z SMS sbírky po vichřici, OZ Horské spoločenstvo, pivo
+  Tetrov, povinná rezervace), **Ramža** (seník přestavěný žilinskými
+  skauty v 70. letech — reportáž hiking.sk 2024 vyvrátila mýtus
+  o dělnících z plynovodu; Olosova banda se stará dodnes) a **prístrešok
+  v Hiadeľskom sedle** — PRVNÍ POUŽITÍ TYPU bivak v korpusu (otevřený
+  přístřešek bez kamen; kapacita vědomě nezapsána, 4+cca5 × 10 je
+  aritmetika). Ďurková a Andrejcová jsou typ obsluhovana navzdory jménu
+  — správce, kuchyně, ceník; zakládá to pravidlo pro slovenské
+  „obsluhované útulně".
+
+- **Pár Kosodrevina 151 m ROZHODNUT rešerší** (commit ad83a73, vzor
+  Morskie Oko): v areálu je JEDNA ubytovací budova — Begánův
+  modernistický horský hotel (1958–68, Register modernej architektúry,
+  236 lůžek, dnes jen zimní sezóna); druhý bod OSM je komplex stanice
+  lanovky se samoobslužnou restaurací TMR → vyřazen, registrové jádro
+  kosodrevina zaniklo. K tomu **Trangoška mimo provoz** — druhý
+  mimo-provoz profil korpusu: dva prameny hlásí 2026 zavřeno (jeden
+  „TRVALO"), poslední doklad provozu 11/2020, nedostupný web nese
+  titulek „Nová Trangoška"; profil nic nedomýšlí a kontakty nezapisuje
+  (tři rozporné telefony).
+
+- **Magurka a Chata pod Kráľovou hoľou** (poslední commit): Magurka =
+  historická Chata Úfnosť (seznam KČST 1938, dům báňské správy
+  zlatokopecké osady, obnova 2009, Ritterstein s.r.o.); chata na
+  Prednom sedle = bývalá garáž ratraku, kterou tři Horehronci
+  2015–2018 za vlastní peníze přestavěli (6–8 postelí, 90 % energie ze
+  slunce). **Dvojice u Kráľovej hole rozhodnuta: dva objekty** —
+  Kráľovohoľská chata (kralovka.sk) je apartmánový dům dole v obci
+  (~950 m) → vyřazena.
+
+**REŠERŠE ČERTOVICA HOTOVÁ A ULOŽENÁ do interniPoznamky kandidátů**
+(chata-pod-certovicou, stiv-certovica): v sedle jsou ČTYŘI samostatné
+ubytovací provozy — Chata pod Čertovicou (HUT-0150), Penzión STIV
+(HUT-0151), Chata pod Sedlom Čertovica (chatacertovica.sk — kandidáta
+NEMÁ, a katalogová HUT-0158 „Chata na Čertovici" je téměř jistě ona)
+a Domček HS (OZ jako Andrejcová, kandidáta taky nemá). Plus tři ruiny
+západně pod sedlem (stará Chata Čertovica 1935/36, Športhotel, TOTEM).
+Příští blok z toho udělá profily.
+
+**Příště:** Čertovica (4 profily z hotové rešerše, HUT-0158 přiřadit),
+pak zbývající katalog NT: Liptov, Opalisko; triáž NT pass 2 (thin
+records); Beskydy jádro. Kliky DATA-32 (lanovky) pořád čekají —
+Kosodrevina i Kamienka na ně odkazují.
+
+**Otázky pro Michala:** beze změny; nová drobnost k rozhodnutí —
+**HUT-0158 „Chata na Čertovici"**: rešerše říká, že žádný živý provoz
+toho jména není a katalogová položka nejspíš míří na Chatu pod Sedlom
+Čertovica (chatacertovica.sk). Přiřadím ji tam s poznámkou, pokud
+neřekneš jinak.
+
 ## 2026-08-09 (třináctý blok) — lanovky pro všechna pohoří a první dva profily Nízkých Tater
 
 Michalův pokyn z průběhu dne: *„rovnau dohledej i lanovky pro vsechny

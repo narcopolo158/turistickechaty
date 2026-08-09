@@ -1,0 +1,236 @@
+# Horská chata pod Kráľovou hoľou — publikovaný profil Nízkých Tater
+# (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# ROZHODNUTÍ DVOJICE 2,1 km: tohle je vysokohorská chata na Prednom
+# sedle (1451 m); „Kráľovohoľská chata" (kralovka.sk) je jiný objekt —
+# apartmány s restaurací na konci obce Šumiac (~950 m), vyřazeno.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani
+# návštěvou.
+
+nazev: Horská chata pod Kráľovou hoľou
+slug: chata-pod-kralovou-holou
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Chata pod Kráľovou Hoľou
+    poznamka: psaní dle OSM name
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.8644577
+lng: 20.1339371
+vyska: 1451
+obec: Šumiac
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/73708936 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1451 m BEZ ROZPORU: obec Šumiac („Nadmorská výška: 1451 m
+    n. m."), hiking.sk i horehronie.sk (vše čteno 9. 8. 2026). Poloha:
+    Predné sedlo na jihovýchodním úbočí Kráľovej hole, zhruba v polovině
+    výstupu ze Šumiaca po modré značce, u obslužné silnice k vysílači.
+    NEZAMĚŇOVAT s „Kráľovohoľskou chatou" (kralovka.sk) — apartmánovým
+    objektem s restaurací na konci obce Šumiac v ~950 m, 2,1 km jižně.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 6
+overeniNocleh:
+  source: >-
+    Obec Šumiac i hiking.sk (čteno 9. 8. 2026): nocleh pro 6–8 osob na
+    postelích, rezervace nutná telefonicky předem. Dle konvence zapsáno
+    nižší číslo rozpětí. Ceny dle hiking.sk (aktualizace 31. 1. 2023):
+    30 € se snídaní, 25 € bez snídaně za osobu a noc. Dobré noviny
+    (2018) uváděly celkovou kapacitu objektu asi 25 osob — to je ale
+    číslo včetně denní místnosti, nocležných postelí je 6–8.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Obec Šumiac (čteno 9. 8. 2026), nabídka pro procházející: „čaj,
+    polievka (jeden alebo dva druhy), párky, klobásy, domáca ťahaná
+    štrúdľa, remeselné pivo Predná hora"; hiking.sk (1/2023) dokládá
+    i čepované pivo. Chata leží uprostřed frekventovaného výstupu na
+    Kráľovu hoľu — bufet slouží především denním hostům.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    Obec Šumiac (čteno 9. 8. 2026): „Chata je otvorená celoročne";
+    shodně horehronie.sk („otvorená každý deň, čiže celoročne")
+    a restartnisa.sk. Provoz doložen k 31. 1. 2023 (hiking.sk);
+    stránka obce s chatou nesla při čtení ediční datum 21. 7. 2026.
+    Provozují ji místní Peter Kalman a Vlado Jambrich, kteří objekt
+    s Marianou Jambrichovou v letech 2015–2018 vlastními silami
+    a penězi přestavěli.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421918735483'
+  web: https://www.sumiac.sk/sumiac/oplati-sa-navstivit-vidiet/horska-chata-pod-kralovou-holou/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 2018
+overeniHistorie:
+  source: >-
+    Budova původně nebyla chata: sloužila jako noclehárna personálu
+    televizního vysílače na Kráľové holi a poslední roky jen jako garáž
+    ratraku, který vysílač obsluhoval (obec Šumiac: „Budova bola pôvodne
+    garážou pre ratrak"; podrobněji Dobré noviny 28. 10. 2018).
+    V letech 2015–2018 ji tři Horehronci — právník Peter Kalman,
+    Mariana Jambrichová a Vlado Jambrich — ve volném čase a za vlastní
+    peníze přestavěli na chatu („všetko dokončili z vlastných zdrojov").
+    ROZPOR V DATU OTEVŘENÍ, přiznaný: hiking.sk „v júni 2018 slávnostne
+    otvorená", Dobré noviny uvádějí oficiální otevření v máji 2018.
+    Zapsán rok 2018.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 2015
+    udalost: >-
+      Tři Horehronci koupili bývalou garáž ratraku na Prednom sedle
+      a začali ji ve volném čase přestavovat na horskou chatu.
+    zdroj: >-
+      Dobré noviny (28. 10. 2018, čteno 9. 8. 2026) — rekonstrukce
+      květen 2015 až květen 2018, Peter Kalman, Mariana Jambrichová,
+      Vlado Jambrich, vše z vlastních zdrojů.
+  - rok: 2018
+    udalost: >-
+      Chata se otevřela veřejnosti; prameny se přou, jestli v květnu,
+      nebo při slavnostním otevření v červnu.
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „v júni 2018 slávnostne otvorená";
+      Dobré noviny — oficiálně otevřena v máji 2018.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Provoz je nezvykle ekologický: podle horehronie.sk jede chata
+      z 90 procent na sluneční energii, odpad se sváží do doliny —
+      a v 1451 metrech tu teče pitná voda, splachuje WC a funguje
+      sprcha.
+    kategorie: jine
+    zdroj: >-
+      horehronie.sk a obec Šumiac (čteno 9. 8. 2026).
+  - text: >-
+      Čepuje se tu řemeslné pivo Predná hora a k chatě patří půjčovna
+      skialpů dole v Šumiaci.
+    kategorie: gastro
+    zdroj: >-
+      obec Šumiac (čteno 9. 8. 2026) — nabídka bufetu a půjčovna,
+      Potôčky 190.
+  - text: >-
+      V budově vysílače na vrcholu Kráľovej hole bývalo malé nouzové
+      útočiště; podle průvodce restartnisa.sk je aktuálně uzavřené —
+      chata na Prednom sedle je tak jediná střecha výstupu.
+    kategorie: jine
+    zdroj: >-
+      restartnisa.sk (čteno 9. 8. 2026).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bývalá garáž ratraku od vysílače, kterou tři Horehronci za vlastní
+  peníze přestavěli na chatu — od roku 2018 jediná střecha na výstupu
+  na Kráľovu hoľu. Šest až osm postelí na rezervaci, polévka, štrúdľa
+  a pivo Predná hora, z 90 procent na sluneční energii.
+text:
+  - >-
+    Chata stojí na Prednom sedle v 1451 metrech, zhruba v polovině
+    výstupu na Kráľovu hoľu, který je podle průvodce restartnisa.sk ze
+    Šumiaca nejkratší, ale nejstrmější — modrá značka sem stoupá hodinu
+    a půl a na vrchol zbývá další hodina. Kráľova hoľa
+    (1946 m) je východní tečka hlavního hřebene a cíl červené Cesty
+    hrdinov SNP; kdo ji přechází, míjí chatu kousek stranou červené,
+    na obslužné silnici k vysílači.
+  - >-
+    Je to mladá chata s netypickým rodokmenem: budova sloužila jako
+    noclehárna personálu televizního vysílače a nakonec jen jako garáž
+    ratraku. V květnu 2015 se do ní pustili tři místní — právník Peter
+    Kalman, Mariana Jambrichová a Vlado Jambrich — a po třech letech
+    práce ve volném čase a za vlastní peníze ji v roce 2018 otevřeli
+    veřejnosti (prameny se přou, jestli v květnu, nebo v červnu).
+  - >-
+    Nocleh je komorní: šest až osm postelí, výhradně na telefonickou
+    rezervaci předem, za 30 eur se snídaní (25 bez ní, stav k začátku
+    roku 2023). Bufet ale jede pro každého, kdo jde kolem: čaj, jedna
+    dvě polévky, párky a klobásy, domácí tažená štrúdľa a řemeslné pivo
+    Predná hora. Provoz je celoroční — a pozoruhodně zelený: 90 procent
+    energie ze slunce, odpad se sváží dolů, a přesto tu v patnácti
+    stech metrech teče pitná voda a splachuje WC.
+  - >-
+    Přístupy: ze Šumiaca po modré hodina a půl až hodina čtyřicet,
+    z vrcholu Kráľovej hole hodina dolů, ze sedla Snehová jama po
+    silnici tři čtvrtě hodiny. Nouzové útočiště v budově vysílače na
+    vrcholu je podle průvodce aktuálně uzavřené. Pozor na záměnu:
+    Kráľovohoľská chata s apartmány a restaurací (kralovka.sk) stojí
+    dole na konci obce Šumiac — jiný objekt, jiný provoz.
+  - >-
+    Údaje nesou obec Šumiac, hiking.sk, Dobré noviny, horehronie.sk
+    a restartnisa.sk; polohu OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Obec Šumiac — 1451 m, původ budovy (garáž ratraku), 6–8 postelí
+      na rezervaci, nabídka bufetu, celoroční provoz, telefony, půjčovna
+      skialpů (stránka editována 21. 7. 2026; načteno 9. 8. 2026)
+    url: https://www.sumiac.sk/sumiac/oplati-sa-navstivit-vidiet/horska-chata-pod-kralovou-holou/
+  - popis: >-
+      hiking.sk, profil chaty — slavnostní otevření červen 2018, ceny
+      30/25 € (stav 1/2023), přístupové časy (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/5360/horska_chata_pod_kralovou_holou.html
+  - popis: >-
+      hiking.sk — aktuálně z chaty (31. 1. 2023): provoz, čepované pivo
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/news/8414/aktualne_z_chaty_pod_kralovou_holou.html
+  - popis: >-
+      Dobré noviny (28. 10. 2018) — rekonstrukce 2015–2018 vlastními
+      silami tří Horehronců, jména, původ budovy (noclehárna personálu
+      vysílače), otevření květen 2018 (načteno 9. 8. 2026)
+    url: https://www.dobrenoviny.sk/c/146117/pod-kralovou-holou-otvorili-unikatnu-horsku-chatu-vo-volnom-case-a-za-svoje-peniaze-ju-zrekonstruovali-traja-horehroncania
+  - popis: >-
+      horehronie.sk — 1451 m, celoroční provoz, ekologie (90 % ze
+      slunce), čas výstupu 1:40 (načteno 9. 8. 2026)
+    url: https://horehronie.sk/horska-chata-pod-kralovou-holou
+  - popis: >-
+      restartnisa.sk — trasa Šumiac–Kráľova hoľa (modrá, 5,1 km,
+      +1066 m), chata celoročně otevřená, uzavřené útočiště ve vysílači
+      (načteno 9. 8. 2026)
+    url: https://www.restartnisa.sk/kralova-hola-nizke-tatry-odporucane-turisticke-trasy-cyklotrasy/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/73708936
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/chata-pod-kralovou-holou.yaml
+  (9. 8. 2026). V katalogu oblast tenhle objekt nevede (14 katalogových
+  objektů NT ho nezahrnuje) — chata je z roku 2018, mladší než katalogové
+  podklady.
+
+  ROZHODNUTÍ DVOJICE 2,1 km: Kráľovohoľská chata (kralovka.sk,
+  node/13018942055) je JINÝ objekt — apartmánový dům s restaurací
+  a wellness na konci obce Šumiac (~950 m, horehronie.sk), 6 apartmánů
+  od 260 €/2 noci. Vyřazen z fronty jako apartmánový objekt v obci
+  (viz _vyrazeno.yaml). Není to jmenovec ve smyslu registru (jádra
+  „kralovka/kralovoholska" × „pod kralovou holou" se liší), kolize-jmen
+  je nepáruje.
+
+  KAPACITA 6 (rozpětí 6–8, nižší číslo); „25 osob" z Dobrých novin je
+  kapacita objektu včetně denní místnosti, ne postelí. KONTAKTY —
+  ROZPOR: obec vede čtyři mobily (zapsán první), hiking.sk
+  +421 908 318 376 a web chatapodkralovou.sk, horehronie.sk
+  +421 911 633 119 a horskachatapodkralovouholou.sk — ani jeden
+  z webů se nepodařilo ověřit jako živý, proto je v kontaktech stránka
+  obce (nejčerstvěji editovaný pramen). DATA-04 telefonát to srovná.
+
+  Fotku dodá druhý běh DATA-02, výškový profil DATA-06.

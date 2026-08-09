@@ -1,0 +1,267 @@
+# Chata Magurka — publikovaný profil Nízkých Tater (9. 8. 2026), povýšen
+# z kandidáta DATA-01 po rešerši téhož dne; katalogový objekt HUT-0149.
+# POZOR NA ZÁMĚNU: v osadě Magurka je víc ubytovacích objektů (Chata Mont
+# Magurka, Chata pod javormi…) — tenhle profil patří turistické chatě
+# s webem magurka-liptov.sk (adresa Magurka 21), historické Chatě Úfnosť.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani
+# návštěvou.
+
+nazev: Chata Magurka
+slug: magurka
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Chata Úfnosť na Magurke
+    poznamka: historické jméno ze seznamu KČST 1938 (hiking.sk,
+      magurka-liptov.sk)
+  - nazev: Magurka
+    poznamka: jméno osady, kterým se chata běžně označuje (OSM name)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.9439875
+lng: 19.4323681
+vyska: 1050
+obec: Partizánska Ľupča
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/234323491 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    vlastní web uvádí shodně N 48.944012°, E 19.432350°, adresa 032 15
+    Magurka 21. VÝŠKA 1050 m BEZ ROZPORU: vlastní web („an altitude of
+    1,050 meters"), hiking.sk i treking.cz (vše čteno 9. 8. 2026).
+    Poloha: bývalá hornická osada Magurka v závěru Ľupčianské doliny,
+    na severní straně hřebene pod Latiborskou hoľou.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 46
+overeniNocleh:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): 46 lůžek včetně 11 přistýlek,
+    všechny pokoje s vlastním sociálním zařízením; příchod od 14:00,
+    odchod do 10:00. Ceny se snídaní: dospělý 33 € mimo sezónu, 35 €
+    ve vysoké sezóně (1. 7. – 30. 9.); dítě 4–11 let 23/24 €, do 4 let
+    bez nároku na lůžko zdarma; místní poplatek 0,60 €; pes 7 € za noc
+    plus kauce 20 €. Rezervace telefonicky, e-mailem nebo formulářem,
+    záloha 100 % předpokládané ceny ubytování. ROZPORY STARŠÍCH PRAMENŮ,
+    přiznané: cestounecestou.sk (12/2024) 50 lůžek v 10 pokojích,
+    hiking.sk (2009) 52, treking.cz 36 — zapsán aktuální údaj
+    provozovatele (vzor Zamkovského chaty).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chaty, FAQ (čteno 9. 8. 2026) — otvírací doba restaurace
+    pro ubytované i procházející: pondělí–čtvrtek 9:00–20:00,
+    pátek–sobota 8:00–22:00, neděle 8:00–20:00, kuchyně do 19:30,
+    snídaně 7:30–9:30. cestounecestou.sk (12/2024): 60 míst uvnitř
+    a 40 na dvou terasách; „Chata si zakladá na príprave všetkých
+    surovín vlastnoručne bez použitia polotovarov."
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+overeniProvoz:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): „We are open for you every
+    day"; hiking.sk: „Prevádzka: celoročná s obslužným personálom".
+    Plný provoz dokládá reportáž cestounecestou.sk z 9. 12. 2024
+    i aktivní rezervační kanály. Provozovatelem je Ritterstein, s.r.o.
+    (vlastní web) — jméno se shoduje s historickou šachtou Ritterstein
+    v Magurce; souvislost prameny výslovně nekomentují. V zimě
+    provozovatel doporučuje na příjezd sněhové řetězy.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421903704444'
+  email: info@magurka-liptov.sk
+  web: https://magurka-liptov.sk
+
+# ── Historie ──────────────────────────────────────────────────────────────
+overeniHistorie:
+  source: >-
+    Vlastní web chaty, stránka historie (čteno 9. 8. 2026): zlato se
+    v Magurce těžilo od roku 1250, vrchol produkce před první světovou
+    válkou (25 kg zlata ročně); antimon objeven 1888; šachty Kilián
+    (3 000 m), Russeger (1 600 m) a Ritterstein (1 400 m); těžba
+    skončila 1923, protože náklady převýšily výnosy; roku 1928 měla
+    osada jen dvacet domů a asi 75 obyvatel. CHATA: z domu báňské
+    správy se stalo turistické útočiště „Chata Úfnosť na Magurke" —
+    v seznamu KČST figuruje roku 1938 a patřila OKČST Ružomberok
+    (hiking.sk, shodně vlastní web; úfnosť znamená naděje). Přesný rok
+    přeměny domu na chatu prameny neuvádějí, a tak pole rokVzniku
+    zůstává prázdné. Po roce 1989 úpadek a uzavření; roku 2008 přišel
+    nový majitel a začátkem roku 2009 chata po rozsáhlé rekonstrukci
+    přivítala první návštěvníky (hiking.sk 21. 8. 2009, shodně vlastní
+    web). Roku 2017 se změnil majitel (treking.cz, vlastní web).
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1923
+    udalost: >-
+      Skončila těžba v magurských šachtách — náklady převýšily výnosy;
+      osada, kde se zlato dobývalo od 13. století, se začala
+      vylidňovat.
+    zdroj: >-
+      vlastní web chaty, historie (čteno 9. 8. 2026) — těžba od 1250,
+      konec 1923, roku 1928 dvacet domů a ~75 obyvatel.
+  - rok: 1938
+    udalost: >-
+      V seznamu chat KČST figuruje „Chata Úfnosť na Magurke" patřící
+      odboru KČST Ružomberok — z domu báňské správy se stalo turistické
+      útočiště.
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „Chata Úfnosť na Magurke, ktorá
+      patrila OKČST Ružomberok"; původ z domu báňské správy vlastní web.
+  - rok: 2009
+    udalost: >-
+      Po letech úpadku a uzavření chata začátkem roku přivítala po
+      rozsáhlé rekonstrukci první návštěvníky; nový majitel ji koupil
+      o rok dřív.
+    zdroj: >-
+      hiking.sk, článek z 21. 8. 2009 (čteno 9. 8. 2026); vlastní web —
+      „in 2008 a new owner came around, and in 2009 the chalet was
+      reopened to the public after extensive renovation".
+  - rok: 2017
+    udalost: >-
+      Chata změnila majitele; dnes ji provozuje společnost Ritterstein,
+      pojmenovaná shodně s jednou z magurských šachet.
+    zdroj: >-
+      treking.cz (čteno 9. 8. 2026) — „Majitel se změnil v roce 2017";
+      provozovatel Ritterstein, s.r.o. dle vlastního webu.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Magurka byla zlatokopecká osada: těžilo se tu od roku 1250
+      a vrcholu dosáhla produkce těsně před první světovou válkou —
+      25 kilogramů zlata ročně. Provozovatel chaty se jmenuje po šachtě
+      Ritterstein.
+    kategorie: stari
+    zdroj: >-
+      vlastní web chaty, stránka historie (čteno 9. 8. 2026).
+  - text: >-
+      Historické jméno chaty Úfnosť znamená naděje — a osada si podle
+      vlastního webu nárokuje postavení nejvýše položené osady přímo
+      pod hřebenem Nízkých Tater.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026); nárok je tvrzení
+      provozovatele.
+  - text: >-
+      Kuchyně si zakládá na tom, že všechno připravuje vlastnoručně bez
+      polotovarů; k chatě patří finská sudová sauna a vířivka.
+    kategorie: gastro
+    zdroj: >-
+      cestounecestou.sk (9. 12. 2024, čteno 9. 8. 2026).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata v bývalé zlatokopecké osadě na severní straně hřebene, která
+  vyrostla z domu báňské správy a v seznamu KČST z roku 1938 nesla jméno
+  Úfnosť — naděje. Po letech úpadku ožila rekonstrukcí v roce 2009; dnes
+  má 46 lůžek, celoroční provoz a kuchyni bez polotovarů.
+text:
+  - >-
+    Magurka je zvláštní místo: bývalá zlatokopecká osada v závěru
+    Ľupčianské doliny, kde se kutalo od roku 1250 a kde produkce
+    vrcholila těsně před první světovou válkou pětadvaceti kilogramy
+    zlata ročně. Pak přišel rok 1923, náklady převýšily výnosy, šachty
+    Kilián, Russeger a Ritterstein zmlkly — a v roce 1928 tu zbývalo
+    dvacet domů a pětasedmdesát obyvatel. Chata stojí v tisíci padesáti
+    metrech pod Latiborskou hoľou, na severní straně hlavního hřebene.
+  - >-
+    Z domu báňské správy se někdy poté stalo turistické útočiště:
+    v seznamu KČST z roku 1938 figuruje jako Chata Úfnosť na Magurke
+    a patřila ružomberskému odboru klubu. Úfnosť znamená naděje — jméno,
+    které vyhasínající hornické osadě sedlo. Po roce 1989 chata upadala
+    a zavřela; naději jí vrátil až nový majitel v roce 2008
+    a rekonstrukce, po které začátkem roku 2009 přivítala první hosty.
+    Od roku 2017 ji vlastní a provozuje společnost Ritterstein —
+    pojmenovaná po jedné z místních šachet.
+  - >-
+    Dnes je to celoročně obsluhovaná chata s šestačtyřiceti lůžky
+    (včetně jedenácti přistýlek), všechny pokoje mají vlastní sociální
+    zařízení. Spí se za 33 až 35 eur se snídaní podle sezóny, rezervace
+    chce zálohu v plné výši. Restaurace o šedesáti místech a dvou
+    terasách obsluhuje ubytované i procházející — otevřeno je denně,
+    o víkendu od osmi rána do deseti večer — a kuchyně si zakládá na
+    tom, že nic nedělá z polotovarů. K tomu finská sudová sauna,
+    vířivka a půjčovna e-biků.
+  - >-
+    Pěšky se sem jde Ľupčianskou dolinou z Partizánské Ľupče (po modré
+    přes Tajch), ze Železného, nebo z Liptovské Lúžné přes sedlo
+    Prievalec po zelené. Kdo přechází hřeben po červené Cestě hrdinov
+    SNP, může do Magurky sejít ze sedel Latiborské a Zámostské hole —
+    ze sedla Ďurková je to po zelené dolů hodina a čtvrt; Latiborská
+    hoľa i Chabenec jsou od chaty tři kilometry. Autem se jezdí
+    z Partizánské Ľupče nebo přes Liptovskou Lúžnu; v zimě provozovatel
+    doporučuje řetězy.
+  - >-
+    Údaje nesou vlastní web chaty, hiking.sk, treking.cz,
+    cestounecestou.sk a nizketatry.sk; polohu OpenStreetMap. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — historie osady a chaty (Úfnosť, KČST 1938,
+      obnova 2009, změna majitele 2017), 46 lůžek, ceník, FAQ
+      s otvíračkou restaurace, provozovatel Ritterstein, s.r.o.
+      (načteno 9. 8. 2026)
+    url: https://magurka-liptov.sk
+  - popis: >-
+      hiking.sk — „Chata Magurka zrekonštruovaná" (21. 8. 2009):
+      Chata Úfnosť v seznamu KČST 1938 (OKČST Ružomberok), znovuotevření
+      2009, celoroční provoz, přístupy (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/1269/chata_magurka_zrekonstruovana.html
+  - popis: >-
+      treking.cz — 1050 m, změna majitele 2017, 36 lůžek (starší údaj)
+      (načteno 9. 8. 2026)
+    url: https://www.treking.cz/chaty/magurka.htm
+  - popis: >-
+      cestounecestou.sk (9. 12. 2024) — reportáž z provozu: 50 lůžek
+      v 10 pokojích (starší údaj), restaurace 60 + 40 míst, kuchyně bez
+      polotovarů, sauna a vířivka (načteno 9. 8. 2026)
+    url: https://cestounecestou.sk/2024/12/chata-magurka/
+  - popis: >-
+      nizketatry.sk — kontakty a GPS chaty, prezentace „turistická
+      chata… čistý a jednoduchý štandard s domácou kuchyňou"; sestup ze
+      sedla Ďurková do Magurky 1:15 (načteno 9. 8. 2026)
+    url: https://www.nizketatry.sk/magurka/
+  - popis: >-
+      hiking.sk — Cesta hrdinov SNP Donovaly–Telgárt: odbočky do Magurky
+      ze sedel Latiborské a Zámostské hole (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/5919/cesta_hrdinov_snp_donovaly_telgart.html
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/234323491
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/magurka.yaml (9. 8. 2026);
+  katalogový objekt HUT-0149.
+
+  ZÁMĚNY: v osadě je víc ubytovacích objektů (Chata Mont Magurka —
+  megaubytovanie; Chata pod javormi — hauzi; agregátor nabízí „8
+  možností"); web magurka.sk byl při rešerši nedostupný (timeout)
+  a NENÍ jisté, co prezentuje — profil stojí na magurka-liptov.sk,
+  jehož adresa, GPS i telefon sedí s OSM way/234323491. Jmenovkyně
+  mimo oblast: Chata Magurka Vitanová–Oravice a Malá Lučivná–Párnica
+  — jiné objekty; kdyby přišly exportem, patří do registru jmenovců.
+
+  ROK VZNIKU vědomě nevyplněn: doložen je rok 1938 (seznam KČST), ne
+  rok přeměny domu báňské správy na chatu. KAPACITA 46 = aktuální údaj
+  provozovatele; 50 (12/2024), 52 (2009), 36 (treking) jsou starší.
+
+  Chatářem byl v roce 2009 Pavol Farkaš (hiking.sk) — nezapsáno do
+  milníků, dnešní personál neznáme. Fotku dodá druhý běh DATA-02,
+  výškový profil DATA-06.
