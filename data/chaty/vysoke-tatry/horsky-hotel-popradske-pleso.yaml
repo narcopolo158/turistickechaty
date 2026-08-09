@@ -1,0 +1,414 @@
+# Horský hotel Popradské pleso — jedenáctý publikovaný profil oblasti Vysoké
+# Tatry (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Horský hotel Popradské pleso
+slug: horsky-hotel-popradske-pleso
+zeme: sk
+typ: horsky-hotel
+stav: v-provozu
+oblast: vysoke-tatry
+aliasy:
+  - nazev: Chata pri Popradskom plese
+    poznamka: alternativní název (OSM alt_name, doložen i tatranskybedeker.sk)
+  - nazev: Chata kpt. Morávku
+    poznamka: historický název z let 1951 až 1990
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.155013
+lng: 20.0799081
+vyska: 1494
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/33863872 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA — ROZPOR, ZAPSÁNO NIŽŠÍ ČÍSLO (konvence 27. 7. 2026): 1494 m nese
+    pět pramenů (tatranskybedeker.sk „na brehu Popradského plesa… v nadmorskej
+    výške 1 494 m", vysoketatry.com, domalenka.sk, tatry.sk, cezhory.sk),
+    1500 m dva včetně vlastního webu hotelu („uprostred hôr, v 1 500 m n. m.")
+    a tatryportal.sk. Provozovatelovo číslo je vyšší, takže se tu konvence
+    použila v plné síle — a 1494 m navíc odpovídá tagu ele v OSM.
+    Poloha: břeh Popradského plesa v Mengusovské dolině. GPS podle
+    vysoketatry.com N 49.154854° E 20.079843°.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 120
+overeniNocleh:
+  source: >-
+    KAPACITA JE V PRAMENECH NEJROZHÁZENĚJŠÍ Z CELÉ OBLASTI: 120 plus 20
+    v podkroví (tatryportal.sk), 128 ve 36 pokojích (smnd.sk), 132
+    (treking.cz), 165 (tatranskybedeker.sk, legendarium.info, miribord.com,
+    tatry.sk, visittatry.sk) a 191 (vysoketatry.com). Vlastní web hotelu
+    žádné číslo neuvádí, jen výčet typů. Zapsáno je nejnižší pevné číslo bez
+    podkroví (konvence 27. 7. 2026), protože tatryportal.sk podkroví výslovně
+    podmiňuje — „len pri plne obsadených izbách".
+    Typy podle vlastního webu (čteno 9. 8. 2026): „Turistické lôžko",
+    dvoulůžkový pokoj, podkrovní dvoulůžkový, trojlůžkový, čtyřlůžkový
+    a pětilůžkový. tatranskybedeker.sk to shrnuje jako „ubytovanie rôzneho
+    štandardu od turistických izieb po apartmány".
+    Historicky měl hotel při otevření roku 1961 sto deset lůžek
+    (tatranskybedeker.sk).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Samoobslužná restaurace je doložená bohatě. tatry.sk rozepisuje provozy:
+    hlavní restaurace 100 míst, letní terasa téměř 160, Slovenská izba 40,
+    Forest Bar asi 35 a venkovní bufet KOLIBA téměř 60. naturu.sk:
+    „Samoobslužná reštaurácia ponúka typické slovenské jedlá ako halušky,
+    guláš, kapustnicu, pirohy, ovocné knedle alebo obľúbené buchty na pare."
+    miribord.com uvádí „reštaurácia, horolezecký bar, terasa, bufet
+    a slovenská izba" (vše čteno 9. 8. 2026).
+    VÝSLOVNÁ VĚTA O NEUBYTOVANÝCH CHYBÍ i tady, ale nepoměr je do očí bijící:
+    stravovacích míst je při 120 lůžkách kolem čtyř set. U samoobslužné
+    restaurace s venkovním bufetem je to prakticky jistota — jenže jistota
+    není doklad, a tak se to netvrdí. Telefonát to rozhodne (DATA-04).
+    POZORUHODNÉ: u sousední Majláthovy chaty, která stojí padesát metrů
+    odsud, výslovná věta doložená JE — miribord.com „Od 6:00 sú k dispozícii
+    raňajky aj pre neubytovaných hostí."
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: >-
+  recepce a restaurace 6.00–22.00, snídaně 6.00–9.00, wellness 12.00–22.00
+overeniProvoz:
+  source: >-
+    Celoroční provoz uvádějí shodně vysoketatry.com („je najnavštevovanejšou
+    chatou s celoročnou prevádzkou"), tatryportal.sk („Prevádzka: celoročná")
+    i smnd.sk („Chata je otvorená celoročne."). Hodiny nese vlastní web
+    hotelu (čteno 9. 8. 2026): „Recepcia a Reštaurácia 06:00 - 22:00",
+    „Raňajky 06:00 - 09:00", „Wellness 12:00 - 22:00".
+    „Otevřeno" tu znamená „dostupné" spolehlivěji než u vysokohorských chat,
+    protože k hotelu vede od železniční zastávky hodinu chůze po asfaltové
+    cestě. Zimní omezení se ale týká hřebenové varianty: úsek Tatranské
+    magistrály ze Štrbského Plesa je v zimě uzavřen a chodí se po zelené,
+    která podle tatryportal.sk „obchádza nebezpečné lavínové svahy".
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421908761403'
+  email: recepcia@popradskepleso.sk
+  web: https://www.popradskepleso.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1961
+overeniHistorie:
+  source: >-
+    ROK 1961 JE ROKEM DNEŠNÍ BUDOVY, a je to sedmá stavba v řadě, která
+    začíná v 70. letech 19. století — celá posloupnost je v milnících.
+    tatranskybedeker.sk (čteno 9. 8. 2026): „Hotel do prevádzky odovzdali na
+    Vianoce roku 1961."; smnd.sk: „Prvý výkop bol slávnostne urobený v roku
+    1957, objekt bol dostavaný v roku 1961."
+    ROZPOR, přiznaný: hiking.sk uvádí „V roku 1958 vedľa postavili veľký
+    horský hotel, ktorý existuje dodnes."
+    ARCHITEKTI JEN Z JEDNOHO PRAMENE, a proto to tu stojí opatrně:
+    domalenka.sk uvádí „podľa projektov architektov L. Bauera a F. Čapkuna";
+    nikdo jiný jména nepotvrzuje a stavební firma není doložena vůbec.
+    ROZPOR O PRVNÍ CHATĚ, nesrovnaný: tatranskybedeker.sk klade schválení
+    stavby Uhorským karpatským spolkem do roku 1876 a otevření k 4. srpnu
+    1876; vysoketatry.com, hiking.sk a cezhory.sk uvádějí rok 1879; smnd.sk
+    obojí spojuje — „Chata sa začal stavať v roku 1876… bola dostavaná
+    a uvedená do prevádzky v roku 1879."
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1879
+    udalost: >-
+      U Popradského plesa vyrostla první dřevěná chata Uhorského karpatského
+      spolku, zvaná Majláthova po liptovském podžupanovi Vojtechu Majláthovi.
+      Prameny se v roce rozcházejí — jeden ji klade už k roku 1876.
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — „Roku 1879 vyrástla pri Popradskom
+      plese prvá neveľká drevená chata Uhorského karpatského spolku, tzv.
+      Majláthova chata, ale o rok neskôr vyhorela."; oproti tomu
+      tatranskybedeker.sk — „Vďaka popularite Mengusovskej doliny roku 1876
+      schválilo predsedníctvo Uhorského karpatského spolku výstavbu
+      turistickej chaty pri Popradskom plese."
+  - rok: 1880
+    udalost: >-
+      Chata 18. července celá vyhořela; podle jednoho pramene ji zapálili
+      sběrači horských bylin.
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „18. júla 1880 úplne zhorela zrejme
+      rukou zberačov horských bylín."
+  - rok: 1890
+    udalost: >-
+      Vyhořela i druhá budova, otevřená roku 1881.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 9. 8. 2026) — „Roku 1890 vyhorela aj táto
+      budova."
+  - rok: 1898
+    udalost: >-
+      Pruský kníže Kristián Kraft Hohenlohe, který o rok dřív koupil východní
+      část Mengusovské doliny, dal útulnu u plesa zbořit.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 9. 8. 2026) — „Na dôkaz toho roku 1898
+      zbúral aj útulňu pri Popradskom plese."
+  - rok: 1899
+    udalost: >-
+      Na nátlak veřejnosti dal Hohenlohe postavit na severním břehu plesa
+      šestou chatu v pořadí. Měla čtrnáct pokojů a pětatřicet lůžek a její
+      nájemce ji jako první na jižní straně Tater provozoval i v zimě.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „V rokoch 1879-1897 stálo na
+      brehu plesa postupne 5 turistických chát… no na nátlak verejnosti už
+      v roku 1899 dal postaviť na severnom brehu plesa v poradí šiestu
+      chatu."; „V rokoch 1899-1921 mal chatu v prenájme Aladár Polnisch
+      z Levoče, ktorý ju ako prvú na južnej strane Tatier prevádzkoval aj
+      v zimnej sezóne."
+  - rok: 1921
+    udalost: >-
+      Hohenlohe chatu pronajal Klubu československých turistů, který ji
+      rozšířil až na sto padesát lůžek.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 9. 8. 2026) — „Hohenlohe prenajal roku 1921
+      chatu pri Popradskom plese Klubu československých turistov."
+  - rok: 1951
+    udalost: >-
+      Správu převzal Slovakotour a chatu přejmenoval na Chatu kpt. Morávku po
+      veliteli četnické stanice na Štrbském plese a partyzánovi, který padl
+      počátkem roku 1945.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 9. 8. 2026) — „Roku 1951, chatu premenovali
+      na Chatu kpt. Morávku pri Popradskom plese."; cezhory.sk o Morávkovi —
+      „veliteľom žandárskej stanice na Štrbskom plese a partizánom oddielu
+      Vysoké Tatry. Padol na Grúniku."
+  - rok: 1961
+    udalost: >-
+      Nový horský hotel, stavěný od roku 1957, byl o Vánocích předán do
+      provozu se sto deseti lůžky a restaurací pro dvě stě osob.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 9. 8. 2026) — „Hotel do prevádzky odovzdali
+      na Vianoce roku 1961."; smnd.sk — „Prvý výkop bol slávnostne urobený
+      v roku 1957".
+  - rok: 1964
+    udalost: >-
+      Novější zděná přístavba 25. října vyhořela.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 9. 8. 2026) — „Novšia dostavba vyhorela
+      25. októbra 1964."; hiking.sk — „novšia murovaná pristavaná časť
+      zhorela pri požiari 25. októbra 1964".
+  - rok: 1990
+    udalost: >-
+      Objektu oficiálně vrátili název Chata pri Popradskom plese; nový
+      majitel ho po privatizaci roku 1998 prezentuje jako horský hotel.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 9. 8. 2026) — „Roku 1990 oficiálne
+      prinavrátili objektu názov Chata pri Popradskom plese." a „Chata bola
+      sprivatizovaná roku 1998."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Nad hotelem leží Symbolický cintorín, hřbitov obětí Tater s pamětními
+      deskami a vyřezávanými kříži; myšlenku vyslovil roku 1922 malíř Otakar
+      Štáfl, stavět se začalo roku 1936 a vysvěcen byl 11. srpna 1940.
+    kategorie: jine
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „Už v roku 1922 vyslovil
+      Otakar Štáfl myšlienku zriadiť v Tatrách symbolický cintorín…
+      S jeho realizáciou sa začalo v roku 1936 v limbovom háji na návrší
+      Limbovec"; kaple podle projektu ing. Róberta Vosyky, zvon s mottem
+      „Mŕtvym na pamiatku - živým na výstrahu!"; turisticky.sk uvádí vysvěcení
+      11. 8. 1940.
+  - text: >-
+      Podle dvou pramenů je to nejnavštěvovanější celoročně otevřená chata
+      Vysokých Tater.
+    kategorie: jine
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — „je najnavštevovanejšou chatou
+      s celoročnou prevádzkou"; smnd.sk — „Je to jedna z najoľúbenejších chát
+      vo Vysokých Tatrách (čo sa návštevnosti týka)."
+  - text: >-
+      V letech 1879 až 1897 se u plesa vystřídalo pět chat; zanikly požáry
+      nebo lavinami a šestou dal postavit až kníže Hohenlohe na nátlak
+      veřejnosti.
+    kategorie: stari
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „V rokoch 1879-1897 stálo na
+      brehu plesa postupne 5 turistických chát, ktoré zanikli buď kvôli
+      požiarom, alebo ich zničili lavíny."
+  - text: >-
+      Popradské pleso poprvé popsal roku 1719 Juraj Buchholtz starší ve svém
+      rukopise o Vysokých Tatrách.
+    kategorie: stari
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „Prvýkrát ho opísal v roku
+      1719 Juraj Buchholtz st. /1643-1724/ vo svojom podrobnom rukopise
+      o Vysokých Tatrách."
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hotel z roku 1961 na břehu Popradského plesa, sedmá stavba v řadě,
+  která začíná Majláthovou chatou Uhorského karpatského spolku. Pět jejích
+  předchůdkyň zaniklo požáry a lavinami. Podle dvou pramenů je to
+  nejnavštěvovanější celoročně otevřená chata Vysokých Tater.
+text:
+  - >-
+    Horský hotel Popradské pleso stojí ve 1494 metrech na břehu Popradského
+    plesa v Mengusovské dolině. Na výšce se prameny neshodnou — pět jich
+    uvádí 1494 metrů, dva včetně vlastního webu hotelu 1500; na téhle stránce
+    je zapsané to nižší.
+  - >-
+    Historie místa je jedna z nejdramatičtějších v Tatrách. První dřevěnou
+    chatu tu postavil Uhorský karpatský spolok a jmenovala se Majláthova po
+    liptovském podžupanovi Vojtechu Majláthovi; prameny ji kladou k roku 1876
+    nebo 1879. Vydržela sotva rok — 18. července 1880 shořela, podle jednoho
+    pramene rukou sběračů horských bylin. Druhá budova z roku 1881 vyhořela
+    roku 1890, třetí přišla roku 1892. Celkem tu mezi lety 1879 a 1897 stálo
+    postupně pět chat a všechny zanikly požáry nebo lavinami.
+  - >-
+    Roku 1897 koupil východní část Mengusovské doliny pruský kníže Kristián
+    Kraft Hohenlohe a útulnu u plesa hned nechal zbořit. Šestou chatu tu dal
+    postavit až roku 1899, a to na nátlak veřejnosti. Měla čtrnáct pokojů,
+    pětatřicet lůžek a prosklenou verandu s letní jídelnou; její nájemce
+    Aladár Polnisch z Levoče ji jako první na jižní straně Tater provozoval
+    i v zimě. Roku 1921 ji Hohenlohe pronajal Klubu československých turistů,
+    který kapacitu vyhnal až na sto padesát lůžek.
+  - >-
+    Roku 1951 převzal správu Slovakotour a chata dostala jméno Chata kpt.
+    Morávku — po veliteli četnické stanice na Štrbském plese a partyzánovi,
+    který padl počátkem roku 1945. Dnešní hotel se začal stavět roku 1957
+    a o Vánocích 1961 byl předán do provozu se sto deseti lůžky a restaurací
+    pro dvě stě lidí. Staré dřevěné budovy asanovali v létě 1962, novější
+    přístavba vyhořela 25. října 1964. Původní název se vrátil roku 1990,
+    hotel byl privatizován roku 1998.
+  - >-
+    Dnes je to velký provoz: pokoje od turistického lůžka po pětilůžkové,
+    samoobslužná restaurace se sto místy, letní terasa pro dalších sto
+    šedesát, Slovenská izba, Forest Bar a venkovní bufet Koliba. Kolik má
+    hotel přesně lůžek, prameny neříkají ani přibližně stejně — od 120 po 191;
+    vlastní web žádné číslo neuvádí. Že sem může přijít i ten, kdo tu nespí,
+    není doslova napsané nikde, ale při čtyřech stech místech u stolu a sto
+    dvaceti lůžkách je to nesnadné číst jinak.
+  - >-
+    Vedle hotelu stojí od roku 2011 replika původní Majláthovy chaty, hrázděná
+    stavba, kterou od roku 2006 budoval horolezec Pavol Lazar. Je to
+    samostatný objekt s vlastním majitelem, a proto má i vlastní stránku.
+  - >-
+    Chodí se sem od zastávky tatranské elektrické železnice po modré,
+    hodinu po asfaltové cestě lesem, nebo ze Štrbského Plesa po červené
+    Tatranské magistrále za hodinu a čtvrt. Zimní varianta vede po zelené,
+    protože magistrála obchází lavinové svahy. Autem se nahoru nedostanete —
+    vlastní web to říká rovnou: „Prístup vlastným autom k hotelu nie je
+    možný", a kdo potřebuje transfer, musí se domluvit předem.
+  - >-
+    Nad hotelem, v limbovém háji na návrší Limbovec, leží Symbolický cintorín
+    — hřbitov obětí Tater s pamětními deskami a ručně vyřezávanými kříži.
+    Myšlenku vyslovil roku 1922 malíř Otakar Štáfl, stavět se začalo roku
+    1936, kapli podle projektu Róberta Vosyky doplnil zvon s nápisem „Mŕtvym
+    na pamiatku - živým na výstrahu!" a vysvěcen byl 11. srpna 1940. Kolik má
+    tabulek, prameny neříkají shodně: jedni mluví o více než stu šedesáti
+    a padesáti křížích, jiní o třech stech sedmdesáti tabulkách s pěti sty
+    jmény a sedmdesáti sedmi křížích.
+  - >-
+    Údaje nese vlastní web hotelu, tatranskybedeker.sk, nostalgicketatry.sk,
+    smnd.sk, hiking.sk, cezhory.sk, vysoketatry.com, tatryportal.sk,
+    domalenka.sk, tatry.sk a turisticky.sk; polohu OpenStreetMap. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hotelu — typy pokojů, otevírací doba recepce, restaurace,
+      snídaní a wellness, zákaz příjezdu autem, kontakty, výška 1500 m
+      (načteno 9. 8. 2026)
+    url: https://popradskepleso.pekyho.sk/
+  - popis: >-
+      tatranskybedeker.sk — datovaná chronologie 1876–1998, výška 1494 m,
+      kapacita 165 lůžek, hotel předán o Vánocích 1961, požár přístavby
+      25. 10. 1964, privatizace 1998 (načteno 9. 8. 2026)
+    url: https://www.tatranskybedeker.sk/chata-popradske-pleso/
+  - popis: >-
+      nostalgicketatry.sk — pět chat v letech 1879–1897, šestá chata 1899,
+      nájemce Aladár Polnisch, Vojtech Majláth (1831–1900), Symbolický
+      cintorín od myšlenky 1922 po vysvěcení 1940 (načteno 9. 8. 2026)
+    url: https://www.nostalgicketatry.sk/historia/popradskepleso
+  - popis: >-
+      smnd.sk — stavba 1876 a otevření 1879, výkop 1957 a dostavba 1961,
+      36 pokojů a 128 lůžek, výčet přístupových tras (načteno 9. 8. 2026)
+    url: https://www.smnd.sk/jbachnicek/PopradskePleso1.html
+  - popis: >-
+      hiking.sk — požár 18. 7. 1880, asanace dřevěné budovy v létě 1962,
+      požár 25. 10. 1964, replika Majláthovy chaty od 2006
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/2752/majlathova_chata_pri_popradskom_plese.html
+  - popis: >-
+      cezhory.sk — Slovakotour a přejmenování 1951, Štefan Morávka, stavba
+      1957 a otevření o Vánocích 1961, přenesení pamětní desky
+      (načteno 9. 8. 2026)
+    url: https://www.cezhory.sk/viete-kde-stala-chata-kpt-moravku/
+  - popis: >-
+      vysoketatry.com — výška 1494 m, „najnavštevovanejšou chatou
+      s celoročnou prevádzkou", 191 lůžek, časy přístupů, GPS
+      (načteno 9. 8. 2026)
+    url: https://www.vysoketatry.com/chaty/chppplese/chppplese.html
+  - popis: >-
+      tatryportal.sk — kapacita 120 plus 20 v podkroví, časy modré
+      a červené trasy, zimní zelená varianta kolem lavinových svahů
+      (načteno 9. 8. 2026)
+    url: https://www.tatryportal.sk/tura/chata-pri-popradskom-plese/
+  - popis: >-
+      tatry.sk — rozpis gastroprovozů: restaurace 100 míst, letní terasa 160,
+      Slovenská izba 40, Forest Bar 35, bufet Koliba 60 (načteno 9. 8. 2026)
+    url: https://www.tatry.sk/en/samoobsluzna-restauracia-popradske-pleso-2/
+  - popis: >-
+      domalenka.sk — architekti L. Bauer a F. Čapkun (jediný pramen), přístup
+      motorovým vozidlům jen pro provozní účely (načteno 9. 8. 2026)
+    url: https://domalenka.sk/atrakcie/chata-pri-popradskom-plese-horsky-hotel
+  - popis: >-
+      turisticky.sk — Symbolický cintorín: založen 1936, vysvěcen
+      11. 8. 1940, autoři Otakar Štáfl a Alojz Lutonský, správa Štátnych
+      lesov TANAP od 1995 (načteno 9. 8. 2026)
+    url: https://turisticky.sk/turistika/symbolicky-cintorin/
+  - popis: >-
+      OpenStreetMap (GPS, alt_name a old_name; ODbL)
+    url: https://www.openstreetmap.org/way/33863872
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/horsky-hotel-popradske-pleso.yaml
+  (9. 8. 2026). Druhý objekt oblasti s typem horsky-hotel (po Sliezskem domu).
+
+  VÝŠKA — TADY KONVENCE O NIŽŠÍM ČÍSLE PLATILA V PLNÉ SÍLE, na rozdíl od
+  Chaty pri Zelenom plese. Rozdíl je v tom, kdo je na které straně: tady
+  vyšší číslo (1500 m) tvrdí provozovatel a nižší (1494 m) pět nezávislých
+  pramenů i tag ele v OSM. U Zelenom plese byla drtivá shoda naopak na vyšším
+  čísle a nižší nesly jen dvě odlehlé hodnoty. Konvence má chránit před
+  nadsazením — a nadsazuje tu provozovatel, takže se použila.
+
+  KAPACITA JE NEJHORŠÍ V CELÉ OBLASTI: 120+20, 128, 132, 165 (čtyři prameny),
+  191. Zapsáno 120, protože je to nejnižší pevné číslo a podkroví je podle
+  téhož pramene podmíněné. Rozdíl mezi 120 a 191 je ale takový, že tomu
+  číslu sám moc nevěřím — patří to na seznam pro DATA-04.
+
+  ARCHITEKTI STOJÍ NA JEDINÉM PRAMENI. domalenka.sk uvádí „L. Bauer
+  a F. Čapkun"; nikdo jiný jména nepotvrzuje. Do dat proto nešla jako milník,
+  jen do zdůvodnění, a v próze nejsou vůbec.
+
+  SOUSEDNÍ MAJLÁTHOVA CHATA JE SAMOSTATNÝ PROFIL, ne součást tohohle.
+  Rozhodlo pravidlo z Kozubové (jedna stavba NEBO jeden provoz, ne blízkost):
+  jsou to dvě budovy padesát metrů od sebe, hotel provozuje TatryPEM s. r. o.
+  a repliku Majláthovy chaty vlastní horolezec Pavol Lazar. Dvě stavby, dva
+  vlastníci → dva profily.
+
+  IRONIE, KTEROU STOJÍ ZA TO SI PAMATOVAT: u velkého hotelu se čtyřmi sty
+  místy u stolu chybí věta o obsluze neubytovaných, kdežto u malé repliky
+  vedle je doložená doslova („Od 6:00 sú k dispozícii raňajky aj pre
+  neubytovaných hostí."). Velikost provozu není důkaz; doklad je doklad.
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: znárodnění (žádný akt ani rok,
+  doložen jen přechod na Slovakotour roku 1951); restituce; jméno
+  privatizéra z roku 1998 a řetězec vlastníků do dneška; IČO a sídlo
+  provozovatele TatryPEM s. r. o. (jediný doklad je patička vlastního webu);
+  stavební firma hotelu. Slovenskou ani českou Wikipedii se rešerši
+  nepodařilo načíst.
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

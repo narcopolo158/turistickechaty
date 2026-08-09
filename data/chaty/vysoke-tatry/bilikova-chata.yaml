@@ -1,0 +1,367 @@
+# Bilíkova chata — devátý publikovaný profil oblasti Vysoké Tatry (9. 8. 2026),
+# povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Bilíkova chata
+slug: bilikova-chata
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1600485
+lng: 20.2243597
+vyska: 1255
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/301993072 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1255 m JE BEZ JEDINÉHO ROZPORU napříč devíti prameny:
+    tatranskybedeker.sk „v 1255 m.n.m.", pamiatkynaslovensku.sk „Bilíkova
+    chata (1255 m) stojí tesne pod strediskom Hrebienok", vysoketatry.com,
+    tatryportal.sk, domalenka.sk, presovregion.travel, německá Wikipedie
+    („auf einer Höhe von 1255 m n.m."), hiking.sk i tag ele v OSM (vše čteno
+    9. 8. 2026). Poloha: jihovýchodní úpatí Slavkovského štítu těsně pod
+    Hrebienkom, na místě zvaném Kancle; stanice pozemní lanovky je podle
+    tatranskybedeker.sk 300 metrů daleko.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 28
+overeniNocleh:
+  source: >-
+    KAPACITA JE V PRAMENECH ROZHÁZENÁ A ZAPSÁNO JE NEJNIŽŠÍ ČÍSLO PEVNÝCH
+    LŮŽEK (konvence 27. 7. 2026), protože vlastní web hotelu žádný počet lůžek
+    neuvádí — jen výčet typů pokojů. vysoketatry.com: „KAPACITA UBYTOVANIA:
+    28+5"; tatryportal.sk „28+11"; tatranskybedeker.sk „Kapacita sa znížila na
+    29 lôžok plus 1 prísteliek, ale zato sa zvýšil komfort"; tatrytravel.sk
+    „Celková kapacita / lôžok 33"; trip.com uvádí 12 pokojů.
+    Typy pokojů podle vlastního webu (čteno 9. 8. 2026): jednolůžkový a
+    dvoulůžkové se sdílenou koupelnou, pokoj s manželskou postelí a vlastní
+    koupelnou, „Trojlôžková izba s vlastnou kúpeľňou" a dva apartmány
+    v podkroví. Ceny od 61 €, respektive 66 € za noc, snídaně v ceně;
+    check-in od 14.00, check-out do 10.00, domácí zvířata nejsou povolena.
+    Historicky: po přístavbě roku 1936 vzrostla kapacita ze 40 na 58 lůžek
+    (tatranskybedeker.sk).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): „Reštaurácia Bilíkovej chaty ponúka
+    chutné jedlá inšpirované regionálnou kuchyňou, pripravované z čerstvých
+    lokálnych surovín."; presovregion.travel „reštaurácia, vonkajšia terasa
+    a taktiež aj sauna"; hiking.sk „Dnes slúži na ubytovanie a stravovanie".
+    OBSLUHA NEUBYTOVANÝCH: výslovnou větu nemá ani vlastní web, ale číselný
+    doklad je tu silnější než u kterékoli jiné tatranské chaty korpusu.
+    vysoketatry.com uvádí vedle sebe „KAPACITA UBYTOVANIA: 28+5" a „KAPACITA
+    STRAVOVANIA: 68 (v lete 120)" — stravovací kapacita je dvoj- až
+    čtyřnásobkem lůžkové. K tomu je podnik samostatně veden jako restaurace
+    na TripAdvisoru s otevírací dobou 7.00–20.00 a vede denní menu, což je
+    produkt pro veřejnost, ne pro ubytované. Do dat to jde jako `restaurace`,
+    do prózy s přiznáním, že výslovná věta chybí (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: restaurace denně 7.00–20.00
+overeniProvoz:
+  source: >-
+    Celoroční provoz uvádí shodně vysoketatry.com („PREVÁDZKA: celoročná"),
+    tatryportal.sk, domalenka.sk, tatry.sk („The chalet is open all year
+    round") i presovregion.travel (vše čteno 9. 8. 2026).
+    OTEVÍRACÍ DOBA MÁ SLABŠÍ DOKLAD NEŽ OSTATNÍ ÚDAJE, a je to tu napsané:
+    vlastní web hodiny neuvádí vůbec, 7.00–20.00 nesou shodně TripAdvisor
+    a tag opening_hours v OSM („Mo Su 07:00 20:00"). Dva prameny, ani jeden
+    provozovatelův. Sezónní varianty nikdo neuvádí.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421949579777'
+  email: info@bilikovachata.sk
+  web: https://www.bilikovachata.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1934
+overeniHistorie:
+  source: >-
+    Otevření 22. prosince 1934 uvádějí shodně nostalgicketatry.sk, německá
+    Wikipedie i tatranskybedeker.sk (vše čteno 9. 8. 2026).
+    STAVEBNÍKEM BYL KARPATHENVEREIN, a tentokrát to není domněnka — doloženo
+    je to pěti nezávislými prameny. pamiatkynaslovensku.sk: „V roku 1934
+    postavil turistický spolok Karpathenverein chatu, ktorú na počesť svojho
+    predsedu Dr. Michala Guhra pomenoval Guhrova chata."; tatranskybedeker.sk
+    upřesňuje sekci — „daroval ich kežmarskej sekcii Karpathenvereinu";
+    nostalgicketatry.sk „Chatu prevzala do správy kežmarská odbočka
+    Karpatského spolku"; německá Wikipedie „der Karpathenverein, der hier
+    1933–34 die zweigeschossige Dr.-Guhr-Hütte errichtete"; olympic.sk
+    nezávisle dokládá dar pozemku — „V roku 1927 odkúpil Guhr pozemky na
+    Hrebienku, ktoré venoval Karpathenvereinu."
+    Stavitel: „Peknú zrubovú chatu podľa vlastných projektov postavil
+    kežmarský staviteľ Oskár Zuber" (nostalgicketatry.sk); samostatný
+    architekt tedy neexistuje, projekt je dílem stavitele. Základní kámen
+    položil 15. září 1934 předseda spolku Dr. Mikuláš Szontagh mladší.
+    ROZPOR V ZAHÁJENÍ STAVBY, nesrovnaný: tatranskybedeker.sk klade
+    rozhodnutí o stavbě k 2. září 1933, německá Wikipedie stavbu do let
+    1933–34, nostalgicketatry.sk položení základního kamene až na
+    15. září 1934, tedy tři měsíce před otevřením.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1875
+    udalost: >-
+      Na místě dnešní chaty stála od 1. srpna Ruženina chata (Rosahütte).
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — „Na mieste Bilíkovej chaty stála
+      od roku 1875 primitívna Ruženina chata."; německá Wikipedie uvádí
+      otevření 1. 8. 1875.
+  - rok: 1884
+    udalost: >-
+      K chatě přibyl dvoupatrový turistický hotel Studený potok.
+    zdroj: >-
+      pamiatkynaslovensku.sk (čteno 9. 8. 2026) — „vyrástol v roku 1884
+      dvojpodlažný hotel Studený potok"; německá Wikipedie „Hotel Kohlbach".
+  - rok: 1893
+    udalost: >-
+      Obě budovy vyhořely; majitelé spišskosobotské lesní společnosti pak na
+      místě postavili dva nové hotely.
+    zdroj: >-
+      vysoketatry.com (čteno 9. 8. 2026) — „Po požiari oboch budov v roku
+      1893 postavili majitelia spišskosobotskej lesnej spoločnosti dva nové
+      hotely".
+  - rok: 1927
+    udalost: >-
+      Studenopotocké kúpele vyhořely podruhé, v noci na 18. února. Téhož roku
+      koupil pozemek lékař Michal Guhr a daroval ho Karpathenvereinu.
+    zdroj: >-
+      německá Wikipedie (čteno 9. 8. 2026) — „der ganze Badekomplex in der
+      Nacht des 18. Februar 1927 niederbrannte"; olympic.sk — „V roku 1927
+      odkúpil Guhr pozemky na Hrebienku, ktoré venoval Karpathenvereinu."
+  - rok: 1934
+    udalost: >-
+      Karpathenverein otevřel 22. prosince novou srubovou chatu, pojmenovanou
+      Guhrov mládežnícky domov po předsedovi spolku Michalu Guhrovi, který
+      rok předtím zemřel. Postavil ji kežmarský stavitel Oskár Zuber podle
+      vlastních projektů.
+    zdroj: >-
+      nostalgicketatry.sk (čteno 9. 8. 2026) — „22. decembra toho istého roku
+      bola chata nazvaná Guhrov mládežnícky domov (Dr. Guhr Jugendheim)…
+      odovzdaná do užívania"; „Peknú zrubovú chatu podľa vlastných projektov
+      postavil kežmarský staviteľ Oskár Zuber".
+  - rok: 1936
+    udalost: >-
+      Přístavba pod vedením Štefana Klocoka z Kežmarku přinesla novou jídelnu
+      a zvýšila kapacitu ze 40 na 58 lůžek.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 9. 8. 2026) — „Práce na prístavbe viedol
+      Štefan Klocok z Kežmarku. V prístavbe vznikla nová jedáleň a kapacita
+      sa zvýšila zo 40 na 58 lôžok."
+  - rok: 1946
+    udalost: >-
+      Chatu převzal Klub slovenských turistov a lyžiarov a přejmenoval ji na
+      Bilíkovu podle Pavla Bilíka, popraveného Němci na Kežmarském hradě.
+    zdroj: >-
+      tatranskybedeker.sk (čteno 9. 8. 2026) — „Roku 1946 chatu prevzal Klub
+      slovenských turistov a lyžiarov a po rozhodnutí jeho ústredného výboru
+      ju premenovali na Bilíkovu chatu KSTL."; presovregion.travel —
+      Bilíka „Nemci zajali pri bojovej akcii nad Horným Smokovcom a popravili
+      na Kežmarskom hrade."
+  - rok: 1993
+    udalost: >-
+      Po privatizaci a kompletní rekonstrukci se chata 1. února znovu
+      otevřela veřejnosti.
+    zdroj: >-
+      pamiatkynaslovensku.sk (čteno 9. 8. 2026) — „Chatu v roku 1992
+      Interhotel Tatry š.p., ktorému dovtedy patrila, vyčlenil do
+      privatizácie… Úplne je zrekonštruovali a pre verejnosť otvorili
+      1.2.1993."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Michal Guhr, po kterém se chata původně jmenovala, byl lékař z Tatranské
+      Polianky, předseda Karpathenvereinu v letech 1920 až 1933 a podle
+      Slovenského olympijského výboru jediný účastník ze Slovenska na prvních
+      zimních olympijských hrách v Chamonix roku 1924.
+    kategorie: jine
+    zdroj: >-
+      olympic.sk (čteno 9. 8. 2026) — „Michael Guhr sa narodil 17. marca
+      1873"; „Od roku 1917 bol podpredsedom Karpatského turistického spolku –
+      Karpathenverein a od roku 1920 až do svojej smrti jeho predsedom."
+  - text: >-
+      Chatařem tu byl od roku 1948 Rudo Kacián, který podle pramene odpracoval
+      na chatách čtyřicet let a je nejdéle působícím vysokohorským nosičem.
+    kategorie: jine
+    zdroj: >-
+      pamiatkynaslovensku.sk (čteno 9. 8. 2026) — „Na chatách pracoval celkom
+      40 rokov, čím vošiel do histórie ako najdlhšie pôsobiaci vysokohorský
+      nosič".
+  - text: >-
+      V lokalitě sídlí stanice Horské záchranné služby.
+    kategorie: jine
+    zdroj: >-
+      domalenka.sk (čteno 9. 8. 2026) — „Na lokalite sídli stanica Horskej
+      záhrannej služby."
+  - text: >-
+      Na místě dnešní chaty shořely postupně dvě generace budov — roku 1893
+      a znovu roku 1927.
+    kategorie: stari
+    zdroj: >-
+      vysoketatry.com a německá Wikipedie (čteno 9. 8. 2026).
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Srubová chata z roku 1934 pod Hrebienkom, kterou postavil německý spolek
+  Karpathenverein na pozemku darovaném lékařem Michalem Guhrem. Nesla jeho
+  jméno, od roku 1946 se jmenuje po Pavlu Bilíkovi. Od stanice lanovky je to
+  sem tři sta metrů.
+text:
+  - >-
+    Bilíkova chata stojí ve 1255 metrech na jihovýchodním úpatí Slavkovského
+    štítu, těsně pod Hrebienkom, na místě zvaném Kancle. Na její výšce se
+    shodne devět pramenů do metru — bez jediné odchylky, což je v tomhle
+    průvodci vzácnost.
+  - >-
+    Místo má za sebou dvě generace vyhořelých budov. Od roku 1875 tu stála
+    Ruženina chata, roku 1884 k ní přibyl dvoupatrový hotel Studený potok
+    a obojí roku 1893 shořelo. Nové budovy Studenopotockých kúpelí vyhořely
+    znovu v noci na 18. února 1927. Téhož roku koupil pozemek lékař Michal
+    Guhr z Tatranské Polianky a daroval ho Karpathenvereinu.
+  - >-
+    Ten na něm postavil dnešní srubovou chatu a otevřel ji 22. prosince 1934.
+    Stavěl ji kežmarský stavitel Oskár Zuber podle vlastních projektů, takže
+    architekt a stavitel jsou tu jedna osoba. Základní kámen položil
+    15. září 1934 předseda spolku Mikuláš Szontagh mladší — Guhr už rok
+    nežil, a chata proto dostala jeho jméno posmrtně: Guhrov mládežnícky
+    domov, zkráceně Guhrova chata. Přístavba z roku 1936 přinesla novou
+    jídelnu a zvedla kapacitu ze čtyřiceti na osmapadesát lůžek.
+  - >-
+    Guhr sám stojí za pozornost i mimo tatranský kontext: byl předsedou
+    Karpathenvereinu od roku 1920 do své smrti a podle Slovenského
+    olympijského výboru jediným účastníkem ze Slovenska na prvních zimních
+    olympijských hrách v Chamonix roku 1924.
+  - >-
+    Roku 1946 chatu převzal Klub slovenských turistov a lyžiarov a přejmenoval
+    ji na Bilíkovu — po Pavlu Bilíkovi, kterého Němci zajali při bojové akci
+    nad Horným Smokovcem a popravili na Kežmarském hradě. Prameny se liší
+    v tom, jestli byl inspektorem finanční stráže, nebo kapitánem in memoriam.
+    Pamětní deska je na chatě dodnes. Roku 1992 byla chata vyčleněna
+    z Interhotelu Tatry do privatizace a po rekonstrukci se 1. února 1993
+    znovu otevřela.
+  - >-
+    Dnes je to spíš horský hotel než chata: pokoje se sdílenou i vlastní
+    koupelnou, dva apartmány v podkroví, finská sauna a restaurace
+    s regionální kuchyní. Kolik má přesně lůžek, prameny neříkají shodně —
+    28 plus 5, 28 plus 11, 29 plus 1, nebo 33; vlastní web žádné číslo
+    neuvádí. Na téhle stránce je zapsané nejnižší doložené.
+  - >-
+    Že sem může přijít i ten, kdo tu nespí, žádný pramen doslova neříká, ale
+    čísla mluví: vysoketatry.com uvádí kapacitu stravování 68 míst a v létě
+    120, tedy dvoj- až čtyřnásobek lůžek, a podnik je samostatně veden jako
+    restaurace s denním menu.
+  - >-
+    Chodí se sem od Hrebienku pět minut po zelené, ze Starého Smokovca za
+    půl hodiny, od Tatranské Lesné po žluté a pak zelené asi hodinu a půl.
+    Chata leží zároveň na červené Tatranské magistrále. Na Hrebienok jede ze
+    Starého Smokovca pozemní lanovka a od její stanice je to tři sta metrů;
+    tatryportal.sk chatu označuje za dostupnou i pro vozíčkáře. Parkovat se
+    dá až dole v Starém Smokovci.
+  - >-
+    Údaje nese vlastní web chaty, tatranskybedeker.sk, pamiatkynaslovensku.sk,
+    nostalgicketatry.sk, vysoketatry.com, olympic.sk, tatryportal.sk,
+    domalenka.sk, presovregion.travel a německá Wikipedie; polohu
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — typy pokojů, ceny od 61 €, snídaně v ceně, popis
+      restaurace, kontakty, provozovatel VERUMCORP s.r.o.
+      (načteno 9. 8. 2026)
+    url: https://www.bilikovachata.sk/kontakt
+  - popis: >-
+      tatranskybedeker.sk — dar pozemku kežmarské sekci Karpathenvereinu,
+      stavitel Oskar Zuber, název Guhrov mládežnícky a turistický domov,
+      přístavba 1936 (Štefan Klocok, 40 → 58 lůžek), přejmenování 1946
+      (načteno 9. 8. 2026)
+    url: https://www.tatranskybedeker.sk/bilikova-chata/
+  - popis: >-
+      pamiatkynaslovensku.sk — Karpathenverein 1934, hotel Studený potok
+      1884, chatař Rudo Kacián, privatizace 1992 a otevření 1. 2. 1993
+      (načteno 9. 8. 2026)
+    url: https://www.pamiatkynaslovensku.sk/vysoke-tatry-bilikova-chata
+  - popis: >-
+      nostalgicketatry.sk — Oskár Zuber (1896–1945) a jeho vlastní projekt,
+      základní kámen 15. 9. 1934 (Mikuláš Szontagh ml.), otevření
+      22. 12. 1934, správa kežmarské odbočky (načteno 9. 8. 2026)
+    url: http://www.nostalgicketatry.sk/historia/hrebienoknovy/181-studenopotocke-kupele
+  - popis: >-
+      vysoketatry.com — výška 1255 m, kapacita ubytování 28+5 a stravování
+      68 (v létě 120), Ruženina chata 1875, požár 1893, pamětní deska Pavla
+      Bilíka, časy přístupů (načteno 9. 8. 2026)
+    url: https://www.vysoketatry.com/chaty/bchata/bchata.html
+  - popis: >-
+      olympic.sk — Michal Guhr: předseda Karpathenvereinu 1920–1933, dar
+      pozemků roku 1927, účast na ZOH v Chamonix 1924 (načteno 9. 8. 2026)
+    url: https://www.olympic.sk/clanok/pred-100-rokmi-bol-na-i-zoh-v-chamonix-zo-slovenska-len-michael-guhr
+  - popis: >-
+      Německá Wikipedie, heslo Bilíkova chata — Rosahütte 1875, Hotel
+      Kohlbach 1884, požár 18. 2. 1927, stavba 1933–34, přejmenování 1946
+      (načteno 9. 8. 2026)
+    url: https://de.wikipedia.org/wiki/Bil%C3%ADkova_chata
+  - popis: >-
+      tatryportal.sk — 1255 m, kapacita 28+11, dostupnost pro vozíčkáře,
+      Hrebienok 5 minut (načteno 9. 8. 2026)
+    url: https://www.tatryportal.sk/tura/bilikova-chata/
+  - popis: >-
+      presovregion.travel — okolnosti popravy Pavla Bilíka, restaurace,
+      terasa a sauna, přístup od Tatranské Lesné (načteno 9. 8. 2026)
+    url: https://presovregion.travel/vylet/bilikova-chata/
+  - popis: >-
+      domalenka.sk — stanice Horské záchranné služby v lokalitě, zelená
+      značka z Hrebienku a Starého Smokovca (načteno 9. 8. 2026)
+    url: https://domalenka.sk/atrakcie/bilikova-chata
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut, opening_hours; ODbL)
+    url: https://www.openstreetmap.org/way/301993072
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/bilikova-chata.yaml (9. 8. 2026).
+
+  KARPATHENVEREIN JE TU KONEČNĚ DOLOŽENÝ — a je to dovětek k záznamu
+  z 8. 8. 2026 v data/oblasti/vysoke-tatry.yaml. Tehdy druhá rešerše žádnou
+  chatu Karpathenvereinu ve Vysokých Tatrách nenašla a bylo tam napsané, že
+  z nenalezení se nesmí stát vyvrácení. Dobře, že tak. Tady spolek doložilo
+  PĚT nezávislých pramenů včetně německé Wikipedie a Slovenského olympijského
+  výboru, a to i s upřesněním na kežmarskou sekci a se jménem předsedy.
+  Ranní opatrnost se vyplatila; kdybych tehdy napsal „vyvráceno", musel bych
+  to dnes brát zpátky.
+
+  PROVOZOVATEL SE V PRAMENECH ROZCHÁZÍ a do dat nešel žádný: vlastní web
+  v obchodních podmínkách uvádí VERUMCORP s.r.o. (IČO 54335655, vznik
+  8. 2. 2022), tag operator v OSM „ROJAX GASTRO, s.r.o." — nejspíš
+  neaktualizovaný záznam staršího provozovatele. Vlastník budovy není doložen
+  vůbec; poslední doložený je SOKOPO Žilina z roku 1992/93.
+
+  OTEVÍRACÍ DOBA MÁ NEJSLABŠÍ DOKLAD Z CELÉHO PROFILU. Zapsaná je, protože ji
+  shodně nesou dva nezávislé prameny (TripAdvisor a tag opening_hours v OSM),
+  ale ani jeden z nich není provozovatel a vlastní web hodiny neuvádí. Kdyby
+  se ukázalo, že je stará, nebude to překvapení.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: zahájení stavby (rozhodnutí 2. 9. 1933 ×
+  stavba 1933–34 × základní kámen 15. 9. 1934); kapacita (28+5 × 28+11 ×
+  29+1 × 33 × 12 pokojů); hodnost Pavla Bilíka (inspektor finanční stráže ×
+  kapitán in memoriam).
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: samostatný architekt (projekt je
+  dílem stavitele Zubera); formální akt znárodnění; dnešní vlastník budovy;
+  původ přezdívky „Bilíčka", kterou dva prameny mají v titulku, ale nikde ji
+  nevysvětlují. Slovenskou Wikipedii se rešerši nepodařilo načíst.
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.

@@ -753,3 +753,29 @@ vyrazeno:
       Claude (8. 8. 2026, samostatný blok — duplicita přišla s Michalovým
       opakovaným exportem Beskyd, rozhodnuto měřením z GPS)
     checked: 2026-08-08
+
+  # ZÁMĚNA JMÉNA PŘES ČTYŘI KILOMETRY (9. 8. 2026). Kandidát se jmenoval
+  # stejně jako slavná národní kulturní památka, ale je to jiný objekt na
+  # jiném místě. Rozhodlo měření, ne jméno.
+  - osm: https://www.openstreetmap.org/node/7643802175
+    slug: vysoke-tatry/encian
+    duvod: >-
+      NENÍ TO ENCIÁN NA SKALNATÉM PLESE. Kandidát vznikl z uzlu OSM
+      s jedinými dvěma tagy `amenity=restaurant` a `name=Encián`, a protože
+      jméno sedělo na známou Jurkovičovu stavbu, dostal se do fronty na
+      povýšení. Naměřeno ale 3 972 m od Skalnaté chaty a 216 m od centra
+      Tatranské Lomnice — tenhle Encián je restaurace v obci, ne budova
+      bývalé horní stanice visuté lanovky na břehu Skalnatého plesa. Mimo
+      klíč zařazení: vesnická restaurace bez role na horské trase.
+      DŮSLEDEK, KTERÝ JE DŮLEŽITĚJŠÍ NEŽ SAMO VYŘAZENÍ: skutečný Encián na
+      Skalnatém plese v exportu DATA-01 NENÍ VŮBEC, takže průvodci chybí
+      objekt, o kterém rešerše doložila, že je národní kulturní památka
+      (soubor ÚZPF 3850/1-20 „Lanovka Tatranská Lomnica – Skalnaté Pleso –
+      Lomnický štít"), že v něm je galerie, čítárna Alfreda Grosze, kavárna,
+      kaple a Dom hostí Tatranského okrášľovacieho spolku s deseti až
+      dvaceti lůžky, a že ho TOS má od TMR v dvacetiletém pronájmu. Patří
+      do ruční dohledávky GPS (DATA-31) — viz backlog VT-02.
+    rozhodl: >-
+      Claude (9. 8. 2026, samostatný blok — rozhodnuto měřením z GPS proti
+      poloze Skalnatého plesa a obce Tatranská Lomnica, ne úvahou o jménu)
+    checked: 2026-08-09

@@ -1,0 +1,251 @@
+# Majláthova chata — dvanáctý publikovaný profil oblasti Vysoké Tatry
+# (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# POZOR: tohle NENÍ historická Majláthova chata z 19. století, ale replika
+# z let 2006–2010. Historická chata zanikla; její příběh nese profil
+# horsky-hotel-popradske-pleso, který stojí sto metrů odsud.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Majláthova chata
+slug: majlathova-chata
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1545519
+lng: 20.0786261
+vyska: 1500
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/105597464 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1500 m má SLABŠÍ DOKLAD než ostatní objekty oblasti a je to tu
+    napsané: uvádí ji hiking.sk (čteno 9. 8. 2026, „v nadmorskej výške 1500 m
+    n.m."), jiný pramen ji nepotvrzuje. Sousední hotel je v pramenech veden
+    na 1494 m i 1500 m, takže rozdíl mezi oběma objekty je v řádu metrů.
+    Poloha: břeh Popradského plesa v Mengusovské dolině, 106 metrů od
+    Horského hotelu Popradské pleso (naměřeno z GPS obou objektů).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 14
+overeniNocleh:
+  source: >-
+    ROZPOR V PRAMENECH, ZAPSÁNO NEJNIŽŠÍ ČÍSLO (konvence 27. 7. 2026):
+    pravda.sk uvádí při otevření „4 pokoje / 14 lůžek", miribord.com
+    „Kapacita ubytovanie je 15 lôžok." a hiking.sk „16 lôžok v piatich
+    izbách" (vše čteno 9. 8. 2026). Vlastní web chaty se rešerši načíst
+    nepodařilo, takže tu není provozovatelův údaj, kterému by patřila
+    přednost.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    TOHLE JE DRUHÝ OBJEKT OBLASTI, U KTERÉHO JE OBSLUHA NEUBYTOVANÝCH
+    DOLOŽENÁ VÝSLOVNOU VĚTOU — po Sliezskem domu. miribord.com (čteno
+    9. 8. 2026): „Od 6:00 sú k dispozícii raňajky aj pre neubytovaných
+    hostí." U desítky ostatních tatranských profilů korpusu taková věta
+    chybí, a proto se tu zapisuje doslova.
+    Rozsah provozu: pravda.sk uvádí při otevření restauraci s padesáti místy
+    uvnitř a venkovní terasu pro dvě stě padesát lidí — tedy zhruba
+    dvacetinásobek lůžkové kapacity, což samo o sobě předpokládá denní hosty.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+# sezona SE NEVYPLŇUJE: žádný nalezený pramen neuvádí, jestli je chata
+# otevřená celoročně, nebo sezónně. U sousedního hotelu je celoroční provoz
+# doložen třemi prameny, ale přenášet ho na jiný objekt s jiným majitelem
+# by bylo domýšlení.
+overeniProvoz:
+  source: >-
+    SEZÓNNOST A OTEVÍRACÍ DOBA NEJSOU DOLOŽENÉ ANI JEDNÍM PRAMENEM a proto
+    tu nejsou zapsané. Doloženo je jen to, že snídaně začínají v šest ráno
+    (miribord.com, čteno 9. 8. 2026) a že mezi chatou a údolím jezdí dvakrát
+    denně kyvadlová doprava (tamtéž). Vlastní web majlatka.sk se rešerši
+    načíst nepodařilo.
+    Přístupový režim je stejný jako u sousedního hotelu: hodina po asfaltové
+    cestě od zastávky tatranské elektrické železnice po modré, nebo hodina
+    a čtvrt ze Štrbského Plesa po červené magistrále, která je v zimě
+    nahrazena zelenou kvůli lavinovým svahům.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421910948160'
+  email: majlathovachata@gmail.com
+  web: https://www.majlatka.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 2010
+overeniHistorie:
+  source: >-
+    NEJMLADŠÍ OBJEKT CELÉ OBLASTI A ZÁROVEŇ NEJSTARŠÍ JMÉNO — je to replika,
+    ne pokračování. hiking.sk (čteno 9. 8. 2026): „V 2006 začala výstavba
+    pôvodnej Majláthovej chaty ako repliky hrazdeného objektu na podnet
+    horolezca Pavla Lazara."; kolaudace 30. prosince 2010, provoz od začátku
+    roku 2011.
+    Zapsán je rok kolaudace, ne rok zahájení stavby ani rok otevření provozu;
+    u letopočtu vzniku volím z rozpětí tu pozdější doloženou událost, která
+    znamená hotovou stavbu (stejně jako u Skalnaté chaty — viz KONTROLA-11).
+    JMÉNO NESE PO HISTORICKÉ CHATĚ, KTERÁ TU STÁLA OD ROKU 1879 (podle
+    jednoho pramene 1876) a shořela 18. července 1880; pojmenovaná byla po
+    liptovském podžupanovi a místopředsedovi Liptovské sekce Uhorského
+    karpatského spolku Vojtechu Majláthovi (1831–1900). Celá řada šesti chat
+    u Popradského plesa je popsaná v profilu horsky-hotel-popradske-pleso.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 2006
+    udalost: >-
+      Z podnětu horolezce Pavla Lazara začala stavba repliky původní
+      Majláthovy chaty jako hrázděného objektu.
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — „V 2006 začala výstavba pôvodnej
+      Majláthovej chaty ako repliky hrazdeného objektu na podnet horolezca
+      Pavla Lazara."; shodně smnd.sk.
+  - rok: 2010
+    udalost: >-
+      Stavba byla 30. prosince zkolaudována; provoz začal na začátku roku
+      2011 a prvními chataři se po výběrovém řízení stali Katarína a Milan
+      Blaškovci.
+    zdroj: >-
+      pravda.sk (čteno 9. 8. 2026) — kolaudace na konci roku 2010, provoz od
+      začátku roku 2011; „Novými chatármi na Majláthovej chate sa na základe
+      výberového konania stali Katarína a Milan Blaškovci."; hiking.sk uvádí
+      datum kolaudace 30. 12. 2010.
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Restaurace má podle pramene padesát míst uvnitř a venkovní terasa
+      dvě stě padesát — při čtrnácti lůžkách je to zhruba dvacetinásobek
+      ubytovací kapacity.
+    kategorie: gastro
+    zdroj: >-
+      pravda.sk (čteno 9. 8. 2026) — údaje z doby otevření roku 2011.
+  - text: >-
+      Mezi chatou a údolím jezdí dvakrát denně kyvadlová doprava.
+    kategorie: jine
+    zdroj: >-
+      miribord.com (čteno 9. 8. 2026).
+  - text: >-
+      Chata je hrázděná replika stavby, která na tomtéž místě shořela roku
+      1880; jméno nese po liptovském podžupanovi Vojtechu Majláthovi.
+    kategorie: stari
+    zdroj: >-
+      hiking.sk (čteno 9. 8. 2026) — replika hrázděného objektu;
+      nostalgicketatry.sk k osobě Majlátha — „na počesť niekdajšieho
+      liptovského podžupana a podpredsedu Liptovskej sekcie Uhorského
+      karpatského spolku Vojtecha Majlátha /1831-1900/".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Hrázděná replika chaty, která u Popradského plesa stála v 19. století
+  a roku 1880 shořela. Postavil ji od roku 2006 horolezec Pavol Lazar,
+  zkolaudovaná byla na konci roku 2010. Nese jméno první chaty, která
+  u Popradského plesa stála.
+text:
+  - >-
+    Majláthova chata stojí na břehu Popradského plesa, sto metrů od Horského
+    hotelu Popradské pleso. Stojí tu od roku 2010 a nese přitom jméno
+    chaty, která u plesa stála jako první — je to totiž replika.
+  - >-
+    Historická Majláthova chata tu byla první stavbou vůbec. Postavil ji
+    Uhorský karpatský spolok, prameny ji kladou k roku 1876 nebo 1879, a už
+    18. července 1880 celá shořela. Jmenovala se po Vojtechu Majláthovi,
+    liptovském podžupanovi a místopředsedovi Liptovské sekce spolku. Po ní
+    následovalo u plesa dalších pět staveb; jejich příběh nese stránka
+    sousedního hotelu.
+  - >-
+    Dnešní hrázděnou repliku začal roku 2006 stavět horolezec Pavol Lazar.
+    Zkolaudovaná byla 30. prosince 2010 a provoz začal na začátku roku 2011,
+    kdy se po výběrovém řízení stali chataři Katarína a Milan Blaškovci.
+  - >-
+    Spí se tu ve čtyřech nebo pěti pokojích, prameny uvádějí čtrnáct až
+    šestnáct lůžek. Zajímavější je poměr: restaurace má padesát míst uvnitř
+    a terasa dvě stě padesát, tedy zhruba dvacetinásobek ubytovací kapacity.
+    A tady, na rozdíl od většiny tatranských chat tohohle průvodce, není
+    obsluha kolemjdoucích jen pravděpodobná — pramen ji říká doslova: od
+    šesti ráno jsou snídaně k dispozici i pro neubytované.
+  - >-
+    Chodí se sem stejně jako k sousednímu hotelu: hodinu po asfaltové cestě
+    od zastávky tatranské elektrické železnice po modré, nebo ze Štrbského
+    Plesa po červené magistrále, která je v zimě nahrazená zelenou kvůli
+    lavinovým svahům. Mezi chatou a údolím jezdí dvakrát denně kyvadlová
+    doprava.
+  - >-
+    O téhle chatě víme míň než o ostatních v oblasti a je poctivé to říct.
+    Vlastní web se nám nepodařilo načíst, takže tu nemáme provozovatelův údaj
+    ani o kapacitě, ani o otevírací době, a jestli je chata otevřená
+    celoročně, nebo jen v sezóně, neuvádí žádný pramen — a proto to tu
+    netvrdíme.
+  - >-
+    Údaje nesou hiking.sk, pravda.sk, miribord.com, smnd.sk
+    a nostalgicketatry.sk; polohu OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      hiking.sk — stavba repliky od roku 2006 z podnětu Pavla Lazara,
+      kolaudace 30. 12. 2010, 16 lůžek v pěti pokojích, výška 1500 m
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/2752/majlathova_chata_pri_popradskom_plese.html
+  - popis: >-
+      pravda.sk — Pavol Lazar jako majitel a iniciátor, kolaudace konec 2010
+      a provoz od 2011, 4 pokoje a 14 lůžek, restaurace 50 míst a terasa 250,
+      chataři Katarína a Milan Blaškovci (načteno 9. 8. 2026)
+    url: https://www.pravda.sk/cestovanie/slovensko/clanok/4257-pri-popradskom-plese-pribudla-dalsia-vysokohorska-chata
+  - popis: >-
+      miribord.com — „Od 6:00 sú k dispozícii raňajky aj pre neubytovaných
+      hostí.", 15 lůžek, kyvadlová doprava dvakrát denně, kontakty
+      (načteno 9. 8. 2026)
+    url: https://miribord.com/sk/majlathova-chata/1827
+  - popis: >-
+      smnd.sk — zahájení stavby nové chaty roku 2006, uvedení do provozu
+      2011 (načteno 9. 8. 2026)
+    url: https://www.smnd.sk/jbachnicek/PopradskePleso1.html
+  - popis: >-
+      nostalgicketatry.sk — Vojtech Majláth (1831–1900) a původ jména chaty
+      (načteno 9. 8. 2026)
+    url: https://www.nostalgicketatry.sk/historia/popradskepleso
+  - popis: >-
+      OpenStreetMap (GPS, tourism=guest_house; ODbL)
+    url: https://www.openstreetmap.org/way/105597464
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/majlathova-chata.yaml (9. 8. 2026).
+
+  PROČ SAMOSTATNÝ PROFIL A NE SLOUČENÍ S HOTELEM. Vzdálenost 106 metrů
+  (naměřeno z GPS obou objektů) by sama o sobě sloučení nahrávala, ale
+  pravidlo z Kozubové říká: rozhoduje jedna stavba NEBO jeden provoz, ne
+  blízkost. Tady jsou dvě samostatné budovy, dva různí majitelé (hotel
+  provozuje TatryPEM s. r. o., repliku vlastní horolezec Pavol Lazar) a dvě
+  různé webové adresy. Dva profily.
+
+  TENHLE PROFIL JE NEJHŮŘ DOLOŽENÝ Z DVANÁCTI V OBLASTI a nechci to
+  zakrývat. Stojí na třech pramenech, z nichž pravda.sk popisuje stav z roku
+  2011, tedy patnáct let starý. Vlastní web majlatka.sk se rešerši načíst
+  nepodařilo — a to je zároveň nejrychlejší cesta, jak profil doplnit.
+  Nevyplněné je proto pole `sezona`: u sousedního hotelu je celoroční provoz
+  doložen třemi prameny, ale přenášet ho na jinou budovu s jiným majitelem
+  by bylo domýšlení, a to se tu nedělá.
+
+  DRUHÝ DOLOŽENÝ PŘÍPAD OBSLUHY NEUBYTOVANÝCH V OBLASTI (po Sliezskem domu),
+  a je to pěkná ukázka toho, že velikost provozu nic nedokazuje: velký hotel
+  se čtyřmi sty místy u stolu takovou větu nemá, tahle malá chata ano.
+
+  ROZPOR V KAPACITĚ, nesrovnaný: 14 (pravda.sk) × 15 (miribord.com) ×
+  16 (hiking.sk). Zapsáno nejnižší.
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: sezónnost a otevírací doba;
+  aktuální chatař (Blaškovci jsou doloženi k roku 2011); přesná výška
+  z druhého pramene; kdo repliku projektoval.
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.

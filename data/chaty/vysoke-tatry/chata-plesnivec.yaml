@@ -1,0 +1,363 @@
+# Chata Plesnivec — desátý publikovaný profil oblasti Vysoké Tatry
+# (9. 8. 2026), povýšen z kandidáta DATA-01 po rešerši téhož dne.
+# Kandidát se jmenoval jen „Plesnivec"; celý název doložily vlastní web,
+# město Spišská Belá i obec Ždiar, a slug se proto změnil.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Chata Plesnivec
+slug: chata-plesnivec
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.224571
+lng: 20.2761098
+vyska: 1290
+obec: Spišská Belá
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/562321415 — data
+    © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA 1290 m BEZ JEDINÉHO ROZPORU: vlastní web chaty (čteno 9. 8. 2026)
+    „CHATA PLESNIVEC - 1290 m n.m." a „Chata Plesnivec (1290 m) sa nachádza
+    v Belianskych Tatrách v závere Doliny Siedmich prameňov"; shodně město
+    Spišská Belá jako vlastník, tatranskybedeker.sk, hiking.sk i tag ele
+    v OSM.
+    Obec: chata stojí na pozemku města Spišská Belá, které je i vlastníkem
+    budovy; obě samosprávné stránky (spisskabela.sk i zdiar.sk) to uvádějí
+    shodně.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 20
+overeniNocleh:
+  source: >-
+    20 míst uvádějí shodně město Spišská Belá jako vlastník („Kapacita
+    ubytovania : 20 miest"), obec Ždiar, hiking.sk i vysoketatry.com (vše
+    čteno 9. 8. 2026). Bez rozporu v počtu.
+    ROZPOR JE JEN V ČLENĚNÍ, nesrovnaný: tatranskybedeker.sk „20 lôžok
+    rozmiestnených v šiestich izbách", hiking.sk pět pokojů po čtyřech
+    lůžkách v patře. Do dat jde jen počet.
+    Vlastní web (čteno 9. 8. 2026): 25 € za osobu a noc, „Vo vlastnom
+    spacáku — 18 €", děti do 6 let zdarma, 6 až 12 let poloviční cena;
+    „Ubytovanie so psom nie je možné." Rezervace jen e-mailem. Historicky:
+    po přístavbě patra roku 1936 tu bylo „Spolu tu bolo 50 miest na spanie."
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Bufet uvádějí shodně obě samosprávy — město Spišská Belá i obec Ždiar
+    („Stravovanie : bufet") — a vysoketatry.com vede chatu v kategorii bufet
+    s kapacitou 20 osob (vše čteno 9. 8. 2026). Teplou kuchyni dokládá
+    turisticky.sk: „Samozrejmosťou je teplá kuchyňa, veľký výber polievok
+    a čapovaných nápojov"; hiking.sk popisuje jídelnu — „Jedáleň s veľkým
+    kamenným krbom je neveľkých rozmerov – štyri stoly poskytnú dostatok
+    priestoru pre asi 20 ľudí."
+    Polopenzi pro ubytované řeší vlastní web zvlášť a s předstihem
+    („Polpenziu je nutné nahlásiť min. 2 dni vopred."), což naznačuje, že
+    denní provoz bufetu je něco jiného než stravování hostů.
+    VÝSLOVNÁ VĚTA O NEUBYTOVANÝCH ALE CHYBÍ i tady. Nejblíž je miribord.com
+    („Občerstviť sa môžete aj v Chate Plesnivec") a zlavadna.sk („Ponúka
+    príjemný relax na terase, ubytovanie, občerstvenie."). Telefonát to
+    rozhodne (DATA-04).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: celoročně
+otviraciDoba: >-
+  v letní sezóně nonstop (29. 5. – 1. 11. 2026), mimo sezónu jen o víkendech
+  a svátcích
+overeniProvoz:
+  source: >-
+    Vlastní web chaty (čteno 9. 8. 2026): „Chata Plesnivec bude od 29.05.2026
+    do 1.11.2026 otvorená každý deň NONSTOP." Mimosezónní režim doplňuje
+    turisticky.sk („Od 2. 11. 2025 do 31. 5. 2026 je chata otvorená len počas
+    víkendov a sviatkov") a hiking.sk („celoročná (v mimosezóne len počas
+    víkendov)"). Údaje si neodporují, doplňují se.
+    U TÉHLE CHATY MÁ „OTEVŘENO ≠ DOSTUPNÉ" OPAČNÉ ZNAMÉNKO NEŽ JINDE. Leží
+    v Belianských Tatrách, kde je od roku 1978 uzavřená většina území
+    a všechny hřebenové trasy — a přesto k ní vede přístup celoročně.
+    V oficiálním seznamu sezónně uzavřených chodníků TANAP (Vestník vlády SR)
+    figurují chodníky na Kopské sedlo a Monkovou dolinou, ale Dolina
+    siedmich prameňov ani přístup z Tatranské Kotliny tam nejsou. Trasy
+    směrem na Kopské sedlo a k Chatě pri Zelenom plese jsou tedy od
+    1. listopadu do 31. května zavřené, přístup zdola ne.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421905256722'
+  email: chataplesnivec@gmail.com
+  web: https://www.chataplesnivec.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1932
+overeniHistorie:
+  source: >-
+    ROK 1932 JE ROKEM, KDY Z CHATKY VZNIKLA TURISTICKÁ CHATA, ne rokem první
+    stavby na místě — celá řada je v milnících. Vlastní web chaty (čteno
+    9. 8. 2026): „Až v roku 1932 obyvateľ Spišskej Belej Tibor Gresch, člen
+    Karpatského spolku a veľký milovník Tatier, prenajal pozemok od mesta
+    Spišská Belá a zo starej chatky zriadil turistickú chatu s názvom
+    Plesnivec."; shodně tatranskybedeker.sk.
+    Starší vrstvy: „Prvá zmienka o chate v Doline siedmich prameňov je
+    z konca 18.storočia, kedy si zlatokop Dreschler, obyvateľ neďalekých
+    Rakús postavil v doline, v blízkosti siedmich prameňov, zrub."; roku 1892
+    tu postavili nový srub „kolári", kteří v dolině těžili javorové dřevo na
+    kola a nářadí, a používali ho i pastevci.
+    Slavnostní otevření nové chaty proběhlo 26. června 1938, znovuotevření po
+    rekonstrukci 4. října 1997.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1892
+    udalost: >-
+      Na místě staršího srubu zlatokopa Dreschlera z konce 18. století
+      postavili nový srub kolaři, kteří v dolině těžili javorové dřevo;
+      sloužil jim i pastevcům jako útočiště za nepohody.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „v roku 1892 na tomto mieste
+      postavili nový zrub »kolári«, ktorí v doline ťažili vynikajúce javorové
+      drevo na výrobu kolies a náradia."
+  - rok: 1932
+    udalost: >-
+      Tibor Gresch ze Spišské Belé, člen Karpatského spolku, si pronajal
+      pozemek od města a ze staré chatky zřídil turistickou chatu Plesnivec.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026); shodně tatranskybedeker.sk.
+  - rok: 1938
+    udalost: >-
+      Po přístavbě patra ze dvou let předtím, která zvedla kapacitu na
+      padesát míst, se 26. června konalo slavnostní otevření nové chaty.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „V r. 1936 postavil poschodie,
+      kde boli dve spoločné spálne a štyri izby pre bohatších hostí. Spolu tu
+      bolo 50 miest na spanie."; „Slávnostné otvorenie novej chaty bolo
+      26. júna 1938."
+  - rok: 1948
+    udalost: >-
+      Chatu znárodnili. Tibor Gresch musel po válce opustit Slovensko a chata
+      začala chátrat.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „V roku 1948 bola znárodnená."
+      a „Po skončení vojny musel Tibor Gresch opustiť Slovensko."
+  - rok: 1953
+    udalost: >-
+      Chatu převzala do správy Správa TANAP, zavřela ji veřejnosti a zřídila
+      z ní meteorologickou stanici. Prameny se v datech období rozcházejí.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Turistom slúžila do roku 1953.
+      Od tohto roku prevzal chatu do správy Správa TANAP-u a pre verejnosť ju
+      zatvorila. Z chaty bola zriadená meteorologická stanica." Oproti tomu
+      hiking.sk a vysoketatry.com uvádějí výzkumnou stanici v letech
+      1955–1997 a anglická verze vlastního webu období 1953–1993.
+  - rok: 1993
+    udalost: >-
+      Chata se vrátila do vlastnictví města Spišská Belá, které ji pronajalo
+      chataři Jánu Matavovi a přispělo na rekonstrukci.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Až v r. 1993 chatu dostalo do
+      vlastníctva opäť Mesto Spišská Belá. Mesto prenajalo chatu jej
+      súčasnému chatárovi p. Jánovi Matavovi zo Spišskej Belej".
+  - rok: 1997
+    udalost: >-
+      Po čtyřech letech oprav byla chata zkolaudována, 4. října vysvěcena
+      a znovu otevřena veřejnosti.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Bola skolaudovaná, 4. októbra
+      1997 slávnostne vysvätená a znovu slúži všetkým."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Podle tří pramenů včetně slovenského Forbesu je to jediná fungující
+      chata v Belianských Tatrách.
+    kategorie: jine
+    zdroj: >-
+      forbes.sk (čteno 9. 8. 2026) — „Plesnivec je jediná funkčná chata
+      v Belianskych Tatrách."; vysoketatry.com — „Chata Plesnivec (1290 m) je
+      jediným obývateľným objektom v Belianskych Tatrách"; zlavadna.sk totéž.
+  - text: >-
+      Chata měla modro-bílou vlajku s květem plesnivce ve znaku; po
+      rekonstrukci v devadesátých letech dostala symbol i původní jméno zpět.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Chata mala svoju modro-bielu
+      zástavu, v ktorej bol umiestnený kvet plesnivca ako erb." a „Chata
+      dostala svoj symbol plesnivca a svoje pôvodné meno."
+  - text: >-
+      V době, kdy chata sloužila jako stanice, sem v létě jezdili botanici
+      a biologové z Masarykovy univerzity a plzeňské pedagogické fakulty —
+      dolinu si podle chaty vybrali pro nejbohatší zastoupení rostlinných
+      druhů v Tatrách.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „Túto dolinu si vybrali kvôli
+      najbohatšiemu zastúpeniu rastlinných druhov v Tatrách."
+  - text: >-
+      Rekonstrukce v devadesátých letech začala tím, že chatař s přáteli
+      opravil cestu a mosty přes potok Čierna voda — po téže cestě se chata
+      dodnes zásobuje.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „najprv upravil cestu, opravil
+      mosty cez potok Čierna voda"; hiking.sk — „Tadiaľ sa aj zásobuje chata".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Jediná fungující chata v Belianských Tatrách, v závěru Doliny siedmich
+  prameňov. Turistickou chatu z ní roku 1932 udělal Tibor Gresch z Karpatského
+  spolku; po znárodnění čtyřicet let sloužila jako stanice a veřejnosti se
+  vrátila až roku 1997. Vlastní ji město Spišská Belá.
+text:
+  - >-
+    Chata Plesnivec stojí ve 1290 metrech v závěru Doliny siedmich prameňov
+    v Belianských Tatrách. Podle tří pramenů včetně slovenského Forbesu je
+    jediná fungující chata celého pohoří — a to není poetická formulace, ale
+    důsledek toho, že Správa TANAP tu od roku 1978 uzavřela většinu území
+    a všechny hřebenové značky.
+  - >-
+    Historie místa má čtyři vrstvy. Na konci 18. století si tu postavil srub
+    zlatokop Dreschler z nedalekých Rakús. Roku 1892 na témž místě postavili
+    nový srub kolaři, kteří v dolině těžili javorové dřevo na kola a nářadí;
+    používali ho i pastevci, kteří chodili pást na Predné a Zadné Meďodoly.
+    A až roku 1932 si pozemek pronajal od města Spišská Belá Tibor Gresch,
+    člen Karpatského spolku, a udělal ze staré chatky turistickou chatu
+    Plesnivec. Roku 1936 přistavěl patro se dvěma společnými ložnicemi
+    a čtyřmi pokoji, čímž kapacita stoupla na padesát míst, a 26. června 1938
+    novou chatu slavnostně otevřel.
+  - >-
+    Pak přišel zlom. Gresch musel po válce opustit Slovensko, roku 1948 byla
+    chata znárodněna a od roku 1953 ji Správa TANAP zavřela veřejnosti
+    a zřídila z ní meteorologickou stanici. Starala se o ni Eva Ružičková-
+    Kasická z Prahy s manželem až do důchodu roku 1978; v létě sem jezdili
+    botanici a biologové z Masarykovy univerzity a z Plzně, protože dolina má
+    podle chaty nejbohatší zastoupení rostlinných druhů v Tatrách. Jak dlouho
+    přesně stanice fungovala, prameny neříkají shodně — uvádějí 1953–1978,
+    1955–1997 i 1953–1993.
+  - >-
+    Roku 1993 chatu dostalo zpět město Spišská Belá a pronajalo ji chataři
+    Jánu Matavovi. Ten s přáteli a rodinou nejdřív opravil cestu a mosty přes
+    potok Čierna voda, pak střechu, trámy, okna, kanalizaci, topení a čistírnu
+    — a 4. října 1997 byla chata vysvěcena a znovu otevřena. Dostala i svůj
+    symbol zpátky: květ plesnivce, tedy protěže alpské, který měla ve znaku
+    na modro-bílé vlajce.
+  - >-
+    Spí se tu ve dvaceti místech, buď na povlečení, nebo ve vlastním spacáku
+    za nižší cenu; psi dovnitř nesmějí. Jídelna s velkým kamenným krbem má
+    čtyři stoly a pojme asi dvacet lidí. Vaří se tu teple, na výběr je hodně
+    polévek a čepovaných nápojů. Že sem může přijít i ten, kdo tu nespí,
+    žádný pramen doslova neříká — obě samosprávy ale vedou stravování jako
+    „bufet" a polopenze pro ubytované se hlásí zvlášť dva dny předem.
+  - >-
+    Chodí se sem nejčastěji z Tatranské Kotliny, po zelené za hodinu dvacet
+    až hodinu a půl s převýšením kolem šesti set metrů. Dál vedou trasy od
+    Kopského sedla, od Chaty pri Zelenom plese a od Tatranské Javoriny.
+    A tady je to s uzávěrami obráceně než jinde v Tatrách: chodníky na Kopské
+    sedlo a Monkovou dolinou jsou od 1. listopadu do 31. května uzavřené,
+    ale Dolina siedmich prameňov v seznamu uzavřených chodníků není, takže
+    přístup zdola funguje celý rok. Hřebenovka Belianek je turistům zavřená
+    natrvalo — beliansketatry.com vede Havran i Ždiarskou vidlu jako
+    „turisticky nesprístupnené".
+  - >-
+    Údaje nese vlastní web chaty, město Spišská Belá, obec Ždiar,
+    tatranskybedeker.sk, hiking.sk, vysoketatry.com, turisticky.sk, forbes.sk
+    a seznam uzavřených chodníků TANAP; polohu OpenStreetMap. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — celá historie od Dreschlera po vysvěcení
+      4. 10. 1997, výška 1290 m, ceník, letní provoz nonstop, kontakty
+      (načteno 9. 8. 2026)
+    url: https://www.chataplesnivec.sk/
+  - popis: >-
+      Mesto Spišská Belá jako vlastník — „Vlastník chaty : Mesto Spišská
+      Belá", správce Ján Matava, kapacita 20 míst, stravování bufet, čtyři
+      přístupové trasy s časy (načteno 9. 8. 2026)
+    url: https://spisskabela.sk/navstevnik/vylety-do-okolia/vysokohorska-chata-plesnivec/
+  - popis: >-
+      Obec Ždiar — nezávislé potvrzení vlastníka, správce, kapacity a bufetu
+      (načteno 9. 8. 2026)
+    url: https://zdiar.sk/vysokohorska-chata-plesnivec/
+  - popis: >-
+      forbes.sk — „Chatu Plesnivec vlastní mesto Spišská Belá", jediná
+      fungující chata Belianských Tater, provoz stanice od 50. let
+      (načteno 9. 8. 2026)
+    url: https://www.forbes.sk/komu-patria-tatranske-chaty-turistom-sukromnikom-statu/
+  - popis: >-
+      tatranskybedeker.sk — Tibor Gresch jako člen Karpatského spolku,
+      20 lůžek v šesti pokojích, meteostanice 1953–1978 (načteno 9. 8. 2026)
+    url: https://www.tatranskybedeker.sk/chata-plesnivec/
+  - popis: >-
+      hiking.sk — jídelna s kamenným krbem pro asi 20 lidí, pět pokojů po
+      čtyřech lůžkách, zásobování dolinou, mimosezónní víkendový provoz
+      (načteno 9. 8. 2026)
+    url: https://hiking.dennikn.sk/ar/198/chata_plesnivec.html
+  - popis: >-
+      vysoketatry.com — „jediným obývateľným objektom v Belianskych Tatrách",
+      bufet s kapacitou 20, pitná voda v chatě (načteno 9. 8. 2026)
+    url: http://www.vysoketatry.com/chaty/chplesnivec/chplesnivec.html
+  - popis: >-
+      turisticky.sk — teplá kuchyně a výběr polévek, zimní víkendový režim,
+      trasa z Tatranské Kotliny s převýšením 610 m (načteno 9. 8. 2026)
+    url: https://turisticky.sk/turistika/chata-plesnivec/
+  - popis: >-
+      TANAP, seznam sezónně uzavřených turistických chodníků (Vestník vlády
+      SR) — uzávěra 1. 11. – 31. 5. se týká chodníků na Kopské sedlo
+      a Monkovou dolinou, ne Doliny siedmich prameňov (načteno 9. 8. 2026)
+    url: https://www.tanap.sk/wp-content/uploads/TZCH_uzavera_zoznam.pdf
+  - popis: >-
+      beliansketatry.com — uzavření většiny Belianských Tater od roku 1978,
+      přístupné doliny, Havran a Ždiarska vidla turisticky nezpřístupněné
+      (načteno 9. 8. 2026)
+    url: https://www.beliansketatry.com/
+  - popis: >-
+      OpenStreetMap (GPS, tourism=alpine_hut; ODbL)
+    url: https://www.openstreetmap.org/way/562321415
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysoke-tatry/plesnivec.yaml (9. 8. 2026).
+  SLUG SE PŘI POVÝŠENÍ ZMĚNIL z `plesnivec` na `chata-plesnivec` a název
+  z „Plesnivec" na „Chata Plesnivec" — OSM nese jen jednoslovnou podobu,
+  ale vlastní web, město Spišská Belá i obec Ždiar používají shodně celý
+  název. Kandidátský soubor je smazaný, aby nezůstal dvojník.
+
+  PAST, DO KTERÉ JSEM SKORO ŠLÁPL: anglická verze vlastního webu označuje
+  Jána Matavu za „current owner". Slovenský originál i obě samosprávy shodně
+  říkají, že vlastníkem je MĚSTO Spišská Belá a Matava je nájemce a chatař.
+  Do dat šla verze samospráv. Je to připomínka, že vlastní web není
+  automaticky nejlepší pramen — u vlastnických vztahů má přednost ten, kdo
+  vlastní.
+
+  BELIANSKÉ TATRY JSOU PÁTÝ TYP REŽIMU „OTEVŘENO ≠ DOSTUPNÉ" a liší se od
+  všech čtyř dosavadních (tatranská sezónní uzávěra, jednosměrné rokliny
+  Slovenského raje, vstupné a soumrakový režim Bieszczad, tvrdá sezónnost
+  Chaty pod Rysmi). Tady je zavřené celé pohoří, natrvalo, od roku 1978 —
+  a chata je uvnitř té uzávěry jedinou přístupnou stavbou. Zajímavé je, že
+  se to na její dostupnosti neprojevuje: v oficiálním seznamu uzavřených
+  chodníků TANAP figurují chodníky na Kopské sedlo a Monkovou dolinou, ale
+  ne Dolina siedmich prameňov. Chata je tedy celoročně dostupná zdola
+  a sezónně nedostupná shora. Stojí za úvahu, jestli to nemá být samostatná
+  oblast — Belianské Tatry mají jiný režim, jiné podloží (vápenec) a jediný
+  objekt; zatím to nechávám ve Vysokých Tatrách a předkládám Michalovi.
+
+  ROZPOR O OBDOBÍ STANICE, nesrovnaný: 1953–1978 (vlastní web SK,
+  tatranskybedeker.sk) × 1955–1997 (hiking.sk, vysoketatry.com) × 1953–1993
+  (anglická verze vlastního webu). Do milníků šel jen začátek roku 1953,
+  který nese slovenský originál.
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: jakýkoli požár; starší (německý
+  nebo maďarský) název chaty — formulace „dostala svoje pôvodné meno" z roku
+  1997 naznačuje, že v období stanice se chata jmenovala jinak, ale jak,
+  neuvádí nikdo; výslovná věta o obsluze neubytovaných.
+  Slovenskou Wikipedii se rešerši nepodařilo načíst.
+  Fotku dodá běh DATA-02, výškový profil přístupu DATA-06.
