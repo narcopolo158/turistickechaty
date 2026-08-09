@@ -1,0 +1,263 @@
+# Residence Ropička — sedmý publikovaný profil Beskyd (9. 8. 2026). Vznikl
+# PŘÍMO Z KATALOGOVÉ MEZERY, ne z OSM kandidáta: běh DATA-01 objekt pod
+# dnešním jménem nepřinesl a katalog ho vede postaru jako „Chata Ropička"
+# (mapování drží KATALOG_PREJMENOVANI v scripts/kontrola/katalog-pokryti.ts).
+# GPS je z vlastního webu chaty, ne z OSM.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Residence Ropička
+slug: residence-ropicka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: beskydy
+aliasy:
+  - nazev: Chata Ropička
+    poznamka: katalogové a dlouholeté běžné jméno
+  - nazev: Bezručova chata
+    poznamka: >-
+      oficiální název z let 1924–cca 1945; POZOR na záměnu s Bezručovou
+      chatou na Lysé hoře, viz data/_jmenovci.yaml
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.6148808
+lng: 18.5586825
+vyska: 900
+obec: Morávka
+overeniLokace:
+  source: >-
+    GPS: vlastní web chaty (ropicka.cz, čteno 9. 8. 2026) —
+    „49.6148808,18.5586825"; OSM objekt pod dnešním jménem nevede, a tak
+    tu poprvé v Beskydech není odkaz na OSM. VÝŠKA 900 m JE VÝŠKA CHATY,
+    NE VRCHOLU: turistika.cz klade chatu „900 metrů nad mořem", vlastní web
+    upřesňuje, že stojí „na východním úbočí vrcholku Ropička (918 m.n.m.)"
+    — 918 m je tedy vrchol, ne budova. Katastr: chata podle vlastního webu
+    stojí „na hranici 3 katasrálních území Morávka, Komorní Lhotka a Řeka"
+    (překlep v originále); obec podle kontaktní adresy Morávka 374
+    (kudyznudy.cz).
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 19
+overeniNocleh:
+  source: >-
+    UBYTOVÁNÍ JE JEN PRONÁJMEM CELÉHO OBJEKTU — jednotlivé lůžko si turista
+    nezamluví a próza to říká. Vlastní web (čteno 9. 8. 2026): „K pronájmu
+    slouží výhradně celá residence" s kapacitou „19 lůžek+3 přistýlky".
+    ROZPOR, přiznaný: kudyznudy.cz uvádí „Kapacita činí 30 lůžek." Zapsáno
+    nižší číslo pevných lůžek od provozovatele (konvence 27. 7. 2026).
+    Vybavení podle kudyznudy.cz: centrální krb, kuchyňská a společenská
+    místnost, herna, finská sauna pro 6 osob, přívalová sprcha a vířivka.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    OBSLUHA KOLEMJDOUCÍCH JE DOLOŽENÁ VÝSLOVNĚ, což je v korpusu vzácné.
+    Vlastní web, stránka pro turisty (čteno 9. 8. 2026): „Turistům nabízíme
+    občerstvení v bufetu s venkovním posezením, v zimě vyhřívaným."
+    Nezávisle kudyznudy.cz: „Za příznivého počasí je zde otevřený také
+    bufet." Nabídka podle vlastního webu: polévky (kyselica, česnekačka,
+    kulajda), smažený sýr, klobása, palačinky, guláš, pivo. Klíč zařazení je
+    tedy splněn bufetem — ubytování je jen pronájmem celku.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  mimo zimní sezónu obvykle o víkendech od 9.00; konec se na webu liší
+  (15.00 na titulní straně, 18.00 na stránce pro turisty)
+# sezona SE NEVYPLŇUJE: web říká jen, jak je otevřeno „mimo zimní sezonu
+# (prosinec, leden, únor)" — jestli a jak funguje bufet V zimě, neříká,
+# a domýšlet se to nebude.
+overeniProvoz:
+  source: >-
+    Vlastní web, titulní strana (čteno 9. 8. 2026): „Mimo zimní sezonu
+    (prosinec, leden, únor) máme otevřeno obvykle každý víkend sobota –
+    neděle od 09.00 – 15.00 hod"; stránka pro turisty uvádí „Sobota – neděle
+    od 09.00 – 18.00 hodin" (v tabulce 10.00–18.00). ROZPOR HODIN PŘIZNÁN
+    v poli otviraciDoba. Zimní režim bufetu web výslovně nepopisuje —
+    zmínka o „v zimě vyhřívaném" posezení naznačuje zimní provoz, ale
+    nepřímý doklad se nezapisuje.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+420602534635'
+  email: info@ropicka.cz
+  web: https://www.ropicka.cz/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1913
+overeniHistorie:
+  source: >-
+    ROK 1913 JE ROKEM PRVNÍ ÚTULNY — dnešní budova je z roku 1924, obojí
+    v milnících. Vlastní web, stránka historie (čteno 9. 8. 2026):
+    „V letech 1911–1913 vybudovalo PTT Beskid svou první útulnu na Ropičce"
+    a „Byla slavnostně otevřena za účasti asi 2000 lidí 6. června 1913."
+    Stavebníkem byl tedy POLSKÝ spolek — Polskie Towarzystwo Turystyczne
+    „Beskid", týž svět spolků, který v Beskydech stavěl proti
+    Beskidenvereinu a Pohorské jednotě Radhošť. Útulna „v noci ze 3. na
+    4. dubna 1918 do základů vyhořela" (shodně fm.denik.cz). Dnešní chatu
+    postavil KČT: fm.denik.cz — „Klub českých turistů (KČT), jehož odbor ze
+    Slezské Ostravy zde vybudoval útulnu podle návrhu architekta Čermáka
+    z Místku"; „Útulna, jenž dostala název Bezručova chata, byla slavnostně
+    otevřena 5. října 1924. Kapacita ubytování činila celkem 54 míst";
+    vlastní web k témuž — základní kámen 25. 5. 1924.
+    KDY PŘESNĚ SE Z CHATY STALA „RESIDENCE", ŽÁDNÝ PRAMEN NEDATUJE; jisté
+    je, že po sérii oprav od roku 2008. Vlastník: vlastní web — „Nyní je tak
+    Bezručova chata v soukromých rukách"; jméno vlastníka nenalezeno.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1913
+    udalost: >-
+      Polský spolek PTT Beskid otevřel 6. června za účasti asi dvou tisíc
+      lidí svou první útulnu na Ropičce; stavěla se od roku 1911.
+    zdroj: >-
+      vlastní web chaty, stránka historie (čteno 9. 8. 2026).
+  - rok: 1918
+    udalost: >-
+      Útulna v noci ze 3. na 4. dubna do základů vyhořela.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026); shodně fm.denik.cz — „V noci
+      z 3. na 4. dubna 1918 chata do základu vyhořela."
+  - rok: 1924
+    udalost: >-
+      Odbor KČT ze Slezské Ostravy postavil podle návrhu architekta Čermáka
+      z Místku novou chatu; základní kámen 25. května, slavnostní otevření
+      už 5. října. Dostala jméno Bezručova chata a měla 54 míst.
+    zdroj: >-
+      fm.denik.cz (čteno 9. 8. 2026); vlastní web k datům základního kamene
+      a otevření.
+  - rok: 1936
+    udalost: >-
+      Chata byla přestavěna v duchu meziválečných úprav beskydských chat.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „V tomto duchu byla upravena
+      v roce 1936 i Bezručova chata na Ropičce."
+  - rok: 2008
+    udalost: >-
+      Po letech chátrání pod různými nájemci začala ze soukromých prostředků
+      série oprav a nová éra chaty; roku 2019 při 95. výročí byla odhalena
+      pamětní deska s veršem Petra Bezruče.
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „V roce 2008, z titulu
+      srdečního a citového vztahu za pomoci ryze soukromých finančních
+      prostředků, začala celá série oprav".
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      V letech 1924 až zhruba 1945 se chata oficiálně jmenovala Bezručova —
+      stejně jako slavnější chata na Lysé hoře; obě stály v týchž horách
+      zároveň.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty a fm.denik.cz (čteno 9. 8. 2026); rozlišení obou
+      objektů drží data/_jmenovci.yaml.
+  - text: >-
+      První útulnu tu postavil polský turistický spolek PTT Beskid, druhou
+      český KČT — jedna hora, dvě spolkové éry.
+    kategorie: stari
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026); fm.denik.cz.
+  - text: >-
+      Po válce se v chatě vystřídali spolek Vzlet OKD, podnik Restaurace
+      a jídelny a nakonec Kancelářské stroje Brno.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026); shodně fm.denik.cz.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata na východním úbočí Ropičky, kterou roku 1913 založil polský spolek
+  PTT Beskid a po požáru roku 1924 znovu postavil KČT jako Bezručovu chatu.
+  Dnes je to soukromá residence pronajímaná vcelku — turistům ale slouží
+  bufet s venkovním posezením, v zimě vyhřívaným.
+text:
+  - >-
+    Residence Ropička stojí v devíti stech metrech na východním úbočí
+    vrcholu Ropička (918 m), na hranici tří katastrů — Morávky, Komorní
+    Lhotky a Řeky. Katalog ji vede postaru jako Chatu Ropička a starší
+    generace turistů ji zná i pod třetím jménem: Bezručova chata.
+  - >-
+    Historie je tu spolková a dvojjazyčná. První útulnu na Ropičce postavil
+    v letech 1911 až 1913 polský spolek PTT Beskid a otevřel ji 6. června
+    1913 za účasti asi dvou tisíc lidí. V noci ze 3. na 4. dubna 1918 do
+    základů vyhořela. Novou chatu postavil roku 1924 odbor KČT ze Slezské
+    Ostravy podle návrhu architekta Čermáka z Místku — základní kámen
+    v květnu, otevření už 5. října — a dal jí jméno Bezručova chata,
+    s padesáti čtyřmi místy. Přestavba přišla roku 1936.
+  - >-
+    Po válce se tu vystřídali Vzlet OKD, Restaurace a jídelny i Kancelářské
+    stroje Brno a přelom století chatu podle vlastního webu přivedl do
+    nejtěžší epochy. Obrat nastal roku 2008, kdy začala ze soukromých peněz
+    série oprav; roku 2019, při 95. výročí, byla odhalena pamětní deska
+    s veršem Petra Bezruče.
+  - >-
+    Dnešní režim je potřeba říct na rovinu: ubytování funguje výhradně
+    pronájmem celé residence — devatenáct lůžek a tři přistýlky, sauna,
+    vířivka — takže jednotlivé lůžko si tu turista nezamluví. Kolemjdoucím
+    ale slouží bufet s venkovním posezením, v zimě vyhřívaným: polévky,
+    smažený sýr, klobása, palačinky, guláš a pivo. Otevřeno bývá mimo zimní
+    sezónu obvykle o víkendech; konec otevírací doby uvádí web jednou 15.00
+    a jednou 18.00, a tak tu stojí obě čísla.
+  - >-
+    Chata leží na rozcestí červené a zelené značky: po červené se jde přes
+    Kotař na Prašivou (asi 4 km), po zelené dolů do Morávky, přes zelenou
+    a žlutou do Řeky. Je to týž hřeben, na kterém stojí publikovaný profil
+    chaty Prašivá — dva spolkové příběhy vedle sebe.
+  - >-
+    Údaje nesou vlastní web chaty, fm.denik.cz, kudyznudy.cz a turistika.cz;
+    GPS pochází z vlastního webu, protože v OpenStreetMap objekt pod dnešním
+    jménem neleží. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — GPS, historie 1911–2019, pronájem celku 19+3,
+      bufet pro turisty, otevírací doba, kontakty (načteno 9. 8. 2026)
+    url: https://www.ropicka.cz/
+  - popis: >-
+      fm.denik.cz, seriál Osudy chat v Beskydech — požár 1918, stavba KČT
+      1924 podle návrhu architekta Čermáka, jméno Bezručova chata, 54 míst,
+      pováleč[ní] správci (načteno 9. 8. 2026)
+    url: https://fm.denik.cz/zpravy_region/osudy-chat-v-beskydech-ropicka20080926.html
+  - popis: >-
+      kudyznudy.cz — adresa Morávka 374, kapacita 30 lůžek (odchylka),
+      vybavení, bufet za příznivého počasí (načteno 9. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/residence-ropicka-v-beskydech
+  - popis: >-
+      turistika.cz — chata 900 m n. m., rozcestí červené a zelené značky,
+      trasa na Malou Prašivou (načteno 9. 8. 2026)
+    url: https://www.turistika.cz/mista/ropicka-chata/detail
+interniPoznamky: >-
+  PRVNÍ PROFIL KORPUSU ZALOŽENÝ PŘÍMO Z KATALOGOVÉ MEZERY, bez OSM
+  kandidáta. Mezera byla vedena od 8. 8. 2026 v reportu katalog-pokryti
+  (Chata Ropička → Residence Ropička v KATALOG_PREJMENOVANI); rešerše
+  9. 8. 2026 dodala doklady a profil vznikl s GPS z vlastního webu.
+  Kdyby někdy dorazil OSM objekt, doplnit odkaz a případně zpřesnit GPS.
+
+  KLÍČ ZAŘAZENÍ SPLNĚN BUFETEM, NE UBYTOVÁNÍM — ubytování je pronájem
+  celku, tedy třída, kterou korpus jinak vyřazuje (Psotkova chata téhož
+  dne). Rozdíl dělá výslovně doložený bufet pro turisty; je to týž vzor
+  jako Rainerova chata (kiosek bez noclehu) — veřejná funkce rozhoduje.
+
+  JMENOVEC: alias „Bezručova chata" koliduje s publikovaným profilem
+  beskydy/bezrucova-chata (Lysá hora). Registr data/_jmenovci.yaml dvojici
+  vede preventivně od 8. 8. 2026 — dnes se preventivní záznam stal ostrým.
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: kapacita (19+3 vlastní web × 30
+  kudyznudy.cz); konec víkendové otevírací doby (15.00 × 18.00 v tabulce
+  10.00–18.00); telefon (vlastní web +420 602 534 635 × kudyznudy.cz
+  neúplné „+420 55 440 533").
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: datum přejmenování na
+  „Residence"; jméno soukromého vlastníka; zimní režim bufetu; kdy přesně
+  zaniklo jméno Bezručova chata (web říká jen „po válce" éru správců).
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

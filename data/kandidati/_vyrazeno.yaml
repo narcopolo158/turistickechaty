@@ -1535,3 +1535,142 @@ vyrazeno:
       rozhodnuto veřejnou nabídkou TANAP, vlastními weby objektů a měřením z
       GPS)
     checked: 2026-08-09
+
+  # ── VT-03, TŘETÍ PRŮCHOD (9. 8. 2026, večerní blok) — tenkých 11 záznamů.
+  # Ranní pravidlo znělo: tenký záznam (jen jméno + tag) se bez dokladu
+  # nevyřazuje. Doklad dodala cílená identifikační rešerše: šest objektů
+  # jsou doložené pronájmy/priváty, u pěti nenašla ŽÁDNOU veřejnou funkci
+  # (a nenalezení je tu po vyčerpané rešerši důvod k vyřazení, protože
+  # k povýšení by stejně nebylo co doložit — důvod je u každého zapsaný,
+  # aby případný nový doklad šel posoudit proti tomu, co se hledalo).
+  - osm: https://www.openstreetmap.org/way/328987326
+    slug: vysoke-tatry/alpina
+    duvod: >-
+      Chata k pronájmu — identifikována jako Chata Alpina 1 v hotelové
+      oblasti Staré Lesné (tatrytravel.sk: „Chata Alpina 1 sa nachádza v
+      hotelovej oblasti Starej Lesnej“; 9 lůžek ve 3 pokojích, vlastní
+      kuchyň, rezervace přes Booking). Bez občerstvení pro veřejnost.
+      Sesterská Alpina 1 a Alpina 2 byly vyřazeny už v prvním průchodu VT-03;
+      tahle třetí entita je táž skupina objektů.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/328987334
+    slug: vysoke-tatry/kamila
+    duvod: >-
+      Cílená rešerše nenašla ŽÁDNOU veřejnou funkci. Jmenovkyně nesedí
+      polohou (chatakamila.com je v Horní Lehotě v Nízkých Tatrách, Vila
+      Kamila v Tatranské Štrbě); pro objekt u Staré Lesné neexistuje inzerát
+      ani web. Stojí těsně vedle pronajímané Alpiny 1 v téže chatové skupině.
+      Nenalezení není vyvrácení, ale kandidát bez jediného dokladu veřejné
+      funkce se nedá povýšit — kdyby se objevil doklad, DATA-01 ho znovu
+      nezaloží, a tak je tu zapsané PROČ byl vyřazen.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4763914232
+    slug: vysoke-tatry/chata
+    duvod: >-
+      Generické jméno „Chata“ (tourism=guest_house) východně od Tatranské
+      Kotliny; kombinace s Tatranskou Kotlinou, Kardolínou i Spišskou Belou
+      nevrací žádný objekt, který by šel k bodu přiřadit. Bez adresy, webu a
+      dalších tagů se nedá identifikovat, natož doložit veřejná funkce.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/7029697141
+    slug: vysoke-tatry/chata-liptak
+    duvod: >-
+      Privát hostelového typu v obci — identifikován jako Chata Liptak, Ždiar
+      468 (ne Tatranská Kotlina): zrcadlo Bookingu uvádí „self-catering
+      facilities“, hosté si „prepare their own meals“, 6 pokojů. Ubytování v
+      soukromí bez restaurace, mimo klíč zařazení.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4286115400
+    slug: vysoke-tatry/chata-pleso
+    duvod: >-
+      Chata k pronájmu jako celek — identifikována jako Holiday House Pleso
+      provozovaný majiteli Penzionu Pleso (penzionpleso.sk: „Stylish chalet
+      with a fireplace surrounded by quiet forest“, poloha „Tatranský
+      Lieskovec cottage area“). Pronájem celého domu pro 11 osob, táž chatová
+      osada jako vyřazená Psotkova chata.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/1510043578
+    slug: vysoke-tatry/chata-stanislava
+    duvod: >-
+      Malý privát v obci — identifikována jako Chata Stanislava, Stará Lesná
+      426 (trip.com: „Number of Rooms: 1“). Drobné ubytování přes rezervační
+      portály, bez veřejné funkce.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13116973601
+    slug: vysoke-tatry/chata-u-hagrida
+    duvod: >-
+      Cílená rešerše nenašla žádnou komerční stopu — všechny výsledky vedou
+      na „Hagrid's cottage“ v Anglii, která s bodem nesouvisí. Bod leží v
+      chatové osadě Tatranský Lieskovec; recesistické jméno soukromé chaty.
+      Bez jediného dokladu veřejné funkce se kandidát nedá povýšit.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12830814859
+    slug: vysoke-tatry/chata-veronika
+    duvod: >-
+      Chata k pronájmu jako celek — identifikována jako Chata Veronika v
+      chatové oblasti obce VAŽEC (ne Štrba): domalenka.sk uvádí GPS „N +49°
+      5′ 47.26″, E +20° 1′ 9.29″“ v přesné shodě s bodem, „v chatovej oblasti
+      obce Važec“, pronájem celku pro 9 osob. Registr _jmenovci.yaml (dvojice
+      s jesenickou Veronikou) tím dostává doloženou obec — kolize trvá, ale
+      rozlišovač je hotový.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/982053911
+    slug: vysoke-tatry/polana
+    duvod: >-
+      Cílená rešerše nenašla žádnou veřejnou funkci. Bod leží ~1 km SV od
+      Kežmarských Žľabů v lese; všichni dohledatelní jmenovci (Penzión Poľana
+      v Horném Smokovci, Chata Poľana Jezersko, Chata Poľana Čierne, Horský
+      hotel Poľana) jsou jinde. „Poľana“ je obecné pomístní jméno pro paseku
+      — nejspíš soukromá či lesní chata. Nezaměňovat s Penziónem Poľana ve
+      Smokovci.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4365938906
+    slug: vysoke-tatry/tater-chata
+    duvod: >-
+      Apartmánový areál u Zakopaného — identifikován jako Tater Chata, ul.
+      Strążyska 36B (taterchata.pl: „Stylowa, góralska chata położona na
+      śródleśnej polanie“; „w pełni wyposażone… apartamenty 2, 4, a nawet
+      6-osobowe“ plus domky). OSM tag tourism=hotel je nadsazený; bez
+      restaurace, pronájmy apartmánů, mimo klíč zařazení.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8972275520
+    slug: vysoke-tatry/valek
+    duvod: >-
+      Cílená rešerše nenašla žádnou komerční stopu — „chata Valek“ neexistuje
+      na žádném rezervačním portálu, bod leží v chatové lokalitě mezi
+      Mengusovci a Štôlou a jméno odpovídá příjmení. Nejspíš soukromá rodinná
+      chata zapsaná do OSM podle cedule.
+    rozhodl: >-
+      Claude (9. 8. 2026, třetí průchod VT-03 — rozhodnuto cílenou
+      identifikační rešerší nad všemi jedenácti tenkými záznamy najednou)
+    checked: 2026-08-09

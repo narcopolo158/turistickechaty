@@ -1,0 +1,180 @@
+# Chata Marguška — devátý publikovaný profil Beskyd (9. 8. 2026). Třetí
+# a poslední profil vzniklý přímo z katalogové mezery v jednom dni (po
+# Ropičce a Równici); katalog vede „Chata Marguška", dnešní jméno je
+# „Chata Marguška – U Fera". GPS z inzertního listu zlavadna.sk, OSM
+# podklad chybí.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Chata Marguška
+slug: chata-marguska
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: beskydy
+aliasy:
+  - nazev: Chata Marguška – U Fera
+    poznamka: dnešní obchodní jméno po zakladateli
+  - nazev: Bufet Marguška
+    poznamka: bufetová část provozu, starší jméno facebookové stránky
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.415121
+lng: 18.920534
+obec: Oščadnica
+# vyska SE NEVYPLŇUJE: žádný pramen nadmořskou výšku neuvádí.
+overeniLokace:
+  source: >-
+    GPS: zlavadna.sk (čteno 9. 8. 2026) — „49.415121, 18.920534"; OSM
+    podklad chybí, takže tu není odkaz na OSM a souřadnice nese inzertní
+    list. Poloha: lokalita Marguška ve středisku Snowparadise Veľká Rača,
+    obec Oščadnica, Kysucké Beskydy. Vlastní web (čteno 9. 8. 2026):
+    „Chata sa nachádza priamo na zjazdovke v známom a turistami
+    vyhľadávanom lyžiarskom stredisku Snow Paradise Veľká Rača Oščadnica.";
+    snowparadise.sk — „priamo v stredisku, v lokalite Marguška". Adresa
+    Oščadnica 2111. Nadmořskou výšku neuvádí žádný pramen.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    UBYTOVÁNÍ JE PRONÁJMEM CELÉ CHATY a přesný počet lůžek žádný pramen
+    neuvádí — proto tu není kapacita. Vlastní web (čteno 9. 8. 2026)
+    popisuje čtyři ložnice („Bedroom no. 1"–„Bedroom no. 4", manželské
+    postele a rozkládací gauč, sdílené koupelny); ulovubytovanie.sk —
+    „Táto horská chata má 4 spálne, TV s plochou obrazovkou a kuchyňu.";
+    snowparadise.sk k vybavení kuchyně. Jednotlivé lůžko si turista
+    nezamluví.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Klíč zařazení tu nese BUFET NA SJEZDOVCE, který funguje podle vlastního
+    webu skoro dvacet let: „Náš bufet a teraz aj chata nesie meno po jeho
+    zakladateľovi a majiteľovi pánovi Ferovi." a (v anglické verzi) „Thanks
+    to its friendly approach and specialties, which are an integral part of
+    the buffet menu, we have been enjoying the popularity of our guests for
+    almost 20 years." Specialitou je vlastní „Margušovka". VÝSLOVNÁ VĚTA
+    O OBSLUZE NEUBYTOVANÝCH CHYBÍ — u bufetu na sjezdovce plyne z povahy
+    provozu, ale nezapisuje se; stejný stupeň dokladu jako u tatranských
+    chat.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: >-
+  bufet jen v zimní sezóně (snowparadise.sk: „Mimo zimnej sezóny
+  zatvorené"); pronájem chaty celoročnost nedoloženu
+overeniProvoz:
+  source: >-
+    snowparadise.sk (čteno 9. 8. 2026) uvádí u bufetu „Mimo zimnej sezóny
+    zatvorené" — bufet je tedy SEZÓNNÍ, vázaný na lyžařský provoz střediska
+    Veľká Rača. Otevírací hodiny neuvádí žádný pramen. Jestli se chata
+    pronajímá i v létě, prameny výslovně neříkají.
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+421948040017'
+  email: ubytovanie@chataufera.sk
+  web: https://www.chataufera.sk/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# rokVzniku SE NEVYPLŇUJE: vlastní web říká jen „takmer 20 rokov" existence
+# bufetu, žádný pramen neuvádí rok stavby chaty ani založení bufetu.
+overeniHistorie:
+  source: >-
+    Historie je tu krátká a rodinná: bufet i chata nesou jméno zakladatele
+    a majitele, pana Fera (vlastní web, čteno 9. 8. 2026 — „Náš bufet
+    a teraz aj chata nesie meno po jeho zakladateľovi a majiteľovi pánovi
+    Ferovi."), a bufet podle téhož pramene funguje „takmer 20 rokov".
+    Přesný rok vzniku bufetu ani chaty žádný pramen neuvádí, a tak
+    rokVzniku zůstává prázdný. Jméno Marguška je jméno lokality a sjezdovky,
+    po které se jmenuje i chata.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Specialitou bufetu je vlastní nápoj Margušovka, pojmenovaný po
+      lokalitě.
+    kategorie: gastro
+    zdroj: >-
+      vlastní web chaty (čteno 9. 8. 2026) — „We believe that even in the
+      coming winter we will all meet on Marguška with our Margušovka or
+      other goodness."
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Rodinný bufet s chatou přímo na sjezdovce Marguška ve středisku
+  Snowparadise Veľká Rača nad Oščadnicí. Bufet nese jméno zakladatele, pana
+  Fera, a funguje skoro dvacet let — jen v zimní sezóně; chata se pronajímá
+  vcelku.
+text:
+  - >-
+    Chata Marguška stojí přímo na sjezdovce Marguška ve středisku
+    Snowparadise Veľká Rača nad Oščadnicí, v Kysuckých Beskydech. Katalog ji
+    vede jako Chatu Marguška; dnes se celý provoz jmenuje po svém
+    zakladateli a majiteli — Chata Marguška U Fera.
+  - >-
+    Proti ostatním beskydským profilům je to příběh bez velké historie:
+    žádný spolek, žádný požár, jen bufet, který pan Fero provozuje skoro dvacet
+    let a jehož specialitou je vlastní nápoj Margušovka. K bufetu časem
+    přibyla chata se čtyřmi ložnicemi, která se pronajímá vcelku — jednotlivé
+    lůžko si tu turista nezamluví.
+  - >-
+    Na rovinu k provozu: bufet je podle střediska mimo zimní sezónu zavřený,
+    takže tohle je zimní zastávka pro lyžaře a skialpinisty, ne celoroční
+    chata na hřebeni. Otevírací hodiny prameny neuvádějí a nadmořskou výšku
+    taky ne. Hřeben Veľké Rače se značenými trasami je odsud kousek — ale
+    jestli k chatě vede značka, žádný pramen neříká, a tak to netvrdíme.
+  - >-
+    Údaje nesou vlastní web chataufera.sk, snowparadise.sk, zlavadna.sk
+    a ulovubytovanie.sk; GPS pochází z inzertního listu, protože objekt
+    nemá podklad v OpenStreetMap. Redakce nic neověřila vlastním dotazem
+    ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — jméno po zakladateli panu Ferovi, bufet „takmer
+      20 rokov", čtyři ložnice, poloha na sjezdovce, kontakty
+      (načteno 9. 8. 2026)
+    url: https://www.chataufera.sk/
+  - popis: >-
+      snowparadise.sk — poloha v lokalitě Marguška, vybavení kuchyně,
+      „Mimo zimnej sezóny zatvorené" (načteno 9. 8. 2026)
+    url: https://snowparadise.sk/produkt/chata-u-fera/
+  - popis: >-
+      zlavadna.sk — GPS 49.415121, 18.920534, adresa, telefon, e-mail
+      bufetu (načteno 9. 8. 2026)
+    url: https://www.zlavadna.sk/partner/chata-marguska-oscadnica
+  - popis: >-
+      ulovubytovanie.sk — čtyři ložnice, TV, kuchyň (načteno 9. 8. 2026)
+    url: https://www.ulovubytovanie.sk/slovensko/h/13435/chata-marguska-u-fera
+interniPoznamky: >-
+  TŘETÍ PROFIL Z KATALOGOVÉ MEZERY V JEDNOM DNI — a NEJSLABŠÍ KLÍČ z celé
+  trojice, což je tu poctivě rozepsané. Klíč zařazení nese bufet: veřejné
+  občerstvení doložené vlastním webem („takmer 20 rokov"), ale (1) jen
+  v zimní sezóně, (2) na sjezdovce, ne na doložené značené trase, (3)
+  ubytování je pronájem celku. Pro povýšení mluví, že objekt vede KATALOG —
+  průvodcův vodič ho považuje za chatu klíče — a že přesně tahle třída
+  (bufet u sjezdovky s pronájmem) prošla u Ropičky. Proti mluví, že bez
+  katalogu by tenhle objekt triáž nejspíš vyřadila jako pronájem s bufetem.
+  KDYBY MICHAL ROZHODL OPAČNĚ, správný krok je přesun do KATALOG_MIMO_KLIC
+  v scripts/kontrola/katalog-pokryti.ts (vzor Wellness hotel Bahenec)
+  a smazání tohohle profilu — mezera katalogu tím zůstane vysvětlená.
+
+  ŽÁDNÁ HISTORICKÁ „CHATA MARGUŠKA" NENALEZENA: rešerše cíleně hledala
+  starší turistickou chatu toho jména (mj. u Velkého Polomu) a nenašla
+  nic — jediný nositel jména je tenhle provoz v Oščadnici. Nenalezení není
+  vyvrácení, ale katalogová položka se skoro jistě vztahuje právě sem.
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: nadmořská výška; rok vzniku
+  (jen „takmer 20 rokov" bufetu); kapacita lůžek číslem; otevírací hodiny
+  bufetu; letní provoz; značená trasa k objektu; IČO provozovatele.
+  Fotku dodá běh DATA-02 (pokud objekt najde), výškový profil DATA-06.

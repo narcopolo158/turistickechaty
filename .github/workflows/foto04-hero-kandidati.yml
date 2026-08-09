@@ -1,0 +1,81 @@
+# FOTO-04: kandidáti na hero fotku pohoří z Wikimedia Commons — sandbox
+# denních sessions na Commons nedosáhne (proxy), GitHub Actions ano. Tituly
+# souborů vybírá redakce předem (WebSearch nad Commons), běh je stáhne jako
+# náhledy (max 2400 px) přes TVRDÉ licenční síto DATA-02 a commitne do
+# data/kandidati/hero-foto/<oblast>/ i s _meta.yaml pro atribuci. Definitivní
+# výběr, ořez a zápis heroFoto do data/oblasti/<slug>.yaml dělá redakce
+# lokálně, kde si soubory může prohlédnout.
+name: 'FOTO-04: hero kandidáti z Commons'
+
+on:
+  workflow_dispatch:
+    inputs:
+      oblast:
+        description: 'Oblast (slug dle scripts/oblasti.ts): krkonose | jizerske-hory | jestedsky-hrbet | sumava | beskydy | jeseniky | javorniky-vsetinske-vrchy | mala-fatra | oravska-magura | zapadne-tatry | vysoke-tatry | nizke-tatry | krusne-hory | orlicke-hory | velka-fatra | slovensky-raj | luzicke-hory | bieszczady'
+        required: false
+        default: 'nizke-tatry'
+      soubory:
+        description: 'Tituly na Commons oddělené svislítkem, každý začíná „File:" — pro nizke-tatry nech výchozí (vybráno redakcí 9. 8. 2026)'
+        required: false
+        default: 'File:Nizke Tatry, hiking the main ridge - Chopok (left) ^ Ďumbier (right) - panoramio.jpg|File:Nízké Tatry, Chopok (7).JPG|File:Nízké Tatry, Chopok, chata a vrchol (5).JPG|File:Pohled na zimni Chopok.jpg|File:Low tatra dumbier.jpg|File:Chopok - Jasná Ski Resort (3).JPG'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: foto04-hero
+  cancel-in-progress: false
+
+jobs:
+  kandidati:
+    name: Commons → hero kandidáti (data/kandidati/hero-foto)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Aktualizovat main před generováním
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main
+
+      - name: Dotaz na Commons + stažení náhledů přes licenční síto
+        # Explicitní shell: bash zapíná pipefail — pád skriptu se nesmí
+        # ztratit v pipe přes tee (lekce z prvního běhu DATA-01).
+        shell: bash
+        env:
+          OBLAST_INPUT: ${{ inputs.oblast }}
+          SOUBORY_INPUT: ${{ inputs.soubory }}
+        run: |
+          npx tsx scripts/foto04-hero-kandidati.ts --oblast "${OBLAST_INPUT:-nizke-tatry}" --soubory "${SOUBORY_INPUT}" | tee report.txt
+          echo '## FOTO-04 — výstup běhu' >> "$GITHUB_STEP_SUMMARY"
+          cat report.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit kandidátů do main
+        shell: bash
+        env:
+          OBLAST_INPUT: ${{ inputs.oblast }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/kandidati/hero-foto
+          if git diff --cached --quiet; then
+            echo 'Žádná změna hero kandidátů — nic ke commitu.'
+            exit 0
+          fi
+          git commit -m "data: hero kandidáti z Commons pro ${OBLAST_INPUT:-nizke-tatry} (FOTO-04, z Actions)" -m 'Náhledy max 2400 px po licenčním sítu CC0/CC BY/CC BY-SA/PD + _meta.yaml pro atribuci. Výběr a ořez hero dělá redakce lokálně.'
+          for pokus in 1 2; do
+            git pull --rebase origin main && git push origin main && exit 0
+            echo "push se nepovedl (pokus ${pokus}) — zkouším znovu za 10 s"
+            sleep 10
+          done
+          echo '::error::Nepodařilo se pushnout ani na druhý pokus — spusť workflow znovu.'
+          exit 1

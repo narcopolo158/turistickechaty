@@ -1,0 +1,284 @@
+# Gościniec Równica — osmý publikovaný profil Beskyd (9. 8. 2026). Vznikl
+# PŘÍMO Z KATALOGOVÉ MEZERY (katalog vede postaru „Schronisko na Równicy");
+# běh DATA-01 objekt pod dnešním jménem nepřinesl. Bez GPS — žádný pramen
+# souřadnice neuvádí a OSM podklad chybí; doplní ruční dohledávka DATA-31.
+# Vše verified: false — redakce nic neověřila vlastním dotazem ani návštěvou.
+
+nazev: Gościniec Równica
+slug: gosciniec-rownica
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: beskydy
+aliasy:
+  - nazev: Schronisko na Równicy
+    poznamka: katalogové a dlouholeté jméno; schroniskem PTTK bylo do 2016
+  - nazev: Schronisko PTTK im. Edmunda Kaźmierczaka
+    poznamka: oficiální název z let 1989–2016
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# lat/lng SE NEVYPLŇUJÍ: žádný nalezený pramen souřadnice neuvádí a objekt
+# nemá OSM podklad. Doplní ruční dohledávka (DATA-31).
+vyska: 758
+obec: Ustroń
+overeniLokace:
+  source: >-
+    Poloha: polana pod vrcholem Równica ve Slezských Beskydech, adresa
+    „Równica 27, 43-450 Ustroń" (vlastní web, čteno 9. 8. 2026). VÝŠKA
+    758 m JE VÝŠKA OBJEKTU, NE VRCHOLU: korona-gor-polski.pl — „Wysokość:
+    758 m n.p.m."; beskidinfo.pl k témuž a k vrcholu — „jej wysokość
+    w różnych opracowaniach bywa podawana jako 884,6 m n.p.m. lub
+    zaokrąglane 885 m n.p.m." GPS neuvádí žádný pramen a bez OSM podkladu
+    není odkud vzít — pole jsou prázdná a doplní je DATA-31.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 37
+overeniNocleh:
+  source: >-
+    slaskie.travel (čteno 9. 8. 2026): „Gościniec Równica dysponuje 37
+    miejscami w pokojach dwu - i wieloosobowych oraz domek czteroosobowy."
+    (interpunkce dle originálu); korona-gor-polski.pl potvrzuje pokoje pro
+    2 až 6 osob a samostatný domek. Vlastní web kapacitu číslem neuvádí.
+    Check-in podle vlastního webu 14.00–22.00, check-out 9.00–11.00.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 9. 8. 2026): „Nasza restauracja emanuje wyjątkowym
+    charakterem…" a „Nasze dania są przygotowywane z najświeższych
+    składników w naszej własnej kuchni, bazując na tradycyjnych
+    recepturach."; slaskie.travel doplňuje kapacitu — restaurace pro 90
+    osob a TV sál s dětským koutkem. VÝSLOVNÁ VĚTA O NEUBYTOVANÝCH CHYBÍ
+    i tady; u objektu na Głównym Szlaku Beskidzkim s restaurací pro 90 lidí
+    při 37 lůžkách je čtení jasné, ale nezapisuje se.
+  verified: false
+  checked: '2026-08-09'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: denně od 9.00 (konec otevírací doby restaurace prameny neuvádějí)
+# sezona SE NEVYPLŇUJE: výslovné „celoročně" žádný pramen nemá; rozvrh
+# „pondělí–neděle" ho naznačuje, ale nepřímý doklad se nezapisuje.
+overeniProvoz:
+  source: >-
+    Vlastní web, titulní strana (čteno 9. 8. 2026): „PONIEDZIAŁEK –
+    NIEDZIELA od 9:00. ZAMELDOWANIE 14:00 – 22:00. WYMELDOWANIE 9:00 –
+    11:00". Konec otevírací doby restaurace neuvádí žádný pramen. V roce
+    2024 skončila dvouletá modernizace („W 2024 roku zakończyła się 2
+    letnia modernizacja.").
+  verified: false
+  checked: '2026-08-09'
+
+kontakty:
+  telefon: '+48534232530'
+  email: rownicagosciniec@gmail.com
+  web: https://gosciniecrownica-schronisko.pl/
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1923
+overeniHistorie:
+  source: >-
+    Vlastní web, stránka historie (čteno 9. 8. 2026): „Pierwsza budowla
+    powstała w 1923, była to niewielka konstrukcja drewniana";
+    korona-gor-polski.pl upřesňuje otevření „w lipcu 1923 roku" a stavbu
+    popisuje jako malou dřevěnou konstrukci na kamenné podezdívce;
+    beskidinfo.pl — vznik „z inicjatywy lokalnych środowisk turystycznych".
+    Roku 1926 objekt koupilo Polskie Towarzystwo Tatrzańskie (vlastní web:
+    „W 1926 obiekt został odkupiony przez Polskie Towarzystwo
+    Tatrzańskie"; korona-gor-polski.pl jmenuje Oddział Górnośląski PTT)
+    a po přestavbě ho oficiálně otevřelo roku 1928. Prvním nájemcem byl
+    Leon Zatloukal, 1937 Karol Kroker, 1939 Rudolf Hulanik (vlastní web).
+    ROK VZNIKU 1923 je rok první stavby a prvního provozu pro turisty —
+    otevření 1928 je otevření přestavěného schroniska PTT a stojí
+    v milnících.
+  verified: false
+  checked: '2026-08-09'
+
+milniky:
+  - rok: 1923
+    udalost: >-
+      Z podnětu místních turistických kruhů vyrostla na polaně pod Równicou
+      malá dřevěná stavba na kamenné podezdívce; turistům začala sloužit
+      v červenci.
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „Pierwsza budowla powstała w 1923";
+      korona-gor-polski.pl — otevření „w lipcu 1923 roku"; beskidinfo.pl
+      k iniciativě místních.
+  - rok: 1926
+    udalost: >-
+      Objekt odkoupilo Polskie Towarzystwo Tatrzańskie — hornoslezský odbor
+      — a po přestavbě ho roku 1928 oficiálně otevřelo jako schronisko;
+      kapacita později vzrostla až na 120 míst.
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026); korona-gor-polski.pl — „W 1926 roku
+      schronisko nabył Oddział Górnośląski Polskiego Towarzystwa
+      Tatrzańskiego" a „zwiększono liczbę miejsc noclegowych do 120".
+  - rok: 1939
+    udalost: >-
+      V den vypuknutí druhé světové války, 1. září, dorazila ke schronisku
+      jednotka polských ženistů; roku 1942 Němci na střeše zřídili
+      pozorovatelnu Luftwaffe.
+    zdroj: >-
+      vlastní web, stránka historie (čteno 9. 8. 2026) — „W dniu wybuchu II
+      wojny światowej, 1 września 1939, do schroniska dotarła jednostka
+      polskich saperów"; „W 1942 na dachu schroniska zainstalowano
+      posterunek obserwacyjny Luftwaffe".
+  - rok: 1968
+    udalost: >-
+      Skončila generální oprava probíhající od roku 1966.
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „W latach 1966–1968 obiekt poddano
+      gruntownemu remontowi".
+  - rok: 1989
+    udalost: >-
+      Schronisko dostalo jméno Edmunda Kaźmierczaka.
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „W 1989 schronisku nadano imię
+      Edmunda Kaźmierczaka".
+  - rok: 2016
+    udalost: >-
+      Objekt byl vyškrtnut ze seznamu schronisk PTTK a změnil status na
+      gościniec; majetkově zůstal ve struktuře PTTK.
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „W 2016 obiekt został skreślony
+      z listy schronisk PTTK i zmienił swój status na gościniec";
+      beskidinfo.pl datuje rozhodnutí na březen 2016;
+      schroniska-pttk.com.pl vede objekt v portfoliu Schroniska i Hotele
+      PTTK „Karpaty" Sp. z o.o.
+  - rok: 2024
+    udalost: >-
+      Skončila dvouletá modernizace.
+    zdroj: >-
+      vlastní web (čteno 9. 8. 2026) — „W 2024 roku zakończyła się 2 letnia
+      modernizacja."
+
+# ── Zajímavosti ───────────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Za okupace sloužila střecha schroniska jako pozorovatelna Luftwaffe.
+    kategorie: jine
+    zdroj: >-
+      vlastní web, stránka historie (čteno 9. 8. 2026).
+  - text: >-
+      Červená značka přes Równicu je úsekem Głównego Szlaku Beskidzkiego,
+      nejdelší značené trasy polských hor.
+    kategorie: jine
+    zdroj: >-
+      beskidinfo.pl (čteno 9. 8. 2026) — červená „jest fragmentem Głównego
+      Szlaku Beskidzkiego".
+  - text: >-
+      V okolí je lezecká stěna, lanový park, paintball a Leśny Park
+      Niespodzianek — na Równicu vede i silnice, takže je to jeden
+      z nejměstštěji dostupných hřebenů Slezských Beskyd.
+    kategorie: jine
+    zdroj: >-
+      slaskie.travel (čteno 9. 8. 2026) — „W pobliżu Gościńca, ścianka
+      wspinaczkowa, park linowy, paintball, Leśny Park Niespodzianek."
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bývalé schronisko PTTK na polaně pod Równicou nad Ustroniem, s kořeny
+  v roce 1923 a restaurací pro devadesát lidí. Od roku 2016 už není na
+  seznamu schronisk a jmenuje se gościniec; leží na Głównym Szlaku
+  Beskidzkim a roku 2024 dokončilo dvouletou modernizaci.
+text:
+  - >-
+    Gościniec Równica stojí v 758 metrech na polaně pod vrcholem Równica
+    (884,6 m — prameny zaokrouhlují i na 885) nad Ustroniem ve Slezských
+    Beskydech. Katalog ho vede postaru jako Schronisko na Równicy — a je to
+    dobrá ukázka toho, jak se objekty přejmenovávají rychleji, než katalogy
+    stíhají.
+  - >-
+    První malou dřevěnou stavbu na kamenné podezdívce tu z podnětu místních
+    turistických kruhů otevřeli v červenci 1923. Roku 1926 ji koupil
+    hornoslezský odbor Polského Towarzystwa Tatrzańského, přestavěl ji
+    a roku 1928 oficiálně otevřel jako schronisko; kapacita časem vzrostla
+    až na sto dvacet míst. Prvního září 1939 ke schronisku dorazila
+    jednotka polských ženistů a roku 1942 si Němci na střeše zřídili
+    pozorovatelnu Luftwaffe. Po generální opravě v letech 1966 až 1968
+    dostalo schronisko roku 1989 jméno turistického činovníka Edmunda
+    Kaźmierczaka.
+  - >-
+    Zlom přišel v březnu 2016: objekt byl vyškrtnut ze seznamu schronisk
+    PTTK a změnil status na gościniec — hospodu s noclehem — i když
+    majetkově zůstal ve struktuře PTTK, ve společnosti Schroniska i Hotele
+    PTTK „Karpaty". V letech 2022 až 2024 prošel modernizací.
+  - >-
+    Dnes tu je 37 lůžek ve dvou- a vícelůžkových pokojích plus čtyřlůžkový
+    domek a restaurace pro devadesát lidí s vlastní kuchyní na tradičních
+    recepturách. Otevřeno je denně od devíti; kdy se zavírá, prameny
+    neuvádějí. Že restaurace slouží i kolemjdoucím, nikdo nenapsal doslova
+    — ale devadesát míst u stolu při sedmatřiceti lůžkách na Głównym Szlaku
+    Beskidzkim mluví samo.
+  - >-
+    Chodí se sem po červené z centra Ustroně (prameny uvádějí 1:40 i 2
+    hodiny — obě čísla tu stojí), po zelené z Brenné za dvě hodiny pět
+    minut, po žluté ze Skoczowa za čtyři hodiny dvacet a po modré od Trzech
+    Kopců Wiślańských za tři hodiny. Červená je úsekem Głównego Szlaku
+    Beskidzkiego. Na Równicu vede i silnice, takže okolí doplňují lezecká
+    stěna, lanový park a Leśny Park Niespodzianek.
+  - >-
+    Údaje nesou vlastní web objektu, schroniska-pttk.com.pl,
+    korona-gor-polski.pl, slaskie.travel a beskidinfo.pl. GPS zatím chybí —
+    žádný pramen souřadnice neuvádí a objekt nemá podklad v OpenStreetMap;
+    doplní je ruční dohledávka. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web objektu — adresa Równica 27, historie 1923–2016,
+      restaurace, provozní časy, modernizace 2024, kontakty
+      (načteno 9. 8. 2026)
+    url: https://gosciniecrownica-schronisko.pl/
+  - popis: >-
+      korona-gor-polski.pl — výška 758 m, otevření v červenci 1923, koupě
+      Oddziałem Górnośląskim PTT 1926, kapacita až 120 míst, časy tras
+      (načteno 9. 8. 2026)
+    url: https://korona-gor-polski.pl/schronisko/schronisko-pttk-na-rownicy/
+  - popis: >-
+      slaskie.travel — 37 lůžek a čtyřlůžkový domek, restaurace pro 90
+      osob, okolní atrakce (načteno 9. 8. 2026)
+    url: https://slaskie.travel/accommodation/19991/schronisko-gorskie-pttk-rownica
+  - popis: >-
+      beskidinfo.pl — výšky polany a vrcholu, vyškrtnutí ze seznamu
+      schronisk v březnu 2016, Główny Szlak Beskidzki (načteno 9. 8. 2026)
+    url: https://beskidinfo.pl/schronisko-na-rownicy-beskidzki-klasyk-nad-ustroniem-ktory-wciaga-od-pierwszego-wejscia/
+  - popis: >-
+      schroniska-pttk.com.pl — objekt v portfoliu Schroniska i Hotele PTTK
+      „Karpaty" Sp. z o.o., čas z Ustroně 2 h (odchylka)
+      (načteno 9. 8. 2026)
+    url: https://schroniska-pttk.com.pl/gosciniec-pttk-na-rownicy/
+interniPoznamky: >-
+  DRUHÝ PROFIL ZALOŽENÝ PŘÍMO Z KATALOGOVÉ MEZERY (po Residence Ropička,
+  týž den). Katalog vede „Schronisko na Równicy", mapování na dnešní jméno
+  drží KATALOG_PREJMENOVANI.
+
+  BEZ GPS — a je to přiznané v datech i v próze. Žádný pramen souřadnice
+  neuvádí, OSM podklad chybí (DATA-01 objekt nepřinesl, nejspíš proto, že
+  v OSM nese jiné jméno nebo tag). Mechanismus profilů bez GPS existuje od
+  krkonošských profilů z katalogu známek; ruční dohledávka DATA-31 GPS
+  doplní.
+
+  STATUSOVÁ ZMĚNA 2016 JE TU DŮLEŽITĚJŠÍ NEŽ JMÉNO: „gościniec" není jen
+  přejmenování, ale vyškrtnutí ze seznamu schronisk PTTK — týž vzor jako
+  Chatka Puchatka v Bieszczadech (od 2017 „schron turystyczny"). Pro
+  průvodce to znamená: katalogová označení „schronisko PTTK" stárnou
+  a stojí za systematickou revizi (viz backlog).
+
+  ROZPORY, KTERÉ ZŮSTÁVAJÍ OTEVŘENÉ: čas z Ustroně (1:40 korona ×
+  2 h schroniska-pttk.com.pl); e-mail (rownicagosciniec@gmail.com na
+  vlastním webu × gosciniecrownica@gmail.com na podstránce a u PTTK ×
+  gosciniec.rownica@gmail.com na slaskie.travel — zapsán ten z titulní
+  strany vlastního webu); telefon v jedné extrakci „534 232 540" (nejspíš
+  přepis).
+
+  NEDOLOŽENO, a nenalezení není vyvrácení: GPS; konec otevírací doby;
+  jméno nájemce; výslovná věta o obsluze neubytovaných; kapacita
+  restaurace z vlastního webu (90 nese slaskie.travel). Polská Wikipedie
+  byla nedostupná (cache-only proxy).
+  Fotku dodá běh DATA-02, výškový profil přístupů DATA-06.

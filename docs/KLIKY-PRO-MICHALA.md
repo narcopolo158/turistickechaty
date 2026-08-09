@@ -67,7 +67,36 @@ Co dělat po běhu: nic, další session si výstup přebere, projede triáží
 a začne povyšovat. V summary běhu je report — kdyby tam bylo nula objektů
 nebo pád, stačí to zmínit.
 
-## 2. DATA-06 výšky přístupových tras — Šumava
+## 2. FOTO-04 hero Nízkých Tater z Wikimedia Commons — NOVÉ (9. 8. 2026)
+
+| workflow | políčka |
+|---|---|
+| **FOTO-04: hero kandidáti z Commons** | obě nech na výchozích hodnotách |
+
+Náhrada za fotku ze slovakia.travel, kterou právní podmínky portálu
+nedovolují použít (doklad v `docs/FOTKY-ZDROJE-A-LICENCE.md`, odd. 4d).
+Šest titulů z Commons (hřebenovka s Chopkom a Ďumbierom, zimní Chopok,
+Jasná…) je předvyplněných ve výchozí hodnotě políčka `soubory` — vybral
+jsem je 9. 8. 2026 přes WebSearch, ze sandboxu se na ně nejde podívat.
+Běh je protáhne licenčním sítem DATA-02, stáhne náhledy do
+`data/kandidati/hero-foto/nizke-tatry/` a commitne. Další session si je
+prohlédne lokálně, vybere hero, ořízne a zapíše do
+`data/oblasti/nizke-tatry.yaml` — pak se kandidátní adresář smaže.
+
+## 3. DATA-02 fotky chat — druhý běh pro nové oblasti (9. 8. 2026)
+
+| workflow | políčko |
+|---|---|
+| **DATA-02: fotky chat z Wikimedia Commons** | `radius` nech `300` |
+
+První běh (4. 8. 2026) pokryl Krkonoše, Jizerky a Ještědský hřbet — z jeho
+commitnutých metadat jsem 9. 8. přiřadil deset fotek bez jediného dotazu.
+Jenže od té doby přibylo přes 60 profilů v ŠUMAVĚ, BESKYDECH a VYSOKÝCH
+TATRÁCH, které kandidátní fotky nemají vůbec. Běh jede přes všechny objekty
+najednou (políčko oblasti nemá) a potrvá dlouho; kdyby summary hlásilo
+„NEUPLNY_BEH", stačí ho spustit znovu — je idempotentní.
+
+## 4. DATA-06 výšky přístupových tras — Šumava
 
 | workflow | políčko `oblast` |
 |---|---|
@@ -80,7 +109,7 @@ přístupové trasy prázdné výškové profily a chybí orientační čas dle
 DIN 33466. Klíč Mapy.com je v Actions jako secret `MAPY_API_KEY` (nastaven
 20. 7. 2026), takže nic vyplňovat nemusíš.
 
-## 3. DATA-35 výška obce u středisek — Jizerské hory
+## 5. DATA-35 výška obce u středisek — Jizerské hory
 
 | workflow | políčko `oblast` |
 |---|---|
@@ -89,7 +118,7 @@ DIN 33466. Klíč Mapy.com je v Actions jako secret `MAPY_API_KEY` (nastaven
 Poslední oblast, které chybí výšky středisek z referenčního bodu. Krkonoše
 i Ještědský hřbet už doběhly (4. 8. 2026), u Ještědu čistě.
 
-## 4. DATA-28 3D terén — Krkonoše
+## 6. DATA-28 3D terén — Krkonoše
 
 | workflow | políčko `oblast` |
 |---|---|
