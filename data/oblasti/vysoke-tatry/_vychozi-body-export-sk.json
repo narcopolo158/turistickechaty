@@ -1,0 +1,3550 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T12:07:06Z",
+    "timestamp_areas_base": "2026-08-08T11:35:21Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 26035774,
+  "lat": 49.3316958,
+  "lon": 20.3446297,
+  "tags": {
+    "alt_name:pl": "Spiskie Hanuszowce;Hanuszowce",
+    "city_id": "523861",
+    "ele": "600",
+    "import_ref": "city_import_sk_1",
+    "name": "Spišské Hanušovce",
+    "name:hu": "Hanusfalva",
+    "name:pl": "Hanuszowce Spiskie",
+    "name:sk": "Spišské Hanušovce",
+    "place": "village",
+    "population": "658",
+    "postal_code": "059 04",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.spisskehanusovce.sk/",
+    "wikidata": "Q304463",
+    "wikipedia": "sk:Spišské Hanušovce"
+  }
+},
+{
+  "type": "node",
+  "id": 26035799,
+  "lat": 49.3342292,
+  "lon": 20.2301162,
+  "tags": {
+    "city_id": "523771",
+    "ele": "818",
+    "import_ref": "city_import_sk_1",
+    "name": "Osturňa",
+    "name:hu": "Osztornya",
+    "name:sk": "Osturňa",
+    "place": "village",
+    "population": "364",
+    "postal_code": "059 79",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "http://www.obec-osturna.sk/",
+    "wikidata": "Q282264",
+    "wikipedia": "sk:Osturňa"
+  }
+},
+{
+  "type": "node",
+  "id": 26035826,
+  "lat": 49.3182739,
+  "lon": 20.3920528,
+  "tags": {
+    "city_id": "524115",
+    "ele": "760",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Gibeľ;Gibeľ",
+    "name": "Zálesie",
+    "name:hu": "Gibely",
+    "name:sk": "Zálesie",
+    "place": "village",
+    "population": "92",
+    "postal_code": "059 04",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html;www.statistics.sk",
+    "website": "https://www.zalesiezamagurie.sk/",
+    "wikidata": "Q586085",
+    "wikipedia": "sk:Zálesie (okres Kežmarok)"
+  }
+},
+{
+  "type": "node",
+  "id": 26036092,
+  "lat": 49.3380439,
+  "lon": 20.2934499,
+  "tags": {
+    "alt_name:de": "Großfrankowa",
+    "city_id": "523992",
+    "ele": "788",
+    "import_ref": "city_import_sk_1",
+    "name": "Veľká Franková",
+    "name:de": "Großfrankenau",
+    "name:hu": "Nagyfrankvágása",
+    "name:pl": "Frankowa",
+    "name:sk": "Veľká Franková",
+    "place": "village",
+    "population": "361",
+    "postal_code": "059 78",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.velkafrankova.sk/",
+    "wikidata": "Q968751",
+    "wikipedia": "sk:Veľká Franková"
+  }
+},
+{
+  "type": "node",
+  "id": 26036266,
+  "lat": 49.1885284,
+  "lon": 20.3834965,
+  "tags": {
+    "city_id": "523798",
+    "ele": "659",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Roks",
+    "name": "Rakúsy",
+    "name:de": "Roks",
+    "name:hu": "Rókus",
+    "name:sk": "Rakúsy",
+    "place": "village",
+    "population": "2316",
+    "postal_code": "059 76",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.rakusy.sk/",
+    "wikidata": "Q291131",
+    "wikipedia": "sk:Rakúsy (okres Kežmarok)"
+  }
+},
+{
+  "type": "node",
+  "id": 26036267,
+  "lat": 49.2346755,
+  "lon": 20.3540807,
+  "tags": {
+    "city_id": "523623",
+    "ele": "705",
+    "import_ref": "city_import_sk_1",
+    "name": "Lendak",
+    "name:de": "Landeck",
+    "name:hu": "Lándok",
+    "name:sk": "Lendak",
+    "place": "village",
+    "population": "4820",
+    "postal_code": "059 07",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.lendak.sk/",
+    "wikidata": "Q283354",
+    "wikipedia": "sk:Lendak"
+  }
+},
+{
+  "type": "node",
+  "id": 26036279,
+  "lat": 49.0979943,
+  "lon": 20.2067633,
+  "tags": {
+    "city_id": "523445",
+    "ele": "329",
+    "import_ref": "city_import_sk_1",
+    "name": "Gerlachov",
+    "name:de": "Gerlsdorf",
+    "name:hu": "Gerlachfalva",
+    "name:sk": "Gerlachov",
+    "place": "village",
+    "population": "813",
+    "postal_code": "059 42",
+    "region_id": "706",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.obecgerlachov.sk/",
+    "wikidata": "Q1009862",
+    "wikipedia": "sk:Gerlachov (okres Poprad)"
+  }
+},
+{
+  "type": "node",
+  "id": 26036291,
+  "lat": 49.1610080,
+  "lon": 20.3676508,
+  "tags": {
+    "city_id": "523909",
+    "ele": "687",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Folvarky;Forberg",
+    "name": "Stráne pod Tatrami",
+    "name:de": "Forberg",
+    "name:hu": "Tátraalja",
+    "name:sk": "Stráne pod Tatrami",
+    "place": "village",
+    "population": "1434",
+    "postal_code": "059 76",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html;www.statistics.sk",
+    "website": "https://www.stranepodtatrami.sk/",
+    "wikidata": "Q1025232",
+    "wikipedia": "sk:Stráne pod Tatrami"
+  }
+},
+{
+  "type": "node",
+  "id": 26036401,
+  "lat": 49.2990192,
+  "lon": 20.3352047,
+  "tags": {
+    "city_id": "523569",
+    "ele": "935",
+    "import_ref": "city_import_sk_1",
+    "name": "Jezersko",
+    "name:hu": "Tavas",
+    "name:sk": "Jezersko",
+    "place": "village",
+    "population": "116",
+    "postal_code": "059 04",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://obec.jezersko.sk/",
+    "wikidata": "Q919375",
+    "wikipedia": "sk:Jezersko"
+  }
+},
+{
+  "type": "node",
+  "id": 26036461,
+  "lat": 49.2341790,
+  "lon": 20.3976362,
+  "tags": {
+    "city_id": "524085",
+    "ele": "657",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Bierbrunn",
+    "name": "Výborná",
+    "name:de": "Bierbrunn",
+    "name:hu": "Sörkút",
+    "name:sk": "Výborná",
+    "place": "village",
+    "population": "964",
+    "postal_code": "059 02",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.obecvyborna.sk/",
+    "wikidata": "Q1095711",
+    "wikipedia": "sk:Výborná"
+  }
+},
+{
+  "type": "node",
+  "id": 26036589,
+  "lat": 49.1366137,
+  "lon": 20.3883429,
+  "tags": {
+    "city_id": "581241",
+    "ele": "617",
+    "import_ref": "city_import_sk_1",
+    "name": "Malý Slavkov",
+    "name:de": "Kleinschlagendorf",
+    "name:hu": "Kisszalók",
+    "name:sk": "Malý Slavkov",
+    "place": "village",
+    "population": "918",
+    "postal_code": "060 01",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://malyslavkov.sk/",
+    "wikidata": "Q1025246",
+    "wikipedia": "sk:Malý Slavkov"
+  }
+},
+{
+  "type": "node",
+  "id": 26036850,
+  "lat": 49.1158321,
+  "lon": 20.3778625,
+  "tags": {
+    "city_id": "523526",
+    "ele": "639",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Hunsdorf",
+    "name": "Huncovce",
+    "name:de": "Hunsdorf",
+    "name:hu": "Hunfalva",
+    "name:sk": "Huncovce",
+    "place": "village",
+    "population": "2503",
+    "postal_code": "059 92",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.huncovce.sk/",
+    "wikidata": "Q1025260",
+    "wikipedia": "sk:Huncovce"
+  }
+},
+{
+  "type": "node",
+  "id": 26036920,
+  "lat": 49.0934861,
+  "lon": 20.2821845,
+  "tags": {
+    "city_id": "524018",
+    "ele": "681",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Gross Schagendorf;Gross-Schlagendorf",
+    "name": "Veľký Slavkov",
+    "name:de": "Großschlagendorf",
+    "name:hu": "Nagyszalók",
+    "name:sk": "Veľký Slavkov",
+    "place": "village",
+    "population": "1217",
+    "postal_code": "059 91",
+    "region_id": "706",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html;www.statistics.sk",
+    "website": "https://www.velkyslavkov.sk/",
+    "wikidata": "Q1094067",
+    "wikipedia": "sk:Veľký Slavkov"
+  }
+},
+{
+  "type": "node",
+  "id": 26036958,
+  "lat": 49.0919087,
+  "lon": 20.1408202,
+  "tags": {
+    "city_id": "559890",
+    "ele": "831",
+    "import_ref": "city_import_sk_1",
+    "name": "Štôla",
+    "name:de": "Stollen",
+    "name:hu": "Stóla",
+    "name:sk": "Štôla",
+    "place": "village",
+    "population": "536",
+    "postal_code": "059 37",
+    "region_id": "706",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.stola.sk/",
+    "wikidata": "Q392550",
+    "wikipedia": "sk:Štôla"
+  }
+},
+{
+  "type": "node",
+  "id": 26037150,
+  "lat": 49.1677753,
+  "lon": 20.3832250,
+  "tags": {
+    "city_id": "523739",
+    "ele": "671",
+    "import_ref": "city_import_sk_1",
+    "name": "Mlynčeky",
+    "name:de": "Mühlerchen",
+    "name:hu": "Tátraháza",
+    "name:sk": "Mlynčeky",
+    "place": "village",
+    "population": "624",
+    "postal_code": "059 76",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.mlynceky.sk/",
+    "wikidata": "Q1025188",
+    "wikipedia": "sk:Mlynčeky"
+  }
+},
+{
+  "type": "node",
+  "id": 26037187,
+  "lat": 49.2709308,
+  "lon": 20.2716342,
+  "tags": {
+    "city_id": "524131",
+    "ele": "871",
+    "import_ref": "city_import_sk_1",
+    "name": "Ždiar",
+    "name:de": "Morgenröthe",
+    "name:hu": "Zár",
+    "name:pl": "Zdziar",
+    "name:sk": "Ždiar",
+    "place": "village",
+    "population": "1337",
+    "postal_code": "05955",
+    "region_id": "706",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://zdiar.sk/",
+    "wikidata": "Q393435",
+    "wikipedia": "sk:Ždiar"
+  }
+},
+{
+  "type": "node",
+  "id": 26037517,
+  "lat": 49.1013979,
+  "lon": 20.3137104,
+  "tags": {
+    "city_id": "523747",
+    "ele": "659",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Milbach",
+    "name": "Mlynica",
+    "name:hu": "Malompatak",
+    "name:sk": "Mlynica",
+    "place": "village",
+    "population": "394",
+    "postal_code": "059 91",
+    "region_id": "706",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.obecmlynica.sk/",
+    "wikidata": "Q514200",
+    "wikipedia": "sk:Mlynica (obec)"
+  }
+},
+{
+  "type": "node",
+  "id": 26037533,
+  "lat": 49.1220252,
+  "lon": 20.2673986,
+  "tags": {
+    "city_id": "523763",
+    "ele": "728",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Neu-Walddorf",
+    "name": "Nová Lesná",
+    "name:hu": "Alsóerdőfalva",
+    "name:sk": "Nová Lesná",
+    "place": "village",
+    "population": "1568",
+    "postal_code": "059 86",
+    "region_id": "706",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.novalesna.sk/",
+    "wikidata": "Q664187",
+    "wikipedia": "sk:Nová Lesná"
+  }
+},
+{
+  "type": "node",
+  "id": 26037574,
+  "lat": 49.3134918,
+  "lon": 20.3033259,
+  "tags": {
+    "city_id": "559938",
+    "ele": "782",
+    "import_ref": "city_import_sk_1",
+    "name": "Malá Franková",
+    "name:hu": "Kisfrankvágása",
+    "name:pl": "Frankówka",
+    "name:sk": "Malá Franková",
+    "place": "village",
+    "population": "188",
+    "postal_code": "059 78",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.malafrankova.dcom.sk/",
+    "wikidata": "Q1110778",
+    "wikipedia": "sk:Malá Franková"
+  }
+},
+{
+  "type": "node",
+  "id": 26037612,
+  "lat": 49.1163282,
+  "lon": 20.3586547,
+  "tags": {
+    "city_id": "524000",
+    "ele": "639",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Gross-Lomnica",
+    "name": "Veľká Lomnica",
+    "name:de": "Großlomnitz",
+    "name:hu": "Kakaslomnic",
+    "name:sk": "Veľká Lomnica",
+    "place": "village",
+    "population": "3999",
+    "postal_code": "059 52",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.velkalomnica.sk/",
+    "wikidata": "Q1025210",
+    "wikipedia": "sk:Veľká Lomnica"
+  }
+},
+{
+  "type": "node",
+  "id": 26037674,
+  "lat": 49.1368294,
+  "lon": 20.3066302,
+  "tags": {
+    "city_id": "523887",
+    "ele": "665",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Alt-Walddorf",
+    "name": "Stará Lesná",
+    "name:de": "Altwalddorf",
+    "name:hu": "Felsőerdőfalva",
+    "name:sk": "Stará Lesná",
+    "place": "village",
+    "population": "968",
+    "postal_code": "059 52",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.staralesna.sk/",
+    "wikidata": "Q590671",
+    "wikipedia": "sk:Stará Lesná"
+  }
+},
+{
+  "type": "node",
+  "id": 26038405,
+  "lat": 49.2996739,
+  "lon": 20.3792635,
+  "tags": {
+    "city_id": "523801",
+    "ele": "780",
+    "import_ref": "city_import_sk_1",
+    "name": "Reľov",
+    "name:hu": "Relyó",
+    "name:sk": "Reľov",
+    "place": "village",
+    "population": "339",
+    "postal_code": "059 04",
+    "region_id": "703",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.relov.sk/",
+    "wikidata": "Q1094122",
+    "wikipedia": "sk:Reľov"
+  }
+},
+{
+  "type": "node",
+  "id": 26038409,
+  "lat": 49.1354790,
+  "lon": 20.2166825,
+  "tags": {
+    "city_id": "560103",
+    "ele": "853",
+    "import_ref": "city_import_sk_1",
+    "loc_name": "Smokovec",
+    "name": "Vysoké Tatry",
+    "name:de": "Hohe Tatra",
+    "name:hu": "Tátrafüred",
+    "name:pl": "Wysokie Tatry",
+    "name:sk": "Vysoké Tatry",
+    "place": "town",
+    "population": "4593",
+    "postal_code": "062 01",
+    "region_id": "706",
+    "source:name": "http://earth-info.nga.mil/gns/html/cntry_files.html,www.statistics.sk",
+    "website": "https://www.vysoketatry.sk/",
+    "wikidata": "Q612516",
+    "wikipedia": "sk:Vysoké Tatry (mesto)"
+  }
+},
+{
+  "type": "node",
+  "id": 29442351,
+  "lat": 49.1503560,
+  "lon": 20.2558776,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Tatranská Lesná",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3359"
+  }
+},
+{
+  "type": "node",
+  "id": 195480363,
+  "lat": 49.1791112,
+  "lon": 20.2559057,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "name": "Štart"
+  }
+},
+{
+  "type": "node",
+  "id": 195480364,
+  "lat": 49.1659931,
+  "lon": 20.2690041,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "name": "Tatranská Lomnica",
+    "name:de": "Tatralomnitz",
+    "name:hu": "Tátralomnic"
+  }
+},
+{
+  "type": "node",
+  "id": 195481415,
+  "lat": 49.1876750,
+  "lon": 20.2330656,
+  "tags": {
+    "aerialway": "station",
+    "name": "Skalnaté pleso",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 203696721,
+  "lat": 49.1905248,
+  "lon": 20.2172259,
+  "tags": {
+    "aerialway": "station",
+    "ele": "1768",
+    "name": "Lomnické sedlo"
+  }
+},
+{
+  "type": "node",
+  "id": 203696722,
+  "lat": 49.1871564,
+  "lon": 20.2308215,
+  "tags": {
+    "aerialway": "station",
+    "ele": "1170",
+    "name": "Skalnaté pleso"
+  }
+},
+{
+  "type": "node",
+  "id": 306074298,
+  "lat": 49.1182773,
+  "lon": 20.0635832,
+  "tags": {
+    "name": "Štrbské Pleso",
+    "name:de": "Tschirmer See",
+    "name:hu": "Csorbató",
+    "name:pl": "Szczyrbskie Jezioro",
+    "network": "TEŽ",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:position:exact": "29.110",
+    "railway:ref": "SPle",
+    "train": "yes",
+    "uic_ref": "5614031",
+    "wheelchair": "limited",
+    "wikidata": "Q8082892"
+  }
+},
+{
+  "type": "node",
+  "id": 306331864,
+  "lat": 49.1755396,
+  "lon": 20.2941296,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Tatranské Matliare,kúpele",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3355",
+    "shelter": "no",
+    "source": "survey",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 306468680,
+  "lat": 49.1437723,
+  "lon": 20.0415334,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "both",
+    "aerialway:summer:access": "both",
+    "internet_access": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 306468865,
+  "lat": 49.1291202,
+  "lon": 20.0595681,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 306468867,
+  "lat": 49.1287454,
+  "lon": 20.0548375,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 306535872,
+  "lat": 49.1293588,
+  "lon": 20.0591182,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 308763975,
+  "lat": 49.1297950,
+  "lon": 20.0594060,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 309313711,
+  "lat": 49.1381501,
+  "lon": 20.2132603,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 309313712,
+  "lat": 49.1441547,
+  "lon": 20.2064388,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 309313713,
+  "lat": 49.1380986,
+  "lon": 20.2140526,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 309313714,
+  "lat": 49.1389746,
+  "lon": 20.2128793,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 388010170,
+  "lat": 49.1879425,
+  "lon": 20.2926012,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Tatranské Matliare,Biela voda",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3352",
+    "shelter": "no",
+    "source": "Mapillary"
+  }
+},
+{
+  "type": "node",
+  "id": 418724529,
+  "lat": 49.2676281,
+  "lon": 20.1431909,
+  "tags": {
+    "alt_name:pl": "Jaworzyna Spiska",
+    "city_id": "580368",
+    "ele": "1018",
+    "name": "Tatranská Javorina",
+    "name:de": "Uhrngarten",
+    "name:hu": "Javorina",
+    "name:pl": "Jaworzyna Tatrzańska",
+    "name:sk": "Tatranská Javorina",
+    "place": "village",
+    "population": "228",
+    "postal_code": "059 56",
+    "website": "https://www.tjavorina.eu/",
+    "wikidata": "Q225157",
+    "wikipedia": "en:Tatranská Javorina"
+  }
+},
+{
+  "type": "node",
+  "id": 430233504,
+  "lat": 49.1212124,
+  "lon": 20.3748588,
+  "tags": {
+    "name": "Huncovce",
+    "railway": "halt",
+    "railway:position:exact": "9.284",
+    "railway:ref": "Hunc",
+    "uic_ref": "5614240",
+    "wheelchair": "no",
+    "wikidata": "Q86675089"
+  }
+},
+{
+  "type": "node",
+  "id": 430278196,
+  "lat": 49.1487886,
+  "lon": 20.3153025,
+  "tags": {
+    "name": "Tatranská Lomnica zastávka",
+    "public_transport": "halt",
+    "railway": "halt",
+    "railway:position:exact": "5.610",
+    "railway:ref": "TaLz",
+    "uic_ref": "5614400",
+    "wikidata": "Q86675086"
+  }
+},
+{
+  "type": "node",
+  "id": 642266312,
+  "lat": 49.2722171,
+  "lon": 20.3099203,
+  "tags": {
+    "aerialway": "station",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 642266318,
+  "lat": 49.2854325,
+  "lon": 20.3147860,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 642266319,
+  "lat": 49.2891483,
+  "lon": 20.3240801,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 642266321,
+  "lat": 49.2859287,
+  "lon": 20.3151231,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 1131236836,
+  "lat": 49.1793082,
+  "lon": 20.2562262,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:summer:access": "no",
+    "name": "Štart"
+  }
+},
+{
+  "type": "node",
+  "id": 1131238039,
+  "lat": 49.1784339,
+  "lon": 20.2560179,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:summer:access": "no",
+    "name": "Štart"
+  }
+},
+{
+  "type": "node",
+  "id": 1131238041,
+  "lat": 49.1826906,
+  "lon": 20.2457028,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:summer:access": "no",
+    "name": "Čučoriedky"
+  }
+},
+{
+  "type": "node",
+  "id": 1151118481,
+  "lat": 49.2796962,
+  "lon": 20.3030332,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 1151123078,
+  "lat": 49.2712852,
+  "lon": 20.3100634,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 1151123100,
+  "lat": 49.2711949,
+  "lon": 20.3236645,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 1151123108,
+  "lat": 49.2709381,
+  "lon": 20.3186283,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 1151126879,
+  "lat": 49.2724106,
+  "lon": 20.3088513,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 1151126881,
+  "lat": 49.2755093,
+  "lon": 20.3087877,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 1377164450,
+  "lat": 49.1173069,
+  "lon": 20.1251268,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Vyšné Hágy, rázcestie",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1377164453,
+  "lat": 49.1171290,
+  "lon": 20.1251183,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Vyšné Hágy, rázcestie",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1406796310,
+  "lat": 49.1555038,
+  "lon": 20.2713725,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "check_date:shelter": "2022-09-09",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Vysoké Tatry,,Stará Lesná žel.zast.",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3357",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1501939172,
+  "lat": 49.3345373,
+  "lon": 20.2722641,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Píla"
+  }
+},
+{
+  "type": "node",
+  "id": 1509680934,
+  "lat": 49.1475505,
+  "lon": 20.2871258,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Stará Lesná, rekreačný areál",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1511619561,
+  "lat": 49.1362525,
+  "lon": 20.3078540,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Stará Lesná, OcÚ",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1512021324,
+  "lat": 49.1101284,
+  "lon": 20.3572150,
+  "tags": {
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Veľká Lomnica, Studený potok",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1512021325,
+  "lat": 49.1101437,
+  "lon": 20.3577295,
+  "tags": {
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Veľká Lomnica, Studený potok",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1512021332,
+  "lat": 49.1129473,
+  "lon": 20.3580416,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Veľká Lomnica, Tatran"
+  }
+},
+{
+  "type": "node",
+  "id": 1512021341,
+  "lat": 49.1190986,
+  "lon": 20.3527183,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Veľká Lomnica, rázc. Stará Lesná"
+  }
+},
+{
+  "type": "node",
+  "id": 1512021345,
+  "lat": 49.1192024,
+  "lon": 20.3528477,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Veľká Lomnica, rázc. Stará Lesná",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1520208388,
+  "lat": 49.2291268,
+  "lon": 20.3177521,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Vysoké Tatry,Tatranská Kotlina,Belianska jaskyňa",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3346",
+    "shelter": "yes",
+    "source": "survey",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1520212367,
+  "lat": 49.2248542,
+  "lon": 20.3241489,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Tatranská Kotlina,Čarda",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3348",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1812529616,
+  "lat": 49.1363027,
+  "lon": 20.3373787,
+  "tags": {
+    "name": "Veľká Lomnica-Golf",
+    "public_transport": "halt",
+    "railway": "halt",
+    "railway:position:exact": "3.438",
+    "railway:ref": "VeLG",
+    "uic_ref": "5614221",
+    "wikidata": "Q111684480"
+  }
+},
+{
+  "type": "node",
+  "id": 1895463377,
+  "lat": 49.0929160,
+  "lon": 20.1411502,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Štôla,,LÚ",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2099768709,
+  "lat": 49.1687008,
+  "lon": 20.2708965,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:summer:access": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2099768749,
+  "lat": 49.1745057,
+  "lon": 20.2671859,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:summer:access": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2101267700,
+  "lat": 49.1312620,
+  "lon": 20.0557579,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2101267702,
+  "lat": 49.1300500,
+  "lon": 20.0583431,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2102590785,
+  "lat": 49.2737689,
+  "lon": 20.2290695,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ždiar,Strednica",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad;KMAL",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3330",
+    "route_ref": "MLD – A15;MLD – A45",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2145087586,
+  "lat": 49.1218237,
+  "lon": 20.2649332,
+  "tags": {
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Nová Lesná,cintorín",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "passenger_information_display": "no",
+    "public_transport": "platform",
+    "ref:kmal": "6489",
+    "request_stop": "yes",
+    "route_ref": "MLD – A15;MLD – A45",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2271366965,
+  "lat": 49.2659985,
+  "lon": 20.1416648,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Tatranská Javorina, Javorová dolina",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2442376824,
+  "lat": 49.1227037,
+  "lon": 20.1871076,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranská Polianka",
+    "operator": "SAD Poprad",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2446384579,
+  "lat": 49.2733955,
+  "lon": 20.2451007,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Ždiar,Odbočka",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3332",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2446384580,
+  "lat": 49.2694980,
+  "lon": 20.2664999,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Ždiar,Tatra",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3334",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2446384581,
+  "lat": 49.2800456,
+  "lon": 20.1739010,
+  "tags": {
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Tatranská Javorina, Podspády",
+    "operator": "SAD Poprad",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2965735047,
+  "lat": 49.1629645,
+  "lon": 20.2940636,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranská Lomnica, 1. máj",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2965735048,
+  "lat": 49.1628332,
+  "lon": 20.2941878,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranská Lomnica, 1. máj",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3295024253,
+  "lat": 49.1872460,
+  "lon": 20.2319402,
+  "tags": {
+    "aerialway": "station",
+    "ele": "1768",
+    "name": "Skalnaté pleso"
+  }
+},
+{
+  "type": "node",
+  "id": 3295025920,
+  "lat": 49.1793428,
+  "lon": 20.2559053,
+  "tags": {
+    "aerialway": "station",
+    "ele": "1170",
+    "name": "Štart"
+  }
+},
+{
+  "type": "node",
+  "id": 3296651531,
+  "lat": 49.1343369,
+  "lon": 20.0469585,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3296651536,
+  "lat": 49.1349018,
+  "lon": 20.0448401,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3296651559,
+  "lat": 49.1442355,
+  "lon": 20.0401523,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3358061873,
+  "lat": 49.1649930,
+  "lon": 20.2703260,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:summer:access": "no",
+    "name": "Tatranská Lomnica",
+    "name:de": "Tatralomnitz",
+    "name:hu": "Tátralomnic"
+  }
+},
+{
+  "type": "node",
+  "id": 3358062157,
+  "lat": 49.1951486,
+  "lon": 20.2134710,
+  "tags": {
+    "aerialway": "station",
+    "name": "Lomnický štít",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 4033009393,
+  "lat": 49.2873743,
+  "lon": 20.3154635,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 4033009404,
+  "lat": 49.2954822,
+  "lon": 20.3091321,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 4131318229,
+  "lat": 49.3103305,
+  "lon": 20.3002649,
+  "tags": {
+    "bench": "no",
+    "highway": "bus_stop",
+    "name": "Malá Franková, č.d. 49",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4131318231,
+  "lat": 49.3124419,
+  "lon": 20.3664732,
+  "tags": {
+    "bench": "yes",
+    "check_date:shelter": "2023-10-10",
+    "highway": "bus_stop",
+    "name": "Spišské Hanušovce, rázc. Jezersko",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4159349994,
+  "lat": 49.1660281,
+  "lon": 20.2813219,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Vysoké Tatry,Tatranská Lomnica,AS",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3356",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4159349995,
+  "lat": 49.1654309,
+  "lon": 20.2814176,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Vysoké Tatry, Tatranská Lomnica, stanica",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4231558290,
+  "lat": 49.1943206,
+  "lon": 20.3011472,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Kežmarské Žľaby",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3351"
+  }
+},
+{
+  "type": "node",
+  "id": 4318542835,
+  "lat": 49.1241967,
+  "lon": 20.2455314,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "check_date:shelter": "2024-12-31",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Vysoké Tatry,Dolný Smokovec,motorest",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4318542859,
+  "lat": 49.1350288,
+  "lon": 20.2106828,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Nový Smokovec, Sibír",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4318560637,
+  "lat": 49.1396286,
+  "lon": 20.2336369,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Vysoké Tatry,,Pekná vyhliadka",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3364",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4318629600,
+  "lat": 49.1358749,
+  "lon": 20.3081673,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Stará Lesná, OcÚ",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4406029762,
+  "lat": 49.1224555,
+  "lon": 20.1833223,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatr. Polianka",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4406048908,
+  "lat": 49.0929154,
+  "lon": 20.1413783,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Štôla,,LÚ",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4418059445,
+  "lat": 49.1186922,
+  "lon": 20.1506818,
+  "tags": {
+    "FIXME": "overit nazov",
+    "bench": "yes",
+    "bin": "no",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Nová Polianka",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4427766990,
+  "lat": 49.1187459,
+  "lon": 20.1681723,
+  "tags": {
+    "name": "Danielov Dom",
+    "railway": "halt",
+    "railway:ref": "Dani",
+    "wikidata": "Q104658090"
+  }
+},
+{
+  "type": "node",
+  "id": 4692733734,
+  "lat": 49.1012739,
+  "lon": 20.3133467,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mlynica",
+    "not:network:wikidata": "Q107782589",
+    "operator": "SAD Poprad",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 4805302655,
+  "lat": 49.1586623,
+  "lon": 20.3102723,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "check_date:shelter": "2022-09-10",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranská Lomnica, Tatranec",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4805302656,
+  "lat": 49.1584430,
+  "lon": 20.3102682,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "check_date:shelter": "2022-09-10",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranská Lomnica, Tatranec",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4805302674,
+  "lat": 49.1519201,
+  "lon": 20.3169843,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranská Lomnica, Eurocamp",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4805302675,
+  "lat": 49.1520201,
+  "lon": 20.3172015,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranská Lomnica, Eurocamp",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5026157330,
+  "lat": 49.2705366,
+  "lon": 20.1483723,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Tatranská Javorina, hájenka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5026157331,
+  "lat": 49.2704321,
+  "lon": 20.1484586,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Tatranská Javorina, hájenka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5026157332,
+  "lat": 49.2702482,
+  "lon": 20.1380792,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Tatranská Javorina, zámoček Hohenlohe",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5026157333,
+  "lat": 49.2635087,
+  "lon": 20.1168292,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Tatranská Javorina, Lysá Poľana",
+    "operator": "SAD Poprad",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5026178326,
+  "lat": 49.2636110,
+  "lon": 20.2994599,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ždiar,rázc.Bachledova dolina",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3342",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5026178327,
+  "lat": 49.2663975,
+  "lon": 20.2918922,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ždiar,MŠ",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3340",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5026178328,
+  "lat": 49.2677850,
+  "lon": 20.2838429,
+  "tags": {
+    "alt_name": "Ždiar,,galéria",
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ždiar,Starý mlyn",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3338",
+    "shelter": "yes",
+    "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5026178329,
+  "lat": 49.2678329,
+  "lon": 20.2840884,
+  "tags": {
+    "alt_name": "Ždiar,,galéria",
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ždiar,Starý mlyn",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3339",
+    "shelter": "yes",
+    "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5026178330,
+  "lat": 49.2710525,
+  "lon": 20.2761260,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Ždiar,Píla",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3336",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5026178331,
+  "lat": 49.2711367,
+  "lon": 20.2766930,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Ždiar,Píla",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3337",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5026228905,
+  "lat": 49.2465585,
+  "lon": 20.3105104,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Vysoké Tatry,Tatranská Kotlina,Kardolina",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3344",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5026228906,
+  "lat": 49.2125924,
+  "lon": 20.3231079,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranská Kotlina, Fľak",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5026228907,
+  "lat": 49.1430037,
+  "lon": 20.2416423,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Horný Smokovec",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3362",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5026228908,
+  "lat": 49.1423143,
+  "lon": 20.2390720,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Vysoké Tatry,Horný Smokovec",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3361",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5026228909,
+  "lat": 49.0933177,
+  "lon": 20.2831345,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Veľký Slavkov, kostol",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "not:network:wikidata": "Q107782589",
+    "operator": "SAD Poprad",
+    "public_transport": "platform",
+    "ref:kmal": "6492",
+    "request_stop": "yes",
+    "shelter": "yes",
+    "url:kmal": "https://kolejemalopolskie.kiedyprzyjedzie.pl/#/stops/2265280:2351828/departures",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5196271055,
+  "lat": 49.1482897,
+  "lon": 20.2846510,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Stará Lesná, rekreačný areál",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5757871558,
+  "lat": 49.1343440,
+  "lon": 19.9684760,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tri studničky",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6122404975,
+  "lat": 49.1549625,
+  "lon": 20.2710628,
+  "tags": {
+    "name": "Stará Lesná",
+    "name:hu": "Felsőerdőfalva",
+    "note": "Nemazat, ma byt zakresleny aj railway=stop aj railway=halt ako samostatne objekty.",
+    "railway": "halt",
+    "railway:ref": "StLe",
+    "wikidata": "Q104658837"
+  }
+},
+{
+  "type": "node",
+  "id": 6122404976,
+  "lat": 49.1500768,
+  "lon": 20.2566969,
+  "tags": {
+    "name": "Tatranská Lesná",
+    "name:hu": "Tátraerdőfalva",
+    "note": "Nemazat, ma byt zakresleny aj railway=stop aj railway=halt ako samostatne objekty.",
+    "railway": "halt",
+    "railway:ref": "TtLe",
+    "wikidata": "Q104658836"
+  }
+},
+{
+  "type": "node",
+  "id": 6122404977,
+  "lat": 49.1425856,
+  "lon": 20.2408724,
+  "tags": {
+    "name": "Horný Smokovec",
+    "name:hu": "Felsőtátrafüred",
+    "note": "Nemazat, ma byt zakresleny aj railway=stop aj railway=halt ako samostatne objekty.",
+    "railway": "halt",
+    "railway:ref": "HorS",
+    "wikidata": "Q104658835"
+  }
+},
+{
+  "type": "node",
+  "id": 6122404978,
+  "lat": 49.1392740,
+  "lon": 20.2329526,
+  "tags": {
+    "name": "Pekná Vyhliadka",
+    "name:hu": "Szépkilátás",
+    "note": "Nemazat, ma byt zakresleny aj railway=stop aj railway=halt ako samostatne objekty.",
+    "railway": "halt",
+    "railway:ref": "PekV",
+    "wikidata": "Q104658834"
+  }
+},
+{
+  "type": "node",
+  "id": 6256172642,
+  "lat": 49.1584322,
+  "lon": 20.2251636,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 6256172643,
+  "lat": 49.1579388,
+  "lon": 20.2258891,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 6634661549,
+  "lat": 49.1941059,
+  "lon": 20.3004866,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "check_date:shelter": "2024-06-01",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Kežmarské Žľaby",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3350",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6700205051,
+  "lat": 49.1129002,
+  "lon": 20.3578597,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Veľká Lomnica, Tatran"
+  }
+},
+{
+  "type": "node",
+  "id": 6797512182,
+  "lat": 49.1260430,
+  "lon": 20.0749585,
+  "tags": {
+    "name": "Popradské Pleso",
+    "name:hu": "Poprádi-tó",
+    "railway": "halt",
+    "railway:ref": "PoPl",
+    "wikidata": "Q104657553"
+  }
+},
+{
+  "type": "node",
+  "id": 6797512183,
+  "lat": 49.1188223,
+  "lon": 20.1232131,
+  "tags": {
+    "name": "Vyšné Hágy",
+    "name:hu": "Felsőhági",
+    "railway": "station",
+    "railway:ref": "VyHg",
+    "wheelchair": "limited",
+    "wikidata": "Q104657805"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536686,
+  "lat": 49.1183481,
+  "lon": 20.1507493,
+  "tags": {
+    "name": "Nová Polianka",
+    "name:hu": "Újszéplak",
+    "railway": "halt",
+    "railway:ref": "NoPo",
+    "wikidata": "Q104657951"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536691,
+  "lat": 49.1227070,
+  "lon": 20.1861937,
+  "tags": {
+    "name": "Tatranská Polianka",
+    "name:hu": "Tátraszéplak",
+    "railway": "halt",
+    "railway:ref": "TPol"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536694,
+  "lat": 49.1300667,
+  "lon": 20.1993003,
+  "tags": {
+    "name": "Tatranské Zruby",
+    "name:hu": "Tátraotthon",
+    "railway": "halt",
+    "railway:ref": "TatZ",
+    "wheelchair": "yes",
+    "wikidata": "Q104658379"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536703,
+  "lat": 49.1347727,
+  "lon": 20.2105965,
+  "tags": {
+    "name": "Sibír",
+    "name:hu": "Szikraház",
+    "railway": "halt",
+    "railway:ref": "Sibi",
+    "wikidata": "Q104658584"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536712,
+  "lat": 49.1368961,
+  "lon": 20.2160735,
+  "tags": {
+    "name": "Nový Smokovec",
+    "name:hu": "Újtátrafüred",
+    "name:sk": "Nový Smokovec",
+    "railway": "halt",
+    "railway:ref": "NovS",
+    "wikidata": "Q104658689"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536720,
+  "lat": 49.1320016,
+  "lon": 20.2396837,
+  "tags": {
+    "name": "Dolný Smokovec",
+    "name:hu": "Alsótátrafüred",
+    "railway": "halt",
+    "railway:ref": "DolS",
+    "wikidata": "Q104658732"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536721,
+  "lat": 49.1259605,
+  "lon": 20.2452036,
+  "tags": {
+    "name": "Pod lesom",
+    "name:hu": "Erdőalja",
+    "name:sk": "Pod lesom",
+    "railway": "halt",
+    "railway:ref": "Pdle"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536722,
+  "lat": 49.1159573,
+  "lon": 20.2619500,
+  "tags": {
+    "name": "Nová Lesná",
+    "name:de": "Neuwalddorf",
+    "name:hu": "Alsóerdőfalva",
+    "old_name:hu": "Újleszna",
+    "railway": "halt",
+    "railway:ref": "NoLe",
+    "wikidata": "Q104658734"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536727,
+  "lat": 49.0912104,
+  "lon": 20.2774720,
+  "tags": {
+    "name": "Veľký Slavkov",
+    "name:hu": "Nagyszalók",
+    "public_transport": "station",
+    "railway": "halt",
+    "railway:ref": "VeSl"
+  }
+},
+{
+  "type": "node",
+  "id": 6797536730,
+  "lat": 49.0926345,
+  "lon": 20.0672055,
+  "tags": {
+    "name": "Tatranský Lieskovec",
+    "name:hu": "Mogyorós",
+    "public_transport": "halt",
+    "railway": "halt",
+    "railway:position:exact": "1,327",
+    "railway:ref": "TaLi",
+    "train": "yes",
+    "uic_ref": "5614090",
+    "wikidata": "Q104657227"
+  }
+},
+{
+  "type": "node",
+  "id": 6920459743,
+  "lat": 49.1552143,
+  "lon": 20.2705575,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,,Stará Lesná žel.zast.",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3358",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6920472088,
+  "lat": 49.1349628,
+  "lon": 20.2103806,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Nový Smokovec, Sibír",
+    "public_transport": "platform",
+    "shelter": "no",
+    "source": "Mapillary"
+  }
+},
+{
+  "type": "node",
+  "id": 7613254236,
+  "lat": 49.2837464,
+  "lon": 20.3035779,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 7613254253,
+  "lat": 49.2704986,
+  "lon": 20.3191763,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 7613254284,
+  "lat": 49.2854047,
+  "lon": 20.3154688,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 7613254289,
+  "lat": 49.2843103,
+  "lon": 20.3179625,
+  "tags": {
+    "aerialway": "station",
+    "public_transport": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 7616358686,
+  "lat": 49.1879222,
+  "lon": 20.2928884,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Tatranské Matliare,Biela voda",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3353",
+    "shelter": "no",
+    "source": "Mapillary"
+  }
+},
+{
+  "type": "node",
+  "id": 7644855993,
+  "lat": 49.2296695,
+  "lon": 20.3173267,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Vysoké Tatry,Tatranská Kotlina,Belianska jaskyňa",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3347",
+    "shelter": "no",
+    "source": "survey",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7647739994,
+  "lat": 49.1298692,
+  "lon": 20.1985493,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranské Zruby",
+    "public_transport": "platform",
+    "shelter": "no",
+    "source": "Mapillary",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7647739995,
+  "lat": 49.1302510,
+  "lon": 20.1986137,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranské Zruby",
+    "public_transport": "platform",
+    "shelter": "no",
+    "source": "Mapillary",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7653320141,
+  "lat": 49.1169386,
+  "lon": 20.0677836,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Štrba, Štrbské Pleso, Nové pleso",
+    "public_transport": "platform",
+    "shelter": "no",
+    "source": "Mapillary"
+  }
+},
+{
+  "type": "node",
+  "id": 7653320142,
+  "lat": 49.1166507,
+  "lon": 20.0674282,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Štrba, Štrbské Pleso, Nové pleso",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "source": "Mapillary"
+  }
+},
+{
+  "type": "node",
+  "id": 7658768338,
+  "lat": 49.1184817,
+  "lon": 20.1508449,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "check_date:shelter": "2024-06-01",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Nová Polianka",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7659658575,
+  "lat": 49.1405048,
+  "lon": 20.2255726,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Vysoké Tatry,Starý Smokovec",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3365",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7726868293,
+  "lat": 49.1765092,
+  "lon": 20.2874942,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 7726868294,
+  "lat": 49.1764799,
+  "lon": 20.2861772,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 7745619336,
+  "lat": 49.1089553,
+  "lon": 20.3546236,
+  "tags": {
+    "name": "Studený Potok",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:position:exact": "7.243",
+    "railway:ref": "StPo",
+    "uic_ref": "5614210",
+    "wikidata": "Q111693849"
+  }
+},
+{
+  "type": "node",
+  "id": 7809775985,
+  "lat": 49.1140248,
+  "lon": 20.1946089,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Gerlachov, hotel Hubert",
+    "operator": "SAD Poprad",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7809793685,
+  "lat": 49.0955599,
+  "lon": 20.2036008,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Gerlachov, PD",
+    "not:network:wikidata": "Q107782589",
+    "operator": "SAD Poprad",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7814723985,
+  "lat": 49.1010402,
+  "lon": 20.1416402,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Štôla,,horáreň"
+  }
+},
+{
+  "type": "node",
+  "id": 7819495285,
+  "lat": 49.1189802,
+  "lon": 20.0640891,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Štrba, Štrbské Pleso, stanica",
+    "old_name": "Štrba, Štrbské Pleso, cen. park",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8308554011,
+  "lat": 49.1676841,
+  "lon": 20.2683659,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 8308554015,
+  "lat": 49.1672369,
+  "lon": 20.2696721,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 8308566321,
+  "lat": 49.1746863,
+  "lon": 20.2679488,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8308566326,
+  "lat": 49.1758173,
+  "lon": 20.2662268,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8309312220,
+  "lat": 49.1752632,
+  "lon": 20.2938388,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Tatranské Matliare,kúpele",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3354",
+    "shelter": "yes",
+    "source": "survey",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8390018629,
+  "lat": 49.0982609,
+  "lon": 20.2058697,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Gerlachov, obec",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8390018630,
+  "lat": 49.0982469,
+  "lon": 20.2060366,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "name": "Gerlachov, obec",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8390018662,
+  "lat": 49.0955567,
+  "lon": 20.2035526,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "departures_board": "no",
+    "highway": "bus_stop",
+    "name": "Gerlachov, PD",
+    "not:network:wikidata": "Q107782589",
+    "operator": "SAD Poprad",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8390040120,
+  "lat": 49.1138816,
+  "lon": 20.1945034,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "check_date:shelter": "2026-07-10",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Gerlachov, hotel Hubert",
+    "operator": "SAD Poprad",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8390046521,
+  "lat": 49.1227799,
+  "lon": 20.1872130,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Vysoké Tatry, Tatranská Polianka",
+    "operator": "SAD Poprad",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8622481291,
+  "lat": 49.1276963,
+  "lon": 20.0613560,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Štrba, Štrbské Pleso, hotel FIS",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 8622481292,
+  "lat": 49.1185598,
+  "lon": 20.1244559,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Vysoké Tatry, Vyšné Hágy, obratisko",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9051170164,
+  "lat": 49.1025602,
+  "lon": 20.2775302,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Veľký Slavkov Panorama",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "public_transport": "platform",
+    "ref:kmal": "6490",
+    "request_stop": "yes",
+    "route_ref": "MLD – A15;MLD – A45",
+    "source": "Ortofotomozaika SR",
+    "url:kmal": "https://kolejemalopolskie.kiedyprzyjedzie.pl/#/stops/2265281:2351826/departures"
+  }
+},
+{
+  "type": "node",
+  "id": 9456331909,
+  "lat": 49.1182187,
+  "lon": 20.0638012,
+  "tags": {
+    "name": "Štrbské Pleso OŽ",
+    "note": "Official name for displaying in railway infrastructure layer ORM.",
+    "official_name": "Štrbské Pleso OŽ",
+    "operator": "ŽSR",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:position:exact": "4,630",
+    "railway:ref": "StPl",
+    "short_name": "Štrbské Pleso OŽ",
+    "source": "https://www.zsr.sk/files/sps/Doprava/Tabulky-tratovych-pomerov/Aktualne-TTP/TTP-112-F-Strbske-Pleso-Strba-OZ-28z.pdf;https://aplikacie.zsr.sk/InfoMapaInternet5/index.aspx;https://mapa.zsr.sk/",
+    "train": "yes",
+    "uic_name": "Štrbské Pleso OŽ [not UIC, for ORM]",
+    "uic_ref": "5614031",
+    "wikidata": "Q143871",
+    "wikipedia": "de:Zahnradbahn Štrba–Štrbské Pleso"
+  }
+},
+{
+  "type": "node",
+  "id": 9456331910,
+  "lat": 49.1646369,
+  "lon": 20.2794665,
+  "tags": {
+    "name": "Tatranská Lomnica",
+    "name:de": "Tatralomnitz",
+    "name:hu": "Tátralomnic",
+    "name:pl": "Tatrzańska Łomnica",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:position:exact": "8,968",
+    "railway:ref": "TaLo",
+    "source": "https://aplikacie.zsr.sk/InfoMapaInternet5/index.aspx;https://www.zsr.sk/files/sps/Doprava/Tabulky-tratovych-pomerov/Aktualne-TTP/TTP-112-C-Studeny-Potok-Tatranska-Lomnica-25z.pdf",
+    "train": "yes",
+    "uic_ref": "5614170",
+    "wheelchair": "no",
+    "wikidata": "Q7688242",
+    "wikipedia": "en:Tatranská Lomnica railway station"
+  }
+},
+{
+  "type": "node",
+  "id": 9456331911,
+  "lat": 49.1647034,
+  "lon": 20.2791581,
+  "tags": {
+    "name": "Tatranská Lomnica",
+    "network:wikidata": "Q1076857",
+    "network:wikipedia": "de:Elektrische Tatrabahn",
+    "note": "Official name for displaying in railway infrastructure layer ORM.",
+    "official_name": "Tatranská Lomnica TEŽ",
+    "operator": "ŽSR",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:position:exact": "5,938",
+    "short_name": "Tatranská Lomnica TEŽ",
+    "source": "https://aplikacie.zsr.sk/InfoMapaInternet5/index.aspx;https://www.zsr.sk/files/sps/Doprava/Tabulky-tratovych-pomerov/Aktualne-TTP/TTP-112-E-Tatranska-Lomnica-TEZ-Stary-Smokovec-TEZ-25z.pdf;https://mapa.zsr.sk/",
+    "train": "yes",
+    "uic_name": "Tatranská Lomnica TEŽ [not UIC, for ORM]",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9648125359,
+  "lat": 49.1390651,
+  "lon": 20.2224987,
+  "tags": {
+    "name": "Starý Smokovec",
+    "operator": "Železnice Slovenskej republiky",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "StSm",
+    "train": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q7602901",
+    "wikipedia": "sk:Železničná stanica Starý Smokovec"
+  }
+},
+{
+  "type": "node",
+  "id": 9893414376,
+  "lat": 49.2727346,
+  "lon": 20.3076790,
+  "tags": {
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Ždiar, Bachledova dolina",
+    "operator": "SAD Poprad",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9956497057,
+  "lat": 49.1405067,
+  "lon": 20.3000793,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Stará Lesná, bytovky",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9996894635,
+  "lat": 49.2735318,
+  "lon": 20.2447893,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Ždiar,Odbočka",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3333",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10112032511,
+  "lat": 49.1012051,
+  "lon": 20.3132175,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mlynica",
+    "not:network:wikidata": "Q107782589",
+    "operator": "SAD Poprad",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10574871544,
+  "lat": 49.1142723,
+  "lon": 20.3767177,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Huncovce"
+  }
+},
+{
+  "type": "node",
+  "id": 10607631266,
+  "lat": 49.1581046,
+  "lon": 20.2246023,
+  "tags": {
+    "name": "Hrebienok",
+    "name:hu": "Tarajka",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "funicular"
+  }
+},
+{
+  "type": "node",
+  "id": 10665806769,
+  "lat": 49.1415616,
+  "lon": 20.2204254,
+  "tags": {
+    "name": "Starý Smokovec",
+    "name:hu": "Ótátrafüred",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "funicular"
+  }
+},
+{
+  "type": "node",
+  "id": 10698240710,
+  "lat": 49.1397325,
+  "lon": 20.2335784,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Vysoké Tatry,,Pekná vyhliadka",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3363",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10700621941,
+  "lat": 49.1312151,
+  "lon": 20.0577349,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 10700621945,
+  "lat": 49.1302416,
+  "lon": 20.0591900,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 10700621946,
+  "lat": 49.1306342,
+  "lon": 20.0593946,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 10700621947,
+  "lat": 49.1302403,
+  "lon": 20.0598108,
+  "tags": {
+    "aerialway": "station",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 11119561186,
+  "lat": 49.2696589,
+  "lon": 20.2674003,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ždiar,Tatra",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3335",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12116931400,
+  "lat": 49.3388402,
+  "lon": 20.2928102,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Veľká Franková, rázc.",
+    "operator": "SAD Poprad",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12118868612,
+  "lat": 49.0958979,
+  "lon": 20.2810964,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Veľký Slavkov, ZŠ",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "not:network:wikidata": "Q107782589",
+    "operator": "SAD Poprad",
+    "public_transport": "platform",
+    "ref:kmal": "6491",
+    "request_stop": "yes",
+    "shelter": "yes",
+    "url:kmal": "https://kolejemalopolskie.kiedyprzyjedzie.pl/#/stops/2265282:2351827/departures"
+  }
+},
+{
+  "type": "node",
+  "id": 12121818016,
+  "lat": 49.3350958,
+  "lon": 20.3004344,
+  "tags": {
+    "bench": "yes",
+    "highway": "bus_stop",
+    "name": "Veľká Franková, OcÚ",
+    "operator": "SAD Poprad",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12960530761,
+  "lat": 49.3484100,
+  "lon": 20.3603173,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Matiašovce,,Pod lesom",
+    "network": "IDS Východ",
+    "network:wikidata": "Q105226836",
+    "operator": "Slovenská autobusová doprava Poprad",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12960562431,
+  "lat": 49.3182014,
+  "lon": 20.3920689,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Zálesie,,vyšný koniec",
+    "network": "IDS Východ",
+    "network:wikidata": "Q105226836",
+    "operator": "Slovenská autobusová doprava Poprad",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12978482068,
+  "lat": 49.2816296,
+  "lon": 20.1746006,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Tatranská Javorina,Podspády",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3328"
+  }
+},
+{
+  "type": "node",
+  "id": 12978482070,
+  "lat": 49.2807862,
+  "lon": 20.1754320,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Tatranská Javorina,Podspády",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3329"
+  }
+},
+{
+  "type": "node",
+  "id": 12978485901,
+  "lat": 49.2739114,
+  "lon": 20.2297446,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ždiar,Strednica",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad;KMAL",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3331",
+    "route_ref": "MLD – A15;MLD – A45"
+  }
+},
+{
+  "type": "node",
+  "id": 12978485922,
+  "lat": 49.2665350,
+  "lon": 20.2918558,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ždiar,MŠ",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3341"
+  }
+},
+{
+  "type": "node",
+  "id": 12978485925,
+  "lat": 49.2637080,
+  "lon": 20.2995486,
+  "tags": {
+    "bus": "yes",
+    "fixme": "verify position",
+    "highway": "bus_stop",
+    "name": "Ždiar,rázc.Bachledova dolina",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3343"
+  }
+},
+{
+  "type": "node",
+  "id": 12978485942,
+  "lat": 49.2462485,
+  "lon": 20.3102480,
+  "tags": {
+    "bus": "yes",
+    "fixme": "verify position",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Tatranská Kotlina,Kardolina",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3345"
+  }
+},
+{
+  "type": "node",
+  "id": 12978485952,
+  "lat": 49.2249471,
+  "lon": 20.3242936,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Tatranská Kotlina,Čarda",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3349"
+  }
+},
+{
+  "type": "node",
+  "id": 12978485982,
+  "lat": 49.1501419,
+  "lon": 20.2565412,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry,Tatranská Lesná",
+    "network": "IDS Východ;Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q105226836;Q134701178",
+    "network:wikipedia": "sk:IDS Východ",
+    "operator": "Slovenská autobusová doprava Poprad;Koleje Małopolskie",
+    "operator:short": "SAD Poprad",
+    "operator:wikidata": "Q131812204;Q18609984",
+    "public_transport": "platform",
+    "ref:kmal": "3360"
+  }
+},
+{
+  "type": "node",
+  "id": 13438694909,
+  "lat": 49.1242548,
+  "lon": 20.2539115,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Nová Lesná Piesčiny",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "passenger_information_display": "no",
+    "public_transport": "platform",
+    "ref:kmal": "6487",
+    "request_stop": "yes",
+    "route_ref": "MLD – A15;MLD – A45",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13438694910,
+  "lat": 49.1243518,
+  "lon": 20.2540228,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Nová Lesná Piesčiny",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "passenger_information_display": "no",
+    "public_transport": "platform",
+    "ref:kmal": "6486",
+    "request_stop": "yes",
+    "route_ref": "MLD – A15;MLD – A45",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13438694914,
+  "lat": 49.1218693,
+  "lon": 20.2650688,
+  "tags": {
+    "bench": "no",
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Nová Lesná,cintorín",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "passenger_information_display": "no",
+    "public_transport": "platform",
+    "ref:kmal": "6488",
+    "request_stop": "yes",
+    "route_ref": "MLD – A15;MLD – A45",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13999733840,
+  "lat": 49.2335761,
+  "lon": 20.3464249,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Lendak, Tajchy"
+  }
+},
+{
+  "type": "node",
+  "id": 13999733841,
+  "lat": 49.2336952,
+  "lon": 20.3457892,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Lendak, Tajchy"
+  }
+},
+{
+  "type": "node",
+  "id": 14074575083,
+  "lat": 49.1494300,
+  "lon": 20.3193609,
+  "tags": {
+    "fixme": "upresniť polohu",
+    "highway": "bus_stop",
+    "name": "Vysoké Tatry, Tatranská Lomnica, P+R"
+  }
+}
+
+  ]
+}

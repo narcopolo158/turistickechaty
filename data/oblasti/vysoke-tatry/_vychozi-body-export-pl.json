@@ -1,0 +1,3429 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-09T12:08:06Z",
+    "timestamp_areas_base": "2026-08-08T01:53:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 132285713,
+  "lat": 49.2984537,
+  "lon": 19.9453482,
+  "tags": {
+    "ele": "822",
+    "funicular": "yes",
+    "name": "Gubałówka - Stacja Dolna",
+    "operator": "Polskie Koleje Linowe S.A.",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "funicular"
+  }
+},
+{
+  "type": "node",
+  "id": 132285718,
+  "lat": 49.3064043,
+  "lon": 19.9327877,
+  "tags": {
+    "ele": "1121",
+    "funicular": "yes",
+    "name": "Gubałówka - Stacja Górna",
+    "operator": "Polskie Koleje Linowe",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "funicular"
+  }
+},
+{
+  "type": "node",
+  "id": 291276729,
+  "lat": 49.3116951,
+  "lon": 20.0435854,
+  "tags": {
+    "name": "Murzasichle",
+    "place": "village",
+    "population": "1100",
+    "postal_code": "34-531",
+    "source:population": "wikipedia",
+    "teryt:rm": "01",
+    "teryt:simc": "0468690",
+    "teryt:stan_na": "2009-01-01",
+    "teryt:updated_by": "teryt2osm combine.py v. 43",
+    "wikidata": "Q2352468",
+    "wikipedia": "pl:Murzasichle"
+  }
+},
+{
+  "type": "node",
+  "id": 291276731,
+  "lat": 49.3031478,
+  "lon": 20.0728636,
+  "tags": {
+    "name": "Małe Ciche",
+    "place": "village",
+    "population": "463",
+    "postal_code": "34-531",
+    "source:population": "wikipedia",
+    "teryt:rm": "01",
+    "teryt:simc": "0468660",
+    "teryt:stan_na": "2009-01-01",
+    "teryt:updated_by": "teryt2osm combine.py v. 43",
+    "wikidata": "Q6799306",
+    "wikipedia": "pl:Małe Ciche"
+  }
+},
+{
+  "type": "node",
+  "id": 356724078,
+  "lat": 49.3396497,
+  "lon": 20.0055635,
+  "tags": {
+    "name": "Poronin",
+    "name:pl": "Poronin",
+    "name:ru": "Поронин",
+    "place": "village",
+    "population": "3507",
+    "postal_code": "34-520",
+    "source:population": "wikipedia",
+    "teryt:rm": "01",
+    "teryt:simc": "0468810",
+    "teryt:stan_na": "2009-01-01",
+    "teryt:updated_by": "teryt2osm combine.py v. 43",
+    "wikidata": "Q763079",
+    "wikipedia": "pl:Poronin"
+  }
+},
+{
+  "type": "node",
+  "id": 360680292,
+  "lat": 49.2362171,
+  "lon": 19.9970642,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:station": "bottom",
+    "ele": "1601.4",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 360680299,
+  "lat": 49.2326498,
+  "lon": 19.9828874,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:station": "top",
+    "ele": "1953",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 507043959,
+  "lat": 49.3423002,
+  "lon": 20.1072586,
+  "tags": {
+    "name": "Bukowina Tatrzańska",
+    "name:pl": "Bukowina Tatrzańska",
+    "place": "village",
+    "population": "2700",
+    "postal_code": "34-530",
+    "source:population": "wikipedia",
+    "teryt:simc": "0418484",
+    "wikidata": "Q1003408",
+    "wikipedia": "pl:Bukowina Tatrzańska"
+  }
+},
+{
+  "type": "node",
+  "id": 692609268,
+  "lat": 49.3405194,
+  "lon": 20.1386224,
+  "tags": {
+    "alt_name:de": "Joerg",
+    "name": "Jurgów",
+    "name:de": "Jurkau",
+    "name:hu": "Szepesgyörke",
+    "name:pl": "Jurgów",
+    "name:sk": "Jurgov",
+    "place": "village",
+    "population": "968",
+    "postal_code": "34-532",
+    "source:population": "wikipedia",
+    "teryt:simc": "0418716",
+    "wikidata": "Q1078259",
+    "wikipedia": "pl:Jurgów"
+  }
+},
+{
+  "type": "node",
+  "id": 692609306,
+  "lat": 49.3361203,
+  "lon": 19.9481892,
+  "tags": {
+    "ele": "1013",
+    "is_in:province": "województwo małopolskie",
+    "name": "Ząb",
+    "place": "village",
+    "population": "1975",
+    "postal_code": "34-521",
+    "teryt:simc": "0468944",
+    "wikidata": "Q3260191",
+    "wikipedia": "pl:Ząb (wieś)"
+  }
+},
+{
+  "type": "node",
+  "id": 692609384,
+  "lat": 49.3261512,
+  "lon": 20.1281267,
+  "tags": {
+    "name": "Brzegi",
+    "place": "village",
+    "postal_code": "34-532",
+    "teryt:simc": "0418366",
+    "wikidata": "Q4981209",
+    "wikipedia": "pl:Brzegi (powiat tatrzański)"
+  }
+},
+{
+  "type": "node",
+  "id": 692609473,
+  "lat": 49.3496283,
+  "lon": 20.0513835,
+  "tags": {
+    "name": "Gliczarów Górny",
+    "name:de": "Obergletscher",
+    "name:pl": "Gliczarów Górny",
+    "place": "village",
+    "population": "573",
+    "postal_code": "34-425",
+    "source:population": "wikipedia",
+    "teryt:simc": "0417562",
+    "wikidata": "Q2423516",
+    "wikipedia": "pl:Gliczarów Górny"
+  }
+},
+{
+  "type": "node",
+  "id": 692609501,
+  "lat": 49.3371165,
+  "lon": 19.9832917,
+  "tags": {
+    "name": "Suche",
+    "place": "village",
+    "population": "1253",
+    "postal_code": "34-520",
+    "source:population": "wikipedia",
+    "teryt:simc": "0468861",
+    "wikidata": "Q7632887",
+    "wikipedia": "pl:Suche (województwo małopolskie)"
+  }
+},
+{
+  "type": "node",
+  "id": 815584282,
+  "lat": 49.2771135,
+  "lon": 19.9630701,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 815584283,
+  "lat": 49.2799680,
+  "lon": 19.9628780,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 1035571010,
+  "lat": 49.3314289,
+  "lon": 20.0255577,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Kośle",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "936"
+  }
+},
+{
+  "type": "node",
+  "id": 1333726553,
+  "lat": 49.2790072,
+  "lon": 19.9798207,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Murowanica",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1441543053,
+  "lat": 49.3322517,
+  "lon": 20.0394751,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Kośne Hamry",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "935"
+  }
+},
+{
+  "type": "node",
+  "id": 1442006342,
+  "lat": 49.3322529,
+  "lon": 20.0409434,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Kośne Hamry",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1008"
+  }
+},
+{
+  "type": "node",
+  "id": 1446015729,
+  "lat": 49.2552100,
+  "lon": 20.1032445,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Palenica Białczańska",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1577220215,
+  "lat": 49.2970726,
+  "lon": 19.9900925,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Oberconiówka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1577220219,
+  "lat": 49.2973120,
+  "lon": 19.9904162,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Oberconiówka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1802599956,
+  "lat": 49.3005343,
+  "lon": 19.9619114,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "plac PKP",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1854937237,
+  "lat": 49.2969114,
+  "lon": 19.9504753,
+  "tags": {
+    "capital": "6",
+    "name": "Zakopane",
+    "name:cs": "Zakopané",
+    "name:he": "זקופנה",
+    "name:lt": "Zakopanė",
+    "name:pl": "Zakopane",
+    "name:ru": "Закопане",
+    "name:sk": "Zakopané",
+    "name:uk": "Закопане",
+    "place": "town",
+    "population": "25770",
+    "population:date": "2021-06-30",
+    "source:population": "Narodowy Spis Powszechny 2021",
+    "teryt:simc": "0963773",
+    "teryt:terc": "1217011",
+    "wikidata": "Q144786",
+    "wikipedia": "pl:Zakopane"
+  }
+},
+{
+  "type": "node",
+  "id": 1878521144,
+  "lat": 49.3065126,
+  "lon": 20.0895778,
+  "tags": {
+    "aerialway": "station",
+    "name": "Stacja górna Zgorzelisko Express"
+  }
+},
+{
+  "type": "node",
+  "id": 1878521145,
+  "lat": 49.3021363,
+  "lon": 20.0743930,
+  "tags": {
+    "aerialway": "station",
+    "name": "Stacja dolna Zgorzelisko Express"
+  }
+},
+{
+  "type": "node",
+  "id": 2420927557,
+  "lat": 49.3084611,
+  "lon": 19.9954184,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "name": "Olcza Kościół",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2422606108,
+  "lat": 49.3211100,
+  "lon": 19.9864109,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Ustup",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1003"
+  }
+},
+{
+  "type": "node",
+  "id": 2422606109,
+  "lat": 49.3191085,
+  "lon": 19.9838369,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Guty",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2422606110,
+  "lat": 49.3191576,
+  "lon": 19.9831544,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Guty",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2424495022,
+  "lat": 49.2857725,
+  "lon": 19.9803852,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Imperial",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2424495023,
+  "lat": 49.2859637,
+  "lon": 19.9802614,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Imperial",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 2424495027,
+  "lat": 49.2882726,
+  "lon": 19.9477400,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Małe Żywczańskie",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2424495028,
+  "lat": 49.2883953,
+  "lon": 19.9478309,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Małe Żywczańskie",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2424495033,
+  "lat": 49.2903960,
+  "lon": 19.9625668,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Watra",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2453669921,
+  "lat": 49.2824778,
+  "lon": 19.9868395,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "entry"
+  }
+},
+{
+  "type": "node",
+  "id": 2453669922,
+  "lat": 49.2779459,
+  "lon": 19.9884381,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "exit"
+  }
+},
+{
+  "type": "node",
+  "id": 2454155910,
+  "lat": 49.2930074,
+  "lon": 19.9302555,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2477695762,
+  "lat": 49.2944421,
+  "lon": 19.9846071,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Pardałówka 2",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2477695765,
+  "lat": 49.2942348,
+  "lon": 19.9844667,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Pardałówka 2",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2477695772,
+  "lat": 49.2903571,
+  "lon": 19.9808794,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Pardałówka 1",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2477695775,
+  "lat": 49.2911602,
+  "lon": 19.9813763,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Pardałówka 1",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2478749375,
+  "lat": 49.2792123,
+  "lon": 19.9798144,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Murowanica",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2491865410,
+  "lat": 49.2448981,
+  "lon": 19.9694097,
+  "tags": {
+    "aerialway": "station",
+    "ele": "1355.5",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2491865413,
+  "lat": 49.2324678,
+  "lon": 19.9809919,
+  "tags": {
+    "aerialway": "station",
+    "ele": "1958",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 2590503743,
+  "lat": 49.2816665,
+  "lon": 19.9846499,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "exit"
+  }
+},
+{
+  "type": "node",
+  "id": 2590503785,
+  "lat": 49.2829097,
+  "lon": 19.9868383,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "exit"
+  }
+},
+{
+  "type": "node",
+  "id": 2590503838,
+  "lat": 49.2838690,
+  "lon": 19.9840809,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "entry"
+  }
+},
+{
+  "type": "node",
+  "id": 2590503857,
+  "lat": 49.2841357,
+  "lon": 19.9866676,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "entry"
+  }
+},
+{
+  "type": "node",
+  "id": 2612572009,
+  "lat": 49.2813961,
+  "lon": 19.9651480,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "B. Czecha Skocznia",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 2612572015,
+  "lat": 49.2881002,
+  "lon": 19.9607459,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Piłsudskiego Start",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3087598099,
+  "lat": 49.2893447,
+  "lon": 20.0141963,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Cyrhla",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3087605147,
+  "lat": 49.2892382,
+  "lon": 20.0154889,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Cyrhla",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 3284773376,
+  "lat": 49.2928174,
+  "lon": 19.9416599,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Za Strugiem",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "6447"
+  }
+},
+{
+  "type": "node",
+  "id": 3284773379,
+  "lat": 49.2929972,
+  "lon": 19.9416957,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Za Strugiem",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "6448"
+  }
+},
+{
+  "type": "node",
+  "id": 3350238333,
+  "lat": 49.2963311,
+  "lon": 19.9549498,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Zakopane Równia Krupowa",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "4384",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3598345461,
+  "lat": 49.3432232,
+  "lon": 20.0035237,
+  "tags": {
+    "name": "Poronin",
+    "name:ru": "Поронин",
+    "name:uk": "Поронін",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "Po",
+    "wikidata": "Q762526",
+    "wikipedia": "en:Poronin railway station"
+  }
+},
+{
+  "type": "node",
+  "id": 3634554811,
+  "lat": 49.2879413,
+  "lon": 19.9674132,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Parcele Urzędnicze",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3634554813,
+  "lat": 49.2884033,
+  "lon": 19.9658804,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Parcele Urzędnicze",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3637972442,
+  "lat": 49.2904626,
+  "lon": 19.9545536,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Hotelarz",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3639834093,
+  "lat": 49.2964618,
+  "lon": 20.0733149,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3639834098,
+  "lat": 49.2957148,
+  "lon": 20.0687391,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 3641111445,
+  "lat": 49.2787709,
+  "lon": 19.9386463,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Dolina Strążyska",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3645637567,
+  "lat": 49.2866832,
+  "lon": 19.9570621,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Makuszyńskiego",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 3668981110,
+  "lat": 49.3200218,
+  "lon": 19.9807663,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Harenda Szkoła",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3687386913,
+  "lat": 49.2956163,
+  "lon": 19.9462208,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Zakopane Targowica",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "6449",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3692337413,
+  "lat": 49.2835461,
+  "lon": 19.9445596,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Regle",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3700102148,
+  "lat": 49.2965980,
+  "lon": 19.9533069,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Zakopane Aleja 3 Maja Dolne",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "945",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4343338083,
+  "lat": 49.3295768,
+  "lon": 20.0958270,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Bukowina Tatrzańska Klin",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "passenger_information_display": "no",
+    "public_transport": "platform",
+    "ref": "933",
+    "ref:kmal": "933",
+    "request_stop": "yes",
+    "shelter": "yes",
+    "tactile_paving": "no",
+    "url:kmal": "https://kolejemalopolskie.kiedyprzyjedzie.pl/#/stops/771686:824766/departures",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4343338084,
+  "lat": 49.3303578,
+  "lon": 20.0970576,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Bukowina Tatrzańska Klin",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "passenger_information_display": "no",
+    "public_transport": "platform",
+    "ref:kmal": "1010",
+    "request_stop": "yes",
+    "shelter": "yes",
+    "tactile_paving": "no",
+    "url:kmal": "https://kolejemalopolskie.kiedyprzyjedzie.pl/#/stops/771686:824767/departures",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4343338085,
+  "lat": 49.3366214,
+  "lon": 20.0992243,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bukowina Tatrzańska Poczta",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "932",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4343339489,
+  "lat": 49.3423906,
+  "lon": 20.1077218,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bukowina Tatrzańska Kościół",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "931",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4343339490,
+  "lat": 49.3424778,
+  "lon": 20.1084643,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bukowina Tatrzańska Kościół",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1012",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4364203935,
+  "lat": 49.2960519,
+  "lon": 19.9430567,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Górka",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "946"
+  }
+},
+{
+  "type": "node",
+  "id": 4801423040,
+  "lat": 49.2818788,
+  "lon": 19.9858474,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "exit"
+  }
+},
+{
+  "type": "node",
+  "id": 4801423062,
+  "lat": 49.2838928,
+  "lon": 19.9854519,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "entry"
+  }
+},
+{
+  "type": "node",
+  "id": 4801423074,
+  "lat": 49.2818094,
+  "lon": 19.9857345,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "exit"
+  }
+},
+{
+  "type": "node",
+  "id": 4801423096,
+  "lat": 49.2839143,
+  "lon": 19.9853698,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "entry"
+  }
+},
+{
+  "type": "node",
+  "id": 4801423101,
+  "lat": 49.2839355,
+  "lon": 19.9845711,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "entry"
+  }
+},
+{
+  "type": "node",
+  "id": 4801423102,
+  "lat": 49.2817548,
+  "lon": 19.9850560,
+  "tags": {
+    "aerialway": "station",
+    "aerialway:access": "exit"
+  }
+},
+{
+  "type": "node",
+  "id": 5370355933,
+  "lat": 49.2843180,
+  "lon": 19.9733797,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Czecha - rondo Jana Pawła II",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5374552440,
+  "lat": 49.2903372,
+  "lon": 19.9623595,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Watra",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5374643095,
+  "lat": 49.2851186,
+  "lon": 19.9731696,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Rondo Jana Pawła II",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5374643096,
+  "lat": 49.2852711,
+  "lon": 19.9733823,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Rondo Jana Pawła II",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5374732407,
+  "lat": 49.2994312,
+  "lon": 19.9610539,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Rejon Dworca",
+    "old_name": "Rejon Dworców",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5374732408,
+  "lat": 49.2997930,
+  "lon": 19.9608743,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "16",
+    "name": "Rejon Dworca st. 16",
+    "old_name": "Rejon Dworców",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5374732409,
+  "lat": 49.2997602,
+  "lon": 19.9609236,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "17",
+    "name": "Rejon Dworca st. 17",
+    "old_name": "Rejon Dworców",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5374789417,
+  "lat": 49.2961032,
+  "lon": 19.9443428,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Górka",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "997"
+  }
+},
+{
+  "type": "node",
+  "id": 5374789418,
+  "lat": 49.2934151,
+  "lon": 19.9330951,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Szymaszkowa",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "996",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5374789419,
+  "lat": 49.2935394,
+  "lon": 19.9328504,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Szymaszkowa",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "947",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5374822728,
+  "lat": 49.2828374,
+  "lon": 19.9431163,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bogdańskiego",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5406997136,
+  "lat": 49.3135990,
+  "lon": 19.9937993,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Olcza Stachonie",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5406997137,
+  "lat": 49.3142932,
+  "lon": 19.9940806,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Olcza Stachonie",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5407031652,
+  "lat": 49.3187431,
+  "lon": 19.9892099,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Olcza Wojdyły",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5407031653,
+  "lat": 49.3194566,
+  "lon": 19.9892339,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Olcza Wojdyły",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5407285335,
+  "lat": 49.3126608,
+  "lon": 19.9615155,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ciągłówka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5407547218,
+  "lat": 49.3188860,
+  "lon": 19.9941957,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Rybkówka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5407547219,
+  "lat": 49.3188783,
+  "lon": 19.9942548,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Rybkówka",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5407566353,
+  "lat": 49.3225152,
+  "lon": 19.9942731,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Frączkówka",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 5407576632,
+  "lat": 49.3243686,
+  "lon": 19.9950417,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Kościuszki II",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 5407576633,
+  "lat": 49.3297870,
+  "lon": 19.9971883,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Kościuszki I",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 5407576634,
+  "lat": 49.3364299,
+  "lon": 20.0029789,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Za Torem",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5837105421,
+  "lat": 49.2850832,
+  "lon": 19.9816088,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "check_date:shelter": "2024-07-20",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Bystre",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5837105422,
+  "lat": 49.2852102,
+  "lon": 19.9816836,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Bystre",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5837105423,
+  "lat": 49.2841702,
+  "lon": 19.9899459,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Jaszczurówka - Bory",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5837105424,
+  "lat": 49.2840580,
+  "lon": 19.9897262,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Jaszczurówka - Bory",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5837105425,
+  "lat": 49.2839851,
+  "lon": 19.9987348,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "check_date:shelter": "2023-08-15",
+    "highway": "bus_stop",
+    "name": "Jaszczurówka",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5837105426,
+  "lat": 49.2838837,
+  "lon": 19.9989887,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "check_date:shelter": "2023-08-15",
+    "highway": "bus_stop",
+    "name": "Jaszczurówka",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5837105427,
+  "lat": 49.2850003,
+  "lon": 20.0038671,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Chłabówka Górna",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5837105428,
+  "lat": 49.2848056,
+  "lon": 20.0056891,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Chłabówka Górna",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 6088159374,
+  "lat": 49.3370677,
+  "lon": 20.0061475,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Poronin Dom Kultury",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "938",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6088159375,
+  "lat": 49.3362637,
+  "lon": 20.0063279,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Poronin Dom Kultury",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1005",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6338123346,
+  "lat": 49.3328928,
+  "lon": 20.0008700,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Misiagi",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "939",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6351112259,
+  "lat": 49.3311984,
+  "lon": 19.9994347,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Misiagi",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1004",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6351115288,
+  "lat": 49.3205588,
+  "lon": 19.9855008,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Ustup",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "940"
+  }
+},
+{
+  "type": "node",
+  "id": 7213575786,
+  "lat": 49.3119618,
+  "lon": 19.9722446,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bachledy PKL",
+    "operator": "14",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7213596385,
+  "lat": 49.3097150,
+  "lon": 19.9678320,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Spyrkówka",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "941",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7215717985,
+  "lat": 49.3112593,
+  "lon": 19.9932052,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Olcza Stachonia",
+    "operator": "14",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7259138928,
+  "lat": 49.3047674,
+  "lon": 19.9346919,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 8227350750,
+  "lat": 49.2818158,
+  "lon": 19.9419888,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bogdańskiego",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 8227350751,
+  "lat": 49.2840638,
+  "lon": 19.9450289,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Regle",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8227350752,
+  "lat": 49.2896356,
+  "lon": 19.9482114,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kasprusie - ZCE",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 8227350753,
+  "lat": 49.2898431,
+  "lon": 19.9483190,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kasprusie - ZCE",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8227451018,
+  "lat": 49.2863421,
+  "lon": 19.9468398,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Strążyska - Do Wantuli",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8227451019,
+  "lat": 49.2864763,
+  "lon": 19.9467672,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Strążyska - Do Wantuli",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 8355981071,
+  "lat": 49.2966218,
+  "lon": 19.9479099,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Targowica",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "6450",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8356069752,
+  "lat": 49.3073942,
+  "lon": 19.9608474,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane ul. Kasprowicza",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1001",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8356192896,
+  "lat": 49.2866575,
+  "lon": 19.9570885,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Makuszyńskiego",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 8356192897,
+  "lat": 49.2893085,
+  "lon": 19.9328618,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Skibówki I",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "6445"
+  }
+},
+{
+  "type": "node",
+  "id": 8356192898,
+  "lat": 49.2894829,
+  "lon": 19.9326752,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Skibówki I",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "6446"
+  }
+},
+{
+  "type": "node",
+  "id": 9107130136,
+  "lat": 49.2642458,
+  "lon": 20.1152895,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Łysa Polana",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9214361412,
+  "lat": 49.2865177,
+  "lon": 20.0292842,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Brzeziny",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9214377511,
+  "lat": 49.2866667,
+  "lon": 20.0313318,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Brzeziny",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9526875358,
+  "lat": 49.3157893,
+  "lon": 19.9781859,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Guty Sklep GS",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 9721651827,
+  "lat": 49.3316972,
+  "lon": 20.0157985,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Jesionkówka",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "937"
+  }
+},
+{
+  "type": "node",
+  "id": 9803929223,
+  "lat": 49.3095586,
+  "lon": 19.9676364,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane Spyrkówka",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1002",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9841395652,
+  "lat": 49.3007678,
+  "lon": 19.9630396,
+  "tags": {
+    "addr:city": "Zakopane",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Zakopane",
+    "network": "Polregio;PKP Intercity",
+    "network:short": "PR;IC",
+    "operator": "PKP Polskie Linie Kolejowe",
+    "operator:short": "PKP PLK",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "Zp",
+    "train": "yes",
+    "wikidata": "Q9386089",
+    "wikipedia": "pl:Zakopane (stacja kolejowa)"
+  }
+},
+{
+  "type": "node",
+  "id": 9893396401,
+  "lat": 49.2637652,
+  "lon": 20.1127099,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Łysa Polana",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10086663285,
+  "lat": 49.2846165,
+  "lon": 20.1129151,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Wierch Poroniec",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10139557282,
+  "lat": 49.3141654,
+  "lon": 19.9407912,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Gubałówka Pomnik",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10303456154,
+  "lat": 49.3029907,
+  "lon": 19.9578993,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Nowotarska Szkoła",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10303456157,
+  "lat": 49.3036238,
+  "lon": 19.9582409,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Nowotarska Szkoła",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10303456173,
+  "lat": 49.3341485,
+  "lon": 20.0981131,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bukowina Tatrzańska Poczta",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1011",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10303456178,
+  "lat": 49.3362306,
+  "lon": 20.0640769,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Stasikówka",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1009"
+  }
+},
+{
+  "type": "node",
+  "id": 10303456179,
+  "lat": 49.3368618,
+  "lon": 20.0626677,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Stasikówka",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "934"
+  }
+},
+{
+  "type": "node",
+  "id": 10303456180,
+  "lat": 49.3312105,
+  "lon": 20.0265634,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Kośle",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1007"
+  }
+},
+{
+  "type": "node",
+  "id": 10303456181,
+  "lat": 49.3315303,
+  "lon": 20.0178430,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Poronin Jesionkówka",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "1006"
+  }
+},
+{
+  "type": "node",
+  "id": 10677122510,
+  "lat": 49.2778811,
+  "lon": 19.9686362,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10677122511,
+  "lat": 49.2794728,
+  "lon": 19.9671542,
+  "tags": {
+    "aerialway": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 10936811720,
+  "lat": 49.2871235,
+  "lon": 20.0300940,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Brzeziny",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10936811721,
+  "lat": 49.2870070,
+  "lon": 20.0299423,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Brzeziny",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11070927263,
+  "lat": 49.3308261,
+  "lon": 20.0964745,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Bukowina Tatrzańska Klin",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "passenger_information_display": "no",
+    "public_transport": "platform",
+    "ref:kmal": "7534",
+    "request_stop": "yes",
+    "shelter": "yes",
+    "tactile_paving": "no",
+    "url:kmal": "https://kolejemalopolskie.kiedyprzyjedzie.pl/#/stops/771686:2614454/departures",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11134033565,
+  "lat": 49.2729091,
+  "lon": 19.9809444,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kuźnice",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11442952095,
+  "lat": 49.3294953,
+  "lon": 19.9960066,
+  "tags": {
+    "internet_access": "no",
+    "name": "Poronin Misiagi",
+    "public_transport": "station",
+    "railway": "halt",
+    "train": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11522264832,
+  "lat": 49.2877013,
+  "lon": 19.9560606,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Grunwaldzka Ornak",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11522264833,
+  "lat": 49.2878491,
+  "lon": 19.9560927,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Grunwaldzka - Ornak",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12070320474,
+  "lat": 49.2860548,
+  "lon": 19.9801346,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Imperial",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12974795524,
+  "lat": 49.3036807,
+  "lon": 19.9598241,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane ul. Chramcówki",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "4385"
+  }
+},
+{
+  "type": "node",
+  "id": 12974795526,
+  "lat": 49.3037068,
+  "lon": 19.9595777,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane ul. Chramcówki",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "3291"
+  }
+},
+{
+  "type": "node",
+  "id": 12974795527,
+  "lat": 49.3076673,
+  "lon": 19.9608440,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zakopane ul. Kasprowicza",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "942"
+  }
+},
+{
+  "type": "node",
+  "id": 12978172578,
+  "lat": 49.3423764,
+  "lon": 20.1358662,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jurgów I",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "3319"
+  }
+},
+{
+  "type": "node",
+  "id": 12978172580,
+  "lat": 49.3427476,
+  "lon": 20.1358804,
+  "tags": {
+    "bus": "yes",
+    "fixme": "verify position",
+    "highway": "bus_stop",
+    "name": "Jurgów I",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "3320"
+  }
+},
+{
+  "type": "node",
+  "id": 12978172584,
+  "lat": 49.3398801,
+  "lon": 20.1387542,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jurgów Remiza",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "3321"
+  }
+},
+{
+  "type": "node",
+  "id": 12978172586,
+  "lat": 49.3399493,
+  "lon": 20.1388338,
+  "tags": {
+    "bus": "yes",
+    "fixme": "verify position",
+    "highway": "bus_stop",
+    "name": "Jurgów Remiza",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "3322"
+  }
+},
+{
+  "type": "node",
+  "id": 12978172591,
+  "lat": 49.3345581,
+  "lon": 20.1452980,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jurgów II",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "3323"
+  }
+},
+{
+  "type": "node",
+  "id": 12978172592,
+  "lat": 49.3344809,
+  "lon": 20.1455705,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jurgów II",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "3324"
+  }
+},
+{
+  "type": "node",
+  "id": 12978172593,
+  "lat": 49.3188067,
+  "lon": 20.1552257,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Jurgów Stacja Narciarska",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref:kmal": "3325",
+    "url:kmal": "https://kolejemalopolskie.kiedyprzyjedzie.pl/#/stops/1428603:1491107/departures"
+  }
+},
+{
+  "type": "node",
+  "id": 12978172595,
+  "lat": 49.3048064,
+  "lon": 20.1603630,
+  "tags": {
+    "bus": "yes",
+    "fixme": "verify position",
+    "highway": "bus_stop",
+    "name": "Jurgów Granica",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "3326"
+  }
+},
+{
+  "type": "node",
+  "id": 12978172597,
+  "lat": 49.3048846,
+  "lon": 20.1604239,
+  "tags": {
+    "bus": "yes",
+    "fixme": "verify position",
+    "highway": "bus_stop",
+    "name": "Jurgów Granica",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "3327"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073444,
+  "lat": 49.3012883,
+  "lon": 19.9625256,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "1",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073445,
+  "lat": 49.3014702,
+  "lon": 19.9627750,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "2",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073446,
+  "lat": 49.3012279,
+  "lon": 19.9626329,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "3",
+    "name": "Zakopane Dworzec",
+    "network": "Małopolskie Linie Dowozowe",
+    "network:short": "MLD",
+    "network:wikidata": "Q134701178",
+    "operator": "Koleje Małopolskie",
+    "public_transport": "platform",
+    "ref": "944"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073447,
+  "lat": 49.3013040,
+  "lon": 19.9627790,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "4",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073448,
+  "lat": 49.3014133,
+  "lon": 19.9629306,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "5",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073465,
+  "lat": 49.3020369,
+  "lon": 19.9639498,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "15",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073466,
+  "lat": 49.3019791,
+  "lon": 19.9638680,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "14",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073467,
+  "lat": 49.3019206,
+  "lon": 19.9637862,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "13",
+    "name": "Zakopane Dworzec",
+    "network": "Flixbus",
+    "network:wikidata": "Q15712258",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073468,
+  "lat": 49.3018628,
+  "lon": 19.9637017,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "12",
+    "name": "Zakopane Dworzec",
+    "network": "Flixbus",
+    "network:wikidata": "Q15712258",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073469,
+  "lat": 49.3018217,
+  "lon": 19.9636239,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "11",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073470,
+  "lat": 49.3009175,
+  "lon": 19.9624786,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "7",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073471,
+  "lat": 49.3007164,
+  "lon": 19.9621983,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "6",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073472,
+  "lat": 49.3014378,
+  "lon": 19.9632444,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "9",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073473,
+  "lat": 49.3013023,
+  "lon": 19.9630607,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "8",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12986073474,
+  "lat": 49.3017972,
+  "lon": 19.9635247,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "10",
+    "name": "Zakopane Dworzec",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12990571811,
+  "lat": 49.2921810,
+  "lon": 19.9595416,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Krupówki Pomnik hr. Władysława Zamoyskiego",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12990571815,
+  "lat": 49.2880271,
+  "lon": 19.9673858,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Parcele Urzędnicze",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12990571816,
+  "lat": 49.2883385,
+  "lon": 19.9658087,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Parcele Urzędnicze",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12992038790,
+  "lat": 49.2904175,
+  "lon": 20.0797761,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zazadnia",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12992038792,
+  "lat": 49.2890132,
+  "lon": 20.0811882,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Zazadnia",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12992038794,
+  "lat": 49.2861484,
+  "lon": 20.1125661,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Wierch Poroniec",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12992399856,
+  "lat": 49.2841182,
+  "lon": 19.9744146,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Przewodników Tatrzańskich Rondo",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12992399858,
+  "lat": 49.2843412,
+  "lon": 19.9743207,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Przewodników Tatrzańskich Rondo",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12992399859,
+  "lat": 49.2799889,
+  "lon": 19.9797575,
+  "tags": {
+    "bus": "yes",
+    "fixme": "verify position",
+    "highway": "bus_stop",
+    "name": "Karłowicza Skrzyżowanie",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12992399860,
+  "lat": 49.2800536,
+  "lon": 19.9796281,
+  "tags": {
+    "bus": "yes",
+    "fixme": "verify position",
+    "highway": "bus_stop",
+    "name": "Karłowicza Skrzyżowanie",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12992399867,
+  "lat": 49.2842017,
+  "lon": 19.9807540,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Karłowicza",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12992399871,
+  "lat": 49.2842778,
+  "lon": 19.9806245,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Karłowicza",
+    "public_transport": "platform",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13051932790,
+  "lat": 49.3441950,
+  "lon": 20.1979425,
+  "tags": {
+    "bus": "yes",
+    "departures_board": "timetable",
+    "highway": "bus_stop",
+    "name": "Łapszanka Kapliczka",
+    "operator": "Powiat Nowotarski",
+    "public_transport": "platform",
+    "website": "https://www.nowotarski.pl/rozklad-jazdy/dokumenty/linia-uzytecznosci-publicznej-u1211005-lapszanka-frydman-nowy-targ-organizowana-przez-powiat-nowotarski-927.html"
+  }
+},
+{
+  "type": "node",
+  "id": 14062494136,
+  "lat": 49.3226074,
+  "lon": 19.9860904,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ustup Lewiatan",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 14062494137,
+  "lat": 49.3226049,
+  "lon": 19.9862037,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ustup Lewiatan",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 14062494138,
+  "lat": 49.3170835,
+  "lon": 19.9773068,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Harenda",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14062494139,
+  "lat": 49.3171050,
+  "lon": 19.9774375,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Harenda",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14062494140,
+  "lat": 49.3027809,
+  "lon": 19.9946847,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mrowce",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 14062494141,
+  "lat": 49.2998358,
+  "lon": 19.9942064,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Huty",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 14062494142,
+  "lat": 49.3131877,
+  "lon": 19.9751365,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bachledy",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 14062494143,
+  "lat": 49.3153553,
+  "lon": 19.9775527,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Guty Sklep GS",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 14067802981,
+  "lat": 49.3174249,
+  "lon": 19.9805104,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Guty Museum Kasprowicza",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14067802982,
+  "lat": 49.3172072,
+  "lon": 19.9803122,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Guty Museum Kasprowicza",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14067802983,
+  "lat": 49.3109516,
+  "lon": 19.9700186,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Spyrkówka",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14072487356,
+  "lat": 49.3400074,
+  "lon": 20.0004054,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Suche Dolne",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14072487357,
+  "lat": 49.3398835,
+  "lon": 20.0001814,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Suche Dolne",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14072487358,
+  "lat": 49.3393003,
+  "lon": 19.9942683,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Suche – Dom Orłów",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14072487359,
+  "lat": 49.3392212,
+  "lon": 19.9951989,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Suche – Dom Orłów",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 14072487360,
+  "lat": 49.3386982,
+  "lon": 19.9903422,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Suche – Przy Koziokach",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14072487361,
+  "lat": 49.3386915,
+  "lon": 19.9906473,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Suche – Przy Koziokach",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14072487369,
+  "lat": 49.3026994,
+  "lon": 19.9945891,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mrowce",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "way",
+  "id": 174697599,
+  "center": {
+    "lat": 49.2693484,
+    "lon": 19.9792070
+  },
+  "nodes": [
+    3537917448,
+    3537918550,
+    3537919197,
+    3537919193,
+    3537918547,
+    10674476564,
+    10674476563,
+    3537918129,
+    3537918543,
+    3537918127,
+    3537917437,
+    3537917438,
+    3636704059,
+    3636704058,
+    3636704055,
+    3537918125,
+    2793581553,
+    2793581558,
+    3537919198,
+    10129192177,
+    3537917448
+  ],
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:housenumber": "14",
+    "addr:postcode": "34-500",
+    "addr:street": "Kuźnice",
+    "aerialway": "station",
+    "building": "train_station",
+    "building:levels": "3",
+    "name": "Dolna stacja kolei linowej Kasprowy Wierch",
+    "phone": "+48 18 20 20 300",
+    "public_transport": "station",
+    "roof:shape": "many",
+    "source": "www.geoportal.gov.pl: Ortofoto",
+    "website": "https://www.pkl.pl/kasprowy-wierch/kasprowy.html"
+  }
+},
+{
+  "type": "way",
+  "id": 184187403,
+  "center": {
+    "lat": 49.2328491,
+    "lon": 19.9828376
+  },
+  "nodes": [
+    3537914664,
+    3537911671,
+    3537911672,
+    3537914669,
+    3537911673,
+    3537914182,
+    3537914668,
+    3537914667,
+    3537914666,
+    3537911667,
+    3537911666,
+    3537914656,
+    3537911664,
+    3537914657,
+    10674633346,
+    10674633343,
+    10674633342,
+    10674633345,
+    3537914658,
+    3537914660,
+    10674633344,
+    3537911668,
+    3537911669,
+    3537914662,
+    3537910432,
+    10674633340,
+    10674633339,
+    10674633338,
+    10674633341,
+    3537910433,
+    3537914663,
+    10674633337,
+    10674633335,
+    10674633334,
+    10674633336,
+    3537914670,
+    3537911670,
+    3537914672,
+    3537914673,
+    3537914674,
+    3537914675,
+    3537911677,
+    3537911676,
+    3537911675,
+    3537911674,
+    3537914671,
+    3537914665,
+    7192519771,
+    3537914664
+  ],
+  "tags": {
+    "addr:city": "Zakopane",
+    "addr:city:simc": "0963773",
+    "addr:housenumber": "1",
+    "addr:street": "Kasprowy Wierch",
+    "addr:street:sym_ul": "27602",
+    "aerialway": "station",
+    "building": "commercial",
+    "building:levels": "2",
+    "building:material": "stone",
+    "name": "Górna stacja kolei linowej Kasprowy Wierch",
+    "public_transport": "station",
+    "radiopolska_name": "Zakopane *Góra Kasprowy Wierch*",
+    "radiopolska_url": "https://radiopolska.pl/wykaz/obiekt/527",
+    "source": "www.geoportal.gov.pl: Ortofoto",
+    "source:addr": "mzakopane.e-mapa.net",
+    "validate:ants:yellow": "ignore"
+  }
+},
+{
+  "type": "way",
+  "id": 184188832,
+  "center": {
+    "lat": 49.2519675,
+    "lon": 19.9737824
+  },
+  "nodes": [
+    3537915946,
+    3537915948,
+    3537915952,
+    3537915847,
+    3537915954,
+    3537915955,
+    3537915848,
+    3537915845,
+    3537915950,
+    3537915947,
+    3537915089,
+    3537915846,
+    3537915844,
+    3537915957,
+    3537915956,
+    3537915949,
+    3537915835,
+    3537915824,
+    3537915820,
+    3537915934,
+    3537915933,
+    3537915932,
+    3537915930,
+    3537915931,
+    3537915821,
+    3537915822,
+    3537915823,
+    3537915935,
+    3537915936,
+    3537915825,
+    3537915826,
+    3537915827,
+    3537915828,
+    3537915940,
+    3537915939,
+    3537915938,
+    3537903525,
+    3537915937,
+    3537915941,
+    3537915942,
+    3537915943,
+    3537915945,
+    3537915833,
+    3537915832,
+    3537915831,
+    3537915830,
+    3537915829,
+    3537915944,
+    3537915834,
+    3537915837,
+    3537915951,
+    3537915953,
+    3537915843,
+    3537915838,
+    3537915836,
+    3537915946
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "name": "Pośrednia stacja kolei linowej Kasprowy Wierch",
+    "public_transport": "station",
+    "source": "www.geoportal.gov.pl: Ortofoto"
+  }
+},
+{
+  "type": "way",
+  "id": 347517294,
+  "center": {
+    "lat": 49.2324134,
+    "lon": 19.9810454
+  },
+  "nodes": [
+    3537914639,
+    3537911645,
+    3537914623,
+    3537911644,
+    3537911646,
+    3537914638,
+    3537911647,
+    3537911648,
+    3537914642,
+    3537911653,
+    3537914645,
+    3537914644,
+    3537914639
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "way",
+  "id": 759220617,
+  "center": {
+    "lat": 49.3053820,
+    "lon": 20.0901410
+  },
+  "nodes": [
+    7091577734,
+    7091577735,
+    7091577736,
+    7091577737,
+    7091577738,
+    7091577739,
+    7091577740,
+    7091577741,
+    7091577742,
+    7091577743,
+    7091577744,
+    7091577745,
+    7091577734
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 783181495,
+  "center": {
+    "lat": 49.3062664,
+    "lon": 19.9331217
+  },
+  "nodes": [
+    7313963293,
+    7259138927,
+    7313963292,
+    7313963291,
+    7313963290,
+    7313963293
+  ],
+  "tags": {
+    "aerialway": "station",
+    "building": "roof"
+  }
+}
+
+  ]
+}
