@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-08T18:25:50Z",
-    "timestamp_areas_base": "2026-08-07T03:28:41Z",
+    "timestamp_osm_base": "2026-06-14T15:22:30Z",
+    "timestamp_areas_base": "2026-06-13T07:51:15Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -256,8 +256,9 @@
     "guest_house": "guest_house",
     "internet_access": "yes",
     "internet_access:fee": "no",
+    "mobile": "+421 911 763 285",
     "name": "Chata Ester Oravská priehrada",
-    "phone": "+421 911 763 285",
+    "phone": "+421911763285",
     "rooms": "5",
     "tourism": "guest_house",
     "website": "https://en.megaubytovanie.sk/chata-ester-oravska-priehrada"
@@ -979,33 +980,6 @@
     "stars": "fence",
     "tourism": "hotel",
     "website": "https://hajenkahotel.sk/"
-  }
-},
-{
-  "type": "way",
-  "id": 995031659,
-  "center": {
-    "lat": 49.3257031,
-    "lon": 18.3767048
-  },
-  "nodes": [
-    9188402358,
-    9188402357,
-    9188402356,
-    9188402355,
-    9188402358
-  ],
-  "tags": {
-    "building": "house",
-    "email": "info@chataustopy.cz",
-    "internet_access": "wlan",
-    "internet_access:fee": "customers",
-    "name": "U stopy",
-    "pets": "yes",
-    "phone": "+420731469438",
-    "source": "Ortofotomozaika SR",
-    "tourism": "chalet",
-    "website": "https://www.chataustopy.cz/"
   }
 },
 {

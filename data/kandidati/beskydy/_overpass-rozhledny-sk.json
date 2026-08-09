@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-06-13T13:12:25Z",
-    "timestamp_areas_base": "2026-06-12T12:14:17Z",
+    "timestamp_osm_base": "2026-08-09T18:18:21Z",
+    "timestamp_areas_base": "2026-08-08T11:35:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -36,9 +36,11 @@
 {
   "type": "node",
   "id": 1943050213,
-  "lat": 49.3918247,
-  "lon": 19.1281606,
+  "lat": 49.3918281,
+  "lon": 19.1281872,
   "tags": {
+    "access": "yes",
+    "fee": "no",
     "man_made": "tower",
     "name": "Rozhladňa Sedlo Beskyd",
     "tourism": "viewpoint",
@@ -64,11 +66,10 @@
   "lat": 49.3404956,
   "lon": 18.9475498,
   "tags": {
-    "access": "no",
     "height": "17",
     "man_made": "tower",
     "name": "Rozhľadňa na Bobovci",
-    "opening_hours": "closed",
+    "opening_hours": "24/7",
     "tourism": "viewpoint",
     "tower:type": "observation",
     "wikidata": "Q118907089"
@@ -343,6 +344,7 @@
   "tags": {
     "height": "2",
     "man_made": "tower",
+    "mapillary": "2398163940678085",
     "tower:type": "observation"
   }
 },
@@ -365,11 +367,15 @@
   "lat": 49.4102248,
   "lon": 18.4987314,
   "tags": {
+    "access": "yes",
+    "fee": "no",
     "height": "10",
     "man_made": "tower",
     "name": "Rozhľadňa nad Zlámanou",
+    "summit:register": "yes",
     "tower:construction": "wood",
-    "tower:type": "observation"
+    "tower:type": "observation",
+    "wheelchair": "no"
   }
 },
 {
@@ -410,8 +416,8 @@
   "type": "way",
   "id": 802274443,
   "center": {
-    "lat": 49.3538845,
-    "lon": 19.1317298
+    "lat": 49.3539333,
+    "lon": 19.1318216
   },
   "nodes": [
     7504448994,
@@ -423,9 +429,12 @@
     7504448994
   ],
   "tags": {
-    "fixme": "upresniť polohu a veľkosť",
+    "access": "yes",
+    "check_date": "2026-07-13",
+    "fee": "no",
     "man_made": "tower",
     "name": "Protipožiarna monitorovacia veža",
+    "opening_hours": "24/7",
     "tower:type": "observation"
   }
 },
