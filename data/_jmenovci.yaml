@@ -28,27 +28,6 @@ jmenovci:
       a slug s příponou obce se přidělí až s doloženou obcí (R5).
     rozhodl: Claude (návrh z 28. 7. 2026) — čeká na potvrzení Michalem
     checked: 2026-07-28
-  - jadro: slovanka
-    objekty:
-      - jizerske-hory/rozhledna-slovanka
-      - krkonose/bouda-slovanka
-    duvod: >-
-      Dva různé objekty asi 40 km od sebe: „rozhledna Slovanka"
-      v Jizerských horách (OSM way/470025078, 50,7733 / 15,1963) a „Bouda
-      Slovanka" v Krkonoších (OSM way/31360811, 50,6705 / 15,7284). Kolize
-      byla v korpusu od 28. 7. 2026, kdy přibyly rozhledny, ale kontrola ji
-      NEVIDĚLA: „rozhledna" nebyla mezi typovými slovy, takže jádra
-      „rozhledna slovanka" a „slovanka" spadla do dvou hromádek (opraveno
-      29. 7. 2026 — tenhle záznam je jediný nález té opravy). Od
-      2. 8. 2026 jsou publikované OBA (rozhledna povýšena při triáži
-      Jizerek) — na webu je rozlišuje název (Bouda × Rozhledna) a oblast
-      v drobečkové navigaci. Rozlišovač `obec` (DATA-17 R2) má doložený
-      jen jeden z nich — bouda `Černý Důl`; u rozhledny se ani při
-      křížovém ověření 2. 8. NEVYMYSLELA (vlastník věže je město Lučany,
-      chata u ní je ale v katalozích pod Hraběticemi/Janovem — katastr
-      věže žádný pramen neříká, R6), rozlišení nese název a oblast (R5).
-    rozhodl: Claude (návrh z 29. 7. 2026) — čeká na potvrzení Michalem
-    checked: 2026-07-29
   - jadro: zaly
     objekty:
       - krkonose/rozhledna-zaly
@@ -568,22 +547,6 @@ jmenovci:
       „Bacówka".
     rozhodl: Claude (8. 8. 2026, samostatný blok) — čeká na doložení obce při triáži
     checked: 2026-08-08
-  - jadro: alpina
-    objekty:
-      - javorniky-vsetinske-vrchy/chata-alpina
-      - nizke-tatry/chata-alpina
-    duvod: >-
-      DVA RŮZNÉ OBJEKTY, naměřeno 79 972 m: Chata Alpina v Lazech pod
-      Makytou na slovenské straně Javorníků a Chata Alpina u Ružomberku
-      (Nízké Tatry, export 9. 8. 2026). Obě obce jsou doložené, takže
-      rozlišovač je k dispozici hned (DATA-17 R6). Jméno „Alpina" nese
-      v Karpatech řada penzionů — PŮVODNÍ PROTĚJŠEK z tohohle záznamu,
-      vysokotatranská Alpina, byl 9. 8. 2026 vyřazen jako pronájem
-      (Alpina 1 ve Staré Lesné) a záznam se přepsal na živou dvojici.
-    rozhodl: >-
-      Claude (8. 8. 2026, samostatný blok; přepsáno 9. 8. 2026 po exportu
-      Nízkých Tater a vyřazení tatranské Alpiny)
-    checked: 2026-08-09
   - jadro: goral
     objekty:
       - vysoke-tatry/chalupa-goral
@@ -657,17 +620,6 @@ jmenovci:
   # Malá Fatra sousedí s Kysuckými Beskydami, takže se tu potkávají jména
   # z obou stran hranice oblastí — u obou dvojic naměřeno okolo čtyřiceti
   # kilometrů, tedy jasní jmenovci, ne duplicity z překryvu oken.
-  - jadro: horec
-    objekty:
-      - beskydy/chata-horec
-      - mala-fatra/chata-horec
-    duvod: >-
-      DVA RŮZNÉ OBJEKTY, naměřeno 39 039 m: beskydská Chata Horec leží
-      v kysuckém pásu okolo Oščadnice, malofatranská u Martina (obec
-      doložená). „Horec" je slovenské jméno hořce, tedy jméno z rodu
-      „Kosodrevina" nebo „Limba" — u slovenských chat obvyklé.
-    rozhodl: Claude (8. 8. 2026, samostatný blok) — čeká na doložení obce u beskydské
-    checked: 2026-08-08
   - jadro: lucka
     objekty:
       - mala-fatra/chata-lucka
@@ -753,20 +705,6 @@ jmenovci:
       (chalupa × chata).
     rozhodl: Claude (9. 8. 2026, po exportu Nízkých Tater — měřením z GPS)
     checked: 2026-08-09
-  - jadro: smrekovica
-    objekty:
-      - nizke-tatry/chata-smrekovica
-      - nizke-tatry/horska-chata-smrekovica
-    duvod: >-
-      DVA RŮZNÉ OBJEKTY, naměřeno 34 660 m — a PAST OKEN: Horská chata
-      Smrekovica (48,9911 / 19,2006) stojí na Smrekovici NAD RUŽOMBERKOM,
-      tedy geograficky ve Veľké Fatře, jen padla do nizkotatranského okna
-      (obdélník). Chata Smrekovica (49,0250 / 19,6730) je jinde. Až doběhne
-      Michalův klik DATA-01 pro velka-fatra, horská chata se nejspíš
-      objeví i tam a bude potřeba rozhodnout příslušnost — pojistka
-      DATA-36 duplicitu přes okna nezaloží, ale tahle už existuje.
-    rozhodl: Claude (9. 8. 2026, po exportu Nízkých Tater — měřením z GPS)
-    checked: 2026-08-09
   - jadro: zuzana
     objekty:
       - beskydy/horska-chata-zuzana
@@ -775,4 +713,239 @@ jmenovci:
       DVA RŮZNÉ OBJEKTY, naměřeno 75 377 m: beskydská Horská chata Zuzana
       a nizkotatranská Zuzana. Křestní jméno v názvu — vzor Evka a Sofia.
     rozhodl: Claude (9. 8. 2026, po exportu Nízkých Tater — měřením z GPS)
+    checked: 2026-08-09
+  - jadro: horec
+    objekty:
+      - beskydy/chata-horec
+      - mala-fatra/chata-horec
+      - velka-fatra/chata-horec
+    duvod: >-
+      TŘI RŮZNÉ OBJEKTY, měřeno: beskydská (Oščadnica,
+      chata-horec-oscadnica.sk) × malofatranská (Martin, obec doložená) 39
+      039 m; beskydská × veľkofatranská (chata-horec.sk, OSM hotel) 61 536 m;
+      malofatranská × veľkofatranská 31 867 m. „Horec" je slovenské jméno
+      hořce — jméno z rodu „Kosodrevina" nebo „Limba", u slovenských chat
+      obvyklé. Záznam NAHRAZUJE dvojici z 8. 8. 2026 — třetí přibyl večerním
+      exportem Veľké Fatry.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: alpina
+    objekty:
+      - javorniky-vsetinske-vrchy/chata-alpina
+      - krusne-hory/alpina
+      - nizke-tatry/chata-alpina
+    duvod: >-
+      TŘI RŮZNÉ OBJEKTY: javornická Chata Alpina (Lazy pod Makytou, obec
+      doložená) × krušnohorská Alpina (Boží Dar) 400 071 m; javornická ×
+      nizkotatranská (Ružomberok — Malinô Brdo, malinobrdo.sk) 79 972 m;
+      krušnohorská × nizkotatranská 479 882 m. „Alpina" je marketingové jméno
+      horských ubytování. Záznam NAHRAZUJE dvojici z 9. 8. 2026 rána — třetí
+      přibyla večerním exportem Krušných hor.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: slovanka
+    objekty:
+      - jizerske-hory/rozhledna-slovanka
+      - krkonose/bouda-slovanka
+      - krusne-hory/slovanka
+    duvod: >-
+      TŘI RŮZNÉ OBJEKTY: publikovaná jizerská Rozhledna Slovanka ×
+      publikovaná krkonošská Bouda Slovanka (Černý Důl) 39 163 m; k nim
+      krušnohorská Slovanka na Božím Daru — 165 480 m od rozhledny, 200 354 m
+      od boudy. Vlastenecké jméno z 19. století nesou objekty nezávisle.
+      Záznam NAHRAZUJE dvojici — třetí přibyla večerním exportem Krušných
+      hor.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: smrekovica
+    objekty:
+      - nizke-tatry/chata-smrekovica
+      - nizke-tatry/horska-chata-smrekovica
+      - velka-fatra/smrekovica
+    duvod: >-
+      TŘI RŮZNÉ OBJEKTY, měřeno: Chata Smrekovica (49,0250 / 19,6730, NT
+      východ) × Horská chata Smrekovica (48,9911 / 19,2006, smrekovica.sk) 34
+      660 m; Chata Smrekovica × veľkofatranská Smrekovica (48,8827 / 19,0339,
+      OSM wilderness_hut, salaš dle hiking.sk) 49 277 m; horská chata × salaš
+      17 139 m. PAST OKEN TRVÁ: Horská chata Smrekovica stojí nad Ružomberkom
+      geograficky ve Veľké Fatře, ale kandidáta drží okno Nízkých Tater — a
+      večerní export Veľké Fatry ji díky pojistce DATA-36 nezaložil podruhé,
+      přinesl jen salaš. Příslušnost horské chaty k oblasti zbývá rozhodnout
+      (otázka v deníku trvá). Záznam NAHRAZUJE dvojici z 9. 8. 2026 rána.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: adelka
+    objekty:
+      - krusne-hory/chata-adelka
+      - krusne-hory/chata-adelka-159907372
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY V JEDNÉ OBLASTI, naměřeno 10 385 m: Chata Adélka na
+      Božím Daru a druhá Chata Adélka s vlastním webem
+      (chata-adelka.webnode.cz) u Perštejna. Obě jsou z OSM typ chalet —
+      pronájmy stejného křestního jména; triáž je nejspíš obě pošle mimo
+      klíč.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: hutzenstub
+    objekty:
+      - krusne-hory/hutzenstub
+      - krusne-hory/hutzenstub-462272134
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY V JEDNÉ OBLASTI, naměřeno 12 474 m: penzion
+      Hutzenstub (hutzenstub-sebastian.de) a Hutzenstub’ v
+      Annaberg-Buchholzi. „Hutzenstube" je krušnohorské nářeční slovo pro
+      světnici večerních besed (Hutzenabend) — u saských podniků obvyklé
+      jméno, shoda nic neznamená.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: konig albert turm
+    objekty:
+      - krusne-hory/konig-albert-turm
+      - krusne-hory/konig-albert-turm-295252126
+    duvod: >-
+      DVĚ RŮZNÉ ROZHLEDNY, naměřeno 21 528 m: König-Albert-Turm na
+      Spiegelwaldu (web spiegelwald.de) a druhá věž téhož jména u
+      Zwönitz/Brünlos. Věže pojmenované po saském králi Albertovi jsou v
+      Sasku běžné — rozlišovačem bude obec, zatím nedoložená u druhé (R6).
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: wanderhutte
+    objekty:
+      - krusne-hory/wanderhutte
+      - krusne-hory/wanderhutte-1033443331
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY V JEDNÉ OBLASTI, naměřeno 33 193 m. „Wanderhütte" je
+      obecné německé označení turistického přístřešku, ne vlastní jméno —
+      shoda je čekaná; oba kandidáti bez obce (R6), rozhodne triáž doklady.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: barbora
+    objekty:
+      - jizerske-hory/barbora
+      - krusne-hory/chata-barbora
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 115 239 m: jizerská Barbora (barbora.org,
+      OSM alpine_hut — čeká na Michalovo ruční rozhodnutí v jizerské frontě)
+      a Chata Barbora v Českém Jiřetíně (chata-barbora.cz, guest_house, obec
+      doložená). Vedle pětice „barborka" v registru drží tahle dvojice plné
+      jméno Barbora — jádra se liší, kontrola je nepáruje.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: bistro
+    objekty:
+      - krusne-hory/bistro-bouda
+      - krusne-hory/bistro-chalupa
+      - sumava/bistro-bouda
+    duvod: >-
+      TŘI RŮZNÉ OBJEKTY, naměřeno 24 629 m (obě krušnohorská), 193 184 m a
+      202 424 m k šumavskému Bistro Bouda (Český Krumlov, obec doložená).
+      „Bistro" je druhové slovo, ne jméno — všechna tři jsou nejspíš
+      občerstvení bez noclehu a triáž je posoudí; do té doby tři kandidáti.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: fatra
+    objekty:
+      - oravska-magura/chalupa-fatra
+      - velka-fatra/chata-fatra
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 58 978 m: Chalupa Fatra v Zázrivé
+      (zazrivaubytovanie.sk) a Chata Fatra na jihu Veľké Fatry. Jméno pohoří
+      přenesené na ubytování — vzor Chopok a Ďumbier; obec nedoložená ani u
+      jedné (R6).
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: florian
+    objekty:
+      - krusne-hory/chata-florian
+      - sumava/penzion-chata-florian
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 188 067 m: Chata Florian v Krušných horách
+      a Penzion Chata Florian na Šumavě (chatasvatyflorian.cz). Světecké
+      jméno u penzionů běžné; obec nedoložená (R6).
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: helena
+    objekty:
+      - krkonose/helena
+      - velka-fatra/helena
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 309 796 m: publikovaná krkonošská Bouda
+      Helena (Černý Důl) a Helena v Mošovcích pod Veľkou Fatrou (obec
+      doložená). Záznam NAHRAZUJE dvojici z rána téhož dne (krkonošská ×
+      nizkotatranská Chata Helena) — nizkotatranská byla vyřazena v triáži
+      jako pronájem a jádro se z registru mazalo; večerní export Veľké Fatry
+      přinesl novou jmenovkyni.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: lesanka
+    objekty:
+      - krusne-hory/horska-chata-lesanka
+      - nizke-tatry/lesanka
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 561 861 m — nejvzdálenější dvojice registru
+      (překonává Veroniku i Helenu): Horská Chata Lesanka v Krušných horách
+      (chatalesanka.cz, hostel) a Lesanka na východě Nízkých Tater (chalet).
+      Zdrobnělé „lesní" jméno; obec nedoložená (R6).
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: milesovka
+    objekty:
+      - krusne-hory/chata-milesovka
+      - krusne-hory/milesovka
+    duvod: >-
+      NEJTĚSNĚJŠÍ PÁR VEČERNÍHO EXPORTU, naměřeno 23 m: „Chata Milešovka" a
+      „Milešovka" s webem Ústavu fyziky atmosféry AV ČR — na vrcholu
+      Milešovky (837 m, České středohoří — krušnohorské okno ho zabírá) stojí
+      meteorologická observatoř a turistická chata v jednom areálu. 23 m je
+      pod prahem jmenovce a nad prahem jistoty duplicity dvou POI: jestli
+      jeden provoz (vzor Morskie Oko), nebo observatoř bez noclehu vedle
+      chaty (vzor Kosodrevina — bod stanice vyřazen), rozhodne triáž doklady,
+      ne vzdálenost. Vedlejší otázka: Milešovka není Krušné hory —
+      příslušnost oblasti posoudí redakce, okno ji přineslo poctivě.
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
+    checked: 2026-08-09
+  - jadro: stepanka
+    objekty:
+      - jizerske-hory/stepanka
+      - krusne-hory/chata-stepanka
+      - krusne-hory/stepanka
+    duvod: >-
+      TŘI RŮZNÉ OBJEKTY: publikovaná jizerská Rozhledna Štěpánka (Kořenov,
+      obec doložená) a DVĚ krušnohorské — Chata Štěpánka (guest_house) a
+      Štěpánka (chalet), naměřeno 5 028 m od sebe, takže ani ty dvě nejsou
+      duplicita; od rozhledny 171 682 m a 176 525 m. Křestní jméno; obec u
+      krušnohorských nedoložená (R6).
+    rozhodl: >-
+      Claude (9. 8. 2026, po večerních exportech krusne-hory a velka-fatra —
+      měřením z GPS)
     checked: 2026-08-09
