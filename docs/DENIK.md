@@ -29,6 +29,56 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-10 (šestý blok, na rozhodnutí Michala) — Českosaské Švýcarsko a Vysočina založeny, Lovoš + Macocha + dvě saské baudy, korpus 216
+
+Michal: _„ceskosaske svycarsko zaloz, vysocina jedna oblast — pokracuj
+dal"_. Šest commitů, kontroly zelené.
+
+**Hotovo:**
+
+**ČESKOSASKÉ ŠVÝCARSKO ZALOŽENO** (CZ+DE, turisticka-oblast) — oblast
+vyřešila oba zdokumentované přesahy oken: kandidáti přesunuti (lovecká
+a lesní chata na Tokáni z lužického okna, Daxensteinbaude
+a Räuberhütte z krušnohorského). Vzor přesunu beskydy → javorniky:
+soubory se stěhují, do _vyrazeno se nezapisují — staré oblasti podrží
+pojistka DATA-36. Okno DATA-01 zatím není.
+
+**VYSOČINA ZALOŽENA JEDNA** — rozhodnutí „vysocina jedna oblast"
+zapsáno do oblasti i kandidáta Čeřínek (Křemešnicko, Žďárské vrchy
+i Železné hory vcelku).
+
+**LOVOŠ A MACOCHA POVÝŠENY — dvě nové publikační oblasti:**
+
+- **Chata Lovoš** (570 m, Velemín; první profil ČESKÉHO STŘEDOHOŘÍ):
+  vrcholová chata KČT Lovosice — oprava svépomocí 1977–78, novoroční
+  tradice od 1979, víkendový bufet bez obsluhy; „jediná vrcholová
+  turistická chata v Českém středohoří" (tvrzení provozovatele,
+  připsáno). POCTIVOST: hodiny a kontakty z katalogu jsou k 12/2013 —
+  stáří přiznáno v ověřeních i próze; nocleh od 2014 ne. Známka
+  č. 489. V oblasti poznámka k přesunu Milešovky z krusne-hory.
+- **Chata Macocha** (490 m, Vilémovice 85; první profil MORAVSKÉHO
+  KRASU): u horního můstku propasti od 1895, kompletní rekonstrukce
+  1996 ve stylu švýcarských chat, 60 lůžek + 3 apartmány, restaurace
+  s kachlovými kamny; provozuje S.M.K., a.s.
+
+**FRONTA POVYŠOVÁNÍ KH POKRAČUJE:** **Fischerbaude** (Holzhau) —
+rodinná bauda od 1901 ve čtvrté generaci (Fischerovi 1901 → Edwin
+1929 → válka/FDGB/VEB Narva → návrat rodině 1993/95, Weise & Plath);
+hospoda s pivní zahradou 6 dní v týdnu, web se načetl vč. historie.
+**Hirtsteinbaude** (Satzung, 890 m) — Berggasthof s penzionem
+u čedičového vějíře (chráněn od konce 19. století); SLABŠÍ DOKLADY
+přiznány (web nenačten, portál 500 — nocleh stojí na titulku
+záznamu).
+
+**Příště:** povýšit zbylé kandidáty DATA-41 (Bunč, Tesák, Čeřínek,
+Holubyho chata), systematický průchod katalogem chat KČT, fronta
+KH (zbývá 14 baud: Spiegelwaldbaude, Geisingberg, Kammbaude
+Neuhermsdorf…), lužický koš POSOUDIT, orlická česká strana.
+
+**Otázky pro Michala:** trvá — třetí razítkové svolení, vzor Barbora,
+KONTROLA-11, kliky DATA-01/DATA-37. Nové oblasti bez otázek: obě
+rozhodnutí z dneška jsou zapsaná.
+
 ## 2026-08-10 (pátý blok, na pokyn Michala) — ČR mimo hlavní pohoří: Prachov, Hvězda a šest nových kandidátských oblastí
 
 Michal: _„prohledej zbytek ceske republiky a najdi dalsi turistické
