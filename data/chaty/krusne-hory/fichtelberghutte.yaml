@@ -1,0 +1,129 @@
+# Fichtelberghütte — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# šestá položka fronty povyšování; vlastní web fichtelberghuette.de se
+# nenačetl — chyba certifikátu, nese to rezervační prezentace
+# hoteloberwiesenthal.com). Horský hotel s restaurací pod vrcholem
+# Fichtelbergu. Vše verified: false.
+
+nazev: Fichtelberghütte
+slug: fichtelberghutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.4261939
+lng: 12.9529857
+obec: Oberwiesenthal
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/132538678 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Adresa Fichtelbergstraße 6,
+    Oberwiesenthal; dům stojí ~350 m od horní stanice visuté lanovky
+    (Schwebebahn) na Fichtelbergu (rezervační prezentace
+    fichtelberghuette.hoteloberwiesenthal.com, čteno 10. 8. 2026).
+    Nadmořskou výšku žádný načtený pramen číslem nevede —
+    nezapisuje se. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Rezervační prezentace (čteno 10. 8. 2026): 11 pokojů s výhledem
+    na hory, check-in 15–20, check-out do 10; snídaňový bufet.
+    Počet lůžek číslem pramen nevede — nezapisuje se.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Rezervační prezentace (čteno 10. 8. 2026): v domě „Restaurant
+    Ski". Otvírací dobu restaurace ani režim pro neubytované žádný
+    načtený pramen nevede — u domu na sjezdovce pod vrcholem je
+    veřejný provoz obvyklý, výslovný doklad ale chybí; před cestou
+    ověřit.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+49 3734 823478'
+  email: buchung@fichtelberghuette.de
+  web: http://www.fichtelberghuette.de/
+overeniProvoz:
+  source: >-
+    Kontakty z OSM (way/132538678, stav dat 2026-08-09; OSM tag
+    tourism=hotel). Vlastní web fichtelberghuette.de se při rešerši
+    nenačetl (chyba certifikátu); rezervace běží přes prezentaci
+    fichtelberghuette.hoteloberwiesenthal.com (hodnocení 7,4/10
+    z 318 recenzí tamtéž). Sezónnost neuvedena.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku domu žádný načtený pramen nevede. Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Dům stojí u sjezdovek pár set metrů pod vrcholem Fichtelbergu
+      — na kopci, kde jezdí nejstarší visutá lanovka Německa (od
+      roku 1924) a kde vrcholový Fichtelberghaus drží štít nejvyšší
+      hory Saska. Fichtelberghütte je jeho menší soused: hotel
+      s restaurací Ski přímo v lyžařském areálu.
+    kategorie: jine
+    zdroj: >-
+      poloha ~350 m od horní stanice lanovky: rezervační prezentace
+      (čteno 10. 8. 2026); nejstarší visutá lanovka Německa od 1924
+      a Fichtelberg jako nejvyšší hora Saska: tourmedia-service.de
+      (rešerše Hotelu Fichtelberghaus, 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hotel s restaurací Ski u sjezdovek pod vrcholem
+  Fichtelbergu — jedenáct pokojů s výhledem na hřeben, snídaňový
+  bufet a horní stanice nejstarší německé visuté lanovky pár set
+  metrů od dveří.
+text:
+  - >-
+    Fichtelberg je lyžařské srdce saského Krušnohoří a
+    Fichtelberghütte v něm bydlí přímo u sjezdovek: k horní stanici
+    visuté lanovky z Oberwiesenthalu je to zhruba 350 metrů, na
+    vrchol s Fichtelberghausem kousek pěšky. Jedenáct pokojů má
+    výhled na hory, dole se vaří v restauraci Ski.
+  - >-
+    Provozně jde o hotel — check-in odpoledne, snídaňový bufet —
+    a v zimě je to ubytování s lyžemi za dveřmi, v létě základna
+    pro hřebenové výlety ke Klínovci a na českou stranu. Režim
+    restaurace pro neubytované doložený není; před cestou ověřit.
+  - >-
+    Údaje na téhle stránce pocházejí z rezervační prezentace domu;
+    polohu a kontakty nese OpenStreetMap. Vlastní web se při rešerši
+    nenačetl — chyba certifikátu. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Rezervační prezentace domu — 11 pokojů, Restaurant Ski,
+      snídaňový bufet, check-in/out, poloha u lanovky (čteno
+      10. 8. 2026)
+    url: https://fichtelberghuette.hoteloberwiesenthal.com/de/
+  - popis: OpenStreetMap (GPS, kontakty, tag hotel; ODbL)
+    url: https://www.openstreetmap.org/way/132538678
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/fichtelberghutte.yaml rešerší
+  (10. 8. 2026) — šestá položka fronty povyšování. Klíč zařazení:
+  horský hotel s restaurací u sjezdovek pod vrcholem, role
+  v lyžařském areálu Fichtelbergu; SOUVISÍ s profilem
+  hotel-fichtelberghaus (vrchol) — jména jsou si blízká
+  (Hütte × Haus), ale jádra se liší, registr jmenovců zásah
+  nepotřebuje.
+
+  SLABŠÍ DOKLADOVÁ ZÁKLADNA: vlastní web nefunkční (certifikát),
+  vše nese rezervační prezentace. K OVĚŘENÍ (DATA-04): výška,
+  historie domu, režim restaurace Ski pro veřejnost, počet lůžek.
+  Fotku dodá příští běh DATA-02.
