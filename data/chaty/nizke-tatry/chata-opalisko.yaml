@@ -1,0 +1,122 @@
+# Chata Opalisko — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# vzor DATA-03: OSM × obecní web × ubytovací katalogy; vlastní web se
+# nenačetl — neschválené načtení). Chata při středisku Ski Opalisko pod
+# Poludnicou, nástupní bod hřebene. Vše verified: false.
+
+nazev: Chata Opalisko
+slug: chata-opalisko
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.0448624
+lng: 19.6417471
+obec: Závažná Poruba
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/211675620 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Poloha: obecní web Závažné Poruby
+    (čteno 10. 8. 2026) — „pod vrcholem Poludnica … nad obcí Závažná
+    Poruba"; domalenka.sk — „pri lese a lyžiarskom stredisku Ski
+    Opalisko", 180 m od sjezdovky, 6 km od Liptovského Mikuláše.
+    Nadmořskou výšku žádný načtený pramen nevede — nezapisuje se.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 46
+overeniNocleh:
+  source: >-
+    Obecní web Závažné Poruby (čteno 10. 8. 2026): „Kapacita: 38 + 8".
+    Domalenka.sk (čteno 10. 8. 2026): 46 lůžek — 4 trojlůžkové
+    a 4 čtyřlůžkové pokoje, 2 pětimístné bungalovy a 1 osmimístný;
+    čísla si odpovídají (38 v chatě + 8 v bungalovu). Ceny se mění,
+    do prózy nejdou.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Domalenka.sk (čteno 10. 8. 2026): v objektu je restaurace;
+    v bungalovu „slúži na prípravu stravy kompletne zariadená
+    kuchyňa". OSM tag vede otvírací dobu denně 9–19 (surový formát,
+    neověřeno). Režim restaurace pro neubytované kolemjdoucí výslovně
+    doložen není — viz interní poznámky.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+421 44 554 71 78'
+  email: chata@chataopalisko.sk
+  web: https://www.chataopalisko.sk/
+overeniProvoz:
+  source: >-
+    Kontakty z OSM (way/211675620, stav dat 2026-08-09) — vlastní web
+    chataopalisko.sk se při rešerši 10. 8. 2026 nenačetl (neschválené
+    načtení), existenci webu potvrzuje obecní stránka, která na něj
+    odkazuje. Sezónnost žádný načtený pramen neuvádí.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata s bungalovy na kraji lesa nad Závažnou Porubou, sto osmdesát
+  metrů od vleků střediska Ski Opalisko a přímo pod Poludnicou —
+  46 lůžek, restaurace a nástup na vyhlídkovou Poludnicu nad
+  liptovskou stranou Nízkých Tater.
+text:
+  - >-
+    Opalisko je základna dvou tváří: v zimě lyžařská — sjezdovka
+    střediska Ski Opalisko začíná pár desítek metrů od dveří —
+    a po zbytek roku turistická, protože ze Závažné Poruby se právě
+    tudy nastupuje na Poludnicu, vyhlídkový vrchol nad Liptovským
+    Mikulášem.
+  - >-
+    Spí se v chatě ve troj- a čtyřlůžkových pokojích a ve dvou
+    bungalovech, dohromady pro šestačtyřicet hostů; v objektu je
+    restaurace, bungalov má vlastní vybavenou kuchyň. Do Liptovského
+    Mikuláše je to šest kilometrů, obchod je půl kilometru pod
+    chatou — civilizace tedy na dosah, les hned za domem.
+  - >-
+    Údaje na téhle stránce pocházejí z obecního webu Závažné Poruby
+    a z ubytovacích katalogů; polohu a kontakty nese OpenStreetMap.
+    Vlastní stránky chaty se při rešerši nenačetly. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Obecní web Závažné Poruby — kapacita 38 + 8, poloha pod
+      Poludnicou (čteno 10. 8. 2026)
+    url: https://www.zavaznaporuba.sk/turizmus/ubytovanie/chata-opalisko-1302sk.html
+  - popis: >-
+      domalenka.sk — 46 lůžek a skladba pokojů a bungalovů,
+      restaurace v objektu, 180 m od sjezdovky, vzdálenosti (čteno
+      10. 8. 2026)
+    url: https://domalenka.sk/chata-opalisko-zavazna-poruba
+  - popis: OpenStreetMap (GPS, kontakty, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/way/211675620
+interniPoznamky: >-
+  Povýšeno z data/kandidati/nizke-tatry/chata-opalisko.yaml rešerší
+  (10. 8. 2026) — druhá položka fronty „NT Liptov + Opalisko" z 9. 8.
+  Klíč zařazení: obsluhovaná chata s restaurací na nástupu na
+  Poludnicu a u vleků Ski Opalisko — role na trase; typ obsluhovana
+  dle služby, ne dle OSM tagu guest_house.
+
+  K OVĚŘENÍ (DATA-04): vlastní web (nenačetl se) — režim restaurace
+  pro neubytované (OSM vede otvírací dobu 9–19, což naznačuje veřejný
+  provoz, ale doklad to není), nadmořská výška, sezónnost, historie
+  chaty. Fotku dodá příští běh DATA-02.
+
+  HOTEL LIPTOV (první položka téže fronty) zůstává kandidátem —
+  rešerše 10. 8.: 53 pokojů / 191 lůžek u Vrbického plesa v jádru
+  Jasné (domalenka.sk), strava popsána jen jako snídaně/polopenze
+  pro hosty, občerstvení pro veřejnost NEDOLOŽENO → třída jizerské
+  Barbory, čeká na doklad nebo Michalův vzor; zapsáno i u kandidáta.
