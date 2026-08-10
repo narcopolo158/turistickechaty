@@ -37,6 +37,10 @@ const KROKY = [
   // Report ma rict, kde hledat; rozhodnout musi redakce s pramenem. Kontrola,
   // ktera blokuje CI kvuli rozdelane praci, se stejne vypne.
   ['katalog-pokryti', 'katalogove objekty bez zaznamu v repu (seznam k posouzeni)', false],
+  // NEROZHODUJE: duplicita mezi oblastmi je ROZPRACOVANOST, ne vada. Objekt na
+  // hranici dvou pohori nekam patri a rozhodne to triaz s pramenem o
+  // prislusnosti, ne kontrola; ta ma jen zajistit, ze se na par nezapomene.
+  ['duplicity-oblasti', 'tyz OSM objekt vede vic oblasti (DATA-36 b, k rozhodnuti)', false],
   // jedina kontrola mimo datovou vrstvu: definice GitHub Actions. Rozhoduje,
   // protoze vadny workflow se jinak pozna az na webu Actions (padly beh).
   ['workflows', 'definice GitHub Actions (.github/workflows)', true],

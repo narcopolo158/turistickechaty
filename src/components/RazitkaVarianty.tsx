@@ -184,6 +184,32 @@ export function VybranyOtisk({
         {varianta.stav}
         {radky.length > 0 && <span className="det"> · {radky.join(' · ')}</span>}
       </div>
+      <OtiskZdroj varianta={varianta} />
+    </div>
+  )
+}
+
+/**
+ * Odkaz na web, ze kterého je otisk převzatý (DATA-05).
+ *
+ * NENÍ to zdvořilost, ale PODMÍNKA SVOLENÍ: Jan Novotný (turistickarazitka.cz)
+ * svolil 20. 7. 2026 s tím, že u každého převzatého razítka bude odkaz na jeho
+ * web. Robert Šindler (razitkuj.cz) svolil 21. 7. 2026 bez výslovné podmínky —
+ * odkaz uvádíme stejně, protože partnerství stojí na tom, že je vidět, čí ta
+ * práce je. Kolekce `Razitka` totéž hlídá i z druhé strany: převzaté razítko
+ * bez `prevzeti.zdrojUrl` nejde publikovat.
+ *
+ * `nofollow` proto, že jde o povinnou atribuci, ne o redakční doporučení;
+ * `noopener` je bezpečnostní hygiena u `target="_blank"`.
+ */
+export function OtiskZdroj({ varianta }: { varianta: VariantaOtisku }) {
+  if (!varianta.zdrojUrl) return null
+  return (
+    <div className="zap-otisk-zdroj">
+      otisk převzat se svolením —{' '}
+      <a href={varianta.zdrojUrl} target="_blank" rel="noopener noreferrer nofollow">
+        {varianta.zdroj ?? 'zdroj otisku'}
+      </a>
     </div>
   )
 }

@@ -336,6 +336,12 @@ body.dark .zap-mil .dot { background:var(--cream); }
   border-top:1px solid var(--hair); }
 .zap-otisk-udaje .dot { font-style:normal; color:var(--open); }
 .zap-otisk-udaje .dot.hist { color:var(--gone); }
+/* povinná atribuce převzatého otisku (DATA-05) — musí být čitelná, ne skrytá:
+   drží se pod štítkem paspart, ale nese barvu odkazu, aby šla poznat i beze
+   čtení. Zlom po slovech kvůli dlouhým doménám v úzkém sloupci. */
+.zap-otisk-zdroj { font:italic 400 10px/1.4 var(--font-emph); color:var(--muted); margin-top:5px;
+  overflow-wrap:anywhere; }
+.zap-otisk-zdroj a { color:var(--red); text-decoration:underline; text-underline-offset:2px; }
 
 /* list variant — otisky rozložené do vějíře, na hover se rozestoupí */
 .zap-listovnik { margin-top:12px; }

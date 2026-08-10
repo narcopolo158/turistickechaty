@@ -121,6 +121,37 @@ describe('Varianty otisku razítka', () => {
     expect(container.querySelector('.zap-listovnik')).toBeNull()
   })
 
+  it('u převzatého otisku stojí viditelný odkaz na zdroj (podmínka svolení, DATA-05)', () => {
+    // Atribuce NENÍ zdvořilost: turistickarazitka.cz svolily 20. 7. 2026 pod
+    // podmínkou odkazu u každého převzatého razítka. Kdyby odkaz z šablony
+    // vypadl, porušíme svolení, aniž by o tom cokoli jiného vědělo — proto test.
+    render(
+      <VybranyOtisk
+        varianta={v({
+          id: 'prevzaty',
+          poradi: 1,
+          zdroj: 'razitkuj.cz',
+          zdrojUrl: 'http://www.razitkuj.cz/misto-barborka/1',
+        })}
+        celkem={1}
+        nazevChaty="Barborka"
+      />,
+    )
+    const odkaz = screen.getByRole('link', { name: 'razitkuj.cz' })
+    expect(odkaz.getAttribute('href')).toBe('http://www.razitkuj.cz/misto-barborka/1')
+    expect(odkaz.getAttribute('rel')).toContain('nofollow')
+    expect(screen.getByText(/otisk převzat se svolením/)).toBeTruthy()
+  })
+
+  it('u vlastního otisku se atribuce nedopisuje', () => {
+    // Vlastní sken (historické razítko Luční boudy ze sbírky Michala) žádný
+    // cizí zdroj nemá — prázdná věta „převzat se svolením" by lhala.
+    const { container } = render(
+      <VybranyOtisk varianta={v({ id: 'vlastni', poradi: 1 })} celkem={1} nazevChaty="Luční bouda" />,
+    )
+    expect(container.querySelector('.zap-otisk-zdroj')).toBeNull()
+  })
+
   it('najetí na otisk ukáže jeho název místo nápovědy (vějíř se dá přečíst bez klikání)', () => {
     const { container } = render(<List />)
     const napoveda = container.querySelector('.zap-list-napoveda')!

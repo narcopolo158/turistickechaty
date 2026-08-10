@@ -29,6 +29,77 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-10 — denní session (bezobslužná, ~30 min): atribuce převzatých razítek a kontrola duplicit mezi oblastmi
+
+Backlog shora: DATA-04, DATA-20, DATA-22, DATA-25, DATA-28, F1-IMPL,
+JIZ-01, FOTO-01, DATA-35, JEST-01 i tři nové oblasti stojí na Michalovi
+(telefonáty, kliky na Actions, výběr fotek v adminu) — okomentováno
+u každé položky. Vzal jsem tedy dvě věci, které bezobslužný běh
+dokončit umí, a obě jsem DOKONČIL, místo abych otevřel šumavskou triáž
+279 kandidátů, ze které by v půlhodině zbyl rozdělaný kus.
+
+**Hotovo:**
+
+**1) DATA-05 — POVINNÁ ATRIBUCE PŘEVZATÝCH OTISKŮ JE KONEČNĚ VIDĚT.**
+Úkol „před prvním převzetím skenu přidat v UI viditelný odkaz na zdroj"
+byl vedený jako splněný předpoklad, ale nebyl: pole `zdroj`/`zdrojUrl`
+šablona profilu z dat brala (`page.tsx` je plnila, typ `VariantaOtisku`
+je nesl), jenže **žádná komponenta je nevykreslovala**. Na svolení Jana
+Novotného (turistickarazitka.cz) je přitom odkaz výslovná PODMÍNKA
+a u razitkuj.cz je to slušnost, na které stojí partnerství — a v repu
+už leží 151 převzatých otisků u 61 chat, které čekají jen na seed.
+Nově je pod otiskem řádek „otisk převzat se svolením — <odkaz>"
+(`OtiskZdroj` v `RazitkaVarianty.tsx`), v OBOU větvích profilu: v paspartě
+u více variant i u jediného otisku, kde se vějíř nekreslí (na tu druhou
+větev by se dalo snadno zapomenout — a právě ona bude u většiny chat).
+Odkaz je `nofollow`, protože je to povinná atribuce, ne redakční
+doporučení. Dva nové testy: odkaz musí stát u převzatého otisku a
+u vlastního skenu se atribuce NEDOPISUJE (historické razítko Luční boudy
+ze sbírky Michala cizí zdroj nemá).
+
+**2) DATA-36 bod (b) HOTOV → položka uzavřena.** Nová kontrola
+`scripts/kontrola/duplicity-oblasti.ts` v `npm run kontrola` hlásí, který
+OSM objekt vedou dvě a více oblastí. Pojistka z bodu (a)
+(`indexJinychOblasti`) chrání jen budoucí běhy exportu; co v repu už leží
+nebo co vznikne ručním založením profilu či přesunem mezi oblastmi,
+nevidělo nic. Kontrola NEROZHODUJE (nevrací kód 1) — duplicita je
+rozpracovanost, ne vada: objekt na hranici dvou pohoří někam patří
+a rozhodne to triáž s pramenem, ne skript. Identitou je **první OSM URL
+v souboru**, tedy hlavička záznamu; další URL v témž souboru se schválně
+nepočítají, protože bývají citace CIZÍCH objektů z rešerše (šumavská
+`josefova-vez` cituje uzel Kletě, `rozhledna-pancir` uzly Chaty Pancíř)
+a jinak by kontrola hlásila jako duplicitu poctivě odvedenou rešerši.
+Kandidát a profil v téže oblasti duplicita nejsou — to je běžný stav po
+povýšení, jen Šumava má takových dvojic 39. **Stav nad repem je 0**
+(29 párů z 8. 8. je rozhodnuto rozvodím) a drží ho i test nad reálným
+repem, takže až příště nějaký běh pojistku obejde, spadne to tady.
+6 testů, popis v `scripts/kontrola/README.md` (počet skriptů v hlavičce
+opraven z „pět" na jedenáct — byl zastaralý).
+
+Lint, typecheck i `npm run kontrola` zelené. Vitest: 5 souborů padá
+i bez mých změn na chybějícím `PAYLOAD_SECRET`/DB v sandboxu (api,
+razitka-moderace, sitemap-llms, pohori, oblasti-jestedsky-hrbet) — CI
+vitest nepouští, jede lint + typecheck + kontrola.
+
+**Příště:** pořád platí fronta z 9. 8. — triáž Krušných hor (299
+kandidátů, největší fronta korpusu), povýšení Masarykovy chaty na Šerlichu
+z orlického katalogu, Domček HS na Čertovici, NT Liptov + Opalisko. Ze
+systémových věcí: DATA-38 (dvě různá OSM ID téhož domu — dnešní kontrola
+je vědomě nevidí, identitou je URL) a DATA-37 (opakovaný beskydský export).
+
+**Otázky pro Michala:**
+
+1. **Seed razítek na web** — 151 převzatých otisků leží v repu
+   a atribuce je teď hotová, takže jim v publikaci nic nebrání; seed ale
+   potřebuje běžící Postgres, na který bezobslužná session nedosáhne.
+   Pustíš ho, nebo z toho má být workflow v Actions jako u ostatních
+   datových kroků?
+2. **Třetí razítkový web** (panos-pe@volny.cz / turisticka-razitka.estranky.cz)
+   od 19. 7. neodpověděl — urgovat, nebo ho brát jen jako checklist?
+3. Trvají otázky z 9. 8.: příslušnost dvojice z pasti oken (Horská chata
+   Smrekovica a Útulňa Limba pod Rakytovom leží ve Veľké Fatře, kandidáty
+   drží okno Nízkých Tater) a telefonáty DATA-04.
+
 ## 2026-08-09 (patnáctý blok, noc) — večerní exporty: tři nové oblasti mají kandidáty, 22 kolizí rozhodnuto
 
 Michal po odblokování Actions doklikal DATA-01 pro **Veľkou Fatru

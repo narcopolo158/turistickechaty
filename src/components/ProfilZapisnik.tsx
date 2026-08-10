@@ -12,7 +12,7 @@ import Link from 'next/link'
 
 import MapaTrasy, { LOGO_SVG, MAPY_ATRIBUCE, MAPY_COPYRIGHT, type TrasaNaMape } from './MapaTrasy'
 import IkonaRozhledna from './IkonaRozhledna'
-import RazitkaVarianty, { VybranyOtisk, type VariantaOtisku } from './RazitkaVarianty'
+import RazitkaVarianty, { OtiskZdroj, VybranyOtisk, type VariantaOtisku } from './RazitkaVarianty'
 import RazitkoSvg from './RazitkoSvg'
 import VyskovyProfil, { type BodProfilu } from './VyskovyProfil'
 import { formatDatumDeniku, pridejDoDeniku, useZaznamDeniku } from '@/lib/denik'
@@ -570,6 +570,9 @@ function RazitkoObjekt({ r, reduced }: { r: NonNullable<ZapData['razitko']>; red
           </div>
           <div className="zap-obj-cap">{r.caption}</div>
           <div className="zap-obj-sub"><span className="dot" style={{ color: 'var(--open)' }}>●</span> {r.stav}</div>
+          {/* Jediná varianta se kreslí bez paspart — atribuce převzatého otisku
+              se ale musí ukázat i tady (DATA-05, podmínka svolení). */}
+          {r.varianty[0] && <OtiskZdroj varianta={r.varianty[0]} />}
         </>
       )}
       <RazitkaVarianty varianty={r.varianty} vybranaId={vybrana?.id ?? ''} onVyber={setVybranaId} reduced={reduced} />

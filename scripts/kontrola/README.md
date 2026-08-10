@@ -1,6 +1,6 @@
 # Kontroly datové vrstvy
 
-Pět skriptů, které hlídají to, co dělá tenhle web webem: **že se údaje dají
+Jedenáct skriptů, které hlídají to, co dělá tenhle web webem: **že se údaje dají
 ověřit a že se nic nedomýšlí**. Nejsou to unit testy aplikace — čtou YAML
 profily v `data/chaty/**` a hlásí, kde próza tvrdí víc, než co je doložené.
 Dva z nich do datové vrstvy nepatří vůbec: `workflows.ts` hlídá definice GitHub
@@ -24,10 +24,12 @@ npx tsx scripts/kontrola/kolize-jmen.ts  [soubor.yaml …]
 npx tsx scripts/kontrola/workflows.ts    [soubor.yml …]
 npx tsx scripts/kontrola/exporty.ts
 npx tsx scripts/kontrola/katalog-pokryti.ts   [slug oblasti …]
+npx tsx scripts/kontrola/duplicity-oblasti.ts
 ```
 
-`kolize-jmen.ts` je jediný, který sám od sebe čte i `data/kandidati/**` —
-jmenovec může přijít z obou pater a kontrola má smysl jen nad oběma najednou.
+`kolize-jmen.ts` a `duplicity-oblasti.ts` čtou samy od sebe i
+`data/kandidati/**` — jmenovec i duplicita mohou přijít z obou pater a kontrola
+má smysl jen nad oběma najednou.
 
 ## Co která kontrola dělá
 
@@ -429,3 +431,29 @@ seznam se klíčuje URL objektu v OSM a je zámkem proti dalšímu běhu DATA-01
 kdežto tady jde o objekty, které kandidáta nikdy neměly. Test hlídá, že důvod
 u každého řádku má aspoň osmdesát znaků — krátký důvod by znamenal rozhodnutí
 bez dokladu, a u vyřazení objektu z průvodce je doklad to jediné, co ho drží.
+
+**`duplicity-oblasti.ts` — seznam k posouzení (DATA-36 bod b).** Řekne, který
+OSM objekt vedou **dvě a více oblastí** naráz — ať už jako kandidáta, nebo už
+jako profil. Okna oblastí se záměrně překrývají, aby ostrý řez na hranici dvou
+pohoří tiše nevyřízl objekty na sedle mezi nimi; cenu toho rozhodnutí ukázal
+8. 8. 2026 pár kliků na DATA-01 pro sousední pohoří, po kterém leželo 29 objektů
+se shodným jménem i souřadnicemi ve dvou adresářích. Pojistka v exportu
+(`indexJinychOblasti`, bod a) chrání jen **budoucí** běhy — co v repu už leží
+nebo co vznikne ručním založením či přesunem mezi oblastmi, nevidí. Tohle je
+druhá polovina: čte stav repa.
+
+Identitou je **první OSM URL v souboru**, tedy hlavička záznamu — stejně jako
+v bodě (a). Slug se může lišit suffixem `-<id>` a jména jako „Chata" nebo
+„Skalka" se v korpusu opakují u prokazatelně různých objektů. Další URL v témž
+souboru se schválně nepočítají: bývají to citace **cizích** objektů z rešerše
+(šumavská `josefova-vez` cituje uzel Kletě, `rozhledna-pancir` uzly Chaty
+Pancíř), a braly-li by se, hlásila by kontrola jako duplicitu poctivě odvedenou
+rešerši sousedního objektu. Kandidát a profil v **téže** oblasti duplicita
+nejsou — to je běžný stav po povýšení (jen Šumava má takových dvojic 39).
+
+**NEROZHODUJE, a je to úmysl:** duplicita mezi oblastmi je rozpracovanost, ne
+vada. Objekt na hranici dvou pohoří někam patří a rozhodne to triáž s pramenem
+o příslušnosti; kontrola má jen zajistit, že se na pár nezapomene. **Dvě různá
+OSM ID téhož domu (DATA-38) nevidí** — identitou je URL, takže projdou jako dva
+objekty; to je jiná úloha a čeká na vlastní řešení. Stav 10. 8. 2026 je **0**
+(29 párů z 8. 8. je rozhodnuto rozvodím) a drží ho i test nad reálným repem.
