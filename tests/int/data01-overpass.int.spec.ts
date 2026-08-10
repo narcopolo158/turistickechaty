@@ -20,9 +20,11 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { parse } from 'yaml'
 
 import {
+  DVOJI_ENTITA_M,
   OKOLI_OBCERSTVENI_M,
   chataZElementu,
   indexJinychOblasti,
+  indexPolohJinychOblasti,
   MIN_VYSKA_ROZHLEDNY_M,
   jePrilisNizka,
   jeRozhledna,
@@ -826,5 +828,103 @@ describe('DATA-36: objekt vedený jinou oblastí se nezakládá znovu', () => {
     mkdirSync(jina, { recursive: true })
     writeFileSync(join(jina, '_overpass-export-cz.yaml'), `x: ${URL_OBJEKTU}`, 'utf8')
     expect(indexJinychOblasti([join(koren, 'kandidati')], 'beskydy').size).toBe(0)
+  })
+})
+
+describe('DATA-38: druhá OSM entita objektu vedeného jinou oblastí', () => {
+  // Přesně případ Čartáku z 8. 8. 2026: jiná oblast vede objekt pod JINOU
+  // OSM entitou (jiné URL), takže síto DATA-36 mlčí — rozhodnout musí
+  // shoda jádra názvu + poloha do prahu DVOJI_ENTITA_M.
+  const UZEL: OsmElement = {
+    type: 'node',
+    id: 291203956,
+    lat: 49.352,
+    lon: 18.256,
+    tags: { name: 'Horský hotel Čarták', tourism: 'hotel' },
+  }
+
+  const priprav = (lat: number, lng: number, nazev = 'Horský hotel Čarták') => {
+    const koren = mkdtempSync(join(tmpdir(), 'data38-'))
+    const kand = join(koren, 'kandidati', 'beskydy')
+    const rucni = join(koren, 'chaty', 'beskydy')
+    const jina = join(koren, 'kandidati', 'javorniky-vsetinske-vrchy')
+    mkdirSync(kand, { recursive: true })
+    mkdirSync(rucni, { recursive: true })
+    mkdirSync(jina, { recursive: true })
+    writeFileSync(
+      join(jina, 'horsky-hotel-cartak.yaml'),
+      [
+        `nazev: ${nazev}`,
+        `lat: ${lat}`,
+        `lng: ${lng}`,
+        'overeniLokace:',
+        '  source: OpenStreetMap https://www.openstreetmap.org/node/3814562072 — ODbL',
+      ].join('\n'),
+      'utf8',
+    )
+    const polohy = indexPolohJinychOblasti([join(koren, 'kandidati')], 'beskydy')
+    return { kand, rucni, polohy }
+  }
+
+  it('shodné jádro názvu 9 m od záznamu jiné oblasti se NEzaloží a vypíše', () => {
+    // 9 m ≈ posun o ~0,00008° zeměpisné šířky.
+    const { kand, rucni, polohy } = priprav(49.35208, 18.256)
+    const report = zapisKandidaty(
+      [{ el: UZEL, zeme: 'cz', checked: '2026-08-10' }],
+      kand,
+      rucni,
+      new Map(),
+      'beskydy',
+      new Map(),
+      polohy,
+    )
+    expect(report.zapsano).toEqual([])
+    expect(report.dvojiEntita).toHaveLength(1)
+    expect(report.dvojiEntita[0].kde).toBe('javorniky-vsetinske-vrchy/horsky-hotel-cartak')
+    expect(report.dvojiEntita[0].vzdalenostM).toBeLessThanOrEqual(DVOJI_ENTITA_M)
+    // Soubor NEVZNIKL — jinak by se dvojí entita vrátila s každým během.
+    expect(existsSync(join(kand, 'horsky-hotel-cartak.yaml'))).toBe(false)
+  })
+
+  it('shodné jméno 150 m daleko PROJDE — to už může být sousední objekt', () => {
+    // Práh je 50 m schválně: 150 m dělí i sousední chatu Gírové a rozhodnout
+    // tam musí redakce (kandidát vznikne a odhalí ho kontrola kolizí jmen).
+    const { kand, rucni, polohy } = priprav(49.35335, 18.256)
+    const report = zapisKandidaty(
+      [{ el: UZEL, zeme: 'cz', checked: '2026-08-10' }],
+      kand,
+      rucni,
+      new Map(),
+      'beskydy',
+      new Map(),
+      polohy,
+    )
+    expect(report.dvojiEntita).toEqual([])
+    expect(report.zapsano.map((z) => z.slug)).toEqual(['horsky-hotel-cartak'])
+  })
+
+  it('jiné jádro názvu 9 m vedle PROJDE — dva objekty na témž kopci jsou legitimní', () => {
+    const { kand, rucni, polohy } = priprav(49.35208, 18.256, 'Vyhlídka Sokolí')
+    const report = zapisKandidaty(
+      [{ el: UZEL, zeme: 'cz', checked: '2026-08-10' }],
+      kand,
+      rucni,
+      new Map(),
+      'beskydy',
+      new Map(),
+      polohy,
+    )
+    expect(report.dvojiEntita).toEqual([])
+    expect(report.zapsano).toHaveLength(1)
+  })
+
+  it('záznam bez GPS nebo beze jména se do indexu poloh nedostane', () => {
+    const koren = mkdtempSync(join(tmpdir(), 'data38-index-'))
+    const jina = join(koren, 'kandidati', 'sumava')
+    mkdirSync(jina, { recursive: true })
+    writeFileSync(join(jina, 'bez-gps.yaml'), 'nazev: Chata Bez GPS\n', 'utf8')
+    writeFileSync(join(jina, 'bez-jmena.yaml'), 'lat: 49.1\nlng: 13.2\n', 'utf8')
+    writeFileSync(join(jina, '_registr.yaml'), 'nazev: Registr\nlat: 49.1\nlng: 13.2\n', 'utf8')
+    expect(indexPolohJinychOblasti([join(koren, 'kandidati')], 'beskydy')).toEqual([])
   })
 })

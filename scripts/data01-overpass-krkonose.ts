@@ -764,6 +764,12 @@ export type Report = {
   vyrazeno: { url: string; duvod: string }[]
   /** Objekt už vede jiná oblast — DATA-36, viz `indexJinychOblasti`. */
   jinaOblast: { url: string; kde: string }[]
+  /**
+   * DATA-38: pravděpodobně DRUHÁ OSM ENTITA objektu, který už pod jinou
+   * entitou vede jiná oblast — shodné jádro názvu a poloha do
+   * `DVOJI_ENTITA_M`. Nezakládá se, rozhodne redakce.
+   */
+  dvojiEntita: { url: string; nazev: string; kde: string; vzdalenostM: number }[]
 }
 
 /** Element s metadaty svého exportu (země dle area v dotazu, checked dle stavu dat). */
@@ -821,6 +827,60 @@ export const indexJinychOblasti = (
 }
 
 /**
+ * DATA-38 — DRUHÉ SÍTO PROTI DVOJÍ ENTITĚ JEDNOHO OBJEKTU.
+ *
+ * Pojistka DATA-36 porovnává identitu podle URL v OSM — správně proti
+ * dvojímu založení TÉŽE entity. Když ale týž dům má v OSM entity dvě
+ * (POI uzel + budova), projde každá v jiné oblasti jako nový kandidát.
+ * Předvedlo se 8. 8. 2026: opakovaný export Beskyd založil
+ * `beskydy/horsky-hotel-cartak` (node 291203956), ačkoli
+ * `javorniky-vsetinske-vrchy/horsky-hotel-cartak` (node 3814562072)
+ * v repu už byl — naměřeno 9 m a shodné jméno.
+ *
+ * PRÁH 50 m, a proč zrovna tolik: 9 m u Čartáku je jasná dvojí entita
+ * (uzel a budova téhož domu); 150 m — práh vnitroběhového slučování
+ * `SLOUCIT_DO_M` — už jasný není, protože tolik dělí i sousední chatu
+ * Gírové (viz její profil), a rozhodnout musí redakce. 50 m je
+ * konzervativně nad velikostí budovy a pod vzdáleností sousedů; případy
+ * mezi 50 a 150 m projdou jako kandidát a odhalí je kontrola kolizí
+ * jmen. Sítem propadlé objekty se NEZAKLÁDAJÍ, jen vypisují — rozhodne
+ * redakce (vzor ručního rozhodnutí Čartáku: kopie do `_vyrazeno.yaml`).
+ */
+export const DVOJI_ENTITA_M = 50
+
+export type PolohaJinde = { jadro: string; lat: number; lng: number; kde: string }
+
+/**
+ * Jádra názvů a polohy kandidátů i profilů JINÝCH oblastí — podklad síta
+ * DATA-38. Bez jména nebo GPS se záznam do indexu nedostane (není co
+ * porovnávat); soubory s podtržítkem jsou registry, ne záznamy.
+ */
+export const indexPolohJinychOblasti = (
+  koreny: string[],
+  vlastniOblast: string,
+): PolohaJinde[] => {
+  const out: PolohaJinde[] = []
+  for (const koren of koreny) {
+    if (!existsSync(koren)) continue
+    for (const oblast of readdirSync(koren, { withFileTypes: true })) {
+      if (!oblast.isDirectory() || oblast.name === vlastniOblast) continue
+      const adresar = join(koren, oblast.name)
+      for (const soubor of readdirSync(adresar)) {
+        if (!soubor.endsWith('.yaml') || soubor.startsWith('_')) continue
+        const obsah = readFileSync(join(adresar, soubor), 'utf8')
+        const nazev = /^nazev:\s*(.+?)\s*$/mu.exec(obsah)?.[1]?.replace(/^["']|["']$/gu, '')
+        const lat = Number(/^lat:\s*(-?[\d.]+)\s*$/mu.exec(obsah)?.[1])
+        const lng = Number(/^lng:\s*(-?[\d.]+)\s*$/mu.exec(obsah)?.[1])
+        const jadro = jadroNazvu(nazev)
+        if (!jadro || !Number.isFinite(lat) || !Number.isFinite(lng)) continue
+        out.push({ jadro, lat, lng, kde: `${oblast.name}/${soubor.replace(/\.yaml$/u, '')}` })
+      }
+    }
+  }
+  return out
+}
+
+/**
  * Zapíše YAML kandidátů (obě země do téhož adresáře pohoří — Krkonoše jsou
  * jedno pohoří, zemi nese chata). Ruční profily v `data/chaty/krkonose/` se
  * nikdy nepřepisují — jen porovnají; existující kandidát zůstává
@@ -839,6 +899,8 @@ export const zapisKandidaty = (
   oblast: string = 'krkonose',
   /** DATA-36: URL objektu → „oblast/slug", kde už je veden. */
   jinaOblast: Map<string, string> = new Map(),
+  /** DATA-38: jádra názvů a polohy záznamů jiných oblastí. */
+  polohyJinde: PolohaJinde[] = [],
 ): Report => {
   const report: Report = {
     zapsano: [],
@@ -847,6 +909,7 @@ export const zapisKandidaty = (
     preskoceno: [],
     vyrazeno: [],
     jinaOblast: [],
+    dvojiEntita: [],
   }
   const slugyBehu = new Set<string>()
   mkdirSync(kandidatiAdresar, { recursive: true })
@@ -869,6 +932,28 @@ export const zapisKandidaty = (
     if (uzVede !== undefined) {
       report.jinaOblast.push({ url: osmUrl(el), kde: uzVede })
       continue
+    }
+    // DATA-38: jiná oblast už vede objekt shodného jádra názvu pár metrů
+    // odsud — skoro jistě DRUHÁ OSM entita téhož domu (uzel × budova).
+    // Nezakládat, vypsat; rozhodne redakce. Práh viz DVOJI_ENTITA_M.
+    const jadroEl = jadroNazvu(el.tags?.name)
+    const elLat = el.center?.lat ?? el.lat
+    const elLng = el.center?.lon ?? el.lon
+    if (jadroEl && elLat != null && elLng != null) {
+      const dvojnikJinde = polohyJinde
+        .filter((q) => q.jadro === jadroEl)
+        .map((q) => ({ ...q, vzdalenostM: vzdalenostM(elLat, elLng, q.lat, q.lng) }))
+        .filter((q) => q.vzdalenostM <= DVOJI_ENTITA_M)
+        .sort((q, r) => q.vzdalenostM - r.vzdalenostM)[0]
+      if (dvojnikJinde) {
+        report.dvojiEntita.push({
+          url: osmUrl(el),
+          nazev: el.tags?.name ?? '(bez názvu)',
+          kde: dvojnikJinde.kde,
+          vzdalenostM: dvojnikJinde.vzdalenostM,
+        })
+        continue
+      }
     }
     const vysledek = chataZElementu(el, checked, zeme, { oblast, obcerstveni })
     if ('duvod' in vysledek) {
@@ -1199,7 +1284,14 @@ const main = async () => {
     [join(process.cwd(), 'data', 'kandidati'), join(process.cwd(), 'data', 'chaty')],
     oblast.slug,
   )
-  const report = zapisKandidaty(polozky, kandAdr, rucAdr, nactiVyrazene(), oblast.slug, jinaOblast)
+  // DATA-38: polohy a jádra názvů záznamů jiných oblastí (druhé síto).
+  const polohyJinde = indexPolohJinychOblasti(
+    [join(process.cwd(), 'data', 'kandidati'), join(process.cwd(), 'data', 'chaty')],
+    oblast.slug,
+  )
+  const report = zapisKandidaty(
+    polozky, kandAdr, rucAdr, nactiVyrazene(), oblast.slug, jinaOblast, polohyJinde,
+  )
 
   console.log(`\n## DATA-01 report (stav OSM dat: ${stavy.join(', ')})`)
   // Verdikt se týká STAHOVÁNÍ, offline transformace ho nemá co hlásit.
@@ -1228,6 +1320,12 @@ const main = async () => {
   }
   console.log(`\nUž vede jiná oblast (DATA-36, překryv oken): ${report.jinaOblast.length}`)
   for (const j of report.jinaOblast) console.log(`- ${j.url} → ${j.kde}`)
+
+  console.log(
+    `\nPravděpodobně DRUHÁ OSM ENTITA objektu vedeného jinou oblastí (DATA-38, do ${DVOJI_ENTITA_M} m — nezaloženo, rozhodne redakce): ${report.dvojiEntita.length}`,
+  )
+  for (const d of report.dvojiEntita)
+    console.log(`- ${d.nazev} — ${d.url} → ${d.kde} (${d.vzdalenostM} m)`)
 
   console.log(`\nPřeskočeno — neúplné v OSM (k ruční kontrole): ${report.preskoceno.length}`)
   for (const p of report.preskoceno)
