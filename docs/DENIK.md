@@ -29,6 +29,68 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-10 (druhý blok, na pokyn Michala) — workflow pro razítka a souhlas od třetího webu
+
+Michal: _„udelej workflow pro ratitka v actions - panos-pe se taky ozval, od
+vsech mame souhlas"_.
+
+**Hotovo:**
+
+**SEED RAZÍTEK JE OVĚŘENÝ, NE JEN NAPSANÝ.** Než jsem workflow napsal, pustil
+jsem seed lokálně nad ostrým Postgresem (sandbox má `postgresql-16` binárky,
+takže cluster jde postavit — dosud se to nezkoušelo a „seed na web" proto visel
+jako neznámá). Výsledek: **152 razítek, všechna publikovaná, všechna s otiskem,
+151 převzatých se svolením, 0 bez odkazu na zdroj.** Druhý běh seedu nic
+nezdvojil (152 → 152, jen „aktualizováno"). Korpus je tedy seedovatelný a na
+staging se dostane nejbližším nasazením — `INFRA-01` běží na push do main
+a `data/razitka/**` z jeho `paths-ignore` vyloučené není. **Samostatný „seed na
+web" tedy nikdy nebyl potřeba**; potřeba byla jistota, že seed nespadne.
+
+**NOVÝ WORKFLOW `DATA-05: seed razítek (zkouška nad čerstvou DB)`**
+(`.github/workflows/data05-razitka-seed.yml`). Postaví prázdný Postgres, pustí
+kontrolu korpusu, seed, **seed podruhé** (idempotence — při nasazení běží nad
+plnou databází, takže neidempotentní seed by razítka s každým deployem zdvojil)
+a pak spočítá, co v DB opravdu je; nula razítek, nepublikovaný záznam nebo
+převzaté razítko bez atribuce běh shodí. Spouští se ručně i sám při změně
+`data/razitka/**`, `data/chaty/**`, seedu nebo kolekce `Razitka` — tedy přesně
+tehdy, kdy se to může rozbít; nová vlna otisků si zkoušku spustí sama. Žádné
+secrets nepotřebuje. Ověřovací krok jsem pustil doslova tak, jak stojí v YAML,
+proti lokální databázi — nejen „mělo by projít".
+
+**PROČ VŮBEC:** seed razítek běží UVNITŘ nasazení, mezi buildem a restartem
+aplikace. Vadné razítko tam neshodí sebe, ale CELÝ DEPLOY — a pozná se to až
+tím, že staging nenaběhne. Proto k workflow patří i levná kontrola bez databáze
+**`scripts/kontrola/razitka.ts`** (v `npm run kontrola`, ROZHODUJE): razítko bez
+profilu chaty (seed vyhodí Error — reálné riziko, protože otisky se zakládají
+dávkou podle jmenné shody a mohou předběhnout povýšení kandidáta), převzaté
+razítko bez `prevzeti.zdrojUrl` (kolekce Razitka odmítne publikaci — atribuce je
+podmínka svolení), chybějící sken (ENOENT), otisk bez autora/licence. Pátá vada
+deploy nezhavaruje a je proto nejtišší: dvě razítka téže chaty se shodným
+názvem se v seedu navzájem přepíšou a na webu jedna varianta prostě chybí.
+8 testů, popis v `scripts/kontrola/README.md`.
+
+**SOUHLAS OD TŘETÍHO WEBU zapsán tak, jak ho mám** — tedy že
+panos-pe@volny.cz / turisticka-razitka.estranky.cz odpověděl a souhlas máme od
+všech tří webů. Podrobnosti (jméno, datum, přesné znění, případná podmínka
+odkazu) jsem NEDOPSAL: nemám je a domýšlet znění svolení je z celého projektu
+to poslední, co se smí odhadovat. U razitkuj.cz i turistickarazitka.cz je znění
+v backlogu doložené včetně data, u třetího zatím ne — do doplnění se z jeho
+webu nic nepřebírá.
+
+**Příště:** až Michal doplní znění třetího svolení, jde se pro otisky i tam
+(vzor: `data05-razitkuj-*` pipeline). Jinak platí fronta z 9. 8. — triáž
+Krušných hor, Masarykova chata na Šerlichu, Domček HS, NT Liptov + Opalisko.
+
+**Otázky pro Michala:**
+
+1. **Znění třetího svolení** — pošli prosím jméno odesilatele, datum a text
+   odpovědi (a jestli si přeje odkaz u každého otisku, jako turistickarazitka.cz).
+   Zapíšu to k DATA-05 stejně jako u zbylých dvou; teprve pak má smysl psát
+   stahovací pipeline pro estranky.
+2. **Razítka na webu si po nejbližším deployi prohlédni** — atribuce („otisk
+   převzat se svolením — razitkuj.cz") je od dnešního rána v šabloně profilu;
+   chci vědět, jestli ti sedí umístění pod otiskem, nebo ji chceš viditelněji.
+
 ## 2026-08-10 — denní session (bezobslužná, ~30 min): atribuce převzatých razítek a kontrola duplicit mezi oblastmi
 
 Backlog shora: DATA-04, DATA-20, DATA-22, DATA-25, DATA-28, F1-IMPL,

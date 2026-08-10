@@ -1,0 +1,123 @@
+# DATA-05: seed razítek — ostrá zkouška nad čerstvou databází.
+#
+# PROČ: razítka se na web dostávají seedem (`scripts/seed-chaty.ts`), který
+# běží uvnitř nasazení `INFRA-01: deploy staging` — mezi buildem a restartem
+# aplikace. Vadné razítko tam neshodí sebe, ale CELÝ DEPLOY: razítko bez
+# profilu chaty vyhodí Error, převzaté razítko bez `prevzeti.zdrojUrl` odmítne
+# kolekce Razitka (atribuce je podmínka svolení webů) a chybějící sken spadne
+# na ENOENT. Poznat se to dnes dá až tím, že padne nasazení.
+#
+# Tenhle workflow to zkusí NANEČISTO: postaví prázdný Postgres, pustí týž seed
+# a spočítá, co v databázi opravdu je. Prochází-li, projde i seed při nasazení.
+#
+# CO WORKFLOW NEDĚLÁ: nesahá na server ani na produkční databázi — jeho
+# Postgres je jednorázový a s posledním krokem zaniká. Razítka se na staging
+# dostanou nasazením (běží samo na push do main, nebo ručně přes
+# „INFRA-01: deploy staging"); tenhle běh je pojistka před ním, ne náhrada.
+#
+# SPOUŠTĚNÍ: ručně (Actions → „DATA-05: seed razítek (zkouška nad čerstvou DB)")
+# a automaticky při každé změně razítek, seedu nebo kolekcí — tedy přesně tehdy,
+# kdy se může rozbít. Nová vlna otisků z razitkuj.cz tak spustí zkoušku sama.
+#
+# ŽÁDNÉ SECRETS: databáze je lokální service, PAYLOAD_SECRET je jednorázový
+# řetězec jen pro tenhle běh (Payload bez něj nenastartuje), skeny leží v repu.
+name: 'DATA-05: seed razítek (zkouška nad čerstvou DB)'
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/razitka/**'
+      - 'data/chaty/**'
+      - 'scripts/seed-chaty.ts'
+      - 'scripts/kontrola/razitka.ts'
+      - 'src/collections/Razitka.ts'
+      - '.github/workflows/data05-razitka-seed.yml'
+
+concurrency:
+  group: data05-razitka-seed
+  cancel-in-progress: true
+
+jobs:
+  seed:
+    name: Seed razítek nad prázdnou databází
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: user
+          POSTGRES_PASSWORD: heslo
+          POSTGRES_DB: turistickechaty
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U user"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://user:heslo@localhost:5432/turistickechaty
+      PAYLOAD_SECRET: ci-data05-razitka-seed
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      # Levná kontrola bez databáze — chytí vady, kvůli kterým by seed padl,
+      # a pojmenuje je dřív, než se člověk prokouše logem Payloadu.
+      - name: Kontrola razítkového korpusu (bez DB)
+        run: npx tsx scripts/kontrola/razitka.ts | tee kontrola.txt
+
+      - name: Seed (chaty, fotky, razítka)
+        run: npx payload run scripts/seed-chaty.ts
+
+      # Druhý běh je jádro zkoušky: seed MUSÍ být idempotentní, protože při
+      # nasazení běží nad databází, ve které už data leží. Kdyby zakládal
+      # znovu, každý deploy by razítka zdvojil.
+      - name: Seed podruhé (idempotence — deploy seeduje nad plnou DB)
+        run: npx payload run scripts/seed-chaty.ts
+
+      - name: Co v databázi opravdu je
+        run: |
+          node -e "
+            const { Client } = require('pg')
+            const c = new Client({ connectionString: process.env.DATABASE_URL })
+            const q = async () => {
+              await c.connect()
+              const r = (await c.query(\`
+                select
+                  count(*)::int as celkem,
+                  count(*) filter (where _status = 'published')::int as publikovanych,
+                  count(otisk_id)::int as s_otiskem,
+                  count(*) filter (where zpusob_ziskani = 'prevzato-se-svolenim')::int as prevzatych,
+                  count(*) filter (where zpusob_ziskani = 'prevzato-se-svolenim'
+                    and coalesce(prevzeti_zdroj_url, '') = '')::int as bez_atribuce
+                from razitka\`)).rows[0]
+              const chat = (await c.query('select count(*)::int as n from chaty')).rows[0].n
+              await c.end()
+              const radky = [
+                'chat v DB: ' + chat,
+                'razítek: ' + r.celkem + ' (publikovaných ' + r.publikovanych + ')',
+                'z toho s otiskem: ' + r.s_otiskem,
+                'převzatých se svolením: ' + r.prevzatych + ', bez odkazu na zdroj: ' + r.bez_atribuce,
+              ]
+              radky.forEach((x) => console.log(x))
+              require('fs').appendFileSync(process.env.GITHUB_STEP_SUMMARY,
+                '## DATA-05 — seed razítek\n\n' + radky.map((x) => '- ' + x).join('\n') + '\n')
+              // Nula razítek je porucha, ne prázdný korpus: v repu jich leží
+              // přes sto a seed, který je přeskočí, vypadá zeleně.
+              if (!r.celkem) { console.error('!! v databázi není ani jedno razítko'); process.exit(1) }
+              if (r.publikovanych !== r.celkem) { console.error('!! část razítek zůstala konceptem — na web se nedostanou'); process.exit(1) }
+              // Atribuce je podmínka svolení majitelů otisků, ne kosmetika.
+              if (r.bez_atribuce) { console.error('!! převzaté razítko bez odkazu na zdroj'); process.exit(1) }
+            }
+            q().catch((e) => { console.error(e.message); process.exit(1) })
+          "

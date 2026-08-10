@@ -41,6 +41,9 @@ const KROKY = [
   // hranici dvou pohori nekam patri a rozhodne to triaz s pramenem o
   // prislusnosti, ne kontrola; ta ma jen zajistit, ze se na par nezapomene.
   ['duplicity-oblasti', 'tyz OSM objekt vede vic oblasti (DATA-36 b, k rozhodnuti)', false],
+  // ROZHODUJE: vadne razitko neshodi sebe, ale cely deploy — seed razitek
+  // bezi uvnitr nasazeni. Cisty stav je presne nula.
+  ['razitka', 'razitkovy korpus: profil chaty, sken, atribuce prevzetí', true],
   // jedina kontrola mimo datovou vrstvu: definice GitHub Actions. Rozhoduje,
   // protoze vadny workflow se jinak pozna az na webu Actions (padly beh).
   ['workflows', 'definice GitHub Actions (.github/workflows)', true],

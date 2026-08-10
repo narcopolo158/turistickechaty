@@ -1,6 +1,6 @@
 # Kontroly datové vrstvy
 
-Jedenáct skriptů, které hlídají to, co dělá tenhle web webem: **že se údaje dají
+Dvanáct skriptů, které hlídají to, co dělá tenhle web webem: **že se údaje dají
 ověřit a že se nic nedomýšlí**. Nejsou to unit testy aplikace — čtou YAML
 profily v `data/chaty/**` a hlásí, kde próza tvrdí víc, než co je doložené.
 Dva z nich do datové vrstvy nepatří vůbec: `workflows.ts` hlídá definice GitHub
@@ -25,6 +25,7 @@ npx tsx scripts/kontrola/workflows.ts    [soubor.yml …]
 npx tsx scripts/kontrola/exporty.ts
 npx tsx scripts/kontrola/katalog-pokryti.ts   [slug oblasti …]
 npx tsx scripts/kontrola/duplicity-oblasti.ts
+npx tsx scripts/kontrola/razitka.ts
 ```
 
 `kolize-jmen.ts` a `duplicity-oblasti.ts` čtou samy od sebe i
@@ -457,3 +458,29 @@ o příslušnosti; kontrola má jen zajistit, že se na pár nezapomene. **Dvě 
 OSM ID téhož domu (DATA-38) nevidí** — identitou je URL, takže projdou jako dva
 objekty; to je jiná úloha a čeká na vlastní řešení. Stav 10. 8. 2026 je **0**
 (29 párů z 8. 8. je rozhodnuto rozvodím) a drží ho i test nad reálným repem.
+
+**`razitka.ts` — verdikt (DATA-05).** Čte `data/razitka/**` a hlídá čtyři věci,
+kvůli kterým by seed razítek padl. Rozdíl proti ostatním kontrolám je v ceně
+chyby: seed běží **uvnitř nasazení** (`INFRA-01: deploy staging`, krok mezi
+buildem a restartem), takže vadné razítko neshodí sebe, ale celý deploy —
+a pozná se to až tím, že staging nenaběhne.
+
+- **`chata`** — razítko odkazuje na slug, který nemá profil v `data/chaty/**`.
+  Seed na to vyhazuje `Error` („razítko potřebuje profil chaty"). Reálné riziko:
+  otisky se z razitkuj.cz zakládají dávkou podle jmenné shody, takže mohou
+  předběhnout povýšení chaty z kandidáta.
+- **`atribuce`** — převzaté razítko (`zpusobZiskani: prevzato-se-svolenim`) bez
+  `prevzeti.zdrojUrl` nebo `prevzeti.zdroj`. Odkaz na zdroj je PODMÍNKA svolení
+  majitelů otisků a kolekce `Razitka` publikaci bez něj odmítne (`APIError`).
+  Tuhle vadu nelze „vypnout" — bez odkazu se otisk zveřejnit nesmí.
+- **`otisk-soubor`** / **`licence`** — sken vedle YAML neleží (upload spadne na
+  ENOENT), nebo otisk nemá autora a licenci.
+- **`dvojnik`** — dvě razítka téže chaty se shodným `nazev`. Tahle vada deploy
+  NEZHAVARUJE a je proto nejtišší: seed páruje záznam dvojicí (chata, název),
+  takže druhý zápis první přepíše a na webu jedna varianta prostě chybí.
+
+Registry a manifesty (soubory na `_`) se přeskakují — týž výběr, jaký dělá seed.
+Ostrou zkoušku dělá workflow **`DATA-05: seed razítek (zkouška nad čerstvou DB)`**:
+postaví prázdný Postgres, pustí seed dvakrát (idempotence — při nasazení běží nad
+plnou databází) a spočítá, co v DB opravdu je. Stav 10. 8. 2026: 152 razítek,
+všechna publikovaná a s otiskem, 151 převzatých se svolením, 0 bez atribuce.
