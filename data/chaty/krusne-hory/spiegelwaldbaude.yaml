@@ -1,0 +1,158 @@
+# Spiegelwaldbaude — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# třetí položka fronty povyšování; vlastní web spiegelwaldbaude.de se
+# nenačetl — neschválené načtení, nesou to weby spiegelwald.de
+# a beierfeld.de). Výletní hostinec z roku 1903 u König-Albert-Turmu
+# na Spiegelwaldu. Vše verified: false.
+
+nazev: Spiegelwaldbaude
+slug: spiegelwaldbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.5762375
+lng: 12.7922871
+vyska: 728
+obec: Grünhain-Beierfeld
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/43225415 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 728 m: spiegelwald.de,
+    stránka historie (čteno 10. 8. 2026) — hodnota Spiegelwaldu,
+    bauda stojí na vrcholové plošině u rozhledny. Adresa areálu Alte
+    Bernsbacher Straße 1, 08344 Grünhain-Beierfeld (beierfeld.de).
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Žádný načtený pramen ubytování v baudě nevede — jde o výletní
+    hostinec (Gaststätte) u rozhledny; spiegelwald.de vede baudu
+    v sekci König-Albert-Turm jako „Gaststätte Spiegelwaldbaude"
+    a ubytování v okolí odkazuje na jiné domy. Zapsáno ne.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Spiegelwald.de (čteno 10. 8. 2026): „Gaststätte Spiegelwaldbaude"
+    s jídelním lístkem v areálu König-Albert-Turmu. OSM tag vede
+    otvírací dobu X–III 10–17, IV–IX 10–18, pondělí zavřeno (surový
+    formát, neověřeno) — rytmus sedí s hodinami infocentra u věže
+    (beierfeld.de: út–ne a svátky).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+49 3774 509199'
+  web: https://www.spiegelwaldbaude.de/
+overeniProvoz:
+  source: >-
+    Telefon z OSM (way/43225415, stav dat 2026-08-09). Vlastní web
+    spiegelwaldbaude.de se při rešerši nenačetl (neschválené
+    načtení) — doména žije. Provozovatel dle OSM: Tourismus-
+    Zweckverband Spiegelwald; infocentrum u věže vede město
+    (beierfeld.de, tel. 03774 640744). Sezónnost: celoroční rytmus
+    dle OSM tagu.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1881
+    udalost: >-
+      Erzgebirgszweigverein Schwarzenberg (založen 1878) postavil na
+      Spiegelwaldu rozhlednu: základní kámen 9. července 1880,
+      otevření v září 1881, výška 17 metrů, náklad 4 300 marek;
+      roku 1915 věž dostala prosklenou nástavbu na 20 metrů.
+    zdroj: >-
+      spiegelwald.de, stránka historie (čteno 10. 8. 2026) — spolek
+      1878, základní kámen 9. 7. 1880, otevření IX/1881, 17 m,
+      4 300 marek, nástavba 1915.
+  - rok: 1903
+    udalost: >-
+      U věže vyrostla Spiegelwaldbaude — zděný hrázděný hostinec;
+      se stavbou přišla na Spiegelwald i elektřina.
+    zdroj: >-
+      spiegelwald.de, stránka historie (čteno 10. 8. 2026) — bauda
+      1903, hrázděná stavba, zavedení elektřiny.
+  - rok: 1999
+    udalost: >-
+      Původní věž byla roku 1967 stržena; nový König-Albert-Turm se
+      začal stavět 14. září 1998 a slavnostně se otevřel 3. prosince
+      1999 — dnes je bezbariérový a v přízemí má multimediální
+      infocentrum.
+    zdroj: >-
+      spiegelwald.de, stránka historie (čteno 10. 8. 2026) — stržení
+      1967, stavba od 14. 9. 1998, otevření 3. 12. 1999;
+      bezbariérovost a infocentrum: beierfeld.de.
+
+zajimavosti:
+  - text: >-
+      Rozhledna nese jméno saského krále Alberta a web areálu
+      připomíná přání pronesené při stavbě: „Von dieser Stätte aus
+      erfreue sich der Wanderer der herrlichen Werke der Gottesnatur"
+      — ať se odtud poutník těší z nádherných děl boží přírody.
+      Dnešní věž je třetí generace: první stála od 1881, stržena
+      byla 1967 a nová vyrostla až po sjednocení, v roce 1999.
+    kategorie: jine
+    zdroj: >-
+      spiegelwald.de, stránka historie (čteno 10. 8. 2026) — citát
+      i letopočty tamtéž
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Výletní hostinec z roku 1903 na vrcholové plošině Spiegelwaldu
+  (728 m) u König-Albert-Turmu — bauda, rozhledna a infocentrum
+  v jednom areálu nad Grünhain-Beierfeldem. Otevřeno celoročně kromě
+  pondělka; nocleh se tu nenabízí.
+text:
+  - >-
+    Spiegelwald je klasický saský Aussichtsberg: rozhlednu tu spolek
+    ze Schwarzenbergu otevřel už roku 1881, hostinec k ní přibyl
+    v roce 1903 — a s ním na kopec dorazila elektřina. Původní věž
+    krále Alberta padla v roce 1967, dnešní bezbariérová náhrada
+    s multimediálním infocentrem stojí od prosince 1999.
+  - >-
+    Bauda funguje jako výletní restaurace areálu: podle mapových dat
+    má otevřeno celoročně od deseti, v zimě do pěti, v létě do
+    šesti, pondělí je zavírací den. Přespat se tu nedá — Spiegelwald
+    je cíl na odpoledne, s výhledem z věže jako hlavním chodem.
+  - >-
+    Údaje na téhle stránce pocházejí z webů areálu Spiegelwald
+    a města Grünhain-Beierfeld; polohu a kontakty nese OpenStreetMap.
+    Vlastní web baudy se při rešerši nenačetl — neschválené načtení.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      spiegelwald.de — historie věže a baudy (spolek 1878, věž 1881,
+      bauda 1903, nová věž 1999, výška 728 m), Gaststätte v areálu
+      (čteno 10. 8. 2026)
+    url: https://www.spiegelwald.de/deutsch/koenig-albert-turm/geschichte/
+  - popis: >-
+      beierfeld.de — infocentrum s bezbariérovou věží, hodiny út–ne,
+      adresa areálu (čteno 10. 8. 2026)
+    url: https://www.beierfeld.de/de/tourismus/sehenswertes/aussichtsturm-infozentrum
+  - popis: OpenStreetMap (GPS, telefon, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/way/43225415
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/spiegelwaldbaude.yaml rešerší
+  (10. 8. 2026) — třetí položka fronty povyšování. Klíč zařazení:
+  vrcholový výletní hostinec u rozhledny (vzor rozhledna-jedlova:
+  rozhledna s občerstvením, rozhodnutí Michala 28. 7.), provozovatel
+  Tourismus-Zweckverband — veřejná role doložená.
+
+  Vlastní web se nenačetl (PROVENANCE) — až půjde, doplnit otvíračku
+  z první ruky a případnou historii baudy (1903 → dnešek: kdo ji
+  vede? OSM vede Zweckverband, ale hostinského pramen nevede).
+  Fotku dodá příští běh DATA-02 (věž s baudou je fotogenická).

@@ -1,0 +1,155 @@
+# Bergbaude Geisingberg — povýšena z kandidáta DATA-01 rešerší
+# (10. 8. 2026, čtvrtá položka fronty povyšování; vlastní web
+# geisingberg.de se nenačetl — neschválené načtení, nesou to
+# altenberg.de a erz.krusnohorci.cz). Zděná bauda z roku 1906
+# u Louisenturmu na Geisingbergu. Vše verified: false.
+
+nazev: Bergbaude Geisingberg
+slug: bergbaude-geisingberg
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7718417
+lng: 13.7733159
+vyska: 824
+obec: Altenberg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/294926104 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 824 m a adresa „auf dem
+    Geisingberg, 01773 Altenberg": altenberg.de (čteno 10. 8. 2026).
+    Geisingberg stojí mezi horními městy Altenberg a Geising, po
+    severním a západním úbočí jede Müglitztalbahn
+    (erz.krusnohorci.cz). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Žádný načtený pramen dnešní ubytování v baudě nevede —
+    altenberg.de vede objekt v sekci gastronomie bez zmínky
+    o pokojích. Historicky tu ubytovna stála (Unterkunftshaus 1898,
+    erz.krusnohorci.cz); vlastní web se nenačetl, takže případný
+    nocleh dneška zůstává nedoložen. Zapsáno ne.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Altenberg.de (čteno 10. 8. 2026): „preiswerte Hausmannskost in
+    gemütlichem Ambiente", sluneční terasa s 38 místy; X–III 10–16,
+    IV–IX 10–18, středa a čtvrtek zavřeno (mimo saské svátky) —
+    shodně vede otvírací dobu i OSM tag (surový formát).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Říjen–březen 10–16, duben–září 10–18; středa a čtvrtek zavřeno
+  (mimo saské svátky).
+kontakty:
+  telefon: '+49 35056 35555'
+  email: marco@geisingberg.de
+  web: https://www.geisingberg.de/
+overeniProvoz:
+  source: >-
+    Telefon +49 35056 35555: altenberg.de i OSM (node/294926104,
+    stav dat 2026-08-09); e-mail a provozovatel Marco Klein: OSM.
+    Vlastní web geisingberg.de se při rešerši nenačetl (neschválené
+    načtení) — doména žije. Provoz celoroční se zavíracími dny.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1891
+    udalost: >-
+      Na vrcholu Geisingbergu se 27. září 1891 otevřel osmnáctimetrový
+      Louisenturm — na vyhlídkovou plošinu vede 88 schodů.
+    zdroj: >-
+      erz.krusnohorci.cz (čteno 10. 8. 2026) — „am 27. September 1891
+      der 18 Meter hohe Louisenturm eröffnet", 88 schodů. Kdo věž
+      postavil (spolek?), načtený pramen nevede — nedomýšlí se.
+  - rok: 1898
+    udalost: >-
+      Vedle věže vyrostla ubytovna (Unterkunftshaus).
+    zdroj: >-
+      erz.krusnohorci.cz (čteno 10. 8. 2026) — „1898 errichtete man
+      daneben ein Unterkunftshaus".
+  - rok: 1906
+    udalost: >-
+      Ubytovna byla stržena a nahradila ji zděná Bergbaude na
+      masivních základech — dnešní bauda; původně šlo o sezónní
+      provoz.
+    zdroj: >-
+      erz.krusnohorci.cz (čteno 10. 8. 2026) — „1906 bereits wieder
+      abgerissen und durch eine auf massiven Grund errichtete
+      Bergbaude ersetzt"; sezónní začátky tamtéž.
+
+zajimavosti:
+  - text: >-
+      Geisingberg je kopec sevřený železnicí: po severním a západním
+      úbočí se vine Müglitztalbahn z údolí do Altenbergu, takže na
+      baudu s Louisenturmem se dá vyrazit vlakem z obou horních
+      měst — z Geisingu i z Altenbergu.
+    kategorie: jine
+    zdroj: >-
+      erz.krusnohorci.cz (čteno 10. 8. 2026) — poloha mezi Altenbergem
+      a Geisingem, Müglitztalbahn po severním a západním úbočí
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Zděná bauda z roku 1906 na Geisingbergu (824 m) u osmnáctimetrového
+  Louisenturmu z roku 1891 — domácí kuchyně a sluneční terasa nad
+  horními městy Altenberg a Geising. Otevřeno celoročně kromě středy
+  a čtvrtka; nocleh dnes doložený není.
+text:
+  - >-
+    Na Geisingbergu se turistická historie vrství jak schody
+    Louisenturmu: rozhledna se otevřela v září 1891, o sedm let
+    později k ní přibyla ubytovna a roku 1906 ji nahradila zděná
+    Bergbaude, která na vrcholu hospodaří dodnes. Z plošiny věže
+    je po 88 schodech výhled přes hřeben východního Krušnohoří.
+  - >-
+    Bauda vaří levnou domácí kuchyni a v létě k ní patří sluneční
+    terasa s osmatřiceti místy; otevřeno je od deseti, v zimě do
+    čtyř, v létě do šesti, zavírací dny jsou středa a čtvrtek.
+    Nahoru se chodí pěšky z Altenbergu i Geisingu — a k úpatí to
+    jde i vlakem po Müglitztalbahn.
+  - >-
+    Údaje na téhle stránce pocházejí z turistického webu Altenbergu
+    a z krušnohorského portálu; polohu a kontakty nese OpenStreetMap.
+    Vlastní web baudy se při rešerši nenačetl — neschválené načtení.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      altenberg.de — výška 824 m, Hausmannskost, terasa 38 míst,
+      otvírací doba, telefon (čteno 10. 8. 2026)
+    url: https://www.altenberg.de/de/gastro/altenberg/bergbaude-geisingberg/8757643/
+  - popis: >-
+      erz.krusnohorci.cz — Louisenturm 27. 9. 1891 (18 m, 88 schodů),
+      ubytovna 1898, zděná bauda 1906, Müglitztalbahn (čteno
+      10. 8. 2026)
+    url: https://erz.krusnohorci.cz/ausflugstipps/317-geisingberg
+  - popis: OpenStreetMap (GPS, kontakty, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/node/294926104
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/bergbaude-geisingberg.yaml
+  rešerší (10. 8. 2026) — čtvrtá položka fronty povyšování. Klíč
+  zařazení: vrcholová bauda u rozhledny (vzor rozhledna-jedlova /
+  spiegelwaldbaude), kontinuita 1898/1906 — role na trase nesporná.
+
+  Vlastní web se nenačetl (PROVENANCE) — až půjde, ověřit případný
+  NOCLEH (historická ubytovna 1898; dnešní stav nedoložen, zapsáno
+  ne — případně překlopit), hostinského (OSM vede Marco Klein)
+  a historii z první ruky (geisingberg.de/berg_gesch.htm existuje).
+  Fotku dodá příští běh DATA-02.
