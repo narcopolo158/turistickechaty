@@ -2475,3 +2475,734 @@ vyrazeno:
       Claude (9. 8. 2026, večerní exporty — vyřazeno na základě jména
       řetězce)
     checked: 2026-08-09
+
+  # ── TRIÁŽ KRUŠNÝCH HOR, PRVNÍ PRŮCHOD (9. 8. 2026, noční blok, vzor
+  # VT-03/Beskydy/Nízké Tatry) ── Krušnohorská fronta měla 296 kandidátů
+  # (po Pizza Hut); tenhle průchod vyřazuje JEN těch 72, u kterých je
+  # doklad pronájmu přímo v tagu OSM — v názvu (Ferienhaus, Ferienwohnung,
+  # Apartmány, Pension/Penzion, Chalupa, Villa/Vila, Roubenka; německé
+  # Ferienhaus/Ferienwohnung = rekreační dům/byt k pronájmu), v tagu
+  # tourism=apartment, nebo v odkazu na portál/agenturu pronájmů
+  # (e-chalupy.cz, az-ubytovani.info, erzgebirge-touristik.de, /fewo/).
+  # VĚDOMĚ PONECHÁNI navzdory zásahu vzoru: Berggasthof Kuhberg,
+  # Berggasthof & Pension Neu-Friedrichsruh, Berghütte Zum Kranichsee
+  # a Landgasthof Frischhütte — třída Berggasthof je po šumavské devítce
+  # korpusová a mechanika na ni nesmí; posoudí je rešerše.
+  # Jádro fronty (7 alpine_hut + 8 wilderness_hut + rozhledny) netknuté.
+  - osm: https://www.openstreetmap.org/node/4847329922
+    slug: krusne-hory/chalupa-barringen
+    duvod: >-
+      Apartmán/objekt k pronájmu (OSM tourism=apartment, name „Chalupa
+      Bärringen“, website barringen.cz).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/11090338089
+    slug: krusne-hory/chalupa-mednik
+    duvod: >-
+      Apartmán/objekt k pronájmu (OSM tourism=apartment, name „Chalupa
+      Mědník“, website e-chalupy.cz).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/11090338087
+    slug: krusne-hory/chalupa-pod-mednikem
+    duvod: >-
+      Apartmán/objekt k pronájmu (OSM tourism=apartment, name „Chalupa pod
+      Mědníkem“, website e-chalupy.cz).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/301376420
+    slug: krusne-hory/chata-krusnohorka
+    duvod: >-
+      Apartmán/objekt k pronájmu (OSM tourism=apartment, name „Chata
+      Krušnohorka“, website krusnohorka.cz).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13612608125
+    slug: krusne-hory/chata-u-koniku
+    duvod: >-
+      Apartmán/objekt k pronájmu (OSM tourism=apartment, name „Chata u
+      Koníků“, website chataukoniku.cz).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4411777941
+    slug: krusne-hory/ferienwohnung-erzhutte
+    duvod: >-
+      Apartmán/objekt k pronájmu (OSM tourism=apartment, name „Ferienwohnung
+      Erzhütte“, website ferienwohnung.erzhuette.de).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/370579914
+    slug: krusne-hory/sauberghaus
+    duvod: >-
+      Apartmán (OSM tourism=apartment) — jediný doklad je tag samotného
+      mapujícího; jméno „…haus" by jinak zasloužilo rešerši, ale tag
+      apartmánu je dle konvence rozhodující (vzor Chata Ilonka). Kdyby
+      DATA-25 audit turistické minulosti našel u Saubergu chatu, dá se vrátit
+      z tohohle záznamu.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/134823359
+    slug: krusne-hory/apartmany-47
+    duvod: >-
+      Apartmány — název to říká sám (OSM name „Apartmány 47", website na
+      portálu az-ubytovani.info).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/291397079
+    slug: krusne-hory/ferienwohung-kohl
+    duvod: >-
+      Ferienwohnung k pronájmu — název to říká sám (OSM name „Ferienwohung
+      Kohl", website fewo-kohl.de).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/2678550123
+    slug: krusne-hory/kirsten
+    duvod: >-
+      Objekt k pronájmu (OSM name „Kirsten", website erzgebirge-touristik.de
+      — regionální agentura pronájmů).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/3454154280
+    slug: krusne-hory/sartor
+    duvod: >-
+      Ferienwohnung k pronájmu (website sarahsartor.de/fewo — cesta /fewo/
+      říká Ferienwohnung).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/134947676
+    slug: krusne-hory/apartman-novako
+    duvod: >-
+      Apartmány — název to říká sám (OSM name „Apartmán Novako“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/134823361
+    slug: krusne-hory/apartmany-cestar
+    duvod: >-
+      Apartmány — název to říká sám (OSM name „Apartmány Cestář“, website
+      apartmanycestar.cz).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/134823362
+    slug: krusne-hory/apartmany-engadin
+    duvod: >-
+      Apartmány — název to říká sám (OSM name „Apartmány Engadin“, website
+      apartmanyengadin.cz).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/134823365
+    slug: krusne-hory/apartmany-jurica
+    duvod: >-
+      Apartmány — název to říká sám (OSM name „Apartmány Jurica“, website
+      apartmany.jurica.cz).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/265338580
+    slug: krusne-hory/apartmany-zlaty-andel
+    duvod: >-
+      Apartmány — název to říká sám (OSM name „Apartmány Zlatý Anděl“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12223029323
+    slug: krusne-hory/chalupa-domina
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Chalupa Domina“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5196814949
+    slug: krusne-hory/chalupa-ficak
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Chalupa Fičák“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5196488205
+    slug: krusne-hory/chalupa-stolzenhain
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Chalupa Stolzenhain“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/10262734530
+    slug: krusne-hory/erzgebirgsferienhaus-landmann
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name
+      „Erzgebirgsferienhaus Landmann“, website
+      erzgebirgsferienhaus-landmann.de). Ferienhaus/Ferienwohnung je německé
+      označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/230842624
+    slug: krusne-hory/erzgebirgsferienwohnung
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name
+      „Erzgebirgsferienwohnung“, website erzgebirgsferienwohnung.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12688814614
+    slug: krusne-hory/ferienhaus-ahnert
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Ahnert“, website boernichen.de). Ferienhaus/Ferienwohnung je německé
+      označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/282498435
+    slug: krusne-hory/ferienhaus-alte-bergschmiede
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Alte Bergschmiede“). Ferienhaus/Ferienwohnung je německé označení
+      objektu k pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13384285222
+    slug: krusne-hory/ferienhaus-am-friedrichsbach
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      am Friedrichsbach“, website haus-am-friedrichsbach.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4915891200
+    slug: krusne-hory/ferienhaus-am-hofteich
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      am Hofteich“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/7124399383
+    slug: krusne-hory/ferienhaus-am-mortelbach
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      am Mortelbach“, website ferienhaus-am-mortelbach.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/206561487
+    slug: krusne-hory/ferienhaus-am-skihang
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Am Skihang“, website ferienhaus-am-skihang.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/671603295
+    slug: krusne-hory/ferienhaus-am-steinberg
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      am Steinberg“, website ferienhaus-am-steinberg.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/237623357
+    slug: krusne-hory/ferienhaus-am-wald
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      am Wald“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/714726059
+    slug: krusne-hory/ferienhaus-am-wolfstein
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      "Am Wolfstein"“). Ferienhaus/Ferienwohnung je německé označení objektu
+      k pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/347740373
+    slug: krusne-hory/ferienhaus-anno-dazumal
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Anno Dazumal“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/293070320
+    slug: krusne-hory/ferienhaus-becker-pockau
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Becker Pockau“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/346832237
+    slug: krusne-hory/ferienhaus-bergblick
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Bergblick“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/221395939
+    slug: krusne-hory/ferienhaus-carlsfeld
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Carlsfeld“, website ferienhaus-carlsfeld.de). Ferienhaus/Ferienwohnung
+      je německé označení objektu k pronájmu, přesný protějšek českých
+      „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/1618140117
+    slug: krusne-hory/ferienhaus-drechsel
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Drechsel“, website landgasthof-wolfsgrund.de). Ferienhaus/Ferienwohnung
+      je německé označení objektu k pronájmu, přesný protějšek českých
+      „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/214666660
+    slug: krusne-hory/ferienhaus-fam-suss
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Fam. Süß“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/381196682
+    slug: krusne-hory/ferienhaus-fichtelbergblick
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Fichtelbergblick“, website ferienhaus-fichtelbergblick.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4884361192
+    slug: krusne-hory/ferienhaus-herold
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Herold“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12327706301
+    slug: krusne-hory/ferienhaus-hohentauern
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Hohentauern“, website hohentauern-ferienhaus.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/275585805
+    slug: krusne-hory/ferienhaus-hosel
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Hösel“, website ferienhaus-hoesel.de). Ferienhaus/Ferienwohnung je
+      německé označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/284960722
+    slug: krusne-hory/ferienhaus-huthaus-roter-mann
+    duvod: >-
+      Rekreační dům k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Huthaus »Roter Mann«"). Huthaus je hornický šachetní dům, tedy památka
+      s minulostí — ale doklad pronájmu je přímo v názvu; případný audit
+      DATA-25 má odkaz tady.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/3272658523
+    slug: krusne-hory/ferienhaus-klemt
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Klemt“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/403492079
+    slug: krusne-hory/ferienhaus-kohler
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Köhler“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/1577944507
+    slug: krusne-hory/ferienhaus-kunze
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Kunze“, website erzgebirge-ferienhaus-kunze.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13406668431
+    slug: krusne-hory/ferienhaus-maass
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Maaß“, website ferienhaus-maass.de). Ferienhaus/Ferienwohnung je
+      německé označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/6958298382
+    slug: krusne-hory/ferienhaus-nobis
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Nobis“, website ferienhaus-nobis.de). Ferienhaus/Ferienwohnung je
+      německé označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/7816221888
+    slug: krusne-hory/ferienhaus-oberzwota
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Oberzwota“, website ferienhaus-oberzwota.de). Ferienhaus/Ferienwohnung
+      je německé označení objektu k pronájmu, přesný protějšek českých
+      „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/7555211427
+    slug: krusne-hory/ferienhaus-relax
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      "Relax"“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/11734161677
+    slug: krusne-hory/ferienhaus-robiger
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Röbiger“, website ferienhaus-roebiger.de). Ferienhaus/Ferienwohnung je
+      německé označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/12137890226
+    slug: krusne-hory/ferienhaus-rosemarie
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Rosemarie“, website erlbach-vogtland.de). Ferienhaus/Ferienwohnung je
+      německé označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/1139381412
+    slug: krusne-hory/ferienhaus-schlossblick
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Schlossblick“, website ferienhaus-schlossblick.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/10262822597
+    slug: krusne-hory/ferienhaus-seidel
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Seidel“, website gemeinde-tannenberg.de). Ferienhaus/Ferienwohnung je
+      německé označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/194015473
+    slug: krusne-hory/ferienhaus-seifert-wolfgang
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Seifert, Wolfgang“). Ferienhaus/Ferienwohnung je německé označení
+      objektu k pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/13406639464
+    slug: krusne-hory/ferienhaus-tandler
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Tandler“, website ferienhaus-tandler.de). Ferienhaus/Ferienwohnung je
+      německé označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/598316665
+    slug: krusne-hory/ferienhaus-wernesgrun
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Wernesgrün“, website ferienhaus-wernesgruen.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4884361172
+    slug: krusne-hory/ferienhaus-ziron
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhaus
+      Ziron“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/8069589657
+    slug: krusne-hory/ferienhause-trebnitzgrund
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Ferienhause
+      Trebnitzgrund“, website ferienhaus-trebnitzgrund.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/292478415
+    slug: krusne-hory/ferienhauser-am-waldpark
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name
+      „Ferienhäuser am Waldpark“, website www.nassau-erzgebirge.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/1638787898
+    slug: krusne-hory/ferienhauser-waldhorn-und-sonne
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name
+      „Ferienhäuser "Waldhorn" und "Sonne"“). Ferienhaus/Ferienwohnung je
+      německé označení objektu k pronájmu, přesný protějšek českých „chalup k
+      pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/236843088
+    slug: krusne-hory/ferienwohnung-neubert
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name
+      „Ferienwohnung Neubert“). Ferienhaus/Ferienwohnung je německé označení
+      objektu k pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/202787134
+    slug: krusne-hory/ferienwohnung-renner
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name
+      „Ferienwohnung Renner“, website www.ferienwohnung-renner.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/5196814951
+    slug: krusne-hory/horska-vila-meluzina
+    duvod: >-
+      Vila k pronájmu — název to říká sám (OSM name „Horská Vila Meluzína“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/93064278
+    slug: krusne-hory/pension-puschmann
+    duvod: >-
+      Penzion — název to říká sám (OSM name „Pension Püschmann“); třída
+      penzionů v obci, kterou korpus vyřazuje.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/1125343282
+    slug: krusne-hory/pension-schubert
+    duvod: >-
+      Penzion — název to říká sám (OSM name „Pension Schubert“); třída
+      penzionů v obci, kterou korpus vyřazuje.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/199030118
+    slug: krusne-hory/pension-wiesenmuehle
+    duvod: >-
+      Penzion — název to říká sám (OSM name „Pension Wiesenmuehle“, website
+      pension-wiesenmuehle.de); třída penzionů v obci, kterou korpus
+      vyřazuje.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/1252116841
+    slug: krusne-hory/penzion-matylda
+    duvod: >-
+      Penzion — název to říká sám (OSM name „Penzion Matylda“); třída
+      penzionů v obci, kterou korpus vyřazuje.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/243940209
+    slug: krusne-hory/rollstuhlferienhaus
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name
+      „Rollstuhlferienhaus“, website rollstuhlferienhaus.de).
+      Ferienhaus/Ferienwohnung je německé označení objektu k pronájmu, přesný
+      protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/265338629
+    slug: krusne-hory/roubenka-bozi-dar
+    duvod: >-
+      Objekt k pronájmu — název to říká sám (OSM name „Roubenka Boží Dar“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/236843082
+    slug: krusne-hory/schneider-s-ferienhaus
+    duvod: >-
+      Rekreační dům/byt k pronájmu — název to říká sám (OSM name „Schneider's
+      Ferienhaus“). Ferienhaus/Ferienwohnung je německé označení objektu k
+      pronájmu, přesný protějšek českých „chalup k pronájmu“.
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/way/121657426
+    slug: krusne-hory/villa-panther
+    duvod: >-
+      Vila k pronájmu — název to říká sám (OSM name „Villa Panther“, website
+      villapanther.de).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/4007855124
+    slug: krusne-hory/villa-schneckenstein
+    duvod: >-
+      Vila k pronájmu — název to říká sám (OSM name „Villa Schneckenstein“,
+      website villa-schneckenstein.de).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09
+  - osm: https://www.openstreetmap.org/node/3255288885
+    slug: krusne-hory/villa-ursula
+    duvod: >-
+      Vila k pronájmu — název to říká sám (OSM name „Villa Ursula“).
+    rozhodl: >-
+      Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
+      základě dokladu v tagu OSM, vzor VT-03)
+    checked: 2026-08-09

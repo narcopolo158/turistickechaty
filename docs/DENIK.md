@@ -64,10 +64,22 @@ Smrekovica; obě příslušnosti rozhodnout spolu.
 Krušnými horami" nahrazeno Bieszczadami/Slovenským rájem (nula
 kandidátů, katalogové objekty čekají).
 
-**Příště:** triáž Krušných hor (299 kandidátů — největší fronta
-korpusu, pass 1 dle vzoru VT-03 s německými vzory názvů Ferienhaus/
-Pension/Apartment), povyšování z orlického katalogu (Masarykova chata
-na Šerlichu je vlajková loď oblasti), Domček HS, NT Liptov+Opalisko.
+**DOVĚTEK — TRIÁŽ KRUŠNÝCH HOR, PRVNÍ PRŮCHOD: 296 → 224 kandidátů**
+(na Michalův pokyn „pokracuj triazi krusnych hor"). Vyřazeno 72 objektů
+s dokladem pronájmu přímo v tagu OSM: 50 německých Ferienhaus/
+Ferienwohnung (přesný protějšek českých chalup k pronájmu), Apartmány,
+Pensiony, Chalupy, Vily, tag tourism=apartment (8) a portály
+(e-chalupy.cz, az-ubytovani.info, erzgebirge-touristik.de). VĚDOMĚ
+PONECHÁNI čtyři hraniční se zásahem vzoru: Berggasthof Kuhberg,
+Berggasthof & Pension Neu-Friedrichsruh, Berghütte Zum Kranichsee
+a Landgasthof Frischhütte — třída Berggasthof je po šumavské devítce
+korpusová a mechanika na ni nesmí. Jádro fronty netknuté: 7 alpine_hut
+(mj. Švýcarská bouda v Abertamech, Dachsbaude), 8 wilderness_hut
+(saské Trekkinghütte) a rozhledny.
+
+**Příště:** triáž KH pass 2 (zbylých 224: undefined a guest_housy
+s dokladem), povyšování z orlického katalogu (Masarykova chata na
+Šerlichu je vlajková loď oblasti), Domček HS, NT Liptov+Opalisko.
 
 **Otázky pro Michala:** trvá HUT-0158 (odpověď „přiřadím, pokud
 neřekneš jinak" platí) — a nově: **příslušnost dvojice z pasti oken**
