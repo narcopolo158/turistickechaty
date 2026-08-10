@@ -1,0 +1,28 @@
+# Antýgl — RUČNÍ KANDIDÁT, založen 10. 8. 2026 při systematickém
+# průchodu katalogem chat (HUT-0108: Antýgl, Šumava, Srní, 900 m).
+# Vzor turisticka-chata-prachov. Vše verified: false. Nic nedomýšlet!
+
+nazev: Antýgl
+slug: antygl
+zeme: cz
+oblast: sumava
+typ: obsluhovana
+# BEZ GPS — doplnit před povýšením.
+overeniLokace:
+  source: >-
+    signály existence (průchod katalogem, 10. 8. 2026): externí
+    katalog HUT-0108 (Antýgl, Srní, 900 m, jistota A, web
+    antygl.cz — „Ověřeno k 2026-07-21"); výchozí body ho vedou
+    s přístupem „horská obec + autobus". Bývalý královácký dvorec
+    na Vydře, dnes kemp s restaurací (běžné uvádění — NEOVĚŘENO,
+    obsah antygl.cz zatím NEotevřen).
+  verified: false
+  checked: '2026-08-10'
+interniPoznamky: >-
+  RUČNÍ KANDIDÁT (10. 8. 2026, průchod katalogem chat — mezera
+  BEZ ZÁZNAMU v katalog-pokryti). Katalog: HUT-0108, jistota A.
+  POZOR NA KLÍČ: Antýgl je královácký dvorec s kempem a restaurací
+  u Vydry — jestli „chata" v našem smyslu, rozhodne rešerše (role
+  na trase Povydří nesporná, ubytování v kempu). K dotažení: obsah
+  antygl.cz, GPS, forma noclehu (chatky? pokoje?), historie dvorce.
+  Nebyl v šumavském OSM exportu — při povýšení dohledat OSM objekt.
