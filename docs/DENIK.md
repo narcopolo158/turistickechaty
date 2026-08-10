@@ -29,6 +29,68 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-10 (pátý blok, na pokyn Michala) — ČR mimo hlavní pohoří: Prachov, Hvězda a šest nových kandidátských oblastí
+
+Michal: _„prohledej zbytek ceske republiky a najdi dalsi turistické
+chaty mimo hlavni pohori — treba hvezda na broumovsku, tur. chata
+v prachovskych skalach apod."_ Tři commity, kontroly zelené, korpus 212.
+
+**Hotovo:**
+
+**TURISTICKÁ CHATA PRACHOV POVÝŠENA** — první profil Českého ráje
+a vůbec první profil oblasti úrovně turisticka-oblast: chata KČT
+u vstupu do skal (pozemek 1921, stavba 1922 dle plánů Machoně
+a Vlčka, rozšíření 1930 Ing. Stejskal, návrat KČT 1991), 40 lůžek ve
+třech kategoriích, restaurace s výdejním pultem, salónkem s krbem
+a terasou přes dvacet stolů. Rozpor: stavba 1922 × sté výročí slavené
+2024 — přiznán, nerozhodnut. GPS z kct.cz.
+
+**BROUMOVSKO ZALOŽENO + CHATA HVĚZDA** (desátý profil bez OSM
+podkladu): klášterní hostinec ve švýcarském stylu z roku 1856 (opat
+J. N. Rotter, zároveň sídlo hajného klášterního polesí) vedle
+Dientzenhoferovy hvězdicové kaple z 1733. DŮLEŽITÁ KOREKCE OČEKÁVÁNÍ:
+od září 2025 je chata v rekonstrukci a zavřená do dubna 2027 → stav
+mimo-provoz, kontakty se nezapisují (itras údaje k 2015, majitelé
+tehdy nekomunikovali). Jmenovec jizerská chata Hvězda (66 603 m)
+zapsán do registru.
+
+**ŠEST NOVÝCH KANDIDÁTSKÝCH OBLASTÍ (systém DATA-29, vzor ručního
+kandidáta Prachov):** Chata Lovoš (ceske-stredohori — KČT Lovosice,
+turistická známka č. 489), Chata Macocha (moravsky-kras), Lesní
+penzion Bunč (chriby), Chata Tesák (hostynske-vrchy — POZOR na
+překryv s beskydským oknem), Turistická chata Čeřínek (vysocina),
+Holubyho chata (bile-karpaty — hraniční Veľká Javorina 920 m, budova
+nejspíš na slovenské straně, ~1924 dle devadesátin 2014).
+
+**KONTROLA KOLIZÍ SI VYDĚLALA NA CHLEBA:** pokus založit kandidáta
+Raisovy chaty na Zvičině shodila okamžitě — chata je publikovaná
+přesahově v krkonose už od 27. 7. Duplicitní soubor smazán.
+
+**PŘEHLED DATA-41** (docs/DATA-41-mimo-hlavni-pohori.md): co je
+hotovo, co v repu už bylo (Milešovka → čeká na ceske-stredohori,
+Tokáň/Bielatal → Českosaské Švýcarsko), tipy k prověření (Mezní
+Louka, Sokolí hnízdo, Kladská, Křemešník, Devět skal, Čerchov…)
+a doporučený postup: SYSTEMATICKY projít katalog chat KČT
+(kct.cz/chaty) — dnešní vzorek z něj potvrdil Prachov, Zvičinu
+i Lovoš, povede jich víc.
+
+**Příště:** povyšování dnešních kandidátů po rešerších (Lovoš
+a Macocha mají nejsilnější signály), systematický průchod katalogem
+chat KČT, případně oblast Českosaské Švýcarsko (vyřešila by Tokáň
+i Bielatal najednou). A trvá fronta z minulých bloků (16 baud
+Krušných hor, lužický koš POSOUDIT, orlická česká strana).
+
+**Otázky pro Michala:**
+
+1. **Vysočina jako jedna oblast, nebo víc?** Čeřínek je
+   v Křemešnické vrchovině, Devět skal ve Žďárských vrších — jestli
+   je „Vysočina" jedna turistická oblast, rozhodni před publikací.
+2. **Českosaské Švýcarsko založit?** Vyřešilo by přesahy Tokáně
+   (lužické okno) i Bielatalu (krušnohorské okno) — a Mezní Louka
+   s Pravčickou branou jsou silné cíle.
+3. Trvá vše z dopoledne: třetí razítkové svolení, vzor Barbora,
+   KONTROLA-11, kliky DATA-01/DATA-37.
+
 ## 2026-08-10 (čtvrtý blok, druhá šestihodinovka na pokyn Michala) — Lužické a Orlické hory otevřeny, katalogy tří oblastí komplet, korpus 210
 
 Michal: _„pokracuj dalsi sestihodinovkou"_. Sedm commitů, CI zelené.
