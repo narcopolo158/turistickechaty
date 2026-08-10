@@ -1,0 +1,156 @@
+# Köhlerhütte (Köhlerhütte-Fürstenbrunn) — povýšena z kandidáta
+# DATA-01 rešerší (10. 8. 2026, jedenáctá položka fronty povyšování;
+# vzor DATA-03: OSM × VLASTNÍ WEB). Zájezdní hostinec od roku 1839
+# v Oswaldtalu u Waschleithe, hotel od 1994. Vše verified: false.
+
+nazev: Köhlerhütte
+slug: kohlerhutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Köhlerhütte-Fürstenbrunn
+    poznamka: plné jméno na vlastním webu
+  - nazev: Hotel und Restaurant Köhlerhütte-Fürstenbrunn
+    poznamka: podoba jména v katalozích
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.5509297
+lng: 12.8235866
+obec: Grünhain-Beierfeld
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/152094926 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Adresa Am Fürstenberg 7, 08344
+    Grünhain-Beierfeld, místní část Waschleithe — „mitten im
+    lieblichen Oswaldtal" (vlastní web koehlerhuette.com, čteno
+    10. 8. 2026); 100 m od nejstarší saské štoly zpřístupněné
+    veřejnosti (erzgebirge.de). Nadmořskou výšku žádný načtený
+    pramen nevede — nezapisuje se. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Erzgebirge.de (čteno 10. 8. 2026): 20 pokojů — dva dvoupokojové
+    apartmány, suita s nebesy, dvoulůžkové pokoje s možností
+    přistýlky; hotelová část od 1994. Vlastní web: jednolůžkové,
+    dvoulůžkové pokoje a suity. Počet lůžek číslem prameny nevedou.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web koehlerhuette.com (čteno 10. 8. 2026): denně 11 až
+    ~23, teplá kuchyně do 21:30 (ne: kuchyně do 20, lokál do 20:30);
+    „Einen Ruhetag haben wir nicht." Regionální speciality
+    v historické Köhlerstube, Jagdstube, pivní zahradě
+    a Prinzensaalu až pro 100 lidí (erzgebirge.de).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Denně 11–23 (teplá kuchyně do 21:30; neděle: kuchyně do 20,
+  lokál do 20:30); bez zavíracího dne.
+kontakty:
+  telefon: '+49 3774 15980'
+  email: info@koehlerhuette.com
+  web: https://www.koehlerhuette.com/
+overeniProvoz:
+  source: >-
+    Vlastní web koehlerhuette.com (čteno 10. 8. 2026): telefon
+    +49 3774 1598-0, e-mail info@koehlerhuette.com; rodinný podnik,
+    provozovatel Heiko Schmidt. Provoz celoroční bez zavíracího dne.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1839
+    udalost: >-
+      V Oswaldtalu u Waschleithe začala fungovat zájezdní hospoda —
+      katalogy dům vedou jako „familiengeführte geschichtsträchtige
+      Einkehrstätte seit 1839".
+    zdroj: >-
+      erzgebirge.de (čteno 10. 8. 2026) — „seit 1839". Původ jmen
+      Köhlerhütte (uhlířská bouda) a Fürstenbrunn (knížecí pramen)
+      načtené prameny nevysvětlují — legenda se nedomýšlí; německá
+      Wikipedie má článek Köhlerhütte Fürstenbrunn, ze sandboxu
+      cache-only.
+  - rok: 1994
+    udalost: >-
+      K historickému hostinci přibyla hotelová část s dvaceti pokoji.
+    zdroj: >-
+      erzgebirge.de (čteno 10. 8. 2026) — hotel od 1994, 20 pokojů.
+
+zajimavosti:
+  - text: >-
+      Köhlerhütte stojí sto metrů od nejstarší saské ukázkové štoly
+      — a jméno nese po uhlířích, kteří v okolních lesích pálili
+      dřevěné uhlí pro hutě. Jí se v historické Köhlerstube nebo
+      v Prinzensaalu, sále až pro sto lidí, jehož jméno odkazuje ke
+      knížecímu prameni Fürstenbrunn hned u domu.
+    kategorie: jine
+    zdroj: >-
+      100 m od nejstarší saské zpřístupněné štoly, Köhlerstube,
+      Prinzensaal pro 100 lidí: erzgebirge.de (čteno 10. 8. 2026);
+      jména místností: tamtéž + vlastní web. Samotná pověst
+      o prameni v načtených pramenech chybí — neuvádí se.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Zájezdní hostinec v Oswaldtalu u Waschleithe krmí pocestné od roku
+  1839 — dnes rodinný hotel s dvaceti pokoji, historickou
+  Köhlerstube a kuchyní bez zavíracího dne, sto metrů od nejstarší
+  saské ukázkové štoly.
+text:
+  - >-
+    Köhlerhütte-Fürstenbrunn je klasika západního Krušnohoří:
+    zájezdní hospoda v zeleném údolí, kde se zastavovalo cestou mezi
+    Grünhainem a Schwarzenbergem už za časů uhlířů. Jako
+    „Einkehrstätte" slouží od roku 1839; hotelových dvacet pokojů
+    — včetně suity s nebesy — přibylo v roce 1994.
+  - >-
+    Kuchyně vaří regionální speciality denně od jedenácti do večera
+    a zavírací den dům nezná; sedí se v historické Köhlerstube,
+    Jagdstube, na pivní zahradě, a na oslavy je Prinzensaal až pro
+    sto lidí. Na dosah je ukázková štola ve Waschleithe i vyhlídky
+    Fürstenbergu.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu hotelu
+    a z portálu erzgebirge.de; polohu nese OpenStreetMap. Pověst
+    o knížecím prameni načtené prameny nevedou — neuvádíme ji.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hotelu — otvírací doba bez zavíracího dne,
+      kontakty, provozovatel Heiko Schmidt, poloha v Oswaldtalu
+      (načteno 10. 8. 2026)
+    url: https://www.koehlerhuette.com/
+  - popis: >-
+      erzgebirge.de — hostinec od 1839, hotel od 1994, 20 pokojů,
+      Köhlerstube a Prinzensaal, štola 100 m (čteno 10. 8. 2026)
+    url: https://www.erzgebirge.de/gastgeber/hotel-und-restaurant-koehlerhuette-fuerstenbrunn-ggv725
+  - popis: OpenStreetMap (GPS; ODbL)
+    url: https://www.openstreetmap.org/way/152094926
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/kohlerhutte.yaml rešerší
+  (10. 8. 2026) — jedenáctá položka fronty povyšování. Kandidátova
+  otázka „je to slavná Köhlerhütte-Fürstenbrunn?" POTVRZENA (vlastní
+  web koehlerhuette.com = Köhlerhütte-Fürstenbrunn, Waschleithe).
+  Klíč zařazení: historická zájezdní Einkehrstätte (1839) s kuchyní
+  pro veřejnost denně, u výletních cílů Oswaldtalu.
+
+  OSM URL way/152094926 ověřena gropem proti kandidátovi. K OVĚŘENÍ
+  (DATA-04): pověst o Fürstenbrunnu a původ jména (Wikipedie
+  cache-only!), nadmořská výška, počet lůžek. Fotku dodá příští běh
+  DATA-02.
