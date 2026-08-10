@@ -1,0 +1,174 @@
+# Lesní penzion Bunč — povýšen z ručního kandidáta rešerší (10. 8. 2026).
+# PRVNÍ PROFIL CHŘIBŮ (oblast založena publikačně tímto profilem).
+# Nástupce turistické útulny KČT z roku 1924 na sedle Bunč pod Brdem.
+# Vše verified: false.
+
+nazev: Lesní penzion Bunč
+slug: lesni-penzion-bunc
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: chriby
+
+aliasy:
+  - nazev: Turistická útulna hostinská na Bunči
+    poznamka: historické jméno útulny KČT z roku 1924 (Kudy z nudy)
+  - nazev: Chata na Bunči
+    poznamka: lidová podoba jména, užitá i při stoletém výročí 2024
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.1821823
+lng: 17.3466961
+vyska: 479
+obec: Roštín
+overeniLokace:
+  source: >-
+    GPS 49°10'57.055"N, 17°20'47.324"E (49.1821823, 17.3466961)
+    a výška 479 m („uprostřed severovýchodního hřebene ve výšce
+    479 m n. m."): ubytovani.pampeliska.cz (čteno 10. 8. 2026) —
+    objekt není v našich OSM exportech (Chřiby nemají vyhledávací
+    okno). Výšku 479 m vede shodně i vlastní web bunc.cz. Adresa
+    768 03 Roštín 287 (vlastní web); u sedla se dle Kudy z nudy
+    sbíhají katastry pěti obcí (Roštín, Kostelany, Salaš, Velehrad,
+    Jankovice). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 69
+overeniNocleh:
+  source: >-
+    Ubytovani.pampeliska.cz (čteno 10. 8. 2026): „Max. 69 osob,
+    19 pokojů" + sedm celoročních chatek. Vlastní web bunc.cz vede
+    pokoje, tři apartmány a sruby. Skladba chatek se mezi prameny
+    liší (pampeliska: pětilůžkové; Kudy z nudy: čtyřlůžkové) —
+    ROZPOR, přiznaný; číslo lůžek chatek se nezapisuje.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web bunc.cz (čteno 10. 8. 2026): restaurace s barem,
+    v srpnu po–čt 11–21, pá–so 10–22, ne 10–20; „kuchyně zavírá
+    60 minut před koncem otevírací doby restaurace". Kudy z nudy:
+    restaurace s krbem a dětským koutkem, sluneční terasa pro
+    200 lidí, zvěřinové speciality, steaky, grilovaná žebra.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Restaurace (srpen): po–čt 11–21, pá–so 10–22, ne 10–20; recepce
+  denně 8–20. Mimo sezónu se hodiny mohou lišit — ověřit na webu.
+kontakty:
+  telefon: '+420 573 367 272'
+  email: recepce@chribyresort.cz
+  web: https://www.bunc.cz/
+overeniProvoz:
+  source: >-
+    Vlastní web bunc.cz (čteno 10. 8. 2026): recepce
+    +420 573 367 272, restaurace +420 725 653 114, e-mail
+    recepce@chribyresort.cz. Provozovatel RUDOLF JELÍNEK a.s.,
+    Vizovice (IČ 49971361) — tamtéž. Provoz celoroční (celoroční
+    chatky, recepce denně).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1924
+    udalost: >-
+      Na sedle pod Brdem vznikla „Turistická útulna hostinská na
+      Bunči" — patřila Klubu českých turistů a sloužila poutníkům
+      na Velehrad i cyklistům.
+    zdroj: >-
+      Kudy z nudy (čteno 10. 8. 2026) — „Turistická útulna
+      hostinská na Bunči" z roku 1924, KČT, poutníci a cyklisté.
+  - rok: 1942
+    udalost: >-
+      Útulnu vypálili nacisté; obnovy se dočkala po roce 1946.
+    zdroj: >-
+      Kudy z nudy (čteno 10. 8. 2026) — „vypálena nacisty" 1942,
+      obnova po 1946. Okolnosti vypálení (partyzánský kraj?)
+      načtené prameny nevedou — nedomýšlí se.
+  - rok: 2024
+    udalost: >-
+      Sto let turistické chaty na Bunči se slavilo 25. května 2024
+      — s přednáškou „Od Buntsche k Bunči" o proměnách jména
+      i o „chřibské dálnici", stavbě, která existenci Bunče kdysi
+      ohrozila.
+    zdroj: >-
+      vlastní web bunc.cz, článek „100 let turistické chaty na
+      Bunči" (čteno 10. 8. 2026).
+
+zajimavosti:
+  - text: >-
+      Bunč je místo, kde se potkává pět katastrů — u sedla se
+      sbíhají hranice Roštína, Kostelan, Salaše, Velehradu
+      a Jankovic. Útulna tu od roku 1924 sloužila mimo jiné
+      poutníkům mířícím lesy na Velehrad; dnešní penzion provozuje
+      vizovická likérka RUDOLF JELÍNEK.
+    kategorie: jine
+    zdroj: >-
+      pět katastrů, poutníci na Velehrad: Kudy z nudy (čteno
+      10. 8. 2026); provozovatel RUDOLF JELÍNEK a.s.: vlastní web
+      bunc.cz
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Nástupce turistické útulny KČT z roku 1924 na sedle Bunč pod
+  Brdem — restaurace se zvěřinou a terasou, pokoje, apartmány
+  a celoroční sruby uprostřed bukových lesů Chřibů. Kolem vede
+  značená cesta na rozhlednu na Brdu i poutní stezka na Velehrad.
+text:
+  - >-
+    Sedlo Bunč je odjakživa křižovatka Chřibů: sbíhá se tu pět
+    katastrů a přes hřeben se chodilo na pouť na Velehrad. Klub
+    českých turistů tu proto roku 1924 postavil útulnu — za války
+    ji vypálili nacisté, po roce 1946 se dočkala obnovy a v květnu
+    2024 se na Bunči slavilo sto let turistické chaty.
+  - >-
+    Dnešní lesní penzion drží vizovická likérka RUDOLF JELÍNEK:
+    devatenáct pokojů, tři apartmány a sedm celoročních srubů pro
+    zhruba sedmdesát hostů, restaurace s krbem, zvěřinovými
+    specialitami a sluneční terasou. Od penzionu je to značkou
+    kousek na Brdo s kamennou rozhlednou, nejvyšší bod Chřibů.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu penzionu,
+    z Kudy z nudy a z ubytovacího katalogu. Skladba lůžek v chatkách
+    se mezi prameny liší — přiznáváme. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web penzionu — výška 479 m, adresa Roštín 287,
+      otvírací doba restaurace i recepce, kontakty, provozovatel
+      RUDOLF JELÍNEK a.s., článek ke 100 letům chaty (načteno
+      10. 8. 2026)
+    url: https://www.bunc.cz/
+  - popis: >-
+      Kudy z nudy — útulna KČT 1924, vypálení 1942 a obnova po
+      1946, pět katastrů, restaurace s krbem a terasou (čteno
+      10. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/lesni-penzion-bunc-v-chribech
+  - popis: >-
+      ubytovani.pampeliska.cz — GPS, výška 479 m, kapacita 69 osob
+      / 19 pokojů, chatky (čteno 10. 8. 2026)
+    url: https://ubytovani.pampeliska.cz/cesko/rostin/penzion-lesni-penzion-bunc-PR0168/
+interniPoznamky: >-
+  Povýšeno z data/kandidati/chriby/lesni-penzion-bunc.yaml rešerší
+  (10. 8. 2026) — PRVNÍ PROFIL CHŘIBŮ (oblast založena publikačně
+  současně). Klíč zařazení: přímý nástupce útulny KČT z 1924 na
+  značené trase, restaurace pro kolemjdoucí — role na trase
+  i turistická minulost nesporné. Jméno nese „penzion", klíč
+  rozhoduje role, ne typ stavby.
+
+  K OVĚŘENÍ (DATA-04): detailní historie z výroční přednášky „Od
+  Buntsche k Bunči" (kniha se prodávala na oslavě); kdy JELÍNEK
+  převzal; okolnosti vypálení 1942; lůžka chatek (4× vs 5×).
+  Kandidát Hubertka (lovecká chata, Turistika.cz) — prověřit jako
+  dalšího kandidáta Chřibů. Fotku dodá běh DATA-02, až oblast
+  dostane okno.
