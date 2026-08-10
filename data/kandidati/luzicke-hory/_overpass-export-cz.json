@@ -1,0 +1,611 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-10T07:54:55Z",
+    "timestamp_areas_base": "2026-08-09T04:45:57Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 333131470,
+  "lat": 50.8338512,
+  "lon": 14.6530871,
+  "tags": {
+    "addr:city": "Mařenice",
+    "addr:conscriptionnumber": "86",
+    "addr:country": "CZ",
+    "addr:housenumber": "86",
+    "addr:place": "Horní Světlá",
+    "addr:postcode": "47157",
+    "check_date": "2025-09-20",
+    "disused:amenity": "restaurant",
+    "email": "chata-luzanka@seznam.cz",
+    "facebook": "https://www.facebook.com/chataluzanka.cz/",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata Lužanka",
+    "outdoor_seating": "yes",
+    "phone": "+420 775 111 332",
+    "source:addr": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://www.chataluzanka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 333131472,
+  "lat": 50.8424253,
+  "lon": 14.6481802,
+  "tags": {
+    "addr:city": "Mařenice",
+    "addr:conscriptionnumber": "75",
+    "addr:country": "CZ",
+    "addr:housenumber": "75",
+    "addr:place": "Horní Světlá",
+    "addr:postcode": "47157",
+    "amenity": "restaurant",
+    "check_date": "2023-08-31",
+    "cuisine": "regional",
+    "email": "info@chataluz.cz",
+    "name": "Chata Luž",
+    "name:de": "Lauschehütte",
+    "opening_hours": "Mo-Th 10:30-22:00; Fr,Sa 10:30-23:00; Su 10:30-21:00",
+    "outdoor_seating": "yes",
+    "phone": "+420 725 301 370",
+    "source:addr": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "http://www.chataluz.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 333131473,
+  "lat": 50.8430104,
+  "lon": 14.6490616,
+  "tags": {
+    "addr:city": "Mařenice",
+    "addr:conscriptionnumber": "81",
+    "addr:country": "CZ",
+    "addr:housenumber": "81",
+    "addr:place": "Horní Světlá",
+    "addr:postcode": "47157",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Lužická Bouda",
+    "name:de": "Lausitzer Baude",
+    "outdoor_seating": "yes",
+    "source:addr": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://www.luzickabouda.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 455445389,
+  "lat": 50.8835594,
+  "lon": 14.6301496,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "PS Chata",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 529467559,
+  "lat": 50.7355612,
+  "lon": 14.5811463,
+  "tags": {
+    "addr:city": "Sloup v Čechách",
+    "addr:conscriptionnumber": "282",
+    "addr:country": "CZ",
+    "addr:housenumber": "282",
+    "addr:place": "Sloup v Čechách",
+    "addr:postcode": "47152",
+    "addr:street": "Mikovcova",
+    "amenity": "restaurant",
+    "brewery": "Frýdlant;Cvikov",
+    "facebook": "https://www.facebook.com/Chata-pod-hradem-432278100443509/",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Chata pod hradem",
+    "outdoor_seating": "yes",
+    "phone": "+420 725 068 517",
+    "source:addr": "cuzk:ruian",
+    "website": "https://www.chatapodhradem.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 917120348,
+  "lat": 50.8341355,
+  "lon": 14.6514890,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Česká chalupa",
+    "name:de": "Haferwinkler",
+    "smoking": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1207787562,
+  "lat": 50.8639225,
+  "lon": 14.5604100,
+  "tags": {
+    "addr:conscriptionnumber": "10",
+    "addr:country": "CZ",
+    "addr:housename": "Chata Zvonecek",
+    "addr:housenumber": "10",
+    "addr:place": "Jedlová",
+    "addr:postcode": "40756",
+    "alt_name": "Glöckchenhütte",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Chata Zvonecek",
+    "name:de": "Glöckchen",
+    "source": "50°51'50,12\" N; 14°33'37,5\" E",
+    "source:addr": "mvcr:adresa",
+    "source:loc": "cuzk:km"
+  }
+},
+{
+  "type": "node",
+  "id": 2384149010,
+  "lat": 50.8728096,
+  "lon": 14.5754457,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chalupa"
+  }
+},
+{
+  "type": "node",
+  "id": 3742323858,
+  "lat": 50.8351052,
+  "lon": 14.6513096,
+  "tags": {
+    "addr:city": "Mařenice",
+    "addr:conscriptionnumber": "66",
+    "addr:country": "CZ",
+    "addr:housenumber": "66",
+    "addr:place": "Horní Světlá",
+    "addr:postcode": "47157",
+    "disused:amenity": "restaurant",
+    "email": "petrovabouda@seznam.cz",
+    "name": "Petrova bouda",
+    "phone": "+420 725 349 824",
+    "source:addr": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "http://www.petrovabouda.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 3946550961,
+  "lat": 50.7887067,
+  "lon": 14.5350235,
+  "tags": {
+    "addr:city": "Polevsko",
+    "addr:country": "CZ",
+    "addr:housenumber": "ev.39",
+    "addr:place": "Polevsko",
+    "addr:postcode": "47116",
+    "addr:provisionalnumber": "39",
+    "name": "Ubytování Chata Hana",
+    "phone": "+420 777 250 452",
+    "ref:ruian:addr": "27165388",
+    "source:addr": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 4271147065,
+  "lat": 50.8424465,
+  "lon": 14.6480147,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2023-08-31",
+    "cuisine": "regional",
+    "name": "Chata Luž",
+    "name:de": "Lauschehütte"
+  }
+},
+{
+  "type": "node",
+  "id": 5733756521,
+  "lat": 50.8469976,
+  "lon": 14.5035387,
+  "tags": {
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 6821057447,
+  "lat": 50.9338343,
+  "lon": 14.4627665,
+  "tags": {
+    "addr:city": "Krásná Lípa",
+    "addr:conscriptionnumber": "51",
+    "addr:country": "CZ",
+    "addr:housenumber": "51",
+    "addr:place": "Vlčí Hora",
+    "addr:postcode": "40747",
+    "beds": "12",
+    "contact:email": "steckeroval@seznam.cz",
+    "contact:phone": "+420 737 878 077",
+    "contact:website": "https://www.chalupa-medium1.com/",
+    "internet_access": "yes",
+    "name": "Chalupa Médium",
+    "operator": "Libuše Steckerová",
+    "rooms": "8",
+    "tourism": "chalet",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6943200711,
+  "lat": 50.8000967,
+  "lon": 14.8234454,
+  "tags": {
+    "name": "Černá Louže",
+    "tourism": "chalet",
+    "website": "https://kempcernalouze.cz/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 9751061036,
+  "lat": 50.7688118,
+  "lon": 14.8335627,
+  "tags": {
+    "name": "Black Cattle Camp",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 12829066379,
+  "lat": 50.8165344,
+  "lon": 14.5392745,
+  "tags": {
+    "name": "LESNÍ CHATY KYTLICE \"HOGO FOGO\"",
+    "phone": "+420 723 435 803",
+    "tourism": "chalet",
+    "website": "https://www.hogofogochatykytlice.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 13012013345,
+  "lat": 50.7918855,
+  "lon": 14.4888190,
+  "tags": {
+    "addr:city": "Prysk",
+    "addr:housenumber": "55",
+    "addr:postcode": "47115",
+    "contact:facebook": "https://www.facebook.com/chalupa.prysk",
+    "contact:instagram": "https://www.instagram.com/chalupa_prysk/",
+    "email": "info@chalupa-prysk.cz",
+    "internet_access": "yes",
+    "name": "CHALUPA",
+    "phone": "+420 603 947 212",
+    "tourism": "apartment",
+    "website": "https://www.chalupa-prysk.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 13013157354,
+  "lat": 50.8346744,
+  "lon": 14.6482112,
+  "tags": {
+    "name": "Chata U Myšáka",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 13926412738,
+  "lat": 50.9165241,
+  "lon": 14.4628127,
+  "tags": {
+    "addr:city": "Dlouhý Důl",
+    "addr:housenumber": "ev .295",
+    "addr:postcode": "40747",
+    "contact:facebook": "https://www.facebook.com/ulesnihoducha",
+    "contact:instagram": "https://www.instagram.com/ulesnihoducha/",
+    "description": "Rooms for rent in the 200 year old fully reconstructed cottage house in Czech Switzerland with spa.",
+    "email": "ulesnihoducha@gmail.com",
+    "name": "U lesního ducha",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 13970692748,
+  "lat": 50.7910509,
+  "lon": 14.4913703,
+  "tags": {
+    "alt_name": "Samobouda",
+    "amenity": "restaurant",
+    "name": "Samo-bouda",
+    "opening_hours": "24/7",
+    "website": "https://preskava.cz/samobouda"
+  }
+},
+{
+  "type": "way",
+  "id": 48360394,
+  "center": {
+    "lat": 50.8148570,
+    "lon": 14.7381215
+  },
+  "nodes": [
+    614239858,
+    614239868,
+    614239866,
+    6249739468,
+    6249739467,
+    614239863,
+    614239858
+  ],
+  "tags": {
+    "addr:city": "Heřmanice v Podještědí",
+    "addr:housenumber": "275",
+    "addr:street": "Heřmanice v Podještědí",
+    "building": "hotel",
+    "building:levels": "3",
+    "building:ruian:type": "11",
+    "name": "Skautská chata Seleška (býv. myslivna č. 6)",
+    "name:de": "Forsthaus Nr 6",
+    "old_name": "Na Šestce",
+    "ref:ruian:building": "12941301",
+    "source": "cuzk:ruian",
+    "tourism": "chalet",
+    "website": "https://seleska.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 100147343,
+  "center": {
+    "lat": 50.8763165,
+    "lon": 14.4121185
+  },
+  "nodes": [
+    4370973725,
+    4370973717,
+    4370973713,
+    4370973714,
+    1157637907,
+    1157637838,
+    1157637809,
+    1157637883,
+    4370973725
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "127",
+    "addr:country": "CZ",
+    "addr:housenumber": "127",
+    "addr:place": "Jetřichovice",
+    "addr:postcode": "40716",
+    "building": "hotel",
+    "check_date:opening_hours": "2024-05-25",
+    "contact:email": "rezervace@chatatokan.cz",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=100057288616484",
+    "cuisine": "regional",
+    "name": "Lesní Chata na Tokáni 127",
+    "name:cs": "Lesní Chata na Tokáni 127",
+    "name:de": "Hegerhaus",
+    "opening_hours": "Mo-Su 11:00-21:00",
+    "outdoor_seating": "yes",
+    "phone": "+420 608 912 256;+420 704 405 325",
+    "ref:ruian:addr": "26879727",
+    "restaurant": "yes",
+    "tourism": "hotel",
+    "website": "https://www.chatatokan.cz"
+  }
+},
+{
+  "type": "way",
+  "id": 100147347,
+  "center": {
+    "lat": 50.8775812,
+    "lon": 14.4140071
+  },
+  "nodes": [
+    1157637825,
+    1157637906,
+    1157637872,
+    11014636468,
+    11014636464,
+    11014636465,
+    11014636466,
+    11014636467,
+    11014636469,
+    1157637891,
+    1157637825
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Lovecká chata na Tokáni",
+    "name:de": "Jagdhütte",
+    "name:en": "Hunting Lodge",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 142479415,
+  "center": {
+    "lat": 50.8514995,
+    "lon": 14.3981629
+  },
+  "nodes": [
+    1559289233,
+    1559289164,
+    1559289147,
+    1559289207,
+    1559289233
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 142479436,
+  "center": {
+    "lat": 50.8515390,
+    "lon": 14.3983196
+  },
+  "nodes": [
+    1559289288,
+    1559289252,
+    1559289219,
+    1559289284,
+    1559289288
+  ],
+  "tags": {
+    "building": "yes",
+    "source": "cuzk:km",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 171669626,
+  "center": {
+    "lat": 50.7978610,
+    "lon": 14.4623770
+  },
+  "nodes": [
+    1826612132,
+    1826612111,
+    1826612123,
+    1826612118,
+    1826612128,
+    1826612134,
+    1826612136,
+    1826612173,
+    1826612132
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Chata Plechovka",
+    "source": "cuzk:km",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 1287662531,
+  "center": {
+    "lat": 50.8519255,
+    "lon": 14.3979715
+  },
+  "nodes": [
+    11942031776,
+    11942031777,
+    11942031778,
+    11942031779,
+    11942031776
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1287662532,
+  "center": {
+    "lat": 50.8520436,
+    "lon": 14.3978164
+  },
+  "nodes": [
+    11942031780,
+    11942031781,
+    11942031782,
+    11942031783,
+    11942031780
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1511993757,
+  "center": {
+    "lat": 50.8513569,
+    "lon": 14.3977700
+  },
+  "nodes": [
+    13817523917,
+    13817523918,
+    13817523919,
+    13817523920,
+    13817523917
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1527331114,
+  "center": {
+    "lat": 50.8516758,
+    "lon": 14.3980974
+  },
+  "nodes": [
+    13918443796,
+    13918443795,
+    13918443794,
+    13918443793,
+    13918443796
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1527331115,
+  "center": {
+    "lat": 50.8517815,
+    "lon": 14.3980752
+  },
+  "nodes": [
+    13918443800,
+    13918443799,
+    13918443798,
+    13918443797,
+    13918443800
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+}
+
+  ]
+}

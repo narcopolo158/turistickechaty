@@ -1,0 +1,52 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-10T07:55:54Z",
+    "timestamp_areas_base": "2026-08-08T22:59:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 333131472,
+  "lat": 50.8424253,
+  "lon": 14.6481802,
+  "tags": {
+    "addr:city": "Mařenice",
+    "addr:conscriptionnumber": "75",
+    "addr:country": "CZ",
+    "addr:housenumber": "75",
+    "addr:place": "Horní Světlá",
+    "addr:postcode": "47157",
+    "amenity": "restaurant",
+    "check_date": "2023-08-31",
+    "cuisine": "regional",
+    "email": "info@chataluz.cz",
+    "name": "Chata Luž",
+    "name:de": "Lauschehütte",
+    "opening_hours": "Mo-Th 10:30-22:00; Fr,Sa 10:30-23:00; Su 10:30-21:00",
+    "outdoor_seating": "yes",
+    "phone": "+420 725 301 370",
+    "source:addr": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "http://www.chataluz.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 4271147065,
+  "lat": 50.8424465,
+  "lon": 14.6480147,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2023-08-31",
+    "cuisine": "regional",
+    "name": "Chata Luž",
+    "name:de": "Lauschehütte"
+  }
+}
+
+  ]
+}

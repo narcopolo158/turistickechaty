@@ -1,0 +1,1306 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-10T07:55:54Z",
+    "timestamp_areas_base": "2026-08-08T22:59:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 972561697,
+  "lat": 50.9099295,
+  "lon": 14.3874165,
+  "tags": {
+    "addr:city": "Sebnitz",
+    "addr:suburb": "Hinterhermsdorf",
+    "amenity": "fast_food",
+    "indoor_seating": "no",
+    "name": "Einkehr zur Rindenhütte (Schleuse)",
+    "opening_hours": "Mo-Su 09:30-16:30",
+    "outdoor_seating": "yes",
+    "shop": "kiosk"
+  }
+},
+{
+  "type": "node",
+  "id": 1216832157,
+  "lat": 50.9274220,
+  "lon": 14.8048881,
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 1399960815,
+  "lat": 50.8602194,
+  "lon": 14.7171731,
+  "tags": {
+    "email": "info@jonsberg-huetten.de",
+    "fax": "+49 35844 800919",
+    "name": "Jonsberg-Hütten",
+    "phone": "+49 35844 80090",
+    "tourism": "chalet",
+    "website": "https://www.jonsberg-huetten.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1399960828,
+  "lat": 50.8603289,
+  "lon": 14.7174013,
+  "tags": {
+    "addr:city": "Jonsdorf",
+    "addr:country": "DE",
+    "addr:housenumber": "21",
+    "addr:postcode": "02796",
+    "addr:street": "Zittauer Straße",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "email": "cookmaster70@yahoo.de",
+    "fax": "+49 35844 79886",
+    "name": "Jonsberghütte",
+    "opening_hours": "Mo-Fr 11:00-14:00,17:30-22:00; Sa-Su 11:00-22:00; Tu off",
+    "operator": "Silvio Meusel",
+    "phone": "+49 35844 79885",
+    "website": "https://www.jonsberg-huetten.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 1459875204,
+  "lat": 50.8508137,
+  "lon": 14.6565114,
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "161",
+    "addr:postcode": "02799",
+    "addr:street": "Hauptstraße",
+    "addr:suburb": "Waltersdorf",
+    "fax": "+49 35841 63447",
+    "name": "Grenzbaude",
+    "phone": "+49 35841 2683",
+    "smoking": "no",
+    "tourism": "guest_house",
+    "website": "https://grenzbaude-waltersdorf.de/",
+    "wheelchair": "no",
+    "wikidata": "Q49350619"
+  }
+},
+{
+  "type": "node",
+  "id": 2384401508,
+  "lat": 50.8494911,
+  "lon": 14.6569298,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "international",
+    "name": "Rübezahlbaude",
+    "source": "Bing",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2518785252,
+  "lat": 50.8502562,
+  "lon": 14.6529037,
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "02799",
+    "addr:street": "An der Lausche",
+    "addr:suburb": "Waltersdorf",
+    "amenity": "restaurant",
+    "name": "Hubertusbaude",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2610974516,
+  "lat": 50.8530360,
+  "lon": 14.6558810,
+  "tags": {
+    "amenity": "biergarten",
+    "name": "Biergarten Sonnebergbaude",
+    "operator": "Sonnebergbaude"
+  }
+},
+{
+  "type": "node",
+  "id": 3467089262,
+  "lat": 50.9442427,
+  "lon": 14.7921684,
+  "tags": {
+    "addr:city": "Mittelherwigsdorf",
+    "addr:housenumber": "1",
+    "addr:postcode": "02763",
+    "addr:street": "Löbauer Straße",
+    "addr:suburb": "Oberseifersdorf",
+    "check_date": "2025-10-03",
+    "name": "Mühlenhof Oberseifersdorf",
+    "operator": "Ilka Petzold",
+    "tourism": "chalet",
+    "website": "https://www.muehlenhof-oberseifersdorf.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 10160123621,
+  "lat": 50.9394401,
+  "lon": 14.6786224,
+  "tags": {
+    "addr:city": "Leutersdorf",
+    "addr:housenumber": "3",
+    "addr:postcode": "02794",
+    "addr:street": "Am Hang",
+    "name": "Oberlausitzer Hof",
+    "operator": "Familie Langer",
+    "phone": "+49 35842 20499",
+    "tourism": "chalet",
+    "website": "https://www.ferienwohnung-oberlausitzer-hof.de"
+  }
+},
+{
+  "type": "node",
+  "id": 10960937629,
+  "lat": 50.8598728,
+  "lon": 14.7542363,
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:housenumber": "4d",
+    "addr:postcode": "02797",
+    "addr:street": "Käthe-Kollwitz-Straße",
+    "contact:email": "eh@natururlaub-oybin.de",
+    "email": "eh@natururlaub-oybin.de",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Edmundshütte",
+    "operator": "Ronald Hauser",
+    "phone": "+49 170 8386487",
+    "tourism": "chalet",
+    "website": "https://www.natururlaub-oybin.de"
+  }
+},
+{
+  "type": "node",
+  "id": 10960939620,
+  "lat": 50.8599346,
+  "lon": 14.7536185,
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:housenumber": "4c",
+    "addr:postcode": "02797",
+    "addr:street": "Käthe-Kollwitz-Straße",
+    "contact:email": "oh@natururlaub-oybin.de",
+    "contact:facebook": "https://www.facebook.com/OybinerHuette",
+    "contact:mobile": "+49 1708 386487",
+    "internet_access": "wlan",
+    "name": "Ferienhaus Oybiner Hütte",
+    "operator": "Ronald Hauser",
+    "tourism": "chalet",
+    "website": "https://www.natururlaub-oybin.de"
+  }
+},
+{
+  "type": "node",
+  "id": 11737353690,
+  "lat": 50.8403129,
+  "lon": 14.7389831,
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "02797",
+    "addr:street": "Straße der Jugend",
+    "contact:email": "Hagen.Freiberg@web.de",
+    "contact:phone": "+49 35844 72295",
+    "contact:website": "https://ferienhaus-freiberg-oybin.hpage.com/",
+    "name": "Ferienhaus Freiberg",
+    "operator": "Hagen Freiberg",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 12031969849,
+  "lat": 50.8618296,
+  "lon": 14.7223037,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Zittauer Hütte",
+    "opening_hours": "Th-Tu 11:30-14:00, Mo-Su 17:30-21:00"
+  }
+},
+{
+  "type": "node",
+  "id": 12884208392,
+  "lat": 50.8319584,
+  "lon": 14.7203594,
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "02797",
+    "addr:street": "Grenzstraße",
+    "addr:suburb": "Hain",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional;german",
+    "email": "info@kammbaude.de",
+    "name": "Kammbaude",
+    "opening_hours": "Mo,Tu,Fr,Sa,Su 11:00-22:00; We,Th off",
+    "opening_hours:kitchen": "Mo,Tu,Fr,Sa,Su 11:00-20:00; We,Th off",
+    "operator": "Knut Popken",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "phone": "+49 35844 70477",
+    "website": "https://www.kammbaude.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694394,
+  "lat": 50.8256566,
+  "lon": 14.7274975,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:email": "post@hochwald-turmbaude.de",
+    "cuisine": "regional;german",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Hochwald-Turmbaude",
+    "opening_hours": "May-Oct: Mo-Su 10:00-17:00; Nov-Apr: We-Su 10:00-17:00; Mo, Tu off",
+    "outdoor_seating": "yes",
+    "payment:cards": "no",
+    "payment:cash": "yes",
+    "phone": "+49 35844 70222",
+    "website": "https://www.hochwald-turmbaude.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 24857129,
+  "center": {
+    "lat": 50.8226024,
+    "lon": 14.7264025
+  },
+  "nodes": [
+    270091267,
+    270091268,
+    270091269,
+    2407933410,
+    270091270,
+    4252438697,
+    270091267
+  ],
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "02797",
+    "addr:street": "Hochwaldweg",
+    "amenity": "restaurant",
+    "building": "yes",
+    "capacity": "75",
+    "contact:email": "info@hochwaldbaude.de",
+    "contact:phone": "+49 35844 70232",
+    "contact:website": "https://www.hochwaldbaude.de/",
+    "cuisine": "regional",
+    "ele": "742",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Hochwaldbaude",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "operator": "Torsten Grundmann",
+    "outdoor_seating": "yes",
+    "tourism": "alpine_hut",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 44644237,
+  "center": {
+    "lat": 50.8319999,
+    "lon": 14.7203554
+  },
+  "nodes": [
+    1195250150,
+    1195250199,
+    566695817,
+    566695818,
+    1195250153,
+    1195250125,
+    566695816,
+    1195250148,
+    1195250150
+  ],
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "02797",
+    "addr:street": "Grenzstraße",
+    "addr:suburb": "Hain",
+    "building": "hotel",
+    "email": "info@kammbaude.de",
+    "name": "Kammbaude",
+    "operator": "Knut Popken",
+    "phone": "+49 35844 70477",
+    "tourism": "hotel",
+    "website": "https://www.kammbaude.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 60264961,
+  "center": {
+    "lat": 50.8514177,
+    "lon": 14.6950882
+  },
+  "nodes": [
+    3414916394,
+    748883907,
+    3414916393,
+    3414916395,
+    3414916396,
+    748883900,
+    3414916398,
+    3414916397,
+    3414916394
+  ],
+  "tags": {
+    "addr:city": "Jonsdorf",
+    "addr:housenumber": "8",
+    "addr:postcode": "02796",
+    "addr:street": "Kammweg",
+    "building": "hostel",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Jonsdorfer Hütte",
+    "operator": "Sektion Zittau des Deutschen Alpenvereins e.V.",
+    "tourism": "alpine_hut",
+    "website": "https://www.dav-zittau.de/index.php?rubrik=H%C3%BCtte%20Jonsdorf&topic=123&content="
+  }
+},
+{
+  "type": "way",
+  "id": 60669483,
+  "center": {
+    "lat": 50.8619089,
+    "lon": 14.7221386
+  },
+  "nodes": [
+    759435290,
+    2441185493,
+    759435257,
+    759435259,
+    759435261,
+    5489079551,
+    5489079552,
+    759435294,
+    759435296,
+    759435298,
+    759435299,
+    759435300,
+    759435301,
+    2441185495,
+    2441185494,
+    759435302,
+    759435303,
+    759435305,
+    759435290
+  ],
+  "tags": {
+    "addr:city": "Jonsdorf",
+    "addr:country": "DE",
+    "addr:housenumber": "9",
+    "addr:postcode": "02796",
+    "addr:street": "Zittauer Straße",
+    "building": "hotel",
+    "name": "Zittauer Hütte",
+    "note": "geschlossen",
+    "tourism": "hotel",
+    "wikidata": "Q49423473"
+  }
+},
+{
+  "type": "way",
+  "id": 76086044,
+  "center": {
+    "lat": 50.8495851,
+    "lon": 14.6567742
+  },
+  "nodes": [
+    3761743657,
+    5509378649,
+    5509378650,
+    5509378651,
+    5509378648,
+    5143028243,
+    5143022879,
+    5143022877,
+    5143022878,
+    5143022876,
+    897576131,
+    897576171,
+    3339548000,
+    3339547997,
+    897576217,
+    3339548009,
+    4386755433,
+    3761743657
+  ],
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "165",
+    "addr:postcode": "02799",
+    "addr:street": "Hauptstraße",
+    "addr:suburb": "Waltersdorf",
+    "building": "hotel",
+    "check_date": "2026-07-21",
+    "cuisine": "regional",
+    "email": "info@ruebezahlbaude.de",
+    "fax": "+49 35841 33999",
+    "name": "Rübezahlbaude",
+    "phone": "+49 35841 3390",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "http://www.ruebezahlbaude.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 76086046,
+  "center": {
+    "lat": 50.8502737,
+    "lon": 14.6527959
+  },
+  "nodes": [
+    897576212,
+    897576147,
+    897576148,
+    897576121,
+    5143018754,
+    5143018755,
+    897576208,
+    5143018756,
+    5143018757,
+    897576212
+  ],
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "4",
+    "addr:postcode": "02799",
+    "addr:street": "An der Lausche",
+    "addr:suburb": "Waltersdorf",
+    "building": "yes",
+    "email": "info@hubertus-baude.de",
+    "fax": "+49 35841 6733220",
+    "name": "Hubertusbaude",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "phone": "+49 35841 67330",
+    "stars": "3S",
+    "tourism": "hotel",
+    "website": "http://www.hubertus-baude.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 103533783,
+  "center": {
+    "lat": 50.8327948,
+    "lon": 14.7234113
+  },
+  "nodes": [
+    1195385214,
+    1195385110,
+    1195384741,
+    1195384924,
+    1195385214
+  ],
+  "tags": {
+    "building": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Red Rock Lodge",
+    "tourism": "chalet",
+    "website": "https://www.ferienwohnungen-oybin.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 103599611,
+  "center": {
+    "lat": 50.8515751,
+    "lon": 14.6506603
+  },
+  "nodes": [
+    1196209340,
+    1196209345,
+    3164258239,
+    3164258240,
+    1196209326,
+    3268067643,
+    1196209339,
+    1196209338,
+    1196209340
+  ],
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "02799",
+    "addr:street": "An der Lausche",
+    "addr:suburb": "Waltersdorf",
+    "building": "yes",
+    "name": "Lausitzer Hütte",
+    "operator": "EC EUROP COATING GmbH",
+    "tourism": "guest_house",
+    "website": "https://www.lausitzerhuette.de"
+  }
+},
+{
+  "type": "way",
+  "id": 104418158,
+  "center": {
+    "lat": 50.8921395,
+    "lon": 14.7044465
+  },
+  "nodes": [
+    1204788111,
+    1204788112,
+    13742786360,
+    13742786359,
+    13742786358,
+    1204788114,
+    13742786357,
+    1204788115,
+    1204788117,
+    13742786356,
+    13742786355,
+    1204788119,
+    1204788122,
+    1204788094,
+    1204788097,
+    1204788100,
+    13742786354,
+    13742786353,
+    13742786352,
+    13742786351,
+    1204788103,
+    1204788101,
+    13742786350,
+    13742786349,
+    1204788111
+  ],
+  "tags": {
+    "addr:city": "Hainewalde",
+    "addr:housenumber": "22",
+    "addr:postcode": "02779",
+    "addr:street": "Am Breiteberg",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "name": "Breitebergbaude",
+    "opening_hours": "Th-Su 11:00-19:00",
+    "phone": "+49 35841 35666"
+  }
+},
+{
+  "type": "way",
+  "id": 110588204,
+  "center": {
+    "lat": 50.8530385,
+    "lon": 14.6561474
+  },
+  "nodes": [
+    290591324,
+    1262560552,
+    1288283649,
+    1288283681,
+    1288283753,
+    1288283779,
+    1288283711,
+    1288283809,
+    1262560551,
+    1262560558,
+    2610974513,
+    290591324
+  ],
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "154",
+    "addr:postcode": "02799",
+    "addr:street": "Hauptstraße",
+    "addr:suburb": "Waltersdorf",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "email": "rezeption@sonnebergbaude.de",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Sonnebergbaude",
+    "opening_hours": "Mo-Fr 15:00-22:00, Sa,Su,PH 12:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 35841 3300",
+    "tourism": "hotel",
+    "website": "https://www.sonnebergbaude.de",
+    "wikidata": "Q49350598"
+  }
+},
+{
+  "type": "way",
+  "id": 148052785,
+  "center": {
+    "lat": 50.8525317,
+    "lon": 14.6560332
+  },
+  "nodes": [
+    1611619529,
+    1611619531,
+    1611619534,
+    4271149008,
+    4271149009,
+    4271149007,
+    4271149006,
+    1611619530,
+    1611619529
+  ],
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "156",
+    "addr:postcode": "02799",
+    "addr:street": "Hauptstraße",
+    "building": "yes",
+    "name": "Richter-Häusl",
+    "tourism": "chalet",
+    "wikidata": "Q49350606"
+  }
+},
+{
+  "type": "way",
+  "id": 148052803,
+  "center": {
+    "lat": 50.8495080,
+    "lon": 14.6573732
+  },
+  "nodes": [
+    1611619488,
+    1611619490,
+    1611619492,
+    1611619491,
+    1611619488
+  ],
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "166",
+    "addr:postcode": "02799",
+    "addr:street": "Hauptstraße",
+    "addr:suburb": "Waltersdorf",
+    "alt_name": "Neues Zollhaus",
+    "building": "yes",
+    "check_date": "2026-07-21",
+    "contact:fax": "+49 35841 38080",
+    "contact:phone": "+49 35841 35068",
+    "contact:website": "http://www.traum-ferienwohnungen.de",
+    "name": "Wache",
+    "operator": "Peter Landrock",
+    "tourism": "chalet",
+    "wikidata": "Q49350627"
+  }
+},
+{
+  "type": "way",
+  "id": 181304303,
+  "center": {
+    "lat": 50.8334028,
+    "lon": 14.7596183
+  },
+  "nodes": [
+    1917309699,
+    1917309715,
+    5571831235,
+    5571831236,
+    1917309714,
+    1917309698,
+    5571831237,
+    5571830682,
+    1917309699
+  ],
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housename": "Haus Elli",
+    "addr:housenumber": "26",
+    "addr:postcode": "02797",
+    "addr:street": "Kammstraße",
+    "addr:suburb": "Lückendorf",
+    "building": "yes",
+    "email": "hauselli@web.de",
+    "name": "Haus Elli",
+    "phone": "+49 30 3636978",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 181305312,
+  "center": {
+    "lat": 50.8225681,
+    "lon": 14.7659221
+  },
+  "nodes": [
+    1917316369,
+    2948486989,
+    13116363663,
+    1917316342,
+    5552585732,
+    5552585733,
+    1917316338,
+    2948486991,
+    2948486988,
+    1917316360,
+    1917316369
+  ],
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housenumber": "2c",
+    "addr:postcode": "02797",
+    "addr:street": "Grund",
+    "addr:suburb": "Lückendorf",
+    "building": "yes",
+    "contact:mobile": "+49 1723 538374",
+    "name": "Zum Zaunkönig",
+    "operator": "Familie Gust",
+    "smoking": "no",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 181305315,
+  "center": {
+    "lat": 50.8238786,
+    "lon": 14.7624568
+  },
+  "nodes": [
+    1917316428,
+    1917316430,
+    1917316429,
+    1917316427,
+    1917316428
+  ],
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "02797",
+    "addr:street": "Grund",
+    "addr:suburb": "Lückendorf",
+    "building": "yes",
+    "name": "Sonnenblick",
+    "tourism": "chalet",
+    "website": "https://www.sonnenblick-urlaub.de"
+  }
+},
+{
+  "type": "way",
+  "id": 221345884,
+  "center": {
+    "lat": 50.8387374,
+    "lon": 14.7393366
+  },
+  "nodes": [
+    2303747655,
+    2303747665,
+    2303747671,
+    2303747672,
+    2303747673,
+    2303747667,
+    2303747666,
+    2303747656,
+    2303747655
+  ],
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housenumber": "7a",
+    "addr:postcode": "02797",
+    "addr:street": "Lückendorfer Straße",
+    "building": "yes",
+    "name": "Ferienhaus Peggy",
+    "operator": "Holzwerk Oybin",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 221473618,
+  "center": {
+    "lat": 50.8501593,
+    "lon": 14.7498862
+  },
+  "nodes": [
+    2305023765,
+    2305023767,
+    2305023766,
+    2495377063,
+    2495377060,
+    2305023764,
+    2305023765
+  ],
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housenumber": "25",
+    "addr:postcode": "02797",
+    "addr:street": "Friedrich-Engels-Straße",
+    "building": "yes",
+    "building:architecture": "timber_frame",
+    "heritage": "4",
+    "heritage:operator": "lfd",
+    "name": "Ferienhaus Annemone",
+    "ref:lfd": "09271004",
+    "source:outline": "Bing Aerial Imagery",
+    "tourism": "chalet",
+    "website": "http://www.ferienhaus-annemone.de/",
+    "wikidata": "Q49351036"
+  }
+},
+{
+  "type": "way",
+  "id": 232708720,
+  "center": {
+    "lat": 50.8506687,
+    "lon": 14.6836805
+  },
+  "nodes": [
+    2410394344,
+    2410394338,
+    1085316227,
+    2410394340,
+    8025263293,
+    4346486421,
+    4346486424,
+    4346486420,
+    2410394341,
+    8025263292,
+    2410394346,
+    10233440371,
+    10233440370,
+    2410394345,
+    10233440365,
+    10233440366,
+    2410394348,
+    4743446781,
+    4743446782,
+    4743446780,
+    4743446779,
+    2410394344
+  ],
+  "tags": {
+    "addr:city": "Jonsdorf",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "02796",
+    "addr:street": "Lauscheweg",
+    "amenity": "restaurant",
+    "building": "restaurant",
+    "cuisine": "german;regional;cake",
+    "ele": "537",
+    "name": "Berggasthof Nonnenfelsen",
+    "opening_hours": "Th-Mo 11:00-17:00; Tu-We off",
+    "opening_hours:kitchen": "Th-Mo 11:00-16:30; Tu-We off",
+    "outdoor_seating": "yes",
+    "payment:cards": "no",
+    "payment:cash": "yes",
+    "phone": "+49 35844 76300",
+    "website": "https://berggasthof-nonnenfelsen.de/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 236957626,
+  "center": {
+    "lat": 50.8489623,
+    "lon": 14.7616680
+  },
+  "nodes": [
+    2449171916,
+    2449171906,
+    2449171892,
+    10774771014,
+    2449171883,
+    2449171916
+  ],
+  "tags": {
+    "addr:city": "Oybin",
+    "addr:country": "DE",
+    "addr:housename": "Töpferbaude",
+    "addr:housenumber": "17",
+    "addr:postcode": "02797",
+    "addr:street": "Töpferstraße",
+    "air_conditioning": "no",
+    "amenity": "restaurant",
+    "building": "yes",
+    "check_date:opening_hours": "2025-05-20",
+    "cuisine": "regional;german;fish;ice_cream",
+    "diet:halal": "no",
+    "diet:kosher": "no",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Töpferbaude",
+    "opening_hours": "Jan-Mar: Th-Su 10:00-17:00; Apr-Oct: We-Mo 10:00-18:00; Nov-Dec: Th-Su 10:00-17:00",
+    "outdoor_seating": "no",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "phone": "+49 35844 72331",
+    "smoking": "no",
+    "website": "https://www.toepferbaude.de/",
+    "wheelchair": "no",
+    "wikidata": "Q113488726",
+    "wikimedia_commons": "Category:Töpferbaude"
+  }
+},
+{
+  "type": "way",
+  "id": 273485023,
+  "center": {
+    "lat": 50.8976493,
+    "lon": 14.6625558
+  },
+  "nodes": [
+    2783307871,
+    2783307883,
+    2783307881,
+    2783307873,
+    2783307870,
+    2783307864,
+    2783307871
+  ],
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "02779",
+    "addr:street": "Kirchstraße",
+    "building": "yes",
+    "contact:email": "wuwiwubdich@web.de",
+    "contact:phone": "+49 35841 38394",
+    "name": "Schwarzer Kater",
+    "note": "Diese Mailadresse stand wirklich so auf einer Visitenkarte",
+    "toilets:wheelchair": "no",
+    "tourism": "chalet",
+    "wheelchair": "yes",
+    "wikidata": "Q49348358"
+  }
+},
+{
+  "type": "way",
+  "id": 276493985,
+  "center": {
+    "lat": 50.9109227,
+    "lon": 14.7044894
+  },
+  "nodes": [
+    2810925390,
+    2810925382,
+    2810925388,
+    2810925401,
+    2810925390
+  ],
+  "tags": {
+    "addr:city": "Hainewalde",
+    "addr:country": "DE",
+    "addr:housenumber": "16",
+    "addr:postcode": "02779",
+    "addr:street": "Kleine Seite",
+    "building": "yes",
+    "tourism": "chalet",
+    "website": "https://www.alter-pferdestall.de/"
+  }
+},
+{
+  "type": "way",
+  "id": 283353189,
+  "center": {
+    "lat": 50.9182349,
+    "lon": 14.7416383
+  },
+  "nodes": [
+    2872278563,
+    2872278564,
+    2872278570,
+    2872278569,
+    2872278563
+  ],
+  "tags": {
+    "addr:city": "Mittelherwigsdorf",
+    "addr:housenumber": "19",
+    "addr:postcode": "02763",
+    "addr:street": "Hainewalder Straße",
+    "building": "yes",
+    "name": "Ferienhaus Gutekunst",
+    "tourism": "chalet",
+    "website": "https://www.guetchen-im-felde.de"
+  }
+},
+{
+  "type": "way",
+  "id": 292729066,
+  "center": {
+    "lat": 50.9231625,
+    "lon": 14.7142159
+  },
+  "nodes": [
+    2962608124,
+    2962608125,
+    2962608126,
+    2962608127,
+    2962608128,
+    2962608129,
+    2962608130,
+    2962608131,
+    2962608124
+  ],
+  "tags": {
+    "addr:city": "Hainewalde",
+    "addr:housenumber": "33",
+    "addr:postcode": "02779",
+    "addr:street": "Am Butterberg",
+    "building": "yes",
+    "name": "Ferienhaus Belvedere",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 315779884,
+  "center": {
+    "lat": 50.9226249,
+    "lon": 14.7665561
+  },
+  "nodes": [
+    3219143025,
+    3219143612,
+    3219143153,
+    3219143618,
+    3219143773,
+    3219143646,
+    3219143025
+  ],
+  "tags": {
+    "addr:city": "Mittelherwigsdorf",
+    "addr:housenumber": "32a",
+    "addr:postcode": "02763",
+    "addr:street": "Kleine Seite",
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 318829531,
+  "center": {
+    "lat": 50.9133909,
+    "lon": 14.7078466
+  },
+  "nodes": [
+    3252080841,
+    3252080734,
+    3252080858,
+    3252080712,
+    3252080864,
+    3252080804,
+    3252080914,
+    3252080702,
+    3252080841
+  ],
+  "tags": {
+    "addr:city": "Hainewalde",
+    "addr:country": "DE",
+    "addr:housenumber": "28",
+    "addr:postcode": "02779",
+    "addr:street": "Kleine Seite",
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 447664481,
+  "center": {
+    "lat": 50.8515267,
+    "lon": 14.6950604
+  },
+  "nodes": [
+    4447411923,
+    4447411931,
+    3414916394,
+    3414916397,
+    3414916398,
+    748883900,
+    3414916396,
+    3414916395,
+    3414916393,
+    4447411916,
+    4447411921,
+    12089004848,
+    4447411923
+  ],
+  "tags": {
+    "access": "customers",
+    "addr:city": "Jonsdorf",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "02796",
+    "addr:street": "Kammweg",
+    "alt_name": "DAV-Hütte Jonsdorf",
+    "check_date": "2024-05-12",
+    "landuse": "recreation_ground",
+    "name": "Jonsdorfer Hütte",
+    "operator": "DAV Zittau",
+    "tourism": "hostel",
+    "website": "https://www.dav-zittau.de/",
+    "wikidata": "Q112635096",
+    "wikipedia": "de:Jonsdorfer Hütte"
+  }
+},
+{
+  "type": "way",
+  "id": 566450111,
+  "center": {
+    "lat": 50.8669740,
+    "lon": 14.7535833
+  },
+  "nodes": [
+    5455199065,
+    5455199064,
+    5455199063,
+    5455199062,
+    5455199065
+  ],
+  "tags": {
+    "addr:city": "Olbersdorf",
+    "addr:country": "DE",
+    "addr:housenumber": "56",
+    "addr:postcode": "02785",
+    "addr:street": "Rosa-Luxemburg-Straße",
+    "beds": "4",
+    "building": "cabin",
+    "building:levels": "1",
+    "building:material": "wood",
+    "contact:facebook": "https://www.facebook.com/OybinerHuette",
+    "contact:instagram": "https://www.instagram.com/oybinerhuette/",
+    "contact:mobile": "+49 1708 386487",
+    "contact:phone": "+49 3583 691638",
+    "contact:website": "https://www.hauserhuette.de/",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Hauserhütte",
+    "operator": "Ronald Hauser",
+    "roof:levels": "1",
+    "roof:orientation": "along",
+    "roof:shape": "gabled",
+    "rooms": "2",
+    "smoking": "outside",
+    "tourism": "chalet",
+    "website": "https://www.natururlaub-oybin.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 705855474,
+  "center": {
+    "lat": 50.9097471,
+    "lon": 14.3878973
+  },
+  "nodes": [
+    6632435280,
+    6632435281,
+    6632435284,
+    6632473886,
+    6632435280
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "fixme": "position",
+    "indoor_seating": "no",
+    "name": "Rindenhütte",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1104186852,
+  "center": {
+    "lat": 50.9293104,
+    "lon": 14.6781442
+  },
+  "nodes": [
+    10104508121,
+    10104508122,
+    10835076433,
+    10104508123,
+    10104508125,
+    10104508124,
+    10835076434,
+    10104508121
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Bertsdorfer Hütte",
+    "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "relation",
+  "id": 13847855,
+  "center": {
+    "lat": 50.8325756,
+    "lon": 14.7231838
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 1032505782,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1032505781,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Red Rock Huts",
+    "tourism": "chalet",
+    "type": "site",
+    "website": "https://www.ferienwohnungen-oybin.de/"
+  }
+}
+
+  ]
+}

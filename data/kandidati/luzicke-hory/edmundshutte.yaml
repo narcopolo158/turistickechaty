@@ -1,0 +1,35 @@
+# Edmundshütte — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-10)
+# Zdroj: https://www.openstreetmap.org/node/10960937629 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/luzicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Edmundshütte
+slug: edmundshutte
+zeme: de
+oblast: luzicke-hory
+lat: 50.8598728
+lng: 14.7542363
+obec: Oybin
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/10960937629 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+kontakty:
+  telefon: +49 170 8386487
+  email: eh@natururlaub-oybin.de
+  web: https://www.natururlaub-oybin.de
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/10960937629 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-10) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Ronald Hauser

@@ -1,0 +1,34 @@
+# Lesní Chata na Tokáni 127 — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-10)
+# Zdroj: https://www.openstreetmap.org/way/100147343 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/luzicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Lesní Chata na Tokáni 127
+slug: lesni-chata-na-tokani-127
+zeme: cz
+oblast: luzicke-hory
+lat: 50.8763165
+lng: 14.4121185
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/100147343 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+kontakty:
+  telefon: +420 608 912 256;+420 704 405 325
+  email: rezervace@chatatokan.cz
+  web: https://www.chatatokan.cz
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/100147343 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-10) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
+  = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 11:00-21:00

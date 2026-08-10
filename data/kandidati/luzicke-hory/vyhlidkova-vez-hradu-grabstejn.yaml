@@ -1,0 +1,27 @@
+# Vyhlídková věž hradu Grabštejn — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-10)
+# Zdroj: https://www.openstreetmap.org/node/1169897200 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/luzicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Vyhlídková věž hradu Grabštejn
+slug: vyhlidkova-vez-hradu-grabstejn
+zeme: cz
+oblast: luzicke-hory
+typ: rozhledna
+lat: 50.8461914
+lng: 14.8763372
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/1169897200 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-10) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  ROZHLEDNA S OBČERSTVENÍM (rozhodnutí Michala 28. 7. 2026: rozhledny bereme jen
+  s občerstvením/restaurací nebo s chatou) — typ `rozhledna`.
+
+  Doklad občerstvení (OSM, 100 m okolí): Schenke — amenity=restaurant, 30 m,
+  https://www.openstreetmap.org/node/5937053326

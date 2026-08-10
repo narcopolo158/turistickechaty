@@ -1,0 +1,35 @@
+# Hubertusbaude — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-10)
+# Zdroj: https://www.openstreetmap.org/way/76086046 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/luzicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Hubertusbaude
+slug: hubertusbaude
+zeme: de
+oblast: luzicke-hory
+lat: 50.8502737
+lng: 14.6527959
+obec: Großschönau
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/76086046 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+kontakty:
+  telefon: +49 35841 67330
+  email: info@hubertus-baude.de
+  web: http://www.hubertus-baude.de/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/76086046 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-10) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
+  = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 08:00-22:00

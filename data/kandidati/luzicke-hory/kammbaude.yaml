@@ -1,0 +1,38 @@
+# Kammbaude — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-10)
+# Zdroj: https://www.openstreetmap.org/node/12884208392 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/luzicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Kammbaude
+slug: kammbaude
+zeme: de
+oblast: luzicke-hory
+lat: 50.8319584
+lng: 14.7203594
+obec: Oybin
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/12884208392 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+kontakty:
+  telefon: +49 35844 70477
+  email: info@kammbaude.de
+  web: https://www.kammbaude.de/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/12884208392 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-10) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: Knut Popken
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo,Tu,Fr,Sa,Su 11:00-22:00;
+  We,Th off

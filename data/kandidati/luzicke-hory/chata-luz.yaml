@@ -1,0 +1,36 @@
+# Chata Luž — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-10)
+# Zdroj: https://www.openstreetmap.org/node/333131472 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/luzicke-hory/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Luž
+slug: chata-luz
+zeme: cz
+oblast: luzicke-hory
+lat: 50.8424253
+lng: 14.6481802
+obec: Mařenice
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/333131472 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+kontakty:
+  telefon: +420 725 301 370
+  email: info@chataluz.cz
+  web: http://www.chataluz.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/333131472 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-10
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-10) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Th 10:30-22:00; Fr,Sa
+  10:30-23:00; Su 10:30-21:00

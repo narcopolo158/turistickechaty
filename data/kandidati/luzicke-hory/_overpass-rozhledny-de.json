@@ -1,0 +1,628 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-10T08:04:00Z",
+    "timestamp_areas_base": "2026-08-08T22:59:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 370072351,
+  "lat": 50.8661075,
+  "lon": 14.6496540,
+  "tags": {
+    "addr:city": "Großschönau",
+    "addr:country": "DE",
+    "addr:housenumber": "52",
+    "addr:postcode": "02799",
+    "addr:street": "Hauptstraße",
+    "alt_name": "Quirle-Häusel",
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "image": "https://commons.wikimedia.org/wiki/File:Waltersdorf_(Gro%C3%9Fsch%C3%B6nau)_8651.jpg",
+    "name": "Quirle-Häusl",
+    "stars": "3S",
+    "tourism": "hotel",
+    "website": "https://www.quirle.de/",
+    "wikidata": "Q49350334"
+  }
+},
+{
+  "type": "node",
+  "id": 391306144,
+  "lat": 50.8964029,
+  "lon": 14.8081812,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:housenumber": "5",
+    "addr:postcode": "02763",
+    "addr:street": "Rathausplatz",
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2021-11-07",
+    "cuisine": "kebab",
+    "drive_through": "no",
+    "name": "Kerwan",
+    "opening_hours": "Mo-Th 10:00-23:00; Fr,Sa 10:00-22:00; Su 11:00-23:00",
+    "phone": "+49 3583 5568272",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 549268593,
+  "lat": 50.8962901,
+  "lon": 14.8056740,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:country": "DE",
+    "addr:housenumber": "22",
+    "addr:postcode": "02763",
+    "addr:street": "Markt",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2025-10-05",
+    "diet:vegetarian": "no",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Schwerdtners Café \"Am Marsbrunnen\"",
+    "opening_hours": "Mo-Sa 07:00-19:00; Su 07:30-19:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 3583 5856969",
+    "smoking": "outside",
+    "website": "https://www.baeckerei-schwerdtner.de/filialen.html#zittau",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 566672318,
+  "lat": 50.8431960,
+  "lon": 14.7406421,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Felsenbühne"
+  }
+},
+{
+  "type": "node",
+  "id": 918974519,
+  "lat": 50.9042854,
+  "lon": 14.7637869,
+  "tags": {
+    "disused": "yes",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1262541053,
+  "lat": 50.8965370,
+  "lon": 14.8074687,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:country": "DE",
+    "addr:housenumber": "4-6",
+    "addr:postcode": "02763",
+    "addr:street": "Johannisstraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2026-05-14",
+    "cuisine": "vietnamese;sushi",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Na Trán",
+    "opening_hours": "Mo-Su 11:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+49 3583 5172777",
+    "website": "https://natranrestaurant.de"
+  }
+},
+{
+  "type": "node",
+  "id": 1915636734,
+  "lat": 50.8969478,
+  "lon": 14.8059607,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:housenumber": "2",
+    "addr:postcode": "02763",
+    "addr:street": "Bautzner Straße",
+    "amenity": "restaurant",
+    "cuisine": "german",
+    "diet:vegetarian": "no",
+    "indoor_seating": "yes",
+    "name": "Dornspachhaus",
+    "opening_hours": "Mo-Su 11:30-21:30",
+    "outdoor_seating": "yes",
+    "phone": "+49 3583 795883",
+    "website": "https://www.dornspachhaus.de/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2850752860,
+  "lat": 50.8439260,
+  "lon": 14.7409826,
+  "tags": {
+    "man_made": "tower",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3835071245,
+  "lat": 50.8962700,
+  "lon": 14.8066431,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:housenumber": "8",
+    "addr:postcode": "02763",
+    "addr:street": "Markt",
+    "alt_name": "Café Filmriss",
+    "amenity": "pub",
+    "changing_table": "no",
+    "check_date:opening_hours": "2026-07-13",
+    "highchair": "no",
+    "indoor_seating": "yes",
+    "name": "Café Filmriß",
+    "opening_hours": "Tu-Th 17:00-22:00; Fr,Sa 18:00-23:00; Su,Mo off",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:debit_cards": "no",
+    "smoking": "outside",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3835071246,
+  "lat": 50.8966451,
+  "lon": 14.8072655,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "02763",
+    "addr:street": "Johannisstraße",
+    "amenity": "bar",
+    "check_date:opening_hours": "2023-05-01",
+    "name": "BABA",
+    "opening_hours": "PH,Mo-Su 10:00-02:00",
+    "shisha": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3835071247,
+  "lat": 50.8962623,
+  "lon": 14.8067143,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "02763",
+    "addr:street": "Markt",
+    "amenity": "fast_food",
+    "check_date": "2026-07-19",
+    "contact:phone": "+49 3583 7973295",
+    "cuisine": "kebab",
+    "drive_through": "no",
+    "indoor_seating": "yes",
+    "name": "Sonnen-Grill",
+    "opening_hours": "Mo-Sa 11:00-22:00; Su 12:00-22:00",
+    "outdoor_seating": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4029630738,
+  "lat": 50.8956656,
+  "lon": 14.8076573,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:housenumber": "3",
+    "addr:postcode": "02763",
+    "addr:street": "Böhmische Straße",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2026-02-28",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Cafe Anatolia",
+    "opening_hours": "Mo,We,Th,Fr,Sa 07:00-17:00; Su 07:00-15:00",
+    "outdoor_seating": "sidewalk",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4029630740,
+  "lat": 50.8956767,
+  "lon": 14.8078634,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:housenumber": "3",
+    "addr:postcode": "02763",
+    "addr:street": "Böhmische Straße",
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Newroz",
+    "opening_hours": "Tu-Th 10:30-22:00; Fr,Sa 10:30-23:00; Su,PH 12:00-22:00",
+    "outdoor_seating": "yes",
+    "smoking": "separated"
+  }
+},
+{
+  "type": "node",
+  "id": 4474619082,
+  "lat": 50.8962539,
+  "lon": 14.8068295,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:housenumber": "6",
+    "addr:postcode": "02763",
+    "addr:street": "Markt",
+    "amenity": "cafe",
+    "check_date:opening_hours": "2026-07-13",
+    "cuisine": "ice_cream",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "no",
+    "name": "Lust Bäckerei & Cafe",
+    "opening_hours": "Mo,Tu,Th,Fr 10:00-17:00; We 09:00-17:00; Sa,Su,PH off",
+    "outdoor_seating": "yes",
+    "phone": "+49 3583 696568",
+    "shop": "bakery",
+    "website": "http://www.lust-baeckerei.de/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8868140583,
+  "lat": 50.8970250,
+  "lon": 14.8073182,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:housenumber": "15",
+    "addr:postcode": "02763",
+    "addr:street": "Johannisstraße",
+    "amenity": "pub",
+    "check_date:opening_hours": "2023-05-01",
+    "contact:phone": "+49 3583 696964",
+    "email": "bestellen@weinkehr.de",
+    "indoor_seating": "yes",
+    "name": "Weinkehr",
+    "opening_hours": "We-Fr 15:00-21:00+, Sa 17:00-22:00+",
+    "operator": "Gabriele Lode",
+    "outdoor_seating": "yes",
+    "shop": "wine",
+    "website": "https://www.weinkehr.de/"
+  }
+},
+{
+  "type": "node",
+  "id": 10139509228,
+  "lat": 50.8955546,
+  "lon": 14.8067589,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:housenumber": "9",
+    "addr:postcode": "02763",
+    "addr:street": "Markt",
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "name": "Horschel Bar Restaurant",
+    "opening_hours": "We-Su 17:00-22:00",
+    "operator": "Horschel GmbH",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12062923618,
+  "lat": 50.8970510,
+  "lon": 14.8052241,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:housenumber": "6",
+    "addr:postcode": "02763",
+    "addr:street": "Innere Weberstraße",
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2026-05-25",
+    "cuisine": "sushi;asian",
+    "diet:vegetarian": "yes",
+    "email": "Taumii.zittau@gmail.de",
+    "fixme": "Bitte korrekte Position des Nodes prüfen und prüfen, ob die Öffnungszeiten auch für Feiertage gültig sind.",
+    "indoor_seating": "yes",
+    "name": "Taumii",
+    "opening_hours": "Tu-Su 11:00-15:00,17:00-22:00; Mo,PH off",
+    "outdoor_seating": "no",
+    "phone": "+49 3583 5856545",
+    "website": "https://taumii-restaurant.de"
+  }
+},
+{
+  "type": "node",
+  "id": 13420731165,
+  "lat": 50.8970783,
+  "lon": 14.8050922,
+  "tags": {
+    "addr:city": "Zittau",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "02763",
+    "addr:street": "Innere Weberstraße",
+    "amenity": "cafe",
+    "name": "Cafe Praha",
+    "outdoor_seating": "yes",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694394,
+  "lat": 50.8256566,
+  "lon": 14.7274975,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:email": "post@hochwald-turmbaude.de",
+    "cuisine": "regional;german",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Hochwald-Turmbaude",
+    "opening_hours": "May-Oct: Mo-Su 10:00-17:00; Nov-Apr: We-Su 10:00-17:00; Mo, Tu off",
+    "outdoor_seating": "yes",
+    "payment:cards": "no",
+    "payment:cash": "yes",
+    "phone": "+49 35844 70222",
+    "website": "https://www.hochwald-turmbaude.de",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 104418158,
+  "center": {
+    "lat": 50.8921395,
+    "lon": 14.7044465
+  },
+  "nodes": [
+    1204788111,
+    1204788112,
+    13742786360,
+    13742786359,
+    13742786358,
+    1204788114,
+    13742786357,
+    1204788115,
+    1204788117,
+    13742786356,
+    13742786355,
+    1204788119,
+    1204788122,
+    1204788094,
+    1204788097,
+    1204788100,
+    13742786354,
+    13742786353,
+    13742786352,
+    13742786351,
+    1204788103,
+    1204788101,
+    13742786350,
+    13742786349,
+    1204788111
+  ],
+  "tags": {
+    "addr:city": "Hainewalde",
+    "addr:housenumber": "22",
+    "addr:postcode": "02779",
+    "addr:street": "Am Breiteberg",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "regional",
+    "name": "Breitebergbaude",
+    "opening_hours": "Th-Su 11:00-19:00",
+    "phone": "+49 35841 35666"
+  }
+},
+{
+  "type": "way",
+  "id": 187663605,
+  "center": {
+    "lat": 50.8257352,
+    "lon": 14.7276888
+  },
+  "nodes": [
+    1982930212,
+    1982930220,
+    1982930180,
+    1982930213,
+    1982930194,
+    1982930173,
+    1982930176,
+    1982930217,
+    1982930189,
+    1982930170,
+    12887217151,
+    1982930209,
+    1982930184,
+    1982930214,
+    1982930208,
+    1982930215,
+    1982930210,
+    1982930192,
+    1982930212
+  ],
+  "tags": {
+    "building": "yes",
+    "fee": "yes",
+    "man_made": "tower",
+    "name": "Hochwaldturm",
+    "start_date": "1892",
+    "tower:construction": "freestanding",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikidata": "Q49351224"
+  }
+},
+{
+  "type": "way",
+  "id": 383465706,
+  "center": {
+    "lat": 50.8923545,
+    "lon": 14.7047045
+  },
+  "nodes": [
+    3867381941,
+    3867381943,
+    3867381942,
+    3867381940,
+    3867381941
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "13",
+    "man_made": "tower",
+    "name": "Dr.-Curt-Heinke-Turm",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 440933216,
+  "center": {
+    "lat": 50.8657613,
+    "lon": 14.6508329
+  },
+  "nodes": [
+    4386970803,
+    4386970801,
+    4386970799,
+    4386970797,
+    4386970796,
+    4386970798,
+    4386970800,
+    4386970802,
+    4386970804,
+    4386970803
+  ],
+  "tags": {
+    "access": "private",
+    "man_made": "tower",
+    "tower:type": "observation",
+    "wikidata": "Q49349447"
+  }
+},
+{
+  "type": "way",
+  "id": 1180519387,
+  "center": {
+    "lat": 50.8966919,
+    "lon": 14.8062737
+  },
+  "nodes": [
+    10964144344,
+    10964144345,
+    10964144346,
+    270079604,
+    10964144344
+  ],
+  "tags": {
+    "access": "yes",
+    "building:part": "tower",
+    "fee": "yes",
+    "height": "63",
+    "man_made": "tower",
+    "roof:colour": "grey",
+    "roof:height": "1",
+    "roof:shape": "pyramidal",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1180519389,
+  "center": {
+    "lat": 50.8961599,
+    "lon": 14.8077704
+  },
+  "nodes": [
+    4708846747,
+    4708847334,
+    4708847338,
+    4708847335,
+    4708847340,
+    4708847342,
+    4708846750,
+    4708847341,
+    4708847337,
+    4708846748,
+    10964144355,
+    10964144356,
+    10964144357,
+    10964144358,
+    10964144359,
+    10964144360,
+    10964144361,
+    10964144362,
+    10964144363,
+    10964144364,
+    10964144365,
+    10964144366,
+    10964144367,
+    10964144368,
+    4708846747
+  ],
+  "tags": {
+    "access": "private",
+    "building:part": "yes",
+    "height": "53.5",
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 1308832625,
+  "center": {
+    "lat": 50.8490224,
+    "lon": 14.6470572
+  },
+  "nodes": [
+    8641625368,
+    8641625365,
+    8641625366,
+    8641625367,
+    8641625368
+  ],
+  "tags": {
+    "access": "yes",
+    "check_date": "2025-05-23",
+    "description": "Turmhöhe 14,52 Meter; Plattformhöhe über Grund 9,22 Meter; Plattformhöhe über NN 800;24 Meter; Sendemasthöhe 17,86 Meter",
+    "fee": "no",
+    "height": "14.52",
+    "man_made": "tower",
+    "start_date": "2020-08-21",
+    "step_count": "55",
+    "tower:construction": "lattice",
+    "tower:type": "observation",
+    "wheelchair": "no",
+    "wikimedia_commons": "Category:Luž/Lausche"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-10T08:05:01Z",
+    "timestamp_areas_base": "2026-08-09T04:45:57Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 503937251,
+  "lat": 50.8321234,
+  "lon": 14.4544002,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "man_made": "tower",
+    "material": "steel",
+    "name": "Studenec",
+    "name:de": "Kaltenberg",
+    "opening_hours": "24/7",
+    "source": "survey,gps",
+    "tower:construction": "lattice",
+    "tower:type": "observation",
+    "website": "http://www.rozhlednastudenec.cz/",
+    "wikidata": "Q1273417",
+    "wikipedia": "cs:Studenec (Lužické hory)"
+  }
+},
+{
+  "type": "node",
+  "id": 1169897200,
+  "lat": 50.8461914,
+  "lon": 14.8763372,
+  "tags": {
+    "man_made": "tower",
+    "name": "Vyhlídková věž hradu Grabštejn",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1401587606,
+  "lat": 50.7772887,
+  "lon": 14.7878768,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 1401913361,
+  "lat": 50.7643332,
+  "lon": 14.7607394,
+  "tags": {
+    "man_made": "tower",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "node",
+  "id": 3728854733,
+  "lat": 50.7335871,
+  "lon": 14.5847294,
+  "tags": {
+    "addr:city": "Sloup v Čechách",
+    "addr:conscriptionnumber": "234",
+    "addr:country": "CZ",
+    "addr:housenumber": "234",
+    "addr:place": "Sloup v Čechách",
+    "addr:postcode": "47152",
+    "addr:street": "Pod Stráží",
+    "amenity": "fast_food",
+    "outdoor_seating": "yes",
+    "source:addr": "cuzk:ruian"
+  }
+},
+{
+  "type": "node",
+  "id": 5937053326,
+  "lat": 50.8459324,
+  "lon": 14.8762315,
+  "tags": {
+    "amenity": "restaurant",
+    "email": "pospisil-tom@email.cz",
+    "name": "Schenke",
+    "opening_hours": "Apr: Sa,Su,PH 10:00-15:00; May: Tu-Su,PH 10:00-16:00; Jun: Tu-Su 09:00-16:00; Jul: Tu-Su,PH 09:00-17:00; Aug: Tu-Su 09:00-17:00; Sep: Tu-Su 10:00-16:00; Oct: Sa,Su,PH 10:00-15:00; Nov-Dec: Sa,Su 10:00-14:00",
+    "phone": "+420 724663963"
+  }
+},
+{
+  "type": "node",
+  "id": 13970693331,
+  "lat": 50.7645219,
+  "lon": 14.7603619,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Jídelna"
+  }
+},
+{
+  "type": "way",
+  "id": 28357808,
+  "center": {
+    "lat": 50.8566513,
+    "lon": 14.5600296
+  },
+  "nodes": [
+    311455443,
+    311455386,
+    344884536,
+    344884537,
+    344884538,
+    344884535,
+    311455393,
+    311455400,
+    311455407,
+    311455419,
+    311455429,
+    311455435,
+    311455443
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:ruian:type": "15",
+    "email": "info@jedlova.cz",
+    "name": "Jedlová hora",
+    "name:cs": "Jedlová hora",
+    "name:de": "Tannenberg",
+    "opening_hours": "Mo-Fr 10:00-17:00; Sa, Su 10:00-18:00",
+    "outdoor_seating": "yes",
+    "phone": "+420 777 069 777",
+    "ref:ruian:building": "46248",
+    "source": "cuzk:ruian",
+    "tourism": "hotel",
+    "website": "https://www.jedlova.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 28357810,
+  "center": {
+    "lat": 50.8566632,
+    "lon": 14.5604046
+  },
+  "nodes": [
+    311455482,
+    311455491,
+    311455507,
+    311455512,
+    311455517,
+    311455525,
+    311455527,
+    311455528,
+    311455530,
+    311455531,
+    311455532,
+    311455482
+  ],
+  "tags": {
+    "building": "yes",
+    "fee": "yes",
+    "height": "23",
+    "man_made": "tower",
+    "name": "rozhledna Jedlová",
+    "name:de": "Aussichtsturm Tannenberg",
+    "source": "cuzk:km;cs:wiki",
+    "step_count": "117",
+    "tourism": "viewpoint",
+    "tower:type": "observation"
+  }
+},
+{
+  "type": "way",
+  "id": 123722829,
+  "center": {
+    "lat": 50.7335690,
+    "lon": 14.5848652
+  },
+  "nodes": [
+    1378770504,
+    1378770484,
+    1378770494,
+    1378770474,
+    771930697,
+    1378770504
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "33",
+    "man_made": "tower",
+    "name": "Na Stráži",
+    "source": "cuzk:ortofoto",
+    "tourism": "attraction",
+    "tower:type": "observation",
+    "wikidata": "Q12049960",
+    "wikipedia": "cs:Rozhledna Na stráži"
+  }
+},
+{
+  "type": "way",
+  "id": 463726837,
+  "center": {
+    "lat": 50.7913059,
+    "lon": 14.4332741
+  },
+  "nodes": [
+    4589693615,
+    4589693614,
+    4589693613,
+    4589693618,
+    4589693615
+  ],
+  "tags": {
+    "access": "yes",
+    "building": "yes",
+    "fee": "no",
+    "height": "22",
+    "man_made": "tower",
+    "tower:type": "observation",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1371100808,
+  "center": {
+    "lat": 50.9410202,
+    "lon": 14.5250753
+  },
+  "nodes": [
+    12698455332,
+    12698455333,
+    12698455334,
+    12698455335,
+    12698455336,
+    12698455337,
+    12698455338,
+    12698455339,
+    12698455340,
+    12698455341,
+    12698455342,
+    12698455343,
+    12698455344,
+    12698455345,
+    12698455346,
+    12698455347,
+    12698455348,
+    12698455349,
+    12698455350,
+    12698455332
+  ],
+  "tags": {
+    "building": "yes",
+    "height": "15",
+    "man_made": "tower",
+    "name": "Rozhledna Dymník",
+    "name:de": "August-Turm",
+    "tower:type": "observation",
+    "wikidata": "Q92070372"
+  }
+}
+
+  ]
+}
