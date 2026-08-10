@@ -1,0 +1,165 @@
+# Rozhledna Jedlová — povýšena z kandidáta DATA-01 rešerší
+# (10. 8. 2026). Rozhledna S OBČERSTVENÍM dle klíče (rozhodnutí
+# Michala 28. 7.: rozhledny jen s občerstvením/restaurací) — doklad
+# nese OSM (restaurace 26 m) i rešerše (restaurace od 1995, denně
+# 9–20). Katalogová položka HUT-0046 „Chata Jedlová" viz interní
+# poznámky. Vše verified: false.
+
+nazev: rozhledna Jedlová
+slug: rozhledna-jedlova
+zeme: cz
+typ: rozhledna
+stav: v-provozu
+oblast: luzicke-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.8566632
+lng: 14.5604046
+vyska: 774
+obec: Jiřetín pod Jedlovou
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/28357810 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 774 m: tipnavylety.cz
+    („Mohutná znělcová kupa Jedlová (774 m)", čteno 10. 8. 2026)
+    i katalog (HUT-0046) — vrchol hory, rozhledna stojí na něm. Obec
+    Jiřetín pod Jedlovou: katalog i adresy vrcholových provozů.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Rozhledna nenocuje; apartmány „Chata Jedlová" na vrcholu jsou
+# samostatný pronájem (viz interní poznámky) — nezapisují se sem.
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Rozhledna nocleh nenabízí. Vedle stojí celodřevěné apartmány
+    „Chata Jedlová" (e-penziony.cz, čteno 10. 8. 2026: velký až pro
+    7 a malý pro 2, vlastní kuchyně, bezkontaktní check-in) — je to
+    pronájem bez obsluhy, do tohoto profilu nepatří.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Tipnavylety.cz (čteno 10. 8. 2026): restaurace na vrcholu
+    „do provozu 25. srpna 1995", dnes „otevřeno denně 9-20 hod";
+    e-penziony.cz: „přímo u historické rozhledny se nachází
+    restaurace s celoročním provozem". OSM: restaurace „Jedlová
+    hora" 26 m od věže (way/28357808). Katalog (HUT-0046):
+    stravování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Denně 9–20 (areál rozhledny s restaurací).
+overeniProvoz:
+  source: >-
+    Tipnavylety.cz (čteno 10. 8. 2026): otevřeno denně 9–20.
+    Kontakty na rozhlednu žádný načtený pramen nevede (telefony
+    731 502 030 a 733 195 321 z e-penziony.cz patří apartmánům).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1891
+    udalost: >-
+      Kamenná rozhledna vysoká 29 metrů byla vystavěna v letech
+      1890–91 za 5 200 zlatých a předána 14. září 1891; na vyhlídkovou
+      plošinu ve 23 metrech vede 123 schodů.
+    zdroj: >-
+      tipnavylety.cz (čteno 10. 8. 2026) — „vystavěna v letech
+      1890-91", „za 5.200 zlatých předána 14. září 1891", výška 29 m,
+      plošina 23 m, 123 schodů.
+  - rok: 1943
+    udalost: >-
+      Z Jedlové odešli poslední obyvatelé a rozhledna i hostinec
+      začaly chátrat; v padesátých letech byly oba objekty uzavřeny.
+    zdroj: >-
+      tipnavylety.cz (čteno 10. 8. 2026) — „Od roku 1943 … rozhledna
+      stejně jako hostinec chátraly", uzavření v 50. letech.
+  - rok: 1993
+    udalost: >-
+      Po obnově, kterou počátkem devadesátých let rozjel podnikatel
+      Josef Krejčí, byla rozhledna 3. července 1993 znovu slavnostně
+      zpřístupněna; restaurace se vrátila 25. srpna 1995.
+    zdroj: >-
+      tipnavylety.cz (čteno 10. 8. 2026) — Josef Krejčí, zpřístupnění
+      3. 7. 1993, restaurace 25. 8. 1995.
+
+zajimavosti:
+  - text: >-
+      Jedlová je s 774 metry třetí nejvyšší horou Lužických hor —
+      a vrchol je malý areál: kamenná věž z roku 1891, restaurace,
+      lanové centrum i sjezd na terénních koloběžkách.
+    kategorie: vyska
+    zdroj: >-
+      „třetí nejvyšší horou Lužických hor": tipnavylety.cz; lanové
+      centrum a koloběžky: e-penziony.cz (obojí čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Kamenná věž z roku 1891 na třetí nejvyšší hoře Lužických hor —
+  123 schodů na plošinu ve třiadvaceti metrech, dole restaurace
+  otevřená denně od devíti do osmi. Po půlstoletí chátrání vrátila
+  vrchol turistům obnova z první poloviny devadesátých let.
+text:
+  - >-
+    Rozhledna na Jedlové patří ke kamenné generaci věží z konce
+    devatenáctého století: stavěla se v letech 1890–91 za 5 200
+    zlatých a slavnostně se předávala 14. září 1891. Válka a odsun
+    vzaly vrcholu život — od roku 1943 věž i hostinec chátraly
+    a v padesátých letech se zavřely úplně.
+  - >-
+    Vzkříšení přišlo v devadesátých letech: obnovená věž se otevřela
+    3. července 1993 a restaurace o dva roky později. Dnes je vrchol
+    malý areál — věž se 123 schody, restaurace otevřená denně od
+    devíti do osmi večer, lanové centrum a sjezd na koloběžkách;
+    vedle stojí i pronajímané apartmány.
+  - >-
+    Údaje na téhle stránce pocházejí z turistických webů
+    a z externího katalogu; polohu nese OpenStreetMap. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      tipnavylety.cz — stavba 1890–91, předání 14. 9. 1891, 29 m /
+      plošina 23 m / 123 schodů, chátrání od 1943, obnova 1993,
+      restaurace 1995, otevřeno denně 9–20, třetí nejvyšší hora
+      (čteno 10. 8. 2026)
+    url: https://www.tipnavylety.cz/products/rozhledna-jedlova-v-luzickych-horach/
+  - popis: >-
+      e-penziony.cz — restaurace s celoročním provozem u rozhledny,
+      apartmány „Chata Jedlová" (pronájem), lanové centrum (čteno
+      10. 8. 2026)
+    url: https://e-penziony.cz/chata-jedlova
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0046
+      „Chata Jedlová" (774 m, Jiřetín pod Jedlovou, sezónně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS věže; restaurace way/28357808; ODbL)
+    url: https://www.openstreetmap.org/way/28357810
+interniPoznamky: >-
+  Povýšeno z data/kandidati/luzicke-hory/rozhledna-jedlova.yaml
+  rešerší (10. 8. 2026). Klíč: rozhledna s občerstvením (rozhodnutí
+  Michala 28. 7.) — restaurace 26 m dle OSM, denně 9–20 dle rešerše.
+
+  KATALOGOVÁ POLOŽKA HUT-0046 „Chata Jedlová" (ub ano, str ano):
+  na vrcholu NENÍ obsluhovaná chata s noclehem — jsou tam tři věci:
+  rozhledna (tento profil), restaurace u ní (celoroční) a celodřevěné
+  apartmány „Chata Jedlová" BEZ obsluhy (pronájem, e-penziony.cz).
+  Katalogový řádek nejspíš slévá restauraci a apartmány do jedné
+  položky; slabá shoda v reportu pokrytí zůstává VIDITELNÁ schválně —
+  rozhodnout přiřazení (nebo zápis mimo klíč pro apartmány) musí
+  Michal. Apartmány se jako kandidát nezakládají (pronájem bez
+  služby).
+
+  K OVĚŘENÍ (DATA-04): zimní režim restaurace (celoročně dle
+  e-penziony × „sezónně" v katalogu); kontakt na restauraci.
+  Fotku dodá příští běh DATA-02.

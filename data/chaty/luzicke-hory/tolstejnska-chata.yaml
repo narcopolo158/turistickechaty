@@ -1,0 +1,142 @@
+# Tolštejnská chata — publikovaný profil Lužických hor (10. 8. 2026),
+# DEVÁTÝ profil korpusu založený bez OSM kandidáta: objekt v exportu
+# DATA-01 není, GPS z ubytovacího katalogu. Zavírá katalogovou mezeru
+# HUT-0045. Vše verified: false.
+
+nazev: Tolštejnská chata
+slug: tolstejnska-chata
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: luzicke-hory
+
+aliasy:
+  - nazev: Turistická chata na zřícenině Tolštejn
+    poznamka: plné jméno v ubytovacích katalozích
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.857176
+lng: 14.581929
+vyska: 645
+obec: Jiřetín pod Jedlovou
+overeniLokace:
+  source: >-
+    GPS 50°51'25.834"N, 14°34'54.945"E (přepočteno 50.857176,
+    14.581929) a výška 645 m: levneubytovani.net (čteno 10. 8. 2026)
+    — objekt v našem exportu OSM chybí. Katalog (HUT-0045) vede
+    670 m — rozpor přiznán, zapsáno nižší číslo (konvence). Poloha:
+    „přímo v areálu zříceniny hradu Tolštejn, nad Jiřetínem pod
+    Jedlovou"; adresa Rozhled 79. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 16
+overeniNocleh:
+  source: >-
+    Levneubytovani.net (čteno 10. 8. 2026): „V chatě je 7 pokojů
+    s maximální kapacitou 16 osob", sociální zařízení společná;
+    celoročně, ceny se snídaní (mění se, do prózy nejdou). Katalog
+    (HUT-0045): ubytování ano, provoz sezónně — rozpor s celoročním
+    údajem katalogu ubytování přiznán, nerozhodnut.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Levneubytovani.net (čteno 10. 8. 2026): vlastní restaurace
+    s padesáti místy, „nádherným výhledem do údolí přímo od stolu"
+    a letní terasou. Katalog (HUT-0045): stravování ano. Režim pro
+    neubytované výslovně neuveden — chata v areálu zříceniny ale
+    obsluhuje návštěvníky hradu.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 774 742 069'
+  email: tolstejn1@seznam.cz
+overeniProvoz:
+  source: >-
+    Levneubytovani.net (čteno 10. 8. 2026): telefon +420 774 742 069,
+    e-mail tolstejn1@seznam.cz, kontaktní osoba Petra Knápková;
+    celoročně. Katalog: sezónně — rozpor přiznán, nerozhodnut.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1995
+    udalost: >-
+      Zrekonstruovaná chata v areálu hradní zříceniny je v provozu od
+      roku 1995.
+    zdroj: >-
+      levneubytovani.net (čteno 10. 8. 2026) — „Zrekonstruovaná chata
+      je v provozu od roku 1995." Starší historie objektu v načtených
+      pramenech chybí — u chaty na hradě z 13. století skoro jistě
+      existuje, nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Chata stojí přímo v areálu zříceniny hradu Tolštejn — jíst se
+      tu dá s výhledem do údolí od stolu a hradní okruh Tolštejnského
+      panství začíná za dveřmi.
+    kategorie: jine
+    zdroj: >-
+      levneubytovani.net (čteno 10. 8. 2026) — poloha v areálu
+      zříceniny, restaurace s výhledem
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Turistická chata přímo v areálu zříceniny hradu Tolštejn nad
+  Jiřetínem pod Jedlovou — sedm pokojů pro šestnáct hostů, restaurace
+  s padesáti místy a výhledem do údolí. V dnešní podobě slouží od
+  roku 1995.
+text:
+  - >-
+    Tolštejn je hradní zřícenina, kolem níž se točí celé Tolštejnské
+    panství — a chata v jejím areálu dělá z návštěvy hradu celodenní
+    výlet: restaurace
+    s padesáti místy servíruje s výhledem do údolí, v létě jede
+    terasa a kdo chce, přespí v jednom ze sedmi pokojů se společným
+    zázemím.
+  - >-
+    Dnešní podoba chaty je výsledkem rekonstrukce a provozu od roku
+    1995; starší historii objektu naše podklady nevedou, u stavení na
+    hradě ze třináctého století ale skoro jistě existuje. Katalog
+    vede provoz jako sezónní, ubytovací katalog jako celoroční —
+    před zimní návštěvou je jistější zavolat.
+  - >-
+    Údaje na téhle stránce pocházejí z ubytovacího katalogu
+    a z externího katalogu chat; objekt zatím chybí v OpenStreetMap,
+    souřadnice nese ubytovací katalog. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      levneubytovani.net — GPS, výška 645 m, 7 pokojů / 16 osob,
+      restaurace 50 míst s terasou, provoz od 1995, kontakty,
+      celoročně (čteno 10. 8. 2026)
+    url: https://www.levneubytovani.net/ubytovani/chata-tolstejn/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0045
+      (670 m, Jiřetín pod Jedlovou, sezónně)
+    url: https://nocleh.kct.cz/chaty
+interniPoznamky: >-
+  Založeno BEZ OSM kandidáta (10. 8. 2026, devátý takový profil
+  korpusu) — GPS z levneubytovani.net; až objekt v OSM přibude,
+  přepnout zdroj. Zavírá katalogovou mezeru HUT-0045 — katalog
+  Lužických hor tím má záznam u 5/5 a profily u 4/5.
+
+  ROZPORY: výška 645 × 670 (katalog) — zapsáno nižší; provoz
+  celoročně (levneubytovani) × sezónně (katalog) — nerozhodnuto,
+  přiznáno v próze. POZOR: kandidát luzicke-hory/chata-pod-hradem
+  je JINÝ objekt (Sloup v Čechách, měřeno 13,5 km) — nepárovat.
+
+  K OVĚŘENÍ (DATA-04): starší historie chaty (hostinec na hradě
+  bývá doložen v literatuře Tolštejnského panství); režim restaurace
+  v zimě; vlastní web (žádný načtený pramen ho nevede). Fotku dodá
+  příští běh DATA-02.
