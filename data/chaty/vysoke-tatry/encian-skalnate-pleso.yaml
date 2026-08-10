@@ -1,0 +1,191 @@
+# Encián na Skalnatom plese — publikovaný profil Vysokých Tater
+# (10. 8. 2026), OSMÝ profil korpusu založený bez OSM kandidáta a
+# uzavření mezery VT-02: uzel jménem „Encián" v OSM je vesnická
+# restaurace v Tatranské Lomnici (záměna jména, vyřazena 9. 8.),
+# skutečný Encián — Jurkovičova stanice lanovky — v exportu není.
+# GPS z ubytovacího katalogu. Vše verified: false.
+
+nazev: Encián
+slug: encian-skalnate-pleso
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: vysoke-tatry
+
+aliasy:
+  - nazev: Horská chata Encián
+    poznamka: jméno v ubytovacích katalozích (Dom hostí)
+  - nazev: Galéria Encián
+    poznamka: jméno galerijní části budovy
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.187631
+lng: 20.233474
+vyska: 1751
+obec: Vysoké Tatry
+overeniLokace:
+  source: >-
+    GPS 49°11'15.472"N, 20°14'0.506"E (přepočteno 49.187631,
+    20.233474) a výška 1751 m: lacneubytovanie.net (čteno
+    10. 8. 2026); výšku 1751 m vede i tatryportal.sk. Objekt v OSM
+    exportu chybí — uzel jménem „Encián" (7643802175) je vesnická
+    restaurace 216 m od centra Tatranské Lomnice, doloženo měřením
+    9. 8. 2026 (VT-02). Poloha: budova bývalé stanice visuté lanovky
+    na břehu Skalnatého plesa, na Tatranské magistrále. V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 14
+overeniNocleh:
+  source: >-
+    Lacneubytovanie.net (čteno 10. 8. 2026): Dom hostí — 14 lůžek na
+    patrových postelích, společná sprcha a WC, 20 €/os./noc (cena se
+    mění, do prózy nejde). Starší rešerše (9. 8., zápis ve VT-02)
+    uváděla rozpětí „10 až 20 lůžek" dle pramenů — zapsáno konkrétní
+    číslo ubytovacího katalogu.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Rešerše VT-02 (9. 8. 2026, zápis v backlogu): v budově je kavárna
+    — klíč zařazení splněn kavárnou a rolí na Tatranské magistrále.
+    Tatryportal.sk (čteno 10. 8. 2026) mluví o „restauraci pro
+    návštěvníky Skalnatého plesa". Typ bufet konzervativně (kavárenský
+    provoz, ne kuchyně s minutkami — přesný režim k ověření).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+421 911 033 645'
+  email: encian@krajsietatry.sk
+overeniProvoz:
+  source: >-
+    Lacneubytovanie.net (čteno 10. 8. 2026): telefony +421 911 033 645
+    a +421 903 891 173, e-mail encian@krajsietatry.sk; jako
+    provozovatel ubytování uvedena Tatranská dobrovoľnícka služba
+    (TDS), kontaktní osoba Patrik Kolesár. Rešerše VT-02 (9. 8.)
+    doložila, že budovu drží Tatranský okrášľovací spolok
+    v dvacetiletém pronájmu od TMR — dva podobně znějící spolky se
+    NESLUČUJÍ, vztah TDS × TOS k ověření.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1937
+    udalost: >-
+      Podle projektu Dušana Sama Jurkoviče, později upraveného
+      stavitelem, dokončila firma ing. Karla Marvana z Hradce Králové
+      horní stanici visuté lanovky z Tatranské Lomnice (stavba
+      1936–37) — dnešní Encián. Celý soubor lanovky je národní
+      kulturní památkou (ÚZPF 3850/1-20).
+    zdroj: >-
+      rešerše VT-02 (9. 8. 2026, zápis v backlogu) — Jurkovič
+      1936–1937, firma ing. Karla Marvana, NKP soubor „Lanovka
+      Tatranská Lomnica – Skalnaté Pleso – Lomnický štít";
+      architekturu potvrzuje lacneubytovanie.net („Budovu navrhl
+      architekt Dušan Jurkovič a je národní kulturní památkou").
+  - rok: 1955
+    udalost: >-
+      U Skalnatého plesa se začala jezdit Velká cena Slovenska ve
+      sjezdových disciplínách — Encián po válce sloužil hlavně
+      lyžařským podnikům.
+    zdroj: >-
+      tatryportal.sk (čteno 10. 8. 2026) — „od roku 1955" Velká cena
+      Slovenska, poválečná lyžařská role.
+  - rok: 2015
+    udalost: >-
+      V budově byla 1. července posvěcena řeckokatolická kaple;
+      vedle ní tu funguje galerie, čítárna Alfreda Grosze a Dom
+      hostí.
+    zdroj: >-
+      rešerše VT-02 (9. 8. 2026, zápis v backlogu) — kaple posvěcena
+      1. 7. 2015, galerie (prameny se přou, zda „najvyššie položená
+      na Slovensku", nebo „druhá najvyššie položená v Európe" —
+      superlativ se proto nepíše), čítárna, Dom hostí.
+
+zajimavosti:
+  - text: >-
+      Encián je dílo Dušana Sama Jurkoviče — „básníka dřeva" a autora
+      luhačovických lázeňských domů — a s celou lanovkou na Lomnický
+      štít tvoří národní kulturní památku. V napínací věži bývalé
+      stanice je dnes vyhlídka s dalekohledem.
+    kategorie: jine
+    zdroj: >-
+      Jurkovič a NKP: rešerše VT-02 + lacneubytovanie.net; vyhlídka
+      s dalekohledem ve věži: lacneubytovanie.net (čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Jurkovičova horní stanice visuté lanovky z let 1936–37 na břehu
+  Skalnatého plesa (1751 m) — dnes národní kulturní památka
+  s galerií, kavárnou, kaplí a čtrnácti lůžky Domu hostí přímo na
+  Tatranské magistrále pod Lomnickým štítem.
+text:
+  - >-
+    Když se ve třicátých letech stavěla visutá lanovka z Tatranské
+    Lomnice na Lomnický štít, navrhl její stanici u Skalnatého plesa
+    Dušan Samo Jurkovič; stavbu podle jeho později upravených plánů
+    dokončila roku 1937 hradecká firma inženýra Marvana. Po válce
+    budova sloužila hlavně lyžařům — od roku 1955 se tu jezdila
+    Velká cena Slovenska — a dnes je i s lanovkou národní kulturní
+    památkou.
+  - >-
+    Současný Encián je dům mnoha rolí: galerie, čítárna Alfreda
+    Grosze, kavárna, od roku 2015 řeckokatolická kaple — a Dom hostí
+    se čtrnácti lůžky na palandách a společnou koupelnou, nocleh
+    turistického střihu přímo u plesa. V napínací věži bývalé lanovky
+    je vyhlídka s dalekohledem.
+  - >-
+    Skalnaté pleso je křižovatka: končí tu kabinková lanovka
+    z Tatranské Lomnice, začíná lanovka na Lomnický štít, vede tudy
+    Tatranská magistrála a hned vedle stojí Skalnatá chata
+    i observatoř. Pěšky to sem z Lomnice trvá kolem dvou a půl
+    hodiny.
+  - >-
+    Údaje na téhle stránce pocházejí z ubytovacích katalogů,
+    z tatranských turistických webů a z rešerše památkového fondu;
+    objekt zatím chybí v OpenStreetMap, souřadnice nese ubytovací
+    katalog. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      lacneubytovanie.net — GPS, výška 1751 m, Dom hostí 14 lůžek,
+      kontakty, provozovatel TDS, Jurkovič a NKP, vyhlídka ve věži
+      (čteno 10. 8. 2026)
+    url: https://www.lacneubytovanie.net/ubytovanie/encian-skalnate-pleso/
+  - popis: >-
+      tatryportal.sk — výška, přístup (lanovka 12,4 min / pěšky
+      2:30), poválečná lyžařská role a Velká cena Slovenska od 1955,
+      dnešní služby (čteno 10. 8. 2026)
+    url: https://www.tatryportal.sk/tura/hotel-encian/
+  - popis: >-
+      Rešerše VT-02 (9. 8. 2026, zápis v docs/BACKLOG.md) — NKP ÚZPF
+      3850/1-20, Jurkovič 1936–37, firma ing. Karla Marvana,
+      Tatranský okrášľovací spolok v pronájmu od TMR, kaple 2015,
+      čítárna, spor o superlativ galerie
+    url: https://www.pamiatky.sk/
+interniPoznamky: >-
+  Založeno BEZ OSM kandidáta (10. 8. 2026, osmý takový profil
+  korpusu) — uzavírá VT-02: uzel „Encián" v OSM je vesnická
+  restaurace v Lomnici (vyřazena 9. 8. měřením 3 972 m od plesa),
+  skutečná budova v OSM chybí. GPS z lacneubytovanie.net; až objekt
+  v OSM přibude, přepnout zdroj.
+
+  ROZPORY vedené v ověřeních: kapacita 14 (katalog) × „10 až 20"
+  (starší rešerše); provozovatel Tatranská dobrovoľnícka služba
+  (katalog) × Tatranský okrášľovací spolok v pronájmu od TMR
+  (rešerše 9. 8.) — NESLUČOVAT, možná jde o dvě role (ubytování ×
+  správa budovy). Superlativ galerie se nepíše (prameny se přou).
+
+  K OVĚŘENÍ (DATA-04): vztah TDS × TOS; otvírací doba kavárny;
+  aktuální stav rekonstrukce fasády (Korzár 2021 psal o nové fasádě
+  a střeše). Fotku dodá příští běh DATA-02 — a razítko: budova
+  s galerií skoro jistě razítkuje, dohledat.
