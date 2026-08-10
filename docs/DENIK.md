@@ -29,6 +29,34 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-10 (sedmý blok, čtyřhodinovka na pokyn Michala) — DATA-41 dokončeno (4 nové oblasti), fronta KH dojeta, korpus 233
+
+**Hotovo:**
+- **DATA-41 druhá vlna dokončena — čtyři ruční kandidáti povýšeni, čtyři nové oblasti:**
+  - **Lesní penzion Bunč** — první profil **Chřibů** (oblast založena). Nástupce útulny KČT z 1924 (vypálena nacisty 1942, obnovena po 1946, sto let slaveno V/2024); dnes RUDOLF JELÍNEK a.s., 69 lůžek, restaurace. Commit `8a126ae`.
+  - **Chata Tesák** — první profil **Hostýnských vrchů** (oblast založena). Chata z 1934 do základů vyhořela 29. 1. 2022 (závada elektro, škoda 12 mil.); občerstvení běží v dřevěném provizoriu, obnova má projekt i povolení, chybí ≥10 mil. Jmenovci na sedle (kamenná chata KČT — budoucí kandidát!) poznamenáni. Commit `89000f5`.
+  - **Turistická chata Čeřínek** — první profil **Vysočiny**. Chata KČT od 1923 (budova 1988), 65 lůžek (rozpor 65×70 přiznán), v nájmu Jurda z Divokýho Billa. Commit `6ea6322`.
+  - **Holubyho chata** — první profil **Bílých Karpat** (založeny jako POHOŘÍ, přeshraniční CZ+SK, Veľká Javorina 969 m). Otevřena 1924, po požáru 1926 nová budova arch. Svobody 1930; od 2006 M. Martinček. Commit `858487e`.
+- **Fronta povyšování KH DOJETA (14 položek → 11 profilů, 1 vyřazení, 2 odklady):**
+  - Povýšeny: Spiegelwaldbaude (1903, u König-Albert-Turmu, 728 m), Bergbaude Geisingberg (1906, u Louisenturmu 1891, 824 m), Lugsteinbaude (Gasthaus + Ferienwohnungen u Georgenfeldského rašeliniště), Fichtelberghütte (hotel ~350 m pod vrcholem), Naturbaude Eschenhof (1000 m, 40+ lůžek, hospoda 50–120 míst), Naturhotel Sachsenbaude (partner Fichtelberghausu během rekonstrukce — hraniční případ přiznán), Hotel Dachsbaude & Kammbaude (761 m, Kammweg/E3, 61 lůžek), Berggasthof Kuhberg (dnes Haus Kuhberg — po renovaci 2023 apartmány se snídaní, kuchyne: ne, rozpor s gastro katalogy přiznán), Köhlerhütte-Fürstenbrunn (zájezdní hostinec od 1839), Klügelhütte (herberge v 400 let starém domě, ex-Jugendherberge), Beerenhütte (víkendový srubový bufet). Commity `ca749cd`…`9b79446`.
+  - **Vyřazena Kammbaude Neuhermsdorf** — rešerše překlopila verdikt: od 1997 jen Ferienwohnungen bez restaurace (postaveno 1925 jako Betriebsferienheim); zapsáno do _vyrazeno.
+  - **Odloženy s nálezy:** Zinnwaldbaude (vlastní web přesměrovává na cizí doménu, rozpor adres — žije vůbec?), Schanzenbaude Geyer (od 2021 Skisportverein Geyer e.V., OSM kontakty staré, veřejné občerstvení nedoloženo).
+- **Průchod katalogem chat (postup dle DATA-41):** nález — HUT-0109 „Horská chata Bučina" je nejspíš katalogový duplikát Alpské vyhlídky (HUT-0104); ruční kandidáti pro mezery: **Antýgl** (HUT-0108, Šumava), **Chata Martiňák** (Beskydy — pozor na jmenovce „Chata pod Martiňákem"). Commit `88fc2ed`.
+- Dvakrát chycena chyba třídy „vymyšlené OSM URL" kontrolním grepem (Eschenhof, Sachsenbaude) — grep proti kandidátovi je od teď povinný krok postupu.
+- Kontroly po každém kroku zelené; **korpus 233 profilů, 21 publikačních oblastí** (14 pohoří + 7 turistických oblastí).
+
+**Příště:**
+- Zlatá Studna (Šumava, katalog 1110 m) — rešerše nenašla provozovanou chatu, jen historii; prověřit a rozhodnout (zaniklá → data/zanikle?).
+- Rozčíst „slabé shody" katalog-pokryti (schroniska PTTK v Beskydech ×10, Churáňov, Rovina, Kotař…).
+- Dotáhnout kandidáty: Antýgl, Chata Martiňák, Kamenná chata na Tesáku, Hubertka (Chřiby), Chata Lopeník / Mikulčin vrch (Bílé Karpaty), Křemešník a Devět skal (Vysočina).
+- Lužický koš POSOUDIT (Sonnebergbaude, Breitebergbaude…), orlická česká strana (Orlická chata u Rampušáka, Kramárova chata), božídarská chatová skupina.
+- Až Michal klikne DATA-01: jeseniky (katalog čeká 6 mezer), javorniky, mala-fatra, oravska-magura, zapadne-tatry (katalog čeká 10!), slovensky-raj, bieszczady; DATA-37 beskydy znovu (přinese Martiňák s GPS).
+
+**Otázky pro Michala:**
+- **HUT-0109 „Horská chata Bučina"** — potvrdit sloučení s HUT-0104 (Alpská vyhlídka): druhá chata na Bučině podle rešerše neexistuje.
+- **Naturhotel Sachsenbaude a Berggasthof Kuhberg** — dva přiznané hraniční případy (wellness dům; apartmány bez restaurace). Nechat, nebo stáhnout?
+- **Zinnwaldbaude** — doména přesměrovává jinam; jestli víš, že penzion skončil, vyřadím ho rovnou.
+
 ## 2026-08-10 (šestý blok, na rozhodnutí Michala) — Českosaské Švýcarsko a Vysočina založeny, Lovoš + Macocha + dvě saské baudy, korpus 216
 
 Michal: _„ceskosaske svycarsko zaloz, vysocina jedna oblast — pokracuj
