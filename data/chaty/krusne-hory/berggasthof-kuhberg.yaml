@@ -1,0 +1,163 @@
+# Berggasthof Kuhberg (dnes Haus Kuhberg) — povýšen z kandidáta
+# DATA-01 rešerší (10. 8. 2026, desátá položka fronty povyšování;
+# vzor DATA-03: OSM × VLASTNÍ WEB). Ubytovací dům u Prinz-Georg-Turmu
+# na Kuhbergu (795 m); klasický Berggasthof s restaurací se po
+# renovaci 2023 změnil na apartmány se snídaní. Vše verified: false.
+
+nazev: Berggasthof Kuhberg
+slug: berggasthof-kuhberg
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Haus Kuhberg
+    poznamka: dnešní jméno na vlastním webu (po renovaci 2023)
+  - nazev: Berghotel Kuhberg
+    poznamka: starší podoba jména v gastro katalozích
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.5204777
+lng: 12.4988519
+vyska: 795
+obec: Stützengrün
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/260482464 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 795 m a adresa Schönheider
+    Straße 90a, 08328 Stützengrün: vlastní web hauskuhberg.de
+    (čteno 10. 8. 2026); dům stojí na Kuhbergu u rozhledny
+    Prinz-Georg-Turm. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web hauskuhberg.de (čteno 10. 8. 2026): „In elf
+    Apartments bieten wir Beherbergung mit Frühstück sowie Getränke
+    und auf Wunsch reichhaltige kalte Platten an" — jedenáct
+    apartmánů se snídaní; renovace 2023. Ocenění „Gästeliebling"
+    2026 pro region (tamtéž). Počet lůžek číslem pramen nevede.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ne
+overeniObcerstveni:
+  source: >-
+    Veřejná restaurace po renovaci 2023 doložená NENÍ: vlastní web
+    vede jen snídani, nápoje a studené platy na přání pro ubytované.
+    Gastro katalog schmausecke.de sice dům dál vede jako „Gasthaus,
+    Restaurant und Gaststätte" s vogtlandskou kuchyní
+    a wernesgrünským pivem, záznam ale vypadá starší než přestavba
+    na Haus Kuhberg — ROZPOR, přiznaný; bereme vlastní web,
+    zapsáno ne.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+49 37755 2490'
+  email: info@hauskuhberg.de
+  web: https://www.hauskuhberg.de/
+overeniProvoz:
+  source: >-
+    Vlastní web hauskuhberg.de (čteno 10. 8. 2026): telefon
+    +49 37755 2490, e-mail info@hauskuhberg.de. Provozovatel Simmel
+    Carlsfeld GmbH (vydavatel webu; shodně OSM tag operator) — táž
+    skupina, jejíž e-mail nese i Berggasthof Auersberg. OSM vede
+    starší e-mail info@berggasthof-kuhberg.de — nezapisuje se.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1894
+    udalost: >-
+      Na Kuhbergu byla postavena rozhledna Prinz-Georg-Turm —
+      na ochoz vede 99 schodů a věž stojí hned vedle dnešního domu.
+    zdroj: >-
+      vlastní web hauskuhberg.de (čteno 10. 8. 2026) — věž „errichtet
+      1894", 99 schodů. Historii samotného hostince (Unterkunftshaus
+      u věže?) načtené prameny nevedou — nedomýšlí se; německá
+      Wikipedie má článek Kuhberg (Stützengrün), ze sandboxu
+      cache-only.
+  - rok: 2023
+    udalost: >-
+      Dům prošel renovací a z Berggasthofu se stal Haus Kuhberg —
+      jedenáct apartmánů se snídaní; klasický restaurační provoz
+      v načtených pramenech od té doby doložen není.
+    zdroj: >-
+      vlastní web hauskuhberg.de (čteno 10. 8. 2026) — renovace 2023,
+      koncept apartmánů se snídaní.
+
+zajimavosti:
+  - text: >-
+      Kuhberg je nejzápadnější vyhlídkový kopec saského Krušnohoří
+      na pomezí s Vogtlandem — a věž z roku 1894 nese jméno prince
+      Georga. Devadesát devět schodů na ochoz je samo o sobě
+      výletní cíl; dům pod věží dnes nabízí spíš klidné přespání
+      než hospodský ruch.
+    kategorie: jine
+    zdroj: >-
+      věž 1894 a 99 schodů: vlastní web hauskuhberg.de (čteno
+      10. 8. 2026); pomezí s Vogtlandem: záznamy vogtland-tourismus.de
+      (poi Kuhberg — stránka se nenačetla celá)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Ubytovací dům u rozhledny Prinz-Georg-Turm na Kuhbergu (795 m) nad
+  Stützengrünem — jedenáct apartmánů se snídaní tam, kde dřív běžel
+  klasický Berggasthof. Věž s devadesáti devíti schody stojí hned
+  za rohem.
+text:
+  - >-
+    Kuhberg u Stützengrünu patří k vyhlídkovým kopcům západního
+    Krušnohoří: rozhledna Prinz-Georg-Turm tu stojí od roku 1894
+    a dům pod ní k ní patří odjakživa. Po renovaci v roce 2023 se
+    z Berggasthofu stal Haus Kuhberg — jedenáct apartmánů, snídaně,
+    nápoje a na přání studené platy.
+  - >-
+    Kdo čeká hospodu s obědem, měl by vědět, že klasický restaurační
+    provoz tu od přestavby doložený není — dům míří na hosty, kteří
+    chtějí klid, věž a výhledy; gastro katalogy starší záznam
+    s vogtlandskou kuchyní stále vedou, před cestou proto raději
+    zavolat.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu domu; polohu
+    nese OpenStreetMap. Rozpor mezi dnešním konceptem a staršími
+    katalogy přiznáváme. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web domu — 795 m, 11 apartmánů se snídaní, renovace
+      2023, věž 1894 (99 schodů), kontakty, provozovatel Simmel
+      Carlsfeld GmbH (načteno 10. 8. 2026)
+    url: https://www.hauskuhberg.de/
+  - popis: >-
+      schmausecke.de — starší záznam „Gasthaus, Restaurant und
+      Gaststätte", vogtlandská kuchyně (čteno 10. 8. 2026; rozpor
+      s dnešním konceptem přiznán)
+    url: https://www.schmausecke.de/gastro/berghotel-kuhberg/
+  - popis: OpenStreetMap (GPS, operátor; ODbL)
+    url: https://www.openstreetmap.org/way/260482464
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/berggasthof-kuhberg.yaml
+  rešerší (10. 8. 2026) — desátá položka fronty povyšování. Klíč
+  zařazení: obsluhovaný nocleh u výletního cíle (věž 1894)
+  s turistickou minulostí Berggasthofu; kuchyne: ne po renovaci
+  2023 — HRANIČNÍ případ jiného druhu než Kammbaude Neuhermsdorf
+  (tam pronájem bez obsluhy → vyřazeno; tady apartmány SE SNÍDANÍ
+  a doložená minulost hostince u věže → povýšeno, ať čtenář ví,
+  co ho čeká). Kdyby Michal rozhodl jinak, snadno se stáhne.
+
+  OSM URL way/260482464 ověřena gropem proti kandidátovi. NAZEV
+  ponechán „Berggasthof Kuhberg" dle kandidáta/OSM; dnešní jméno
+  Haus Kuhberg v aliasech — při příštím OSM exportu se může
+  přejmenovat i zdroj. K OVĚŘENÍ (DATA-04): historie hostince
+  (Wikipedia cache-only), počet lůžek, jestli platy/nápoje dostane
+  i kolemjdoucí. Fotku dodá příští běh DATA-02.
