@@ -1,0 +1,131 @@
+# Naturbaude Eschenhof — povýšena z kandidáta DATA-01 rešerší
+# (10. 8. 2026, sedmá položka fronty povyšování; vzor DATA-03: OSM ×
+# VLASTNÍ WEB). Penzion s hospodou na okraji lesa nad Oberwiesenthalem,
+# na svahu Fichtelbergu v 1000 m. Vše verified: false.
+
+nazev: Naturbaude Eschenhof
+slug: naturbaude-eschenhof
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Pension & Gaststätte Naturbaude Eschenhof
+    poznamka: plné jméno v katalozích
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.4295187
+lng: 12.9659537
+vyska: 1000
+obec: Kurort Oberwiesenthal
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/232348691 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška a poloha: vlastní web
+    naturbaude-eschenhof.de (čteno 10. 8. 2026) — „am Waldrand von
+    Kurort Oberwiesenthal in 1000 m über NN", „Am Hang des
+    Fichtelberges"; adresa Vierenstraße 13 (Yelp). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 40
+overeniNocleh:
+  source: >-
+    Vlastní web (čteno 10. 8. 2026): „über 40 preisgünstige Betten"
+    — dvoulůžkové a vícelůžkové pokoje a jedna Ferienwohnung.
+    Zapsáno 40 (dolní mez formulace „přes 40").
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 10. 8. 2026): čtyři lokály pro 50–120 hostů —
+    Gaststube (35), Fichtenstub (20), veranda (20), zimní zahrada
+    (až 45) — a letní pivní zahrada. Aktuálně po–st zavřeno, čt–ne
+    od poledne (kuchyně do 19:30, v neděli do 15:30); gastro
+    přestávka 17.–23. 8. 2026.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Hospoda: čt–ne od 12:00 (kuchyně do 19:30, ne do 15:30), po–st
+  zavřeno. Hodiny se mění — před cestou ověřit na webu.
+kontakty:
+  telefon: '+49 37348 20211'
+  email: info@naturbaude-eschenhof.de
+  web: https://www.naturbaude-eschenhof.de/
+overeniProvoz:
+  source: >-
+    Vlastní web (čteno 10. 8. 2026): telefon 037348 20211;
+    provozovatelka Gabriele Gropp (metadata webu). E-mail z OSM
+    (way, stav dat 2026-08-09). Provoz celoroční se zavíracími dny.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku domu ani původ jména Eschenhof načtené prameny nevedou.
+# Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Eschenhof stojí přesně na hranici lesa a luk nad
+      Oberwiesenthalem — v tisíci metrech, na svahu Fichtelbergu.
+      Čtyři lokály od Gaststube po zimní zahradu pojmou víc hostů,
+      než kolik má dům lůžek: je to hospoda pro svah, ne jen pro
+      penzion.
+    kategorie: jine
+    zdroj: >-
+      vlastní web naturbaude-eschenhof.de (čteno 10. 8. 2026) —
+      poloha „am Waldrand … in 1000 m über NN", lokály 50–120 míst,
+      „über 40" lůžek
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Penzion s hospodou na okraji lesa v tisíci metrech na svahu
+  Fichtelbergu — přes čtyřicet levných lůžek, čtyři lokály od
+  Gaststube po zimní zahradu a letní pivní zahrada nad
+  Oberwiesenthalem.
+text:
+  - >-
+    Naturbaude Eschenhof drží klasickou krušnohorskou kombinaci:
+    penzion s hospodou tam, kde končí město a začíná les. Stojí na
+    svahu Fichtelbergu v tisíci metrech nad mořem, na kraji Kurortu
+    Oberwiesenthal — lyžařské a běžkařské zázemí v zimě, nástup na
+    hřebenové cesty v létě.
+  - >-
+    Spí se v pokojích pro dva a víc lidí a v jedné Ferienwohnung —
+    dohromady přes čtyřicet lůžek; hospoda se čtyřmi lokály a pivní
+    zahradou vaří od čtvrtka do neděle od poledne. Otvíračka se
+    mění podle sezóny, před cestou se vyplatí mrknout na web.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu baudy; polohu
+    nese OpenStreetMap. Historii domu web nevede. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web baudy — poloha 1000 m na svahu Fichtelbergu,
+      40+ lůžek, čtyři lokály + pivní zahrada, otvírací doba,
+      telefon, provozovatelka (načteno 10. 8. 2026)
+    url: https://www.naturbaude-eschenhof.de/
+  - popis: OpenStreetMap (GPS, e-mail; ODbL)
+    url: https://www.openstreetmap.org/way/232348691
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/naturbaude-eschenhof.yaml
+  rešerší (10. 8. 2026) — sedmá položka fronty povyšování. Klíč
+  zařazení: penzion s hospodou pro veřejnost na svahu Fichtelbergu
+  (lokály 50–120 míst >> lůžka), role v areálu nesporná.
+
+  OSM URL way/232348691 ověřena gropem proti kandidátovi (první
+  pokus ji zapsal špatně — chyba třídy „vymyšlené číslo", chycena
+  kontrolním grepem). K OVĚŘENÍ (DATA-04): historie domu a původ
+  jména Eschenhof (jasan?— NEDOMÝŠLET), adresa (Vierenstr. 13 jen
+  z Yelpu). Fotku dodá příští běh DATA-02.
