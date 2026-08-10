@@ -3206,3 +3206,881 @@ vyrazeno:
       Claude (9. 8. 2026, první průchod triáže Krušných hor — vyřazeno na
       základě dokladu v tagu OSM, vzor VT-03)
     checked: 2026-08-09
+  # ── Druhý průchod triáže Krušných hor (10. 8. 2026): koš MIMO KLÍČ ──
+  # 79 objektů k pronájmu s dokladem v tagu tourism=chalet + webem,
+  # jménem nebo provozovatelem (fyzická osoba / Ferien*/Gästewohnung).
+  # PONECHÁNO na čtení 12 nejednoznačných: Kur-Cafe Laubert (kavárna),
+  # Landgasthof Frischhütte a Berggasthof Neu-Friedrichsruh (veřejné
+  # hostince), Forsthaus Sayda, Naturschutzzentrum, Schanzenbaude,
+  # Hotelbaude Berg-Kristall, Gästehaus Meierbaude, Haus Wiesenbaude,
+  # Wanderhütte (jmenovec), Slovanka (jmenovec, vlastenecké jméno),
+  # Anton Gunther (jméno božídarského rodáka → možná turistická minulost).
+  - osm: https://www.openstreetmap.org/way/287089432
+    slug: krusne-hory/berghaus25
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Berghaus25“) — web berghaus25.de (pronájem, provozovatelka Manja Müller dle OSM). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/13870604101
+    slug: krusne-hory/berghutte-zum-kranichsee-seminar-und-apartmenthaus
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Berghütte Zum Kranichsee Seminar- und Apartmenthaus“) — už jméno říká „Seminar- und Apartmenthaus", web berghuette-kranichsee.de. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/344066549
+    slug: krusne-hory/bikehutte-rehnhausl
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Bikehütte Rehnhäusl“) — web bikehuette.de (pronájem pro bikery). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/286974857
+    slug: krusne-hory/blockhaus-seyde
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Blockhaus Seyde“) — srubový pronájem, web blockhaus-seyde.de, provozovatel dle OSM Peter Stamm. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/1390786271
+    slug: krusne-hory/blockhutte-grunbach-nebenhutte
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Blockhütte Grünbach Nebenhütte“) — srub „Nebenhütte" (vedlejší chata) bez webu i kontaktů. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/134823468
+    slug: krusne-hory/bozi-dar
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Boží Dar“) — pronajímaná chata v chatové skupině na Božím Daru (sousední způsoby 134823468–134947684 se jmény Stein, Fox…), bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2620881390
+    slug: krusne-hory/buschhaus
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Buschhaus“) — provozovatel dle OSM Joachim-Günther Loitz (fyzická osoba), bez občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/291425153
+    slug: krusne-hory/christliches-freizeitzentrum-huttstattmuhle
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Christliches Freizeitzentrum Hüttstattmühle“) — křesťanské rekreační středisko pro skupiny (web huemue.de, Hüttstattmühle gGmbH) — uzavřené pobyty, ne služba kolemjdoucím. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/8836155825
+    slug: krusne-hory/familie-korner
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Familie Körner“) — už jméno je „Familie Körner", web koerner-ferienhaus.de. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/113792319
+    slug: krusne-hory/ferien-am-waldrand-de
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Ferien-am-Waldrand.de“) — už jméno je doména pronájmu ferien-am-waldrand.de. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/170022475
+    slug: krusne-hory/ferien-und-gastewohnung-fam-lassig-direkt-am-wald
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Ferien- und Gästewohnung Fam. Läßig direkt am Wald“) — už jméno říká „Ferien- und Gästewohnung Fam. Läßig". Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/255530055
+    slug: krusne-hory/ferienanlage-am-buschbach
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Ferienanlage am Buschbach“) — rekreační areál k pronájmu (web ferienanlage-am-buschbach.de). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/124355508
+    slug: krusne-hory/feriendomizil-erzgebirge
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Feriendomizil Erzgebirge“) — už jméno říká „Feriendomizil", web feriendomizil-erzgebirge.de. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/357665289
+    slug: krusne-hory/feriendorf-schwarzwassertal
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Feriendorf Schwarzwassertal“) — už jméno říká „Feriendorf" (rekreační vesnička). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/34951888
+    slug: krusne-hory/ferienhof-kaltofen
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Ferienhof Kaltofen“) — už jméno říká „Ferienhof", web ferienhof-kaltofen.de. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/124362671
+    slug: krusne-hory/ferienvermietung-fam-baumgartel
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Ferienvermietung Fam. Baumgärtel“) — už jméno říká „Ferienvermietung Fam. Baumgärtel". Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/134947682
+    slug: krusne-hory/fox
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Fox“) — pronajímaná chata v chatové skupině na Božím Daru (sousední způsoby se jmény Stein, Boží Dar…), bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/102192099
+    slug: krusne-hory/freier
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Freier“) — web ferienhaus-freier.ruebenau.de (pronájem, provozovatel dle OSM Kurt Freier). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2606329645
+    slug: krusne-hory/freier-blick
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Freier Blick“) — web freier-blick-oberbaerenburg.de (pronájem v osadě Oberbärenburg). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2558612666
+    slug: krusne-hory/friedrichshaus
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Friedrichshaus“) — pronajímaný dům v Altenbergu bez webu, občerstvení nedoloženo. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/4552487191
+    slug: krusne-hory/gastewohnung-engelmann-lugau
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Gästewohnung Engelmann Lugau“) — už jméno říká „Gästewohnung". Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2132048420
+    slug: krusne-hory/grumbtmuhle
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Grumbtmühle“) — web grumbtmuehle.de (rodinný pronájem mlýna). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/1244883363
+    slug: krusne-hory/haus-1
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus 1“) — bezejmenný domek č. 1 rekreačního areálu (sousední způsoby Haus 2–7). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/1244883364
+    slug: krusne-hory/haus-2
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus 2“) — bezejmenný domek č. 2 rekreačního areálu. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/1244883365
+    slug: krusne-hory/haus-3
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus 3“) — bezejmenný domek č. 3 rekreačního areálu. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/1244883366
+    slug: krusne-hory/haus-4
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus 4“) — bezejmenný domek č. 4 rekreačního areálu. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/1244839666
+    slug: krusne-hory/haus-5
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus 5“) — bezejmenný domek č. 5 rekreačního areálu. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/1244839667
+    slug: krusne-hory/haus-6
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus 6“) — bezejmenný domek č. 6 rekreačního areálu. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/1244839668
+    slug: krusne-hory/haus-7
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus 7“) — bezejmenný domek č. 7 rekreačního areálu. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/3455718659
+    slug: krusne-hory/haus-bergfried
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus Bergfried“) — web pension-behrenz.de (pronájem rodiny Behrenz). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2613518894
+    slug: krusne-hory/haus-elfriede
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus Elfriede“) — web elfriede-ferienhaus.de (pronájem). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/460471692
+    slug: krusne-hory/haus-flora
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus Flora“) — pronajímaný dům v Seiffenu bez občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2613518896
+    slug: krusne-hory/haus-lebensfreude
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus Lebensfreude“) — dům DRK (Deutsches Rotes Kreuz) pro pobyty, web haus-lebensfreude.de — uzavřené skupiny, ne služba kolemjdoucím. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/635419317
+    slug: krusne-hory/haus-mit-ausblick
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus mit Ausblick“) — pronájem rodiny Rothe („dům s výhledem"), Wilkau-Haßlau — navíc město v podhůří. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/3434904006
+    slug: krusne-hory/haus-tadeus
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus Tadeus“) — web haus-tadeus.de (pronájem, provozovatel dle OSM Tadeusz Lenkiewicz). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/113999452
+    slug: krusne-hory/haus-tanneck
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus Tanneck“) — pronajímaný dům v Altenbergu bez webu, občerstvení nedoloženo. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/226920872
+    slug: krusne-hory/haus-waldeck
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Haus Waldeck“) — web erzgebirge-haus-waldeck.de (pronájem). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/4727717935
+    slug: krusne-hory/heidi
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Heidi“) — domek kempu „Camping & Ferienhäuser von Tailleur" (provozovatel dle OSM), sousedé Helene a Helga. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/4727717937
+    slug: krusne-hory/helene
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Helene“) — domek kempu „Camping & Ferienhäuser von Tailleur", sousedé Heidi a Helga. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/4727717936
+    slug: krusne-hory/helga
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Helga“) — domek kempu „Camping & Ferienhäuser von Tailleur", sousedé Heidi a Helene. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2678892455
+    slug: krusne-hory/hentzschel
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Hentzschel“) — pronajímaný domek nesoucí příjmení majitele, bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/782918153
+    slug: krusne-hory/hermergut
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Hermergut“) — pronajímaná usedlost bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/1705619574
+    slug: krusne-hory/hildegard
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Hildegard“) — web ferienhaus-vogtland.de (týž provozovatel Tailleur jako Heidi/Helene/Helga). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2599960018
+    slug: krusne-hory/holfert
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Holfert“) — pronájem „Ferienzimmer" (web original-erzgebirgsshop.de, sekce Ferienzimmer). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/265338581
+    slug: krusne-hory/jitka-perina
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Jitka Peřina“) — objekt nese jméno fyzické osoby, bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2635379770
+    slug: krusne-hory/kaden
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Kaden“) — pronajímaný domek nesoucí příjmení majitele, bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/3327450093
+    slug: krusne-hory/kater
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Kater“) — pronajímaný domek bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/5060263095
+    slug: krusne-hory/kleines-haus-am-wald
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Kleines Haus am Wald“) — web kleineshausamwald.de („domeček u lesa" k pronájmu, provozovatelka dle OSM Heidrun Küchler). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2559562470
+    slug: krusne-hory/kusnierz
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Kusnierz“) — pronajímaný domek nesoucí příjmení majitele, bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/13913946520
+    slug: krusne-hory/landhaus-buttner
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Landhaus Büttner“) — web ferien-haus-altenberg.de (pronájem). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/3455274055
+    slug: krusne-hory/landhaus-heimwiese
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Landhaus Heimwiese“) — pronajímaný venkovský dům (provozovatel dle OSM Göhler), bez občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/4323439503
+    slug: krusne-hory/landlust
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Landlust“) — web pension-bernhardt.com/ferienhaus1.cfm (pronajímaný dům penzionu Bernhardt, jako Talblick). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2678550124
+    slug: krusne-hory/langer
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Langer“) — web ferienwohnungen-langer.de (pronájem). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/709051641
+    slug: krusne-hory/lesni-zatisi
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Lesní Zátiší“) — pronajímaná chalupa (provozovatelka dle OSM Věra Vrzalová), bez občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/141116653
+    slug: krusne-hory/lotterhof
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Lotterhof“) — web lotterhof.de (pronajímaná usedlost u Augustusburgu). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/3255288882
+    slug: krusne-hory/mayerhof
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Mayerhof“) — web ferienwohnung-mayerhof.de (pronájem). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/226923391
+    slug: krusne-hory/meusel-hausel
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Meusel Häusel“) — web meusel-haeusel.de (pronájem). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2207530981
+    slug: krusne-hory/milchschafhof
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Milchschafhof“) — ovčí farma s ubytováním (web milchschafhof-baerenstein.de), občerstvení pro kolemjdoucí nedoloženo. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/4803633795
+    slug: krusne-hory/olschlager
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Ölschläger“) — web oberbaerenburg.de/haus-oelschlaeger (pronájem v osadě Oberbärenburg). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/4884361173
+    slug: krusne-hory/peters-hexenhausche
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Peters Hexenhäusche“) — „perníková chaloupka" k pronájmu, bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/10963387866
+    slug: krusne-hory/riedl
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Riedl“) — pronajímaný domek nesoucí příjmení majitele, bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2423542086
+    slug: krusne-hory/rittergut-mulda
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Rittergut Mulda“) — web rittergut-mulda.de (pronajímaný statek v obci Mulda). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/8865683968
+    slug: krusne-hory/roubenky-slunny-vrch
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Roubenky Slunný vrch“) — web roubenkyslunnyvrch.cz (pronájem roubenek). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2678550163
+    slug: krusne-hory/schelle
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Schelle“) — web erzgebirge-touristik.de/schelle (pronájem přes agenturu). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2678892551
+    slug: krusne-hory/schirm
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Schirm“) — pronajímaný domek bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/226923365
+    slug: krusne-hory/schneestern-neuhermsdorf
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Schneestern Neuhermsdorf“) — web schneestern-neuhermsdorf.de (pronájem). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/3270661427
+    slug: krusne-hory/scholz
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Scholz“) — web města, sekce „Ferienwohnung Scholz" (pronájem bytu, provozovatel dle OSM Ullrich Scholz). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2929529008
+    slug: krusne-hory/schulze
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Schulze“) — pronajímaný domek rodiny Schulze, bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/9048008514
+    slug: krusne-hory/splitek
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Splitek“) — pronajímaný domek bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/292102352
+    slug: krusne-hory/sporthutten-am-alten-forsthaus
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Sporthütten am "Alten Forsthaus"“) — web obce, stránka „Unterkunft/Sporthütten Nassau" (pronájem sportovních chat). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/134823470
+    slug: krusne-hory/stein
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Stein“) — pronajímaná chata v chatové skupině na Božím Daru (sousední způsoby se jmény Fox, Boží Dar…), bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/4323439587
+    slug: krusne-hory/talblick
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Talblick“) — web pension-bernhardt.com/ferienhaus.cfm (pronajímaný dům penzionu Bernhardt, jako Landlust). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/122991305
+    slug: krusne-hory/u-jeziska
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „U Jeziska“) — pronajímaná chalupa (provozovatelka dle OSM Lucie Dvorakova), bez občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/3655296425
+    slug: krusne-hory/vogel
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Vogel“) — web osterzgebirge-ferienwohnung.de (pronájem, provozovatelka dle OSM Inge Vogel). Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/1244883360
+    slug: krusne-hory/waldhaus
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Waldhaus“) — bezejmenný „lesní dům" v témž rekreačním areálu jako Haus 1–7. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/322514021
+    slug: krusne-hory/waldhof
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Waldhof“) — pronajímaná usedlost (provozovatel dle OSM Jörg Teichmann), bez občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/2678892553
+    slug: krusne-hory/walther
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Walther“) — pronajímaný domek nesoucí příjmení majitele, bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/9935025595
+    slug: krusne-hory/zirkuswagen-und-elfenhaus
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Zirkuswagen und Elfenhaus“) — glampingový cirkusový vůz a „elfí domek" k pronájmu. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/1552673472
+    slug: krusne-hory/alte-schule
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet, name
+      „Alte Schule“) — bývalá škola přestavěná na pronajímaný objekt, bez webu i občerstvení. Bez signálu občerstvení pro veřejnost
+      i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, druhý průchod triáže Krušných hor — koš MIMO
+      KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
+      triáže 30. 7.)
+    checked: 2026-08-10
