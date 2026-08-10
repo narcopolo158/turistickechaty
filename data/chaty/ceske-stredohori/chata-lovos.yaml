@@ -1,0 +1,154 @@
+# Chata Lovoš — povýšena z ručního kandidáta rešerší (10. 8. 2026).
+# PRVNÍ PROFIL ČESKÉHO STŘEDOHOŘÍ (oblast založena publikačně tímto
+# profilem). Vrcholová chata KČT Lovosice na Lovoši — víkendový
+# výletní provoz, nocleh se od 2014 neposkytuje. Vše verified: false.
+
+nazev: Chata Lovoš
+slug: chata-lovos
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: ceske-stredohori
+
+aliasy:
+  - nazev: Chata na vrchu Lovoš
+    poznamka: podoba jména v encyklopediích a atlasech
+  - nazev: Turistická chata na Lovoši
+    poznamka: jméno na turistické známce č. 489
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.527792
+lng: 14.018350
+vyska: 570
+obec: Velemín
+overeniLokace:
+  source: >-
+    GPS 50°31'40.052"N, 14°1'6.061"E (přepočteno 50.527792,
+    14.018350): levneubytovani.net (čteno 10. 8. 2026) — objekt není
+    v našich OSM exportech (České středohoří nemá vyhledávací okno).
+    Výška 570 m: shodně vlastní web chata-lovos.cz
+    i levneubytovani.net — vrchol Lovoše, chata stojí na něm. Obec
+    Velemín: levneubytovani.net („Velemín u Lovosic"). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Levneubytovani.net (poslední aktualizace 1. 12. 2013, čteno
+    10. 8. 2026): ubytování se „od roku 2014" neposkytuje; historicky
+    16 lůžek na palandách. Aktuální stav noclehu žádný čerstvější
+    načtený pramen nevede — zapsáno ne.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Levneubytovani.net (stav k 12/2013, čteno 10. 8. 2026): „základní
+    občerstvení bez obsluhy" — párky, klobásy, langoše, hranolky,
+    nealko, cukrovinky; otvírací doba tehdy pá 15–22, so 10–22,
+    ne 10–16 (víkendy, jinak po domluvě). ÚDAJE JSOU STARÉ — vlastní
+    web chata-lovos.cz dnes provozní hodiny nevede a čerstvý pramen
+    chybí; před výletem ověřit. Charakter víkendové výletní chaty
+    potvrzuje i novoroční tradice (od 1979, vlastní web).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  web: https://www.chata-lovos.cz/
+overeniProvoz:
+  source: >-
+    Vlastní web chata-lovos.cz (čteno 10. 8. 2026): chatu vlastní
+    a provozuje KČT Lovosice; telefon ani e-mail web nevede. Starší
+    kontakty (Václav Buriánek, +420 607 184 600) jsou z levneubytovani
+    k 12/2013 — nezapisují se, platnost neznámá.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1978
+    udalost: >-
+      Členové KČT Lovosice v letech 1977–78 opravili zchátralou
+      vrcholovou chatu; od roku 1979 se na Lovoši drží novoroční
+      výstupová tradice.
+    zdroj: >-
+      vlastní web chata-lovos.cz, sekce o nás (čteno 10. 8. 2026) —
+      oprava „zchátralé vrcholové chaty" 1977–1978, novoroční tradice
+      od 1979. Starší historie chaty (původní stavba) v načtených
+      pramenech chybí — nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Vlastní web ji uvádí jako jedinou vrcholovou turistickou chatu
+      Českého středohoří — a Lovoš je pro tenhle titul ideální kopec:
+      z terasy je výhled na kužele Středohoří, údolí Labe
+      i Lovosice pod kopcem. Objekt je i známkovým místem
+      (turistická známka č. 489).
+    kategorie: jine
+    zdroj: >-
+      „Jediná vrcholová turistická chata v Českém středohoří":
+      vlastní web chata-lovos.cz (tvrzení provozovatele, čteno
+      10. 8. 2026); terasa s výhledem tamtéž; známka č. 489:
+      turisticke-znamky.cz
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Vrcholová chata KČT na Lovoši (570 m) nad Lovosicemi — víkendová
+  výletní bouda s terasou, langošem a výhledem na kužele Českého
+  středohoří. Vlastní web ji vede jako jedinou vrcholovou turistickou
+  chatu celého pohoří; nocleh už neposkytuje.
+text:
+  - >-
+    Lovoš je vstupní kopec Českého středohoří a chata na jeho vrcholu
+    patří lovosickým turistům: zchátralou vrcholovou boudu si členové
+    KČT opravili svépomocí v letech 1977–78 a od roku 1979 sem vodí
+    novoroční výstup. Z terasy je výhled na okolní kužele, údolí Labe
+    a město pod kopcem.
+  - >-
+    Provoz je víkendový a poctivě bufetový — párky, klobásy, langoše
+    a pití bez obsluhy; poslední doložené hodiny (pátek odpoledne až
+    neděle) jsou ale přes deset let staré, takže před cestou se
+    vyplatí ověřit, jestli se zrovna otvírá. Nocleh chata od roku
+    2014 neposkytuje.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu chaty
+    a z ubytovacího katalogu, jehož záznam je k prosinci 2013 —
+    stáří pramene přiznáváme u každého pole. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty (KČT Lovosice) — výška 570 m, oprava 1977–78,
+      novoroční tradice od 1979, „jediná vrcholová turistická chata
+      v Českém středohoří", terasa (čteno 10. 8. 2026)
+    url: https://www.chata-lovos.cz/
+  - popis: >-
+      levneubytovani.net — GPS, občerstvení bez obsluhy a víkendové
+      hodiny (stav k 1. 12. 2013), konec noclehu od 2014, historická
+      kapacita 16 lůžek (čteno 10. 8. 2026)
+    url: https://www.levneubytovani.net/ubytovani/chata-lovos/
+  - popis: >-
+      turisticke-znamky.cz — známka č. 489 „Turistická chata na
+      Lovoši"
+    url: https://www.turisticke-znamky.cz/znamky/turisticka-chata-na-lovosi-c489
+interniPoznamky: >-
+  Povýšeno z data/kandidati/ceske-stredohori/chata-lovos.yaml rešerší
+  (10. 8. 2026) — PRVNÍ PROFIL ČESKÉHO STŘEDOHOŘÍ; oblast potřebuje
+  publikační YAML (ceske-stredohori.yaml zatím NENÍ — založit před
+  seedem, jinak seed spadne na neznámé oblasti!). Klíč zařazení:
+  vrcholová chata KČT s občerstvením pro veřejnost, novoroční
+  tradice — role na trase nesporná.
+
+  POZOR NA STÁŘÍ PRAMENŮ: provozní hodiny a kontakty jsou k 12/2013
+  (přiznáno v ověřeních i próze); vlastní web je živý, ale provozní
+  data nevede. MILEŠOVKA: kandidáti chata-milesovka + milesovka
+  (rozhledna) v krusne-hory patří sem — přesunout vzorem Tokáně, až
+  se bude povyšovat. K OVĚŘENÍ (DATA-04): aktuální otvíračka
+  a kontakt (přes KČT Lovosice); historie původní stavby (Wikipedie
+  má článek, ze sandboxu cache-only). Známka č. 489 → DATA-10.

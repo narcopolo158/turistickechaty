@@ -1,0 +1,158 @@
+# Chata Macocha — povýšena z ručního kandidáta rešerší (10. 8. 2026).
+# PRVNÍ PROFIL MORAVSKÉHO KRASU (oblast založena publikačně tímto
+# profilem). Chata z roku 1895 u horního můstku propasti.
+# Vše verified: false.
+
+nazev: Chata Macocha
+slug: chata-macocha
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: moravsky-kras
+
+aliasy:
+  - nazev: Turistická chata Macocha
+    poznamka: podoba jména v ubytovacích katalozích
+  - nazev: Chata na Macoše
+    poznamka: podoba jména na Turistika.cz
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.372764
+lng: 16.728943
+vyska: 490
+obec: Vilémovice
+overeniLokace:
+  source: >-
+    GPS 49°22'21.952"N, 16°43'44.196"E (přepočteno 49.372764,
+    16.728943) a výška 490 m: levneubytovani.net (čteno 10. 8. 2026)
+    — objekt není v našich OSM exportech (Moravský kras nemá
+    vyhledávací okno). Adresa „Propast Macocha - horní můstek,
+    Vilémovice 85, 679 06 Vilémovice" (levneubytovani.net; polohu
+    „horní můstek" vede i vlastní web v kontaktech). V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 60
+overeniNocleh:
+  source: >-
+    Kudy z nudy (čteno 10. 8. 2026): „60 lůžek ve dvou-, tří-
+    a vícelůžkových stylově zařízených pokojích". Levneubytovani.net:
+    osm pokojů (2–11 lůžek) a tři apartmány (2× čtyřlůžkový,
+    1× pětilůžkový) — skladba se s číslem 60 zhruba potkává, přesný
+    součet nepočítáme. Vlastní web vede sekce Apartmány a ceník.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chatamacocha.cz (čteno 10. 8. 2026): „stylová
+    restaurace s kachlovými kamny a venkovní terasou" s bohatým menu;
+    totéž Kudy z nudy i levneubytovani.net. Otvírací dobu žádný
+    načtený pramen nevede. Restaurace u horního můstku obsluhuje
+    proud návštěvníků propasti — režim pro veřejnost je z povahy
+    místa, výslovný doklad ale chybí.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 516 444 250'
+  email: info@chatamacocha.cz
+  web: https://www.chatamacocha.cz/
+overeniProvoz:
+  source: >-
+    Vlastní web chatamacocha.cz (čteno 10. 8. 2026): telefon
+    +420 516 444 250, e-mail info@chatamacocha.cz; skupinové
+    rezervace +420 516 418 113 (smk@smk.cz). Provozovatel S.M.K.,
+    a.s., Blansko (levneubytovani.net; zkratka dle téhož zdroje
+    „Společnost pro Moravský kras"). Sezónnost neuvedena.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1895
+    udalost: >-
+      U horního můstku propasti byla postavena turistická chata —
+      vlastní web dnes mluví o „chatě se stoletou tradicí".
+    zdroj: >-
+      Kudy z nudy (čteno 10. 8. 2026) — „postavena v roce 1895";
+      „Chata se stoletou tradicí" vlastní web. Kdo ji postavil
+      (spolek?), načtené prameny nevedou — nedomýšlí se.
+  - rok: 1996
+    udalost: >-
+      Chata prošla kompletní rekonstrukcí ve stylu švýcarských
+      horských chat.
+    zdroj: >-
+      vlastní web chatamacocha.cz i Kudy z nudy (čteno 10. 8. 2026) —
+      „v roce 1996 kompletně zrekonstruována ve stylu švýcarských
+      horských chat".
+
+zajimavosti:
+  - text: >-
+      Chata stojí pár kroků od horního můstku Macochy — návštěvník
+      propasti má restauraci s kachlovými kamny přímo na hraně
+      nejznámějšího místa Moravského krasu, a kdo přespí, má propast
+      ráno sám pro sebe.
+    kategorie: jine
+    zdroj: >-
+      poloha u horního můstku: vlastní web (kontakty) +
+      levneubytovani.net (adresa); „jen pár kroků od stejnojmenné
+      propasti": Kudy z nudy (čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Turistická chata z roku 1895 přímo u horního můstku propasti
+  Macocha — šedesát lůžek, restaurace s kachlovými kamny a terasou.
+  Po rekonstrukci v roce 1996 vypadá jako švýcarská horská chata,
+  tradici má ale od časů, kdy turistika v Moravském krasu začínala.
+text:
+  - >-
+    Ať se v Moravském krasu vydáte kamkoli, značky se nakonec
+    stočí k Macoše — a chata u jejího horního můstku stojí od roku
+    1895 — dnes po kompletní
+    rekonstrukci z roku 1996, která jí dala vzhled švýcarské horské
+    chaty. Návštěvník propasti tu má restauraci s kachlovými kamny
+    a venkovní terasu na dosah vyhlídek.
+  - >-
+    Spí se v šedesáti lůžkách v pokojích od dvoulůžkových po
+    jedenáctilůžkový a ve třech apartmánech — a nocleh u propasti má
+    své kouzlo: ranní můstky patří hostům chaty dřív, než dorazí
+    denní proud. Provozuje ji blanenská společnost S.M.K.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu chaty, z Kudy
+    z nudy a z ubytovacího katalogu. Otvírací doba restaurace
+    doložená není — před cestou mimo sezónu je jistější zavolat.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — restaurace s kachlovými kamny a terasou,
+      „chata se stoletou tradicí", rekonstrukce 1996, kontakty,
+      poloha horní můstek (načteno 10. 8. 2026)
+    url: https://www.chatamacocha.cz/
+  - popis: >-
+      Kudy z nudy — stavba 1895, rekonstrukce 1996 ve švýcarském
+      stylu, 60 lůžek (čteno 10. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/chata-macocha
+  - popis: >-
+      levneubytovani.net — GPS, výška 490 m, adresa Vilémovice 85,
+      skladba pokojů a apartmánů, provozovatel S.M.K., a.s. (čteno
+      10. 8. 2026)
+    url: https://www.levneubytovani.net/ubytovani/chata-macocha/
+interniPoznamky: >-
+  Povýšeno z data/kandidati/moravsky-kras/chata-macocha.yaml rešerší
+  (10. 8. 2026) — PRVNÍ PROFIL MORAVSKÉHO KRASU (oblast založena
+  publikačně současně). Klíč zařazení: chata s restaurací pro proud
+  návštěvníků u vrcholové atrakce, kontinuita od 1895 — role na
+  trase i turistická minulost nesporné.
+
+  K OVĚŘENÍ (DATA-04): otvírací doba restaurace; kdo chatu 1895
+  postavil (spolek? — Wikipedie ze sandboxu cache-only); vztah
+  S.M.K. ke Správě jeskyní; režim restaurace pro neubytované
+  výslovně. Fotku dodá běh DATA-02, až oblast dostane okno.
