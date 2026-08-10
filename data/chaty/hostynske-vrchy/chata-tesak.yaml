@@ -1,0 +1,186 @@
+# Chata Tesák — povýšena z ručního kandidáta rešerší (10. 8. 2026).
+# PRVNÍ PROFIL HOSTÝNSKÝCH VRCHŮ (oblast založena publikačně tímto
+# profilem). Legendární chata z roku 1934 vyhořela 29. 1. 2022;
+# provoz běží v provizoriu, obnova čeká na peníze. Vše verified: false.
+
+nazev: Chata Tesák
+slug: chata-tesak
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: hostynske-vrchy
+
+aliasy:
+  - nazev: Chata Na Tesáku
+    poznamka: podoba jména v tisku
+  - nazev: Restaurace Chata Tesák
+    poznamka: jméno provizorního provozu po požáru
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.366877
+lng: 17.77372
+obec: Rajnochovice
+overeniLokace:
+  source: >-
+    GPS 49.366877, 17.77372 a adresa „Tesák 299, Rajnochovice 76871,
+    okr. Kroměříž": kontaktní stránka provozu
+    restauracetesak.websnadno.cz (čteno 10. 8. 2026) — objekt není
+    v našich OSM exportech (Hostýnské vrchy nemají vyhledávací okno).
+    Chata stojí na sedle Tesák, turistickém středisku Hostýnských
+    vrchů mezi údolími Bystřičky a Juhyně (Turistika.cz). Nadmořskou
+    výšku samotné chaty žádný načtený pramen nevede — nezapisuje se
+    (prameny uvádějí 640 m pro středisko a 685 m pro sousední
+    kamennou chatu — ROZPTYL, přiznaný). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Chata z roku 1934 do základů vyhořela 29. 1. 2022 (Kroměřížský
+    deník) — budova s pokoji zanikla. Provizorní provoz je jen
+    občerstvení (Kudy z nudy: „občerstvení ve vedlejší chatě Meopta
+    a venkovní stánek"; Kroměřížský deník 2025: dřevěné provizorium).
+    Nocleh po obnově — zapsáno ne.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chatatesak.cz (čteno 10. 8. 2026): jídelní lístek,
+    kančí jídla, sekce pro skupiny. Kroměřížský deník (2025): provoz
+    „zůstává otevřená v provizorních podmínkách" v dřevěném
+    provizoriu. Kudy z nudy: guláš, řízek. Otvírací doba doložená
+    není — před cestou ověřit.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 732 513 902'
+  email: restauracetesak@centrum.cz
+  web: https://www.chatatesak.cz/
+overeniProvoz:
+  source: >-
+    Vlastní web chatatesak.cz (čteno 10. 8. 2026): telefon
+    +420 732 513 902 (web vede i e-mail ales@jhj.cz). Kontaktní
+    stránka restauracetesak.websnadno.cz: e-mail
+    restauracetesak@centrum.cz, provozovatelé M. Nakládal
+    (IČ 12728861) a A. Nakládalová (IČ 06552072). Majitel Miroslav
+    Nakládal z Přerova (Kroměřížský deník). Sezónnost neuvedena;
+    deník 2025 zmiňuje provoz přes Nový rok.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1934
+    udalost: >-
+      Na sedle Tesák vznikla turistická chata — na osm desetiletí
+      symbol Hostýnských vrchů a zázemí největšího lyžařského
+      areálu oblasti.
+    zdroj: >-
+      Kudy z nudy (čteno 10. 8. 2026) — stavba 1934; „jeden ze
+      symbolů" Hostýnských vrchů: ČT24. Kdo chatu postavil (KČST?),
+      načtené prameny nevedou — nedomýšlí se.
+  - rok: 2022
+    udalost: >-
+      V noci na sobotu 29. ledna chata do základů vyhořela — příčinou
+      byla technická závada na elektroinstalaci nebo spotřebiči,
+      škoda kolem 12 milionů korun. Veřejná sbírka vynesla za první
+      rok bezmála dva miliony.
+    zdroj: >-
+      Kroměřížský deník (čteno 10. 8. 2026) — požár 29. 1. 2022 kolem
+      1:30, dvě verze technické závady (mluvčí hasičů Roman
+      Žemlička), škoda 12 mil.; sbírka „bezmála dva miliony korun":
+      ČT24 (únor 2023).
+  - rok: 2025
+    udalost: >-
+      Obnova má projekt i stavební povolení, stavbě ale chybí peníze
+      — majitel uvádí, že schází nejméně 10 milionů korun; provoz
+      zatím běží v dřevěném provizoriu.
+    zdroj: >-
+      Kroměřížský deník, článek ke třem letům od požáru (2025, čteno
+      10. 8. 2026) — „projekt i stavební povolení na novou turistickou
+      chatu k dispozici", „Stále nám chybí nejméně 10 milionů korun".
+
+zajimavosti:
+  - text: >-
+      Po požáru se kolem Tesáku semkl celý kraj: do dvou dnů se ve
+      sbírce sešlo přes 300 tisíc, za rok bezmála dva miliony korun,
+      a lidé nosili i vybavení. Majitel to shrnul slovy: „Podpora
+      a účast lidí je něco neskutečného."
+    kategorie: jine
+    zdroj: >-
+      přes 300 tisíc za dva dny: Blesk.cz; bezmála dva miliony za
+      rok: ČT24; citát majitele: Kroměřížský deník (vše čteno
+      10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Legendární chata na sedle Tesák, srdci Hostýnských vrchů, stála od
+  roku 1934 — v lednu 2022 do základů vyhořela. Občerstvení dnes běží
+  v provizoriu, na novou chatu je projekt i povolení a sbírka trvá;
+  Tesák zůstává křižovatkou Hostýnské magistrály.
+text:
+  - >-
+    Tesák je pro Hostýnské vrchy tím, čím bývá pro hory hlavní sedlo:
+    křižovatka hřebenové magistrály, lyžařský areál a chata, ke které
+    se sjížděl celý kraj. Dřevěná chata z roku 1934 tu sloužila
+    téměř devadesát let — v noci 29. ledna 2022 ale do základů
+    vyhořela; na vině byla technická závada.
+  - >-
+    Konec to ale není. Provoz jede dál v dřevěném provizoriu — kančí
+    speciality, guláš i řízek — a na obnovu chaty se složil celý
+    kraj: sbírka vynesla za první rok bezmála dva miliony korun.
+    Projekt i stavební povolení jsou hotové, stavba čeká na zbytek
+    peněz. Nocleh chata zatím nenabízí; přespat se dá v sousední
+    kamenné chatě KČT.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu chaty,
+    z regionálního tisku a z Kudy z nudy. Otvírací doba provizoria
+    doložená není — před cestou zavolat. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — jídelní lístek, kančí jídla, transparentní
+      účet sbírky na obnovu, kontakty (načteno 10. 8. 2026)
+    url: https://www.chatatesak.cz/
+  - popis: >-
+      Kroměřížský deník — požár 29. 1. 2022 (technická závada, škoda
+      12 mil.), stav obnovy 2025 (povolení ano, chybí ≥10 mil.),
+      majitel Miroslav Nakládal (čteno 10. 8. 2026)
+    url: https://kromerizsky.denik.cz/zpravy_region/tri-roky-pozar-chata-tesak-stavba-nova-povoleni-penize-2025.html
+  - popis: >-
+      ČT24 — sbírka bezmála dva miliony za první rok (únor 2023)
+    url: https://ct24.ceskatelevize.cz/clanek/komiks/vyhorela-chata-tesak-diky-stedrosti-darcu-znovu-vstane-z-popela-10818
+  - popis: >-
+      Kudy z nudy — stavba 1934, provizorní občerstvení (chata
+      Meopta, stánek), guláš a řízek (čteno 10. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/chata-tesak-v-rajnochovicich
+  - popis: >-
+      restauracetesak.websnadno.cz — GPS, adresa Tesák 299,
+      provozovatelé Nakládalovi (čteno 10. 8. 2026)
+    url: https://restauracetesak.websnadno.cz/Kontakt.html
+interniPoznamky: >-
+  Povýšeno z data/kandidati/hostynske-vrchy/chata-tesak.yaml rešerší
+  (10. 8. 2026) — PRVNÍ PROFIL HOSTÝNSKÝCH VRCHŮ (oblast založena
+  publikačně současně). Klíč zařazení: legendární chata na sedle
+  s magistrálou, občerstvení pro veřejnost běží (provizorium) —
+  stav v-provozu, protože podnik žije; budova sama zanikla, což
+  profil přiznává v každém poli.
+
+  JMENOVCI NA SEDLE (zatím mimo naše data): Kamenná chata na Tesáku
+  (KČT Bystřice p. H., od 1930, 34 lůžek — KANDIDÁT k založení!),
+  Chata pod Tesákem, Rekreační středisko Tesák, chata Meopta. Až
+  vzniknou, doplnit registr jmenovců (jádro tesak). POZOR: pampeliska
+  vede „Chata Tesák" (5 osob, GPS 49.3627549, 17.7928185) — JINÝ
+  objekt (soukromý pronájem ~1,5 km JV), nepoužívat.
+
+  K OVĚŘENÍ (DATA-04): otvírací doba provizoria; kdo chatu 1934
+  postavil (KČST?); stav obnovy (sledovat — až se postaví, přepsat).
+  Výška sedla nedoložená (640 × 685 × „~721" po webech) — DATA-39.
