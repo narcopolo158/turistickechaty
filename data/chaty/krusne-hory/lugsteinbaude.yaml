@@ -1,0 +1,132 @@
+# Lugsteinbaude — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# pátá položka fronty povyšování; vzor DATA-03: OSM × VLASTNÍ WEB).
+# Gasthaus s Ferienwohnungen u Georgenfeldského rašeliniště pod
+# Lugsteinem u Zinnwaldu. Vše verified: false.
+
+nazev: Lugsteinbaude
+slug: lugsteinbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7319071
+lng: 13.746777
+obec: Altenberg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/224565781 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Adresa Hochmoorweg 28, 01773
+    Altenberg (vlastní web, čteno 10. 8. 2026) — bauda stojí
+    u Georgenfelder Hochmoor v místní části Zinnwald-Georgenfeld,
+    pod Lugsteinem. Nadmořskou výšku žádný načtený pramen číslem
+    nevede — nezapisuje se. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web lugsteinbaude.de (čteno 10. 8. 2026): Ferienwohnungen
+    (apartmány s vlastním vařením). Kapacitu číslem načtené stránky
+    nevedou — nezapisuje se.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web lugsteinbaude.de (čteno 10. 8. 2026): Gasthaus pro
+    veřejnost, út–pá 11–16, so–ne 11–17. OSM tag vede čt–ne 11–17
+    „sonst erfragen" — ROZPOR s vlastním webem, přiznaný; bereme
+    vlastní web.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Gasthaus: út–pá 11–16, so–ne 11–17; pondělí zavřeno.
+kontakty:
+  telefon: '+49 35056 22566'
+  email: info@lugsteinbaude.de
+  web: https://www.lugsteinbaude.de/
+overeniProvoz:
+  source: >-
+    Vlastní web lugsteinbaude.de (čteno 10. 8. 2026): telefon
+    035056/22566, e-mail info@lugsteinbaude.de; provozovatelé se
+    představují jen jako „Die Lugsteiner" — OSM vede Larse Kamenze
+    (node/224565781, stav dat 2026-08-09). Provoz celoroční
+    (běžkařská stopa přede dveřmi).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Historii bauda na načtených stránkách nevede. Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Bauda sama sebe vede jako nejvýše položený hostinec
+      s apartmány východního Krušnohoří — a stojí přímo
+      u Georgenfeldského vrchoviště, jednoho z nejznámějších
+      rašelinišť saské strany hor; v zimě začíná běžkařská stopa
+      rovnou přede dveřmi.
+    kategorie: jine
+    zdroj: >-
+      vlastní web lugsteinbaude.de (čteno 10. 8. 2026) — „das
+      höchstgelegene Gasthaus mit Ferienwohnungen im Osterzgebirge"
+      (tvrzení provozovatele), Georgenfelder Hochmoor, „Skiloipe
+      direkt vor der Haustür"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Gasthaus s apartmány u Georgenfeldského rašeliniště pod Lugsteinem
+  — poslední stavení Zinnwaldu před hraničním hřebenem. Kuchyně jede
+  přes oběd šest dní v týdnu, v zimě vede běžkařská stopa přímo
+  přede dveřmi; sama se vede jako nejvýše položený hostinec
+  s apartmány východního Krušnohoří.
+text:
+  - >-
+    Zinnwald-Georgenfeld je nejvyšší kout saské strany východního
+    Krušnohoří a Lugsteinbaude v něm drží krajní pozici: stojí na
+    Hochmoorwegu u naučné stezky Georgenfeldským vrchovištěm, pod
+    skalnatým Lugsteinem, pár minut od hraničního přechodu do
+    Cínovce. Sama se hlásí k titulu nejvýše položeného hostince
+    s apartmány v této části hor.
+  - >-
+    Hospoda vaří přes oběd — v týdnu do čtyř, o víkendu do pěti,
+    pondělí je zavírací den — a spí se v apartmánech s vlastním
+    vařením. V zimě je bauda nástupem na běžkařské stopy kolem
+    rašeliniště a hřebene, v létě výchozím bodem na Lugstein
+    i do vrchoviště.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu baudy; polohu
+    a kontakty nese OpenStreetMap. Otvírací doba se mezi webem
+    a mapovými daty liší — bereme web, před cestou v týdnu ale
+    raději zavolat. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web baudy — Gasthaus s Ferienwohnungen, otvírací doba,
+      adresa Hochmoorweg 28, kontakty, poloha u Georgenfelder
+      Hochmoor (načteno 10. 8. 2026)
+    url: https://www.lugsteinbaude.de/
+  - popis: OpenStreetMap (GPS, provozovatel, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/node/224565781
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/lugsteinbaude.yaml rešerší
+  (10. 8. 2026) — pátá položka fronty povyšování. Klíč zařazení:
+  hostinec pro veřejnost na kraji hřebene u naučné stezky
+  rašeliništěm; nocleh v apartmánech je vedlejší, klíč nese kuchyně.
+
+  K OVĚŘENÍ (DATA-04): nadmořská výška (Lugstein se běžně uvádí
+  ~890 m — NEDOLOŽENO pro baudu, nezapsáno); kapacita apartmánů;
+  historie domu (web ji nevede). Superlativ „höchstgelegene
+  Gasthaus mit Ferienwohnungen im Osterzgebirge" je tvrzení
+  provozovatele — POZOR na sousedy: Zinnwaldbaude a Hotel
+  Lugsteinhof jsou výš/níž? Nesrovnávat bez dokladu. Fotku dodá
+  příští běh DATA-02.
