@@ -1,0 +1,131 @@
+# Naturhotel Sachsenbaude — povýšen z kandidáta DATA-01 rešerší
+# (10. 8. 2026, osmá položka fronty povyšování; vzor DATA-03: OSM ×
+# VLASTNÍ WEB). Horský wellness hotel v samotě pod Fichtelbergem;
+# po dobu rekonstrukce Fichtelberghausu (III–XII/2026) ubytovává
+# jeho hosty. Vše verified: false.
+
+nazev: Naturhotel Sachsenbaude
+slug: naturhotel-sachsenbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.4186086
+lng: 12.9400192
+obec: Kurort Oberwiesenthal
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/289778388 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Adresa Fichtelbergstraße 4, 09484
+    Oberwiesenthal; „ruhige Alleinlage am Fuße des Fichtelbergs"
+    (vlastní web, čteno 10. 8. 2026). Nadmořskou výšku žádný načtený
+    pramen nevede — nezapisuje se. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web naturhotel-sachsenbaude.de (čteno 10. 8. 2026):
+    30 individuálně zařízených pokojů a suit (Doppelzimmer Komfort
+    a Premium, Suite Junior a Superior). Počet lůžek číslem pramen
+    nevede — nezapisuje se.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (čteno 10. 8. 2026): restaurace FOREST — moderní
+    sezónní kuchyně z regionálních surovin; po–út zavřeno, st–čt
+    17–21, pá 17–22, so 12–22, ne 12–21 (kuchyně končí hodinu před
+    zavřením). Režim pro neubytované web výslovně nevede — otvírací
+    doba je ale veřejně vyvěšená; před cestou ověřit.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Restaurace FOREST: st–čt 17–21, pá 17–22, so 12–22, ne 12–21;
+  pondělí a úterý zavřeno.
+kontakty:
+  telefon: '+49 37348 1390'
+  email: info@naturhotel-sachsenbaude.de
+  web: https://naturhotel-sachsenbaude.de/
+overeniProvoz:
+  source: >-
+    Vlastní web (čteno 10. 8. 2026): Fichtelbergstraße 4, telefon
+    +49 37348 1390, e-mail info@naturhotel-sachsenbaude.de; wellness
+    s bazénem, saunou a venkovní vířivkou. Provozovatele jménem web
+    v načtené podobě nevede. Provoz celoroční.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku domu žádný načtený pramen nevede. Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Když se vrcholový Fichtelberghaus v březnu 2026 zavřel na
+      rekonstrukci, převzala jeho hosty právě Sachsenbaude — hotel
+      v samotě pod kopcem slouží do prosince 2026 jako náhradní
+      základna pro vrchol nejvyšší hory Saska.
+    kategorie: jine
+    zdroj: >-
+      vlastní web hotel-fichtelberghaus.de (čteno 10. 8. 2026,
+      rešerše Hotelu Fichtelberghaus) — hosté do XII/2026 odkázáni
+      na „partnerský Naturhotel Sachsenbaude"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Wellness hotel v tiché samotě na úpatí Fichtelbergu — třicet
+  pokojů a suit, restaurace FOREST se sezónní kuchyní, bazén
+  a venkovní vířivka. Po dobu rekonstrukce vrcholového
+  Fichtelberghausu slouží jako jeho partnerská základna.
+text:
+  - >-
+    Sachsenbaude stojí stranou ruchu Oberwiesenthalu, na příjezdu
+    k Fichtelbergu — hotel v samotě, kde se horská poloha potkává
+    s wellness výbavou: bazén, sauna a venkovní vířivka s výhledem
+    do lesů. Spí se ve třiceti pokojích a suitách.
+  - >-
+    Restaurace FOREST vaří moderní sezónní kuchyni z regionálních
+    surovin, od středy do neděle; o víkendu už od poledne. A že jde
+    o dům s horskou rolí, potvrdil rok 2026: po dobu rekonstrukce
+    vrcholového Fichtelberghausu přebírá jeho hosty právě
+    Sachsenbaude.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu hotelu;
+    polohu nese OpenStreetMap. Historii domu web nevede. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hotelu — 30 pokojů a suit, restaurace FOREST
+      s otvírací dobou, wellness, kontakty, poloha (načteno
+      10. 8. 2026)
+    url: https://naturhotel-sachsenbaude.de/
+  - popis: >-
+      hotel-fichtelberghaus.de — partnerství po dobu rekonstrukce
+      (hosté do XII/2026), čteno 10. 8. 2026
+    url: https://www.hotel-fichtelberghaus.de/
+  - popis: OpenStreetMap (GPS; ODbL)
+    url: https://www.openstreetmap.org/node/289778388
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/naturhotel-sachsenbaude.yaml
+  rešerší (10. 8. 2026) — osmá položka fronty povyšování. Klíč
+  zařazení: horský hotel s veřejně vyvěšenou restaurací na úpatí
+  Fichtelbergu (vzor horsky-hotel-lesna) + doložená role partnera
+  vrcholového Fichtelberghausu během rekonstrukce. Hraniční případ
+  (wellness dům) — kdyby Michal rozhodl jinak, snadno se stáhne.
+
+  OSM URL node/289778388 ověřena gropem proti kandidátovi (první
+  zápis byl opět vymyšlený — chyba chycena kontrolním grepem;
+  tahle třída chyb je u OSM URL systematická, grep VŽDY). K OVĚŘENÍ (DATA-04):
+  výška, historie domu, provozovatel, režim FOREST pro neubytované.
+  Fotku dodá příští běh DATA-02.
