@@ -1,0 +1,196 @@
+# Hotel Bouřňák — Chata Karla Líma. Publikovaný profil Krušných hor
+# (10. 8. 2026), ŠESTÝ profil korpusu založený bez OSM kandidáta:
+# objekt v exportu DATA-01 chybí (nejspíš proto, že je dlouhodobě
+# zavřený — OSM ho nevede jako turistické ubytování). Katalogová mezera
+# HUT-0112 tím dostává záznam — a KOREKCI: katalog vede „aktivní",
+# prameny dokládají dům prázdný a čekající na přestavbu.
+# Vše verified: false.
+
+nazev: Hotel Bouřňák
+slug: hotel-bournak
+zeme: cz
+typ: obsluhovana
+stav: mimo-provoz
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Chata Karla Líma
+    poznamka: >-
+      jméno z přestavby v 70. letech, dnes součást plného názvu
+      „Hotel Bouřňák – Chata Karla Líma"
+  - nazev: Chata Emanuela Hrubého
+    poznamka: původní jméno 1930–1948, po předsedovi KČST
+  - nazev: Chata na Bouřňáku
+    poznamka: jméno po vyvlastnění KČST v roce 1948
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.6856338
+lng: 13.7075767
+vyska: 869
+obec: Moldava
+overeniLokace:
+  source: >-
+    GPS 50.6856338, 13.7075767: poznejdomy.cz (čteno 10. 8. 2026) —
+    objekt v našem exportu OSM chybí, souřadnice jsou z databáze domů
+    s příběhem. Výška 869 m: vrchol Bouřňáku shodně katalog
+    (HUT-0112), Kudy z nudy i krusnehory.cz. OBEC — ROZPOR, přiznaný:
+    adresa „Nové Město 74, Moldava" (poznejdomy.cz) × katalog vede
+    Mikulov; vrchol leží na hranici katastrů, zapsána obec z adresy.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Poznejdomy.cz (stav 2023, čteno 10. 8. 2026): „objekt dlouhodobě
+    prázdný a chátrající". Kudy z nudy (čteno 10. 8. 2026): chata
+    v rekonstrukci, plán vlastníka počítá s apartmánovým hotelem se
+    42 apartmány. Katalog (HUT-0112) vede „aktivní, ubytování ano" —
+    to prameny nepotvrzují, katalogový údaj je zjevně zastaralý.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ne
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy (čteno 10. 8. 2026): teprve po přestavbě se „pro
+    hotelové hosty i příchozí výletníky … počítá i s novou
+    restaurací" — dnes tedy občerstvení není; nejbližší restaurace
+    dle krusnehory.cz je hotel Cepín pod vrcholem.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    Poznejdomy.cz (čteno 10. 8. 2026): vlastníkem J&T Real Estate CZ,
+    který plánuje „rozsáhlou přestavbu" s návratem původního vzhledu,
+    dostavbou apartmánů a provozem „bar, restauraci nebo wellness";
+    stav popsán k roku 2023. Kudy z nudy: v rekonstrukci, plán
+    42 apartmánů, sauna, sluneční terasa, restaurace i pro příchozí.
+    Kontakty se nezapisují — provoz neexistuje. Termín otevření žádný
+    načtený pramen nevede.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1930
+    udalost: >-
+      Klub československých turistů otevřel 8. června na vrcholu
+      Stürmer (Bouřňák) první českou turistickou chatu v Krušných
+      horách — slavnosti se účastnilo 1500 hostů. Projekt architekta
+      Josefa Honicha, stavba za zhruba milion korun začala koncem
+      dvacátých let; nocleh stál členy KČST 5,50 Kč. Chata nesla
+      jméno předsedy klubu Emanuela Hrubého. O stavbu se zasadil
+      učitel Karel Lím, průkopník českého lyžování v Krušných horách.
+    zdroj: >-
+      poznejdomy.cz (čteno 10. 8. 2026) — stavba 1928–1930, Honich,
+      otevření 8. 6. 1930 s 1500 hosty, ceny, jméno Hrubého, „první
+      českou turistickou chatou v Krušných horách"; Kudy z nudy —
+      začátek stavby červen 1927, cena „asi 1 milion korun",
+      otevření 8. června 1930, role Karla Líma (1875–1958). Začátek
+      stavby se v pramenech liší (1927 × 1928) — nerozhodujeme.
+  - rok: 1948
+    udalost: >-
+      KČST byl zrušen, objekty vyvlastněny a chata přejmenována na
+      Chatu na Bouřňáku.
+    zdroj: poznejdomy.cz (čteno 10. 8. 2026)
+  - rok: 1975
+    udalost: >-
+      Na chatě byla odhalena pamětní deska Karla Líma; při
+      rekonstrukci v 70. letech dostala místo ploché střechy sedlovou
+      a Límovo jméno.
+    zdroj: >-
+      deska od 1975: krusnehory.cz (čteno 10. 8. 2026); přestavba
+      střechy a přejmenování v 70. letech: poznejdomy.cz.
+
+zajimavosti:
+  - text: >-
+      Byla to první česká turistická chata v Krušných horách — do
+      té doby stavěly na hřebeni jen německé spolky. Prosadil ji
+      Karel Lím, učitel a první český lyžař Krušných hor.
+    kategorie: stari
+    zdroj: >-
+      poznejdomy.cz — „první českou turistickou chatou v Krušných
+      horách"; krusnehory.cz — Lím „prvním českým lyžařem" v Krušných
+      horách (obojí čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  První česká turistická chata Krušných hor stojí na vrcholu Bouřňáku
+  (869 m) od roku 1930 — a právě teď je zavřená: dům, který KČST
+  otevřel za účasti patnácti set hostí, léta chátral a čeká na
+  přestavbu, jež má vrátit prvorepublikovou tvář a přidat restauraci
+  i pro kolemjdoucí.
+text:
+  - >-
+    O chatu na Stürmeru, česky Bouřňáku, se zasadil učitel Karel Lím,
+    průkopník českého lyžování v Krušných horách — v kraji, kde do té
+    doby stavěly turistické domy jen německé spolky. Klub
+    československých turistů ji podle projektu Josefa Honicha
+    postavil za zhruba milion korun a 8. června 1930 slavnostně
+    otevřel; přišlo patnáct set lidí a nocleh stál člena klubu pět
+    korun padesát.
+  - >-
+    Jméno chata měnila s dějinami: nejdřív nesla jméno předsedy KČST
+    Emanuela Hrubého, po zrušení klubu v roce 1948 se říkalo prostě
+    Chata na Bouřňáku a od přestavby v sedmdesátých letech — kdy
+    plochou střechu nahradila sedlová — nese jméno Karla Líma, jehož
+    pamětní deska tu visí od roku 1975.
+  - >-
+    Dnes je dům zavřený a prázdný. Vlastník plánuje rozsáhlou
+    přestavbu na apartmánový hotel s návratem původního vzhledu;
+    počítá se s dvaačtyřiceti apartmány, saunou a restaurací
+    otevřenou i příchozím výletníkům. Dokud se tak nestane, najde
+    turista občerstvení pod vrcholem — a na Bouřňák se chodí hlavně
+    za výhledem a v zimě za šesti sjezdovkami areálu, na který
+    navazuje krušnohorská běžecká síť.
+  - >-
+    Údaje na téhle stránce pocházejí z databáze domů s příběhem,
+    z Kudy z nudy a z regionálních webů; katalogový údaj o aktivním
+    provozu prameny nepotvrzují. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      poznejdomy.cz — historie (1928–1930, Honich, otevření 8. 6. 1930,
+      jména chaty, vyvlastnění 1948, přestavba v 70. letech), stav
+      k 2023 (prázdný, chátrající), vlastník a plán přestavby, GPS
+      (čteno 10. 8. 2026)
+    url: https://poznejdomy.cz/domy/detail/619-chata-karla-lima
+  - popis: >-
+      Kudy z nudy — Karel Lím, začátek stavby 1927, cena, otevření
+      8. 6. 1930, rekonstrukce a plán 42 apartmánů s restaurací,
+      sjezdovky a běžecká síť (čteno 10. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/vrchol-bournak-v-krusnych-horach
+  - popis: >-
+      krusnehory.cz — pamětní deska Karla Líma od 1975, „první český
+      lyžař", restaurace hotelu Cepín poblíž (čteno 10. 8. 2026)
+    url: https://www.krusnehory.cz/cs/turisticke-cile/bournak-869-m-2295.html
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0112
+      (869 m, Mikulov, „aktivní" — zastaralé)
+    url: https://nocleh.kct.cz/chaty
+interniPoznamky: >-
+  Založeno BEZ OSM kandidáta (10. 8. 2026, šestý takový profil
+  korpusu) — objekt v exportech DATA-01 pro Krušné hory vůbec není,
+  nejspíš proto, že OSM zavřený dům nevede jako turistické ubytování.
+  GPS z poznejdomy.cz. Katalogová mezera HUT-0112 tím zavřena —
+  a katalogový stav „aktivní" KORIGOVÁN (poznejdomy k 2023: prázdný,
+  chátrající; Kudy z nudy: v rekonstrukci). Stav mimo-provoz, vzor
+  Trangoška: nic se nedomýšlí, kontakty se nezapisují.
+
+  KLÍČ ZAŘAZENÍ: turistická minulost nesporná (první česká chata
+  Krušných hor, KČST 1930) — přesně případ, pro který Michal 4. 8.
+  klíč rozšířil (DATA-25). Až přestavba skončí, profil se překlopí
+  na v-provozu; plán restaurace „i pro příchozí" je v pramenech.
+
+  ROZPORY: začátek stavby 1927 (Kudy z nudy) × 1928 (poznejdomy);
+  obec Moldava (adresa) × Mikulov (katalog). K OVĚŘENÍ (DATA-04):
+  aktuální stav přestavby a termín otevření; zda J&T Real Estate CZ
+  je stále vlastník. Fotku dodá příští běh DATA-02 (historické snímky
+  možná FOTO-01). Do OSM objekt zapsat nemůžeme my — až tam přibude,
+  přepnout GPS na OSM.

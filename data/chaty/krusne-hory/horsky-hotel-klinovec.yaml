@@ -1,0 +1,209 @@
+# Horský hotel Klínovec — publikovaný profil Krušných hor (10. 8. 2026),
+# SEDMÝ profil korpusu založený bez OSM kandidáta (objekt v exportu
+# DATA-01 chybí — zavřený hotel OSM nevede jako turistické ubytování).
+# Katalogová položka HUT-0114 „Chata na Klínovci" (jistota C, „ověřit")
+# PŘIŘAZENA SEM s poznámkou — žádný jiný živý provoz toho jména na
+# vrcholu rešerše nenašla. Vše verified: false.
+
+nazev: Horský hotel Klínovec
+slug: horsky-hotel-klinovec
+zeme: cz
+typ: obsluhovana
+stav: mimo-provoz
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Chata na Klínovci
+    poznamka: >-
+      katalogové jméno (HUT-0114); katalogová položka s provozem
+      „nejistý/omezený" téměř jistě míří na vrcholový komplex hotelu
+      s rozhlednou
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.3961091
+lng: 12.967523
+vyska: 1244
+obec: Jáchymov
+overeniLokace:
+  source: >-
+    GPS 50.3961091, 12.967523 a adresa Jáchymov 1016: poznejdomy.cz
+    (čteno 10. 8. 2026) — objekt v našem exportu OSM chybí. Výška
+    1244 m: Kudy z nudy („1244 m n.m.") i katalog (HUT-0114) — vrchol
+    Klínovce, nejvyšší hory Krušných hor. Obec Jáchymov: adresa
+    i katalog — sedí. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Poznejdomy.cz (čteno 10. 8. 2026): hotel dlouhodobě chátral
+    a zůstává uzavřen; v roce 2023 pronajal Boží Dar objekt
+    Sokolovské uhelné na 25 let, oprava se odhaduje na přibližně
+    420 milionů Kč a „v roce 2028 by mohl objekt opětovně sloužit
+    veřejnosti". Katalog (HUT-0114): ubytování ne — sedí.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ne
+overeniObcerstveni:
+  source: >-
+    Žádný načtený pramen nedokládá dnešní občerstvení v samotném
+    hotelu — Kudy z nudy zmiňuje restauraci a hostinské místnosti jen
+    v historickém kontextu. Katalogové „stravování ano" (HUT-0114,
+    jistota C s poznámkou „ověřit") se nejspíš týká provozů
+    lyžařského areálu na vrcholu, ne hotelu — nedomýšlí se, zapsáno
+    ne. Rozhledna vedle hotelu je přístupná denně 9–17
+    (poznejdomy.cz).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    Poznejdomy.cz (čteno 10. 8. 2026): vlastníkem město Boží Dar (od
+    srpna 2003), od 2023 pronájem Sokolovské uhelné na 25 let, možné
+    otevření veřejnosti 2028. Kontakty se nezapisují — hotelový
+    provoz neexistuje. Rozhledna po rekonstrukci 2012–13 otevřená
+    9–17.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1884
+    udalost: >-
+      Krušnohorský spolek z Jáchymova (založen v květnu 1880) otevřel
+      3. srpna na vrcholu sedmnáctimetrovou kamennou rozhlednu podle
+      projektu stavitele Josefa Petera.
+    zdroj: >-
+      Kudy z nudy (čteno 10. 8. 2026) — spolek 1880, výška věže 17 m,
+      otevření 3. 8. 1884; projektant Josef Peter poznejdomy.cz.
+  - rok: 1893
+    udalost: >-
+      Na popud starosty spolku doktora Langhanse postavil stavitel
+      Karl Schöter u rozhledny malé pohostinství; roku 1900 vyrostl
+      vedle hotel a 1908 výstavní hala, jejíž expozici zahájil osobně
+      císař František Josef I.
+    zdroj: >-
+      poznejdomy.cz (čteno 10. 8. 2026) — pohostinství 1893, hotel
+      1900, hala 1908, „Výstavu zahájil osobně císař František
+      Josef I."
+  - rok: 1929
+    udalost: >-
+      V hotelu vypukl rozsáhlý požár; přestavbu vedl stavitel Rehne.
+      Sál dostal kazetový strop se znaky obcí a měst pod Klínovcem.
+    zdroj: >-
+      poznejdomy.cz (čteno 10. 8. 2026) — požár 1929 a přestavba;
+      kazetový strop se znaky Kudy z nudy.
+  - rok: 2013
+    udalost: >-
+      Po letech chátrání celého komplexu byla rozhledna v letech
+      2012–13 zrekonstruována a znovu zpřístupněna; hotel zůstal
+      zavřený.
+    zdroj: >-
+      poznejdomy.cz — rekonstrukce rozhledny 2012–2013, otevřeno
+      9–17; Kudy z nudy — „od roku 2013 je znovu nádherná kamenná
+      stavba přístupná" (obojí čteno 10. 8. 2026).
+  - rok: 2023
+    udalost: >-
+      Město Boží Dar pronajalo objekt Sokolovské uhelné na 25 let;
+      oprava za odhadovaných 420 milionů má hotel do roku 2028 vrátit
+      veřejnosti.
+    zdroj: poznejdomy.cz (čteno 10. 8. 2026)
+
+zajimavosti:
+  - text: >-
+      Klínovec je s 1244 metry nejvyšší horou Krušných hor — výš než
+      protější saský Fichtelberg, jehož 1214 m dělá „střechu Saska".
+    kategorie: vyska
+    zdroj: >-
+      1244 m: katalog (HUT-0114) i Kudy z nudy; srovnání je aritmetika
+      proti hodnotě Fichtelbergu („Der Fichtelberg ist mit 1214 m der
+      höchste Berg Sachsens", tourmedia-service.de, čteno 10. 8. 2026
+      v rešerši Fichtelberghausu) — nejvyšší hodnota Krušných hor
+      v katalogu je právě klínovecká
+  - text: >-
+      Hotelový sál skrývá kazetový strop se znaky všech obcí a měst
+      pod Klínovcem — památka na éru, kdy byl vrcholový komplex
+      výkladní skříní Krušnohorského spolku a výstavu v jeho hale
+      zahajoval sám císař.
+    kategorie: jine
+    zdroj: >-
+      Kudy z nudy — „hotelový sál s unikátním kazetovým stropem,
+      najdete na něm znaky všech obcí a měst pod Klínovcem"; císař
+      1908 poznejdomy.cz (obojí čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Vrcholový komplex nejvyšší hory Krušných hor: kamenná rozhledna
+  z roku 1884, hostinec z 1893 a hotel z 1900, kde výstavu zahajoval
+  císař. Rozhledna je po rekonstrukci zase přístupná, hotel zůstává
+  zavřený — otevřít by se mohl po velké opravě kolem roku 2028.
+text:
+  - >-
+    Klínovecký komplex psal dějiny krušnohorské turistiky: rozhlednu
+    otevřel jáchymovský Krušnohorský spolek už v roce 1884, o devět
+    let později k ní přibylo pohostinství, v roce 1900 hotel a roku
+    1908 výstavní hala, jejíž expozici zahájil osobně František
+    Josef I. Po požáru v roce 1929 dostal hotel dnešní podobu — včetně
+    sálu s kazetovým stropem, na němž jsou znaky obcí a měst pod
+    horou.
+  - >-
+    Druhá půlka dvacátého století a divoká privatizace komplexu
+    nesvědčily; město Boží Dar ho převzalo v roce 2003 a nejdřív
+    zachránilo rozhlednu, která je od roku 2013 znovu přístupná,
+    denně od devíti do pěti. Hotel sám je pořád zavřený — od roku
+    2023 ho má na pětadvacet let pronajatý průmyslový nájemce
+    a oprava odhadovaná na stovky milionů by ho mohla kolem roku 2028
+    vrátit veřejnosti.
+  - >-
+    Na vrchol dnes vede lanovka i silnice a funguje tu velký lyžařský
+    areál; občerstvení v samotném hotelu ale nečekejte — dokud
+    přestavba neskončí, je vrcholová budova jen kulisou výhledu
+    z ochozu rozhledny na vrcholu v 1244 metrech.
+  - >-
+    Údaje na téhle stránce pocházejí z databáze domů s příběhem
+    a z Kudy z nudy; katalogovou položku s nejistým provozem
+    přiřazujeme tomuto komplexu. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      poznejdomy.cz — historie (rozhledna 1884, pohostinství 1893,
+      hotel 1900, hala 1908, požár 1929), stav (rozhledna po
+      rekonstrukci 2012–13 otevřená 9–17, hotel zavřený), vlastník
+      Boží Dar, pronájem Sokolovské uhelné 2023, výhled na otevření
+      2028, GPS (čteno 10. 8. 2026)
+    url: https://poznejdomy.cz/domy/detail/774-horsky-hotel-klinovec
+  - popis: >-
+      Kudy z nudy — Krušnohorský spolek 1880, otevření rozhledny
+      3. 8. 1884, výška věže 17 m, kazetový strop, přístupnost od
+      2013, výška hory 1244 m (čteno 10. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/rozhledna-s-horskym-hotelem-na-klinovci
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0114
+      „Chata na Klínovci" (1244 m, Jáchymov, bez ubytování, provoz
+      nejistý/omezený, jistota C)
+    url: https://nocleh.kct.cz/chaty
+interniPoznamky: >-
+  Založeno BEZ OSM kandidáta (10. 8. 2026, sedmý takový profil
+  korpusu) — GPS z poznejdomy.cz. Katalogová položka HUT-0114 „Chata
+  na Klínovci" (jistota C, „ověřit") PŘIŘAZENA tomuto komplexu:
+  žádný jiný objekt toho jména na vrcholu rešerše nenašla a katalogový
+  popis (bez ubytování, stravování „ano" s nejistým provozem) odpovídá
+  vrcholu s otevřenou rozhlednou a zavřeným hotelem. Kdyby Michal
+  našel doklad, že položka míří na jiný objekt (např. provoz
+  lyžařského areálu), přiřazení se přepíše — vzor HUT-0158.
+
+  Stav mimo-provoz drží HOTEL (rozhledna je otevřená — do FAQ oblasti;
+  vzor Žalý ale tady neplatí, rozhledna nemá vlastní kandidáta).
+  Registr jmenovců: jádro „milesovka" vede chatu i rozhlednu na
+  Milešovce; „klinovec" zatím kolizi nemá (chata-barborka-klinovec je
+  katalogové jméno, ne náš objekt).
+
+  K OVĚŘENÍ (DATA-04): stav přestavby a termín; občerstvení
+  lyžařského areálu na vrcholu (samostatný objekt? kandidát?); zda
+  rozhledna drží 9–17 celoročně. Fotku dodá příští běh DATA-02,
+  historické snímky FOTO-01.
