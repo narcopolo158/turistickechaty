@@ -29,6 +29,123 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-10 (třetí blok, ~6 hodin na pokyn Michala) — Krušné hory z 2 na 148 kandidátů ve frontě a 8 profilů, DATA-38, korpus 202
+
+Michal: _„pokracuj samostatne dal, pracuj 6 hodin v kuse"_. Průběžně
+pushováno po blocích (8 commitů), CI i seed razítek po každém pushi
+zelené; deploy INFRA-01 jede na každý push, takže staging rostl s prací.
+
+**Hotovo:**
+
+**RÁNO OVĚŘENO:** workflow „DATA-05: seed razítek" i deploy na e7a1240
+doběhly zeleně — razítka (152, z toho 151 převzatých) jsou na stagingu.
+Vedlejší zjištění: token sessions NEMÁ právo `actions:write` (dispatch
+přes API vrací 403) — kliky na workflow zůstávají Michalovi.
+
+**TRIÁŽ KRUŠNÝCH HOR, DRUHÝ PRŮCHOD (224 → 146):** 79 pronájmů z koše
+MIMO KLÍČ vyřazeno s dokladem u každého (tag tourism=chalet + web
+pronájmu / jméno Ferienhof-Gästewohnung-Haus 1–7 / provozovatel-fyzická
+osoba). 12 nejednoznačných vědomě ponecháno na čtení (Kur-Cafe Laubert,
+Landgasthof Frischhütte, Berggasthof Neu-Friedrichsruh, Forsthaus
+Sayda, Naturschutzzentrum, Schanzenbaude, Hotelbaude Berg-Kristall,
+Gästehaus Meierbaude, Haus Wiesenbaude, Wanderhütte, Slovanka, Anton
+Gunther — poslední dva jmenovci/božídarská jména s možnou turistickou
+minulostí). Registr jmenovců nedotčen.
+
+**OSM PROFILŮ ZA BLOK, korpus 202.** Krušné hory z 0 na 8 profilů,
+katalog oblasti 8/10:
+
+- **Komáří vížka** (HUT-0113, první profil oblasti): budova s věží 1857
+  (Clary-Aldringen) na místě hornické zvonice z pol. 16. století;
+  7 pokojů/19 lůžek dle vlastního webu (rozpor s Kudy z nudy 11/27
+  přiznán); lanovka 1952 z Bohosudova — 2 348 m, nejdelší sedačková bez
+  mezistanice v ČR.
+- **Fichtelberghaus** (HUT-0293, A): kontinuita od 1889, požár
+  25. 2. 1963, budova 1999 ve stylu 1910 — a AKTUALITA: hotel od
+  1. 3. 2026 v rekonstrukci (hosté do Sachsenbaude), restaurace
+  Erzgebirgsstuben jede dál. Slug drží tvar kandidáta (hotel-…) kvůli
+  identitě páru oblast/slug.
+- **Schwartenbergbaude** (HUT-0294, A): spolková bauda
+  Erzgebirgsvereinu 1926/27, restaurace, nocleh NE.
+- **Berggasthof Auersberg** (HUT-0297): SLABÁ SHODA ROZHODNUTA —
+  katalogové „Auersberghaus" je hostinec (way/80994674,
+  auersberghaus.de), ne vedlejší rozhledna z 1860 (kandidát
+  auersbergturm zůstává zvlášť, vzor Žalý).
+- **Horský hotel Lesná** (HUT-0110): areál s Krušnohorským muzeem,
+  arboretem a geologickým parkem; kapacita 40/15 × 49/16 a obec
+  Boleboř × Nová Ves v Horách — rozpory přiznány.
+- **Hotel Bouřňák — Chata Karla Líma** (HUT-0112, BEZ OSM kandidáta,
+  mimo-provoz): PRVNÍ ČESKÁ turistická chata Krušných hor (KČST,
+  Honich, otevřena 8. 6. 1930 před 1500 hosty; jména Hrubého → na
+  Bouřňáku → Líma). Dnes prázdná, J&T plánuje 42 apartmánů
+  s restaurací i pro příchozí. Katalogové „aktivní" KORIGOVÁNO.
+- **Horský hotel Klínovec** (HUT-0114 „Chata na Klínovci", C —
+  přiřazeno s poznámkou, vzor HUT-0158; BEZ OSM kandidáta,
+  mimo-provoz): rozhledna 1884, hostinec 1893, hotel 1900, hala 1908
+  s Františkem Josefem I., požár 1929; rozhledna od 2013 otevřená
+  9–17, hotel čeká na opravu (Boží Dar → Sokolovská uhelná 2023,
+  snad 2028). Katalog KORIGOVÁN.
+- **Kahlebergbaude** (HUT-0295): vrcholový Imbiss nad Altenbergem,
+  so–st 10–17.
+
+**DALŠÍ PROFILY: Masarykova chata na Šerlichu** (PRVNÍ PROFIL
+ORLICKÝCH HOR, vlajková loď: Fuchsova funkcionalistická chata KČT
+1924–25, sto let 2025, 54 lůžek; datum otevření 14. × 27. 9. 1925 —
+rozpor přiznán), **Domček Horskej služby na Čertovici** (rozplet sedla
+DOTAŽEN — všechny čtyři provozy mají profil; stanice HS 1968 → obnova
+17. 6. 2018, 20 lůžek, GPS z POI Cesty SNP), **Chata Opalisko**
+(fronta „NT Liptov+Opalisko" odbavena — Opalisko povýšeno, hotel
+Liptov NEPOVÝŠEN: veřejné občerstvení nedoloženo, třída jizerské
+Barbory, zapsáno do kandidáta) a **Encián na Skalnatom plese** (VT-02
+ZAVŘENA: Jurkovičova stanice lanovky 1936–37, NKP, galerie + kavárna
++ kaple 2015 + Dom hostí 14 lůžek; GPS z ubytovacího katalogu, v OSM
+budova chybí; rozpor provozovatele TDS × TOS se neslučuje).
+
+**DATA-38 HOTOVO:** druhé síto exportu — shodné jádro názvu
++ vzdálenost do `DVOJI_ENTITA_M = 50 m` proti záznamům JINÝCH oblastí
+→ nezakládat, vypsat jako „pravděpodobně druhá OSM entita". Práh
+zdůvodněn (9 m Čarták jasný, 150 m dělí sousední chatu Gírové; případy
+50–150 m projdou a chytí je kontrola kolizí). 4 testy (50 v souboru).
+
+**KOLIZE LUŽICKÉHO EXPORTU (klik Michala, +62 kandidátů) ROZHODNUTY
+MĚŘENÍM** hned po vzniku: Česká chalupa 32 758 m, Chalupa × CHALUPA
+10 862 m (druhové slovo), Kammbaude 75 424 m (hřebenová bouda —
+druhové jméno), Petrova bouda dle obcí (krkonošský profil GPS nevede),
+Jedlová 140 896 m (jméno hory v obou pohořích). Registr 63 jader.
+
+**REŠERŠNÍ NÁLEZY ZAPSANÉ DO KANDIDÁTŮ (nepovýšeno, poctivě):**
+Švýcarská bouda (signály mimo provoz: Firmy.cz „již není aktivní"
++ výskyt na prazdnedomy.cz — doklad zatím slabý), Barborka Klínovec
+(katalogová položka NENÍ kandidát chata-barbora z Českého Jiřetína;
+skutečná Barborka v Háji u Loučné je „penzion bez obsluhy"
+s restaurací přes silnici — třída jizerské Barbory), hotel Liptov
+(191 lůžek v jádru Jasné, strava jen pro hosty).
+
+**ÚKLID BACKLOGU:** odškrtnuty KONTROLA-08/09/10 (v poznámkách měly
+„HOTOVO" z 8. 8., checkboxy zůstaly) a VT-02, DATA-36, DATA-38.
+
+**Příště:** Berghotel Pöhlberg (poslední katalogový objekt KH
+s kandidátem), koš POSOUDIT Krušných hor (65 německých baud — vzor
+této session: Fichtelberghütte, Naturbaude Eschenhof…), triáž
+Lužických hor (62 kandidátů — kolize už rozhodnuté), povyšování
+z orlického katalogu (Zbójnicka Chata Zieleniec, schroniska).
+POZOR: hodně vlastních webů padá v sandboxu na „neschválené načtení"
+(PROVENANCE_REQUIRED) — agregátory a obecní weby fungují.
+
+**Otázky pro Michala:**
+
+1. Trvá dotaz z rána: **znění třetího razítkového svolení**
+   (panos-pe@volny.cz) — jméno, datum, text, případná podmínka odkazu.
+2. **Vzor Barbora** teď blokuje už tři objekty (jizerská Barbora,
+   krušnohorská Barborka Klínovec, hotel Liptov) — třída „nocleh bez
+   doloženého veřejného občerstvení". Až rozhodneš vzor, odbaví se
+   všechny najednou.
+3. **KONTROLA-11** (znění konvence o nižším čísle) čeká na tebe —
+   tři výklady jsou popsané v položce.
+4. Kliky beze změny: DATA-37 (beskydský export znovu) a DATA-01 pro
+   `jeseniky`, `javorniky-vsetinske-vrchy`, `mala-fatra`,
+   `oravska-magura`, `zapadne-tatry` — seznam drží KLIKY-PRO-MICHALA.
+
 ## 2026-08-10 (druhý blok, na pokyn Michala) — workflow pro razítka a souhlas od třetího webu
 
 Michal: _„udelej workflow pro ratitka v actions - panos-pe se taky ozval, od
