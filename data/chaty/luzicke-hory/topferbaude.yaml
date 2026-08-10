@@ -1,0 +1,158 @@
+# Töpferbaude — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# vzor DATA-03: katalog × OSM × VLASTNÍ WEB vč. stránky historie).
+# Katalogový řádek HUT-0301 (jistota A). Druhý profil Lužických hor.
+# Vše verified: false.
+
+nazev: Töpferbaude
+slug: topferbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: luzicke-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+vyska: 580
+lat: 50.8489623
+lng: 14.761668
+obec: Oybin
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/236957626 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 580 m: web obce Oybin
+    (stránka Bergbauden, čteno 10. 8. 2026); katalog (HUT-0301) vede
+    582 m — rozdíl dvou metrů se nesrovnává, zapsána hodnota obce.
+    Adresa Töpferstraße 17, 02797 Oybin: vlastní web. Bauda stojí na
+    vrcholu Töpferu nad Oybinem. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 14
+overeniNocleh:
+  source: >-
+    Vlastní web toepferbaude.de, stránka ubytování (čteno
+    10. 8. 2026): „2 Ferienzimmer für je 2 Personen (1x mit
+    Dachterrasse)" a „Wanderunterkunft für 10 Personen" — dohromady
+    14 lůžek; plně vybavená kuchyň, transportní služba z Oybina
+    k baudě a zpět. Web upozorňuje, že gastronomie slouží jen
+    v otvíracích hodinách baudy. Katalog (HUT-0301): ubytování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Web obce Oybin (čteno 10. 8. 2026): horská hospoda s výhledem na
+    trojzemí. OSM tag vede zimní režim čt–ne 10–17 (surový formát,
+    leden–březen; neověřeno). Katalog (HUT-0301): stravování ano,
+    celoročně. Vlastní web: „eine direkte gastronomische Versorgung
+    durch unsere Baude ist nur während der Öffnungszeiten möglich".
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+49 35844 72331'
+  web: https://www.toepferbaude.de/
+overeniProvoz:
+  source: >-
+    Vlastní web toepferbaude.de (čteno 10. 8. 2026): telefon
+    035844 72331, adresa Töpferstraße 17; od roku 2003 provozuje
+    rodina Golebiowských, vlastníkem je od roku 1905 město Zittau
+    (stránka historie). Katalog: provoz celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1860
+    udalost: >-
+      Ernst Adolf Nentwig z Oybina postavil na Töpferu první baudu;
+      slavnostně se otevírala 15. července s koncertem hainewaldské
+      střelecké kapely. Rozšiřovala se 1876 a roku 1881 dostala
+      sálovou budovu.
+    zdroj: >-
+      vlastní web, stránka historie (čteno 10. 8. 2026) — stavba
+      a otevření 15. 7. 1860, Nentwig, rozšíření 1876, sál 1881;
+      hostinský Emil Bär od 1875.
+  - rok: 1904
+    udalost: >-
+      Bauda po žhářském útoku vyhořela do základů — „Durch
+      Brandstiftung brennt die Baude vollständig nieder". Město
+      Žitava ji následujícího roku postavilo znovu a vlastní ji
+      dodnes.
+    zdroj: >-
+      vlastní web, stránka historie (čteno 10. 8. 2026) — požár 1904,
+      obnova městem Zittau 1905, veranda 1925.
+  - rok: 1997
+    udalost: >-
+      Po rozsáhlé renovaci se bauda 18. května znovu otevřela;
+      od roku 2003 ji provozuje rodina Golebiowských.
+    zdroj: >-
+      vlastní web, stránka historie (čteno 10. 8. 2026) — znovuotevření
+      18. 5. 1997, Golebiowští od 2003; 1973–1996 státní obchodní
+      organizace.
+
+zajimavosti:
+  - text: >-
+      Z Töpferu je výhled na trojzemí — Německo, Česko a Polsko
+      naráz; obec Oybin ho u baudy vede jako „spektakulární výhled
+      na Dreiländereck".
+    kategorie: jine
+    zdroj: web obce Oybin, stránka Bergbauden (čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bauda na Töpferu nad Oybinem slouží výletníkům od roku 1860 —
+  vyhořela, město Žitava ji roku 1905 postavilo znovu a vlastní ji
+  dodnes. Restaurace s výhledem na trojzemí, dva pokoje pro dva
+  a turistická noclehárna pro deset.
+text:
+  - >-
+    Töpferbaude patří k rané generaci baud Žitavských hor:
+    postavil ji oybinský Ernst Adolf Nentwig a otevřel 15. července
+    1860 za doprovodu střelecké kapely. Po žhářském požáru v roce
+    1904 ji hned následujícího roku obnovilo město Žitava — a jako
+    vlastník u ní zůstalo přes sto let, přes éru státních provozů
+    až k dnešní rodině nájemců.
+  - >-
+    Skalní vrchol Töpferu nabízí výhled na trojzemí Německa, Česka
+    a Polska a bauda k němu přidává kuchyni a skromný nocleh: dva
+    pokoje pro dvojice — jeden se střešní terasou — a turistickou
+    noclehárnu pro deset lidí s vybavenou kuchyňkou. Kdo nechce
+    stoupat s bagáží, tomu bauda nabízí odvoz z Oybina.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu baudy včetně
+    stránky historie a z webu obce Oybin; polohu nese OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web baudy — historie (1860, požár 1904, obnova 1905,
+      renovace 1997, Golebiowští od 2003), ubytování 2+2+10, odvoz,
+      kontakty (načteno 10. 8. 2026)
+    url: https://www.toepferbaude.de/
+  - popis: >-
+      Web obce Oybin, stránka Bergbauden — výška 580 m, výhled na
+      trojzemí (čteno 10. 8. 2026)
+    url: https://oybin.com/erleben-entdecken/bergbauden/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0301
+      (582 m, Kurort Oybin, celoročně, jistota A)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, telefon, zimní otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/way/236957626
+interniPoznamky: >-
+  Povýšeno z data/kandidati/luzicke-hory/topferbaude.yaml rešerší
+  (10. 8. 2026). Klíč zařazení: bauda s veřejnou restaurací
+  a noclehem na vyhlídkovém vrcholu, katalogový objekt HUT-0301
+  (jistota A), kontinuita služby od 1860.
+
+  ROZPOR výšky 580 (obec) × 582 (katalog) — zapsána hodnota obce.
+
+  K OVĚŘENÍ (DATA-04): letní otvírací doba (OSM vede jen zimní režim
+  čt–ne 10–17); e-mail (web vede jen telefon). Fotku dodá příští běh
+  DATA-02.

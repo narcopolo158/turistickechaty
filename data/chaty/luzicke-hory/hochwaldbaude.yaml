@@ -1,0 +1,154 @@
+# Hochwaldbaude — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# vzor DATA-03: katalog × OSM × web obce Oybin + tourmedia). PRVNÍ
+# PROFIL LUŽICKÝCH HOR (přeshraniční oblasti CZ+DE); katalogový řádek
+# HUT-0300 (jistota A). Vlastní web se nenačetl (neschválené načtení)
+# — služby nese obec a OSM. Vše verified: false.
+
+nazev: Hochwaldbaude
+slug: hochwaldbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: luzicke-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+# Výška se NEZAPISUJE: katalog vede 752 m, ale hora sama má dle
+# tourmedia-service.de 749,5 m — bauda nemůže stát výš než vrchol,
+# katalogová hodnota je podezřelá (vzorec DATA-39). Bez nezávislého
+# čísla pro budovu se pole nechává prázdné.
+lat: 50.8226024
+lng: 14.7264025
+obec: Oybin
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/24857129 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright).
+    Poloha: jižní vrchol Hochwaldu (Hvozdu) na česko-saské hranici nad
+    Oybinem. VÝŠKA — ROZPOR (vzorec DATA-39): katalog (HUT-0300)
+    752 m × hora 749,5 m dle tourmedia-service.de („zweithöchste Berge
+    im deutschen Teil des Zittauer Gebirges") — bauda nemůže být výš
+    než vrchol, číslo se nezapisuje. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Web obce Oybin, stránka Bergbauden (čteno 10. 8. 2026): tradiční
+    horská hospoda s restaurací a možností ubytování. Katalog
+    (HUT-0300): ubytování ano, celoročně. Kapacitu žádný načtený
+    pramen nevede — vlastní web se nenačetl.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Web obce Oybin (čteno 10. 8. 2026): restaurace; OSM tag vede
+    otvírací dobu denně 10–22 (surový formát, neověřeno). Katalog
+    (HUT-0300): stravování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+49 35844 70232'
+  email: info@hochwaldbaude.de
+  web: https://www.hochwaldbaude.de/
+overeniProvoz:
+  source: >-
+    Kontakty z OSM (stav dat 2026-08-09; provozovatel dle OSM Torsten
+    Grundmann). Vlastní web hochwaldbaude.de se při rešerši nenačetl
+    (neschválené načtení) — na web odkazuje i obec Oybin, doména žije.
+    Katalog: provoz celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku samotné saské baudy žádný načtený pramen nevede přesně
+# („später" po české boudě z 1853) — nedomýšlí se; boudová historie
+# hory je v zajímavosti.
+zajimavosti:
+  - text: >-
+      Hochwald — česky Hvozd — je boudová hora s příběhem na obou
+      stranách hranice: na jižním vrcholu stála od roku 1853 „česká"
+      bouda (po požáru obnovená 1878, s dřevěnou rozhlednou z 1879),
+      na severním od 1892 kamenná pětadvacetimetrová věž s vlastní
+      Turmbaude. Česká bouda musela být kolem roku 1951 zbourána —
+      saská Hochwaldbaude a Turmbaude slouží dodnes.
+    kategorie: stari
+    zdroj: >-
+      tourmedia-service.de, profil Hochwaldu (čteno 10. 8. 2026) —
+      1853 „Böhmische" Baude, obnova 1878, věž 1879, kamenná věž
+      a Turmbaude 1892, zbourání české boudy kolem 1951
+  - text: >-
+      Obec Oybin baudu uvádí jako nejvýše položenou budovu Žitavských
+      hor s kruhovým výhledem na německou i českou stranu — je to
+      tvrzení obce, vlastním měřením nepodložené.
+    kategorie: vyska
+    zdroj: >-
+      web obce Oybin, stránka Bergbauden (čteno 10. 8. 2026) —
+      „nejvýše položená budova v Zittauer Gebirge"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Saská bauda na jižním vrcholu Hvozdu, přímo na česko-německé
+  hranici nad Oybinem — restaurace otevřená denně, nocleh v podkroví
+  a kruhový výhled, který obec vede jako nejvyšší v Žitavských
+  horách. Boudová tradice tu sahá do roku 1853.
+text:
+  - >-
+    Hvozd je hraniční hora se dvěma vrcholy a dlouhou boudovou
+    historií: česká bouda tu stála od roku 1853 a zanikla po roce
+    1951, saská Hochwaldbaude na jižním vrcholu žije dodnes —
+    a o kousek dál na severním vrcholu stojí od roku 1892 kamenná
+    věž s vlastní Turmbaude. Kdo přijde po hřebeni z české strany,
+    překročí hranici pár kroků před výčepem.
+  - >-
+    Provoz je boudový, jak má být: restaurace denně od desíti do
+    večera, pokoje pro ty, kdo chtějí ráno vidět z hory východ
+    slunce. Kolik lůžek přesně bauda má, naše podklady nevedou —
+    před cestou je lepší zavolat.
+  - >-
+    Údaje na téhle stránce pocházejí z webu obce Oybin, z profilu
+    hory na tourmedia-service.de a z externího katalogu; polohu
+    a kontakty nese OpenStreetMap. Katalogová výška se rozchází
+    s výškou hory, proto ji neuvádíme. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Web obce Oybin, stránka Bergbauden — restaurace a ubytování,
+      tvrzení o nejvýše položené budově Žitavských hor (čteno
+      10. 8. 2026)
+    url: https://oybin.com/erleben-entdecken/bergbauden/
+  - popis: >-
+      tourmedia-service.de — historie baud na Hochwaldu (1853, 1878,
+      1879, 1892, zbourání české boudy ~1951), výška hory 749,5 m
+    url: https://tourmedia-service.de/aussichtsberge/hochwald-oybin
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0300
+      (Kurort Oybin, celoročně, jistota A; katalogová výška 752 m
+      v rozporu s výškou hory — nezapsána)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, kontakty, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/way/24857129
+interniPoznamky: >-
+  Povýšeno z data/kandidati/luzicke-hory/hochwaldbaude.yaml rešerší
+  (10. 8. 2026). PRVNÍ PROFIL LUŽICKÝCH HOR. Klíč zařazení: hraniční
+  bauda s restaurací a noclehem na vrcholové trase, katalogový objekt
+  HUT-0300 (jistota A), boudová kontinuita hory od 1853.
+
+  VÝŠKA NEZAPSÁNA (vzorec DATA-39): katalog 752 m × hora 749,5 m —
+  katalogové číslo nemůže sedět, nezávislý údaj pro budovu chybí.
+
+  SOUVISEJÍCÍ: hochwald-turmbaude (kandidát, koš POSOUDIT) je DRUHÁ
+  bauda téže hory u věže z 1892 — dva objekty, nepárovat; luzicke-hory
+  /hochwaldturm je věž sama (vzor Žalý: věž × bauda zvlášť). Česká
+  zaniklá bouda (1853–~1951) je kandidát na Atlas zaniklých chat.
+
+  K OVĚŘENÍ (DATA-04): vlastní web (kapacita, sezóna); jméno
+  provozovatele. Fotku dodá příští běh DATA-02.
