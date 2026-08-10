@@ -1,0 +1,174 @@
+# Turistická chata Prachov — povýšena z RUČNÍHO kandidáta rešerší
+# (10. 8. 2026; kandidát založen 27. 7. na pokyn Michala). PRVNÍ
+# PROFIL ČESKÉHO RÁJE — a první profil oblasti úrovně
+# turisticka-oblast vůbec: mimo hlavní pohoří, přesně dle rozhodnutí
+# „řekněme nahlas turistické chaty". Vše verified: false.
+
+nazev: Turistická chata Prachov
+slug: turisticka-chata-prachov
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: cesky-raj
+
+aliasy:
+  - nazev: Chata Prachov
+    poznamka: zkrácené jméno na vlastním webu
+  - nazev: Turistická chata KČT v Prachovských skalách
+    poznamka: podoba jména v turistických průvodcích
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.4685706
+lng: 15.2845011
+obec: Jičín
+overeniLokace:
+  source: >-
+    GPS 50.4685706N, 15.2845011E: kct.cz, stránka chaty (čteno
+    10. 8. 2026) — objekt zatím není v našich OSM exportech (Český
+    ráj nemá vyhledávací okno, kandidát byl ruční). Adresa „TCH
+    Prachov, Blata čp. 15, Zámostí - Blata, pošta Jičín 506 01"
+    (kct.cz i nocleh.kct.cz). OBEC: adresa vede osadu Blata (Zámostí-
+    Blata) s poštou Jičín — zapsán Jičín dle pošty, osada je v adrese;
+    přesné katastrální zařazení k ověření. Poloha „přímo u vstupu do
+    areálu Prachovských skal" (vlastní web). Nadmořskou výšku žádný
+    načtený pramen nevede — nezapisuje se. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 40
+overeniNocleh:
+  source: >-
+    Kct.cz (čteno 10. 8. 2026): „40 lůžek na pokojích třech
+    kategorií"; nocleh.kct.cz: dvou-, tří- a čtyřlůžkové pokoje,
+    sociální zařízení na chodbě, varianta „ve vlastním spacáku na
+    povlečené posteli" (ceny se mění, do prózy nejdou; sleva pro
+    členy KČT). Ubytování se psem ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Kct.cz (čteno 10. 8. 2026): „velká místnost se samoobslužným
+    výdejním a výčepním pultem", „velká restaurace s přilehlým
+    salónkem s krbem", prosklená i krytá veranda, terasa s přes
+    dvaceti stoly — stravování pro veřejnost. Nocleh.kct.cz:
+    restaurace s výdejním pultem v přízemí, snídaně a polopenze na
+    objednání. Otvírací dobu žádný načtený pramen nevede.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 774 225 193'
+  email: chata.prachov@seznam.cz
+  web: https://www.chata-prachov.cz/
+overeniProvoz:
+  source: >-
+    Kct.cz (čteno 10. 8. 2026): telefony 774 225 193 a 493 520 670,
+    e-mail chata.prachov@seznam.cz, web chata-prachov.cz. Vlastníkem
+    a provozovatelem Klub českých turistů (vlastní web: chatu KČT
+    znovu získal v roce 1991). Sezónnost výslovně neuvedena.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1922
+    udalost: >-
+      KČT koupil roku 1921 pozemek u vstupu do skal a podle plánů
+      architektů Machoně a Vlčka postavil roubenou chatu; do dnešní
+      podoby ji roku 1930 rozšířil Ing. Jaroslav Stejskal. Sté
+      výročí se slavilo roku 2024 — prameny se v počátku o dva roky
+      rozcházejí a rozpor nerozhodujeme.
+    zdroj: >-
+      vlastní web chata-prachov.cz (čteno 10. 8. 2026) — pozemek
+      1921, stavba 1922 (Machoň a Vlček), rozšíření 1930 (Ing.
+      Jaroslav Stejskal), „100 let" slaveno 2024; sté výročí v roce
+      2024 vedou i články (horydoly.cz „Turistická chata Prachov
+      slaví 100 let", Český rozhlas Hradec Králové „Už 100 let
+      stojí…").
+  - rok: 1991
+    udalost: Chata se vrátila Klubu českých turistů.
+    zdroj: >-
+      vlastní web chata-prachov.cz (čteno 10. 8. 2026) — KČT chatu
+      „vlastnit odkupem vrátil v roce 1991".
+
+zajimavosti:
+  - text: >-
+      Roubená chata stojí přímo u vstupu do skalního města — je to
+      jedna z mála prvorepublikových chat KČT, které klubu slouží
+      na původním místě a pod původním jménem dodnes.
+    kategorie: stari
+    zdroj: >-
+      poloha u vstupu a vlastnictví KČT: vlastní web + kct.cz (čteno
+      10. 8. 2026); formulace „jedna z mála" je redakční opatrnost,
+      ne statistika — počet prvorepublikových chat KČT v provozu
+      neměříme
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Roubená chata Klubu českých turistů přímo u vstupu do Prachovských
+  skal — čtyřicet lůžek, restaurace se samoobslužným pultem, krbový
+  salónek a terasa s výhledem do skal. Postavena v první republice,
+  od roku 1991 zase klubová, sté výročí oslavila v roce 2024.
+text:
+  - >-
+    Prachovské skály měly to štěstí, že jejich vstupní brána patří
+    turistům: KČT tu koupil pozemek už v roce 1921 a podle plánů
+    architektů Machoně a Vlčka postavil roubenou chatu, kterou do
+    dnešní podoby rozšířil roku 1930 Jaroslav Stejskal. Komunistické
+    dekády přečkala v cizích rukou a od roku 1991 patří zase klubu;
+    sté výročí se slavilo v roce 2024.
+  - >-
+    Provoz je stavěný na proud návštěvníků skal: velká restaurace
+    se salónkem u krbu, samoobslužný výdejní a výčepní pult pro
+    rychlé občerstvení, prosklená veranda a terasa s víc než dvaceti
+    stoly. Spí se ve čtyřiceti lůžkách ve třech kategoriích pokojů —
+    od klasických po turistickou variantu s vlastním spacákem
+    na povlečené posteli, se slevou pro členy KČT.
+  - >-
+    Český ráj není pohoří a průvodce to netvrdí — ale role chaty je
+    tu stejná jako na horách: východisko okruhů skalním městem,
+    jistota jídla a noclehu tam, kde končí značky. Právě tímhle
+    profilem se sekce Českého ráje otevírá.
+  - >-
+    Údaje na téhle stránce pocházejí z webů Klubu českých turistů
+    a z vlastního webu chaty. Rok stavby se v pramenech o dva roky
+    rozchází a rozpor přiznáváme. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      kct.cz, stránka chaty — GPS, adresa, 40 lůžek, restaurace
+      a verandy, kontakty (čteno 10. 8. 2026)
+    url: https://kct.cz/chaty/turisticka-chata-prachov/
+  - popis: >-
+      Vlastní web chaty — pozemek 1921, stavba 1922 (Machoň
+      a Vlček), rozšíření 1930 (Stejskal), návrat KČT 1991, sté
+      výročí 2024 (načteno 10. 8. 2026)
+    url: https://www.chata-prachov.cz/
+  - popis: >-
+      nocleh.kct.cz — skladba pokojů, ceny a varianty noclehu,
+      restaurace v přízemí, kontakty (čteno 10. 8. 2026)
+    url: https://nocleh.kct.cz/ubytovani/turisticka-chata-prachov
+interniPoznamky: >-
+  Povýšeno z data/kandidati/cesky-raj/turisticka-chata-prachov.yaml
+  rešerší (10. 8. 2026) — PRVNÍ PROFIL ČESKÉHO RÁJE a první profil
+  oblasti úrovně turisticka-oblast; otvírá plnění pokynu Michala
+  z 10. 8. („prohledej zbytek České republiky…"). Klíč zařazení:
+  chata KČT s restaurací pro veřejnost u vstupu do skal — role na
+  trase i turistická minulost nesporné.
+
+  ROZPOR: stavba 1922 (vlastní web, plány Machoň a Vlček) × sté
+  výročí slavené 2024 (vlastní web i články) — nerozhodnuto, oba
+  údaje vedeny. OBEC: zapsán Jičín dle pošty; osada Blata
+  (Zámostí-Blata) v adrese — sémantika pole obec je DATA-20, po
+  rozhodnutí případně přepsat. Výška nedoložena.
+
+  K OVĚŘENÍ (DATA-04): otvírací doba restaurace; nadmořská výška;
+  přesný vztah 1922/1924; razítko (chata KČT — skoro jistě má).
+  Fotku dodá příští běh DATA-02, až Český ráj dostane okno.

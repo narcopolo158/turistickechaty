@@ -1,0 +1,172 @@
+# Chata Hvězda — publikovaný profil Broumovska (10. 8. 2026), DESÁTÝ
+# profil korpusu založený bez OSM kandidáta; první profil nové
+# turistické oblasti broumovsko (pokyn Michala z 10. 8., Hvězda
+# jmenována výslovně). POZOR: chata je od září 2025 v rekonstrukci
+# a zavřená do dubna 2027 — stav mimo-provoz. Vše verified: false.
+
+nazev: Chata Hvězda
+slug: chata-hvezda
+zeme: cz
+typ: obsluhovana
+stav: mimo-provoz
+oblast: broumovsko
+
+aliasy:
+  - nazev: Turistická chata Hvězda
+    poznamka: podoba jména v regionálních průvodcích
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.566832
+lng: 16.266531
+obec: Police nad Metují
+overeniLokace:
+  source: >-
+    GPS 50°34'0.595"N, 16°15'59.511"E (přepočteno 50.566832,
+    16.266531): itras.cz (čteno 10. 8. 2026) — objekt není v našich
+    OSM exportech (Broumovsko nemá vyhledávací okno). Poloha: hrana
+    Broumovských stěn u poutního místa Hvězda; poutní místo leží
+    v 674 m n. m. (Kudy z nudy) — číslo nese místo, pro samotnou
+    chatu výška doložena není a nezapisuje se. OBEC: Hvězda stojí na
+    katastru mezi Policí nad Metují a Křinicemi — zapsána Police nad
+    Metují dle běžného uvádění přístupu, katastrální zařazení
+    k ověření (DATA-20). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Kudy z nudy (čteno 10. 8. 2026): „Od září 2025 do dubna 2027
+    probíhá rekonstrukce a je zavřeno." Před uzavřením chata nabízela
+    pokoje 3× dvoulůžkový a 1× třílůžkový a chatku 4× čtyřlůžkovou
+    (tedy 25 lůžek) — údaj vedeme jen tady, po znovuotevření se může
+    změnit.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ne
+overeniObcerstveni:
+  source: >-
+    Kudy z nudy (čteno 10. 8. 2026): zavřeno kvůli rekonstrukci do
+    dubna 2027; před uzavřením restaurace s „klasickou českou
+    kuchyní" (itras.cz o hostinci: „fortelně uvařená polévka
+    a guláš", uvnitř „voní staré dřevo a hřeje krb").
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    Kudy z nudy (čteno 10. 8. 2026): rekonstrukce od září 2025,
+    zavřeno do dubna 2027. Kontakty se nezapisují — údaje na itras.cz
+    (rodina Novákových, chatahvezda-novakovi.cz) nesou poznámku už
+    z roku 2015 a dnešní platnost je neznámá; po znovuotevření
+    dohledat aktuální provozovatele.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1733
+    udalost: >-
+      Na hraně stěn vyrostla barokní kaple Panny Marie Sněžné podle
+      návrhu Kiliána Ignáce Dientzenhofera — půdorys má tvar
+      pěticípé hvězdy a špici věže korunuje zlatá hvězda, která dala
+      místu jméno.
+    zdroj: >-
+      Kudy z nudy (čteno 10. 8. 2026) — „postavena roku 1733 dle
+      návrhu K. I. Dientzenhofera", hvězdicový půdorys, zlatá hvězda.
+  - rok: 1856
+    udalost: >-
+      Broumovský klášter nechal z rozhodnutí a nákladem opata
+      J. N. Rottera postavit vedle kaple roubenou chatu ve švýcarském
+      stylu — sloužila jako hostinec a sídlo hajného hvězdeckého
+      klášterního polesí.
+    zdroj: >-
+      Kudy z nudy (čteno 10. 8. 2026) — „postavena v roce 1856 ve
+      švýcarském stylu", „z rozhodnutí a nákladem opata J.N.
+      Rottera", „hostinec a sídlo hajného hvězdeckého klášterního
+      polesí"; roubená stavba na kamenné podezdívce, kdysi pobitá
+      břidlicí.
+  - rok: 2025
+    udalost: >-
+      V září začala rekonstrukce; chata má být zavřená do dubna
+      2027.
+    zdroj: Kudy z nudy (čteno 10. 8. 2026)
+
+zajimavosti:
+  - text: >-
+      Dvojice na Hvězdě je učebnice broumovského baroka a turistiky
+      v jednom: Dientzenhoferova hvězdicová kaple z roku 1733
+      a klášterní hostinec ve švýcarském stylu z 1856 — chata tu
+      nevznikla pro lyžaře ani spolky, ale pro poutníky.
+    kategorie: stari
+    zdroj: >-
+      kaple 1733 (Dientzenhofer) a chata 1856 (opat Rotter): Kudy
+      z nudy, čteno 10. 8. 2026
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Roubený klášterní hostinec ve švýcarském stylu z roku 1856 na hraně
+  Broumovských stěn, hned vedle Dientzenhoferovy hvězdicové kaple
+  z roku 1733. Turistům slouží od dob, kdy se sem chodilo na pouť —
+  teď je ale zavřená: rekonstrukce má skončit v dubnu 2027.
+text:
+  - >-
+    Hvězda je poutní místo na hraně Broumovských stěn: barokní kapli
+    ve tvaru pěticípé hvězdy tu roku 1733 postavil Kilián Ignác
+    Dientzenhofer a o sto let později, v roce 1856, k ní broumovský
+    klášter nákladem opata Rottera přidal roubenou chatu ve
+    švýcarském stylu — hostinec pro poutníky a zároveň sídlo hajného
+    klášterního polesí. Málokterá česká chata má starší a čitelnější
+    rodokmen.
+  - >-
+    Kdo sem míří teď, najde zavřeno: od září 2025 běží rekonstrukce
+    a otevřít se má v dubnu 2027. Před uzavřením chata nabízela
+    českou kuchyni u krbu a pětadvacet lůžek v pokojích a chatce —
+    jak bude vypadat nabídka po opravě, zatím doloženo není.
+  - >-
+    Výhled z hrany stěn na broumovskou kotlinu funguje i se zavřenou
+    hospodou — Hvězda zůstává jedním z hlavních cílů hřebenovky
+    Broumovských stěn mezi Policí nad Metují a Broumovem, s kaplí,
+    která patří k vrcholům venkovského baroka v Čechách.
+  - >-
+    Údaje na téhle stránce pocházejí z Kudy z nudy a z regionálních
+    průvodců; souřadnice nese itras.cz, protože objekt zatím chybí
+    v našich mapových podkladech. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Kudy z nudy — stavba 1856 (opat Rotter, švýcarský styl,
+      hostinec a hájovna), kaple 1733 (Dientzenhofer), výška poutního
+      místa 674 m, kapacity před uzavřením, rekonstrukce IX/2025 –
+      IV/2027 (čteno 10. 8. 2026)
+    url: https://www.kudyznudy.cz/aktivity/chata-hvezda-v-broumovskych-stenach
+  - popis: >-
+      itras.cz — GPS, hostinec („polévka a guláš", krb), starší
+      kontakty s poznámkou o dlouhodobém uzavření již 2015 (čteno
+      10. 8. 2026)
+    url: https://itras.cz/chata-hvezda-broumovske-steny/
+  - popis: >-
+      Region Broumovsko — kaple Panny Marie Sněžné na Hvězdě
+      (kontext poutního místa)
+    url: https://www.broumovsko.cz/region/pamatky/kaple-panny-marie-snezne-na-hvezde
+interniPoznamky: >-
+  Založeno BEZ OSM kandidáta (10. 8. 2026, desátý takový profil
+  korpusu) — GPS z itras.cz; první profil nové oblasti broumovsko
+  (pokyn Michala z 10. 8., Hvězda jmenována výslovně). Klíč zařazení:
+  historický hostinec pro poutníky a turisty na hřebenové trase
+  stěn — turistická minulost od 1856 (DATA-25), občerstvení pro
+  veřejnost doloženo před rekonstrukcí.
+
+  STAV mimo-provoz (rekonstrukce IX/2025 – IV/2027, vzor Bouřňák);
+  kapacita 25 lůžek vedena jen v ověření (stav před uzavřením).
+  Kontakty NEzapsány — itras údaje jsou k 2015 a nese poznámku
+  o nekomunikujících majitelích; po dubnu 2027 dohledat znovu.
+
+  K OVĚŘENÍ (DATA-04): kdo rekonstrukci vede a kdo bude provozovat
+  (klášter? obec? nájemce?); katastr (Police n. M. × Křinice);
+  výška chaty. Po znovuotevření překlopit stav. Fotka: kaple
+  i chata jsou fotogenické — Commons jistě má, až bude okno DATA-02.
