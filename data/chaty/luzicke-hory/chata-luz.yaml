@@ -1,0 +1,150 @@
+# Chata Luž — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026, vzor
+# DATA-03: katalog × OSM × ubytovací katalogy; vlastní web se nenačetl
+# — neschválené načtení). První ČESKÝ profil Lužických hor; katalogový
+# řádek HUT-0044. Vše verified: false.
+
+nazev: Chata Luž
+slug: chata-luz
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: luzicke-hory
+
+aliasy:
+  - nazev: Horská chata Luž
+    poznamka: plné jméno v ubytovacích katalozích
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.8424253
+lng: 14.6481802
+vyska: 648
+obec: Mařenice
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/333131472 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright); souřadnice sedí s údajem
+    penziony.cz (50°50'32.76"N 14°38'53.3"E). VÝŠKA — ROZPOR,
+    přiznaný: levneubytovani.net 648 m × katalog (HUT-0044) 673 m —
+    zapsáno nižší číslo (konvence). Poloha: osada Myslivny, Horní
+    Světlá 75, část obce Mařenice, „kousek pod vrcholem" Luže na
+    křižovatce značek, u skiareálu (levneubytovani.net, čteno
+    10. 8. 2026). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 49
+overeniNocleh:
+  source: >-
+    Levneubytovani.net (čteno 10. 8. 2026): „49 lůžek v útulných 2-,
+    3-, 4- a 5-lůžkových pokojích s válendami". Penziony.cz (čteno
+    10. 8. 2026) vede skladbu jinak — dvou- až šestilůžkové a jeden
+    desetilůžkový, WC a sprchy na patře; celkové číslo neuvádí.
+    Skladba pokojů se v katalozích liší, číslo 49 je jediné celkové.
+    Ceny se mění, do prózy nejdou.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Levneubytovani.net i penziony.cz (čteno 10. 8. 2026): vlastní
+    restaurace, velká jídelna, letní terasa; penziony.cz vede
+    i polopenzi a plnou penzi. OSM tag vede otvírací dobu po–čt
+    10:30–22 a dál (surový formát, neověřeno) — naznačuje veřejný
+    provoz, doklad to není; režim pro neubytované k ověření.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 725 301 370'
+  email: info@chataluz.cz
+  web: http://www.chataluz.cz/
+overeniProvoz:
+  source: >-
+    Telefon +420 725 301 370: shodně OSM i levneubytovani.net (tam
+    i druhý +420 723 448 742 a e-mail tomaschataluz@seznam.cz;
+    provozovatel Tomáš Kouba). Penziony.cz vede ještě 602 330 880 —
+    tři čísla ze tří pramenů, do kontaktů jde to potvrzené dvěma.
+    E-mail info@chataluz.cz z OSM. Vlastní web se při rešerši
+    nenačetl (neschválené načtení). Katalog (HUT-0044): celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Historii chaty žádný načtený pramen nevede. Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Chata stojí pod Luží (792 m), nejvyšší horou Lužických hor —
+      vrchol s hraničním kamenem je od chaty kousek po značce
+      a katalogy chatu vedou jako nástupní bod okruhu přes Milštejn
+      a skiareál pod svahem.
+    kategorie: vyska
+    zdroj: >-
+      poloha „přímo pod vrcholem nejvyšší hory Luž": penziony.cz;
+      „kousek pod vrcholem nejvyšší hory Lužických hor", křižovatka
+      značek, skiareál a Milštejn: levneubytovani.net (obojí čteno
+      10. 8. 2026); výška Luže 792 m dle zápisu oblasti (rozpor
+      792/793 je v oblasti přiznán)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská chata v osadě Myslivny pod vrcholem Luže — devětačtyřicet
+  lůžek, restaurace s letní terasou a křižovatka značek pod nejvyšší
+  horou Lužických hor. Základna pro českou stranu pohoří, v zimě
+  s vlekem pod svahem.
+text:
+  - >-
+    Luž je nejvyšší hora Lužických hor a chata pod ní je přirozený
+    opěrný bod její české strany: stojí v osadě Myslivny u Horní
+    Světlé, na křižovatce turistických značek, pár minut pod
+    vrcholem s trojmezním výhledem a kousek od zimního vleku.
+  - >-
+    Spí se v pokojích od dvoulůžkových po větší společné — katalogy
+    se ve skladbě liší, celkem ale vedou devětačtyřicet lůžek —
+    a k chatě patří restaurace s velkou jídelnou a letní terasou;
+    vařit umí od snídaní po plnou penzi. Jak přesně slouží kuchyň
+    kolemjdoucím mimo ubytované, naše podklady nevedou — na jistotu
+    je lepší zavolat.
+  - >-
+    Údaje na téhle stránce pocházejí z ubytovacích katalogů; polohu
+    a kontakty nese OpenStreetMap. Výška se v pramenech rozchází
+    (648 × 673 m) a zapsané je nižší číslo. Vlastní stránky chaty se
+    při rešerši nenačetly. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      levneubytovani.net — 49 lůžek, restaurace s jídelnou a terasou,
+      výška 648 m, adresa Myslivny / Horní Světlá 75, kontakty,
+      provozovatel (čteno 10. 8. 2026)
+    url: https://www.levneubytovani.net/ubytovani/chata-luz/
+  - popis: >-
+      penziony.cz — poloha pod vrcholem Luže, skladba pokojů, GPS,
+      stravování vč. penzí (čteno 10. 8. 2026)
+    url: https://www.penziony.cz/marenice/horska-chata-luz/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0044
+      (673 m, Mařenice, celoročně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, kontakty, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/node/333131472
+interniPoznamky: >-
+  Povýšeno z data/kandidati/luzicke-hory/chata-luz.yaml rešerší
+  (10. 8. 2026). Klíč zařazení: horská chata s restaurací pod
+  nejvyšším vrcholem oblasti, na křižovatce značek — role na trase;
+  katalogový objekt HUT-0044 (jistota B). První ČESKÝ profil
+  Lužických hor.
+
+  ROZPORY: výška 648 (levneubytovani) × 673 (katalog) — zapsáno
+  nižší; skladba pokojů 2–5lůžkové/49 × 2–6+10lůžkový (penziony);
+  telefony tři ze tří pramenů (zapsán ten potvrzený dvěma).
+
+  K OVĚŘENÍ (DATA-04): vlastní web (nenačetl se); režim restaurace
+  pro neubytované (OSM otvíračka 10:30–22 naznačuje veřejný provoz);
+  historie chaty (žádný pramen). Fotku dodá příští běh DATA-02.
