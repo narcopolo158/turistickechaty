@@ -1,0 +1,148 @@
+# Berggasthof Auersberg (Auersberghaus) — povýšen z kandidáta DATA-01
+# rešerší (10. 8. 2026, vzor DATA-03: katalog × OSM + web města
+# Eibenstock). Katalogový řádek HUT-0297 „Auersberghaus" — SLABÁ SHODA
+# katalogu ROZHODNUTA: katalogové jméno patří hostinci (way/80994674),
+# ne vedlejší rozhledně (kandidát auersbergturm zůstává zvlášť).
+# Vlastní web auersberghaus.de se nenačetl (smyčka přesměrování) —
+# služby jsou z katalogu a OSM. Vše verified: false.
+
+nazev: Berggasthof Auersberg
+slug: berggasthof-auersberg
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Auersberghaus
+    poznamka: >-
+      jméno v externím katalogu (HUT-0297), na vlastní doméně
+      auersberghaus.de i v turistických databázích města Eibenstock
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.4563009
+lng: 12.647003
+vyska: 1018
+obec: Eibenstock
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/80994674 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 1018 m: externí katalog
+    (HUT-0297) i web města Eibenstock (titulek „Auersberg 1018 m",
+    čteno 10. 8. 2026) — číslo nese vrchol, hostinec stojí na něm.
+    Obec Eibenstock: katalog i OSM. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Externí katalog (HUT-0297): ubytování ano, provoz celoročně.
+    Turistická databáze města Eibenstock vede objekt jako pension
+    („Berggasthof Auersberghaus • Pension"). Kapacitu žádný načtený
+    pramen nevede — vlastní web se při rešerši nenačetl (smyčka
+    přesměrování).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    OSM (way/80994674): amenity=restaurant — na tenhle doklad se
+    odkazuje i kandidát vedlejší rozhledny (občerstvení 25 m od věže).
+    Katalog (HUT-0297): stravování ano. Web města Eibenstock:
+    „historischer Berggasthof" mezi atrakcemi hory. Otvírací dobu
+    žádný načtený pramen nevede.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+49 3775 2699258'
+  email: auersberg.team@simmel.de
+  web: https://www.auersberghaus.de/
+overeniProvoz:
+  source: >-
+    Kontakty z OSM (way/80994674, stav dat 2026-08-09): telefon
+    +49 3775 2699258, e-mail auersberg.team@simmel.de (doména
+    simmel.de naznačuje provozovatele ze skupiny Simmel — jako
+    provozovatel se ale nezapisuje, doklad chybí), web
+    auersberghaus.de — ten se při rešerši 10. 8. 2026 nenačetl
+    (smyčka přesměrování), není to ověřená mrtvá doména. Katalog:
+    provoz celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku hostince žádný načtený pramen nevede — web města ho jen
+# nazývá „historischer Berggasthof". Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Hned vedle hostince stojí kamenná rozhledna z roku 1860 —
+      a věžová tradice Auersbergu je ještě starší: první dřevěná věž
+      tu stála už v 17. století jako součást loveckého revíru saských
+      kurfiřtů. Ochoz nabízí kruhový rozhled až do Vogtlandu
+      a do českého Krušnohoří.
+    kategorie: jine
+    zdroj: >-
+      web města Eibenstock (čteno 10. 8. 2026) — kamenná rozhledna
+      1860, dřevěná věž „již v 17. století", výhled „herrliche
+      Rundsicht bis ins Vogtland und das böhmische Erzgebirge"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horský hostinec s penzionem na vrcholu Auersbergu (1018 m) u
+  Eibenstocku, hned vedle kamenné rozhledny z roku 1860 — celoroční
+  zastávka na západním konci krušnohorského hřebene, kde se z ochozu
+  vidí až do Vogtlandu a do Čech.
+text:
+  - >-
+    Auersberg je se svými 1018 metry jedním z mála krušnohorských
+    vrcholů nad tisícovkou na saské straně — a jako správný saský
+    kopec má na vrcholu dvojici, která k sobě patří: kamennou
+    rozhlednu z roku 1860 a horský hostinec. Věžová tradice je tu
+    ještě delší, první dřevěná věž stála na Auersbergu už
+    v sedmnáctém století za saských kurfiřtů.
+  - >-
+    Hostinec funguje celoročně jako restaurace s penzionem; kolik má
+    lůžek, naše podklady nevedou, a vlastní stránky se při rešerši
+    nenačetly — před cestou je proto lepší zavolat. Kdo nahoru míří
+    pěšky, má Auersberg jako přirozený cíl okruhů z Eibenstocku
+    i zastávku na hřebenových trasách západního Krušnohoří.
+  - >-
+    Údaje na téhle stránce pocházejí z externího katalogu, z webu
+    města Eibenstock a z OpenStreetMap; přesnost je tomu úměrná
+    a rozhodně nenahrazuje ověření u hostince. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0297
+      „Auersberghaus" (1018 m, Eibenstock, celoročně, ubytování
+      i stravování)
+    url: https://nocleh.kct.cz/chaty
+  - popis: >-
+      Web města Eibenstock — rozhledna 1860, dřevěná věž
+      v 17. století, „historischer Berggasthof", výhled
+    url: https://www.eibenstock.de/deutsch/aktiv/sehenswertes-natur/auersberg-1018-m
+  - popis: OpenStreetMap (GPS, restaurace, kontakty; ODbL)
+    url: https://www.openstreetmap.org/way/80994674
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/berggasthof-auersberg.yaml
+  rešerší (10. 8. 2026). Klíč zařazení: celoroční hostinec s noclehem
+  na vrcholu s rozhlednou, katalogový objekt HUT-0297 (jistota B).
+  SLABÁ SHODA KATALOGU ROZHODNUTA: „Auersberghaus" z katalogu je
+  tenhle hostinec (way/80994674, doména auersberghaus.de), NE vedlejší
+  rozhledna — kandidát auersbergturm (way/80994675) zůstává jako
+  samostatný objekt typu rozhledna, vzor Žalý (věž × budova zvlášť,
+  dokud Michal nerozhodne jinak).
+
+  K OVĚŘENÍ (DATA-04): vlastní web (smyčka přesměrování — zkusit
+  příště, pak doplnit kapacitu a otvírací dobu); provozovatel (e-mail
+  na doméně simmel.de — skupina Simmel provozuje i Fichtelberg?
+  NEDOMÝŠLET, ověřit); rok vzniku hostince. Fotku dodá příští běh
+  DATA-02.
