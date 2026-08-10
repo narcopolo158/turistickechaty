@@ -4320,3 +4320,28 @@ vyrazeno:
       Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
       v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
     checked: 2026-08-10
+  # ── Čtecí průchod koše POSOUDIT Krušných hor (10. 8. 2026) ──
+  - osm: https://www.openstreetmap.org/node/2794856209
+    slug: krusne-hory/augustusburger-hutzenwerkstatt
+    duvod: >-
+      Mimo klíč zařazení (name „Augustusburger Hutzenwerkstatt“) — řemeslná dílna, ne chata — web drechsel-holzgestaltung.de (dřevosoustružnictví Hans-Ullrich Drechsel).
+      Bez občerstvení pro kolemjdoucí na trase i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, čtecí průchod koše POSOUDIT Krušných hor)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/216982744
+    slug: krusne-hory/bowlingbar-huttelsgrun-inh-a-junghans
+    duvod: >-
+      Mimo klíč zařazení (name „Bowlingbar Hüttelsgrün Inh. A. Junghans“) — už jméno říká „Bowlingbar" — městský podnik ve Zwickau, bez role na trase.
+      Bez občerstvení pro kolemjdoucí na trase i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, čtecí průchod koše POSOUDIT Krušných hor)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/1356938806
+    slug: krusne-hory/gartensparte-berghutte
+    duvod: >-
+      Mimo klíč zařazení (name „Gartensparte Berghütte“) — už jméno říká „Gartensparte" — spolková zahrádkářská kolonie, jméno „Berghütte" nese kolonie, ne chata.
+      Bez občerstvení pro kolemjdoucí na trase i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, čtecí průchod koše POSOUDIT Krušných hor)
+    checked: 2026-08-10
