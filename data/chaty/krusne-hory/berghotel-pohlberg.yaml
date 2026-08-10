@@ -1,0 +1,153 @@
+# Berghotel Pöhlberg — povýšen z kandidáta DATA-01 rešerší (10. 8. 2026,
+# vzor DATA-03: katalog × OSM × VLASTNÍ WEB + erlebnisland-erzgebirge).
+# Katalogový řádek HUT-0296. Devátý profil Krušných hor — katalog
+# oblasti 9/10 s profily. Vše verified: false.
+
+nazev: Berghotel Pöhlberg
+slug: berghotel-pohlberg
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.574104
+lng: 13.0299433
+vyska: 832
+obec: Annaberg-Buchholz
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/174886721 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 832 m: vlastní web
+    („Ausflugshotel in 832m Höhe", načteno 10. 8. 2026) — katalog
+    (HUT-0296) vede 830 m a cyklistický průvodce quaeldich.de 830 m
+    u vrcholu; rozdíl dvou metrů se nesrovnává, zapsána hodnota
+    provozovatele. Adresa Ernst-Roch-Str. 20, 09456 Annaberg-Buchholz:
+    vlastní web. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web berghotel-poehlberg.de (načteno 10. 8. 2026):
+    jednolůžkové, dvoulůžkové, rodinné pokoje a suita, všechny se
+    sprchou, WC, TV, rádiem a telefonem; ceny od 68,50 € (mění se, do
+    prózy nejdou). Počet pokojů/lůžek web neuvádí — kapacita se
+    nezapisuje. Katalog (HUT-0296): ubytování ano, celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web (načteno 10. 8. 2026): Panorama-Restaurant denně od
+    11:30, „original erzgebirgisch, feinbürgerliche Küche,
+    internationale Spezialitäten- und Wildspezialitäten", otevřeno
+    veřejnosti. OSM tag vede po/ne do 21, út–so do 22 — konce web
+    neuvádí, vedeme obojí. Katalog (HUT-0296): stravování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Restaurace denně od 11:30 (dle OSM do 21, v út–so do 22 —
+  neověřeno).
+kontakty:
+  telefon: '+49 3733 1832-0'
+  email: info@berghotel-poehlberg.de
+  web: https://www.berghotel-poehlberg.de/
+overeniProvoz:
+  source: >-
+    Vlastní web (načteno 10. 8. 2026): telefon +49 3733 1832-0,
+    e-mail info@berghotel-poehlberg.de; provozovatel Hotel &
+    Gastronomiebetriebe Deckert GmbH, „familiengeführte Haus";
+    k tomu stání pro obytné vozy, svatby. Katalog: celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1897
+    udalost: >-
+      Dne 12. července byla na vrcholu Pöhlbergu otevřena výletní
+      restaurace s hotelem a pětatřicetimetrovou rozhlednou.
+    zdroj: >-
+      erlebnisland-erzgebirge.de (čteno 10. 8. 2026) — „Die auf dem
+      Gipfel befindliche Ausflugsgaststätte mit Hotel und 35 m hohen
+      Aussichtsturm wurde am 12. Juli 1897 eröffnet."
+
+zajimavosti:
+  - text: >-
+      Na západním a severním svahu Pöhlbergu tvoří čedič mohutné
+      sloupy, kterým se v místním nářečí říká „Butterfässer" —
+      máslenky; dobře viditelné je odkryl bývalý kamenolom. Hora nad
+      hornickým Annabergem nese stopy dolování cínu, stříbra a mědi
+      od roku 1400.
+    kategorie: jine
+    zdroj: >-
+      erlebnisland-erzgebirge.de (čteno 10. 8. 2026) — čedičové
+      sloupy „welcher am westlichen und nördlichen Berghang imposante
+      Säulen bildet", nářeční jméno Butterfässer, těžba od 1400
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Výletní hotel na vrcholu Pöhlbergu (832 m) nad hornickým
+  Annabergem — restaurace s panoramatem otevřená denně od půl
+  dvanácté, pokoje pro rodiny i svatebčany a hned vedle rozhledna;
+  všechno v tradici výletního domu otevřeného tu 12. července 1897.
+text:
+  - >-
+    Pöhlberg patří k trojici stolových čedičových hor nad Annabergem
+    a výletní dům s rozhlednou tu stojí od 12. července 1897. Dnešní
+    Berghotel vede rodinná firma: panoramatická restaurace vaří
+    krušnohorskou i mezinárodní kuchyni se zvěřinovými specialitami
+    a otvírá denně od půl dvanácté, spí se v pokojích od
+    jednolůžkových po rodinné.
+  - >-
+    Kolem hotelu je toho na půldenní výlet dost: pětatřicetimetrová
+    rozhledna, čedičové sloupy zvané Butterfässer na svazích
+    a dole město s hornickou historií sahající k roku 1400. Hotel
+    nabízí i stání pro obytné vozy — na saské poměry typická
+    kombinace výletního cíle a základny.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu hotelu,
+    z regionálního průvodce a z externího katalogu; polohu nese
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hotelu — výška 832 m, pokoje a ceny, restaurace
+      denně od 11:30, kontakty, provozovatel Deckert GmbH (načteno
+      10. 8. 2026)
+    url: https://www.berghotel-poehlberg.de/
+  - popis: >-
+      erlebnisland-erzgebirge.de — otevření výletní restaurace
+      s hotelem a věží 12. 7. 1897, čedičové Butterfässer, hornická
+      historie od 1400 (čteno 10. 8. 2026)
+    url: https://www.erlebnisland-erzgebirge.de/index.php?index=ausgabe_d-S&id=210
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0296
+      (830 m, Annaberg-Buchholz, celoročně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/way/174886721
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/berghotel-pohlberg.yaml
+  rešerší (10. 8. 2026). Klíč zařazení: vrcholový výletní dům
+  s veřejnou restaurací a noclehem, kontinuita od 1897, katalogový
+  objekt HUT-0296 (jistota B). Katalog Krušných hor tím má profily
+  9/10 — zbývá jen Barborka Klínovec (vzor Barbora u Michala).
+
+  ROZPOR výšky 832 (vlastní web) × 830 (katalog, quaeldich) —
+  zapsána hodnota provozovatele, rozdíl 2 m se nesrovnává.
+
+  SOUVISEJÍCÍ KANDIDÁT: aussichtsturm-pohlberg (rozhledna 35 m,
+  vlastní OSM entita) zůstává zvlášť — vzor Žalý/Auersberg (věž ×
+  budova). K OVĚŘENÍ (DATA-04): počet pokojů/lůžek (web nevede);
+  konce otvírací doby restaurace (jen OSM tag). Fotku dodá příští
+  běh DATA-02.
