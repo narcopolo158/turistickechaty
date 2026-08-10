@@ -1,0 +1,154 @@
+# Fischerbaude — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# vzor DATA-03: OSM × VLASTNÍ WEB vč. stránky historie). Desátý profil
+# Krušných hor, první z fronty povyšování zapsané při čtecím průchodu.
+# Rodinná bauda v Holzhau ve čtvrté generaci od roku 1901.
+# Vše verified: false.
+
+nazev: Fischerbaude
+slug: fischerbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7195626
+lng: 13.5898692
+obec: Rechenberg-Bienenmühle
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/13786630667
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Adresa Ringelstraße 4, 09623
+    Rechenberg-Bienenmühle (vlastní web, kontakt — čteno
+    10. 8. 2026); bauda stojí v Holzhau, místní části obce.
+    Nadmořskou výšku žádný načtený pramen nevede — nezapisuje se.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web fischerbaude.de (čteno 10. 8. 2026): „Hotel Pension
+    & Gaststätte" — penzion s pokoji; kapacitu číslem načtené stránky
+    nevedou (web má sekci A–Z, nenačtena). Rodinný penzion od
+    přestavby v letech 1904–29 (stránka historie).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web, stránka Gaststätte (čteno 10. 8. 2026): hospoda
+    s pivní zahradou otevřená veřejnosti — po zavřeno (jen grilování
+    pro hotelové hosty), út 16–22, st/čt/ne 11–22, pá/so 11–24;
+    „Die Küche unseres Hauses ist gutbürgerlich, herzhaft regional
+    und reichlich." OSM tag vede tytéž dny s odchylkou u středy —
+    bereme vlastní web.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Út 16–22, st/čt/ne 11–22, pá/so 11–24; pondělí zavírací den.
+kontakty:
+  telefon: '+49 37327 7404'
+  email: info@fischerbaude.de
+  web: https://www.fischerbaude.de/
+overeniProvoz:
+  source: >-
+    Vlastní web (čteno 10. 8. 2026): telefon 037327-7404, e-mail
+    info@fischerbaude.de; provozovatelé Udo Weise a Ulf-U. Plath
+    (od 1. 8. 1995, potomci zakladatelů ve 4. generaci) — sedí
+    s OSM „Weise & Plath GbR".
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1901
+    udalost: >-
+      Usedlost v Holzhau koupili Paul a Clara Fischerovi — praprarodiče
+      dnešních majitelů; vedle hospody provozovali i obuvnickou dílnu
+      a krám s potravinami. V následujícím čtvrtstoletí dům přestavěli
+      na rodinný penzion; roku 1929 převzal podnik syn Edwin.
+    zdroj: >-
+      vlastní web, stránka historie (čteno 10. 8. 2026) — koupě 1901
+      („die Urgroßeltern der heutigen Besitzer"), dílna a krám,
+      přestavba na penzion, Edwin Fischer 1929.
+  - rok: 1974
+    udalost: >-
+      Za války dům sloužil dětem z bombardovaných měst, v NDR spadal
+      pod rekreace FDGB a roku 1974 ho převzal VEB Narva
+      Brand-Erbisdorf jako podnikovou zotavovnu; po roce 1989 se
+      zavřel.
+    zdroj: >-
+      vlastní web, stránka historie (čteno 10. 8. 2026) — válečná
+      ubytovna, FDGB, VEB Narva 1974, uzavření po 1989.
+  - rok: 1995
+    udalost: >-
+      Po obnově a znovuotevření Helgou Plathovou (1993) převzali dům
+      1. srpna 1995 dnešní majitelé Udo Weise a Ulf-U. Plath —
+      potomci zakladatelů ve čtvrté generaci.
+    zdroj: >-
+      vlastní web, stránka historie (čteno 10. 8. 2026) —
+      znovuotevření 1993, převzetí 1. 8. 1995, čtvrtá generace.
+
+zajimavosti:
+  - text: >-
+      Fischerbaude je vzácný případ saské baudy, která se po celém
+      dvacátém století — přes válku, FDGB i podnikovou rekreaci —
+      vrátila potomkům zakladatelů: dnešní provozovatelé jsou čtvrtá
+      generace rodiny, která dům koupila v roce 1901.
+    kategorie: stari
+    zdroj: >-
+      vlastní web, stránka historie „Tradition & Geschichte im
+      Erzgebirge seit 1901" (čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Rodinná bauda v Holzhau pod hřebenem východního Krušnohoří —
+  hospoda s pivní zahradou a penzion, které od roku 1901 drží jedna
+  rodina, dnes ve čtvrté generaci. Kuchyně poctivě saská: domácí,
+  regionální a vydatná.
+text:
+  - >-
+    Fischerbaude začala roku 1901 jako hospoda s obuvnickou dílnou
+    a krámem — Paul a Clara Fischerovi ji během čtvrtstoletí
+    přestavěli na rodinný penzion a jejich potomci ho vedou dodnes.
+    Dvacáté století s domem zamávalo jako s celým pohraničím: válečná
+    ubytovna, odborářská rekreace FDGB, podniková zotavovna — a po
+    převratu návrat rodině, která od roku 1995 hospodaří ve čtvrté
+    generaci.
+  - >-
+    Hospoda s pivní zahradou jede pro veřejnost šest dní v týdnu
+    (pondělí je zavírací den) a kuchyně se hlásí k domácímu,
+    regionálnímu a vydatnému vaření; spí se v pokojích penzionu.
+    Holzhau je nástupní bod hřebenových běžkařských i pěších tras
+    kolem Čihadla a hraničního přechodu do Českého Jiřetína.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu baudy včetně
+    stránky historie; polohu nese OpenStreetMap. Kapacita penzionu
+    číslem doložená není. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web baudy — historie od 1901 (čtyři generace, FDGB,
+      VEB Narva, návrat 1993/1995), otvírací doba hospody, kuchyně,
+      kontakty (načteno 10. 8. 2026)
+    url: https://www.fischerbaude.de/
+  - popis: OpenStreetMap (GPS, provozovatel, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/node/13786630667
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/fischerbaude.yaml rešerší
+  (10. 8. 2026) — první položka fronty povyšování ze čtecího průchodu.
+  Klíč zařazení: veřejná hospoda s penzionem na nástupu hřebenových
+  tras, rodinná kontinuita od 1901 — turistická minulost doložená
+  vlastní stránkou historie.
+
+  K OVĚŘENÍ (DATA-04): kapacita penzionu (sekce A–Z se nenačetla);
+  nadmořská výška. Fotku dodá příští běh DATA-02.

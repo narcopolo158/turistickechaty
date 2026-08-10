@@ -1,0 +1,132 @@
+# Hirtsteinbaude — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# druhá položka fronty povyšování; vlastní web hirtsteinbaude.de se
+# nenačetl — neschválené načtení, služby nese OSM a regionální weby).
+# Jedenáctý profil Krušných hor: Berggasthof s penzionem na Hirtsteinu
+# u čedičového vějíře. Vše verified: false.
+
+nazev: Hirtsteinbaude
+slug: hirtsteinbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Berggasthof und Pension Hirtsteinbaude
+    poznamka: plné jméno na vlastním webu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.5359274
+lng: 13.1931256
+vyska: 890
+obec: Marienberg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/217969328 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 890 m: ins-erzgebirge.de
+    (čteno 10. 8. 2026) — hodnota vrcholu Hirtstein, bauda stojí na
+    něm. Obec: OSM vede Marienberg (bauda je v místní části Satzung,
+    nejvýše položené vsi hřebene dle regionálních webů — do pole jde
+    město dle OSM). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Turistický web erzgebirge-tourismus.de vede objekt jako
+    „Hirtsteinbaude Berggasthof und Pension" (titulek záznamu;
+    stránka se 10. 8. 2026 nenačetla celá — chyba serveru). Kapacitu
+    číslem žádný načtený pramen nevede — nezapisuje se.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Ins-erzgebirge.de (čteno 10. 8. 2026): na vrcholu „Bergrestaurant"
+    / „Gasthaus" pro návštěvníky čedičového vějíře. OSM tag vede
+    otvírací dobu st–út 11:30–21 (surový formát, neověřeno —
+    naznačuje úterní/pondělní režim, přesně ověřit).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+49 37364 12844'
+  email: info@hirtsteinbaude.de
+  web: https://www.hirtsteinbaude.de/
+overeniProvoz:
+  source: >-
+    Kontakty z OSM (way/217969328, stav dat 2026-08-09). Vlastní web
+    hirtsteinbaude.de se při rešerši nenačetl (neschválené načtení)
+    — doména žije, vede ji i erzgebirge-tourismus.de. Sezónnost
+    neuvedena.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku baudy žádný načtený pramen nevede. Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Bauda stojí u proslulého čedičového vějíře — sloupy rozevřené
+      do vějířového tvaru odkryl starý lom a chráněné jsou už od
+      konce devatenáctého století; magma je vytvarovalo před zhruba
+      25 miliony let. V zimě jede pod vrcholem malý vlek.
+    kategorie: jine
+    zdroj: >-
+      ins-erzgebirge.de (čteno 10. 8. 2026) — „Basaltsäulen in
+      Fächerform", vznik „vor rund 25 Millionen Jahren", ochrana od
+      konce 19. století, „im Winter läuft ein kleiner Lift"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Berggasthof s penzionem na vrcholu Hirtsteinu (890 m) u Satzungu —
+  horská restaurace hned vedle čedičového vějíře, jedné z nejstarších
+  chráněných geologických památek Krušných hor, a malý vlek pod
+  svahem.
+text:
+  - >-
+    Hirtstein je kopec, na který se jezdí kvůli kameni: starý lom tu
+    odkryl čedičové sloupy rozevřené do tvaru vějíře, které chránili
+    už lidé na konci devatenáctého století. Bauda na vrcholu k té
+    podívané přidává horskou restauraci a penzion — a v zimě malý
+    vlek, takže Satzung žije i lyžařsky.
+  - >-
+    Provozní detaily drží vlastní web, který se nám při rešerši
+    nenačetl: doložený je telefon, e-mail a otvírací rytmus z mapových
+    dat (přes týden od půl dvanácté do devíti, jeden zavírací den).
+    Kapacita penzionu číslem doložená není — před cestou zavolat.
+  - >-
+    Údaje na téhle stránce pocházejí z regionálních webů Krušnohoří;
+    polohu a kontakty nese OpenStreetMap. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      ins-erzgebirge.de — výška 890 m, čedičový vějíř (vznik, ochrana
+      od konce 19. století), Bergrestaurant, zimní vlek (čteno
+      10. 8. 2026)
+    url: https://www.ins-erzgebirge.de/Hirtstein
+  - popis: >-
+      erzgebirge-tourismus.de — záznam „Hirtsteinbaude Berggasthof
+      und Pension" (stránka se nenačetla celá — chyba serveru)
+    url: https://www.erzgebirge-tourismus.de/en/summer/cycling/accommodation-offers/poi/hirtsteinbaude-berggasthof-und-pension/poi.html
+  - popis: OpenStreetMap (GPS, kontakty, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/way/217969328
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/hirtsteinbaude.yaml rešerší
+  (10. 8. 2026) — druhá položka fronty povyšování. Klíč zařazení:
+  vrcholová restaurace s penzionem u výletního cíle (čedičový vějíř),
+  role na trase hřebene u Satzungu.
+
+  SLABŠÍ DOKLADOVÁ ZÁKLADNA než u ostatních profilů: vlastní web se
+  nenačetl (PROVENANCE) a turistický portál vrátil 500 — nocleh stojí
+  na titulku záznamu „Berggasthof und Pension". Až se web načte,
+  doplnit kapacitu, otvíračku a historii (bauda vypadá na starý
+  výletní hostinec — NEDOMÝŠLET). Fotku dodá příští běh DATA-02
+  (vějíř je fotogenický, Commons jistě má).
