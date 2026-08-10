@@ -1,0 +1,178 @@
+# Holubyho chata — povýšena z ručního kandidáta rešerší (10. 8. 2026).
+# PRVNÍ PROFIL BÍLÝCH KARPAT (oblast založena publikačně tímto
+# profilem). Chata z let 1923–24 (po požáru 1926 znovu 1930) pod
+# vrcholem Veľké Javoriny, na slovenské straně hranice.
+# Vše verified: false.
+
+nazev: Holubyho chata
+slug: holubyho-chata
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: bile-karpaty
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.857417
+lng: 17.681917
+vyska: 920
+obec: Lubina
+overeniLokace:
+  source: >-
+    GPS 48°51'26.7"N, 17°40'54.9"E (přepočteno 48.857417, 17.681917)
+    a adresa Holubyho chata 1048, 916 12 Lubina: vlastní web
+    holubyhochata.sk (čteno 10. 8. 2026) — objekt není v našich OSM
+    exportech (Bílé Karpaty nemají vyhledávací okno). Výška „približne
+    920 m n. m.": planetslovakia.sk; chata stojí pod vrcholem Veľké
+    Javoriny (969,8 m dle myjava.sk), na SLOVENSKÉ straně hranice
+    (obec Lubina, okres Nové Mesto nad Váhom). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 30
+overeniNocleh:
+  source: >-
+    Planetslovakia.sk (čteno 10. 8. 2026): necelých 30 lůžek
+    v 2–4lůžkových pokojích (zapsáno 30 — horní mez formulace
+    „takmer 30"). Vlastní web: „Jednoduché ubytovanie pre turistov
+    alebo rodiny s deťmi", celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web holubyhochata.sk (čteno 10. 8. 2026): „Poctivá
+    domáca kuchyňa", otevřeno celoročně 7 dní v týdnu.
+    Planetslovakia.sk: „ponuka jedál je typická, chatárska", jí se
+    uvnitř i na terase.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Celoročně, 7 dní v týdnu (vlastní web).
+kontakty:
+  email: info@holubyhochata.sk
+  web: https://www.holubyhochata.sk/
+overeniProvoz:
+  source: >-
+    Vlastní web holubyhochata.sk (čteno 10. 8. 2026): e-mail
+    info@holubyhochata.sk; telefon web v načtené podobě nevedl celý
+    — nezapisuje se. Od roku 2006 vede chatu Miro Martinček
+    (myjava.sk). Provoz celoroční.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1924
+    udalost: >-
+      Základní kámen útulny na Javorině byl položen 8. července 1923
+      a chata — pojmenovaná po botaniku a evangelickém faráři Jozefu
+      Ľudovítu Holubym († 1923) — se slavnostně otevřela 6. června
+      1924. Stavěl ji Josef Jirásek z Uherského Brodu.
+    zdroj: >-
+      základní kámen 8. 7. 1923: vlastní web holubyhochata.sk;
+      otevření 6. 6. 1924, stavitel Josef Jirásek, jméno „z úcty
+      k životu a dielu" J. Ľ. Holubyho (1836–1923): myjava.sk
+      (čteno 10. 8. 2026).
+  - rok: 1926
+    udalost: >-
+      Chata 6. prosince 1926 „zhorela do tla".
+    zdroj: >-
+      myjava.sk (čteno 10. 8. 2026) — požár 6. 12. 1926. Příčinu
+      načtené prameny nevedou — nedomýšlí se.
+  - rok: 1930
+    udalost: >-
+      Nová chata podle projektu architekta Františka Svobody
+      (stavitel Jozef Hanuš z Uherského Brodu) se otevřela
+      22. června 1930 — základní kámen byl položen už v červenci
+      1928. Za okupace chatu využívali čeští vlastenci i slovenští
+      partyzáni; po socialistických provozovatelích se po roce 1989
+      vrátila do soukromých rukou.
+    zdroj: >-
+      myjava.sk (čteno 10. 8. 2026) — základní kámen VII/1928,
+      architekt František Svoboda, stavitel Jozef Hanuš, otevření
+      22. 6. 1930; váleční uživatelé a poválečné osudy tamtéž.
+  - rok: 2006
+    udalost: >-
+      Chatu převzal Miro Martinček a vrací jí historický ráz —
+      před chatou stojí nová busta J. Ľ. Holubyho od sochaře
+      Stana Mikuše.
+    zdroj: >-
+      myjava.sk (čteno 10. 8. 2026) — „od roku 2006", busta od
+      Stana Mikuše.
+
+zajimavosti:
+  - text: >-
+      Louka pod Veľkou Javorinou je místem slavností bratrství Čechů
+      a Slováků — potkávají se tu obvykle poslední červencovo-srpnovou
+      neděli, a hraniční hora s chatou tak zůstává symbolem
+      česko-slovenské vzájemnosti i po rozdělení federace.
+    kategorie: jine
+    zdroj: >-
+      planetslovakia.sk (čteno 10. 8. 2026) — „Slávnosti bratstva
+      Čechov a Slovákov", „obvykle poslednú júlovo-augustovú nedeľu"
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata z roku 1930 pod vrcholem Veľké Javoriny, nejvyšší hory
+  Bílých Karpat — stojí na slovenské straně hranice, ale chodí se
+  k ní stejně samozřejmě ze Slovácka jako z Považí. Domácí kuchyně
+  sedm dní v týdnu, jednoduché pokoje a louka slavností bratrství
+  Čechů a Slováků.
+text:
+  - >-
+    Holubyho chata nese jméno evangelického faráře a botanika, který
+    javorinské louky celý život zkoumal — Jozef Ľudovít Holuby zemřel
+    v roce 1923, právě když se na hřebeni pokládal základní kámen
+    útulny. První chata z roku 1924 po dvou letech vyhořela; dnešní
+    budova podle projektu Františka Svobody slouží od června 1930
+    a od roku 2006 jí hostinský Miro Martinček vrací prvorepublikový
+    ráz.
+  - >-
+    Vaří se tu domácí chatárska kuchyně, celoročně a sedm dní
+    v týdnu; spí se v necelých třiceti lůžkách jednoduchých pokojů.
+    Chata stojí na slovenské straně hraniční hory — kousek pod
+    vrcholem s vysílačem — a na louce pod ní se každé léto potkávají
+    Češi a Slováci na slavnostech bratrství.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu chaty,
+    z oficiálních stránek města Myjavy a z portálu PlanetSlovakia.
+    Telefon se z načtených stránek nepodařilo doložit celý — pište
+    e-mailem. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — základní kámen 8. 7. 1923, adresa a GPS,
+      kuchyně a celoroční provoz, e-mail (načteno 10. 8. 2026)
+    url: https://www.holubyhochata.sk/
+  - popis: >-
+      myjava.sk — výška Veľké Javoriny 969,8 m, historie (otevření
+      1924, požár 1926, nová chata 1930, architekt Svoboda,
+      Martinček od 2006), J. Ľ. Holuby 1836–1923 (čteno 10. 8. 2026)
+    url: https://www.myjava.sk/volny-cas/turisticke-ciele/velka-javorina-holubyho-chata-1819sk.html
+  - popis: >-
+      planetslovakia.sk — výška chaty ~920 m, kapacita necelých
+      30 lůžek, slavnosti bratrství (čteno 10. 8. 2026)
+    url: https://www.planetslovakia.sk/relax/holubyho-chata
+interniPoznamky: >-
+  Povýšeno z data/kandidati/bile-karpaty/holubyho-chata.yaml rešerší
+  (10. 8. 2026) — PRVNÍ PROFIL BÍLÝCH KARPAT (oblast založena
+  publikačně současně, typ pohori — nesporné hraniční pohoří,
+  přeshraniční vcelku). Klíč zařazení: vrcholová chata na hraniční
+  hoře, restaurace pro veřejnost, kontinuita 1924/1930 — nesporné.
+  Zeme: sk POTVRZENO (adresa Lubina 1048, okres Nové Mesto nad
+  Váhom) — kandidátova otázka uzavřena.
+
+  K OVĚŘENÍ (DATA-04): telefon (web ho v načtené podobě nevedl);
+  kdo chatu 1923–24 stavěl spolkově (KČST? — stavitel Jirásek
+  doložen, investor ne); přesná výška chaty. Kapacita „takmer 30"
+  zapsána jako 30 — případně srovnat s ceníkem
+  holubyhochata.eu/files/CENNIK_UBYTOVANIA.pdf (nenačten). Další
+  kandidáti Bílých Karpat: Chata Lopeník, Mikulčin vrch, Veľký
+  Lopeník — viz poznámka oblasti. Fotku dodá běh DATA-02, až oblast
+  dostane okno.
