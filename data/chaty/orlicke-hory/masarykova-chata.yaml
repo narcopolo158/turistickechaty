@@ -1,0 +1,191 @@
+# Masarykova chata na Šerlichu — povýšena z kandidáta DATA-01 rešerší
+# (10. 8. 2026, vzor DATA-03: katalog × OSM × VLASTNÍ WEB + KČT).
+# PRVNÍ PROFIL ORLICKÝCH HOR a vlajková loď oblasti: funkcionalistická
+# chata KČT od Bohuslava Fuchse, sto let služby (1925–2025).
+# Vše verified: false.
+
+nazev: Masarykova chata
+slug: masarykova-chata
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: orlicke-hory
+
+aliasy:
+  - nazev: Masarykova chata na Šerlichu
+    poznamka: >-
+      plné jméno s horou; rozlišuje ji od jmenovkyně v Javorníkách
+      (viz registr jmenovců)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.3259637
+lng: 16.3861498
+vyska: 1019
+obec: Deštné v Orlických horách
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/99202947 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška: vlastní web
+    ubytovani-serlich.cz „Šerlich 1019 m n. m." (načteno 10. 8. 2026)
+    — číslo nese hora, chata stojí na jejím hřebeni; KČT uvádí u chaty
+    týchž 1 019 m. Obec Deštné v Orlických horách: katalogový řádek
+    (Masarykova chata na Šerlichu, 1019 m, Deštné). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 54
+overeniNocleh:
+  source: >-
+    Vlastní web ubytovani-serlich.cz (načteno 10. 8. 2026): „54 lůžek"
+    — 5 dvoulůžkových, 2 třílůžkové, 2 čtyřlůžkové, 1 sedmilůžkový,
+    1 desetilůžkový a 1 třináctilůžkový pokoj; ceník od 1. 4. 2026
+    780 Kč bez večeře / 930 Kč s polopenzí za dospělého (ceny se mění —
+    v próze nejsou). Katalog: ubytování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web ubytovani-serlich.cz (načteno 10. 8. 2026): „Kuchyň
+    vaří do 18:30 hod kromě neděle, v neděli pouze do 18:00 hodin."
+    Katalog: stravování ano. OSM tag uvádí otevřeno denně 8–20
+    (surový formát, neověřeno).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Kuchyně vaří do 18:30, v neděli do 18:00.
+kontakty:
+  telefon: '+420 728 650 811'
+  email: chatamasarykova@gmail.com
+  web: https://www.ubytovani-serlich.cz/
+overeniProvoz:
+  source: >-
+    Vlastní web ubytovani-serlich.cz (načteno 10. 8. 2026): telefon
+    +420 728 650 811, e-mail chatamasarykova@gmail.com; provozovatelem
+    MIRAD s.r.o., Šachov 59, 517 21 Borohrádek. OSM vede telefon
+    +420 737 078 555 — do kontaktů se bere číslo z vlastního webu,
+    druhé zůstává jen tady. Katalog: provoz celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1925
+    udalost: >-
+      Klub českých turistů chatu postavil v letech 1924–25 podle
+      projektu brněnského architekta Bohuslava Fuchse (žáka Jana
+      Kotěry); stavěl F. Capoušek z Hradce Králové. Slavnostně
+      otevřena byla v září 1925 — vlastní web uvádí 14. 9. za účasti
+      Aloise Jiráska, KČT píše o slavnostním otevření 27. 9.; obě data
+      vedeme, rozpor nerozhodujeme.
+    zdroj: >-
+      vlastní web ubytovani-serlich.cz (načteno 10. 8. 2026) — stavba
+      1924–25, Fuchs, Capoušek, otevření „14. 9. 1925 … za účasti
+      Aloise Jiráska"; KČT, článek ke stému výročí (čteno 10. 8. 2026)
+      — základní kámen září 1924, slavnostní otevření 27. září 1925.
+  - rok: 1991
+    udalost: >-
+      Po pádu komunismu byla chata vrácena Klubu českých turistů;
+      téhož roku se na ni natrvalo vrátila i busta prezidenta
+      Masaryka, kterou z ní předtím dvakrát odstranily dějiny — za
+      druhé světové války a znovu v padesátých letech.
+    zdroj: >-
+      KČT, článek ke stému výročí (čteno 10. 8. 2026) — „v roce 1991,
+      kdy chatu opět předali KČT"; osudy busty tamtéž.
+  - rok: 2025
+    udalost: Chata oslavila sto let nepřetržité služby turistům.
+    zdroj: >-
+      KČT, články ke 100. výročí (čteno 10. 8. 2026).
+
+zajimavosti:
+  - text: >-
+      Chatu navrhl Bohuslav Fuchs, jeden z nejvýznamnějších českých
+      funkcionalistů — horská chata KČT od architekta brněnského
+      Zemanova kavárenského pavilonu a hotelu Avion je na hřebeni
+      Orlických hor nečekaná vizitka meziválečné moderny.
+    kategorie: jine
+    zdroj: >-
+      autor projektu: vlastní web i KČT (čteno 10. 8. 2026); KČT ho
+      uvádí jako „významného architekta … žáka Jana Kotěry"
+  - text: >-
+      Nese jméno prvního československého prezidenta a jeho busta
+      sdílela osud země: zmizela za okupace, vrátila se po válce,
+      znovu zmizela v padesátých letech a natrvalo je zpět od roku
+      1991.
+    kategorie: jine
+    zdroj: KČT, článek ke stému výročí (čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Funkcionalistická chata Klubu českých turistů z roku 1925 na hřebeni
+  Orlických hor pod Šerlichem (1019 m) — projekt Bohuslava Fuchse,
+  sto let nepřetržité služby, 54 lůžek a kuchyně, která vaří denně do
+  půl sedmé. Srdce turistiky v Orlických horách.
+text:
+  - >-
+    Masarykova chata je z generace velkých klubových staveb první
+    republiky: KČT ji postavil v letech 1924 až 1925 podle projektu
+    Bohuslava Fuchse, tehdy nastupující hvězdy brněnské moderny.
+    Slavnostní otevření v září 1925 — podle jednoho pramene za účasti
+    Aloise Jiráska — z ní rázem udělalo hlavní útočiště hřebene
+    a tím zůstala dodnes; v roce 2025 oslavila rovnou stovku.
+  - >-
+    Dvacáté století se na chatě podepsalo hlavně skrze jméno a bustu
+    prezidenta Masaryka: socha zmizela za války, po ní se vrátila,
+    v padesátých letech zmizela znovu a definitivně je na místě od
+    roku 1991, kdy se chata vrátila Klubu českých turistů. Dnes ji
+    pro klub provozuje nájemce.
+  - >-
+    Prakticky vzato: 54 lůžek v pokojích od dvoulůžkových po
+    třináctilůžkovou noclehárnu, restaurace s kuchyní do půl sedmé
+    večer (v neděli do šesti). Chata stojí přímo na hřebenové
+    magistrále pod vrcholem Šerlichu, pár minut od
+    hraničního přechodu do polských Bystřických hor — je přirozeným
+    středem hřebenových přechodů Orlických hor na obě strany.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu chaty, z článků
+    KČT ke stému výročí a z externího katalogu; polohu nese
+    OpenStreetMap. Datum slavnostního otevření se v pramenech liší
+    (14. × 27. září 1925) a rozpor přiznáváme. Redakce nic neověřila
+    vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — výška, kapacita 54 lůžek a skladba pokojů,
+      kuchyně do 18:30/18:00, kontakty, provozovatel MIRAD s.r.o.,
+      stavba 1924–25, Fuchs, otevření 14. 9. 1925 (načteno
+      10. 8. 2026)
+    url: https://www.ubytovani-serlich.cz/
+  - popis: >-
+      KČT — články ke stému výročí: základní kámen 1924, slavnostní
+      otevření 27. 9. 1925, vrácení KČT 1991, osudy busty, jubileum
+      2025
+    url: https://kct.cz/sto-let-masarykovy-chaty-oslavime-na-serlichu/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek Masarykova
+      chata na Šerlichu (1019 m, Deštné v Orlických horách)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, druhý telefon, tagy; ODbL)
+    url: https://www.openstreetmap.org/way/99202947
+interniPoznamky: >-
+  Povýšeno z data/kandidati/orlicke-hory/masarykova-chata.yaml rešerší
+  (10. 8. 2026). Klíč zařazení: chata KČT na hřebenové magistrále, sto
+  let služby, katalogový objekt — jistota nejvyšší v oblasti. PRVNÍ
+  PROFIL ORLICKÝCH HOR (vlajková loď dle plánu z 9. 8.).
+
+  ROZPORY: datum otevření 14. 9. 1925 (vlastní web, s Jiráskem) × 27. 9.
+  1925 (KČT) — přiznáno v milníku i próze; telefon vlastní web
+  +420 728 650 811 × OSM +420 737 078 555.
+
+  K OVĚŘENÍ (DATA-04): platný telefon; režim restaurace pro
+  neubytované (web vede jen dobu vaření); razítko (chata KČT — skoro
+  jistě má, hledat v razítkových checklistech); památková ochrana
+  (KČT článek ji nezmiňuje výslovně — NEZAPSÁNO). Jmenovkyně
+  v Javorníkách je v registru jmenovců. Fotku dodá příští běh DATA-02.

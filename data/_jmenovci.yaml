@@ -989,3 +989,66 @@ jmenovci:
     rozhodl: >-
       Claude (9. 8. 2026, po večerním exportu Orlických hor — měřením z GPS)
     checked: 2026-08-09
+  - jadro: ceska
+    objekty:
+      - jizerske-hory/ceska-chalupa
+      - luzicke-hory/ceska-chalupa
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 32 758 m: jizerská Česká chalupa
+      (way/196388693) a lužická Česká chalupa (node/917120348). „Česká
+      chalupa" je popisné vlastenecké jméno; obec nedoložená u obou
+      (DATA-17 R6, nevymýšlí se) — rozlišovačem zůstává pohoří a GPS.
+    rozhodl: >-
+      Claude (10. 8. 2026, po exportu Lužických hor — měřením z GPS)
+    checked: 2026-08-10
+  - jadro: chalupa
+    objekty:
+      - luzicke-hory/chalupa
+      - luzicke-hory/chalupa-13012013345
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY V JEDNÉ OBLASTI, naměřeno 10 862 m — a oba se
+      v OSM jmenují jen „Chalupa" (druhá velkými písmeny, Prysk).
+      Druhové slovo v poli name, vzor jádra „1" a „Chata": shoda nic
+      neznamená a triáž nejspíš oba pošle mimo klíč. Zapsáno, aby
+      kontrola nehlásila neznámý nález.
+    rozhodl: >-
+      Claude (10. 8. 2026, po exportu Lužických hor — měřením z GPS)
+    checked: 2026-08-10
+  - jadro: kammbaude
+    objekty:
+      - krusne-hory/kammbaude
+      - luzicke-hory/kammbaude
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 75 424 m: krušnohorská Kammbaude
+      v Hermsdorfu (way/226923379) a lužická Kammbaude v Oybinu
+      (node/12884208392) — obě obce doložené. „Kammbaude" = hřebenová
+      bouda, v saských horách druhové jméno; shoda nic neznamená.
+    rozhodl: >-
+      Claude (10. 8. 2026, po exportu Lužických hor — měřením z GPS)
+    checked: 2026-08-10
+  - jadro: petrova
+    objekty:
+      - krkonose/petrova-bouda
+      - luzicke-hory/petrova-bouda
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY: publikovaná krkonošská Petrova bouda
+      (Špindlerův Mlýn, profil GPS zatím nevede — čeká na DATA-06)
+      a lužická Petrova bouda u Mařenic (node/3742323858, obě obce
+      doložené). Vzdálenost obcí je řádově 60 km a pohoří se neshodují
+      — o duplicitu nejde. Jméno z křestního jména, vzor Zuzana/Evka.
+    rozhodl: >-
+      Claude (10. 8. 2026, po exportu Lužických hor — dle obcí, GPS
+      krkonošského profilu chybí)
+    checked: 2026-08-10
+  - jadro: jedlova
+    objekty:
+      - luzicke-hory/rozhledna-jedlova
+      - orlicke-hory/chata-jedlova
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 140 896 m: rozhledna Jedlová na
+      stejnojmenné hoře v Lužických horách (way/28357810) a Chata
+      Jedlová v Orlických horách (way/140277842). Jedlová je jméno
+      hory v obou pohořích — přenáší se na objekty nezávisle.
+    rozhodl: >-
+      Claude (10. 8. 2026, po exportu Lužických hor — měřením z GPS)
+    checked: 2026-08-10
