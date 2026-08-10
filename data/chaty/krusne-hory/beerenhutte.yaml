@@ -1,0 +1,138 @@
+# Beerenhütte — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# třináctá položka fronty povyšování; vzor DATA-03: OSM × VLASTNÍ
+# WEB). Srubová občerstvovací bauda (Blockhausbaude) na trasách
+# u Zinnwald-Georgenfeldu; bez noclehu. Vše verified: false.
+
+nazev: Beerenhütte
+slug: beerenhutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Blockhausbaude Beerenhütte
+    poznamka: plné jméno na vlastním webu i v katalogu Altenbergu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7336713
+lng: 13.7496469
+obec: Altenberg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/2514269410
+    — data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Bauda stojí v Zinnwald-Georgenfeldu
+    (vlastní web beerenhuette.de, čteno 10. 8. 2026), místní části
+    Altenbergu při hranici; oblíbená zastávka na okruzích kolem
+    Georgenfeldského rašeliniště (komoot highlight). Nadmořskou
+    výšku žádný načtený pramen nevede — nezapisuje se. V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Žádný načtený pramen ubytování nevede — jde o srubovou
+    občerstvovací baudu (altenberg.de ji vede v kategorii Imbiss,
+    outdooractive jako bar/kiosk). Zapsáno ne.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Vlastní web beerenhuette.de (čteno 10. 8. 2026): jídelní lístek
+    v sekci Speisekarte; otevřeno o sobotách, nedělích a svátcích
+    11–17, o svátcích a prázdninách „witterungsabhängig" — podle
+    počasí; web odkazuje na aktuální časy na Google Maps. Kategorie
+    Imbiss: altenberg.de.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  So, ne a svátky 11–17; o prázdninách podle počasí — aktuální časy
+  na webu či Google Maps.
+kontakty:
+  telefon: '+49 35056 229674'
+  email: info@activcamp-beer.de
+  web: https://www.beerenhuette.de/
+overeniProvoz:
+  source: >-
+    Vlastní web beerenhuette.de (čteno 10. 8. 2026): telefon
+    +49 (0) 35056 229674, provozovatel Activcamp Beer GbR (patička
+    webu); OSM vede Heidi & Manfreda Beerovy a e-mail
+    info@activcamp-beer.de (node/2514269410, stav dat 2026-08-09) —
+    příjmení Beer sedí s firmou. Provoz víkendový, závislý na
+    počasí.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku srubu žádný načtený pramen nevede. Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Beerenhütte je bauda víkendová a povětrnostní: srub u stop
+      kolem Georgenfeldského rašeliniště otvírá o sobotách, nedělích
+      a svátcích — a o prázdninách prostě podle počasí. Jméno nese
+      po provozovatelích, rodině Beerových; s borůvkami (Beeren) je
+      to slovní hříčka, kterou pramen nerozsuzuje.
+    kategorie: jine
+    zdroj: >-
+      víkendový a povětrnostní režim: vlastní web (čteno
+      10. 8. 2026); rodina Beer: OSM operator + Activcamp Beer GbR
+      v patičce webu. Původ jména prameny výslovně nevedou —
+      hříčka se jen konstatuje, nerozsuzuje.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Srubová občerstvovací bauda na trasách u Zinnwald-Georgenfeldu —
+  víkendový bufet rodiny Beerových u okruhů kolem Georgenfeldského
+  rašeliniště. Otevřeno o sobotách, nedělích a svátcích od
+  jedenácti do pěti, o prázdninách podle počasí.
+text:
+  - >-
+    Na hraničním hřebeni u Cínovce se chodí kolem rašeliniště —
+    a Beerenhütte je srub, kde se ten okruh láme na svačinu.
+    Blockhausbaude rodiny Beerových otvírá o víkendech a svátcích
+    a v sezóně podle počasí; kdo jde v týdnu, koukne předem na web
+    nebo Google Maps.
+  - >-
+    Nocleh tu není a bauda ani nic jiného nepředstírá: je to poctivý
+    bufet pro běžkaře, pěší a cyklisty od jedenácti do pěti. Kolem
+    navazují stopy k Lugsteinbaude, biatlonové aréně a přes hranici
+    na Cínovec.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu baudy
+    a z katalogu Altenbergu; polohu a kontakty nese OpenStreetMap.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web baudy — otvírací doba (so/ne/svátky 11–17, podle
+      počasí), Speisekarte, telefon, Activcamp Beer GbR (načteno
+      10. 8. 2026)
+    url: https://www.beerenhuette.de/
+  - popis: >-
+      altenberg.de — kategorie Imbiss „Blockhausbaude Beerenhütte
+      Zinnwald" (čteno 10. 8. 2026)
+    url: https://www.altenberg.de/mobile/de/gastro/altenberg/beerenhuette-zinnwald/8758047/
+  - popis: OpenStreetMap (GPS, provozovatelé, e-mail; ODbL)
+    url: https://www.openstreetmap.org/node/2514269410
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/beerenhutte.yaml rešerší
+  (10. 8. 2026) — třináctá položka fronty povyšování, POSLEDNÍ
+  z fronty čtecího průchodu (zbylé dvě — Zinnwaldbaude a Schanzenbaude
+  Geyer — odloženy s nálezy v kandidátech). Klíč zařazení:
+  občerstvení pro veřejnost přímo na trasách u rašeliniště (vzor
+  bufetových baud); nocleh ne.
+
+  OSM URL node/2514269410 ověřena gropem proti kandidátovi.
+  K OVĚŘENÍ (DATA-04): výška, rok stavby srubu, vztah k Pension
+  Beerenvilla (beerenvilla.de — týž rod Beerových? NEDOMÝŠLET).
+  Fotku dodá příští běh DATA-02.
