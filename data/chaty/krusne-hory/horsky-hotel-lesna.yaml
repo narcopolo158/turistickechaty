@@ -1,0 +1,166 @@
+# Horský hotel Lesná — povýšen z kandidáta DATA-01 rešerší (10. 8. 2026,
+# vzor DATA-03: katalog × OSM × regionální prameny; vlastní web se
+# nenačetl — kontakty z OSM sedí s regionální značkou). Katalogový
+# řádek HUT-0110. Vše verified: false.
+
+nazev: Horský hotel Lesná
+slug: horsky-hotel-lesna
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Horský areál Lesná
+    poznamka: >-
+      jméno celého areálu s muzeem a infocentrem, jehož je hotel
+      součástí
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.5647168
+lng: 13.4305893
+vyska: 911
+obec: Boleboř
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/410321060 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 911 m: shodně katalog
+    (HUT-0110), krusnohorci.cz i regionální značka Krušnohoří (čteno
+    10. 8. 2026). OBEC — ROZPOR, přiznaný: adresa „Lesná 22, 431 21
+    Boleboř" (krusnohorci.cz) a „Boleboř–Svahová" (regionální značka)
+    × katalog vede „Nová Ves v Horách" — osada Lesná leží mezi nimi
+    (krusnohorci.cz: „2 km jihovýchodně od osady Malý Háj a 5 km
+    jihozápadně od Nové Vsi v Horách"); zapsána obec z adresy.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 40
+overeniNocleh:
+  source: >-
+    Regionální značka Krušnohoří (čteno 10. 8. 2026): „40 lůžek
+    v 15-ti pokojích" — dvou- až čtyřlůžkové se sprchou/vanou a WC.
+    ROZPOR, přiznaný: krusnohorci.cz uvádí „celkovou ubytovací
+    kapacitu 49 lůžek (16 pokojů), z toho čtyři podkrovní apartmány"
+    — zapsáno nižší číslo (konvence při rozporu), rozdíl mohou dělat
+    apartmány a přistýlky. Katalog (HUT-0110): ubytování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Krusnohorci.cz (čteno 10. 8. 2026): „V přízemí je k dispozici bar
+    s restaurací s celotýdenním provozem." Regionální značka
+    Krušnohoří: restaurace o 126 místech ve čtyřech dispozicích
+    (velká 51, malá 25, salonek 20, vnitřní terasa 30); „hotová
+    jídla, zvěřinové speciality a minutková jídla". Katalog
+    (HUT-0110): stravování ano. Otvírací hodiny žádný načtený pramen
+    nevede.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 476 113 040'
+  email: info@horskyhotellesna.cz
+  web: https://www.horskyhotellesna.cz/
+overeniProvoz:
+  source: >-
+    Telefon 476 113 040: shodně OSM i regionální značka Krušnohoří
+    (čteno 10. 8. 2026); e-mail a web z OSM — vlastní web se při
+    rešerši nenačetl (neschválené načtení), kontakty ale potvrzuje
+    regionální značka. Katalog (HUT-0110): provoz celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku hotelu žádný načtený pramen nevede. Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Hotel je jádrem celého horského areálu na Lesenské pláni:
+      kolem stojí Krušnohorské muzeum, infocentrum, kaplička
+      sv. Antonína, arboretum, geologický park s modelem rašeliniště,
+      dřevěná šachovnice i „Krušnohorský rynek se samotočí" — na
+      hřebeni vzniklo malé vzdělávací městečko.
+    kategorie: jine
+    zdroj: >-
+      krusnohorci.cz (čteno 10. 8. 2026) — výčet: „Infocentrum
+      Lesenská pláň, Krušnohorské muzeum, Krušnohorský rynek se
+      samotočí, Kapličku sv. Antonína, Vzdělávací a rekreační
+      centrum, arboretum, geologický park, model rašeliniště,
+      dřevěnou šachovnici, zvěrokruh a velké dětské hřiště"
+  - text: >-
+      Hotel nese certifikát KRUŠNOHOŘÍ regionální produkt
+      (č. 823002) — systém regionálních značek kvality funguje od
+      roku 2005.
+    kategorie: jine
+    zdroj: >-
+      Asociace regionálních značek, profil hotelu (čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Celoroční horský hotel na Lesenské pláni v 911 metrech, uprostřed
+  areálu s Krušnohorským muzeem, arboretem a geologickým parkem —
+  čtyřicet lůžek, restaurace se zvěřinovými specialitami a zázemí,
+  jaké na hřebeni východního Krušnohoří jinde nenajdete pohromadě.
+text:
+  - >-
+    Lesná není klasická osamělá bouda, ale středisko: kolem hotelu
+    vyrostl celý naučný areál s muzeem krušnohorského života,
+    infocentrem, kapličkou, arboretem a geologickým parkem s modelem
+    rašeliniště. Kdo sem dorazí po hřebeni, může tu strávit klidně
+    půl dne, aniž si sedne k pivu.
+  - >-
+    K pivu si ale sednout může: bar s restaurací v přízemí jede po
+    celý týden, kuchyně staví na hotových jídlech, minutkách
+    a zvěřině a sálů je tu dohromady pro víc než sto hostů. Spí se
+    ve dvou- až čtyřlůžkových pokojích — prameny se neshodnou, jestli
+    je lůžek čtyřicet, nebo devětačtyřicet, takže s větší skupinou
+    je lepší kapacitu domluvit předem.
+  - >-
+    Poloha na pláni mezi Malým Hájem a Novou Vsí v Horách z hotelu
+    dělá přirozenou základnu pro východní Krušnohoří — v zimě pro
+    běžkaře, v létě pro cyklisty i pěší.
+  - >-
+    Údaje na téhle stránce pocházejí z regionálních turistických
+    webů, z profilu regionální značky a z externího katalogu; polohu
+    nese OpenStreetMap. Vlastní stránky hotelu se při rešerši
+    nenačetly. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      krusnohorci.cz — poloha, výška 911 m, adresa Lesná 22 (Boleboř),
+      49 lůžek / 16 pokojů, restaurace s celotýdenním provozem, výčet
+      areálu (čteno 10. 8. 2026)
+    url: https://krusnohorci.cz/ubytovani/162-horsky-areal-lesna
+  - popis: >-
+      Asociace regionálních značek — certifikát KRUŠNOHOŘÍ regionální
+      produkt č. 823002, 40 lůžek / 15 pokojů, restaurace 126 míst,
+      telefon (čteno 10. 8. 2026)
+    url: https://www.regionalni-znacky.cz/krusnohori/sluzby/horsky-hotel-lesna-1
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0110
+      (911 m, celoročně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, kontakty; ODbL)
+    url: https://www.openstreetmap.org/node/410321060
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/horsky-hotel-lesna.yaml
+  rešerší (10. 8. 2026). Klíč zařazení: celoroční nocleh + restaurace
+  pro veřejnost na hřebeni, katalogový objekt HUT-0110 (jistota B).
+
+  ROZPORY: kapacita 40/15 (regionální značka) × 49/16
+  (krusnohorci.cz) — zapsáno nižší; obec Boleboř (adresa)
+  × Nová Ves v Horách (katalog).
+
+  K OVĚŘENÍ (DATA-04): vlastní web (nenačetl se — otvírací doba
+  restaurace, aktuální kapacita); rok vzniku hotelu a historie osady
+  Lesná (zaniklá krušnohorská ves? — NEDOMÝŠLET, dohledat); vztah ke
+  Krušnohorské bílé stopě (středisko je v jejím seznamu, ale detail
+  se nenačetl). Fotku dodá příští běh DATA-02.

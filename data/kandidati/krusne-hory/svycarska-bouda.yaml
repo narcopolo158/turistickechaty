@@ -21,5 +21,17 @@ interniPoznamky: >-
   KANDIDÁT z OSM (DATA-01, stav dat 2026-08-09) — na web povýšit do data/chaty/
   až po křížovém ověření (DATA-03).
 
+  REŠERŠE 10. 8. 2026 — SIGNÁLY MIMO PROVOZ, NEPOVYŠOVAT BEZ DALŠÍHO
+  DOKLADU: Firmy.cz u „Penzion Švýcarská bouda - Restaurace"
+  (Plešivecká 450, Abertamy) píše „Tato firma nebo pobočka již není
+  aktivní"; objekt je zároveň veden v databázi prázdných domů
+  prazdnedomy.cz (detail 8355 „Švýcarská bouda Plešivec" — stránka se
+  ze sandboxu nenačetla, jen výskyt v hledání). Proti tomu OSM tag
+  alpine_hut a lyžařský vlek Švýcarská bouda v provozních přehledech
+  (in-pocasi.cz, karlovyvary.cz). Kandidát na profil se stavem
+  mimo-provoz (vzor Trangoška), ale doklad je zatím slabý — příští
+  session přečíst prazdnedomy.cz (odjinud) a zkusit dohledat aktuální
+  stav; případný profil nesmí tvrdit ani provoz, ani zánik.
+
   Typ odvozen z OSM tagu tourism=alpine_hut (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
