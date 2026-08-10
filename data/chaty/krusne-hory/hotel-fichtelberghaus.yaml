@@ -1,0 +1,197 @@
+# Fichtelberghaus — povýšen z kandidáta DATA-01 rešerší (10. 8. 2026, vzor
+# DATA-03: katalog × OSM × VLASTNÍ WEB + historie města Oberwiesenthal).
+# Katalogový řádek HUT-0293 (jistota A) — dům na nejvyšší hoře Saska.
+# POZOR: hotel je od 1. 3. 2026 v rekonstrukci (restaurace jede dál) —
+# viz overeniProvoz. Vše verified: false.
+
+nazev: Fichtelberghaus
+slug: hotel-fichtelberghaus
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Hotel Fichtelberghaus
+    poznamka: jméno v OSM i na vlastním webu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.429022
+lng: 12.9544137
+vyska: 1215
+obec: Kurort Oberwiesenthal
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/2821159310 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 1215 m: vlastní web („auf 1215
+    Metern", načteno 10. 8. 2026) i externí katalog (HUT-0293) — sedí.
+    Obec Kurort Oberwiesenthal: OSM i katalog. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Kapacita se zapisuje dle stavu PŘED rekonstrukcí (historie města:
+# budova z 1999 má 2 jednolůžkové a 26 dvoulůžkových pokojů) — po
+# rekonstrukci se může změnit, proto jen v ověření, ne v poli kapacita.
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Vlastní web hotel-fichtelberghaus.de (načteno 10. 8. 2026):
+    „komfortable und gemütliche Zimmer" — ALE hotel je od 1. 3. 2026
+    zavřený kvůli rekonstrukci a hosty do prosince 2026 odkazuje na
+    partnerský Naturhotel Sachsenbaude. Stav před rekonstrukcí dle
+    historie města Oberwiesenthal: budova z 1999 se 2 jednolůžkovými
+    a 26 dvoulůžkovými pokoji. Katalog (HUT-0293): ubytování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web hotel-fichtelberghaus.de (načteno 10. 8. 2026):
+    restaurace Erzgebirgsstuben — „Unser Restaurant Erzgebirgsstuben
+    bleibt weiterhin für Sie geöffnet" (zůstává otevřená i během
+    rekonstrukce hotelu). Otvírací doba neuvedena. Katalog (HUT-0293):
+    stravování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  email: info@fichtelberghaus.de
+  web: https://www.hotel-fichtelberghaus.de/
+overeniProvoz:
+  source: >-
+    Vlastní web hotel-fichtelberghaus.de (načteno 10. 8. 2026): hotel
+    se od 1. 3. 2026 uzavírá na rekonstrukci, hostům je do prosince
+    2026 nabídnut partnerský Naturhotel Sachsenbaude; restaurace jede
+    dál. E-mail info@fichtelberghaus.de; telefon web neuvádí. Katalog:
+    provoz celoročně — platilo před rekonstrukcí.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1889
+    udalost: >-
+      Na vrcholu bylo otevřeno první Fichtelberghaus s hospodou
+      a kamennou vyhlídkovou věží (stavba začala 1888); rozšiřovalo se
+      1899 a znovu 1910. Předchůdci byli ještě starší — dřevěná
+      vyhlídková stavba z 1845 a kamenný šestiboký Belvedere z 1847.
+    zdroj: >-
+      historie města Oberwiesenthal, stránka o Fichtelberghausu (čteno
+      10. 8. 2026) — stavba 1888, otevření 1889, rozšíření 1899 a 1910;
+      předchůdci 1845 a 1847.
+  - rok: 1963
+    udalost: >-
+      Večer 25. února vypukl v domě požár a budova vyhořela až na
+      základy.
+    zdroj: >-
+      historie města Oberwiesenthal (čteno 10. 8. 2026) — „vyhořela až
+      na základy"; datum „Am Abend des 25. Februars 1963 brach im
+      Fichtelberghaus ein Brand aus" tourmedia-service.de (čteno
+      10. 8. 2026).
+  - rok: 1967
+    udalost: >-
+      Otevřena poválečná novostavba se 42 m vysokou vyhlídkovou věží,
+      hospodou, kavárnou a hotelem.
+    zdroj: historie města Oberwiesenthal (čteno 10. 8. 2026)
+  - rok: 1999
+    udalost: >-
+      Dne 18. 7. 1999 byla otevřena dnešní budova, stavěná ve stylu
+      předchůdce z roku 1910 — 2 jednolůžkové a 26 dvoulůžkových
+      pokojů, restaurace a sál.
+    zdroj: >-
+      historie města Oberwiesenthal (čteno 10. 8. 2026) — otevření
+      „18.07.1999", pokoje, restaurace, sál; tourmedia-service.de
+      k téže přestavbě: nová rozhledna měří 31 m.
+
+zajimavosti:
+  - text: >-
+      Dům stojí na Fichtelbergu, nejvyšší hoře Saska — a jen o pár
+      desítek metrů níž než protější Klínovec, nejvyšší vrchol celých
+      Krušných hor na české straně.
+    kategorie: vyska
+    zdroj: >-
+      „Der Fichtelberg ist mit 1214 m der höchste Berg Sachsens"
+      (tourmedia-service.de, čteno 10. 8. 2026); hora 1214 m × dům
+      „auf 1215 Metern" na vlastním webu — rozdíl metru mezi vrcholem
+      a budovou se nesrovnává. Srovnání s Klínovcem (1244 m dle
+      katalogového řádku HUT-0114) je aritmetika katalogových hodnot
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dům na střeše Saska — na vrcholu Fichtelbergu v 1215 metrech stojí
+  hostinec s vyhlídkovou věží nepřetržitě od roku 1889, dnešní budova
+  z roku 1999 kopíruje styl té z roku 1910. Hotel je momentálně
+  v rekonstrukci, restaurace Erzgebirgsstuben ale jede dál.
+text:
+  - >-
+    Fichtelberghaus vystřídal na vrcholu nejvyšší saské hory několik
+    podob: dřevěnou vyhlídku z roku 1845, kamenný Belvedere z 1847,
+    první skutečný horský dům s hospodou a věží otevřený 1889 —
+    a když ten roku 1963 vyhořel až na základy, novostavbu z 1967
+    se dvaačtyřicetimetrovou věží. Dnešní budova je z roku 1999
+    a záměrně se vrací ke stylu rozšířeného domu z roku 1910.
+  - >-
+    Kdo sem míří teď, musí počítat s omezením: hotel se v březnu 2026
+    uzavřel kvůli rekonstrukci a nocležníky do prosince 2026 odkazuje
+    na partnerský dům níž ve svahu. Restaurace Erzgebirgsstuben však
+    podle vlastního webu zůstává otevřená — občerstvení na vrcholu
+    tedy kolemjdoucí nenajde zavřené.
+  - >-
+    Před rekonstrukcí dům nabízel dva jednolůžkové a šestadvacet
+    dvoulůžkových pokojů, restauraci a sál; jak bude vypadat nabídka
+    po znovuotevření, zatím doloženo není. Věž novostavby z roku 1967
+    měřila dvaačtyřicet metrů, ta dnešní je s jednatřiceti metry
+    o poznání nižší — zato se dům vrátil k předválečné tváři.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu domu, z historie
+    města Oberwiesenthal a z externího katalogu; polohu nese
+    OpenStreetMap. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web domu — výška 1215 m, rekonstrukce od 1. 3. 2026,
+      restaurace Erzgebirgsstuben otevřená, e-mail (načteno
+      10. 8. 2026)
+    url: https://www.hotel-fichtelberghaus.de/
+  - popis: >-
+      Historie města Oberwiesenthal — letopočty 1845, 1847, 1888/1889,
+      1899, 1910, požár 1963, novostavba 1967, dnešní budova 1999
+      s počty pokojů
+    url: https://www.oberwiesenthal.com/wohnort/geschichte/fichtelberghaus.htm
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0293
+      (1215 m, Kurort Oberwiesenthal, celoročně, jistota A)
+    url: https://nocleh.kct.cz/chaty
+  - popis: >-
+      tourmedia-service.de, profil Fichtelbergu — „höchster Berg
+      Sachsens" (1214 m), datum požáru 25. 2. 1963, věž 42 m u stavby
+      1967 a 31 m po přestavbě v 90. letech
+    url: https://tourmedia-service.de/aussichtsberge/fichtelberg
+  - popis: OpenStreetMap (GPS, tagy; ODbL)
+    url: https://www.openstreetmap.org/node/2821159310
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/hotel-fichtelberghaus.yaml
+  rešerší (10. 8. 2026). Slug drží tvar kandidáta (hotel-…), aby pár
+  kandidát+profil sdílel identitu oblast/slug (kontrola kolizí);
+  jméno domu je ale Fichtelberghaus — katalog HUT-0293 ho vede bez
+  druhového „Hotel". Klíč zařazení: vrcholový hostinec s věží
+  a noclehem, katalogový objekt HUT-0293 s jistotou A, kontinuita
+  služby od 1889 = turistická minulost nesporná.
+
+  STAV: hotel od 1. 3. 2026 v rekonstrukci (nocleh nedostupný, hosté
+  odkázáni do Naturhotel Sachsenbaude do prosince 2026), restaurace
+  otevřená. Stav „v-provozu" drží restaurace; až se potvrdí
+  znovuotevření hotelu, zvednout checked. Slug schválně bez „hotel-"
+  (jméno domu je Fichtelberghaus, „Hotel" je druhové).
+
+  SOUVISEJÍCÍ KANDIDÁTI: fichtelberghutte (jiný objekt níž ve svahu,
+  way/132538678 — web fichtelberghuette.de se nenačetl, zkusit příště);
+  naturhotel-sachsenbaude (partnerský dům, teď ubytovává hosty
+  Fichtelberghausu — kandidát v koši POSOUDIT). Telefon žádný načtený
+  pramen nevede. Fotku dodá příští běh DATA-02.

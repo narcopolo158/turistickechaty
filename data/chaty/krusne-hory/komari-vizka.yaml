@@ -1,0 +1,186 @@
+# Komáří vížka — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026, vzor
+# DATA-03: katalog × OSM × VLASTNÍ WEB + Kudy z nudy + Rozhlednovým rájem).
+# První profil Krušných hor. Vlajkový objekt oblasti: katalogový řádek
+# HUT-0113, nejdelší sedačková lanovka bez mezistanice v ČR.
+# Vše verified: false.
+
+nazev: Komáří vížka
+slug: komari-vizka
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Horský hotel Komáří vížka
+    poznamka: plné jméno na vlastním webu
+  - nazev: Komáří hůrka
+    poznamka: >-
+      jméno vrcholu, na kterém objekt stojí — hůrka je hora, vížka
+      budova s věží; prameny obě jména občas zaměňují
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.706691
+lng: 13.8566352
+vyska: 806
+obec: Krupka
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/2837527541 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 806 m: externí katalog
+    (HUT-0113) i titulek Turistika.cz „Rozhledna Komáří Vížka (806 m
+    n. m.)"; Kudy z nudy vede u vrcholu Komáří hůrky 808 m
+    a Rozhlednovým rájem 809 m — čísla se liší podle měřeného bodu
+    (budova × vrchol), bereme katalogovou hodnotu budovy. Obec Krupka:
+    katalog; adresa vlastního webu „Horní Krupka 120, 417 41 Horní
+    Krupka" (načteno 10. 8. 2026). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 19
+overeniNocleh:
+  source: >-
+    Vlastní web komarivizka.eu, sekce ubytování (načteno 10. 8. 2026):
+    „7 pokojů při maximálním počtu 19 lůžek" — 3 dvoulůžkové,
+    3 trojlůžkové, 1 čtyřlůžkový, každý s koupelnou; check-in 11–19,
+    check-out do 10. Kudy z nudy uvádí „11 pokojů při maximálním počtu
+    27 lůžek" s toaletami na chodbě — starší stav před úpravami, bereme
+    vlastní web. Katalog (HUT-0113): ubytování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web komarivizka.eu (načteno 10. 8. 2026): restaurace,
+    možnost snídaní, obědů a večeří, platba kartou. Kudy z nudy:
+    „bohatý výběr z tradiční české kuchyně", specialita „vyhlášené
+    domácí knedlíky a moučníky". Katalog (HUT-0113): stravování ano.
+    Otvírací dobu restaurace žádný načtený pramen nevede (OSM u objektu
+    uvádí 10–22 denně — surový tag, neověřeno).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+420 417 861 348'
+  email: info@komarivizka.eu
+  web: https://www.komarivizka.eu/
+overeniProvoz:
+  source: >-
+    Vlastní web komarivizka.eu (načteno 10. 8. 2026): recepce
+    +420 417 861 348, lanovka +420 734 570 118 a +420 734 570 117,
+    e-mail info@komarivizka.eu. Katalog (HUT-0113): provoz celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1857
+    udalost: >-
+      Majitel zdejšího panství Clary-Aldringen nechal na místě staré
+      hornické zvonice postavit zděnou budovu s patnáctimetrovou
+      vyhlídkovou věží — dnešní Komáří vížku.
+    zdroj: >-
+      Kudy z nudy (čteno 10. 8. 2026) — „postavena majitelem zdejšího
+      panství Clary Aldringenem roku 1857"; výška věže 15 m dle
+      Rozhlednovým rájem.
+  - rok: 1952
+    udalost: >-
+      Z Bohosudova (Krupky) sem byla zprovozněna visutá lanová dráha —
+      dnes druhá nejstarší provozovaná v Česku a s 2 348 m nejdelší
+      sedačková lanovka bez mezistanice v republice; jízda trvá
+      15,5 minuty.
+    zdroj: >-
+      Kudy z nudy, stránka lanové dráhy (čteno 10. 8. 2026) —
+      „zprovozněna v roce 1952", „druhá nejstarší provozovaná visutá
+      lanová dráha v Česku", délka 2 348 m, „nejdelší sedačková lanovka
+      bez mezistanice v České republice", doba jízdy 15,5 min.
+
+zajimavosti:
+  - text: >-
+      Od poloviny 16. století stála na vrcholu dřevěná věž se zvonem,
+      který cínovým havířům pod horou ohlašoval začátek a konec směny —
+      jméno Komáří vížka nese dnešní budova po ní.
+    kategorie: stari
+    zdroj: Kudy z nudy (čteno 10. 8. 2026)
+  - text: >-
+      Rozhled odsud chválil už cestovní průvodce z roku 1890 — vlastní
+      web cituje, že „patří nejen k nejkrásnějším v Krušných horách,
+      ale může se směle tvrdit, že i k nejkrásnějším v celé Evropě".
+      Věž sama je dnes nepřístupná (vyhlídková okna byla při
+      modernizaci zaslepena), výhled ale poskytuje sám hřeben.
+    kategorie: jine
+    zdroj: >-
+      vlastní web komarivizka.eu (citace průvodce 1890); nepřístupnost
+      věže a zaslepená okna Rozhlednovým rájem, terénní výhled tamtéž
+      (čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Zděná budova s věží z roku 1857 na hraně krušnohorského hřebene nad
+  Krupkou — horský hotel s restaurací, sedmi pokoji a výhledem, který
+  chválily průvodce už v devatenáctém století. Z Bohosudova sem od roku
+  1952 šplhá nejdelší sedačková lanovka bez mezistanice v Česku.
+text:
+  - >-
+    Komáří vížka stojí na místě, kde od poloviny šestnáctého století
+    zvonila dřevěná věž havířům z cínových dolů pod horou začátek
+    a konec směny. Dnešní zděnou budovu s patnáctimetrovou věží nechal
+    roku 1857 postavit majitel panství Clary-Aldringen — a jméno staré
+    zvonice jí zůstalo.
+  - >-
+    Nahoru se dá vyjet i bez vlastních nohou: lanovka z Bohosudova jede
+    od roku 1952, měří 2 348 metrů a je nejdelší sedačkovou lanovkou
+    bez mezistanice v republice; jízda trvá zhruba čtvrt hodiny. Kdo
+    přijde po hřebeni, má to z Krupky po značce prudším kopcem.
+  - >-
+    Hotel nabízí sedm pokojů s vlastní koupelnou pro nejvýš devatenáct
+    hostů a restauraci s českou kuchyní — pověst tu mají domácí
+    knedlíky a moučníky. Věž sama je nepřístupná, vyhlídková okna byla
+    při modernizaci zaslepena; o výhled ale návštěvník nepřijde, hřeben
+    ho nabízí sám od sebe, od Českého středohoří po Lužické hory.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu hotelu, z Kudy
+    z nudy a z externího katalogu; polohu nese OpenStreetMap. Redakce
+    nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web hotelu — kontakty, 7 pokojů / 19 lůžek, restaurace,
+      citace průvodce z 1890 (načteno 10. 8. 2026)
+    url: https://www.komarivizka.eu/
+  - popis: >-
+      Kudy z nudy — historie (zvonice od pol. 16. století, stavba 1857
+      Clary-Aldringen), profil lanové dráhy (1952, 2 348 m, 15,5 min)
+    url: https://www.kudyznudy.cz/aktivity/horsky-hotel-komari-vizka-s-rozhlednou
+  - popis: >-
+      Rozhlednovým rájem — věž 15 m, zaslepená vyhlídková okna,
+      nepřístupnost, výhled z terénu
+    url: https://www.rozhlednovymrajem.cz/rozhledny/komari-vizka/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0113
+      (806 m, Krupka, celoročně)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, telefon, tagy; ODbL)
+    url: https://www.openstreetmap.org/node/2837527541
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/komari-vizka.yaml rešerší
+  (10. 8. 2026). Klíč zařazení: obsluhovaný objekt s restaurací
+  a noclehem na hřebenové trase, katalogový objekt HUT-0113 (jistota B),
+  cíl lanovky — role na trase nesporná. První profil Krušných hor.
+
+  ROZPORY zapsané v ověřeních: kapacita 7 pokojů/19 lůžek (vlastní web)
+  × 11 pokojů/27 lůžek (Kudy z nudy — nejspíš starší stav); výška 806
+  (katalog, Turistika.cz) × 808 (Kudy z nudy, vrchol) × 809
+  (Rozhlednovým rájem) — různé měřené body, bereme katalog.
+
+  K OVĚŘENÍ (DATA-04): otvírací doba restaurace (OSM tag 10–22 denně
+  neověřen), aktuální kapacita telefonicky, provozovatel (OSM vede
+  „Komáří vížka, s.r.o.", vlastní web firmu neuvádí). Fotku dodá příští
+  běh DATA-02. Rozhledna je NEPŘÍSTUPNÁ — do FAQ oblasti se hodí, ale
+  nezapisovat ji jako službu.

@@ -1,0 +1,125 @@
+# Schwartenbergbaude — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# vzor DATA-03: katalog × OSM × VLASTNÍ WEB). Katalogový řádek HUT-0294
+# (jistota A). Bauda BEZ noclehu — výčepní a výletní dům spolku
+# Erzgebirgsverein z let 1926/27; nocleh odkazuje na partnerský hotel.
+# Vše verified: false.
+
+nazev: Schwartenbergbaude
+slug: schwartenbergbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.6590335
+lng: 13.4658338
+vyska: 789
+obec: Neuhausen/Erzgeb.
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/133632631 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 789 m: vlastní web (načteno
+    10. 8. 2026) i externí katalog (HUT-0294) — sedí. Poloha: vlastní
+    web — na Schwartenbergu mezi Neuhausenem a hračkářským Seiffenem,
+    adresa Am Schwartenberg 10, 09544 Neuhausen/Erzgebirge. V terénu
+    neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Vlastní web schwartenbergbaude.de (načteno 10. 8. 2026): o pokojích
+    nic, na nocleh odkazuje partnerský „Ferienhotel Goldhübel".
+    Katalog (HUT-0294): ubytování ne — sedí.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web schwartenbergbaude.de (načteno 10. 8. 2026): restaurace
+    po–pá 11–17, so/ne/svátky 11–20 („an Feiertagen haben wir für Sie
+    immer bis 20.00 Uhr geöffnet"). Shodná doba je i v OSM tagu.
+    Katalog (HUT-0294): stravování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Po–pá 11–17, o víkendech a svátcích 11–20.
+kontakty:
+  telefon: '+49 37361 45686'
+  email: info@schwartenbergbaude.de
+  web: https://www.schwartenbergbaude.de/
+overeniProvoz:
+  source: >-
+    Vlastní web schwartenbergbaude.de (načteno 10. 8. 2026): telefon
+    037361 45686 (mezinárodně +49 37361 45686 — shoda s OSM), e-mail
+    info@schwartenbergbaude.de, provozovatel Jörg Müller. Katalog:
+    provoz celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1927
+    udalost: >-
+      Baudu postavil v letech 1926–27 spolek Erzgebirgsverein jako
+      výletní dům na vrcholu Schwartenbergu.
+    zdroj: >-
+      vlastní web (načteno 10. 8. 2026) — „Erbaut wurde sie in den
+      Jahren 1926/27 vom Erzgebirgsverein".
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Výletní bauda spolku Erzgebirgsverein z let 1926–27 na vrcholu
+  Schwartenbergu (789 m) mezi Neuhausenem a hračkářským Seiffenem —
+  restaurace s výhledem otevřená denně, nocleh tu ale nehledejte.
+text:
+  - >-
+    Schwartenbergbaude patří ke klasické generaci spolkových baud:
+    postavil ji v letech 1926 až 1927 Erzgebirgsverein, krušnohorský
+    turistický spolek, a výletním domem na vrcholu zůstala dodnes.
+    Kopec nad Seiffenem nabízí kruhový rozhled na hřeben na jihu
+    i do saského podhůří.
+  - >-
+    Dnešní podoba služby je jednoduchá: restaurace otevřená přes týden
+    od jedenácti do pěti a o víkendech a svátcích až do osmi večer.
+    Nocleh bauda nenabízí — kdo chce zůstat, tomu vlastní web
+    doporučuje partnerský hotel v okolí. Pro pěší je to zastávka na
+    hřebenové cestě mezi Saydou a Olbernhau, pro motoristy krátká
+    odbočka ze silnice.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu baudy
+    a z externího katalogu; polohu nese OpenStreetMap. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web baudy — výška 789 m, poloha, stavba 1926/27
+      spolkem Erzgebirgsverein, otvírací doba, kontakty, provozovatel
+      (načteno 10. 8. 2026)
+    url: https://www.schwartenbergbaude.de/
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0294
+      (789 m, Neuhausen, celoročně, bez ubytování, jistota A)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, telefon, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/way/133632631
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/schwartenbergbaude.yaml rešerší
+  (10. 8. 2026). Klíč zařazení: veřejná restaurace na vrcholu
+  s hřebenovou rolí + stavba turistickým spolkem 1926/27 = turistická
+  minulost doložená vlastním webem; katalogový objekt HUT-0294
+  s jistotou A. Typ obsluhovana i bez noclehu — vzor krkonošských bud
+  bez ubytování.
+
+  K OVĚŘENÍ (DATA-04): sezónní odstávky (katalog říká celoročně, web
+  je nevede); web zmiňuje minulost spojenou s plachtaři — formulace
+  z načtení nejasná, před použitím v próze ověřit přesné znění. Fotku
+  dodá příští běh DATA-02.
