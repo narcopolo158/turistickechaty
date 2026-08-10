@@ -4084,3 +4084,239 @@ vyrazeno:
       KLÍČ, doklad v tagu OSM + web/provozovatel, vzor VT-03 a jizerské
       triáže 30. 7.)
     checked: 2026-08-10
+  # ── První průchod triáže Lužických hor (10. 8. 2026): pronájmy ──
+  # 23 objektů (celý koš MIMO KLÍČ + 2 jasné z koše POSOUDIT).
+  # PONECHÁNO na čtení: saské baudy kolem Oybina a Jonsdorfu
+  # (Töpferbaude, Sonnebergbaude, Hochwaldbaude…), skautská chata
+  # Šelezká (třída spolkových chat — vzor šumavské otázky pro Michala)
+  # a chalupa-medium (rozpor tag × jméno).
+  - osm: https://www.openstreetmap.org/node/13012013345
+    slug: luzicke-hory/chalupa-13012013345
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „CHALUPA“) — web chalupa-prysk.cz (pronájem chalupy v Prysku); tag tourism=apartment. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/10960937629
+    slug: luzicke-hory/edmundshutte
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Edmundshütte“) — web natururlaub-oybin.de (pronájmy Ronalda Hausera v Oybinu, jako Hauserhütte). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/221473618
+    slug: luzicke-hory/ferienhaus-annemone
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Ferienhaus Annemone“) — už jméno říká „Ferienhaus", web ferienhaus-annemone.de. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/292729066
+    slug: luzicke-hory/ferienhaus-belvedere
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Ferienhaus Belvedere“) — už jméno říká „Ferienhaus", bez webu i občerstvení. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/11737353690
+    slug: luzicke-hory/ferienhaus-freiberg
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Ferienhaus Freiberg“) — už jméno říká „Ferienhaus", web ferienhaus-freiberg-oybin.hpage.com (provozovatel dle OSM Hagen Freiberg). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/283353189
+    slug: luzicke-hory/ferienhaus-gutekunst
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Ferienhaus Gutekunst“) — už jméno říká „Ferienhaus", web guetchen-im-felde.de. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/221345884
+    slug: luzicke-hory/ferienhaus-peggy
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Ferienhaus Peggy“) — už jméno říká „Ferienhaus" (provozovatel dle OSM Holzwerk Oybin). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/181304303
+    slug: luzicke-hory/haus-elli
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Haus Elli“) — pronajímaný domek se ženským jménem, bez webu i občerstvení. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/566450111
+    slug: luzicke-hory/hauserhutte
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Hauserhütte“) — web natururlaub-oybin.de (pronájmy Ronalda Hausera, jako Edmundshütte). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/1399960815
+    slug: luzicke-hory/jonsberg-hutten
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Jonsberg-Hütten“) — web jonsberg-huetten.de (pronájem chatek na Jonsbergu — množné „Hütten"). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/12829066379
+    slug: luzicke-hory/lesni-chaty-kytlice-hogo-fogo
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „LESNÍ CHATY KYTLICE "HOGO FOGO"“) — web hogofogochatykytlice.cz (pronájem lesních chat). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/3467089262
+    slug: luzicke-hory/muhlenhof-oberseifersdorf
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Mühlenhof Oberseifersdorf“) — pronajímaná mlýnská usedlost (web muehlenhof-oberseifersdorf.de, provozovatelka dle OSM Ilka Petzold). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/10160123621
+    slug: luzicke-hory/oberlausitzer-hof
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Oberlausitzer Hof“) — už web říká ferienwohnung-oberlausitzer-hof.de (rodina Langer dle OSM). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/relation/13847855
+    slug: luzicke-hory/red-rock-huts
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Red Rock Huts“) — web ferienwohnungen-oybin.de (pronájmy pod skalami Oybina, jako Red Rock Lodge). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/103533783
+    slug: luzicke-hory/red-rock-lodge
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Red Rock Lodge“) — web ferienwohnungen-oybin.de (jako Red Rock Huts). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/148052785
+    slug: luzicke-hory/richter-hausl
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Richter-Häusl“) — pronajímaný domek nesoucí příjmení, bez webu i občerstvení. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/273485023
+    slug: luzicke-hory/schwarzer-kater
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Schwarzer Kater“) — pronajímaný domek („Černý kocour"), bez webu i občerstvení. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/181305315
+    slug: luzicke-hory/sonnenblick
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Sonnenblick“) — web sonnenblick-urlaub.de (pronájem). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/13926412738
+    slug: luzicke-hory/u-lesniho-ducha
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „U lesního ducha“) — pronajímaná chalupa v Dlouhém Dole, bez webu i občerstvení. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/148052803
+    slug: luzicke-hory/wache
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Wache“) — web traum-ferienwohnungen.de (portál pronájmů; provozovatel dle OSM Peter Landrock). Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/way/181305312
+    slug: luzicke-hory/zum-zaunkonig
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Zum Zaunkönig“) — pronajímaný domek rodiny Gust, bez webu i občerstvení. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/10960939620
+    slug: luzicke-hory/ferienhaus-oybiner-hutte
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Ferienhaus Oybiner Hütte“) — už jméno říká „Ferienhaus" — jméno „Oybiner Hütte" nese pronajímaný dům, ne obsluhovaná bouda. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
+  - osm: https://www.openstreetmap.org/node/3946550961
+    slug: luzicke-hory/ubytovani-chata-hana
+    duvod: >-
+      Objekt k pronájmu, ne obsluhovaná chata (OSM tourism=chalet/apartment,
+      name „Ubytování Chata Hana“) — už jméno říká „Ubytování chata Hana" — pronájem se ženským jménem. Bez signálu občerstvení
+      pro veřejnost i turistické minulosti.
+    rozhodl: >-
+      Claude (10. 8. 2026, první průchod triáže Lužických hor — doklad
+      v tagu OSM + web/jméno/provozovatel, vzor krušnohorské triáže)
+    checked: 2026-08-10
