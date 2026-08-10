@@ -1,0 +1,158 @@
+# Schronisko PTTK Jagodna — povýšeno z kandidáta DATA-01 rešerší
+# (10. 8. 2026, vzor DATA-03: katalog × OSM × weby PTTK; vlastní web
+# jagodna.com se nenačetl — neschválené načtení). Druhý profil
+# Orlických hor (polská strana — Góry Bystrzyckie patří do oblasti
+# dle jejího zápisu). Vše verified: false.
+
+nazev: Schronisko PTTK Jagodna
+slug: schronisko-pttk-jagodna
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: orlicke-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.2771086
+lng: 16.5372827
+vyska: 809
+obec: Bystrzyca Kłodzka
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/289220380 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). VÝŠKA — ROZPOR, přiznaný:
+    szlaki.pttk.pl 809 m × provozovatel (pttk.jgora.pl) „811 m
+    n.p.m." — zapsáno nižší číslo (konvence); sedlo Przełęcz Spalona
+    samo má ~812 m. Adresa „Spalona 6, 57-516 Stara Bystrzyca"
+    (pttk.jgora.pl, čteno 10. 8. 2026) — obec zapsána dle gminy
+    Bystrzyca Kłodzka, k níž Spalona patří; katalogový řádek vede
+    Bystrzycu Kłodzku. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Provozovatel Sudeckie Hotele i Schroniska (pttk.jgora.pl, čteno
+    10. 8. 2026): „noclegi w pokojach 2,3 i wieloosobowych
+    w standardzie turystycznym oraz miejscem na rozbicie namiotu" —
+    kapacitu číslem žádný načtený pramen nevede, nezapisuje se.
+    Katalog: ubytování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Pttk.jgora.pl (čteno 10. 8. 2026): „Schronisko oferuje doskonałą
+    domową kuchnię." Otvírací dobu žádný načtený pramen nevede.
+    Katalog: stravování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+48 74 811 98 16'
+  email: schronisko@jagodna.com
+  web: https://www.jagodna.com/
+overeniProvoz:
+  source: >-
+    Kontakty z OSM (stav dat 2026-08-09) — vlastní web jagodna.com se
+    při rešerši nenačetl (neschválené načtení), na doménu odkazují
+    i weby PTTK. Provozovatel: Sudeckie Hotele i Schroniska
+    Sp. z o.o., Jelenia Góra (pttk.jgora.pl, čteno 10. 8. 2026).
+    Katalog: provoz celoročně.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1895
+    udalost: >-
+      Na sedle vznikla hospoda — prameny kladou vznik „ok. 1895"
+      (szlaki.pttk.pl), provozovatel píše o dřevěné stavbě z roku
+      1896; rozpor o rok se nerozhoduje.
+    zdroj: >-
+      szlaki.pttk.pl — „powstało ok. 1895 r. jako gospoda";
+      pttk.jgora.pl — dřevěná stavba 1896 (obojí čteno 10. 8. 2026).
+  - rok: 1933
+    udalost: >-
+      Po přestavbě v letech 1927–33 tu Kladské horské towarzystwo
+      otevřelo schronisko; dnes funguje pod hlavičkou PTTK.
+    zdroj: >-
+      szlaki.pttk.pl (čteno 10. 8. 2026) — „po remoncie w latach
+      1927-33 Kłodzkie Towarzystwo Górskie uruchomiło tu schronisko,
+      działające obecnie pod szyldem PTTK".
+  - rok: 1942
+    udalost: >-
+      Přistavěna část verandy — „w tym kształcie schronisko
+      przetrwało do dzisiaj".
+    zdroj: pttk.jgora.pl (čteno 10. 8. 2026)
+
+zajimavosti:
+  - text: >-
+      Sedlo Przełęcz Spalona u schroniska hlídají dva bunkry
+      z třicátých let, maskované jako hospodářská stavení — chránily
+      tehdy novou Sudetskou silnici; stojí tu i kříž z roku 1814.
+    kategorie: jine
+    zdroj: >-
+      szlaki.pttk.pl (čteno 10. 8. 2026) — „dwa bunkry z lat 30.
+      XX w., chroniące zbudowanej wtedy Autostrady Sudeckiej",
+      „krzyż z 1814 r."
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěné schronisko na sedle Przełęcz Spalona v Bystřických horách —
+  hospoda z konce devatenáctého století, kterou kladský horský spolek
+  po přestavbě otevřel turistům, dnes pod hlavičkou PTTK: domácí
+  kuchyně, turistické pokoje i místo na stan.
+text:
+  - >-
+    Jagodna nese jméno nejvyšší hory Bystřických hor a stojí na
+    jejich klíčovém sedle: hospoda tu vznikla kolem roku 1895,
+    turistickým schroniskem se stala po přestavbě v letech 1927–33
+    zásluhou kladského horského towarzystwa a veranda z roku 1942 jí
+    dala podobu, kterou má dodnes.
+  - >-
+    Provoz je poctivě schroniskový: pokoje dvou-, tří- i vícelůžkové
+    v turistickém standardu, místo na stan za domem a kuchyně, kterou
+    provozovatel bez skromnosti nazývá znamenitou domácí. Přes sedlo
+    vede Autostrada Sudecka a hlavní hřebenový tah Bystřických hor —
+    v zimě je sedlo oblíbeným východiskem běžkařů.
+  - >-
+    Údaje na téhle stránce pocházejí z webů PTTK a z externího
+    katalogu; polohu a kontakty nese OpenStreetMap. Výška se
+    v pramenech o dva metry rozchází a zapsané je nižší číslo.
+    Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      pttk.jgora.pl (Sudeckie Hotele i Schroniska) — výška 811 m,
+      dřevěná stavba 1896, veranda 1942, pokoje a stan, domácí
+      kuchyně, adresa Spalona 6 (čteno 10. 8. 2026)
+    url: https://www.pttk.jgora.pl/schronisko-pttk-jagodna/
+  - popis: >-
+      szlaki.pttk.pl — vznik ok. 1895 jako gospoda, přestavba
+      1927–33 a Kłodzkie Towarzystwo Górskie, výška 809 m, bunkry
+      a kříž na sedle (čteno 10. 8. 2026)
+    url: https://dolnoslaskie.szlaki.pttk.pl/1108-dolnoslaskie-przelecz-spalona-schronisko-jagodna
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek Schronisko
+      PTTK Jagodna (Orlické hory / Góry Bystrzyckie)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, kontakty; ODbL)
+    url: https://www.openstreetmap.org/way/289220380
+interniPoznamky: >-
+  Povýšeno z data/kandidati/orlicke-hory/schronisko-pttk-jagodna.yaml
+  rešerší (10. 8. 2026). Klíč zařazení: schronisko PTTK s kuchyní
+  a noclehem na hřebenovém sedle, katalogový objekt, kontinuita
+  služby od ~1895. Druhý profil Orlických hor; příslušnost Gór
+  Bystrzyckich do oblasti je rozhodnutá v zápisu oblasti (ORL-01).
+
+  ROZPORY: vznik ok. 1895 × dřevěná stavba 1896; výška 809 × 811 —
+  obojí přiznáno, zapsáno nižší/starší se nerozhoduje. JMENOVEC:
+  jádro „jagodna" v registru (polanická Jagodna = nejspíš penzion,
+  15 242 m). K OVĚŘENÍ (DATA-04): kapacita číslem; otvírací doba
+  kuchyně; vlastní web (nenačetl se). Fotku dodá příští běh DATA-02.

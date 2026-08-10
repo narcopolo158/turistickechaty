@@ -1,0 +1,146 @@
+# Schronisko PTTK „Orlica" — povýšeno z kandidáta DATA-01 rešerší
+# (10. 8. 2026, vzor DATA-03: katalog × OSM × PTTK + krajoznawcy;
+# vlastní web orlica.info se nenačetl — neschválené načtení). Třetí
+# profil Orlických hor. Zavírá i slabou shodu katalogu: „Schronisko
+# Orlica" z katalogu je tento objekt, ne Orlická chata u Rampušáka.
+# Vše verified: false.
+
+nazev: Schronisko PTTK „Orlica"
+slug: schronisko-pttk-orlica
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: orlicke-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.3389992
+lng: 16.3844565
+vyska: 850
+obec: Duszniki-Zdrój
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/84360037 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška „přibližně 850 m n.p.m.":
+    pttk.pl (čteno 10. 8. 2026) — číslo je zaokrouhlené, přesnější
+    žádný načtený pramen nevede. Adresa Zieleniec 79, 57-340 Duszniki
+    Zdrój (pttk.pl); Zieleniec je část města Duszniki-Zdrój, dřív
+    německy Grunwald (krajoznawcy.info.pl). Schronisko stojí na
+    východním svahu Gór Orlickich u sjezdovky. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+overeniNocleh:
+  source: >-
+    Pttk.pl (čteno 10. 8. 2026): „pokoje 2, 3 i wieloosobowe
+    w standardzie turystycznym" a „pokoje 1, 3 i 4 – osobowe
+    z łazienkami" — kapacitu číslem žádný načtený pramen nevede,
+    nezapisuje se. Katalog: ubytování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Pttk.pl (čteno 10. 8. 2026): „całodzienne wyżywienie".
+    Krajoznawcy.info.pl: pohostinství PTTK s jednoduchým, ale
+    kvalitním jídlem; celoroční provoz. Katalog: stravování ano.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+48 609 000 088'
+  email: biuro@orlica.info
+  web: https://www.orlica.info/
+overeniProvoz:
+  source: >-
+    Kontakty z OSM (stav dat 2026-08-09) — vlastní web orlica.info se
+    při rešerši nenačetl (neschválené načtení). Provozně objekt patří
+    do sítě PTTK (pttk.pl ho vede mezi svými schronisky a odkazuje na
+    pttk.jgora.pl). Katalog: provoz celoročně — sedí s krajoznawcy.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1878
+    udalost: >-
+      Chata byla založena — rok dokládá nápis nad hlavním vchodem;
+      stavitelem byl nejspíš Josef Rübartsch, bratr Heinricha, který
+      „objevil" pro turistiku Orlické hory i sám Zieleniec.
+    zdroj: >-
+      krajoznawcy.info.pl (čteno 10. 8. 2026) — založení 1878 dle
+      nápisu nad vchodem, stavitel „nejspíše Josef Rübartsch";
+      formulace o objeviteli tamtéž.
+
+zajimavosti:
+  - text: >-
+      Dřevěná budova s mohutnou mansardovou střechou stojí přímo
+      u nejdelší sjezdovky Zieleńce (900 metrů, převýšení 280) —
+      a Zieleniec sám je podle PTTK nejvýše položenou vsí Sudet.
+    kategorie: jine
+    zdroj: >-
+      krajoznawcy.info.pl — „potężny mansardowy dach", sjezdovka
+      900 m / 280 m; pttk.pl — „najwyżej położona wieś w Sudetach"
+      (obojí čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dřevěné schronisko z roku 1878 s mansardovou střechou na svahu nad
+  Zieleńcem — celodenní kuchyně PTTK, turistické pokoje i pokoje
+  s koupelnou a v zimě sjezdovka přímo za dveřmi. Jeden z nejstarších
+  turistických domů Orlických hor, jak dokládá letopočet nad vchodem.
+text:
+  - >-
+    Orlica patří k první generaci turistických domů Orlických hor:
+    letopočet 1878 nese nad hlavním vchodem a stavěl ji nejspíš Josef
+    Rübartsch — bratr Heinricha Rübartsche, který Orlické hory
+    a Zieleniec pro turistiku objevil. Dřevěný dům s mohutnou
+    mansardovou střechou si drží autentický interiér dodnes.
+  - >-
+    Dnes schronisko provozuje síť PTTK: vaří celodenně, spí se
+    v turistických pokojích i v pokojích s koupelnou a celoroční
+    provoz doplňuje zimní role — dům stojí u nejdelší sjezdovky
+    lyžařského Zieleńce. Na hřebenovku Orlických hor i k Masarykově
+    chatě na Šerlichu je to odsud kousek přes hranici.
+  - >-
+    Údaje na téhle stránce pocházejí z webů PTTK a vlastivědného
+    průvodce; polohu a kontakty nese OpenStreetMap. Kapacita číslem
+    doložená není. Redakce nic neověřila vlastním dotazem ani
+    návštěvou.
+zdroje:
+  - popis: >-
+      pttk.pl — výška ~850 m, skladba pokojů, celodenní stravování,
+      adresa Zieleniec 79, Zieleniec nejvýše položená ves Sudet
+      (čteno 10. 8. 2026)
+    url: https://pttk.pl/accommodations/schronisko-pttk-orlica/
+  - popis: >-
+      krajoznawcy.info.pl — založení 1878 (nápis nad vchodem),
+      stavitel Josef Rübartsch, mansardová střecha, sjezdovka,
+      celoroční provoz, německé jméno Zieleńce Grunwald (čteno
+      10. 8. 2026)
+    url: https://www.krajoznawcy.info.pl/orlica-schronisko-na-stoku-28074
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek Schronisko
+      Orlica (Orlické hory)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, kontakty; ODbL)
+    url: https://www.openstreetmap.org/way/84360037
+interniPoznamky: >-
+  Povýšeno z data/kandidati/orlicke-hory/schronisko-pttk-orlica.yaml
+  rešerší (10. 8. 2026). Klíč zařazení: schronisko PTTK s celodenní
+  kuchyní a noclehem, kontinuita od 1878, katalogový objekt. SLABÁ
+  SHODA KATALOGU ROZHODNUTA: katalogové „Schronisko Orlica" je tento
+  objekt — Orlická chata u Rampušáka (kandidát
+  orlicka-chata-u-rampusaka) je jiný, český objekt na Šerlichu;
+  jména se potkávají jen ve slově „orlica/orlická".
+
+  K OVĚŘENÍ (DATA-04): kapacita číslem; vlastní web orlica.info
+  (nenačetl se — má stránku /historia, srovnat s krajoznawcy);
+  vztah k Zbójnické chatě v Zieleńci (jiný provoz téže vsi, kandidát
+  zbojnicka-chata). Fotku dodá příští běh DATA-02.
