@@ -1,0 +1,137 @@
+# Hotel Dachsbaude & Kammbaude — povýšen z kandidáta DATA-01 rešerší
+# (10. 8. 2026, devátá položka fronty povyšování; vlastní web
+# hotel-dachsbaude.de se nenačetl přímo — nesou to weby obcí Seiffen
+# a Neuhausen). Dva rodinné domy na hřebeni v Heidelbachu u Seiffenu,
+# 761 m, na Kammwegu. Vše verified: false.
+
+nazev: Hotel Dachsbaude & Kammbaude
+slug: hotel-dachsbaude-kammbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.6556555
+lng: 13.4761448
+vyska: 761
+obec: Neuhausen/Erzgeb.
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/2354712178 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška „761 m ü.NN" a adresa
+    Heidelbach 3–5, 09544 Neuhausen/Erzgeb.: neuhausen.de
+    i seiffen.de (čteno 10. 8. 2026); osada Heidelbach leží mezi
+    Seiffenem (1 km) a Neuhausenem (3 km) na krušnohorském hřebeni.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 61
+overeniNocleh:
+  source: >-
+    Neuhausen.de (čteno 10. 8. 2026): dva rodinně vedené domy,
+    „30 modernen Zimmern mit 61 Betten", se snídaní.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Seiffen.de (čteno 10. 8. 2026): „echt erzgebirgischer
+    Landgasthof" — regionální a sezónní kuchyně, saská piva
+    a krušnohorské pálenky; po–čt a ne 11:30–20, pá–so 11:30–22.
+    Lokály: Gaststube (35), Jagdzimmer, Hutzenstube (15), další
+    stuby a pivní zahrada (30) — počty míst se mezi obecními weby
+    drobně liší (Jagdzimmer 40 × 48), přiznáno, nezapisují se
+    jednotlivě.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Restaurace: po–čt a ne 11:30–20, pá–so 11:30–22.
+kontakty:
+  telefon: '+49 37361 14690'
+  email: info@hotel-dachsbaude.de
+  web: https://www.hotel-dachsbaude.de/
+overeniProvoz:
+  source: >-
+    Telefon 037361-14690 a e-mail: neuhausen.de (seiffen.de vede
+    reservierung@hotel-dachsbaude.de). Vlastní web se při rešerši
+    nenačetl přímo (neschválené načtení) — data nesou obecní weby.
+    Provoz celoroční (40 km upravovaných stop v zimě).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku Freie Presse zmiňuje výročím „Traditionsgasthof", článek
+# je ale za přihlášením — číslo se nezapisuje. Nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Hotel jsou vlastně dvě baudy — Dachsbaude a Kammbaude — dva
+      rodinné domy přes cestu v osadě Heidelbach na hřebeni mezi
+      Seiffenem a Neuhausenem. Přímo kolem jde Kammweg i evropská
+      dálková trasa E3 a v zimě na čtyřicet kilometrů upravovaných
+      běžeckých stop; večer se v Hutzenstube topí na krušnohorský
+      Hutzenabend.
+    kategorie: jine
+    zdroj: >-
+      neuhausen.de (čteno 10. 8. 2026) — dva rodinné domy, Kammweg,
+      E3, „40 km gespurte Loipen"; Hutzenabend: seiffen.de (program
+      „Erzgebirgischer Hutzenabend")
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Dvojice rodinných baud na krušnohorském hřebeni u hračkářského
+  Seiffenu — 61 lůžek, pět lokálů s regionální kuchyní a Kammweg
+  s trasou E3 přímo přede dveřmi, v 761 metrech nad osadou
+  Heidelbach.
+text:
+  - >-
+    Dachsbaude a Kammbaude stojí přes cestu v hřebenové osadě
+    Heidelbach — kilometr od Seiffenu, vesnice dřevěných hraček,
+    a tři od Neuhausenu. Rodinný podnik z nich složil jeden hotel:
+    třicet pokojů s jednašedesáti lůžky a poctivý Landgasthof, kde
+    se vaří regionálně a sezónně a čepují saská piva.
+  - >-
+    Poloha je hřebenová doslova: kolem domů vede Kammweg i evropská
+    dálková trasa E3, v zimě se od prahu rozbíhá čtyřicet kilometrů
+    upravovaných stop. Kuchyně jede denně od půl dvanácté, o pátcích
+    a sobotách až do deseti; k tomu tematické večery od Hutzenabendu
+    po Feuerzangenbowle.
+  - >-
+    Údaje na téhle stránce pocházejí z webů obcí Seiffen
+    a Neuhausen; polohu nese OpenStreetMap. Vlastní web hotelu se
+    při rešerši nenačetl. Redakce nic neověřila vlastním dotazem
+    ani návštěvou.
+zdroje:
+  - popis: >-
+      neuhausen.de — 761 m, dva domy, 30 pokojů / 61 lůžek, Kammweg
+      a E3, 40 km stop, kontakty (čteno 10. 8. 2026)
+    url: https://neuhausen.de/unterkunft/hotel-dachsbaude-kammbaude/
+  - popis: >-
+      seiffen.de — Landgasthof, lokály a otvírací doba, tematické
+      večery, adresa Heidelbach 3 (čteno 10. 8. 2026)
+    url: https://seiffen.de/gaststaette/restaurant-dachsbaude-kammbaude/
+  - popis: OpenStreetMap (GPS; ODbL)
+    url: https://www.openstreetmap.org/node/2354712178
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/hotel-dachsbaude-kammbaude.yaml
+  rešerší (10. 8. 2026) — devátá položka fronty povyšování. Klíč
+  zařazení: hřebenový Landgasthof s ubytováním přímo na Kammwegu/E3.
+  OSM URL node/2354712178 ověřena gropem proti kandidátovi.
+
+  JMENOVCI: kandidát dachsbaude (spolková chata Wandervereinu,
+  JINÝ objekt) zůstává v kandidátech — až se bude povyšovat, přidat
+  registr (jádro dachsbaude). Jádro kammbaude v registru vede
+  lužickou Kammbaude (krušnohorská vyřazena 10. 8.). K OVĚŘENÍ
+  (DATA-04): historie a výročí (Freie Presse za přihlášením), který
+  dům je Dachsbaude a který Kammbaude. Fotku dodá příští běh
+  DATA-02.
