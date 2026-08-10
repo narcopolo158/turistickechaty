@@ -1,0 +1,128 @@
+# Kahlebergbaude — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# vzor DATA-03: katalog × OSM × katalog otvíracích dob; vlastní web se
+# nenačetl — vadný certifikát). Katalogový řádek HUT-0295. Vrcholový
+# občerstvovací provoz bez noclehu na Kahlebergu nad Altenbergem.
+# Vše verified: false.
+
+nazev: Kahlebergbaude
+slug: kahlebergbaude
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Imbiss Kahleberg
+    poznamka: podoba jména v katalozích otvíracích dob
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7514673
+lng: 13.7334969
+vyska: 905
+obec: Altenberg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/node/11762179288 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 905 m: externí katalog
+    (HUT-0295) — hodnota Kahlebergu, nejvyšší hory východního
+    Krušnohoří na saské straně dle katalogového kontextu; jiný načtený
+    pramen číslo nevede. Adresa Schneise 30, 01773 Altenberg:
+    finde-offen.de (čteno 10. 8. 2026). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ne
+overeniNocleh:
+  source: >-
+    Externí katalog (HUT-0295): ubytování ne. Žádný načtený pramen
+    nocleh nezmiňuje — bauda je občerstvovací provoz.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    Finde-offen.de (aktualizace 29. 7. 2026, čteno 10. 8. 2026):
+    „Imbiss KAHLEBERG" — po–st a so–ne 10–17, čt a pá zavřeno. OSM tag
+    vede „Sa-We 10:00-17:00" — totéž jinak zapsané (sobota až středa
+    = zavřeno čt+pá). Katalog (HUT-0295): stravování ano, provoz
+    sezónně. Typ bufet — prameny mluví o Imbissu, ne o restauraci.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Sobota až středa 10–17, čtvrtek a pátek zavřeno.
+kontakty:
+  telefon: '+49 171 5241080'
+  email: szulczyk@t-online.de
+  web: https://kahlebergbaude.de/
+overeniProvoz:
+  source: >-
+    Kontakty z OSM (node/11762179288, stav dat 2026-08-09; mobil
+    a e-mail provozovatele — dle OSM Severin Szulczyk); finde-offen.de
+    vede i pevnou linku +49 35056 34273. Vlastní web kahlebergbaude.de
+    se při rešerši nenačetl (vadný certifikát) — není to doklad mrtvé
+    domény. Katalog: provoz sezónně; otvírací doba výš.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+# Rok vzniku žádný načtený pramen nevede. Nedomýšlí se.
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Občerstvovací bauda na Kahlebergu (905 m) nad Altenbergem — od
+  soboty do středy tu mezi desátou a pátou dostane kolemjdoucí jídlo
+  a pití, nocleh tu nehledejte. Zastávka na hřebenových trasách
+  východního Krušnohoří.
+text:
+  - >-
+    Kahlebergbaude je provoz toho nejjednoduššího horského střihu:
+    bufet na vrcholu, otevřený od soboty do středy mezi desátou
+    a pátou — čtvrtky a pátky má zavírací den. Kdo plánuje hřebenovku
+    přes Kahleberg, ať s tím počítá; katalogy vedou provoz jako
+    sezónní.
+  - >-
+    Kahleberg je domácí hora Altenbergu — na 905 metrů sem vedou
+    značené cesty i zimní stopy z města a bauda je občerstvení přímo
+    na kopci. Přespat se dá dole ve městě.
+  - >-
+    Údaje na téhle stránce pocházejí z katalogu otvíracích dob
+    a z externího katalogu; polohu a kontakty nese OpenStreetMap.
+    Vlastní stránky baudy se při rešerši nenačetly. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      finde-offen.de — otvírací doba (po–st a so–ne 10–17, čt+pá
+      zavřeno; aktualizace 29. 7. 2026), adresa Schneise 30, pevná
+      linka (čteno 10. 8. 2026)
+    url: https://finde-offen.de/altenberg/kahleberg-kahlebergbaude-2478065
+  - popis: >-
+      Externí katalog turistických chat ČR/SK 2026 — řádek HUT-0295
+      (905 m, Altenberg, sezónně, bez ubytování)
+    url: https://nocleh.kct.cz/chaty
+  - popis: OpenStreetMap (GPS, kontakty, otvírací doba v tagu; ODbL)
+    url: https://www.openstreetmap.org/node/11762179288
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/kahlebergbaude.yaml rešerší
+  (10. 8. 2026). Klíč zařazení: veřejné občerstvení na vrcholu
+  s hřebenovou rolí, katalogový objekt HUT-0295 (jistota B). Osmý
+  profil Krušných hor — katalog oblasti má teď profily 8/10.
+
+  POZOR NA VÝŠKU: 905 m je jen katalogová hodnota (DATA-39 varuje, že
+  katalog občas vede výšku VRCHOLU) — tady vrchol i bauda splývají,
+  ale nezávislý pramen chybí; kdyby DATA-39 audit výšku shodil,
+  přepsat i větu s číslem v próze. Původní formulace „jediné
+  občerstvení na kopci" z prózy vypuštěna — jiný provoz na vrcholu
+  sice žádný načtený pramen nevede, ale to je výrok o rešerši, ne
+  o terénu.
+
+  K OVĚŘENÍ (DATA-04): vlastní web (vadný certifikát); sezónní
+  odstávky; rok vzniku baudy (jméno zní historicky — „mining lodge"
+  v překladu altenberského webu naznačuje hornickou minulost,
+  NEDOLOŽENO, stránka se nenačetla). Fotku dodá příští běh DATA-02.
