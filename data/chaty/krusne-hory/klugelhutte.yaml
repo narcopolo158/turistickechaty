@@ -1,0 +1,151 @@
+# Klügelhütte — povýšena z kandidáta DATA-01 rešerší (10. 8. 2026,
+# dvanáctá položka fronty povyšování; vzor DATA-03: OSM × VLASTNÍ
+# WEB). Ski- a Wanderherberge v přes 400 let starém domě
+# v Zinnwald-Georgenfeldu, 860 m. Vše verified: false.
+
+nazev: Klügelhütte
+slug: klugelhutte
+zeme: de
+typ: obsluhovana
+stav: v-provozu
+oblast: krusne-hory
+
+aliasy:
+  - nazev: Ski- und Wanderherberge Klügelhütte
+    poznamka: plné jméno na vlastním webu
+  - nazev: Jugendherberge Zinnwald „Klügelhütte"
+    poznamka: historické jméno z časů mládežnické ubytovny (doloženo k 2011)
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7340951
+lng: 13.7542083
+vyska: 860
+obec: Altenberg
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/178850332 —
+    data © přispěvatelé OpenStreetMap, ODbL 1.0
+    (openstreetmap.org/copyright). Výška 860 m: vlastní web
+    kluegelhuette.de (čteno 10. 8. 2026) — „die höchstgelegene Ski-
+    und Wanderherberge (860m) im Osterzgebirge" (tvrzení
+    provozovatele). Adresa Hochmoorweg 12, 01773 Zinnwald-Georgenfeld
+    (impressum) — u Biathlonareny, při česko-německé hranici.
+    V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 20
+overeniNocleh:
+  source: >-
+    Vlastní web, stránka herberge (čteno 10. 8. 2026): „ca. 20
+    Betten in 2-Bettzimmern"; jídelna pro ~30 lidí (i seminárka),
+    Bauernstube, ohniště, grily, terasa, WLAN zdarma. Cílovka:
+    „Wandergruppen, Radfahrer und Skifahrer".
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ne
+overeniObcerstveni:
+  source: >-
+    Občerstvení pro veřejnost žádný načtený pramen nevede — herberge
+    má jídelnu pro ubytované skupiny, režim stravování (vaří dům,
+    nebo Selbstversorger?) ale načtené stránky neuvádějí. Zapsáno ne;
+    překlopit, až se doloží.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+kontakty:
+  telefon: '+49 35056 35882'
+  email: heuer.ralf@gmx.de
+  web: https://www.kluegelhuette.de/
+overeniProvoz:
+  source: >-
+    Vlastní web, impressum (čteno 10. 8. 2026): Ralf Heuer,
+    Hochmoorweg 12, telefon 035056/35882, e-mail heuer.ralf@gmx.de
+    — shodně OSM (way/178850332, stav dat 2026-08-09, tag hostel).
+    Sezónnost neuvedena (parkoviště v zimě protahované — provoz
+    zimní i letní).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 2011
+    udalost: >-
+      Dům — podle vlastního webu přes 400 let starý — sloužil jako
+      Jugendherberge Zinnwald „Klügelhütte", nejvýše položená
+      mládežnická ubytovna Saska; dnes ho Ralf Heuer vede jako
+      soukromou ski- a wanderherbergu.
+    zdroj: >-
+      stáří „über 400 Jahre alt": vlastní web, stránka herberge;
+      Jugendherberge Zinnwald „Klügelhütte" a titul nejvýše položené:
+      jugendherberge.de (ceník 2011, PDF v indexu vyhledávače);
+      současný provozovatel: impressum vlastního webu (vše čteno
+      10. 8. 2026). Rok stavby ani rok konce DJH prameny nevedou —
+      nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Klügelhütte stojí v domě, kterému vlastní web přisuzuje přes
+      čtyři sta let — v Zinnwald-Georgenfeldu, nejvýše položené
+      osadě východního Krušnohoří, pár kroků od biatlonové arény.
+      Z mládežnické ubytovny se stala herberge pro skupiny pěších,
+      cyklistů a běžkařů; večer se sedí v selské Bauernstube nebo
+      u ohniště.
+    kategorie: stari
+    zdroj: >-
+      vlastní web kluegelhuette.de (čteno 10. 8. 2026) — „über 400
+      Jahre alt", Bauernstube, ohniště, poloha u Biathlonareny
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Herberge pro pěší, cyklisty a běžkaře v přes čtyři sta let starém
+  domě v Zinnwald-Georgenfeldu (860 m) — dvacet lůžek ve dvoulůžkových
+  pokojích, Bauernstube a ohniště u hraničního hřebene. Sama se vede
+  jako nejvýše položená ski- a wanderherberge východního Krušnohoří.
+text:
+  - >-
+    Zinnwald-Georgenfeld je hraniční osada nad Cínovcem a Klügelhütte
+    v ní drží tradici skupinového noclehu: bývalá saská mládežnická
+    ubytovna — podle vlastního webu nejvýše položená v zemi — dnes
+    slouží jako soukromá herberge pro turistické party, cyklisty
+    a běžkaře. Dům sám má mít přes čtyři sta let.
+  - >-
+    Spí se v cirka dvaceti lůžkách po dvou, jí se ve společné
+    jídelně pro třicet lidí a večer patří selské Bauernstube nebo
+    ohništi na terase. Biatlonová aréna je za rohem, běžecké stopy
+    hřebene začínají u domu; režim stravování web neuvádí — před
+    rezervací se domluvit.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu herberge;
+    polohu nese OpenStreetMap. Občerstvení pro kolemjdoucí doloženo
+    není. Redakce nic neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web herberge — 860 m, ~20 lůžek, jídelna ~30, dům přes
+      400 let, kontakty a provozovatel (impressum), poloha (načteno
+      10. 8. 2026)
+    url: https://www.kluegelhuette.de/
+  - popis: >-
+      jugendherberge.de — historické jméno Jugendherberge Zinnwald
+      „Klügelhütte" (ceník 2011, PDF)
+    url: https://www.jugendherberge.de/upload/hvz/97/156/zinnwald_kh_2011.pdf
+  - popis: OpenStreetMap (GPS, kontakty, tag hostel; ODbL)
+    url: https://www.openstreetmap.org/way/178850332
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krusne-hory/klugelhutte.yaml rešerší
+  (10. 8. 2026) — dvanáctá položka fronty povyšování. Klíč zařazení:
+  herberge pro turistické skupiny na hraničním hřebeni, kontinuita
+  mládežnické ubytovny — obsluhovaný skupinový nocleh (vzor
+  útulen/herbergů), kuchyne: ne dokud se nedoloží.
+
+  OSM URL way/178850332 ověřena gropem proti kandidátovi. POZOR:
+  portál gruppenhaus.de vrací u domu „HAUS IST GESPERRT" (listing
+  vypnutý) — vlastní web ale žije; nevykládat jako konec provozu,
+  jen sledovat. K OVĚŘENÍ (DATA-04): režim stravování, rok konce
+  DJH éry, doklad stáří domu (400 let je tvrzení provozovatele).
+  Fotku dodá příští běh DATA-02.
