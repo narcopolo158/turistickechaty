@@ -29,6 +29,75 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-10 (čtvrtý blok, druhá šestihodinovka na pokyn Michala) — Lužické a Orlické hory otevřeny, katalogy tří oblastí komplet, korpus 210
+
+Michal: _„pokracuj dalsi sestihodinovkou"_. Sedm commitů, CI zelené.
+
+**Hotovo:**
+
+**KATALOG KRUŠNÝCH HOR DOKONČEN (9/10 s profily):** Berghotel Pöhlberg
+(HUT-0296) — výletní dům na čedičovém Pöhlbergu otevřený 12. 7. 1897
+i s 35m rozhlednou, Panorama-Restaurant denně od 11:30, rodinná firma
+Deckert. Poslední bez profilu je Barborka Klínovec (vzor Barbora).
+
+**TRIÁŽ LUŽICKÝCH HOR, PRVNÍ PRŮCHOD (61 → 38):** 23 pronájmů
+vyřazeno s dokladem (celý koš MIMO + 2 z POSOUDIT). Registr jmenovců:
+jádro „chalupa" odstraněno — vyřazením pryského apartmánu kolize
+zanikla (vzor zúžení Panoramy).
+
+**LUŽICKÉ HORY MAJÍ 5 PROFILŮ A KATALOG 5/5 SE ZÁZNAMEM:**
+
+- **Hochwaldbaude** (HUT-0300, A; první profil oblasti): saská bauda
+  na hraničním Hvozdu. VÝŠKA NEZAPSÁNA — vzorec DATA-39 naživo:
+  katalog 752 m × hora 749,5 m, bauda nemůže stát nad vrcholem.
+  Boudová historie hory od 1853 (česká bouda zanikla ~1951 → kandidát
+  pro Atlas zaniklých chat).
+- **Töpferbaude** (HUT-0301, A): vlastní web se načetl vč. historie —
+  1860 (Nentwig), žhářský požár 1904, obnova městem Žitava 1905
+  (vlastník dodnes), renovace 1997, Golebiowští od 2003; 14 lůžek,
+  odvoz z Oybina.
+- **Chata Luž** (HUT-0044; první ČESKÝ profil): 49 lůžek pod
+  nejvyšším vrcholem oblasti; výška 648 × 673 (zapsáno nižší), tři
+  telefony ze tří pramenů (zapsán ten potvrzený dvěma).
+- **Tolštejnská chata** (HUT-0045; devátý profil korpusu bez OSM
+  kandidáta): chata v areálu zříceniny, 7 pokojů / 16 osob,
+  restaurace 50 míst, provoz od 1995; celoročně × sezónně přiznáno.
+  POZOR: kandidát chata-pod-hradem je jiný objekt (Sloup v Čechách).
+- **Rozhledna Jedlová** (typ rozhledna s občerstvením): věž 1890–91
+  (předána 14. 9. 1891, 29 m / 123 schodů), chátrání od 1943, obnova
+  Krejčího — věž 1993, restaurace 1995, denně 9–20. KATALOGOVÁ
+  HUT-0046 „Chata Jedlová": na vrcholu není obsluhovaná chata —
+  rozhledna + restaurace + apartmány BEZ obsluhy; slabá shoda
+  zůstává viditelná pro Michala, apartmány se nezakládají.
+
+**ORLICKÉ HORY NA 3 PROFILECH:** Schronisko PTTK **Jagodna**
+(Przełęcz Spalona: hospoda ok. 1895/1896, schronisko od 1927–33,
+veranda 1942; výška 809×811; bunkry na sedle) a **Orlica** (Zieleniec:
+založena 1878 dle nápisu nad vchodem, stavitel nejspíš Josef
+Rübartsch, mansardová střecha, celodenní kuchyně PTTK; SLABÁ SHODA
+ROZHODNUTA — katalogová „Schronisko Orlica" je ona, ne Orlická chata
+u Rampušáka).
+
+**ČTECÍ PRŮCHOD KOŠE POSOUDIT KRUŠNÝCH HOR:** vyřazeny 3 objekty
+mimo klíč (dílna, bowlingbar, zahrádkářská kolonie); u 16 skutečných
+baud s webem zapsána FRONTA POVYŠOVÁNÍ do interniPoznamky — příští
+session bere odsud. NÁLEZ: Daxensteinbaude a Räuberhütte leží
+v Bielatalu = Saské Švýcarsko, ne Krušné hory — přesah okna,
+nevyřazeny (vzor DATA-29), poznámka v kandidátech.
+
+**Příště:** fronta povyšování Krušných hor (16 baud, začít
+Fischerbaude/Hirtsteinbaude/Spiegelwaldbaude — veřejná role
+nejsilnější), lužický koš POSOUDIT (saské baudy Sonneberg/Breiteberg
+/Grenzbaude + Hochwald-Turmbaude), orlická česká strana (Orlická
+chata u Rampušáka, Kramárova chata na Suchém vrchu — velké české
+objekty s kandidáty), božídarská chatová skupina a Hutzenstuby
+(potřebují víc než čtecí průchod).
+
+**Otázky pro Michala:** beze změny z dopoledne — znění třetího
+razítkového svolení, vzor Barbora (blokuje 3 objekty), KONTROLA-11,
+kliky DATA-37 + DATA-01 pro pět oblastí. Nově: až budeš zakládat
+další oblasti, Saské Švýcarsko by vyřešilo přesah Bielatalu.
+
 ## 2026-08-10 (třetí blok, ~6 hodin na pokyn Michala) — Krušné hory z 2 na 148 kandidátů ve frontě a 8 profilů, DATA-38, korpus 202
 
 Michal: _„pokracuj samostatne dal, pracuj 6 hodin v kuse"_. Průběžně
