@@ -7,7 +7,7 @@
 nazev: Daxensteinbaude
 slug: daxensteinbaude
 zeme: de
-oblast: krusne-hory
+oblast: ceskosaske-svycarsko
 aliasy:
   - nazev: Daxstein-Baude
     poznamka: alternativní název (OSM alt_name)
@@ -41,3 +41,9 @@ interniPoznamky: >-
   ho přineslo přesahem. Objekt vypadá jako skutečná bauda; NEVYŘAZOVAT
   (vzor DATA-29 — přesahové oblasti), rozhodnout příslušnost až se Saským
   Švýcarskem jako oblastí, do té doby kandidáta drží krušnohorské okno.
+
+  PŘESUNUTO z data/kandidati/krusne-hory/ (10. 8. 2026, rozhodnutí Michala
+  „ceskosaske svycarsko zaloz"): objekt leží v Labských pískovcích
+  a do oblasti krusne-hory ho přineslo jen přesahové okno. Do _vyrazeno
+  se nezapisuje (vzor přesunu beskydy → javorniky z 8. 8.) — starou
+  oblast podrží pojistka DATA-36.

@@ -7,7 +7,7 @@
 nazev: Lovecká chata na Tokáni
 slug: lovecka-chata-na-tokani
 zeme: cz
-oblast: luzicke-hory
+oblast: ceskosaske-svycarsko
 lat: 50.8775812
 lng: 14.4140071
 overeniLokace:
@@ -21,3 +21,9 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  PŘESUNUTO z data/kandidati/luzicke-hory/ (10. 8. 2026, rozhodnutí Michala
+  „ceskosaske svycarsko zaloz"): objekt leží v Labských pískovcích
+  a do oblasti luzicke-hory ho přineslo jen přesahové okno. Do _vyrazeno
+  se nezapisuje (vzor přesunu beskydy → javorniky z 8. 8.) — starou
+  oblast podrží pojistka DATA-36.
