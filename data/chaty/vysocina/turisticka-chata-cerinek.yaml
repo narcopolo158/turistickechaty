@@ -1,0 +1,152 @@
+# Turistická chata Čeřínek — povýšena z ručního kandidáta rešerší
+# (10. 8. 2026). PRVNÍ PROFIL VYSOČINY (oblast založena 10. 8. na
+# rozhodnutí Michala „vysocina jedna oblast"). Chata KČT od roku 1923
+# pod vrcholem Čeřínku u Jihlavy. Vše verified: false.
+
+nazev: Turistická chata Čeřínek
+slug: turisticka-chata-cerinek
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: vysocina
+
+aliasy:
+  - nazev: Chata Čeřínek
+    poznamka: kratší podoba jména na vlastním webu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 49.3742716
+lng: 15.4363345
+obec: Cejle
+overeniLokace:
+  source: >-
+    GPS 49.3742716, 15.4363345 a adresa Cejle (Hutě) 14, 588 51
+    Cejle: vlastní web chatacerinek.cz (čteno 10. 8. 2026) — objekt
+    není v našich OSM exportech (Vysočina nemá vyhledávací okno).
+    DoJihlavy.cz vede adresu „Horní Hutě 14, 588 61 Cejle" — drobný
+    ROZPTYL v místní části i PSČ, přiznaný; bereme vlastní web.
+    Chata stojí pod vrcholem Čeřínku (761 m), ~10 km západně od
+    Jihlavy, 100 m od sjezdovky. Nadmořskou výšku samotné chaty
+    žádný načtený pramen nevede — nezapisuje se. V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 65
+overeniNocleh:
+  source: >-
+    DoJihlavy.cz (čteno 10. 8. 2026): 65 lůžek, pokoje 2–4lůžkové
+    se sdíleným sociálním zázemím. Vlastní web: „cca 70 lůžek"
+    v pokojích dvou- až šestilůžkových — ROZPOR, přiznaný, zapsáno
+    nižší číslo. K tomu kemp a stání pro karavany (vlastní web).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+overeniObcerstveni:
+  source: >-
+    Vlastní web chatacerinek.cz (čteno 10. 8. 2026): restaurace pro
+    90 lidí + terasa 70 míst, česká klasika a sezónní speciality;
+    st–pá 13:30–20, so 11:30–20, ne 11:30–19, po–út zavřeno; „Na
+    ubytované hosty se nevztahuje otevírací doba restaurace."
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Restaurace: st–pá 13:30–20, so 11:30–20, ne 11:30–19; pondělí
+  a úterý zavřeno (pro ubytované bez omezení).
+kontakty:
+  telefon: '+420 736 103 373'
+  email: cerinekchata@seznam.cz
+  web: https://www.chatacerinek.cz/
+overeniProvoz:
+  source: >-
+    Telefon +420 736 103 373: vlastní web i DoJihlavy.cz; e-mail
+    cerinekchata@seznam.cz: DoJihlavy.cz (vlastní web adresu skrývá
+    před roboty). Majetek KČT Čeřínek, provozuje Čeřínek art s.r.o.
+    (IČ 05798663) — vlastní web (čteno 10. 8. 2026). Provoz
+    celoroční (sjezdovka 100 m, letní kemp).
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1923
+    udalost: >-
+      Pod Čeřínkem vznikla turistická chata — dnes je majetkem
+      odboru KČT Čeřínek.
+    zdroj: >-
+      DoJihlavy.cz (čteno 10. 8. 2026) — „Chata zde stojí od roku
+      1923"; majetek KČT Čeřínek: vlastní web. Kdo chatu 1923
+      postavil (odbor KČST Jihlava?), načtené prameny výslovně
+      nevedou — nedomýšlí se.
+  - rok: 1988
+    udalost: >-
+      Dnešní budova chaty pochází z roku 1988.
+    zdroj: >-
+      vlastní web chatacerinek.cz (čteno 10. 8. 2026) — původní
+      objekt 1923, současná budova 1988. Co se stalo s původní
+      chatou, načtené prameny nevedou — nedomýšlí se.
+
+zajimavosti:
+  - text: >-
+      Chatu má v nájmu „Jurda z Divokýho Billa" — vlastní web se
+      členem úvalské kapely přímo chlubí v záhlaví. Turistická
+      chata pod Čeřínkem tak patří k místům, kde se hospodský výčep
+      potkává s muzikantskou štací.
+    kategorie: jine
+    zdroj: >-
+      vlastní web chatacerinek.cz — „Chata pro celou rodinu u Jurdy
+      z Divokýho Billa v srdci Vysočiny" (záhlaví webu, čteno
+      10. 8. 2026); provozovatel Čeřínek art s.r.o. tamtéž
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Chata KČT pod vrcholem Čeřínku (761 m) západně od Jihlavy — od
+  roku 1923 základna pěších i lyžařů na Křemešnické vrchovině.
+  Pětašedesát lůžek, restaurace s českou klasikou, kemp na louce
+  a sto metrů na sjezdovku; v nájmu ji má Jurda z Divokýho Billa.
+text:
+  - >-
+    Čeřínek je chatová stálice Vysočiny: turistická chata tu stojí
+    od roku 1923 a dodnes patří klubovým turistům — dnešní budova
+    je z roku 1988. Leží deset kilometrů západně od Jihlavy, sto
+    metrů od sjezdovky, a kolem se rozbíhají značky po zalesněných
+    hřbetech Křemešnické vrchoviny.
+  - >-
+    Spí se v pětašedesáti lůžkách v pokojích pro dva až šest lidí,
+    v létě se dá stanovat na louce u chaty. Restaurace vaří českou
+    klasiku od středy do neděle a pro ubytované bez omezení
+    otvíračky; provoz vede společnost kolem Jurdy z kapely Divokej
+    Bill.
+  - >-
+    Údaje na téhle stránce pocházejí z vlastního webu chaty
+    a z jihlavského portálu DoJihlavy.cz. Počet lůžek se mezi
+    prameny mírně liší — zapsali jsme nižší číslo. Redakce nic
+    neověřila vlastním dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web chaty — GPS, adresa, kapacita „cca 70 lůžek",
+      restaurace a otvírací doba, majetek KČT Čeřínek, provozovatel
+      Čeřínek art s.r.o., budova 1988 (načteno 10. 8. 2026)
+    url: https://www.chatacerinek.cz/
+  - popis: >-
+      DoJihlavy.cz — chata od 1923, 65 lůžek, e-mail, poloha 10 km
+      od Jihlavy (čteno 10. 8. 2026)
+    url: https://www.dojihlavy.cz/ubytovani/chata-cerinek
+interniPoznamky: >-
+  Povýšeno z data/kandidati/vysocina/turisticka-chata-cerinek.yaml
+  rešerší (10. 8. 2026) — PRVNÍ PROFIL VYSOČINY (oblast založena
+  10. 8. rozhodnutím Michala „vysocina jedna oblast"). Klíč
+  zařazení: chata KČT na značkách, restaurace pro veřejnost,
+  kontinuita od 1923 — nesporné.
+
+  K OVĚŘENÍ (DATA-04): kdo postavil 1923 (KČST Jihlava?); osud
+  původní budovy (proč nová 1988); výška chaty samotné (761 m je
+  vrchol). Další kandidáti Vysočiny: Křemešník (poutní areál),
+  Devět skal / Žďárské vrchy. Fotku dodá běh DATA-02, až oblast
+  dostane okno.
