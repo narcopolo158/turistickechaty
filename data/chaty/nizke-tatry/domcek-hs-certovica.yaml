@@ -1,0 +1,184 @@
+# Domček Horskej služby na Čertovici — publikovaný profil Nízkých Tater
+# (10. 8. 2026). VZNIKL PŘÍMO Z REŠERŠE bez OSM kandidáta (pátý takový
+# profil korpusu, vzor Chata pod Sedlom Čertovica z 9. 8.): objekt
+# exportem DATA-01 nepřišel; GPS z POI Cesty SNP. Čtvrtý a poslední
+# ubytovací provoz sedla Čertovica — tím je rozplet sedla z rešerše
+# 9. 8. dotažený. Vše verified: false.
+
+nazev: Domček Horskej služby na Čertovici
+slug: domcek-hs-certovica
+zeme: sk
+typ: obsluhovana
+stav: v-provozu
+oblast: nizke-tatry
+
+aliasy:
+  - nazev: Domček HS
+    poznamka: zkrácené jméno v běžné řeči i v naší rešerši sedla
+  - nazev: Domček Horskej Služby
+    poznamka: podoba jména na vlastním webu
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 48.905162
+lng: 19.736781
+vyska: 1230
+obec: Vyšná Boca
+overeniLokace:
+  source: >-
+    GPS z POI databáze Cesty SNP (cestasnp.sk, čteno 10. 8. 2026):
+    48.905162, 19.736781 — přímo v sedle, asi 40 m od Penziónu STIV
+    (kontrolní výpočet proti našemu profilu STIV). Objekt nemá podklad
+    v exportu OSM — DATA-01 ho nepřinesl. Výška 1230 m: hiking.sk
+    („1230 m n. m.", čteno 10. 8. 2026) — týž údaj vede katalog
+    u sedla. Adresa Vyšná Boca 263: vlastní web
+    domceknacertovici.sk (čteno 10. 8. 2026). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 20
+overeniNocleh:
+  source: >-
+    hiking.sk (čteno 10. 8. 2026): „20 lôžok v štyroch izbách, zväčša
+    na poschodových posteliach", dvě koupelny. Vlastní web
+    domceknacertovici.sk (čteno 10. 8. 2026): týchž 20 lůžek —
+    8lůžkový, 6lůžkový a 4lůžkový pokoj, manželská ložnice
+    a přistýlka; možnost pronájmu celého objektu i stanování. Ceny
+    (mění se, do prózy nejdou): 18,40–31 €/os. dle pokoje a délky
+    pobytu na vlastním webu; POI Cesty SNP vede 25 €/os., snídani 8 €
+    a večeři 10 €. Rezervace povinná dle POI Cesty SNP.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    hiking.sk (čteno 10. 8. 2026): „bufet/občerstvenie" + turistická
+    kuchynka. Vlastní web (čteno 10. 8. 2026): řemeslné čepované pivo,
+    snídaně formou švédských stolů, večeře. POI Cesty SNP: „čapovaná
+    kofola a pivo, bufet". Plnohodnotná restaurace to není — bufet
+    s pivem a objednaná jídla.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+otviraciDoba: >-
+  Denně 16–22; letní sezóna květen–říjen, zimní prosinec–březen.
+kontakty:
+  telefon: '+421 944 929 173'
+  email: info@domceknacertovici.sk
+  web: https://www.domceknacertovici.sk/
+overeniProvoz:
+  source: >-
+    Vlastní web domceknacertovici.sk (čteno 10. 8. 2026): otevřeno
+    „16:00 – 22.00, Pondelok – Nedeľa", letní sezóna květen–říjen,
+    zimní prosinec–březen; telefon +421 944 929 173, e-mail
+    info@domceknacertovici.sk; provozovatel Horské spoločenstvo,
+    s.r.o., IČO 50693000. POI Cesty SNP: „Otvorené takmer celoročne,
+    povinná rezervácia". Hiking.sk (článek z doby otevření) uvádí jako
+    provozovatele občianske združenie Horské spoločenstvo — právní
+    forma se od otevření zjevně změnila na s.r.o., obě podoby vedeme.
+  verified: false
+  checked: '2026-08-10'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+milniky:
+  - rok: 1968
+    udalost: >-
+      Budova vznikla jako záchranná stanice Horskej služby v sedle
+      Čertovica.
+    zdroj: >-
+      hiking.sk (čteno 10. 8. 2026) — „sloužila původně jako záchranná
+      stanice Horské služby od roku 1968".
+  - rok: 2018
+    udalost: >-
+      Po celkové obnově zanedbané stanice se 17. června otevřela
+      turistické veřejnosti jako Domček Horskej služby — provoz
+      rozjelo občianske združenie Horské spoločenstvo.
+    zdroj: >-
+      hiking.sk (čteno 10. 8. 2026) — „Od 17. júna 2018 sú brány
+      objektu nepretržite otvorené turistickej verejnosti"; obnovu
+      a OZ tamtéž, otevření potvrzují i agenturní zprávy (teraz.sk).
+
+zajimavosti:
+  - text: >-
+      Domček stojí přímo na Ceste hrdinov SNP v místě, kde
+      celoslovenská hřebenovka překračuje silniční sedlo Čertovica —
+      pro přechodáře je to zastávka s bufetem, čepovanou kofolou
+      a dvaceti postelemi přesně v půli mezi ďumbierskou a
+      kráľovohoľskou částí Nízkých Tater.
+    kategorie: jine
+    zdroj: >-
+      POI databáze Cesty SNP (cestasnp.sk) vede Domček jako bod trasy;
+      poloha v sedle hiking.sk (čteno 10. 8. 2026)
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bývalá záchranná stanice Horskej služby z roku 1968 v sedle
+  Čertovica (1230 m), od června 2018 obnovená jako turistická
+  ubytovna s dvaceti lůžky, bufetem a čepovaným pivem — čtvrtý
+  provoz sedla, střižený po vzoru hřebenových útulen a stojící přímo
+  na Ceste hrdinov SNP.
+text:
+  - >-
+    Když Horská služba stanici z roku 1968 přestala potřebovat,
+    budova léta chátrala — až ji parta nadšenců z Horského
+    spoločenstva vzala do rukou a 17. června 2018 otevřela turistům.
+    Jméno jí nechali: Domček Horskej služby se z záchranné stanice
+    proměnil v malou ubytovnu přesně v duchu hřebenových útulen,
+    kterých na Slovensku poslední roky přibývá.
+  - >-
+    Uvnitř je dvacet lůžek ve čtyřech pokojích, většinou na palandách,
+    dvě koupelny, turistická kuchynka a sušiareň; venku se dá i
+    stanovat. Bufet čepuje kofolu a řemeslné pivo, snídaně a večeře
+    se objednávají předem — a rezervace noclehu je nutná, otevřeno je
+    denně od čtyř odpoledne do deseti. Sezóny drží dvě: květen až
+    říjen a prosinec až březen.
+  - >-
+    Sedlo Čertovica je pro přechodáře Nízkých Tater klíčové místo —
+    Cesta hrdinov SNP tu jedinkrát mezi Ďumbierom a Kráľovou hoľou
+    protíná silnici. Kdo chce víc pohodlí, najde v sedle a těsně pod
+    ním další tři provozy: Penzión STIV, Chatu pod Sedlom Čertovica
+    u sjezdovky a Chatu pod Čertovicou u jezírka.
+  - >-
+    Údaje nesou vlastní web domčeku, hiking.sk a POI databáze Cesty
+    SNP; souřadnice pocházejí z Cesty SNP, protože objekt zatím chybí
+    v našem exportu OpenStreetMap. Redakce nic neověřila vlastním
+    dotazem ani návštěvou.
+zdroje:
+  - popis: >-
+      Vlastní web domčeku — 20 lůžek a skladba pokojů, otvírací doba
+      16–22, sezóny, ceny, kontakty, provozovatel Horské spoločenstvo
+      s.r.o. (načteno 10. 8. 2026)
+    url: https://www.domceknacertovici.sk/
+  - popis: >-
+      hiking.sk, profil chaty č. 5104 — stanice HS od 1968, obnova,
+      otevření 17. 6. 2018, 20 lůžek ve 4 pokojích, výška 1230 m,
+      služby
+    url: https://hiking.dennikn.sk/ar/5104/domcek_horskej_sluzby_na_certovici.html
+  - popis: >-
+      POI databáze Cesty SNP — GPS 48.905162/19.736781, povinná
+      rezervace, bufet, ceny
+    url: https://cestasnp.sk/pred/pois/5ffd92985c76f40004b66cfb
+interniPoznamky: >-
+  Založeno PŘÍMO Z REŠERŠE bez OSM kandidáta (10. 8. 2026) — pátý
+  takový profil korpusu; GPS z POI Cesty SNP (kontrolně ~40 m od
+  našeho profilu STIV). Klíč zařazení: nocleh + bufet pro veřejnost
+  přímo na Ceste hrdinov SNP; typ obsluhovana (stálá obsluha, bufet),
+  ne utulna. ROZPLET SEDLA ČERTOVICA HOTOV: všechny čtyři provozy
+  mají profil (Chata pod Čertovicou HUT-0150, STIV HUT-0151, Chata
+  pod Sedlom Čertovica HUT-0158, Domček HS — bez katalogového řádku).
+
+  PRÁVNÍ FORMA provozovatele: OZ Horské spoločenstvo (2018, hiking)
+  → Horské spoločenstvo, s.r.o., IČO 50693000 (vlastní web dnes) —
+  vedeme obě, změnu nedomýšlíme. Andrejcová má v profilu OZ Horské
+  spoločenstvo jako správce — jestli jde o touž partu, rešerše
+  neřekla; NEspojovat bez dokladu.
+
+  K OVĚŘENÍ (DATA-04): zápis do OSM chybí (až přibude, přepnout GPS
+  na OSM zdroj); obsluha bufetu pro neubytované kolemjdoucí výslovně
+  nedoložena (bufet ano, ale režim nejasný); vztah k Andrejcové.
+  Fotku dodá příští běh DATA-02.
