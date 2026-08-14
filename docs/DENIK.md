@@ -29,6 +29,58 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-14 — denní session: DATA-05 párování přepočteno nad korpusem 233
+
+**Hotovo:**
+- **Zjištění na začátku:** položky nad DATA-05 jsou dál blokované beze změny
+  — **DATA-04** zbývají čistě telefonní otázky (KRNAP, PTTK Jelenia Góra,
+  Luční bouda, Petrova bouda), dokladová část je vyčerpaná od 2. 8.
+- **DATA-05 — párování razítek přepočteno nad CELÝM korpusem** (commit
+  `d3adb3f`). Naposledy běželo 4. 8. nad 107 chatami; korpus mezitím vyrostl
+  na 233 profilů, takže „fronta ke kontrole = 0" platila jen zdánlivě.
+  Přepočet nabídl **40 nových jmenných shod** — Vysoké i Nízké Tatry, Beskydy,
+  Lužické hory, Bílé Karpaty, Vysočina, Moravský kras, České středohoří.
+- **Report u fronty ke kontrole nově nese kontext a kolize.** U každé shody se
+  vypisuje **oblast a obec z profilu**, protože jmenovec se od jmenovce jinak
+  nepozná; a **8 ze 40 shod** je označeno jako **KOLIZE**: „Chata Hvězda" má na
+  razitkuj.cz tři místa (naše stojí na Broumovsku, ne na Andrlově chlumu),
+  „Bezručova chata - Lysá hora" padne i na Residence Ropičku, „Masarykova chata"
+  na Beskyd i na Šerlich. Pravda je vždy nejvýš jeden pár. Detail razítka je ze
+  sandboxu dál nedostupný, ale u části jmenovců rozhodne už oblast.
+- Nic se nepotvrzuje automaticky — otisky se dál stahují jen u párů
+  v `data/razitka/_parovani-potvrzene.yaml`. Tři nové testy hlídají obě kolize
+  i klidný případ; `kontrola`, `lint` i `typecheck` zelené.
+
+**Nález (návrh, ne zásah do plánu):** heuristika „kandidáti na zpětné dohledání
+chat" pořád filtruje jen krkonošská klíčová slova (`KRKONOSE_KLICE`) — z **253
+razítek bez shody** proto nabídne dva. Přitom **139 z nich má chatový název**
+(bouda / chata / schronisko / baude / hütte / útulna). Jsou mezi nimi dvě různé
+věci: kandidáti na nové profily *a* minutí aliasem u chat, které už vedeme —
+„Bunč - chata" je náš Lesní penzion Bunč. Navrhuji heuristiku rozšířit na
+chatová klíčová slova napříč oblastmi a výstup rozdělit na „náš profil pod jiným
+jménem" (= doplnit alias) a „nový kandidát" (= vstup do triáže).
+
+**Příště:** rozšířit heuristiku kandidátů dle nálezu výš (nejdřív větev „náš
+profil pod jiným jménem", ta je levná a rovnou opravuje data); pak dojet
+kandidáty z bloku 7 (Antýgl, Chata Martiňák, Kamenná chata na Tesáku, Hubertka,
+Lopeník / Mikulčin vrch, Křemešník, Devět skal) a Zlatou Studnu na Šumavě.
+
+**Otázky pro Michala:**
+- **40 shod ve frontě ke kontrole čeká na tvé potvrzení** — u osmi kolizních
+  stačí rozhodnout, který objekt je ten náš; report je v
+  `docs/DATA-05-razitka-parovani.md`, potvrzení do
+  `data/razitka/_parovani-potvrzene.yaml`.
+- **Rozšířit heuristiku kandidátů mimo Krkonoše?** (nález výš — 139 razítek
+  s chatovým názvem bez shody). Je to práce na jednu session a přinese jak
+  aliasy k existujícím profilům, tak frontu nových kandidátů.
+- Trvá: znění svolení třetího razítkového webu (panos-pe@volny.cz) — do doby,
+  než ho zapíšeme s pramenem, se z něj nic nepřebírá.
+- **Pět testovacích souborů padá i na čistém `main`** (`pohori`, `api`,
+  `sitemap-llms`, `oblasti-jestedsky-hrbet`, `razitka-moderace` — 9 testů).
+  Nejde o regresi: chtějí běžící Postgres, který bezobslužná session nemá.
+  Pokud v CI procházejí, je to jen vlastnost lokálního běhu — ale stojí za
+  ověření, ať se za tím neschová skutečná chyba.
+
 ## 2026-08-10 (sedmý blok, čtyřhodinovka na pokyn Michala) — DATA-41 dokončeno (4 nové oblasti), fronta KH dojeta, korpus 233
 
 **Hotovo:**
