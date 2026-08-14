@@ -14,6 +14,7 @@ import {
   strankaUrl,
 } from '../../scripts/data05-razitkuj-checklist'
 import {
+  koliznostiFronty,
   normalizuj,
   ocistiNazevRazitka,
   shodaNazvu,
@@ -21,6 +22,7 @@ import {
   typShodyNazvu,
   type Chata,
   type PotvrzeneParovani,
+  type Shoda,
 } from '../../scripts/data05-razitkuj-parovani'
 import { otiskyZDetailu } from '../../scripts/data05-razitkuj-otisky'
 import { razitkoZaznam } from '../../scripts/data05-razitkuj-zaloz'
@@ -234,5 +236,48 @@ describe('DATA-05 · párování katalogu s checklistem', () => {
     // chaty (vzor: razítko Martinovy boudy na Benecku ≠ hřebenová Martinovka,
     // ale krkonošské je) — s krkonošským klíčem v názvu se mezi kandidáty vrací.
     expect(kandidatiChat.map((k) => k.nazev)).toEqual(['Schronisko PTTK Samotnia', 'Kolínská bouda - Krkonoše'])
+  })
+
+  // Kontext profilu putuje do shody, aby ho report mohl vypsat u fronty ke
+  // kontrole — bez oblasti a obce se jmenovec od jmenovce nepozná.
+  it('shoda nese oblast a obec chaty', () => {
+    const sKontextem: Chata[] = [
+      { slug: 'chata-hvezda', nazev: 'Chata Hvězda', nazvy: ['Chata Hvězda'], zeme: 'cz', oblast: 'broumovsko', obec: 'Police nad Metují' },
+    ]
+    const { shody } = sparuj(sKontextem, [{ nazev: 'Chata Hvězda', url: 'http://www.razitkuj.cz/misto-chata-hvezda/1' }], zadnaPotvrzeni)
+    expect(shody[0]).toMatchObject({ oblast: 'broumovsko', obec: 'Police nad Metují' })
+  })
+})
+
+// Fronta ke kontrole je redakční práce a nejvíc jí ubere, když rovnou ukáže,
+// kde si jméno nárokuje víc objektů (docs/DATA-17-jmenovci.md): „Chata Hvězda"
+// má na razitkuj.cz tři místa, „Bezručova chata - Lysá hora" padne na dvě naše
+// chaty. V obou případech může být pravda nejvýš jeden pár.
+describe('DATA-05 · kolize ve frontě ke kontrole', () => {
+  const shoda = (slug: string, url: string): Shoda => ({
+    chata: slug,
+    slug,
+    razitko: url,
+    url,
+    typ: 'presna',
+    potvrzeno: false,
+  })
+
+  it('označí chatu s víc nabízenými razítky', () => {
+    const fronta = [shoda('chata-hvezda', 'u/1'), shoda('chata-hvezda', 'u/2')]
+    const kolize = koliznostiFronty(fronta)
+    expect(kolize.get(fronta[0]!)).toEqual(['jedné chatě nabízíme víc razítek — pravda je nejvýš jedno'])
+  })
+
+  it('označí razítko nabízené víc chatám', () => {
+    const fronta = [shoda('bezrucova-chata', 'u/1'), shoda('residence-ropicka', 'u/1')]
+    const kolize = koliznostiFronty(fronta)
+    expect(kolize.get(fronta[1]!)).toEqual(['totéž razítko nabízíme víc chatám — patří nejvýš jedné'])
+  })
+
+  it('samotný pár bez jmenovce zůstane bez varování', () => {
+    const fronta = [shoda('chata-luz', 'u/1'), shoda('chata-macocha', 'u/2')]
+    const kolize = koliznostiFronty(fronta)
+    expect(kolize.get(fronta[0]!)).toEqual([])
   })
 })
