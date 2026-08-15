@@ -29,6 +29,65 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-15 — denní session: DATA-05, heuristika kandidátů rozšířena mimo Krkonoše
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál beze změny blokovaná — dokladová
+  část je vyčerpaná od 2. 8., zbývají čistě telefonní otázky (KRNAP, PTTK
+  Jelenia Góra, Luční bouda, Petrova bouda), které bezobslužný běh neumí.
+  Beru tedy **DATA-05** a v ní ten krok, který si včerejší session sama
+  navrhla jako další.
+- **Heuristika „kandidáti na zpětné dohledání chat" už není krkonošská.**
+  Dosud filtrovala jen `KRKONOSE_KLICE`, takže z 253 razítek bez shody
+  nabídla dvě. Nově prochází **chatové názvy napříč oblastmi a jazyky**
+  (bouda, chata, chalupa, schronisko, Baude, Hütte, útulna, koliba, salaš,
+  Berghaus, Berggasthof); krkonošské klíče zůstaly jako doplněk pro razítka,
+  která chatu pojmenují místem („Samotnia", „Strzecha").
+- **Výstup rozdělen na dvě různé věci**, jak navrhoval včerejší nález:
+  - **„Náš profil pod jiným jménem" (8)** — razítko sdílí s profilem výrazné
+    slovo, tedy nejspíš vedeme totéž místo jinak a stačí doplnit alias:
+    *Bunč - chata* → Lesní penzion Bunč, *Kamenná chata - Chopok*,
+    *Schronisko Nad Łomniczką*, *Schronisko Orlica*, *w Doline Pięciu Stawów*,
+    *Slavíč - Kolářova chata* a dvě slabší (*Josefova bouda* × Kleť přes alias
+    „Josefova věž" — nejspíš planý poplach, *Śnieżka - Karpacz* × Dom Śląski).
+  - **Noví kandidáti (136)** — chatový název bez vazby na náš korpus, vstup
+    do triáže.
+- **Brzdy proti falešným aliasům:** obecná zeměpisná a druhová slova alias
+  nezakládají (polsky „hala" = horská louka, „dolina", česky „lesní"), a slovo,
+  které si nárokuje víc než tři profily, přestává být výrazné. Bez toho
+  heuristika nabízela beskydskou *Halu Miziowou* ke krkonošské *Hali
+  Szrenickiej* a každou „Lesní chatu" ke třem našim „lesním".
+- **Report přiznává strop:** 109 razítek bez shody se vědomě nezkoumá (název
+  nepojmenovává stavbu — rozhledny, muzea, vrcholy). Není to doklad, že mezi
+  nimi chata není.
+- Tři nové testy (alias vs. nový kandidát, chatové názvy ve třech jazycích,
+  obecné slovo alias nezakládá) + tři stávající upraveny na nové chování;
+  `kontrola`, `lint` i `typecheck` zelené. **Do dat se nezapisuje nic** —
+  je to fronta pro redakci.
+
+**Příště:** projít 8 nabídek aliasu a u potvrzených doplnit `aliasy` do profilů
+(levné a rovnou opraví párování); pak nakousnout triáž 136 nových kandidátů —
+nabízí se začít slovenskými a polskými schronisky, kde je pokrytí nejtenčí.
+Dál čekají kandidáti z bloku 7 (Antýgl, Chata Martiňák, Kamenná chata na
+Tesáku, Hubertka, Lopeník / Mikulčin vrch, Křemešník, Devět skal) a Zlatá
+Studna na Šumavě.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
+
+**Otázky pro Michala:**
+- **Smí session doplňovat aliasy sama?** U jasných případů (*Bunč - chata*,
+  *Slavíč - Kolářova chata*) je to mechanická oprava jména, ne tvrzení o chatě
+  — ale alias mění, co párování napříště najde, tak se radši ptám.
+- **40 shod ve frontě ke kontrole pořád čeká** na tvé potvrzení (z toho 8
+  kolizních); report `docs/DATA-05-razitka-parovani.md`, potvrzení do
+  `data/razitka/_parovani-potvrzene.yaml`. Bez toho se nestahují žádné nové
+  otisky.
+- **Párování míjí přehozený slovosled** — „Bunč - chata" nesedne na alias
+  „Chata na Bunči", protože shoda je substringová. Rozšířit na shodu množiny
+  slov? Zvýšilo by to frontu ke kontrole, tak to nedělám bez tvého slova.
+- Trvá: znění svolení třetího razítkového webu (panos-pe@volny.cz).
+
 ## 2026-08-14 — denní session: DATA-05 párování přepočteno nad korpusem 233
 
 **Hotovo:**

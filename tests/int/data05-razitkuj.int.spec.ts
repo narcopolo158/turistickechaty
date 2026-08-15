@@ -182,8 +182,13 @@ describe('DATA-05 · párování katalogu s checklistem', () => {
     const { shody, bezRazitka, kandidatiChat } = sparuj(chaty, razitka, zadnaPotvrzeni)
     expect(shody.map((s) => s.slug).sort()).toEqual(['bouda-bile-labe', 'schronisko-samotnia'])
     expect(bezRazitka.map((b) => b.slug)).toEqual(['lucni-bouda']) // Luční u nás je, razítko v mocku ne
-    // „Kolínská bouda - Krkonoše" nemá u nás chatu, ale zavání Krkonošemi → kandidát; Šerlich ne.
-    expect(kandidatiChat.map((k) => k.nazev)).toEqual(['Kolínská bouda - Krkonoše'])
+    // Kandidát je razítko s chatovým názvem bez vazby na náš korpus — od
+    // 15. 8. 2026 napříč oblastmi, ne jen krkonošské (korpus dávno není jen
+    // krkonošský): Kolínská i Šerlich.
+    expect(kandidatiChat.map((k) => k.nazev)).toEqual([
+      'Kolínská bouda - Krkonoše',
+      'Chata Šerlich - Orlické hory',
+    ])
   })
 
   it('shoda nese typ a příznak potvrzení z redakčního seznamu', () => {
@@ -210,7 +215,8 @@ describe('DATA-05 · párování katalogu s checklistem', () => {
     const lucni = shody.find((s) => s.slug === 'lucni-bouda')
     expect(lucni).toMatchObject({ typ: 'rucni', potvrzeno: true, razitko: 'Kolínská bouda - Krkonoše' })
     expect(bezRazitka.map((b) => b.slug)).toEqual([]) // Luční už razítko má
-    expect(kandidatiChat.map((k) => k.nazev)).toEqual([]) // a přestala být kandidátem k dohledání
+    // Kolínská už kandidátem není (má pár); zbývá jen Šerlich, který u nás chatu nemá.
+    expect(kandidatiChat.map((k) => k.nazev)).toEqual(['Chata Šerlich - Orlické hory'])
   })
 
   it('ruční pár na neznámý slug nebo cizí URL se mlčky ignoruje (překlep neshodí běh)', () => {
@@ -225,17 +231,22 @@ describe('DATA-05 · párování katalogu s checklistem', () => {
   })
 
   it('pár z `nesouvisi` (prokázaný cizí objekt) jde do vyřazených, chata zůstane „bez razítka"', () => {
-    const { shody, bezRazitka, vyrazene, kandidatiChat } = sparuj(chaty, razitka, {
+    const { shody, bezRazitka, vyrazene, kandidatiChat, kandidatiAlias } = sparuj(chaty, razitka, {
       potvrzene: [],
       nesouvisi: [{ slug: 'schronisko-samotnia', url: 'http://www.razitkuj.cz/misto-samotnia/1' }],
     })
     expect(shody.map((s) => s.slug)).toEqual(['bouda-bile-labe'])
     expect(vyrazene.map((v) => v.slug)).toEqual(['schronisko-samotnia'])
     expect(bezRazitka.map((b) => b.slug).sort()).toEqual(['lucni-bouda', 'schronisko-samotnia'])
-    // Razítko vyřazeného páru NEztrácí šanci být kandidátem na dohledání JINÉ
-    // chaty (vzor: razítko Martinovy boudy na Benecku ≠ hřebenová Martinovka,
-    // ale krkonošské je) — s krkonošským klíčem v názvu se mezi kandidáty vrací.
-    expect(kandidatiChat.map((k) => k.nazev)).toEqual(['Schronisko PTTK Samotnia', 'Kolínská bouda - Krkonoše'])
+    // Razítko vyřazeného páru NEztrácí šanci ukázat na JINOU chatu (vzor:
+    // razítko Martinovy boudy na Benecku ≠ hřebenová Martinovka) — vrací se
+    // mezi podněty. Samotnia sdílí s naším profilem výrazné slovo, takže padne
+    // do větve „náš profil pod jiným jménem", ne mezi nové kandidáty.
+    expect(kandidatiChat.map((k) => k.nazev)).toEqual([
+      'Kolínská bouda - Krkonoše',
+      'Chata Šerlich - Orlické hory',
+    ])
+    expect(kandidatiAlias.map((k) => k.nazev)).toEqual(['Schronisko PTTK Samotnia'])
   })
 
   // Kontext profilu putuje do shody, aby ho report mohl vypsat u fronty ke
@@ -246,6 +257,85 @@ describe('DATA-05 · párování katalogu s checklistem', () => {
     ]
     const { shody } = sparuj(sKontextem, [{ nazev: 'Chata Hvězda', url: 'http://www.razitkuj.cz/misto-chata-hvezda/1' }], zadnaPotvrzeni)
     expect(shody[0]).toMatchObject({ oblast: 'broumovsko', obec: 'Police nad Metují' })
+  })
+})
+
+// Razítka bez jmenné shody jsou dvě různé věci (nález 14. 8. 2026, řešeno
+// 15. 8.): chata, kterou VEDEME pod jiným jménem (→ doplnit alias, oprava dat),
+// a chata, kterou nevedeme vůbec (→ triáž nového kandidáta). Dokud heuristika
+// filtrovala jen krkonošská klíčová slova, nenabídla z 253 razítek bez shody
+// skoro nic, ačkoli 139 z nich má chatový název.
+describe('DATA-05 · kandidáti bez shody se dělí na alias a nový profil', () => {
+  const chaty: Chata[] = [
+    {
+      slug: 'lesni-penzion-bunc',
+      nazev: 'Lesní penzion Bunč',
+      nazvy: ['Lesní penzion Bunč', 'Chata na Bunči'],
+      zeme: 'cz',
+      oblast: 'chriby',
+      obec: 'Roštín',
+    },
+  ]
+  const zadnaPotvrzeni: PotvrzeneParovani = { potvrzene: [], nesouvisi: [] }
+
+  it('razítko sdílející s profilem výrazné slovo míří na alias, ne mezi nové kandidáty', () => {
+    const { kandidatiAlias, kandidatiChat } = sparuj(
+      chaty,
+      [{ nazev: 'Bunč - chata', url: 'http://www.razitkuj.cz/misto-bunc-chata/1' }],
+      zadnaPotvrzeni,
+    )
+    expect(kandidatiChat).toEqual([])
+    expect(kandidatiAlias).toHaveLength(1)
+    expect(kandidatiAlias[0]).toMatchObject({ nazev: 'Bunč - chata' })
+    // Nabídka nese i to, čím se podepírá — bez toho ji redakce nemá jak posoudit.
+    expect(kandidatiAlias[0]?.chaty[0]).toMatchObject({
+      slug: 'lesni-penzion-bunc',
+      oblast: 'chriby',
+      obec: 'Roštín',
+      spolecne: ['bunc'],
+    })
+  })
+
+  it('chatový název napříč oblastmi je kandidát, název bez stavby se nezkoumá a přizná se', () => {
+    const { kandidatiChat, kandidatiAlias, nezkoumano } = sparuj(
+      chaty,
+      [
+        { nazev: 'Kamenná chata pod Chopkom', url: 'http://www.razitkuj.cz/1_chopok' }, // slovenská
+        { nazev: 'Schronisko PTTK Hala Ornak', url: 'http://www.razitkuj.cz/2_ornak' }, // polská
+        { nazev: 'Berggasthof Kuhberg', url: 'http://www.razitkuj.cz/3_kuhberg' }, // německá
+        { nazev: 'Rozhledna Vartovna', url: 'http://www.razitkuj.cz/4_vartovna' }, // není stavba chatového typu
+      ],
+      zadnaPotvrzeni,
+    )
+    expect(kandidatiAlias).toEqual([])
+    expect(kandidatiChat.map((k) => k.nazev)).toEqual([
+      'Kamenná chata pod Chopkom',
+      'Schronisko PTTK Hala Ornak',
+      'Berggasthof Kuhberg',
+    ])
+    expect(nezkoumano).toBe(1) // strop se přiznává, ne zamlčuje
+  })
+
+  // Obecná zeměpisná a druhová slova identitu nenesou: polsky „hala" je horská
+  // louka, „lesní" má u nás kdeco. Bez téhle brzdy nabízela heuristika
+  // beskydskou „Hala Miziowa" ke krkonošské „Hali Szrenickiej".
+  it('obecné slovo alias nezakládá', () => {
+    const seSchroniskem: Chata[] = [
+      {
+        slug: 'schronisko-pttk-na-hali-szrenickiej',
+        nazev: 'Schronisko PTTK na Hali Szrenickiej',
+        nazvy: ['Schronisko PTTK na Hali Szrenickiej'],
+        zeme: 'pl',
+        oblast: 'krkonose',
+      },
+    ]
+    const { kandidatiAlias, kandidatiChat } = sparuj(
+      seSchroniskem,
+      [{ nazev: 'Schronisko PTTK Hala Miziowa', url: 'http://www.razitkuj.cz/5_miziowa' }],
+      zadnaPotvrzeni,
+    )
+    expect(kandidatiAlias).toEqual([])
+    expect(kandidatiChat.map((k) => k.nazev)).toEqual(['Schronisko PTTK Hala Miziowa'])
   })
 })
 
