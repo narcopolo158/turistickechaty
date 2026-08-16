@@ -66,11 +66,11 @@ Zdroj razítek: razitkuj.cz — kategorie „Horské a turistické chaty" (se sv
 - **Vrbatova bouda** → [„Vrbatova bouda"](http://www.razitkuj.cz/misto-vrbatova-bouda/1)
 - **Výrovka** → [„Výrovka"](http://www.razitkuj.cz/misto-vyrovka/1)
 
-## Nové shody KE KONTROLE — nestahují se, dokud je redakce nepotvrdí (37 shod)
+## Nové shody KE KONTROLE — nestahují se, dokud je redakce nepotvrdí (43 shod)
 
 Částečná shoda znamená, že se názvy liší (jeden obsahuje druhý) — tam bývají cizí objekty: „Portáš" není „Portášky", „Chatka AKT na Pietraszonce" nese cizí místní jméno. Kontrola = otevřít detail razítka a posoudit otisk/kontext.
 
-V závorce za názvem chaty je oblast a obec z profilu — u jmenovců rozhodne často už ona (razítko „Chata Hvězda - Andrlův chlum" míří do Orlických hor, náš profil stojí na Broumovsku). **KOLIZE** označuje páry, kde si jméno nárokuje víc objektů: 2 z 37 shod.
+V závorce za názvem chaty je oblast a obec z profilu — u jmenovců rozhodne často už ona (razítko „Chata Hvězda - Andrlův chlum" míří do Orlických hor, náš profil stojí na Broumovsku). **KOLIZE** označuje páry, kde si jméno nárokuje víc objektů: 4 z 43 shod.
 
 - **Berggasthof Grobauer** *(sumava · Spiegelau)* → [„Panorama"](http://www.razitkuj.cz/5904_panorama) · *částečná shoda (název se liší!)*
 - **Bezručova chata** *(beskydy · Ostravice)* → [„Bezručova chata - Lysá hora"](http://www.razitkuj.cz/misto-bezrucova-chata-lysa-hora/1) · *částečná shoda (název se liší!)*
@@ -92,13 +92,19 @@ V závorce za názvem chaty je oblast a obec z profilu — u jmenovců rozhodne 
 - **Chata pod Soliskom** *(vysoke-tatry · Štrba)* → [„Chata pod Soliskom"](http://www.razitkuj.cz/misto-chata-pod-soliskom/1)
 - **Chata Prašivá** *(beskydy · Vyšní Lhoty)* → [„Prašivá"](http://www.razitkuj.cz/misto-prasiva/1) · *částečná shoda (název se liší!)*
 - **Chata pri Zelenom plese** *(vysoke-tatry · Vysoké Tatry)* → [„Chata pri Zelenom plese"](http://www.razitkuj.cz/misto-chata-pri-zelenom-plese/1)
-- **Kamenná chata pod Chopkom** *(nizke-tatry · Horná Lehota)* → [„Kamenná chata"](http://www.razitkuj.cz/misto-kamenna-chata/1) · *částečná shoda (název se liší!)*
+- **Kamenná chata pod Chopkom** *(nizke-tatry · Horná Lehota)* → [„Kamenná chata"](http://www.razitkuj.cz/misto-kamenna-chata/1) · **KOLIZE:** jedné chatě nabízíme víc razítek — pravda je nejvýš jedno
+- **Kamenná chata pod Chopkom** *(nizke-tatry · Horná Lehota)* → [„Kamenná chata - Chopok"](http://www.razitkuj.cz/misto-kamenna-chata-chopok/1) · *částečná shoda (název se liší!)* · **KOLIZE:** jedné chatě nabízíme víc razítek — pravda je nejvýš jedno
+- **Kolářova chata Slavíč** *(beskydy · Morávka)* → [„Slavíč - Kolářova chata"](http://www.razitkuj.cz/misto-slavic-kolarova-chata/1)
+- **Lesní penzion Bunč** *(chriby · Roštín)* → [„Bunč - chata"](http://www.razitkuj.cz/misto-bunc-chata/1)
 - **Majláthova chata** *(vysoke-tatry · Vysoké Tatry)* → [„Majláthova chata"](http://www.razitkuj.cz/misto-majlathova-chata/1)
 - **Masarykova chata** *(orlicke-hory · Deštné v Orlických horách)* → [„Masarykova chata na Šerlichu"](http://www.razitkuj.cz/1220_masarykova-chata-na-serlichu)
 - **Rainerova chata** *(vysoke-tatry · Vysoké Tatry)* → [„Rainerova chata"](http://www.razitkuj.cz/misto-rainerova-chata/1)
 - **Residence Ropička** *(beskydy · Morávka)* → [„Ropička"](http://www.razitkuj.cz/misto-ropicka/1) · *částečná shoda (název se liší!)*
+- **Schronisko PTTK „Nad Łomniczką"** *(krkonose · Karpacz)* → [„Schronisko Nad Łomniczką"](http://www.razitkuj.cz/misto-schronisko-nad-lomniczka/1)
+- **Schronisko PTTK „Orlica"** *(orlicke-hory · Duszniki-Zdrój)* → [„Schronisko Orlica"](http://www.razitkuj.cz/6550_schronisko-orlica)
 - **Schronisko PTTK Murowaniec** *(vysoke-tatry · Zakopane)* → [„Schronisko Murowaniec"](http://www.razitkuj.cz/6171_schronisko-murowaniec) · *částečná shoda (název se liší!)*
 - **Schronisko PTTK nad Morskim Okiem** *(vysoke-tatry · Zakopane)* → [„Schronisko Morskie Oko"](http://www.razitkuj.cz/6177_schronisko-morskie-oko) · *částečná shoda (název se liší!)*
+- **Schronisko PTTK w Dolinie Pięciu Stawów Polskich** *(vysoke-tatry · Bukowina Tatrzańska)* → [„Schronisko PTTK w Doline Pięciu Stawów"](http://www.razitkuj.cz/misto-schronisko-pttk-w-doline-pieciu-stawow/1)
 - **Skalnatá chata** *(vysoke-tatry · Vysoké Tatry)* → [„Skalnatá chata"](http://www.razitkuj.cz/3356_skalnata-chata)
 - **Sliezsky dom** *(vysoke-tatry · Vysoké Tatry)* → [„Sliezsky dom"](http://www.razitkuj.cz/misto-sliezsky-dom/1)
 - **Téryho chata** *(vysoke-tatry · Vysoké Tatry)* → [„Téryho chata"](http://www.razitkuj.cz/misto-teryho-chata/1)
@@ -118,12 +124,10 @@ V závorce za názvem chaty je oblast a obec z profilu — u jmenovců rozhodne 
 - Portášky × [„Portáš"](http://www.razitkuj.cz/misto-portas/1)
 - Masarykova chata × [„Masarykova chata na Beskydě"](http://www.razitkuj.cz/misto-masarykova-chata-na-beskyde/1)
 
-## Naše chaty BEZ nalezeného razítka (136)
+## Naše chaty BEZ nalezeného razítka (131)
 - Chata Marguška (`chata-marguska`)
 - Horský hotel Radegast (`horsky-hotel-radegast`)
-- Kolářova chata Slavíč (`kolarova-chata-slavic`)
 - Turistická chata Prachov (`turisticka-chata-prachov`)
-- Lesní penzion Bunč (`lesni-penzion-bunc`)
 - Chata Tesák (`chata-tesak`)
 - Bouda Tetřeví sedlo (`bouda-tetrevi-sedlo`)
 - Hotel Ještěd (`horsky-hotel-jested`)
@@ -169,7 +173,6 @@ V závorce za názvem chaty je oblast a obec z profilu — u jmenovců rozhodne 
 - Novomísečná bouda (`novomisecna-bouda`)
 - Patejdlova bouda (`patejdlova-bouda`)
 - Raisova chata na Zvičině (`raisova-chata-na-zvicine`)
-- Schronisko PTTK „Nad Łomniczką" (`schronisko-nad-lomniczka`)
 - Srebrny Potok (`srebrny-potok`)
 - Staromísečná bouda (`staromisecna-bouda`)
 - U Kotle (`u-kotle`)
@@ -212,7 +215,6 @@ V závorce za názvem chaty je oblast a obec z profilu — u jmenovců rozhodne 
 - Chata Trangoška (`trangoska`)
 - Útulňa Andrejcová (`utulna-andrejcova`)
 - Schronisko PTTK Jagodna (`schronisko-pttk-jagodna`)
-- Schronisko PTTK „Orlica" (`schronisko-pttk-orlica`)
 - Hotel Alpská vyhlídka (`alpska-vyhlidka`)
 - Hotel Belveder (`belveder`)
 - Berggasthof Dreisessel (`berggasthof-dreisessel`)
@@ -251,27 +253,17 @@ V závorce za názvem chaty je oblast a obec z profilu — u jmenovců rozhodne 
 - Horský hotel Popradské pleso (`horsky-hotel-popradske-pleso`)
 - Schronisko Górskie ZHP Głodówka (`schronisko-glodowka`)
 - Schronisko PTTK na Hali Kondratowej (`schronisko-pttk-hala-kondratowa`)
-- Schronisko PTTK w Dolinie Pięciu Stawów Polskich (`schronisko-pttk-w-dolinie-pieciu-stawow-polskich`)
 - Schronisko PTTK w Dolinie Roztoki (`schronisko-pttk-w-dolinie-roztoki`)
 - Švajčiarsky dom (`svajciarsky-dom`)
 - Tatras Tower (`tatras-tower`)
 
-## Nejspíš NÁŠ PROFIL POD JINÝM JMÉNEM — nabídka doplnit alias (10) — K OVĚŘENÍ
+## Nejspíš NÁŠ PROFIL POD JINÝM JMÉNEM — nabídka doplnit alias (1) — K OVĚŘENÍ
 
 Razítko nemá jmennou shodu, ale sdílí s naším profilem výrazné slovo („Bunč - chata" = Lesní penzion Bunč). **Není to přiřazení** — je to podnět doplnit chatě alias, po kterém ji párování najde samo. Pozor na jmenovce: shodné slovo nese i cizí objekt v jiné oblasti, proto se vypisuje oblast a obec profilu.
 
-- [„Bunč - chata"](http://www.razitkuj.cz/misto-bunc-chata/1) → **Lesní penzion Bunč** (`lesni-penzion-bunc` · chriby · Roštín) · společné: bunc
-- [„Chata Hvězda - Andrlův chlum"](http://www.razitkuj.cz/misto-chata-hvezda-andrluv-chlum/1) → **Chata Hvězda** (`chata-hvezda` · broumovsko · Police nad Metují) · společné: hvezda
-- [„Josefova bouda"](http://www.razitkuj.cz/9735_josefova-bouda) → **Horská chata Kleť** (`horska-chata-klet` · sumava · Křemže) · společné: josefova
-- [„Kamenná chata - Chopok"](http://www.razitkuj.cz/misto-kamenna-chata-chopok/1) → **Kamenná chata pod Chopkom** (`kamenna-chata-pod-chopkom` · nizke-tatry · Horná Lehota) · společné: kamenna
-- [„Masarykova chata na Beskydě"](http://www.razitkuj.cz/misto-masarykova-chata-na-beskyde/1) → **Masarykova chata** (`masarykova-chata` · orlicke-hory · Deštné v Orlických horách) · společné: masarykova
-- [„Schronisko Nad Łomniczką"](http://www.razitkuj.cz/misto-schronisko-nad-lomniczka/1) → **Schronisko PTTK „Nad Łomniczką"** (`schronisko-nad-lomniczka` · krkonose · Karpacz) · společné: lomniczka
-- [„Schronisko Orlica"](http://www.razitkuj.cz/6550_schronisko-orlica) → **Schronisko PTTK „Orlica"** (`schronisko-pttk-orlica` · orlicke-hory · Duszniki-Zdrój) · společné: orlica
-- [„Schronisko PTTK w Doline Pięciu Stawów"](http://www.razitkuj.cz/misto-schronisko-pttk-w-doline-pieciu-stawow/1) → **Schronisko PTTK w Dolinie Pięciu Stawów Polskich** (`schronisko-pttk-w-dolinie-pieciu-stawow-polskich` · vysoke-tatry · Bukowina Tatrzańska) · společné: pieciu, stawow
-- [„Slavíč - Kolářova chata"](http://www.razitkuj.cz/misto-slavic-kolarova-chata/1) → **Kolářova chata Slavíč** (`kolarova-chata-slavic` · beskydy · Morávka) · společné: slavic, kolarova
 - [„Śnieżka - Karpacz"](http://www.razitkuj.cz/misto-sniezka-karpacz/1) → **Dom Śląski** (`dom-slaski` · krkonose · Karpacz) · společné: sniezka
 
-## Kandidáti na zpětné dohledání chat — chatový název bez vazby na náš korpus (136) — K OVĚŘENÍ
+## Kandidáti na zpětné dohledání chat — chatový název bez vazby na náš korpus (139) — K OVĚŘENÍ
 
 Sítem projde razítko, jehož název nese chatové slovo (bouda, chata, chalupa, schronisko, Baude, Hütte, útulna, koliba, salaš, Berghaus) nebo krkonošský klíč. **109 razítek bez shody sítem neprošlo** — jejich název nepojmenovává stavbu (rozhledny, muzea, informační střediska, vrcholy); heuristika je vědomě nezkoumá, není to doklad, že mezi nimi chata není.
 
@@ -298,6 +290,7 @@ Sítem projde razítko, jehož název nese chatové slovo (bouda, chata, chalupa
 - [„Chata Borůvka"](http://www.razitkuj.cz/3914_chata-boruvka)
 - [„Chata Búřov"](http://www.razitkuj.cz/misto-chata-burov/1)
 - [„Chata Hrádek"](http://www.razitkuj.cz/misto-chata-hradek/1)
+- [„Chata Hvězda - Andrlův chlum"](http://www.razitkuj.cz/misto-chata-hvezda-andrluv-chlum/1)
 - [„chata Jeskyňka"](http://www.razitkuj.cz/3044_chata-jeskynka)
 - [„Chata Kožiar - Žiarská dolina"](http://www.razitkuj.cz/misto-chata-koziar-ziarska-dolina/1)
 - [„Chata Lúčky"](http://www.razitkuj.cz/1448_chata-lucky)
@@ -340,6 +333,7 @@ Sítem projde razítko, jehož název nese chatové slovo (bouda, chata, chalupa
 - [„Jestřebí bouda, Řehačka"](http://www.razitkuj.cz/misto-jestrebi-bouda-rehacka/1)
 - [„Jilemnická bouda - Horní Mísečky"](http://www.razitkuj.cz/4697_jilemnicka-bouda-horni-misecky)
 - [„Jiráskova chata na Dobrošově"](http://www.razitkuj.cz/misto-jiraskova-chata-na-dobrosove/1)
+- [„Josefova bouda"](http://www.razitkuj.cz/9735_josefova-bouda)
 - [„Kašparova chata"](http://www.razitkuj.cz/misto-kasparova-chata/1)
 - [„Knorrhütte"](http://www.razitkuj.cz/5879_knorrhutte)
 - [„Koliba u Záryša - Pustevny"](http://www.razitkuj.cz/misto-koliba-u-zarysa-pustevny/1)
@@ -350,6 +344,7 @@ Sítem projde razítko, jehož název nese chatové slovo (bouda, chata, chalupa
 - [„Libín rozhledna a chata"](http://www.razitkuj.cz/misto-libin-rozhledna-a-chata/1)
 - [„Ludvíkova bouda"](http://www.razitkuj.cz/9857_ludvikova-bouda)
 - [„Lužická bouda"](http://www.razitkuj.cz/misto-luzicka-bouda/1)
+- [„Masarykova chata na Beskydě"](http://www.razitkuj.cz/misto-masarykova-chata-na-beskyde/1)
 - [„Mikulášská chata"](http://www.razitkuj.cz/2899_mikulasska-chata)
 - [„Modrokamenná bouda"](http://www.razitkuj.cz/9946_modrokamenna-bouda)
 - [„Mumlavská bouda"](http://www.razitkuj.cz/2164_mumlavska-bouda)

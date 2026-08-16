@@ -240,13 +240,15 @@ describe('DATA-05 · párování katalogu s checklistem', () => {
     expect(bezRazitka.map((b) => b.slug).sort()).toEqual(['lucni-bouda', 'schronisko-samotnia'])
     // Razítko vyřazeného páru NEztrácí šanci ukázat na JINOU chatu (vzor:
     // razítko Martinovy boudy na Benecku ≠ hřebenová Martinovka) — vrací se
-    // mezi podněty. Samotnia sdílí s naším profilem výrazné slovo, takže padne
-    // do větve „náš profil pod jiným jménem", ne mezi nové kandidáty.
+    // mezi podněty. Od 16. 8. 2026 ale NE jako alias k chatě, vůči které
+    // redakce pár vyloučila — vyloučení musí něco ukončovat. Samotnia sdílí
+    // výrazné slovo jen s vyloučenou chatou, takže jde mezi nové kandidáty.
     expect(kandidatiChat.map((k) => k.nazev)).toEqual([
+      'Schronisko PTTK Samotnia',
       'Kolínská bouda - Krkonoše',
       'Chata Šerlich - Orlické hory',
     ])
-    expect(kandidatiAlias.map((k) => k.nazev)).toEqual(['Schronisko PTTK Samotnia'])
+    expect(kandidatiAlias).toEqual([])
   })
 
   // Kontext profilu putuje do shody, aby ho report mohl vypsat u fronty ke
@@ -336,6 +338,22 @@ describe('DATA-05 · kandidáti bez shody se dělí na alias a nový profil', ()
     )
     expect(kandidatiAlias).toEqual([])
     expect(kandidatiChat.map((k) => k.nazev)).toEqual(['Schronisko PTTK Hala Miziowa'])
+  })
+
+  // Vyloučení musí něco ukončovat: pár zapsaný v `nesouvisi` se nesmí vrátit
+  // zadními vrátky jako nabídka aliasu (nález 16. 8. 2026 — vyloučená „Chata
+  // Hvězda - Andrlův chlum" se broumovské Hvězdě hned nabídla znovu).
+  it('pár vyloučený přes `nesouvisi` se nenabídne ani jako alias — razítko jde mezi nové kandidáty', () => {
+    const { kandidatiAlias, kandidatiChat } = sparuj(
+      chaty,
+      [{ nazev: 'Bunč - chata', url: 'http://www.razitkuj.cz/misto-bunc-chata/1' }],
+      {
+        potvrzene: [],
+        nesouvisi: [{ slug: 'lesni-penzion-bunc', url: 'http://www.razitkuj.cz/misto-bunc-chata/1' }],
+      },
+    )
+    expect(kandidatiAlias).toEqual([])
+    expect(kandidatiChat.map((k) => k.nazev)).toEqual(['Bunč - chata'])
   })
 })
 

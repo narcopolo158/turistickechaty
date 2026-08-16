@@ -29,6 +29,57 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-16 (druhý blok, s Michalem online) — DATA-05: alias-větev dojeta
+
+**Hotovo:**
+- Michal odpověděl: **session smí doplňovat aliasy sama.** Alias-větev
+  (10 nabídek z 15. 8.) tedy dojeta:
+  - **6 aliasů doplněno do profilů:** Lesní penzion Bunč („Bunč - chata"),
+    Kamenná chata pod Chopkom („Kamenná chata" — užívá ji sám provozovatel,
+    doména kamennachata.sk), Schronisko PTTK „Nad Łomniczką" a „Orlica"
+    (podoby bez zkratky spolku), Schronisko w Dolinie Pięciu Stawów Polskich
+    (podoba z razitkuj.cz — VĚRNĚ i s jejich překlepem „Doline", poznámka to
+    přiznává; v dolině je jediné schronisko), Kolářova chata Slavíč
+    („Slavíč - Kolářova chata"). U obrácených slovosledů se zapisuje podoba
+    z checklistu, protože substringová shoda je jinak mine — každý alias nese
+    poznámku se zdrojem a datem.
+  - **1 nové vyloučení s doklady:** „Josefova bouda" NENÍ Kleť. Nabídka
+    vznikla přes slovo „Josefova" z aliasu „Josefova věž" (rozhledna
+    v areálu Kleti), ale razítko pojmenovává boudu — a Josefova bouda
+    skutečně stojí v Krkonoších: Špindlerův Mlýn, Resort Sv. František,
+    vedle Erlebachovy boudy (krkonose.eu, ceskehory.cz, čteno 16. 8.).
+    Vedeme ji jako kandidáta `krkonose/josefova-bouda`; razítko počká na
+    její povýšení.
+  - **2 nabídky už vyloučilo ráno** (Hvězda-Andrlův chlum, Masarykova na
+    Beskydě) a **1 zbývá tobě:** „Śnieżka - Karpacz" × Dom Śląski — může to
+    být vrcholové razítko Sněžky i razítko chaty, bez detailu to nepoznám.
+- **Oprava heuristiky (nález při práci):** vyloučený pár se vracel zadními
+  vrátky — ranní vyloučení „Chaty Hvězda - Andrlův chlum" heuristika hned
+  nabídla broumovské Hvězdě znovu, tentokrát jako alias. Nově pár
+  z `nesouvisi` alias nezakládá a razítko jde mezi nové kandidáty
+  (vyloučení musí něco ukončovat). Jeden starý test kodifikoval přesně to
+  staré chování — upraven, jeden nový přidán.
+- **Výsledek párování:** fronta ke kontrole 37 → **43** (+6 nových shod přes
+  aliasy — otisky se nestahují, čekají na tvé potvrzení), alias-nabídky
+  10 → 1, noví kandidáti 139. **Nová kolize:** Kamenné chatě pod Chopkom se
+  nabízejí razítka „Kamenná chata" i „Kamenná chata - Chopok" — které je to
+  pravé (nebo obě?), rozhodne detail.
+- `kontrola`, `lint`, `typecheck` i 38 testů zelené.
+
+**Příště:** triáž 139 nových kandidátů z razítek — začít slovenskými
+a polskými schronisky; dál čekají kandidáti z bloku 7 (Antýgl, Chata
+Martiňák, Kamenná chata na Tesáku, Hubertka, Lopeník / Mikulčin vrch,
+Křemešník, Devět skal) a Zlatá Studna na Šumavě.
+
+**Otázky pro Michala:**
+- **„Śnieżka - Karpacz"** — patří Domu Śląskiemu, nebo je to vrcholové
+  razítko? Poslední nerozhodnutá alias-nabídka.
+- **„Kamenná chata" × „Kamenná chata - Chopok"** — obě razítka se nabízejí
+  Kamenné chatě pod Chopkom; rozhodne detail na razitkuj.cz.
+- **43 shod ve frontě ke kontrole** (37 starších + 6 dnešních přes aliasy)
+  čeká na tvé potvrzení v `data/razitka/_parovani-potvrzene.yaml`.
+- Trvá: znění svolení třetího razítkového webu (panos-pe@volny.cz).
+
 ## 2026-08-16 — denní session: DATA-05, kolize ve frontě rozpuzeny + kontrola redakčního registru
 
 **Hotovo:**

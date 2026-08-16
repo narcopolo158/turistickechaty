@@ -16,6 +16,13 @@ typ: obsluhovana
 stav: v-provozu
 oblast: krkonose
 
+aliasy:
+  - nazev: Schronisko Nad Łomniczką
+    poznamka: >-
+      běžná podoba jména bez zkratky spolku — tak schronisko vede
+      i checklist razítek razitkuj.cz; doplněno 16. 8. 2026 pro
+      párování DATA-05
+
 # ── Lokace ────────────────────────────────────────────────────────────────
 # GPS DOPLNĚNA 28. 7. 2026 z OpenStreetMap (DATA-31 — dohledávka podle jména;
 # export DATA-01 objekt minul, protože nemá žádný tag tourism, jen building).
