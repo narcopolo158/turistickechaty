@@ -29,6 +29,57 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-16 (třetí blok, s Michalem online) — DATA-05: triáž 139 razítkových kandidátů
+
+**Hotovo:**
+- **Triáž 139 kandidátů z razítek → `docs/DATA-05-razitka-triaz.md`.**
+  Nejdřív mechanika: porovnání názvů razítek s CELÝM fondem
+  `data/kandidati/**` (jména + aliasy; přesná shoda, částečná shoda
+  a slovní podmnožina — s brzdou na obecná slova, bez které kandidát
+  jménem doslova „chata" chytal všechno). Výsledek mechaniky:
+  **64 razítek patří objektům, které už jako kandidáty vedeme** —
+  43 přesně (Malá Fatra, Beskydy vč. polských PTTK schronisek, Jeseníky,
+  Orlické hory…), 21 částečně (vč. tří polských skloňování dohledaných
+  ručně: Hala Boracza, Hala Miziowa, Soszów). Pro ně se nezakládá nic —
+  razítko je další signál, až se kandidát povýší.
+- **Zbylých 75 ručně do košů** (koš není rozhodnutí; zařazení je
+  přiznaný odhad z názvu):
+  - **B (6):** přijde s tvým klikem na DATA-01 — Žiarska chata, Kožiar,
+    Polana Chochołowska, Hala Ornak (zapadne-tatry), Čingov a Piecky
+    (slovensky-raj). Nezakládám ručně, export je přinese s doklady.
+  - **C (~8):** v oknech existujících oblastí, ale export je nemá —
+    Ondřejník, Koliba u Záryša, Dębowiec… (beskydy → DATA-37), Wysoki
+    Kamień (jizerske-hory), Liczyrzepa (krkonose?), Amselfallbaude
+    (českosaské), Trosky (cesky-raj), Paprsek (jeseniky?).
+  - **D (~12):** místa bez oblasti — Góry Stołowe (Pasterka, Szczeliniec!),
+    Góry Sowie/Kamienne, Pieniny, podorlické solitéry (Dobrošov, Kozlov,
+    Andrlův chlum, Svinec). Otázka níž.
+  - **E (21):** krkonošská jména mimo korpus (Bouda pod Sněžkou, Sokolské…)
+    — Krkonoše prošly DATA-03, takže jsou to spíš vyřazené penziony nebo
+    ZANIKLÉ boudy (razítka můžou být historická). Jedna prověrková
+    session proti master seznamu a zaniklým.
+  - **F (9):** mimo záběr — Alpy (Wetterstein, Tauplitz, Dolomity), Jura,
+    Beskid Niski. Nechat ležet, Alpy jsou budoucí fáze plánu.
+  - **G (~11):** z názvu neidentifikovatelné (Anička, Borůvka, Vatra…) —
+    potřebují detail razítka, který sandbox neotevře.
+- Do dat se nezapsalo NIC — triáž je dokument. Kontrola, lint, typecheck
+  zelené (na kódu se nic neměnilo).
+
+**Příště:** koš E (krkonošská prověrka — jde bezobslužně, podklady jsou
+v repu); koš C rozpouštět s dohledávkami dotčených oblastí; koše B a D
+čekají na tebe.
+
+**Otázky pro Michala:**
+- **Góry Stołowe** — Pasterka a Szczeliniec jsou nejnavštěvovanější
+  schroniska Kladska hned za Broumovskem. Založit oblast (vzor ORL-01)?
+  A co Góry Sowie / Pieniny?
+- **Podorlické solitéry** (Dobrošov, Andrlův chlum, Kozlov, Svinec) —
+  jednotlivé KČT chaty mimo souvislá pohoří. Model „přesahové oblasti"
+  (DATA-29), nebo samostatná drobná oblast?
+- Trvá z dopoledne: „Śnieżka - Karpacz" × Dom Śląski; kolize „Kamenná
+  chata" × „Kamenná chata - Chopok"; 43 shod ve frontě ke kontrole;
+  znění svolení třetího webu (panos-pe@volny.cz).
+
 ## 2026-08-16 (druhý blok, s Michalem online) — DATA-05: alias-větev dojeta
 
 **Hotovo:**
