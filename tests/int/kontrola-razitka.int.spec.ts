@@ -12,7 +12,7 @@ import { join } from 'node:path'
 
 import { describe, expect, it } from 'vitest'
 
-import { zkontrolujRazitka } from '../../scripts/kontrola/razitka'
+import { zkontrolujRazitka, zkontrolujRegistrParovani } from '../../scripts/kontrola/razitka'
 
 /** Bezvadné převzaté razítko — základ, ze kterého se v testech ubírá. */
 const RAZITKO = `chata: barborka
@@ -100,5 +100,60 @@ describe('zkontrolujRazitka', () => {
 
   it('nad skutečným repem je korpus čistý (152 razítek, 151 převzatých)', () => {
     expect(zkontrolujRazitka()).toEqual([])
+  })
+})
+
+/**
+ * Pátá vada (16. 8. 2026): registr rozhodnutí redakce. Párování překlep mlčky
+ * ignoruje, aby neshodilo běh — tady je jediné místo, kde se pozná.
+ */
+describe('zkontrolujRegistrParovani', () => {
+  const CHECKLIST = JSON.stringify({
+    razitka: [{ nazev: 'Barborka', url: 'http://www.razitkuj.cz/misto-barborka/1' }],
+  })
+
+  const registr = (yaml: string, checklist: string | null = CHECKLIST) => {
+    const koren = mkdtempSync(join(tmpdir(), 'registr-'))
+    writeFileSync(join(koren, '_parovani-potvrzene.yaml'), yaml)
+    if (checklist !== null) writeFileSync(join(koren, '_razitkuj-checklist.json'), checklist)
+    return [join(koren, '_parovani-potvrzene.yaml'), join(koren, '_razitkuj-checklist.json')] as const
+  }
+
+  const CISTY = `potvrzene:
+  - slug: barborka
+    url: http://www.razitkuj.cz/misto-barborka/1
+nesouvisi: []
+`
+
+  it('platný záznam projde', () => {
+    const [r, c] = registr(CISTY)
+    expect(zkontrolujRegistrParovani(r, c, PROFILY)).toEqual([])
+  })
+
+  it('slug bez profilu — rozhodnutí redakce je zapsané, ale nic nedělá', () => {
+    const [r, c] = registr(CISTY.replace('barborka', 'preklep-v-slugu'))
+    const v = zkontrolujRegistrParovani(r, c, PROFILY)
+    expect(v.map((x) => x.kod)).toEqual(['registr'])
+    expect(v[0]!.zprava).toContain('preklep-v-slugu')
+  })
+
+  it('URL mimo checklist se pozná i u vyloučeného páru', () => {
+    const [r, c] = registr(`potvrzene: []
+nesouvisi:
+  - slug: barborka
+    url: http://www.razitkuj.cz/misto-jina-chata/1
+`)
+    const v = zkontrolujRegistrParovani(r, c, PROFILY)
+    expect(v.map((x) => x.kod)).toEqual(['registr'])
+    expect(v[0]!.zprava).toContain('nesouvisi')
+  })
+
+  it('bez staženého checklistu se URL nehlídají (jinak by kontrola lhala)', () => {
+    const [r, c] = registr(CISTY.replace('misto-barborka', 'misto-neco-jineho'), null)
+    expect(zkontrolujRegistrParovani(r, c, PROFILY)).toEqual([])
+  })
+
+  it('nad skutečným repem je registr čistý', () => {
+    expect(zkontrolujRegistrParovani()).toEqual([])
   })
 })

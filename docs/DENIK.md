@@ -29,6 +29,83 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-16 — denní session: DATA-05, kolize ve frontě rozpuzeny + kontrola redakčního registru
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál beze změny blokovaná — zbývají
+  čistě telefonní otázky (KRNAP, PTTK Jelenia Góra, Luční bouda, Petrova
+  bouda), dokladová část je vyčerpaná od 2. 8. Beru tedy **DATA-05**.
+- **Alias-větev (10 nabídek) jsem NEBRAL**, ačkoli ji včerejší session
+  navrhovala jako další krok: ptal jsem se tě 15. 8., jestli smí session
+  doplňovat aliasy sama, a odpověď zatím není. Alias mění, co párování
+  napříště najde — počkám.
+- **Místo toho záporná strana párování: z 8 kolizí ve frontě ke kontrole
+  zbyly 2.** Detail razítka je ze sandboxu pořád nedostupný, ale tam, kde
+  razítko pojmenuje MÍSTO, rozhodne sám název:
+  - **„Bezručova chata - Lysá hora" × Residence Ropička** — Lysá hora je náš
+    vlastní profil `beskydy/bezrucova-chata` (Ostravice). Ropička stojí
+    v Morávce a jméno „Bezručova chata" nese jen jako historický alias z let
+    1924–cca 1945 (ropicka.cz/historie, už zapsáno v `data/_jmenovci.yaml`).
+    Shoda tedy vznikla přes alias, ne přes objekt.
+  - **„Chata Hvězda - Andrlův chlum" × broumovská Chata Hvězda** — je to
+    **TŘETÍ objekt téhož jména**: turistická chata KČT s restaurací a
+    ubytováním na Andrlově chlumu (559–560 m) jižně od Ústí nad Orlicí
+    (treking.cz/chaty/hvezda.htm, chata-hvezda.cz, čteno 16. 8.). Náš profil
+    je klášterní hostinec v Broumovských stěnách.
+  - **„Masarykova chata na Beskydě" × Masarykova chata na Šerlichu** —
+    razítko patří chatě v sedle na hraničním hřebeni ~2 km východně od
+    Bumbálky (ocimaturisty.cz, čteno 16. 8.), tedy objektu, který vedeme jako
+    KANDIDÁTA `javorniky-vsetinske-vrchy/masarykova-chata` — sedí i web
+    masarykovachata.cz v jeho OSM tagu. Vzdálenost 179 345 m je naměřená
+    v registru jmenovců.
+  Zapsáno do `nesouvisi:` **s doklady a s datem**; fronta ke kontrole
+  **40 → 37**, vyřazené 3 → 6. Do dat o chatách to nesahá — je to jen zákaz
+  stáhnout otisk k cizí chatě, a stačí smazat řádek, když to uvidíš jinak.
+- **Zbylá kolize se rozhodnout NEDÁ:** holá „Chata Hvězda" proti „Chatě
+  Hvězda u Broumovských stěn". Checklist vede obojí; která je která, řekne až
+  detail. Nechávám tobě.
+- **Systémový přírůstek — `npm run kontrola` nově hlídá i redakční registr.**
+  Při psaní těch tří řádků došlo, že `_parovani-potvrzene.yaml` nikdo
+  nekontroluje: párování záznam s překlepem ve slugu nebo s URL mimo checklist
+  ZÁMĚRNĚ mlčky ignoruje, aby neshodilo běh. Důsledek je horší než pád —
+  rozhodnutí redakce je zapsané, vypadá vyřízeně a nedělá nic (potvrzený pár
+  tiše nestáhne otisk, vyloučený se dál nabízí). Pátá vada `registr` to
+  odhalí; nad skutečným repem je 0 vad, takže i mé tři nové řádky sedí.
+  5 nových testů (platný záznam, slug bez profilu, URL mimo checklist,
+  chybějící checklist = nehlídat, ostrý stav repa).
+- `kontrola`, `lint` i `typecheck` zelené; `data05-razitkuj.int.spec.ts`
+  a `kontrola-razitka.int.spec.ts` = 37 testů zeleně.
+
+**Příště:** alias-větev (10 nabídek) hned, jak řekneš ano/ne; jinak triáž 136
+nových kandidátů z razítek — nabízí se začít slovenskými a polskými
+schronisky, kde je pokrytí nejtenčí. Dál čekají kandidáti z bloku 7 (Antýgl,
+Chata Martiňák, Kamenná chata na Tesáku, Hubertka, Lopeník / Mikulčin vrch,
+Křemešník, Devět skal) a Zlatá Studna na Šumavě.
+
+**Nález pro korpus (návrh, ne zásah):** **Chata Hvězda na Andrlově chlumu** je
+chata KČT s restaurací a ubytováním pro veřejnost — dle klíče zařazení
+kandidát, a Andrlův chlum zatím v datech nemáme vůbec. Patřilo by to k
+DATA-41 (plošný průzkum ČR mimo hlavní pohoří). Kandidáta jsem nezakládal:
+kandidáti vznikají exportem, ne ručním zápisem.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
+
+**Otázky pro Michala:**
+- **Smí session doplňovat aliasy sama?** (Ptám se podruhé — na téhle odpovědi
+  stojí další krok DATA-05. U jasných případů jako *Bunč - chata* je to
+  mechanická oprava jména, ne tvrzení o chatě.)
+- **Byla tři vyloučení bez detailu razítka v pořádku?** Držel jsem se pravidla
+  „rozhodne jen to, co je doložené" a každý řádek nese pramen. Když řekneš
+  ne, vrátí se to smazáním tří záznamů.
+- **Zbylá kolize u Chaty Hvězda** — která z dvojice „Chata Hvězda" /
+  „Chata Hvězda u Broumovských stěn" je ta broumovská? Bez detailu to
+  nerozhodnu.
+- **37 shod ve frontě ke kontrole** pořád čeká na potvrzení; report
+  `docs/DATA-05-razitka-parovani.md`, potvrzení do
+  `data/razitka/_parovani-potvrzene.yaml`.
+- Trvá: znění svolení třetího razítkového webu (panos-pe@volny.cz).
+
 ## 2026-08-15 — denní session: DATA-05, heuristika kandidátů rozšířena mimo Krkonoše
 
 **Hotovo:**

@@ -359,3 +359,44 @@ nesouvisi:
       objekty, žádný pár. Až se založí oblast Beskydy, razítko se může
       hodit tam (chata je dle textu zaniklá — kandidát pro Atlas
       zaniklých).
+  # ── Tři vyloučení z 16. 8. 2026 (denní bezobslužná session) ──────────────
+  # Rozhodnuto BEZ detailu razítka (ze sandboxu je nedostupný): rozhodl sám
+  # NÁZEV razítka, který pojmenovává jiné místo, než kde stojí náš profil.
+  # Je to jen záporná strana párování — brání stažení otisku k cizí chatě,
+  # nic netvrdí o chatě samé. Michal může kdykoli přepsat: stačí řádek smazat.
+  - slug: residence-ropicka
+    url: http://www.razitkuj.cz/misto-bezrucova-chata-lysa-hora/1
+    poznamka: >-
+      Razítko pojmenovává Lysou horu, a Bezručova chata na Lysé hoře je náš
+      vlastní profil beskydy/bezrucova-chata (obec Ostravice, GPS 49.5454539 /
+      18.4477332). Residence Ropička stojí severněji (Morávka, 49.6148808 /
+      18.5586825); jméno „Bezručova chata" nese jen jako HISTORICKÝ alias
+      z let 1924–cca 1945 (ropicka.cz/historie, čteno 8. 8. 2026, zapsáno
+      v data/_jmenovci.yaml). Shoda tedy vznikla přes alias, ne přes objekt —
+      cizí pár. Kolize „totéž razítko dvěma chatám" tím padá; zůstává jediná
+      nabídka, a to k Bezručově chatě. checked 2026-08-16
+  - slug: chata-hvezda
+    url: http://www.razitkuj.cz/misto-chata-hvezda-andrluv-chlum/1
+    poznamka: >-
+      TŘETÍ objekt téhož jména: Chata Hvězda na Andrlově chlumu (559–560 m)
+      jižně od Ústí nad Orlicí je turistická chata KČT s restaurací a
+      ubytováním — treking.cz/chaty/hvezda.htm a chata-hvezda.cz, čteno
+      2026-08-16. Náš profil broumovsko/chata-hvezda je klášterní hostinec
+      v Broumovských stěnách (Police nad Metují, 50.566832 / 16.266531).
+      Cizí pár. POZNÁMKA PRO KORPUS: chata KČT s občerstvením pro veřejnost
+      = kandidát dle klíče zařazení, zapsáno do deníku 16. 8. 2026.
+      checked 2026-08-16
+  - slug: masarykova-chata
+    url: http://www.razitkuj.cz/misto-masarykova-chata-na-beskyde/1
+    poznamka: >-
+      Razítko patří Masarykově chatě na Beskydě — chata v sedle na česko-
+      slovenském hraničním hřebeni ~2 km východně od Bumbálky
+      (ocimaturisty.cz, čteno 2026-08-16; vlastní web masarykovachata.cz).
+      To je objekt, který vedeme jako KANDIDÁTA
+      data/kandidati/javorniky-vsetinske-vrchy/masarykova-chata.yaml (OSM
+      49.3941396 / 18.4284636, v OSM tagu týž web masarykovachata.cz), ne náš
+      profil orlicke-hory/masarykova-chata na Šerlichu (vzdálenost 179 345 m
+      je naměřená v data/_jmenovci.yaml). Cizí pár; razítko se hodí, až se
+      javornický kandidát povýší. Kolize u Masarykovy chaty tím padá —
+      zůstává jediná nabídka „Masarykova chata na Šerlichu".
+      checked 2026-08-16
