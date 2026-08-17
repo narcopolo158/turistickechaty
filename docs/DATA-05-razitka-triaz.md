@@ -191,6 +191,19 @@ k DATA-37 (re-export, který tiše nic neudělal). Vše odhad z názvu:
 
 ## Koš E — krkonošská jména mimo korpus (21) → zvláštní prověrka
 
+> **PROVĚRKA PROBĚHLA 17. 8. 2026 → `docs/DATA-05-kos-E-krkonose.md`.**
+> Výsledek: **3 doložené mezery v korpusu** (Pardubické boudy — objekt
+> `way/88752514` z našeho vlastního OSM exportu, přeskočený 20. 7. pro
+> chybějící tag `name`; Hříběcí bouda — aktivní chata z našeho zdrojového
+> průzkumu, FACT-0131/0132; Jilemnická bouda — FACT-0048), 1 doložená
+> zaniklá (Sokolská bouda = ZANIK-003) + 1 návrh (Bouda v Modrém dole ~
+> ZANIK-004), 2 jména enkláv bez doloženého objektu (Sagasserovy,
+> Zinneckerovy boudy), 1 objekt doložený jen zastávkou (Hančova bouda,
+> Benecko), 2 nerozhodnutelné bez detailu (Obří důl, pod Sněžkou),
+> **1 oprava zařazení — „Bouda Svornost" patří do koše C (Jeseníky)**
+> a 10 jmen bez stopy v repu → ruční běh s detaily razítek.
+> Do `data/` se prověrkou nesáhlo.
+
 Krkonoše prošly křížovým ověřením (DATA-03) a katalogem (DATA-08); jméno
 mimo korpus tu znamená spíš penzion bez veřejných služeb (vyřazený),
 zaniklou boudu (razítko může být historické!) nebo jméno, které jsme
@@ -235,7 +248,9 @@ razítka nedosáhne. Ruční běh s Michalem (otevřít detail, přečíst konte
    v `docs/KLIKY-PRO-MICHALA.md` stejně první na řadě.
 2. Koš C rozpustit dohledávkami při nejbližší práci na dotčených
    oblastech (beskydská část = DATA-37, která v backlogu už je).
-3. Koš E = jedna krkonošská prověrková session (může být bezobslužná —
-   master seznam i zaniklé jsou v repu).
+3. ~~Koš E = jedna krkonošská prověrková session (může být bezobslužná —
+   master seznam i zaniklé jsou v repu).~~ **HOTOVO 17. 8. 2026**,
+   `docs/DATA-05-kos-E-krkonose.md`. Zbytek koše E (10 jmen bez stopy
+   v repu + 2 nerozhodnutelná) padá do bodu 5 — ruční běh nad detaily.
 4. Koš D = otázky pro Michala v deníku 16. 8.
 5. Koš G = ruční běh s Michalem nad detaily razítek.

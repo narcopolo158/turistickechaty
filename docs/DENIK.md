@@ -29,6 +29,97 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-17 — denní session: DATA-05, koš E prověřen (3 mezery v korpusu)
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál beze změny blokovaná —
+  dokladová část je vyčerpaná od 2. 8., zbývají čistě telefonní otázky
+  (KRNAP, PTTK Jelenia Góra, Luční bouda, Petrova bouda) a bezobslužný
+  běh je nemá jak položit. Beru tedy **DATA-05** a z jeho fronty tu
+  větev, kterou včerejší zápis označil za bezobslužnou: **koš E** —
+  21 krkonošských jmen mimo korpus.
+- **Prověrka hotová → `docs/DATA-05-kos-E-krkonose.md`.** Každé z 21 jmen
+  proti publikovaným profilům (názvy + aliasy + historické názvy),
+  kandidátům (97 souborů jen v Krkonoších), zaniklým, `_vyrazeno.yaml`
+  a `_odlozeno.yaml`, surovým OSM exportům, externím korpusům
+  (katalog ČR/SK, známky, zdrojový průzkum 22. 7.) a proti master seznamu
+  i katalogu. Bez jediného externího volání — všechno je v repu.
+- **Tři doložené mezery v korpusu:**
+  - **Pardubické boudy** — nejzávažnější nález. V našem vlastním exportu
+    leží `way/88752514` (`tourism=alpine_hut`, `building=yes`,
+    `website=https://pardubickeboudy.cz/`, 50.6569832/15.7558359), který
+    běh DATA-01 **20. 7. přeskočil, protože nemá tag `name`** — deník to
+    tehdy poctivě zapsal jako „k ruční kontrole" a ruční kontrola se
+    nekonala. Kandidáta nemá, vyřazený není, odložený není. Razítko
+    „Pardubické boudy" a doména v OSM tagu se shodují → skoro jistě
+    tentýž objekt.
+  - **Hříběcí bouda** — náš zdrojový průzkum z 22. 7. ji vede s
+    `typ_objektu=aktivní chata` a `hut_id=neuvedeno` (nespárovaná):
+    FACT-0131 (vznik konec 17. století na staré Slezské cestě) a
+    FACT-0132 (Vlasta Burian tam v 50. letech pobýval téměř rok), oboje
+    Kudy z nudy, jistota B. V žádném našem seznamu není.
+  - **Jilemnická bouda — Horní Mísečky** — FACT-0048 (Seznam Zprávy,
+    3. 8. 2025) ji uvádí jako uzel, od kterého vede na Vrbatovu boudu
+    žlutá 2,8 km / 1,5 h. Sedí i upřesnění razítka.
+  - Přidruženě **Hančova bouda** — v OSM doložená zastávkou „Benecko,
+    Hančova bouda" (`node/8243433481`, `ref:idol=898`). Zastávka
+    pojmenovaná po boudě dokládá, že bouda stojí; o občerstvení neříká nic.
+- **Zbytek koše rozdělen podle toho, co doklad unese:** **Sokolská bouda
+  = ZANIK-003** (Černá hora, zanikla 2019 — razítko je historické,
+  zakládat se nemá); **Bouda v Modrém dole ~ ZANIK-004** jen jako NÁVRH
+  (razítko pojmenovává místo, ne objekt); **Sagasserovy** a
+  **Zinneckerovy boudy** žijí v datech jen jako jména enkláv (stanice
+  vleku, resp. „Zinneckerova strouha") — objekt s občerstvením doložen
+  není; **„Bouda v Obřím dole"** a **„Bouda pod Sněžkou"** jsou bez
+  detailu nerozhodnutelné (v Obřím dole máme Kovárnu, Obří boudu i dva
+  živé profily).
+- **Oprava vlastní triáže:** **„Bouda Svornost" nepatří do koše E** —
+  jediná jmenná shoda v celém fondu je kandidát `jeseniky/chata-svornost`
+  (`node/2831748399`). Do koše E ji včera dalo slovo „bouda", což byl
+  odhad; přeřazeno do koše C.
+- **Zápis o riziku:** „Lesní Zátiší Harrachov" NENÍ krušnohorské „Lesní
+  Zátiší" (`node/709051641`), které jsme 10. 8. vyřadili jako pronajímanou
+  chalupu. Dnes to nevadí (párování jede nad publikovanými profily), ale
+  kdyby se heuristika kdy rozšířila na `_vyrazeno.yaml`, spálila by se
+  právě tady.
+- **Do `data/` se nesáhlo** — prověrka je dokument, ne zápis. 10 jmen bez
+  jakékoli stopy v repu jde do fronty ručního běhu s detaily razítek
+  (stejný režim jako koš G).
+
+**Příště:** dohledávky tří mezer (Pardubické boudy — Hříběcí bouda —
+Jilemnická bouda, k tomu Hančova na Benecku); všechny leží v Krkonoších
+a mají v repu odkud začít. Pak koš C rozpouštět dohledávkami dotčených
+oblastí (nově i „Bouda Svornost" v Jeseníkách).
+
+**Návrh změny (do deníku, ne do plan.md):** `data01-overpass-krkonose.ts`
+by objekt bez tagu `name` neměl mlčky zahodit. Dnešní nález ukazuje cenu:
+`alpine_hut` s vlastní doménou čekal měsíc, než ho odhalilo razítko. Buď
+objekt pojmenovat z `website`/`operator`/`wikidata`, nebo ho vypsat do
+samostatné fronty „bez jména, k ruční kontrole", kterou `npm run kontrola`
+uvidí. Sám to neměním — je to zásah do pipeline, která ti generuje
+kandidáty.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
+
+**Otázky pro Michala:**
+- **Mám u Pardubických bud založit kandidáta ručně?** Pravidlo říká
+  „kandidáti vznikají exportem, ne ručním zápisem", takže jsem ho
+  nezaložil — ale tenhle konkrétní objekt se z exportu nikdy nevynoří,
+  dokud v OSM nedostane jméno. Ruční zápis, oprava pipeline, nebo doplnit
+  `name` přímo do OSM?
+- **Hříběcí a Jilemnická bouda** — obě jsou v našich podkladech jako živé
+  objekty. Mám je při nejbližší krkonošské práci dohledat a založit jako
+  kandidáty, nebo počkat na tvůj klik na některý export?
+- **Bouda v Modrém dole = Modrodolská bouda?** Shoda je nepřímá (razítko
+  pojmenovává místo). Beru ji jako návrh, ne jako zápis — potvrdíš?
+- Trvá z 16. 8.: **Góry Stołowe** (Pasterka, Szczeliniec) — založit
+  oblast?; **podorlické solitéry** (Dobrošov, Andrlův chlum, Kozlov,
+  Svinec) — přesahová oblast, nebo drobná samostatná?; „Śnieżka - Karpacz"
+  × Dom Śląski; kolize „Kamenná chata" × „Kamenná chata - Chopok";
+  43 shod ve frontě ke kontrole; znění svolení třetího webu
+  (panos-pe@volny.cz).
+
 ## 2026-08-16 (třetí blok, s Michalem online) — DATA-05: triáž 139 razítkových kandidátů
 
 **Hotovo:**
