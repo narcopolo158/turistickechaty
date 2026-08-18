@@ -35,6 +35,58 @@ const KOREN = join(process.cwd(), 'data', 'kandidati')
 /** Overpass posílá `remark` i pro nechybová hlášení — hlídají se jen chyby. */
 const CHYBA_V_REMARK = /error|timed out|out of memory/i
 
+/**
+ * DRUHÁ VĚC, KTEROU TENHLE SOUBOR HLÍDÁ (18. 8. 2026): export stažený
+ * **starší, užší verzí dotazu**.
+ *
+ * Do 30. 7. 2026 sbíral DATA-01 jen hutové tagy (`tourism=alpine_hut` a spol.).
+ * Commit `34cebbb` („DATA-01 hledal jen hutove tagy — jizerske boudy jsou
+ * v OSM restaurace") přidal druhou vrstvu: **civilně tagované boudy** —
+ * restaurace, hotely a penziony, které mají boudové slovo v NÁZVU. Oblasti
+ * exportované po tomhle datu je mají (v CZ souboru Jizerky 36, Šumava 66,
+ * Beskydy 30 takových objektů), oblasti exportované dřív ne — a nikdo je kvůli
+ * tomu nepustil znovu.
+ *
+ * Kontrola se **neptá na datum**, protože `timestamp_osm_base` verzi dotazu
+ * neprozradí: šumavský export nese stav dat z 1. 6., ačkoli běžel 4. 8. — to
+ * jen odpovědělo zaostalé zrcadlo. Ptá se na OBSAH: když v exportu není ani
+ * jediný objekt bez hutového tagu, ačkoli si o ně dotaz výslovně říká, je to
+ * podpis staré verze. Nad skutečným repem to k 18. 8. 2026 sedne na dva
+ * soubory (`krkonose/_overpass-export-cz.json` a `-pl.json`, dohromady 78
+ * objektů, z toho 0 civilních) a na žádný jiný.
+ *
+ * NEROZHODUJE (nezvyšuje návratový kód): je to PRÁCE — pustit oblast znovu
+ * přes Actions — ne vada souboru. U velmi malé oblasti navíc může být nula
+ * civilních objektů pravda, takže poslední slovo má redakce.
+ */
+export type UpozorneniExportu = {
+  soubor: string
+  druh: 'uzky-dotaz'
+  elementu: number
+  civilnich: number
+}
+
+/** Tagy, kterými se v OSM značí chata jako chata (první, původní vrstva dotazu). */
+const HUTOVE_TAGY = new Set(['alpine_hut', 'wilderness_hut', 'hut', 'chalet'])
+
+/** Bere jen hlavní export oblasti; `_overpass-dle-jmen-*` i `-rozhledny-*` mají vlastní dotaz. */
+const HLAVNI_EXPORT = /_overpass-export-[a-z]{2}\.json$/
+
+export function zkontrolujSirkuDotazu(soubor: string, raw: string): UpozorneniExportu | null {
+  if (!HLAVNI_EXPORT.test(soubor)) return null
+  let telo: { elements?: { tags?: Record<string, string> }[] }
+  try {
+    telo = JSON.parse(raw)
+  } catch {
+    return null // rozbitý JSON řeší zkontrolujExport, ne tahle kontrola
+  }
+  const els = telo.elements
+  if (!Array.isArray(els) || els.length === 0) return null
+  const civilnich = els.filter((e) => !HUTOVE_TAGY.has(e?.tags?.tourism ?? '')).length
+  if (civilnich > 0) return null
+  return { soubor, druh: 'uzky-dotaz', elementu: els.length, civilnich }
+}
+
 export type VadaExportu = {
   soubor: string
   druh: 'remark' | 'json' | 'bez-elements'
@@ -95,8 +147,32 @@ if (spustenoPrimo) {
     )
   }
 
+  const upozorneni = soubory
+    .map((s) => zkontrolujSirkuDotazu(s, readFileSync(s, 'utf8')))
+    .filter((u): u is UpozorneniExportu => u !== null)
+
+  for (const u of upozorneni) {
+    const kde = u.soubor.replace(`${process.cwd()}/`, '')
+    console.log(`! ${kde}`)
+    console.log(
+      `    ${u.elementu} objektů, z toho 0 civilně tagovaných → export je nejspíš` +
+        ' z doby před 30. 7. 2026,',
+    )
+    console.log(
+      '    kdy dotaz sbíral jen hutové tagy. Boudy mapované jako restaurace/hotel v něm chybí.',
+    )
+  }
+
   console.log()
-  console.log(`surových exportů: ${soubory.length} | vad: ${vady.length}`)
+  console.log(
+    `surových exportů: ${soubory.length} | vad: ${vady.length} | upozornění: ${upozorneni.length}`,
+  )
+  if (upozorneni.length) {
+    console.log()
+    console.log('Upozornění NEROZHODUJE o návratovém kódu — je to práce, ne vada souboru:')
+    console.log('pustit dotčenou oblast znovu (Actions → „DATA-01: OSM export chat (dle')
+    console.log('oblasti)"), pak projít nově založené kandidáty triáží.')
+  }
   if (vady.length) {
     console.log()
     console.log('Co s tím: spustit DATA-01 pro dotčenou oblast znovu (Actions →')

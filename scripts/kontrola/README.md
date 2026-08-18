@@ -379,6 +379,20 @@ nemusí být z katalogu nic. A hlásí chybu i tehdy, když nějaké elementy p�
 částečný export vypadá jako úspěch a rozdíl proti minulému běhu se pak projeví
 jako „objekty zmizely".
 
+**Druhá věc v témž souboru (18. 8. 2026) — `zkontrolujSirkuDotazu`, upozornění.**
+Do 30. 7. 2026 sbíral DATA-01 jen hutové tagy; commit `34cebbb` přidal vrstvu
+**civilně tagovaných bud** (restaurace, hotel, penzion s boudovým slovem
+v názvu). Oblasti exportované dřív ji nemají a nikdo je kvůli tomu nepustil
+znovu — v Krkonoších tak chybí Jilemnická i Hříběcí bouda, obě mapované jako
+restaurace. Kontrola se **neptá na datum**: `timestamp_osm_base` verzi dotazu
+neprozradí (šumavský export nese stav z 1. 6., ačkoli běžel 4. 8. — odpovědělo
+zaostalé zrcadlo). Ptá se na obsah — hlavní export, v němž není ani jeden
+objekt bez hutového tagu, ačkoli si o ně dotaz říká, je podpis staré verze.
+Nad repem to sedne na dva krkonošské soubory (78 objektů, 0 civilních) a na
+žádný jiný; kontrolní vzorek: Jizerky 36, Šumava 66, Beskydy 30 civilních.
+**NEROZHODUJE** — je to práce (pustit oblast znovu), ne vada souboru, a u velmi
+malé oblasti může být nula civilních objektů pravda.
+
 **`katalog-pokryti.ts` — seznam k posouzení.** Pro každou oblast s vyplněným
 `katalogPohori` řekne, které katalogové objekty nemají v repu ani profil, ani
 kandidáta. Je to jediná mezera z celé pipeline, kterou nezachytí nic jiného:

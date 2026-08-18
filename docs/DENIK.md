@@ -29,6 +29,98 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-18 — denní session: DATA-05, dohledávka tří mezer + nález staré verze exportu
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál beze změny blokovaná — zbývají
+  čistě telefonní otázky (KRNAP, PTTK Jelenia Góra, Luční bouda, Petrova
+  bouda), dokladová část je vyčerpaná od 2. 8. Beru tedy **DATA-05** a v ní
+  krok, který si včerejší session sama navrhla: dohledávku tří mezer z koše E.
+- **Tři dohledávky hotové → `docs/DATA-05-kos-E-krkonose.md`** (nová sekce
+  „Dohledávka tří mezer — 18. 8. 2026", každý údaj s pramenem, všechno by při
+  zápisu bylo `verified: false` / `checked: 2026-08-18`):
+  - **Jilemnická bouda (Horní Mísečky)** — nejsilnější z trojice a klíčem
+    zařazení **prochází**: restaurace v přízemí pro 70 hostů s **vlastní
+    otevírací dobou nezávislou na ubytování** (Po–Čt 10–18, Pá–Ne 9–20),
+    ~1 040 m, 50 lůžek, celoročně (jilemnickabouda.cz, treking.cz).
+  - **Hříběcí bouda** — stojí ve **Strážném**, ne na Benecku, jak dohad
+    prověrky předpokládal (840 m, 45 lůžek, „stylová restaurace",
+    ceskehory.cz). **Aktuálnost provozu doložená ale není** — prezentace na
+    ceskehory.cz je označená „objekt v archivu" a vlastní web hribeciboudy.cz
+    cyklí redirect https → http.
+  - **Pardubické boudy** — prameny si **neodporují, liší se v čase**: do roku
+    2020 penzion s vlastní restaurací a barem (1 125 m, Černá hora,
+    ceskehory.cz — dnes archivní), od 2020 po rekonstrukci **„moderní privátní
+    chalupa"** se saunou, vířivkou a plně vybavenou kuchyní (kudyznudy.cz).
+    Dnešním klíčem zařazení by tedy **neprošly** — stejný případ jako
+    krušnohorské „Lesní Zátiší" vyřazené 10. 8.
+  - **Hančova bouda** — nedohledána, nezbyl čas.
+- **Rozlišení, které podklady nedělaly a mělo by se propsat do pravidel:**
+  FACT-0131/0132 z našeho zdrojového průzkumu vážou vznik v 17. století
+  a Vlastu Buriana k **„Hříběcí boudě"** v jednotném čísle, kdežto dohledaný
+  rozhlasový pramen mluví o **„Hříběcích boudách"** — tedy o **enklávě
+  stavení**, ne o dnešním penzionu. Do profilu se to nesmí přenést jako fakt
+  o stavbě; leda s výslovnou poznámkou, že pramen mluví o místě.
+- **Hlavní nález dne je ale systémový a dohledávka ho jen odhalila.** Hříběcí
+  ani Jilemnická bouda **nejsou v krkonošském OSM exportu vůbec, ani jménem**.
+  Důvod: **krkonošský export je jediný v repu, který běžel starou, užší verzí
+  dotazu.** Commit `34cebbb` z **30. 7. 2026** („DATA-01 hledal jen hutove tagy
+  — jizerske boudy jsou v OSM restaurace") přidal vrstvu **civilně tagovaných
+  bud** (restaurace/hotel/penzion s boudovým slovem v názvu); krkonošský export
+  je z **29. 7.**, tedy o den starší, a od té doby se Krkonoše nepustily.
+  **Změřeno, ne odhadnuto:** oba krkonošské soubory mají **0 civilně
+  tagovaných objektů ze 78**, kdežto Jizerky 36, Šumava 66, Beskydy 30.
+  Je to přesně ta třída objektů, kvůli které fix vznikl — a padly do ní dvě
+  z dnešních tří mezer.
+- **Nález zapouzdřen do kontroly, ať se to nestane potřetí** —
+  `zkontrolujSirkuDotazu` v `scripts/kontrola/exporty.ts`. **Neptá se na
+  datum**, a je to úmysl: `timestamp_osm_base` verzi dotazu neprozradí
+  (šumavský export nese stav dat z 1. 6., ačkoli běžel 4. 8. — odpovědělo
+  zaostalé zrcadlo, což je jiná porucha). Ptá se na obsah: hlavní export,
+  v němž není ani jeden objekt bez hutového tagu, ačkoli si o ně dotaz říká,
+  je podpis staré verze. Nad repem sedne **právě na dva krkonošské soubory
+  a na žádný jiný** (75 exportů celkem) — jeden test to drží.
+  **NEROZHODUJE** o návratovém kódu: je to práce (pustit oblast znovu), ne
+  vada souboru, a u velmi malé oblasti může být nula civilních objektů pravda.
+  5 nových testů, README kontrol doplněn.
+- **Do `data/` se ani dnes nesáhlo.** `kontrola` (vad 0, upozornění 2), `lint`
+  i `typecheck` zelené; `kontrola-exporty` 11 testů, s oběma sadami DATA-01
+  dohromady 79 zeleně.
+
+**Příště:** dohledat **Hančovu boudu**; pak koš C rozpouštět dohledávkami
+dotčených oblastí (nově i „Bouda Svornost" v Jeseníkách). Až pustíš krkonošský
+export znovu, projít nově založené kandidáty triáží — čekám tam Jilemnickou
+i Hříběcí boudu.
+
+**Návrh změny (do deníku, ne do plan.md):** stojí za úvahu projít stejným
+metrem i ostatní vrstvy dotazu (`_overpass-dle-jmen-*`, `-rozhledny-*`) —
+dnešní kontrola hlídá jen hlavní export, protože u těch dvou nemám měřitelný
+podpis, podle kterého by se stará verze poznala.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
+
+**Otázky pro Michala:**
+- **Pustíš DATA-01 nad Krkonošemi znovu?** (Actions → „DATA-01: OSM export
+  chat (dle oblasti)", oblast `krkonose`.) Je to jeden klik a **ruší část
+  včerejší otázky**: ptal jsem se, jestli mám Hříběcí a Jilemnickou boudu
+  založit ručně — teď to vypadá, že je export přinese sám i s doklady, což je
+  poctivější cesta. Pilotní oblast běží na roky staré verzi dotazu, takže se
+  můžou vynořit i další objekty.
+- **Pardubické boudy — zapsat jako vyřazené?** Doklad je nepřímý: kudyznudy.cz
+  popisuje privátní chalupu k pronájmu, ale nikde neříká „bez občerstvení pro
+  veřejnost", a vlastní web `pardubickeboudy.cz` je ze sandboxu nedostupný
+  (robots.txt). Sám to nezapisuji. Objekt v OSM (`way/88752514`) navíc pořád
+  nemá tag `name` — otázka na ruční zápis kandidáta z včerejška tedy trvá.
+- **Hříběcí bouda — je dnes v provozu?** Oba prameny, které o ní něco říkají,
+  jsou archivní nebo nedostupné. Tohle je otázka na telefonát, ne na sandbox.
+- Trvá z 17. 8.: **Bouda v Modrém dole = Modrodolská bouda?**; **Góry Stołowe**
+  (Pasterka, Szczeliniec) — založit oblast?; **podorlické solitéry** (Dobrošov,
+  Andrlův chlum, Kozlov, Svinec) — přesahová oblast, nebo drobná samostatná?;
+  „Śnieżka - Karpacz" × Dom Śląski; kolize „Kamenná chata" × „Kamenná chata -
+  Chopok"; 43 shod ve frontě ke kontrole; znění svolení třetího webu
+  (panos-pe@volny.cz).
+
 ## 2026-08-17 — denní session: DATA-05, koš E prověřen (3 mezery v korpusu)
 
 **Hotovo:**

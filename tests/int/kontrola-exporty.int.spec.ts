@@ -16,7 +16,11 @@ import { readFileSync } from 'node:fs'
 
 import { describe, expect, it } from 'vitest'
 
-import { najdiExporty, zkontrolujExport } from '../../scripts/kontrola/exporty'
+import {
+  najdiExporty,
+  zkontrolujExport,
+  zkontrolujSirkuDotazu,
+} from '../../scripts/kontrola/exporty'
 
 const odpoved = (telo: Record<string, unknown>) => JSON.stringify(telo)
 
@@ -82,6 +86,56 @@ describe('zkontrolujExport', () => {
     // všechny a vypsat je.
     expect(zkontrolujExport('x.json', '<html>502 Bad Gateway</html>')?.druh).toBe('json')
     expect(zkontrolujExport('x.json', '{"remark":"ok"}')?.druh).toBe('bez-elements')
+  })
+})
+
+describe('zkontrolujSirkuDotazu — export ze staré, užší verze dotazu', () => {
+  const hut = (name: string) => ({ type: 'node', id: 1, tags: { tourism: 'alpine_hut', name } })
+  const civil = (name: string) => ({ type: 'node', id: 2, tags: { tourism: 'hotel', name } })
+
+  it('samé hutové tagy v hlavním exportu = podpis staré verze dotazu', () => {
+    const u = zkontrolujSirkuDotazu(
+      'data/kandidati/krkonose/_overpass-export-cz.json',
+      odpoved({ elements: [hut('Luční bouda'), hut('Vosecká bouda')] }),
+    )
+    expect(u?.druh).toBe('uzky-dotaz')
+    expect(u?.elementu).toBe(2)
+    expect(u?.civilnich).toBe(0)
+  })
+
+  it('jediný civilně tagovaný objekt stačí — dotaz si o ně říká, tedy je to nová verze', () => {
+    // Přesně tenhle tvar mají Jizerky: Prezidentská chata je v OSM restaurace.
+    expect(
+      zkontrolujSirkuDotazu(
+        'data/kandidati/jizerske-hory/_overpass-export-cz.json',
+        odpoved({ elements: [hut('Smědava'), civil('Prezidentská chata')] }),
+      ),
+    ).toBeNull()
+  })
+
+  it('hlídá jen hlavní export — dohledávka podle jmen a rozhledny mají vlastní dotaz', () => {
+    const telo = odpoved({ elements: [hut('cokoli')] })
+    expect(zkontrolujSirkuDotazu('data/kandidati/x/_overpass-dle-jmen-cz.json', telo)).toBeNull()
+    expect(zkontrolujSirkuDotazu('data/kandidati/x/_overpass-rozhledny-cz.json', telo)).toBeNull()
+  })
+
+  it('prázdný ani rozbitý export se jako úzký dotaz nehlásí — to je práce jiné kontroly', () => {
+    expect(zkontrolujSirkuDotazu('x/_overpass-export-cz.json', odpoved({ elements: [] }))).toBeNull()
+    expect(zkontrolujSirkuDotazu('x/_overpass-export-cz.json', '<html>502</html>')).toBeNull()
+  })
+
+  it('nad skutečným repem sedne PRÁVĚ na dva krkonošské soubory', () => {
+    // Kdyby se to rozjelo na další oblasti, je to falešný poplach a kontrola
+    // se má zúžit; kdyby na nula, Krkonoše se mezitím pustily znovu a tenhle
+    // test se má smazat i s kontrolou.
+    const zasahy = najdiExporty()
+      .map((s) => zkontrolujSirkuDotazu(s, readFileSync(s, 'utf8')))
+      .filter((u) => u !== null)
+      .map((u) => u!.soubor.replace(`${process.cwd()}/`, ''))
+    expect(zasahy).toEqual([
+      'data/kandidati/krkonose/_overpass-export-cz.json',
+      'data/kandidati/krkonose/_overpass-export-pl.json',
+    ])
   })
 })
 
