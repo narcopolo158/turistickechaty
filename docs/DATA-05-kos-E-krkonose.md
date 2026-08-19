@@ -322,3 +322,68 @@ export je poslední v repu, který běžel **starou, užší verzí dotazu**
 (jen hutové tagy). Boudy mapované v OSM jako restaurace nebo hotel do něj
 propadly. Nový běh DATA-01 nad Krkonošemi je tedy pravděpodobně přinese sám —
 a je to lepší odpověď než ruční zápis kandidáta, na který se prověrka ptala.
+
+---
+
+# Dohledávka A4 — Hančova bouda (19. 8. 2026)
+
+Denní bezobslužná session dojela poslední otevřenou položku oddílu A.
+**Do `data/` se nesáhlo** — níž je podklad s prameny, ne zápis. Vše by při
+zápisu bylo `verified: false` (konvence B), `checked: 2026-08-19`.
+
+| údaj | hodnota | pramen |
+|---|---|---|
+| adresa | Benecko 32, 512 37, okres Semily | kudyznudy.cz, info-cechy.cz |
+| poloha | „na mírném svahu uprostřed luk a lesů a přece blízko silnice" | kudyznudy.cz |
+| pokoje | „18 dvoulůžkových pokojů, 4 třílůžkové pokoje, 2 čtyřlůžkové pokoje", všechny s vlastním sociálním zařízením | obecbenecko.cz, shodně info-cechy.cz |
+| občerstvení | „zahradní restaurace s grilem", „rustikální prostředí restaurace s krbem" | obecbenecko.cz |
+| kuchyně | „dobře ošetřená piva a dobrá domácí jídla"; vaří se „podle kuchařského umění z dob našich babiček" | kudyznudy.cz |
+| akce | „svatby, oslavy, firemní akce s kapacitou až 50 osob" | kudyznudy.cz, info-cechy.cz |
+| přestavba | „our ancestors rebuilt it in 1936 roughly into its current form" | hancovabouda.cz/en/history/ |
+| další služby | snowtubing u objektu (zima), šestijamkové public golfové hřiště (léto), dětský koutek | obecbenecko.cz, kudyznudy.cz |
+
+**Nadmořská výška: nedoložena.** Neuvádí ji ani jeden ze čtyř přečtených
+pramenů. Nedopočítávat z výšky Benecka — obec se táhne přes výškové rozpětí
+(týž případ, jaký řeší DATA-35).
+
+## Dvě věci, které se nesmí zapsat jako fakt
+
+1. **„Zakladatel Bohumil Hanč".** Vlastní web mluví o duchu zakladatele
+   (`in the spirit of the founder Bohumil Hanč`) — je to **tvrzení
+   provozovatele**, ne doložený fakt, a jméno je zároveň jméno legendárního
+   závodníka, který zahynul v roce 1913. Jestli jde o téhož člověka, o jeho
+   příbuzného, nebo o pojmenování po něm, **žádný náš pramen neříká**. Do
+   profilu jen s uvedením, že to říká provozovatel; do `zajimavosti` s tímtéž
+   uvozením (pravidlo CLAUDE.md: superlativ/claim → uveď zdroj).
+2. **Rok 1936 je rok PŘESTAVBY, ne vzniku.** Vlastní web výslovně píše
+   „rebuilt … roughly into its current form"; kdy bouda vznikla, neříká.
+   `rokVzniku` proto nevyplňovat.
+
+## Rozpor v kontaktech — telefonní otázka
+
+| pramen | telefon | e-mail |
+|---|---|---|
+| kudyznudy.cz (a vlastní web) | +420 734 667 041, +420 603 176 094 | hancovabouda@gmail.com |
+| obecbenecko.cz, info-cechy.cz | +420 481 582 632 | hancovabouda@quick.cz |
+
+Vypadá to na starou pevnou linku na stránkách obce proti dnešním mobilům, ale
+**doklad to není** — obojí je dnes veřejně publikované. Patří to k otázkám do
+`docs/TELEFONATY-KRKONOSE.md`, ne do profilu.
+
+## Klíč zařazení: hraniční, doklad chybí právě ten rozhodující
+
+Restaurace je doložena třemi na sobě nezávislými prameny, ale **ani jeden
+neuvádí otevírací dobu restaurace nezávislou na ubytování** — tedy přesně ten
+doklad, kterým prošla Jilemnická bouda (18. 8.) a který chyběl Hříběcí boudě.
+Objekt navíc stojí v obci u silnice, takže „role na trase" je slabší než
+u hřebenových bud. **Nezakládám kandidáta** — otázka pro Michala níž v deníku.
+
+## A znovu tentýž systémový nález
+
+Hančova bouda **není v krkonošském OSM exportu** — jediné, co v repu pod tím
+jménem je, je **autobusová zastávka** („Benecko, Hančova bouda",
+`node/8243433481`, viz oddíl E1) v exportu výchozích bodů. Je to třetí objekt
+v řadě (po Hříběcí a Jilemnické boudě), který propadl **starou, užší verzí
+dotazu** z 29. 7. — a přesně ten typ objektu (penzion/restaurace v obci), kvůli
+kterému fix z 30. 7. vznikl. Argument pro nový běh DATA-01 nad Krkonošemi tím
+sílí ze dvou nálezů na tři.

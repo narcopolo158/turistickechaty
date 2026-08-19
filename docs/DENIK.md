@@ -29,6 +29,95 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-19 — denní session: DATA-05, koš E dojet a koš C otevřen
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál blokovaná (zbývají čistě
+  telefonní otázky — KRNAP, PTTK Jelenia Góra, Luční bouda, Petrova bouda;
+  dokladová část je vyčerpaná od 2. 8.). Beru tedy **DATA-05** přesně tam, kde
+  včerejší session skončila.
+- **Hančova bouda dohledána → oddíl „Dohledávka A4" v
+  `docs/DATA-05-kos-E-krkonose.md`.** Tím je **oddíl A koše E dojet celý**.
+  Prameny: kudyznudy.cz, obecbenecko.cz, info-cechy.cz a vlastní web
+  (dostupná byla jen podstránka historie — kořen domény sandbox nepustil).
+  - Doloženo: Benecko 32; „18 dvoulůžkových, 4 třílůžkové, 2 čtyřlůžkové
+    pokoje"; „zahradní restaurace s grilem" a „rustikální prostředí restaurace
+    s krbem"; akce do 50 osob; snowtubing a šestijamkový public golf.
+  - **Klíčem zařazení hraničně a kandidáta nezakládám:** restauraci dokládají
+    tři nezávislé prameny, ale **otevírací dobu nezávislou na ubytování
+    neuvádí ani jeden** — tedy přesně ten doklad, kterým 18. 8. prošla
+    Jilemnická bouda. Objekt navíc stojí v obci u silnice.
+  - **Dvě věci, které se nesmějí zapsat jako fakt:** rok **1936 je rok
+    PŘESTAVBY** („rebuilt … roughly into its current form"), ne vzniku →
+    `rokVzniku` nevyplňovat; a **„zakladatel Bohumil Hanč" je tvrzení
+    provozovatele**, ne doložený fakt — jméno je zároveň jméno závodníka,
+    který zahynul 1913, a jestli jde o téhož člověka, neříká žádný náš pramen.
+  - **Nadmořská výška nedoložena** ani jedním pramenem; nedopočítávat
+    z výšky Benecka (obec má výškové rozpětí — případ DATA-35).
+  - **Rozpor v kontaktech:** pevná linka +420 481 582 632 a
+    `hancovabouda@quick.cz` (stránky obce, info-cechy) proti mobilům
+    +420 734 667 041 / 603 176 094 a `hancovabouda@gmail.com` (Kudy z nudy
+    a vlastní web). Vypadá to na starý údaj na stránkách obce, ale doklad to
+    není → patří to k telefonním otázkám.
+- **Zahájeno rozpouštění koše C → nový `docs/DATA-05-kos-C-dohledavky.md`**
+  (koš C = jména, která leží v okně už založené oblasti, ale export je nemá):
+  - **Schronisko Liczyrzepa (Karpacz) — klíčem NEPROJDE.** Je to **Szkolne
+    Schronisko Młodzieżowe** v ulici Skalna uvnitř města, 50 lůžek, „kuchnia,
+    w której można przygotować własne posiłki" a teplé jídlo **na objednávku
+    v sousedním penzionu**. Polské *schronisko* tu neznamená horskou chatu, ale
+    mládežnickou noclehárnu — **stejná past jako beskydská „Rajcza -
+    Nickulina"** v témž koši. Návrh vyřazení; sám nezapisuji.
+  - **Chata Paprsek (Velké Vrbno) — doložená mezera v jesenickém korpusu.**
+    Náš **vlastní katalog** ji vede jako **HUT-0055 s jistotou A** (Rychlebské
+    hory, 1 022 m, stravování ano, aktivní), staremesto.info dokládá
+    **restauraci přímo v chatě** (70 míst + 50 na terase) a rok stavby **1932**
+    pod původním jménem **„Slezský Dům" (Schlesierhaus)**. Klíčem tedy
+    prochází bez pochybností.
+  - **Že je to mezera, je změřeno:** ve `data/kandidati/jeseniky/` je
+    **122 kandidátů a ani jeden Paprsek**; jméno má **0 výskytů** v hlavním
+    exportu i ve jmenné vrstvě `_overpass-dle-jmen-cz.json`. Poloha přitom leží
+    uvnitř okna (bbox 49.93–50.42 / 16.75–17.55) a Rychlebské hory
+    i Králický Sněžník jsou v `katalogPohori` téže oblasti.
+  - **Hypotéza k dnešnímu nálezu (neověřená, na OSM ze sandboxu nedosáhnu):**
+    objekt je v OSM nejspíš **hotel** a jmenuje se **„Horský hotel Paprsek"**
+    (tak ho titulkuje i Wikipedie) — na slovo „chata" v názvu se jmenná vrstva
+    nechytí. Jestli to platí, je to **měřitelná mezera jmenné vrstvy**, ne
+    náhoda: týká se všech objektů, které katalog vede jako chatu a OSM je
+    pojmenoval hotelem. Ověřit se to dá jedním dotazem z Actions, ne odsud.
+  - **„Turistická chata Trosky" nedohledána** — hledání vrací jen Hotel Trosky
+    v Rovensku a Bistro Pod Troskami.
+- **Do `data/` se ani dnes nesáhlo.** Změněny jen tři dokumenty a backlog.
+
+**Příště:** dorazit koš C — zbývá **Schronisko Wysoki Kamień** (Jizerky),
+**Amselfall - Amselfallbaude** (Českosaské Švýcarsko) a **Bouda Svornost**
+(Jeseníky, přesunutá z koše E); beskydská sedmička patří k DATA-37.
+Pak ověřit hypotézu o jmenné vrstvě dotazu — kolik objektů katalogu
+s „chatou" v názvu má v OSM „hotel", se dá spočítat i nad exporty v repu.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
+Nově: **`www.paprsek.cz`, `restu.cz` a kořen `hancovabouda.cz` sandbox nepustí**
+(robots.txt / provenance) — podstránky téže domény přitom projít můžou.
+
+**Otázky pro Michala:**
+- **Hančova bouda — zakládat?** Restaurace doložena, ale ne její nezávislost
+  na ubytování; je to penzion v obci u silnice. Ber to jako otázku po hranici:
+  **kde přesně končí „role na trase"** u objektů na Benecku? Odpověď bude
+  platit i na další benecké boudy.
+- **Chata Paprsek — pustit jesenický export znovu, nebo ji založit ručně?**
+  Doklady jsou tentokrát silné (vlastní katalog jistota A + dva portály), takže
+  ruční kandidát by nebyl domýšlení. Re-export ji ale nemusí přinést, pokud
+  platí hypotéza o „hotelu" v OSM názvu — v tom případě je pořádnou opravou
+  rozšíření jmenné vrstvy, ne další běh.
+- **Liczyrzepa — zapsat jako vyřazenou?** Doklad je z jednoho pramene
+  (naszesudety.pl), vlastní web schroniska jsem nečetl.
+- Trvá z 18. 8.: **pustíš DATA-01 nad Krkonošemi znovu?** (Hančova bouda je
+  **třetí** objekt v řadě, který v exportu chybí kvůli staré verzi dotazu —
+  po Hříběcí a Jilemnické.) Dál trvá: **Pardubické boudy** zapsat jako
+  vyřazené?; **Hříběcí bouda** je dnes v provozu?; **Bouda v Modrém dole =
+  Modrodolská bouda?**; **Góry Stołowe** — založit oblast?; **podorlické
+  solitéry** — přesahová oblast, nebo samostatná?
+
 ## 2026-08-18 — denní session: DATA-05, dohledávka tří mezer + nález staré verze exportu
 
 **Hotovo:**

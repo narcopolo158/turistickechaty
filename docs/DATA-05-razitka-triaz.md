@@ -148,6 +148,13 @@ i s OSM doklady:
 
 ## Koš C — v okně existující oblasti, ale export je nemá (~8)
 
+> **ROZPOUŠTĚNÍ ZAHÁJENO 19. 8. 2026 → `docs/DATA-05-kos-C-dohledavky.md`.**
+> Hotové: **Schronisko Liczyrzepa** (mládežnická noclehárna v Karpaczi bez
+> vlastního občerstvení → návrh vyřazení) a **Chata Paprsek** (doložená
+> mezera — katalogová chata HUT-0055, jistota A, 1 022 m, restaurace přímo
+> v chatě; v jesenickém exportu 0 výskytů ve 122 kandidátech).
+> **Turistická chata Trosky** nedohledána. Do `data/` se nesáhlo.
+
 Kandidáti na dohledávku dle jmen (vzor DATA-31); beskydské položky patří
 k DATA-37 (re-export, který tiše nic neudělal). Vše odhad z názvu:
 
