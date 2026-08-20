@@ -29,6 +29,122 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-20 — denní session: DATA-05, koš C dojet (a dvě mezery v pokrytí oken)
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál blokovaná — dokladová část je
+  vyčerpaná od 2. 8., zbývají čistě telefonní otázky (KRNAP, PTTK Jelenia
+  Góra, Luční bouda, Petrova bouda). Beru tedy **DATA-05** tam, kde včerejšek
+  skončil: zbytek koše C.
+- **Koš C dojet** → `docs/DATA-05-kos-C-dohledavky.md` (oddíly 4–6). Otevřená
+  v něm zůstává jediná položka, „Turistická chata Trosky", a ta čeká na detail
+  razítka, ne na dohledávku.
+- **Schronisko Wysoki Kamień — mezera, kterou nezpůsobil dotaz, ale OKNO.**
+  Objekt v repu **máme** (`way/518439272` v `krkonose/_overpass-rozhledny-pl.json`),
+  kandidátem ale není a Jizerky ho nikdy neviděly.
+  - Doloženo: katalog HUT-0232 (Góry Izerskie, jistota A, stravování ano,
+    web wysokikamien.com.pl); OSM `amenity=cafe`, `proposed:tourism=alpine_hut`,
+    `ele=1058`, `beds=0`, otevřeno 10–18 (IV–IX) / 10–16 (X–III);
+    korona-gor-polski.pl: „czynny wyłącznie bufet", bez noclehů kvůli chybějící
+    vodě, první schronisko 1882 (Schaffgotschové), rozebráno 1963, nové
+    otevřeno 2010. **Klíčem zařazení prochází** (bufet pro veřejnost + rozhledna
+    46 m vedle, DATA-23).
+  - **Příčina je změřená, ne odhadnutá:** objekt leží na **15,4918 ° v. d.**,
+    kdežto okno Jizerských hor končí na **15,45** → je **2,94 km východně od
+    hrany**. Jmenná vrstva ho nezachránila, protože se ptá katalogovými jmény
+    **uvnitř téhož okna**. Krkonošské okno ho naopak stáhlo, jenže jen jako
+    *občerstvení u rozhledny* — a **věž nemá tag `name`**, takže skončila
+    v `preskoceno` s důvodem `bez-nazvu`. **Je to týž mechanismus, který
+    17. 8. schoval Pardubické boudy** — potřetí za čtyři dny.
+  - **Rozpor nedomýšlet:** výška 1058 m (OSM i katalog) × 1050 m (portál).
+- **Vedlejší změřený nález ke krkonošskému exportu:**
+  `data/kandidati/krkonose/` **nemá ani jeden soubor `_overpass-dle-jmen-*.json`**,
+  ačkoli ostatní oblasti ho mají. Pilotní oblast tedy není pozadu jen o civilní
+  vrstvu (nález 18. 8.), ale o **celou jmennou dohledávku podle katalogu** —
+  o dvě vrstvy dotazu.
+- **Amselfall – Amselfallbaude — klíčem PROCHÁZÍ, ale aparát na ni nedosáhne.**
+  - Doloženo (ostsachsen.de, basteibruecke.de): výletní hospoda u vodopádu
+    v Amselgrundu, ~2 km severně od Rathenu, fungovala zhruba 200 let a od 1991
+    sloužila i jako informační místo národního parku; **od roku 2017 zavřená** —
+    „Die früher im Sommer geöffnete Amselfallbaude schloss jedoch 2017 nach
+    mehreren kleinen Felsabgängen", v roce 2021 stále zavřeno.
+  - Podle rozšířeného klíče z 26. 7. (DATA-25 — „sloužily turistům i v minulosti…
+    s poznámkou, že neslouží veřejnosti") to **není vyřazení**, ale profil se
+    stavem mimo provoz.
+  - **Jenže: 0 výskytů jména ve všech surových OSM exportech v repu** a bod
+    u Rathenu **nespadá do žádného z 18 oken**. Pás **14,05–14,38 ° v. d. nad
+    50,7 ° s. š. nekryje ani jedna oblast** (krušnohorské okno končí na 14,05,
+    lužické začíná na 14,38). Složka `data/kandidati/ceskosaske-svycarsko/`
+    přesto existuje se **čtyřmi kandidáty** — a je vidět, že spadli z okrajů
+    dvou sousedních oken (Daxensteinbaude a Räuberhütte z krušnohorského,
+    obě chaty na Tokáni z lužického). **Střed Českosaského Švýcarska — Hřensko,
+    Pravčická brána, Bastei, Rathen — nekryje nic.**
+- **Bouda Svornost — oprava vlastní triáže ze 17. 8.** Přeřadil jsem ji tehdy
+  z koše E do koše C kvůli jediné jmenné shodě (`jeseniky/chata-svornost`).
+  Byl to odhad a je chybný: **Bouda Svornost stojí v Peci pod Sněžkou**,
+  u konečné sedačkové lanovky Zahrádky expres, 1 100 m, 45 lůžek, vlastní
+  restaurace a bar + „sluneční terasa s venkovním bufetem, pizzerie"
+  (ceskehory.cz). Jesenická „Chata Svornost" (`chatasvornost.cz`) je jmenovec.
+  - **Změřeno:** „Svornost" má v `data/chaty/` i v `data/kandidati/krkonose/`
+    a ve všech krkonošských exportech **nula výskytů** → je to **čtvrtá**
+    doložená mezera krkonošského korpusu po Pardubických, Hříběcí a Jilemnické
+    boudě. Terasa s bufetem a pizzerií je přesně civilně tagovaný případ,
+    kvůli kterému fix z 30. 7. vznikl.
+  - **Stejná past jako u Hříběcí boudy:** prezentace na ceskehory.cz je
+    označená „Objekt v archivu – prezentace není aktivní", takže *dnešní*
+    provoz doložený není. To je otázka na telefonát.
+- **Do `data/` se ani dnes nesáhlo** — změněny jen dva dokumenty (koš C
+  a backlog). `npm run kontrola` vše zelené.
+
+**Příště:** koš C je dojet, takže navázat na frontu razítek dál — zbývá
+**beskydská sedmička** (patří k DATA-37, re-export) a jména z koše G, která
+čekají na detaily razítek. Nezávisle na tom: projít stejným metrem jako
+18. 8. i ostatní vrstvy dotazu (`_overpass-dle-jmen-*`, `-rozhledny-*`) —
+dnešní nález ukazuje, že chybějící vrstva se pozná i pouhou nepřítomností
+souboru, což je měřitelný podpis, který mi 18. 8. chyběl.
+
+**Návrhy změn (do deníku, ne do plan.md) — sám nezapisuji, jsou to zásahy do
+konfigurace a pipeline:**
+1. **Posunout východní hranu okna Jizerských hor** z 15,45 na ~15,53, aby
+   pokryla Wysoki Kamień a hřeben nad Szklarskou Porębou. Překryv s Krkonošemi
+   je u téhle dvojice **záměrný už dnes** (komentář v `oblasti.ts` u Jizerky
+   a Harrachova), duplicity řeší triáž. Po posunu je nutné pustit DATA-01
+   i oba exporty DATA-06.
+2. **Českosaské Švýcarsko** buď dostane vlastní záznam v `scripts/oblasti.ts`
+   s vlastním oknem, nebo se ta složka zruší a čtyři kandidáti se přeřadí.
+   Dnešní stav je nejhorší ze tří možností: složka budí dojem pokrytí, které
+   neexistuje.
+3. **Kontrola na chybějící vrstvu exportu** — `zkontrolujSirkuDotazu`
+   z 18. 8. hlídá obsah hlavního exportu; nepřítomnost celého souboru
+   `_overpass-dle-jmen-*.json` v oblasti, která má neprázdné `katalogPohori`,
+   je druhý, ještě lacinější podpis staré verze.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
+Dál platí i to, že `npm ci` je v čerstvém sandboxu potřeba pustit před
+`npm run kontrola`. Nově: **`pl.wikipedia.org`, `de.wikipedia.org`
+a `wysokikamien.com.pl` sandbox nepustil** (cache-only / provenance),
+`sandsteinpfade.de` cyklí redirect http↔https.
+
+**Otázky pro Michala:**
+- **Posunout východní hranu okna Jizerek na ~15,53?** Je to jednořádková
+  změna v `oblasti.ts`, ale vyžádá si tři re-exporty. Bez ní Wysoki Kamień
+  z jizerského běhu nikdy nevypadne — a je to katalogová položka s jistotou A.
+- **Českosaské Švýcarsko — vlastní oblast, nebo zrušit složku?** Viz návrh 2.
+  Pokud vlastní oblast, spadne do ní i Amselfallbaude (jako objekt mimo provoz)
+  a nejspíš i Pravčická brána / Bastei.
+- **Amselfallbaude — zakládat jako profil mimo provoz?** Doklad o zavření je
+  ze dvou nezávislých pramenů, ale oba jsou turistické portály, ne úřední
+  zdroj, a nejnovější explicitní datum je 2021.
+- **Bouda Svornost — je dnes v provozu?** Jediný pramen, který ji popisuje,
+  je archivní. Otázka na telefonát, ne na sandbox.
+- Trvá z 19. 8.: **pustíš DATA-01 nad Krkonošemi znovu?** (Už **čtvrtý**
+  chybějící objekt.) Dál trvá: **Hančova bouda** — zakládat?; **Chata Paprsek**
+  — re-export, nebo ruční kandidát?; **Liczyrzepa** — zapsat jako vyřazenou?;
+  **Pardubické boudy** — zapsat jako vyřazené?; **Hříběcí bouda** v provozu?;
+  **Bouda v Modrém dole = Modrodolská bouda?**; **Góry Stołowe** — založit
+  oblast?; **podorlické solitéry** — přesahová oblast, nebo samostatná?
+
 ## 2026-08-19 — denní session: DATA-05, koš E dojet a koš C otevřen
 
 **Hotovo:**
