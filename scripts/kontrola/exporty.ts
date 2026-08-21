@@ -30,7 +30,12 @@
 import { readdirSync, readFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 
+import { jmenaZKatalogu } from '../data01-overpass-krkonose'
+import { OBLASTI, zemeDotazu } from '../oblasti'
+
 const KOREN = join(process.cwd(), 'data', 'kandidati')
+
+const KATALOG = join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json')
 
 /** Overpass posílá `remark` i pro nechybová hlášení — hlídají se jen chyby. */
 const CHYBA_V_REMARK = /error|timed out|out of memory/i
@@ -85,6 +90,72 @@ export function zkontrolujSirkuDotazu(soubor: string, raw: string): UpozorneniEx
   const civilnich = els.filter((e) => !HUTOVE_TAGY.has(e?.tags?.tourism ?? '')).length
   if (civilnich > 0) return null
   return { soubor, druh: 'uzky-dotaz', elementu: els.length, civilnich }
+}
+
+/**
+ * TŘETÍ VĚC, KTEROU TENHLE SOUBOR HLÍDÁ (21. 8. 2026): vrstva dotazu, která
+ * v oblasti **vůbec neproběhla**.
+ *
+ * Kontrola z 18. 8. se ptá na OBSAH hlavního exportu, a proto pozná jen starý
+ * dotaz tam, kde nějaký soubor leží. Nález z 20. 8. ukázal lacinější podpis
+ * téže poruchy: `data/kandidati/krkonose/` **nemá ani jeden**
+ * `_overpass-dle-jmen-*.json`, ačkoli pilotní oblast má neprázdné
+ * `katalogPohori` a ostatní oblasti ten soubor mají. Chybějící vrstva se tedy
+ * pozná pouhou NEPŘÍTOMNOSTÍ souboru — bez čtení jediného bajtu.
+ *
+ * Proč na tom záleží: `_overpass-dle-jmen-*` je druhá záchranná síť (objekt,
+ * který katalog vede a hutový dotaz mine, protože ho OSM tagovalo civilně)
+ * a `_overpass-rozhledny-*` je vstup pro DATA-23. Když vrstva neběžela,
+ * report běhu ukáže úspěch — z jeho pohledu se opravdu nic nestalo.
+ *
+ * Rozlišují se dva druhy, protože znamenají něco jiného:
+ *   • `nespustena` — oblast NEMÁ ani hlavní export. Je to oblast založená
+ *     v `oblasti.ts`, která čeká na Michalův klik v Actions. Není to porucha,
+ *     je to fronta práce.
+ *   • `chybi-vrstva` — hlavní export je, ale některá další vrstva chybí. To je
+ *     tiché nedoběhnutí a přesně případ Krkonoš.
+ *
+ * NEROZHODUJE (nezvyšuje návratový kód): pustit oblast (znovu) přes Actions je
+ * PRÁCE, ne vada souboru — stejně jako u `uzky-dotaz`.
+ */
+export type ChybejiciVrstva = {
+  oblast: string
+  zeme: string
+  vrstva: 'export' | 'dle-jmen' | 'rozhledny'
+  druh: 'nespustena' | 'chybi-vrstva'
+  soubor: string
+}
+
+export function zkontrolujVrstvy(koren: string = KOREN, katalog: string = KATALOG) {
+  const chybi: ChybejiciVrstva[] = []
+  for (const oblast of OBLASTI) {
+    const dir = join(koren, oblast.slug)
+    const zeme = zemeDotazu(oblast)
+    // Dohledávka podle jmen se pouští jen tehdy, když z katalogu vůbec nějaká
+    // jména vypadnou — u oblasti bez `katalogPohori` by ten soubor chybět MĚL.
+    const maJmena = jmenaZKatalogu(katalog, oblast.katalogPohori).length > 0
+    // „Nespuštěná" se pozná podle hlavního exportu, ne podle složky: složka
+    // může existovat kvůli ručně založeným kandidátům (Podkrkonoší) i bez běhu.
+    const bezHlavniho = zeme.every((z) => !existsSync(join(dir, `_overpass-export-${z.zeme}.json`)))
+    for (const { zeme: kod } of zeme) {
+      const vrstvy: ChybejiciVrstva['vrstva'][] = maJmena
+        ? ['export', 'dle-jmen', 'rozhledny']
+        : ['export', 'rozhledny']
+      for (const vrstva of vrstvy) {
+        const nazev =
+          vrstva === 'export' ? `_overpass-export-${kod}.json` : `_overpass-${vrstva}-${kod}.json`
+        if (existsSync(join(dir, nazev))) continue
+        chybi.push({
+          oblast: oblast.slug,
+          zeme: kod,
+          vrstva,
+          druh: bezHlavniho ? 'nespustena' : 'chybi-vrstva',
+          soubor: join('data', 'kandidati', oblast.slug, nazev),
+        })
+      }
+    }
+  }
+  return chybi
 }
 
 export type VadaExportu = {
@@ -163,9 +234,36 @@ if (spustenoPrimo) {
     )
   }
 
+  const chybejici = zkontrolujVrstvy()
+  const tiche = chybejici.filter((c) => c.druh === 'chybi-vrstva')
+  const nespustene = chybejici.filter((c) => c.druh === 'nespustena')
+
+  for (const c of tiche) {
+    console.log(`! ${c.soubor}`)
+    console.log(
+      `    oblast ${c.oblast} má hlavní export, ale vrstva „${c.vrstva}" (${c.zeme}) v repu není` +
+        ' → v běhu chybí',
+    )
+    console.log(
+      c.vrstva === 'dle-jmen'
+        ? '    druhá záchranná síť: objekty z katalogu, které OSM tagovalo civilně.'
+        : '    vstup pro DATA-23 (rozhledny s doloženým občerstvením).',
+    )
+  }
+
+  if (nespustene.length) {
+    const oblasti = [...new Set(nespustene.map((c) => c.oblast))]
+    console.log(`! oblastí založených, ale nikdy nespuštěných: ${oblasti.length}`)
+    console.log(`    ${oblasti.join(', ')}`)
+    console.log('    Není to vada — je to fronta: oblast čeká na běh DATA-01 v Actions.')
+  }
+
   console.log()
   console.log(
-    `surových exportů: ${soubory.length} | vad: ${vady.length} | upozornění: ${upozorneni.length}`,
+    `surových exportů: ${soubory.length} | vad: ${vady.length} | upozornění: ${upozorneni.length}` +
+      ` | chybějících vrstev: ${tiche.length} | nespuštěných oblastí: ${
+        new Set(nespustene.map((c) => c.oblast)).size
+      }`,
   )
   if (upozorneni.length) {
     console.log()

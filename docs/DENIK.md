@@ -29,6 +29,75 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-21 — denní session: DATA-05, chybějící vrstva dotazu je nově měřená kontrolou
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál blokovaná — dokladová část je
+  vyčerpaná od 2. 8., zbývají čistě telefonní otázky (KRNAP, PTTK Jelenia
+  Góra, Luční bouda, Petrova bouda) a bezobslužný běh je nemá jak položit.
+  Beru tedy **DATA-05**, a z jejího „Příště" tu část, která nepotřebuje
+  internetovou dohledávku: **projít stejným metrem jako 18. 8. i ostatní
+  vrstvy dotazu.**
+- **Z včerejšího dojmu je kontrola.** `scripts/kontrola/exporty.ts` umí nově
+  `zkontrolujVrstvy` — projde `OBLASTI` × `zemeDotazu` a pro každou dvojici
+  čeká tři soubory: hlavní export, rozhledny (vstup DATA-23) a — **jen když
+  z katalogu vůbec nějaká jména vypadnou** — dohledávku podle jmen. Chybějící
+  vrstva se pozná **pouhou nepřítomností souboru**, bez čtení jediného bajtu;
+  to je ten lacinější podpis, který mi 18. 8. chyběl.
+- **Změřeno nad celým repem (75 surových exportů, 18 oblastí):**
+  - **Tichá mezera je právě jedna a je to ta krkonošská** —
+    `krkonose/_overpass-dle-jmen-cz.json` a `-pl.json`. Nález z 20. 8. tím
+    přestal být dojmem z výpisu složky a stal se měřeným stavem.
+  - **Rozhledny nechybí nikde** a **žádná jiná oblast žádnou vrstvu
+    nepostrádá.** To je na tom to podstatné: podpis je úzký, ne „všechno
+    chybí". Kontrola, která hlásí půl repa, se nečte.
+  - Krkonoše jsou tedy pozadu **o dvě vrstvy ze tří**: civilně tagované boudy
+    uvnitř hlavního exportu (nález 18. 8., stále platí — 60 CZ + 18 PL
+    objektů, z toho 0 civilních) **a celá jmenná dohledávka**.
+- **Druhý, věcně jiný nález — čtyři oblasti nemají ani hlavní export:**
+  `oravska-magura`, `zapadne-tatry`, `slovensky-raj`, `bieszczady`. Všechny
+  čtyři jsou v `oblasti.ts` založené a čekají na klik v Actions. Kontrola je
+  proto hlásí **odděleně jako `nespustena`**, ne jako chybějící vrstvu: je to
+  fronta práce, ne porucha běhu, a smíchat obojí do jednoho seznamu by tu
+  jedinou skutečnou mezeru utopilo.
+- **Upozornění NEROZHODUJE** o návratovém kódu — stejně jako `uzky-dotaz`
+  z 18. 8. Pustit oblast v Actions je práce, ne vada souboru.
+- **4 nové testy** v `tests/int/kontrola-exporty.int.spec.ts` (15 celkem, vše
+  zelené): že nad skutečným repem sedne právě na dvě krkonošské dohledávky,
+  že rozhledny nechybí nikde, že se „nespuštěná oblast" nepočítá jako
+  chybějící vrstva, a — nad dočasným kořenem — že oblast bez katalogových
+  jmen dohledávku vůbec nevyžaduje. `npm run kontrola` celé zelené,
+  `tsc --noEmit` čistý.
+- **Do `data/` se ani dnes nesáhlo** — změněny jen `scripts/kontrola/exporty.ts`,
+  `vse.ts`, README kontrol, test a backlog.
+
+**Příště:** fronta razítek dál — **beskydská sedmička** (patří k DATA-37,
+re-export) a **jména z koše G**, která čekají na detaily razítek. Nezávisle na
+tom je teď měřitelně doložené, že krkonošský běh chybí celý: kdyby Michal
+DATA-01 nad Krkonošemi pustil, spadnou tím pravděpodobně naráz čtyři doložené
+mezery (Pardubické, Hříběcí, Jilemnická bouda, Bouda Svornost) i jmenná vrstva.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
+
+**Otázky pro Michala:**
+- **Pustíš DATA-01 nad Krkonošemi?** Je to teď doložené dvěma nezávislými
+  měřeními (obsah exportu + nepřítomnost jmenné vrstvy) a visí na tom
+  minimálně čtyři chybějící objekty pilotní oblasti. Ptám se popáté a je to
+  jediná otázka dneška, která se dá zodpovědět jedním kliknutím.
+- **Čtyři založené, ale nespuštěné oblasti** (Oravská Magura, Západné Tatry,
+  Slovenský raj, Bieszczady) — chceš je pustit teď, nebo mají počkat, až se
+  dojede triáž těch spuštěných? Kontrola je od dneška hlásí každý běh, takže
+  ta otázka nezmizí sama.
+- Trvá z 20. 8.: **posunout východní hranu okna Jizerek na ~15,53?**;
+  **Českosaské Švýcarsko** — vlastní oblast, nebo zrušit složku?;
+  **Amselfallbaude** — zakládat jako profil mimo provoz?; **Bouda Svornost**
+  je dnes v provozu?; **Hančova bouda** — zakládat?; **Chata Paprsek** —
+  re-export, nebo ruční kandidát?; **Liczyrzepa** a **Pardubické boudy** —
+  zapsat jako vyřazené?; **Hříběcí bouda** v provozu?; **Góry Stołowe** —
+  založit oblast?; **podorlické solitéry** — přesahová, nebo samostatná oblast?
+
 ## 2026-08-20 — denní session: DATA-05, koš C dojet (a dvě mezery v pokrytí oken)
 
 **Hotovo:**

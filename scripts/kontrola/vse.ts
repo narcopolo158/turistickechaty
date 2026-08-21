@@ -31,7 +31,9 @@ const KROKY = [
   // HTTP 200 s prazdnym `elements`, takze vadny export se do repa dostane jako
   // platny doklad — a to je nejtissi porucha, jakou pipeline umi (8. 8. 2026
   // kvuli ni chybeli v beskydskych kandidatech Libusin a Chata na Radhosti).
-  ['exporty', 'surove Overpass exporty v repu (behova chyba v `remark`)', true],
+  // Rozhoduje jen ta prvni vec; uzky dotaz (18. 8.) a chybejici vrstva (21. 8.)
+  // jsou upozorneni — je to prace (pustit oblast v Actions), ne vada souboru.
+  ['exporty', 'surove Overpass exporty (behova chyba, uzky dotaz, chybejici vrstva)', true],
   // NEROZHODUJE: mezera v pokryti katalogu je PRACE, ne vada. Objekt muze
   // v OSM chybet, byt pod jinym jmenem, byt zanikly nebo mimo klic zarazeni.
   // Report ma rict, kde hledat; rozhodnout musi redakce s pramenem. Kontrola,

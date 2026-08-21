@@ -12,7 +12,9 @@
  * nechybový `remark` nehlásí (jinak by kontrola začala plašit) a že se
  * kontrola dívá na skutečné exporty v repu, ne jen na svoje vzorky.
  */
-import { readFileSync } from 'node:fs'
+import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 
 import { describe, expect, it } from 'vitest'
 
@@ -20,6 +22,7 @@ import {
   najdiExporty,
   zkontrolujExport,
   zkontrolujSirkuDotazu,
+  zkontrolujVrstvy,
 } from '../../scripts/kontrola/exporty'
 
 const odpoved = (telo: Record<string, unknown>) => JSON.stringify(telo)
@@ -120,7 +123,9 @@ describe('zkontrolujSirkuDotazu — export ze staré, užší verze dotazu', () 
   })
 
   it('prázdný ani rozbitý export se jako úzký dotaz nehlásí — to je práce jiné kontroly', () => {
-    expect(zkontrolujSirkuDotazu('x/_overpass-export-cz.json', odpoved({ elements: [] }))).toBeNull()
+    expect(
+      zkontrolujSirkuDotazu('x/_overpass-export-cz.json', odpoved({ elements: [] })),
+    ).toBeNull()
     expect(zkontrolujSirkuDotazu('x/_overpass-export-cz.json', '<html>502</html>')).toBeNull()
   })
 
@@ -135,6 +140,74 @@ describe('zkontrolujSirkuDotazu — export ze staré, užší verze dotazu', () 
     expect(zasahy).toEqual([
       'data/kandidati/krkonose/_overpass-export-cz.json',
       'data/kandidati/krkonose/_overpass-export-pl.json',
+    ])
+  })
+})
+
+describe('zkontrolujVrstvy — vrstva dotazu, která vůbec neproběhla', () => {
+  const KATALOG = join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json')
+
+  it('nad skutečným repem sedne PRÁVĚ na dvě krkonošské dohledávky podle jmen', () => {
+    // Nález 20. 8. 2026: pilotní oblast nemá ani jeden `_overpass-dle-jmen-*`,
+    // ačkoli má neprázdné `katalogPohori` a ostatní oblasti ten soubor mají.
+    // Kdyby to spadlo na nulu, Krkonoše se mezitím pustily znovu a tenhle test
+    // se má smazat i s kontrolou; kdyby se rozjelo na další oblasti, je to
+    // buď nový nález, nebo falešný poplach — obojí se má přečíst.
+    const tiche = zkontrolujVrstvy()
+      .filter((c) => c.druh === 'chybi-vrstva')
+      .map((c) => c.soubor)
+    expect(tiche).toEqual([
+      'data/kandidati/krkonose/_overpass-dle-jmen-cz.json',
+      'data/kandidati/krkonose/_overpass-dle-jmen-pl.json',
+    ])
+  })
+
+  it('rozhledny nechybí nikde — podpis je opravdu úzký, ne „všechno chybí"', () => {
+    // Bez tohohle testu by kontrola mohla hlásit půl repa a nikdo by si toho
+    // nevšiml: seznam by byl tak dlouhý, že by ho nikdo nečetl.
+    expect(
+      zkontrolujVrstvy().filter((c) => c.druh === 'chybi-vrstva' && c.vrstva === 'rozhledny'),
+    ).toEqual([])
+  })
+
+  it('oblast bez hlavního exportu je „nespuštěná", ne „chybí vrstva"', () => {
+    // Rozdíl je věcný: nespuštěná oblast čeká na Michalův klik v Actions
+    // (fronta práce), kdežto chybějící vrstva je běh, který tiše nedoběhl.
+    const nespustene = [
+      ...new Set(
+        zkontrolujVrstvy()
+          .filter((c) => c.druh === 'nespustena')
+          .map((c) => c.oblast),
+      ),
+    ]
+    expect(nespustene).toEqual(['oravska-magura', 'zapadne-tatry', 'slovensky-raj', 'bieszczady'])
+  })
+
+  it('bez katalogových jmen se dohledávka podle jmen nevyžaduje', () => {
+    // Oblast s prázdným `katalogPohori` ten soubor mít NEMÁ — kontrola po něm
+    // nesmí volat, jinak by trvale svítila u oblastí, kde je to v pořádku.
+    const koren = mkdtempSync(join(tmpdir(), 'vrstvy-'))
+    const dir = join(koren, 'krkonose')
+    mkdirSync(dir, { recursive: true })
+    for (const f of ['_overpass-export-cz.json', '_overpass-export-pl.json'])
+      writeFileSync(join(dir, f), '{"elements":[]}')
+
+    // Katalog schválně neexistuje → `jmenaZKatalogu` vrátí prázdno u všech oblastí.
+    const bezKatalogu = zkontrolujVrstvy(koren, join(koren, 'neexistuje.json'))
+    expect(bezKatalogu.some((c) => c.vrstva === 'dle-jmen')).toBe(false)
+    // Krkonoším pak zbývají jen rozhledny a ty v dočasném kořeni chybí.
+    expect(bezKatalogu.filter((c) => c.oblast === 'krkonose').map((c) => c.vrstva)).toEqual([
+      'rozhledny',
+      'rozhledny',
+    ])
+
+    // S katalogem naopak dohledávka chybí i tady — týž kořen, jiný jediný vstup.
+    const sKatalogem = zkontrolujVrstvy(koren, KATALOG)
+    expect(sKatalogem.filter((c) => c.oblast === 'krkonose').map((c) => c.vrstva)).toEqual([
+      'dle-jmen',
+      'rozhledny',
+      'dle-jmen',
+      'rozhledny',
     ])
   })
 })

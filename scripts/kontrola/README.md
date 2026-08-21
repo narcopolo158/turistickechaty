@@ -393,6 +393,24 @@ Nad repem to sedne na dva krkonošské soubory (78 objektů, 0 civilních) a na
 **NEROZHODUJE** — je to práce (pustit oblast znovu), ne vada souboru, a u velmi
 malé oblasti může být nula civilních objektů pravda.
 
+**Třetí věc v témž souboru (21. 8. 2026) — `zkontrolujVrstvy`, upozornění.**
+Kontrola z 18. 8. se ptá na obsah, a proto pozná starý dotaz jen tam, kde
+nějaký soubor leží. Nález z 20. 8. ukázal lacinější podpis téže poruchy:
+`data/kandidati/krkonose/` **nemá ani jeden `_overpass-dle-jmen-*.json`**,
+ačkoli pilotní oblast má neprázdné `katalogPohori` a všechny ostatní oblasti
+ten soubor mají. Chybějící vrstva se tedy pozná **pouhou nepřítomností
+souboru** — bez čtení jediného bajtu. Kontrola projde `OBLASTI` × `zemeDotazu`
+a pro každou dvojici čeká hlavní export, rozhledny (vstup DATA-23) a — jen
+když z katalogu vůbec nějaká jména vypadnou — dohledávku podle jmen.
+
+Rozlišuje dva druhy, protože znamenají něco jiného. `chybi-vrstva` = hlavní
+export je, ale další vrstva chybí → běh tiše nedoběhl; nad repem to k 21. 8.
+sedne **právě na dvě krkonošské dohledávky** a na nic jiného (rozhledny
+nechybí nikde). `nespustena` = oblast nemá ani hlavní export → je založená
+v `oblasti.ts` a čeká na klik v Actions; k 21. 8. jsou to čtyři —
+`oravska-magura`, `zapadne-tatry`, `slovensky-raj`, `bieszczady`.
+**NEROZHODUJE** — pustit oblast je práce, ne vada souboru.
+
 **`katalog-pokryti.ts` — seznam k posouzení.** Pro každou oblast s vyplněným
 `katalogPohori` řekne, které katalogové objekty nemají v repu ani profil, ani
 kandidáta. Je to jediná mezera z celé pipeline, kterou nezachytí nic jiného:
