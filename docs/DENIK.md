@@ -29,6 +29,92 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-22 (druhý blok, Michal online) — DATA-01 nad Krkonošemi doběhl
+
+**Hotovo:**
+- **Michal pustil DATA-01 nad Krkonošemi** (commit `d291689`, +173 kandidátů).
+  Pilotní oblast běžela poprvé od 20. 7. a **obě vrstvy, které jí chyběly, se
+  doplnily**: `_overpass-dle-jmen-cz.json` (28 objektů) i `-pl.json` (5),
+  a hlavní export vyrostl z 78 na 338 objektů. `npm run kontrola` → `exporty`
+  hlásí nově **0 upozornění a 0 chybějících vrstev** — nálezy z 18. a 21. 8.
+  jsou tím uzavřené měřením, ne tvrzením.
+- **Tři ze čtyř doložených mezer se zavřely samy, jak předpověď říkala:**
+  `velke-pardubicke-boudy` (50,6570 / 15,7558), `hribeci-bouda`
+  (50,6778 / 15,6268) a `pension-jilemnicka-bouda` (50,7358 / 15,5687) jsou
+  nově kandidáti. **Čtvrtá NE: „Bouda Svornost" má i po novém běhu 0 výskytů
+  ve VŠECH osmi krkonošských exportech** (338 + 33 + 24 objektů). Nález
+  z 20. 8. tedy nevysvětlila stará verze dotazu — příčina je jinde a zůstává
+  otevřená. Kandidáti na vysvětlení: objekt v OSM chybí, nebo je bez tagu
+  `name` (týž mechanismus jako Pardubické boudy a Wysoki Kamień).
+- **CI byla po tom commitu ČERVENÁ a spravil jsem to.** `kolize-jmen`
+  ROZHODUJE a nový export přinesl **13 nerozhodnutých kolizí** (A 5 · B 8).
+  Zapsal jsem je do `data/_jmenovci.yaml` s **měřenými** vzdálenostmi z `lat`/
+  `lng` v repu — žádná není odhadnutá. Kontrola je zelená, `npm run kontrola`
+  celé zelené.
+- **Z těch třinácti nejsou jmenovci tři — a každý z jiného důvodu:**
+  - **Portášky: TÝŽ OSM BOD DVAKRÁT.** Publikovaný profil
+    `krkonose/portasky` i nový kandidát `horska-chata-portasky` citují oba
+    `node/656462446` a mají shodné `lat`/`lng` na sedm desetinných míst —
+    naměřeno **0 m**. Kandidát vznikl jen proto, že se objekt v OSM
+    **přejmenoval** z „Portášky" na „Horská chata Portášky".
+  - **Černá bouda: 14 m**, publikovaný profil × kandidát
+    `node/2398705807`. Profil sám vede „Hotel Černá Bouda" jako alias
+    a v hlavičce má poznámku, že `cernabouda.cz` (doména z OSM tagu
+    kandidáta) přesměrovává 302 na web profilu. Jeden objekt.
+  - **Srebrny Potok: 6 m**, profil na `node/8939671641` × kandidát na
+    `way/738607232`, shodná doména. Dvě entity jednoho objektu — vzor Žalý
+    a Svatobor.
+- **Systémový nález, který z Portášek plyne, a je změřený:** idempotence
+  DATA-01 stojí na **jménu** (slug se odvozuje z názvu), ne na **OSM id**.
+  Přejmenuje-li se objekt v OSM, běh nepozná, že ten bod už v korpusu je,
+  a založí druhého kandidáta. Změřeno nad celým repem: z **1 663 objektů
+  s primárním OSM id** vedou **týž bod dva různé slugy právě dvakrát** —
+  `node/656462446` (Portášky, dnešní případ) a `node/13957678714`
+  (šumavský Pancíř, což je známé párování rozhledna × chata z DATA-23).
+  Podpis je tedy velmi úzký a dal by se hlídat lacino.
+- **Tři testy padaly, protože fixovaly stav vady — přepsal jsem je na
+  invariant.** Dva starší (18. a 21. 8.) tvrdily „sedne PRÁVĚ na dva
+  krkonošské soubory"; ty teď hlídají **čistý stav** (0 zásahů), a v komentáři
+  je napsané, proč se kontrola přesto nemaže — platí na každou příště
+  puštěnou oblast. Můj vlastní test z rána jmenoval konkrétní dvojice
+  z exportů, a po běhu spadl: „Špindlerova bouda" je od dneška v OSM pod
+  přesným jménem, zato přibyly „Portášky" a „Černá bouda". Tři třídy nálezu
+  se proto nově měří nad **vlastní fixturou**, ne nad repem; nad skutečnými
+  daty zůstala jen kontrola TVARU (najde něco, ale málo). **22 testů v souboru,
+  vše zelené**; `tsc --noEmit` i lint čisté.
+- **Kotva jmen po novém exportu: 37 z 225** (ráno 36) — Krkonoše přispěly
+  „Portášky" a „Černou boudu" a naopak ubyla „Špindlerova bouda".
+
+**Nález mimo dnešní zadání, hlásím ho jak je:** `npm test` má **9 padajících
+testů v 5 souborech** (`pohori.int.spec.tsx`, `api`, `razitka-moderace`,
+`sitemap-llms`, `oblasti-jestedsky-hrbet`). **Nezpůsobil je dnešní export** —
+ověřeno tím, že padají i nad commitem `26df071` před ním. Padají proto, že je
+**CI vůbec nepouští**: `ci.yml` má jen `lint`, `typecheck` a `kontrola`,
+vitest v něm není. Aspoň jeden z nich fixuje týž druh vady jako ty dnešní
+přepsané — `oblasti-jestedsky-hrbet` tvrdí „GPS u jizerských středisek chybí,
+dokud ji nedoloží DATA-06", jenže Bedřichov už `lat: 50.791017` má. Kolik
+z devíti je tenhle případ a kolik skutečná regrese, jsem dnes neměřil.
+
+**Příště:** dojet triáž 173 nových krkonošských kandidátů (drtivá většina jsou
+apartmány a penziony, které klíčem neprojdou) a rozhodnout „Boudu Svornost",
+která zůstala nevysvětlená. Nezávisle na tom: devět padajících testů.
+
+**Otázky pro Michala:**
+- **Smazat kandidáta `krkonose/horska-chata-portasky`?** Je to prokazatelně
+  týž OSM bod jako publikovaný profil. Sám ho nemažu — je to zásah do dat.
+- **Má se idempotence DATA-01 opřít o OSM id místo jména?** Dnešní případ
+  je první doložený a podpis je úzký (2 z 1 663). Šlo by to buď opravit
+  v běhu, nebo — laciněji — přidat kontrolu, která týž primární OSM id pod
+  dvěma slugy ohlásí.
+- **Zařadit `npm run test:int` do CI?** Devět testů padá a nikdo se to
+  nedozvěděl. Pokud ano, chce to nejdřív těch devět projít — jinak by CI
+  byla červená hned první den a to je horší než žádná kontrola.
+- **Bouda Svornost** — po novém běhu je jasné, že ji OSM nemá pod tím jménem.
+  Zakládat ručně jako kandidáta, nebo nechat být, dokud ji někdo neuvidí?
+- Trvá: **uvolnit kotvu ve jmenné dohledávce** (návrh z rána, viz blok výš);
+  čtyři nespuštěné oblasti (Oravská Magura, Západné Tatry, Slovenský raj,
+  Bieszczady); a starší fronta z 20. 8.
+
 ## 2026-08-22 — denní session: DATA-05, ukotvená dohledávka podle jmen je změřená
 
 **Hotovo:**

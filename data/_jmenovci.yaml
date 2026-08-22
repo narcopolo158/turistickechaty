@@ -1054,3 +1054,188 @@ jmenovci:
       Claude (10. 8. 2026, po založení broumovského profilu — měřením
       z GPS)
     checked: 2026-08-10
+  # ── 22. 8. 2026: třináct kolizí z Michalova běhu DATA-01 nad Krkonošemi ──
+  # Pilotní oblast běžela poprvé od 20. 7. a přinesla 173 nových kandidátů;
+  # kolize je čekaný vedlejší produkt růstu korpusu, ne vada exportu.
+  # Všechny vzdálenosti níž jsou MĚŘENÉ z `lat`/`lng` v repu, ne odhadnuté.
+  - jadro: chata
+    objekty:
+      - javorniky-vsetinske-vrchy/chata
+      - krkonose/chata
+      - orlicke-hory/chata
+    duvod: >-
+      TŘI RŮZNÉ OBJEKTY a falešný pozitiv daný tím, že jádro názvu je
+      obecné slovo: všechny tři se v OSM jmenují doslova „Chata".
+      Naměřeno 249 288 m (javornická × krkonošská), 151 366 m
+      (javornická × orlická) a 99 827 m (krkonošská × orlická) —
+      o duplicitu nejde ani u nejbližší dvojice. Javornická nese web
+      chatavelkekarlovice.webnode.cz a telefon, takže je to pronájem ve
+      Velkých Karlovicích; krkonošská (way/228946509) a orlická
+      (node/4353493191) nemají doložené nic než souřadnice. Vzor „1"
+      a „Bacówka": jméno, které není jménem. Triáž je posoudí doklady.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: gorska
+    objekty:
+      - beskydy/gorska-chata
+      - krkonose/gorska-chata
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 299 237 m: beskydská Górska Chata
+      (node/6594637172, maken.pl) a krkonošská Górska Chata
+      (way/298129753) ve Szklarské Porębě, kde je obec doložená.
+      „Górska chata" je polsky obecné spojení „horská chata" — shoda
+      jména je tu čekaná stejně jako u „Bacówky". Rozlišovačem bude
+      `obec` (DATA-17 R2); beskydská ji doloženou nemá (R6).
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: medika
+    objekty:
+      - krkonose/chata-medika
+      - krkonose/chata-medika-2411927307
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY V JEDNÉ OBLASTI, naměřeno 15 601 m: Chata Medika
+      (node/656502585, chatamedika.cz) a druhá Chata Medika
+      (node/2411927307) s odkazem na alberice.slinet.cz, tedy v Albeřicích
+      na opačné straně Krkonoš. Různé domény vylučují jeden provoz.
+      Obec nemá doloženou ani jedna (R6) — doplní ji triáž z pramene.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: swojska
+    objekty:
+      - jeseniky/swojska-chata
+      - krkonose/swojska-chata
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 96 595 m: jesenická Swojska Chata
+      (way/330550962, swojskachata.net, polský telefon — leží na polské
+      straně Králického Sněžníku) a krkonošská (node/4009726327) bez
+      doloženého webu. „Swojska chata" je polsky „chata po našem",
+      obchodní jméno pro hospodu v lidovém stylu — obecné, ne vlastní.
+      Obec nemá doloženou ani jedna (R6).
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: u medveda
+    objekty:
+      - jeseniky/chalupa-u-medveda
+      - krkonose/chalupa-u-medveda
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 136 074 m: jesenická Chalupa u medvěda
+      (way/253779515) bez doloženého webu a krkonošská Chalupa u Medvěda
+      (node/2406994321, chalupaumedveda.cz). Liší se i psaním velkého
+      písmene, ale to není rozlišovač — rozlišovačem bude `obec`
+      (DATA-17 R2), doloženou ji nemá ani jedna (R6). „U medvěda" je
+      hostinské jméno po domovním znamení, opakuje se nezávisle.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: cerna
+    objekty:
+      - krkonose/cerna-bouda
+      - krkonose/hotel-cerna-bouda
+    duvod: >-
+      NENÍ jmenovec, ale TÝŽ OBJEKT ve dvou zápisech: publikovaný profil
+      Černá bouda (Janské Lázně, 1 260 m) a kandidát Hotel ČERNÁ BOUDA
+      (node/2398705807) stojí 14 METRŮ od sebe. Profil sám vede „Hotel
+      Černá Bouda" jako alias s poznámkou „dnešní obchodní název dle webu
+      objektu" a jeho hlavička si všímá, že cernabouda.cz — doména
+      z OSM tagu kandidáta — přesměrovává (302) na web profilu. Kandidát
+      se proto NEPOVYŠUJE jako druhý profil.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: dalibor
+    objekty:
+      - jeseniky/chata-dalibor
+      - krkonose/dalibor
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 110 669 m: jesenická Chata Dalibor
+      (way/478659402) a krkonošský Dalibor (way/203848157). Křestní
+      jméno v názvu chaty — vzor Barbora, Zuzana, Evka. Ani jeden nemá
+      doložený web, telefon ani obec (R6); rozhodne triáž doklady.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: izerska
+    objekty:
+      - jizerske-hory/izerska-chata
+      - krkonose/chata-izerska
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 18 051 m, a obec má doloženou OBOJÍ:
+      Izerska Chata ve Świeradowie-Zdroju (way/397427035, Jizerské hory)
+      a Chata Izerska ve Szklarské Porębě (way/297818231,
+      chataizerska.pl), kterou krkonošské okno stáhlo přes hřeben.
+      Není to táž entita jako Leśna Chata níž (way/298777711), ačkoli
+      obě stojí v téže obci. Rozlišovač `obec` je tu tedy doložený
+      u obou (DATA-17 R2) — jedna z mála dvojic registru, kde nechybí.
+      Pořadí slov v názvu se liší jen polskou skladbou, ne významem.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: lesna
+    objekty:
+      - krkonose/lesna-chata
+      - krusne-hory/horsky-hotel-lesna
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 151 154 m: polská Leśna Chata
+      (way/298777711, chatalesna.pl) ve Szklarské Porębě a publikovaný
+      profil Horský hotel Lesná v Boleboři (Krušné hory, 911 m). Shoda
+      jádra je jazyková náhoda — polské „leśna" a české „Lesná" mají týž
+      kořen, ale jedno je přídavné jméno („lesní chata"), druhé jméno
+      obce. Záměna hrozí jen v rejstříku, ne u čtenáře.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: modrokamenna
+    objekty:
+      - krkonose/modrokamenna-bouda
+      - krkonose/penzion-modrokamenna-bouda
+    duvod: >-
+      DVĚ ENTITY, u kterých se vzdálenost ZMĚŘIT NEDÁ — a nedomýšlí se:
+      kandidát Modrokamenná bouda (Janské Lázně, 790 m,
+      modrokamennabouda.cz) nemá v repu `lat`/`lng` vůbec, kdežto
+      Penzion Modrokamenná bouda (node/2399375802) je na
+      50,643114 / 15,7909801. Bez souřadnic prvního objektu se nedá
+      říct, jestli jde o jeden provoz o dvou zápisech (vzor Černá bouda
+      výš), nebo o dva domy téhož jména v jedné obci. Rozhodne DATA-31
+      (dohledávka GPS), ne úvaha; do té doby dva kandidáti.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — souřadnice chybí)
+    checked: 2026-08-22
+  - jadro: pod lipami
+    objekty:
+      - krkonose/chata-pod-lipami
+      - mala-fatra/chalupa-pod-lipami
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY, naměřeno 301 332 m: Chata pod lipami
+      (way/252520308, chatapodlipami.cz) v Krkonoších a Chalupa pod
+      lipami v Terchové (way/384705153, obec doložená, Malá Fatra).
+      „Pod lipami" je místní určení podle stromů u domu — opakuje se
+      všude, kde lípy stály. Krkonošská obec doložená není (R6).
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22
+  - jadro: portasky
+    objekty:
+      - krkonose/horska-chata-portasky
+      - krkonose/portasky
+    duvod: >-
+      NENÍ jmenovec ani dvě entity jednoho objektu, ale TÝŽ OSM BOD
+      DVAKRÁT: publikovaný profil Portášky (Pec pod Sněžkou) i nový
+      kandidát Horská chata Portášky citují oba `node/656462446`
+      a mají shodné `lat`/`lng` na sedm desetinných míst — naměřeno
+      0 m. Kandidát vznikl 22. 8. 2026 jen proto, že objekt se
+      v OpenStreetMap mezitím PŘEJMENOVAL z „Portášky" na „Horská chata
+      Portášky", a slug se odvozuje z názvu: běh DATA-01 tedy nepoznal,
+      že tenhle bod už v korpusu je. Kandidát se NEPOVYŠUJE a je určen
+      ke smazání; smazání ale nechávám na Michalovi, protože je to zásah
+      do dat, ne rozhodnutí o kolizi. Systémová část nálezu (idempotence
+      DATA-01 stojí na jménu, ne na OSM id) je popsaná v deníku
+      22. 8. 2026.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — shodné OSM id)
+    checked: 2026-08-22
+  - jadro: srebrny potok
+    objekty:
+      - krkonose/schronisko-srebrny-potok
+      - krkonose/srebrny-potok
+    duvod: >-
+      NENÍ jmenovec, ale týž objekt ve DVOU ENTITÁCH OpenStreetMap
+      (vzor Žalý a Svatobor): publikovaný profil Srebrny Potok
+      (Jarkowice, 615 m) stojí na `node/8939671641`, kandidát
+      Schronisko Srebrny Potok na `way/738607232` — naměřeno 6 METRŮ,
+      tedy bod uvnitř půdorysu budovy. Že je to jeden provoz, dokládá
+      shodná doména srebrny-potok.net u obou zápisů. Kandidát se
+      NEPOVYŠUJE jako druhý profil.
+    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
+    checked: 2026-08-22

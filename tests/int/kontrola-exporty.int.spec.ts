@@ -130,37 +130,43 @@ describe('zkontrolujSirkuDotazu — export ze staré, užší verze dotazu', () 
     expect(zkontrolujSirkuDotazu('x/_overpass-export-cz.json', '<html>502</html>')).toBeNull()
   })
 
-  it('nad skutečným repem sedne PRÁVĚ na dva krkonošské soubory', () => {
-    // Kdyby se to rozjelo na další oblasti, je to falešný poplach a kontrola
-    // se má zúžit; kdyby na nula, Krkonoše se mezitím pustily znovu a tenhle
-    // test se má smazat i s kontrolou.
+  it('nad skutečným repem už nesedne na nic — a je to doložený obrat', () => {
+    // Do 22. 8. 2026 tenhle test tvrdil opak: sedne PRÁVĚ na dva krkonošské
+    // soubory (78 objektů, 0 civilně tagovaných), protože pilotní oblast
+    // běžela naposledy před commitem 34cebbb. Michal ten den DATA-01 nad
+    // Krkonošemi pustil, export přinesl 173 nových kandidátů a podpis staré
+    // verze dotazu z repa zmizel.
+    //
+    // Kontrola tím ale NEPOZBYLA smysl a nesmaže se: platí na každou oblast,
+    // která se pustí příště, a stará verze dotazu se v repu může objevit
+    // znovu (obnovený starý export, nová oblast puštěná ze zastaralé větve).
+    // Test proto od 22. 8. hlídá ČISTÝ stav — že podpis nikde není. Pozitivní
+    // cestu drží vzorky výš, ne skutečná data; ta se mají hýbat.
     const zasahy = najdiExporty()
       .map((s) => zkontrolujSirkuDotazu(s, readFileSync(s, 'utf8')))
       .filter((u) => u !== null)
       .map((u) => u!.soubor.replace(`${process.cwd()}/`, ''))
-    expect(zasahy).toEqual([
-      'data/kandidati/krkonose/_overpass-export-cz.json',
-      'data/kandidati/krkonose/_overpass-export-pl.json',
-    ])
+    expect(zasahy).toEqual([])
   })
 })
 
 describe('zkontrolujVrstvy — vrstva dotazu, která vůbec neproběhla', () => {
   const KATALOG = join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json')
 
-  it('nad skutečným repem sedne PRÁVĚ na dvě krkonošské dohledávky podle jmen', () => {
-    // Nález 20. 8. 2026: pilotní oblast nemá ani jeden `_overpass-dle-jmen-*`,
-    // ačkoli má neprázdné `katalogPohori` a ostatní oblasti ten soubor mají.
-    // Kdyby to spadlo na nulu, Krkonoše se mezitím pustily znovu a tenhle test
-    // se má smazat i s kontrolou; kdyby se rozjelo na další oblasti, je to
-    // buď nový nález, nebo falešný poplach — obojí se má přečíst.
+  it('nad skutečným repem už nechybí žádná vrstva — tichá mezera je zavřená', () => {
+    // Nález 20. 8. 2026: pilotní oblast neměla ani jeden `_overpass-dle-jmen-*`,
+    // ačkoli má neprázdné `katalogPohori` a všechny ostatní oblasti ten soubor
+    // mají. Kontrola z 21. 8. to změřila, 22. 8. Michal DATA-01 nad Krkonošemi
+    // pustil a obě vrstvy (988 a 187 řádků) se do repa doplnily.
+    //
+    // Test proto od 22. 8. hlídá čistý stav. Chybějící vrstva je tiché
+    // nedoběhnutí běhu, takže nula je tu skutečně cílový stav — na rozdíl od
+    // `nespustena`, kde nula znamená jen „fronta je prázdná" a ta se plní
+    // každou nově založenou oblastí.
     const tiche = zkontrolujVrstvy()
       .filter((c) => c.druh === 'chybi-vrstva')
       .map((c) => c.soubor)
-    expect(tiche).toEqual([
-      'data/kandidati/krkonose/_overpass-dle-jmen-cz.json',
-      'data/kandidati/krkonose/_overpass-dle-jmen-pl.json',
-    ])
+    expect(tiche).toEqual([])
   })
 
   it('rozhledny nechybí nikde — podpis je opravdu úzký, ne „všechno chybí"', () => {
@@ -216,20 +222,63 @@ describe('zkontrolujVrstvy — vrstva dotazu, která vůbec neproběhla', () => 
 describe('zkontrolujKotvuJmen — jméno, na které ukotvená dohledávka nedosáhne', () => {
   const KATALOG = join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json')
 
-  it('nad skutečným repem najde doložené případy vsuvky a předsazeného slova', () => {
+  /**
+   * Tři třídy nálezu se měří nad VLASTNÍMI daty, ne nad repem — schválně.
+   * Původní verze tohohle testu (22. 8. ráno) jmenovala konkrétní dvojice ze
+   * skutečných exportů a po Michalově běhu DATA-01 nad Krkonošemi spadla:
+   * „Špindlerova bouda" je od té chvíle v OSM pod přesným jménem, zato
+   * přibyly „Portášky" a „Černá bouda". Test, který fixuje snímek dat, měří
+   * data, ne kontrolu.
+   */
+  const fixturaKotvy = (osm: string[], katalogJmena: string[]) => {
+    const koren = mkdtempSync(join(tmpdir(), 'kotva-'))
+    const dir = join(koren, 'krkonose')
+    mkdirSync(dir, { recursive: true })
+    writeFileSync(
+      join(dir, '_overpass-export-cz.json'),
+      odpoved({ elements: osm.map((name, id) => ({ type: 'node', id, tags: { name } })) }),
+    )
+    const katalog = join(koren, 'katalog.json')
+    writeFileSync(
+      katalog,
+      JSON.stringify(katalogJmena.map((n) => ({ Pohoří: 'Krkonoše', Název: n }))),
+    )
+    return zkontrolujKotvuJmen(koren, katalog)
+  }
+
+  it('pozná všechny tři třídy, kterými se OSM jméno liší od katalogového', () => {
+    const { mine } = fixturaKotvy(
+      ['Schronisko PTTK Klimczok', 'Hotel Špindlerova bouda', 'Chata Javorový vrch'],
+      ['Schronisko Klimczok', 'Špindlerova bouda', 'Chata Javorový'],
+    )
+    const dvojice = new Map(mine.map((m) => [m.katalog, m.osm]))
+    // Vsuvka uvnitř jména — jádro odřízne jen slovo na začátku, „PTTK" ne.
+    expect(dvojice.get('Schronisko Klimczok')).toEqual(['Schronisko PTTK Klimczok'])
+    // Předsazené slovo v OSM u jména, které katalog vede bez něj.
+    expect(dvojice.get('Špindlerova bouda')).toEqual(['Hotel Špindlerova bouda'])
+    // Přípona za jménem — „Javorový" v OSM pokračuje slovem „vrch".
+    expect(dvojice.get('Chata Javorový')).toEqual(['Chata Javorový vrch'])
+  })
+
+  it('uvozovky kolem jména se v OSM ignorují, jinak by hlásily každé polské schronisko', () => {
+    const { mine, presne } = fixturaKotvy(
+      ['Schronisko PTTK "Orlica"', 'Luční bouda'],
+      ['Schronisko Orlica', 'Luční bouda'],
+    )
+    // Uvozovky se normalizují pryč, takže rozdíl dělá jen vsuvka „PTTK".
+    expect(mine.map((m) => m.katalog)).toEqual(['Schronisko Orlica'])
+    expect(presne).toBe(1)
+  })
+
+  it('nad skutečným repem je nálezů čitelná menšina, ne půl korpusu', () => {
+    // Konkrétní dvojice se s každým re-exportem hýbou, a tak to má být.
+    // Neměnný je TVAR: kontrola má něco najít (jinak se přestala ptát) a má
+    // toho najít málo (jinak se přestane číst).
     const { mine, objektu, presne } = zkontrolujKotvuJmen()
-    // Nálezů je nezanedbatelná menšina, ne půl korpusu — podpis se má dát přečíst.
     expect(objektu).toBeGreaterThan(100)
     expect(mine.length).toBeGreaterThan(0)
-    expect(mine.length).toBeLessThan(objektu - presne)
-
-    const dvojice = new Map(mine.map((m) => [m.katalog, m.osm]))
-    // Vsuvka „PTTK" uvnitř polského jména — kotva `^…$` na ni nedosáhne.
-    expect(dvojice.get('Schronisko Klimczok')).toContain('Schronisko PTTK Klimczok')
-    // Předsazené „Hotel" u českého jména, které katalog vede bez něj.
-    expect(dvojice.get('Špindlerova bouda')).toContain('Hotel Špindlerova bouda')
-    // Přípona za jménem — jádro „Javorový" v OSM pokračuje slovem „vrch".
-    expect(dvojice.get('Chata Javorový')).toContain('Chata Javorový vrch')
+    expect(mine.length).toBeLessThan(presne)
+    expect(mine.length).toBeLessThan(objektu / 4)
   })
 
   it('přesná shoda se nehlásí, i když je jméno v exportu vícekrát', () => {
