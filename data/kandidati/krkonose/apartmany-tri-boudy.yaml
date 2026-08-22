@@ -1,0 +1,35 @@
+# Apartmány tři boudy — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-22)
+# Zdroj: https://www.openstreetmap.org/node/14064661720 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Apartmány tři boudy
+slug: apartmany-tri-boudy
+zeme: cz
+oblast: krkonose
+lat: 50.6625053
+lng: 15.5619892
+obec: Benecko
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/14064661720 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+kontakty:
+  telefon: +420 774 240 222
+  email: info@triboudy.cz
+  web: https://www.triboudy.cz
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/14064661720 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-22) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
+  = útulna).
+
+  Provozovatel dle OSM: Mountain life hospitality, s.r.o.

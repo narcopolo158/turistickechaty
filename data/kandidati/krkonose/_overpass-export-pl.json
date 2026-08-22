@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-29T05:05:43Z",
-    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "timestamp_osm_base": "2026-08-22T07:14:18Z",
+    "timestamp_areas_base": "2026-08-21T13:11:56Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -28,6 +28,238 @@
 },
 {
   "type": "node",
+  "id": 2418078553,
+  "lat": 50.8251153,
+  "lon": 15.5392255,
+  "tags": {
+    "addr:city": "Szklarska Poręba",
+    "addr:postcode": "58-580",
+    "addr:street": "Hugona Kołłątaja",
+    "amenity": "restaurant",
+    "contact:phone": "+48 508086535",
+    "name": "Karczma Hutnika",
+    "website": "https://karczmahutnika.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 2477748968,
+  "lat": 50.8586941,
+  "lon": 15.9410074,
+  "tags": {
+    "addr:city": "Janowice Wielkie",
+    "addr:housenumber": "17",
+    "addr:place": "Mniszków",
+    "addr:postcode": "58-520",
+    "email": "czarodzieje@gmail.com",
+    "facebook": "https://www.facebook.com/Mniszkow/",
+    "internet_access": "no",
+    "name": "Czarodziejska Góra",
+    "operator": "Fundacja Czarodziejska Góra",
+    "phone": "+48 723 697 705",
+    "tourism": "chalet",
+    "website": "https://czarodziejskagora.eu"
+  }
+},
+{
+  "type": "node",
+  "id": 2951365228,
+  "lat": 50.8518013,
+  "lon": 15.7731874,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata za Wsią",
+    "opening_hours": "7:00-22:00"
+  }
+},
+{
+  "type": "node",
+  "id": 3762455561,
+  "lat": 50.7764330,
+  "lon": 15.7811921,
+  "tags": {
+    "addr:city": "Karpacz",
+    "addr:housenumber": "45",
+    "addr:postcode": "58-540",
+    "addr:street": "Skalna",
+    "name": "Schronisko Liczyrzepa",
+    "phone": "+48 785 159 061",
+    "tourism": "hostel",
+    "website": "https://schronisko-liczyrzepa.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 3762472509,
+  "lat": 50.6972835,
+  "lon": 16.0133918,
+  "tags": {
+    "name": "Schronisko Młodzieżowe LUBAWIA",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "node",
+  "id": 4009726327,
+  "lat": 50.7746179,
+  "lon": 15.7532088,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Swojska Chata"
+  }
+},
+{
+  "type": "node",
+  "id": 4281079927,
+  "lat": 50.8185419,
+  "lon": 15.5173369,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-06-29",
+    "name": "Chata Tyrolska",
+    "operator": "FAST-FOOD Anna Adamczuk"
+  }
+},
+{
+  "type": "node",
+  "id": 4318216391,
+  "lat": 50.8487650,
+  "lon": 15.5707474,
+  "tags": {
+    "addr:postcode": "58-573",
+    "email": "magdalada@poczta.onet.pl",
+    "internet_access": "wlan",
+    "name": "Szkolne Schronisko Młodzieżowe PLUM",
+    "opening_hours": "Mo-Su 17:00-10:00",
+    "phone": "+48696046824",
+    "tourism": "guest_house",
+    "website": "https://www.schronisko-plum.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 4318280396,
+  "lat": 50.8365064,
+  "lon": 15.5843106,
+  "tags": {
+    "addr:postcode": "58-573",
+    "check_date": "2025-09-26",
+    "email": "magdalada@poczta.onet.pl",
+    "internet_access": "wlan",
+    "internet_access:ssid": "B593-4011",
+    "name": "Szkolne Schronisko Młodzieżowe ZŁOTY WIDOK",
+    "opening_hours": "Mo-Su 17:00-10:00",
+    "phone": "+48696046824",
+    "start_date": "1937-12-06",
+    "tourism": "guest_house",
+    "website": "https://www.schronisko-wojtek.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 5038862333,
+  "lat": 50.7395213,
+  "lon": 15.7290292,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-02-01",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Schronisko Górskie Dom Śląski",
+    "outdoor_seating": "yes",
+    "reusable_packaging:offer": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6008380200,
+  "lat": 50.8265791,
+  "lon": 15.5229427,
+  "tags": {
+    "amenity": "restaurant",
+    "level": "1",
+    "name": "Szklana chata"
+  }
+},
+{
+  "type": "node",
+  "id": 6008380203,
+  "lat": 50.8238056,
+  "lon": 15.5273910,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Wiejska chata"
+  }
+},
+{
+  "type": "node",
+  "id": 6959757785,
+  "lat": 50.8429156,
+  "lon": 15.5318790,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Sudecka chata u Prezesa",
+    "opening_hours": "Mo-Su 09:00-22:00"
+  }
+},
+{
+  "type": "node",
+  "id": 7769679859,
+  "lat": 50.8063417,
+  "lon": 15.6650874,
+  "tags": {
+    "name": "Śliwkowa Chata / Sliwkowa Chata",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 7945409662,
+  "lat": 50.8279831,
+  "lon": 15.6878904,
+  "tags": {
+    "addr:city": "Podgórzyn",
+    "addr:housenumber": "33",
+    "addr:postcode": "58-562",
+    "addr:street": "Jana Pawła II",
+    "name": "Ostoja Karkonoska",
+    "phone": "+48 793 385 695",
+    "tourism": "chalet",
+    "website": "https://ostojakarkonoska.com.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 7945575682,
+  "lat": 50.7931349,
+  "lon": 15.6932943,
+  "tags": {
+    "addr:city": "Borowice",
+    "addr:city:simc": "0192057",
+    "addr:housenumber": "1",
+    "addr:postcode": "58-564",
+    "addr:street": "Lapońska",
+    "email": "recepcja@kalevala.pl",
+    "name": "Wioska Fińska Kalevala",
+    "opening_hours": "Mo-Fr 12:00, Sa-Su 12:00, Sa-Su 14:00",
+    "phone": "+48 605 431 516",
+    "source": "https://www.borowice.com.pl/laponska-wioska-kalevala",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 8233518717,
+  "lat": 50.7822664,
+  "lon": 15.7210330,
+  "tags": {
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
   "id": 8939671641,
   "lat": 50.7161202,
   "lon": 15.8814204,
@@ -40,6 +272,150 @@
     "phone": "+48 883 715 719",
     "tourism": "alpine_hut",
     "website": "https://srebrny-potok.net/"
+  }
+},
+{
+  "type": "node",
+  "id": 9689797014,
+  "lat": 50.8428936,
+  "lon": 15.5317460,
+  "tags": {
+    "name": "Chata Sudecka z widokiem",
+    "tourism": "guest_house",
+    "website": "https://chatasudecka.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 10168717139,
+  "lat": 50.8102557,
+  "lon": 15.6718307,
+  "tags": {
+    "addr:city": "Przesieka",
+    "addr:housenumber": "4a",
+    "addr:postcode": "58-562",
+    "addr:street": "Droga do Wodospadu",
+    "name": "Mounttain Holiday Lodges",
+    "operator": "Domandi",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 10866724781,
+  "lat": 50.8642724,
+  "lon": 15.7888710,
+  "tags": {
+    "addr:city": "Łomnica",
+    "addr:housenumber": "7",
+    "addr:postcode": "58-531",
+    "addr:street": "Czarny Strumień",
+    "email": "domki@xn--browarwka-b7a.pl",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Browarówka",
+    "phone": "+48 695 100 052",
+    "tourism": "chalet",
+    "website": "https://www.browarowka.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 11090413017,
+  "lat": 50.8519235,
+  "lon": 15.7723601,
+  "tags": {
+    "contact:phone": "+48756466058",
+    "contact:website": "https://www.chatazawsia.com/",
+    "name": "Chata za Wsią",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 11540272866,
+  "lat": 50.7797275,
+  "lon": 15.7719861,
+  "tags": {
+    "check_date": "2026-07-15",
+    "name": "Widokowo",
+    "tourism": "chalet",
+    "website": "https://www.widokowo-karpacz.pl/"
+  }
+},
+{
+  "type": "node",
+  "id": 12765433701,
+  "lat": 50.8201138,
+  "lon": 15.6817128,
+  "tags": {
+    "addr:housenumber": "81c",
+    "addr:street": "Żołnierska",
+    "contact:facebook": "share/18zQzeXvuV",
+    "email": "zaciszegajowe@gmail.com",
+    "internet_access": "wlan",
+    "name": "Domek w Karkonoszach",
+    "phone": "+48 607 540 659",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 12961245029,
+  "lat": 50.7920043,
+  "lon": 15.5137152,
+  "tags": {
+    "addr:city": "Szklarska Poręba",
+    "addr:country": "PL",
+    "addr:note": "skrytka pocztowa 166",
+    "addr:postbox": "166",
+    "addr:postcode": "58-580",
+    "amenity": "cafe",
+    "check_date": "2025-09-17",
+    "cuisine": "crepe",
+    "image": "https://szrenica.pl/wp-content/uploads/2021/08/005szrenica-gastro-1024x682.jpg",
+    "indoor_seating": "yes",
+    "level": "1",
+    "name": "Schronisko Szrenica 1362 m n.p.m.",
+    "operator": "Szrenica Ewa Kłopotowska",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "reusable_packaging:offer": "yes",
+    "website:menu": "https://szrenica.pl/oferta/"
+  }
+},
+{
+  "type": "node",
+  "id": 13124537508,
+  "lat": 50.7522501,
+  "lon": 15.9866048,
+  "tags": {
+    "name": "Przystań nad Bobrem",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 13575133887,
+  "lat": 50.7973542,
+  "lon": 15.7753795,
+  "tags": {
+    "addr:city": "Ściegny",
+    "addr:housenumber": "7",
+    "addr:postcode": "58-534",
+    "addr:street": "Kwiatowa",
+    "name": "Apartamenty Every Sky",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694498,
+  "lat": 50.7477490,
+  "lon": 15.8233327,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Amelkowa chata"
   }
 },
 {
@@ -105,6 +481,32 @@
     "wikidata": "Q9334361",
     "wikipedia": "pl:Schronisko Górskie „Dom Śląski”",
     "year_of_construction": "1921..1922"
+  }
+},
+{
+  "type": "way",
+  "id": 20897236,
+  "center": {
+    "lat": 50.7630283,
+    "lon": 15.6337068
+  },
+  "nodes": [
+    224519167,
+    224519182,
+    4038795087,
+    4038795086,
+    224519195,
+    224519209,
+    224519167
+  ],
+  "tags": {
+    "building": "yes",
+    "email": "info@spindlerovabouda.cz",
+    "name": "Hotel Špindlerova bouda - Depandance",
+    "phone": "+420499329200;+420725855397",
+    "ref:vatin": "CZ01950410",
+    "tourism": "hotel",
+    "website": "https://www.spindlerovabouda.cz/"
   }
 },
 {
@@ -505,6 +907,36 @@
 },
 {
   "type": "way",
+  "id": 174687993,
+  "center": {
+    "lat": 50.7482826,
+    "lon": 15.8236099
+  },
+  "nodes": [
+    1853387537,
+    1853387536,
+    1853387534,
+    1853387535,
+    1853387537
+  ],
+  "tags": {
+    "addr:city": "Kowary",
+    "addr:city:simc": "0936078",
+    "addr:housenumber": "3",
+    "addr:postcode": "58-530",
+    "addr:street": "Na Przełęczy Okraj",
+    "building": "house",
+    "building:levels": "2",
+    "guest_house": "pension",
+    "name": "Amelkowa chata",
+    "phone": "+48 697 696 555",
+    "source": "www.geoportal.gov.pl",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
   "id": 174687998,
   "center": {
     "lat": 50.7471384,
@@ -546,6 +978,194 @@
     "source": "www.geoportal.gov.pl",
     "tourism": "alpine_hut",
     "website": "https://schroniskookraj.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 200436995,
+  "center": {
+    "lat": 50.7745435,
+    "lon": 15.7474200
+  },
+  "nodes": [
+    10727651619,
+    10727651618,
+    3558777004,
+    3558777052,
+    10727651617,
+    10727651616,
+    10727651615,
+    3558777030,
+    10727651614,
+    3558776778,
+    10727651613,
+    10727651612,
+    10727651611,
+    10727651610,
+    10727651609,
+    10727651608,
+    10727651619
+  ],
+  "tags": {
+    "addr:city": "Karpacz",
+    "addr:city:simc": "0936032",
+    "addr:housenumber": "72B",
+    "addr:postcode": "58-540",
+    "addr:street": "Konstytucji 3 Maja",
+    "addr:street:sym_ul": "09213",
+    "building": "yes",
+    "building:levels": "4",
+    "name": "Zielony Domek",
+    "source": "www.geoportal.gov.pl",
+    "source:addr": "karpacz.e-mapa.net",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 232566067,
+  "center": {
+    "lat": 50.8243329,
+    "lon": 15.5262334
+  },
+  "nodes": [
+    2409109257,
+    2409109267,
+    2409109258,
+    2409109251,
+    2409109257
+  ],
+  "tags": {
+    "addr:city": "Szklarska Poręba",
+    "addr:housenumber": "20B",
+    "addr:postcode": "58-580",
+    "addr:street": "1 Maja",
+    "amenity": "fast_food",
+    "building": "yes",
+    "cuisine": "kebab",
+    "image": "https://photos.app.goo.gl/LCrMGbMPej9Jo1rC8",
+    "name": "Chata Ducha Gór",
+    "source:addr": "szklarskaporeba.e-mapa.net",
+    "url": "https://fotopolska.eu/352900,obiekt.html?map_z=18"
+  }
+},
+{
+  "type": "way",
+  "id": 234778630,
+  "center": {
+    "lat": 50.8145004,
+    "lon": 15.6029814
+  },
+  "nodes": [
+    4002477311,
+    4002477304,
+    4002477310,
+    4002477317,
+    4002477311
+  ],
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:housenumber": "7",
+    "addr:postcode": "58-570",
+    "addr:street": "Narciarska",
+    "building": "yes",
+    "name": "Wiilla Jagoda Jagniątków",
+    "phone": "+48 602 302 213",
+    "sauna": "yes",
+    "source:addr": "EMUiA (emuia.gugik,gov.pl)",
+    "tourism": "chalet",
+    "website": "https://willajagodajagniatkow.business.site/"
+  }
+},
+{
+  "type": "way",
+  "id": 234802776,
+  "center": {
+    "lat": 50.8432818,
+    "lon": 15.5431967
+  },
+  "nodes": [
+    2429352705,
+    2429352697,
+    2429352698,
+    2429352695,
+    2429352694,
+    2429352687,
+    2429352686,
+    2429352691,
+    2429352690,
+    2429352696,
+    2429352699,
+    2429352704,
+    2429352705
+  ],
+  "tags": {
+    "addr:city": "Szklarska Poręba",
+    "addr:housenumber": "1",
+    "addr:postcode": "58-580",
+    "addr:street": "Piastowska",
+    "building": "yes",
+    "contact:email": "magdalada@poczta.onet.pl",
+    "contact:phone": "+48 696 046 824",
+    "internet_access": "wlan",
+    "name": "Szkolne Schronisko Młodzieżowe \"Wojtek\"",
+    "operator": "PTSM",
+    "source:addr": "szklarskaporeba.e-mapa.net",
+    "tourism": "guest_house",
+    "website": "https://schronisko-wojtek.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 244840738,
+  "center": {
+    "lat": 50.8230575,
+    "lon": 15.5160671
+  },
+  "nodes": [
+    2521097948,
+    2521097949,
+    2521097950,
+    2521097951,
+    2521097948
+  ],
+  "tags": {
+    "addr:city": "Szklarska Poręba",
+    "addr:housename": "Chata Biegacza",
+    "addr:housenumber": "25",
+    "addr:postcode": "58-580",
+    "addr:street": "Odrodzenia",
+    "building": "yes",
+    "name": "Chata Biegacza",
+    "rooms": "6",
+    "source:addr": "szklarskaporeba.e-mapa.net",
+    "tourism": "guest_house",
+    "website": "https://www.chatabiegacza.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 262941130,
+  "center": {
+    "lat": 50.8408492,
+    "lon": 15.5556587
+  },
+  "nodes": [
+    2685861128,
+    9057041556,
+    3017240726,
+    3017240718,
+    9057041557,
+    2685861126,
+    2685861125,
+    2685861127,
+    2685861128
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Chata Izerska",
+    "opening_hours": "Mo-Su 13:00-18:30"
   }
 },
 {
@@ -594,6 +1214,271 @@
 },
 {
   "type": "way",
+  "id": 290580143,
+  "center": {
+    "lat": 50.8518956,
+    "lon": 15.7337885
+  },
+  "nodes": [
+    2940941355,
+    2940941344,
+    2940941342,
+    9401008717,
+    2940941354,
+    2940941355
+  ],
+  "tags": {
+    "addr:housenumber": "59",
+    "addr:place": "Staniszów",
+    "addr:postcode": "58-500",
+    "building": "commercial",
+    "check_date": "2026-06-21",
+    "name": "Młodzieżowe Schronisko w Staniszowie",
+    "phone": "+48 757551463",
+    "source:addr": "podgorzyn.e-mapa.net",
+    "tourism": "guest_house",
+    "website": "https://www.schronisko.podgorzyn.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 292237360,
+  "center": {
+    "lat": 50.8252706,
+    "lon": 15.8227847
+  },
+  "nodes": [
+    3997516502,
+    3997516492,
+    3997516484,
+    3997516482,
+    3997516491,
+    3997516502
+  ],
+  "tags": {
+    "addr:city": "Bukowiec",
+    "addr:country": "PL",
+    "addr:housenumber": "2a",
+    "addr:postcode": "58-533",
+    "addr:street": "Szkolna",
+    "building": "yes",
+    "check_date": "2024-02-17",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=100054865070166",
+    "mobile": "+48 601 276 821",
+    "name": "Szkolne Schronisko Młodzieżowe \"Skalnik\"",
+    "phone": "+48 75 718 26 28",
+    "source:geometry": "geoportal.gov.pl, GPS",
+    "tourism": "hostel",
+    "website": "https://www.schronisko-skalnik.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 297818231,
+  "center": {
+    "lat": 50.8408711,
+    "lon": 15.5554859
+  },
+  "nodes": [
+    3017240715,
+    3017240724,
+    3017240726,
+    3017240718,
+    3017240715
+  ],
+  "tags": {
+    "addr:city": "Szklarska Poręba",
+    "addr:housenumber": "32",
+    "addr:postcode": "58-580",
+    "addr:street": "Piastowska",
+    "building": "yes",
+    "building:levels": "3",
+    "check_date": "2026-07-29",
+    "check_date:internet_access": "2026-07-29",
+    "contact:email": "biuro@chataizerska.pl",
+    "contact:phone": "+48 691891304",
+    "contact:website": "https://www.chataizerska.pl/",
+    "internet_access": "wlan",
+    "name": "Chata Izerska",
+    "source:addr": "szklarskaporeba.e-mapa.net",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 298129753,
+  "center": {
+    "lat": 50.8225907,
+    "lon": 15.5173423
+  },
+  "nodes": [
+    3020329468,
+    3020329466,
+    3020329462,
+    3020329465,
+    3020329459,
+    3020329461,
+    3020329460,
+    3020329463,
+    3020329464,
+    3020329467,
+    3020329469,
+    3020329471,
+    3020329473,
+    3020329472,
+    3020329474,
+    3020329470,
+    3020329468
+  ],
+  "tags": {
+    "addr:city": "Szklarska Poręba",
+    "addr:housenumber": "1",
+    "addr:postcode": "58-580",
+    "addr:street": "Wysoka",
+    "building": "yes",
+    "name": "Górska Chata",
+    "source:addr": "szklarskaporeba.e-mapa.net",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 298141357,
+  "center": {
+    "lat": 50.8261113,
+    "lon": 15.5225195
+  },
+  "nodes": [
+    3020460392,
+    3020460393,
+    3020460390,
+    3020460387,
+    3020460392
+  ],
+  "tags": {
+    "alt_name": "Bar Skałka",
+    "amenity": "biergarten",
+    "name": "Prezesowa Chata"
+  }
+},
+{
+  "type": "way",
+  "id": 298777711,
+  "center": {
+    "lat": 50.8233556,
+    "lon": 15.5374009
+  },
+  "nodes": [
+    3027129052,
+    3027129051,
+    3027129056,
+    3027129055,
+    3027129052
+  ],
+  "tags": {
+    "addr:housenumber": "60H",
+    "addr:postcode": "58-580",
+    "addr:street": "1 Maja",
+    "building": "yes",
+    "email": "alicjafischer@op.pl",
+    "name": "Leśna Chata",
+    "phone": "+48792140772",
+    "tourism": "chalet",
+    "website": "https://www.chatalesna.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 350125275,
+  "center": {
+    "lat": 50.7708197,
+    "lon": 15.7511414
+  },
+  "nodes": [
+    3558772094,
+    3558771869,
+    3558771856,
+    3558771874,
+    9216634768,
+    9216634769,
+    10206636220,
+    3558772094
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "polish",
+    "name": "Chata Karkonoska",
+    "outdoor_seating": "yes",
+    "website": "https://chata.hotel-karkonosze.com.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 399029799,
+  "center": {
+    "lat": 50.7049568,
+    "lon": 16.0062157
+  },
+  "nodes": [
+    4017686350,
+    4017686351,
+    4017686348,
+    4017686349,
+    4017686350
+  ],
+  "tags": {
+    "addr:city": "Lubawka",
+    "addr:city:simc": "0936180",
+    "addr:housenumber": "20",
+    "addr:postcode": "58-420",
+    "addr:street": "Brzozowa",
+    "addr:street:sym_ul": "02276",
+    "building": "yes",
+    "contact:email": "dominika173@op.pl",
+    "contact:phone": "+48 512 168998",
+    "contact:website": "www.iskierkadomek.pl",
+    "name": "Iskierka",
+    "operator": "Dominika Sadowska",
+    "rooms": "3",
+    "source:addr": "emuia.gugik.gov.pl",
+    "source:geometry": "geoportal.gov.pl, GPS",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 400389938,
+  "center": {
+    "lat": 50.8072492,
+    "lon": 15.9416186
+  },
+  "nodes": [
+    4029550907,
+    4029550906,
+    6928552957,
+    6928552958,
+    4029550902,
+    4029550903,
+    4029550907
+  ],
+  "tags": {
+    "addr:city:simc": "190012",
+    "addr:housenumber": "23A",
+    "addr:place": "Rędziny",
+    "building": "residential",
+    "facebook": "https://www.facebook.com/karpaczkamiennagora/",
+    "internet_access": "wlan",
+    "name": "Pod Zielonym Dachem",
+    "source": "survey",
+    "source:addr": "kamiennagora.e-mapa.net",
+    "source:geometry": "Krajowa Integracja Ewidencji Gruntów: Budynki",
+    "tourism": "chalet",
+    "website": "http://www.podzielonymdachem.i-noclegi.pl/"
+  }
+},
+{
+  "type": "way",
   "id": 406298192,
   "center": {
     "lat": 50.7826713,
@@ -614,6 +1499,218 @@
     "name": "Chatka Wielkanocna",
     "phone:mobile": "+48600424534",
     "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 408378550,
+  "center": {
+    "lat": 50.8049820,
+    "lon": 15.6606520
+  },
+  "nodes": [
+    4103256867,
+    4103256862,
+    4103256865,
+    4103256863,
+    4103256864,
+    4103256866,
+    4103256868,
+    4103256875,
+    4103256867
+  ],
+  "tags": {
+    "addr:city": "Przesieka",
+    "addr:housenumber": "48",
+    "addr:postcode": "58-563",
+    "addr:street": "Karkonoska",
+    "building": "house",
+    "building:levels": "2",
+    "name": "Chata Zapiecek",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 440955604,
+  "center": {
+    "lat": 50.8599485,
+    "lon": 15.7810676
+  },
+  "nodes": [
+    4387244056,
+    4387244061,
+    4387244063,
+    4387244062,
+    4387244060,
+    4387244059,
+    4387244058,
+    4387244057,
+    4387244055,
+    4387244052,
+    4387244051,
+    4387244050,
+    4387244049,
+    4387244048,
+    4387244047,
+    4387244044,
+    4387244043,
+    4387244041,
+    4387244040,
+    4387244039,
+    4387244037,
+    4387244034,
+    4387244032,
+    4387244030,
+    4387244029,
+    5739204144,
+    5739204143,
+    5739204142,
+    5739204141,
+    5739204140,
+    5739204139,
+    5739204138,
+    5739204137,
+    5739204135,
+    4387244023,
+    4387244011,
+    5739204134,
+    4387244000,
+    4387244005,
+    4387244008,
+    4387244009,
+    4387244018,
+    4387244012,
+    4387244016,
+    4387244027,
+    4387244038,
+    4387244042,
+    5739204153,
+    4387244046,
+    5739204152,
+    2936006124,
+    2936006129,
+    5739204149,
+    5739204148,
+    5739204146,
+    5739204145,
+    4387244056
+  ],
+  "tags": {
+    "addr:city": "Łomnica",
+    "addr:postcode": "58-508",
+    "amenity": "spa",
+    "landuse": "residential",
+    "leisure": "resort",
+    "name": "Osada Śnieżka",
+    "opening_hours": "Mo-Su 7:00 - 22:00",
+    "phone": "+48 75 61 26 693",
+    "tourism": "chalet",
+    "website": "http://www.osada-sniezka.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 473992743,
+  "center": {
+    "lat": 50.8163583,
+    "lon": 15.6127540
+  },
+  "nodes": [
+    4680192921,
+    4680192922,
+    4680192923,
+    4680192924,
+    4680192921
+  ],
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:housenumber": "5a",
+    "addr:postcode": "58-570",
+    "addr:street": "Wczasowa",
+    "building": "yes",
+    "email": "info@domkiwgorach.eu",
+    "internet_access": "wlan",
+    "internet_access:fee": "yes",
+    "internet_access:ssid": "Zacisze Pod Smielcem",
+    "name": "Zacisze Pod Śmielcem",
+    "name:en": "Mountain Retreat",
+    "operator": "Sudetia",
+    "smoking": "outside",
+    "tourism": "chalet",
+    "website": "https://domkiwgorach.eu/"
+  }
+},
+{
+  "type": "way",
+  "id": 518439272,
+  "center": {
+    "lat": 50.8456719,
+    "lon": 15.4917689
+  },
+  "nodes": [
+    5057174784,
+    5057174780,
+    12221974166,
+    12221974167,
+    12221974175,
+    12221974174,
+    12221974173,
+    12221974172,
+    1419877664,
+    12221974171,
+    12221974170,
+    12221974169,
+    12221974168,
+    12221974164,
+    1419877656,
+    1419877658,
+    12221974165,
+    5057174783,
+    5057174793,
+    5057174792,
+    5057174795,
+    5057174791,
+    5057174790,
+    12221974176,
+    5057174789,
+    12221974177,
+    5057174786,
+    5057174785,
+    5057174794,
+    5057174784
+  ],
+  "tags": {
+    "addr:housenumber": "180",
+    "addr:place": "Kopaniec",
+    "addr:postcode": "58-512",
+    "amenity": "cafe",
+    "beds": "0",
+    "building": "yes",
+    "building:levels": "1",
+    "contact:email": "golbam@wp.pl",
+    "description:en": "no sleeping accommodation due to lack of tap water, no toilets, no electricity, buffet open during object's opening hours",
+    "description:pl": "Schronisko nie oferuje jeszcze noclegów ze względu na brak bieżącej wody;brak toalety;bufet czynny w godzinach otwarcia obiektu",
+    "drinking_water": "no",
+    "ele": "1058",
+    "electricity": "no",
+    "image": "https://photos.app.goo.gl/sHuUjoEqHsFn2B4p7",
+    "internet_access": "no",
+    "name": "Schronisko Wysoki Kamień",
+    "name:de": "Hochsteinbaude",
+    "name:pl": "Schronisko Wysoki Kamień",
+    "note:pl": "tagowane jako proposed:tourism ze względu na brak (jeszcze) możliwości noclegu",
+    "opening_hours": "Apr-Sep Mo-Su 10:00-18:00; Oct-Mar Mo-Su 10:00-16:00",
+    "proposed:tourism": "alpine_hut",
+    "rooms": "0",
+    "source:addr": "gugik.gov.pl",
+    "toilets": "no",
+    "url": "https://www.youtube.com/watch?v=-l3h8r6DJHw",
+    "url:0": "https://youtu.be/NwapDzCqFh4?si=YFo_BobSY0zxPkxQ",
+    "url:1": "https://youtu.be/DtsMPbhVxeU?si=As9QwFXOxDL7MAN1",
+    "website": "http://www.wysokikamien.com.pl",
+    "wikidata": "Q9334436",
+    "wikipedia": "pl:Schronisko Wysoki Kamień"
   }
 },
 {
@@ -641,6 +1738,160 @@
 },
 {
   "type": "way",
+  "id": 559847413,
+  "center": {
+    "lat": 50.8267207,
+    "lon": 15.5376860
+  },
+  "nodes": [
+    5399075596,
+    5399075597,
+    5399075598,
+    5399075599,
+    5399075600,
+    5399075601,
+    5399075596
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "building": "yes",
+    "name": "Chata Skrzata",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 669484544,
+  "center": {
+    "lat": 50.6934134,
+    "lon": 16.0232069
+  },
+  "nodes": [
+    6269352695,
+    6269352694,
+    6269352693,
+    6269352692,
+    6269352695
+  ],
+  "tags": {
+    "building": "yes",
+    "source:geometry": "geoportal.gov.pl:ISOK_CIEŃ-laser",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 669484545,
+  "center": {
+    "lat": 50.6934267,
+    "lon": 16.0230009
+  },
+  "nodes": [
+    6269352699,
+    6269352698,
+    6269352697,
+    6269352696,
+    6269352699
+  ],
+  "tags": {
+    "building": "yes",
+    "source:geometry": "geoportal.gov.pl:ISOK_CIEŃ-laser",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 669484546,
+  "center": {
+    "lat": 50.6933133,
+    "lon": 16.0229811
+  },
+  "nodes": [
+    6269352703,
+    6269352702,
+    6269352701,
+    6269352700,
+    6269352703
+  ],
+  "tags": {
+    "building": "yes",
+    "source:geometry": "geoportal.gov.pl:ISOK_CIEŃ-laser",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 669484547,
+  "center": {
+    "lat": 50.6932994,
+    "lon": 16.0231883
+  },
+  "nodes": [
+    6269352707,
+    6269352706,
+    6269352705,
+    6269352704,
+    6269352707
+  ],
+  "tags": {
+    "building": "yes",
+    "source:geometry": "geoportal.gov.pl:ISOK_CIEŃ-laser",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 738607232,
+  "center": {
+    "lat": 50.7161727,
+    "lon": 15.8814121
+  },
+  "nodes": [
+    6916386721,
+    6916386720,
+    6916386719,
+    6916386718,
+    6916386721
+  ],
+  "tags": {
+    "addr:city:simc": "0190489",
+    "addr:housenumber": "136",
+    "addr:place": "Jarkowice",
+    "addr:postcode": "58-420",
+    "email": "schronisko.s.potok@gmail.com",
+    "leisure": "resort",
+    "name": "Schronisko Srebrny Potok",
+    "phone": "+48 883 715 719",
+    "tourism": "hostel",
+    "website": "http://www.srebrny-potok.net/",
+    "wikidata": "Q16600071",
+    "wikipedia": "pl:Schronisko PTTK „Srebrny Potok” w Dolinie Srebrnika"
+  }
+},
+{
+  "type": "way",
+  "id": 772016671,
+  "center": {
+    "lat": 50.7921001,
+    "lon": 15.9345856
+  },
+  "nodes": [
+    7207151959,
+    7207151960,
+    7207151961,
+    7207151962,
+    7207151959
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "building": "yes",
+    "name": "Bar Zielona Chatka",
+    "opening_hours": "10:00-20:00",
+    "seasonal": "winter"
+  }
+},
+{
+  "type": "way",
   "id": 863642807,
   "center": {
     "lat": 50.7457582,
@@ -660,6 +1911,206 @@
     "name": "Chatka Puchatka",
     "operator": "KArkonoski Park Narodowy",
     "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 918079849,
+  "center": {
+    "lat": 50.8251415,
+    "lon": 15.6846290
+  },
+  "nodes": [
+    8526694944,
+    8526694945,
+    8526694942,
+    8526694943,
+    8526694944
+  ],
+  "tags": {
+    "building": "residential",
+    "building:levels": "1",
+    "source:building": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 918079850,
+  "center": {
+    "lat": 50.8250725,
+    "lon": 15.6846940
+  },
+  "nodes": [
+    8526694948,
+    8526694949,
+    8526694946,
+    8526694947,
+    8526694948
+  ],
+  "tags": {
+    "building": "residential",
+    "building:levels": "1",
+    "source:building": "EGiB",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 979795671,
+  "center": {
+    "lat": 50.8049169,
+    "lon": 15.8271186
+  },
+  "nodes": [
+    9063913644,
+    9063913643,
+    9063913642,
+    9063913641,
+    9063913640,
+    9063913639,
+    9063913638,
+    9063913637,
+    9063913636,
+    9063913635,
+    9063913634,
+    9063913633,
+    9063913644
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 979795672,
+  "center": {
+    "lat": 50.8049327,
+    "lon": 15.8268432
+  },
+  "nodes": [
+    9063913656,
+    9063913655,
+    9063913654,
+    9063913653,
+    9063913652,
+    9063913651,
+    9063913650,
+    9063913649,
+    9063913648,
+    9063913647,
+    9063913646,
+    9063913645,
+    9063913656
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1033422413,
+  "center": {
+    "lat": 50.7945314,
+    "lon": 15.7708845
+  },
+  "nodes": [
+    9521171972,
+    9521171973,
+    9521171974,
+    9521171975,
+    9521171972
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Dziewiećsił",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1033422414,
+  "center": {
+    "lat": 50.7944955,
+    "lon": 15.7707232
+  },
+  "nodes": [
+    9521171976,
+    9521171977,
+    9521171978,
+    9521171979,
+    9521171976
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Lilia",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1033422415,
+  "center": {
+    "lat": 50.7944468,
+    "lon": 15.7704781
+  },
+  "nodes": [
+    9521171980,
+    9521171981,
+    9521171982,
+    9521171983,
+    9521171980
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Goryczka",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1033422416,
+  "center": {
+    "lat": 50.7944127,
+    "lon": 15.7703164
+  },
+  "nodes": [
+    9521171984,
+    9521171985,
+    9521171986,
+    9521171987,
+    9521171984
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Różeniec",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1033422417,
+  "center": {
+    "lat": 50.7943816,
+    "lon": 15.7701515
+  },
+  "nodes": [
+    9521171988,
+    9521171989,
+    9521171990,
+    9521171991,
+    9521171988
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Arnika",
+    "tourism": "chalet"
   }
 },
 {
@@ -686,6 +2137,495 @@
     "phone:mobile": "+48663963167",
     "tourism": "wilderness_hut",
     "website": "https://www.schronisko.net/poi/142/chatka-akt-towarzystwa-bazynowego/"
+  }
+},
+{
+  "type": "way",
+  "id": 1075465419,
+  "center": {
+    "lat": 50.8007727,
+    "lon": 15.7298141
+  },
+  "nodes": [
+    9863356729,
+    9863356728,
+    9863356727,
+    9863356726,
+    9863356725,
+    9863356724,
+    9863356723,
+    9863356722,
+    9863356729
+  ],
+  "tags": {
+    "building": "residential",
+    "charge": "600PLN/night",
+    "email": "noclegipodjaworami@gmail.com",
+    "image": "http://dompodjaworami.pl/images/galeria/zewnatrz/zewnatrz-1d.jpg",
+    "internet_access": "wlan",
+    "name": "Dom Pod Jaworami",
+    "phone": "+48 608 521 761",
+    "reservation": "required",
+    "source": "http://dompodjaworami.pl/",
+    "tourism": "chalet",
+    "website": "http://dompodjaworami.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 1111465623,
+  "center": {
+    "lat": 50.8104062,
+    "lon": 15.6718706
+  },
+  "nodes": [
+    10168709104,
+    10168709105,
+    10168709106,
+    10168709107,
+    10168717138,
+    10168709104
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Lodge 2",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1111465624,
+  "center": {
+    "lat": 50.8104177,
+    "lon": 15.6717489
+  },
+  "nodes": [
+    10168709108,
+    10168709109,
+    10168709110,
+    10168709111,
+    10168717131,
+    10168709108
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Lodge 1",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1111465625,
+  "center": {
+    "lat": 50.8103992,
+    "lon": 15.6720026
+  },
+  "nodes": [
+    10168709112,
+    10168709113,
+    10168709114,
+    10168709115,
+    10168717133,
+    10168709112
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Lodge 3",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1137821005,
+  "center": {
+    "lat": 50.8412514,
+    "lon": 15.5281309
+  },
+  "nodes": [
+    10605998862,
+    10605998861,
+    10605998860,
+    10605998859,
+    10605998858,
+    10605998857,
+    10605998862
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1137821006,
+  "center": {
+    "lat": 50.8410842,
+    "lon": 15.5283697
+  },
+  "nodes": [
+    10605998868,
+    10605998867,
+    10605998866,
+    10605998865,
+    10605998864,
+    10605998863,
+    10605998868
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1137821007,
+  "center": {
+    "lat": 50.8411255,
+    "lon": 15.5285450
+  },
+  "nodes": [
+    10605998874,
+    10605998873,
+    10605998872,
+    10605998871,
+    10605998870,
+    10605998869,
+    10605998874
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1137821008,
+  "center": {
+    "lat": 50.8411328,
+    "lon": 15.5287141
+  },
+  "nodes": [
+    10605998880,
+    10605998879,
+    10605998878,
+    10605998877,
+    10605998876,
+    10605998875,
+    10605998880
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1137821009,
+  "center": {
+    "lat": 50.8413057,
+    "lon": 15.5287629
+  },
+  "nodes": [
+    10605998886,
+    10605998885,
+    10605998884,
+    10605998883,
+    10605998882,
+    10605998881,
+    10605998886
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1137821010,
+  "center": {
+    "lat": 50.8412862,
+    "lon": 15.5283550
+  },
+  "nodes": [
+    10605998892,
+    10605998891,
+    10605998890,
+    10605998889,
+    10605998888,
+    10605998887,
+    10605998892
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1137821011,
+  "center": {
+    "lat": 50.8413029,
+    "lon": 15.5285740
+  },
+  "nodes": [
+    10605998898,
+    10605998897,
+    10605998896,
+    10605998895,
+    10605998894,
+    10605998893,
+    10605998898
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "source": "www.geoportal.gov.pl",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1181275774,
+  "center": {
+    "lat": 50.8281180,
+    "lon": 15.8614069
+  },
+  "nodes": [
+    10970340367,
+    10970340368,
+    10970340369,
+    10970340370,
+    10970340367
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1181275775,
+  "center": {
+    "lat": 50.8279409,
+    "lon": 15.8620121
+  },
+  "nodes": [
+    10970340371,
+    10970340372,
+    10970340373,
+    10970340374,
+    10970340371
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1183635057,
+  "center": {
+    "lat": 50.8704260,
+    "lon": 15.6683445
+  },
+  "nodes": [
+    10991709606,
+    10991709605,
+    10991678204,
+    10991678203,
+    10991678202,
+    10991678201,
+    11149530695,
+    11149556131,
+    11149530694,
+    11149530696,
+    11149636677,
+    12107562019,
+    12107562020,
+    12742458175,
+    12742458176,
+    10991678199,
+    10991678197,
+    10991678198,
+    10991709606
+  ],
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:housenumber": "6",
+    "addr:postcode": "58-560",
+    "addr:street": "Dolnośląska",
+    "barrier": "fence",
+    "fenced": "yes",
+    "landuse": "residential",
+    "leisure": "resort",
+    "name": "Holiday Park & Resort",
+    "operator": "Holiday Park&Resort sp. z o.o. sp. k.",
+    "phone": "+48 735 200 800",
+    "tourism": "chalet",
+    "website": "https://holidaypark.pl/uzdrowisko-cieplice-zdroj"
+  }
+},
+{
+  "type": "way",
+  "id": 1300869528,
+  "center": {
+    "lat": 50.8623575,
+    "lon": 15.7942615
+  },
+  "nodes": [
+    12048914968,
+    12048914967,
+    12048914966,
+    12048914965,
+    12048914964,
+    12048914963,
+    12048914962,
+    12048914961,
+    12048914960,
+    12048914959,
+    12048914958,
+    12048914968
+  ],
+  "tags": {
+    "name": "Widok na Śnieżkę",
+    "tourism": "chalet",
+    "website": "https://widoknasniezke.pl/"
+  }
+},
+{
+  "type": "way",
+  "id": 1414186354,
+  "center": {
+    "lat": 50.7885653,
+    "lon": 15.7054061
+  },
+  "nodes": [
+    12995208941,
+    12995208942,
+    12995208943,
+    12995208944,
+    12995208945,
+    12995208946,
+    12995208941
+  ],
+  "tags": {
+    "addr:city": "Borowice",
+    "addr:housenumber": "18",
+    "addr:postcode": "58-564",
+    "addr:street": "Świętego Jana z Dukli",
+    "email": "info@contemplace.pl",
+    "guest_house": "guest_house",
+    "image": "https://contemplace.pl/wp-content/webp-express/webp-images/uploads/2022/05/house_1.png.webp",
+    "internet_access": "yes",
+    "internet_access:fee": "customers",
+    "name": "Contemplace",
+    "phone": "+48 502 352 388",
+    "reservation": "required",
+    "source:addr": "gugik.gov.pl",
+    "tourism": "chalet",
+    "website": "https://www.contemplace.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 1534533604,
+  "center": {
+    "lat": 50.7844071,
+    "lon": 15.7388603
+  },
+  "nodes": [
+    13982742221,
+    13982742222,
+    13982742223,
+    13982742224,
+    13982742225,
+    13982742226,
+    13982742227,
+    13982742228,
+    13982728069,
+    13982728070,
+    1280256335,
+    13982728072,
+    13982728071,
+    13982742221
+  ],
+  "tags": {
+    "landuse": "residential",
+    "name": "Sosnowy Szept",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "relation",
+  "id": 16329209,
+  "center": {
+    "lat": 50.7870677,
+    "lon": 15.6943901
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 1207782462,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1207782469,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 837638770,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1207782471,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1207782472,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1207782473,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1207782461,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1207782457,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1207782464,
+      "role": "outer"
+    }
+  ],
+  "tags": {
+    "name": "HOTTUR  Ośrodek Wczasowo-Wypoczynkowy",
+    "tourism": "chalet",
+    "type": "multipolygon",
+    "website": "https://www.hottur.pl/"
   }
 }
 

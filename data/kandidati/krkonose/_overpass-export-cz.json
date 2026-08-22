@@ -2,12 +2,203 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-29T05:05:43Z",
-    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "timestamp_osm_base": "2026-08-22T07:14:18Z",
+    "timestamp_areas_base": "2026-08-21T13:11:56Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
+{
+  "type": "node",
+  "id": 127033973,
+  "lat": 50.6620767,
+  "lon": 15.6297174,
+  "tags": {
+    "addr:city": "Dolní Dvůr",
+    "addr:conscriptionnumber": "123",
+    "addr:country": "CZ",
+    "addr:housenumber": "123",
+    "addr:place": "Dolní Dvůr",
+    "addr:postcode": "54342",
+    "addr:street": "Dolní Dvůr",
+    "ele": "860",
+    "name": "Wellness hotel LIBERECKÁ BOUDA",
+    "note": "Newly built mountain hotel with wellness services (indoor pool, whirlpool, sauna, massage) in the heart of the Giant Mountains is located right at the top station SKI AREA Luisino Valley Lower Court. Liberecká cottage is set in beautiful unspoiled country",
+    "operator": "Liberecká bouda",
+    "phone": "+420602364636",
+    "ref:ruian:addr": "9877495",
+    "smoking": "outside",
+    "tourism": "hotel",
+    "website": "https://www.libereckabouda.cz/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 262099408,
+  "lat": 50.7152722,
+  "lon": 15.7239534,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:phone": "+420 728 465 454",
+    "name": "Bouda v Obřím Dole",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "website": "https://boudavobrimdole.cz/restaurace"
+  }
+},
+{
+  "type": "node",
+  "id": 292592404,
+  "lat": 50.7460640,
+  "lon": 15.8221046,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Pomezní bouda",
+    "name:de": "Grenzbaude"
+  }
+},
+{
+  "type": "node",
+  "id": 300139627,
+  "lat": 50.6370200,
+  "lon": 15.7055000,
+  "tags": {
+    "amenity": "restaurant",
+    "man_made": "surveillance",
+    "name": "Horská služba Černý Důl",
+    "phone": "+420721488470",
+    "source_ref": "http://jeseniky.org/attachments/442_CZ-Horska_sluzba.kml",
+    "surveillance": "indoor",
+    "surveillance:type": "camera",
+    "surveillance:zone": "building"
+  }
+},
+{
+  "type": "node",
+  "id": 428863767,
+  "lat": 50.7739578,
+  "lon": 15.3523448,
+  "tags": {
+    "name": "Chalupa Podlesí",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 428877405,
+  "lat": 50.7637936,
+  "lon": 15.3768343,
+  "tags": {
+    "name": "Chata Lesni",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 428910643,
+  "lat": 50.7720320,
+  "lon": 15.3825986,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata Sportski",
+    "phone": "+420 603 156 976",
+    "website": "https://www.chata-sport-ski.cz/restaurace.php"
+  }
+},
+{
+  "type": "node",
+  "id": 428914688,
+  "lat": 50.7346074,
+  "lon": 15.3609083,
+  "tags": {
+    "name": "Chata Panorama",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 458807666,
+  "lat": 50.7207844,
+  "lon": 15.7260384,
+  "tags": {
+    "addr:city": "Pec pod Sněžkou",
+    "addr:housenumber": "199",
+    "addr:postcode": "54221",
+    "addr:street": "Kavinova cesta",
+    "amenity": "restaurant",
+    "check_date": "2025-08-15",
+    "check_date:currency:XBT": "2025-08-15",
+    "contact:email": "info@boudapodsnezkou.cz",
+    "internet_access": "wlan",
+    "name": "Bouda pod Snežkou",
+    "payment:onchain": "no",
+    "payment:qerko": "yes",
+    "phone": "+420 491 617 077",
+    "website": "https://www.boudapodsnezkou.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 598915507,
+  "lat": 50.7399772,
+  "lon": 15.4893555,
+  "tags": {
+    "addr:city": "Rokytnice nad Jizerou",
+    "addr:conscriptionnumber": "54",
+    "addr:country": "CZ",
+    "addr:housenumber": "54",
+    "addr:place": "Rokytno",
+    "addr:postcode": "51245",
+    "addr:street": "Rokytno",
+    "ele": "750",
+    "email": "ubytovani@chatavotocka.cz",
+    "fee": "yes",
+    "guest_house": "groupaccommodation",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chata Votočka",
+    "phone": "+420602626304",
+    "ref:ruian:addr": "15120198",
+    "rooms": "7",
+    "tourism": "guest_house",
+    "website": "https://www.chatavotocka.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 611179384,
+  "lat": 50.6569834,
+  "lon": 15.7557884,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:email": "p.boudy@seznam.cz",
+    "contact:phone": "+420 775 511 239",
+    "cuisine": "regional",
+    "name": "Velké pardubické boudy",
+    "name:cs": "Velké pardubické boudy",
+    "place": "locality",
+    "source": "cuzk:km",
+    "website": "https://pardubickeboudy.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 650918422,
+  "lat": 50.6701810,
+  "lon": 15.7375702,
+  "tags": {
+    "addr:conscriptionnumber": "319",
+    "addr:country": "CZ",
+    "addr:housenumber": "319",
+    "addr:place": "Velká Úpa",
+    "addr:postcode": "54221",
+    "amenity": "restaurant",
+    "brewery": "kolínský_speciál",
+    "cuisine": "regional",
+    "name": "Kolínská bouda",
+    "toilets": "yes"
+  }
+},
 {
   "type": "node",
   "id": 656460094,
@@ -43,6 +234,44 @@
 },
 {
   "type": "node",
+  "id": 656460476,
+  "lat": 50.6307786,
+  "lon": 15.7680455,
+  "tags": {
+    "addr:conscriptionnumber": "188",
+    "addr:country": "CZ",
+    "addr:housenumber": "188",
+    "addr:place": "Janské Lázně",
+    "addr:postcode": "54225",
+    "addr:street": "Luční",
+    "guest_house": "guest_house",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "chata Advokátka",
+    "ref:ruian:addr": "20378360",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 656460582,
+  "lat": 50.6471138,
+  "lon": 15.7476600,
+  "tags": {
+    "addr:conscriptionnumber": "190",
+    "addr:country": "CZ",
+    "addr:housenumber": "190",
+    "addr:place": "Janské Lázně",
+    "addr:postcode": "54225",
+    "addr:street": "Horská",
+    "name": "Chata Kábrtova Bouda",
+    "ref:ruian:addr": "20378386",
+    "tourism": "chalet",
+    "website": "https://www.janskelazne.cz/cz/chata-kabrtova-bouda-cerna-hora-19.html"
+  }
+},
+{
+  "type": "node",
   "id": 656461873,
   "lat": 50.6774016,
   "lon": 15.7405172,
@@ -55,6 +284,56 @@
     "name": "Vebrovy boudy",
     "ref:ruian:addr": "21051518",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 656462446,
+  "lat": 50.7020225,
+  "lon": 15.7688638,
+  "tags": {
+    "addr:conscriptionnumber": "110",
+    "addr:country": "CZ",
+    "addr:housenumber": "110",
+    "addr:place": "Velká Úpa",
+    "addr:postcode": "54221",
+    "amenity": "restaurant",
+    "capacity": "150",
+    "ele": "1050",
+    "name": "Horská chata Portášky",
+    "website": "http://www.portasky.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 656462664,
+  "lat": 50.6839588,
+  "lon": 15.7906275,
+  "tags": {
+    "addr:conscriptionnumber": "16",
+    "addr:country": "CZ",
+    "addr:housenumber": "16",
+    "addr:place": "Velká Úpa",
+    "addr:postcode": "54221",
+    "amenity": "restaurant",
+    "name": "Chata Borůvka",
+    "ref:ruian:addr": "21048509"
+  }
+},
+{
+  "type": "node",
+  "id": 656462729,
+  "lat": 50.6910525,
+  "lon": 15.7896438,
+  "tags": {
+    "addr:conscriptionnumber": "47",
+    "addr:country": "CZ",
+    "addr:housenumber": "47",
+    "addr:place": "Velká Úpa",
+    "addr:postcode": "54221",
+    "amenity": "restaurant",
+    "name": "Bouda Míla",
+    "ref:ruian:addr": "21048801"
   }
 },
 {
@@ -72,6 +351,176 @@
     "name": "Chata Mamut",
     "ref:ruian:addr": "15160734",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 656463058,
+  "lat": 50.7330788,
+  "lon": 15.8052025,
+  "tags": {
+    "addr:conscriptionnumber": "4",
+    "addr:country": "CZ",
+    "addr:housenumber": "4",
+    "addr:place": "Horní Malá Úpa",
+    "addr:postcode": "54227",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Hájenka Haida",
+    "tourism": "guest_house",
+    "website": "https://www.chatahaida.cz/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 656464518,
+  "lat": 50.7127375,
+  "lon": 15.8343950,
+  "tags": {
+    "addr:conscriptionnumber": "51",
+    "addr:country": "CZ",
+    "addr:housenumber": "51",
+    "addr:place": "Horní Lysečiny",
+    "addr:postcode": "54226",
+    "amenity": "restaurant",
+    "microbrewery": "no",
+    "name": "Lysečinská bouda",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "ref:ruian:addr": "2331870"
+  }
+},
+{
+  "type": "node",
+  "id": 656467834,
+  "lat": 50.7138501,
+  "lon": 15.8348363,
+  "tags": {
+    "addr:conscriptionnumber": "39",
+    "addr:country": "CZ",
+    "addr:housenumber": "39",
+    "addr:place": "Horní Lysečiny",
+    "addr:postcode": "54226",
+    "amenity": "restaurant",
+    "microbrewery": "no",
+    "name": "Horská chata Poutník",
+    "ref:ruian:addr": "2331799"
+  }
+},
+{
+  "type": "node",
+  "id": 656502355,
+  "lat": 50.6522588,
+  "lon": 15.6029325,
+  "tags": {
+    "addr:conscriptionnumber": "100",
+    "addr:country": "CZ",
+    "addr:housenumber": "100",
+    "addr:place": "Hořejší Vrchlabí",
+    "addr:postcode": "54302",
+    "addr:street": "Na stráni",
+    "amenity": "restaurant",
+    "cuisine": "regional;international",
+    "name": "Johannova bouda",
+    "ref:ruian:addr": "2300273",
+    "self_service": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 656502585,
+  "lat": 50.6599769,
+  "lon": 15.6323813,
+  "tags": {
+    "addr:conscriptionnumber": "128",
+    "addr:country": "CZ",
+    "addr:housenumber": "128",
+    "addr:place": "Dolní Dvůr",
+    "addr:postcode": "54342",
+    "name": "Chata Medika",
+    "ref:ruian:addr": "9877541",
+    "tourism": "chalet",
+    "website": "http://www.chatamedika.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 656502625,
+  "lat": 50.6805813,
+  "lon": 15.5779275,
+  "tags": {
+    "addr:conscriptionnumber": "61",
+    "addr:country": "CZ",
+    "addr:housenumber": "61",
+    "addr:place": "Labská",
+    "addr:postcode": "54351",
+    "guest_house": "house",
+    "internet_access": "wlan",
+    "name": "Chata Solunka",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 656502770,
+  "lat": 50.6721376,
+  "lon": 15.6008638,
+  "tags": {
+    "addr:city": "Strážné",
+    "addr:conscriptionnumber": "161",
+    "addr:country": "CZ",
+    "addr:housenumber": "161",
+    "addr:place": "Strážné",
+    "addr:postcode": "54352",
+    "addr:street": "Strážné",
+    "guest_house": "house",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chata Botas",
+    "phone": "+420 736 752 793",
+    "ref:ruian:addr": "20365705",
+    "tourism": "chalet",
+    "website": "https://www.e-chalupy.cz/krkonose/chata-botas-stazne-pronajem-15627.php"
+  }
+},
+{
+  "type": "node",
+  "id": 656503978,
+  "lat": 50.6609301,
+  "lon": 15.6590806,
+  "tags": {
+    "addr:city": "Dolní Dvůr",
+    "addr:conscriptionnumber": "22",
+    "addr:country": "CZ",
+    "addr:housenumber": "22",
+    "addr:place": "Dolní Dvůr",
+    "addr:postcode": "54342",
+    "amenity": "restaurant",
+    "name": "Chata U Jirky",
+    "outdoor_seating": "yes",
+    "ref:ruian:addr": "9876481",
+    "tourism": "guest_house",
+    "website": "https://chataujirky.cz/restaurace/"
+  }
+},
+{
+  "type": "node",
+  "id": 656504202,
+  "lat": 50.6355212,
+  "lon": 15.7114745,
+  "tags": {
+    "addr:conscriptionnumber": "100",
+    "addr:country": "CZ",
+    "addr:housenumber": "100",
+    "addr:place": "Černý Důl",
+    "addr:postcode": "54344",
+    "name": "Mlynářka, ubytování v krkonoších",
+    "name:en": "Mlynářka, accomodation in Giant Mountains",
+    "phone": "+420 722 249 278",
+    "ref:ruian:addr": "2236923",
+    "smoking": "no",
+    "tourism": "chalet",
+    "website": "https://mlynarka-krkonose.cz/"
   }
 },
 {
@@ -94,6 +543,35 @@
 },
 {
   "type": "node",
+  "id": 664126110,
+  "lat": 50.7710149,
+  "lon": 15.4524553,
+  "tags": {
+    "amenity": "fast_food",
+    "contact:phone": "+420 739 028 060",
+    "cuisine": "regional",
+    "name": "Mumlavská Bouda",
+    "name:cs": "Mumlavská Bouda",
+    "name:de": "Mümmelfallbaude",
+    "opening_hours": "Mo-Su 10:00-17:00",
+    "start_date": "1879",
+    "wikidata": "Q65166465",
+    "wikimedia_commons": "Category:Mumlavská bouda"
+  }
+},
+{
+  "type": "node",
+  "id": 846942197,
+  "lat": 50.7307739,
+  "lon": 15.6108514,
+  "tags": {
+    "check_date": "2025-02-14",
+    "name": "Happy House",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
   "id": 958304121,
   "lat": 50.7096873,
   "lon": 15.6993935,
@@ -104,6 +582,40 @@
     "phone": "+420 499 896249",
     "tourism": "alpine_hut",
     "website": "https://www.richtrovyboudy.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1269086646,
+  "lat": 50.7090155,
+  "lon": 15.7259695,
+  "tags": {
+    "email": "podstudnicnou@seznam.cz",
+    "internet_access": "no",
+    "name": "Chata pod Studničnou",
+    "phone": "+420 499 736 020",
+    "tourism": "chalet",
+    "website": "http://www.podstudnicnou.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1470820730,
+  "lat": 50.7742963,
+  "lon": 15.3526409,
+  "tags": {
+    "name": "Chalupa U Smrků",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 1491213286,
+  "lat": 50.7440678,
+  "lon": 15.3639774,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "chata Hvězda"
   }
 },
 {
@@ -126,12 +638,124 @@
 },
 {
   "type": "node",
+  "id": 1501960040,
+  "lat": 50.7197603,
+  "lon": 15.6163635,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2026-08-05",
+    "name": "Turistická chata"
+  }
+},
+{
+  "type": "node",
+  "id": 1509596892,
+  "lat": 50.6624626,
+  "lon": 15.5570783,
+  "tags": {
+    "internet_access": "wlan",
+    "name": "Makuka",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 1651907743,
+  "lat": 50.6651563,
+  "lon": 15.5506168,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Martinova Bouda",
+    "phone": "+420 602 187 916",
+    "smoking": "no",
+    "tourism": "guest_house",
+    "website": "http://www.martinovabouda-benecko.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 1847077349,
+  "lat": 50.6597314,
+  "lon": 15.4598734,
+  "tags": {
+    "name": "Sokolská chata Babeta",
+    "operator": "T.J. Sokol Poniklá",
+    "tourism": "chalet",
+    "website": "https://sokolponikla.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 1944336845,
+  "lat": 50.6602093,
+  "lon": 15.8499890,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Rýchorská bouda",
+    "name:de": "Rehornbaude"
+  }
+},
+{
+  "type": "node",
+  "id": 2147053804,
+  "lat": 50.6705338,
+  "lon": 15.5515175,
+  "tags": {
+    "addr:conscriptionnumber": "32",
+    "addr:country": "CZ",
+    "addr:housenumber": "32",
+    "addr:place": "Benecko",
+    "addr:postcode": "51237",
+    "amenity": "restaurant",
+    "name": "Hančova bouda",
+    "phone": "+420 481 582 632",
+    "ref:ruian:addr": "15033759",
+    "website": "https://hancovabouda.cz/"
+  }
+},
+{
+  "type": "node",
   "id": 2150284218,
   "lat": 50.6920026,
   "lon": 15.7515610,
   "tags": {
     "name": "Chata Aurora",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 2156020693,
+  "lat": 50.6390913,
+  "lon": 15.3381025,
+  "tags": {
+    "addr:city": "Bozkov",
+    "addr:conscriptionnumber": "62",
+    "addr:country": "CZ",
+    "addr:housenumber": "62",
+    "addr:place": "Bozkov",
+    "addr:postcode": "51213",
+    "ref:ruian:addr": "15040003",
+    "smoking": "outside",
+    "tourism": "chalet",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2186768692,
+  "lat": 50.7701467,
+  "lon": 15.5464204,
+  "tags": {
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Restaurace Labska Bouda",
+    "opening_hours": "12:00-21:00",
+    "opening_hours:kitchen": "12:00-19:00",
+    "outdoor_seating": "no",
+    "payment:cash": "only",
+    "payment:debit_cards": "no"
   }
 },
 {
@@ -164,12 +788,557 @@
 },
 {
   "type": "node",
+  "id": 2398705798,
+  "lat": 50.6310359,
+  "lon": 15.7687919,
+  "tags": {
+    "check_date": "2025-08-24",
+    "name": "Chata Jestřáb",
+    "tourism": "guest_house",
+    "website": "https://plus.google.com/108159705772761019533/about"
+  }
+},
+{
+  "type": "node",
+  "id": 2398705807,
+  "lat": 50.6543143,
+  "lon": 15.7471203,
+  "tags": {
+    "name": "Hotel ČERNÁ BOUDA",
+    "tourism": "hotel",
+    "website": "https://www.cernabouda.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2398705813,
+  "lat": 50.6353088,
+  "lon": 15.7807521,
+  "tags": {
+    "check_date": "2025-08-24",
+    "name": "Pension Chata Lovrana",
+    "tourism": "guest_house",
+    "website": "http://www.lovrana.eu"
+  }
+},
+{
+  "type": "node",
+  "id": 2399375781,
+  "lat": 50.6365018,
+  "lon": 15.7805846,
+  "tags": {
+    "name": "Bouda Jiřinka",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 2399375782,
+  "lat": 50.6372405,
+  "lon": 15.7829173,
+  "tags": {
+    "name": "Chata Tereza",
+    "tourism": "guest_house",
+    "website": "https://www.chatatereza.eu/"
+  }
+},
+{
+  "type": "node",
+  "id": 2399375783,
+  "lat": 50.6267905,
+  "lon": 15.7582594,
+  "tags": {
+    "name": "Chata U Kohouta",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 2399375784,
+  "lat": 50.6313140,
+  "lon": 15.7695237,
+  "tags": {
+    "name": "Chata Viktorka",
+    "tourism": "chalet",
+    "website": "https://chataviktorka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2399375786,
+  "lat": 50.6236133,
+  "lon": 15.7682172,
+  "tags": {
+    "amenity": "fast_food",
+    "contact:facebook": "https://www.facebook.com/p/Jansk%C3%A1-Bouda-100093660485294/",
+    "email": "richv@seznam.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "mobile": "+420 607 000 003",
+    "name": "Hladík & Žíža Janská Bouda"
+  }
+},
+{
+  "type": "node",
+  "id": 2399375787,
+  "lat": 50.6341981,
+  "lon": 15.7668096,
+  "tags": {
+    "name": "Ludvikova bouda",
+    "tourism": "chalet",
+    "website": "http://www.ludvikovabouda.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2399375802,
+  "lat": 50.6431140,
+  "lon": 15.7909801,
+  "tags": {
+    "name": "Penzion Modrokamenná bouda",
+    "stars": "3",
+    "tourism": "guest_house",
+    "website": "http://www.penzion-modrokamenna-bouda-janske-lazne.az-ubytovani.net/"
+  }
+},
+{
+  "type": "node",
+  "id": 2402261240,
+  "lat": 50.6514298,
+  "lon": 15.6303347,
+  "tags": {
+    "name": "Chata FERRA",
+    "tourism": "chalet",
+    "website": "http://www.chataferra.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2402261246,
+  "lat": 50.5612236,
+  "lon": 16.0361169,
+  "tags": {
+    "amenity": "pub",
+    "name": "Jestřebí bouda",
+    "opening_hours": "Jul-Aug Mo-Th 11:00-16:00; Jul-Aug Fr 11:00-22:00; Sa 10:00-22:00; Su 10:00-15:00; PH open",
+    "tourism": "chalet",
+    "website": "http://www.jestrebibouda.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2402261247,
+  "lat": 50.5686882,
+  "lon": 16.0431459,
+  "tags": {
+    "name": "Lyžařský vlek - ubytování",
+    "tourism": "chalet",
+    "website": "https://www.vlekradvanice.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2406994316,
+  "lat": 50.6489332,
+  "lon": 15.6602396,
+  "tags": {
+    "name": "Baronova Bouda",
+    "tourism": "guest_house",
+    "website": "http://www.ski-baron.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2406994317,
+  "lat": 50.6551598,
+  "lon": 15.6564012,
+  "tags": {
+    "name": "Chalupa U Říhů",
+    "tourism": "chalet",
+    "website": "http://www.chalupaurihu.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2406994321,
+  "lat": 50.6474868,
+  "lon": 15.6560410,
+  "tags": {
+    "name": "Chalupa u Medvěda",
+    "tourism": "chalet",
+    "website": "http://www.chalupaumedveda.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2406994324,
+  "lat": 50.6458182,
+  "lon": 15.6592465,
+  "tags": {
+    "name": "Chata Baronka",
+    "tourism": "chalet",
+    "website": "http://www.ski-baron.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2406994325,
+  "lat": 50.6596369,
+  "lon": 15.6585789,
+  "tags": {
+    "name": "Chata Gall",
+    "phone": "+420 499 432 166",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 2406994326,
+  "lat": 50.6575119,
+  "lon": 15.6350120,
+  "tags": {
+    "name": "Chata Jitka",
+    "tourism": "chalet",
+    "website": "http://www.chatajitka.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2406994327,
+  "lat": 50.6564040,
+  "lon": 15.6335689,
+  "tags": {
+    "name": "Chata Kubík",
+    "tourism": "chalet",
+    "website": "http://www.chatakubik.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2406994329,
+  "lat": 50.6738444,
+  "lon": 15.6573692,
+  "tags": {
+    "name": "Horská chata HANAPETR",
+    "tourism": "chalet",
+    "website": "http://hanapetr.cernypetr.com"
+  }
+},
+{
+  "type": "node",
+  "id": 2406994341,
+  "lat": 50.6518212,
+  "lon": 15.6564129,
+  "tags": {
+    "name": "Janova bouda",
+    "tourism": "guest_house",
+    "website": "https://www.skifamily.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 2411927304,
+  "lat": 50.6907951,
+  "lon": 15.8487569,
+  "tags": {
+    "name": "Chata Beata",
+    "tourism": "chalet",
+    "website": "http://www.chatabeata.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2411927305,
+  "lat": 50.6618589,
+  "lon": 15.7999901,
+  "tags": {
+    "name": "Chata Honzík",
+    "tourism": "chalet",
+    "website": "www.chatahonzik.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2411927306,
+  "lat": 50.6621105,
+  "lon": 15.8215250,
+  "tags": {
+    "name": "Chata Kovárna",
+    "tourism": "chalet",
+    "website": "https://www.e-chalupy.cz/krkonose/chata-horni-marsov-kovarna-1586.php"
+  }
+},
+{
+  "type": "node",
+  "id": 2411927307,
+  "lat": 50.6934991,
+  "lon": 15.8473802,
+  "tags": {
+    "name": "Chata Medika",
+    "tourism": "chalet",
+    "website": "http://www.alberice.slinet.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2411927308,
+  "lat": 50.6529873,
+  "lon": 15.8181818,
+  "tags": {
+    "name": "Chata Varta",
+    "tourism": "guest_house",
+    "website": "http://www.chatavarta.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2411927309,
+  "lat": 50.7138072,
+  "lon": 15.8347757,
+  "tags": {
+    "name": "Horská chata Poutník",
+    "tourism": "chalet",
+    "website": "www.chatapoutnik.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2411927455,
+  "lat": 50.6779384,
+  "lon": 15.8339411,
+  "tags": {
+    "name": "Penzion Karlova chata",
+    "tourism": "guest_house",
+    "website": "http://www.karlovachata.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 2498311166,
+  "lat": 50.7356303,
+  "lon": 15.5552807,
+  "tags": {
+    "name": "Chata Lom",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 2498311174,
+  "lat": 50.7514651,
+  "lon": 15.5488161,
+  "tags": {
+    "air_conditioning": "yes",
+    "amenity": "restaurant",
+    "contact:phone": "+420 775 440 383",
+    "cuisine": "czech;cake",
+    "indoor_seating": "yes",
+    "name": "Vrbatova bouda",
+    "opening_hours": "10:00-16:00",
+    "outdoor_seating": "terrace",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "smoking": "outside",
+    "toilets": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2510829481,
+  "lat": 50.6738555,
+  "lon": 15.6139143,
+  "tags": {
+    "name": "Bouda U lesa",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 2510829482,
+  "lat": 50.6662711,
+  "lon": 15.6130934,
+  "tags": {
+    "name": "Chata Baraba",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 2510829483,
+  "lat": 50.6645578,
+  "lon": 15.6173399,
+  "tags": {
+    "name": "Chata Opavia",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 2510829484,
+  "lat": 50.6662413,
+  "lon": 15.6125661,
+  "tags": {
+    "name": "Chata Popelka",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 2510829485,
+  "lat": 50.6683013,
+  "lon": 15.6053077,
+  "tags": {
+    "name": "Chata Úvaly",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 2511201662,
+  "lat": 50.6777926,
+  "lon": 15.6268122,
+  "tags": {
+    "name": "Hříběcí Bouda",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 2511212760,
+  "lat": 50.6636985,
+  "lon": 15.6150847,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Horská"
+  }
+},
+{
+  "type": "node",
+  "id": 3620568252,
+  "lat": 50.7620921,
+  "lon": 15.6353035,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional;pasta;czech",
+    "indoor_seating": "yes",
+    "name": "Špindlerova bouda",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4008111008,
+  "lat": 50.7446262,
+  "lon": 15.8205613,
+  "tags": {
+    "addr:conscriptionnumber": "136",
+    "addr:country": "CZ",
+    "addr:housenumber": "136",
+    "addr:place": "Horní Malá Úpa",
+    "addr:postcode": "54227",
+    "amenity": "restaurant",
+    "name": "Bouda Malá Úpa",
+    "website": "https://boudamalaupa.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 4194027866,
+  "lat": 50.7719257,
+  "lon": 15.3828787,
+  "tags": {
+    "name": "Chata Pohoda",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 5072474402,
+  "lat": 50.6892329,
+  "lon": 15.7650241,
+  "tags": {
+    "check_date": "2025-08-22",
+    "name": "Chata Tobísek",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 5341404077,
+  "lat": 50.7103472,
+  "lon": 15.7500492,
+  "tags": {
+    "air_conditioning": "no",
+    "amenity": "restaurant",
+    "name": "Bouda Růžohorky",
+    "opening_hours": "Mo-Sa 10:00-16:00; Su 10:00-15:00",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "smoking": "outside",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5341404078,
+  "lat": 50.7105623,
+  "lon": 15.7496015,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date:opening_hours": "2025-10-11",
+    "name": "Děčínská bouda",
+    "opening_hours": "Mo-Su 10:00-16:00"
+  }
+},
+{
+  "type": "node",
+  "id": 5417375394,
+  "lat": 50.6777749,
+  "lon": 15.7268805,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Žižkova bouda"
+  }
+},
+{
+  "type": "node",
   "id": 5488610956,
   "lat": 50.6816522,
   "lon": 15.7437205,
   "tags": {
     "name": "Javorka",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 5488661844,
+  "lat": 50.6706195,
+  "lon": 15.7303989,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Pražská bouda"
+  }
+},
+{
+  "type": "node",
+  "id": 5488661851,
+  "lat": 50.6710649,
+  "lon": 15.7272258,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Lidická Bouda"
+  }
+},
+{
+  "type": "node",
+  "id": 5488661852,
+  "lat": 50.6778861,
+  "lon": 15.7269120,
+  "tags": {
+    "name": "Žižkova bouda",
+    "tourism": "hotel"
   }
 },
 {
@@ -224,6 +1393,181 @@
 },
 {
   "type": "node",
+  "id": 5513287502,
+  "lat": 50.7580238,
+  "lon": 15.3641067,
+  "tags": {
+    "addr:city": "Kořenov",
+    "addr:housenumber": "629",
+    "addr:place": "Kořenov",
+    "internet_access": "wlan",
+    "name": "Chata u Korene",
+    "smoking": "outside",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "node",
+  "id": 5818323209,
+  "lat": 50.6325884,
+  "lon": 15.7561640,
+  "tags": {
+    "amenity": "restaurant",
+    "brewery": "kozel;Trautenberk",
+    "cuisine": "regional",
+    "name": "Hoffmanovy Boudy",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6511221721,
+  "lat": 50.6640035,
+  "lon": 15.5581331,
+  "tags": {
+    "addr:conscriptionnumber": "43",
+    "addr:country": "CZ",
+    "addr:housenumber": "43",
+    "addr:place": "Benecko",
+    "addr:postcode": "51237",
+    "email": "miravitu@seznam.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name:cs": "Chalupa U Jeriů",
+    "name:de": "Pension U Jeriu",
+    "phone": "+420 603 986 624",
+    "smoking": "outside",
+    "sport": "snowtubing",
+    "tourism": "chalet",
+    "website": "https://www.u-jeriu.cz/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6652782696,
+  "lat": 50.7455592,
+  "lon": 15.8214096,
+  "tags": {
+    "addr:city": "Malá Úpa",
+    "addr:housenumber": "41",
+    "addr:postcode": "54227",
+    "addr:street": "Horní Malá Úpa",
+    "check_date": "2025-02-15",
+    "contact:facebook": "https://www.facebook.com/hradecanka/",
+    "contact:instagram": "https://www.instagram.com/chata_hradecanka_1931/",
+    "email": "info@hradecanka.cz",
+    "name": "Chata Hradečanka",
+    "phone": "+420 737 282 668",
+    "rooms": "10",
+    "tourism": "hotel",
+    "website": "https://www.hradecanka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 6769175034,
+  "lat": 50.7153892,
+  "lon": 15.7239311,
+  "tags": {
+    "beds": "31",
+    "contact:phone": "+420 728 465 454",
+    "name": "Bouda v Obřím Dole",
+    "rooms": "11",
+    "tourism": "guest_house",
+    "website": "https://boudavobrimdole.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 7075711713,
+  "lat": 50.7455726,
+  "lon": 15.8214253,
+  "tags": {
+    "addr:city": "Malá Úpa",
+    "addr:housenumber": "41",
+    "addr:postcode": "54227",
+    "addr:street": "Horní Malá Úpa",
+    "amenity": "restaurant",
+    "contact:facebook": "https://www.facebook.com/hradecanka/",
+    "contact:instagram": "https://www.instagram.com/chata_hradecanka_1931/",
+    "cuisine": "italian;pizza;coffee;wine",
+    "email": "info@hradecanka.cz",
+    "name": "Chata Hradečanka",
+    "opening_hours": "Mo-Su 11:00-22:00",
+    "phone": "+420 737 282 668",
+    "tourism": "wine_cellar",
+    "website": "https://www.hradecanka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 7075711714,
+  "lat": 50.7458133,
+  "lon": 15.8215388,
+  "tags": {
+    "addr:city": "Malá Úpa",
+    "addr:housenumber": "124",
+    "addr:postcode": "54227",
+    "addr:street": "Horní Malá Úpa",
+    "check_date": "2025-02-15",
+    "contact:facebook": "https://www.facebook.com/hradecanka/",
+    "contact:instagram": "https://www.instagram.com/chata_hradecanka_1931/",
+    "email": "info@hradecanka.cz",
+    "guest_house": "pension",
+    "name": "Chata Jeřabinka",
+    "phone": "+420 737 282 668",
+    "rooms": "9",
+    "tourism": "guest_house",
+    "website": "https://www.chatajerabinka.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 7297394751,
+  "lat": 50.6963966,
+  "lon": 15.5362529,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata Hubertka",
+    "phone": "+420608838478",
+    "website": "www.chatahubertka.cz"
+  }
+},
+{
+  "type": "node",
+  "id": 7525674158,
+  "lat": 50.6625041,
+  "lon": 15.8206843,
+  "tags": {
+    "addr:city": "Horní Maršov",
+    "addr:housenumber": "9",
+    "addr:postcode": "54226",
+    "addr:street": "Lysečinská",
+    "email": "rezervace@marsovka.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "name": "Chalupa Maršovka",
+    "phone": "+420 728 028 444",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "node",
+  "id": 11137605465,
+  "lat": 50.7740704,
+  "lon": 15.4354685,
+  "tags": {
+    "addr:housenumber": "209",
+    "addr:place": "Harrachov",
+    "check_date": "2023-08-23",
+    "guest_house": "bed_and_breakfast",
+    "name": "chata v zákoutí",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "node",
   "id": 11258086295,
   "lat": 50.7611479,
   "lon": 15.6010604,
@@ -232,6 +1576,17 @@
     "power_supply": "yes",
     "shower": "yes",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 11283637496,
+  "lat": 50.6319358,
+  "lon": 15.7653393,
+  "tags": {
+    "name": "Chata Grácie",
+    "tourism": "guest_house",
+    "website": "https://www.janskelazne.cz/cz/chata-gracie-janske-lazne-77.html"
   }
 },
 {
@@ -276,6 +1631,34 @@
 },
 {
   "type": "node",
+  "id": 12770388168,
+  "lat": 50.6491109,
+  "lon": 15.8992464,
+  "tags": {
+    "name": "Chalupa Baba Jaga",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "node",
+  "id": 12791875905,
+  "lat": 50.7853019,
+  "lon": 15.4183567,
+  "tags": {
+    "beds": "28",
+    "email": "habrova.ivana@seznam.cz",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "mobile": "+420 602626270",
+    "name": "Chalupa Harrachov 90",
+    "operator": "Ing. Ivana Habrová",
+    "tourism": "chalet",
+    "website": "http://www.ubytovani-harrachov.eu/chalupa-harrachov-90.php",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
   "id": 13027945022,
   "lat": 50.6610087,
   "lon": 15.6589100,
@@ -292,6 +1675,29 @@
 },
 {
   "type": "node",
+  "id": 13115070892,
+  "lat": 50.6865972,
+  "lon": 15.7334747,
+  "tags": {
+    "name": "Havlova bouda",
+    "tourism": "guest_house",
+    "website": "https://havlovabouda.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 13115070893,
+  "lat": 50.6866270,
+  "lon": 15.7334621,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:instagram": "https://www.instagram.com/havlovabouda/",
+    "name": "Restaurace Havlova bouda",
+    "website": "https://www.havlovabouda.cz/"
+  }
+},
+{
+  "type": "node",
   "id": 13298087649,
   "lat": 50.7239736,
   "lon": 15.6648399,
@@ -299,6 +1705,165 @@
     "access": "private",
     "name": "Lovecká chata",
     "tourism": "wilderness_hut"
+  }
+},
+{
+  "type": "node",
+  "id": 13434261743,
+  "lat": 50.7720717,
+  "lon": 15.3824522,
+  "tags": {
+    "name": "Chata Sport Ski",
+    "phone": "+420 777 617 381",
+    "tourism": "guest_house",
+    "website": "https://www.chata-sport-ski.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 13465100874,
+  "lat": 50.6628983,
+  "lon": 15.8207487,
+  "tags": {
+    "addr:city": "Horní Maršov",
+    "addr:housenumber": "10",
+    "addr:postcode": "54226",
+    "addr:street": "Lysečinská",
+    "check_date": "2026-01-18",
+    "check_date:currency:XBT": "2026-01-18",
+    "contact:instagram": "apartman_upotokahm",
+    "currency:XBT": "yes",
+    "email": "rezervace@ubytovanikrkonose-marsov.cz",
+    "name": "Apartmán U potoka",
+    "payment:lightning": "yes",
+    "payment:lightning_contactless": "no",
+    "payment:onchain": "yes",
+    "phone": "+420 733 610 253",
+    "tourism": "chalet",
+    "website": "https://www.ubytovanikrkonose-marsov.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 13615777605,
+  "lat": 50.6925625,
+  "lon": 15.7361609,
+  "tags": {
+    "name": "Chata Orlik",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 13627161828,
+  "lat": 50.6617112,
+  "lon": 15.5480271,
+  "tags": {
+    "air_conditioning": "no",
+    "contact:facebook": "Luxushaus-910358165766159/",
+    "email": "info@luxushaus.cz",
+    "internet_access": "wlan",
+    "name": "Bergpoolhaus",
+    "operator": "Pavel Lepič",
+    "phone": "+420608000050",
+    "reservation": "required",
+    "smoking": "outside",
+    "tourism": "chalet",
+    "website": "https://www.bergpoolhaus.eu/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13674846139,
+  "lat": 50.7233013,
+  "lon": 15.8133846,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "local",
+    "diet:vegetarian": "no",
+    "email": "sokoli.boudy@seznam.cz",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "customers",
+    "microbrewery": "no",
+    "name": "Sokolí boudy",
+    "opening_hours": "09:30-22:00",
+    "outdoor_seating": "no",
+    "phone": "+420 775 252 267",
+    "smoking": "no",
+    "tourism": "guest_house",
+    "website": "https://www.sokoliboudy.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694248,
+  "lat": 50.6917436,
+  "lon": 15.7906784,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Hotel Bouda Jana"
+  }
+},
+{
+  "type": "node",
+  "id": 13970694249,
+  "lat": 50.6894616,
+  "lon": 15.7589843,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Lovecká chata",
+    "website": "https://lovecka-chata.cz/"
+  }
+},
+{
+  "type": "node",
+  "id": 13970697028,
+  "lat": 50.7325555,
+  "lon": 15.5722222,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Chata Stopa",
+    "payment:cards": "yes",
+    "self_service": "yes",
+    "smoking": "no",
+    "website": "https://www.stopamisecky.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 13970697329,
+  "lat": 50.6472820,
+  "lon": 15.7469841,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Chata U Sportů"
+  }
+},
+{
+  "type": "node",
+  "id": 14064661720,
+  "lat": 50.6625053,
+  "lon": 15.5619892,
+  "tags": {
+    "addr:city": "Benecko",
+    "addr:housenumber": "44",
+    "addr:postcode": "51237",
+    "addr:street": "Benecko",
+    "contact:facebook": "https://www.facebook.com/apartmanytriboudy/",
+    "contact:instagram": "https://www.instagram.com/triboudy/",
+    "email": "info@triboudy.cz",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Apartmány tři boudy",
+    "operator": "Mountain life hospitality, s.r.o.",
+    "phone": "+420 774 240 222",
+    "ref:vatin": "CZ24632261",
+    "reservation": "yes",
+    "smoking": "no",
+    "tourism": "hotel",
+    "website": "https://www.triboudy.cz"
   }
 },
 {
@@ -458,6 +2023,39 @@
 },
 {
   "type": "way",
+  "id": 19923488,
+  "center": {
+    "lat": 50.6707087,
+    "lon": 15.7302361
+  },
+  "nodes": [
+    209146843,
+    209146858,
+    366730623,
+    366730624,
+    366730625,
+    366730622,
+    2136401725,
+    366730621,
+    366730626,
+    2136401729,
+    366730627,
+    209146875,
+    366730620,
+    366730628,
+    366730629,
+    366730619,
+    209146843
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Pražská bouda",
+    "source": "cuzk:km",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
   "id": 20897239,
   "center": {
     "lat": 50.7622083,
@@ -521,6 +2119,46 @@
     "website": "https://www.spindlerovabouda.cz/",
     "wikidata": "Q9396987",
     "wikipedia": "cs:Špindlerova bouda"
+  }
+},
+{
+  "type": "way",
+  "id": 23012221,
+  "center": {
+    "lat": 50.7001544,
+    "lon": 15.6515541
+  },
+  "nodes": [
+    3959142727,
+    3959142729,
+    3959142730,
+    248099482,
+    248099481,
+    3959142733,
+    3959142734,
+    3959142732,
+    3959142731,
+    946572605,
+    248099479,
+    3959142725,
+    3959142727
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "residential",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "capacity": "72",
+    "email": "info@friesovyboudy.cz",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Friesovy boudy",
+    "phone": "+420 724 230 884",
+    "ref:nap": "18082",
+    "ref:ruian:building": "20129629",
+    "source": "cuzk:ruian",
+    "tourism": "hotel",
+    "website": "https://www.friesovyboudy.cz/"
   }
 },
 {
@@ -730,6 +2368,128 @@
 },
 {
   "type": "way",
+  "id": 27595201,
+  "center": {
+    "lat": 50.7358180,
+    "lon": 15.5687475
+  },
+  "nodes": [
+    303020697,
+    3882038174,
+    3882038178,
+    3882038176,
+    3882038172,
+    3882038169,
+    3882038167,
+    303020761,
+    303020755,
+    3882037855,
+    303020745,
+    303020751,
+    303020739,
+    4224956634,
+    4224956633,
+    4224956635,
+    303020710,
+    303020703,
+    303020697
+  ],
+  "tags": {
+    "addr:city": "Vítkovice",
+    "addr:conscriptionnumber": "140",
+    "addr:country": "CZ",
+    "addr:housenumber": "140",
+    "addr:place": "Vítkovice",
+    "addr:postcode": "51238",
+    "amenity": "restaurant",
+    "brewery": "kozel;Tmavé;Rezane;Plzen",
+    "building": "civic",
+    "building:levels": "1",
+    "building:ruian:type": "5",
+    "check_date": "2023-09-01",
+    "cuisine": "regional",
+    "email": "recepce@jilemnickabouda.cz",
+    "name": "Pension Jilemnická bouda",
+    "opening_hours": "Mo-Su 09:00-21:00",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+420 605 260473",
+    "ref:ruian:addr": "15141349",
+    "ref:ruian:building": "15033147",
+    "roof:shape": "gambrel",
+    "smoking": "outside",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://www.jilemnickabouda.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 27782609,
+  "center": {
+    "lat": 50.8163900,
+    "lon": 15.3482113
+  },
+  "nodes": [
+    2945360430,
+    2945360429,
+    2945360431,
+    2945360428,
+    2945360410,
+    2945360427,
+    2945360430
+  ],
+  "tags": {
+    "building": "residential",
+    "building:flats": "1",
+    "building:levels": "1",
+    "cuisine": "regional",
+    "name": "Chata Jizerka",
+    "ref:ruian:building": "12050741",
+    "source": "cuzk:ruian",
+    "tourism": "hotel",
+    "website": "https://www.tschechienhotel.com/ZER"
+  }
+},
+{
+  "type": "way",
+  "id": 27782620,
+  "center": {
+    "lat": 50.8121497,
+    "lon": 15.3530937
+  },
+  "nodes": [
+    2945354196,
+    2945354201,
+    2945354200,
+    5554726592,
+    5554726591,
+    10967647237,
+    10967647238,
+    2945354194,
+    10967647239,
+    10967647240,
+    10967647241,
+    10967647242,
+    2945354196
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "building:levels": "3",
+    "building:ruian:type": "8",
+    "construction": "building",
+    "name": "Chata pod Bukovcem",
+    "name:de": "Buchbergbaude",
+    "ref:ruian:building": "12050873",
+    "roof:shape": "gabled",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "http://www.chata-pod-bukovcem.estranky.cz/"
+  }
+},
+{
+  "type": "way",
   "id": 29689152,
   "center": {
     "lat": 50.7483559,
@@ -801,6 +2561,35 @@
 },
 {
   "type": "way",
+  "id": 30897511,
+  "center": {
+    "lat": 50.7651400,
+    "lon": 15.3081784
+  },
+  "nodes": [
+    343509436,
+    343509437,
+    343509456,
+    4735964606,
+    343509460,
+    343509438,
+    343509439,
+    343509436
+  ],
+  "tags": {
+    "amenity": "fast_food",
+    "building": "residential",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "name": "Sokolská chata",
+    "ref:ruian:building": "12005541",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
   "id": 31126083,
   "center": {
     "lat": 50.7692361,
@@ -839,6 +2628,74 @@
     "toilets": "yes",
     "toilets:access": "permissive",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 31126084,
+  "center": {
+    "lat": 50.7696873,
+    "lon": 15.6052835
+  },
+  "nodes": [
+    346070520,
+    346070522,
+    4563121286,
+    4563121287,
+    4563121284,
+    346070525,
+    346070517,
+    346070520
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "residential",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "cuisine": "regional",
+    "name": "Dvořákova bouda",
+    "name:de": "Zineckerbaude",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "ref:ruian:building": "2323885",
+    "source": "cuzk:ruian",
+    "toilets": "yes",
+    "toilets:access": "permissive",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 31126085,
+  "center": {
+    "lat": 50.7699628,
+    "lon": 15.6060127
+  },
+  "nodes": [
+    346070536,
+    346070538,
+    346070541,
+    4563121292,
+    4563121291,
+    889542671,
+    4563121290,
+    889542635,
+    346070536
+  ],
+  "tags": {
+    "building": "residential",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "check_date": "2025-09-25",
+    "name": "Chata Špindler",
+    "name:de": "Spindlerhütte",
+    "ref:ruian:building": "2324555",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
   }
 },
 {
@@ -889,6 +2746,79 @@
     "source": "bing",
     "tourism": "alpine_hut",
     "website": "https://www.boudabilelabe.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 31128152,
+  "center": {
+    "lat": 50.7589321,
+    "lon": 15.6339790
+  },
+  "nodes": [
+    10943660330,
+    10943660329,
+    10943660328,
+    10943660327,
+    10943660326,
+    346120753,
+    346120755,
+    10943660325,
+    10943660324,
+    10943660323,
+    10943660322,
+    10943660321,
+    10943660320,
+    10943660319,
+    346120756,
+    10943660318,
+    10943660317,
+    10943660316,
+    10943660315,
+    10943660314,
+    346120750,
+    10943660313,
+    10943660312,
+    10943660311,
+    10943660310,
+    10943660309,
+    10943660308,
+    10943660307,
+    10943660306,
+    10943660305,
+    10943660304,
+    10943660303,
+    10943660302,
+    10943660301,
+    10943660300,
+    10943660299,
+    10943660330
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "109",
+    "addr:country": "CZ",
+    "addr:housenumber": "109",
+    "addr:place": "Špindlerův Mlýn",
+    "addr:postcode": "54351",
+    "amenity": "restaurant",
+    "building": "hotel",
+    "building:flats": "1",
+    "building:levels": "5",
+    "building:ruian:type": "11",
+    "email": "betlem@spmlyn.cz",
+    "fax": "+420 731 598895",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Erlebachova bouda",
+    "name:de": "Erlebachbaude",
+    "phone": "+420 499 523329",
+    "ref:ruian:building": "2324024",
+    "roof:shape": "gabled",
+    "source": "cuzk:ruian",
+    "stars": "3",
+    "start_date": "2022-12-28",
+    "tourism": "hotel",
+    "website": "https://www.erlebachovabouda.cz/"
   }
 },
 {
@@ -959,6 +2889,35 @@
     "wheelchair": "limited",
     "wikidata": "Q41173777",
     "wikipedia": "cs:Lesní bouda"
+  }
+},
+{
+  "type": "way",
+  "id": 31360798,
+  "center": {
+    "lat": 50.6702745,
+    "lon": 15.7375509
+  },
+  "nodes": [
+    349293968,
+    349293969,
+    349293970,
+    349293971,
+    349293972,
+    349293973,
+    349293974,
+    349293977,
+    349293983,
+    349293987,
+    349293991,
+    349293997,
+    349293968
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Kolínská bouda",
+    "source": "cuzk:km",
+    "tourism": "hotel"
   }
 },
 {
@@ -1046,6 +3005,32 @@
     "smoking": "no",
     "tourism": "alpine_hut",
     "website": "http://www.slovanka-cz.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 31360827,
+  "center": {
+    "lat": 50.7000100,
+    "lon": 15.6658405
+  },
+  "nodes": [
+    349294822,
+    349294826,
+    2159908713,
+    2159908712,
+    349294832,
+    349294835,
+    2159908716,
+    2159908718,
+    349294822
+  ],
+  "tags": {
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Grohmanova bouda",
+    "tourism": "guest_house",
+    "website": "http://www.grohmanovabouda.cz"
   }
 },
 {
@@ -1158,6 +3143,80 @@
 },
 {
   "type": "way",
+  "id": 32612737,
+  "center": {
+    "lat": 50.6710776,
+    "lon": 15.7269395
+  },
+  "nodes": [
+    366730618,
+    366730597,
+    366730599,
+    366730598,
+    13447692000,
+    13447691999,
+    366730605,
+    366730612,
+    366730613,
+    366730614,
+    366730615,
+    366730616,
+    366730617,
+    366730596,
+    13447691998,
+    13447691997,
+    13447691996,
+    13447691995,
+    13447691994,
+    13447691993,
+    13447691992,
+    13447691991,
+    13447691990,
+    13447691989,
+    366730618
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:flats": "7",
+    "building:levels": "5",
+    "building:ruian:type": "11",
+    "name": "Lidická bouda",
+    "ref:ruian:building": "20806272",
+    "source": "cuzk:ruian",
+    "start_date": "2025-08-27",
+    "tourism": "hotel",
+    "website": "https://www.lidickabouda.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 38568690,
+  "center": {
+    "lat": 50.6710942,
+    "lon": 15.6142221
+  },
+  "nodes": [
+    456814129,
+    456814123,
+    1243285425,
+    6552382545,
+    3386510345,
+    456814126,
+    456814129
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:levels": "3",
+    "building:ruian:type": "11",
+    "layer": "1",
+    "name": "bouda Šestidomí",
+    "ref:ruian:building": "20129149",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
   "id": 38723149,
   "center": {
     "lat": 50.7079466,
@@ -1194,6 +3253,103 @@
     "source": "cuzk:ruian",
     "toilets": "yes",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 44689790,
+  "center": {
+    "lat": 50.7440266,
+    "lon": 15.3640243
+  },
+  "nodes": [
+    567108686,
+    567108695,
+    567108694,
+    567108693,
+    567108692,
+    567108691,
+    567108690,
+    567108689,
+    567108687,
+    567108696,
+    567108686
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:levels": "1",
+    "building:ruian:type": "5",
+    "name": "chata Hvězda",
+    "name:de": "Rohanbaude",
+    "ref:ruian:building": "12051853",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 45272625,
+  "center": {
+    "lat": 50.7442556,
+    "lon": 15.3671137
+  },
+  "nodes": [
+    574964111,
+    574964114,
+    574964108,
+    574964112,
+    574964123,
+    574964129,
+    574964125,
+    574964127,
+    574964109,
+    574964110,
+    574964111
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Turnovská chata",
+    "source": "cuzk:km",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 46723508,
+  "center": {
+    "lat": 50.7343891,
+    "lon": 15.5662855
+  },
+  "nodes": [
+    597311447,
+    597311442,
+    597311450,
+    597311443,
+    597311444,
+    597311451,
+    597311446,
+    597311440,
+    597311447
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "civic",
+    "building:flats": "1",
+    "building:levels": "2",
+    "building:ruian:type": "15",
+    "check_date:opening_hours": "2023-05-16",
+    "cuisine": "regional",
+    "email": "recepce@chatamisecky.cz",
+    "name": "Chata Mísečky",
+    "opening_hours": "Mo-Su 11:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+420727978707",
+    "ref:ruian:building": "15033171",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://www.chatamisecky.cz/"
   }
 },
 {
@@ -1300,6 +3456,176 @@
 },
 {
   "type": "way",
+  "id": 46913396,
+  "center": {
+    "lat": 50.7408933,
+    "lon": 15.4922289
+  },
+  "nodes": [
+    598891389,
+    10198899702,
+    10198899701,
+    10198899700,
+    10198899699,
+    598891409,
+    598891410,
+    598891412,
+    598891389
+  ],
+  "tags": {
+    "building": "detached",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:material": "wood",
+    "building:ruian:type": "7",
+    "ref:ruian:building": "15012182",
+    "roof:levels": "2",
+    "roof:orientation": "along",
+    "roof:shape": "gabled",
+    "source": "cuzk:ruian",
+    "start_date": "2017-01-06",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 74863464,
+  "center": {
+    "lat": 50.7570530,
+    "lon": 15.6358175
+  },
+  "nodes": [
+    884205357,
+    11613054361,
+    11613054360,
+    11613054367,
+    11613054366,
+    884205368,
+    884205357
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "194",
+    "addr:country": "CZ",
+    "addr:housenumber": "194",
+    "addr:place": "Špindlerův Mlýn",
+    "addr:postcode": "54351",
+    "amenity": "restaurant",
+    "building": "hotel",
+    "building:levels": "1",
+    "building:ruian:type": "11",
+    "fax": "+420 499 523329",
+    "name": "Josefova bouda",
+    "name:de": "Josefsbaude",
+    "phone": "+420 499 523329",
+    "ref:ruian:addr": "2345862",
+    "ref:ruian:building": "2324750",
+    "roof:shape": "gabled",
+    "source": "cuzk:ruian",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "http://www.josefovabouda.cz/indexGE.html"
+  }
+},
+{
+  "type": "way",
+  "id": 75236886,
+  "center": {
+    "lat": 50.7638995,
+    "lon": 15.3657441
+  },
+  "nodes": [
+    888454845,
+    888454834,
+    888454842,
+    888454799,
+    888454845
+  ],
+  "tags": {
+    "building": "residential",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "name": "Chata Zvonice",
+    "ref:ruian:building": "12145726",
+    "source": "cuzk:ruian",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 88752209,
+  "center": {
+    "lat": 50.6326621,
+    "lon": 15.7562855
+  },
+  "nodes": [
+    6696602836,
+    6696602835,
+    1030141094,
+    1030142595,
+    1030142216,
+    1030140585,
+    1030139911,
+    1030141596,
+    1030141140,
+    1030142364,
+    1030142764,
+    1030142178,
+    1030140528,
+    1030139863,
+    1030141538,
+    6696602836
+  ],
+  "tags": {
+    "addr:city": "Janské Lázně",
+    "addr:housenumber": "125",
+    "addr:postcode": "542 25",
+    "addr:street": "Krkonošská",
+    "building": "residential",
+    "building:flats": "1",
+    "building:ruian:type": "3",
+    "email": "hoffmanova.bouda@gmail.com",
+    "guest_house": "guest_house",
+    "name": "Hoffmannova bouda",
+    "phone": "+420 777 946 434;+420 777 185 185",
+    "ref:ruian:building": "20142315",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://www.hoffmanovabouda.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 88752328,
+  "center": {
+    "lat": 50.6441592,
+    "lon": 15.7622834
+  },
+  "nodes": [
+    1030142126,
+    1030140809,
+    1030140148,
+    1030141787,
+    1030141262,
+    1030142532,
+    1030142162,
+    1030140475,
+    1030139832,
+    1030141499,
+    1030141071,
+    1030142320,
+    1030142126
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Zinneckerovy Boudy",
+    "source": "cuzk:km",
+    "tourism": "chalet",
+    "website": "https://zinneckerovy-boudy.cz/"
+  }
+},
+{
+  "type": "way",
   "id": 88752514,
   "center": {
     "lat": 50.6569832,
@@ -1328,6 +3654,71 @@
     "source": "cuzk:km",
     "tourism": "alpine_hut",
     "website": "https://pardubickeboudy.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 96093567,
+  "center": {
+    "lat": 50.7460809,
+    "lon": 15.8220807
+  },
+  "nodes": [
+    1113310722,
+    1113310291,
+    1113311038,
+    1113310493,
+    1113308725,
+    1113308226,
+    1113308989,
+    1113308420,
+    1113310052,
+    1113309491,
+    1113310302,
+    1113309763,
+    1113310722
+  ],
+  "tags": {
+    "building": "yes",
+    "capacity": "50",
+    "email": "pomezbouda@gmail.com",
+    "name": "Pomezní bouda",
+    "phone": "+420 604 268 327",
+    "ref:nap": "20312",
+    "source": "cuzk:km",
+    "tourism": "hotel",
+    "website": "https://www.pomezni-bouda.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 96093657,
+  "center": {
+    "lat": 50.7445594,
+    "lon": 15.8205941
+  },
+  "nodes": [
+    1113310742,
+    1113310297,
+    1113311047,
+    1113310495,
+    1113308731,
+    1113308232,
+    1113309010,
+    1113308432,
+    1113310057,
+    1113309502,
+    1113310318,
+    1113309765,
+    1113310742
+  ],
+  "tags": {
+    "building": "yes",
+    "check_date": "2026-02-17",
+    "name": "Bouda Malá Úpa",
+    "source": "cuzk:km",
+    "tourism": "guest_house",
+    "website": "https://boudamalaupa.cz/"
   }
 },
 {
@@ -1361,6 +3752,102 @@
     "ref:ruian:building": "15031781",
     "tourism": "alpine_hut",
     "website": "https://chata-eliska.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 101583564,
+  "center": {
+    "lat": 50.7582007,
+    "lon": 15.3666076
+  },
+  "nodes": [
+    1172892571,
+    1172892475,
+    1172892538,
+    1172892468,
+    1172892528,
+    1172892438,
+    1172892513,
+    1172892624,
+    1172892496,
+    1172892601,
+    1172892498,
+    1172892605,
+    1172892583,
+    1172892504,
+    1172892571
+  ],
+  "tags": {
+    "addr:city": "Kořenov",
+    "addr:housenumber": "11",
+    "addr:place": "Kořenov",
+    "addr:postcode": "46849",
+    "building": "house",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "name": "Chata v srdci Krkonoš",
+    "ref:ruian:building": "12144401",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 101624397,
+  "center": {
+    "lat": 50.7597239,
+    "lon": 15.3803019
+  },
+  "nodes": [
+    1173404936,
+    1173402546,
+    1173400175,
+    1173402947,
+    1173401194,
+    1173405820,
+    1173403852,
+    1173400226,
+    1173402228,
+    1173404936
+  ],
+  "tags": {
+    "building": "residential",
+    "building:levels": "2",
+    "building:ruian:type": "3",
+    "name": "Izolka",
+    "ref:ruian:building": "12145343",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 101624538,
+  "center": {
+    "lat": 50.7731357,
+    "lon": 15.3634656
+  },
+  "nodes": [
+    1173400290,
+    1173403066,
+    1173404848,
+    1173401151,
+    1173406036,
+    1173402134,
+    1173405954,
+    1173402092,
+    1173400290
+  ],
+  "tags": {
+    "building": "residential",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "name": "Horska Chata U Slunce",
+    "ref:ruian:building": "12147613",
+    "source": "cuzk:ruian",
+    "tourism": "hostel"
   }
 },
 {
@@ -1467,6 +3954,34 @@
 },
 {
   "type": "way",
+  "id": 137029464,
+  "center": {
+    "lat": 50.7127501,
+    "lon": 15.8343288
+  },
+  "nodes": [
+    1503193820,
+    1503193823,
+    1503193801,
+    1503193813,
+    1503193751,
+    1503193747,
+    1503193792,
+    1503193786,
+    1503193808,
+    1503193820
+  ],
+  "tags": {
+    "building": "yes",
+    "check_date": "2025-07-23",
+    "name": "Lysečinská bouda",
+    "source": "cuzk:km;uhul:ortofoto",
+    "tourism": "guest_house",
+    "website": "http://www.horsky-hotel-lysecinska-bouda-horni-marsov.rs-ubytovani.net"
+  }
+},
+{
+  "type": "way",
   "id": 140926266,
   "center": {
     "lat": 50.6968543,
@@ -1492,6 +4007,73 @@
     "ref:ruian:building": "15052150",
     "source": "cuzk:ruian",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 141174126,
+  "center": {
+    "lat": 50.6137366,
+    "lon": 15.7406228
+  },
+  "nodes": [
+    1545422011,
+    1545422030,
+    1545422031,
+    1545422044,
+    12823318650,
+    12823318649,
+    12823318648,
+    12823318647,
+    1545422045,
+    1545422013,
+    1545422011
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "house",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "name": "Trejbalova bouda",
+    "ref:ruian:building": "2370689",
+    "source": "cuzk:ruian",
+    "start_date": "1945-12-31"
+  }
+},
+{
+  "type": "way",
+  "id": 149315094,
+  "center": {
+    "lat": 50.7060742,
+    "lon": 15.4536834
+  },
+  "nodes": [
+    1623109033,
+    1623109035,
+    1623109011,
+    1623109008,
+    1623108992,
+    1623108983,
+    1623109010,
+    1623108994,
+    1623109029,
+    1623109031,
+    1623109026,
+    1623109028,
+    1623109042,
+    1623109044,
+    1623109033
+  ],
+  "tags": {
+    "beds": "24",
+    "building": "yes",
+    "internet_access": "wlan",
+    "name": "Chalupa Sport",
+    "rooms": "5",
+    "smoking": "outside",
+    "source": "cuzk:km",
+    "tourism": "chalet"
   }
 },
 {
@@ -1533,6 +4115,133 @@
 },
 {
   "type": "way",
+  "id": 174009063,
+  "center": {
+    "lat": 50.7106102,
+    "lon": 15.7495200
+  },
+  "nodes": [
+    656462355,
+    5341406022,
+    1847513261,
+    1847513265,
+    1847513266,
+    10304902609,
+    10304902612,
+    10304902611,
+    10304902610,
+    656462355
+  ],
+  "tags": {
+    "addr:city": "Pec pod Sněžkou",
+    "addr:conscriptionnumber": "181",
+    "addr:country": "CZ",
+    "addr:housenumber": "181",
+    "addr:place": "Velká Úpa",
+    "addr:postcode": "54221",
+    "building": "yes",
+    "building:levels": "3",
+    "contact:email": "horskafarma@email.cz",
+    "contact:facebook": "100070968215553",
+    "contact:phone": "+420 733 557 999",
+    "name": "Děčínská bouda",
+    "ref:ruian:addr": "21050147",
+    "tourism": "guest_house",
+    "wikidata": "Q63107484"
+  }
+},
+{
+  "type": "way",
+  "id": 176391103,
+  "center": {
+    "lat": 50.6981090,
+    "lon": 15.6465203
+  },
+  "nodes": [
+    9002853497,
+    9002853496,
+    9002853494,
+    1869246278,
+    9002853497
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:levels": "2",
+    "building:ruian:type": "11",
+    "email": "info@friesovyboudy.cz",
+    "internet_access": "no",
+    "name": "Ministerská",
+    "phone": "+420 499 434 135",
+    "ref:ruian:building": "20129572",
+    "smoking": "no",
+    "source": "cuzk:ruian",
+    "stars": "1",
+    "start_date": "1986-12-09",
+    "tourism": "chalet",
+    "website": "https://ministerska.cz/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 176391107,
+  "center": {
+    "lat": 50.6992940,
+    "lon": 15.6467628
+  },
+  "nodes": [
+    1869246324,
+    2232392734,
+    3959142717,
+    13418281672,
+    1869246307,
+    1869246322,
+    1869246324
+  ],
+  "tags": {
+    "building": "residential",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "name": "Java",
+    "ref:ruian:building": "20129581",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203630742,
+  "center": {
+    "lat": 50.6813707,
+    "lon": 15.7213025
+  },
+  "nodes": [
+    2136402467,
+    2136402472,
+    2136402477,
+    2136402482,
+    2136402490,
+    2136402485,
+    2136402487,
+    2136402480,
+    2136402470,
+    2136402475,
+    2136402467
+  ],
+  "tags": {
+    "addr:city": "Pec pod Sněžkou",
+    "addr:housenumber": "42",
+    "addr:place": "Pec pod Sněžkou",
+    "addr:postcode": "54221",
+    "building": "yes",
+    "name": "Čapkova chata",
+    "source": "cuzk:km",
+    "tourism": "guest_house",
+    "website": "https://chaty-krkonose.cz/"
+  }
+},
+{
+  "type": "way",
   "id": 203630744,
   "center": {
     "lat": 50.6713929,
@@ -1569,6 +4278,89 @@
 },
 {
   "type": "way",
+  "id": 203630761,
+  "center": {
+    "lat": 50.6773218,
+    "lon": 15.7238253
+  },
+  "nodes": [
+    2136401987,
+    2136401974,
+    2136401980,
+    2136401976,
+    2136401984,
+    2136401989,
+    2136401991,
+    2136402000,
+    2136402002,
+    2136402007,
+    2136401997,
+    2136401995,
+    2136401987
+  ],
+  "tags": {
+    "addr:city": "Pec pod Sněžkou",
+    "addr:housenumber": "28",
+    "addr:postcode": "54221",
+    "addr:street": "Zahrádky",
+    "amenity": "restaurant",
+    "breakfast": "yes",
+    "building": "yes",
+    "building:levels": "1",
+    "building:ruian:type": "8",
+    "email": "info@dimrovka.cz",
+    "internet_access": "yes",
+    "name": "horská chata Dimrovka",
+    "phone": "+420 776 220 924",
+    "ref:ruian:building": "20804768",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://www.dimrovka.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 203630769,
+  "center": {
+    "lat": 50.6759406,
+    "lon": 15.7235685
+  },
+  "nodes": [
+    11829910576,
+    11829910575,
+    2136401846,
+    11829910574,
+    2136401826,
+    11829910573,
+    11829910572,
+    11829910571,
+    11829910570,
+    11829910569,
+    11829910568,
+    2136401832,
+    11829910567,
+    2136401864,
+    6552471161,
+    2136401900,
+    11829910576
+  ],
+  "tags": {
+    "addr:city": "Pec pod Sněžkou",
+    "addr:housenumber": "30",
+    "addr:place": "Pec pod Sněžkou",
+    "addr:postcode": "54221",
+    "building": "residential",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "name": "chata Protěž",
+    "ref:ruian:building": "20804784",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house",
+    "website": "https://www.dominant-protez.cz/chataprotez"
+  }
+},
+{
+  "type": "way",
   "id": 203630802,
   "center": {
     "lat": 50.6841566,
@@ -1595,6 +4387,649 @@
     "ref:ruian:building": "20804911",
     "source": "cuzk:ruian",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 203741771,
+  "center": {
+    "lat": 50.7182462,
+    "lon": 15.5730697
+  },
+  "nodes": [
+    10943660668,
+    10943660667,
+    2137432581,
+    2137432573,
+    2137432583,
+    2137432571,
+    10943660666,
+    10943660665,
+    656502854,
+    2137432567,
+    10943660668
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "4",
+    "addr:country": "CZ",
+    "addr:housenumber": "4",
+    "addr:place": "Labská",
+    "addr:postcode": "54351",
+    "building": "residential",
+    "building:flats": "1",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "name": "Turistická chata Lajdáček",
+    "ref:ruian:addr": "2341701",
+    "ref:ruian:building": "2320592",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845657,
+  "center": {
+    "lat": 50.7367033,
+    "lon": 15.6077517
+  },
+  "nodes": [
+    4563121136,
+    4563121138,
+    4563121135,
+    2138561729,
+    2138561724,
+    2138561717,
+    2138561718,
+    2138561715,
+    2138561722,
+    2138561723,
+    2138561721,
+    2138561727,
+    4563121136
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49418084",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845664,
+  "center": {
+    "lat": 50.7374986,
+    "lon": 15.6073559
+  },
+  "nodes": [
+    4563121163,
+    4563121161,
+    2138561756,
+    2138561758,
+    2138561757,
+    4563121162,
+    4563121163
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49412906",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845666,
+  "center": {
+    "lat": 50.7376129,
+    "lon": 15.6072418
+  },
+  "nodes": [
+    4563121169,
+    4563121168,
+    4563121167,
+    2138561772,
+    2138561773,
+    4563121170,
+    4563121169
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "42790689",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845669,
+  "center": {
+    "lat": 50.7370157,
+    "lon": 15.6073487
+  },
+  "nodes": [
+    4563121148,
+    4563121147,
+    2138561740,
+    2138561739,
+    2138561741,
+    2138561742,
+    4563121148
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49418092",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845671,
+  "center": {
+    "lat": 50.7371180,
+    "lon": 15.6075823
+  },
+  "nodes": [
+    4563121153,
+    4563121152,
+    2138561746,
+    4563121150,
+    4563121151,
+    4563121149,
+    2138561744,
+    2138561748,
+    4563121153
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49412914",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845675,
+  "center": {
+    "lat": 50.7368557,
+    "lon": 15.6073827
+  },
+  "nodes": [
+    4563121142,
+    4563121140,
+    2138561732,
+    4563121143,
+    4563121144,
+    2138561734,
+    2138561733,
+    4563121141,
+    4563121142
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "42790719",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845680,
+  "center": {
+    "lat": 50.7376395,
+    "lon": 15.6070492
+  },
+  "nodes": [
+    2138561771,
+    2138561770,
+    2138561774,
+    4563121172,
+    4563121171,
+    2138561775,
+    2138561771
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "42790671",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845682,
+  "center": {
+    "lat": 50.7371524,
+    "lon": 15.6072955
+  },
+  "nodes": [
+    4563121157,
+    4563121154,
+    4563121156,
+    2138561750,
+    2138561749,
+    4563121155,
+    4563121157
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "42790727",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845689,
+  "center": {
+    "lat": 50.7377513,
+    "lon": 15.6069589
+  },
+  "nodes": [
+    4563121174,
+    4563121173,
+    4563121175,
+    2138561778,
+    2138561779,
+    2138561777,
+    4563121174
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49412892",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845704,
+  "center": {
+    "lat": 50.7369297,
+    "lon": 15.6076448
+  },
+  "nodes": [
+    2138561738,
+    4563121146,
+    4563121145,
+    2138561736,
+    2138561735,
+    2138561737,
+    2138561738
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "42790701",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845706,
+  "center": {
+    "lat": 50.7375707,
+    "lon": 15.6068788
+  },
+  "nodes": [
+    4563121164,
+    4563121166,
+    2138561763,
+    2138561767,
+    2138561761,
+    4563121165,
+    4563121164
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "49412884",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203845714,
+  "center": {
+    "lat": 50.7373906,
+    "lon": 15.6074176
+  },
+  "nodes": [
+    4563121159,
+    4563121160,
+    4563121158,
+    2138561752,
+    2138561754,
+    2138561753,
+    4563121159
+  ],
+  "tags": {
+    "building": "hotel",
+    "building:ruian:type": "11",
+    "ref:ruian:building": "42790697",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203848157,
+  "center": {
+    "lat": 50.7285503,
+    "lon": 15.6109845
+  },
+  "nodes": [
+    656503171,
+    4563120630,
+    4563120632,
+    4563120631,
+    2138614028,
+    2138614026,
+    2138613984,
+    2138614003,
+    656503171
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "17",
+    "addr:country": "CZ",
+    "addr:housenumber": "17",
+    "addr:place": "Špindlerův Mlýn",
+    "addr:postcode": "54351",
+    "building": "yes",
+    "building:flats": "24",
+    "building:levels": "5",
+    "building:ruian:type": "6",
+    "name": "Dalibor",
+    "ref:ruian:addr": "2344327",
+    "ref:ruian:building": "2323214",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203855023,
+  "center": {
+    "lat": 50.7251058,
+    "lon": 15.6082296
+  },
+  "nodes": [
+    656503114,
+    12075073559,
+    12075073558,
+    2138657614,
+    4563120061,
+    4563120062,
+    4563120065,
+    2138657608,
+    4563120066,
+    4563120039,
+    4563120043,
+    2138657599,
+    656503114
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "224",
+    "addr:country": "CZ",
+    "addr:housenumber": "224",
+    "addr:place": "Špindlerův Mlýn",
+    "addr:postcode": "54351",
+    "building": "hotel",
+    "building:levels": "3",
+    "building:ruian:type": "11",
+    "name": "Felicity Grand Apartments",
+    "ref:ruian:addr": "2346168",
+    "ref:ruian:building": "2325055",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 203913788,
+  "center": {
+    "lat": 50.7249729,
+    "lon": 15.6039003
+  },
+  "nodes": [
+    2139178475,
+    2139178479,
+    2139178497,
+    2139178493,
+    2139178487,
+    2139178485,
+    2139178483,
+    2139178481,
+    2139178449,
+    3221276280,
+    3221276277,
+    3221276276,
+    3221276278,
+    2139178451,
+    2139178394,
+    2139178392,
+    2139178447,
+    2139178445,
+    2139178475
+  ],
+  "tags": {
+    "addr:city": "Špidnlerův Mlýn",
+    "addr:housename": "Chata Kateřina",
+    "addr:housenumber": "35",
+    "addr:place": "Bedřichov",
+    "addr:postcode": "54351",
+    "building": "yes",
+    "building:levels": "3",
+    "building:ruian:type": "11",
+    "name": "Chata Kateřina",
+    "ref:ruian:building": "2319519",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 204109912,
+  "center": {
+    "lat": 50.6716294,
+    "lon": 15.5985550
+  },
+  "nodes": [
+    2141258636,
+    2141258642,
+    2141258648,
+    3959142592,
+    2141258641,
+    2141258644,
+    3959142594,
+    3959142593,
+    2141258645,
+    2141258633,
+    2141258635,
+    2141258630,
+    2141258632,
+    2141258627,
+    2141258626,
+    2141258623,
+    2141258621,
+    2141258631,
+    2141258636
+  ],
+  "tags": {
+    "building": "residential",
+    "building:levels": "2",
+    "building:ruian:type": "3",
+    "name": "Jawa",
+    "ref:ruian:building": "20130376",
+    "source": "cuzk:ruian",
+    "tourism": "chalet",
+    "website": "https://chatajawa.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 204127545,
+  "center": {
+    "lat": 50.6941705,
+    "lon": 15.7637045
+  },
+  "nodes": [
+    2141412156,
+    2141412155,
+    2141412153,
+    2141412151,
+    2141412152,
+    2141412148,
+    2141412150,
+    2141412147,
+    2141412149,
+    2141412166,
+    2141412156
+  ],
+  "tags": {
+    "building:ruian:type": "3",
+    "name": "Chata Silnička",
+    "ref:ruian:building": "20808267",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 206868679,
+  "center": {
+    "lat": 50.6706037,
+    "lon": 15.5514069
+  },
+  "nodes": [
+    12040471724,
+    12040471723,
+    2169155793,
+    2169155792,
+    2169155778,
+    2169155777,
+    2169155763,
+    2169155766,
+    2169155751,
+    2169155756,
+    12040471722,
+    12040471721,
+    2169155773,
+    2169155775,
+    2169155784,
+    2169155780,
+    12040471724
+  ],
+  "tags": {
+    "building": "civic",
+    "building:flats": "1",
+    "building:levels": "3",
+    "building:ruian:type": "15",
+    "name": "Hančova bouda",
+    "phone": "+420 481 582 632",
+    "ref:ruian:building": "14925575",
+    "rooms": "20",
+    "source": "cuzk:ruian",
+    "start_date": "1980-10-23",
+    "tourism": "hotel",
+    "website": "https://hancovabouda.cz/",
+    "wikidata": "Q56854669",
+    "wikipedia": "cs:Hančova bouda"
+  }
+},
+{
+  "type": "way",
+  "id": 206868680,
+  "center": {
+    "lat": 50.6674935,
+    "lon": 15.5614556
+  },
+  "nodes": [
+    2169155280,
+    2169155274,
+    2169155287,
+    2169155289,
+    2169155307,
+    2169155313,
+    2169155338,
+    2169155340,
+    2169155319,
+    2169155321,
+    2169155308,
+    2169155306,
+    2169155283,
+    2169155285,
+    2169155280
+  ],
+  "tags": {
+    "addr:city": "Benecko",
+    "addr:conscriptionnumber": "41",
+    "addr:country": "CZ",
+    "addr:housenumber": "41",
+    "addr:place": "Benecko",
+    "addr:postcode": "51237",
+    "beds": "50",
+    "building": "yes",
+    "email": "chatakarolinka@volny.cz",
+    "name": "Chata Karolínka",
+    "phone": "+420 724 921152",
+    "ref:ruian:addr": "15033848",
+    "source": "cuzk:km",
+    "tourism": "guest_house",
+    "website": "https://www.chatakarolinka.cz/"
+  }
+},
+{
+  "type": "way",
+  "id": 213845713,
+  "center": {
+    "lat": 50.7079756,
+    "lon": 15.7325091
+  },
+  "nodes": [
+    2234766393,
+    2234702576,
+    2234702579,
+    2234702583,
+    2234702584,
+    2234702588,
+    2234702590,
+    2234702589,
+    2234702593,
+    13416961054,
+    13416961053,
+    13416961048,
+    13416961052,
+    13416961051,
+    13416961055,
+    13416961049,
+    13416961050,
+    2234766393
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "124",
+    "addr:housenumber": "124",
+    "addr:place": "Pec pod Sněžkou",
+    "addr:postcode": "54221",
+    "contact:website": "https://www.boudamama.cz/",
+    "name": "Bouda Máma",
+    "ref:ruian:addr": "21046671",
+    "source": "bing;cuzk:km",
+    "stars": "4",
+    "tourism": "hotel"
   }
 },
 {
@@ -1662,6 +5097,29 @@
 },
 {
   "type": "way",
+  "id": 224943654,
+  "center": {
+    "lat": 50.6324558,
+    "lon": 15.3034770
+  },
+  "nodes": [
+    2337855643,
+    2337855641,
+    2337855639,
+    2337855642,
+    2337855643
+  ],
+  "tags": {
+    "building": "yes",
+    "building:ruian:type": "8",
+    "name": "sruby Podspálov",
+    "ref:ruian:building": "44764073",
+    "source": "cuzk:ruian",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
   "id": 225909476,
   "center": {
     "lat": 50.7029920,
@@ -1696,6 +5154,143 @@
 },
 {
   "type": "way",
+  "id": 228946440,
+  "center": {
+    "lat": 50.7166807,
+    "lon": 15.5720585
+  },
+  "nodes": [
+    2375946725,
+    2375946731,
+    2375946730,
+    2375946733,
+    2375946720,
+    656502852,
+    2375946715,
+    2375946709,
+    2375946711,
+    2375946699,
+    2375946718,
+    2375946721,
+    2375946725
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "1",
+    "addr:country": "CZ",
+    "addr:housenumber": "1",
+    "addr:place": "Labská",
+    "addr:postcode": "54351",
+    "building": "hotel",
+    "building:levels": "1",
+    "building:ruian:type": "11",
+    "name": "Sporthotel Švýcarská bouda",
+    "ref:ruian:addr": "2341671",
+    "ref:ruian:building": "2320568",
+    "source": "cuzk:ruian",
+    "stars": "3",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 228946442,
+  "center": {
+    "lat": 50.7188023,
+    "lon": 15.5746403
+  },
+  "nodes": [
+    2375946927,
+    2375946944,
+    2375946936,
+    2375946959,
+    656502873,
+    2375946942,
+    2375946929,
+    2375946915,
+    2375946913,
+    2375946911,
+    2375946912,
+    2375946907,
+    2375946927
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "7",
+    "addr:country": "CZ",
+    "addr:housenumber": "7",
+    "addr:place": "Labská",
+    "addr:postcode": "54351",
+    "building": "residential",
+    "building:levels": "1",
+    "building:ruian:type": "3",
+    "name": "chata Jasanka",
+    "ref:ruian:building": "2320622",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 228946509,
+  "center": {
+    "lat": 50.7157280,
+    "lon": 15.5808810
+  },
+  "nodes": [
+    2375946537,
+    4703955289,
+    2375946544,
+    2375946549,
+    2375946542,
+    2375946537
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "22",
+    "addr:country": "CZ",
+    "addr:housenumber": "22",
+    "addr:place": "Labská",
+    "addr:postcode": "54351",
+    "building": "yes",
+    "name": "Chata",
+    "ref:ruian:addr": "2341875",
+    "source": "cuzk:km",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 228946520,
+  "center": {
+    "lat": 50.7177772,
+    "lon": 15.5747583
+  },
+  "nodes": [
+    2375946801,
+    2375946803,
+    2375946797,
+    2375946795,
+    2375946799,
+    656502861,
+    2375946801
+  ],
+  "tags": {
+    "addr:conscriptionnumber": "13",
+    "addr:country": "CZ",
+    "addr:housenumber": "13",
+    "addr:place": "Labská",
+    "addr:postcode": "54351",
+    "building": "house",
+    "building:flats": "2",
+    "building:levels": "1",
+    "building:ruian:type": "7",
+    "name": "Krausovy boudy",
+    "ref:ruian:addr": "2341794",
+    "ref:ruian:building": "2320681",
+    "source": "cuzk:ruian",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
   "id": 252520174,
   "center": {
     "lat": 50.7474230,
@@ -1725,6 +5320,41 @@
     "shower": "yes",
     "source": "cuzk:km",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 252520308,
+  "center": {
+    "lat": 50.7353542,
+    "lon": 15.4821330
+  },
+  "nodes": [
+    2585514641,
+    4723606752,
+    12960546195,
+    12960546196,
+    12960546191,
+    2585514645,
+    2585514639,
+    2585514638,
+    2585514641
+  ],
+  "tags": {
+    "bar": "yes",
+    "building": "yes",
+    "building:flats": "1",
+    "building:levels": "2",
+    "building:ruian:type": "3",
+    "email": "chatapodlipami@email.cz",
+    "name": "Chata pod lipami",
+    "phone": "+420 736 736 444",
+    "ref:ruian:building": "15012662",
+    "roof:levels": "1",
+    "source": "cuzk:ruian",
+    "swimming_pool": "outdoor",
+    "tourism": "guest_house",
+    "website": "https://www.chatapodlipami.cz/"
   }
 },
 {
@@ -1815,6 +5445,32 @@
 },
 {
   "type": "way",
+  "id": 317801792,
+  "center": {
+    "lat": 50.6526006,
+    "lon": 15.5819152
+  },
+  "nodes": [
+    3241058507,
+    2167053277,
+    3241058508,
+    3241058503,
+    3241058505,
+    3241058502,
+    3241058507
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "building:ruian:type": "3",
+    "name": "Möhwaldova bouda",
+    "ref:ruian:building": "15042855",
+    "source": "cuzk:ruian",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
   "id": 893979789,
   "center": {
     "lat": 50.6699409,
@@ -1856,6 +5512,63 @@
     "source": "cuzk:ruian",
     "start_date": "2014-02-26",
     "tourism": "alpine_hut"
+  }
+},
+{
+  "type": "way",
+  "id": 1307331186,
+  "center": {
+    "lat": 50.7372717,
+    "lon": 15.6068103
+  },
+  "nodes": [
+    12106861602,
+    12106861601,
+    12106827300,
+    12106827299,
+    12106861602
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1307331187,
+  "center": {
+    "lat": 50.7373691,
+    "lon": 15.6067978
+  },
+  "nodes": [
+    12106861606,
+    12106861605,
+    12106861604,
+    12106861603,
+    12106861606
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
+  }
+},
+{
+  "type": "way",
+  "id": 1307331188,
+  "center": {
+    "lat": 50.7374779,
+    "lon": 15.6068039
+  },
+  "nodes": [
+    12106861610,
+    12106861609,
+    12106861608,
+    12106861607,
+    12106861610
+  ],
+  "tags": {
+    "building": "yes",
+    "tourism": "chalet"
   }
 },
 {

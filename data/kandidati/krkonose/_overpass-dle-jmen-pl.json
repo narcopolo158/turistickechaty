@@ -1,0 +1,187 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-22T07:15:21Z",
+    "timestamp_areas_base": "2026-08-21T13:11:56Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1965043685,
+  "lat": 50.8301236,
+  "lon": 15.5555441,
+  "tags": {
+    "addr:city": "Piechowice",
+    "addr:postcode": "58-573",
+    "contact:phone": "+48 781 024 159",
+    "contact:website": "http://www.kochanowka.wszklarskiej.net",
+    "ele": "510",
+    "name": "Kochanówka",
+    "operator": "PTTK",
+    "tourism": "alpine_hut",
+    "wikidata": "Q9334374",
+    "wikipedia": "pl:Schronisko PTTK „Kochanówka”"
+  }
+},
+{
+  "type": "node",
+  "id": 3022211015,
+  "lat": 50.8300650,
+  "lon": 15.5555071,
+  "tags": {
+    "amenity": "bar",
+    "name": "Kochanówka"
+  }
+},
+{
+  "type": "node",
+  "id": 5042749422,
+  "lat": 50.7394191,
+  "lon": 15.7290536,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "polish",
+    "indoor_seating": "yes",
+    "name": "Dom Śląski",
+    "name:de": "Schlesierhaus",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 19921121,
+  "center": {
+    "lat": 50.7395071,
+    "lon": 15.7289735
+  },
+  "nodes": [
+    209121091,
+    1847513612,
+    1847513620,
+    5038862334,
+    1847513632,
+    209121124,
+    5038862339,
+    1847513636,
+    1847513630,
+    1847513624,
+    209121113,
+    4072600172,
+    5038862335,
+    4072600169,
+    209121102,
+    5038862336,
+    10140621537,
+    209121091
+  ],
+  "tags": {
+    "addr:city": "Karpacz",
+    "addr:city:simc": "0936032",
+    "addr:housenumber": "20",
+    "addr:postcode": "58-540",
+    "addr:street": "Na Śnieżkę",
+    "addr:street:sym_ul": "36115",
+    "alt_name": "Śląski Dom",
+    "beds": "57",
+    "building": "yes",
+    "building:levels": "3",
+    "contact:email": "info@domslaski.pl",
+    "contact:phone": "+48 75 753 52 90",
+    "contact:website": "https://domslaski.pl",
+    "ele": "1400",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Dom Śląski",
+    "name:cs": "Slezský Dům",
+    "name:de": "Schlesisches Haus",
+    "name:pl": "Dom Śląski",
+    "old_name:de": "Schlesierhaus",
+    "old_name:pl": "Pod Śnieżką",
+    "operator": "Karol Warecki",
+    "phone": "+48 75 612 67 00",
+    "roof:colour": "gray",
+    "roof:levels": "1",
+    "roof:shape": "hipped",
+    "rooms": "14",
+    "source:addr": "karpacz.e-mapa.net",
+    "start_date": "1923",
+    "tourism": "alpine_hut",
+    "website": "https://domslaski.pl/",
+    "wikidata": "Q9334361",
+    "wikipedia": "pl:Schronisko Górskie „Dom Śląski”",
+    "year_of_construction": "1921..1922"
+  }
+},
+{
+  "type": "way",
+  "id": 128601808,
+  "center": {
+    "lat": 50.7507892,
+    "lon": 15.7083696
+  },
+  "nodes": [
+    1420714517,
+    1420714515,
+    11411806439,
+    1420714516,
+    11411806438,
+    3737226883,
+    4121723010,
+    11411806437,
+    11411806436,
+    4121723009,
+    11411806435,
+    11411806434,
+    11411806433,
+    11411806432,
+    1420714512,
+    1420714513,
+    11411806431,
+    1420714511,
+    4121722997,
+    4121722998,
+    1420714508,
+    1420714509,
+    4121723003,
+    4121722995,
+    4121722996,
+    1420714510,
+    4121723008,
+    1420714514,
+    11411806430,
+    1420714517
+  ],
+  "tags": {
+    "addr:city": "Karpacz",
+    "addr:city:simc": "0936032",
+    "addr:housenumber": "18",
+    "addr:postcode": "58-540",
+    "addr:street": "Na Śnieżkę",
+    "addr:street:sym_ul": "36115",
+    "building": "yes",
+    "building:levels": "3",
+    "ele": "1258",
+    "heritage": "2",
+    "heritage:operator": "nid",
+    "heritage:website": "https://zabytek.pl/pl/obiekty/karpacz-schronisko-strzecha-akademicka",
+    "historic": "yes",
+    "image": "https://pl.wikipedia.org/wiki/Schronisko_PTTK_%E2%80%9EStrzecha_Akademicka%E2%80%9D#/media/File:Strzecha_Akademicka.JPG",
+    "name": "Strzecha Akademicka",
+    "name:de": "Hampelbaude",
+    "name:pl": "Schronisko PTTK \"Strzecha Akademicka\"",
+    "operator": "PTTK",
+    "owner": "Polskie Towarzystwo Turystyczno-Krajoznawcze",
+    "source:addr": "karpacz.e-mapa.net",
+    "source:building": "BDOT",
+    "tourism": "alpine_hut",
+    "website": "http://www.strzechaakademicka.pl",
+    "wikidata": "Q9334387",
+    "wikipedia": "pl:Schronisko PTTK „Strzecha Akademicka”"
+  }
+}
+
+  ]
+}

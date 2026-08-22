@@ -1,0 +1,33 @@
+# Chata Karolínka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-22)
+# Zdroj: https://www.openstreetmap.org/way/206868680 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Chata Karolínka
+slug: chata-karolinka
+zeme: cz
+oblast: krkonose
+lat: 50.6674935
+lng: 15.5614556
+obec: Benecko
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/206868680 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+kontakty:
+  telefon: +420 724 921152
+  email: chatakarolinka@volny.cz
+  web: https://www.chatakarolinka.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/206868680 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-22) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-29T05:06:43Z",
-    "timestamp_areas_base": "2026-07-28T13:02:21Z",
+    "timestamp_osm_base": "2026-08-22T07:15:21Z",
+    "timestamp_areas_base": "2026-08-21T18:21:35Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -108,16 +108,22 @@
     9121147591
   ],
   "tags": {
+    "access": "yes",
     "building": "yes",
-    "check_date": "2023-07-25",
+    "check_date": "2026-08-10",
+    "check_date:opening_hours": "2026-08-10",
+    "check_date:wheelchair": "2026-08-10",
     "construction": "tower",
+    "fee": "yes",
     "image": "https://photos.app.goo.gl/NGCG68Z1u8cR6Vmt6",
     "man_made": "tower",
     "note:pl": "otwarcie wieży obserwacyjnej planowane na rok 2022",
+    "opening_hours:signed": "no",
     "tower:construction": "freestanding",
     "tower:type": "observation",
     "url": "https://youtu.be/DtsMPbhVxeU?si=As9QwFXOxDL7MAN1",
-    "url:0": "https://youtu.be/NwapDzCqFh4?si=YFo_BobSY0zxPkxQ"
+    "url:0": "https://youtu.be/NwapDzCqFh4?si=YFo_BobSY0zxPkxQ",
+    "wheelchair": "no"
   }
 },
 {

@@ -1,0 +1,35 @@
+# Pension Jilemnická bouda — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-22)
+# Zdroj: https://www.openstreetmap.org/way/27595201 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Pension Jilemnická bouda
+slug: pension-jilemnicka-bouda
+zeme: cz
+oblast: krkonose
+lat: 50.735818
+lng: 15.5687475
+obec: Vítkovice
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/27595201 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+kontakty:
+  telefon: +420 605 260473
+  email: recepce@jilemnickabouda.cz
+  web: https://www.jilemnickabouda.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/27595201 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-22) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 09:00-21:00

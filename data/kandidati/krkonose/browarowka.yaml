@@ -1,0 +1,33 @@
+# Browarówka — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-22)
+# Zdroj: https://www.openstreetmap.org/node/10866724781 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Browarówka
+slug: browarowka
+zeme: pl
+oblast: krkonose
+lat: 50.8642724
+lng: 15.788871
+obec: Łomnica
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/10866724781 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+kontakty:
+  telefon: +48 695 100 052
+  email: domki@xn--browarwka-b7a.pl
+  web: https://www.browarowka.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/10866724781 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-22) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).

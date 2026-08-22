@@ -1,0 +1,35 @@
+# Schronisko Wysoki Kamień — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-22)
+# Zdroj: https://www.openstreetmap.org/way/518439272 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Schronisko Wysoki Kamień
+slug: schronisko-wysoki-kamien
+zeme: pl
+oblast: krkonose
+lat: 50.8456719
+lng: 15.4917689
+vyska: 1058
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/518439272 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+kontakty:
+  email: golbam@wp.pl
+  web: http://www.wysokikamien.com.pl
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/518439272 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-22) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Otvírací doba dle OSM (surový formát, neověřeno): Apr-Sep Mo-Su 10:00-18:00;
+  Oct-Mar Mo-Su 10:00-16:00

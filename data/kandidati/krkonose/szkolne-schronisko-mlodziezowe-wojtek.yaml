@@ -1,0 +1,35 @@
+# Szkolne Schronisko Młodzieżowe "Wojtek" — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-22)
+# Zdroj: https://www.openstreetmap.org/way/234802776 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Szkolne Schronisko Młodzieżowe "Wojtek"
+slug: szkolne-schronisko-mlodziezowe-wojtek
+zeme: pl
+oblast: krkonose
+lat: 50.8432818
+lng: 15.5431967
+obec: Szklarska Poręba
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/way/234802776 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+kontakty:
+  telefon: +48 696 046 824
+  email: magdalada@poczta.onet.pl
+  web: https://schronisko-wojtek.pl/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/way/234802776 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-22) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
+
+  Provozovatel dle OSM: PTSM

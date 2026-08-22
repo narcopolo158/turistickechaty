@@ -1,0 +1,31 @@
+# Mlynářka, ubytování v krkonoších — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-22)
+# Zdroj: https://www.openstreetmap.org/node/656504202 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+# Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
+# (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
+# provozu OSM nenese, proto tu není. Nic nedomýšlet!
+
+nazev: Mlynářka, ubytování v krkonoších
+slug: mlynarka-ubytovani-v-krkonosich
+zeme: cz
+oblast: krkonose
+lat: 50.6355212
+lng: 15.7114745
+overeniLokace:
+  source: OpenStreetMap https://www.openstreetmap.org/node/656504202 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+kontakty:
+  telefon: +420 722 249 278
+  web: https://mlynarka-krkonose.cz/
+overeniProvoz:
+  source: OpenStreetMap https://www.openstreetmap.org/node/656504202 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
+  verified: false
+  checked: 2026-08-22
+interniPoznamky: >-
+  KANDIDÁT z OSM (DATA-01, stav dat 2026-08-22) — na web povýšit do data/chaty/
+  až po křížovém ověření (DATA-03).
+
+  Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
+  wilderness_hut = útulna).
