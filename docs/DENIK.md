@@ -29,6 +29,101 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-22 — denní session: DATA-05, ukotvená dohledávka podle jmen je změřená
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál blokovaná — dokladová část je
+  vyčerpaná od 2. 8., zbývají čistě telefonní otázky (KRNAP, PTTK Jelenia
+  Góra, Luční bouda, Petrova bouda) a bezobslužný běh je nemá jak položit.
+  Beru tedy **DATA-05**, a z její fronty tu položku, která nepotřebuje ani
+  internetovou dohledávku, ani detaily razítek: **hypotézu o jmenné vrstvě
+  dotazu**, otevřenou 19. 8. u Chaty Paprsek a od té doby dvakrát odloženou.
+  (Zbytek fronty — beskydská sedmička a jména z koše G — čeká na re-export
+  DATA-37, respektive na detaily razítek, tedy na věci mimo sandbox.)
+- **Hypotéza potvrzena a je z ní kontrola, ne jednorázové měření.**
+  `overpassDotazDleJmen` se ptá `["name"~"^(A|B|C)$",i]` — na **přesnou
+  rovnost celého jména**. Zkrácení na jádro (`jmenaZKatalogu` odřízne
+  „Chata", „Hotel", „Schronisko PTTK"…) pokryje jen to slovo navíc, které
+  stojí na **začátku katalogového** jména. Nepokryje: vsuvku uvnitř,
+  předsazené slovo v OSM, příponu za jménem ani uvozovky.
+- **Změřeno nad celým repem, bez jediného dotazu do sítě** (nová
+  `zkontrolujKotvuJmen` v `scripts/kontrola/exporty.ts` čte jen exporty,
+  které v repu leží): ze **225 katalogových objektů** v oblastech s exportem
+  je **109 pod přesným jménem**, **36 (16 %) jen pod delším** — na ta kotva
+  nedosáhne — a 80 v exportech není vůbec (to je jiná věc, tu měří
+  `katalog-pokryti`).
+- **Podpis je čitelný a má tři jasné třídy:**
+  - **Vsuvka „PTTK" v polském jméně** — „Schronisko Klimczok" × OSM
+    „Schronisko **PTTK** Klimczok"; stejně Szyndzielnia, na Błatniej,
+    na Przegibku, na Wielkiej Raczy, Markowe Szczawiny, Przysłop, Morskie Oko
+    a Orlica. **Polská schroniska jsou skoro třetina všech nálezů** — u nich
+    kotva selhává systematicky, ne náhodně.
+  - **Předsazené slovo v OSM** — „Špindlerova bouda" × „**Hotel** Špindlerova
+    bouda", „Fichtelberghaus" × „Hotel Fichtelberghaus", „Dvoračky" ×
+    „Chata Dvoračky", „Samotnia" × „Schronisko Samotnia".
+  - **Přípona a přestavba jména** — „Chata Javorový" × „Chata Javorový
+    **vrch**", „Chata Kotař" × „Horská chata **na** Kotáři", „Chata Slavíč" ×
+    „**Kolářova** chata Slavíč".
+- **Měří se jen směr „OSM říká víc než katalog" — a je to záměr.** Opačný
+  směr jsem zkusil a přidal **23 dalších řádků skoro samého šumu**: v OSM leží
+  objekty pojmenované holým „Chata", „Bacówka" nebo „Hotel" a ty se jako
+  podřetězec chytí na každé druhé katalogové jméno. Užší podpis, který se dá
+  přečíst celý, je pro rozhodnutí cennější než úplný, ve kterém se skutečné
+  případy utopí — týž důvod jako 21. 8. u oddělené kategorie `nespustena`.
+- **Že těch 36 objektů v repu MÁME, není námitka.** Přinesl je hlavní hutový
+  dotaz, takže záchranná síť tentokrát potřeba nebyla. Podstatné je, že
+  u objektu, který hlavní dotaz **mine** (civilní tag, jméno bez chatového
+  slova), je jmenná dohledávka **jediná zbylá vrstva** — a přesně to je případ
+  **Chaty Paprsek** z 19. 8. Kontrola tedy neměří škodu, měří **oko sítě**.
+- **Upozornění NEROZHODUJE** o návratovém kódu, stejně jako `uzky-dotaz`
+  z 18. 8. a chybějící vrstva z 21. 8.: není to vada souboru, ale podklad pro
+  rozhodnutí o dotazu.
+- **5 nových testů** v `tests/int/kontrola-exporty.int.spec.ts` (20 celkem,
+  vše zelené): že nad skutečným repem sednou všechny tři doložené třídy, že se
+  přesná shoda nehlásí, že holé „Chata" v OSM nálezem není, a — nad dočasným
+  kořenem — že bez exportů i bez katalogu kontrola mlčí, místo aby spadla.
+  `npm run kontrola` celé zelené, `tsc --noEmit` čistý, lint čistý.
+- **Do `data/` se ani dnes nesáhlo** — změněny jen `scripts/kontrola/exporty.ts`,
+  README kontrol, test a backlog.
+
+**Příště:** fronta DATA-05 dál — **beskydská sedmička** (patří k DATA-37,
+re-export) a **jména z koše G**, která čekají na detaily razítek; obojí je
+mimo dosah bezobslužného běhu. Nezávisle na tom je teď doložené, že jmenná
+vrstva má úzké oko — pokud Michal uvolnění kotvy schválí, je to jednořádková
+změna v `overpassDotazDleJmen` plus re-export.
+
+**Návrh změny (do deníku, ne do plan.md; do dotazu jsem nesáhl):**
+**uvolnit kotvu** z `~"^(A|B|C)$",i` na `~"(A|B|C)",i`. Síto podle tagů
+(`tourism` / `amenity`) v dotazu **zůstává**, takže návrat falešných nálezů
+z 30. 7. (deset informačních tabulí „Jizerka", dvě autobusové zastávky,
+katastrální území) nehrozí — ty tehdy vyloučilo právě to síto, ne kotva.
+Riziko je jinde a je poctivé ho pojmenovat: **krátká jádra** („Ostrý",
+„Vrátna") se jako podřetězec chytí i na cizí objekt uvnitř síta, takže by
+triáž dostala pár řádků navíc k odmítnutí. Za mě je to výhodná výměna — pár
+odmítnutí navíc proti systematické slepotě u polských schronisek — ale
+vyžádá si to **re-export všech oblastí**, a to je rozhodnutí Michalovo.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
+
+**Otázky pro Michala:**
+- **Uvolnit kotvu ve jmenné dohledávce?** Viz návrh výš. Je to jednořádková
+  změna, ale platí na všechny oblasti a vyžádá si re-export.
+- **Pustíš DATA-01 nad Krkonošemi?** Ptám se pošesté a je to pořád jediná
+  otázka, která se dá zodpovědět jedním kliknutím. Visí na ní minimálně čtyři
+  doložené chybějící objekty pilotní oblasti (Pardubické, Hříběcí, Jilemnická
+  bouda, Bouda Svornost) i celá jmenná vrstva.
+- **Čtyři založené, ale nespuštěné oblasti** (Oravská Magura, Západné Tatry,
+  Slovenský raj, Bieszczady) — pustit teď, nebo počkat na dojetí triáže?
+- Trvá z 20. 8.: **posunout východní hranu okna Jizerek na ~15,53?**;
+  **Českosaské Švýcarsko** — vlastní oblast, nebo zrušit složku?;
+  **Amselfallbaude** — zakládat jako profil mimo provoz?; **Bouda Svornost**
+  je dnes v provozu?; **Hančova bouda** — zakládat?; **Chata Paprsek** —
+  re-export, nebo ruční kandidát?; **Liczyrzepa** a **Pardubické boudy** —
+  zapsat jako vyřazené?; **Hříběcí bouda** v provozu?; **Góry Stołowe** —
+  založit oblast?; **podorlické solitéry** — přesahová, nebo samostatná oblast?
+
 ## 2026-08-21 — denní session: DATA-05, chybějící vrstva dotazu je nově měřená kontrolou
 
 **Hotovo:**

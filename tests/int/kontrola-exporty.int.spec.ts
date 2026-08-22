@@ -21,6 +21,7 @@ import { describe, expect, it } from 'vitest'
 import {
   najdiExporty,
   zkontrolujExport,
+  zkontrolujKotvuJmen,
   zkontrolujSirkuDotazu,
   zkontrolujVrstvy,
 } from '../../scripts/kontrola/exporty'
@@ -209,6 +210,51 @@ describe('zkontrolujVrstvy — vrstva dotazu, která vůbec neproběhla', () => 
       'dle-jmen',
       'rozhledny',
     ])
+  })
+})
+
+describe('zkontrolujKotvuJmen — jméno, na které ukotvená dohledávka nedosáhne', () => {
+  const KATALOG = join(process.cwd(), 'data', 'externi', 'katalog-cr-sk-2026', 'katalog.json')
+
+  it('nad skutečným repem najde doložené případy vsuvky a předsazeného slova', () => {
+    const { mine, objektu, presne } = zkontrolujKotvuJmen()
+    // Nálezů je nezanedbatelná menšina, ne půl korpusu — podpis se má dát přečíst.
+    expect(objektu).toBeGreaterThan(100)
+    expect(mine.length).toBeGreaterThan(0)
+    expect(mine.length).toBeLessThan(objektu - presne)
+
+    const dvojice = new Map(mine.map((m) => [m.katalog, m.osm]))
+    // Vsuvka „PTTK" uvnitř polského jména — kotva `^…$` na ni nedosáhne.
+    expect(dvojice.get('Schronisko Klimczok')).toContain('Schronisko PTTK Klimczok')
+    // Předsazené „Hotel" u českého jména, které katalog vede bez něj.
+    expect(dvojice.get('Špindlerova bouda')).toContain('Hotel Špindlerova bouda')
+    // Přípona za jménem — jádro „Javorový" v OSM pokračuje slovem „vrch".
+    expect(dvojice.get('Chata Javorový')).toContain('Chata Javorový vrch')
+  })
+
+  it('přesná shoda se nehlásí, i když je jméno v exportu vícekrát', () => {
+    const { mine } = zkontrolujKotvuJmen()
+    // Luční bouda je v OSM pojmenovaná stejně jako v katalogu → do výpisu nepatří.
+    expect(mine.map((m) => m.katalog)).not.toContain('Luční bouda')
+  })
+
+  it('měří se jen směr „OSM říká víc" — holé „Chata" v OSM není nález', () => {
+    // Opačný směr by holé obecné jméno spároval s každým katalogovým jménem,
+    // které to slovo obsahuje; takový výpis se nedá číst a proto se neměří.
+    const { mine } = zkontrolujKotvuJmen()
+    expect(mine.every((m) => m.osm.every((o) => o.trim().toLowerCase() !== 'chata'))).toBe(true)
+  })
+
+  it('bez exportů oblasti se neměří nic — chybějící vrstvu hlásí jiná kontrola', () => {
+    const koren = mkdtempSync(join(tmpdir(), 'kotva-'))
+    expect(zkontrolujKotvuJmen(koren, KATALOG).mine).toEqual([])
+    expect(zkontrolujKotvuJmen(koren, KATALOG).objektu).toBe(0)
+  })
+
+  it('bez katalogu kontrola mlčí, místo aby spadla', () => {
+    const koren = mkdtempSync(join(tmpdir(), 'kotva-'))
+    const vysledek = zkontrolujKotvuJmen(koren, join(koren, 'neexistuje.json'))
+    expect(vysledek).toEqual({ mine: [], objektu: 0, presne: 0 })
   })
 })
 

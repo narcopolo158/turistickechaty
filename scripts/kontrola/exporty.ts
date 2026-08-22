@@ -158,6 +158,137 @@ export function zkontrolujVrstvy(koren: string = KOREN, katalog: string = KATALO
   return chybi
 }
 
+/**
+ * ČTVRTÁ VĚC, KTEROU TENHLE SOUBOR HLÍDÁ (22. 8. 2026): jméno, na které
+ * dohledávka podle katalogu **nedosáhne, protože je ukotvená**.
+ *
+ * `overpassDotazDleJmen` se ptá `["name"~"^(A|B|C)$",i]` — tedy na PŘESNOU
+ * rovnost celého jména. Katalog ale píše jména jinak než OSM: katalog vede
+ * „Špindlerova bouda", OSM „Hotel Špindlerova bouda"; katalog „Schronisko
+ * Klimczok", OSM „Schronisko PTTK Klimczok"; katalog „Chata Javorový",
+ * OSM „Chata Javorový vrch". Zkrácení na jádro (`jmenaZKatalogu` odřízne
+ * „Chata", „Hotel", „Schronisko PTTK"…) pokryje jen ten případ, kdy slovo
+ * navíc stojí na ZAČÁTKU katalogového jména — ne uvnitř a ne v OSM.
+ *
+ * Hypotéza vznikla 19. 8. 2026 nad **Chatou Paprsek** (katalog HUT-0055,
+ * jistota A): v OSM je nejspíš „Horský hotel Paprsek", takže kotva ji minula.
+ * Tady se z hypotézy stalo číslo — a měří se **nad exporty, které v repu
+ * leží**, bez jediného dotazu do sítě: pro každý katalogový objekt oblasti
+ * se hledá jméno mezi jmény ze VŠECH vrstev exportu té oblasti. Když se
+ * nenajde přesně, ale OSM jméno ho OBSAHUJE, je to objekt, na který kotva
+ * nedosáhne.
+ *
+ * SMĚR JE JEN JEDEN A JE TO ZÁMĚR. Měří se výhradně „OSM jméno obsahuje to
+ * katalogové", tedy případ, kdy OSM říká víc než katalog — přesně ten, který
+ * kotva neumí. Opačný směr (katalogové jméno obsahuje to z OSM) zkoušen byl
+ * a přidal 23 dalších řádků, jenže skoro samý šum: v OSM leží objekty
+ * pojmenované holým „Chata", „Bacówka" nebo „Hotel" a ty se jako podřetězec
+ * chytí na každé druhé katalogové jméno. Uvnitř katalogového jména navíc
+ * obecné slovo odřízne už zkrácení na jádro. Užší podpis, který se dá
+ * přečíst celý, je pro rozhodnutí cennější než úplný, ve kterém se ty
+ * skutečné případy utopí.
+ *
+ * PROČ TO VADÍ, i když ty objekty v repu jsou: dohledávka podle jmen je
+ * ZÁCHRANNÁ SÍŤ pro objekty, které hlavní hutový dotaz mine. Tyhle se do
+ * exportu dostaly hlavním dotazem — síť tedy potřeba nebyla. Jenže
+ * u objektu, který hlavní dotaz MINE (civilní tag, jméno bez chatového
+ * slova), je síť jediná vrstva, která zbývá. A právě u ní je změřené, že má
+ * oko tak úzké, že jím projde nezanedbatelná část korpusu.
+ *
+ * NEROZHODUJE (nezvyšuje návratový kód): není to vada souboru. Je to podklad
+ * pro rozhodnutí o dotazu (návrh: kotvu uvolnit), a to rozhodnutí patří
+ * Michalovi, protože si vyžádá re-export všech oblastí.
+ */
+export type KotvaMineJmeno = {
+  oblast: string
+  katalog: string
+  osm: string[]
+}
+
+/** Bez diakritiky, malá písmena, bez uvozovek, jednotné mezery. */
+const normJmeno = (s: string) =>
+  s
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/["„“”'']/gu, '')
+    .replace(/\s+/gu, ' ')
+    .trim()
+
+/** Táž zkratka na jádro, jakou dělá `jmenaZKatalogu` — musí zůstat souhlasná. */
+const jadroJmena = (n: string) =>
+  n.replace(/^(Horská chata|Chata|Kiosek|Bouda|Penzion|Hotel|Schronisko( PTTK)?)\s+/iu, '').trim()
+
+/**
+ * Krátká jména se jako podřetězec chytají na kdeco, takže se pod touhle
+ * délkou shoda podřetězcem nepočítá. Přesná shoda se měří vždy — ta je
+ * jednoznačná.
+ */
+const MIN_DELKA_PODRETEZCE = 4
+
+export function zkontrolujKotvuJmen(koren: string = KOREN, katalogCesta: string = KATALOG) {
+  const mine: KotvaMineJmeno[] = []
+  let objektu = 0
+  let presne = 0
+  if (!existsSync(katalogCesta)) return { mine, objektu, presne }
+  const katalog = JSON.parse(readFileSync(katalogCesta, 'utf8')) as {
+    Pohoří?: string
+    Název?: string
+  }[]
+
+  for (const oblast of OBLASTI) {
+    if (!oblast.katalogPohori?.length) continue
+    const dir = join(koren, oblast.slug)
+    const osmJmena: { raw: string; n: string }[] = []
+    for (const { zeme } of zemeDotazu(oblast)) {
+      for (const vrstva of ['export', 'dle-jmen', 'rozhledny'] as const) {
+        const soubor = join(
+          dir,
+          vrstva === 'export'
+            ? `_overpass-export-${zeme}.json`
+            : `_overpass-${vrstva}-${zeme}.json`,
+        )
+        if (!existsSync(soubor)) continue
+        let telo: { elements?: { tags?: Record<string, string> }[] }
+        try {
+          telo = JSON.parse(readFileSync(soubor, 'utf8'))
+        } catch {
+          continue // rozbitý JSON řeší zkontrolujExport, ne tahle kontrola
+        }
+        for (const el of telo.elements ?? []) {
+          const jmeno = el?.tags?.name?.trim()
+          if (jmeno) osmJmena.push({ raw: jmeno, n: normJmeno(jmeno) })
+        }
+      }
+    }
+    // Bez exportu se nedá měřit nic — to hlásí `zkontrolujVrstvy`, ne tahle kontrola.
+    if (!osmJmena.length) continue
+
+    for (const z of katalog) {
+      if (!z.Pohoří || !oblast.katalogPohori.includes(z.Pohoří) || !z.Název) continue
+      objektu++
+      const varianty = [...new Set([z.Název.trim(), jadroJmena(z.Název.trim())])]
+        .filter(Boolean)
+        .map((v) => ({ v, n: normJmeno(v) }))
+      if (varianty.some((v) => osmJmena.some((o) => o.n === v.n))) {
+        presne++
+        continue
+      }
+      const podretezcem = osmJmena.filter((o) =>
+        varianty.some((v) => v.n.length >= MIN_DELKA_PODRETEZCE && o.n.includes(v.n)),
+      )
+      if (podretezcem.length) {
+        mine.push({
+          oblast: oblast.slug,
+          katalog: z.Název.trim(),
+          osm: [...new Set(podretezcem.map((o) => o.raw))],
+        })
+      }
+    }
+  }
+  return { mine, objektu, presne }
+}
+
 export type VadaExportu = {
   soubor: string
   druh: 'remark' | 'json' | 'bez-elements'
@@ -256,6 +387,26 @@ if (spustenoPrimo) {
     console.log(`! oblastí založených, ale nikdy nespuštěných: ${oblasti.length}`)
     console.log(`    ${oblasti.join(', ')}`)
     console.log('    Není to vada — je to fronta: oblast čeká na běh DATA-01 v Actions.')
+  }
+
+  const kotva = zkontrolujKotvuJmen()
+  if (kotva.mine.length) {
+    console.log(
+      `! dohledávka podle jmen je ukotvená (^…$) a nedosáhne na ${kotva.mine.length}` +
+        ` z ${kotva.objektu} katalogových objektů`,
+    )
+    console.log(
+      '    OSM je pojmenovalo jinak než katalog (vsuvka „PTTK", předřazené „Hotel"/„Chata",' +
+        ' přípona „vrch", uvozovky).',
+    )
+    console.log(
+      '    Tyhle objekty v repu MÁME — přinesl je hlavní dotaz. Podstatné je, že u objektu,',
+    )
+    console.log('    který hlavní dotaz mine, je tahle dohledávka jediná zbylá vrstva. Ukázka:')
+    for (const m of kotva.mine.slice(0, 8)) {
+      console.log(`      ${m.oblast}: katalog „${m.katalog}" × OSM „${m.osm.join('", „')}"`)
+    }
+    if (kotva.mine.length > 8) console.log(`      … a dalších ${kotva.mine.length - 8}`)
   }
 
   console.log()

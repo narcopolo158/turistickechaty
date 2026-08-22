@@ -411,6 +411,36 @@ v `oblasti.ts` a čeká na klik v Actions; k 21. 8. jsou to čtyři —
 `oravska-magura`, `zapadne-tatry`, `slovensky-raj`, `bieszczady`.
 **NEROZHODUJE** — pustit oblast je práce, ne vada souboru.
 
+**Čtvrtá věc v témž souboru (22. 8. 2026) — `zkontrolujKotvuJmen`, upozornění.**
+Předchozí tři kontroly hlídají, jestli vrstva dotazu **proběhla**. Tahle se ptá
+na něco jiného: jestli, když proběhne, vůbec **může** najít to, co hledá.
+`overpassDotazDleJmen` se ptá `["name"~"^(A|B|C)$",i]`, tedy na přesnou rovnost
+celého jména — a katalog píše jména jinak než OSM. Zkrácení na jádro
+(`jmenaZKatalogu` odřízne „Chata", „Hotel", „Schronisko PTTK"…) pokryje jen to
+slovo navíc, které stojí na **začátku katalogového** jména; vsuvku uvnitř
+(„Schronisko **PTTK** Klimczok"), předsazené slovo v OSM („**Hotel**
+Špindlerova bouda"), příponu za jménem („Chata Javorový **vrch**") ani uvozovky
+(`Schronisko PTTK "Orlica"`) nepokryje.
+
+Měří se to **nad exporty, které v repu leží**, bez jediného dotazu do sítě: pro
+každý katalogový objekt oblasti se hledá jméno mezi jmény ze všech vrstev
+exportu té oblasti. K 22. 8. 2026 je z **225 katalogových objektů** 109 pod
+přesným jménem a **36 (16 %) jen pod delším** — tedy takových, na které kotva
+nedosáhne. Hypotéza k tomu vznikla 19. 8. 2026 nad **Chatou Paprsek** (katalog
+HUT-0055, jistota A), kterou OSM nejspíš vede jako „Horský hotel Paprsek".
+
+Měří se jen směr **„OSM říká víc než katalog"**, a je to záměr: opačný směr
+zkoušen byl a přidal 23 řádků skoro samého šumu, protože v OSM leží objekty
+pojmenované holým „Chata", „Bacówka" nebo „Hotel" a ty se chytí na každé druhé
+katalogové jméno. Užší podpis, který se dá přečíst celý, je pro rozhodnutí
+cennější než úplný, ve kterém se skutečné případy utopí.
+
+Že těch 36 objektů v repu **máme**, není námitka — přinesl je hlavní dotaz,
+takže záchranná síť potřeba nebyla. Podstatné je, že u objektu, který hlavní
+dotaz mine (civilní tag, jméno bez chatového slova), je tahle dohledávka
+jediná zbylá vrstva. **NEROZHODUJE** — není to vada souboru, ale podklad pro
+rozhodnutí o dotazu, a to rozhodnutí si vyžádá re-export všech oblastí.
+
 **`katalog-pokryti.ts` — seznam k posouzení.** Pro každou oblast s vyplněným
 `katalogPohori` řekne, které katalogové objekty nemají v repu ani profil, ani
 kandidáta. Je to jediná mezera z celé pipeline, kterou nezachytí nic jiného:
