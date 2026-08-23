@@ -43,6 +43,12 @@ const KROKY = [
   // hranici dvou pohori nekam patri a rozhodne to triaz s pramenem o
   // prislusnosti, ne kontrola; ta ma jen zajistit, ze se na par nezapomene.
   ['duplicity-oblasti', 'tyz OSM objekt vede vic oblasti (DATA-36 b, k rozhodnuti)', false],
+  // NEROZHODUJE: blizky par je PRACE (rozhodnout, jestli jde o jeden objekt),
+  // ne vada souboru. Doplnuje trojici, mezi kterou zustavala mereno dira:
+  // identita podle OSM URL (duplicity-oblasti) dve entity teze stavby nevidi,
+  // pojistka DATA-38 se pta jen na JINE oblasti a jen pri shodnem jadru nazvu,
+  // kolize-jmen vidi jen jmena. Krkonossky beh 22. 8. 2026 spadl doprostred.
+  ['blizke-body', 'kandidat par metru od profilu teze oblasti (k rozhodnuti)', false],
   // ROZHODUJE: vadne razitko neshodi sebe, ale cely deploy — seed razitek
   // bezi uvnitr nasazeni. Cisty stav je presne nula.
   ['razitka', 'razitkovy korpus: profil chaty, sken, atribuce prevzetí', true],

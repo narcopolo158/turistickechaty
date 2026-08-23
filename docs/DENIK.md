@@ -29,6 +29,91 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-23 — denní session: triáž krkonošského běhu a díra mezi třemi kontrolami
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál blokovaná (dokladová část
+  vyčerpaná od 2. 8., zbylé otázky jsou telefonní) a **fronta DATA-05** je taky
+  mimo dosah bezobslužného běhu — beskydská sedmička čeká na re-export DATA-37,
+  jména z koše G i „Turistická chata Trosky" na detaily razítek. Vzal jsem
+  tedy to, co po Michalově kliku z 22. 8. leželo na stole a na co sandbox
+  stačí: **triáž 173 nových krkonošských kandidátů**.
+- **Vznikl `docs/KRKONOSE-TRIAZ-KOSE.md`** — podklad k triáži 187 nepovýšených
+  kandidátů oblasti, ve dvou vrstvách. **① Podle jména** (existující
+  `scripts/triaz-kandidatu.ts`): 107 nadějných · 31 k posouzení · 47 mimo klíč.
+  **② Nově podle OSM tagů**, změřeno nad exporty v repu **bez jediného dotazu
+  do sítě**: **7** kandidátů má typ horské chaty (`alpine_hut`), **42** má
+  doložené **veřejné občerstvení** (`amenity=restaurant/cafe/pub/fast_food`),
+  **131** zná OSM jen jako ubytování, 2 nesou jiné tagy a u 5 se element
+  v exportech nedohledal.
+- **Ta druhá vrstva měří něco jiného než jméno, a je to vidět na příkladech:**
+  „Chata Jeřabinka" zní nadějně a v OSM je `tourism=guest_house`, kdežto
+  „Horská" nezní nijak a nese `amenity=restaurant`. **Předpověď z 22. 8.
+  („drtivá většina jsou apartmány a penziony") tím platí měřeně: 131 ze 187.**
+  Mez toho měření je v dokumentu přiznaná — *nepřítomnost* tagu `amenity` NENÍ
+  doklad, že objekt občerstvení nemá; koš C je fronta na hromadné čtení, ne na
+  vyřazení.
+- **Systémový nález, a je z něj kontrola, ne jednorázové měření.** Tři
+  kandidáti stojí **pár metrů od publikovaného profilu TÉŽE oblasti**:
+  `schronisko-gorskie-dom-slaski` **4,2 m** od `dom-slaski`,
+  `schronisko-szrenica-1362-m-n-p-m` **5,7 m** od `schronisko-szrenica`
+  a `restaurace-labska-bouda` **19,5 m** od `labska-bouda`. **Neohlásila je
+  žádná z dosavadních kontrol** a je změřené proč: `duplicity-oblasti`
+  porovnává identitu podle **OSM URL** (dvě ID téhož domu jí projdou jako dva
+  objekty — píše to i ve své hlavičce), pojistka v běhu (DATA-38) se ptá jen na
+  **JINÉ** oblasti a jen při **shodném jádru názvu**, `kolize-jmen` vidí jen
+  **jména**. Mezi tou trojicí zbývala díra „táž oblast + jiné jméno" a
+  krkonošský běh spadl přesně do ní. Včerejší tři páry (Portášky, Černá bouda,
+  Srebrny Potok) se ohlásily jen proto, že se u nich jména potkala.
+- **Nová `scripts/kontrola/blizke-body.ts`**: kandidát do **50 m** od profilu
+  téže oblasti. Práh je převzatý z DATA-38 i s odůvodněním (9 m u Čartáku je
+  jasná dvojí entita, 150 m dělí i dvě sousední stavby) a drží ho test. Páry
+  **rozhodnuté** v `data/_jmenovci.yaml` kontrola nehlásí — registr je doklad,
+  že se o dvojici ví, takže se kontrola s rozhodováním sama umlčuje. Povýšený
+  kandidát se přeskakuje. **NEROZHODUJE** o návratovém kódu (rozhodnout pár je
+  práce, ne vada souboru — vzor `duplicity-oblasti`). Zapsaná v `vse.ts`
+  i v README kontrol, **7 nových testů**, `npm run kontrola` celé zelené,
+  `tsc --noEmit` i lint čisté.
+- **Stav nad repem je 11 párů a část z nich není vada, ale rozhodnutí:** vedle
+  těch tří krkonošských je tam známý vzor **rozhledna × chata na témž vrcholu**
+  (König-Albert-Turm × Spiegelwaldbaude, Aussichtsturm Pöhlberg × Berghotel
+  Pöhlberg, Auersbergturm × Berggasthof Auersberg, Josefova věž × Horská chata
+  Kleť) — tedy dva objekty, ne jeden. I ty patří do registru, ať se
+  nerozhodují dvakrát.
+- **Vedlejší doklady z nového exportu:** **Schronisko Wysoki Kamień** je nově
+  v korpusu jako pojmenovaný kandidát (`amenity=cafe`, `ele=1058`) — mezera
+  z 20. 8. je zavřená, otázka na východní hranu **jizerského** okna ale trvá,
+  do jizerského dotazu objekt dál nespadá. Vrátily se i **Pardubické**,
+  **Jilemnická** a **Hříběcí bouda**. **Bouda Svornost dál chybí** pod
+  jakýmkoli jménem — příčina zůstává otevřená.
+- **Do `data/` se ani dnes nesáhlo** — změněny jen `scripts/kontrola/`
+  (nový soubor, `vse.ts`, README), test, nový dokument a backlog.
+
+**Příště:** projít koš **A + B** (49 kandidátů s tagem chaty nebo občerstvení)
+a rozhodnout, co z nich klíčem projde; nezávisle na tom **11 párů blízkých
+bodů** zapsat do `data/_jmenovci.yaml` s důvodem (u rozhledna × chata je důvod
+krátký a jasný). Dál trvá: devět padajících testů z 22. 8. a fronta DATA-05.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
+
+**Otázky pro Michala:**
+- **Tři blízké páry v Krkonoších — jeden objekt, nebo dva?** U Dom Śląski
+  (4,2 m), Szrenice (5,7 m) a Labské boudy (19,5 m) to vypadá na druhou OSM
+  entitu téhož domu. Sám kandidáty nemažu ani nepovyšuji; stačí říct „jeden
+  objekt" a zapíšu je do registru jmenovců.
+- **Rozhledna × chata na témž vrcholu** — má být profil jeden, nebo dva? Máme
+  na to precedens (Sněžka = profil každého objektu zvlášť, Žalý = jeden celek),
+  ale ne pravidlo. Odpověď rozhodne čtyři páry naráz.
+- Trvá z 22. 8.: **smazat `krkonose/horska-chata-portasky`?** (týž OSM bod jako
+  publikovaný profil); **opřít idempotenci DATA-01 o OSM id místo jména?**;
+  **zařadit `npm run test:int` do CI** (devět testů padá a nikdo se to
+  nedozvěděl); **Bouda Svornost** — zakládat ručně?; **uvolnit kotvu ve jmenné
+  dohledávce** (jednořádková změna, ale re-export všech oblastí); **čtyři
+  založené, ale nespuštěné oblasti** (Oravská Magura, Západné Tatry, Slovenský
+  raj, Bieszczady); a starší fronta z 20. 8.
+
 ## 2026-08-22 (druhý blok, Michal online) — DATA-01 nad Krkonošemi doběhl
 
 **Hotovo:**

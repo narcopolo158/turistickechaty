@@ -1,0 +1,479 @@
+# Krkonoše — koše triáže po běhu DATA-01 z 22. 8. 2026
+
+Podklad k triáži **187 nepovýšených kandidátů** oblasti `krkonose`, z toho
+**173 přinesl běh z 22. 8. 2026** (Michalův klik, commit `d291689`). Vzniklo 23. 8. 2026 v denní bezobslužné session.
+
+**Koš NENÍ rozhodnutí.** Klíč zařazení se ptá i na turistickou minulost objektu
+a tu z tagu ani ze jména nepozná nikdo — bývalá bouda se dnes může jmenovat
+„Apartmány u lesa". Vyřazení patří do `data/kandidati/_vyrazeno.yaml` a dělá ho
+redakce s pramenem. Koš říká jen pořadí čtení.
+
+## Dvě vrstvy, každá měří něco jiného
+
+**① Podle JMÉNA** — `npx tsx scripts/triaz-kandidatu.ts krkonose --md`; ta část
+je níž v oddíle „Koše podle jména". Rozdělení: **107 nadějných · 31
+k posouzení · 47 mimo klíč dle jména**.
+
+**② Podle OSM TAGŮ** (nové 23. 8. 2026) — jméno říká, jak se objekt jmenuje,
+kdežto tagy říkají, co v OSM dělá. Rozdíl je podstatný: „Chata Jeřabinka" zní
+nadějně a v OSM je `tourism=guest_house`, kdežto „Horská" nezní nijak a nese
+`amenity=restaurant`. Změřeno nad exporty, které v repu leží, **bez jediného
+dotazu do sítě**; zdrojem je první OSM URL v hlavičce kandidáta.
+
+| koš   | kolik | co to znamená                                                 |
+| ----- | ----- | ------------------------------------------------------------- |
+| **A** | 7     | OSM typ horské chaty — nejsilnější signál, brát první         |
+| **B** | 42    | OSM doloží **veřejné občerstvení**, tedy jádro klíče zařazení |
+| **C** | 131   | OSM zná jen ubytování — číst hromadně, **není to vyřazení**   |
+| **D** | 2     | jiné tagy (rozhledna, stezka) — přečte člověk                 |
+| **E** | 5     | element se v exportech nedohledal (starší kandidáti)          |
+
+**Předpověď z 22. 8. („drtivá většina jsou apartmány a penziony") tím platí
+měřeně: 131 ze 187.** Zároveň je pojmenovaná i mez toho měření — _nepřítomnost_
+tagu `amenity` NENÍ doklad, že objekt veřejné občerstvení nemá; OSM mlčí často.
+Koš C proto není fronta na vyřazení, ale fronta na hromadné čtení.
+
+## Co z toho vypadlo hned
+
+**Tři kandidáti stojí pár metrů od publikovaného profilu téže oblasti** —
+`schronisko-gorskie-dom-slaski` (4,2 m od `dom-slaski`),
+`schronisko-szrenica-1362-m-n-p-m` (5,7 m od `schronisko-szrenica`)
+a `restaurace-labska-bouda` (19,5 m od `labska-bouda`). Ani jeden nemá shodné
+jádro názvu, takže je neohlásila žádná z dosavadních kontrol; od 23. 8. 2026 je
+měří `npx tsx scripts/kontrola/blizke-body.ts`. **Nepovyšovat, dokud o páru
+nerozhodne redakce** (a rozhodnutí zapsat do `data/_jmenovci.yaml`).
+
+**Schronisko Wysoki Kamień je v korpusu.** Doložená mezera z 20. 8. 2026 —
+objekt, který krkonošské okno stáhlo jen jako občerstvení u _nepojmenované_
+věže — přišel novým během jako pojmenovaný kandidát `schronisko-wysoki-kamien`
+s `amenity=cafe`, `ele=1058` a otvíračkou. Otázka na východní hranu jizerského
+okna tím **nemizí** (objekt do jizerského dotazu dál nespadá), jen už není
+slepou skvrnou celého korpusu.
+
+**Vrátily se i tři ze čtyř mezer z 20.–22. 8.:** `velke-pardubicke-boudy`
+(`amenity=restaurant`), `pension-jilemnicka-bouda` (`amenity=restaurant`,
+otvíračka 9–21) a `hribeci-bouda`. **Bouda Svornost dál chybí** — v exportech
+není pod žádným jménem a příčina zůstává otevřená.
+
+## Koše podle OSM tagů
+
+### A · OSM typ horské chaty (`alpine_hut` / `wilderness_hut`) — brát první — 7
+
+| kandidát                          | nový 22. 8. | rozhodující OSM tagy                                                                                                                                                                                                                         | web z OSM                |
+| --------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| `chata-eliska` — Chata Eliška     | —           | `tourism=alpine_hut`                                                                                                                                                                                                                         | https://chata-eliska.cz/ |
+| `chata-hubertka` — Chata Hubertka | —           | `tourism=alpine_hut`                                                                                                                                                                                                                         | www.chatahubertka.cz     |
+| `chata-mamut` — Chata Mamut       | —           | `tourism=alpine_hut`                                                                                                                                                                                                                         | —                        |
+| `javorka` — Javorka               | —           | `tourism=alpine_hut`                                                                                                                                                                                                                         | —                        |
+| `lokomotiva` — Lokomotiva         | —           | `tourism=alpine_hut`                                                                                                                                                                                                                         | —                        |
+| `sasanka` — Sasanka               | —           | `tourism=alpine_hut`                                                                                                                                                                                                                         | —                        |
+| `zaly` — Žalý                     | —           | `tourism=alpine_hut`; `amenity=restaurant`; `opening_hours=Dec 25-Jan 31 Mo-Su 10:00-16:00; Feb-Mar Mo-Su 10:00-16:30; Apr,Oct-Nov Sa-Su 10:00-16:00; May-Jun,Sep Tu-Su 10:00-17:00; Jul-Aug Mo-Su 10:00-17:30; Dec 01-24 Sa-Su 10:00-16:00` | http://www.zaly.cz/      |
+
+### B · OSM doloží veřejné občerstvení (`amenity=restaurant/cafe/pub/fast_food`…) — 42
+
+| kandidát                                                               | nový 22. 8. | rozhodující OSM tagy                                                                                                                        | web z OSM                              |
+| ---------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| `bar-zielona-chatka` — Bar Zielona Chatka                              | ano         | `amenity=fast_food`; `opening_hours=10:00-20:00`                                                                                            | —                                      |
+| `bouda-mala-upa` — Bouda Malá Úpa                                      | ano         | `amenity=restaurant`                                                                                                                        | https://boudamalaupa.cz/               |
+| `bouda-mila` — Bouda Míla                                              | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `bouda-pod-snezkou` — Bouda pod Snežkou                                | ano         | `amenity=restaurant`                                                                                                                        | https://www.boudapodsnezkou.cz/        |
+| `chata-boruvka` — Chata Borůvka                                        | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `chata-ducha-gor` — Chata Ducha Gór                                    | ano         | `amenity=fast_food`; `cuisine=kebab`                                                                                                        | —                                      |
+| `chata-hradecanka` — Chata Hradečanka                                  | ano         | `tourism=wine_cellar`; `amenity=restaurant`; `cuisine=italian;pizza;coffee;wine`; `opening_hours=Mo-Su 11:00-22:00`                         | https://www.hradecanka.cz/             |
+| `chata-karkonoska` — Chata Karkonoska                                  | ano         | `amenity=restaurant`; `cuisine=polish`                                                                                                      | https://chata.hotel-karkonosze.com.pl/ |
+| `chata-misecky` — Chata Mísečky                                        | ano         | `tourism=guest_house`; `amenity=restaurant`; `cuisine=regional`; `opening_hours=Mo-Su 11:00-22:00`                                          | https://www.chatamisecky.cz/           |
+| `chata-skrzata` — Chata Skrzata                                        | ano         | `amenity=fast_food`                                                                                                                         | —                                      |
+| `chata-stopa` — Chata Stopa                                            | ano         | `amenity=restaurant`                                                                                                                        | https://www.stopamisecky.com/          |
+| `chata-tyrolska` — Chata Tyrolska                                      | ano         | `amenity=fast_food`                                                                                                                         | —                                      |
+| `chata-u-sportu` — Chata U Sportů                                      | ano         | `amenity=fast_food`                                                                                                                         | —                                      |
+| `dvorakova-bouda` — Dvořákova bouda                                    | ano         | `tourism=chalet`; `amenity=restaurant`; `cuisine=regional`                                                                                  | —                                      |
+| `hladik-ziza-janska-bouda` — Hladík & Žíža Janská Bouda                | ano         | `amenity=fast_food`                                                                                                                         | —                                      |
+| `hoffmanovy-boudy` — Hoffmanovy Boudy                                  | ano         | `amenity=restaurant`; `cuisine=regional`                                                                                                    | —                                      |
+| `horska-chata-dimrovka` — horská chata Dimrovka                        | ano         | `tourism=guest_house`; `amenity=restaurant`                                                                                                 | https://www.dimrovka.cz/               |
+| `horska-chata-portasky` — Horská chata Portášky                        | ano         | `amenity=restaurant`; `ele=1050`                                                                                                            | http://www.portasky.cz/                |
+| `horska-chata-poutnik` — Horská chata Poutník                          | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `horska-sluzba-cerny-dul` — Horská služba Černý Důl                    | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `horska` — Horská                                                      | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `hotel-bouda-jana` — Hotel Bouda Jana                                  | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `jestrebi-bouda` — Jestřebí bouda                                      | ano         | `tourism=chalet`; `amenity=pub`; `opening_hours=Jul-Aug Mo-Th 11:00-16:00; Jul-Aug Fr 11:00-22:00; Sa 10:00-22:00; Su 10:00-15:00; PH open` | http://www.jestrebibouda.cz/           |
+| `johannova-bouda` — Johannova bouda                                    | ano         | `amenity=restaurant`; `cuisine=regional;international`                                                                                      | —                                      |
+| `karczma-hutnika` — Karczma Hutnika                                    | ano         | `amenity=restaurant`                                                                                                                        | https://karczmahutnika.pl/             |
+| `mumlavska-bouda` — Mumlavská Bouda                                    | ano         | `amenity=fast_food`; `cuisine=regional`; `opening_hours=Mo-Su 10:00-17:00`                                                                  | —                                      |
+| `pension-jilemnicka-bouda` — Pension Jilemnická bouda                  | ano         | `tourism=guest_house`; `amenity=restaurant`; `cuisine=regional`; `opening_hours=Mo-Su 09:00-21:00`                                          | https://www.jilemnickabouda.cz/        |
+| `prezesowa-chata` — Prezesowa Chata                                    | ano         | `amenity=biergarten`                                                                                                                        | —                                      |
+| `restaurace-havlova-bouda` — Restaurace Havlova bouda                  | ano         | `amenity=restaurant`                                                                                                                        | https://www.havlovabouda.cz/           |
+| `restaurace-labska-bouda` — Restaurace Labska Bouda                    | ano         | `amenity=restaurant`; `opening_hours=12:00-21:00`                                                                                           | —                                      |
+| `schronisko-gorskie-dom-slaski` — Schronisko Górskie Dom Śląski        | ano         | `amenity=fast_food`                                                                                                                         | —                                      |
+| `schronisko-szrenica-1362-m-n-p-m` — Schronisko Szrenica 1362 m n.p.m. | ano         | `amenity=cafe`; `cuisine=crepe`                                                                                                             | —                                      |
+| `schronisko-wysoki-kamien` — Schronisko Wysoki Kamień                  | ano         | `amenity=cafe`; `opening_hours=Apr-Sep Mo-Su 10:00-18:00; Oct-Mar Mo-Su 10:00-16:00`; `ele=1058`                                            | http://www.wysokikamien.com.pl         |
+| `sokoli-boudy` — Sokolí boudy                                          | ano         | `tourism=guest_house`; `amenity=restaurant`; `cuisine=local`; `opening_hours=09:30-22:00`                                                   | https://www.sokoliboudy.cz/            |
+| `sudecka-chata-u-prezesa` — Sudecka chata u Prezesa                    | ano         | `amenity=restaurant`; `opening_hours=Mo-Su 09:00-22:00`                                                                                     | —                                      |
+| `swojska-chata` — Swojska Chata                                        | ano         | `amenity=restaurant`; `cuisine=regional`                                                                                                    | —                                      |
+| `szklana-chata` — Szklana chata                                        | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `trejbalova-bouda` — Trejbalova bouda                                  | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `turisticka-chata` — Turistická chata                                  | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `velke-pardubicke-boudy` — Velké pardubické boudy                      | ano         | `amenity=restaurant`; `cuisine=regional`                                                                                                    | https://pardubickeboudy.cz/            |
+| `wiejska-chata` — Wiejska chata                                        | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+| `zizkova-bouda` — Žižkova bouda                                        | ano         | `amenity=restaurant`                                                                                                                        | —                                      |
+
+### D · jiné tagy — musí přečíst člověk — 2
+
+| kandidát                                                            | nový 22. 8. | rozhodující OSM tagy                                                                                                                                                                                                       | web z OSM                      |
+| ------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| `rozhledna-zaly` — Rozhledna Žalý                                   | —           | `tourism=attraction`; `opening_hours=Dec 25-Jan 31 Mo-Su 10:00-16:00; Feb-Mar Mo-Su 10:00-16:30; Apr,Oct-Nov Sa-Su 10:00-16:00; May-Jun,Sep Tu-Su 10:00-17:00; Jul-Aug Mo-Su 10:00-17:30; Dec 01-Dec 24 Sa-Su 10:00-16:00` | http://www.zaly.cz/            |
+| `stezka-korunami-stromu-krkonose` — Stezka korunami stromů Krkonoše | —           | `tourism=viewpoint`; `ele=826`                                                                                                                                                                                             | https://www.stezkakrkonose.cz/ |
+
+### E · OSM element se v exportech nedohledal — 5
+
+| kandidát                                  | nový 22. 8. | rozhodující OSM tagy | web z OSM |
+| ----------------------------------------- | ----------- | -------------------- | --------- |
+| `hotel-stumpovka` — Hotel Štumpovka       | —           | —                    | —         |
+| `hrncirske-boudy` — Hrnčířské boudy       | —           | —                    | —         |
+| `josefova-bouda` — Josefova bouda         | —           | —                    | —         |
+| `modrokamenna-bouda` — Modrokamenná bouda | —           | —                    | —         |
+| `postovna-na-snezce` — Poštovna na Sněžce | —           | —                    | —         |
+
+### C · OSM zná jen ubytování (`guest_house`, `chalet`, `hotel`, `apartment`) — 131
+
+| kandidát                                                                                  | nový 22. 8. | rozhodující OSM tagy                                                    | web z OSM                                                               |
+| ----------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `amelkowa-chata` — Amelkowa chata                                                         | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `apartamenty-every-sky` — Apartamenty Every Sky                                           | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `apartman-u-potoka` — Apartmán U potoka                                                   | ano         | `tourism=chalet`                                                        | https://www.ubytovanikrkonose-marsov.cz/                                |
+| `apartmany-tri-boudy` — Apartmány tři boudy                                               | ano         | `tourism=hotel`                                                         | https://www.triboudy.cz                                                 |
+| `arnika` — Arnika                                                                         | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `baronova-bouda` — Baronova Bouda                                                         | ano         | `tourism=guest_house`                                                   | http://www.ski-baron.cz                                                 |
+| `bergpoolhaus` — Bergpoolhaus                                                             | ano         | `tourism=chalet`                                                        | https://www.bergpoolhaus.eu/                                            |
+| `bouda-jirinka` — Bouda Jiřinka                                                           | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `bouda-mama` — Bouda Máma                                                                 | ano         | `tourism=hotel`                                                         | https://www.boudamama.cz/                                               |
+| `bouda-sestidomi` — bouda Šestidomí                                                       | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `bouda-u-lesa` — Bouda U lesa                                                             | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `bouda-v-obrim-dole` — Bouda v Obřím Dole                                                 | ano         | `tourism=guest_house`                                                   | https://boudavobrimdole.cz                                              |
+| `browarowka` — Browarówka                                                                 | ano         | `tourism=chalet`                                                        | https://www.browarowka.pl/                                              |
+| `capkova-chata` — Čapkova chata                                                           | ano         | `tourism=guest_house`                                                   | https://chaty-krkonose.cz/                                              |
+| `chalupa-baba-jaga` — Chalupa Baba Jaga                                                   | ano         | `tourism=apartment`                                                     | —                                                                       |
+| `chalupa-marsovka` — Chalupa Maršovka                                                     | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `chalupa-sport` — Chalupa Sport                                                           | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `chalupa-u-medveda` — Chalupa u Medvěda                                                   | ano         | `tourism=chalet`                                                        | http://www.chalupaumedveda.cz                                           |
+| `chalupa-u-rihu` — Chalupa U Říhů                                                         | ano         | `tourism=chalet`                                                        | http://www.chalupaurihu.cz                                              |
+| `chata-advokatka` — chata Advokátka                                                       | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `chata-baraba` — Chata Baraba                                                             | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `chata-baronka` — Chata Baronka                                                           | ano         | `tourism=chalet`                                                        | http://www.ski-baron.cz                                                 |
+| `chata-beata` — Chata Beata                                                               | ano         | `tourism=chalet`                                                        | http://www.chatabeata.cz                                                |
+| `chata-biegacza` — Chata Biegacza                                                         | ano         | `tourism=guest_house`                                                   | https://www.chatabiegacza.pl/                                           |
+| `chata-botas` — Chata Botas                                                               | ano         | `tourism=chalet`                                                        | https://www.e-chalupy.cz/krkonose/chata-botas-stazne-pronajem-15627.php |
+| `chata-ferra` — Chata FERRA                                                               | ano         | `tourism=chalet`                                                        | http://www.chataferra.cz                                                |
+| `chata-gall` — Chata Gall                                                                 | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `chata-gracie` — Chata Grácie                                                             | ano         | `tourism=guest_house`                                                   | https://www.janskelazne.cz/cz/chata-gracie-janske-lazne-77.html         |
+| `chata-honzik` — Chata Honzík                                                             | ano         | `tourism=chalet`                                                        | www.chatahonzik.cz                                                      |
+| `chata-izerska` — Chata Izerska                                                           | ano         | `tourism=hotel`                                                         | https://www.chataizerska.pl/                                            |
+| `chata-jasanka` — chata Jasanka                                                           | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `chata-jerabinka` — Chata Jeřabinka                                                       | ano         | `tourism=guest_house`                                                   | https://www.chatajerabinka.cz/                                          |
+| `chata-jestrab` — Chata Jestřáb                                                           | ano         | `tourism=guest_house`                                                   | https://plus.google.com/108159705772761019533/about                     |
+| `chata-jitka` — Chata Jitka                                                               | ano         | `tourism=chalet`                                                        | http://www.chatajitka.cz                                                |
+| `chata-kabrtova-bouda` — Chata Kábrtova Bouda                                             | ano         | `tourism=chalet`                                                        | https://www.janskelazne.cz/cz/chata-kabrtova-bouda-cerna-hora-19.html   |
+| `chata-karolinka` — Chata Karolínka                                                       | ano         | `tourism=guest_house`                                                   | https://www.chatakarolinka.cz/                                          |
+| `chata-katerina` — Chata Kateřina                                                         | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `chata-kovarna` — Chata Kovárna                                                           | ano         | `tourism=chalet`                                                        | https://www.e-chalupy.cz/krkonose/chata-horni-marsov-kovarna-1586.php   |
+| `chata-kubik` — Chata Kubík                                                               | ano         | `tourism=chalet`                                                        | http://www.chatakubik.cz/                                               |
+| `chata-lom` — Chata Lom                                                                   | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `chata-medika-2411927307` — Chata Medika                                                  | ano         | `tourism=chalet`                                                        | http://www.alberice.slinet.cz                                           |
+| `chata-medika` — Chata Medika                                                             | ano         | `tourism=chalet`                                                        | http://www.chatamedika.cz/                                              |
+| `chata-opavia` — Chata Opavia                                                             | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `chata-orlik` — Chata Orlik                                                               | ano         | `tourism=hotel`                                                         | —                                                                       |
+| `chata-pod-lipami` — Chata pod lipami                                                     | ano         | `tourism=guest_house`                                                   | https://www.chatapodlipami.cz/                                          |
+| `chata-popelka` — Chata Popelka                                                           | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `chata-protez` — chata Protěž                                                             | ano         | `tourism=guest_house`                                                   | https://www.dominant-protez.cz/chataprotez                              |
+| `chata-silnicka` — Chata Silnička                                                         | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `chata-solunka` — Chata Solunka                                                           | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `chata-spindler` — Chata Špindler                                                         | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `chata-sudecka-z-widokiem` — Chata Sudecka z widokiem                                     | ano         | `tourism=guest_house`                                                   | https://chatasudecka.pl/                                                |
+| `chata-tereza` — Chata Tereza                                                             | ano         | `tourism=guest_house`                                                   | https://www.chatatereza.eu/                                             |
+| `chata-tobisek` — Chata Tobísek                                                           | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `chata-u-kohouta` — Chata U Kohouta                                                       | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `chata-uvaly` — Chata Úvaly                                                               | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `chata-varta` — Chata Varta                                                               | ano         | `tourism=guest_house`                                                   | http://www.chatavarta.cz                                                |
+| `chata-viktorka` — Chata Viktorka                                                         | ano         | `tourism=chalet`                                                        | https://chataviktorka.cz/                                               |
+| `chata-votocka` — Chata Votočka                                                           | ano         | `tourism=guest_house`; `ele=750`                                        | https://www.chatavotocka.cz                                             |
+| `chata-za-wsia` — Chata za Wsią                                                           | ano         | `tourism=hotel`                                                         | https://www.chatazawsia.com/                                            |
+| `chata-zapiecek` — Chata Zapiecek                                                         | ano         | `tourism=hotel`                                                         | —                                                                       |
+| `chata` — Chata                                                                           | ano         | `tourism=hotel`                                                         | —                                                                       |
+| `contemplace` — Contemplace                                                               | ano         | `tourism=chalet`                                                        | https://www.contemplace.pl                                              |
+| `czarodziejska-gora` — Czarodziejska Góra                                                 | ano         | `tourism=chalet`                                                        | https://czarodziejskagora.eu                                            |
+| `dalibor` — Dalibor                                                                       | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `decinska-bouda` — Děčínská bouda                                                         | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `dom-pod-jaworami` — Dom Pod Jaworami                                                     | ano         | `tourism=chalet`                                                        | http://dompodjaworami.pl/                                               |
+| `domek-w-karkonoszach` — Domek w Karkonoszach                                             | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `dziewiecsil` — Dziewiećsił                                                               | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `felicity-grand-apartments` — Felicity Grand Apartments                                   | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `gorska-chata` — Górska Chata                                                             | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `goryczka` — Goryczka                                                                     | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `grohmanova-bouda` — Grohmanova bouda                                                     | ano         | `tourism=guest_house`                                                   | http://www.grohmanovabouda.cz                                           |
+| `hajenka-haida` — Hájenka Haida                                                           | ano         | `tourism=guest_house`                                                   | https://www.chatahaida.cz/                                              |
+| `hancova-bouda` — Hančova bouda                                                           | ano         | `tourism=hotel`                                                         | https://hancovabouda.cz/                                                |
+| `happy-house` — Happy House                                                               | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `havlova-bouda` — Havlova bouda                                                           | ano         | `tourism=guest_house`                                                   | https://havlovabouda.cz/                                                |
+| `hoffmannova-bouda` — Hoffmannova bouda                                                   | ano         | `tourism=guest_house`                                                   | https://www.hoffmanovabouda.cz/                                         |
+| `holiday-park-resort` — Holiday Park & Resort                                             | ano         | `tourism=chalet`                                                        | https://holidaypark.pl/uzdrowisko-cieplice-zdroj                        |
+| `horska-chata-hanapetr` — Horská chata HANAPETR                                           | ano         | `tourism=chalet`                                                        | http://hanapetr.cernypetr.com                                           |
+| `hotel-cerna-bouda` — Hotel ČERNÁ BOUDA                                                   | ano         | `tourism=hotel`                                                         | https://www.cernabouda.cz/                                              |
+| `hotel-spindlerova-bouda-depandance` — Hotel Špindlerova bouda - Depandance               | ano         | `tourism=hotel`                                                         | https://www.spindlerovabouda.cz/                                        |
+| `hottur-osrodek-wczasowo-wypoczynkowy` — HOTTUR Ośrodek Wczasowo-Wypoczynkowy             | ano         | `tourism=chalet`                                                        | https://www.hottur.pl/                                                  |
+| `hribeci-bouda` — Hříběcí Bouda                                                           | ano         | `tourism=hotel`                                                         | —                                                                       |
+| `iskierka` — Iskierka                                                                     | ano         | `tourism=chalet`                                                        | www.iskierkadomek.pl                                                    |
+| `janova-bouda` — Janova bouda                                                             | ano         | `tourism=guest_house`                                                   | https://www.skifamily.cz/                                               |
+| `java` — Java                                                                             | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `jawa` — Jawa                                                                             | ano         | `tourism=chalet`                                                        | https://chatajawa.cz/                                                   |
+| `krausovy-boudy` — Krausovy boudy                                                         | ano         | `tourism=guest_house`                                                   | —                                                                       |
+| `lesna-chata` — Leśna Chata                                                               | ano         | `tourism=chalet`                                                        | https://www.chatalesna.pl/                                              |
+| `lidicka-bouda` — Lidická bouda                                                           | ano         | `tourism=hotel`                                                         | https://www.lidickabouda.cz/                                            |
+| `lilia` — Lilia                                                                           | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `lodge-1` — Lodge 1                                                                       | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `lodge-2` — Lodge 2                                                                       | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `lodge-3` — Lodge 3                                                                       | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `ludvikova-bouda` — Ludvikova bouda                                                       | ano         | `tourism=chalet`                                                        | http://www.ludvikovabouda.com/                                          |
+| `lyzarsky-vlek-ubytovani` — Lyžařský vlek - ubytování                                     | ano         | `tourism=chalet`                                                        | https://www.vlekradvanice.cz/                                           |
+| `makuka` — Makuka                                                                         | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `ministerska` — Ministerská                                                               | ano         | `tourism=chalet`                                                        | https://ministerska.cz/                                                 |
+| `mlodziezowe-schronisko-w-staniszowie` — Młodzieżowe Schronisko w Staniszowie             | ano         | `tourism=guest_house`                                                   | https://www.schronisko.podgorzyn.pl/                                    |
+| `mlynarka-ubytovani-v-krkonosich` — Mlynářka, ubytování v krkonoších                      | ano         | `tourism=chalet`                                                        | https://mlynarka-krkonose.cz/                                           |
+| `mohwaldova-bouda` — Möhwaldova bouda                                                     | ano         | `tourism=hotel`                                                         | —                                                                       |
+| `mounttain-holiday-lodges` — Mounttain Holiday Lodges                                     | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `osada-sniezka` — Osada Śnieżka                                                           | ano         | `tourism=chalet`; `amenity=spa`; `opening_hours=Mo-Su 7:00 - 22:00`     | http://www.osada-sniezka.com/                                           |
+| `ostoja-karkonoska` — Ostoja Karkonoska                                                   | ano         | `tourism=chalet`                                                        | https://ostojakarkonoska.com.pl                                         |
+| `pension-chata-lovrana` — Pension Chata Lovrana                                           | ano         | `tourism=guest_house`                                                   | http://www.lovrana.eu                                                   |
+| `penzion-karlova-chata` — Penzion Karlova chata                                           | ano         | `tourism=guest_house`                                                   | http://www.karlovachata.cz                                              |
+| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda                                 | ano         | `tourism=guest_house`                                                   | http://www.penzion-modrokamenna-bouda-janske-lazne.az-ubytovani.net/    |
+| `pod-zielonym-dachem` — Pod Zielonym Dachem                                               | ano         | `tourism=chalet`                                                        | http://www.podzielonymdachem.i-noclegi.pl/                              |
+| `przystan-nad-bobrem` — Przystań nad Bobrem                                               | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `rozeniec` — Różeniec                                                                     | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `schronisko-liczyrzepa` — Schronisko Liczyrzepa                                           | ano         | `tourism=hostel`                                                        | https://schronisko-liczyrzepa.pl/                                       |
+| `schronisko-mlodziezowe-lubawia` — Schronisko Młodzieżowe LUBAWIA                         | ano         | `tourism=hostel`                                                        | —                                                                       |
+| `schronisko-srebrny-potok` — Schronisko Srebrny Potok                                     | ano         | `tourism=hostel`                                                        | http://www.srebrny-potok.net/                                           |
+| `sliwkowa-chata-sliwkowa-chata` — Śliwkowa Chata / Sliwkowa Chata                         | ano         | `tourism=hotel`                                                         | —                                                                       |
+| `sokolska-chata-babeta` — Sokolská chata Babeta                                           | ano         | `tourism=chalet`                                                        | https://sokolponikla.cz/                                                |
+| `sosnowy-szept` — Sosnowy Szept                                                           | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `sporthotel-svycarska-bouda` — Sporthotel Švýcarská bouda                                 | ano         | `tourism=hotel`                                                         | —                                                                       |
+| `sruby-podspalov` — sruby Podspálov                                                       | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `szkolne-schronisko-mlodziezowe-plum` — Szkolne Schronisko Młodzieżowe PLUM               | ano         | `tourism=guest_house`; `opening_hours=Mo-Su 17:00-10:00`                | https://www.schronisko-plum.pl/                                         |
+| `szkolne-schronisko-mlodziezowe-skalnik` — Szkolne Schronisko Młodzieżowe "Skalnik"       | ano         | `tourism=hostel`                                                        | https://www.schronisko-skalnik.pl/                                      |
+| `szkolne-schronisko-mlodziezowe-wojtek` — Szkolne Schronisko Młodzieżowe "Wojtek"         | ano         | `tourism=guest_house`                                                   | https://schronisko-wojtek.pl/                                           |
+| `szkolne-schronisko-mlodziezowe-zloty-widok` — Szkolne Schronisko Młodzieżowe ZŁOTY WIDOK | ano         | `tourism=guest_house`; `opening_hours=Mo-Su 17:00-10:00`                | https://www.schronisko-wojtek.pl/                                       |
+| `turisticka-chata-lajdacek` — Turistická chata Lajdáček                                   | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `wellness-hotel-liberecka-bouda` — Wellness hotel LIBERECKÁ BOUDA                         | ano         | `tourism=hotel`; `ele=860`                                              | https://www.libereckabouda.cz/                                          |
+| `widok-na-sniezke` — Widok na Śnieżkę                                                     | ano         | `tourism=chalet`                                                        | https://widoknasniezke.pl/                                              |
+| `widokowo` — Widokowo                                                                     | ano         | `tourism=chalet`                                                        | https://www.widokowo-karpacz.pl/                                        |
+| `wiilla-jagoda-jagniatkow` — Wiilla Jagoda Jagniątków                                     | ano         | `tourism=chalet`                                                        | https://willajagodajagniatkow.business.site/                            |
+| `wioska-finska-kalevala` — Wioska Fińska Kalevala                                         | ano         | `tourism=chalet`; `opening_hours=Mo-Fr 12:00, Sa-Su 12:00, Sa-Su 14:00` | —                                                                       |
+| `zacisze-pod-smielcem` — Zacisze Pod Śmielcem                                             | ano         | `tourism=chalet`                                                        | https://domkiwgorach.eu/                                                |
+| `zielony-domek` — Zielony Domek                                                           | ano         | `tourism=chalet`                                                        | —                                                                       |
+| `zinneckerovy-boudy` — Zinneckerovy Boudy                                                 | ano         | `tourism=chalet`                                                        | https://zinneckerovy-boudy.cz/                                          |
+
+## Koše podle jména
+
+Vygeneroval `npx tsx scripts/triaz-kandidatu.ts krkonose --md` 23. 8. 2026.
+**Přegenerovat po každém povýšení nebo vyřazení** — publikované, odložené
+i vyřazené kandidáty skript sám vynechává.
+
+### NADĚJNÉ — vzít v triáži nejdřív (107)
+
+| kandidát                                                                                  | země | signál                  |
+| ----------------------------------------------------------------------------------------- | ---- | ----------------------- |
+| `amelkowa-chata` — Amelkowa chata                                                         | pl   | jméno nese „chata"      |
+| `bar-zielona-chatka` — Bar Zielona Chatka                                                 | pl   | jméno nese „Chatka"     |
+| `baronova-bouda` — Baronova Bouda                                                         | cz   | jméno nese „Bouda"      |
+| `bouda-mala-upa` — Bouda Malá Úpa                                                         | cz   | jméno nese „Bouda"      |
+| `bouda-mama` — Bouda Máma                                                                 | cz   | jméno nese „Bouda"      |
+| `bouda-mila` — Bouda Míla                                                                 | cz   | jméno nese „Bouda"      |
+| `bouda-pod-snezkou` — Bouda pod Snežkou                                                   | cz   | jméno nese „Bouda"      |
+| `bouda-sestidomi` — bouda Šestidomí                                                       | cz   | jméno nese „bouda"      |
+| `bouda-u-lesa` — Bouda U lesa                                                             | cz   | jméno nese „Bouda"      |
+| `bouda-v-obrim-dole` — Bouda v Obřím Dole                                                 | cz   | jméno nese „Bouda"      |
+| `capkova-chata` — Čapkova chata                                                           | cz   | jméno nese „chata"      |
+| `chata-advokatka` — chata Advokátka                                                       | cz   | jméno nese „chata"      |
+| `chata-baraba` — Chata Baraba                                                             | cz   | jméno nese „Chata"      |
+| `chata-biegacza` — Chata Biegacza                                                         | pl   | jméno nese „Chata"      |
+| `chata-boruvka` — Chata Borůvka                                                           | cz   | jméno nese „Chata"      |
+| `chata-ducha-gor` — Chata Ducha Gór                                                       | pl   | jméno nese „Chata"      |
+| `chata-eliska` — Chata Eliška                                                             | cz   | typ z OSM: obsluhovana  |
+| `chata-gracie` — Chata Grácie                                                             | cz   | jméno nese „Chata"      |
+| `chata-hradecanka` — Chata Hradečanka                                                     | cz   | jméno nese „Chata"      |
+| `chata-hubertka` — Chata Hubertka                                                         | cz   | typ z OSM: obsluhovana  |
+| `chata-jasanka` — chata Jasanka                                                           | cz   | jméno nese „chata"      |
+| `chata-jerabinka` — Chata Jeřabinka                                                       | cz   | jméno nese „Chata"      |
+| `chata-jestrab` — Chata Jestřáb                                                           | cz   | jméno nese „Chata"      |
+| `chata-karkonoska` — Chata Karkonoska                                                     | pl   | jméno nese „Chata"      |
+| `chata-karolinka` — Chata Karolínka                                                       | cz   | jméno nese „Chata"      |
+| `chata-katerina` — Chata Kateřina                                                         | cz   | jméno nese „Chata"      |
+| `chata-mamut` — Chata Mamut                                                               | cz   | typ z OSM: obsluhovana  |
+| `chata-misecky` — Chata Mísečky                                                           | cz   | jméno nese „Chata"      |
+| `chata-opavia` — Chata Opavia                                                             | cz   | jméno nese „Chata"      |
+| `chata-orlik` — Chata Orlik                                                               | cz   | jméno nese „Chata"      |
+| `chata-pod-lipami` — Chata pod lipami                                                     | cz   | jméno nese „Chata"      |
+| `chata-popelka` — Chata Popelka                                                           | cz   | jméno nese „Chata"      |
+| `chata-protez` — chata Protěž                                                             | cz   | jméno nese „chata"      |
+| `chata-silnicka` — Chata Silnička                                                         | cz   | jméno nese „Chata"      |
+| `chata-skrzata` — Chata Skrzata                                                           | pl   | jméno nese „Chata"      |
+| `chata-solunka` — Chata Solunka                                                           | cz   | jméno nese „Chata"      |
+| `chata-stopa` — Chata Stopa                                                               | cz   | jméno nese „Chata"      |
+| `chata-sudecka-z-widokiem` — Chata Sudecka z widokiem                                     | pl   | jméno nese „Chata"      |
+| `chata-tereza` — Chata Tereza                                                             | cz   | jméno nese „Chata"      |
+| `chata-tyrolska` — Chata Tyrolska                                                         | pl   | jméno nese „Chata"      |
+| `chata-u-sportu` — Chata U Sportů                                                         | cz   | jméno nese „Chata"      |
+| `chata-uvaly` — Chata Úvaly                                                               | cz   | jméno nese „Chata"      |
+| `chata-varta` — Chata Varta                                                               | cz   | jméno nese „Chata"      |
+| `chata-votocka` — Chata Votočka                                                           | cz   | jméno nese „Chata"      |
+| `chata-za-wsia` — Chata za Wsią                                                           | pl   | jméno nese „Chata"      |
+| `chata-zapiecek` — Chata Zapiecek                                                         | pl   | jméno nese „Chata"      |
+| `decinska-bouda` — Děčínská bouda                                                         | cz   | jméno nese „bouda"      |
+| `gorska-chata` — Górska Chata                                                             | pl   | jméno nese „Chata"      |
+| `grohmanova-bouda` — Grohmanova bouda                                                     | cz   | jméno nese „bouda"      |
+| `hajenka-haida` — Hájenka Haida                                                           | cz   | jméno nese „Hájenka"    |
+| `hancova-bouda` — Hančova bouda                                                           | cz   | jméno nese „bouda"      |
+| `havlova-bouda` — Havlova bouda                                                           | cz   | jméno nese „bouda"      |
+| `hladik-ziza-janska-bouda` — Hladík & Žíža Janská Bouda                                   | cz   | jméno nese „Bouda"      |
+| `hoffmannova-bouda` — Hoffmannova bouda                                                   | cz   | jméno nese „bouda"      |
+| `hoffmanovy-boudy` — Hoffmanovy Boudy                                                     | cz   | jméno nese „Boudy"      |
+| `horska-chata-dimrovka` — horská chata Dimrovka                                           | cz   | jméno nese „horsk"      |
+| `horska-chata-portasky` — Horská chata Portášky                                           | cz   | jméno nese „Horsk"      |
+| `horska-chata-poutnik` — Horská chata Poutník                                             | cz   | jméno nese „Horsk"      |
+| `horska-sluzba-cerny-dul` — Horská služba Černý Důl                                       | cz   | jméno nese „Horsk"      |
+| `horska` — Horská                                                                         | cz   | jméno nese „Horsk"      |
+| `hotel-bouda-jana` — Hotel Bouda Jana                                                     | cz   | jméno nese „Bouda"      |
+| `hotel-cerna-bouda` — Hotel ČERNÁ BOUDA                                                   | cz   | jméno nese „BOUDA"      |
+| `hotel-spindlerova-bouda-depandance` — Hotel Špindlerova bouda - Depandance               | pl   | jméno nese „bouda"      |
+| `hotel-stumpovka` — Hotel Štumpovka                                                       | cz   | typ z OSM: horsky-hotel |
+| `hribeci-bouda` — Hříběcí Bouda                                                           | cz   | jméno nese „Bouda"      |
+| `hrncirske-boudy` — Hrnčířské boudy                                                       | cz   | jméno nese „boudy"      |
+| `janova-bouda` — Janova bouda                                                             | cz   | jméno nese „bouda"      |
+| `javorka` — Javorka                                                                       | cz   | typ z OSM: obsluhovana  |
+| `jindrichuv-dum` — Jindřichův dům                                                         | cz   | typ z OSM: obsluhovana  |
+| `johannova-bouda` — Johannova bouda                                                       | cz   | jméno nese „bouda"      |
+| `josefova-bouda` — Josefova bouda                                                         | cz   | typ z OSM: obsluhovana  |
+| `krausovy-boudy` — Krausovy boudy                                                         | cz   | jméno nese „boudy"      |
+| `lidicka-bouda` — Lidická bouda                                                           | cz   | jméno nese „bouda"      |
+| `lokomotiva` — Lokomotiva                                                                 | cz   | typ z OSM: obsluhovana  |
+| `mlodziezowe-schronisko-w-staniszowie` — Młodzieżowe Schronisko w Staniszowie             | pl   | jméno nese „Schronisko" |
+| `modrokamenna-bouda` — Modrokamenná bouda                                                 | cz   | typ z OSM: obsluhovana  |
+| `mohwaldova-bouda` — Möhwaldova bouda                                                     | cz   | jméno nese „bouda"      |
+| `mumlavska-bouda` — Mumlavská Bouda                                                       | cz   | jméno nese „Bouda"      |
+| `postovna-na-snezce` — Poštovna na Sněžce                                                 | cz   | typ z OSM: obsluhovana  |
+| `prezesowa-chata` — Prezesowa Chata                                                       | pl   | jméno nese „Chata"      |
+| `restaurace-havlova-bouda` — Restaurace Havlova bouda                                     | cz   | jméno nese „bouda"      |
+| `restaurace-labska-bouda` — Restaurace Labska Bouda                                       | cz   | jméno nese „Bouda"      |
+| `rozhledna-zaly` — Rozhledna Žalý                                                         | cz   | typ z OSM: rozhledna    |
+| `sasanka` — Sasanka                                                                       | cz   | typ z OSM: obsluhovana  |
+| `schronisko-gorskie-dom-slaski` — Schronisko Górskie Dom Śląski                           | pl   | jméno nese „Schronisko" |
+| `schronisko-liczyrzepa` — Schronisko Liczyrzepa                                           | pl   | jméno nese „Schronisko" |
+| `schronisko-mlodziezowe-lubawia` — Schronisko Młodzieżowe LUBAWIA                         | pl   | jméno nese „Schronisko" |
+| `schronisko-srebrny-potok` — Schronisko Srebrny Potok                                     | pl   | jméno nese „Schronisko" |
+| `schronisko-szrenica-1362-m-n-p-m` — Schronisko Szrenica 1362 m n.p.m.                    | pl   | jméno nese „Schronisko" |
+| `schronisko-wysoki-kamien` — Schronisko Wysoki Kamień                                     | pl   | jméno nese „Schronisko" |
+| `sliwkowa-chata-sliwkowa-chata` — Śliwkowa Chata / Sliwkowa Chata                         | pl   | jméno nese „Chata"      |
+| `sokoli-boudy` — Sokolí boudy                                                             | cz   | jméno nese „boudy"      |
+| `sporthotel-svycarska-bouda` — Sporthotel Švýcarská bouda                                 | cz   | jméno nese „bouda"      |
+| `stezka-korunami-stromu-krkonose` — Stezka korunami stromů Krkonoše                       | cz   | typ z OSM: rozhledna    |
+| `sudecka-chata-u-prezesa` — Sudecka chata u Prezesa                                       | pl   | jméno nese „chata"      |
+| `swojska-chata` — Swojska Chata                                                           | pl   | jméno nese „Chata"      |
+| `szklana-chata` — Szklana chata                                                           | pl   | jméno nese „chata"      |
+| `szkolne-schronisko-mlodziezowe-plum` — Szkolne Schronisko Młodzieżowe PLUM               | pl   | jméno nese „Schronisko" |
+| `szkolne-schronisko-mlodziezowe-skalnik` — Szkolne Schronisko Młodzieżowe "Skalnik"       | pl   | jméno nese „Schronisko" |
+| `szkolne-schronisko-mlodziezowe-wojtek` — Szkolne Schronisko Młodzieżowe "Wojtek"         | pl   | jméno nese „Schronisko" |
+| `szkolne-schronisko-mlodziezowe-zloty-widok` — Szkolne Schronisko Młodzieżowe ZŁOTY WIDOK | pl   | jméno nese „Schronisko" |
+| `trejbalova-bouda` — Trejbalova bouda                                                     | cz   | jméno nese „bouda"      |
+| `turisticka-chata` — Turistická chata                                                     | cz   | jméno nese „chata"      |
+| `velke-pardubicke-boudy` — Velké pardubické boudy                                         | cz   | jméno nese „boudy"      |
+| `wellness-hotel-liberecka-bouda` — Wellness hotel LIBERECKÁ BOUDA                         | cz   | jméno nese „BOUDA"      |
+| `wiejska-chata` — Wiejska chata                                                           | pl   | jméno nese „chata"      |
+| `zizkova-bouda` — Žižkova bouda                                                           | cz   | jméno nese „bouda"      |
+
+### K POSOUZENÍ — musí přečíst člověk (31)
+
+| kandidát                                                | země | signál                                                       |
+| ------------------------------------------------------- | ---- | ------------------------------------------------------------ |
+| `bouda-jirinka` — Bouda Jiřinka                         | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Bouda"   |
+| `chalupa-marsovka` — Chalupa Maršovka                   | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chalupa" |
+| `chalupa-sport` — Chalupa Sport                         | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chalupa" |
+| `chalupa-u-medveda` — Chalupa u Medvěda                 | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chalupa" |
+| `chalupa-u-rihu` — Chalupa U Říhů                       | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chalupa" |
+| `chata-baronka` — Chata Baronka                         | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-beata` — Chata Beata                             | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-botas` — Chata Botas                             | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-ferra` — Chata FERRA                             | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-gall` — Chata Gall                               | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-honzik` — Chata Honzík                           | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-jitka` — Chata Jitka                             | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-kabrtova-bouda` — Chata Kábrtova Bouda           | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Bouda"   |
+| `chata-kovarna` — Chata Kovárna                         | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-kubik` — Chata Kubík                             | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-lom` — Chata Lom                                 | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-medika-2411927307` — Chata Medika                | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-medika` — Chata Medika                           | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-spindler` — Chata Špindler                       | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-tobisek` — Chata Tobísek                         | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-u-kohouta` — Chata U Kohouta                     | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `chata-viktorka` — Chata Viktorka                       | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `dvorakova-bouda` — Dvořákova bouda                     | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „bouda"   |
+| `horska-chata-hanapetr` — Horská chata HANAPETR         | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Horsk"   |
+| `jestrebi-bouda` — Jestřebí bouda                       | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „bouda"   |
+| `karczma-hutnika` — Karczma Hutnika                     | pl   | žádný signál ve jméně ani v tazích                           |
+| `lesna-chata` — Leśna Chata                             | pl   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Chata"   |
+| `ludvikova-bouda` — Ludvikova bouda                     | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „bouda"   |
+| `sokolska-chata-babeta` — Sokolská chata Babeta         | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „chata"   |
+| `turisticka-chata-lajdacek` — Turistická chata Lajdáček | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „chata"   |
+| `zinneckerovy-boudy` — Zinneckerovy Boudy               | cz   | rozpor: OSM tourism=chalet (pronájem) × jméno nese „Boudy"   |
+
+### MIMO KLÍČ dle jména — probrat hromadně, NENÍ to vyřazení (47)
+
+| kandidát                                                                      | země | signál                                                                    |
+| ----------------------------------------------------------------------------- | ---- | ------------------------------------------------------------------------- |
+| `apartamenty-every-sky` — Apartamenty Every Sky                               | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `apartman-u-potoka` — Apartmán U potoka                                       | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `apartmany-tri-boudy` — Apartmány tři boudy                                   | cz   | ubytování bez veřejné služby — „Apartmán"                                 |
+| `arnika` — Arnika                                                             | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `bergpoolhaus` — Bergpoolhaus                                                 | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `browarowka` — Browarówka                                                     | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `chalupa-baba-jaga` — Chalupa Baba Jaga                                       | cz   | OSM tourism=apartment — pronajímaná bytová jednotka, ne obsluhovaná chata |
+| `contemplace` — Contemplace                                                   | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `czarodziejska-gora` — Czarodziejska Góra                                     | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `dalibor` — Dalibor                                                           | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `dom-pod-jaworami` — Dom Pod Jaworami                                         | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `domek-w-karkonoszach` — Domek w Karkonoszach                                 | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `dziewiecsil` — Dziewiećsił                                                   | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `felicity-grand-apartments` — Felicity Grand Apartments                       | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `goryczka` — Goryczka                                                         | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `happy-house` — Happy House                                                   | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `holiday-park-resort` — Holiday Park & Resort                                 | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `hottur-osrodek-wczasowo-wypoczynkowy` — HOTTUR Ośrodek Wczasowo-Wypoczynkowy | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `iskierka` — Iskierka                                                         | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `java` — Java                                                                 | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `jawa` — Jawa                                                                 | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `lilia` — Lilia                                                               | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `lodge-1` — Lodge 1                                                           | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `lodge-2` — Lodge 2                                                           | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `lodge-3` — Lodge 3                                                           | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `lyzarsky-vlek-ubytovani` — Lyžařský vlek - ubytování                         | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `makuka` — Makuka                                                             | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `ministerska` — Ministerská                                                   | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `mlynarka-ubytovani-v-krkonosich` — Mlynářka, ubytování v krkonoších          | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `mounttain-holiday-lodges` — Mounttain Holiday Lodges                         | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `osada-sniezka` — Osada Śnieżka                                               | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `ostoja-karkonoska` — Ostoja Karkonoska                                       | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `pension-chata-lovrana` — Pension Chata Lovrana                               | cz   | ubytování bez veřejné služby — „Pension"                                  |
+| `pension-jilemnicka-bouda` — Pension Jilemnická bouda                         | cz   | ubytování bez veřejné služby — „Pension"                                  |
+| `penzion-karlova-chata` — Penzion Karlova chata                               | cz   | ubytování bez veřejné služby — „Penzion"                                  |
+| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda                     | cz   | ubytování bez veřejné služby — „Penzion"                                  |
+| `pod-zielonym-dachem` — Pod Zielonym Dachem                                   | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `przystan-nad-bobrem` — Przystań nad Bobrem                                   | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `rozeniec` — Różeniec                                                         | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `sosnowy-szept` — Sosnowy Szept                                               | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `sruby-podspalov` — sruby Podspálov                                           | cz   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `widok-na-sniezke` — Widok na Śnieżkę                                         | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `widokowo` — Widokowo                                                         | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `wiilla-jagoda-jagniatkow` — Wiilla Jagoda Jagniątków                         | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `wioska-finska-kalevala` — Wioska Fińska Kalevala                             | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `zacisze-pod-smielcem` — Zacisze Pod Śmielcem                                 | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+| `zielony-domek` — Zielony Domek                                               | pl   | OSM tourism=chalet — pronajímaný domek, ne obsluhovaná chata              |
+
+oblast krkonose | kandidatu k triazi: 185 | NADEJNE 107 · POSOUDIT 31 · MIMO 47
+preskoceno (publikovane/odlozene/vyrazene): 78

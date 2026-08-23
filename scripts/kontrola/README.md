@@ -25,6 +25,7 @@ npx tsx scripts/kontrola/workflows.ts    [soubor.yml …]
 npx tsx scripts/kontrola/exporty.ts
 npx tsx scripts/kontrola/katalog-pokryti.ts   [slug oblasti …]
 npx tsx scripts/kontrola/duplicity-oblasti.ts
+npx tsx scripts/kontrola/blizke-body.ts
 npx tsx scripts/kontrola/razitka.ts
 ```
 
@@ -518,8 +519,36 @@ nejsou — to je běžný stav po povýšení (jen Šumava má takových dvojic 
 vada. Objekt na hranici dvou pohoří někam patří a rozhodne to triáž s pramenem
 o příslušnosti; kontrola má jen zajistit, že se na pár nezapomene. **Dvě různá
 OSM ID téhož domu (DATA-38) nevidí** — identitou je URL, takže projdou jako dva
-objekty; to je jiná úloha a čeká na vlastní řešení. Stav 10. 8. 2026 je **0**
-(29 párů z 8. 8. je rozhodnuto rozvodím) a drží ho i test nad reálným repem.
+objekty; tu úlohu od 23. 8. 2026 měří `blizke-body.ts` (níž). Stav 10. 8. 2026
+je **0** (29 párů z 8. 8. je rozhodnuto rozvodím) a drží ho i test nad reálným
+repem.
+
+**`blizke-body.ts` — seznam k posouzení.** Vypíše kandidáta, který stojí do
+**50 m od publikovaného profilu TÉŽE oblasti**, tedy nejspíš druhou OSM entitu
+téhož domu. Vyplňuje měřenou díru mezi třemi staršími kontrolami:
+`duplicity-oblasti` porovnává **OSM URL** (dvě ID téhož domu jí projdou),
+pojistka v běhu (DATA-38) se ptá jen na **jiné** oblasti a jen při **shodném
+jádru názvu**, `kolize-jmen` vidí jen **jména**. Krkonošský běh z 22. 8. 2026
+spadl přesně doprostřed: „Restaurace Labska Bouda" 19,5 m od `labska-bouda`,
+„Schronisko Górskie Dom Śląski" 4,2 m od `dom-slaski` a „Schronisko Szrenica
+1362 m n.p.m." 5,7 m od `schronisko-szrenica` — ani jeden z těch párů nemá
+shodné jádro názvu, takže je neohlásil nikdo, kdežto tři páry, kde se jména
+potkala (Portášky, Černá bouda, Srebrny Potok), ohlásila `kolize-jmen` týž den.
+Vzdálenost je tu spolehlivější signál než jméno: týž dům se v OSM přejmenuje
+snáz, než se přestěhuje.
+
+Práh **50 m** je převzatý z DATA-38 i s odůvodněním (9 m u Čartáku je jasná
+dvojí entita, 150 m dělí i dvě sousední stavby) a drží ho test. Pár, o kterém
+redakce **rozhodla** a zapsala ho do `data/_jmenovci.yaml`, se nehlásí — registr
+je doklad, že se o dvojici ví; tím se kontrola s rozhodováním sama umlčuje.
+Povýšený kandidát (hlavička `POVÝŠENO`) je historický záznam, ne rozpracovanost,
+a přeskakuje se.
+
+**NEROZHODUJE:** rozhodnout pár je práce, ne vada souboru. Stav 23. 8. 2026 je
+**11 párů** a část z nich je známý vzor „rozhledna × chata na témž vrcholu"
+(König-Albert-Turm × Spiegelwaldbaude, Auersbergturm × Berggasthof Auersberg,
+Josefova věž × Horská chata Kleť) — tedy dva objekty, ne jeden. I ty patří do
+registru, ať se nerozhodují dvakrát.
 
 **`razitka.ts` — verdikt (DATA-05).** Čte `data/razitka/**` a hlídá čtyři věci,
 kvůli kterým by seed razítek padl. Rozdíl proti ostatním kontrolám je v ceně
