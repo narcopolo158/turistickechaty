@@ -30,6 +30,16 @@
  * o kterých redakce **už rozhodla** a zapsala je do `data/_jmenovci.yaml`,
  * se nehlásí: registr je doklad, že se o dvojici ví.
  *
+ * Rozhodnutí ale nežije jen v registru jmenovců — a to je nález z prvního
+ * ostrého průchodu (24. 8. 2026). Kontrola hlásila „Josefova věž 19,7 m od
+ * Horské chaty Kleť", ačkoli ten pár JE rozhodnutý od 7. 8. 2026: kandidát
+ * leží v `data/kandidati/_vyrazeno.yaml` se slučovacím důvodem („jeden
+ * provoz, jeden profil"). Čte se proto i druhý registr — identita objektu
+ * podle **OSM URL** (tak, jak to `_vyrazeno.yaml` samo píše ve své hlavičce),
+ * navíc podle `oblast/slug`. Bez toho by kontrola žádala rozhodnutí, které
+ * už padlo, a to je přesně ten druh šumu, kvůli kterému se kontroly přestanou
+ * číst.
+ *
  *   npx tsx scripts/kontrola/blizke-body.ts
  */
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
@@ -49,6 +59,8 @@ export type Bod = {
   nazev: string | null
   lat: number
   lng: number
+  /** Primární OSM URL záznamu (identita objektu), když ji soubor nese. */
+  osm: string | null
   /** Kandidát už povýšený na profil je historický záznam, ne rozpracovanost. */
   povyseny: boolean
 }
@@ -66,6 +78,24 @@ const cislo = (obsah: string, klic: 'lat' | 'lng'): number | null => {
 
 const nazevZeSouboru = (obsah: string): string | null =>
   /^nazev:\s*(.+?)\s*$/mu.exec(obsah)?.[1]?.replace(/^["']|["']$/gu, '') ?? null
+
+/**
+ * První OSM URL v souboru. U kandidáta z DATA-01 stojí hned v hlavičce
+ * („# Zdroj: …"), u profilu v `overeniLokace.source`. Normalizuje se na tvar
+ * bez protokolu a bez `www.`, ať se `https://www.openstreetmap.org/node/1`
+ * a `http://openstreetmap.org/node/1` porovnají jako týž objekt.
+ */
+export const normalizujOsm = (url: string): string =>
+  url
+    .trim()
+    .replace(/^https?:\/\//u, '')
+    .replace(/^www\./u, '')
+    .replace(/\/+$/u, '')
+
+const osmZeSouboru = (obsah: string): string | null => {
+  const m = /https?:\/\/(?:www\.)?openstreetmap\.org\/(?:node|way|relation)\/\d+/u.exec(obsah)
+  return m ? normalizujOsm(m[0]) : null
+}
 
 /** Vzdálenost dvou bodů na kouli v metrech (haversine, R = 6371 km). */
 export const vzdalenostM = (a: Bod, b: Bod): number => {
@@ -104,6 +134,7 @@ export const nactiBody = (koren: string): Bod[] => {
         nazev: nazevZeSouboru(obsah),
         lat,
         lng,
+        osm: osmZeSouboru(obsah),
         povyseny: obsah.includes('POVÝŠENO'),
       })
     }
@@ -123,13 +154,40 @@ export const rozhodnuteDvojice = (cesta: string = REGISTR_JMENOVCU): Set<string>
   return out
 }
 
+/**
+ * Objekty, které už redakce vyřadila (`data/kandidati/_vyrazeno.yaml`) — ať
+ * jako duplicitu, přesun do jiné oblasti, nebo sloučení do profilu (vzor
+ * Josefova věž / Rozhledna Pancíř). Identita objektu je podle `_vyrazeno.yaml`
+ * jeho **OSM URL**; některé záznamy mají navíc `slug` ve tvaru `oblast/slug`.
+ * Vracíme obojí normalizované, aby se kandidát dal poznat kterýmkoli klíčem.
+ */
+export const vyrazeneObjekty = (
+  cesta: string = join(process.cwd(), 'data', 'kandidati', '_vyrazeno.yaml'),
+): { osm: Set<string>; slugy: Set<string> } => {
+  const osm = new Set<string>()
+  const slugy = new Set<string>()
+  if (!existsSync(cesta)) return { osm, slugy }
+  const d = parse(readFileSync(cesta, 'utf8')) as {
+    vyrazeno?: { osm?: string; slug?: string }[]
+  } | null
+  for (const z of d?.vyrazeno ?? []) {
+    if (z.osm) osm.add(normalizujOsm(z.osm))
+    // Slug je v tomto registru buď holý (`chata-mamut-…`), nebo už s oblastí
+    // (`sumava/josefova-vez`). Jen tvar s lomítkem je jednoznačný klíč.
+    if (z.slug && z.slug.includes('/')) slugy.add(z.slug)
+  }
+  return { osm, slugy }
+}
+
 export const najdiBlizkeBody = (
   korenKandidati: string = KOREN_KANDIDATI,
   korenChaty: string = KOREN_CHATY,
   registr: string = REGISTR_JMENOVCU,
   prah: number = BLIZKO_M,
+  registrVyrazenych: string = join(process.cwd(), 'data', 'kandidati', '_vyrazeno.yaml'),
 ): Par[] => {
   const rozhodnuto = rozhodnuteDvojice(registr)
+  const vyrazeno = vyrazeneObjekty(registrVyrazenych)
   const profily = nactiBody(korenChaty)
   const out: Par[] = []
   // Objekt, který má kandidátský soubor i profil, se se svým sousedem potká
@@ -138,6 +196,10 @@ export const najdiBlizkeBody = (
   const videno = new Set<string>()
   for (const kandidat of nactiBody(korenKandidati)) {
     if (kandidat.povyseny) continue
+    // Kandidát už jednou vyřazený (sloučený do profilu, duplicita, přesun)
+    // je rozhodnutý — pár se nehlásí, ať už se pozná OSM URL, nebo slugem.
+    if (kandidat.osm && vyrazeno.osm.has(kandidat.osm)) continue
+    if (vyrazeno.slugy.has(`${kandidat.oblast}/${kandidat.slug}`)) continue
     for (const profil of profily) {
       if (profil.oblast !== kandidat.oblast) continue // jiné oblasti řeší DATA-36/38
       if (profil.slug === kandidat.slug) continue // kandidát a jeho vlastní profil

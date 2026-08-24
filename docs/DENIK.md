@@ -29,6 +29,87 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-24 — denní session: 11 párů blízkých bodů rozhodnuto a zapsáno (a jeden byl falešný poplach)
+
+**Hotovo:**
+- **Zjištění na začátku:** **DATA-04** je dál blokovaná (dokladová část
+  vyčerpaná od 2. 8., zbylé otázky jsou telefonní) a **fronta DATA-05** je taky
+  mimo dosah bezobslužného běhu (beskydská sedmička čeká na re-export DATA-37,
+  jména z koše G na detaily razítek). Vzal jsem tedy první položku z „Příště"
+  z 23. 8., na kterou sandbox stačí: **11 párů blízkých bodů** z kontroly
+  `blizke-body` zapsat do `data/_jmenovci.yaml` s důvodem.
+- **Nejdřív ale nález, a je z něj oprava kontroly, ne jednorázové měření.**
+  Z jedenácti hlášených párů byl jeden **falešný poplach**: „Josefova věž
+  19,7 m od Horské chaty Kleť" JE rozhodnutý od 7. 8. 2026 — kandidát leží
+  v `data/kandidati/_vyrazeno.yaml` se slučovacím důvodem („jeden provoz, jeden
+  profil", vzor Žalý). Kontrola ho přesto hlásila, protože četla **jen registr
+  jmenovců**, ne registr vyřazených. Rozhodnutí ale žije v obou. `blizke-body`
+  teď čte i `_vyrazeno.yaml` — identitu objektu podle **OSM URL** (normalizovaně,
+  tak jak to `_vyrazeno.yaml` sám píše ve své hlavičce) i podle `oblast/slug`.
+  Bez toho by kontrola donekonečna žádala rozhodnutí, které už padlo. **Nové
+  2 testy** (shoda přes OSM URL i přes `oblast/slug`; holý slug bez lomítka
+  vědomě neumlčuje, protože není jednoznačný klíč), 9 testů v souboru celé
+  zelené.
+- **Zbylých 10 párů rozhodnuto a zapsáno**, každý s **měřenou** vzdáleností
+  z GPS a s doklady z OSM tagů v repu (bez jediného dotazu do sítě):
+  - **Dva objekty, doloženo tagy** (7): **rozhledna × hostinec na témž
+    vrcholu** — König-Albert-Turm × Spiegelwaldbaude (7,9 m), Aussichtsturm
+    Pöhlberg × Berghotel Pöhlberg (9,6 m), Auersbergturm × Berggasthof
+    Auersberg (24,7 m); věž nese `man_made=tower`, soused `amenity=restaurant`
+    — dvě stavby, ne dvě entity jedné. **Dvě sousední stavby**: Arberschutzhaus
+    × Eisensteiner Hütte (29,5 m, různí provozovatelé i weby), Bouda Růžohorky
+    × Děčínská bouda (47,2 m, čp. **182 × 181**), Chata Jeřabinka × Pomezní
+    bouda (48,4 m, různé weby). U rozhleden platí, že **otázka jeden/dva
+    profily je pro Michala pořád otevřená** — kontrola blízkých bodů se ale
+    týká identity OBJEKTU, a ta je tu jednoznačně dvojí.
+  - **Nejspíš jeden objekt (gastro POI uvnitř domu), čeká na Michala** (3):
+    Dom Śląski × „Schronisko Górskie Dom Śląski" (`amenity=fast_food`, 4,2 m),
+    Schronisko Szrenica × „…1362 m n.p.m." (`amenity=cafe`, obrázek na doméně
+    szrenica.pl, 5,7 m), Labská bouda × „Restaurace Labska Bouda"
+    (`amenity=restaurant`, 19,5 m) — přesný vzor „restaurace jako samostatný
+    POI v budově". To je ta krkonošská trojice z deníku 23. 8.; nemažu ani
+    nepovyšuji, zápis do registru je doklad „víme o tom", ne rozhodnutí.
+  - **Nejasné, čeká na Michala** (1): „tour.Chata" (`amenity=pub`) 11,4 m od
+    profilu **zavřeného** Hotelu Bouřňák — buď táž budova nově jako pivnice,
+    nebo samostatný podnik v areálu. Pub veřejné občerstvení JE, takže by
+    tour.Chata klíčem prošla; ale doklad, že jde o jiný dům, nemám.
+- **Kontrola `blizke-body` po zápisu hlásí 0 párů** — všechno rozhodnuté je
+  buď v registru jmenovců, nebo (Josefova věž) ve vyřazených. `npm run kontrola`
+  celé zelené, `tsc --noEmit` i lint čisté.
+- **Do `data/chaty/` se nesáhlo** — změněn jen registr `data/_jmenovci.yaml`
+  (+10 párů), `scripts/kontrola/blizke-body.ts` (čtení `_vyrazeno.yaml`) a jeho
+  test. Žádný kandidát nesmazán ani nepovýšen.
+
+**Příště:** projít koš **A + B** (49 krkonošských kandidátů s tagem chaty nebo
+občerstvení) a rozhodnout, co klíčem projde — z dnešní práce už rovnou vypadly
+tři pochyby: Děčínská bouda (`guest_house`, bez doloženého veřejného
+občerstvení) a Chata Jeřabinka (`pension`) k posouzení, tour.Chata (`pub`)
+prochází, ale visí na Bouřňáku. Dál trvá: devět padajících testů z 22. 8.
+a blokované DATA-04 / DATA-05.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
+
+**Otázky pro Michala:**
+- **Krkonošská trojice (Dom Śląski, Szrenica, Labská bouda) — jeden objekt,
+  nebo dva?** Vypadá to na gastro POI uvnitř téhož domu (druhá OSM entita).
+  Stačí říct „jeden objekt" a je to hotové; do té doby jsou v registru jako
+  známé páry.
+- **Rozhledna × hostinec na témž vrcholu — jeden profil, nebo dva?** Čtyři
+  krušnohorské páry (a vzor obecně) čekají na pravidlo. Máme precedens Sněžka
+  (každý objekt zvlášť) i Žalý (jeden celek). Objektově jsou to dvě stavby, tak
+  jsou i zapsané; jde jen o počet profilů.
+- **tour.Chata × Hotel Bouřňák** — týž dům (zavřený hotel dnes jako pivnice),
+  nebo samostatný podnik? Pokud samostatný, tour.Chata je platný kandidát
+  (pub = veřejné občerstvení).
+- Trvá z 23. 8.: **smazat `krkonose/horska-chata-portasky`?** (týž OSM bod);
+  **opřít idempotenci DATA-01 o OSM id místo jména?**; **zařadit `test:int`
+  do CI** (devět testů padá a nikdo se to nedozví); **Bouda Svornost** —
+  zakládat ručně?; **uvolnit kotvu ve jmenné dohledávce**; **čtyři založené,
+  ale nespuštěné oblasti** (Oravská Magura, Západné Tatry, Slovenský raj,
+  Bieszczady); a starší fronta z 20. 8.
+
 ## 2026-08-23 — denní session: triáž krkonošského běhu a díra mezi třemi kontrolami
 
 **Hotovo:**

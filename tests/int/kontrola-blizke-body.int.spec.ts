@@ -38,7 +38,7 @@ const zaznam = (cesta: string, nazev: string, lat: number, lng: number, navic = 
 
 describe('vzdalenostM', () => {
   it('měří v metrech — 0,001 ° zeměpisné šířky je zhruba 111 m', () => {
-    const a = { oblast: 'x', slug: 'a', nazev: null, lat: 50.7, lng: 15.7, povyseny: false }
+    const a = { oblast: 'x', slug: 'a', nazev: null, lat: 50.7, lng: 15.7, osm: null, povyseny: false }
     const b = { ...a, slug: 'b', lat: 50.701 }
     expect(vzdalenostM(a, b)).toBeGreaterThan(105)
     expect(vzdalenostM(a, b)).toBeLessThan(115)
@@ -79,6 +79,42 @@ describe('najdiBlizkeBody', () => {
       'jmenovci:\n  - jadro: zaly\n    objekty:\n      - krkonose/rozhledna-zaly\n      - krkonose/zaly\n',
     )
     expect(najdiBlizkeBody(kandidati, chaty, registr)).toHaveLength(0)
+  })
+
+  it('kandidát vyřazený v _vyrazeno.yaml (sloučený do profilu) se nehlásí — podle OSM URL', () => {
+    const { koren, kandidati, chaty, registr } = kostra()
+    zaznam(
+      join(kandidati, 'krkonose', 'restaurace-x.yaml'),
+      'Restaurace X',
+      50.7,
+      15.7,
+      '# Zdroj: https://www.openstreetmap.org/node/111 · ODbL\n',
+    )
+    zaznam(join(chaty, 'krkonose', 'profil-x.yaml'), 'Profil X', 50.70005, 15.7)
+    // Bez záznamu ve vyřazených se pár hlásí.
+    const prazdneVyrazeno = join(koren, '_vyrazeno-prazdne.yaml')
+    writeFileSync(prazdneVyrazeno, 'vyrazeno: []\n')
+    expect(najdiBlizkeBody(kandidati, chaty, registr, BLIZKO_M, prazdneVyrazeno)).toHaveLength(1)
+    // Se sloučením podle OSM URL (i s http:// a bez www.) kontrola mlčí.
+    const vyrazeno = join(koren, '_vyrazeno.yaml')
+    writeFileSync(
+      vyrazeno,
+      'vyrazeno:\n  - osm: http://openstreetmap.org/node/111\n    slug: restaurace-x\n    duvod: sloučeno\n',
+    )
+    expect(najdiBlizkeBody(kandidati, chaty, registr, BLIZKO_M, vyrazeno)).toHaveLength(0)
+  })
+
+  it('kandidát vyřazený v _vyrazeno.yaml se nehlásí i podle slugu oblast/slug', () => {
+    const { koren, kandidati, chaty, registr } = kostra()
+    zaznam(join(kandidati, 'krkonose', 'kandidat-y.yaml'), 'Kandidát Y', 50.7, 15.7)
+    zaznam(join(chaty, 'krkonose', 'profil-y.yaml'), 'Profil Y', 50.70005, 15.7)
+    const vyrazeno = join(koren, '_vyrazeno.yaml')
+    // Holý slug bez lomítka NENÍ jednoznačný klíč a nesmí nic umlčet.
+    writeFileSync(vyrazeno, 'vyrazeno:\n  - slug: kandidat-y\n    duvod: nejednoznačné\n')
+    expect(najdiBlizkeBody(kandidati, chaty, registr, BLIZKO_M, vyrazeno)).toHaveLength(1)
+    // Tvar oblast/slug klíčem je a pár umlčí.
+    writeFileSync(vyrazeno, 'vyrazeno:\n  - slug: krkonose/kandidat-y\n    duvod: sloučeno\n')
+    expect(najdiBlizkeBody(kandidati, chaty, registr, BLIZKO_M, vyrazeno)).toHaveLength(0)
   })
 
   it('povýšený kandidát je historický záznam, ne rozpracovanost', () => {

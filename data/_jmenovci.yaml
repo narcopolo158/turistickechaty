@@ -1239,3 +1239,152 @@ jmenovci:
       NEPOVYŠUJE jako druhý profil.
     rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — měřením z GPS)
     checked: 2026-08-22
+  - jadro: dom slaski (gastro POI)
+    objekty:
+      - krkonose/dom-slaski
+      - krkonose/schronisko-gorskie-dom-slaski
+    duvod: >-
+      Vypadá to na TÝŽ OBJEKT ve dvou OSM entitách, naměřeno 4,2 m:
+      publikovaný profil Dom Śląski stojí na `way/19921121` (budova,
+      beds=57, Karpacz), kandidát Schronisko Górskie Dom Śląski na
+      `node/5038862333` — a ten nese `amenity=fast_food` se shodným
+      jménem, tedy stánek/výdejnu občerstvení uvnitř téhož schroniska
+      (vzor Labská bouda: restaurace jako samostatný POI v domě).
+      Kandidát se NEPOVYŠUJE jako druhý profil. Michal se na tuhle
+      trojici ptal v deníku 23. 8. 2026 — čeká na jeho potvrzení
+      „jeden objekt".
+    rozhodl: Claude (návrh 24. 8. 2026, měřením z GPS a OSM tagů) — čeká na potvrzení Michalem
+    checked: 2026-08-24
+  - jadro: schronisko szrenica (gastro POI)
+    objekty:
+      - krkonose/schronisko-szrenica
+      - krkonose/schronisko-szrenica-1362-m-n-p-m
+    duvod: >-
+      Vypadá to na TÝŽ OBJEKT ve dvou OSM entitách, naměřeno 5,7 m:
+      publikovaný profil Schronisko Szrenica stojí na `way/32604717`
+      (tourism=alpine_hut), kandidát „Schronisko Szrenica 1362 m n.p.m."
+      na `node/12961245029` s `amenity=cafe` — obrázek u kandidáta vede
+      na doménu szrenica.pl, tedy gastro POI téhož schroniska (vzor Dom
+      Śląski). Kandidát se NEPOVYŠUJE jako druhý profil. Součást
+      krkonošské trojice z deníku 23. 8. 2026 — čeká na potvrzení
+      Michalem.
+    rozhodl: Claude (návrh 24. 8. 2026, měřením z GPS a OSM tagů) — čeká na potvrzení Michalem
+    checked: 2026-08-24
+  - jadro: labska bouda (restaurace POI)
+    objekty:
+      - krkonose/labska-bouda
+      - krkonose/restaurace-labska-bouda
+    duvod: >-
+      Vypadá to na TÝŽ OBJEKT ve dvou OSM entitách, naměřeno 19,5 m:
+      publikovaný profil Labská bouda stojí na `way/27594762` (budova,
+      brutalistní stavba Zdeňka Řiháka), kandidát „Restaurace Labska
+      Bouda" na `node/2186768692` s `amenity=restaurant` a `opening_hours`
+      — restaurace jako samostatný POI uvnitř boudy (přesný vzor Dom
+      Śląski a Szrenica). Kandidát se NEPOVYŠUJE jako druhý profil.
+      Součást krkonošské trojice z deníku 23. 8. 2026 — čeká na potvrzení
+      Michalem.
+    rozhodl: Claude (návrh 24. 8. 2026, měřením z GPS a OSM tagů) — čeká na potvrzení Michalem
+    checked: 2026-08-24
+  - jadro: spiegelwald (vez × hostinec)
+    objekty:
+      - krusne-hory/konig-albert-turm
+      - krusne-hory/spiegelwaldbaude
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY na témž vrcholu, naměřeno 7,9 m: rozhledna
+      König-Albert-Turm (`way/43225756`, man_made=tower, museum) a výletní
+      hostinec Spiegelwaldbaude (`way/43225415`, amenity=restaurant).
+      Věž není hostinec — jde o dvě OSM entity dvou staveb, ne dvě entity
+      jedné (na rozdíl od krkonošské trojice výše). Oba proto v korpusu
+      zůstávají; profil hostince ve své hlavičce věž zmiňuje. Zda vést
+      JEDEN, nebo DVA profily pro vzor „rozhledna × chata na témž vrcholu"
+      je otevřená otázka pro Michala (deník 23. 8. 2026) — kontrola
+      blízkých bodů se ale týká identity OBJEKTU, a ta je tu dvojí.
+    rozhodl: Claude (návrh 24. 8. 2026, měřením z GPS a OSM tagů) — dva objekty; otázka jeden/dva profily čeká na Michala
+    checked: 2026-08-24
+  - jadro: pohlberg (vez × hostinec)
+    objekty:
+      - krusne-hory/aussichtsturm-pohlberg
+      - krusne-hory/berghotel-pohlberg
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY na témž vrcholu, naměřeno 9,6 m: rozhledna
+      Aussichtsturm Pöhlberg (`node/2820977608`, man_made=tower,
+      tourism=viewpoint) a Berghotel Pöhlberg (`way/174886721`,
+      amenity=restaurant, hotel). Věž × restaurace = dvě stavby, ne dvě
+      entity jedné. Oba zůstávají. Otázka jeden/dva profily pro vzor
+      „rozhledna × chata" čeká na Michala (deník 23. 8. 2026).
+    rozhodl: Claude (návrh 24. 8. 2026, měřením z GPS a OSM tagů) — dva objekty; otázka jeden/dva profily čeká na Michala
+    checked: 2026-08-24
+  - jadro: auersberg (vez × hostinec)
+    objekty:
+      - krusne-hory/auersbergturm
+      - krusne-hory/berggasthof-auersberg
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY na témž vrcholu, naměřeno 24,7 m: kamenná
+      rozhledna Auersbergturm (`way/80994675`, man_made=tower, z roku
+      1860) a hostinec Berggasthof Auersberg (`way/80994674`,
+      amenity=restaurant). Profil hostince to sám v hlavičce říká:
+      „kandidát auersbergturm zůstává zvlášť". Dvě stavby, oba zůstávají.
+      Otázka jeden/dva profily pro vzor „rozhledna × chata" čeká na
+      Michala (deník 23. 8. 2026).
+    rozhodl: Claude (návrh 24. 8. 2026, měřením z GPS a OSM tagů) — dva objekty; otázka jeden/dva profily čeká na Michala
+    checked: 2026-08-24
+  - jadro: arber (dve sousedni chaty)
+    objekty:
+      - sumava/arberschutzhaus
+      - sumava/eisensteiner-hutte
+    duvod: >-
+      DVĚ RŮZNÉ SOUSEDNÍ CHATY pod Velkým Javorem, naměřeno 29,5 m:
+      Arberschutzhaus (`way/32639765`, tourism=alpine_hut, provozovatel
+      Bayerischer Wald Verein, web arberschutzhaus.de) a Eisensteiner
+      Hütte (`way/32639764`, amenity=restaurant, web
+      arber.de/gastronomie). Různá jména, různí provozovatelé, různé
+      weby — dva samostatné podniky, ne dvě entity jednoho. Přesně případ
+      „150 m dělí i dvě sousední stavby" (tady 29,5 m). Oba zůstávají
+      jako samostatní kandidáti.
+    rozhodl: Claude (24. 8. 2026, měřením z GPS a OSM tagů — dva objekty)
+    checked: 2026-08-24
+  - jadro: bournak (pub × zavreny hotel)
+    objekty:
+      - krusne-hory/hotel-bournak
+      - krusne-hory/tour-chata
+    duvod: >-
+      Naměřeno 11,4 m: publikovaný profil Hotel Bouřňák (stav
+      `mimo-provoz`, čeká na přestavbu; profil nemá OSM entitu) a kandidát
+      „tour.Chata" (`node/607125008`, amenity=pub). Pub se samostatným
+      jménem stojí těsně u zavřeného hotelu — buď je to táž budova nově
+      provozovaná jako pivnice, nebo samostatný podnik v areálu Bouřňáku.
+      NEROZHODUJU: `amenity=pub` je veřejné občerstvení, takže tour.Chata
+      by klíčem prošla jako samostatný objekt, ale nemám doklad, že jde
+      o jiný dům než zavřený hotel. Zapsáno sem jako známý pár — čeká na
+      Michalovo rozhodnutí (týž dům, nebo dva).
+    rozhodl: Claude (návrh 24. 8. 2026, měřením z GPS a OSM tagů) — nejasné, čeká na potvrzení Michalem
+    checked: 2026-08-24
+  - jadro: velka upa (181 × 182)
+    objekty:
+      - krkonose/bouda-ruzohorky
+      - krkonose/decinska-bouda
+    duvod: >-
+      DVĚ RŮZNÉ SOUSEDNÍ BOUDY ve Velké Úpě, naměřeno 47,2 m: Bouda
+      Růžohorky (`way/291722059`, čp. 182, building=hotel) a kandidát
+      Děčínská bouda (`way/174009063`, čp. 181, guest_house,
+      horskafarma@email.cz). Různá čísla popisná (181 × 182), různá
+      jména i kontakty — dva domy vedle sebe, ne dvě entity jednoho.
+      Přesně případ „47 m můžou být dvě sousední boudy". (Zda Děčínská
+      bouda projde klíčem zařazení, je samostatná triážní otázka —
+      guest_house bez doloženého veřejného občerstvení.)
+    rozhodl: Claude (24. 8. 2026, měřením z GPS a OSM tagů — dva objekty)
+    checked: 2026-08-24
+  - jadro: pomezni boudy (jerabinka × pomezni)
+    objekty:
+      - krkonose/chata-jerabinka
+      - krkonose/pomezni-bouda
+    duvod: >-
+      DVA RŮZNÉ OBJEKTY v osadě Pomezní Boudy (Horní Malá Úpa), naměřeno
+      48,4 m: Chata Jeřabinka (`node/7075711714`, guest_house/pension,
+      web chatajerabinka.cz) a publikovaný profil Pomezní bouda
+      (`way/96093567`, tourism=hotel, web pomezni-bouda.cz). Různá jména,
+      různé weby, různé objekty — dva sousední podniky v jedné osadě.
+      Oba zůstávají. (Zda Jeřabinka projde klíčem zařazení, je samostatná
+      triážní otázka — pension bez doloženého veřejného občerstvení.)
+    rozhodl: Claude (24. 8. 2026, měřením z GPS a OSM tagů — dva objekty)
+    checked: 2026-08-24
